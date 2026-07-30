@@ -43,4 +43,3 @@ Tuliskan perubahan dalam 2-4 kalimat.
 - Belum live:
 - Evidence yang belum tersedia:
 - Next action:
-

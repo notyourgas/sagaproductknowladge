@@ -14,4 +14,3 @@
 - Trial 14 hari server-authoritative aktif.
 - Harga SagaBook tetap Basic Rp500 ribu, Growth Rp950 ribu, Pro Rp1,5 juta.
 - Identity seam tidak menggabungkan entitlement atau role SagaView.
-

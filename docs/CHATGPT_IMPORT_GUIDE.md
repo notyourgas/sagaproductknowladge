@@ -47,4 +47,3 @@ risiko, dan hubungan dengan produk SagaDev lain.
 Repository ini publik. Dokumen restricted seperti credential, raw receipt,
 database dump, atau bukti customer tidak boleh diunggah ke sini maupun ke
 Knowledge ChatGPT.
-

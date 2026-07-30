@@ -1,6 +1,6 @@
 # COYABAG Product Knowledge
 
-Updated: 31 Juli 2026  
+Updated: 31 Juli 2026
 Evidence status: production surfaces + blocked commerce activation
 
 ## Ringkasan
@@ -74,4 +74,3 @@ Status: `PRODUCTION_DEPLOYED_NOT_ACTIVATED`.
 - Di balik operasi inventory dan reservation.
 - Mengapa ecommerce surface live belum otomatis siap menerima transaksi.
 - Perjalanan dari prototype ke commerce fail-closed.
-

@@ -77,4 +77,3 @@ Prioritas source of truth:
 
 Jika sumber berbeda, jangan memilih diam-diam. Tandai konflik dan gunakan fakta
 yang paling baru serta paling kuat.
-

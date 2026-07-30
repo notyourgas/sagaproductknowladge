@@ -15,4 +15,3 @@
   boundary sudah diimplementasikan.
 - Runtime candidate: `dc55cbb09f45279b591e82bca6be50f7d4c1f6ee`.
 - Blocker: actual Tokopay canary dan processed callback.
-

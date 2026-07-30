@@ -1,6 +1,6 @@
 # SagaBio Product Knowledge
 
-Updated: 31 Juli 2026  
+Updated: 31 Juli 2026
 Evidence status: local implementation
 
 ## Ringkasan
@@ -78,4 +78,3 @@ Status: `LOCAL_VALIDATED`.
 - Before-after link bio coffee shop.
 - QR outlet yang mengukur action.
 - Kapan bisnis membutuhkan SagaBio vs SagaMenu.
-

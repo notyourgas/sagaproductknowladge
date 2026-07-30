@@ -1,6 +1,6 @@
 # SagaFin Product Knowledge
 
-Updated: 31 Juli 2026  
+Updated: 31 Juli 2026
 Evidence status: controlled public trial + product planning
 
 ## Ringkasan
@@ -74,4 +74,3 @@ Status: `CONTROLLED_PUBLIC_TRIAL`.
 - Mengapa OCR harus masuk Review.
 - Budget berdasarkan salary cycle.
 - Finance tracker sebagai alat keputusan, bukan sekadar catatan.
-

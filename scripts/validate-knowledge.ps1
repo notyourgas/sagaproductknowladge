@@ -80,4 +80,3 @@ if ($errors.Count -gt 0) {
 Write-Output "Knowledge validation passed."
 Write-Output "Products: $($products.Count)"
 Write-Output "Required files: $($requiredFiles.Count)"
-

@@ -1,6 +1,6 @@
 # Saga Platform Product Knowledge
 
-Updated: 31 Juli 2026  
+Updated: 31 Juli 2026
 Evidence status: production foundation + migration roadmap
 
 ## Ringkasan
@@ -66,4 +66,3 @@ Status: `PRODUCTION_FOUNDATION`.
 - Mengapa multi-product platform tidak boleh menjadi satu database besar.
 - Shared identity vs shared permission.
 - Control plane untuk SaaS portfolio.
-

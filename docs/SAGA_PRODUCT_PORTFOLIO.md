@@ -1,6 +1,6 @@
 # Saga Product Portfolio
 
-Evidence cut-off: 31 Juli 2026  
+Evidence cut-off: 31 Juli 2026
 Owner: Andreas / SagaDev
 
 ## Positioning umum
@@ -78,4 +78,3 @@ session, cancellation, dan data masing-masing produk tetap terpisah.
 - COYABAG bukan SaaS default; ia adalah client commerce project.
 - AOGTICVITY adalah nama produk terbaru untuk project event 17an.
 - Finance Tracker Go dan SagaFin adalah produk yang sama.
-

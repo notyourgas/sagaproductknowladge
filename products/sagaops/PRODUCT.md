@@ -1,6 +1,6 @@
 # SagaOPS Product Knowledge
 
-Updated: 31 Juli 2026  
+Updated: 31 Juli 2026
 Evidence status: prototype
 
 ## Ringkasan
@@ -57,4 +57,3 @@ Status: `PROTOTYPE`.
 - Recipe/HPP sebagai dasar harga.
 - Closing shift dan cash variance.
 - Dari stock warning menjadi purchase order.
-

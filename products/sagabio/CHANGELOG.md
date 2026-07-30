@@ -5,4 +5,3 @@
 - Status: `LOCAL_VALIDATED`.
 - Product boundary, F&B positioning, pilot features, dan production limitations
   disinkronkan.
-

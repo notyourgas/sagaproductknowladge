@@ -4,4 +4,3 @@
 
 - Control-plane positioning dan product boundary disinkronkan.
 - SagaBook pilot dan SagaView adapter tetap menjadi urutan implementasi.
-

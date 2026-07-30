@@ -16,4 +16,3 @@ tidak boleh dianggap produk aktif tanpa evidence baru.
 
 Perubahan status project registry harus disertai source path, owner, lifecycle,
 dan evidence release.
-

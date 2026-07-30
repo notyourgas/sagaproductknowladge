@@ -1,7 +1,7 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 31 Juli 2026  
-Owner: Andreas / SagaDev  
+Evidence cut-off: 31 Juli 2026
+Owner: Andreas / SagaDev
 Visibility: public-safe
 
 ## Cara menggunakan dokumen ini
@@ -39,8 +39,8 @@ pembayaran, menerima status/reminder, dan mengelola request dari secure booking
 link. Operator mengelola calendar, task, check-in, session, payment,
 reconciliation, report, staff, tenant, dan subscription.
 
-Status: `PRODUCTION_DEPLOYED`.  
-Harga bulanan: Basic Rp500.000, Growth Rp950.000, Pro Rp1.500.000.  
+Status: `PRODUCTION_DEPLOYED`.
+Harga bulanan: Basic Rp500.000, Growth Rp950.000, Pro Rp1.500.000.
 Trial: 14 hari dua fase; hari 1-7 full access dan hari 8-14 plan-limited,
 kemudian grace read-only hari 15-21.
 
@@ -54,8 +54,8 @@ customer memilih frame/foto, menyusun output, lalu export/print. Foto customer
 tetap berada di device studio.
 
 Status: Studio frontend `PRODUCTION_DEPLOYED`; backend komersial terbaru
-`IMPLEMENTED_NOT_DEPLOYED`.  
-Harga bulanan: Growth Rp200.000, Pro Rp500.000.  
+`IMPLEMENTED_NOT_DEPLOYED`.
+Harga bulanan: Growth Rp200.000, Pro Rp500.000.
 Trial contract: 14 hari dua fase; production activation backend terbaru masih
 menunggu provider canary.
 
@@ -163,4 +163,3 @@ Status: `PLANNED/FOUNDATION`.
 - Cara produk menjaga data dan role tetap aman.
 - Perbedaan antara fitur demo, staging, dan production.
 - Cerita membangun produk lokal untuk pain bisnis Indonesia.
-

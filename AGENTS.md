@@ -31,4 +31,3 @@ Setiap agent yang menyelesaikan perubahan material pada produk SagaDev wajib:
 - Bedakan fakta, keputusan, rekomendasi, dan rencana.
 - Sertakan tanggal cut-off bukti.
 - Jangan menyalin log teknis panjang; rangkum dampak pengguna dan bisnis.
-

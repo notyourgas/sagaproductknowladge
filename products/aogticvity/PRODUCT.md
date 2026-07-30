@@ -1,6 +1,6 @@
 # AOGTICVITY Product Knowledge
 
-Updated: 31 Juli 2026  
+Updated: 31 Juli 2026
 Evidence status: prototype + local release candidate
 
 ## Ringkasan
@@ -76,4 +76,3 @@ Status: `PROTOTYPE/LOCAL_RELEASE_CANDIDATE`.
 - Dari check-in sampai standing live.
 - Offline fallback untuk event.
 - Mengapa scoring perlu draft/publish/correct dan audit.
-

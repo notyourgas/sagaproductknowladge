@@ -5,4 +5,3 @@
 - Nama produk terbaru AOGTICVITY dikunci.
 - Scope event, surface target, backend slice, dan production blockers
   disinkronkan.
-

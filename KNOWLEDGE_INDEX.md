@@ -35,4 +35,3 @@ Updated: 31 Juli 2026
 - [ChatGPT Import Guide](./docs/CHATGPT_IMPORT_GUIDE.md)
 - [Product Update Template](./templates/PRODUCT_UPDATE_TEMPLATE.md)
 - [Project Registry](./registry/OTHER_PROJECTS.md)
-

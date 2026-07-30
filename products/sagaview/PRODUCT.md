@@ -1,6 +1,6 @@
 # SagaView Product Knowledge
 
-Updated: 31 Juli 2026  
+Updated: 31 Juli 2026
 Evidence status: partial production + release candidate
 
 ## Ringkasan
@@ -133,4 +133,3 @@ exact runtime candidate.
 - Workflow 200 foto tanpa mengunggah foto customer ke cloud.
 - Output 4R yang konsisten dari preview sampai print.
 - Perbedaan Owner Console dan device-bound Studio Console.
-

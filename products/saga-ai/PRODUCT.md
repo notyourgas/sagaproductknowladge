@@ -1,6 +1,6 @@
 # Saga AI Product Knowledge
 
-Updated: 31 Juli 2026  
+Updated: 31 Juli 2026
 Evidence status: planned/foundation
 
 ## Ringkasan
@@ -59,4 +59,3 @@ Status: `PLANNED/FOUNDATION`.
 - AI yang grounded vs AI yang mengarang.
 - Mengapa product knowledge perlu versioning.
 - Permission-aware support untuk SaaS portfolio.
-

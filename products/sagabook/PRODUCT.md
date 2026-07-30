@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 31 Juli 2026  
+Updated: 31 Juli 2026
 Evidence status: production + source verified
 
 ## Ringkasan
@@ -129,4 +129,3 @@ After:
 - Mengapa cancel booking berbayar tidak boleh langsung mengubah uang.
 - Perbedaan secure link dengan halaman status biasa.
 - Cara studio menghindari double booking dan task ganda.
-

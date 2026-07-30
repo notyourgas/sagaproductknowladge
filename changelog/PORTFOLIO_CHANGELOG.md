@@ -22,4 +22,3 @@
 - Output portrait `1200x1800`, landscape `1800x1200`, 300 DPI.
 - Backend Owner Console/trial/payment candidate tetap belum dideploy karena
   provider canary belum terverifikasi.
-

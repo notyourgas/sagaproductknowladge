@@ -31,4 +31,3 @@ path tersebut sebagai dua project.
 3. Canonical decision log/contract.
 4. Source dan tests terbaru.
 5. Historical docs.
-

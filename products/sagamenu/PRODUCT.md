@@ -1,6 +1,6 @@
 # SagaMenu Product Knowledge
 
-Updated: 31 Juli 2026  
+Updated: 31 Juli 2026
 Evidence status: local pilot closure
 
 ## Ringkasan
@@ -65,4 +65,3 @@ Status: `LOCAL_VALIDATED`.
 - Satu snapshot untuk display tablet dan katalog mobile.
 - Publish/restore tanpa membocorkan draft.
 - Perbedaan SagaMenu dan SagaBio.
-

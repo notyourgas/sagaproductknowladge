@@ -55,4 +55,3 @@ Project lain dan statusnya tercatat di
   simulation, local test, atau staging.
 - Update material harus mengubah dokumen produk dan
   [Portfolio Changelog](./changelog/PORTFOLIO_CHANGELOG.md).
-

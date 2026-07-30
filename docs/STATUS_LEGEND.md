@@ -39,4 +39,3 @@ Gunakan istilah berikut secara konsisten.
 - `PRODUCTION_DEPLOYED` belum otomatis `PRODUCTION_ACTIVATED`.
 - Hanya gunakan `BUSINESS_READY` bila alur komersial, support, recovery, dan
   offboarding juga siap.
-
