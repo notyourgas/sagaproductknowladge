@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-07-31 — SagaView public self-service candidate
+
+- Home, Pricing, Help/Contact, Privacy, dan Terms terbaru sudah
+  `IMPLEMENTED_NOT_DEPLOYED`.
+- Source menampilkan hanya SagaView Growth Rp200.000 dan Pro Rp500.000 per
+  bulan, trial 14 hari dua fase tanpa auto-charge, CTA paket, SLA support, dan
+  privacy/retention.
+- Full frontend regression, accessibility, security audit, dan responsive
+  visual lulus.
+- Production tidak berubah karena signup live masih memakai kontrak trial lama;
+  promosi tetap fail-closed sampai backend dan public surface konsisten.
+
 ## 2026-07-31 - SagaMenu public media recovery
 
 - Bio Menu dan Store Display kini local validated untuk fallback gambar serta

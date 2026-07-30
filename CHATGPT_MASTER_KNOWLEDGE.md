@@ -60,10 +60,12 @@ Trial contract: 14 hari dua fase; production activation backend terbaru masih
 menunggu provider canary.
 
 Update terbaru: output 4R production, portrait 1200x1800, landscape 1800x1200,
-300 DPI. Backend Owner Console/device/trial/subscription candidate sudah
-melewati full regression, backup/restore, migration, build, security, dan
-rollback rehearsal, tetapi production backend belum berubah karena paid
-Tokopay canary serta processed callback nyata belum tersedia.
+300 DPI. Public Home/Pricing/Help/Legal dengan harga unit dan kontrak trial dua
+fase sudah implemented tetapi belum production karena signup live masih
+menjalankan trial lama. Backend Owner Console/device/trial/subscription
+candidate sudah melewati full regression, backup/restore, migration, build,
+security, dan rollback rehearsal, tetapi production backend belum berubah
+karena paid Tokopay canary serta processed callback nyata belum tersedia.
 
 ### SagaBio
 
@@ -153,6 +155,8 @@ Status: `PLANNED/FOUNDATION`.
 
 - Jangan sebut SagaView backend terbaru live sebelum provider canary dan release
   production selesai.
+- Jangan sebut public Pricing/Help/Legal SagaView terbaru live sebelum backend
+  trial dan public route dipromosikan bersama lalu lulus public smoke.
 - Jangan sebut SagaBio atau SagaMenu production.
 - Jangan sebut COYABAG siap transaksi penuh.
 - Jangan sebut AOGTICVITY production multi-device.

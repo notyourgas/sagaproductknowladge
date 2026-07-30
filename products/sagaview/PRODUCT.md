@@ -58,6 +58,7 @@ Positioning singkat:
 - Offline/reconnect dan emergency transfer.
 - Support readiness/diagnostics.
 - Trial, plan/device limits, subscription, dan payment callback candidate.
+- Public self-service Home, Pricing, Help, Contact, Privacy, dan Terms candidate.
 
 ## Commercial contract
 
@@ -122,9 +123,20 @@ Status keseluruhan: `PARTIAL_PRODUCTION_DEPLOYED`.
 - Subscription Growth/Pro flow.
 - Payment callback exactly-once.
 - Device trust dan exclusive lease hardening.
+- Public self-service source:
+  `6ff15f653c64a3bb2ffed5ee3785341165dbb0c9`.
+  - Pricing hanya menampilkan Growth Rp200.000 dan Pro Rp500.000 per bulan.
+  - Trial menjelaskan 7 hari full access, 7 hari plan-limited, tanpa
+    auto-charge.
+  - Help memuat state koneksi/recovery, jam support, SLA respons, maintenance,
+    serta RTO/RPO.
+  - Privacy/Terms memuat local-photo boundary, retention, grace, refund, dan
+    offboarding.
 
 Blocker: belum ada Tokopay canary/paid callback production yang terikat ke
-exact runtime candidate.
+exact runtime candidate. Public self-service juga belum dipromosikan karena
+runtime signup production masih memakai kontrak trial lama; source publik tidak
+boleh menjanjikan 14 hari sebelum enforcement backend sesuai.
 
 ### Release readiness backend candidate
 
@@ -137,6 +149,9 @@ exact runtime candidate.
 - Release tooling mewajibkan build Owner Console terbaru dan menolak fallback
   ke asset production lama.
 - Production belum dimutasi dan migration belum dijalankan pada database live.
+- Public self-service lulus 153 unit test, 47 E2E, build budget, dependency
+  audit, WCAG 2.1 AA automated scan, forced-colors, dan visual responsive
+  mobile sampai 2560 piksel.
 
 ## Belum boleh diklaim
 
@@ -145,6 +160,7 @@ exact runtime candidate.
 - Payment/provider belum terverifikasi hanya karena test otomatis lulus.
 - Owner Console multi-device belum boleh disebut live sebelum backend candidate
   dipromosikan dan smoke production lulus.
+- Public Pricing/Help/Legal terbaru belum live.
 - Foto customer tidak disimpan di cloud.
 
 ## Ide konten

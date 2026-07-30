@@ -1,5 +1,24 @@
 # SagaView Changelog
 
+## 2026-07-31 — Public self-service candidate
+
+- Status: `IMPLEMENTED_NOT_DEPLOYED` dan `BLOCKED`.
+- Before: Pricing, Help/Contact, dan Legal/Privacy publik belum tersedia pada
+  route kanonik; kontrak trial publik masih dapat membaca nilai 7 hari.
+- After: source frontend memiliki Home, Pricing, Help, Contact, Privacy, dan
+  Terms responsif dengan hanya Growth Rp200.000 dan Pro Rp500.000 per bulan,
+  trial dua fase 14 hari tanpa auto-charge, CTA plan-aware, SLA support,
+  privacy/retention, serta loading/offline/recovery state.
+- Dampak: calon customer dan operator memiliki satu kontrak publik yang jelas
+  dan aksesibel, tanpa mengekspos bundle, multi-term, atau provider canary.
+- Source: `6ff15f653c64a3bb2ffed5ee3785341165dbb0c9`.
+- Validasi: 153 unit test, 47 E2E, build/budget, dependency audit, automated
+  WCAG 2.1 AA, forced-colors, dan visual 390 sampai 2560 piksel lulus.
+- Production tidak berubah.
+- Blocker: signup production masih menjalankan kontrak trial lama. Halaman
+  publik baru tidak boleh dipromosikan sebelum backend 14 hari diaktifkan dan
+  public smoke membuktikan kontrak end-to-end yang sama.
+
 ## 2026-07-31 — Backend release guard ready
 
 - Status: `IMPLEMENTED_NOT_DEPLOYED` dan `BLOCKED`.
