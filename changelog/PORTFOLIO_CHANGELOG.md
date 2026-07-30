@@ -1,5 +1,12 @@
 # Portfolio Changelog
 
+## 2026-07-31 - SagaMenu public media recovery
+
+- Bio Menu dan Store Display kini local validated untuk fallback gambar serta
+  video failure, retry, dan recovery.
+- Perubahan belum dideploy; status produk tetap `LOCAL_VALIDATED`.
+- Gate eksternal Laravel staging tetap menjadi blocker production.
+
 ## 2026-07-31 — Initial central knowledge baseline
 
 - Repository Saga Product Knowledge dibentuk sebagai knowledge publik kanonik.

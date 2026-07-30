@@ -76,6 +76,8 @@ Status: `LOCAL_VALIDATED`, belum production.
 E-menu/e-katalog preview-first untuk bisnis F&B, jasa, dan katalog visual.
 Domain kanonik: Catalog, Collection, Offering, dan immutable CatalogSnapshot.
 Store Display tablet-first dan Mobile Catalog membaca snapshot yang sama.
+Kedua surface memiliki fallback gambar aksesibel serta video failure, retry,
+dan recovery yang sudah local validated.
 Produk tidak memiliki cart/order/payment pada scope pilot.
 
 Status: `LOCAL_VALIDATED`, production gate eksternal belum tersedia.

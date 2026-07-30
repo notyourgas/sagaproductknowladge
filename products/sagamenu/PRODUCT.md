@@ -34,7 +34,8 @@ snapshot yang sama.
 - Draft preview, atomic publish, snapshot history, restore, dan unpublish.
 - Offering, variant/option/inclusion informational.
 - Appearance preset dan custom font controlled.
-- Gallery media.
+- Gallery media dengan fallback aksesibel saat gambar gagal.
+- Video menu dengan status gagal, retry, dan recovery tanpa reload halaman.
 - QR route/download.
 - Analytics allowlist dan rollup.
 - Membership/role policy dan audit.
@@ -48,6 +49,8 @@ Status: `LOCAL_VALIDATED`.
 - Wave 1-4 dan Sprint 5 pilot closure selesai secara lokal.
 - Test, build, browser tablet/mobile, tenant isolation, dan release artifact
   tersedia.
+- Public media recovery untuk Bio Menu dan Store Display sudah local validated,
+  tetapi belum dideploy.
 - Production belum boleh diklaim karena PostgreSQL/Redis/VPS, TLS, SMTP,
   ClamAV, offsite backup, monitoring, dan restore drill eksternal belum
   diverifikasi.
