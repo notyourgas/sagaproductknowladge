@@ -29,3 +29,13 @@
 - Output portrait `1200x1800`, landscape `1800x1200`, 300 DPI.
 - Backend Owner Console/trial/payment candidate tetap belum dideploy karena
   provider canary belum terverifikasi.
+
+## 2026-07-31 — SagaView backend release preparation
+
+- Backend runtime candidate tetap `IMPLEMENTED_NOT_DEPLOYED`.
+- Backup/restore, dua migration, candidate gate, rollback compatibility,
+  build, security audit, dan full regression telah lulus.
+- Release guard diperbarui agar tidak memakai asset Owner Console lama.
+- Production backend tidak berubah.
+- Satu gate tersisa: paid Tokopay canary dan processed callback nyata sebelum
+  promosi production.

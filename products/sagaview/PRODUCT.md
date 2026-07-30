@@ -81,7 +81,9 @@ kumulatif dipromosikan.
 
 ## Account dan device boundary
 
-- Owner Console dapat dibuka dari browser/device mana pun setelah login.
+- Target contract: Owner Console dapat dibuka dari browser/device mana pun
+  setelah login. Perbaikan context-navigation untuk kontrak ini sudah
+  diimplementasikan, tetapi belum production.
 - Device activation/exclusive lease hanya berlaku pada Studio Console dan
   start-session.
 - Identity yang sama tidak membuat role Owner SagaBook menjadi Admin SagaView.
@@ -106,11 +108,15 @@ Status keseluruhan: `PARTIAL_PRODUCTION_DEPLOYED`.
 - Release: `20260731023744-1c5678c`.
 - Source: `1c5678c6fa8b180ebf4716d7060c2cb058c02317`.
 - Public output/session/changelog smoke lulus.
+- Backend production masih release `20260729002327-86d6920` pada source
+  `86d6920bfd3da0234e74f73fda0c2fc5e7307903`.
 
 ### Belum production
 
 - Backend cumulative candidate:
   `dc55cbb09f45279b591e82bca6be50f7d4c1f6ee`.
+- Guarded release tooling:
+  `b778a068a09e28a6900918172fc64637655be2fa`.
 - Owner Console context fix.
 - Trial dua fase server-side.
 - Subscription Growth/Pro flow.
@@ -120,11 +126,25 @@ Status keseluruhan: `PARTIAL_PRODUCTION_DEPLOYED`.
 Blocker: belum ada Tokopay canary/paid callback production yang terikat ke
 exact runtime candidate.
 
+### Release readiness backend candidate
+
+- Full backend suite: 905/905 test lulus.
+- Production build dan dependency audit lulus.
+- Fresh encrypted backup, checksum, offsite round-trip, dan disposable restore
+  lulus.
+- Dua additive migration, candidate deploy gate, dan rollback-source
+  compatibility sudah direhearsal.
+- Release tooling mewajibkan build Owner Console terbaru dan menolak fallback
+  ke asset production lama.
+- Production belum dimutasi dan migration belum dijalankan pada database live.
+
 ## Belum boleh diklaim
 
 - Backend candidate terbaru belum live.
 - Trial dua fase belum production-activated.
 - Payment/provider belum terverifikasi hanya karena test otomatis lulus.
+- Owner Console multi-device belum boleh disebut live sebelum backend candidate
+  dipromosikan dan smoke production lulus.
 - Foto customer tidak disimpan di cloud.
 
 ## Ide konten

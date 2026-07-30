@@ -54,13 +54,16 @@ customer memilih frame/foto, menyusun output, lalu export/print. Foto customer
 tetap berada di device studio.
 
 Status: Studio frontend `PRODUCTION_DEPLOYED`; backend komersial terbaru
-`IMPLEMENTED_NOT_DEPLOYED`.
+`IMPLEMENTED_NOT_DEPLOYED` dan `BLOCKED`.
 Harga bulanan: Growth Rp200.000, Pro Rp500.000.
 Trial contract: 14 hari dua fase; production activation backend terbaru masih
 menunggu provider canary.
 
 Update terbaru: output 4R production, portrait 1200x1800, landscape 1800x1200,
-300 DPI.
+300 DPI. Backend Owner Console/device/trial/subscription candidate sudah
+melewati full regression, backup/restore, migration, build, security, dan
+rollback rehearsal, tetapi production backend belum berubah karena paid
+Tokopay canary serta processed callback nyata belum tersedia.
 
 ### SagaBio
 
