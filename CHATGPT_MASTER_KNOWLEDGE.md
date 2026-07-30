@@ -44,7 +44,9 @@ Harga bulanan: Basic Rp500.000, Growth Rp950.000, Pro Rp1.500.000.
 Trial: 14 hari dua fase; hari 1-7 full access dan hari 8-14 plan-limited,
 kemudian grace read-only hari 15-21.
 
-Update terbaru: Customer Booking Center production.
+Update terbaru: Activation Center production. Owner kini mendapat alur
+server-authoritative dari setup tenant, preview/publish storefront, sampai
+handoff booking publik pertama. Customer Booking Center tetap aktif.
 
 ### SagaView
 

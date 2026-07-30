@@ -61,6 +61,8 @@ Positioning singkat:
 - Payment monitoring dan reconciliation.
 - Report dan export.
 - SagaBook subscription portal dan trial lifecycle.
+- Activation Center untuk setup tenant, preview/publish storefront, dan
+  handoff menuju booking pertama.
 
 ## Commercial contract
 
@@ -96,10 +98,11 @@ Status: `PRODUCTION_DEPLOYED`.
 
 - Customer Booking Center aktif di production.
 - Source kanonik terbaru pada cut-off: commit
-  `dc312a4e4835d0d7ca52f88730b5ea0bb84ac9af`.
-- Release production tercatat: `20260730153914`.
+  `a26d378de994da3dc69d9088eff1c8e04110e7af`.
+- Release production tercatat: `20260730214513-a26d378`.
 - Storefront, admin, dan super-admin merespons public smoke.
-- Next product batch: Tenant Onboarding dan First Booking Activation.
+- Tenant Onboarding dan First Booking Activation aktif melalui Activation
+  Center yang tenant-scoped dan server-authoritative.
 
 ## Update terbaru
 
@@ -116,12 +119,27 @@ After:
 - cancel booking berbayar diarahkan ke refund;
 - Task Center menerima handoff yang auditable.
 
+### Tenant Onboarding dan First Booking Activation
+
+Before: owner perlu membaca beberapa halaman setup terpisah dan tidak memiliki
+satu status kanonik untuk mengetahui apakah storefront siap dipublikasikan.
+
+After:
+
+- Activation Center merangkum akun, studio, katalog, kebijakan, payment,
+  notification, storefront, dan booking pertama;
+- progress dan blocker dihitung server-side berdasarkan tenant aktif;
+- owner dapat melanjutkan setup, preview, publish, lalu memantau booking publik
+  pertama dari satu alur;
+- status notification membedakan otomatis, fallback manual, dan belum siap;
+- endpoint onboarding menggunakan permission settings, tenant resolution
+  fail-closed, dan rate limit.
+
 ## Belum boleh diklaim
 
 - Provider delivery tidak boleh dianggap berhasil hanya dari queue/log.
 - Business-ready penuh tetap membutuhkan acceptance booking nyata, support
-  observation, dan onboarding tenant yang dapat diselesaikan tanpa bantuan
-  teknis.
+  observation, serta cohort onboarding studio nyata.
 
 ## Ide konten
 

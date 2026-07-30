@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-07-31 - SagaBook Activation Center production
+
+- Tenant onboarding kini memiliki progress dan blocker server-authoritative.
+- Owner dapat resume setup, preview/publish storefront, dan memantau handoff
+  menuju booking publik pertama.
+- Status payment/notification tetap jujur dan akses endpoint fail-closed
+  berdasarkan tenant serta permission.
+- Source `a26d378de994da3dc69d9088eff1c8e04110e7af` aktif pada release
+  `20260730214513-a26d378`; production gate dan public smoke lulus.
+
 ## 2026-07-31 — SagaView public self-service candidate
 
 - Home, Pricing, Help/Contact, Privacy, dan Terms terbaru sudah
