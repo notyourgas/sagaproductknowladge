@@ -79,6 +79,10 @@ ketika keputusan atau release baru menutup gap.
   evidence physical-UAT yang masih diwajibkan oleh preflight operasional lama.
 - `TODO`: S72 auto-trial 7 hari masih `PRODUCTION HOLD`; activation memerlukan
   release Saga Platform dan authenticated SagaView UAT setelah provisioning.
+- `TODO`: salin identifier immutable release S82 dari evidence deploy privat
+  ke knowledge public-safe. Source aktif `1092c99b258f6ca8db817d835d90e738cdcc4964`,
+  runtime route, security header, service health, dan rollback sudah
+  `CONFIRMED`; item ini hanya melengkapi provenance release identifier.
 
 ### Gap SagaView ditutup
 

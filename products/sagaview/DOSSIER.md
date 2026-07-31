@@ -7,7 +7,7 @@ SagaView berdasarkan runtime production aktif.
 
 ## Konteks dan status bukti
 
-- Updated: 31 Juli 2026
+- Updated: 1 Agustus 2026
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED`
 - Business readiness: `NEEDS CONFIRMATION` untuk penjualan massal
@@ -59,6 +59,12 @@ motion dibatasi 180 ms, forced-colors/reduced-motion didukung, dan tepat satu
 `Powered by SagaView` tampil pada surface aplikasi/public/customer tanpa masuk
 ke export, print, invoice, atau receipt.
 
+Pemilihan frame production memakai preview, selected state, jumlah cetakan,
+serta satu aksi `Terapkan & lanjut`. Editor dan Review kini menjadi alur
+vertikal yang dapat dijangkau pada mobile 390x844, sambil mempertahankan
+workspace tiga/dua kolom pada desktop, output 4R, status lokal/offline,
+error/retry, stepper aktif, dan target sentuh 44/48 px.
+
 ## Fitur MVP
 
 `CONFIRMED`: journey Studio, output 4R, completion/privacy handoff,
@@ -102,9 +108,10 @@ cloud, dan laporan dasar. Pro: 4 device, 50 frame aktif, 10 preset, offline 168
 jam, 10 GB aset frame cloud, laporan lanjutan, activity log, dan priority
 support. Session/foto dipasarkan unlimited dengan fair-use; foto tetap lokal.
 
-`CONFIRMED` — kontrak ini aktif di production. Runtime terbaru memakai backend
-release `20260731132030-f26bb57` dan Studio release
-`20260731132030-12e9659`.
+`CONFIRMED` — kontrak ini aktif di production. Source Studio aktif adalah
+`1092c99b258f6ca8db817d835d90e738cdcc4964`; rollback Studio terakhir adalah
+`20260731150138-1830e71`. Identifier immutable release S82 masih
+`NEEDS CONFIRMATION` untuk dicatat secara public-safe.
 
 ## Kompetitor
 

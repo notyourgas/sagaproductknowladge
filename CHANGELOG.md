@@ -12,6 +12,24 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-01
 
+### SagaView preset dan Editor/Review responsif production
+
+- Ringkasan: menyinkronkan S81 pemilihan frame dan S82 Editor/Review mobile
+  yang sudah aktif di production.
+- Alasan: workflow customer harus tetap dapat dijangkau pada 390x844 tanpa
+  mengubah workspace desktop, output 4R, device, payment, atau privacy.
+- Produk/area terdampak: SagaView Studio Console, customer stepper, frame,
+  Editor, Review, offline/local state, retry, touch target, dan branding.
+- Klasifikasi: `CONFIRMED`; delivery `PRODUCTION_DEPLOYED`; activation
+  `PRODUCTION_ACTIVATED`; business readiness mass-scale tetap
+  `NEEDS CONFIRMATION`.
+- Source aktif `1092c99b258f6ca8db817d835d90e738cdcc4964`;
+  rollback Studio `20260731150138-1830e71`.
+- Production berubah: ya, hanya Studio frontend; backend contract, provider,
+  dan transaksi tidak berubah.
+- Gate: 156 unit, 64/64 E2E, build/budget, audit dependency 0, preflight,
+  backup, services, dan production smoke lulus.
+
 ### AOGTICVITY festival UI/UX production
 
 - Ringkasan: menyinkronkan redesign visual yang lebih fun dan motion system

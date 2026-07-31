@@ -4,6 +4,28 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-08-01 — Preset serta Editor/Review responsif production
+
+- Klasifikasi: `CONFIRMED`.
+- Status: `PRODUCTION_DEPLOYED` dan `PRODUCTION_ACTIVATED`.
+- Before: pemilihan frame masih desktop-first dan Editor/Review dapat
+  terpotong pada 390x844 sehingga canvas, checklist, foto terpilih, CTA, atau
+  retry sulit dijangkau.
+- After: frame memakai `preview -> pilih -> jumlah cetakan -> Terapkan &
+  lanjut`; Editor/Review menjadi alur vertikal mobile dengan status
+  lokal/offline, langkah aktif, CTA utama, retry, 44/48 px target, dan signature
+  yang tidak tertutup. Workspace desktop dan output 4R tidak berubah.
+- Source S81 `1830e7145c6a06e9b53ad951cbcd2d788a7f58a1`; source S82 aktif
+  `1092c99b258f6ca8db817d835d90e738cdcc4964`.
+- Validation: format, lint, typecheck, 156 unit, 64/64 default-parallel E2E,
+  production build/budget, dependency audit 0, preflight 6/6, backup,
+  services, serta smoke Editor/Review/Frame/Output lulus.
+- Runtime: route utama mengembalikan HTTP 200 dengan HSTS, CSP, dan
+  `X-Frame-Options: DENY`; changelog production tetap menampilkan v0.20.3.
+- Rollback Studio: `20260731150138-1830e71`.
+- `NEEDS CONFIRMATION`: salin identifier immutable release S82 dari evidence
+  privat ke knowledge public-safe tanpa membawa path atau data restricted.
+
 ## 2026-07-31 — Candidate signup auto-trial 7 hari
 
 - Status: `LOCAL_VALIDATED`; `PRODUCTION HOLD`; production tidak berubah.

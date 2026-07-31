@@ -1,6 +1,6 @@
 # SagaView Product Knowledge
 
-Updated: 31 Juli 2026
+Updated: 1 Agustus 2026
 Evidence status: production deployed + production activated
 
 ## Tujuan dokumen
@@ -148,6 +148,21 @@ Kontrak ini sekarang enforced server-side pada runtime production yang aktif.
 - setiap surface menampilkan tepat satu `Powered by SagaView` yang accessible;
   signature tidak dimasukkan ke export foto, hasil print, invoice, atau receipt.
 
+## Workflow preset, editor, dan review
+
+`CONFIRMED` — production:
+
+- pemilihan frame memakai urutan `preview -> pilih -> jumlah cetakan -> Terapkan
+  & lanjut`, dengan selected/applied, loading, offline queue, error/retry, empty,
+  dan disabled state yang eksplisit;
+- Editor dan Review memakai workspace desktop yang tetap padat, tetapi berubah
+  menjadi satu alur vertikal pada mobile 390x844 agar canvas, foto terpilih,
+  checklist, CTA, dan retry tidak terpotong;
+- status penyimpanan lokal/offline, langkah aktif, serta target sentuh 44/48 px
+  terlihat tanpa mengubah geometri atau output 4R;
+- tombol fullscreen tidak menutupi `Powered by SagaView`, dan stepper mobile
+  memusatkan langkah aktif dengan menghormati reduced-motion.
+
 ## Status saat ini
 
 - Delivery: `PRODUCTION_DEPLOYED`.
@@ -159,10 +174,16 @@ Kontrak ini sekarang enforced server-side pada runtime production yang aktif.
 
 - Backend source:
   `f26bb57737fc25a0a40d350dc26ca727d30885b2`.
-- Backend release: `20260731132030-f26bb57`.
-- Studio source:
-  `12e96591380d1256038bd7fb66b49d0e4090392e`.
-- Studio release: `20260731132030-12e9659`.
+- Backend release dibuat ulang dari source yang sama saat promosi S82;
+  identifier immutable aktif masih `NEEDS CONFIRMATION` untuk catatan
+  public-safe.
+- Studio source aktif:
+  `1092c99b258f6ca8db817d835d90e738cdcc4964`.
+- Studio release sebelumnya yang menjadi rollback:
+  `20260731150138-1830e71`.
+- `NEEDS CONFIRMATION`: identifier immutable release S82 perlu disalin dari
+  evidence deploy privat ke catatan public-safe; runtime source dan smoke
+  production sudah terverifikasi.
 - Saga Platform source:
   `285ab943b93466deda0f6c07466c0fbe8da16e4c`.
 - Saga Platform release: `20260731075424-285ab94`.
@@ -190,7 +211,7 @@ Kontrak ini sekarang enforced server-side pada runtime production yang aktif.
 ### Release validation
 
 - Backend: 908/908 test, 10.629 assertions.
-- Studio: 156 unit test dan 56/56 E2E default-parallel.
+- Studio: 156 unit test dan 64/64 E2E default-parallel.
 - Public production browser: 8/8 self-service E2E.
 - Import 50/200/500, accessibility, responsive mobile–desktop, forced-colors,
   reduced-motion, dependency audit, dan bundle budget lulus.
@@ -201,8 +222,8 @@ Kontrak ini sekarang enforced server-side pada runtime production yang aktif.
 
 ### Rollback
 
-- Backend: `20260731101529-528e68d`.
-- Studio: `20260731101529-f6fa6f3`.
+- Backend: `20260731150138-f26bb57`.
+- Studio: `20260731150138-1830e71`.
 - Backup release dan konfigurasi Nginx sebelumnya dipertahankan.
 
 ## Belum boleh diklaim

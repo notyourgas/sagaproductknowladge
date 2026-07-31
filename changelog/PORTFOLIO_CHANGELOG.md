@@ -10,6 +10,21 @@ workflow, pricing, release, activation, atau blocker.
 Detail tetap berada pada changelog produk; entri docs-only berada di root
 [CHANGELOG](../CHANGELOG.md).
 
+## 2026-08-01 — SagaView preset dan Editor/Review responsif production
+
+- Pemilihan frame kini memakai preview, selected state, jumlah cetakan, dan
+  satu aksi `Terapkan & lanjut`.
+- Editor/Review pada 390x844 menjadi alur vertikal dengan status lokal/offline,
+  langkah aktif, 44/48 px target, error/retry, serta signature yang tidak
+  tertutup; workspace desktop dan output 4R tetap.
+- Source Studio aktif `1092c99b258f6ca8db817d835d90e738cdcc4964`;
+  rollback `20260731150138-1830e71`.
+- 156 unit, 64/64 default-parallel E2E, build/budget, dependency audit 0,
+  preflight 6/6, backup, services, dan production smoke lulus.
+- Delivery/activation: `PRODUCTION_DEPLOYED` / `PRODUCTION_ACTIVATED`.
+- `NEEDS CONFIRMATION`: identifier immutable release S82 belum disalin ke
+  knowledge public-safe.
+
 ## 2026-08-01 — AOGTICVITY festival UI/UX production
 
 - Public/player/leader/admin/live AOGTICVITY kini memakai hierarchy mobile 430
