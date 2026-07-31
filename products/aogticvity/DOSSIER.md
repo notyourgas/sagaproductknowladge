@@ -8,7 +8,7 @@ content AOGTICVITY tetap jelas.
 ## Konteks dan status bukti
 
 - Updated: 31 Juli 2026
-- Delivery: `STAGING_DEPLOYED`
+- Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED`
 
@@ -52,8 +52,9 @@ backend check-in, roster, session/security, dan event-master vertical slices.
 
 Satu event dengan delapan tim dan sepuluh lomba, authenticated roles, MySQL
 persistence, multi-device check-in/scoring, audit, projection, dan fallback.
-Master event dark staging sudah terverifikasi; auth produksi, frontend API
-activation, dan rehearsal fisik tetap belum production.
+Master event dark staging sudah terverifikasi dan public prototype sudah aktif
+di Vercel; auth produksi, frontend API activation, dan rehearsal fisik tetap
+belum production-activated.
 
 ## Roadmap
 
@@ -102,7 +103,8 @@ Operational app untuk matchday komunitas, bukan sekadar landing event.
 
 ## FAQ
 
-**Apakah domain sudah live?** Belum terverifikasi.
+**Apakah domain sudah live?** Public Vercel prototype aktif; domain custom
+AOGTICVITY belum diaktifkan.
 **Apakah notification aktif?** Simulation bukan provider live.
 **Apakah bisa multi-device?** Target capability; runtime production belum
 terverifikasi.
@@ -112,7 +114,8 @@ terverifikasi.
 Frontend mobile-first dengan lebar aplikasi maksimum 430 px, Plus Jakarta Sans,
 dan public/player/leader/admin/live surfaces. Backend memakai MySQL staging untuk
 check-in, roster, managed session/security, serta event-master versioning.
-SQLite tetap fast test adapter dan beberapa state UI masih localStorage.
+Public Vercel prototype memakai bundled master/local browser state; API MySQL
+tetap fail-closed. SQLite tetap fast test adapter.
 
 ## Integrasi
 

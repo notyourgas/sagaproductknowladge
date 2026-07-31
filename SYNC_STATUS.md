@@ -12,11 +12,11 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-07-31T23:28:00+07:00 |
+| Waktu pembaruan terakhir | 2026-07-31T23:48:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `a6d5aeb639786ae90bcb920b1db360a360839bba` |
-| Informasi terakhir disinkronkan | AOGTICVITY master recap 17 Agustus 2026: 8 tim/10 lomba, roster otomatis untuk lomba seluruh tim, jadwal provisional editable, dan event-master MySQL dark staging release `20260731T162024Z`. |
+| Baseline sebelum pembaruan | `e01eae012ccfb352c83c03590eb3692a656c000d` |
+| Informasi terakhir disinkronkan | AOGTICVITY public Vercel prototype dari source `dabed03`, production deployment `dpl_7HCE7eAh8VfjDZpvprud7UeHFm22`, dan fail-closed boundary untuk auth/MySQL yang belum production-activated. |
 | Status sinkronisasi | `UP TO DATE` setelah commit/push dan remote verification |
 | Konflik | Tidak ada; local `main` sama dengan `origin/main` sebelum edit. |
 | Error | Tidak ada error terbuka pada awal sinkronisasi. |
@@ -36,11 +36,12 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 ## Item menunggu konfirmasi
 
-Model bisnis AOGTICVITY; auth/IdP produksi; frontend API activation; notification
-provider; domain/TLS publik; physical multi-device UAT; nama Tim 7/Tim 8; durasi;
-dan keputusan master recap provisional masih `NEEDS CONFIRMATION`. Dark staging
-sudah terverifikasi, tetapi public activation dan production multi-device tidak
-diklaim. Status produk lain tidak diubah oleh sinkronisasi ini.
+Model bisnis AOGTICVITY; auth/IdP produksi; secure Vercel-to-Hostinger BFF;
+frontend API activation; notification provider; target custom domain/TLS;
+physical multi-device UAT; nama Tim 7/Tim 8; durasi; dan keputusan master recap
+provisional masih `NEEDS CONFIRMATION`. Public Vercel prototype aktif, tetapi
+database-backed production activation dan multi-device tidak diklaim. Status
+produk lain tidak diubah oleh sinkronisasi ini.
 
 ## Cara verifikasi
 

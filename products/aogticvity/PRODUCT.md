@@ -1,7 +1,7 @@
 # AOGTICVITY Product Knowledge
 
 Updated: 31 Juli 2026
-Evidence status: dark staging release candidate
+Evidence status: public Vercel prototype + dark staging backend
 
 ## Tujuan dokumen
 
@@ -11,8 +11,9 @@ Keputusan terbuka berada di [GAPS](../../GAPS.md#aogticvity).
 
 ## Konteks
 
-Dokumen membedakan dark staging yang sudah terverifikasi dari domain publik dan
-runtime multi-device production yang belum diaktifkan.
+Dokumen membedakan public prototype Vercel yang sudah aktif, backend dark
+staging yang sudah terverifikasi, dan runtime multi-device production yang
+belum diaktifkan.
 
 ## Ringkasan
 
@@ -57,6 +58,8 @@ sebagai nama produk terbaru. Nama lama tetap disimpan sebagai provenance.
 
 Domain tersebut target, bukan bukti production aktif.
 
+Public prototype saat ini: `https://olimpiade-kemerdekaan.vercel.app`.
+
 ## Arsitektur status
 
 - Frontend mobile-first.
@@ -71,24 +74,27 @@ Domain tersebut target, bukan bukti production aktif.
 
 ## Status saat ini
 
-Delivery: `STAGING_DEPLOYED`. Activation: `NOT_PRODUCTION_ACTIVATED`. Business
+Delivery: `PRODUCTION_DEPLOYED`. Activation: `NOT_PRODUCTION_ACTIVATED`. Business
 readiness: `BLOCKED`.
 
-- UI public/player/leader/admin/live tersedia.
+- UI public/player/leader/admin/live aktif pada public Vercel prototype.
 - Master recap 2026 berisi 8 tim, 10 lomba, jadwal provisional, mekanisme,
   safety, equipment, dan assignment panitia.
 - Backend slice dan migration MySQL sudah lulus dark-staging smoke.
+- MySQL-backed API pada Vercel tetap fail-closed 503 dan dev session 404;
+  browser masih memakai bundled master/local state.
 - Typecheck, test, build, security, accessibility, responsive, migration, dan
   rollback telah menjadi gate.
-- Auth/IdP production, domain, TLS, frontend API activation, notification
-  provider, dan UAT fisik multi-device belum terverifikasi.
+- Auth/IdP production, target custom domains, frontend API activation,
+  notification provider, dan UAT fisik multi-device belum terverifikasi.
 
 ## Belum boleh diklaim
 
 - Role switcher/PIN demo bukan auth production.
 - Fonntte queue masih simulation.
 - localStorage bukan persistence multi-device.
-- Domain target belum berarti live.
+- Public Vercel prototype bukan bukti custom domain atau core journey
+  database-backed sudah aktif.
 
 ## Ide konten
 

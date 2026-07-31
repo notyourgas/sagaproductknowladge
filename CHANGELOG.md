@@ -12,6 +12,23 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-07-31
 
+### AOGTICVITY public Vercel prototype
+
+- Ringkasan: mempromosikan exact artifact AOGTICVITY ke public Vercel setelah
+  Preview, security, health, route, provenance, dan runtime-error gate lulus.
+- Alasan: founder meminta perubahan yang belum live dideploy lebih dulu ke
+  domain Vercel publik agar dapat dicoba.
+- Produk/area terdampak: public/admin/player/leader/live UI, dependency install,
+  release, rollback, portfolio, master knowledge, decision, gaps, dan status.
+- Klasifikasi: `CONFIRMED`; delivery `PRODUCTION_DEPLOYED`; activation
+  `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED`.
+- Source `dabed03`; production `dpl_7HCE7eAh8VfjDZpvprud7UeHFm22`; URL
+  `https://olimpiade-kemerdekaan.vercel.app`.
+- Production berubah: ya, public prototype Vercel; Hostinger dark staging,
+  database, dan target custom domains tidak berubah.
+- Blocker: real auth, secure Vercel-to-Hostinger BFF, frontend API activation,
+  notification provider, target custom domains, dan physical multi-device UAT.
+
 ### AOGTICVITY master recap 2026 dark staging
 
 - Ringkasan: menyinkronkan kontrak 8 tim/10 lomba, roster otomatis untuk lomba

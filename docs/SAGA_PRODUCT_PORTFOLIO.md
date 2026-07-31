@@ -67,7 +67,7 @@ session, cancellation, dan data masing-masing produk tetap terpisah.
 | SagaMenu | Core SaaS | LOCAL_VALIDATED | Pilot closure lokal; environment production belum tersedia |
 | SagaFin | Core SaaS | UNVERIFIED | Controlled public trial pernah dilaporkan; runtime/provider perlu verifikasi ulang |
 | COYABAG | Client commerce | PRODUCTION_DEPLOYED; activation BLOCKED | Surface live; transaksi nyata tetap fail-closed |
-| AOGTICVITY | Event product | STAGING_DEPLOYED | Master recap 8 tim/10 lomba dan backend MySQL aktif di dark staging; public activation tetap diblokir |
+| AOGTICVITY | Event product | PRODUCTION_DEPLOYED | Public Vercel prototype aktif; MySQL/auth multi-device tetap belum production-activated |
 | SagaOPS | Core SaaS | PROTOTYPE | Workflow terbukti pada prototype; backend production belum terhubung |
 | Saga Platform | Internal platform | PRODUCTION_DEPLOYED (fondasi) | Control plane hidup bersama fondasi SagaBook; pemisahan bertahap |
 | Saga AI | Internal/future SaaS | PLANNED | Knowledge contract ada; runtime penuh belum menjadi produk publik |

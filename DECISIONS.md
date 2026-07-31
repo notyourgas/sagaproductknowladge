@@ -230,3 +230,17 @@ keputusan pengganti.
 | Pemberi keputusan | Andreas / founder |
 | Status | `CONFIRMED` |
 | Dokumen terkait | [AOGTICVITY Product](products/aogticvity/PRODUCT.md), [AOGTICVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTICVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |
+
+## DEC-016 — Deploy public prototype AOGTICVITY ke Vercel
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-07-31 |
+| Topik | Public prototype release AOGTICVITY |
+| Keputusan | Deploy seluruh perubahan AOGTICVITY yang sudah lulus gate lebih dulu ke domain public Vercel agar dapat dicoba. Deployment publik tidak mengaktifkan MySQL/auth production yang belum aman. |
+| Alasan | Founder membutuhkan URL yang dapat dibuka dari mana saja sebelum finalisasi auth, persistence multi-device, custom domain, dan UAT. |
+| Alternatif yang dipertimbangkan | Menunggu seluruh backend production selesai; mempertahankan hanya dark staging internal; mempromosikan deployment lama dengan provenance yang salah. |
+| Dampak | Public prototype tersedia di `https://olimpiade-kemerdekaan.vercel.app`; delivery menjadi `PRODUCTION_DEPLOYED`, tetapi activation tetap `NOT_PRODUCTION_ACTIVATED`. UI wajib tetap melabeli prototype dan API database fail-closed. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED` |
+| Dokumen terkait | [AOGTICVITY Product](products/aogticvity/PRODUCT.md), [AOGTICVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTICVITY Changelog](products/aogticvity/CHANGELOG.md), [Status Legend](docs/STATUS_LEGEND.md) |

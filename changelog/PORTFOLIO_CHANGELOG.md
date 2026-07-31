@@ -10,6 +10,18 @@ workflow, pricing, release, activation, atau blocker.
 Detail tetap berada pada changelog produk; entri docs-only berada di root
 [CHANGELOG](../CHANGELOG.md).
 
+## 2026-07-31 — AOGTICVITY public Vercel prototype
+
+- Public prototype AOGTICVITY aktif pada
+  `https://olimpiade-kemerdekaan.vercel.app` dari exact source `dabed03`.
+- Preview tervalidasi dipromosikan sebagai production deployment
+  `dpl_7HCE7eAh8VfjDZpvprud7UeHFm22`; seluruh surface utama dan health 200.
+- Dependency, build, security header, provenance, dan runtime-error gate lulus.
+- Delivery `PRODUCTION_DEPLOYED`; activation `NOT_PRODUCTION_ACTIVATED` karena
+  UI masih bundled/local state dan real auth/MySQL BFF belum aktif.
+- Business readiness tetap `BLOCKED`; custom domain dan workflow multi-device
+  nyata belum diklaim.
+
 ## 2026-07-31 — AOGTICVITY master recap dark staging
 
 - Master recap 17 Agustus 2026 kini menjadi kontrak event 8 tim/10 lomba untuk

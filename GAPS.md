@@ -118,8 +118,9 @@ ketika keputusan atau release baru menutup gap.
 
 - `NEEDS CONFIRMATION`: model bisnis produk (event internal, jasa per event, atau
   SaaS).
-- `NEEDS CONFIRMATION`: auth/IdP production, frontend API activation,
-  notification provider, domain/TLS publik, dan physical multi-device UAT.
+- `NEEDS CONFIRMATION`: auth/IdP production, secure Vercel-to-Hostinger BFF,
+  frontend API activation, notification provider, target custom domain/TLS,
+  dan physical multi-device UAT.
 - `NEEDS CONFIRMATION`: nama final Tim 7/Tim 8, durasi lomba, serta keputusan
   master recap yang masih provisional/open.
 
