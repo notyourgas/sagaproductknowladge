@@ -6,6 +6,7 @@ $repo = Split-Path -Parent $PSScriptRoot
 $errors = [System.Collections.Generic.List[string]]::new()
 
 $products = @(
+    'sagadevs',
     'sagabook',
     'sagaview',
     'sagabio',

@@ -49,6 +49,7 @@ Indeks mencakup knowledge publik pada evidence cut-off 31 Juli 2026.
 
 | Produk | Ringkasan | Dossier | Riwayat |
 |---|---|---|---|
+| SagaDevs | [PRODUCT](products/sagadevs/PRODUCT.md) | [DOSSIER](products/sagadevs/DOSSIER.md) | [CHANGELOG](products/sagadevs/CHANGELOG.md) |
 | SagaBook | [PRODUCT](products/sagabook/PRODUCT.md) | [DOSSIER](products/sagabook/DOSSIER.md) | [CHANGELOG](products/sagabook/CHANGELOG.md) |
 | SagaView | [PRODUCT](products/sagaview/PRODUCT.md) | [DOSSIER](products/sagaview/DOSSIER.md) | [CHANGELOG](products/sagaview/CHANGELOG.md) |
 | SagaBio | [PRODUCT](products/sagabio/PRODUCT.md) | [DOSSIER](products/sagabio/DOSSIER.md) | [CHANGELOG](products/sagabio/CHANGELOG.md) |

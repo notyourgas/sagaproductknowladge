@@ -43,6 +43,7 @@ status berbeda; repository harus terus disinkronkan setelah perubahan material.
 
 | Produk | Fungsi | Delivery ringkas | Dokumen |
 |---|---|---|---|
+| SagaDevs | Parent product hub dan lead jasa | `STAGING_DEPLOYED` pada Preview; production unchanged | [Product](products/sagadevs/PRODUCT.md) · [Dossier](products/sagadevs/DOSSIER.md) |
 | SagaBook | Booking dan operasi studio sebelum sesi | `PRODUCTION_DEPLOYED` | [Product](products/sagabook/PRODUCT.md) · [Dossier](products/sagabook/DOSSIER.md) |
 | SagaView | Selection, frame, output, dan print setelah sesi | Studio live; candidate `IMPLEMENTED_NOT_DEPLOYED` | [Product](products/sagaview/PRODUCT.md) · [Dossier](products/sagaview/DOSSIER.md) |
 | SagaBio | Mini website customer-journey | `LOCAL_VALIDATED` | [Product](products/sagabio/PRODUCT.md) · [Dossier](products/sagabio/DOSSIER.md) |
@@ -118,7 +119,7 @@ pada dokumen produk.
 
 | Area | Status | Catatan |
 |---|---|---|
-| Inventaris produk | Lengkap untuk 10 produk yang diketahui | Produk baru harus masuk update protocol. |
+| Inventaris produk | Lengkap untuk 11 produk/hub yang diketahui | Produk baru harus masuk update protocol. |
 | Product dossier | Lengkap secara struktur | Banyak pricing, KPI, competitor, dan policy masih `NEEDS CONFIRMATION`. |
 | Cross-product standards | Tersedia | Beberapa keputusan founder belum final. |
 | Release/readiness | Tersedia per produk | Harus terus disinkronkan dari source/runtime. |

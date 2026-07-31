@@ -144,6 +144,13 @@ ketika keputusan atau release baru menutup gap.
 
 ## Gap lintas produk
 
+### SagaDevs
+
+- `NEEDS CONFIRMATION`: tanggal promotion release UI/UX dari Preview ke `sagadevs.com`.
+- `NEEDS CONFIRMATION`: portfolio client yang boleh dipublikasikan dan evidence tiap claim.
+- `NEEDS CONFIRMATION`: analytics production, data retention, dan KPI conversion.
+- `NEEDS CONFIRMATION`: scope, auth, permission, dan data boundary Super Admin terpisah.
+
 - `NEEDS CONFIRMATION`: arsitektur akun bersama versus akun per produk. Keputusan
   saat ini hanya menyatakan identity dapat sama, sedangkan role, session,
   entitlement, subscription, dan ledger tetap product-scoped.

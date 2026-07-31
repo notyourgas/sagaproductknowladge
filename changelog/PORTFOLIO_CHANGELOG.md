@@ -10,6 +10,14 @@ workflow, pricing, release, activation, atau blocker.
 Detail tetap berada pada changelog produk; entri docs-only berada di root
 [CHANGELOG](../CHANGELOG.md).
 
+## 2026-07-31 — SagaDevs UI/UX Sprint 1–5 Preview
+
+- Parent hub dipadatkan menjadi Hero, Products, Services, Process, Proof, dan Contact.
+- Showroom mempertahankan sembilan capture source-grounded untuk SagaBook, SagaView, dan Sagafin serta direct landing masing-masing.
+- Typography, navigation, hierarchy, responsive layout, motion, accessibility, security headers, dan WhatsApp brief diperbaiki.
+- Release `ui-ux-sprints-1-5-preview-v1` berstatus `STAGING_DEPLOYED` pada Vercel Preview; production `sagadevs.com` tidak berubah dan noindex tetap aktif.
+- Static, browser, visual delapan viewport, health, security, dan public-safety gate lulus.
+
 ## 2026-07-31 — SagaView UI/UX shell refinement production
 
 - Owner, Studio, public, dan customer shell kini memakai hierarchy operasional

@@ -188,3 +188,17 @@ keputusan pengganti.
 | Pemberi keputusan | Andreas / founder |
 | Status | `CONFIRMED` |
 | Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaView Product](products/sagaview/PRODUCT.md) |
+
+## DEC-013 — SagaDevs sebagai parent hub dan Preview-only release
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-07-31 |
+| Topik | Arsitektur public hub dan deployment SagaDevs |
+| Keputusan | SagaDevs menjadi parent product hub dan overview layanan. SagaBook, SagaView, serta Sagafin tetap memiliki landing page masing-masing. UI/UX Sprint 1–5 dideploy sebagai Vercel Preview lebih dulu; domain production tidak diubah sampai visual UAT disetujui. Showroom harus menggunakan capture dan workflow source produk, bukan fabricated demo. |
+| Alasan | Product discovery membutuhkan satu pintu yang konsisten tanpa mencampur product landing, pricing, account, data, atau operational workflow lintas produk; Preview menutup risiko visual sebelum promotion production. |
+| Alternatif yang dipertimbangkan | Satu landing gabungan untuk seluruh detail produk; fabricated interactive demo; langsung promote ke production tanpa Preview UAT. |
+| Dampak | Navigation, showroom, CTA, content ownership, deployment gate, noindex, dan future Super Admin harus menjaga boundary public hub versus produk. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED` |
+| Dokumen terkait | [SagaDevs Product](products/sagadevs/PRODUCT.md), [SagaDevs Dossier](products/sagadevs/DOSSIER.md), [Portfolio](docs/SAGA_PRODUCT_PORTFOLIO.md) |

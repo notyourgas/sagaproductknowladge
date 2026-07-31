@@ -12,6 +12,16 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-07-31
 
+### SagaDevs UI/UX Sprint 1–5 Preview
+
+- Ringkasan: menambahkan SagaDevs sebagai parent product hub dan menyinkronkan release UI/UX Preview.
+- Alasan: structure, navigation, showroom, typography, accessibility, motion, security, dan deployment boundary berubah material bagi user.
+- Produk/area terdampak: SagaDevs hub, product discovery, lead jasa, portfolio index, master knowledge, dan sync status.
+- Klasifikasi: `CONFIRMED`; delivery `STAGING_DEPLOYED` pada Vercel Preview; production unchanged.
+- Source: release `ui-ux-sprints-1-5-preview-v1` dan Vercel deployment `dpl_G8dw1jVDjzXXnDvnSkAXHcW3FMj3`.
+- Commit knowledge: `main HEAD`; SHA immutable dilaporkan setelah push.
+- Blocker tersisa: visual UAT founder sebelum production promotion; portfolio, analytics production, dan Super Admin belum termasuk release.
+
 ### SagaView UI/UX shell refinement production
 
 - Ringkasan: menyinkronkan shell Owner/Studio/public/customer, hierarchy

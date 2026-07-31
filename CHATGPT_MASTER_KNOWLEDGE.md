@@ -45,6 +45,17 @@ payment ledger tetap terpisah per produk.
 
 ## Ringkasan produk
 
+### SagaDevs
+
+Parent product hub dan jalur masuk jasa digital. Release
+`ui-ux-sprints-1-5-preview-v1` menampilkan SagaBook, SagaView, dan Sagafin
+melalui sembilan capture source-grounded, direct product landing, layanan,
+proses, proof, dan WhatsApp brief. Hub tidak memiliki login, pricing, payment,
+database lead, atau Super Admin publik.
+
+Status: `STAGING_DEPLOYED` pada Vercel Preview; `sagadevs.com` production belum berubah dan
+prototype tetap `noindex`.
+
 ### SagaBook
 
 SaaS booking dan operasi self-photo studio. Customer melakukan booking,

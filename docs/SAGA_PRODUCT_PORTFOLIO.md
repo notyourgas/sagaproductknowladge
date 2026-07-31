@@ -19,6 +19,9 @@ nyata. Setiap produk tetap memiliki domain, data, role, subscription, dan
 release sendiri. Saga Platform menjadi control plane, bukan database gabungan
 untuk seluruh business data.
 
+SagaDevs menjadi public parent hub untuk discovery produk dan lead jasa. Hub
+tidak mengambil alih landing, account, pricing, data, atau runtime produk.
+
 ## Hubungan produk
 
 ### Ekosistem self-photo studio
@@ -57,6 +60,7 @@ session, cancellation, dan data masing-masing produk tetap terpisah.
 
 | Produk | Kind | Status utama | Posisi saat ini |
 |---|---|---|---|
+| SagaDevs | Public product hub | STAGING_DEPLOYED | UI/UX Sprint 1–5 ada di protected Vercel Preview; production belum berubah |
 | SagaBook | Core SaaS | PRODUCTION_DEPLOYED | Customer Booking Center aktif; menuju onboarding dan first-booking activation |
 | SagaView | Core SaaS | PRODUCTION_DEPLOYED + IMPLEMENTED_NOT_DEPLOYED | Studio 4R dan operator session handoff live; backend komersial terbaru masih blocked provider canary |
 | SagaBio | Core SaaS | LOCAL_VALIDATED | MVP Laravel berjalan lokal; belum staging/production |
