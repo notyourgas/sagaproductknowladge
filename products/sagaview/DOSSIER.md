@@ -61,8 +61,8 @@ production.
 
 ## Roadmap
 
-1. Controlled cohort tiga studio dan observasi support/incident.
-2. Finalisasi limit kuantitatif Growth/Pro dan policy komersial/legal.
+1. Founding Studio Pilot tiga studio dan observasi support/incident.
+2. Verifikasi implementasi dan penggunaan limit Growth/Pro pada cohort nyata.
 3. Evaluasi readiness mass self-service berdasarkan telemetry ter-redact.
 4. `NEEDS CONFIRMATION`: timing integrasi SagaBook; subscription tetap terpisah.
 
@@ -91,8 +91,14 @@ subscription, entitlement, ledger, serta cancellation terpisah.
 - Trial 14 hari: 7 hari full access lalu 7 hari plan-limited, tanpa auto-charge.
 - Bundle ditunda.
 
-Limit lengkap per paket, hardware, setup, dan support premium:
-`NEEDS CONFIRMATION`.
+Growth: 1 device, 10 frame aktif, 3 preset, offline 24 jam, 2 GB aset frame
+cloud, dan laporan dasar. Pro: 4 device, 50 frame aktif, 10 preset, offline 168
+jam, 10 GB aset frame cloud, laporan lanjutan, activity log, dan priority
+support. Session/foto dipasarkan unlimited dengan fair-use; foto tetap lokal.
+
+`CONFIRMED` — kontrak ini aktif di production pada backend release
+`20260731101529-528e68d` dan Studio release
+`20260731101529-f6fa6f3`.
 
 ## Kompetitor
 
@@ -171,9 +177,11 @@ pada UI customer.
 
 ## KPI dan success metrics
 
-`PROPOSAL`: activation success, session completion, import duration, recovery
-rate, output success, support contact, trial-to-paid, dan studio retention.
-Target kuantitatif: `NEEDS CONFIRMATION`.
+`CONFIRMED` untuk exit pilot: minimal 3 studio, onboarding rata-rata maksimal
+60 menit, activation maksimal 1 hari, 50 session nyata total dan minimal 10 per
+studio, minimal 95% core journey tanpa engineer, 4R/offline/transfer lulus per
+studio, SLA minimal 90%, dan minimal 2 studio lanjut berbayar. Baseline aktual
+masih `NEEDS CONFIRMATION`.
 
 ## Sales dan content
 

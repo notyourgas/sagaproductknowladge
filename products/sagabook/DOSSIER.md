@@ -55,13 +55,13 @@ Activation Center, serta Support & Recovery Center.
 
 ## Fitur MVP
 
-`CONFIRMED`: booking, slot, payment status, customer secure link, request workflow,
-calendar, check-in, dan operator task sudah termasuk core scope. Paket/limit
-MVP kuantitatif masih `NEEDS CONFIRMATION`.
+`CONFIRMED`: booking, slot, payment status, customer secure link, request
+workflow, calendar, check-in, operator task, serta limit paket pada
+[PRODUCT](PRODUCT.md) termasuk core scope.
 
 ## Roadmap
 
-1. `TODO`: cohort onboarding studio nyata.
+1. `TODO`: Founding Studio Pilot minimal tiga studio.
 2. `TODO`: booking/payment/notification acceptance end-to-end dengan provider.
 3. `TODO`: observasi kualitas support dan recovery pada cohort studio nyata.
 4. `NEEDS CONFIRMATION`: integrasi SagaView setelah kedua produk siap satuan.
@@ -84,7 +84,13 @@ belum dikunci.
 ## Pricing
 
 `CONFIRMED`: Basic Rp500.000, Growth Rp950.000, Pro Rp1.500.000 per bulan.
-Limit setiap paket: `NEEDS CONFIRMATION`.
+Basic mencakup 1 cabang/3 staff; Growth 3 cabang/10 staff; Pro maksimal 10
+cabang/30 staff self-service; kebutuhan di atasnya menggunakan Custom.
+Booking dipasarkan unlimited dengan fair-use.
+
+`CONFIRMED` — kontrak ini aktif di production pada release
+`20260731172605-39fb2d3`, source
+`39fb2d3ff01c3b7368ed623fbf551b349fe4b56c`.
 
 ## Kompetitor
 
@@ -111,8 +117,7 @@ Operating system sebelum sesi untuk self-photo studio Indonesia.
 ## FAQ
 
 **Apakah SagaBook termasuk SagaView?** Tidak. Produk dijual satuan.
-**Apakah trial otomatis menagih?** `NEEDS CONFIRMATION` untuk copy legal final;
-kontrak produk mencatat trial dua fase.
+**Apakah trial otomatis menagih?** Tidak. Trial dua fase tidak auto-charge.
 **Apakah provider pasti mengirim reminder?** Hanya bila delivery nyata
 terverifikasi; fallback manual harus tetap terlihat.
 
@@ -141,13 +146,15 @@ availability, booking, payment state, request, task, audit, dan report.
 
 - Provider delivery dan payment tidak boleh disimpulkan dari queue/log.
 - `ASSUMPTION`: self-photo studio adalah ICP awal utama.
-- Policy refund/cancel tenant default masih `NEEDS CONFIRMATION`.
+- Policy refund/cancel default sudah `CONFIRMED`; tenant dapat mengubah policy
+  secara eksplisit dan refund tetap operator-approved.
 
 ## KPI dan success metrics
 
-`PROPOSAL`: onboarding completion, time-to-first-published-storefront,
-first booking, payment success, no-show, support rate, trial-to-paid, dan
-retention. Baseline/target: `NEEDS CONFIRMATION`.
+`CONFIRMED` untuk exit pilot: minimal 3 studio, onboarding rata-rata maksimal
+60 menit, activation maksimal 1 hari, 50 booking nyata total, minimal 95% core
+journey tanpa engineer, notification receipt minimal 98%, SLA minimal 90%, dan
+minimal 2 studio lanjut berbayar. Baseline aktual masih `NEEDS CONFIRMATION`.
 
 ## Ide konten pemasaran
 

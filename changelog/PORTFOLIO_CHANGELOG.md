@@ -10,6 +10,39 @@ workflow, pricing, release, activation, atau blocker.
 Detail tetap berada pada changelog produk; entri docs-only berada di root
 [CHANGELOG](../CHANGELOG.md).
 
+## 2026-07-31 — SagaBook founder commercial contract production
+
+- Paket satuan kini exact: Basic Rp500.000/bulan (1 cabang/3 staff), Growth
+  Rp950.000/bulan (3/10), Pro Rp1.500.000/bulan (maksimal 10/30), dan Custom
+  di atas Pro; booking dipasarkan unlimited dengan fair-use.
+- Trial guardrail, public pricing/legal, support/retention/offboarding, satu
+  reschedule gratis minimal 24 jam, dan refund 100/50/0 operator-approved aktif
+  pada runtime.
+- Source `39fb2d3ff01c3b7368ed623fbf551b349fe4b56c`, release
+  `20260731172605-39fb2d3` pada SagaBook dan Saga Platform.
+- Test 946/946, browser desktop/mobile, backup/restore tiga database, migration
+  rehearsal, readiness 10/10, public smoke, service, queue, dan error journal
+  lulus; rollback `20260731075424-285ab94` dipertahankan.
+- Business readiness tetap menunggu legal identity/sign-off dan Founding Studio
+  Pilot.
+
+## 2026-07-31 — SagaView founder commercial contract production
+
+- Paket satuan kini exact: Growth Rp200.000/bulan (1 device, 10 frame, 3
+  preset, offline 24 jam, 2 GB) dan Pro Rp500.000/bulan (4 device, 50 frame,
+  10 preset, offline 168 jam, 10 GB).
+- Fair-use session/foto, local-photo boundary, trial guardrail, support,
+  retention, dan offboarding konsisten pada backend serta public Studio.
+- Backend source `528e68d4aea27d847250075acd02d7753b07e3b6`, release
+  `20260731101529-528e68d`; Studio source
+  `f6fa6f368e5734842d5dff0ff2310f5d5f7a9299`, release
+  `20260731101529-f6fa6f3`.
+- Backup/restore, tiga migration additive, test, audit, deploy gate, security
+  header, service health, dan public smoke lulus; payment existing tetap
+  exactly-once tanpa transaksi baru.
+- Business readiness tetap menunggu Founding Studio Pilot dan evidence nyata
+  yang belum lengkap.
+
 ## 2026-07-31 — SagaView integrated production activation
 
 - Backend, additive migration, Owner Console, trial 14 hari dua fase,

@@ -12,6 +12,26 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-07-31
 
+### Founder commercial contract dan pilot acceptance
+
+- Ringkasan: mengunci paket/limit/trial SagaBook dan SagaView, policy booking
+  default SagaBook, support/retention/offboarding, serta Founding Studio Pilot
+  dengan exit criteria 100% business-ready.
+- Alasan: keputusan founder sudah diterima dan harus menjadi kontrak kanonik
+  untuk source, sales, onboarding, legal, pilot, dan AI agent.
+- Produk/area terdampak: SagaBook, SagaView, business strategy, sales, payment,
+  privacy, decision log, gap register, dan master knowledge.
+- Klasifikasi: `CONFIRMED` untuk keputusan; business readiness tetap
+  `NEEDS CONFIRMATION` sampai evidence cohort lulus.
+- Source SagaView: backend `528e68d4aea27d847250075acd02d7753b07e3b6`
+  (`20260731101529-528e68d`) dan Studio
+  `f6fa6f368e5734842d5dff0ff2310f5d5f7a9299`
+  (`20260731101529-f6fa6f3`) aktif di production.
+- Source SagaBook: `39fb2d3ff01c3b7368ed623fbf551b349fe4b56c`
+  (`20260731172605-39fb2d3`) aktif di production.
+- Production berubah: ya untuk SagaBook dan SagaView.
+- Blocker tersisa: Founding Studio Pilot dan evidence nyata yang diwajibkan.
+
 ### SagaView integrated production activation sync
 
 - Ringkasan: menyinkronkan backend, Studio, trial/subscription, Owner Console,

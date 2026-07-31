@@ -4,6 +4,30 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-07-31 — Founder commercial contract production
+
+- Before: Growth sudah memiliki sebagian limit, tetapi Pro frame dan storage
+  masih ambigu, quota aset frame masih global 2 GB, dan public/API belum
+  menjelaskan seluruh policy founder secara konsisten.
+- After: Growth Rp200.000/bulan memakai 1 device, 10 frame, 3 preset, offline
+  24 jam, dan 2 GB; Pro Rp500.000/bulan memakai 4 device, 50 frame, 10 preset,
+  offline 168 jam, dan 10 GB. Trial guardrail, fair-use, local-photo boundary,
+  support, retention, dan offboarding konsisten pada backend/Studio.
+- Backend source `528e68d4aea27d847250075acd02d7753b07e3b6`, release
+  `20260731101529-528e68d`; Studio source
+  `f6fa6f368e5734842d5dff0ff2310f5d5f7a9299`, release
+  `20260731101529-f6fa6f3`.
+- Validation: backend 908/908, Studio 156 unit dan 54 E2E, audit dependency 0,
+  restore 142 tabel, tiga migration additive, deploy gate 6/6, dan public smoke
+  utama HTTP 200.
+- Payment canary existing tetap exactly-once; release tidak membuat intent,
+  QRIS, atau transaksi baru.
+- Rollback: backend `20260731082637-70155bb` dan Studio
+  `20260731082637-28adcee`.
+- Delivery/activation: `PRODUCTION_DEPLOYED` / `PRODUCTION_ACTIVATED`.
+- Business readiness: `NEEDS CONFIRMATION` sampai Founding Studio Pilot dan
+  bukti notification/UAT yang diwajibkan lulus.
+
 ## Konteks
 
 Gunakan bersama [PRODUCT](PRODUCT.md), [DOSSIER](DOSSIER.md), dan exact release

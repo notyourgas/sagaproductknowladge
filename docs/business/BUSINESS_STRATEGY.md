@@ -19,12 +19,18 @@ Dokumen memisahkan keputusan owner yang berlaku dari rekomendasi strategi.
 - Trial yang disepakati untuk SagaBook/SagaView adalah dua fase: 7 hari full
   access dan 7 hari plan-limited; activation production harus dibuktikan per
   produk.
+- Paket, limit, fair-use, support SLA, privacy/offboarding, dan policy default
+  SagaBook/SagaView mengikuti `DEC-008` dan `DEC-009`.
+- Validasi pasar memakai Founding Studio Pilot 14 hari, minimal 3 studio per
+  produk, dengan exit criteria terukur dan minimal 2 studio per produk lanjut
+  berbayar.
 
 ## Rekomendasi
 
 - `PROPOSAL`: fokus pada satu ICP dan activation moment per produk.
 - `PROPOSAL`: jual outcome workflow, bukan daftar fitur.
-- `PROPOSAL`: cohort/pilot terkendali sebelum self-service publik penuh.
+- `CONFIRMED`: jalankan [Founding Studio Pilot](FOUNDING_STUDIO_PILOT.md)
+  sebelum memberi status `BUSINESS_READY`.
 - `PROPOSAL`: gunakan Saga Platform sebagai control plane, bukan
   operational database gabungan.
 

@@ -23,7 +23,7 @@ tidak menggantikan physical UAT atau evidence restricted.
 
 | Waktu | Demo | Pesan utama |
 |---|---|---|
-| 0–1 menit | Home dan Pricing | SagaView dijual satuan: Growth Rp200.000 dan Pro Rp500.000 per bulan. |
+| 0–1 menit | Home dan Pricing | SagaView dijual satuan. Growth Rp200.000: 1 device/10 frame/3 preset/24 jam/2 GB. Pro Rp500.000: 4 device/50 frame/10 preset/168 jam/10 GB. Session/foto fair-use; foto tetap lokal. |
 | 1–3 menit | Signup, login, dan Owner Console | Trial 14 hari: 7 hari full access, 7 hari plan-limited, tanpa auto-charge. |
 | 3–4 menit | Studio readiness dan device | Owner Console bebas lintas device; start-session mengikuti exclusive lease. |
 | 4–6 menit | Buat sesi, pilih folder, import | Demo 50 foto; jelaskan regression juga mencakup 200 dan 500 foto. |

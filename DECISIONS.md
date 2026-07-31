@@ -118,3 +118,45 @@ keputusan pengganti.
 | Pemberi keputusan | Andreas / founder dan governance repository |
 | Status | `CONFIRMED` |
 | Dokumen terkait | [Status Legend](docs/STATUS_LEGEND.md), [Deployment Process](docs/technical/DEPLOYMENT_PROCESS.md) |
+
+## DEC-008 — Paket, limit, dan trial SagaBook/SagaView
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-07-31 |
+| Topik | Kontrak komersial produk self-photo SaaS |
+| Keputusan | SagaBook: Basic Rp500.000/bulan (1 cabang, 3 staff), Growth Rp950.000/bulan (3 cabang, 10 staff), Pro Rp1.500.000/bulan (maksimal 10 cabang, 30 staff self-service); kebutuhan di atas Pro memakai kontrak Custom. Trial hari 1–7 memakai akses Pro dengan guardrail 2 cabang, owner + 4 staff, dan 30 booking aktif/confirmed; hari 8–14 memakai limit paket terpilih dan maksimal 50 booking trial total. SagaView: Growth Rp200.000/bulan (1 device, 10 frame aktif, 3 preset, offline 24 jam, 2 GB aset frame cloud, laporan dasar) dan Pro Rp500.000/bulan (4 device, 50 frame aktif, 10 preset, offline 168 jam, 10 GB aset frame cloud, laporan lanjutan, activity log, priority support); kebutuhan di atas Pro memakai penawaran Custom. Trial hari 1–7 memakai fitur Pro maksimal 2 device/10 completed session; hari 8–14 memakai limit paket terpilih dan maksimal 20 completed session trial total; hari 15–21 read-only/export. Booking SagaBook serta sesi/foto SagaView dipasarkan sebagai unlimited dengan fair-use; foto SagaView tetap lokal dan tidak dihitung sebagai storage cloud. Trial tidak auto-charge dan tetap product-scoped. |
+| Alasan | Customer membutuhkan paket yang mudah dibandingkan, sementara sistem memerlukan batas server-authoritative yang aman dan dapat diaudit. |
+| Alternatif yang dipertimbangkan | Pro tanpa batas; paket multi-term publik; satu harga/bundle; trial tanpa guardrail. |
+| Dampak | Pricing, entitlement, quota, UI, billing, sales copy, trial, dan acceptance test wajib konsisten. Implementasi dan production activation tetap membutuhkan provenance source/release. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED` |
+| Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaView Product](products/sagaview/PRODUCT.md), [Business Strategy](docs/business/BUSINESS_STRATEGY.md) |
+
+## DEC-009 — Policy default, privacy, offboarding, dan support
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-07-31 |
+| Topik | Policy operasional produk self-photo SaaS |
+| Keputusan | Policy default SagaBook dapat dioverride tenant: satu reschedule gratis minimal 24 jam sebelum sesi; pembatalan minimal 48 jam menerima refund 100% dikurangi fee provider yang tidak dapat dikembalikan; 24–48 jam menerima 50%; kurang dari 24 jam atau no-show tidak mendapat refund; refund selalu membutuhkan persetujuan operator; pembatalan oleh studio menawarkan refund penuh atau reschedule gratis. Baseline kedua produk: data aktif selama subscription, akses export 14 hari setelah offboarding, penghapusan data operasional maksimal 30 hari setelah permintaan terverifikasi, audit/security log 90 hari, tiket support 180 hari, dan catatan keuangan/legal mengikuti hukum yang berlaku. Support Senin–Sabtu 10.00–18.00 WIB; P1 maksimal 4 jam kerja, P2 1 hari kerja, P3 3 hari kerja. Foto SagaView tetap lokal. |
+| Alasan | Sales, billing, customer care, privacy, dan incident handling membutuhkan kontrak yang konsisten sebelum pilot bisnis. |
+| Alternatif yang dipertimbangkan | Refund otomatis; policy tunggal yang tidak dapat dioverride; retention tanpa batas; SLA tanpa jam layanan. |
+| Dampak | Legal copy, customer request, operator approval, retention job, support queue, onboarding, dan sales handoff harus menggunakan policy ini atau policy tenant yang lebih eksplisit. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED` |
+| Dokumen terkait | [Data Privacy](docs/technical/DATA_PRIVACY.md), [Payment Flow](docs/technical/PAYMENT_FLOW.md), [Founding Studio Pilot](docs/business/FOUNDING_STUDIO_PILOT.md) |
+
+## DEC-010 — Founding Studio Pilot dan exit criteria business-ready
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-07-31 |
+| Topik | Validasi business readiness SagaBook dan SagaView |
+| Keputusan | Jalankan Founding Studio Pilot 14 hari untuk minimal 3 studio per produk; studio yang sama boleh mencoba keduanya tetapi akun, subscription, bukti, dan evaluasi tetap terpisah. Onboarding assisted maksimal 60 menit, tanpa setup fee untuk cohort pertama, feedback hari 3/7/14, dan hari ke-15 kembali ke harga daftar atau berhenti. Business-ready membutuhkan seluruh exit criteria pada runbook pilot, termasuk penggunaan nyata, core journey minimal 95% tanpa engineer, provider/recovery/SLA lulus, tidak ada incident critical, dan minimal 2 dari 3 studio per produk melanjutkan berbayar. |
+| Alasan | Deployment teknis tidak membuktikan produk dapat dijual dan dipakai bisnis nyata secara berulang. |
+| Alternatif yang dipertimbangkan | Langsung mass launch; pilot tanpa target kuantitatif; satu cohort gabungan tanpa pemisahan produk. |
+| Dampak | Status tetap `NEEDS CONFIRMATION` untuk business readiness sampai cohort menghasilkan evidence agregat yang memenuhi semua gate. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED` |
+| Dokumen terkait | [Founding Studio Pilot](docs/business/FOUNDING_STUDIO_PILOT.md), [Status Legend](docs/STATUS_LEGEND.md), [Sales Strategy](docs/business/SALES_STRATEGY.md) |

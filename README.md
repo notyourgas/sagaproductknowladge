@@ -95,8 +95,10 @@ pada dokumen produk.
    dan content.
 4. Periksa [DECISIONS](DECISIONS.md) dan [GAPS](GAPS.md) sebelum mengambil
    keputusan.
-5. Periksa [SYNC_STATUS](SYNC_STATUS.md) untuk mengetahui pembaruan terakhir.
-6. Verifikasi status runtime di changelog/release source sebelum membuat klaim
+5. Untuk pilot SagaBook/SagaView, gunakan
+   [Founding Studio Pilot](docs/business/FOUNDING_STUDIO_PILOT.md).
+6. Periksa [SYNC_STATUS](SYNC_STATUS.md) untuk mengetahui pembaruan terakhir.
+7. Verifikasi status runtime di changelog/release source sebelum membuat klaim
    eksternal.
 
 ### Untuk AI agent

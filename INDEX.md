@@ -67,6 +67,7 @@ Indeks mencakup knowledge publik pada evidence cut-off 31 Juli 2026.
 - [Content Pillars](docs/marketing/CONTENT_PILLARS.md)
 - [Customer Segments](docs/business/CUSTOMER_SEGMENTS.md)
 - [Business Strategy](docs/business/BUSINESS_STRATEGY.md)
+- [Founding Studio Pilot](docs/business/FOUNDING_STUDIO_PILOT.md)
 - [Sales Strategy](docs/business/SALES_STRATEGY.md)
 - [Marketing Strategy](docs/business/MARKETING_STRATEGY.md)
 - [Design System](docs/design/DESIGN_SYSTEM.md)

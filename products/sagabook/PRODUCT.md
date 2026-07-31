@@ -79,22 +79,50 @@ Positioning singkat:
 
 ## Commercial contract
 
-### Harga satuan bulanan
+### Harga dan limit satuan bulanan
 
-| Paket | Harga |
-|---|---:|
-| Basic | Rp500.000 |
-| Growth | Rp950.000 |
-| Pro | Rp1.500.000 |
+| Paket | Harga | Cabang | Staff | Scope utama |
+|---|---:|---:|---:|---|
+| Basic | Rp500.000 | 1 | 3 | Core booking dan laporan dasar. |
+| Growth | Rp950.000 | 3 | 10 | Payment gateway, reminder, promo, reconciliation, dan laporan rinci. |
+| Pro | Rp1.500.000 | Maks. 10 | Maks. 30 self-service | Custom domain, audit log, laporan lanjutan, dan priority support. |
+| Custom | Berdasarkan penawaran | Di atas Pro | Di atas Pro | Kontrak, onboarding, dan support khusus. |
+
+Volume booking dipasarkan sebagai unlimited dengan fair-use. Unlimited tidak
+menghapus rate limit, abuse control, capacity, atau batas operasional yang aman.
 
 ### Trial 14 hari
 
-- Hari 1-7: `full_access`.
-- Hari 8-14: `plan_limited`.
+- Hari 1-7: akses Pro dengan guardrail maksimal 2 cabang, owner + 4 staff, dan
+  30 booking aktif/confirmed.
+- Hari 8-14: limit paket yang dipilih dan maksimal 50 booking trial total.
 - Hari 15-21: `grace_read_only`.
 - Setelah hari 21: `suspended`, data tidak dihapus otomatis.
+- Tidak ada auto-charge.
 
 Trial dan subscription SagaBook tidak mengaktifkan SagaView.
+
+### Policy booking default
+
+Tenant dapat menerapkan policy sendiri. Bila belum ada override yang valid:
+
+- satu reschedule gratis minimal 24 jam sebelum sesi;
+- cancel minimal 48 jam: refund 100% dikurangi fee provider yang tidak dapat
+  dikembalikan;
+- cancel 24–48 jam: refund 50%;
+- cancel kurang dari 24 jam atau no-show: tidak ada refund;
+- refund selalu menunggu persetujuan operator dan tidak berjalan otomatis;
+- pembatalan oleh studio: refund penuh atau reschedule gratis.
+
+### Support, retention, dan offboarding
+
+- Support Senin–Sabtu 10.00–18.00 WIB.
+- P1 maksimal 4 jam kerja, P2 1 hari kerja, P3 3 hari kerja.
+- Data aktif tersedia selama subscription.
+- Setelah offboarding tersedia akses export 14 hari.
+- Penghapusan data operasional maksimal 30 hari setelah permintaan
+  terverifikasi; audit/security log 90 hari; tiket support 180 hari.
+- Catatan keuangan/legal disimpan terpisah sesuai hukum yang berlaku.
 
 ## Account dan product boundary
 
@@ -112,8 +140,8 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
 
 - Customer Booking Center aktif di production.
 - Source kanonik terbaru pada cut-off: commit
-  `285ab943b93466deda0f6c07466c0fbe8da16e4c`.
-- Release production tercatat: `20260731075424-285ab94`.
+  `39fb2d3ff01c3b7368ed623fbf551b349fe4b56c`.
+- Release production tercatat: `20260731172605-39fb2d3`.
 - Storefront, admin, dan super-admin merespons public smoke.
 - Tenant Onboarding dan First Booking Activation aktif melalui Activation
   Center yang tenant-scoped dan server-authoritative.
@@ -121,6 +149,8 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
   tenant-scoped, retry idempotent, dan human handoff.
 - Platform Support aktif untuk operator dengan antrean SLA, ownership,
   penyelesaian auditable, dan perlindungan konflik antaroperator.
+- Paket/limit, trial guardrail, fair-use, policy refund/reschedule, retention,
+  offboarding, dan support SLA founder aktif secara server-authoritative.
 
 ## Update terbaru
 
@@ -182,7 +212,7 @@ After:
 
 - Provider delivery tidak boleh dianggap berhasil hanya dari queue/log.
 - Business-ready penuh tetap membutuhkan acceptance booking nyata, support
-  observation, serta cohort onboarding studio nyata.
+  observation, serta Founding Studio Pilot yang memenuhi seluruh exit criteria.
 
 ## Ide konten
 

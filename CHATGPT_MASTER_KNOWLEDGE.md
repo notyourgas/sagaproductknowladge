@@ -54,6 +54,9 @@ reconciliation, report, staff, tenant, dan subscription.
 
 Status: `PRODUCTION_DEPLOYED`.
 Harga bulanan: Basic Rp500.000, Growth Rp950.000, Pro Rp1.500.000.
+Limit: Basic 1 cabang/3 staff; Growth 3 cabang/10 staff; Pro maksimal 10
+cabang/30 staff self-service; kebutuhan lebih besar menggunakan Custom.
+Booking dipasarkan unlimited dengan fair-use.
 Trial: 14 hari dua fase; hari 1-7 full access dan hari 8-14 plan-limited,
 kemudian grace read-only hari 15-21.
 
@@ -62,10 +65,11 @@ bertanya, melakukan human handoff, melanjutkan tiket, mengakses account
 recovery/setup/changelog, dan mengirim screenshot privat dari satu halaman.
 Retry pesan idempotent dan scope produk/tenant/akun/percakapan ditegakkan
 server-side. Platform Support juga aktif dengan antrean SLA, ownership
-operator, optimistic lock, dan receipt audit tersanitasi. Activation Center
-dan Customer Booking Center tetap aktif. Source production terbaru:
-`285ab943b93466deda0f6c07466c0fbe8da16e4c`, release
-`20260731075424-285ab94`.
+operator, optimistic lock, dan receipt audit tersanitasi. Paket/limit, trial,
+fair-use, refund/reschedule, retention, offboarding, serta support SLA founder
+aktif. Activation Center dan Customer Booking Center tetap aktif. Source
+production terbaru: `39fb2d3ff01c3b7368ed623fbf551b349fe4b56c`,
+release `20260731172605-39fb2d3`.
 
 ### SagaView
 
@@ -77,17 +81,22 @@ tetap berada di device studio.
 Status: `PRODUCTION_DEPLOYED` dan `PRODUCTION_ACTIVATED`; business readiness
 mass-scale `NEEDS CONFIRMATION`.
 Harga bulanan: Growth Rp200.000, Pro Rp500.000.
+Growth mencakup 1 device, 10 frame, 3 preset, offline 24 jam, dan 2 GB aset
+frame cloud. Pro mencakup 4 device, 50 frame, 10 preset, offline 168 jam, 10 GB
+aset frame cloud, laporan lanjutan, activity log, dan priority support. Sesi dan
+foto dipasarkan unlimited dengan fair-use; foto tetap lokal.
 Trial contract: 14 hari dua fase server-side; hari 1–7 full access, hari 8–14
 plan-limited, tanpa auto-charge.
 
-Update terbaru: backend `70155bb7db901beebb9fdeb65d5869a18ee8f874`
-(`20260731082637-70155bb`) dan Studio
-`28adcee9706ec8fde509d410d60cbea173c74a5b`
-(`20260731082637-28adcee`) aktif atomik. Owner Console lintas browser, Studio
+Update terbaru: backend `528e68d4aea27d847250075acd02d7753b07e3b6`
+(`20260731101529-528e68d`) dan Studio
+`f6fa6f368e5734842d5dff0ff2310f5d5f7a9299`
+(`20260731101529-f6fa6f3`) aktif atomik. Owner Console lintas browser, Studio
 exclusive lease, output 4R, session completion/privacy handoff,
 trial/subscription, serta public Home/Pricing/Help/Contact/Privacy/Terms/Legal
-aktif. Backup/restore, additive migration, regression, security header,
-rollback, monitoring, dan public smoke lulus. Satu canary payment production
+aktif. Limit device/frame/preset, quota aset frame cloud, fair-use,
+support/retention/offboarding, backup/restore, additive migration, regression,
+security header, rollback, monitoring, dan public smoke lulus. Satu canary payment production
 berhasil dibayar dan callback diproses exactly-once; release tidak membuat
 intent/QRIS/transaksi kedua.
 
@@ -173,6 +182,11 @@ Delivery: `PLANNED`. Belum production-activated.
 - Bundle ditunda.
 - Trial dua fase memberi pengalaman penuh di tujuh hari pertama, lalu
   plan-limited pada tujuh hari kedua.
+- Support SagaBook/SagaView: Senin–Sabtu 10.00–18.00 WIB; P1 maksimal 4 jam
+  kerja, P2 1 hari kerja, dan P3 3 hari kerja.
+- Founding Studio Pilot berlangsung 14 hari untuk minimal 3 studio per produk;
+  status `BUSINESS_READY` hanya diberikan setelah seluruh exit criteria lulus
+  dan minimal 2 studio per produk lanjut berbayar.
 - Produk kedua tidak otomatis aktif hanya karena user memakai email/identity
   yang sama.
 - Pricing SagaFin belum final.
@@ -180,8 +194,8 @@ Delivery: `PLANNED`. Belum production-activated.
 
 ## Larangan klaim
 
-- Jangan sebut SagaView business-ready mass-scale sebelum controlled cohort,
-  observasi support, dan policy komersial/legal selesai.
+- Jangan sebut SagaBook atau SagaView `BUSINESS_READY` sebelum Founding Studio
+  Pilot memenuhi seluruh exit criteria.
 - Jangan klaim foto customer disimpan di cloud, unlimited device, atau bundle
   SagaBook–SagaView tersedia.
 - Jangan sebut SagaBio atau SagaMenu production.

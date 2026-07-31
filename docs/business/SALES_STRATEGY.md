@@ -17,6 +17,16 @@ Sales hanya boleh menjanjikan scope yang sesuai status produk.
 5. Ukur activation moment produk.
 6. Dokumentasikan objection, blocker, dan outcome pilot.
 
+## Founding Studio Pilot
+
+- Tawarkan produk secara terpisah; studio yang sama boleh mencoba SagaBook dan
+  SagaView tetapi subscription dan evaluasinya tidak digabung.
+- Cohort pertama berlangsung 14 hari, assisted onboarding maksimal 60 menit,
+  tanpa setup fee, dan feedback pada hari 3/7/14.
+- Hari ke-15 customer memilih harga daftar atau offboarding.
+- Jangan menjanjikan `BUSINESS_READY` sebelum seluruh exit criteria pada
+  [Founding Studio Pilot](FOUNDING_STUDIO_PILOT.md) lulus.
+
 ## Sales talking points lintas produk
 
 - “Kita rapikan workflow yang hari ini tersebar, bukan sekadar menambah
@@ -33,6 +43,7 @@ Sales hanya boleh menjanjikan scope yang sesuai status produk.
 | “Apakah langsung full otomatis?” | Tergantung produk dan provider. Fallback manual dijelaskan secara eksplisit. |
 | “Apakah data aman?” | Jelaskan boundary produk, permission, retention, dan bukti yang tersedia; jangan memberi jaminan absolut. |
 | “Bisa bundle?” | Saat ini SagaBook dan SagaView dijual satuan; bundle ditunda. |
+| “Apakah penggunaan unlimited?” | Booking SagaBook serta sesi/foto SagaView dipasarkan unlimited dengan fair-use. Limit cabang, staff, device, frame, preset, storage cloud, dan abuse control tetap berlaku sesuai paket. |
 
 ## Gap
 

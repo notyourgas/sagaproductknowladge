@@ -4,6 +4,27 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-07-31 — Founder commercial dan booking policy production
+
+- Before: nominal paket dan trial dua fase sudah ada, tetapi Pro masih
+  unlimited, public/legal membawa copy lama, SLA belum sesuai kontrak founder,
+  dan refund customer belum menghitung jendela 100/50/0 secara aman.
+- After: Basic Rp500.000 (1 cabang/3 staff), Growth Rp950.000 (3/10), Pro
+  Rp1.500.000 (maksimal 10/30), Custom di atas Pro, fair-use booking, trial
+  guardrail, support/retention/offboarding, satu reschedule gratis minimal 24
+  jam, dan refund 100/50/0 operator-approved aktif secara konsisten.
+- Runtime source `39fb2d3ff01c3b7368ed623fbf551b349fe4b56c`, release
+  `20260731172605-39fb2d3` pada SagaBook dan Saga Platform.
+- Validation: 946/946 test dengan 10.864 assertions; browser desktop/mobile,
+  build, dependency audit, backup terenkripsi, restore tiga database, migration
+  rehearsal, readiness 10/10, public smoke, service, queue, dan journal lulus.
+- Rollback: `20260731075424-285ab94`; migration additive tidak memerlukan down
+  destruktif.
+- Delivery/activation: `PRODUCTION_DEPLOYED` / `PRODUCTION_ACTIVATED` untuk
+  kontrak runtime ini.
+- Business readiness: `NEEDS CONFIRMATION` sampai legal identity/sign-off dan
+  Founding Studio Pilot lulus.
+
 ## Konteks
 
 Gunakan bersama [PRODUCT](PRODUCT.md), [DOSSIER](DOSSIER.md), dan status release

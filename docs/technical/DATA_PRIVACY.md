@@ -23,9 +23,21 @@ Policy legal final dan data inventory per produk masih membutuhkan konfirmasi.
   dibatasi pada kebutuhan operasional.
 - Repository ini publik dan tidak boleh menyimpan PII atau evidence restricted.
 
+## Baseline SagaBook dan SagaView
+
+`CONFIRMED` oleh founder pada 31 Juli 2026:
+
+- data aktif tersedia selama subscription;
+- akses export tersedia 14 hari setelah offboarding;
+- data operasional dihapus maksimal 30 hari setelah permintaan terverifikasi;
+- audit/security log disimpan 90 hari;
+- tiket support disimpan 180 hari;
+- catatan keuangan/legal dipisahkan dan disimpan sesuai hukum yang berlaku;
+- foto SagaView tetap lokal pada device studio dan tidak dihitung sebagai aset
+  frame cloud.
+
 ## Gap
 
-- `NEEDS CONFIRMATION`: privacy policy final, data controller/processor role,
-  subprocessor, region, retention, deletion SLA, dan incident notification per
-  produk.
+- `NEEDS CONFIRMATION`: data controller/processor role, subprocessor, region,
+  incident notification, dan policy produk selain SagaBook/SagaView.
 - `TODO`: data inventory dan data-flow diagram per produk.

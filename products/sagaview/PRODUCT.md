@@ -71,25 +71,41 @@ photo selection, editor, review, export, print, offline recovery, dan support.
 
 ## Commercial contract
 
-### Harga satuan bulanan
+### Harga dan limit satuan bulanan
 
-| Paket | Harga |
-|---|---:|
-| Growth | Rp200.000 |
-| Pro | Rp500.000 |
+| Paket | Harga | Device | Frame aktif | Preset | Offline | Aset frame cloud | Laporan/support |
+|---|---:|---:|---:|---:|---:|---:|---|
+| Growth | Rp200.000 | 1 | 10 | 3 | 24 jam | 2 GB | Laporan operasional dasar. |
+| Pro | Rp500.000 | 4 | 50 | 10 | 168 jam | 10 GB | Laporan lanjutan, activity log, dan priority support. |
+
+Kebutuhan device atau skala di atas Pro menggunakan penawaran Custom. Jumlah
+session/foto dipasarkan sebagai unlimited dengan fair-use. Foto tetap lokal dan
+tidak dihitung sebagai aset frame cloud.
 
 Bundle belum ditampilkan atau diaktifkan.
 
 ### Trial contract
 
-- Hari 1-7: `full_access`.
-- Hari 8-14: `plan_limited`.
+- Hari 1-7: semua fitur Pro, maksimal 2 device dan 10 completed session.
+- Hari 8-14: limit paket yang dipilih, maksimal 20 completed session trial
+  total.
 - Hari 15-21: read-only/export grace.
 - Trial satu organisasi+produk dan tidak dapat di-reset lewat email, plan, atau
   pergantian device.
 - Tidak ada auto-charge.
 
 Kontrak ini sekarang enforced server-side pada runtime production yang aktif.
+
+### Support, retention, dan offboarding
+
+- Support Senin–Sabtu 10.00–18.00 WIB.
+- P1 maksimal 4 jam kerja, P2 1 hari kerja, P3 3 hari kerja.
+- Data aktif tersedia selama subscription dan akses export tersedia 14 hari
+  setelah offboarding.
+- Penghapusan data operasional maksimal 30 hari setelah permintaan
+  terverifikasi; audit/security log 90 hari; tiket support 180 hari.
+- Catatan keuangan/legal disimpan terpisah sesuai hukum yang berlaku.
+- Foto customer tetap lokal pada device studio.
 
 ## Account dan device boundary
 
@@ -129,11 +145,11 @@ Kontrak ini sekarang enforced server-side pada runtime production yang aktif.
 ### Runtime production
 
 - Backend source:
-  `70155bb7db901beebb9fdeb65d5869a18ee8f874`.
-- Backend release: `20260731082637-70155bb`.
+  `528e68d4aea27d847250075acd02d7753b07e3b6`.
+- Backend release: `20260731101529-528e68d`.
 - Studio source:
-  `28adcee9706ec8fde509d410d60cbea173c74a5b`.
-- Studio release: `20260731082637-28adcee`.
+  `f6fa6f368e5734842d5dff0ff2310f5d5f7a9299`.
+- Studio release: `20260731101529-f6fa6f3`.
 - Saga Platform source:
   `285ab943b93466deda0f6c07466c0fbe8da16e4c`.
 - Saga Platform release: `20260731075424-285ab94`.
@@ -155,7 +171,7 @@ Kontrak ini sekarang enforced server-side pada runtime production yang aktif.
 
 ### Release validation
 
-- Backend: 906/906 test, 10.601 assertions.
+- Backend: 908/908 test, 10.621 assertions.
 - Studio: 156 unit test dan 54 E2E default-parallel.
 - Public production browser: 8/8 self-service E2E.
 - Import 50/200/500, accessibility, responsive mobile–desktop, forced-colors,
@@ -167,8 +183,8 @@ Kontrak ini sekarang enforced server-side pada runtime production yang aktif.
 
 ### Rollback
 
-- Backend: `20260731080405-b45434b`.
-- Studio: `20260731080405-28adcee`.
+- Backend: `20260731082637-70155bb`.
+- Studio: `20260731082637-28adcee`.
 - Backup release dan konfigurasi Nginx sebelumnya dipertahankan.
 
 ## Belum boleh diklaim

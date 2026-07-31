@@ -26,10 +26,15 @@ Dokumen adalah baseline; provider, tax, invoice, dan policy tetap product-scoped
 ## Produk
 
 - SagaBook dan SagaView memiliki pricing dan ledger terpisah.
+- Refund SagaBook selalu operator-approved. Policy default: cancel minimal 48
+  jam menerima 100% dikurangi fee provider yang non-refundable; 24–48 jam
+  menerima 50%; kurang dari 24 jam/no-show tidak menerima refund; pembatalan
+  studio menawarkan refund penuh atau reschedule gratis. Tenant dapat
+  menerapkan policy sendiri secara eksplisit.
 - COYABAG membutuhkan payment dan shipping activation tersendiri.
 - SagaOPS payment outlet tidak boleh disamakan dengan SaaS subscription.
 
 ## Gap
 
-- `NEEDS CONFIRMATION`: provider, tax, invoice, refund, dunning, dan dispute
-  policy per produk.
+- `NEEDS CONFIRMATION`: provider, tax, invoice, dunning, dan dispute policy per
+  produk; refund produk selain SagaBook belum dikunci.

@@ -33,21 +33,31 @@ ketika keputusan atau release baru menutup gap.
 
 ### SagaBook
 
-- `NEEDS CONFIRMATION`: batas kuantitatif setiap paket Basic, Growth, dan Pro.
-- `NEEDS CONFIRMATION`: kebijakan refund/reschedule/cancel final yang berlaku
-  untuk tenant default versus custom policy tenant.
+- `CONFIRMED`: batas paket, trial guardrail, policy default
+  refund/reschedule/cancel, retention, offboarding, dan support SLA sudah
+  diputuskan melalui `DEC-008` dan `DEC-009`.
+- `NEEDS CONFIRMATION`: hasil Founding Studio Pilot—minimal 3 studio, 50 booking
+  nyata total, minimal 95% core journey tanpa engineer, kepatuhan SLA, dan
+  minimal 2 studio lanjut berbayar.
+- `NEEDS CONFIRMATION`: identitas badan hukum/alamat, kontak privacy,
+  subprocessor, lokasi server, pajak, forum sengketa, dan legal sign-off publik.
 - `NEEDS CONFIRMATION`: KPI baseline activation, conversion, support volume,
-  dan retention.
-- `TODO`: dokumentasikan hasil pilot/cohort nyata tanpa PII.
+  dan retention setelah pilot berjalan.
+- `TODO`: dokumentasikan hasil pilot/cohort nyata secara agregat tanpa PII.
 
 ### SagaView
 
-- `NEEDS CONFIRMATION`: limit Growth/Pro yang final selain harga, termasuk
-  device, frame, session, storage metadata, dan offline grace.
+- `CONFIRMED`: limit Growth/Pro, trial guardrail, cloud frame storage,
+  local-photo boundary, retention, offboarding, dan support SLA sudah
+  diputuskan melalui `DEC-008` dan `DEC-009`.
 - `NEEDS CONFIRMATION`: kebijakan lisensi printer/device pengganti dan
   emergency transfer untuk support.
-- `NEEDS CONFIRMATION`: business readiness mass-scale melalui controlled cohort,
-  support observation, dan incident review.
+- `NEEDS CONFIRMATION`: hasil Founding Studio Pilot—minimal 3 studio, 50
+  session nyata total dan minimal 10 per studio, physical 4R,
+  offline/reconnect, emergency transfer, kepatuhan SLA, serta minimal 2 studio
+  lanjut berbayar.
+- `NEEDS CONFIRMATION`: receipt delivery WhatsApp nyata dan rekonsiliasi
+  evidence physical-UAT yang masih diwajibkan oleh preflight operasional lama.
 
 ### Gap SagaView ditutup
 
