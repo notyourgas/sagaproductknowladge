@@ -16,11 +16,11 @@ setelah push dan dapat diperoleh dengan `git rev-parse HEAD`.
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-07-31T12:08:06+07:00 |
+| Waktu pembaruan terakhir | 2026-07-31T12:40:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `8bb18dab6784da2c51b51df42d565d48eb7a518d` |
-| Informasi terakhir disinkronkan | SagaView menyelesaikan satu paid Tokopay canary production dengan satu processed callback exactly-once; subscription aktif dan katalog canary otomatis diarsipkan. |
+| Baseline sebelum pembaruan | `8c83250c529f846c308f9ea16d601c60530510f1` |
+| Informasi terakhir disinkronkan | SagaBook Support & Recovery Center aktif di production pada release `20260731053435-7cc63d2` dengan human handoff, balasan idempotent, recovery links, dan screenshot privat. |
 | Status sinkronisasi | `UP TO DATE` setelah commit/push dan remote verification |
 | Konflik | Tidak ada pada baseline; branch lokal dan `origin/main` sama sebelum edit. |
 | Error | Tidak ada error terbuka pada awal sinkronisasi. |
@@ -29,19 +29,18 @@ setelah push dan dapat diperoleh dengan `git rev-parse HEAD`.
 
 - `SYNC_STATUS.md`
 - `CHANGELOG.md`
-- `GAPS.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
-- `products/sagaview/PRODUCT.md`
-- `products/sagaview/DOSSIER.md`
-- `products/sagaview/CHANGELOG.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 
 ## Item menunggu konfirmasi
 
-Provider canary sudah selesai. Backend/public candidate terbaru tetap menunggu
-promosi exact release, migration, dan public smoke. Detail/identifier
-restricted tetap berada di luar repository publik. Gap lain tetap tercatat di
-[GAPS](GAPS.md).
+Support & Recovery Center sudah production-deployed. Business readiness
+SagaBook tetap menunggu observasi cohort studio nyata. Detail percakapan,
+lampiran, tenant, account, dan evidence restricted tetap berada di luar
+repository publik. Gap lain tetap tercatat di [GAPS](GAPS.md).
 
 ## Cara verifikasi
 

@@ -51,7 +51,7 @@ reconciliation, reporting, tenant onboarding, dan subscription.
 
 Storefront, availability/capacity, checkout/payment, Customer Booking Center,
 calendar, Task Center, check-in, report, staff permission, audit, dan
-Activation Center.
+Activation Center, serta Support & Recovery Center.
 
 ## Fitur MVP
 
@@ -63,7 +63,7 @@ MVP kuantitatif masih `NEEDS CONFIRMATION`.
 
 1. `TODO`: cohort onboarding studio nyata.
 2. `TODO`: booking/payment/notification acceptance end-to-end dengan provider.
-3. `PROPOSAL`: perkuat support, reconciliation, dan business reporting.
+3. `TODO`: observasi kualitas support dan recovery pada cohort studio nyata.
 4. `NEEDS CONFIRMATION`: integrasi SagaView setelah kedua produk siap satuan.
 
 ## User journey
@@ -125,6 +125,8 @@ jobs, billing, audit, dan immutable release process.
 
 Payment dan notification provider, serta future SagaView handoff.
 Provider/credential spesifik tidak didokumentasikan di repository publik.
+Support Hub pusat diakses melalui adapter bertanda tangan; percakapan owner
+tetap product-, tenant-, account-, dan conversation-scoped.
 
 ## Data yang digunakan
 
@@ -162,7 +164,8 @@ setelah onboarding/support siap.
 ## Sales talking points
 
 Mulai dari workflow studio saat ini, tunjukkan activation center dan secure
-customer link, lalu jelaskan plan, trial, fallback, dan batas provider.
+customer link, Support & Recovery Center, lalu jelaskan plan, trial, fallback,
+dan batas provider.
 
 ## Objection handling
 

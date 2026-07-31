@@ -9,6 +9,29 @@ Mencatat perubahan material SagaBook dengan provenance public-safe.
 Gunakan bersama [PRODUCT](PRODUCT.md), [DOSSIER](DOSSIER.md), dan status release
 aktual.
 
+## 2026-07-31 - Support & Recovery Center production
+
+- Status: `PRODUCTION_DEPLOYED`.
+- Before: bantuan dan pemulihan tersebar; owner tidak dapat melanjutkan tiket
+  setelah human handoff.
+- After: owner/admin memiliki pusat bantuan terpadu untuk pertanyaan produk,
+  human handoff, balasan tiket, account recovery, setup, changelog, dan
+  screenshot privat.
+- Keamanan: scope produk/tenant/akun/percakapan, permission deny-by-default,
+  idempotency key, payload public-safe, audit tanpa isi pesan, serta adapter
+  Support Hub bertanda tangan.
+- Dampak: owner dapat menyelesaikan kendala atau meneruskannya ke manusia tanpa
+  kehilangan konteks dan tanpa membuat pesan ganda saat retry.
+- Source: `7cc63d2bfde011321f7c06ff45e393d189b1d4a4`.
+- Release: `20260731053435-7cc63d2`.
+- Validasi: 938 regression tests / 10.795 assertions, 32 focused tests / 149
+  assertions, production build, dependency audit, visual smoke desktop/mobile,
+  backup, migration, readiness/database audit 100/100, service health, dan
+  public smoke lulus.
+- Rollback: immutable Saga Platform `20260727085127-5bf7977` dan SagaBook
+  `20260730214513-a26d378` tetap tersedia.
+- Next action: observasi kualitas handoff dan recovery pada cohort studio nyata.
+
 ## 2026-07-31 - Activation Center production
 
 - Status: `PRODUCTION_DEPLOYED`.

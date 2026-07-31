@@ -74,6 +74,8 @@ Positioning singkat:
 - SagaBook subscription portal dan trial lifecycle.
 - Activation Center untuk setup tenant, preview/publish storefront, dan
   handoff menuju booking pertama.
+- Support & Recovery Center untuk bantuan produk, human handoff, account
+  recovery, dan bukti screenshot privat.
 
 ## Commercial contract
 
@@ -110,11 +112,13 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
 
 - Customer Booking Center aktif di production.
 - Source kanonik terbaru pada cut-off: commit
-  `a26d378de994da3dc69d9088eff1c8e04110e7af`.
-- Release production tercatat: `20260730214513-a26d378`.
+  `7cc63d2bfde011321f7c06ff45e393d189b1d4a4`.
+- Release production tercatat: `20260731053435-7cc63d2`.
 - Storefront, admin, dan super-admin merespons public smoke.
 - Tenant Onboarding dan First Booking Activation aktif melalui Activation
   Center yang tenant-scoped dan server-authoritative.
+- Support & Recovery Center aktif untuk owner/admin dengan percakapan
+  tenant-scoped, retry idempotent, dan human handoff.
 
 ## Update terbaru
 
@@ -146,6 +150,23 @@ After:
 - status notification membedakan otomatis, fallback manual, dan belum siap;
 - endpoint onboarding menggunakan permission settings, tenant resolution
   fail-closed, dan rate limit.
+
+### Support & Recovery Center
+
+Before: bantuan produk tersebar dan owner tidak dapat melanjutkan percakapan
+setelah tiket dialihkan ke tim manusia.
+
+After:
+
+- bantuan produk, account recovery, setup, dan changelog tersedia dari satu
+  halaman;
+- owner dapat bertanya, melakukan human handoff, lalu melanjutkan tiket aktif;
+- retry jaringan memakai idempotency key tenant-scoped agar pesan tidak
+  tergandakan;
+- screenshot hanya dapat dikirim setelah konfirmasi bahwa informasi sensitif
+  sudah dihapus dan lampiran tetap privat;
+- permission, payload public-safe, audit, dan adapter Support Hub ditegakkan
+  server-side.
 
 ## Belum boleh diklaim
 

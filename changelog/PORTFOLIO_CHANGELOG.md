@@ -10,6 +10,18 @@ workflow, pricing, release, activation, atau blocker.
 Detail tetap berada pada changelog produk; entri docs-only berada di root
 [CHANGELOG](../CHANGELOG.md).
 
+## 2026-07-31 - SagaBook Support & Recovery Center production
+
+- Owner/admin kini memiliki satu pusat bantuan untuk pertanyaan produk, human
+  handoff, balasan tiket, account recovery, setup, changelog, dan screenshot
+  privat.
+- Retry pesan idempotent dan akses tetap product-, tenant-, account-, serta
+  conversation-scoped dengan permission fail-closed.
+- Source `7cc63d2bfde011321f7c06ff45e393d189b1d4a4` aktif pada release
+  `20260731053435-7cc63d2`; readiness/database audit dan public smoke lulus.
+- SagaView tidak berubah dan rollback immutable Saga Platform/SagaBook tetap
+  tersedia.
+
 ## 2026-07-31 — SagaView provider canary paid
 
 - Satu canary Tokopay production bernilai rendah berhasil dibayar.

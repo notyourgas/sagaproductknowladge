@@ -12,6 +12,26 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-07-31
 
+### SagaBook Support & Recovery Center production sync
+
+- Ringkasan: menyinkronkan pusat bantuan dan pemulihan owner/admin yang aktif
+  di production.
+- Alasan: workflow support kini material bagi penggunaan harian dan memiliki
+  provenance release, migration, security, rollback, serta public smoke.
+- Produk/area terdampak: SagaBook support, recovery, user journey, technical
+  boundary, dan status release.
+- File terdampak: product contract, dossier, product/portfolio changelog,
+  master knowledge, dan sync status.
+- Klasifikasi: `CONFIRMED`.
+- Sumber: source
+  `7cc63d2bfde011321f7c06ff45e393d189b1d4a4`, release
+  `20260731053435-7cc63d2`, dan runtime gate public-safe.
+- Commit knowledge: `main HEAD`; SHA immutable dilaporkan setelah push.
+- Production produk berubah: ya, Saga Platform dan SagaBook; SagaView tidak
+  berubah.
+- Blocker tersisa: business readiness tetap memerlukan observasi cohort studio
+  nyata.
+
 ### SagaView paid provider canary sync
 
 - Ringkasan: mengubah status canary public-safe dari pending menjadi paid dan
