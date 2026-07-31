@@ -10,6 +10,16 @@ workflow, pricing, release, activation, atau blocker.
 Detail tetap berada pada changelog produk; entri docs-only berada di root
 [CHANGELOG](../CHANGELOG.md).
 
+## 2026-07-31 — SagaBook Fonnte routing dan SagaBook/SagaView auto-trial candidate
+
+- SagaBook memiliki candidate routing Fonnte tenant-scoped: SagaDev-managed,
+  studio-managed, atau manual-only; source `a368c05e`.
+- SagaBook dan SagaView memiliki candidate signup auto-trial 7 hari dengan
+  provisioning fail-closed; source `dcb5a3f3`.
+- Kedua candidate lulus full regression dan frontend build secara lokal.
+- Tidak ada production, VPS, DNS, credential, data live, atau customer flow
+  yang diubah. S71 `NOT DEPLOYED`; S72 `PRODUCTION HOLD`.
+
 ## 2026-07-31 — AOGTICVITY public Vercel prototype
 
 - Public prototype AOGTICVITY aktif pada

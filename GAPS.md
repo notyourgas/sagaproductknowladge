@@ -52,6 +52,11 @@ ketika keputusan atau release baru menutup gap.
 - `NEEDS CONFIRMATION`: KPI baseline activation, conversion, support volume,
   dan retention setelah pilot berjalan.
 - `TODO`: dokumentasikan hasil pilot/cohort nyata secara agregat tanpa PII.
+- `TODO`: S71 Fonnte tenant routing belum dideploy; release memerlukan additive
+  migration, canary tenant, rollback check, dan approval production baru.
+- `TODO`: S72 auto-trial 7 hari masih `PRODUCTION HOLD`; kontrak production
+  tetap tidak berubah sampai release, worker/provisioning, dan authenticated
+  product UAT disetujui.
 
 ### SagaView
 
@@ -69,6 +74,8 @@ ketika keputusan atau release baru menutup gap.
   sudah lulus, tetapi credential tidak digunakan dalam audit publik.
 - `NEEDS CONFIRMATION`: receipt delivery WhatsApp nyata dan rekonsiliasi
   evidence physical-UAT yang masih diwajibkan oleh preflight operasional lama.
+- `TODO`: S72 auto-trial 7 hari masih `PRODUCTION HOLD`; activation memerlukan
+  release Saga Platform dan authenticated SagaView UAT setelah provisioning.
 
 ### Gap SagaView ditutup
 

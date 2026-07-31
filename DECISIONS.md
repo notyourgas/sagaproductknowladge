@@ -244,3 +244,17 @@ keputusan pengganti.
 | Pemberi keputusan | Andreas / founder |
 | Status | `CONFIRMED` |
 | Dokumen terkait | [AOGTICVITY Product](products/aogticvity/PRODUCT.md), [AOGTICVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTICVITY Changelog](products/aogticvity/CHANGELOG.md), [Status Legend](docs/STATUS_LEGEND.md) |
+
+## DEC-017 — Fonnte tenant routing dan persiapan auto-trial SagaDev
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-07-31 |
+| Topik | WhatsApp tenant routing dan signup trial SagaBook/SagaView |
+| Keputusan | Implementasikan secara lokal routing Fonnte SagaBook dengan SagaDev-managed sebagai default, opsi token Fonnte milik studio, dan manual-only. Implementasikan secara lokal signup SagaBook/SagaView yang dapat mengaktifkan trial 7 hari tanpa approval owner atau verifikasi email. Deployment production auto-trial ditahan sampai ada approval baru. |
+| Alasan | Studio memerlukan default WhatsApp yang siap dipakai tanpa kehilangan opsi membawa provider sendiri; calon pengguna juga membutuhkan onboarding trial yang lebih cepat, tetapi perubahan identity/provisioning harus tetap melewati release gate terpisah. |
+| Alternatif yang dipertimbangkan | Satu credential global tanpa override; mewajibkan credential setiap studio; mempertahankan approval manual untuk semua signup; langsung mengaktifkan auto-trial di production. |
+| Dampak | Routing credential harus tenant-scoped dan encrypted; delivery menyimpan sender snapshot; owner setting dan canary wajib diuji. Auto-trial harus idempotent, product-scoped, tepat 7 hari, tidak membuat tagihan, dan login tetap fail-closed sampai provisioning ready. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED` untuk implementasi lokal; production S71 `NOT DEPLOYED`; production S72 `HOLD` |
+| Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaView Product](products/sagaview/PRODUCT.md), [Gaps](GAPS.md) |

@@ -172,6 +172,11 @@ Kontrak ini sekarang enforced server-side pada runtime production yang aktif.
   customer route, API health, dan pricing API lulus post-deploy smoke.
 - HTTPS routes memakai satu HSTS dan satu `X-Frame-Options: DENY`; HTML routes
   tetap memakai CSP dengan `frame-ancestors 'none'`.
+- Candidate signup tanpa approval owner dan trial 7 hari sudah
+  `LOCAL_VALIDATED` pada Saga Platform source
+  `dcb5a3f3dc1e3e7b5c0c067e8968ca341ebf1c27`. Candidate mempertahankan
+  provisioning fail-closed dan login baru terbuka setelah runtime `ready`.
+  Production belum berubah; activation candidate berstatus `PRODUCTION HOLD`.
 
 ### Payment/provider
 

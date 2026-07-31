@@ -87,6 +87,12 @@ aktif. Activation Center dan Customer Booking Center tetap aktif. Source
 production terbaru: `39fb2d3ff01c3b7368ed623fbf551b349fe4b56c`,
 release `20260731172605-39fb2d3`.
 
+Candidate yang belum production: routing Fonnte tenant-scoped pada source
+`a368c05e` memungkinkan default SagaDev, token studio sendiri, atau manual-only.
+Candidate signup pada source `dcb5a3f3` menyiapkan trial 7 hari otomatis tanpa
+approval owner/email verification, dengan login tetap menunggu provisioning
+ready. Jangan menyebut kedua candidate ini aktif di production.
+
 Keputusan privacy/retention/offboarding SagaBook yang lebih rinci telah
 disetujui owner untuk implementasi dan legal review pada source docs commit
 `295ec863ff6cfc2e79ac98183651f19c15a3b368`. Workflow consent berversi,
@@ -128,6 +134,11 @@ forced-colors, serta tepat satu `Powered by SagaView` pada tiap surface tanpa
 masuk ke export/print/invoice/receipt. Satu canary payment production
 berhasil dibayar dan callback diproses exactly-once; release tidak membuat
 intent/QRIS/transaksi kedua.
+
+Candidate Saga Platform `dcb5a3f3` menyiapkan signup SagaView auto-trial 7 hari
+tanpa approval owner/email verification. Login tetap menunggu provisioning
+ready dan device tetap diaktivasi dari aplikasi studio. Statusnya
+`LOCAL_VALIDATED / PRODUCTION HOLD`, bukan production.
 
 ### SagaBio
 

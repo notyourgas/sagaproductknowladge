@@ -12,22 +12,22 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-07-31T23:48:00+07:00 |
+| Waktu pembaruan terakhir | 2026-07-31T23:58:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `e01eae012ccfb352c83c03590eb3692a656c000d` |
-| Informasi terakhir disinkronkan | AOGTICVITY public Vercel prototype dari source `dabed03`, production deployment `dpl_7HCE7eAh8VfjDZpvprud7UeHFm22`, dan fail-closed boundary untuk auth/MySQL yang belum production-activated. |
-| Status sinkronisasi | `UP TO DATE` setelah commit/push dan remote verification |
+| Baseline sebelum pembaruan | `bdf7545528a931ca55f4e22947c795f619da4c4e` |
+| Informasi terakhir disinkronkan | SagaBook S71 Fonnte tenant routing candidate `a368c05e` dan SagaBook/SagaView S72 auto-trial 7 hari candidate `dcb5a3f3`; keduanya local-validated dan belum production. |
+| Status sinkronisasi | `PENDING COMMIT/PUSH` sampai validator, commit, push, dan remote verification selesai |
 | Konflik | Tidak ada; local `main` sama dengan `origin/main` sebelum edit. |
 | Error | Tidak ada error terbuka pada awal sinkronisasi. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/aogticvity/PRODUCT.md`
-- `products/aogticvity/DOSSIER.md`
-- `products/aogticvity/CHANGELOG.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
-- `docs/SAGA_PRODUCT_PORTFOLIO.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHANGELOG.md`
 - `DECISIONS.md`
@@ -36,12 +36,10 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 ## Item menunggu konfirmasi
 
-Model bisnis AOGTICVITY; auth/IdP produksi; secure Vercel-to-Hostinger BFF;
-frontend API activation; notification provider; target custom domain/TLS;
-physical multi-device UAT; nama Tim 7/Tim 8; durasi; dan keputusan master recap
-provisional masih `NEEDS CONFIRMATION`. Public Vercel prototype aktif, tetapi
-database-backed production activation dan multi-device tidak diklaim. Status
-produk lain tidak diubah oleh sinkronisasi ini.
+S71 memerlukan release approval, additive migration, canary tenant, dan
+rollback check. S72 tetap `PRODUCTION HOLD` sampai release approval baru,
+worker/provisioning verification, dan authenticated product UAT. Kontrak aktif
+production SagaBook/SagaView tidak diubah oleh sinkronisasi candidate ini.
 
 ## Cara verifikasi
 

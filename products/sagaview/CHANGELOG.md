@@ -4,6 +4,18 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-07-31 — Candidate signup auto-trial 7 hari
+
+- Status: `LOCAL_VALIDATED`; `PRODUCTION HOLD`; production tidak berubah.
+- Signup candidate menghilangkan approval owner dan verifikasi email untuk
+  trial, tetapi tetap menjalankan validasi, idempotency, audit, dan provisioning
+  product-scoped.
+- Login tetap ditolak sampai SagaView provisioning berstatus `ready` atau
+  `succeeded`; aktivasi device tetap terjadi dari aplikasi studio.
+- Source Saga Platform:
+  `dcb5a3f3dc1e3e7b5c0c067e8968ca341ebf1c27`.
+- Validation: 954 test/10.997 assertions dan production frontend build lulus.
+
 ## 2026-07-31 — UI/UX shell refinement production
 
 - Status: `PRODUCTION_DEPLOYED` dan `PRODUCTION_ACTIVATED`.

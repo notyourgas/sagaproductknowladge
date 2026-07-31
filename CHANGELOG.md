@@ -12,6 +12,22 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-07-31
 
+### SagaBook Fonnte routing dan SagaBook/SagaView auto-trial candidate
+
+- Ringkasan: menyinkronkan candidate routing Fonnte per tenant dan candidate
+  signup auto-trial 7 hari tanpa approval owner/email verification.
+- Alasan: founder menyetujui implementasi lokal S71/S72, dengan production S72
+  tetap di-hold sampai approval release baru.
+- Produk/area terdampak: SagaBook WhatsApp setting/reminder/confirmation serta
+  SagaBook/SagaView identity, trial, provisioning, signup UI, dan support KB.
+- Klasifikasi: `CONFIRMED` untuk keputusan dan source candidate;
+  `LOCAL_VALIDATED`; S71 `NOT DEPLOYED`; S72 `PRODUCTION HOLD`.
+- Source: S71 `a368c05edbed9b10d8d187ae60e354fd84d96b55`; S72
+  `dcb5a3f3dc1e3e7b5c0c067e8968ca341ebf1c27`.
+- Production berubah: tidak.
+- Blocker: release approval, additive migration, canary/UAT, worker dan
+  provisioning verification, serta rollback rehearsal.
+
 ### AOGTICVITY public Vercel prototype
 
 - Ringkasan: mempromosikan exact artifact AOGTICVITY ke public Vercel setelah

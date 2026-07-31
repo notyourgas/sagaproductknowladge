@@ -4,6 +4,21 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-07-31 - Candidate Fonnte tenant routing dan auto-trial
+
+- Status: `LOCAL_VALIDATED`; `NOT DEPLOYED`; production tidak berubah.
+- Fonnte candidate memiliki tiga route tenant: SagaDev-managed sebagai
+  default, credential Fonnte milik studio, atau manual-only.
+- Credential tenant terenkripsi, tidak dikirim kembali ke browser, dan
+  delivery snapshot gagal tertutup ketika route berubah.
+- Candidate signup dapat mengaktifkan trial 7 hari tanpa approval owner atau
+  verifikasi email, tetapi login tetap menunggu provisioning `ready`.
+- Source: S71 `a368c05edbed9b10d8d187ae60e354fd84d96b55`; S72
+  `dcb5a3f3dc1e3e7b5c0c067e8968ca341ebf1c27`.
+- Validation: S71 957 test/10.976 assertions; S72 954 test/10.997 assertions;
+  kedua production frontend build lulus.
+- S72 tetap `PRODUCTION HOLD` dan memerlukan approval release terpisah.
+
 ## 2026-07-31 - Privacy governance source implementation
 
 - Status: `IMPLEMENTED_NOT_DEPLOYED`; public policy tetap `NOT ACTIVE - NOT
