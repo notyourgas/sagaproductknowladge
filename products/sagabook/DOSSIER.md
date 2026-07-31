@@ -150,13 +150,18 @@ mencakup pemisahan Controller/Processor, consent terpisah dan berversi,
 retention per kategori, export/deletion, incident handling, disclosure
 subprocessor, serta offboarding trial dan subscription.
 
-Delivery kontrak target ini masih `PLANNED`. Public status tetap `NOT ACTIVE -
-NOT PUBLISHED`. Klaim unrestricted public SaaS launch masih `BLOCKED` oleh
-review legal, identitas/kontak resmi, implementasi, acceptance, dan publication
-gate.
+Consent versioning, customer privacy request, owner triage, incident register,
+offboarding timeline, dan retention preview berstatus
+`IMPLEMENTED_NOT_DEPLOYED` pada source commit
+`d4c96276b6b79e9a969975cfa5b4943d0c275e4b`. Retention apply sengaja ditolak;
+tidak ada penghapusan otomatis. Public status tetap `NOT ACTIVE - NOT
+PUBLISHED`. Klaim unrestricted public SaaS launch masih `BLOCKED` oleh review
+legal, identitas/kontak resmi, destructive-retention acceptance, release, dan
+publication gate.
 
-Provenance public-safe: SagaBook source docs commit
-`295ec863ff6cfc2e79ac98183651f19c15a3b368`.
+Provenance public-safe: owner decision pada source docs commit
+`295ec863ff6cfc2e79ac98183651f19c15a3b368`; implementasi source pada
+`d4c96276b6b79e9a969975cfa5b4943d0c275e4b`.
 
 ## Risiko dan asumsi
 

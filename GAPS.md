@@ -42,9 +42,13 @@ ketika keputusan atau release baru menutup gap.
   minimal 2 studio lanjut berbayar.
 - `NEEDS CONFIRMATION`: identitas badan hukum/alamat, kontak privacy,
   subprocessor, lokasi server, pajak, forum sengketa, dan legal sign-off publik.
-- `TODO`: implementasikan dan buktikan consent versioning, retention/deletion
-  jobs, export/offboarding, backup expiry, serta request/incident runbook sesuai
-  `DEC-011`; keputusan owner saja belum mengaktifkan policy.
+- `CONFIRMED`: consent versioning, customer privacy request, owner triage,
+  incident register, offboarding timeline, dan retention preview sudah
+  `IMPLEMENTED_NOT_DEPLOYED` pada source SagaBook.
+- `TODO`: legal-hold/export receipt, destructive anonymization/deletion,
+  backup-expiry evidence, legal review, release, dan production activation
+  masih wajib diselesaikan; keputusan owner dan source implementation belum
+  mengaktifkan policy publik.
 - `NEEDS CONFIRMATION`: KPI baseline activation, conversion, support volume,
   dan retention setelah pilot berjalan.
 - `TODO`: dokumentasikan hasil pilot/cohort nyata secara agregat tanpa PII.

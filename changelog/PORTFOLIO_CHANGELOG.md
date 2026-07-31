@@ -10,6 +10,17 @@ workflow, pricing, release, activation, atau blocker.
 Detail tetap berada pada changelog produk; entri docs-only berada di root
 [CHANGELOG](../CHANGELOG.md).
 
+## 2026-07-31 - SagaBook privacy governance implemented in source
+
+- Consent berversi, customer privacy request, owner triage, incident register,
+  offboarding timeline, dan retention preview selesai di source commit
+  `d4c96276b6b79e9a969975cfa5b4943d0c275e4b`.
+- Delivery: `IMPLEMENTED_NOT_DEPLOYED`; production dan public policy tidak
+  berubah.
+- Retention apply tetap hard-disabled. Identitas/kontak resmi, legal review,
+  destructive-retention acceptance, immutable release, dan public smoke masih
+  menjadi blocker activation.
+
 ## 2026-07-31 - SagaBook owner-approved public policy contract
 
 - Andreas menyetujui P01-P18 untuk implementasi dan review legal: data role,

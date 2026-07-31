@@ -73,9 +73,12 @@ release `20260731172605-39fb2d3`.
 
 Keputusan privacy/retention/offboarding SagaBook yang lebih rinci telah
 disetujui owner untuk implementasi dan legal review pada source docs commit
-`295ec863ff6cfc2e79ac98183651f19c15a3b368`. Kontrak ini belum aktif atau
-dipublikasikan; unrestricted public SaaS launch tetap menunggu legal,
-implementation, acceptance, dan publication gate.
+`295ec863ff6cfc2e79ac98183651f19c15a3b368`. Workflow consent berversi,
+customer privacy request, owner triage, incident, offboarding, dan retention
+preview sudah `IMPLEMENTED_NOT_DEPLOYED` pada source commit
+`d4c96276b6b79e9a969975cfa5b4943d0c275e4b`. Kontrak belum aktif atau
+dipublikasikan; penghapusan otomatis tetap nonaktif dan unrestricted public
+SaaS launch menunggu legal, acceptance, release, serta publication gate.
 
 ### SagaView
 

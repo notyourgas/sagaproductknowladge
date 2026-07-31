@@ -16,11 +16,11 @@ setelah push dan dapat diperoleh dengan `git rev-parse HEAD`.
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-07-31T17:44:28+07:00 |
+| Waktu pembaruan terakhir | 2026-07-31T18:54:33+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `de907067cc25c797b222b4f08294e81391caebff` |
-| Informasi terakhir disinkronkan | Owner approval P01-P18 untuk implementasi dan legal review privacy, retention, deletion, consent, incident, subprocessor, dan offboarding SagaBook. Production tidak berubah. |
+| Baseline sebelum pembaruan | `8bb18dab6784da2c51b51df42d565d48eb7a518d` |
+| Informasi terakhir disinkronkan | Privacy governance SagaBook selesai di source: consent berversi, customer request, owner triage, incident, offboarding, dan retention preview. Production dan public policy tidak berubah. |
 | Status sinkronisasi | `UP TO DATE` setelah commit/push dan remote verification |
 | Konflik | Tidak ada pada baseline; branch lokal dan `origin/main` sama sebelum edit. |
 | Error | Tidak ada error terbuka pada awal sinkronisasi. |
@@ -30,9 +30,7 @@ setelah push dan dapat diperoleh dengan `git rev-parse HEAD`.
 - `SYNC_STATUS.md`
 - `CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
-- `DECISIONS.md`
 - `GAPS.md`
-- `docs/technical/DATA_PRIVACY.md`
 - `products/sagabook/PRODUCT.md`
 - `products/sagabook/DOSSIER.md`
 - `products/sagabook/CHANGELOG.md`
@@ -41,11 +39,12 @@ setelah push dan dapat diperoleh dengan `git rev-parse HEAD`.
 ## Item menunggu konfirmasi
 
 Kontrak komersial founder SagaBook dan SagaView sudah production-deployed.
-Keputusan privacy/retention/offboarding SagaBook sudah owner-approved, tetapi
-belum aktif atau dipublikasikan. Business readiness tetap menunggu Founding
-Studio Pilot, identitas/kontak dan legal sign-off SagaBook, implementasi serta
-acceptance policy, dan evidence notification/physical-UAT SagaView yang belum
-lengkap.
+Keputusan privacy/retention/offboarding SagaBook sudah owner-approved dan
+workflow aman non-destruktif sudah `IMPLEMENTED_NOT_DEPLOYED`, tetapi belum
+aktif atau dipublikasikan. Business readiness tetap menunggu Founding Studio
+Pilot, identitas/kontak dan legal sign-off SagaBook, destructive-retention
+acceptance, immutable release, serta evidence notification/physical-UAT
+SagaView yang belum lengkap.
 Receipt, callback payload, tenant, device, session, customer, dan evidence
 restricted tetap berada di luar repository publik. Gap lain tetap tercatat di
 [GAPS](GAPS.md).

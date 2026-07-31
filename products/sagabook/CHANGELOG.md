@@ -4,6 +4,23 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-07-31 - Privacy governance source implementation
+
+- Status: `IMPLEMENTED_NOT_DEPLOYED`; public policy tetap `NOT ACTIVE - NOT
+  PUBLISHED`.
+- Before: P01-P18 sudah disetujui, tetapi consent evidence, customer request,
+  owner triage, incident register, offboarding timeline, dan retention preview
+  belum tersedia sebagai satu workflow source.
+- After: booking menyimpan snapshot consent berversi; customer dapat membuat
+  request privacy dari secure booking link; owner memiliki halaman
+  `Privasi & Data`; request tenant-scoped, role-protected, idempotent, dan
+  auditable; retention hanya preview dan mode apply ditolak.
+- Source commit: `d4c96276b6b79e9a969975cfa5b4943d0c275e4b`.
+- Validation source: 950 test / 10.904 assertions, production build, Composer
+  audit, dan npm production audit lulus.
+- Production tidak berubah. Identitas badan usaha, alamat, email privacy,
+  WhatsApp support, legal review, dan destructive-retention gate masih pending.
+
 ## 2026-07-31 - Owner approval privacy, retention, dan offboarding
 
 - Status keputusan: `CONFIRMED`; delivery kontrak target: `PLANNED`; public

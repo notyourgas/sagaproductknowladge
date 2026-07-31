@@ -12,6 +12,22 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-07-31
 
+### SagaBook privacy governance source implementation
+
+- Ringkasan: menyinkronkan workflow consent berversi, customer privacy request,
+  owner triage, incident register, offboarding timeline, dan retention preview.
+- Alasan: keputusan P01-P18 perlu ditutup menjadi implementasi yang auditable
+  tanpa mengaktifkan penghapusan atau membuat klaim publik prematur.
+- Produk/area terdampak: SagaBook privacy, customer booking link, owner admin,
+  data governance, gap register, portfolio/master knowledge, dan sync status.
+- Klasifikasi: `CONFIRMED`; delivery `IMPLEMENTED_NOT_DEPLOYED`; public status
+  `NOT ACTIVE - NOT PUBLISHED`.
+- Source: SagaBook commit
+  `d4c96276b6b79e9a969975cfa5b4943d0c275e4b`.
+- Production berubah: tidak.
+- Blocker tersisa: identitas/kontak resmi, legal review, destructive-retention
+  acceptance, release, dan public smoke.
+
 ### SagaBook public policy owner approval
 
 - Ringkasan: menyinkronkan keputusan founder P01-P18 untuk privacy, retention,

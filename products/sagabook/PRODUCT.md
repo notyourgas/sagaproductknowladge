@@ -168,9 +168,11 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
 - Paket/limit, trial guardrail, fair-use, policy refund/reschedule, retention,
   offboarding, dan support SLA founder aktif secara server-authoritative.
 - Kontrak target privacy/retention/offboarding yang lebih rinci telah
-  owner-approved pada source docs commit
-  `295ec863ff6cfc2e79ac98183651f19c15a3b368`, tetapi belum diimplementasikan,
-  dideploy, diaktifkan, atau dipublikasikan.
+  owner-approved. Consent versioning, customer privacy request, owner triage,
+  incident register, offboarding timeline, dan retention preview telah
+  `IMPLEMENTED_NOT_DEPLOYED` pada source commit
+  `d4c96276b6b79e9a969975cfa5b4943d0c275e4b`. Penghapusan otomatis, publikasi,
+  dan production activation tetap nonaktif.
 
 ## Update terbaru
 
