@@ -10,6 +10,19 @@ workflow, pricing, release, activation, atau blocker.
 Detail tetap berada pada changelog produk; entri docs-only berada di root
 [CHANGELOG](../CHANGELOG.md).
 
+## 2026-07-31 - SagaBook owner-approved public policy contract
+
+- Andreas menyetujui P01-P18 untuk implementasi dan review legal: data role,
+  consent, retention per kategori, deletion, offboarding, incident handling,
+  dan subprocessor disclosure.
+- Klasifikasi keputusan `CONFIRMED`; delivery kontrak target `PLANNED`; public
+  status `NOT ACTIVE - NOT PUBLISHED`.
+- Source docs
+  `295ec863ff6cfc2e79ac98183651f19c15a3b368`; production tidak berubah.
+- Klaim unrestricted public SagaBook tetap diblokir sampai identitas/kontak,
+  legal review, implementasi, acceptance, immutable release, dan public smoke
+  selesai.
+
 ## 2026-07-31 — SagaBook founder commercial contract production
 
 - Paket satuan kini exact: Basic Rp500.000/bulan (1 cabang/3 staff), Growth

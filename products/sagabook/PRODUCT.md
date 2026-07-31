@@ -124,6 +124,22 @@ Tenant dapat menerapkan policy sendiri. Bila belum ada override yang valid:
   terverifikasi; audit/security log 90 hari; tiket support 180 hari.
 - Catatan keuangan/legal disimpan terpisah sesuai hukum yang berlaku.
 
+Kontrak target SagaBook yang disetujui owner pada 31 Juli 2026, tetapi belum
+aktif atau dipublikasikan:
+
+- studio menjadi Controller untuk data booking customer; SagaBook/SagaDev
+  menjadi Processor, dan menjadi Controller independen untuk account, billing,
+  security, support, serta analytics teragregasi;
+- booking PII 24 bulan lalu dianonimkan; ledger 5 tahun atau lebih bila hukum
+  mewajibkan; bukti transfer manual 90 hari; expired hold 30 hari;
+- percakapan/lampiran support 180/30 hari; log aplikasi/audit 90/365 hari;
+  backup terenkripsi rolling 30 hari;
+- pembatalan subscription berbayar memberi jendela read-only/export 30 hari,
+  lalu data yang eligible dihapus maksimal 90 hari setelah jendela tersebut;
+- implementasi, review legal Indonesia, identitas/kontak resmi, subprocessor,
+  acceptance, dan publication gate wajib lulus sebelum klaim public launch
+  tanpa batas.
+
 ## Account dan product boundary
 
 - Satu identity dapat ditautkan ke organisasi yang sama.
@@ -151,6 +167,10 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
   penyelesaian auditable, dan perlindungan konflik antaroperator.
 - Paket/limit, trial guardrail, fair-use, policy refund/reschedule, retention,
   offboarding, dan support SLA founder aktif secara server-authoritative.
+- Kontrak target privacy/retention/offboarding yang lebih rinci telah
+  owner-approved pada source docs commit
+  `295ec863ff6cfc2e79ac98183651f19c15a3b368`, tetapi belum diimplementasikan,
+  dideploy, diaktifkan, atau dipublikasikan.
 
 ## Update terbaru
 

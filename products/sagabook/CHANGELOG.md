@@ -4,6 +4,22 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-07-31 - Owner approval privacy, retention, dan offboarding
+
+- Status keputusan: `CONFIRMED`; delivery kontrak target: `PLANNED`; public
+  status: `NOT ACTIVE - NOT PUBLISHED`.
+- Before: draft P01-P18 masih menunggu keputusan owner sehingga implementasi
+  dan review legal belum mempunyai persetujuan kanonik.
+- After: Andreas menyetujui seluruh P01-P18 untuk implementasi dan review
+  legal, termasuk data role, consent, retention per kategori, deletion,
+  offboarding, incident response, dan subprocessor disclosure.
+- Source docs:
+  `295ec863ff6cfc2e79ac98183651f19c15a3b368`.
+- Production tidak berubah; persetujuan ini bukan izin publikasi dan bukan
+  bukti bahwa retention job atau offboarding runtime sudah aktif.
+- Next action: lengkapi identitas/kontak resmi, legal review, implementasi,
+  acceptance, immutable release, dan public smoke sebelum final sign-off.
+
 ## 2026-07-31 — Founder commercial dan booking policy production
 
 - Before: nominal paket dan trial dua fase sudah ada, tetapi Pro masih

@@ -71,6 +71,12 @@ aktif. Activation Center dan Customer Booking Center tetap aktif. Source
 production terbaru: `39fb2d3ff01c3b7368ed623fbf551b349fe4b56c`,
 release `20260731172605-39fb2d3`.
 
+Keputusan privacy/retention/offboarding SagaBook yang lebih rinci telah
+disetujui owner untuk implementasi dan legal review pada source docs commit
+`295ec863ff6cfc2e79ac98183651f19c15a3b368`. Kontrak ini belum aktif atau
+dipublikasikan; unrestricted public SaaS launch tetap menunggu legal,
+implementation, acceptance, dan publication gate.
+
 ### SagaView
 
 SaaS local-first untuk workflow studio setelah pemotretan. Operator mengaktifkan

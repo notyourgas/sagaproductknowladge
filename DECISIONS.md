@@ -160,3 +160,17 @@ keputusan pengganti.
 | Pemberi keputusan | Andreas / founder |
 | Status | `CONFIRMED` |
 | Dokumen terkait | [Founding Studio Pilot](docs/business/FOUNDING_STUDIO_PILOT.md), [Status Legend](docs/STATUS_LEGEND.md), [Sales Strategy](docs/business/SALES_STRATEGY.md) |
+
+## DEC-011 - SagaBook public privacy, retention, deletion, dan offboarding
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-07-31 |
+| Topik | Kebijakan publik dan data lifecycle SagaBook |
+| Keputusan | Andreas menyetujui seluruh keputusan P01-P18 untuk implementasi dan review legal. Studio menjadi Controller untuk data booking customer dan SagaBook/SagaDev menjadi Processor; SagaBook/SagaDev menjadi Controller independen untuk identity, billing, security, support, compliance, dan analytics teragregasi. Consent booking wajib berversi; marketing dan izin foto terpisah serta tidak preselected. Retention target: booking PII 24 bulan lalu anonymize; ledger 5 tahun atau lebih bila hukum mewajibkan; bukti transfer manual 90 hari; expired hold 30 hari; support conversation/attachment 180/30 hari; app/security-audit log 90/365 hari; backup encrypted rolling 30 hari. Paid cancellation memberi read-only/export 30 hari dan penghapusan data eligible maksimal 90 hari setelah jendela export. Persetujuan hanya mengizinkan implementasi dan legal review; policy tetap belum aktif dan belum dipublikasikan. |
+| Alasan | Produk memerlukan kontrak data lifecycle dan batas klaim publik yang eksplisit sebelum penjualan SaaS tanpa batas. |
+| Alternatif yang dipertimbangkan | Publikasi langsung tanpa legal/implementation gate; retention tanpa kategori; consent gabungan; penghapusan langsung tanpa export window. |
+| Dampak | Source, UI consent, policy versioning, retention/deletion jobs, export/offboarding, incident runbook, vendor disclosure, legal pages, sales claim, QA, release, dan rollback harus mengikuti keputusan ini. Bila berbeda dengan baseline umum DEC-009, ketentuan SagaBook yang lebih spesifik pada DEC-011 berlaku. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED` |
+| Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [Data Privacy](docs/technical/DATA_PRIVACY.md), [Gaps](GAPS.md) |

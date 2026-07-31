@@ -12,6 +12,22 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-07-31
 
+### SagaBook public policy owner approval
+
+- Ringkasan: menyinkronkan keputusan founder P01-P18 untuk privacy, retention,
+  deletion, consent, incident, subprocessor, dan offboarding SagaBook.
+- Alasan: implementation dan legal review memerlukan kontrak owner-approved
+  yang dapat ditelusuri tanpa menyatakan policy sudah aktif.
+- Produk/area terdampak: SagaBook, privacy, sales claim, legal, decision log,
+  gap register, portfolio/master knowledge, dan sync status.
+- Klasifikasi: `CONFIRMED` untuk keputusan; delivery `PLANNED`; public status
+  `NOT ACTIVE - NOT PUBLISHED`.
+- Source: SagaBook docs commit
+  `295ec863ff6cfc2e79ac98183651f19c15a3b368`.
+- Production berubah: tidak.
+- Blocker tersisa: identitas/kontak, subprocessor, legal sign-off,
+  implementation/acceptance, release, dan public smoke.
+
 ### Founder commercial contract dan pilot acceptance
 
 - Ringkasan: mengunci paket/limit/trial SagaBook dan SagaView, policy booking

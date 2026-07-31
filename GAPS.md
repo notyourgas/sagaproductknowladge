@@ -35,12 +35,16 @@ ketika keputusan atau release baru menutup gap.
 
 - `CONFIRMED`: batas paket, trial guardrail, policy default
   refund/reschedule/cancel, retention, offboarding, dan support SLA sudah
-  diputuskan melalui `DEC-008` dan `DEC-009`.
+  diputuskan melalui `DEC-008`, `DEC-009`, dan keputusan SagaBook yang lebih
+  spesifik pada `DEC-011`.
 - `NEEDS CONFIRMATION`: hasil Founding Studio Pilot—minimal 3 studio, 50 booking
   nyata total, minimal 95% core journey tanpa engineer, kepatuhan SLA, dan
   minimal 2 studio lanjut berbayar.
 - `NEEDS CONFIRMATION`: identitas badan hukum/alamat, kontak privacy,
   subprocessor, lokasi server, pajak, forum sengketa, dan legal sign-off publik.
+- `TODO`: implementasikan dan buktikan consent versioning, retention/deletion
+  jobs, export/offboarding, backup expiry, serta request/incident runbook sesuai
+  `DEC-011`; keputusan owner saja belum mengaktifkan policy.
 - `NEEDS CONFIRMATION`: KPI baseline activation, conversion, support volume,
   dan retention setelah pilot berjalan.
 - `TODO`: dokumentasikan hasil pilot/cohort nyata secara agregat tanpa PII.

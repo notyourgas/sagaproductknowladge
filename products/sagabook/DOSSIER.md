@@ -142,6 +142,22 @@ menggandakan atau menimpa tindakan.
 Organization, tenant, branch, staff membership, catalog/package, resource,
 availability, booking, payment state, request, task, audit, dan report.
 
+## Privacy, retention, dan offboarding
+
+`CONFIRMED` sebagai keputusan founder: seluruh keputusan P01-P18 pada draft
+SagaBook telah disetujui untuk implementasi dan review legal. Kontrak target
+mencakup pemisahan Controller/Processor, consent terpisah dan berversi,
+retention per kategori, export/deletion, incident handling, disclosure
+subprocessor, serta offboarding trial dan subscription.
+
+Delivery kontrak target ini masih `PLANNED`. Public status tetap `NOT ACTIVE -
+NOT PUBLISHED`. Klaim unrestricted public SaaS launch masih `BLOCKED` oleh
+review legal, identitas/kontak resmi, implementasi, acceptance, dan publication
+gate.
+
+Provenance public-safe: SagaBook source docs commit
+`295ec863ff6cfc2e79ac98183651f19c15a3b368`.
+
 ## Risiko dan asumsi
 
 - Provider delivery dan payment tidak boleh disimpulkan dari queue/log.
