@@ -61,7 +61,11 @@ Update terbaru: Support & Recovery Center production. Owner/admin dapat
 bertanya, melakukan human handoff, melanjutkan tiket, mengakses account
 recovery/setup/changelog, dan mengirim screenshot privat dari satu halaman.
 Retry pesan idempotent dan scope produk/tenant/akun/percakapan ditegakkan
-server-side. Activation Center dan Customer Booking Center tetap aktif.
+server-side. Platform Support juga aktif dengan antrean SLA, ownership
+operator, optimistic lock, dan receipt audit tersanitasi. Activation Center
+dan Customer Booking Center tetap aktif. Source production terbaru:
+`285ab943b93466deda0f6c07466c0fbe8da16e4c`, release
+`20260731075424-285ab94`.
 
 ### SagaView
 

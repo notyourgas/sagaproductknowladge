@@ -112,13 +112,15 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
 
 - Customer Booking Center aktif di production.
 - Source kanonik terbaru pada cut-off: commit
-  `7cc63d2bfde011321f7c06ff45e393d189b1d4a4`.
-- Release production tercatat: `20260731053435-7cc63d2`.
+  `285ab943b93466deda0f6c07466c0fbe8da16e4c`.
+- Release production tercatat: `20260731075424-285ab94`.
 - Storefront, admin, dan super-admin merespons public smoke.
 - Tenant Onboarding dan First Booking Activation aktif melalui Activation
   Center yang tenant-scoped dan server-authoritative.
 - Support & Recovery Center aktif untuk owner/admin dengan percakapan
   tenant-scoped, retry idempotent, dan human handoff.
+- Platform Support aktif untuk operator dengan antrean SLA, ownership,
+  penyelesaian auditable, dan perlindungan konflik antaroperator.
 
 ## Update terbaru
 
@@ -167,6 +169,14 @@ After:
   sudah dihapus dan lampiran tetap privat;
 - permission, payload public-safe, audit, dan adapter Support Hub ditegakkan
   server-side.
+- operator dapat memfilter antrean berdasarkan produk, status, prioritas, SLA,
+  dan ownership;
+- claim, release, resolve, reopen, perubahan prioritas, private note, dan
+  balasan publik memakai idempotency key serta optimistic lock;
+- retry tidak menggandakan tindakan dan konflik operator menghasilkan refresh
+  aman, bukan overwrite;
+- receipt audit tidak memuat isi pesan, tenant ID mentah, provider reference,
+  atau PII.
 
 ## Belum boleh diklaim
 

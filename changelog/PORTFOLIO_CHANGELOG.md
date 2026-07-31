@@ -10,6 +10,20 @@ workflow, pricing, release, activation, atau blocker.
 Detail tetap berada pada changelog produk; entri docs-only berada di root
 [CHANGELOG](../CHANGELOG.md).
 
+## 2026-07-31 - SagaBook Platform Support Operations production
+
+- Operator platform kini memiliki antrean support berdasarkan ownership,
+  prioritas, dan SLA waktu kerja Asia/Jakarta.
+- Claim, release, resolve, reopen, private note, public reply, dan perubahan
+  prioritas bersifat retry-safe serta auditable.
+- Konflik antaroperator tidak melakukan silent overwrite; payload dan receipt
+  audit tidak membuka PII atau identifier sensitif.
+- Source `285ab943b93466deda0f6c07466c0fbe8da16e4c` aktif pada release
+  `20260731075424-285ab94`; readiness/database audit 100/100 dan public smoke
+  lulus.
+- SagaView tidak berubah dan rollback immutable `20260731053435-7cc63d2`
+  tetap tersedia.
+
 ## 2026-07-31 - SagaBook Support & Recovery Center production
 
 - Owner/admin kini memiliki satu pusat bantuan untuk pertanyaan produk, human

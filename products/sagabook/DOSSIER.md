@@ -127,6 +127,10 @@ Payment dan notification provider, serta future SagaView handoff.
 Provider/credential spesifik tidak didokumentasikan di repository publik.
 Support Hub pusat diakses melalui adapter bertanda tangan; percakapan owner
 tetap product-, tenant-, account-, dan conversation-scoped.
+Platform Support menambahkan antrean operator berbasis ownership dan SLA waktu
+kerja Asia/Jakarta. Aksi triage memakai idempotency key, optimistic lock, dan
+receipt audit tersanitasi agar retry serta konflik antaroperator tidak
+menggandakan atau menimpa tindakan.
 
 ## Data yang digunakan
 

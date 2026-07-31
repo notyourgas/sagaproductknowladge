@@ -9,6 +9,28 @@ Mencatat perubahan material SagaBook dengan provenance public-safe.
 Gunakan bersama [PRODUCT](PRODUCT.md), [DOSSIER](DOSSIER.md), dan status release
 aktual.
 
+## 2026-07-31 - Platform Support Operations production
+
+- Status: `PRODUCTION_DEPLOYED`.
+- Before: tiket support dapat dibaca dan dibalas, tetapi ownership operator,
+  SLA, concurrency, dan receipt audit belum cukup jelas untuk tim multioperator.
+- After: operator memiliki antrean berdasarkan produk/status/prioritas/SLA,
+  claim/release, resolve/reopen, private note, public reply, dan perubahan
+  prioritas yang retry-safe serta auditable.
+- Keamanan: permission deny-by-default, tenant reference tersanitasi,
+  idempotency key, optimistic lock, dan receipt audit tanpa isi pesan,
+  provider reference, tenant ID mentah, atau PII.
+- Dampak: operator dapat melakukan triage tanpa duplikasi respons atau silent
+  overwrite saat dua operator menangani tiket yang sama.
+- Source: `285ab943b93466deda0f6c07466c0fbe8da16e4c`.
+- Release: `20260731075424-285ab94`.
+- Validasi: 942 regression tests / 10.824 assertions, 36 focused tests / 178
+  assertions, 26 visual smoke, 4 browser E2E mobile/desktop, production build,
+  dependency audit, backup verification, migration, readiness/database audit
+  100/100, service health, dan enam public smoke lulus.
+- Rollback: immutable release `20260731053435-7cc63d2` tetap tersedia.
+- Next action: observasi SLA dan kualitas resolusi pada cohort studio nyata.
+
 ## 2026-07-31 - Support & Recovery Center production
 
 - Status: `PRODUCTION_DEPLOYED`.

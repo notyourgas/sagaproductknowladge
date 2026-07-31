@@ -16,11 +16,11 @@ setelah push dan dapat diperoleh dengan `git rev-parse HEAD`.
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-07-31T12:40:00+07:00 |
+| Waktu pembaruan terakhir | 2026-07-31T15:05:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `8c83250c529f846c308f9ea16d601c60530510f1` |
-| Informasi terakhir disinkronkan | SagaBook Support & Recovery Center aktif di production pada release `20260731053435-7cc63d2` dengan human handoff, balasan idempotent, recovery links, dan screenshot privat. |
+| Baseline sebelum pembaruan | `64942455d451a20e097e679cc8b3f9becb43982e` |
+| Informasi terakhir disinkronkan | SagaBook Platform Support Operations aktif di production pada release `20260731075424-285ab94` dengan antrean SLA, ownership operator, optimistic lock, idempotensi, dan receipt audit tersanitasi. |
 | Status sinkronisasi | `UP TO DATE` setelah commit/push dan remote verification |
 | Konflik | Tidak ada pada baseline; branch lokal dan `origin/main` sama sebelum edit. |
 | Error | Tidak ada error terbuka pada awal sinkronisasi. |
@@ -38,9 +38,10 @@ setelah push dan dapat diperoleh dengan `git rev-parse HEAD`.
 ## Item menunggu konfirmasi
 
 Support & Recovery Center sudah production-deployed. Business readiness
-SagaBook tetap menunggu observasi cohort studio nyata. Detail percakapan,
-lampiran, tenant, account, dan evidence restricted tetap berada di luar
-repository publik. Gap lain tetap tercatat di [GAPS](GAPS.md).
+SagaBook tetap menunggu observasi cohort studio nyata dan acceptance policy
+privacy, retention, deletion, serta offboarding. Detail percakapan, lampiran,
+tenant, account, dan evidence restricted tetap berada di luar repository
+publik. Gap lain tetap tercatat di [GAPS](GAPS.md).
 
 ## Cara verifikasi
 
