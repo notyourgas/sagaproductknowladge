@@ -87,11 +87,12 @@ aktif. Activation Center dan Customer Booking Center tetap aktif. Source
 production terbaru: `39fb2d3ff01c3b7368ed623fbf551b349fe4b56c`,
 release `20260731172605-39fb2d3`.
 
-Candidate yang belum production: routing Fonnte tenant-scoped pada source
-`a368c05e` memungkinkan default SagaDev, token studio sendiri, atau manual-only.
-Candidate signup pada source `dcb5a3f3` menyiapkan trial 7 hari otomatis tanpa
-approval owner/email verification, dengan login tetap menunggu provisioning
-ready. Jangan menyebut kedua candidate ini aktif di production.
+Routing Fonnte tenant-scoped sudah aktif di SagaBook production pada release
+`20260731181921-378bcdf`, source `378bcdf4`: default SagaDev, token Fonnte
+studio sendiri, atau manual-only. Candidate signup pada source `dcb5a3f3`
+menyiapkan trial 7 hari otomatis tanpa approval owner/email verification,
+dengan login tetap menunggu provisioning ready. Auto-trial itu belum
+production dan tetap `PRODUCTION HOLD`.
 
 Keputusan privacy/retention/offboarding SagaBook yang lebih rinci telah
 disetujui owner untuk implementasi dan legal review pada source docs commit

@@ -52,8 +52,11 @@ ketika keputusan atau release baru menutup gap.
 - `NEEDS CONFIRMATION`: KPI baseline activation, conversion, support volume,
   dan retention setelah pilot berjalan.
 - `TODO`: dokumentasikan hasil pilot/cohort nyata secara agregat tanpa PII.
-- `TODO`: S71 Fonnte tenant routing belum dideploy; release memerlukan additive
-  migration, canary tenant, rollback check, dan approval production baru.
+- `CONFIRMED`: S71 Fonnte tenant routing aktif pada production release
+  `20260731181921-378bcdf`; additive migration, rollback target, provider
+  connection tanpa pesan, readiness, health, dan service gate lulus.
+- `TODO`: lakukan authenticated owner canary ke nomor terkontrol sebelum
+  memperluas pengiriman ke customer nyata.
 - `TODO`: S72 auto-trial 7 hari masih `PRODUCTION HOLD`; kontrak production
   tetap tidak berubah sampai release, worker/provisioning, dan authenticated
   product UAT disetujui.

@@ -4,6 +4,22 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-01 - Fonnte tenant routing production
+
+- Status: `PRODUCTION DEPLOYED` dan `PRODUCTION ACTIVATED` untuk routing
+  WhatsApp SagaBook; authenticated owner canary masih direkomendasikan sebelum
+  rollout customer berskala besar.
+- Default setiap tenant menggunakan Fonnte SagaDev; owner dapat memilih
+  credential Fonnte studio sendiri atau mode manual-only.
+- Credential tenant terenkripsi dan tidak dikirim kembali ke browser; delivery
+  menyimpan snapshot mode serta versi koneksi untuk retry dan audit.
+- Additive migration, backup verification, provider connection probe tanpa
+  pesan, readiness 100/100, health, service, Nginx, dan error-journal gate
+  lulus.
+- Source commit: `378bcdf4dac6c54d0bf421b5ef188103d82c6b40`.
+- Production release: `20260731181921-378bcdf`.
+- S72 auto-trial tidak ikut release dan tetap `PRODUCTION HOLD`.
+
 ## 2026-07-31 - Candidate Fonnte tenant routing dan auto-trial
 
 - Status: `LOCAL_VALIDATED`; `NOT DEPLOYED`; production tidak berubah.

@@ -173,10 +173,12 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
   `IMPLEMENTED_NOT_DEPLOYED` pada source commit
   `d4c96276b6b79e9a969975cfa5b4943d0c275e4b`. Penghapusan otomatis, publikasi,
   dan production activation tetap nonaktif.
-- Candidate routing WhatsApp per tenant sudah `LOCAL_VALIDATED` pada source
-  `a368c05edbed9b10d8d187ae60e354fd84d96b55`: default memakai Fonnte
+- Routing WhatsApp per tenant sudah aktif di production pada release
+  `20260731181921-378bcdf`, source
+  `378bcdf4dac6c54d0bf421b5ef188103d82c6b40`: default memakai Fonnte
   SagaDev, owner dapat memilih token Fonnte studio sendiri, atau menonaktifkan
-  otomatisasi. Candidate ini belum dideploy.
+  otomatisasi. Credential tenant terenkripsi dan delivery menyimpan snapshot
+  koneksi yang dipakai.
 - Candidate signup tanpa approval owner dan trial kanonik 7 hari sudah
   `LOCAL_VALIDATED` pada source
   `dcb5a3f3dc1e3e7b5c0c067e8968ca341ebf1c27`. Production tetap memakai

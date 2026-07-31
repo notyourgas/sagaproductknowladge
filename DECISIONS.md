@@ -256,7 +256,7 @@ keputusan pengganti.
 | Alternatif yang dipertimbangkan | Satu credential global tanpa override; mewajibkan credential setiap studio; mempertahankan approval manual untuk semua signup; langsung mengaktifkan auto-trial di production. |
 | Dampak | Routing credential harus tenant-scoped dan encrypted; delivery menyimpan sender snapshot; owner setting dan canary wajib diuji. Auto-trial harus idempotent, product-scoped, tepat 7 hari, tidak membuat tagihan, dan login tetap fail-closed sampai provisioning ready. |
 | Pemberi keputusan | Andreas / founder |
-| Status | `CONFIRMED` untuk implementasi lokal; production S71 `NOT DEPLOYED`; production S72 `HOLD` |
+| Status | `CONFIRMED`; production S71 `DEPLOYED` dan `ACTIVATED` pada release `20260731181921-378bcdf`; production S72 `HOLD` |
 | Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaView Product](products/sagaview/PRODUCT.md), [Gaps](GAPS.md) |
 
 ## DEC-018 — AOGTICVITY memakai festival motion system

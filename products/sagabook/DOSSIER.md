@@ -130,6 +130,12 @@ jobs, billing, audit, dan immutable release process.
 
 Payment dan notification provider, serta future SagaView handoff.
 Provider/credential spesifik tidak didokumentasikan di repository publik.
+Routing Fonnte tenant-scoped aktif di production: SagaDev-managed menjadi
+default, owner dapat membawa koneksi Fonnte studio sendiri, dan manual-only
+tersedia. Token tenant terenkripsi, tidak dikembalikan ke browser, dan setiap
+delivery menyimpan snapshot route untuk menjaga retry serta audit tetap
+konsisten. Release aktif: `20260731181921-378bcdf` dari source
+`378bcdf4dac6c54d0bf421b5ef188103d82c6b40`.
 Support Hub pusat diakses melalui adapter bertanda tangan; percakapan owner
 tetap product-, tenant-, account-, dan conversation-scoped.
 Platform Support menambahkan antrean operator berbasis ownership dan SLA waktu

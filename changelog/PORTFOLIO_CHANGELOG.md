@@ -24,6 +24,15 @@ Detail tetap berada pada changelog produk; entri docs-only berada di root
 - Delivery `PRODUCTION_DEPLOYED`; activation `NOT_PRODUCTION_ACTIVATED` dan
   business readiness `BLOCKED` karena local state/demo auth bukan bukti
   persistence/auth production.
+## 2026-08-01 - SagaBook Fonnte tenant routing production
+
+- Routing WhatsApp tenant-scoped aktif pada production release
+  `20260731181921-378bcdf`, source `378bcdf4`.
+- Fonnte SagaDev menjadi default; owner studio dapat memakai token Fonnte
+  sendiri atau memilih manual-only.
+- Backup, additive migration, provider connection tanpa pesan, readiness,
+  health, service, Nginx, dan error-journal gate lulus.
+- S72 auto-trial tidak ikut release dan tetap `PRODUCTION HOLD`.
 
 ## 2026-07-31 — SagaBook Fonnte routing dan SagaBook/SagaView auto-trial candidate
 

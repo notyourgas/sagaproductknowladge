@@ -30,6 +30,20 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
   smoke, dan runtime error/500 scan lulus.
 - Blocker: real auth, secure BFF/API activation, notification provider, custom
   domain, dan physical multi-device UAT.
+### SagaBook Fonnte tenant routing production
+
+- Ringkasan: mempromosikan S71 routing Fonnte tenant-scoped dari local
+  candidate menjadi production aktif.
+- Alasan: founder menyetujui release S71 setelah local implementation dan
+  production preflight hijau.
+- Produk/area terdampak: SagaBook WhatsApp settings, reminder, confirmation,
+  credential isolation, delivery audit, dan operator runbook.
+- Klasifikasi: `CONFIRMED`; `PRODUCTION DEPLOYED`; `PRODUCTION ACTIVATED`.
+- Source: `378bcdf4dac6c54d0bf421b5ef188103d82c6b40`; release
+  `20260731181921-378bcdf`.
+- Production berubah: ya, hanya Saga Platform/SagaBook; SagaView tidak berubah.
+- Residual: authenticated owner canary ke nomor terkontrol sebelum rollout
+  customer berskala besar. S72 auto-trial tetap `PRODUCTION HOLD`.
 
 ## 2026-07-31
 
