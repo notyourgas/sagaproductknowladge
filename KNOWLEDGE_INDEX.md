@@ -1,37 +1,16 @@
-# Knowledge Index
+# Knowledge Index (Compatibility Pointer)
 
-Updated: 31 Juli 2026
+## Tujuan
 
-## Dokumen utama untuk ChatGPT
+File ini dipertahankan agar link lama tidak rusak.
 
-- [CHATGPT_MASTER_KNOWLEDGE.md](./CHATGPT_MASTER_KNOWLEDGE.md) — ringkasan
-  lintas-produk yang sebaiknya dibaca pertama.
-- [SAGA_PRODUCT_PORTFOLIO.md](./docs/SAGA_PRODUCT_PORTFOLIO.md) — hubungan,
-  positioning, dan batas produk.
-- [STATUS_LEGEND.md](./docs/STATUS_LEGEND.md) — arti status evidence dan release.
-- [SOURCE_REGISTRY.md](./docs/SOURCE_REGISTRY.md) — sumber kerja dan task.
+## Konteks
 
-## Product knowledge
+Beberapa consumer lama masih dapat merujuk nama file ini.
 
-- [SagaBook](./products/sagabook/PRODUCT.md)
-- [SagaView](./products/sagaview/PRODUCT.md)
-- [SagaBio](./products/sagabio/PRODUCT.md)
-- [SagaMenu](./products/sagamenu/PRODUCT.md)
-- [SagaFin](./products/sagafin/PRODUCT.md)
-- [COYABAG](./products/coyabag/PRODUCT.md)
-- [AOGTICVITY](./products/aogticvity/PRODUCT.md)
-- [Saga Platform](./products/saga-platform/PRODUCT.md)
-- [SagaOPS](./products/sagaops/PRODUCT.md)
-- [Saga AI](./products/saga-ai/PRODUCT.md)
+## Status
 
-## Changelog
+`SUPERSEDED`: daftar isi kanonik sekarang adalah [INDEX.md](INDEX.md).
 
-- [Portfolio Changelog](./changelog/PORTFOLIO_CHANGELOG.md)
-- Product changelog tersedia di dalam folder masing-masing produk.
-
-## Operasional knowledge
-
-- [Update Protocol](./docs/UPDATE_PROTOCOL.md)
-- [ChatGPT Import Guide](./docs/CHATGPT_IMPORT_GUIDE.md)
-- [Product Update Template](./templates/PRODUCT_UPDATE_TEMPLATE.md)
-- [Project Registry](./registry/OTHER_PROJECTS.md)
+Gunakan [INDEX.md](INDEX.md) untuk daftar produk, dossier, strategi lintas
+produk, standar teknis, tata kelola, gap, dan changelog.

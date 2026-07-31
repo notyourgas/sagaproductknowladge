@@ -4,10 +4,23 @@ Evidence cut-off: 31 Juli 2026
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
+## Tujuan
+
+Memberi konteks portofolio minimum yang aman dimuat pertama oleh ChatGPT atau AI
+agent.
+
+## Konteks
+
+Dokumen ini adalah ringkasan; detail dan gap tetap berada pada dokumen produk,
+[INDEX](INDEX.md), dan [GAPS](GAPS.md).
+
 ## Cara menggunakan dokumen ini
 
 Dokumen ini adalah ringkasan kanonik untuk brainstorming produk, fitur, konten,
 sales, dan support. Baca dokumen produk terkait untuk detail.
+
+Daftar isi kanonik: [INDEX.md](INDEX.md). Pertanyaan yang belum diputuskan:
+[GAPS.md](GAPS.md).
 
 Jangan menganggap `planned`, `prototype`, `local validated`, atau
 `implemented not deployed` sebagai fitur production. Jangan menggabungkan
@@ -61,13 +74,16 @@ Harga bulanan: Growth Rp200.000, Pro Rp500.000.
 Trial contract: 14 hari dua fase; production activation backend terbaru masih
 menunggu provider canary.
 
-Update terbaru: output 4R production, portrait 1200x1800, landscape 1800x1200,
-300 DPI. Public Home/Pricing/Help/Legal dengan harga unit dan kontrak trial dua
-fase sudah implemented tetapi belum production karena signup live masih
-menjalankan trial lama. Backend Owner Console/device/trial/subscription
-candidate sudah melewati full regression, backup/restore, migration, build,
-security, dan rollback rehearsal, tetapi production backend belum berubah
-karena paid Tokopay canary serta processed callback nyata belum tersedia.
+Update terbaru: output 4R dan operator-controlled session completion/privacy
+handoff production pada release `20260731113223-2f65a9a`. Customer memanggil
+operator; operator memverifikasi output/handoff; privacy mode memasking nama
+output; cleanup recovery fail-closed tanpa menghapus source/output file.
+Public Home/Pricing/Help/Legal dengan harga unit dan kontrak trial dua fase
+sudah implemented tetapi belum production karena signup live masih menjalankan
+trial lama. Backend Owner Console/device/trial/subscription candidate sudah
+melewati full regression, backup/restore, migration, build, security, dan
+rollback rehearsal, tetapi production backend belum berubah karena paid
+Tokopay canary serta processed callback nyata belum tersedia.
 
 ### SagaBio
 
@@ -98,7 +114,8 @@ harus masuk review sebelum memengaruhi laporan.
 
 Finance Tracker Go dan SagaFin adalah produk yang sama.
 
-Status: `CONTROLLED_PUBLIC_TRIAL`. Pricing final belum dikunci.
+Status runtime: `UNVERIFIED`; `CONTROLLED_PUBLIC_TRIAL` adalah fase bisnis yang
+pernah dilaporkan. Pricing final belum dikunci.
 
 ### COYABAG
 
@@ -107,7 +124,7 @@ Laravel/Inertia. Storefront, API, dan admin live, tetapi commerce production
 penuh masih fail-closed sampai data final, payment/shipping/email/storage,
 owner 2FA, legal, backup restore, dan provider UAT selesai.
 
-Status: `PRODUCTION_DEPLOYED_NOT_ACTIVATED`.
+Delivery: `PRODUCTION_DEPLOYED`. Activation dan business readiness: `BLOCKED`.
 
 ### AOGTICVITY
 
@@ -116,7 +133,8 @@ check-in, enam tim, lomba, roster, jadwal, hasil, standing, pengumuman, audit,
 dan live projection. Ini adalah nama terbaru project 17an/Olimpiade
 Kemerdekaan.
 
-Status: `PROTOTYPE/LOCAL_RELEASE_CANDIDATE`. Domain target belum diaktifkan.
+Delivery: `LOCAL_VALIDATED`. Activation/business readiness: `BLOCKED`. Domain
+target belum diaktifkan.
 
 ### SagaOPS
 
@@ -132,7 +150,8 @@ Control plane SagaDev untuk registry produk, account, subscription, entitlement,
 audit, readiness, launcher, dan integrasi. Operational data tetap dimiliki
 masing-masing produk.
 
-Status: `PRODUCTION_FOUNDATION` dengan migrasi boundary bertahap.
+Fondasi tertentu: `PRODUCTION_DEPLOYED` dengan migrasi boundary bertahap.
+Activation bersifat parsial.
 
 ### Saga AI
 
@@ -140,7 +159,7 @@ Knowledge/retrieval/support layer yang harus menjawab berdasarkan sumber
 disetujui, permission, dan status release aktual. Ia bukan alasan untuk
 menggabungkan data atau credential lintas-produk.
 
-Status: `PLANNED/FOUNDATION`.
+Delivery: `PLANNED`. Belum production-activated.
 
 ## Keputusan komersial penting
 

@@ -1,5 +1,14 @@
 # Saga Product Knowledge Update Protocol
 
+## Tujuan
+
+Menutup perubahan source product menjadi knowledge publik yang dapat diaudit.
+
+## Konteks
+
+Protocol berlaku setelah perubahan material memiliki source/release provenance
+yang jelas.
+
 ## Kapan wajib update
 
 Knowledge wajib diperbarui ketika terjadi salah satu kondisi:
@@ -23,19 +32,23 @@ ada dampak user atau bisnis.
 
 1. Verifikasi source project, exact commit, dan status release.
 2. Identifikasi dampak user/bisnis: `before -> after`.
-3. Perbarui `products/<product>/PRODUCT.md`.
-4. Tambahkan entri terbaru di `products/<product>/CHANGELOG.md`.
-5. Tambahkan ringkasan lintas-produk di
+3. Perbarui `products/<product>/PRODUCT.md` untuk fakta ringkas.
+4. Perbarui `products/<product>/DOSSIER.md` bila product, experience, business,
+   technical, sales, atau content contract berubah.
+5. Tambahkan entri terbaru di `products/<product>/CHANGELOG.md`.
+6. Tambahkan ringkasan lintas-produk di
    `changelog/PORTFOLIO_CHANGELOG.md`.
-6. Perbarui `CHATGPT_MASTER_KNOWLEDGE.md` bila fakta kanonik berubah.
-7. Jalankan validator.
-8. Commit dengan format:
+7. Perbarui `CHATGPT_MASTER_KNOWLEDGE.md`, `GAPS.md`, dan `INDEX.md` bila fakta
+   atau struktur kanonik berubah.
+8. Jalankan validator, relative-link check, secret scan, dan
+   `git diff --check`.
+9. Commit dengan format:
 
    ```text
    knowledge(<product>): sync <perubahan singkat>
    ```
 
-9. Push ke branch `main`.
+10. Push ke branch `main`.
 
 ## Minimum changelog entry
 
@@ -77,3 +90,7 @@ Prioritas source of truth:
 
 Jika sumber berbeda, jangan memilih diam-diam. Tandai konflik dan gunakan fakta
 yang paling baru serta paling kuat.
+
+Gunakan label dari
+[Fact Classification](governance/FACT_CLASSIFICATION.md). Informasi yang
+membutuhkan founder masuk ke [GAPS](../GAPS.md).

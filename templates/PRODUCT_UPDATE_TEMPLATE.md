@@ -1,7 +1,19 @@
 # [Nama Produk] — Product Update
 
+## Tujuan
+
+Template untuk mencatat perubahan material produk secara public-safe.
+
+## Konteks
+
+Hapus placeholder dan gunakan label fakta sebelum commit.
+
 Tanggal:
-Status akhir:
+Delivery status:
+Activation status:
+Business readiness:
+Fact label: FACT / OWNER DECISION / ASSUMPTION / RECOMMENDATION /
+NEEDS CONFIRMATION / TODO
 Source commit/release:
 Production berubah: ya/tidak
 

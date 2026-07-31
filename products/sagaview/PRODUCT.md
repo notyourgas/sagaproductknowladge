@@ -3,6 +3,17 @@
 Updated: 31 Juli 2026
 Evidence status: partial production + release candidate
 
+## Tujuan dokumen
+
+Menjadi ringkasan fakta kanonik SagaView dan memisahkan scope live dari
+candidate. Detail lengkap berada di [DOSSIER](DOSSIER.md); keputusan terbuka
+berada di [GAPS](../../GAPS.md#sagaview).
+
+## Konteks
+
+SagaView memiliki komponen production dan release candidate yang berbeda;
+setiap klaim di bawah berlaku hanya pada scope yang disebutkan.
+
 ## Ringkasan
 
 SagaView adalah SaaS local-first untuk workflow self-photo studio setelah sesi
@@ -99,16 +110,30 @@ kumulatif dipromosikan.
 - Slot dapat zoom/geser/bleed, tetapi canvas melakukan clipping.
 - Postcard/Square tidak ditampilkan karena renderer belum mendukung.
 
+## Session completion dan privacy handoff
+
+`FACT` — production pada release Studio terbaru:
+
+- customer hanya dapat memanggil operator, bukan mereset sesi sendiri;
+- operator wajib memverifikasi output dan handoff/antre cetak;
+- nama output dimasking ketika privacy mode aktif;
+- cleanup menghapus recovery state sebelum reset dan fail-closed dengan retry;
+- source folder dan output file tetap utuh;
+- completion event yang dikirim hanya memakai data operasional ter-redact.
+
 ## Status saat ini
 
-Status keseluruhan: `PARTIAL_PRODUCTION_DEPLOYED`.
+Headline status candidate: `IMPLEMENTED_NOT_DEPLOYED`. Studio 4R memiliki
+komponen `PRODUCTION_DEPLOYED`; activation produk masih parsial dan business
+readiness `BLOCKED`.
 
 ### Sudah production
 
-- Studio frontend fixed 4R.
-- Release: `20260731023744-1c5678c`.
-- Source: `1c5678c6fa8b180ebf4716d7060c2cb058c02317`.
-- Public output/session/changelog smoke lulus.
+- Studio frontend fixed 4R dan session completion/privacy handoff.
+- Release: `20260731113223-2f65a9a`.
+- Source: `2f65a9ac0322c33a429dcc888bdacd59836aab0b`.
+- Public session-completion/changelog smoke lulus; changelog menampilkan
+  v0.20.2 sebagai production aktif.
 - Backend production masih release `20260729002327-86d6920` pada source
   `86d6920bfd3da0234e74f73fda0c2fc5e7307903`.
 
@@ -152,6 +177,16 @@ boleh menjanjikan 14 hari sebelum enforcement backend sesuai.
 - Public self-service lulus 153 unit test, 47 E2E, build budget, dependency
   audit, WCAG 2.1 AA automated scan, forced-colors, dan visual responsive
   mobile sampai 2560 piksel.
+
+### Release evidence Studio v0.20.2
+
+- Exact source lulus 156 unit test dan 54 E2E.
+- Import 50/200/500 tervalidasi pada regression suite.
+- Accessibility, responsive, forced-colors, reduced-motion, dependency audit,
+  dan bundle budget lulus.
+- Backend, migration, payment, dan provider tidak berubah pada release ini.
+- Rollback release tersedia ke `20260731112542-09445f8` dan baseline sebelumnya
+  `20260731023744-1c5678c`.
 
 ## Belum boleh diklaim
 

@@ -1,5 +1,29 @@
 # SagaView Changelog
 
+## Tujuan
+
+Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
+
+## Konteks
+
+Gunakan bersama [PRODUCT](PRODUCT.md), [DOSSIER](DOSSIER.md), dan exact release
+scope.
+
+## 2026-07-31 — Session Completion & Privacy Handoff production
+
+- Status: `PRODUCTION_DEPLOYED`.
+- Before: customer dapat menekan selesai/reset langsung, nama file dapat
+  terlihat, dan recovery state belum dibersihkan saat handoff.
+- After: customer memanggil operator; operator memverifikasi output/handoff;
+  privacy mode memasking nama output; cleanup recovery fail-closed dengan
+  retry tanpa menghapus source/output file.
+- Source `2f65a9ac0322c33a429dcc888bdacd59836aab0b`, release
+  `20260731113223-2f65a9a`.
+- Validation: 156 unit, 54 E2E, 50/200/500 import, accessibility/responsive,
+  dependency audit, bundle budget, dan public smoke lulus.
+- Backend/payment/provider tidak berubah; candidate backend/public
+  self-service tetap `IMPLEMENTED_NOT_DEPLOYED`.
+
 ## 2026-07-31 — Public self-service candidate
 
 - Status: `IMPLEMENTED_NOT_DEPLOYED` dan `BLOCKED`.

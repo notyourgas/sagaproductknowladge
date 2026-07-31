@@ -3,6 +3,18 @@
 Updated: 31 Juli 2026
 Evidence status: planned/foundation
 
+## Tujuan dokumen
+
+Menjadi ringkasan fakta dan guardrail kanonik Saga AI. Detail product,
+experience, business, technical, sales, dan content berada di
+[DOSSIER](DOSSIER.md). Keputusan terbuka berada di
+[GAPS](../../GAPS.md#saga-ai).
+
+## Konteks
+
+Dokumen ini mendefinisikan arah dan guardrail; tidak membuktikan Saga AI sebagai
+produk publik yang aktif.
+
 ## Ringkasan
 
 Saga AI adalah knowledge, retrieval, support, dan intelligence layer untuk
@@ -48,7 +60,8 @@ permission yang berbeda.
 
 ## Status saat ini
 
-Status: `PLANNED/FOUNDATION`.
+Delivery: `PLANNED`. Activation: `NOT_PRODUCTION_ACTIVATED`. Business readiness:
+`BLOCKED`.
 
 - PRD, architecture direction, dan knowledge contracts tersedia.
 - Beberapa service/support experiment ada di workspace.

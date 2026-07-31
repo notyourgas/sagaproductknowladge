@@ -3,6 +3,17 @@
 Updated: 31 Juli 2026
 Evidence status: prototype + local release candidate
 
+## Tujuan dokumen
+
+Menjadi ringkasan fakta kanonik AOGTICVITY. Detail product, experience,
+business, technical, sales, dan content berada di [DOSSIER](DOSSIER.md).
+Keputusan terbuka berada di [GAPS](../../GAPS.md#aogticvity).
+
+## Konteks
+
+Dokumen membedakan prototype/local release candidate dari domain dan runtime
+multi-device production yang belum terverifikasi.
+
 ## Ringkasan
 
 AOGTICVITY adalah web app mobile-first untuk community matchday dan operasi
@@ -55,7 +66,8 @@ Domain tersebut target, bukan bukti production aktif.
 
 ## Status saat ini
 
-Status: `PROTOTYPE/LOCAL_RELEASE_CANDIDATE`.
+Delivery: `LOCAL_VALIDATED`. Activation: `NOT_PRODUCTION_ACTIVATED`. Business
+readiness: `BLOCKED`.
 
 - UI public/player/leader/admin/live tersedia.
 - Backend slice dan migration tersedia.

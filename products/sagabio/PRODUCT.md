@@ -3,6 +3,17 @@
 Updated: 31 Juli 2026
 Evidence status: local implementation
 
+## Tujuan dokumen
+
+Menjadi ringkasan fakta kanonik SagaBio. Detail product, experience, business,
+technical, sales, dan content berada di [DOSSIER](DOSSIER.md). Keputusan
+terbuka berada di [GAPS](../../GAPS.md#sagabio).
+
+## Konteks
+
+Informasi saat ini berasal dari implementasi dan acceptance lokal; belum ada
+production activation yang terverifikasi.
+
 ## Ringkasan
 
 SagaBio adalah custom mini website link-in-bio untuk bisnis lokal, creator,
@@ -50,6 +61,8 @@ SagaMenu tetap merupakan produk e-menu/e-katalog terpisah.
 - Help request, asset checklist, dan handoff.
 
 ## Target pilot
+
+`ASSUMPTION` — target kerja, bukan hasil:
 
 - Demo F&B yang kuat.
 - Satu paid pilot.

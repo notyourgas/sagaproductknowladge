@@ -3,6 +3,17 @@
 Updated: 31 Juli 2026
 Evidence status: production surfaces + blocked commerce activation
 
+## Tujuan dokumen
+
+Menjadi ringkasan fakta kanonik COYABAG dan memisahkan surface live dari
+commerce activation. Detail berada di [DOSSIER](DOSSIER.md); keputusan owner
+berada di [GAPS](../../GAPS.md#coyabag).
+
+## Konteks
+
+Storefront/API/admin dapat live sementara payment, shipping, data final, dan
+operasi commerce tetap belum diaktifkan.
+
 ## Ringkasan
 
 COYABAG adalah ecommerce tas streetwear dengan storefront React/Vite dan backend
@@ -45,7 +56,8 @@ Surface live tidak sama dengan transaksi commerce sudah aktif penuh.
 
 ## Status saat ini
 
-Status: `PRODUCTION_DEPLOYED_NOT_ACTIVATED`.
+Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
+`BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
 - Scheduler terminal expiry sudah fail-closed dan concurrency-tested.

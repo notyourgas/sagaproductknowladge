@@ -1,5 +1,25 @@
 # Portfolio Changelog
 
+## Tujuan
+
+Mencatat perubahan material lintas produk yang penting untuk positioning,
+workflow, pricing, release, activation, atau blocker.
+
+## Konteks
+
+Detail tetap berada pada changelog produk; entri docs-only berada di root
+[CHANGELOG](../CHANGELOG.md).
+
+## 2026-07-31 — SagaView Session Completion & Privacy Handoff production
+
+- Customer tidak lagi mereset sesi sendiri; operator memverifikasi output dan
+  handoff/antre cetak.
+- Privacy mode memasking nama output, cleanup recovery fail-closed, dan
+  source/output file tetap utuh.
+- Source `2f65a9ac0322c33a429dcc888bdacd59836aab0b` aktif pada release
+  `20260731113223-2f65a9a`; route completion/changelog lulus public smoke.
+- Backend, payment, migration, dan public self-service tidak berubah.
+
 ## 2026-07-31 - SagaBook Activation Center production
 
 - Tenant onboarding kini memiliki progress dan blocker server-authoritative.

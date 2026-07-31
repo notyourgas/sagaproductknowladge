@@ -3,6 +3,17 @@
 Updated: 31 Juli 2026
 Evidence status: prototype
 
+## Tujuan dokumen
+
+Menjadi ringkasan fakta kanonik SagaOPS. Detail product, experience, business,
+technical, sales, dan content berada di [DOSSIER](DOSSIER.md). Keputusan
+terbuka berada di [GAPS](../../GAPS.md#sagaops).
+
+## Konteks
+
+Workflow prototype tersedia; backend, hardware, provider, dan outlet production
+belum terverifikasi.
+
 ## Ringkasan
 
 SagaOPS adalah operating system coffeeshop. Produk dipisah menjadi SagaPOS untuk

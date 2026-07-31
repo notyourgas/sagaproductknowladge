@@ -1,0 +1,160 @@
+# AOGTICVITY Dossier
+
+## Tujuan dokumen
+
+Menjaga scope event-day operations, readiness, bisnis, teknis, sales, dan
+content AOGTICVITY tetap jelas.
+
+## Konteks dan status bukti
+
+- Updated: 31 Juli 2026
+- Delivery: `LOCAL_VALIDATED`
+- Activation: `NOT_PRODUCTION_ACTIVATED`
+- Business readiness: `BLOCKED`
+
+## Overview produk
+
+Web app mobile-first untuk community matchday dan operasi event/kompetisi
+hari-H. Nama lama: 17an/Olimpiade Kemerdekaan.
+
+## Masalah yang diselesaikan
+
+Registrasi, roster, check-in, jadwal, scoring, standing, announcement, dan
+projection sering tersebar dan rawan koreksi tanpa audit.
+
+## Target pengguna
+
+Peserta, leader tim, admin event, operator check-in/scoring, dan penonton.
+
+## Persona pengguna
+
+- Peserta: melihat tim/jadwal/status.
+- Leader: mengelola roster dan koordinasi.
+- Operator: check-in/scoring cepat dengan fallback.
+- Admin: publish/correct/audit.
+
+## Value proposition
+
+Command center event dari check-in sampai standing live.
+
+## Use case
+
+Registration, verification, team assignment, roster, schedule, check-in,
+draft/publish/correct result, standing, announcement, export, print, projection,
+dan offline fallback.
+
+## Fitur utama
+
+Public/player/leader/admin/live surfaces dan backend check-in vertical slice.
+
+## Fitur MVP
+
+Satu event dengan enam tim, authenticated roles, MySQL persistence, multi-device
+check-in/scoring, audit, projection, dan fallback. Sebagian masih belum
+production.
+
+## Roadmap
+
+1. Finalize auth dan MySQL production runtime.
+2. Domain/TLS dan provider notification.
+3. Multi-device/event rehearsal.
+4. Immutable deploy dan public smoke.
+5. `OWNER DECISION`: repeatable product/service model.
+
+## User journey
+
+Register → verify → team/roster → check-in → play → result publish/correct →
+standing/announcement.
+
+## User flow
+
+Scoring harus draft→publish→correct; correction memiliki reason/audit. Demo
+role switcher/PIN tidak boleh dipakai production.
+
+## Business model
+
+`OWNER DECISION`: internal event tool, managed service per event, atau SaaS.
+
+## Pricing
+
+`OWNER DECISION`: belum tersedia.
+
+## Kompetitor
+
+`NEEDS CONFIRMATION`: event registration, tournament bracket, scoring,
+community event, dan spreadsheet/manual operations.
+
+## Diferensiasi produk
+
+`RECOMMENDATION`: event-day command center, multi-role mobile UI,
+draft/publish/correct audit, live projection, dan offline fallback.
+
+## Brand positioning
+
+Operational app untuk matchday komunitas, bukan sekadar landing event.
+
+## Messaging
+
+- “Dari check-in sampai standing dalam satu command center.”
+- “Koreksi hasil tercatat, bukan diam-diam berubah.”
+
+## FAQ
+
+**Apakah domain sudah live?** Belum terverifikasi.
+**Apakah notification aktif?** Simulation bukan provider live.
+**Apakah bisa multi-device?** Target capability; runtime production belum
+terverifikasi.
+
+## Technical overview
+
+Frontend mobile-first, backend check-in slice, MySQL target adapter, SQLite fast
+test adapter. Beberapa UI lama masih localStorage.
+
+## Integrasi
+
+Notification, projection display, export/print, domain/TLS. Provider dan runtime
+production belum terverifikasi.
+
+## Data yang digunakan
+
+Event, participant, team, roster, schedule, match/competition, check-in,
+result, standing, announcement, audit, dan export.
+
+## Risiko dan asumsi
+
+Event-day time pressure, network failure, duplicate scoring, stale projection,
+demo auth, localStorage, dan provider simulation.
+
+## KPI dan success metrics
+
+`RECOMMENDATION`: registration completion, check-in throughput, correction
+rate, result publish latency, projection uptime, support incident, dan operator
+recovery. Target `NEEDS CONFIRMATION`.
+
+## Ide konten pemasaran
+
+Command center lomba; scoring audit; offline fallback; live standing.
+
+## Contoh caption
+
+`RECOMMENDATION`: “Hari-H bukan waktunya mencari spreadsheet terakhir.
+AOGTICVITY menyatukan check-in, jadwal, hasil, dan standing dalam satu alur.”
+
+## Ide campaign
+
+`ASSUMPTION`: behind-the-scenes event operations series.
+
+## Sales talking points
+
+Mulai dari risiko hari-H, demo multi-role workflow, lalu jelaskan fallback dan
+status production secara jujur.
+
+## Objection handling
+
+- “Cuma untuk 17an?”: domain workflow dapat dipakai event komunitas, tetapi
+  product model belum diputuskan.
+- “Bisa offline penuh?”: hanya klaim sesuai acceptance runtime.
+
+## Keputusan dan gap
+
+Lihat [GAPS](../../GAPS.md#aogticvity).

@@ -1,5 +1,14 @@
 # SagaBook Changelog
 
+## Tujuan
+
+Mencatat perubahan material SagaBook dengan provenance public-safe.
+
+## Konteks
+
+Gunakan bersama [PRODUCT](PRODUCT.md), [DOSSIER](DOSSIER.md), dan status release
+aktual.
+
 ## 2026-07-31 - Activation Center production
 
 - Status: `PRODUCTION_DEPLOYED`.

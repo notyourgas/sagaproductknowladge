@@ -3,6 +3,17 @@
 Updated: 31 Juli 2026
 Evidence status: controlled public trial + product planning
 
+## Tujuan dokumen
+
+Menjadi ringkasan semantics dan fakta SagaFin. Detail product, experience,
+business, technical, sales, dan content berada di [DOSSIER](DOSSIER.md).
+Keputusan terbuka berada di [GAPS](../../GAPS.md#sagafin).
+
+## Konteks
+
+Semantics produk telah diputuskan, sedangkan current public runtime, provider,
+dan pricing masih perlu verifikasi/keputusan.
+
 ## Ringkasan
 
 SagaFin adalah finance tracker personal mobile-first berbahasa Indonesia.
@@ -62,7 +73,8 @@ Finance Tracker Go dan SagaFin adalah produk yang sama.
 
 ## Status saat ini
 
-Status: `CONTROLLED_PUBLIC_TRIAL`.
+Headline evidence status: `UNVERIFIED`. `CONTROLLED_PUBLIC_TRIAL` dipertahankan
+sebagai fase bisnis yang pernah dilaporkan, bukan bukti runtime saat ini.
 
 - Product documentation mencatat PWA live di Vercel dan backend Supabase.
 - Production provider/environment harus diverifikasi ulang sebelum klaim baru.

@@ -3,6 +3,18 @@
 Updated: 31 Juli 2026
 Evidence status: production foundation + migration roadmap
 
+## Tujuan dokumen
+
+Menjadi ringkasan fakta kanonik Saga Platform. Detail product, experience,
+business, technical, dan internal positioning berada di
+[DOSSIER](DOSSIER.md). Keputusan terbuka berada di
+[GAPS](../../GAPS.md#saga-platform).
+
+## Konteks
+
+Fondasi tertentu telah dipakai production, tetapi bounded-context migration dan
+product adapter berlangsung bertahap.
+
 ## Ringkasan
 
 Saga Platform adalah control plane SagaDev. Ia mengelola registry produk,
@@ -46,7 +58,8 @@ Saga Platform bukan database gabungan seluruh operational data.
 
 ## Status saat ini
 
-Status: `PRODUCTION_FOUNDATION`.
+Delivery: `PRODUCTION_DEPLOYED` untuk fondasi yang tercantum di bawah.
+Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
 
 - Fondasi production hidup bersama repo/schema SagaBook.
 - Product account dan commerce flows sudah digunakan untuk SagaBook/SagaView.

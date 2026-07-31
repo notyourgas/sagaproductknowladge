@@ -1,5 +1,13 @@
 # SagaMenu Changelog
 
+## Tujuan
+
+Mencatat perubahan material SagaMenu dengan provenance public-safe.
+
+## Konteks
+
+Status local/staging/production pada setiap entri harus dibaca secara eksplisit.
+
 ## 2026-07-31 - Public media recovery
 
 - Status batch: `IMPLEMENTED_NOT_DEPLOYED`.

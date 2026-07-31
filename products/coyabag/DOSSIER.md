@@ -1,0 +1,161 @@
+# COYABAG Dossier
+
+## Tujuan dokumen
+
+Merangkum brand, commerce workflow, readiness, bisnis, teknis, sales, dan
+content COYABAG tanpa menyamakan surface live dengan commerce aktif.
+
+## Konteks dan status bukti
+
+- Updated: 31 Juli 2026
+- Delivery: `PRODUCTION_DEPLOYED`
+- Activation: `BLOCKED`
+- Business readiness: `BLOCKED`
+
+## Overview produk
+
+Ecommerce tas streetwear dengan storefront, API, dan admin operations.
+
+## Masalah yang diselesaikan
+
+Discovery produk, variant/media, cart/checkout, inventory/order operations, dan
+content brand perlu satu sistem.
+
+## Target pengguna
+
+Customer fashion/streetwear, owner/admin, operator order/inventory/payment/
+shipping/return/content/support.
+
+## Persona pengguna
+
+- Customer mobile: mencari visual, detail, variant, dan checkout yang jelas.
+- Operator: memerlukan order/inventory/reconciliation/recovery.
+- Owner: mengelola brand, catalog, margin, dan readiness.
+
+## Value proposition
+
+Storefront editorial streetwear yang terhubung ke backend operasional
+fail-closed.
+
+## Use case
+
+Browse, search, product detail, wishlist/cart, checkout UI, order, inventory,
+payment, shipping, return/refund, CMS, report, dan privacy request.
+
+## Fitur utama
+
+Homepage/shop/PDP, gallery/lookbook/FAQ, metadata/SEO, admin auth/RBAC/audit,
+order/inventory ledger, payment/reconciliation, shipping/promo/CMS/report.
+
+## Fitur MVP
+
+`FACT`: surface web tersedia. Commerce MVP baru aktif setelah data, provider,
+legal, 2FA, backup, dan transaction UAT lulus.
+
+## Roadmap
+
+1. Founder mengunci catalog, harga, stok, copy, media, seller/legal/policy.
+2. Activate payment, shipping, email, storage, 2FA, backup/restore.
+3. Sandbox/live transaction UAT.
+4. Controlled launch dan support observation.
+
+## User journey
+
+Discover → browse/search → product detail → variant → cart → checkout →
+payment → fulfillment → delivery → return/support.
+
+## User flow
+
+Cart harus dipertahankan ketika API tidak dapat diverifikasi; inventory
+reservation dan terminal status fail-closed.
+
+## Business model
+
+Direct-to-consumer ecommerce. Margin, shipping subsidy, discount, tax, dan
+return economics: `OWNER DECISION`.
+
+## Pricing
+
+Product price dan promo final: `OWNER DECISION`; dummy catalog tidak boleh
+dipublikasikan sebagai fakta.
+
+## Kompetitor
+
+`NEEDS CONFIRMATION`: brand/market competitor set dan evidence. Jangan
+mengarang benchmark harga.
+
+## Diferensiasi produk
+
+`RECOMMENDATION`: product storytelling editorial, streetwear identity, dan
+operational integrity dari inventory sampai recovery.
+
+## Brand positioning
+
+Tas streetwear dengan visual hitam-putih/editorial product focus.
+
+## Messaging
+
+- Fokus pada design, material, detail, dan use context yang benar-benar
+  disetujui.
+- `NEEDS CONFIRMATION`: brand promise dan tagline final.
+
+## FAQ
+
+Shipping, payment, return, warranty, material, size, dan care belum boleh
+dipublikasikan sebelum data owner final.
+
+## Technical overview
+
+React/Vite storefront dan Laravel/Inertia backend/admin dengan MySQL, Redis,
+queue, cron, dan immutable release tooling.
+
+## Integrasi
+
+Payment, shipping, SMTP, object storage, analytics, dan support. Production
+provider belum terverifikasi lengkap.
+
+## Data yang digunakan
+
+Catalog/product/variant/media, customer, cart, order, inventory ledger,
+reservation, payment, shipment, return/refund, promo, CMS, audit, dan privacy
+request.
+
+## Risiko dan asumsi
+
+Surface live dapat disalahartikan sebagai checkout aktif; dummy data, provider,
+2FA recovery, backup/restore, dan legal policy adalah blocker.
+
+## KPI dan success metrics
+
+`RECOMMENDATION`: PDP-to-cart, checkout completion, payment success, stock
+accuracy, fulfillment time, return rate, support rate, repeat purchase, dan
+margin. Baseline/target `NEEDS CONFIRMATION`.
+
+## Ide konten pemasaran
+
+Editorial product detail; material/use case; behind-the-operations inventory;
+build-in-public readiness.
+
+## Contoh caption
+
+`TODO`: menunggu copy, material, ukuran, dan value proposition final. Jangan
+membuat caption produk faktual sebelum data owner tersedia.
+
+## Ide campaign
+
+`ASSUMPTION`: limited drop/editorial launch dapat relevan; mekanisme, stok, dan
+urgency harus keputusan owner.
+
+## Sales talking points
+
+Gunakan fakta produk final, fit/material/use case, policy, dan fulfillment;
+hindari scarcity atau testimonial palsu.
+
+## Objection handling
+
+Material, ukuran, ongkir, return, dan durability memerlukan data/policy final;
+jangan menjawab dengan asumsi.
+
+## Keputusan dan gap
+
+Lihat [GAPS](../../GAPS.md#coyabag).

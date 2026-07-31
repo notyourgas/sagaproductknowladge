@@ -1,13 +1,24 @@
 # Panduan Memasukkan Knowledge ke ChatGPT
 
+## Tujuan
+
+Menjelaskan cara memberi knowledge repository kepada ChatGPT secara konsisten.
+
+## Konteks
+
+Repository bersifat public-safe; data restricted tidak boleh ikut diunggah.
+
 ## Cara paling sederhana
 
 1. Unduh repository ini sebagai ZIP dari GitHub.
 2. Ekstrak file.
 3. Masukkan file berikut ke Knowledge GPT/Project:
+   - `INDEX.md`;
    - `CHATGPT_MASTER_KNOWLEDGE.md`;
+   - `GAPS.md`;
    - `docs/SAGA_PRODUCT_PORTFOLIO.md`;
    - dokumen `products/<product>/PRODUCT.md` yang relevan;
+   - dokumen `products/<product>/DOSSIER.md` yang relevan;
    - changelog produk bila ChatGPT perlu mengetahui perubahan terbaru.
 4. Ganti file lama ketika repository mendapat update material.
 
@@ -19,7 +30,8 @@ Bedakan fakta production, local/staging, keputusan owner, dan rekomendasi.
 Jangan menganggap fitur planned atau implemented-not-deployed sudah live.
 Jika memberi ide fitur atau konten, jaga positioning dan batas produk pada
 dokumen terbaru. Jika ada konflik, prioritaskan tanggal update dan evidence yang
-paling baru.
+paling baru. Jangan mengisi NEEDS CONFIRMATION, ASSUMPTION, atau TODO dengan
+tebakan.
 ```
 
 ## Untuk brainstorming konten

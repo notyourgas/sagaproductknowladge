@@ -3,6 +3,17 @@
 Updated: 31 Juli 2026
 Evidence status: production + source verified
 
+## Tujuan dokumen
+
+Menjadi ringkasan fakta kanonik SagaBook. Detail product, experience, business,
+technical, sales, dan content berada di [DOSSIER](DOSSIER.md). Informasi yang
+belum pasti dicatat di [GAPS](../../GAPS.md#sagabook).
+
+## Konteks
+
+Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
+berubah tetap harus diverifikasi sebelum klaim eksternal.
+
 ## Ringkasan
 
 SagaBook adalah SaaS booking dan operating system untuk self-photo studio.
@@ -94,7 +105,8 @@ Trial dan subscription SagaBook tidak mengaktifkan SagaView.
 
 ## Status saat ini
 
-Status: `PRODUCTION_DEPLOYED`.
+Delivery: `PRODUCTION_DEPLOYED`. Activation: `PRODUCTION_ACTIVATED` untuk scope
+yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
 
 - Customer Booking Center aktif di production.
 - Source kanonik terbaru pada cut-off: commit

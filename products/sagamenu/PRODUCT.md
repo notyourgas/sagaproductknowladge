@@ -3,6 +3,17 @@
 Updated: 31 Juli 2026
 Evidence status: local pilot closure
 
+## Tujuan dokumen
+
+Menjadi ringkasan fakta kanonik SagaMenu. Detail lengkap berada di
+[DOSSIER](DOSSIER.md); keputusan terbuka berada di
+[GAPS](../../GAPS.md#sagamenu).
+
+## Konteks
+
+Informasi saat ini berasal dari pilot closure lokal; infrastructure production
+dan public runtime belum terverifikasi.
+
 ## Ringkasan
 
 SagaMenu adalah e-menu/e-katalog preview-first untuk resto, coffee shop, jasa,
