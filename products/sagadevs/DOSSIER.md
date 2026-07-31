@@ -7,10 +7,10 @@ Menjadi rujukan publik untuk positioning, experience, technical boundary, dan re
 ## Konteks dan status bukti
 
 - Updated: 31 Juli 2026.
-- Delivery: `STAGING_DEPLOYED` pada Vercel Preview.
-- Activation: `NOT_PRODUCTION_ACTIVATED`.
+- Delivery: `PRODUCTION_DEPLOYED` pada Vercel.
+- Activation: `PRODUCTION_ACTIVATED` pada `sagadevs.com`.
 - Business readiness: `NEEDS_CONFIRMATION`.
-- Evidence: corrected Vercel Preview `source-preserving-motion-polish-v3`, health, security headers, static/browser/accessibility gate, dan visual audit sembilan viewport. Release redesign sebelumnya ditolak.
+- Evidence: production release `source-preserving-hero-scale-v4`, health, security headers, static/browser/accessibility gate, visual audit sembilan viewport, protected Preview, promotion, dan public-domain browser regression. Release redesign sebelumnya ditolak.
 
 ## Overview produk
 
@@ -142,4 +142,4 @@ Jika calon pengguna meminta demo penuh, arahkan ke landing atau guided demo prod
 
 ## Keputusan dan gap
 
-`CONFIRMED`: SagaDevs adalah parent hub, product landing tetap terpisah, original style/features/font harus dipertahankan, koreksi hanya menyentuh hierarchy/typography/placement/motion/accessibility, dan Motion Polish v3 hanya berada pada Vercel Preview. Production belum berubah. `NEEDS CONFIRMATION`: visual UAT, promotion date, analytics production, portfolio publik, serta scope Super Admin.
+`CONFIRMED`: SagaDevs adalah parent hub, product landing tetap terpisah, original style/features/font dipertahankan, Hero Scale v4 memperbesar logo 3D 1,5× dan aktif di production `sagadevs.com`. `NEEDS CONFIRMATION`: analytics production, portfolio publik, serta scope Super Admin.

@@ -10,6 +10,13 @@ workflow, pricing, release, activation, atau blocker.
 Detail tetap berada pada changelog produk; entri docs-only berada di root
 [CHANGELOG](../CHANGELOG.md).
 
+## 2026-07-31 — SagaDevs Hero Scale v4 Production
+
+- Founder menyetujui Motion Polish v3 lalu meminta logo 3D diperbesar 1,5×, digeser lebih kiri, dan langsung dipromosikan ke domain utama.
+- Hero Scale v4 mempertahankan style, font, tujuh section, sembilan source capture, material metallic, motion, accessibility, dan product navigation sebelumnya.
+- Release berstatus `PRODUCTION_DEPLOYED` dan `PRODUCTION_ACTIVATED` pada `sagadevs.com`.
+- Local QA, visual sembilan viewport, protected Preview, public health/header check, dan production browser regression empat viewport lulus.
+
 ## 2026-07-31 — SagaDevs source-preserving Motion Polish v3 Preview
 
 - Hierarchy dan placement diperbaiki tanpa mengganti style, font, tujuh section, atau fitur visual source.

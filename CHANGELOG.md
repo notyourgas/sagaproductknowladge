@@ -12,6 +12,16 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-07-31
 
+### SagaDevs source-preserving Hero Scale v4 Production
+
+- Ringkasan: memperbesar model GLB hero tepat 1,5×, menggesernya lebih kiri, menambah kompensasi tablet portrait, dan mengaktifkan release di `sagadevs.com`.
+- Alasan: founder menyetujui keseluruhan Motion Polish v3 dan meminta penyesuaian terakhir logo 3D serta production deployment.
+- Produk/area terdampak: SagaDevs hero 3D, responsive positioning, release status, activation, portfolio, decision log, dan master knowledge.
+- Klasifikasi: `CONFIRMED`; delivery `PRODUCTION_DEPLOYED`; activation `PRODUCTION_ACTIVATED`.
+- Source: release `source-preserving-hero-scale-v4`, Preview `dpl_HR34sMyEpX6jnQ2u7YoBxHTqPewn`, production `dpl_v5J3eQeQdGcsdoFHvhpX1Rm1QiJQ`.
+- Commit knowledge: `main HEAD`; SHA immutable dilaporkan setelah push.
+- Gate: static, browser lokal empat viewport, accessibility desktop/mobile, visual sembilan viewport, Preview readiness, production health/headers, dan browser regression domain empat viewport lulus.
+
 ### SagaDevs source-preserving Motion Polish v3 Preview
 
 - Ringkasan: memperbaiki hierarchy/placement hero, collision judul produk, posisi logo 3D, motion product/stage/reveal, reduced-motion behavior, dan offscreen WebGL lifecycle.

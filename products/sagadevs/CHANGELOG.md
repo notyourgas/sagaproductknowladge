@@ -8,6 +8,14 @@ Mencatat perubahan material pada website induk dan showroom SagaDevs dengan prov
 
 Entri preview tidak otomatis berarti production atau domain activation.
 
+## 2026-07-31 — Source-preserving Hero Scale v4 Production
+
+- Release `source-preserving-hero-scale-v4` berstatus `PRODUCTION_DEPLOYED` dan `PRODUCTION_ACTIVATED` pada `sagadevs.com`.
+- Model GLB hero diperbesar tepat 1,5× dari Motion Polish v3 serta digeser lebih kiri pada desktop dan tablet landscape.
+- Tablet portrait memiliki kompensasi posisi internal; mobile mempertahankan komposisi utuh dan center sedikit ke kiri.
+- Static, browser lokal empat viewport, accessibility desktop/mobile, visual audit sembilan viewport, protected Preview, dan browser regression production empat viewport lulus.
+- Health production, root HTML, security headers, dan `noindex` terverifikasi; production deployment `dpl_v5J3eQeQdGcsdoFHvhpX1Rm1QiJQ` berstatus `Ready`.
+
 ## 2026-07-31 — Source-preserving Motion Polish v3 Preview
 
 - Release `source-preserving-motion-polish-v3` berstatus `STAGING_DEPLOYED` pada protected Vercel Preview.

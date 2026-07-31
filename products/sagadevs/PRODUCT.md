@@ -1,7 +1,7 @@
 # SagaDevs Product Hub Knowledge
 
 Updated: 31 Juli 2026
-Evidence status: Vercel Preview deployed
+Evidence status: Vercel production deployed
 
 ## Tujuan dokumen
 
@@ -9,7 +9,7 @@ Menjadi ringkasan kanonik website induk SagaDevs sebagai portfolio product hub d
 
 ## Konteks
 
-Release `source-preserving-motion-polish-v3` terverifikasi pada protected Vercel Preview. Domain production `sagadevs.com` belum dipromosikan ke release ini dan prototype tetap `noindex`. Release redesign `ui-ux-sprints-1-5-preview-v1` telah ditolak dan tidak lagi menjadi baseline visual.
+Release `source-preserving-hero-scale-v4` terverifikasi aktif pada production `sagadevs.com` setelah static, browser, accessibility, sembilan-viewport visual, protected Preview, dan public-domain gate lulus. Prototype tetap `noindex`. Release redesign `ui-ux-sprints-1-5-preview-v1` telah ditolak dan tidak lagi menjadi baseline visual.
 
 ## Ringkasan
 
@@ -35,16 +35,15 @@ SagaDevs public hub tidak memiliki login, pricing, payment, product admin, atau 
 
 ## Status saat ini
 
-Delivery: `STAGING_DEPLOYED` pada Vercel Preview.
+Delivery: `PRODUCTION_DEPLOYED` pada Vercel.
 
-Activation: `NOT_PRODUCTION_ACTIVATED`.
+Activation: `PRODUCTION_ACTIVATED` pada `sagadevs.com`.
 
 Business readiness: `NEEDS_CONFIRMATION`.
 
-Health, security headers, sembilan capture, tujuh section asli, responsive layout, navigation keyboard/mobile, dan noindex telah terverifikasi. Seluruh fitur visual source seperti hero 3D, command palette, system map, product showroom, workflow slider, dan mini-terminal tetap dipertahankan. Motion Polish v3 merapikan hierarchy dan CTA hero, menjaga judul produk bebas collision, menempatkan logo 3D tanpa crop atau benturan status rail, menambah motion product/stage yang restrained, serta menghentikan render WebGL saat hero tidak terlihat. Visual audit sembilan viewport dan accessibility gate desktop/mobile lulus. Vercel Preview menggunakan Deployment Protection. Production tidak berubah.
+Health, security headers, sembilan capture, tujuh section asli, responsive layout, navigation keyboard/mobile, dan noindex telah terverifikasi. Seluruh fitur visual source seperti hero 3D, command palette, system map, product showroom, workflow slider, dan mini-terminal tetap dipertahankan. Hero Scale v4 memperbesar model GLB tepat 1,5× dari Motion Polish v3, menggesernya lebih kiri, dan memberi kompensasi tablet portrait tanpa mengubah section lain. Browser regression production empat viewport lulus. Production deployment aktif adalah `dpl_v5J3eQeQdGcsdoFHvhpX1Rm1QiJQ`.
 
 ## Belum boleh diklaim
 
-- Jangan menyebut release koreksi ini sudah aktif di `sagadevs.com`.
 - Jangan menyebut public hub memiliki Super Admin, database lead, login, pricing, atau payment.
 - Jangan menyebut showroom sebagai live product demo; yang ditampilkan adalah capture prototype terkurasi.

@@ -209,7 +209,7 @@ keputusan pengganti.
 |---|---|
 | Tanggal | 2026-07-31 |
 | Topik | Batas perubahan visual SagaDevs |
-| Keputusan | Source, original style, keluarga font, komposisi tujuh section, dan fitur interaktif SagaDevs harus dipertahankan. Refinement hanya mencakup typography, hierarchy, spacing, density, placement, responsive behavior, restrained motion, performance, dan accessibility navigation. Arah redesign `ui-ux-sprints-1-5-preview-v1` ditolak; corrected Preview aktif adalah `source-preserving-motion-polish-v3`. Production tetap tidak berubah sampai visual UAT disetujui. |
+| Keputusan | Source, original style, keluarga font, komposisi tujuh section, dan fitur interaktif SagaDevs harus dipertahankan. Refinement hanya mencakup typography, hierarchy, spacing, density, placement, responsive behavior, restrained motion, performance, dan accessibility navigation. Arah redesign `ui-ux-sprints-1-5-preview-v1` ditolak. Setelah Motion Polish v3 disetujui, logo 3D diperbesar 1,5× dan digeser kiri sebagai `source-preserving-hero-scale-v4`, lalu dipromosikan ke production `sagadevs.com`. |
 | Alasan | Founder menginginkan website yang lebih rapi tanpa kehilangan karakter, fitur menarik, dan familiaritas source sebelumnya. |
 | Alternatif yang dipertimbangkan | Information architecture baru, font utama baru, penghapusan fitur lama, dan promotion langsung ke production. |
 | Dampak | Audit dan perubahan berikutnya wajib memakai source composition sebagai baseline; penghapusan atau redesign komponen memerlukan keputusan baru. |

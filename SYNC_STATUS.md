@@ -12,11 +12,11 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-07-31T22:25:00+07:00 |
+| Waktu pembaruan terakhir | 2026-07-31T22:44:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `9629f796623e8f916aca065ae856184003ba2d9f` |
-| Informasi terakhir disinkronkan | SagaDevs source-preserving Motion Polish v3 Preview: hierarchy, CTA placement, product collision guard, 3D safe positioning, restrained motion, accessibility, dan offscreen WebGL pause; production tidak berubah. |
+| Baseline sebelum pembaruan | `ebbcfe0caa4fb1c2c04c2948b687cb27cc44f070` |
+| Informasi terakhir disinkronkan | SagaDevs Hero Scale v4: logo 3D 1,5×, shifted-left responsive placement, dan production activation pada `sagadevs.com`. |
 | Status sinkronisasi | `UP TO DATE` setelah commit/push dan remote verification |
 | Konflik | Tidak ada; local `main` sama dengan `origin/main` sebelum edit. |
 | Error | Tidak ada error terbuka pada awal sinkronisasi. |
@@ -35,7 +35,7 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 ## Item menunggu konfirmasi
 
-Visual UAT founder dan promotion date ke `sagadevs.com` belum ditutup. Portfolio client, analytics production, serta scope dan security boundary Super Admin masih `NEEDS CONFIRMATION`. Motion Polish v3 Preview tetap `noindex` dan dilindungi; production tidak berubah. Status produk lain tidak diubah oleh sinkronisasi ini.
+Portfolio client, analytics production, serta scope dan security boundary Super Admin masih `NEEDS CONFIRMATION`. Hero Scale v4 aktif di production dan tetap `noindex`. Status produk lain tidak diubah oleh sinkronisasi ini.
 
 ## Cara verifikasi
 

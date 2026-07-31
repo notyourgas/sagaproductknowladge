@@ -47,18 +47,17 @@ payment ledger tetap terpisah per produk.
 
 ### SagaDevs
 
-Parent product hub dan jalur masuk jasa digital. Corrected Preview
-`source-preserving-motion-polish-v3` mempertahankan original style, font, tujuh
+Parent product hub dan jalur masuk jasa digital. Production release
+`source-preserving-hero-scale-v4` mempertahankan original style, font, tujuh
 section, fitur interaktif, serta sembilan capture source-grounded SagaBook,
 SagaView, dan Sagafin. Perubahan hanya pada typography, hierarchy, spacing,
 density, placement, responsive behavior, motion, accessibility, dan focus
-management. Motion Polish v3 merapikan CTA hero, mencegah collision title
-produk, menjaga logo 3D utuh dan terpisah dari status rail, menambah transisi
-restrained, serta menghentikan render WebGL ketika hero tidak terlihat. Hub tidak
+management. Hero Scale v4 memperbesar logo 3D tepat 1,5× dari Motion Polish v3,
+menggesernya lebih kiri, dan memberi kompensasi tablet portrait. Hub tidak
 memiliki login, pricing, payment, database lead, atau Super Admin aktif;
-placeholder source yang tersisa tersembunyi dan inert. Production belum berubah.
+placeholder source yang tersisa tersembunyi dan inert.
 
-Status: `STAGING_DEPLOYED` pada Vercel Preview; `sagadevs.com` production belum berubah dan
+Status: `PRODUCTION_DEPLOYED` dan `PRODUCTION_ACTIVATED` pada `sagadevs.com`;
 prototype tetap `noindex`.
 
 ### SagaBook
