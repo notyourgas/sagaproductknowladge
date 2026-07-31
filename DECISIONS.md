@@ -258,3 +258,17 @@ keputusan pengganti.
 | Pemberi keputusan | Andreas / founder |
 | Status | `CONFIRMED` untuk implementasi lokal; production S71 `NOT DEPLOYED`; production S72 `HOLD` |
 | Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaView Product](products/sagaview/PRODUCT.md), [Gaps](GAPS.md) |
+
+## DEC-018 — AOGTICVITY memakai festival motion system
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-01 |
+| Topik | Arah UI/UX dan motion AOGTICVITY |
+| Keputusan | Buat keseluruhan UI/UX AOGTICVITY lebih fun dan hidup menggunakan public animation library yang layak, tetapi pertahankan mobile-first canvas, Plus Jakarta Sans, Feather-style icons, serta fungsi yang sudah ditentukan. Motion harus menarik tanpa membuat hierarchy, font, icon, spacing, atau workflow operator kembali berantakan. |
+| Alasan | Founder menilai UI sebelumnya terlalu statis dan membutuhkan feedback/karakter yang lebih kuat setelah masalah hierarchy mobile dibereskan. |
+| Alternatif yang dipertimbangkan | CSS animation saja; animasi dekoratif berat; mengganti font/icon/design system; redesign desktop lebar. |
+| Dampak | Motion for React menjadi layer route/state/gesture/layout; canvas-confetti dibatasi ke success bernilai tinggi; reduced-motion wajib; visual QA mobile 400 px dan desktop mobile-canvas menjadi release gate. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED`; source dan public production release terverifikasi |
+| Dokumen terkait | [AOGTICVITY Product](products/aogticvity/PRODUCT.md), [AOGTICVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTICVITY Changelog](products/aogticvity/CHANGELOG.md), [Status Legend](docs/STATUS_LEGEND.md) |

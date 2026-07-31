@@ -1,6 +1,6 @@
 # AOGTICVITY Product Knowledge
 
-Updated: 31 Juli 2026
+Updated: 1 Agustus 2026
 Evidence status: public Vercel prototype + dark staging backend
 
 ## Tujuan dokumen
@@ -63,6 +63,8 @@ Public prototype saat ini: `https://olimpiade-kemerdekaan.vercel.app`.
 ## Arsitektur status
 
 - Frontend mobile-first.
+- Motion for React menangani page/state/gesture animation; canvas-confetti hanya
+  dipakai pada success bernilai tinggi dan dinonaktifkan saat reduced-motion.
 - Backend check-in, roster, session/security, dan event-master vertical slice
   dengan MySQL staging.
 - SQLite hanya fast test adapter.
@@ -78,6 +80,10 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `NOT_PRODUCTION_ACTIVATED`. Busines
 readiness: `BLOCKED`.
 
 - UI public/player/leader/admin/live aktif pada public Vercel prototype.
+- UI memakai festival motion system yang tetap mobile-first 430 px: Plus
+  Jakarta Sans, Feather-style icons, hierarchy/spacing yang dipadatkan,
+  animated navigation, state feedback, serta celebration terbatas yang
+  menghormati reduced-motion.
 - Master recap 2026 berisi 8 tim, 10 lomba, jadwal provisional, mekanisme,
   safety, equipment, dan assignment panitia.
 - Backend slice dan migration MySQL sudah lulus dark-staging smoke.

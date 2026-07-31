@@ -7,7 +7,7 @@ content AOGTICVITY tetap jelas.
 
 ## Konteks dan status bukti
 
-- Updated: 31 Juli 2026
+- Updated: 1 Agustus 2026
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED`
@@ -47,6 +47,9 @@ dan offline fallback.
 
 Public/player/leader/admin/live surfaces; master recap 8 tim/10 lomba; serta
 backend check-in, roster, session/security, dan event-master vertical slices.
+Public prototype memakai festival visual system yang tetap ringkas untuk
+operator: hierarchy mobile, colored metric cues, animated active navigation,
+modal/state motion, dan success celebration dengan reduced-motion fallback.
 
 ## Fitur MVP
 
@@ -112,7 +115,8 @@ terverifikasi.
 ## Technical overview
 
 Frontend mobile-first dengan lebar aplikasi maksimum 430 px, Plus Jakarta Sans,
-dan public/player/leader/admin/live surfaces. Backend memakai MySQL staging untuk
+Feather-style icons, Motion for React, canvas-confetti terbatas, dan
+public/player/leader/admin/live surfaces. Backend memakai MySQL staging untuk
 check-in, roster, managed session/security, serta event-master versioning.
 Public Vercel prototype memakai bundled master/local browser state; API MySQL
 tetap fail-closed. SQLite tetap fast test adapter.

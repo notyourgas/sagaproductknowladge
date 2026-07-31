@@ -8,6 +8,26 @@ Mencatat perubahan material AOGTICVITY/17an/Olimpiade.
 
 Nama lama dipertahankan sebagai provenance; status runtime harus eksplisit.
 
+## 2026-08-01 — Festival UI/UX dan motion production
+
+- `CONFIRMED`: founder meminta UI/UX lebih fun dengan animasi menarik dan
+  public library yang layak; implementasi mempertahankan mobile canvas 430 px,
+  Plus Jakarta Sans, Feather-style icons, serta seluruh fungsi yang sudah ada.
+- Motion for React menangani route/state/gesture/layout feedback; celebration
+  memakai canvas-confetti hanya untuk registrasi, publish tim, dan publish
+  hasil, dengan reduced-motion opt-out.
+- Hero memakai asset festival WebP; hierarchy, spacing, card depth, semantic
+  metric accent, CTA, modal, dan floating bottom navigation dirapikan pada
+  public/player/leader/admin/live surfaces.
+- Source `3d5d9d71cf5c1ff391a44b57d58bb5a39897664d`; production
+  `dpl_BSst9r7RJWBQHSmDzCjbsJe33W6V` pada
+  `https://olimpiade-kemerdekaan.vercel.app`.
+- Typecheck, 45 test, production build, dependency audit, visual QA, Preview,
+  public route/health smoke, dan runtime error/500 scan lulus.
+- Delivery tetap `PRODUCTION_DEPLOYED`; activation tetap
+  `NOT_PRODUCTION_ACTIVATED`; business readiness tetap `BLOCKED` karena release
+  UI/UX tidak mengaktifkan real auth atau MySQL multi-device.
+
 ## 2026-07-31 — Public Vercel prototype
 
 - Founder meminta seluruh perubahan yang belum live dideploy lebih dulu ke

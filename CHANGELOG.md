@@ -10,6 +10,27 @@ produk dan [Portfolio Changelog](changelog/PORTFOLIO_CHANGELOG.md).
 
 Root changelog tidak menggantikan changelog produk atau portfolio.
 
+## 2026-08-01
+
+### AOGTICVITY festival UI/UX production
+
+- Ringkasan: menyinkronkan redesign visual yang lebih fun dan motion system
+  public/player/leader/admin/live ke public Vercel.
+- Alasan: founder meminta public-library animation yang menarik tanpa mengubah
+  Plus Jakarta Sans, Feather-style icons, mobile canvas, atau fungsi aplikasi.
+- Produk/area terdampak: hierarchy, spacing, cards, hero asset, navigation,
+  route/state/modal feedback, success celebration, accessibility, dan release.
+- Klasifikasi: `CONFIRMED`; delivery `PRODUCTION_DEPLOYED`; activation
+  `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED`.
+- Source `3d5d9d71cf5c1ff391a44b57d58bb5a39897664d`; production
+  `dpl_BSst9r7RJWBQHSmDzCjbsJe33W6V`.
+- Production berubah: ya, public prototype; database, auth, domain custom, dan
+  Hostinger backend activation tidak berubah.
+- Gate: typecheck, 45 test, build, dependency audit, visual QA, Preview, public
+  smoke, dan runtime error/500 scan lulus.
+- Blocker: real auth, secure BFF/API activation, notification provider, custom
+  domain, dan physical multi-device UAT.
+
 ## 2026-07-31
 
 ### SagaBook Fonnte routing dan SagaBook/SagaView auto-trial candidate

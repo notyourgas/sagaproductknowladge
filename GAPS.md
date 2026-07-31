@@ -123,6 +123,9 @@ ketika keputusan atau release baru menutup gap.
 
 ### AOGTICVITY
 
+- Festival UI/UX production 1 Agustus 2026 tidak menutup blocker activation;
+  perbaikannya berada pada visual hierarchy, responsive mobile canvas, motion,
+  feedback, dan asset presentation.
 - `NEEDS CONFIRMATION`: model bisnis produk (event internal, jasa per event, atau
   SaaS).
 - `NEEDS CONFIRMATION`: auth/IdP production, secure Vercel-to-Hostinger BFF,

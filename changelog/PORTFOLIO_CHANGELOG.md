@@ -10,6 +10,21 @@ workflow, pricing, release, activation, atau blocker.
 Detail tetap berada pada changelog produk; entri docs-only berada di root
 [CHANGELOG](../CHANGELOG.md).
 
+## 2026-08-01 — AOGTICVITY festival UI/UX production
+
+- Public/player/leader/admin/live AOGTICVITY kini memakai hierarchy mobile 430
+  px yang lebih rapi, asset festival, semantic color cues, animated navigation,
+  state feedback, modal spring, dan success celebration yang menghormati
+  reduced-motion.
+- Source `3d5d9d71cf5c1ff391a44b57d58bb5a39897664d` aktif pada production
+  `dpl_BSst9r7RJWBQHSmDzCjbsJe33W6V` di
+  `https://olimpiade-kemerdekaan.vercel.app`.
+- Typecheck, 45 test, build, dependency audit, visual QA, route/health smoke,
+  serta runtime error/500 scan lulus.
+- Delivery `PRODUCTION_DEPLOYED`; activation `NOT_PRODUCTION_ACTIVATED` dan
+  business readiness `BLOCKED` karena local state/demo auth bukan bukti
+  persistence/auth production.
+
 ## 2026-07-31 — SagaBook Fonnte routing dan SagaBook/SagaView auto-trial candidate
 
 - SagaBook memiliki candidate routing Fonnte tenant-scoped: SagaDev-managed,

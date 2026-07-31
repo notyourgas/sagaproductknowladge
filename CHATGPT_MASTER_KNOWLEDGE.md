@@ -194,7 +194,10 @@ Business readiness: `BLOCKED`. Public prototype aktif di
 `https://olimpiade-kemerdekaan.vercel.app`; target custom domain belum
 diaktifkan. Auth/IdP produksi, secure Hostinger BFF, frontend API activation,
 notification provider, dan physical multi-device UAT belum selesai. Public UI
-masih memakai bundled master/local state.
+masih memakai bundled master/local state. Sejak release 1 Agustus 2026, surface
+tersebut memakai festival UI/UX mobile 430 px dengan Plus Jakarta Sans,
+Feather-style icons, Motion for React, restrained celebration, dan
+reduced-motion fallback.
 
 ### SagaOPS
 
