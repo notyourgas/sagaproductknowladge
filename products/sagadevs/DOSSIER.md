@@ -10,7 +10,7 @@ Menjadi rujukan publik untuk positioning, experience, technical boundary, dan re
 - Delivery: `STAGING_DEPLOYED` pada Vercel Preview.
 - Activation: `NOT_PRODUCTION_ACTIVATED`.
 - Business readiness: `NEEDS_CONFIRMATION`.
-- Evidence: Vercel Preview `ui-ux-sprints-1-5-preview-v1`, health, security headers, static/browser gate, dan visual audit delapan viewport.
+- Evidence: corrected Vercel Preview `source-preserving-typography-v1`, health, security headers, static/browser gate, dan visual audit delapan viewport. Release redesign sebelumnya ditolak.
 
 ## Overview produk
 
@@ -43,14 +43,14 @@ Satu hub yang menunjukkan bukti workflow asli dan meneruskan pengunjung ke produ
 
 ## Fitur utama
 
-- Product disclosure pada header.
-- Showroom SagaBook, SagaView, dan Sagafin.
-- Services, process, proof, dan multi-select project brief.
+- Original seven-section composition, numbered navigation, dan section rail.
+- Hero 3D, command palette, service cards, interactive system map, process cards, workflow slider, mini-terminal, dan contact selector.
+- Showroom SagaBook, SagaView, dan Sagafin dengan sembilan source-grounded capture.
 - Responsive navigation dan accessible keyboard controls.
 
 ## Fitur MVP
 
-Static public landing, sembilan preview image, link landing produk, WhatsApp conversion, health endpoint, security headers, dan noindex gate.
+Static public landing, sembilan preview image, link landing produk, WhatsApp conversion, health endpoint, security headers, dan noindex gate. Placeholder auth/pricing source tetap tersembunyi dan inert; bukan fitur aktif.
 
 ## Roadmap
 
@@ -62,7 +62,7 @@ Pengunjung memahami SagaDevs, memilih produk atau layanan, meninjau bukti, lalu 
 
 ## User flow
 
-`Hero -> Products -> source capture -> product landing` atau `Hero -> Services -> Process -> Contact -> WhatsApp`.
+`Hero -> Services/System Map -> Product Showroom -> source capture -> product landing` atau `Hero -> Process/Workflow -> Contact -> WhatsApp`.
 
 ## Business model
 
@@ -96,7 +96,7 @@ Pesan utama menekankan digital systems that make businesses move serta bukti pro
 
 ## Technical overview
 
-Static HTML, CSS, JavaScript, local font, JSON content manifest, local product images, dan Three.js hero di Vercel.
+Static HTML, CSS, JavaScript, local font, JSON content manifest, local product images, dan Three.js hero di Vercel. Typography mempertahankan Helvetica Neue, Xanh Saga, dan IBM Plex Mono Saga; refinement ditempatkan sebagai layer CSS terisolasi.
 
 ## Integrasi
 
@@ -140,4 +140,4 @@ Jika calon pengguna meminta demo penuh, arahkan ke landing atau guided demo prod
 
 ## Keputusan dan gap
 
-`CONFIRMED`: SagaDevs adalah parent hub, product landing tetap terpisah, release sekarang hanya Vercel Preview, dan production belum berubah. `NEEDS CONFIRMATION`: promotion date, analytics production, portfolio publik, serta scope Super Admin.
+`CONFIRMED`: SagaDevs adalah parent hub, product landing tetap terpisah, original style/features/font harus dipertahankan, koreksi hanya menyentuh hierarchy/typography/placement, release sekarang hanya Vercel Preview, dan production belum berubah. `NEEDS CONFIRMATION`: visual UAT, promotion date, analytics production, portfolio publik, serta scope Super Admin.

@@ -47,11 +47,13 @@ payment ledger tetap terpisah per produk.
 
 ### SagaDevs
 
-Parent product hub dan jalur masuk jasa digital. Release
-`ui-ux-sprints-1-5-preview-v1` menampilkan SagaBook, SagaView, dan Sagafin
-melalui sembilan capture source-grounded, direct product landing, layanan,
-proses, proof, dan WhatsApp brief. Hub tidak memiliki login, pricing, payment,
-database lead, atau Super Admin publik.
+Parent product hub dan jalur masuk jasa digital. Corrected Preview
+`source-preserving-typography-v1` mempertahankan original style, font, tujuh
+section, fitur interaktif, serta sembilan capture source-grounded SagaBook,
+SagaView, dan Sagafin. Perubahan hanya pada typography, hierarchy, spacing,
+density, placement, responsive behavior, dan focus management. Hub tidak
+memiliki login, pricing, payment, database lead, atau Super Admin aktif;
+placeholder source yang tersisa tersembunyi dan inert. Production belum berubah.
 
 Status: `STAGING_DEPLOYED` pada Vercel Preview; `sagadevs.com` production belum berubah dan
 prototype tetap `noindex`.

@@ -146,7 +146,7 @@ ketika keputusan atau release baru menutup gap.
 
 ### SagaDevs
 
-- `NEEDS CONFIRMATION`: tanggal promotion release UI/UX dari Preview ke `sagadevs.com`.
+- `NEEDS CONFIRMATION`: visual UAT dan tanggal promotion corrected source-preserving Preview ke `sagadevs.com`.
 - `NEEDS CONFIRMATION`: portfolio client yang boleh dipublikasikan dan evidence tiap claim.
 - `NEEDS CONFIRMATION`: analytics production, data retention, dan KPI conversion.
 - `NEEDS CONFIRMATION`: scope, auth, permission, dan data boundary Super Admin terpisah.

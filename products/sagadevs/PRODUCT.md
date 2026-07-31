@@ -9,7 +9,7 @@ Menjadi ringkasan kanonik website induk SagaDevs sebagai portfolio product hub d
 
 ## Konteks
 
-Release `ui-ux-sprints-1-5-preview-v1` terverifikasi pada Vercel Preview. Domain production `sagadevs.com` belum dipromosikan ke release ini dan prototype tetap `noindex`.
+Release koreksi `source-preserving-typography-v1` terverifikasi pada protected Vercel Preview. Domain production `sagadevs.com` belum dipromosikan ke release ini dan prototype tetap `noindex`. Release redesign `ui-ux-sprints-1-5-preview-v1` telah ditolak dan tidak lagi menjadi baseline visual.
 
 ## Ringkasan
 
@@ -31,7 +31,7 @@ Showroom menggunakan sembilan capture source-grounded, masing-masing tiga per pr
 
 ## Batas produk
 
-SagaDevs public hub tidak mencakup login, pricing lokal, payment, product admin, atau operational database. Super Admin masa depan harus menjadi surface terlindungi dan terpisah dari landing publik.
+SagaDevs public hub tidak memiliki login, pricing, payment, product admin, atau operational database yang aktif. Placeholder auth/pricing dari source dipertahankan dalam keadaan tersembunyi dan inert agar tidak dapat dianggap sebagai fitur produksi. Super Admin masa depan harus menjadi surface terlindungi dan terpisah dari landing publik.
 
 ## Status saat ini
 
@@ -41,10 +41,10 @@ Activation: `NOT_PRODUCTION_ACTIVATED`.
 
 Business readiness: `NEEDS_CONFIRMATION`.
 
-Health, security headers, sembilan capture, responsive layout, navigation keyboard/mobile, dan noindex telah terverifikasi. Vercel Preview menggunakan Deployment Protection. Production tidak berubah.
+Health, security headers, sembilan capture, tujuh section asli, responsive layout, navigation keyboard/mobile, dan noindex telah terverifikasi. Seluruh fitur visual source seperti hero 3D, command palette, system map, product showroom, workflow slider, dan mini-terminal tetap dipertahankan. Vercel Preview menggunakan Deployment Protection. Production tidak berubah.
 
 ## Belum boleh diklaim
 
-- Jangan menyebut UI/UX release ini sudah aktif di `sagadevs.com`.
+- Jangan menyebut release koreksi ini sudah aktif di `sagadevs.com`.
 - Jangan menyebut public hub memiliki Super Admin, database lead, login, pricing, atau payment.
 - Jangan menyebut showroom sebagai live product demo; yang ditampilkan adalah capture prototype terkurasi.

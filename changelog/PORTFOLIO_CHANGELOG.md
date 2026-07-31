@@ -10,13 +10,22 @@ workflow, pricing, release, activation, atau blocker.
 Detail tetap berada pada changelog produk; entri docs-only berada di root
 [CHANGELOG](../CHANGELOG.md).
 
-## 2026-07-31 — SagaDevs UI/UX Sprint 1–5 Preview
+## 2026-07-31 — SagaDevs source-preserving typography correction Preview
+
+- Source composition, original font families, tujuh section, dan seluruh fitur visual/interaktif lama dipertahankan.
+- Refinement dibatasi pada typography, hierarchy, spacing, density, placement, responsive behavior, serta focus management menu dan command palette.
+- Showroom tetap memakai sembilan capture source-grounded SagaBook, SagaView, dan Sagafin.
+- Release `source-preserving-typography-v1` berstatus `STAGING_DEPLOYED` pada protected Vercel Preview; production `sagadevs.com` tidak berubah dan noindex tetap aktif.
+- Static, browser, visual delapan viewport, health, security, dan public-safety gate lulus.
+
+## 2026-07-31 — SagaDevs UI/UX Sprint 1–5 Preview (DEPRECATED)
 
 - Parent hub dipadatkan menjadi Hero, Products, Services, Process, Proof, dan Contact.
 - Showroom mempertahankan sembilan capture source-grounded untuk SagaBook, SagaView, dan Sagafin serta direct landing masing-masing.
 - Typography, navigation, hierarchy, responsive layout, motion, accessibility, security headers, dan WhatsApp brief diperbaiki.
 - Release `ui-ux-sprints-1-5-preview-v1` berstatus `STAGING_DEPLOYED` pada Vercel Preview; production `sagadevs.com` tidak berubah dan noindex tetap aktif.
 - Static, browser, visual delapan viewport, health, security, dan public-safety gate lulus.
+- Arah visual ditolak karena mengubah source terlalu signifikan dan bukan lagi baseline aktif.
 
 ## 2026-07-31 — SagaView UI/UX shell refinement production
 

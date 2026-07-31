@@ -12,11 +12,11 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-07-31T21:00:00+07:00 |
+| Waktu pembaruan terakhir | 2026-07-31T23:00:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `cdd603198755d3b1f919450066e3fe3c70f6ce1b` |
-| Informasi terakhir disinkronkan | SagaDevs parent product hub UI/UX Sprint 1–5 pada protected Vercel Preview; production tidak berubah. |
+| Baseline sebelum pembaruan | `49df78a6ab22e1dd9809fa750f9c3424222ae84b` |
+| Informasi terakhir disinkronkan | SagaDevs corrected source-preserving typography Preview; redesign sebelumnya deprecated; production tidak berubah. |
 | Status sinkronisasi | `UP TO DATE` setelah commit/push dan remote verification |
 | Konflik | Tidak ada; local `main` sama dengan `origin/main` sebelum edit. |
 | Error | Tidak ada error terbuka pada awal sinkronisasi. |
@@ -26,8 +26,6 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `products/sagadevs/PRODUCT.md`
 - `products/sagadevs/DOSSIER.md`
 - `products/sagadevs/CHANGELOG.md`
-- `README.md`
-- `INDEX.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `docs/SAGA_PRODUCT_PORTFOLIO.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
@@ -35,11 +33,10 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `DECISIONS.md`
 - `GAPS.md`
 - `SYNC_STATUS.md`
-- `scripts/validate-knowledge.ps1`
 
 ## Item menunggu konfirmasi
 
-Visual UAT founder dan promotion date ke `sagadevs.com` belum ditutup. Portfolio client, analytics production, serta scope dan security boundary Super Admin masih `NEEDS CONFIRMATION`. Preview tetap `noindex` dan dilindungi; production tidak berubah. Status produk lain tidak diubah oleh sinkronisasi ini.
+Visual UAT founder dan promotion date ke `sagadevs.com` belum ditutup. Portfolio client, analytics production, serta scope dan security boundary Super Admin masih `NEEDS CONFIRMATION`. Corrected Preview tetap `noindex` dan dilindungi; production tidak berubah. Status produk lain tidak diubah oleh sinkronisasi ini.
 
 ## Cara verifikasi
 
