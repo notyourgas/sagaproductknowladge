@@ -76,7 +76,7 @@ permissioned dan auditable.
 
 ## Pricing
 
-`OWNER DECISION`: belum tersedia.
+`NEEDS CONFIRMATION`: belum tersedia.
 
 ## Kompetitor
 
@@ -85,7 +85,7 @@ builder, marketplace listing, dan website builder.
 
 ## Diferensiasi produk
 
-`RECOMMENDATION`: preview-first, immutable snapshot, tablet+mobile consistency,
+`PROPOSAL`: preview-first, immutable snapshot, tablet+mobile consistency,
 restore, dan accessible media failure.
 
 ## Brand positioning
@@ -125,7 +125,7 @@ belum diverifikasi eksternal.
 
 ## KPI dan success metrics
 
-`RECOMMENDATION`: time-to-publish, preview-to-publish, QR open, offering view,
+`PROPOSAL`: time-to-publish, preview-to-publish, QR open, offering view,
 media failure/recovery, restore frequency, dan retention. Target `NEEDS
 CONFIRMATION`.
 
@@ -136,7 +136,7 @@ vs SagaBio.
 
 ## Contoh caption
 
-`RECOMMENDATION`: “Jangan biarkan customer menjadi orang pertama yang menemukan
+`PROPOSAL`: “Jangan biarkan customer menjadi orang pertama yang menemukan
 menu salah. Preview, publish, dan restore dari satu snapshot yang sama.”
 
 ## Ide campaign

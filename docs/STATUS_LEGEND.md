@@ -43,14 +43,16 @@ menggunakan repository ini.
 
 ## Status bukti
 
-- `CONFIRMED`: dibuktikan dari source/release/runtime aktual.
-- `OWNER DECISION`: keputusan bisnis yang sudah disetujui Andreas.
-- `RECOMMENDATION`: belum menjadi keputusan produk.
-- `HISTORICAL`: benar pada masa lalu, tetapi tidak boleh dianggap status live.
-- `SUPERSEDED`: sudah diganti keputusan atau kontrak baru.
-- `ASSUMPTION`: dugaan kerja sementara, bukan fakta.
-- `NEEDS CONFIRMATION`: informasi belum cukup untuk klaim.
-- `TODO`: pekerjaan belum selesai.
+- `CONFIRMED`: keputusan eksplisit founder atau fakta yang dibuktikan dengan
+  provenance yang sesuai.
+- `ASSUMPTION`: interpretasi atau dugaan kerja sementara.
+- `PROPOSAL`: rekomendasi yang belum diterima sebagai keputusan.
+- `NEEDS CONFIRMATION`: informasi belum cukup jelas atau belum memiliki
+  keputusan/evidence.
+- `DEPRECATED`: informasi lama yang tidak lagi berlaku dan dipertahankan untuk
+  riwayat.
+
+`TODO` adalah penanda pekerjaan yang belum selesai, bukan status bukti.
 
 ## Aturan klaim
 

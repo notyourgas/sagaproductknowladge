@@ -30,7 +30,7 @@ Setiap source product tetap memiliki token dan komponen kanoniknya sendiri.
 
 - `NEEDS CONFIRMATION`: token warna, type scale, spacing, radius, shadow, dan
   icon lintas keluarga produk.
-- `RECOMMENDATION`: setiap repo memiliki token kanonik dan mapping high-contrast.
+- `PROPOSAL`: setiap repo memiliki token kanonik dan mapping high-contrast.
 
 ## Review
 

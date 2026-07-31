@@ -14,13 +14,13 @@ belum termasuk fakta.
 
 | Segmen | Produk relevan | Status |
 |---|---|---|
-| Self-photo/photobox studio | SagaBook, SagaView | `FACT` |
-| F&B dan bisnis lokal | SagaBio, SagaMenu | `FACT` sebagai target; pilot belum membuktikan market fit. |
-| Pengguna finance personal Indonesia | SagaFin | `FACT` sebagai target; segment economics belum terverifikasi. |
-| Fashion/streetwear customer | COYABAG | `FACT` |
-| Komunitas dan operator event | AOGTICVITY | `FACT` sebagai target. |
-| Coffeeshop operator | SagaOPS | `FACT` sebagai target. |
-| Operator internal SagaDev | Saga Platform, Saga AI | `FACT` |
+| Self-photo/photobox studio | SagaBook, SagaView | `CONFIRMED` |
+| F&B dan bisnis lokal | SagaBio, SagaMenu | `CONFIRMED` sebagai target; pilot belum membuktikan market fit. |
+| Pengguna finance personal Indonesia | SagaFin | `CONFIRMED` sebagai target; segment economics belum terverifikasi. |
+| Fashion/streetwear customer | COYABAG | `CONFIRMED` |
+| Komunitas dan operator event | AOGTICVITY | `CONFIRMED` sebagai target. |
+| Coffeeshop operator | SagaOPS | `CONFIRMED` sebagai target. |
+| Operator internal SagaDev | Saga Platform, Saga AI | `CONFIRMED` |
 
 ## Kebutuhan validasi
 

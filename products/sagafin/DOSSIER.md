@@ -73,12 +73,12 @@ spending aktual; adjustment menjelaskan selisih.
 
 ## Business model
 
-`OWNER DECISION`: belum final. Freemium/subscription dan OCR quota hanya
+`NEEDS CONFIRMATION`: belum final. Freemium/subscription dan OCR quota hanya
 rekomendasi historis sampai dikonfirmasi.
 
 ## Pricing
 
-`OWNER DECISION`: belum tersedia.
+`NEEDS CONFIRMATION`: belum tersedia.
 
 ## Kompetitor
 
@@ -87,7 +87,7 @@ bank-connected tracker, budgeting app, spreadsheet, dan e-wallet summary.
 
 ## Diferensiasi produk
 
-`RECOMMENDATION`: semantics Indonesia, Review-first OCR/import, transfer/tarik
+`PROPOSAL`: semantics Indonesia, Review-first OCR/import, transfer/tarik
 tunai yang benar, salary-cycle budget, dan AI as assistant.
 
 ## Brand positioning
@@ -129,7 +129,7 @@ stale production evidence adalah risiko utama.
 
 ## KPI dan success metrics
 
-`RECOMMENDATION`: onboarding completion, first approved transaction, review
+`PROPOSAL`: onboarding completion, first approved transaction, review
 accuracy, correction rate, weekly active review, budget adherence, export, dan
 retention. Target `NEEDS CONFIRMATION`.
 
@@ -140,7 +140,7 @@ business workspace.
 
 ## Contoh caption
 
-`RECOMMENDATION`: “Tarik tunai belum tentu pengeluaran. SagaFin memisahkan
+`PROPOSAL`: “Tarik tunai belum tentu pengeluaran. SagaFin memisahkan
 perpindahan uang dari uang yang benar-benar dipakai.”
 
 ## Ide campaign

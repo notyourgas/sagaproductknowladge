@@ -41,6 +41,7 @@
 ## Objection handling
 ## Keputusan dan gap
 
-Gunakan `FACT`, `OWNER DECISION`, `ASSUMPTION`, `RECOMMENDATION`,
-`NEEDS CONFIRMATION`, atau `TODO` sesuai
+Gunakan `CONFIRMED`, `ASSUMPTION`, `PROPOSAL`, `NEEDS CONFIRMATION`, atau
+`DEPRECATED` untuk klasifikasi informasi. Gunakan `TODO` hanya untuk tindakan
+yang belum selesai. Ikuti
 [Fact Classification](../docs/governance/FACT_CLASSIFICATION.md).

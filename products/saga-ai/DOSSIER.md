@@ -72,11 +72,11 @@ response/refusal → feedback/audit.
 
 ## Business model
 
-`OWNER DECISION`: internal capability, bundled add-on, atau standalone product.
+`NEEDS CONFIRMATION`: internal capability, bundled add-on, atau standalone product.
 
 ## Pricing
 
-`OWNER DECISION`: belum tersedia.
+`NEEDS CONFIRMATION`: belum tersedia.
 
 ## Kompetitor
 
@@ -128,7 +128,7 @@ unsafe tool action, provider retention, and unmeasured answer quality.
 
 ## KPI dan success metrics
 
-`RECOMMENDATION`: grounded accuracy, citation validity, refusal precision,
+`PROPOSAL`: grounded accuracy, citation validity, refusal precision,
 stale-answer rate, support deflection, escalation quality, latency, and cost.
 Target `NEEDS CONFIRMATION`.
 
@@ -139,7 +139,7 @@ refusal.
 
 ## Contoh caption
 
-`RECOMMENDATION`: “AI yang terdengar yakin belum tentu benar. Saga AI dirancang
+`PROPOSAL`: “AI yang terdengar yakin belum tentu benar. Saga AI dirancang
 untuk menunjukkan sumber, status, dan batas jawabannya.”
 
 ## Ide campaign

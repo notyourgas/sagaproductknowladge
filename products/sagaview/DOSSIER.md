@@ -16,7 +16,7 @@ SagaView tanpa mencampur fitur live dengan release candidate.
 
 ## Overview produk
 
-`FACT`: SaaS local-first untuk workflow self-photo studio setelah sesi.
+`CONFIRMED`: SaaS local-first untuk workflow self-photo studio setelah sesi.
 
 ## Masalah yang diselesaikan
 
@@ -55,7 +55,7 @@ editor/review, export/print, trial/plan candidate, dan billing candidate.
 
 ## Fitur MVP
 
-`FACT`: core Studio workflow, output 4R, serta operator-controlled session
+`CONFIRMED`: core Studio workflow, output 4R, serta operator-controlled session
 completion/privacy handoff live. Backend trial, subscription, payment callback,
 Owner Console context fix, serta public self-service adalah candidate yang
 belum live.
@@ -88,7 +88,7 @@ transaction fee: `NEEDS CONFIRMATION`.
 
 ## Pricing
 
-`OWNER DECISION`: Growth Rp200.000 dan Pro Rp500.000 per bulan. Bundle ditunda.
+`CONFIRMED`: Growth Rp200.000 dan Pro Rp500.000 per bulan. Bundle ditunda.
 Limit lengkap per paket: `NEEDS CONFIRMATION`.
 
 ## Kompetitor
@@ -99,7 +99,7 @@ selection.
 
 ## Diferensiasi produk
 
-`RECOMMENDATION`: local-photo boundary, 50/200/500 workflow, exact 4R output,
+`PROPOSAL`: local-photo boundary, 50/200/500 workflow, exact 4R output,
 offline recovery, dan pemisahan Owner vs device-bound Studio.
 
 ## Brand positioning
@@ -146,7 +146,7 @@ output pada UI customer.
 
 ## KPI dan success metrics
 
-`RECOMMENDATION`: activation success, session completion, import duration,
+`PROPOSAL`: activation success, session completion, import duration,
 recovery rate, output success, support contact, trial-to-paid, dan studio
 retention. Target: `NEEDS CONFIRMATION`.
 
@@ -157,12 +157,12 @@ offline recovery.
 
 ## Contoh caption
 
-`RECOMMENDATION`: “Dari 200 foto ke hasil 4R tanpa mencatat nomor file.
+`PROPOSAL`: “Dari 200 foto ke hasil 4R tanpa mencatat nomor file.
 SagaView menjaga selection, framing, dan output dalam satu alur local-first.”
 
 ## Ide campaign
 
-`RECOMMENDATION`: “200 Photos, One Session” sebagai controlled demo dengan foto
+`PROPOSAL`: “200 Photos, One Session” sebagai controlled demo dengan foto
 sintetis/non-PII dan hasil physical UAT nyata.
 
 ## Sales talking points

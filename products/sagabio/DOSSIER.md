@@ -76,7 +76,7 @@ dan domain belum diputuskan.
 
 ## Pricing
 
-`OWNER DECISION`: belum tersedia.
+`NEEDS CONFIRMATION`: belum tersedia.
 
 ## Kompetitor
 
@@ -85,7 +85,7 @@ builders, QR landing pages, dan bio tools platform sosial.
 
 ## Diferensiasi produk
 
-`RECOMMENDATION`: customer journey berbasis kategori bisnis, guided editor,
+`PROPOSAL`: customer journey berbasis kategori bisnis, guided editor,
 done-for-you onboarding, dan action analytics.
 
 ## Brand positioning
@@ -125,7 +125,7 @@ ownership harus ditutup sebelum production.
 
 ## KPI dan success metrics
 
-`RECOMMENDATION`: publish completion, CTA click rate, time-to-publish, help
+`PROPOSAL`: publish completion, CTA click rate, time-to-publish, help
 request, repeat update, dan paid conversion. Target: `NEEDS CONFIRMATION`.
 
 ## Ide konten pemasaran
@@ -135,7 +135,7 @@ SagaMenu.
 
 ## Contoh caption
 
-`RECOMMENDATION`: “Link di bio bukan tempat menumpuk tombol. Susun jalur dari
+`PROPOSAL`: “Link di bio bukan tempat menumpuk tombol. Susun jalur dari
 ‘baru lihat’ sampai ‘siap chat, datang, atau buka menu’.”
 
 ## Ide campaign

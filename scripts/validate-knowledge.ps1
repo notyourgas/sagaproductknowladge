@@ -23,6 +23,8 @@ $requiredFiles = @(
     'INDEX.md',
     'GAPS.md',
     'CHANGELOG.md',
+    'DECISIONS.md',
+    'SYNC_STATUS.md',
     'CHATGPT_MASTER_KNOWLEDGE.md',
     'KNOWLEDGE_INDEX.md',
     'docs/SAGA_PRODUCT_PORTFOLIO.md',
@@ -50,7 +52,9 @@ $requiredFiles = @(
     'docs/technical/CODING_CONVENTIONS.md',
     'changelog/PORTFOLIO_CHANGELOG.md',
     'templates/PRODUCT_UPDATE_TEMPLATE.md',
-    'templates/PRODUCT_DOSSIER_TEMPLATE.md'
+    'templates/PRODUCT_DOSSIER_TEMPLATE.md',
+    'templates/DECISION_TEMPLATE.md',
+    'templates/SYNC_REPORT_TEMPLATE.md'
 )
 
 $requiredDossierHeadings = @(
@@ -119,6 +123,61 @@ foreach ($product in $products) {
                 }
             }
         }
+    }
+}
+
+$decisionsPath = Join-Path $repo 'DECISIONS.md'
+if (Test-Path -LiteralPath $decisionsPath -PathType Leaf) {
+    $decisions = Get-Content -LiteralPath $decisionsPath -Raw -Encoding utf8
+    $decisionIds = [regex]::Matches($decisions, '(?m)^## (DEC-\d{3})\b') |
+        ForEach-Object { $_.Groups[1].Value }
+
+    if ($decisionIds.Count -lt 1) {
+        $errors.Add('DECISIONS.md must contain at least one DEC-### entry')
+    }
+
+    $duplicateDecisionIds = $decisionIds | Group-Object |
+        Where-Object { $_.Count -gt 1 }
+    foreach ($duplicate in $duplicateDecisionIds) {
+        $errors.Add("Duplicate decision ID: $($duplicate.Name)")
+    }
+
+    foreach ($field in @(
+            'Tanggal',
+            'Topik',
+            'Keputusan',
+            'Alasan',
+            'Alternatif yang dipertimbangkan',
+            'Dampak',
+            'Pemberi keputusan',
+            'Status',
+            'Dokumen terkait'
+        )) {
+        if ($decisions -notmatch "(?m)^\|\s*$([regex]::Escape($field))\s*\|") {
+            $errors.Add("DECISIONS.md missing decision field: $field")
+        }
+    }
+}
+
+$syncStatusPath = Join-Path $repo 'SYNC_STATUS.md'
+if (Test-Path -LiteralPath $syncStatusPath -PathType Leaf) {
+    $syncStatus = Get-Content -LiteralPath $syncStatusPath -Raw -Encoding utf8
+    foreach ($field in @(
+            'Waktu pembaruan terakhir',
+            'Branch aktif',
+            'Commit SHA terbaru',
+            'Informasi terakhir disinkronkan',
+            'Status sinkronisasi',
+            'Konflik',
+            'Error'
+        )) {
+        if ($syncStatus -notmatch "(?m)^\|\s*$([regex]::Escape($field))\s*\|") {
+            $errors.Add("SYNC_STATUS.md missing sync field: $field")
+        }
+    }
+
+    if ($syncStatus -notmatch '`(?:UP TO DATE|PENDING CONFIRMATION|CONFLICT DETECTED|UPDATE FAILED)`') {
+        $errors.Add('SYNC_STATUS.md missing an allowed synchronization status')
     }
 }
 
@@ -191,6 +250,30 @@ foreach ($file in $markdownFiles) {
 $joined = ($markdownFiles | ForEach-Object {
         Get-Content -LiteralPath $_.FullName -Raw -Encoding utf8
     }) -join "`n"
+
+$legacyClassifications = @(
+    'FACT',
+    'OWNER DECISION',
+    'RECOMMENDATION',
+    'SUPERSEDED',
+    'HISTORICAL'
+)
+
+foreach ($legacy in $legacyClassifications) {
+    if ($joined -match ('`' + [regex]::Escape($legacy) + '`')) {
+        $errors.Add("Legacy information classification remains: $legacy")
+    }
+}
+
+$classificationPath = Join-Path $repo 'docs/governance/FACT_CLASSIFICATION.md'
+if (Test-Path -LiteralPath $classificationPath -PathType Leaf) {
+    $classification = Get-Content -LiteralPath $classificationPath -Raw -Encoding utf8
+    foreach ($label in @('CONFIRMED', 'ASSUMPTION', 'PROPOSAL', 'NEEDS CONFIRMATION', 'DEPRECATED')) {
+        if ($classification -notmatch ('`' + [regex]::Escape($label) + '`')) {
+            $errors.Add("Canonical classification missing: $label")
+        }
+    }
+}
 
 $forbiddenPatterns = @{
     'OpenAI-style key' = 'sk-[A-Za-z0-9_-]{20,}'

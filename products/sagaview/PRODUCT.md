@@ -112,7 +112,7 @@ kumulatif dipromosikan.
 
 ## Session completion dan privacy handoff
 
-`FACT` — production pada release Studio terbaru:
+`CONFIRMED` — production pada release Studio terbaru:
 
 - customer hanya dapat memanggil operator, bukan mereset sesi sendiri;
 - operator wajib memverifikasi output dan handoff/antre cetak;

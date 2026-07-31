@@ -10,7 +10,7 @@ Beberapa consumer lama masih dapat merujuk nama file ini.
 
 ## Status
 
-`SUPERSEDED`: daftar isi kanonik sekarang adalah [INDEX.md](INDEX.md).
+`DEPRECATED`: daftar isi kanonik sekarang adalah [INDEX.md](INDEX.md).
 
 Gunakan [INDEX.md](INDEX.md) untuk daftar produk, dossier, strategi lintas
 produk, standar teknis, tata kelola, gap, dan changelog.

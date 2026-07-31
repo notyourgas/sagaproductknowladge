@@ -2,9 +2,10 @@
 
 ## Tujuan repository
 
-Repository publik ini adalah pusat product knowledge kanonik Saga untuk
-manusia dan AI agent. Isinya mendukung brainstorming fitur, strategi bisnis,
-konten, sales, support, pengembangan, dan pengambilan keputusan tanpa
+Repository publik ini adalah single source of truth permanen untuk seluruh
+product, business, technical, marketing, dan operational knowledge Saga.
+Isinya mendukung manusia dan AI agent dalam brainstorming fitur, strategi
+bisnis, konten, sales, support, pengembangan, dan pengambilan keputusan tanpa
 mencampur fakta dengan asumsi.
 
 Repository ini:
@@ -15,8 +16,9 @@ Repository ini:
   provider, dan business readiness;
 - menyimpan keputusan pricing, trial, account boundary, positioning, blocker,
   dan perubahan material;
-- menandai informasi belum pasti sebagai `TODO`, `NEEDS CONFIRMATION`, atau
-  `ASSUMPTION`;
+- mengklasifikasikan informasi sebagai `CONFIRMED`, `ASSUMPTION`, `PROPOSAL`,
+  `NEEDS CONFIRMATION`, atau `DEPRECATED`;
+- mencatat keputusan dan kondisi sinkronisasi secara eksplisit;
 - tidak menyimpan secret, PII, payload provider, atau evidence restricted.
 
 ## Konteks
@@ -29,11 +31,13 @@ status berbeda; repository harus terus disinkronkan setelah perubahan material.
 1. [INDEX.md](INDEX.md) — daftar isi seluruh knowledge.
 2. [CHATGPT_MASTER_KNOWLEDGE.md](CHATGPT_MASTER_KNOWLEDGE.md) — ringkasan awal
    untuk AI.
-3. [GAPS.md](GAPS.md) — pertanyaan dan keputusan founder yang belum ditutup.
-4. [SAGA_PRODUCT_PORTFOLIO.md](docs/SAGA_PRODUCT_PORTFOLIO.md) — hubungan dan
+3. [DECISIONS.md](DECISIONS.md) — keputusan founder dan governance.
+4. [SYNC_STATUS.md](SYNC_STATUS.md) — snapshot sinkronisasi terakhir.
+5. [GAPS.md](GAPS.md) — pertanyaan dan keputusan founder yang belum ditutup.
+6. [SAGA_PRODUCT_PORTFOLIO.md](docs/SAGA_PRODUCT_PORTFOLIO.md) — hubungan dan
    batas produk.
-5. [STATUS_LEGEND.md](docs/STATUS_LEGEND.md) — arti status.
-6. [UPDATE_PROTOCOL.md](docs/UPDATE_PROTOCOL.md) — cara memperbarui repository.
+7. [STATUS_LEGEND.md](docs/STATUS_LEGEND.md) — arti status.
+8. [UPDATE_PROTOCOL.md](docs/UPDATE_PROTOCOL.md) — cara memperbarui repository.
 
 ## Daftar produk
 
@@ -61,6 +65,8 @@ pada dokumen produk.
 ├── INDEX.md
 ├── GAPS.md
 ├── CHANGELOG.md
+├── DECISIONS.md
+├── SYNC_STATUS.md
 ├── CHATGPT_MASTER_KNOWLEDGE.md
 ├── products/<product>/
 │   ├── PRODUCT.md
@@ -87,8 +93,10 @@ pada dokumen produk.
 2. Baca `PRODUCT.md` produk untuk fakta ringkas.
 3. Baca `DOSSIER.md` untuk detail produk, pengalaman, bisnis, teknis, sales,
    dan content.
-4. Periksa [GAPS](GAPS.md) sebelum mengambil keputusan.
-5. Verifikasi status runtime di changelog/release source sebelum membuat klaim
+4. Periksa [DECISIONS](DECISIONS.md) dan [GAPS](GAPS.md) sebelum mengambil
+   keputusan.
+5. Periksa [SYNC_STATUS](SYNC_STATUS.md) untuk mengetahui pembaruan terakhir.
+6. Verifikasi status runtime di changelog/release source sebelum membuat klaim
    eksternal.
 
 ### Untuk AI agent
@@ -97,10 +105,12 @@ pada dokumen produk.
    [AI Usage Guidelines](docs/technical/AI_USAGE_GUIDELINES.md).
 2. Pertahankan label fakta/asumsi sesuai
    [Fact Classification](docs/governance/FACT_CLASSIFICATION.md).
-3. Jangan mengisi gap dengan tebakan.
-4. Jangan menganggap test lokal, fixture, atau HTTP 200 sebagai provider atau
+3. Baca [DECISIONS](DECISIONS.md), [SYNC_STATUS](SYNC_STATUS.md), dan
+   [GAPS](GAPS.md) sebelum menyimpulkan current state.
+4. Jangan mengisi gap dengan tebakan.
+5. Jangan menganggap test lokal, fixture, atau HTTP 200 sebagai provider atau
    business activation.
-5. Cantumkan status evidence dan tanggal cut-off pada jawaban sensitif.
+6. Cantumkan status evidence dan tanggal cut-off pada jawaban sensitif.
 
 ## Status kelengkapan dokumentasi
 
@@ -110,8 +120,9 @@ pada dokumen produk.
 | Product dossier | Lengkap secara struktur | Banyak pricing, KPI, competitor, dan policy masih `NEEDS CONFIRMATION`. |
 | Cross-product standards | Tersedia | Beberapa keputusan founder belum final. |
 | Release/readiness | Tersedia per produk | Harus terus disinkronkan dari source/runtime. |
-| Sales/marketing/content | Baseline tersedia | Caption/campaign berlabel rekomendasi, bukan hasil market. |
-| Gaps/decisions | Terpusat | Lihat [GAPS](GAPS.md). |
+| Sales/marketing/content | Baseline tersedia | Caption/campaign berlabel `PROPOSAL`, bukan hasil market. |
+| Gaps/decisions | Terpusat | Lihat [DECISIONS](DECISIONS.md) dan [GAPS](GAPS.md). |
+| Sync governance | Lengkap | Protokol, status sinkronisasi, decision log, dan validator tersedia. |
 
 ## Aturan utama
 
@@ -120,4 +131,7 @@ pada dokumen produk.
   tenant/device/account identifier, database dump, atau private evidence path.
 - Jangan menyebut `live` jika evidence hanya dummy, fixture, simulation,
   local test, atau staging.
+- Hanya informasi `CONFIRMED` yang boleh mengganti fakta kanonik.
 - Update material harus mengikuti [Update Protocol](docs/UPDATE_PROTOCOL.md).
+- Setiap update yang lolos gate berakhir dengan commit/push ke `main` dan
+  laporan SHA immutable.

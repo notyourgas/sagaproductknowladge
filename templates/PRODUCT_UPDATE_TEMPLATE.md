@@ -12,8 +12,9 @@ Tanggal:
 Delivery status:
 Activation status:
 Business readiness:
-Fact label: FACT / OWNER DECISION / ASSUMPTION / RECOMMENDATION /
-NEEDS CONFIRMATION / TODO
+Klasifikasi: CONFIRMED / ASSUMPTION / PROPOSAL / NEEDS CONFIRMATION /
+DEPRECATED
+TODO terkait:
 Source commit/release:
 Production berubah: ya/tidak
 
@@ -54,4 +55,5 @@ Tuliskan perubahan dalam 2-4 kalimat.
 
 - Belum live:
 - Evidence yang belum tersedia:
+- Keputusan yang belum tersedia:
 - Next action:

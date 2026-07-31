@@ -29,6 +29,6 @@ menjadi keputusan founder.
 
 ## Pengukuran
 
-- `RECOMMENDATION`: landing conversion, signup completion, activation rate,
+- `PROPOSAL`: landing conversion, signup completion, activation rate,
   time-to-value, trial-to-paid, support contact rate, dan retention.
 - `NEEDS CONFIRMATION`: baseline dan target angka.

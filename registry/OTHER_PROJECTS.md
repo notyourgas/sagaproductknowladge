@@ -14,7 +14,7 @@ tidak boleh dianggap produk aktif tanpa evidence baru.
 | FitSaga | Prototype experiment | PROTOTYPE | Registry only sampai ada backend dan product commitment |
 | SagaBoot | Prototype experiment | UNVERIFIED | Jangan aktifkan sebelum source dan owner ditemukan |
 | SportPal | Prototype experiment | UNVERIFIED | Definisi resmi dan source belum ditemukan |
-| Coffee Menu Studio | Prototype experiment | SUPERSEDED | Use case/preset SagaMenu, bukan produk terpisah |
+| Coffee Menu Studio | Prototype experiment | DEPRECATED | Use case/preset SagaMenu, bukan produk terpisah |
 | Legacy SagaDevs Admin Console | Internal platform | RETIRED | Requirement dapat diekstrak; bukan source of truth |
 | SagaDev Website | Marketing surface | PLANNED | Rebuild showroom produk; bukan operational control plane |
 | Madiun Classic Jersey | Client project | PROTOTYPE | Registry/deployment tracking saja |

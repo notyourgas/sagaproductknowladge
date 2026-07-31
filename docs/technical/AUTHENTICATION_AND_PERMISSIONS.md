@@ -28,6 +28,6 @@ Produk dapat berbagi identity seam tanpa berbagi role, session, atau entitlement
 
 ## Gap
 
-- `OWNER DECISION`: UX account linking lintas produk.
+- `NEEDS CONFIRMATION`: UX account linking lintas produk.
 - `NEEDS CONFIRMATION`: MFA policy, recovery owner, dan support impersonation
   policy per produk.

@@ -38,6 +38,6 @@ runtime; lokasi tersebut tidak disalin ke repository publik.
 2. Active production release.
 3. Canonical decision log/contract.
 4. Source dan tests terbaru.
-5. Historical docs.
+5. Arsip lama yang sudah ditandai `DEPRECATED`.
 
 Jika ada konflik, catat di [GAPS](../GAPS.md) dan jangan memilih diam-diam.

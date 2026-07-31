@@ -75,7 +75,7 @@ Semua action material permissioned, idempotent, product-scoped, dan auditable.
 
 ## Business model
 
-`OWNER DECISION`: internal infrastructure atau product eksternal. Saat ini
+`NEEDS CONFIRMATION`: internal infrastructure atau product eksternal. Saat ini
 diposisikan sebagai internal control plane.
 
 ## Pricing
@@ -128,7 +128,7 @@ confusion, event replay, observability data leakage, dan migration risk.
 
 ## KPI dan success metrics
 
-`RECOMMENDATION`: provisioning success/time, entitlement incident, adapter
+`PROPOSAL`: provisioning success/time, entitlement incident, adapter
 failure, support resolution, audit coverage, release gate accuracy. Target
 `NEEDS CONFIRMATION`.
 
@@ -138,7 +138,7 @@ Control plane vs monolith; shared identity vs permission; integration contract.
 
 ## Contoh caption
 
-`RECOMMENDATION`: “Satu akun tidak berarti satu izin. Saga Platform menjaga
+`PROPOSAL`: “Satu akun tidak berarti satu izin. Saga Platform menjaga
 identity tetap nyaman tanpa mencampur hak akses antarproduk.”
 
 ## Ide campaign

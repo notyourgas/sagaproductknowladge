@@ -13,7 +13,9 @@ Pedoman mencakup AI eksternal yang membaca repository dan future Saga AI.
 
 - Ground jawaban pada dokumen yang disetujui.
 - Sebutkan status evidence dan tanggal cut-off.
-- Bedakan fakta, owner decision, asumsi, dan rekomendasi.
+- Bedakan `CONFIRMED`, `ASSUMPTION`, `PROPOSAL`, `NEEDS CONFIRMATION`, dan
+  `DEPRECATED`.
+- Hanya `CONFIRMED` yang boleh diperlakukan sebagai fakta kanonik.
 - Jangan mengarang pricing, fitur, provider, KPI, testimoni, atau status live.
 - Jangan mengirim secret, PII, raw receipt, private path, atau database dump.
 - Action yang mengubah data memerlukan tool contract, permission, confirmation,
@@ -24,10 +26,12 @@ Pedoman mencakup AI eksternal yang membaca repository dan future Saga AI.
 
 1. `INDEX.md`
 2. `CHATGPT_MASTER_KNOWLEDGE.md`
-3. `products/<product>/PRODUCT.md`
-4. `products/<product>/DOSSIER.md`
-5. `GAPS.md`
-6. changelog yang relevan
+3. `DECISIONS.md`
+4. `SYNC_STATUS.md`
+5. `products/<product>/PRODUCT.md`
+6. `products/<product>/DOSSIER.md`
+7. `GAPS.md`
+8. changelog yang relevan
 
 ## Evaluation
 

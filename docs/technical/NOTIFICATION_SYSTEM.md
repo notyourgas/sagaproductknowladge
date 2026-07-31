@@ -25,5 +25,5 @@ Channel/provider nyata memiliki acceptance dan consent per produk.
 
 ## Gap
 
-- `OWNER DECISION`: default channel dan biaya per produk.
+- `NEEDS CONFIRMATION`: default channel dan biaya per produk.
 - `NEEDS CONFIRMATION`: provider, sender identity, consent, retention, dan SLA.

@@ -49,7 +49,7 @@ order/inventory ledger, payment/reconciliation, shipping/promo/CMS/report.
 
 ## Fitur MVP
 
-`FACT`: surface web tersedia. Commerce MVP baru aktif setelah data, provider,
+`CONFIRMED`: surface web tersedia. Commerce MVP baru aktif setelah data, provider,
 legal, 2FA, backup, dan transaction UAT lulus.
 
 ## Roadmap
@@ -72,11 +72,11 @@ reservation dan terminal status fail-closed.
 ## Business model
 
 Direct-to-consumer ecommerce. Margin, shipping subsidy, discount, tax, dan
-return economics: `OWNER DECISION`.
+return economics: `NEEDS CONFIRMATION`.
 
 ## Pricing
 
-Product price dan promo final: `OWNER DECISION`; dummy catalog tidak boleh
+Product price dan promo final: `NEEDS CONFIRMATION`; dummy catalog tidak boleh
 dipublikasikan sebagai fakta.
 
 ## Kompetitor
@@ -86,7 +86,7 @@ mengarang benchmark harga.
 
 ## Diferensiasi produk
 
-`RECOMMENDATION`: product storytelling editorial, streetwear identity, dan
+`PROPOSAL`: product storytelling editorial, streetwear identity, dan
 operational integrity dari inventory sampai recovery.
 
 ## Brand positioning
@@ -127,7 +127,7 @@ Surface live dapat disalahartikan sebagai checkout aktif; dummy data, provider,
 
 ## KPI dan success metrics
 
-`RECOMMENDATION`: PDP-to-cart, checkout completion, payment success, stock
+`PROPOSAL`: PDP-to-cart, checkout completion, payment success, stock
 accuracy, fulfillment time, return rate, support rate, repeat purchase, dan
 margin. Baseline/target `NEEDS CONFIRMATION`.
 

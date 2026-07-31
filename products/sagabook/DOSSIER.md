@@ -15,7 +15,7 @@ dalam satu dokumen public-safe.
 
 ## Overview produk
 
-`FACT`: SaaS booking dan operating system self-photo studio untuk workflow
+`CONFIRMED`: SaaS booking dan operating system self-photo studio untuk workflow
 sebelum sesi.
 
 ## Masalah yang diselesaikan
@@ -55,7 +55,7 @@ Activation Center.
 
 ## Fitur MVP
 
-`FACT`: booking, slot, payment status, customer secure link, request workflow,
+`CONFIRMED`: booking, slot, payment status, customer secure link, request workflow,
 calendar, check-in, dan operator task sudah termasuk core scope. Paket/limit
 MVP kuantitatif masih `NEEDS CONFIRMATION`.
 
@@ -63,7 +63,7 @@ MVP kuantitatif masih `NEEDS CONFIRMATION`.
 
 1. `TODO`: cohort onboarding studio nyata.
 2. `TODO`: booking/payment/notification acceptance end-to-end dengan provider.
-3. `RECOMMENDATION`: perkuat support, reconciliation, dan business reporting.
+3. `PROPOSAL`: perkuat support, reconciliation, dan business reporting.
 4. `NEEDS CONFIRMATION`: integrasi SagaView setelah kedua produk siap satuan.
 
 ## User journey
@@ -83,7 +83,7 @@ belum dikunci.
 
 ## Pricing
 
-`OWNER DECISION`: Basic Rp500.000, Growth Rp950.000, Pro Rp1.500.000 per bulan.
+`CONFIRMED`: Basic Rp500.000, Growth Rp950.000, Pro Rp1.500.000 per bulan.
 Limit setiap paket: `NEEDS CONFIRMATION`.
 
 ## Kompetitor
@@ -94,7 +94,7 @@ management, dan workflow berbasis chat/spreadsheet.
 
 ## Diferensiasi produk
 
-`RECOMMENDATION`: tekankan alur studio end-to-end, tenant operations, customer
+`PROPOSAL`: tekankan alur studio end-to-end, tenant operations, customer
 secure center, dan session handoff—bukan booking calendar generik.
 
 ## Brand positioning
@@ -139,7 +139,7 @@ availability, booking, payment state, request, task, audit, dan report.
 
 ## KPI dan success metrics
 
-`RECOMMENDATION`: onboarding completion, time-to-first-published-storefront,
+`PROPOSAL`: onboarding completion, time-to-first-published-storefront,
 first booking, payment success, no-show, support rate, trial-to-paid, dan
 retention. Baseline/target: `NEEDS CONFIRMATION`.
 
@@ -150,13 +150,13 @@ cancel berbayar; operator Task Center.
 
 ## Contoh caption
 
-`RECOMMENDATION`: “Booking ramai bukan berarti operasional harus berantakan.
+`PROPOSAL`: “Booking ramai bukan berarti operasional harus berantakan.
 SagaBook menyatukan slot, status pembayaran, perubahan jadwal, dan tugas
 operator dalam satu alur.”
 
 ## Ide campaign
 
-`RECOMMENDATION`: “First Booking in One Session” untuk cohort studio, hanya
+`PROPOSAL`: “First Booking in One Session” untuk cohort studio, hanya
 setelah onboarding/support siap.
 
 ## Sales talking points

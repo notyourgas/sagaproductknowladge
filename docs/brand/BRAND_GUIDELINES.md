@@ -21,8 +21,8 @@ sendiri.
 
 ## Arsitektur brand
 
-- `FACT`: nama produk memakai awalan Saga untuk sebagian besar software.
-- `FACT`: COYABAG dan AOGTICVITY memiliki identitas produk sendiri.
+- `CONFIRMED`: nama produk memakai awalan Saga untuk sebagian besar software.
+- `CONFIRMED`: COYABAG dan AOGTICVITY memiliki identitas produk sendiri.
 - `ASSUMPTION`: Saga dapat berfungsi sebagai endorsed product family.
 - `NEEDS CONFIRMATION`: aturan logo lockup, co-branding, dan legal trademark.
 

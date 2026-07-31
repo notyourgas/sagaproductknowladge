@@ -6,23 +6,35 @@ Menetapkan kontrak kerja agent saat membaca atau memperbarui repository.
 
 ## Konteks
 
-Repository ini adalah knowledge base publik, bukan source code aplikasi.
+Repository ini adalah single source of truth permanen dan publik, bukan source
+code aplikasi. Setiap perubahan knowledge harus dapat ditelusuri sampai
+keputusan atau evidence yang sesuai.
 
-Setiap agent yang menyelesaikan perubahan material pada produk SagaDev wajib:
+## Kontrak pembaruan
 
-1. Membaca `docs/UPDATE_PROTOCOL.md`.
-2. Memperbarui `products/<product>/PRODUCT.md`.
-3. Memperbarui `products/<product>/DOSSIER.md` bila kontrak produk,
-   experience, bisnis, teknis, sales, atau content berubah.
-4. Menambahkan perubahan ke `products/<product>/CHANGELOG.md`.
-5. Menambahkan satu ringkasan ke `changelog/PORTFOLIO_CHANGELOG.md`.
-6. Memperbarui `CHATGPT_MASTER_KNOWLEDGE.md` jika positioning, pricing, trial,
-   workflow, fitur utama, status release, atau blocker berubah.
-7. Memperbarui `GAPS.md` bila ada fakta belum pasti atau keputusan founder.
-8. Menjalankan `scripts/validate-knowledge.ps1`, relative-link check, secret
-   scan, dan `git diff --check`.
-9. Commit dan push repository ini hanya setelah source produk terkait sudah
-   memiliki commit/release provenance yang jelas.
+Setiap agent yang menerima informasi baru atau menyelesaikan perubahan material
+pada produk SagaDev wajib:
+
+1. Membaca `docs/UPDATE_PROTOCOL.md`, `docs/STATUS_LEGEND.md`, dan
+   `docs/governance/FACT_CLASSIFICATION.md`.
+2. Memastikan working tree bersih, berpindah ke `main`, lalu menjalankan
+   `git pull --ff-only origin main`.
+3. Mengklasifikasikan informasi sebagai `CONFIRMED`, `ASSUMPTION`, `PROPOSAL`,
+   `NEEDS CONFIRMATION`, atau `DEPRECATED`.
+4. Memverifikasi source commit/release/runtime ketika klaim menyangkut
+   implementasi atau production.
+5. Melakukan impact analysis terhadap product, pricing, roadmap, UI/UX,
+   business, sales, content, technical, integration, status, dan produk lain.
+6. Memperbarui seluruh dokumen terdampak, bukan hanya satu file.
+7. Memperbarui `DECISIONS.md` untuk keputusan, `GAPS.md` untuk unknown/conflict,
+   root `CHANGELOG.md` untuk audit trail, dan `SYNC_STATUS.md` untuk snapshot.
+8. Menjalankan `scripts/validate-knowledge.ps1` dan `git diff --check`.
+9. Commit dan push ke `main` hanya setelah seluruh gate lulus.
+10. Memverifikasi local `HEAD` sama dengan `origin/main` dan melaporkan SHA
+    immutable serta status push.
+
+Hanya `CONFIRMED` yang boleh mengganti fakta kanonik. Informasi lama yang sudah
+diganti tetap dipertahankan sebagai `DEPRECATED` bila relevan secara historis.
 
 ## Safety
 
@@ -34,11 +46,13 @@ Setiap agent yang menyelesaikan perubahan material pada produk SagaDev wajib:
 - Gunakan label dari `docs/governance/FACT_CLASSIFICATION.md`.
 - Fitur yang hanya local/staging tidak boleh ditulis sebagai production.
 - Bila bukti belum ada, gunakan `UNVERIFIED` atau `BLOCKED`.
+- Jangan force push, menghapus histori, atau menimpa working tree yang kotor.
 
 ## Writing style
 
 - Bahasa Indonesia sederhana.
 - Ringkas tetapi konkret.
-- Bedakan fakta, keputusan, rekomendasi, dan rencana.
+- Bedakan `CONFIRMED`, `ASSUMPTION`, `PROPOSAL`, `NEEDS CONFIRMATION`, dan
+  `DEPRECATED`.
 - Sertakan tanggal cut-off bukti.
 - Jangan menyalin log teknis panjang; rangkum dampak pengguna dan bisnis.

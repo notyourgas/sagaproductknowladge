@@ -71,12 +71,12 @@ dan reason; closing merekonsiliasi cash/non-cash.
 
 ## Business model
 
-`OWNER DECISION`: subscription per outlet/device, setup fee, hardware, support,
+`NEEDS CONFIRMATION`: subscription per outlet/device, setup fee, hardware, support,
 dan payment fee.
 
 ## Pricing
 
-`OWNER DECISION`: belum tersedia.
+`NEEDS CONFIRMATION`: belum tersedia.
 
 ## Kompetitor
 
@@ -85,7 +85,7 @@ restaurant operations.
 
 ## Diferensiasi produk
 
-`RECOMMENDATION`: operator-first Indonesian coffeeshop workflow, ledger-based
+`PROPOSAL`: operator-first Indonesian coffeeshop workflow, ledger-based
 stock, recipe/HPP, and shift variance.
 
 ## Brand positioning
@@ -125,7 +125,7 @@ conflict, cash variance, tenant isolation, dan outlet recovery.
 
 ## KPI dan success metrics
 
-`RECOMMENDATION`: order time, payment success, stock variance, waste,
+`PROPOSAL`: order time, payment success, stock variance, waste,
 override rate, close variance, PO cycle, uptime, dan support incident. Target
 `NEEDS CONFIRMATION`.
 
@@ -135,7 +135,7 @@ Stock movement; recipe/HPP; closing variance; low-stock to purchase order.
 
 ## Contoh caption
 
-`RECOMMENDATION`: “Stok bukan angka yang boleh berubah tanpa jejak. Setiap
+`PROPOSAL`: “Stok bukan angka yang boleh berubah tanpa jejak. Setiap
 penjualan, waste, dan pembelian harus menjadi movement yang bisa diaudit.”
 
 ## Ide campaign

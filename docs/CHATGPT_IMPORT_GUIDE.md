@@ -15,6 +15,8 @@ Repository bersifat public-safe; data restricted tidak boleh ikut diunggah.
 3. Masukkan file berikut ke Knowledge GPT/Project:
    - `INDEX.md`;
    - `CHATGPT_MASTER_KNOWLEDGE.md`;
+   - `DECISIONS.md`;
+   - `SYNC_STATUS.md`;
    - `GAPS.md`;
    - `docs/SAGA_PRODUCT_PORTFOLIO.md`;
    - dokumen `products/<product>/PRODUCT.md` yang relevan;
@@ -26,12 +28,13 @@ Repository bersifat public-safe; data restricted tidak boleh ikut diunggah.
 
 ```text
 Gunakan file Saga Product Knowledge sebagai sumber kebenaran.
-Bedakan fakta production, local/staging, keputusan owner, dan rekomendasi.
+Gunakan CONFIRMED sebagai fakta kanonik. Bedakan ASSUMPTION, PROPOSAL,
+NEEDS CONFIRMATION, dan DEPRECATED.
 Jangan menganggap fitur planned atau implemented-not-deployed sudah live.
 Jika memberi ide fitur atau konten, jaga positioning dan batas produk pada
 dokumen terbaru. Jika ada konflik, prioritaskan tanggal update dan evidence yang
-paling baru. Jangan mengisi NEEDS CONFIRMATION, ASSUMPTION, atau TODO dengan
-tebakan.
+paling baru. Jangan mengisi NEEDS CONFIRMATION, ASSUMPTION, PROPOSAL, atau TODO
+dengan tebakan.
 ```
 
 ## Untuk brainstorming konten

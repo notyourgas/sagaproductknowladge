@@ -59,7 +59,7 @@ production.
 2. Domain/TLS dan provider notification.
 3. Multi-device/event rehearsal.
 4. Immutable deploy dan public smoke.
-5. `OWNER DECISION`: repeatable product/service model.
+5. `NEEDS CONFIRMATION`: repeatable product/service model.
 
 ## User journey
 
@@ -73,11 +73,11 @@ role switcher/PIN tidak boleh dipakai production.
 
 ## Business model
 
-`OWNER DECISION`: internal event tool, managed service per event, atau SaaS.
+`NEEDS CONFIRMATION`: internal event tool, managed service per event, atau SaaS.
 
 ## Pricing
 
-`OWNER DECISION`: belum tersedia.
+`NEEDS CONFIRMATION`: belum tersedia.
 
 ## Kompetitor
 
@@ -86,7 +86,7 @@ community event, dan spreadsheet/manual operations.
 
 ## Diferensiasi produk
 
-`RECOMMENDATION`: event-day command center, multi-role mobile UI,
+`PROPOSAL`: event-day command center, multi-role mobile UI,
 draft/publish/correct audit, live projection, dan offline fallback.
 
 ## Brand positioning
@@ -127,7 +127,7 @@ demo auth, localStorage, dan provider simulation.
 
 ## KPI dan success metrics
 
-`RECOMMENDATION`: registration completion, check-in throughput, correction
+`PROPOSAL`: registration completion, check-in throughput, correction
 rate, result publish latency, projection uptime, support incident, dan operator
 recovery. Target `NEEDS CONFIRMATION`.
 
@@ -137,7 +137,7 @@ Command center lomba; scoring audit; offline fallback; live standing.
 
 ## Contoh caption
 
-`RECOMMENDATION`: “Hari-H bukan waktunya mencari spreadsheet terakhir.
+`PROPOSAL`: “Hari-H bukan waktunya mencari spreadsheet terakhir.
 AOGTICVITY menyatukan check-in, jadwal, hasil, dan standing dalam satu alur.”
 
 ## Ide campaign

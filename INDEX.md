@@ -14,12 +14,14 @@ Indeks mencakup knowledge publik pada evidence cut-off 31 Juli 2026.
 
 1. Baca [README](README.md) untuk tujuan dan aturan penggunaan.
 2. Baca [Master Knowledge](CHATGPT_MASTER_KNOWLEDGE.md) untuk konteks ringkas.
-3. Pilih produk pada bagian **Produk**.
-4. Baca `PRODUCT.md` untuk fakta ringkas dan `DOSSIER.md` untuk detail produk,
+3. Periksa [Decisions](DECISIONS.md), [Sync Status](SYNC_STATUS.md), dan
+   [GAPS](GAPS.md).
+4. Pilih produk pada bagian **Produk**.
+5. Baca `PRODUCT.md` untuk fakta ringkas dan `DOSSIER.md` untuk detail produk,
    bisnis, pengalaman, teknis, dan go-to-market.
-5. Periksa [GAPS](GAPS.md) sebelum menganggap informasi yang belum diputuskan
+6. Periksa [GAPS](GAPS.md) sebelum menganggap informasi yang belum diputuskan
    sebagai fakta.
-6. Periksa changelog produk dan [Portfolio Changelog](changelog/PORTFOLIO_CHANGELOG.md)
+7. Periksa changelog produk dan [Portfolio Changelog](changelog/PORTFOLIO_CHANGELOG.md)
    untuk provenance perubahan material.
 
 ## Dokumen utama
@@ -27,6 +29,9 @@ Indeks mencakup knowledge publik pada evidence cut-off 31 Juli 2026.
 - [README](README.md) — tujuan, struktur, penggunaan, dan status kelengkapan.
 - [Master Knowledge](CHATGPT_MASTER_KNOWLEDGE.md) — ringkasan portofolio untuk
   konteks awal AI.
+- [Decisions](DECISIONS.md) — keputusan founder dan governance yang
+  `CONFIRMED`.
+- [Sync Status](SYNC_STATUS.md) — snapshot sinkronisasi terakhir.
 - [GAPS](GAPS.md) — keputusan founder, informasi belum pasti, dan pekerjaan
   dokumentasi yang masih terbuka.
 - [Knowledge Base Changelog](CHANGELOG.md) — perubahan struktur dan tata kelola
@@ -83,4 +88,6 @@ Indeks mencakup knowledge publik pada evidence cut-off 31 Juli 2026.
 - [Fact Classification](docs/governance/FACT_CLASSIFICATION.md)
 - [Product Update Template](templates/PRODUCT_UPDATE_TEMPLATE.md)
 - [Product Dossier Template](templates/PRODUCT_DOSSIER_TEMPLATE.md)
+- [Decision Template](templates/DECISION_TEMPLATE.md)
+- [Sync Report Template](templates/SYNC_REPORT_TEMPLATE.md)
 - [Other Projects Registry](registry/OTHER_PROJECTS.md)

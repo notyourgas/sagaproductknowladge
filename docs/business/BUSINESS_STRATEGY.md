@@ -22,16 +22,16 @@ Dokumen memisahkan keputusan owner yang berlaku dari rekomendasi strategi.
 
 ## Rekomendasi
 
-- `RECOMMENDATION`: fokus pada satu ICP dan activation moment per produk.
-- `RECOMMENDATION`: jual outcome workflow, bukan daftar fitur.
-- `RECOMMENDATION`: cohort/pilot terkendali sebelum self-service publik penuh.
-- `RECOMMENDATION`: gunakan Saga Platform sebagai control plane, bukan
+- `PROPOSAL`: fokus pada satu ICP dan activation moment per produk.
+- `PROPOSAL`: jual outcome workflow, bukan daftar fitur.
+- `PROPOSAL`: cohort/pilot terkendali sebelum self-service publik penuh.
+- `PROPOSAL`: gunakan Saga Platform sebagai control plane, bukan
   operational database gabungan.
 
 ## Belum diputuskan
 
-- `OWNER DECISION`: prioritas investasi lintas produk setelah SagaBook dan
+- `NEEDS CONFIRMATION`: prioritas investasi lintas produk setelah SagaBook dan
   SagaView.
-- `OWNER DECISION`: kriteria stop/pivot untuk produk prototype.
+- `NEEDS CONFIRMATION`: kriteria stop/pivot untuk produk prototype.
 - `NEEDS CONFIRMATION`: unit economics, CAC, support cost, gross margin, dan
   retention target.
