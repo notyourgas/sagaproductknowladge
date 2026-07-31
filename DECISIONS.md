@@ -216,3 +216,17 @@ keputusan pengganti.
 | Pemberi keputusan | Andreas / founder |
 | Status | `CONFIRMED` |
 | Dokumen terkait | [SagaDevs Product](products/sagadevs/PRODUCT.md), [SagaDevs Dossier](products/sagadevs/DOSSIER.md), [SagaDevs Changelog](products/sagadevs/CHANGELOG.md) |
+
+## DEC-015 — AOGTICVITY memakai Master Recap 17 Agustus 2026
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-07-31 |
+| Topik | Kontrak event dan identitas produk AOGTICVITY |
+| Keputusan | Nama produk terbaru adalah AOGTICVITY. PDF Master Recap Lomba 17 Agustus 2026 menjadi sumber keseluruhan data aplikasi untuk 8 tim dan 10 lomba. Durasi boleh ditentukan sementara oleh sistem dan tetap dapat diubah admin; lomba dengan peserta seluruh tim tidak meminta input nama peserta. |
+| Alasan | Public, player, leader, admin, live projection, dan backend harus memakai kontrak event yang sama tanpa memaksa data roster yang tidak dibutuhkan. |
+| Alternatif yang dipertimbangkan | Mempertahankan konfigurasi lama enam tim; mengunci durasi sebelum konfirmasi; meminta nama peserta untuk setiap lomba seluruh tim. |
+| Dampak | Master data, schedule builder, roster rule, result policy, UI semua role, migration, audit, UAT, dan knowledge publik memakai 8 tim/10 lomba. Nama Tim 7/Tim 8 dan keputusan provisional tetap tercatat sebagai gap, bukan fakta final. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED` |
+| Dokumen terkait | [AOGTICVITY Product](products/aogticvity/PRODUCT.md), [AOGTICVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTICVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |

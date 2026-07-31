@@ -8,7 +8,7 @@ content AOGTICVITY tetap jelas.
 ## Konteks dan status bukti
 
 - Updated: 31 Juli 2026
-- Delivery: `LOCAL_VALIDATED`
+- Delivery: `STAGING_DEPLOYED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED`
 
@@ -45,20 +45,22 @@ dan offline fallback.
 
 ## Fitur utama
 
-Public/player/leader/admin/live surfaces dan backend check-in vertical slice.
+Public/player/leader/admin/live surfaces; master recap 8 tim/10 lomba; serta
+backend check-in, roster, session/security, dan event-master vertical slices.
 
 ## Fitur MVP
 
-Satu event dengan enam tim, authenticated roles, MySQL persistence, multi-device
-check-in/scoring, audit, projection, dan fallback. Sebagian masih belum
-production.
+Satu event dengan delapan tim dan sepuluh lomba, authenticated roles, MySQL
+persistence, multi-device check-in/scoring, audit, projection, dan fallback.
+Master event dark staging sudah terverifikasi; auth produksi, frontend API
+activation, dan rehearsal fisik tetap belum production.
 
 ## Roadmap
 
-1. Finalize auth dan MySQL production runtime.
+1. Finalize auth/IdP produksi dan aktifkan frontend API setelah UAT.
 2. Domain/TLS dan provider notification.
-3. Multi-device/event rehearsal.
-4. Immutable deploy dan public smoke.
+3. Finalisasi nama Tim 7/Tim 8, durasi, serta keputusan open pada master recap.
+4. Multi-device/event rehearsal dan public smoke.
 5. `NEEDS CONFIRMATION`: repeatable product/service model.
 
 ## User journey
@@ -107,8 +109,10 @@ terverifikasi.
 
 ## Technical overview
 
-Frontend mobile-first, backend check-in slice, MySQL target adapter, SQLite fast
-test adapter. Beberapa UI lama masih localStorage.
+Frontend mobile-first dengan lebar aplikasi maksimum 430 px, Plus Jakarta Sans,
+dan public/player/leader/admin/live surfaces. Backend memakai MySQL staging untuk
+check-in, roster, managed session/security, serta event-master versioning.
+SQLite tetap fast test adapter dan beberapa state UI masih localStorage.
 
 ## Integrasi
 
@@ -117,13 +121,15 @@ production belum terverifikasi.
 
 ## Data yang digunakan
 
-Event, participant, team, roster, schedule, match/competition, check-in,
-result, standing, announcement, audit, dan export.
+Event, participant, delapan team, roster, sepuluh competition, schedule,
+mechanism, safety, equipment, official assignment, check-in, result, standing,
+announcement, version, audit, dan export.
 
 ## Risiko dan asumsi
 
 Event-day time pressure, network failure, duplicate scoring, stale projection,
-demo auth, localStorage, dan provider simulation.
+demo auth, localStorage, provider simulation, dua nama tim placeholder, serta
+durasi dan keputusan master recap yang masih provisional/open.
 
 ## KPI dan success metrics
 

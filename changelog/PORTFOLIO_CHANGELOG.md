@@ -10,6 +10,20 @@ workflow, pricing, release, activation, atau blocker.
 Detail tetap berada pada changelog produk; entri docs-only berada di root
 [CHANGELOG](../CHANGELOG.md).
 
+## 2026-07-31 — AOGTICVITY master recap dark staging
+
+- Master recap 17 Agustus 2026 kini menjadi kontrak event 8 tim/10 lomba untuk
+  public, player, leader, admin, dan live projection.
+- Lomba seluruh tim memakai roster otomatis; durasi tetap provisional dan dapat
+  disunting admin dengan rebuild jadwal.
+- MySQL event-master dry-run, validation, atomic publish, versioning, permission,
+  idempotency, dan audit lulus dark-staging smoke bersama regression roster,
+  security, serta managed session.
+- Source `52f7b58`; release `20260731T162024Z`; delivery `STAGING_DEPLOYED`.
+- Production publik tidak berubah. Activation tetap diblokir oleh auth/IdP
+  produksi, frontend API activation, domain/TLS, notification provider,
+  physical multi-device UAT, dan finalisasi data provisional.
+
 ## 2026-07-31 — SagaDevs Hero Scale v4 Production
 
 - Founder menyetujui Motion Polish v3 lalu meminta logo 3D diperbesar 1,5×, digeser lebih kiri, dan langsung dipromosikan ke domain utama.

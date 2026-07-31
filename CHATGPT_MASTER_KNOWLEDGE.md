@@ -173,12 +173,15 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation dan business readiness: `BLOCKED`.
 ### AOGTICVITY
 
 Web app mobile-first untuk operasi event/kompetisi: registrasi, verifikasi,
-check-in, enam tim, lomba, roster, jadwal, hasil, standing, pengumuman, audit,
-dan live projection. Ini adalah nama terbaru project 17an/Olimpiade
-Kemerdekaan.
+check-in, delapan tim, sepuluh lomba, roster, jadwal, hasil, standing,
+pengumuman, audit, dan live projection. Master recap 17 Agustus 2026 sudah
+dipublikasikan pada MySQL dark staging dengan durasi yang tetap provisional.
+Ini adalah nama terbaru project 17an/Olimpiade Kemerdekaan.
 
-Delivery: `LOCAL_VALIDATED`. Activation/business readiness: `BLOCKED`. Domain
-target belum diaktifkan.
+Delivery: `STAGING_DEPLOYED`. Activation: `NOT_PRODUCTION_ACTIVATED`. Business
+readiness: `BLOCKED`. Domain target belum diaktifkan; auth/IdP produksi,
+frontend API activation, notification provider, dan physical multi-device UAT
+belum selesai. Sebagian state UI masih localStorage.
 
 ### SagaOPS
 

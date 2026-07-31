@@ -1,7 +1,7 @@
 # AOGTICVITY Product Knowledge
 
 Updated: 31 Juli 2026
-Evidence status: prototype + local release candidate
+Evidence status: dark staging release candidate
 
 ## Tujuan dokumen
 
@@ -11,8 +11,8 @@ Keputusan terbuka berada di [GAPS](../../GAPS.md#aogticvity).
 
 ## Konteks
 
-Dokumen membedakan prototype/local release candidate dari domain dan runtime
-multi-device production yang belum terverifikasi.
+Dokumen membedakan dark staging yang sudah terverifikasi dari domain publik dan
+runtime multi-device production yang belum diaktifkan.
 
 ## Ringkasan
 
@@ -34,7 +34,8 @@ sebagai nama produk terbaru. Nama lama tetap disimpan sebagai provenance.
 
 - Registrasi dan verifikasi.
 - Check-in.
-- Enam tim.
+- Delapan tim.
+- Sepuluh lomba dari master recap 17 Agustus 2026.
 - Roster dan assignment.
 - Jadwal.
 - Competition/result draft-publish-correct.
@@ -59,21 +60,28 @@ Domain tersebut target, bukan bukti production aktif.
 ## Arsitektur status
 
 - Frontend mobile-first.
-- Backend check-in vertical slice dengan MySQL adapter.
+- Backend check-in, roster, session/security, dan event-master vertical slice
+  dengan MySQL staging.
 - SQLite hanya fast test adapter.
-- UI publik lama masih memakai localStorage sampai auth, staging roster,
-  domain/TLS, dan UAT multi-device lulus.
+- Event-master memiliki dry-run, validation, atomic publish, versioning, dan
+  audit. Durasi jadwal bersifat provisional dan dapat disunting admin.
+- Lomba seluruh tim memakai roster otomatis tanpa input nama peserta.
+- Sebagian state UI masih memakai localStorage sampai auth produksi, runtime API
+  frontend, domain/TLS, dan UAT multi-device lulus.
 
 ## Status saat ini
 
-Delivery: `LOCAL_VALIDATED`. Activation: `NOT_PRODUCTION_ACTIVATED`. Business
+Delivery: `STAGING_DEPLOYED`. Activation: `NOT_PRODUCTION_ACTIVATED`. Business
 readiness: `BLOCKED`.
 
 - UI public/player/leader/admin/live tersedia.
-- Backend slice dan migration tersedia.
-- Typecheck/test/build lokal telah menjadi gate.
-- Production MySQL credential, domain, TLS, dan authenticated multi-device
-  runtime belum terverifikasi.
+- Master recap 2026 berisi 8 tim, 10 lomba, jadwal provisional, mekanisme,
+  safety, equipment, dan assignment panitia.
+- Backend slice dan migration MySQL sudah lulus dark-staging smoke.
+- Typecheck, test, build, security, accessibility, responsive, migration, dan
+  rollback telah menjadi gate.
+- Auth/IdP production, domain, TLS, frontend API activation, notification
+  provider, dan UAT fisik multi-device belum terverifikasi.
 
 ## Belum boleh diklaim
 

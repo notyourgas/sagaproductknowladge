@@ -12,30 +12,35 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-07-31T22:50:00+07:00 |
+| Waktu pembaruan terakhir | 2026-07-31T23:28:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `e3c3ace3500f06d82bde0519c6dcee26bac404e1` |
-| Informasi terakhir disinkronkan | SagaDevs Hero Scale v4 final: logo 3D 1,5×, shifted-left responsive placement, versioned module cache safety, dan production activation pada `sagadevs.com`. |
+| Baseline sebelum pembaruan | `a6d5aeb639786ae90bcb920b1db360a360839bba` |
+| Informasi terakhir disinkronkan | AOGTICVITY master recap 17 Agustus 2026: 8 tim/10 lomba, roster otomatis untuk lomba seluruh tim, jadwal provisional editable, dan event-master MySQL dark staging release `20260731T162024Z`. |
 | Status sinkronisasi | `UP TO DATE` setelah commit/push dan remote verification |
 | Konflik | Tidak ada; local `main` sama dengan `origin/main` sebelum edit. |
 | Error | Tidak ada error terbuka pada awal sinkronisasi. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/sagadevs/PRODUCT.md`
-- `products/sagadevs/DOSSIER.md`
-- `products/sagadevs/CHANGELOG.md`
+- `products/aogticvity/PRODUCT.md`
+- `products/aogticvity/DOSSIER.md`
+- `products/aogticvity/CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `docs/SAGA_PRODUCT_PORTFOLIO.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHANGELOG.md`
 - `DECISIONS.md`
+- `GAPS.md`
 - `SYNC_STATUS.md`
 
 ## Item menunggu konfirmasi
 
-Portfolio client, analytics production, serta scope dan security boundary Super Admin masih `NEEDS CONFIRMATION`. Hero Scale v4 aktif di production dan tetap `noindex`. Status produk lain tidak diubah oleh sinkronisasi ini.
+Model bisnis AOGTICVITY; auth/IdP produksi; frontend API activation; notification
+provider; domain/TLS publik; physical multi-device UAT; nama Tim 7/Tim 8; durasi;
+dan keputusan master recap provisional masih `NEEDS CONFIRMATION`. Dark staging
+sudah terverifikasi, tetapi public activation dan production multi-device tidak
+diklaim. Status produk lain tidak diubah oleh sinkronisasi ini.
 
 ## Cara verifikasi
 
