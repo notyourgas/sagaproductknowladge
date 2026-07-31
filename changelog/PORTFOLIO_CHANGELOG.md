@@ -10,8 +10,20 @@ workflow, pricing, release, activation, atau blocker.
 Detail tetap berada pada changelog produk; entri docs-only berada di root
 [CHANGELOG](../CHANGELOG.md).
 
+## 2026-07-31 — SagaView provider canary paid
+
+- Satu canary Tokopay production bernilai rendah berhasil dibayar.
+- Satu intent menghasilkan satu processed callback exactly-once; subscription
+  aktif dan katalog canary otomatis diarsipkan.
+- Gate provider nyata tertutup pada Saga Platform release
+  `20260727085127-5bf7977`.
+- Tidak ada deploy atau migration; backend/public candidate SagaView tetap
+  belum production.
+- Data transaksi restricted tetap berada di luar knowledge publik.
+
 ## 2026-07-31 — SagaView provider canary pending
 
+- Status historis: `DEPRECATED` oleh entri provider canary paid di atas.
 - Satu canary pembayaran production dibuat secara terotorisasi.
 - Status masih pending/unpaid; callback exactly-once dan activation provider
   belum terverifikasi.

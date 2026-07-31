@@ -12,8 +12,28 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-07-31
 
+### SagaView paid provider canary sync
+
+- Ringkasan: mengubah status canary public-safe dari pending menjadi paid dan
+  mencatat processed callback exactly-once.
+- Alasan: transaksi provider nyata, aktivasi subscription, dan auto-archive
+  katalog canary sudah terverifikasi.
+- Produk/area terdampak: SagaView commercial activation dan release gate.
+- File terdampak: current product contract, dossier, product/portfolio
+  changelog, master knowledge, gap register, dan sync status.
+- Klasifikasi: `CONFIRMED`.
+- Sumber: runtime production Saga Platform
+  `20260727085127-5bf7977` dan evidence restricted; tidak ada identifier
+  transaksi atau payload callback di repository publik.
+- Commit knowledge: `main HEAD`; SHA immutable dilaporkan setelah push.
+- Production produk berubah: subscription canary aktif melalui callback;
+  tidak ada deploy, migration, atau setting change.
+- Blocker tersisa: exact backend/public candidate belum dipromosikan dan belum
+  lulus public smoke sebagai satu release.
+
 ### SagaView provider canary status sync
 
+- Status historis: `DEPRECATED` oleh sinkronisasi paid provider canary di atas.
 - Ringkasan: menyinkronkan fakta public-safe bahwa satu canary pembayaran
   terotorisasi sudah dibuat, tetapi masih pending/unpaid.
 - Alasan: status blocker provider berubah setelah audit repository selesai.

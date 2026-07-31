@@ -62,12 +62,14 @@ belum live.
 
 ## Roadmap
 
-1. Selesaikan canary terotorisasi yang masih pending/unpaid dan verifikasi
-   exactly-once callback evidence.
-2. Promote backend candidate/migration dan public self-service atomik.
-3. Verify Owner Console, trial 7+7, billing, monitoring, dan public smoke.
-4. Controlled studio cohort dan support observation.
-5. `NEEDS CONFIRMATION`: SagaBook integration timing.
+1. Promote backend candidate/migration dan public self-service atomik.
+2. Verify Owner Console, trial 7+7, billing, monitoring, dan public smoke.
+3. Controlled studio cohort dan support observation.
+4. `NEEDS CONFIRMATION`: SagaBook integration timing.
+
+Gate provider canary sudah `CONFIRMED`: satu pembayaran nyata diproses
+exactly-once, mengaktifkan subscription, dan mengarsipkan katalog canary pada
+Saga Platform release `20260727085127-5bf7977`.
 
 ## User journey
 
@@ -129,7 +131,9 @@ device/session metadata, frame sync, subscription, dan operational state.
 ## Integrasi
 
 Payment, notification, printer Windows/Epson, future SagaBook handoff.
-Provider nyata harus diverifikasi per exact release.
+Provider Tokopay nyata sudah diverifikasi untuk satu canary bernilai rendah
+pada exact Saga Platform release aktif; validasi ini tidak otomatis membuktikan
+backend/public candidate terbaru sudah production.
 
 ## Data yang digunakan
 
@@ -140,7 +144,8 @@ output pada UI customer.
 
 ## Risiko dan asumsi
 
-- Provider/payment candidate belum live.
+- Backend/public payment candidate terbaru belum live, walau jalur provider
+  production aktif sudah lulus satu paid canary exactly-once.
 - Hardware/browser/storage behavior memerlukan physical acceptance.
 - `ASSUMPTION`: Epson L8050 adalah printer pilot utama.
 - Public copy tidak boleh mendahului server enforcement.

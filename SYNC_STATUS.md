@@ -16,11 +16,11 @@ setelah push dan dapat diperoleh dengan `git rev-parse HEAD`.
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-07-31T11:55:11+07:00 |
+| Waktu pembaruan terakhir | 2026-07-31T12:08:06+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `ca6e42112c739bc8dfe4920ad05684bdf38db4de` |
-| Informasi terakhir disinkronkan | SagaView memiliki satu canary pembayaran production terotorisasi yang masih pending/unpaid; paid callback dan provider activation belum terverifikasi. |
+| Baseline sebelum pembaruan | `8bb18dab6784da2c51b51df42d565d48eb7a518d` |
+| Informasi terakhir disinkronkan | SagaView menyelesaikan satu paid Tokopay canary production dengan satu processed callback exactly-once; subscription aktif dan katalog canary otomatis diarsipkan. |
 | Status sinkronisasi | `UP TO DATE` setelah commit/push dan remote verification |
 | Konflik | Tidak ada pada baseline; branch lokal dan `origin/main` sama sebelum edit. |
 | Error | Tidak ada error terbuka pada awal sinkronisasi. |
@@ -38,9 +38,10 @@ setelah push dan dapat diperoleh dengan `git rev-parse HEAD`.
 
 ## Item menunggu konfirmasi
 
-Canary masih memerlukan pembayaran terkontrol dan callback provider nyata.
-Detail/identifier restricted tetap berada di luar repository publik. Gap lain
-tetap tercatat di [GAPS](GAPS.md).
+Provider canary sudah selesai. Backend/public candidate terbaru tetap menunggu
+promosi exact release, migration, dan public smoke. Detail/identifier
+restricted tetap berada di luar repository publik. Gap lain tetap tercatat di
+[GAPS](GAPS.md).
 
 ## Cara verifikasi
 

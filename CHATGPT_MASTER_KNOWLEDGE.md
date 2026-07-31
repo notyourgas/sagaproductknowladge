@@ -72,7 +72,7 @@ Status: Studio frontend `PRODUCTION_DEPLOYED`; backend komersial terbaru
 `IMPLEMENTED_NOT_DEPLOYED` dan `BLOCKED`.
 Harga bulanan: Growth Rp200.000, Pro Rp500.000.
 Trial contract: 14 hari dua fase; production activation backend terbaru masih
-menunggu penyelesaian provider canary.
+menunggu promosi exact candidate dan public smoke, bukan lagi provider canary.
 
 Update terbaru: output 4R dan operator-controlled session completion/privacy
 handoff production pada release `20260731113223-2f65a9a`. Customer memanggil
@@ -83,8 +83,10 @@ sudah implemented tetapi belum production karena signup live masih menjalankan
 trial lama. Backend Owner Console/device/trial/subscription candidate sudah
 melewati full regression, backup/restore, migration, build, security, dan
 rollback rehearsal. Satu canary payment production sudah dibuat secara
-terotorisasi, tetapi masih pending/unpaid; paid callback dan processed receipt
-nyata belum tersedia. Production backend belum berubah.
+terotorisasi lalu berhasil dibayar; satu callback provider diproses
+exactly-once, subscription aktif, dan katalog canary otomatis diarsipkan pada
+Saga Platform release `20260727085127-5bf7977`. Production backend candidate
+belum berubah.
 
 ### SagaBio
 
@@ -175,8 +177,8 @@ Delivery: `PLANNED`. Belum production-activated.
 
 ## Larangan klaim
 
-- Jangan sebut SagaView backend terbaru live sebelum provider canary dan release
-  production selesai.
+- Jangan sebut SagaView backend terbaru live hanya karena provider canary sudah
+  lulus; exact candidate tetap harus dipromosikan dan lulus public smoke.
 - Jangan sebut public Pricing/Help/Legal SagaView terbaru live sebelum backend
   trial dan public route dipromosikan bersama lalu lulus public smoke.
 - Jangan sebut SagaBio atau SagaMenu production.

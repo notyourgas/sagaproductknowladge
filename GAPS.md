@@ -24,8 +24,7 @@ ketika keputusan atau release baru menutup gap.
 
 | ID | Produk/area | Label | Pertanyaan atau gap | Bukti penutup |
 |---|---|---|---|---|
-| GAP-001 | SagaView | NEEDS CONFIRMATION | Canary pembayaran terotorisasi sudah dibuat, tetapi masih pending/unpaid dan belum menghasilkan callback exactly-once yang terverifikasi. | Paid provider result dan processed callback evidence yang terikat ke exact runtime candidate serta disimpan di lokasi restricted. |
-| GAP-002 | SagaView | NEEDS CONFIRMATION | Backend trial dua fase, billing, callback, dan Owner Console candidate belum production-activated. | Release immutable, migration, provider callback nyata, dan public smoke. |
+| GAP-002 | SagaView | NEEDS CONFIRMATION | Backend trial dua fase, billing UI, dan Owner Console candidate belum production-activated; provider canary pada platform aktif sudah lulus. | Release immutable, migration, dan public smoke exact candidate. |
 | GAP-003 | SagaView | NEEDS CONFIRMATION | Public Pricing/Help/Privacy/Terms candidate belum live karena signup production masih memakai kontrak trial lama. | Backend dan frontend dipromosikan atomik, lalu contract smoke. |
 | GAP-004 | SagaBook | NEEDS CONFIRMATION | Business readiness belum dibuktikan pada cohort studio nyata. | Minimal cohort onboarding, booking nyata, support observation, dan incident review. |
 | GAP-005 | COYABAG | NEEDS CONFIRMATION | Katalog final, identitas seller, pajak/legal, payment, shipping, dan kebijakan belum dikunci. | Data owner yang disetujui dan UAT transaksi nyata. |
@@ -45,14 +44,20 @@ ketika keputusan atau release baru menutup gap.
 
 ### SagaView
 
-- `NEEDS CONFIRMATION`: penyelesaian canary yang sudah terotorisasi dan
-  verifikasi paid callback exactly-once pada exact runtime candidate.
 - `NEEDS CONFIRMATION`: limit Growth/Pro yang final selain harga, termasuk
   device, frame, session, storage metadata, dan offline grace.
 - `NEEDS CONFIRMATION`: kebijakan lisensi printer/device pengganti dan
   emergency transfer untuk support.
-- `TODO`: verifikasi kontrak trial 7+7, provider callback exactly-once, dan
-  Owner Console pada runtime production yang sama.
+- `TODO`: verifikasi kontrak trial 7+7 dan Owner Console pada runtime
+  production yang sama.
+
+### Gap SagaView ditutup
+
+- `GAP-001` — `CONFIRMED` pada 31 Juli 2026: satu paid Tokopay canary
+  menghasilkan satu processed callback exactly-once, subscription aktif, dan
+  katalog canary otomatis diarsipkan pada Saga Platform release
+  `20260727085127-5bf7977`. Evidence restricted tetap di luar repository
+  publik.
 
 ### SagaBio
 

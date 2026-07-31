@@ -9,8 +9,24 @@ Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 Gunakan bersama [PRODUCT](PRODUCT.md), [DOSSIER](DOSSIER.md), dan exact release
 scope.
 
+## 2026-07-31 — Provider canary paid dan callback exactly-once
+
+- Klasifikasi: `CONFIRMED`.
+- Satu canary pembayaran Tokopay production bernilai rendah berhasil dibayar.
+- Jumlah intent tetap satu; satu callback provider diterima dan diproses
+  exactly-once.
+- Subscription menjadi aktif dan katalog canary otomatis diarsipkan.
+- Provenance runtime: Saga Platform release `20260727085127-5bf7977`.
+- Tidak ada deploy, migration, atau perubahan setting production dalam
+  verifikasi ini.
+- Backend cumulative candidate dan public self-service tetap
+  `IMPLEMENTED_NOT_DEPLOYED`.
+- Identifier transaksi, receipt, payload callback, tenant, dan data restricted
+  tidak disimpan di repository publik.
+
 ## 2026-07-31 — Provider canary intent dibuat
 
+- Status historis: `DEPRECATED` oleh entri paid/callback exactly-once di atas.
 - Status backend komersial: `IMPLEMENTED_NOT_DEPLOYED`.
 - Satu canary pembayaran production dibuat secara terotorisasi dan tetap
   pending/unpaid.

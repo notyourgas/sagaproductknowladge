@@ -132,6 +132,9 @@ readiness `BLOCKED`.
 - Studio frontend fixed 4R dan session completion/privacy handoff.
 - Release: `20260731113223-2f65a9a`.
 - Source: `2f65a9ac0322c33a429dcc888bdacd59836aab0b`.
+- Satu canary pembayaran Tokopay bernilai rendah berhasil dibayar pada Saga
+  Platform release `20260727085127-5bf7977`; satu callback diproses exactly-once,
+  subscription diaktifkan, dan katalog canary otomatis diarsipkan.
 - Public session-completion/changelog smoke lulus; changelog menampilkan
   v0.20.2 sebagai production aktif.
 - Backend production masih release `20260729002327-86d6920` pada source
@@ -146,7 +149,6 @@ readiness `BLOCKED`.
 - Owner Console context fix.
 - Trial dua fase server-side.
 - Subscription Growth/Pro flow.
-- Payment callback exactly-once.
 - Device trust dan exclusive lease hardening.
 - Public self-service source:
   `6ff15f653c64a3bb2ffed5ee3785341165dbb0c9`.
@@ -158,12 +160,12 @@ readiness `BLOCKED`.
   - Privacy/Terms memuat local-photo boundary, retention, grace, refund, dan
     offboarding.
 
-Blocker: satu canary pembayaran production sudah dibuat secara terotorisasi,
-tetapi masih pending/unpaid. Paid callback dan processed receipt exactly-once
-belum terverifikasi terhadap exact runtime candidate. Public self-service juga
-belum dipromosikan karena runtime signup production masih memakai kontrak trial
-lama; source publik tidak boleh menjanjikan 14 hari sebelum enforcement backend
-sesuai.
+Gate provider canary sudah ditutup: pembayaran nyata, callback exactly-once,
+aktivasi subscription, dan auto-archive katalog canary terverifikasi pada
+runtime production aktif. Backend cumulative candidate dan public self-service
+tetap belum dipromosikan karena runtime signup production masih memakai
+kontrak trial lama; source publik tidak boleh menjanjikan 14 hari sebelum
+enforcement backend sesuai.
 
 ### Release readiness backend candidate
 
@@ -194,7 +196,8 @@ sesuai.
 
 - Backend candidate terbaru belum live.
 - Trial dua fase belum production-activated.
-- Payment/provider belum terverifikasi hanya karena test otomatis lulus.
+- Provider canary nyata sudah terverifikasi pada Saga Platform aktif, tetapi
+  bukan bukti bahwa backend cumulative candidate terbaru sudah live.
 - Owner Console multi-device belum boleh disebut live sebelum backend candidate
   dipromosikan dan smoke production lulus.
 - Public Pricing/Help/Legal terbaru belum live.
