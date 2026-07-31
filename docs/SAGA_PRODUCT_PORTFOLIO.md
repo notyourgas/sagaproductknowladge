@@ -60,7 +60,7 @@ session, cancellation, dan data masing-masing produk tetap terpisah.
 
 | Produk | Kind | Status utama | Posisi saat ini |
 |---|---|---|---|
-| SagaDevs | Public product hub | STAGING_DEPLOYED | Source-preserving Polish v2 ada di protected Vercel Preview; production belum berubah |
+| SagaDevs | Public product hub | STAGING_DEPLOYED | Source-preserving Motion Polish v3 ada di protected Vercel Preview; production belum berubah |
 | SagaBook | Core SaaS | PRODUCTION_DEPLOYED | Customer Booking Center aktif; menuju onboarding dan first-booking activation |
 | SagaView | Core SaaS | PRODUCTION_DEPLOYED + IMPLEMENTED_NOT_DEPLOYED | Studio 4R dan operator session handoff live; backend komersial terbaru masih blocked provider canary |
 | SagaBio | Core SaaS | LOCAL_VALIDATED | MVP Laravel berjalan lokal; belum staging/production |

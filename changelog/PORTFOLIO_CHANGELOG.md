@@ -10,6 +10,14 @@ workflow, pricing, release, activation, atau blocker.
 Detail tetap berada pada changelog produk; entri docs-only berada di root
 [CHANGELOG](../CHANGELOG.md).
 
+## 2026-07-31 — SagaDevs source-preserving Motion Polish v3 Preview
+
+- Hierarchy dan placement diperbaiki tanpa mengganti style, font, tujuh section, atau fitur visual source.
+- Product title collision, offset heading Services, crop logo 3D, status-rail collision, serta hero CTA hierarchy ditutup dengan responsive guards.
+- Motion product/stage/reveal dibuat lebih kohesif, memiliki reduced-motion fallback, dan render WebGL berhenti di luar hero.
+- Release `source-preserving-motion-polish-v3` berstatus `STAGING_DEPLOYED` pada protected Vercel Preview; production `sagadevs.com` tidak berubah.
+- Static, browser empat viewport, accessibility desktop/mobile, visual sembilan viewport, health, dan security header gate lulus.
+
 ## 2026-07-31 — SagaDevs source-preserving Polish v2 Preview
 
 - Footer lengkap ditambahkan dan WhatsApp CTA diperkecil tanpa mengubah tujuh section atau fitur source.

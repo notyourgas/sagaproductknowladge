@@ -48,12 +48,13 @@ payment ledger tetap terpisah per produk.
 ### SagaDevs
 
 Parent product hub dan jalur masuk jasa digital. Corrected Preview
-`source-preserving-polish-v2` mempertahankan original style, font, tujuh
+`source-preserving-motion-polish-v3` mempertahankan original style, font, tujuh
 section, fitur interaktif, serta sembilan capture source-grounded SagaBook,
 SagaView, dan Sagafin. Perubahan hanya pada typography, hierarchy, spacing,
-density, placement, responsive behavior, dan focus management. Polish v2
-menambahkan footer lengkap, memperkecil CTA WhatsApp, menyelaraskan Process
-dengan Showroom, dan mencegah overlap title produk. Hub tidak
+density, placement, responsive behavior, motion, accessibility, dan focus
+management. Motion Polish v3 merapikan CTA hero, mencegah collision title
+produk, menjaga logo 3D utuh dan terpisah dari status rail, menambah transisi
+restrained, serta menghentikan render WebGL ketika hero tidak terlihat. Hub tidak
 memiliki login, pricing, payment, database lead, atau Super Admin aktif;
 placeholder source yang tersisa tersembunyi dan inert. Production belum berubah.
 

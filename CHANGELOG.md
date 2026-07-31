@@ -12,6 +12,16 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-07-31
 
+### SagaDevs source-preserving Motion Polish v3 Preview
+
+- Ringkasan: memperbaiki hierarchy/placement hero, collision judul produk, posisi logo 3D, motion product/stage/reveal, reduced-motion behavior, dan offscreen WebGL lifecycle.
+- Alasan: founder meminta visual lebih rapi dan lebih hidup tanpa mengganti style, font, komposisi, atau fitur menarik source.
+- Produk/area terdampak: SagaDevs hero, CTA, Services, Product Showroom, Process, motion, accessibility, performance, responsive QA, dan release provenance.
+- Klasifikasi: `CONFIRMED`; delivery `STAGING_DEPLOYED` pada protected Vercel Preview; production unchanged.
+- Source: release `source-preserving-motion-polish-v3` dan Vercel deployment `dpl_49Xm75khYddQ1j6PVhM2CgXnNVpy`.
+- Commit knowledge: `main HEAD`; SHA immutable dilaporkan setelah push.
+- Gate: static, browser empat viewport, accessibility desktop/mobile, visual sembilan viewport, health, security headers, dan preview-target verification lulus.
+
 ### SagaDevs source-preserving Polish v2 Preview
 
 - Ringkasan: menambahkan footer lengkap, compact WhatsApp CTA, left-aligned Process heading, product-title overlap guard, responsive showroom breakpoint, dan mono-font consistency.

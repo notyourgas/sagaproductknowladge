@@ -10,7 +10,7 @@ Menjadi rujukan publik untuk positioning, experience, technical boundary, dan re
 - Delivery: `STAGING_DEPLOYED` pada Vercel Preview.
 - Activation: `NOT_PRODUCTION_ACTIVATED`.
 - Business readiness: `NEEDS_CONFIRMATION`.
-- Evidence: corrected Vercel Preview `source-preserving-polish-v2`, health, security headers, static/browser gate, dan visual audit delapan viewport. Release redesign sebelumnya ditolak.
+- Evidence: corrected Vercel Preview `source-preserving-motion-polish-v3`, health, security headers, static/browser/accessibility gate, dan visual audit sembilan viewport. Release redesign sebelumnya ditolak.
 
 ## Overview produk
 
@@ -48,6 +48,7 @@ Satu hub yang menunjukkan bukti workflow asli dan meneruskan pengunjung ke produ
 - Showroom SagaBook, SagaView, dan Sagafin dengan sembilan source-grounded capture.
 - Responsive navigation dan accessible keyboard controls.
 - Compact WhatsApp CTA dan footer lengkap dengan navigasi, direct product links, contact, availability, copyright, serta back-to-top.
+- Component-safe product titles, repositioned 3D hero, coherent CTA hierarchy, restrained reveal/product motion, reduced-motion fallback, dan offscreen WebGL pause.
 
 ## Fitur MVP
 
@@ -141,4 +142,4 @@ Jika calon pengguna meminta demo penuh, arahkan ke landing atau guided demo prod
 
 ## Keputusan dan gap
 
-`CONFIRMED`: SagaDevs adalah parent hub, product landing tetap terpisah, original style/features/font harus dipertahankan, koreksi hanya menyentuh hierarchy/typography/placement, dan Polish v2 hanya berada pada Vercel Preview. Production belum berubah. `NEEDS CONFIRMATION`: visual UAT, promotion date, analytics production, portfolio publik, serta scope Super Admin.
+`CONFIRMED`: SagaDevs adalah parent hub, product landing tetap terpisah, original style/features/font harus dipertahankan, koreksi hanya menyentuh hierarchy/typography/placement/motion/accessibility, dan Motion Polish v3 hanya berada pada Vercel Preview. Production belum berubah. `NEEDS CONFIRMATION`: visual UAT, promotion date, analytics production, portfolio publik, serta scope Super Admin.
