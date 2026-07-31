@@ -13,8 +13,9 @@ Entri preview tidak otomatis berarti production atau domain activation.
 - Release `source-preserving-hero-scale-v4` berstatus `PRODUCTION_DEPLOYED` dan `PRODUCTION_ACTIVATED` pada `sagadevs.com`.
 - Model GLB hero diperbesar tepat 1,5× dari Motion Polish v3 serta digeser lebih kiri pada desktop dan tablet landscape.
 - Tablet portrait memiliki kompensasi posisi internal; mobile mempertahankan komposisi utuh dan center sedikit ke kiri.
+- Entry module 3D memakai filename versioned agar returning visitor tidak tertahan cache immutable versi sebelumnya.
 - Static, browser lokal empat viewport, accessibility desktop/mobile, visual audit sembilan viewport, protected Preview, dan browser regression production empat viewport lulus.
-- Health production, root HTML, security headers, dan `noindex` terverifikasi; production deployment `dpl_v5J3eQeQdGcsdoFHvhpX1Rm1QiJQ` berstatus `Ready`.
+- Health production, root HTML, versioned module, security headers, dan `noindex` terverifikasi; production deployment `dpl_5qvER4vn4H8m2CmpgmEtkcbnNxcU` berstatus `Ready`.
 
 ## 2026-07-31 — Source-preserving Motion Polish v3 Preview
 

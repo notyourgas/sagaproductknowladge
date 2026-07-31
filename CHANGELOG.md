@@ -18,7 +18,8 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 - Alasan: founder menyetujui keseluruhan Motion Polish v3 dan meminta penyesuaian terakhir logo 3D serta production deployment.
 - Produk/area terdampak: SagaDevs hero 3D, responsive positioning, release status, activation, portfolio, decision log, dan master knowledge.
 - Klasifikasi: `CONFIRMED`; delivery `PRODUCTION_DEPLOYED`; activation `PRODUCTION_ACTIVATED`.
-- Source: release `source-preserving-hero-scale-v4`, Preview `dpl_HR34sMyEpX6jnQ2u7YoBxHTqPewn`, production `dpl_v5J3eQeQdGcsdoFHvhpX1Rm1QiJQ`.
+- Cache safety: entry module 3D memakai filename versioned agar cache immutable lama tidak mempertahankan skala sebelumnya.
+- Source: release `source-preserving-hero-scale-v4`, Preview `dpl_9Crs8paTq9jenAsquu4hbA3mZqFP`, production `dpl_5qvER4vn4H8m2CmpgmEtkcbnNxcU`.
 - Commit knowledge: `main HEAD`; SHA immutable dilaporkan setelah push.
 - Gate: static, browser lokal empat viewport, accessibility desktop/mobile, visual sembilan viewport, Preview readiness, production health/headers, dan browser regression domain empat viewport lulus.
 

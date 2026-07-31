@@ -41,7 +41,7 @@ Activation: `PRODUCTION_ACTIVATED` pada `sagadevs.com`.
 
 Business readiness: `NEEDS_CONFIRMATION`.
 
-Health, security headers, sembilan capture, tujuh section asli, responsive layout, navigation keyboard/mobile, dan noindex telah terverifikasi. Seluruh fitur visual source seperti hero 3D, command palette, system map, product showroom, workflow slider, dan mini-terminal tetap dipertahankan. Hero Scale v4 memperbesar model GLB tepat 1,5× dari Motion Polish v3, menggesernya lebih kiri, dan memberi kompensasi tablet portrait tanpa mengubah section lain. Browser regression production empat viewport lulus. Production deployment aktif adalah `dpl_v5J3eQeQdGcsdoFHvhpX1Rm1QiJQ`.
+Health, security headers, sembilan capture, tujuh section asli, responsive layout, navigation keyboard/mobile, dan noindex telah terverifikasi. Seluruh fitur visual source seperti hero 3D, command palette, system map, product showroom, workflow slider, dan mini-terminal tetap dipertahankan. Hero Scale v4 memperbesar model GLB tepat 1,5× dari Motion Polish v3, menggesernya lebih kiri, dan memberi kompensasi tablet portrait tanpa mengubah section lain. Entry module versioned mencegah cache immutable lama mempertahankan skala sebelumnya. Browser regression production empat viewport lulus. Production deployment aktif adalah `dpl_5qvER4vn4H8m2CmpgmEtkcbnNxcU`.
 
 ## Belum boleh diklaim
 

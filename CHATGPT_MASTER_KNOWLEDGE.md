@@ -53,7 +53,8 @@ section, fitur interaktif, serta sembilan capture source-grounded SagaBook,
 SagaView, dan Sagafin. Perubahan hanya pada typography, hierarchy, spacing,
 density, placement, responsive behavior, motion, accessibility, dan focus
 management. Hero Scale v4 memperbesar logo 3D tepat 1,5× dari Motion Polish v3,
-menggesernya lebih kiri, dan memberi kompensasi tablet portrait. Hub tidak
+menggesernya lebih kiri, memberi kompensasi tablet portrait, dan memakai entry
+module versioned untuk cache safety. Hub tidak
 memiliki login, pricing, payment, database lead, atau Super Admin aktif;
 placeholder source yang tersisa tersembunyi dan inert.
 

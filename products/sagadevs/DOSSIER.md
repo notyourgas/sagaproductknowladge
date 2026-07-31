@@ -10,7 +10,7 @@ Menjadi rujukan publik untuk positioning, experience, technical boundary, dan re
 - Delivery: `PRODUCTION_DEPLOYED` pada Vercel.
 - Activation: `PRODUCTION_ACTIVATED` pada `sagadevs.com`.
 - Business readiness: `NEEDS_CONFIRMATION`.
-- Evidence: production release `source-preserving-hero-scale-v4`, health, security headers, static/browser/accessibility gate, visual audit sembilan viewport, protected Preview, promotion, dan public-domain browser regression. Release redesign sebelumnya ditolak.
+- Evidence: production release `source-preserving-hero-scale-v4`, versioned 3D entry module, health, security headers, static/browser/accessibility gate, visual audit sembilan viewport, protected Preview, promotion, dan public-domain browser regression. Release redesign sebelumnya ditolak.
 
 ## Overview produk
 
