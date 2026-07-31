@@ -8,6 +8,15 @@ Mencatat perubahan material pada website induk dan showroom SagaDevs dengan prov
 
 Entri preview tidak otomatis berarti production atau domain activation.
 
+## 2026-07-31 — Source-preserving Polish v2 Preview
+
+- Release `source-preserving-polish-v2` berstatus `STAGING_DEPLOYED` pada protected Vercel Preview.
+- CTA WhatsApp diperkecil menjadi tombol normal dan footer lengkap ditambahkan tanpa mengubah tujuh section source.
+- Heading Process disejajarkan dengan Product Showroom; serif spacing, product title spacing, dan breakpoint showroom diperbaiki untuk mencegah overlap.
+- IBM Plex Mono Saga kini konsisten pada seluruh metadata mono.
+- Browser guard memverifikasi tiga product title bebas overlap, left edge heading konsisten, CTA maksimal 300 × 56 px, dan footer memiliki navigasi lengkap.
+- Visual audit delapan viewport lulus dengan overflow, clipping, dan tiny-text bernilai nol; production `sagadevs.com` tidak berubah.
+
 ## 2026-07-31 — Source-preserving typography correction Preview
 
 - Release `source-preserving-typography-v1` berstatus `STAGING_DEPLOYED` pada protected Vercel Preview.

@@ -48,10 +48,12 @@ payment ledger tetap terpisah per produk.
 ### SagaDevs
 
 Parent product hub dan jalur masuk jasa digital. Corrected Preview
-`source-preserving-typography-v1` mempertahankan original style, font, tujuh
+`source-preserving-polish-v2` mempertahankan original style, font, tujuh
 section, fitur interaktif, serta sembilan capture source-grounded SagaBook,
 SagaView, dan Sagafin. Perubahan hanya pada typography, hierarchy, spacing,
-density, placement, responsive behavior, dan focus management. Hub tidak
+density, placement, responsive behavior, dan focus management. Polish v2
+menambahkan footer lengkap, memperkecil CTA WhatsApp, menyelaraskan Process
+dengan Showroom, dan mencegah overlap title produk. Hub tidak
 memiliki login, pricing, payment, database lead, atau Super Admin aktif;
 placeholder source yang tersisa tersembunyi dan inert. Production belum berubah.
 

@@ -12,6 +12,16 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-07-31
 
+### SagaDevs source-preserving Polish v2 Preview
+
+- Ringkasan: menambahkan footer lengkap, compact WhatsApp CTA, left-aligned Process heading, product-title overlap guard, responsive showroom breakpoint, dan mono-font consistency.
+- Alasan: founder meminta koreksi elemen yang tidak pas tanpa mengubah keseluruhan desain atau fitur source.
+- Produk/area terdampak: SagaDevs footer, contact CTA, Process, Product Showroom, typography, responsive QA, dan release provenance.
+- Klasifikasi: `CONFIRMED`; delivery `STAGING_DEPLOYED` pada protected Vercel Preview; production unchanged.
+- Source: release `source-preserving-polish-v2` dan Vercel deployment `dpl_FXmrmvwu7NHVjkukAi11YWh4MCoh`.
+- Commit knowledge: `main HEAD`; SHA immutable dilaporkan setelah push.
+- Gate: static, browser desktop/mobile, automated overlap/alignment/CTA/footer checks, delapan-viewport visual audit, health, security headers, dan public-safety lulus.
+
 ### SagaDevs source-preserving typography correction Preview
 
 - Ringkasan: memulihkan source, style, keluarga font, tujuh section, dan fitur interaktif SagaDevs sebagai baseline kanonik.

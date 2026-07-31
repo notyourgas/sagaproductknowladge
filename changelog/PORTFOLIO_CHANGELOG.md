@@ -10,6 +10,15 @@ workflow, pricing, release, activation, atau blocker.
 Detail tetap berada pada changelog produk; entri docs-only berada di root
 [CHANGELOG](../CHANGELOG.md).
 
+## 2026-07-31 — SagaDevs source-preserving Polish v2 Preview
+
+- Footer lengkap ditambahkan dan WhatsApp CTA diperkecil tanpa mengubah tujuh section atau fitur source.
+- Heading Process kini memakai garis kiri yang sama dengan Product Showroom.
+- Spacing serif, product title, dan responsive showroom diperbaiki agar tidak overlap pada desktop maupun mobile.
+- IBM Plex Mono Saga dipakai konsisten untuk metadata.
+- Release `source-preserving-polish-v2` berstatus `STAGING_DEPLOYED` pada protected Vercel Preview; production `sagadevs.com` tidak berubah.
+- Static, browser, automated layout guards, visual delapan viewport, health, security, dan public-safety gate lulus.
+
 ## 2026-07-31 — SagaDevs source-preserving typography correction Preview
 
 - Source composition, original font families, tujuh section, dan seluruh fitur visual/interaktif lama dipertahankan.

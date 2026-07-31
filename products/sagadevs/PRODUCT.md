@@ -9,7 +9,7 @@ Menjadi ringkasan kanonik website induk SagaDevs sebagai portfolio product hub d
 
 ## Konteks
 
-Release koreksi `source-preserving-typography-v1` terverifikasi pada protected Vercel Preview. Domain production `sagadevs.com` belum dipromosikan ke release ini dan prototype tetap `noindex`. Release redesign `ui-ux-sprints-1-5-preview-v1` telah ditolak dan tidak lagi menjadi baseline visual.
+Release `source-preserving-polish-v2` terverifikasi pada protected Vercel Preview. Domain production `sagadevs.com` belum dipromosikan ke release ini dan prototype tetap `noindex`. Release redesign `ui-ux-sprints-1-5-preview-v1` telah ditolak dan tidak lagi menjadi baseline visual.
 
 ## Ringkasan
 
@@ -41,7 +41,7 @@ Activation: `NOT_PRODUCTION_ACTIVATED`.
 
 Business readiness: `NEEDS_CONFIRMATION`.
 
-Health, security headers, sembilan capture, tujuh section asli, responsive layout, navigation keyboard/mobile, dan noindex telah terverifikasi. Seluruh fitur visual source seperti hero 3D, command palette, system map, product showroom, workflow slider, dan mini-terminal tetap dipertahankan. Vercel Preview menggunakan Deployment Protection. Production tidak berubah.
+Health, security headers, sembilan capture, tujuh section asli, responsive layout, navigation keyboard/mobile, dan noindex telah terverifikasi. Seluruh fitur visual source seperti hero 3D, command palette, system map, product showroom, workflow slider, dan mini-terminal tetap dipertahankan. Polish v2 menambahkan footer lengkap, memperkecil CTA WhatsApp, menyelaraskan heading Process dengan Showroom, menghilangkan risiko overlap judul produk, dan memakai IBM Plex Mono secara konsisten untuk metadata. Vercel Preview menggunakan Deployment Protection. Production tidak berubah.
 
 ## Belum boleh diklaim
 

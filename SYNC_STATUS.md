@@ -12,11 +12,11 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-07-31T23:00:00+07:00 |
+| Waktu pembaruan terakhir | 2026-07-31T21:47:53+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `49df78a6ab22e1dd9809fa750f9c3424222ae84b` |
-| Informasi terakhir disinkronkan | SagaDevs corrected source-preserving typography Preview; redesign sebelumnya deprecated; production tidak berubah. |
+| Baseline sebelum pembaruan | `8d73c89e665f501bef11ed7782e7e63a52a0bc18` |
+| Informasi terakhir disinkronkan | SagaDevs source-preserving Polish v2 Preview: footer, compact CTA, aligned Process, overlap guard, responsive showroom, dan mono-font consistency; production tidak berubah. |
 | Status sinkronisasi | `UP TO DATE` setelah commit/push dan remote verification |
 | Konflik | Tidak ada; local `main` sama dengan `origin/main` sebelum edit. |
 | Error | Tidak ada error terbuka pada awal sinkronisasi. |
@@ -31,12 +31,11 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHANGELOG.md`
 - `DECISIONS.md`
-- `GAPS.md`
 - `SYNC_STATUS.md`
 
 ## Item menunggu konfirmasi
 
-Visual UAT founder dan promotion date ke `sagadevs.com` belum ditutup. Portfolio client, analytics production, serta scope dan security boundary Super Admin masih `NEEDS CONFIRMATION`. Corrected Preview tetap `noindex` dan dilindungi; production tidak berubah. Status produk lain tidak diubah oleh sinkronisasi ini.
+Visual UAT founder dan promotion date ke `sagadevs.com` belum ditutup. Portfolio client, analytics production, serta scope dan security boundary Super Admin masih `NEEDS CONFIRMATION`. Polish v2 Preview tetap `noindex` dan dilindungi; production tidak berubah. Status produk lain tidak diubah oleh sinkronisasi ini.
 
 ## Cara verifikasi
 
