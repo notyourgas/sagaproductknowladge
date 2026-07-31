@@ -10,6 +10,21 @@ workflow, pricing, release, activation, atau blocker.
 Detail tetap berada pada changelog produk; entri docs-only berada di root
 [CHANGELOG](../CHANGELOG.md).
 
+## 2026-07-31 — SagaView UI/UX shell refinement production
+
+- Owner, Studio, public, dan customer shell kini memakai hierarchy operasional
+  solid, satu aksi utama, touch target minimal 44 px, motion 180 ms, serta
+  forced-colors/reduced-motion.
+- Tepat satu `Powered by SagaView` tampil pada tiap surface dan tidak masuk ke
+  export foto, print, invoice, atau receipt.
+- Backend/Owner `f26bb57737fc25a0a40d350dc26ca727d30885b2`
+  (`20260731132030-f26bb57`) dan Studio
+  `12e96591380d1256038bd7fb66b49d0e4090392e`
+  (`20260731132030-12e9659`) aktif atomik di production.
+- Full acceptance, backup, deploy gate, responsive audit, service health, dan
+  public smoke lulus. Business readiness mass-scale tetap menunggu Founding
+  Studio Pilot.
+
 ## 2026-07-31 - SagaBook privacy governance implemented in source
 
 - Consent berversi, customer privacy request, owner triage, incident register,

@@ -53,6 +53,12 @@ handoff, support diagnostics, trial dua fase, subscription, dan billing.
 Owner Console, Studio Console, device lease, session workflow, frame catalog,
 editor/review, export/print, recovery, support, trial, plan, dan billing.
 
+UI production memakai shell operasional solid dengan hierarchy lokasi,
+tenant, status, dan aksi utama yang jelas. Target interaktif minimal 44 px,
+motion dibatasi 180 ms, forced-colors/reduced-motion didukung, dan tepat satu
+`Powered by SagaView` tampil pada surface aplikasi/public/customer tanpa masuk
+ke export, print, invoice, atau receipt.
+
 ## Fitur MVP
 
 `CONFIRMED`: journey Studio, output 4R, completion/privacy handoff,
@@ -96,9 +102,9 @@ cloud, dan laporan dasar. Pro: 4 device, 50 frame aktif, 10 preset, offline 168
 jam, 10 GB aset frame cloud, laporan lanjutan, activity log, dan priority
 support. Session/foto dipasarkan unlimited dengan fair-use; foto tetap lokal.
 
-`CONFIRMED` — kontrak ini aktif di production pada backend release
-`20260731101529-528e68d` dan Studio release
-`20260731101529-f6fa6f3`.
+`CONFIRMED` — kontrak ini aktif di production. Runtime terbaru memakai backend
+release `20260731132030-f26bb57` dan Studio release
+`20260731132030-12e9659`.
 
 ## Kompetitor
 
@@ -165,6 +171,8 @@ pada UI customer.
   ada error-journal baru pada window verifikasi.
 - Physical Windows/Epson dan recovery memakai owner attestation carry-forward;
   artifact restricted tetap berada di evidence privat.
+- Responsive production audit pada 390x844, 1024x768, dan 1440x900 tidak
+  menemukan overflow, target audit di bawah 44 px, atau Axe serious finding.
 
 ## Risiko dan asumsi
 

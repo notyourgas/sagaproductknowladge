@@ -174,3 +174,17 @@ keputusan pengganti.
 | Pemberi keputusan | Andreas / founder |
 | Status | `CONFIRMED` |
 | Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [Data Privacy](docs/technical/DATA_PRIVACY.md), [Gaps](GAPS.md) |
+
+## DEC-012 — Branding signature SagaBook dan SagaView
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-07-31 |
+| Topik | Branding product surface |
+| Keputusan | Semua surface aplikasi, public, dan customer SagaBook menampilkan tepat satu `Powered by SagaBook`; SagaView menampilkan tepat satu `Powered by SagaView`. Signature harus halus tetapi terbaca, accessible, responsif, tidak menutupi konten, dan tidak dimasukkan ke foto, hasil cetak, export, invoice, atau receipt. |
+| Alasan | Produk memerlukan attribution konsisten tanpa mengganggu operasi atau artifact bisnis customer. |
+| Alternatif yang dipertimbangkan | Tanpa signature; watermark fixed; watermark masuk ke output customer. |
+| Dampak | Shell, storefront, template, visual regression, accessibility, forced-colors, dan public knowledge harus memeriksa presence tepat satu serta mencegah cross-brand label. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED` |
+| Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaView Product](products/sagaview/PRODUCT.md) |

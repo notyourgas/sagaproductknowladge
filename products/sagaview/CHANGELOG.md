@@ -4,6 +4,27 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-07-31 — UI/UX shell refinement production
+
+- Status: `PRODUCTION_DEPLOYED` dan `PRODUCTION_ACTIVATED`.
+- Before: Owner/Studio/public/customer memakai beberapa pola shell dengan
+  hierarchy lokasi, status, dan aksi yang kurang konsisten.
+- After: surface operasional solid, satu aksi utama, target minimal 44 px,
+  motion 180 ms, forced-colors/reduced-motion, serta tepat satu accessible
+  `Powered by SagaView` per surface. Signature tidak masuk output bisnis.
+- Backend/Owner source `f26bb57737fc25a0a40d350dc26ca727d30885b2`,
+  release `20260731132030-f26bb57`; Studio source
+  `12e96591380d1256038bd7fb66b49d0e4090392e`, release
+  `20260731132030-12e9659`.
+- Validation: backend 908/908 dan 10.629 assertions; Studio 156 unit dan 56/56
+  E2E; Owner visual 2/2; dependency audit 0; responsive production audit,
+  backup, deploy gate 6/6, 13-route smoke, services, queue, dan error journal
+  lulus.
+- Rollback: backend `20260731101529-528e68d`; Studio
+  `20260731101529-f6fa6f3`.
+- Residual risk: authenticated Owner visual smoke production tidak dilakukan
+  tanpa credential; exact-source authenticated regression lokal lulus.
+
 ## 2026-07-31 — Founder commercial contract production
 
 - Before: Growth sudah memiliki sebagian limit, tetapi Pro frame dan storage

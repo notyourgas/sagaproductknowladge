@@ -135,6 +135,19 @@ Kontrak ini sekarang enforced server-side pada runtime production yang aktif.
 - source folder dan output file tetap utuh;
 - completion event yang dikirim hanya memakai data operasional ter-redact.
 
+## UI/UX shell dan branding
+
+`CONFIRMED` — production:
+
+- Owner, Studio, public, dan customer shell memakai permukaan operasional solid
+  dengan hierarchy lokasi/tenant/status yang lebih jelas;
+- setiap screen memiliki satu aksi utama yang dominan, target interaktif
+  minimal 44 px, dan motion 180 ms yang menghormati reduced-motion;
+- forced-colors, keyboard focus, contrast, serta responsivitas mobile, tablet,
+  dan desktop masuk acceptance gate;
+- setiap surface menampilkan tepat satu `Powered by SagaView` yang accessible;
+  signature tidak dimasukkan ke export foto, hasil print, invoice, atau receipt.
+
 ## Status saat ini
 
 - Delivery: `PRODUCTION_DEPLOYED`.
@@ -145,11 +158,11 @@ Kontrak ini sekarang enforced server-side pada runtime production yang aktif.
 ### Runtime production
 
 - Backend source:
-  `528e68d4aea27d847250075acd02d7753b07e3b6`.
-- Backend release: `20260731101529-528e68d`.
+  `f26bb57737fc25a0a40d350dc26ca727d30885b2`.
+- Backend release: `20260731132030-f26bb57`.
 - Studio source:
-  `f6fa6f368e5734842d5dff0ff2310f5d5f7a9299`.
-- Studio release: `20260731101529-f6fa6f3`.
+  `12e96591380d1256038bd7fb66b49d0e4090392e`.
+- Studio release: `20260731132030-12e9659`.
 - Saga Platform source:
   `285ab943b93466deda0f6c07466c0fbe8da16e4c`.
 - Saga Platform release: `20260731075424-285ab94`.
@@ -171,8 +184,8 @@ Kontrak ini sekarang enforced server-side pada runtime production yang aktif.
 
 ### Release validation
 
-- Backend: 908/908 test, 10.621 assertions.
-- Studio: 156 unit test dan 54 E2E default-parallel.
+- Backend: 908/908 test, 10.629 assertions.
+- Studio: 156 unit test dan 56/56 E2E default-parallel.
 - Public production browser: 8/8 self-service E2E.
 - Import 50/200/500, accessibility, responsive mobile–desktop, forced-colors,
   reduced-motion, dependency audit, dan bundle budget lulus.
@@ -183,8 +196,8 @@ Kontrak ini sekarang enforced server-side pada runtime production yang aktif.
 
 ### Rollback
 
-- Backend: `20260731082637-70155bb`.
-- Studio: `20260731082637-28adcee`.
+- Backend: `20260731101529-528e68d`.
+- Studio: `20260731101529-f6fa6f3`.
 - Backup release dan konfigurasi Nginx sebelumnya dipertahankan.
 
 ## Belum boleh diklaim

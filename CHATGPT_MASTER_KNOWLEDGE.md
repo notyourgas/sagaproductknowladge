@@ -97,15 +97,19 @@ foto dipasarkan unlimited dengan fair-use; foto tetap lokal.
 Trial contract: 14 hari dua fase server-side; hari 1–7 full access, hari 8–14
 plan-limited, tanpa auto-charge.
 
-Update terbaru: backend `528e68d4aea27d847250075acd02d7753b07e3b6`
-(`20260731101529-528e68d`) dan Studio
-`f6fa6f368e5734842d5dff0ff2310f5d5f7a9299`
-(`20260731101529-f6fa6f3`) aktif atomik. Owner Console lintas browser, Studio
+Update terbaru: backend/Owner
+`f26bb57737fc25a0a40d350dc26ca727d30885b2`
+(`20260731132030-f26bb57`) dan Studio
+`12e96591380d1256038bd7fb66b49d0e4090392e`
+(`20260731132030-12e9659`) aktif atomik. Owner Console lintas browser, Studio
 exclusive lease, output 4R, session completion/privacy handoff,
 trial/subscription, serta public Home/Pricing/Help/Contact/Privacy/Terms/Legal
 aktif. Limit device/frame/preset, quota aset frame cloud, fair-use,
 support/retention/offboarding, backup/restore, additive migration, regression,
-security header, rollback, monitoring, dan public smoke lulus. Satu canary payment production
+security header, rollback, monitoring, dan public smoke lulus. Shell aplikasi
+memakai hierarchy operasional solid, target minimal 44 px, reduced-motion/
+forced-colors, serta tepat satu `Powered by SagaView` pada tiap surface tanpa
+masuk ke export/print/invoice/receipt. Satu canary payment production
 berhasil dibayar dan callback diproses exactly-once; release tidak membuat
 intent/QRIS/transaksi kedua.
 

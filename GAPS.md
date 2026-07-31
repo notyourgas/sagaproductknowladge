@@ -64,6 +64,9 @@ ketika keputusan atau release baru menutup gap.
   session nyata total dan minimal 10 per studio, physical 4R,
   offline/reconnect, emergency transfer, kepatuhan SLA, serta minimal 2 studio
   lanjut berbayar.
+- `NEEDS CONFIRMATION`: authenticated Owner visual smoke pada runtime terbaru;
+  exact-source authenticated browser regression dan public production smoke
+  sudah lulus, tetapi credential tidak digunakan dalam audit publik.
 - `NEEDS CONFIRMATION`: receipt delivery WhatsApp nyata dan rekonsiliasi
   evidence physical-UAT yang masih diwajibkan oleh preflight operasional lama.
 

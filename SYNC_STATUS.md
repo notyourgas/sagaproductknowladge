@@ -16,11 +16,11 @@ setelah push dan dapat diperoleh dengan `git rev-parse HEAD`.
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-07-31T18:54:33+07:00 |
+| Waktu pembaruan terakhir | 2026-07-31T20:15:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `8bb18dab6784da2c51b51df42d565d48eb7a518d` |
-| Informasi terakhir disinkronkan | Privacy governance SagaBook selesai di source: consent berversi, customer request, owner triage, incident, offboarding, dan retention preview. Production dan public policy tidak berubah. |
+| Baseline sebelum pembaruan | `f6a19eafa3d57ee739a858d89db1992814a1c87a` |
+| Informasi terakhir disinkronkan | SagaView S80 UI/UX shell refinement production: hierarchy operasional solid, accessibility, target 44 px, motion, dan branding signature pada exact backend/Owner serta Studio release terbaru. |
 | Status sinkronisasi | `UP TO DATE` setelah commit/push dan remote verification |
 | Konflik | Tidak ada pada baseline; branch lokal dan `origin/main` sama sebelum edit. |
 | Error | Tidak ada error terbuka pada awal sinkronisasi. |
@@ -31,14 +31,16 @@ setelah push dan dapat diperoleh dengan `git rev-parse HEAD`.
 - `CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `GAPS.md`
-- `products/sagabook/PRODUCT.md`
-- `products/sagabook/DOSSIER.md`
-- `products/sagabook/CHANGELOG.md`
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/DOSSIER.md`
+- `products/sagaview/CHANGELOG.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
+- `DECISIONS.md`
 
 ## Item menunggu konfirmasi
 
 Kontrak komersial founder SagaBook dan SagaView sudah production-deployed.
+SagaView S80 UI/UX shell refinement sudah production-deployed dan activated.
 Keputusan privacy/retention/offboarding SagaBook sudah owner-approved dan
 workflow aman non-destruktif sudah `IMPLEMENTED_NOT_DEPLOYED`, tetapi belum
 aktif atau dipublikasikan. Business readiness tetap menunggu Founding Studio
