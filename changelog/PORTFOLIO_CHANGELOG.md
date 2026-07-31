@@ -10,6 +10,14 @@ workflow, pricing, release, activation, atau blocker.
 Detail tetap berada pada changelog produk; entri docs-only berada di root
 [CHANGELOG](../CHANGELOG.md).
 
+## 2026-07-31 — SagaView provider canary pending
+
+- Satu canary pembayaran production dibuat secara terotorisasi.
+- Status masih pending/unpaid; callback exactly-once dan activation provider
+  belum terverifikasi.
+- Tidak ada deploy, migration, atau perubahan setting production.
+- Data transaksi restricted tidak dimasukkan ke knowledge publik.
+
 ## 2026-07-31 — SagaView Session Completion & Privacy Handoff production
 
 - Customer tidak lagi mereset sesi sendiri; operator memverifikasi output dan

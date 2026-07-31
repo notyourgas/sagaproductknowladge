@@ -158,10 +158,12 @@ readiness `BLOCKED`.
   - Privacy/Terms memuat local-photo boundary, retention, grace, refund, dan
     offboarding.
 
-Blocker: belum ada Tokopay canary/paid callback production yang terikat ke
-exact runtime candidate. Public self-service juga belum dipromosikan karena
-runtime signup production masih memakai kontrak trial lama; source publik tidak
-boleh menjanjikan 14 hari sebelum enforcement backend sesuai.
+Blocker: satu canary pembayaran production sudah dibuat secara terotorisasi,
+tetapi masih pending/unpaid. Paid callback dan processed receipt exactly-once
+belum terverifikasi terhadap exact runtime candidate. Public self-service juga
+belum dipromosikan karena runtime signup production masih memakai kontrak trial
+lama; source publik tidak boleh menjanjikan 14 hari sebelum enforcement backend
+sesuai.
 
 ### Release readiness backend candidate
 

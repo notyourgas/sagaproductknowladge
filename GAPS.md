@@ -24,7 +24,7 @@ ketika keputusan atau release baru menutup gap.
 
 | ID | Produk/area | Label | Pertanyaan atau gap | Bukti penutup |
 |---|---|---|---|---|
-| GAP-001 | SagaView | NEEDS CONFIRMATION | Otorisasi dan batas nominal canary pembayaran production belum dicatat di knowledge publik. | Keputusan owner dan evidence provider yang disimpan di lokasi restricted. |
+| GAP-001 | SagaView | NEEDS CONFIRMATION | Canary pembayaran terotorisasi sudah dibuat, tetapi masih pending/unpaid dan belum menghasilkan callback exactly-once yang terverifikasi. | Paid provider result dan processed callback evidence yang terikat ke exact runtime candidate serta disimpan di lokasi restricted. |
 | GAP-002 | SagaView | NEEDS CONFIRMATION | Backend trial dua fase, billing, callback, dan Owner Console candidate belum production-activated. | Release immutable, migration, provider callback nyata, dan public smoke. |
 | GAP-003 | SagaView | NEEDS CONFIRMATION | Public Pricing/Help/Privacy/Terms candidate belum live karena signup production masih memakai kontrak trial lama. | Backend dan frontend dipromosikan atomik, lalu contract smoke. |
 | GAP-004 | SagaBook | NEEDS CONFIRMATION | Business readiness belum dibuktikan pada cohort studio nyata. | Minimal cohort onboarding, booking nyata, support observation, dan incident review. |
@@ -45,8 +45,8 @@ ketika keputusan atau release baru menutup gap.
 
 ### SagaView
 
-- `NEEDS CONFIRMATION`: prosedur siapa yang membayar canary provider dan batas
-  nominalnya.
+- `NEEDS CONFIRMATION`: penyelesaian canary yang sudah terotorisasi dan
+  verifikasi paid callback exactly-once pada exact runtime candidate.
 - `NEEDS CONFIRMATION`: limit Growth/Pro yang final selain harga, termasuk
   device, frame, session, storage metadata, dan offline grace.
 - `NEEDS CONFIRMATION`: kebijakan lisensi printer/device pengganti dan

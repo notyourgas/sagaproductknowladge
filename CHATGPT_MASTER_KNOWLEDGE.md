@@ -72,7 +72,7 @@ Status: Studio frontend `PRODUCTION_DEPLOYED`; backend komersial terbaru
 `IMPLEMENTED_NOT_DEPLOYED` dan `BLOCKED`.
 Harga bulanan: Growth Rp200.000, Pro Rp500.000.
 Trial contract: 14 hari dua fase; production activation backend terbaru masih
-menunggu provider canary.
+menunggu penyelesaian provider canary.
 
 Update terbaru: output 4R dan operator-controlled session completion/privacy
 handoff production pada release `20260731113223-2f65a9a`. Customer memanggil
@@ -82,8 +82,9 @@ Public Home/Pricing/Help/Legal dengan harga unit dan kontrak trial dua fase
 sudah implemented tetapi belum production karena signup live masih menjalankan
 trial lama. Backend Owner Console/device/trial/subscription candidate sudah
 melewati full regression, backup/restore, migration, build, security, dan
-rollback rehearsal, tetapi production backend belum berubah karena paid
-Tokopay canary serta processed callback nyata belum tersedia.
+rollback rehearsal. Satu canary payment production sudah dibuat secara
+terotorisasi, tetapi masih pending/unpaid; paid callback dan processed receipt
+nyata belum tersedia. Production backend belum berubah.
 
 ### SagaBio
 

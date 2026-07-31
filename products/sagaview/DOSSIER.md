@@ -62,7 +62,8 @@ belum live.
 
 ## Roadmap
 
-1. Real provider canary dan exactly-once callback evidence.
+1. Selesaikan canary terotorisasi yang masih pending/unpaid dan verifikasi
+   exactly-once callback evidence.
 2. Promote backend candidate/migration dan public self-service atomik.
 3. Verify Owner Console, trial 7+7, billing, monitoring, dan public smoke.
 4. Controlled studio cohort dan support observation.

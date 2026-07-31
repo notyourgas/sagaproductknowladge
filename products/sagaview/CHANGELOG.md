@@ -9,6 +9,17 @@ Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 Gunakan bersama [PRODUCT](PRODUCT.md), [DOSSIER](DOSSIER.md), dan exact release
 scope.
 
+## 2026-07-31 — Provider canary intent dibuat
+
+- Status backend komersial: `IMPLEMENTED_NOT_DEPLOYED`.
+- Satu canary pembayaran production dibuat secara terotorisasi dan tetap
+  pending/unpaid.
+- Tidak ada retry atau intent kedua.
+- Paid callback, processed receipt exactly-once, dan activation provider belum
+  terverifikasi.
+- Source, release, database migration, dan production setting tidak berubah.
+- Detail transaksi dan identifier restricted tidak disimpan di repository ini.
+
 ## 2026-07-31 — Session Completion & Privacy Handoff production
 
 - Status: `PRODUCTION_DEPLOYED`.
