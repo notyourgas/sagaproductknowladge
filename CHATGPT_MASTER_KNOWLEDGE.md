@@ -74,25 +74,22 @@ device, membuka session, memilih folder, mengimpor 50/200/500 foto, membiarkan
 customer memilih frame/foto, menyusun output, lalu export/print. Foto customer
 tetap berada di device studio.
 
-Status: Studio frontend `PRODUCTION_DEPLOYED`; backend komersial terbaru
-`IMPLEMENTED_NOT_DEPLOYED` dan `BLOCKED`.
+Status: `PRODUCTION_DEPLOYED` dan `PRODUCTION_ACTIVATED`; business readiness
+mass-scale `NEEDS CONFIRMATION`.
 Harga bulanan: Growth Rp200.000, Pro Rp500.000.
-Trial contract: 14 hari dua fase; production activation backend terbaru masih
-menunggu promosi exact candidate dan public smoke, bukan lagi provider canary.
+Trial contract: 14 hari dua fase server-side; hari 1–7 full access, hari 8–14
+plan-limited, tanpa auto-charge.
 
-Update terbaru: output 4R dan operator-controlled session completion/privacy
-handoff production pada release `20260731113223-2f65a9a`. Customer memanggil
-operator; operator memverifikasi output/handoff; privacy mode memasking nama
-output; cleanup recovery fail-closed tanpa menghapus source/output file.
-Public Home/Pricing/Help/Legal dengan harga unit dan kontrak trial dua fase
-sudah implemented tetapi belum production karena signup live masih menjalankan
-trial lama. Backend Owner Console/device/trial/subscription candidate sudah
-melewati full regression, backup/restore, migration, build, security, dan
-rollback rehearsal. Satu canary payment production sudah dibuat secara
-terotorisasi lalu berhasil dibayar; satu callback provider diproses
-exactly-once, subscription aktif, dan katalog canary otomatis diarsipkan pada
-Saga Platform release `20260727085127-5bf7977`. Production backend candidate
-belum berubah.
+Update terbaru: backend `70155bb7db901beebb9fdeb65d5869a18ee8f874`
+(`20260731082637-70155bb`) dan Studio
+`28adcee9706ec8fde509d410d60cbea173c74a5b`
+(`20260731082637-28adcee`) aktif atomik. Owner Console lintas browser, Studio
+exclusive lease, output 4R, session completion/privacy handoff,
+trial/subscription, serta public Home/Pricing/Help/Contact/Privacy/Terms/Legal
+aktif. Backup/restore, additive migration, regression, security header,
+rollback, monitoring, dan public smoke lulus. Satu canary payment production
+berhasil dibayar dan callback diproses exactly-once; release tidak membuat
+intent/QRIS/transaksi kedua.
 
 ### SagaBio
 
@@ -183,10 +180,10 @@ Delivery: `PLANNED`. Belum production-activated.
 
 ## Larangan klaim
 
-- Jangan sebut SagaView backend terbaru live hanya karena provider canary sudah
-  lulus; exact candidate tetap harus dipromosikan dan lulus public smoke.
-- Jangan sebut public Pricing/Help/Legal SagaView terbaru live sebelum backend
-  trial dan public route dipromosikan bersama lalu lulus public smoke.
+- Jangan sebut SagaView business-ready mass-scale sebelum controlled cohort,
+  observasi support, dan policy komersial/legal selesai.
+- Jangan klaim foto customer disimpan di cloud, unlimited device, atau bundle
+  SagaBook–SagaView tersedia.
 - Jangan sebut SagaBio atau SagaMenu production.
 - Jangan sebut COYABAG siap transaksi penuh.
 - Jangan sebut AOGTICVITY production multi-device.

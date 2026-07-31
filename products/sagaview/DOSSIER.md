@@ -3,16 +3,14 @@
 ## Tujuan dokumen
 
 Merangkum product, UX, business, technical, sales, dan content contract
-SagaView tanpa mencampur fitur live dengan release candidate.
+SagaView berdasarkan runtime production aktif.
 
 ## Konteks dan status bukti
 
 - Updated: 31 Juli 2026
-- Delivery: `PRODUCTION_DEPLOYED` untuk Studio 4R; kandidat lain
-  `IMPLEMENTED_NOT_DEPLOYED`
-- Activation: `PRODUCTION_ACTIVATED` untuk Studio v0.20.2;
-  `NOT_PRODUCTION_ACTIVATED` untuk backend/public self-service candidate
-- Business readiness: `BLOCKED`
+- Delivery: `PRODUCTION_DEPLOYED`
+- Activation: `PRODUCTION_ACTIVATED`
+- Business readiness: `NEEDS CONFIRMATION` untuk penjualan massal
 
 ## Overview produk
 
@@ -31,9 +29,10 @@ SagaDev.
 ## Persona pengguna
 
 - Owner: mengelola plan, frame, device, dan kesehatan operasional.
+- Admin: mengelola frame, setting, serta report sesuai capability.
 - Operator: menjalankan session, import, recovery, export, dan print.
-- Customer: memilih foto/frame dan mereview hasil.
-- `NEEDS CONFIRMATION`: segmen studio berdasarkan volume/perangkat.
+- Customer: memilih foto/frame dan mereview hasil dalam sesi temporary.
+- `NEEDS CONFIRMATION`: segmentasi studio berdasarkan volume/perangkat.
 
 ## Value proposition
 
@@ -44,32 +43,28 @@ terstruktur.
 
 ## Use case
 
-Provisioning, device activation, session/folder, import 50/200/500 foto,
-selection, editor, review, output 4R, offline recovery, emergency transfer, dan
-support diagnostics.
+Provisioning, Owner Console, device activation, exclusive Studio lease,
+session/folder, import 50/200/500 foto, frame catalog, selection, editor,
+review, output 4R, offline recovery, emergency transfer, completion/privacy
+handoff, support diagnostics, trial dua fase, subscription, dan billing.
 
 ## Fitur utama
 
 Owner Console, Studio Console, device lease, session workflow, frame catalog,
-editor/review, export/print, trial/plan candidate, dan billing candidate.
+editor/review, export/print, recovery, support, trial, plan, dan billing.
 
 ## Fitur MVP
 
-`CONFIRMED`: core Studio workflow, output 4R, serta operator-controlled session
-completion/privacy handoff live. Backend trial, subscription, payment callback,
-Owner Console context fix, serta public self-service adalah candidate yang
-belum live.
+`CONFIRMED`: journey Studio, output 4R, completion/privacy handoff,
+Owner Console, trial dua fase, subscription, dan public self-service aktif di
+production.
 
 ## Roadmap
 
-1. Promote backend candidate/migration dan public self-service atomik.
-2. Verify Owner Console, trial 7+7, billing, monitoring, dan public smoke.
-3. Controlled studio cohort dan support observation.
-4. `NEEDS CONFIRMATION`: SagaBook integration timing.
-
-Gate provider canary sudah `CONFIRMED`: satu pembayaran nyata diproses
-exactly-once, mengaktifkan subscription, dan mengarsipkan katalog canary pada
-Saga Platform release `20260727085127-5bf7977`.
+1. Controlled cohort tiga studio dan observasi support/incident.
+2. Finalisasi limit kuantitatif Growth/Pro dan policy komersial/legal.
+3. Evaluasi readiness mass self-service berdasarkan telemetry ter-redact.
+4. `NEEDS CONFIRMATION`: timing integrasi SagaBook; subscription tetap terpisah.
 
 ## User journey
 
@@ -79,20 +74,25 @@ memanggil operator → operator memverifikasi handoff → cleanup/reset.
 
 ## User flow
 
-Device lease hanya mengunci Studio/start-session. Owner Console seharusnya
-dapat digunakan dari browser setelah login. Customer tidak mereset sesi
-sendiri; cleanup recovery state, error/offline/reconnect/retry, dan emergency
-transfer harus fail-closed.
+Device lease hanya mengunci Studio/start-session. Owner Console dapat digunakan
+dari browser setelah login. Customer tidak mereset sesi sendiri; cleanup
+recovery state, error/offline/reconnect/retry, dan emergency transfer
+fail-closed. Entitlement ditentukan server; UI hanya merender snapshot.
 
 ## Business model
 
-Subscription SaaS bulanan per produk. Hardware, setup, support premium, dan
-transaction fee: `NEEDS CONFIRMATION`.
+Subscription SaaS bulanan per produk. SagaView dan SagaBook tetap memiliki
+subscription, entitlement, ledger, serta cancellation terpisah.
 
 ## Pricing
 
-`CONFIRMED`: Growth Rp200.000 dan Pro Rp500.000 per bulan. Bundle ditunda.
-Limit lengkap per paket: `NEEDS CONFIRMATION`.
+- Growth Rp200.000 per bulan.
+- Pro Rp500.000 per bulan.
+- Trial 14 hari: 7 hari full access lalu 7 hari plan-limited, tanpa auto-charge.
+- Bundle ditunda.
+
+Limit lengkap per paket, hardware, setup, dan support premium:
+`NEEDS CONFIRMATION`.
 
 ## Kompetitor
 
@@ -102,8 +102,8 @@ selection.
 
 ## Diferensiasi produk
 
-`PROPOSAL`: local-photo boundary, 50/200/500 workflow, exact 4R output,
-offline recovery, dan pemisahan Owner vs device-bound Studio.
+`CONFIRMED`: local-photo boundary, 50/200/500 workflow, exact 4R output,
+offline recovery, dan pemisahan Owner Console dari device-bound Studio.
 
 ## Brand positioning
 
@@ -117,44 +117,69 @@ Local-first studio workflow setelah sesi—dari folder ke hasil 4R.
 
 ## FAQ
 
-**Apakah foto masuk cloud?** Tidak sebagai product contract; metadata tertentu
-tetap diperlukan.
+**Apakah foto masuk cloud?** Tidak sebagai product contract; metadata
+operasional tertentu tetap diperlukan.
+
 **Bisa dipakai tanpa SagaBook?** Ya, produk dijual satuan.
-**Apakah trial 14 hari live?** Belum boleh diklaim sampai backend candidate
-production-activated.
+
+**Apakah trial 14 hari live?** Ya. Enforcement dua fase aktif server-side dan
+tanpa auto-charge.
+
+**Apakah semua komputer dapat memulai sesi?** Owner Console dapat diakses lintas
+device, tetapi Studio/start-session tetap mengikuti entitlement dan exclusive
+device lease.
 
 ## Technical overview
 
-Studio frontend/PWA local-first, cloud backend untuk account, entitlement,
-device/session metadata, frame sync, subscription, dan operational state.
+Studio frontend/PWA local-first; backend menyimpan account, membership produk,
+entitlement, device/session metadata, frame sync, subscription, payment state,
+dan operational state. Role/capability, session/cookie, subscription, audit,
+dan cancellation SagaView terpisah dari SagaBook.
 
 ## Integrasi
 
-Payment, notification, printer Windows/Epson, future SagaBook handoff.
-Provider Tokopay nyata sudah diverifikasi untuk satu canary bernilai rendah
-pada exact Saga Platform release aktif; validasi ini tidak otomatis membuktikan
-backend/public candidate terbaru sudah production.
+Payment provider, notification, printer Windows/Epson, dan future SagaBook
+account-link seam. Satu canary Tokopay bernilai rendah telah membuktikan jalur
+callback exactly-once; release tidak membuat transaksi kedua.
 
 ## Data yang digunakan
 
 Organization, membership, product account, entitlement, device lease, session,
 frame metadata, redacted completion event, subscription, payment state, dan
-audit. Customer photo bytes dirancang tetap lokal; privacy mode memasking nama
-output pada UI customer.
+audit. Customer photo bytes tetap lokal; privacy mode memasking nama output
+pada UI customer.
+
+## Reliability, security, dan operations
+
+- Exact backend/Studio release immutable dan rollback tersedia.
+- Additive migration, encrypted backup, disposable restore, deploy gate, dan
+  rollback compatibility lulus.
+- HSTS dan frame policy konsisten pada public, Laravel, dan Studio HTML routes.
+- Monitoring pascadeploy menunjukkan services aktif, failed job nol, dan tidak
+  ada error-journal baru pada window verifikasi.
+- Physical Windows/Epson dan recovery memakai owner attestation carry-forward;
+  artifact restricted tetap berada di evidence privat.
 
 ## Risiko dan asumsi
 
-- Backend/public payment candidate terbaru belum live, walau jalur provider
-  production aktif sudah lulus satu paid canary exactly-once.
-- Hardware/browser/storage behavior memerlukan physical acceptance.
+- Business readiness mass-scale belum dibuktikan melalui controlled cohort dan
+  observasi support nyata.
+- Hardware/browser/storage behavior tetap memerlukan UAT per studio.
 - `ASSUMPTION`: Epson L8050 adalah printer pilot utama.
-- Public copy tidak boleh mendahului server enforcement.
+- Identitas badan usaha/pajak dan policy lintas produk masih perlu finalisasi
+  owner sebelum ekspansi penjualan luas.
 
 ## KPI dan success metrics
 
-`PROPOSAL`: activation success, session completion, import duration,
-recovery rate, output success, support contact, trial-to-paid, dan studio
-retention. Target: `NEEDS CONFIRMATION`.
+`PROPOSAL`: activation success, session completion, import duration, recovery
+rate, output success, support contact, trial-to-paid, dan studio retention.
+Target kuantitatif: `NEEDS CONFIRMATION`.
+
+## Sales dan content
+
+Demo session end-to-end, jelaskan data boundary, hardware requirement, plan,
+trial, support, dan batas klaim. Gunakan foto sintetis/non-PII dan
+[Pitch Demo](PITCH_DEMO.md).
 
 ## Ide konten pemasaran
 
@@ -163,18 +188,18 @@ offline recovery.
 
 ## Contoh caption
 
-`PROPOSAL`: “Dari 200 foto ke hasil 4R tanpa mencatat nomor file.
-SagaView menjaga selection, framing, dan output dalam satu alur local-first.”
+`PROPOSAL`: “Dari 200 foto ke hasil 4R tanpa mencatat nomor file. SagaView
+menjaga selection, framing, dan output dalam satu alur local-first.”
 
 ## Ide campaign
 
 `PROPOSAL`: “200 Photos, One Session” sebagai controlled demo dengan foto
-sintetis/non-PII dan hasil physical UAT nyata.
+sintetis/non-PII.
 
 ## Sales talking points
 
-Demo session end-to-end, jelaskan data boundary, hardware requirement, plan,
-trial, support, dan apa yang belum live.
+Demo session end-to-end, jelaskan local-photo boundary, harga/trial, device
+lease, support, dan batas klaim business readiness.
 
 ## Objection handling
 

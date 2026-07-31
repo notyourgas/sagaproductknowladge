@@ -1,26 +1,24 @@
 # SagaView Product Knowledge
 
 Updated: 31 Juli 2026
-Evidence status: partial production + release candidate
+Evidence status: production deployed + production activated
 
 ## Tujuan dokumen
 
-Menjadi ringkasan fakta kanonik SagaView dan memisahkan scope live dari
-candidate. Detail lengkap berada di [DOSSIER](DOSSIER.md); keputusan terbuka
-berada di [GAPS](../../GAPS.md#sagaview).
+Menjadi ringkasan fakta kanonik SagaView. Detail lengkap berada di
+[DOSSIER](DOSSIER.md); keputusan terbuka berada di
+[GAPS](../../GAPS.md#sagaview).
 
 ## Konteks
 
-SagaView memiliki komponen production dan release candidate yang berbeda;
-setiap klaim di bawah berlaku hanya pada scope yang disebutkan.
+Fakta release di dokumen ini mengacu pada exact source dan runtime production
+yang diverifikasi pada 31 Juli 2026.
 
 ## Ringkasan
 
 SagaView adalah SaaS local-first untuk workflow self-photo studio setelah sesi
 foto: device activation, customer/session/folder, import foto, frame selection,
 photo selection, editor, review, export, print, offline recovery, dan support.
-
-Positioning singkat:
 
 > SagaView menyelesaikan setelah sesi.
 
@@ -68,8 +66,8 @@ Positioning singkat:
 - Photo selection, editor, review, output recovery.
 - Offline/reconnect dan emergency transfer.
 - Support readiness/diagnostics.
-- Trial, plan/device limits, subscription, dan payment callback candidate.
-- Public self-service Home, Pricing, Help, Contact, Privacy, dan Terms candidate.
+- Trial, plan/device limits, subscription, dan payment callback.
+- Public Home, Pricing, Help, Contact, Privacy, Terms, dan Legal.
 
 ## Commercial contract
 
@@ -80,6 +78,8 @@ Positioning singkat:
 | Growth | Rp200.000 |
 | Pro | Rp500.000 |
 
+Bundle belum ditampilkan atau diaktifkan.
+
 ### Trial contract
 
 - Hari 1-7: `full_access`.
@@ -87,15 +87,13 @@ Positioning singkat:
 - Hari 15-21: read-only/export grace.
 - Trial satu organisasi+produk dan tidak dapat di-reset lewat email, plan, atau
   pergantian device.
+- Tidak ada auto-charge.
 
-Contract trial terbaru belum boleh disebut production-activated sampai backend
-kumulatif dipromosikan.
+Kontrak ini sekarang enforced server-side pada runtime production yang aktif.
 
 ## Account dan device boundary
 
-- Target contract: Owner Console dapat dibuka dari browser/device mana pun
-  setelah login. Perbaikan context-navigation untuk kontrak ini sudah
-  diimplementasikan, tetapi belum production.
+- Owner Console dapat dibuka dari browser/device mana pun setelah login.
 - Device activation/exclusive lease hanya berlaku pada Studio Console dan
   start-session.
 - Identity yang sama tidak membuat role Owner SagaBook menjadi Admin SagaView.
@@ -112,7 +110,7 @@ kumulatif dipromosikan.
 
 ## Session completion dan privacy handoff
 
-`CONFIRMED` — production pada release Studio terbaru:
+`CONFIRMED` — production:
 
 - customer hanya dapat memanggil operator, bukan mereset sesi sendiri;
 - operator wajib memverifikasi output dan handoff/antre cetak;
@@ -123,85 +121,68 @@ kumulatif dipromosikan.
 
 ## Status saat ini
 
-Headline status candidate: `IMPLEMENTED_NOT_DEPLOYED`. Studio 4R memiliki
-komponen `PRODUCTION_DEPLOYED`; activation produk masih parsial dan business
-readiness `BLOCKED`.
+- Delivery: `PRODUCTION_DEPLOYED`.
+- Activation: `PRODUCTION_ACTIVATED`.
+- Business readiness: `NEEDS CONFIRMATION` untuk penjualan massal; pilot
+  terkontrol dan pitch produk dapat dijalankan.
 
-### Sudah production
+### Runtime production
 
-- Studio frontend fixed 4R dan session completion/privacy handoff.
-- Release: `20260731113223-2f65a9a`.
-- Source: `2f65a9ac0322c33a429dcc888bdacd59836aab0b`.
-- Satu canary pembayaran Tokopay bernilai rendah berhasil dibayar pada Saga
-  Platform release `20260727085127-5bf7977`; satu callback diproses exactly-once,
-  subscription diaktifkan, dan katalog canary otomatis diarsipkan.
-- Public session-completion/changelog smoke lulus; changelog menampilkan
-  v0.20.2 sebagai production aktif.
-- Backend production masih release `20260729002327-86d6920` pada source
-  `86d6920bfd3da0234e74f73fda0c2fc5e7307903`.
+- Backend source:
+  `70155bb7db901beebb9fdeb65d5869a18ee8f874`.
+- Backend release: `20260731082637-70155bb`.
+- Studio source:
+  `28adcee9706ec8fde509d410d60cbea173c74a5b`.
+- Studio release: `20260731082637-28adcee`.
+- Saga Platform source:
+  `285ab943b93466deda0f6c07466c0fbe8da16e4c`.
+- Saga Platform release: `20260731075424-285ab94`.
+- Additive migration, encrypted backup, disposable restore, candidate gate,
+  dan rollback compatibility lulus.
+- Public Home/Pricing/Help/Contact/Privacy/Terms/Legal, login, Studio route,
+  customer route, API health, dan pricing API lulus post-deploy smoke.
+- HTTPS routes memakai satu HSTS dan satu `X-Frame-Options: DENY`; HTML routes
+  tetap memakai CSP dengan `frame-ancestors 'none'`.
 
-### Belum production
+### Payment/provider
 
-- Backend cumulative candidate:
-  `dc55cbb09f45279b591e82bca6be50f7d4c1f6ee`.
-- Guarded release tooling:
-  `b778a068a09e28a6900918172fc64637655be2fa`.
-- Owner Console context fix.
-- Trial dua fase server-side.
-- Subscription Growth/Pro flow.
-- Device trust dan exclusive lease hardening.
-- Public self-service source:
-  `6ff15f653c64a3bb2ffed5ee3785341165dbb0c9`.
-  - Pricing hanya menampilkan Growth Rp200.000 dan Pro Rp500.000 per bulan.
-  - Trial menjelaskan 7 hari full access, 7 hari plan-limited, tanpa
-    auto-charge.
-  - Help memuat state koneksi/recovery, jam support, SLA respons, maintenance,
-    serta RTO/RPO.
-  - Privacy/Terms memuat local-photo boundary, retention, grace, refund, dan
-    offboarding.
+- Hanya satu canary pembayaran Tokopay production bernilai rendah yang dibuat.
+- Canary dibayar; callback diproses exactly-once; subscription aktif; katalog
+  canary otomatis diarsipkan.
+- Release tidak membuat intent, QRIS, atau transaksi kedua.
+- Identifier transaksi, receipt, callback payload, tenant, dan evidence
+  restricted tidak disimpan di repository publik.
 
-Gate provider canary sudah ditutup: pembayaran nyata, callback exactly-once,
-aktivasi subscription, dan auto-archive katalog canary terverifikasi pada
-runtime production aktif. Backend cumulative candidate dan public self-service
-tetap belum dipromosikan karena runtime signup production masih memakai
-kontrak trial lama; source publik tidak boleh menjanjikan 14 hari sebelum
-enforcement backend sesuai.
+### Release validation
 
-### Release readiness backend candidate
+- Backend: 906/906 test, 10.601 assertions.
+- Studio: 156 unit test dan 54 E2E default-parallel.
+- Public production browser: 8/8 self-service E2E.
+- Import 50/200/500, accessibility, responsive mobile–desktop, forced-colors,
+  reduced-motion, dependency audit, dan bundle budget lulus.
+- Physical Windows/Epson L8050, 200-photo, offline/reconnect, dan emergency
+  transfer menggunakan owner attestation terdahulu. Perubahan release ini tidak
+  mengubah kontrak output/device, sehingga attestation dibawa forward secara
+  terbatas dan bukan pengganti artifact restricted.
 
-- Full backend suite: 905/905 test lulus.
-- Production build dan dependency audit lulus.
-- Fresh encrypted backup, checksum, offsite round-trip, dan disposable restore
-  lulus.
-- Dua additive migration, candidate deploy gate, dan rollback-source
-  compatibility sudah direhearsal.
-- Release tooling mewajibkan build Owner Console terbaru dan menolak fallback
-  ke asset production lama.
-- Production belum dimutasi dan migration belum dijalankan pada database live.
-- Public self-service lulus 153 unit test, 47 E2E, build budget, dependency
-  audit, WCAG 2.1 AA automated scan, forced-colors, dan visual responsive
-  mobile sampai 2560 piksel.
+### Rollback
 
-### Release evidence Studio v0.20.2
-
-- Exact source lulus 156 unit test dan 54 E2E.
-- Import 50/200/500 tervalidasi pada regression suite.
-- Accessibility, responsive, forced-colors, reduced-motion, dependency audit,
-  dan bundle budget lulus.
-- Backend, migration, payment, dan provider tidak berubah pada release ini.
-- Rollback release tersedia ke `20260731112542-09445f8` dan baseline sebelumnya
-  `20260731023744-1c5678c`.
+- Backend: `20260731080405-b45434b`.
+- Studio: `20260731080405-28adcee`.
+- Backup release dan konfigurasi Nginx sebelumnya dipertahankan.
 
 ## Belum boleh diklaim
 
-- Backend candidate terbaru belum live.
-- Trial dua fase belum production-activated.
-- Provider canary nyata sudah terverifikasi pada Saga Platform aktif, tetapi
-  bukan bukti bahwa backend cumulative candidate terbaru sudah live.
-- Owner Console multi-device belum boleh disebut live sebelum backend candidate
-  dipromosikan dan smoke production lulus.
-- Public Pricing/Help/Legal terbaru belum live.
-- Foto customer tidak disimpan di cloud.
+- Foto customer disimpan di cloud.
+- SagaView mendukung device tanpa batas.
+- Semua printer/driver pasti kompatibel tanpa UAT studio.
+- Business readiness mass-scale sudah terbukti sebelum cohort studio nyata dan
+  support observation selesai.
+- Bundle SagaBook–SagaView tersedia.
+
+## Demo
+
+Gunakan [Pitch Demo](PITCH_DEMO.md) untuk demo 10–15 menit yang public-safe.
 
 ## Ide konten
 

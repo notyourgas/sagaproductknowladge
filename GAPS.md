@@ -24,8 +24,6 @@ ketika keputusan atau release baru menutup gap.
 
 | ID | Produk/area | Label | Pertanyaan atau gap | Bukti penutup |
 |---|---|---|---|---|
-| GAP-002 | SagaView | NEEDS CONFIRMATION | Backend trial dua fase, billing UI, dan Owner Console candidate belum production-activated; provider canary pada platform aktif sudah lulus. | Release immutable, migration, dan public smoke exact candidate. |
-| GAP-003 | SagaView | NEEDS CONFIRMATION | Public Pricing/Help/Privacy/Terms candidate belum live karena signup production masih memakai kontrak trial lama. | Backend dan frontend dipromosikan atomik, lalu contract smoke. |
 | GAP-004 | SagaBook | NEEDS CONFIRMATION | Business readiness belum dibuktikan pada cohort studio nyata. | Minimal cohort onboarding, booking nyata, support observation, dan incident review. |
 | GAP-005 | COYABAG | NEEDS CONFIRMATION | Katalog final, identitas seller, pajak/legal, payment, shipping, dan kebijakan belum dikunci. | Data owner yang disetujui dan UAT transaksi nyata. |
 | GAP-006 | Semua produk berbayar | NEEDS CONFIRMATION | Kebijakan pajak, invoice, refund, dunning, grace, dan SLA komersial lintas produk belum disatukan. | Policy founder/legal yang disetujui per produk. |
@@ -48,8 +46,8 @@ ketika keputusan atau release baru menutup gap.
   device, frame, session, storage metadata, dan offline grace.
 - `NEEDS CONFIRMATION`: kebijakan lisensi printer/device pengganti dan
   emergency transfer untuk support.
-- `TODO`: verifikasi kontrak trial 7+7 dan Owner Console pada runtime
-  production yang sama.
+- `NEEDS CONFIRMATION`: business readiness mass-scale melalui controlled cohort,
+  support observation, dan incident review.
 
 ### Gap SagaView ditutup
 
@@ -58,6 +56,12 @@ ketika keputusan atau release baru menutup gap.
   katalog canary otomatis diarsipkan pada Saga Platform release
   `20260727085127-5bf7977`. Evidence restricted tetap di luar repository
   publik.
+- `GAP-002` — `CONFIRMED` pada 31 Juli 2026: backend trial dua fase,
+  subscription, dan Owner Console aktif pada release
+  `20260731082637-70155bb`.
+- `GAP-003` — `CONFIRMED` pada 31 Juli 2026: public Home/Pricing/Help/Contact/
+  Privacy/Terms/Legal dipromosikan atomik dan lulus public smoke bersama
+  backend/Studio exact source.
 
 ### SagaBio
 

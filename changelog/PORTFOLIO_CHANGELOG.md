@@ -10,6 +10,22 @@ workflow, pricing, release, activation, atau blocker.
 Detail tetap berada pada changelog produk; entri docs-only berada di root
 [CHANGELOG](../CHANGELOG.md).
 
+## 2026-07-31 — SagaView integrated production activation
+
+- Backend, additive migration, Owner Console, trial 14 hari dua fase,
+  subscription Growth/Pro, Studio, dan public self-service SagaView aktif
+  atomik di production.
+- Backend source `70155bb7db901beebb9fdeb65d5869a18ee8f874`, release
+  `20260731082637-70155bb`; Studio source
+  `28adcee9706ec8fde509d410d60cbea173c74a5b`, release
+  `20260731082637-28adcee`.
+- Home/Pricing/Help/Contact/Privacy/Terms/Legal, login, Studio, customer, API
+  health, dan pricing API lulus post-deploy smoke; header HTTPS konsisten.
+- Provider canary existing tetap satu dan exactly-once; release tidak membuat
+  intent, QRIS, atau transaksi kedua.
+- Delivery dan activation SagaView kini production; business readiness
+  mass-scale tetap menunggu controlled cohort dan observasi support.
+
 ## 2026-07-31 - SagaBook Platform Support Operations production
 
 - Operator platform kini memiliki antrean support berdasarkan ownership,

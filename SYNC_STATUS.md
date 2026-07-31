@@ -16,11 +16,11 @@ setelah push dan dapat diperoleh dengan `git rev-parse HEAD`.
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-07-31T15:05:00+07:00 |
+| Waktu pembaruan terakhir | 2026-07-31T15:35:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `64942455d451a20e097e679cc8b3f9becb43982e` |
-| Informasi terakhir disinkronkan | SagaBook Platform Support Operations aktif di production pada release `20260731075424-285ab94` dengan antrean SLA, ownership operator, optimistic lock, idempotensi, dan receipt audit tersanitasi. |
+| Baseline sebelum pembaruan | `9950c89e0629f45a62542eca7c4225e477e8230a` |
+| Informasi terakhir disinkronkan | SagaView integrated production activation: backend `20260731082637-70155bb`, Studio `20260731082637-28adcee`, trial/subscription, public self-service, security header, rollback, dan public smoke. |
 | Status sinkronisasi | `UP TO DATE` setelah commit/push dan remote verification |
 | Konflik | Tidak ada pada baseline; branch lokal dan `origin/main` sama sebelum edit. |
 | Error | Tidak ada error terbuka pada awal sinkronisasi. |
@@ -30,17 +30,19 @@ setelah push dan dapat diperoleh dengan `git rev-parse HEAD`.
 - `SYNC_STATUS.md`
 - `CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
-- `products/sagabook/PRODUCT.md`
-- `products/sagabook/DOSSIER.md`
-- `products/sagabook/CHANGELOG.md`
+- `GAPS.md`
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/DOSSIER.md`
+- `products/sagaview/CHANGELOG.md`
+- `products/sagaview/PITCH_DEMO.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 
 ## Item menunggu konfirmasi
 
-Support & Recovery Center sudah production-deployed. Business readiness
-SagaBook tetap menunggu observasi cohort studio nyata dan acceptance policy
-privacy, retention, deletion, serta offboarding. Detail percakapan, lampiran,
-tenant, account, dan evidence restricted tetap berada di luar repository
+SagaView delivery dan activation sudah production. Business readiness mass-scale
+tetap menunggu controlled cohort studio, observasi support, serta finalisasi
+policy komersial/legal owner. Receipt, callback payload, tenant, device,
+session, customer, dan evidence restricted tetap berada di luar repository
 publik. Gap lain tetap tercatat di [GAPS](GAPS.md).
 
 ## Cara verifikasi

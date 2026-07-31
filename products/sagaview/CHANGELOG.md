@@ -9,6 +9,27 @@ Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 Gunakan bersama [PRODUCT](PRODUCT.md), [DOSSIER](DOSSIER.md), dan exact release
 scope.
 
+## 2026-07-31 — Integrated production activation
+
+- Status: `PRODUCTION_DEPLOYED` dan `PRODUCTION_ACTIVATED`.
+- Before: backend trial/subscription/Owner Console dan public self-service
+  masih candidate; `/pricing`, `/help`, serta `/legal` belum diroute konsisten.
+- After: backend cumulative, additive migration, Owner Console, trial 14 hari
+  dua fase, subscription Growth/Pro, Studio, serta Home/Pricing/Help/Contact/
+  Privacy/Terms/Legal dipromosikan atomik.
+- Backend source `70155bb7db901beebb9fdeb65d5869a18ee8f874`, release
+  `20260731082637-70155bb`.
+- Studio source `28adcee9706ec8fde509d410d60cbea173c74a5b`, release
+  `20260731082637-28adcee`.
+- Security header HSTS/X-Frame-Options dikonsolidasikan; CSP tetap strict.
+- Validasi: backend 906/906, Studio 156 unit + 54 E2E, public production browser
+  8/8, encrypted backup/restore, migration/deploy gate, rollback compatibility,
+  monitoring, dan post-deploy smoke lulus.
+- Satu canary existing tetap exactly-once; release tidak membuat payment
+  intent, QRIS, atau transaksi kedua.
+- Rollback: backend `20260731080405-b45434b`, Studio
+  `20260731080405-28adcee`.
+
 ## 2026-07-31 — Provider canary paid dan callback exactly-once
 
 - Klasifikasi: `CONFIRMED`.
