@@ -1,7 +1,7 @@
 # AOGTICVITY Product Knowledge
 
-Updated: 1 Agustus 2026
-Evidence status: public Vercel delivery + database-backed auth/runtime
+Updated: 2 Agustus 2026
+Evidence status: public Vercel delivery + database-backed auth and registration runtime
 
 ## Tujuan dokumen
 
@@ -11,9 +11,9 @@ Keputusan terbuka berada di [GAPS](../../GAPS.md#aogticvity).
 
 ## Konteks
 
-Dokumen membedakan public Vercel delivery dengan auth/database nyata, surface
-yang masih memakai local state, dan runtime multi-device yang masih menunggu
-human UAT.
+Dokumen membedakan public Vercel delivery, auth/registrasi database nyata,
+surface operasional yang masih memakai local state, dan UAT fisik multi-device
+yang masih tertunda.
 
 ## Ringkasan
 
@@ -73,6 +73,9 @@ Public delivery saat ini: `https://olimpiade-kemerdekaan.vercel.app`.
   loopback-only.
 - Check-in, roster, event-master, dan result publish/correct memakai versioning,
   idempotency, permission, persistence MySQL, dan audit event.
+- Public registration memakai validasi server, consent version, anti-bot,
+  anonymous rate limit, idempotent receipt, transaksi MySQL, dan audit. Admin
+  dapat membaca serta memverifikasi pendaftaran dari authenticated desk.
 - SQLite hanya fast test adapter.
 - Event-master memiliki dry-run, validation, atomic publish, versioning, dan
   audit. Durasi jadwal bersifat provisional dan dapat disunting admin.
@@ -80,13 +83,15 @@ Public delivery saat ini: `https://olimpiade-kemerdekaan.vercel.app`.
 - Admin MFA bersifat opsional sesuai keputusan founder. Passphrase kuat,
   forced bootstrap change, HttpOnly session, expiry, RBAC, rate limit, revoke,
   dan audit tetap wajib.
-- Sebagian state UI masih memakai localStorage sampai seluruh runtime API
+- Participant fixture dan persistence registrasi localStorage telah dihapus.
+  Sebagian operasi non-registrasi masih memakai local state sampai seluruh API
   frontend dan UAT multi-device lulus.
 
 ## Status saat ini
 
-Delivery: `PRODUCTION_DEPLOYED`. Activation: `NOT_PRODUCTION_ACTIVATED`. Business
-readiness: `BLOCKED`.
+Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:
+`NOT_PRODUCTION_ACTIVATED`; auth dan public registration:
+`PRODUCTION_ACTIVATED`. Business readiness: `BLOCKED`.
 
 - UI public/player/leader/admin/live aktif pada public Vercel delivery.
 - UI memakai festival motion system yang tetap mobile-first 430 px: Plus
@@ -96,22 +101,24 @@ readiness: `BLOCKED`.
 - Master recap 2026 berisi 8 tim, 10 lomba, jadwal provisional, mekanisme,
   safety, equipment, dan assignment panitia.
 - Database-backed auth aktif melalui Vercel: real credential login dan forced
-  password-change redirect terverifikasi; privileged routes memakai server
-  session dan dev session tetap 404.
+  password change terverifikasi; akun admin sudah diklaim, privileged routes
+  memakai server session, dan dev session tetap 404.
+- Public submit, MySQL persistence, admin list/approve, idempotent replay,
+  audit, reconciliation, dan cleanup UAT terbukti end-to-end. Dataset awal
+  production kosong dan pendaftaran dibuka eksplisit pada backend.
 - Hostinger BFF hanya menerima Vercel proxy secret melalui HTTPS; direct endpoint
   404 dan MySQL tetap bind pada loopback.
 - Typecheck, test, build, security, accessibility, responsive, migration, dan
   rollback telah menjadi gate.
-- Human password-change dan core admin operations UAT, target custom domains,
-  notification/recovery provider, serta UAT fisik multi-device belum selesai.
+- Roster/check-in/result rehearsal lintas perangkat, target custom domains,
+  notification/recovery provider, serta UAT fisik hari-H belum selesai.
 
 ## Belum boleh diklaim
 
-- Role switcher/PIN demo bukan auth production.
-- Fonntte queue masih simulation.
-- localStorage bukan persistence multi-device.
-- Real login sudah terbukti, tetapi belum membuktikan seluruh event-day journey
-  business-ready sebelum human operations UAT.
+- Notification provider belum aktif; UI tidak boleh mengklaim pesan terkirim.
+- Local state non-registrasi bukan persistence multi-device.
+- Auth dan registrasi sudah terbukti, tetapi belum membuktikan seluruh
+  event-day journey business-ready sebelum operations rehearsal.
 
 ## Ide konten
 

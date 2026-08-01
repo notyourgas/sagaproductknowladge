@@ -282,7 +282,21 @@ keputusan pengganti.
 | Keputusan | AOGTICVITY tetap memakai public Vercel dan admin MFA tidak wajib. Password auth harus tetap database-backed dengan forced bootstrap change, HttpOnly session, expiry, rate limit, RBAC, suspend/revoke, dan audit. Vercel memakai guarded HTTPS proxy ke backend Hostinger; MySQL tidak boleh dibuka ke internet. |
 | Alasan | Founder menginginkan akses yang lebih sederhana dan tetap dapat dicoba melalui URL Vercel tanpa mengorbankan session server-side atau membuka database publik. |
 | Alternatif yang dipertimbangkan | Tetap mewajibkan TOTP; membiarkan Vercel sebagai localStorage prototype; membuka MySQL langsung ke dynamic Vercel egress. |
-| Dampak | MFA menjadi opsional. Public login dan database session aktif melalui Vercel, tetapi activation keseluruhan tetap menunggu owner password claim, operations UAT, dan physical rehearsal. Klausa auth belum aktif pada DEC-016 digantikan oleh keputusan ini. |
+| Dampak | MFA menjadi opsional. Public login dan database session aktif melalui Vercel; owner password claim telah diselesaikan pada release registrasi 2 Agustus 2026. Activation keseluruhan tetap menunggu operations UAT dan physical rehearsal. Klausa auth belum aktif pada DEC-016 digantikan oleh keputusan ini. |
 | Pemberi keputusan | Andreas / founder |
 | Status | `CONFIRMED`; source dan public production runtime terverifikasi |
 | Dokumen terkait | [AOGTICVITY Product](products/aogticvity/PRODUCT.md), [AOGTICVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTICVITY Changelog](products/aogticvity/CHANGELOG.md), [Status Legend](docs/STATUS_LEGEND.md) |
+
+## DEC-020 - AOGTICVITY menghapus participant demo dan mengaktifkan registrasi MySQL
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-02 |
+| Topik | Sumber data pendaftaran dan kesiapan trial AOGTICVITY |
+| Keputusan | Hapus data participant demo dan localStorage registration. Finalisasi public registration agar submit tersimpan pada MySQL, muncul pada authenticated admin verification desk, dan dapat segera dipakai mendaftar. Canonical event master tidak dihapus. |
+| Alasan | Form browser-local dan 80 participant fixture tidak dapat dipakai lintas perangkat atau dianggap sebagai pendaftaran nyata. |
+| Alternatif yang dipertimbangkan | Mempertahankan demo sambil menunggu seluruh event workflow selesai; mengimpor fixture ke production; membuka database langsung dari Vercel. |
+| Dampak | Registrasi memakai server validation, consent, anti-bot, rate limit, idempotency, receipt, transaksi, RBAC, optimistic concurrency, dan audit. Auth dan registration menjadi `PRODUCTION_ACTIVATED`; activation produk keseluruhan tetap menunggu rehearsal operasi hari-H. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED`; source dan public production runtime terverifikasi |
+| Dokumen terkait | [AOGTICVITY Product](products/aogticvity/PRODUCT.md), [AOGTICVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTICVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |

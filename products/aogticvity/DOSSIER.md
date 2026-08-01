@@ -7,7 +7,7 @@ content AOGTICVITY tetap jelas.
 
 ## Konteks dan status bukti
 
-- Updated: 1 Agustus 2026
+- Updated: 2 Agustus 2026
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED`
@@ -57,13 +57,13 @@ modal/state motion, dan success celebration dengan reduced-motion fallback.
 Satu event dengan delapan tim dan sepuluh lomba, authenticated roles, MySQL
 persistence, multi-device check-in/scoring, audit, projection, dan fallback.
 Master event dan backend auth/operations sudah terhubung ke public Vercel lewat
-guarded HTTPS proxy. Real login aktif; owner password claim, core operations
-UAT, dan rehearsal fisik masih menahan activation keseluruhan.
+guarded HTTPS proxy. Auth dan public registration aktif; core operations UAT
+dan rehearsal fisik masih menahan activation keseluruhan.
 
 ## Roadmap
 
-1. Selesaikan owner password-change dan two-device authorization UAT.
-2. Uji roster, check-in, result, audit, offline/recovery melalui public Vercel.
+1. Uji roster, check-in, result, audit, offline/recovery melalui public Vercel.
+2. Lakukan two-device authorization dan stale-state reconciliation UAT.
 3. Aktifkan target custom domain dan pilih recovery/notification provider.
 4. Finalisasi nama Tim 7/Tim 8, durasi, serta keputusan open pada master recap.
 5. Multi-device/event rehearsal dan public smoke.
@@ -111,9 +111,11 @@ Operational app untuk matchday komunitas, bukan sekadar landing event.
 **Apakah domain sudah live?** Public Vercel delivery aktif; domain custom
 AOGTICVITY belum diaktifkan.
 **Apakah notification aktif?** Simulation bukan provider live.
-**Apakah auth sudah nyata?** Ya, real credential login, MySQL identity, dan
-database session sudah terverifikasi melalui public Vercel. Owner masih harus
-menyelesaikan password claim dan operations UAT.
+**Apakah auth sudah nyata?** Ya, real credential login, MySQL identity,
+database session, dan admin password claim sudah terverifikasi melalui public
+Vercel.
+**Apakah pendaftaran sudah nyata?** Ya. Submit publik, receipt, persistence
+MySQL, admin list/approve, idempotent replay, dan audit sudah lulus UAT.
 **Apakah MFA wajib?** Tidak. MFA admin opsional; kontrol password, session,
 rate limit, RBAC, revoke, dan audit tetap wajib.
 **Apakah bisa multi-device?** Backend contract dan test MySQL tersedia, tetapi
@@ -129,7 +131,8 @@ rate limit, account suspend/reactivate, session revocation, identity audit,
 check-in, roster, event-master, serta server-authoritative result operations.
 Vercel menjadi public edge dan guarded HTTPS proxy ke backend; endpoint backend
 langsung 404 tanpa server-only proxy secret dan MySQL tetap loopback-only.
-Sebagian non-auth state masih local browser state. SQLite tetap fast test adapter.
+Registrasi tidak lagi memakai participant fixture atau localStorage. Sebagian
+non-registration operations masih local browser state. SQLite tetap fast test adapter.
 
 ## Integrasi
 
@@ -145,8 +148,8 @@ announcement, version, audit, dan export.
 ## Risiko dan asumsi
 
 Event-day time pressure, network failure, duplicate scoring, stale projection,
-residual localStorage, provider simulation, recovery email yang belum dipilih,
-human password/operations UAT, dua nama tim placeholder, serta durasi dan keputusan
+residual local state non-registration, provider notification yang belum dipilih,
+operations UAT, dua nama tim placeholder, serta durasi dan keputusan
 master recap yang masih provisional/open.
 
 ## KPI dan success metrics

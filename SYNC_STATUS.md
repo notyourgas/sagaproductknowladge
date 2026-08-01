@@ -12,11 +12,11 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-01T22:36:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-02T00:12:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `e5f0fee` |
-| Informasi terakhir disinkronkan | AOGTICVITY password auth tanpa MFA wajib aktif melalui public Vercel, source `dd59f89` + `56b0b43`, production `dpl_FfaWprKbFMuPD9euNe7yWrHRdgwC`; activation keseluruhan tetap menunggu human UAT. |
+| Baseline sebelum pembaruan | `7942228` |
+| Informasi terakhir disinkronkan | AOGTICVITY public registration MySQL dan admin verification aktif melalui Vercel, source `ccb7115`, Hostinger `20260801T170743Z`, Vercel `dpl_FQeCxhBWxWxWp44n9au7UPwDerMV`; participant demo/localStorage registration telah dihapus. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru |
 | Konflik | Tidak ada; local `main` sama dengan `origin/main` sebelum edit. |
 | Error | Tidak ada error terbuka pada awal sinkronisasi. |
@@ -35,8 +35,8 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 ## Item menunggu konfirmasi
 
-AOGTICVITY masih membutuhkan owner password claim, core operations/two-device
-UAT, authoritative activation seluruh frontend surface, recovery/notification
+AOGTICVITY masih membutuhkan roster/check-in/result operations/two-device UAT,
+authoritative activation surface non-registration, recovery/notification
 provider, custom domain, dan physical event rehearsal sebelum business-ready.
 
 ## Cara verifikasi

@@ -8,6 +8,28 @@ Mencatat perubahan material AOGTICVITY/17an/Olimpiade.
 
 Nama lama dipertahankan sebagai provenance; status runtime harus eksplisit.
 
+## 2026-08-02 - Public registration MySQL production
+
+- `CONFIRMED`: founder meminta participant demo dihapus dan aplikasi
+  difinalisasi agar segera dapat dipakai mendaftar.
+- Public form kini menjalankan server validation, consent version, anti-bot,
+  anonymous rate limit, idempotency, receipt code, transaksi MySQL, dan audit;
+  authenticated admin/operator dapat list serta memverifikasi pendaftar.
+- Participant fixture 80 orang, localStorage registration, prototype tools,
+  fake notification counters, dan person-like defaults tidak lagi menjadi data
+  operasional. Canonical event master tetap dipertahankan.
+- Source `ccb7115c07b28e99b2e13a4d3153eece6fbf3aec`; Hostinger release
+  `20260801T170743Z`; Vercel production
+  `dpl_FQeCxhBWxWxWp44n9au7UPwDerMV`; migration
+  `008_public_registration`.
+- Gate: 61 test/build, audit dependency 0, backup, Preview, public submit 201,
+  admin password claim/list/approve, idempotent replay, reconciliation, empty
+  cleanup, health, RBAC, loopback MySQL, dan rollback lulus.
+- Delivery `PRODUCTION_DEPLOYED`; auth dan registration
+  `PRODUCTION_ACTIVATED`. Activation produk keseluruhan tetap
+  `NOT_PRODUCTION_ACTIVATED` dan business readiness `BLOCKED` sampai rehearsal
+  roster/check-in/result multi-device, provider, custom domain, dan hari-H lulus.
+
 ## 2026-08-01 - Password auth aktif melalui public Vercel
 
 - `CONFIRMED`: founder memilih admin MFA opsional dan meminta aplikasi tetap

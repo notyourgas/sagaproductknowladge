@@ -203,15 +203,20 @@ Public Vercel memakai guarded HTTPS proxy ke Hostinger untuk identity MySQL,
 database session, forced password change, optional admin MFA, role
 authorization, user/session operations, serta server-authoritative result
 persistence dan audit. Direct BFF fail-closed dan MySQL tetap loopback-only.
+Public registration juga aktif pada MySQL dengan validation, consent,
+idempotency, rate limit, receipt, audit, dan admin verification desk; participant
+fixture serta localStorage registration telah dihapus.
 Ini adalah nama terbaru project 17an/Olimpiade Kemerdekaan.
 
-Delivery: `PRODUCTION_DEPLOYED`. Activation: `NOT_PRODUCTION_ACTIVATED`.
+Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:
+`NOT_PRODUCTION_ACTIVATED`; auth dan registration: `PRODUCTION_ACTIVATED`.
 Business readiness: `BLOCKED`. Public delivery aktif di
 `https://olimpiade-kemerdekaan.vercel.app`; target custom domain belum
 diaktifkan. Real credential login dan database-backed session sudah terbukti;
-owner password claim, core operations UAT, notification/recovery provider, dan
-physical multi-device UAT belum selesai. Sebagian public UI masih memakai
-bundled master/local state. Sejak release 1 Agustus 2026, surface
+admin password claim dan registration UAT sudah selesai. Roster/check-in/result
+rehearsal, notification/recovery provider, dan physical multi-device UAT belum
+selesai. Sebagian non-registration UI masih memakai bundled master/local state.
+Sejak release 1 Agustus 2026, surface
 tersebut memakai festival UI/UX mobile 430 px dengan Plus Jakarta Sans,
 Feather-style icons, Motion for React, restrained celebration, dan
 reduced-motion fallback.
@@ -265,7 +270,8 @@ Delivery: `PLANNED`. Belum production-activated.
   SagaBook–SagaView tersedia.
 - Jangan sebut SagaBio atau SagaMenu production.
 - Jangan sebut COYABAG siap transaksi penuh.
-- Jangan sebut AOGTICVITY production multi-device.
+- Jangan sebut seluruh AOGTICVITY production multi-device; auth dan public
+  registration saja sudah production-activated.
 - Jangan klaim Gmail sync, Google Sheets, atau PDF server-side SagaFin sebagai
   fitur aktif bila bukti terbaru belum berubah.
 - Jangan menyebut dummy/fixture/local log sebagai bukti provider.

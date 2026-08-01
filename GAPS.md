@@ -135,11 +135,15 @@ ketika keputusan atau release baru menutup gap.
   feedback, dan asset presentation.
 - Identity, role authorization, database session, optional MFA, dan guarded
   Vercel-to-Hostinger path sudah `PRODUCTION_DEPLOYED`; real login terbukti.
+- Admin password claim dan public registration MySQL sudah
+  `PRODUCTION_ACTIVATED`; dataset awal kosong dan participant demo tidak lagi
+  menjadi sumber operasional.
 - `NEEDS CONFIRMATION`: model bisnis produk (event internal, jasa per event, atau
   SaaS).
-- `NEEDS CONFIRMATION`: owner password-change dan core operations UAT,
-  authoritative frontend activation untuk seluruh surface, recovery/notification
-  provider, target custom domain, dan physical event rehearsal.
+- `NEEDS CONFIRMATION`: roster/check-in/result multi-device operations UAT,
+  authoritative frontend activation untuk surface non-registration,
+  recovery/notification provider, target custom domain, dan physical event
+  rehearsal.
 - `NEEDS CONFIRMATION`: nama final Tim 7/Tim 8, durasi lomba, serta keputusan
   master recap yang masih provisional/open.
 

@@ -10,6 +10,31 @@ produk dan [Portfolio Changelog](changelog/PORTFOLIO_CHANGELOG.md).
 
 Root changelog tidak menggantikan changelog produk atau portfolio.
 
+## 2026-08-02
+
+### AOGTICVITY public registration MySQL production
+
+- Ringkasan: mengganti browser-local participant demo dengan public
+  registration MySQL dan authenticated admin verification desk.
+- Alasan: founder meminta data demo dihapus dan aplikasi segera dapat dipakai
+  mendaftar tanpa menunggu seluruh event-day workflow selesai.
+- Produk/area terdampak: registration UI/API, participant persistence,
+  consent, idempotency, rate limit, audit, admin verification, auth claim,
+  migration, release, rollback, dan knowledge status.
+- Klasifikasi: `CONFIRMED`; delivery `PRODUCTION_DEPLOYED`; auth/registration
+  `PRODUCTION_ACTIVATED`; activation produk keseluruhan
+  `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED`.
+- Source `ccb7115c07b28e99b2e13a4d3153eece6fbf3aec`; Hostinger
+  `20260801T170743Z`; Vercel
+  `dpl_FQeCxhBWxWxWp44n9au7UPwDerMV`; migration 008.
+- Production berubah: ya. Registration dibuka eksplisit; dataset awal kosong;
+  canonical event master dan loopback-only MySQL tetap dipertahankan.
+- Gate: 61 test/build, dependency audit 0, backup, Preview/public smoke,
+  submit/list/approve/replay/reconciliation, RBAC, rollback, dan cleanup UAT.
+- Blocker: multi-device roster/check-in/result rehearsal,
+  recovery/notification provider, target custom domain, keputusan master
+  provisional, dan physical event rehearsal.
+
 ## 2026-08-01
 
 ### AOGTICVITY password auth melalui public Vercel

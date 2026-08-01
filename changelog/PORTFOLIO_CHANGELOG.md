@@ -10,6 +10,20 @@ workflow, pricing, release, activation, atau blocker.
 Detail tetap berada pada changelog produk; entri docs-only berada di root
 [CHANGELOG](../CHANGELOG.md).
 
+## 2026-08-02 - AOGTICVITY public registration production
+
+- Public registration berubah dari browser-local demo menjadi submit MySQL
+  yang tervalidasi, idempotent, rate-limited, consented, dan audited; admin
+  verification desk membaca data nyata dengan permission server-side.
+- Participant fixture/localStorage dan indikator simulasi dihapus tanpa
+  menghapus canonical event master.
+- Source `ccb7115c07b28e99b2e13a4d3153eece6fbf3aec`; Hostinger
+  `20260801T170743Z`; Vercel
+  `dpl_FQeCxhBWxWxWp44n9au7UPwDerMV`; migration 008.
+- Auth dan registration `PRODUCTION_ACTIVATED`; produk keseluruhan tetap
+  `NOT_PRODUCTION_ACTIVATED` dan business readiness `BLOCKED` menunggu
+  rehearsal operasi hari-H serta provider/domain yang belum aktif.
+
 ## 2026-08-01 - AOGTICVITY password auth melalui public Vercel
 
 - Founder menetapkan MFA admin opsional dan public delivery tetap di Vercel;
