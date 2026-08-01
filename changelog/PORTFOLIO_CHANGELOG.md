@@ -18,12 +18,12 @@ Detail tetap berada pada changelog produk; entri docs-only berada di root
 - Manifest, smoke publik, database audit, service health, backup/restore, dan
   rollback lulus; business readiness tetap `NEEDS CONFIRMATION` sampai pilot
   studio nyata dan legal/tax finalization selesai.
-- Hardening login/signup/password recovery pada source
-  `614181ae0f5e80867e229323dae79afb43de226a` berstatus
+- Hardening login/signup/password recovery dan CTA fallback pada source
+  `d9bbbac3d5960013c6df267ff9ae2534b883710d` berstatus
   `IMPLEMENTED_NOT_DEPLOYED`: branding tepat satu kali, target sentuh 44
   piksel, fokus dekoratif ditutup, dan aksesibilitas visual diperkuat.
-- Exact-SHA backup/restore kandidat lulus, tetapi workflow release manual belum
-  dapat dipicu tanpa sesi GitHub terautentikasi.
+- Exact-SHA backup/restore dan full backend 957/957 lulus, tetapi matriks
+  browser global mencapai timeout 10 menit sebelum selesai; deploy ditahan.
 
 ## 2026-08-02 - SagaBook UI/UX dan release-safety candidate (historis)
 

@@ -138,15 +138,16 @@ lulus 19 test/131 assertions, build dan dependency audit hijau, serta backup
 terenkripsi dan disposable restore exact-SHA lulus. Manifest, public smoke,
 database audit, service health, dan rollback production juga lulus.
 
-Hardening auth surface berikutnya pada source
-`614181ae0f5e80867e229323dae79afb43de226a` berstatus
+Hardening auth dan fallback surface berikutnya pada source
+`d9bbbac3d5960013c6df267ff9ae2534b883710d` berstatus
 `IMPLEMENTED_NOT_DEPLOYED`. Login, signup, dan password recovery sekarang
 memiliki tepat satu `Powered by SagaBook`, target sentuh kritis minimal 44
-piksel, preview dekoratif inert, serta dukungan forced-colors dan reduced-motion.
-Focused visual regression 6/6, 15 test/174 assertions, typecheck, build,
+piksel, preview dekoratif inert, metode pemulihan dan CTA fallback minimal 44
+piksel, serta dukungan forced-colors dan reduced-motion. Focused visual
+regression 6/6, full backend 957/957 dengan 10.989 assertions, typecheck, build,
 dependency audit, encrypted backup, dan disposable restore exact-SHA lulus.
-Production belum berubah karena workflow release manual belum dapat dipicu
-tanpa sesi GitHub terautentikasi.
+Production belum berubah karena matriks browser global mencapai timeout 10
+menit sebelum selesai; hasil parsial tidak di-waive.
 
 ## Integrasi
 

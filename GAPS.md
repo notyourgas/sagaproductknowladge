@@ -63,10 +63,11 @@ ketika keputusan atau release baru menutup gap.
 - `CONFIRMED`: candidate UI/UX dan release-safety kumulatif sudah
   `PRODUCTION_DEPLOYED` sebagai release `20260801213514-8edd762`; manifest,
   public smoke, database audit, service health, dan rollback lulus.
-- `TODO`: picu workflow release auth hardening source `614181ae` memakai sesi
-  GitHub terautentikasi, lalu verifikasi exact runtime, mobile/desktop public
-  smoke, dan rollback. Encrypted backup serta disposable restore exact-SHA
-  sudah lulus; production belum memuat perubahan auth ini.
+- `TODO`: selesaikan matriks browser global untuk auth/fallback hardening source
+  `d9bbbac3`, lalu picu guarded release dan verifikasi exact runtime,
+  mobile/desktop public smoke, serta rollback. Encrypted backup, disposable
+  restore exact-SHA, full backend, focused visual, build, dan audit sudah
+  lulus; production belum memuat perubahan ini.
 
 ### SagaView
 

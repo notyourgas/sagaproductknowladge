@@ -103,12 +103,13 @@ release `20260801213514-8edd762`; manifest, public smoke, database audit,
 service health, dan rollback lulus. Ini adalah template website booking milik
 studio, bukan landing page marketing SagaBook.
 
-Hardening auth berikutnya pada source `614181ae` berstatus
+Hardening auth dan fallback berikutnya pada source `d9bbbac3` berstatus
 `IMPLEMENTED_NOT_DEPLOYED`: login, signup, dan password recovery memiliki tepat
 satu `Powered by SagaBook`, target sentuh kritis 44 piksel, fokus dekoratif
-ditutup, dan aksesibilitas forced-colors/reduced-motion diperkuat. Exact-SHA
-backup/restore lulus, tetapi workflow release manual belum dapat dipicu tanpa
-sesi GitHub terautentikasi.
+ditutup, metode pemulihan/CTA fallback diperbesar, dan aksesibilitas
+forced-colors/reduced-motion diperkuat. Exact-SHA backup/restore dan full
+backend 957/957 lulus, tetapi matriks browser global timeout sebelum selesai;
+deploy ditahan.
 
 Keputusan privacy/retention/offboarding SagaBook yang lebih rinci telah
 disetujui owner untuk implementasi dan legal review pada source docs commit

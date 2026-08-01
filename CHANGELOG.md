@@ -20,15 +20,16 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
   storefront tenant, accessibility, backup/restore, release, dan rollback.
 - Klasifikasi: `CONFIRMED`; source `8edd762154ec231b7e00c4a38db9c94dd0ee322c`
   `PRODUCTION_DEPLOYED` pada release `20260801213514-8edd762`; source
-  `614181ae0f5e80867e229323dae79afb43de226a`
+  `d9bbbac3d5960013c6df267ff9ae2534b883710d`
   `IMPLEMENTED_NOT_DEPLOYED`.
 - Production berubah: ya untuk source `8edd7621`; belum berubah untuk auth
-  hardening `614181ae`.
+  hardening `d9bbbac3`.
 - Gate: manifest, smoke, database audit, services, backup/restore, rollback,
-  visual regression 6/6, 15 test/174 assertions, typecheck, build, dan
+  visual regression 6/6, full backend 957/957 dengan 10.989 assertions,
+  typecheck, build, dan
   dependency audit lulus.
-- Blocker: pemicu workflow manual untuk `614181ae` membutuhkan sesi GitHub
-  terautentikasi; tidak ada deploy parsial.
+- Blocker: matriks browser global mencapai timeout 10 menit sebelum selesai;
+  hasil parsial tidak di-waive dan tidak ada deploy parsial.
 
 ### SagaBook UI/UX dan release-safety candidate (historis)
 

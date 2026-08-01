@@ -189,14 +189,15 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
   backup serial, manifest checksum deterministik, receipt yang terikat ke
   source commit, dan preservasi checksum migration yang sudah aktif. Manifest,
   smoke publik, database audit, service health, dan rollback release lulus.
-- Hardening auth surface terbaru pada source
-  `614181ae0f5e80867e229323dae79afb43de226a` berstatus
+- Hardening auth dan fallback surface terbaru pada source
+  `d9bbbac3d5960013c6df267ff9ae2534b883710d` berstatus
   `IMPLEMENTED_NOT_DEPLOYED`. Login, signup, dan password recovery memiliki
   tepat satu signature `Powered by SagaBook`, target sentuh kritis minimal 44
-  piksel, preview dekoratif tidak masuk urutan fokus, serta state
-  forced-colors/reduced-motion. Backup terenkripsi dan disposable restore
-  exact-SHA lulus; pemicu workflow release masih membutuhkan sesi GitHub yang
-  terautentikasi.
+  piksel, preview dekoratif tidak masuk urutan fokus, metode pemulihan dan CTA
+  fallback minimal 44 piksel, serta state forced-colors/reduced-motion. Backup
+  terenkripsi dan disposable restore exact-SHA lulus. Full backend 957/957
+  lulus; matriks browser global mencapai timeout 10 menit sebelum selesai,
+  sehingga deploy tetap ditahan.
 - Candidate signup tanpa approval owner dan trial kanonik 7 hari sudah
   `LOCAL_VALIDATED` pada source
   `dcb5a3f3dc1e3e7b5c0c067e8968ca341ebf1c27`. Production tetap memakai

@@ -4,20 +4,20 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
-## 2026-08-02 - Auth branding dan touch safety candidate
+## 2026-08-02 - Auth branding dan touch safety candidate final
 
 - Status: `IMPLEMENTED_NOT_DEPLOYED`; production tetap
   `20260801213514-8edd762`.
 - Login, signup, dan password recovery memiliki tepat satu signature
   `Powered by SagaBook`, target sentuh kritis minimal 44 piksel, preview
-  dekoratif yang tidak dapat menerima fokus, serta state forced-colors dan
-  reduced-motion.
-- Source: `614181ae0f5e80867e229323dae79afb43de226a`.
-- Validation: visual regression mobile/desktop 6/6, 15 test/174 assertions,
-  typecheck, build, dependency audit 0, encrypted backup, dan disposable
-  restore exact-SHA lulus.
-- Blocker: workflow release manual belum dapat dipicu tanpa sesi GitHub yang
-  terautentikasi; tidak ada deploy parsial.
+  dekoratif yang tidak dapat menerima fokus, metode pemulihan dan CTA fallback
+  minimal 44 piksel, serta state forced-colors dan reduced-motion.
+- Source: `d9bbbac3d5960013c6df267ff9ae2534b883710d`.
+- Validation: visual regression mobile/desktop 6/6, full backend 957/957 dengan
+  10.989 assertions, typecheck, build, dependency audit 0, encrypted backup,
+  dan disposable restore exact-SHA lulus.
+- Blocker: matriks browser global mencapai timeout 10 menit sebelum selesai;
+  hasil parsial tidak di-waive dan tidak ada deploy parsial.
 
 ## 2026-08-02 - UI/UX operasional dan release safety production
 
