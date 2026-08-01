@@ -4,6 +4,25 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-02 - Candidate UI/UX operasional dan release safety
+
+- Status: `IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
+- Dashboard/admin, navigasi, action staff, dan tenant booking storefront telah
+  dirapikan untuk hierarchy mobile/tablet/desktop, state aksesibilitas, dan
+  satu signature `Powered by SagaBook` per surface aplikasi.
+- Kontrak booking, payment, tenant isolation, invoice, dan artefak bisnis tidak
+  diubah; signature tidak masuk ke invoice atau hasil bisnis.
+- Release safety sekarang memakai backup serial, manifest checksum
+  deterministik, receipt terikat source commit, dan preservasi checksum
+  migration yang sudah aktif.
+- Source: `082c8c42bff2be0d70115b76227fd5472c1c6dab`.
+- Validation: visual matrix 400 pass/0 fail, focused exact-source 19 test/131
+  assertions, build dan dependency audit hijau, serta encrypted backup dan
+  disposable restore exact-SHA lulus.
+- Blocker: protected GitHub Actions belum dapat didispatch dari sesi otomasi;
+  promotion dan post-deploy public smoke belum dilakukan. Production tetap
+  `20260731181921-378bcdf`.
+
 ## 2026-08-01 - Fonnte tenant routing production
 
 - Status: `PRODUCTION DEPLOYED` dan `PRODUCTION ACTIVATED` untuk routing

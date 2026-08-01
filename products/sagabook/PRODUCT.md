@@ -179,6 +179,16 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
   SagaDev, owner dapat memilih token Fonnte studio sendiri, atau menonaktifkan
   otomatisasi. Credential tenant terenkripsi dan delivery menyimpan snapshot
   koneksi yang dipakai.
+- Penyempurnaan UI/UX operasional dan storefront tenant terbaru berstatus
+  `IMPLEMENTED_NOT_DEPLOYED` pada source
+  `082c8c42bff2be0d70115b76227fd5472c1c6dab`. Cakupan mencakup hierarchy
+  dashboard/admin, navigasi dan action staff, responsive storefront booking,
+  state aksesibilitas, serta satu signature `Powered by SagaBook` yang tidak
+  masuk ke invoice atau artefak bisnis. Release safety juga diperketat dengan
+  backup serial, manifest checksum deterministik, receipt yang terikat ke
+  source commit, dan preservasi checksum migration yang sudah aktif.
+  Production tetap pada release `20260731181921-378bcdf` sampai protected
+  GitHub Actions dan post-deploy smoke selesai.
 - Candidate signup tanpa approval owner dan trial kanonik 7 hari sudah
   `LOCAL_VALIDATED` pada source
   `dcb5a3f3dc1e3e7b5c0c067e8968ca341ebf1c27`. Production tetap memakai

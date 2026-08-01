@@ -10,6 +10,17 @@ workflow, pricing, release, activation, atau blocker.
 Detail tetap berada pada changelog produk; entri docs-only berada di root
 [CHANGELOG](../CHANGELOG.md).
 
+## 2026-08-02 - SagaBook UI/UX dan release-safety candidate
+
+- Dashboard/admin, staff action, dan tenant booking storefront telah
+  disempurnakan untuk hierarchy responsif, accessibility states, serta satu
+  `Powered by SagaBook` per surface aplikasi.
+- Immutable release evidence diperketat dengan backup serial, checksum
+  manifest deterministik, dan restore receipt yang terikat source commit.
+- Source `082c8c42bff2be0d70115b76227fd5472c1c6dab`; status
+  `IMPLEMENTED_NOT_DEPLOYED` karena protected GitHub Actions dan public smoke
+  belum dijalankan. Production tetap `20260731181921-378bcdf`.
+
 ## 2026-08-02 - AOGTICVITY public registration production
 
 - Public registration berubah dari browser-local demo menjadi submit MySQL

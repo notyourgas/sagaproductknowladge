@@ -94,6 +94,15 @@ menyiapkan trial 7 hari otomatis tanpa approval owner/email verification,
 dengan login tetap menunggu provisioning ready. Auto-trial itu belum
 production dan tetap `PRODUCTION HOLD`.
 
+Candidate UI/UX operasional terbaru pada source `082c8c42` memperbaiki
+dashboard/admin, action staff, storefront booking milik tenant, hierarchy
+responsif, accessibility states, dan signature `Powered by SagaBook` tanpa
+masuk ke invoice atau artefak bisnis. Release safety exact-SHA juga telah
+diperketat dan backup/restore lulus. Statusnya
+`IMPLEMENTED_NOT_DEPLOYED`: production masih `20260731181921-378bcdf` sampai
+protected GitHub Actions dan public smoke selesai. Ini adalah template website
+booking milik studio, bukan landing page marketing SagaBook.
+
 Keputusan privacy/retention/offboarding SagaBook yang lebih rinci telah
 disetujui owner untuk implementasi dan legal review pada source docs commit
 `295ec863ff6cfc2e79ac98183651f19c15a3b368`. Workflow consent berversi,

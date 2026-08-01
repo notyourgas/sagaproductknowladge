@@ -12,6 +12,22 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-02
 
+### SagaBook UI/UX dan release-safety candidate
+
+- Ringkasan: menyinkronkan candidate penyempurnaan dashboard/admin, action
+  staff, tenant booking storefront, accessibility, branding, dan guarded
+  release evidence SagaBook.
+- Produk/area terdampak: SagaBook admin, storefront milik studio, visual QA,
+  backup/restore, migration integrity, release, dan rollback.
+- Klasifikasi: `CONFIRMED`; delivery `IMPLEMENTED_NOT_DEPLOYED`; production
+  tidak berubah.
+- Source: `082c8c42bff2be0d70115b76227fd5472c1c6dab`.
+- Gate: visual matrix 400 pass/0 fail, exact-source focused release safety
+  19 test/131 assertions, build/audit hijau, encrypted backup dan disposable
+  restore exact-SHA lulus.
+- Blocker: protected GitHub Actions dan post-deploy public smoke belum
+  dijalankan; production tetap `20260731181921-378bcdf`.
+
 ### AOGTICVITY public registration MySQL production
 
 - Ringkasan: mengganti browser-local participant demo dengan public

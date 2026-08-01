@@ -60,6 +60,10 @@ ketika keputusan atau release baru menutup gap.
 - `TODO`: S72 auto-trial 7 hari masih `PRODUCTION HOLD`; kontrak production
   tetap tidak berubah sampai release, worker/provisioning, dan authenticated
   product UAT disetujui.
+- `TODO`: promote candidate UI/UX dan release-safety source `082c8c42` melalui
+  protected GitHub Actions, lalu jalankan migration/deploy gate dan public
+  smoke. Exact-SHA encrypted backup dan disposable restore sudah lulus;
+  production masih `20260731181921-378bcdf`.
 
 ### SagaView
 

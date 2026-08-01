@@ -126,6 +126,18 @@ terverifikasi; fallback manual harus tetap terlihat.
 Multi-tenant web application dengan storefront, admin, super-admin, background
 jobs, billing, audit, dan immutable release process.
 
+Candidate UI/UX operasional terbaru pada source
+`082c8c42bff2be0d70115b76227fd5472c1c6dab` berstatus
+`IMPLEMENTED_NOT_DEPLOYED`. Dashboard/admin, staff action, storefront booking
+tenant, responsive hierarchy, accessibility states, dan signature
+`Powered by SagaBook` telah diintegrasikan tanpa mengubah kontrak booking,
+payment, tenant isolation, invoice, atau artefak bisnis. Visual matrix
+mobile/tablet/desktop lulus 400 skenario; exact-source focused release safety
+lulus 19 test/131 assertions, build dan dependency audit hijau, serta backup
+terenkripsi dan disposable restore exact-SHA lulus. Promotion masih menunggu
+protected GitHub Actions dan public smoke; release production tetap
+`20260731181921-378bcdf`.
+
 ## Integrasi
 
 Payment dan notification provider, serta future SagaView handoff.
