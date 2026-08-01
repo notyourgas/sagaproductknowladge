@@ -10,6 +10,20 @@ workflow, pricing, release, activation, atau blocker.
 Detail tetap berada pada changelog produk; entri docs-only berada di root
 [CHANGELOG](../CHANGELOG.md).
 
+## 2026-08-01 — SagaView display preset responsif production
+
+- Display Settings Studio kini menuntun operator dari pilihan preset ke
+  preview, penyesuaian, validasi, dan save tanpa overflow pada 390x844.
+- Preset memiliki state `Dipakai`, keyboard/44 px, status local/offline, dan
+  invalid-color recovery; frame/output 4R serta kontrak device/privacy tidak
+  berubah.
+- Source Studio `fa782070b3ac1b054d301eb97d2aa8caeca3f66c` aktif pada release
+  `20260801073058-fa78207`; rollback `20260801132330-5c87083` tersedia.
+- 156 unit, 71/71 E2E, import 50/200/500, build/budget, audit 0, backup, deploy
+  gate 6/6, service/header/journal, dan smoke lulus.
+- Delivery/activation: `PRODUCTION_DEPLOYED` / `PRODUCTION_ACTIVATED`;
+  business readiness mass-scale tetap `NEEDS CONFIRMATION`.
+
 ## 2026-08-01 — SagaView kesiapan mulai sesi production
 
 - Workspace mulai sesi kini menampilkan checklist perangkat, paket, folder,

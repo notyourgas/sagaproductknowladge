@@ -70,6 +70,12 @@ output serta satu CTA kontekstual 48 px. Utility cloud/recovery yang sehat
 diringkas; detail terbuka otomatis saat operator perlu bertindak. Alur tetap
 fail-closed untuk device, import safety, frame/output recovery, dan offline.
 
+Display Settings production kini memakai alur `pilih tampilan -> periksa
+preview -> sesuaikan -> simpan`. Pada mobile 390x844 preview tampil sebelum
+pengaturan tanpa overflow; preset memiliki state `Dipakai`, keyboard focus,
+target 44 px, status local/offline, validasi warna, dan recovery save. Kontrak
+frame customer, device/session/privacy, serta output 4R tidak berubah.
+
 ## Fitur MVP
 
 `CONFIRMED`: journey Studio, output 4R, completion/privacy handoff,
@@ -114,9 +120,9 @@ jam, 10 GB aset frame cloud, laporan lanjutan, activity log, dan priority
 support. Session/foto dipasarkan unlimited dengan fair-use; foto tetap lokal.
 
 `CONFIRMED` — kontrak ini aktif di production. Source Studio aktif adalah
-`5c8708387869cfb8f1dd21d2758fdfbcdf8240d6`, release
-`20260801132330-5c87083`; rollback Studio adalah
-`20260731183624-1092c99`.
+`fa782070b3ac1b054d301eb97d2aa8caeca3f66c`, release
+`20260801073058-fa78207`; rollback Studio adalah
+`20260801132330-5c87083`.
 
 ## Kompetitor
 

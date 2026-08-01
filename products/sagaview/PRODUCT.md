@@ -163,6 +163,20 @@ Kontrak ini sekarang enforced server-side pada runtime production yang aktif.
 - tombol fullscreen tidak menutupi `Powered by SagaView`, dan stepper mobile
   memusatkan langkah aktif dengan menghormati reduced-motion.
 
+## Display preset customer
+
+`CONFIRMED` — production:
+
+- workflow operasional `pilih tampilan -> periksa preview -> sesuaikan ->
+  simpan` dapat dipakai tanpa horizontal overflow pada mobile 390x844 dan
+  tetap dua kolom pada desktop;
+- preset menampilkan state `Dipakai`, `aria-pressed`, keyboard focus, serta
+  target minimal 44 px;
+- edit tetap local-first saat offline, invalid color menahan save dengan pesan
+  pemulihan yang jelas, dan preview tidak mengubah frame/output 4R;
+- tepat satu `Powered by SagaView` tetap berada di surface Studio dan tidak
+  masuk export/print.
+
 ## Kesiapan mulai sesi
 
 `CONFIRMED` — production:
@@ -189,13 +203,13 @@ Kontrak ini sekarang enforced server-side pada runtime production yang aktif.
 
 - Backend source:
   `f26bb57737fc25a0a40d350dc26ca727d30885b2`.
-- Backend release aktif: `20260801132330-f26bb57`; source backend tidak berubah
-  pada promosi S83.
+- Backend release aktif: `20260801072934-f26bb57`; source backend tidak berubah
+  pada promosi S84.
 - Studio source aktif:
-  `5c8708387869cfb8f1dd21d2758fdfbcdf8240d6`.
-- Studio release aktif: `20260801132330-5c87083`.
+  `fa782070b3ac1b054d301eb97d2aa8caeca3f66c`.
+- Studio release aktif: `20260801073058-fa78207`.
 - Studio release sebelumnya yang menjadi rollback:
-  `20260731183624-1092c99`.
+  `20260801132330-5c87083`.
 - Saga Platform source:
   `378bcdf4dac6c54d0bf421b5ef188103d82c6b40`.
 - Saga Platform release: `20260731181921-378bcdf`.

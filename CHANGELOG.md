@@ -12,6 +12,28 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-01
 
+### SagaView display preset responsif production
+
+- Ringkasan: menyinkronkan workflow Display Settings Studio yang responsif dan
+  sudah aktif di production.
+- Alasan: layout lama melebar pada 390x844, menjepit kartu preset, dan menimpa
+  form dengan preview sehingga alur operator tidak dapat dipakai dengan aman.
+- Produk/area terdampak: SagaView Studio Console, display preset, preview,
+  local/offline save, keyboard, forced-colors, responsive layout, release, dan
+  rollback.
+- Klasifikasi: `CONFIRMED`; delivery `PRODUCTION_DEPLOYED`; activation
+  `PRODUCTION_ACTIVATED`; business readiness mass-scale tetap
+  `NEEDS CONFIRMATION`.
+- Source Studio `fa782070b3ac1b054d301eb97d2aa8caeca3f66c`, release
+  `20260801073058-fa78207`; backend unchanged source `f26bb57737fc25a0a40d350dc26ca727d30885b2`,
+  release `20260801072934-f26bb57`.
+- Production berubah: ya, hanya Studio display workflow; payment/provider,
+  device/session/privacy, frame customer, dan output 4R tidak berubah.
+- Gate: 156 unit, 71/71 E2E, import 50/200/500, build/budget, dependency audit
+  0, backup, deploy gate 6/6, services, header security, journal, dan smoke.
+- Rollback: Studio `20260801132330-5c87083`; backend
+  `20260801132330-f26bb57`.
+
 ### SagaView kesiapan mulai sesi production
 
 - Ringkasan: menyinkronkan checklist kesiapan dan satu CTA kontekstual pada

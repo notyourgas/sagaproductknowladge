@@ -4,6 +4,27 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-08-01 — Display preset customer responsif production
+
+- Klasifikasi: `CONFIRMED`.
+- Status: `PRODUCTION_DEPLOYED` dan `PRODUCTION_ACTIVATED`.
+- Before: `/admin/brand` memakai kolom preview minimum 520 px; pada 390x844
+  dokumen melebar menjadi 560 px, preset terjepit, dan preview menimpa form.
+- After: workflow `pilih tampilan -> preview -> sesuaikan -> simpan` menjadi
+  satu kolom tanpa overflow pada mobile dan tetap side-by-side pada desktop.
+  Preset memiliki state `Dipakai`, keyboard/44 px, local/offline status,
+  invalid-color recovery, dan satu CTA save utama.
+- Studio source `fa782070b3ac1b054d301eb97d2aa8caeca3f66c`, release
+  `20260801073058-fa78207`; backend source tetap `f26bb57737fc25a0a40d350dc26ca727d30885b2`,
+  release `20260801072934-f26bb57`.
+- Validation: 156 unit, 71/71 default-parallel E2E, import 50/200/500 tanpa
+  mutasi payload foto, build/budget, dependency audit 0, backup, deploy gate
+  6/6, enam service, header security, error journal, dan route smoke lulus.
+- Release tidak mengubah device/session/privacy/output 4R dan tidak membuat
+  intent, QRIS, atau transaksi provider baru.
+- Rollback Studio `20260801132330-5c87083`; rollback backend
+  `20260801132330-f26bb57`.
+
 ## 2026-08-01 — Kesiapan mulai sesi production
 
 - Klasifikasi: `CONFIRMED`.

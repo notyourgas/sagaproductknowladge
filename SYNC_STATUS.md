@@ -12,11 +12,11 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-01T13:30:23+07:00 |
+| Waktu pembaruan terakhir | 2026-08-01T14:35:30+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `d7a4e38` |
-| Informasi terakhir disinkronkan | SagaView S83 kesiapan mulai sesi production, source aktif `5c87083`, release `20260801132330-5c87083`; S72 auto-trial tetap production hold. |
+| Baseline sebelum pembaruan | `e4fbf4f` |
+| Informasi terakhir disinkronkan | SagaView S84 display preset responsif production, source aktif `fa78207`, release `20260801073058-fa78207`; S72 auto-trial tetap production hold. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru |
 | Konflik | Tidak ada; local `main` sama dengan `origin/main` sebelum edit. |
 | Error | Tidak ada error terbuka pada awal sinkronisasi. |
@@ -29,7 +29,6 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHANGELOG.md`
-- `GAPS.md`
 - `SYNC_STATUS.md`
 
 ## Item menunggu konfirmasi

@@ -122,9 +122,9 @@ plan-limited, tanpa auto-charge.
 
 Update terbaru: backend/Owner tetap memakai source
 `f26bb57737fc25a0a40d350dc26ca727d30885b2`, release
-`20260801132330-f26bb57`, sedangkan Studio aktif memakai source
-`5c8708387869cfb8f1dd21d2758fdfbcdf8240d6`, release
-`20260801132330-5c87083`. Owner Console lintas browser,
+`20260801072934-f26bb57`, sedangkan Studio aktif memakai source
+`fa782070b3ac1b054d301eb97d2aa8caeca3f66c`, release
+`20260801073058-fa78207`. Owner Console lintas browser,
 Studio exclusive lease, output 4R, session completion/privacy handoff,
 trial/subscription, serta public Home/Pricing/Help/Contact/Privacy/Terms/Legal
 aktif. Limit device/frame/preset, quota aset frame cloud, fair-use,
@@ -138,7 +138,9 @@ selected state, jumlah cetakan, dan `Terapkan & lanjut`; Editor/Review mobile
 sementara workspace desktop dan output 4R tetap. Mulai sesi kini memakai
 checklist perangkat/paket/folder/frame/output dan satu CTA kontekstual 48 px;
 utility cloud/recovery sehat diringkas tanpa mengubah local-first, device,
-privacy, atau 4R. Satu canary payment production
+privacy, atau 4R. Display Settings kini menuntun pilihan preset ke preview,
+penyesuaian, validasi, dan save tanpa overflow pada mobile; selected, keyboard,
+44 px, offline, dan retry state tetap eksplisit. Satu canary payment production
 berhasil dibayar dan callback diproses exactly-once; release tidak membuat
 intent/QRIS/transaksi kedua.
 
