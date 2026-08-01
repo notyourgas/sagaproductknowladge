@@ -65,6 +65,11 @@ vertikal yang dapat dijangkau pada mobile 390x844, sambil mempertahankan
 workspace tiga/dua kolom pada desktop, output 4R, status lokal/offline,
 error/retry, stepper aktif, dan target sentuh 44/48 px.
 
+Mulai sesi production memakai checklist perangkat, paket, folder, frame, dan
+output serta satu CTA kontekstual 48 px. Utility cloud/recovery yang sehat
+diringkas; detail terbuka otomatis saat operator perlu bertindak. Alur tetap
+fail-closed untuk device, import safety, frame/output recovery, dan offline.
+
 ## Fitur MVP
 
 `CONFIRMED`: journey Studio, output 4R, completion/privacy handoff,
@@ -109,9 +114,9 @@ jam, 10 GB aset frame cloud, laporan lanjutan, activity log, dan priority
 support. Session/foto dipasarkan unlimited dengan fair-use; foto tetap lokal.
 
 `CONFIRMED` — kontrak ini aktif di production. Source Studio aktif adalah
-`1092c99b258f6ca8db817d835d90e738cdcc4964`; rollback Studio terakhir adalah
-`20260731150138-1830e71`. Identifier immutable release S82 masih
-`NEEDS CONFIRMATION` untuk dicatat secara public-safe.
+`5c8708387869cfb8f1dd21d2758fdfbcdf8240d6`, release
+`20260801132330-5c87083`; rollback Studio adalah
+`20260731183624-1092c99`.
 
 ## Kompetitor
 

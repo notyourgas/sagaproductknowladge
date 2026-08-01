@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 31 Juli 2026
+Evidence cut-off: 1 Agustus 2026
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -121,8 +121,10 @@ Trial contract: 14 hari dua fase server-side; hari 1–7 full access, hari 8–1
 plan-limited, tanpa auto-charge.
 
 Update terbaru: backend/Owner tetap memakai source
-`f26bb57737fc25a0a40d350dc26ca727d30885b2`, sedangkan Studio aktif memakai
-source `1092c99b258f6ca8db817d835d90e738cdcc4964`. Owner Console lintas browser,
+`f26bb57737fc25a0a40d350dc26ca727d30885b2`, release
+`20260801132330-f26bb57`, sedangkan Studio aktif memakai source
+`5c8708387869cfb8f1dd21d2758fdfbcdf8240d6`, release
+`20260801132330-5c87083`. Owner Console lintas browser,
 Studio exclusive lease, output 4R, session completion/privacy handoff,
 trial/subscription, serta public Home/Pricing/Help/Contact/Privacy/Terms/Legal
 aktif. Limit device/frame/preset, quota aset frame cloud, fair-use,
@@ -133,7 +135,10 @@ forced-colors, serta tepat satu `Powered by SagaView` pada tiap surface tanpa
 masuk ke export/print/invoice/receipt. Pemilihan frame memakai preview,
 selected state, jumlah cetakan, dan `Terapkan & lanjut`; Editor/Review mobile
 390x844 kini vertikal dan tidak memotong canvas, checklist, CTA, atau retry,
-sementara workspace desktop dan output 4R tetap. Satu canary payment production
+sementara workspace desktop dan output 4R tetap. Mulai sesi kini memakai
+checklist perangkat/paket/folder/frame/output dan satu CTA kontekstual 48 px;
+utility cloud/recovery sehat diringkas tanpa mengubah local-first, device,
+privacy, atau 4R. Satu canary payment production
 berhasil dibayar dan callback diproses exactly-once; release tidak membuat
 intent/QRIS/transaksi kedua.
 

@@ -4,6 +4,28 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-08-01 — Kesiapan mulai sesi production
+
+- Klasifikasi: `CONFIRMED`.
+- Status: `PRODUCTION_DEPLOYED` dan `PRODUCTION_ACTIVATED`.
+- Before: utility cloud/recovery memenuhi bagian atas workspace dan langkah
+  berikutnya bergantung pada beberapa kontrol serta CTA yang jauh.
+- After: utility sehat menjadi disclosure ringkas; checklist perangkat, paket,
+  folder, frame, dan output serta satu CTA kontekstual 48 px mengarahkan
+  operator sampai customer flow.
+- Studio source `5c8708387869cfb8f1dd21d2758fdfbcdf8240d6`, release
+  `20260801132330-5c87083`; backend tetap
+  `f26bb57737fc25a0a40d350dc26ca727d30885b2`, release
+  `20260801132330-f26bb57`.
+- Validation: 156 unit, 68/68 default-parallel E2E, 9/9 focused
+  readiness/import termasuk 50/200/500 foto, build/budget, dependency audit 0,
+  backup, deploy gate 6/6, enam service aktif, failed job/error journal nol,
+  serta production smoke lulus.
+- Provider/payment tetap read-only; release tidak membuat intent, QRIS, atau
+  transaksi kedua.
+- Rollback Studio: `20260731183624-1092c99`; rollback backend:
+  `20260731183542-f26bb57`.
+
 ## 2026-08-01 — Preset serta Editor/Review responsif production
 
 - Klasifikasi: `CONFIRMED`.
@@ -23,8 +45,8 @@ Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 - Runtime: route utama mengembalikan HTTP 200 dengan HSTS, CSP, dan
   `X-Frame-Options: DENY`; changelog production tetap menampilkan v0.20.3.
 - Rollback Studio: `20260731150138-1830e71`.
-- `NEEDS CONFIRMATION`: salin identifier immutable release S82 dari evidence
-  privat ke knowledge public-safe tanpa membawa path atau data restricted.
+- `DEPRECATED`: gap identifier S82 ditutup oleh release S83; S82 kini tercatat
+  sebagai rollback immutable `20260731183624-1092c99`.
 
 ## 2026-07-31 — Candidate signup auto-trial 7 hari
 

@@ -12,6 +12,28 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-01
 
+### SagaView kesiapan mulai sesi production
+
+- Ringkasan: menyinkronkan checklist kesiapan dan satu CTA kontekstual pada
+  workspace mulai sesi Studio Console.
+- Alasan: operator perlu melihat langkah berikutnya tanpa melewati blok utility
+  cloud/recovery yang besar atau menebak kontrol yang harus dipakai.
+- Produk/area terdampak: SagaView Studio Console, device/package readiness,
+  folder/import safety, frame/output recovery, offline state, accessibility,
+  release, rollback, dan knowledge runtime.
+- Klasifikasi: `CONFIRMED`; delivery `PRODUCTION_DEPLOYED`; activation
+  `PRODUCTION_ACTIVATED`; business readiness mass-scale tetap
+  `NEEDS CONFIRMATION`.
+- Source Studio `5c8708387869cfb8f1dd21d2758fdfbcdf8240d6`, release
+  `20260801132330-5c87083`; backend source tetap `f26bb57737fc25a0a40d350dc26ca727d30885b2`,
+  release `20260801132330-f26bb57`.
+- Production berubah: ya, workflow mulai sesi Studio; payment/provider,
+  output 4R, privacy, dan device contract tidak berubah.
+- Gate: 156 unit, 68/68 E2E, 9/9 focused readiness/import, audit 0, backup,
+  deploy gate 6/6, service/security health, dan production smoke lulus.
+- Rollback: Studio `20260731183624-1092c99`; backend
+  `20260731183542-f26bb57`.
+
 ### SagaView preset dan Editor/Review responsif production
 
 - Ringkasan: menyinkronkan S81 pemilihan frame dan S82 Editor/Review mobile
