@@ -10,6 +10,19 @@ workflow, pricing, release, activation, atau blocker.
 Detail tetap berada pada changelog produk; entri docs-only berada di root
 [CHANGELOG](../CHANGELOG.md).
 
+## 2026-08-01 - AOGTICVITY password auth melalui public Vercel
+
+- Founder menetapkan MFA admin opsional dan public delivery tetap di Vercel;
+  password/session/RBAC/rate-limit/revoke/audit tetap wajib.
+- Vercel sekarang memakai guarded HTTPS proxy ke Hostinger BFF; direct endpoint
+  404 dan MySQL tetap loopback-only.
+- Source `dd59f8948c58f7d3a8f996d136e86bac9fb807f6` + `56b0b43`;
+  Vercel production `dpl_FfaWprKbFMuPD9euNe7yWrHRdgwC`; Hostinger release
+  `20260801T152049Z`.
+- Real login dan forced password-change route terbukti. Delivery
+  `PRODUCTION_DEPLOYED`; activation keseluruhan `NOT_PRODUCTION_ACTIVATED` dan
+  business readiness `BLOCKED` sampai owner/core operations/physical UAT lulus.
+
 ## 2026-08-01 - AOGTICVITY auth dan operator operations dark staging
 
 - Identity MySQL, HttpOnly database session, forced password change, TOTP

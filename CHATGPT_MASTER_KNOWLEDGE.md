@@ -199,18 +199,19 @@ Web app mobile-first untuk operasi event/kompetisi: registrasi, verifikasi,
 check-in, delapan tim, sepuluh lomba, roster, jadwal, hasil, standing,
 pengumuman, audit, dan live projection. Master recap 17 Agustus 2026 sudah
 dipublikasikan pada MySQL dark staging dengan durasi yang tetap provisional.
-Dark staging juga memiliki identity MySQL, database session, forced password
-change, TOTP admin, role authorization, user/session operations, serta
-server-authoritative result persistence dan audit.
+Public Vercel memakai guarded HTTPS proxy ke Hostinger untuk identity MySQL,
+database session, forced password change, optional admin MFA, role
+authorization, user/session operations, serta server-authoritative result
+persistence dan audit. Direct BFF fail-closed dan MySQL tetap loopback-only.
 Ini adalah nama terbaru project 17an/Olimpiade Kemerdekaan.
 
 Delivery: `PRODUCTION_DEPLOYED`. Activation: `NOT_PRODUCTION_ACTIVATED`.
-Business readiness: `BLOCKED`. Public prototype aktif di
+Business readiness: `BLOCKED`. Public delivery aktif di
 `https://olimpiade-kemerdekaan.vercel.app`; target custom domain belum
-diaktifkan. Human MFA UAT, public TLS/trusted origins, secure
-Vercel-to-Hostinger path, frontend API activation, notification provider, dan
-physical multi-device UAT belum selesai. Public UI
-masih memakai bundled master/local state. Sejak release 1 Agustus 2026, surface
+diaktifkan. Real credential login dan database-backed session sudah terbukti;
+owner password claim, core operations UAT, notification/recovery provider, dan
+physical multi-device UAT belum selesai. Sebagian public UI masih memakai
+bundled master/local state. Sejak release 1 Agustus 2026, surface
 tersebut memakai festival UI/UX mobile 430 px dengan Plus Jakarta Sans,
 Feather-style icons, Motion for React, restrained celebration, dan
 reduced-motion fallback.

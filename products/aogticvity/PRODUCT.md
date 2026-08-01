@@ -1,7 +1,7 @@
 # AOGTICVITY Product Knowledge
 
 Updated: 1 Agustus 2026
-Evidence status: public Vercel prototype + dark staging backend
+Evidence status: public Vercel delivery + database-backed auth/runtime
 
 ## Tujuan dokumen
 
@@ -11,9 +11,9 @@ Keputusan terbuka berada di [GAPS](../../GAPS.md#aogticvity).
 
 ## Konteks
 
-Dokumen membedakan public prototype Vercel yang sudah aktif, backend dark
-staging yang sudah terverifikasi, dan runtime multi-device production yang
-belum diaktifkan.
+Dokumen membedakan public Vercel delivery dengan auth/database nyata, surface
+yang masih memakai local state, dan runtime multi-device yang masih menunggu
+human UAT.
 
 ## Ringkasan
 
@@ -58,55 +58,60 @@ sebagai nama produk terbaru. Nama lama tetap disimpan sebagai provenance.
 
 Domain tersebut target, bukan bukti production aktif.
 
-Public prototype saat ini: `https://olimpiade-kemerdekaan.vercel.app`.
+Public delivery saat ini: `https://olimpiade-kemerdekaan.vercel.app`.
 
 ## Arsitektur status
 
 - Frontend mobile-first.
 - Motion for React menangani page/state/gesture animation; canvas-confetti hanya
   dipakai pada success bernilai tinggi dan dinonaktifkan saat reduced-motion.
-- Backend dark staging memakai identity MySQL dan database session untuk role
+- Backend Hostinger memakai identity MySQL dan database session untuk role
   `admin/operator/leader/player`, forced password change, TOTP admin, rate
   limit, revoke session, serta server-side page/API authorization.
+- Vercel menjadi public edge dan meneruskan request melalui HTTPS dengan
+  server-only proxy secret; endpoint BFF langsung fail-closed dan MySQL tetap
+  loopback-only.
 - Check-in, roster, event-master, dan result publish/correct memakai versioning,
   idempotency, permission, persistence MySQL, dan audit event.
 - SQLite hanya fast test adapter.
 - Event-master memiliki dry-run, validation, atomic publish, versioning, dan
   audit. Durasi jadwal bersifat provisional dan dapat disunting admin.
 - Lomba seluruh tim memakai roster otomatis tanpa input nama peserta.
-- Sebagian state UI masih memakai localStorage sampai auth produksi, runtime API
-  frontend, domain/TLS, dan UAT multi-device lulus.
+- Admin MFA bersifat opsional sesuai keputusan founder. Passphrase kuat,
+  forced bootstrap change, HttpOnly session, expiry, RBAC, rate limit, revoke,
+  dan audit tetap wajib.
+- Sebagian state UI masih memakai localStorage sampai seluruh runtime API
+  frontend dan UAT multi-device lulus.
 
 ## Status saat ini
 
 Delivery: `PRODUCTION_DEPLOYED`. Activation: `NOT_PRODUCTION_ACTIVATED`. Business
 readiness: `BLOCKED`.
 
-- UI public/player/leader/admin/live aktif pada public Vercel prototype.
+- UI public/player/leader/admin/live aktif pada public Vercel delivery.
 - UI memakai festival motion system yang tetap mobile-first 430 px: Plus
   Jakarta Sans, Feather-style icons, hierarchy/spacing yang dipadatkan,
   animated navigation, state feedback, serta celebration terbatas yang
   menghormati reduced-motion.
 - Master recap 2026 berisi 8 tim, 10 lomba, jadwal provisional, mekanisme,
   safety, equipment, dan assignment panitia.
-- Backend auth/operations aktif pada immutable Hostinger dark staging yang
-  hanya dapat diakses melalui loopback; migration identity dan result serta
-  recovery bootstrap ter-audit sudah lulus smoke.
-- MySQL-backed API pada Vercel tetap fail-closed 503 dan dev session 404;
-  browser masih memakai bundled master/local state.
+- Database-backed auth aktif melalui Vercel: real credential login dan forced
+  password-change redirect terverifikasi; privileged routes memakai server
+  session dan dev session tetap 404.
+- Hostinger BFF hanya menerima Vercel proxy secret melalui HTTPS; direct endpoint
+  404 dan MySQL tetap bind pada loopback.
 - Typecheck, test, build, security, accessibility, responsive, migration, dan
   rollback telah menjadi gate.
-- Human password-change/TOTP UAT, public TLS/trusted origins, secure
-  Vercel-to-Hostinger path, target custom domains, notification provider, dan
-  UAT fisik multi-device belum terverifikasi.
+- Human password-change dan core admin operations UAT, target custom domains,
+  notification/recovery provider, serta UAT fisik multi-device belum selesai.
 
 ## Belum boleh diklaim
 
 - Role switcher/PIN demo bukan auth production.
 - Fonntte queue masih simulation.
 - localStorage bukan persistence multi-device.
-- Public Vercel prototype bukan bukti custom domain atau core journey
-  database-backed sudah aktif.
+- Real login sudah terbukti, tetapi belum membuktikan seluruh event-day journey
+  business-ready sebelum human operations UAT.
 
 ## Ide konten
 

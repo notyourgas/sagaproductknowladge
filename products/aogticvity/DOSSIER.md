@@ -48,7 +48,7 @@ dan offline fallback.
 Public/player/leader/admin/live surfaces; master recap 8 tim/10 lomba; serta
 backend identity, access directory, check-in, roster, session/security,
 event-master, dan result operations vertical slices.
-Public prototype memakai festival visual system yang tetap ringkas untuk
+Public Vercel delivery memakai festival visual system yang tetap ringkas untuk
 operator: hierarchy mobile, colored metric cues, animated active navigation,
 modal/state motion, dan success celebration dengan reduced-motion fallback.
 
@@ -56,15 +56,15 @@ modal/state motion, dan success celebration dengan reduced-motion fallback.
 
 Satu event dengan delapan tim dan sepuluh lomba, authenticated roles, MySQL
 persistence, multi-device check-in/scoring, audit, projection, dan fallback.
-Master event dan backend auth/operations dark staging sudah terverifikasi;
-public prototype aktif di Vercel. Human MFA UAT, public TLS/API activation, dan
-rehearsal fisik tetap belum production-activated.
+Master event dan backend auth/operations sudah terhubung ke public Vercel lewat
+guarded HTTPS proxy. Real login aktif; owner password claim, core operations
+UAT, dan rehearsal fisik masih menahan activation keseluruhan.
 
 ## Roadmap
 
-1. Selesaikan owner password-change, TOTP, dan two-device authorization UAT.
-2. Aktifkan domain/TLS, trusted origins, dan jalur frontend API yang aman.
-3. Pilih email recovery dan notification provider.
+1. Selesaikan owner password-change dan two-device authorization UAT.
+2. Uji roster, check-in, result, audit, offline/recovery melalui public Vercel.
+3. Aktifkan target custom domain dan pilih recovery/notification provider.
 4. Finalisasi nama Tim 7/Tim 8, durasi, serta keputusan open pada master recap.
 5. Multi-device/event rehearsal dan public smoke.
 6. `NEEDS CONFIRMATION`: repeatable product/service model.
@@ -108,11 +108,14 @@ Operational app untuk matchday komunitas, bukan sekadar landing event.
 
 ## FAQ
 
-**Apakah domain sudah live?** Public Vercel prototype aktif; domain custom
+**Apakah domain sudah live?** Public Vercel delivery aktif; domain custom
 AOGTICVITY belum diaktifkan.
 **Apakah notification aktif?** Simulation bukan provider live.
-**Apakah auth sudah nyata?** Identity MySQL dan database session sudah aktif di
-dark staging; public Vercel masih prototype dan belum menjadi bukti auth production.
+**Apakah auth sudah nyata?** Ya, real credential login, MySQL identity, dan
+database session sudah terverifikasi melalui public Vercel. Owner masih harus
+menyelesaikan password claim dan operations UAT.
+**Apakah MFA wajib?** Tidak. MFA admin opsional; kontrol password, session,
+rate limit, RBAC, revoke, dan audit tetap wajib.
 **Apakah bisa multi-device?** Backend contract dan test MySQL tersedia, tetapi
 UAT fisik pada runtime public belum terverifikasi.
 
@@ -120,12 +123,13 @@ UAT fisik pada runtime public belum terverifikasi.
 
 Frontend mobile-first dengan lebar aplikasi maksimum 430 px, Plus Jakarta Sans,
 Feather-style icons, Motion for React, canvas-confetti terbatas, dan
-public/player/leader/admin/live surfaces. Backend dark staging memakai Better
+public/player/leader/admin/live surfaces. Backend Hostinger memakai Better
 Auth dengan MySQL, HttpOnly database session, TOTP admin, role authorization,
 rate limit, account suspend/reactivate, session revocation, identity audit,
 check-in, roster, event-master, serta server-authoritative result operations.
-Public Vercel prototype memakai bundled master/local browser state; API MySQL
-tetap fail-closed. SQLite tetap fast test adapter.
+Vercel menjadi public edge dan guarded HTTPS proxy ke backend; endpoint backend
+langsung 404 tanpa server-only proxy secret dan MySQL tetap loopback-only.
+Sebagian non-auth state masih local browser state. SQLite tetap fast test adapter.
 
 ## Integrasi
 
@@ -141,8 +145,8 @@ announcement, version, audit, dan export.
 ## Risiko dan asumsi
 
 Event-day time pressure, network failure, duplicate scoring, stale projection,
-public demo auth/localStorage, provider simulation, recovery email yang belum
-dipilih, human MFA UAT, dua nama tim placeholder, serta durasi dan keputusan
+residual localStorage, provider simulation, recovery email yang belum dipilih,
+human password/operations UAT, dua nama tim placeholder, serta durasi dan keputusan
 master recap yang masih provisional/open.
 
 ## KPI dan success metrics

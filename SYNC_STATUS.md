@@ -12,11 +12,11 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-01T18:35:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-01T22:36:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `c1bf995` |
-| Informasi terakhir disinkronkan | AOGTICVITY auth dan core operator operations `STAGING_DEPLOYED`, source `68aed04`, release `20260801T113315Z`; public Vercel tetap prototype dan belum production-activated. |
+| Baseline sebelum pembaruan | `e5f0fee` |
+| Informasi terakhir disinkronkan | AOGTICVITY password auth tanpa MFA wajib aktif melalui public Vercel, source `dd59f89` + `56b0b43`, production `dpl_FfaWprKbFMuPD9euNe7yWrHRdgwC`; activation keseluruhan tetap menunggu human UAT. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru |
 | Konflik | Tidak ada; local `main` sama dengan `origin/main` sebelum edit. |
 | Error | Tidak ada error terbuka pada awal sinkronisasi. |
@@ -28,15 +28,16 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `products/aogticvity/CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `GAPS.md`
+- `DECISIONS.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHANGELOG.md`
 - `SYNC_STATUS.md`
 
 ## Item menunggu konfirmasi
 
-AOGTICVITY masih membutuhkan human password-change/TOTP dan two-device UAT,
-public TLS/trusted origins, secure frontend-to-Hostinger API path, recovery
-email provider, dan physical event rehearsal sebelum activation/business-ready.
+AOGTICVITY masih membutuhkan owner password claim, core operations/two-device
+UAT, authoritative activation seluruh frontend surface, recovery/notification
+provider, custom domain, dan physical event rehearsal sebelum business-ready.
 
 ## Cara verifikasi
 

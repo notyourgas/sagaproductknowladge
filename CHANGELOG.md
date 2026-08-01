@@ -12,6 +12,25 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-01
 
+### AOGTICVITY password auth melalui public Vercel
+
+- Ringkasan: menyinkronkan keputusan MFA opsional serta public database-backed
+  password auth melalui guarded Vercel-to-Hostinger HTTPS proxy.
+- Alasan: founder meminta akses sederhana tetap pada Vercel tanpa membuka
+  MySQL atau kembali ke demo role/localStorage sebagai bukti auth.
+- Produk/area terdampak: login, bootstrap password, identity/session, RBAC,
+  proxy boundary, Vercel delivery, Hostinger BFF, release, dan rollback.
+- Klasifikasi: `CONFIRMED`; delivery `PRODUCTION_DEPLOYED`; activation
+  keseluruhan `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED`.
+- Source `dd59f8948c58f7d3a8f996d136e86bac9fb807f6` + `56b0b43`;
+  Vercel `dpl_FfaWprKbFMuPD9euNe7yWrHRdgwC`; Hostinger `20260801T152049Z`.
+- Production berubah: ya, public Vercel kini memakai real identity/database
+  runtime; MFA tidak wajib. MySQL tetap loopback-only.
+- Gate: 55 test/build, audit 0, Preview/public real-login, password-change
+  redirect, health/readiness, endpoint denial, asset, service/Nginx/journal.
+- Blocker: owner password claim, core operations/two-device UAT, provider
+  recovery/notification, custom domain, dan physical event rehearsal.
+
 ### AOGTICVITY auth dan core operator operations dark staging
 
 - Ringkasan: menyinkronkan identity MySQL, session, TOTP admin, role

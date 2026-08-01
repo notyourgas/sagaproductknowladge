@@ -242,7 +242,7 @@ keputusan pengganti.
 | Alternatif yang dipertimbangkan | Menunggu seluruh backend production selesai; mempertahankan hanya dark staging internal; mempromosikan deployment lama dengan provenance yang salah. |
 | Dampak | Public prototype tersedia di `https://olimpiade-kemerdekaan.vercel.app`; delivery menjadi `PRODUCTION_DEPLOYED`, tetapi activation tetap `NOT_PRODUCTION_ACTIVATED`. UI wajib tetap melabeli prototype dan API database fail-closed. |
 | Pemberi keputusan | Andreas / founder |
-| Status | `CONFIRMED` |
+| Status | `DEPRECATED` untuk klausa auth belum aktif oleh DEC-019; keputusan memakai public Vercel tetap berlaku sebagai histori delivery |
 | Dokumen terkait | [AOGTICVITY Product](products/aogticvity/PRODUCT.md), [AOGTICVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTICVITY Changelog](products/aogticvity/CHANGELOG.md), [Status Legend](docs/STATUS_LEGEND.md) |
 
 ## DEC-017 — Fonnte tenant routing dan persiapan auto-trial SagaDev
@@ -271,4 +271,18 @@ keputusan pengganti.
 | Dampak | Motion for React menjadi layer route/state/gesture/layout; canvas-confetti dibatasi ke success bernilai tinggi; reduced-motion wajib; visual QA mobile 400 px dan desktop mobile-canvas menjadi release gate. |
 | Pemberi keputusan | Andreas / founder |
 | Status | `CONFIRMED`; source dan public production release terverifikasi |
+| Dokumen terkait | [AOGTICVITY Product](products/aogticvity/PRODUCT.md), [AOGTICVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTICVITY Changelog](products/aogticvity/CHANGELOG.md), [Status Legend](docs/STATUS_LEGEND.md) |
+
+## DEC-019 - AOGTICVITY memakai password auth tanpa MFA wajib di Vercel
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-01 |
+| Topik | Public identity architecture dan kebijakan MFA AOGTICVITY |
+| Keputusan | AOGTICVITY tetap memakai public Vercel dan admin MFA tidak wajib. Password auth harus tetap database-backed dengan forced bootstrap change, HttpOnly session, expiry, rate limit, RBAC, suspend/revoke, dan audit. Vercel memakai guarded HTTPS proxy ke backend Hostinger; MySQL tidak boleh dibuka ke internet. |
+| Alasan | Founder menginginkan akses yang lebih sederhana dan tetap dapat dicoba melalui URL Vercel tanpa mengorbankan session server-side atau membuka database publik. |
+| Alternatif yang dipertimbangkan | Tetap mewajibkan TOTP; membiarkan Vercel sebagai localStorage prototype; membuka MySQL langsung ke dynamic Vercel egress. |
+| Dampak | MFA menjadi opsional. Public login dan database session aktif melalui Vercel, tetapi activation keseluruhan tetap menunggu owner password claim, operations UAT, dan physical rehearsal. Klausa auth belum aktif pada DEC-016 digantikan oleh keputusan ini. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED`; source dan public production runtime terverifikasi |
 | Dokumen terkait | [AOGTICVITY Product](products/aogticvity/PRODUCT.md), [AOGTICVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTICVITY Changelog](products/aogticvity/CHANGELOG.md), [Status Legend](docs/STATUS_LEGEND.md) |

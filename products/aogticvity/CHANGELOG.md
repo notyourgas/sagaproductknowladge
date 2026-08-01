@@ -8,6 +8,25 @@ Mencatat perubahan material AOGTICVITY/17an/Olimpiade.
 
 Nama lama dipertahankan sebagai provenance; status runtime harus eksplisit.
 
+## 2026-08-01 - Password auth aktif melalui public Vercel
+
+- `CONFIRMED`: founder memilih admin MFA opsional dan meminta aplikasi tetap
+  dideploy pada Vercel. Passphrase kuat, forced password change, HttpOnly
+  database session, expiry, rate limit, RBAC, suspend/revoke, dan audit tetap aktif.
+- Public Vercel sekarang memakai guarded HTTPS proxy ke Better Auth dan MySQL
+  operations backend di Hostinger. Direct BFF tanpa secret 404; MySQL tetap
+  loopback-only dan tidak dibuka ke internet.
+- Source auth `dd59f8948c58f7d3a8f996d136e86bac9fb807f6`; proxy source
+  `56b0b43`; Vercel production `dpl_FfaWprKbFMuPD9euNe7yWrHRdgwC`;
+  Hostinger release `20260801T152049Z`.
+- Gate: local 55 test/build, dependency audit 0, Preview real-login, public
+  real-login, authenticated password-change redirect, health/readiness,
+  direct-endpoint denial, asset, service, Nginx, loopback MySQL, dan journal
+  error scan lulus.
+- Delivery tetap `PRODUCTION_DEPLOYED`. Activation keseluruhan tetap
+  `NOT_PRODUCTION_ACTIVATED` dan business readiness `BLOCKED` sampai owner
+  password claim, core operations UAT, dan physical multi-device rehearsal lulus.
+
 ## 2026-08-01 - Auth dan core operator operations dark staging
 
 - `CONFIRMED`: identity MySQL, database session, forced bootstrap password
