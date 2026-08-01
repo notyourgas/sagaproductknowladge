@@ -12,6 +12,30 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-01
 
+### SagaView katalog frame terisi production
+
+- Ringkasan: menyinkronkan katalog `/admin/frames` yang searchable,
+  filterable, responsif, dan jujur saat offline ke runtime production.
+- Alasan: empat kolom pada 390x844 memotong preview, nama, status, dan metadata,
+  sehingga operator sulit menemukan serta memverifikasi frame yang siap pakai.
+- Produk/area terdampak: SagaView Studio Console, katalog frame lokal/cloud,
+  search/filter, status aktif/nonaktif, responsive layout, accessibility,
+  release, dan rollback.
+- Klasifikasi: `CONFIRMED`; delivery `PRODUCTION_DEPLOYED`; activation
+  `PRODUCTION_ACTIVATED`; business readiness mass-scale tetap
+  `NEEDS CONFIRMATION`.
+- Source Studio `a130ee5939f64fd76d575908b7748bacd75a6878`, release
+  `20260801101538-a130ee5`; backend unchanged source
+  `f26bb57737fc25a0a40d350dc26ca727d30885b2`, release
+  `20260801101515-f26bb57`.
+- Production berubah: ya, hanya Studio frame catalog; customer picker,
+  payment/provider, device/session/privacy, dan output 4R tidak berubah.
+- Gate: 156 unit, 75/75 E2E, import 50/200/500, build/budget, dependency audit
+  0, restore 146 tabel, deploy gate 6/6, services, header security, journal,
+  rollback, dan 12 route smoke.
+- Rollback: Studio `20260801073058-fa78207`; backend
+  `20260801072934-f26bb57`.
+
 ### SagaView display preset responsif production
 
 - Ringkasan: menyinkronkan workflow Display Settings Studio yang responsif dan

@@ -10,6 +10,21 @@ workflow, pricing, release, activation, atau blocker.
 Detail tetap berada pada changelog produk; entri docs-only berada di root
 [CHANGELOG](../CHANGELOG.md).
 
+## 2026-08-01 — SagaView katalog frame terisi production
+
+- `CONFIRMED`: workflow operator `/admin/frames` kini searchable dan dapat
+  difilter berdasarkan kategori/status, dengan availability text, empty reset,
+  dan offline/cloud recovery yang jujur.
+- Mobile 390x844 berubah dari empat kartu sekitar 78 px menjadi satu kolom
+  324 px; desktop 1440x900 memakai tiga kolom tanpa overflow.
+- Source Studio `a130ee5939f64fd76d575908b7748bacd75a6878` aktif pada release
+  `20260801101538-a130ee5`; backend compatible source
+  `f26bb57737fc25a0a40d350dc26ca727d30885b2` aktif pada release
+  `20260801101515-f26bb57`.
+- 156 unit, 75/75 E2E, restore 146 tabel, deploy gate 6/6, services, security
+  header, journal, rollback, dan public smoke lulus; tidak ada provider action
+  atau perubahan kontrak customer/device/privacy/4R.
+
 ## 2026-08-01 — SagaView display preset responsif production
 
 - Display Settings Studio kini menuntun operator dari pilihan preset ke

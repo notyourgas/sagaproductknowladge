@@ -4,6 +4,29 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-08-01 — Katalog frame terisi responsif production
+
+- Klasifikasi: `CONFIRMED`.
+- Status: `PRODUCTION_DEPLOYED` dan `PRODUCTION_ACTIVATED`.
+- Before: `/admin/frames` memaksa empat kolom pada 390x844, sehingga kartu
+  sekitar 78 px dan preview/nama/status/metadata terpotong; operator hanya
+  memiliki filter kategori dan status nonaktif bergantung pada opacity.
+- After: katalog memiliki search, filter kategori/status, counts, status teks,
+  reset empty state, dan offline recovery yang fail-closed. Mobile memakai
+  satu kolom 324 px; desktop memakai tiga kolom stabil tanpa overflow.
+- Studio source `a130ee5939f64fd76d575908b7748bacd75a6878`, release
+  `20260801101538-a130ee5`; backend source tetap
+  `f26bb57737fc25a0a40d350dc26ca727d30885b2`, release
+  `20260801101515-f26bb57`.
+- Validation: 156 unit, 75/75 default-parallel E2E, 4/4 focused katalog,
+  35/35 regression terkait termasuk import 50/200/500, build/budget,
+  dependency audit 0, disposable restore 146 tabel, deploy gate 6/6, enam
+  service, header security, error journal, rollback, dan 12 route smoke lulus.
+- Release tidak mengubah customer picker, device/session/privacy, output 4R,
+  payment/provider, dan tidak membuat intent/QRIS/transaksi kedua.
+- Rollback Studio `20260801073058-fa78207`; rollback backend
+  `20260801072934-f26bb57`.
+
 ## 2026-08-01 — Display preset customer responsif production
 
 - Klasifikasi: `CONFIRMED`.

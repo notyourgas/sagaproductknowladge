@@ -177,6 +177,21 @@ Kontrak ini sekarang enforced server-side pada runtime production yang aktif.
 - tepat satu `Powered by SagaView` tetap berada di surface Studio dan tidak
   masuk export/print.
 
+## Katalog frame terisi
+
+`CONFIRMED` — production:
+
+- katalog `/admin/frames` dapat dicari berdasarkan nama/kategori dan difilter
+  berdasarkan kategori serta status aktif/nonaktif;
+- ringkasan jumlah, status teks, dan filtered-empty recovery membuat operator
+  tidak perlu menebak ketersediaan frame dari opacity atau warna saja;
+- katalog memakai satu kolom 324 px pada mobile 390x844 dan tiga kolom stabil
+  pada desktop 1440x900, tanpa horizontal overflow atau metadata terpotong;
+- frame lokal tetap dapat dilihat saat offline, sedangkan pemulihan katalog
+  cloud fail-closed sampai koneksi kembali;
+- customer picker, tenant/device/session/privacy, dan output/export/print 4R
+  tidak berubah.
+
 ## Kesiapan mulai sesi
 
 `CONFIRMED` — production:
@@ -203,13 +218,13 @@ Kontrak ini sekarang enforced server-side pada runtime production yang aktif.
 
 - Backend source:
   `f26bb57737fc25a0a40d350dc26ca727d30885b2`.
-- Backend release aktif: `20260801072934-f26bb57`; source backend tidak berubah
-  pada promosi S84.
+- Backend release aktif: `20260801101515-f26bb57`; source backend tidak berubah
+  pada promosi S85.
 - Studio source aktif:
-  `fa782070b3ac1b054d301eb97d2aa8caeca3f66c`.
-- Studio release aktif: `20260801073058-fa78207`.
+  `a130ee5939f64fd76d575908b7748bacd75a6878`.
+- Studio release aktif: `20260801101538-a130ee5`.
 - Studio release sebelumnya yang menjadi rollback:
-  `20260801132330-5c87083`.
+  `20260801073058-fa78207`.
 - Saga Platform source:
   `378bcdf4dac6c54d0bf421b5ef188103d82c6b40`.
 - Saga Platform release: `20260731181921-378bcdf`.
@@ -237,8 +252,8 @@ Kontrak ini sekarang enforced server-side pada runtime production yang aktif.
 ### Release validation
 
 - Backend: 908/908 test, 10.629 assertions.
-- Studio S83: 156 unit test, 68/68 E2E default-parallel, dan 9/9 focused
-  readiness/import termasuk 50/200/500 foto.
+- Studio S85: 156 unit test, 75/75 E2E default-parallel, 4/4 focused katalog,
+  dan 35/35 regression frame/customer/output/import termasuk 50/200/500 foto.
 - Public production browser: 8/8 self-service E2E.
 - Import 50/200/500, accessibility, responsive mobile–desktop, forced-colors,
   reduced-motion, dependency audit, dan bundle budget lulus.
@@ -249,8 +264,8 @@ Kontrak ini sekarang enforced server-side pada runtime production yang aktif.
 
 ### Rollback
 
-- Backend: `20260731183542-f26bb57`.
-- Studio: `20260731183624-1092c99`.
+- Backend: `20260801072934-f26bb57`.
+- Studio: `20260801073058-fa78207`.
 - Backup release dan konfigurasi Nginx sebelumnya dipertahankan.
 
 ## Belum boleh diklaim

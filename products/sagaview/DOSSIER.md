@@ -76,6 +76,13 @@ pengaturan tanpa overflow; preset memiliki state `Dipakai`, keyboard focus,
 target 44 px, status local/offline, validasi warna, dan recovery save. Kontrak
 frame customer, device/session/privacy, serta output 4R tidak berubah.
 
+Katalog frame terisi production kini memakai alur `cari -> filter kategori/
+status -> verifikasi frame`. Mobile 390x844 memakai satu kolom yang legible dan
+desktop 1440x900 memakai tiga kolom stabil. Nama, preview, kategori, slot,
+orientasi, harga, serta status aktif/nonaktif tidak lagi terpotong; local frame
+tetap dapat dilihat saat offline dan cloud recovery fail-closed. Customer
+picker, device/session/privacy, serta output 4R tidak berubah.
+
 ## Fitur MVP
 
 `CONFIRMED`: journey Studio, output 4R, completion/privacy handoff,
@@ -120,9 +127,9 @@ jam, 10 GB aset frame cloud, laporan lanjutan, activity log, dan priority
 support. Session/foto dipasarkan unlimited dengan fair-use; foto tetap lokal.
 
 `CONFIRMED` — kontrak ini aktif di production. Source Studio aktif adalah
-`fa782070b3ac1b054d301eb97d2aa8caeca3f66c`, release
-`20260801073058-fa78207`; rollback Studio adalah
-`20260801132330-5c87083`.
+`a130ee5939f64fd76d575908b7748bacd75a6878`, release
+`20260801101538-a130ee5`; rollback Studio adalah
+`20260801073058-fa78207`.
 
 ## Kompetitor
 
