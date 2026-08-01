@@ -65,8 +65,11 @@ Public prototype saat ini: `https://olimpiade-kemerdekaan.vercel.app`.
 - Frontend mobile-first.
 - Motion for React menangani page/state/gesture animation; canvas-confetti hanya
   dipakai pada success bernilai tinggi dan dinonaktifkan saat reduced-motion.
-- Backend check-in, roster, session/security, dan event-master vertical slice
-  dengan MySQL staging.
+- Backend dark staging memakai identity MySQL dan database session untuk role
+  `admin/operator/leader/player`, forced password change, TOTP admin, rate
+  limit, revoke session, serta server-side page/API authorization.
+- Check-in, roster, event-master, dan result publish/correct memakai versioning,
+  idempotency, permission, persistence MySQL, dan audit event.
 - SQLite hanya fast test adapter.
 - Event-master memiliki dry-run, validation, atomic publish, versioning, dan
   audit. Durasi jadwal bersifat provisional dan dapat disunting admin.
@@ -86,13 +89,16 @@ readiness: `BLOCKED`.
   menghormati reduced-motion.
 - Master recap 2026 berisi 8 tim, 10 lomba, jadwal provisional, mekanisme,
   safety, equipment, dan assignment panitia.
-- Backend slice dan migration MySQL sudah lulus dark-staging smoke.
+- Backend auth/operations aktif pada immutable Hostinger dark staging yang
+  hanya dapat diakses melalui loopback; migration identity dan result serta
+  recovery bootstrap ter-audit sudah lulus smoke.
 - MySQL-backed API pada Vercel tetap fail-closed 503 dan dev session 404;
   browser masih memakai bundled master/local state.
 - Typecheck, test, build, security, accessibility, responsive, migration, dan
   rollback telah menjadi gate.
-- Auth/IdP production, target custom domains, frontend API activation,
-  notification provider, dan UAT fisik multi-device belum terverifikasi.
+- Human password-change/TOTP UAT, public TLS/trusted origins, secure
+  Vercel-to-Hostinger path, target custom domains, notification provider, dan
+  UAT fisik multi-device belum terverifikasi.
 
 ## Belum boleh diklaim
 

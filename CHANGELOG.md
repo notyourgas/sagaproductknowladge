@@ -12,6 +12,26 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-01
 
+### AOGTICVITY auth dan core operator operations dark staging
+
+- Ringkasan: menyinkronkan identity MySQL, session, TOTP admin, role
+  authorization, access/session operations, server-authoritative result, dan
+  audit yang aktif pada Hostinger dark staging loopback.
+- Alasan: public prototype sebelumnya masih memakai demo role/local state dan
+  belum mempunyai issuer login maupun persistence hasil lintas perangkat.
+- Produk/area terdampak: auth, account/role, session/device, roster import,
+  check-in, result publish/correct, audit, readiness, recovery, dan release.
+- Klasifikasi: `CONFIRMED`; backend delivery `STAGING_DEPLOYED`; public product
+  delivery `PRODUCTION_DEPLOYED`; activation `NOT_PRODUCTION_ACTIVATED`;
+  business readiness `BLOCKED`.
+- Source `68aed04a66b7bb9364fafef307e3d0d8635f2b38`; dark-staging release
+  `20260801T113315Z`; rollback `20260801T112010Z`.
+- Production berubah: tidak; public Vercel, DNS, dan Nginx tidak diaktifkan.
+- Gate: local verify, Linux build, audit 0, MySQL 62/62, readiness,
+  authorization/dev-route smoke, backup, atomic switch, dan rollback lulus.
+- Blocker: human MFA/two-device UAT, public TLS/API path, recovery email
+  provider, leader/player data UAT, dan rehearsal fisik.
+
 ### SagaView katalog frame terisi production
 
 - Ringkasan: menyinkronkan katalog `/admin/frames` yang searchable,

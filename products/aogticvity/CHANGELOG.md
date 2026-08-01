@@ -8,6 +8,29 @@ Mencatat perubahan material AOGTICVITY/17an/Olimpiade.
 
 Nama lama dipertahankan sebagai provenance; status runtime harus eksplisit.
 
+## 2026-08-01 - Auth dan core operator operations dark staging
+
+- `CONFIRMED`: identity MySQL, database session, forced bootstrap password
+  change, TOTP admin, database rate limit, dan server-side role authorization
+  telah aktif pada Hostinger dark staging loopback.
+- Admin dapat membuat account operator/leader/player, suspend/reactivate,
+  melihat session/device, dan merevoke session; last-admin protection dan audit
+  event diterapkan dekat data.
+- Result publish/correct kini memiliki persistence MySQL, optimistic version,
+  idempotency, permission, dan audit. Existing roster import dan check-in juga
+  lulus full regression terhadap MySQL staging.
+- Source `68aed04a66b7bb9364fafef307e3d0d8635f2b38`; immutable dark-staging
+  release `20260801T113315Z`; rollback langsung `20260801T112010Z`.
+- Gate: local typecheck/53 test/build, Linux build, dependency audit 0, full
+  MySQL suite 62/62, readiness/login/authorization/dev-route smoke, backup, dan
+  atomic switch lulus.
+- Backend delivery `STAGING_DEPLOYED`; public product delivery tetap
+  `PRODUCTION_DEPLOYED` karena Vercel prototype. Activation tetap
+  `NOT_PRODUCTION_ACTIVATED`; business readiness tetap `BLOCKED`.
+- Production publik tidak berubah. Blocker: human password-change/TOTP dan
+  two-device UAT, public TLS/trusted origins, secure Vercel-to-Hostinger path,
+  recovery email provider, serta rehearsal fisik.
+
 ## 2026-08-01 — Festival UI/UX dan motion production
 
 - `CONFIRMED`: founder meminta UI/UX lebih fun dengan animasi menarik dan

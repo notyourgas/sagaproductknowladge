@@ -133,11 +133,13 @@ ketika keputusan atau release baru menutup gap.
 - Festival UI/UX production 1 Agustus 2026 tidak menutup blocker activation;
   perbaikannya berada pada visual hierarchy, responsive mobile canvas, motion,
   feedback, dan asset presentation.
+- Identity, role authorization, session, MFA bootstrap, result persistence,
+  dan audit sudah `STAGING_DEPLOYED`; ini belum membuktikan public activation.
 - `NEEDS CONFIRMATION`: model bisnis produk (event internal, jasa per event, atau
   SaaS).
-- `NEEDS CONFIRMATION`: auth/IdP production, secure Vercel-to-Hostinger BFF,
-  frontend API activation, notification provider, target custom domain/TLS,
-  dan physical multi-device UAT.
+- `NEEDS CONFIRMATION`: owner password-change/TOTP dan two-device UAT, secure
+  Vercel-to-Hostinger path, frontend API activation, recovery/notification
+  provider, target custom domain/TLS, dan physical event rehearsal.
 - `NEEDS CONFIRMATION`: nama final Tim 7/Tim 8, durasi lomba, serta keputusan
   master recap yang masih provisional/open.
 

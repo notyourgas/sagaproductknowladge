@@ -46,7 +46,8 @@ dan offline fallback.
 ## Fitur utama
 
 Public/player/leader/admin/live surfaces; master recap 8 tim/10 lomba; serta
-backend check-in, roster, session/security, dan event-master vertical slices.
+backend identity, access directory, check-in, roster, session/security,
+event-master, dan result operations vertical slices.
 Public prototype memakai festival visual system yang tetap ringkas untuk
 operator: hierarchy mobile, colored metric cues, animated active navigation,
 modal/state motion, dan success celebration dengan reduced-motion fallback.
@@ -55,17 +56,18 @@ modal/state motion, dan success celebration dengan reduced-motion fallback.
 
 Satu event dengan delapan tim dan sepuluh lomba, authenticated roles, MySQL
 persistence, multi-device check-in/scoring, audit, projection, dan fallback.
-Master event dark staging sudah terverifikasi dan public prototype sudah aktif
-di Vercel; auth produksi, frontend API activation, dan rehearsal fisik tetap
-belum production-activated.
+Master event dan backend auth/operations dark staging sudah terverifikasi;
+public prototype aktif di Vercel. Human MFA UAT, public TLS/API activation, dan
+rehearsal fisik tetap belum production-activated.
 
 ## Roadmap
 
-1. Finalize auth/IdP produksi dan aktifkan frontend API setelah UAT.
-2. Domain/TLS dan provider notification.
-3. Finalisasi nama Tim 7/Tim 8, durasi, serta keputusan open pada master recap.
-4. Multi-device/event rehearsal dan public smoke.
-5. `NEEDS CONFIRMATION`: repeatable product/service model.
+1. Selesaikan owner password-change, TOTP, dan two-device authorization UAT.
+2. Aktifkan domain/TLS, trusted origins, dan jalur frontend API yang aman.
+3. Pilih email recovery dan notification provider.
+4. Finalisasi nama Tim 7/Tim 8, durasi, serta keputusan open pada master recap.
+5. Multi-device/event rehearsal dan public smoke.
+6. `NEEDS CONFIRMATION`: repeatable product/service model.
 
 ## User journey
 
@@ -109,15 +111,19 @@ Operational app untuk matchday komunitas, bukan sekadar landing event.
 **Apakah domain sudah live?** Public Vercel prototype aktif; domain custom
 AOGTICVITY belum diaktifkan.
 **Apakah notification aktif?** Simulation bukan provider live.
-**Apakah bisa multi-device?** Target capability; runtime production belum
-terverifikasi.
+**Apakah auth sudah nyata?** Identity MySQL dan database session sudah aktif di
+dark staging; public Vercel masih prototype dan belum menjadi bukti auth production.
+**Apakah bisa multi-device?** Backend contract dan test MySQL tersedia, tetapi
+UAT fisik pada runtime public belum terverifikasi.
 
 ## Technical overview
 
 Frontend mobile-first dengan lebar aplikasi maksimum 430 px, Plus Jakarta Sans,
 Feather-style icons, Motion for React, canvas-confetti terbatas, dan
-public/player/leader/admin/live surfaces. Backend memakai MySQL staging untuk
-check-in, roster, managed session/security, serta event-master versioning.
+public/player/leader/admin/live surfaces. Backend dark staging memakai Better
+Auth dengan MySQL, HttpOnly database session, TOTP admin, role authorization,
+rate limit, account suspend/reactivate, session revocation, identity audit,
+check-in, roster, event-master, serta server-authoritative result operations.
 Public Vercel prototype memakai bundled master/local browser state; API MySQL
 tetap fail-closed. SQLite tetap fast test adapter.
 
@@ -135,8 +141,9 @@ announcement, version, audit, dan export.
 ## Risiko dan asumsi
 
 Event-day time pressure, network failure, duplicate scoring, stale projection,
-demo auth, localStorage, provider simulation, dua nama tim placeholder, serta
-durasi dan keputusan master recap yang masih provisional/open.
+public demo auth/localStorage, provider simulation, recovery email yang belum
+dipilih, human MFA UAT, dua nama tim placeholder, serta durasi dan keputusan
+master recap yang masih provisional/open.
 
 ## KPI dan success metrics
 

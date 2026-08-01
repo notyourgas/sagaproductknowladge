@@ -10,6 +10,20 @@ workflow, pricing, release, activation, atau blocker.
 Detail tetap berada pada changelog produk; entri docs-only berada di root
 [CHANGELOG](../CHANGELOG.md).
 
+## 2026-08-01 - AOGTICVITY auth dan operator operations dark staging
+
+- Identity MySQL, HttpOnly database session, forced password change, TOTP
+  admin, role authorization, user/session operations, dan audit kini aktif pada
+  Hostinger dark staging loopback.
+- Result publish/correct menjadi server-authoritative; roster import dan
+  check-in lulus full regression MySQL 62/62.
+- Source `68aed04a66b7bb9364fafef307e3d0d8635f2b38`; immutable release
+  `20260801T113315Z`; Linux build, audit 0, readiness dan authorization smoke,
+  backup, atomic switch, serta rollback lulus.
+- Backend delivery `STAGING_DEPLOYED`. Public Vercel tetap prototype;
+  activation `NOT_PRODUCTION_ACTIVATED` dan business readiness `BLOCKED`
+  sampai human MFA/two-device UAT dan public TLS/API path selesai.
+
 ## 2026-08-01 — SagaView katalog frame terisi production
 
 - `CONFIRMED`: workflow operator `/admin/frames` kini searchable dan dapat
