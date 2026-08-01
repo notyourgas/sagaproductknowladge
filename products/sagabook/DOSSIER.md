@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 31 Juli 2026
+- Updated: 2 Agustus 2026
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED` untuk workflow yang tercantum di
   [PRODUCT](PRODUCT.md)
@@ -126,17 +126,27 @@ terverifikasi; fallback manual harus tetap terlihat.
 Multi-tenant web application dengan storefront, admin, super-admin, background
 jobs, billing, audit, dan immutable release process.
 
-Candidate UI/UX operasional terbaru pada source
-`082c8c42bff2be0d70115b76227fd5472c1c6dab` berstatus
-`IMPLEMENTED_NOT_DEPLOYED`. Dashboard/admin, staff action, storefront booking
+UI/UX operasional pada source
+`8edd762154ec231b7e00c4a38db9c94dd0ee322c` berstatus
+`PRODUCTION_DEPLOYED` sebagai release `20260801213514-8edd762`. Dashboard/admin,
+staff action, storefront booking
 tenant, responsive hierarchy, accessibility states, dan signature
 `Powered by SagaBook` telah diintegrasikan tanpa mengubah kontrak booking,
 payment, tenant isolation, invoice, atau artefak bisnis. Visual matrix
 mobile/tablet/desktop lulus 400 skenario; exact-source focused release safety
 lulus 19 test/131 assertions, build dan dependency audit hijau, serta backup
-terenkripsi dan disposable restore exact-SHA lulus. Promotion masih menunggu
-protected GitHub Actions dan public smoke; release production tetap
-`20260731181921-378bcdf`.
+terenkripsi dan disposable restore exact-SHA lulus. Manifest, public smoke,
+database audit, service health, dan rollback production juga lulus.
+
+Hardening auth surface berikutnya pada source
+`614181ae0f5e80867e229323dae79afb43de226a` berstatus
+`IMPLEMENTED_NOT_DEPLOYED`. Login, signup, dan password recovery sekarang
+memiliki tepat satu `Powered by SagaBook`, target sentuh kritis minimal 44
+piksel, preview dekoratif inert, serta dukungan forced-colors dan reduced-motion.
+Focused visual regression 6/6, 15 test/174 assertions, typecheck, build,
+dependency audit, encrypted backup, dan disposable restore exact-SHA lulus.
+Production belum berubah karena workflow release manual belum dapat dipicu
+tanpa sesi GitHub terautentikasi.
 
 ## Integrasi
 

@@ -8,7 +8,7 @@ diubah menjadi klaim publik sebelum ditutup dengan bukti atau keputusan owner.
 
 ## Konteks
 
-Daftar ini berlaku pada evidence cut-off 31 Juli 2026 dan harus diperbarui
+Daftar ini berlaku pada evidence cut-off 2 Agustus 2026 dan harus diperbarui
 ketika keputusan atau release baru menutup gap.
 
 ## Cara memakai
@@ -60,10 +60,13 @@ ketika keputusan atau release baru menutup gap.
 - `TODO`: S72 auto-trial 7 hari masih `PRODUCTION HOLD`; kontrak production
   tetap tidak berubah sampai release, worker/provisioning, dan authenticated
   product UAT disetujui.
-- `TODO`: promote candidate UI/UX dan release-safety source `082c8c42` melalui
-  protected GitHub Actions, lalu jalankan migration/deploy gate dan public
-  smoke. Exact-SHA encrypted backup dan disposable restore sudah lulus;
-  production masih `20260731181921-378bcdf`.
+- `CONFIRMED`: candidate UI/UX dan release-safety kumulatif sudah
+  `PRODUCTION_DEPLOYED` sebagai release `20260801213514-8edd762`; manifest,
+  public smoke, database audit, service health, dan rollback lulus.
+- `TODO`: picu workflow release auth hardening source `614181ae` memakai sesi
+  GitHub terautentikasi, lalu verifikasi exact runtime, mobile/desktop public
+  smoke, dan rollback. Encrypted backup serta disposable restore exact-SHA
+  sudah lulus; production belum memuat perubahan auth ini.
 
 ### SagaView
 

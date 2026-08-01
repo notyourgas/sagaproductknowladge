@@ -12,11 +12,11 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-02T04:10:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-02T05:25:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `fd21cfd` |
-| Informasi terakhir disinkronkan | SagaBook UI/UX operasional, tenant booking storefront, watermark aplikasi, dan exact-SHA release-safety candidate source `082c8c42`; status `IMPLEMENTED_NOT_DEPLOYED`, production tetap `20260731181921-378bcdf`. |
+| Baseline sebelum pembaruan | `2a85644` |
+| Informasi terakhir disinkronkan | SagaBook UI/UX/release-safety source `8edd7621` aktif sebagai release `20260801213514-8edd762`; auth hardening source `614181ae` tetap `IMPLEMENTED_NOT_DEPLOYED` dengan exact-SHA backup/restore lulus. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru |
 | Konflik | Tidak ada; local `main` sama dengan `origin/main` sebelum edit. |
 | Error | Tidak ada error terbuka pada awal sinkronisasi. |
@@ -34,8 +34,8 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 ## Item menunggu konfirmasi
 
-SagaBook candidate source `082c8c42` masih membutuhkan protected GitHub
-Actions promotion dan post-deploy public smoke. Business readiness tetap
+SagaBook auth hardening source `614181ae` masih membutuhkan authenticated
+GitHub Actions dispatch dan post-deploy public smoke. Business readiness tetap
 membutuhkan cohort studio nyata, legal/tax finalization, dan pilot evidence.
 
 ## Cara verifikasi

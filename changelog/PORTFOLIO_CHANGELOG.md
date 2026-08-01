@@ -10,16 +10,31 @@ workflow, pricing, release, activation, atau blocker.
 Detail tetap berada pada changelog produk; entri docs-only berada di root
 [CHANGELOG](../CHANGELOG.md).
 
-## 2026-08-02 - SagaBook UI/UX dan release-safety candidate
+## 2026-08-02 - SagaBook production activation dan auth candidate
+
+- UI/UX operasional, tenant booking storefront, branding aplikasi, dan release
+  safety aktif sebagai release `20260801213514-8edd762` dari source
+  `8edd762154ec231b7e00c4a38db9c94dd0ee322c`.
+- Manifest, smoke publik, database audit, service health, backup/restore, dan
+  rollback lulus; business readiness tetap `NEEDS CONFIRMATION` sampai pilot
+  studio nyata dan legal/tax finalization selesai.
+- Hardening login/signup/password recovery pada source
+  `614181ae0f5e80867e229323dae79afb43de226a` berstatus
+  `IMPLEMENTED_NOT_DEPLOYED`: branding tepat satu kali, target sentuh 44
+  piksel, fokus dekoratif ditutup, dan aksesibilitas visual diperkuat.
+- Exact-SHA backup/restore kandidat lulus, tetapi workflow release manual belum
+  dapat dipicu tanpa sesi GitHub terautentikasi.
+
+## 2026-08-02 - SagaBook UI/UX dan release-safety candidate (historis)
 
 - Dashboard/admin, staff action, dan tenant booking storefront telah
   disempurnakan untuk hierarchy responsif, accessibility states, serta satu
   `Powered by SagaBook` per surface aplikasi.
 - Immutable release evidence diperketat dengan backup serial, checksum
   manifest deterministik, dan restore receipt yang terikat source commit.
-- Source `082c8c42bff2be0d70115b76227fd5472c1c6dab`; status
-  `IMPLEMENTED_NOT_DEPLOYED` karena protected GitHub Actions dan public smoke
-  belum dijalankan. Production tetap `20260731181921-378bcdf`.
+- Source `082c8c42bff2be0d70115b76227fd5472c1c6dab`; status saat dicatat
+  `IMPLEMENTED_NOT_DEPLOYED`, lalu digantikan oleh promotion kumulatif source
+  `8edd762154ec231b7e00c4a38db9c94dd0ee322c`.
 
 ## 2026-08-02 - AOGTICVITY public registration production
 

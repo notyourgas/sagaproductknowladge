@@ -4,9 +4,38 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
-## 2026-08-02 - Candidate UI/UX operasional dan release safety
+## 2026-08-02 - Auth branding dan touch safety candidate
 
-- Status: `IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
+- Status: `IMPLEMENTED_NOT_DEPLOYED`; production tetap
+  `20260801213514-8edd762`.
+- Login, signup, dan password recovery memiliki tepat satu signature
+  `Powered by SagaBook`, target sentuh kritis minimal 44 piksel, preview
+  dekoratif yang tidak dapat menerima fokus, serta state forced-colors dan
+  reduced-motion.
+- Source: `614181ae0f5e80867e229323dae79afb43de226a`.
+- Validation: visual regression mobile/desktop 6/6, 15 test/174 assertions,
+  typecheck, build, dependency audit 0, encrypted backup, dan disposable
+  restore exact-SHA lulus.
+- Blocker: workflow release manual belum dapat dipicu tanpa sesi GitHub yang
+  terautentikasi; tidak ada deploy parsial.
+
+## 2026-08-02 - UI/UX operasional dan release safety production
+
+- Status: `PRODUCTION_DEPLOYED`; activation scope operasional yang telah
+  dibuktikan tetap `PRODUCTION_ACTIVATED`.
+- Candidate kumulatif UI/UX, storefront tenant, branding, dan release safety
+  dipromosikan sebagai release `20260801213514-8edd762` dari source
+  `8edd762154ec231b7e00c4a38db9c94dd0ee322c`.
+- Manifest exact-SHA, public smoke, database audit 100, service health, journal,
+  backup/restore, dan rollback release lulus.
+- Business readiness tetap `NEEDS CONFIRMATION` sampai pilot studio nyata dan
+  legal/tax finalization selesai.
+
+## 2026-08-02 - Candidate UI/UX operasional dan release safety (historis)
+
+- Status saat dicatat: `IMPLEMENTED_NOT_DEPLOYED`; `DEPRECATED` sebagai status
+  aktif karena cakupan kumulatif kemudian dipromosikan melalui source
+  `8edd762154ec231b7e00c4a38db9c94dd0ee322c`.
 - Dashboard/admin, navigasi, action staff, dan tenant booking storefront telah
   dirapikan untuk hierarchy mobile/tablet/desktop, state aksesibilitas, dan
   satu signature `Powered by SagaBook` per surface aplikasi.

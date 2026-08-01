@@ -12,15 +12,34 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-02
 
-### SagaBook UI/UX dan release-safety candidate
+### SagaBook production activation dan auth surface candidate
+
+- Ringkasan: memperbarui status UI/UX/release-safety kumulatif menjadi
+  production dan mencatat hardening auth surface berikutnya sebagai kandidat.
+- Produk/area terdampak: SagaBook admin auth, signup, password recovery,
+  storefront tenant, accessibility, backup/restore, release, dan rollback.
+- Klasifikasi: `CONFIRMED`; source `8edd762154ec231b7e00c4a38db9c94dd0ee322c`
+  `PRODUCTION_DEPLOYED` pada release `20260801213514-8edd762`; source
+  `614181ae0f5e80867e229323dae79afb43de226a`
+  `IMPLEMENTED_NOT_DEPLOYED`.
+- Production berubah: ya untuk source `8edd7621`; belum berubah untuk auth
+  hardening `614181ae`.
+- Gate: manifest, smoke, database audit, services, backup/restore, rollback,
+  visual regression 6/6, 15 test/174 assertions, typecheck, build, dan
+  dependency audit lulus.
+- Blocker: pemicu workflow manual untuk `614181ae` membutuhkan sesi GitHub
+  terautentikasi; tidak ada deploy parsial.
+
+### SagaBook UI/UX dan release-safety candidate (historis)
 
 - Ringkasan: menyinkronkan candidate penyempurnaan dashboard/admin, action
   staff, tenant booking storefront, accessibility, branding, dan guarded
   release evidence SagaBook.
 - Produk/area terdampak: SagaBook admin, storefront milik studio, visual QA,
   backup/restore, migration integrity, release, dan rollback.
-- Klasifikasi: `CONFIRMED`; delivery `IMPLEMENTED_NOT_DEPLOYED`; production
-  tidak berubah.
+- Klasifikasi saat dicatat: `CONFIRMED`; delivery
+  `IMPLEMENTED_NOT_DEPLOYED`; status tersebut kini `DEPRECATED` oleh promotion
+  kumulatif `8edd762154ec231b7e00c4a38db9c94dd0ee322c`.
 - Source: `082c8c42bff2be0d70115b76227fd5472c1c6dab`.
 - Gate: visual matrix 400 pass/0 fail, exact-source focused release safety
   19 test/131 assertions, build/audit hijau, encrypted backup dan disposable
