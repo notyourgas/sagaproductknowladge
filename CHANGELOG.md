@@ -12,6 +12,22 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-02
 
+### SagaView Consent Dashboard tahan gangguan production
+
+- Ringkasan: membuat state loading/error/offline/empty/recovered jujur,
+  menambahkan retry non-mutating, memperbesar target action, dan merapikan
+  hierarchy responsif Consent Dashboard.
+- Produk/area terdampak: SagaView Studio Console Consent, responsive layout,
+  error recovery, accessibility, watermark, release, rollback, dan knowledge.
+- Klasifikasi: `CONFIRMED`; source
+  `a3eb955d5bfa5e17714ecc7d4c09a38fcae0b541`, release
+  `20260802132108-a3eb955`, status `PRODUCTION_DEPLOYED` dan
+  `PRODUCTION_ACTIVATED`.
+- Production berubah: ya, hanya UI Consent. 156 unit, full E2E 81/81, focused
+  production 3/3, dependency audit 0, backup/restore, gate 6/6, sepuluh
+  route/header/service/journal, dan rollback lulus; backend, SagaBook,
+  consent/foto, payment/provider, serta output 4R tidak berubah.
+
 ### SagaView General Settings responsif production
 
 - Ringkasan: membuat action Reset/Simpan General kontekstual, menghapus

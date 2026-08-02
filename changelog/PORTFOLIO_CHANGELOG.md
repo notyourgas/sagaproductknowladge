@@ -10,6 +10,20 @@ workflow, pricing, release, activation, atau blocker.
 Detail tetap berada pada changelog produk; entri docs-only berada di root
 [CHANGELOG](../CHANGELOG.md).
 
+## 2026-08-02 - SagaView Consent Dashboard tahan gangguan production
+
+- `CONFIRMED`: Consent Dashboard kini membedakan loading, offline/error,
+  populated, filtered-empty, dan recovered; retry tidak memutasi consent atau
+  foto, action minimal 44 px, dan mobile/desktop bebas overflow.
+- Source Studio `a3eb955d5bfa5e17714ecc7d4c09a38fcae0b541` aktif pada release
+  `20260802132108-a3eb955`; backend tetap `20260802042221-f26bb57`.
+- 156 unit, 81/81 E2E default, 3/3 focused production, dependency audit 0,
+  backup/offsite/disposable restore, gate 6/6, sepuluh route/header smoke,
+  service health, journal, dan rollback lulus.
+- Tepat satu `Powered by SagaView` tetap terlihat; backend, customer flow,
+  consent tersimpan, foto lokal, payment/provider, dan output 4R tidak berubah.
+- Business readiness mass-scale tetap `NEEDS CONFIRMATION`.
+
 ## 2026-08-02 - SagaView General Settings responsif production
 
 - `CONFIRMED`: action Reset/Simpan General kini kontekstual, tidak menyebabkan

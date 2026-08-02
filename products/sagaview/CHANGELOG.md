@@ -4,6 +4,29 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-08-02 - Consent Dashboard tahan gangguan production
+
+- Klasifikasi: `CONFIRMED`.
+- Status: `PRODUCTION_DEPLOYED` dan `PRODUCTION_ACTIVATED`.
+- Before: kegagalan fetch tampil seperti data kosong tanpa retry, filter dan row
+  action di bawah 44 px, ringkasan mobile terlalu panjang, dan separator metadata
+  consent rusak.
+- After: loading, offline/error, populated, filtered-empty, dan recovered tampil
+  eksplisit; retry tidak memutasi consent atau foto; filter memakai selected
+  state aksesibel; action minimal 44 px; mobile/desktop bebas overflow; tepat
+  satu `Powered by SagaView` tetap terlihat.
+- Studio source `a3eb955d5bfa5e17714ecc7d4c09a38fcae0b541`, release
+  `20260802132108-a3eb955`; backend tetap source
+  `f26bb57737fc25a0a40d350dc26ca727d30885b2`, release
+  `20260802042221-f26bb57`.
+- Validation: 44 file/156 unit, full default-parallel E2E 81/81, focused Consent
+  production 3/3, build/budget, dependency audit 0, encrypted backup/offsite
+  round-trip/disposable restore, gate 6/6, sepuluh route 200, security header,
+  service health, dan journal lulus.
+- Release tidak mengubah backend, consent tersimpan, file foto lokal, customer
+  flow, payment/provider, tenant isolation, atau export/print 4R.
+- Rollback Studio `20260802112729-e666d7b`; backend tidak dipromosikan ulang.
+
 ## 2026-08-02 - General Settings responsif production
 
 - Klasifikasi: `CONFIRMED`.

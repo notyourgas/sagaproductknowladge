@@ -164,8 +164,8 @@ plan-limited, tanpa auto-charge.
 Update terbaru: backend/Owner tetap memakai source
 `f26bb57737fc25a0a40d350dc26ca727d30885b2`, release
 `20260802042221-f26bb57`, sedangkan Studio aktif memakai source
-`e666d7b0d7614741b75fdd421e341dbf541bd0cf`, release
-`20260802112729-e666d7b`. Owner Console lintas browser,
+`a3eb955d5bfa5e17714ecc7d4c09a38fcae0b541`, release
+`20260802132108-a3eb955`. Owner Console lintas browser,
 Studio exclusive lease, output 4R, session completion/privacy handoff,
 trial/subscription, serta public Home/Pricing/Help/Contact/Privacy/Terms/Legal
 aktif. Limit device/frame/preset, quota aset frame cloud, fair-use,
@@ -196,6 +196,12 @@ memenuhi workspace, dirty mengikuti konten tanpa overflow pada mobile 390 px,
 dan desktop tetap sticky. Accessible name lama, 44 px, forced-colors,
 reduced-motion, paket/promo/harga, local-first, payment, privacy, serta 4R tetap
 terjaga.
+Consent Dashboard membedakan loading, offline/error, populated, filtered-empty,
+dan recovered; kegagalan fetch tidak lagi menyamar sebagai data kosong. Retry,
+filter selected state, target 44 px, mobile/desktop, keyboard, forced-colors,
+reduced-motion, dan satu `Powered by SagaView` aktif tanpa memutasi consent atau
+foto. Backend, customer flow, local-first, privacy, payment, dan output 4R tidak
+berubah.
 
 Candidate Saga Platform `dcb5a3f3` menyiapkan signup SagaView auto-trial 7 hari
 tanpa approval owner/email verification. Login tetap menunggu provisioning
