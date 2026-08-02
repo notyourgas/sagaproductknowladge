@@ -239,6 +239,21 @@ tiga viewport lulus. `/up` belum mengirim HSTS. Sampel login mengirim HSTS dan
 CSP satu kali tanpa `X-Frame-Options`; CSP `frame-ancestors` tetap aktif dan
 kontrak header perlu dinormalisasi.
 
+Storefront booking desktop pada source
+`994de01cf3586adb4da8813a9c4b931085457510` berstatus
+`IMPLEMENTED_NOT_DEPLOYED`. Mulai viewport 1120 piksel, renderer menggunakan
+shell dua kolom hingga 1040 piksel: panel kiri memberi orientasi langkah dan
+ringkasan pilihan, sedangkan panel kanan mempertahankan transaksi. Mobile
+390x844 tetap identik dan tablet 1024x768 tetap memakai layout ringkas tanpa
+overflow. Seluruh langkah dan preset existing, Maps, WhatsApp, paket, slot,
+checkout, confirmation, tenant brand, serta satu `Powered by SagaBook` tetap
+tercakup tanpa perubahan payment/provider, availability, session, permission,
+atau tenant isolation. Backend 960/960, visual desktop 44/44, focused
+desktop/mobile 2/2, mobile manual-transfer E2E, build, dan npm audit 0 lulus.
+Promotion ditahan fail-closed karena Composer advisory audit tidak dapat
+mengakses Packagist dan tidak memiliki advisory cache offline. Production tetap
+release `20260802183533-35c8219`; rollback `20260802160930-596b8a4` tersedia.
+
 ## Integrasi
 
 Payment dan notification provider, serta future SagaView handoff.

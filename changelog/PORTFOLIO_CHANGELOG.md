@@ -10,6 +10,24 @@ workflow, pricing, release, activation, atau blocker.
 Detail tetap berada pada changelog produk; entri docs-only berada di root
 [CHANGELOG](../CHANGELOG.md).
 
+## 2026-08-03 - SagaBook storefront desktop candidate
+
+- `CONFIRMED`: storefront booking publik SagaBook pada desktop kini memakai
+  shell dua kolom hingga 1040 piksel, dengan orientasi langkah dan ringkasan
+  pilihan di sisi kiri serta transaksi di sisi kanan. Mobile 390x844 tetap
+  identik dan tablet 1024x768 tetap ringkas tanpa overflow.
+- Source `994de01cf3586adb4da8813a9c4b931085457510` sudah dipush dengan status
+  `IMPLEMENTED_NOT_DEPLOYED`. Production tetap source `35c82192234eb84e03b2237029540e299c70e12f`,
+  release `20260802183533-35c8219`; rollback `20260802160930-596b8a4` aman.
+- Seluruh langkah dan preset existing, Maps, WhatsApp, paket, slot, checkout,
+  confirmation, tenant brand, serta satu `Powered by SagaBook` tetap tercakup.
+  Payment/provider, availability, permission, session, dan tenant isolation
+  tidak berubah.
+- Backend 960/960, visual desktop 44/44, focused desktop/mobile 2/2, mobile
+  manual-transfer E2E, build, dan npm audit 0 lulus. Promotion ditahan karena
+  Composer advisory audit gagal mengakses Packagist dan tidak memiliki cache
+  advisory offline. SagaView tidak berubah pada batch ini.
+
 ## 2026-08-03 - SagaView Install App jujur production
 
 - `CONFIRMED`: halaman Install kini membedakan prompt otomatis, manual, dan

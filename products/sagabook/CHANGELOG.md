@@ -4,6 +4,29 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-03 - Storefront booking desktop diperluas, belum dipromosikan
+
+- Klasifikasi: `CONFIRMED`; delivery `IMPLEMENTED_NOT_DEPLOYED`, production
+  dan activation tidak berubah, business readiness tetap `NEEDS CONFIRMATION`.
+- Source `994de01cf3586adb4da8813a9c4b931085457510` sudah dipush. Production tetap
+  memakai source `35c82192234eb84e03b2237029540e299c70e12f` pada release
+  `20260802183533-35c8219`; rollback `20260802160930-596b8a4` dipertahankan.
+- Before: pada desktop 1440x900, perjalanan booking publik tetap dibatasi
+  seperti preview ponsel 460 piksel di tengah ruang kosong. After: viewport
+  mulai 1120 piksel memakai shell dua kolom hingga 1040 piksel, dengan panel
+  orientasi langkah dan ringkasan pilihan di kiri serta transaksi di kanan.
+  Mobile 390x844 tetap identik dan tablet 1024x768 tetap memakai layout ringkas
+  tanpa overflow.
+- Semua preset existing dan seluruh langkah booking memperoleh layout desktop
+  yang sama; Maps, WhatsApp, paket, slot, checkout, confirmation, tenant brand,
+  serta satu `Powered by SagaBook` tetap utuh. Payment/provider, availability,
+  session, permission, dan tenant isolation tidak berubah.
+- Gate lokal: backend 960/960 dengan 11.007 assertions; visual desktop 44/44;
+  focused desktop/mobile 2/2; mobile manual-transfer E2E, build, diff check,
+  dan npm audit 0 lulus. Production ditahan fail-closed karena Composer tidak
+  dapat mengambil advisory Packagist akibat timeout jaringan; audit offline
+  juga tidak memiliki advisory cache.
+
 ## 2026-08-03 - Admin Staff responsif dipromosikan
 
 - Klasifikasi: `CONFIRMED`; delivery `PRODUCTION_DEPLOYED`, activation scope

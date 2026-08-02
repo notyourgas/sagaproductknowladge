@@ -12,6 +12,28 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-03
 
+### SagaBook storefront desktop candidate
+
+- Ringkasan: memperluas storefront booking desktop dari kanvas 460 piksel
+  menjadi shell operasional dua kolom hingga 1040 piksel, tanpa mengubah
+  tampilan mobile atau kontrak transaksi.
+- Alasan: customer desktop memerlukan hierarchy dan orientasi langkah yang
+  memanfaatkan ruang layar, sementara seluruh alur booking harus tetap sama.
+- Produk/area terdampak: SagaBook storefront milik studio, responsive UX,
+  seluruh preset existing, accessibility, watermark, dan release gate.
+- Klasifikasi: `CONFIRMED`; source
+  `994de01cf3586adb4da8813a9c4b931085457510` sudah dipush dengan status
+  `IMPLEMENTED_NOT_DEPLOYED`.
+- Production berubah: tidak. Production tetap source `35c82192234eb84e03b2237029540e299c70e12f`
+  pada release `20260802183533-35c8219`; rollback
+  `20260802160930-596b8a4` dipertahankan. SagaView tidak berubah.
+- Gate: backend 960/960, visual desktop 44/44, focused desktop/mobile 2/2,
+  mobile manual-transfer E2E, build, diff check, dan npm audit 0 lulus.
+- Blocker/next action: ulangi Composer advisory audit saat Packagist tersedia;
+  promotion immutable baru hanya boleh dilanjutkan setelah gate hijau.
+- File knowledge: `products/sagabook/PRODUCT.md`, `DOSSIER.md`, `CHANGELOG.md`,
+  portfolio changelog, root changelog, dan sync status.
+
 ### SagaView Install App jujur production release
 
 - Ringkasan: mengganti CTA install yang menyesatkan saat prompt browser tidak

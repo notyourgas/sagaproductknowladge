@@ -282,6 +282,17 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
   `/up` masih tidak mengirim HSTS. Sampel login saat release mengirim HSTS dan
   CSP satu kali tetapi tidak mengirim `X-Frame-Options`; CSP
   `frame-ancestors` tetap aktif dan kontrak header perlu dinormalisasi.
+- Storefront booking desktop pada source
+  `994de01cf3586adb4da8813a9c4b931085457510` berstatus
+  `IMPLEMENTED_NOT_DEPLOYED`. Mulai viewport 1120 piksel, layout memakai shell
+  dua kolom hingga 1040 piksel dengan orientasi langkah dan ringkasan pilihan;
+  mobile 390x844 tetap identik dan tablet 1024x768 tetap ringkas tanpa
+  overflow. Semua langkah dan preset existing, Maps, WhatsApp, paket, slot,
+  checkout, confirmation, tenant brand, dan satu `Powered by SagaBook` tetap
+  tercakup. Backend 960/960, visual desktop 44/44, focused desktop/mobile 2/2,
+  mobile manual-transfer E2E, build, dan npm audit 0 lulus. Production masih
+  memakai release `20260802183533-35c8219`; promotion ditahan karena Composer
+  advisory audit tidak dapat mengakses Packagist.
 - Candidate signup tanpa approval owner dan trial kanonik 7 hari sudah
   `LOCAL_VALIDATED` pada source
   `dcb5a3f3dc1e3e7b5c0c067e8968ca341ebf1c27`. Production tetap memakai
