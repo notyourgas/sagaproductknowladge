@@ -12,6 +12,18 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-02
 
+### SagaBook Admin Booking production release
+
+- Ringkasan: memperbaiki release runner yang berhenti sebelum verified
+  transition, lalu mempromosikan Admin Booking responsif secara immutable.
+- Produk/area terdampak: SagaBook Admin Booking, payment reconciliation,
+  release diagnostics, backup/restore, dan production activation.
+- Klasifikasi: `CONFIRMED`; source
+  `500065c81cbc07e29b3370f8b22a8fcc521f7d7d`, release
+  `20260802101645-500065c`, status `PRODUCTION_DEPLOYED`.
+- SagaView tidak berubah. Branding public commercial/legal SagaBook belum 100%
+  karena Pricing, Terms, dan Privacy belum memiliki signature produk.
+
 ### SagaBook Admin Booking candidate tertahan release gate
 
 - Ringkasan: menambahkan triage Booking responsif dan memperbaiki false

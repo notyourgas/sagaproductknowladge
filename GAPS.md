@@ -60,9 +60,15 @@ ketika keputusan atau release baru menutup gap.
 - `TODO`: S72 auto-trial 7 hari masih `PRODUCTION HOLD`; kontrak production
   tetap tidak berubah sampai release, worker/provisioning, dan authenticated
   product UAT disetujui.
-- `TODO`: diagnosis release runner Admin Booking source `9963f3de` harus
-  menghasilkan alasan terstruktur dan lulus pre-activation gate sebelum
-  promotion; dua attempt fail-closed tidak mengubah production.
+- `CONFIRMED`: gap release runner Admin Booking telah ditutup pada source
+  `500065c8`; release `20260802101645-500065c` aktif dengan readiness 100 dan
+  rollback lama dipertahankan.
+- `TODO`: tambahkan satu signature aksesibel `Powered by SagaBook` pada public
+  Pricing, Terms, dan Privacy. Ketiga route terverifikasi 200 dan tanpa overflow,
+  tetapi saat ini signature berjumlah nol pada mobile/desktop yang diaudit.
+- `TODO`: normalisasi response header `X-Frame-Options` SagaBook agar hanya
+  dikirim satu kali; nilai duplikat saat ini identik (`SAMEORIGIN`) dan CSP tetap
+  membatasi `frame-ancestors`, tetapi hygiene header belum ideal.
 - `CONFIRMED`: candidate UI/UX dan auth/fallback hardening kumulatif sudah
   `PRODUCTION_DEPLOYED` sebagai release `20260802002923-d9bbbac`; manifest,
   public HTTP smoke, production auth browser 6/6, matriks browser

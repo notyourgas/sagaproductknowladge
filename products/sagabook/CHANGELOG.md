@@ -4,6 +4,22 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-02 - Admin Booking dipromosikan setelah release runner diperbaiki
+
+- Klasifikasi: `CONFIRMED`; delivery `PRODUCTION_DEPLOYED`.
+- Source `500065c81cbc07e29b3370f8b22a8fcc521f7d7d` memperbaiki runner agar baseline
+  readiness non-zero dapat masuk ke verifikasi transition yang ketat dan setiap
+  kegagalan tetap menghasilkan stage/reason terstruktur.
+- Release `20260802101645-500065c` aktif dengan readiness 100, manifest exact
+  source, migration, encrypted backup, disposable restore, tujuh service aktif,
+  journal bersih, dan public smoke lulus. Rollback SagaBook tetap
+  `20260802024941-b74ebb5`; SagaView tidak berubah.
+- Full backend 959/959 dengan 11.001 assertions; focused Admin Booking pada
+  mobile/tablet/desktop 6/6; build, design audit, dan dependency audit 0 lulus.
+- `TODO`: public Pricing, Terms, dan Privacy masih belum menampilkan signature
+  `Powered by SagaBook`; ketiga route 200 tanpa overflow, tetapi branding lintas
+  surface belum lengkap.
+
 ## 2026-08-02 - Admin Booking triage candidate belum dipromosikan
 
 - Klasifikasi: `CONFIRMED`; delivery `IMPLEMENTED_NOT_DEPLOYED`.

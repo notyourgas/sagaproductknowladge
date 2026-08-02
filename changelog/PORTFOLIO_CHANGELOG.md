@@ -10,6 +10,17 @@ workflow, pricing, release, activation, atau blocker.
 Detail tetap berada pada changelog produk; entri docs-only berada di root
 [CHANGELOG](../CHANGELOG.md).
 
+## 2026-08-02 - SagaBook Admin Booking production release
+
+- Source `500065c8` memperbaiki release runner dan mempromosikan Admin Booking
+  triage responsif sebagai release `20260802101645-500065c`.
+- Backend 959/959, focused UI tiga viewport 6/6, encrypted backup/disposable
+  restore, migration, readiness 100, tujuh service aktif, journal bersih, dan
+  public smoke lulus.
+- SagaView tetap pada release `20260802042221-f26bb57`; tidak ada provider,
+  payment, atau QRIS baru. Gap tersisa: signature public Pricing/Terms/Privacy
+  SagaBook dan deduplikasi header `X-Frame-Options`.
+
 ## 2026-08-02 - SagaBook Admin Booking candidate tertahan release gate
 
 - Source `9963f3de` menyelesaikan triage Booking responsif: kartu mobile, tabel
