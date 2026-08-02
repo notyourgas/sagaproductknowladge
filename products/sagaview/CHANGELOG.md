@@ -4,6 +4,30 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-08-03 - Katalog frame padat dan bantuan aman production
+
+- Klasifikasi: `CONFIRMED`.
+- Status: `PRODUCTION_DEPLOYED` dan `PRODUCTION_ACTIVATED`; business readiness
+  mass-scale tetap `NEEDS CONFIRMATION`.
+- Before: delapan frame memenuhi halaman mobile dengan preview vertikal penuh,
+  desktop 1440x900 hanya memuat tiga kartu per baris, dan launcher bantuan
+  fixed menutupi badge kartu saat operator menggulir.
+- After: mobile 390x844 memakai kartu horizontal ringkas, desktop memakai empat
+  kolom, metadata tetap terbaca, action authoring tetap minimal 44 px, dan
+  launcher bantuan masuk alur halaman saat tertutup lalu menjadi panel fixed
+  hanya ketika dibuka.
+- Studio source `ae21062f1767542ea2af52b4ba874dac4ec1142f`, release
+  `20260803062122-ae21062`; backend tetap source
+  `f26bb57737fc25a0a40d350dc26ca727d30885b2`, release
+  `20260802042221-f26bb57`.
+- Validation: focused Frames 5/5, 44 file/156 unit, full E2E 85/85, import
+  50/200/500, build/budget, accessibility/forced-colors/reduced-motion,
+  dependency audit 0, sepuluh route 200, HSTS/CSP/XFO, service/Nginx/journal,
+  serta visual mobile/desktop lulus.
+- Tidak ada migration, payment/provider action, atau perubahan customer picker,
+  frame recovery, tenant/device/session/privacy, dan export/print 4R.
+- Rollback Studio `20260802200733-34519c4`; backend tidak dipromosikan ulang.
+
 ## 2026-08-03 - Install App jujur dan kontekstual production
 
 - Klasifikasi: `CONFIRMED`.

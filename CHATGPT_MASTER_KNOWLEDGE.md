@@ -207,8 +207,8 @@ plan-limited, tanpa auto-charge.
 Update terbaru: backend/Owner tetap memakai source
 `f26bb57737fc25a0a40d350dc26ca727d30885b2`, release
 `20260802042221-f26bb57`, sedangkan Studio aktif memakai source
-`34519c4dea1d6e7ee40be603e5c4e782bc230b3d`, release
-`20260802200733-34519c4`. Owner Console lintas browser,
+`ae21062f1767542ea2af52b4ba874dac4ec1142f`, release
+`20260803062122-ae21062`. Owner Console lintas browser,
 Studio exclusive lease, output 4R, session completion/privacy handoff,
 trial/subscription, serta public Home/Pricing/Help/Contact/Privacy/Terms/Legal
 aktif. Limit device/frame/preset, quota aset frame cloud, fair-use,
@@ -228,8 +228,10 @@ penyesuaian, validasi, dan save tanpa overflow pada mobile; selected, keyboard,
 berhasil dibayar dan callback diproses exactly-once; release tidak membuat
 intent/QRIS/transaksi kedua. Katalog frame terisi kini dapat dicari dan difilter
 berdasarkan kategori/status, menampilkan status aktif/nonaktif dengan teks,
-memakai satu kolom legible di mobile dan tiga kolom stabil di desktop, serta
+memakai kartu horizontal ringkas di mobile dan empat kolom di desktop, serta
 mempertahankan local frame saat offline tanpa mengubah customer picker atau 4R.
+Launcher bantuan masuk alur halaman saat tertutup sehingga tidak menutupi kartu
+mobile, lalu kembali menjadi panel fixed yang utuh di viewport saat dibuka.
 Output Settings kini hanya menampilkan Reset/Simpan saat dirty, menaruh action
 setelah konten pada mobile dan sticky pada desktop, memakai target 44 px, serta
 memprioritaskan status `Belum disimpan` ketika operator mengedit ulang. Folder,

@@ -10,6 +10,20 @@ workflow, pricing, release, activation, atau blocker.
 Detail tetap berada pada changelog produk; entri docs-only berada di root
 [CHANGELOG](../CHANGELOG.md).
 
+## 2026-08-03 - SagaView katalog frame lebih padat production
+
+- `CONFIRMED`: katalog terisi sekarang memakai kartu horizontal ringkas pada
+  mobile 390x844 dan empat kolom pada desktop 1440x900; launcher bantuan tidak
+  lagi fixed menutupi frame ketika tertutup.
+- Source Studio `ae21062f1767542ea2af52b4ba874dac4ec1142f` aktif pada release
+  `20260803062122-ae21062`; backend tetap `20260802042221-f26bb57`; rollback
+  Studio `20260802200733-34519c4` dipertahankan.
+- Focused 5/5, 156 unit, 85/85 E2E, import 50/200/500, build/budget, audit 0,
+  accessibility, sepuluh route/header smoke, service/Nginx/journal, dan visual
+  mobile/desktop lulus.
+- Customer picker, frame recovery, device/session/privacy, payment/provider,
+  tenant isolation, output 4R, dan business-readiness claim tidak berubah.
+
 ## 2026-08-03 - SagaBook storefront desktop production
 
 - `CONFIRMED`: storefront booking publik SagaBook pada desktop kini memakai

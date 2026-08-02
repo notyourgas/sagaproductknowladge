@@ -7,7 +7,7 @@ SagaView berdasarkan runtime production aktif.
 
 ## Konteks dan status bukti
 
-- Updated: 2 Agustus 2026
+- Updated: 3 Agustus 2026
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED`
 - Business readiness: `NEEDS CONFIRMATION` untuk penjualan massal
@@ -76,12 +76,14 @@ pengaturan tanpa overflow; preset memiliki state `Dipakai`, keyboard focus,
 target 44 px, status local/offline, validasi warna, dan recovery save. Kontrak
 frame customer, device/session/privacy, serta output 4R tidak berubah.
 
-Katalog frame terisi production kini memakai alur `cari -> filter kategori/
-status -> verifikasi frame`. Mobile 390x844 memakai satu kolom yang legible dan
-desktop 1440x900 memakai tiga kolom stabil. Nama, preview, kategori, slot,
-orientasi, harga, serta status aktif/nonaktif tidak lagi terpotong; local frame
-tetap dapat dilihat saat offline dan cloud recovery fail-closed. Customer
-picker, device/session/privacy, serta output 4R tidak berubah.
+Katalog frame terisi production memakai alur `cari -> filter kategori/status
+-> verifikasi frame`. Mobile 390x844 kini memakai kartu horizontal ringkas dan
+desktop 1440x900 memakai empat kolom, sehingga delapan frame lebih cepat
+dipindai. Nama, preview, kategori, slot, orientasi, harga, serta status tetap
+terbaca; launcher bantuan masuk alur halaman saat tertutup dan tidak lagi
+menutupi kartu mobile. Local frame tetap dapat dilihat saat offline dan cloud
+recovery fail-closed. Customer picker, device/session/privacy, serta output 4R
+tidak berubah.
 
 ## Fitur MVP
 
@@ -127,9 +129,9 @@ jam, 10 GB aset frame cloud, laporan lanjutan, activity log, dan priority
 support. Session/foto dipasarkan unlimited dengan fair-use; foto tetap lokal.
 
 `CONFIRMED` — kontrak ini aktif di production. Source Studio aktif adalah
-`34519c4dea1d6e7ee40be603e5c4e782bc230b3d`, release
-`20260802200733-34519c4`; rollback Studio adalah
-`20260802132108-a3eb955`. Output Settings hanya menampilkan action simpan saat
+`ae21062f1767542ea2af52b4ba874dac4ec1142f`, release
+`20260803062122-ae21062`; rollback Studio adalah
+`20260802200733-34519c4`. Output Settings hanya menampilkan action simpan saat
 dirty, tidak menutup konten mobile, mempertahankan action sticky desktop, dan
 menjaga status `Belum disimpan` tetap jujur. Kontrak folder, device, foto lokal,
 payment, dan output PNG 4R tidak berubah.

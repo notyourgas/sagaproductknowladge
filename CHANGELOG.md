@@ -12,6 +12,29 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-03
 
+### SagaView katalog frame padat production release
+
+- Ringkasan: mengubah katalog terisi menjadi kartu horizontal ringkas pada
+  mobile dan empat kolom pada desktop, serta memindahkan launcher bantuan ke
+  alur halaman saat tertutup agar tidak menutupi frame.
+- Alasan: operator perlu memindai banyak frame lebih cepat tanpa kehilangan
+  metadata, touch target, atau akses bantuan.
+- Produk/area terdampak: SagaView Studio Console Frames, responsive density,
+  support launcher, accessibility, release, rollback, dan knowledge runtime.
+- Klasifikasi: `CONFIRMED`; source
+  `ae21062f1767542ea2af52b4ba874dac4ec1142f`, release
+  `20260803062122-ae21062`, status `PRODUCTION_DEPLOYED` dan
+  `PRODUCTION_ACTIVATED`.
+- Production berubah: ya, app-only. Backend tetap
+  `20260802042221-f26bb57`; rollback `20260802200733-34519c4` dipertahankan.
+- Gate: focused 5/5, 44 file/156 unit, E2E 85/85, import 50/200/500,
+  build/budget, audit 0, accessibility, sepuluh route/header smoke,
+  service/Nginx/journal, dan visual mobile/desktop lulus.
+- Blocker/next action: tidak ada blocker release; Founding Studio Pilot tetap
+  diperlukan sebelum klaim `BUSINESS_READY` mass-scale.
+- File knowledge: `products/sagaview/PRODUCT.md`, `DOSSIER.md`, `CHANGELOG.md`,
+  master knowledge, portfolio changelog, root changelog, dan sync status.
+
 ### SagaBook storefront desktop production release
 
 - Ringkasan: memperluas storefront booking desktop dari kanvas 460 piksel
