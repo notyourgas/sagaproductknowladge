@@ -12,11 +12,11 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-02T20:36:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-02T20:44:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
 | Baseline sebelum pembaruan | `ba7e5bb` |
-| Informasi terakhir disinkronkan | AOGTICVITY source `6375c3b` aktif pada Hostinger `20260802T132948Z` dan Vercel `dpl_6ZpF67T1p2u7SgK1EVJBCjJoeCng`; role-bound redirect/workspace, team-scoped leader/player, roster perwakilan, serta status lomba persisten memakai migration 011–012. |
+| Informasi terakhir disinkronkan | AOGTICVITY source `864ef63` aktif pada Hostinger `20260802T134116Z` dan Vercel `dpl_3tesPCd9CH8CURfusqeZM2BkMHdX`; role-bound redirect/workspace, team-scoped leader/player, roster perwakilan, status lomba persisten, serta validator seluruh delapan tim aktif. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru |
 | Konflik | Tidak ada; local `main` sama dengan `origin/main` sebelum edit. |
 | Error | Tidak ada error knowledge atau blocker release; business readiness mass-scale tetap tidak diklaim. |

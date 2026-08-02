@@ -270,12 +270,13 @@ redacted queue console. Hostinger release `20260802T125353Z`, Vercel production
 `dpl_3zhzGA9oTp7U2QkKVyekJPZTxkz2`, dan migration 009–010 aktif. Device
 preflight serta satu pengiriman channel UAT lulus; provider status webhook dan
 full approval/magic-link/session UAT belum lulus.
-Source `6375c3b5f5079721b2ed73553d1fc80e0f97877a`, Hostinger release
-`20260802T132948Z`, Vercel production `dpl_6ZpF67T1p2u7SgK1EVJBCjJoeCng`,
+Source `864ef633c040ede662e569fe768513a46a57befd`, Hostinger release
+`20260802T134116Z`, Vercel production `dpl_3tesPCd9CH8CURfusqeZM2BkMHdX`,
 dan migration 011–012 menambahkan role-bound redirect tanpa selector, workspace
 operator terpisah, assignment tim leader oleh admin, team-scoped player/leader,
 roster perwakilan persisten, serta status lomba lintas perangkat dengan
-versioning, idempotency, permission, dan audit.
+versioning, idempotency, permission, dan audit. CSV assignment menerima seluruh
+delapan canonical team ID.
 Ini adalah nama terbaru project 17an/Olimpiade Kemerdekaan.
 
 Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:

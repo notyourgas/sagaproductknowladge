@@ -86,13 +86,14 @@ Public delivery saat ini: `https://olimpiade-kemerdekaan.vercel.app`.
   Fonnte device preflight dan satu pengiriman kanal ke penerima UAT lulus.
   Provider status webhook dan approval → magic-link → session → reuse/revoke
   UAT belum lulus, sehingga WhatsApp login belum boleh diklaim production-ready.
-- Source `6375c3b5f5079721b2ed73553d1fc80e0f97877a`, Hostinger release
-  `20260802T132948Z`, Vercel production
-  `dpl_6ZpF67T1p2u7SgK1EVJBCjJoeCng`, dan migration 011–012 mengaktifkan
+- Source `864ef633c040ede662e569fe768513a46a57befd`, Hostinger release
+  `20260802T134116Z`, Vercel production
+  `dpl_3tesPCd9CH8CURfusqeZM2BkMHdX`, dan migration 011–012 mengaktifkan
   redirect home server-side berdasarkan role database, workspace operator
   terpisah, assignment tim leader dari admin, workspace player/leader
   team-scoped, roster perwakilan atomik, serta status lomba lintas perangkat.
-  Role tidak lagi dipilih pengguna; leader tidak lagi memakai PIN prototype.
+  Role tidak lagi dipilih pengguna; leader tidak lagi memakai PIN prototype;
+  CSV assignment menerima seluruh delapan canonical team ID.
 - SQLite hanya fast test adapter.
 - Event-master memiliki dry-run, validation, atomic publish, versioning, dan
   audit. Durasi jadwal bersifat provisional dan dapat disunting admin.

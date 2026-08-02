@@ -17,8 +17,8 @@ Detail tetap berada pada changelog produk; entri docs-only berada di root
 - Workspace operator terpisah, leader/player team-scoped, roster perwakilan,
   serta status lomba lintas perangkat aktif dengan MySQL versioning,
   idempotency, permission, dan audit.
-- Source `6375c3b5f5079721b2ed73553d1fc80e0f97877a`; Hostinger
-  `20260802T132948Z`; Vercel `dpl_6ZpF67T1p2u7SgK1EVJBCjJoeCng`;
+- Source `864ef633c040ede662e569fe768513a46a57befd`; Hostinger
+  `20260802T134116Z`; Vercel `dpl_3tesPCd9CH8CURfusqeZM2BkMHdX`;
   migration 011–012. Delivery production hijau; authenticated role UAT,
   workflow local-state tersisa, WhatsApp full flow, dan rehearsal fisik masih
   menahan activation keseluruhan/business readiness.

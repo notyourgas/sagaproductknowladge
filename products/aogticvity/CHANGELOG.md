@@ -19,11 +19,12 @@ Nama lama dipertahankan sebagai provenance; status runtime harus eksplisit.
 - Roster perwakilan dan status lomba kini persisten di MySQL dengan quota/team
   validation, optimistic version, idempotency, permission, audit, dan failure
   state lintas perangkat. Lomba seluruh tim tetap otomatis tanpa input nama.
-- Source `6375c3b5f5079721b2ed73553d1fc80e0f97877a`; Hostinger release
-  `20260802T132948Z`; Vercel production
-  `dpl_6ZpF67T1p2u7SgK1EVJBCjJoeCng`; migration 011–012. Backup, disposable
+- Source `864ef633c040ede662e569fe768513a46a57befd`; Hostinger release
+  `20260802T134116Z`; Vercel production
+  `dpl_3tesPCd9CH8CURfusqeZM2BkMHdX`; migration 011–012. Backup, disposable
   12-migration test, 79 unit/regression test, typecheck, build, dependency audit,
-  exact-source, service readiness, public route/RBAC smoke, dan rollback lulus.
+  exact-source, validator seluruh delapan tim, service readiness, public
+  route/RBAC smoke, dan rollback lulus.
 - Delivery `PRODUCTION_DEPLOYED`; activation keseluruhan tetap
   `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED`. Authenticated
   four-role UAT tidak dijalankan karena vault terkunci; team generator, rundown,

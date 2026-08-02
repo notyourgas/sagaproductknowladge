@@ -21,10 +21,11 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
   admin/operator/leader/player UX, roster, competition operations, MySQL,
   security, audit, release, rollback, dan UAT.
 - Klasifikasi: `CONFIRMED`; source
-  `6375c3b5f5079721b2ed73553d1fc80e0f97877a`, Hostinger
-  `20260802T132948Z`, Vercel `dpl_6ZpF67T1p2u7SgK1EVJBCjJoeCng`, migration
+  `864ef633c040ede662e569fe768513a46a57befd`, Hostinger
+  `20260802T134116Z`, Vercel `dpl_3tesPCd9CH8CURfusqeZM2BkMHdX`, migration
   011–012, status `PRODUCTION_DEPLOYED`.
-- Production berubah: ya. Activation keseluruhan tetap
+- Production berubah: ya; validator CSV juga dikoreksi agar menerima seluruh
+  delapan canonical team ID. Activation keseluruhan tetap
   `NOT_PRODUCTION_ACTIVATED` dan business readiness `BLOCKED` sampai
   authenticated role UAT, workflow local-state tersisa, WhatsApp full flow,
   serta rehearsal fisik lulus.
