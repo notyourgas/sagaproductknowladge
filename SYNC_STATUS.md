@@ -12,14 +12,14 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-02T06:30:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-02T07:45:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `d5b282b` |
-| Informasi terakhir disinkronkan | SagaBook UI/UX/release-safety source `8edd7621` aktif sebagai release `20260801213514-8edd762`; auth/fallback hardening source `d9bbbac3` tetap `IMPLEMENTED_NOT_DEPLOYED` setelah matriks browser global timeout. |
+| Baseline sebelum pembaruan | `1603912` |
+| Informasi terakhir disinkronkan | SagaBook auth/fallback hardening source `d9bbbac3` aktif sebagai release `20260802002923-d9bbbac`; matriks browser desktop+mobile 296/296 dan production auth smoke 6/6 lulus. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru |
 | Konflik | Tidak ada; local `main` sama dengan `origin/main` sebelum edit. |
-| Error | Tidak ada error terbuka pada awal sinkronisasi. |
+| Error | Tidak ada error release SagaBook; ada gap data Google Maps pada sebagian cabang storefront demo production. |
 
 ## File yang berubah pada sinkronisasi ini
 
@@ -34,10 +34,9 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 ## Item menunggu konfirmasi
 
-SagaBook auth/fallback hardening source `d9bbbac3` masih membutuhkan full
-browser acceptance hijau, guarded release, dan post-deploy public smoke.
-Business readiness tetap
-membutuhkan cohort studio nyata, legal/tax finalization, dan pilot evidence.
+SagaBook business readiness tetap membutuhkan cohort studio nyata, legal/tax
+finalization, dan pilot evidence. Sebagian cabang storefront demo production
+masih membutuhkan URL Google Maps yang dikonfirmasi data owner.
 
 ## Cara verifikasi
 

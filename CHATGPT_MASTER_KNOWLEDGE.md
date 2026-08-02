@@ -104,12 +104,15 @@ service health, dan rollback lulus. Ini adalah template website booking milik
 studio, bukan landing page marketing SagaBook.
 
 Hardening auth dan fallback berikutnya pada source `d9bbbac3` berstatus
-`IMPLEMENTED_NOT_DEPLOYED`: login, signup, dan password recovery memiliki tepat
+`PRODUCTION_DEPLOYED` sebagai release `20260802002923-d9bbbac`: login, signup,
+dan password recovery memiliki tepat
 satu `Powered by SagaBook`, target sentuh kritis 44 piksel, fokus dekoratif
 ditutup, metode pemulihan/CTA fallback diperbesar, dan aksesibilitas
-forced-colors/reduced-motion diperkuat. Exact-SHA backup/restore dan full
-backend 957/957 lulus, tetapi matriks browser global timeout sebelum selesai;
-deploy ditahan.
+forced-colors/reduced-motion diperkuat. Exact-SHA backup/restore, full backend
+957/957, matriks browser desktop+mobile 296/296, production auth smoke 6/6,
+manifest, database audit 100, public HTTP smoke, service health, dan rollback
+lulus. Sebagian data cabang storefront demo production belum memiliki URL
+Google Maps dan tetap memerlukan kelengkapan data owner.
 
 Keputusan privacy/retention/offboarding SagaBook yang lebih rinci telah
 disetujui owner untuk implementasi dan legal review pada source docs commit

@@ -156,8 +156,8 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
 
 - Customer Booking Center aktif di production.
 - Source production terbaru pada cut-off: commit
-  `8edd762154ec231b7e00c4a38db9c94dd0ee322c`.
-- Release production tercatat: `20260801213514-8edd762`.
+  `d9bbbac3d5960013c6df267ff9ae2534b883710d`.
+- Release production tercatat: `20260802002923-d9bbbac`.
 - Storefront, admin, dan super-admin merespons public smoke.
 - Tenant Onboarding dan First Booking Activation aktif melalui Activation
   Center yang tenant-scoped dan server-authoritative.
@@ -191,13 +191,15 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
   smoke publik, database audit, service health, dan rollback release lulus.
 - Hardening auth dan fallback surface terbaru pada source
   `d9bbbac3d5960013c6df267ff9ae2534b883710d` berstatus
-  `IMPLEMENTED_NOT_DEPLOYED`. Login, signup, dan password recovery memiliki
+  `PRODUCTION_DEPLOYED` sebagai release `20260802002923-d9bbbac`. Login,
+  signup, dan password recovery memiliki
   tepat satu signature `Powered by SagaBook`, target sentuh kritis minimal 44
   piksel, preview dekoratif tidak masuk urutan fokus, metode pemulihan dan CTA
   fallback minimal 44 piksel, serta state forced-colors/reduced-motion. Backup
-  terenkripsi dan disposable restore exact-SHA lulus. Full backend 957/957
-  lulus; matriks browser global mencapai timeout 10 menit sebelum selesai,
-  sehingga deploy tetap ditahan.
+  terenkripsi dan disposable restore exact-SHA lulus. Full backend 957/957,
+  matriks browser desktop+mobile 296/296 melalui empat shard deterministik,
+  production auth smoke 6/6, manifest, database audit 100, service health,
+  public HTTP smoke, dan rollback gate lulus.
 - Candidate signup tanpa approval owner dan trial kanonik 7 hari sudah
   `LOCAL_VALIDATED` pada source
   `dcb5a3f3dc1e3e7b5c0c067e8968ca341ebf1c27`. Production tetap memakai

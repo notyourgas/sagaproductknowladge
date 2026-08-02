@@ -140,14 +140,16 @@ database audit, service health, dan rollback production juga lulus.
 
 Hardening auth dan fallback surface berikutnya pada source
 `d9bbbac3d5960013c6df267ff9ae2534b883710d` berstatus
-`IMPLEMENTED_NOT_DEPLOYED`. Login, signup, dan password recovery sekarang
+`PRODUCTION_DEPLOYED` sebagai release `20260802002923-d9bbbac`. Login, signup,
+dan password recovery sekarang
 memiliki tepat satu `Powered by SagaBook`, target sentuh kritis minimal 44
 piksel, preview dekoratif inert, metode pemulihan dan CTA fallback minimal 44
 piksel, serta dukungan forced-colors dan reduced-motion. Focused visual
 regression 6/6, full backend 957/957 dengan 10.989 assertions, typecheck, build,
 dependency audit, encrypted backup, dan disposable restore exact-SHA lulus.
-Production belum berubah karena matriks browser global mencapai timeout 10
-menit sebelum selesai; hasil parsial tidak di-waive.
+Matriks browser desktop+mobile lulus 296/296 melalui empat shard deterministik;
+production auth smoke 6/6, manifest, database audit 100, public HTTP smoke,
+service health, dan rollback gate juga lulus.
 
 ## Integrasi
 

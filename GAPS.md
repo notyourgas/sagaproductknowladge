@@ -60,14 +60,15 @@ ketika keputusan atau release baru menutup gap.
 - `TODO`: S72 auto-trial 7 hari masih `PRODUCTION HOLD`; kontrak production
   tetap tidak berubah sampai release, worker/provisioning, dan authenticated
   product UAT disetujui.
-- `CONFIRMED`: candidate UI/UX dan release-safety kumulatif sudah
-  `PRODUCTION_DEPLOYED` sebagai release `20260801213514-8edd762`; manifest,
-  public smoke, database audit, service health, dan rollback lulus.
-- `TODO`: selesaikan matriks browser global untuk auth/fallback hardening source
-  `d9bbbac3`, lalu picu guarded release dan verifikasi exact runtime,
-  mobile/desktop public smoke, serta rollback. Encrypted backup, disposable
-  restore exact-SHA, full backend, focused visual, build, dan audit sudah
-  lulus; production belum memuat perubahan ini.
+- `CONFIRMED`: candidate UI/UX dan auth/fallback hardening kumulatif sudah
+  `PRODUCTION_DEPLOYED` sebagai release `20260802002923-d9bbbac`; manifest,
+  public HTTP smoke, production auth browser 6/6, matriks browser
+  desktop+mobile 296/296, database audit, service health, backup/restore, dan
+  rollback lulus.
+- `NEEDS CONFIRMATION`: sebagian cabang aktif pada storefront demo production
+  belum memiliki URL Google Maps. Owner data perlu memberikan atau
+  mengonfirmasi lokasi yang benar; knowledge publik tidak menyimpan detail
+  tenant maupun URL lokasi tersebut.
 
 ### SagaView
 

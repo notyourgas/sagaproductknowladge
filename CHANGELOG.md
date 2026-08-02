@@ -12,7 +12,24 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-02
 
-### SagaBook production activation dan auth surface candidate
+### SagaBook auth surface production
+
+- Ringkasan: mempromosikan auth/fallback hardening setelah matriks browser
+  global ditutup melalui empat shard deterministik tanpa mengurangi cakupan.
+- Produk/area terdampak: SagaBook login, signup, password recovery, fallback
+  CTA, accessibility, release, rollback, dan data lokasi storefront demo.
+- Klasifikasi: `CONFIRMED`; source
+  `d9bbbac3d5960013c6df267ff9ae2534b883710d` `PRODUCTION_DEPLOYED` pada
+  release `20260802002923-d9bbbac`.
+- Production berubah: ya; exact runtime, manifest, database audit 100, public
+  HTTP smoke, service health, dan rollback target terverifikasi.
+- Gate: full backend 957/957 dengan 10.989 assertions, matriks browser
+  desktop+mobile 296/296, production auth smoke 6/6, build/audit, serta
+  encrypted backup dan disposable restore exact-SHA lulus.
+- Residual gap: sebagian cabang storefront demo belum memiliki URL Google Maps
+  yang dikonfigurasi dan memerlukan konfirmasi data owner.
+
+### SagaBook production activation dan auth surface candidate (historis)
 
 - Ringkasan: memperbarui status UI/UX/release-safety kumulatif menjadi
   production dan mencatat hardening auth surface berikutnya sebagai kandidat.
@@ -21,7 +38,8 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 - Klasifikasi: `CONFIRMED`; source `8edd762154ec231b7e00c4a38db9c94dd0ee322c`
   `PRODUCTION_DEPLOYED` pada release `20260801213514-8edd762`; source
   `d9bbbac3d5960013c6df267ff9ae2534b883710d`
-  `IMPLEMENTED_NOT_DEPLOYED`.
+  saat itu `IMPLEMENTED_NOT_DEPLOYED`, kini `DEPRECATED` sebagai status aktif
+  karena dipromosikan pada release `20260802002923-d9bbbac`.
 - Production berubah: ya untuk source `8edd7621`; belum berubah untuk auth
   hardening `d9bbbac3`.
 - Gate: manifest, smoke, database audit, services, backup/restore, rollback,

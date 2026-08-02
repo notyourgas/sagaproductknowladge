@@ -4,10 +4,30 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
-## 2026-08-02 - Auth branding dan touch safety candidate final
+## 2026-08-02 - Auth branding dan touch safety production
 
-- Status: `IMPLEMENTED_NOT_DEPLOYED`; production tetap
-  `20260801213514-8edd762`.
+- Status: `PRODUCTION_DEPLOYED`; scope activation SagaBook yang telah
+  dibuktikan tetap `PRODUCTION_ACTIVATED`.
+- Candidate auth/fallback dipromosikan sebagai release
+  `20260802002923-d9bbbac` dari source
+  `d9bbbac3d5960013c6df267ff9ae2534b883710d`.
+- Login, signup, dan password recovery sekarang memiliki tepat satu
+  `Powered by SagaBook`, target sentuh kritis minimal 44 piksel, preview
+  dekoratif inert, metode pemulihan dan CTA fallback minimal 44 piksel, serta
+  state forced-colors/reduced-motion.
+- Gate: full backend 957/957 dengan 10.989 assertions; matriks browser
+  desktop+mobile 296/296 melalui empat shard deterministik; production auth
+  smoke 6/6; backup/restore exact-SHA, manifest, database audit 100, public
+  HTTP smoke, service health, dan rollback lulus.
+- Residual gap: sebagian data cabang storefront demo production belum memiliki
+  URL Google Maps terkonfigurasi; ini gap data lokasi, bukan regresi renderer
+  atau release auth.
+
+## 2026-08-02 - Auth branding dan touch safety candidate final (historis)
+
+- Status saat dicatat: `IMPLEMENTED_NOT_DEPLOYED`; `DEPRECATED` sebagai status
+  aktif karena candidate kemudian dipromosikan menjadi release
+  `20260802002923-d9bbbac`.
 - Login, signup, dan password recovery memiliki tepat satu signature
   `Powered by SagaBook`, target sentuh kritis minimal 44 piksel, preview
   dekoratif yang tidak dapat menerima fokus, metode pemulihan dan CTA fallback
@@ -16,8 +36,8 @@ Mencatat perubahan material SagaBook dengan provenance public-safe.
 - Validation: visual regression mobile/desktop 6/6, full backend 957/957 dengan
   10.989 assertions, typecheck, build, dependency audit 0, encrypted backup,
   dan disposable restore exact-SHA lulus.
-- Blocker: matriks browser global mencapai timeout 10 menit sebelum selesai;
-  hasil parsial tidak di-waive dan tidak ada deploy parsial.
+- Blocker saat itu: matriks browser global mencapai timeout 10 menit sebelum
+  selesai; blocker kemudian ditutup dengan empat shard deterministik 296/296.
 
 ## 2026-08-02 - UI/UX operasional dan release safety production
 
