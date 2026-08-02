@@ -149,7 +149,7 @@ mengirim HSTS dan XFO tepat satu; error journal yang tersisa berasal dari
 staging monitor host. Payment/provider, storefront tenant/preset, landing page,
 watermark, dan SagaView tidak berubah. Business readiness tetap belum diklaim.
 
-Admin Staff terbaru pada source `35c82192` aktif sebagai release
+Admin Staff pada source `35c82192` aktif sebagai release
 `20260802183533-35c8219`, rollback `20260802160930-596b8a4`. Mobile tidak lagi
 memaksa tabel desktop 920 piksel dan sekarang memakai kartu staff; desktop tetap
 tabel. Target sentuh kritis minimal 44 piksel, reset filtered-empty, editor
@@ -163,6 +163,20 @@ visual Staff tidak dijalankan tanpa credential; exact-source regression tiga
 viewport lulus. `/up` masih tanpa HSTS. Sampel login mengirim HSTS dan CSP satu
 kali tanpa `X-Frame-Options`; CSP `frame-ancestors` aktif dan kontrak header
 perlu dinormalisasi. Business readiness tetap belum diklaim.
+
+Storefront booking desktop terbaru pada source `994de01c` aktif sebagai release
+`20260802221221-994de01`, rollback `20260802183533-35c8219`. Mulai viewport
+1120 piksel, journey memakai shell dua kolom hingga 1040 piksel dengan panel
+orientasi langkah dan ringkasan pilihan; mobile 390x844 tetap identik dan
+tablet 1024x768 tetap ringkas tanpa overflow. Semua langkah dan preset existing,
+Maps, WhatsApp, paket, slot, checkout, confirmation, tenant brand, dan satu
+`Powered by SagaBook` tetap tercakup. Backend 960/960, visual desktop 45/45
+dengan satu mobile-only skip, mobile manual-transfer E2E 1/1, build, design
+audit, npm/Composer audit 0, backup/restore exact-SHA, database audit 100,
+service, journal, smoke, dan visual live lulus. Payment/provider, availability,
+session, permission, tenant isolation, SagaView, dan klaim business readiness
+tidak berubah. Endpoint `/up` masih tanpa HSTS/CSP; route login dan booking yang
+diaudit mengirim header keamanan.
 
 Keputusan privacy/retention/offboarding SagaBook yang lebih rinci telah
 disetujui owner untuk implementasi dan legal review pada source docs commit

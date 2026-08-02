@@ -156,8 +156,8 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
 
 - Customer Booking Center aktif di production.
 - Source production terbaru pada cut-off: commit
-  `35c82192234eb84e03b2237029540e299c70e12f`.
-- Release production tercatat: `20260802183533-35c8219`.
+  `994de01cf3586adb4da8813a9c4b931085457510`.
+- Release production tercatat: `20260802221221-994de01`.
 - Storefront, admin, dan super-admin merespons public smoke.
 - Tenant Onboarding dan First Booking Activation aktif melalui Activation
   Center yang tenant-scoped dan server-authoritative.
@@ -284,15 +284,17 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
   `frame-ancestors` tetap aktif dan kontrak header perlu dinormalisasi.
 - Storefront booking desktop pada source
   `994de01cf3586adb4da8813a9c4b931085457510` berstatus
-  `IMPLEMENTED_NOT_DEPLOYED`. Mulai viewport 1120 piksel, layout memakai shell
+  `PRODUCTION_DEPLOYED` sebagai release `20260802221221-994de01`; rollback
+  `20260802183533-35c8219` dipertahankan. Mulai viewport 1120 piksel, layout memakai shell
   dua kolom hingga 1040 piksel dengan orientasi langkah dan ringkasan pilihan;
   mobile 390x844 tetap identik dan tablet 1024x768 tetap ringkas tanpa
   overflow. Semua langkah dan preset existing, Maps, WhatsApp, paket, slot,
   checkout, confirmation, tenant brand, dan satu `Powered by SagaBook` tetap
-  tercakup. Backend 960/960, visual desktop 44/44, focused desktop/mobile 2/2,
-  mobile manual-transfer E2E, build, dan npm audit 0 lulus. Production masih
-  memakai release `20260802183533-35c8219`; promotion ditahan karena Composer
-  advisory audit tidak dapat mengakses Packagist.
+  tercakup. Backend 960/960, visual desktop 45/45 dengan satu mobile-only skip,
+  mobile manual-transfer E2E 1/1, build, design audit, npm/Composer audit 0,
+  backup/restore exact-SHA, database audit 100, service, journal, public smoke,
+  dan visual live dua viewport lulus. Endpoint `/up` masih tanpa HSTS/CSP;
+  route login dan booking yang diaudit mengirim header keamanan.
 - Candidate signup tanpa approval owner dan trial kanonik 7 hari sudah
   `LOCAL_VALIDATED` pada source
   `dcb5a3f3dc1e3e7b5c0c067e8968ca341ebf1c27`. Production tetap memakai

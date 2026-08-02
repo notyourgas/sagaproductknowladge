@@ -12,7 +12,7 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-03
 
-### SagaBook storefront desktop candidate
+### SagaBook storefront desktop production release
 
 - Ringkasan: memperluas storefront booking desktop dari kanvas 460 piksel
   menjadi shell operasional dua kolom hingga 1040 piksel, tanpa mengubah
@@ -22,15 +22,17 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 - Produk/area terdampak: SagaBook storefront milik studio, responsive UX,
   seluruh preset existing, accessibility, watermark, dan release gate.
 - Klasifikasi: `CONFIRMED`; source
-  `994de01cf3586adb4da8813a9c4b931085457510` sudah dipush dengan status
-  `IMPLEMENTED_NOT_DEPLOYED`.
-- Production berubah: tidak. Production tetap source `35c82192234eb84e03b2237029540e299c70e12f`
-  pada release `20260802183533-35c8219`; rollback
-  `20260802160930-596b8a4` dipertahankan. SagaView tidak berubah.
-- Gate: backend 960/960, visual desktop 44/44, focused desktop/mobile 2/2,
-  mobile manual-transfer E2E, build, diff check, dan npm audit 0 lulus.
-- Blocker/next action: ulangi Composer advisory audit saat Packagist tersedia;
-  promotion immutable baru hanya boleh dilanjutkan setelah gate hijau.
+  `994de01cf3586adb4da8813a9c4b931085457510`, release
+  `20260802221221-994de01`, status `PRODUCTION_DEPLOYED` dan
+  `PRODUCTION_ACTIVATED` untuk scope storefront.
+- Production berubah: ya. Rollback `20260802183533-35c8219` dipertahankan;
+  SagaView tidak berubah.
+- Gate: backend 960/960, visual desktop 45/45 dengan satu mobile-only skip,
+  mobile manual-transfer E2E 1/1, build, design audit, npm/Composer audit 0,
+  backup/restore exact-SHA, migration preflight, database audit 100, service,
+  scoped journal, public smoke, dan visual live dua viewport lulus.
+- Blocker/next action: tidak ada blocker release storefront. Normalisasi HSTS
+  dan CSP pada endpoint `/up` tetap menjadi residual security hardening.
 - File knowledge: `products/sagabook/PRODUCT.md`, `DOSSIER.md`, `CHANGELOG.md`,
   portfolio changelog, root changelog, dan sync status.
 

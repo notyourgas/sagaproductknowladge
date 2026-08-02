@@ -4,13 +4,12 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
-## 2026-08-03 - Storefront booking desktop diperluas, belum dipromosikan
+## 2026-08-03 - Storefront booking desktop dipromosikan
 
-- Klasifikasi: `CONFIRMED`; delivery `IMPLEMENTED_NOT_DEPLOYED`, production
-  dan activation tidak berubah, business readiness tetap `NEEDS CONFIRMATION`.
-- Source `994de01cf3586adb4da8813a9c4b931085457510` sudah dipush. Production tetap
-  memakai source `35c82192234eb84e03b2237029540e299c70e12f` pada release
-  `20260802183533-35c8219`; rollback `20260802160930-596b8a4` dipertahankan.
+- Klasifikasi: `CONFIRMED`; delivery `PRODUCTION_DEPLOYED`, activation scope
+  `PRODUCTION_ACTIVATED`, business readiness tetap `NEEDS CONFIRMATION`.
+- Source `994de01cf3586adb4da8813a9c4b931085457510` aktif sebagai release
+  `20260802221221-994de01`; rollback `20260802183533-35c8219` dipertahankan.
 - Before: pada desktop 1440x900, perjalanan booking publik tetap dibatasi
   seperti preview ponsel 460 piksel di tengah ruang kosong. After: viewport
   mulai 1120 piksel memakai shell dua kolom hingga 1040 piksel, dengan panel
@@ -21,11 +20,14 @@ Mencatat perubahan material SagaBook dengan provenance public-safe.
   yang sama; Maps, WhatsApp, paket, slot, checkout, confirmation, tenant brand,
   serta satu `Powered by SagaBook` tetap utuh. Payment/provider, availability,
   session, permission, dan tenant isolation tidak berubah.
-- Gate lokal: backend 960/960 dengan 11.007 assertions; visual desktop 44/44;
-  focused desktop/mobile 2/2; mobile manual-transfer E2E, build, diff check,
-  dan npm audit 0 lulus. Production ditahan fail-closed karena Composer tidak
-  dapat mengambil advisory Packagist akibat timeout jaringan; audit offline
-  juga tidak memiliki advisory cache.
+- Gate: backend 960/960 dengan 11.007 assertions; visual desktop 45/45 dengan
+  satu mobile-only skip; mobile manual-transfer E2E 1/1; build, design audit,
+  npm/Composer audit 0, encrypted backup, disposable restore exact-SHA,
+  migration preflight, database audit 100, service health, scoped journal,
+  dan public smoke lulus. Visual production 1440x900 dan 390x844 mengonfirmasi
+  layout, no-overflow, serta satu watermark. Endpoint `/up` masih tidak
+  mengirim HSTS/CSP; route login dan booking yang diaudit mengirim HSTS, CSP,
+  dan `X-Frame-Options: SAMEORIGIN`.
 
 ## 2026-08-03 - Admin Staff responsif dipromosikan
 

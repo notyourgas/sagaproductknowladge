@@ -12,29 +12,30 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-03T04:39:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-03T05:15:40+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `7c7d24b` |
-| Informasi terakhir disinkronkan | SagaBook storefront desktop source `994de01c` sudah dipush dan local validated; status `IMPLEMENTED_NOT_DEPLOYED`. |
+| Baseline sebelum pembaruan | `801bdc2` |
+| Informasi terakhir disinkronkan | SagaBook storefront desktop source `994de01c` aktif sebagai release `20260802221221-994de01`; rollback `20260802183533-35c8219` dipertahankan. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru |
 | Konflik | Tidak ada; local `main` sama dengan `origin/main` sebelum edit. |
-| Error | Composer advisory audit tidak dapat mengakses Packagist dan tidak memiliki cache offline; promotion SagaBook storefront ditahan fail-closed. |
+| Error | Tidak ada blocker release storefront. Endpoint `/up` masih tanpa HSTS/CSP dan tetap menjadi residual security hardening. |
 
 ## File yang berubah pada sinkronisasi ini
 
 - `products/sagabook/PRODUCT.md`
 - `products/sagabook/DOSSIER.md`
 - `products/sagabook/CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHANGELOG.md`
 - `SYNC_STATUS.md`
 
 ## Item menunggu konfirmasi
 
-Composer advisory audit perlu diulang saat Packagist tersedia sebelum source
-SagaBook `994de01c` dapat dipromosikan. Founding Studio Pilot dan support
-observation tetap diperlukan sebelum klaim `BUSINESS_READY` mass-scale.
+Normalisasi HSTS/CSP endpoint `/up` tetap menunggu hardening berikutnya.
+Founding Studio Pilot dan support observation tetap diperlukan sebelum klaim
+`BUSINESS_READY` mass-scale.
 
 ## Cara verifikasi
 

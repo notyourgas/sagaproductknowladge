@@ -241,18 +241,20 @@ kontrak header perlu dinormalisasi.
 
 Storefront booking desktop pada source
 `994de01cf3586adb4da8813a9c4b931085457510` berstatus
-`IMPLEMENTED_NOT_DEPLOYED`. Mulai viewport 1120 piksel, renderer menggunakan
+`PRODUCTION_DEPLOYED` sebagai release `20260802221221-994de01`; rollback
+`20260802183533-35c8219` dipertahankan. Mulai viewport 1120 piksel, renderer menggunakan
 shell dua kolom hingga 1040 piksel: panel kiri memberi orientasi langkah dan
 ringkasan pilihan, sedangkan panel kanan mempertahankan transaksi. Mobile
 390x844 tetap identik dan tablet 1024x768 tetap memakai layout ringkas tanpa
 overflow. Seluruh langkah dan preset existing, Maps, WhatsApp, paket, slot,
 checkout, confirmation, tenant brand, serta satu `Powered by SagaBook` tetap
 tercakup tanpa perubahan payment/provider, availability, session, permission,
-atau tenant isolation. Backend 960/960, visual desktop 44/44, focused
-desktop/mobile 2/2, mobile manual-transfer E2E, build, dan npm audit 0 lulus.
-Promotion ditahan fail-closed karena Composer advisory audit tidak dapat
-mengakses Packagist dan tidak memiliki advisory cache offline. Production tetap
-release `20260802183533-35c8219`; rollback `20260802160930-596b8a4` tersedia.
+atau tenant isolation. Backend 960/960, visual desktop 45/45 dengan satu
+mobile-only skip, mobile manual-transfer E2E 1/1, build, design audit,
+npm/Composer audit 0, encrypted backup, disposable restore exact-SHA,
+migration preflight, database audit 100, service, scoped journal, public smoke,
+dan visual production dua viewport lulus. Endpoint `/up` masih tanpa HSTS/CSP;
+route login dan booking yang diaudit mengirim HSTS, CSP, dan XFO SAMEORIGIN.
 
 ## Integrasi
 
