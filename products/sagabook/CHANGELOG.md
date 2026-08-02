@@ -4,6 +4,28 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-02 - Calendar mobile operasional dipromosikan
+
+- Klasifikasi: `CONFIRMED`; delivery `PRODUCTION_DEPLOYED`.
+- Source `596b8a48a2dc6f1e3810b4dcd5a41be37183fdf1` aktif sebagai release
+  `20260802160930-596b8a4`; rollback `20260802104018-a6bb8af` dipertahankan.
+- Before: Harian, Mingguan, dan Bulanan pada mobile menampilkan daftar hari yang
+  sama. After: ketiganya mempunyai representasi periode nyata, navigasi hari
+  keyboard-accessible, kontrol minimal 44 piksel, dan desktop tetap memakai
+  grid Calendar.
+- Manual Booking sekarang menyelaraskan tanggal Calendar saat dibuka dan
+  mengenali nama bulan Indonesia pada parser WhatsApp.
+- Gate: visual matrix 430 passed dengan 44 controlled skip; backend 960/960
+  dengan 11.007 assertions; build, design audit, npm/Composer audit 0,
+  encrypted backup, disposable restore, readiness 100, service health, dan
+  public smoke lulus.
+- Authenticated production visual Calendar tidak dijalankan tanpa credential;
+  exact-source authenticated regression lulus. `/up` belum mengirim HSTS,
+  sementara route aplikasi/login yang diaudit mengirim HSTS dan XFO tepat satu.
+  Error journal berasal dari staging monitor host, bukan service SagaBook.
+- Payment/provider, storefront tenant/preset, landing page, watermark, dan
+  SagaView tidak berubah. Business readiness tetap belum diklaim.
+
 ## 2026-08-02 - Public branding dan frame-header hygiene dipromosikan
 
 - Klasifikasi: `CONFIRMED`; delivery `PRODUCTION_DEPLOYED`.

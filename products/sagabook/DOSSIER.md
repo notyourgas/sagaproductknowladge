@@ -200,6 +200,27 @@ gate, backup/restore, readiness 100, tujuh service, header, journal, dan smoke
 lulus. Tidak ada perubahan workflow booking/payment, provider, preset, atau
 runtime SagaView; rollback `20260802101645-500065c` dipertahankan.
 
+Calendar operasional pada source
+`596b8a48a2dc6f1e3810b4dcd5a41be37183fdf1` berstatus
+`PRODUCTION_DEPLOYED` sebagai release `20260802160930-596b8a4`, dengan rollback
+`20260802104018-a6bb8af`. Before: tab mobile Harian, Mingguan, dan Bulanan
+menampilkan daftar hari yang sama; kontrol tanggal 40 piksel; beberapa kontrol
+terlihat interaktif tanpa action; dan empty-state mempunyai callback tanggal
+yang tidak valid. After: Harian mempertahankan agenda hari, Mingguan menyusun
+tujuh hari nyata, Bulanan menampilkan hari aktif, baris hari dapat dibuka lewat
+keyboard, kontrol kritis minimal 44 piksel, serta desktop mempertahankan grid.
+Manual Booking menyelaraskan tanggal Calendar saat dialog dibuka dan parser
+WhatsApp mengenali nama bulan Indonesia. Full visual matrix lulus 430 skenario
+dengan 44 controlled skip; full backend 960/960 dengan 11.007 assertions;
+build, design audit, npm/Composer audit 0, encrypted backup, disposable restore,
+readiness 100, manifest exact-source, service health, dan public smoke lulus.
+Tidak ada perubahan payment/provider, tenant isolation, storefront/preset milik
+studio, landing page, watermark, atau SagaView. Authenticated production visual
+Calendar tidak dijalankan tanpa credential; exact-source authenticated browser
+regression lulus. `/up` belum mengirim HSTS walau route aplikasi/login yang
+diaudit mengirim HSTS dan XFO tepat satu. Error journal pascarilis berasal dari
+`saga-platform-staging-monitor.service` di level host, bukan service SagaBook.
+
 ## Integrasi
 
 Payment dan notification provider, serta future SagaView handoff.

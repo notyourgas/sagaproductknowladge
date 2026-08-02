@@ -135,6 +135,20 @@ dengan CSP `frame-ancestors` tetap enforced. Browser production mobile/desktop
 8/8, readiness 100, service/header/journal, dan rollback lulus; booking,
 payment, provider, preset tenant, serta SagaView tidak berubah.
 
+Calendar operasional terbaru pada source `596b8a48` aktif sebagai release
+`20260802160930-596b8a4`. Pada mobile, Harian mempertahankan agenda hari,
+Mingguan menampilkan tujuh hari, dan Bulanan hanya menampilkan hari aktif;
+baris hari keyboard-accessible dan kontrol kritis minimal 44 piksel. Manual
+Booking menyelaraskan tanggal Calendar ketika dibuka serta mengenali nama bulan
+Indonesia. Visual matrix 430 passed, backend 960/960 dengan 11.007 assertions,
+audit 0, backup/restore, readiness 100, service health, dan public smoke lulus.
+Rollback `20260802104018-a6bb8af` dipertahankan. Authenticated production visual
+Calendar tidak dijalankan tanpa credential; exact-source regression lulus.
+Endpoint `/up` belum mengirim HSTS meskipun route aplikasi/login yang diaudit
+mengirim HSTS dan XFO tepat satu; error journal yang tersisa berasal dari
+staging monitor host. Payment/provider, storefront tenant/preset, landing page,
+watermark, dan SagaView tidak berubah. Business readiness tetap belum diklaim.
+
 Keputusan privacy/retention/offboarding SagaBook yang lebih rinci telah
 disetujui owner untuk implementasi dan legal review pada source docs commit
 `295ec863ff6cfc2e79ac98183651f19c15a3b368`. Workflow consent berversi,

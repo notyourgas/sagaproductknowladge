@@ -244,6 +244,25 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
   backend 960/960 dengan 11.007 assertions, browser production 8/8, dependency
   audit 0, backup/restore, readiness 100, service health, dan smoke lulus.
   Rollback `20260802101645-500065c` dipertahankan; SagaView tidak berubah.
+- Calendar operasional pada source
+  `596b8a48a2dc6f1e3810b4dcd5a41be37183fdf1` berstatus
+  `PRODUCTION_DEPLOYED` sebagai release `20260802160930-596b8a4`. Mobile kini
+  memiliki agenda Harian, Mingguan tujuh hari, dan Bulanan berisi hari aktif,
+  bukan tiga tab dengan daftar identik. Baris hari dapat dibuka dengan keyboard,
+  kontrol kritis minimal 44 piksel, dan desktop mempertahankan grid hari.
+  Manual Booking juga menyelaraskan tanggal aktif ketika dialog dibuka dan
+  mengenali nama bulan Indonesia. Full visual matrix 430 skenario dan backend
+  960/960 dengan 11.007 assertions lulus; build, design audit, dependency audit
+  0, encrypted backup, disposable restore, readiness 100, service health, dan
+  public smoke lulus. Rollback `20260802104018-a6bb8af` dipertahankan. Tidak ada
+  perubahan pada payment/provider, storefront tenant/preset, landing page,
+  watermark, atau SagaView.
+- Residual release ini: visual production Calendar yang terautentikasi tidak
+  dijalankan tanpa membuka credential; exact-source authenticated regression
+  lulus. Endpoint health `/up` masih tidak mengirim HSTS, sedangkan route
+  aplikasi/login yang diaudit mengirim HSTS dan XFO tepat satu. Satu error
+  journal berasal dari `saga-platform-staging-monitor.service` di level host,
+  bukan service SagaBook.
 - Candidate signup tanpa approval owner dan trial kanonik 7 hari sudah
   `LOCAL_VALIDATED` pada source
   `dcb5a3f3dc1e3e7b5c0c067e8968ca341ebf1c27`. Production tetap memakai

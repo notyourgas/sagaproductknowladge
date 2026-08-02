@@ -68,6 +68,13 @@ ketika keputusan atau release baru menutup gap.
   `20260802104018-a6bb8af`. Ketiga route memiliki satu `Powered by SagaBook`,
   tidak overflow pada mobile/desktop, dan HSTS/CSP/XFO masing-masing satu;
   CSP `frame-ancestors` tetap aktif.
+- `NEEDS CONFIRMATION`: authenticated production visual Calendar pada release
+  `20260802160930-596b8a4` belum dijalankan tanpa credential. Exact-source
+  authenticated browser regression dan public production smoke sudah lulus.
+- `TODO`: normalkan HSTS pada endpoint health `/up`; route aplikasi/login yang
+  diaudit sudah mengirim HSTS dan XFO tepat satu. Triage
+  `saga-platform-staging-monitor.service` sebagai isu host terpisah dari
+  service SagaBook.
 - `CONFIRMED`: candidate UI/UX dan auth/fallback hardening kumulatif sudah
   `PRODUCTION_DEPLOYED` sebagai release `20260802002923-d9bbbac`; manifest,
   public HTTP smoke, production auth browser 6/6, matriks browser

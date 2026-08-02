@@ -10,6 +10,21 @@ workflow, pricing, release, activation, atau blocker.
 Detail tetap berada pada changelog produk; entri docs-only berada di root
 [CHANGELOG](../CHANGELOG.md).
 
+## 2026-08-02 - SagaBook Calendar mobile operasional production
+
+- `CONFIRMED`: Harian, Mingguan, dan Bulanan kini menampilkan periode nyata
+  pada mobile; navigasi hari aksesibel, target kritis minimal 44 piksel, dan
+  grid desktop tetap utuh. Manual Booking menyelaraskan tanggal aktif dan
+  mengenali nama bulan Indonesia.
+- Source `596b8a48a2dc6f1e3810b4dcd5a41be37183fdf1` aktif sebagai release
+  `20260802160930-596b8a4`; rollback `20260802104018-a6bb8af` dipertahankan.
+- Visual matrix 430 passed, backend 960/960 dengan 11.007 assertions, audit 0,
+  backup/restore, readiness 100, service health, dan public smoke lulus.
+- Authenticated production visual Calendar tidak memakai credential; `/up`
+  belum mengirim HSTS dan staging monitor host mencatat error terpisah.
+  Payment/provider, storefront/preset tenant, landing page, SagaView, dan
+  business-readiness claim tidak berubah.
+
 ## 2026-08-02 - AOGTICVITY role-bound operations production
 
 - `CONFIRMED`: admin kini menjadi sumber assignment role/tim; login tidak

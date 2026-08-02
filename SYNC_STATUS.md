@@ -12,32 +12,31 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-02T20:44:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-02T23:16:37+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `ba7e5bb` |
-| Informasi terakhir disinkronkan | AOGTICVITY source `864ef63` aktif pada Hostinger `20260802T134116Z` dan Vercel `dpl_3tesPCd9CH8CURfusqeZM2BkMHdX`; role-bound redirect/workspace, team-scoped leader/player, roster perwakilan, status lomba persisten, serta validator seluruh delapan tim aktif. |
+| Baseline sebelum pembaruan | `eccb4dd` |
+| Informasi terakhir disinkronkan | SagaBook Calendar source `596b8a48` aktif sebagai release `20260802160930-596b8a4`; periode mobile, navigasi 44 piksel, serta sinkronisasi tanggal/parser Manual Booking aktif. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru |
 | Konflik | Tidak ada; local `main` sama dengan `origin/main` sebelum edit. |
-| Error | Tidak ada error knowledge atau blocker release; business readiness mass-scale tetap tidak diklaim. |
+| Error | Tidak ada blocker release. `/up` belum mengirim HSTS; staging monitor host mencatat error terpisah; business readiness belum diklaim. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/aogticvity/PRODUCT.md`
-- `products/aogticvity/DOSSIER.md`
-- `products/aogticvity/CHANGELOG.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
-- `DECISIONS.md`
 - `GAPS.md`
 - `CHANGELOG.md`
 - `SYNC_STATUS.md`
 
 ## Item menunggu konfirmasi
 
-AOGTICVITY authenticated four-role UAT, team generator/rundown/announcement/
-live-controller persistence, WhatsApp full flow, custom domain, dan physical
-rehearsal tetap menunggu. Business readiness tetap `BLOCKED`.
+SagaBook authenticated production visual Calendar, HSTS `/up`, dan perbaikan
+staging monitor host masih menunggu. Founding Studio Pilot tetap diperlukan
+sebelum `BUSINESS_READY` dapat diklaim.
 
 ## Cara verifikasi
 

@@ -12,6 +12,22 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-02
 
+### SagaBook Calendar mobile operasional production release
+
+- Ringkasan: membuat Harian, Mingguan, dan Bulanan mobile mewakili periode
+  nyata; menambahkan navigasi hari aksesibel dan target 44 piksel; serta
+  menyelaraskan tanggal Manual Booking dan parser bulan Indonesia.
+- Produk/area terdampak: SagaBook Admin Calendar, Manual Booking, responsive
+  UX, accessibility, release, rollback, dan knowledge runtime.
+- Klasifikasi: `CONFIRMED`; source
+  `596b8a48a2dc6f1e3810b4dcd5a41be37183fdf1`, release
+  `20260802160930-596b8a4`, status `PRODUCTION_DEPLOYED`.
+- Production berubah: ya. Visual matrix 430 passed, backend 960/960 dengan
+  11.007 assertions, audit 0, backup/restore, readiness 100, service health,
+  dan smoke lulus. Authenticated production visual Calendar belum dijalankan;
+  `/up` belum mengirim HSTS dan staging monitor host mencatat error terpisah.
+  SagaView, storefront tenant/preset, landing page, dan payment tidak berubah.
+
 ### AOGTICVITY role-bound dashboard dan operasi lomba production
 
 - Ringkasan: mengikat redirect/login/dashboard ke role database yang ditetapkan
