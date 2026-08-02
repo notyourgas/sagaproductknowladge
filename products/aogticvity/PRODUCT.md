@@ -76,6 +76,12 @@ Public delivery saat ini: `https://olimpiade-kemerdekaan.vercel.app`.
 - Public registration memakai validasi server, consent version, anti-bot,
   anonymous rate limit, idempotent receipt, transaksi MySQL, dan audit. Admin
   dapat membaca serta memverifikasi pendaftaran dari authenticated desk.
+- Source `127ef92b3efe38d707fba7c0dd861a1665953de3` menambahkan kandidat akses
+  peserta passwordless: transactional WhatsApp outbox, provisioning role
+  `player`, Better Auth magic link single-use 30 menit, hash-only token ledger,
+  adapter Fonnte, session HttpOnly, revocation, dan status operator. Kandidat
+  ini `IMPLEMENTED_NOT_DEPLOYED`; migration 009, provider, serta UAT runtime
+  belum dijalankan.
 - SQLite hanya fast test adapter.
 - Event-master memiliki dry-run, validation, atomic publish, versioning, dan
   audit. Durasi jadwal bersifat provisional dan dapat disunting admin.
@@ -111,11 +117,13 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:
 - Typecheck, test, build, security, accessibility, responsive, migration, dan
   rollback telah menjadi gate.
 - Roster/check-in/result rehearsal lintas perangkat, target custom domains,
-  notification/recovery provider, serta UAT fisik hari-H belum selesai.
+  aktivasi WhatsApp magic-link/recovery provider, serta UAT fisik hari-H belum
+  selesai.
 
 ## Belum boleh diklaim
 
-- Notification provider belum aktif; UI tidak boleh mengklaim pesan terkirim.
+- Adapter Fonnte dan WhatsApp magic-link baru tervalidasi lokal; provider belum
+  aktif dan UI tidak boleh mengklaim pesan terkirim atau link login production.
 - Local state non-registrasi bukan persistence multi-device.
 - Auth dan registrasi sudah terbukti, tetapi belum membuktikan seluruh
   event-day journey business-ready sebelum operations rehearsal.

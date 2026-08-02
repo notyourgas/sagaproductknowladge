@@ -10,6 +10,21 @@ workflow, pricing, release, activation, atau blocker.
 Detail tetap berada pada changelog produk; entri docs-only berada di root
 [CHANGELOG](../CHANGELOG.md).
 
+## 2026-08-02 - AOGTICVITY WhatsApp access candidate
+
+- Source `127ef92b3efe38d707fba7c0dd861a1665953de3` menyelesaikan vertical slice
+  pendaftaran hingga akses player: outbox transaksional, adapter Fonnte,
+  approval/provisioning role server-side, magic link single-use 30 menit,
+  hash-only ledger, session HttpOnly, revocation, audit, dan status operator.
+- Token diletakkan pada URL fragment dan ditukar lewat POST same-origin agar
+  tidak ikut request/access log GET. Role selalu ditetapkan server sebagai
+  `player`; perubahan approval merevoke link/session terkait.
+- Typecheck, 69 test, build, dependency audit 0, dan diff check lulus lokal.
+  Delivery `IMPLEMENTED_NOT_DEPLOYED`; public production tidak berubah.
+- Migration MySQL staging, secret runtime dari vault, Fonnte UAT nyata,
+  delivery reconciliation, retry operator, dan UAT dua perangkat masih wajib
+  sebelum WhatsApp login boleh diklaim aktif.
+
 ## 2026-08-02 - SagaView Output Settings responsif production
 
 - `CONFIRMED`: action Reset/Simpan pada Studio Output sekarang hanya muncul

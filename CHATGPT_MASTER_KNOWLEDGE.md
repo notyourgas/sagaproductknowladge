@@ -238,6 +238,12 @@ persistence dan audit. Direct BFF fail-closed dan MySQL tetap loopback-only.
 Public registration juga aktif pada MySQL dengan validation, consent,
 idempotency, rate limit, receipt, audit, dan admin verification desk; participant
 fixture serta localStorage registration telah dihapus.
+Source `127ef92b3efe38d707fba7c0dd861a1665953de3` menambahkan kandidat akses
+peserta via WhatsApp tanpa kredensial; outbox transaksional, provisioning role
+`player`, adapter Fonnte fail-closed, magic link single-use 30 menit, hash-only
+ledger, session HttpOnly, revocation, audit, dan status operator. Kandidat ini
+`IMPLEMENTED_NOT_DEPLOYED`; production, provider, dan migration runtime belum
+berubah.
 Ini adalah nama terbaru project 17an/Olimpiade Kemerdekaan.
 
 Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:
@@ -246,8 +252,8 @@ Business readiness: `BLOCKED`. Public delivery aktif di
 `https://olimpiade-kemerdekaan.vercel.app`; target custom domain belum
 diaktifkan. Real credential login dan database-backed session sudah terbukti;
 admin password claim dan registration UAT sudah selesai. Roster/check-in/result
-rehearsal, notification/recovery provider, dan physical multi-device UAT belum
-selesai. Sebagian non-registration UI masih memakai bundled master/local state.
+rehearsal, aktivasi WhatsApp provider/recovery, dan physical multi-device UAT
+belum selesai. Sebagian non-registration UI masih memakai bundled master/local state.
 Sejak release 1 Agustus 2026, surface
 tersebut memakai festival UI/UX mobile 430 px dengan Plus Jakarta Sans,
 Feather-style icons, Motion for React, restrained celebration, dan
@@ -304,6 +310,8 @@ Delivery: `PLANNED`. Belum production-activated.
 - Jangan sebut COYABAG siap transaksi penuh.
 - Jangan sebut seluruh AOGTICVITY production multi-device; auth dan public
   registration saja sudah production-activated.
+- Jangan klaim WhatsApp login/Fonnte AOGTICVITY aktif; source baru masih
+  `IMPLEMENTED_NOT_DEPLOYED` dan belum melewati migration/provider/UAT runtime.
 - Jangan klaim Gmail sync, Google Sheets, atau PDF server-side SagaFin sebagai
   fitur aktif bila bukti terbaru belum berubah.
 - Jangan menyebut dummy/fixture/local log sebagai bukti provider.

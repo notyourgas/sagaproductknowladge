@@ -8,6 +8,23 @@ Mencatat perubahan material AOGTICVITY/17an/Olimpiade.
 
 Nama lama dipertahankan sebagai provenance; status runtime harus eksplisit.
 
+## 2026-08-02 - Kandidat akses peserta via WhatsApp
+
+- `CONFIRMED`: founder memilih flow daftar → pesan sedang diproses → approval
+  admin → link masuk melalui WhatsApp, tanpa password atau OTP peserta.
+- Source `127ef92b3efe38d707fba7c0dd861a1665953de3` mengimplementasikan migration
+  009, transactional outbox, adapter Fonnte fail-closed, provisioning role
+  `player`, magic link single-use 30 menit, hash-only ledger, token URL fragment,
+  POST same-origin, cookie session HttpOnly, revocation, audit, dan status WA
+  pada approval desk.
+- Gate lokal: typecheck, 69 test, production build, dependency audit 0, dan
+  diff check lulus. Sembilan integration test MySQL skipped karena target
+  credential tidak tersedia pada process lokal.
+- Delivery perubahan ini `IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
+  Token vault tidak dibaca karena Bitwarden CLI terkunci; migration staging,
+  pengiriman Fonnte nyata, webhook delivery reconciliation, retry operator,
+  dan UAT dua perangkat tetap blocker sebelum activation.
+
 ## 2026-08-02 - Public registration MySQL production
 
 - `CONFIRMED`: founder meminta participant demo dihapus dan aplikasi

@@ -12,6 +12,20 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-02
 
+### AOGTICVITY WhatsApp access candidate
+
+- Ringkasan: flow daftar sampai akses player kini memiliki kandidat lokal
+  passwordless melalui approval admin dan link WhatsApp single-use 30 menit.
+- Produk/area terdampak: AOGTICVITY registration, approval desk, identity,
+  MySQL migration 009, transactional outbox, Fonnte adapter, session, audit,
+  revocation, security, dan release/UAT contract.
+- Klasifikasi: `CONFIRMED`; source
+  `127ef92b3efe38d707fba7c0dd861a1665953de3` berstatus
+  `IMPLEMENTED_NOT_DEPLOYED`.
+- Production berubah: tidak. Gate lokal 69 test/typecheck/build/dependency audit
+  lulus; MySQL runtime, secret vault, provider nyata, webhook/retry, serta UAT
+  dua perangkat masih menunggu.
+
 ### SagaView Output Settings responsif production
 
 - Ringkasan: action Reset/Simpan hanya muncul saat Output dirty, tidak menutup
