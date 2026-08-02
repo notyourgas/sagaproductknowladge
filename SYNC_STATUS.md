@@ -12,14 +12,14 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-02T23:55:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-03T00:55:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `9761493` |
-| Informasi terakhir disinkronkan | AOGTICVITY source `5820d81` aktif pada Hostinger `20260802T164829Z`, Vercel `dpl_65E94pdpkp6kcF7xMrwkMsmxM7ju`, dan migration 013; team generator, direct assignment, publish/lock, visibility gating, versioning, idempotency, dan audit persisten. |
+| Baseline sebelum pembaruan | `bdc4c79` |
+| Informasi terakhir disinkronkan | AOGTICVITY source `baffaa5` aktif pada Hostinger `20260802T174812Z`, Vercel `dpl_9gXvi7t6xv6fisNC4LuuAiqZGvsX`, dan migration 014; rundown, operator assignment, recovery status, result verification/publication, standing, dan live display persisten. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru |
 | Konflik | Tidak ada; local `main` sama dengan `origin/main` sebelum edit. |
-| Error | Tidak ada blocker release Wave 1. Authenticated four-role UAT tertunda karena vault terkunci; activation keseluruhan dan business readiness belum diklaim. |
+| Error | Tidak ada blocker release Wave 2. Authenticated human multi-device UAT belum sign-off; activation keseluruhan dan business readiness belum diklaim. |
 
 ## File yang berubah pada sinkronisasi ini
 
@@ -34,10 +34,9 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 ## Item menunggu konfirmasi
 
-AOGTICVITY authenticated Admin/Operator/Leader/Player UAT, rundown,
-announcement, live-controller, WhatsApp full flow, custom domain, dan physical
-rehearsal masih menunggu sebelum activation keseluruhan atau `BUSINESS_READY`
-dapat diklaim.
+AOGTICVITY authenticated Admin/Operator/Leader/Player UAT, announcement
+persistence, WhatsApp full flow, custom domain, dan physical rehearsal masih
+menunggu sebelum activation keseluruhan atau `BUSINESS_READY` dapat diklaim.
 
 ## Cara verifikasi
 

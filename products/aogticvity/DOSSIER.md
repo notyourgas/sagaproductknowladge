@@ -7,7 +7,7 @@ content AOGTICVITY tetap jelas.
 
 ## Konteks dan status bukti
 
-- Updated: 2 Agustus 2026
+- Updated: 3 Agustus 2026
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED`
@@ -62,8 +62,8 @@ dan rehearsal fisik masih menahan activation keseluruhan.
 
 ## Roadmap
 
-1. Uji role redirect, assignment tim, roster, status lomba, check-in, result,
-   audit, dan offline/recovery melalui public Vercel.
+1. Uji role redirect, assignment tim/operator, roster, status lomba, check-in,
+   result draft/publish, live display, audit, dan recovery melalui public Vercel.
 2. Lakukan two-device authorization dan stale-state reconciliation UAT.
 3. Aktifkan target custom domain dan pilih recovery/notification provider.
 4. Finalisasi nama Tim 7/Tim 8, durasi, serta keputusan open pada master recap.
@@ -137,12 +137,13 @@ check-in, roster assignment, competition status, event-master, serta
 server-authoritative result operations.
 Vercel menjadi public edge dan guarded HTTPS proxy ke backend; endpoint backend
 langsung 404 tanpa server-only proxy secret dan MySQL tetap loopback-only.
-Registrasi tidak lagi memakai participant fixture atau localStorage. Roster
-perwakilan dan status lomba memakai optimistic version, idempotency, RBAC,
-audit, dan MySQL. Team generator, direct assignment, serta publish/lock
-pembagian tim juga persisten di MySQL; Draft disembunyikan dari Leader/Player,
-sedangkan perubahan stale ditolak. Edit rundown, announcement, dan
-live-controller masih local browser state. SQLite tetap fast test adapter.
+Registrasi tidak lagi memakai participant fixture atau localStorage. Roster,
+status lomba, rundown, assignment operator, result draft/publish/correct, dan
+live display memakai optimistic version, idempotency, RBAC, audit, dan MySQL.
+Team generator, direct assignment, serta publish/lock pembagian tim juga
+persisten; Draft disembunyikan dari Leader/Player dan standing publik,
+sedangkan stale write ditolak. Announcement masih local browser state. SQLite
+tetap fast test adapter.
 
 ## Integrasi
 
@@ -163,8 +164,8 @@ announcement, version, audit, dan export.
 ## Risiko dan asumsi
 
 Event-day time pressure, network failure, duplicate scoring, stale projection,
-residual local state pada rundown/announcement/live, authenticated four-role
-team UAT, aktivasi/recovery provider notification,
+residual local state pada announcement, authenticated four-role event-day UAT,
+aktivasi/recovery provider notification,
 operations UAT, dua nama tim placeholder, serta durasi dan keputusan
 master recap yang masih provisional/open.
 

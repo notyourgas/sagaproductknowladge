@@ -1,7 +1,7 @@
 # AOGTICVITY Product Knowledge
 
-Updated: 2 Agustus 2026
-Evidence status: public Vercel delivery + database-backed auth and registration runtime
+Updated: 3 Agustus 2026
+Evidence status: public Vercel delivery + database-backed auth, registration, team, and event-day operations runtime
 
 ## Tujuan dokumen
 
@@ -101,6 +101,13 @@ Public delivery saat ini: `https://olimpiade-kemerdekaan.vercel.app`.
   `Draft → Published → Locked`, controlled reopen, optimistic version,
   idempotency, audit, dan invalidasi roster lomba stale sekarang ditegakkan
   server-side. Leader/Player hanya menerima assignment saat Published/Locked.
+- Source `baffaa52c0567d3fb3ed665ae673cf6e7c32e40c`, Hostinger release
+  `20260802T174812Z`, Vercel production
+  `dpl_9gXvi7t6xv6fisNC4LuuAiqZGvsX`, dan migration 014 mengaktifkan rundown,
+  assignment operator per lomba, recovery status beralasan, result
+  `Draft → Published/Corrected`, standing publik, serta live display persisten.
+  Operator hanya dapat mengubah lomba assigned; admin publish menyelesaikan
+  lomba secara atomik. Optimistic version, idempotency, dan audit aktif.
 - SQLite hanya fast test adapter.
 - Event-master memiliki dry-run, validation, atomic publish, versioning, dan
   audit. Durasi jadwal bersifat provisional dan dapat disunting admin.
@@ -109,10 +116,10 @@ Public delivery saat ini: `https://olimpiade-kemerdekaan.vercel.app`.
   forced bootstrap change, HttpOnly session, expiry, RBAC, rate limit, revoke,
   dan audit tetap wajib.
 - Participant fixture dan persistence registrasi localStorage telah dihapus.
-  Roster perwakilan, status lomba, team generator, direct assignment, dan
-  publish/lock pembagian tim kini server-authoritative. Edit rundown,
-  announcement, dan live-controller masih memerlukan finalisasi
-  persistence/UAT sebelum seluruh operasi hari-H boleh diklaim siap.
+  Roster perwakilan, status lomba, team generator, direct assignment,
+  publish/lock pembagian tim, rundown, result verification, dan live-controller
+  kini server-authoritative. Announcement masih local state; seluruh operasi
+  hari-H tetap memerlukan authenticated multi-device UAT sebelum diklaim siap.
 
 ## Status saat ini
 
@@ -150,9 +157,9 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:
 - Fonnte runtime dan pengiriman kanal UAT sudah aktif, tetapi UI tidak boleh
   mengklaim seluruh flow login WhatsApp production-ready sebelum webhook status
   dan two-device magic-link/session UAT lulus.
-- Edit rundown, announcement, dan live-controller yang masih local state bukan
-  persistence multi-device. Team workflow sudah persisten, tetapi authenticated
-  four-role UAT belum sign-off.
+- Announcement masih local state. Rundown, result desk, dan live-controller
+  sudah persisten, tetapi authenticated four-role multi-device UAT belum
+  sign-off.
 - Auth dan registrasi sudah terbukti, tetapi belum membuktikan seluruh
   event-day journey business-ready sebelum operations rehearsal.
 

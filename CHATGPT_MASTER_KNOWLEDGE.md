@@ -297,6 +297,12 @@ dan migration 013 membuat generator delapan tim, direct assignment, serta
 workflow `Draft → Published → Locked` persisten. Mutation admin-only memakai
 versioning, idempotency, reasoned audit, dan melepas roster lomba stale ketika
 peserta berpindah tim. Draft tidak terlihat oleh Leader/Player.
+Source `baffaa52c0567d3fb3ed665ae673cf6e7c32e40c`, Hostinger release
+`20260802T174812Z`, Vercel production `dpl_9gXvi7t6xv6fisNC4LuuAiqZGvsX`, dan
+migration 014 membuat rundown, assignment operator per lomba, recovery status,
+result draft/admin publish, standing publik, serta live display persisten.
+Operator hanya dapat mengubah lomba assigned; admin publication menyelesaikan
+lomba atomik. Versioning, idempotency, audit, dan stale-write protection aktif.
 Ini adalah nama terbaru project 17an/Olimpiade Kemerdekaan.
 
 Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:
@@ -306,9 +312,9 @@ Business readiness: `BLOCKED`. Public delivery aktif di
 diaktifkan. Real credential login dan database-backed session sudah terbukti;
 admin password claim dan registration UAT sudah selesai. Roster/check-in/result
 rehearsal, provider status webhook, WhatsApp magic-link/session UAT, dan
-physical multi-device UAT belum selesai. Edit rundown, announcement, dan
-live-controller masih memakai local state; team workflow sudah persisten tetapi
-authenticated four-role UAT belum sign-off.
+physical multi-device UAT belum selesai. Rundown, result, dan live-controller
+sudah server-authoritative; announcement masih local state dan authenticated
+four-role UAT belum sign-off.
 Sejak release 1 Agustus 2026, surface
 tersebut memakai festival UI/UX mobile 430 px dengan Plus Jakarta Sans,
 Feather-style icons, Motion for React, restrained celebration, dan

@@ -10,6 +10,21 @@ workflow, pricing, release, activation, atau blocker.
 Detail tetap berada pada changelog produk; entri docs-only berada di root
 [CHANGELOG](../CHANGELOG.md).
 
+## 2026-08-03 - AOGTICVITY event-day control plane production
+
+- `CONFIRMED`: rundown, operator assignment, recovery status, result
+  draft/verification/publication, standing, dan live projection sekarang
+  server-authoritative. Operator hanya dapat mengubah lomba assigned; admin
+  publish menyelesaikan lomba secara atomik.
+- Source `baffaa52c0567d3fb3ed665ae673cf6e7c32e40c`; Hostinger
+  `20260802T174812Z`; Vercel `dpl_9gXvi7t6xv6fisNC4LuuAiqZGvsX`; migration
+  014. Disposable MySQL, integration, exact-source preflight, backup,
+  readiness, public/API smoke, dan rollback lulus.
+- Delivery berubah di production. Activation keseluruhan tetap
+  `NOT_PRODUCTION_ACTIVATED` dan business readiness `BLOCKED` sampai human
+  multi-device UAT, announcement persistence, WhatsApp full flow, custom
+  domain, dan rehearsal fisik selesai.
+
 ## 2026-08-02 - AOGTICVITY team roster workflow production
 
 - `CONFIRMED`: generator delapan tim, assignment peserta langsung, dan

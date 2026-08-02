@@ -10,6 +10,27 @@ produk dan [Portfolio Changelog](changelog/PORTFOLIO_CHANGELOG.md).
 
 Root changelog tidak menggantikan changelog produk atau portfolio.
 
+## 2026-08-03
+
+### AOGTICVITY event-day control plane production
+
+- Ringkasan: mengganti rundown/live browser-only dan direct result publish
+  dengan control plane MySQL untuk schedule, operator assignment, reasoned
+  recovery, operator draft, admin verification/publication, standing, serta
+  live display lintas perangkat.
+- Produk/area terdampak: AOGTICVITY admin/operator UI, competition status,
+  result desk, public standing/live, MySQL, permission, audit, release,
+  rollback, dan UAT.
+- Klasifikasi: `CONFIRMED`; source
+  `baffaa52c0567d3fb3ed665ae673cf6e7c32e40c`, Hostinger
+  `20260802T174812Z`, Vercel `dpl_9gXvi7t6xv6fisNC4LuuAiqZGvsX`, migration
+  014, status `PRODUCTION_DEPLOYED`.
+- Production berubah: ya. Activation keseluruhan tetap
+  `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED`. Human
+  multi-device UAT, announcement persistence, WhatsApp full flow, custom
+  domain, dan physical rehearsal belum selesai. Tidak ada credential, PII,
+  private evidence path, atau detail backup yang masuk knowledge publik.
+
 ## 2026-08-02
 
 ### AOGTICVITY team roster workflow production

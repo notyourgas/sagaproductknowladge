@@ -8,6 +8,24 @@ Mencatat perubahan material AOGTICVITY/17an/Olimpiade.
 
 Nama lama dipertahankan sebagai provenance; status runtime harus eksplisit.
 
+## 2026-08-03 - Event-day control plane production
+
+- `CONFIRMED`: rundown, assignment operator per lomba, recovery status
+  beralasan, result `Draft → Published/Corrected`, standing publik, dan live
+  display kini persisten serta sinkron lintas perangkat melalui MySQL.
+- Operator hanya dapat menjalankan status/draft hasil untuk lomba assigned.
+  Admin memverifikasi publikasi, dan publish menyelesaikan lomba atomik.
+  Optimistic version, idempotency, audit, serta stale-write failure state aktif.
+- Source `baffaa52c0567d3fb3ed665ae673cf6e7c32e40c`; Hostinger release
+  `20260802T174812Z`; Vercel production
+  `dpl_9gXvi7t6xv6fisNC4LuuAiqZGvsX`; migration 014. Gate: 89 unit/regression,
+  tujuh integration test disposable MySQL, exact-source preflight, build,
+  dependency audit, backup, readiness, public/API smoke, dan rollback lulus.
+- Delivery `PRODUCTION_DEPLOYED`; activation keseluruhan tetap
+  `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED`. Authenticated
+  human multi-device UAT, announcement persistence, WhatsApp full flow, custom
+  domain, dan rehearsal fisik masih terbuka.
+
 ## 2026-08-02 - Team generator, assignment, publish, dan lock production
 
 - `CONFIRMED`: admin dapat membuat draft seimbang untuk delapan tim, mencari
