@@ -207,6 +207,19 @@ Kontrak ini sekarang enforced server-side pada runtime production yang aktif.
 - kontrak local-first, exclusive lease, privacy handoff, output 4R, dan tepat
   satu `Powered by SagaView` tidak berubah.
 
+## Output Settings responsif
+
+`CONFIRMED` - production:
+
+- action Reset/Simpan hanya muncul ketika pengaturan Output benar-benar berubah;
+- status dirty selalu tampil sebagai `Belum disimpan`, termasuk ketika operator
+  mengedit lagi sesaat setelah feedback save;
+- action region mengikuti konten pada mobile agar tidak menutup form, tetapi
+  tetap sticky pada desktop;
+- kontrol format, DPI, filename, Reset, dan Simpan memiliki target minimal 44 px;
+- pengaturan folder, device/session, payment, privacy foto, dan kontrak PNG 4R
+  tidak berubah.
+
 ## Status saat ini
 
 - Delivery: `PRODUCTION_DEPLOYED`.
@@ -218,13 +231,13 @@ Kontrak ini sekarang enforced server-side pada runtime production yang aktif.
 
 - Backend source:
   `f26bb57737fc25a0a40d350dc26ca727d30885b2`.
-- Backend release aktif: `20260801101515-f26bb57`; source backend tidak berubah
-  pada promosi S85.
+- Backend release aktif: `20260802042221-f26bb57`; source backend tidak berubah
+  pada promosi S86.
 - Studio source aktif:
-  `a130ee5939f64fd76d575908b7748bacd75a6878`.
-- Studio release aktif: `20260801101538-a130ee5`.
+  `47aec0d7f58b04c7f63ad9ac4be4141f649a14e7`.
+- Studio release aktif: `20260802042221-47aec0d`.
 - Studio release sebelumnya yang menjadi rollback:
-  `20260801073058-fa78207`.
+  `20260801101538-a130ee5`.
 - Saga Platform source:
   `378bcdf4dac6c54d0bf421b5ef188103d82c6b40`.
 - Saga Platform release: `20260731181921-378bcdf`.
@@ -252,8 +265,9 @@ Kontrak ini sekarang enforced server-side pada runtime production yang aktif.
 ### Release validation
 
 - Backend: 908/908 test, 10.629 assertions.
-- Studio S85: 156 unit test, 75/75 E2E default-parallel, 4/4 focused katalog,
-  dan 35/35 regression frame/customer/output/import termasuk 50/200/500 foto.
+- Studio S86: 156 unit test, 76/76 E2E default-parallel, dan 4/4 focused Output;
+  regression mencakup frame/customer/output/import 50/200/500, device transfer,
+  trial, privacy handoff, dan accessibility.
 - Public production browser: 8/8 self-service E2E.
 - Import 50/200/500, accessibility, responsive mobile–desktop, forced-colors,
   reduced-motion, dependency audit, dan bundle budget lulus.
@@ -264,8 +278,8 @@ Kontrak ini sekarang enforced server-side pada runtime production yang aktif.
 
 ### Rollback
 
-- Backend: `20260801072934-f26bb57`.
-- Studio: `20260801073058-fa78207`.
+- Backend: `20260801101515-f26bb57`.
+- Studio: `20260801101538-a130ee5`.
 - Backup release dan konfigurasi Nginx sebelumnya dipertahankan.
 
 ## Belum boleh diklaim

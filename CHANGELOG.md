@@ -12,6 +12,27 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-02
 
+### SagaView Output Settings responsif production
+
+- Ringkasan: action Reset/Simpan hanya muncul saat Output dirty, tidak menutup
+  workspace mobile, tetap sticky pada desktop, dan selalu menampilkan status
+  unsaved yang jujur dengan target minimal 44 piksel.
+- Produk/area terdampak: SagaView Studio Console Output, responsive layout,
+  save feedback, accessibility, release, rollback, dan knowledge runtime.
+- Klasifikasi: `CONFIRMED`; source Studio
+  `47aec0d7f58b04c7f63ad9ac4be4141f649a14e7` `PRODUCTION_DEPLOYED` pada
+  release `20260802042221-47aec0d`; backend source tidak berubah dan direbind
+  sebagai `20260802042221-f26bb57`.
+- Production berubah: ya, hanya Studio Output UI; folder, device/session,
+  payment/provider, privacy foto, dan output 4R tidak berubah.
+- Gate: 156 unit, 76/76 E2E, focused Output 4/4, dependency audit 0,
+  encrypted backup/disposable restore, candidate dan rollback gate 6/6,
+  production Chrome mobile/desktop, service/header/journal, dan tujuh route/API
+  smoke lulus.
+- Rollback: Studio `20260801101538-a130ee5`; backend
+  `20260801101515-f26bb57`. Business readiness mass-scale tetap
+  `NEEDS CONFIRMATION` sampai cohort studio nyata dan support observation.
+
 ### SagaBook CTA cabang storefront production
 
 - Ringkasan: menghilangkan CTA fixed disabled dari katalog Lokasi sebelum

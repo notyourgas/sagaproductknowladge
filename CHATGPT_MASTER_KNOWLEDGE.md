@@ -150,9 +150,9 @@ plan-limited, tanpa auto-charge.
 
 Update terbaru: backend/Owner tetap memakai source
 `f26bb57737fc25a0a40d350dc26ca727d30885b2`, release
-`20260801101515-f26bb57`, sedangkan Studio aktif memakai source
-`a130ee5939f64fd76d575908b7748bacd75a6878`, release
-`20260801101538-a130ee5`. Owner Console lintas browser,
+`20260802042221-f26bb57`, sedangkan Studio aktif memakai source
+`47aec0d7f58b04c7f63ad9ac4be4141f649a14e7`, release
+`20260802042221-47aec0d`. Owner Console lintas browser,
 Studio exclusive lease, output 4R, session completion/privacy handoff,
 trial/subscription, serta public Home/Pricing/Help/Contact/Privacy/Terms/Legal
 aktif. Limit device/frame/preset, quota aset frame cloud, fair-use,
@@ -174,6 +174,10 @@ intent/QRIS/transaksi kedua. Katalog frame terisi kini dapat dicari dan difilter
 berdasarkan kategori/status, menampilkan status aktif/nonaktif dengan teks,
 memakai satu kolom legible di mobile dan tiga kolom stabil di desktop, serta
 mempertahankan local frame saat offline tanpa mengubah customer picker atau 4R.
+Output Settings kini hanya menampilkan Reset/Simpan saat dirty, menaruh action
+setelah konten pada mobile dan sticky pada desktop, memakai target 44 px, serta
+memprioritaskan status `Belum disimpan` ketika operator mengedit ulang. Folder,
+device/session, payment, privacy foto, dan kontrak export/print 4R tidak berubah.
 
 Candidate Saga Platform `dcb5a3f3` menyiapkan signup SagaView auto-trial 7 hari
 tanpa approval owner/email verification. Login tetap menunggu provisioning

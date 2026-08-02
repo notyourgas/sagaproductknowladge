@@ -127,9 +127,12 @@ jam, 10 GB aset frame cloud, laporan lanjutan, activity log, dan priority
 support. Session/foto dipasarkan unlimited dengan fair-use; foto tetap lokal.
 
 `CONFIRMED` — kontrak ini aktif di production. Source Studio aktif adalah
-`a130ee5939f64fd76d575908b7748bacd75a6878`, release
-`20260801101538-a130ee5`; rollback Studio adalah
-`20260801073058-fa78207`.
+`47aec0d7f58b04c7f63ad9ac4be4141f649a14e7`, release
+`20260802042221-47aec0d`; rollback Studio adalah
+`20260801101538-a130ee5`. Output Settings hanya menampilkan action simpan saat
+dirty, tidak menutup konten mobile, mempertahankan action sticky desktop, dan
+menjaga status `Belum disimpan` tetap jujur. Kontrak folder, device, foto lokal,
+payment, dan output PNG 4R tidak berubah.
 
 ## Kompetitor
 

@@ -4,6 +4,29 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-08-02 - Output Settings responsif production
+
+- Klasifikasi: `CONFIRMED`.
+- Status: `PRODUCTION_DEPLOYED` dan `PRODUCTION_ACTIVATED`.
+- Before: action bar simpan selalu memakai ruang besar dan sticky meski form
+  bersih; pada mobile dapat menutup bagian workspace. Feedback saved juga dapat
+  tetap terlihat ketika operator sudah mengedit lagi.
+- After: action Reset/Simpan hanya muncul saat dirty, mengikuti konten di mobile,
+  tetap sticky di desktop, memakai target 44 px, dan selalu menampilkan status
+  `Belum disimpan` ketika ada perubahan.
+- Studio source `47aec0d7f58b04c7f63ad9ac4be4141f649a14e7`, release
+  `20260802042221-47aec0d`; backend source tetap
+  `f26bb57737fc25a0a40d350dc26ca727d30885b2`, release
+  `20260802042221-f26bb57`.
+- Validation: 156 unit, 76/76 default-parallel E2E, 4/4 focused Output,
+  dependency audit 0, encrypted backup dan disposable restore 146 tabel,
+  candidate/rollback gate 6/6, production Chrome mobile/desktop, service,
+  security header, journal, dan tujuh route/API smoke lulus.
+- Release tidak mengubah folder output, device/session, payment/provider,
+  privacy foto, atau kontrak export/print 4R; tidak membuat intent atau QRIS.
+- Rollback Studio `20260801101538-a130ee5`; rollback backend
+  `20260801101515-f26bb57`.
+
 ## 2026-08-01 — Katalog frame terisi responsif production
 
 - Klasifikasi: `CONFIRMED`.

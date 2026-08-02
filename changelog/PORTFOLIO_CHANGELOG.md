@@ -10,6 +10,23 @@ workflow, pricing, release, activation, atau blocker.
 Detail tetap berada pada changelog produk; entri docs-only berada di root
 [CHANGELOG](../CHANGELOG.md).
 
+## 2026-08-02 - SagaView Output Settings responsif production
+
+- `CONFIRMED`: action Reset/Simpan pada Studio Output sekarang hanya muncul
+  ketika ada perubahan, tidak menutup konten mobile, tetap sticky pada desktop,
+  dan menampilkan status unsaved yang jujur dengan target 44 piksel.
+- Source Studio `47aec0d7f58b04c7f63ad9ac4be4141f649a14e7` aktif pada release
+  `20260802042221-47aec0d`; backend compatible source
+  `f26bb57737fc25a0a40d350dc26ca727d30885b2` aktif pada release
+  `20260802042221-f26bb57`.
+- 156 unit, 76/76 E2E, backup/restore, gate kandidat dan rollback 6/6,
+  production Chrome mobile/desktop, service, security header, journal, dan
+  tujuh route/API smoke lulus.
+- Folder output, device/session, payment/provider, privacy foto, output 4R,
+  dan satu `Powered by SagaView` tidak berubah. Delivery/activation tetap
+  `PRODUCTION_DEPLOYED` / `PRODUCTION_ACTIVATED`; business readiness mass-scale
+  tetap `NEEDS CONFIRMATION`.
+
 ## 2026-08-02 - SagaBook CTA cabang storefront production
 
 - Source `b74ebb56099849dc17d759f4a9f0c8f1a04788e4` aktif sebagai release
