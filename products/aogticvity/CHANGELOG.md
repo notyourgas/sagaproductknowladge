@@ -8,6 +8,29 @@ Mencatat perubahan material AOGTICVITY/17an/Olimpiade.
 
 Nama lama dipertahankan sebagai provenance; status runtime harus eksplisit.
 
+## 2026-08-02 - Team generator, assignment, publish, dan lock production
+
+- `CONFIRMED`: admin dapat membuat draft seimbang untuk delapan tim, mencari
+  serta memindahkan peserta tanpa CSV, mempublikasikan pembagian, mengunci
+  perubahan, dan membuka kembali dengan alasan audit.
+- MySQL migration 013 menyimpan global state/version, idempotency, dan audit.
+  Publication fail-closed bila peserta approved belum mendapat tim atau
+  selisih anggota antartim lebih dari satu. Perpindahan peserta melepas roster
+  lomba stale dan menaikkan version scope terdampak.
+- Leader/Player tidak menerima assignment saat Draft; Published/Locked membuka
+  data team-scoped. Operator dan role non-admin ditolak pada mutation boundary.
+- Source `5820d8199e75bd9c00f3bdbb8de51e831a0b5717`; Hostinger release
+  `20260802T164829Z`; Vercel production
+  `dpl_65E94pdpkp6kcF7xMrwkMsmxM7ju`; migration 013. Gate: 85 unit/regression,
+  tiga integration test disposable MySQL, build lokal/Hostinger/Vercel,
+  dependency audit 0, backup, service readiness, exact-source, RBAC/public
+  smoke, dan rollback lulus.
+- Delivery `PRODUCTION_DEPLOYED`; activation keseluruhan tetap
+  `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED`. Authenticated
+  four-role UAT tertunda karena vault terkunci; rundown, announcement,
+  live-controller, WhatsApp full flow, custom domain, dan rehearsal fisik masih
+  menjadi blocker.
+
 ## 2026-08-02 - Role-bound dashboard dan operasi lomba production
 
 - `CONFIRMED`: Andreas menetapkan role akun berasal dari admin dashboard;

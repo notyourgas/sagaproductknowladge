@@ -169,10 +169,11 @@ ketika keputusan atau release baru menutup gap.
   approval/magic-link/session/reuse/revoke UAT masih `NEEDS CONFIRMATION`.
 - `NEEDS CONFIRMATION`: model bisnis produk (event internal, jasa per event, atau
   SaaS).
-- `NEEDS CONFIRMATION`: role/assignment/roster/status-lomba/check-in/result
-  multi-device operations UAT; persistence team generator, rundown,
-  announcement, dan live-controller; recovery/session flow, target custom
-  domain, dan physical event rehearsal.
+- `NEEDS CONFIRMATION`: authenticated four-role serta
+  roster/status-lomba/check-in/result multi-device operations UAT; persistence
+  rundown, announcement, dan live-controller; recovery/session flow, target
+  custom domain, dan physical event rehearsal. Team generator/direct
+  assignment/publish/lock persistence sudah `CONFIRMED` pada migration 013.
 - `NEEDS CONFIRMATION`: nama final Tim 7/Tim 8, durasi lomba, serta keputusan
   master recap yang masih provisional/open.
 

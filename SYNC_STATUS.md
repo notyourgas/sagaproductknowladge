@@ -12,20 +12,20 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-02T23:16:37+07:00 |
+| Waktu pembaruan terakhir | 2026-08-02T23:55:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `eccb4dd` |
-| Informasi terakhir disinkronkan | SagaBook Calendar source `596b8a48` aktif sebagai release `20260802160930-596b8a4`; periode mobile, navigasi 44 piksel, serta sinkronisasi tanggal/parser Manual Booking aktif. |
+| Baseline sebelum pembaruan | `9761493` |
+| Informasi terakhir disinkronkan | AOGTICVITY source `5820d81` aktif pada Hostinger `20260802T164829Z`, Vercel `dpl_65E94pdpkp6kcF7xMrwkMsmxM7ju`, dan migration 013; team generator, direct assignment, publish/lock, visibility gating, versioning, idempotency, dan audit persisten. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru |
 | Konflik | Tidak ada; local `main` sama dengan `origin/main` sebelum edit. |
-| Error | Tidak ada blocker release. `/up` belum mengirim HSTS; staging monitor host mencatat error terpisah; business readiness belum diklaim. |
+| Error | Tidak ada blocker release Wave 1. Authenticated four-role UAT tertunda karena vault terkunci; activation keseluruhan dan business readiness belum diklaim. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/sagabook/PRODUCT.md`
-- `products/sagabook/DOSSIER.md`
-- `products/sagabook/CHANGELOG.md`
+- `products/aogticvity/PRODUCT.md`
+- `products/aogticvity/DOSSIER.md`
+- `products/aogticvity/CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `GAPS.md`
@@ -34,9 +34,10 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 ## Item menunggu konfirmasi
 
-SagaBook authenticated production visual Calendar, HSTS `/up`, dan perbaikan
-staging monitor host masih menunggu. Founding Studio Pilot tetap diperlukan
-sebelum `BUSINESS_READY` dapat diklaim.
+AOGTICVITY authenticated Admin/Operator/Leader/Player UAT, rundown,
+announcement, live-controller, WhatsApp full flow, custom domain, dan physical
+rehearsal masih menunggu sebelum activation keseluruhan atau `BUSINESS_READY`
+dapat diklaim.
 
 ## Cara verifikasi
 

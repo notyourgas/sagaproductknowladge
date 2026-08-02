@@ -10,6 +10,21 @@ workflow, pricing, release, activation, atau blocker.
 Detail tetap berada pada changelog produk; entri docs-only berada di root
 [CHANGELOG](../CHANGELOG.md).
 
+## 2026-08-02 - AOGTICVITY team roster workflow production
+
+- `CONFIRMED`: generator delapan tim, assignment peserta langsung, dan
+  lifecycle `Draft → Published → Locked` sekarang persisten serta admin-only.
+  Draft disembunyikan dari Leader/Player; publication dan stale writes
+  fail-closed; audit serta idempotency aktif.
+- Source `5820d8199e75bd9c00f3bdbb8de51e831a0b5717`; Hostinger
+  `20260802T164829Z`; Vercel `dpl_65E94pdpkp6kcF7xMrwkMsmxM7ju`; migration
+  013. Backup, disposable MySQL/integration, 85 regression test, build,
+  dependency audit, service/public smoke, provenance, dan rollback lulus.
+- Delivery berubah di production, tetapi activation keseluruhan tetap
+  `NOT_PRODUCTION_ACTIVATED` dan business readiness `BLOCKED` sampai
+  authenticated role UAT, workflow local-state tersisa, WhatsApp full flow,
+  custom domain, dan rehearsal fisik selesai.
+
 ## 2026-08-02 - SagaBook Calendar mobile operasional production
 
 - `CONFIRMED`: Harian, Mingguan, dan Bulanan kini menampilkan periode nyata

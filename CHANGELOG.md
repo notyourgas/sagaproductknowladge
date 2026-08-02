@@ -12,6 +12,23 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-02
 
+### AOGTICVITY team roster workflow production
+
+- Ringkasan: mengganti team generator browser-only dengan generator delapan tim
+  dan direct assignment persisten, lalu menambahkan publish, lock, controlled
+  reopen, visibility gating Leader/Player, versioning, idempotency, dan audit.
+- Produk/area terdampak: AOGTICVITY admin team workspace, Leader/Player
+  visibility, competition roster consistency, MySQL, security, release,
+  rollback, serta UAT.
+- Klasifikasi: `CONFIRMED`; source
+  `5820d8199e75bd9c00f3bdbb8de51e831a0b5717`, Hostinger
+  `20260802T164829Z`, Vercel `dpl_65E94pdpkp6kcF7xMrwkMsmxM7ju`, migration
+  013, status `PRODUCTION_DEPLOYED`.
+- Production berubah: ya. Activation keseluruhan tetap
+  `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED`. Authenticated
+  four-role UAT belum sign-off karena vault terkunci; tidak ada credential atau
+  PII yang masuk knowledge publik.
+
 ### SagaBook Calendar mobile operasional production release
 
 - Ringkasan: membuat Harian, Mingguan, dan Bulanan mobile mewakili periode

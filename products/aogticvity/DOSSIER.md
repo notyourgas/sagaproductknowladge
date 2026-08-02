@@ -139,7 +139,9 @@ Vercel menjadi public edge dan guarded HTTPS proxy ke backend; endpoint backend
 langsung 404 tanpa server-only proxy secret dan MySQL tetap loopback-only.
 Registrasi tidak lagi memakai participant fixture atau localStorage. Roster
 perwakilan dan status lomba memakai optimistic version, idempotency, RBAC,
-audit, dan MySQL. Team generator, edit rundown, announcement, dan
+audit, dan MySQL. Team generator, direct assignment, serta publish/lock
+pembagian tim juga persisten di MySQL; Draft disembunyikan dari Leader/Player,
+sedangkan perubahan stale ditolak. Edit rundown, announcement, dan
 live-controller masih local browser state. SQLite tetap fast test adapter.
 
 ## Integrasi
@@ -161,7 +163,8 @@ announcement, version, audit, dan export.
 ## Risiko dan asumsi
 
 Event-day time pressure, network failure, duplicate scoring, stale projection,
-residual local state pada team/rundown/announcement/live, aktivasi/recovery provider notification,
+residual local state pada rundown/announcement/live, authenticated four-role
+team UAT, aktivasi/recovery provider notification,
 operations UAT, dua nama tim placeholder, serta durasi dan keputusan
 master recap yang masih provisional/open.
 

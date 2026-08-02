@@ -94,6 +94,13 @@ Public delivery saat ini: `https://olimpiade-kemerdekaan.vercel.app`.
   team-scoped, roster perwakilan atomik, serta status lomba lintas perangkat.
   Role tidak lagi dipilih pengguna; leader tidak lagi memakai PIN prototype;
   CSV assignment menerima seluruh delapan canonical team ID.
+- Source `5820d8199e75bd9c00f3bdbb8de51e831a0b5717`, Hostinger release
+  `20260802T164829Z`, Vercel production
+  `dpl_65E94pdpkp6kcF7xMrwkMsmxM7ju`, dan migration 013 mengaktifkan team
+  generator serta assignment langsung yang persisten. Lifecycle global
+  `Draft → Published → Locked`, controlled reopen, optimistic version,
+  idempotency, audit, dan invalidasi roster lomba stale sekarang ditegakkan
+  server-side. Leader/Player hanya menerima assignment saat Published/Locked.
 - SQLite hanya fast test adapter.
 - Event-master memiliki dry-run, validation, atomic publish, versioning, dan
   audit. Durasi jadwal bersifat provisional dan dapat disunting admin.
@@ -102,8 +109,9 @@ Public delivery saat ini: `https://olimpiade-kemerdekaan.vercel.app`.
   forced bootstrap change, HttpOnly session, expiry, RBAC, rate limit, revoke,
   dan audit tetap wajib.
 - Participant fixture dan persistence registrasi localStorage telah dihapus.
-  Roster perwakilan dan status lomba kini server-authoritative. Team generator,
-  edit rundown, announcement, dan live-controller masih memerlukan finalisasi
+  Roster perwakilan, status lomba, team generator, direct assignment, dan
+  publish/lock pembagian tim kini server-authoritative. Edit rundown,
+  announcement, dan live-controller masih memerlukan finalisasi
   persistence/UAT sebelum seluruh operasi hari-H boleh diklaim siap.
 
 ## Status saat ini
@@ -142,8 +150,9 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:
 - Fonnte runtime dan pengiriman kanal UAT sudah aktif, tetapi UI tidak boleh
   mengklaim seluruh flow login WhatsApp production-ready sebelum webhook status
   dan two-device magic-link/session UAT lulus.
-- Team generator, edit rundown, announcement, dan live-controller yang masih
-  local state bukan persistence multi-device.
+- Edit rundown, announcement, dan live-controller yang masih local state bukan
+  persistence multi-device. Team workflow sudah persisten, tetapi authenticated
+  four-role UAT belum sign-off.
 - Auth dan registrasi sudah terbukti, tetapi belum membuktikan seluruh
   event-day journey business-ready sebelum operations rehearsal.
 
