@@ -223,6 +223,16 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
   browser desktop+mobile 298/298, typecheck, build, dependency audit 0,
   encrypted backup, disposable restore exact-SHA, database audit, service
   health, public smoke, serta production visual 390x844 dan 1440x900 lulus.
+- Kandidat Admin Booking pada source
+  `9963f3de757c0339580c79d96ff565d320722fcb` berstatus
+  `IMPLEMENTED_NOT_DEPLOYED`. Daftar mobile menjadi kartu operasional yang
+  terbaca, desktop mempertahankan tabel, detail booking dibuka pada satu drawer
+  aksesibel, kontrol kritis minimal 44 piksel, dan aksi terminal mengembalikan
+  fokus ke daftar. Full backend 958/958 dengan 10.991 assertions, matriks
+  browser mobile/tablet/desktop 415 passed, build, design audit, serta
+  dependency audit 0 lulus. Production tetap release
+  `20260802024941-b74ebb5` karena dua percobaan release berhenti fail-closed
+  sebelum activation; symlink production, SagaView, dan service tidak berubah.
 - Candidate signup tanpa approval owner dan trial kanonik 7 hari sudah
   `LOCAL_VALIDATED` pada source
   `dcb5a3f3dc1e3e7b5c0c067e8968ca341ebf1c27`. Production tetap memakai

@@ -12,6 +12,18 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-02
 
+### SagaBook Admin Booking candidate tertahan release gate
+
+- Ringkasan: menambahkan triage Booking responsif dan memperbaiki false
+  positive reconciliation untuk booking paid yang sudah masuk workflow sesi.
+- Produk/area terdampak: SagaBook Admin Booking, accessibility/focus, payment
+  reconciliation, QA visual, dan release safety.
+- Klasifikasi: `CONFIRMED`; source
+  `9963f3de757c0339580c79d96ff565d320722fcb` berstatus
+  `IMPLEMENTED_NOT_DEPLOYED`.
+- Production berubah: tidak. Dua attempt berhenti sebelum activation; release
+  aktif tetap `20260802024941-b74ebb5` dan SagaView tetap unchanged.
+
 ### AOGTICVITY Fonnte operations candidate
 
 - Ringkasan: melengkapi kandidat akses WhatsApp dengan webhook status,

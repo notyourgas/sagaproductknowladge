@@ -60,6 +60,9 @@ ketika keputusan atau release baru menutup gap.
 - `TODO`: S72 auto-trial 7 hari masih `PRODUCTION HOLD`; kontrak production
   tetap tidak berubah sampai release, worker/provisioning, dan authenticated
   product UAT disetujui.
+- `TODO`: diagnosis release runner Admin Booking source `9963f3de` harus
+  menghasilkan alasan terstruktur dan lulus pre-activation gate sebelum
+  promotion; dua attempt fail-closed tidak mengubah production.
 - `CONFIRMED`: candidate UI/UX dan auth/fallback hardening kumulatif sudah
   `PRODUCTION_DEPLOYED` sebagai release `20260802002923-d9bbbac`; manifest,
   public HTTP smoke, production auth browser 6/6, matriks browser

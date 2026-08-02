@@ -174,6 +174,19 @@ atau artifact bisnis. Full backend 957/957, matriks browser desktop+mobile
 restore exact-SHA, database audit, service health, public smoke, dan production
 visual mobile/desktop lulus.
 
+Kandidat Admin Booking pada source `9963f3de757c0339580c79d96ff565d320722fcb`
+berstatus `IMPLEMENTED_NOT_DEPLOYED`. Before: mobile memadatkan tabel desktop
+dan detail selalu mengisi panel samping. After: mobile memakai kartu triage,
+desktop tetap memakai tabel, detail dibuka satu per satu dalam drawer, filter,
+pagination, tab, close, dan action memenuhi target minimal 44 piksel, serta
+aksi batal/no-show/refund menutup drawer dan mengembalikan fokus ke daftar.
+Payment reconciliation juga tidak lagi memberi false positive pada booking
+paid yang sah setelah memasuki `checked_in` atau `in_session`; webhook invalid,
+unpaid, duplikat, atau ledger belum verified tetap diblokir. Full backend
+958/958 dan matriks browser tiga viewport 415 passed. Dua percobaan release
+berhenti fail-closed sebelum activation tanpa mengubah production; release
+aktif tetap `20260802024941-b74ebb5`.
+
 ## Integrasi
 
 Payment dan notification provider, serta future SagaView handoff.

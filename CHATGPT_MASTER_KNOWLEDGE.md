@@ -122,6 +122,14 @@ satu `Powered by SagaBook` tetap utuh; kontrak booking/payment tidak berubah.
 Full backend 957/957, browser desktop+mobile 298/298, backup/restore exact-SHA,
 service health, dan production smoke mobile/desktop lulus.
 
+Kandidat Admin Booking pada source `9963f3de` berstatus
+`IMPLEMENTED_NOT_DEPLOYED`: mobile memakai kartu triage, desktop tetap tabel,
+detail memakai satu drawer aksesibel, kontrol kritis minimal 44 piksel, dan
+aksi terminal mengembalikan fokus ke daftar. Backend 958/958 dan matriks
+browser mobile/tablet/desktop 415 passed. Dua release attempt berhenti
+fail-closed sebelum activation; production tetap release
+`20260802024941-b74ebb5` dan SagaView tidak berubah.
+
 Keputusan privacy/retention/offboarding SagaBook yang lebih rinci telah
 disetujui owner untuk implementasi dan legal review pada source docs commit
 `295ec863ff6cfc2e79ac98183651f19c15a3b368`. Workflow consent berversi,

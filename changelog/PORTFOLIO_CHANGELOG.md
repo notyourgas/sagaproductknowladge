@@ -10,6 +10,17 @@ workflow, pricing, release, activation, atau blocker.
 Detail tetap berada pada changelog produk; entri docs-only berada di root
 [CHANGELOG](../CHANGELOG.md).
 
+## 2026-08-02 - SagaBook Admin Booking candidate tertahan release gate
+
+- Source `9963f3de` menyelesaikan triage Booking responsif: kartu mobile, tabel
+  desktop, satu drawer detail aksesibel, target kontrol minimal 44 piksel, dan
+  focus return setelah aksi terminal.
+- Backend 958/958 dan browser tiga viewport 415 passed; build/design/dependency
+  gate lulus.
+- Delivery `IMPLEMENTED_NOT_DEPLOYED`. Dua release attempt berhenti
+  fail-closed sebelum activation; SagaBook production tetap
+  `20260802024941-b74ebb5`, SagaView tidak berubah, dan service tetap aktif.
+
 ## 2026-08-02 - AOGTICVITY Fonnte operations candidate
 
 - Source HEAD `8bfabf51b1e88d78a375eac067dad2aba7f0c8f4` menambahkan migration 010,

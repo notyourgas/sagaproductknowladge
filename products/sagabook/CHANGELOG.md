@@ -4,6 +4,24 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-02 - Admin Booking triage candidate belum dipromosikan
+
+- Klasifikasi: `CONFIRMED`; delivery `IMPLEMENTED_NOT_DEPLOYED`.
+- Source `9963f3de757c0339580c79d96ff565d320722fcb` mengubah daftar mobile menjadi
+  kartu operasional, mempertahankan tabel desktop, membuka detail pada drawer
+  aksesibel, dan menutup drawer setelah aksi terminal agar fokus kembali ke
+  daftar dengan status terbaru.
+- Payment reconciliation menerima booking paid yang sudah maju ke
+  `checked_in`/`in_session` hanya bila bukti internal tetap valid; kondisi
+  unpaid, callback invalid/duplikat, atau ledger belum verified tetap
+  fail-closed.
+- Gate lokal: backend 958/958 dengan 10.991 assertions; browser
+  mobile/tablet/desktop 415 passed; build, design audit, dependency audit 0,
+  formatter, dan diff check lulus.
+- Dua percobaan release berhenti sebelum activation dan tidak menghasilkan
+  alasan terstruktur. Production tetap source `b74ebb56`, release
+  `20260802024941-b74ebb5`; SagaView dan seluruh service tetap unchanged/active.
+
 ## 2026-08-02 - CTA cabang storefront tidak lagi menutup katalog
 
 - Status: `PRODUCTION_DEPLOYED`; scope SagaBook yang telah dibuktikan tetap
