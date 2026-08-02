@@ -4,6 +4,31 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-08-03 - Install App jujur dan kontekstual production
+
+- Klasifikasi: `CONFIRMED`.
+- Status: `PRODUCTION_DEPLOYED` dan `PRODUCTION_ACTIVATED`; business readiness
+  mass-scale tetap `NEEDS CONFIRMATION`.
+- Before: tombol `Install SagaView` tetap tampak aktif ketika browser tidak
+  menyediakan prompt, padahal click hanya memberi instruksi manual; CTA utama
+  juga masih 44 px.
+- After: prompt otomatis siap, install manual, dan installed menjadi state
+  terpisah dengan satu action utama, status live, panduan Chrome/Edge atau iOS,
+  recovery cek status, serta jalur installed langsung ke Session. CTA 48 px,
+  keyboard, forced-colors, reduced-motion, mobile/desktop, no-overflow, Axe, dan
+  satu `Powered by SagaView` tervalidasi.
+- Studio source `34519c4dea1d6e7ee40be603e5c4e782bc230b3d`, release
+  `20260802200733-34519c4`; backend tetap source
+  `f26bb57737fc25a0a40d350dc26ca727d30885b2`, release
+  `20260802042221-f26bb57`.
+- Validation: 44 file/156 unit, full E2E 84/84, focused local dan production
+  masing-masing 3/3, audit 0, build/budget, backup/restore evidence yang masih
+  fresh, 13 route 200, satu HSTS/CSP/XFO DENY, service health, Nginx, journal,
+  dan rollback lulus. Batch app-only ini tidak membutuhkan migration.
+- Device/session, foto lokal, payment/provider, tenant isolation, backend,
+  customer flow, output, dan export/print 4R tidak berubah.
+- Rollback Studio `20260802132108-a3eb955`; backend tidak dipromosikan ulang.
+
 ## 2026-08-02 - Consent Dashboard tahan gangguan production
 
 - Klasifikasi: `CONFIRMED`.

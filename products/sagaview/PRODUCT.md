@@ -250,6 +250,22 @@ Kontrak ini sekarang enforced server-side pada runtime production yang aktif.
   `Powered by SagaView` dijaga; backend, customer flow, dan output 4R tidak
   berubah.
 
+## Install App jujur dan kontekstual
+
+`CONFIRMED` - production:
+
+- halaman Install membedakan prompt otomatis siap, install manual, dan aplikasi
+  sudah terpasang; tombol install tidak lagi terlihat aktif ketika browser belum
+  menyediakan prompt;
+- setiap state memiliki satu action utama, status live, dan jalur recovery;
+  mode manual memberi langkah Chrome/Edge atau iOS, sedangkan mode installed
+  kembali langsung ke Session;
+- CTA utama minimal 48 px, keyboard/focus, forced-colors, reduced-motion,
+  mobile 390x844, desktop 1440x900, no-overflow, serta satu
+  `Powered by SagaView` tervalidasi;
+- device trust, session, foto lokal, backend, payment, tenant isolation, output,
+  dan export/print 4R tidak berubah.
+
 ## Status saat ini
 
 - Delivery: `PRODUCTION_DEPLOYED`.
@@ -262,12 +278,12 @@ Kontrak ini sekarang enforced server-side pada runtime production yang aktif.
 - Backend source:
   `f26bb57737fc25a0a40d350dc26ca727d30885b2`.
 - Backend release aktif: `20260802042221-f26bb57`; source backend tidak berubah
-  pada promosi S88.
+  pada promosi S89.
 - Studio source aktif:
-  `a3eb955d5bfa5e17714ecc7d4c09a38fcae0b541`.
-- Studio release aktif: `20260802132108-a3eb955`.
+  `34519c4dea1d6e7ee40be603e5c4e782bc230b3d`.
+- Studio release aktif: `20260802200733-34519c4`.
 - Studio release sebelumnya yang menjadi rollback:
-  `20260802112729-e666d7b`.
+  `20260802132108-a3eb955`.
 - Saga Platform source:
   `a6bb8afbfe2353597ea55329c50829a220bc5d3e`.
 - Saga Platform release: `20260802104018-a6bb8af`.
@@ -295,10 +311,10 @@ Kontrak ini sekarang enforced server-side pada runtime production yang aktif.
 ### Release validation
 
 - Backend: 908/908 test, 10.629 assertions.
-- Studio S88: 156 unit test, 81/81 E2E default-parallel, dan 3/3 focused Consent;
+- Studio S89: 156 unit test, 84/84 E2E default-parallel, dan 3/3 focused Install;
   regression mencakup frame/customer/output/import 50/200/500, device transfer,
   trial, privacy handoff, dan accessibility.
-- Production browser Consent: 3/3; sepuluh Studio/customer/public route smoke
+- Production browser Install: 3/3; tiga belas Studio/customer/public route smoke
   200 dengan security header konsisten.
 - Import 50/200/500, accessibility, responsive mobile–desktop, forced-colors,
   reduced-motion, dependency audit, dan bundle budget lulus.
@@ -310,7 +326,7 @@ Kontrak ini sekarang enforced server-side pada runtime production yang aktif.
 ### Rollback
 
 - Backend: `20260801101515-f26bb57`.
-- Studio: `20260802112729-e666d7b`.
+- Studio: `20260802132108-a3eb955`.
 - Backup release dan konfigurasi Nginx sebelumnya dipertahankan.
 
 ## Belum boleh diklaim

@@ -10,6 +10,22 @@ workflow, pricing, release, activation, atau blocker.
 Detail tetap berada pada changelog produk; entri docs-only berada di root
 [CHANGELOG](../CHANGELOG.md).
 
+## 2026-08-03 - SagaView Install App jujur production
+
+- `CONFIRMED`: halaman Install kini membedakan prompt otomatis, manual, dan
+  installed; setiap state memiliki satu action utama, status live, recovery,
+  panduan browser, dan jalur installed ke Session. CTA 48 px dan aksesibilitas
+  mobile/desktop, forced-colors, reduced-motion, no-overflow, serta satu
+  `Powered by SagaView` lulus.
+- Source Studio `34519c4dea1d6e7ee40be603e5c4e782bc230b3d` aktif pada release
+  `20260802200733-34519c4`; backend tetap `20260802042221-f26bb57`; rollback
+  Studio `20260802132108-a3eb955` dipertahankan.
+- 156 unit, 84/84 E2E, focused local dan production 3/3, dependency audit 0,
+  build/budget, backup/restore evidence fresh, 13 route/header smoke, service,
+  Nginx, journal, dan rollback lulus. Migration tidak diperlukan.
+- Device/session, foto lokal, payment/provider, tenant isolation, customer flow,
+  output 4R, dan business-readiness claim tidak berubah.
+
 ## 2026-08-03 - AOGTICVITY announcement dan readiness production
 
 - `CONFIRMED`: announcement publik/operasional sekarang persisten, admin-only,

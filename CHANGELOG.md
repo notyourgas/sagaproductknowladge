@@ -12,6 +12,29 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-03
 
+### SagaView Install App jujur production release
+
+- Ringkasan: mengganti CTA install yang menyesatkan saat prompt browser tidak
+  tersedia menjadi workflow prompt-ready/manual/installed dengan status live,
+  panduan browser, recovery, dan jalur kembali ke Session.
+- Alasan: operator harus mengetahui tindakan yang benar tanpa menekan tombol
+  install palsu atau menebak status PWA.
+- Produk/area terdampak: SagaView Studio Console Install App, responsive UX,
+  accessibility, release, rollback, dan knowledge runtime.
+- Klasifikasi: `CONFIRMED`; sumber adalah runtime source
+  `34519c4dea1d6e7ee40be603e5c4e782bc230b3d`, release
+  `20260802200733-34519c4`, status `PRODUCTION_DEPLOYED` dan
+  `PRODUCTION_ACTIVATED`.
+- Production berubah: ya, hanya UI Install. Full E2E 84/84, focused local/live
+  3/3, dependency audit 0, build/budget, backup/restore evidence fresh, 13
+  route/header/service/journal smoke, dan rollback lulus. Backend, SagaBook,
+  device/session, foto lokal, payment/provider, tenant isolation, output 4R,
+  dan business readiness tidak berubah.
+- File knowledge: `products/sagaview/PRODUCT.md`, `DOSSIER.md`, `CHANGELOG.md`,
+  master knowledge, portfolio changelog, root changelog, dan sync status.
+- Blocker/next action: Founding Studio Pilot dan support observation tetap
+  diperlukan sebelum klaim `BUSINESS_READY` mass-scale.
+
 ### AOGTICVITY announcement dan Day-H readiness production
 
 - Ringkasan: mengganti announcement browser-only dengan workflow MySQL
