@@ -12,6 +12,23 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-02
 
+### SagaBook Maps fallback production
+
+- Ringkasan: menutup gap jalur Maps pada storefront tenant dan Booking Center
+  ketika cabang memiliki alamat tetapi belum mempunyai URL Maps khusus.
+- Produk/area terdampak: SagaBook storefront milik studio, detail booking,
+  URL safety, touch target, release, rollback, dan knowledge gap.
+- Klasifikasi: `CONFIRMED`; source
+  `76defd19eb7dad9fe12fa0f52609ec6dda6e62e2` `PRODUCTION_DEPLOYED` pada
+  release `20260802013852-76defd1`.
+- Production berubah: ya; exact runtime, manifest, database audit 100, public
+  smoke, service health, dan rollback terverifikasi.
+- Gate: full backend 957/957 dengan 10.989 assertions, matriks browser
+  desktop+mobile 298/298, build/audit, encrypted backup, disposable restore,
+  serta visual production 390x844 dan 1440x900 lulus.
+- Residual: URL Maps presisi tetap opsional; fallback menggunakan nama/alamat
+  dan tidak mengubah data tenant.
+
 ### SagaBook auth surface production
 
 - Ringkasan: mempromosikan auth/fallback hardening setelah matriks browser

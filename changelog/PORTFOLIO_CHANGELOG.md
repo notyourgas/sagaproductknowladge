@@ -10,6 +10,20 @@ workflow, pricing, release, activation, atau blocker.
 Detail tetap berada pada changelog produk; entri docs-only berada di root
 [CHANGELOG](../CHANGELOG.md).
 
+## 2026-08-02 - SagaBook Maps fallback production
+
+- Source `76defd19eb7dad9fe12fa0f52609ec6dda6e62e2` aktif sebagai release
+  `20260802013852-76defd1` dengan rollback `20260802002923-d9bbbac`.
+- Storefront tenant dan Booking Center sekarang menyediakan pencarian Google
+  Maps dari nama/alamat bila URL khusus belum tersedia; URL eksplisit dibatasi
+  ke host Google HTTPS dan kontrol kritis minimal 44 piksel.
+- Full backend 957/957, matriks browser desktop+mobile 298/298, backup/restore
+  exact-SHA, manifest, database audit, service health, public smoke, dan visual
+  production mobile/desktop lulus.
+- Delivery `PRODUCTION_DEPLOYED`; activation scope terkait
+  `PRODUCTION_ACTIVATED`; business readiness tetap `NEEDS CONFIRMATION` sampai
+  pilot studio nyata dan legal/tax finalization selesai.
+
 ## 2026-08-02 - SagaBook UI/UX dan auth hardening production
 
 - UI/UX operasional, tenant booking storefront, branding aplikasi, dan release

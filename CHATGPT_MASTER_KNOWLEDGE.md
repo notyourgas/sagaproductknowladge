@@ -103,16 +103,15 @@ release `20260801213514-8edd762`; manifest, public smoke, database audit,
 service health, dan rollback lulus. Ini adalah template website booking milik
 studio, bukan landing page marketing SagaBook.
 
-Hardening auth dan fallback berikutnya pada source `d9bbbac3` berstatus
-`PRODUCTION_DEPLOYED` sebagai release `20260802002923-d9bbbac`: login, signup,
-dan password recovery memiliki tepat
-satu `Powered by SagaBook`, target sentuh kritis 44 piksel, fokus dekoratif
-ditutup, metode pemulihan/CTA fallback diperbesar, dan aksesibilitas
-forced-colors/reduced-motion diperkuat. Exact-SHA backup/restore, full backend
-957/957, matriks browser desktop+mobile 296/296, production auth smoke 6/6,
-manifest, database audit 100, public HTTP smoke, service health, dan rollback
-lulus. Sebagian data cabang storefront demo production belum memiliki URL
-Google Maps dan tetap memerlukan kelengkapan data owner.
+Hardening auth pada source `d9bbbac3` aktif sebagai release
+`20260802002923-d9bbbac`. Release berikutnya, source `76defd19`, aktif sebagai
+`20260802013852-76defd1`: storefront tenant dan Booking Center tetap memberi
+pencarian Google Maps berbasis nama/alamat ketika URL khusus belum tersedia;
+URL eksplisit dibatasi ke host Google HTTPS dan kontrol kritis minimal 44
+piksel. Full backend 957/957, matriks browser desktop+mobile 298/298,
+backup/restore exact-SHA, manifest, database audit 100, public smoke, service
+health, rollback, dan visual production mobile/desktop lulus. URL Maps presisi
+dari data owner tetap opsional dan tidak disimpan di knowledge publik.
 
 Keputusan privacy/retention/offboarding SagaBook yang lebih rinci telah
 disetujui owner untuk implementasi dan legal review pada source docs commit

@@ -4,6 +4,24 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-02 - Maps fallback storefront dan Booking Center production
+
+- Status: `PRODUCTION_DEPLOYED`; scope SagaBook yang telah dibuktikan tetap
+  `PRODUCTION_ACTIVATED`.
+- Source `76defd19eb7dad9fe12fa0f52609ec6dda6e62e2` aktif sebagai release
+  `20260802013852-76defd1`; rollback `20260802002923-d9bbbac` dipertahankan.
+- Before: cabang yang mempunyai alamat tetapi belum memiliki URL Maps khusus
+  tidak selalu memberi jalur Maps pada storefront dan detail booking.
+- After: customer mendapat pencarian Google Maps berbasis nama dan alamat;
+  URL eksplisit hanya diterima dari host Google HTTPS. Link Maps dan kontrol
+  salin kode memenuhi target sentuh minimal 44 piksel.
+- Gate: full backend 957/957 dengan 10.989 assertions, browser desktop+mobile
+  298/298, typecheck, build, dependency audit 0, encrypted backup, disposable
+  restore exact-SHA, manifest, database audit 100, service health, public
+  smoke, serta production visual 390x844 dan 1440x900 lulus.
+- URL Maps presisi dari data owner tetap opsional; fallback tidak mengarang
+  koordinat dan tidak mengubah data tenant.
+
 ## 2026-08-02 - Auth branding dan touch safety production
 
 - Status: `PRODUCTION_DEPLOYED`; scope activation SagaBook yang telah

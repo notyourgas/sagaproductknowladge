@@ -65,10 +65,12 @@ ketika keputusan atau release baru menutup gap.
   public HTTP smoke, production auth browser 6/6, matriks browser
   desktop+mobile 296/296, database audit, service health, backup/restore, dan
   rollback lulus.
-- `NEEDS CONFIRMATION`: sebagian cabang aktif pada storefront demo production
-  belum memiliki URL Google Maps. Owner data perlu memberikan atau
-  mengonfirmasi lokasi yang benar; knowledge publik tidak menyimpan detail
-  tenant maupun URL lokasi tersebut.
+- `CONFIRMED`: gap jalur customer ketika URL Maps khusus belum tersedia telah
+  ditutup pada release `20260802013852-76defd1` melalui pencarian Google Maps
+  berbasis nama/alamat tanpa mengubah data tenant atau mengarang koordinat.
+- `NEEDS CONFIRMATION`: URL Maps presisi tetap opsional untuk cabang yang ingin
+  deep link spesifik; detail tenant dan URL lokasi tidak disimpan di knowledge
+  publik.
 
 ### SagaView
 

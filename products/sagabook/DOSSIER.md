@@ -151,6 +151,16 @@ Matriks browser desktop+mobile lulus 296/296 melalui empat shard deterministik;
 production auth smoke 6/6, manifest, database audit 100, public HTTP smoke,
 service health, dan rollback gate juga lulus.
 
+Perbaikan Maps storefront dan Booking Center pada source
+`76defd19eb7dad9fe12fa0f52609ec6dda6e62e2` berstatus
+`PRODUCTION_DEPLOYED` sebagai release `20260802013852-76defd1`. Bila cabang
+memiliki alamat tetapi belum memiliki URL Maps khusus, customer tetap mendapat
+link pencarian Google Maps berbasis nama dan alamat; URL eksplisit dibatasi ke
+host Google HTTPS. Kontrol Maps dan salin kode minimal 44 piksel. Full backend
+957/957, browser desktop+mobile 298/298, backup/restore exact-SHA, manifest,
+database audit, service health, public smoke, dan pemeriksaan production mobile
+serta desktop lulus. URL Maps presisi dari data owner tetap opsional.
+
 ## Integrasi
 
 Payment dan notification provider, serta future SagaView handoff.

@@ -156,8 +156,8 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
 
 - Customer Booking Center aktif di production.
 - Source production terbaru pada cut-off: commit
-  `d9bbbac3d5960013c6df267ff9ae2534b883710d`.
-- Release production tercatat: `20260802002923-d9bbbac`.
+  `76defd19eb7dad9fe12fa0f52609ec6dda6e62e2`.
+- Release production tercatat: `20260802013852-76defd1`.
 - Storefront, admin, dan super-admin merespons public smoke.
 - Tenant Onboarding dan First Booking Activation aktif melalui Activation
   Center yang tenant-scoped dan server-authoritative.
@@ -200,6 +200,17 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
   matriks browser desktop+mobile 296/296 melalui empat shard deterministik,
   production auth smoke 6/6, manifest, database audit 100, service health,
   public HTTP smoke, dan rollback gate lulus.
+- Storefront dan Booking Center terbaru pada source
+  `76defd19eb7dad9fe12fa0f52609ec6dda6e62e2` berstatus
+  `PRODUCTION_DEPLOYED` sebagai release `20260802013852-76defd1`. Cabang yang
+  memiliki alamat tetapi belum mempunyai URL Maps khusus tetap menyediakan
+  pencarian Google Maps berbasis nama dan alamat. URL Maps eksplisit hanya
+  diterima dari host Google HTTPS; link Maps dan kontrol salin kode memenuhi
+  target sentuh minimal 44 piksel. Full backend 957/957, matriks browser
+  desktop+mobile 298/298, backup terenkripsi, disposable restore exact-SHA,
+  manifest, database audit 100, service health, public smoke, serta verifikasi
+  production 390x844 dan 1440x900 lulus. URL lokasi presisi dari owner tetap
+  opsional dan lebih diutamakan bila tersedia.
 - Candidate signup tanpa approval owner dan trial kanonik 7 hari sudah
   `LOCAL_VALIDATED` pada source
   `dcb5a3f3dc1e3e7b5c0c067e8968ca341ebf1c27`. Production tetap memakai
