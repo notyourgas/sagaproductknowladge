@@ -12,24 +12,23 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-02T17:49:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-02T18:35:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `b2d62e7` |
-| Informasi terakhir disinkronkan | SagaBook source `a6bb8afb` melengkapi signature Pricing/Terms/Privacy dan deduplikasi `X-Frame-Options` sebagai release `20260802104018-a6bb8af`; delivery `PRODUCTION_DEPLOYED`, SagaView tidak berubah. |
+| Baseline sebelum pembaruan | `3b0a9e3` |
+| Informasi terakhir disinkronkan | SagaView Studio source `e666d7b0` membuat action General kontekstual dan bebas overflow sebagai release `20260802112729-e666d7b`; backend tetap `20260802042221-f26bb57`, delivery `PRODUCTION_DEPLOYED` dan `PRODUCTION_ACTIVATED`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru |
 | Konflik | Tidak ada; local `main` sama dengan `origin/main` sebelum edit. |
-| Error | Tidak ada error knowledge; gap signature public dan header duplikat SagaBook telah ditutup. |
+| Error | Tidak ada error knowledge; satu false start full E2E ditutup dengan pemulihan accessible name sebelum rerun 78/78. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/sagabook/PRODUCT.md`
-- `products/sagabook/DOSSIER.md`
-- `products/sagabook/CHANGELOG.md`
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/DOSSIER.md`
+- `products/sagaview/CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHANGELOG.md`
-- `GAPS.md`
 - `SYNC_STATUS.md`
 
 ## Item menunggu konfirmasi

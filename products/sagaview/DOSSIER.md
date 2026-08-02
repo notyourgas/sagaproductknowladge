@@ -7,7 +7,7 @@ SagaView berdasarkan runtime production aktif.
 
 ## Konteks dan status bukti
 
-- Updated: 1 Agustus 2026
+- Updated: 2 Agustus 2026
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED`
 - Business readiness: `NEEDS CONFIRMATION` untuk penjualan massal
@@ -127,12 +127,18 @@ jam, 10 GB aset frame cloud, laporan lanjutan, activity log, dan priority
 support. Session/foto dipasarkan unlimited dengan fair-use; foto tetap lokal.
 
 `CONFIRMED` — kontrak ini aktif di production. Source Studio aktif adalah
-`47aec0d7f58b04c7f63ad9ac4be4141f649a14e7`, release
-`20260802042221-47aec0d`; rollback Studio adalah
-`20260801101538-a130ee5`. Output Settings hanya menampilkan action simpan saat
+`e666d7b0d7614741b75fdd421e341dbf541bd0cf`, release
+`20260802112729-e666d7b`; rollback Studio adalah
+`20260802042221-47aec0d`. Output Settings hanya menampilkan action simpan saat
 dirty, tidak menutup konten mobile, mempertahankan action sticky desktop, dan
 menjaga status `Belum disimpan` tetap jujur. Kontrak folder, device, foto lokal,
 payment, dan output PNG 4R tidak berubah.
+
+General Settings juga memakai action simpan kontekstual. Action hilang ketika
+form bersih, mengikuti konten tanpa horizontal overflow pada mobile 390x844,
+dan tetap sticky pada desktop. Accessible name, target 44 px, forced-colors,
+reduced-motion, paket sesi, promo, kategori/harga, dan workflow operasional
+dipertahankan.
 
 ## Kompetitor
 

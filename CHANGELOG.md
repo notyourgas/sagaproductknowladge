@@ -12,6 +12,21 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-02
 
+### SagaView General Settings responsif production
+
+- Ringkasan: membuat action Reset/Simpan General kontekstual, menghapus
+  horizontal overflow mobile, dan mempertahankan sticky desktop serta kontrak
+  navigasi aksesibel.
+- Produk/area terdampak: SagaView Studio Console General, responsive layout,
+  save feedback, accessibility, release, rollback, dan knowledge runtime.
+- Klasifikasi: `CONFIRMED`; source
+  `e666d7b0d7614741b75fdd421e341dbf541bd0cf`, release
+  `20260802112729-e666d7b`, status `PRODUCTION_DEPLOYED` dan
+  `PRODUCTION_ACTIVATED`.
+- Production berubah: ya, hanya UI General. Full E2E 78/78, focused production
+  2/2, gate 6/6, backup/restore, route/header/service/journal, dan rollback
+  lulus; backend, SagaBook, payment/provider, serta output 4R tidak berubah.
+
 ### SagaBook public branding dan frame-header hygiene production release
 
 - Ringkasan: melengkapi signature produk pada Pricing/Terms/Privacy dan

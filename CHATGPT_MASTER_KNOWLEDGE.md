@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 1 Agustus 2026
+Evidence cut-off: 2 Agustus 2026
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -164,8 +164,8 @@ plan-limited, tanpa auto-charge.
 Update terbaru: backend/Owner tetap memakai source
 `f26bb57737fc25a0a40d350dc26ca727d30885b2`, release
 `20260802042221-f26bb57`, sedangkan Studio aktif memakai source
-`47aec0d7f58b04c7f63ad9ac4be4141f649a14e7`, release
-`20260802042221-47aec0d`. Owner Console lintas browser,
+`e666d7b0d7614741b75fdd421e341dbf541bd0cf`, release
+`20260802112729-e666d7b`. Owner Console lintas browser,
 Studio exclusive lease, output 4R, session completion/privacy handoff,
 trial/subscription, serta public Home/Pricing/Help/Contact/Privacy/Terms/Legal
 aktif. Limit device/frame/preset, quota aset frame cloud, fair-use,
@@ -191,6 +191,11 @@ Output Settings kini hanya menampilkan Reset/Simpan saat dirty, menaruh action
 setelah konten pada mobile dan sticky pada desktop, memakai target 44 px, serta
 memprioritaskan status `Belum disimpan` ketika operator mengedit ulang. Folder,
 device/session, payment, privacy foto, dan kontrak export/print 4R tidak berubah.
+General Settings kini memakai action Reset/Simpan kontekstual: bersih tidak
+memenuhi workspace, dirty mengikuti konten tanpa overflow pada mobile 390 px,
+dan desktop tetap sticky. Accessible name lama, 44 px, forced-colors,
+reduced-motion, paket/promo/harga, local-first, payment, privacy, serta 4R tetap
+terjaga.
 
 Candidate Saga Platform `dcb5a3f3` menyiapkan signup SagaView auto-trial 7 hari
 tanpa approval owner/email verification. Login tetap menunggu provisioning

@@ -4,6 +4,29 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-08-02 - General Settings responsif production
+
+- Klasifikasi: `CONFIRMED`.
+- Status: `PRODUCTION_DEPLOYED` dan `PRODUCTION_ACTIVATED`.
+- Before: action bar General selalu sticky, memakai negative margin desktop
+  pada mobile, membuat dokumen 406 px di viewport 390 px, dan menutup sebagian
+  workspace walau form bersih.
+- After: action Reset/Simpan hanya muncul ketika dirty/feedback, mengikuti
+  konten pada mobile tanpa overflow, tetap sticky di desktop, serta menjaga
+  accessible name lama, target 44 px, forced-colors, reduced-motion, dan satu
+  `Powered by SagaView` yang terlihat.
+- Studio source `e666d7b0d7614741b75fdd421e341dbf541bd0cf`, release
+  `20260802112729-e666d7b`; backend tetap source
+  `f26bb57737fc25a0a40d350dc26ca727d30885b2`, release
+  `20260802042221-f26bb57`.
+- Validation: 44 file/156 unit, full default-parallel E2E 78/78, focused
+  General production 2/2, build/budget, dependency audit 0, gate 6/6, fresh
+  encrypted backup/offsite round-trip/disposable restore 146 tabel SagaView,
+  delapan route 200, header security, tujuh service, dan journal lulus.
+- Release tidak mengubah paket sesi, promo, kategori/harga, local-first,
+  device/session, payment/provider, privacy foto, atau export/print 4R.
+- Rollback Studio `20260802042221-47aec0d`; backend tidak dipromosikan ulang.
+
 ## 2026-08-02 - Output Settings responsif production
 
 - Klasifikasi: `CONFIRMED`.

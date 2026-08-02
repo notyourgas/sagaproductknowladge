@@ -10,6 +10,20 @@ workflow, pricing, release, activation, atau blocker.
 Detail tetap berada pada changelog produk; entri docs-only berada di root
 [CHANGELOG](../CHANGELOG.md).
 
+## 2026-08-02 - SagaView General Settings responsif production
+
+- `CONFIRMED`: action Reset/Simpan General kini kontekstual, tidak menyebabkan
+  overflow 406 px pada viewport 390 px, mengikuti konten mobile, dan tetap
+  sticky pada desktop dengan target 44 px serta accessible name yang stabil.
+- Source Studio `e666d7b0d7614741b75fdd421e341dbf541bd0cf` aktif pada release
+  `20260802112729-e666d7b`; backend tetap `20260802042221-f26bb57`.
+- 156 unit, 78/78 E2E default, 2/2 production focused, dependency audit 0,
+  gate 6/6, backup/offsite/disposable restore, delapan route/header smoke,
+  tujuh service, journal, dan rollback lulus.
+- Workflow, paket, promo, kategori/harga, payment/provider, privacy, output 4R,
+  dan SagaBook tidak berubah. Business readiness mass-scale tetap
+  `NEEDS CONFIRMATION`.
+
 ## 2026-08-02 - SagaBook public branding safety production release
 
 - Source `a6bb8afb` aktif sebagai release `20260802104018-a6bb8af`.
