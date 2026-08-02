@@ -76,18 +76,16 @@ Public delivery saat ini: `https://olimpiade-kemerdekaan.vercel.app`.
 - Public registration memakai validasi server, consent version, anti-bot,
   anonymous rate limit, idempotent receipt, transaksi MySQL, dan audit. Admin
   dapat membaca serta memverifikasi pendaftaran dari authenticated desk.
-- Source `127ef92b3efe38d707fba7c0dd861a1665953de3` menambahkan kandidat akses
-  peserta passwordless: transactional WhatsApp outbox, provisioning role
-  `player`, Better Auth magic link single-use 30 menit, hash-only token ledger,
-  adapter Fonnte, session HttpOnly, revocation, dan status operator. Kandidat
-  ini `IMPLEMENTED_NOT_DEPLOYED`; migration 009, provider, serta UAT runtime
-  belum dijalankan.
-- Source HEAD `8bfabf51b1e88d78a375eac067dad2aba7f0c8f4` melengkapi kandidat tersebut
-  dengan migration 010, authenticated/idempotent Fonnte status webhook,
-  truthful queued/sent/failed mapping, retry operator 60 detik maksimum lima
-  percobaan, stale-worker recovery, redacted operations console, dan provider
-  preflight. Migration 001–010 serta lifecycle SQL lulus pada database
-  disposable MySQL 8.4 Hostinger; runtime aktif tetap tidak berubah.
+- Source release `6b4b6feca16dc2d49b909f9301227e5078dfaf60` membawa akses peserta
+  passwordless ke runtime public: transactional WhatsApp outbox, provisioning
+  role `player`, Better Auth magic link single-use 30 menit, hash-only token
+  ledger, adapter Fonnte, session HttpOnly, revocation, status webhook,
+  retry/recovery operator, dan redacted operations console.
+- Hostinger release `20260802T125353Z`, Vercel production
+  `dpl_3zhzGA9oTp7U2QkKVyekJPZTxkz2`, serta MySQL migration 009–010 aktif.
+  Fonnte device preflight dan satu pengiriman kanal ke penerima UAT lulus.
+  Provider status webhook dan approval → magic-link → session → reuse/revoke
+  UAT belum lulus, sehingga WhatsApp login belum boleh diklaim production-ready.
 - SQLite hanya fast test adapter.
 - Event-master memiliki dry-run, validation, atomic publish, versioning, dan
   audit. Durasi jadwal bersifat provisional dan dapat disunting admin.
@@ -123,14 +121,14 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:
 - Typecheck, test, build, security, accessibility, responsive, migration, dan
   rollback telah menjadi gate.
 - Roster/check-in/result rehearsal lintas perangkat, target custom domains,
-  aktivasi WhatsApp magic-link/recovery provider, serta UAT fisik hari-H belum
-  selesai.
+  aktivasi provider status webhook, WhatsApp magic-link/session UAT, serta UAT
+  fisik hari-H belum selesai.
 
 ## Belum boleh diklaim
 
-- Adapter Fonnte, webhook/retry/recovery, dan WhatsApp magic-link tervalidasi
-  lokal/disposable; provider belum aktif dan UI tidak boleh mengklaim pesan
-  terkirim atau link login production.
+- Fonnte runtime dan pengiriman kanal UAT sudah aktif, tetapi UI tidak boleh
+  mengklaim seluruh flow login WhatsApp production-ready sebelum webhook status
+  dan two-device magic-link/session UAT lulus.
 - Local state non-registrasi bukan persistence multi-device.
 - Auth dan registrasi sudah terbukti, tetapi belum membuktikan seluruh
   event-day journey business-ready sebelum operations rehearsal.

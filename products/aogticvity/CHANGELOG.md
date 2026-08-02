@@ -8,6 +8,22 @@ Mencatat perubahan material AOGTICVITY/17an/Olimpiade.
 
 Nama lama dipertahankan sebagai provenance; status runtime harus eksplisit.
 
+## 2026-08-02 - Fonnte runtime dan WhatsApp channel UAT production
+
+- `CONFIRMED`: source release
+  `6b4b6feca16dc2d49b909f9301227e5078dfaf60` aktif pada Hostinger release
+  `20260802T125353Z` dan Vercel production
+  `dpl_3zhzGA9oTp7U2QkKVyekJPZTxkz2`.
+- MySQL migration `009_whatsapp_magic_link` dan `010_fonnte_operations` aktif
+  setelah backup terverifikasi; exact-source provenance, health, routing,
+  provider preflight, public routes, dan invalid-webhook-secret 401 lulus.
+- Satu pengiriman kanal Fonnte ke penerima UAT berhasil diterima. Ini membuktikan
+  channel delivery, bukan full login WhatsApp.
+- Runtime dispatch aktif. Provider status webhook, approval ulang record legacy,
+  single-use link/session/reuse/revoke UAT, dan credential admin vault tetap
+  menjadi blocker. Delivery `PRODUCTION_DEPLOYED`; business readiness tetap
+  `BLOCKED`.
+
 ## 2026-08-02 - Kandidat Fonnte operations dan recovery
 
 - `CONFIRMED`: source HEAD

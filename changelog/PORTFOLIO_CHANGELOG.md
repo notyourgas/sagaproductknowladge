@@ -57,6 +57,17 @@ Detail tetap berada pada changelog produk; entri docs-only berada di root
   fail-closed sebelum activation; SagaBook production tetap
   `20260802024941-b74ebb5`, SagaView tidak berubah, dan service tetap aktif.
 
+## 2026-08-02 - AOGTICVITY Fonnte runtime dan channel UAT production
+
+- Source `6b4b6feca16dc2d49b909f9301227e5078dfaf60` aktif pada Hostinger release
+  `20260802T125353Z` dan Vercel production
+  `dpl_3zhzGA9oTp7U2QkKVyekJPZTxkz2`; migration 009–010 aktif setelah backup.
+- Device preflight, pengiriman kanal UAT, public route/health, proxy, dan
+  invalid-webhook-secret 401 lulus. Fonnte dispatch runtime aktif.
+- Full approval → magic-link → HttpOnly session → reuse/revoke UAT dan provider
+  status webhook masih tertunda. Delivery `PRODUCTION_DEPLOYED`; WhatsApp login
+  belum boleh diklaim production-ready dan business readiness tetap `BLOCKED`.
+
 ## 2026-08-02 - AOGTICVITY Fonnte operations candidate
 
 - Source HEAD `8bfabf51b1e88d78a375eac067dad2aba7f0c8f4` menambahkan migration 010,

@@ -157,12 +157,14 @@ ketika keputusan atau release baru menutup gap.
 - Admin password claim dan public registration MySQL sudah
   `PRODUCTION_ACTIVATED`; dataset awal kosong dan participant demo tidak lagi
   menjadi sumber operasional.
+- Fonnte runtime, migration 009–010, dan channel delivery UAT sudah
+  `PRODUCTION_DEPLOYED`; provider status webhook serta full
+  approval/magic-link/session/reuse/revoke UAT masih `NEEDS CONFIRMATION`.
 - `NEEDS CONFIRMATION`: model bisnis produk (event internal, jasa per event, atau
   SaaS).
 - `NEEDS CONFIRMATION`: roster/check-in/result multi-device operations UAT,
   authoritative frontend activation untuk surface non-registration,
-  recovery/notification provider, target custom domain, dan physical event
-  rehearsal.
+  recovery/session flow, target custom domain, dan physical event rehearsal.
 - `NEEDS CONFIRMATION`: nama final Tim 7/Tim 8, durasi lomba, serta keputusan
   master recap yang masih provisional/open.
 

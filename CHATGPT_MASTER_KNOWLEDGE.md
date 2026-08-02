@@ -256,17 +256,14 @@ persistence dan audit. Direct BFF fail-closed dan MySQL tetap loopback-only.
 Public registration juga aktif pada MySQL dengan validation, consent,
 idempotency, rate limit, receipt, audit, dan admin verification desk; participant
 fixture serta localStorage registration telah dihapus.
-Source `127ef92b3efe38d707fba7c0dd861a1665953de3` menambahkan kandidat akses
-peserta via WhatsApp tanpa kredensial; outbox transaksional, provisioning role
-`player`, adapter Fonnte fail-closed, magic link single-use 30 menit, hash-only
-ledger, session HttpOnly, revocation, audit, dan status operator. Kandidat ini
-`IMPLEMENTED_NOT_DEPLOYED`; production, provider, dan migration runtime belum
-berubah.
-Source HEAD `8bfabf51b1e88d78a375eac067dad2aba7f0c8f4` melengkapi kandidat dengan
-migration 010, authenticated/idempotent Fonnte status webhook, truthful
-queued/sent/failed mapping, operator retry/recovery, redacted queue console,
-dan provider preflight. Migration/lifecycle SQL lulus pada disposable MySQL
-8.4 Hostinger, tetapi runtime aktif tetap tidak berubah.
+Source release `6b4b6feca16dc2d49b909f9301227e5078dfaf60` mengaktifkan runtime akses
+peserta via WhatsApp: outbox transaksional, provisioning role `player`, adapter
+Fonnte fail-closed, magic link single-use 30 menit, hash-only ledger, session
+HttpOnly, revocation, audit, status webhook, operator retry/recovery, dan
+redacted queue console. Hostinger release `20260802T125353Z`, Vercel production
+`dpl_3zhzGA9oTp7U2QkKVyekJPZTxkz2`, dan migration 009–010 aktif. Device
+preflight serta satu pengiriman channel UAT lulus; provider status webhook dan
+full approval/magic-link/session UAT belum lulus.
 Ini adalah nama terbaru project 17an/Olimpiade Kemerdekaan.
 
 Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:
@@ -275,8 +272,9 @@ Business readiness: `BLOCKED`. Public delivery aktif di
 `https://olimpiade-kemerdekaan.vercel.app`; target custom domain belum
 diaktifkan. Real credential login dan database-backed session sudah terbukti;
 admin password claim dan registration UAT sudah selesai. Roster/check-in/result
-rehearsal, aktivasi WhatsApp provider/recovery, dan physical multi-device UAT
-belum selesai. Sebagian non-registration UI masih memakai bundled master/local state.
+rehearsal, provider status webhook, WhatsApp magic-link/session UAT, dan
+physical multi-device UAT belum selesai. Sebagian non-registration UI masih
+memakai bundled master/local state.
 Sejak release 1 Agustus 2026, surface
 tersebut memakai festival UI/UX mobile 430 px dengan Plus Jakarta Sans,
 Feather-style icons, Motion for React, restrained celebration, dan
@@ -333,8 +331,9 @@ Delivery: `PLANNED`. Belum production-activated.
 - Jangan sebut COYABAG siap transaksi penuh.
 - Jangan sebut seluruh AOGTICVITY production multi-device; auth dan public
   registration saja sudah production-activated.
-- Jangan klaim WhatsApp login/Fonnte AOGTICVITY aktif; source baru masih
-  `IMPLEMENTED_NOT_DEPLOYED` dan belum melewati migration/provider/UAT runtime.
+- Jangan klaim seluruh login WhatsApp AOGTICVITY production-ready. Fonnte
+  runtime dan channel UAT sudah aktif, tetapi status webhook serta
+  magic-link/session/reuse/revoke UAT belum lulus.
 - Jangan klaim Gmail sync, Google Sheets, atau PDF server-side SagaFin sebagai
   fitur aktif bila bukti terbaru belum berubah.
 - Jangan menyebut dummy/fixture/local log sebagai bukti provider.

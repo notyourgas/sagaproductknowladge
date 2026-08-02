@@ -65,6 +65,20 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 - Production berubah: tidak. Dua attempt berhenti sebelum activation; release
   aktif tetap `20260802024941-b74ebb5` dan SagaView tetap unchanged.
 
+### AOGTICVITY Fonnte runtime dan channel UAT production
+
+- Ringkasan: mengaktifkan migration 009–010, runtime dispatch Fonnte, dan
+  membuktikan satu pengiriman channel UAT pada public Vercel delivery.
+- Produk/area terdampak: AOGTICVITY registration, approval, player identity,
+  WhatsApp outbox, retry/recovery, Hostinger, MySQL, Vercel, release, dan
+  rollback.
+- Klasifikasi: `CONFIRMED`; source release
+  `6b4b6feca16dc2d49b909f9301227e5078dfaf60`, Hostinger
+  `20260802T125353Z`, Vercel `dpl_3zhzGA9oTp7U2QkKVyekJPZTxkz2`.
+- Production berubah: ya. Runtime/provider channel aktif, tetapi status webhook
+  dan full magic-link/session UAT belum selesai; business readiness tetap
+  `BLOCKED`.
+
 ### AOGTICVITY Fonnte operations candidate
 
 - Ringkasan: melengkapi kandidat akses WhatsApp dengan webhook status,
