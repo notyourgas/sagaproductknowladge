@@ -113,6 +113,15 @@ backup/restore exact-SHA, manifest, database audit 100, public smoke, service
 health, rollback, dan visual production mobile/desktop lulus. URL Maps presisi
 dari data owner tetap opsional dan tidak disimpan di knowledge publik.
 
+Refinement storefront tenant pada source `b74ebb56` aktif sebagai release
+`20260802024941-b74ebb5`. Pada langkah Lokasi, CTA tidak lagi tampil disabled
+dan menutup katalog sebelum cabang dipilih. Setelah customer memilih cabang,
+tepat satu CTA aktif 48 piksel muncul dan navigasi ke langkah Paket lulus.
+Kelima preset, Maps/WhatsApp, forced-colors, reduced-motion, no-overflow, dan
+satu `Powered by SagaBook` tetap utuh; kontrak booking/payment tidak berubah.
+Full backend 957/957, browser desktop+mobile 298/298, backup/restore exact-SHA,
+service health, dan production smoke mobile/desktop lulus.
+
 Keputusan privacy/retention/offboarding SagaBook yang lebih rinci telah
 disetujui owner untuk implementasi dan legal review pada source docs commit
 `295ec863ff6cfc2e79ac98183651f19c15a3b368`. Workflow consent berversi,

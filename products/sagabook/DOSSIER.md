@@ -161,6 +161,19 @@ host Google HTTPS. Kontrol Maps dan salin kode minimal 44 piksel. Full backend
 database audit, service health, public smoke, dan pemeriksaan production mobile
 serta desktop lulus. URL Maps presisi dari data owner tetap opsional.
 
+Refinement CTA cabang berikutnya pada source
+`b74ebb56099849dc17d759f4a9f0c8f1a04788e4` berstatus
+`PRODUCTION_DEPLOYED` sebagai release `20260802024941-b74ebb5`, dengan rollback
+`20260802013852-76defd1`. Before: langkah Lokasi menampilkan CTA fixed disabled
+sebelum pilihan dibuat sehingga katalog cabang dapat tertutup pada mobile.
+After: CTA tidak dirender sebelum cabang dipilih; setelah pilihan valid, tepat
+satu CTA aktif 48 piksel muncul dan membawa customer ke langkah Paket. Tidak
+ada perubahan pada booking, payment, tenant isolation, preset, Maps/WhatsApp,
+atau artifact bisnis. Full backend 957/957, matriks browser desktop+mobile
+298/298, typecheck, build, audit dependency 0, backup terenkripsi, disposable
+restore exact-SHA, database audit, service health, public smoke, dan production
+visual mobile/desktop lulus.
+
 ## Integrasi
 
 Payment dan notification provider, serta future SagaView handoff.

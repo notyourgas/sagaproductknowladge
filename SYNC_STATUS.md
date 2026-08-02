@@ -12,14 +12,14 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-02T08:45:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-02T09:52:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `c9e8499` |
-| Informasi terakhir disinkronkan | SagaBook Maps fallback source `76defd19` aktif sebagai release `20260802013852-76defd1`; full backend 957/957, browser desktop+mobile 298/298, dan production visual mobile/desktop lulus. |
+| Baseline sebelum pembaruan | `f1c37fa` |
+| Informasi terakhir disinkronkan | SagaBook CTA storefront source `b74ebb56` aktif sebagai release `20260802024941-b74ebb5`; CTA baru muncul setelah cabang dipilih, browser desktop+mobile 298/298, dan production visual mobile/desktop lulus. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru |
 | Konflik | Tidak ada; local `main` sama dengan `origin/main` sebelum edit. |
-| Error | Tidak ada error release SagaBook; URL Maps presisi tetap opsional karena fallback nama/alamat sudah aktif. |
+| Error | Tidak ada error release SagaBook; tidak ada blocker teknis baru dari refinement CTA. |
 
 ## File yang berubah pada sinkronisasi ini
 
@@ -27,7 +27,6 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `products/sagabook/DOSSIER.md`
 - `products/sagabook/CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
-- `GAPS.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHANGELOG.md`
 - `SYNC_STATUS.md`

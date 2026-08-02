@@ -10,6 +10,20 @@ workflow, pricing, release, activation, atau blocker.
 Detail tetap berada pada changelog produk; entri docs-only berada di root
 [CHANGELOG](../CHANGELOG.md).
 
+## 2026-08-02 - SagaBook CTA cabang storefront production
+
+- Source `b74ebb56099849dc17d759f4a9f0c8f1a04788e4` aktif sebagai release
+  `20260802024941-b74ebb5` dengan rollback `20260802013852-76defd1`.
+- CTA fixed disabled pada langkah Lokasi tidak lagi menutup katalog sebelum
+  pilihan dibuat. Setelah cabang dipilih, satu CTA aktif 48 piksel muncul dan
+  membawa customer ke langkah Paket.
+- Kelima preset, Maps/WhatsApp, accessibility, no-overflow, branding, serta
+  kontrak booking/payment tetap utuh. Full backend 957/957 dan browser
+  desktop+mobile 298/298 lulus bersama backup/restore serta public smoke.
+- Delivery `PRODUCTION_DEPLOYED`; activation scope terkait tetap
+  `PRODUCTION_ACTIVATED`; business readiness masih `NEEDS CONFIRMATION` sampai
+  pilot studio nyata dan legal/tax finalization selesai.
+
 ## 2026-08-02 - SagaBook Maps fallback production
 
 - Source `76defd19eb7dad9fe12fa0f52609ec6dda6e62e2` aktif sebagai release

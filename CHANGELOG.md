@@ -12,6 +12,23 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-02
 
+### SagaBook CTA cabang storefront production
+
+- Ringkasan: menghilangkan CTA fixed disabled dari katalog Lokasi sebelum
+  customer memilih cabang; satu CTA aktif baru muncul setelah pilihan valid.
+- Produk/area terdampak: storefront booking milik studio, navigation state,
+  responsive mobile/desktop, accessibility, release, dan rollback.
+- Klasifikasi: `CONFIRMED`; source
+  `b74ebb56099849dc17d759f4a9f0c8f1a04788e4` `PRODUCTION_DEPLOYED` pada
+  release `20260802024941-b74ebb5`.
+- Production berubah: ya; exact runtime, encrypted backup/disposable restore,
+  database audit, service health, public smoke, dan rollback terverifikasi.
+- Gate: full backend 957/957 dengan 10.989 assertions, browser desktop+mobile
+  298/298, typecheck/build, dependency audit 0, serta production visual
+  390x844 dan 1440x900 lulus.
+- Residual: business readiness tetap memerlukan cohort studio nyata dan
+  legal/tax finalization; tidak ada blocker teknis baru dari perubahan CTA.
+
 ### SagaBook Maps fallback production
 
 - Ringkasan: menutup gap jalur Maps pada storefront tenant dan Booking Center

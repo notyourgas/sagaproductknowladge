@@ -4,6 +4,24 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-02 - CTA cabang storefront tidak lagi menutup katalog
+
+- Status: `PRODUCTION_DEPLOYED`; scope SagaBook yang telah dibuktikan tetap
+  `PRODUCTION_ACTIVATED`.
+- Source `b74ebb56099849dc17d759f4a9f0c8f1a04788e4` aktif sebagai release
+  `20260802024941-b74ebb5`; rollback `20260802013852-76defd1` dipertahankan.
+- Before: langkah Lokasi menampilkan CTA fixed disabled sebelum customer
+  memilih cabang sehingga sebagian katalog dapat tertutup pada mobile.
+- After: CTA tidak tampil sebelum cabang dipilih; setelah pilihan valid, tepat
+  satu CTA aktif setinggi 48 piksel muncul dan navigasi ke langkah Paket lulus.
+- Kelima preset, link Maps/WhatsApp, forced-colors, reduced-motion, no-overflow,
+  dan tepat satu `Powered by SagaBook` tetap lulus; booking/payment tidak
+  berubah.
+- Gate: full backend 957/957 dengan 10.989 assertions, browser desktop+mobile
+  298/298, typecheck, build, dependency audit 0, encrypted backup, disposable
+  restore exact-SHA, database audit, service health, public smoke, dan visual
+  production 390x844 serta 1440x900 lulus.
+
 ## 2026-08-02 - Maps fallback storefront dan Booking Center production
 
 - Status: `PRODUCTION_DEPLOYED`; scope SagaBook yang telah dibuktikan tetap

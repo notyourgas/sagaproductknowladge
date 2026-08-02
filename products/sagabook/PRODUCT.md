@@ -156,8 +156,8 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
 
 - Customer Booking Center aktif di production.
 - Source production terbaru pada cut-off: commit
-  `76defd19eb7dad9fe12fa0f52609ec6dda6e62e2`.
-- Release production tercatat: `20260802013852-76defd1`.
+  `b74ebb56099849dc17d759f4a9f0c8f1a04788e4`.
+- Release production tercatat: `20260802024941-b74ebb5`.
 - Storefront, admin, dan super-admin merespons public smoke.
 - Tenant Onboarding dan First Booking Activation aktif melalui Activation
   Center yang tenant-scoped dan server-authoritative.
@@ -211,6 +211,18 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
   manifest, database audit 100, service health, public smoke, serta verifikasi
   production 390x844 dan 1440x900 lulus. URL lokasi presisi dari owner tetap
   opsional dan lebih diutamakan bila tersedia.
+- Refinement CTA pemilihan cabang pada source
+  `b74ebb56099849dc17d759f4a9f0c8f1a04788e4` berstatus
+  `PRODUCTION_DEPLOYED` sebagai release `20260802024941-b74ebb5`; rollback
+  `20260802013852-76defd1` dipertahankan. Pada langkah Lokasi, tombol lanjut
+  tidak lagi tampil disabled dan menutup katalog sebelum cabang dipilih.
+  Setelah customer memilih cabang, tepat satu CTA aktif setinggi 48 piksel
+  muncul dan melanjutkan ke langkah Paket. Kelima preset, Maps/WhatsApp,
+  forced-colors, reduced-motion, dan satu signature `Powered by SagaBook`
+  tetap utuh tanpa mengubah kontrak booking/payment. Full backend 957/957,
+  browser desktop+mobile 298/298, typecheck, build, dependency audit 0,
+  encrypted backup, disposable restore exact-SHA, database audit, service
+  health, public smoke, serta production visual 390x844 dan 1440x900 lulus.
 - Candidate signup tanpa approval owner dan trial kanonik 7 hari sudah
   `LOCAL_VALIDATED` pada source
   `dcb5a3f3dc1e3e7b5c0c067e8968ca341ebf1c27`. Production tetap memakai
