@@ -234,6 +234,16 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
   backup, disposable restore, migration, readiness 100, service health, dan
   public smoke lulus. Release lama `20260802024941-b74ebb5` dipertahankan untuk
   rollback; SagaView tetap pada release `20260802042221-f26bb57`.
+- Public commercial/legal branding safety pada source
+  `a6bb8afbfe2353597ea55329c50829a220bc5d3e` berstatus
+  `PRODUCTION_DEPLOYED` sebagai release `20260802104018-a6bb8af`. Pricing,
+  Terms, dan Privacy kini masing-masing memiliki tepat satu signature aksesibel
+  `Powered by SagaBook`, tidak fixed, tidak overflow, dan tidak tertukar dengan
+  SagaView pada 390x844 maupun 1440x900. Header `X-Frame-Options` kini dikirim
+  tepat satu kali di edge, sementara CSP `frame-ancestors` tetap aktif. Full
+  backend 960/960 dengan 11.007 assertions, browser production 8/8, dependency
+  audit 0, backup/restore, readiness 100, service health, dan smoke lulus.
+  Rollback `20260802101645-500065c` dipertahankan; SagaView tidak berubah.
 - Candidate signup tanpa approval owner dan trial kanonik 7 hari sudah
   `LOCAL_VALIDATED` pada source
   `dcb5a3f3dc1e3e7b5c0c067e8968ca341ebf1c27`. Production tetap memakai

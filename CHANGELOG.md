@@ -12,6 +12,20 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-02
 
+### SagaBook public branding dan frame-header hygiene production release
+
+- Ringkasan: melengkapi signature produk pada Pricing/Terms/Privacy dan
+  menormalkan `X-Frame-Options` menjadi satu nilai wire-level tanpa melemahkan
+  CSP `frame-ancestors`.
+- Produk/area terdampak: SagaBook public commercial/legal, accessibility,
+  responsive branding, security header, regression QA, dan production release.
+- Klasifikasi: `CONFIRMED`; source
+  `a6bb8afbfe2353597ea55329c50829a220bc5d3e`, release
+  `20260802104018-a6bb8af`, status `PRODUCTION_DEPLOYED`.
+- Full backend 960/960, browser production 8/8, dependency audit 0,
+  backup/restore, readiness 100, tujuh service, journal, dan smoke lulus.
+  SagaView serta workflow booking/payment/provider tidak berubah.
+
 ### SagaBook Admin Booking production release
 
 - Ringkasan: memperbaiki release runner yang berhenti sebelum verified
@@ -21,8 +35,8 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 - Klasifikasi: `CONFIRMED`; source
   `500065c81cbc07e29b3370f8b22a8fcc521f7d7d`, release
   `20260802101645-500065c`, status `PRODUCTION_DEPLOYED`.
-- SagaView tidak berubah. Branding public commercial/legal SagaBook belum 100%
-  karena Pricing, Terms, dan Privacy belum memiliki signature produk.
+- SagaView tidak berubah. Gap branding public dan header duplikat ditutup pada
+  release berikutnya `20260802104018-a6bb8af`.
 
 ### SagaBook Admin Booking candidate tertahan release gate
 

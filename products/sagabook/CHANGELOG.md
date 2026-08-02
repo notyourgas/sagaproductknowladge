@@ -4,6 +4,22 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-02 - Public branding dan frame-header hygiene dipromosikan
+
+- Klasifikasi: `CONFIRMED`; delivery `PRODUCTION_DEPLOYED`.
+- Source `a6bb8afbfe2353597ea55329c50829a220bc5d3e` aktif sebagai release
+  `20260802104018-a6bb8af`; rollback `20260802101645-500065c` dipertahankan.
+- Pricing, Terms, dan Privacy kini masing-masing menampilkan tepat satu
+  signature aksesibel `Powered by SagaBook` pada mobile/desktop tanpa overflow,
+  overlap, positioning fixed, atau label silang SagaView.
+- `X-Frame-Options` dinormalisasi menjadi satu nilai wire-level di edge;
+  CSP `frame-ancestors` tetap aktif. Ketiga route 200 dengan HSTS, CSP, dan XFO
+  masing-masing tepat satu.
+- Full backend 960/960 dengan 11.007 assertions, browser production 8/8,
+  design/build/dependency audit 0, backup terenkripsi, disposable restore,
+  readiness 100, service health, journal, dan smoke lulus.
+- Tidak ada perubahan booking/payment, provider, preset tenant, atau SagaView.
+
 ## 2026-08-02 - Admin Booking dipromosikan setelah release runner diperbaiki
 
 - Klasifikasi: `CONFIRMED`; delivery `PRODUCTION_DEPLOYED`.
@@ -16,9 +32,8 @@ Mencatat perubahan material SagaBook dengan provenance public-safe.
   `20260802024941-b74ebb5`; SagaView tidak berubah.
 - Full backend 959/959 dengan 11.001 assertions; focused Admin Booking pada
   mobile/tablet/desktop 6/6; build, design audit, dan dependency audit 0 lulus.
-- `TODO`: public Pricing, Terms, dan Privacy masih belum menampilkan signature
-  `Powered by SagaBook`; ketiga route 200 tanpa overflow, tetapi branding lintas
-  surface belum lengkap.
+- Gap signature public dan header duplikat pada audit release ini ditutup oleh
+  release berikutnya `20260802104018-a6bb8af`.
 
 ## 2026-08-02 - Admin Booking triage candidate belum dipromosikan
 

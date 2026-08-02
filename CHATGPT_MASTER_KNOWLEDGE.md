@@ -127,8 +127,13 @@ release `20260802101645-500065c`: mobile memakai kartu triage, desktop tetap tab
 detail memakai satu drawer aksesibel, kontrol kritis minimal 44 piksel, dan
 aksi terminal mengembalikan fokus ke daftar. Backend 959/959, focused UI tiga
 viewport 6/6, backup/restore, migration, readiness 100, dan runtime smoke lulus.
-SagaView tidak berubah. Public Pricing, Terms, dan Privacy masih membutuhkan
-signature `Powered by SagaBook`, sehingga branding lintas surface belum 100%.
+SagaView tidak berubah. Gap public signature dan frame-header dari audit ini
+ditutup oleh source `a6bb8afb`, aktif sebagai release
+`20260802104018-a6bb8af`: Pricing, Terms, dan Privacy masing-masing memiliki
+tepat satu `Powered by SagaBook`, dan `X-Frame-Options` hanya satu nilai di edge
+dengan CSP `frame-ancestors` tetap enforced. Browser production mobile/desktop
+8/8, readiness 100, service/header/journal, dan rollback lulus; booking,
+payment, provider, preset tenant, serta SagaView tidak berubah.
 
 Keputusan privacy/retention/offboarding SagaBook yang lebih rinci telah
 disetujui owner untuk implementasi dan legal review pada source docs commit

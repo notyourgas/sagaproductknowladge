@@ -12,14 +12,14 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-02T17:26:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-02T17:49:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `f16b34f` |
-| Informasi terakhir disinkronkan | SagaBook source `500065c8` mempromosikan Admin Booking triage dan payment reconciliation sebagai release `20260802101645-500065c`; delivery `PRODUCTION_DEPLOYED`, SagaView tidak berubah. |
+| Baseline sebelum pembaruan | `b2d62e7` |
+| Informasi terakhir disinkronkan | SagaBook source `a6bb8afb` melengkapi signature Pricing/Terms/Privacy dan deduplikasi `X-Frame-Options` sebagai release `20260802104018-a6bb8af`; delivery `PRODUCTION_DEPLOYED`, SagaView tidak berubah. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru |
 | Konflik | Tidak ada; local `main` sama dengan `origin/main` sebelum edit. |
-| Error | Tidak ada error knowledge. Gap terbuka: signature public Pricing/Terms/Privacy dan header `X-Frame-Options` duplikat identik pada SagaBook. |
+| Error | Tidak ada error knowledge; gap signature public dan header duplikat SagaBook telah ditutup. |
 
 ## File yang berubah pada sinkronisasi ini
 

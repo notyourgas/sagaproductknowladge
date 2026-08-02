@@ -188,6 +188,18 @@ unpaid, duplikat, atau ledger belum verified tetap diblokir. Full backend
 migration, readiness 100, service/journal, dan public smoke lulus. SagaView
 tidak berubah.
 
+Public commercial/legal branding safety pada source
+`a6bb8afbfe2353597ea55329c50829a220bc5d3e` berstatus
+`PRODUCTION_DEPLOYED` sebagai release `20260802104018-a6bb8af`. Before:
+Pricing, Terms, dan Privacy tidak memiliki signature produk, dan response wire
+memuat dua nilai identik `X-Frame-Options`. After: ketiga route memiliki tepat
+satu `Powered by SagaBook` yang responsif dan aksesibel; edge mengirim satu
+`X-Frame-Options`, sementara CSP `frame-ancestors` tetap enforced. Browser
+production mobile/desktop 8/8, full backend 960/960, build/design/dependency
+gate, backup/restore, readiness 100, tujuh service, header, journal, dan smoke
+lulus. Tidak ada perubahan workflow booking/payment, provider, preset, atau
+runtime SagaView; rollback `20260802101645-500065c` dipertahankan.
+
 ## Integrasi
 
 Payment dan notification provider, serta future SagaView handoff.

@@ -10,6 +10,17 @@ workflow, pricing, release, activation, atau blocker.
 Detail tetap berada pada changelog produk; entri docs-only berada di root
 [CHANGELOG](../CHANGELOG.md).
 
+## 2026-08-02 - SagaBook public branding safety production release
+
+- Source `a6bb8afb` aktif sebagai release `20260802104018-a6bb8af`.
+- Pricing, Terms, dan Privacy kini masing-masing memiliki tepat satu
+  `Powered by SagaBook`; browser production mobile/desktop 8/8 tanpa overflow
+  atau label silang.
+- `X-Frame-Options`, HSTS, dan CSP masing-masing terverifikasi tepat satu pada
+  route publik; CSP `frame-ancestors` tetap aktif.
+- Backup/restore, readiness 100, tujuh service, journal, dan smoke lulus.
+  SagaView tetap `20260802042221-f26bb57`; tidak ada payment/provider action.
+
 ## 2026-08-02 - SagaBook Admin Booking production release
 
 - Source `500065c8` memperbaiki release runner dan mempromosikan Admin Booking
@@ -18,8 +29,8 @@ Detail tetap berada pada changelog produk; entri docs-only berada di root
   restore, migration, readiness 100, tujuh service aktif, journal bersih, dan
   public smoke lulus.
 - SagaView tetap pada release `20260802042221-f26bb57`; tidak ada provider,
-  payment, atau QRIS baru. Gap tersisa: signature public Pricing/Terms/Privacy
-  SagaBook dan deduplikasi header `X-Frame-Options`.
+  payment, atau QRIS baru. Gap signature/header ditutup pada release berikutnya
+  `20260802104018-a6bb8af`.
 
 ## 2026-08-02 - SagaBook Admin Booking candidate tertahan release gate
 
