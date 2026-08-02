@@ -4,6 +4,29 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-03 - Admin Staff responsif dipromosikan
+
+- Klasifikasi: `CONFIRMED`; delivery `PRODUCTION_DEPLOYED`, activation scope
+  `PRODUCTION_ACTIVATED`, business readiness tetap `NEEDS CONFIRMATION`.
+- Source `35c82192234eb84e03b2237029540e299c70e12f` aktif sebagai release
+  `20260802183533-35c8219`; rollback `20260802160930-596b8a4` dipertahankan.
+- Before: mobile memaksa tabel desktop selebar 920 piksel, target sentuh penting
+  32-40 piksel, filtered-empty tanpa reset, dan editor tidak memulihkan fokus.
+  After: mobile memakai kartu staff, desktop tetap tabel, kontrol kritis minimal
+  44 piksel, reset filter tersedia, editor berlabel mengembalikan fokus, serta
+  tab, forced-colors, reduced-motion, dan no-overflow lulus.
+- CRUD, role/permission, tenant isolation, booking/payment/provider, storefront
+  tenant/preset, landing page, watermark, dan SagaView tidak berubah; satu
+  `Powered by SagaBook` tetap hadir pada shell dan tidak masuk artefak bisnis.
+- Gate: backend 960/960 dengan 11.007 assertions; visual matrix 442 passed
+  dengan 41 controlled skip; build, design audit, npm/Composer audit 0,
+  encrypted backup, disposable restore exact-SHA, database audit 100, service
+  health, journal, dan public browser smoke lulus.
+- Visual production Staff terautentikasi tidak dijalankan tanpa credential;
+  exact-source regression tiga viewport lulus. `/up` belum mengirim HSTS.
+  Sampel login mengirim HSTS dan CSP satu kali tanpa `X-Frame-Options`; CSP
+  `frame-ancestors` tetap aktif dan kontrak header perlu dinormalisasi.
+
 ## 2026-08-02 - Calendar mobile operasional dipromosikan
 
 - Klasifikasi: `CONFIRMED`; delivery `PRODUCTION_DEPLOYED`.

@@ -8,7 +8,7 @@ diubah menjadi klaim publik sebelum ditutup dengan bukti atau keputusan owner.
 
 ## Konteks
 
-Daftar ini berlaku pada evidence cut-off 2 Agustus 2026 dan harus diperbarui
+Daftar ini berlaku pada evidence cut-off 3 Agustus 2026 dan harus diperbarui
 ketika keputusan atau release baru menutup gap.
 
 ## Cara memakai
@@ -71,10 +71,16 @@ ketika keputusan atau release baru menutup gap.
 - `NEEDS CONFIRMATION`: authenticated production visual Calendar pada release
   `20260802160930-596b8a4` belum dijalankan tanpa credential. Exact-source
   authenticated browser regression dan public production smoke sudah lulus.
+- `NEEDS CONFIRMATION`: authenticated production visual Admin Staff pada
+  release `20260802183533-35c8219` belum dijalankan tanpa credential.
+  Exact-source regression mobile/tablet/desktop dan public production browser
+  smoke sudah lulus.
 - `TODO`: normalkan HSTS pada endpoint health `/up`; route aplikasi/login yang
-  diaudit sudah mengirim HSTS dan XFO tepat satu. Triage
-  `saga-platform-staging-monitor.service` sebagai isu host terpisah dari
-  service SagaBook.
+  diaudit mengirim HSTS dan CSP satu kali. Normalisasi juga kontrak
+  `X-Frame-Options`: sampel login release Staff tidak mengirim header tersebut,
+  meski CSP `frame-ancestors` tetap aktif. Triage historis
+  `saga-platform-staging-monitor.service` tetap isu host terpisah; journal
+  service SagaBook pada release Staff bersih.
 - `CONFIRMED`: candidate UI/UX dan auth/fallback hardening kumulatif sudah
   `PRODUCTION_DEPLOYED` sebagai release `20260802002923-d9bbbac`; manifest,
   public HTTP smoke, production auth browser 6/6, matriks browser

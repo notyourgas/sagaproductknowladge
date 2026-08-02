@@ -12,20 +12,20 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-03T00:55:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-03T01:45:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `bdc4c79` |
-| Informasi terakhir disinkronkan | AOGTICVITY source `baffaa5` aktif pada Hostinger `20260802T174812Z`, Vercel `dpl_9gXvi7t6xv6fisNC4LuuAiqZGvsX`, dan migration 014; rundown, operator assignment, recovery status, result verification/publication, standing, dan live display persisten. |
+| Baseline sebelum pembaruan | `806141f` |
+| Informasi terakhir disinkronkan | SagaBook Admin Staff source `35c82192` aktif sebagai release `20260802183533-35c8219`; mobile memakai kartu operasional, desktop tetap tabel, dan gate release exact-source lulus. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru |
 | Konflik | Tidak ada; local `main` sama dengan `origin/main` sebelum edit. |
-| Error | Tidak ada blocker release Wave 2. Authenticated human multi-device UAT belum sign-off; activation keseluruhan dan business readiness belum diklaim. |
+| Error | Tidak ada blocker release SagaBook Staff. Visual live Staff terautentikasi belum dijalankan tanpa credential; `/up` belum mengirim HSTS dan kontrak `X-Frame-Options` perlu dinormalisasi. Business readiness belum diklaim. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/aogticvity/PRODUCT.md`
-- `products/aogticvity/DOSSIER.md`
-- `products/aogticvity/CHANGELOG.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `GAPS.md`
@@ -34,9 +34,9 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 ## Item menunggu konfirmasi
 
-AOGTICVITY authenticated Admin/Operator/Leader/Player UAT, announcement
-persistence, WhatsApp full flow, custom domain, dan physical rehearsal masih
-menunggu sebelum activation keseluruhan atau `BUSINESS_READY` dapat diklaim.
+SagaBook authenticated production visual Admin Staff, normalisasi HSTS `/up`,
+dan kontrak `X-Frame-Options` masih menunggu. Founding Studio Pilot tetap wajib
+sebelum `BUSINESS_READY` dapat diklaim.
 
 ## Cara verifikasi
 

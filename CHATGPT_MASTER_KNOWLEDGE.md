@@ -149,6 +149,21 @@ mengirim HSTS dan XFO tepat satu; error journal yang tersisa berasal dari
 staging monitor host. Payment/provider, storefront tenant/preset, landing page,
 watermark, dan SagaView tidak berubah. Business readiness tetap belum diklaim.
 
+Admin Staff terbaru pada source `35c82192` aktif sebagai release
+`20260802183533-35c8219`, rollback `20260802160930-596b8a4`. Mobile tidak lagi
+memaksa tabel desktop 920 piksel dan sekarang memakai kartu staff; desktop tetap
+tabel. Target sentuh kritis minimal 44 piksel, reset filtered-empty, editor
+berlabel dengan focus recovery, tab semantik, forced-colors, reduced-motion,
+no-overflow, dan satu `Powered by SagaBook` lulus. CRUD/permission, booking,
+payment/provider, storefront tenant/preset, landing page, dan SagaView tidak
+berubah. Backend 960/960 dengan 11.007 assertions, visual matrix 442 passed
+dengan 41 controlled skip, audit 0, backup/restore exact-SHA, database audit
+100, service/journal, dan public browser smoke lulus. Authenticated production
+visual Staff tidak dijalankan tanpa credential; exact-source regression tiga
+viewport lulus. `/up` masih tanpa HSTS. Sampel login mengirim HSTS dan CSP satu
+kali tanpa `X-Frame-Options`; CSP `frame-ancestors` aktif dan kontrak header
+perlu dinormalisasi. Business readiness tetap belum diklaim.
+
 Keputusan privacy/retention/offboarding SagaBook yang lebih rinci telah
 disetujui owner untuk implementasi dan legal review pada source docs commit
 `295ec863ff6cfc2e79ac98183651f19c15a3b368`. Workflow consent berversi,

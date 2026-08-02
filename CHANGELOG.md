@@ -12,6 +12,24 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-03
 
+### SagaBook Admin Staff responsif production release
+
+- Ringkasan: mengganti tabel Staff desktop yang terpotong di mobile menjadi
+  kartu operasional, mempertahankan tabel desktop, serta menambahkan target
+  sentuh 44 piksel, reset filter, focus recovery editor, dan tab semantik.
+- Produk/area terdampak: SagaBook Admin Staff, responsive UX, accessibility,
+  release, rollback, dan knowledge runtime. CRUD/permission, tenant isolation,
+  payment/provider, storefront/preset, watermark, dan SagaView tidak berubah.
+- Klasifikasi: `CONFIRMED`; source
+  `35c82192234eb84e03b2237029540e299c70e12f`, release
+  `20260802183533-35c8219`, status `PRODUCTION_DEPLOYED`.
+- Production berubah: ya. Backend 960/960 dengan 11.007 assertions, visual
+  matrix 442 passed dengan 41 controlled skip, audit 0, backup/restore
+  exact-SHA, database audit 100, service/journal, dan smoke lulus. Visual Staff
+  live terautentikasi belum dijalankan tanpa credential; `/up` belum mengirim
+  HSTS, dan sampel login memiliki CSP aktif tetapi tanpa `X-Frame-Options`.
+  Business readiness belum diklaim.
+
 ### AOGTICVITY event-day control plane production
 
 - Ringkasan: mengganti rundown/live browser-only dan direct result publish

@@ -10,6 +10,22 @@ workflow, pricing, release, activation, atau blocker.
 Detail tetap berada pada changelog produk; entri docs-only berada di root
 [CHANGELOG](../CHANGELOG.md).
 
+## 2026-08-03 - SagaBook Admin Staff responsif production
+
+- `CONFIRMED`: daftar staff mobile berubah dari tabel desktop terpotong menjadi
+  kartu operasional; desktop tetap tabel. Kontrol kritis minimal 44 piksel,
+  reset filter, focus recovery editor, tab semantik, forced-colors,
+  reduced-motion, dan no-overflow lulus tanpa mengubah CRUD atau permission.
+- Source `35c82192234eb84e03b2237029540e299c70e12f` aktif sebagai release
+  `20260802183533-35c8219`; rollback `20260802160930-596b8a4` dipertahankan.
+- Backend 960/960 dengan 11.007 assertions, visual matrix 442 passed dengan 41
+  controlled skip, audit 0, backup/restore exact-SHA, database audit 100,
+  services, journal, dan public browser smoke lulus.
+- Visual live Staff terautentikasi tidak memakai credential; `/up` masih tanpa
+  HSTS. Sampel login memiliki HSTS+CSP tetapi tanpa `X-Frame-Options`; CSP
+  `frame-ancestors` aktif. SagaView, storefront/preset, payment, watermark, dan
+  business-readiness claim tidak berubah.
+
 ## 2026-08-03 - AOGTICVITY event-day control plane production
 
 - `CONFIRMED`: rundown, operator assignment, recovery status, result

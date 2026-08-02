@@ -221,6 +221,24 @@ regression lulus. `/up` belum mengirim HSTS walau route aplikasi/login yang
 diaudit mengirim HSTS dan XFO tepat satu. Error journal pascarilis berasal dari
 `saga-platform-staging-monitor.service` di level host, bukan service SagaBook.
 
+Admin Staff pada source
+`35c82192234eb84e03b2237029540e299c70e12f` berstatus
+`PRODUCTION_DEPLOYED` sebagai release `20260802183533-35c8219`, dengan rollback
+`20260802160930-596b8a4`. Before: mobile memaksa tabel desktop selebar 920
+piksel, target sentuh penting 32-40 piksel, filtered-empty tidak memiliki reset,
+dan editor tidak memulihkan fokus. After: mobile memakai kartu operasional,
+desktop mempertahankan tabel, kontrol kritis minimal 44 piksel, reset filter
+tersedia, editor berlabel mengembalikan fokus, dan tab memiliki state semantik.
+Forced-colors, reduced-motion, no-overflow, CRUD/permission, tenant isolation,
+serta satu `Powered by SagaBook` tetap utuh. Backend 960/960 dengan 11.007
+assertions, visual matrix 442 passed dengan 41 controlled skip, build, design
+audit, npm/Composer audit 0, encrypted backup, disposable restore, database
+audit 100, service health, journal, dan public browser smoke lulus. Visual live
+Staff terautentikasi tidak dijalankan tanpa credential; exact-source regression
+tiga viewport lulus. `/up` belum mengirim HSTS. Sampel login mengirim HSTS dan
+CSP satu kali tanpa `X-Frame-Options`; CSP `frame-ancestors` tetap aktif dan
+kontrak header perlu dinormalisasi.
+
 ## Integrasi
 
 Payment dan notification provider, serta future SagaView handoff.

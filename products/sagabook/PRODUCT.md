@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 2 Agustus 2026
+Updated: 3 Agustus 2026
 Evidence status: production + source verified
 
 ## Tujuan dokumen
@@ -156,8 +156,8 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
 
 - Customer Booking Center aktif di production.
 - Source production terbaru pada cut-off: commit
-  `b74ebb56099849dc17d759f4a9f0c8f1a04788e4`.
-- Release production tercatat: `20260802024941-b74ebb5`.
+  `35c82192234eb84e03b2237029540e299c70e12f`.
+- Release production tercatat: `20260802183533-35c8219`.
 - Storefront, admin, dan super-admin merespons public smoke.
 - Tenant Onboarding dan First Booking Activation aktif melalui Activation
   Center yang tenant-scoped dan server-authoritative.
@@ -257,12 +257,31 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
   public smoke lulus. Rollback `20260802104018-a6bb8af` dipertahankan. Tidak ada
   perubahan pada payment/provider, storefront tenant/preset, landing page,
   watermark, atau SagaView.
+- Admin Staff pada source
+  `35c82192234eb84e03b2237029540e299c70e12f` berstatus
+  `PRODUCTION_DEPLOYED` sebagai release `20260802183533-35c8219`; rollback
+  `20260802160930-596b8a4` dipertahankan. Before: layar mobile masih memaksa
+  tabel desktop selebar 920 piksel, kontrol penting berukuran 32-40 piksel,
+  filtered-empty tidak memiliki reset, dan editor tidak memulihkan fokus.
+  After: mobile memakai kartu staff, desktop tetap tabel, kontrol kritis
+  minimal 44 piksel, reset filter tersedia, editor berlabel dan mengembalikan
+  fokus, serta tab, forced-colors, reduced-motion, dan satu signature
+  `Powered by SagaBook` tetap utuh. CRUD dan permission tidak berubah. Backend
+  960/960 dengan 11.007 assertions, visual matrix 442 passed dengan 41
+  controlled skip, build, design audit, dependency audit 0, encrypted backup,
+  disposable restore, database audit 100, service health, journal, dan public
+  browser smoke lulus.
 - Residual release ini: visual production Calendar yang terautentikasi tidak
   dijalankan tanpa membuka credential; exact-source authenticated regression
   lulus. Endpoint health `/up` masih tidak mengirim HSTS, sedangkan route
   aplikasi/login yang diaudit mengirim HSTS dan XFO tepat satu. Satu error
   journal berasal dari `saga-platform-staging-monitor.service` di level host,
   bukan service SagaBook.
+- Residual Admin Staff: visual live yang terautentikasi tidak dijalankan tanpa
+  credential; exact-source regression mobile/tablet/desktop lulus. Endpoint
+  `/up` masih tidak mengirim HSTS. Sampel login saat release mengirim HSTS dan
+  CSP satu kali tetapi tidak mengirim `X-Frame-Options`; CSP
+  `frame-ancestors` tetap aktif dan kontrak header perlu dinormalisasi.
 - Candidate signup tanpa approval owner dan trial kanonik 7 hari sudah
   `LOCAL_VALIDATED` pada source
   `dcb5a3f3dc1e3e7b5c0c067e8968ca341ebf1c27`. Production tetap memakai
