@@ -318,6 +318,12 @@ migration 014 membuat rundown, assignment operator per lomba, recovery status,
 result draft/admin publish, standing publik, serta live display persisten.
 Operator hanya dapat mengubah lomba assigned; admin publication menyelesaikan
 lomba atomik. Versioning, idempotency, audit, dan stale-write protection aktif.
+Source `3917b5ea07ddfec33a7c0bd18194f1d7d18b29da`, Hostinger release
+`20260802T193509Z`, Vercel production `dpl_CDcW9tZehoaM38aSSb3Nu5u8CGDU`, dan
+migration 015 membuat announcement publik/operasional persisten serta Day-H
+readiness aggregate PII-free. Mutation announcement admin-only memakai
+versioning, idempotency, reasoned audit, dan transaksi atomic; readiness
+menyediakan digest, cached snapshot terakhir, serta export JSON.
 Ini adalah nama terbaru project 17an/Olimpiade Kemerdekaan.
 
 Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:
@@ -327,9 +333,9 @@ Business readiness: `BLOCKED`. Public delivery aktif di
 diaktifkan. Real credential login dan database-backed session sudah terbukti;
 admin password claim dan registration UAT sudah selesai. Roster/check-in/result
 rehearsal, provider status webhook, WhatsApp magic-link/session UAT, dan
-physical multi-device UAT belum selesai. Rundown, result, dan live-controller
-sudah server-authoritative; announcement masih local state dan authenticated
-four-role UAT belum sign-off.
+physical multi-device UAT belum selesai. Rundown, result, live-controller,
+announcement, dan readiness sudah server-authoritative; authenticated
+four-role, stale-write, serta offline recovery UAT belum sign-off.
 Sejak release 1 Agustus 2026, surface
 tersebut memakai festival UI/UX mobile 430 px dengan Plus Jakarta Sans,
 Feather-style icons, Motion for React, restrained celebration, dan

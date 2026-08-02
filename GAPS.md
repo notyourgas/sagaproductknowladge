@@ -176,12 +176,15 @@ ketika keputusan atau release baru menutup gap.
 - `NEEDS CONFIRMATION`: model bisnis produk (event internal, jasa per event, atau
   SaaS).
 - `NEEDS CONFIRMATION`: authenticated four-role serta
-  roster/status-lomba/check-in/result multi-device operations UAT; persistence
-  announcement; recovery/session flow, target custom domain, dan physical event
+  roster/status-lomba/check-in/result/announcement/readiness multi-device
+  operations UAT; stale-write dan cached-snapshot recovery; recovery/session
+  flow, target custom domain, dan physical event
   rehearsal. Team generator/direct assignment/publish/lock persistence sudah
   `CONFIRMED` pada migration 013. Rundown, operator assignment, result
   verification, recovery status, dan live display persistence sudah
-  `CONFIRMED` pada migration 014, tetapi human UAT belum sign-off.
+  `CONFIRMED` pada migration 014. Announcement persistence dan readiness
+  aggregate sudah `CONFIRMED` pada migration 015, tetapi human UAT belum
+  sign-off.
 - `NEEDS CONFIRMATION`: nama final Tim 7/Tim 8, durasi lomba, serta keputusan
   master recap yang masih provisional/open.
 

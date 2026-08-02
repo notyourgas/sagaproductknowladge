@@ -8,6 +8,26 @@ Mencatat perubahan material AOGTICVITY/17an/Olimpiade.
 
 Nama lama dipertahankan sebagai provenance; status runtime harus eksplisit.
 
+## 2026-08-03 - Announcement dan Day-H readiness production
+
+- `CONFIRMED`: announcement tidak lagi browser-only. Admin dapat publish,
+  pin/unpin, archive/restore dengan audience publik atau operasional; feed
+  peserta hanya menerima pengumuman publik aktif.
+- Mutation memakai admin permission, same-origin, UUID idempotency, optimistic
+  version, transaksi atomic, dan reasoned audit. Day-H readiness merangkum PIC,
+  roster, verifikasi, hasil, WhatsApp, dan sesi aktif tanpa PII; digest, cached
+  snapshot, dan JSON export tersedia untuk recovery operator.
+- Source `3917b5ea07ddfec33a7c0bd18194f1d7d18b29da`; Hostinger release
+  `20260802T193509Z`; Vercel production
+  `dpl_CDcW9tZehoaM38aSSb3Nu5u8CGDU`; migration 015. Gate: 92 regression,
+  10 integration test disposable MySQL, exact-source Linux preflight, build,
+  dependency audit 0, backup, migration, readiness, authorization, public/API
+  smoke, dan rollback target lulus.
+- Delivery `PRODUCTION_DEPLOYED`; activation keseluruhan tetap
+  `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED`. Authenticated
+  multi-device announcement/readiness UAT, WhatsApp full flow, custom domain,
+  dan rehearsal fisik masih terbuka.
+
 ## 2026-08-03 - Event-day control plane production
 
 - `CONFIRMED`: rundown, assignment operator per lomba, recovery status

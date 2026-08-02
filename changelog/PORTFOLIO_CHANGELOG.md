@@ -10,6 +10,22 @@ workflow, pricing, release, activation, atau blocker.
 Detail tetap berada pada changelog produk; entri docs-only berada di root
 [CHANGELOG](../CHANGELOG.md).
 
+## 2026-08-03 - AOGTICVITY announcement dan readiness production
+
+- `CONFIRMED`: announcement publik/operasional sekarang persisten, admin-only,
+  versioned, idempotent, dan audited. Feed peserta fail-closed terhadap audience
+  operasional serta arsip.
+- Admin/operator memperoleh Day-H readiness aggregate PII-free untuk PIC,
+  roster, verifikasi, hasil, WhatsApp, dan sesi; digest, last-known cache, serta
+  export JSON tersedia untuk perbandingan dan recovery perangkat.
+- Source `3917b5ea07ddfec33a7c0bd18194f1d7d18b29da`; Hostinger
+  `20260802T193509Z`; Vercel `dpl_CDcW9tZehoaM38aSSb3Nu5u8CGDU`; migration
+  015. Disposable MySQL, 10 integration test, exact-source preflight, backup,
+  build, audit 0, authorization, public/API smoke, dan rollback target lulus.
+- Delivery berubah di production. Activation keseluruhan tetap
+  `NOT_PRODUCTION_ACTIVATED` dan business readiness `BLOCKED` sampai human
+  multi-device UAT, WhatsApp full flow, custom domain, dan rehearsal fisik.
+
 ## 2026-08-03 - SagaBook Admin Staff responsif production
 
 - `CONFIRMED`: daftar staff mobile berubah dari tabel desktop terpotong menjadi

@@ -47,7 +47,8 @@ dan offline fallback.
 
 Public/player/leader/admin/live surfaces; master recap 8 tim/10 lomba; serta
 backend identity, access directory, check-in, roster, session/security,
-event-master, dan result operations vertical slices.
+event-master, result operations, announcement persistence, dan Day-H readiness
+vertical slices.
 Public Vercel delivery memakai festival visual system yang tetap ringkas untuk
 operator: hierarchy mobile, colored metric cues, animated active navigation,
 modal/state motion, dan success celebration dengan reduced-motion fallback.
@@ -63,7 +64,8 @@ dan rehearsal fisik masih menahan activation keseluruhan.
 ## Roadmap
 
 1. Uji role redirect, assignment tim/operator, roster, status lomba, check-in,
-   result draft/publish, live display, audit, dan recovery melalui public Vercel.
+   result draft/publish, live display, announcement, readiness, audit, dan
+   recovery melalui public Vercel.
 2. Lakukan two-device authorization dan stale-state reconciliation UAT.
 3. Aktifkan target custom domain dan pilih recovery/notification provider.
 4. Finalisasi nama Tim 7/Tim 8, durasi, serta keputusan open pada master recap.
@@ -138,12 +140,14 @@ server-authoritative result operations.
 Vercel menjadi public edge dan guarded HTTPS proxy ke backend; endpoint backend
 langsung 404 tanpa server-only proxy secret dan MySQL tetap loopback-only.
 Registrasi tidak lagi memakai participant fixture atau localStorage. Roster,
-status lomba, rundown, assignment operator, result draft/publish/correct, dan
-live display memakai optimistic version, idempotency, RBAC, audit, dan MySQL.
+status lomba, rundown, assignment operator, result draft/publish/correct, live
+display, serta announcement publish/pin/archive/restore memakai optimistic
+version, idempotency, RBAC, audit, dan MySQL.
 Team generator, direct assignment, serta publish/lock pembagian tim juga
 persisten; Draft disembunyikan dari Leader/Player dan standing publik,
-sedangkan stale write ditolak. Announcement masih local browser state. SQLite
-tetap fast test adapter.
+sedangkan stale write ditolak. Day-H readiness membaca agregat konsisten tanpa
+PII, mempunyai digest, cache snapshot terakhir, dan export JSON. SQLite tetap
+fast test adapter.
 
 ## Integrasi
 
@@ -164,8 +168,8 @@ announcement, version, audit, dan export.
 ## Risiko dan asumsi
 
 Event-day time pressure, network failure, duplicate scoring, stale projection,
-residual local state pada announcement, authenticated four-role event-day UAT,
-aktivasi/recovery provider notification,
+authenticated four-role event-day UAT, stale-write/offline readiness recovery
+UAT, aktivasi/recovery provider notification,
 operations UAT, dua nama tim placeholder, serta durasi dan keputusan
 master recap yang masih provisional/open.
 

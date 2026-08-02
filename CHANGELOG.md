@@ -12,6 +12,25 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-03
 
+### AOGTICVITY announcement dan Day-H readiness production
+
+- Ringkasan: mengganti announcement browser-only dengan workflow MySQL
+  publish/pin/archive/restore dan menambahkan readiness snapshot agregat untuk
+  operator Hari-H.
+- Produk/area terdampak: AOGTICVITY admin/operator/player UI, announcement,
+  MySQL, RBAC, idempotency, optimistic version, audit, offline recovery,
+  observability, release, rollback, dan UAT.
+- Klasifikasi: `CONFIRMED`; source
+  `3917b5ea07ddfec33a7c0bd18194f1d7d18b29da`, Hostinger
+  `20260802T193509Z`, Vercel `dpl_CDcW9tZehoaM38aSSb3Nu5u8CGDU`, migration
+  015, status `PRODUCTION_DEPLOYED`.
+- Production berubah: ya. Exact-source preflight, 92 regression, 10 disposable
+  MySQL integration test, audit 0, backup, migration, build, readiness,
+  authorization, public/API smoke, dan rollback target lulus. Activation
+  keseluruhan tetap `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED`.
+  Tidak ada credential, PII, private evidence path, atau detail backup yang
+  masuk knowledge publik.
+
 ### SagaBook Admin Staff responsif production release
 
 - Ringkasan: mengganti tabel Staff desktop yang terpotong di mobile menjadi

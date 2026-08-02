@@ -108,6 +108,14 @@ Public delivery saat ini: `https://olimpiade-kemerdekaan.vercel.app`.
   `Draft → Published/Corrected`, standing publik, serta live display persisten.
   Operator hanya dapat mengubah lomba assigned; admin publish menyelesaikan
   lomba secara atomik. Optimistic version, idempotency, dan audit aktif.
+- Source `3917b5ea07ddfec33a7c0bd18194f1d7d18b29da`, Hostinger release
+  `20260802T193509Z`, Vercel production
+  `dpl_CDcW9tZehoaM38aSSb3Nu5u8CGDU`, dan migration 015 mengaktifkan
+  announcement persistence serta Day-H Readiness Snapshot. Publish,
+  pin/unpin, archive/restore bersifat admin-only, transactional, idempotent,
+  versioned, dan audited. Feed peserta hanya menerima pengumuman publik aktif.
+  Admin/operator dapat membandingkan snapshot agregat PII-free dengan digest,
+  cache perangkat terakhir, dan export JSON.
 - SQLite hanya fast test adapter.
 - Event-master memiliki dry-run, validation, atomic publish, versioning, dan
   audit. Durasi jadwal bersifat provisional dan dapat disunting admin.
@@ -118,8 +126,9 @@ Public delivery saat ini: `https://olimpiade-kemerdekaan.vercel.app`.
 - Participant fixture dan persistence registrasi localStorage telah dihapus.
   Roster perwakilan, status lomba, team generator, direct assignment,
   publish/lock pembagian tim, rundown, result verification, dan live-controller
-  kini server-authoritative. Announcement masih local state; seluruh operasi
-  hari-H tetap memerlukan authenticated multi-device UAT sebelum diklaim siap.
+  kini server-authoritative. Announcement dan readiness console juga persisten;
+  seluruh operasi hari-H tetap memerlukan authenticated multi-device UAT
+  sebelum diklaim siap.
 
 ## Status saat ini
 
@@ -144,6 +153,9 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:
   404 dan MySQL tetap bind pada loopback.
 - Typecheck, test, build, security, accessibility, responsive, migration, dan
   rollback telah menjadi gate.
+- Announcement publik/operasional dan Day-H readiness aggregate sudah aktif
+  pada public delivery. Readiness tanpa session ditolak dan snapshot tidak
+  membawa nama, nomor WhatsApp, actor ID, atau credential.
 - Login tidak memiliki selector role atau email admin bawaan. Admin menetapkan
   role dan tim leader; perubahan assignment mencabut session lama. Admin,
   operator, leader, dan player mempunyai home route kanonik yang ditegakkan
@@ -157,9 +169,9 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:
 - Fonnte runtime dan pengiriman kanal UAT sudah aktif, tetapi UI tidak boleh
   mengklaim seluruh flow login WhatsApp production-ready sebelum webhook status
   dan two-device magic-link/session UAT lulus.
-- Announcement masih local state. Rundown, result desk, dan live-controller
-  sudah persisten, tetapi authenticated four-role multi-device UAT belum
-  sign-off.
+- Announcement, rundown, result desk, live-controller, dan readiness snapshot
+  sudah server-authoritative, tetapi authenticated four-role multi-device UAT,
+  stale-write browser UAT, dan offline cached-snapshot recovery belum sign-off.
 - Auth dan registrasi sudah terbukti, tetapi belum membuktikan seluruh
   event-day journey business-ready sebelum operations rehearsal.
 
