@@ -82,6 +82,12 @@ Public delivery saat ini: `https://olimpiade-kemerdekaan.vercel.app`.
   adapter Fonnte, session HttpOnly, revocation, dan status operator. Kandidat
   ini `IMPLEMENTED_NOT_DEPLOYED`; migration 009, provider, serta UAT runtime
   belum dijalankan.
+- Source HEAD `8bfabf51b1e88d78a375eac067dad2aba7f0c8f4` melengkapi kandidat tersebut
+  dengan migration 010, authenticated/idempotent Fonnte status webhook,
+  truthful queued/sent/failed mapping, retry operator 60 detik maksimum lima
+  percobaan, stale-worker recovery, redacted operations console, dan provider
+  preflight. Migration 001–010 serta lifecycle SQL lulus pada database
+  disposable MySQL 8.4 Hostinger; runtime aktif tetap tidak berubah.
 - SQLite hanya fast test adapter.
 - Event-master memiliki dry-run, validation, atomic publish, versioning, dan
   audit. Durasi jadwal bersifat provisional dan dapat disunting admin.
@@ -122,8 +128,9 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:
 
 ## Belum boleh diklaim
 
-- Adapter Fonnte dan WhatsApp magic-link baru tervalidasi lokal; provider belum
-  aktif dan UI tidak boleh mengklaim pesan terkirim atau link login production.
+- Adapter Fonnte, webhook/retry/recovery, dan WhatsApp magic-link tervalidasi
+  lokal/disposable; provider belum aktif dan UI tidak boleh mengklaim pesan
+  terkirim atau link login production.
 - Local state non-registrasi bukan persistence multi-device.
 - Auth dan registrasi sudah terbukti, tetapi belum membuktikan seluruh
   event-day journey business-ready sebelum operations rehearsal.

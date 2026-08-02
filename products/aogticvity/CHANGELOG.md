@@ -8,6 +8,22 @@ Mencatat perubahan material AOGTICVITY/17an/Olimpiade.
 
 Nama lama dipertahankan sebagai provenance; status runtime harus eksplisit.
 
+## 2026-08-02 - Kandidat Fonnte operations dan recovery
+
+- `CONFIRMED`: source HEAD
+  `8bfabf51b1e88d78a375eac067dad2aba7f0c8f4` melengkapi akses WhatsApp dengan
+  authenticated/idempotent status webhook, truthful mapping antrean/sent/gagal,
+  retry admin/operator ber-cooldown dan batas percobaan, stale-worker recovery,
+  redacted operations console, provider preflight, serta migration 010.
+- Local gate: typecheck, 72 test, production build, dan dependency audit 0.
+  Hostinger disposable MySQL 8.4 membuktikan migration 001–010 dan functional
+  claim → reconcile → replay → retry → stale recovery; seluruh database, user,
+  folder, dan archive sementara dibersihkan.
+- Delivery tetap `IMPLEMENTED_NOT_DEPLOYED`; production/service/database aktif
+  tidak berubah. Bitwarden item/nomor UAT, provider token/secret, connected
+  device/quota, staging migration, webhook configuration, dan two-device UAT
+  masih menjadi activation gate.
+
 ## 2026-08-02 - Kandidat akses peserta via WhatsApp
 
 - `CONFIRMED`: founder memilih flow daftar → pesan sedang diproses → approval

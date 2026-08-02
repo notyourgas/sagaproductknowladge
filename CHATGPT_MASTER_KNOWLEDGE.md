@@ -244,6 +244,11 @@ peserta via WhatsApp tanpa kredensial; outbox transaksional, provisioning role
 ledger, session HttpOnly, revocation, audit, dan status operator. Kandidat ini
 `IMPLEMENTED_NOT_DEPLOYED`; production, provider, dan migration runtime belum
 berubah.
+Source HEAD `8bfabf51b1e88d78a375eac067dad2aba7f0c8f4` melengkapi kandidat dengan
+migration 010, authenticated/idempotent Fonnte status webhook, truthful
+queued/sent/failed mapping, operator retry/recovery, redacted queue console,
+dan provider preflight. Migration/lifecycle SQL lulus pada disposable MySQL
+8.4 Hostinger, tetapi runtime aktif tetap tidak berubah.
 Ini adalah nama terbaru project 17an/Olimpiade Kemerdekaan.
 
 Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:

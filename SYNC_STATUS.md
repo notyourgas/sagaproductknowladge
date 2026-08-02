@@ -12,14 +12,14 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-02T15:05:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-02T15:35:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `c0333d25` |
-| Informasi terakhir disinkronkan | AOGTICVITY source `127ef92b` menyelesaikan kandidat lokal akses player via approval dan WhatsApp magic link; delivery `IMPLEMENTED_NOT_DEPLOYED`, production tidak berubah. |
+| Baseline sebelum pembaruan | `21238da1` |
+| Informasi terakhir disinkronkan | AOGTICVITY source `8bfabf51` melengkapi kandidat Fonnte dengan webhook status, reconciliation, retry/recovery, redacted ops console, preflight, dan migration 010; delivery `IMPLEMENTED_NOT_DEPLOYED`, production tidak berubah. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru |
 | Konflik | Tidak ada; local `main` sama dengan `origin/main` sebelum edit. |
-| Error | Tidak ada error knowledge. Runtime MySQL/Fonnte belum divalidasi karena credential process tidak tersedia dan Bitwarden CLI terkunci. |
+| Error | Tidak ada error knowledge. Disposable MySQL lulus; runtime Fonnte belum divalidasi karena Bitwarden item/session dan nomor UAT belum tersedia. |
 
 ## File yang berubah pada sinkronisasi ini
 
@@ -33,9 +33,10 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 ## Item menunggu konfirmasi
 
-AOGTICVITY WhatsApp access menunggu migration MySQL target, secret runtime dari
-vault, satu nomor tester yang diizinkan, Fonnte delivery/reconciliation, retry
-operator, dan UAT dua perangkat. Public production tidak berubah.
+AOGTICVITY WhatsApp access menunggu item/session Bitwarden, nomor Andreas pada
+custom field `uat_whatsapp`, Fonnte device token/webhook secret, staging
+migration, provider configuration, dan UAT dua perangkat. Public production
+tidak berubah.
 
 ## Cara verifikasi
 

@@ -111,8 +111,9 @@ Operational app untuk matchday komunitas, bukan sekadar landing event.
 **Apakah domain sudah live?** Public Vercel delivery aktif; domain custom
 AOGTICVITY belum diaktifkan.
 **Apakah notification aktif?** Belum. Adapter Fonnte dan magic-link WhatsApp
-sudah diimplementasikan lokal, tetapi migration/provider/UAT runtime belum
-lulus dan production belum berubah.
+sudah diimplementasikan bersama status webhook, retry/recovery, dan redacted
+operations console. Migration disposable lulus, tetapi provider/UAT runtime
+belum lulus dan production belum berubah.
 **Apakah auth sudah nyata?** Ya, real credential login, MySQL identity,
 database session, dan admin password claim sudah terverifikasi melalui public
 Vercel.
@@ -140,8 +141,10 @@ non-registration operations masih local browser state. SQLite tetap fast test ad
 
 Kandidat Fonnte memakai transactional outbox dan Better Auth magic link
 single-use 30 menit; token hanya disimpan sebagai hash dan tidak ikut request
-GET. Projection display, export/print, domain/TLS, webhook reconciliation,
-retry operator, provider nyata, dan runtime production belum terverifikasi.
+GET. Status webhook memakai shared secret dan idempotent event ledger; operator
+dapat retry failed/blocked setelah cooldown dengan batas lima percobaan.
+Projection display, export/print, domain/TLS, provider nyata, dan runtime
+production belum terverifikasi.
 
 ## Data yang digunakan
 

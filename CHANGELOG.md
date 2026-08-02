@@ -12,6 +12,18 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-02
 
+### AOGTICVITY Fonnte operations candidate
+
+- Ringkasan: melengkapi kandidat akses WhatsApp dengan webhook status,
+  reconciliation, retry/recovery, redacted operator console, dan preflight.
+- Produk/area terdampak: AOGTICVITY Fonnte integration, migration 010,
+  operations UI/API, audit, reliability, security, dan release/UAT contract.
+- Klasifikasi: `CONFIRMED`; source HEAD
+  `8bfabf51b1e88d78a375eac067dad2aba7f0c8f4` berstatus
+  `IMPLEMENTED_NOT_DEPLOYED`.
+- Production berubah: tidak. 72 test/typecheck/build/audit lulus dan functional
+  MySQL 8.4 disposable lulus; vault/provider/staging/two-device UAT menunggu.
+
 ### AOGTICVITY WhatsApp access candidate
 
 - Ringkasan: flow daftar sampai akses player kini memiliki kandidat lokal
