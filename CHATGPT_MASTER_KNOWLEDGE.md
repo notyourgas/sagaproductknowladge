@@ -270,6 +270,12 @@ redacted queue console. Hostinger release `20260802T125353Z`, Vercel production
 `dpl_3zhzGA9oTp7U2QkKVyekJPZTxkz2`, dan migration 009–010 aktif. Device
 preflight serta satu pengiriman channel UAT lulus; provider status webhook dan
 full approval/magic-link/session UAT belum lulus.
+Source `6375c3b5f5079721b2ed73553d1fc80e0f97877a`, Hostinger release
+`20260802T132948Z`, Vercel production `dpl_6ZpF67T1p2u7SgK1EVJBCjJoeCng`,
+dan migration 011–012 menambahkan role-bound redirect tanpa selector, workspace
+operator terpisah, assignment tim leader oleh admin, team-scoped player/leader,
+roster perwakilan persisten, serta status lomba lintas perangkat dengan
+versioning, idempotency, permission, dan audit.
 Ini adalah nama terbaru project 17an/Olimpiade Kemerdekaan.
 
 Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:
@@ -279,8 +285,8 @@ Business readiness: `BLOCKED`. Public delivery aktif di
 diaktifkan. Real credential login dan database-backed session sudah terbukti;
 admin password claim dan registration UAT sudah selesai. Roster/check-in/result
 rehearsal, provider status webhook, WhatsApp magic-link/session UAT, dan
-physical multi-device UAT belum selesai. Sebagian non-registration UI masih
-memakai bundled master/local state.
+physical multi-device UAT belum selesai. Team generator, edit rundown,
+announcement, dan live-controller masih memakai local state.
 Sejak release 1 Agustus 2026, surface
 tersebut memakai festival UI/UX mobile 430 px dengan Plus Jakarta Sans,
 Feather-style icons, Motion for React, restrained celebration, dan

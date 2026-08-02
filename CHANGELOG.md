@@ -12,6 +12,23 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-02
 
+### AOGTICVITY role-bound dashboard dan operasi lomba production
+
+- Ringkasan: mengikat redirect/login/dashboard ke role database yang ditetapkan
+  admin; memisahkan operator; membatasi leader/player ke tim; serta
+  mengaktifkan roster perwakilan dan status lomba persisten lintas perangkat.
+- Produk/area terdampak: AOGTICVITY identity/navigation, access directory,
+  admin/operator/leader/player UX, roster, competition operations, MySQL,
+  security, audit, release, rollback, dan UAT.
+- Klasifikasi: `CONFIRMED`; source
+  `6375c3b5f5079721b2ed73553d1fc80e0f97877a`, Hostinger
+  `20260802T132948Z`, Vercel `dpl_6ZpF67T1p2u7SgK1EVJBCjJoeCng`, migration
+  011–012, status `PRODUCTION_DEPLOYED`.
+- Production berubah: ya. Activation keseluruhan tetap
+  `NOT_PRODUCTION_ACTIVATED` dan business readiness `BLOCKED` sampai
+  authenticated role UAT, workflow local-state tersisa, WhatsApp full flow,
+  serta rehearsal fisik lulus.
+
 ### SagaView Consent Dashboard tahan gangguan production
 
 - Ringkasan: membuat state loading/error/offline/empty/recovered jujur,

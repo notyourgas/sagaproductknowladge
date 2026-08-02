@@ -162,9 +162,10 @@ ketika keputusan atau release baru menutup gap.
   approval/magic-link/session/reuse/revoke UAT masih `NEEDS CONFIRMATION`.
 - `NEEDS CONFIRMATION`: model bisnis produk (event internal, jasa per event, atau
   SaaS).
-- `NEEDS CONFIRMATION`: roster/check-in/result multi-device operations UAT,
-  authoritative frontend activation untuk surface non-registration,
-  recovery/session flow, target custom domain, dan physical event rehearsal.
+- `NEEDS CONFIRMATION`: role/assignment/roster/status-lomba/check-in/result
+  multi-device operations UAT; persistence team generator, rundown,
+  announcement, dan live-controller; recovery/session flow, target custom
+  domain, dan physical event rehearsal.
 - `NEEDS CONFIRMATION`: nama final Tim 7/Tim 8, durasi lomba, serta keputusan
   master recap yang masih provisional/open.
 

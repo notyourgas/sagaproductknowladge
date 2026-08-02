@@ -8,6 +8,28 @@ Mencatat perubahan material AOGTICVITY/17an/Olimpiade.
 
 Nama lama dipertahankan sebagai provenance; status runtime harus eksplisit.
 
+## 2026-08-02 - Role-bound dashboard dan operasi lomba production
+
+- `CONFIRMED`: Andreas menetapkan role akun berasal dari admin dashboard;
+  pengguna tidak lagi memilih role. Login melanjutkan ke home kanonik admin,
+  operator, leader, atau player berdasarkan session/database.
+- Admin dapat menetapkan ulang role dan tim leader dengan alasan serta session
+  revocation. Operator mempunyai workspace terbatas; leader dan player hanya
+  menerima data tim/pendaftaran yang terhubung.
+- Roster perwakilan dan status lomba kini persisten di MySQL dengan quota/team
+  validation, optimistic version, idempotency, permission, audit, dan failure
+  state lintas perangkat. Lomba seluruh tim tetap otomatis tanpa input nama.
+- Source `6375c3b5f5079721b2ed73553d1fc80e0f97877a`; Hostinger release
+  `20260802T132948Z`; Vercel production
+  `dpl_6ZpF67T1p2u7SgK1EVJBCjJoeCng`; migration 011–012. Backup, disposable
+  12-migration test, 79 unit/regression test, typecheck, build, dependency audit,
+  exact-source, service readiness, public route/RBAC smoke, dan rollback lulus.
+- Delivery `PRODUCTION_DEPLOYED`; activation keseluruhan tetap
+  `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED`. Authenticated
+  four-role UAT tidak dijalankan karena vault terkunci; team generator, rundown,
+  announcement, live-controller, WhatsApp full flow, dan physical rehearsal
+  masih menjadi next action.
+
 ## 2026-08-02 - Fonnte runtime dan WhatsApp channel UAT production
 
 - `CONFIRMED`: source release

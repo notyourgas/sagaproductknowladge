@@ -300,3 +300,17 @@ keputusan pengganti.
 | Pemberi keputusan | Andreas / founder |
 | Status | `CONFIRMED`; source dan public production runtime terverifikasi |
 | Dokumen terkait | [AOGTICVITY Product](products/aogticvity/PRODUCT.md), [AOGTICVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTICVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |
+
+## DEC-021 - AOGTICVITY mengikat link dan dashboard ke role admin
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-02 |
+| Topik | Assignment role, navigasi, dan scope lomba AOGTICVITY |
+| Keputusan | Admin menetapkan role akun dan tim leader. Pengguna tidak memilih role; setelah login server mengarahkan akun ke home kanonik admin, operator, leader, atau player. Leader hanya mengelola timnya, player hanya membaca profil/tim/penugasan terhubung, dan operator tidak memperoleh menu konfigurasi admin. |
+| Alasan | Role berbasis URL atau pilihan pengguna berisiko membuka workspace yang salah dan membuat alur hari-H membingungkan. |
+| Alternatif yang dipertimbangkan | Role selector setelah login; satu dashboard admin bersama untuk admin/operator; PIN tim leader; hanya menyembunyikan menu tanpa enforcement server. |
+| Dampak | Route dan API memakai session/database sebagai sumber role. Perubahan assignment mencabut session lama. Roster perwakilan dan status lomba menjadi persisten, versioned, idempotent, permission-scoped, dan diaudit. UAT role nyata serta rehearsal multi-device tetap wajib sebelum business-ready. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED`; source dan public production runtime terverifikasi, authenticated role UAT masih menunggu |
+| Dokumen terkait | [AOGTICVITY Product](products/aogticvity/PRODUCT.md), [AOGTICVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTICVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |

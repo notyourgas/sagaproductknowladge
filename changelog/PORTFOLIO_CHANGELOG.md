@@ -10,6 +10,19 @@ workflow, pricing, release, activation, atau blocker.
 Detail tetap berada pada changelog produk; entri docs-only berada di root
 [CHANGELOG](../CHANGELOG.md).
 
+## 2026-08-02 - AOGTICVITY role-bound operations production
+
+- `CONFIRMED`: admin kini menjadi sumber assignment role/tim; login tidak
+  menawarkan selector dan server mengarahkan tiap akun ke workspace kanonik.
+- Workspace operator terpisah, leader/player team-scoped, roster perwakilan,
+  serta status lomba lintas perangkat aktif dengan MySQL versioning,
+  idempotency, permission, dan audit.
+- Source `6375c3b5f5079721b2ed73553d1fc80e0f97877a`; Hostinger
+  `20260802T132948Z`; Vercel `dpl_6ZpF67T1p2u7SgK1EVJBCjJoeCng`;
+  migration 011–012. Delivery production hijau; authenticated role UAT,
+  workflow local-state tersisa, WhatsApp full flow, dan rehearsal fisik masih
+  menahan activation keseluruhan/business readiness.
+
 ## 2026-08-02 - SagaView Consent Dashboard tahan gangguan production
 
 - `CONFIRMED`: Consent Dashboard kini membedakan loading, offline/error,

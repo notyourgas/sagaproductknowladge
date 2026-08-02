@@ -62,7 +62,8 @@ dan rehearsal fisik masih menahan activation keseluruhan.
 
 ## Roadmap
 
-1. Uji roster, check-in, result, audit, offline/recovery melalui public Vercel.
+1. Uji role redirect, assignment tim, roster, status lomba, check-in, result,
+   audit, dan offline/recovery melalui public Vercel.
 2. Lakukan two-device authorization dan stale-state reconciliation UAT.
 3. Aktifkan target custom domain dan pilih recovery/notification provider.
 4. Finalisasi nama Tim 7/Tim 8, durasi, serta keputusan open pada master recap.
@@ -76,8 +77,9 @@ standing/announcement.
 
 ## User flow
 
-Scoring harus draft→publish→correct; correction memiliki reason/audit. Demo
-role switcher/PIN tidak boleh dipakai production.
+Scoring harus draft→publish→correct; correction memiliki reason/audit. Role
+ditetapkan admin dan home route berasal dari session/database. Pengguna tidak
+memilih role; leader team-scoped tidak lagi memakai PIN prototype.
 
 ## Business model
 
@@ -131,11 +133,14 @@ Feather-style icons, Motion for React, canvas-confetti terbatas, dan
 public/player/leader/admin/live surfaces. Backend Hostinger memakai Better
 Auth dengan MySQL, HttpOnly database session, TOTP admin, role authorization,
 rate limit, account suspend/reactivate, session revocation, identity audit,
-check-in, roster, event-master, serta server-authoritative result operations.
+check-in, roster assignment, competition status, event-master, serta
+server-authoritative result operations.
 Vercel menjadi public edge dan guarded HTTPS proxy ke backend; endpoint backend
 langsung 404 tanpa server-only proxy secret dan MySQL tetap loopback-only.
-Registrasi tidak lagi memakai participant fixture atau localStorage. Sebagian
-non-registration operations masih local browser state. SQLite tetap fast test adapter.
+Registrasi tidak lagi memakai participant fixture atau localStorage. Roster
+perwakilan dan status lomba memakai optimistic version, idempotency, RBAC,
+audit, dan MySQL. Team generator, edit rundown, announcement, dan
+live-controller masih local browser state. SQLite tetap fast test adapter.
 
 ## Integrasi
 
@@ -156,7 +161,7 @@ announcement, version, audit, dan export.
 ## Risiko dan asumsi
 
 Event-day time pressure, network failure, duplicate scoring, stale projection,
-residual local state non-registration, aktivasi/recovery provider notification,
+residual local state pada team/rundown/announcement/live, aktivasi/recovery provider notification,
 operations UAT, dua nama tim placeholder, serta durasi dan keputusan
 master recap yang masih provisional/open.
 

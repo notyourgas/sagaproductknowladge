@@ -11,8 +11,8 @@ Keputusan terbuka berada di [GAPS](../../GAPS.md#aogticvity).
 
 ## Konteks
 
-Dokumen membedakan public Vercel delivery, auth/registrasi database nyata,
-surface operasional yang masih memakai local state, dan UAT fisik multi-device
+Dokumen membedakan public Vercel delivery, operasi yang sudah server-authoritative,
+surface pendukung yang masih memakai local state, dan UAT fisik multi-device
 yang masih tertunda.
 
 ## Ringkasan
@@ -86,6 +86,13 @@ Public delivery saat ini: `https://olimpiade-kemerdekaan.vercel.app`.
   Fonnte device preflight dan satu pengiriman kanal ke penerima UAT lulus.
   Provider status webhook dan approval → magic-link → session → reuse/revoke
   UAT belum lulus, sehingga WhatsApp login belum boleh diklaim production-ready.
+- Source `6375c3b5f5079721b2ed73553d1fc80e0f97877a`, Hostinger release
+  `20260802T132948Z`, Vercel production
+  `dpl_6ZpF67T1p2u7SgK1EVJBCjJoeCng`, dan migration 011–012 mengaktifkan
+  redirect home server-side berdasarkan role database, workspace operator
+  terpisah, assignment tim leader dari admin, workspace player/leader
+  team-scoped, roster perwakilan atomik, serta status lomba lintas perangkat.
+  Role tidak lagi dipilih pengguna; leader tidak lagi memakai PIN prototype.
 - SQLite hanya fast test adapter.
 - Event-master memiliki dry-run, validation, atomic publish, versioning, dan
   audit. Durasi jadwal bersifat provisional dan dapat disunting admin.
@@ -94,8 +101,9 @@ Public delivery saat ini: `https://olimpiade-kemerdekaan.vercel.app`.
   forced bootstrap change, HttpOnly session, expiry, RBAC, rate limit, revoke,
   dan audit tetap wajib.
 - Participant fixture dan persistence registrasi localStorage telah dihapus.
-  Sebagian operasi non-registrasi masih memakai local state sampai seluruh API
-  frontend dan UAT multi-device lulus.
+  Roster perwakilan dan status lomba kini server-authoritative. Team generator,
+  edit rundown, announcement, dan live-controller masih memerlukan finalisasi
+  persistence/UAT sebelum seluruh operasi hari-H boleh diklaim siap.
 
 ## Status saat ini
 
@@ -120,6 +128,10 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:
   404 dan MySQL tetap bind pada loopback.
 - Typecheck, test, build, security, accessibility, responsive, migration, dan
   rollback telah menjadi gate.
+- Login tidak memiliki selector role atau email admin bawaan. Admin menetapkan
+  role dan tim leader; perubahan assignment mencabut session lama. Admin,
+  operator, leader, dan player mempunyai home route kanonik yang ditegakkan
+  server-side.
 - Roster/check-in/result rehearsal lintas perangkat, target custom domains,
   aktivasi provider status webhook, WhatsApp magic-link/session UAT, serta UAT
   fisik hari-H belum selesai.
@@ -129,7 +141,8 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:
 - Fonnte runtime dan pengiriman kanal UAT sudah aktif, tetapi UI tidak boleh
   mengklaim seluruh flow login WhatsApp production-ready sebelum webhook status
   dan two-device magic-link/session UAT lulus.
-- Local state non-registrasi bukan persistence multi-device.
+- Team generator, edit rundown, announcement, dan live-controller yang masih
+  local state bukan persistence multi-device.
 - Auth dan registrasi sudah terbukti, tetapi belum membuktikan seluruh
   event-day journey business-ready sebelum operations rehearsal.
 
