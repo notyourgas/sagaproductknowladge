@@ -269,6 +269,19 @@ Kontrak ini sekarang enforced server-side pada runtime production yang aktif.
 - device trust, session, foto lokal, backend, payment, tenant isolation, output,
   dan export/print 4R tidak berubah.
 
+## Navigasi Studio Console mobile
+
+`CONFIRMED` - production:
+
+- header mobile menampilkan posisi route sebagai `Menu n/8`, sehingga operator
+  mengetahui bahwa Studio Console memiliki delapan menu;
+- tombol sebelumnya/berikutnya masing-masing 44 px membuka menu yang semula
+  tersembunyi di luar viewport, sedangkan route aktif otomatis dipusatkan;
+- seluruh jalur Session, General, Frames, Brand, Output, Izin Foto, Changelog,
+  dan Install App tetap memakai route serta permission yang sama;
+- keyboard, reduced-motion, active state, no-overflow 390x844, desktop
+  1440x900, dan tepat satu `Powered by SagaView` tervalidasi.
+
 ## Status saat ini
 
 - Delivery: `PRODUCTION_DEPLOYED`.
@@ -279,14 +292,14 @@ Kontrak ini sekarang enforced server-side pada runtime production yang aktif.
 ### Runtime production
 
 - Backend source:
-  `f26bb57737fc25a0a40d350dc26ca727d30885b2`.
-- Backend release aktif: `20260802042221-f26bb57`; source backend tidak berubah
-  pada promosi S91.
+  `fa228d89bc5bea32fb19bf424a4b0e48db1bc506`.
+- Backend release aktif: `20260803022430-fa228d8`; backend tidak dipromosikan
+  ulang dan migration tidak diperlukan pada batch navigasi Studio.
 - Studio source aktif:
-  `ae21062f1767542ea2af52b4ba874dac4ec1142f`.
-- Studio release aktif: `20260803062122-ae21062`.
+  `c7d239c95032822aa05b92b3a3682452dc33edf2`.
+- Studio release aktif: `20260803101436-c7d239c`.
 - Studio release sebelumnya yang menjadi rollback:
-  `20260802200733-34519c4`.
+  `20260803062122-ae21062`.
 - Saga Platform source:
   `a6bb8afbfe2353597ea55329c50829a220bc5d3e`.
 - Saga Platform release: `20260802104018-a6bb8af`.
@@ -313,12 +326,14 @@ Kontrak ini sekarang enforced server-side pada runtime production yang aktif.
 
 ### Release validation
 
-- Backend: 908/908 test, 10.629 assertions.
-- Studio S91: 156 unit test, 85/85 E2E default-parallel, dan 5/5 focused Frames;
-  regression mencakup frame/customer/output/import 50/200/500, device transfer,
-  trial, privacy handoff, dan accessibility.
-- Sepuluh Studio/customer/public route smoke 200 dengan HSTS, CSP, dan
-  `X-Frame-Options: DENY` konsisten; visual produksi mobile/desktop lulus.
+- Backend shared runtime: 960/960 test, 11.007 assertions dari release aktif;
+  batch navigasi tidak mengubah backend atau database.
+- Studio S92: 156 unit test dan 87/87 E2E default-parallel; focused navigasi
+  mobile 2/2 lokal, sedangkan live user journey Session -> Output, direct route,
+  active state, dan no-overflow lulus pada production.
+- Studio/customer/public route smoke 200 dengan `/up` 200 melalui Nginx, HSTS,
+  CSP, nosniff, dan `X-Frame-Options: DENY`; visual production 390x844 dan
+  1440x900 lulus.
 - Import 50/200/500, accessibility, responsive mobile–desktop, forced-colors,
   reduced-motion, dependency audit, dan bundle budget lulus.
 - Physical Windows/Epson L8050, 200-photo, offline/reconnect, dan emergency
@@ -328,8 +343,8 @@ Kontrak ini sekarang enforced server-side pada runtime production yang aktif.
 
 ### Rollback
 
-- Backend: `20260801101515-f26bb57`.
-- Studio: `20260802200733-34519c4`.
+- Backend: `20260802221221-994de01`.
+- Studio: `20260803062122-ae21062`.
 - Backup release dan konfigurasi Nginx sebelumnya dipertahankan.
 
 ## Belum boleh diklaim

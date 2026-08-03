@@ -129,9 +129,9 @@ jam, 10 GB aset frame cloud, laporan lanjutan, activity log, dan priority
 support. Session/foto dipasarkan unlimited dengan fair-use; foto tetap lokal.
 
 `CONFIRMED` — kontrak ini aktif di production. Source Studio aktif adalah
-`ae21062f1767542ea2af52b4ba874dac4ec1142f`, release
-`20260803062122-ae21062`; rollback Studio adalah
-`20260802200733-34519c4`. Output Settings hanya menampilkan action simpan saat
+`c7d239c95032822aa05b92b3a3682452dc33edf2`, release
+`20260803101436-c7d239c`; rollback Studio adalah
+`20260803062122-ae21062`. Output Settings hanya menampilkan action simpan saat
 dirty, tidak menutup konten mobile, mempertahankan action sticky desktop, dan
 menjaga status `Belum disimpan` tetap jujur. Kontrak folder, device, foto lokal,
 payment, dan output PNG 4R tidak berubah.
@@ -156,6 +156,12 @@ ke Session. CTA utama 48 px serta keyboard, forced-colors, reduced-motion,
 mobile/desktop, no-overflow, dan satu `Powered by SagaView` tervalidasi. Device,
 session, foto lokal, backend, payment, tenant isolation, dan output 4R tidak
 berubah.
+
+Navigasi Studio Console mobile sekarang menunjukkan posisi `Menu n/8`, memakai
+tombol sebelumnya/berikutnya 44 px, dan memusatkan route aktif. Operator dapat
+menemukan Output, Izin Foto, Changelog, serta Install App tanpa menebak bahwa
+tab dapat digeser. Session, permission, local-first, customer flow, backend,
+payment, dan output 4R tidak berubah.
 
 ## Kompetitor
 

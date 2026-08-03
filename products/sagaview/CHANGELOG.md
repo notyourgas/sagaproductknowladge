@@ -4,6 +4,32 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-08-03 - Navigasi Studio Console mobile terlihat production
+
+- Klasifikasi: `CONFIRMED`.
+- Status: `PRODUCTION_DEPLOYED` dan `PRODUCTION_ACTIVATED`; business readiness
+  mass-scale tetap `NEEDS CONFIRMATION`.
+- Before: header mobile hanya memperlihatkan empat tab pertama dan badge nomor
+  route, tanpa kontrol atau petunjuk bahwa Output, Izin Foto, Changelog, dan
+  Install App berada di luar viewport.
+- After: header menampilkan `Menu n/8`, tombol sebelumnya/berikutnya 44 px,
+  serta auto-center route aktif dengan reduced-motion; seluruh delapan route
+  dapat dijangkau tanpa horizontal page overflow.
+- Studio source `c7d239c95032822aa05b92b3a3682452dc33edf2`, release
+  `20260803101436-c7d239c`; backend aktif tetap release
+  `20260803022430-fa228d8` dan tidak dipromosikan ulang.
+- Validation: 44 file/156 unit, full E2E 87/87, focused navigasi 2/2 lokal,
+  live Session -> Output/direct-route/no-overflow, build/budget, accessibility,
+  dependency audit 0, route/header smoke, service/Nginx/journal, serta visual
+  390x844 dan 1440x900 lulus.
+- Percobaan promosi pertama fail-closed sebelum switch karena npm server lama;
+  clean install diulang memakai npm 11.13.0 dan exact commit marker sebelum
+  promosi kedua.
+- Tidak ada migration, payment/provider action, perubahan backend/database,
+  customer flow, device/session/permission, tenant isolation, privacy foto,
+  frame picker, watermark, atau output/export/print 4R.
+- Rollback Studio `20260803062122-ae21062` tersedia.
+
 ## 2026-08-03 - Katalog frame padat dan bantuan aman production
 
 - Klasifikasi: `CONFIRMED`.

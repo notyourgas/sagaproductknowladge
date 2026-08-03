@@ -12,6 +12,35 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-03
 
+### SagaView navigasi Studio Console mobile production release
+
+- Ringkasan: menambahkan badge `Menu n/8`, tombol navigasi
+  sebelumnya/berikutnya 44 px, dan auto-center route aktif pada shell mobile.
+- Alasan: empat route terakhir sebelumnya berada di luar viewport tanpa kontrol
+  atau petunjuk yang cukup, sehingga operator dapat mengira hanya empat menu
+  yang tersedia.
+- Produk/area terdampak: SagaView Studio Console shell, seluruh delapan route
+  admin, responsive navigation, accessibility, release, rollback, dan
+  knowledge runtime.
+- Klasifikasi: `CONFIRMED`; source
+  `c7d239c95032822aa05b92b3a3682452dc33edf2`, release
+  `20260803101436-c7d239c`, status `PRODUCTION_DEPLOYED` dan
+  `PRODUCTION_ACTIVATED`.
+- Production berubah: ya, app-only. Rollback `20260803062122-ae21062`
+  dipertahankan; backend/database serta migration tidak berubah.
+- Gate: 156 unit, 87/87 E2E, focused 2/2, live journey Session -> Output,
+  no-overflow, build/budget, audit 0, accessibility, route/header smoke,
+  service/Nginx/journal, exact commit marker, dan visual production dua viewport
+  lulus.
+- Percobaan deploy pertama berhenti sebelum switch karena npm runtime lama;
+  kandidat dibersihkan otomatis lalu clean install pinned npm 11.13.0 lulus
+  pada promosi kedua.
+- Blocker/next action: tidak ada blocker release; Founding Studio Pilot tetap
+  diperlukan sebelum klaim `BUSINESS_READY` mass-scale.
+- File knowledge: `products/sagaview/PRODUCT.md`, `DOSSIER.md`, `CHANGELOG.md`,
+  master knowledge, portfolio changelog, `GAPS.md`, root changelog, dan sync
+  status.
+
 ### SagaBook Review touch-safe production release
 
 - Ringkasan: memperbesar enam jalur edit Review dari sekitar 31x18 menjadi

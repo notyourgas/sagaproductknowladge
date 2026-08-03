@@ -10,6 +10,20 @@ workflow, pricing, release, activation, atau blocker.
 Detail tetap berada pada changelog produk; entri docs-only berada di root
 [CHANGELOG](../CHANGELOG.md).
 
+## 2026-08-03 - SagaView navigasi mobile terlihat production
+
+- `CONFIRMED`: Studio Console mobile sekarang menampilkan `Menu n/8`, tombol
+  sebelumnya/berikutnya 44 px, dan auto-center route aktif. Output, Izin Foto,
+  Changelog, serta Install App tidak lagi bergantung pada tebakan swipe.
+- Source Studio `c7d239c95032822aa05b92b3a3682452dc33edf2` aktif pada release
+  `20260803101436-c7d239c`; rollback `20260803062122-ae21062` tersedia.
+- 156 unit, 87/87 E2E, focused 2/2, live journey Session -> Output,
+  no-overflow, build/budget, audit 0, accessibility, route/header smoke,
+  service/Nginx/journal, dan visual production mobile/desktop lulus.
+- Backend/database, migration, payment/provider, customer flow,
+  device/session/permission, tenant isolation, foto lokal, frame picker,
+  watermark, output 4R, dan business-readiness claim tidak berubah.
+
 ## 2026-08-03 - SagaBook Review touch-safe production
 
 - `CONFIRMED`: enam jalur `Ubah` pada Review storefront berubah dari target

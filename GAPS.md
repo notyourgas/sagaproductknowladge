@@ -120,6 +120,11 @@ ketika keputusan atau release baru menutup gap.
 
 ### Gap SagaView ditutup
 
+- `CONFIRMED` pada 3 Agustus 2026: discoverability delapan route Studio Console
+  mobile ditutup pada source `c7d239c9`, release `20260803101436-c7d239c`.
+  Badge posisi, tombol 44 px, auto-center, live route journey, no-overflow, dan
+  satu watermark lulus. Ini tidak menutup gap Founding Studio Pilot.
+
 - `GAP-001` — `CONFIRMED` pada 31 Juli 2026: satu paid Tokopay canary
   menghasilkan satu processed callback exactly-once, subscription aktif, dan
   katalog canary otomatis diarsipkan pada Saga Platform release
