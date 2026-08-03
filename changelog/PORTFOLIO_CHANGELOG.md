@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-04 - SagaView signature login implemented, production hold
+
+- `CONFIRMED`: candidate login menambahkan tepat satu `Powered by SagaView` di
+  footer tanpa overlap atau overflow pada 390x844 dan 1440x900.
+- Source `99790fa13eea3c17a1187843985042319e131ed2` sudah dipush; build, 908 test,
+  18 focused auth, Playwright 2/2 deterministik, accessibility states, dan npm
+  audit 0 lulus.
+- Status `IMPLEMENTED_NOT_DEPLOYED`. Production tetap backend
+  `20260802042221-f26bb57` dan Studio `20260803163234-2ab7261`; deploy ditahan
+  karena Packagist timeout membuat Composer advisory audit belum konklusif.
+- Tidak ada perubahan data, payment, tenant/device/session, permission, foto,
+  frame, export, atau print.
+
 ## 2026-08-04 - AOGTICVITY community taxonomy production
 
 - Taxonomy demo pendaftaran diganti dua kategori final: `TEEN` dengan enam

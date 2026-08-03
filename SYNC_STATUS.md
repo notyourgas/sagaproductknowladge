@@ -12,20 +12,19 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-04T03:10:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-04T04:23:26+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `be38e109acc33b1acdc7e8c7f2a224db502915a7` |
-| Informasi terakhir disinkronkan | SagaBook Admin Booking compact triage source `d70fc1e0d922eed86fe4ea4998688aad32c68c43`, release `20260803194351-d70fc1e`, berstatus `PRODUCTION_DEPLOYED`; activation scope UI `PRODUCTION_ACTIVATED`, business readiness tetap `NEEDS CONFIRMATION`. |
+| Baseline sebelum pembaruan | `fcbd7c35b9d913272184226a60784c6ec1ad1f18` |
+| Informasi terakhir disinkronkan | SagaView login signature source `99790fa13eea3c17a1187843985042319e131ed2` berstatus `IMPLEMENTED_NOT_DEPLOYED`; production tetap backend `20260802042221-f26bb57` dan Studio `20260803163234-2ab7261`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada; perubahan hanya presentation responsive Admin Booking dan runner visual idempotent. |
-| Error | Tidak ada pada release SagaBook. Authenticated production visual operator tidak direkam tanpa credential; UAT studio nyata tetap menahan business readiness. |
+| Konflik | Tidak ada; candidate presentation login tidak mengubah runtime atau workflow autentikasi. |
+| Error | Packagist timeout membuat Composer advisory audit belum konklusif; deploy SagaView ditahan fail-closed. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/sagabook/PRODUCT.md`
-- `products/sagabook/DOSSIER.md`
-- `products/sagabook/CHANGELOG.md`
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHANGELOG.md`
@@ -33,9 +32,9 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 ## Item menunggu konfirmasi
 
-Jalankan UAT operator studio nyata pada Admin Booking sebelum klaim business
-readiness SagaBook; status production-deployed tidak sama dengan kesiapan jual
-tanpa batas.
+Ulangi Composer advisory audit saat Packagist tersedia. Hanya deploy exact
+candidate SagaView setelah audit hijau, preflight production lulus, rollback
+terverifikasi, dan public smoke mobile/desktop tersedia.
 
 ## Cara verifikasi
 

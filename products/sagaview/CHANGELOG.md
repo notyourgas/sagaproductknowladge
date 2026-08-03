@@ -4,6 +4,28 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-08-04 - Signature login siap rilis, belum dideploy
+
+- Klasifikasi: `CONFIRMED`.
+- Status: `IMPLEMENTED_NOT_DEPLOYED`; production dan activation tidak berubah.
+- Before: halaman login menampilkan copyright SagaDev dan tautan legal, tetapi
+  belum memiliki signature produk wajib `Powered by SagaView`.
+- After: candidate menampilkan tepat satu signature non-link yang terbaca di
+  footer tanpa menutupi form atau surface promosi.
+- Source candidate `99790fa13eea3c17a1187843985042319e131ed2` pada branch
+  `codex/s94-sagaview-login-brand`; backend production tetap
+  `20260802042221-f26bb57`, Studio production tetap
+  `20260803163234-2ab7261`.
+- Validation: build production, 908/908 test backend dengan 10.629 assertion,
+  18/18 focused auth, Playwright mobile/desktop 2/2 dua kali, no-overflow,
+  target footer 44 px, forced-colors, reduced-motion, visual baseline, dan npm
+  audit 0 vulnerability lulus.
+- Blocker: endpoint advisory Packagist timeout, sehingga Composer audit belum
+  menghasilkan verdict terkini. Deploy immutable ditahan fail-closed sampai
+  audit dapat diulang dan lulus.
+- Tidak ada perubahan database, migration, payment/provider, entitlement,
+  tenant/device/session, permission, customer photo, frame, export, atau print.
+
 ## 2026-08-03 - Fallback bantuan device selalu tersedia production
 
 - Klasifikasi: `CONFIRMED`.

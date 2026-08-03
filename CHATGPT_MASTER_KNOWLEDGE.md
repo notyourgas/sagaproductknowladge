@@ -302,6 +302,14 @@ tombol sebelumnya/berikutnya 44 px, dan memusatkan route aktif. Delapan route
 tetap memakai permission serta kontrak operasional lama; perubahan tidak
 menyentuh customer flow, local-first, payment, privacy foto, atau output 4R.
 
+Candidate login source `99790fa13eea3c17a1187843985042319e131ed2` menambahkan
+tepat satu signature `Powered by SagaView` pada footer login dan sudah lolos
+build, full backend test, focused auth, visual mobile/desktop, no-overflow,
+forced-colors, reduced-motion, serta npm audit 0. Statusnya
+`IMPLEMENTED_NOT_DEPLOYED`: production belum berubah karena Composer advisory
+audit tertahan timeout Packagist. Jangan menyebut signature login ini aktif di
+production sebelum exact release dan public smoke tersedia.
+
 Candidate Saga Platform `dcb5a3f3` menyiapkan signup SagaView auto-trial 7 hari
 tanpa approval owner/email verification. Login tetap menunggu provisioning
 ready dan device tetap diaktivasi dari aplikasi studio. Statusnya

@@ -311,6 +311,23 @@ Kontrak ini sekarang enforced server-side pada runtime production yang aktif.
 - panel mobile/desktop memakai target minimal 44 px, forced-colors,
   reduced-motion, tanpa overflow, dan tidak menutupi `Powered by SagaView`.
 
+## Candidate signature login
+
+`CONFIRMED` - `IMPLEMENTED_NOT_DEPLOYED`:
+
+- halaman login SagaView sudah memiliki candidate signature
+  `Powered by SagaView` satu kali di footer, terpisah dari copyright dan tautan
+  legal;
+- layout candidate tervalidasi pada 390x844 dan 1440x900 tanpa overlap atau
+  horizontal overflow, dengan target tautan footer minimal 44 px,
+  reduced-motion, forced-colors, serta baseline visual;
+- source candidate `99790fa13eea3c17a1187843985042319e131ed2` sudah dipush pada branch
+  `codex/s94-sagaview-login-brand`;
+- production belum berubah. Backend aktif tetap
+  `20260802042221-f26bb57`, Studio tetap `20260803163234-2ab7261`;
+- gate deploy ditahan karena audit advisory Composer tidak dapat menjangkau
+  Packagist. Retry audit yang hijau menjadi syarat sebelum immutable release.
+
 ## Status saat ini
 
 - Delivery: `PRODUCTION_DEPLOYED`.

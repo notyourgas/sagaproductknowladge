@@ -12,6 +12,24 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-04
 
+### SagaView signature login candidate
+
+- Ringkasan: menambahkan candidate `Powered by SagaView` satu kali pada footer
+  login dan regression visual agar signature tidak overlap atau overflow.
+- Produk/area terdampak: presentasi halaman login, aksesibilitas footer, visual
+  regression, dan release gate; data serta workflow login tidak berubah.
+- Klasifikasi: `CONFIRMED`; source
+  `99790fa13eea3c17a1187843985042319e131ed2`, status
+  `IMPLEMENTED_NOT_DEPLOYED`.
+- Gate hijau: build, 908/908 backend test, 18/18 focused auth, Playwright
+  mobile/desktop 2/2 deterministik, forced-colors, reduced-motion, target 44
+  px, no-overflow, visual baseline, dan npm audit 0.
+- Production berubah: tidak. Backend dan Studio release aktif tetap sama.
+  Packagist timeout menahan Composer advisory audit, sehingga deploy ditahan
+  fail-closed sampai audit terkini lulus.
+- File knowledge: product/changelog SagaView, master knowledge, portfolio
+  changelog, root changelog, dan sync status.
+
 ### AOGTICVITY community taxonomy production
 
 - Ringkasan: menghapus kategori/CG demo dari pendaftaran baru dan
