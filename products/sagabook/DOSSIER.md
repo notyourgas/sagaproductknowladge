@@ -271,6 +271,18 @@ tombol 72x44; rollback `20260802221221-994de01` tersedia. Kontrak booking,
 payment/provider, availability, permission, session, dan tenant isolation tidak
 berubah.
 
+Success screen WhatsApp support pada source
+`51a916537b51e8a503c6c88d3b130d2396558589` berstatus
+`PRODUCTION_DEPLOYED` sebagai release `20260803080450-51a9165`; rollback
+`20260803022430-fa228d8` tersedia. Customer diarahkan ke detail/status booking
+sebelum CTA WhatsApp cabang yang dipilih; nomor tidak valid memperoleh fallback
+salin pesan. Full matrix fresh lulus 448 skenario dengan 50 controlled skips
+dan 0 failure pada mobile, tablet, serta desktop. Backend 960/960, build,
+design audit, audit dependency 0, backup/restore exact-SHA, manifest, smoke,
+service health, endpoint publik, dan visual browser produksi dua viewport
+lulus. Demo SnapStudio masih belum dipublish; activation tenant nyata dan
+business readiness tetap memerlukan UAT terkontrol.
+
 ## Integrasi
 
 Payment dan notification provider, serta future SagaView handoff.

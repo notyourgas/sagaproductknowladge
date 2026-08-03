@@ -12,20 +12,20 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-03T13:28:54+07:00 |
+| Waktu pembaruan terakhir | 2026-08-03T15:15:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `185dbe59` |
-| Informasi terakhir disinkronkan | AOGTICVITY player access redirect dan roster sync source `64d00282d1eb3fc13713f818c7c326659464676d`, Hostinger release `20260803T061744Z`, Vercel `dpl_9MtjxbGLSHNz7bHXjrLS1RZpZm5U`, migration 016 berstatus `PRODUCTION_DEPLOYED`. |
+| Baseline sebelum pembaruan | `b86d749d` |
+| Informasi terakhir disinkronkan | SagaBook success screen WhatsApp support source `51a916537b51e8a503c6c88d3b130d2396558589`, release `20260803080450-51a9165`, berstatus `PRODUCTION_DEPLOYED`; rollback `20260803022430-fa228d8` tersedia. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
 | Konflik | Tidak ada; local `main` sama dengan `origin/main` sebelum edit. |
-| Error | Tidak ada pada gate otomatis. Valid-link WhatsApp dan assignment roster dua perangkat tetap memerlukan UAT manusia. |
+| Error | Tidak ada pada gate otomatis. Demo SnapStudio belum dipublish; activation tenant nyata dan business readiness masih memerlukan UAT terkontrol. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/aogticvity/PRODUCT.md`
-- `products/aogticvity/DOSSIER.md`
-- `products/aogticvity/CHANGELOG.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHANGELOG.md`
@@ -34,10 +34,9 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 ## Item menunggu konfirmasi
 
-Jalankan valid-link WhatsApp UAT pada dua perangkat: approval, konsumsi link,
-session persistence, reuse/revoke, publish tim, assignment/remove roster,
-reconnect recovery, dan logout. Provider status webhook dan rehearsal fisik
-hari-H juga tetap diperlukan sebelum klaim `BUSINESS_READY`.
+Jalankan satu booking success terkontrol pada tenant pilot untuk membuktikan CTA
+detail/status dan WhatsApp cabang tanpa menyalin PII ke knowledge. Founding
+Studio Pilot tetap diperlukan sebelum klaim `BUSINESS_READY`.
 
 ## Cara verifikasi
 

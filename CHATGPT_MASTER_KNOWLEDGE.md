@@ -190,17 +190,17 @@ rollback, screenshot, serta DOM live mobile+desktop juga lulus. Watermark hadir
 tepat satu, overflow false, dan keenam tombol berukuran 72x44. Rollback
 `20260802221221-994de01` tersedia; tidak ada perubahan kontrak payment/provider.
 
-Success screen WhatsApp support terbaru tersedia pada source `7f129ead`, branch
-`codex/s92-booking-success-whatsapp`, dengan status
-`IMPLEMENTED_NOT_DEPLOYED`. Customer diarahkan ke detail/status dan WhatsApp
-cabang yang dipilih dengan pesan konteks public-safe; nomor cabang yang tidak
-valid memakai fallback salin pesan. Focused success/watermark 9/9, backend
-960/960 dengan 11.007 assertions, unit guard 2/2, build, design audit, serta
-audit dependency 0 lulus. Matrix runner aman terhadap junction dan baseline
-success deterministik. Rerun fresh mencapai 264 passed, 45 controlled skips,
-dan 1 failed karena fixture tablet memilih jam yang sudah lewat lalu ditolak
-HTTP 409. Produksi tetap source `fa228d89`, release
-`20260803022430-fa228d8`, rollback `20260802221221-994de01`.
+Success screen WhatsApp support terbaru aktif pada source `51a91653`, release
+`20260803080450-51a9165`, dengan status `PRODUCTION_DEPLOYED`; rollback
+`20260803022430-fa228d8` tersedia. Customer diarahkan ke detail/status dan
+WhatsApp cabang yang dipilih dengan pesan konteks public-safe; nomor cabang
+yang tidak valid memakai fallback salin pesan. Fixture future-safe dipisahkan
+per viewport. Full matrix fresh lulus 448 skenario dengan 50 controlled skips
+dan 0 failure; backend 960/960 dengan 11.007 assertions, build, design audit,
+env guard, audit dependency 0, backup/restore exact-SHA, manifest, smoke,
+service health, endpoint publik, dan browser produksi dua viewport lulus.
+Demo SnapStudio masih belum dipublish, sehingga activation tenant nyata dan
+business readiness tetap `NEEDS CONFIRMATION`.
 
 Keputusan privacy/retention/offboarding SagaBook yang lebih rinci telah
 disetujui owner untuk implementasi dan legal review pada source docs commit

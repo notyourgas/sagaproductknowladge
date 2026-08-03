@@ -12,6 +12,27 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-03
 
+### SagaBook success screen WhatsApp support production
+
+- Ringkasan: mempromosikan jalur detail/status dan WhatsApp cabang pada success
+  screen setelah blocker fixture lintas-viewport ditutup.
+- Alasan: customer memerlukan bantuan kontekstual setelah booking, sementara
+  regression harus tetap deterministik dan tidak membuat booking waktu lampau.
+- Produk/area terdampak: tenant booking storefront success screen,
+  accessibility, branch routing, visual regression, dan release safety.
+- Klasifikasi: `CONFIRMED`; source
+  `51a916537b51e8a503c6c88d3b130d2396558589`, release
+  `20260803080450-51a9165`, status `PRODUCTION_DEPLOYED`; rollback
+  `20260803022430-fa228d8` tersedia.
+- Gate: matrix 448 passed dengan 50 controlled skips dan 0 failure, backend
+  960/960 dengan 11.007 assertions, build, design audit, env guard, audit
+  dependency 0, backup/restore exact-SHA, manifest, smoke, service health,
+  empat endpoint 200, dan browser produksi dua viewport.
+- Production berubah: ya. Demo SnapStudio tetap belum dipublish; activation
+  tenant nyata dan business readiness masih `NEEDS CONFIRMATION`.
+- File knowledge: `products/sagabook/PRODUCT.md`, `DOSSIER.md`, `CHANGELOG.md`,
+  master knowledge, portfolio changelog, `GAPS.md`, dan `SYNC_STATUS.md`.
+
 ### AOGTICVITY player access redirect dan roster sync production
 
 - Ringkasan: memperbaiki public-origin redirect untuk magic-link peserta dan

@@ -98,14 +98,16 @@ ketika keputusan atau release baru menutup gap.
 - `CONFIRMED`: blocker fixture/scoping visual ditutup. Full matrix fresh lulus
   142/142 dengan 2 expected skips; backup/restore exact-SHA, DB audit 100,
   service/public smoke, dan DOM live dua viewport lulus.
-- `TODO`: success screen WhatsApp support source `7f129ead` berstatus
-  `IMPLEMENTED_NOT_DEPLOYED`. Focused success/watermark 9/9, backend 960/960
-  dengan 11.007 assertions, unit guard 2/2, build, design audit, serta audit
-  dependency 0 lulus. Visual matrix fresh mencapai 264 passed, 45 controlled
-  skips, dan 1 failed: fixture map-recovery tablet memilih jam yang sudah lewat
-  dan ditolak HTTP 409. Batas dua correction rounds tercapai; fixture waktu
-  harus dibuat future-safe lalu full matrix diulang sebelum release gate.
-  Production tetap release `20260803022430-fa228d8`.
+- `CONFIRMED CLOSED`: blocker fixture waktu success screen ditutup pada source
+  `51a91653`; tanggal sintetis dipisahkan per viewport dan full matrix fresh
+  lulus 448 skenario dengan 50 controlled skips serta 0 failure. Release
+  `20260803080450-51a9165` aktif dengan backup/restore exact-SHA, manifest,
+  service/public smoke, dan browser produksi dua viewport; rollback
+  `20260803022430-fa228d8` tersedia.
+- `NEEDS CONFIRMATION`: demo SnapStudio pada browser produksi masih berstatus
+  belum dipublish. Jalankan satu booking success terkontrol pada tenant pilot
+  tanpa menyalin PII ke knowledge untuk membuktikan CTA detail/status dan
+  WhatsApp cabang sebelum klaim activation tenant nyata atau business ready.
 
 ### SagaView
 

@@ -1,5 +1,20 @@
 # Portfolio Changelog
 
+## 2026-08-03 - SagaBook success support production
+
+- `CONFIRMED`: success screen booking mengutamakan detail/status dan WhatsApp
+  cabang yang dipilih, dengan pesan public-safe serta fallback salin pesan.
+- Source `51a916537b51e8a503c6c88d3b130d2396558589` aktif sebagai release
+  `20260803080450-51a9165`; rollback `20260803022430-fa228d8` tersedia.
+- Fixture visual future-safe dipisahkan per viewport. Full matrix fresh lulus
+  448 skenario dengan 50 controlled skips dan 0 failure; backend 960/960,
+  build, design audit, env guard, audit dependency 0, backup/restore exact-SHA,
+  manifest, service/public smoke, dan visual produksi dua viewport lulus.
+- Delivery `PRODUCTION_DEPLOYED`. Demo SnapStudio masih belum dipublish;
+  activation tenant nyata dan business readiness tetap `NEEDS CONFIRMATION`.
+- Booking/payment/provider, availability, permission, session, tenant
+  isolation, SagaView, dan preset lain tidak berubah.
+
 ## 2026-08-03 - AOGTICVITY player access dan roster sync production
 
 - Magic-link peserta kini kembali ke origin publik dengan typed failure dan

@@ -156,8 +156,8 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
 
 - Customer Booking Center aktif di production.
 - Source production terbaru pada cut-off: commit
-  `994de01cf3586adb4da8813a9c4b931085457510`.
-- Release production tercatat: `20260802221221-994de01`.
+  `51a916537b51e8a503c6c88d3b130d2396558589`.
+- Release production tercatat: `20260803080450-51a9165`.
 - Storefront, admin, dan super-admin merespons public smoke.
 - Tenant Onboarding dan First Booking Activation aktif melalui Activation
   Center yang tenant-scoped dan server-authoritative.
@@ -296,21 +296,24 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
   dan visual live dua viewport lulus. Endpoint `/up` masih tanpa HSTS/CSP;
   route login dan booking yang diaudit mengirim header keamanan.
 - Success screen WhatsApp support pada source
-  `7f129eadd0ab3cb214b6d5128765e086f14ac0cc` berstatus
-  `IMPLEMENTED_NOT_DEPLOYED`. Before: bantuan setelah booking berhenti pada
-  copy template admin. After: customer mendapat CTA 48 piksel menuju detail
-  dan status booking, lalu WhatsApp cabang yang dipilih dengan pesan konteks
-  public-safe; jika nomor cabang tidak valid, UI menyediakan fallback salin
-  pesan. Focus keyboard, `aria-live`, forced-colors, no-overflow, serta tepat
-  satu `Powered by SagaBook` lulus pada mobile 390x844, tablet 768x1024, dan
-  desktop 1440x900. Focused success/watermark 9/9, backend 960/960 dengan
-  11.007 assertions, build, design audit, dan npm/Composer audit 0 lulus.
-  Visual-matrix guard untuk junction dan baseline success deterministik sudah
-  ditutup; rerun fresh mencapai 264 passed, 45 controlled skips, dan 1 failed.
-  Satu fixture tablet membuat booking pada jam yang sudah lewat dan menerima
-  HTTP 409, sehingga release tetap fail-closed dan production memakai source
-  `fa228d89bc5bea32fb19bf424a4b0e48db1bc506`, release
-  `20260803022430-fa228d8`, dengan rollback `20260802221221-994de01`.
+  `51a916537b51e8a503c6c88d3b130d2396558589` berstatus
+  `PRODUCTION_DEPLOYED` sebagai release `20260803080450-51a9165`; rollback
+  `20260803022430-fa228d8` dipertahankan. Before: bantuan setelah booking
+  berhenti pada copy template admin. After: customer mendapat CTA 48 piksel
+  menuju detail dan status booking, lalu WhatsApp cabang yang dipilih dengan
+  pesan konteks public-safe; jika nomor cabang tidak valid, UI menyediakan
+  fallback salin pesan. Focus keyboard, `aria-live`, forced-colors,
+  no-overflow, serta tepat satu `Powered by SagaBook` lulus pada mobile
+  390x844, tablet 768x1024, dan desktop 1440x900. Fixture visual kini memakai
+  tanggal sintetis terpisah per viewport agar tidak saling bentrok. Full matrix
+  fresh lulus 448 skenario dengan 50 controlled skips dan 0 failure; backend
+  960/960 dengan 11.007 assertions, build, design audit 26 artefak, env guard
+  2/2, dan npm/Composer audit 0 lulus. S39 backup terenkripsi, checksum,
+  disposable restore exact-SHA, manifest, smoke internal, service health,
+  empat endpoint 200, HSTS/CSP pada route booking, serta browser produksi
+  public-safe dua viewport lulus. Demo SnapStudio masih menampilkan state
+  belum dipublish; aktivasi tenant nyata dan business readiness tetap perlu
+  UAT terkontrol.
 - Refinement navigasi dari langkah Review pada source
   `fa228d89bc5bea32fb19bf424a4b0e48db1bc506` berstatus
   `PRODUCTION_DEPLOYED` sebagai release `20260803022430-fa228d8`. Enam kontrol `Ubah` yang sebelumnya sekitar

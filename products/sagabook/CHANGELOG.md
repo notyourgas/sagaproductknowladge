@@ -4,6 +4,28 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-03 - Success screen WhatsApp support dipromosikan
+
+- Klasifikasi: `CONFIRMED`; delivery `PRODUCTION_DEPLOYED`, activation tenant
+  nyata `NEEDS CONFIRMATION`, business readiness tetap `NEEDS CONFIRMATION`.
+- Source `51a916537b51e8a503c6c88d3b130d2396558589` aktif sebagai release
+  `20260803080450-51a9165`; rollback `20260803022430-fa228d8` tersedia.
+- Before: bantuan setelah booking hanya menyalin template admin. After: CTA
+  utama membuka detail/status booking, lalu CTA 48 piksel membuka WhatsApp
+  cabang yang dipilih dengan pesan public-safe; nomor tidak valid memakai
+  fallback salin pesan.
+- Fixture visual dibuat future-safe dan dipisahkan per viewport, sehingga
+  matrix fresh lulus 448 skenario dengan 50 controlled skips dan 0 failure.
+  Backend 960/960 dengan 11.007 assertions, build, design audit 26 artefak,
+  env guard 2/2, serta npm/Composer audit 0 lulus.
+- Release safety lulus: backup terenkripsi, checksum, disposable restore
+  exact-SHA, manifest, smoke internal, nginx/queue, empat endpoint 200,
+  HSTS/CSP pada route booking, dan browser produksi public-safe 390x844 serta
+  1440x900. Demo SnapStudio masih belum dipublish; booking nyata terkontrol
+  tetap diperlukan sebelum klaim activation tenant atau business readiness.
+- Booking/payment/provider, availability, permission, session, tenant
+  isolation, preset lain, dan SagaView tidak berubah.
+
 ## 2026-08-03 - Success screen WhatsApp support candidate
 
 - Klasifikasi: `CONFIRMED`; delivery `IMPLEMENTED_NOT_DEPLOYED`.
