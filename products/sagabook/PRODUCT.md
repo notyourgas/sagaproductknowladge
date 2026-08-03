@@ -156,8 +156,8 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
 
 - Customer Booking Center aktif di production.
 - Source production terbaru pada cut-off: commit
-  `cfb2af8fbec2e079b7341e0e1f1920511bf89022`.
-- Release production tercatat: `20260803132556-cfb2af8`.
+  `d70fc1e0d922eed86fe4ea4998688aad32c68c43`.
+- Release production tercatat: `20260803194351-d70fc1e`.
 - Storefront, admin, dan super-admin merespons public smoke.
 - Tenant Onboarding dan First Booking Activation aktif melalui Activation
   Center yang tenant-scoped dan server-authoritative.
@@ -315,16 +315,17 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
   belum dipublish; aktivasi tenant nyata dan business readiness tetap perlu
   UAT terkontrol.
 - Admin Booking compact triage pada source
-  `cfb2af8fbec2e079b7341e0e1f1920511bf89022` berstatus
+  `d70fc1e0d922eed86fe4ea4998688aad32c68c43` berstatus
   `PRODUCTION_DEPLOYED` dan `PRODUCTION_ACTIVATED` sebagai release
-  `20260803132556-cfb2af8`; rollback `20260803080450-51a9165` tersedia.
+  `20260803194351-d70fc1e`; rollback `20260803132556-cfb2af8` tersedia.
   Before: viewport 1024 piksel memakai tabel 930 piksel sehingga nama, tanggal,
   paket, dan status terpecah menjadi kolom sempit. After: viewport di bawah
   1280 piksel memakai kartu triage ringkas; desktop 1440 piksel tetap memakai
   tabel. Focus, forced-colors, reduced-motion, target sentuh 44 piksel,
-  no-overflow, dan tepat satu `Powered by SagaBook` lulus. Gate mencakup 930
-  Feature test, 26 visual smoke, 7 focused Playwright pada mobile/tablet/
-  desktop plus viewport risiko 1024, build, audit dependency 0, S39 backup
+  no-overflow, dan tepat satu `Powered by SagaBook` lulus. Gate final mencakup
+  960 backend test dengan 11.007 assertion, 449 visual pass dengan 52 controlled
+  skip dalam 18 chunk mobile/tablet/desktop, focused Playwright pada viewport
+  risiko 1024, build, audit dependency 0, S39 backup
   terenkripsi dan disposable restore exact-SHA, database audit 100, service,
   empat endpoint 200, serta browser produksi public-safe 390x844 dan 1440x900.
   Booking/payment/provider, availability, permission, session, tenant

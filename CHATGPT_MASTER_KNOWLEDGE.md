@@ -203,8 +203,8 @@ Demo SnapStudio masih belum dipublish, sehingga activation tenant nyata dan
 business readiness tetap `NEEDS CONFIRMATION`.
 
 Admin Booking compact triage terbaru aktif pada source
-`cfb2af8fbec2e079b7341e0e1f1920511bf89022`, release
-`20260803132556-cfb2af8`, dengan rollback `20260803080450-51a9165`. Viewport
+`d70fc1e0d922eed86fe4ea4998688aad32c68c43`, release
+`20260803194351-d70fc1e`, dengan rollback `20260803132556-cfb2af8`. Viewport
 di bawah 1280 piksel sekarang memakai kartu triage ringkas sehingga nama,
 jadwal, paket, status, dan action tetap terbaca pada 1024 piksel; desktop 1440
 tetap memakai tabel. Target 44 piksel, keyboard/focus, forced-colors,

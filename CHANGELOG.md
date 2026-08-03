@@ -46,10 +46,11 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 - Produk/area terdampak: Admin Booking responsive presentation, focused visual
   regression, release immutable, production smoke, dan knowledge publik.
 - Klasifikasi: `CONFIRMED`; source
-  `cfb2af8fbec2e079b7341e0e1f1920511bf89022`, release
-  `20260803132556-cfb2af8`, rollback `20260803080450-51a9165`, status
+  `d70fc1e0d922eed86fe4ea4998688aad32c68c43`, release
+  `20260803194351-d70fc1e`, rollback `20260803132556-cfb2af8`, status
   `PRODUCTION_DEPLOYED` dan activation scope UI `PRODUCTION_ACTIVATED`.
-- Gate: 930 Feature test, 26 visual smoke, 7 focused Playwright, build,
+- Gate: 960 backend test/11.007 assertion, 449 visual pass/52 controlled skip,
+  focused Playwright viewport 1024, build,
   dependency audit 0, backup/restore exact-SHA, DB audit 100, services,
   endpoint, dan browser produksi mobile/desktop lulus.
 - Production berubah: ya, hanya presentasi Admin Booking. Business readiness

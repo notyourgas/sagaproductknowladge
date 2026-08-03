@@ -17,9 +17,10 @@
 - `CONFIRMED`: layar Booking pada viewport di bawah 1280 piksel sekarang
   memakai kartu triage ringkas; desktop 1440 tetap memakai tabel. Masalah
   kolom sempit pada 1024 piksel ditutup tanpa mengubah workflow atau data.
-- Source `cfb2af8fbec2e079b7341e0e1f1920511bf89022` aktif pada release
-  `20260803132556-cfb2af8`; rollback `20260803080450-51a9165` tersedia.
-- 930 Feature test, 26 visual smoke, 7 focused Playwright, build, audit
+- Source `d70fc1e0d922eed86fe4ea4998688aad32c68c43` aktif pada release
+  `20260803194351-d70fc1e`; rollback `20260803132556-cfb2af8` tersedia.
+- 960 backend test/11.007 assertion, 449 visual pass/52 controlled skip dalam
+  18 chunk, focused Playwright viewport 1024, build, audit
   dependency 0, backup/restore exact-SHA, DB audit 100, service, endpoint, dan
   visual produksi dua viewport lulus. Target 44 piksel, keyboard, focus,
   forced-colors, reduced-motion, no-overflow, serta satu watermark tercakup.

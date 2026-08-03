@@ -8,15 +8,16 @@ Mencatat perubahan material SagaBook dengan provenance public-safe.
 
 - Klasifikasi: `CONFIRMED`; delivery `PRODUCTION_DEPLOYED`, activation scope
   UI `PRODUCTION_ACTIVATED`, business readiness tetap `NEEDS CONFIRMATION`.
-- Source `cfb2af8fbec2e079b7341e0e1f1920511bf89022` aktif sebagai release
-  `20260803132556-cfb2af8`; rollback `20260803080450-51a9165` tersedia.
+- Source `d70fc1e0d922eed86fe4ea4998688aad32c68c43` aktif sebagai release
+  `20260803194351-d70fc1e`; rollback `20260803132556-cfb2af8` tersedia.
 - Before: pada viewport 1024 piksel, tabel minimal 930 piksel memecah nama,
   tanggal, paket, dan status menjadi kolom sempit. After: viewport di bawah
   1280 piksel memakai kartu triage ringkas; desktop 1440 tetap memakai tabel.
 - Keyboard detail flow, target sentuh 44 piksel, focus, forced-colors,
   reduced-motion, no-overflow, dan tepat satu `Powered by SagaBook` lulus.
-  Gate: 930 Feature test, 26 visual smoke, 7 focused Playwright pada mobile,
-  tablet, desktop, dan 1024; build; npm/Composer audit 0; S39 backup terenkripsi,
+  Gate final: 960 backend test dengan 11.007 assertion; 449 visual pass dengan
+  52 controlled skip dalam 18 chunk mobile/tablet/desktop; focused Playwright
+  pada 1024; build; npm/Composer audit 0; S39 backup terenkripsi,
   checksum, disposable restore exact-SHA; manifest; DB audit 100; service;
   empat endpoint 200; serta browser produksi public-safe dua viewport.
 - Booking/payment/provider, availability, permission, session, tenant
