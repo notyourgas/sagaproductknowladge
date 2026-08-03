@@ -12,6 +12,30 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-03
 
+### SagaBook Review touch-safe candidate belum dipromosikan
+
+- Ringkasan: memperbesar enam jalur edit Review dari sekitar 31x18 menjadi
+  tombol semantik minimal 72x44 piksel dengan label, keyboard focus,
+  forced-colors, dan reduced-motion.
+- Alasan: customer harus dapat kembali mengubah cabang, paket, jadwal,
+  background, add-on, atau nama tanpa target sentuh kecil.
+- Produk/area terdampak: SagaBook tenant storefront, Review navigation,
+  accessibility, visual regression, dan release acceptance.
+- Klasifikasi: `CONFIRMED`; source
+  `b1a11eb589d45ab00fffba34e5a3317fc69ec8a4`, status
+  `IMPLEMENTED_NOT_DEPLOYED`. Production tetap source `994de01c`, release
+  `20260802221221-994de01`; rollback `20260802183533-35c8219`.
+- Production berubah: tidak. Booking/payment/provider, availability,
+  permission, session, tenant isolation, watermark, dan SagaView tidak berubah.
+- Gate: backend 960/960, focused Review 9/9, accessibility 24/24, scoped E2E,
+  build, npm/Composer audit 0, serta lima preset x tiga viewport lulus.
+- Blocker/next action: full visual acceptance merah pada baseline/fixture
+  langkah non-Review dan scope test mobile-only; selaraskan kontrak test lalu
+  ulangi seluruh gate sebelum deploy.
+- File knowledge: `products/sagabook/PRODUCT.md`, `DOSSIER.md`, `CHANGELOG.md`,
+  master knowledge, portfolio changelog, `GAPS.md`, root changelog, dan sync
+  status.
+
 ### SagaView katalog frame padat production release
 
 - Ringkasan: mengubah katalog terisi menjadi kartu horizontal ringkas pada

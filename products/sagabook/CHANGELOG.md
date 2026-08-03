@@ -4,6 +4,30 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-03 - Navigasi edit Review touch-safe, promotion ditahan
+
+- Klasifikasi: `CONFIRMED`; delivery `IMPLEMENTED_NOT_DEPLOYED`, activation
+  production tidak berubah, business readiness tetap `NEEDS CONFIRMATION`.
+- Source `b1a11eb589d45ab00fffba34e5a3317fc69ec8a4` tersedia pada branch
+  `codex/s91-booking-mobile-navigation`; production tetap source
+  `994de01cf3586adb4da8813a9c4b931085457510`, release
+  `20260802221221-994de01`, dengan rollback `20260802183533-35c8219`.
+- Before: enam kontrol `Ubah` pada Review berukuran sekitar 31x18 piksel.
+  After: seluruhnya menjadi tombol semantik minimal 72x44 piksel, memiliki
+  label screen reader, focus keyboard, forced-colors, dan reduced-motion.
+- Lima preset pada mobile 390x844, tablet 768x1024, dan desktop 1440x900 tidak
+  overflow serta tetap menampilkan tepat satu `Powered by SagaBook`. Booking,
+  payment/provider, availability, permission, session, tenant isolation, dan
+  SagaView tidak berubah.
+- Gate hijau: backend 960/960 dengan 11.007 assertions; focused Review 9/9;
+  accessibility 24/24; scoped E2E mobile dan desktop; build; npm/Composer
+  audit 0. Gate merah: full visual acceptance menemukan baseline/fixture lama
+  yang tidak konsisten pada langkah Jadwal/Background non-Review, dan satu test
+  mobile-only belum di-skip pada project desktop. Screenshot unrelated tidak
+  diperbarui secara spekulatif; deploy immutable tidak dijalankan.
+- Blocker/next action: selaraskan kontrak fixture dan scope project pada suite
+  visual global, lalu ulangi full acceptance sebelum promotion.
+
 ## 2026-08-03 - Storefront booking desktop dipromosikan
 
 - Klasifikasi: `CONFIRMED`; delivery `PRODUCTION_DEPLOYED`, activation scope

@@ -296,6 +296,20 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
   dan visual live dua viewport lulus. Endpoint `/up` masih tanpa HSTS/CSP;
   route login dan booking yang diaudit mengirim header keamanan.
 - Candidate signup tanpa approval owner dan trial kanonik 7 hari sudah
+- Refinement navigasi dari langkah Review pada source
+  `b1a11eb589d45ab00fffba34e5a3317fc69ec8a4` berstatus
+  `IMPLEMENTED_NOT_DEPLOYED`. Enam kontrol `Ubah` yang sebelumnya sekitar
+  31x18 piksel kini menjadi tombol semantik minimal 72x44 piksel dengan label
+  screen reader, focus keyboard, forced-colors, dan reduced-motion. Kelima
+  preset pada mobile, tablet, dan desktop tidak overflow serta tetap memiliki
+  tepat satu `Powered by SagaBook`. Booking, payment/provider, availability,
+  permission, session, tenant isolation, dan SagaView tidak berubah. Backend
+  960/960, focused Review 9/9, accessibility 24/24, scoped E2E mobile dan
+  desktop, build, serta npm/Composer audit 0 lulus. Promotion ditahan karena
+  full visual acceptance menemukan baseline/fixture lama yang tidak konsisten
+  pada langkah non-Review; production tetap pada release
+  `20260802221221-994de01` sampai blocker tersebut ditutup.
+- Candidate signup tanpa approval owner dan trial kanonik 7 hari sudah
   `LOCAL_VALIDATED` pada source
   `dcb5a3f3dc1e3e7b5c0c067e8968ca341ebf1c27`. Production tetap memakai
   kontrak aktif di atas sampai ada release approval baru; status candidate

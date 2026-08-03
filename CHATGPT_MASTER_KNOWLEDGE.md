@@ -178,6 +178,16 @@ session, permission, tenant isolation, SagaView, dan klaim business readiness
 tidak berubah. Endpoint `/up` masih tanpa HSTS/CSP; route login dan booking yang
 diaudit mengirim header keamanan.
 
+Refinement navigasi Review terbaru tersedia pada source `b1a11eb5` dengan
+status `IMPLEMENTED_NOT_DEPLOYED`. Enam tombol `Ubah` sekarang minimal 72x44
+piksel, semantik, berlabel, keyboard-accessible, dan kompatibel dengan
+forced-colors/reduced-motion. Lima preset pada mobile, tablet, dan desktop
+tidak overflow serta memiliki tepat satu `Powered by SagaBook`. Backend
+960/960, focused Review 9/9, accessibility 24/24, scoped E2E, build, dan audit
+dependency 0 lulus. Full visual acceptance masih merah pada baseline/fixture
+langkah non-Review; karena itu production tetap release
+`20260802221221-994de01` dan tidak ada activation baru.
+
 Keputusan privacy/retention/offboarding SagaBook yang lebih rinci telah
 disetujui owner untuk implementasi dan legal review pada source docs commit
 `295ec863ff6cfc2e79ac98183651f19c15a3b368`. Workflow consent berversi,

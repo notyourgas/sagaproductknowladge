@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 2 Agustus 2026
+- Updated: 3 Agustus 2026
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED` untuk workflow yang tercantum di
   [PRODUCT](PRODUCT.md)
@@ -255,6 +255,19 @@ npm/Composer audit 0, encrypted backup, disposable restore exact-SHA,
 migration preflight, database audit 100, service, scoped journal, public smoke,
 dan visual production dua viewport lulus. Endpoint `/up` masih tanpa HSTS/CSP;
 route login dan booking yang diaudit mengirim HSTS, CSP, dan XFO SAMEORIGIN.
+
+Refinement Review storefront pada source
+`b1a11eb589d45ab00fffba34e5a3317fc69ec8a4` berstatus
+`IMPLEMENTED_NOT_DEPLOYED`. Enam jalur edit Review sekarang memakai tombol
+semantik minimal 72x44 piksel, label screen reader, focus keyboard,
+forced-colors, dan reduced-motion. Verifikasi lima preset pada mobile, tablet,
+dan desktop menunjukkan no-overflow serta tepat satu `Powered by SagaBook`.
+Backend 960/960, focused Review 9/9, accessibility 24/24, scoped E2E, build,
+serta npm/Composer audit 0 lulus. Full visual acceptance tetap merah akibat
+baseline/fixture lama yang tidak konsisten pada langkah non-Review; source
+belum dipromosikan dan runtime production tetap release
+`20260802221221-994de01`. Kontrak booking, payment/provider, availability,
+permission, session, dan tenant isolation tidak berubah.
 
 ## Integrasi
 

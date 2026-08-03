@@ -12,29 +12,31 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-03T06:25:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-03T07:33:56+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `0e93c57` |
-| Informasi terakhir disinkronkan | SagaView Studio source `ae21062f` aktif sebagai release `20260803062122-ae21062`; backend tetap `20260802042221-f26bb57`; rollback Studio `20260802200733-34519c4` dipertahankan. |
+| Baseline sebelum pembaruan | `ed680c9` |
+| Informasi terakhir disinkronkan | SagaBook Review touch-safe source `b1a11eb5` berstatus `IMPLEMENTED_NOT_DEPLOYED`; production tetap release `20260802221221-994de01` dari source `994de01c`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru |
 | Konflik | Tidak ada; local `main` sama dengan `origin/main` sebelum edit. |
-| Error | Tidak ada blocker release katalog frame. |
+| Error | Full visual acceptance SagaBook masih merah pada baseline/fixture langkah non-Review dan scoping test mobile-only; deploy tidak dijalankan. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/sagaview/PRODUCT.md`
-- `products/sagaview/DOSSIER.md`
-- `products/sagaview/CHANGELOG.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHANGELOG.md`
+- `GAPS.md`
 - `SYNC_STATUS.md`
 
 ## Item menunggu konfirmasi
 
-Founding Studio Pilot dan support observation tetap diperlukan sebelum klaim
-`BUSINESS_READY` mass-scale.
+Selaraskan baseline/fixture visual non-Review dan scoping test mobile-only
+sebelum source SagaBook `b1a11eb5` dapat dipromosikan. Founding Studio Pilot
+tetap diperlukan sebelum klaim `BUSINESS_READY`.
 
 ## Cara verifikasi
 

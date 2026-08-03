@@ -92,6 +92,12 @@ ketika keputusan atau release baru menutup gap.
 - `NEEDS CONFIRMATION`: URL Maps presisi tetap opsional untuk cabang yang ingin
   deep link spesifik; detail tenant dan URL lokasi tidak disimpan di knowledge
   publik.
+- `CONFIRMED`: refinement enam jalur edit Review touch-safe tersedia pada
+  source `b1a11eb5` dengan status `IMPLEMENTED_NOT_DEPLOYED`; production tetap
+  release `20260802221221-994de01`.
+- `TODO`: selaraskan baseline/fixture langkah non-Review dan beri skip/scoping
+  yang benar untuk test mobile-only pada project desktop. Ulangi full visual
+  acceptance sebelum source `b1a11eb5` boleh dipromosikan.
 
 ### SagaView
 
