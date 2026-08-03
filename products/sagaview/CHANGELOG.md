@@ -12,7 +12,7 @@ Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
   belum memiliki signature produk wajib `Powered by SagaView`.
 - After: candidate menampilkan tepat satu signature non-link yang terbaca di
   footer tanpa menutupi form atau surface promosi.
-- Source candidate `99790fa13eea3c17a1187843985042319e131ed2` pada branch
+- Source candidate `99790fa1ed7a2e14a9433da5caa4fdf67eaea38f` pada branch
   `codex/s94-sagaview-login-brand`; backend production tetap
   `20260802042221-f26bb57`, Studio production tetap
   `20260803163234-2ab7261`.

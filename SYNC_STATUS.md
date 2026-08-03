@@ -16,7 +16,7 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
 | Baseline sebelum pembaruan | `fcbd7c35b9d913272184226a60784c6ec1ad1f18` |
-| Informasi terakhir disinkronkan | SagaView login signature source `99790fa13eea3c17a1187843985042319e131ed2` berstatus `IMPLEMENTED_NOT_DEPLOYED`; production tetap backend `20260802042221-f26bb57` dan Studio `20260803163234-2ab7261`. |
+| Informasi terakhir disinkronkan | SagaView login signature source `99790fa1ed7a2e14a9433da5caa4fdf67eaea38f` berstatus `IMPLEMENTED_NOT_DEPLOYED`; production tetap backend `20260802042221-f26bb57` dan Studio `20260803163234-2ab7261`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
 | Konflik | Tidak ada; candidate presentation login tidak mengubah runtime atau workflow autentikasi. |
 | Error | Packagist timeout membuat Composer advisory audit belum konklusif; deploy SagaView ditahan fail-closed. |

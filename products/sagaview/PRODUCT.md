@@ -321,7 +321,7 @@ Kontrak ini sekarang enforced server-side pada runtime production yang aktif.
 - layout candidate tervalidasi pada 390x844 dan 1440x900 tanpa overlap atau
   horizontal overflow, dengan target tautan footer minimal 44 px,
   reduced-motion, forced-colors, serta baseline visual;
-- source candidate `99790fa13eea3c17a1187843985042319e131ed2` sudah dipush pada branch
+- source candidate `99790fa1ed7a2e14a9433da5caa4fdf67eaea38f` sudah dipush pada branch
   `codex/s94-sagaview-login-brand`;
 - production belum berubah. Backend aktif tetap
   `20260802042221-f26bb57`, Studio tetap `20260803163234-2ab7261`;

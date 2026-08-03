@@ -4,7 +4,7 @@
 
 - `CONFIRMED`: candidate login menambahkan tepat satu `Powered by SagaView` di
   footer tanpa overlap atau overflow pada 390x844 dan 1440x900.
-- Source `99790fa13eea3c17a1187843985042319e131ed2` sudah dipush; build, 908 test,
+- Source `99790fa1ed7a2e14a9433da5caa4fdf67eaea38f` sudah dipush; build, 908 test,
   18 focused auth, Playwright 2/2 deterministik, accessibility states, dan npm
   audit 0 lulus.
 - Status `IMPLEMENTED_NOT_DEPLOYED`. Production tetap backend

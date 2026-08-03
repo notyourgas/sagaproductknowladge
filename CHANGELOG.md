@@ -19,7 +19,7 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 - Produk/area terdampak: presentasi halaman login, aksesibilitas footer, visual
   regression, dan release gate; data serta workflow login tidak berubah.
 - Klasifikasi: `CONFIRMED`; source
-  `99790fa13eea3c17a1187843985042319e131ed2`, status
+  `99790fa1ed7a2e14a9433da5caa4fdf67eaea38f`, status
   `IMPLEMENTED_NOT_DEPLOYED`.
 - Gate hijau: build, 908/908 backend test, 18/18 focused auth, Playwright
   mobile/desktop 2/2 deterministik, forced-colors, reduced-motion, target 44

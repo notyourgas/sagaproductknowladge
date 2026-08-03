@@ -302,7 +302,7 @@ tombol sebelumnya/berikutnya 44 px, dan memusatkan route aktif. Delapan route
 tetap memakai permission serta kontrak operasional lama; perubahan tidak
 menyentuh customer flow, local-first, payment, privacy foto, atau output 4R.
 
-Candidate login source `99790fa13eea3c17a1187843985042319e131ed2` menambahkan
+Candidate login source `99790fa1ed7a2e14a9433da5caa4fdf67eaea38f` menambahkan
 tepat satu signature `Powered by SagaView` pada footer login dan sudah lolos
 build, full backend test, focused auth, visual mobile/desktop, no-overflow,
 forced-colors, reduced-motion, serta npm audit 0. Statusnya
