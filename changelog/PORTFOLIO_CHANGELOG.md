@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-03 - AOGTICVITY agenda density refinement production
+
+- Kartu agenda kini memberi hierarchy terpisah untuk kategori, judul, lokasi,
+  dan status; gap antarkartu serta grid 320 px menutup kepadatan visual tanpa
+  mengubah data atau workflow.
+- Source `3bd9c78a07b0196c9736fed725604c27a4ffa89d`; Hostinger release
+  `20260803T125358Z`; Vercel production
+  `dpl_8ZoZW1SEwv8JiYTXFZ7JEQ8dkpqJ`. Test 97, Playwright 34/34, axe,
+  typecheck/build, audit 0, readiness, redirect auth, dan visual smoke lulus.
+- Delivery tetap `PRODUCTION_DEPLOYED`; activation keseluruhan tetap
+  `NOT_PRODUCTION_ACTIVATED` dan business readiness `BLOCKED`.
+
 ## 2026-08-03 - AOGTICVITY Pixel Matchday Arcade UI production
 
 - Seluruh surface AOGTICVITY sekarang memakai visual original `Pixel Matchday

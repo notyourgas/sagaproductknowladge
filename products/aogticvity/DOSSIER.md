@@ -58,6 +58,9 @@ modal/state motion, dan reduced-motion fallback. Plus Jakarta Sans tetap satu-
 satunya font, Feather-style icons tetap dipakai, dan canvas mobile-first 430 px
 tidak diperlebar di desktop. Enam route publik lulus visual regression 34/34
 pada empat viewport serta axe WCAG 2 A/AA dan 2.1 AA tanpa pelanggaran.
+Agenda publik memakai urutan kategori → judul → lokasi → status, gap antarkartu,
+dan grid ringkas 320 px; waktu, status, link detail, serta sumber data tidak
+berubah.
 
 ## Fitur MVP
 

@@ -12,6 +12,25 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-03
 
+### AOGTICVITY agenda density refinement production
+
+- Ringkasan: memisahkan kategori, judul, lokasi, dan status pada kartu agenda,
+  menambah gap antarkartu, serta menyederhanakan grid 320 px setelah feedback
+  visual founder.
+- Produk/area terdampak: agenda public/player, responsive hierarchy, CSS pixel
+  cards, regression Playwright, Hostinger, Vercel, dan release knowledge.
+- Klasifikasi: `CONFIRMED`; source
+  `3bd9c78a07b0196c9736fed725604c27a4ffa89d`, Hostinger release
+  `20260803T125358Z`, Vercel `dpl_8ZoZW1SEwv8JiYTXFZ7JEQ8dkpqJ`, status
+  `PRODUCTION_DEPLOYED`. Auth, permission, data, dan workflow tidak berubah.
+- Gate: 97 test, typecheck/build, audit 0, Playwright 34/34, axe, hierarchy
+  assertion 320 px, no-overflow, readiness, protected redirect, dan visual
+  smoke publik lulus.
+- Production berubah: ya, UI agenda saja. Activation keseluruhan tetap
+  `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED`.
+- File knowledge: `products/aogticvity/PRODUCT.md`, `DOSSIER.md`,
+  `CHANGELOG.md`, master knowledge, portfolio changelog, dan `SYNC_STATUS.md`.
+
 ### AOGTICVITY Pixel Matchday Arcade UI production
 
 - Ringkasan: mengganti festival skin dengan sistem visual original `Pixel

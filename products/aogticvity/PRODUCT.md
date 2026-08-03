@@ -156,6 +156,9 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:
   hierarchy, state feedback, dan motion yang menghormati reduced-motion.
 - Public visual regression lulus 34/34 pada enam route dan viewport 320, 390,
   430, serta 1440 px; axe tidak menemukan pelanggaran WCAG 2 A/AA atau 2.1 AA.
+- Agenda publik memisahkan kategori, judul, lokasi, dan status menjadi empat
+  tingkat hierarchy, memberi gap antarkartu, dan menyembunyikan ikon dekoratif
+  pada 320 px agar informasi operasional tidak padat atau bertumpuk.
 - Master recap 2026 berisi 8 tim, 10 lomba, jadwal provisional, mekanisme,
   safety, equipment, dan assignment panitia.
 - Database-backed auth aktif melalui Vercel: real credential login dan forced

@@ -409,6 +409,10 @@ four-role, stale-write, serta offline recovery UAT belum sign-off.
 Sejak release 3 Agustus 2026, surface tersebut memakai `Pixel Matchday Arcade`
 mobile 430 px dengan Plus Jakarta Sans, Feather-style icons, quest/HUD
 hierarchy, stepped geometry, motion terukur, dan reduced-motion fallback.
+Agenda publik pada source `3bd9c78a` memisahkan kategori, judul, lokasi, dan
+status serta memberi gap antarkartu; refinement ini aktif pada Hostinger release
+`20260803T125358Z` dan Vercel `dpl_8ZoZW1SEwv8JiYTXFZ7JEQ8dkpqJ` tanpa
+perubahan data atau workflow.
 
 ### SagaOPS
 

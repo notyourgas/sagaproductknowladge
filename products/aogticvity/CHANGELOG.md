@@ -8,6 +8,24 @@ Mencatat perubahan material AOGTICVITY/17an/Olimpiade.
 
 Nama lama dipertahankan sebagai provenance; status runtime harus eksplisit.
 
+## 2026-08-03 - Agenda card density refinement production
+
+- `CONFIRMED`: kartu agenda tidak lagi menempatkan status, kategori, judul, dan
+  lokasi pada area atas yang sama. Urutan baru adalah kategori → judul → lokasi
+  → status, dengan gap antarkartu dan ruang vertikal yang lebih lega.
+- Pada 320 px hanya ikon dekoratif yang disembunyikan; waktu, status, durasi,
+  lokasi, peserta, dan link detail tetap tersedia. Auth, role, API, MySQL, dan
+  workflow tidak berubah.
+- Source `3bd9c78a07b0196c9736fed725604c27a4ffa89d`; release note
+  `e12a8c3fdc0cada17c4f7f2325fb8516963f29a5`; Hostinger release
+  `20260803T125358Z`; Vercel production
+  `dpl_8ZoZW1SEwv8JiYTXFZ7JEQ8dkpqJ` pada alias kanonik.
+- Gate: 97 test, typecheck/build, dependency audit 0, 34/34 Playwright, axe,
+  hierarchy assertion 320 px, no-overflow empat viewport, readiness, protected
+  redirect, dan visual smoke publik 390 px lulus.
+- Delivery `PRODUCTION_DEPLOYED`; activation dan business readiness tidak
+  berubah.
+
 ## 2026-08-03 - Pixel Matchday Arcade UI production
 
 - `CONFIRMED`: seluruh public/player/leader/operator/admin/live surface kini
