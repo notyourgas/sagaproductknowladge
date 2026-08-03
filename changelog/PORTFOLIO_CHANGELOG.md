@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-04 - AOGTICVITY Admin CRUD/lifecycle production
+
+- Admin kini dapat membuat/edit/arsip anggota, mengubah/reset profil tim, dan
+  memakai Control Center untuk menuju lifecycle lomba, roster, rundown, hasil,
+  pengumuman, akun, WhatsApp, serta audit.
+- Source `ecaa63f42deaf61e0777959853106e61e4b0bbc3`; Hostinger
+  `20260803T221158Z`; Vercel `dpl_9jKWEEKDQJkszwBGNyyNYTpBs2CJ`; migration
+  018. Gate 106 test, Playwright 47/47, 18 migration, 12/12 MySQL integration,
+  backup, readiness, authorization, dan public smoke lulus.
+- Delivery `PRODUCTION_DEPLOYED`; hard delete data operasional tetap
+  fail-closed. Activation keseluruhan `NOT_PRODUCTION_ACTIVATED` dan business
+  readiness `BLOCKED` sampai UAT manusia dan rehearsal selesai.
+
 ## 2026-08-04 - SagaView signature login implemented, production hold
 
 - `CONFIRMED`: candidate login menambahkan tepat satu `Powered by SagaView` di

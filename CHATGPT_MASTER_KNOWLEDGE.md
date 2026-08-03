@@ -426,6 +426,12 @@ Source `e38de48b2e8a88d7a7e2ac8aa54b0af9e398b38c`, Hostinger
 `TEEN` dengan CG teen 1-6 atau `SOUTH, WEST, CENTRAL` dengan CG youth 1-8.
 Form, API, admin/export, dan database memakai kontrak yang sama; nilai demo
 lama hanya dipertahankan sebagai legacy read-only dan tidak muncul di form.
+Source `ecaa63f42deaf61e0777959853106e61e4b0bbc3`, Hostinger
+`20260803T221158Z`, Vercel `dpl_9jKWEEKDQJkszwBGNyyNYTpBs2CJ`, dan migration
+018 mengaktifkan Admin Control Center, create/edit/archive anggota, serta
+update/reset profil tim. Mutation admin-only memakai same-origin, versioning,
+idempotency, transaksi, dan audit. ID/jumlah tim dan histori operasional tidak
+dapat di-hard-delete; gunakan lifecycle withdraw/archive/cancel/correct/revoke.
 Ini adalah nama terbaru project 17an/Olimpiade Kemerdekaan.
 
 Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:

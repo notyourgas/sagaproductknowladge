@@ -8,6 +8,29 @@ Mencatat perubahan material AOGTICVITY/17an/Olimpiade.
 
 Nama lama dipertahankan sebagai provenance; status runtime harus eksplisit.
 
+## 2026-08-04 - Admin CRUD and lifecycle production
+
+- `CONFIRMED`: Admin Control Center sekarang memetakan seluruh surface kelola.
+  Admin dapat membuat anggota manual, mengedit nama/kategori/subcategory/role,
+  dan mengarsipkan anggota tanpa menghapus histori. Arsip mencabut sesi dan
+  magic-link serta melepas assignment tim/roster aktif.
+- Profil delapan tim dapat diubah atau direset untuk nama, motto, dan warna.
+  ID/jumlah tim tetap dikunci oleh event master; anggota tim tetap dikelola
+  melalui assignment create/read/update/remove pada status Draft.
+- Mutation baru admin-only, same-origin, version-checked, idempotent,
+  transactional, dan audited. Hasil, audit, notification ledger, serta sesi
+  memakai lifecycle correction/archive/retry/revoke, bukan hard delete.
+- Source `ecaa63f42deaf61e0777959853106e61e4b0bbc3`; Hostinger
+  `20260803T221158Z`; Vercel `dpl_9jKWEEKDQJkszwBGNyyNYTpBs2CJ`; migration
+  `018_admin_resource_crud`.
+- Gate: 106 test, Playwright 47/47, local/Linux build dan typecheck, dependency
+  audit 0, 18 disposable migration, 12/12 MySQL integration, verified backup,
+  preservation tiga existing registration, readiness, route protection, dan
+  public API smoke lulus.
+- Delivery `PRODUCTION_DEPLOYED`; activation keseluruhan tetap
+  `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED` sampai authenticated
+  CRUD UAT, valid-link WhatsApp two-device UAT, dan rehearsal hari-H selesai.
+
 ## 2026-08-04 - Community taxonomy production
 
 - `CONFIRMED`: kategori demo `South`, `Central`, `West` dan 12 CG contoh

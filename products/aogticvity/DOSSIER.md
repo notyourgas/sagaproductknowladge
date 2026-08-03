@@ -7,7 +7,7 @@ content AOGTICVITY tetap jelas.
 
 ## Konteks dan status bukti
 
-- Updated: 3 Agustus 2026
+- Updated: 4 Agustus 2026
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED`
@@ -72,6 +72,12 @@ subcategory `CG teen`, dan `SOUTH, WEST, CENTRAL` dengan delapan subcategory
 constraint MySQL memakai satu taxonomy kanonik. Nilai demo lama tidak dapat
 dipakai untuk submission baru; record historis tetap dapat dibaca sebagai
 legacy dan tidak dipetakan secara spekulatif.
+
+Admin Control Center memetakan aksi CRUD/lifecycle untuk anggota, tim, lomba,
+roster, rundown, hasil, pengumuman, akun, WhatsApp, dan audit. Anggota dapat
+dibuat manual, diedit, dan diarsipkan; arsip mencabut akses dan melepas
+assignment tanpa menghapus histori. Profil delapan tim dapat diedit/reset,
+sementara ID dan jumlah tim tetap dikunci oleh event master.
 
 ## Fitur MVP
 
@@ -170,6 +176,10 @@ persisten; Draft disembunyikan dari Leader/Player dan standing publik,
 sedangkan stale write ditolak. Day-H readiness membaca agregat konsisten tanpa
 PII, mempunyai digest, cache snapshot terakhir, dan export JSON. SQLite tetap
 fast test adapter.
+CRUD anggota dan profil tim memakai mutation admin-only, same-origin,
+idempotency, optimistic version, transaksi MySQL, dan append-only resource
+audit. Hard delete tidak tersedia untuk data operasional yang sudah dirujuk;
+withdraw, archive, cancel, correct, retry, dan revoke dipakai sesuai lifecycle.
 Player workspace menggunakan participant-scoped snapshot, revision/ETag, dan
 feed event persisten untuk publish/lock tim serta roster assigned/removed.
 

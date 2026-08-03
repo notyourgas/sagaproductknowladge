@@ -12,6 +12,25 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-04
 
+### AOGTICVITY Admin CRUD and lifecycle production
+
+- Ringkasan: menambahkan create/edit/archive anggota, update/reset profil tim,
+  serta Control Center untuk seluruh lifecycle admin tanpa hard delete histori.
+- Produk/area terdampak: admin participant/team UI, API permission, MySQL
+  migration/audit/idempotency, roster cleanup, Hostinger, Vercel, dan knowledge.
+- Klasifikasi: `CONFIRMED`; source
+  `ecaa63f42deaf61e0777959853106e61e4b0bbc3`, Hostinger
+  `20260803T221158Z`, Vercel `dpl_9jKWEEKDQJkszwBGNyyNYTpBs2CJ`, migration
+  018, status `PRODUCTION_DEPLOYED`.
+- Gate: 106 test, Playwright 47/47, build/typecheck/audit 0, 18 disposable
+  migration, 12/12 MySQL integration, backup, record preservation, readiness,
+  authorization, dan public smoke lulus.
+- Production berubah: ya. Authenticated human CRUD UAT dan rehearsal masih
+  terbuka; activation keseluruhan tetap `NOT_PRODUCTION_ACTIVATED`, business
+  readiness `BLOCKED`.
+- File knowledge: product/dossier/changelog AOGTICVITY, master knowledge,
+  portfolio changelog, root changelog, dan sync status.
+
 ### SagaView signature login candidate
 
 - Ringkasan: menambahkan candidate `Powered by SagaView` satu kali pada footer

@@ -1,6 +1,6 @@
 # AOGTICVITY Product Knowledge
 
-Updated: 3 Agustus 2026
+Updated: 4 Agustus 2026
 Evidence status: public Vercel delivery + database-backed auth, registration, team, and event-day operations runtime
 
 ## Tujuan dokumen
@@ -145,6 +145,15 @@ Public delivery saat ini: `https://olimpiade-kemerdekaan.vercel.app`.
   `CG youth 1` sampai `CG youth 8`. Validasi API dan constraint MySQL menolak
   pasangan silang; record taxonomy lama tetap dipertahankan sebagai legacy
   read-only tanpa ditampilkan pada form baru.
+- Source `ecaa63f42deaf61e0777959853106e61e4b0bbc3`, Hostinger release
+  `20260803T221158Z`, Vercel production
+  `dpl_9jKWEEKDQJkszwBGNyyNYTpBs2CJ`, dan migration 018 mengaktifkan Admin
+  Control Center serta CRUD/lifecycle anggota dan tim. Admin dapat membuat
+  anggota manual, mengedit identitas komunitas, mengarsipkan anggota dengan
+  pencabutan sesi/assignment, serta mengubah atau mereset profil tim. Write
+  admin-only memakai same-origin, optimistic version, idempotency, transaksi,
+  dan append-only audit. ID/jumlah tim serta histori operasional tetap
+  fail-closed dari hard delete.
 - SQLite hanya fast test adapter.
 - Event-master memiliki dry-run, validation, atomic publish, versioning, dan
   audit. Durasi jadwal bersifat provisional dan dapat disunting admin.

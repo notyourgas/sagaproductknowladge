@@ -12,19 +12,20 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-04T04:23:26+07:00 |
+| Waktu pembaruan terakhir | 2026-08-04T05:15:27+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `fcbd7c35b9d913272184226a60784c6ec1ad1f18` |
-| Informasi terakhir disinkronkan | SagaView login signature source `99790fa1ed7a2e14a9433da5caa4fdf67eaea38f` berstatus `IMPLEMENTED_NOT_DEPLOYED`; production tetap backend `20260802042221-f26bb57` dan Studio `20260803163234-2ab7261`. |
+| Baseline sebelum pembaruan | `e3792392b07230ca81ce7b9cd251d77e50befd0b` |
+| Informasi terakhir disinkronkan | AOGTICVITY Admin CRUD/lifecycle source `ecaa63f42deaf61e0777959853106e61e4b0bbc3`, Hostinger `20260803T221158Z`, Vercel `dpl_9jKWEEKDQJkszwBGNyyNYTpBs2CJ`, migration 018 berstatus `PRODUCTION_DEPLOYED`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada; candidate presentation login tidak mengubah runtime atau workflow autentikasi. |
-| Error | Packagist timeout membuat Composer advisory audit belum konklusif; deploy SagaView ditahan fail-closed. |
+| Konflik | Tidak ada; hard delete tetap dibatasi demi histori/audit. |
+| Error | Tidak ada pada release AOGTICVITY; authenticated human CRUD UAT masih menunggu. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/sagaview/PRODUCT.md`
-- `products/sagaview/CHANGELOG.md`
+- `products/aogticvity/PRODUCT.md`
+- `products/aogticvity/DOSSIER.md`
+- `products/aogticvity/CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHANGELOG.md`
@@ -32,9 +33,9 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 ## Item menunggu konfirmasi
 
-Ulangi Composer advisory audit saat Packagist tersedia. Hanya deploy exact
-candidate SagaView setelah audit hijau, preflight production lulus, rollback
-terverifikasi, dan public smoke mobile/desktop tersedia.
+Lakukan authenticated CRUD UAT untuk create/edit/archive anggota, update/reset
+profil tim, assignment lintas role, WhatsApp access, audit, dan session revoke;
+lanjutkan rehearsal fisik sebelum mengubah business readiness.
 
 ## Cara verifikasi
 
