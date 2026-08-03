@@ -116,6 +116,13 @@ Public delivery saat ini: `https://olimpiade-kemerdekaan.vercel.app`.
   versioned, dan audited. Feed peserta hanya menerima pengumuman publik aktif.
   Admin/operator dapat membandingkan snapshot agregat PII-free dengan digest,
   cache perangkat terakhir, dan export JSON.
+- Source `64d00282d1eb3fc13713f818c7c326659464676d`, Hostinger release
+  `20260803T061744Z`, Vercel production
+  `dpl_9MtjxbGLSHNz7bHXjrLS1RZpZm5U`, dan migration 016 memperbaiki redirect
+  magic-link agar selalu kembali ke origin publik, bukan listener internal.
+  Workspace peserta kini server-authoritative dengan revision/ETag, refresh
+  12 detik plus focus/reconnect recovery, status sinkronisasi, serta feed
+  assignment roster dan lifecycle tim yang transaksional.
 - SQLite hanya fast test adapter.
 - Event-master memiliki dry-run, validation, atomic publish, versioning, dan
   audit. Durasi jadwal bersifat provisional dan dapat disunting admin.
@@ -161,14 +168,16 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:
   operator, leader, dan player mempunyai home route kanonik yang ditegakkan
   server-side.
 - Roster/check-in/result rehearsal lintas perangkat, target custom domains,
-  aktivasi provider status webhook, WhatsApp magic-link/session UAT, serta UAT
-  fisik hari-H belum selesai.
+  aktivasi provider status webhook, valid-link WhatsApp session UAT dua
+  perangkat, serta UAT fisik hari-H belum selesai. Public invalid-link smoke
+  sudah membuktikan redirect memakai origin Vercel dan tidak lagi localhost.
 
 ## Belum boleh diklaim
 
-- Fonnte runtime dan pengiriman kanal UAT sudah aktif, tetapi UI tidak boleh
+- Fonnte runtime dan pengiriman kanal UAT sudah aktif. Redirect magic-link dan
+  state invalid/expired/consumed sudah diperbaiki, tetapi UI tidak boleh
   mengklaim seluruh flow login WhatsApp production-ready sebelum webhook status
-  dan two-device magic-link/session UAT lulus.
+  dan valid-link two-device session UAT lulus.
 - Announcement, rundown, result desk, live-controller, dan readiness snapshot
   sudah server-authoritative, tetapi authenticated four-role multi-device UAT,
   stale-write browser UAT, dan offline cached-snapshot recovery belum sign-off.

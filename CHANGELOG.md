@@ -12,6 +12,20 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-03
 
+### AOGTICVITY player access redirect dan roster sync production
+
+- Ringkasan: memperbaiki public-origin redirect untuk magic-link peserta dan
+  menyelesaikan workspace peserta server-authoritative dengan revision/ETag,
+  refresh otomatis, recovery koneksi, serta feed perubahan tim/roster.
+- Produk/area terdampak: AOGTICVITY player auth, player workspace, roster/team
+  lifecycle, MySQL migration 016, Hostinger, Vercel, dan release knowledge.
+- Klasifikasi: source `64d00282d1eb3fc13713f818c7c326659464676d`,
+  Hostinger release `20260803T061744Z`, Vercel
+  `dpl_9MtjxbGLSHNz7bHXjrLS1RZpZm5U`, status `PRODUCTION_DEPLOYED`.
+- Activation keseluruhan tetap `NOT_PRODUCTION_ACTIVATED`; valid-link
+  two-device UAT, provider status webhook, dan rehearsal fisik masih menahan
+  business readiness.
+
 ### SagaBook success screen WhatsApp support candidate
 
 - Ringkasan: mengubah bantuan pasca-booking dari copy-only menjadi jalur

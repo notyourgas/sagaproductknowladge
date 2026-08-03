@@ -8,6 +8,26 @@ Mencatat perubahan material AOGTICVITY/17an/Olimpiade.
 
 Nama lama dipertahankan sebagai provenance; status runtime harus eksplisit.
 
+## 2026-08-03 - Player access redirect dan roster sync production
+
+- `CONFIRMED`: magic-link peserta sekarang selalu kembali ke origin publik dan
+  mempunyai failure state invalid, expired, consumed, revoked, not-approved,
+  invalid-origin, serta session-failed. Repeat click dengan session yang masih
+  cocok dapat dipulihkan tanpa membuat sesi ganda.
+- Workspace peserta kini server-authoritative dengan revision/ETag, refresh 12
+  detik plus focus/reconnect recovery, indikator stale/updated, onboarding,
+  `Lomba Saya`, dan participant-scoped feed untuk perubahan tim/roster.
+- Source `64d00282d1eb3fc13713f818c7c326659464676d`; Hostinger release
+  `20260803T061744Z`; Vercel production
+  `dpl_9MtjxbGLSHNz7bHXjrLS1RZpZm5U`; migration 016. Gate: 97 test lulus,
+  16 migration dan 10 integration test disposable MySQL, build, dependency
+  audit 0, backup, readiness, authorization, public/API smoke, dan rollback
+  target lulus.
+- Delivery `PRODUCTION_DEPLOYED`; activation keseluruhan tetap
+  `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED`. Valid-link
+  two-device UAT, provider status webhook, custom domain, dan rehearsal fisik
+  masih terbuka.
+
 ## 2026-08-03 - Announcement dan Day-H readiness production
 
 - `CONFIRMED`: announcement tidak lagi browser-only. Admin dapat publish,

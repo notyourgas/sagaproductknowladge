@@ -190,8 +190,10 @@ ketika keputusan atau release baru menutup gap.
   `PRODUCTION_ACTIVATED`; dataset awal kosong dan participant demo tidak lagi
   menjadi sumber operasional.
 - Fonnte runtime, migration 009–010, dan channel delivery UAT sudah
-  `PRODUCTION_DEPLOYED`; provider status webhook serta full
-  approval/magic-link/session/reuse/revoke UAT masih `NEEDS CONFIRMATION`.
+  `PRODUCTION_DEPLOYED`. Public-origin redirect, typed failure state, dan
+  player workspace sync migration 016 juga sudah `PRODUCTION_DEPLOYED`;
+  provider status webhook serta valid-link two-device
+  approval/session/reuse/revoke UAT masih `NEEDS CONFIRMATION`.
 - `NEEDS CONFIRMATION`: model bisnis produk (event internal, jasa per event, atau
   SaaS).
 - `NEEDS CONFIRMATION`: authenticated four-role serta
@@ -203,7 +205,9 @@ ketika keputusan atau release baru menutup gap.
   verification, recovery status, dan live display persistence sudah
   `CONFIRMED` pada migration 014. Announcement persistence dan readiness
   aggregate sudah `CONFIRMED` pada migration 015, tetapi human UAT belum
-  sign-off.
+  sign-off. Participant feed, revision/ETag, polling, dan reconnect recovery
+  sudah `CONFIRMED` pada migration 016, tetapi assignment update UAT dua
+  perangkat belum sign-off.
 - `NEEDS CONFIRMATION`: nama final Tim 7/Tim 8, durasi lomba, serta keputusan
   master recap yang masih provisional/open.
 

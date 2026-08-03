@@ -49,6 +49,9 @@ Public/player/leader/admin/live surfaces; master recap 8 tim/10 lomba; serta
 backend identity, access directory, check-in, roster, session/security,
 event-master, result operations, announcement persistence, dan Day-H readiness
 vertical slices.
+Workspace peserta menampilkan onboarding status, `Lomba Saya`, tim, agenda,
+dan feed assignment dari server. Snapshot memakai revision/ETag, polling 12
+detik, serta recovery saat focus, visibility, dan koneksi kembali aktif.
 Public Vercel delivery memakai festival visual system yang tetap ringkas untuk
 operator: hierarchy mobile, colored metric cues, animated active navigation,
 modal/state motion, dan success celebration dengan reduced-motion fallback.
@@ -63,7 +66,8 @@ dan rehearsal fisik masih menahan activation keseluruhan.
 
 ## Roadmap
 
-1. Uji role redirect, assignment tim/operator, roster, status lomba, check-in,
+1. Uji link WhatsApp valid pada dua perangkat, role redirect, assignment
+   tim/operator, roster, status lomba, check-in,
    result draft/publish, live display, announcement, readiness, audit, dan
    recovery melalui public Vercel.
 2. Lakukan two-device authorization dan stale-state reconciliation UAT.
@@ -74,8 +78,8 @@ dan rehearsal fisik masih menahan activation keseluruhan.
 
 ## User journey
 
-Register → verify → team/roster → check-in → play → result publish/correct →
-standing/announcement.
+Register → admin approve → WhatsApp access → player workspace → team/roster →
+check-in → play → result publish/correct → standing/announcement.
 
 ## User flow
 
@@ -116,8 +120,9 @@ Operational app untuk matchday komunitas, bukan sekadar landing event.
 AOGTICVITY belum diaktifkan.
 **Apakah notification aktif?** Sebagian. Runtime Fonnte, migration 009–010,
 dan satu pengiriman kanal UAT sudah aktif. Provider status webhook serta flow
-approval → magic-link → session → reuse/revoke belum lulus UAT, jadi login
-WhatsApp belum production-ready.
+approval → valid magic-link → session → reuse/revoke belum lulus UAT. Origin
+redirect publik dan state invalid/expired sudah terverifikasi, tetapi login
+WhatsApp penuh belum production-ready.
 **Apakah auth sudah nyata?** Ya, real credential login, MySQL identity,
 database session, dan admin password claim sudah terverifikasi melalui public
 Vercel.
@@ -148,6 +153,8 @@ persisten; Draft disembunyikan dari Leader/Player dan standing publik,
 sedangkan stale write ditolak. Day-H readiness membaca agregat konsisten tanpa
 PII, mempunyai digest, cache snapshot terakhir, dan export JSON. SQLite tetap
 fast test adapter.
+Player workspace menggunakan participant-scoped snapshot, revision/ETag, dan
+feed event persisten untuk publish/lock tim serta roster assigned/removed.
 
 ## Integrasi
 
@@ -155,15 +162,17 @@ Fonnte runtime memakai transactional outbox dan Better Auth magic link
 single-use 30 menit; token hanya disimpan sebagai hash dan tidak ikut request
 GET. Status webhook memakai shared secret dan idempotent event ledger; operator
 dapat retry failed/blocked setelah cooldown dengan batas lima percobaan.
-Provider channel UAT sudah terverifikasi, tetapi status webhook dan full
-magic-link/session UAT masih menunggu. Projection display, export/print,
+Provider channel UAT sudah terverifikasi. Redirect magic-link ke origin publik
+sudah terverifikasi, tetapi status webhook dan valid-link two-device session
+UAT masih menunggu. Projection display, export/print,
 custom domain/TLS, dan rehearsal runtime penuh belum terverifikasi.
 
 ## Data yang digunakan
 
 Event, participant, delapan team, roster, sepuluh competition, schedule,
 mechanism, safety, equipment, official assignment, check-in, result, standing,
-announcement, version, audit, dan export.
+announcement, participant feed event, workspace revision, version, audit, dan
+export.
 
 ## Risiko dan asumsi
 

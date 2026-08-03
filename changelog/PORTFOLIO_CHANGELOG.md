@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-03 - AOGTICVITY player access dan roster sync production
+
+- Magic-link peserta kini kembali ke origin publik dengan typed failure dan
+  session recovery. Player workspace membaca snapshot server-authoritative,
+  revision/ETag, refresh 12 detik, serta feed perubahan tim dan roster.
+- Source `64d00282d1eb3fc13713f818c7c326659464676d`; Hostinger release
+  `20260803T061744Z`; Vercel production
+  `dpl_9MtjxbGLSHNz7bHXjrLS1RZpZm5U`; migration 016. Regression, disposable
+  MySQL, build, audit, backup, auth/public smoke, dan rollback target lulus.
+- Delivery `PRODUCTION_DEPLOYED`; keseluruhan tetap
+  `NOT_PRODUCTION_ACTIVATED` dan business readiness `BLOCKED` sampai valid-link
+  two-device UAT, provider webhook, serta rehearsal fisik selesai.
+
 ## Tujuan
 
 Mencatat perubahan material lintas produk yang penting untuk positioning,
