@@ -10,6 +10,21 @@ workflow, pricing, release, activation, atau blocker.
 Detail tetap berada pada changelog produk; entri docs-only berada di root
 [CHANGELOG](../CHANGELOG.md).
 
+## 2026-08-03 - SagaBook success support candidate
+
+- `CONFIRMED`, `IMPLEMENTED_NOT_DEPLOYED`: success screen booking sekarang
+  mengutamakan detail/status dan WhatsApp cabang yang dipilih, dengan pesan
+  public-safe serta fallback salin pesan bila nomor cabang tidak valid.
+- Source `729e47da6cc6584f186c856c2718a9be15b15667` sudah tersedia pada branch
+  `codex/s92-booking-success-whatsapp`; focused E2E 6/6, visual 9/9 pada tiga
+  viewport, backend 9 tests/108 assertions, build, design audit, dan audit
+  dependency 0 lulus.
+- Full visual matrix tidak menghasilkan final result dalam verification window
+  15 menit, sehingga release ditahan. Production tetap source `fa228d89`,
+  release `20260803022430-fa228d8`, rollback `20260802221221-994de01`.
+- Booking/payment/provider, availability, permission, session, tenant
+  isolation, SagaView, activation, dan business readiness tidak berubah.
+
 ## 2026-08-03 - SagaView navigasi mobile terlihat production
 
 - `CONFIRMED`: Studio Console mobile sekarang menampilkan `Menu n/8`, tombol

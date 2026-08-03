@@ -296,6 +296,20 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
   dan visual live dua viewport lulus. Endpoint `/up` masih tanpa HSTS/CSP;
   route login dan booking yang diaudit mengirim header keamanan.
 - Candidate signup tanpa approval owner dan trial kanonik 7 hari sudah
+- Success screen WhatsApp support pada source
+  `729e47da6cc6584f186c856c2718a9be15b15667` berstatus
+  `IMPLEMENTED_NOT_DEPLOYED`. Before: bantuan setelah booking berhenti pada
+  copy template admin. After: customer mendapat CTA 48 piksel menuju detail
+  dan status booking, lalu WhatsApp cabang yang dipilih dengan pesan konteks
+  public-safe; jika nomor cabang tidak valid, UI menyediakan fallback salin
+  pesan. Focus keyboard, `aria-live`, forced-colors, no-overflow, serta tepat
+  satu `Powered by SagaBook` lulus pada mobile 390x844, tablet 768x1024, dan
+  desktop 1440x900. Focused E2E 6/6, visual success 9/9, backend 9 tests dengan
+  108 assertions, build, design audit, dan npm/Composer audit 0 lulus. Full
+  visual matrix belum menghasilkan final result dalam verification window 15
+  menit, sehingga release fail-closed dan production tetap memakai source
+  `fa228d89bc5bea32fb19bf424a4b0e48db1bc506`, release
+  `20260803022430-fa228d8`, dengan rollback `20260802221221-994de01`.
 - Refinement navigasi dari langkah Review pada source
   `fa228d89bc5bea32fb19bf424a4b0e48db1bc506` berstatus
   `PRODUCTION_DEPLOYED` sebagai release `20260803022430-fa228d8`. Enam kontrol `Ubah` yang sebelumnya sekitar

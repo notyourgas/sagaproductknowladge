@@ -4,6 +4,26 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-03 - Success screen WhatsApp support candidate
+
+- Klasifikasi: `CONFIRMED`; delivery `IMPLEMENTED_NOT_DEPLOYED`.
+- Source `729e47da6cc6584f186c856c2718a9be15b15667` tersedia pada branch
+  `codex/s92-booking-success-whatsapp`; production tidak berubah dan tetap
+  memakai source `fa228d89bc5bea32fb19bf424a4b0e48db1bc506`, release
+  `20260803022430-fa228d8`, rollback `20260802221221-994de01`.
+- Before: bantuan setelah booking hanya menyalin template admin. After: CTA
+  utama membuka detail dan status booking; CTA berikutnya membuka WhatsApp
+  cabang yang dipilih dengan pesan konteks public-safe. Nomor yang tidak valid
+  mendapatkan fallback salin pesan, bukan link palsu.
+- Target 48 piksel, keyboard focus, `aria-live`, forced-colors, reduced-motion,
+  no-overflow, dan tepat satu `Powered by SagaBook` tercakup. Booking,
+  payment/provider, availability, permission, session, tenant isolation,
+  template lain, dan SagaView tidak berubah.
+- Focused E2E 6/6, visual success 9/9 pada mobile/tablet/desktop, backend 9
+  tests dengan 108 assertions, build, design audit 26 artefak, serta
+  npm/Composer audit 0 lulus. Full visual matrix belum selesai dalam window 15
+  menit dan tidak menghasilkan final pass count; release ditahan fail-closed.
+
 ## 2026-08-03 - Navigasi edit Review touch-safe dipromosikan
 
 - Klasifikasi: `CONFIRMED`; delivery `PRODUCTION_DEPLOYED`, activation UI

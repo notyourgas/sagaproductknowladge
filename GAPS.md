@@ -98,6 +98,12 @@ ketika keputusan atau release baru menutup gap.
 - `CONFIRMED`: blocker fixture/scoping visual ditutup. Full matrix fresh lulus
   142/142 dengan 2 expected skips; backup/restore exact-SHA, DB audit 100,
   service/public smoke, dan DOM live dua viewport lulus.
+- `TODO`: success screen WhatsApp support source `729e47da` berstatus
+  `IMPLEMENTED_NOT_DEPLOYED`. Focused E2E 6/6, visual success 9/9, backend 9
+  tests/108 assertions, build, design audit, serta audit dependency 0 lulus;
+  full visual matrix harus diulang sampai menghasilkan final result sebelum
+  kandidat boleh masuk release gate. Production tetap release
+  `20260803022430-fa228d8`.
 
 ### SagaView
 

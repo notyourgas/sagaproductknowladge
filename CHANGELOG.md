@@ -12,6 +12,27 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-03
 
+### SagaBook success screen WhatsApp support candidate
+
+- Ringkasan: mengubah bantuan pasca-booking dari copy-only menjadi jalur
+  detail/status dan WhatsApp cabang yang dipilih, dengan fallback salin pesan.
+- Alasan: customer perlu jalur bantuan langsung yang mengikuti cabang booking
+  tanpa link palsu saat nomor WhatsApp tidak tersedia.
+- Produk/area terdampak: tenant booking storefront success screen,
+  accessibility, branch routing, dan visual regression.
+- Klasifikasi: `CONFIRMED`; source
+  `729e47da6cc6584f186c856c2718a9be15b15667`, branch
+  `codex/s92-booking-success-whatsapp`, status `IMPLEMENTED_NOT_DEPLOYED`.
+- Production berubah: tidak. Production tetap source `fa228d89`, release
+  `20260803022430-fa228d8`, rollback `20260802221221-994de01`.
+- Gate lulus: focused E2E 6/6, visual success 9/9 pada tiga viewport, backend 9
+  tests/108 assertions, build, design audit, npm/Composer audit 0, focus,
+  forced-colors, no-overflow, dan watermark tepat satu.
+- Blocker: full visual matrix tidak menghasilkan final result dalam window 15
+  menit; tidak ada final pass count sehingga deploy ditahan fail-closed.
+- File knowledge: `products/sagabook/PRODUCT.md`, `CHANGELOG.md`, master
+  knowledge, portfolio changelog, `GAPS.md`, dan `SYNC_STATUS.md`.
+
 ### SagaView navigasi Studio Console mobile production release
 
 - Ringkasan: menambahkan badge `Menu n/8`, tombol navigasi
