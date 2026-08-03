@@ -12,6 +12,24 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-03
 
+### SagaView fallback bantuan device production
+
+- Ringkasan: menjaga bantuan device tetap dapat dipakai ketika backend Support
+  Hub belum aktif, melalui diagnostik ter-redact dan format laporan aman.
+- Alasan: bootstrap 404 sebelumnya menghilangkan launcher dan menutup jalur
+  bantuan langsung dari surface operasional.
+- Produk/area terdampak: SagaView Studio support widget, local fallback,
+  accessibility, privacy diagnostics, release, rollback, dan runtime knowledge.
+- Klasifikasi: `CONFIRMED`; source
+  `2ab72618a13af6b52d33ee946c56b4b699b70de6`, release
+  `20260803163234-2ab7261`, status `PRODUCTION_DEPLOYED` dan
+  `PRODUCTION_ACTIVATED`; rollback `20260803153923-bb2abce` tersedia.
+- Gate: 156 unit, 95/95 E2E, focused 7/7, build/budget, audit dependency 0,
+  immutable promotion, service/Nginx/journal, dan smoke produksi dua viewport.
+- Residual: remote AI/ticket tetap 404 bila dicoba manual; fallback lokal aktif.
+- File knowledge: `products/sagaview/PRODUCT.md`, `DOSSIER.md`, `CHANGELOG.md`,
+  master knowledge, portfolio changelog, `GAPS.md`, dan `SYNC_STATUS.md`.
+
 ### SagaView hydration Studio Console stabil production
 
 - Ringkasan: menutup React hydration mismatch pada Session, Frames, dan Install

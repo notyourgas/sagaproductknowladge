@@ -4,6 +4,31 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-08-03 - Fallback bantuan device selalu tersedia production
+
+- Klasifikasi: `CONFIRMED`.
+- Status: `PRODUCTION_DEPLOYED` dan `PRODUCTION_ACTIVATED`; business readiness
+  mass-scale tetap `NEEDS CONFIRMATION`.
+- Before: halaman memanggil bootstrap Support Hub saat load; endpoint production
+  404 membuat launcher bantuan hilang, sehingga operator hanya dapat menemukan
+  diagnostik melalui panel kesehatan terpisah.
+- After: launcher selalu tersedia dengan diagnostik ter-redact, format laporan
+  aman, dan koneksi online atas aksi eksplisit. Gagal menghubungkan online tetap
+  mempertahankan fallback tanpa foto/PII, identitas tenant/device, credential,
+  token, atau path file.
+- Studio source `2ab72618a13af6b52d33ee946c56b4b699b70de6`, release
+  `20260803163234-2ab7261`; rollback `20260803153923-bb2abce`. Backend tetap
+  `20260802042221-f26bb57` dan tidak dipromosikan ulang.
+- Validation: 156 unit, 95/95 E2E, focused fallback 2/2 dan katalog 5/5,
+  build/budget, dependency audit 0, forced-colors/reduced-motion, immutable
+  promotion, service/Nginx/journal, serta production smoke 390x844 dan
+  1440x900 tanpa request support otomatis, page error, overflow, kebocoran
+  diagnostik, atau watermark ganda.
+- Residual: endpoint bantuan online tetap 404 bila operator mencoba koneksi;
+  remote AI/ticket belum pulih end-to-end. Fallback lokal sudah aktif.
+- Tidak ada migration atau perubahan payment/provider, tenant/device/session,
+  customer photo, permission, frame, dan export/print 4R.
+
 ## 2026-08-03 - Hydration Studio Console stabil production
 
 - Klasifikasi: `CONFIRMED`.

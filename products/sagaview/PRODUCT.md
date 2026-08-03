@@ -296,6 +296,21 @@ Kontrak ini sekarang enforced server-side pada runtime production yang aktif.
   kombinasi tujuh route pada 390x844 dan 1440x900 lulus production smoke tanpa
   hydration error, overflow, atau watermark ganda.
 
+## Fallback bantuan perangkat
+
+`CONFIRMED` - production:
+
+- launcher bantuan tidak lagi hilang ketika endpoint Support Hub belum aktif;
+- halaman Studio tidak memanggil endpoint bantuan secara otomatis, sehingga
+  404 support tidak menjadi noise pada setiap kunjungan;
+- operator selalu dapat mengunduh diagnostik ter-redact atau menyalin format
+  laporan kendala tanpa mengirim foto, PII customer, identitas tenant/device,
+  credential, token, atau path file;
+- koneksi ke bantuan online hanya dicoba setelah tindakan eksplisit operator;
+  kegagalan tetap mempertahankan fallback lokal dan memberi recovery yang jujur;
+- panel mobile/desktop memakai target minimal 44 px, forced-colors,
+  reduced-motion, tanpa overflow, dan tidak menutupi `Powered by SagaView`.
+
 ## Status saat ini
 
 - Delivery: `PRODUCTION_DEPLOYED`.
@@ -310,10 +325,10 @@ Kontrak ini sekarang enforced server-side pada runtime production yang aktif.
 - Backend release aktif: `20260802042221-f26bb57`; backend tidak dipromosikan
   ulang dan migration tidak diperlukan pada batch hydration Studio.
 - Studio source aktif:
-  `bb2abceb0ea6bc61af101c6724b837551a2e0d5a`.
-- Studio release aktif: `20260803153923-bb2abce`.
+  `2ab72618a13af6b52d33ee946c56b4b699b70de6`.
+- Studio release aktif: `20260803163234-2ab7261`.
 - Studio release sebelumnya yang menjadi rollback:
-  `20260803101436-c7d239c`.
+  `20260803153923-bb2abce`.
 - Saga Platform source:
   `a6bb8afbfe2353597ea55329c50829a220bc5d3e`.
 - Saga Platform release: `20260802104018-a6bb8af`.
@@ -342,9 +357,10 @@ Kontrak ini sekarang enforced server-side pada runtime production yang aktif.
 
 - Backend shared runtime: 960/960 test, 11.007 assertions dari release aktif;
   batch navigasi tidak mengubah backend atau database.
-- Studio S92: 156 unit test dan 93/93 E2E default-parallel; hydration guard 6/6
-  serta focused workflow 20/20 lulus lokal. Production smoke tujuh route pada
-  dua viewport lulus tanpa hydration/page error, overflow, atau watermark ganda.
+- Studio S92: 156 unit test dan 95/95 E2E default-parallel; focused fallback
+  bantuan 2/2 dan katalog 5/5 lulus. Production smoke fallback pada 390x844 dan
+  1440x900 lulus tanpa request support otomatis, page/console error, overflow,
+  kebocoran diagnostik, atau watermark ganda.
 - Studio/customer/public route smoke 200 dengan `/up` 200 melalui Nginx, HSTS,
   CSP, nosniff, dan `X-Frame-Options: DENY`; visual production 390x844 dan
   1440x900 lulus.
@@ -358,7 +374,7 @@ Kontrak ini sekarang enforced server-side pada runtime production yang aktif.
 ### Rollback
 
 - Backend tidak berubah pada batch app-only ini.
-- Studio: `20260803101436-c7d239c`.
+- Studio: `20260803153923-bb2abce`.
 - Backup release dan konfigurasi Nginx sebelumnya dipertahankan.
 
 ## Belum boleh diklaim

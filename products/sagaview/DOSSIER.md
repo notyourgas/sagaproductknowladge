@@ -85,6 +85,14 @@ menutupi kartu mobile. Local frame tetap dapat dilihat saat offline dan cloud
 recovery fail-closed. Customer picker, device/session/privacy, serta output 4R
 tidak berubah.
 
+Bantuan perangkat production sekarang fail-soft ketika backend Support Hub
+belum aktif. Launcher tetap terlihat dan menyediakan `Unduh diagnostik aman`
+serta `Salin format laporan`; keduanya dibangun dari status teknis ter-redact
+tanpa foto, PII customer, identitas tenant/device, credential, token, atau path
+file. Endpoint online baru dicoba setelah aksi operator dan kegagalan 404 tidak
+lagi menghilangkan fallback. Panel touch-safe, aksesibel, bebas overflow, dan
+tidak menutupi signature produk pada mobile/desktop.
+
 ## Fitur MVP
 
 `CONFIRMED`: journey Studio, output 4R, completion/privacy handoff,
@@ -129,9 +137,9 @@ jam, 10 GB aset frame cloud, laporan lanjutan, activity log, dan priority
 support. Session/foto dipasarkan unlimited dengan fair-use; foto tetap lokal.
 
 `CONFIRMED` — kontrak ini aktif di production. Source Studio aktif adalah
-`bb2abceb0ea6bc61af101c6724b837551a2e0d5a`, release
-`20260803153923-bb2abce`; rollback Studio adalah
-`20260803101436-c7d239c`. Session, Frames, dan Install App kini memakai render
+`2ab72618a13af6b52d33ee946c56b4b699b70de6`, release
+`20260803163234-2ab7261`; rollback Studio adalah
+`20260803153923-bb2abce`. Session, Frames, dan Install App kini memakai render
 awal SSR/client deterministik sehingga tidak memicu hydration mismatch. Output
 Settings hanya menampilkan action simpan saat
 dirty, tidak menutup konten mobile, mempertahankan action sticky desktop, dan

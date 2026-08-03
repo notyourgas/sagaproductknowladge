@@ -231,8 +231,12 @@ plan-limited, tanpa auto-charge.
 Update terbaru: backend tetap memakai source
 `f26bb57737fc25a0a40d350dc26ca727d30885b2`, release
 `20260802042221-f26bb57`, sedangkan Studio aktif memakai source
-`bb2abceb0ea6bc61af101c6724b837551a2e0d5a`, release
-`20260803153923-bb2abce`. Session, Frames, dan Install App tidak lagi memicu
+`2ab72618a13af6b52d33ee946c56b4b699b70de6`, release
+`20260803163234-2ab7261`. Launcher bantuan perangkat tetap tersedia saat
+Support Hub online belum aktif dan menyediakan diagnostik ter-redact serta
+format laporan aman; endpoint online hanya dicoba atas aksi operator. Remote
+AI/ticket masih residual 404, tetapi kegagalan tidak menghilangkan fallback.
+Session, Frames, dan Install App tidak lagi memicu
 hydration mismatch karena state online/PWA/recovery memakai snapshot awal
 SSR/client yang deterministik. Owner Console lintas browser,
 Studio exclusive lease, output 4R, session completion/privacy handoff,

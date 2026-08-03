@@ -1,5 +1,20 @@
 # Portfolio Changelog
 
+## 2026-08-03 - SagaView fallback bantuan device production
+
+- `CONFIRMED`: launcher bantuan tetap tersedia ketika Support Hub 404, dengan
+  diagnostik ter-redact, format laporan aman, dan koneksi online hanya setelah
+  aksi eksplisit operator.
+- Source `2ab72618a13af6b52d33ee946c56b4b699b70de6` aktif pada release
+  `20260803163234-2ab7261`; rollback `20260803153923-bb2abce` tersedia dan
+  backend `20260802042221-f26bb57` tidak berubah.
+- 156 unit, 95/95 E2E, focused 7/7, audit 0, build/budget, immutable promotion,
+  serta smoke produksi mobile/desktop lulus tanpa request support otomatis,
+  page error, overflow, kebocoran diagnostik, atau watermark ganda.
+- Remote AI/ticket tetap residual karena endpoint online masih 404 saat dicoba;
+  fallback lokal `PRODUCTION_ACTIVATED`, sedangkan business readiness
+  mass-scale masih `NEEDS CONFIRMATION`.
+
 ## 2026-08-03 - SagaView hydration Studio Console stabil production
 
 - `CONFIRMED`: Session, Frames, dan Install App kini memakai render awal

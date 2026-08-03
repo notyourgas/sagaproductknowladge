@@ -12,14 +12,14 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-03T15:45:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-03T16:40:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `17db4e76` |
-| Informasi terakhir disinkronkan | SagaView hydration stability source `bb2abceb0ea6bc61af101c6724b837551a2e0d5a`, release `20260803153923-bb2abce`, berstatus `PRODUCTION_DEPLOYED`; rollback `20260803101436-c7d239c` tersedia. |
+| Baseline sebelum pembaruan | `1f9e8b0d` |
+| Informasi terakhir disinkronkan | SagaView fallback bantuan device source `2ab72618a13af6b52d33ee946c56b4b699b70de6`, release `20260803163234-2ab7261`, berstatus `PRODUCTION_DEPLOYED` dan `PRODUCTION_ACTIVATED`; rollback `20260803153923-bb2abce` tersedia. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
 | Konflik | Tidak ada; local `main` sama dengan `origin/main` sebelum edit. |
-| Error | Gate release utama lulus. Bootstrap bantuan anonim masih 404 dan dicatat sebagai residual; Founding Studio Pilot masih diperlukan sebelum klaim business readiness mass-scale. |
+| Error | Gate release utama lulus. Remote AI/ticket masih 404 bila dicoba, tetapi fallback lokal tidak lagi hilang; Founding Studio Pilot masih diperlukan sebelum klaim business readiness mass-scale. |
 
 ## File yang berubah pada sinkronisasi ini
 
@@ -34,8 +34,8 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 ## Item menunggu konfirmasi
 
-Verifikasi routing/proxy endpoint bootstrap bantuan dan jalankan Founding Studio
-Pilot sebelum klaim `BUSINESS_READY` mass-scale.
+Aktifkan routing/proxy endpoint bantuan online untuk remote AI/ticket dan
+jalankan Founding Studio Pilot sebelum klaim `BUSINESS_READY` mass-scale.
 
 ## Cara verifikasi
 

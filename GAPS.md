@@ -125,14 +125,20 @@ ketika keputusan atau release baru menutup gap.
   sudah lulus, tetapi credential tidak digunakan dalam audit publik.
 - `NEEDS CONFIRMATION`: receipt delivery WhatsApp nyata dan rekonsiliasi
   evidence physical-UAT yang masih diwajibkan oleh preflight operasional lama.
-- `NEEDS CONFIRMATION`: endpoint bootstrap bantuan pada origin Studio masih
-  mengembalikan 404 saat smoke anonim. Route utama tetap sehat dan hydration
-  bersih, tetapi proxy/API support perlu diverifikasi sebelum support flow
-  diklaim pulih end-to-end.
+- `TODO`: endpoint bantuan online pada origin Studio masih mengembalikan 404
+  saat operator mencoba koneksi. Fallback lokal production sudah aktif, tetapi
+  routing/proxy API tetap perlu ditutup sebelum remote AI/ticket diklaim pulih
+  end-to-end.
 - `TODO`: S72 auto-trial 7 hari masih `PRODUCTION HOLD`; activation memerlukan
   release Saga Platform dan authenticated SagaView UAT setelah provisioning.
 
 ### Gap SagaView ditutup
+
+- `CONFIRMED` pada 3 Agustus 2026: hilangnya launcher akibat bootstrap 404
+  ditutup pada source `2ab72618`, release `20260803163234-2ab7261`. Diagnostik
+  aman dan format laporan selalu tersedia, tanpa request support otomatis,
+  overflow, kebocoran data, atau watermark overlap pada dua viewport. Gap
+  remote AI/ticket tetap terbuka secara terpisah.
 
 - `CONFIRMED` pada 3 Agustus 2026: hydration mismatch pada Session, Frames, dan
   Install App ditutup pada source `bb2abceb`, release
