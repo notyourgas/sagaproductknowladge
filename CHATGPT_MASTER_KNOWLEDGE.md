@@ -242,11 +242,17 @@ foto dipasarkan unlimited dengan fair-use; foto tetap lokal.
 Trial contract: 14 hari dua fase server-side; hari 1–7 full access, hari 8–14
 plan-limited, tanpa auto-charge.
 
-Update terbaru: backend tetap memakai source
-`f26bb57737fc25a0a40d350dc26ca727d30885b2`, release
-`20260802042221-f26bb57`, sedangkan Studio aktif memakai source
-`2ab72618a13af6b52d33ee946c56b4b699b70de6`, release
-`20260803163234-2ab7261`. Launcher bantuan perangkat tetap tersedia saat
+Update terbaru: backend memakai source
+`b504dae30aee90a2b55e1e670d1934e2fc524218`, release
+`20260803221207-b504dae`, sedangkan Studio aktif memakai source
+`57c0337b43b46229253ce89ace39f2ed587fc2d7`, release
+`20260803221207-57c0337`. Login dan Studio masing-masing merender tepat satu
+`Powered by SagaView`; footer Studio responsif memakai satu node DOM, memiliki
+ruang aman mobile, dan tetap terbaca pada forced-colors. Navigasi mobile
+berikutnya/sebelumnya membawa target sampai terlihat penuh dan menghormati
+reduced-motion. Dependency advisory backend dan Studio sudah dipatch; audit
+Composer/npm production melaporkan nol vulnerability. Launcher bantuan
+perangkat tetap tersedia saat
 Support Hub online belum aktif dan menyediakan diagnostik ter-redact serta
 format laporan aman; endpoint online hanya dicoba atas aksi operator. Remote
 AI/ticket masih residual 404, tetapi kegagalan tidak menghilangkan fallback.
@@ -302,13 +308,12 @@ tombol sebelumnya/berikutnya 44 px, dan memusatkan route aktif. Delapan route
 tetap memakai permission serta kontrak operasional lama; perubahan tidak
 menyentuh customer flow, local-first, payment, privacy foto, atau output 4R.
 
-Candidate login source `99790fa1ed7a2e14a9433da5caa4fdf67eaea38f` menambahkan
-tepat satu signature `Powered by SagaView` pada footer login dan sudah lolos
-build, full backend test, focused auth, visual mobile/desktop, no-overflow,
-forced-colors, reduced-motion, serta npm audit 0. Statusnya
-`IMPLEMENTED_NOT_DEPLOYED`: production belum berubah karena Composer advisory
-audit tertahan timeout Packagist. Jangan menyebut signature login ini aktif di
-production sebelum exact release dan public smoke tersedia.
+Signature login dan footer Studio sudah aktif pada backend release
+`20260803221207-b504dae` dan Studio release `20260803221207-57c0337`. Login dan
+Studio masing-masing memiliki satu `Powered by SagaView`; Studio menggunakan
+satu node footer responsif. Composer/npm audit, full regression, release gate,
+dan public browser smoke mobile/desktop lulus. Business readiness mass-scale
+tetap `NEEDS CONFIRMATION` sampai observasi operasional studio nyata selesai.
 
 Candidate Saga Platform `dcb5a3f3` menyiapkan signup SagaView auto-trial 7 hari
 tanpa approval owner/email verification. Login tetap menunggu provisioning

@@ -311,22 +311,22 @@ Kontrak ini sekarang enforced server-side pada runtime production yang aktif.
 - panel mobile/desktop memakai target minimal 44 px, forced-colors,
   reduced-motion, tanpa overflow, dan tidak menutupi `Powered by SagaView`.
 
-## Candidate signature login
+## Signature login dan watermark shell
 
-`CONFIRMED` - `IMPLEMENTED_NOT_DEPLOYED`:
+`CONFIRMED` - production:
 
-- halaman login SagaView sudah memiliki candidate signature
-  `Powered by SagaView` satu kali di footer, terpisah dari copyright dan tautan
-  legal;
-- layout candidate tervalidasi pada 390x844 dan 1440x900 tanpa overlap atau
-  horizontal overflow, dengan target tautan footer minimal 44 px,
-  reduced-motion, forced-colors, serta baseline visual;
-- source candidate `99790fa1ed7a2e14a9433da5caa4fdf67eaea38f` sudah dipush pada branch
-  `codex/s94-sagaview-login-brand`;
-- production belum berubah. Backend aktif tetap
-  `20260802042221-f26bb57`, Studio tetap `20260803163234-2ab7261`;
-- gate deploy ditahan karena audit advisory Composer tidak dapat menjangkau
-  Packagist. Retry audit yang hijau menjadi syarat sebelum immutable release.
+- halaman login menampilkan tepat satu signature non-link
+  `Powered by SagaView` di footer, terpisah dari copyright dan tautan legal;
+- Studio Console merender tepat satu signature sebagai footer responsif dalam
+  DOM, bukan dua elemen yang disembunyikan bergantian oleh breakpoint;
+- footer tidak fixed, tidak menutupi konten, memiliki ruang aman mobile,
+  kontras eksplisit pada forced-colors, dan tidak masuk export/print;
+- navigasi mobile berikutnya/sebelumnya membawa target sampai terlihat penuh;
+  reduced-motion tidak lagi mewarisi smooth scroll;
+- dependency backend dan Studio yang memiliki advisory sudah dipatch. Composer
+  audit dan npm audit production sama-sama melaporkan nol vulnerability;
+- backend source `b504dae30aee90a2b55e1e670d1934e2fc524218`, Studio source
+  `57c0337b43b46229253ce89ace39f2ed587fc2d7`.
 
 ## Status saat ini
 
@@ -338,14 +338,13 @@ Kontrak ini sekarang enforced server-side pada runtime production yang aktif.
 ### Runtime production
 
 - Backend source:
-  `f26bb57737fc25a0a40d350dc26ca727d30885b2`.
-- Backend release aktif: `20260802042221-f26bb57`; backend tidak dipromosikan
-  ulang dan migration tidak diperlukan pada batch hydration Studio.
+  `b504dae30aee90a2b55e1e670d1934e2fc524218`.
+- Backend release aktif: `20260803221207-b504dae`.
 - Studio source aktif:
-  `2ab72618a13af6b52d33ee946c56b4b699b70de6`.
-- Studio release aktif: `20260803163234-2ab7261`.
+  `57c0337b43b46229253ce89ace39f2ed587fc2d7`.
+- Studio release aktif: `20260803221207-57c0337`.
 - Studio release sebelumnya yang menjadi rollback:
-  `20260803153923-bb2abce`.
+  `20260803215526-be72510`.
 - Saga Platform source:
   `a6bb8afbfe2353597ea55329c50829a220bc5d3e`.
 - Saga Platform release: `20260802104018-a6bb8af`.
@@ -372,12 +371,14 @@ Kontrak ini sekarang enforced server-side pada runtime production yang aktif.
 
 ### Release validation
 
-- Backend shared runtime: 960/960 test, 11.007 assertions dari release aktif;
-  batch navigasi tidak mengubah backend atau database.
-- Studio S92: 156 unit test dan 95/95 E2E default-parallel; focused fallback
-  bantuan 2/2 dan katalog 5/5 lulus. Production smoke fallback pada 390x844 dan
-  1440x900 lulus tanpa request support otomatis, page/console error, overflow,
-  kebocoran diagnostik, atau watermark ganda.
+- Backend: 908/908 test dengan 10.637 assertions, focused release safety 3/3,
+  build, syntax PowerShell/Bash, dan Composer audit nol advisory lulus.
+- Studio: 156 unit test, 95/95 E2E, format/lint/typecheck/build, bundle budget,
+  dan npm audit nol vulnerability lulus.
+- Browser production memeriksa login dan Studio pada 390x844 serta 1440x900:
+  HTTP 200, tepat satu signature pada seluruh DOM dan satu terlihat, tanpa
+  overflow, runtime error, atau axe serious/critical violation. Navigasi mobile
+  berikutnya membawa target sampai terlihat penuh.
 - Studio/customer/public route smoke 200 dengan `/up` 200 melalui Nginx, HSTS,
   CSP, nosniff, dan `X-Frame-Options: DENY`; visual production 390x844 dan
   1440x900 lulus.
@@ -390,8 +391,8 @@ Kontrak ini sekarang enforced server-side pada runtime production yang aktif.
 
 ### Rollback
 
-- Backend tidak berubah pada batch app-only ini.
-- Studio: `20260803153923-bb2abce`.
+- Backend: `20260803215436-b504dae`.
+- Studio: `20260803215526-be72510`.
 - Backup release dan konfigurasi Nginx sebelumnya dipertahankan.
 
 ## Belum boleh diklaim

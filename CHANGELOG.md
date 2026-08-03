@@ -31,23 +31,27 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 - File knowledge: product/dossier/changelog AOGTICVITY, master knowledge,
   portfolio changelog, root changelog, dan sync status.
 
-### SagaView signature login candidate
+### SagaView signature dan dependency safety production
 
-- Ringkasan: menambahkan candidate `Powered by SagaView` satu kali pada footer
-  login dan regression visual agar signature tidak overlap atau overflow.
-- Produk/area terdampak: presentasi halaman login, aksesibilitas footer, visual
-  regression, dan release gate; data serta workflow login tidak berubah.
-- Klasifikasi: `CONFIRMED`; source
-  `99790fa1ed7a2e14a9433da5caa4fdf67eaea38f`, status
-  `IMPLEMENTED_NOT_DEPLOYED`.
-- Gate hijau: build, 908/908 backend test, 18/18 focused auth, Playwright
-  mobile/desktop 2/2 deterministik, forced-colors, reduced-motion, target 44
-  px, no-overflow, visual baseline, dan npm audit 0.
-- Production berubah: tidak. Backend dan Studio release aktif tetap sama.
-  Packagist timeout menahan Composer advisory audit, sehingga deploy ditahan
-  fail-closed sampai audit terkini lulus.
-- File knowledge: product/changelog SagaView, master knowledge, portfolio
-  changelog, root changelog, dan sync status.
+- Ringkasan: mengaktifkan signature login, satu footer branding Studio dalam
+  DOM, navigasi mobile yang membawa target terlihat penuh, dan patch dependency.
+- Produk/area terdampak: login, shell Studio, mobile paging, accessibility,
+  dependency/release safety, visual regression, dan knowledge. Data serta
+  workflow bisnis tidak berubah.
+- Klasifikasi: `CONFIRMED`; backend source
+  `b504dae30aee90a2b55e1e670d1934e2fc524218`, release
+  `20260803221207-b504dae`; Studio source
+  `57c0337b43b46229253ce89ace39f2ed587fc2d7`, release
+  `20260803221207-57c0337`.
+- Gate hijau: 908/908 backend test dengan 10.637 assertions, 156 Studio unit,
+  95/95 E2E, build/bundle, Composer/npm audit nol vulnerability, release
+  acceptance, service/Nginx/journal, dan browser production empat screen.
+- Production berubah: ya. Status `PRODUCTION_DEPLOYED` dan
+  `PRODUCTION_ACTIVATED`; business readiness mass-scale tetap
+  `NEEDS CONFIRMATION`. Rollback backend `20260803215436-b504dae` dan Studio
+  `20260803215526-be72510` tersedia.
+- File knowledge: product/dossier/changelog SagaView, master knowledge,
+  portfolio changelog, root changelog, dan sync status.
 
 ### AOGTICVITY community taxonomy production
 

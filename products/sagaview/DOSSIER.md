@@ -136,10 +136,12 @@ cloud, dan laporan dasar. Pro: 4 device, 50 frame aktif, 10 preset, offline 168
 jam, 10 GB aset frame cloud, laporan lanjutan, activity log, dan priority
 support. Session/foto dipasarkan unlimited dengan fair-use; foto tetap lokal.
 
-`CONFIRMED` — kontrak ini aktif di production. Source Studio aktif adalah
-`2ab72618a13af6b52d33ee946c56b4b699b70de6`, release
-`20260803163234-2ab7261`; rollback Studio adalah
-`20260803153923-bb2abce`. Session, Frames, dan Install App kini memakai render
+`CONFIRMED` — kontrak ini aktif di production. Source backend aktif adalah
+`b504dae30aee90a2b55e1e670d1934e2fc524218`, release
+`20260803221207-b504dae`. Source Studio aktif adalah
+`57c0337b43b46229253ce89ace39f2ed587fc2d7`, release
+`20260803221207-57c0337`; rollback Studio adalah
+`20260803215526-be72510`. Session, Frames, dan Install App kini memakai render
 awal SSR/client deterministik sehingga tidak memicu hydration mismatch. Output
 Settings hanya menampilkan action simpan saat
 dirty, tidak menutup konten mobile, mempertahankan action sticky desktop, dan

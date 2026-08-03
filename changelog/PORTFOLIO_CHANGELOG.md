@@ -13,16 +13,22 @@
   fail-closed. Activation keseluruhan `NOT_PRODUCTION_ACTIVATED` dan business
   readiness `BLOCKED` sampai UAT manusia dan rehearsal selesai.
 
-## 2026-08-04 - SagaView signature login implemented, production hold
+## 2026-08-04 - SagaView signature dan dependency safety production
 
-- `CONFIRMED`: candidate login menambahkan tepat satu `Powered by SagaView` di
-  footer tanpa overlap atau overflow pada 390x844 dan 1440x900.
-- Source `99790fa1ed7a2e14a9433da5caa4fdf67eaea38f` sudah dipush; build, 908 test,
-  18 focused auth, Playwright 2/2 deterministik, accessibility states, dan npm
-  audit 0 lulus.
-- Status `IMPLEMENTED_NOT_DEPLOYED`. Production tetap backend
-  `20260802042221-f26bb57` dan Studio `20260803163234-2ab7261`; deploy ditahan
-  karena Packagist timeout membuat Composer advisory audit belum konklusif.
+- `CONFIRMED`: login dan Studio masing-masing menampilkan satu
+  `Powered by SagaView`; Studio kini memakai satu footer responsif dalam DOM.
+- Navigasi mobile membawa target sampai terlihat penuh dan menghormati
+  reduced-motion. Advisory dependency backend dan Studio sudah dipatch.
+- Backend source `b504dae30aee90a2b55e1e670d1934e2fc524218`, release
+  `20260803221207-b504dae`; Studio source
+  `57c0337b43b46229253ce89ace39f2ed587fc2d7`, release
+  `20260803221207-57c0337`.
+- Gate 908 backend test/10.637 assertions, 156 Studio unit, 95/95 E2E,
+  Composer/npm audit nol vulnerability, release acceptance, dan browser
+  production empat screen lulus. Rollback backend
+  `20260803215436-b504dae` dan Studio `20260803215526-be72510` tersedia.
+- Status `PRODUCTION_DEPLOYED` dan `PRODUCTION_ACTIVATED`; business readiness
+  mass-scale tetap `NEEDS CONFIRMATION` sampai observasi studio nyata selesai.
 - Tidak ada perubahan data, payment, tenant/device/session, permission, foto,
   frame, export, atau print.
 
