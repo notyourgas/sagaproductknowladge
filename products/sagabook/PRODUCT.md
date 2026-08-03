@@ -295,7 +295,6 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
   backup/restore exact-SHA, database audit 100, service, journal, public smoke,
   dan visual live dua viewport lulus. Endpoint `/up` masih tanpa HSTS/CSP;
   route login dan booking yang diaudit mengirim header keamanan.
-- Candidate signup tanpa approval owner dan trial kanonik 7 hari sudah
 - Success screen WhatsApp support pada source
   `729e47da6cc6584f186c856c2718a9be15b15667` berstatus
   `IMPLEMENTED_NOT_DEPLOYED`. Before: bantuan setelah booking berhenti pada
