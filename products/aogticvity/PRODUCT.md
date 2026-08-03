@@ -154,6 +154,12 @@ Public delivery saat ini: `https://olimpiade-kemerdekaan.vercel.app`.
   admin-only memakai same-origin, optimistic version, idempotency, transaksi,
   dan append-only audit. ID/jumlah tim serta histori operasional tetap
   fail-closed dari hard delete.
+- Source `8bc827b8014cc9df37c952b843790f046c5de07c`, Hostinger release
+  `20260803T222400Z`, Vercel production
+  `dpl_7haQUfw8PJsJqazJgNXN7zxSL737`, dan migration 019 menetapkan nama final
+  `team-7` sebagai **Team Kindness** (Kebaikan) serta `team-8` sebagai
+  **Team Patience** (Kesabaran). ID, warna, anggota, assignment, roster,
+  hasil, dan leaderboard tidak berubah.
 - SQLite hanya fast test adapter.
 - Event-master memiliki dry-run, validation, atomic publish, versioning, dan
   audit. Durasi jadwal bersifat provisional dan dapat disunting admin.

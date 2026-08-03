@@ -8,6 +8,21 @@ Mencatat perubahan material AOGTICVITY/17an/Olimpiade.
 
 Nama lama dipertahankan sebagai provenance; status runtime harus eksplisit.
 
+## 2026-08-04 - Final team names production
+
+- `CONFIRMED`: `team-7` bernama **Team Kindness** (Kebaikan) dan `team-8`
+  bernama **Team Patience** (Kesabaran), mengikuti tema buah Roh berbahasa
+  Inggris.
+- ID, warna, anggota, assignment, roster, hasil, dan leaderboard tidak berubah.
+- Source `8bc827b8014cc9df37c952b843790f046c5de07c`; Hostinger
+  `20260803T222400Z`; Vercel `dpl_7haQUfw8PJsJqazJgNXN7zxSL737`; migration
+  `019_team_names`.
+- Gate: typecheck/build/audit, 106 tests, Playwright 47/47, 19 disposable
+  migrations, 12/12 MySQL integration, backup, record preservation, readiness,
+  dan public API smoke lulus.
+- Delivery `PRODUCTION_DEPLOYED`; activation dan business readiness keseluruhan
+  tidak berubah karena authenticated multi-device UAT masih terbuka.
+
 ## 2026-08-04 - Admin CRUD and lifecycle production
 
 - `CONFIRMED`: Admin Control Center sekarang memetakan seluruh surface kelola.

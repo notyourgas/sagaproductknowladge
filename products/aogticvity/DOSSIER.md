@@ -77,7 +77,10 @@ Admin Control Center memetakan aksi CRUD/lifecycle untuk anggota, tim, lomba,
 roster, rundown, hasil, pengumuman, akun, WhatsApp, dan audit. Anggota dapat
 dibuat manual, diedit, dan diarsipkan; arsip mencabut akses dan melepas
 assignment tanpa menghapus histori. Profil delapan tim dapat diedit/reset,
-sementara ID dan jumlah tim tetap dikunci oleh event master.
+sementara ID dan jumlah tim tetap dikunci oleh event master. Nama kanonik Tim 7
+adalah **Team Kindness** dengan arti Kebaikan dan Tim 8 adalah **Team
+Patience** dengan arti Kesabaran. Penetapan ini tidak mengubah ID
+`team-7`/`team-8`, warna, anggota, assignment, roster, hasil, atau leaderboard.
 
 ## Fitur MVP
 
@@ -95,7 +98,7 @@ dan rehearsal fisik masih menahan activation keseluruhan.
    recovery melalui public Vercel.
 2. Lakukan two-device authorization dan stale-state reconciliation UAT.
 3. Aktifkan target custom domain dan pilih recovery/notification provider.
-4. Finalisasi nama Tim 7/Tim 8, durasi, serta keputusan open pada master recap.
+4. Finalisasi durasi dan keputusan lain yang masih open pada master recap.
 5. Multi-device/event rehearsal dan public smoke.
 6. `NEEDS CONFIRMATION`: repeatable product/service model.
 

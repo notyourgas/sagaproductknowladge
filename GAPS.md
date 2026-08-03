@@ -232,8 +232,9 @@ ketika keputusan atau release baru menutup gap.
   sign-off. Participant feed, revision/ETag, polling, dan reconnect recovery
   sudah `CONFIRMED` pada migration 016, tetapi assignment update UAT dua
   perangkat belum sign-off.
-- `NEEDS CONFIRMATION`: nama final Tim 7/Tim 8, durasi lomba, serta keputusan
-  master recap yang masih provisional/open.
+- `CONFIRMED`: nama final Tim 7 adalah Team Kindness (Kebaikan) dan Tim 8
+  adalah Team Patience (Kesabaran). `NEEDS CONFIRMATION`: durasi lomba serta
+  keputusan master recap lain yang masih provisional/open.
 
 ### Saga Platform
 

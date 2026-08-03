@@ -226,7 +226,7 @@ keputusan pengganti.
 | Keputusan | Nama produk terbaru adalah AOGTICVITY. PDF Master Recap Lomba 17 Agustus 2026 menjadi sumber keseluruhan data aplikasi untuk 8 tim dan 10 lomba. Durasi boleh ditentukan sementara oleh sistem dan tetap dapat diubah admin; lomba dengan peserta seluruh tim tidak meminta input nama peserta. |
 | Alasan | Public, player, leader, admin, live projection, dan backend harus memakai kontrak event yang sama tanpa memaksa data roster yang tidak dibutuhkan. |
 | Alternatif yang dipertimbangkan | Mempertahankan konfigurasi lama enam tim; mengunci durasi sebelum konfirmasi; meminta nama peserta untuk setiap lomba seluruh tim. |
-| Dampak | Master data, schedule builder, roster rule, result policy, UI semua role, migration, audit, UAT, dan knowledge publik memakai 8 tim/10 lomba. Nama Tim 7/Tim 8 dan keputusan provisional tetap tercatat sebagai gap, bukan fakta final. |
+| Dampak | Master data, schedule builder, roster rule, result policy, UI semua role, migration, audit, UAT, dan knowledge publik memakai 8 tim/10 lomba. Klausa nama Tim 7/Tim 8 yang provisional diselesaikan oleh DEC-023; keputusan open lain tetap tercatat sebagai gap. |
 | Pemberi keputusan | Andreas / founder |
 | Status | `CONFIRMED` |
 | Dokumen terkait | [AOGTICVITY Product](products/aogticvity/PRODUCT.md), [AOGTICVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTICVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |
@@ -327,4 +327,18 @@ keputusan pengganti.
 | Dampak | UI memakai label final; persistence memakai kode stabil `Teen`/`Youth`; API dan MySQL menegakkan pasangan kategori-subcategory. Record lama dipertahankan sebagai legacy read-only agar audit dan rollback aman. |
 | Pemberi keputusan | Andreas / founder |
 | Status | `CONFIRMED`; source dan public production runtime terverifikasi |
+| Dokumen terkait | [AOGTICVITY Product](products/aogticvity/PRODUCT.md), [AOGTICVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTICVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |
+
+## DEC-023 - AOGTICVITY menetapkan nama final Tim 7 dan Tim 8
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-04 |
+| Topik | Identitas dua tim terakhir AOGTICVITY |
+| Keputusan | Tim 7 memakai nama **Team Kindness** dengan arti Kebaikan dan Tim 8 memakai nama **Team Patience** dengan arti Kesabaran. |
+| Alasan | Founder meminta kedua tim memiliki nama buah Roh berbahasa Inggris agar konsisten dengan enam tim sebelumnya. |
+| Alternatif yang dipertimbangkan | Tetap memakai Tim 7/Tim 8; nama buah Roh lain seperti Goodness, Gentleness, atau Self-Control. |
+| Dampak | Label kanonik UI dan profil tim berubah; ID `team-7`/`team-8`, warna, anggota, assignment, roster, hasil, dan leaderboard tetap sama. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED`; source, migration, Hostinger, dan public Vercel runtime terverifikasi |
 | Dokumen terkait | [AOGTICVITY Product](products/aogticvity/PRODUCT.md), [AOGTICVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTICVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |
