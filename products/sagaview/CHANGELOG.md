@@ -4,6 +4,28 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-08-03 - Hydration Studio Console stabil production
+
+- Klasifikasi: `CONFIRMED`.
+- Status: `PRODUCTION_DEPLOYED` dan `PRODUCTION_ACTIVATED`; business readiness
+  mass-scale tetap `NEEDS CONFIRMATION`.
+- Before: Session, Frames, dan Install App dapat menghasilkan React hydration
+  error karena nilai online, kemampuan PWA, dan snapshot external store berbeda
+  antara HTML server dan render browser pertama.
+- After: render awal deterministik, status browser disegarkan setelah mount,
+  dan server snapshot stabil; offline/reconnect, install, lease, serta recovery
+  tetap fail-closed.
+- Studio source `bb2abceb0ea6bc61af101c6724b837551a2e0d5a`, release
+  `20260803153923-bb2abce`; rollback `20260803101436-c7d239c`. Backend tetap
+  `20260802042221-f26bb57` dan tidak dipromosikan ulang.
+- Validation: 156 unit, 93/93 E2E, hydration 6/6, focused workflow 20/20,
+  build/budget, audit dependency 0, immutable promotion, service/Nginx/journal,
+  serta production smoke 14 route-viewport tanpa hydration/page error,
+  overflow, atau watermark ganda.
+- Residual: bootstrap bantuan anonim masih 404 dan dicatat di `GAPS.md`;
+  customer foto, payment/provider, tenant/device/session, permission, privacy,
+  frame data, dan output/print 4R tidak berubah.
+
 ## 2026-08-03 - Navigasi Studio Console mobile terlihat production
 
 - Klasifikasi: `CONFIRMED`.

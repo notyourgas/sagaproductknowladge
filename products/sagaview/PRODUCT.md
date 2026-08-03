@@ -282,6 +282,20 @@ Kontrak ini sekarang enforced server-side pada runtime production yang aktif.
 - keyboard, reduced-motion, active state, no-overflow 390x844, desktop
   1440x900, dan tepat satu `Powered by SagaView` tervalidasi.
 
+## Stabilitas hydration Studio Console
+
+`CONFIRMED` - production:
+
+- Session, Frames, dan Install App tidak lagi merender state browser yang
+  berbeda dari HTML server pada kunjungan pertama;
+- status online/PWA memakai snapshot awal deterministik, sedangkan snapshot
+  recovery cloud stabil selama hydration dan baru disegarkan setelah mount;
+- offline/reconnect, install prompt, device lease, frame recovery, serta
+  fail-closed state tetap berjalan tanpa mengubah permission atau data;
+- enam kombinasi route dan viewport lulus regression lokal, sedangkan 14
+  kombinasi tujuh route pada 390x844 dan 1440x900 lulus production smoke tanpa
+  hydration error, overflow, atau watermark ganda.
+
 ## Status saat ini
 
 - Delivery: `PRODUCTION_DEPLOYED`.
@@ -292,14 +306,14 @@ Kontrak ini sekarang enforced server-side pada runtime production yang aktif.
 ### Runtime production
 
 - Backend source:
-  `fa228d89bc5bea32fb19bf424a4b0e48db1bc506`.
-- Backend release aktif: `20260803022430-fa228d8`; backend tidak dipromosikan
-  ulang dan migration tidak diperlukan pada batch navigasi Studio.
+  `f26bb57737fc25a0a40d350dc26ca727d30885b2`.
+- Backend release aktif: `20260802042221-f26bb57`; backend tidak dipromosikan
+  ulang dan migration tidak diperlukan pada batch hydration Studio.
 - Studio source aktif:
-  `c7d239c95032822aa05b92b3a3682452dc33edf2`.
-- Studio release aktif: `20260803101436-c7d239c`.
+  `bb2abceb0ea6bc61af101c6724b837551a2e0d5a`.
+- Studio release aktif: `20260803153923-bb2abce`.
 - Studio release sebelumnya yang menjadi rollback:
-  `20260803062122-ae21062`.
+  `20260803101436-c7d239c`.
 - Saga Platform source:
   `a6bb8afbfe2353597ea55329c50829a220bc5d3e`.
 - Saga Platform release: `20260802104018-a6bb8af`.
@@ -328,9 +342,9 @@ Kontrak ini sekarang enforced server-side pada runtime production yang aktif.
 
 - Backend shared runtime: 960/960 test, 11.007 assertions dari release aktif;
   batch navigasi tidak mengubah backend atau database.
-- Studio S92: 156 unit test dan 87/87 E2E default-parallel; focused navigasi
-  mobile 2/2 lokal, sedangkan live user journey Session -> Output, direct route,
-  active state, dan no-overflow lulus pada production.
+- Studio S92: 156 unit test dan 93/93 E2E default-parallel; hydration guard 6/6
+  serta focused workflow 20/20 lulus lokal. Production smoke tujuh route pada
+  dua viewport lulus tanpa hydration/page error, overflow, atau watermark ganda.
 - Studio/customer/public route smoke 200 dengan `/up` 200 melalui Nginx, HSTS,
   CSP, nosniff, dan `X-Frame-Options: DENY`; visual production 390x844 dan
   1440x900 lulus.
@@ -343,8 +357,8 @@ Kontrak ini sekarang enforced server-side pada runtime production yang aktif.
 
 ### Rollback
 
-- Backend: `20260802221221-994de01`.
-- Studio: `20260803062122-ae21062`.
+- Backend tidak berubah pada batch app-only ini.
+- Studio: `20260803101436-c7d239c`.
 - Backup release dan konfigurasi Nginx sebelumnya dipertahankan.
 
 ## Belum boleh diklaim

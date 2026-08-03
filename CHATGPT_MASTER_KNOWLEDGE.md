@@ -228,11 +228,13 @@ foto dipasarkan unlimited dengan fair-use; foto tetap lokal.
 Trial contract: 14 hari dua fase server-side; hari 1–7 full access, hari 8–14
 plan-limited, tanpa auto-charge.
 
-Update terbaru: backend/Owner tetap memakai source
-`fa228d89bc5bea32fb19bf424a4b0e48db1bc506`, release
-`20260803022430-fa228d8`, sedangkan Studio aktif memakai source
-`c7d239c95032822aa05b92b3a3682452dc33edf2`, release
-`20260803101436-c7d239c`. Owner Console lintas browser,
+Update terbaru: backend tetap memakai source
+`f26bb57737fc25a0a40d350dc26ca727d30885b2`, release
+`20260802042221-f26bb57`, sedangkan Studio aktif memakai source
+`bb2abceb0ea6bc61af101c6724b837551a2e0d5a`, release
+`20260803153923-bb2abce`. Session, Frames, dan Install App tidak lagi memicu
+hydration mismatch karena state online/PWA/recovery memakai snapshot awal
+SSR/client yang deterministik. Owner Console lintas browser,
 Studio exclusive lease, output 4R, session completion/privacy handoff,
 trial/subscription, serta public Home/Pricing/Help/Contact/Privacy/Terms/Legal
 aktif. Limit device/frame/preset, quota aset frame cloud, fair-use,

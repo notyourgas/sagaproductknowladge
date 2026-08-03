@@ -125,10 +125,19 @@ ketika keputusan atau release baru menutup gap.
   sudah lulus, tetapi credential tidak digunakan dalam audit publik.
 - `NEEDS CONFIRMATION`: receipt delivery WhatsApp nyata dan rekonsiliasi
   evidence physical-UAT yang masih diwajibkan oleh preflight operasional lama.
+- `NEEDS CONFIRMATION`: endpoint bootstrap bantuan pada origin Studio masih
+  mengembalikan 404 saat smoke anonim. Route utama tetap sehat dan hydration
+  bersih, tetapi proxy/API support perlu diverifikasi sebelum support flow
+  diklaim pulih end-to-end.
 - `TODO`: S72 auto-trial 7 hari masih `PRODUCTION HOLD`; activation memerlukan
   release Saga Platform dan authenticated SagaView UAT setelah provisioning.
 
 ### Gap SagaView ditutup
+
+- `CONFIRMED` pada 3 Agustus 2026: hydration mismatch pada Session, Frames, dan
+  Install App ditutup pada source `bb2abceb`, release
+  `20260803153923-bb2abce`; regression 6/6 dan production smoke dua viewport
+  lulus tanpa page error, overflow, atau watermark ganda.
 
 - `CONFIRMED` pada 3 Agustus 2026: discoverability delapan route Studio Console
   mobile ditutup pada source `c7d239c9`, release `20260803101436-c7d239c`.

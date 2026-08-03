@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-03 - SagaView hydration Studio Console stabil production
+
+- `CONFIRMED`: Session, Frames, dan Install App kini memakai render awal
+  SSR/client deterministik; status online/PWA/recovery disegarkan setelah mount.
+- Source `bb2abceb0ea6bc61af101c6724b837551a2e0d5a` aktif pada release
+  `20260803153923-bb2abce`; rollback `20260803101436-c7d239c` tersedia dan
+  backend `20260802042221-f26bb57` tidak berubah.
+- 156 unit, 93/93 E2E, focused 20/20, audit 0, build/budget, immutable promotion,
+  serta smoke produksi 14 route-viewport lulus tanpa hydration/page error,
+  overflow, atau watermark ganda.
+- Bootstrap bantuan anonim 404 tetap menjadi residual terpisah; business
+  readiness mass-scale masih `NEEDS CONFIRMATION`.
+
 ## 2026-08-03 - SagaBook success support production
 
 - `CONFIRMED`: success screen booking mengutamakan detail/status dan WhatsApp
