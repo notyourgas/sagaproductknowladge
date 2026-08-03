@@ -410,8 +410,14 @@ reduced-motion, dan state operasional tetap dipertahankan. Source
 `3f5cf151666dbb3d83030ffef8127fdd88ad55ac` kemudian mengaktifkan refinement
 `Calm HUD`: spacing konsisten, safe wrapping, hierarchy mobile, dan baris
 khusus topbar/bottom navigation sehingga hanya main content yang scroll.
-Public Playwright 46/46 pada enam route dan empat viewport, collision dan
+Public Playwright 47/47 pada enam route dan empat viewport, collision dan
 nav-clearance assertions, serta axe tanpa pelanggaran lulus.
+Source `e38de48b2e8a88d7a7e2ac8aa54b0af9e398b38c`, Hostinger
+`20260803T192801Z`, Vercel `dpl_8PU7woDFGWbJeK3dYTMZHASfzX4K`, dan migration
+017 mengaktifkan taxonomy komunitas final. Pendaftaran baru hanya memakai
+`TEEN` dengan CG teen 1-6 atau `SOUTH, WEST, CENTRAL` dengan CG youth 1-8.
+Form, API, admin/export, dan database memakai kontrak yang sama; nilai demo
+lama hanya dipertahankan sebagai legacy read-only dan tidak muncul di form.
 Ini adalah nama terbaru project 17an/Olimpiade Kemerdekaan.
 
 Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:

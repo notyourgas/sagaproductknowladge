@@ -314,3 +314,17 @@ keputusan pengganti.
 | Pemberi keputusan | Andreas / founder |
 | Status | `CONFIRMED`; source dan public production runtime terverifikasi, authenticated role UAT masih menunggu |
 | Dokumen terkait | [AOGTICVITY Product](products/aogticvity/PRODUCT.md), [AOGTICVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTICVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |
+
+## DEC-022 - AOGTICVITY memakai taxonomy komunitas Teen dan Youth
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-04 |
+| Topik | Kategori utama dan subcategory pendaftaran AOGTICVITY |
+| Keputusan | Hapus kategori demo dari pendaftaran baru. Kategori final adalah `TEEN` dengan `CG teen 1` sampai `CG teen 6`, serta `SOUTH, WEST, CENTRAL` dengan `CG youth 1` sampai `CG youth 8`. |
+| Alasan | Form dan operasi peserta harus memakai struktur komunitas aktual, bukan distrik dan nama CG contoh. |
+| Alternatif yang dipertimbangkan | Mempertahankan South/Central/West; menyimpan label panjang sebagai primary key; menghapus atau menebak pemetaan record lama. |
+| Dampak | UI memakai label final; persistence memakai kode stabil `Teen`/`Youth`; API dan MySQL menegakkan pasangan kategori-subcategory. Record lama dipertahankan sebagai legacy read-only agar audit dan rollback aman. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED`; source dan public production runtime terverifikasi |
+| Dokumen terkait | [AOGTICVITY Product](products/aogticvity/PRODUCT.md), [AOGTICVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTICVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |

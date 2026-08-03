@@ -12,29 +12,32 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-03T20:36:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-04T02:32:12+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `0662481` |
-| Informasi terakhir disinkronkan | SagaBook Admin Booking compact triage source `cfb2af8fbec2e079b7341e0e1f1920511bf89022`, release `20260803132556-cfb2af8`, rollback `20260803080450-51a9165`, berstatus `PRODUCTION_DEPLOYED` dan activation scope UI `PRODUCTION_ACTIVATED`; business readiness tetap `NEEDS CONFIRMATION`. |
+| Baseline sebelum pembaruan | `c227207b8d920c4903a14463ac3a2a0d311e1ac2` |
+| Informasi terakhir disinkronkan | AOGTICVITY community taxonomy source `e38de48b2e8a88d7a7e2ac8aa54b0af9e398b38c`, Hostinger `20260803T192801Z`, Vercel `dpl_8PU7woDFGWbJeK3dYTMZHASfzX4K`, dan migration 017 berstatus `PRODUCTION_DEPLOYED`; auth/registration tetap `PRODUCTION_ACTIVATED`, activation keseluruhan tetap `NOT_PRODUCTION_ACTIVATED`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada; sinkronisasi AOGTICVITY paralel diselesaikan lebih dahulu pada `0662481`, lalu perubahan SagaBook diterapkan terpisah. |
-| Error | Tidak ada pada release UI. Admin production terautentikasi tidak direkam tanpa credential; UAT operator studio nyata tetap menahan klaim business readiness SagaBook. |
+| Konflik | Tidak ada; taxonomy terbaru menggantikan kategori demo untuk submission baru tanpa menghapus record historis. |
+| Error | Tidak ada pada release taxonomy. Authenticated four-role operations UAT dan rehearsal fisik tetap menahan activation/business readiness AOGTICVITY. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/sagabook/PRODUCT.md`
-- `products/sagabook/DOSSIER.md`
-- `products/sagabook/CHANGELOG.md`
+- `products/aogticvity/PRODUCT.md`
+- `products/aogticvity/DOSSIER.md`
+- `products/aogticvity/CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHANGELOG.md`
+- `DECISIONS.md`
+- `GAPS.md`
 - `SYNC_STATUS.md`
 
 ## Item menunggu konfirmasi
 
-Jalankan UAT operator studio nyata pada layar Admin Booking di device sekitar
-1024 piksel sebelum klaim business readiness SagaBook.
+Jalankan authenticated four-role operations UAT, valid-link WhatsApp
+two-device UAT, dan rehearsal fisik sebelum klaim activation/business
+readiness AOGTICVITY.
 
 ## Cara verifikasi
 

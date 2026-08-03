@@ -60,11 +60,18 @@ tidak diperlebar di desktop. Refinement `Calm HUD` memakai spacing
 4/8/12/16/24/32, safe wrapping, hierarchy heading/card/form/status, serta
 baris layout khusus untuk topbar dan bottom navigation. Hanya main content
 yang scroll sehingga navigasi tidak menutup field, tombol, timeline, atau
-kartu. Enam route publik lulus visual regression 46/46 pada empat viewport,
+kartu. Enam route publik lulus visual regression 47/47 pada empat viewport,
 collision/clearance assertions, touch target, reduced motion, dan axe WCAG.
 Agenda publik memakai urutan kategori → judul → lokasi → status, gap antarkartu,
 dan grid ringkas 320 px; waktu, status, link detail, serta sumber data tidak
 berubah.
+
+Taxonomy komunitas final mempunyai dua kategori utama: `TEEN` dengan enam
+subcategory `CG teen`, dan `SOUTH, WEST, CENTRAL` dengan delapan subcategory
+`CG youth`. Form, API validation, admin display, export, team balancing, dan
+constraint MySQL memakai satu taxonomy kanonik. Nilai demo lama tidak dapat
+dipakai untuk submission baru; record historis tetap dapat dibaca sebagai
+legacy dan tidak dipetakan secara spekulatif.
 
 ## Fitur MVP
 

@@ -10,6 +10,32 @@ produk dan [Portfolio Changelog](changelog/PORTFOLIO_CHANGELOG.md).
 
 Root changelog tidak menggantikan changelog produk atau portfolio.
 
+## 2026-08-04
+
+### AOGTICVITY community taxonomy production
+
+- Ringkasan: menghapus kategori/CG demo dari pendaftaran baru dan
+  mengaktifkan dua kategori final beserta 14 subcategory sesuai keputusan
+  Andreas.
+- Produk/area terdampak: registration UI/API, admin display, CSV, OpenAPI,
+  team balancing, MySQL constraint/migration, test, Hostinger, Vercel, dan
+  release knowledge. Auth, permission, WhatsApp, roster, dan result workflow
+  tidak berubah.
+- Klasifikasi: `CONFIRMED`; source
+  `e38de48b2e8a88d7a7e2ac8aa54b0af9e398b38c`, release note `db250a1`,
+  Hostinger `20260803T192801Z`, Vercel
+  `dpl_8PU7woDFGWbJeK3dYTMZHASfzX4K`, migration 017, status
+  `PRODUCTION_DEPLOYED`.
+- Gate: 100 test, Playwright 47/47, typecheck/build, audit 0, 17 disposable
+  migration, 10/10 MySQL integration, verified backup, legacy preservation,
+  production option matrix, invalid legacy 422, health, redirect, dan visual
+  smoke lulus.
+- Production berubah: ya, taxonomy registrasi dan constraint database. Auth
+  dan registration tetap `PRODUCTION_ACTIVATED`; activation keseluruhan tetap
+  `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED`.
+- File knowledge: product/dossier/changelog AOGTICVITY, master knowledge,
+  portfolio changelog, decisions, gaps, dan sync status.
+
 ## 2026-08-03
 
 ### SagaBook Admin Booking compact triage production

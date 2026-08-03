@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-04 - AOGTICVITY community taxonomy production
+
+- Taxonomy demo pendaftaran diganti dua kategori final: `TEEN` dengan enam
+  `CG teen`, dan `SOUTH, WEST, CENTRAL` dengan delapan `CG youth`.
+- Source `e38de48b2e8a88d7a7e2ac8aa54b0af9e398b38c`; Hostinger
+  `20260803T192801Z`; Vercel `dpl_8PU7woDFGWbJeK3dYTMZHASfzX4K`; migration
+  017. Validation API/database, legacy preservation, backup, 100 test,
+  Playwright 47/47, 17 disposable migration, 10/10 MySQL integration, health,
+  redirects, dan public visual smoke lulus.
+- Delivery `PRODUCTION_DEPLOYED`; activation keseluruhan tetap
+  `NOT_PRODUCTION_ACTIVATED` dan business readiness `BLOCKED`.
+
 ## 2026-08-03 - SagaBook Admin Booking compact triage production
 
 - `CONFIRMED`: layar Booking pada viewport di bawah 1280 piksel sekarang

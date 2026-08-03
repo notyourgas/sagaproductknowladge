@@ -201,13 +201,18 @@ ketika keputusan atau release baru menutup gap.
 - `Pixel Matchday Arcade` UI production 3 Agustus 2026 tidak menutup blocker
   activation; perbaikannya berada pada visual hierarchy, responsive mobile
   canvas, state feedback, accessibility, motion, dan asset presentation.
-  Public visual QA 34/34 sudah lulus, tetapi protected admin/operator/leader/
+  Public visual QA 47/47 sudah lulus, tetapi protected admin/operator/leader/
   player visual UAT dengan session production masih `NEEDS CONFIRMATION`.
 - Identity, role authorization, database session, optional MFA, dan guarded
   Vercel-to-Hostinger path sudah `PRODUCTION_DEPLOYED`; real login terbukti.
 - Admin password claim dan public registration MySQL sudah
   `PRODUCTION_ACTIVATED`; dataset awal kosong dan participant demo tidak lagi
   menjadi sumber operasional.
+- Taxonomy pendaftaran final `TEEN`/CG teen 1-6 dan
+  `SOUTH, WEST, CENTRAL`/CG youth 1-8 sudah `PRODUCTION_DEPLOYED` pada
+  migration 017. Record taxonomy lama dipertahankan sebagai legacy read-only;
+  keputusan koreksi/penghapusan tiap record tetap memerlukan verifikasi pemilik
+  data dan tidak menjadi blocker submission baru.
 - Fonnte runtime, migration 009–010, dan channel delivery UAT sudah
   `PRODUCTION_DEPLOYED`. Public-origin redirect, typed failure state, dan
   player workspace sync migration 016 juga sudah `PRODUCTION_DEPLOYED`;

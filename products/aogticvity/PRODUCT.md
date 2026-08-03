@@ -137,6 +137,14 @@ Public delivery saat ini: `https://olimpiade-kemerdekaan.vercel.app`.
   layout sendiri; hanya main content yang scroll. Safe wrapping, spacing
   4/8/12/16/24/32, hierarchy heading/card/form/status, compact admin controls,
   serta focusable scroll region mencegah teks dan kontrol saling menutup.
+- Source `e38de48b2e8a88d7a7e2ac8aa54b0af9e398b38c`, Hostinger release
+  `20260803T192801Z`, Vercel production
+  `dpl_8PU7woDFGWbJeK3dYTMZHASfzX4K`, dan migration 017 mengganti taxonomy
+  komunitas demo. Pendaftaran baru hanya menawarkan kategori `TEEN` dengan
+  `CG teen 1` sampai `CG teen 6`, serta `SOUTH, WEST, CENTRAL` dengan
+  `CG youth 1` sampai `CG youth 8`. Validasi API dan constraint MySQL menolak
+  pasangan silang; record taxonomy lama tetap dipertahankan sebagai legacy
+  read-only tanpa ditampilkan pada form baru.
 - SQLite hanya fast test adapter.
 - Event-master memiliki dry-run, validation, atomic publish, versioning, dan
   audit. Durasi jadwal bersifat provisional dan dapat disunting admin.
@@ -161,7 +169,7 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:
 - UI memakai `Pixel Matchday Arcade` yang tetap mobile-first 430 px: Plus
   Jakarta Sans, Feather-style icons, stepped geometry, hard shadow, quest/HUD
   hierarchy, state feedback, dan motion yang menghormati reduced-motion.
-- Public visual regression lulus 46/46 pada enam route dan viewport 320, 390,
+- Public visual regression lulus 47/47 pada enam route dan viewport 320, 390,
   430, serta 1440 px; matriks memeriksa overflow teks, collision sibling,
   clearance navigasi, touch target, reduced motion, dan axe WCAG.
 - Agenda publik memisahkan waktu, kategori, judul, lokasi, dan status; form,

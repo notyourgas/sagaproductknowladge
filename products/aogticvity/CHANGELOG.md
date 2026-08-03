@@ -8,6 +8,30 @@ Mencatat perubahan material AOGTICVITY/17an/Olimpiade.
 
 Nama lama dipertahankan sebagai provenance; status runtime harus eksplisit.
 
+## 2026-08-04 - Community taxonomy production
+
+- `CONFIRMED`: kategori demo `South`, `Central`, `West` dan 12 CG contoh
+  dihapus dari pendaftaran baru. Taxonomy final adalah `TEEN` dengan
+  `CG teen 1` sampai `CG teen 6`, serta `SOUTH, WEST, CENTRAL` dengan
+  `CG youth 1` sampai `CG youth 8`.
+- Form, server validation, admin/assignment display, CSV, OpenAPI, dan MySQL
+  memakai source of truth yang sama. API mengembalikan 422 untuk kategori
+  legacy atau pasangan silang; constraint database juga menolak direct write
+  pasangan baru yang tidak valid.
+- Existing record tidak dihapus atau dipetakan secara acak. Migration 017
+  mempertahankan taxonomy lama sebagai legacy read-only untuk audit dan
+  rollback aplikasi.
+- Source `e38de48b2e8a88d7a7e2ac8aa54b0af9e398b38c`; release note `db250a1`;
+  Hostinger `20260803T192801Z`; Vercel
+  `dpl_8PU7woDFGWbJeK3dYTMZHASfzX4K`; migration `017_community_taxonomy`.
+- Gate: 100 unit/service test, 47/47 Playwright, typecheck/build, axe,
+  dependency audit 0, 17 disposable migration, 10/10 MySQL integration,
+  verified backup, production option matrix, legacy submission 422, health,
+  protected redirects, dan visual smoke lulus.
+- Delivery `PRODUCTION_DEPLOYED`; auth/registration tetap
+  `PRODUCTION_ACTIVATED`. Activation keseluruhan `NOT_PRODUCTION_ACTIVATED`
+  dan business readiness `BLOCKED` tidak berubah.
+
 ## 2026-08-03 - Calm HUD mobile hierarchy production
 
 - `CONFIRMED`: audit 24 micro-sprint merapikan seluruh hierarchy mobile.
