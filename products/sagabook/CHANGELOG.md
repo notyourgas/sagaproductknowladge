@@ -8,7 +8,7 @@ Mencatat perubahan material SagaBook dengan provenance public-safe.
 
 - Klasifikasi: `CONFIRMED`; delivery `IMPLEMENTED_NOT_DEPLOYED`, activation
   production tidak berubah, business readiness tetap `NEEDS CONFIRMATION`.
-- Source `b1a11eb589d45ab00fffba34e5a3317fc69ec8a4` tersedia pada branch
+- Source terbaru `980e06df23677ba2bc8e31c479b947b545ea31c4` tersedia pada branch
   `codex/s91-booking-mobile-navigation`; production tetap source
   `994de01cf3586adb4da8813a9c4b931085457510`, release
   `20260802221221-994de01`, dengan rollback `20260802183533-35c8219`.
@@ -19,14 +19,15 @@ Mencatat perubahan material SagaBook dengan provenance public-safe.
   overflow serta tetap menampilkan tepat satu `Powered by SagaBook`. Booking,
   payment/provider, availability, permission, session, tenant isolation, dan
   SagaView tidak berubah.
-- Gate hijau: backend 960/960 dengan 11.007 assertions; focused Review 9/9;
-  accessibility 24/24; scoped E2E mobile dan desktop; build; npm/Composer
-  audit 0. Gate merah: full visual acceptance menemukan baseline/fixture lama
-  yang tidak konsisten pada langkah Jadwal/Background non-Review, dan satu test
-  mobile-only belum di-skip pada project desktop. Screenshot unrelated tidak
-  diperbarui secara spekulatif; deploy immutable tidak dijalankan.
-- Blocker/next action: selaraskan kontrak fixture dan scope project pada suite
-  visual global, lalu ulangi full acceptance sebelum promotion.
+- Gate hijau tetap mencakup backend 960/960 dengan 11.007 assertions; focused
+  Review 9/9; accessibility 24/24; scoped E2E; build; npm/Composer audit 0.
+  Perbaikan acceptance terbaru menutup drift langkah Jadwal, Background,
+  Add-on, Detail, dua baseline transfer yang telah diinspeksi, dan scoping
+  mobile-only. Full matrix fresh kini 141 passed, 2 expected skips, 1 failed.
+- Blocker/next action: fixture default harus mengunci heading font Cormorant.
+  Tanpa field tersebut, fallback Nexa hanya menggeser layout snapshot Review
+  tablet. Ulangi full acceptance setelah koreksi; deploy immutable belum
+  dijalankan dan screenshot unrelated tidak diperbarui.
 
 ## 2026-08-03 - Storefront booking desktop dipromosikan
 

@@ -93,11 +93,14 @@ ketika keputusan atau release baru menutup gap.
   deep link spesifik; detail tenant dan URL lokasi tidak disimpan di knowledge
   publik.
 - `CONFIRMED`: refinement enam jalur edit Review touch-safe tersedia pada
-  source `b1a11eb5` dengan status `IMPLEMENTED_NOT_DEPLOYED`; production tetap
+  source `980e06df` dengan status `IMPLEMENTED_NOT_DEPLOYED`; production tetap
   release `20260802221221-994de01`.
-- `TODO`: selaraskan baseline/fixture langkah non-Review dan beri skip/scoping
-  yang benar untuk test mobile-only pada project desktop. Ulangi full visual
-  acceptance sebelum source `b1a11eb5` boleh dipromosikan.
+- `CONFIRMED`: drift langkah Jadwal, Background, Add-on, Detail, dua baseline
+  transfer yang telah diinspeksi, dan scoping mobile-only sudah ditutup. Full
+  matrix fresh mencapai 141 passed, 2 expected skips, 1 failed.
+- `TODO`: kunci heading font Cormorant pada fixture default agar snapshot Review
+  tablet tidak memakai fallback Nexa. Ulangi full visual acceptance sebelum
+  source `980e06df` boleh dipromosikan.
 
 ### SagaView
 

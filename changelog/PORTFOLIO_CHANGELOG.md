@@ -15,17 +15,19 @@ Detail tetap berada pada changelog produk; entri docs-only berada di root
 - `CONFIRMED`: enam jalur `Ubah` pada Review storefront berubah dari target
   sekitar 31x18 menjadi tombol semantik minimal 72x44 piksel, lengkap dengan
   label screen reader, focus keyboard, forced-colors, dan reduced-motion.
-- Source `b1a11eb589d45ab00fffba34e5a3317fc69ec8a4` berstatus
+- Source terbaru `980e06df23677ba2bc8e31c479b947b545ea31c4` berstatus
   `IMPLEMENTED_NOT_DEPLOYED`; production tetap release
   `20260802221221-994de01` dari source `994de01cf3586adb4da8813a9c4b931085457510`.
 - Lima preset pada tiga viewport tidak overflow dan tetap memiliki tepat satu
   `Powered by SagaBook`. Backend 960/960, focused Review 9/9, accessibility
   24/24, scoped E2E, build, serta npm/Composer audit 0 lulus.
-- Promotion ditahan karena full visual acceptance masih menemukan
-  baseline/fixture lama yang tidak konsisten pada langkah non-Review dan scope
-  test mobile-only pada project desktop. Payment/provider, availability,
-  permission, session, tenant isolation, SagaView, dan klaim business
-  readiness tidak berubah.
+- Acceptance terbaru menutup drift langkah Jadwal, Background, Add-on, Detail,
+  dua baseline transfer yang telah diinspeksi, serta scoping mobile-only. Full
+  matrix fresh mencapai 141 passed, 2 expected skips, 1 failed. Promotion tetap
+  ditahan karena fixture default belum mengunci heading font Cormorant sehingga
+  snapshot Review tablet jatuh ke fallback Nexa. Payment/provider,
+  availability, permission, session, tenant isolation, SagaView, dan klaim
+  business readiness tidak berubah.
 
 ## 2026-08-03 - SagaView katalog frame lebih padat production
 

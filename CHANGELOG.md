@@ -21,17 +21,20 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
   background, add-on, atau nama tanpa target sentuh kecil.
 - Produk/area terdampak: SagaBook tenant storefront, Review navigation,
   accessibility, visual regression, dan release acceptance.
-- Klasifikasi: `CONFIRMED`; source
-  `b1a11eb589d45ab00fffba34e5a3317fc69ec8a4`, status
+- Klasifikasi: `CONFIRMED`; source terbaru
+  `980e06df23677ba2bc8e31c479b947b545ea31c4`, status
   `IMPLEMENTED_NOT_DEPLOYED`. Production tetap source `994de01c`, release
   `20260802221221-994de01`; rollback `20260802183533-35c8219`.
 - Production berubah: tidak. Booking/payment/provider, availability,
   permission, session, tenant isolation, watermark, dan SagaView tidak berubah.
 - Gate: backend 960/960, focused Review 9/9, accessibility 24/24, scoped E2E,
   build, npm/Composer audit 0, serta lima preset x tiga viewport lulus.
-- Blocker/next action: full visual acceptance merah pada baseline/fixture
-  langkah non-Review dan scope test mobile-only; selaraskan kontrak test lalu
-  ulangi seluruh gate sebelum deploy.
+- Acceptance terbaru menutup drift fixture langkah Jadwal, Background, Add-on,
+  Detail, dua baseline transfer yang telah diinspeksi, serta scoping
+  mobile-only. Full matrix fresh kini 141 passed, 2 expected skips, 1 failed.
+- Blocker/next action: tambahkan heading font Cormorant ke fixture default agar
+  snapshot Review tablet tidak jatuh ke fallback Nexa, lalu ulangi full matrix
+  sebelum deploy.
 - File knowledge: `products/sagabook/PRODUCT.md`, `DOSSIER.md`, `CHANGELOG.md`,
   master knowledge, portfolio changelog, `GAPS.md`, root changelog, dan sync
   status.
