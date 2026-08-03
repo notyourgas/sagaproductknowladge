@@ -392,8 +392,12 @@ Source UI `390e07a2d1b087666dfee97438b35b2c0eef362c`, Hostinger release
 `dpl_7iF6UC1XYEq8fdn9ykrUbDozxsVx` mengaktifkan sistem visual original `Pixel
 Matchday Arcade` di seluruh surface tanpa mengubah kontrak auth, role, API,
 atau data. Plus Jakarta Sans, Feather icons, canvas mobile-first 430 px,
-reduced-motion, dan state operasional tetap dipertahankan. Public Playwright
-34/34 pada enam route dan empat viewport serta axe tanpa pelanggaran lulus.
+reduced-motion, dan state operasional tetap dipertahankan. Source
+`3f5cf151666dbb3d83030ffef8127fdd88ad55ac` kemudian mengaktifkan refinement
+`Calm HUD`: spacing konsisten, safe wrapping, hierarchy mobile, dan baris
+khusus topbar/bottom navigation sehingga hanya main content yang scroll.
+Public Playwright 46/46 pada enam route dan empat viewport, collision dan
+nav-clearance assertions, serta axe tanpa pelanggaran lulus.
 Ini adalah nama terbaru project 17an/Olimpiade Kemerdekaan.
 
 Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:
@@ -413,6 +417,9 @@ Agenda publik pada source `3bd9c78a` memisahkan kategori, judul, lokasi, dan
 status serta memberi gap antarkartu; refinement ini aktif pada Hostinger release
 `20260803T125358Z` dan Vercel `dpl_8ZoZW1SEwv8JiYTXFZ7JEQ8dkpqJ` tanpa
 perubahan data atau workflow.
+Refinement hierarchy terbaru aktif pada Hostinger `20260803T132457Z` dan
+Vercel `dpl_G7AGcqTMFxi2w3AHhCD5F3RYWGCe`; activation keseluruhan dan business
+readiness tidak berubah.
 
 ### SagaOPS
 

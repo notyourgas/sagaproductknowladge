@@ -56,8 +56,12 @@ Public Vercel delivery memakai `Pixel Matchday Arcade`: hierarchy quest/HUD,
 stepped geometry, hard shadow, physical button state, animated navigation,
 modal/state motion, dan reduced-motion fallback. Plus Jakarta Sans tetap satu-
 satunya font, Feather-style icons tetap dipakai, dan canvas mobile-first 430 px
-tidak diperlebar di desktop. Enam route publik lulus visual regression 34/34
-pada empat viewport serta axe WCAG 2 A/AA dan 2.1 AA tanpa pelanggaran.
+tidak diperlebar di desktop. Refinement `Calm HUD` memakai spacing
+4/8/12/16/24/32, safe wrapping, hierarchy heading/card/form/status, serta
+baris layout khusus untuk topbar dan bottom navigation. Hanya main content
+yang scroll sehingga navigasi tidak menutup field, tombol, timeline, atau
+kartu. Enam route publik lulus visual regression 46/46 pada empat viewport,
+collision/clearance assertions, touch target, reduced motion, dan axe WCAG.
 Agenda publik memakai urutan kategori → judul → lokasi → status, gap antarkartu,
 dan grid ringkas 320 px; waktu, status, link detail, serta sumber data tidak
 berubah.

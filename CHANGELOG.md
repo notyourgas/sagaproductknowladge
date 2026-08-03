@@ -12,6 +12,26 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-03
 
+### AOGTICVITY Calm HUD mobile hierarchy production
+
+- Ringkasan: menjalankan 24 micro-sprint hierarchy mobile untuk menutup teks,
+  ikon, status, field, action, dan bottom navigation yang padat atau tumpang
+  tindih pada public serta protected-role surfaces.
+- Produk/area terdampak: global layout/CSS, agenda, form, standing, timeline,
+  player/admin controls, accessibility, Playwright, Hostinger, Vercel, dan
+  release knowledge. Auth, role, API, persistence, dan workflow tidak berubah.
+- Klasifikasi: `CONFIRMED`; source
+  `3f5cf151666dbb3d83030ffef8127fdd88ad55ac`, Hostinger release
+  `20260803T132457Z`, Vercel `dpl_G7AGcqTMFxi2w3AHhCD5F3RYWGCe`, status
+  `PRODUCTION_DEPLOYED`.
+- Gate: 97 test, typecheck/build, audit 0, Playwright 46/46, axe,
+  overflow/collision/nav-clearance, readiness, protected redirects, dan
+  visual smoke production lulus.
+- Production berubah: ya, UI/layout. Activation keseluruhan tetap
+  `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED`.
+- File knowledge: `products/aogticvity/PRODUCT.md`, `DOSSIER.md`,
+  `CHANGELOG.md`, master knowledge, portfolio changelog, dan `SYNC_STATUS.md`.
+
 ### AOGTICVITY agenda density refinement production
 
 - Ringkasan: memisahkan kategori, judul, lokasi, dan status pada kartu agenda,

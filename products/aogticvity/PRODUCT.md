@@ -130,6 +130,13 @@ Public delivery saat ini: `https://olimpiade-kemerdekaan.vercel.app`.
   memakai Plus Jakarta Sans, Feather-style icons, canvas mobile-first 430 px,
   state lengkap, dan reduced-motion; kontrak data, auth, role, serta API tidak
   berubah.
+- Source UI `3f5cf151666dbb3d83030ffef8127fdd88ad55ac`, Hostinger release
+  `20260803T132457Z`, dan Vercel production
+  `dpl_G7AGcqTMFxi2w3AHhCD5F3RYWGCe` mengaktifkan refinement `Calm HUD`
+  berbasis 24 micro-sprint. Topbar dan bottom navigation mempunyai baris
+  layout sendiri; hanya main content yang scroll. Safe wrapping, spacing
+  4/8/12/16/24/32, hierarchy heading/card/form/status, compact admin controls,
+  serta focusable scroll region mencegah teks dan kontrol saling menutup.
 - SQLite hanya fast test adapter.
 - Event-master memiliki dry-run, validation, atomic publish, versioning, dan
   audit. Durasi jadwal bersifat provisional dan dapat disunting admin.
@@ -154,11 +161,12 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:
 - UI memakai `Pixel Matchday Arcade` yang tetap mobile-first 430 px: Plus
   Jakarta Sans, Feather-style icons, stepped geometry, hard shadow, quest/HUD
   hierarchy, state feedback, dan motion yang menghormati reduced-motion.
-- Public visual regression lulus 34/34 pada enam route dan viewport 320, 390,
-  430, serta 1440 px; axe tidak menemukan pelanggaran WCAG 2 A/AA atau 2.1 AA.
-- Agenda publik memisahkan kategori, judul, lokasi, dan status menjadi empat
-  tingkat hierarchy, memberi gap antarkartu, dan menyembunyikan ikon dekoratif
-  pada 320 px agar informasi operasional tidak padat atau bertumpuk.
+- Public visual regression lulus 46/46 pada enam route dan viewport 320, 390,
+  430, serta 1440 px; matriks memeriksa overflow teks, collision sibling,
+  clearance navigasi, touch target, reduced motion, dan axe WCAG.
+- Agenda publik memisahkan waktu, kategori, judul, lokasi, dan status; form,
+  timeline, standing, serta panel operasional memakai wrapping dan gap yang
+  konsisten. Bottom navigation tidak lagi menjadi overlay di atas konten.
 - Master recap 2026 berisi 8 tim, 10 lomba, jadwal provisional, mekanisme,
   safety, equipment, dan assignment panitia.
 - Database-backed auth aktif melalui Vercel: real credential login dan forced

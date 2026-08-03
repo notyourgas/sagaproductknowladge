@@ -8,6 +8,27 @@ Mencatat perubahan material AOGTICVITY/17an/Olimpiade.
 
 Nama lama dipertahankan sebagai provenance; status runtime harus eksplisit.
 
+## 2026-08-03 - Calm HUD mobile hierarchy production
+
+- `CONFIRMED`: audit 24 micro-sprint merapikan seluruh hierarchy mobile.
+  Topbar dan bottom navigation sekarang menempati baris layout sendiri; hanya
+  main content yang scroll, sehingga navigasi tidak lagi menutup form,
+  timeline, standing, agenda, atau tombol terakhir.
+- Spacing 4/8/12/16/24/32, safe wrapping, min-width guards, heading/card/form
+  hierarchy, compact status/action controls, keyboard-focusable scroll region,
+  reduced motion, dan forced-colors diterapkan tanpa mengubah auth, API, role,
+  permission, MySQL, atau workflow.
+- Source `3f5cf151666dbb3d83030ffef8127fdd88ad55ac`; Hostinger release
+  `20260803T132457Z`; Vercel production
+  `dpl_G7AGcqTMFxi2w3AHhCD5F3RYWGCe` pada alias kanonik.
+- Gate: 97 test lulus, 19 MySQL integration test dilewati pada local gate,
+  typecheck/build, dependency audit 0, 46/46 Playwright, enam route, empat
+  viewport, overflow/collision/nav-clearance assertions, axe, readiness,
+  protected redirects, dan visual smoke production lulus.
+- Delivery `PRODUCTION_DEPLOYED`; activation keseluruhan tetap
+  `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED`. Authenticated
+  four-role visual UAT dan rehearsal fisik tetap terbuka.
+
 ## 2026-08-03 - Agenda card density refinement production
 
 - `CONFIRMED`: kartu agenda tidak lagi menempatkan status, kategori, judul, dan

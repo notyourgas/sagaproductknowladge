@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-03 - AOGTICVITY Calm HUD mobile hierarchy production
+
+- Seluruh surface mendapat kontrak hierarchy mobile 24 micro-sprint: spacing
+  konsisten, wrapping aman, control lebih ringkas, dan app-shell dengan
+  topbar/navigation pada baris tersendiri agar konten tidak tertutup.
+- Source `3f5cf151666dbb3d83030ffef8127fdd88ad55ac`; Hostinger release
+  `20260803T132457Z`; Vercel production
+  `dpl_G7AGcqTMFxi2w3AHhCD5F3RYWGCe`. Gate 97 test, build/typecheck, audit 0,
+  Playwright 46/46, axe, readiness, protected redirects, dan visual smoke
+  production lulus.
+- Delivery `PRODUCTION_DEPLOYED`; activation keseluruhan tetap
+  `NOT_PRODUCTION_ACTIVATED` dan business readiness `BLOCKED` sampai
+  authenticated four-role UI UAT serta rehearsal fisik selesai.
+
 ## 2026-08-03 - AOGTICVITY agenda density refinement production
 
 - Kartu agenda kini memberi hierarchy terpisah untuk kategori, judul, lokasi,

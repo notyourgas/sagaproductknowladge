@@ -12,11 +12,11 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-03T19:57:45+07:00 |
+| Waktu pembaruan terakhir | 2026-08-03T20:28:27+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `fa7eeb67` |
-| Informasi terakhir disinkronkan | AOGTICVITY agenda density refinement source `3bd9c78a07b0196c9736fed725604c27a4ffa89d`, Hostinger release `20260803T125358Z`, dan Vercel `dpl_8ZoZW1SEwv8JiYTXFZ7JEQ8dkpqJ`, berstatus `PRODUCTION_DEPLOYED`; activation keseluruhan tetap `NOT_PRODUCTION_ACTIVATED`. |
+| Baseline sebelum pembaruan | `22c204d29b42312e289f2abe100fa5d67fc390db` |
+| Informasi terakhir disinkronkan | AOGTICVITY Calm HUD mobile hierarchy source `3f5cf151666dbb3d83030ffef8127fdd88ad55ac`, Hostinger release `20260803T132457Z`, dan Vercel `dpl_G7AGcqTMFxi2w3AHhCD5F3RYWGCe`, berstatus `PRODUCTION_DEPLOYED`; activation keseluruhan tetap `NOT_PRODUCTION_ACTIVATED`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
 | Konflik | Tidak ada; local `main` sama dengan `origin/main` sebelum edit. |
 | Error | Tidak ada pada release UI. Authenticated four-role visual UAT, valid-link two-device UAT, provider webhook, custom domain, dan rehearsal fisik masih menahan activation/business readiness AOGTICVITY. |
