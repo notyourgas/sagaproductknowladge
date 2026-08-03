@@ -15,12 +15,15 @@ Detail tetap berada pada changelog produk; entri docs-only berada di root
 - `CONFIRMED`, `IMPLEMENTED_NOT_DEPLOYED`: success screen booking sekarang
   mengutamakan detail/status dan WhatsApp cabang yang dipilih, dengan pesan
   public-safe serta fallback salin pesan bila nomor cabang tidak valid.
-- Source `729e47da6cc6584f186c856c2718a9be15b15667` sudah tersedia pada branch
-  `codex/s92-booking-success-whatsapp`; focused E2E 6/6, visual 9/9 pada tiga
-  viewport, backend 9 tests/108 assertions, build, design audit, dan audit
-  dependency 0 lulus.
-- Full visual matrix tidak menghasilkan final result dalam verification window
-  15 menit, sehingga release ditahan. Production tetap source `fa228d89`,
+- Source `7f129eadd0ab3cb214b6d5128765e086f14ac0cc` sudah tersedia pada branch
+  `codex/s92-booking-success-whatsapp`; focused success/watermark 9/9,
+  backend 960/960 dengan 11.007 assertions, unit guard 2/2, build, design
+  audit, dan audit dependency 0 lulus.
+- Matrix runner sekarang aman terhadap junction dan snapshot success
+  deterministik. Rerun fresh mencapai 264 passed, 45 controlled skips, dan 1
+  failed karena fixture tablet memilih jam yang sudah lewat lalu ditolak HTTP
+  409. Batas dua correction rounds tercapai, sehingga release ditahan.
+  Production tetap source `fa228d89`,
   release `20260803022430-fa228d8`, rollback `20260802221221-994de01`.
 - Booking/payment/provider, availability, permission, session, tenant
   isolation, SagaView, activation, dan business readiness tidak berubah.

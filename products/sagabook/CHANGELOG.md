@@ -7,7 +7,7 @@ Mencatat perubahan material SagaBook dengan provenance public-safe.
 ## 2026-08-03 - Success screen WhatsApp support candidate
 
 - Klasifikasi: `CONFIRMED`; delivery `IMPLEMENTED_NOT_DEPLOYED`.
-- Source `729e47da6cc6584f186c856c2718a9be15b15667` tersedia pada branch
+- Source `7f129eadd0ab3cb214b6d5128765e086f14ac0cc` tersedia pada branch
   `codex/s92-booking-success-whatsapp`; production tidak berubah dan tetap
   memakai source `fa228d89bc5bea32fb19bf424a4b0e48db1bc506`, release
   `20260803022430-fa228d8`, rollback `20260802221221-994de01`.
@@ -19,10 +19,15 @@ Mencatat perubahan material SagaBook dengan provenance public-safe.
   no-overflow, dan tepat satu `Powered by SagaBook` tercakup. Booking,
   payment/provider, availability, permission, session, tenant isolation,
   template lain, dan SagaView tidak berubah.
-- Focused E2E 6/6, visual success 9/9 pada mobile/tablet/desktop, backend 9
-  tests dengan 108 assertions, build, design audit 26 artefak, serta
-  npm/Composer audit 0 lulus. Full visual matrix belum selesai dalam window 15
-  menit dan tidak menghasilkan final pass count; release ditahan fail-closed.
+- Focused success/watermark 9/9 pada mobile/tablet/desktop, backend 960/960
+  dengan 11.007 assertions, unit guard 2/2, build, design audit 26 artefak,
+  serta npm/Composer audit 0 lulus. Guard database relatif kini berakar pada
+  exact worktree tanpa mengizinkan path escape; snapshot success memakai kode
+  deterministik dan baseline mobile/desktop yang sudah diinspeksi.
+- Full matrix fresh mencapai 264 passed, 45 controlled skips, dan 1 failed.
+  Failure tersisa berada pada setup map-recovery tablet: fixture memilih jam
+  yang sudah lewat dan API menolak aman dengan HTTP 409. Batas dua correction
+  rounds tercapai; release tetap ditahan fail-closed.
 
 ## 2026-08-03 - Navigasi edit Review touch-safe dipromosikan
 

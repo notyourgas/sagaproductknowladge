@@ -12,14 +12,14 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-03T11:01:18+07:00 |
+| Waktu pembaruan terakhir | 2026-08-03T12:49:28+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `6bc2908` |
-| Informasi terakhir disinkronkan | SagaBook success screen WhatsApp support source `729e47da` berstatus `IMPLEMENTED_NOT_DEPLOYED`; production tetap source `fa228d89`, release `20260803022430-fa228d8`. |
+| Baseline sebelum pembaruan | `13e1558` |
+| Informasi terakhir disinkronkan | SagaBook success screen WhatsApp support source `7f129ead` berstatus `IMPLEMENTED_NOT_DEPLOYED`; production tetap source `fa228d89`, release `20260803022430-fa228d8`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru |
 | Konflik | Tidak ada; local `main` sama dengan `origin/main` sebelum edit. |
-| Error | Full visual matrix SagaBook belum menghasilkan final result dalam verification window 15 menit; deploy ditahan fail-closed. |
+| Error | Full visual matrix fresh mencapai 264 passed, 45 controlled skips, dan 1 failed karena fixture map-recovery tablet memilih jam yang sudah lewat dan ditolak HTTP 409; deploy ditahan fail-closed setelah dua correction rounds. |
 
 ## File yang berubah pada sinkronisasi ini
 
@@ -33,8 +33,8 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 ## Item menunggu konfirmasi
 
-Full visual matrix SagaBook perlu diulang hingga final result tersedia sebelum
-release gate. Founding Studio Pilot tetap diperlukan sebelum klaim
+Fixture map-recovery tablet harus dibuat future-safe dan full visual matrix
+SagaBook diulang sampai hijau sebelum release gate. Founding Studio Pilot tetap diperlukan sebelum klaim
 `BUSINESS_READY`.
 
 ## Cara verifikasi
