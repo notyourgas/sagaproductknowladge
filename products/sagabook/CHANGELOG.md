@@ -4,6 +4,27 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-03 - Admin Booking compact triage dipromosikan
+
+- Klasifikasi: `CONFIRMED`; delivery `PRODUCTION_DEPLOYED`, activation scope
+  UI `PRODUCTION_ACTIVATED`, business readiness tetap `NEEDS CONFIRMATION`.
+- Source `cfb2af8fbec2e079b7341e0e1f1920511bf89022` aktif sebagai release
+  `20260803132556-cfb2af8`; rollback `20260803080450-51a9165` tersedia.
+- Before: pada viewport 1024 piksel, tabel minimal 930 piksel memecah nama,
+  tanggal, paket, dan status menjadi kolom sempit. After: viewport di bawah
+  1280 piksel memakai kartu triage ringkas; desktop 1440 tetap memakai tabel.
+- Keyboard detail flow, target sentuh 44 piksel, focus, forced-colors,
+  reduced-motion, no-overflow, dan tepat satu `Powered by SagaBook` lulus.
+  Gate: 930 Feature test, 26 visual smoke, 7 focused Playwright pada mobile,
+  tablet, desktop, dan 1024; build; npm/Composer audit 0; S39 backup terenkripsi,
+  checksum, disposable restore exact-SHA; manifest; DB audit 100; service;
+  empat endpoint 200; serta browser produksi public-safe dua viewport.
+- Booking/payment/provider, availability, permission, session, tenant
+  isolation, storefront/template, dan SagaView tidak berubah. Admin production
+  terautentikasi tidak direkam tanpa credential; exact-source regression 1024
+  dan provenance release membuktikan perubahan. UAT operator studio nyata
+  tetap diperlukan sebelum klaim business readiness.
+
 ## 2026-08-03 - Success screen WhatsApp support dipromosikan
 
 - Klasifikasi: `CONFIRMED`; delivery `PRODUCTION_DEPLOYED`, activation tenant

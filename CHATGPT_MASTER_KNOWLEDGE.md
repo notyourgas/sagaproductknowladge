@@ -202,6 +202,20 @@ service health, endpoint publik, dan browser produksi dua viewport lulus.
 Demo SnapStudio masih belum dipublish, sehingga activation tenant nyata dan
 business readiness tetap `NEEDS CONFIRMATION`.
 
+Admin Booking compact triage terbaru aktif pada source
+`cfb2af8fbec2e079b7341e0e1f1920511bf89022`, release
+`20260803132556-cfb2af8`, dengan rollback `20260803080450-51a9165`. Viewport
+di bawah 1280 piksel sekarang memakai kartu triage ringkas sehingga nama,
+jadwal, paket, status, dan action tetap terbaca pada 1024 piksel; desktop 1440
+tetap memakai tabel. Target 44 piksel, keyboard/focus, forced-colors,
+reduced-motion, no-overflow, dan tepat satu `Powered by SagaBook` lulus.
+Gate 930 Feature test, 26 visual smoke, 7 focused Playwright, build, audit
+dependency 0, backup/restore exact-SHA, database audit 100, service, endpoint,
+dan browser produksi dua viewport lulus. Booking/payment/provider,
+availability, permission, session, tenant isolation, storefront/template,
+dan SagaView tidak berubah. Activation scope UI `PRODUCTION_ACTIVATED`, tetapi
+business readiness tetap `NEEDS CONFIRMATION` sampai UAT operator studio nyata.
+
 Keputusan privacy/retention/offboarding SagaBook yang lebih rinci telah
 disetujui owner untuk implementasi dan legal review pada source docs commit
 `295ec863ff6cfc2e79ac98183651f19c15a3b368`. Workflow consent berversi,

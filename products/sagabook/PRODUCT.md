@@ -156,8 +156,8 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
 
 - Customer Booking Center aktif di production.
 - Source production terbaru pada cut-off: commit
-  `51a916537b51e8a503c6c88d3b130d2396558589`.
-- Release production tercatat: `20260803080450-51a9165`.
+  `cfb2af8fbec2e079b7341e0e1f1920511bf89022`.
+- Release production tercatat: `20260803132556-cfb2af8`.
 - Storefront, admin, dan super-admin merespons public smoke.
 - Tenant Onboarding dan First Booking Activation aktif melalui Activation
   Center yang tenant-scoped dan server-authoritative.
@@ -314,6 +314,22 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
   public-safe dua viewport lulus. Demo SnapStudio masih menampilkan state
   belum dipublish; aktivasi tenant nyata dan business readiness tetap perlu
   UAT terkontrol.
+- Admin Booking compact triage pada source
+  `cfb2af8fbec2e079b7341e0e1f1920511bf89022` berstatus
+  `PRODUCTION_DEPLOYED` dan `PRODUCTION_ACTIVATED` sebagai release
+  `20260803132556-cfb2af8`; rollback `20260803080450-51a9165` tersedia.
+  Before: viewport 1024 piksel memakai tabel 930 piksel sehingga nama, tanggal,
+  paket, dan status terpecah menjadi kolom sempit. After: viewport di bawah
+  1280 piksel memakai kartu triage ringkas; desktop 1440 piksel tetap memakai
+  tabel. Focus, forced-colors, reduced-motion, target sentuh 44 piksel,
+  no-overflow, dan tepat satu `Powered by SagaBook` lulus. Gate mencakup 930
+  Feature test, 26 visual smoke, 7 focused Playwright pada mobile/tablet/
+  desktop plus viewport risiko 1024, build, audit dependency 0, S39 backup
+  terenkripsi dan disposable restore exact-SHA, database audit 100, service,
+  empat endpoint 200, serta browser produksi public-safe 390x844 dan 1440x900.
+  Booking/payment/provider, availability, permission, session, tenant
+  isolation, storefront, dan SagaView tidak berubah. Business readiness tetap
+  `NEEDS CONFIRMATION` sampai UAT operator studio nyata.
 - Refinement navigasi dari langkah Review pada source
   `fa228d89bc5bea32fb19bf424a4b0e48db1bc506` berstatus
   `PRODUCTION_DEPLOYED` sebagai release `20260803022430-fa228d8`. Enam kontrol `Ubah` yang sebelumnya sekitar

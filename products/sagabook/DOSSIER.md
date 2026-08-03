@@ -283,6 +283,23 @@ service health, endpoint publik, dan visual browser produksi dua viewport
 lulus. Demo SnapStudio masih belum dipublish; activation tenant nyata dan
 business readiness tetap memerlukan UAT terkontrol.
 
+Admin Booking compact triage pada source
+`cfb2af8fbec2e079b7341e0e1f1920511bf89022` berstatus
+`PRODUCTION_DEPLOYED` dan `PRODUCTION_ACTIVATED` sebagai release
+`20260803132556-cfb2af8`; rollback `20260803080450-51a9165` tersedia. Pada
+viewport 1024 piksel, tabel 930 piksel yang membuat identitas, jadwal, paket,
+dan status terpecah telah diganti kartu ringkas. Breakpoint di bawah 1280
+memakai kartu, sedangkan desktop 1440 tetap memakai tabel. Regression
+memverifikasi detail booking via keyboard, target sentuh 44 piksel,
+forced-colors, reduced-motion, no-overflow, dan satu `Powered by SagaBook`.
+Gate lulus: 930 Feature test, 26 visual smoke, 7 focused Playwright tiga
+viewport plus 1024, build, audit dependency 0, backup/restore exact-SHA,
+manifest, database audit 100, service, empat endpoint 200, dan visual produksi
+public-safe 390x844 serta 1440x900. Tidak ada perubahan pada mutasi booking,
+payment/provider, availability, permission, session, tenant isolation,
+storefront, atau SagaView. UAT operator studio nyata tetap diperlukan untuk
+klaim business readiness.
+
 ## Integrasi
 
 Payment dan notification provider, serta future SagaView handoff.

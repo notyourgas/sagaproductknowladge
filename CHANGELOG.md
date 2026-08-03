@@ -12,6 +12,25 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-03
 
+### SagaBook Admin Booking compact triage production
+
+- Ringkasan: menutup tabel Booking yang terlalu padat pada viewport 1024
+  piksel dengan kartu triage ringkas di bawah 1280 piksel; desktop 1440 tetap
+  memakai tabel dan workflow/data tidak berubah.
+- Produk/area terdampak: Admin Booking responsive presentation, focused visual
+  regression, release immutable, production smoke, dan knowledge publik.
+- Klasifikasi: `CONFIRMED`; source
+  `cfb2af8fbec2e079b7341e0e1f1920511bf89022`, release
+  `20260803132556-cfb2af8`, rollback `20260803080450-51a9165`, status
+  `PRODUCTION_DEPLOYED` dan activation scope UI `PRODUCTION_ACTIVATED`.
+- Gate: 930 Feature test, 26 visual smoke, 7 focused Playwright, build,
+  dependency audit 0, backup/restore exact-SHA, DB audit 100, services,
+  endpoint, dan browser produksi mobile/desktop lulus.
+- Production berubah: ya, hanya presentasi Admin Booking. Business readiness
+  tetap `NEEDS CONFIRMATION` sampai UAT operator studio nyata.
+- File knowledge: `products/sagabook/PRODUCT.md`, `DOSSIER.md`, `CHANGELOG.md`,
+  master knowledge, portfolio changelog, dan `SYNC_STATUS.md`.
+
 ### AOGTICVITY Calm HUD mobile hierarchy production
 
 - Ringkasan: menjalankan 24 micro-sprint hierarchy mobile untuk menutup teks,

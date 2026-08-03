@@ -1,5 +1,21 @@
 # Portfolio Changelog
 
+## 2026-08-03 - SagaBook Admin Booking compact triage production
+
+- `CONFIRMED`: layar Booking pada viewport di bawah 1280 piksel sekarang
+  memakai kartu triage ringkas; desktop 1440 tetap memakai tabel. Masalah
+  kolom sempit pada 1024 piksel ditutup tanpa mengubah workflow atau data.
+- Source `cfb2af8fbec2e079b7341e0e1f1920511bf89022` aktif pada release
+  `20260803132556-cfb2af8`; rollback `20260803080450-51a9165` tersedia.
+- 930 Feature test, 26 visual smoke, 7 focused Playwright, build, audit
+  dependency 0, backup/restore exact-SHA, DB audit 100, service, endpoint, dan
+  visual produksi dua viewport lulus. Target 44 piksel, keyboard, focus,
+  forced-colors, reduced-motion, no-overflow, serta satu watermark tercakup.
+- Delivery dan activation scope UI `PRODUCTION_ACTIVATED`; business readiness
+  tetap `NEEDS CONFIRMATION` sampai UAT operator studio nyata.
+- Booking/payment/provider, availability, permission, session, tenant
+  isolation, storefront/template, dan SagaView tidak berubah.
+
 ## 2026-08-03 - AOGTICVITY Calm HUD mobile hierarchy production
 
 - Seluruh surface mendapat kontrak hierarchy mobile 24 micro-sprint: spacing
