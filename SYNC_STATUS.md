@@ -12,13 +12,13 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-04T06:42:20+07:00 |
+| Waktu pembaruan terakhir | 2026-08-04T06:52:54+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `8219f19dcecb72fb94a8cb8ab1d8a9f181738bf1` |
-| Informasi terakhir disinkronkan | AOGTICVITY source `f7fd6f161985a4b0886f03ad67776e1b08a76b4d`, Hostinger `20260803T234003Z`, dan Vercel `dpl_G1LSCYXbuu5RNjdF8Fpdc98mXtwq` menambahkan admin participant safe delete. |
+| Baseline sebelum pembaruan | `b7dfe1f0e3a27874cf74dcd5cc1352825103aa76` |
+| Informasi terakhir disinkronkan | AOGTICVITY source `cd26cf52ad8f56320bcf4240ab73b0868af50298`, Hostinger `20260803T235030Z`, dan Vercel `dpl_8q5LTDZappCxbDo4igw1LMaGwuEE` menyederhanakan agenda menjadi waktu mulai tunggal, durasi teks, dan tanpa ikon jenis lomba. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada; istilah Hapus dipetakan ke lifecycle Withdrawn, bukan hard delete. |
+| Konflik | Tidak ada; perubahan hanya presentasi agenda dan tidak mengubah data rundown. |
 | Error | Tidak ada pada release; authenticated multi-device UAT dan rehearsal AOGTICVITY masih diperlukan untuk business readiness. |
 
 ## File yang berubah pada sinkronisasi ini

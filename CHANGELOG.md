@@ -12,6 +12,24 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-04
 
+### AOGTICVITY simplified single-time agenda production
+
+- Ringkasan: menyederhanakan kartu agenda menjadi waktu mulai, informasi lomba,
+  dan panah; durasi tampil sebagai teks `(n menit)` dan ikon jenis lomba dihapus.
+- Alasan: keputusan founder untuk mengurangi kepadatan visual serta menghindari
+  dua baris waktu pada layar mobile.
+- Produk/area terdampak: agenda publik/peserta, responsive hierarchy, Vercel,
+  Hostinger, dan knowledge publik.
+- Klasifikasi: `CONFIRMED`; sumber Andreas/founder; source
+  `cd26cf52ad8f56320bcf4240ab73b0868af50298`, Hostinger
+  `20260803T235030Z`, Vercel `dpl_8q5LTDZappCxbDo4igw1LMaGwuEE`, status
+  `PRODUCTION_DEPLOYED`.
+- Gate: 108 tests, Playwright 48/48, typecheck/build/audit, readiness, exact
+  source, public 320 px render, dan zero horizontal overflow lulus.
+- Production berubah: ya, UI agenda saja. Schema/data, permission, activation,
+  dan business readiness tidak berubah. File knowledge: product, dossier,
+  changelog AOGTICVITY, master, decision, portfolio/root changelog, sync status.
+
 ### AOGTICVITY admin participant safe delete production
 
 - Ringkasan: menambahkan tombol Hapus, modal alasan, filter Aktif/Dihapus, dan

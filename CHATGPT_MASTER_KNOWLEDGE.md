@@ -449,6 +449,11 @@ Source `f7fd6f161985a4b0886f03ad67776e1b08a76b4d`, Hostinger
 `20260803T234003Z`, dan Vercel `dpl_G1LSCYXbuu5RNjdF8Fpdc98mXtwq` menambahkan
 admin participant safe delete. Peserta dipindah dari Aktif ke Dihapus melalui
 `Withdrawn`; akses, sesi, tim, dan roster dicabut, sementara audit/histori tetap.
+Source UI `cd26cf52ad8f56320bcf4240ab73b0868af50298`, Hostinger
+`20260803T235030Z`, dan Vercel `dpl_8q5LTDZappCxbDo4igw1LMaGwuEE`
+menyederhanakan agenda publik/peserta menjadi waktu mulai tunggal, informasi
+lomba, dan panah. Durasi tampil sebagai teks `(n menit)` pada baris kategori;
+ikon jenis lomba dihapus tanpa mengubah status, link, atau data rundown.
 Ini adalah nama terbaru project 17an/Olimpiade Kemerdekaan.
 
 Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:

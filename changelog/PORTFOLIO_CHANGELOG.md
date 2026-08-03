@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-04 - AOGTICVITY simplified agenda production
+
+- Agenda publik/peserta sekarang menampilkan satu waktu mulai dan durasi dalam
+  teks `(n menit)`; ikon jenis lomba dihapus sehingga kartu lebih lapang.
+- Source `cd26cf52ad8f56320bcf4240ab73b0868af50298`; Hostinger
+  `20260803T235030Z`; Vercel `dpl_8q5LTDZappCxbDo4igw1LMaGwuEE`. Regression
+  108 tests, Playwright 48/48, build/audit, readiness, dan public visual smoke
+  lulus.
+- Delivery `PRODUCTION_DEPLOYED`; tidak ada perubahan data, permission,
+  activation, atau business readiness.
+
 ## 2026-08-04 - AOGTICVITY admin participant safe delete production
 
 - Admin kini dapat menghapus peserta melalui modal beralasan dan memisahkan

@@ -8,6 +8,21 @@ Mencatat perubahan material AOGTICVITY/17an/Olimpiade.
 
 Nama lama dipertahankan sebagai provenance; status runtime harus eksplisit.
 
+## 2026-08-04 - Simplified single-time agenda production
+
+- `CONFIRMED`: kartu agenda publik/peserta hanya menampilkan waktu mulai;
+  durasi dipindahkan menjadi teks `(n menit)` pada baris kategori dan ikon
+  jenis lomba dihapus.
+- Grid menjadi waktu, informasi lomba, dan panah. Lokasi, status, link detail,
+  serta sumber rundown tetap sama.
+- Source `cd26cf52ad8f56320bcf4240ab73b0868af50298`; Hostinger
+  `20260803T235030Z`; Vercel `dpl_8q5LTDZappCxbDo4igw1LMaGwuEE`; tanpa
+  migration data/schema.
+- Gate: 108 tests, Playwright 48/48, typecheck/build/audit, public render 320 px,
+  readiness, exact source, dan zero horizontal overflow lulus.
+- Delivery `PRODUCTION_DEPLOYED`; activation dan business readiness keseluruhan
+  tidak berubah.
+
 ## 2026-08-04 - Admin participant safe delete production
 
 - `CONFIRMED`: setiap peserta aktif mempunyai tombol `Hapus`, modal konsekuensi,

@@ -356,3 +356,17 @@ keputusan pengganti.
 | Pemberi keputusan | Andreas / founder |
 | Status | `CONFIRMED`; source dan public production runtime terverifikasi, authenticated human UAT masih menunggu |
 | Dokumen terkait | [AOGTICVITY Product](products/aogticvity/PRODUCT.md), [AOGTICVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTICVITY Changelog](products/aogticvity/CHANGELOG.md) |
+
+## DEC-025 - AOGTICVITY memakai agenda waktu mulai tunggal tanpa ikon lomba
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-04 |
+| Topik | Kepadatan visual kartu agenda AOGTICVITY |
+| Keputusan | Kartu agenda publik/peserta hanya menampilkan satu waktu mulai. Durasi dipindahkan menjadi teks `(n menit)` pada baris kategori dan ikon jenis lomba dihapus. |
+| Alasan | Founder meminta layar agenda lebih sederhana, mudah dipindai, dan tidak memakai dua baris waktu atau ikon yang mengambil ruang judul pada mobile. |
+| Alternatif yang dipertimbangkan | Mempertahankan rentang waktu; memindahkan durasi ke metadata desktop saja; menyembunyikan ikon hanya pada viewport kecil. |
+| Dampak | Grid kartu menjadi waktu, informasi lomba, dan panah pada semua viewport. Lokasi, status, link detail, sumber rundown, auth, dan permission tidak berubah. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED`; source dan public production runtime terverifikasi |
+| Dokumen terkait | [AOGTICVITY Product](products/aogticvity/PRODUCT.md), [AOGTICVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTICVITY Changelog](products/aogticvity/CHANGELOG.md) |

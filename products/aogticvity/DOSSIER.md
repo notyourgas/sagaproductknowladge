@@ -65,9 +65,10 @@ collision/clearance assertions, touch target, reduced motion, dan axe WCAG.
 Kartu alur `Dari daftar sampai podium` memakai tiga track tetap untuk badge
 nomor, copy, dan panah. Badge 30 px dan gap 10 px mencegah overlap pada
 viewport 320 px; acceptance suite kini mencakup 48 Playwright checks.
-Agenda publik memakai urutan kategori → judul → lokasi → status, gap antarkartu,
-dan grid ringkas 320 px; waktu, status, link detail, serta sumber data tidak
-berubah.
+Agenda publik/peserta memakai tiga track ringkas pada 320 px: waktu mulai,
+informasi lomba, dan panah. Rentang waktu diganti menjadi satu waktu mulai;
+durasi tetap terlihat sebagai teks `(n menit)` pada baris kategori; ikon jenis
+lomba dihapus. Judul, lokasi, status, link detail, dan sumber data tetap utuh.
 
 Taxonomy komunitas final mempunyai dua kategori utama: `TEEN` dengan enam
 subcategory `CG teen`, dan `SOUTH, WEST, CENTRAL` dengan delapan subcategory

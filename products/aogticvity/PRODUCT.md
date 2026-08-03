@@ -170,6 +170,12 @@ Public delivery saat ini: `https://olimpiade-kemerdekaan.vercel.app`.
   `dpl_G1LSCYXbuu5RNjdF8Fpdc98mXtwq` menambahkan flow `Hapus peserta` pada
   admin. Penghapusan memakai lifecycle `Withdrawn`: peserta hilang dari daftar
   aktif, akses/sesi/tim/roster dicabut, sedangkan audit dan histori dipertahankan.
+- Source UI `cd26cf52ad8f56320bcf4240ab73b0868af50298`, Hostinger release
+  `20260803T235030Z`, dan Vercel production
+  `dpl_8q5LTDZappCxbDo4igw1LMaGwuEE` menyederhanakan kartu agenda. Jadwal
+  menampilkan waktu mulai saja, durasi menjadi teks `(n menit)` pada baris
+  kategori, dan ikon jenis lomba dihapus. Status, lokasi, link detail, serta
+  data rundown tidak berubah.
 - SQLite hanya fast test adapter.
 - Event-master memiliki dry-run, validation, atomic publish, versioning, dan
   audit. Durasi jadwal bersifat provisional dan dapat disunting admin.
@@ -194,12 +200,13 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:
 - UI memakai `Pixel Matchday Arcade` yang tetap mobile-first 430 px: Plus
   Jakarta Sans, Feather-style icons, stepped geometry, hard shadow, quest/HUD
   hierarchy, state feedback, dan motion yang menghormati reduced-motion.
-- Public visual regression lulus 47/47 pada enam route dan viewport 320, 390,
+- Public visual regression lulus 48/48 pada enam route dan viewport 320, 390,
   430, serta 1440 px; matriks memeriksa overflow teks, collision sibling,
   clearance navigasi, touch target, reduced motion, dan axe WCAG.
-- Agenda publik memisahkan waktu, kategori, judul, lokasi, dan status; form,
-  timeline, standing, serta panel operasional memakai wrapping dan gap yang
-  konsisten. Bottom navigation tidak lagi menjadi overlay di atas konten.
+- Agenda publik/peserta memakai tiga track: waktu mulai, informasi lomba, dan
+  panah. Durasi tampil sebagai teks pada baris kategori tanpa ikon jenis lomba;
+  lokasi serta status tetap terlihat. Form, timeline, standing, dan panel
+  operasional memakai wrapping serta gap konsisten.
 - Master recap 2026 berisi 8 tim, 10 lomba, jadwal provisional, mekanisme,
   safety, equipment, dan assignment panitia.
 - Database-backed auth aktif melalui Vercel: real credential login dan forced
