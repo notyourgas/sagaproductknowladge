@@ -8,6 +8,30 @@ Mencatat perubahan material AOGTICVITY/17an/Olimpiade.
 
 Nama lama dipertahankan sebagai provenance; status runtime harus eksplisit.
 
+## 2026-08-03 - Pixel Matchday Arcade UI production
+
+- `CONFIRMED`: seluruh public/player/leader/operator/admin/live surface kini
+  memakai sistem visual original `Pixel Matchday Arcade`, bukan menyalin asset
+  referensi. Hierarki quest/HUD, stepped geometry, hard shadow, physical button
+  state, compact card, loading/empty/error/success, dan motion diterapkan
+  konsisten.
+- Plus Jakarta Sans tetap satu-satunya font, Feather-style icons tetap dipakai,
+  canvas mobile-first 430 px dipertahankan pada desktop, dan reduced-motion
+  serta forced-colors tetap didukung. Auth, role, permission, API, MySQL, dan
+  workflow operasional tidak berubah.
+- Source UI `390e07a2d1b087666dfee97438b35b2c0eef362c`; release note
+  `01258da5b4c044299030e61101885c525c593843`; Hostinger release
+  `20260803T123530Z`; Vercel production
+  `dpl_7iF6UC1XYEq8fdn9ykrUbDozxsVx` pada public URL kanonik.
+- Gate: 97 test lulus, typecheck/build, dependency audit 0, 34/34 Playwright
+  pada enam route dan empat viewport, axe WCAG tanpa pelanggaran, touch target,
+  overflow, reduced-motion, Linux exact-source preflight, health, protected
+  redirect, dan public visual smoke lulus.
+- Delivery `PRODUCTION_DEPLOYED`; activation keseluruhan tetap
+  `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED`. Authenticated
+  four-role visual UAT, valid-link two-device UAT, provider webhook, dan
+  rehearsal fisik tetap terbuka.
+
 ## 2026-08-03 - Player access redirect dan roster sync production
 
 - `CONFIRMED`: magic-link peserta sekarang selalu kembali ke origin publik dan

@@ -123,6 +123,13 @@ Public delivery saat ini: `https://olimpiade-kemerdekaan.vercel.app`.
   Workspace peserta kini server-authoritative dengan revision/ETag, refresh
   12 detik plus focus/reconnect recovery, status sinkronisasi, serta feed
   assignment roster dan lifecycle tim yang transaksional.
+- Source UI `390e07a2d1b087666dfee97438b35b2c0eef362c`, Hostinger release
+  `20260803T123530Z`, dan Vercel production
+  `dpl_7iF6UC1XYEq8fdn9ykrUbDozxsVx` mengaktifkan `Pixel Matchday Arcade`
+  pada seluruh public/player/leader/operator/admin/live surface. Sistem tetap
+  memakai Plus Jakarta Sans, Feather-style icons, canvas mobile-first 430 px,
+  state lengkap, dan reduced-motion; kontrak data, auth, role, serta API tidak
+  berubah.
 - SQLite hanya fast test adapter.
 - Event-master memiliki dry-run, validation, atomic publish, versioning, dan
   audit. Durasi jadwal bersifat provisional dan dapat disunting admin.
@@ -144,10 +151,11 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:
 `PRODUCTION_ACTIVATED`. Business readiness: `BLOCKED`.
 
 - UI public/player/leader/admin/live aktif pada public Vercel delivery.
-- UI memakai festival motion system yang tetap mobile-first 430 px: Plus
-  Jakarta Sans, Feather-style icons, hierarchy/spacing yang dipadatkan,
-  animated navigation, state feedback, serta celebration terbatas yang
-  menghormati reduced-motion.
+- UI memakai `Pixel Matchday Arcade` yang tetap mobile-first 430 px: Plus
+  Jakarta Sans, Feather-style icons, stepped geometry, hard shadow, quest/HUD
+  hierarchy, state feedback, dan motion yang menghormati reduced-motion.
+- Public visual regression lulus 34/34 pada enam route dan viewport 320, 390,
+  430, serta 1440 px; axe tidak menemukan pelanggaran WCAG 2 A/AA atau 2.1 AA.
 - Master recap 2026 berisi 8 tim, 10 lomba, jadwal provisional, mekanisme,
   safety, equipment, dan assignment panitia.
 - Database-backed auth aktif melalui Vercel: real credential login dan forced

@@ -1,5 +1,20 @@
 # Portfolio Changelog
 
+## 2026-08-03 - AOGTICVITY Pixel Matchday Arcade UI production
+
+- Seluruh surface AOGTICVITY sekarang memakai visual original `Pixel Matchday
+  Arcade` dengan quest/HUD hierarchy, stepped geometry, hard shadow, dan state
+  interaksi lengkap; Plus Jakarta Sans, Feather icons, serta canvas 430 px
+  tetap menjadi kontrak.
+- Source `390e07a2d1b087666dfee97438b35b2c0eef362c`; Hostinger release
+  `20260803T123530Z`; Vercel production
+  `dpl_7iF6UC1XYEq8fdn9ykrUbDozxsVx`. Regression 97 test, Playwright 34/34,
+  axe, build, audit 0, readiness, protected redirect, dan visual smoke lulus.
+- Delivery `PRODUCTION_DEPLOYED`; keseluruhan tetap
+  `NOT_PRODUCTION_ACTIVATED` dan business readiness `BLOCKED` sampai
+  authenticated four-role UI UAT, valid-link two-device UAT, provider webhook,
+  dan rehearsal fisik selesai.
+
 ## 2026-08-03 - SagaView fallback bantuan device production
 
 - `CONFIRMED`: launcher bantuan tetap tersedia ketika Support Hub 404, dengan

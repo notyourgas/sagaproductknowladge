@@ -52,9 +52,12 @@ vertical slices.
 Workspace peserta menampilkan onboarding status, `Lomba Saya`, tim, agenda,
 dan feed assignment dari server. Snapshot memakai revision/ETag, polling 12
 detik, serta recovery saat focus, visibility, dan koneksi kembali aktif.
-Public Vercel delivery memakai festival visual system yang tetap ringkas untuk
-operator: hierarchy mobile, colored metric cues, animated active navigation,
-modal/state motion, dan success celebration dengan reduced-motion fallback.
+Public Vercel delivery memakai `Pixel Matchday Arcade`: hierarchy quest/HUD,
+stepped geometry, hard shadow, physical button state, animated navigation,
+modal/state motion, dan reduced-motion fallback. Plus Jakarta Sans tetap satu-
+satunya font, Feather-style icons tetap dipakai, dan canvas mobile-first 430 px
+tidak diperlebar di desktop. Enam route publik lulus visual regression 34/34
+pada empat viewport serta axe WCAG 2 A/AA dan 2.1 AA tanpa pelanggaran.
 
 ## Fitur MVP
 

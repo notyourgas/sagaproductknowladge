@@ -198,9 +198,11 @@ ketika keputusan atau release baru menutup gap.
 
 ### AOGTICVITY
 
-- Festival UI/UX production 1 Agustus 2026 tidak menutup blocker activation;
-  perbaikannya berada pada visual hierarchy, responsive mobile canvas, motion,
-  feedback, dan asset presentation.
+- `Pixel Matchday Arcade` UI production 3 Agustus 2026 tidak menutup blocker
+  activation; perbaikannya berada pada visual hierarchy, responsive mobile
+  canvas, state feedback, accessibility, motion, dan asset presentation.
+  Public visual QA 34/34 sudah lulus, tetapi protected admin/operator/leader/
+  player visual UAT dengan session production masih `NEEDS CONFIRMATION`.
 - Identity, role authorization, database session, optional MFA, dan guarded
   Vercel-to-Hostinger path sudah `PRODUCTION_DEPLOYED`; real login terbukti.
 - Admin password claim dan public registration MySQL sudah

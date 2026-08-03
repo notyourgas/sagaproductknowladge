@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 2 Agustus 2026
+Evidence cut-off: 3 Agustus 2026
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -387,6 +387,13 @@ Player workspace sekarang server-authoritative dengan revision/ETag, refresh
 12 detik plus focus/reconnect recovery, onboarding, `Lomba Saya`, dan feed
 participant-scoped untuk perubahan tim/roster. Public invalid-link smoke sudah
 lulus; valid-link two-device session UAT masih wajib sebelum activation.
+Source UI `390e07a2d1b087666dfee97438b35b2c0eef362c`, Hostinger release
+`20260803T123530Z`, dan Vercel production
+`dpl_7iF6UC1XYEq8fdn9ykrUbDozxsVx` mengaktifkan sistem visual original `Pixel
+Matchday Arcade` di seluruh surface tanpa mengubah kontrak auth, role, API,
+atau data. Plus Jakarta Sans, Feather icons, canvas mobile-first 430 px,
+reduced-motion, dan state operasional tetap dipertahankan. Public Playwright
+34/34 pada enam route dan empat viewport serta axe tanpa pelanggaran lulus.
 Ini adalah nama terbaru project 17an/Olimpiade Kemerdekaan.
 
 Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:
@@ -399,10 +406,9 @@ rehearsal, provider status webhook, valid-link WhatsApp two-device session UAT, 
 physical multi-device UAT belum selesai. Rundown, result, live-controller,
 announcement, dan readiness sudah server-authoritative; authenticated
 four-role, stale-write, serta offline recovery UAT belum sign-off.
-Sejak release 1 Agustus 2026, surface
-tersebut memakai festival UI/UX mobile 430 px dengan Plus Jakarta Sans,
-Feather-style icons, Motion for React, restrained celebration, dan
-reduced-motion fallback.
+Sejak release 3 Agustus 2026, surface tersebut memakai `Pixel Matchday Arcade`
+mobile 430 px dengan Plus Jakarta Sans, Feather-style icons, quest/HUD
+hierarchy, stepped geometry, motion terukur, dan reduced-motion fallback.
 
 ### SagaOPS
 

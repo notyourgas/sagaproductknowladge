@@ -12,6 +12,28 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-03
 
+### AOGTICVITY Pixel Matchday Arcade UI production
+
+- Ringkasan: mengganti festival skin dengan sistem visual original `Pixel
+  Matchday Arcade` pada public/player/leader/operator/admin/live, tanpa mengubah
+  kontrak auth, role, permission, API, atau persistence.
+- Produk/area terdampak: global UI tokens, shell, navigation, card, form,
+  table, modal, loading/empty/error/success, accessibility, responsive, motion,
+  Hostinger release, Vercel production, dan release knowledge.
+- Klasifikasi: `CONFIRMED`; source
+  `390e07a2d1b087666dfee97438b35b2c0eef362c`, Hostinger release
+  `20260803T123530Z`, Vercel `dpl_7iF6UC1XYEq8fdn9ykrUbDozxsVx`, status
+  `PRODUCTION_DEPLOYED`; activation keseluruhan tetap
+  `NOT_PRODUCTION_ACTIVATED` dan business readiness `BLOCKED`.
+- Gate: 97 test, Playwright 34/34 pada enam route dan empat viewport, axe tanpa
+  pelanggaran, typecheck/build, audit 0, exact-source Linux preflight, health,
+  protected redirect, dan public visual smoke lulus.
+- Residual: authenticated four-role visual UAT, valid-link two-device UAT,
+  provider webhook, custom domain, dan rehearsal fisik tetap terbuka.
+- File knowledge: `products/aogticvity/PRODUCT.md`, `DOSSIER.md`,
+  `CHANGELOG.md`, master knowledge, portfolio changelog, `GAPS.md`, dan
+  `SYNC_STATUS.md`.
+
 ### SagaView fallback bantuan device production
 
 - Ringkasan: menjaga bantuan device tetap dapat dipakai ketika backend Support
