@@ -178,18 +178,17 @@ session, permission, tenant isolation, SagaView, dan klaim business readiness
 tidak berubah. Endpoint `/up` masih tanpa HSTS/CSP; route login dan booking yang
 diaudit mengirim header keamanan.
 
-Refinement navigasi Review terbaru tersedia pada source `980e06df` dengan
-status `IMPLEMENTED_NOT_DEPLOYED`. Enam tombol `Ubah` sekarang minimal 72x44
+Refinement navigasi Review terbaru aktif pada source `fa228d89`, release
+`20260803022430-fa228d8`, dengan status `PRODUCTION_DEPLOYED`. Enam tombol `Ubah` sekarang minimal 72x44
 piksel, semantik, berlabel, keyboard-accessible, dan kompatibel dengan
 forced-colors/reduced-motion. Lima preset pada mobile, tablet, dan desktop
 tidak overflow serta memiliki tepat satu `Powered by SagaBook`. Backend
 960/960, focused Review 9/9, accessibility 24/24, scoped E2E, build, dan audit
-dependency 0 lulus. Acceptance terbaru menutup drift Jadwal, Background,
-Add-on, Detail, transfer, dan scoping mobile-only; full matrix fresh mencapai
-141 passed, 2 expected skips, 1 failed. Blocker tersisa adalah fixture default
-yang belum mengunci heading font Cormorant sehingga snapshot Review tablet
-memakai fallback Nexa. Karena itu production tetap release
-`20260802221221-994de01` dan tidak ada activation baru.
+dependency 0 lulus. Full matrix fresh lulus 142/142 dengan 2 expected skips;
+S39 backup/restore exact-SHA, manifest, DB audit 100, service/public smoke,
+rollback, screenshot, serta DOM live mobile+desktop juga lulus. Watermark hadir
+tepat satu, overflow false, dan keenam tombol berukuran 72x44. Rollback
+`20260802221221-994de01` tersedia; tidak ada perubahan kontrak payment/provider.
 
 Keputusan privacy/retention/offboarding SagaBook yang lebih rinci telah
 disetujui owner untuk implementasi dan legal review pada source docs commit

@@ -12,7 +12,7 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-03
 
-### SagaBook Review touch-safe candidate belum dipromosikan
+### SagaBook Review touch-safe production release
 
 - Ringkasan: memperbesar enam jalur edit Review dari sekitar 31x18 menjadi
   tombol semantik minimal 72x44 piksel dengan label, keyboard focus,
@@ -21,20 +21,20 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
   background, add-on, atau nama tanpa target sentuh kecil.
 - Produk/area terdampak: SagaBook tenant storefront, Review navigation,
   accessibility, visual regression, dan release acceptance.
-- Klasifikasi: `CONFIRMED`; source terbaru
-  `980e06df23677ba2bc8e31c479b947b545ea31c4`, status
-  `IMPLEMENTED_NOT_DEPLOYED`. Production tetap source `994de01c`, release
-  `20260802221221-994de01`; rollback `20260802183533-35c8219`.
-- Production berubah: tidak. Booking/payment/provider, availability,
+- Klasifikasi: `CONFIRMED`; source
+  `fa228d89bc5bea32fb19bf424a4b0e48db1bc506`, release
+  `20260803022430-fa228d8`, status `PRODUCTION_DEPLOYED`; rollback
+  `20260802221221-994de01` tersedia.
+- Production berubah: ya, pada UI Review storefront. Booking/payment/provider, availability,
   permission, session, tenant isolation, watermark, dan SagaView tidak berubah.
 - Gate: backend 960/960, focused Review 9/9, accessibility 24/24, scoped E2E,
   build, npm/Composer audit 0, serta lima preset x tiga viewport lulus.
-- Acceptance terbaru menutup drift fixture langkah Jadwal, Background, Add-on,
-  Detail, dua baseline transfer yang telah diinspeksi, serta scoping
-  mobile-only. Full matrix fresh kini 141 passed, 2 expected skips, 1 failed.
-- Blocker/next action: tambahkan heading font Cormorant ke fixture default agar
-  snapshot Review tablet tidak jatuh ke fallback Nexa, lalu ulangi full matrix
-  sebelum deploy.
+- Acceptance menutup drift fixture dan scoping mobile-only. Full matrix fresh
+  lulus 142/142 dengan 2 expected skips; backend 960/960, build, focused
+  accessibility/E2E, dan audit dependency 0 lulus.
+- Release safety lulus: encrypted backup, disposable restore exact-SHA,
+  manifest, DB audit 100, service health, endpoint 200, rollback, screenshot,
+  serta DOM live mobile+desktop tanpa overflow dan watermark tepat satu.
 - File knowledge: `products/sagabook/PRODUCT.md`, `DOSSIER.md`, `CHANGELOG.md`,
   master knowledge, portfolio changelog, `GAPS.md`, root changelog, dan sync
   status.

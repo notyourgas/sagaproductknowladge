@@ -257,18 +257,17 @@ dan visual production dua viewport lulus. Endpoint `/up` masih tanpa HSTS/CSP;
 route login dan booking yang diaudit mengirim HSTS, CSP, dan XFO SAMEORIGIN.
 
 Refinement Review storefront pada source
-`980e06df23677ba2bc8e31c479b947b545ea31c4` berstatus
-`IMPLEMENTED_NOT_DEPLOYED`. Enam jalur edit Review sekarang memakai tombol
+`fa228d89bc5bea32fb19bf424a4b0e48db1bc506` berstatus
+`PRODUCTION_DEPLOYED` sebagai release `20260803022430-fa228d8`. Enam jalur edit Review sekarang memakai tombol
 semantik minimal 72x44 piksel, label screen reader, focus keyboard,
 forced-colors, dan reduced-motion. Verifikasi lima preset pada mobile, tablet,
 dan desktop menunjukkan no-overflow serta tepat satu `Powered by SagaBook`.
 Backend 960/960, focused Review 9/9, accessibility 24/24, scoped E2E, build,
-serta npm/Composer audit 0 lulus. Acceptance terbaru menutup drift visual
-Jadwal, Background, Add-on, Detail, transfer, dan scoping mobile-only. Full
-matrix fresh mencapai 141 passed, 2 expected skips, 1 failed; blocker tunggal
-adalah fixture default yang belum mengunci heading font Cormorant sehingga
-snapshot Review tablet memakai fallback Nexa. Source belum dipromosikan dan
-runtime production tetap release `20260802221221-994de01`. Kontrak booking,
+serta npm/Composer audit 0 lulus. Full matrix fresh lulus 142/142 dengan 2
+expected skips. S39 backup/restore exact-SHA, manifest, migration preflight,
+DB audit 100, service/public smoke, rollback, dan DOM live mobile+desktop
+lulus. Runtime menunjukkan watermark tepat satu, overflow false, serta enam
+tombol 72x44; rollback `20260802221221-994de01` tersedia. Kontrak booking,
 payment/provider, availability, permission, session, dan tenant isolation tidak
 berubah.
 

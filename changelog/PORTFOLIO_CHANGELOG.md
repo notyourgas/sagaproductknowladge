@@ -10,24 +10,22 @@ workflow, pricing, release, activation, atau blocker.
 Detail tetap berada pada changelog produk; entri docs-only berada di root
 [CHANGELOG](../CHANGELOG.md).
 
-## 2026-08-03 - SagaBook Review touch-safe belum dipromosikan
+## 2026-08-03 - SagaBook Review touch-safe production
 
 - `CONFIRMED`: enam jalur `Ubah` pada Review storefront berubah dari target
   sekitar 31x18 menjadi tombol semantik minimal 72x44 piksel, lengkap dengan
   label screen reader, focus keyboard, forced-colors, dan reduced-motion.
-- Source terbaru `980e06df23677ba2bc8e31c479b947b545ea31c4` berstatus
-  `IMPLEMENTED_NOT_DEPLOYED`; production tetap release
-  `20260802221221-994de01` dari source `994de01cf3586adb4da8813a9c4b931085457510`.
+- Source `fa228d89bc5bea32fb19bf424a4b0e48db1bc506` aktif sebagai release
+  `20260803022430-fa228d8`; rollback `20260802221221-994de01` tersedia.
 - Lima preset pada tiga viewport tidak overflow dan tetap memiliki tepat satu
   `Powered by SagaBook`. Backend 960/960, focused Review 9/9, accessibility
   24/24, scoped E2E, build, serta npm/Composer audit 0 lulus.
-- Acceptance terbaru menutup drift langkah Jadwal, Background, Add-on, Detail,
-  dua baseline transfer yang telah diinspeksi, serta scoping mobile-only. Full
-  matrix fresh mencapai 141 passed, 2 expected skips, 1 failed. Promotion tetap
-  ditahan karena fixture default belum mengunci heading font Cormorant sehingga
-  snapshot Review tablet jatuh ke fallback Nexa. Payment/provider,
-  availability, permission, session, tenant isolation, SagaView, dan klaim
-  business readiness tidak berubah.
+- Full matrix fresh lulus 142/142 dengan 2 expected skips; backend 960/960,
+  build, accessibility/E2E, dan audit dependency 0 lulus. Encrypted backup,
+  disposable restore exact-SHA, manifest, DB audit 100, service/public smoke,
+  rollback, screenshot, serta DOM live dua viewport juga lulus.
+- Payment/provider, availability, permission, session, tenant isolation,
+  SagaView, dan klaim business readiness tidak berubah.
 
 ## 2026-08-03 - SagaView katalog frame lebih padat production
 

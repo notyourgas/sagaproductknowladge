@@ -297,20 +297,19 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
   route login dan booking yang diaudit mengirim header keamanan.
 - Candidate signup tanpa approval owner dan trial kanonik 7 hari sudah
 - Refinement navigasi dari langkah Review pada source
-  `980e06df23677ba2bc8e31c479b947b545ea31c4` berstatus
-  `IMPLEMENTED_NOT_DEPLOYED`. Enam kontrol `Ubah` yang sebelumnya sekitar
+  `fa228d89bc5bea32fb19bf424a4b0e48db1bc506` berstatus
+  `PRODUCTION_DEPLOYED` sebagai release `20260803022430-fa228d8`. Enam kontrol `Ubah` yang sebelumnya sekitar
   31x18 piksel kini menjadi tombol semantik minimal 72x44 piksel dengan label
   screen reader, focus keyboard, forced-colors, dan reduced-motion. Kelima
   preset pada mobile, tablet, dan desktop tidak overflow serta tetap memiliki
   tepat satu `Powered by SagaBook`. Booking, payment/provider, availability,
   permission, session, tenant isolation, dan SagaView tidak berubah. Backend
   960/960, focused Review 9/9, accessibility 24/24, scoped E2E mobile dan
-  desktop, build, serta npm/Composer audit 0 lulus. Acceptance terbaru menutup
-  drift langkah Jadwal, Background, Add-on, Detail, transfer, dan scoping
-  mobile-only; full matrix fresh mencapai 141 passed, 2 expected skips, 1
-  failed. Blocker tersisa adalah fixture default yang belum mengunci heading
-  font Cormorant sehingga snapshot Review tablet memakai fallback Nexa.
-  Production tetap pada release `20260802221221-994de01`.
+  desktop, build, serta npm/Composer audit 0 lulus. Full matrix fresh lulus
+  142/142 dengan 2 expected skips. S39 backup/restore exact-SHA, manifest,
+  DB audit 100, service/public smoke, rollback, dan DOM live mobile+desktop
+  lulus; watermark tepat satu, overflow false, dan seluruh tombol berukuran
+  72x44 piksel. Rollback `20260802221221-994de01` tersedia.
 - Candidate signup tanpa approval owner dan trial kanonik 7 hari sudah
   `LOCAL_VALIDATED` pada source
   `dcb5a3f3dc1e3e7b5c0c067e8968ca341ebf1c27`. Production tetap memakai

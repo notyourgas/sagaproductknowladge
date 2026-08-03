@@ -4,14 +4,12 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
-## 2026-08-03 - Navigasi edit Review touch-safe, promotion ditahan
+## 2026-08-03 - Navigasi edit Review touch-safe dipromosikan
 
-- Klasifikasi: `CONFIRMED`; delivery `IMPLEMENTED_NOT_DEPLOYED`, activation
-  production tidak berubah, business readiness tetap `NEEDS CONFIRMATION`.
-- Source terbaru `980e06df23677ba2bc8e31c479b947b545ea31c4` tersedia pada branch
-  `codex/s91-booking-mobile-navigation`; production tetap source
-  `994de01cf3586adb4da8813a9c4b931085457510`, release
-  `20260802221221-994de01`, dengan rollback `20260802183533-35c8219`.
+- Klasifikasi: `CONFIRMED`; delivery `PRODUCTION_DEPLOYED`, activation UI
+  `PRODUCTION_ACTIVATED`, business readiness tetap `NEEDS CONFIRMATION`.
+- Source `fa228d89bc5bea32fb19bf424a4b0e48db1bc506` aktif sebagai release
+  `20260803022430-fa228d8`; rollback `20260802221221-994de01` tersedia.
 - Before: enam kontrol `Ubah` pada Review berukuran sekitar 31x18 piksel.
   After: seluruhnya menjadi tombol semantik minimal 72x44 piksel, memiliki
   label screen reader, focus keyboard, forced-colors, dan reduced-motion.
@@ -19,15 +17,14 @@ Mencatat perubahan material SagaBook dengan provenance public-safe.
   overflow serta tetap menampilkan tepat satu `Powered by SagaBook`. Booking,
   payment/provider, availability, permission, session, tenant isolation, dan
   SagaView tidak berubah.
-- Gate hijau tetap mencakup backend 960/960 dengan 11.007 assertions; focused
-  Review 9/9; accessibility 24/24; scoped E2E; build; npm/Composer audit 0.
-  Perbaikan acceptance terbaru menutup drift langkah Jadwal, Background,
-  Add-on, Detail, dua baseline transfer yang telah diinspeksi, dan scoping
-  mobile-only. Full matrix fresh kini 141 passed, 2 expected skips, 1 failed.
-- Blocker/next action: fixture default harus mengunci heading font Cormorant.
-  Tanpa field tersebut, fallback Nexa hanya menggeser layout snapshot Review
-  tablet. Ulangi full acceptance setelah koreksi; deploy immutable belum
-  dijalankan dan screenshot unrelated tidak diperbarui.
+- Full matrix fresh lulus 142/142 dengan 2 expected skips setelah fixture
+  mengunci token font/warna seeded dan empat baseline terkait diinspeksi.
+  Backend 960/960 dengan 11.007 assertions, focused Review, accessibility,
+  scoped E2E, build, serta npm/Composer audit 0 juga lulus.
+- Release gate lulus: S39 encrypted backup, checksum/offsite round-trip,
+  disposable restore exact-SHA, manifest, migration preflight, DB audit 100,
+  nginx/queue/PHP, lima endpoint 200, dan DOM live mobile+desktop. Production
+  menunjukkan tepat satu watermark, tanpa overflow, serta enam tombol 72x44.
 
 ## 2026-08-03 - Storefront booking desktop dipromosikan
 

@@ -92,15 +92,12 @@ ketika keputusan atau release baru menutup gap.
 - `NEEDS CONFIRMATION`: URL Maps presisi tetap opsional untuk cabang yang ingin
   deep link spesifik; detail tenant dan URL lokasi tidak disimpan di knowledge
   publik.
-- `CONFIRMED`: refinement enam jalur edit Review touch-safe tersedia pada
-  source `980e06df` dengan status `IMPLEMENTED_NOT_DEPLOYED`; production tetap
-  release `20260802221221-994de01`.
-- `CONFIRMED`: drift langkah Jadwal, Background, Add-on, Detail, dua baseline
-  transfer yang telah diinspeksi, dan scoping mobile-only sudah ditutup. Full
-  matrix fresh mencapai 141 passed, 2 expected skips, 1 failed.
-- `TODO`: kunci heading font Cormorant pada fixture default agar snapshot Review
-  tablet tidak memakai fallback Nexa. Ulangi full visual acceptance sebelum
-  source `980e06df` boleh dipromosikan.
+- `CONFIRMED`: refinement enam jalur edit Review touch-safe aktif pada source
+  `fa228d89`, release `20260803022430-fa228d8`, dengan status
+  `PRODUCTION_DEPLOYED`; rollback `20260802221221-994de01` tersedia.
+- `CONFIRMED`: blocker fixture/scoping visual ditutup. Full matrix fresh lulus
+  142/142 dengan 2 expected skips; backup/restore exact-SHA, DB audit 100,
+  service/public smoke, dan DOM live dua viewport lulus.
 
 ### SagaView
 
