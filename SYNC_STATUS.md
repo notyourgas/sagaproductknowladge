@@ -12,13 +12,13 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-04T05:38:52+07:00 |
+| Waktu pembaruan terakhir | 2026-08-04T06:42:20+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `9a8e5501b21fc9304f4cb810c9c75c7fd88430ed` |
-| Informasi terakhir disinkronkan | AOGTICVITY source `bdcb5b76009eb807b00a975cbc4e4901fe71de74`, Hostinger `20260803T223609Z`, dan Vercel `dpl_88XXaFUfsW4ivSBnk7qBc3KPTUAf` memperbaiki overlap nomor/copy/panah pada kartu alur 320 px. |
+| Baseline sebelum pembaruan | `8219f19dcecb72fb94a8cb8ab1d8a9f181738bf1` |
+| Informasi terakhir disinkronkan | AOGTICVITY source `f7fd6f161985a4b0886f03ad67776e1b08a76b4d`, Hostinger `20260803T234003Z`, dan Vercel `dpl_G1LSCYXbuu5RNjdF8Fpdc98mXtwq` menambahkan admin participant safe delete. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada; perubahan terbatas pada layout visual landing page. |
+| Konflik | Tidak ada; istilah Hapus dipetakan ke lifecycle Withdrawn, bukan hard delete. |
 | Error | Tidak ada pada release; authenticated multi-device UAT dan rehearsal AOGTICVITY masih diperlukan untuk business readiness. |
 
 ## File yang berubah pada sinkronisasi ini
@@ -28,6 +28,7 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `products/aogticvity/CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
+- `DECISIONS.md`
 - `CHANGELOG.md`
 - `SYNC_STATUS.md`
 

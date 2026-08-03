@@ -342,3 +342,17 @@ keputusan pengganti.
 | Pemberi keputusan | Andreas / founder |
 | Status | `CONFIRMED`; source, migration, Hostinger, dan public Vercel runtime terverifikasi |
 | Dokumen terkait | [AOGTICVITY Product](products/aogticvity/PRODUCT.md), [AOGTICVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTICVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |
+
+## DEC-024 - AOGTICVITY memakai safe delete untuk peserta admin
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-04 |
+| Topik | Penghapusan peserta pada platform admin |
+| Keputusan | Admin memperoleh tombol `Hapus` dan filter Aktif/Dihapus. Aksi tersebut memakai lifecycle `Withdrawn`, bukan hard delete database: akses, sesi, assignment tim, dan roster dicabut sementara audit serta histori dipertahankan. |
+| Alasan | Admin perlu menghilangkan pendaftaran ganda/batal dari operasi aktif tanpa merusak referensi hasil, roster, audit, atau recovery insiden. |
+| Alternatif yang dipertimbangkan | Hard delete seluruh relasi; mempertahankan label Arsipkan; menyembunyikan record hanya di browser. |
+| Dampak | Delete wajib admin-only, same-origin, idempotent, version-checked, transactional, dan memerlukan alasan audit. UI memisahkan record aktif dan dihapus; export hanya memuat peserta aktif. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED`; source dan public production runtime terverifikasi, authenticated human UAT masih menunggu |
+| Dokumen terkait | [AOGTICVITY Product](products/aogticvity/PRODUCT.md), [AOGTICVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTICVITY Changelog](products/aogticvity/CHANGELOG.md) |

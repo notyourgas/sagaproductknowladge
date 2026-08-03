@@ -445,6 +445,10 @@ Source `8bc827b8014cc9df37c952b843790f046c5de07c`, Hostinger
 `20260803T222400Z`, Vercel `dpl_7haQUfw8PJsJqazJgNXN7zxSL737`, dan migration
 019 menetapkan `team-7` sebagai Team Kindness (Kebaikan) serta `team-8` sebagai
 Team Patience (Kesabaran). Canonical ID dan relasi operasional tidak berubah.
+Source `f7fd6f161985a4b0886f03ad67776e1b08a76b4d`, Hostinger
+`20260803T234003Z`, dan Vercel `dpl_G1LSCYXbuu5RNjdF8Fpdc98mXtwq` menambahkan
+admin participant safe delete. Peserta dipindah dari Aktif ke Dihapus melalui
+`Withdrawn`; akses, sesi, tim, dan roster dicabut, sementara audit/histori tetap.
 Ini adalah nama terbaru project 17an/Olimpiade Kemerdekaan.
 
 Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:

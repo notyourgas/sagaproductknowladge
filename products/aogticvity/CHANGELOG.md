@@ -8,6 +8,20 @@ Mencatat perubahan material AOGTICVITY/17an/Olimpiade.
 
 Nama lama dipertahankan sebagai provenance; status runtime harus eksplisit.
 
+## 2026-08-04 - Admin participant safe delete production
+
+- `CONFIRMED`: setiap peserta aktif mempunyai tombol `Hapus`, modal konsekuensi,
+  alasan audit, loading/error/success state, serta filter Aktif/Dihapus.
+- Delete memakai lifecycle `Withdrawn`, bukan hard delete: akses, magic link,
+  sesi, assignment tim, dan roster aktif dicabut atomik; audit/histori tetap utuh.
+- Source `f7fd6f161985a4b0886f03ad67776e1b08a76b4d`; Hostinger
+  `20260803T234003Z`; Vercel `dpl_G1LSCYXbuu5RNjdF8Fpdc98mXtwq`; tanpa
+  migration baru karena memakai kontrak migration 018.
+- Gate: 108 tests, Playwright 48/48, typecheck/build/audit, readiness, exact
+  source, route redirect, dan unauthenticated DELETE 401 lulus.
+- Delivery `PRODUCTION_DEPLOYED`; authenticated human delete UAT dengan record
+  percobaan masih diperlukan. Activation/business readiness tidak berubah.
+
 ## 2026-08-04 - Journey card mobile layout production
 
 - `CONFIRMED`: badge nomor, copy, dan panah pada empat kartu alur pendaftaran

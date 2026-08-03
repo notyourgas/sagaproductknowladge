@@ -12,6 +12,22 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-04
 
+### AOGTICVITY admin participant safe delete production
+
+- Ringkasan: menambahkan tombol Hapus, modal alasan, filter Aktif/Dihapus, dan
+  export aktif pada admin participant desk.
+- Produk/area terdampak: participant lifecycle, session/magic-link revocation,
+  team/roster cleanup, audit, admin UI, Hostinger, Vercel, dan knowledge.
+- Klasifikasi: `CONFIRMED`; source
+  `f7fd6f161985a4b0886f03ad67776e1b08a76b4d`, Hostinger
+  `20260803T234003Z`, Vercel `dpl_G1LSCYXbuu5RNjdF8Fpdc98mXtwq`, status
+  `PRODUCTION_DEPLOYED`.
+- Gate: 108 tests, Playwright 48/48, typecheck/build/audit, readiness, exact
+  source, admin redirect, dan unauthenticated DELETE 401 lulus.
+- Production berubah: ya. Tidak ada migration atau hard delete; authenticated
+  delete UAT masih terbuka. File knowledge: product/dossier/changelog,
+  master, decision, portfolio changelog, root changelog, dan sync status.
+
 ### AOGTICVITY journey card mobile layout production
 
 - Ringkasan: memisahkan track nomor, copy, dan panah pada alur pendaftaran agar

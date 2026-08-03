@@ -165,6 +165,11 @@ Public delivery saat ini: `https://olimpiade-kemerdekaan.vercel.app`.
   `team-7` sebagai **Team Kindness** (Kebaikan) serta `team-8` sebagai
   **Team Patience** (Kesabaran). ID, warna, anggota, assignment, roster,
   hasil, dan leaderboard tidak berubah.
+- Source `f7fd6f161985a4b0886f03ad67776e1b08a76b4d`, Hostinger release
+  `20260803T234003Z`, dan Vercel production
+  `dpl_G1LSCYXbuu5RNjdF8Fpdc98mXtwq` menambahkan flow `Hapus peserta` pada
+  admin. Penghapusan memakai lifecycle `Withdrawn`: peserta hilang dari daftar
+  aktif, akses/sesi/tim/roster dicabut, sedangkan audit dan histori dipertahankan.
 - SQLite hanya fast test adapter.
 - Event-master memiliki dry-run, validation, atomic publish, versioning, dan
   audit. Durasi jadwal bersifat provisional dan dapat disunting admin.

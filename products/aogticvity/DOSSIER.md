@@ -78,8 +78,10 @@ legacy dan tidak dipetakan secara spekulatif.
 
 Admin Control Center memetakan aksi CRUD/lifecycle untuk anggota, tim, lomba,
 roster, rundown, hasil, pengumuman, akun, WhatsApp, dan audit. Anggota dapat
-dibuat manual, diedit, dan diarsipkan; arsip mencabut akses dan melepas
-assignment tanpa menghapus histori. Profil delapan tim dapat diedit/reset,
+dibuat manual, diedit, dan dihapus secara operasional. Tombol `Hapus` memakai
+modal alasan audit, memindahkan record dari filter Aktif ke Dihapus, mencabut
+akses/sesi, serta melepas assignment tim dan roster tanpa menghapus histori.
+Export peserta hanya mengambil record aktif. Profil delapan tim dapat diedit/reset,
 sementara ID dan jumlah tim tetap dikunci oleh event master. Nama kanonik Tim 7
 adalah **Team Kindness** dengan arti Kebaikan dan Tim 8 adalah **Team
 Patience** dengan arti Kesabaran. Penetapan ini tidak mengubah ID
@@ -186,6 +188,8 @@ CRUD anggota dan profil tim memakai mutation admin-only, same-origin,
 idempotency, optimistic version, transaksi MySQL, dan append-only resource
 audit. Hard delete tidak tersedia untuk data operasional yang sudah dirujuk;
 withdraw, archive, cancel, correct, retry, dan revoke dipakai sesuai lifecycle.
+Admin participant delete memakai `Withdrawn`, alasan 3-240 karakter, revocation
+magic link/session, roster cleanup, serta audit event dalam transaksi yang sama.
 Player workspace menggunakan participant-scoped snapshot, revision/ETag, dan
 feed event persisten untuk publish/lock tim serta roster assigned/removed.
 

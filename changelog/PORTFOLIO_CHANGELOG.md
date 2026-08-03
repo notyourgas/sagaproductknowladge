@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-04 - AOGTICVITY admin participant safe delete production
+
+- Admin kini dapat menghapus peserta melalui modal beralasan dan memisahkan
+  daftar Aktif/Dihapus. Delete mencabut akses, sesi, tim, dan roster tetapi
+  mempertahankan audit serta histori operasional.
+- Source `f7fd6f161985a4b0886f03ad67776e1b08a76b4d`; Hostinger
+  `20260803T234003Z`; Vercel `dpl_G1LSCYXbuu5RNjdF8Fpdc98mXtwq`. Gate 108
+  tests, Playwright 48/48, build/audit, readiness, dan authorization smoke lulus.
+- Delivery `PRODUCTION_DEPLOYED`; authenticated human UAT masih diperlukan.
+
 ## 2026-08-04 - AOGTICVITY journey card mobile layout production
 
 - Nomor, teks, dan panah pada alur pendaftaran kini mempunyai track serta gap
