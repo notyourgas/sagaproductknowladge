@@ -62,6 +62,9 @@ baris layout khusus untuk topbar dan bottom navigation. Hanya main content
 yang scroll sehingga navigasi tidak menutup field, tombol, timeline, atau
 kartu. Enam route publik lulus visual regression 47/47 pada empat viewport,
 collision/clearance assertions, touch target, reduced motion, dan axe WCAG.
+Kartu alur `Dari daftar sampai podium` memakai tiga track tetap untuk badge
+nomor, copy, dan panah. Badge 30 px dan gap 10 px mencegah overlap pada
+viewport 320 px; acceptance suite kini mencakup 48 Playwright checks.
 Agenda publik memakai urutan kategori → judul → lokasi → status, gap antarkartu,
 dan grid ringkas 320 px; waktu, status, link detail, serta sumber data tidak
 berubah.

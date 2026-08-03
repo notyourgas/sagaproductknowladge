@@ -12,6 +12,22 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-04
 
+### AOGTICVITY journey card mobile layout production
+
+- Ringkasan: memisahkan track nomor, copy, dan panah pada alur pendaftaran agar
+  tidak bertumpuk pada viewport 320 px.
+- Produk/area terdampak: landing page mobile hierarchy, visual acceptance,
+  Hostinger, Vercel, dan knowledge publik.
+- Klasifikasi: `CONFIRMED`; source
+  `bdcb5b76009eb807b00a975cbc4e4901fe71de74`, Hostinger
+  `20260803T223609Z`, Vercel `dpl_88XXaFUfsW4ivSBnk7qBc3KPTUAf`, status
+  `PRODUCTION_DEPLOYED`.
+- Gate: 106 tests, Playwright 48/48, typecheck/build/audit, public browser
+  geometry, readiness, exact source, dan proxy smoke lulus.
+- Production berubah: ya, UI saja. Schema/data, permission, activation, dan
+  business readiness tidak berubah. File knowledge: product, dossier,
+  changelog AOGTICVITY, master, portfolio changelog, root changelog, sync status.
+
 ### AOGTICVITY final team names production
 
 - Ringkasan: menetapkan Tim 7 sebagai Team Kindness (Kebaikan) dan Tim 8

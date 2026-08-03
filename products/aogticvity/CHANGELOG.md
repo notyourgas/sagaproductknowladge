@@ -8,6 +8,18 @@ Mencatat perubahan material AOGTICVITY/17an/Olimpiade.
 
 Nama lama dipertahankan sebagai provenance; status runtime harus eksplisit.
 
+## 2026-08-04 - Journey card mobile layout production
+
+- `CONFIRMED`: badge nomor, copy, dan panah pada empat kartu alur pendaftaran
+  sekarang memakai track terpisah `30px / minmax(0, 1fr) / 16px` dengan gap
+  10 px. Badge tidak lagi lebih lebar daripada kolomnya.
+- Source `bdcb5b76009eb807b00a975cbc4e4901fe71de74`; Hostinger
+  `20260803T223609Z`; Vercel `dpl_88XXaFUfsW4ivSBnk7qBc3KPTUAf`.
+- Gate: typecheck/build/audit, 106 tests, Playwright 48/48, public browser
+  geometry 320 px, readiness, exact source, dan route/proxy smoke lulus.
+- Tidak ada perubahan schema/data, auth, permission, atau workflow. Delivery
+  `PRODUCTION_DEPLOYED`; activation/business readiness keseluruhan tidak berubah.
+
 ## 2026-08-04 - Final team names production
 
 - `CONFIRMED`: `team-7` bernama **Team Kindness** (Kebaikan) dan `team-8`

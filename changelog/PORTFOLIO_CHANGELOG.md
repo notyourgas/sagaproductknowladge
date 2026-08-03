@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-04 - AOGTICVITY journey card mobile layout production
+
+- Nomor, teks, dan panah pada alur pendaftaran kini mempunyai track serta gap
+  terpisah sehingga tidak bertumpuk pada viewport 320 px.
+- Source `bdcb5b76009eb807b00a975cbc4e4901fe71de74`; Hostinger
+  `20260803T223609Z`; Vercel `dpl_88XXaFUfsW4ivSBnk7qBc3KPTUAf`. Regression
+  106 tests, Playwright 48/48, build/audit, dan public visual smoke lulus.
+- Delivery `PRODUCTION_DEPLOYED`; data, auth, activation, dan business readiness
+  tidak berubah.
+
 ## 2026-08-04 - AOGTICVITY final team names production
 
 - Tim 7 kini **Team Kindness** (Kebaikan) dan Tim 8 kini **Team Patience**

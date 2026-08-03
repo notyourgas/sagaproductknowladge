@@ -137,6 +137,11 @@ Public delivery saat ini: `https://olimpiade-kemerdekaan.vercel.app`.
   layout sendiri; hanya main content yang scroll. Safe wrapping, spacing
   4/8/12/16/24/32, hierarchy heading/card/form/status, compact admin controls,
   serta focusable scroll region mencegah teks dan kontrol saling menutup.
+- Source UI `bdcb5b76009eb807b00a975cbc4e4901fe71de74`, Hostinger release
+  `20260803T223609Z`, dan Vercel production
+  `dpl_88XXaFUfsW4ivSBnk7qBc3KPTUAf` memperbaiki kartu alur pendaftaran pada
+  viewport sempit. Nomor, copy, dan panah memakai track terpisah dengan gap
+  tetap sehingga tidak saling menumpuk pada 320 px.
 - Source `e38de48b2e8a88d7a7e2ac8aa54b0af9e398b38c`, Hostinger release
   `20260803T192801Z`, Vercel production
   `dpl_8PU7woDFGWbJeK3dYTMZHASfzX4K`, dan migration 017 mengganti taxonomy

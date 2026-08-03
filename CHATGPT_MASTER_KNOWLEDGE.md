@@ -425,6 +425,10 @@ reduced-motion, dan state operasional tetap dipertahankan. Source
 khusus topbar/bottom navigation sehingga hanya main content yang scroll.
 Public Playwright 47/47 pada enam route dan empat viewport, collision dan
 nav-clearance assertions, serta axe tanpa pelanggaran lulus.
+Source UI `bdcb5b76009eb807b00a975cbc4e4901fe71de74`, Hostinger
+`20260803T223609Z`, dan Vercel `dpl_88XXaFUfsW4ivSBnk7qBc3KPTUAf` kemudian
+memisahkan track nomor, copy, dan panah pada kartu alur pendaftaran. Public
+geometry 320 px serta Playwright 48/48 membuktikan elemen tidak bertumpuk.
 Source `e38de48b2e8a88d7a7e2ac8aa54b0af9e398b38c`, Hostinger
 `20260803T192801Z`, Vercel `dpl_8PU7woDFGWbJeK3dYTMZHASfzX4K`, dan migration
 017 mengaktifkan taxonomy komunitas final. Pendaftaran baru hanya memakai
