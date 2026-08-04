@@ -158,24 +158,26 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
 - Source production terbaru pada cut-off: commit
   `d70fc1e0d922eed86fe4ea4998688aad32c68c43`.
 - Release production tercatat: `20260803194351-d70fc1e`.
-- Coverage storefront lintas laptop, monitor besar, dan zoom-equivalent sudah
-  `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED` pada source
-  kumulatif `835f4ca9ef0eb42a57d31b18667ce9433b66986b`, branch
-  `codex/s108-wide-monitor-canvas`. Before: canvas Full-HD/QHD terkunci 1040
-  piksel; CTA Retro Fun dan Streetwear hanya 320 piksel di rail kiri; ringkasan
-  pilihan pada 960x540 efektif turun 79 piksel di bawah viewport. After:
-  canvas monitor besar menjadi 1280 piksel dengan workspace/CTA 880 piksel,
-  CTA dua preset kembali ke kolom utama, dan rail pendek memakai mode compact
-  tanpa menghilangkan brand, langkah, atau ringkasan. Red proof tiga tahap
-  ditutup menjadi focused 6/6; storefront 136 test terjadwal menghasilkan 125
-  pass/11 expected skip; backend 960/960 dengan 11.007 assertion, build, design
-  26/0, npm/Composer audit nol, no-overflow, focus keyboard, target 44 piksel,
-  dan tepat satu watermark lulus. Evidence meliputi anchor 390x844/1440x900,
-  laptop Windows 1280x720, MacBook 1512x982, Full-HD 1920x1080, QHD 2560x1440,
-  serta effective viewport 125/150/200 persen. Tidak ada perubahan workflow,
+- `CONFIRMED` melalui `DEC-031`: storefront booking tenant selalu memakai satu
+  canvas mobile maksimum 460 piksel pada semua viewport. Desktop hanya
+  memusatkan canvas tersebut; layout rail, workspace dua kolom, canvas lebar,
+  dan pola landing page tidak berlaku untuk storefront. Optimasi desktop tetap
+  berlaku untuk dashboard/admin SagaBook dan aplikasi/dashboard SagaView.
+- Kontrak mobile-only itu sudah `LOCAL_VALIDATED / STAGING_READY /
+  IMPLEMENTED_NOT_DEPLOYED` pada source
+  `33de71c6b7ab8bf2c0b2cc8fd5fef327fb68f0a5`, branch
+  `codex/s109-mobile-only-storefront`. Arah S94/S108 yang memperlebar storefront
+  menjadi 1040/1280 piksel berstatus `DEPRECATED`. Red proof 6/6 gagal pada
+  source lama lalu focused S109 6/6 lulus; storefront final 136 test terjadwal
+  menghasilkan 125 pass/11 expected skip; backend 960/960 dengan 11.007
+  assertion, build, design 26/0, npm/Composer audit nol, no-overflow, keyboard
+  focus, target 44 piksel, Maps/WhatsApp, alur Lokasi ke Paket, dan tepat satu
+  watermark lulus. Evidence exact mencakup 390x844, 768x1024, Windows
+  1280x720, 1440x900, MacBook 1512x982, Full-HD 1920x1080, QHD 2560x1440,
+  dan 4K 3840x2160 pada lima preset existing. Tidak ada perubahan workflow,
   API, migration, dependency, payment, availability, permission, tenant
   isolation, data preset, invoice, receipt, atau SagaView. Production belum
-  berubah karena release-safety receipt exact S108 dan approval belum ada.
+  berubah karena release-safety receipt exact S109 dan approval belum ada.
 - Recovery semantik form Detail storefront sudah
   `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED` pada source
   kumulatif `2b3e544bb334299d443f67d77a43ac5614214d04`, branch
@@ -389,7 +391,9 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
   mobile manual-transfer E2E 1/1, build, design audit, npm/Composer audit 0,
   backup/restore exact-SHA, database audit 100, service, journal, public smoke,
   dan visual live dua viewport lulus. Endpoint `/up` masih tanpa HSTS/CSP;
-  route login dan booking yang diaudit mengirim header keamanan.
+  route login dan booking yang diaudit mengirim header keamanan. Arah layout
+  desktop ini berstatus `DEPRECATED` melalui `DEC-031`, tetapi catatan runtime
+  tetap dipertahankan karena production belum dipromosikan ke candidate S109.
 - Success screen WhatsApp support pada source
   `51a916537b51e8a503c6c88d3b130d2396558589` berstatus
   `PRODUCTION_DEPLOYED` sebagai release `20260803080450-51a9165`; rollback
@@ -428,13 +432,15 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
   `NEEDS CONFIRMATION` sampai UAT operator studio nyata.
 - Candidate landscape tablet storefront pada source
   `1f4b7bafb2f171a689826bcd5c34216924721d18` berstatus
-  `IMPLEMENTED_NOT_DEPLOYED`. Viewport 1024x768 berubah dari shell ponsel
+  `DEPRECATED / IMPLEMENTED_NOT_DEPLOYED` melalui `DEC-031`. Viewport 1024x768
+  saat itu berubah dari shell ponsel
   sekitar 460 piksel menjadi shell dua kolom sekitar 992 piksel; mobile 390
   dan desktop mulai 1120 piksel tetap mempertahankan kontrak sebelumnya.
   Kelima preset, CTA Maps/WhatsApp 44 piksel, no-overflow, accessibility, dan
   tepat satu `Powered by SagaBook` lulus. Production tetap source `d70fc1e0`,
-  release `20260803194351-d70fc1e`; approval eksekusi production masih menjadi
-  blocker. Booking/payment/availability dan tenant isolation tidak berubah.
+  release `20260803194351-d70fc1e`; candidate ini tidak lagi menunggu promosi
+  karena digantikan S109. Booking/payment/availability dan tenant isolation
+  tidak berubah.
 - Candidate navigasi admin Changelog pada source
   `95621347050450a06dd8e5c95eedbd112aa2ff0e` berstatus
   `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`. Daftar 18

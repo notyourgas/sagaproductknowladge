@@ -28,9 +28,35 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
   Delivery `PRODUCTION_DEPLOYED`; domain `PRODUCTION_ACTIVATED`; business
   readiness tetap `BLOCKED` sampai final data admin dan human rehearsal lulus.
 
-### SagaBook cross-monitor storefront candidate
+### SagaBook mobile-only storefront candidate
 
-- Ringkasan: canvas Full-HD/QHD melebar menjadi 1280 piksel; CTA Retro Fun dan
+- Ringkasan: kontrak founder menetapkan storefront booking tenant selalu
+  memakai satu canvas mobile maksimum 460 piksel pada semua viewport. Desktop
+  hanya memusatkan canvas; tidak ada rail, workspace dua kolom, canvas lebar,
+  device/window frame, atau layout landing page.
+- Alasan: storefront adalah alur booking mobile, bukan landing page. Layout
+  desktop adaptif hanya untuk dashboard/admin SagaBook serta aplikasi/dashboard
+  SagaView.
+- Produk/area terdampak: storefront tenant, lima preset, CTA, visual regression,
+  accessibility, automation heartbeat, decision log, provenance, dan release
+  evidence. Workflow/API serta kontrak bisnis tidak berubah.
+- Klasifikasi: `CONFIRMED` melalui `DEC-031`; source
+  `33de71c6b7ab8bf2c0b2cc8fd5fef327fb68f0a5`, branch
+  `codex/s109-mobile-only-storefront`, delivery
+  `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: focused 6/6; storefront 136 test terjadwal menghasilkan 125 pass/11
+  expected skip; backend 960/960 dan 11.007 assertion; build; design 26/0;
+  npm/Composer audit nol; matriks 390x844 sampai 3840x2160; no-overflow; target
+  44 piksel; Maps/WhatsApp; satu watermark.
+- Production berubah: tidak. Runtime tetap `d70fc1e0` /
+  `20260803194351-d70fc1e`, rollback `20260803132556-cfb2af8`; blocker adalah
+  release-safety receipt exact S109 dan approval.
+
+### SagaBook cross-monitor storefront candidate — DEPRECATED
+
+- Klasifikasi historis: `DEPRECATED` melalui `DEC-031`; digantikan S109.
+- Ringkasan: canvas Full-HD/QHD pernah diarahkan melebar menjadi 1280 piksel;
+  CTA Retro Fun dan
   Streetwear kembali ke workspace; rail 960x540 efektif menjadi compact.
 - Alasan: canvas 1040 piksel kurang memanfaatkan monitor besar, dua preset
   menaruh CTA selebar 320 piksel di rail, dan ringkasan zoom-equivalent turun di
@@ -38,7 +64,7 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 - Produk/area terdampak: storefront tenant, canvas desktop, CTA, orientation
   rail, responsivitas, zoom/reflow, keyboard focus, visual QA, provenance, dan
   release evidence. Workflow/API serta kontrak bisnis tidak berubah.
-- Klasifikasi: `CONFIRMED`; source
+- Bukti delivery historis: source
   `835f4ca9ef0eb42a57d31b18667ce9433b66986b`, branch
   `codex/s108-wide-monitor-canvas`, delivery
   `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
@@ -46,9 +72,10 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
   expected skip; backend 960/960 dan 11.007 assertion; build; design 26/0;
   npm/Composer audit nol; matriks mobile, laptop, MacBook, Full-HD, QHD, serta
   effective zoom 125/150/200 persen; no-overflow; 44 piksel; satu watermark.
-- Production berubah: tidak. Runtime tetap `d70fc1e0` /
-  `20260803194351-d70fc1e`, rollback `20260803132556-cfb2af8`; blocker adalah
-  release-safety receipt exact S108 dan approval. Payment, availability,
+- Production pada batch itu tidak berubah. Runtime tetap `d70fc1e0` /
+  `20260803194351-d70fc1e`, rollback `20260803132556-cfb2af8`; gate yang saat
+  itu belum tersedia adalah release-safety receipt exact S108 dan approval.
+  Candidate kini tidak lagi menunggu promosi. Payment, availability,
   permission, tenant isolation, migration, dependency, preset, invoice,
   receipt, SagaView, activation, dan business readiness tidak berubah.
 
@@ -873,7 +900,7 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 - File knowledge: `products/sagaview/PRODUCT.md`, `DOSSIER.md`, `CHANGELOG.md`,
   master knowledge, portfolio changelog, root changelog, dan sync status.
 
-### SagaBook storefront desktop production release
+### SagaBook storefront desktop production release — arah DEPRECATED
 
 - Ringkasan: memperluas storefront booking desktop dari kanvas 460 piksel
   menjadi shell operasional dua kolom hingga 1040 piksel, tanpa mengubah
@@ -886,6 +913,9 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
   `994de01cf3586adb4da8813a9c4b931085457510`, release
   `20260802221221-994de01`, status `PRODUCTION_DEPLOYED` dan
   `PRODUCTION_ACTIVATED` untuk scope storefront.
+- Catatan arah produk: release ini tetap merupakan fakta runtime production,
+  tetapi layout desktopnya berstatus `DEPRECATED` melalui `DEC-031` dan akan
+  digantikan candidate mobile-only S109 setelah seluruh release gate lulus.
 - Production berubah: ya. Rollback `20260802183533-35c8219` dipertahankan;
   SagaView tidak berubah.
 - Gate: backend 960/960, visual desktop 45/45 dengan satu mobile-only skip,

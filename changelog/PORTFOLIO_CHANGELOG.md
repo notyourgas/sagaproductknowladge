@@ -13,19 +13,38 @@
   readiness tetap `BLOCKED` oleh finalisasi data admin, valid-link/two-device
   UAT, serta physical event rehearsal.
 
-## 2026-08-05 - SagaBook cross-monitor storefront candidate
+## 2026-08-05 - SagaBook mobile-only storefront candidate
 
-- `CONFIRMED`: canvas Full-HD/QHD melebar dari 1040 menjadi 1280 piksel; CTA
+- `CONFIRMED` melalui `DEC-031`: storefront booking tenant selalu memakai satu
+  canvas mobile maksimum 460 piksel pada semua viewport; desktop hanya
+  memusatkannya. Layout rail/workspace lebar S94/S108 berstatus `DEPRECATED`.
+- Source `33de71c6b7ab8bf2c0b2cc8fd5fef327fb68f0a5` pada
+  `codex/s109-mobile-only-storefront`; focused 6/6, storefront 125 pass/11
+  expected skip, backend 960/960, build, design 26/0, dependency audit nol,
+  serta matriks 390x844 sampai 3840x2160 lulus pada lima preset.
+- Delivery `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
+  Production tetap `d70fc1e0` / `20260803194351-d70fc1e`; blocker adalah
+  receipt backup/checksum/disposable restore/migration preflight exact S109 dan
+  approval. Dashboard SagaBook, SagaView, workflow, payment, availability,
+  permission, tenant isolation, watermark, activation, dan business readiness
+  tidak berubah.
+
+## 2026-08-05 - SagaBook cross-monitor storefront candidate — DEPRECATED
+
+- `DEPRECATED` melalui `DEC-031`: canvas Full-HD/QHD pernah diarahkan melebar
+  dari 1040 menjadi 1280 piksel; CTA
   Retro Fun/Streetwear kembali ke workspace; rail 960x540 efektif menjadi
   compact tanpa kehilangan ringkasan.
 - Source kumulatif `835f4ca9ef0eb42a57d31b18667ce9433b66986b` pada
   `codex/s108-wide-monitor-canvas`; focused 6/6, storefront 125 pass/11 expected
   skip, backend 960/960, build, design 26/0, dependency audit nol, dan matriks
   viewport/zoom lulus pada lima preset.
-- Delivery `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
-  Production tetap `d70fc1e0` / `20260803194351-d70fc1e`; blocker adalah
-  receipt backup/checksum/disposable restore/migration preflight exact S108 dan
-  approval. Workflow, payment, availability, permission, tenant isolation,
+- Bukti delivery historis
+  `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`. Production pada
+  batch itu tetap `d70fc1e0` / `20260803194351-d70fc1e`; gate yang belum
+  tersedia adalah receipt backup/checksum/disposable restore/migration preflight
+  exact S108 dan approval. Candidate kini tidak lagi menunggu promosi. Workflow,
+  payment, availability, permission, tenant isolation,
   preset, watermark, activation, dan business readiness tidak berubah.
 
 ## 2026-08-05 - AOGTICVITY domain `.fun` attached
@@ -568,7 +587,7 @@ Detail tetap berada pada changelog produk; entri docs-only berada di root
 - Customer picker, frame recovery, device/session/privacy, payment/provider,
   tenant isolation, output 4R, dan business-readiness claim tidak berubah.
 
-## 2026-08-03 - SagaBook storefront desktop production
+## 2026-08-03 - SagaBook storefront desktop production — arah DEPRECATED
 
 - `CONFIRMED`: storefront booking publik SagaBook pada desktop kini memakai
   shell dua kolom hingga 1040 piksel, dengan orientasi langkah dan ringkasan
@@ -576,6 +595,9 @@ Detail tetap berada pada changelog produk; entri docs-only berada di root
   identik dan tablet 1024x768 tetap ringkas tanpa overflow.
 - Source `994de01cf3586adb4da8813a9c4b931085457510` aktif sebagai release
   `20260802221221-994de01`; rollback `20260802183533-35c8219` dipertahankan.
+- Fakta runtime release tetap berlaku, tetapi arah layout desktopnya berstatus
+  `DEPRECATED` melalui `DEC-031` dan akan digantikan candidate mobile-only S109
+  setelah seluruh release gate lulus.
 - Seluruh langkah dan preset existing, Maps, WhatsApp, paket, slot, checkout,
   confirmation, tenant brand, serta satu `Powered by SagaBook` tetap tercakup.
   Payment/provider, availability, permission, session, dan tenant isolation

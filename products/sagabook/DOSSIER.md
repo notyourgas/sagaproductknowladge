@@ -127,24 +127,27 @@ terverifikasi; fallback manual harus tetap terlihat.
 Multi-tenant web application dengan storefront, admin, super-admin, background
 jobs, billing, audit, dan immutable release process.
 
-Coverage viewport storefront pada source kumulatif
-`835f4ca9ef0eb42a57d31b18667ce9433b66986b` berstatus
-`LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`. Canvas
-Full-HD/QHD yang sebelumnya tetap 1040 piksel sekarang 1280 piksel dengan
-workspace utama 920 piksel dan CTA 880 piksel. CTA Retro Fun/Streetwear yang
-sebelumnya jatuh ke rail kiri 320 piksel kembali ke kolom utama. Pada effective
-viewport 960x540, mode rail compact menjaga ringkasan pilihan di dalam area
-terlihat. Focused 6/6 dan storefront 136 test terjadwal menghasilkan 125
-pass/11 expected skip; backend 960/960 dengan 11.007 assertion, build, design
-26/0, npm/Composer audit nol, no-overflow, keyboard focus, target 44 piksel,
-serta satu `Powered by SagaBook` lulus. Coverage mencakup mobile anchor,
-Windows compact, MacBook, Full-HD, QHD, dan effective zoom 125/150/200 persen;
-lima preset existing lulus pada Full-HD/QHD. Workflow/API, migration,
-dependency, preset data, payment, availability, permission, tenant isolation,
-invoice, receipt, dan SagaView tidak berubah. Production tetap source
-`d70fc1e0`, release `20260803194351-d70fc1e`, rollback
-`20260803132556-cfb2af8`; kandidat menunggu receipt backup terenkripsi,
-checksum, disposable restore, migration preflight exact S108, dan approval.
+Kontrak storefront terbaru melalui `DEC-031` adalah mobile-only pada semua
+viewport: canvas maksimum 460 piksel dan terpusat ketika dibuka dari desktop.
+Storefront tidak memiliki rail, workspace dua kolom, canvas lebar, atau layout
+landing page. Arah S94/S108 yang memperlebar storefront menjadi 1040/1280
+piksel berstatus `DEPRECATED`; responsivitas desktop penuh hanya untuk
+dashboard/admin SagaBook serta aplikasi/dashboard SagaView.
+
+Implementasi source `33de71c6b7ab8bf2c0b2cc8fd5fef327fb68f0a5` pada
+`codex/s109-mobile-only-storefront` berstatus `LOCAL_VALIDATED / STAGING_READY /
+IMPLEMENTED_NOT_DEPLOYED`. Red proof 6/6 berubah menjadi focused 6/6; final
+storefront 136 test terjadwal menghasilkan 125 pass/11 expected skip; backend
+960/960 dengan 11.007 assertion, build, design 26/0, npm/Composer audit nol,
+no-overflow, keyboard focus, target 44 piksel, Maps/WhatsApp, alur Lokasi ke
+Paket, serta tepat satu `Powered by SagaBook` lulus. Coverage exact meliputi
+390x844, 768x1024, 1280x720, 1440x900, 1512x982, 1920x1080, 2560x1440, dan
+3840x2160 pada lima preset existing. Workflow/API, migration, dependency,
+preset data, payment, availability, permission, tenant isolation, invoice,
+receipt, dan SagaView tidak berubah. Production tetap source `d70fc1e0`,
+release `20260803194351-d70fc1e`, rollback `20260803132556-cfb2af8`;
+kandidat menunggu receipt backup terenkripsi, checksum, disposable restore,
+migration preflight exact S109, dan approval.
 
 Recovery semantik form Detail storefront pada source kumulatif
 `2b3e544bb334299d443f67d77a43ac5614214d04` berstatus
@@ -400,6 +403,8 @@ npm/Composer audit 0, encrypted backup, disposable restore exact-SHA,
 migration preflight, database audit 100, service, scoped journal, public smoke,
 dan visual production dua viewport lulus. Endpoint `/up` masih tanpa HSTS/CSP;
 route login dan booking yang diaudit mengirim HSTS, CSP, dan XFO SAMEORIGIN.
+Arah layout desktop ini berstatus `DEPRECATED` melalui `DEC-031`, tetapi fakta
+runtime tetap dicatat karena production belum dipromosikan ke candidate S109.
 
 Refinement Review storefront pada source
 `fa228d89bc5bea32fb19bf424a4b0e48db1bc506` berstatus
@@ -448,15 +453,16 @@ klaim business readiness.
 
 Landscape tablet storefront candidate pada source
 `1f4b7bafb2f171a689826bcd5c34216924721d18` berstatus
-`IMPLEMENTED_NOT_DEPLOYED`. Pada 1024x768, shell yang sebelumnya sekitar 460
+`DEPRECATED / IMPLEMENTED_NOT_DEPLOYED` melalui `DEC-031`. Pada 1024x768, shell
+yang sebelumnya sekitar 460
 pixel kini memakai canvas dua kolom sekitar 992 pixel dengan dua kartu lokasi
 sejajar. Mobile 390 dan desktop mulai 1120 pixel tetap stabil. Kelima preset
 existing, CTA Maps/WhatsApp minimum 44 pixel, forced-colors, reduced-motion,
 keyboard focus, no-overflow, serta satu `Powered by SagaBook` lulus. Full
 storefront 120 pass/6 expected skip, focused a11y 16/16, backend 960/960,
 contract tenant/security/backend 36/36, build, design audit, dan dependency
-audit lulus. Fresh S39 exact-SHA run `20260804T001149Z` lulus, tetapi approval
-eksekusi production belum diberikan; runtime tetap release
+audit lulus. Fresh S39 exact-SHA run `20260804T001149Z` lulus; candidate ini
+tidak lagi menunggu promosi karena digantikan S109. Runtime tetap release
 `20260803194351-d70fc1e` dan tidak ada migration atau activation.
 
 Admin Changelog navigation candidate pada source

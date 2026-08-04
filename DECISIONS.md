@@ -440,3 +440,17 @@ keputusan pengganti.
 | Pemberi keputusan | Andreas / founder |
 | Status | `CONFIRMED`; domain, DNS, TLS, runtime origin, dan role routing production-activated |
 | Dokumen terkait | [AOGTICVITY Product](products/aogticvity/PRODUCT.md), [AOGTICVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTICVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |
+
+## DEC-031 - Storefront booking SagaBook selalu mobile
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-05 |
+| Topik | Kontrak viewport dan batas produk storefront booking SagaBook |
+| Keputusan | Website/storefront booking milik studio selalu memakai satu canvas mobile maksimum 460 piksel pada semua viewport, termasuk desktop dan monitor besar. Desktop hanya memusatkan canvas mobile; storefront tidak boleh memiliki rail/sidebar desktop, workspace dua kolom, canvas lebar, device/window frame, atau layout landing page. Optimasi desktop adaptif hanya berlaku untuk dashboard/admin SagaBook serta aplikasi/dashboard SagaView. |
+| Alasan | Storefront adalah alur booking customer yang mobile-first, bukan landing page marketing atau workspace desktop. Konsistensi satu alur mengurangi drift antarlayar dan menjaga fitur booking tetap mudah dijangkau. |
+| Alternatif yang dipertimbangkan | Canvas storefront 1040/1280 piksel; rail orientasi desktop; dua kolom pada monitor besar; landing page khusus desktop. |
+| Dampak | Arah storefront lebar S94/S108 berstatus `DEPRECATED` dan digantikan S109. Seluruh preset, visual regression, automation heartbeat, accessibility, CTA, Maps/WhatsApp, checkout, confirmation, recovery, dan watermark harus mempertahankan canvas mobile pada setiap viewport. Dashboard SagaBook dan SagaView tidak dibatasi 460 piksel. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED`; source `33de71c6b7ab8bf2c0b2cc8fd5fef327fb68f0a5` local-validated dan staging-ready, production belum berubah |
+| Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [SagaBook Changelog](products/sagabook/CHANGELOG.md), [Gaps](GAPS.md) |

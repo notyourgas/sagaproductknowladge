@@ -4,9 +4,35 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
-## 2026-08-05 - Storefront cross-monitor canvas
+## 2026-08-05 - Storefront booking selalu mobile
 
-- Klasifikasi: `CONFIRMED`; delivery
+- Klasifikasi: `CONFIRMED` melalui `DEC-031`; delivery
+  `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`. Source
+  `33de71c6b7ab8bf2c0b2cc8fd5fef327fb68f0a5` tersedia pada branch
+  `codex/s109-mobile-only-storefront`.
+- Before: storefront desktop memakai rail dan canvas 1040/1280 piksel sehingga
+  menyerupai layout desktop/landing. After: seluruh viewport memakai satu canvas
+  mobile maksimum 460 piksel yang terpusat; tidak ada rail, workspace dua
+  kolom, atau pelebaran preset. Dashboard/admin SagaBook tidak diubah.
+- Arah storefront lebar S94/S108 berstatus `DEPRECATED` dan digantikan S109.
+- Gate: red proof 6/6; focused 6/6; final storefront 136 test terjadwal dengan
+  125 pass/11 expected skip; backend 960/960 dan 11.007 assertion; build;
+  design 26/0; npm/Composer audit nol; no-overflow; keyboard focus; target 44
+  piksel; Maps/WhatsApp; alur Lokasi ke Paket; satu watermark. Lima preset lulus
+  pada matriks 390x844 sampai 3840x2160. Empat public smoke production existing
+  merespons 200.
+- Tidak ada perubahan workflow/API, migration, dependency, data preset,
+  payment, availability, permission, tenant isolation, invoice, receipt,
+  SagaView, activation, atau business readiness.
+- Production tidak berubah: source `d70fc1e0d922eed86fe4ea4998688aad32c68c43`,
+  release `20260803194351-d70fc1e`, rollback
+  `20260803132556-cfb2af8`. Deployment menunggu release-safety receipt exact
+  S109 dan approval.
+
+## 2026-08-05 - Storefront cross-monitor canvas — DEPRECATED
+
+- Klasifikasi: `DEPRECATED`; digantikan kontrak mobile-only S109 pada `DEC-031`.
+  Delivery historis
   `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`. Source kumulatif
   `835f4ca9ef0eb42a57d31b18667ce9433b66986b` tersedia pada branch
   `codex/s108-wide-monitor-canvas`.
@@ -23,10 +49,11 @@ Mencatat perubahan material SagaBook dengan provenance public-safe.
 - Tidak ada perubahan workflow/API, migration, dependency, data preset,
   payment, availability, permission, tenant isolation, invoice, receipt, atau
   SagaView.
-- Production tidak berubah: source `d70fc1e0d922eed86fe4ea4998688aad32c68c43`,
+- Production pada batch itu tidak berubah: source `d70fc1e0d922eed86fe4ea4998688aad32c68c43`,
   release `20260803194351-d70fc1e`, rollback
-  `20260803132556-cfb2af8`. Deployment menunggu release-safety receipt exact
-  S108 dan approval.
+  `20260803132556-cfb2af8`. Gate yang saat itu belum tersedia adalah
+  release-safety receipt exact S108 dan approval; candidate kini tidak lagi
+  menunggu promosi.
 
 ## 2026-08-05 - Storefront Detail form recovery
 
@@ -271,9 +298,10 @@ Mencatat perubahan material SagaBook dengan provenance public-safe.
 - Registry rilis, booking/payment/availability, permission, session, tenant
   isolation, storefront/template, invoice/receipt, dan SagaView tidak berubah.
 
-## 2026-08-04 - Landscape tablet storefront candidate
+## 2026-08-04 - Landscape tablet storefront candidate — DEPRECATED
 
-- Klasifikasi: `CONFIRMED`; delivery `IMPLEMENTED_NOT_DEPLOYED`. Production
+- Klasifikasi: `DEPRECATED` melalui `DEC-031`; bukti delivery historis
+  `IMPLEMENTED_NOT_DEPLOYED`. Production
   tetap source `d70fc1e0d922eed86fe4ea4998688aad32c68c43`, release
   `20260803194351-d70fc1e`, dengan rollback `20260803132556-cfb2af8`.
 - Candidate source `1f4b7bafb2f171a689826bcd5c34216924721d18` tersedia pada
@@ -293,8 +321,9 @@ Mencatat perubahan material SagaBook dengan provenance public-safe.
   nol vulnerability. Patch dependency menutup advisory Guzzle baseline.
 - Fresh S39 exact-SHA run `20260804T001149Z` membuktikan encrypted backup,
   checksum, offsite round-trip, dan disposable restore. Deploy belum berjalan
-  karena approval eksekusi production pada task automation belum diberikan;
-  tidak ada migration, switch symlink, restart service, atau activation.
+  pada batch tersebut karena approval eksekusi production belum diberikan;
+  candidate kini digantikan S109 dan tidak lagi menunggu promosi. Tidak ada
+  migration, switch symlink, restart service, atau activation.
 
 ## 2026-08-03 - Admin Booking compact triage dipromosikan
 
@@ -387,12 +416,15 @@ Mencatat perubahan material SagaBook dengan provenance public-safe.
   nginx/queue/PHP, lima endpoint 200, dan DOM live mobile+desktop. Production
   menunjukkan tepat satu watermark, tanpa overflow, serta enam tombol 72x44.
 
-## 2026-08-03 - Storefront booking desktop dipromosikan
+## 2026-08-03 - Storefront booking desktop dipromosikan — arah DEPRECATED
 
 - Klasifikasi: `CONFIRMED`; delivery `PRODUCTION_DEPLOYED`, activation scope
   `PRODUCTION_ACTIVATED`, business readiness tetap `NEEDS CONFIRMATION`.
 - Source `994de01cf3586adb4da8813a9c4b931085457510` aktif sebagai release
   `20260802221221-994de01`; rollback `20260802183533-35c8219` dipertahankan.
+- Fakta release ini tetap berlaku pada runtime production, tetapi arah layout
+  desktopnya berstatus `DEPRECATED` melalui `DEC-031` dan akan digantikan S109
+  setelah seluruh release gate lulus.
 - Before: pada desktop 1440x900, perjalanan booking publik tetap dibatasi
   seperti preview ponsel 460 piksel di tengah ruang kosong. After: viewport
   mulai 1120 piksel memakai shell dua kolom hingga 1040 piksel, dengan panel

@@ -100,18 +100,19 @@ menutup server error approval SagaBook dengan schema lifecycle dan
 reconciliation 7 hari. Approval owner manual masih berlaku; release aplikasi
 SagaBook dan SagaView tidak diganti.
 
-Candidate storefront terbaru adalah cross-monitor canvas source
-`835f4ca9ef0eb42a57d31b18667ce9433b66986b` pada
-`codex/s108-wide-monitor-canvas`, berstatus
-`LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`. Canvas Full-HD
-dan QHD sekarang 1280 piksel; CTA Retro Fun/Streetwear berada di workspace;
-rail 960x540 efektif tetap menampilkan ringkasan. Focused 6/6, storefront 125
-pass/11 expected skip, backend 960/960 dengan 11.007 assertion, build, design
-26/0, dependency audit nol, no-overflow, focus keyboard, target 44 piksel, dan
-satu watermark lulus. Lima preset existing diuji pada Full-HD/QHD; coverage
-tambahan memuat mobile, Windows compact, MacBook, serta effective zoom
-125/150/200 persen. Kandidat menunggu release-safety receipt exact S108 dan
-approval; production tetap `d70fc1e0` / `20260803194351-d70fc1e`.
+Candidate storefront terbaru adalah mobile-only source
+`33de71c6b7ab8bf2c0b2cc8fd5fef327fb68f0a5` pada
+`codex/s109-mobile-only-storefront`, berstatus
+`LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`. `DEC-031`
+menetapkan canvas maksimum 460 piksel pada seluruh viewport; desktop hanya
+memusatkan canvas dan tidak boleh menambah rail, workspace lebar, atau layout
+landing page. Arah S94/S108 yang memperlebar storefront menjadi 1040/1280
+piksel berstatus `DEPRECATED`. Focused 6/6, storefront 125 pass/11 expected
+skip, backend 960/960 dengan 11.007 assertion, build, design 26/0, dependency
+audit nol, no-overflow, focus keyboard, target 44 piksel, Maps/WhatsApp, alur
+Lokasi ke Paket, dan satu watermark lulus. Lima preset existing diuji dari
+390x844 sampai 3840x2160. Kandidat menunggu release-safety receipt exact S109
+dan approval; production tetap `d70fc1e0` / `20260803194351-d70fc1e`.
 
 Candidate sebelumnya adalah recovery semantik form Detail source
 `2b3e544bb334299d443f67d77a43ac5614214d04` pada
@@ -237,7 +238,9 @@ audit, npm/Composer audit 0, backup/restore exact-SHA, database audit 100,
 service, journal, smoke, dan visual live lulus. Payment/provider, availability,
 session, permission, tenant isolation, SagaView, dan klaim business readiness
 tidak berubah. Endpoint `/up` masih tanpa HSTS/CSP; route login dan booking yang
-diaudit mengirim header keamanan.
+diaudit mengirim header keamanan. Arah layout desktop ini berstatus
+`DEPRECATED` melalui `DEC-031`, tetapi tetap merupakan fakta runtime production
+sampai candidate S109 dipromosikan.
 
 Refinement navigasi Review terbaru aktif pada source `fa228d89`, release
 `20260803022430-fa228d8`, dengan status `PRODUCTION_DEPLOYED`. Enam tombol `Ubah` sekarang minimal 72x44
