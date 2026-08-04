@@ -506,6 +506,19 @@ pass dengan dua capture-only skip, build/budget, serta audit nol. Status
 Studio `57c0337b` / `20260803221207-57c0337` sampai release-safety exact S112
 dan approval tersedia. Persistence setting dan kontrak bisnis tidak berubah.
 
+Candidate Studio terbaru `2b0331d5` menutup gap penemuan route pada compact dan
+reflow zoom. Indikator `Menu n/8` kini merupakan disclosure 44 piksel yang
+membuka semua delapan route berkelompok dengan item 48 piksel, current state,
+Escape focus restoration, dan fokus konten setelah navigasi. Navigasi paged
+tetap tersedia dan sidebar desktop tidak berubah. Matriks 390x844, reflow
+efektif 125/150/200 persen, 1280x720, 1440x900, 1512x982, 1920x1080,
+2560x1440, dan 3840x2160 lulus; red 3/3 menjadi focused 5/5, regresi 7/7,
+156 unit, 113 E2E pass dengan dua capture-only skip, build/budget,
+forced-colors, reduced-motion, no-overflow, satu watermark, dan audit nol.
+Status `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`; production
+tetap Studio `57c0337b` / `20260803221207-57c0337` sampai release-safety exact
+S114 dan approval tersedia. Kontrak bisnis dan data tidak berubah.
+
 Candidate Saga Platform `dcb5a3f3` menyiapkan signup SagaView auto-trial 7 hari
 tanpa approval owner/email verification. Login tetap menunggu provisioning
 ready dan device tetap diaktivasi dari aplikasi studio. Statusnya

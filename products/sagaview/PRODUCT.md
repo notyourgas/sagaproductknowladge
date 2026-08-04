@@ -1,8 +1,8 @@
 # SagaView Product Knowledge
 
 Updated: 5 Agustus 2026
-Evidence status: production deployed + production activated; unsaved navigation
-dialog candidate implemented not deployed
+Evidence status: production deployed + production activated; compact all-menu
+candidate implemented not deployed
 
 ## Tujuan dokumen
 
@@ -165,6 +165,17 @@ persistence dan kontrak setting tidak berubah. Matriks 390x844, 1280x720,
 1440x900, serta reflow efektif 125-200 persen lulus Axe, keyboard/focus,
 forced-colors, reduced-motion, no-overflow, dan satu watermark. Production tetap
 source `57c0337b`; deploy menunggu release-safety exact S112 dan approval.
+
+`CONFIRMED` sebagai candidate terbaru, bukan production: source `2b0331d5`
+menambahkan disclosure `Semua menu` pada header compact Studio Console. Delapan
+route kini dapat dilihat dan dipilih langsung pada mobile serta reflow zoom,
+tanpa menghapus navigasi sebelumnya/berikutnya; desktop tetap memakai sidebar.
+Setiap item minimal 48 piksel, Escape mengembalikan fokus ke pemicu, dan pilihan
+route memindahkan fokus ke konten utama. Matriks 390x844, reflow efektif
+125/150/200 persen, 1280x720, 1440x900, 1512x982, 1920x1080, 2560x1440, dan
+3840x2160 lulus keyboard/focus, forced-colors, reduced-motion, no-overflow, dan
+tepat satu watermark. Production tetap source `57c0337b`; deploy menunggu
+release-safety exact S114 dan approval.
 
 ## Workflow preset, editor, dan review
 

@@ -1,5 +1,23 @@
 # Portfolio Changelog
 
+## 2026-08-05 - SagaView compact all-menu candidate
+
+- `CONFIRMED`: header compact Studio Console kini menyediakan disclosure
+  44 piksel untuk melihat dan memilih seluruh delapan route secara langsung;
+  item 48 piksel, current state, Escape focus restoration, dan fokus konten
+  setelah navigasi terverifikasi. Navigasi paged serta sidebar desktop tetap.
+- Source `2b0331d53dc4c590dee5329ef892ea01fa4a8a97` pada
+  `codex/s114-sagaview-all-menu`; red 3/3 menjadi focused 5/5, regresi 7/7,
+  unit 156/156, full E2E 113 pass/2 capture-only skip, build/budget,
+  forced-colors, reduced-motion, no-overflow, dan dependency audit nol.
+- Coverage: 390x844, reflow efektif 125/150/200 persen, Windows compact,
+  MacBook, Full HD, QHD, dan 4K; tepat satu `Powered by SagaView` tetap dijaga.
+- Delivery `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
+  Production tetap `57c0337b` / `20260803221207-57c0337`; blocker adalah
+  receipt backup/checksum/disposable restore/migration preflight exact S114 dan
+  approval. SagaBook, permission, device/session, foto, tenant, payment,
+  activation, dan business readiness tidak berubah.
+
 ## 2026-08-05 - SagaBook mobile-only payment candidate
 
 - Route QRIS dan transfer manual sekarang mengikuti `DEC-031`: satu canvas

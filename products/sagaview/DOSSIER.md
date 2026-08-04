@@ -7,7 +7,7 @@ SagaView berdasarkan runtime production aktif.
 
 ## Konteks dan status bukti
 
-- Updated: 4 Agustus 2026
+- Updated: 5 Agustus 2026
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED`
 - Business readiness: `NEEDS CONFIRMATION` untuk penjualan massal
@@ -138,6 +138,22 @@ pass dan dua capture-only skip; unit 156/156, build/budget, serta audit
 dependency nol. Production belum berubah karena receipt backup/restore exact
 S112 dan approval belum tersedia; persistence setting dan kontrak bisnis tidak
 berubah.
+
+Candidate all-menu compact source kumulatif `2b0331d5` menutup gap akses route
+Studio Console pada layar sempit dan reflow zoom. Sebelumnya indikator
+`Menu n/8` hanya berupa teks dan sebagian route berada di luar area horizontal;
+operator harus berpindah satu halaman untuk menemukan route lain. Indikator kini
+menjadi disclosure 44 piksel yang membuka delapan route berkelompok, dengan item
+48 piksel, label/deskripsi, current state, keyboard, Escape focus restoration,
+dan fokus konten setelah memilih route. Navigasi paged lama tetap tersedia dan
+sidebar desktop tidak berubah. Red 3/3 menjadi focused 5/5, regresi navigasi
+7/7, unit 156/156, full E2E 113 pass/2 capture-only skip, build/budget, audit
+dependency nol, forced-colors, reduced-motion, no-overflow, dan satu watermark
+lulus. Coverage mencakup 390x844, reflow efektif 125/150/200 persen, Windows
+compact, MacBook, Full HD, QHD, serta 4K. Production belum berubah karena
+receipt backup/checksum/disposable restore dan migration preflight exact S114
+serta approval belum tersedia; permission, device/session, foto, payment,
+tenant, local-first, dan output 4R tidak berubah.
 
 ## Fitur MVP
 

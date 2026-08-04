@@ -12,6 +12,31 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-05
 
+### SagaView compact all-menu candidate
+
+- Ringkasan: header compact Studio Console sekarang membuka seluruh delapan
+  route dari satu disclosure aksesibel, sambil mempertahankan navigasi paged
+  dan sidebar desktop.
+- Alasan: indikator lama hanya teks; pada mobile dan zoom tinggi hanya sebagian
+  route terlihat sehingga fitur penting tidak dapat dipindai atau dicapai
+  langsung.
+- Produk/area terdampak: Studio shell navigation, route discovery,
+  keyboard/focus, Escape, touch target, forced-colors, reduced-motion,
+  viewport/zoom QA, watermark, provenance, dan release evidence. Kontrak bisnis
+  tidak berubah.
+- Klasifikasi: `CONFIRMED`; source
+  `2b0331d53dc4c590dee5329ef892ea01fa4a8a97`, branch
+  `codex/s114-sagaview-all-menu`, delivery
+  `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: red 3/3 menjadi focused 5/5; regresi navigasi 7/7;
+  format/lint/typecheck; unit 156/156; full E2E 113 pass/2 capture-only skip;
+  build/budget; forced-colors; reduced-motion; no-overflow; watermark tunggal;
+  serta npm audit nol pada matriks mobile, reflow 125-200%, Windows compact,
+  MacBook, Full HD, QHD, dan 4K.
+- Production berubah: tidak. Runtime tetap `57c0337b` /
+  `20260803221207-57c0337`, rollback `20260803215526-be72510`; blocker adalah
+  release-safety receipt exact S114 dan approval.
+
 ### SagaBook mobile-only payment candidate
 
 - Ringkasan: route QRIS dan transfer manual kini memakai satu canvas mobile

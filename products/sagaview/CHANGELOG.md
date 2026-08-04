@@ -4,6 +4,38 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-08-05 - Semua menu Studio Console pada compact candidate
+
+- Klasifikasi: `CONFIRMED` sebagai candidate, bukan production.
+- Status: `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
+- Before: indikator `Menu n/8` pada header compact tidak interaktif dan hanya
+  dua sampai tiga route horizontal terlihat; seluruh delapan route tidak dapat
+  dipindai atau dipilih langsung pada mobile dan reflow zoom.
+- After: indikator menjadi disclosure 44 piksel yang membuka seluruh delapan
+  route berkelompok. Item minimal 48 piksel, current state terlihat, Escape
+  mengembalikan fokus ke pemicu, dan memilih route memindahkan fokus ke konten.
+  Navigasi paged tetap tersedia; sidebar desktop tidak berubah.
+- Source `2b0331d53dc4c590dee5329ef892ea01fa4a8a97` pada branch
+  `codex/s114-sagaview-all-menu`. Validation: red 3/3 menjadi focused 5/5;
+  regresi navigasi 7/7; format/lint/typecheck; unit 156/156; build/SSR; budget
+  288,4 KiB dari 450 KiB; full E2E 113 pass dan 2 capture-only skip; npm audit
+  nol. Satu timeout tes lama pada run tiga worker lulus 3/3 terisolasi dan
+  full-suite dua worker kemudian lulus bersih.
+- Matriks 390x844, 720x450 efektif 200%, 960x600 efektif 150%, 1024x576 efektif
+  125%, 1280x720, 1440x900, 1512x982, 1920x1080, 2560x1440, dan 3840x2160
+  memverifikasi keyboard/focus, forced-colors, reduced-motion, target 44/48
+  piksel, no-overflow, serta tepat satu `Powered by SagaView`.
+- Production tetap Studio source
+  `57c0337b43b46229253ce89ace39f2ed587fc2d7`, release
+  `20260803221207-57c0337`, rollback `20260803215526-be72510`; backend tetap
+  `b504dae30aee90a2b55e1e670d1934e2fc524218`, release
+  `20260803221207-b504dae`. Service aktif dan Login, Session, General, serta
+  Changelog merespons 200 pada verifikasi read-only.
+- Blocker deploy: release-safety receipt berisi encrypted backup, checksum,
+  disposable restore, migration preflight yang terikat exact S114, serta
+  approval produksi belum tersedia. Permission, device/session, foto,
+  local-first, tenant, payment, activation, dan business readiness tidak berubah.
+
 ## 2026-08-05 - Dialog perubahan belum disimpan aksesibel candidate
 
 - Klasifikasi: `CONFIRMED` sebagai candidate, bukan production.

@@ -198,14 +198,14 @@ ketika keputusan atau release baru menutup gap.
 
 ### SagaView
 
-- `BLOCKED`: candidate kumulatif penjaga navigasi source `707a6f61` lulus
-  red-green, focused/regression/visual, unit 156/156, full E2E 108 pass/2
-  capture-only skip, build/budget, audit dependency, serta matriks
-  mobile/laptop/reflow sampai efektif 200 persen. Production tetap `57c0337b` /
-  `20260803221207-57c0337`. Bukti penutup adalah encrypted backup, checksum,
-  disposable restore dan migration preflight yang terikat exact S112, approval,
-  immutable release, service/header/journal, rollback proof, serta public smoke
-  exact source.
+- `BLOCKED`: candidate kumulatif compact all-menu source `2b0331d5` lulus
+  red-green, focused/regression, unit 156/156, full E2E 113 pass/2 capture-only
+  skip, build/budget, audit dependency, serta matriks mobile/reflow/Windows
+  compact/MacBook/Full HD/QHD/4K sampai efektif 200 persen. Production tetap
+  `57c0337b` / `20260803221207-57c0337`. Bukti penutup adalah encrypted backup,
+  checksum, disposable restore dan migration preflight yang terikat exact S114,
+  approval, immutable release, service/header/journal, rollback proof, serta
+  public smoke exact source.
 
 - `CONFIRMED`: limit Growth/Pro, trial guardrail, cloud frame storage,
   local-photo boundary, retention, offboarding, dan support SLA sudah
