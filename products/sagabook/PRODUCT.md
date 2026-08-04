@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 3 Agustus 2026
+Updated: 4 Agustus 2026
 Evidence status: production + source verified
 
 ## Tujuan dokumen
@@ -158,6 +158,13 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
 - Source production terbaru pada cut-off: commit
   `d70fc1e0d922eed86fe4ea4998688aad32c68c43`.
 - Release production tercatat: `20260803194351-d70fc1e`.
+- Recovery pemuatan jadwal storefront sudah `LOCAL_VALIDATED / STAGING_READY /
+  IMPLEMENTED_NOT_DEPLOYED` pada source
+  `0f2f7bca255aba5c0ab220e542308ff343b3dfe7`, branch
+  `codex/s98-storefront-slot-recovery`. Kegagalan API availability tidak lagi
+  disamarkan sebagai tanggal penuh; customer mendapat alert yang jujur dan
+  tombol `Coba lagi` tanpa kehilangan tanggal pilihan. Production belum
+  berubah karena release-safety exact source S98 belum tersedia.
 - Storefront, admin, dan super-admin merespons public smoke.
 - Tenant Onboarding dan First Booking Activation aktif melalui Activation
   Center yang tenant-scoped dan server-authoritative.

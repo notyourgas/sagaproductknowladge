@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-04 - SagaBook storefront availability recovery candidate
+
+- `CONFIRMED`: error availability storefront kini dibedakan dari tanggal
+  penuh. Alert `Jadwal belum bisa dimuat` mempertahankan tanggal dan menyediakan
+  retry 44 piksel sampai slot tersedia tampil.
+- Source `0f2f7bca255aba5c0ab220e542308ff343b3dfe7` pada
+  `codex/s98-storefront-slot-recovery`; focused 2/2, storefront 147 pass/6
+  expected skip, backend 960/960, build, a11y/design, dan audit dependency 0.
+- Delivery `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
+  Production tetap `d70fc1e0` / `20260803194351-d70fc1e`; blocker adalah
+  release-safety exact S98 dan approval. Booking/payment/rule availability,
+  tenant isolation, preset, SagaView, activation, dan business readiness tidak
+  berubah.
+
 ## 2026-08-04 - AOGTICVITY guest registration production deployment
 
 - Public memiliki `/register/guest` dengan data minimum nama, WhatsApp, status

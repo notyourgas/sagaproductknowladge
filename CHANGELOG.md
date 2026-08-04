@@ -12,6 +12,29 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-04
 
+### SagaBook storefront availability recovery candidate
+
+- Ringkasan: membedakan kegagalan muat availability dari tanggal penuh dan
+  menambahkan alert serta retry yang mempertahankan tanggal pilihan.
+- Alasan: copy lama dapat membuat customer mengira semua slot penuh saat API
+  sebenarnya gagal, tanpa jalur pemulihan.
+- Produk/area terdampak: tenant storefront step Jadwal, loading/error/full
+  state, keyboard/focus, forced-colors, reduced-motion, responsive UI, dan
+  release evidence.
+- Klasifikasi: `CONFIRMED`; source
+  `0f2f7bca255aba5c0ab220e542308ff343b3dfe7`, branch
+  `codex/s98-storefront-slot-recovery`, delivery
+  `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: focused 2/2, storefront 147 pass/6 expected skip, backend 960/960
+  dengan 11.007 assertion, build, design audit 26/0, serta npm/Composer audit
+  nol vulnerability; satu watermark non-fixed dan no-overflow lulus.
+- Production berubah: tidak. Runtime tetap `d70fc1e0` /
+  `20260803194351-d70fc1e`, rollback `20260803132556-cfb2af8`. Blocker adalah
+  release-safety exact S98 dan approval; booking/payment/provider, aturan
+  availability, tenant isolation, preset, activation, dan business readiness
+  tidak berubah. File knowledge: product, dossier, changelog SagaBook, master,
+  portfolio/root changelog, gaps, dan sync status.
+
 ### AOGTICVITY guest registration production deployment
 
 - Ringkasan: menambahkan jalur public pemain undangan dengan data minimum,

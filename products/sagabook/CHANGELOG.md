@@ -4,6 +4,30 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-04 - Storefront availability recovery candidate
+
+- Klasifikasi: `CONFIRMED`; delivery
+  `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`. Candidate
+  source `0f2f7bca255aba5c0ab220e542308ff343b3dfe7` tersedia pada branch
+  `codex/s98-storefront-slot-recovery`.
+- Before: kegagalan HTTP availability ditampilkan sebagai `Slot tidak
+  tersedia`, menyiratkan tanggal penuh, dan tidak memberi jalur retry. After:
+  UI menampilkan alert `Jadwal belum bisa dimuat`, mempertahankan tanggal, dan
+  tombol `Coba lagi` memuat ulang request yang sama sampai slot tersedia
+  muncul.
+- Gate: focused recovery 2/2 pada 390x844 dan 1440x900; storefront penuh 147
+  pass/6 expected skip; backend 960/960 dengan 11.007 assertion; build; design
+  audit 26 artefak/0 pelanggaran; npm/Composer audit nol vulnerability.
+  Keyboard focus, target 44 piksel, forced-colors, reduced-motion,
+  no-overflow, serta satu `Powered by SagaBook` non-fixed lulus.
+- Production tidak berubah: source `d70fc1e0d922eed86fe4ea4998688aad32c68c43`,
+  release `20260803194351-d70fc1e`, rollback
+  `20260803132556-cfb2af8`. Blocker deploy adalah paket release-safety exact
+  S98: backup/checksum/disposable restore, migration preflight, approval,
+  immutable release, dan rollback proof.
+- Booking/payment/provider, aturan availability, permission, session, tenant
+  isolation, invoice/receipt, preset, dan SagaView tidak berubah.
+
 ## 2026-08-04 - Admin Changelog navigation candidate
 
 - Klasifikasi: `CONFIRMED`; delivery

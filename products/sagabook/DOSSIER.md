@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 3 Agustus 2026
+- Updated: 4 Agustus 2026
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED` untuk workflow yang tercantum di
   [PRODUCT](PRODUCT.md)
@@ -125,6 +125,22 @@ terverifikasi; fallback manual harus tetap terlihat.
 
 Multi-tenant web application dengan storefront, admin, super-admin, background
 jobs, billing, audit, dan immutable release process.
+
+Recovery jadwal storefront pada source
+`0f2f7bca255aba5c0ab220e542308ff343b3dfe7` berstatus
+`LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`. Before: HTTP 503
+availability menghasilkan copy `Slot tidak tersedia` yang dapat disalahartikan
+sebagai tanggal penuh dan tidak memiliki retry. After: loading memakai status
+polite, kegagalan memakai alert `Jadwal belum bisa dimuat`, tanggal tetap
+tersimpan, dan tombol `Coba lagi` minimal 44 piksel mengulang request yang sama
+sampai slot tersedia tampil. Focus keyboard, forced-colors, reduced-motion,
+no-overflow, 390x844, 1440x900, serta tepat satu watermark non-fixed lulus.
+Focused recovery 2/2, storefront lintas perangkat 147 pass/6 expected skip,
+backend 960/960 dengan 11.007 assertion, build, design audit, serta npm/Composer
+audit nol vulnerability lulus. API/payment/provider, availability rules,
+booking mutation, tenant isolation, invoice, dan receipt tidak berubah.
+Production tetap source `d70fc1e0`, release `20260803194351-d70fc1e`, karena
+belum ada backup/restore, approval, dan rollback package exact S98.
 
 UI/UX operasional pada source
 `8edd762154ec231b7e00c4a38db9c94dd0ee322c` berstatus

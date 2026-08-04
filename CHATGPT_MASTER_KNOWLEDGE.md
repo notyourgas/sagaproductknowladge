@@ -227,6 +227,19 @@ nol, dan fresh encrypted backup/restore exact-SHA lulus. Approval eksekusi
 production belum diberikan, sehingga runtime tetap `d70fc1e0` release
 `20260803194351-d70fc1e`; booking/payment/availability tidak berubah.
 
+Candidate recovery availability storefront pada source
+`0f2f7bca255aba5c0ab220e542308ff343b3dfe7` tersedia di branch
+`codex/s98-storefront-slot-recovery` dengan status
+`LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`. HTTP failure
+tidak lagi disebut slot penuh: UI memberi alert, mempertahankan tanggal, dan
+retry 44 piksel yang mengulang request sampai slot tersedia tampil. Focused
+2/2, storefront 147 pass/6 expected skip, backend 960/960, build, design/a11y,
+dan dependency audit 0 lulus pada mobile/desktop tanpa overflow serta dengan
+tepat satu `Powered by SagaBook`. Production tetap `d70fc1e0` / release
+`20260803194351-d70fc1e`; release-safety exact S98 dan approval masih blocker.
+Booking/payment/provider, aturan availability, tenant isolation, invoice,
+receipt, preset, dan SagaView tidak berubah.
+
 Candidate navigasi admin Changelog SagaBook pada source
 `95621347050450a06dd8e5c95eedbd112aa2ff0e` tersedia di branch
 `codex/s97-sagabook-admin-nav` dengan status

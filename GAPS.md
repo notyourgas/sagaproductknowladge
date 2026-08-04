@@ -120,6 +120,12 @@ ketika keputusan atau release baru menutup gap.
   adalah encrypted backup/checksum/disposable restore yang terikat exact
   candidate, approval deploy, immutable release, service/header/journal, serta
   public smoke 390x844 dan 1440x900.
+- `BLOCKED`: candidate recovery availability storefront source `0f2f7bca`
+  lulus focused 2/2, storefront 147 pass/6 expected skip, backend 960/960,
+  build, a11y/design, dan audit dependency; production tetap `d70fc1e0` /
+  `20260803194351-d70fc1e`. Bukti penutup adalah backup/checksum/disposable
+  restore, migration preflight, approval, immutable release, service/journal,
+  rollback proof, dan public smoke yang semuanya terikat exact S98.
 
 ### SagaView
 
