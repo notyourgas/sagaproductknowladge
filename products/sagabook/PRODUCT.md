@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 4 Agustus 2026
+Updated: 5 Agustus 2026
 Evidence status: production + source verified
 
 ## Tujuan dokumen
@@ -158,6 +158,24 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
 - Source production terbaru pada cut-off: commit
   `d70fc1e0d922eed86fe4ea4998688aad32c68c43`.
 - Release production tercatat: `20260803194351-d70fc1e`.
+- Recovery semantik form Detail storefront sudah
+  `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED` pada source
+  kumulatif `2b3e544bb334299d443f67d77a43ac5614214d04`, branch
+  `codex/s107-detail-form-recovery`. Before: label Nama, WhatsApp, Email, dan
+  Catatan belum terhubung secara programatik ke field; helper/error WhatsApp
+  juga belum menjadi deskripsi field dan hanya tampil sebagai teks. After:
+  empat label terhubung melalui `id`/`htmlFor`, field memiliki nama serta
+  autocomplete yang sesuai, dan feedback WhatsApp memakai panel recovery yang
+  berbeda visual, `aria-describedby`, serta live status sopan. Red proof
+  1 pass/1 fail ditutup menjadi focused 2/2; regresi caret yang sempat tertangkap
+  full matrix ditutup dengan targeted 1/1; final storefront 124 test terjadwal
+  exit 0, backend 960/960 dengan 11.007 assertion, build, design 26/0,
+  npm/Composer audit nol, visual exact dua viewport, no-overflow, target 44
+  piksel, dan tepat satu watermark lulus pada lima preset existing. Tidak ada
+  perubahan workflow/API, migration, dependency, payment, availability,
+  permission, tenant isolation, data preset, invoice, receipt, atau SagaView.
+  Production belum berubah karena receipt backup terenkripsi, checksum,
+  disposable restore, migration preflight exact S107, dan approval belum ada.
 - State pilihan storefront dan touch target filter Paket sudah
   `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED` pada source
   kumulatif `18f2b3c15d63dff8f5e97cd7883e48cb56610c8e`, branch

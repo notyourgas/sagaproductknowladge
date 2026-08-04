@@ -10,6 +10,33 @@ produk dan [Portfolio Changelog](changelog/PORTFOLIO_CHANGELOG.md).
 
 Root changelog tidak menggantikan changelog produk atau portfolio.
 
+## 2026-08-05
+
+### SagaBook storefront Detail form recovery
+
+- Ringkasan: label form Detail kini terhubung ke input; feedback WhatsApp
+  menjadi deskripsi field dan panel recovery dengan live status sopan.
+- Alasan: label sebelumnya hanya terlihat secara visual, sedangkan helper/error
+  WhatsApp tidak memberi hubungan semantik maupun recovery yang cukup jelas.
+- Produk/area terdampak: storefront tenant, Detail customer, accessibility,
+  keyboard/screen reader, error state, responsivitas, visual QA, provenance, dan
+  release evidence. Workflow/API serta kontrak bisnis tidak berubah.
+- Klasifikasi: `CONFIRMED`; source
+  `2b3e544bb334299d443f67d77a43ac5614214d04`, branch
+  `codex/s107-detail-form-recovery`, delivery
+  `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: red 1 pass/1 fail menjadi focused 2/2; regresi caret tertangkap dan
+  ditutup targeted 1/1; final storefront 124 test terjadwal exit 0; backend
+  960/960 dan 11.007 assertion; build; design 26/0; npm/Composer audit nol;
+  visual exact dua viewport; 44 piksel; no-overflow; satu watermark pada lima
+  preset; empat public smoke production existing 200.
+- Production berubah: tidak. Runtime tetap `d70fc1e0` /
+  `20260803194351-d70fc1e`, rollback `20260803132556-cfb2af8`; blocker adalah
+  receipt backup/checksum/disposable restore/migration preflight exact S107 dan
+  approval. Payment, availability, permission, tenant isolation, migration,
+  dependency, preset, invoice, receipt, SagaView, activation, dan business
+  readiness tidak berubah.
+
 ## 2026-08-04
 
 ### AOGTICVITY magic-link dan mobile modal hotfix production

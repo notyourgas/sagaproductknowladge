@@ -4,6 +4,30 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-05 - Storefront Detail form recovery
+
+- Klasifikasi: `CONFIRMED`; delivery
+  `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`. Source kumulatif
+  `2b3e544bb334299d443f67d77a43ac5614214d04` tersedia pada branch
+  `codex/s107-detail-form-recovery`.
+- Before: label empat field Detail belum terhubung secara programatik dan
+  feedback WhatsApp belum menjadi deskripsi field. After: accessible name,
+  nama/autocomplete, `aria-describedby`, serta panel error dengan live status
+  sopan memberi recovery yang terlihat dan terbaca.
+- Gate: red 1 pass/1 fail menjadi focused 2/2; regresi caret yang tertangkap
+  full matrix ditutup targeted 1/1; final storefront 124 test terjadwal exit 0;
+  backend 960/960 dengan 11.007 assertion; build; design 26/0; npm/Composer
+  audit nol; visual exact dua viewport; no-overflow; 44 piksel; tepat satu
+  watermark pada lima preset existing. Empat public smoke production existing
+  merespons 200.
+- Tidak ada perubahan workflow/API, migration, dependency, data preset,
+  payment, availability, permission, tenant isolation, invoice, receipt, atau
+  SagaView.
+- Production tidak berubah: source `d70fc1e0d922eed86fe4ea4998688aad32c68c43`,
+  release `20260803194351-d70fc1e`, rollback
+  `20260803132556-cfb2af8`. Deployment menunggu receipt backup terenkripsi,
+  checksum, disposable restore, migration preflight exact S107, dan approval.
+
 ## 2026-08-04 - Storefront selection state dan touch target
 
 - Klasifikasi: `CONFIRMED`; delivery

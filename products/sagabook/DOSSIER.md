@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 4 Agustus 2026
+- Updated: 5 Agustus 2026
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED` untuk workflow yang tercantum di
   [PRODUCT](PRODUCT.md)
@@ -126,6 +126,25 @@ terverifikasi; fallback manual harus tetap terlihat.
 
 Multi-tenant web application dengan storefront, admin, super-admin, background
 jobs, billing, audit, dan immutable release process.
+
+Recovery semantik form Detail storefront pada source kumulatif
+`2b3e544bb334299d443f67d77a43ac5614214d04` berstatus
+`LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`. Before: empat
+label terlihat tetapi belum menjadi accessible name bagi input; helper/error
+WhatsApp tidak ditautkan ke field. After: `id`/`htmlFor`, nama field, dan
+autocomplete diterapkan; WhatsApp memiliki `aria-describedby` dan panel error
+berikon dengan live status sopan. Red 1 pass/1 fail menjadi focused 2/2.
+Perubahan `type=email` yang sempat menggeser custom caret tertangkap oleh full
+matrix, dikoreksi tanpa mengurangi input mode/autocomplete, lalu targeted caret
+1/1 dan final 124 test storefront terjadwal exit 0. Backend 960/960 dengan
+11.007 assertion, build, design 26/0, npm/Composer audit nol, no-overflow,
+target 44 piksel, visual exact 390x844 dan 1440x900, serta satu
+`Powered by SagaBook` lulus pada lima preset existing. Workflow/API, migration,
+dependency, data preset, payment, availability, permission, tenant isolation,
+invoice, receipt, dan SagaView tidak berubah. Production tetap source
+`d70fc1e0`, release `20260803194351-d70fc1e`, rollback
+`20260803132556-cfb2af8`; kandidat menunggu receipt backup terenkripsi,
+checksum, disposable restore, migration preflight exact S107, dan approval.
 
 State pilihan storefront pada source kumulatif
 `18f2b3c15d63dff8f5e97cd7883e48cb56610c8e` berstatus

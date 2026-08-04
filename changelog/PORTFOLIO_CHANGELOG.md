@@ -1,5 +1,20 @@
 # Portfolio Changelog
 
+## 2026-08-05 - SagaBook storefront Detail form recovery candidate
+
+- `CONFIRMED`: empat field Detail sekarang mempunyai accessible name dan
+  autocomplete; helper/error WhatsApp ditautkan ke field serta memakai panel
+  recovery dengan live status sopan.
+- Source kumulatif `2b3e544bb334299d443f67d77a43ac5614214d04` pada
+  `codex/s107-detail-form-recovery`; focused 2/2, targeted caret 1/1, final
+  storefront 124 test terjadwal exit 0, backend 960/960, build, design 26/0,
+  dependency audit nol, dan visual exact dua viewport lulus pada lima preset.
+- Delivery `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
+  Production tetap `d70fc1e0` / `20260803194351-d70fc1e`; blocker adalah
+  receipt backup/checksum/disposable restore/migration preflight exact S107 dan
+  approval. Workflow, payment, availability, permission, tenant isolation,
+  preset, watermark, activation, dan business readiness tidak berubah.
+
 ## 2026-08-04 - AOGTICVITY auth/mobile registration hotfix production
 
 - `CONFIRMED`: magic-link confirmation kembali mengirim origin publik yang

@@ -100,7 +100,20 @@ menutup server error approval SagaBook dengan schema lifecycle dan
 reconciliation 7 hari. Approval owner manual masih berlaku; release aplikasi
 SagaBook dan SagaView tidak diganti.
 
-Candidate storefront terbaru adalah state pilihan dan touch target source
+Candidate storefront terbaru adalah recovery semantik form Detail source
+`2b3e544bb334299d443f67d77a43ac5614214d04` pada
+`codex/s107-detail-form-recovery`, berstatus
+`LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`. Empat label kini
+terhubung ke field dengan nama/autocomplete yang sesuai; feedback WhatsApp
+menjadi deskripsi field dan panel error dengan live status sopan. Focused 2/2,
+targeted caret 1/1, final storefront 124 test terjadwal exit 0, backend 960/960
+dengan 11.007 assertion, build, design 26/0, dependency audit nol, visual exact
+dua viewport, no-overflow, 44 piksel, dan satu watermark lulus pada lima preset
+existing. Kontrak workflow/API dan bisnis tidak berubah. Kandidat menunggu
+receipt backup/checksum/disposable restore/migration preflight exact S107 serta
+approval; production tetap `d70fc1e0` / `20260803194351-d70fc1e`.
+
+Candidate sebelumnya adalah state pilihan dan touch target source
 `18f2b3c15d63dff8f5e97cd7883e48cb56610c8e` pada
 `codex/s106-storefront-selection-state`, berstatus
 `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`. Seluruh pilihan
