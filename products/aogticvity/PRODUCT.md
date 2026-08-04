@@ -56,9 +56,10 @@ sebagai nama produk terbaru. Nama lama tetap disimpan sebagai provenance.
 | Player | `app.aogticvities.fun` |
 | Leader | `appl.aogticvities.fun` |
 
-Domain telah dibeli dan kelima hostname, termasuk `www`, sudah ditautkan serta
-ownership-nya terverifikasi pada project Vercel. DNS Hostinger, sertifikat,
-runtime origin, dan public smoke belum selesai; domain belum production aktif.
+Domain telah dibeli dan kelima hostname, termasuk `www`, aktif melalui Vercel.
+DNS Hostinger, sertifikat, runtime origin, role routing, serta public smoke
+telah lulus. Domain technically production-activated; business readiness tetap
+menunggu human UAT.
 
 Public delivery saat ini: `https://olimpiade-kemerdekaan.vercel.app`.
 
@@ -210,8 +211,8 @@ Public delivery saat ini: `https://olimpiade-kemerdekaan.vercel.app`.
   `20260804T180816Z`, dan Vercel production
   `dpl_GU4AUDL98wgfM9KAFwgCKHY68KpB` menyiapkan domain kanonik `.fun`.
   Hostname routing dan trusted origins sudah tersedia di runtime, sedangkan
-  `APP_PUBLIC_URL` serta `BETTER_AUTH_URL` sengaja tetap memakai URL Vercel
-  lama sampai DNS dan sertifikat hijau. Domain belum production-activated.
+  `APP_PUBLIC_URL` dan `BETTER_AUTH_URL` sekarang memakai player/admin domain
+  `.fun`; URL Vercel lama tetap trusted dan tersedia sebagai rollback.
 - SQLite hanya fast test adapter.
 - Event-master memiliki dry-run, validation, atomic publish, versioning, dan
   audit. Durasi jadwal bersifat provisional dan dapat disunting admin.
@@ -270,7 +271,7 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:
   role dan tim leader; perubahan assignment mencabut session lama. Admin,
   operator, leader, dan player mempunyai home route kanonik yang ditegakkan
   server-side.
-- Roster/check-in/result rehearsal lintas perangkat, cutover DNS/TLS custom domain,
+- Roster/check-in/result rehearsal lintas perangkat,
   aktivasi provider status webhook, valid-link WhatsApp session UAT dua
   perangkat, serta UAT fisik hari-H belum selesai. Public invalid-link smoke
   sudah membuktikan redirect memakai origin Vercel dan tidak lagi localhost.

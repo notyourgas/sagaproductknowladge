@@ -22,14 +22,15 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
   WhatsApp public origin, metadata, OpenAPI, routing tests, rollback, dan UAT.
 - Klasifikasi: `CONFIRMED`; source
   `f915947f8159cfa6bde922c26cc6615273547372`; status
-  `DOMAIN_ATTACHED / DNS_PENDING / NOT_PUBLICLY_ACTIVATED`.
+  `PRODUCTION_ACTIVATED` untuk domain; activation produk keseluruhan tetap
+  `NOT_PRODUCTION_ACTIVATED`.
 - Gate: 111 unit/service tests, 15 targeted domain/auth tests, typecheck,
   production build, dependency audit nol, dan Vercel ownership verification.
 - Runtime preparation aktif pada Hostinger `20260804T180816Z` dan Vercel
   `dpl_GU4AUDL98wgfM9KAFwgCKHY68KpB`; exact source, build, readiness,
-  role-host smoke, 20 migration, dan proxy-error gate lulus. URL Vercel lama
-  tetap auth/WhatsApp origin serta rollback. DNS Hostinger, sertifikat, dan
-  public smoke harus lulus sebelum URL baru diaktifkan.
+  role-host smoke, 20 migration, dan proxy-error gate lulus. DNS dua resolver,
+  sertifikat/HSTS, lima hostname, public role routing, auth-session, dan typed
+  invalid-link smoke juga lulus. URL Vercel lama tetap rollback.
 
 ### SagaBook storefront Detail form recovery
 

@@ -438,5 +438,5 @@ keputusan pengganti.
 | Alternatif yang dipertimbangkan | Tetap memakai URL Vercel; membeli ejaan singular; mengarahkan DNS langsung ke VPS Hostinger. |
 | Dampak | Vercel tetap menjadi edge publik dan Hostinger tetap upstream/MySQL runtime. Auth allowlist, metadata, WhatsApp public origin, TLS, routing, smoke, serta rollback harus menggunakan domain baru. URL Vercel lama dipertahankan sampai cutover lulus. |
 | Pemberi keputusan | Andreas / founder |
-| Status | `CONFIRMED`; domain dibeli dan attached ke Vercel, DNS/TLS/runtime cutover belum aktif |
+| Status | `CONFIRMED`; domain, DNS, TLS, runtime origin, dan role routing production-activated |
 | Dokumen terkait | [AOGTICVITY Product](products/aogticvity/PRODUCT.md), [AOGTICVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTICVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |

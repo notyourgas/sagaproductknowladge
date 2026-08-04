@@ -22,9 +22,10 @@ Nama lama dipertahankan sebagai provenance; status runtime harus eksplisit.
 - Hostinger release `20260804T180816Z` dan Vercel production
   `dpl_GU4AUDL98wgfM9KAFwgCKHY68KpB` memakai source exact tersebut; service,
   readiness, 20 migration, role-host smoke, build, dan proxy-error gate lulus.
-- Status domain `DOMAIN_ATTACHED / RUNTIME_PREPARED / DNS_PENDING /
-  NOT_PUBLICLY_ACTIVATED`. URL Vercel lama tetap menjadi auth/WhatsApp origin
-  dan rollback sampai DNS Hostinger, sertifikat, serta public smoke lulus.
+- Status domain `PRODUCTION_ACTIVATED`: DNS dua resolver, verification lima
+  hostname, HTTPS/HSTS, role routing, health, auth-session, dan typed invalid
+  magic-link smoke lulus. Auth canonical memakai `admin.*`, WhatsApp link
+  memakai `app.*`, dan URL Vercel lama tetap menjadi rollback.
 
 ## 2026-08-04 - Magic-link origin dan mobile modal hotfix production
 
