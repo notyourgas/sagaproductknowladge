@@ -6,9 +6,11 @@
   dan `appl` sudah ditautkan serta ownership-nya terverifikasi pada Vercel.
 - Source `f915947f8159cfa6bde922c26cc6615273547372` menyiapkan kontrak domain;
   111 tests, 15 targeted tests, typecheck, build, dan dependency audit lulus.
-- Status `DOMAIN_ATTACHED / DNS_PENDING / NOT_PUBLICLY_ACTIVATED`. Production
-  existing tidak berubah; DNS Hostinger, TLS, runtime origin, dan smoke masih
-  menjadi blocker.
+- Hostinger `20260804T180816Z` dan Vercel
+  `dpl_GU4AUDL98wgfM9KAFwgCKHY68KpB` sekarang memakai source exact. Status
+  `DOMAIN_ATTACHED / RUNTIME_PREPARED / DNS_PENDING /
+  NOT_PUBLICLY_ACTIVATED`; URL Vercel lama tetap origin serta rollback sampai
+  DNS Hostinger, TLS, dan smoke hijau.
 
 ## 2026-08-05 - SagaBook storefront Detail form recovery candidate
 

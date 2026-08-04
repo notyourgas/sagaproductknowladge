@@ -25,8 +25,11 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
   `DOMAIN_ATTACHED / DNS_PENDING / NOT_PUBLICLY_ACTIVATED`.
 - Gate: 111 unit/service tests, 15 targeted domain/auth tests, typecheck,
   production build, dependency audit nol, dan Vercel ownership verification.
-- Production berubah: belum. DNS Hostinger, sertifikat, runtime origin, serta
-  public smoke harus lulus sebelum URL baru digunakan untuk WhatsApp/login.
+- Runtime preparation aktif pada Hostinger `20260804T180816Z` dan Vercel
+  `dpl_GU4AUDL98wgfM9KAFwgCKHY68KpB`; exact source, build, readiness,
+  role-host smoke, 20 migration, dan proxy-error gate lulus. URL Vercel lama
+  tetap auth/WhatsApp origin serta rollback. DNS Hostinger, sertifikat, dan
+  public smoke harus lulus sebelum URL baru diaktifkan.
 
 ### SagaBook storefront Detail form recovery
 

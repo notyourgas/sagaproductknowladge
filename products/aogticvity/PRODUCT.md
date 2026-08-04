@@ -206,6 +206,12 @@ Public delivery saat ini: `https://olimpiade-kemerdekaan.vercel.app`.
   same-origin; modal pendaftaran memakai portal, VisualViewport, content scroll,
   footer CTA aman, background inert, dan bottom navigation tersembunyi. Tidak
   ada perubahan schema/data. Valid-link/session nyata tetap memerlukan UAT.
+- Source `f915947f8159cfa6bde922c26cc6615273547372`, Hostinger release
+  `20260804T180816Z`, dan Vercel production
+  `dpl_GU4AUDL98wgfM9KAFwgCKHY68KpB` menyiapkan domain kanonik `.fun`.
+  Hostname routing dan trusted origins sudah tersedia di runtime, sedangkan
+  `APP_PUBLIC_URL` serta `BETTER_AUTH_URL` sengaja tetap memakai URL Vercel
+  lama sampai DNS dan sertifikat hijau. Domain belum production-activated.
 - SQLite hanya fast test adapter.
 - Event-master memiliki dry-run, validation, atomic publish, versioning, dan
   audit. Durasi jadwal bersifat provisional dan dapat disunting admin.

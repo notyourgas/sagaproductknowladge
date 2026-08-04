@@ -629,6 +629,10 @@ Business readiness: `BLOCKED`. Public delivery aktif di
 `https://olimpiade-kemerdekaan.vercel.app`. Domain `aogticvities.fun` sudah
 dibeli dan root/`www`/`admin`/`app`/`appl` ditautkan ke Vercel, tetapi DNS,
 sertifikat, runtime origin, dan smoke belum selesai sehingga belum diaktifkan.
+Source `f915947f8159cfa6bde922c26cc6615273547372`, Hostinger
+`20260804T180816Z`, dan Vercel `dpl_GU4AUDL98wgfM9KAFwgCKHY68KpB` sudah
+menyiapkan runtime hostname/trusted-origin `.fun`; auth dan WhatsApp tetap
+memakai URL Vercel lama sampai cutover hijau.
 Real credential login dan database-backed session sudah terbukti;
 admin password claim dan registration UAT sudah selesai. Roster/check-in/result
 rehearsal, provider status webhook, valid-link WhatsApp two-device session UAT, dan

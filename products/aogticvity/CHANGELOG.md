@@ -19,9 +19,12 @@ Nama lama dipertahankan sebagai provenance; status runtime harus eksplisit.
   plan untuk domain `.fun`.
 - Gate lokal: 111 unit/service tests, 15 targeted domain/auth tests, typecheck,
   production build, dan dependency audit nol vulnerability lulus.
-- Status domain `DOMAIN_ATTACHED / DNS_PENDING / NOT_PUBLICLY_ACTIVATED`.
-  Production existing dan URL Vercel lama tidak berubah; blocker berikutnya
-  adalah record DNS Hostinger, sertifikat, runtime origin, dan public smoke.
+- Hostinger release `20260804T180816Z` dan Vercel production
+  `dpl_GU4AUDL98wgfM9KAFwgCKHY68KpB` memakai source exact tersebut; service,
+  readiness, 20 migration, role-host smoke, build, dan proxy-error gate lulus.
+- Status domain `DOMAIN_ATTACHED / RUNTIME_PREPARED / DNS_PENDING /
+  NOT_PUBLICLY_ACTIVATED`. URL Vercel lama tetap menjadi auth/WhatsApp origin
+  dan rollback sampai DNS Hostinger, sertifikat, serta public smoke lulus.
 
 ## 2026-08-04 - Magic-link origin dan mobile modal hotfix production
 

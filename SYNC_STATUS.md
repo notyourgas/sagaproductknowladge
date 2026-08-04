@@ -12,14 +12,14 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-05T01:04:06+07:00 |
+| Waktu pembaruan terakhir | 2026-08-05T01:13:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `9ca17cf3baa7c8eb6ee54d919b06d2167e4502c2` |
-| Informasi terakhir disinkronkan | AOGTICVITY domain `aogticvities.fun` dibeli dan attached ke Vercel; source `f915947f8159cfa6bde922c26cc6615273547372`; `DOMAIN_ATTACHED / DNS_PENDING / NOT_PUBLICLY_ACTIVATED`. |
+| Baseline sebelum pembaruan | `7335fd04d7999bc2a682a0893fc9f35c505cd2ab` |
+| Informasi terakhir disinkronkan | AOGTICVITY source `f915947f8159cfa6bde922c26cc6615273547372`, Hostinger `20260804T180816Z`, Vercel `dpl_GU4AUDL98wgfM9KAFwgCKHY68KpB`; `DOMAIN_ATTACHED / RUNTIME_PREPARED / DNS_PENDING / NOT_PUBLICLY_ACTIVATED`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
 | Konflik | Tidak ada; founder mengonfirmasi ejaan domain. Production existing dan URL rollback tidak berubah. |
-| Error | Tidak ada pada gate source/Vercel; DNS Hostinger, TLS, runtime origin, dan public smoke masih menunggu. |
+| Error | Tidak ada pada gate source/runtime; DNS Hostinger, TLS, origin cutover, dan public smoke masih menunggu. |
 
 ## File yang berubah pada sinkronisasi ini
 

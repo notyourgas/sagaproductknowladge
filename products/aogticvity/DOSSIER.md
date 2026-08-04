@@ -97,6 +97,14 @@ content scroll dari footer CTA, serta membuat shell dan bottom navigation tidak
 interaktif selama dialog terbuka. Public acceptance 60/60 dan smoke 320 × 480
 lulus; valid-link nyata tetap menjadi UAT manusia.
 
+Domain preparation source `f915947f8159cfa6bde922c26cc6615273547372`
+aktif pada Hostinger `20260804T180816Z` dan Vercel
+`dpl_GU4AUDL98wgfM9KAFwgCKHY68KpB`. Runtime telah mengenali hostname `.fun`
+dan trusted origins baru, tetapi link auth/WhatsApp tetap memakai URL Vercel
+lama sampai DNS, TLS, serta public smoke lulus. Rollback langsung tetap
+Hostinger `20260804T164327Z` dan Vercel
+`dpl_5pVdzKAGfZVv4w41cLborLhDFv4Z`.
+
 Taxonomy komunitas final mempunyai dua kategori utama: `TEEN` dengan enam
 subcategory `CG teen`, dan `SOUTH, WEST, CENTRAL` dengan delapan subcategory
 `CG youth`. Form, API validation, admin display, export, team balancing, dan
