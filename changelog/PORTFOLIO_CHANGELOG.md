@@ -1,5 +1,20 @@
 # Portfolio Changelog
 
+## 2026-08-05 - SagaBook cross-monitor storefront candidate
+
+- `CONFIRMED`: canvas Full-HD/QHD melebar dari 1040 menjadi 1280 piksel; CTA
+  Retro Fun/Streetwear kembali ke workspace; rail 960x540 efektif menjadi
+  compact tanpa kehilangan ringkasan.
+- Source kumulatif `835f4ca9ef0eb42a57d31b18667ce9433b66986b` pada
+  `codex/s108-wide-monitor-canvas`; focused 6/6, storefront 125 pass/11 expected
+  skip, backend 960/960, build, design 26/0, dependency audit nol, dan matriks
+  viewport/zoom lulus pada lima preset.
+- Delivery `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
+  Production tetap `d70fc1e0` / `20260803194351-d70fc1e`; blocker adalah
+  receipt backup/checksum/disposable restore/migration preflight exact S108 dan
+  approval. Workflow, payment, availability, permission, tenant isolation,
+  preset, watermark, activation, dan business readiness tidak berubah.
+
 ## 2026-08-05 - AOGTICVITY domain `.fun` attached
 
 - `CONFIRMED`: domain `aogticvities.fun` dibeli; root, `www`, `admin`, `app`,

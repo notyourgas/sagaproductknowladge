@@ -4,6 +4,30 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-05 - Storefront cross-monitor canvas
+
+- Klasifikasi: `CONFIRMED`; delivery
+  `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`. Source kumulatif
+  `835f4ca9ef0eb42a57d31b18667ce9433b66986b` tersedia pada branch
+  `codex/s108-wide-monitor-canvas`.
+- Before: Full-HD/QHD memakai canvas 1040 piksel; CTA Retro Fun/Streetwear
+  tersisa 320 piksel di rail; ringkasan 960x540 efektif keluar 79 piksel dari
+  viewport. After: canvas 1280 piksel, CTA kedua preset berada di workspace,
+  dan rail tinggi pendek menjadi compact namun tetap lengkap.
+- Gate: focused 6/6; storefront 136 test terjadwal, 125 pass/11 expected skip;
+  backend 960/960 dengan 11.007 assertion; build; design 26/0; npm/Composer
+  audit nol; no-overflow; focus keyboard; target 44 piksel; tepat satu
+  watermark. Lima preset lulus Full-HD/QHD; matriks juga memuat 390x844,
+  1280x720, 1440x900, 1512x982, serta effective zoom 125/150/200 persen. Empat
+  public smoke production existing merespons 200.
+- Tidak ada perubahan workflow/API, migration, dependency, data preset,
+  payment, availability, permission, tenant isolation, invoice, receipt, atau
+  SagaView.
+- Production tidak berubah: source `d70fc1e0d922eed86fe4ea4998688aad32c68c43`,
+  release `20260803194351-d70fc1e`, rollback
+  `20260803132556-cfb2af8`. Deployment menunggu release-safety receipt exact
+  S108 dan approval.
+
 ## 2026-08-05 - Storefront Detail form recovery
 
 - Klasifikasi: `CONFIRMED`; delivery

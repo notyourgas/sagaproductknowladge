@@ -181,6 +181,15 @@ ketika keputusan atau release baru menutup gap.
   receipt berisi backup terenkripsi, checksum, disposable restore, migration
   preflight yang terikat exact S107, approval, immutable release,
   service/header/journal, rollback proof, serta public smoke exact source.
+- `BLOCKED`: candidate cross-monitor storefront source `835f4ca9` lulus
+  focused 6/6, storefront 125 pass/11 expected skip, backend 960/960, build,
+  design, npm/Composer audit, matriks viewport/zoom, target 44 piksel,
+  no-overflow, keyboard focus, dan satu watermark pada lima preset. Production
+  tetap `d70fc1e0` / `20260803194351-d70fc1e`. Bukti penutup adalah
+  release-safety receipt berisi backup terenkripsi, checksum, disposable
+  restore, migration preflight yang terikat exact S108, approval, immutable
+  release, service/header/journal, rollback proof, serta public smoke exact
+  source.
 
 ### SagaView
 

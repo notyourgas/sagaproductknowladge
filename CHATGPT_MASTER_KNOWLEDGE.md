@@ -100,7 +100,20 @@ menutup server error approval SagaBook dengan schema lifecycle dan
 reconciliation 7 hari. Approval owner manual masih berlaku; release aplikasi
 SagaBook dan SagaView tidak diganti.
 
-Candidate storefront terbaru adalah recovery semantik form Detail source
+Candidate storefront terbaru adalah cross-monitor canvas source
+`835f4ca9ef0eb42a57d31b18667ce9433b66986b` pada
+`codex/s108-wide-monitor-canvas`, berstatus
+`LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`. Canvas Full-HD
+dan QHD sekarang 1280 piksel; CTA Retro Fun/Streetwear berada di workspace;
+rail 960x540 efektif tetap menampilkan ringkasan. Focused 6/6, storefront 125
+pass/11 expected skip, backend 960/960 dengan 11.007 assertion, build, design
+26/0, dependency audit nol, no-overflow, focus keyboard, target 44 piksel, dan
+satu watermark lulus. Lima preset existing diuji pada Full-HD/QHD; coverage
+tambahan memuat mobile, Windows compact, MacBook, serta effective zoom
+125/150/200 persen. Kandidat menunggu release-safety receipt exact S108 dan
+approval; production tetap `d70fc1e0` / `20260803194351-d70fc1e`.
+
+Candidate sebelumnya adalah recovery semantik form Detail source
 `2b3e544bb334299d443f67d77a43ac5614214d04` pada
 `codex/s107-detail-form-recovery`, berstatus
 `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`. Empat label kini

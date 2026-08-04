@@ -158,6 +158,24 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
 - Source production terbaru pada cut-off: commit
   `d70fc1e0d922eed86fe4ea4998688aad32c68c43`.
 - Release production tercatat: `20260803194351-d70fc1e`.
+- Coverage storefront lintas laptop, monitor besar, dan zoom-equivalent sudah
+  `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED` pada source
+  kumulatif `835f4ca9ef0eb42a57d31b18667ce9433b66986b`, branch
+  `codex/s108-wide-monitor-canvas`. Before: canvas Full-HD/QHD terkunci 1040
+  piksel; CTA Retro Fun dan Streetwear hanya 320 piksel di rail kiri; ringkasan
+  pilihan pada 960x540 efektif turun 79 piksel di bawah viewport. After:
+  canvas monitor besar menjadi 1280 piksel dengan workspace/CTA 880 piksel,
+  CTA dua preset kembali ke kolom utama, dan rail pendek memakai mode compact
+  tanpa menghilangkan brand, langkah, atau ringkasan. Red proof tiga tahap
+  ditutup menjadi focused 6/6; storefront 136 test terjadwal menghasilkan 125
+  pass/11 expected skip; backend 960/960 dengan 11.007 assertion, build, design
+  26/0, npm/Composer audit nol, no-overflow, focus keyboard, target 44 piksel,
+  dan tepat satu watermark lulus. Evidence meliputi anchor 390x844/1440x900,
+  laptop Windows 1280x720, MacBook 1512x982, Full-HD 1920x1080, QHD 2560x1440,
+  serta effective viewport 125/150/200 persen. Tidak ada perubahan workflow,
+  API, migration, dependency, payment, availability, permission, tenant
+  isolation, data preset, invoice, receipt, atau SagaView. Production belum
+  berubah karena release-safety receipt exact S108 dan approval belum ada.
 - Recovery semantik form Detail storefront sudah
   `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED` pada source
   kumulatif `2b3e544bb334299d443f67d77a43ac5614214d04`, branch

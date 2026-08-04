@@ -127,6 +127,25 @@ terverifikasi; fallback manual harus tetap terlihat.
 Multi-tenant web application dengan storefront, admin, super-admin, background
 jobs, billing, audit, dan immutable release process.
 
+Coverage viewport storefront pada source kumulatif
+`835f4ca9ef0eb42a57d31b18667ce9433b66986b` berstatus
+`LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`. Canvas
+Full-HD/QHD yang sebelumnya tetap 1040 piksel sekarang 1280 piksel dengan
+workspace utama 920 piksel dan CTA 880 piksel. CTA Retro Fun/Streetwear yang
+sebelumnya jatuh ke rail kiri 320 piksel kembali ke kolom utama. Pada effective
+viewport 960x540, mode rail compact menjaga ringkasan pilihan di dalam area
+terlihat. Focused 6/6 dan storefront 136 test terjadwal menghasilkan 125
+pass/11 expected skip; backend 960/960 dengan 11.007 assertion, build, design
+26/0, npm/Composer audit nol, no-overflow, keyboard focus, target 44 piksel,
+serta satu `Powered by SagaBook` lulus. Coverage mencakup mobile anchor,
+Windows compact, MacBook, Full-HD, QHD, dan effective zoom 125/150/200 persen;
+lima preset existing lulus pada Full-HD/QHD. Workflow/API, migration,
+dependency, preset data, payment, availability, permission, tenant isolation,
+invoice, receipt, dan SagaView tidak berubah. Production tetap source
+`d70fc1e0`, release `20260803194351-d70fc1e`, rollback
+`20260803132556-cfb2af8`; kandidat menunggu receipt backup terenkripsi,
+checksum, disposable restore, migration preflight exact S108, dan approval.
+
 Recovery semantik form Detail storefront pada source kumulatif
 `2b3e544bb334299d443f67d77a43ac5614214d04` berstatus
 `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`. Before: empat
