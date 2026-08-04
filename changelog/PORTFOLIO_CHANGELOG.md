@@ -5,7 +5,7 @@
 - `CONFIRMED`: pada Windows 1280x720, route Install App yang aktif tetapi
   tersembunyi kini otomatis dibawa ke area sidebar terlihat dengan scroll
   `nearest`, tanpa mengambil fokus dari konten utama.
-- Source kumulatif `7ad38ef2b97c01101af02f4fc5a24d9211c2c6de` pada
+- Source kumulatif `7ad38ef393686decb1d7afc9dea13960d770b986` pada
   `codex/s110-sagaview-compact-sidebar`; red 1/1 menjadi focused 6/6, unit
   156/156, full E2E 105/105, build/budget, dan npm audit nol.
 - Matriks 390x844, 1280x720, 1440x900, 1512x982, dan 2560x1440 menjaga route

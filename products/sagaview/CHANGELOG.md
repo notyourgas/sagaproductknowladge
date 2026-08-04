@@ -14,7 +14,7 @@ Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 - After: sidebar desktop mengikuti `aria-current=page` memakai scroll `nearest`,
   menghormati reduced-motion, dan tetap menyerahkan fokus route ke konten utama.
   Mobile 390x844 serta MacBook/monitor lebar mempertahankan mekanisme lama.
-- Source `7ad38ef2b97c01101af02f4fc5a24d9211c2c6de` pada branch
+- Source `7ad38ef393686decb1d7afc9dea13960d770b986` pada branch
   `codex/s110-sagaview-compact-sidebar`. Validation: red 1/1 gagal, green
   focused 6/6, format/lint/typecheck, unit 156/156, build/SSR, budget 288,3 KiB
   dari 450 KiB, full E2E 105/105 termasuk import 50/200/500, dan npm audit nol.

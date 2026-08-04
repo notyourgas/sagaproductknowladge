@@ -355,7 +355,7 @@ Kontrak ini sekarang enforced server-side pada runtime production yang aktif.
 
 - pada Windows compact 1280x720, route dalam seperti Install App sebelumnya
   aktif tetapi berada di luar area sidebar yang terlihat;
-- source kumulatif `7ad38ef2b97c01101af02f4fc5a24d9211c2c6de` membuat sidebar desktop
+- source kumulatif `7ad38ef393686decb1d7afc9dea13960d770b986` membuat sidebar desktop
   mengikuti route aktif dengan scroll `nearest`, menghormati reduced-motion,
   dan tidak memindahkan fokus operator dari konten utama;
 - mobile 390x844, Windows 1280x720, MacBook 1440x900/1512x982, serta monitor

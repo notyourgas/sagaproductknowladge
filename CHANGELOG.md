@@ -22,7 +22,7 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
   keyboard/focus, reduced-motion, forced-colors, responsivitas, visual QA,
   provenance, dan release evidence. Kontrak bisnis tidak berubah.
 - Klasifikasi: `CONFIRMED`; source
-  `7ad38ef2b97c01101af02f4fc5a24d9211c2c6de`, branch
+  `7ad38ef393686decb1d7afc9dea13960d770b986`, branch
   `codex/s110-sagaview-compact-sidebar`, delivery
   `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
 - Gate: red 1/1 gagal menjadi focused 6/6; format/lint/typecheck; unit 156/156;

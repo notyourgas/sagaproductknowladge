@@ -16,7 +16,7 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
 | Baseline sebelum pembaruan | `e6d1d2a86bc637575230c0c0c4822c66682c708d` |
-| Informasi terakhir disinkronkan | SagaView source `7ad38ef2b97c01101af02f4fc5a24d9211c2c6de`: route aktif sidebar terlihat pada Windows compact dan matriks lintas layar; delivery `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah. |
+| Informasi terakhir disinkronkan | SagaView source `7ad38ef393686decb1d7afc9dea13960d770b986`: route aktif sidebar terlihat pada Windows compact dan matriks lintas layar; delivery `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
 | Konflik | Tidak ada konflik baru; kontrak mobile-only storefront SagaBook tetap berlaku dan batch ini hanya menyentuh Studio Console SagaView. |
 | Error | Tidak ada pada technical gate; release-safety receipt exact S110 dan approval production masih terbuka. |
