@@ -127,6 +127,22 @@ terverifikasi; fallback manual harus tetap terlihat.
 Multi-tenant web application dengan storefront, admin, super-admin, background
 jobs, billing, audit, dan immutable release process.
 
+Recovery clipboard langkah `Selesai` pada source
+`2bcacb240c2a89e751a0c1df1ed687f122918988` berstatus
+`LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`. Before: pesan
+bantuan mengumumkan sukses tanpa menunggu Clipboard API; salin kode hanya
+selebar 28 piksel tanpa feedback atau fallback. After: kedua write ditunggu;
+reject/unavailable menampilkan alert, input/textarea readonly yang otomatis
+fokus/terseleksi, satu retry dominan minimal 44 piksel, dan status screen reader
+baru mengumumkan sukses setelah write selesai. Focus, forced-colors,
+reduced-motion, no-overflow, 390x844, 1440x900, serta satu watermark non-fixed
+lulus. Focused 1/1, storefront 106 pass/6 expected skip, backend 960/960 dengan
+11.007 assertion, build, design audit, npm audit nol vulnerability, serta
+Composer nol advisory/abandoned lulus. Production tetap source `d70fc1e0`,
+release `20260803194351-d70fc1e`, karena belum ada release-safety receipt dan
+approval exact S101. Booking/payment/provider, availability, tenant isolation,
+preset, invoice, dan receipt tidak berubah.
+
 Recovery clipboard header storefront aktif pada source
 `9d9c5ede9f1438d799861547ec27f0cd95b55edc` berstatus
 `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`. Before: ikon

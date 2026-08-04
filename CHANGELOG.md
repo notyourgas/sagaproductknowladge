@@ -33,6 +33,31 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
   rollback target tersedia.
 - Next action: owner mengulang approval nyata dari UI.
 
+### SagaBook success-screen clipboard recovery candidate
+
+- Ringkasan: aksi salin kode booking dan pesan bantuan pada langkah `Selesai`
+  kini menunggu Clipboard API; reject/unavailable membuka fallback readonly
+  yang langsung fokus/terseleksi dan satu retry dominan.
+- Alasan: tombol pesan sebelumnya tetap mengaku berhasil ketika write ditolak,
+  sementara tombol kode hanya selebar 28 piksel dan tidak memberi feedback atau
+  jalur pemulihan.
+- Produk/area terdampak: tenant storefront confirmation, kode booking, support
+  fallback, error/success state, keyboard/focus, screen reader, forced-colors,
+  reduced-motion, mobile/desktop, dan release evidence.
+- Klasifikasi: `CONFIRMED`; source
+  `2bcacb240c2a89e751a0c1df1ed687f122918988`, branch
+  `codex/s101-success-copy-recovery`, delivery
+  `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: red-green focused failure/retry/success pada 390x844 dan 1440x900;
+  storefront penuh 106 pass/6 expected skip; backend 960/960 dengan 11.007
+  assertion; build; design audit 26/0; serta npm/Composer audit nol
+  vulnerability/advisory. Tepat satu watermark non-fixed dan no-overflow lulus.
+- Production berubah: tidak. Runtime tetap `d70fc1e0` /
+  `20260803194351-d70fc1e`, rollback `20260803132556-cfb2af8`. Blocker adalah
+  release-safety receipt exact S101 dan approval; booking/payment/provider,
+  availability, permission, session, tenant isolation, preset, invoice/receipt,
+  SagaView, activation, dan business readiness tidak berubah.
+
 ### SagaBook active storefront header clipboard recovery candidate
 
 - Ringkasan: tombol bantuan pada header storefront aktif sekarang menunggu

@@ -23,6 +23,31 @@ Mencatat perubahan material SagaBook dengan provenance public-safe.
   approval owner manual masih berlaku. Satu retry approval nyata dari owner
   masih menjadi UAT terakhir.
 
+## 2026-08-04 - Success-screen clipboard recovery candidate
+
+- Klasifikasi: `CONFIRMED`; delivery
+  `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`. Candidate
+  source `2bcacb240c2a89e751a0c1df1ed687f122918988` tersedia pada branch
+  `codex/s101-success-copy-recovery`.
+- Before: tombol pesan bantuan mengumumkan sukses tanpa menunggu Clipboard API;
+  tombol salin kode hanya selebar 28 piksel, tidak memberi status, dan tidak
+  punya fallback. After: kedua write ditunggu; kegagalan menampilkan alert,
+  kolom readonly yang otomatis fokus/terseleksi, serta satu retry dominan
+  minimal 44 piksel. Sukses baru diumumkan melalui status screen reader setelah
+  write selesai.
+- Gate: focused failure/retry/success mencakup 390x844 dan 1440x900; storefront
+  penuh 106 pass/6 expected skip; backend 960/960 dengan 11.007 assertion;
+  build; design audit 26 artefak/0 pelanggaran; npm audit nol vulnerability dan
+  Composer nol advisory/abandoned. Keyboard/focus, forced-colors,
+  reduced-motion, no-overflow, dan satu `Powered by SagaBook` non-fixed lulus.
+- Production tidak berubah: source `d70fc1e0d922eed86fe4ea4998688aad32c68c43`,
+  release `20260803194351-d70fc1e`, rollback
+  `20260803132556-cfb2af8`. Blocker deploy adalah release-safety receipt exact
+  S101 yang memuat backup/checksum/disposable restore, migration preflight,
+  approval, immutable release, service/journal, public smoke, dan rollback proof.
+- Booking/payment/provider, availability, permission, session, tenant
+  isolation, invoice/receipt, preset, dan SagaView tidak berubah.
+
 ## 2026-08-04 - Active storefront header clipboard recovery candidate
 
 - Klasifikasi: `CONFIRMED`; delivery

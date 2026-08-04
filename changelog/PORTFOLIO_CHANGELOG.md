@@ -12,6 +12,21 @@
   S72 auto-trial tetap `PRODUCTION HOLD`; authenticated owner retry menjadi
   UAT terakhir.
 
+## 2026-08-04 - SagaBook success clipboard recovery candidate
+
+- `CONFIRMED`: langkah `Selesai` tidak lagi mengaku berhasil sebelum Clipboard
+  API selesai. Kode booking dan pesan bantuan mempunyai alert, fallback manual
+  yang otomatis fokus/terseleksi, satu retry 44 piksel, dan status screen reader.
+- Source `2bcacb240c2a89e751a0c1df1ed687f122918988` pada
+  `codex/s101-success-copy-recovery`; focused dua viewport, storefront 106
+  pass/6 expected skip, backend 960/960, build, a11y/design, serta audit
+  dependency nol.
+- Delivery `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
+  Production tetap `d70fc1e0` / `20260803194351-d70fc1e`; blocker adalah
+  release-safety receipt exact S101 dan approval. Booking/payment/availability,
+  tenant isolation, preset, SagaView, activation, dan business readiness tidak
+  berubah.
+
 ## 2026-08-04 - SagaBook active header clipboard recovery candidate
 
 - `CONFIRMED`: bantuan header storefront aktif tidak lagi mengaku berhasil

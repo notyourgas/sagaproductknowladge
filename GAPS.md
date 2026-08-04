@@ -147,6 +147,13 @@ ketika keputusan atau release baru menutup gap.
   release-safety receipt berisi backup/checksum/disposable restore, migration
   preflight, approval, immutable release, service/journal, rollback proof, dan
   public smoke yang semuanya terikat exact S100.
+- `BLOCKED`: candidate recovery clipboard langkah `Selesai` source `2bcacb24`
+  lulus red-green focused dua viewport, storefront 106 pass/6 expected skip,
+  backend 960/960, build, a11y/design, dan audit dependency; production tetap
+  `d70fc1e0` / `20260803194351-d70fc1e`. Bukti penutup adalah release-safety
+  receipt berisi backup/checksum/disposable restore, migration preflight,
+  approval, immutable release, service/journal, rollback proof, dan public
+  smoke yang semuanya terikat exact S101.
 
 ### SagaView
 

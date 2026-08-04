@@ -158,6 +158,13 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
 - Source production terbaru pada cut-off: commit
   `d70fc1e0d922eed86fe4ea4998688aad32c68c43`.
 - Release production tercatat: `20260803194351-d70fc1e`.
+- Recovery clipboard langkah `Selesai` sudah `LOCAL_VALIDATED /
+  STAGING_READY / IMPLEMENTED_NOT_DEPLOYED` pada source
+  `2bcacb240c2a89e751a0c1df1ed687f122918988`, branch
+  `codex/s101-success-copy-recovery`. Kode booking dan pesan bantuan kini
+  menunggu Clipboard API; browser yang menolak mendapat alert, fallback manual
+  yang langsung fokus/terseleksi, dan satu retry minimal 44 piksel. Production
+  belum berubah karena release-safety receipt exact source S101 belum tersedia.
 - Recovery clipboard header storefront aktif sudah `LOCAL_VALIDATED /
   STAGING_READY / IMPLEMENTED_NOT_DEPLOYED` pada source
   `9d9c5ede9f1438d799861547ec27f0cd95b55edc`, branch
