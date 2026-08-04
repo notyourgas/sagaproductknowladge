@@ -384,3 +384,17 @@ keputusan pengganti.
 | Pemberi keputusan | Andreas / founder |
 | Status | `CONFIRMED`; source dan public production runtime terverifikasi |
 | Dokumen terkait | [AOGTICVITY Product](products/aogticvity/PRODUCT.md), [AOGTICVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTICVITY Changelog](products/aogticvity/CHANGELOG.md) |
+
+## DEC-027 - AOGTICVITY menampilkan riwayat pemenang per lomba
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-04 |
+| Topik | Riwayat kemenangan pada Standing resmi AOGTICVITY |
+| Keputusan | Standing resmi menyediakan satu accordion untuk masing-masing dari 10 lomba. Hasil resmi menampilkan Juara 1/2/3; lomba tanpa hasil menampilkan status menunggu. |
+| Alasan | Founder ingin standing tidak hanya memperlihatkan agregat tim, tetapi juga dapat ditelusuri sampai siapa pemenang pada setiap lomba. |
+| Alternatif yang dipertimbangkan | Menampilkan hanya lomba yang selesai; mencampur draft operator; membuat halaman riwayat terpisah. |
+| Dampak | Endpoint publik tetap mengecualikan `Draft`; `Published`/`Corrected` menjadi sumber podium. Public/player melakukan refresh periodik dan recovery focus/reconnect tanpa mengubah schema, permission, atau workflow scoring. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED`; source dan public production runtime terverifikasi |
+| Dokumen terkait | [AOGTICVITY Product](products/aogticvity/PRODUCT.md), [AOGTICVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTICVITY Changelog](products/aogticvity/CHANGELOG.md) |

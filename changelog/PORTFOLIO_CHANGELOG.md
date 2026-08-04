@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-04 - AOGTICVITY official winner history production
+
+- Standing resmi kini menampilkan riwayat Juara 1/2/3 per lomba melalui 10
+  accordion; draft tetap privat dan lomba tanpa publikasi memakai empty state.
+- Source `2590f69d3ac609f6f92d3badb1343ad55f1a239c`; Hostinger
+  `20260804T061230Z`; Vercel `dpl_e3nqmA7PoXHxfRuBiLLUwvzuUtoz`. Regression
+  108 tests, Playwright 50/50, build/audit, readiness, dan public visual smoke
+  lulus tanpa fixture atau migration baru.
+- Delivery `PRODUCTION_DEPLOYED`; activation dan business readiness tidak
+  berubah.
+
 ## 2026-08-04 - AOGTICVITY Info timeline spacing production
 
 - Timeline resmi kini memberi padding dan gap konsisten; deskripsi memakai

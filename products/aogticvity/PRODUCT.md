@@ -181,6 +181,12 @@ Public delivery saat ini: `https://olimpiade-kemerdekaan.vercel.app`.
   `dpl_Bw3VAk3xYqXAsnESS7HF6L9BnEPu` melonggarkan timeline resmi pada halaman
   Info. Milestone mempunyai inset 14 px, gap 12 px, deskripsi selebar kartu,
   serta jarak 16 px ke panel keselamatan tanpa mengubah data timeline.
+- Source UI `2590f69d3ac609f6f92d3badb1343ad55f1a239c`, Hostinger release
+  `20260804T061230Z`, dan Vercel production
+  `dpl_e3nqmA7PoXHxfRuBiLLUwvzuUtoz` menambahkan riwayat pemenang pada Standing
+  resmi. Sepuluh lomba selalu tampil sebagai accordion; hanya hasil
+  `Published`/`Corrected` yang memunculkan podium, sedangkan `Draft` tetap
+  tersembunyi dan lomba tanpa publikasi memakai empty state jujur.
 - SQLite hanya fast test adapter.
 - Event-master memiliki dry-run, validation, atomic publish, versioning, dan
   audit. Durasi jadwal bersifat provisional dan dapat disunting admin.
@@ -205,7 +211,7 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:
 - UI memakai `Pixel Matchday Arcade` yang tetap mobile-first 430 px: Plus
   Jakarta Sans, Feather-style icons, stepped geometry, hard shadow, quest/HUD
   hierarchy, state feedback, dan motion yang menghormati reduced-motion.
-- Public visual regression lulus 49/49 pada enam route dan viewport 320, 390,
+- Public visual regression lulus 50/50 pada enam route dan viewport 320, 390,
   430, serta 1440 px; matriks memeriksa overflow teks, collision sibling,
   clearance navigasi, touch target, reduced motion, dan axe WCAG.
 - Agenda publik/peserta memakai tiga track: waktu mulai, informasi lomba, dan
@@ -215,6 +221,10 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:
 - Timeline resmi pada halaman Info memisahkan judul/status dari deskripsi,
   memakai padding dan gap antarkartu yang konsisten, serta memberi jarak aman
   sebelum peringatan keselamatan.
+- Standing resmi memuat accordion riwayat untuk seluruh 10 lomba. Podium Juara
+  1/2/3 muncul hanya setelah hasil dipublikasikan atau dikoreksi admin; halaman
+  menyegarkan hasil setiap 12 detik serta saat focus, visibility, dan koneksi
+  kembali aktif.
 - Master recap 2026 berisi 8 tim, 10 lomba, jadwal provisional, mekanisme,
   safety, equipment, dan assignment panitia.
 - Database-backed auth aktif melalui Vercel: real credential login dan forced

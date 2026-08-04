@@ -12,6 +12,25 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-04
 
+### AOGTICVITY official winner history production
+
+- Ringkasan: menambahkan riwayat Juara 1/2/3 untuk setiap lomba pada Standing
+  resmi, dengan 10 accordion, corrected marker, dan pending empty state.
+- Alasan: keputusan founder agar agregat standing dapat ditelusuri ke pemenang
+  masing-masing lomba tanpa mengekspos draft operator.
+- Produk/area terdampak: Standing public/player, result read model, refresh
+  recovery, Vercel, Hostinger, acceptance UI, dan knowledge publik.
+- Klasifikasi: `CONFIRMED`; sumber Andreas/founder; source
+  `2590f69d3ac609f6f92d3badb1343ad55f1a239c`, Hostinger
+  `20260804T061230Z`, Vercel `dpl_e3nqmA7PoXHxfRuBiLLUwvzuUtoz`, status
+  `PRODUCTION_DEPLOYED`.
+- Gate: 108 tests, Playwright 50/50, typecheck/build/audit, readiness, exact
+  source, public 390 px render, dan zero horizontal overflow lulus.
+- Production berubah: ya, UI/read refresh Standing saja. Schema, data, auth,
+  permission, activation, dan business readiness tidak berubah. File knowledge:
+  product, dossier, changelog AOGTICVITY, master, decision, portfolio/root
+  changelog, dan sync status.
+
 ### AOGTICVITY Info timeline spacing production
 
 - Ringkasan: memberi padding 14 px, gap 12 px, deskripsi full-width, dan jarak

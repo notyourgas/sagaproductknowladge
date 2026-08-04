@@ -12,13 +12,13 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-04T12:57:52+07:00 |
+| Waktu pembaruan terakhir | 2026-08-04T13:17:03+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `34bf2c8298f6267c8ee5a54316f59c690f684705` |
-| Informasi terakhir disinkronkan | AOGTICVITY source `63fbb593236eff1bcbdb19b3383c591efe263e08`, Hostinger `20260804T055431Z`, dan Vercel `dpl_Bw3VAk3xYqXAsnESS7HF6L9BnEPu` melonggarkan timeline resmi halaman Info. |
+| Baseline sebelum pembaruan | `33a941072fa1d7fa3762a61166dfe3555076e152` |
+| Informasi terakhir disinkronkan | AOGTICVITY source `2590f69d3ac609f6f92d3badb1343ad55f1a239c`, Hostinger `20260804T061230Z`, dan Vercel `dpl_e3nqmA7PoXHxfRuBiLLUwvzuUtoz` menambahkan riwayat pemenang per lomba pada Standing resmi. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada; perubahan hanya presentasi timeline Info dan tidak mengubah data atau workflow. |
+| Konflik | Tidak ada; Standing hanya membaca hasil resmi yang sudah ada dan tidak mengubah workflow scoring. |
 | Error | Tidak ada pada release; authenticated multi-device UAT dan rehearsal AOGTICVITY masih diperlukan untuk business readiness. |
 
 ## File yang berubah pada sinkronisasi ini

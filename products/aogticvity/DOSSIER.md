@@ -73,6 +73,12 @@ Timeline resmi halaman Info memakai kartu milestone dengan padding 14 px dan
 gap 12 px. Judul/status berada pada baris pertama, deskripsi memakai lebar penuh
 di bawahnya, dan peringatan keselamatan terpisah 16 px. Acceptance suite kini
 mencakup 49 Playwright checks termasuk geometry khusus 320 px.
+Standing resmi sekarang mempunyai riwayat pemenang berbentuk accordion untuk
+seluruh 10 lomba. Hanya result `Published`/`Corrected` yang menampilkan podium
+Juara 1/2/3; `Draft` tidak masuk endpoint publik dan lomba yang belum selesai
+memakai empty state. Public/player refresh setiap 12 detik serta saat focus,
+visibility, dan reconnect. Acceptance suite kini mencakup 50 Playwright checks,
+termasuk podium mocked, pending state, geometry 320 px, dan public smoke 390 px.
 
 Taxonomy komunitas final mempunyai dua kategori utama: `TEEN` dengan enam
 subcategory `CG teen`, dan `SOUTH, WEST, CENTRAL` dengan delapan subcategory

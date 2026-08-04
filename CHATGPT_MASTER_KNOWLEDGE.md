@@ -480,6 +480,12 @@ Source UI `63fbb593236eff1bcbdb19b3383c591efe263e08`, Hostinger
 melonggarkan timeline resmi halaman Info. Setiap milestone memakai inset 14 px,
 gap 12 px, deskripsi full-width, dan jarak 16 px ke panel keselamatan; data,
 auth, permission, dan workflow tidak berubah.
+Source UI `2590f69d3ac609f6f92d3badb1343ad55f1a239c`, Hostinger
+`20260804T061230Z`, dan Vercel `dpl_e3nqmA7PoXHxfRuBiLLUwvzuUtoz`
+menambahkan riwayat pemenang pada Standing resmi. Seluruh 10 lomba tersedia
+sebagai accordion; hanya `Published`/`Corrected` yang menampilkan Juara 1/2/3,
+sementara draft tetap privat dan hasil yang belum tersedia memakai empty state.
+Public/player refresh 12 detik serta pulih saat focus/visibility/reconnect.
 Ini adalah nama terbaru project 17an/Olimpiade Kemerdekaan.
 
 Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:

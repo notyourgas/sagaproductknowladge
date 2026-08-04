@@ -8,6 +8,21 @@ Mencatat perubahan material AOGTICVITY/17an/Olimpiade.
 
 Nama lama dipertahankan sebagai provenance; status runtime harus eksplisit.
 
+## 2026-08-04 - Official winner history production
+
+- `CONFIRMED`: Standing resmi kini memuat accordion riwayat untuk seluruh 10
+  lomba, lengkap dengan Juara 1/2/3 ketika hasil sudah resmi.
+- Endpoint publik hanya mengirim `Published`/`Corrected`; `Draft` tersembunyi,
+  status koreksi ditandai, dan lomba tanpa hasil memakai empty state jujur.
+- Public/player melakukan refresh 12 detik plus focus/visibility/reconnect.
+- Source `2590f69d3ac609f6f92d3badb1343ad55f1a239c`; Hostinger
+  `20260804T061230Z`; Vercel `dpl_e3nqmA7PoXHxfRuBiLLUwvzuUtoz`; tanpa
+  migration data/schema dan tanpa penambahan fixture produksi.
+- Gate: 108 tests, Playwright 50/50, typecheck/build/audit, readiness, exact
+  source, public render 390 px, serta zero horizontal overflow lulus.
+- Delivery `PRODUCTION_DEPLOYED`; activation dan business readiness keseluruhan
+  tidak berubah.
+
 ## 2026-08-04 - Info timeline spacing production
 
 - `CONFIRMED`: timeline resmi halaman Info kini memakai padding milestone
