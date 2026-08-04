@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-04 - SagaBook Review release-gate fixture recovery
+
+- `CONFIRMED`: blocker backend S102 berasal dari dua fixture sesi absolut yang
+  melewati retensi link 30 hari, bukan dari endpoint settings atau perubahan
+  expiry production. Fixture kini memakai tanggal relatif.
+- Source kumulatif `621a74a006316b9e4cd2135a4b4d34a824c0604f` pada
+  `codex/s103-manual-transfer-fixture`; focused 2/2, backend 960/960, storefront
+  114 test terjadwal exit 0, build, design 26/0, dan npm audit nol vulnerability.
+- Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`, belum
+  `STAGING_READY`: feed advisory Packagist timeout dan release-safety receipt
+  exact S103 belum tersedia. Production tetap `d70fc1e0` /
+  `20260803194351-d70fc1e`; empat public smoke 200 dan kontrak produk lain tidak
+  berubah.
+
 ## 2026-08-04 - SagaBook Review direct-return candidate
 
 - `CONFIRMED`: enam jalur `Ubah` pada Review sekarang dapat kembali langsung

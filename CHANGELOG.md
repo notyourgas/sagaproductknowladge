@@ -12,6 +12,28 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-04
 
+### SagaBook Review release-gate fixture recovery
+
+- Ringkasan: menutup dua kegagalan 410 pada full backend S102 dengan membuat
+  fixture sesi mengikuti waktu tes.
+- Alasan: tanggal absolut melewati retensi link customer 30 hari; endpoint
+  settings dan expiry production sebenarnya benar.
+- Produk/area terdampak: acceptance storefront, booking-status/manual transfer,
+  add-on catalog, release evidence, dan fixture waktu; runtime tidak berubah.
+- Klasifikasi: `CONFIRMED`; source
+  `621a74a006316b9e4cd2135a4b4d34a824c0604f`, branch
+  `codex/s103-manual-transfer-fixture`, delivery
+  `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; belum `STAGING_READY`.
+- Gate hijau: red-green 2/2 dan 67 assertion; backend 960/960 dan 11.007
+  assertion; storefront 114 test terjadwal exit 0; build; design 26/0; npm
+  audit nol vulnerability; Pint; a11y; dua viewport; satu watermark non-fixed.
+- Blocker: Packagist timeout sehingga advisory feed Composer belum segar;
+  release-safety receipt exact S103 dan approval juga belum tersedia.
+- Production berubah: tidak. Runtime tetap `d70fc1e0` /
+  `20260803194351-d70fc1e`, rollback `20260803132556-cfb2af8`; empat public
+  smoke 200. Payment/provider, tenant isolation, preset, SagaView, activation,
+  dan business readiness tidak berubah.
+
 ### SagaBook Review correction direct-return candidate
 
 - Ringkasan: enam jalur `Ubah` pada Review storefront sekarang mempunyai loop

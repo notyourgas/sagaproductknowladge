@@ -4,6 +4,28 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-04 - Review release-gate fixture recovery
+
+- Klasifikasi: `CONFIRMED`; delivery
+  `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Source kumulatif
+  `621a74a006316b9e4cd2135a4b4d34a824c0604f` tersedia pada branch
+  `codex/s103-manual-transfer-fixture`; belum `STAGING_READY`.
+- Before: dua tes booking-status mulai menerima 410 ketika tanggal sesi absolut
+  melewati retensi link 30 hari, sehingga full backend berhenti pada 959/960.
+  After: fixture memakai tanggal sesi relatif dan kontrak expiry production
+  tetap utuh.
+- Gate: red-green focused 2/2 dengan 67 assertion; backend 960/960 dengan
+  11.007 assertion; storefront 114 test terjadwal exit 0; build; design 26/0;
+  npm audit nol vulnerability; Pint; dua viewport; a11y dan watermark lulus.
+- Composer cache tidak menemukan advisory, tetapi Packagist timeout sehingga
+  verifikasi advisory segar belum tersedia. Release-safety receipt exact S103
+  dan approval juga belum tersedia; deployment tidak dijalankan.
+- Production tidak berubah: source `d70fc1e0d922eed86fe4ea4998688aad32c68c43`,
+  release `20260803194351-d70fc1e`, rollback
+  `20260803132556-cfb2af8`; empat public smoke 200. Booking/payment/provider,
+  permission, tenant isolation, preset, SagaView, activation, dan business
+  readiness tidak berubah.
+
 ## 2026-08-04 - Review correction direct-return candidate
 
 - Klasifikasi: `CONFIRMED`; delivery
