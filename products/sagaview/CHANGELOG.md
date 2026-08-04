@@ -4,6 +4,32 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-08-05 - Sidebar deep-route compact candidate
+
+- Klasifikasi: `CONFIRMED` sebagai candidate, bukan production.
+- Status: `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
+- Before: pada Windows 1280x720, `/admin/install` aktif tetapi item Install App
+  berada di luar area sidebar yang terlihat; operator kehilangan konteks route
+  sampai menggulir manual.
+- After: sidebar desktop mengikuti `aria-current=page` memakai scroll `nearest`,
+  menghormati reduced-motion, dan tetap menyerahkan fokus route ke konten utama.
+  Mobile 390x844 serta MacBook/monitor lebar mempertahankan mekanisme lama.
+- Source `7ad38ef2b97c01101af02f4fc5a24d9211c2c6de` pada branch
+  `codex/s110-sagaview-compact-sidebar`. Validation: red 1/1 gagal, green
+  focused 6/6, format/lint/typecheck, unit 156/156, build/SSR, budget 288,3 KiB
+  dari 450 KiB, full E2E 105/105 termasuk import 50/200/500, dan npm audit nol.
+- Matriks 390x844, 1280x720, 1440x900, 1512x982, dan 2560x1440 memverifikasi
+  route aktif terlihat, target 44 piksel, keyboard focus, forced-colors,
+  reduced-motion, no-overflow, serta satu `Powered by SagaView` non-fixed.
+- Production tetap Studio source
+  `57c0337b43b46229253ce89ace39f2ed587fc2d7`, release
+  `20260803221207-57c0337`, rollback `20260803215526-be72510`; endpoint Session
+  dan Install merespons 200 dengan masing-masing satu HSTS, CSP, dan XFO.
+- Blocker deploy: fresh encrypted backup/checksum/disposable restore yang
+  terikat exact S110 dan approval produksi belum tersedia. Device/session,
+  foto/local-first, tenant, payment, frame, output 4R, dan business readiness
+  tidak berubah.
+
 ## 2026-08-04 - Focus recovery navigasi Studio candidate
 
 - Klasifikasi: `CONFIRMED` sebagai candidate, bukan production.

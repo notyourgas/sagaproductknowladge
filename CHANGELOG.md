@@ -12,6 +12,26 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-05
 
+### SagaView sidebar deep-route compact candidate
+
+- Ringkasan: sidebar desktop Studio sekarang otomatis membawa route aktif ke
+  area terlihat pada laptop compact, tanpa mengambil fokus dari konten route.
+- Alasan: pada 1280x720, Install App aktif tetapi tersembunyi di bawah viewport
+  sidebar sehingga operator kehilangan konteks navigasi.
+- Produk/area terdampak: Studio Admin shell, sidebar, deep-route Install App,
+  keyboard/focus, reduced-motion, forced-colors, responsivitas, visual QA,
+  provenance, dan release evidence. Kontrak bisnis tidak berubah.
+- Klasifikasi: `CONFIRMED`; source
+  `7ad38ef2b97c01101af02f4fc5a24d9211c2c6de`, branch
+  `codex/s110-sagaview-compact-sidebar`, delivery
+  `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: red 1/1 gagal menjadi focused 6/6; format/lint/typecheck; unit 156/156;
+  full E2E 105/105; build/budget; npm audit nol; lima viewport; 44 piksel;
+  keyboard, forced-colors, reduced-motion, no-overflow, dan satu watermark.
+- Production berubah: tidak. Runtime tetap `57c0337b` /
+  `20260803221207-57c0337`, rollback `20260803215526-be72510`; blocker adalah
+  release-safety receipt exact S110 dan approval.
+
 ### AOGTICVITY technical finalization gates production
 
 - Ringkasan: release menambahkan automated production-domain/security/mobile/

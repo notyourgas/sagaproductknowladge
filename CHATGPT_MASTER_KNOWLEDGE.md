@@ -471,6 +471,17 @@ build, visual exact 390x844 dan 1440x900, serta audit 0. Statusnya
 approval deploy tersedia. Tepat satu watermark non-fixed tetap dijaga dan
 tidak masuk artefak bisnis.
 
+Candidate Studio terbaru `7ad38ef` menutup gap sidebar deep-route pada Windows
+compact: route Install App yang aktif tetapi tersembunyi pada 1280x720 kini
+otomatis dibawa ke area terlihat dengan scroll `nearest` dan reduced-motion,
+tanpa mengambil fokus dari konten utama. Matriks 390x844, 1280x720, 1440x900,
+1512x982, dan 2560x1440 lulus; red 1/1 menjadi focused 6/6, unit 156/156, full
+E2E 105/105 termasuk import 50/200/500, build/budget, forced-colors,
+no-overflow, target 44 piksel, satu watermark, dan npm audit nol lulus. Status
+`LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`; production tetap
+Studio `57c0337b` / `20260803221207-57c0337` sampai release-safety exact S110
+dan approval tersedia.
+
 Candidate Saga Platform `dcb5a3f3` menyiapkan signup SagaView auto-trial 7 hari
 tanpa approval owner/email verification. Login tetap menunggu provisioning
 ready dan device tetap diaktivasi dari aplikasi studio. Statusnya

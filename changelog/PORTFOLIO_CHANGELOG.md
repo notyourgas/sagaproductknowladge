@@ -1,5 +1,22 @@
 # Portfolio Changelog
 
+## 2026-08-05 - SagaView sidebar deep-route compact candidate
+
+- `CONFIRMED`: pada Windows 1280x720, route Install App yang aktif tetapi
+  tersembunyi kini otomatis dibawa ke area sidebar terlihat dengan scroll
+  `nearest`, tanpa mengambil fokus dari konten utama.
+- Source kumulatif `7ad38ef2b97c01101af02f4fc5a24d9211c2c6de` pada
+  `codex/s110-sagaview-compact-sidebar`; red 1/1 menjadi focused 6/6, unit
+  156/156, full E2E 105/105, build/budget, dan npm audit nol.
+- Matriks 390x844, 1280x720, 1440x900, 1512x982, dan 2560x1440 menjaga route
+  aktif terlihat, 44 piksel, keyboard/focus, forced-colors, reduced-motion,
+  no-overflow, serta satu `Powered by SagaView`.
+- Delivery `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
+  Production tetap `57c0337b` / `20260803221207-57c0337`; blocker adalah
+  backup/checksum/disposable restore exact S110 dan approval. Device/session,
+  foto, tenant, payment, output 4R, activation, dan business readiness tidak
+  berubah.
+
 ## 2026-08-05 - AOGTICVITY technical finalization gates production
 
 - `CONFIRMED`: production-domain, role/security boundary, mobile/WCAG,

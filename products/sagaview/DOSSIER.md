@@ -106,6 +106,16 @@ Production belum berubah karena backup/restore exact candidate dan approval
 deploy belum tersedia; status ini tidak mengubah device/session, foto,
 permission, local-first, frame, payment, atau output 4R.
 
+Candidate sidebar deep-route memperbaiki konteks navigasi pada laptop Windows
+compact. Sebelumnya `/admin/install` aktif pada 1280x720 tetapi item Install App
+berada di bawah area sidebar yang terlihat. Source kumulatif `7ad38ef` kini
+menjalankan scroll `nearest` ke route aktif, tanpa mengambil fokus dari konten
+utama dan dengan reduced-motion. Regression mencakup 390x844, 1280x720,
+1440x900, 1512x982, dan 2560x1440; focused 6/6, unit 156/156, full E2E 105/105,
+build/budget, forced-colors, no-overflow, target 44 piksel, satu watermark, dan
+dependency audit nol lulus. Production belum berubah karena receipt
+backup/restore exact S110 dan approval belum tersedia.
+
 ## Fitur MVP
 
 `CONFIRMED`: journey Studio, output 4R, completion/privacy handoff,

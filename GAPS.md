@@ -8,7 +8,7 @@ diubah menjadi klaim publik sebelum ditutup dengan bukti atau keputusan owner.
 
 ## Konteks
 
-Daftar ini berlaku pada evidence cut-off 4 Agustus 2026 dan harus diperbarui
+Daftar ini berlaku pada evidence cut-off 5 Agustus 2026 dan harus diperbarui
 ketika keputusan atau release baru menutup gap.
 
 ## Cara memakai
@@ -195,6 +195,14 @@ ketika keputusan atau release baru menutup gap.
   rollback proof, serta public smoke exact source.
 
 ### SagaView
+
+- `BLOCKED`: candidate sidebar deep-route source `7ad38ef` lulus red-green,
+  focused 6/6, unit 156/156, full E2E 105/105, build/budget, audit dependency,
+  serta matriks 390x844 sampai 2560x1440. Production tetap `57c0337b` /
+  `20260803221207-57c0337`. Bukti penutup adalah encrypted backup, checksum,
+  disposable restore dan migration preflight yang terikat exact S110, approval,
+  immutable release, service/header/journal, rollback proof, serta public smoke
+  exact source.
 
 - `CONFIRMED`: limit Growth/Pro, trial guardrail, cloud frame storage,
   local-photo boundary, retention, offboarding, dan support SLA sudah

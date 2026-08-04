@@ -349,6 +349,24 @@ Kontrak ini sekarang enforced server-side pada runtime production yang aktif.
 - production tetap source `57c0337b`, release `20260803221207-57c0337` sampai
   fresh backup/restore exact candidate dan approval deploy tersedia.
 
+## Sidebar deep-route lintas layar
+
+`CONFIRMED` - candidate `IMPLEMENTED_NOT_DEPLOYED`:
+
+- pada Windows compact 1280x720, route dalam seperti Install App sebelumnya
+  aktif tetapi berada di luar area sidebar yang terlihat;
+- source kumulatif `7ad38ef2b97c01101af02f4fc5a24d9211c2c6de` membuat sidebar desktop
+  mengikuti route aktif dengan scroll `nearest`, menghormati reduced-motion,
+  dan tidak memindahkan fokus operator dari konten utama;
+- mobile 390x844, Windows 1280x720, MacBook 1440x900/1512x982, serta monitor
+  QHD 2560x1440 menjaga route aktif terlihat, target 44 piksel, keyboard focus,
+  no-overflow, forced-colors, dan tepat satu `Powered by SagaView`;
+- red proof 1/1 gagal berubah menjadi focused 6/6 lulus; format, lint,
+  typecheck, unit 156/156, full E2E 105/105 termasuk import 50/200/500,
+  build/budget, dan npm audit nol lulus;
+- production tetap source `57c0337b`, release `20260803221207-57c0337` sampai
+  fresh backup/restore exact S110 dan approval deploy tersedia.
+
 ## Status saat ini
 
 - Delivery: `PRODUCTION_DEPLOYED`.
