@@ -7,10 +7,12 @@ SagaView berdasarkan runtime production aktif.
 
 ## Konteks dan status bukti
 
-- Updated: 3 Agustus 2026
+- Updated: 4 Agustus 2026
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED`
 - Business readiness: `NEEDS CONFIRMATION` untuk penjualan massal
+- Candidate UI terbaru: `LOCAL_VALIDATED / STAGING_READY /
+  IMPLEMENTED_NOT_DEPLOYED`
 
 ## Overview produk
 
@@ -92,6 +94,14 @@ tanpa foto, PII customer, identitas tenant/device, credential, token, atau path
 file. Endpoint online baru dicoba setelah aksi operator dan kegagalan 404 tidak
 lagi menghilangkan fallback. Panel touch-safe, aksesibel, bebas overflow, dan
 tidak menutupi signature produk pada mobile/desktop.
+
+Changelog Studio candidate sekarang mengutamakan release terbaru, menyediakan
+pencarian, filter status, enam batch versi, satu detail terbuka, empty/reset
+recovery, dan CTA kembali ke Session. Source `e28422f9` lulus 156 unit, 98 E2E,
+import 50/200/500, build, accessibility, visual dua viewport, dan audit 0.
+Production belum berubah karena backup/restore exact candidate dan approval
+deploy belum tersedia; status ini tidak mengubah device/session, foto,
+permission, local-first, frame, payment, atau output 4R.
 
 ## Fitur MVP
 

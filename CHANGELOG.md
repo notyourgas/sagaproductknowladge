@@ -12,6 +12,27 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-04
 
+### SagaView Changelog navigation candidate
+
+- Ringkasan: mengganti daftar 47 release yang seluruh detailnya terbuka menjadi
+  workspace Changelog dengan hierarchy release terbaru, pencarian, filter
+  status, enam batch versi, satu detail terbuka, empty/reset recovery, dan satu
+  jalur kembali ke Session.
+- Produk/area terdampak: Studio Console route `/admin/changelog`, navigasi,
+  hierarchy, responsive layout, accessibility, dan release evidence.
+- Klasifikasi: `CONFIRMED`; candidate source
+  `e28422f9daafb1ff27bb0421bebcb285b63cd56c` pada branch
+  `codex/s96-studio-nav-flow`, status
+  `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: focused 3/3, 156/156 unit, 98/98 E2E termasuk import 50/200/500,
+  format/lint/typecheck/build/bundle budget, Axe, forced-colors, reduced-motion,
+  dua viewport, dan npm audit nol vulnerability lulus.
+- Production berubah: tidak. Studio tetap source `57c0337b`, release
+  `20260803221207-57c0337`, rollback `20260803215526-be72510`; deploy ditahan
+  sampai fresh encrypted backup/checksum/disposable restore exact candidate dan
+  approval tersedia. Device/session, foto, frame, output 4R, payment,
+  permission, activation, dan business readiness tidak berubah.
+
 ### SagaBook landscape tablet storefront candidate
 
 - Ringkasan: memperluas shell storefront booking tenant menjadi dua kolom pada

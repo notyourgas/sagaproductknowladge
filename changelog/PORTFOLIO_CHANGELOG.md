@@ -1,5 +1,21 @@
 # Portfolio Changelog
 
+## 2026-08-04 - SagaView Changelog navigation candidate
+
+- `CONFIRMED`: route Studio Changelog kini memiliki latest-release hierarchy,
+  pencarian, filter All/Production/Ready/Historical, enam batch versi, satu
+  detail terbuka, empty/reset recovery, dan CTA 48 px kembali ke Session.
+- Candidate `e28422f9daafb1ff27bb0421bebcb285b63cd56c` pada
+  `codex/s96-studio-nav-flow` lulus focused 3/3, unit 156/156, E2E 98/98,
+  import 50/200/500, build/budget, Axe, visual dua viewport, dan audit 0.
+- Delivery `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
+  Production tetap Studio `57c0337b` / `20260803221207-57c0337`; blocker
+  deploy adalah fresh backup/checksum/disposable restore exact candidate dan
+  approval eksekusi.
+- Tepat satu `Powered by SagaView` tetap non-fixed dan di luar output bisnis.
+  Device/session, foto, permission, frame, output 4R, payment, activation, dan
+  business readiness tidak berubah.
+
 ## 2026-08-04 - SagaBook landscape tablet storefront candidate
 
 - `CONFIRMED`: seluruh lima storefront booking tenant kini memakai canvas dua

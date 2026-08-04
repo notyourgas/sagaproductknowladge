@@ -1,7 +1,8 @@
 # SagaView Product Knowledge
 
-Updated: 3 Agustus 2026
-Evidence status: production deployed + production activated
+Updated: 4 Agustus 2026
+Evidence status: production deployed + production activated; Changelog
+navigation candidate implemented not deployed
 
 ## Tujuan dokumen
 
@@ -327,6 +328,22 @@ Kontrak ini sekarang enforced server-side pada runtime production yang aktif.
   audit dan npm audit production sama-sama melaporkan nol vulnerability;
 - backend source `b504dae30aee90a2b55e1e670d1934e2fc524218`, Studio source
   `57c0337b43b46229253ce89ace39f2ed587fc2d7`.
+
+## Navigasi Changelog operasional
+
+`CONFIRMED` - candidate `IMPLEMENTED_NOT_DEPLOYED`:
+
+- route `/admin/changelog` mengganti 47 detail release yang seluruhnya terbuka
+  dengan latest-release hierarchy, pencarian versi/perubahan, empat filter,
+  enam batch versi, dan hanya satu detail terbuka;
+- filtered-empty menyediakan reset, sedangkan CTA 48 px memberi satu jalur
+  dominan kembali ke Session;
+- 390x844 dan 1440x900 bebas overflow; keyboard, focus, Axe, forced-colors,
+  reduced-motion, dan tepat satu footer `Powered by SagaView` tervalidasi;
+- source `e28422f9daafb1ff27bb0421bebcb285b63cd56c` lulus focused 3/3,
+  unit 156/156, E2E 98/98 termasuk import 50/200/500, build/budget, dan audit 0;
+- production tetap source `57c0337b`, release `20260803221207-57c0337` sampai
+  fresh backup/restore exact candidate dan approval deploy tersedia.
 
 ## Status saat ini
 

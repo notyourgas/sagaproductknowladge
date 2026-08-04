@@ -4,6 +4,34 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-08-04 - Navigasi Changelog operasional candidate
+
+- Klasifikasi: `CONFIRMED` sebagai candidate, bukan production.
+- Status: `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
+- Before: 47 release dan seluruh detail terbuka sekaligus, tanpa pencarian,
+  filter, pembagian batch, empty recovery, atau jalur dominan kembali ke
+  Session; halaman sangat panjang pada mobile dan desktop.
+- After: release terbaru mendapat hierarchy utama, status bundle/offline tetap
+  jujur, pencarian mencakup versi dan teks perubahan, filter memisahkan
+  All/Production/Ready/Historical, enam batch membatasi kepadatan, hanya satu
+  detail dapat dibuka, filtered-empty menyediakan reset, dan CTA 48 px kembali
+  ke Session.
+- Source `e28422f9daafb1ff27bb0421bebcb285b63cd56c` pada branch
+  `codex/s96-studio-nav-flow`. Validation: focused 3/3, 156/156 unit, 98/98 E2E
+  termasuk import 50/200/500, format/lint/typecheck/build, bundle budget 288,3
+  KiB dari batas 450 KiB, Axe, forced-colors, reduced-motion, no-overflow
+  390x844 dan 1440x900, serta npm audit nol vulnerability.
+- Production tetap Studio source
+  `57c0337b43b46229253ce89ace39f2ed587fc2d7`, release
+  `20260803221207-57c0337`, rollback `20260803215526-be72510`; backend tetap
+  `b504dae30aee90a2b55e1e670d1934e2fc524218`, release
+  `20260803221207-b504dae`.
+- Blocker deploy: fresh encrypted backup/checksum/disposable restore yang
+  terikat exact candidate dan approval eksekusi belum tersedia.
+- Tepat satu `Powered by SagaView` tetap non-fixed dan tidak masuk foto,
+  export, print, invoice, atau receipt. Device/session, permission, local-first,
+  tenant isolation, payment, frame, serta output 4R tidak berubah.
+
 ## 2026-08-04 - Signature login, dependency patch, dan watermark tunggal production
 
 - Klasifikasi: `CONFIRMED`.
