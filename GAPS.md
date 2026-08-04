@@ -196,11 +196,12 @@ ketika keputusan atau release baru menutup gap.
 
 ### SagaView
 
-- `BLOCKED`: candidate sidebar deep-route source `7ad38ef` lulus red-green,
-  focused 6/6, unit 156/156, full E2E 105/105, build/budget, audit dependency,
-  serta matriks 390x844 sampai 2560x1440. Production tetap `57c0337b` /
+- `BLOCKED`: candidate dialog PIN zoom source `808470c1` lulus red-green,
+  focused/visual, unit 156/156, full E2E 106 pass/1 capture-only skip,
+  build/budget, audit dependency, serta matriks mobile/laptop/reflow sampai
+  efektif 200 persen. Production tetap `57c0337b` /
   `20260803221207-57c0337`. Bukti penutup adalah encrypted backup, checksum,
-  disposable restore dan migration preflight yang terikat exact S110, approval,
+  disposable restore dan migration preflight yang terikat exact S111, approval,
   immutable release, service/header/journal, rollback proof, serta public smoke
   exact source.
 

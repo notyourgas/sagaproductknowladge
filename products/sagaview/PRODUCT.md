@@ -1,8 +1,8 @@
 # SagaView Product Knowledge
 
-Updated: 4 Agustus 2026
-Evidence status: production deployed + production activated; Changelog
-navigation candidate implemented not deployed
+Updated: 5 Agustus 2026
+Evidence status: production deployed + production activated; dialog PIN zoom
+candidate implemented not deployed
 
 ## Tujuan dokumen
 
@@ -148,6 +148,14 @@ Kontrak ini sekarang enforced server-side pada runtime production yang aktif.
   dan desktop masuk acceptance gate;
 - setiap surface menampilkan tepat satu `Powered by SagaView` yang accessible;
   signature tidak dimasukkan ke export foto, hasil print, invoice, atau receipt.
+
+`CONFIRMED` sebagai candidate, bukan production: source `808470c1` membuat
+dialog PIN override paket dapat dikenali screen reader, menahan fokus, ditutup
+dengan Escape, dan tetap operabel pada reflow laptop efektif 125-200 persen.
+Body dialog dapat discroll tanpa mengeluarkan CTA dari visual viewport; input
+minimal 44 piksel, close/action 48 piksel, serta Axe, forced-colors,
+reduced-motion, no-overflow, dan satu watermark lulus. Production tetap source
+`57c0337b`; deploy menunggu release-safety exact S111 dan approval.
 
 ## Workflow preset, editor, dan review
 

@@ -1,5 +1,22 @@
 # Portfolio Changelog
 
+## 2026-08-05 - SagaView dialog PIN zoom candidate
+
+- `CONFIRMED`: dialog PIN override paket Studio sekarang dikenali screen reader,
+  menahan fokus, mendukung Escape, dan mempertahankan header/footer CTA saat body
+  perlu discroll pada reflow laptop sampai efektif 200 persen.
+- Source kumulatif `808470c1ec3f8ae83f050a2988b7ff8af3b1f3a9` pada
+  `codex/s111-sagaview-zoom-modal`; red 1/1 menjadi focused 1/1, visual 1/1,
+  unit 156/156, full E2E 106 pass/1 capture-only skip, build/budget, Axe,
+  forced-colors, reduced-motion, no-overflow, serta dua npm audit nol.
+- Matriks 390x844, 1280x720, 1440x900, dan reflow efektif 125/150/200 persen
+  menjaga target 44/48 piksel dan tepat satu `Powered by SagaView`.
+- Delivery `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
+  Production tetap `57c0337b` / `20260803221207-57c0337`; blocker adalah
+  backup/checksum/disposable restore exact S111 dan approval. Validasi PIN,
+  device/session, foto, tenant, payment, output 4R, activation, dan business
+  readiness tidak berubah.
+
 ## 2026-08-05 - SagaBio core builder layout families
 
 - `CONFIRMED`: source

@@ -12,6 +12,26 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-05
 
+### SagaView dialog PIN zoom candidate
+
+- Ringkasan: dialog PIN override paket sekarang semantik, keyboard-safe, dan
+  tetap berada dalam visual viewport pada reflow laptop efektif sampai 200%.
+- Alasan: screen reader sebelumnya tidak mengenal gerbang PIN sebagai dialog;
+  layout tanpa scroll internal berisiko memotong kontrol pada viewport pendek.
+- Produk/area terdampak: Studio package override, dialog primitive, focus/ESC,
+  touch target, contrast, responsive/zoom QA, provenance, dan release evidence.
+  Kontrak bisnis tidak berubah.
+- Klasifikasi: `CONFIRMED`; source
+  `808470c1ec3f8ae83f050a2988b7ff8af3b1f3a9`, branch
+  `codex/s111-sagaview-zoom-modal`, delivery
+  `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: red 1/1 gagal menjadi focused 1/1; visual 1/1; unit 156/156; full E2E
+  106 pass/1 capture-only skip; build/budget; Axe; forced-colors;
+  reduced-motion; import 50/200/500; dan npm audit nol.
+- Production berubah: tidak. Runtime tetap `57c0337b` /
+  `20260803221207-57c0337`, rollback `20260803215526-be72510`; blocker adalah
+  release-safety receipt exact S111 dan approval.
+
 ### SagaBio core builder layout families
 
 - Ringkasan: section ordering dan keluarga layout utama kini konsisten dari

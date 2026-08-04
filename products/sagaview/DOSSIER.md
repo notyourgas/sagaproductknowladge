@@ -116,6 +116,17 @@ build/budget, forced-colors, no-overflow, target 44 piksel, satu watermark, dan
 dependency audit nol lulus. Production belum berubah karena receipt
 backup/restore exact S110 dan approval belum tersedia.
 
+Candidate dialog PIN zoom source kumulatif `808470c1` memperbaiki gerbang
+override paket Studio. Dialog sekarang mempunyai nama aksesibel, focus trap,
+Escape, body scroll internal, overlay di atas form asal, input 44 piksel, serta
+close/action 48 piksel. Matriks 390x844, 1280x720, 1440x900, dan reflow efektif
+125/150/200 persen lulus Axe, keyboard/focus, forced-colors, reduced-motion,
+no-overflow, dan satu watermark. Full E2E menghasilkan 106 pass dan satu
+capture-only skip; unit 156/156, build/budget, serta audit dependency nol.
+Production belum berubah karena receipt backup/restore exact S111 dan approval
+belum tersedia; validasi PIN dan kontrak device/session, foto, tenant, payment,
+frame, serta output 4R tidak berubah.
+
 ## Fitur MVP
 
 `CONFIRMED`: journey Studio, output 4R, completion/privacy handoff,

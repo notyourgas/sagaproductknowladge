@@ -482,6 +482,16 @@ no-overflow, target 44 piksel, satu watermark, dan npm audit nol lulus. Status
 Studio `57c0337b` / `20260803221207-57c0337` sampai release-safety exact S110
 dan approval tersedia.
 
+Candidate Studio terbaru berikutnya `808470c1` menutup gap dialog PIN pada
+override paket: dialog memiliki nama aksesibel, focus trap, Escape, scroll body
+internal, serta target input/action 44/48 piksel. Matriks 390x844, 1280x720,
+1440x900, dan reflow efektif 125/150/200 persen lulus Axe, forced-colors,
+reduced-motion, no-overflow, satu watermark, 156 unit, 106 E2E pass dengan satu
+capture-only skip, build/budget, serta audit nol. Status
+`LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`; production tetap
+Studio `57c0337b` / `20260803221207-57c0337` sampai release-safety exact S111
+dan approval tersedia. Validasi PIN dan kontrak bisnis tidak berubah.
+
 Candidate Saga Platform `dcb5a3f3` menyiapkan signup SagaView auto-trial 7 hari
 tanpa approval owner/email verification. Login tetap menunggu provisioning
 ready dan device tetap diaktivasi dari aplikasi studio. Statusnya

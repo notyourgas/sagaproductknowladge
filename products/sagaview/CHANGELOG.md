@@ -4,6 +4,37 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-08-05 - Dialog PIN aman pada zoom laptop candidate
+
+- Klasifikasi: `CONFIRMED` sebagai candidate, bukan production.
+- Status: `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
+- Before: gerbang PIN untuk override paket tidak mempunyai semantik dialog dan
+  nama aksesibel. Pada reflow laptop setara zoom 200%, struktur tanpa batas
+  tinggi/scroll internal juga berisiko memotong kontrol penting.
+- After: dialog memakai primitive aksesibel dengan focus trap dan Escape,
+  header/body/footer terpisah, body dapat discroll dalam visual viewport,
+  overlay tetap di atas form override, input 44 piksel, serta close/action 48
+  piksel. Kontras teks bantuan yang ditemukan Axe juga diperbaiki.
+- Source `808470c1ec3f8ae83f050a2988b7ff8af3b1f3a9` pada branch
+  `codex/s111-sagaview-zoom-modal`. Validation: red 1/1 gagal menjadi focused
+  1/1 hijau; visual capture 1/1; format/lint/typecheck; unit 156/156; build/SSR;
+  budget 288,3 KiB dari 450 KiB; full E2E 106 pass dan 1 capture-only skip,
+  termasuk import 50/200/500; npm audit normal dan production-only nol.
+- Matriks 390x844, 1280x720, 1440x900, serta reflow efektif 125%, 150%, dan
+  200% memverifikasi dialog tetap dalam viewport, no-overflow, keyboard/focus,
+  Axe, forced-colors, reduced-motion, dan tepat satu `Powered by SagaView` pada
+  surface Studio.
+- Production tetap Studio source
+  `57c0337b43b46229253ce89ace39f2ed587fc2d7`, release
+  `20260803221207-57c0337`, rollback `20260803215526-be72510`; backend tetap
+  `b504dae30aee90a2b55e1e670d1934e2fc524218`, release
+  `20260803221207-b504dae`. Session dan Install merespons 200 dengan HSTS, CSP,
+  dan XFO.
+- Blocker deploy: fresh encrypted backup/checksum/disposable restore yang
+  terikat exact S111 dan approval produksi belum tersedia. Validasi PIN,
+  device/session, foto/local-first, tenant, payment, frame, output 4R,
+  activation, dan business readiness tidak berubah.
+
 ## 2026-08-05 - Sidebar deep-route compact candidate
 
 - Klasifikasi: `CONFIRMED` sebagai candidate, bukan production.
