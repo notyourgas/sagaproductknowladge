@@ -1,5 +1,21 @@
 # Portfolio Changelog
 
+## 2026-08-04 - SagaBook storefront clipboard recovery candidate
+
+- `CONFIRMED`: storefront unpublished tidak lagi mengaku berhasil sebelum
+  Clipboard API benar-benar selesai. Kegagalan menampilkan alert, kolom
+  readonly yang otomatis fokus/terseleksi, dan retry 44 piksel; sukses memiliki
+  status screen reader. Jalur ikon header duplikat disembunyikan pada state ini.
+- Source `07dda6424f0e935484b25a378f343a7cbfa94f3b` pada
+  `codex/s99-storefront-copy-recovery`; focused 1/1 pada dua viewport,
+  storefront 104 pass/4 expected skip, backend 960/960, build, a11y/design,
+  serta audit dependency 0.
+- Delivery `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
+  Production tetap `d70fc1e0` / `20260803194351-d70fc1e`; blocker adalah
+  release-safety exact S99 dan approval. Booking/payment/availability, tenant
+  isolation, preset, SagaView, activation, dan business readiness tidak
+  berubah.
+
 ## 2026-08-04 - SagaBook storefront availability recovery candidate
 
 - `CONFIRMED`: error availability storefront kini dibedakan dari tanggal

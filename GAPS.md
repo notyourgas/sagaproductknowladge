@@ -126,6 +126,12 @@ ketika keputusan atau release baru menutup gap.
   `20260803194351-d70fc1e`. Bukti penutup adalah backup/checksum/disposable
   restore, migration preflight, approval, immutable release, service/journal,
   rollback proof, dan public smoke yang semuanya terikat exact S98.
+- `BLOCKED`: candidate recovery clipboard storefront source `07dda642` lulus
+  focused dua viewport, storefront 104 pass/4 expected skip, backend 960/960,
+  build, a11y/design, dan audit dependency; production tetap `d70fc1e0` /
+  `20260803194351-d70fc1e`. Bukti penutup adalah backup/checksum/disposable
+  restore, migration preflight, approval, immutable release, service/journal,
+  rollback proof, dan public smoke yang semuanya terikat exact S99.
 
 ### SagaView
 

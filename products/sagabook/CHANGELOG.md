@@ -4,6 +4,31 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-04 - Storefront clipboard recovery candidate
+
+- Klasifikasi: `CONFIRMED`; delivery
+  `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`. Candidate
+  source `07dda6424f0e935484b25a378f343a7cbfa94f3b` tersedia pada branch
+  `codex/s99-storefront-copy-recovery`.
+- Before: CTA `Salin template bantuan` langsung berubah menjadi `Template
+  tersalin` tanpa menunggu Clipboard API dan tanpa menangani reject/unavailable;
+  ikon header memberi jalur sukses palsu kedua. After: UI menunggu hasil,
+  menampilkan alert dan kolom readonly yang otomatis fokus/terseleksi saat
+  gagal, menyediakan `Coba salin lagi` minimal 44 piksel, mengumumkan sukses
+  lewat status screen reader, dan menyisakan satu jalur bantuan dominan.
+- Gate: focused 1/1 mencakup failure/retry/success pada 390x844 dan 1440x900;
+  storefront penuh 104 pass/4 expected skip; backend 960/960 dengan 11.007
+  assertion; build; design audit 26 artefak/0 pelanggaran; npm/Composer audit
+  nol vulnerability. Keyboard focus, forced-colors, reduced-motion,
+  no-overflow, serta satu `Powered by SagaBook` non-fixed lulus.
+- Production tidak berubah: source `d70fc1e0d922eed86fe4ea4998688aad32c68c43`,
+  release `20260803194351-d70fc1e`, rollback
+  `20260803132556-cfb2af8`. Blocker deploy adalah paket release-safety exact
+  S99: backup/checksum/disposable restore, migration preflight, approval,
+  immutable release, dan rollback proof.
+- Booking/payment/provider, availability, permission, session, tenant
+  isolation, invoice/receipt, preset, dan SagaView tidak berubah.
+
 ## 2026-08-04 - Storefront availability recovery candidate
 
 - Klasifikasi: `CONFIRMED`; delivery

@@ -12,6 +12,33 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-04
 
+### SagaBook storefront clipboard recovery candidate
+
+- Ringkasan: tombol bantuan pada storefront yang belum dipublish sekarang
+  menunggu hasil clipboard, menampilkan fallback salin manual saat browser
+  menolak, dan memberi retry sampai status sukses terkonfirmasi.
+- Alasan: UI lama langsung menampilkan `Template tersalin` walaupun Clipboard
+  API tidak tersedia atau menolak request; ikon bantuan header juga membuka
+  jalur sukses palsu kedua pada state yang sama.
+- Produk/area terdampak: tenant storefront unpublished state, copy/retry,
+  keyboard/focus, screen-reader alert/status, forced-colors, reduced-motion,
+  responsive UI, dan release evidence.
+- Klasifikasi: `CONFIRMED`; source
+  `07dda6424f0e935484b25a378f343a7cbfa94f3b`, branch
+  `codex/s99-storefront-copy-recovery`, delivery
+  `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: focused 1/1 mencakup 390x844 dan 1440x900; storefront penuh 104
+  pass/4 expected skip; backend 960/960 dengan 11.007 assertion; build; design
+  audit 26/0; serta npm/Composer audit nol vulnerability. Tepat satu watermark
+  non-fixed dan no-overflow lulus.
+- Production berubah: tidak. Runtime tetap `d70fc1e0` /
+  `20260803194351-d70fc1e`, rollback `20260803132556-cfb2af8`. Blocker adalah
+  release-safety exact S99 dan approval; booking/payment/provider,
+  availability, tenant isolation, preset, invoice/receipt, SagaView,
+  activation, dan business readiness tidak berubah. File knowledge: product,
+  dossier, changelog SagaBook, master, portfolio/root changelog, gaps, dan
+  sync status.
+
 ### SagaBook storefront availability recovery candidate
 
 - Ringkasan: membedakan kegagalan muat availability dari tanggal penuh dan
