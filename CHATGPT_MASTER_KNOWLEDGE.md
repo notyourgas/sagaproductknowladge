@@ -401,11 +401,12 @@ satu node footer responsif. Composer/npm audit, full regression, release gate,
 dan public browser smoke mobile/desktop lulus. Business readiness mass-scale
 tetap `NEEDS CONFIRMATION` sampai observasi operasional studio nyata selesai.
 
-Candidate Studio `e28422f9` memperbaiki route Changelog: release terbaru,
+Candidate Studio kumulatif `babd04cf` memperbaiki route Changelog: release terbaru,
 pencarian, filter status, enam batch versi, satu detail terbuka, empty/reset
-recovery, dan CTA kembali ke Session. Kandidat lulus 156 unit, 98 E2E termasuk
-import 50/200/500, build, accessibility, visual 390x844 dan 1440x900, serta
-audit 0. Statusnya `LOCAL_VALIDATED / STAGING_READY /
+recovery, dan CTA kembali ke Session. Kandidat juga menutup delapan respons
+font 403 dari junction dependency agar visual QA memakai Work Sans. Kandidat
+lulus 156 unit, 99 E2E termasuk import 50/200/500, build, accessibility,
+visual 390x844 dan 1440x900, serta audit 0. Statusnya `LOCAL_VALIDATED / STAGING_READY /
 IMPLEMENTED_NOT_DEPLOYED`; production tetap Studio `57c0337b` /
 `20260803221207-57c0337` sampai fresh backup/restore exact candidate dan
 approval deploy tersedia. Tepat satu watermark non-fixed tetap dijaga dan

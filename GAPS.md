@@ -177,9 +177,10 @@ ketika keputusan atau release baru menutup gap.
   end-to-end.
 - `TODO`: S72 auto-trial 7 hari masih `PRODUCTION HOLD`; activation memerlukan
   release Saga Platform dan authenticated SagaView UAT setelah provisioning.
-- `BLOCKED`: candidate navigasi Changelog Studio `e28422f9` lulus seluruh gate
-  lokal dan tersedia di branch `codex/s96-studio-nav-flow`, tetapi production
-  tetap `57c0337b` / `20260803221207-57c0337`. Bukti penutup adalah fresh
+- `BLOCKED`: candidate kumulatif navigasi Changelog dan typography visual QA
+  Studio `babd04cf` lulus seluruh gate lokal dan tersedia di branch
+  `codex/s97-typography-assets`, tetapi production tetap `57c0337b` /
+  `20260803221207-57c0337`. Bukti penutup adalah fresh
   encrypted backup/checksum/disposable restore exact candidate, approval
   deploy, immutable release, service/header/journal, dan public smoke.
 

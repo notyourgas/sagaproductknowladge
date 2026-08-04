@@ -340,8 +340,9 @@ Kontrak ini sekarang enforced server-side pada runtime production yang aktif.
   dominan kembali ke Session;
 - 390x844 dan 1440x900 bebas overflow; keyboard, focus, Axe, forced-colors,
   reduced-motion, dan tepat satu footer `Powered by SagaView` tervalidasi;
-- source `e28422f9daafb1ff27bb0421bebcb285b63cd56c` lulus focused 3/3,
-  unit 156/156, E2E 98/98 termasuk import 50/200/500, build/budget, dan audit 0;
+- source kumulatif `babd04cf0d728da2b32318a3200f47b00dbc59e0` menutup
+  delapan respons font 403 dari junction dependency, lalu lulus focused 6/6,
+  unit 156/156, E2E 99/99 termasuk import 50/200/500, build/budget, dan audit 0;
 - production tetap source `57c0337b`, release `20260803221207-57c0337` sampai
   fresh backup/restore exact candidate dan approval deploy tersedia.
 

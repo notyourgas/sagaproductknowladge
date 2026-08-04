@@ -4,6 +4,31 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-08-04 - Typography visual QA candidate dipulihkan
+
+- Klasifikasi: `CONFIRMED` sebagai candidate, bukan production.
+- Status: `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
+- Before: Work Sans dari junction dependency worktree mendapat delapan respons
+  HTTP 403 pada browser lokal. Visual regression tetap berjalan, tetapi
+  hierarchy, kepadatan, dan wrapping dinilai memakai font fallback.
+- After: Vite hanya mengizinkan source worktree dan target dependency yang
+  sudah di-resolve. Work Sans termuat tanpa respons font gagal pada 390x844 dan
+  1440x900; regression test mengunci family terhitung dan status respons aset.
+- Source `babd04cf0d728da2b32318a3200f47b00dbc59e0` pada branch
+  `codex/s97-typography-assets`. Validation: red-green 8 respons 403 menjadi 0,
+  focused Playwright 6/6, 156/156 unit, 99/99 E2E termasuk Axe,
+  forced-colors, navigation, import 50/200/500, lint, typecheck, build, bundle
+  budget 288,3 KiB dari batas 450 KiB, dan npm audit nol vulnerability.
+- Production tetap Studio source
+  `57c0337b43b46229253ce89ace39f2ed587fc2d7`, release
+  `20260803221207-57c0337`, rollback `20260803215526-be72510`; public route
+  Changelog dan Home merespons 200 serta HTML Changelog tetap memuat `v0.20.3`.
+- Blocker deploy: fresh encrypted backup/checksum/disposable restore yang
+  terikat exact candidate dan approval eksekusi belum tersedia.
+- Tepat satu `Powered by SagaView` tetap non-fixed dan tidak masuk foto,
+  export, print, invoice, atau receipt. Device/session, permission, local-first,
+  tenant isolation, payment, frame, serta output 4R tidak berubah.
+
 ## 2026-08-04 - Navigasi Changelog operasional candidate
 
 - Klasifikasi: `CONFIRMED` sebagai candidate, bukan production.

@@ -12,6 +12,31 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-04
 
+### SagaView typography visual QA candidate
+
+- Ringkasan: source kumulatif Changelog SagaView kini melayani Work Sans dari
+  dependency junction secara deterministik pada browser QA mobile dan desktop.
+- Alasan: delapan request font sebelumnya mendapat HTTP 403 sehingga screenshot
+  dan regression visual menilai hierarchy, wrapping, dan density memakai font
+  fallback.
+- Produk/area terdampak: SagaView Studio Changelog, typography asset,
+  responsive visual QA, accessibility, build, security allow-list, provenance,
+  dan release evidence.
+- Klasifikasi: `CONFIRMED`; source
+  `babd04cf0d728da2b32318a3200f47b00dbc59e0`, branch
+  `codex/s97-typography-assets`, delivery
+  `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: red-green 8 respons font 403 menjadi 0; focused Playwright 6/6;
+  156/156 unit; full E2E 99/99; lint/typecheck/build; bundle budget 288,3 KiB
+  dari batas 450 KiB; Axe/forced-colors; visual 390x844 dan 1440x900; serta npm
+  audit nol vulnerability.
+- Production berubah: tidak. Runtime tetap `57c0337b` /
+  `20260803221207-57c0337`, rollback `20260803215526-be72510`; public
+  Changelog/Home 200 dan versi HTML tetap `v0.20.3`. Blocker adalah
+  release-safety receipt exact S97 dan approval. Watermark tunggal,
+  device/session, foto, permission, payment, frame, export/print 4R,
+  activation, dan business readiness tidak berubah.
+
 ### SagaBook trial lifecycle approval production repair
 
 - Ringkasan: schema lifecycle pusat dan reconciliation trial SagaBook 7 hari

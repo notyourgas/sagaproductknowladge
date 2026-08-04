@@ -97,8 +97,10 @@ tidak menutupi signature produk pada mobile/desktop.
 
 Changelog Studio candidate sekarang mengutamakan release terbaru, menyediakan
 pencarian, filter status, enam batch versi, satu detail terbuka, empty/reset
-recovery, dan CTA kembali ke Session. Source `e28422f9` lulus 156 unit, 98 E2E,
-import 50/200/500, build, accessibility, visual dua viewport, dan audit 0.
+recovery, dan CTA kembali ke Session. Source kumulatif `babd04cf` juga menutup
+delapan respons font 403 dari junction dependency, lalu lulus 156 unit, 99 E2E,
+import 50/200/500, build, accessibility, visual dua viewport dengan Work Sans,
+dan audit 0.
 Production belum berubah karena backup/restore exact candidate dan approval
 deploy belum tersedia; status ini tidak mengubah device/session, foto,
 permission, local-first, frame, payment, atau output 4R.

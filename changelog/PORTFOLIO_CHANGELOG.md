@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-04 - SagaView typography visual QA candidate
+
+- `CONFIRMED`: delapan respons font 403 pada worktree dengan junction
+  dependency ditutup melalui allow-list source/dependency yang exact. Visual
+  regression mobile dan desktop sekarang memakai Work Sans, bukan fallback.
+- Source kumulatif `babd04cf0d728da2b32318a3200f47b00dbc59e0` pada
+  `codex/s97-typography-assets`; red-green 8 menjadi 0 respons gagal, focused
+  6/6, unit 156/156, full E2E 99/99, build/budget, dan audit dependency 0.
+- Delivery `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
+  Production tetap `57c0337b` / `20260803221207-57c0337`; blocker adalah
+  backup/checksum/disposable restore exact S97 dan approval. Kontrak UI,
+  device/session, foto, payment, export 4R, activation, serta business
+  readiness tidak berubah.
+
 ## 2026-08-04 - SagaBook trial lifecycle approval repaired
 
 - `CONFIRMED / PRODUCTION_DEPLOYED`: SagaDev Control Center release
