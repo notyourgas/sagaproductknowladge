@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-04 - AOGTICVITY Info timeline spacing production
+
+- Timeline resmi kini memberi padding dan gap konsisten; deskripsi memakai
+  lebar penuh, sementara panel keselamatan tidak lagi menempel ke timeline.
+- Source `63fbb593236eff1bcbdb19b3383c591efe263e08`; Hostinger
+  `20260804T055431Z`; Vercel `dpl_Bw3VAk3xYqXAsnESS7HF6L9BnEPu`. Regression
+  108 tests, Playwright 49/49, build/audit, readiness, dan public visual smoke
+  lulus.
+- Delivery `PRODUCTION_DEPLOYED`; data, auth, permission, activation, dan
+  business readiness tidak berubah.
+
 ## 2026-08-04 - SagaView Changelog navigation candidate
 
 - `CONFIRMED`: route Studio Changelog kini memiliki latest-release hierarchy,

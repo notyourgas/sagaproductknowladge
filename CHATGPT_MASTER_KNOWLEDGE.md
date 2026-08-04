@@ -475,6 +475,11 @@ Source UI `cd26cf52ad8f56320bcf4240ab73b0868af50298`, Hostinger
 menyederhanakan agenda publik/peserta menjadi waktu mulai tunggal, informasi
 lomba, dan panah. Durasi tampil sebagai teks `(n menit)` pada baris kategori;
 ikon jenis lomba dihapus tanpa mengubah status, link, atau data rundown.
+Source UI `63fbb593236eff1bcbdb19b3383c591efe263e08`, Hostinger
+`20260804T055431Z`, dan Vercel `dpl_Bw3VAk3xYqXAsnESS7HF6L9BnEPu`
+melonggarkan timeline resmi halaman Info. Setiap milestone memakai inset 14 px,
+gap 12 px, deskripsi full-width, dan jarak 16 px ke panel keselamatan; data,
+auth, permission, dan workflow tidak berubah.
 Ini adalah nama terbaru project 17an/Olimpiade Kemerdekaan.
 
 Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:

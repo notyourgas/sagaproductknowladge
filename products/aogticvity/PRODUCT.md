@@ -176,6 +176,11 @@ Public delivery saat ini: `https://olimpiade-kemerdekaan.vercel.app`.
   menampilkan waktu mulai saja, durasi menjadi teks `(n menit)` pada baris
   kategori, dan ikon jenis lomba dihapus. Status, lokasi, link detail, serta
   data rundown tidak berubah.
+- Source UI `63fbb593236eff1bcbdb19b3383c591efe263e08`, Hostinger release
+  `20260804T055431Z`, dan Vercel production
+  `dpl_Bw3VAk3xYqXAsnESS7HF6L9BnEPu` melonggarkan timeline resmi pada halaman
+  Info. Milestone mempunyai inset 14 px, gap 12 px, deskripsi selebar kartu,
+  serta jarak 16 px ke panel keselamatan tanpa mengubah data timeline.
 - SQLite hanya fast test adapter.
 - Event-master memiliki dry-run, validation, atomic publish, versioning, dan
   audit. Durasi jadwal bersifat provisional dan dapat disunting admin.
@@ -200,13 +205,16 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:
 - UI memakai `Pixel Matchday Arcade` yang tetap mobile-first 430 px: Plus
   Jakarta Sans, Feather-style icons, stepped geometry, hard shadow, quest/HUD
   hierarchy, state feedback, dan motion yang menghormati reduced-motion.
-- Public visual regression lulus 48/48 pada enam route dan viewport 320, 390,
+- Public visual regression lulus 49/49 pada enam route dan viewport 320, 390,
   430, serta 1440 px; matriks memeriksa overflow teks, collision sibling,
   clearance navigasi, touch target, reduced motion, dan axe WCAG.
 - Agenda publik/peserta memakai tiga track: waktu mulai, informasi lomba, dan
   panah. Durasi tampil sebagai teks pada baris kategori tanpa ikon jenis lomba;
   lokasi serta status tetap terlihat. Form, timeline, standing, dan panel
   operasional memakai wrapping serta gap konsisten.
+- Timeline resmi pada halaman Info memisahkan judul/status dari deskripsi,
+  memakai padding dan gap antarkartu yang konsisten, serta memberi jarak aman
+  sebelum peringatan keselamatan.
 - Master recap 2026 berisi 8 tim, 10 lomba, jadwal provisional, mekanisme,
   safety, equipment, dan assignment panitia.
 - Database-backed auth aktif melalui Vercel: real credential login dan forced

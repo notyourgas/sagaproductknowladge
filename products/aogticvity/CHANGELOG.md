@@ -8,6 +8,20 @@ Mencatat perubahan material AOGTICVITY/17an/Olimpiade.
 
 Nama lama dipertahankan sebagai provenance; status runtime harus eksplisit.
 
+## 2026-08-04 - Info timeline spacing production
+
+- `CONFIRMED`: timeline resmi halaman Info kini memakai padding milestone
+  14 px, gap antarkartu 12 px, dan jarak 16 px ke panel keselamatan.
+- Judul/status berada pada satu baris dengan shrink contract; deskripsi memakai
+  lebar penuh di bawahnya sehingga tidak lagi terjepit oleh badge status.
+- Source `63fbb593236eff1bcbdb19b3383c591efe263e08`; Hostinger
+  `20260804T055431Z`; Vercel `dpl_Bw3VAk3xYqXAsnESS7HF6L9BnEPu`; tanpa
+  migration data/schema.
+- Gate: 108 tests, Playwright 49/49, typecheck/build/audit, public render 390 px,
+  readiness, exact source, dan zero horizontal overflow lulus.
+- Delivery `PRODUCTION_DEPLOYED`; activation dan business readiness keseluruhan
+  tidak berubah.
+
 ## 2026-08-04 - Simplified single-time agenda production
 
 - `CONFIRMED`: kartu agenda publik/peserta hanya menampilkan waktu mulai;

@@ -12,6 +12,25 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-04
 
+### AOGTICVITY Info timeline spacing production
+
+- Ringkasan: memberi padding 14 px, gap 12 px, deskripsi full-width, dan jarak
+  16 px ke panel keselamatan pada timeline resmi halaman Info.
+- Alasan: keputusan founder bahwa susunan milestone sebelumnya terlalu mepet
+  dan badge status membuat deskripsi terasa sempit.
+- Produk/area terdampak: Info timeline, mobile hierarchy, Vercel, Hostinger,
+  acceptance UI, dan knowledge publik.
+- Klasifikasi: `CONFIRMED`; sumber Andreas/founder; source
+  `63fbb593236eff1bcbdb19b3383c591efe263e08`, Hostinger
+  `20260804T055431Z`, Vercel `dpl_Bw3VAk3xYqXAsnESS7HF6L9BnEPu`, status
+  `PRODUCTION_DEPLOYED`.
+- Gate: 108 tests, Playwright 49/49, typecheck/build/audit, readiness, exact
+  source, public 390 px render, dan zero horizontal overflow lulus.
+- Production berubah: ya, UI Info saja. Data/schema, auth, permission,
+  activation, dan business readiness tidak berubah. File knowledge: product,
+  dossier, changelog AOGTICVITY, master, decision, portfolio/root changelog,
+  dan sync status.
+
 ### SagaView Changelog navigation candidate
 
 - Ringkasan: mengganti daftar 47 release yang seluruh detailnya terbuka menjadi

@@ -370,3 +370,17 @@ keputusan pengganti.
 | Pemberi keputusan | Andreas / founder |
 | Status | `CONFIRMED`; source dan public production runtime terverifikasi |
 | Dokumen terkait | [AOGTICVITY Product](products/aogticvity/PRODUCT.md), [AOGTICVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTICVITY Changelog](products/aogticvity/CHANGELOG.md) |
+
+## DEC-026 - AOGTICVITY melonggarkan layout timeline resmi
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-04 |
+| Topik | Spacing timeline resmi pada halaman Info AOGTICVITY |
+| Keputusan | Timeline resmi memakai padding milestone 14 px, gap antarkartu 12 px, deskripsi full-width di bawah judul/status, dan jarak 16 px sebelum panel keselamatan. |
+| Alasan | Founder menilai milestone dan panel keselamatan terlalu mepet, sementara badge status membuat deskripsi terasa sempit. |
+| Alternatif yang dipertimbangkan | Hanya mengecilkan font; memindahkan badge status ke bawah; mengubah seluruh notification list global. |
+| Dampak | Timeline Info lebih mudah dipindai pada mobile tanpa mengubah data timeline, daftar notifikasi lain, auth, role, atau permission. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED`; source dan public production runtime terverifikasi |
+| Dokumen terkait | [AOGTICVITY Product](products/aogticvity/PRODUCT.md), [AOGTICVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTICVITY Changelog](products/aogticvity/CHANGELOG.md) |

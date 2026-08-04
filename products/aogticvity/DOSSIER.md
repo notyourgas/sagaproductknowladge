@@ -69,6 +69,10 @@ Agenda publik/peserta memakai tiga track ringkas pada 320 px: waktu mulai,
 informasi lomba, dan panah. Rentang waktu diganti menjadi satu waktu mulai;
 durasi tetap terlihat sebagai teks `(n menit)` pada baris kategori; ikon jenis
 lomba dihapus. Judul, lokasi, status, link detail, dan sumber data tetap utuh.
+Timeline resmi halaman Info memakai kartu milestone dengan padding 14 px dan
+gap 12 px. Judul/status berada pada baris pertama, deskripsi memakai lebar penuh
+di bawahnya, dan peringatan keselamatan terpisah 16 px. Acceptance suite kini
+mencakup 49 Playwright checks termasuk geometry khusus 320 px.
 
 Taxonomy komunitas final mempunyai dua kategori utama: `TEEN` dengan enam
 subcategory `CG teen`, dan `SOUTH, WEST, CENTRAL` dengan delapan subcategory
