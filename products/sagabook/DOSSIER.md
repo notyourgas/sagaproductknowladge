@@ -139,10 +139,15 @@ test terjadwal exit hijau pada 390x844 serta 1440x900; build, design audit 26/0,
 npm audit nol vulnerability, no-overflow, target 44 piksel, dan satu watermark
 non-fixed lulus. Backend kini 960/960 dengan 11.007 assertion setelah dua
 fixture sesi absolut yang melewati retensi 30 hari diganti tanggal relatif;
-expiry production tetap fail-closed. Composer cache tidak menemukan advisory,
-tetapi feed Packagist masih timeout. Karena itu
-kandidat belum `STAGING_READY`; release-safety receipt exact source dan approval
-juga belum ada. Production tetap source `d70fc1e0`, release
+expiry production tetap fail-closed. Re-verifikasi segar 4 Agustus pukul 21.00
+WIB meluluskan Composer online dengan nol advisory, backend 960/960, focused
+Playwright 2/2, accessibility 16/16, build, design 26/0, npm audit nol
+vulnerability, dan empat public smoke 200. Preflight strict lokal memverifikasi
+provenance exact commit, worktree/scope bersih, baseline, dan payment, tetapi
+tidak menggantikan bukti runtime production. Kandidat belum `STAGING_READY`;
+release-safety receipt yang mengikat backup terenkripsi, checksum, dan
+disposable restore ke exact source serta approval belum ada. Production tetap
+source `d70fc1e0`, release
 `20260803194351-d70fc1e`; booking/payment/provider, tenant isolation, preset,
 invoice, receipt, dan SagaView tidak berubah.
 

@@ -27,8 +27,13 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 - Gate hijau: red-green 2/2 dan 67 assertion; backend 960/960 dan 11.007
   assertion; storefront 114 test terjadwal exit 0; build; design 26/0; npm
   audit nol vulnerability; Pint; a11y; dua viewport; satu watermark non-fixed.
-- Blocker: Packagist timeout sehingga advisory feed Composer belum segar;
-  release-safety receipt exact S103 dan approval juga belum tersedia.
+- Re-verifikasi segar 4 Agustus pukul 21.00 WIB: Composer online nol advisory;
+  backend 960/960; focused Playwright 2/2; accessibility 16/16; build; design
+  26/0; npm audit nol vulnerability; dan empat public smoke 200. Preflight
+  strict lokal memverifikasi provenance exact commit serta worktree/scope
+  bersih, tetapi fixture lokal bukan bukti runtime production.
+- Blocker: release-safety receipt yang mengikat backup terenkripsi, checksum,
+  dan disposable restore ke exact S103 serta approval belum tersedia.
 - Production berubah: tidak. Runtime tetap `d70fc1e0` /
   `20260803194351-d70fc1e`, rollback `20260803132556-cfb2af8`; empat public
   smoke 200. Payment/provider, tenant isolation, preset, SagaView, activation,

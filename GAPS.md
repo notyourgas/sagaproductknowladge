@@ -158,12 +158,13 @@ ketika keputusan atau release baru menutup gap.
   focused 2/2, backend 960/960, suite storefront 114 test terjadwal exit hijau,
   build, design, dan npm audit; production tetap `d70fc1e0` /
   `20260803194351-d70fc1e`. Blocker backend S102 telah ditutup tanpa mengubah
-  expiry production. Candidate belum `STAGING_READY` karena feed advisory
-  Packagist masih timeout dan release-safety receipt exact S103 belum tersedia.
-  Tutup kedua gate, lalu lakukan backup/checksum/disposable restore, migration
-  preflight, approval,
-  immutable release, service/journal, rollback proof, dan public smoke exact
-  source sebelum deployment.
+  expiry production. Composer online segar kini nol advisory; re-verifikasi
+  backend 960/960, focused Playwright 2/2, accessibility 16/16, build, design,
+  npm audit, dan empat public smoke juga hijau. Candidate belum `STAGING_READY`
+  karena release-safety receipt yang mengikat backup terenkripsi, checksum, dan
+  disposable restore ke exact S103 belum tersedia. Lengkapi receipt, migration
+  preflight, approval, immutable release, service/journal, rollback proof, dan
+  public smoke exact source sebelum deployment.
 
 ### SagaView
 
