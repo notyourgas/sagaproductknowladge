@@ -1,5 +1,21 @@
 # Portfolio Changelog
 
+## 2026-08-04 - SagaBook active header clipboard recovery candidate
+
+- `CONFIRMED`: bantuan header storefront aktif tidak lagi mengaku berhasil
+  sebelum Clipboard API selesai. Reject/unavailable menampilkan alert, textarea
+  readonly yang otomatis fokus/terseleksi, dan satu retry 44 piksel; rail
+  desktop tidak lagi menutup jalur recovery.
+- Source `9d9c5ede9f1438d799861547ec27f0cd95b55edc` pada
+  `codex/s100-storefront-header-copy-recovery`; focused 1/1 pada dua viewport,
+  storefront 105 pass/5 expected skip, backend 960/960, build, a11y/design,
+  serta audit dependency nol.
+- Delivery `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
+  Production tetap `d70fc1e0` / `20260803194351-d70fc1e`; blocker adalah
+  release-safety receipt exact S100 dan approval. Booking/payment/availability,
+  tenant isolation, preset, SagaView, activation, dan business readiness tidak
+  berubah.
+
 ## 2026-08-04 - SagaBook storefront clipboard recovery candidate
 
 - `CONFIRMED`: storefront unpublished tidak lagi mengaku berhasil sebelum

@@ -12,6 +12,31 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-04
 
+### SagaBook active storefront header clipboard recovery candidate
+
+- Ringkasan: tombol bantuan pada header storefront aktif sekarang menunggu
+  hasil Clipboard API; kegagalan menampilkan alert, fallback salin manual yang
+  langsung fokus/terseleksi, dan satu tombol retry dominan pada workspace.
+- Alasan: UI lama selalu menampilkan `Pesan bantuan WhatsApp tersalin` setelah
+  klik walaupun browser menolak clipboard; panel awal juga sempat tertutup rail
+  desktop dan ditutup melalui regression interaction.
+- Produk/area terdampak: tenant storefront aktif, header/navigation, error dan
+  success state, keyboard/focus, screen reader, forced-colors, reduced-motion,
+  mobile/desktop, dan release evidence.
+- Klasifikasi: `CONFIRMED`; source
+  `9d9c5ede9f1438d799861547ec27f0cd95b55edc`, branch
+  `codex/s100-storefront-header-copy-recovery`, delivery
+  `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: red-green focused 1/1 mencakup 390x844 dan 1440x900; storefront penuh
+  105 pass/5 expected skip; backend 960/960 dengan 11.007 assertion; build;
+  design audit 26/0; serta npm/Composer audit nol vulnerability/advisory.
+  Tepat satu watermark non-fixed dan no-overflow lulus.
+- Production berubah: tidak. Runtime tetap `d70fc1e0` /
+  `20260803194351-d70fc1e`, rollback `20260803132556-cfb2af8`. Blocker adalah
+  release-safety receipt exact S100 dan approval; booking/payment/provider,
+  availability, tenant isolation, preset, invoice/receipt, SagaView,
+  activation, dan business readiness tidak berubah.
+
 ### SagaBook storefront clipboard recovery candidate
 
 - Ringkasan: tombol bantuan pada storefront yang belum dipublish sekarang

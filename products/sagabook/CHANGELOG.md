@@ -4,6 +4,33 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-04 - Active storefront header clipboard recovery candidate
+
+- Klasifikasi: `CONFIRMED`; delivery
+  `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`. Candidate
+  source `9d9c5ede9f1438d799861547ec27f0cd95b55edc` tersedia pada branch
+  `codex/s100-storefront-header-copy-recovery`.
+- Before: ikon bantuan header langsung berubah menjadi `Pesan bantuan WhatsApp
+  tersalin` tanpa menunggu Clipboard API. After: UI menunggu write, menampilkan
+  alert dan textarea readonly yang otomatis fokus/terseleksi ketika gagal,
+  menyediakan satu tombol retry dominan minimal 44 piksel, serta baru
+  mengumumkan sukses melalui status screen reader setelah write selesai.
+- Putaran koreksi menghapus retry header duplikat dan memindahkan fallback ke
+  kolom workspace agar rail desktop tidak menutup tombol.
+- Gate: focused 1/1 mencakup failure/retry/success pada 390x844 dan 1440x900;
+  storefront penuh 105 pass/5 expected skip; backend 960/960 dengan 11.007
+  assertion; build; design audit 26 artefak/0 pelanggaran; npm audit nol
+  vulnerability dan Composer nol advisory/abandoned. Keyboard/focus,
+  forced-colors, reduced-motion, no-overflow, dan satu `Powered by SagaBook`
+  non-fixed lulus.
+- Production tidak berubah: source `d70fc1e0d922eed86fe4ea4998688aad32c68c43`,
+  release `20260803194351-d70fc1e`, rollback
+  `20260803132556-cfb2af8`. Blocker deploy adalah release-safety receipt exact
+  S100 yang memuat backup/checksum/disposable restore, migration preflight,
+  approval, immutable release, dan rollback proof.
+- Booking/payment/provider, availability, permission, session, tenant
+  isolation, invoice/receipt, preset, dan SagaView tidak berubah.
+
 ## 2026-08-04 - Storefront clipboard recovery candidate
 
 - Klasifikasi: `CONFIRMED`; delivery

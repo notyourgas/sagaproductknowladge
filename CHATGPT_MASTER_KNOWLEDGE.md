@@ -227,6 +227,20 @@ nol, dan fresh encrypted backup/restore exact-SHA lulus. Approval eksekusi
 production belum diberikan, sehingga runtime tetap `d70fc1e0` release
 `20260803194351-d70fc1e`; booking/payment/availability tidak berubah.
 
+Candidate recovery clipboard header storefront aktif pada source
+`9d9c5ede9f1438d799861547ec27f0cd95b55edc` tersedia di branch
+`codex/s100-storefront-header-copy-recovery` dengan status
+`LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`. Ikon header kini
+menunggu hasil write; reject/unavailable menampilkan alert, fallback manual
+yang otomatis fokus/terseleksi, dan satu retry 44 piksel pada kolom workspace,
+sedangkan status sukses baru diumumkan setelah clipboard selesai. Focused dua
+viewport, storefront 105 pass/5 expected skip, backend 960/960, build,
+design/a11y, serta dependency audit nol lulus tanpa overflow dan dengan tepat
+satu `Powered by SagaBook` non-fixed. Production tetap `d70fc1e0` / release
+`20260803194351-d70fc1e`; release-safety receipt exact S100 dan approval masih
+blocker. Booking/payment/provider, availability, tenant isolation, invoice,
+receipt, preset, dan SagaView tidak berubah.
+
 Candidate recovery clipboard storefront pada source
 `07dda6424f0e935484b25a378f343a7cbfa94f3b` tersedia di branch
 `codex/s99-storefront-copy-recovery` dengan status

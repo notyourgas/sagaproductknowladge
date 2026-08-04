@@ -158,6 +158,13 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
 - Source production terbaru pada cut-off: commit
   `d70fc1e0d922eed86fe4ea4998688aad32c68c43`.
 - Release production tercatat: `20260803194351-d70fc1e`.
+- Recovery clipboard header storefront aktif sudah `LOCAL_VALIDATED /
+  STAGING_READY / IMPLEMENTED_NOT_DEPLOYED` pada source
+  `9d9c5ede9f1438d799861547ec27f0cd95b55edc`, branch
+  `codex/s100-storefront-header-copy-recovery`. Browser yang menolak Clipboard
+  API mendapat alert, fallback salin manual yang langsung fokus/terseleksi,
+  dan satu retry dominan; sukses baru muncul setelah write selesai. Production
+  belum berubah karena release-safety receipt exact source S100 belum tersedia.
 - Recovery clipboard pada storefront unpublished sudah `LOCAL_VALIDATED /
   STAGING_READY / IMPLEMENTED_NOT_DEPLOYED` pada source
   `07dda6424f0e935484b25a378f343a7cbfa94f3b`, branch
