@@ -91,13 +91,13 @@ Positioning singkat:
 Volume booking dipasarkan sebagai unlimited dengan fair-use. Unlimited tidak
 menghapus rate limit, abuse control, capacity, atau batas operasional yang aman.
 
-### Trial 14 hari
+### Trial 7 hari
 
-- Hari 1-7: akses Pro dengan guardrail maksimal 2 cabang, owner + 4 staff, dan
-  30 booking aktif/confirmed.
-- Hari 8-14: limit paket yang dipilih dan maksimal 50 booking trial total.
-- Hari 15-21: `grace_read_only`.
-- Setelah hari 21: `suspended`, data tidak dihapus otomatis.
+- Hari 1-7: akses penuh dengan guardrail maksimal 2 cabang, owner + 4 staff,
+  dan 30 booking aktif/confirmed.
+- Hari 8-14: `grace_read_only`; data tetap dapat dilihat/diekspor, tetapi
+  operasional baru dinonaktifkan.
+- Setelah hari 14: `suspended`, data tidak dihapus otomatis.
 - Tidak ada auto-charge.
 
 Trial dan subscription SagaBook tidak mengaktifkan SagaView.
@@ -391,6 +391,13 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
   `dcb5a3f3dc1e3e7b5c0c067e8968ca341ebf1c27`. Production tetap memakai
   kontrak aktif di atas sampai ada release approval baru; status candidate
   `PRODUCTION HOLD`.
+- SagaDev Control Center production release `20260804171621-0ab9d8e`
+  memperbaiki approval trial SagaBook yang sebelumnya gagal karena schema
+  lifecycle belum tersedia. Dua migration allowlisted diterapkan, dua lifecycle
+  trial tersinkron ke 7 hari, katalog trial bernilai 7, dan subscription
+  berbayar terverifikasi tidak berubah. SagaBook tetap pada release
+  `20260803194351-d70fc1e`; auto-trial S72 tetap `PRODUCTION HOLD` sehingga
+  approval owner manual masih berlaku.
 
 ## Update terbaru
 

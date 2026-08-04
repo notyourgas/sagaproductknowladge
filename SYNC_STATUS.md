@@ -12,14 +12,14 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-04T16:31:04+07:00 |
+| Waktu pembaruan terakhir | 2026-08-04T17:22:35+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `f72844c746ff0d8c318f49581d61c9e827bcf058` |
-| Informasi terakhir disinkronkan | SagaBook active header clipboard recovery candidate source `9d9c5ede9f1438d799861547ec27f0cd95b55edc`; production tetap `d70fc1e0` / `20260803194351-d70fc1e`. |
+| Baseline sebelum pembaruan | `566e41960e541cf039e537b72c562338019de1fa` |
+| Informasi terakhir disinkronkan | SagaBook trial lifecycle approval repair pada SagaDev Control Center source `0ab9d8e3bff95a6c46425a376d93b732c22b7b52`, release `20260804171621-0ab9d8e`; SagaBook tetap `d70fc1e0` / `20260803194351-d70fc1e`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada; status candidate dipisahkan dari runtime production aktif. |
-| Error | Tidak ada pada knowledge; release-safety receipt exact S100 belum tersedia sehingga deploy tidak diklaim. |
+| Konflik | Kontrak SagaBook 14 hari lama ditandai deprecated oleh DEC-029; kontrak SagaView tidak diubah. |
+| Error | Tidak ada pada release; authenticated owner retry approval masih menunggu tindakan owner. |
 
 ## File yang berubah pada sinkronisasi ini
 
@@ -27,6 +27,7 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `products/sagabook/DOSSIER.md`
 - `products/sagabook/CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
+- `DECISIONS.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `GAPS.md`
 - `CHANGELOG.md`
@@ -34,9 +35,8 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 ## Item menunggu konfirmasi
 
-Siapkan encrypted backup/checksum/disposable restore, migration preflight,
-approval, immutable release, service/journal, rollback proof, dan public smoke
-yang semuanya terikat exact source S100 sebelum mengubah status production.
+Ulangi satu approval trial SagaBook nyata dari UI owner. S72 auto-trial tetap
+`PRODUCTION HOLD` sampai release dan authenticated product UAT terpisah.
 
 ## Cara verifikasi
 

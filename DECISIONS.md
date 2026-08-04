@@ -60,7 +60,7 @@ keputusan pengganti.
 | Alternatif yang dipertimbangkan | Trial 7 hari; trial 14 hari dengan akses penuh sepanjang periode; trial tanpa batas product-scoped. |
 | Dampak | Backend enforcement, UI countdown, FAQ, pricing, sales copy, entitlement, dan analytics harus konsisten. |
 | Pemberi keputusan | Andreas / founder |
-| Status | `CONFIRMED` |
+| Status | `DEPRECATED` untuk SagaBook oleh DEC-029; tetap berlaku untuk SagaView sampai ada release product-scoped baru. |
 | Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaView Product](products/sagaview/PRODUCT.md), [Master Knowledge](CHATGPT_MASTER_KNOWLEDGE.md) |
 
 ## DEC-004 — Identity dapat sama, akses tetap product-scoped
@@ -125,7 +125,7 @@ keputusan pengganti.
 |---|---|
 | Tanggal | 2026-07-31 |
 | Topik | Kontrak komersial produk self-photo SaaS |
-| Keputusan | SagaBook: Basic Rp500.000/bulan (1 cabang, 3 staff), Growth Rp950.000/bulan (3 cabang, 10 staff), Pro Rp1.500.000/bulan (maksimal 10 cabang, 30 staff self-service); kebutuhan di atas Pro memakai kontrak Custom. Trial hari 1–7 memakai akses Pro dengan guardrail 2 cabang, owner + 4 staff, dan 30 booking aktif/confirmed; hari 8–14 memakai limit paket terpilih dan maksimal 50 booking trial total. SagaView: Growth Rp200.000/bulan (1 device, 10 frame aktif, 3 preset, offline 24 jam, 2 GB aset frame cloud, laporan dasar) dan Pro Rp500.000/bulan (4 device, 50 frame aktif, 10 preset, offline 168 jam, 10 GB aset frame cloud, laporan lanjutan, activity log, priority support); kebutuhan di atas Pro memakai penawaran Custom. Trial hari 1–7 memakai fitur Pro maksimal 2 device/10 completed session; hari 8–14 memakai limit paket terpilih dan maksimal 20 completed session trial total; hari 15–21 read-only/export. Booking SagaBook serta sesi/foto SagaView dipasarkan sebagai unlimited dengan fair-use; foto SagaView tetap lokal dan tidak dihitung sebagai storage cloud. Trial tidak auto-charge dan tetap product-scoped. |
+| Keputusan | SagaBook: Basic Rp500.000/bulan (1 cabang, 3 staff), Growth Rp950.000/bulan (3 cabang, 10 staff), Pro Rp1.500.000/bulan (maksimal 10 cabang, 30 staff self-service); kebutuhan di atas Pro memakai kontrak Custom. Trial hari 1–7 memakai full access dengan guardrail 2 cabang, owner + 4 staff, dan 30 booking aktif/confirmed; hari 8–14 grace read-only; setelah hari 14 suspended. SagaView: Growth Rp200.000/bulan (1 device, 10 frame aktif, 3 preset, offline 24 jam, 2 GB aset frame cloud, laporan dasar) dan Pro Rp500.000/bulan (4 device, 50 frame aktif, 10 preset, offline 168 jam, 10 GB aset frame cloud, laporan lanjutan, activity log, priority support); kebutuhan di atas Pro memakai penawaran Custom. Kontrak trial SagaView tetap product-scoped dan tidak diubah oleh release platform SagaBook ini. Booking SagaBook serta sesi/foto SagaView dipasarkan sebagai unlimited dengan fair-use; foto SagaView tetap lokal dan tidak dihitung sebagai storage cloud. Trial tidak auto-charge dan tetap product-scoped. |
 | Alasan | Customer membutuhkan paket yang mudah dibandingkan, sementara sistem memerlukan batas server-authoritative yang aman dan dapat diaudit. |
 | Alternatif yang dipertimbangkan | Pro tanpa batas; paket multi-term publik; satu harga/bundle; trial tanpa guardrail. |
 | Dampak | Pricing, entitlement, quota, UI, billing, sales copy, trial, dan acceptance test wajib konsisten. Implementasi dan production activation tetap membutuhkan provenance source/release. |
@@ -412,3 +412,17 @@ keputusan pengganti.
 | Pemberi keputusan | Andreas / founder |
 | Status | `CONFIRMED`; source dan public production deployment terverifikasi, activation menunggu UAT guest nyata |
 | Dokumen terkait | [AOGTICVITY Product](products/aogticvity/PRODUCT.md), [AOGTICVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTICVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |
+
+## DEC-029 - SagaBook memakai trial aktif 7 hari
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-04 |
+| Topik | Durasi trial dan lifecycle SagaBook |
+| Keputusan | Trial aktif SagaBook berlangsung tepat 7 hari. Hari 8–14 menjadi grace read-only dan setelah hari 14 status suspended. Trial tidak auto-charge, tetap product-scoped, dan approval owner manual tetap berlaku sampai S72 auto-trial memperoleh release terpisah. |
+| Alasan | UI, katalog pusat, subscription, dan lifecycle harus memakai satu durasi kanonik agar approval tidak menciptakan entitlement 14 hari yang bertentangan. |
+| Alternatif yang dipertimbangkan | Mempertahankan trial aktif dua fase 14 hari; langsung mengaktifkan auto-trial; memperpanjang trial tanpa batas melalui approval. |
+| Dampak | SagaDev Control Center, katalog SagaBook, migration/backfill, countdown, entitlement, FAQ, dan acceptance test memakai 7 hari aktif serta 7 hari grace. Subscription berbayar tidak diubah. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED`; source `0ab9d8e3bff95a6c46425a376d93b732c22b7b52`, platform release `20260804171621-0ab9d8e` |
+| Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [Master Knowledge](CHATGPT_MASTER_KNOWLEDGE.md), [Gaps](GAPS.md) |

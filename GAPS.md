@@ -58,8 +58,16 @@ ketika keputusan atau release baru menutup gap.
 - `TODO`: lakukan authenticated owner canary ke nomor terkontrol sebelum
   memperluas pengiriman ke customer nyata.
 - `TODO`: S72 auto-trial 7 hari masih `PRODUCTION HOLD`; kontrak production
-  tetap tidak berubah sampai release, worker/provisioning, dan authenticated
-  product UAT disetujui.
+  masih memakai approval owner manual sampai release, worker/provisioning, dan
+  authenticated product UAT disetujui.
+- `CONFIRMED`: server error approval SagaBook akibat schema lifecycle yang
+  belum tersedia ditutup pada SagaDev Control Center release
+  `20260804171621-0ab9d8e`. Backup, dua migration allowlisted, schema,
+  katalog 7 hari, health, service, journal, dan rollback gate lulus; dua
+  lifecycle trial direkonsiliasi dan subscription berbayar tidak berubah.
+- `TODO`: owner perlu mengulang satu approval nyata dari UI setelah deployment
+  karena credential bridge tidak tersedia untuk authenticated acceptance
+  otomatis pada sesi release ini.
 - `CONFIRMED`: gap release runner Admin Booking telah ditutup pada source
   `500065c8`; release `20260802101645-500065c` aktif dengan readiness 100 dan
   rollback lama dipertahankan.
@@ -191,9 +199,10 @@ ketika keputusan atau release baru menutup gap.
   katalog canary otomatis diarsipkan pada Saga Platform release
   `20260727085127-5bf7977`. Evidence restricted tetap di luar repository
   publik.
-- `GAP-002` — `CONFIRMED` pada 31 Juli 2026: backend trial dua fase,
-  subscription, dan Owner Console aktif pada release
-  `20260731082637-70155bb`.
+- `GAP-002` — `DEPRECATED` untuk SagaBook pada 4 Agustus 2026 oleh
+  DEC-029. Backend trial dua fase lama diganti lifecycle aktif 7 hari,
+  grace read-only hari 8–14, dan suspend setelah hari 14 pada SagaDev Control
+  Center release `20260804171621-0ab9d8e`.
 - `GAP-003` — `CONFIRMED` pada 31 Juli 2026: public Home/Pricing/Help/Contact/
   Privacy/Terms/Legal dipromosikan atomik dan lulus public smoke bersama
   backend/Studio exact source.

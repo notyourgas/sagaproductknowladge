@@ -73,8 +73,8 @@ Harga bulanan: Basic Rp500.000, Growth Rp950.000, Pro Rp1.500.000.
 Limit: Basic 1 cabang/3 staff; Growth 3 cabang/10 staff; Pro maksimal 10
 cabang/30 staff self-service; kebutuhan lebih besar menggunakan Custom.
 Booking dipasarkan unlimited dengan fair-use.
-Trial: 14 hari dua fase; hari 1-7 full access dan hari 8-14 plan-limited,
-kemudian grace read-only hari 15-21.
+Trial SagaBook: 7 hari full access, kemudian grace read-only hari 8-14 dan
+suspend setelah hari 14; tidak ada auto-charge.
 
 Update terbaru: Support & Recovery Center production. Owner/admin dapat
 bertanya, melakukan human handoff, melanjutkan tiket, mengakses account
@@ -93,6 +93,12 @@ studio sendiri, atau manual-only. Candidate signup pada source `dcb5a3f3`
 menyiapkan trial 7 hari otomatis tanpa approval owner/email verification,
 dengan login tetap menunggu provisioning ready. Auto-trial itu belum
 production dan tetap `PRODUCTION HOLD`.
+
+SagaDev Control Center source `0ab9d8e3bff95a6c46425a376d93b732c22b7b52`
+aktif sebagai release `20260804171621-0ab9d8e`. Release platform-only ini
+menutup server error approval SagaBook dengan schema lifecycle dan
+reconciliation 7 hari. Approval owner manual masih berlaku; release aplikasi
+SagaBook dan SagaView tidak diganti.
 
 UI/UX operasional pada source `8edd7621` memperbaiki
 dashboard/admin, action staff, storefront booking milik tenant, hierarchy

@@ -117,7 +117,8 @@ Operating system sebelum sesi untuk self-photo studio Indonesia.
 ## FAQ
 
 **Apakah SagaBook termasuk SagaView?** Tidak. Produk dijual satuan.
-**Apakah trial otomatis menagih?** Tidak. Trial dua fase tidak auto-charge.
+**Apakah trial otomatis menagih?** Tidak. Trial aktif 7 hari tidak auto-charge;
+setelahnya tersedia grace read-only 7 hari sebelum suspend.
 **Apakah provider pasti mengirim reminder?** Hanya bila delivery nyata
 terverifikasi; fallback manual harus tetap terlihat.
 

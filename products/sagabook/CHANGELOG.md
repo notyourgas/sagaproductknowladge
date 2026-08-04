@@ -4,6 +4,25 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-04 - Trial lifecycle approval production repair
+
+- Klasifikasi: `CONFIRMED`; status `PRODUCTION_DEPLOYED` pada SagaDev
+  Control Center source
+  `0ab9d8e3bff95a6c46425a376d93b732c22b7b52`, release
+  `20260804171621-0ab9d8e`.
+- Before: approval trial SagaBook dapat menghasilkan server error karena tabel
+  lifecycle pusat belum tersedia; source lama juga masih dapat membentuk durasi
+  14 hari yang bertentangan dengan kebijakan 7 hari.
+- After: schema lifecycle tersedia, trial aktif tepat 7 hari, hari 8–14
+  grace read-only, katalog bernilai 7, dan reconciliation bersifat idempotent.
+- Gate: 961 test/11.008 assertion, build, backup database, dua migration
+  exact-path, nol migration lain, dua lifecycle terverifikasi, subscription
+  berbayar tetap, service/health/journal/rollback lulus.
+- Boundary: aplikasi SagaBook tetap release
+  `20260803194351-d70fc1e`; S72 auto-trial tetap `PRODUCTION HOLD` dan
+  approval owner manual masih berlaku. Satu retry approval nyata dari owner
+  masih menjadi UAT terakhir.
+
 ## 2026-08-04 - Active storefront header clipboard recovery candidate
 
 - Klasifikasi: `CONFIRMED`; delivery

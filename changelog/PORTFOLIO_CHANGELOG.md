@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-04 - SagaBook trial lifecycle approval repaired
+
+- `CONFIRMED / PRODUCTION_DEPLOYED`: SagaDev Control Center release
+  `20260804171621-0ab9d8e` menutup server error approval SagaBook dengan
+  schema lifecycle dan reconciliation 7 hari.
+- Dua migration allowlisted diterapkan; dua lifecycle trial, katalog 7 hari,
+  subscription berbayar, service, health, journal, dan rollback target
+  terverifikasi. Tidak ada migration pending lain yang dijalankan.
+- SagaBook dan SagaView tidak diganti. Approval owner manual tetap berlaku dan
+  S72 auto-trial tetap `PRODUCTION HOLD`; authenticated owner retry menjadi
+  UAT terakhir.
+
 ## 2026-08-04 - SagaBook active header clipboard recovery candidate
 
 - `CONFIRMED`: bantuan header storefront aktif tidak lagi mengaku berhasil

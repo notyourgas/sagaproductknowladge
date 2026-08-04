@@ -12,6 +12,27 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-04
 
+### SagaBook trial lifecycle approval production repair
+
+- Ringkasan: schema lifecycle pusat dan reconciliation trial SagaBook 7 hari
+  sekarang aktif pada SagaDev Control Center.
+- Alasan: approval owner sebelumnya gagal dengan server error karena tabel
+  lifecycle belum tersedia dan kontrak source lama masih mengandung 14 hari.
+- Produk/area terdampak: SagaDev Control Center, SagaBook approval,
+  subscription trial, katalog trial, entitlement, migration, backup, health,
+  service, journal, dan rollback.
+- Klasifikasi: `CONFIRMED`; source
+  `0ab9d8e3bff95a6c46425a376d93b732c22b7b52`, release
+  `20260804171621-0ab9d8e`.
+- Production berubah hanya pada Control Center. SagaBook tetap
+  `20260803194351-d70fc1e`, SagaView tetap
+  `20260803221207-b504dae`, dan S72 auto-trial tetap ditahan.
+- Gate: 961 test/11.008 assertion, build, backup terverifikasi, dua migration
+  exact-path, nol migration lain, dua lifecycle 7 hari, paid subscription
+  preserved, endpoint 200, service aktif, Nginx valid, journal bersih, dan
+  rollback target tersedia.
+- Next action: owner mengulang approval nyata dari UI.
+
 ### SagaBook active storefront header clipboard recovery candidate
 
 - Ringkasan: tombol bantuan pada header storefront aktif sekarang menunggu
