@@ -12,6 +12,27 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-04
 
+### SagaView Studio route focus recovery candidate
+
+- Ringkasan: navigasi internal Studio sekarang memindahkan fokus ke konten utama
+  route baru dan evidence visual memakai ukuran viewport exact.
+- Alasan: CTA `Kembali ke Session` sebelumnya mengubah route tetapi menyisakan
+  fokus pada elemen tidak aktif, sehingga handoff keyboard/screen reader tidak
+  deterministik.
+- Produk/area terdampak: Admin shell, seluruh navigasi Studio, skip-link,
+  keyboard/screen reader, visual QA, provenance, dan release evidence.
+- Klasifikasi: `CONFIRMED`; source
+  `2bb868f82b8a4d3a6dc6cd1cd2a7091f447cfeca`, branch
+  `codex/s105-studio-route-focus`, delivery
+  `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: red 2 pass/1 fail, green 3/3, gabungan accessibility/navigation 12/12,
+  format/lint/typecheck, 156/156 unit, build/SSR, budget 288,3 KiB dari 450 KiB,
+  full E2E 99/99, npm audit nol vulnerability, dan visual exact dua viewport.
+- Production berubah: tidak. Runtime tetap `57c0337b` /
+  `20260803221207-57c0337`, rollback `20260803215526-be72510`; empat public
+  route 200 dan versi tetap `v0.20.3`. Blocker adalah release-safety receipt
+  exact S105 dan approval. Watermark tunggal serta kontrak bisnis tidak berubah.
+
 ### SagaBook Review release-gate fixture recovery
 
 - Ringkasan: menutup dua kegagalan 410 pada full backend S102 dengan membuat

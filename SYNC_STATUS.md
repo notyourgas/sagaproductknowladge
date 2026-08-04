@@ -12,20 +12,20 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-04T21:15:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-04T22:20:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `41b832f33aa041248c34b96145e0d785c98acfbc` |
-| Informasi terakhir disinkronkan | SagaBook S103 Composer online nol advisory dan acceptance segar source `621a74a006316b9e4cd2135a4b4d34a824c0604f`; production tetap `d70fc1e0` / `20260803194351-d70fc1e`. |
+| Baseline sebelum pembaruan | `f361200917250160c2201a45adc4ef385a070e3e` |
+| Informasi terakhir disinkronkan | SagaView S105 route focus recovery source `2bb868f82b8a4d3a6dc6cd1cd2a7091f447cfeca`; production tetap `57c0337b` / `20260803221207-57c0337`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada; S103 bersifat kumulatif terhadap S102 dan tidak mengubah kontrak production. |
-| Error | Release-safety receipt exact S103 belum tersedia; production tidak dideploy. |
+| Konflik | Tidak ada; S105 bersifat kumulatif terhadap S97 dan tidak mengubah kontrak production. |
+| Error | Release-safety receipt exact S105 belum tersedia; production tidak dideploy. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/sagabook/PRODUCT.md`
-- `products/sagabook/DOSSIER.md`
-- `products/sagabook/CHANGELOG.md`
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/DOSSIER.md`
+- `products/sagaview/CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `GAPS.md`
@@ -34,9 +34,9 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 ## Item menunggu konfirmasi
 
-S103 SagaBook menunggu release-safety receipt exact source dan approval
-production. S97 SagaView tetap menunggu receipt dan
-approval deployment. Ulangi satu approval trial SagaBook nyata dari UI owner.
+S105 SagaView menunggu release-safety receipt exact source dan approval
+production. S103 SagaBook tetap menunggu receipt dan approval deployment.
+Ulangi satu approval trial SagaBook nyata dari UI owner.
 S72 auto-trial tetap
 `PRODUCTION HOLD` sampai release dan authenticated product UAT terpisah.
 

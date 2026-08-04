@@ -4,6 +4,31 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-08-04 - Focus recovery navigasi Studio candidate
+
+- Klasifikasi: `CONFIRMED` sebagai candidate, bukan production.
+- Status: `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
+- Before: navigasi internal, termasuk CTA `Kembali ke Session`, mengubah route
+  tetapi meninggalkan fokus browser pada elemen tidak aktif. Pengguna keyboard
+  dan screen reader tidak mendapat handoff deterministik ke konten route baru.
+- After: Admin shell memindahkan fokus ke `#studio-console-content` sesudah
+  perubahan pathname, mengabaikan render pertama, dan mempertahankan kontrak
+  skip-link `tabindex=0`. Screenshot evidence sekarang berukuran viewport exact
+  390x844 dan 1440x900, bukan full-page capture.
+- Source `2bb868f82b8a4d3a6dc6cd1cd2a7091f447cfeca` pada branch
+  `codex/s105-studio-route-focus`. Validation: red 2 pass/1 fail pada focus,
+  green focused 3/3, gabungan accessibility/navigation 12/12, format/lint/
+  typecheck, 156/156 unit, build/SSR, budget 288,3 KiB dari 450 KiB, full E2E
+  99/99, dan npm audit nol vulnerability.
+- Production tetap Studio source
+  `57c0337b43b46229253ce89ace39f2ed587fc2d7`, release
+  `20260803221207-57c0337`, rollback `20260803215526-be72510`; empat public
+  route merespons 200 dan HTML Changelog tetap memuat `v0.20.3`.
+- Blocker deploy: fresh encrypted backup/checksum/disposable restore yang
+  terikat exact S105 dan approval produksi belum tersedia.
+- Device/session, foto/local-first, permission, tenant isolation, payment,
+  frame/preset, export/4R, dan satu `Powered by SagaView` tidak berubah.
+
 ## 2026-08-04 - Typography visual QA candidate dipulihkan
 
 - Klasifikasi: `CONFIRMED` sebagai candidate, bukan production.

@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-04 - SagaView Studio route focus recovery candidate
+
+- `CONFIRMED`: navigasi internal Studio kini memindahkan fokus ke konten utama
+  route baru. Kontrak skip-link tetap sama dan screenshot evidence dikoreksi
+  menjadi viewport exact 390x844 serta 1440x900.
+- Source kumulatif `2bb868f82b8a4d3a6dc6cd1cd2a7091f447cfeca` pada
+  `codex/s105-studio-route-focus`; red 2 pass/1 fail, green 3/3, gabungan
+  accessibility/navigation 12/12, unit 156/156, full E2E 99/99, build/budget,
+  dan npm audit nol vulnerability.
+- Delivery `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
+  Production tetap `57c0337b` / `20260803221207-57c0337`; blocker adalah
+  backup/checksum/disposable restore exact S105 dan approval. Kontrak runtime,
+  watermark, activation, dan business readiness tidak berubah.
+
 ## 2026-08-04 - SagaBook Review release-gate fixture recovery
 
 - `CONFIRMED`: blocker backend S102 berasal dari dua fixture sesi absolut yang
