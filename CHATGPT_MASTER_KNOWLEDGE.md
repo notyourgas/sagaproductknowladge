@@ -100,6 +100,18 @@ menutup server error approval SagaBook dengan schema lifecycle dan
 reconciliation 7 hari. Approval owner manual masih berlaku; release aplikasi
 SagaBook dan SagaView tidak diganti.
 
+Candidate storefront terbaru adalah koreksi Review source
+`8fefbab052292f4538009da30332ed91615a0e21` pada
+`codex/s102-review-edit-return`, berstatus
+`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Customer dapat kembali langsung
+ke Review setelah mengubah cabang, paket, jadwal, background, add-on, atau
+detail; fokus/scroll dipulihkan dan jadwal divalidasi sebelum CTA aktif. Suite
+storefront 114 test terjadwal, build, design, serta npm audit hijau. Kandidat
+belum `STAGING_READY` karena full backend 959/960 pada satu tes legacy
+`updateSettingsFn`, Composer advisory audit terhalang jaringan/cache, dan
+release-safety receipt exact source belum tersedia. Production tetap
+`d70fc1e0` / `20260803194351-d70fc1e`.
+
 UI/UX operasional pada source `8edd7621` memperbaiki
 dashboard/admin, action staff, storefront booking milik tenant, hierarchy
 responsif, accessibility states, dan signature `Powered by SagaBook` tanpa

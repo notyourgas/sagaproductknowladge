@@ -12,20 +12,20 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-04T18:16:42+07:00 |
+| Waktu pembaruan terakhir | 2026-08-04T19:31:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `b0d1754d1b8802a16ec876945bc70a2602ab9ded` |
-| Informasi terakhir disinkronkan | SagaView typography visual QA candidate source `babd04cf0d728da2b32318a3200f47b00dbc59e0`; production tetap `57c0337b` / `20260803221207-57c0337`. |
+| Baseline sebelum pembaruan | `c9b3a9a3d9ff1e3b0cf13e6281b9ed8df10a74e0` |
+| Informasi terakhir disinkronkan | SagaBook Review direct-return candidate source `8fefbab052292f4538009da30332ed91615a0e21`; production tetap `d70fc1e0` / `20260803194351-d70fc1e`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada; S97 bersifat kumulatif terhadap candidate Changelog S96 dan tidak mengubah kontrak production. |
-| Error | Tidak ada pada sinkronisasi; S97 belum memiliki release-safety receipt exact source. |
+| Konflik | Tidak ada; S102 bersifat kumulatif terhadap S101 dan tidak mengubah kontrak production. |
+| Error | Backend S102 959/960 pada satu tes legacy `updateSettingsFn`; Composer advisory audit terhalang Packagist/cache; release-safety receipt exact source belum tersedia. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/sagaview/PRODUCT.md`
-- `products/sagaview/DOSSIER.md`
-- `products/sagaview/CHANGELOG.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `GAPS.md`
@@ -34,9 +34,10 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 ## Item menunggu konfirmasi
 
-S97 SagaView dan S101 SagaBook menunggu release-safety receipt exact source
-serta approval deployment. Ulangi satu approval trial SagaBook nyata dari UI
-owner. S72 auto-trial tetap
+S102 SagaBook menunggu perbaikan backend legacy test, audit Composer, dan
+release-safety receipt exact source. S97 SagaView tetap menunggu receipt dan
+approval deployment. Ulangi satu approval trial SagaBook nyata dari UI owner.
+S72 auto-trial tetap
 `PRODUCTION HOLD` sampai release dan authenticated product UAT terpisah.
 
 ## Cara verifikasi

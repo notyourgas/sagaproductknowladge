@@ -127,6 +127,24 @@ terverifikasi; fallback manual harus tetap terlihat.
 Multi-tenant web application dengan storefront, admin, super-admin, background
 jobs, billing, audit, dan immutable release process.
 
+Koreksi Review storefront pada source
+`8fefbab052292f4538009da30332ed91615a0e21` berstatus
+`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Before: setelah memilih `Ubah`,
+customer harus mengulang langkah berikutnya satu per satu dan tidak mendapat
+focus recovery. After: customer dapat menyimpan lalu kembali langsung ke
+Review, atau memakai tombol header `Kembali ke Review`; fokus dan scroll
+dipulihkan. Pada koreksi Jadwal, CTA tetap terkunci sampai availability selesai
+dan slot pilihan terverifikasi. Focused Playwright 2/2 dan suite storefront 114
+test terjadwal exit hijau pada 390x844 serta 1440x900; build, design audit 26/0,
+npm audit nol vulnerability, no-overflow, target 44 piksel, dan satu watermark
+non-fixed lulus. Full backend belum hijau: 959/960, dengan tes lama
+`updateSettingsFn` menerima 410 alih-alih 200. Composer audit tidak selesai
+karena Packagist timeout dan advisory tidak tersedia di cache. Karena itu
+kandidat belum `STAGING_READY`; release-safety receipt exact source dan approval
+juga belum ada. Production tetap source `d70fc1e0`, release
+`20260803194351-d70fc1e`; booking/payment/provider, tenant isolation, preset,
+invoice, receipt, dan SagaView tidak berubah.
+
 Recovery clipboard langkah `Selesai` pada source
 `2bcacb240c2a89e751a0c1df1ed687f122918988` berstatus
 `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`. Before: pesan

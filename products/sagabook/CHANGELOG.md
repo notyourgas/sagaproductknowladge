@@ -4,6 +4,32 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-04 - Review correction direct-return candidate
+
+- Klasifikasi: `CONFIRMED`; delivery
+  `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Candidate source
+  `8fefbab052292f4538009da30332ed91615a0e21` tersedia pada branch
+  `codex/s102-review-edit-return`; belum `STAGING_READY`.
+- Before: tombol `Ubah` pada Review membawa customer ke langkah lama, lalu CTA
+  generik memaksa pengulangan langkah berikutnya; perubahan langkah juga tidak
+  memulihkan fokus atau scroll. After: CTA `Simpan dan kembali ke Review` dan
+  tombol header `Kembali ke Review` memberi loop koreksi langsung. Jadwal wajib
+  selesai memvalidasi availability sebelum CTA aktif.
+- Gate hijau: focused 2/2; seluruh storefront 114 test terjadwal dengan exit 0
+  pada mobile dan desktop; build; design audit 26 artefak/0 pelanggaran; npm
+  audit nol vulnerability; target 44 piksel, focus, no-overflow, dan tepat satu
+  `Powered by SagaBook` non-fixed.
+- Gate gagal/belum tersedia: backend 959/960 karena tes lama
+  `test_owner_can_configure_structured_manual_transfer_account` menerima 410
+  dari `updateSettingsFn` alih-alih 200; Composer audit terhalang timeout
+  Packagist dan advisory tidak tersedia di cache; release-safety receipt exact
+  S102 serta approval belum tersedia.
+- Production tidak berubah: source `d70fc1e0d922eed86fe4ea4998688aad32c68c43`,
+  release `20260803194351-d70fc1e`, rollback
+  `20260803132556-cfb2af8`. Public smoke empat surface 200. Payment/provider,
+  availability rules, permission, tenant isolation, invoice/receipt, preset,
+  SagaView, activation, dan business readiness tidak berubah.
+
 ## 2026-08-04 - Trial lifecycle approval production repair
 
 - Klasifikasi: `CONFIRMED`; status `PRODUCTION_DEPLOYED` pada SagaDev

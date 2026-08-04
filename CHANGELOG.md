@@ -12,6 +12,30 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-04
 
+### SagaBook Review correction direct-return candidate
+
+- Ringkasan: enam jalur `Ubah` pada Review storefront sekarang mempunyai loop
+  koreksi langsung, focus/scroll recovery, dan gate availability Jadwal.
+- Alasan: alur lama memaksa customer mengulang langkah berikutnya setelah
+  koreksi serta tidak memindahkan fokus ke konten langkah baru.
+- Produk/area terdampak: tenant storefront Review/navigation, header, jadwal,
+  loading state, focus, screen reader, responsivitas, dan release evidence.
+- Klasifikasi: `CONFIRMED`; source
+  `8fefbab052292f4538009da30332ed91615a0e21`, branch
+  `codex/s102-review-edit-return`, delivery
+  `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; belum `STAGING_READY`.
+- Gate hijau: focused 2/2; storefront 114 test terjadwal exit 0; build; design
+  26/0; npm audit nol vulnerability; 390x844/1440x900; target 44 piksel;
+  no-overflow; tepat satu watermark non-fixed.
+- Gate gagal/belum tersedia: backend 959/960 karena tes legacy
+  `updateSettingsFn` menerima 410 alih-alih 200; Composer audit terhalang
+  Packagist/cache; release-safety receipt exact S102 dan approval belum ada.
+- Production berubah: tidak. Runtime tetap `d70fc1e0` /
+  `20260803194351-d70fc1e`, rollback `20260803132556-cfb2af8`; public smoke
+  empat surface 200. Booking/payment/provider, permission, tenant isolation,
+  preset, invoice/receipt, SagaView, activation, dan business readiness tidak
+  berubah.
+
 ### SagaView typography visual QA candidate
 
 - Ringkasan: source kumulatif Changelog SagaView kini melayani Work Sans dari

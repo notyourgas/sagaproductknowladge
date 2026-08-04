@@ -154,6 +154,15 @@ ketika keputusan atau release baru menutup gap.
   receipt berisi backup/checksum/disposable restore, migration preflight,
   approval, immutable release, service/journal, rollback proof, dan public
   smoke yang semuanya terikat exact S101.
+- `BLOCKED`: candidate koreksi Review direct-return source `8fefbab0` lulus
+  focused 2/2, suite storefront 114 test terjadwal exit hijau, build, design,
+  dan npm audit; production tetap `d70fc1e0` / `20260803194351-d70fc1e`.
+  Candidate belum `STAGING_READY` karena backend hanya 959/960 pada tes legacy
+  `updateSettingsFn`, Composer advisory audit terhalang Packagist/cache, dan
+  release-safety receipt exact S102 belum tersedia. Tutup ketiga gate, lalu
+  lakukan backup/checksum/disposable restore, migration preflight, approval,
+  immutable release, service/journal, rollback proof, dan public smoke exact
+  source sebelum deployment.
 
 ### SagaView
 

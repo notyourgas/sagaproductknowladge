@@ -1,5 +1,20 @@
 # Portfolio Changelog
 
+## 2026-08-04 - SagaBook Review direct-return candidate
+
+- `CONFIRMED`: enam jalur `Ubah` pada Review sekarang dapat kembali langsung
+  melalui CTA simpan atau tombol header, dengan focus/scroll recovery. Koreksi
+  Jadwal menunggu availability tervalidasi sebelum CTA aktif.
+- Source `8fefbab052292f4538009da30332ed91615a0e21` pada
+  `codex/s102-review-edit-return`; focused 2/2, suite storefront 114 test
+  terjadwal exit hijau, build, design 26/0, dan npm audit nol vulnerability.
+- Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`, belum
+  `STAGING_READY`: backend 959/960 pada satu tes legacy `updateSettingsFn`,
+  Composer audit terhalang Packagist/cache, dan release-safety receipt exact
+  S102 belum ada. Production tetap `d70fc1e0` / `20260803194351-d70fc1e`;
+  payment, tenant isolation, preset, SagaView, activation, dan business
+  readiness tidak berubah.
+
 ## 2026-08-04 - SagaView typography visual QA candidate
 
 - `CONFIRMED`: delapan respons font 403 pada worktree dengan junction
