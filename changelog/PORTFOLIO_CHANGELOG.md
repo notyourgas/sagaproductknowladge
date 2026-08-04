@@ -1,5 +1,24 @@
 # Portfolio Changelog
 
+## 2026-08-05 - SagaView unsaved navigation dialog candidate
+
+- `CONFIRMED`: dialog perubahan belum disimpan pada General, Brand, dan Output
+  sekarang memiliki nama aksesibel, focus trap, Escape, internal scroll, serta
+  tiga keputusan 48 piksel yang tetap jelas: simpan, pindah tanpa simpan, atau
+  tetap di halaman.
+- Source kumulatif `707a6f615715c67a8c09817228983c38c28857d6` pada
+  `codex/s112-sagaview-unsaved-dialog`; red 1/1 menjadi focused 3/3, regression
+  terkait 11 pass/1 capture-only skip, unit 156/156, full E2E 108 pass/2
+  capture-only skip, build/budget, Axe, forced-colors, reduced-motion,
+  no-overflow, serta dua npm audit nol.
+- Matriks 390x844, 1280x720, 1440x900, dan reflow efektif 125/150/200 persen
+  menjaga dialog di visual viewport dan tepat satu `Powered by SagaView`.
+- Delivery `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
+  Production tetap `57c0337b` / `20260803221207-57c0337`; blocker adalah
+  backup/checksum/disposable restore exact S112 dan approval. Persistence,
+  device/session, foto, tenant, payment, activation, dan business readiness
+  tidak berubah.
+
 ## 2026-08-05 - SagaView dialog PIN zoom candidate
 
 - `CONFIRMED`: dialog PIN override paket Studio sekarang dikenali screen reader,

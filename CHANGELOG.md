@@ -12,6 +12,29 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-05
 
+### SagaView dialog perubahan belum disimpan candidate
+
+- Ringkasan: penjaga navigasi bersama pada General, Brand, dan Output sekarang
+  dikenali sebagai alert dialog, menahan fokus, mendukung Escape, dan menjaga
+  ketiga keputusan tetap dapat dicapai pada layar pendek serta zoom tinggi.
+- Alasan: dialog lama hanya berupa overlay visual tanpa nama/semantik dialog,
+  focus trap, dan batas visual viewport; risiko utamanya adalah operator
+  kehilangan konteks atau kontrol ketika berpindah route dengan perubahan aktif.
+- Produk/area terdampak: Studio settings navigation, dialog primitive,
+  Save/Pindah/Tetap, keyboard/focus, touch target, contrast, viewport/zoom QA,
+  provenance, dan release evidence. Persistence serta kontrak bisnis tidak berubah.
+- Klasifikasi: `CONFIRMED`; source
+  `707a6f615715c67a8c09817228983c38c28857d6`, branch
+  `codex/s112-sagaview-unsaved-dialog`, delivery
+  `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: red 1/1 gagal menjadi focused 3/3; regression terkait 11 pass/1
+  capture-only skip; format/lint/typecheck; unit 156/156; full E2E 108 pass/2
+  capture-only skip; build/budget; Axe; forced-colors; reduced-motion;
+  no-overflow; dan dua npm audit nol.
+- Production berubah: tidak. Runtime tetap `57c0337b` /
+  `20260803221207-57c0337`, rollback `20260803215526-be72510`; blocker adalah
+  release-safety receipt exact S112 dan approval.
+
 ### SagaView dialog PIN zoom candidate
 
 - Ringkasan: dialog PIN override paket sekarang semantik, keyboard-safe, dan

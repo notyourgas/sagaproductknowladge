@@ -127,6 +127,18 @@ Production belum berubah karena receipt backup/restore exact S111 dan approval
 belum tersedia; validasi PIN dan kontrak device/session, foto, tenant, payment,
 frame, serta output 4R tidak berubah.
 
+Candidate penjaga navigasi source kumulatif `707a6f61` memperbaiki dialog
+perubahan belum disimpan yang dipakai General, Brand, dan Output. Dialog
+sekarang mempunyai nama/deskripsi aksesibel, focus trap, Escape, internal
+scroll, overlay berlapis benar, dan tiga aksi 48 piksel. Alur simpan kemudian
+pindah route tetap terbukti end-to-end. Matriks 390x844, 1280x720, 1440x900,
+dan reflow efektif 125/150/200 persen lulus Axe, keyboard/focus, forced-colors,
+reduced-motion, no-overflow, serta satu watermark. Full E2E menghasilkan 108
+pass dan dua capture-only skip; unit 156/156, build/budget, serta audit
+dependency nol. Production belum berubah karena receipt backup/restore exact
+S112 dan approval belum tersedia; persistence setting dan kontrak bisnis tidak
+berubah.
+
 ## Fitur MVP
 
 `CONFIRMED`: journey Studio, output 4R, completion/privacy handoff,

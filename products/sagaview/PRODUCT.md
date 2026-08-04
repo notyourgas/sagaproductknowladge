@@ -1,8 +1,8 @@
 # SagaView Product Knowledge
 
 Updated: 5 Agustus 2026
-Evidence status: production deployed + production activated; dialog PIN zoom
-candidate implemented not deployed
+Evidence status: production deployed + production activated; unsaved navigation
+dialog candidate implemented not deployed
 
 ## Tujuan dokumen
 
@@ -156,6 +156,15 @@ Body dialog dapat discroll tanpa mengeluarkan CTA dari visual viewport; input
 minimal 44 piksel, close/action 48 piksel, serta Axe, forced-colors,
 reduced-motion, no-overflow, dan satu watermark lulus. Production tetap source
 `57c0337b`; deploy menunggu release-safety exact S111 dan approval.
+
+`CONFIRMED` sebagai candidate terbaru, bukan production: source `707a6f61`
+membuat penjaga navigasi perubahan aktif pada General, Brand, dan Output menjadi
+alert dialog bernama dengan focus trap, Escape, internal scroll, dan tiga aksi
+48 piksel. Alur Simpan & Pindah tetap meneruskan operator ke route tujuan;
+persistence dan kontrak setting tidak berubah. Matriks 390x844, 1280x720,
+1440x900, serta reflow efektif 125-200 persen lulus Axe, keyboard/focus,
+forced-colors, reduced-motion, no-overflow, dan satu watermark. Production tetap
+source `57c0337b`; deploy menunggu release-safety exact S112 dan approval.
 
 ## Workflow preset, editor, dan review
 

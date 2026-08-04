@@ -492,6 +492,17 @@ capture-only skip, build/budget, serta audit nol. Status
 Studio `57c0337b` / `20260803221207-57c0337` sampai release-safety exact S111
 dan approval tersedia. Validasi PIN dan kontrak bisnis tidak berubah.
 
+Candidate Studio terbaru berikutnya `707a6f61` menutup gap penjaga navigasi
+perubahan aktif pada General, Brand, dan Output. Dialog sekarang mempunyai nama
+aksesibel, focus trap, Escape, internal scroll, overlay benar, serta tiga aksi
+48 piksel; Simpan & Pindah tetap meneruskan route end-to-end. Matriks 390x844,
+1280x720, 1440x900, dan reflow efektif 125/150/200 persen lulus Axe,
+forced-colors, reduced-motion, no-overflow, satu watermark, 156 unit, 108 E2E
+pass dengan dua capture-only skip, build/budget, serta audit nol. Status
+`LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`; production tetap
+Studio `57c0337b` / `20260803221207-57c0337` sampai release-safety exact S112
+dan approval tersedia. Persistence setting dan kontrak bisnis tidak berubah.
+
 Candidate Saga Platform `dcb5a3f3` menyiapkan signup SagaView auto-trial 7 hari
 tanpa approval owner/email verification. Login tetap menunggu provisioning
 ready dan device tetap diaktivasi dari aplikasi studio. Statusnya
