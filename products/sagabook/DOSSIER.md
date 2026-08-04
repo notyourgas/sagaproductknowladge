@@ -127,6 +127,23 @@ terverifikasi; fallback manual harus tetap terlihat.
 Multi-tenant web application dengan storefront, admin, super-admin, background
 jobs, billing, audit, dan immutable release process.
 
+State pilihan storefront pada source kumulatif
+`18f2b3c15d63dff8f5e97cd7883e48cb56610c8e` berstatus
+`LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`. Before: perubahan
+visual tidak diikuti state programatik pada pilihan Lokasi, filter/Paket,
+tanggal/slot, Background, dan Bayar; filter Paket pada sebagian preset berukuran
+34-38 piksel. After: seluruh single-select mengumumkan `aria-pressed=true/false`
+secara konsisten dan filter Paket minimal 44x44 piksel pada Elegant Cream Brown,
+Retro Fun, Streetwear Studio, Family Bright, serta Mono Gallery. Red semantic
+1 pass/1 fail dan red touch 2 pass/1 fail ditutup menjadi focused 3/3; seluruh
+storefront 120 test terjadwal exit 0 pada mobile/desktop, backend 960/960 dengan
+11.007 assertion, build, design audit 26/0, npm/Composer audit nol, no-overflow,
+dan satu `Powered by SagaBook` lulus. Perubahan tidak menyentuh workflow/API,
+migration, dependency, data preset, payment, availability, permission, tenant
+isolation, invoice, receipt, atau SagaView. Production tetap source `d70fc1e0`,
+release `20260803194351-d70fc1e`; kandidat menunggu receipt backup terenkripsi,
+checksum, disposable restore exact S106, dan approval.
+
 Koreksi Review storefront pada source kumulatif
 `621a74a006316b9e4cd2135a4b4d34a824c0604f` berstatus
 `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Before: setelah memilih `Ubah`,

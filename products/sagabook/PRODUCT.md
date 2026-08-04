@@ -158,6 +158,20 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
 - Source production terbaru pada cut-off: commit
   `d70fc1e0d922eed86fe4ea4998688aad32c68c43`.
 - Release production tercatat: `20260803194351-d70fc1e`.
+- State pilihan storefront dan touch target filter Paket sudah
+  `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED` pada source
+  kumulatif `18f2b3c15d63dff8f5e97cd7883e48cb56610c8e`, branch
+  `codex/s106-storefront-selection-state`. Before: pilihan visual pada Lokasi,
+  Paket, Jadwal, Background, dan Bayar tidak mengumumkan state terpilih kepada
+  screen reader; filter Paket pada beberapa preset hanya 34-38 piksel. After:
+  seluruh kontrol single-select memakai `aria-pressed` yang mengikuti state dan
+  filter Paket minimal 44x44 piksel pada lima preset existing. Red-green,
+  focused 3/3, 120 test storefront terjadwal exit 0, backend 960/960 dengan
+  11.007 assertion, build, design 26/0, dependency audit nol, dua viewport,
+  no-overflow, dan tepat satu watermark lulus. Tidak ada perubahan workflow,
+  API, migration, dependency, preset data, payment, availability, permission,
+  tenant isolation, invoice, atau receipt. Production belum berubah karena
+  release-safety receipt exact S106 dan approval belum tersedia.
 - Koreksi dari langkah `Review` dan penutupan blocker fixture waktunya sudah
   `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED` pada source kumulatif
   `621a74a006316b9e4cd2135a4b4d34a824c0604f`, branch

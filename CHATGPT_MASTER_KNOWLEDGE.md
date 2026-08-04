@@ -100,7 +100,20 @@ menutup server error approval SagaBook dengan schema lifecycle dan
 reconciliation 7 hari. Approval owner manual masih berlaku; release aplikasi
 SagaBook dan SagaView tidak diganti.
 
-Candidate storefront terbaru adalah koreksi Review kumulatif source
+Candidate storefront terbaru adalah state pilihan dan touch target source
+`18f2b3c15d63dff8f5e97cd7883e48cb56610c8e` pada
+`codex/s106-storefront-selection-state`, berstatus
+`LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`. Seluruh pilihan
+single-select dari Lokasi sampai Bayar kini mengekspos `aria-pressed`; filter
+Paket minimal 44x44 piksel pada lima preset existing. Focused 3/3, storefront
+120 test terjadwal exit 0, backend 960/960 dengan 11.007 assertion, build,
+design 26/0, dependency audit nol, dan visual exact dua viewport lulus.
+Workflow, payment, availability, permission, tenant isolation, preset data,
+watermark, invoice, dan receipt tidak berubah. Kandidat menunggu release-safety
+receipt exact S106 dan approval. Production tetap `d70fc1e0` /
+`20260803194351-d70fc1e`.
+
+Candidate sebelumnya adalah koreksi Review kumulatif source
 `621a74a006316b9e4cd2135a4b4d34a824c0604f` pada
 `codex/s103-manual-transfer-fixture`, berstatus
 `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Customer dapat kembali langsung

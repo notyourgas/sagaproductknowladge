@@ -12,6 +12,28 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-04
 
+### SagaBook storefront selection state dan touch target
+
+- Ringkasan: selected state dari Lokasi sampai Bayar kini dapat dibaca screen
+  reader dan filter Paket minimal 44x44 piksel pada lima preset existing.
+- Alasan: state sebelumnya hanya visual; filter sebagian preset 34-38 piksel.
+- Produk/area terdampak: storefront tenant, seluruh single-select booking,
+  filter Paket, accessibility, responsivitas, visual QA, provenance, dan release
+  evidence. Workflow/API serta kontrak bisnis tidak berubah.
+- Klasifikasi: `CONFIRMED`; source
+  `18f2b3c15d63dff8f5e97cd7883e48cb56610c8e`, branch
+  `codex/s106-storefront-selection-state`, delivery
+  `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: dua red proof ditutup menjadi focused 3/3; storefront 120 test
+  terjadwal exit 0; backend 960/960 dan 11.007 assertion; build; design 26/0;
+  npm/Composer audit nol; dua viewport exact; no-overflow; satu watermark;
+  empat public smoke production existing 200.
+- Production berubah: tidak. Runtime tetap `d70fc1e0` /
+  `20260803194351-d70fc1e`, rollback `20260803132556-cfb2af8`; blocker adalah
+  release-safety receipt exact S106 dan approval. Payment, availability,
+  permission, tenant isolation, migration, dependency, data preset, invoice,
+  receipt, SagaView, activation, dan business readiness tidak berubah.
+
 ### SagaView Studio route focus recovery candidate
 
 - Ringkasan: navigasi internal Studio sekarang memindahkan fokus ke konten utama

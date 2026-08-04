@@ -4,6 +4,28 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-04 - Storefront selection state dan touch target
+
+- Klasifikasi: `CONFIRMED`; delivery
+  `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`. Source kumulatif
+  `18f2b3c15d63dff8f5e97cd7883e48cb56610c8e` tersedia pada branch
+  `codex/s106-storefront-selection-state`.
+- Before: selected state hanya terlihat visual dan filter Paket pada sebagian
+  preset berukuran 34-38 piksel. After: seluruh single-select Lokasi sampai
+  Bayar mengekspos `aria-pressed`, sementara filter Paket minimal 44x44 piksel
+  pada lima preset existing.
+- Gate: red semantic 1 pass/1 fail dan red touch 2 pass/1 fail menjadi focused
+  3/3; storefront 120 test terjadwal exit 0; backend 960/960 dengan 11.007
+  assertion; build; design 26/0; npm/Composer audit nol; visual 390x844 dan
+  1440x900; no-overflow; tepat satu watermark. Empat public smoke production
+  existing merespons 200.
+- Tidak ada perubahan workflow/API, migration, dependency, data preset,
+  payment, availability, permission, tenant isolation, invoice, atau receipt.
+- Production tidak berubah: source `d70fc1e0d922eed86fe4ea4998688aad32c68c43`,
+  release `20260803194351-d70fc1e`, rollback
+  `20260803132556-cfb2af8`. Deployment menunggu release-safety receipt exact
+  S106 dan approval.
+
 ## 2026-08-04 - Review release-gate fixture recovery
 
 - Klasifikasi: `CONFIRMED`; delivery

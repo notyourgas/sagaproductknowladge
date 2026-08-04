@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-04 - SagaBook storefront selection state candidate
+
+- `CONFIRMED`: selected state Lokasi sampai Bayar sekarang programatik melalui
+  `aria-pressed`; filter Paket minimal 44x44 piksel pada lima preset existing.
+- Source kumulatif `18f2b3c15d63dff8f5e97cd7883e48cb56610c8e` pada
+  `codex/s106-storefront-selection-state`; focused 3/3, storefront 120 test
+  terjadwal exit 0, backend 960/960, build, design 26/0, dependency audit nol,
+  dan visual exact dua viewport lulus.
+- Delivery `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
+  Production tetap `d70fc1e0` / `20260803194351-d70fc1e`; blocker adalah
+  receipt backup/checksum/disposable restore exact S106 dan approval. Workflow,
+  payment, availability, permission, tenant isolation, data preset, watermark,
+  activation, dan business readiness tidak berubah.
+
 ## 2026-08-04 - SagaView Studio route focus recovery candidate
 
 - `CONFIRMED`: navigasi internal Studio kini memindahkan fokus ke konten utama

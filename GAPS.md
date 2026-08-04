@@ -165,6 +165,14 @@ ketika keputusan atau release baru menutup gap.
   disposable restore ke exact S103 belum tersedia. Lengkapi receipt, migration
   preflight, approval, immutable release, service/journal, rollback proof, dan
   public smoke exact source sebelum deployment.
+- `BLOCKED`: candidate state pilihan storefront source `18f2b3c1` lulus
+  focused 3/3, storefront 120 test terjadwal exit 0, backend 960/960, build,
+  design, npm/Composer audit, visual exact dua viewport, target 44 piksel, dan
+  satu watermark. Production tetap `d70fc1e0` / `20260803194351-d70fc1e`.
+  Bukti penutup adalah release-safety receipt berisi backup terenkripsi,
+  checksum, disposable restore dan migration preflight yang terikat exact S106,
+  approval, immutable release, service/header/journal, rollback proof, serta
+  public smoke exact source.
 
 ### SagaView
 
