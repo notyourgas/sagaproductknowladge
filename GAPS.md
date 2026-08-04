@@ -230,6 +230,11 @@ ketika keputusan atau release baru menutup gap.
   migration 017. Record taxonomy lama dipertahankan sebagai legacy read-only;
   keputusan koreksi/penghapusan tiap record tetap memerlukan verifikasi pemilik
   data dan tidak menjadi blocker submission baru.
+- Jalur `/register/guest` dan migration 020 sudah `PRODUCTION_DEPLOYED`.
+  `NEEDS CONFIRMATION`: satu UAT nyata dari submit guest, pending WhatsApp,
+  admin memilih tim saat approval, valid-link, session player, sampai update
+  tim/roster lintas perangkat. Nomor yang sudah terdaftar harus tetap ditolak
+  sebagai duplicate; jangan memakai fixture sebagai bukti provider.
 - Fonnte runtime, migration 009–010, dan channel delivery UAT sudah
   `PRODUCTION_DEPLOYED`. Public-origin redirect, typed failure state, dan
   player workspace sync migration 016 juga sudah `PRODUCTION_DEPLOYED`;

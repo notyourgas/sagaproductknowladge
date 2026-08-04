@@ -12,32 +12,33 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-04T13:52:58+07:00 |
+| Waktu pembaruan terakhir | 2026-08-04T14:04:16+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `98d89700d63a0e13c72df73d426b883d353cc7bb` |
-| Informasi terakhir disinkronkan | SagaBook candidate `95621347050450a06dd8e5c95eedbd112aa2ff0e` menambahkan pencarian, filter, accordion satu-detail, empty/reset recovery, dan jalur kembali ke Hari Ini pada admin Changelog. |
+| Baseline sebelum pembaruan | `2774fb0f7eac970709b6a75765a42503d23af06a` |
+| Informasi terakhir disinkronkan | AOGTICVITY source `308a8547af171c9fc26ce07350ca332bbe8ae913`, Hostinger `20260804T065837Z`, Vercel `dpl_9CknJM1QQzWGjbCPXFWPXegA2SBH`, dan migration 020 menambahkan workflow pemain undangan end-to-end. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada; registry rilis dan workflow bisnis SagaBook tidak berubah. |
-| Error | Tidak ada pada candidate lokal; production belum berubah karena backup/restore exact candidate dan approval deploy belum tersedia. |
+| Konflik | Tidak ada; activation guest tetap dipisahkan dari technical production deployment. |
+| Error | Tidak ada pada release; UAT guest nyata belum selesai sehingga activation tidak diklaim. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/sagabook/PRODUCT.md`
-- `products/sagabook/DOSSIER.md`
-- `products/sagabook/CHANGELOG.md`
+- `products/aogticvity/PRODUCT.md`
+- `products/aogticvity/DOSSIER.md`
+- `products/aogticvity/CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
+- `DECISIONS.md`
 - `GAPS.md`
 - `CHANGELOG.md`
 - `SYNC_STATUS.md`
 
 ## Item menunggu konfirmasi
 
-Siapkan encrypted backup/checksum/disposable restore yang terikat exact
-candidate SagaBook, minta approval deploy, lalu jalankan immutable release dan
-public smoke sebelum mengubah status production. UAT operator studio nyata
-tetap diperlukan sebelum klaim business ready.
+Jalankan satu UAT pemain undangan nyata: submit dengan nomor yang belum
+terdaftar, cek pending WhatsApp, approve dengan tim saat roster Draft, buka
+valid-link, verifikasi player session/tim, lalu uji update roster lintas
+perangkat. Jangan ubah activation sebelum flow tersebut lulus.
 
 ## Cara verifikasi
 

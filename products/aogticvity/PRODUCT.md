@@ -187,6 +187,16 @@ Public delivery saat ini: `https://olimpiade-kemerdekaan.vercel.app`.
   resmi. Sepuluh lomba selalu tampil sebagai accordion; hanya hasil
   `Published`/`Corrected` yang memunculkan podium, sedangkan `Draft` tetap
   tersembunyi dan lomba tanpa publikasi memakai empty state jujur.
+- Source `308a8547af171c9fc26ce07350ca332bbe8ae913`, Hostinger release
+  `20260804T065837Z`, Vercel production
+  `dpl_9CknJM1QQzWGjbCPXFWPXegA2SBH`, dan migration 020 mengaktifkan jalur
+  `/register/guest` untuk pemain undangan. Form hanya meminta nama, WhatsApp,
+  status sudah/belum memiliki CG, dan consent. Admin wajib memilih tim Draft
+  saat approval; assignment tim, provisioning player, antrean WhatsApp, dan
+  audit terjadi atomik. Generator tim mempertahankan guest pada tim pilihan
+  admin dan hanya menyeimbangkan anggota komunitas. Technical production
+  deployment lulus; satu siklus guest nyata sampai valid-link/session masih
+  memerlukan UAT sebelum fitur ini dinyatakan production-activated.
 - SQLite hanya fast test adapter.
 - Event-master memiliki dry-run, validation, atomic publish, versioning, dan
   audit. Durasi jadwal bersifat provisional dan dapat disunting admin.

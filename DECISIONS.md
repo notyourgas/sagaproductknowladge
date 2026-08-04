@@ -398,3 +398,17 @@ keputusan pengganti.
 | Pemberi keputusan | Andreas / founder |
 | Status | `CONFIRMED`; source dan public production runtime terverifikasi |
 | Dokumen terkait | [AOGTICVITY Product](products/aogticvity/PRODUCT.md), [AOGTICVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTICVITY Changelog](products/aogticvity/CHANGELOG.md) |
+
+## DEC-028 - AOGTICVITY memisahkan pendaftaran pemain undangan
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-04 |
+| Topik | Jalur pemain dari luar komunitas AOGTICVITY |
+| Keputusan | Sediakan link pendaftaran tambahan untuk pemain undangan yang hanya meminta nama, nomor WhatsApp, status sudah/belum memiliki CG, dan consent. Public tidak memilih role atau tim; admin memilih tim saat approval. |
+| Alasan | Pemain undangan tidak seharusnya dipaksa memakai taxonomy komunitas atau menentukan permission dan tim sendiri. |
+| Alternatif yang dipertimbangkan | Memakai form komunitas yang sama; menambah field role/tim pada form public; menyimpan guest pada dataset terpisah. |
+| Dampak | Guest tetap memakai participant identity kanonik, mendapat workflow WhatsApp/player/check-in/roster yang sama, tetapi sumbernya eksplisit. Approval guest admin-only, memerlukan roster Draft dan team assignment atomik; generator otomatis mempertahankan tim guest. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED`; source dan public production deployment terverifikasi, activation menunggu UAT guest nyata |
+| Dokumen terkait | [AOGTICVITY Product](products/aogticvity/PRODUCT.md), [AOGTICVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTICVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |

@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-04 - AOGTICVITY guest registration production deployment
+
+- Public memiliki `/register/guest` dengan data minimum nama, WhatsApp, status
+  CG, dan consent. Admin memilih tim saat approval; guest tidak memilih role
+  atau tim sendiri dan tidak dipindahkan generator otomatis.
+- Source `308a8547af171c9fc26ce07350ca332bbe8ae913`; Hostinger
+  `20260804T065837Z`; Vercel `dpl_9CknJM1QQzWGjbCPXFWPXegA2SBH`; migration
+  020. Unit 111, disposable MySQL 13/13, Playwright 58/58, build/audit,
+  readiness, dan public browser smoke lulus.
+- Delivery `PRODUCTION_DEPLOYED`; activation guest tetap
+  `NOT_PRODUCTION_ACTIVATED` sampai flow nyata submit → approval bertim →
+  WhatsApp valid-link → player session lulus UAT. Business readiness tetap
+  `BLOCKED`.
+
 ## 2026-08-04 - SagaBook admin Changelog navigation candidate
 
 - `CONFIRMED`: Changelog admin kini memiliki pencarian, filter lima jenis,

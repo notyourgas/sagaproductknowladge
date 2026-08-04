@@ -499,6 +499,15 @@ menambahkan riwayat pemenang pada Standing resmi. Seluruh 10 lomba tersedia
 sebagai accordion; hanya `Published`/`Corrected` yang menampilkan Juara 1/2/3,
 sementara draft tetap privat dan hasil yang belum tersedia memakai empty state.
 Public/player refresh 12 detik serta pulih saat focus/visibility/reconnect.
+Source `308a8547af171c9fc26ce07350ca332bbe8ae913`, Hostinger
+`20260804T065837Z`, Vercel `dpl_9CknJM1QQzWGjbCPXFWPXegA2SBH`, dan migration
+020 menambahkan pendaftaran pemain undangan di `/register/guest`. Public hanya
+mengisi nama, WhatsApp, status sudah/belum memiliki CG, dan consent. Admin wajib
+menetapkan tim Draft saat approval; identity player, team assignment, WhatsApp
+outbox, serta audit ditulis atomik. Generator tim tidak memindahkan guest.
+Delivery sudah `PRODUCTION_DEPLOYED`, tetapi activation jalur guest masih
+`NOT_PRODUCTION_ACTIVATED` sampai satu flow nyata registrasi, approval bertim,
+valid WhatsApp link, dan player session lulus UAT.
 Ini adalah nama terbaru project 17an/Olimpiade Kemerdekaan.
 
 Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:
@@ -576,6 +585,8 @@ Delivery: `PLANNED`. Belum production-activated.
 - Jangan klaim seluruh login WhatsApp AOGTICVITY production-ready. Fonnte
   runtime dan channel UAT sudah aktif, tetapi status webhook serta
   magic-link/session/reuse/revoke UAT belum lulus.
+- Jangan klaim jalur pemain undangan production-activated sebelum registrasi
+  nyata, approval dengan tim, WhatsApp valid-link, dan player session lulus UAT.
 - Jangan klaim Gmail sync, Google Sheets, atau PDF server-side SagaFin sebagai
   fitur aktif bila bukti terbaru belum berubah.
 - Jangan menyebut dummy/fixture/local log sebagai bukti provider.

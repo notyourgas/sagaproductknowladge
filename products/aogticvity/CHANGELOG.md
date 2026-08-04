@@ -8,6 +8,26 @@ Mencatat perubahan material AOGTICVITY/17an/Olimpiade.
 
 Nama lama dipertahankan sebagai provenance; status runtime harus eksplisit.
 
+## 2026-08-04 - Guest player registration production deployment
+
+- `CONFIRMED`: `/register/guest` menerima nama, WhatsApp, status CG, dan
+  consent tanpa selector role, kategori komunitas, atau tim.
+- Admin melihat sumber `Pemain undangan`, wajib memilih tim ketika approval,
+  dan guest tidak dipindahkan generator tim otomatis.
+- Approval guest admin-only serta atomik untuk assignment tim, provisioning
+  player, WhatsApp outbox, dan audit; roster non-Draft menolak approval.
+- Source `308a8547af171c9fc26ce07350ca332bbe8ae913`; Hostinger
+  `20260804T065837Z`; Vercel `dpl_9CknJM1QQzWGjbCPXFWPXegA2SBH`; migration
+  `020_guest_registration` aktif dengan backup terverifikasi dan record lama
+  tetap utuh.
+- Gate: 111 unit/service tests, 13/13 disposable MySQL integration tests,
+  Playwright 58/58, typecheck/build/audit, readiness, invalid-payload 422, dan
+  public browser smoke 390 px lulus.
+- Delivery `PRODUCTION_DEPLOYED`; activation jalur guest masih
+  `NOT_PRODUCTION_ACTIVATED` sampai registrasi, approval bertim, WhatsApp link,
+  dan valid session nyata lulus UAT. Business readiness keseluruhan tetap
+  `BLOCKED`.
+
 ## 2026-08-04 - Official winner history production
 
 - `CONFIRMED`: Standing resmi kini memuat accordion riwayat untuk seluruh 10

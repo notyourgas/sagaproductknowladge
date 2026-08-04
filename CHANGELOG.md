@@ -12,6 +12,28 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-04
 
+### AOGTICVITY guest registration production deployment
+
+- Ringkasan: menambahkan jalur public pemain undangan dengan data minimum,
+  filter sumber admin, approval wajib team, provisioning player, antrean
+  WhatsApp, audit atomik, dan fixed team assignment saat generator berjalan.
+- Alasan: keputusan founder agar pemain luar tidak memakai taxonomy komunitas
+  atau memilih role/tim sendiri.
+- Produk/area terdampak: public registration, admin participants, identity
+  player, WhatsApp copy/outbox, team generator, player workspace, check-in,
+  CSV, migration, Vercel, Hostinger, dan knowledge publik.
+- Klasifikasi: `CONFIRMED`; sumber Andreas/founder; source
+  `308a8547af171c9fc26ce07350ca332bbe8ae913`, Hostinger
+  `20260804T065837Z`, Vercel `dpl_9CknJM1QQzWGjbCPXFWPXegA2SBH`, migration
+  `020_guest_registration`, delivery `PRODUCTION_DEPLOYED`.
+- Gate: 111 unit/service, 13/13 disposable MySQL integration, Playwright 58/58,
+  typecheck/build/audit, backup integrity, readiness, invalid-payload 422, dan
+  public browser smoke 390 px lulus.
+- Production berubah: ya. Activation jalur guest belum berubah menjadi aktif;
+  satu UAT nyata submit, approval bertim, WhatsApp valid-link, dan player
+  session masih wajib. File knowledge: product/dossier/changelog AOGTICVITY,
+  master, decision, gaps, portfolio/root changelog, dan sync status.
+
 ### SagaBook admin Changelog navigation candidate
 
 - Ringkasan: mengganti 18 kartu rilis dengan 64 detail yang seluruhnya terbuka

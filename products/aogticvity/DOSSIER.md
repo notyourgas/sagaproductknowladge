@@ -80,6 +80,15 @@ memakai empty state. Public/player refresh setiap 12 detik serta saat focus,
 visibility, dan reconnect. Acceptance suite kini mencakup 50 Playwright checks,
 termasuk podium mocked, pending state, geometry 320 px, dan public smoke 390 px.
 
+Pemain dari luar komunitas memakai `/register/guest`. Data minimum adalah nama,
+nomor WhatsApp, status sudah/belum memiliki CG, dan consent; role maupun tim
+tidak dipilih public. Dashboard admin dapat memfilter sumber peserta dan wajib
+memilih tim saat approval guest selama roster tim masih `Draft`. Approval
+menyatukan team assignment, identity player, WhatsApp outbox, dan audit dalam
+satu transaksi. Guest tidak dipindahkan oleh generator otomatis. UI publik
+guest lulus matriks 320–1440 px, WCAG axe, no-overflow, serta total 58
+Playwright checks. Full guest-to-valid-session UAT nyata masih diperlukan.
+
 Taxonomy komunitas final mempunyai dua kategori utama: `TEEN` dengan enam
 subcategory `CG teen`, dan `SOUTH, WEST, CENTRAL` dengan delapan subcategory
 `CG youth`. Form, API validation, admin display, export, team balancing, dan
@@ -108,8 +117,9 @@ dan rehearsal fisik masih menahan activation keseluruhan.
 
 ## Roadmap
 
-1. Uji link WhatsApp valid pada dua perangkat, role redirect, assignment
-   tim/operator, roster, status lomba, check-in,
+1. Uji jalur pemain undangan nyata dari submit, pending WhatsApp, approval
+   bertim, valid-link, dan player session pada dua perangkat; lanjutkan role
+   redirect, assignment tim/operator, roster, status lomba, check-in,
    result draft/publish, live display, announcement, readiness, audit, dan
    recovery melalui public Vercel.
 2. Lakukan two-device authorization dan stale-state reconciliation UAT.
@@ -170,6 +180,9 @@ database session, dan admin password claim sudah terverifikasi melalui public
 Vercel.
 **Apakah pendaftaran sudah nyata?** Ya. Submit publik, receipt, persistence
 MySQL, admin list/approve, idempotent replay, dan audit sudah lulus UAT.
+Jalur guest sudah production-deployed tetapi belum production-activated sampai
+satu registrasi guest nyata, approval bertim, WhatsApp link, dan session player
+lulus UAT.
 **Apakah MFA wajib?** Tidak. MFA admin opsional; kontrol password, session,
 rate limit, RBAC, revoke, dan audit tetap wajib.
 **Apakah bisa multi-device?** Backend contract dan test MySQL tersedia, tetapi
@@ -217,7 +230,8 @@ custom domain/TLS, dan rehearsal runtime penuh belum terverifikasi.
 
 ## Data yang digunakan
 
-Event, participant, delapan team, roster, sepuluh competition, schedule,
+Event, participant beserta sumber Community/Guest dan status CG, delapan team,
+roster, sepuluh competition, schedule,
 mechanism, safety, equipment, official assignment, check-in, result, standing,
 announcement, participant feed event, workspace revision, version, audit, dan
 export.
@@ -227,7 +241,7 @@ export.
 Event-day time pressure, network failure, duplicate scoring, stale projection,
 authenticated four-role event-day UAT, stale-write/offline readiness recovery
 UAT, aktivasi/recovery provider notification,
-operations UAT, dua nama tim placeholder, serta durasi dan keputusan
+operations UAT, guest registration end-to-end UAT, serta durasi dan keputusan
 master recap yang masih provisional/open.
 
 ## KPI dan success metrics
