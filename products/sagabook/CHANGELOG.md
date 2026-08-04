@@ -4,6 +4,33 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-05 - Payment QRIS dan transfer selalu mobile
+
+- Klasifikasi: `CONFIRMED`; menerapkan kontrak founder `DEC-031`. Delivery
+  `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`. Source
+  `1de6a935d8694e9c5231a429d4ff41d7d1bc3d9c` tersedia pada branch
+  `codex/s113-sagabook-mobile-payment`.
+- Before: QRIS dan transfer manual masih memakai container desktop 5xl dan
+  grid dua kolom pada layar lebar. After: kedua route memakai satu canvas
+  mobile maksimum 460 piksel yang terpusat pada semua viewport, dengan alur
+  vertikal yang sama seperti mobile.
+- Kontrol Kembali, Salin, Ganti, dan Hapus memenuhi target minimum 44 piksel;
+  forced-colors, reduced-motion, keyboard focus, no-overflow, dan tepat satu
+  `Powered by SagaBook` lulus. Watermark tidak fixed dan tidak masuk artefak
+  pembayaran.
+- Gate: red 2/2, focused 2/2, visual payment 6/6, regresi kontrak 20/20,
+  acceptance storefront gabungan 129 pass/11 expected skip, backend 960/960
+  dengan 11.007 assertion, build, design 26/0, serta npm/Composer audit nol.
+  Coverage payment: 390x844, 1280x720, 1440x900, 1512x982, 2560x1440, dan
+  reflow efektif 200 persen.
+- Tidak ada perubahan API, migration, dependency, nominal, upload bukti,
+  status payment, availability, permission, tenant isolation, invoice, receipt,
+  preset, SagaView, activation, atau business readiness.
+- Production tidak berubah: source `d70fc1e0d922eed86fe4ea4998688aad32c68c43`,
+  release `20260803194351-d70fc1e`, rollback
+  `20260803132556-cfb2af8`. Deployment menunggu release-safety receipt exact
+  S113 dan approval.
+
 ## 2026-08-05 - Storefront booking selalu mobile
 
 - Klasifikasi: `CONFIRMED` melalui `DEC-031`; delivery

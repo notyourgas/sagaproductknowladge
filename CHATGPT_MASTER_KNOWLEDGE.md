@@ -100,19 +100,22 @@ menutup server error approval SagaBook dengan schema lifecycle dan
 reconciliation 7 hari. Approval owner manual masih berlaku; release aplikasi
 SagaBook dan SagaView tidak diganti.
 
-Candidate storefront terbaru adalah mobile-only source
-`33de71c6b7ab8bf2c0b2cc8fd5fef327fb68f0a5` pada
-`codex/s109-mobile-only-storefront`, berstatus
+Candidate storefront terbaru adalah mobile-only source kumulatif
+`1de6a935d8694e9c5231a429d4ff41d7d1bc3d9c` pada
+`codex/s113-sagabook-mobile-payment`, berstatus
 `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`. `DEC-031`
 menetapkan canvas maksimum 460 piksel pada seluruh viewport; desktop hanya
 memusatkan canvas dan tidak boleh menambah rail, workspace lebar, atau layout
 landing page. Arah S94/S108 yang memperlebar storefront menjadi 1040/1280
-piksel berstatus `DEPRECATED`. Focused 6/6, storefront 125 pass/11 expected
-skip, backend 960/960 dengan 11.007 assertion, build, design 26/0, dependency
-audit nol, no-overflow, focus keyboard, target 44 piksel, Maps/WhatsApp, alur
-Lokasi ke Paket, dan satu watermark lulus. Lima preset existing diuji dari
-390x844 sampai 3840x2160. Kandidat menunggu release-safety receipt exact S109
-dan approval; production tetap `d70fc1e0` / `20260803194351-d70fc1e`.
+piksel berstatus `DEPRECATED`. S113 menutup gap QRIS dan transfer manual yang
+masih memakai container desktop 5xl/grid dua kolom: keduanya kini satu alur
+mobile terpusat, kontrol minimum 44 piksel, dan tepat satu watermark. Red 2/2,
+focused 2/2, visual 6/6, regresi 20/20, storefront gabungan 129 pass/11
+expected skip, backend 960/960 dengan 11.007 assertion, build, design 26/0,
+dan dependency audit nol lulus. Coverage payment mencakup 390x844 sampai
+2560x1440 serta reflow efektif 200 persen; baseline lima preset tetap diuji
+sampai 3840x2160. Kandidat menunggu release-safety receipt exact S113 dan
+approval; production tetap `d70fc1e0` / `20260803194351-d70fc1e`.
 
 Candidate sebelumnya adalah recovery semantik form Detail source
 `2b3e544bb334299d443f67d77a43ac5614214d04` pada

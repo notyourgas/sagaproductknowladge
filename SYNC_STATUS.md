@@ -12,20 +12,20 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-05T04:22:47+07:00 |
+| Waktu pembaruan terakhir | 2026-08-05T05:42:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `0f410be26e0fc6d11cc99480e0ce21460dc776a3` |
-| Informasi terakhir disinkronkan | SagaView source `707a6f615715c67a8c09817228983c38c28857d6`: dialog perubahan belum disimpan pada General/Brand/Output lulus semantik/focus/ESC, tiga aksi 48 piksel, Axe, viewport 390/1280/1440, reflow efektif 125/150/200 persen, 156 unit, 108 E2E pass/2 capture-only skip, build/budget, dan audit nol; delivery `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah. |
+| Baseline sebelum pembaruan | `cd24aaafde84787eb8a8f418349ce659eefe2a63` |
+| Informasi terakhir disinkronkan | SagaBook source `1de6a935d8694e9c5231a429d4ff41d7d1bc3d9c`: QRIS dan transfer manual mengikuti canvas mobile maksimum 460 piksel pada semua viewport, kontrol minimum 44 piksel, satu watermark, storefront gabungan 129 pass/11 expected skip, backend 960/960, build/design/audit hijau; delivery `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik baru; persistence setting dan kontrak bisnis SagaView tidak berubah. |
-| Error | Tidak ada pada gate lokal; backup/checksum/disposable restore exact S112, approval, immutable release, dan public smoke masih terbuka. |
+| Konflik | Tidak ada konflik baru; S113 menerapkan `DEC-031` dan tidak mengubah payment logic atau kontrak bisnis. |
+| Error | Tidak ada pada gate lokal; backup/checksum/disposable restore exact S113, approval, immutable release, dan public smoke exact source masih terbuka. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/sagaview/PRODUCT.md`
-- `products/sagaview/DOSSIER.md`
-- `products/sagaview/CHANGELOG.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `GAPS.md`
@@ -34,7 +34,7 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 ## Item menunggu konfirmasi
 
-SagaView S112 menunggu release-safety receipt exact source, backup terenkripsi,
+SagaBook S113 menunggu release-safety receipt exact source, backup terenkripsi,
 checksum, disposable restore, migration preflight, approval, immutable release,
 service health, rollback proof, dan public smoke exact source sebelum production.
 

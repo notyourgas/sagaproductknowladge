@@ -134,20 +134,27 @@ landing page. Arah S94/S108 yang memperlebar storefront menjadi 1040/1280
 piksel berstatus `DEPRECATED`; responsivitas desktop penuh hanya untuk
 dashboard/admin SagaBook serta aplikasi/dashboard SagaView.
 
-Implementasi source `33de71c6b7ab8bf2c0b2cc8fd5fef327fb68f0a5` pada
-`codex/s109-mobile-only-storefront` berstatus `LOCAL_VALIDATED / STAGING_READY /
-IMPLEMENTED_NOT_DEPLOYED`. Red proof 6/6 berubah menjadi focused 6/6; final
-storefront 136 test terjadwal menghasilkan 125 pass/11 expected skip; backend
-960/960 dengan 11.007 assertion, build, design 26/0, npm/Composer audit nol,
-no-overflow, keyboard focus, target 44 piksel, Maps/WhatsApp, alur Lokasi ke
-Paket, serta tepat satu `Powered by SagaBook` lulus. Coverage exact meliputi
-390x844, 768x1024, 1280x720, 1440x900, 1512x982, 1920x1080, 2560x1440, dan
-3840x2160 pada lima preset existing. Workflow/API, migration, dependency,
-preset data, payment, availability, permission, tenant isolation, invoice,
-receipt, dan SagaView tidak berubah. Production tetap source `d70fc1e0`,
-release `20260803194351-d70fc1e`, rollback `20260803132556-cfb2af8`;
-kandidat menunggu receipt backup terenkripsi, checksum, disposable restore,
-migration preflight exact S109, dan approval.
+Implementasi kumulatif source `1de6a935d8694e9c5231a429d4ff41d7d1bc3d9c`
+pada `codex/s113-sagabook-mobile-payment` berstatus `LOCAL_VALIDATED /
+STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`. Baseline S109 tetap mengunci
+storefront umum maksimum 460 piksel; S113 menutup route QRIS dan transfer yang
+sebelumnya masih memakai container 5xl dan grid desktop dua kolom. Keduanya
+sekarang satu alur mobile terpusat, kontrol Salin/Ganti/Hapus minimum 44 piksel,
+dan tepat satu `Powered by SagaBook` non-fixed.
+
+Red proof payment 2/2 berubah menjadi focused 2/2; visual payment 6/6,
+regresi kontrak 20/20, dan acceptance storefront gabungan 129 pass/11 expected
+skip lulus. Backend 960/960 dengan 11.007 assertion, build, design 26/0,
+npm/Composer audit nol, no-overflow, keyboard focus, forced-colors,
+reduced-motion, dan target 44 piksel lulus. Coverage payment exact meliputi
+390x844, 1280x720, 1440x900, 1512x982, 2560x1440, dan reflow efektif 200
+persen; coverage baseline S109 tetap sampai 3840x2160 pada lima preset existing.
+API, migration, dependency, nominal, upload bukti, status pembayaran,
+availability, permission, tenant isolation, invoice, receipt, dan SagaView
+tidak berubah. Production tetap source `d70fc1e0`, release
+`20260803194351-d70fc1e`, rollback `20260803132556-cfb2af8`; kandidat menunggu
+receipt backup terenkripsi, checksum, disposable restore, migration preflight
+exact S113, dan approval.
 
 Recovery semantik form Detail storefront pada source kumulatif
 `2b3e544bb334299d443f67d77a43ac5614214d04` berstatus

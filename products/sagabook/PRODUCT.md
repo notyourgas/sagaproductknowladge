@@ -164,20 +164,25 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
   dan pola landing page tidak berlaku untuk storefront. Optimasi desktop tetap
   berlaku untuk dashboard/admin SagaBook dan aplikasi/dashboard SagaView.
 - Kontrak mobile-only itu sudah `LOCAL_VALIDATED / STAGING_READY /
-  IMPLEMENTED_NOT_DEPLOYED` pada source
-  `33de71c6b7ab8bf2c0b2cc8fd5fef327fb68f0a5`, branch
-  `codex/s109-mobile-only-storefront`. Arah S94/S108 yang memperlebar storefront
-  menjadi 1040/1280 piksel berstatus `DEPRECATED`. Red proof 6/6 gagal pada
-  source lama lalu focused S109 6/6 lulus; storefront final 136 test terjadwal
-  menghasilkan 125 pass/11 expected skip; backend 960/960 dengan 11.007
-  assertion, build, design 26/0, npm/Composer audit nol, no-overflow, keyboard
-  focus, target 44 piksel, Maps/WhatsApp, alur Lokasi ke Paket, dan tepat satu
-  watermark lulus. Evidence exact mencakup 390x844, 768x1024, Windows
-  1280x720, 1440x900, MacBook 1512x982, Full-HD 1920x1080, QHD 2560x1440,
-  dan 4K 3840x2160 pada lima preset existing. Tidak ada perubahan workflow,
-  API, migration, dependency, payment, availability, permission, tenant
-  isolation, data preset, invoice, receipt, atau SagaView. Production belum
-  berubah karena release-safety receipt exact S109 dan approval belum ada.
+  IMPLEMENTED_NOT_DEPLOYED` pada candidate kumulatif
+  `1de6a935d8694e9c5231a429d4ff41d7d1bc3d9c`, branch
+  `codex/s113-sagabook-mobile-payment`. Candidate memperluas baseline S109 ke
+  route pembayaran QRIS dan transfer manual: layout desktop dua kolom diganti
+  satu alur mobile maksimum 460 piksel yang terpusat, target Salin/Ganti/Hapus
+  menjadi minimum 44 piksel, dan setiap route payment memiliki tepat satu
+  `Powered by SagaBook`. Arah S94/S108 yang memperlebar storefront tetap
+  `DEPRECATED`. Red proof payment 2/2 gagal pada source lama; focused 2/2,
+  visual payment 6/6, regresi kontrak 20/20, dan acceptance storefront gabungan
+  129 pass/11 expected skip lulus. Backend 960/960 dengan 11.007 assertion,
+  build, design 26/0, npm/Composer audit nol, no-overflow, keyboard focus,
+  forced-colors, reduced-motion, target 44 piksel, dan watermark tunggal lulus.
+  Evidence payment mencakup 390x844, 1280x720, 1440x900, MacBook 1512x982,
+  QHD 2560x1440, serta reflow efektif 200 persen; baseline storefront tetap
+  mencakup sampai 4K 3840x2160 dan lima preset existing. Tidak ada perubahan
+  API, migration, dependency, nominal, upload bukti, status pembayaran,
+  availability, permission, tenant isolation, data preset, invoice, receipt,
+  atau SagaView. Production belum berubah karena release-safety receipt exact
+  S113 dan approval belum ada.
 - Recovery semantik form Detail storefront sudah
   `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED` pada source
   kumulatif `2b3e544bb334299d443f67d77a43ac5614214d04`, branch

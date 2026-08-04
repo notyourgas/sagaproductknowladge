@@ -1,5 +1,20 @@
 # Portfolio Changelog
 
+## 2026-08-05 - SagaBook mobile-only payment candidate
+
+- Route QRIS dan transfer manual sekarang mengikuti `DEC-031`: satu canvas
+  mobile maksimum 460 piksel dan terpusat pada desktop, tanpa grid pembayaran
+  dua kolom. Kontrol recovery/copy minimum 44 piksel dan tepat satu watermark.
+- Source `1de6a935d8694e9c5231a429d4ff41d7d1bc3d9c` pada
+  `codex/s113-sagabook-mobile-payment`; red 2/2, focused 2/2, visual 6/6,
+  regresi 20/20, storefront gabungan 129 pass/11 expected skip, backend
+  960/960, build, design 26/0, dan dependency audit nol.
+- Delivery `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
+  Production tetap `d70fc1e0` / `20260803194351-d70fc1e`; blocker adalah
+  receipt backup/checksum/disposable restore/migration preflight exact S113 dan
+  approval. API/payment logic, availability, permission, tenant isolation,
+  SagaView, activation, dan business readiness tidak berubah.
+
 ## 2026-08-05 - SagaView unsaved navigation dialog candidate
 
 - `CONFIRMED`: dialog perubahan belum disimpan pada General, Brand, dan Output

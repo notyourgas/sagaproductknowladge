@@ -12,6 +12,29 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-05
 
+### SagaBook mobile-only payment candidate
+
+- Ringkasan: route QRIS dan transfer manual kini memakai satu canvas mobile
+  maksimum 460 piksel yang terpusat pada seluruh viewport; tidak ada lagi grid
+  pembayaran desktop dua kolom.
+- Alasan: seluruh website booking tenant, termasuk tahap payment, wajib tetap
+  mobile-first dan tidak berubah menjadi layout desktop/landing page.
+- Produk/area terdampak: storefront payment, QRIS, transfer manual, header,
+  recovery/copy controls, touch target, keyboard/focus, forced-colors,
+  reduced-motion, visual regression, watermark, provenance, dan release
+  evidence. Payment logic dan kontrak bisnis tidak berubah.
+- Klasifikasi: `CONFIRMED` melalui `DEC-031`; source
+  `1de6a935d8694e9c5231a429d4ff41d7d1bc3d9c`, branch
+  `codex/s113-sagabook-mobile-payment`, delivery
+  `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: red 2/2; focused 2/2; visual payment 6/6; regresi kontrak 20/20;
+  storefront gabungan 129 pass/11 expected skip; backend 960/960 dengan 11.007
+  assertion; build; design 26/0; npm/Composer audit nol; matriks payment
+  390x844 sampai 2560x1440 dan reflow efektif 200 persen.
+- Production berubah: tidak. Runtime tetap `d70fc1e0` /
+  `20260803194351-d70fc1e`, rollback `20260803132556-cfb2af8`; blocker adalah
+  release-safety receipt exact S113 dan approval.
+
 ### SagaView dialog perubahan belum disimpan candidate
 
 - Ringkasan: penjaga navigasi bersama pada General, Brand, dan Output sekarang

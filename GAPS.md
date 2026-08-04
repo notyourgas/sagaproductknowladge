@@ -184,15 +184,17 @@ ketika keputusan atau release baru menutup gap.
 - `DEPRECATED`: candidate cross-monitor storefront S108 yang memperlebar canvas
   menjadi 1280 piksel digantikan keputusan mobile-only `DEC-031` dan source
   S109; S94/S108 tidak boleh dipromosikan ke production.
-- `BLOCKED`: candidate mobile-only storefront source `33de71c6` lulus focused
-  6/6, storefront 125 pass/11 expected skip, backend 960/960, build, design,
-  npm/Composer audit, matriks 390x844 sampai 3840x2160, target 44 piksel,
-  no-overflow, keyboard focus, Maps/WhatsApp, alur Lokasi ke Paket, dan satu
-  watermark pada lima preset. Production tetap `d70fc1e0` /
-  `20260803194351-d70fc1e`. Bukti penutup adalah release-safety receipt berisi
-  backup terenkripsi, checksum, disposable restore, migration preflight yang
-  terikat exact S109, approval, immutable release, service/header/journal,
-  rollback proof, serta public smoke exact source.
+- `BLOCKED`: candidate mobile-only storefront kumulatif source `1de6a935`
+  menutup baseline S109 serta route QRIS/transfer manual. Red payment 2/2,
+  focused 2/2, visual 6/6, regresi 20/20, storefront gabungan 129 pass/11
+  expected skip, backend 960/960, build, design, npm/Composer audit, matriks
+  payment 390x844 sampai 2560x1440 dan reflow efektif 200 persen, target 44
+  piksel, no-overflow, keyboard focus, serta satu watermark lulus. Production
+  tetap `d70fc1e0` / `20260803194351-d70fc1e`. Bukti penutup adalah
+  release-safety receipt berisi backup terenkripsi, checksum, disposable
+  restore, migration preflight yang terikat exact S113, approval, immutable
+  release, service/header/journal, rollback proof, serta public smoke exact
+  source.
 
 ### SagaView
 
