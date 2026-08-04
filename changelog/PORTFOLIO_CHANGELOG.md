@@ -5,7 +5,7 @@
 - `CONFIRMED`: Changelog admin kini memiliki pencarian, filter lima jenis,
   accordion satu-detail, empty/reset recovery, dan CTA 48 px kembali ke Hari
   Ini. Semua kontrol pencarian/filter minimal 44 px.
-- Candidate `95621347b2cb179a62d773ed4f24c8a891044ac3` pada
+- Candidate `95621347050450a06dd8e5c95eedbd112aa2ff0e` pada
   `codex/s97-sagabook-admin-nav` lulus focused E2E 2/2, snapshot 3/3, kontrak
   admin 52/52, backend 960/960, build, design audit, dan audit dependency 0.
 - Delivery `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.

@@ -16,7 +16,7 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
 | Baseline sebelum pembaruan | `98d89700d63a0e13c72df73d426b883d353cc7bb` |
-| Informasi terakhir disinkronkan | SagaBook candidate `95621347b2cb179a62d773ed4f24c8a891044ac3` menambahkan pencarian, filter, accordion satu-detail, empty/reset recovery, dan jalur kembali ke Hari Ini pada admin Changelog. |
+| Informasi terakhir disinkronkan | SagaBook candidate `95621347050450a06dd8e5c95eedbd112aa2ff0e` menambahkan pencarian, filter, accordion satu-detail, empty/reset recovery, dan jalur kembali ke Hari Ini pada admin Changelog. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
 | Konflik | Tidak ada; registry rilis dan workflow bisnis SagaBook tidak berubah. |
 | Error | Tidak ada pada candidate lokal; production belum berubah karena backup/restore exact candidate dan approval deploy belum tersedia. |

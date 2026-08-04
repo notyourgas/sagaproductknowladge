@@ -21,7 +21,7 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
   keyboard/focus, responsivitas, forced-colors, reduced-motion, dan release
   evidence; data rilis serta workflow bisnis tidak berubah.
 - Klasifikasi: `CONFIRMED`; candidate source
-  `95621347b2cb179a62d773ed4f24c8a891044ac3` pada branch
+  `95621347050450a06dd8e5c95eedbd112aa2ff0e` pada branch
   `codex/s97-sagabook-admin-nav`, status
   `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
 - Gate: focused E2E 2/2, snapshot visual 3/3, kontrak admin 52/52, focused

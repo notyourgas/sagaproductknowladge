@@ -341,7 +341,7 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
   release `20260803194351-d70fc1e`; approval eksekusi production masih menjadi
   blocker. Booking/payment/availability dan tenant isolation tidak berubah.
 - Candidate navigasi admin Changelog pada source
-  `95621347b2cb179a62d773ed4f24c8a891044ac3` berstatus
+  `95621347050450a06dd8e5c95eedbd112aa2ff0e` berstatus
   `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`. Daftar 18
   rilis/64 perubahan kini memakai pencarian, lima filter, accordion satu-detail,
   empty/reset recovery, dan CTA kembali ke Hari Ini. Kontrol discovery minimal

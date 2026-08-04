@@ -315,7 +315,7 @@ eksekusi production belum diberikan; runtime tetap release
 `20260803194351-d70fc1e` dan tidak ada migration atau activation.
 
 Admin Changelog navigation candidate pada source
-`95621347b2cb179a62d773ed4f24c8a891044ac3` berstatus
+`95621347050450a06dd8e5c95eedbd112aa2ff0e` berstatus
 `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`. Sebelum
 perubahan, 18 rilis dan 64 detail terbuka bersamaan tanpa pencarian atau jalur
 recovery. Kandidat menambahkan pencarian lintas versi/area/perubahan, lima

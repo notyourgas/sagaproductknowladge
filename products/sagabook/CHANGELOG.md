@@ -10,7 +10,7 @@ Mencatat perubahan material SagaBook dengan provenance public-safe.
   `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`. Production
   tetap source `d70fc1e0d922eed86fe4ea4998688aad32c68c43`, release
   `20260803194351-d70fc1e`, dengan rollback `20260803132556-cfb2af8`.
-- Candidate source `95621347b2cb179a62d773ed4f24c8a891044ac3` tersedia pada
+- Candidate source `95621347050450a06dd8e5c95eedbd112aa2ff0e` tersedia pada
   branch `codex/s97-sagabook-admin-nav`.
 - Before: 18 rilis dengan 64 detail dibuka bersamaan, tanpa pencarian, tanpa
   empty recovery, dan tanpa jalur dominan kembali ke operasi. After: hanya satu

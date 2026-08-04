@@ -228,7 +228,7 @@ production belum diberikan, sehingga runtime tetap `d70fc1e0` release
 `20260803194351-d70fc1e`; booking/payment/availability tidak berubah.
 
 Candidate navigasi admin Changelog SagaBook pada source
-`95621347b2cb179a62d773ed4f24c8a891044ac3` tersedia di branch
+`95621347050450a06dd8e5c95eedbd112aa2ff0e` tersedia di branch
 `codex/s97-sagabook-admin-nav` dengan status
 `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`. Sebelum
 perubahan, 18 rilis/64 detail tampil terbuka bersamaan. Kandidat memakai
