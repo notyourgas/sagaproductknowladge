@@ -1,6 +1,6 @@
 # AOGTICVITY Product Knowledge
 
-Updated: 4 Agustus 2026
+Updated: 5 Agustus 2026
 Evidence status: public Vercel delivery + database-backed auth, registration, team, and event-day operations runtime
 
 ## Tujuan dokumen
@@ -51,12 +51,14 @@ sebagai nama produk terbaru. Nama lama tetap disimpan sebagai provenance.
 
 | Surface | Target |
 |---|---|
-| Public | `aogticvity.com` |
-| Admin | `admin.aogticvity.com` |
-| Player | `app.aogticvity.com` |
-| Leader | `appl.aogticvity.com` |
+| Public | `aogticvities.fun` |
+| Admin | `admin.aogticvities.fun` |
+| Player | `app.aogticvities.fun` |
+| Leader | `appl.aogticvities.fun` |
 
-Domain tersebut target, bukan bukti production aktif.
+Domain telah dibeli dan kelima hostname, termasuk `www`, sudah ditautkan serta
+ownership-nya terverifikasi pada project Vercel. DNS Hostinger, sertifikat,
+runtime origin, dan public smoke belum selesai; domain belum production aktif.
 
 Public delivery saat ini: `https://olimpiade-kemerdekaan.vercel.app`.
 
@@ -262,7 +264,7 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:
   role dan tim leader; perubahan assignment mencabut session lama. Admin,
   operator, leader, dan player mempunyai home route kanonik yang ditegakkan
   server-side.
-- Roster/check-in/result rehearsal lintas perangkat, target custom domains,
+- Roster/check-in/result rehearsal lintas perangkat, cutover DNS/TLS custom domain,
   aktivasi provider status webhook, valid-link WhatsApp session UAT dua
   perangkat, serta UAT fisik hari-H belum selesai. Public invalid-link smoke
   sudah membuktikan redirect memakai origin Vercel dan tidak lagi localhost.

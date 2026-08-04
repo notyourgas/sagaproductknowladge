@@ -309,7 +309,7 @@ ketika keputusan atau release baru menutup gap.
 - `NEEDS CONFIRMATION`: authenticated four-role serta
   roster/status-lomba/check-in/result/announcement/readiness multi-device
   operations UAT; stale-write dan cached-snapshot recovery; recovery/session
-  flow, target custom domain, dan physical event
+  flow, DNS/TLS serta runtime-origin cutover `aogticvities.fun`, dan physical event
   rehearsal. Team generator/direct assignment/publish/lock persistence sudah
   `CONFIRMED` pada migration 013. Rundown, operator assignment, result
   verification, recovery status, dan live display persistence sudah

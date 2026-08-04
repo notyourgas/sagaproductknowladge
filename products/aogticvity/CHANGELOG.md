@@ -8,6 +8,21 @@ Mencatat perubahan material AOGTICVITY/17an/Olimpiade.
 
 Nama lama dipertahankan sebagai provenance; status runtime harus eksplisit.
 
+## 2026-08-05 - Domain `.fun` attached, DNS cutover pending
+
+- `CONFIRMED`: domain kanonik yang dibeli adalah `aogticvities.fun`; surface
+  admin, player, dan leader memakai `admin`, `app`, dan `appl`.
+- Root, `www`, `admin`, `app`, serta `appl` sudah ditautkan dan ownership-nya
+  terverifikasi pada project Vercel `olimpiade-kemerdekaan`.
+- Source `f915947f8159cfa6bde922c26cc6615273547372` menyiapkan metadata,
+  environment contract, routing test, OpenAPI, README, serta guarded cutover
+  plan untuk domain `.fun`.
+- Gate lokal: 111 unit/service tests, 15 targeted domain/auth tests, typecheck,
+  production build, dan dependency audit nol vulnerability lulus.
+- Status domain `DOMAIN_ATTACHED / DNS_PENDING / NOT_PUBLICLY_ACTIVATED`.
+  Production existing dan URL Vercel lama tidak berubah; blocker berikutnya
+  adalah record DNS Hostinger, sertifikat, runtime origin, dan public smoke.
+
 ## 2026-08-04 - Magic-link origin dan mobile modal hotfix production
 
 - `CONFIRMED`: halaman konfirmasi WhatsApp tidak lagi memasang

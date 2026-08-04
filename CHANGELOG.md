@@ -12,6 +12,22 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-05
 
+### AOGTICVITY canonical domain preparation
+
+- Ringkasan: domain `aogticvities.fun` dibeli dan lima hostname sudah
+  ditautkan ke project Vercel; source menyiapkan contract `.fun`.
+- Alasan: founder mengonfirmasi ejaan domain dan meminta aktivasi domain
+  role-based untuk public, admin, player, dan leader.
+- Produk/area terdampak: domain map, deployment edge, auth trusted origins,
+  WhatsApp public origin, metadata, OpenAPI, routing tests, rollback, dan UAT.
+- Klasifikasi: `CONFIRMED`; source
+  `f915947f8159cfa6bde922c26cc6615273547372`; status
+  `DOMAIN_ATTACHED / DNS_PENDING / NOT_PUBLICLY_ACTIVATED`.
+- Gate: 111 unit/service tests, 15 targeted domain/auth tests, typecheck,
+  production build, dependency audit nol, dan Vercel ownership verification.
+- Production berubah: belum. DNS Hostinger, sertifikat, runtime origin, serta
+  public smoke harus lulus sebelum URL baru digunakan untuk WhatsApp/login.
+
 ### SagaBook storefront Detail form recovery
 
 - Ringkasan: label form Detail kini terhubung ke input; feedback WhatsApp

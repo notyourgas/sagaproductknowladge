@@ -626,8 +626,10 @@ Ini adalah nama terbaru project 17an/Olimpiade Kemerdekaan.
 Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:
 `NOT_PRODUCTION_ACTIVATED`; auth dan registration: `PRODUCTION_ACTIVATED`.
 Business readiness: `BLOCKED`. Public delivery aktif di
-`https://olimpiade-kemerdekaan.vercel.app`; target custom domain belum
-diaktifkan. Real credential login dan database-backed session sudah terbukti;
+`https://olimpiade-kemerdekaan.vercel.app`. Domain `aogticvities.fun` sudah
+dibeli dan root/`www`/`admin`/`app`/`appl` ditautkan ke Vercel, tetapi DNS,
+sertifikat, runtime origin, dan smoke belum selesai sehingga belum diaktifkan.
+Real credential login dan database-backed session sudah terbukti;
 admin password claim dan registration UAT sudah selesai. Roster/check-in/result
 rehearsal, provider status webhook, valid-link WhatsApp two-device session UAT, dan
 physical multi-device UAT belum selesai. Rundown, result, live-controller,

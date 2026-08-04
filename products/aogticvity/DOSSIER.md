@@ -7,7 +7,7 @@ content AOGTICVITY tetap jelas.
 
 ## Konteks dan status bukti
 
-- Updated: 4 Agustus 2026
+- Updated: 5 Agustus 2026
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED`
@@ -131,7 +131,8 @@ dan rehearsal fisik masih menahan activation keseluruhan.
    result draft/publish, live display, announcement, readiness, audit, dan
    recovery melalui public Vercel.
 2. Lakukan two-device authorization dan stale-state reconciliation UAT.
-3. Aktifkan target custom domain dan pilih recovery/notification provider.
+3. Selesaikan DNS/TLS `aogticvities.fun`, smoke empat surface, dan cutover
+   origin WhatsApp; pilih recovery/notification provider.
 4. Finalisasi durasi dan keputusan lain yang masih open pada master recap.
 5. Multi-device/event rehearsal dan public smoke.
 6. `NEEDS CONFIRMATION`: repeatable product/service model.
@@ -176,8 +177,9 @@ Operational app untuk matchday komunitas, bukan sekadar landing event.
 
 ## FAQ
 
-**Apakah domain sudah live?** Public Vercel delivery aktif; domain custom
-AOGTICVITY belum diaktifkan.
+**Apakah domain sudah live?** Public Vercel delivery aktif. Domain
+`aogticvities.fun` sudah dibeli dan ditautkan ke Vercel, tetapi DNS, TLS,
+runtime origin, dan smoke belum selesai sehingga belum production aktif.
 **Apakah notification aktif?** Sebagian. Runtime Fonnte, migration 009–010,
 dan satu pengiriman kanal UAT sudah aktif. Provider status webhook serta flow
 approval → valid magic-link → session → reuse/revoke belum lulus UAT. Origin
@@ -235,8 +237,8 @@ GET. Status webhook memakai shared secret dan idempotent event ledger; operator
 dapat retry failed/blocked setelah cooldown dengan batas lima percobaan.
 Provider channel UAT sudah terverifikasi. Redirect magic-link ke origin publik
 sudah terverifikasi, tetapi status webhook dan valid-link two-device session
-UAT masih menunggu. Projection display, export/print,
-custom domain/TLS, dan rehearsal runtime penuh belum terverifikasi.
+UAT masih menunggu. Projection display dan export/print tersedia; cutover
+custom domain/TLS serta rehearsal runtime penuh belum terverifikasi.
 
 ## Data yang digunakan
 

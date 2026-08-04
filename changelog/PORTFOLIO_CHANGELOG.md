@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-05 - AOGTICVITY domain `.fun` attached
+
+- `CONFIRMED`: domain `aogticvities.fun` dibeli; root, `www`, `admin`, `app`,
+  dan `appl` sudah ditautkan serta ownership-nya terverifikasi pada Vercel.
+- Source `f915947f8159cfa6bde922c26cc6615273547372` menyiapkan kontrak domain;
+  111 tests, 15 targeted tests, typecheck, build, dan dependency audit lulus.
+- Status `DOMAIN_ATTACHED / DNS_PENDING / NOT_PUBLICLY_ACTIVATED`. Production
+  existing tidak berubah; DNS Hostinger, TLS, runtime origin, dan smoke masih
+  menjadi blocker.
+
 ## 2026-08-05 - SagaBook storefront Detail form recovery candidate
 
 - `CONFIRMED`: empat field Detail sekarang mempunyai accessible name dan

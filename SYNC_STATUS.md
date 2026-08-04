@@ -12,32 +12,33 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-05T00:24:12+07:00 |
+| Waktu pembaruan terakhir | 2026-08-05T01:04:06+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `4011b0eb2b4134808487ba0d01b640e1cbf5ea62` |
-| Informasi terakhir disinkronkan | SagaBook storefront Detail form recovery source `2b3e544bb334299d443f67d77a43ac5614214d04`, branch `codex/s107-detail-form-recovery`; `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`. |
+| Baseline sebelum pembaruan | `9ca17cf3baa7c8eb6ee54d919b06d2167e4502c2` |
+| Informasi terakhir disinkronkan | AOGTICVITY domain `aogticvities.fun` dibeli dan attached ke Vercel; source `f915947f8159cfa6bde922c26cc6615273547372`; `DOMAIN_ATTACHED / DNS_PENDING / NOT_PUBLICLY_ACTIVATED`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada; kandidat tidak mengubah schema, workflow, permission, preset, atau data. |
-| Error | Tidak ada pada gate lokal; release-safety receipt exact S107 dan approval belum tersedia. |
+| Konflik | Tidak ada; founder mengonfirmasi ejaan domain. Production existing dan URL rollback tidak berubah. |
+| Error | Tidak ada pada gate source/Vercel; DNS Hostinger, TLS, runtime origin, dan public smoke masih menunggu. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/sagabook/PRODUCT.md`
-- `products/sagabook/DOSSIER.md`
-- `products/sagabook/CHANGELOG.md`
+- `products/aogticvity/PRODUCT.md`
+- `products/aogticvity/DOSSIER.md`
+- `products/aogticvity/CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `GAPS.md`
+- `DECISIONS.md`
 - `CHANGELOG.md`
 - `SYNC_STATUS.md`
 
 ## Item menunggu konfirmasi
 
-SagaBook S107 menunggu receipt backup terenkripsi, checksum, disposable
-restore, migration preflight exact source, dan approval sebelum immutable
-deployment. SagaView S105 tetap menunggu release gate tersendiri. Status
-production dan business readiness kedua produk tidak berubah.
+AOGTICVITY menunggu perubahan record DNS Hostinger, sertifikat Vercel, runtime
+origin/allowlist cutover, dan public smoke root/admin/player/leader. URL Vercel
+lama tetap menjadi rollback. Activation keseluruhan serta business readiness
+tidak berubah.
 
 ## Cara verifikasi
 

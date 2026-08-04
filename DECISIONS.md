@@ -426,3 +426,17 @@ keputusan pengganti.
 | Pemberi keputusan | Andreas / founder |
 | Status | `CONFIRMED`; source `0ab9d8e3bff95a6c46425a376d93b732c22b7b52`, platform release `20260804171621-0ab9d8e` |
 | Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [Master Knowledge](CHATGPT_MASTER_KNOWLEDGE.md), [Gaps](GAPS.md) |
+
+## DEC-030 - AOGTICVITY memakai domain aogticvities.fun
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-05 |
+| Topik | Domain kanonik dan hostname role AOGTICVITY |
+| Keputusan | Domain kanonik adalah `aogticvities.fun`. Public memakai root, admin memakai `admin`, player memakai `app`, dan leader memakai `appl`; `www` diarahkan ke root. |
+| Alasan | Founder membeli domain tersebut dan mengonfirmasi ejaannya sebelum aktivasi. |
+| Alternatif yang dipertimbangkan | Tetap memakai URL Vercel; membeli ejaan singular; mengarahkan DNS langsung ke VPS Hostinger. |
+| Dampak | Vercel tetap menjadi edge publik dan Hostinger tetap upstream/MySQL runtime. Auth allowlist, metadata, WhatsApp public origin, TLS, routing, smoke, serta rollback harus menggunakan domain baru. URL Vercel lama dipertahankan sampai cutover lulus. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED`; domain dibeli dan attached ke Vercel, DNS/TLS/runtime cutover belum aktif |
+| Dokumen terkait | [AOGTICVITY Product](products/aogticvity/PRODUCT.md), [AOGTICVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTICVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |
