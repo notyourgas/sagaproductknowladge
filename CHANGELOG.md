@@ -12,6 +12,22 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-05
 
+### AOGTICVITY technical finalization gates production
+
+- Ringkasan: release menambahkan automated production-domain/security/mobile/
+  WCAG gate, offline/reconnect recovery, full disposable MySQL validation,
+  backup/restore drill, aggregate readiness audit, dan operator runbook.
+- Alasan: menutup blocker release teknis setelah domain `.fun` aktif tanpa
+  memakai dummy atau memodifikasi data peserta production saat acceptance.
+- Produk/area terdampak: release engineering, QA, accessibility, security,
+  reliability, disaster recovery, observability, dan Day-H operations.
+- Klasifikasi: `CONFIRMED`; source runtime
+  `15cf535893a67fad1c00b2bfe55c43951b978099`; Hostinger
+  `20260804T185839Z`; Vercel `dpl_3yVYyFzQKU3Ba7xaBffSHq57F3cS`.
+- Production berubah: ya, exact source baru aktif tanpa schema/data migration.
+  Delivery `PRODUCTION_DEPLOYED`; domain `PRODUCTION_ACTIVATED`; business
+  readiness tetap `BLOCKED` sampai final data admin dan human rehearsal lulus.
+
 ### SagaBook cross-monitor storefront candidate
 
 - Ringkasan: canvas Full-HD/QHD melebar menjadi 1280 piksel; CTA Retro Fun dan

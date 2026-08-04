@@ -8,6 +8,24 @@ Mencatat perubahan material AOGTICVITY/17an/Olimpiade.
 
 Nama lama dipertahankan sebagai provenance; status runtime harus eksplisit.
 
+## 2026-08-05 - Technical finalization gates production
+
+- `CONFIRMED`: source runtime
+  `15cf535893a67fad1c00b2bfe55c43951b978099` aktif pada Hostinger immutable
+  release `20260804T185839Z` dan Vercel production
+  `dpl_3yVYyFzQKU3Ba7xaBffSHq57F3cS` dengan seluruh alias `.fun`.
+- Release menambahkan regression suite production untuk tujuh route publik,
+  empat role/canonical host, WCAG, overflow mobile, security header, anonymous
+  API boundary, dev-session denial, serta cross-origin write rejection.
+- Offline/reconnect registration, 20 migration dari kosong, 22/22 MySQL
+  integration tests, backup integrity, disposable restore 54 tabel, aggregate
+  production-readiness audit PII-free, dan operator incident/rollback runbook
+  lulus. Dependency audit nol vulnerability; journal/proxy error nol.
+- Delivery `PRODUCTION_DEPLOYED`; domain tetap `PRODUCTION_ACTIVATED`.
+  Business readiness tetap `BLOCKED`: admin harus menyelesaikan assignment/data
+  operasional tanpa dummy, kemudian menjalankan valid-link WhatsApp,
+  authenticated multi-device, network/fallback, dan rehearsal fisik.
+
 ## 2026-08-05 - Domain `.fun` attached, DNS cutover pending
 
 - `CONFIRMED`: domain kanonik yang dibeli adalah `aogticvities.fun`; surface

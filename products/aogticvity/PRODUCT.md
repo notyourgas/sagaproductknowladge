@@ -213,6 +213,16 @@ Public delivery saat ini: `https://olimpiade-kemerdekaan.vercel.app`.
   Hostname routing dan trusted origins sudah tersedia di runtime, sedangkan
   `APP_PUBLIC_URL` dan `BETTER_AUTH_URL` sekarang memakai player/admin domain
   `.fun`; URL Vercel lama tetap trusted dan tersedia sebagai rollback.
+- Source runtime `15cf535893a67fad1c00b2bfe55c43951b978099`, Hostinger release
+  `20260804T185839Z`, dan Vercel production
+  `dpl_3yVYyFzQKU3Ba7xaBffSHq57F3cS` menambahkan finalization gate yang dapat
+  diulang. Production-domain suite memeriksa mobile/accessibility, security
+  header, canonical/role redirect, anonymous API boundary, dev-session denial,
+  dan cross-origin write. Offline/reconnect registration, 20 migration serta
+  22 integration test disposable MySQL, backup integrity, disposable restore,
+  aggregate readiness audit PII-free, dan operator runbook juga lulus.
+  Application runtime sehat; business readiness masih `BLOCKED` oleh finalisasi
+  data admin, valid-link WhatsApp/two-device UAT, dan rehearsal fisik.
 - SQLite hanya fast test adapter.
 - Event-master memiliki dry-run, validation, atomic publish, versioning, dan
   audit. Durasi jadwal bersifat provisional dan dapat disunting admin.

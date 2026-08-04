@@ -647,6 +647,13 @@ Source `f915947f8159cfa6bde922c26cc6615273547372`, Hostinger
 `20260804T180816Z`, dan Vercel `dpl_GU4AUDL98wgfM9KAFwgCKHY68KpB` sudah
 menyiapkan runtime hostname/trusted-origin `.fun`; auth memakai `admin.*` dan
 WhatsApp memakai `app.*`. URL Vercel lama tetap menjadi rollback.
+Source runtime `15cf535893a67fad1c00b2bfe55c43951b978099`, Hostinger
+`20260804T185839Z`, dan Vercel `dpl_3yVYyFzQKU3Ba7xaBffSHq57F3cS` menambahkan
+production-domain/mobile/WCAG/role-security regression, offline/reconnect
+recovery, full disposable MySQL gate, backup/restore drill, aggregate readiness
+audit PII-free, dan operator runbook. Semua technical release gate lulus;
+business readiness tetap menunggu finalisasi data admin, valid-link WhatsApp
+two-device UAT, authenticated operation rehearsal, dan physical fallback.
 Real credential login dan database-backed session sudah terbukti;
 admin password claim dan registration UAT sudah selesai. Roster/check-in/result
 rehearsal, provider status webhook, valid-link WhatsApp two-device session UAT, dan

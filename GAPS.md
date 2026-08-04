@@ -327,6 +327,11 @@ ketika keputusan atau release baru menutup gap.
   sign-off. Participant feed, revision/ETag, polling, dan reconnect recovery
   sudah `CONFIRMED` pada migration 016, tetapi assignment update UAT dua
   perangkat belum sign-off.
+- `CONFIRMED`: technical finalization release `15cf5358` telah meluluskan
+  production-domain/security/mobile/WCAG, offline/reconnect, 20 migration,
+  22 disposable MySQL integration tests, backup/restore, serta PII-free
+  readiness audit. `NEEDS CONFIRMATION`: admin menyelesaikan final assignment
+  peserta/PIC/roster dan antrean operasional tanpa dummy sebelum rehearsal.
 - `CONFIRMED`: nama final Tim 7 adalah Team Kindness (Kebaikan) dan Tim 8
   adalah Team Patience (Kesabaran). `NEEDS CONFIRMATION`: durasi lomba serta
   keputusan master recap lain yang masih provisional/open.

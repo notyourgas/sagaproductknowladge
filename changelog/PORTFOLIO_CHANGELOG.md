@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-05 - AOGTICVITY technical finalization gates production
+
+- `CONFIRMED`: production-domain, role/security boundary, mobile/WCAG,
+  offline/reconnect, full disposable MySQL workflow, backup/restore, readiness
+  audit, dan operator recovery runbook sekarang menjadi release gate.
+- Runtime source `15cf535893a67fad1c00b2bfe55c43951b978099`, Hostinger
+  `20260804T185839Z`, dan Vercel
+  `dpl_3yVYyFzQKU3Ba7xaBffSHq57F3cS` aktif; seluruh alias `.fun`, readiness,
+  exact source, 20 migration, dan post-release smoke lulus.
+- Delivery `PRODUCTION_DEPLOYED`; domain `PRODUCTION_ACTIVATED`; business
+  readiness tetap `BLOCKED` oleh finalisasi data admin, valid-link/two-device
+  UAT, serta physical event rehearsal.
+
 ## 2026-08-05 - SagaBook cross-monitor storefront candidate
 
 - `CONFIRMED`: canvas Full-HD/QHD melebar dari 1040 menjadi 1280 piksel; CTA
