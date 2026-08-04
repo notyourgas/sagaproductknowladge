@@ -4,6 +4,29 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-04 - Admin Changelog navigation candidate
+
+- Klasifikasi: `CONFIRMED`; delivery
+  `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`. Production
+  tetap source `d70fc1e0d922eed86fe4ea4998688aad32c68c43`, release
+  `20260803194351-d70fc1e`, dengan rollback `20260803132556-cfb2af8`.
+- Candidate source `95621347b2cb179a62d773ed4f24c8a891044ac3` tersedia pada
+  branch `codex/s97-sagabook-admin-nav`.
+- Before: 18 rilis dengan 64 detail dibuka bersamaan, tanpa pencarian, tanpa
+  empty recovery, dan tanpa jalur dominan kembali ke operasi. After: hanya satu
+  rilis terbuka, tersedia pencarian, lima filter, empty/reset state, dan CTA
+  kembali ke Hari Ini.
+- Kontrol discovery minimal 44 px, CTA 48 px, keyboard/focus, forced-colors,
+  reduced-motion, no-overflow, serta tepat satu `Powered by SagaBook` non-fixed
+  lulus pada 390x844 dan 1440x900.
+- Gate: focused E2E 2/2, snapshot 3/3, kontrak admin 52/52, focused backend
+  3 test/364 assertion, full backend 960/960 dengan 11.007 assertion, build,
+  design audit 26 artefak/0 pelanggaran, serta npm/Composer audit nol
+  vulnerability. Deploy belum berjalan karena belum ada backup/restore exact
+  candidate dan approval eksekusi production.
+- Registry rilis, booking/payment/availability, permission, session, tenant
+  isolation, storefront/template, invoice/receipt, dan SagaView tidak berubah.
+
 ## 2026-08-04 - Landscape tablet storefront candidate
 
 - Klasifikasi: `CONFIRMED`; delivery `IMPLEMENTED_NOT_DEPLOYED`. Production

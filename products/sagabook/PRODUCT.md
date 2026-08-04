@@ -340,6 +340,16 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
   tepat satu `Powered by SagaBook` lulus. Production tetap source `d70fc1e0`,
   release `20260803194351-d70fc1e`; approval eksekusi production masih menjadi
   blocker. Booking/payment/availability dan tenant isolation tidak berubah.
+- Candidate navigasi admin Changelog pada source
+  `95621347b2cb179a62d773ed4f24c8a891044ac3` berstatus
+  `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`. Daftar 18
+  rilis/64 perubahan kini memakai pencarian, lima filter, accordion satu-detail,
+  empty/reset recovery, dan CTA kembali ke Hari Ini. Kontrol discovery minimal
+  44 piksel, CTA 48 piksel, keyboard/focus, forced-colors, reduced-motion,
+  no-overflow, serta tepat satu `Powered by SagaBook` lulus pada 390x844 dan
+  1440x900. Production tetap `d70fc1e0` / `20260803194351-d70fc1e`; kandidat
+  menunggu backup/restore exact source dan approval deploy. Workflow bisnis,
+  registry rilis, storefront, dan SagaView tidak berubah.
 - Refinement navigasi dari langkah Review pada source
   `fa228d89bc5bea32fb19bf424a4b0e48db1bc506` berstatus
   `PRODUCTION_DEPLOYED` sebagai release `20260803022430-fa228d8`. Enam kontrol `Ubah` yang sebelumnya sekitar

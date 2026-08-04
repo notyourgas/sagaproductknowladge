@@ -12,6 +12,26 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-04
 
+### SagaBook admin Changelog navigation candidate
+
+- Ringkasan: mengganti 18 kartu rilis dengan 64 detail yang seluruhnya terbuka
+  menjadi accordion satu-detail, pencarian versi/area/perubahan, filter jenis,
+  empty/reset recovery, dan jalur kembali ke Hari Ini.
+- Produk/area terdampak: admin route `/admin/changelog`, hierarchy, navigasi,
+  keyboard/focus, responsivitas, forced-colors, reduced-motion, dan release
+  evidence; data rilis serta workflow bisnis tidak berubah.
+- Klasifikasi: `CONFIRMED`; candidate source
+  `95621347b2cb179a62d773ed4f24c8a891044ac3` pada branch
+  `codex/s97-sagabook-admin-nav`, status
+  `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: focused E2E 2/2, snapshot visual 3/3, kontrak admin 52/52, focused
+  backend 3 test/364 assertion, full backend 960/960 dengan 11.007 assertion,
+  build, design audit 0, serta npm/Composer audit nol vulnerability lulus.
+- Production berubah: tidak. Runtime tetap source `d70fc1e0`, release
+  `20260803194351-d70fc1e`, rollback `20260803132556-cfb2af8`; deploy ditahan
+  sampai backup/checksum/disposable restore exact candidate dan approval
+  eksekusi tersedia. Watermark tetap tepat satu dan non-fixed.
+
 ### AOGTICVITY official winner history production
 
 - Ringkasan: menambahkan riwayat Juara 1/2/3 untuk setiap lomba pada Standing

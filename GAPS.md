@@ -114,6 +114,12 @@ ketika keputusan atau release baru menutup gap.
   Production tetap `d70fc1e0` / `20260803194351-d70fc1e`; bukti penutup adalah
   approval eksplisit, immutable deploy contract, service/header/journal, dan
   public smoke pada exact candidate.
+- `BLOCKED`: candidate navigasi admin Changelog source `95621347` lulus
+  seluruh gate lokal dan tersedia di branch `codex/s97-sagabook-admin-nav`,
+  tetapi production tetap `d70fc1e0` / `20260803194351-d70fc1e`. Bukti penutup
+  adalah encrypted backup/checksum/disposable restore yang terikat exact
+  candidate, approval deploy, immutable release, service/header/journal, serta
+  public smoke 390x844 dan 1440x900.
 
 ### SagaView
 

@@ -1,5 +1,20 @@
 # Portfolio Changelog
 
+## 2026-08-04 - SagaBook admin Changelog navigation candidate
+
+- `CONFIRMED`: Changelog admin kini memiliki pencarian, filter lima jenis,
+  accordion satu-detail, empty/reset recovery, dan CTA 48 px kembali ke Hari
+  Ini. Semua kontrol pencarian/filter minimal 44 px.
+- Candidate `95621347b2cb179a62d773ed4f24c8a891044ac3` pada
+  `codex/s97-sagabook-admin-nav` lulus focused E2E 2/2, snapshot 3/3, kontrak
+  admin 52/52, backend 960/960, build, design audit, dan audit dependency 0.
+- Delivery `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
+  Production tetap `d70fc1e0` / `20260803194351-d70fc1e`; blocker deploy
+  adalah backup/checksum/disposable restore exact candidate dan approval.
+- Tepat satu `Powered by SagaBook` tetap non-fixed. Booking, payment,
+  availability, permission, tenant isolation, storefront, activation, dan
+  business readiness tidak berubah.
+
 ## 2026-08-04 - AOGTICVITY official winner history production
 
 - Standing resmi kini menampilkan riwayat Juara 1/2/3 per lomba melalui 10

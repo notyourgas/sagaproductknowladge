@@ -227,6 +227,19 @@ nol, dan fresh encrypted backup/restore exact-SHA lulus. Approval eksekusi
 production belum diberikan, sehingga runtime tetap `d70fc1e0` release
 `20260803194351-d70fc1e`; booking/payment/availability tidak berubah.
 
+Candidate navigasi admin Changelog SagaBook pada source
+`95621347b2cb179a62d773ed4f24c8a891044ac3` tersedia di branch
+`codex/s97-sagabook-admin-nav` dengan status
+`LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`. Sebelum
+perubahan, 18 rilis/64 detail tampil terbuka bersamaan. Kandidat memakai
+pencarian, lima filter, accordion satu-detail, empty/reset recovery, dan CTA
+kembali ke Hari Ini; keyboard/focus, target 44/48 piksel, forced-colors,
+reduced-motion, no-overflow, serta satu watermark non-fixed lulus di mobile dan
+desktop. Full backend 960/960, kontrak admin 52/52, snapshot 3/3, build, design,
+dan audit dependency 0 lulus. Production tetap `d70fc1e0` release
+`20260803194351-d70fc1e` sampai backup/restore exact candidate dan approval
+deploy tersedia; workflow bisnis dan storefront tidak berubah.
+
 Keputusan privacy/retention/offboarding SagaBook yang lebih rinci telah
 disetujui owner untuk implementasi dan legal review pada source docs commit
 `295ec863ff6cfc2e79ac98183651f19c15a3b368`. Workflow consent berversi,

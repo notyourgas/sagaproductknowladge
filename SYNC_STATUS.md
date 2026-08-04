@@ -12,30 +12,32 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-04T13:17:03+07:00 |
+| Waktu pembaruan terakhir | 2026-08-04T13:52:58+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `33a941072fa1d7fa3762a61166dfe3555076e152` |
-| Informasi terakhir disinkronkan | AOGTICVITY source `2590f69d3ac609f6f92d3badb1343ad55f1a239c`, Hostinger `20260804T061230Z`, dan Vercel `dpl_e3nqmA7PoXHxfRuBiLLUwvzuUtoz` menambahkan riwayat pemenang per lomba pada Standing resmi. |
+| Baseline sebelum pembaruan | `98d89700d63a0e13c72df73d426b883d353cc7bb` |
+| Informasi terakhir disinkronkan | SagaBook candidate `95621347b2cb179a62d773ed4f24c8a891044ac3` menambahkan pencarian, filter, accordion satu-detail, empty/reset recovery, dan jalur kembali ke Hari Ini pada admin Changelog. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada; Standing hanya membaca hasil resmi yang sudah ada dan tidak mengubah workflow scoring. |
-| Error | Tidak ada pada release; authenticated multi-device UAT dan rehearsal AOGTICVITY masih diperlukan untuk business readiness. |
+| Konflik | Tidak ada; registry rilis dan workflow bisnis SagaBook tidak berubah. |
+| Error | Tidak ada pada candidate lokal; production belum berubah karena backup/restore exact candidate dan approval deploy belum tersedia. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/aogticvity/PRODUCT.md`
-- `products/aogticvity/DOSSIER.md`
-- `products/aogticvity/CHANGELOG.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
-- `DECISIONS.md`
+- `GAPS.md`
 - `CHANGELOG.md`
 - `SYNC_STATUS.md`
 
 ## Item menunggu konfirmasi
 
-Finalisasi durasi lomba yang masih provisional, lalu selesaikan authenticated
-multi-device UAT dan rehearsal event AOGTICVITY sebelum klaim business ready.
+Siapkan encrypted backup/checksum/disposable restore yang terikat exact
+candidate SagaBook, minta approval deploy, lalu jalankan immutable release dan
+public smoke sebelum mengubah status production. UAT operator studio nyata
+tetap diperlukan sebelum klaim business ready.
 
 ## Cara verifikasi
 

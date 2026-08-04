@@ -314,6 +314,21 @@ audit lulus. Fresh S39 exact-SHA run `20260804T001149Z` lulus, tetapi approval
 eksekusi production belum diberikan; runtime tetap release
 `20260803194351-d70fc1e` dan tidak ada migration atau activation.
 
+Admin Changelog navigation candidate pada source
+`95621347b2cb179a62d773ed4f24c8a891044ac3` berstatus
+`LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`. Sebelum
+perubahan, 18 rilis dan 64 detail terbuka bersamaan tanpa pencarian atau jalur
+recovery. Kandidat menambahkan pencarian lintas versi/area/perubahan, lima
+filter jenis, accordion satu-detail, empty/reset state, dan CTA 48 pixel
+kembali ke Hari Ini. Focus keyboard, kontrol 44 pixel, forced-colors,
+reduced-motion, no-overflow, serta satu `Powered by SagaBook` non-fixed lulus
+pada 390x844 dan 1440x900. Focused E2E 2/2, snapshot 3/3, kontrak admin 52/52,
+backend 960/960, build, design audit, dan audit dependency 0 lulus. Production
+tetap release `20260803194351-d70fc1e`; backup/checksum/disposable restore exact
+candidate dan approval deploy belum tersedia. Data rilis, booking, payment,
+availability, permission, tenant isolation, storefront, dan SagaView tidak
+berubah.
+
 ## Integrasi
 
 Payment dan notification provider, serta future SagaView handoff.
