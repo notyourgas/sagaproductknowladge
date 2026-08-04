@@ -8,6 +8,23 @@ Mencatat perubahan material AOGTICVITY/17an/Olimpiade.
 
 Nama lama dipertahankan sebagai provenance; status runtime harus eksplisit.
 
+## 2026-08-04 - Magic-link origin dan mobile modal hotfix production
+
+- `CONFIRMED`: halaman konfirmasi WhatsApp tidak lagi memasang
+  `no-referrer` yang membuat form POST menghasilkan `Origin: null`; pemeriksaan
+  same-origin backend tetap ketat.
+- Modal pendaftaran kini memakai portal, VisualViewport, background inert,
+  content scroll, footer CTA safe-area-aware, dan bottom navigation hidden.
+- Source `111e01152c842d802ff1b4114f8e787577fe611d`; Hostinger
+  `20260804T164327Z`; Vercel `dpl_5pVdzKAGfZVv4w41cLborLhDFv4Z`; tanpa
+  migration schema/data.
+- Gate: 111 unit/service tests, Playwright 60/60, typecheck, tiga production
+  build, dependency audit nol, readiness, public smoke 320 × 480, origin
+  publik, dan proxy error nol lulus.
+- Delivery `PRODUCTION_DEPLOYED`; activation login WhatsApp keseluruhan tetap
+  `NOT_PRODUCTION_ACTIVATED` sampai valid-link/session/reuse/revoke UAT nyata
+  selesai. Business readiness tetap `BLOCKED`.
+
 ## 2026-08-04 - Guest player registration production deployment
 
 - `CONFIRMED`: `/register/guest` menerima nama, WhatsApp, status CG, dan

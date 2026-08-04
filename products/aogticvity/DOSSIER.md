@@ -89,6 +89,14 @@ satu transaksi. Guest tidak dipindahkan oleh generator otomatis. UI publik
 guest lulus matriks 320–1440 px, WCAG axe, no-overflow, serta total 58
 Playwright checks. Full guest-to-valid-session UAT nyata masih diperlukan.
 
+Hotfix source `111e01152c842d802ff1b4114f8e787577fe611d` menghilangkan
+konflik kebijakan referrer yang sebelumnya membuat POST konfirmasi magic-link
+berasal dari `Origin: null`. Same-origin backend tetap fail-closed. Modal
+pendaftaran sekarang dipindah ke portal, mengikuti visual viewport, memisahkan
+content scroll dari footer CTA, serta membuat shell dan bottom navigation tidak
+interaktif selama dialog terbuka. Public acceptance 60/60 dan smoke 320 × 480
+lulus; valid-link nyata tetap menjadi UAT manusia.
+
 Taxonomy komunitas final mempunyai dua kategori utama: `TEEN` dengan enam
 subcategory `CG teen`, dan `SOUTH, WEST, CENTRAL` dengan delapan subcategory
 `CG youth`. Form, API validation, admin display, export, team balancing, dan
@@ -173,8 +181,8 @@ AOGTICVITY belum diaktifkan.
 **Apakah notification aktif?** Sebagian. Runtime Fonnte, migration 009–010,
 dan satu pengiriman kanal UAT sudah aktif. Provider status webhook serta flow
 approval → valid magic-link → session → reuse/revoke belum lulus UAT. Origin
-redirect publik dan state invalid/expired sudah terverifikasi, tetapi login
-WhatsApp penuh belum production-ready.
+redirect publik, origin POST form, serta state invalid/expired sudah
+terverifikasi, tetapi login WhatsApp penuh belum production-ready.
 **Apakah auth sudah nyata?** Ya, real credential login, MySQL identity,
 database session, dan admin password claim sudah terverifikasi melalui public
 Vercel.
@@ -216,6 +224,8 @@ Admin participant delete memakai `Withdrawn`, alasan 3-240 karakter, revocation
 magic link/session, roster cleanup, serta audit event dalam transaksi yang sama.
 Player workspace menggunakan participant-scoped snapshot, revision/ETag, dan
 feed event persisten untuk publish/lock tim serta roster assigned/removed.
+Modal global memakai portal ke body, VisualViewport, focus trap, background
+inert, body scroll lock, content scroll, dan footer CTA safe-area-aware.
 
 ## Integrasi
 

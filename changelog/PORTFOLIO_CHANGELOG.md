@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-04 - AOGTICVITY auth/mobile registration hotfix production
+
+- `CONFIRMED`: magic-link confirmation kembali mengirim origin publik yang
+  diterima same-origin gate; modal pendaftaran mempunyai scroll body dan footer
+  CTA aman pada visual viewport pendek.
+- Source `111e01152c842d802ff1b4114f8e787577fe611d`, Hostinger
+  `20260804T164327Z`, Vercel `dpl_5pVdzKAGfZVv4w41cLborLhDFv4Z`, tanpa
+  migration. Unit 111, Playwright 60/60, build tiga target, public browser
+  smoke, readiness, dan security audit lulus.
+- Delivery `PRODUCTION_DEPLOYED`. Valid-link WhatsApp nyata masih membutuhkan
+  UAT sebelum activation login WhatsApp atau business readiness diklaim.
+
 ## 2026-08-04 - SagaBook storefront selection state candidate
 
 - `CONFIRMED`: selected state Lokasi sampai Bayar sekarang programatik melalui

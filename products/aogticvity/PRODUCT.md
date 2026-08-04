@@ -197,6 +197,13 @@ Public delivery saat ini: `https://olimpiade-kemerdekaan.vercel.app`.
   admin dan hanya menyeimbangkan anggota komunitas. Technical production
   deployment lulus; satu siklus guest nyata sampai valid-link/session masih
   memerlukan UAT sebelum fitur ini dinyatakan production-activated.
+- Source `111e01152c842d802ff1b4114f8e787577fe611d`, Hostinger release
+  `20260804T164327Z`, dan Vercel production
+  `dpl_5pVdzKAGfZVv4w41cLborLhDFv4Z` menutup dua blocker P0. Form konfirmasi
+  magic-link kini mengirim origin publik yang valid tanpa melemahkan
+  same-origin; modal pendaftaran memakai portal, VisualViewport, content scroll,
+  footer CTA aman, background inert, dan bottom navigation tersembunyi. Tidak
+  ada perubahan schema/data. Valid-link/session nyata tetap memerlukan UAT.
 - SQLite hanya fast test adapter.
 - Event-master memiliki dry-run, validation, atomic publish, versioning, dan
   audit. Durasi jadwal bersifat provisional dan dapat disunting admin.
@@ -221,9 +228,10 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:
 - UI memakai `Pixel Matchday Arcade` yang tetap mobile-first 430 px: Plus
   Jakarta Sans, Feather-style icons, stepped geometry, hard shadow, quest/HUD
   hierarchy, state feedback, dan motion yang menghormati reduced-motion.
-- Public visual regression lulus 50/50 pada enam route dan viewport 320, 390,
+- Public visual regression lulus 60/60 pada route publik dan viewport 320, 390,
   430, serta 1440 px; matriks memeriksa overflow teks, collision sibling,
-  clearance navigasi, touch target, reduced motion, dan axe WCAG.
+  clearance navigasi, touch target, reduced motion, axe WCAG, CTA modal pada
+  visual viewport pendek, dan origin POST magic-link.
 - Agenda publik/peserta memakai tiga track: waktu mulai, informasi lomba, dan
   panah. Durasi tampil sebagai teks pada baris kategori tanpa ikon jenis lomba;
   lokasi serta status tetap terlihat. Form, timeline, standing, dan panel

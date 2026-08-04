@@ -12,6 +12,30 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-04
 
+### AOGTICVITY magic-link dan mobile modal hotfix production
+
+- Ringkasan: form konfirmasi WhatsApp sekarang mengirim origin publik yang
+  valid; modal pendaftaran menjaga CTA tetap terlihat/dapat disentuh pada
+  visual viewport pendek.
+- Alasan: kebijakan `no-referrer` membuat origin form menjadi null dan struktur
+  modal lama bertabrakan dengan bottom navigation pada sebagian ponsel.
+- Produk/area terdampak: player auth, registration confirmation, modal global,
+  visual viewport, focus/background interaction, accessibility, security, dan
+  release pipeline Vercel-to-Hostinger.
+- Klasifikasi: `CONFIRMED`; source
+  `111e01152c842d802ff1b4114f8e787577fe611d`; delivery
+  `PRODUCTION_DEPLOYED`; tanpa migration atau perubahan data.
+- Gate: 111 unit/service tests, Playwright 60/60, typecheck, build lokal/Vercel/
+  Hostinger, dependency audit nol, readiness, browser smoke 320 × 480, origin
+  publik, dan proxy error nol.
+- Runtime: Hostinger `20260804T164327Z`; Vercel
+  `dpl_5pVdzKAGfZVv4w41cLborLhDFv4Z`; rollback Hostinger
+  `20260804T065837Z` dan Vercel `dpl_9CknJM1QQzWGjbCPXFWPXegA2SBH`.
+- Activation login WhatsApp dan business readiness tidak berubah; valid-link,
+  session, reuse, revoke, dan two-device UAT nyata masih diperlukan. File
+  knowledge: product/dossier/changelog AOGTICVITY, master, gaps, portfolio/root
+  changelog, dan sync status.
+
 ### SagaBook storefront selection state dan touch target
 
 - Ringkasan: selected state dari Lokasi sampai Bayar kini dapat dibaca screen

@@ -8,7 +8,7 @@ diubah menjadi klaim publik sebelum ditutup dengan bukti atau keputusan owner.
 
 ## Konteks
 
-Daftar ini berlaku pada evidence cut-off 3 Agustus 2026 dan harus diperbarui
+Daftar ini berlaku pada evidence cut-off 4 Agustus 2026 dan harus diperbarui
 ketika keputusan atau release baru menutup gap.
 
 ## Cara memakai
@@ -292,7 +292,8 @@ ketika keputusan atau release baru menutup gap.
   sebagai duplicate; jangan memakai fixture sebagai bukti provider.
 - Fonnte runtime, migration 009–010, dan channel delivery UAT sudah
   `PRODUCTION_DEPLOYED`. Public-origin redirect, typed failure state, dan
-  player workspace sync migration 016 juga sudah `PRODUCTION_DEPLOYED`;
+  player workspace sync migration 016 juga sudah `PRODUCTION_DEPLOYED`.
+  Hotfix `111e0115` menutup form POST `Origin: null` dan CTA modal mobile;
   provider status webhook serta valid-link two-device
   approval/session/reuse/revoke UAT masih `NEEDS CONFIRMATION`.
 - `NEEDS CONFIRMATION`: model bisnis produk (event internal, jasa per event, atau

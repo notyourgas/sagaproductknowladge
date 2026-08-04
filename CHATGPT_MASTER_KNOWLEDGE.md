@@ -601,6 +601,13 @@ outbox, serta audit ditulis atomik. Generator tim tidak memindahkan guest.
 Delivery sudah `PRODUCTION_DEPLOYED`, tetapi activation jalur guest masih
 `NOT_PRODUCTION_ACTIVATED` sampai satu flow nyata registrasi, approval bertim,
 valid WhatsApp link, dan player session lulus UAT.
+Source `111e01152c842d802ff1b4114f8e787577fe611d`, Hostinger
+`20260804T164327Z`, dan Vercel `dpl_5pVdzKAGfZVv4w41cLborLhDFv4Z` menutup
+bug `Origin: null` pada form konfirmasi WhatsApp serta CTA modal pendaftaran
+yang tertutup pada viewport pendek. Same-origin backend tetap ketat; modal
+memakai portal, VisualViewport, content scroll, footer CTA, background inert,
+dan nav hidden. Public Playwright 60/60 serta smoke 320 × 480 lulus. Status
+activation tetap menunggu valid-link/session/reuse/revoke UAT nyata.
 Ini adalah nama terbaru project 17an/Olimpiade Kemerdekaan.
 
 Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:
