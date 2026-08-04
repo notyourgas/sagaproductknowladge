@@ -216,6 +216,17 @@ availability, permission, session, tenant isolation, storefront/template,
 dan SagaView tidak berubah. Activation scope UI `PRODUCTION_ACTIVATED`, tetapi
 business readiness tetap `NEEDS CONFIRMATION` sampai UAT operator studio nyata.
 
+Candidate landscape tablet storefront pada source
+`1f4b7bafb2f171a689826bcd5c34216924721d18` sudah berada di `main` tetapi
+masih `IMPLEMENTED_NOT_DEPLOYED`. Pada 1024x768, storefront memakai canvas dua
+kolom sekitar 992 piksel menggantikan shell ponsel sekitar 460 piksel; mobile
+390 dan desktop mulai 1120 piksel tetap stabil. Kelima preset, Maps/WhatsApp
+44 piksel, no-overflow, accessibility, dan satu `Powered by SagaBook` lulus.
+Full storefront 120 pass/6 expected skip, backend 960/960, audit dependency
+nol, dan fresh encrypted backup/restore exact-SHA lulus. Approval eksekusi
+production belum diberikan, sehingga runtime tetap `d70fc1e0` release
+`20260803194351-d70fc1e`; booking/payment/availability tidak berubah.
+
 Keputusan privacy/retention/offboarding SagaBook yang lebih rinci telah
 disetujui owner untuk implementasi dan legal review pada source docs commit
 `295ec863ff6cfc2e79ac98183651f19c15a3b368`. Workflow consent berversi,

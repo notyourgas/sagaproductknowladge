@@ -1,5 +1,20 @@
 # Portfolio Changelog
 
+## 2026-08-04 - SagaBook landscape tablet storefront candidate
+
+- `CONFIRMED`: seluruh lima storefront booking tenant kini memakai canvas dua
+  kolom pada 900-1119 piksel; pada 1024x768 lebar shell berubah dari sekitar
+  460 menjadi 992 piksel. Mobile dan desktop lama tetap stabil.
+- Candidate source `1f4b7bafb2f171a689826bcd5c34216924721d18` sudah di
+  `main`. Full storefront 120 pass/6 expected skip, a11y 16/16, backend
+  960/960, contract 36/36, build, design audit, dan dependency audit lulus.
+- Fresh encrypted backup/checksum/disposable restore exact-SHA lulus. Delivery
+  `IMPLEMENTED_NOT_DEPLOYED` karena approval eksekusi production belum
+  diberikan; production tetap `d70fc1e0` / `20260803194351-d70fc1e`.
+- Watermark tetap tepat satu. Booking, availability, payment/provider, tenant
+  isolation, invoice/receipt, SagaView, activation, dan business readiness
+  tidak berubah.
+
 ## 2026-08-04 - AOGTICVITY simplified agenda production
 
 - Agenda publik/peserta sekarang menampilkan satu waktu mulai dan durasi dalam

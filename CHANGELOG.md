@@ -12,6 +12,27 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-04
 
+### SagaBook landscape tablet storefront candidate
+
+- Ringkasan: memperluas shell storefront booking tenant menjadi dua kolom pada
+  900-1119 piksel; viewport 1024x768 berubah dari sekitar 460 menjadi 992
+  piksel tanpa mengubah mobile atau spacing desktop lama.
+- Produk/area terdampak: lima preset existing, responsive layout, Maps,
+  WhatsApp, accessibility, dependency safety, test, dan release evidence.
+- Klasifikasi: `CONFIRMED`; candidate source
+  `1f4b7bafb2f171a689826bcd5c34216924721d18` tersedia di `main`, delivery
+  `IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: storefront 120 pass/6 expected skip, focused a11y 16/16, backend
+  960/960 dengan 11.007 assertion, contract 36/36 dengan 283 assertion,
+  build, design audit 0, npm/Composer audit 0, serta fresh encrypted
+  backup/checksum/disposable restore exact-SHA.
+- Production berubah: tidak. Runtime tetap source `d70fc1e0`, release
+  `20260803194351-d70fc1e`, rollback `20260803132556-cfb2af8`; approval
+  eksekusi production belum diberikan. Booking/payment/availability, tenant
+  isolation, activation, dan business readiness tidak berubah.
+- File knowledge: product, dossier, changelog SagaBook, master knowledge,
+  portfolio/root changelog, gaps, dan sync status.
+
 ### AOGTICVITY simplified single-time agenda production
 
 - Ringkasan: menyederhanakan kartu agenda menjadi waktu mulai, informasi lomba,

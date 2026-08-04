@@ -331,6 +331,15 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
   Booking/payment/provider, availability, permission, session, tenant
   isolation, storefront, dan SagaView tidak berubah. Business readiness tetap
   `NEEDS CONFIRMATION` sampai UAT operator studio nyata.
+- Candidate landscape tablet storefront pada source
+  `1f4b7bafb2f171a689826bcd5c34216924721d18` berstatus
+  `IMPLEMENTED_NOT_DEPLOYED`. Viewport 1024x768 berubah dari shell ponsel
+  sekitar 460 piksel menjadi shell dua kolom sekitar 992 piksel; mobile 390
+  dan desktop mulai 1120 piksel tetap mempertahankan kontrak sebelumnya.
+  Kelima preset, CTA Maps/WhatsApp 44 piksel, no-overflow, accessibility, dan
+  tepat satu `Powered by SagaBook` lulus. Production tetap source `d70fc1e0`,
+  release `20260803194351-d70fc1e`; approval eksekusi production masih menjadi
+  blocker. Booking/payment/availability dan tenant isolation tidak berubah.
 - Refinement navigasi dari langkah Review pada source
   `fa228d89bc5bea32fb19bf424a4b0e48db1bc506` berstatus
   `PRODUCTION_DEPLOYED` sebagai release `20260803022430-fa228d8`. Enam kontrol `Ubah` yang sebelumnya sekitar

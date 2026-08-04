@@ -108,6 +108,12 @@ ketika keputusan atau release baru menutup gap.
   belum dipublish. Jalankan satu booking success terkontrol pada tenant pilot
   tanpa menyalin PII ke knowledge untuk membuktikan CTA detail/status dan
   WhatsApp cabang sebelum klaim activation tenant nyata atau business ready.
+- `BLOCKED`: candidate landscape tablet storefront source `1f4b7baf` sudah
+  masuk `main` dan seluruh gate lokal plus fresh S39 exact-SHA lulus, tetapi
+  approval eksekusi production pada task automation belum diberikan.
+  Production tetap `d70fc1e0` / `20260803194351-d70fc1e`; bukti penutup adalah
+  approval eksplisit, immutable deploy contract, service/header/journal, dan
+  public smoke pada exact candidate.
 
 ### SagaView
 

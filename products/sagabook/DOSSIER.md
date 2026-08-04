@@ -301,6 +301,19 @@ payment/provider, availability, permission, session, tenant isolation,
 storefront, atau SagaView. UAT operator studio nyata tetap diperlukan untuk
 klaim business readiness.
 
+Landscape tablet storefront candidate pada source
+`1f4b7bafb2f171a689826bcd5c34216924721d18` berstatus
+`IMPLEMENTED_NOT_DEPLOYED`. Pada 1024x768, shell yang sebelumnya sekitar 460
+pixel kini memakai canvas dua kolom sekitar 992 pixel dengan dua kartu lokasi
+sejajar. Mobile 390 dan desktop mulai 1120 pixel tetap stabil. Kelima preset
+existing, CTA Maps/WhatsApp minimum 44 pixel, forced-colors, reduced-motion,
+keyboard focus, no-overflow, serta satu `Powered by SagaBook` lulus. Full
+storefront 120 pass/6 expected skip, focused a11y 16/16, backend 960/960,
+contract tenant/security/backend 36/36, build, design audit, dan dependency
+audit lulus. Fresh S39 exact-SHA run `20260804T001149Z` lulus, tetapi approval
+eksekusi production belum diberikan; runtime tetap release
+`20260803194351-d70fc1e` dan tidak ada migration atau activation.
+
 ## Integrasi
 
 Payment dan notification provider, serta future SagaView handoff.

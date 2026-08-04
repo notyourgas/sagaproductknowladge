@@ -4,6 +4,31 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-04 - Landscape tablet storefront candidate
+
+- Klasifikasi: `CONFIRMED`; delivery `IMPLEMENTED_NOT_DEPLOYED`. Production
+  tetap source `d70fc1e0d922eed86fe4ea4998688aad32c68c43`, release
+  `20260803194351-d70fc1e`, dengan rollback `20260803132556-cfb2af8`.
+- Candidate source `1f4b7bafb2f171a689826bcd5c34216924721d18` tersedia pada
+  `main` dan branch `codex/s94-storefront-heartbeat`.
+- Before: viewport 1024x768 memakai shell ponsel sekitar 460 piksel dan
+  menyisakan lebih dari separuh kanvas kosong. After: viewport 900-1119 piksel
+  memakai shell dua kolom sekitar 992 piksel; desktop mulai 1120 piksel tetap
+  memakai spacing lama dan mobile 390 piksel tidak berubah.
+- Kelima preset existing lulus pada 390x844, 1024x768, dan 1440x900; Maps dan
+  WhatsApp minimal 44 piksel, tanpa overflow, serta tepat satu
+  `Powered by SagaBook` di footer non-fixed. Workflow booking, availability,
+  payment/provider, permission, tenant isolation, invoice, receipt, dan
+  SagaView tidak berubah.
+- Gate: full storefront 120 pass/6 expected skip dari 126, focused a11y 16/16,
+  backend 960/960 dengan 11.007 assertion, contract tenant/security/backend
+  36/36 dengan 283 assertion, build, design audit 0, serta npm/Composer audit
+  nol vulnerability. Patch dependency menutup advisory Guzzle baseline.
+- Fresh S39 exact-SHA run `20260804T001149Z` membuktikan encrypted backup,
+  checksum, offsite round-trip, dan disposable restore. Deploy belum berjalan
+  karena approval eksekusi production pada task automation belum diberikan;
+  tidak ada migration, switch symlink, restart service, atau activation.
+
 ## 2026-08-03 - Admin Booking compact triage dipromosikan
 
 - Klasifikasi: `CONFIRMED`; delivery `PRODUCTION_DEPLOYED`, activation scope
