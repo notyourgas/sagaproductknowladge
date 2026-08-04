@@ -1,7 +1,7 @@
 # SagaBio Product Knowledge
 
-Updated: 31 Juli 2026
-Evidence status: local implementation
+Updated: 5 Agustus 2026
+Evidence status: `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`
 
 ## Tujuan dokumen
 
@@ -54,6 +54,9 @@ SagaMenu tetap merupakan produk e-menu/e-katalog terpisah.
 - SagaDev admin.
 - Guided section/block editor.
 - Preset kategori dan element library.
+- Pengurutan section dengan drag desktop, keyboard, dan kontrol sentuh.
+- Keluarga layout hero, action link, CTA, featured item, galeri, testimonial,
+  dan lokasi dengan preview responsif.
 - Promo, featured menu, location/hours, WhatsApp, social/delivery links.
 - E-menu gateway.
 - QR source tracking dan analytics dasar.
@@ -77,6 +80,11 @@ Status: `LOCAL_VALIDATED`.
   tersedia.
 - Owner, public bio, admin, publish, analytics, QR, dan security contracts telah
   dibangun.
+- Flow pilih layout/urutkan -> autosave -> preview -> immutable publish ->
+  public page lulus di desktop dan mobile pada source
+  `638a13cc57837a3749915f6bebee0e4616c3f74e`.
+- Regression lokal lulus 143 test dengan 877 assertion; browser acceptance
+  lulus 6/6 dan dependency audit npm/Composer nol advisory.
 - Belum ada staging/production evidence yang cukup untuk menyebutnya live.
 
 ## Belum boleh diklaim

@@ -12,6 +12,23 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-05
 
+### SagaBio core builder layout families
+
+- Ringkasan: section ordering dan keluarga layout utama kini konsisten dari
+  draft, preview, immutable publish snapshot, sampai halaman publik.
+- Alasan: SagaBio perlu berfungsi sebagai mini website yang dapat disusun,
+  bukan hanya daftar tombol statis.
+- Produk/area terdampak: owner builder, responsive preview, public renderer,
+  persistence, publish checksum, accessibility, security dependency, dan QA.
+- Klasifikasi: `CONFIRMED`; source
+  `638a13cc57837a3749915f6bebee0e4616c3f74e`, branch
+  `codex/wave2-sprint22-platform-integration`, delivery
+  `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: 143 test/877 assertion, browser 6/6 desktop/mobile, lint/type/build,
+  PHPStan/Pint, focused axe, serta npm/Composer audit nol.
+- Production berubah: tidak; blocker adalah wildcard TLS/vhost, environment,
+  backup/restore, exact release, dan public smoke.
+
 ### SagaView sidebar deep-route compact candidate
 
 - Ringkasan: sidebar desktop Studio sekarang otomatis membawa route aktif ke

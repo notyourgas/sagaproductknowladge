@@ -7,8 +7,8 @@ SagaBio.
 
 ## Konteks dan status bukti
 
-- Updated: 31 Juli 2026
-- Delivery: `LOCAL_VALIDATED`
+- Updated: 5 Agustus 2026
+- Delivery: `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `NEEDS CONFIRMATION`
 
@@ -44,8 +44,14 @@ delivery link, dan e-menu gateway.
 
 ## Fitur utama
 
-Public page, owner dashboard, admin, block editor, preset, publish snapshot,
-analytics dasar, QR tracking, asset checklist, dan help request.
+Public page, owner dashboard, admin, block editor, preset, section ordering,
+layout-aware preview/public renderer, publish snapshot, analytics dasar, QR
+tracking, asset checklist, dan help request.
+
+Layout yang sudah local validated mencakup hero/profile, action link, CTA,
+featured item, galeri, testimonial, lokasi, serta layout promo dari sprint
+sebelumnya. Pemilihan layout dan urutan tersimpan pada draft lalu dikompilasi
+menjadi snapshot publish immutable.
 
 ## Fitur MVP
 
@@ -106,7 +112,8 @@ done-for-you onboarding, dan action analytics.
 ## Technical overview
 
 Laravel, Inertia Vue, Blade public renderer, Filament, MySQL, dan compiled
-publish payload.
+publish payload. Source lokal tervalidasi:
+`638a13cc57837a3749915f6bebee0e4616c3f74e`; production belum berubah.
 
 ## Integrasi
 

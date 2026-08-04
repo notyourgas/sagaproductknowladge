@@ -1,5 +1,20 @@
 # Portfolio Changelog
 
+## 2026-08-05 - SagaBio core builder layout families
+
+- `CONFIRMED`: source
+  `638a13cc57837a3749915f6bebee0e4616c3f74e` menyelesaikan flow pengurutan dan
+  keluarga layout utama dari draft, preview, immutable publish, hingga halaman
+  publik.
+- Hero/profile, action link, CTA, featured item, galeri, testimonial, lokasi,
+  dan promo kini dapat memakai komposisi responsif berbeda; urutan dapat diubah
+  melalui drag, keyboard, atau kontrol sentuh.
+- Gate lokal: 143 test/877 assertion, browser 6/6 desktop/mobile, lint,
+  typecheck, build, PHPStan, Pint, axe focused, serta audit npm/Composer lulus.
+- Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak
+  berubah dan belum aktif. Gate utama tetap wildcard TLS/vhost, environment,
+  backup/restore, exact release, dan public smoke.
+
 ## 2026-08-05 - SagaView sidebar deep-route compact candidate
 
 - `CONFIRMED`: pada Windows 1280x720, route Install App yang aktif tetapi

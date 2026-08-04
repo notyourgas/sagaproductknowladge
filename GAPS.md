@@ -273,6 +273,9 @@ ketika keputusan atau release baru menutup gap.
   kerja, bukan hasil.
 - `NEEDS CONFIRMATION`: pricing, setup fee, hosting/domain, dan scope support.
 - `NEEDS CONFIRMATION`: kriteria keluar dari done-for-you menuju self-service.
+- `TODO`: tutup wildcard TLS/vhost, production environment, backup/disposable
+  restore, exact-release migration, rollback, dan public smoke sebelum source
+  SagaBio terbaru boleh di-deploy.
 
 ### SagaMenu
 
