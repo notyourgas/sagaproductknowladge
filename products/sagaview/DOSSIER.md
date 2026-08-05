@@ -75,7 +75,7 @@ mengurangi 2 px, memindahkan slot pada canvas, serta resize dari empat titik
 sudut. Field X/Y/W/H tetap tersedia untuk koreksi presisi. Perubahan tidak
 mengubah tenant, device/session, foto local-first, payment, atau output 4R.
 
-Candidate backend `71d70fb87ebd86db80f28b43c76239c84690e96f` mengunci urutan
+Candidate backend `5906028703759d49ef930a7363c5efc293f6be97` mengunci urutan
 authoring frame menjadi `pilih PNG/WebP -> Deteksi otomatis -> periksa/koreksi
 slot -> simpan draft`. Frame baru dan file pengganti tidak lagi menerima satu
 slot bawaan; canvas tetap kosong sampai deteksi dijalankan. Penambahan manual
@@ -84,6 +84,12 @@ frame existing tetap memuat slot tersimpan. Candidate lulus build, 119 test
 SagaView/1.248 assertions, focused Playwright desktop, serta audit npm/composer
 nol advisory. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
 backend tetap `20260805053500-9b4b68a`.
+
+Setiap box slot pada candidate memiliki tombol rotate kecil yang accessible.
+Klik memutar slot individual 90 derajat dengan menukar W/H di sekitar titik
+tengah dan melakukan clamp agar tetap berada di canvas. Kontrol tidak memutar
+artwork frame atau slot lain, serta tetap kompatibel dengan drag, empat resize
+handle, feather, dan input X/Y/W/H.
 
 Mulai sesi production memakai checklist perangkat, paket, folder, frame, dan
 output serta satu CTA kontekstual 48 px. Utility cloud/recovery yang sehat

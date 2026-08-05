@@ -8,9 +8,9 @@ SagaBio.
 ## Konteks dan status bukti
 
 - Updated: 5 Agustus 2026
-- Delivery: `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`
+- Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
-- Business readiness: `NEEDS CONFIRMATION`
+- Business readiness: `NOT_BUSINESS_READY`
 
 ## Overview produk
 
@@ -66,9 +66,10 @@ checkout, POS, booking, dan full self-service bukan MVP pilot.
 
 ## Roadmap
 
-1. `TODO`: demo F&B production-like.
+1. `CONFIRMED`: demo F&B live di wildcard production SagaBio.
 2. `ASSUMPTION`: satu paid pilot dan 3–5 founding clients.
-3. `TODO`: staging/deploy, analytics consent, support, dan handoff.
+3. `TODO`: central identity activation, owner handoff, SMTP/storage, renewal
+   wildcard otomatis, analytics consent, dan support.
 4. `NEEDS CONFIRMATION`: self-service dan custom domain.
 
 ## User journey
@@ -117,11 +118,13 @@ done-for-you onboarding, dan action analytics.
 
 ## Technical overview
 
-Laravel, Inertia Vue, Blade public renderer, Filament, MySQL, dan compiled
-publish payload. Source lokal tervalidasi:
-`8b79ff4e759b24acf34bb88dfe714588754bc00d`; 150 test/1.139 assertion,
-browser 8/8 desktop-mobile, build, static analysis, dan audit dependency lulus.
-Production belum berubah.
+Laravel, Inertia Vue, Blade public renderer, Filament, MySQL, Redis, Nginx,
+worker, scheduler, dan compiled publish payload. Exact application source
+production `06be995bf2da5e05e25ba3d394516ad9d8a52f10`; 149 test lulus,
+2 controlled skip, 1.141 assertion, browser desktop-mobile, build, static
+analysis, dependency audit, backup/restore, migration, dan public smoke lulus.
+Landing, branded login, wildcard pilot, immutable payload, analytics event,
+QR, serta legacy redirect live. Central signup sengaja default-off.
 
 ## Integrasi
 
@@ -135,8 +138,9 @@ source, allowlisted analytics event, dan help request.
 
 ## Risiko dan asumsi
 
-Pilot target belum membuktikan demand; analytics/privacy consent dan asset
-ownership harus ditutup sebelum production.
+Pilot target belum membuktikan demand. Akun operator customer, central signup,
+SMTP/storage, renewal wildcard otomatis, analytics/privacy consent, dan asset
+ownership harus ditutup sebelum aktivasi komersial.
 
 ## KPI dan success metrics
 

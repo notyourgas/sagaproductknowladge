@@ -12,6 +12,23 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-05
 
+### SagaBio first VPS production release
+
+- Ringkasan: apex landing, branded app login, wildcard public bio, dan Coma
+  Coffee demo dipromosikan ke VPS production dengan Laravel/MySQL/Redis.
+- Alasan: exact candidate telah menutup artifact, backup/restore, migration,
+  service, browser, security, rollback, TLS, dan public-smoke gates.
+- Produk/area: SagaBio runtime, domain split, wildcard TLS, session isolation,
+  immutable publish payload, public analytics, QR, dan legacy redirect.
+- Klasifikasi: `CONFIRMED`; application source
+  `06be995bf2da5e05e25ba3d394516ad9d8a52f10`.
+- Production berubah: ya. Delivery `PRODUCTION_DEPLOYED`; activation
+  `NOT_PRODUCTION_ACTIVATED`; business readiness `NOT_BUSINESS_READY`.
+- Residual: central signup default-off, akun owner belum UAT, SMTP/storage belum
+  diterima, dan wildcard renewal DNS-01 belum otomatis.
+- File knowledge: product, dossier, changelog SagaBio, master, gaps,
+  portfolio/root changelog, dan sync status.
+
 ### SagaView urutan import frame sebelum deteksi candidate
 
 - Ringkasan: frame baru tidak lagi langsung menerima satu slot bawaan. Operator
@@ -31,6 +48,24 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 - Residual: profile sentuh mobile/tablet pada simulasi drag mouse test lama belum
   menjadi evidence resize; target desktop editor lulus. Deployment membutuhkan
   approval dan release gate terpisah.
+- File knowledge: product, dossier, changelog SagaView, master, decisions, gaps,
+  portfolio/root changelog, dan sync status.
+
+### SagaView rotate slot individual candidate
+
+- Ringkasan: setiap box slot foto mendapat tombol rotate kecil untuk memutar
+  slot individual 90 derajat tanpa memutar frame atau slot lain.
+- Alasan: founder meminta akses rotate langsung pada masing-masing box agar
+  orientasi slot dapat disesuaikan dari canvas.
+- Produk/area: frame slot geometry, canvas control, keyboard/accessibility,
+  responsive visual, dan browser regression.
+- Klasifikasi: `CONFIRMED`; keputusan founder `DEC-035`; source candidate
+  `5906028703759d49ef930a7363c5efc293f6be97`.
+- Gate: Prettier, build, 119 test/1.248 assertions, focused Playwright desktop
+  1/1, visual QA ikon/handle, npm audit, Composer audit, diff, dan public-safety.
+- Production berubah: tidak. Delivery `LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; backend production tetap `9b4b68a1` /
+  `20260805053500-9b4b68a`.
 - File knowledge: product, dossier, changelog SagaView, master, decisions, gaps,
   portfolio/root changelog, dan sync status.
 

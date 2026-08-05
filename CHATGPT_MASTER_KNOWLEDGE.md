@@ -451,12 +451,16 @@ portrait/landscape tidak dipenyet. Canvas landscape mendukung putar kanan/kiri
 90 derajat dan pemetaan ulang slot. Deteksi otomatis memakai feather awal 4 px;
 semua slot dapat diatur 0–12 px atau ±2 px, dipindah pada canvas, dan di-resize
 dari empat sudut sambil mempertahankan input X/Y/W/H.
-Candidate backend `71d70fb8` mengubah urutan frame baru menjadi 0 slot, pilih
+Candidate backend `59060287` mengubah urutan frame baru menjadi 0 slot, pilih
 PNG/WebP, jalankan `Deteksi otomatis`, lalu review/koreksi slot. Penambahan slot
 manual baru aktif setelah deteksi pernah dicoba dan draft tanpa slot diblokir;
 frame existing tetap memuat slot tersimpan. Statusnya `LOCAL_VALIDATED /
 IMPLEMENTED_NOT_DEPLOYED`; production tetap backend `9b4b68a1` /
 `20260805053500-9b4b68a`.
+Setiap box slot pada candidate juga memiliki ikon rotate kecil. Satu klik
+menukar W/H slot 90 derajat di sekitar titik tengah dan menjaga hasil tetap di
+canvas, tanpa memutar artwork frame atau slot lain. Drag, empat resize handle,
+feather, dan input X/Y/W/H tetap tersedia.
 Output Settings kini hanya menampilkan Reset/Simpan saat dirty, menaruh action
 setelah konten pada mobile dan sticky pada desktop, memakai target 44 px, serta
 memprioritaskan status `Belum disimpan` ketika operator mengedit ulang. Folder,
@@ -559,15 +563,20 @@ Fokus awal F&B. Positioning: customer-journey front door dari Instagram/QR
 menuju menu, promo, lokasi, WhatsApp, dan e-menu; bukan clone Linktree dan bukan
 pengganti SagaMenu.
 
-Builder lokal sudah mendukung pengurutan section, beberapa keluarga layout, dan
+Builder sudah mendukung pengurutan section, beberapa keluarga layout, dan
 sebelas preset journey general/F&B/jasa/produk/portfolio/creator. Preset Studio,
 readiness sesuai journey, SEO/share, aggregate analytics-to-action, QR
 lifecycle, managed review, dan guided support memiliki parity
 draft-preview-immutable publish-public. Source tervalidasi
-`8b79ff4e759b24acf34bb88dfe714588754bc00d`; 150 test/1.139 assertion
-dan browser 8/8 desktop-mobile lulus.
+`06be995bf2da5e05e25ba3d394516ad9d8a52f10`; 149 test lulus, 2 controlled
+skip, 1.141 assertion, serta browser desktop-mobile lulus.
 
-Status: `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`, belum production.
+Landing `sagabio.site`, branded login `app.sagabio.site`, dan pilot wildcard
+Coma Coffee sudah live di VPS dengan MySQL/Redis, TLS wildcard, immutable
+payload, analytics event, QR, serta legacy redirect. Status delivery:
+`PRODUCTION_DEPLOYED`; activation: `NOT_PRODUCTION_ACTIVATED`; business:
+`NOT_BUSINESS_READY`. Central signup, akun owner, SMTP/storage, dan renewal
+DNS-01 otomatis masih menjadi gate.
 
 ### SagaMenu
 

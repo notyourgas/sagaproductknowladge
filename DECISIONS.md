@@ -496,3 +496,17 @@ keputusan pengganti.
 | Pemberi keputusan | Andreas / founder |
 | Status | `CONFIRMED`; source `71d70fb87ebd86db80f28b43c76239c84690e96f` local-validated, belum production |
 | Dokumen terkait | [SagaView Product](products/sagaview/PRODUCT.md), [SagaView Dossier](products/sagaview/DOSSIER.md), [SagaView Changelog](products/sagaview/CHANGELOG.md), [Gaps](GAPS.md) |
+
+## DEC-035 - Setiap box slot SagaView memiliki rotate individual
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-05 |
+| Topik | Kontrol orientasi individual pada slot foto frame editor SagaView |
+| Keputusan | Setiap box slot foto memiliki ikon rotate kecil. Satu klik memutar geometri slot tersebut 90 derajat dengan menukar lebar dan tinggi di sekitar titik tengah serta menjaga hasil tetap berada di dalam canvas. Rotate tidak memutar artwork frame atau slot lain. |
+| Alasan | Founder membutuhkan koreksi orientasi langsung pada masing-masing box tanpa mengubah keseluruhan frame. |
+| Alternatif yang dipertimbangkan | Rotate hanya dari inspector; memutar seluruh frame; menyimpan angle bebas per slot; menampilkan ikon hanya pada slot aktif. |
+| Dampak | Tombol rotate selalu terlihat dan accessible pada setiap slot, tetap kompatibel dengan drag, empat resize handle, feather, dan input X/Y/W/H. Tidak ada perubahan API atau metadata karena rotasi 90 derajat direpresentasikan sebagai pertukaran W/H. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED`; source `5906028703759d49ef930a7363c5efc293f6be97` local-validated, belum production |
+| Dokumen terkait | [SagaView Product](products/sagaview/PRODUCT.md), [SagaView Dossier](products/sagaview/DOSSIER.md), [SagaView Changelog](products/sagaview/CHANGELOG.md), [Gaps](GAPS.md) |

@@ -1,5 +1,20 @@
 # Portfolio Changelog
 
+## 2026-08-05 - SagaBio first VPS production release
+
+- Exact application source `06be995bf2da5e05e25ba3d394516ad9d8a52f10`
+  aktif pada apex landing, app login, dan wildcard public bio; Coma Coffee
+  tersedia sebagai demo production, bukan customer evidence.
+- Artifact identity, backup/disposable restore, migration, queue/scheduler,
+  service, static/build/audit, 149 test + 2 controlled skip/1.141 assertion,
+  browser desktop-mobile, dan public smoke lulus.
+- Wildcard TLS, app-only session cookie, immutable payload ETag, analytics event,
+  QR redirect, dan legacy redirect terverifikasi. Public analytics CSRF
+  regression ditutup sebelum final promotion.
+- Delivery `PRODUCTION_DEPLOYED`; activation `NOT_PRODUCTION_ACTIVATED`;
+  business `NOT_BUSINESS_READY`. Central signup, owner handoff, SMTP/storage,
+  dan automatic DNS-01 renewal masih terbuka.
+
 ## 2026-08-05 - SagaView urutan import frame candidate
 
 - Frame baru kini dimulai tanpa slot: operator memilih PNG/WebP, menjalankan
@@ -11,6 +26,18 @@
 - Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap
   backend `9b4b68a1` / `20260805053500-9b4b68a`. Activation dan business
   readiness tidak berubah.
+
+## 2026-08-05 - SagaView rotate slot individual candidate
+
+- Setiap box slot pada frame editor kini memiliki ikon rotate kecil. Satu klik
+  memutar slot 90 derajat tanpa memutar frame atau slot lain.
+- Geometri mempertahankan titik tengah selama muat dan tetap di dalam canvas;
+  drag, resize, feather, serta X/Y/W/H dipertahankan.
+- Source kumulatif `5906028703759d49ef930a7363c5efc293f6be97`; build, 119
+  test/1.248 assertions, focused Playwright desktop, visual QA, dan audit
+  dependency lulus.
+- Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap
+  backend `9b4b68a1` / `20260805053500-9b4b68a`.
 
 ## 2026-08-05 - SagaView editor frame geometry production
 

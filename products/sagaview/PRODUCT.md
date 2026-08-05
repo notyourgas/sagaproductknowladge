@@ -128,13 +128,19 @@ Kontrak ini sekarang enforced server-side pada runtime production yang aktif.
 ## Urutan import frame
 
 `CONFIRMED` sebagai keputusan produk dan candidate lokal, bukan production:
-source backend `71d70fb87ebd86db80f28b43c76239c84690e96f` memulai frame baru
+source backend `5906028703759d49ef930a7363c5efc293f6be97` memulai frame baru
 dengan 0 slot. Operator wajib memilih PNG/WebP terlebih dahulu, lalu menjalankan
 `Deteksi otomatis`; hasil deteksi baru menjadi slot yang dapat diperiksa dan
 disesuaikan. `Tambah slot` manual baru aktif setelah deteksi pernah dicoba, dan
 draft tanpa slot tidak dapat disimpan. Frame existing tetap memuat slot
 tersimpannya. Status delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
 production tetap release backend `20260805053500-9b4b68a`.
+
+Candidate yang sama memberi setiap box slot tombol rotate kecil. Satu klik
+memutar geometri slot 90 derajat dengan menukar lebar/tinggi, mempertahankan
+titik tengah selama masih muat, dan menggeser seperlunya agar slot tetap berada
+di canvas. Rotate hanya berlaku pada slot tersebut; artwork frame dan slot lain
+tidak berubah.
 
 ## Session completion dan privacy handoff
 

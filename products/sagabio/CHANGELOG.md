@@ -6,7 +6,25 @@ Mencatat perubahan material SagaBio dengan provenance public-safe.
 
 ## Konteks
 
-Status saat ini local validated; entri tidak otomatis berarti production.
+Status delivery saat ini production deployed; activation dan business readiness
+tetap dinilai terpisah.
+
+## 2026-08-05 - First VPS production release
+
+- Klasifikasi: `CONFIRMED` dari exact application source
+  `06be995bf2da5e05e25ba3d394516ad9d8a52f10` dan runtime production.
+- Landing apex, branded login app, wildcard public bio, Coma Coffee demo,
+  immutable payload, public analytics event, QR redirect, dan legacy redirect
+  sudah live dengan wildcard TLS.
+- Gate: artifact identity, fresh backup, disposable MySQL restore, 16 migration,
+  queue/scheduler/service checks, 149 test + 2 controlled skip/1.141 assertion,
+  static/build/audit, browser desktop-mobile, dan public smoke lulus.
+- Bug CSRF public analytics diperbaiki sebelum final release; endpoint event
+  production kembali memberi 204 tanpa membuka session app ke public host.
+- Delivery: `PRODUCTION_DEPLOYED`; activation: `NOT_PRODUCTION_ACTIVATED`;
+  business readiness: `NOT_BUSINESS_READY`.
+- Blocker: central signup default-off, akun owner belum diserahterimakan,
+  SMTP/storage belum diterima, dan wildcard DNS-01 renewal belum otomatis.
 
 ## 2026-08-05 - Category journey productization
 

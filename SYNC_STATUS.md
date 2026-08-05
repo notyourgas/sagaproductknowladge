@@ -12,20 +12,23 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-05T13:04:36+07:00 |
+| Waktu pembaruan terakhir | 2026-08-05T13:16:49+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `085a7d7f1eb2158916080dad489f8482c68e3477` |
-| Informasi terakhir disinkronkan | SagaView candidate `71d70fb87ebd86db80f28b43c76239c84690e96f`: frame baru dimulai dengan 0 slot, lalu PNG/WebP, deteksi otomatis, review/koreksi, dan save. Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap `20260805053500-9b4b68a`. |
+| Baseline sebelum pembaruan | `0d980b0644c9b93f54710c8e7d05257909619977` |
+| Informasi terakhir disinkronkan | SagaBio exact source `06be995bf2da5e05e25ba3d394516ad9d8a52f10` aktif di apex/app/wildcard VPS dengan status `PRODUCTION_DEPLOYED / NOT_PRODUCTION_ACTIVATED / NOT_BUSINESS_READY`; SagaView cumulative candidate `59060287` tetap `IMPLEMENTED_NOT_DEPLOYED`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik keputusan. Candidate belum production; authenticated owner visual UAT dan business readiness mass-scale masih menunggu konfirmasi. |
-| Error | Tidak ada error release aktif. Profile sentuh mobile/tablet pada simulasi drag mouse test lama belum menjadi evidence resize; target desktop editor lulus. |
+| Konflik | Tidak ada konflik keputusan. Status SagaBio local-only digantikan runtime evidence production; SagaView candidate belum production. |
+| Error | Tidak ada error berat pada sampled log SagaBio. Central signup, owner UAT, SMTP/storage, dan automatic DNS-01 renewal tetap blocker aktivasi; gap SagaView tidak berubah. |
 
 ## File yang berubah pada sinkronisasi ini
 
 - `products/sagaview/PRODUCT.md`
 - `products/sagaview/DOSSIER.md`
 - `products/sagaview/CHANGELOG.md`
+- `products/sagabio/PRODUCT.md`
+- `products/sagabio/DOSSIER.md`
+- `products/sagabio/CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `DECISIONS.md`
@@ -48,9 +51,14 @@ terbaru setelah vault lokal dibuka. Exact-source Playwright, production gate,
 public smoke, dan deployed bundle check sudah lulus; Founding Studio Pilot tetap
 dibutuhkan sebelum klaim `BUSINESS_READY` mass-scale.
 
-Candidate urutan import frame `71d70fb8` juga menunggu approval deploy dan
+Candidate kumulatif frame editor `59060287` juga menunggu approval deploy dan
 release-safety exact source. Sampai dipromosikan, production masih memakai
 release backend `20260805053500-9b4b68a`.
+
+SagaBio menunggu konfigurasi central identity production, provisioning akun
+owner, UAT login/save/preview/publish/QR, acceptance SMTP dan object storage,
+serta automatic Hostinger DNS-01 renewal sebelum dapat disebut
+`PRODUCTION_ACTIVATED` atau `BUSINESS_READY`.
 
 ## Cara verifikasi
 

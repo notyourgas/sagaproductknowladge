@@ -227,10 +227,12 @@ ketika keputusan atau release baru menutup gap.
 
 ### SagaView
 
-- `BLOCKED`: candidate backend `71d70fb8` menghapus slot bawaan pada frame baru
+- `BLOCKED`: candidate backend `59060287` menghapus slot bawaan pada frame baru
   dan mengunci urutan `pilih PNG/WebP -> Deteksi otomatis -> review/koreksi ->
   simpan`. Build, 119 test/1.248 assertions, focused Playwright desktop, serta
-  audit dependency lulus. Production tetap `9b4b68a1` /
+  audit dependency lulus. Setiap slot juga memiliki ikon rotate individual 90
+  derajat dengan geometri tetap di canvas; focused E2E dan visual QA lulus.
+  Production tetap `9b4b68a1` /
   `20260805053500-9b4b68a`; promosi menunggu approval deploy, release-safety
   exact source, immutable release, rollback, dan authenticated smoke.
 
@@ -320,9 +322,14 @@ ketika keputusan atau release baru menutup gap.
   kerja, bukan hasil.
 - `NEEDS CONFIRMATION`: pricing, setup fee, hosting/domain, dan scope support.
 - `NEEDS CONFIRMATION`: kriteria keluar dari done-for-you menuju self-service.
-- `TODO`: tutup wildcard TLS/vhost, production environment, backup/disposable
-  restore, exact-release migration, rollback, dan public smoke sebelum source
-  SagaBio `8b79ff4e759b24acf34bb88dfe714588754bc00d` boleh di-deploy.
+- `CONFIRMED`: exact application source
+  `06be995bf2da5e05e25ba3d394516ad9d8a52f10` sudah `PRODUCTION_DEPLOYED`;
+  wildcard TLS/vhost, environment, backup/disposable restore, migration,
+  rollback, queue/scheduler, browser acceptance, dan public smoke lulus.
+- `TODO`: aktifkan central identity/signup secara fail-closed dan lakukan UAT
+  akun owner untuk login, save, preview, publish, serta QR.
+- `TODO`: konfigurasi dan terima SMTP, object storage, serta Hostinger DNS API
+  renewal otomatis sebelum aktivasi komersial.
 
 ### SagaMenu
 

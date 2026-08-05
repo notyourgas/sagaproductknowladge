@@ -1,7 +1,7 @@
 # SagaBio Product Knowledge
 
 Updated: 5 Agustus 2026
-Evidence status: `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`
+Evidence status: `PRODUCTION_DEPLOYED / NOT_PRODUCTION_ACTIVATED / NOT_BUSINESS_READY`
 
 ## Tujuan dokumen
 
@@ -11,8 +11,9 @@ terbuka berada di [GAPS](../../GAPS.md#sagabio).
 
 ## Konteks
 
-Informasi saat ini berasal dari implementasi dan acceptance lokal; belum ada
-production activation yang terverifikasi.
+Informasi saat ini berasal dari exact release, runtime production, public
+smoke, dan acceptance browser. Deployment sudah terverifikasi; aktivasi akun
+customer dan kesiapan bisnis belum selesai.
 
 ## Ringkasan
 
@@ -78,26 +79,35 @@ SagaMenu tetap merupakan produk e-menu/e-katalog terpisah.
 
 ## Status saat ini
 
-Status: `LOCAL_VALIDATED`.
+Status delivery: `PRODUCTION_DEPLOYED`.
+Status activation: `NOT_PRODUCTION_ACTIVATED`.
+Status bisnis: `NOT_BUSINESS_READY`.
 
-- Laravel, Inertia Vue, Blade public renderer, Filament, dan MySQL lokal sudah
-  tersedia.
+- Laravel, Inertia Vue, Blade public renderer, Filament, MySQL, Redis, Nginx,
+  worker, dan scheduler aktif di VPS production.
 - Owner, public bio, admin, publish, analytics, QR, dan security contracts telah
   dibangun.
 - Flow pilih layout/urutkan -> autosave -> preview -> immutable publish ->
-  public page lulus di desktop dan mobile pada source
-  `8b79ff4e759b24acf34bb88dfe714588754bc00d`.
+  public page berada pada exact application source
+  `06be995bf2da5e05e25ba3d394516ad9d8a52f10`.
 - Penerapan preset kini langsung menyelaraskan draft server, editor, preview,
   publish snapshot, dan public renderer tanpa state layout lama.
-- Regression lokal lulus 150 test dengan 1.139 assertion; browser acceptance
-  lulus 8/8 dan dependency audit npm/Composer nol advisory.
-- Belum ada staging/production evidence yang cukup untuk menyebutnya live.
+- Full regression lulus 149 test, 2 controlled skip, dan 1.141 assertion;
+  static/build/dependency gate serta browser desktop-mobile lulus.
+- `https://sagabio.site`, `https://app.sagabio.site/login`, dan pilot
+  `https://coma-coffee.sagabio.site` live dengan wildcard TLS, payload ETag,
+  analytics event, QR redirect, dan legacy redirect.
+- Signup pusat tetap default-off. Belum ada akun owner customer yang dapat
+  dipakai untuk authenticated save/publish UAT.
 
 ## Belum boleh diklaim
 
 - Custom domain, payment, WhatsApp API, booking, POS, dan e-menu sync tidak
   termasuk pilot.
-- Demo/local data bukan customer production.
+- Pilot Coma Coffee adalah halaman demonstrasi production, bukan customer atau
+  paid-pilot evidence.
+- Produk belum boleh disebut self-serve atau business-ready sebelum central
+  identity, owner handoff, SMTP/storage, dan renewal wildcard otomatis lulus.
 
 ## Ide konten
 

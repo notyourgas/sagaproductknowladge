@@ -4,6 +4,25 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-08-05 - Rotate individual pada setiap slot candidate
+
+- Klasifikasi: `CONFIRMED` sebagai keputusan produk dan candidate lokal, bukan
+  production.
+- Setiap box slot memiliki ikon rotate kecil yang selalu terlihat dan memiliki
+  accessible name. Klik menukar lebar/tinggi slot 90 derajat di sekitar titik
+  tengah lalu menjaga hasil tetap di dalam canvas.
+- Rotate hanya mengubah slot terpilih; frame, slot lain, feather, drag-move,
+  empat handle resize, serta input X/Y/W/H tetap bekerja.
+- Source kumulatif `5906028703759d49ef930a7363c5efc293f6be97` pada branch
+  `codex/s70-single-device-production-lineage`.
+- Validation: Prettier; build; 119 test SagaView/1.248 assertions; focused
+  Playwright desktop 1/1 memverifikasi ikon terlihat dan W/H tertukar; visual QA
+  memastikan ikon tidak menutupi handle; npm dan Composer audit nol advisory.
+- Status delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap
+  backend `9b4b68a1` / `20260805053500-9b4b68a`. Tidak ada API, migration,
+  tenant/device/session, foto, payment, pricing, entitlement, atau output 4R
+  yang berubah.
+
 ## 2026-08-05 - Urutan import frame sebelum deteksi candidate
 
 - Klasifikasi: `CONFIRMED` sebagai keputusan produk dan candidate lokal, bukan
