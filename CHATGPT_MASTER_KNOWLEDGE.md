@@ -409,8 +409,11 @@ plan-limited, tanpa auto-charge.
 Update terbaru: backend memakai source
 `5906028703759d49ef930a7363c5efc293f6be97`, release
 `20260805133709-5906028`, sedangkan Studio aktif memakai source
-`2b0331d53dc4c590dee5329ef892ea01fa4a8a97`, release
-`20260805170231-2b0331d`. Login dan Studio masing-masing merender tepat satu
+`4bbd1665222332da7aee28da8d4ce01253b9ef8c`, release
+`20260805181945-4bbd166`, dengan rollback `20260805170231-2b0331d`. Workspace
+Session kini memakai lebar adaptif sampai 1600 piksel pada monitor besar tanpa
+merusak reflow mobile/laptop atau menambah horizontal overflow. Login dan
+Studio masing-masing merender tepat satu
 `Powered by SagaView`; footer Studio responsif memakai satu node DOM, memiliki
 ruang aman mobile, dan tetap terbaca pada forced-colors. Navigasi mobile
 berikutnya/sebelumnya membawa target sampai terlihat penuh dan menghormati

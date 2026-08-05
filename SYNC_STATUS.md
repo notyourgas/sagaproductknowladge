@@ -12,11 +12,11 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-05T17:11:35+07:00 |
+| Waktu pembaruan terakhir | 2026-08-05T18:25:07+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `14388ca477bf2f095ae7e132701c44067ddfda3f` |
-| Informasi terakhir disinkronkan | SagaView compact all-menu source Studio `2b0331d53dc4c590dee5329ef892ea01fa4a8a97` aktif sebagai release `20260805170231-2b0331d`; backend tetap `20260805133709-5906028`, rollback Studio `20260805133709-57c0337`, dan free drag rotation tetap candidate. |
+| Baseline sebelum pembaruan | `98680de973c605579b1cf754efe827e60c29273f` |
+| Informasi terakhir disinkronkan | SagaView workspace Session source Studio `4bbd1665222332da7aee28da8d4ce01253b9ef8c` aktif sebagai release `20260805181945-4bbd166`; backend tetap `20260805133709-5906028`, rollback Studio `20260805170231-2b0331d`, dan free drag rotation tetap candidate. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
 | Konflik | `DEC-035` deprecated oleh koreksi founder `DEC-036`; free drag rotation belum production. `DEC-037` mengizinkan release UI compact all-menu tanpa aktivasi subscription tenant, tetapi tidak mengubah entitlement atau business readiness. |
 | Error | Tidak ada error release UI terbuka. UAT subscription tenant sengaja dilewati; Founding Studio Pilot dan free drag rotation tetap terpisah sebagai gap. |
@@ -28,7 +28,6 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `products/sagaview/CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
-- `DECISIONS.md`
 - `GAPS.md`
 - `CHANGELOG.md`
 - `SYNC_STATUS.md`
@@ -43,10 +42,10 @@ SagaBook S119 menunggu owner mengganti copy alamat placeholder pada storefront
 aktif dan menyelesaikan satu booking nyata terkontrol sebelum klaim
 `BUSINESS_READY` atau distribusi link secara luas.
 
-SagaView compact all-menu aktif pada release Studio
-`20260805170231-2b0331d`; rollback `20260805133709-57c0337` dipertahankan.
-UAT subscription tenant dilewati atas keputusan founder dan tidak boleh
-ditafsirkan sebagai bukti `BUSINESS_READY`.
+SagaView compact all-menu dan workspace Session monitor besar aktif pada release
+Studio `20260805181945-4bbd166`; rollback `20260805170231-2b0331d`
+dipertahankan. UAT subscription tenant dilewati atas keputusan founder dan
+tidak boleh ditafsirkan sebagai bukti `BUSINESS_READY`.
 
 SagaView free drag rotation menunggu otorisasi eksplisit untuk memulihkan
 commerce canary internal yang diarsipkan Owner atau menyiapkan replacement

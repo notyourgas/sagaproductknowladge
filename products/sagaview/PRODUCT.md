@@ -1,8 +1,9 @@
 # SagaView Product Knowledge
 
 Updated: 5 Agustus 2026
-Evidence status: production deployed + production activated; frame import-order
-dan compact all-menu production, free drag rotation masih candidate
+Evidence status: production deployed + production activated; frame import-order,
+compact all-menu, dan workspace Session monitor besar production; free drag
+rotation masih candidate
 
 ## Tujuan dokumen
 
@@ -14,6 +15,19 @@ Menjadi ringkasan fakta kanonik SagaView. Detail lengkap berada di
 
 Fakta release di dokumen ini mengacu pada exact source dan runtime production
 yang diverifikasi sampai 5 Agustus 2026.
+
+## Status production terbaru
+
+- Studio source `4bbd1665222332da7aee28da8d4ce01253b9ef8c` aktif sebagai
+  release `20260805181945-4bbd166`; rollback
+  `20260805170231-2b0331d` dipertahankan.
+- Workspace Session memakai lebar adaptif sampai 1600 piksel pada monitor
+  besar. Layar mobile, laptop compact, dan MacBook tetap memakai reflow lama;
+  tidak ada horizontal overflow atau fitur yang disembunyikan.
+- Backend tetap `20260805133709-5906028`. Subscription, entitlement, payment,
+  device/session, foto lokal, export 4R, dan data tenant tidak berubah.
+- Delivery dan activation `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+  business readiness tetap `NEEDS CONFIRMATION`.
 
 ## Ringkasan
 

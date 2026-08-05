@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-05 - SagaView Session large-monitor production
+
+- Studio source `4bbd1665222332da7aee28da8d4ce01253b9ef8c` aktif sebagai
+  release `20260805181945-4bbd166`; rollback
+  `20260805170231-2b0331d` tersedia dan backend tetap
+  `20260805133709-5906028`.
+- Workspace Session meningkat dari batas 1180 menjadi maksimum 1600 piksel,
+  sehingga monitor Full HD/QHD lebih efektif tanpa mengubah reflow mobile,
+  Windows compact, MacBook, atau zoom tinggi.
+- Full exact-source test, build, audit, immutable promotion, service/header/
+  journal, dan Playwright produksi lulus. Business readiness tetap belum
+  diklaim; subscription, entitlement, payment, tenant, foto, dan output tidak
+  diubah.
+
 ## 2026-08-05 - SagaView compact all-menu production
 
 - Studio source `2b0331d53dc4c590dee5329ef892ea01fa4a8a97` aktif sebagai

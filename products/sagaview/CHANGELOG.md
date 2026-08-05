@@ -4,6 +4,28 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-08-05 - Workspace Session monitor besar production
+
+- Klasifikasi: `CONFIRMED`.
+- Status: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; business readiness tetap
+  `NEEDS CONFIRMATION`.
+- Before: workspace Session berhenti pada 1180 piksel, sehingga layar Full HD
+  dan QHD menyisakan ruang kosong besar di sekitar alur operasional.
+- After: shell utama dapat memakai 1720 piksel dan workspace Session maksimum
+  1600 piksel. Layar compact tetap reflow, batas teks tetap terbaca, dan tidak
+  ada horizontal overflow.
+- Source Studio `4bbd1665222332da7aee28da8d4ce01253b9ef8c`, release
+  `20260805181945-4bbd166`, rollback `20260805170231-2b0331d`; backend tetap
+  `20260805133709-5906028`.
+- Gate: red-green viewport, focused Playwright 17/17, unit 156/156, full E2E
+  114 pass/2 capture-only skip, lint, format, typecheck, client/SSR build,
+  bundle budget, audit nol, target preflight, atomic activation, live
+  Playwright 6/6, header keamanan tunggal, service/endpoint/journal, dan visual
+  390x844, 1440x900, serta 2560x1440 lulus.
+- Subscription activation tetap dilewati sesuai arahan founder. Entitlement,
+  payment, tenant isolation, device/session, foto lokal, output 4R, dan data
+  tenant tidak berubah.
+
 ## 2026-08-05 - Compact all-menu Studio production
 
 - Klasifikasi: `CONFIRMED`.

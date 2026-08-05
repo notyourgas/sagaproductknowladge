@@ -12,6 +12,26 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-05
 
+### SagaView workspace Session monitor besar production
+
+- Ringkasan: workspace Session kini memanfaatkan monitor Full HD dan QHD secara
+  proporsional dengan batas konten 1600 piksel, tanpa mengubah alur operasional.
+- Alasan: batas lama 1180 piksel menyisakan ruang hijau berlebihan pada monitor
+  27-32 inci dan menurunkan kepadatan informasi.
+- Produk/area: SagaView Studio Session, admin shell, viewport/zoom,
+  accessibility, release, screenshot, dan rollback.
+- Klasifikasi: `CONFIRMED`; source
+  `4bbd1665222332da7aee28da8d4ce01253b9ef8c`, release
+  `20260805181945-4bbd166`, rollback `20260805170231-2b0331d`.
+- Gate: red-green; focused 17/17; unit 156/156; full E2E 114 pass/2 skip;
+  lint/format/typecheck; build/budget; audit nol; target preflight; atomic
+  activation; live Playwright 6/6; endpoint, header, service, dan journal.
+- Production berubah: ya, hanya frontend SagaView. Backend, subscription,
+  entitlement, payment, device/session, tenant, foto lokal, dan output 4R tidak
+  berubah. Business readiness tetap `NEEDS CONFIRMATION`.
+- File knowledge: product, dossier, changelog SagaView, master, gaps,
+  portfolio/root changelog, dan sync status.
+
 ### SagaView compact all-menu production
 
 - Ringkasan: seluruh delapan route Studio Console sekarang dapat dibuka dari

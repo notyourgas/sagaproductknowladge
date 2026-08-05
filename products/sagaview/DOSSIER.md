@@ -12,6 +12,7 @@ SagaView berdasarkan runtime production aktif.
 - Activation: `PRODUCTION_ACTIVATED`
 - Business readiness: `NEEDS CONFIRMATION` untuk penjualan massal
 - UI Studio compact all-menu: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
+- UI Session monitor besar: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
 
 ## Overview produk
 
@@ -59,6 +60,15 @@ tenant, status, dan aksi utama yang jelas. Target interaktif minimal 44 px,
 motion dibatasi 180 ms, forced-colors/reduced-motion didukung, dan tepat satu
 `Powered by SagaView` tampil pada surface aplikasi/public/customer tanpa masuk
 ke export, print, invoice, atau receipt.
+
+Workspace Session production kini menggunakan shell sampai 1720 piksel dan
+konten operasional sampai 1600 piksel pada layar besar. Before: konten berhenti
+di 1180 piksel sehingga monitor 1920/QHD menyisakan ruang hijau berlebihan.
+After: kartu paket, form persiapan, readiness, dan status step memakai ruang
+monitor secara proporsional, sementara batas teks tetap terbaca. Source Studio
+`4bbd1665222332da7aee28da8d4ce01253b9ef8c` aktif sebagai release
+`20260805181945-4bbd166`; rollback `20260805170231-2b0331d` tersedia dan backend
+tetap `20260805133709-5906028`.
 
 Pemilihan frame production memakai preview, selected state, jumlah cetakan,
 serta satu aksi `Terapkan & lanjut`. Editor dan Review kini menjadi alur
