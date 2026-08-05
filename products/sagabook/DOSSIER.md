@@ -144,11 +144,15 @@ memiliki tepat satu `Powered by SagaBook` non-fixed, target 44 piksel, dan
 focus ring keyboard. Focused S115 2/2 lulus pada 390x844, reflow efektif 200
 persen, Windows compact, desktop anchor, MacBook, Full HD, QHD, dan 4K;
 backend 960/960 dengan 11.007 assertion, build, design 26/0, serta audit npm
-dan Composer nol. Full visual regression masih memiliki satu baseline detail
-payment yang berbeda akibat drift fixture tanggal/lokasi, sehingga acceptance
-dan release-safety receipt exact S115 belum lengkap. Production tetap
-`d70fc1e0` / `20260803194351-d70fc1e`, rollback
-`20260803132556-cfb2af8`; workflow bisnis dan SagaView tidak berubah.
+dan Composer nol. Drift baseline visual Detail Payment ditutup oleh source
+kumulatif `77a25c7c5ed7fe31d89b35ceee91b01859b9afca` pada
+`codex/s116-sagabook-visual-baseline`: baseline mobile sekarang sesuai fixture
+tanggal 2099 dan alamat demo deterministik. Red 1/1 menjadi green
+mobile/desktop 2/2; full storefront efektif 133 pass/11 expected skip setelah
+dua retry S115 desktop lulus. Candidate kini `LOCAL_VALIDATED / STAGING_READY /
+IMPLEMENTED_NOT_DEPLOYED`. Production tetap `d70fc1e0` /
+`20260803194351-d70fc1e`, rollback `20260803132556-cfb2af8`; receipt exact
+S116, approval, workflow bisnis, dan SagaView tidak berubah.
 
 Implementasi kumulatif source `1de6a935d8694e9c5231a429d4ff41d7d1bc3d9c`
 pada `codex/s113-sagabook-mobile-payment` berstatus `LOCAL_VALIDATED /

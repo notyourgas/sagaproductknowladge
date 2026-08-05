@@ -12,6 +12,26 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-05
 
+### SagaBook deterministic Detail Payment baseline
+
+- Ringkasan: satu snapshot mobile Detail Payment kini selaras dengan fixture
+  tanggal 2099 dan alamat demo deterministik yang sudah digunakan test.
+- Alasan: baseline lama masih menyimpan tanggal 2026 dan menahan full visual
+  acceptance S115 walau UI serta assertions fungsional sudah benar.
+- Produk/area terdampak: visual regression storefront, Detail Booking,
+  deterministic fixtures, acceptance evidence, dan release provenance. Tidak
+  ada perubahan runtime UI atau workflow bisnis.
+- Klasifikasi: `CONFIRMED`; source
+  `77a25c7c5ed7fe31d89b35ceee91b01859b9afca`, branch
+  `codex/s116-sagabook-visual-baseline`, delivery `LOCAL_VALIDATED /
+  STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: red 1/1 menjadi green mobile/desktop 2/2; storefront efektif 133
+  pass/11 expected skip; backend 960/960 dengan 11.007 assertion; build;
+  design 26/0; npm/Composer audit nol.
+- Production berubah: tidak. Runtime tetap `d70fc1e0` /
+  `20260803194351-d70fc1e`, rollback `20260803132556-cfb2af8`; blocker deploy
+  adalah release-safety receipt exact S116 dan approval.
+
 ### SagaBook secondary storefront signature candidate
 
 - Ringkasan: Detail Booking dan Reschedule kini memiliki satu signature

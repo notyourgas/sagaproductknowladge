@@ -4,6 +4,29 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-05 - Baseline visual Detail Payment kembali deterministik
+
+- Klasifikasi: `CONFIRMED`; delivery `LOCAL_VALIDATED / STAGING_READY /
+  IMPLEMENTED_NOT_DEPLOYED`. Source kumulatif
+  `77a25c7c5ed7fe31d89b35ceee91b01859b9afca` tersedia pada branch
+  `codex/s116-sagabook-visual-baseline`.
+- Before: snapshot mobile masih menyimpan tanggal 2026 dan belum memuat alamat
+  demo, sedangkan fixture test sudah sengaja dipisah ke tanggal 2099. After:
+  satu baseline mobile Detail Payment selaras dengan fixture deterministik dan
+  UI S115; tidak ada snapshot lain yang diperbarui.
+- Gate: red 1/1 gagal dengan diff 6 persen; green mobile/desktop 2/2; full
+  storefront efektif 133 pass/11 expected skip setelah dua retry S115 desktop
+  lulus; backend 960/960 dengan 11.007 assertion; build; design 26/0; npm dan
+  Composer audit nol.
+- Storefront tetap satu canvas maksimum 460 piksel, target header 44 piksel,
+  no-overflow, dan tepat satu `Powered by SagaBook`. API, migration,
+  booking/payment/availability, permission, tenant isolation, preset, foto,
+  export, invoice, receipt, serta SagaView tidak berubah.
+- Production tidak berubah: source `d70fc1e0d922eed86fe4ea4998688aad32c68c43`,
+  release `20260803194351-d70fc1e`, rollback
+  `20260803132556-cfb2af8`. Deployment menunggu release-safety receipt exact
+  S116 dan approval.
+
 ## 2026-08-05 - Signature dan akses header flow sekunder
 
 - Klasifikasi: `CONFIRMED`; delivery `LOCAL_VALIDATED /

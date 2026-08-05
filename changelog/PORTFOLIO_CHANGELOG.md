@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-05 - SagaBook deterministic Detail Payment baseline
+
+- Satu snapshot mobile Detail Payment diselaraskan dengan fixture tanggal 2099
+  dan alamat demo yang sudah menjadi kontrak test deterministik; tidak ada
+  perubahan UI runtime atau snapshot lain.
+- Source `77a25c7c5ed7fe31d89b35ceee91b01859b9afca` pada
+  `codex/s116-sagabook-visual-baseline`; red 1/1 menjadi green 2/2,
+  storefront efektif 133 pass/11 expected skip, backend 960/960, build, design
+  26/0, dan dependency audit nol.
+- Delivery `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
+  Production tetap `d70fc1e0` / `20260803194351-d70fc1e`; blocker deployment
+  adalah release-safety receipt exact S116 dan approval. SagaView serta
+  kontrak bisnis tidak berubah.
+
 ## 2026-08-05 - SagaBook secondary storefront signature candidate
 
 - Detail Booking dan Reschedule tetap satu canvas mobile maksimum 460 piksel,

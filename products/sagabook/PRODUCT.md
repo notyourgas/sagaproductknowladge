@@ -172,10 +172,16 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
   canvas mobile, serta kontrol Kembali/Bantuan minimum 44 piksel dengan focus
   ring. Focused S115 2/2 lulus pada 390x844, reflow efektif 200 persen,
   1280x720, 1440x900, 1512x982, Full HD, QHD, dan 4K; backend 960/960 dengan
-  11.007 assertion, build, design 26/0, serta npm/Composer audit nol. Satu
-  baseline visual lama pada detail payment masih berbeda karena fixture
-  tanggal/lokasi berubah, sehingga full acceptance dan release-safety receipt
-  exact S115 belum hijau. API, migration, payment, availability, permission,
+  11.007 assertion, build, design 26/0, serta npm/Composer audit nol. Blocker
+  baseline visual Detail Payment ditutup pada source kumulatif
+  `77a25c7c5ed7fe31d89b35ceee91b01859b9afca`, branch
+  `codex/s116-sagabook-visual-baseline`: baseline kini memakai fixture tanggal
+  2099 dan alamat demo yang sama dengan test deterministik. Red 1/1 menjadi
+  green mobile/desktop 2/2; full storefront efektif 133 pass/11 expected skip
+  setelah dua retry S115 desktop lulus. Backend, build, design, serta audit
+  dependency kembali hijau. Candidate kini `LOCAL_VALIDATED / STAGING_READY /
+  IMPLEMENTED_NOT_DEPLOYED`; release-safety receipt exact S116 dan approval
+  masih belum tersedia. API, migration, payment, availability, permission,
   tenant isolation, preset, invoice, receipt, foto, dan SagaView tidak berubah.
   Production tetap source `d70fc1e0`, release `20260803194351-d70fc1e`.
 - Kontrak mobile-only itu sudah `LOCAL_VALIDATED / STAGING_READY /
