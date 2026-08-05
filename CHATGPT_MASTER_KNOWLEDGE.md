@@ -655,6 +655,13 @@ persistence dan audit. Direct BFF fail-closed dan MySQL tetap loopback-only.
 Public registration juga aktif pada MySQL dengan validation, consent,
 idempotency, rate limit, receipt, audit, dan admin verification desk; participant
 fixture serta localStorage registration telah dihapus.
+Source runtime `640990f619156e16159be0562ccae1e7f259aa0b`, Hostinger release
+`20260805T190449Z`, Vercel `dpl_6zCCyTMBbA4eNgP7FYyanJ1RChAJ`, dan migration
+023 menambah audited WhatsApp delivery reconciliation tanpa resend, worker
+outbox otomatis satu menit, health probe dua menit, readiness queue yang lebih
+akurat, bulk PIC assignment, serta offline cache public-only. Delivery channel
+WhatsApp dikonfirmasi founder, tetapi record provider lama perlu direkonsiliasi
+admin dan rehearsal role/two-device tetap diperlukan sebelum event-ready.
 Source release `6b4b6feca16dc2d49b909f9301227e5078dfaf60` mengaktifkan runtime akses
 peserta via WhatsApp: outbox transaksional, provisioning role `player`, adapter
 Fonnte fail-closed, magic link single-use 30 menit, hash-only ledger, session
@@ -863,7 +870,7 @@ Delivery: `PLANNED`. Belum production-activated.
 - Jangan sebut seluruh AOGTICVITY production multi-device; auth dan public
   registration saja sudah production-activated.
 - Jangan klaim seluruh login WhatsApp AOGTICVITY production-ready. Fonnte
-  runtime dan channel UAT sudah aktif, tetapi status webhook serta
+  runtime dan delivery channel sudah dikonfirmasi, tetapi status webhook serta
   magic-link/session/reuse/revoke UAT belum lulus.
 - Jangan klaim jalur VIP/access policy production-activated sebelum registrasi,
   approval tanpa tim, open/close link, retensi sesi aktif, generator tim,

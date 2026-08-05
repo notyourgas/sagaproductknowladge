@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-06 - AOGTICVITY operations reliability production
+
+- Admin memperoleh audited delivery reconciliation tanpa resend, bulk PIC
+  assignment, dan readiness yang membedakan internal queue dari provider queue.
+- Worker WhatsApp otomatis serta health probe systemd aktif; offline cache
+  dibatasi ke public allowlist.
+- Source `640990f619156e16159be0562ccae1e7f259aa0b`, Hostinger
+  `20260805T190449Z`, Vercel `dpl_6zCCyTMBbA4eNgP7FYyanJ1RChAJ`, migration 023.
+- Delivery `PRODUCTION_DEPLOYED`; business readiness masih menunggu assignment
+  tim/PIC, audited reconciliation record lama, dan two-device rehearsal.
+
 ## 2026-08-05 - SagaView active-frame limit expansion production
 
 - Growth 50 dan Pro 100 frame aktif telah live; harga, device, preset, offline,

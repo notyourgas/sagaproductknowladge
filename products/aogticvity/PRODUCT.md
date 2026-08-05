@@ -1,6 +1,6 @@
 # AOGTICVITY Product Knowledge
 
-Updated: 5 Agustus 2026
+Updated: 6 Agustus 2026
 Evidence status: public Vercel delivery + database-backed auth, registration, team, and event-day operations runtime
 
 ## Tujuan dokumen
@@ -239,6 +239,17 @@ Public delivery saat ini: `https://olimpiade-kemerdekaan.vercel.app`.
   5 menit pergantian, dan ranking jumlah bola. Admin mengisi skor delapan tim;
   publish seri podium ditahan sampai tie-break dikonfirmasi. Legacy URL tetap
   menuju lomba pengganti dan total rundown provisional tetap 275 menit.
+- Source runtime `640990f619156e16159be0562ccae1e7f259aa0b`, Hostinger release
+  `20260805T190449Z`, Vercel production
+  `dpl_6zCCyTMBbA4eNgP7FYyanJ1RChAJ`, dan migration 023 mengaktifkan
+  finalisasi reliability operasional. Admin dapat merekonsiliasi pesan yang
+  dikonfirmasi diterima tanpa resend melalui write admin-only, same-origin,
+  transactional, idempotent, dan audited. Worker outbox otomatis berjalan
+  setiap menit, health probe setiap dua menit, readiness membedakan antrean
+  internal dari provider queue, rundown mempunyai bulk PIC assignment, dan
+  offline cache dibatasi hanya pada public allowlist. WhatsApp delivery channel
+  telah dikonfirmasi founder; record lama tetap membutuhkan rekonsiliasi admin
+  agar audit server sesuai fakta.
 - SQLite hanya fast test adapter.
 - Event-master memiliki dry-run, validation, atomic publish, versioning, dan
   audit. Durasi jadwal bersifat provisional dan dapat disunting admin.
@@ -263,7 +274,7 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:
 - UI memakai `Pixel Matchday Arcade` yang tetap mobile-first 430 px: Plus
   Jakarta Sans, Feather-style icons, stepped geometry, hard shadow, quest/HUD
   hierarchy, state feedback, dan motion yang menghormati reduced-motion.
-- Public visual regression lulus 61/61 pada route publik dan viewport 320, 390,
+- Public visual regression lulus 62/62 pada route publik dan viewport 320, 390,
   430, serta 1440 px; matriks memeriksa overflow teks, collision sibling,
   clearance navigasi, touch target, reduced motion, axe WCAG, CTA modal pada
   visual viewport pendek, dan origin POST magic-link.
@@ -301,8 +312,10 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:
   operator, leader, dan player mempunyai home route kanonik yang ditegakkan
   server-side.
 - Roster/check-in/result rehearsal lintas perangkat,
-  aktivasi provider status webhook, valid-link WhatsApp session UAT dua
-  perangkat, serta UAT fisik hari-H belum selesai. Public invalid-link smoke
+  assignment empat peserta approved, assignment PIC 10 lomba, valid-link
+  WhatsApp session UAT dua perangkat, serta UAT fisik hari-H belum selesai.
+  Provider webhook tetap belum terverifikasi walaupun delivery channel telah
+  dikonfirmasi founder. Public invalid-link smoke
   sudah membuktikan redirect memakai origin Vercel dan tidak lagi localhost.
 
 ## Belum boleh diklaim

@@ -8,6 +8,27 @@ Mencatat perubahan material AOGTICVITY/17an/Olimpiade.
 
 Nama lama dipertahankan sebagai provenance; status runtime harus eksplisit.
 
+## 2026-08-06 - Operations reliability production
+
+- `CONFIRMED`: admin dapat merekonsiliasi status pesan Fonnte yang sudah
+  dikonfirmasi peserta tanpa resend; alasan, actor, before-state, idempotency,
+  dan audit disimpan secara transaksional melalui migration 023.
+- Worker outbox bearer-secret berjalan setiap menit dan health probe setiap dua
+  menit. Readiness memisahkan pending dispatch, provider queued, confirmed,
+  serta approved participant tanpa tim.
+- UI rundown menambah bulk PIC assignment dengan preview dan versioned commit;
+  service worker v5 hanya meng-cache route/API public allowlist dan menolak
+  cache untuk admin, leader, player, serta API privat.
+- Source runtime `640990f619156e16159be0562ccae1e7f259aa0b`; Hostinger
+  `20260805T190449Z`; Vercel `dpl_6zCCyTMBbA4eNgP7FYyanJ1RChAJ`; migration
+  `023_notification_reconciliation`.
+- Gate: 122 unit/API, 24/24 disposable MySQL integration, 23 migration,
+  Playwright 62/62, production-domain 11/11, build, backup/restore, timer,
+  internal/public smoke, dan audit PII-free lulus.
+- Delivery `PRODUCTION_DEPLOYED`; activation event keseluruhan tetap
+  `BLOCKED` oleh empat assignment tim, sepuluh assignment PIC, audited
+  reconciliation record lama, dan two-device event rehearsal.
+
 ## 2026-08-05 - Dua lomba tim bola production
 
 - `CONFIRMED`: `cmp-2` berubah dari Makan Kerupuk menjadi **Ambil Bola Pakai

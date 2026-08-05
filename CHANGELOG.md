@@ -10,6 +10,28 @@ produk dan [Portfolio Changelog](changelog/PORTFOLIO_CHANGELOG.md).
 
 Root changelog tidak menggantikan changelog produk atau portfolio.
 
+## 2026-08-06
+
+### AOGTICVITY operations reliability production
+
+- Ringkasan: audited WhatsApp delivery reconciliation tanpa resend, automated
+  outbox worker, health timer, queue-aware readiness, bulk PIC assignment, dan
+  public-only offline cache aktif di production.
+- Alasan: menutup gap operasional antara provider-accepted queue, tindakan
+  admin, penugasan Hari-H, serta failure visibility.
+- Produk/area: AOGTICVITY admin, WhatsApp/Fonnte operations, readiness, rundown,
+  service worker, MySQL migration, Hostinger timers, dan Vercel public edge.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED`; event activation dan business
+  readiness masih `BLOCKED` oleh assignment tim/PIC serta two-device rehearsal.
+- Source/release: `640990f619156e16159be0562ccae1e7f259aa0b` /
+  `20260805T190449Z` / `dpl_6zCCyTMBbA4eNgP7FYyanJ1RChAJ`; migration 023.
+- Gate: unit 122, disposable MySQL 24/24, UI 62/62, production 11/11,
+  build, backup/restore, timer, smoke, rollback, dan public-safety lulus.
+- Production berubah: ya; tidak ada secret, credential, PII, raw webhook, atau
+  database dump yang ditulis ke knowledge publik.
+- File knowledge: product/changelog AOGTICVITY, portfolio, master, root
+  changelog, dan sync status.
+
 ## 2026-08-05
 
 ### SagaView active-frame limit expansion production
