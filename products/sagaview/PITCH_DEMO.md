@@ -33,6 +33,11 @@ tidak menggantikan physical UAT atau evidence restricted.
 | 11–12 menit | Completion/privacy | Customer memanggil operator; operator memverifikasi handoff dan cleanup. |
 | 12–13 menit | Help, Legal, dan plan | Tunjukkan SLA support, privacy/retention, serta CTA subscription. |
 
+Catatan operator: demo production masih harus menyebut limit 10/50. Keputusan
+Growth 50 / Pro 100 sudah `CONFIRMED` melalui `DEC-039` dan tersedia pada
+candidate `c8538060f64cfabce46dc7f837531015673e7a1c`, tetapi belum boleh dijanjikan
+sebagai limit live sebelum deployment dan entitlement production terverifikasi.
+
 ## Reset setelah demo
 
 1. Selesaikan sesi melalui alur operator.

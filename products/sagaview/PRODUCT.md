@@ -3,7 +3,8 @@
 Updated: 5 Agustus 2026
 Evidence status: production deployed + production activated; frame import-order,
 compact all-menu, workspace Session/Output monitor besar, free drag rotation,
-serta pemisahan Simpan Draft/Publish Frame production
+serta pemisahan Simpan Draft/Publish Frame production; ekspansi limit frame
+50/100 local-validated dan belum deploy
 
 ## Tujuan dokumen
 
@@ -30,6 +31,9 @@ yang diverifikasi sampai 5 Agustus 2026.
 - Backend source `9ee5bcca14ace7771a169bf8823df1e9ba7241c9` aktif sebagai
   release `20260805203055-9ee5bcc`; rollback
   `20260805193458-0b655da` dipertahankan.
+- Candidate source `c8538060f64cfabce46dc7f837531015673e7a1c`
+  menaikkan limit Growth menjadi 50 dan Pro menjadi 100 frame aktif. Status
+  `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production masih 10/50.
 - Delivery dan activation `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
   business readiness tetap `NEEDS CONFIRMATION`.
 
@@ -97,6 +101,12 @@ photo selection, editor, review, export, print, offline recovery, dan support.
 | Growth | Rp200.000 | 1 | 10 | 3 | 24 jam | 2 GB | Laporan operasional dasar. |
 | Pro | Rp500.000 | 4 | 50 | 10 | 168 jam | 10 GB | Laporan lanjutan, activity log, dan priority support. |
 
+Tabel di atas adalah kontrak production aktif. `CONFIRMED` melalui `DEC-039`:
+kontrak berikutnya menjadi Growth 50 dan Pro 100 frame aktif. Candidate source
+`c8538060f64cfabce46dc7f837531015673e7a1c` sudah
+`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; harga, device, preset, offline,
+storage, laporan, support, payment, dan fair-use tidak berubah.
+
 Kebutuhan device atau skala di atas Pro menggunakan penawaran Custom. Jumlah
 session/foto dipasarkan sebagai unlimited dengan fair-use. Foto tetap lokal dan
 tidak dihitung sebagai aset frame cloud.
@@ -114,6 +124,9 @@ Bundle belum ditampilkan atau diaktifkan.
 - Tidak ada auto-charge.
 
 Kontrak ini sekarang enforced server-side pada runtime production yang aktif.
+Candidate 50/100 juga menyelaraskan full-access trial ke Pro 100 dan fase
+plan-limited ke paket 50/100, tetapi angka tersebut belum menjadi entitlement
+production sebelum deployment terverifikasi.
 
 ### Support, retention, dan offboarding
 

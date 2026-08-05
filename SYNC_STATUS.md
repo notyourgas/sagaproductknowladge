@@ -12,24 +12,24 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-05T22:05:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-05T22:09:30+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `bb645e0` |
-| Informasi terakhir disinkronkan | Keputusan founder `DEC-039`: dua lomba AOGTICVITY berubah menjadi lomba seluruh tim, aktif melalui source `5bc951e0b8747e113b69b18162a200c592b39d3c`, Hostinger `20260805T145857Z`, Vercel `dpl_DacHrH6BN3u3bbD4ckFje7rU3fST`, dan migration 022. |
+| Baseline sebelum pembaruan | `2a108e6` |
+| Informasi terakhir disinkronkan | Keputusan founder `DEC-039`: kontrak berikutnya SagaView menjadi Growth 50 dan Pro 100 frame aktif melalui candidate `c8538060f64cfabce46dc7f837531015673e7a1c`; production masih 10/50 sampai guarded deploy terverifikasi. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik baru. ID lomba dan legacy URL dipertahankan untuk kompatibilitas. |
-| Error | Tidak ada error release terbuka. UAT scoring dua perangkat dan rehearsal keselamatan fisik AOGTICVITY tetap residual business-readiness. |
+| Konflik | Tidak ada konflik baru. Perbedaan candidate 50/100 dan production 10/50 adalah boundary status yang disengaja. |
+| Error | Enam failure SagaBook manual-transfer pada full suite identik dengan baseline aktif dan di luar scope; tidak ada error focused SagaView. Deployment belum dijalankan. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/aogticvity/PRODUCT.md`
-- `products/aogticvity/DOSSIER.md`
-- `products/aogticvity/CHANGELOG.md`
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/DOSSIER.md`
+- `products/sagaview/PITCH_DEMO.md`
+- `products/sagaview/CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `DECISIONS.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
-- `GAPS.md`
 - `CHANGELOG.md`
 - `SYNC_STATUS.md`
 
@@ -50,6 +50,11 @@ Backend aktif `20260805203055-9ee5bcc`; rollback
 `20260805193458-0b655da`. Authenticated Owner visual UAT dengan frame miring dan
 publish frame nyata serta Founding Studio Pilot tetap dibutuhkan sebelum klaim
 `BUSINESS_READY` mass-scale.
+
+Keputusan SagaView `DEC-039` untuk Growth 50 / Pro 100 sudah tersedia pada
+candidate `c8538060f64cfabce46dc7f837531015673e7a1c` dan telah local-validated,
+tetapi belum deploy. Entitlement production tetap 10/50 sampai guarded release
+serta verifikasi API live selesai.
 
 SagaBio menunggu konfigurasi central identity production, provisioning akun
 owner, UAT login/save/preview/publish/QR, acceptance SMTP dan object storage,

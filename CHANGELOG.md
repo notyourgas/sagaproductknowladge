@@ -12,6 +12,24 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-05
 
+### SagaView active-frame limit expansion candidate
+
+- Ringkasan: keputusan founder `DEC-039` menaikkan kontrak berikutnya menjadi
+  Growth 50 dan Pro 100 frame aktif tanpa mengubah harga atau benefit lain.
+- Produk/area: commercial policy, license/trial entitlement, owner pricing,
+  publish boundary, metadata plan, additive migration, release tooling, dan
+  acceptance coverage.
+- Source provenance:
+  `c8538060f64cfabce46dc7f837531015673e7a1c`, branch
+  `codex/sagaview-frame-limits-s116`.
+- Klasifikasi: `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+  production tetap `9ee5bcca` / `20260805203055-9ee5bcc` dengan limit 10/50.
+- Gate: focused 53 test/746 assertion, full suite 903/909 dengan enam failure
+  SagaBook baseline-identik, build, PHP format, release-script parse, Bash
+  syntax, dan UI pricing desktop/mobile 2/2 lulus.
+- File knowledge: product, dossier, pitch demo, changelog SagaView, master,
+  decisions, portfolio/root changelog, dan sync status.
+
 ### AOGTICVITY dua lomba tim bola production
 
 - Ringkasan: keputusan founder `DEC-040` mengganti `cmp-2` dan `cmp-8`

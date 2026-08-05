@@ -553,6 +553,20 @@ keputusan pengganti.
 | Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; source Owner/API `9ee5bcca14ace7771a169bf8823df1e9ba7241c9`, branch `codex/s70-single-device-production-lineage`, release `20260805203055-9ee5bcc`; Studio source `2121ebb80fa4238e91eef4003f852d34841e923f`, release `20260805203055-2121ebb` |
 | Dokumen terkait | [SagaView Product](products/sagaview/PRODUCT.md), [SagaView Dossier](products/sagaview/DOSSIER.md), [SagaView Changelog](products/sagaview/CHANGELOG.md), [Gaps](GAPS.md) |
 
+## DEC-039 - Limit frame aktif SagaView Growth 50 dan Pro 100
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-05 |
+| Topik | Kapasitas frame aktif paket SagaView |
+| Keputusan | Paket Growth mendukung maksimal 50 frame aktif dan Pro maksimal 100 frame aktif. Full-access trial mengikuti kapasitas authoring Pro 100; fase plan-limited mengikuti paket terpilih. Harga, device, preset, offline grace, storage aset frame, reports, support, payment, dan fair-use tetap. |
+| Alasan | Founder meminta kapasitas Growth dinaikkan dari 10 ke 50 dan Pro dari 50 ke 100 agar katalog frame studio tidak terlalu cepat mencapai batas paket. |
+| Alternatif yang dipertimbangkan | Mempertahankan 10/50; menaikkan Growth saja; menjadikan limit custom per tenant tanpa kontrak paket baru. |
+| Dampak | Commercial policy, entitlement license/trial, katalog harga owner, validasi publish frame, metadata plan, test, dan release tooling harus menggunakan 50/100 secara konsisten. Migrasi bersifat additive dan rollback runtime tidak mencabut ekspansi entitlement yang sudah diberikan. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; source `c8538060f64cfabce46dc7f837531015673e7a1c`, branch `codex/sagaview-frame-limits-s116`; production tetap source/release `9ee5bcca` / `20260805203055-9ee5bcc` dengan limit 10/50 |
+| Dokumen terkait | [SagaView Product](products/sagaview/PRODUCT.md), [SagaView Dossier](products/sagaview/DOSSIER.md), [SagaView Pitch Demo](products/sagaview/PITCH_DEMO.md), [SagaView Changelog](products/sagaview/CHANGELOG.md), [Master Knowledge](CHATGPT_MASTER_KNOWLEDGE.md) |
+
 ## DEC-040 - AOGTICVITY mengganti dua lomba menjadi lomba tim bola
 
 | Field | Isi |

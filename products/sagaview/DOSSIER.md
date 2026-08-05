@@ -16,6 +16,8 @@ SagaView berdasarkan runtime production aktif.
 - UI Output monitor besar: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
 - Free drag rotation slot: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
 - Simpan Draft/Publish Frame: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
+- Ekspansi frame aktif Growth 50 / Pro 100:
+  `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`
 
 ## Overview produk
 
@@ -272,6 +274,14 @@ Growth: 1 device, 10 frame aktif, 3 preset, offline 24 jam, 2 GB aset frame
 cloud, dan laporan dasar. Pro: 4 device, 50 frame aktif, 10 preset, offline 168
 jam, 10 GB aset frame cloud, laporan lanjutan, activity log, dan priority
 support. Session/foto dipasarkan unlimited dengan fair-use; foto tetap lokal.
+
+`CONFIRMED` melalui `DEC-039`: kontrak berikutnya menaikkan Growth menjadi 50
+dan Pro menjadi 100 frame aktif. Source
+`c8538060f64cfabce46dc7f837531015673e7a1c` sudah menyelaraskan commercial
+policy, license/trial entitlement, katalog owner, boundary publish, migrasi
+metadata additive, serta release safety. Statusnya
+`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; seluruh benefit lain tetap dan
+production belum berubah dari 10/50.
 
 `CONFIRMED` — kontrak ini aktif di production. Source backend aktif adalah
 `9ee5bcca14ace7771a169bf8823df1e9ba7241c9`, release

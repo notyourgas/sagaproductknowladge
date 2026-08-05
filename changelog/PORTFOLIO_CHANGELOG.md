@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-05 - SagaView active-frame limit expansion candidate
+
+- Growth berikutnya mendukung 50 frame aktif dan Pro 100; harga serta benefit
+  lain tidak berubah.
+- Commercial policy, license/trial entitlement, owner pricing, publish
+  boundary, metadata plan, additive migration, dan guarded release tooling
+  memakai kontrak 50/100 yang sama.
+- Source `c8538060f64cfabce46dc7f837531015673e7a1c`; validation focused 53/53,
+  full suite 903/909 dengan enam failure SagaBook baseline-identik, build,
+  format, script syntax, dan UI pricing desktop/mobile lulus.
+- Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap
+  Growth 10 / Pro 50 sampai deployment dan entitlement live terverifikasi.
+
 ## 2026-08-05 - AOGTICVITY two team-ball competitions production
 
 - Makan Kerupuk dan Balap Karung Helm diganti menjadi Ambil Bola Pakai Sarung

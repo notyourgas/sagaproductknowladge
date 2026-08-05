@@ -4,6 +4,26 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-08-05 - Ekspansi limit frame aktif candidate
+
+- Klasifikasi: `CONFIRMED` melalui keputusan founder `DEC-039`.
+- Before: kontrak production memberi Growth 10 dan Pro 50 frame aktif.
+- After candidate: Growth 50 dan Pro 100 frame aktif; harga, device, preset,
+  offline grace, storage, reports, support, payment, dan fair-use tidak berubah.
+- Source `c8538060f64cfabce46dc7f837531015673e7a1c`; branch
+  `codex/sagaview-frame-limits-s116`.
+- Commercial policy, license/trial entitlement, katalog owner, boundary publish,
+  metadata plan, additive migration, release tooling, dan tests memakai kontrak
+  50/100 yang sama.
+- Validation: 53 focused test/746 assertion; full suite 903/909 dengan enam
+  failure SagaBook manual-transfer yang identik dengan baseline aktif; build,
+  PHP format, PowerShell parse, Bash syntax, dan pricing UI desktop/mobile 2/2
+  lulus. Growth frame ke-50 dapat dipublish dan frame ke-51 ditolak.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Production tetap source
+  `9ee5bcca14ace7771a169bf8823df1e9ba7241c9`, release
+  `20260805203055-9ee5bcc`, dengan limit live 10/50 sampai guarded deploy dan
+  entitlement production terverifikasi.
+
 ## 2026-08-05 - Simpan Draft dan Publish Frame production
 
 - Klasifikasi: `CONFIRMED` melalui keputusan founder `DEC-038`.

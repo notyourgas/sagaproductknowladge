@@ -406,6 +406,12 @@ foto dipasarkan unlimited dengan fair-use; foto tetap lokal.
 Trial contract: 14 hari dua fase server-side; hari 1–7 full access, hari 8–14
 plan-limited, tanpa auto-charge.
 
+`CONFIRMED` melalui `DEC-039`: kontrak berikutnya menaikkan Growth menjadi 50
+dan Pro menjadi 100 frame aktif tanpa mengubah benefit lain. Candidate
+`c8538060f64cfabce46dc7f837531015673e7a1c` berstatus
+`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production dan entitlement live
+masih 10/50 sampai release terverifikasi.
+
 Update terbaru: backend memakai source
 `9ee5bcca14ace7771a169bf8823df1e9ba7241c9`, release
 `20260805203055-9ee5bcc`, sedangkan Studio aktif memakai source
