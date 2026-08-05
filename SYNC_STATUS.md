@@ -12,23 +12,22 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-05T22:09:30+07:00 |
+| Waktu pembaruan terakhir | 2026-08-05T22:22:11+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `2a108e6` |
-| Informasi terakhir disinkronkan | Keputusan founder `DEC-039`: kontrak berikutnya SagaView menjadi Growth 50 dan Pro 100 frame aktif melalui candidate `c8538060f64cfabce46dc7f837531015673e7a1c`; production masih 10/50 sampai guarded deploy terverifikasi. |
+| Baseline sebelum pembaruan | `4ee5642` |
+| Informasi terakhir disinkronkan | Workspace Izin Foto SagaView adaptif QHD/4K aktif pada Studio `3b66f8d5` / release `20260805221453-3b66f8d`; rollback `20260805203055-2121ebb`. Candidate Growth 50 / Pro 100 tetap belum deploy. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik baru. Perbedaan candidate 50/100 dan production 10/50 adalah boundary status yang disengaja. |
-| Error | Enam failure SagaBook manual-transfer pada full suite identik dengan baseline aktif dan di luar scope; tidak ada error focused SagaView. Deployment belum dijalankan. |
+| Konflik | Tidak ada konflik baru. Perbedaan candidate 50/100 dan production 10/50 tetap boundary status yang disengaja. |
+| Error | Satu artifact-write full Playwright awal terkena ENOSPC lokal; exact failed scenario lulus saat output dipindah ke drive sehat. Tidak ada failure assertion produk, dependency vulnerability, atau error journal production. |
 
 ## File yang berubah pada sinkronisasi ini
 
 - `products/sagaview/PRODUCT.md`
 - `products/sagaview/DOSSIER.md`
-- `products/sagaview/PITCH_DEMO.md`
 - `products/sagaview/CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
-- `DECISIONS.md`
+- `GAPS.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHANGELOG.md`
 - `SYNC_STATUS.md`
@@ -43,9 +42,10 @@ SagaBook S119 menunggu owner mengganti copy alamat placeholder pada storefront
 aktif dan menyelesaikan satu booking nyata terkontrol sebelum klaim
 `BUSINESS_READY` atau distribusi link secara luas.
 
-SagaView compact all-menu, workspace Session/Output monitor besar, free drag
-rotation, serta pemisahan draft/publish aktif secara kumulatif pada Studio
-`20260805203055-2121ebb`; rollback `20260805193458-2121ebb` dipertahankan.
+SagaView compact all-menu, workspace Session/Output/Izin Foto monitor besar,
+free drag rotation, serta pemisahan draft/publish aktif secara kumulatif pada
+Studio `20260805221453-3b66f8d`; rollback `20260805203055-2121ebb`
+dipertahankan.
 Backend aktif `20260805203055-9ee5bcc`; rollback
 `20260805193458-0b655da`. Authenticated Owner visual UAT dengan frame miring dan
 publish frame nyata serta Founding Studio Pilot tetap dibutuhkan sebelum klaim

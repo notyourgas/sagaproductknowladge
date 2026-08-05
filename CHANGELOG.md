@@ -12,6 +12,30 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-05
 
+### SagaView workspace Izin Foto monitor besar production
+
+- Ringkasan: workspace Izin Foto sekarang maksimum 1400 piksel; mobile/laptop
+  hingga 1440 tetap satu kolom dan QHD/4K memakai dua kartu sesi berdampingan.
+- Alasan: batas lama sekitar 1152 piksel menyisakan ruang ekstrem pada monitor
+  besar dan memperpanjang scan vertikal operator.
+- Produk/area: SagaView Studio Izin Foto, consent/privacy actions, viewport,
+  accessibility, release, screenshot, dan rollback.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+  business readiness tetap `NEEDS CONFIRMATION`.
+- Source/release: `3b66f8d5df3e34aba11c4eab2619cfe44efd06d7` /
+  `20260805221453-3b66f8d`; rollback `20260805203055-2121ebb`; backend tetap
+  `20260805203055-9ee5bcc`.
+- Gate: focused 18/18, 156 unit, 116 skenario Playwright executable lulus dalam
+  dua evidence round, build/budget, audit nol, preflight exact archive, atomic
+  deploy, service/header/journal, empat route 200, dan Playwright production
+  4/4. Satu artifact-write ENOSPC lokal dipulihkan dengan exact rerun pada drive
+  sehat; bukan failure assertion produk.
+- Production berubah: ya, hanya frontend SagaView. Consent API, permission,
+  subscription, payment, entitlement, tenant, device/session, foto lokal,
+  export, dan print tidak berubah.
+- File knowledge: product, dossier, changelog SagaView, master, gaps,
+  portfolio/root changelog, dan sync status.
+
 ### SagaView active-frame limit expansion candidate
 
 - Ringkasan: keputusan founder `DEC-039` menaikkan kontrak berikutnya menjadi

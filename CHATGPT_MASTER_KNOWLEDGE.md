@@ -415,9 +415,9 @@ masih 10/50 sampai release terverifikasi.
 Update terbaru: backend memakai source
 `9ee5bcca14ace7771a169bf8823df1e9ba7241c9`, release
 `20260805203055-9ee5bcc`, sedangkan Studio aktif memakai source
-`2121ebb80fa4238e91eef4003f852d34841e923f`, release
-`20260805203055-2121ebb`, dengan rollback Studio
-`20260805193458-2121ebb` dan backend `20260805193458-0b655da`. Workspace
+`3b66f8d5df3e34aba11c4eab2619cfe44efd06d7`, release
+`20260805221453-3b66f8d`, dengan rollback Studio
+`20260805203055-2121ebb` dan backend `20260805193458-0b655da`. Workspace
 Session kini memakai lebar adaptif sampai 1600 piksel pada monitor besar tanpa
 merusak reflow mobile/laptop atau menambah horizontal overflow. Workspace
 Output memakai batas 1400 piksel: satu alur vertikal pada mobile/laptop dan dua
@@ -504,7 +504,12 @@ dan recovered; kegagalan fetch tidak lagi menyamar sebagai data kosong. Retry,
 filter selected state, target 44 px, mobile/desktop, keyboard, forced-colors,
 reduced-motion, dan satu `Powered by SagaView` aktif tanpa memutasi consent atau
 foto. Backend, customer flow, local-first, privacy, payment, dan output 4R tidak
-berubah.
+berubah. Workspace Izin Foto sekarang dibatasi 1400 piksel: mobile/laptop
+hingga 1440 tetap satu kolom, sedangkan QHD/4K menampilkan dua kartu sesi
+berdampingan. Source `3b66f8d5df3e34aba11c4eab2619cfe44efd06d7`
+aktif sebagai release `20260805221453-3b66f8d` dengan rollback
+`20260805203055-2121ebb`; consent API, permission, subscription, dan foto lokal
+tidak berubah.
 Install App membedakan prompt otomatis siap, manual, dan installed. Setiap
 state memiliki satu action utama, status live, recovery, panduan Chrome/Edge
 atau iOS, serta jalur installed ke Session. CTA 48 px, keyboard,

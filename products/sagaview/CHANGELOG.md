@@ -4,6 +4,29 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-08-05 - Workspace Izin Foto monitor besar production
+
+- Klasifikasi: `CONFIRMED`.
+- Status: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; business readiness tetap
+  `NEEDS CONFIRMATION`.
+- Before: daftar sesi izin selalu satu kolom dalam workspace sekitar 1152
+  piksel sehingga QHD/4K menyisakan ruang ekstrem dan memperpanjang scroll.
+- After: workspace maksimum 1400 piksel; mobile/laptop hingga 1440 tetap satu
+  kolom, sedangkan QHD/4K memakai dua kartu sesi berdampingan. Semua aksi tetap
+  minimum 44 piksel, tanpa overflow, dan tepat satu `Powered by SagaView`.
+- Source Studio `3b66f8d5df3e34aba11c4eab2619cfe44efd06d7`, release
+  `20260805221453-3b66f8d`, rollback `20260805203055-2121ebb`. Backend tetap
+  `20260805203055-9ee5bcc`; tidak ada migration atau perubahan data.
+- Gate: red-green; focused 18/18; 156 unit; seluruh 116 skenario Playwright
+  executable lulus dalam dua evidence round dengan 2 capture-only skip;
+  format/lint/typecheck; build/budget; npm audit nol; exact-archive preflight;
+  atomic activation; service/header/journal; empat route 200; dan Playwright
+  production 4/4. Penulisan artifact awal sempat terkena ENOSPC lokal, lalu
+  skenario persisnya lulus pada drive sehat tanpa failure assertion produk.
+- Consent API, permission, cabut izin, retry, local-photo boundary, payment,
+  entitlement, subscription, device/session, tenant, export, dan print tidak
+  berubah. Aktivasi subscription tenant tetap dilewati sesuai arahan founder.
+
 ## 2026-08-05 - Ekspansi limit frame aktif candidate
 
 - Klasifikasi: `CONFIRMED` melalui keputusan founder `DEC-039`.

@@ -2,9 +2,9 @@
 
 Updated: 5 Agustus 2026
 Evidence status: production deployed + production activated; frame import-order,
-compact all-menu, workspace Session/Output monitor besar, free drag rotation,
-serta pemisahan Simpan Draft/Publish Frame production; ekspansi limit frame
-50/100 local-validated dan belum deploy
+compact all-menu, workspace Session/Output/Izin Foto monitor besar, free drag
+rotation, serta pemisahan Simpan Draft/Publish Frame production; ekspansi limit
+frame 50/100 local-validated dan belum deploy
 
 ## Tujuan dokumen
 
@@ -19,15 +19,19 @@ yang diverifikasi sampai 5 Agustus 2026.
 
 ## Status production terbaru
 
-- Studio source `2121ebb80fa4238e91eef4003f852d34841e923f` aktif sebagai
-  release `20260805203055-2121ebb`; rollback
-  `20260805193458-2121ebb` dipertahankan.
+- Studio source `3b66f8d5df3e34aba11c4eab2619cfe44efd06d7` aktif sebagai
+  release `20260805221453-3b66f8d`; rollback
+  `20260805203055-2121ebb` dipertahankan.
 - Workspace Session memakai lebar adaptif sampai 1600 piksel pada monitor
   besar. Layar mobile, laptop compact, dan MacBook tetap memakai reflow lama;
   tidak ada horizontal overflow atau fitur yang disembunyikan.
 - Workspace Output memakai alur satu kolom pada mobile/laptop dan dua panel
   seimbang pada monitor besar, dengan batas konten 1400 piksel. Target 44
   piksel, no-overflow, dan satu watermark tetap dipertahankan.
+- Workspace Izin Foto tetap satu kolom pada mobile/laptop hingga 1440 piksel,
+  lalu memakai dua kartu sesi berdampingan pada QHD/4K di dalam batas 1400
+  piksel. Ringkasan, filter, retry, cabut izin, dan workflow privacy tidak
+  berubah.
 - Backend source `9ee5bcca14ace7771a169bf8823df1e9ba7241c9` aktif sebagai
   release `20260805203055-9ee5bcc`; rollback
   `20260805193458-0b655da` dipertahankan.
@@ -504,10 +508,10 @@ untuk release frontend ini.
   `9ee5bcca14ace7771a169bf8823df1e9ba7241c9`.
 - Backend release aktif: `20260805203055-9ee5bcc`.
 - Studio source aktif:
-  `2121ebb80fa4238e91eef4003f852d34841e923f`.
-- Studio release aktif: `20260805203055-2121ebb`.
+  `3b66f8d5df3e34aba11c4eab2619cfe44efd06d7`.
+- Studio release aktif: `20260805221453-3b66f8d`.
 - Studio release sebelumnya yang menjadi rollback:
-  `20260805193458-2121ebb`.
+  `20260805203055-2121ebb`.
 - Backend release sebelumnya yang menjadi rollback:
   `20260805193458-0b655da`.
 - Saga Platform release teramati tetap
@@ -535,6 +539,13 @@ untuk release frontend ini.
 
 ### Release validation
 
+- Release Izin Foto monitor besar: format/lint/typecheck, 156 unit, focused
+  acceptance 18/18, seluruh 116 skenario Playwright executable lulus dalam dua
+  evidence round dengan 2 capture-only skip, build SSR/client, bundle budget,
+  npm audit nol vulnerability, exact-archive preflight, promosi atomik, dan
+  Playwright production 4/4 lulus. Satu penulisan artifact full-run awal
+  kehabisan ruang lokal; skenario yang sama lulus saat output dipindah ke drive
+  sehat dan bukan failure assertion produk.
 - Release draft/publish: 75 test fitur SagaView/613 assertion, focused safety
   15/15, Playwright, build, audit dependency nol, preflight/gate 6/6, backup,
   canary, payment unchanged, service/header/journal, route, HTTP smoke, rollback,

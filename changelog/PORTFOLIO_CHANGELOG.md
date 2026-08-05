@@ -1,5 +1,22 @@
 # Portfolio Changelog
 
+## 2026-08-05 - SagaView Consent large-monitor production
+
+- Studio source `3b66f8d5df3e34aba11c4eab2619cfe44efd06d7` aktif sebagai
+  release `20260805221453-3b66f8d`; rollback exact
+  `20260805203055-2121ebb` tersedia dan backend tidak berubah.
+- Workspace Izin Foto meningkat dari sekitar 1152 menjadi maksimum 1400
+  piksel. Mobile/laptop hingga 1440 tetap satu kolom; QHD/4K memakai dua kartu
+  sesi tanpa mengubah consent, permission, retry, atau cabut izin.
+- Exact-source tests, build/budget, audit, immutable promotion,
+  service/header/journal, public smoke, dan Playwright production 4/4 lulus.
+  Target 44 piksel, no-overflow, Axe, forced-colors, reduced-motion, satu
+  watermark, serta visual 390x844, 1440x900, 2560x1440, dan 3840x2160
+  tervalidasi.
+- Delivery dan activation production. Subscription tenant tetap dilewati;
+  entitlement, payment, device/session, tenant, foto, export, dan print tidak
+  berubah. Business readiness tetap menunggu Founding Studio Pilot.
+
 ## 2026-08-05 - SagaView active-frame limit expansion candidate
 
 - Growth berikutnya mendukung 50 frame aktif dan Pro 100; harga serta benefit

@@ -14,6 +14,7 @@ SagaView berdasarkan runtime production aktif.
 - UI Studio compact all-menu: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
 - UI Session monitor besar: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
 - UI Output monitor besar: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
+- UI Izin Foto monitor besar: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
 - Free drag rotation slot: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
 - Simpan Draft/Publish Frame: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
 - Ekspansi frame aktif Growth 50 / Pro 100:
@@ -85,6 +86,15 @@ dipromosikan sebagai release `20260805191930-1accf32`, lalu diwarisi source
 kumulatif aktif `2121ebb80fa4238e91eef4003f852d34841e923f`. Rollback Studio
 aktif menunjuk release Output tersebut. Perubahan tidak menyentuh folder,
 device/session, subscription, payment, foto lokal, atau kontrak export 4R.
+
+Workspace Izin Foto production juga memakai batas konten 1400 piksel. Before:
+daftar sesi selalu satu kolom di dalam batas sekitar 1152 piksel sehingga
+monitor QHD/4K menyisakan ruang lebar dan menambah scroll vertikal. After:
+mobile, laptop, dan 1440 piksel tetap satu kolom; QHD/4K menampilkan dua kartu
+sesi berdampingan tanpa mengubah ringkasan, filter, retry, cabut izin, consent
+API, permission, atau penyimpanan foto lokal. Source Studio
+`3b66f8d5df3e34aba11c4eab2619cfe44efd06d7` aktif sebagai release
+`20260805221453-3b66f8d`; rollback `20260805203055-2121ebb` tersedia.
 
 Pemilihan frame production memakai preview, selected state, jumlah cetakan,
 serta satu aksi `Terapkan & lanjut`. Editor dan Review kini menjadi alur
@@ -286,9 +296,9 @@ production belum berubah dari 10/50.
 `CONFIRMED` — kontrak ini aktif di production. Source backend aktif adalah
 `9ee5bcca14ace7771a169bf8823df1e9ba7241c9`, release
 `20260805203055-9ee5bcc`. Source Studio aktif adalah
-`2121ebb80fa4238e91eef4003f852d34841e923f`, release
-`20260805203055-2121ebb`; rollback Studio adalah
-`20260805193458-2121ebb`. Session, Frames, dan Install App kini memakai render
+`3b66f8d5df3e34aba11c4eab2619cfe44efd06d7`, release
+`20260805221453-3b66f8d`; rollback Studio adalah
+`20260805203055-2121ebb`. Session, Frames, dan Install App kini memakai render
 awal SSR/client deterministik sehingga tidak memicu hydration mismatch. Output
 Settings hanya menampilkan action simpan saat
 dirty, tidak menutup konten mobile, mempertahankan action sticky desktop, dan
@@ -380,7 +390,11 @@ pada UI customer.
 ## Reliability, security, dan operations
 
 - Exact backend/Studio release immutable `20260805203055-9ee5bcc` dan
-  `20260805203055-2121ebb`; rollback tersedia.
+  `20260805221453-3b66f8d`; rollback Studio `20260805203055-2121ebb` tersedia.
+- Release Izin Foto lulus 156 unit, focused 18/18, 116 skenario Playwright
+  executable dalam dua evidence round, build/budget, npm audit nol, exact
+  preflight, promosi atomik, service/header/journal, empat route 200, serta
+  Playwright production 4/4 pada 390, 1440, QHD, dan 4K.
 - Release editor frame `20260805053500-9b4b68a` lulus 119 test SagaView/1.248
   assertions, focused Playwright, build, audit dependency, gate production
   6/6, backup, canary, service/header/journal, serta public smoke. Authenticated
