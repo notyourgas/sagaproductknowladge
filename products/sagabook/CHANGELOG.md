@@ -4,6 +4,32 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-05 - S119 production dan website booking tenant aktif
+
+- Klasifikasi: `CONFIRMED`; delivery `PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`. Source
+  `20ff6829f96cebec22d34844291b3d522b91774a` tersedia pada branch
+  `codex/s118-sagabook-request-recovery`; release immutable
+  `20260805052322-20ff682`, rollback `20260803194351-d70fc1e`.
+- Website booking tenant trial hanya diaktifkan setelah pre-publish readiness
+  100. Post-activation setup readiness, pilot readiness seluruh tenant target,
+  dan HTTP publik lulus; tidak ada tenant yang dinonaktifkan.
+- Gate: Playwright candidate 513 pass/72 controlled skip, focused production
+  390x844 dan 1440x900, backend 960/960 dengan 11.007 assertion, design/build,
+  full check dan viewport SagaView, npm/Composer audit nol, release-readiness
+  10/10, database audit 100, manifest exact source, Nginx/queue, serta empat
+  endpoint 200.
+- Backup run `20260805T051929Z` memenuhi enkripsi, checksum, round-trip offsite,
+  disposable restore, dan private-key boundary. Migration preflight, atomic
+  switch, serta smoke release lulus. Upload awal ke `/tmp` gagal sebelum deploy
+  karena tmpfs penuh; transport dipindahkan ke `/var/tmp` tanpa menghapus
+  artefak proyek lain dan tanpa menyentuh runtime lama.
+- Storefront production tetap mobile-only: 390 piksel pada mobile dan tepat
+  460 piksel terpusat pada desktop 1440, tanpa overflow/desktop rail, CTA 48
+  piksel, Maps/WhatsApp tersedia, dan satu watermark non-fixed. Business
+  readiness masih menunggu penggantian copy alamat placeholder dan satu
+  booking nyata terkontrol oleh owner.
+
 ## 2026-08-05 - Recovery pembayaran dan navigasi adaptif S119
 
 - Klasifikasi: `CONFIRMED`; delivery `LOCAL_VALIDATED / STAGING_READY /

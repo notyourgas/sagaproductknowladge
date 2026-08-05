@@ -12,6 +12,30 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-05
 
+### SagaBook S119 production activation
+
+- Ringkasan: website booking tenant siap diaktifkan secara gated, lalu UI/UX
+  recovery payment dan adaptive dashboard S119 dipromosikan immutable ke
+  production.
+- Alasan: blocker readiness tenant telah ditutup 100/100; candidate sudah
+  mempunyai full acceptance, backup/restore, rollback, dan public smoke.
+- Produk/area: tenant activation, storefront mobile-only, QRIS/transfer/
+  reschedule recovery, dashboard navigation, test determinism, backup,
+  deployment, dan production verification.
+- Klasifikasi: `CONFIRMED`; source
+  `20ff6829f96cebec22d34844291b3d522b91774a`, release
+  `20260805052322-20ff682`, rollback `20260803194351-d70fc1e`.
+- Gate: readiness 10/10, backend 960/960 dengan 11.007 assertion, Playwright
+  candidate 513 pass/72 controlled skip, design/build, SagaView check/viewport,
+  audit dependency nol, encrypted backup/checksum/disposable restore, migration
+  preflight, DB audit 100, service, empat endpoint 200, dan browser production
+  dua viewport.
+- Production berubah: ya; delivery `PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`. Business readiness masih `NEEDS CONFIRMATION` untuk
+  copy alamat final dan booking nyata terkontrol.
+- File knowledge: product, dossier, changelog SagaBook, master, gaps,
+  portfolio/root changelog, dan sync status.
+
 ### SagaBook recovery pembayaran dan adaptive navigation S119
 
 - Ringkasan: recovery QRIS, upload bukti transfer, pembayaran tambahan

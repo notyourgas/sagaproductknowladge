@@ -532,8 +532,8 @@ availability, permission, tenant isolation, storefront, dan SagaView tidak
 berubah.
 
 Critical recovery dan adaptive navigation S119 pada source
-`3aa094cc5bee834ba41e31cb16347b899c6a7c18` berstatus `LOCAL_VALIDATED /
-STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`. Before: kegagalan pembuatan sesi
+`20ff6829f96cebec22d34844291b3d522b91774a` berstatus
+`PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Before: kegagalan pembuatan sesi
 QRIS hanya mengosongkan QR, upload bukti transfer gagal tanpa feedback yang
 tetap berada di form aktif, pembayaran tambahan reschedule belum mempunyai
 status semantik, dan menu dashboard hilang pada rentang 768-1023 piksel.
@@ -550,9 +550,19 @@ SagaView 5/5 lulus pada anchor 390x844 dan 1440x900, kelas zoom efektif
 960/960 dengan 11.007 assertion, design audit 26/0, build, full SagaView check
 dan bundle budget, npm audit, Composer validate/audit, no-overflow, keyboard,
 forced-colors, reduced-motion, serta watermark tunggal lulus. Production tidak
-berubah karena release-readiness VPS 9/10: satu tenant trial belum mengaktifkan
-website booking. Aktivasi publik tenant adalah keputusan operasional owner,
-bukan bagian perubahan UI/UX dan tidak dilakukan otomatis.
+langsung dipromosikan sampai tenant trial melewati pre-publish readiness 100.
+Setelah approval owner, website booking tenant diaktifkan tanpa menonaktifkan
+tenant lain; post-activation setup/pilot readiness dan HTTP publik lulus.
+
+Release immutable `20260805052322-20ff682` memakai backup run
+`20260805T051929Z`; enkripsi, checksum, offsite round-trip, disposable restore,
+private-key boundary, migration preflight, manifest, DB audit 100, service,
+empat endpoint 200, dan smoke lulus. Browser production menunjukkan canvas 390
+piksel pada mobile dan tepat 460 piksel terpusat pada desktop 1440, CTA 48
+piksel, Maps/WhatsApp, tanpa overflow/desktop rail, dan satu watermark
+non-fixed. Rollback `20260803194351-d70fc1e` tersedia. Business readiness masih
+menunggu copy alamat final menggantikan placeholder dan satu booking nyata
+terkontrol.
 
 ## Integrasi
 

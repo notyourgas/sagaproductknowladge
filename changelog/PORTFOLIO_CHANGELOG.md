@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-05 - SagaBook S119 production dan tenant booking aktif
+
+- Source `20ff6829f96cebec22d34844291b3d522b91774a` aktif sebagai release
+  `20260805052322-20ff682`; rollback `20260803194351-d70fc1e`.
+- Tenant trial diaktifkan setelah readiness 100 dan tetap aktif setelah
+  post-activation setup/pilot gate serta HTTP publik lulus. Tidak ada tenant
+  yang dinonaktifkan.
+- Backup terenkripsi, checksum, offsite round-trip, disposable restore,
+  migration preflight, manifest, DB audit 100, service, smoke, dan browser
+  production mobile/desktop lulus. Delivery `PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`.
+- Storefront tetap mobile-only maksimum 460 piksel. Business readiness menunggu
+  copy alamat final dan booking nyata terkontrol.
+
 ## 2026-08-05 - SagaBook recovery dan adaptive navigation S119
 
 - QRIS, upload bukti transfer, serta pembayaran tambahan reschedule kini
