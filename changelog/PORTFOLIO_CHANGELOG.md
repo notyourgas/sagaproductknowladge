@@ -13,6 +13,21 @@
 - Delivery dan activation production; business readiness tetap menunggu Owner
   visual UAT dengan frame miring nyata dan Founding Studio Pilot.
 
+## 2026-08-05 - SagaView Output large-monitor production
+
+- Studio source `1accf323ffa9517855f8acf2d93120c01136720d` dipromosikan
+  sebagai release `20260805191930-1accf32`; source aktif `2121ebb8` mewarisi
+  layout Output dan mempertahankan release tersebut sebagai rollback.
+- Workspace Output meningkat dari batas sekitar 896 menjadi maksimum 1400
+  piksel. Mobile/laptop tetap satu kolom; monitor besar memakai dua panel
+  seimbang tanpa mengubah workflow setting.
+- Exact-source test, build, audit, immutable promotion, service/header/journal,
+  public smoke, dan Playwright produksi lulus. Target 44 piksel, no-overflow,
+  satu watermark, serta visual 390x844, 1440x900, dan 2560x1440 tervalidasi.
+- Delivery dan activation production. Subscription, entitlement, payment,
+  device/session, tenant, foto, export, dan print tidak berubah; business
+  readiness tetap belum diklaim.
+
 ## 2026-08-05 - SagaView Session large-monitor production
 
 - Studio source `4bbd1665222332da7aee28da8d4ce01253b9ef8c` aktif sebagai

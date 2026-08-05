@@ -413,7 +413,11 @@ Update terbaru: backend memakai source
 `20260805193458-2121ebb`, dengan rollback Studio
 `20260805191930-1accf32` dan backend `20260805133709-5906028`. Workspace
 Session kini memakai lebar adaptif sampai 1600 piksel pada monitor besar tanpa
-merusak reflow mobile/laptop atau menambah horizontal overflow. Login dan
+merusak reflow mobile/laptop atau menambah horizontal overflow. Workspace
+Output memakai batas 1400 piksel: satu alur vertikal pada mobile/laptop dan dua
+panel seimbang pada monitor besar. Perubahan Output berasal dari source
+`1accf323ffa9517855f8acf2d93120c01136720d`, release
+`20260805191930-1accf32`, dan diwarisi source Studio aktif. Login dan
 Studio masing-masing merender tepat satu
 `Powered by SagaView`; footer Studio responsif memakai satu node DOM, memiliki
 ruang aman mobile, dan tetap terbaca pada forced-colors. Navigasi mobile

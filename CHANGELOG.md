@@ -27,6 +27,29 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 - Business readiness: `NEEDS CONFIRMATION` sampai authenticated Owner visual UAT
   dan Founding Studio Pilot selesai.
 
+### SagaView workspace Output monitor besar production
+
+- Ringkasan: workspace Output sekarang menggunakan batas 1400 piksel dan dua
+  panel seimbang pada layar besar; mobile, laptop compact, dan zoom tinggi tetap
+  memakai satu alur vertikal.
+- Alasan: batas lama sekitar 896 piksel menyisakan ruang ekstrem pada QHD/4K dan
+  memperpanjang scroll operator.
+- Produk/area: SagaView Studio Output, viewport/zoom, accessibility, release,
+  screenshot, dan rollback.
+- Klasifikasi: `CONFIRMED`; source
+  `1accf323ffa9517855f8acf2d93120c01136720d`, release
+  `20260805191930-1accf32`, rollback saat promosi
+  `20260805181945-4bbd166`. Source aktif berikutnya `2121ebb8` mewarisi fitur.
+- Gate: red-green; focused 18/18; unit 156/156; full E2E 115 pass/2 skip;
+  lint/format/typecheck; build/budget; audit nol; preflight; atomic activation;
+  live Playwright 6/6; endpoint, header, service, journal, dan visual tiga
+  viewport.
+- Production berubah: ya, hanya frontend SagaView. Subscription, entitlement,
+  payment, device/session, tenant, foto lokal, export, dan print tidak berubah.
+  Business readiness tetap `NEEDS CONFIRMATION`.
+- File knowledge: product, dossier, changelog SagaView, master, gaps,
+  portfolio/root changelog, dan sync status.
+
 ### SagaView workspace Session monitor besar production
 
 - Ringkasan: workspace Session kini memanfaatkan monitor Full HD dan QHD secara

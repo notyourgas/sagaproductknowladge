@@ -25,6 +25,29 @@ Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 - Residual: authenticated Owner visual UAT memakai frame miring nyata dan
   Founding Studio Pilot sebelum klaim `BUSINESS_READY` mass-scale.
 
+## 2026-08-05 - Workspace Output monitor besar production
+
+- Klasifikasi: `CONFIRMED`.
+- Status: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; business readiness tetap
+  `NEEDS CONFIRMATION`.
+- Before: panel tujuan dan format Output selalu bertumpuk dalam workspace
+  sekitar 896 piksel, sehingga monitor QHD/4K menyisakan ruang ekstrem.
+- After: workspace maksimum 1400 piksel; mobile sampai laptop compact tetap
+  satu kolom, sedangkan layar besar menampilkan kedua panel berdampingan.
+  Semua kontrol tetap minimum 44 piksel, tanpa horizontal overflow, dan tepat
+  satu `Powered by SagaView`.
+- Source Studio `1accf323ffa9517855f8acf2d93120c01136720d`, release
+  `20260805191930-1accf32`, rollback saat promosi
+  `20260805181945-4bbd166`. Source aktif berikutnya `2121ebb8` mewarisi
+  perubahan ini dan mempertahankan release Output sebagai rollback Studio.
+- Gate: red-green; focused 18/18; unit 156/156; full E2E 115 pass/2
+  capture-only skip; lint/format/typecheck; build/budget; audit dependency nol;
+  target preflight; atomic activation; live Playwright 6/6; endpoint, header,
+  service, journal, dan visual 390x844, 1440x900, serta 2560x1440 lulus.
+- Subscription activation dilewati sesuai arahan founder. Folder output,
+  entitlement, payment, tenant isolation, device/session, foto lokal, export,
+  dan print 4R tidak berubah.
+
 ## 2026-08-05 - Workspace Session monitor besar production
 
 - Klasifikasi: `CONFIRMED`.

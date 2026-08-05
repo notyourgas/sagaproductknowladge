@@ -13,6 +13,7 @@ SagaView berdasarkan runtime production aktif.
 - Business readiness: `NEEDS CONFIRMATION` untuk penjualan massal
 - UI Studio compact all-menu: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
 - UI Session monitor besar: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
+- UI Output monitor besar: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
 - Free drag rotation slot: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
 
 ## Overview produk
@@ -70,6 +71,17 @@ monitor secara proporsional, sementara batas teks tetap terbaca. Source Studio
 `4bbd1665222332da7aee28da8d4ce01253b9ef8c` aktif sebagai release
 `20260805181945-4bbd166`; rollback `20260805170231-2b0331d` tersedia dan backend
 tetap `20260805133709-5906028`.
+
+Workspace Output production memakai batas konten 1400 piksel. Before: tujuan
+output dan format selalu bertumpuk di dalam batas sekitar 896 piksel, sehingga
+monitor QHD/4K menyisakan ruang besar dan operator perlu menggulir lebih jauh.
+After: mobile, zoom tinggi, Windows compact, dan MacBook tetap memakai satu
+alur vertikal; layar besar menampilkan panel tujuan serta format berdampingan
+secara seimbang. Source Studio `1accf323ffa9517855f8acf2d93120c01136720d`
+dipromosikan sebagai release `20260805191930-1accf32`, lalu diwarisi source
+kumulatif aktif `2121ebb80fa4238e91eef4003f852d34841e923f`. Rollback Studio
+aktif menunjuk release Output tersebut. Perubahan tidak menyentuh folder,
+device/session, subscription, payment, foto lokal, atau kontrak export 4R.
 
 Pemilihan frame production memakai preview, selected state, jumlah cetakan,
 serta satu aksi `Terapkan & lanjut`. Editor dan Review kini menjadi alur

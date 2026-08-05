@@ -258,6 +258,15 @@ ketika keputusan atau release baru menutup gap.
   release Saga Platform dan authenticated SagaView UAT setelah provisioning.
 ### Gap SagaView ditutup
 
+- `CONFIRMED` pada 5 Agustus 2026: gap ruang kosong ekstrem pada Output di
+  monitor QHD/4K ditutup pada source `1accf323`, release
+  `20260805191930-1accf32`, dan diwarisi source Studio aktif `2121ebb8`.
+  Workspace maksimum 1400 piksel; mobile/laptop tetap satu kolom dan layar
+  besar memakai dua panel. Matriks 390x844 sampai 3840x2160, reflow efektif
+  zoom tinggi, target 44 piksel, no-overflow, satu watermark, build, audit,
+  atomic activation, serta live Playwright lulus. Founding Studio Pilot dan
+  business readiness tetap residual terpisah.
+
 - `CONFIRMED` pada 5 Agustus 2026: gap ruang kosong ekstrem pada Session di
   monitor Full HD/QHD ditutup pada Studio source `4bbd1665`, release
   `20260805181945-4bbd166`. Workspace bertambah dari 1180 menjadi maksimum 1600

@@ -2,7 +2,7 @@
 
 Updated: 5 Agustus 2026
 Evidence status: production deployed + production activated; frame import-order,
-compact all-menu, workspace Session monitor besar, dan free drag rotation
+compact all-menu, workspace Session/Output monitor besar, dan free drag rotation
 production
 
 ## Tujuan dokumen
@@ -24,6 +24,9 @@ yang diverifikasi sampai 5 Agustus 2026.
 - Workspace Session memakai lebar adaptif sampai 1600 piksel pada monitor
   besar. Layar mobile, laptop compact, dan MacBook tetap memakai reflow lama;
   tidak ada horizontal overflow atau fitur yang disembunyikan.
+- Workspace Output memakai alur satu kolom pada mobile/laptop dan dua panel
+  seimbang pada monitor besar, dengan batas konten 1400 piksel. Target 44
+  piksel, no-overflow, dan satu watermark tetap dipertahankan.
 - Backend source `0b655da4aeea270ce9048d853e7df09d42a36dd9` aktif sebagai
   release `20260805193458-0b655da`; rollback
   `20260805133709-5906028` dipertahankan.
@@ -311,6 +314,9 @@ untuk release frontend ini.
 - action region mengikuti konten pada mobile agar tidak menutup form, tetapi
   tetap sticky pada desktop;
 - kontrol format, DPI, filename, Reset, dan Simpan memiliki target minimal 44 px;
+- workspace menggunakan batas 1400 piksel dan memisahkan panel tujuan serta
+  format menjadi dua kolom mulai layar besar, tanpa mengubah alur satu kolom
+  pada mobile, laptop compact, atau zoom tinggi;
 - pengaturan folder, device/session, payment, privacy foto, dan kontrak PNG 4R
   tidak berubah.
 
