@@ -11,8 +11,8 @@ SagaView berdasarkan runtime production aktif.
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED`
 - Business readiness: `NEEDS CONFIRMATION` untuk penjualan massal
-- Candidate UI terbaru: `LOCAL_VALIDATED / STAGING_READY /
-  IMPLEMENTED_NOT_DEPLOYED`
+- Candidate UI Studio compact all-menu terbaru: `LOCAL_VALIDATED /
+  STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`
 
 ## Overview produk
 
@@ -75,17 +75,19 @@ mengurangi 2 px, memindahkan slot pada canvas, serta resize dari empat titik
 sudut. Field X/Y/W/H tetap tersedia untuk koreksi presisi. Perubahan tidak
 mengubah tenant, device/session, foto local-first, payment, atau output 4R.
 
-Candidate backend `5906028703759d49ef930a7363c5efc293f6be97` mengunci urutan
+Backend production `5906028703759d49ef930a7363c5efc293f6be97` mengunci urutan
 authoring frame menjadi `pilih PNG/WebP -> Deteksi otomatis -> periksa/koreksi
 slot -> simpan draft`. Frame baru dan file pengganti tidak lagi menerima satu
 slot bawaan; canvas tetap kosong sampai deteksi dijalankan. Penambahan manual
 baru tersedia setelah percobaan deteksi, save diblokir selama slot kosong, dan
-frame existing tetap memuat slot tersimpan. Candidate lulus build, 119 test
+frame existing tetap memuat slot tersimpan. Release lulus build, 119 test
 SagaView/1.248 assertions, focused Playwright desktop, serta audit npm/composer
-nol advisory. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
-backend tetap `20260805053500-9b4b68a`.
+nol advisory, backup, deploy gate 6/6, canary, bundle check, service/header/
+journal, dan public smoke. Source aktif sebagai release
+`20260805133709-5906028`; rollback backend
+`20260805053500-9b4b68a` dipertahankan.
 
-Setiap box slot pada candidate memiliki tombol rotate kecil yang accessible.
+Setiap box slot pada release memiliki tombol rotate kecil yang accessible.
 Klik memutar slot individual 90 derajat dengan menukar W/H di sekitar titik
 tengah dan melakukan clamp agar tetap berada di canvas. Kontrol tidak memutar
 artwork frame atau slot lain, serta tetap kompatibel dengan drag, empat resize

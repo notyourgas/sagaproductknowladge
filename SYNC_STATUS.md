@@ -12,14 +12,14 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-05T13:16:49+07:00 |
+| Waktu pembaruan terakhir | 2026-08-05T13:42:25+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `0d980b0644c9b93f54710c8e7d05257909619977` |
-| Informasi terakhir disinkronkan | SagaBio exact source `06be995bf2da5e05e25ba3d394516ad9d8a52f10` aktif di apex/app/wildcard VPS dengan status `PRODUCTION_DEPLOYED / NOT_PRODUCTION_ACTIVATED / NOT_BUSINESS_READY`; SagaView cumulative candidate `59060287` tetap `IMPLEMENTED_NOT_DEPLOYED`. |
+| Baseline sebelum pembaruan | `50ea0d8f47bbcf8faf2cbbf472d18f800bcb020b` |
+| Informasi terakhir disinkronkan | SagaView exact source `5906028703759d49ef930a7363c5efc293f6be97` aktif sebagai release backend `20260805133709-5906028`; urutan upload sebelum deteksi dan rotate slot individual berstatus `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / NOT_BUSINESS_READY`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik keputusan. Status SagaBio local-only digantikan runtime evidence production; SagaView candidate belum production. |
-| Error | Tidak ada error berat pada sampled log SagaBio. Central signup, owner UAT, SMTP/storage, dan automatic DNS-01 renewal tetap blocker aktivasi; gap SagaView tidak berubah. |
+| Konflik | Tidak ada konflik keputusan. Status candidate SagaView digantikan runtime evidence production terbaru. |
+| Error | Tidak ada error pada journal service SagaView setelah release. Authenticated owner visual UAT dan Founding Studio Pilot tetap residual business readiness. |
 
 ## File yang berubah pada sinkronisasi ini
 
@@ -51,9 +51,8 @@ terbaru setelah vault lokal dibuka. Exact-source Playwright, production gate,
 public smoke, dan deployed bundle check sudah lulus; Founding Studio Pilot tetap
 dibutuhkan sebelum klaim `BUSINESS_READY` mass-scale.
 
-Candidate kumulatif frame editor `59060287` juga menunggu approval deploy dan
-release-safety exact source. Sampai dipromosikan, production masih memakai
-release backend `20260805053500-9b4b68a`.
+Frame editor kumulatif `59060287` sudah aktif sebagai release backend
+`20260805133709-5906028`; rollback `20260805053500-9b4b68a` dipertahankan.
 
 SagaBio menunggu konfigurasi central identity production, provisioning akun
 owner, UAT login/save/preview/publish/QR, acceptance SMTP dan object storage,

@@ -12,6 +12,28 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-05
 
+### SagaView urutan deteksi dan rotate slot individual production
+
+- Ringkasan: frame baru dimulai tanpa slot sampai PNG/WebP diunggah dan deteksi
+  dijalankan; setiap box slot memiliki rotate 90 derajat individual.
+- Alasan: memastikan geometri berasal dari artwork transparan dan memberi
+  koreksi orientasi langsung tanpa mengubah seluruh frame.
+- Produk/area: SagaView owner frame editor, empty state, deteksi, validation,
+  geometry, accessibility, deployment, dan rollback.
+- Klasifikasi: `CONFIRMED`; keputusan founder `DEC-034` dan `DEC-035`; source
+  `5906028703759d49ef930a7363c5efc293f6be97`.
+- Production berubah: ya. Release backend `20260805133709-5906028`; Studio
+  dipaketkan ulang tanpa perubahan source sebagai `20260805133709-57c0337`.
+- Gate: build; 119 test/1.248 assertions; focused Playwright dan visual QA;
+  audit dependency; preflight/deploy gate 6/6; backup/canary; payment state
+  unchanged tanpa intent/QRIS baru; service/header/journal/Nginx; endpoint dan
+  deployed bundle check.
+- Rollback: backend `20260805053500-9b4b68a`, Studio
+  `20260805053500-57c0337`. Residual: authenticated owner visual UAT dan profile
+  sentuh non-target belum menjadi acceptance evidence.
+- File knowledge: product, dossier, changelog SagaView, master, decisions, gaps,
+  portfolio/root changelog, dan sync status.
+
 ### SagaBio first VPS production release
 
 - Ringkasan: apex landing, branded app login, wildcard public bio, dan Coma

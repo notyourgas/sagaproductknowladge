@@ -494,7 +494,7 @@ keputusan pengganti.
 | Alternatif yang dipertimbangkan | Mempertahankan satu slot bawaan; menjalankan deteksi otomatis langsung saat file dipilih; membolehkan slot manual sebelum percobaan deteksi. |
 | Dampak | Empty state, enable/disable action, draft validation, dan regression editor mengikuti urutan PNG -> deteksi -> review/koreksi -> save. Tenant, device/session, foto local-first, payment, pricing, entitlement, dan output 4R tidak berubah. |
 | Pemberi keputusan | Andreas / founder |
-| Status | `CONFIRMED`; source `71d70fb87ebd86db80f28b43c76239c84690e96f` local-validated, belum production |
+| Status | `CONFIRMED`; source kumulatif `5906028703759d49ef930a7363c5efc293f6be97`, release production `20260805133709-5906028` |
 | Dokumen terkait | [SagaView Product](products/sagaview/PRODUCT.md), [SagaView Dossier](products/sagaview/DOSSIER.md), [SagaView Changelog](products/sagaview/CHANGELOG.md), [Gaps](GAPS.md) |
 
 ## DEC-035 - Setiap box slot SagaView memiliki rotate individual
@@ -508,5 +508,5 @@ keputusan pengganti.
 | Alternatif yang dipertimbangkan | Rotate hanya dari inspector; memutar seluruh frame; menyimpan angle bebas per slot; menampilkan ikon hanya pada slot aktif. |
 | Dampak | Tombol rotate selalu terlihat dan accessible pada setiap slot, tetap kompatibel dengan drag, empat resize handle, feather, dan input X/Y/W/H. Tidak ada perubahan API atau metadata karena rotasi 90 derajat direpresentasikan sebagai pertukaran W/H. |
 | Pemberi keputusan | Andreas / founder |
-| Status | `CONFIRMED`; source `5906028703759d49ef930a7363c5efc293f6be97` local-validated, belum production |
+| Status | `CONFIRMED`; source `5906028703759d49ef930a7363c5efc293f6be97`, release production `20260805133709-5906028` |
 | Dokumen terkait | [SagaView Product](products/sagaview/PRODUCT.md), [SagaView Dossier](products/sagaview/DOSSIER.md), [SagaView Changelog](products/sagaview/CHANGELOG.md), [Gaps](GAPS.md) |

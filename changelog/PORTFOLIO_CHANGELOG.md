@@ -1,5 +1,22 @@
 # Portfolio Changelog
 
+## 2026-08-05 - SagaView deteksi dan rotate slot production
+
+- Source backend `5906028703759d49ef930a7363c5efc293f6be97` aktif sebagai
+  release `20260805133709-5906028`; rollback
+  `20260805053500-9b4b68a` tersedia.
+- Frame baru kini benar-benar mengikuti urutan PNG/WebP -> deteksi otomatis ->
+  review/koreksi -> save, tanpa slot bawaan. Setiap slot memiliki rotate 90
+  derajat individual serta tetap mendukung feather, drag, empat resize handle,
+  dan input X/Y/W/H.
+- Build, 119 test/1.248 assertions, focused Playwright, audit dependency,
+  preflight/deploy gate 6/6, backup, canary, service/header/journal, endpoint,
+  dan deployed bundle check lulus. Payment state tidak berubah dan release tidak
+  membuat intent atau QRIS baru.
+- Delivery `PRODUCTION_DEPLOYED`; activation tetap `PRODUCTION_ACTIVATED`.
+  Authenticated owner visual UAT dan Founding Studio Pilot masih diperlukan
+  sebelum klaim `BUSINESS_READY` mass-scale.
+
 ## 2026-08-05 - SagaBio first VPS production release
 
 - Exact application source `06be995bf2da5e05e25ba3d394516ad9d8a52f10`

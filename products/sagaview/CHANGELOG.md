@@ -4,6 +4,34 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-08-05 - Urutan deteksi dan rotate slot individual production
+
+- Klasifikasi: `CONFIRMED`.
+- Status: delivery `PRODUCTION_DEPLOYED`, activation tetap
+  `PRODUCTION_ACTIVATED`, business readiness tetap `NEEDS CONFIRMATION`.
+- Source backend `5906028703759d49ef930a7363c5efc293f6be97` aktif sebagai
+  release `20260805133709-5906028`; Studio source tidak berubah dan dipaketkan
+  ulang dari `57c0337b43b46229253ce89ace39f2ed587fc2d7` sebagai
+  `20260805133709-57c0337`.
+- Frame baru dimulai dengan 0 slot. Operator memilih PNG/WebP, menjalankan
+  `Deteksi otomatis`, memeriksa atau mengoreksi slot, lalu menyimpan. Manual add
+  baru aktif setelah deteksi pernah dicoba; draft tanpa slot diblokir dan frame
+  existing tetap memuat slot tersimpan.
+- Setiap box slot memiliki ikon rotate kecil yang menukar W/H 90 derajat di
+  sekitar titik tengah dan menjaga geometri di dalam canvas tanpa memutar frame
+  atau slot lain. Drag, feather, empat resize handle, dan input X/Y/W/H tetap
+  tersedia.
+- Validation: exact-source build; 119 test SagaView/1.248 assertions; focused
+  Playwright desktop 1/1; visual QA; npm dan Composer audit nol; production
+  preflight serta deploy gate 6/6; backup terverifikasi; canary lulus; payment
+  state tidak berubah dan tidak ada intent/QRIS baru; seluruh service aktif;
+  security header/Nginx valid; journal bersih; endpoint dan deployed bundle
+  feature check lulus.
+- Rollback backend `20260805053500-9b4b68a` dan Studio
+  `20260805053500-57c0337` dipertahankan. Authenticated owner visual UAT belum
+  diulang; profile sentuh mobile/tablet bukan acceptance target untuk editor
+  desktop dan tetap residual QA.
+
 ## 2026-08-05 - Rotate individual pada setiap slot candidate
 
 - Klasifikasi: `CONFIRMED` sebagai keputusan produk dan candidate lokal, bukan

@@ -227,14 +227,14 @@ ketika keputusan atau release baru menutup gap.
 
 ### SagaView
 
-- `BLOCKED`: candidate backend `59060287` menghapus slot bawaan pada frame baru
-  dan mengunci urutan `pilih PNG/WebP -> Deteksi otomatis -> review/koreksi ->
-  simpan`. Build, 119 test/1.248 assertions, focused Playwright desktop, serta
-  audit dependency lulus. Setiap slot juga memiliki ikon rotate individual 90
-  derajat dengan geometri tetap di canvas; focused E2E dan visual QA lulus.
-  Production tetap `9b4b68a1` /
-  `20260805053500-9b4b68a`; promosi menunggu approval deploy, release-safety
-  exact source, immutable release, rollback, dan authenticated smoke.
+- `NEEDS CONFIRMATION`: source backend `59060287` untuk urutan PNG/WebP ->
+  deteksi -> review/koreksi -> save dan rotate 90 derajat individual aktif pada
+  release production `20260805133709-5906028`. Exact-source QA, backup,
+  preflight/deploy gate 6/6, canary, service/header/journal, endpoint, dan bundle
+  check lulus; rollback `20260805053500-9b4b68a` tersedia. Authenticated owner
+  visual UAT belum diulang. Simulasi drag mouse pada profile sentuh mobile/tablet
+  tetap residual non-blocking karena editor ditargetkan desktop; keduanya tidak
+  boleh dipakai sebagai bukti `BUSINESS_READY` mass-scale.
 
 - `BLOCKED`: candidate kumulatif compact all-menu source `2b0331d5` lulus
   red-green, focused/regression, unit 156/156, full E2E 113 pass/2 capture-only
