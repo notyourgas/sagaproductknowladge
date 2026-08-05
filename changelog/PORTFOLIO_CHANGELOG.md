@@ -1,5 +1,20 @@
 # Portfolio Changelog
 
+## 2026-08-05 - SagaView free drag rotation candidate
+
+- Koreksi founder mengganti rotate klik 90 derajat dengan drag angle bebas:
+  tahan ikon lalu geser kiri/kanan agar slot mengikuti opening frame miring
+  tanpa menukar W/H.
+- Owner/API source `19ac8ab8653de0bf2edc18d164308ea8bbde3640` memvalidasi dan
+  menyimpan angle; Studio source `e48be94ab418605f81f8d1484043becfc9fa8a4a`
+  merendernya pada customer canvas dan export PNG.
+- Build, 120 test SagaView/1.250 assertions, focused Playwright/visual QA, 44
+  file test Studio/156 test, lint, typecheck, build/budget, dan audit dependency
+  lulus.
+- Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Preflight production
+  berhenti fail-closed karena commerce canary internal telah diarsipkan Owner;
+  production dan payment state tidak diubah.
+
 ## 2026-08-05 - SagaView deteksi dan rotate slot production
 
 - Source backend `5906028703759d49ef930a7363c5efc293f6be97` aktif sebagai

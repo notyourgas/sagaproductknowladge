@@ -456,12 +456,18 @@ PNG/WebP, jalankan `Deteksi otomatis`, lalu review/koreksi slot. Penambahan slot
 manual baru aktif setelah deteksi pernah dicoba dan draft tanpa slot diblokir;
 frame existing tetap memuat slot tersimpan. Source aktif sebagai release
 `20260805133709-5906028` dengan rollback `20260805053500-9b4b68a`.
-Setiap box slot pada release juga memiliki ikon rotate kecil. Satu klik
-menukar W/H slot 90 derajat di sekitar titik tengah dan menjaga hasil tetap di
-canvas, tanpa memutar artwork frame atau slot lain. Drag, empat resize handle,
-feather, dan input X/Y/W/H tetap tersedia. Delivery `PRODUCTION_DEPLOYED` dan
-activation tetap `PRODUCTION_ACTIVATED`; owner visual UAT terautentikasi masih
-menjadi residual sebelum klaim business-ready mass-scale.
+Implementasi rotate production pada release tersebut menukar W/H 90 derajat,
+tetapi kontrak itu `DEPRECATED` oleh koreksi founder `DEC-036`. Perilaku yang
+diterima adalah tahan ikon rotate lalu drag ke kiri/kanan agar slot mendapat
+angle negatif/positif tanpa menukar W/H. Candidate Owner/API
+`19ac8ab8653de0bf2edc18d164308ea8bbde3640` dan Studio
+`e48be94ab418605f81f8d1484043becfc9fa8a4a` mempersist angle per slot dan
+menerapkannya di customer render serta export PNG. Candidate berstatus
+`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; preflight fail-closed karena
+commerce canary internal telah diarsipkan Owner. Runtime tetap backend
+`20260805133709-5906028` dan Studio `20260805133709-57c0337`. Activation runtime
+lama tetap `PRODUCTION_ACTIVATED`, tetapi free rotation belum production dan
+owner visual UAT tetap residual sebelum klaim business-ready mass-scale.
 Output Settings kini hanya menampilkan Reset/Simpan saat dirty, menaruh action
 setelah konten pada mobile dan sticky pada desktop, memakai target 44 px, serta
 memprioritaskan status `Belum disimpan` ketika operator mengedit ulang. Folder,

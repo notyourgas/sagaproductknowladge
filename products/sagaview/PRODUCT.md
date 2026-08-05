@@ -2,7 +2,7 @@
 
 Updated: 5 Agustus 2026
 Evidence status: production deployed + production activated; frame import-order
-dan rotate slot individual production, compact all-menu candidate belum deployed
+production, free drag rotation dan compact all-menu candidate belum deployed
 
 ## Tujuan dokumen
 
@@ -138,11 +138,21 @@ tersimpannya. Source aktif pada release backend
 `PRODUCTION_ACTIVATED`, dan business readiness mass-scale tetap menunggu UAT
 owner terautentikasi serta Founding Studio Pilot.
 
-Release yang sama memberi setiap box slot tombol rotate kecil. Satu klik
-memutar geometri slot 90 derajat dengan menukar lebar/tinggi, mempertahankan
-titik tengah selama masih muat, dan menggeser seperlunya agar slot tetap berada
-di canvas. Rotate hanya berlaku pada slot tersebut; artwork frame dan slot lain
-tidak berubah.
+Release production yang sama masih memuat implementasi lama: klik rotate
+menukar W/H 90 derajat. Kontrak ini `DEPRECATED` oleh `DEC-036` dan tidak boleh
+lagi diposisikan sebagai perilaku yang diterima founder.
+
+`CONFIRMED` - local validated: source Owner/API
+`19ac8ab8653de0bf2edc18d164308ea8bbde3640` dan Studio
+`e48be94ab418605f81f8d1484043becfc9fa8a4a` mengubah ikon rotate menjadi drag
+handle sudut bebas. Tahan lalu geser kiri memberi kemiringan negatif, geser
+kanan memberi kemiringan positif, tanpa menukar W/H. Angle opsional per slot
+dipersist ke metadata, dirender pada customer Studio, dan diterapkan pada export
+PNG; frame lama default 0 derajat. Promotion production belum terjadi karena
+preflight fail-closed mendeteksi commerce canary internal telah diarsipkan oleh
+Owner. Runtime tetap backend `20260805133709-5906028` dan Studio
+`20260805133709-57c0337` sampai canary dipulihkan dengan otorisasi atau diganti
+melalui release governance.
 
 ## Session completion dan privacy handoff
 

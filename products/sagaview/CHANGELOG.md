@@ -4,6 +4,26 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-08-05 - Free drag rotation slot candidate
+
+- Klasifikasi: `CONFIRMED` sebagai koreksi founder melalui `DEC-036`.
+- Before: ikon rotate production menukar W/H 90 derajat dan tidak membuat box
+  mengikuti opening frame yang miring.
+- After: tahan ikon rotate lalu geser kiri/kanan untuk angle negatif/positif.
+  W/H tidak ditukar; angle disimpan per slot, dirender pada customer Studio,
+  dan digunakan pada export PNG. Frame lama default 0 derajat.
+- Source Owner/API `19ac8ab8653de0bf2edc18d164308ea8bbde3640`; source Studio
+  `e48be94ab418605f81f8d1484043becfc9fa8a4a`.
+- Validation: build; 120 test SagaView/1.250 assertions; focused Playwright
+  desktop memverifikasi drag kanan, reset, drag kiri, resize, dan move; visual
+  QA; 44 file test Studio/156 test; lint, typecheck, client/SSR build, bundle
+  budget, audit npm/Composer nol advisory, dan diff check.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Guarded preflight
+  berhenti sebelum artifact upload karena commerce canary internal telah
+  diarsipkan Owner. Production tetap backend `20260805133709-5906028` dan Studio
+  `20260805133709-57c0337`; tidak ada state runtime yang diubah oleh percobaan
+  deployment.
+
 ## 2026-08-05 - Urutan deteksi dan rotate slot individual production
 
 - Klasifikasi: `CONFIRMED`.

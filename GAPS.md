@@ -227,8 +227,18 @@ ketika keputusan atau release baru menutup gap.
 
 ### SagaView
 
+- `BLOCKED`: free drag rotation per slot telah lulus local exact-source gates
+  pada Owner/API `19ac8ab8` dan Studio `e48be94a`, termasuk persistensi metadata,
+  customer render, export PNG, drag kiri/kanan, resize, dan move. Guarded
+  production preflight berhenti fail-closed sebelum deploy karena commerce
+  canary internal telah diarsipkan Owner dan subscription canary berstatus
+  cancelled. Runtime tetap backend `20260805133709-5906028` dan Studio
+  `20260805133709-57c0337`. Penutup membutuhkan otorisasi eksplisit untuk
+  memulihkan canary atau replacement canary yang melewati governance penuh;
+  gate tidak boleh dilewati.
+
 - `NEEDS CONFIRMATION`: source backend `59060287` untuk urutan PNG/WebP ->
-  deteksi -> review/koreksi -> save dan rotate 90 derajat individual aktif pada
+  deteksi -> review/koreksi -> save dan implementasi rotate 90 derajat lama aktif pada
   release production `20260805133709-5906028`. Exact-source QA, backup,
   preflight/deploy gate 6/6, canary, service/header/journal, endpoint, dan bundle
   check lulus; rollback `20260805053500-9b4b68a` tersedia. Authenticated owner

@@ -12,6 +12,27 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-05
 
+### SagaView free drag rotation candidate
+
+- Ringkasan: ikon rotate setiap slot kini menjadi drag handle sudut bebas;
+  geser kiri/kanan memiringkan slot tanpa menukar W/H. Angle dipersist ke API,
+  customer render, dan export PNG.
+- Alasan: founder mengoreksi implementasi 90 derajat karena kebutuhan nyata
+  adalah mengikuti opening frame yang miring.
+- Produk/area: SagaView Owner frame editor, metadata validation, Studio canvas,
+  export PNG, accessibility, keyboard/input fallback, test, dan release gate.
+- Klasifikasi: `CONFIRMED`; `DEC-035` menjadi `DEPRECATED` dan diganti
+  `DEC-036`. Source Owner/API `19ac8ab8653de0bf2edc18d164308ea8bbde3640`;
+  Studio `e48be94ab418605f81f8d1484043becfc9fa8a4a`.
+- Gate: build; 120 test/1.250 assertions; focused Playwright dan visual QA; 44
+  file test Studio/156 test; lint/typecheck/build/budget; audit dependency dan
+  diff check.
+- Production berubah: tidak. Guarded preflight berhenti sebelum deploy karena
+  commerce canary internal telah diarsipkan Owner. Runtime tetap backend
+  `20260805133709-5906028` dan Studio `20260805133709-57c0337`.
+- File knowledge: product, dossier, changelog SagaView, master, decisions, gaps,
+  portfolio/root changelog, dan sync status.
+
 ### SagaView urutan deteksi dan rotate slot individual production
 
 - Ringkasan: frame baru dimulai tanpa slot sampai PNG/WebP diunggah dan deteksi

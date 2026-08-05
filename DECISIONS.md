@@ -508,5 +508,19 @@ keputusan pengganti.
 | Alternatif yang dipertimbangkan | Rotate hanya dari inspector; memutar seluruh frame; menyimpan angle bebas per slot; menampilkan ikon hanya pada slot aktif. |
 | Dampak | Tombol rotate selalu terlihat dan accessible pada setiap slot, tetap kompatibel dengan drag, empat resize handle, feather, dan input X/Y/W/H. Tidak ada perubahan API atau metadata karena rotasi 90 derajat direpresentasikan sebagai pertukaran W/H. |
 | Pemberi keputusan | Andreas / founder |
-| Status | `CONFIRMED`; source `5906028703759d49ef930a7363c5efc293f6be97`, release production `20260805133709-5906028` |
+| Status | `DEPRECATED` oleh `DEC-036`; source `5906028703759d49ef930a7363c5efc293f6be97`, release production `20260805133709-5906028` |
+| Dokumen terkait | [SagaView Product](products/sagaview/PRODUCT.md), [SagaView Dossier](products/sagaview/DOSSIER.md), [SagaView Changelog](products/sagaview/CHANGELOG.md), [Gaps](GAPS.md) |
+
+## DEC-036 - Rotate slot SagaView menggunakan drag sudut bebas
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-05 |
+| Topik | Interaksi rotate individual pada slot foto frame editor SagaView |
+| Keputusan | Ikon rotate pada setiap box adalah drag handle. Operator menahan ikon lalu menggeser ke kiri untuk sudut negatif atau ke kanan untuk sudut positif; box slot benar-benar miring tanpa menukar W/H. Sudut per slot disimpan pada metadata, diterapkan di preview Studio dan export PNG, serta dapat dikoreksi melalui keyboard atau input sudut dan reset. |
+| Alasan | Founder mengoreksi implementasi klik 90 derajat karena kebutuhan sebenarnya adalah menyesuaikan slot dengan opening frame yang miring. |
+| Alternatif yang dipertimbangkan | Pertukaran W/H 90 derajat; rotate seluruh artwork; input angka tanpa drag handle; rotasi hanya di preview tanpa persistensi/export. |
+| Dampak | Kontrak metadata menambah angle opsional per slot dengan default 0 derajat untuk frame lama. Backend membatasi -180 sampai 180 derajat dan menolak rotated bounds di luar canvas. Drag, feather, empat resize handle, X/Y/W/H, customer transform, dan output 4R tetap tersedia. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED`; Owner/API source `19ac8ab8653de0bf2edc18d164308ea8bbde3640` dan Studio source `e48be94ab418605f81f8d1484043becfc9fa8a4a` berstatus `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; promotion diblokir preflight commerce canary yang telah diarsipkan Owner |
 | Dokumen terkait | [SagaView Product](products/sagaview/PRODUCT.md), [SagaView Dossier](products/sagaview/DOSSIER.md), [SagaView Changelog](products/sagaview/CHANGELOG.md), [Gaps](GAPS.md) |

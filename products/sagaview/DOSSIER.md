@@ -87,11 +87,22 @@ journal, dan public smoke. Source aktif sebagai release
 `20260805133709-5906028`; rollback backend
 `20260805053500-9b4b68a` dipertahankan.
 
-Setiap box slot pada release memiliki tombol rotate kecil yang accessible.
-Klik memutar slot individual 90 derajat dengan menukar W/H di sekitar titik
-tengah dan melakukan clamp agar tetap berada di canvas. Kontrol tidak memutar
-artwork frame atau slot lain, serta tetap kompatibel dengan drag, empat resize
-handle, feather, dan input X/Y/W/H.
+Implementasi production sebelumnya memberi tombol rotate yang menukar W/H 90
+derajat. Founder mengoreksi kontrak tersebut melalui `DEC-036`: rotate yang
+diterima adalah drag angle bebas agar slot dapat mengikuti opening frame yang
+miring.
+
+Candidate Owner/API `19ac8ab8653de0bf2edc18d164308ea8bbde3640` dan Studio
+`e48be94ab418605f81f8d1484043becfc9fa8a4a` menyimpan angle opsional per slot,
+default 0 derajat untuk frame lama, menerapkan rotated bounds di server, serta
+merender sudut yang sama pada preview customer dan export PNG. Drag ke kiri
+menghasilkan sudut negatif dan drag ke kanan sudut positif; inspector juga
+menyediakan angka/reset dan keyboard. Build, 120 test SagaView/1.250 assertions,
+focused Playwright, 44 file test Studio/156 test, lint, typecheck, build/budget,
+visual QA, dan audit dependency lulus. Status `LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`: guarded preflight berhenti sebelum deploy karena
+commerce canary internal berstatus Owner-archived, sehingga runtime production
+belum berubah.
 
 Mulai sesi production memakai checklist perangkat, paket, folder, frame, dan
 output serta satu CTA kontekstual 48 px. Utility cloud/recovery yang sehat
