@@ -12,14 +12,14 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-05T12:43:52+07:00 |
+| Waktu pembaruan terakhir | 2026-08-05T13:04:36+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `ca94c3741c2a7e93bf968378b84c2b69ff3b4727` |
-| Informasi terakhir disinkronkan | SagaView source `9b4b68a126cbf5f98f67ddf562eedbc93df60a2f`, release `20260805053500-9b4b68a`: rasio frame, putar landscape, feather, drag-move, empat resize handle, backup/canary, dan production verification; delivery `PRODUCTION_DEPLOYED`, activation `PRODUCTION_ACTIVATED`. |
+| Baseline sebelum pembaruan | `085a7d7f1eb2158916080dad489f8482c68e3477` |
+| Informasi terakhir disinkronkan | SagaView candidate `71d70fb87ebd86db80f28b43c76239c84690e96f`: frame baru dimulai dengan 0 slot, lalu PNG/WebP, deteksi otomatis, review/koreksi, dan save. Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap `20260805053500-9b4b68a`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik kontrak editor frame atau release. Authenticated owner visual UAT dan business readiness mass-scale masih menunggu konfirmasi. |
-| Error | Tidak ada error release aktif. Staging transport awal kekurangan kapasitas dan dipindah ke volume temporary yang cukup tanpa menghapus artefak produk lain. |
+| Konflik | Tidak ada konflik keputusan. Candidate belum production; authenticated owner visual UAT dan business readiness mass-scale masih menunggu konfirmasi. |
+| Error | Tidak ada error release aktif. Profile sentuh mobile/tablet pada simulasi drag mouse test lama belum menjadi evidence resize; target desktop editor lulus. |
 
 ## File yang berubah pada sinkronisasi ini
 
@@ -47,6 +47,10 @@ SagaView menunggu authenticated owner visual UAT pada editor frame release
 terbaru setelah vault lokal dibuka. Exact-source Playwright, production gate,
 public smoke, dan deployed bundle check sudah lulus; Founding Studio Pilot tetap
 dibutuhkan sebelum klaim `BUSINESS_READY` mass-scale.
+
+Candidate urutan import frame `71d70fb8` juga menunggu approval deploy dan
+release-safety exact source. Sampai dipromosikan, production masih memakai
+release backend `20260805053500-9b4b68a`.
 
 ## Cara verifikasi
 

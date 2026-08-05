@@ -1,8 +1,8 @@
 # SagaView Product Knowledge
 
 Updated: 5 Agustus 2026
-Evidence status: production deployed + production activated; compact all-menu
-candidate implemented not deployed
+Evidence status: production deployed + production activated; frame import-order
+and compact all-menu candidates implemented not deployed
 
 ## Tujuan dokumen
 
@@ -124,6 +124,17 @@ Kontrak ini sekarang enforced server-side pada runtime production yang aktif.
 - Editor/review memakai canonical ratio 4R.
 - Slot dapat zoom/geser/bleed, tetapi canvas melakukan clipping.
 - Postcard/Square tidak ditampilkan karena renderer belum mendukung.
+
+## Urutan import frame
+
+`CONFIRMED` sebagai keputusan produk dan candidate lokal, bukan production:
+source backend `71d70fb87ebd86db80f28b43c76239c84690e96f` memulai frame baru
+dengan 0 slot. Operator wajib memilih PNG/WebP terlebih dahulu, lalu menjalankan
+`Deteksi otomatis`; hasil deteksi baru menjadi slot yang dapat diperiksa dan
+disesuaikan. `Tambah slot` manual baru aktif setelah deteksi pernah dicoba, dan
+draft tanpa slot tidak dapat disimpan. Frame existing tetap memuat slot
+tersimpannya. Status delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+production tetap release backend `20260805053500-9b4b68a`.
 
 ## Session completion dan privacy handoff
 

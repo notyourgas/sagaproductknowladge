@@ -451,6 +451,12 @@ portrait/landscape tidak dipenyet. Canvas landscape mendukung putar kanan/kiri
 90 derajat dan pemetaan ulang slot. Deteksi otomatis memakai feather awal 4 px;
 semua slot dapat diatur 0–12 px atau ±2 px, dipindah pada canvas, dan di-resize
 dari empat sudut sambil mempertahankan input X/Y/W/H.
+Candidate backend `71d70fb8` mengubah urutan frame baru menjadi 0 slot, pilih
+PNG/WebP, jalankan `Deteksi otomatis`, lalu review/koreksi slot. Penambahan slot
+manual baru aktif setelah deteksi pernah dicoba dan draft tanpa slot diblokir;
+frame existing tetap memuat slot tersimpan. Statusnya `LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; production tetap backend `9b4b68a1` /
+`20260805053500-9b4b68a`.
 Output Settings kini hanya menampilkan Reset/Simpan saat dirty, menaruh action
 setelah konten pada mobile dan sticky pada desktop, memakai target 44 px, serta
 memprioritaskan status `Belum disimpan` ketika operator mengedit ulang. Folder,

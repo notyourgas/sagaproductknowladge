@@ -4,6 +4,31 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-08-05 - Urutan import frame sebelum deteksi candidate
+
+- Klasifikasi: `CONFIRMED` sebagai keputusan produk dan candidate lokal, bukan
+  production.
+- Status: delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; activation
+  production dan business readiness tidak berubah.
+- Before: frame baru langsung menerima satu slot bawaan sebelum file artwork
+  dan deteksi transparansi diproses.
+- After: frame baru dimulai dengan 0 slot; operator memilih PNG/WebP, menjalankan
+  `Deteksi otomatis`, lalu memeriksa atau mengoreksi slot. `Tambah slot` manual
+  baru aktif setelah deteksi pernah dicoba, dan draft tanpa slot diblokir.
+  Frame existing tetap memuat slot tersimpan; mengganti artwork mengulang urutan.
+- Source `71d70fb87ebd86db80f28b43c76239c84690e96f` pada branch
+  `codex/s70-single-device-production-lineage`.
+- Validation: build; 119 test SagaView/1.248 assertions; focused Playwright
+  desktop 1/1 mencakup 0 slot sebelum unggah, 0 slot setelah unggah, deteksi,
+  rotasi, feather, resize, dan move; npm audit production serta Composer lock
+  audit nol vulnerability/advisory; diff dan public-safety check lulus.
+- Batas QA: simulasi drag mouse pada profile sentuh mobile/tablet di test lama
+  tidak bergerak; desktop target editor lulus. Tidak ada deployment, migration,
+  payment, tenant/device/session, foto local-first, pricing, entitlement, atau
+  output 4R yang berubah.
+- Production tetap backend source `9b4b68a126cbf5f98f67ddf562eedbc93df60a2f`,
+  release `20260805053500-9b4b68a`.
+
 ## 2026-08-05 - Editor frame landscape dan geometri slot production
 
 - Klasifikasi: `CONFIRMED`.

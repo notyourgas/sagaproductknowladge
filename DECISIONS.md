@@ -482,3 +482,17 @@ keputusan pengganti.
 | Pemberi keputusan | Andreas / founder |
 | Status | `CONFIRMED`; source `9b4b68a126cbf5f98f67ddf562eedbc93df60a2f`, release production `20260805053500-9b4b68a` |
 | Dokumen terkait | [SagaView Product](products/sagaview/PRODUCT.md), [SagaView Dossier](products/sagaview/DOSSIER.md), [SagaView Changelog](products/sagaview/CHANGELOG.md), [Gaps](GAPS.md) |
+
+## DEC-034 - Slot frame SagaView dibuat setelah auto-detect
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-05 |
+| Topik | Urutan authoring frame dan pembuatan slot foto SagaView |
+| Keputusan | Frame baru harus dimulai dengan 0 slot. Operator memasukkan PNG/WebP terlebih dahulu, lalu menjalankan `Deteksi otomatis`; hasilnya baru menjadi slot untuk diperiksa atau dikoreksi. Penambahan slot manual hanya tersedia setelah deteksi pernah dicoba, dan draft tanpa minimal satu slot tidak dapat disimpan. Frame existing tetap memuat slot tersimpan. |
+| Alasan | Founder meminta slot tidak dibuat sebelum artwork frame tersedia karena sumber geometri harus berasal dari transparansi PNG dan proses deteksi, bukan placeholder satu slot. |
+| Alternatif yang dipertimbangkan | Mempertahankan satu slot bawaan; menjalankan deteksi otomatis langsung saat file dipilih; membolehkan slot manual sebelum percobaan deteksi. |
+| Dampak | Empty state, enable/disable action, draft validation, dan regression editor mengikuti urutan PNG -> deteksi -> review/koreksi -> save. Tenant, device/session, foto local-first, payment, pricing, entitlement, dan output 4R tidak berubah. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED`; source `71d70fb87ebd86db80f28b43c76239c84690e96f` local-validated, belum production |
+| Dokumen terkait | [SagaView Product](products/sagaview/PRODUCT.md), [SagaView Dossier](products/sagaview/DOSSIER.md), [SagaView Changelog](products/sagaview/CHANGELOG.md), [Gaps](GAPS.md) |

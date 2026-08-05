@@ -12,6 +12,28 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-05
 
+### SagaView urutan import frame sebelum deteksi candidate
+
+- Ringkasan: frame baru tidak lagi langsung menerima satu slot bawaan. Operator
+  memilih PNG/WebP, menjalankan deteksi otomatis, lalu memeriksa/mengoreksi slot
+  sebelum draft dapat disimpan.
+- Alasan: founder menetapkan bahwa geometri slot harus berasal dari frame PNG
+  dan langkah auto-detect, bukan dari placeholder sebelum artwork tersedia.
+- Produk/area: SagaView owner frame editor, empty state, slot detection, manual
+  fallback, draft validation, dan browser regression.
+- Klasifikasi: `CONFIRMED`; keputusan founder `DEC-034`; source candidate
+  `71d70fb87ebd86db80f28b43c76239c84690e96f`.
+- Gate: build; 119 test/1.248 assertions; focused Playwright desktop 1/1; npm
+  audit production dan Composer lock audit nol; diff/public-safety lulus.
+- Production berubah: tidak. Delivery `LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; backend production tetap
+  `9b4b68a126cbf5f98f67ddf562eedbc93df60a2f` / `20260805053500-9b4b68a`.
+- Residual: profile sentuh mobile/tablet pada simulasi drag mouse test lama belum
+  menjadi evidence resize; target desktop editor lulus. Deployment membutuhkan
+  approval dan release gate terpisah.
+- File knowledge: product, dossier, changelog SagaView, master, decisions, gaps,
+  portfolio/root changelog, dan sync status.
+
 ### SagaView editor frame landscape dan geometri slot production
 
 - Ringkasan: preview frame kini menjaga rasio asli; landscape mendukung putar

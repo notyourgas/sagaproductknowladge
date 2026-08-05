@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-05 - SagaView urutan import frame candidate
+
+- Frame baru kini dimulai tanpa slot: operator memilih PNG/WebP, menjalankan
+  deteksi otomatis, lalu memeriksa atau mengoreksi slot sebelum menyimpan.
+- Slot manual baru dapat ditambah setelah deteksi pernah dicoba; draft tanpa
+  slot diblokir. Frame existing tetap memuat slot tersimpan.
+- Source `71d70fb87ebd86db80f28b43c76239c84690e96f`; build, 119 test/1.248
+  assertions, focused Playwright desktop, dan audit dependency lulus.
+- Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap
+  backend `9b4b68a1` / `20260805053500-9b4b68a`. Activation dan business
+  readiness tidak berubah.
+
 ## 2026-08-05 - SagaView editor frame geometry production
 
 - Preview frame kini mempertahankan rasio artwork pada portrait/landscape;

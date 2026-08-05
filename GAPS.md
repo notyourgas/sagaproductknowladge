@@ -227,6 +227,13 @@ ketika keputusan atau release baru menutup gap.
 
 ### SagaView
 
+- `BLOCKED`: candidate backend `71d70fb8` menghapus slot bawaan pada frame baru
+  dan mengunci urutan `pilih PNG/WebP -> Deteksi otomatis -> review/koreksi ->
+  simpan`. Build, 119 test/1.248 assertions, focused Playwright desktop, serta
+  audit dependency lulus. Production tetap `9b4b68a1` /
+  `20260805053500-9b4b68a`; promosi menunggu approval deploy, release-safety
+  exact source, immutable release, rollback, dan authenticated smoke.
+
 - `BLOCKED`: candidate kumulatif compact all-menu source `2b0331d5` lulus
   red-green, focused/regression, unit 156/156, full E2E 113 pass/2 capture-only
   skip, build/budget, audit dependency, serta matriks mobile/reflow/Windows
