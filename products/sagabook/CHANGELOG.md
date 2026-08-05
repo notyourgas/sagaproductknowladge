@@ -4,6 +4,32 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-05 - Recovery pembayaran dan navigasi adaptif S119
+
+- Klasifikasi: `CONFIRMED`; delivery `LOCAL_VALIDATED / STAGING_READY /
+  IMPLEMENTED_NOT_DEPLOYED`. Source
+  `3aa094cc5bee834ba41e31cb16347b899c6a7c18` tersedia pada branch
+  `codex/s118-sagabook-request-recovery` dan sama dengan upstream.
+- Before: kegagalan sesi QRIS, upload bukti transfer, dan pembayaran tambahan
+  reschedule belum memberi recovery kontekstual yang konsisten; menu dashboard
+  tidak dapat dicapai pada rentang 768-1023 piksel. After: alert/retry menjaga
+  data customer, upload tetap terpilih untuk dicoba ulang, status semantik
+  tersedia, serta drawer/menu 44 piksel memulihkan fokus ke trigger.
+- Storefront tetap satu canvas mobile maksimum 460 piksel yang terpusat pada
+  viewport desktop sampai 4K; tidak ada desktop landing/layout/frame. Tepat
+  satu `Powered by SagaBook` non-fixed, no-overflow, keyboard, forced-colors,
+  reduced-motion, dan kelas zoom efektif 125-200 persen lulus.
+- Gate: Playwright final mobile 163/32 skip, desktop 191/4 skip, tablet 159/36
+  skip—total 513 pass dan 0 failure; focused recovery 1/1, dashboard SagaBook
+  1/1, matriks SagaView 5/5; backend 960/960 dengan 11.007 assertion; design
+  26/0; build; full check/budget SagaView; npm/Composer audit nol.
+- Production tidak berubah: source `d70fc1e0d922eed86fe4ea4998688aad32c68c43`,
+  release `20260803194351-d70fc1e`, rollback
+  `20260803132556-cfb2af8`; Nginx/queue aktif dan empat public smoke 200.
+  Release-readiness VPS lulus 9/10 dan menahan deploy karena satu tenant trial
+  belum mengaktifkan website booking. Aktivasi publik tenant memerlukan
+  keputusan owner.
+
 ## 2026-08-05 - Recovery request customer tetap lokal dan aman diulang
 
 - Klasifikasi: `CONFIRMED`; delivery `LOCAL_VALIDATED /

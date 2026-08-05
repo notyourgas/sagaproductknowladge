@@ -1,5 +1,20 @@
 # Portfolio Changelog
 
+## 2026-08-05 - SagaBook recovery dan adaptive navigation S119
+
+- QRIS, upload bukti transfer, serta pembayaran tambahan reschedule kini
+  mempunyai alert/retry yang menjaga progres customer; menu dashboard tetap
+  dapat dicapai pada mobile, zoom, laptop, MacBook, QHD, dan 4K.
+- Storefront tetap mobile-only maksimum 460 piksel dan terpusat pada semua
+  viewport, tanpa desktop landing/layout/frame, tanpa overflow, serta tepat
+  satu watermark non-fixed.
+- Source `3aa094cc5bee834ba41e31cb16347b899c6a7c18`; Playwright final 513 pass/72
+  controlled skip, backend 960/960, design/build, full check SagaView, bundle
+  budget, dan audit dependency lulus.
+- Delivery `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
+  Production tetap `d70fc1e0` / `20260803194351-d70fc1e`; readiness VPS 9/10
+  menahan promosi karena satu tenant trial belum mengaktifkan website booking.
+
 ## 2026-08-05 - SagaBio category journey release candidate
 
 - Sebelas preset general, F&B, jasa, produk, portfolio, dan creator kini

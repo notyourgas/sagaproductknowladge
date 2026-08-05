@@ -76,18 +76,20 @@ Booking dipasarkan unlimited dengan fair-use.
 Trial SagaBook: 7 hari full access, kemudian grace read-only hari 8-14 dan
 suspend setelah hari 14; tidak ada auto-charge.
 
-Candidate SagaBook terbaru untuk Customer Booking Center adalah source kumulatif
-`b2b638cece4e9b18720a5367c05dcda3bb86ecf6` pada
+Candidate SagaBook terbaru adalah source kumulatif
+`3aa094cc5bee834ba41e31cb16347b899c6a7c18` pada
 `codex/s118-sagabook-request-recovery`, berstatus `LOCAL_VALIDATED /
-IMPLEMENTED_NOT_DEPLOYED`. Refund, perubahan, dan pembatalan memakai satu
-disclosure mobile aktif; kegagalan diumumkan di form yang tepat, isian tetap
-tersimpan, retry tetap tersedia, dan receipt sukses tidak hilang bila refresh
-status sesudah POST gagal. Storefront tetap mobile-only maksimum 460 piksel
-pada semua viewport dan tepat satu `Powered by SagaBook` non-fixed. Focused
-S118 6/6, backend 960/960, build, design, dan dependency audit lulus. Full
-Playwright tidak memberi receipt final karena timeout 604 detik, sehingga belum
-`STAGING_READY`. API/policy/payment tidak berubah. Production tetap
-`d70fc1e0` / `20260803194351-d70fc1e`.
+STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`. Recovery QRIS, upload bukti
+transfer, dan pembayaran tambahan reschedule menjaga progres customer serta
+menyediakan alert/retry kontekstual. Navigasi dashboard tetap dapat dicapai
+pada mobile, zoom efektif 125-200 persen, laptop, MacBook, Full HD, QHD, dan
+4K. Storefront tetap mobile-only maksimum 460 piksel pada semua viewport dan
+tepat satu `Powered by SagaBook` non-fixed. Playwright final lulus 513 pass/72
+controlled skip tanpa failure; backend 960/960, build, design, full check
+SagaView, bundle budget, serta audit dependency lulus. Production tetap
+`d70fc1e0` / `20260803194351-d70fc1e`; release-readiness VPS 9/10 menahan
+deploy karena satu tenant trial belum mengaktifkan website booking. Aktivasi
+publik tenant memerlukan keputusan owner.
 
 Update terbaru: Support & Recovery Center production. Owner/admin dapat
 bertanya, melakukan human handoff, melanjutkan tiket, mengakses account

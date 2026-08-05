@@ -531,6 +531,29 @@ candidate dan approval deploy belum tersedia. Data rilis, booking, payment,
 availability, permission, tenant isolation, storefront, dan SagaView tidak
 berubah.
 
+Critical recovery dan adaptive navigation S119 pada source
+`3aa094cc5bee834ba41e31cb16347b899c6a7c18` berstatus `LOCAL_VALIDATED /
+STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`. Before: kegagalan pembuatan sesi
+QRIS hanya mengosongkan QR, upload bukti transfer gagal tanpa feedback yang
+tetap berada di form aktif, pembayaran tambahan reschedule belum mempunyai
+status semantik, dan menu dashboard hilang pada rentang 768-1023 piksel.
+After: ketiga alur mempertahankan data serta menyediakan alert/retry yang
+jelas; tombol navigasi/drawer minimum 44 piksel dan fokus kembali ke trigger
+setelah drawer ditutup. Storefront tetap mobile-only maksimum 460 piksel dan
+terpusat sampai 4K, tanpa desktop landing/layout/frame.
+
+Acceptance final: Playwright mobile 163 pass/32 controlled skip, desktop 191
+pass/4 controlled skip, dan tablet 159 pass/36 controlled skip; total 513 pass
+dan 0 failure. Focused recovery 1/1, dashboard SagaBook 1/1, serta matriks
+SagaView 5/5 lulus pada anchor 390x844 dan 1440x900, kelas zoom efektif
+125-200 persen, Windows compact, MacBook, Full HD, QHD, dan 4K. Backend
+960/960 dengan 11.007 assertion, design audit 26/0, build, full SagaView check
+dan bundle budget, npm audit, Composer validate/audit, no-overflow, keyboard,
+forced-colors, reduced-motion, serta watermark tunggal lulus. Production tidak
+berubah karena release-readiness VPS 9/10: satu tenant trial belum mengaktifkan
+website booking. Aktivasi publik tenant adalah keputusan operasional owner,
+bukan bagian perubahan UI/UX dan tidak dilakukan otomatis.
+
 ## Integrasi
 
 Payment dan notification provider, serta future SagaView handoff.

@@ -215,15 +215,17 @@ ketika keputusan atau release baru menutup gap.
   backup terenkripsi/checksum/disposable restore/migration preflight yang
   terikat exact S117, approval, immutable release, service/header/journal,
   rollback proof, dan public smoke exact source.
-- `BLOCKED`: candidate recovery request customer source `b2b638ce` menempatkan
-  error refund/perubahan/pembatalan di form aktif, mempertahankan isian dan
-  retry, serta menjaga receipt sukses ketika refresh status pasca-POST gagal.
-  Focused S118 6/6, backend 960/960, build, design, dependency audit, matriks
-  390x844 sampai QHD, canvas maksimum 460 piksel, dan watermark tunggal lulus.
-  Full Playwright melewati batas 604 detik tanpa receipt final. Candidate
-  `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED` dan belum `STAGING_READY` sampai
-  full acceptance menghasilkan hasil final. Production tetap `d70fc1e0` /
-  `20260803194351-d70fc1e`.
+- `BLOCKED`: candidate S119 source `3aa094cc` menutup recovery QRIS, upload
+  bukti transfer, pembayaran tambahan reschedule, serta akses navigasi
+  dashboard lintas zoom/viewport. Full Playwright menghasilkan 513 pass/72
+  controlled skip tanpa failure; backend 960/960, design/build, full check
+  SagaView, bundle budget, dan audit dependency lulus. Candidate
+  `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`. Production
+  tetap `d70fc1e0` / `20260803194351-d70fc1e` karena release-readiness VPS
+  lulus 9/10 tetapi satu tenant trial belum mengaktifkan website booking.
+  Penutup blocker memerlukan keputusan owner untuk mengaktifkan storefront
+  tenant tersebut atau menetapkan bahwa tenant tidak masuk cohort pilot;
+  konfigurasi bisnis ini tidak diubah otomatis oleh release UI/UX.
 
 ### SagaView
 

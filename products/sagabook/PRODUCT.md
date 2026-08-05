@@ -163,24 +163,24 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
   memusatkan canvas tersebut; layout rail, workspace dua kolom, canvas lebar,
   dan pola landing page tidak berlaku untuk storefront. Optimasi desktop tetap
   berlaku untuk dashboard/admin SagaBook dan aplikasi/dashboard SagaView.
-- Flow request customer terbaru sudah `LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED` pada source kumulatif
-  `b2b638cece4e9b18720a5367c05dcda3bb86ecf6`, branch
-  `codex/s118-sagabook-request-recovery`. Refund, perubahan, dan pembatalan
-  mempertahankan disclosure eksklusif S117, lalu menempatkan kegagalan tepat di
-  form aktif sebagai alert bernama. Isian dan idempotency key tidak direset,
-  tombol retry kembali aktif, dan keberhasilan tetap diumumkan sebagai status
-  walaupun refresh status sesudah POST gagal. Focused S118 lulus 6/6 pada
-  mobile, tablet, dan desktop; coverage di dalam test mencakup 390x844,
-  effective 200 persen, Windows compact, 1440x900, MacBook, dan QHD. Canvas
-  tetap maksimum 460 piksel, tanpa overflow, dan tepat satu
-  `Powered by SagaBook` non-fixed. Backend 960/960 dengan 11.007 assertion,
-  build, design 26/0, serta audit npm/Composer lulus. API, mutation/policy,
-  migration, payment, availability, permission, tenant isolation, preset,
-  foto, export, invoice, receipt, dan SagaView tidak berubah. Full Playwright
-  tidak menghasilkan receipt final karena runner melewati batas 604 detik;
-  karena itu candidate belum `STAGING_READY`. Production tetap source
-  `d70fc1e0`, release `20260803194351-d70fc1e`.
+- Candidate UI/UX kumulatif terbaru berstatus `LOCAL_VALIDATED / STAGING_READY /
+  IMPLEMENTED_NOT_DEPLOYED` pada source
+  `3aa094cc5bee834ba41e31cb16347b899c6a7c18`, branch
+  `codex/s118-sagabook-request-recovery`. Flow QRIS, upload bukti transfer, dan
+  pembayaran tambahan reschedule kini memberi alert kontekstual, menjaga data
+  customer ketika layanan gagal, serta menyediakan retry yang dapat diakses.
+  Dashboard menjaga menu utama, tombol drawer, dan pemulihan fokus pada
+  viewport 390x844, kelas zoom efektif 125-200 persen, Windows compact,
+  MacBook, Full HD, QHD, dan 4K. Storefront tetap satu canvas mobile maksimum
+  460 piksel pada semua viewport; tidak ada desktop landing/layout, tanpa
+  overflow, dan tepat satu `Powered by SagaBook` non-fixed. Receipt Playwright
+  final lulus 513 skenario dengan 72 controlled skip pada mobile, desktop, dan
+  tablet; backend 960/960 dengan 11.007 assertion, design 26/0, build, full
+  check SagaView, bundle budget, serta audit npm/Composer lulus. Production
+  tetap source `d70fc1e0`, release `20260803194351-d70fc1e`: promosi ditahan
+  karena release-readiness production menemukan satu tenant trial belum
+  mengaktifkan website booking. Aktivasi tenant memerlukan keputusan owner dan
+  tidak diubah otomatis oleh batch UI/UX ini.
 - Flow customer sekunder Detail Booking dan Reschedule sudah
   `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED` pada source
   `5788d6bb5860353c03edac51b968ce05a5d936f7`, branch

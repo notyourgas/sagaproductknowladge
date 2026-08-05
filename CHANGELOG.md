@@ -12,6 +12,29 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-05
 
+### SagaBook recovery pembayaran dan adaptive navigation S119
+
+- Ringkasan: recovery QRIS, upload bukti transfer, pembayaran tambahan
+  reschedule, serta akses menu dashboard lintas viewport/zoom ditutup tanpa
+  mengubah kontrak mobile-only storefront.
+- Alasan: kegagalan layanan belum selalu terlihat di form aktif dan rentang
+  768-1023 piksel dapat kehilangan tombol navigasi dashboard.
+- Produk/area: storefront payment/recovery, dashboard navigation,
+  accessibility, viewport QA, test isolation, provenance, dan release gate.
+- Klasifikasi: `CONFIRMED`; source
+  `3aa094cc5bee834ba41e31cb16347b899c6a7c18`, branch
+  `codex/s118-sagabook-request-recovery`, delivery `LOCAL_VALIDATED /
+  STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: Playwright final 513 pass/72 controlled skip tanpa failure; backend
+  960/960 dengan 11.007 assertion; design 26/0; build; full SagaView check dan
+  budget; npm/Composer audit nol; readiness produksi 9/10.
+- Production berubah: tidak. Runtime tetap `d70fc1e0` /
+  `20260803194351-d70fc1e`, rollback `20260803132556-cfb2af8`; satu tenant
+  trial dengan website booking nonaktif adalah blocker konkret dan memerlukan
+  keputusan owner.
+- File knowledge: product, dossier, changelog SagaBook, master, gaps,
+  portfolio/root changelog, dan sync status.
+
 ### SagaBio category journey productization
 
 - Ringkasan: sebelas preset lintas kategori kini menjadi blueprint journey
