@@ -407,10 +407,10 @@ Trial contract: 14 hari dua fase server-side; hari 1–7 full access, hari 8–1
 plan-limited, tanpa auto-charge.
 
 Update terbaru: backend memakai source
-`b504dae30aee90a2b55e1e670d1934e2fc524218`, release
-`20260803221207-b504dae`, sedangkan Studio aktif memakai source
+`9b4b68a126cbf5f98f67ddf562eedbc93df60a2f`, release
+`20260805053500-9b4b68a`, sedangkan Studio aktif memakai source
 `57c0337b43b46229253ce89ace39f2ed587fc2d7`, release
-`20260803221207-57c0337`. Login dan Studio masing-masing merender tepat satu
+`20260805053500-57c0337`. Login dan Studio masing-masing merender tepat satu
 `Powered by SagaView`; footer Studio responsif memakai satu node DOM, memiliki
 ruang aman mobile, dan tetap terbaca pada forced-colors. Navigasi mobile
 berikutnya/sebelumnya membawa target sampai terlihat penuh dan menghormati
@@ -446,6 +446,11 @@ memakai kartu horizontal ringkas di mobile dan empat kolom di desktop, serta
 mempertahankan local frame saat offline tanpa mengubah customer picker atau 4R.
 Launcher bantuan masuk alur halaman saat tertutup sehingga tidak menutupi kartu
 mobile, lalu kembali menjadi panel fixed yang utuh di viewport saat dibuka.
+Editor frame mempertahankan rasio artwork asli dengan `contain`, sehingga aset
+portrait/landscape tidak dipenyet. Canvas landscape mendukung putar kanan/kiri
+90 derajat dan pemetaan ulang slot. Deteksi otomatis memakai feather awal 4 px;
+semua slot dapat diatur 0–12 px atau ±2 px, dipindah pada canvas, dan di-resize
+dari empat sudut sambil mempertahankan input X/Y/W/H.
 Output Settings kini hanya menampilkan Reset/Simpan saat dirty, menaruh action
 setelah konten pada mobile dan sticky pada desktop, memakai target 44 px, serta
 memprioritaskan status `Belum disimpan` ketika operator mengedit ulang. Folder,
@@ -473,7 +478,7 @@ tetap memakai permission serta kontrak operasional lama; perubahan tidak
 menyentuh customer flow, local-first, payment, privacy foto, atau output 4R.
 
 Signature login dan footer Studio sudah aktif pada backend release
-`20260803221207-b504dae` dan Studio release `20260803221207-57c0337`. Login dan
+`20260805053500-9b4b68a` dan Studio release `20260805053500-57c0337`. Login dan
 Studio masing-masing memiliki satu `Powered by SagaView`; Studio menggunakan
 satu node footer responsif. Composer/npm audit, full regression, release gate,
 dan public browser smoke mobile/desktop lulus. Business readiness mass-scale
@@ -487,7 +492,7 @@ utama sesudah navigasi route. Kandidat lulus focused 3/3, gabungan
 accessibility/navigation 12/12, 156 unit, 99 E2E termasuk import 50/200/500,
 build, visual exact 390x844 dan 1440x900, serta audit 0. Statusnya
 `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`; production tetap Studio `57c0337b` /
-`20260803221207-57c0337` sampai fresh backup/restore exact candidate dan
+`20260805053500-57c0337` sampai fresh backup/restore exact candidate dan
 approval deploy tersedia. Tepat satu watermark non-fixed tetap dijaga dan
 tidak masuk artefak bisnis.
 
@@ -499,7 +504,7 @@ tanpa mengambil fokus dari konten utama. Matriks 390x844, 1280x720, 1440x900,
 E2E 105/105 termasuk import 50/200/500, build/budget, forced-colors,
 no-overflow, target 44 piksel, satu watermark, dan npm audit nol lulus. Status
 `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`; production tetap
-Studio `57c0337b` / `20260803221207-57c0337` sampai release-safety exact S110
+Studio `57c0337b` / `20260805053500-57c0337` sampai release-safety exact S110
 dan approval tersedia.
 
 Candidate Studio terbaru berikutnya `808470c1` menutup gap dialog PIN pada
@@ -509,7 +514,7 @@ internal, serta target input/action 44/48 piksel. Matriks 390x844, 1280x720,
 reduced-motion, no-overflow, satu watermark, 156 unit, 106 E2E pass dengan satu
 capture-only skip, build/budget, serta audit nol. Status
 `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`; production tetap
-Studio `57c0337b` / `20260803221207-57c0337` sampai release-safety exact S111
+Studio `57c0337b` / `20260805053500-57c0337` sampai release-safety exact S111
 dan approval tersedia. Validasi PIN dan kontrak bisnis tidak berubah.
 
 Candidate Studio terbaru berikutnya `707a6f61` menutup gap penjaga navigasi
@@ -520,7 +525,7 @@ aksesibel, focus trap, Escape, internal scroll, overlay benar, serta tiga aksi
 forced-colors, reduced-motion, no-overflow, satu watermark, 156 unit, 108 E2E
 pass dengan dua capture-only skip, build/budget, serta audit nol. Status
 `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`; production tetap
-Studio `57c0337b` / `20260803221207-57c0337` sampai release-safety exact S112
+Studio `57c0337b` / `20260805053500-57c0337` sampai release-safety exact S112
 dan approval tersedia. Persistence setting dan kontrak bisnis tidak berubah.
 
 Candidate Studio terbaru `2b0331d5` menutup gap penemuan route pada compact dan
@@ -533,7 +538,7 @@ efektif 125/150/200 persen, 1280x720, 1440x900, 1512x982, 1920x1080,
 156 unit, 113 E2E pass dengan dua capture-only skip, build/budget,
 forced-colors, reduced-motion, no-overflow, satu watermark, dan audit nol.
 Status `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`; production
-tetap Studio `57c0337b` / `20260803221207-57c0337` sampai release-safety exact
+tetap Studio `57c0337b` / `20260805053500-57c0337` sampai release-safety exact
 S114 dan approval tersedia. Kontrak bisnis dan data tidak berubah.
 
 Candidate Saga Platform `dcb5a3f3` menyiapkan signup SagaView auto-trial 7 hari

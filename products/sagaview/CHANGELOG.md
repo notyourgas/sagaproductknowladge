@@ -4,6 +4,35 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-08-05 - Editor frame landscape dan geometri slot production
+
+- Klasifikasi: `CONFIRMED`.
+- Status: delivery `PRODUCTION_DEPLOYED`, activation tetap
+  `PRODUCTION_ACTIVATED`, business readiness tetap `NEEDS CONFIRMATION`.
+- Before: artwork frame dapat terlihat dipenyet ketika canvas landscape
+  dipilih; pilihan putar kanan/kiri belum memengaruhi preview/geometri; kontrol
+  feather semua slot dan empat resize handle tidak tersedia pada editor aktif.
+- After: preview mempertahankan rasio asli dengan `contain`; landscape dapat
+  diputar kanan/kiri 90 derajat dengan pemetaan ulang slot; deteksi otomatis
+  memberi feather 4 px; semua slot dapat diatur 0–12 px atau ±2 px; tiap slot
+  dapat dipindah dan di-resize dari empat sudut, sementara X/Y/W/H tetap ada.
+- Source backend `9b4b68a126cbf5f98f67ddf562eedbc93df60a2f`, branch
+  `codex/s70-single-device-production-lineage`, release
+  `20260805053500-9b4b68a`. Studio source tetap
+  `57c0337b43b46229253ce89ace39f2ed587fc2d7` dan dipaketkan sebagai release
+  `20260805053500-57c0337`.
+- Validation: build; 119 test SagaView/1.248 assertions; focused Playwright
+  1/1; npm audit production nol vulnerability; Composer lock audit nol
+  advisory; gate produksi 6/6; backup; additive migration; canary perangkat;
+  callback exactly-once tanpa intent/QRIS baru; service/header/journal/Nginx;
+  rollback; lima endpoint utama 200; dan bundle production feature check.
+- Rollback: backend `20260803221207-b504dae`, Studio
+  `20260803221207-57c0337`. Kontrak tenant, device/session, foto local-first,
+  payment, output 4R, pricing, dan entitlement tidak berubah.
+- Residual: authenticated owner visual UAT runtime terbaru belum diulang karena
+  vault lokal terkunci. Exact-source Playwright dan public production smoke
+  sudah lulus; residual ini tidak boleh dipakai untuk klaim `BUSINESS_READY`.
+
 ## 2026-08-05 - Semua menu Studio Console pada compact candidate
 
 - Klasifikasi: `CONFIRMED` sebagai candidate, bukan production.

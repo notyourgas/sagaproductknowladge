@@ -468,3 +468,17 @@ keputusan pengganti.
 | Pemberi keputusan | Andreas / founder |
 | Status | `CONFIRMED`; source dan public production deployment terverifikasi, operational activation menunggu UAT manusia |
 | Dokumen terkait | [AOGTICVITY Product](products/aogticvity/PRODUCT.md), [AOGTICVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTICVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |
+
+## DEC-033 - Editor frame SagaView mempertahankan rasio dan kontrol geometri
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-05 |
+| Topik | Kontrak preview frame, feather, dan penyesuaian slot foto SagaView |
+| Keputusan | Artwork frame tidak boleh dipenyet ketika orientasi canvas berubah. Landscape harus mendukung putar kanan/kiri 90 derajat dengan pemetaan ulang slot. Deteksi memakai feather awal 4 px; operator dapat mengatur feather semua slot 0–12 px atau ±2 px, memindahkan slot pada canvas, resize dari empat titik sudut, dan tetap memakai input X/Y/W/H untuk presisi. |
+| Alasan | Frame landscape sebelumnya terlihat terdistorsi, arah putar tidak bekerja, dan operator kehilangan kontrol feather serta resize visual yang dibutuhkan untuk menyesuaikan slot agar tidak terlalu mepet. |
+| Alternatif yang dipertimbangkan | Memaksa artwork mengikuti rasio canvas; hanya menyediakan input angka; hanya menyediakan satu arah rotasi; menerapkan feather permanen tanpa kontrol operator. |
+| Dampak | Editor frame menjaga rasio asli dan memberi kontrol geometri langsung tanpa mengubah tenant, device/session, foto local-first, payment, pricing, entitlement, atau output 4R. Regression harus mencakup kedua arah rotasi, feather, empat handle, drag-move, dan drag-resize. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED`; source `9b4b68a126cbf5f98f67ddf562eedbc93df60a2f`, release production `20260805053500-9b4b68a` |
+| Dokumen terkait | [SagaView Product](products/sagaview/PRODUCT.md), [SagaView Dossier](products/sagaview/DOSSIER.md), [SagaView Changelog](products/sagaview/CHANGELOG.md), [Gaps](GAPS.md) |

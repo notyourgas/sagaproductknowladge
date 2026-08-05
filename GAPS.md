@@ -231,7 +231,7 @@ ketika keputusan atau release baru menutup gap.
   red-green, focused/regression, unit 156/156, full E2E 113 pass/2 capture-only
   skip, build/budget, audit dependency, serta matriks mobile/reflow/Windows
   compact/MacBook/Full HD/QHD/4K sampai efektif 200 persen. Production tetap
-  `57c0337b` / `20260803221207-57c0337`. Bukti penutup adalah encrypted backup,
+  `57c0337b` / `20260805053500-57c0337`. Bukti penutup adalah encrypted backup,
   checksum, disposable restore dan migration preflight yang terikat exact S114,
   approval, immutable release, service/header/journal, rollback proof, serta
   public smoke exact source.
@@ -245,9 +245,10 @@ ketika keputusan atau release baru menutup gap.
   session nyata total dan minimal 10 per studio, physical 4R,
   offline/reconnect, emergency transfer, kepatuhan SLA, serta minimal 2 studio
   lanjut berbayar.
-- `NEEDS CONFIRMATION`: authenticated Owner visual smoke pada runtime terbaru;
-  exact-source authenticated browser regression dan public production smoke
-  sudah lulus, tetapi credential tidak digunakan dalam audit publik.
+- `NEEDS CONFIRMATION`: authenticated Owner visual smoke pada runtime editor
+  frame `20260805053500-9b4b68a`; exact-source Playwright, public production
+  smoke, dan deployed bundle check lulus, tetapi vault lokal terkunci sehingga
+  credential owner tidak digunakan pada verifikasi pascadeploy ini.
 - `NEEDS CONFIRMATION`: receipt delivery WhatsApp nyata dan rekonsiliasi
   evidence physical-UAT yang masih diwajibkan oleh preflight operasional lama.
 - `TODO`: endpoint bantuan online pada origin Studio masih mengembalikan 404
@@ -259,11 +260,18 @@ ketika keputusan atau release baru menutup gap.
 - `BLOCKED`: candidate kumulatif navigasi Changelog, typography visual QA, dan
   route focus recovery Studio `2bb868f` lulus seluruh gate lokal dan tersedia
   di branch `codex/s105-studio-route-focus`, tetapi production tetap `57c0337b` /
-  `20260803221207-57c0337`. Bukti penutup adalah fresh
+  `20260805053500-57c0337`. Bukti penutup adalah fresh
   encrypted backup/checksum/disposable restore exact S105, approval
   deploy, immutable release, service/header/journal, dan public smoke.
 
 ### Gap SagaView ditutup
+
+- `CONFIRMED` pada 5 Agustus 2026: distorsi artwork landscape, arah putar yang
+  tidak bekerja, serta hilangnya feather/resize visual ditutup pada source
+  `9b4b68a1`, release `20260805053500-9b4b68a`. Rasio asli, putar kanan/kiri,
+  feather awal 4 px dan kontrol 0–12/±2 px, empat resize handle, drag-move,
+  serta drag-resize lulus exact-source regression dan production gate 6/6.
+  Authenticated owner visual UAT tetap dicatat terpisah sebagai residual.
 
 - `CONFIRMED` pada 3 Agustus 2026: hilangnya launcher akibat bootstrap 404
   ditutup pada source `2ab72618`, release `20260803163234-2ab7261`. Diagnostik

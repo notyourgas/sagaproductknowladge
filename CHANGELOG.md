@@ -12,6 +12,32 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-05
 
+### SagaView editor frame landscape dan geometri slot production
+
+- Ringkasan: preview frame kini menjaga rasio asli; landscape mendukung putar
+  kanan/kiri; feather semua slot, empat resize handle, drag-move, dan
+  drag-resize kembali tersedia.
+- Alasan: artwork landscape sebelumnya dapat terlihat penyet, arah putar tidak
+  berfungsi, dan operator tidak dapat memberi jarak atau menyesuaikan slot
+  langsung dari canvas.
+- Produk/area: SagaView frame editor, orientation mapping, slot detection,
+  feather, geometry interaction, accessibility label, E2E, deployment, dan
+  rollback. Tenant/device/session, foto local-first, payment, pricing,
+  entitlement, serta output 4R tidak berubah.
+- Klasifikasi: `CONFIRMED`; keputusan founder `DEC-033`, source
+  `9b4b68a126cbf5f98f67ddf562eedbc93df60a2f`, release backend
+  `20260805053500-9b4b68a`, release Studio `20260805053500-57c0337`.
+- Gate: build; 119 test SagaView/1.248 assertions; focused Playwright 1/1;
+  audit dependency nol; production 6/6; backup/migration/canary; callback
+  exactly-once tanpa intent/QRIS baru; service/header/journal/Nginx; rollback;
+  lima endpoint 200; dan deployed bundle feature check.
+- Production berubah: ya; delivery `PRODUCTION_DEPLOYED`, activation tetap
+  `PRODUCTION_ACTIVATED`, business readiness `NEEDS CONFIRMATION`.
+- Residual: authenticated owner visual UAT release terbaru belum diulang karena
+  vault lokal terkunci. Exact-source regression dan public smoke lulus.
+- File knowledge: product, dossier, changelog SagaView, master, decision, gaps,
+  portfolio/root changelog, dan sync status.
+
 ### SagaBook S119 production activation
 
 - Ringkasan: website booking tenant siap diaktifkan secara gated, lalu UI/UX

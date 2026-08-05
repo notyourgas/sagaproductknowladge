@@ -67,6 +67,14 @@ vertikal yang dapat dijangkau pada mobile 390x844, sambil mempertahankan
 workspace tiga/dua kolom pada desktop, output 4R, status lokal/offline,
 error/retry, stepper aktif, dan target sentuh 44/48 px.
 
+Editor frame production mempertahankan rasio artwork asli agar portrait atau
+landscape tidak dipenyet. Canvas landscape mendukung putar kanan/kiri 90
+derajat dan memetakan ulang geometri slot sesuai arah. Deteksi otomatis memakai
+feather awal 4 px; operator dapat mengatur semua slot 0–12 px, menambah atau
+mengurangi 2 px, memindahkan slot pada canvas, serta resize dari empat titik
+sudut. Field X/Y/W/H tetap tersedia untuk koreksi presisi. Perubahan tidak
+mengubah tenant, device/session, foto local-first, payment, atau output 4R.
+
 Mulai sesi production memakai checklist perangkat, paket, folder, frame, dan
 output serta satu CTA kontekstual 48 px. Utility cloud/recovery yang sehat
 diringkas; detail terbuka otomatis saat operator perlu bertindak. Alur tetap
@@ -199,11 +207,11 @@ jam, 10 GB aset frame cloud, laporan lanjutan, activity log, dan priority
 support. Session/foto dipasarkan unlimited dengan fair-use; foto tetap lokal.
 
 `CONFIRMED` — kontrak ini aktif di production. Source backend aktif adalah
-`b504dae30aee90a2b55e1e670d1934e2fc524218`, release
-`20260803221207-b504dae`. Source Studio aktif adalah
+`9b4b68a126cbf5f98f67ddf562eedbc93df60a2f`, release
+`20260805053500-9b4b68a`. Source Studio aktif adalah
 `57c0337b43b46229253ce89ace39f2ed587fc2d7`, release
-`20260803221207-57c0337`; rollback Studio adalah
-`20260803215526-be72510`. Session, Frames, dan Install App kini memakai render
+`20260805053500-57c0337`; rollback Studio adalah
+`20260803221207-57c0337`. Session, Frames, dan Install App kini memakai render
 awal SSR/client deterministik sehingga tidak memicu hydration mismatch. Output
 Settings hanya menampilkan action simpan saat
 dirty, tidak menutup konten mobile, mempertahankan action sticky desktop, dan
@@ -295,6 +303,11 @@ pada UI customer.
 ## Reliability, security, dan operations
 
 - Exact backend/Studio release immutable dan rollback tersedia.
+- Release editor frame `20260805053500-9b4b68a` lulus 119 test SagaView/1.248
+  assertions, focused Playwright, build, audit dependency, gate production
+  6/6, backup, canary, service/header/journal, serta public smoke. Authenticated
+  owner visual UAT terbaru masih `NEEDS CONFIRMATION` karena vault lokal
+  terkunci; exact-source regression dan verifikasi bundle production lulus.
 - Additive migration, encrypted backup, disposable restore, deploy gate, dan
   rollback compatibility lulus.
 - HSTS dan frame policy konsisten pada public, Laravel, dan Studio HTML routes.

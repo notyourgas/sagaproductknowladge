@@ -192,6 +192,23 @@ release-safety exact S114 dan approval.
 - tombol fullscreen tidak menutupi `Powered by SagaView`, dan stepper mobile
   memusatkan langkah aktif dengan menghormati reduced-motion.
 
+## Editor frame dan geometri slot
+
+`CONFIRMED` — production:
+
+- preview frame mempertahankan rasio artwork asli dengan `contain`, sehingga
+  aset portrait maupun landscape tidak dipenyet untuk mengikuti canvas;
+- saat canvas landscape dipilih, operator dapat memakai `Putar kanan` atau
+  `Putar kiri`; preview berputar 90 derajat dan geometri slot dipetakan ulang
+  sesuai arah putar;
+- deteksi otomatis memberi feather awal 4 px. Semua slot dapat diperbesar
+  bersama melalui slider 0–12 px atau aksi `Kurangi 2 px` / `Tambah 2 px`;
+- setiap slot dapat dipindahkan langsung pada canvas dan diubah ukurannya dari
+  empat titik sudut. Field X, Y, W, dan H tetap tersedia untuk koreksi angka;
+- perubahan ini hanya menyentuh editor frame dan geometri presentasi. Kontrak
+  tenant, device/session, foto local-first, payment, serta output 4R tidak
+  berubah.
+
 ## Display preset customer
 
 `CONFIRMED` — production:
@@ -354,7 +371,7 @@ release-safety exact S114 dan approval.
   reduced-motion tidak lagi mewarisi smooth scroll;
 - dependency backend dan Studio yang memiliki advisory sudah dipatch. Composer
   audit dan npm audit production sama-sama melaporkan nol vulnerability;
-- backend source `b504dae30aee90a2b55e1e670d1934e2fc524218`, Studio source
+- backend source `9b4b68a126cbf5f98f67ddf562eedbc93df60a2f`, Studio source
   `57c0337b43b46229253ce89ace39f2ed587fc2d7`.
 
 ## Navigasi Changelog operasional
@@ -374,7 +391,7 @@ release-safety exact S114 dan approval.
 - focused Changelog 3/3, gabungan accessibility/navigation 12/12, unit 156/156,
   E2E 99/99 termasuk import 50/200/500, build/budget, dan audit 0; screenshot
   evidence kini berukuran viewport exact 390x844 dan 1440x900;
-- production tetap source `57c0337b`, release `20260803221207-57c0337` sampai
+- production tetap source `57c0337b`, release `20260805053500-57c0337` sampai
   fresh backup/restore exact candidate dan approval deploy tersedia.
 
 ## Sidebar deep-route lintas layar
@@ -392,7 +409,7 @@ release-safety exact S114 dan approval.
 - red proof 1/1 gagal berubah menjadi focused 6/6 lulus; format, lint,
   typecheck, unit 156/156, full E2E 105/105 termasuk import 50/200/500,
   build/budget, dan npm audit nol lulus;
-- production tetap source `57c0337b`, release `20260803221207-57c0337` sampai
+- production tetap source `57c0337b`, release `20260805053500-57c0337` sampai
   fresh backup/restore exact S110 dan approval deploy tersedia.
 
 ## Status saat ini
@@ -405,16 +422,15 @@ release-safety exact S114 dan approval.
 ### Runtime production
 
 - Backend source:
-  `b504dae30aee90a2b55e1e670d1934e2fc524218`.
-- Backend release aktif: `20260803221207-b504dae`.
+  `9b4b68a126cbf5f98f67ddf562eedbc93df60a2f`.
+- Backend release aktif: `20260805053500-9b4b68a`.
 - Studio source aktif:
   `57c0337b43b46229253ce89ace39f2ed587fc2d7`.
-- Studio release aktif: `20260803221207-57c0337`.
+- Studio release aktif: `20260805053500-57c0337`.
 - Studio release sebelumnya yang menjadi rollback:
-  `20260803215526-be72510`.
-- Saga Platform source:
-  `a6bb8afbfe2353597ea55329c50829a220bc5d3e`.
-- Saga Platform release: `20260802104018-a6bb8af`.
+  `20260803221207-57c0337`.
+- Saga Platform release teramati tetap
+  `20260804171621-0ab9d8e`; release editor frame tidak mengubah Platform.
 - Additive migration, encrypted backup, disposable restore, candidate gate,
   dan rollback compatibility lulus.
 - Public Home/Pricing/Help/Contact/Privacy/Terms/Legal, login, Studio route,
@@ -438,6 +454,16 @@ release-safety exact S114 dan approval.
 
 ### Release validation
 
+- Release editor frame: build exact source, 119 test SagaView dengan 1.248
+  assertions, focused Playwright 1/1, npm audit production nol vulnerability,
+  Composer lock audit nol advisory, dan diff/public-safety check lulus.
+- Gate production 6/6, backup database, additive migration, single-device
+  canary, callback exactly-once tanpa intent/QRIS baru, service, error journal,
+  security header, Nginx, serta rollback target lulus.
+- Pascadeploy, source/release symlink exact, enam service aktif, lima endpoint
+  utama merespons 200, dan bundle production memuat kontrol feather serta
+  rotasi. Authenticated owner visual UAT belum diulang karena vault lokal
+  terkunci; ini tidak membatalkan smoke dan regression exact-source yang lulus.
 - Backend: 908/908 test dengan 10.637 assertions, focused release safety 3/3,
   build, syntax PowerShell/Bash, dan Composer audit nol advisory lulus.
 - Studio: 156 unit test, 95/95 E2E, format/lint/typecheck/build, bundle budget,
@@ -458,8 +484,8 @@ release-safety exact S114 dan approval.
 
 ### Rollback
 
-- Backend: `20260803215436-b504dae`.
-- Studio: `20260803215526-be72510`.
+- Backend: `20260803221207-b504dae`.
+- Studio: `20260803221207-57c0337`.
 - Backup release dan konfigurasi Nginx sebelumnya dipertahankan.
 
 ## Belum boleh diklaim

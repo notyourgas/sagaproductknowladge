@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-05 - SagaView editor frame geometry production
+
+- Preview frame kini mempertahankan rasio artwork pada portrait/landscape;
+  putar kanan/kiri 90 derajat memetakan ulang slot tanpa penyet.
+- Deteksi memakai feather awal 4 px; operator dapat mengatur semua slot 0–12
+  px atau ±2 px, drag-move, dan resize dari empat titik sudut.
+- Backend source `9b4b68a126cbf5f98f67ddf562eedbc93df60a2f` aktif sebagai
+  release `20260805053500-9b4b68a`; Studio source `57c0337b` dipaketkan sebagai
+  `20260805053500-57c0337`. Rollback lama dipertahankan.
+- Build, 119 test/1.248 assertions, focused Playwright, audit dependency, gate
+  6/6, backup/canary, service/header/journal, dan public smoke lulus. Delivery
+  `PRODUCTION_DEPLOYED`; activation tetap `PRODUCTION_ACTIVATED`; authenticated
+  owner visual UAT dan business readiness mass-scale masih menunggu konfirmasi.
+
 ## 2026-08-05 - SagaBook S119 production dan tenant booking aktif
 
 - Source `20ff6829f96cebec22d34844291b3d522b91774a` aktif sebagai release
