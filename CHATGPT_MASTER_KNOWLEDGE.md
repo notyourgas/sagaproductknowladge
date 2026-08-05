@@ -407,11 +407,11 @@ Trial contract: 14 hari dua fase server-side; hari 1–7 full access, hari 8–1
 plan-limited, tanpa auto-charge.
 
 Update terbaru: backend memakai source
-`0b655da4aeea270ce9048d853e7df09d42a36dd9`, release
-`20260805193458-0b655da`, sedangkan Studio aktif memakai source
+`9ee5bcca14ace7771a169bf8823df1e9ba7241c9`, release
+`20260805203055-9ee5bcc`, sedangkan Studio aktif memakai source
 `2121ebb80fa4238e91eef4003f852d34841e923f`, release
-`20260805193458-2121ebb`, dengan rollback Studio
-`20260805191930-1accf32` dan backend `20260805133709-5906028`. Workspace
+`20260805203055-2121ebb`, dengan rollback Studio
+`20260805193458-2121ebb` dan backend `20260805193458-0b655da`. Workspace
 Session kini memakai lebar adaptif sampai 1600 piksel pada monitor besar tanpa
 merusak reflow mobile/laptop atau menambah horizontal overflow. Workspace
 Output memakai batas 1400 piksel: satu alur vertikal pada mobile/laptop dan dua
@@ -462,16 +462,18 @@ dari empat sudut sambil mempertahankan input X/Y/W/H.
 Backend production `0b655da4` mengubah urutan frame baru menjadi 0 slot, pilih
 PNG/WebP, jalankan `Deteksi otomatis`, lalu review/koreksi slot. Penambahan slot
 manual baru aktif setelah deteksi pernah dicoba dan draft tanpa slot diblokir;
-frame existing tetap memuat slot tersimpan. Source aktif sebagai release
-`20260805193458-0b655da` dengan rollback `20260805133709-5906028`.
+frame existing tetap memuat slot tersimpan. Perilaku diwarisi source aktif
+`9ee5bcca14ace7771a169bf8823df1e9ba7241c9` pada release
+`20260805203055-9ee5bcc` dengan rollback `20260805193458-0b655da`.
 Keputusan founder `DEC-038` memisahkan hasil authoring: `Simpan Draft` menyimpan
 pekerjaan privat, sedangkan `Publish Frame` menjadi CTA utama yang menyimpan
 draft lalu mempublish frame agar siap dipakai Studio. Implementasi Owner/API
 `9ee5bcca14ace7771a169bf8823df1e9ba7241c9` juga menormalisasi `SPC 18`
 menjadi `spc-18`, mempertahankan draft
-jika tahap publish gagal, dan menampilkan error API spesifik. Kandidat ini masih
-`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; jangan menganggapnya sebagai
-perilaku production sampai guarded release selesai.
+jika tahap publish gagal, dan menampilkan error API spesifik. Perilaku ini aktif
+di production melalui backend release `20260805203055-9ee5bcc` dan Studio
+`20260805203055-2121ebb`; authenticated Owner UAT dengan frame nyata tetap
+residual sebelum klaim business-ready mass-scale.
 Implementasi rotate lama yang menukar W/H 90 derajat telah `DEPRECATED` oleh
 koreksi founder `DEC-036`. Perilaku production yang aktif adalah
 diterima adalah tahan ikon rotate lalu drag ke kiri/kanan agar slot mendapat

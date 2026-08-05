@@ -2,8 +2,8 @@
 
 Updated: 5 Agustus 2026
 Evidence status: production deployed + production activated; frame import-order,
-compact all-menu, workspace Session/Output monitor besar, dan free drag rotation
-production; pemisahan Simpan Draft/Publish Frame berstatus local validated
+compact all-menu, workspace Session/Output monitor besar, free drag rotation,
+serta pemisahan Simpan Draft/Publish Frame production
 
 ## Tujuan dokumen
 
@@ -19,17 +19,17 @@ yang diverifikasi sampai 5 Agustus 2026.
 ## Status production terbaru
 
 - Studio source `2121ebb80fa4238e91eef4003f852d34841e923f` aktif sebagai
-  release `20260805193458-2121ebb`; rollback
-  `20260805191930-1accf32` dipertahankan.
+  release `20260805203055-2121ebb`; rollback
+  `20260805193458-2121ebb` dipertahankan.
 - Workspace Session memakai lebar adaptif sampai 1600 piksel pada monitor
   besar. Layar mobile, laptop compact, dan MacBook tetap memakai reflow lama;
   tidak ada horizontal overflow atau fitur yang disembunyikan.
 - Workspace Output memakai alur satu kolom pada mobile/laptop dan dua panel
   seimbang pada monitor besar, dengan batas konten 1400 piksel. Target 44
   piksel, no-overflow, dan satu watermark tetap dipertahankan.
-- Backend source `0b655da4aeea270ce9048d853e7df09d42a36dd9` aktif sebagai
-  release `20260805193458-0b655da`; rollback
-  `20260805133709-5906028` dipertahankan.
+- Backend source `9ee5bcca14ace7771a169bf8823df1e9ba7241c9` aktif sebagai
+  release `20260805203055-9ee5bcc`; rollback
+  `20260805193458-0b655da` dipertahankan.
 - Delivery dan activation `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
   business readiness tetap `NEEDS CONFIRMATION`.
 
@@ -151,8 +151,9 @@ dengan 0 slot. Operator wajib memilih PNG/WebP terlebih dahulu, lalu menjalankan
 `Deteksi otomatis`; hasil deteksi baru menjadi slot yang dapat diperiksa dan
 disesuaikan. `Tambah slot` manual baru aktif setelah deteksi pernah dicoba, dan
 draft tanpa slot tidak dapat disimpan. Frame existing tetap memuat slot
-tersimpannya. Source aktif pada release backend
-`20260805193458-0b655da`; delivery `PRODUCTION_DEPLOYED`, activation tetap
+tersimpannya. Perilaku diwarisi source aktif
+`9ee5bcca14ace7771a169bf8823df1e9ba7241c9` pada release backend
+`20260805203055-9ee5bcc`; delivery `PRODUCTION_DEPLOYED`, activation tetap
 `PRODUCTION_ACTIVATED`, dan business readiness mass-scale tetap menunggu UAT
 owner terautentikasi serta Founding Studio Pilot.
 
@@ -171,15 +172,18 @@ resmi sebelum guarded preflight dan deployment; tidak ada intent atau QRIS baru.
 ## Simpan draft dan publish frame
 
 `CONFIRMED` sebagai keputusan founder melalui `DEC-038`; implementasi source
-Owner/API `9ee5bcca14ace7771a169bf8823df1e9ba7241c9` berstatus
-`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+Owner/API `9ee5bcca14ace7771a169bf8823df1e9ba7241c9` aktif sebagai release
+`20260805203055-9ee5bcc`; Studio source tetap
+`2121ebb80fa4238e91eef4003f852d34841e923f` dan dipaketkan sebagai release
+`20260805203055-2121ebb`.
 Workspace Tambah Frame menyediakan dua hasil yang berbeda: `Simpan Draft`
 menyimpan pekerjaan privat tanpa mengaktifkan frame, sedangkan `Publish Frame`
 menjadi aksi utama yang menyimpan draft lalu mempublish versi tersebut agar siap
 dipakai Studio. Bila tahap publish gagal, draft yang sudah tersimpan tetap aman
 dan UI menampilkan alasan API yang spesifik. Kode seperti `SPC 18` dinormalisasi
-menjadi `spc-18`; production tetap memakai source/release aktif yang tercatat di
-bagian Runtime sampai kandidat melewati deployment gate.
+menjadi `spc-18`. Delivery dan activation berstatus
+`PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated Owner UAT dengan
+frame nyata tetap residual sebelum klaim business-ready mass-scale.
 
 ## Session completion dan privacy handoff
 
@@ -484,15 +488,15 @@ untuk release frontend ini.
 ### Runtime production
 
 - Backend source:
-  `0b655da4aeea270ce9048d853e7df09d42a36dd9`.
-- Backend release aktif: `20260805193458-0b655da`.
+  `9ee5bcca14ace7771a169bf8823df1e9ba7241c9`.
+- Backend release aktif: `20260805203055-9ee5bcc`.
 - Studio source aktif:
   `2121ebb80fa4238e91eef4003f852d34841e923f`.
-- Studio release aktif: `20260805193458-2121ebb`.
+- Studio release aktif: `20260805203055-2121ebb`.
 - Studio release sebelumnya yang menjadi rollback:
-  `20260805191930-1accf32`.
+  `20260805193458-2121ebb`.
 - Backend release sebelumnya yang menjadi rollback:
-  `20260805133709-5906028`.
+  `20260805193458-0b655da`.
 - Saga Platform release teramati tetap
   `20260804171621-0ab9d8e`; release editor frame tidak mengubah Platform.
 - Additive migration, encrypted backup, disposable restore, candidate gate,
@@ -518,6 +522,12 @@ untuk release frontend ini.
 
 ### Release validation
 
+- Release draft/publish: 75 test fitur SagaView/613 assertion, focused safety
+  15/15, Playwright, build, audit dependency nol, preflight/gate 6/6, backup,
+  canary, payment unchanged, service/header/journal, route, HTTP smoke, rollback,
+  dan tiga marker bundle live lulus. Enam failure combined suite direproduksi
+  identik pada baseline aktif dan terbatas pada test SagaBook manual-transfer
+  yang tidak berubah.
 - Release editor frame: build exact source, 120 test SagaView dengan 1.250
   assertions, focused Playwright, npm audit production nol vulnerability,
   Composer lock audit nol advisory, dan diff/public-safety check lulus.

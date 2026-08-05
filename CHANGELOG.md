@@ -12,6 +12,24 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-05
 
+### SagaView Simpan Draft dan Publish Frame production
+
+- Ringkasan: keputusan `DEC-038` aktif; `Publish Frame` menjadi CTA utama,
+  sedangkan `Simpan Draft` tetap menyimpan versi privat.
+- Source/release: backend
+  `9ee5bcca14ace7771a169bf8823df1e9ba7241c9` /
+  `20260805203055-9ee5bcc`; Studio
+  `2121ebb80fa4238e91eef4003f852d34841e923f` /
+  `20260805203055-2121ebb`.
+- Gate: 75 test/613 assertion, focused safety/browser, build/audit nol, backup,
+  deploy gate 6/6, canary, payment unchanged, service/header/journal, route,
+  HTTP smoke, rollback, dan bundle marker live lulus.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+  business readiness tetap menunggu authenticated Owner UAT dan Founding Studio
+  Pilot. Release tidak membuat intent atau QRIS.
+- File knowledge: product, dossier, changelog SagaView, master, decisions, gaps,
+  portfolio/root changelog, dan sync status.
+
 ### SagaView Simpan Draft dan Publish Frame candidate
 
 - Ringkasan: workspace authoring memisahkan penyimpanan privat dan publikasi;

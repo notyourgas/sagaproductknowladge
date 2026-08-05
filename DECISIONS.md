@@ -550,5 +550,5 @@ keputusan pengganti.
 | Alternatif yang dipertimbangkan | Tetap satu tombol Simpan Draft lalu publish dari Galeri Frame; auto-publish tanpa opsi draft; satu tombol dengan menu dropdown. |
 | Dampak | Hierarki aksi editor berubah, tetapi kontrak draft privat tetap dipertahankan. Publish memakai endpoint existing secara berurutan, tidak mengubah tenant isolation, quota, payment, device/session, foto local-first, atau output 4R. |
 | Pemberi keputusan | Andreas / founder |
-| Status | `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; source Owner/API `9ee5bcca14ace7771a169bf8823df1e9ba7241c9`, branch `codex/sagaview-frame-publish-flow-s115` |
+| Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; source Owner/API `9ee5bcca14ace7771a169bf8823df1e9ba7241c9`, branch `codex/s70-single-device-production-lineage`, release `20260805203055-9ee5bcc`; Studio source `2121ebb80fa4238e91eef4003f852d34841e923f`, release `20260805203055-2121ebb` |
 | Dokumen terkait | [SagaView Product](products/sagaview/PRODUCT.md), [SagaView Dossier](products/sagaview/DOSSIER.md), [SagaView Changelog](products/sagaview/CHANGELOG.md), [Gaps](GAPS.md) |

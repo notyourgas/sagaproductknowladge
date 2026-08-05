@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-05 - SagaView draft/publish frame production
+
+- Backend `20260805203055-9ee5bcc` dan Studio
+  `20260805203055-2121ebb` aktif; rollback exact
+  `20260805193458-0b655da` / `20260805193458-2121ebb` tersedia.
+- Owner Console memisahkan `Simpan Draft` privat dan `Publish Frame` sebagai CTA
+  utama. Publish menyimpan draft lebih dulu, mempertahankannya saat tahap publish
+  gagal, menampilkan error API spesifik, dan menormalisasi kode ber-spasi.
+- Exact-source test, browser acceptance, build/audit, backup, gate 6/6, canary,
+  payment boundary, service/header/journal, route, HTTP smoke, dan marker bundle
+  live lulus tanpa intent atau QRIS baru.
+- Delivery dan activation production; authenticated Owner UAT dengan frame nyata
+  serta Founding Studio Pilot tetap residual business-readiness.
+
 ## 2026-08-05 - SagaView draft/publish frame candidate
 
 - Owner Console memisahkan `Simpan Draft` sebagai penyimpanan privat dan

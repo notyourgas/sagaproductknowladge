@@ -4,6 +4,26 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-08-05 - Simpan Draft dan Publish Frame production
+
+- Klasifikasi: `CONFIRMED` melalui keputusan founder `DEC-038`.
+- Status: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; business readiness tetap
+  `NEEDS CONFIRMATION`.
+- Backend source `9ee5bcca14ace7771a169bf8823df1e9ba7241c9` aktif sebagai
+  release `20260805203055-9ee5bcc`; rollback `20260805193458-0b655da`.
+- Studio source `2121ebb80fa4238e91eef4003f852d34841e923f` dipaketkan sebagai
+  release `20260805203055-2121ebb`; rollback `20260805193458-2121ebb`.
+- `Publish Frame` menjadi CTA utama yang menyimpan draft lalu publish;
+  `Simpan Draft` tetap privat. Draft tidak hilang saat publish gagal, error API
+  ditampilkan spesifik, dan `SPC 18` dinormalisasi menjadi `spc-18`.
+- Validation: 75 test fitur SagaView/613 assertion, focused safety 15/15,
+  Playwright, build, audit dependency nol, preflight/gate 6/6, backup, canary,
+  payment unchanged, service/header/journal, route, HTTP smoke, dan tiga marker
+  bundle live lulus. Enam failure combined suite identik pada baseline dan
+  terbatas pada test SagaBook manual-transfer yang tidak berubah.
+- Release tidak membuat intent atau QRIS. Residual: authenticated Owner UAT
+  dengan frame nyata dan Founding Studio Pilot.
+
 ## 2026-08-05 - Simpan Draft dan Publish Frame candidate
 
 - Klasifikasi: `CONFIRMED` melalui keputusan founder `DEC-038`.

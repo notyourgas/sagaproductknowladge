@@ -15,7 +15,7 @@ SagaView berdasarkan runtime production aktif.
 - UI Session monitor besar: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
 - UI Output monitor besar: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
 - Free drag rotation slot: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
-- Simpan Draft/Publish Frame: `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`
+- Simpan Draft/Publish Frame: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
 
 ## Overview produk
 
@@ -124,8 +124,9 @@ menyediakan angka/reset dan keyboard. Build, 120 test SagaView/1.250 assertions,
 focused Playwright, 44 file test Studio/156 test, lint, typecheck, build/budget,
 visual QA, dan audit dependency lulus. Commerce canary dipulihkan melalui state
 machine resmi; backup, preflight/deploy gate 6/6, canary, service/header/journal,
-HTTP smoke, dan marker bundle production lulus. Release aktif adalah backend
-`20260805193458-0b655da` dan Studio `20260805193458-2121ebb`.
+HTTP smoke, dan marker bundle production lulus. Perilaku free drag diwarisi
+release aktif backend `20260805203055-9ee5bcc` dan Studio
+`20260805203055-2121ebb`.
 
 Mulai sesi production memakai checklist perangkat, paket, folder, frame, dan
 output serta satu CTA kontekstual 48 px. Utility cloud/recovery yang sehat
@@ -216,16 +217,18 @@ device/session, foto, payment, tenant, local-first, dan output 4R tidak berubah.
 Subscription tenant tidak diaktifkan; keputusan founder hanya melewati UAT
 subscription untuk promosi frontend ini dan business readiness tetap terbuka.
 
-Kandidat Owner/API `9ee5bcca14ace7771a169bf8823df1e9ba7241c9` menerapkan
+Owner/API production `9ee5bcca14ace7771a169bf8823df1e9ba7241c9` menerapkan
 keputusan founder `DEC-038`:
 `Simpan Draft` tetap menyimpan frame privat, sedangkan `Publish Frame` menjadi
 aksi utama yang menjalankan save draft lalu publish secara berurutan. Kegagalan
 publish tidak membuang draft yang sudah berhasil disimpan. Kode ber-spasi seperti
 `SPC 18` dinormalisasi menjadi `spc-18`, dan error validasi/quota dari API
 ditampilkan secara spesifik. Build, focused Playwright, 75 test fitur SagaView
-dengan 613 assertion, audit Composer/npm nol vulnerability, route check, dan
-diff check lulus. Status tetap `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
-runtime production belum berubah.
+dengan 613 assertion, focused safety 15/15, audit Composer/npm nol vulnerability,
+route check, dan diff check lulus. Guarded gate 6/6, backup, canary, payment
+boundary, services, header/journal, route, HTTP smoke, dan bundle marker lulus.
+Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` pada backend release
+`20260805203055-9ee5bcc` dan Studio `20260805203055-2121ebb`.
 
 ## Fitur MVP
 
@@ -271,11 +274,11 @@ jam, 10 GB aset frame cloud, laporan lanjutan, activity log, dan priority
 support. Session/foto dipasarkan unlimited dengan fair-use; foto tetap lokal.
 
 `CONFIRMED` — kontrak ini aktif di production. Source backend aktif adalah
-`0b655da4aeea270ce9048d853e7df09d42a36dd9`, release
-`20260805193458-0b655da`. Source Studio aktif adalah
+`9ee5bcca14ace7771a169bf8823df1e9ba7241c9`, release
+`20260805203055-9ee5bcc`. Source Studio aktif adalah
 `2121ebb80fa4238e91eef4003f852d34841e923f`, release
-`20260805193458-2121ebb`; rollback Studio adalah
-`20260805191930-1accf32`. Session, Frames, dan Install App kini memakai render
+`20260805203055-2121ebb`; rollback Studio adalah
+`20260805193458-2121ebb`. Session, Frames, dan Install App kini memakai render
 awal SSR/client deterministik sehingga tidak memicu hydration mismatch. Output
 Settings hanya menampilkan action simpan saat
 dirty, tidak menutup konten mobile, mempertahankan action sticky desktop, dan
@@ -366,8 +369,8 @@ pada UI customer.
 
 ## Reliability, security, dan operations
 
-- Exact backend/Studio release immutable `20260805193458-0b655da` dan
-  `20260805193458-2121ebb`; rollback tersedia.
+- Exact backend/Studio release immutable `20260805203055-9ee5bcc` dan
+  `20260805203055-2121ebb`; rollback tersedia.
 - Release editor frame `20260805053500-9b4b68a` lulus 119 test SagaView/1.248
   assertions, focused Playwright, build, audit dependency, gate production
   6/6, backup, canary, service/header/journal, serta public smoke. Authenticated
