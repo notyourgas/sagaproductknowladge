@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-05 - AOGTICVITY two team-ball competitions production
+
+- Makan Kerupuk dan Balap Karung Helm diganti menjadi Ambil Bola Pakai Sarung
+  dan Paralon Bola tanpa mengganti ID lomba; keduanya memakai seluruh tim.
+- Scoring jumlah bola delapan tim, ranking otomatis, tie-break fail-closed,
+  roster otomatis, detail safety/equipment, serta legacy-link compatibility
+  aktif melalui migration 022.
+- Source `5bc951e0b8747e113b69b18162a200c592b39d3c`, Hostinger
+  `20260805T145857Z`, dan Vercel `dpl_DacHrH6BN3u3bbD4ckFje7rU3fST`.
+- Delivery `PRODUCTION_DEPLOYED`; two-device scoring UAT dan rehearsal
+  keselamatan fisik masih wajib sebelum business readiness.
+
 ## 2026-08-05 - SagaView draft/publish frame production
 
 - Backend `20260805203055-9ee5bcc` dan Studio

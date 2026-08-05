@@ -12,6 +12,22 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-05
 
+### AOGTICVITY dua lomba tim bola production
+
+- Ringkasan: keputusan founder `DEC-040` mengganti `cmp-2` dan `cmp-8`
+  menjadi Ambil Bola Pakai Sarung dan Paralon Bola sebagai lomba seluruh tim.
+- Produk/area: event master, agenda/detail, player/leader roster, operator/admin
+  scoring, standing, migration/archive, safety, asset, dan legacy URL.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED`; source runtime
+  `5bc951e0b8747e113b69b18162a200c592b39d3c`, Hostinger
+  `20260805T145857Z`, Vercel `dpl_DacHrH6BN3u3bbD4ckFje7rU3fST`, migration
+  `022_team_ball_competitions`.
+- Gate: 119 unit/API, 24 disposable MySQL integration, 22 migration,
+  Playwright 62/62, build, asset/audit, backup/restore, rollback drill, dan
+  public browser smoke lulus.
+- Business readiness tetap `BLOCKED` sampai UAT scoring dua perangkat dan
+  rehearsal keselamatan fisik disetujui.
+
 ### SagaView Simpan Draft dan Publish Frame production
 
 - Ringkasan: keputusan `DEC-038` aktif; `Publish Frame` menjadi CTA utama,

@@ -420,6 +420,10 @@ ketika keputusan atau release baru menutup gap.
 - `CONFIRMED`: nama final Tim 7 adalah Team Kindness (Kebaikan) dan Tim 8
   adalah Team Patience (Kesabaran). `NEEDS CONFIRMATION`: durasi lomba serta
   keputusan master recap lain yang masih provisional/open.
+- `CONFIRMED`: `cmp-2` dan `cmp-8` telah menjadi Ambil Bola Pakai Sarung dan
+  Paralon Bola, seluruh tim, scoring jumlah bola, dan migration 022 aktif.
+  `NEEDS CONFIRMATION`: authenticated two-device UAT untuk draft/publish/
+  correct, tie-break, standing sync, serta rehearsal keselamatan fisik.
 
 ### Saga Platform
 

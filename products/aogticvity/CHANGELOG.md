@@ -8,6 +8,26 @@ Mencatat perubahan material AOGTICVITY/17an/Olimpiade.
 
 Nama lama dipertahankan sebagai provenance; status runtime harus eksplisit.
 
+## 2026-08-05 - Dua lomba tim bola production
+
+- `CONFIRMED`: `cmp-2` berubah dari Makan Kerupuk menjadi **Ambil Bola Pakai
+  Sarung**, sedangkan `cmp-8` berubah dari Balap Karung Helm menjadi **Paralon
+  Bola**. ID dipertahankan dan tautan lama diarahkan ke lomba pengganti.
+- Keduanya memakai seluruh tim dengan roster otomatis, slot pertandingan 10
+  menit, pergantian 5 menit, serta ranking berdasarkan jumlah bola. Admin
+  memasukkan skor delapan tim; seri yang memengaruhi podium wajib diselesaikan
+  dan dikonfirmasi sebelum publish.
+- Migration `022_team_ball_competitions` menambah payload skor, ringkasan
+  metric, bukti tie-break, serta archive/rollback roster dan hasil lama.
+- Source runtime `5bc951e0b8747e113b69b18162a200c592b39d3c`;
+  Hostinger `20260805T145857Z`; Vercel
+  `dpl_DacHrH6BN3u3bbD4ckFje7rU3fST`.
+- Gate: 119 unit/API, 24/24 disposable MySQL integration, 22 migration,
+  Playwright 62/62, asset validation, build, audit dependency, backup/restore,
+  rollback drill, public role/route smoke, dan browser mobile 320 px lulus.
+- Delivery `PRODUCTION_DEPLOYED`; business readiness tetap `BLOCKED` sampai
+  UAT scoring dua perangkat dan rehearsal keselamatan fisik disetujui.
+
 ## 2026-08-05 - Player access policy dan VIP team flow production
 
 - `CONFIRMED`: admin dapat membuka/menutup link peserta dan memilih TTL

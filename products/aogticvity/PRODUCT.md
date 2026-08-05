@@ -231,6 +231,14 @@ Public delivery saat ini: `https://olimpiade-kemerdekaan.vercel.app`.
   tampil sebagai VIP, disetujui tanpa tim, lalu ikut generator tim seimbang.
   Mutation policy admin-only memakai same-origin, idempotency, optimistic
   version, transaksi, dan audit. Aktivasi operasional menunggu UAT manusia.
+- Source runtime `5bc951e0b8747e113b69b18162a200c592b39d3c`, Hostinger
+  release `20260805T145857Z`, Vercel production
+  `dpl_DacHrH6BN3u3bbD4ckFje7rU3fST`, dan migration 022 mengganti `cmp-2`
+  menjadi **Ambil Bola Pakai Sarung** serta `cmp-8` menjadi **Paralon Bola**.
+  Keduanya adalah lomba seluruh tim dengan roster otomatis, 10 menit bermain,
+  5 menit pergantian, dan ranking jumlah bola. Admin mengisi skor delapan tim;
+  publish seri podium ditahan sampai tie-break dikonfirmasi. Legacy URL tetap
+  menuju lomba pengganti dan total rundown provisional tetap 275 menit.
 - SQLite hanya fast test adapter.
 - Event-master memiliki dry-run, validation, atomic publish, versioning, dan
   audit. Durasi jadwal bersifat provisional dan dapat disunting admin.
@@ -272,6 +280,9 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:
   kembali aktif.
 - Master recap 2026 berisi 8 tim, 10 lomba, jadwal provisional, mekanisme,
   safety, equipment, dan assignment panitia.
+- Dua lomba tim bola pengganti sudah production-deployed dengan scoring jumlah
+  bola dan tie-break fail-closed; rehearsal keselamatan serta authenticated
+  two-device scoring UAT belum sign-off.
 - Database-backed auth aktif melalui Vercel: real credential login dan forced
   password change terverifikasi; akun admin sudah diklaim, privileged routes
   memakai server session, dan dev session tetap 404.

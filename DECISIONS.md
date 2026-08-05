@@ -552,3 +552,17 @@ keputusan pengganti.
 | Pemberi keputusan | Andreas / founder |
 | Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; source Owner/API `9ee5bcca14ace7771a169bf8823df1e9ba7241c9`, branch `codex/s70-single-device-production-lineage`, release `20260805203055-9ee5bcc`; Studio source `2121ebb80fa4238e91eef4003f852d34841e923f`, release `20260805203055-2121ebb` |
 | Dokumen terkait | [SagaView Product](products/sagaview/PRODUCT.md), [SagaView Dossier](products/sagaview/DOSSIER.md), [SagaView Changelog](products/sagaview/CHANGELOG.md), [Gaps](GAPS.md) |
+
+## DEC-040 - AOGTICVITY mengganti dua lomba menjadi lomba tim bola
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-05 |
+| Topik | Pengganti Makan Kerupuk dan Balap Karung Helm |
+| Keputusan | `cmp-2` menjadi Ambil Bola Pakai Sarung dan `cmp-8` menjadi Paralon Bola. Keduanya diikuti seluruh tim tanpa input nama perwakilan. Durasi awal 10 menit bermain ditambah 5 menit pergantian; pemenang ditentukan dari jumlah bola, dengan tie-break wajib untuk seri yang memengaruhi podium. |
+| Alasan | Founder mengganti dua lomba individual menjadi permainan kerja sama tim: mengambil bola oleh satu anggota yang diangkat bersama memakai sarung, serta estafet bola melalui paralon dari anggota depan ke belakang. |
+| Alternatif yang dipertimbangkan | Membuat ID lomba baru; mempertahankan lomba perwakilan; memakai ranking manual tanpa skor; mengizinkan publish saat seri belum diselesaikan. |
+| Dampak | ID dan legacy URL dipertahankan. Event master, agenda/detail, roster player/leader, scoring operator/admin, standing, asset, migration/archive, rollback, safety, dan acceptance test mengikuti kontrak baru. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / PRODUCTION_DEPLOYED`; source `5bc951e0b8747e113b69b18162a200c592b39d3c`, Hostinger `20260805T145857Z`, Vercel `dpl_DacHrH6BN3u3bbD4ckFje7rU3fST` |
+| Dokumen terkait | [AOGTICVITY Product](products/aogticvity/PRODUCT.md), [AOGTICVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTICVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |

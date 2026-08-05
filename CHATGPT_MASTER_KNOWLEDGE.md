@@ -776,6 +776,14 @@ Source `356e2126ea0b9dc10f9c9bb5d9e299c93b963fa1`, Hostinger
 Off menolak link baru dan unused link tanpa memutus sesi aktif. Policy
 admin-only memakai same-origin, idempotency, optimistic version, transaksi,
 dan audit. VIP dan access policy production-deployed tetapi menunggu human UAT.
+Source runtime `5bc951e0b8747e113b69b18162a200c592b39d3c`, Hostinger
+`20260805T145857Z`, Vercel `dpl_DacHrH6BN3u3bbD4ckFje7rU3fST`, dan migration
+022 mengganti Makan Kerupuk menjadi **Ambil Bola Pakai Sarung** serta Balap
+Karung Helm menjadi **Paralon Bola**. Keduanya memakai seluruh tim, roster
+otomatis, 10 menit bermain, 5 menit pergantian, dan ranking jumlah bola dari
+delapan tim. Seri podium wajib dikonfirmasi sebelum publish; URL lama tetap
+membuka lomba pengganti. Technical release gate lulus, tetapi two-device
+scoring UAT dan rehearsal keselamatan fisik belum sign-off.
 Real credential login dan database-backed session sudah terbukti;
 admin password claim dan registration UAT sudah selesai. Roster/check-in/result
 rehearsal, provider status webhook, valid-link WhatsApp two-device session UAT, dan

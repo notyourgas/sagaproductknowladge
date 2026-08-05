@@ -80,6 +80,14 @@ memakai empty state. Public/player refresh setiap 12 detik serta saat focus,
 visibility, dan reconnect. Acceptance suite kini mencakup 50 Playwright checks,
 termasuk podium mocked, pending state, geometry 320 px, dan public smoke 390 px.
 
+`cmp-2` kini **Ambil Bola Pakai Sarung** dan `cmp-8` kini **Paralon Bola**.
+Keduanya memakai seluruh tim tanpa selector nama, 10 menit pertandingan dan 5
+menit pergantian. Operator/admin mengisi jumlah bola delapan tim; ranking
+terbentuk otomatis dan publish tertahan bila seri memengaruhi podium sampai
+tie-break dikonfirmasi. Migration 022 mengarsipkan roster/hasil lama sebelum
+rekonsiliasi dan menyediakan rollback. Legacy URL tetap membuka detail lomba
+pengganti; total rundown provisional tetap 275 menit.
+
 Peserta dari luar komunitas memakai jalur VIP di `/register/guest`. Data minimum
 adalah nama, nomor WhatsApp, status sudah/belum memiliki CG, dan consent; role
 maupun tim tidak dipilih public. Admin menyetujui VIP tanpa tim; identity player,
@@ -147,8 +155,12 @@ dan rehearsal fisik masih menahan activation keseluruhan.
 2. Lakukan two-device authorization dan stale-state reconciliation UAT.
 3. Monitor domain `aogticvities.fun` dan pilih recovery/notification provider.
 4. Finalisasi durasi dan keputusan lain yang masih open pada master recap.
-5. Multi-device/event rehearsal dan public smoke.
-6. `NEEDS CONFIRMATION`: repeatable product/service model.
+5. Uji scoring dua lomba bola dari dua perangkat, termasuk seri, publish,
+   standing, correction, serta recovery setelah reconnect.
+6. Rehearsal keselamatan pengangkatan dengan sarung, spotter, titik henti,
+   paralon, bola, dan lintasan sebelum dipakai pada hari-H.
+7. Multi-device/event rehearsal dan public smoke.
+8. `NEEDS CONFIRMATION`: repeatable product/service model.
 
 ## User journey
 

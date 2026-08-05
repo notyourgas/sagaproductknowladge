@@ -12,20 +12,20 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-05T20:38:43+07:00 |
+| Waktu pembaruan terakhir | 2026-08-05T22:05:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `b44b01a` |
-| Informasi terakhir disinkronkan | Keputusan founder `DEC-038` aktif di production melalui backend source `9ee5bcca14ace7771a169bf8823df1e9ba7241c9`, release `20260805203055-9ee5bcc`, dan Studio release `20260805203055-2121ebb`. |
+| Baseline sebelum pembaruan | `bb645e0` |
+| Informasi terakhir disinkronkan | Keputusan founder `DEC-039`: dua lomba AOGTICVITY berubah menjadi lomba seluruh tim, aktif melalui source `5bc951e0b8747e113b69b18162a200c592b39d3c`, Hostinger `20260805T145857Z`, Vercel `dpl_DacHrH6BN3u3bbD4ckFje7rU3fST`, dan migration 022. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik baru. `Publish Frame` menjadi aksi utama tanpa menghapus kontrak `Simpan Draft` privat. |
-| Error | Tidak ada error release terbuka. Authenticated Owner UAT dengan frame nyata dan Founding Studio Pilot tetap residual business-readiness. |
+| Konflik | Tidak ada konflik baru. ID lomba dan legacy URL dipertahankan untuk kompatibilitas. |
+| Error | Tidak ada error release terbuka. UAT scoring dua perangkat dan rehearsal keselamatan fisik AOGTICVITY tetap residual business-readiness. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/sagaview/PRODUCT.md`
-- `products/sagaview/DOSSIER.md`
-- `products/sagaview/CHANGELOG.md`
+- `products/aogticvity/PRODUCT.md`
+- `products/aogticvity/DOSSIER.md`
+- `products/aogticvity/CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `DECISIONS.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
