@@ -522,7 +522,7 @@ keputusan pengganti.
 | Alternatif yang dipertimbangkan | Pertukaran W/H 90 derajat; rotate seluruh artwork; input angka tanpa drag handle; rotasi hanya di preview tanpa persistensi/export. |
 | Dampak | Kontrak metadata menambah angle opsional per slot dengan default 0 derajat untuk frame lama. Backend membatasi -180 sampai 180 derajat dan menolak rotated bounds di luar canvas. Drag, feather, empat resize handle, X/Y/W/H, customer transform, dan output 4R tetap tersedia. |
 | Pemberi keputusan | Andreas / founder |
-| Status | `CONFIRMED`; Owner/API source `19ac8ab8653de0bf2edc18d164308ea8bbde3640` dan Studio source `e48be94ab418605f81f8d1484043becfc9fa8a4a` berstatus `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; promotion diblokir preflight commerce canary yang telah diarsipkan Owner |
+| Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; Owner/API source `0b655da4aeea270ce9048d853e7df09d42a36dd9`, release `20260805193458-0b655da`; Studio source `2121ebb80fa4238e91eef4003f852d34841e923f`, release `20260805193458-2121ebb`; commerce canary dipulihkan melalui lifecycle resmi sebelum gate 6/6 dan deployment |
 | Dokumen terkait | [SagaView Product](products/sagaview/PRODUCT.md), [SagaView Dossier](products/sagaview/DOSSIER.md), [SagaView Changelog](products/sagaview/CHANGELOG.md), [Gaps](GAPS.md) |
 
 ## DEC-037 - Release UI SagaView tidak menunggu aktivasi subscription tenant

@@ -2,8 +2,8 @@
 
 Updated: 5 Agustus 2026
 Evidence status: production deployed + production activated; frame import-order,
-compact all-menu, dan workspace Session monitor besar production; free drag
-rotation masih candidate
+compact all-menu, workspace Session monitor besar, dan free drag rotation
+production
 
 ## Tujuan dokumen
 
@@ -18,14 +18,15 @@ yang diverifikasi sampai 5 Agustus 2026.
 
 ## Status production terbaru
 
-- Studio source `4bbd1665222332da7aee28da8d4ce01253b9ef8c` aktif sebagai
-  release `20260805181945-4bbd166`; rollback
-  `20260805170231-2b0331d` dipertahankan.
+- Studio source `2121ebb80fa4238e91eef4003f852d34841e923f` aktif sebagai
+  release `20260805193458-2121ebb`; rollback
+  `20260805191930-1accf32` dipertahankan.
 - Workspace Session memakai lebar adaptif sampai 1600 piksel pada monitor
   besar. Layar mobile, laptop compact, dan MacBook tetap memakai reflow lama;
   tidak ada horizontal overflow atau fitur yang disembunyikan.
-- Backend tetap `20260805133709-5906028`. Subscription, entitlement, payment,
-  device/session, foto lokal, export 4R, dan data tenant tidak berubah.
+- Backend source `0b655da4aeea270ce9048d853e7df09d42a36dd9` aktif sebagai
+  release `20260805193458-0b655da`; rollback
+  `20260805133709-5906028` dipertahankan.
 - Delivery dan activation `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
   business readiness tetap `NEEDS CONFIRMATION`.
 
@@ -142,31 +143,27 @@ Kontrak ini sekarang enforced server-side pada runtime production yang aktif.
 ## Urutan import frame
 
 `CONFIRMED` - production: source backend
-`5906028703759d49ef930a7363c5efc293f6be97` memulai frame baru
+`0b655da4aeea270ce9048d853e7df09d42a36dd9` memulai frame baru
 dengan 0 slot. Operator wajib memilih PNG/WebP terlebih dahulu, lalu menjalankan
 `Deteksi otomatis`; hasil deteksi baru menjadi slot yang dapat diperiksa dan
 disesuaikan. `Tambah slot` manual baru aktif setelah deteksi pernah dicoba, dan
 draft tanpa slot tidak dapat disimpan. Frame existing tetap memuat slot
 tersimpannya. Source aktif pada release backend
-`20260805133709-5906028`; delivery `PRODUCTION_DEPLOYED`, activation tetap
+`20260805193458-0b655da`; delivery `PRODUCTION_DEPLOYED`, activation tetap
 `PRODUCTION_ACTIVATED`, dan business readiness mass-scale tetap menunggu UAT
 owner terautentikasi serta Founding Studio Pilot.
 
-Release production yang sama masih memuat implementasi lama: klik rotate
-menukar W/H 90 derajat. Kontrak ini `DEPRECATED` oleh `DEC-036` dan tidak boleh
-lagi diposisikan sebagai perilaku yang diterima founder.
+Implementasi lama yang menukar W/H 90 derajat telah `DEPRECATED` oleh
+`DEC-036` dan tidak lagi aktif pada runtime production.
 
-`CONFIRMED` - local validated: source Owner/API
-`19ac8ab8653de0bf2edc18d164308ea8bbde3640` dan Studio
-`e48be94ab418605f81f8d1484043becfc9fa8a4a` mengubah ikon rotate menjadi drag
+`CONFIRMED` - production: source Owner/API
+`0b655da4aeea270ce9048d853e7df09d42a36dd9` dan Studio
+`2121ebb80fa4238e91eef4003f852d34841e923f` mengubah ikon rotate menjadi drag
 handle sudut bebas. Tahan lalu geser kiri memberi kemiringan negatif, geser
 kanan memberi kemiringan positif, tanpa menukar W/H. Angle opsional per slot
 dipersist ke metadata, dirender pada customer Studio, dan diterapkan pada export
-PNG; frame lama default 0 derajat. Promotion production belum terjadi karena
-preflight fail-closed mendeteksi commerce canary internal telah diarsipkan oleh
-Owner. Runtime tetap backend `20260805133709-5906028` dan Studio
-`20260805133709-57c0337` sampai canary dipulihkan dengan otorisasi atau diganti
-melalui release governance.
+PNG; frame lama default 0 derajat. Commerce canary dipulihkan melalui lifecycle
+resmi sebelum guarded preflight dan deployment; tidak ada intent atau QRIS baru.
 
 ## Session completion dan privacy handoff
 
@@ -468,13 +465,15 @@ untuk release frontend ini.
 ### Runtime production
 
 - Backend source:
-  `5906028703759d49ef930a7363c5efc293f6be97`.
-- Backend release aktif: `20260805133709-5906028`.
+  `0b655da4aeea270ce9048d853e7df09d42a36dd9`.
+- Backend release aktif: `20260805193458-0b655da`.
 - Studio source aktif:
-  `2b0331d53dc4c590dee5329ef892ea01fa4a8a97`.
-- Studio release aktif: `20260805170231-2b0331d`.
+  `2121ebb80fa4238e91eef4003f852d34841e923f`.
+- Studio release aktif: `20260805193458-2121ebb`.
 - Studio release sebelumnya yang menjadi rollback:
-  `20260805133709-57c0337`.
+  `20260805191930-1accf32`.
+- Backend release sebelumnya yang menjadi rollback:
+  `20260805133709-5906028`.
 - Saga Platform release teramati tetap
   `20260804171621-0ab9d8e`; release editor frame tidak mengubah Platform.
 - Additive migration, encrypted backup, disposable restore, candidate gate,
@@ -500,16 +499,17 @@ untuk release frontend ini.
 
 ### Release validation
 
-- Release editor frame: build exact source, 119 test SagaView dengan 1.248
-  assertions, focused Playwright 1/1, npm audit production nol vulnerability,
+- Release editor frame: build exact source, 120 test SagaView dengan 1.250
+  assertions, focused Playwright, npm audit production nol vulnerability,
   Composer lock audit nol advisory, dan diff/public-safety check lulus.
 - Gate production 6/6, backup database, additive migration, single-device
   canary, callback exactly-once tanpa intent/QRIS baru, service, error journal,
   security header, Nginx, serta rollback target lulus.
-- Pascadeploy, source/release symlink exact, enam service aktif, lima endpoint
-  utama merespons 200, dan bundle production memuat kontrol feather serta
-  rotasi. Authenticated owner visual UAT belum diulang karena vault lokal
-  terkunci; ini tidak membatalkan smoke dan regression exact-source yang lulus.
+- Pascadeploy, source/release symlink exact, service aktif, endpoint API/login/
+  Session/Changelog/frame editor merespons 200, dan bundle production memuat
+  drag hint, rotasi preview, serta rotasi export. Authenticated owner visual UAT
+  tetap `NEEDS CONFIRMATION`; ini tidak membatalkan smoke dan regression
+  exact-source yang lulus.
 - Backend: 908/908 test dengan 10.637 assertions, focused release safety 3/3,
   build, syntax PowerShell/Bash, dan Composer audit nol advisory lulus.
 - Studio: 156 unit test, 95/95 E2E, format/lint/typecheck/build, bundle budget,

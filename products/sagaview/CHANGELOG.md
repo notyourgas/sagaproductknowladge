@@ -4,6 +4,27 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-08-05 - Free drag rotation slot production
+
+- Klasifikasi: `CONFIRMED` melalui koreksi founder `DEC-036`.
+- Status: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; business readiness tetap
+  `NEEDS CONFIRMATION`.
+- Backend source `0b655da4aeea270ce9048d853e7df09d42a36dd9` aktif sebagai
+  release `20260805193458-0b655da`; rollback `20260805133709-5906028`.
+- Studio source kumulatif `2121ebb80fa4238e91eef4003f852d34841e923f`
+  aktif sebagai release `20260805193458-2121ebb`; rollback
+  `20260805191930-1accf32`. Release mempertahankan compact navigation dan
+  workspace Session monitor besar yang telah aktif sebelumnya.
+- Ikon rotate tiap slot sekarang menjadi drag handle: tahan lalu geser kiri
+  untuk sudut negatif atau kanan untuk sudut positif. Angle tersimpan per slot,
+  dirender pada customer canvas, dan digunakan pada export PNG tanpa menukar W/H.
+- Commerce canary dipulihkan melalui lifecycle resmi sebelum guarded release.
+  Exact-source tests, audit dependency, backup, preflight/deploy gate 6/6,
+  callback exactly-once, service/header/journal, HTTP smoke, Nginx, rollback,
+  dan marker bundle production lulus. Release tidak membuat intent atau QRIS.
+- Residual: authenticated Owner visual UAT memakai frame miring nyata dan
+  Founding Studio Pilot sebelum klaim `BUSINESS_READY` mass-scale.
+
 ## 2026-08-05 - Workspace Session monitor besar production
 
 - Klasifikasi: `CONFIRMED`.

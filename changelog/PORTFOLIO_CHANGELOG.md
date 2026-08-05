@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-05 - SagaView free drag rotation production
+
+- Backend `20260805193458-0b655da` dan Studio
+  `20260805193458-2121ebb` aktif dengan rollback exact ke
+  `20260805133709-5906028` dan `20260805191930-1accf32`.
+- Tiap slot frame dapat dimiringkan bebas dengan tahan-dan-geser kiri/kanan;
+  angle yang sama dipakai metadata, customer preview, dan export PNG.
+- Commerce canary dipulihkan lewat lifecycle resmi. Backup, gate 6/6, existing
+  callback exactly-once, service/header/journal, HTTP smoke, dan feature marker
+  bundle lulus tanpa membuat intent/QRIS baru.
+- Delivery dan activation production; business readiness tetap menunggu Owner
+  visual UAT dengan frame miring nyata dan Founding Studio Pilot.
+
 ## 2026-08-05 - SagaView Session large-monitor production
 
 - Studio source `4bbd1665222332da7aee28da8d4ce01253b9ef8c` aktif sebagai

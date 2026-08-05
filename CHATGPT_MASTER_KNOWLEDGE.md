@@ -407,10 +407,11 @@ Trial contract: 14 hari dua fase server-side; hari 1–7 full access, hari 8–1
 plan-limited, tanpa auto-charge.
 
 Update terbaru: backend memakai source
-`5906028703759d49ef930a7363c5efc293f6be97`, release
-`20260805133709-5906028`, sedangkan Studio aktif memakai source
-`4bbd1665222332da7aee28da8d4ce01253b9ef8c`, release
-`20260805181945-4bbd166`, dengan rollback `20260805170231-2b0331d`. Workspace
+`0b655da4aeea270ce9048d853e7df09d42a36dd9`, release
+`20260805193458-0b655da`, sedangkan Studio aktif memakai source
+`2121ebb80fa4238e91eef4003f852d34841e923f`, release
+`20260805193458-2121ebb`, dengan rollback Studio
+`20260805191930-1accf32` dan backend `20260805133709-5906028`. Workspace
 Session kini memakai lebar adaptif sampai 1600 piksel pada monitor besar tanpa
 merusak reflow mobile/laptop atau menambah horizontal overflow. Login dan
 Studio masing-masing merender tepat satu
@@ -454,23 +455,21 @@ portrait/landscape tidak dipenyet. Canvas landscape mendukung putar kanan/kiri
 90 derajat dan pemetaan ulang slot. Deteksi otomatis memakai feather awal 4 px;
 semua slot dapat diatur 0–12 px atau ±2 px, dipindah pada canvas, dan di-resize
 dari empat sudut sambil mempertahankan input X/Y/W/H.
-Backend production `59060287` mengubah urutan frame baru menjadi 0 slot, pilih
+Backend production `0b655da4` mengubah urutan frame baru menjadi 0 slot, pilih
 PNG/WebP, jalankan `Deteksi otomatis`, lalu review/koreksi slot. Penambahan slot
 manual baru aktif setelah deteksi pernah dicoba dan draft tanpa slot diblokir;
 frame existing tetap memuat slot tersimpan. Source aktif sebagai release
-`20260805133709-5906028` dengan rollback `20260805053500-9b4b68a`.
-Implementasi rotate production pada release tersebut menukar W/H 90 derajat,
-tetapi kontrak itu `DEPRECATED` oleh koreksi founder `DEC-036`. Perilaku yang
+`20260805193458-0b655da` dengan rollback `20260805133709-5906028`.
+Implementasi rotate lama yang menukar W/H 90 derajat telah `DEPRECATED` oleh
+koreksi founder `DEC-036`. Perilaku production yang aktif adalah
 diterima adalah tahan ikon rotate lalu drag ke kiri/kanan agar slot mendapat
-angle negatif/positif tanpa menukar W/H. Candidate Owner/API
-`19ac8ab8653de0bf2edc18d164308ea8bbde3640` dan Studio
-`e48be94ab418605f81f8d1484043becfc9fa8a4a` mempersist angle per slot dan
-menerapkannya di customer render serta export PNG. Candidate berstatus
-`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; preflight fail-closed karena
-commerce canary internal telah diarsipkan Owner. Runtime tetap backend
-`20260805133709-5906028` dan Studio `20260805170231-2b0331d`. Activation runtime
-lama tetap `PRODUCTION_ACTIVATED`, tetapi free rotation belum production dan
-owner visual UAT tetap residual sebelum klaim business-ready mass-scale.
+angle negatif/positif tanpa menukar W/H. Owner/API source
+`0b655da4aeea270ce9048d853e7df09d42a36dd9` dan Studio source
+`2121ebb80fa4238e91eef4003f852d34841e923f` mempersist angle per slot dan
+menerapkannya di customer render serta export PNG. Commerce canary dipulihkan
+melalui lifecycle resmi; backup, gate 6/6, service/header/journal, HTTP smoke,
+dan marker bundle production lulus. Owner visual UAT tetap residual sebelum
+klaim business-ready mass-scale.
 Output Settings kini hanya menampilkan Reset/Simpan saat dirty, menaruh action
 setelah konten pada mobile dan sticky pada desktop, memakai target 44 px, serta
 memprioritaskan status `Belum disimpan` ketika operator mengedit ulang. Folder,

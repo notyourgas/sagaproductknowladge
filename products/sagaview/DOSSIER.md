@@ -13,6 +13,7 @@ SagaView berdasarkan runtime production aktif.
 - Business readiness: `NEEDS CONFIRMATION` untuk penjualan massal
 - UI Studio compact all-menu: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
 - UI Session monitor besar: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
+- Free drag rotation slot: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
 
 ## Overview produk
 
@@ -96,22 +97,22 @@ journal, dan public smoke. Source aktif sebagai release
 `20260805133709-5906028`; rollback backend
 `20260805053500-9b4b68a` dipertahankan.
 
-Implementasi production sebelumnya memberi tombol rotate yang menukar W/H 90
+Implementasi production lama memberi tombol rotate yang menukar W/H 90
 derajat. Founder mengoreksi kontrak tersebut melalui `DEC-036`: rotate yang
 diterima adalah drag angle bebas agar slot dapat mengikuti opening frame yang
 miring.
 
-Candidate Owner/API `19ac8ab8653de0bf2edc18d164308ea8bbde3640` dan Studio
-`e48be94ab418605f81f8d1484043becfc9fa8a4a` menyimpan angle opsional per slot,
+Source production Owner/API `0b655da4aeea270ce9048d853e7df09d42a36dd9`
+dan Studio `2121ebb80fa4238e91eef4003f852d34841e923f` menyimpan angle opsional per slot,
 default 0 derajat untuk frame lama, menerapkan rotated bounds di server, serta
 merender sudut yang sama pada preview customer dan export PNG. Drag ke kiri
 menghasilkan sudut negatif dan drag ke kanan sudut positif; inspector juga
 menyediakan angka/reset dan keyboard. Build, 120 test SagaView/1.250 assertions,
 focused Playwright, 44 file test Studio/156 test, lint, typecheck, build/budget,
-visual QA, dan audit dependency lulus. Status `LOCAL_VALIDATED /
-IMPLEMENTED_NOT_DEPLOYED`: guarded preflight berhenti sebelum deploy karena
-commerce canary internal berstatus Owner-archived, sehingga runtime production
-belum berubah.
+visual QA, dan audit dependency lulus. Commerce canary dipulihkan melalui state
+machine resmi; backup, preflight/deploy gate 6/6, canary, service/header/journal,
+HTTP smoke, dan marker bundle production lulus. Release aktif adalah backend
+`20260805193458-0b655da` dan Studio `20260805193458-2121ebb`.
 
 Mulai sesi production memakai checklist perangkat, paket, folder, frame, dan
 output serta satu CTA kontekstual 48 px. Utility cloud/recovery yang sehat
@@ -246,11 +247,11 @@ jam, 10 GB aset frame cloud, laporan lanjutan, activity log, dan priority
 support. Session/foto dipasarkan unlimited dengan fair-use; foto tetap lokal.
 
 `CONFIRMED` — kontrak ini aktif di production. Source backend aktif adalah
-`5906028703759d49ef930a7363c5efc293f6be97`, release
-`20260805133709-5906028`. Source Studio aktif adalah
-`2b0331d53dc4c590dee5329ef892ea01fa4a8a97`, release
-`20260805170231-2b0331d`; rollback Studio adalah
-`20260805133709-57c0337`. Session, Frames, dan Install App kini memakai render
+`0b655da4aeea270ce9048d853e7df09d42a36dd9`, release
+`20260805193458-0b655da`. Source Studio aktif adalah
+`2121ebb80fa4238e91eef4003f852d34841e923f`, release
+`20260805193458-2121ebb`; rollback Studio adalah
+`20260805191930-1accf32`. Session, Frames, dan Install App kini memakai render
 awal SSR/client deterministik sehingga tidak memicu hydration mismatch. Output
 Settings hanya menampilkan action simpan saat
 dirty, tidak menutup konten mobile, mempertahankan action sticky desktop, dan
@@ -341,7 +342,8 @@ pada UI customer.
 
 ## Reliability, security, dan operations
 
-- Exact backend/Studio release immutable dan rollback tersedia.
+- Exact backend/Studio release immutable `20260805193458-0b655da` dan
+  `20260805193458-2121ebb`; rollback tersedia.
 - Release editor frame `20260805053500-9b4b68a` lulus 119 test SagaView/1.248
   assertions, focused Playwright, build, audit dependency, gate production
   6/6, backup, canary, service/header/journal, serta public smoke. Authenticated

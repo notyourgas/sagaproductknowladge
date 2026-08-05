@@ -227,24 +227,13 @@ ketika keputusan atau release baru menutup gap.
 
 ### SagaView
 
-- `BLOCKED`: free drag rotation per slot telah lulus local exact-source gates
-  pada Owner/API `19ac8ab8` dan Studio `e48be94a`, termasuk persistensi metadata,
-  customer render, export PNG, drag kiri/kanan, resize, dan move. Guarded
-  production preflight berhenti fail-closed sebelum deploy karena commerce
-  canary internal telah diarsipkan Owner dan subscription canary berstatus
-  cancelled. Runtime tetap backend `20260805133709-5906028` dan Studio
-  `20260805170231-2b0331d`. Penutup membutuhkan otorisasi eksplisit untuk
-  memulihkan canary atau replacement canary yang melewati governance penuh;
-  gate tidak boleh dilewati.
-
-- `NEEDS CONFIRMATION`: source backend `59060287` untuk urutan PNG/WebP ->
-  deteksi -> review/koreksi -> save dan implementasi rotate 90 derajat lama aktif pada
-  release production `20260805133709-5906028`. Exact-source QA, backup,
-  preflight/deploy gate 6/6, canary, service/header/journal, endpoint, dan bundle
-  check lulus; rollback `20260805053500-9b4b68a` tersedia. Authenticated owner
-  visual UAT belum diulang. Simulasi drag mouse pada profile sentuh mobile/tablet
-  tetap residual non-blocking karena editor ditargetkan desktop; keduanya tidak
-  boleh dipakai sebagai bukti `BUSINESS_READY` mass-scale.
+- `NEEDS CONFIRMATION`: free drag rotation per slot aktif pada backend
+  `20260805193458-0b655da` dan Studio `20260805193458-2121ebb` setelah commerce
+  canary dipulihkan melalui lifecycle resmi dan gate 6/6 lulus. Exact-source
+  tests, customer render, export PNG, marker bundle production, service, header,
+  journal, dan HTTP smoke lulus. Residual hanya authenticated Owner visual UAT
+  dengan frame miring nyata serta Founding Studio Pilot sebelum klaim
+  `BUSINESS_READY` mass-scale.
 
 - `CONFIRMED`: limit Growth/Pro, trial guardrail, cloud frame storage,
   local-photo boundary, retention, offboarding, dan support SLA sudah

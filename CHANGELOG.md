@@ -12,6 +12,21 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-05
 
+### SagaView free drag rotation production
+
+- Ringkasan: koreksi `DEC-036` aktif di production; ikon rotate per slot menjadi
+  drag angle bebas kiri/kanan dan konsisten sampai customer preview serta export.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
+- Source/release: backend `0b655da4aeea270ce9048d853e7df09d42a36dd9` /
+  `20260805193458-0b655da`; Studio
+  `2121ebb80fa4238e91eef4003f852d34841e923f` /
+  `20260805193458-2121ebb`.
+- Gate: commerce canary dipulihkan melalui lifecycle resmi; exact-source tests,
+  audit, backup, gate 6/6, service/header/journal, HTTP smoke, Nginx, rollback,
+  dan marker production lulus tanpa intent atau QRIS baru.
+- Business readiness: `NEEDS CONFIRMATION` sampai authenticated Owner visual UAT
+  dan Founding Studio Pilot selesai.
+
 ### SagaView workspace Session monitor besar production
 
 - Ringkasan: workspace Session kini memanfaatkan monitor Full HD dan QHD secara
