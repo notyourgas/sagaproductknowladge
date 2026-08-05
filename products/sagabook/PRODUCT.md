@@ -163,6 +163,25 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
   memusatkan canvas tersebut; layout rail, workspace dua kolom, canvas lebar,
   dan pola landing page tidak berlaku untuk storefront. Optimasi desktop tetap
   berlaku untuk dashboard/admin SagaBook dan aplikasi/dashboard SagaView.
+- Flow request customer terbaru sudah `LOCAL_VALIDATED / STAGING_READY /
+  IMPLEMENTED_NOT_DEPLOYED` pada source kumulatif
+  `8a9a2ef68d8bd725400f0a6bae289ed664ac9794`, branch
+  `codex/s117-sagabook-request-disclosures`. Before: refund, perubahan, dan
+  pembatalan membuka panel tanpa state aksesibel, dapat terbuka bersamaan,
+  tidak mempunyai close/Escape dengan focus restoration, serta field rekening
+  terlalu padat pada 390 piksel. After: hanya satu disclosure aktif, region
+  bernama, fokus masuk dan kembali ke trigger, tombol Tutup minimum 44 piksel,
+  serta field rekening bertumpuk pada anchor mobile. Red 1/1 menjadi focused
+  4/4; cancel E2E 2/2; storefront efektif 137 pass/11 expected skip setelah
+  dua fixture S115 bentrok lulus 2/2 terisolasi; backend 960/960 dengan 11.007
+  assertion, build, design 26/0, dan audit dependency nol. Coverage mencakup
+  390x844, effective 200 persen, Windows compact, 1440x900, MacBook, dan QHD;
+  canvas maksimum 460 piksel serta tepat satu `Powered by SagaBook` tetap
+  lulus. API, mutation/policy request, migration, payment, availability,
+  permission, tenant isolation, preset, foto, export, invoice, receipt, serta
+  SagaView tidak berubah. Production tetap source `d70fc1e0`, release
+  `20260803194351-d70fc1e`; release-safety receipt backup+restore exact S117
+  dan approval belum tersedia.
 - Flow customer sekunder Detail Booking dan Reschedule sudah
   `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED` pada source
   `5788d6bb5860353c03edac51b968ce05a5d936f7`, branch

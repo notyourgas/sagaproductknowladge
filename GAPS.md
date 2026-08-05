@@ -205,6 +205,16 @@ ketika keputusan atau release baru menutup gap.
   adalah release-safety receipt berisi backup terenkripsi, checksum,
   disposable restore, migration preflight yang terikat exact S116, approval,
   immutable release, service/header/journal, rollback proof, dan public smoke.
+- `BLOCKED`: candidate disclosure request customer source `8a9a2ef6` menutup
+  state/semantik/focus refund, perubahan, dan pembatalan serta kepadatan field
+  rekening 390 piksel. Red 1/1, focused 4/4, cancel E2E 2/2, storefront efektif
+  137 pass/11 expected skip, backend 960/960, build, design, npm/Composer audit,
+  matriks 390x844 sampai QHD dan effective 200 persen, target 44 piksel,
+  no-overflow, serta satu watermark lulus. Production tetap `d70fc1e0` /
+  `20260803194351-d70fc1e`. Bukti penutup deploy adalah release-safety receipt
+  backup terenkripsi/checksum/disposable restore/migration preflight yang
+  terikat exact S117, approval, immutable release, service/header/journal,
+  rollback proof, dan public smoke exact source.
 
 ### SagaView
 

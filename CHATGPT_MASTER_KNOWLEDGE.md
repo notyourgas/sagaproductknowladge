@@ -76,16 +76,17 @@ Booking dipasarkan unlimited dengan fair-use.
 Trial SagaBook: 7 hari full access, kemudian grace read-only hari 8-14 dan
 suspend setelah hari 14; tidak ada auto-charge.
 
-Candidate SagaBook terbaru untuk flow customer sekunder adalah source kumulatif
-`77a25c7c5ed7fe31d89b35ceee91b01859b9afca` pada
-`codex/s116-sagabook-visual-baseline`, berstatus `LOCAL_VALIDATED /
-STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`. Detail Booking dan Reschedule tetap
-mobile-only maksimum 460 piksel pada semua viewport, masing-masing memiliki
-tepat satu `Powered by SagaBook` non-fixed serta kontrol header minimum 44
-piksel. Baseline mobile Detail Payment kini selaras dengan fixture tanggal 2099
-dan alamat demo deterministik; visual efektif 133 pass/11 expected skip,
-backend, build, design, dan dependency audit lulus. Production tetap
-`d70fc1e0` / `20260803194351-d70fc1e`; receipt exact S116 dan approval belum
+Candidate SagaBook terbaru untuk Customer Booking Center adalah source kumulatif
+`8a9a2ef68d8bd725400f0a6bae289ed664ac9794` pada
+`codex/s117-sagabook-request-disclosures`, berstatus `LOCAL_VALIDATED /
+STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`. Refund, perubahan, dan pembatalan
+kini memakai satu disclosure mobile aktif, region bernama, Tutup/Escape dengan
+focus restoration, target minimum 44 piksel, serta field rekening yang tidak
+padat pada 390 piksel. Storefront tetap mobile-only maksimum 460 piksel pada
+semua viewport dan tepat satu `Powered by SagaBook` non-fixed. Visual efektif
+137 pass/11 expected skip, backend 960/960, build, design, dan dependency audit
+lulus. API/policy/payment tidak berubah. Production tetap `d70fc1e0` /
+`20260803194351-d70fc1e`; receipt backup+restore exact S117 dan approval belum
 tersedia.
 
 Update terbaru: Support & Recovery Center production. Owner/admin dapat

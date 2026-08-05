@@ -1,5 +1,23 @@
 # Portfolio Changelog
 
+## 2026-08-05 - SagaBook customer request disclosure candidate
+
+- Refund, perubahan booking, dan pembatalan pada Customer Booking Center kini
+  memakai satu disclosure mobile yang eksklusif, bernama untuk screen reader,
+  dapat ditutup melalui tombol 44 piksel atau Escape, serta memulihkan fokus ke
+  trigger. Field rekening bertumpuk pada 390 piksel tanpa memperlebar canvas.
+- Source `8a9a2ef68d8bd725400f0a6bae289ed664ac9794` pada
+  `codex/s117-sagabook-request-disclosures`; red 1/1 menjadi focused 4/4,
+  cancel E2E 2/2, storefront efektif 137 pass/11 expected skip, backend
+  960/960, build, design 26/0, serta dependency audit nol.
+- Coverage 390x844, effective 200 persen, Windows compact, 1440x900, MacBook,
+  dan QHD menjaga satu canvas maksimum 460 piksel serta tepat satu
+  `Powered by SagaBook`. API/policy/payment/availability/permission/tenant,
+  preset, SagaView, activation, dan business readiness tidak berubah.
+- Delivery `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
+  Production tetap `d70fc1e0` / `20260803194351-d70fc1e`; blocker adalah
+  release-safety receipt backup+restore exact S117 dan approval.
+
 ## 2026-08-05 - SagaBook deterministic Detail Payment baseline
 
 - Satu snapshot mobile Detail Payment diselaraskan dengan fixture tanggal 2099

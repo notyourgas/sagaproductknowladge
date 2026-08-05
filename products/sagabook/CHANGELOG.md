@@ -4,6 +4,35 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-05 - Disclosure request customer aksesibel dan mobile
+
+- Klasifikasi: `CONFIRMED`; delivery `LOCAL_VALIDATED / STAGING_READY /
+  IMPLEMENTED_NOT_DEPLOYED`. Source kumulatif
+  `8a9a2ef68d8bd725400f0a6bae289ed664ac9794` tersedia pada branch
+  `codex/s117-sagabook-request-disclosures`.
+- Before: tombol refund, perubahan, dan pembatalan membuka form tanpa
+  `aria-expanded`/`aria-controls`; panel tidak dikenali sebagai region bernama,
+  beberapa form dapat terbuka sekaligus, tidak ada tombol tutup/Escape dengan
+  focus restoration, dan field bank/rekening terlalu padat pada 390 piksel.
+  After: satu disclosure aktif pada satu waktu, region memiliki accessible
+  name, fokus masuk ke panel lalu kembali ke trigger saat Tutup/Escape, tombol
+  tutup minimum 44 piksel, dan field rekening bertumpuk pada anchor mobile.
+- Gate: red proof 1/1; focused S117 4/4; regresi cancel end-to-end 2/2; full
+  storefront efektif 137 pass/11 expected skip setelah dua fixture S115 yang
+  bentrok slot lulus 2/2 secara terisolasi; backend 960/960 dengan 11.007
+  assertion; build; design 26/0; npm/Composer audit nol.
+- Coverage S117: 390x844, reflow efektif 200 persen, 1280x720, 1440x900,
+  1512x982, dan 2560x1440; no-overflow, forced-colors, reduced-motion, keyboard,
+  touch target, canvas maksimum 460 piksel, serta tepat satu
+  `Powered by SagaBook` non-fixed lulus. API, mutation request, policy,
+  migration, payment, availability, permission, tenant isolation, preset,
+  foto, export, invoice, receipt, serta SagaView tidak berubah.
+- Production tidak berubah: source `d70fc1e0d922eed86fe4ea4998688aad32c68c43`,
+  release `20260803194351-d70fc1e`, rollback
+  `20260803132556-cfb2af8`; Nginx/queue aktif dan empat public smoke 200.
+  Deployment menunggu release-safety receipt backup+restore exact S117 dan
+  approval.
+
 ## 2026-08-05 - Baseline visual Detail Payment kembali deterministik
 
 - Klasifikasi: `CONFIRMED`; delivery `LOCAL_VALIDATED / STAGING_READY /

@@ -12,6 +12,29 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-05
 
+### SagaBook customer request disclosure candidate
+
+- Ringkasan: form refund, ubah booking, dan pembatalan sekarang menjadi
+  disclosure mobile eksklusif dengan nama aksesibel, tombol Tutup 44 piksel,
+  Escape, focus entry/restoration, serta field rekening bertumpuk pada 390px.
+- Alasan: state buka/tutup sebelumnya tidak diumumkan, panel tidak menjadi
+  region bernama, beberapa form dapat terbuka bersamaan, dan input bank sempit
+  meningkatkan risiko salah isi pada flow customer kritis.
+- Produk/area terdampak: Customer Booking Center, disclosure state,
+  keyboard/focus, forced-colors, reduced-motion, touch target, mobile density,
+  viewport QA, watermark, provenance, dan release evidence. API, mutation,
+  policy, payment, serta workflow bisnis tidak berubah.
+- Klasifikasi: `CONFIRMED`; source
+  `8a9a2ef68d8bd725400f0a6bae289ed664ac9794`, branch
+  `codex/s117-sagabook-request-disclosures`, delivery `LOCAL_VALIDATED /
+  STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: red 1/1; focused 4/4; cancel E2E 2/2; storefront efektif 137 pass/11
+  expected skip; backend 960/960 dengan 11.007 assertion; build; design 26/0;
+  npm/Composer audit nol; matriks 390x844 sampai QHD dan effective 200 persen.
+- Production berubah: tidak. Runtime tetap `d70fc1e0` /
+  `20260803194351-d70fc1e`, rollback `20260803132556-cfb2af8`; blocker deploy
+  adalah release-safety receipt backup+restore exact S117 dan approval.
+
 ### SagaBook deterministic Detail Payment baseline
 
 - Ringkasan: satu snapshot mobile Detail Payment kini selaras dengan fixture

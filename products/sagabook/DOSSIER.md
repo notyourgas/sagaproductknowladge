@@ -134,6 +134,28 @@ landing page. Arah S94/S108 yang memperlebar storefront menjadi 1040/1280
 piksel berstatus `DEPRECATED`; responsivitas desktop penuh hanya untuk
 dashboard/admin SagaBook serta aplikasi/dashboard SagaView.
 
+Candidate customer request terbaru adalah source kumulatif
+`8a9a2ef68d8bd725400f0a6bae289ed664ac9794` pada
+`codex/s117-sagabook-request-disclosures`, berstatus `LOCAL_VALIDATED /
+STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`. Disclosure refund, perubahan, dan
+pembatalan kini eksklusif: satu panel aktif, trigger mengumumkan expanded state,
+panel menjadi region bernama, fokus berpindah masuk lalu kembali saat Tutup atau
+Escape, dan target tutup minimum 44 piksel. Field bank/rekening bertumpuk pada
+390 piksel tetapi tetap dua kolom saat canvas cukup lebar; canvas storefront
+tidak pernah melebihi 460 piksel.
+
+Red proof 1/1 menjadi focused 4/4; regresi cancel E2E 2/2; storefront penuh
+efektif 137 pass/11 expected skip setelah dua collision fixture S115 lulus 2/2
+terisolasi. Backend 960/960 dengan 11.007 assertion, build, design 26/0,
+npm/Composer audit nol, forced-colors, reduced-motion, no-overflow, target 44
+piksel, dan watermark tunggal lulus pada 390x844, reflow efektif 200 persen,
+1280x720, 1440x900, 1512x982, serta 2560x1440. Tidak ada perubahan API,
+mutation, policy refund/cancel, migration, payment, availability, permission,
+tenant isolation, preset, invoice, receipt, foto, export, atau SagaView.
+Production tetap `d70fc1e0` / `20260803194351-d70fc1e`, rollback
+`20260803132556-cfb2af8`; gate berikutnya adalah receipt backup+restore exact
+S117 dan approval.
+
 Flow sekunder Detail Booking dan Reschedule pada source
 `5788d6bb5860353c03edac51b968ce05a5d936f7`, branch
 `codex/s115-sagabook-secondary-watermark`, berstatus `LOCAL_VALIDATED /
