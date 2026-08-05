@@ -4,6 +4,29 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-05 - Signature dan akses header flow sekunder
+
+- Klasifikasi: `CONFIRMED`; delivery `LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Source
+  `5788d6bb5860353c03edac51b968ce05a5d936f7` tersedia pada branch
+  `codex/s115-sagabook-secondary-watermark`.
+- Before: Detail Booking dan Reschedule tidak memiliki product signature;
+  kontrol Kembali/Bantuan hanya sekitar 32 piksel. After: masing-masing route
+  memiliki tepat satu `Powered by SagaBook` non-fixed di dalam canvas mobile
+  maksimum 460 piksel, serta target 44 piksel dan focus ring keyboard.
+- Gate focused S115 2/2 lulus pada 390x844, reflow efektif 200 persen,
+  1280x720, 1440x900, 1512x982, 1920x1080, 2560x1440, dan 3840x2160. Backend
+  960/960 dengan 11.007 assertion, build, design 26/0, npm/Composer audit nol,
+  no-overflow, forced-colors, dan reduced-motion lulus.
+- Full visual regression menyisakan satu mismatch baseline detail payment
+  karena fixture lama memakai tanggal/lokasi berbeda. Baseline tidak diubah
+  diam-diam; full acceptance dan release-safety receipt exact S115 belum hijau.
+- API, migration, booking/payment/availability, permission, tenant isolation,
+  preset, foto, export, invoice, receipt, dan SagaView tidak berubah.
+- Production tidak berubah: source `d70fc1e0d922eed86fe4ea4998688aad32c68c43`,
+  release `20260803194351-d70fc1e`, rollback
+  `20260803132556-cfb2af8`; service aktif dan empat public smoke 200.
+
 ## 2026-08-05 - Payment QRIS dan transfer selalu mobile
 
 - Klasifikasi: `CONFIRMED`; menerapkan kontrak founder `DEC-031`. Delivery

@@ -12,20 +12,20 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-05T06:28:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-05T07:30:07+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `a21bce24da70cfda72114016988ae471c2b8bf30` |
-| Informasi terakhir disinkronkan | SagaView source `2b0331d53dc4c590dee5329ef892ea01fa4a8a97`: disclosure compact membuka seluruh delapan route dengan target 44/48 piksel, keyboard/focus, reflow 125-200%, Windows compact, MacBook, Full HD, QHD, 4K, satu watermark, full E2E 113 pass/2 capture-only skip, unit/build/audit hijau; delivery `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah. |
+| Baseline sebelum pembaruan | `8be45809150ca4672b44dfdf4636dd375dc7ba12` |
+| Informasi terakhir disinkronkan | SagaBook source `5788d6bb5860353c03edac51b968ce05a5d936f7`: Detail Booking dan Reschedule tetap mobile-only maksimum 460 piksel, kini masing-masing memiliki tepat satu watermark non-fixed dan target header 44 piksel; focused/backend/build/design/audit hijau, tetapi satu baseline visual detail payment masih mismatch; delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik baru; S114 tidak mengubah kontrak mobile-only storefront SagaBook, permission, local-first, atau kontrak bisnis SagaView. |
-| Error | Tidak ada pada gate lokal; backup/checksum/disposable restore exact S114, approval, immutable release, dan public smoke exact source masih terbuka. |
+| Konflik | Tidak ada konflik kontrak; S115 menerapkan kontrak mobile-only dan watermark tunggal tanpa mengubah SagaView atau workflow bisnis. |
+| Error | Satu baseline visual detail payment masih mismatch akibat drift fixture tanggal/lokasi; full acceptance dan release-safety receipt exact S115 belum hijau. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/sagaview/PRODUCT.md`
-- `products/sagaview/DOSSIER.md`
-- `products/sagaview/CHANGELOG.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `GAPS.md`
@@ -34,9 +34,9 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 ## Item menunggu konfirmasi
 
-SagaView S114 menunggu release-safety receipt exact source, backup terenkripsi,
-checksum, disposable restore, migration preflight, approval, immutable release,
-service health, rollback proof, dan public smoke exact source sebelum production.
+SagaBook S115 menunggu normalisasi fixture/baseline visual yang ditinjau, suite
+penuh hijau, lalu release-safety receipt exact source dan approval sebelum
+production.
 
 SagaBio menunggu wildcard TLS/vhost, production environment, backup/disposable
 restore, exact-release migration, rollback, dan public smoke sebelum deploy.

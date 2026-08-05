@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-05 - SagaBook secondary storefront signature candidate
+
+- Detail Booking dan Reschedule tetap satu canvas mobile maksimum 460 piksel,
+  kini masing-masing memiliki tepat satu `Powered by SagaBook` non-fixed serta
+  kontrol header minimum 44 piksel dengan focus ring.
+- Source `5788d6bb5860353c03edac51b968ce05a5d936f7` pada
+  `codex/s115-sagabook-secondary-watermark`; focused 2/2, backend 960/960,
+  build, design 26/0, npm/Composer audit nol, dan matriks 390x844 sampai 4K
+  lulus.
+- Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Satu baseline visual
+  detail payment masih mismatch karena drift fixture tanggal/lokasi, sehingga
+  full acceptance exact S115 belum hijau. Production tetap `d70fc1e0` /
+  `20260803194351-d70fc1e`; SagaView dan kontrak bisnis tidak berubah.
+
 ## 2026-08-05 - SagaView compact all-menu candidate
 
 - `CONFIRMED`: header compact Studio Console kini menyediakan disclosure

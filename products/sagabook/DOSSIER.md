@@ -134,6 +134,22 @@ landing page. Arah S94/S108 yang memperlebar storefront menjadi 1040/1280
 piksel berstatus `DEPRECATED`; responsivitas desktop penuh hanya untuk
 dashboard/admin SagaBook serta aplikasi/dashboard SagaView.
 
+Flow sekunder Detail Booking dan Reschedule pada source
+`5788d6bb5860353c03edac51b968ce05a5d936f7`, branch
+`codex/s115-sagabook-secondary-watermark`, berstatus `LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`. Sebelumnya kedua route sudah mobile-only tetapi
+tidak memiliki product signature dan target Kembali/Bantuan hanya sekitar 32
+piksel. Kini masing-masing tetap memakai satu canvas maksimum 460 piksel,
+memiliki tepat satu `Powered by SagaBook` non-fixed, target 44 piksel, dan
+focus ring keyboard. Focused S115 2/2 lulus pada 390x844, reflow efektif 200
+persen, Windows compact, desktop anchor, MacBook, Full HD, QHD, dan 4K;
+backend 960/960 dengan 11.007 assertion, build, design 26/0, serta audit npm
+dan Composer nol. Full visual regression masih memiliki satu baseline detail
+payment yang berbeda akibat drift fixture tanggal/lokasi, sehingga acceptance
+dan release-safety receipt exact S115 belum lengkap. Production tetap
+`d70fc1e0` / `20260803194351-d70fc1e`, rollback
+`20260803132556-cfb2af8`; workflow bisnis dan SagaView tidak berubah.
+
 Implementasi kumulatif source `1de6a935d8694e9c5231a429d4ff41d7d1bc3d9c`
 pada `codex/s113-sagabook-mobile-payment` berstatus `LOCAL_VALIDATED /
 STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`. Baseline S109 tetap mengunci

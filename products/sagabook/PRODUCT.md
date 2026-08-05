@@ -163,6 +163,21 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
   memusatkan canvas tersebut; layout rail, workspace dua kolom, canvas lebar,
   dan pola landing page tidak berlaku untuk storefront. Optimasi desktop tetap
   berlaku untuk dashboard/admin SagaBook dan aplikasi/dashboard SagaView.
+- Flow customer sekunder Detail Booking dan Reschedule sudah
+  `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED` pada source
+  `5788d6bb5860353c03edac51b968ce05a5d936f7`, branch
+  `codex/s115-sagabook-secondary-watermark`. Before: kedua route tidak memiliki
+  signature SagaBook dan kontrol header hanya sekitar 32 piksel. After: masing-
+  masing route memiliki tepat satu `Powered by SagaBook` non-fixed di dalam
+  canvas mobile, serta kontrol Kembali/Bantuan minimum 44 piksel dengan focus
+  ring. Focused S115 2/2 lulus pada 390x844, reflow efektif 200 persen,
+  1280x720, 1440x900, 1512x982, Full HD, QHD, dan 4K; backend 960/960 dengan
+  11.007 assertion, build, design 26/0, serta npm/Composer audit nol. Satu
+  baseline visual lama pada detail payment masih berbeda karena fixture
+  tanggal/lokasi berubah, sehingga full acceptance dan release-safety receipt
+  exact S115 belum hijau. API, migration, payment, availability, permission,
+  tenant isolation, preset, invoice, receipt, foto, dan SagaView tidak berubah.
+  Production tetap source `d70fc1e0`, release `20260803194351-d70fc1e`.
 - Kontrak mobile-only itu sudah `LOCAL_VALIDATED / STAGING_READY /
   IMPLEMENTED_NOT_DEPLOYED` pada candidate kumulatif
   `1de6a935d8694e9c5231a429d4ff41d7d1bc3d9c`, branch

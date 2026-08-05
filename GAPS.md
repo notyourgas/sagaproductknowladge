@@ -196,6 +196,14 @@ ketika keputusan atau release baru menutup gap.
   release, service/header/journal, rollback proof, serta public smoke exact
   source.
 
+- `BLOCKED`: candidate signature flow sekunder SagaBook source `5788d6bb`
+  menutup watermark dan target header Detail Booking/Reschedule; focused S115
+  2/2, backend 960/960, build, design, audit dependency, serta matriks 390x844
+  sampai 4K lulus. Full visual regression masih menyisakan satu mismatch
+  baseline detail payment karena fixture tanggal/lokasi berbeda. Bukti penutup
+  adalah normalisasi fixture/baseline yang ditinjau, suite penuh hijau, lalu
+  release-safety receipt dan approval yang terikat exact S115.
+
 ### SagaView
 
 - `BLOCKED`: candidate kumulatif compact all-menu source `2b0331d5` lulus

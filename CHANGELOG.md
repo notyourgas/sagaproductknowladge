@@ -12,6 +12,28 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-05
 
+### SagaBook secondary storefront signature candidate
+
+- Ringkasan: Detail Booking dan Reschedule kini memiliki satu signature
+  SagaBook non-fixed serta kontrol Kembali/Bantuan minimum 44 piksel, tanpa
+  mengubah canvas mobile maksimum 460 piksel.
+- Alasan: dua flow customer sekunder melanggar kontrak watermark tunggal dan
+  touch target meskipun layout mobile-only sudah benar.
+- Produk/area terdampak: storefront detail/reschedule, header, keyboard/focus,
+  touch target, forced-colors, reduced-motion, viewport QA, watermark, dan
+  provenance. Workflow bisnis tidak berubah.
+- Klasifikasi: `CONFIRMED`; source
+  `5788d6bb5860353c03edac51b968ce05a5d936f7`, branch
+  `codex/s115-sagabook-secondary-watermark`, delivery `LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: focused S115 2/2; backend 960/960 dengan 11.007 assertion; build;
+  design 26/0; npm/Composer audit nol; matriks 390x844, reflow efektif 200
+  persen, Windows compact, desktop, MacBook, Full HD, QHD, dan 4K. Satu
+  baseline visual detail payment masih mismatch karena drift fixture.
+- Production berubah: tidak. Runtime tetap `d70fc1e0` /
+  `20260803194351-d70fc1e`, rollback `20260803132556-cfb2af8`; full acceptance
+  dan release-safety receipt exact S115 belum hijau.
+
 ### SagaView compact all-menu candidate
 
 - Ringkasan: header compact Studio Console sekarang membuka seluruh delapan
