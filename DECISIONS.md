@@ -410,7 +410,7 @@ keputusan pengganti.
 | Alternatif yang dipertimbangkan | Memakai form komunitas yang sama; menambah field role/tim pada form public; menyimpan guest pada dataset terpisah. |
 | Dampak | Guest tetap memakai participant identity kanonik, mendapat workflow WhatsApp/player/check-in/roster yang sama, tetapi sumbernya eksplisit. Approval guest admin-only, memerlukan roster Draft dan team assignment atomik; generator otomatis mempertahankan tim guest. |
 | Pemberi keputusan | Andreas / founder |
-| Status | `CONFIRMED`; source dan public production deployment terverifikasi, activation menunggu UAT guest nyata |
+| Status | `DEPRECATED`; digantikan DEC-032 untuk approval VIP tanpa tim dan generator seimbang |
 | Dokumen terkait | [AOGTICVITY Product](products/aogticvity/PRODUCT.md), [AOGTICVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTICVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |
 
 ## DEC-029 - SagaBook memakai trial aktif 7 hari
@@ -454,3 +454,17 @@ keputusan pengganti.
 | Pemberi keputusan | Andreas / founder |
 | Status | `CONFIRMED`; source `33de71c6b7ab8bf2c0b2cc8fd5fef327fb68f0a5` local-validated dan staging-ready, production belum berubah |
 | Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [SagaBook Changelog](products/sagabook/CHANGELOG.md), [Gaps](GAPS.md) |
+
+## DEC-032 - AOGTICVITY memakai access policy dan pembagian tim VIP
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-05 |
+| Topik | Masa berlaku link peserta dan pembagian tim pemain luar |
+| Keputusan | Admin dapat membuka/menutup link peserta dan memilih TTL 15 menit, 30 menit, 1 jam, 6 jam, atau 24 jam. Off menolak link baru dan link belum dipakai tanpa memutus sesi aktif. Pemain luar disebut VIP, disetujui tanpa tim, lalu ikut generator tim seimbang bersama peserta komunitas. |
+| Alasan | Founder perlu mengendalikan periode akses dari dashboard dan meminta VIP tidak langsung ditempatkan pada tim saat approval. |
+| Alternatif yang dipertimbangkan | TTL tetap 30 menit; off mencabut semua sesi; admin memilih tim VIP saat approval; VIP dipisahkan dari generator. |
+| Dampak | Migration 021 menambah policy, idempotency, dan audit; UI admin mendapat kontrol access; approval VIP tidak memiliki team selector; generator mencakup VIP. Storage legacy `Guest` dipertahankan agar rollback aplikasi aman. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED`; source dan public production deployment terverifikasi, operational activation menunggu UAT manusia |
+| Dokumen terkait | [AOGTICVITY Product](products/aogticvity/PRODUCT.md), [AOGTICVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTICVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |

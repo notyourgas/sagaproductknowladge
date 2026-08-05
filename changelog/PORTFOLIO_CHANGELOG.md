@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-05 - AOGTICVITY access policy dan VIP team flow production
+
+- Admin dapat open/close link peserta serta memilih TTL server-side; sesi aktif
+  tidak terputus saat access ditutup. Mutation dilindungi permission admin,
+  same-origin, idempotency, version conflict, transaksi, dan audit.
+- Pemain luar kini tampil sebagai VIP, disetujui tanpa tim, lalu ikut generator
+  tim seimbang bersama komunitas; storage legacy dipertahankan untuk rollback.
+- Source `356e2126ea0b9dc10f9c9bb5d9e299c93b963fa1`; Hostinger
+  `20260805T035621Z`; Vercel `dpl_FxpLMFrkYqPebdhRmwR5kVb9gaKb`; migration 021.
+  Delivery `PRODUCTION_DEPLOYED`; human UAT dan business readiness masih terbuka.
+
 ## 2026-08-05 - SagaBook request recovery candidate
 
 - Error refund, perubahan booking, dan pembatalan kini berada di form aktif,

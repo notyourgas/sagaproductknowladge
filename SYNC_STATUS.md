@@ -12,31 +12,32 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-05T10:35:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-05T11:10:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `9b39bd3105eca89871c0fc847bb70cfb9741da32` |
-| Informasi terakhir disinkronkan | SagaBook source `b2b638cece4e9b18720a5367c05dcda3bb86ecf6`: error refund/change/cancel kini lokal pada form aktif, input dan retry aman, receipt sukses bertahan saat refresh status gagal; focused 6/6, backend/build/design/audit hijau; delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; full Playwright timeout 604 detik dan production tidak berubah. |
+| Baseline sebelum pembaruan | `a70454a32b70faa8c18b69e5e2789cfb56b7d868` |
+| Informasi terakhir disinkronkan | AOGTICVITY source `356e2126ea0b9dc10f9c9bb5d9e299c93b963fa1`: policy on/off dan TTL link peserta, approval VIP tanpa tim, generator tim seimbang; Hostinger `20260805T035621Z`, Vercel `dpl_FxpLMFrkYqPebdhRmwR5kVb9gaKb`, migration 021; delivery `PRODUCTION_DEPLOYED`, activation `AWAITING_HUMAN_UAT`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik kontrak; S118 memperbaiki feedback/retry state tanpa mengubah API, mutation, policy, payment, SagaView, atau workflow bisnis. |
-| Error | Full Playwright tidak menghasilkan receipt final karena runner timeout setelah 604 detik; focused S118 6/6 dan regresi S115 terisolasi 4/4 lulus. |
+| Konflik | DEC-028 tentang approval guest bertim berstatus `DEPRECATED` dan digantikan DEC-032: VIP disetujui tanpa tim lalu masuk generator seimbang. |
+| Error | Tidak ada error release terbuka; human UAT valid-link, access toggle, retensi sesi aktif, dan team sync masih menunggu. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/sagabook/PRODUCT.md`
-- `products/sagabook/DOSSIER.md`
-- `products/sagabook/CHANGELOG.md`
+- `products/aogticvity/PRODUCT.md`
+- `products/aogticvity/DOSSIER.md`
+- `products/aogticvity/CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
+- `DECISIONS.md`
 - `GAPS.md`
 - `CHANGELOG.md`
 - `SYNC_STATUS.md`
 
 ## Item menunggu konfirmasi
 
-SagaBook S118 menunggu full Playwright acceptance dengan receipt final sebelum
-dapat dinilai `STAGING_READY`; release-safety exact source dan approval tetap
-wajib sebelum production.
+AOGTICVITY menunggu UAT admin policy toggle/TTL, VIP submit dan approval tanpa
+tim, valid-link, retensi sesi saat access ditutup, generator tim, serta sync dua
+perangkat sebelum operational activation.
 
 SagaBio menunggu wildcard TLS/vhost, production environment, backup/disposable
 restore, exact-release migration, rollback, dan public smoke sebelum deploy.

@@ -8,6 +8,25 @@ Mencatat perubahan material AOGTICVITY/17an/Olimpiade.
 
 Nama lama dipertahankan sebagai provenance; status runtime harus eksplisit.
 
+## 2026-08-05 - Player access policy dan VIP team flow production
+
+- `CONFIRMED`: admin dapat membuka/menutup link peserta dan memilih TTL
+  15/30/60/360/1440 menit; off menolak link baru serta link belum dipakai tanpa
+  memutus sesi aktif.
+- Jalur `/register/guest` kini tampil sebagai VIP. Approval VIP tidak meminta
+  tim; VIP ikut generator tim seimbang dan tetap dapat dipindahkan manual saat
+  Draft. Storage `Guest` dipertahankan untuk rollback compatibility.
+- Policy admin-only memakai same-origin, UUID idempotency, optimistic version,
+  transaksi, failure state, dan audit MySQL.
+- Source `356e2126ea0b9dc10f9c9bb5d9e299c93b963fa1`; Hostinger
+  `20260805T035621Z`; Vercel `dpl_FxpLMFrkYqPebdhRmwR5kVb9gaKb`; migration
+  `021_player_access_policy`.
+- Gate: 114 unit/API, 24/24 disposable MySQL integration, 21 migration dari nol,
+  Playwright UI 61/61, production domain 11/11, build, backup/restore, dan audit
+  dependency nol vulnerability lulus.
+- Delivery `PRODUCTION_DEPLOYED`; operational activation tetap
+  `AWAITING_HUMAN_UAT`. Business readiness keseluruhan tetap `BLOCKED`.
+
 ## 2026-08-05 - Technical finalization gates production
 
 - `CONFIRMED`: source runtime

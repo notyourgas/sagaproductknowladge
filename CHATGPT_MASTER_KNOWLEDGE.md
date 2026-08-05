@@ -689,13 +689,11 @@ sementara draft tetap privat dan hasil yang belum tersedia memakai empty state.
 Public/player refresh 12 detik serta pulih saat focus/visibility/reconnect.
 Source `308a8547af171c9fc26ce07350ca332bbe8ae913`, Hostinger
 `20260804T065837Z`, Vercel `dpl_9CknJM1QQzWGjbCPXFWPXegA2SBH`, dan migration
-020 menambahkan pendaftaran pemain undangan di `/register/guest`. Public hanya
-mengisi nama, WhatsApp, status sudah/belum memiliki CG, dan consent. Admin wajib
-menetapkan tim Draft saat approval; identity player, team assignment, WhatsApp
-outbox, serta audit ditulis atomik. Generator tim tidak memindahkan guest.
-Delivery sudah `PRODUCTION_DEPLOYED`, tetapi activation jalur guest masih
-`NOT_PRODUCTION_ACTIVATED` sampai satu flow nyata registrasi, approval bertim,
-valid WhatsApp link, dan player session lulus UAT.
+020 menambahkan pendaftaran pemain luar di `/register/guest`. Public hanya
+mengisi nama, WhatsApp, status sudah/belum memiliki CG, dan consent. Release
+021 mengganti konsep produk menjadi VIP: admin menyetujui tanpa tim, lalu VIP
+ikut generator tim seimbang bersama komunitas. Storage legacy `Guest` tetap
+dipertahankan untuk rollback compatibility.
 Source `111e01152c842d802ff1b4114f8e787577fe611d`, Hostinger
 `20260804T164327Z`, dan Vercel `dpl_5pVdzKAGfZVv4w41cLborLhDFv4Z` menutup
 bug `Origin: null` pada form konfirmasi WhatsApp serta CTA modal pendaftaran
@@ -723,6 +721,12 @@ recovery, full disposable MySQL gate, backup/restore drill, aggregate readiness
 audit PII-free, dan operator runbook. Semua technical release gate lulus;
 business readiness tetap menunggu finalisasi data admin, valid-link WhatsApp
 two-device UAT, authenticated operation rehearsal, dan physical fallback.
+Source `356e2126ea0b9dc10f9c9bb5d9e299c93b963fa1`, Hostinger
+`20260805T035621Z`, Vercel `dpl_FxpLMFrkYqPebdhRmwR5kVb9gaKb`, dan migration
+021 menambahkan policy on/off serta TTL link peserta 15 menit sampai 24 jam.
+Off menolak link baru dan unused link tanpa memutus sesi aktif. Policy
+admin-only memakai same-origin, idempotency, optimistic version, transaksi,
+dan audit. VIP dan access policy production-deployed tetapi menunggu human UAT.
 Real credential login dan database-backed session sudah terbukti;
 admin password claim dan registration UAT sudah selesai. Roster/check-in/result
 rehearsal, provider status webhook, valid-link WhatsApp two-device session UAT, dan
@@ -794,8 +798,9 @@ Delivery: `PLANNED`. Belum production-activated.
 - Jangan klaim seluruh login WhatsApp AOGTICVITY production-ready. Fonnte
   runtime dan channel UAT sudah aktif, tetapi status webhook serta
   magic-link/session/reuse/revoke UAT belum lulus.
-- Jangan klaim jalur pemain undangan production-activated sebelum registrasi
-  nyata, approval dengan tim, WhatsApp valid-link, dan player session lulus UAT.
+- Jangan klaim jalur VIP/access policy production-activated sebelum registrasi,
+  approval tanpa tim, open/close link, retensi sesi aktif, generator tim,
+  WhatsApp valid-link, dan sync dua perangkat lulus UAT.
 - Jangan klaim Gmail sync, Google Sheets, atau PDF server-side SagaFin sebagai
   fitur aktif bila bukti terbaru belum berubah.
 - Jangan menyebut dummy/fixture/local log sebagai bukti provider.

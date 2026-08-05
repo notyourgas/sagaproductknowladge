@@ -80,14 +80,20 @@ memakai empty state. Public/player refresh setiap 12 detik serta saat focus,
 visibility, dan reconnect. Acceptance suite kini mencakup 50 Playwright checks,
 termasuk podium mocked, pending state, geometry 320 px, dan public smoke 390 px.
 
-Pemain dari luar komunitas memakai `/register/guest`. Data minimum adalah nama,
-nomor WhatsApp, status sudah/belum memiliki CG, dan consent; role maupun tim
-tidak dipilih public. Dashboard admin dapat memfilter sumber peserta dan wajib
-memilih tim saat approval guest selama roster tim masih `Draft`. Approval
-menyatukan team assignment, identity player, WhatsApp outbox, dan audit dalam
-satu transaksi. Guest tidak dipindahkan oleh generator otomatis. UI publik
+Peserta dari luar komunitas memakai jalur VIP di `/register/guest`. Data minimum
+adalah nama, nomor WhatsApp, status sudah/belum memiliki CG, dan consent; role
+maupun tim tidak dipilih public. Admin menyetujui VIP tanpa tim; identity player,
+WhatsApp outbox, dan audit tetap atomik. VIP kemudian ikut generator tim
+seimbang bersama peserta komunitas dan dapat dipindahkan manual saat Draft.
+Nilai storage legacy `Guest` dipertahankan untuk rollback. UI publik
 guest lulus matriks 320–1440 px, WCAG axe, no-overflow, serta total 58
-Playwright checks. Full guest-to-valid-session UAT nyata masih diperlukan.
+Playwright checks. Full VIP-to-valid-session dan two-device team sync UAT nyata
+masih diperlukan.
+
+Admin mempunyai policy server-side untuk membuka/menutup link peserta dan
+memilih TTL 15/30/60/360/1440 menit. Off menolak penerbitan serta konsumsi link
+yang belum dipakai tanpa memutus sesi aktif. Mutation admin-only memakai
+same-origin, idempotency UUID, optimistic version, transaksi, dan audit MySQL.
 
 Hotfix source `111e01152c842d802ff1b4114f8e787577fe611d` menghilangkan
 konflik kebijakan referrer yang sebelumnya membuat POST konfirmasi magic-link
@@ -197,9 +203,10 @@ database session, dan admin password claim sudah terverifikasi melalui public
 Vercel.
 **Apakah pendaftaran sudah nyata?** Ya. Submit publik, receipt, persistence
 MySQL, admin list/approve, idempotent replay, dan audit sudah lulus UAT.
-Jalur guest sudah production-deployed tetapi belum production-activated sampai
-satu registrasi guest nyata, approval bertim, WhatsApp link, dan session player
-lulus UAT.
+Jalur VIP dan access policy sudah production-deployed tetapi belum
+production-activated sampai registrasi VIP nyata, approval tanpa tim,
+open/close link, retensi sesi aktif, generator tim, WhatsApp link, dan session
+player dua perangkat lulus UAT.
 **Apakah MFA wajib?** Tidak. MFA admin opsional; kontrol password, session,
 rate limit, RBAC, revoke, dan audit tetap wajib.
 **Apakah bisa multi-device?** Backend contract dan test MySQL tersedia, tetapi

@@ -223,6 +223,14 @@ Public delivery saat ini: `https://olimpiade-kemerdekaan.vercel.app`.
   aggregate readiness audit PII-free, dan operator runbook juga lulus.
   Application runtime sehat; business readiness masih `BLOCKED` oleh finalisasi
   data admin, valid-link WhatsApp/two-device UAT, dan rehearsal fisik.
+- Source `356e2126ea0b9dc10f9c9bb5d9e299c93b963fa1`, Hostinger release
+  `20260805T035621Z`, Vercel production
+  `dpl_FxpLMFrkYqPebdhRmwR5kVb9gaKb`, dan migration 021 mengaktifkan kebijakan
+  akses peserta. Admin dapat membuka/menutup link yang belum dipakai dan memilih
+  TTL 15 menit sampai 24 jam tanpa memutus sesi aktif. Jalur pemain luar kini
+  tampil sebagai VIP, disetujui tanpa tim, lalu ikut generator tim seimbang.
+  Mutation policy admin-only memakai same-origin, idempotency, optimistic
+  version, transaksi, dan audit. Aktivasi operasional menunggu UAT manusia.
 - SQLite hanya fast test adapter.
 - Event-master memiliki dry-run, validation, atomic publish, versioning, dan
   audit. Durasi jadwal bersifat provisional dan dapat disunting admin.
@@ -247,7 +255,7 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:
 - UI memakai `Pixel Matchday Arcade` yang tetap mobile-first 430 px: Plus
   Jakarta Sans, Feather-style icons, stepped geometry, hard shadow, quest/HUD
   hierarchy, state feedback, dan motion yang menghormati reduced-motion.
-- Public visual regression lulus 60/60 pada route publik dan viewport 320, 390,
+- Public visual regression lulus 61/61 pada route publik dan viewport 320, 390,
   430, serta 1440 px; matriks memeriksa overflow teks, collision sibling,
   clearance navigasi, touch target, reduced motion, axe WCAG, CTA modal pada
   visual viewport pendek, dan origin POST magic-link.

@@ -12,6 +12,24 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-05
 
+### AOGTICVITY player access policy dan VIP team flow production
+
+- Ringkasan: admin sekarang mengendalikan on/off serta TTL link peserta;
+  peserta luar tampil sebagai VIP, approval tanpa tim, dan masuk generator tim.
+- Alasan: link perlu dapat dihentikan panitia tanpa memutus sesi aktif, sedangkan
+  VIP harus mengikuti pembagian seimbang dan tidak dipatok ke tim saat approval.
+- Produk/area: auth WhatsApp, admin notification desk, VIP registration,
+  participant approval, team generator, MySQL policy/audit, dan release gates.
+- Klasifikasi: `CONFIRMED`; source
+  `356e2126ea0b9dc10f9c9bb5d9e299c93b963fa1`, Hostinger
+  `20260805T035621Z`, Vercel `dpl_FxpLMFrkYqPebdhRmwR5kVb9gaKb`, migration 021.
+- Gate: 114 unit/API, 24/24 MySQL integration, 21 migration, UI 61/61,
+  production 11/11, backup/restore, build, dan audit dependency lulus.
+- Production berubah: ya; delivery `PRODUCTION_DEPLOYED`, operational activation
+  `AWAITING_HUMAN_UAT`, business readiness `BLOCKED`.
+- File knowledge: product, dossier, changelog AOGTICVITY, master, decision,
+  gaps, portfolio/root changelog, dan sync status.
+
 ### SagaBook request recovery candidate
 
 - Ringkasan: kegagalan refund, ubah booking, dan pembatalan sekarang muncul di
