@@ -544,10 +544,13 @@ Fokus awal F&B. Positioning: customer-journey front door dari Instagram/QR
 menuju menu, promo, lokasi, WhatsApp, dan e-menu; bukan clone Linktree dan bukan
 pengganti SagaMenu.
 
-Builder lokal sudah mendukung pengurutan section dan beberapa komposisi
-hero/profile, action link, CTA, featured item, galeri, testimonial, lokasi, serta
-promo dengan parity draft-preview-immutable publish-public. Source tervalidasi
-`638a13cc57837a3749915f6bebee0e4616c3f74e`.
+Builder lokal sudah mendukung pengurutan section, beberapa keluarga layout, dan
+sebelas preset journey general/F&B/jasa/produk/portfolio/creator. Preset Studio,
+readiness sesuai journey, SEO/share, aggregate analytics-to-action, QR
+lifecycle, managed review, dan guided support memiliki parity
+draft-preview-immutable publish-public. Source tervalidasi
+`8b79ff4e759b24acf34bb88dfe714588754bc00d`; 150 test/1.139 assertion
+dan browser 8/8 desktop-mobile lulus.
 
 Status: `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`, belum production.
 

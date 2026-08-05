@@ -44,14 +44,20 @@ delivery link, dan e-menu gateway.
 
 ## Fitur utama
 
-Public page, owner dashboard, admin, block editor, preset, section ordering,
-layout-aware preview/public renderer, publish snapshot, analytics dasar, QR
-tracking, asset checklist, dan help request.
+Public page, owner dashboard, admin, block editor, sebelas preset journey,
+section ordering, layout-aware preview/public renderer, readiness per journey,
+SEO/share, publish snapshot, analytics-to-action, QR lifecycle, managed review,
+asset checklist, dan help request.
 
 Layout yang sudah local validated mencakup hero/profile, action link, CTA,
 featured item, galeri, testimonial, lokasi, serta layout promo dari sprint
 sebelumnya. Pemilihan layout dan urutan tersimpan pada draft lalu dikompilasi
 menjadi snapshot publish immutable.
+
+Preset general, F&B, jasa, produk, portfolio, dan creator sekarang membawa
+goal, audience, CTA, KPI, susunan section, layout, starter copy, kebutuhan aset,
+dan starter visual. Menerapkan preset hanya mengganti draft; public page tetap
+membaca versi aktif sampai owner melakukan publish.
 
 ## Fitur MVP
 
@@ -113,7 +119,9 @@ done-for-you onboarding, dan action analytics.
 
 Laravel, Inertia Vue, Blade public renderer, Filament, MySQL, dan compiled
 publish payload. Source lokal tervalidasi:
-`638a13cc57837a3749915f6bebee0e4616c3f74e`; production belum berubah.
+`8b79ff4e759b24acf34bb88dfe714588754bc00d`; 150 test/1.139 assertion,
+browser 8/8 desktop-mobile, build, static analysis, dan audit dependency lulus.
+Production belum berubah.
 
 ## Integrasi
 

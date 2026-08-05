@@ -307,7 +307,7 @@ ketika keputusan atau release baru menutup gap.
 - `NEEDS CONFIRMATION`: kriteria keluar dari done-for-you menuju self-service.
 - `TODO`: tutup wildcard TLS/vhost, production environment, backup/disposable
   restore, exact-release migration, rollback, dan public smoke sebelum source
-  SagaBio terbaru boleh di-deploy.
+  SagaBio `8b79ff4e759b24acf34bb88dfe714588754bc00d` boleh di-deploy.
 
 ### SagaMenu
 

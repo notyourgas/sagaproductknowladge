@@ -8,6 +8,26 @@ Mencatat perubahan material SagaBio dengan provenance public-safe.
 
 Status saat ini local validated; entri tidak otomatis berarti production.
 
+## 2026-08-05 - Category journey productization
+
+- Klasifikasi: `CONFIRMED` dari source
+  `8b79ff4e759b24acf34bb88dfe714588754bc00d`.
+- Sebelas preset general/F&B/jasa/produk/portfolio/creator sekarang membawa
+  goal, CTA, KPI, susunan section, layout, starter copy, kebutuhan aset, dan
+  starter visual editable.
+- Owner mendapat Preset Studio, readiness sesuai journey, SEO/share editor,
+  aggregate analytics recommendation, QR deactivation, reviewer note, dan
+  guided support.
+- Bug state layout lama setelah preset diterapkan serta ketidakkonsistenan ID
+  layout public renderer sudah diperbaiki.
+- Gate lokal: 150 test/1.139 assertion, PHPStan nol error, build, browser 8/8
+  desktop-mobile, Axe, serta audit npm/Composer nol advisory.
+- Delivery: `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; activation:
+  `NOT_PRODUCTION_ACTIVATED`; business readiness belum berubah.
+- Production berubah: tidak. Wildcard TLS/vhost, production environment,
+  backup/restore, exact-release migration, rollback, dan public smoke tetap
+  menjadi blocker.
+
 ## 2026-08-05 - Core bio builder layout families
 
 - Klasifikasi: `CONFIRMED` dari source

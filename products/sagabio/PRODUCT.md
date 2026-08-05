@@ -53,15 +53,19 @@ SagaMenu tetap merupakan produk e-menu/e-katalog terpisah.
 - Owner dashboard.
 - SagaDev admin.
 - Guided section/block editor.
-- Preset kategori dan element library.
+- Sebelas preset journey kategori untuk general, F&B, jasa, produk, portfolio,
+  dan creator; setiap preset membawa goal, CTA, susunan section, layout,
+  starter copy, kebutuhan aset, dan starter visual yang tetap editable.
 - Pengurutan section dengan drag desktop, keyboard, dan kontrol sentuh.
 - Keluarga layout hero, action link, CTA, featured item, galeri, testimonial,
   dan lokasi dengan preview responsif.
 - Promo, featured menu, location/hours, WhatsApp, social/delivery links.
 - E-menu gateway.
 - QR source tracking dan analytics dasar.
-- Publish workflow dengan immutable compiled payload.
-- Help request, asset checklist, dan handoff.
+- Readiness checklist sesuai journey, SEO/share editor, action rate, dan
+  rekomendasi analytics berbasis agregat.
+- QR source lifecycle, publish workflow dengan immutable compiled payload,
+  managed review note, help request, asset checklist, dan handoff.
 
 ## Target pilot
 
@@ -82,9 +86,11 @@ Status: `LOCAL_VALIDATED`.
   dibangun.
 - Flow pilih layout/urutkan -> autosave -> preview -> immutable publish ->
   public page lulus di desktop dan mobile pada source
-  `638a13cc57837a3749915f6bebee0e4616c3f74e`.
-- Regression lokal lulus 143 test dengan 877 assertion; browser acceptance
-  lulus 6/6 dan dependency audit npm/Composer nol advisory.
+  `8b79ff4e759b24acf34bb88dfe714588754bc00d`.
+- Penerapan preset kini langsung menyelaraskan draft server, editor, preview,
+  publish snapshot, dan public renderer tanpa state layout lama.
+- Regression lokal lulus 150 test dengan 1.139 assertion; browser acceptance
+  lulus 8/8 dan dependency audit npm/Composer nol advisory.
 - Belum ada staging/production evidence yang cukup untuk menyebutnya live.
 
 ## Belum boleh diklaim

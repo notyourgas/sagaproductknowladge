@@ -12,6 +12,27 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-05
 
+### SagaBio category journey productization
+
+- Ringkasan: sebelas preset lintas kategori kini menjadi blueprint journey
+  mini-website dengan Preset Studio, readiness, SEO/share,
+  analytics-to-action, QR lifecycle, managed review, dan guided support.
+- Alasan: preset lama masih terlalu generik dan state editor dapat tertinggal
+  setelah draft server diganti, sehingga preview tidak selalu mencerminkan
+  pilihan owner.
+- Produk/area: owner dashboard, preset contract, draft persistence, public
+  renderer, analytics agregat, QR, review/support, accessibility, dan browser
+  test isolation.
+- Klasifikasi: `CONFIRMED`; source
+  `8b79ff4e759b24acf34bb88dfe714588754bc00d`, delivery
+  `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: 150 test/1.139 assertion, PHPStan nol error, build, browser 8/8
+  desktop-mobile, Axe, serta audit npm/Composer nol advisory.
+- Production berubah: tidak. Wildcard TLS/vhost, environment, backup/restore,
+  exact-release migration, rollback, dan public smoke tetap blocker.
+- File knowledge: product, dossier, changelog SagaBio, master, gaps,
+  portfolio/root changelog, dan sync status.
+
 ### AOGTICVITY player access policy dan VIP team flow production
 
 - Ringkasan: admin sekarang mengendalikan on/off serta TTL link peserta;

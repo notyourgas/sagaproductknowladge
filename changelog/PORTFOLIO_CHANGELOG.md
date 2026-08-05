@@ -1,5 +1,20 @@
 # Portfolio Changelog
 
+## 2026-08-05 - SagaBio category journey release candidate
+
+- Sebelas preset general, F&B, jasa, produk, portfolio, dan creator kini
+  menghasilkan journey mini-website yang berbeda, bukan sekadar warna; owner
+  dapat membandingkan goal, CTA, section, kebutuhan aset, dan starter visual.
+- Readiness per journey, SEO/share, analytics-to-action agregat, QR
+  deactivation, managed-review note, dan guided support sudah terhubung ke
+  draft, preview, immutable publish, dan public renderer.
+- Source `8b79ff4e759b24acf34bb88dfe714588754bc00d`; 150 test/1.139
+  assertion, browser 8/8 desktop-mobile, build/static analysis/Axe, dan audit
+  dependency nol advisory.
+- Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak
+  berubah dan tetap menunggu wildcard TLS/vhost, environment, backup/restore,
+  exact-release migration, rollback, dan public smoke.
+
 ## 2026-08-05 - AOGTICVITY access policy dan VIP team flow production
 
 - Admin dapat open/close link peserta serta memilih TTL server-side; sesi aktif

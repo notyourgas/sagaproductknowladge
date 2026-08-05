@@ -12,23 +12,22 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-05T11:10:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-05T12:25:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `a70454a32b70faa8c18b69e5e2789cfb56b7d868` |
-| Informasi terakhir disinkronkan | AOGTICVITY source `356e2126ea0b9dc10f9c9bb5d9e299c93b963fa1`: policy on/off dan TTL link peserta, approval VIP tanpa tim, generator tim seimbang; Hostinger `20260805T035621Z`, Vercel `dpl_FxpLMFrkYqPebdhRmwR5kVb9gaKb`, migration 021; delivery `PRODUCTION_DEPLOYED`, activation `AWAITING_HUMAN_UAT`. |
+| Baseline sebelum pembaruan | `2ba45a048c581cc8319e06fa7fb048463bf02e92` |
+| Informasi terakhir disinkronkan | SagaBio source `8b79ff4e759b24acf34bb88dfe714588754bc00d`: sebelas category journey preset, Preset Studio, readiness, SEO/share, aggregate analytics-to-action, QR lifecycle, managed review, dan guided support; delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | DEC-028 tentang approval guest bertim berstatus `DEPRECATED` dan digantikan DEC-032: VIP disetujui tanpa tim lalu masuk generator seimbang. |
-| Error | Tidak ada error release terbuka; human UAT valid-link, access toggle, retensi sesi aktif, dan team sync masih menunggu. |
+| Konflik | Tidak ada konflik fakta SagaBio baru. |
+| Error | Production SagaBio tetap fail-closed karena wildcard TLS/vhost, environment, backup/restore, exact-release migration, rollback, dan public smoke belum hijau. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/aogticvity/PRODUCT.md`
-- `products/aogticvity/DOSSIER.md`
-- `products/aogticvity/CHANGELOG.md`
+- `products/sagabio/PRODUCT.md`
+- `products/sagabio/DOSSIER.md`
+- `products/sagabio/CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
-- `DECISIONS.md`
 - `GAPS.md`
 - `CHANGELOG.md`
 - `SYNC_STATUS.md`
