@@ -215,6 +215,15 @@ ketika keputusan atau release baru menutup gap.
   backup terenkripsi/checksum/disposable restore/migration preflight yang
   terikat exact S117, approval, immutable release, service/header/journal,
   rollback proof, dan public smoke exact source.
+- `BLOCKED`: candidate recovery request customer source `b2b638ce` menempatkan
+  error refund/perubahan/pembatalan di form aktif, mempertahankan isian dan
+  retry, serta menjaga receipt sukses ketika refresh status pasca-POST gagal.
+  Focused S118 6/6, backend 960/960, build, design, dependency audit, matriks
+  390x844 sampai QHD, canvas maksimum 460 piksel, dan watermark tunggal lulus.
+  Full Playwright melewati batas 604 detik tanpa receipt final. Candidate
+  `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED` dan belum `STAGING_READY` sampai
+  full acceptance menghasilkan hasil final. Production tetap `d70fc1e0` /
+  `20260803194351-d70fc1e`.
 
 ### SagaView
 

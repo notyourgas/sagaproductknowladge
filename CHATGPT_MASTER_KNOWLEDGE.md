@@ -77,17 +77,17 @@ Trial SagaBook: 7 hari full access, kemudian grace read-only hari 8-14 dan
 suspend setelah hari 14; tidak ada auto-charge.
 
 Candidate SagaBook terbaru untuk Customer Booking Center adalah source kumulatif
-`8a9a2ef68d8bd725400f0a6bae289ed664ac9794` pada
-`codex/s117-sagabook-request-disclosures`, berstatus `LOCAL_VALIDATED /
-STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`. Refund, perubahan, dan pembatalan
-kini memakai satu disclosure mobile aktif, region bernama, Tutup/Escape dengan
-focus restoration, target minimum 44 piksel, serta field rekening yang tidak
-padat pada 390 piksel. Storefront tetap mobile-only maksimum 460 piksel pada
-semua viewport dan tepat satu `Powered by SagaBook` non-fixed. Visual efektif
-137 pass/11 expected skip, backend 960/960, build, design, dan dependency audit
-lulus. API/policy/payment tidak berubah. Production tetap `d70fc1e0` /
-`20260803194351-d70fc1e`; receipt backup+restore exact S117 dan approval belum
-tersedia.
+`b2b638cece4e9b18720a5367c05dcda3bb86ecf6` pada
+`codex/s118-sagabook-request-recovery`, berstatus `LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`. Refund, perubahan, dan pembatalan memakai satu
+disclosure mobile aktif; kegagalan diumumkan di form yang tepat, isian tetap
+tersimpan, retry tetap tersedia, dan receipt sukses tidak hilang bila refresh
+status sesudah POST gagal. Storefront tetap mobile-only maksimum 460 piksel
+pada semua viewport dan tepat satu `Powered by SagaBook` non-fixed. Focused
+S118 6/6, backend 960/960, build, design, dan dependency audit lulus. Full
+Playwright tidak memberi receipt final karena timeout 604 detik, sehingga belum
+`STAGING_READY`. API/policy/payment tidak berubah. Production tetap
+`d70fc1e0` / `20260803194351-d70fc1e`.
 
 Update terbaru: Support & Recovery Center production. Owner/admin dapat
 bertanya, melakukan human handoff, melanjutkan tiket, mengakses account

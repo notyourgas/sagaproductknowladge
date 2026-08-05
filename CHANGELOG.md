@@ -12,6 +12,30 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-05
 
+### SagaBook request recovery candidate
+
+- Ringkasan: kegagalan refund, ubah booking, dan pembatalan sekarang muncul di
+  form aktif dengan alert, input persisten, retry, serta receipt sukses yang
+  tetap benar bila refresh status lanjutan gagal.
+- Alasan: satu pesan global sebelumnya kehilangan konteks form dan tidak
+  diumumkan screen reader; kegagalan refresh dapat salah mengesankan POST yang
+  sudah diterima sebagai gagal.
+- Produk/area terdampak: Customer Booking Center, error/success/retry state,
+  keyboard/screen reader, forced-colors, viewport QA, watermark, provenance,
+  dan release evidence. API, mutation, policy, payment, serta workflow bisnis
+  tidak berubah.
+- Klasifikasi: `CONFIRMED`; source
+  `b2b638cece4e9b18720a5367c05dcda3bb86ecf6`, branch
+  `codex/s118-sagabook-request-recovery`, delivery `LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: focused S118 6/6; backend 960/960 dengan 11.007 assertion; build;
+  design 26/0; npm/Composer audit nol; matriks 390x844 sampai QHD dan effective
+  200 persen. Full Playwright timeout 604 detik tanpa receipt final, sehingga
+  belum `STAGING_READY`.
+- Production berubah: tidak. Runtime tetap `d70fc1e0` /
+  `20260803194351-d70fc1e`, rollback `20260803132556-cfb2af8`; Nginx/queue
+  aktif dan empat public smoke 200.
+
 ### SagaBook customer request disclosure candidate
 
 - Ringkasan: form refund, ubah booking, dan pembatalan sekarang menjadi

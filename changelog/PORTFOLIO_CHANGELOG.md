@@ -1,5 +1,22 @@
 # Portfolio Changelog
 
+## 2026-08-05 - SagaBook request recovery candidate
+
+- Error refund, perubahan booking, dan pembatalan kini berada di form aktif,
+  diumumkan sebagai alert, mempertahankan input, dan mendukung retry. Receipt
+  sukses tidak berubah menjadi error bila refresh status sesudah POST gagal.
+- Source `b2b638cece4e9b18720a5367c05dcda3bb86ecf6` pada
+  `codex/s118-sagabook-request-recovery`; focused S118 6/6, backend 960/960,
+  build, design 26/0, serta audit dependency nol.
+- Coverage 390x844 sampai QHD, effective 200 persen, forced-colors,
+  reduced-motion, no-overflow, canvas mobile maksimum 460 piksel, dan tepat
+  satu watermark non-fixed lulus. API, policy, payment, SagaView, dan production
+  tidak berubah.
+- Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Full Playwright
+  timeout setelah 604 detik tanpa receipt final, sehingga belum
+  `STAGING_READY`; production tetap `d70fc1e0` /
+  `20260803194351-d70fc1e`.
+
 ## 2026-08-05 - SagaBook customer request disclosure candidate
 
 - Refund, perubahan booking, dan pembatalan pada Customer Booking Center kini

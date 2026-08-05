@@ -4,6 +4,33 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-05 - Recovery request customer tetap lokal dan aman diulang
+
+- Klasifikasi: `CONFIRMED`; delivery `LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Source kumulatif
+  `b2b638cece4e9b18720a5367c05dcda3bb86ecf6` tersedia pada branch
+  `codex/s118-sagabook-request-recovery`.
+- Before: error refund, perubahan, dan pembatalan memakai satu pesan bersama di
+  atas semua disclosure, tanpa live-region atau kaitan ke submit; pengguna
+  dapat kehilangan konteks. Refresh status yang gagal setelah POST diterima
+  juga dapat mengganti receipt sukses menjadi error tersembunyi. After: error
+  tampil sebagai alert di form aktif, submit menunjuk feedback, isian tetap
+  tersimpan, retry kembali aktif, dan receipt sukses tetap terlihat walaupun
+  refresh status lanjutan gagal.
+- Gate: red recovery lokal 2/2 dan red success-receipt 1/1 ditutup; focused S118
+  6/6 pada mobile, tablet, dan desktop; regresi S115 terisolasi 4/4; backend
+  960/960 dengan 11.007 assertion; build; design 26/0; npm/Composer audit nol.
+  Full Playwright tidak menghasilkan receipt final karena timeout 604 detik,
+  sehingga candidate belum `STAGING_READY`.
+- Coverage: 390x844, effective 200 persen, 1280x720, 1440x900, 1512x982, dan
+  2560x1440; no-overflow, forced-colors, reduced-motion, canvas maksimum 460
+  piksel, serta tepat satu `Powered by SagaBook` non-fixed lulus. API, mutation,
+  policy, migration, payment, availability, permission, tenant isolation,
+  preset, foto, export, invoice, receipt, dan SagaView tidak berubah.
+- Production tidak berubah: source `d70fc1e0d922eed86fe4ea4998688aad32c68c43`,
+  release `20260803194351-d70fc1e`, rollback
+  `20260803132556-cfb2af8`; Nginx/queue aktif dan empat public smoke 200.
+
 ## 2026-08-05 - Disclosure request customer aksesibel dan mobile
 
 - Klasifikasi: `CONFIRMED`; delivery `LOCAL_VALIDATED / STAGING_READY /
