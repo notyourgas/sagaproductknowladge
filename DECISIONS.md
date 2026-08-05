@@ -538,3 +538,17 @@ keputusan pengganti.
 | Pemberi keputusan | Andreas / founder |
 | Status | `CONFIRMED`; release Studio `20260805170231-2b0331d`, rollback `20260805133709-57c0337` |
 | Dokumen terkait | [SagaView Product](products/sagaview/PRODUCT.md), [SagaView Dossier](products/sagaview/DOSSIER.md), [SagaView Changelog](products/sagaview/CHANGELOG.md), [Gaps](GAPS.md) |
+
+## DEC-038 - Authoring SagaView memisahkan Simpan Draft dan Publish Frame
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-05 |
+| Topik | Hasil penyimpanan frame pada Owner Console SagaView |
+| Keputusan | `Publish Frame` menjadi CTA utama pada workspace Tambah Frame dan menjalankan save draft lalu publish. `Simpan Draft` tetap tersedia sebagai aksi sekunder yang hanya menyimpan pekerjaan privat. Bila publish gagal setelah draft tersimpan, draft tidak boleh hilang dan operator harus menerima alasan API yang spesifik. Kode frame ber-spasi dinormalisasi menjadi format slug. |
+| Alasan | Founder menegaskan bahwa simpan draft dan publish memiliki hasil operasional berbeda; frame lengkap seharusnya dapat langsung dipublish tanpa harus menebak langkah lanjutan di galeri. |
+| Alternatif yang dipertimbangkan | Tetap satu tombol Simpan Draft lalu publish dari Galeri Frame; auto-publish tanpa opsi draft; satu tombol dengan menu dropdown. |
+| Dampak | Hierarki aksi editor berubah, tetapi kontrak draft privat tetap dipertahankan. Publish memakai endpoint existing secara berurutan, tidak mengubah tenant isolation, quota, payment, device/session, foto local-first, atau output 4R. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; source Owner/API `9ee5bcca14ace7771a169bf8823df1e9ba7241c9`, branch `codex/sagaview-frame-publish-flow-s115` |
+| Dokumen terkait | [SagaView Product](products/sagaview/PRODUCT.md), [SagaView Dossier](products/sagaview/DOSSIER.md), [SagaView Changelog](products/sagaview/CHANGELOG.md), [Gaps](GAPS.md) |

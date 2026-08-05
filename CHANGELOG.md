@@ -12,6 +12,23 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-05
 
+### SagaView Simpan Draft dan Publish Frame candidate
+
+- Ringkasan: workspace authoring memisahkan penyimpanan privat dan publikasi;
+  `Publish Frame` menjadi CTA utama, sementara `Simpan Draft` tetap sekunder.
+- Alasan: tombol tunggal dan pesan error generik membuat frame lengkap tampak
+  gagal disimpan, terutama saat kode mengandung spasi seperti `SPC 18`.
+- Produk/area: SagaView Owner Console, API authoring, validasi kode frame,
+  error recovery, browser acceptance, dan dokumentasi workflow.
+- Klasifikasi: `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED` melalui
+  `DEC-038`; source `9ee5bcca14ace7771a169bf8823df1e9ba7241c9`.
+- Gate: build, focused Playwright, 75 test fitur SagaView/613 assertion, audit
+  Composer/npm nol vulnerability, route, format, diff, dan visual check lulus.
+- Production berubah: tidak. Backend/Studio aktif, tenant, entitlement, payment,
+  device/session, foto lokal, dan output 4R tetap seperti sebelumnya.
+- File knowledge: product, dossier, changelog SagaView, master, decisions, gaps,
+  portfolio/root changelog, dan sync status.
+
 ### SagaView free drag rotation production
 
 - Ringkasan: koreksi `DEC-036` aktif di production; ikon rotate per slot menjadi

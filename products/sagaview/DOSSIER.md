@@ -15,6 +15,7 @@ SagaView berdasarkan runtime production aktif.
 - UI Session monitor besar: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
 - UI Output monitor besar: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
 - Free drag rotation slot: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
+- Simpan Draft/Publish Frame: `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`
 
 ## Overview produk
 
@@ -214,6 +215,17 @@ compact, MacBook, Full HD, QHD, serta 4K. Source aktif sebagai release
 device/session, foto, payment, tenant, local-first, dan output 4R tidak berubah.
 Subscription tenant tidak diaktifkan; keputusan founder hanya melewati UAT
 subscription untuk promosi frontend ini dan business readiness tetap terbuka.
+
+Kandidat Owner/API `9ee5bcca14ace7771a169bf8823df1e9ba7241c9` menerapkan
+keputusan founder `DEC-038`:
+`Simpan Draft` tetap menyimpan frame privat, sedangkan `Publish Frame` menjadi
+aksi utama yang menjalankan save draft lalu publish secara berurutan. Kegagalan
+publish tidak membuang draft yang sudah berhasil disimpan. Kode ber-spasi seperti
+`SPC 18` dinormalisasi menjadi `spc-18`, dan error validasi/quota dari API
+ditampilkan secara spesifik. Build, focused Playwright, 75 test fitur SagaView
+dengan 613 assertion, audit Composer/npm nol vulnerability, route check, dan
+diff check lulus. Status tetap `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+runtime production belum berubah.
 
 ## Fitur MVP
 

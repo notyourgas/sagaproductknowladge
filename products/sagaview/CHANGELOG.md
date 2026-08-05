@@ -4,6 +4,25 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-08-05 - Simpan Draft dan Publish Frame candidate
+
+- Klasifikasi: `CONFIRMED` melalui keputusan founder `DEC-038`.
+- Before: editor hanya menampilkan `Simpan Draft`, error API 422 diganti pesan
+  generik, dan kode frame dengan spasi seperti `SPC 18` ditolak tanpa alasan
+  yang dapat ditindaklanjuti.
+- After: `Publish Frame` menjadi CTA utama dan menjalankan save draft lalu
+  publish; `Simpan Draft` tetap tersedia sebagai aksi sekunder yang tidak
+  mengaktifkan frame. Jika publish gagal, draft tetap tersimpan dan UI
+  menjelaskan error spesifik. Kode `SPC 18` dinormalisasi menjadi `spc-18`.
+- Source Owner/API `9ee5bcca14ace7771a169bf8823df1e9ba7241c9`; branch
+  `codex/sagaview-frame-publish-flow-s115`.
+- Validation: build; focused Playwright 1/1; 75 test fitur SagaView/613
+  assertion; audit Composer dan npm nol vulnerability; route, format, diff, dan
+  visual check lulus.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Production tetap backend
+  `20260805193458-0b655da` dan Studio `20260805193458-2121ebb`; activation,
+  payment, tenant, device/session, foto lokal, dan output 4R tidak berubah.
+
 ## 2026-08-05 - Free drag rotation slot production
 
 - Klasifikasi: `CONFIRMED` melalui koreksi founder `DEC-036`.

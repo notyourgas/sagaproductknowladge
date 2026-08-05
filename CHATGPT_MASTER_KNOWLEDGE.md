@@ -464,6 +464,14 @@ PNG/WebP, jalankan `Deteksi otomatis`, lalu review/koreksi slot. Penambahan slot
 manual baru aktif setelah deteksi pernah dicoba dan draft tanpa slot diblokir;
 frame existing tetap memuat slot tersimpan. Source aktif sebagai release
 `20260805193458-0b655da` dengan rollback `20260805133709-5906028`.
+Keputusan founder `DEC-038` memisahkan hasil authoring: `Simpan Draft` menyimpan
+pekerjaan privat, sedangkan `Publish Frame` menjadi CTA utama yang menyimpan
+draft lalu mempublish frame agar siap dipakai Studio. Implementasi Owner/API
+`9ee5bcca14ace7771a169bf8823df1e9ba7241c9` juga menormalisasi `SPC 18`
+menjadi `spc-18`, mempertahankan draft
+jika tahap publish gagal, dan menampilkan error API spesifik. Kandidat ini masih
+`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; jangan menganggapnya sebagai
+perilaku production sampai guarded release selesai.
 Implementasi rotate lama yang menukar W/H 90 derajat telah `DEPRECATED` oleh
 koreksi founder `DEC-036`. Perilaku production yang aktif adalah
 diterima adalah tahan ikon rotate lalu drag ke kiri/kanan agar slot mendapat

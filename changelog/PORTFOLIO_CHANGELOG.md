@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-05 - SagaView draft/publish frame candidate
+
+- Owner Console memisahkan `Simpan Draft` sebagai penyimpanan privat dan
+  `Publish Frame` sebagai CTA utama yang membuat frame siap dipakai Studio.
+- Alur publish menyimpan draft lebih dulu; kegagalan publish mempertahankan
+  draft dan menampilkan alasan API spesifik. Kode `SPC 18` dinormalisasi menjadi
+  `spc-18` agar tidak gagal karena spasi.
+- Source `9ee5bcca14ace7771a169bf8823df1e9ba7241c9`; build, focused Playwright,
+  75 test/613 assertion, audit
+  dependency nol, route, diff, dan visual check lulus.
+- Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production, payment,
+  entitlement, tenant, device/session, foto lokal, dan output 4R belum berubah.
+
 ## 2026-08-05 - SagaView free drag rotation production
 
 - Backend `20260805193458-0b655da` dan Studio

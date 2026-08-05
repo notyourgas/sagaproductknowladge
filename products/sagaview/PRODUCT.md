@@ -3,7 +3,7 @@
 Updated: 5 Agustus 2026
 Evidence status: production deployed + production activated; frame import-order,
 compact all-menu, workspace Session/Output monitor besar, dan free drag rotation
-production
+production; pemisahan Simpan Draft/Publish Frame berstatus local validated
 
 ## Tujuan dokumen
 
@@ -167,6 +167,19 @@ kanan memberi kemiringan positif, tanpa menukar W/H. Angle opsional per slot
 dipersist ke metadata, dirender pada customer Studio, dan diterapkan pada export
 PNG; frame lama default 0 derajat. Commerce canary dipulihkan melalui lifecycle
 resmi sebelum guarded preflight dan deployment; tidak ada intent atau QRIS baru.
+
+## Simpan draft dan publish frame
+
+`CONFIRMED` sebagai keputusan founder melalui `DEC-038`; implementasi source
+Owner/API `9ee5bcca14ace7771a169bf8823df1e9ba7241c9` berstatus
+`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+Workspace Tambah Frame menyediakan dua hasil yang berbeda: `Simpan Draft`
+menyimpan pekerjaan privat tanpa mengaktifkan frame, sedangkan `Publish Frame`
+menjadi aksi utama yang menyimpan draft lalu mempublish versi tersebut agar siap
+dipakai Studio. Bila tahap publish gagal, draft yang sudah tersimpan tetap aman
+dan UI menampilkan alasan API yang spesifik. Kode seperti `SPC 18` dinormalisasi
+menjadi `spc-18`; production tetap memakai source/release aktif yang tercatat di
+bagian Runtime sampai kandidat melewati deployment gate.
 
 ## Session completion dan privacy handoff
 

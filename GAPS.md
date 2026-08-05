@@ -227,6 +227,14 @@ ketika keputusan atau release baru menutup gap.
 
 ### SagaView
 
+- `NEEDS CONFIRMATION`: kandidat `DEC-038` pada source Owner/API
+  `9ee5bcca14ace7771a169bf8823df1e9ba7241c9`
+  memisahkan `Simpan Draft` dan `Publish Frame`, menormalisasi kode ber-spasi,
+  serta mempertahankan draft ketika publish gagal. Local build, focused browser,
+  75 test/613 assertion, audit dependency, route, diff, dan visual check lulus;
+  guarded deployment dan authenticated Owner UAT dengan frame nyata belum
+  dijalankan, sehingga production tetap pada release aktif sebelumnya.
+
 - `NEEDS CONFIRMATION`: free drag rotation per slot aktif pada backend
   `20260805193458-0b655da` dan Studio `20260805193458-2121ebb` setelah commerce
   canary dipulihkan melalui lifecycle resmi dan gate 6/6 lulus. Exact-source

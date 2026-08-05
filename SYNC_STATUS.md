@@ -12,14 +12,14 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-05T20:01:13+07:00 |
+| Waktu pembaruan terakhir | 2026-08-05T20:15:42+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `35c7cd6` |
-| Informasi terakhir disinkronkan | Workspace Output monitor besar SagaView berasal dari source `1accf323ffa9517855f8acf2d93120c01136720d`, release `20260805191930-1accf32`, dan tetap aktif pada Studio kumulatif `20260805193458-2121ebb`; rollback exact dipertahankan. |
+| Baseline sebelum pembaruan | `1accd008` |
+| Informasi terakhir disinkronkan | Keputusan founder `DEC-038` memisahkan `Simpan Draft` dan `Publish Frame` pada kandidat SagaView source `9ee5bcca14ace7771a169bf8823df1e9ba7241c9`; status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED` dan runtime production belum berubah. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | `DEC-035` deprecated oleh koreksi founder `DEC-036`; free drag rotation sekarang production. `DEC-037` tetap berlaku untuk histori release UI compact all-menu. |
-| Error | Tidak ada error release terbuka. Authenticated Owner visual UAT dan Founding Studio Pilot tetap menjadi residual business-readiness. |
+| Konflik | Tidak ada konflik baru. `DEC-038` menambah jalur publish langsung tanpa menghapus kontrak draft privat; production tetap memakai release aktif sampai guarded deployment. |
+| Error | Tidak ada error validasi lokal terbuka. Guarded deployment dan authenticated Owner UAT untuk kandidat draft/publish belum dijalankan. |
 
 ## File yang berubah pada sinkronisasi ini
 
@@ -27,6 +27,7 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `products/sagaview/DOSSIER.md`
 - `products/sagaview/CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
+- `DECISIONS.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `GAPS.md`
 - `CHANGELOG.md`
@@ -48,6 +49,12 @@ rotation aktif secara kumulatif pada Studio `20260805193458-2121ebb`; rollback
 `20260805193458-0b655da`; rollback `20260805133709-5906028`. Authenticated Owner
 visual UAT dengan frame miring nyata dan Founding Studio Pilot tetap dibutuhkan
 sebelum klaim `BUSINESS_READY` mass-scale.
+
+Kandidat source Owner/API `9ee5bcca14ace7771a169bf8823df1e9ba7241c9`
+memisahkan `Simpan Draft` dan
+`Publish Frame` sesuai `DEC-038`. Local validation lulus, tetapi guarded
+deployment dan authenticated Owner UAT dengan frame nyata belum dijalankan;
+runtime production belum berubah.
 
 SagaBio menunggu konfigurasi central identity production, provisioning akun
 owner, UAT login/save/preview/publish/QR, acceptance SMTP dan object storage,
