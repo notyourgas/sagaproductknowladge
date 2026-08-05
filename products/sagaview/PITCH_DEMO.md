@@ -23,7 +23,7 @@ tidak menggantikan physical UAT atau evidence restricted.
 
 | Waktu | Demo | Pesan utama |
 |---|---|---|
-| 0–1 menit | Home dan Pricing | SagaView dijual satuan. Growth Rp200.000: 1 device/10 frame/3 preset/24 jam/2 GB. Pro Rp500.000: 4 device/50 frame/10 preset/168 jam/10 GB. Session/foto fair-use; foto tetap lokal. |
+| 0–1 menit | Home dan Pricing | SagaView dijual satuan. Growth Rp200.000: 1 device/50 frame/3 preset/24 jam/2 GB. Pro Rp500.000: 4 device/100 frame/10 preset/168 jam/10 GB. Session/foto fair-use; foto tetap lokal. |
 | 1–3 menit | Signup, login, dan Owner Console | Trial 14 hari: 7 hari full access, 7 hari plan-limited, tanpa auto-charge. |
 | 3–4 menit | Studio readiness dan device | Owner Console bebas lintas device; start-session mengikuti exclusive lease. |
 | 4–6 menit | Buat sesi, pilih folder, import | Demo 50 foto; jelaskan regression juga mencakup 200 dan 500 foto. |
@@ -33,10 +33,9 @@ tidak menggantikan physical UAT atau evidence restricted.
 | 11–12 menit | Completion/privacy | Customer memanggil operator; operator memverifikasi handoff dan cleanup. |
 | 12–13 menit | Help, Legal, dan plan | Tunjukkan SLA support, privacy/retention, serta CTA subscription. |
 
-Catatan operator: demo production masih harus menyebut limit 10/50. Keputusan
-Growth 50 / Pro 100 sudah `CONFIRMED` melalui `DEC-039` dan tersedia pada
-candidate `c8538060f64cfabce46dc7f837531015673e7a1c`, tetapi belum boleh dijanjikan
-sebagai limit live sebelum deployment dan entitlement production terverifikasi.
+Catatan operator: demo production menyebut Growth 50 dan Pro 100 frame aktif.
+Limit live telah `CONFIRMED` melalui `DEC-039` dan backend release
+`20260805155517-c853806`; custom entitlement yang valid tetap mengikuti API.
 
 ## Reset setelah demo
 

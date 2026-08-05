@@ -12,6 +12,30 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-05
 
+### SagaView active-frame limit expansion production
+
+- Ringkasan: Growth 50 dan Pro 100 frame aktif sekarang menjadi kontrak
+  production live; harga dan seluruh benefit lain tetap.
+- Alasan: menjalankan keputusan founder `DEC-039` setelah guarded release dan
+  entitlement production terverifikasi.
+- Produk/area: SagaView commercial policy, license/trial entitlement, pricing,
+  publish boundary, metadata plan, migration additive, release, dan rollback.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+  business readiness tetap `NEEDS CONFIRMATION`.
+- Source/release backend:
+  `c8538060f64cfabce46dc7f837531015673e7a1c` /
+  `20260805155517-c853806`; Studio
+  `3b66f8d5df3e34aba11c4eab2619cfe44efd06d7` /
+  `20260805155605-3b66f8d`.
+- Gate: backup dan disposable restore, additive migration satu kali,
+  deploy/rollback 6/6, canary, entitlement/metadata 50/100, service/queue,
+  journal, Nginx/header, dan HTTP smoke lulus. Payment serta pilot device state
+  tidak berubah dan rollback exact dipertahankan.
+- Production berubah: ya, pada backend entitlement/metadata dan surface limit;
+  tidak ada perubahan harga, payment, foto customer, atau output.
+- File knowledge: product, dossier, pitch demo, changelog SagaView, master,
+  decisions, portfolio/root changelog, dan sync status.
+
 ### SagaView workspace Izin Foto monitor besar production
 
 - Ringkasan: workspace Izin Foto sekarang maksimum 1400 piksel; mobile/laptop

@@ -3,8 +3,8 @@
 Updated: 5 Agustus 2026
 Evidence status: production deployed + production activated; frame import-order,
 compact all-menu, workspace Session/Output/Izin Foto monitor besar, free drag
-rotation, serta pemisahan Simpan Draft/Publish Frame production; ekspansi limit
-frame 50/100 local-validated dan belum deploy
+rotation, pemisahan Simpan Draft/Publish Frame, serta limit Growth 50/Pro 100
+aktif di production
 
 ## Tujuan dokumen
 
@@ -20,8 +20,8 @@ yang diverifikasi sampai 5 Agustus 2026.
 ## Status production terbaru
 
 - Studio source `3b66f8d5df3e34aba11c4eab2619cfe44efd06d7` aktif sebagai
-  release `20260805221453-3b66f8d`; rollback
-  `20260805203055-2121ebb` dipertahankan.
+  release `20260805155605-3b66f8d`; rollback
+  `20260805221453-3b66f8d` dipertahankan.
 - Workspace Session memakai lebar adaptif sampai 1600 piksel pada monitor
   besar. Layar mobile, laptop compact, dan MacBook tetap memakai reflow lama;
   tidak ada horizontal overflow atau fitur yang disembunyikan.
@@ -32,12 +32,12 @@ yang diverifikasi sampai 5 Agustus 2026.
   lalu memakai dua kartu sesi berdampingan pada QHD/4K di dalam batas 1400
   piksel. Ringkasan, filter, retry, cabut izin, dan workflow privacy tidak
   berubah.
-- Backend source `9ee5bcca14ace7771a169bf8823df1e9ba7241c9` aktif sebagai
-  release `20260805203055-9ee5bcc`; rollback
-  `20260805193458-0b655da` dipertahankan.
-- Candidate source `c8538060f64cfabce46dc7f837531015673e7a1c`
-  menaikkan limit Growth menjadi 50 dan Pro menjadi 100 frame aktif. Status
-  `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production masih 10/50.
+- Backend source `c8538060f64cfabce46dc7f837531015673e7a1c` aktif sebagai
+  release `20260805155517-c853806`; rollback
+  `20260805203055-9ee5bcc` dipertahankan.
+- Entitlement live memberi Growth 50 dan Pro 100 frame aktif. Harga, device,
+  preset, offline grace, storage, laporan, support, payment, dan fair-use tidak
+  berubah.
 - Delivery dan activation `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
   business readiness tetap `NEEDS CONFIRMATION`.
 
@@ -102,14 +102,13 @@ photo selection, editor, review, export, print, offline recovery, dan support.
 
 | Paket | Harga | Device | Frame aktif | Preset | Offline | Aset frame cloud | Laporan/support |
 |---|---:|---:|---:|---:|---:|---:|---|
-| Growth | Rp200.000 | 1 | 10 | 3 | 24 jam | 2 GB | Laporan operasional dasar. |
-| Pro | Rp500.000 | 4 | 50 | 10 | 168 jam | 10 GB | Laporan lanjutan, activity log, dan priority support. |
+| Growth | Rp200.000 | 1 | 50 | 3 | 24 jam | 2 GB | Laporan operasional dasar. |
+| Pro | Rp500.000 | 4 | 100 | 10 | 168 jam | 10 GB | Laporan lanjutan, activity log, dan priority support. |
 
-Tabel di atas adalah kontrak production aktif. `CONFIRMED` melalui `DEC-039`:
-kontrak berikutnya menjadi Growth 50 dan Pro 100 frame aktif. Candidate source
-`c8538060f64cfabce46dc7f837531015673e7a1c` sudah
-`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; harga, device, preset, offline,
-storage, laporan, support, payment, dan fair-use tidak berubah.
+Tabel di atas adalah kontrak production aktif. `CONFIRMED` melalui `DEC-039` dan
+runtime backend `c8538060f64cfabce46dc7f837531015673e7a1c`: Growth 50 dan Pro
+100 frame aktif. Harga, device, preset, offline, storage, laporan, support,
+payment, dan fair-use tidak berubah.
 
 Kebutuhan device atau skala di atas Pro menggunakan penawaran Custom. Jumlah
 session/foto dipasarkan sebagai unlimited dengan fair-use. Foto tetap lokal dan
@@ -127,10 +126,9 @@ Bundle belum ditampilkan atau diaktifkan.
   pergantian device.
 - Tidak ada auto-charge.
 
-Kontrak ini sekarang enforced server-side pada runtime production yang aktif.
-Candidate 50/100 juga menyelaraskan full-access trial ke Pro 100 dan fase
-plan-limited ke paket 50/100, tetapi angka tersebut belum menjadi entitlement
-production sebelum deployment terverifikasi.
+Kontrak ini enforced server-side pada runtime production yang aktif. Full-access
+trial memakai kapasitas authoring Pro 100 dan fase plan-limited mengikuti paket
+Growth 50 atau Pro 100.
 
 ### Support, retention, dan offboarding
 
@@ -169,8 +167,8 @@ dengan 0 slot. Operator wajib memilih PNG/WebP terlebih dahulu, lalu menjalankan
 disesuaikan. `Tambah slot` manual baru aktif setelah deteksi pernah dicoba, dan
 draft tanpa slot tidak dapat disimpan. Frame existing tetap memuat slot
 tersimpannya. Perilaku diwarisi source aktif
-`9ee5bcca14ace7771a169bf8823df1e9ba7241c9` pada release backend
-`20260805203055-9ee5bcc`; delivery `PRODUCTION_DEPLOYED`, activation tetap
+`c8538060f64cfabce46dc7f837531015673e7a1c` pada release backend
+`20260805155517-c853806`; delivery `PRODUCTION_DEPLOYED`, activation tetap
 `PRODUCTION_ACTIVATED`, dan business readiness mass-scale tetap menunggu UAT
 owner terautentikasi serta Founding Studio Pilot.
 
@@ -188,11 +186,11 @@ resmi sebelum guarded preflight dan deployment; tidak ada intent atau QRIS baru.
 
 ## Simpan draft dan publish frame
 
-`CONFIRMED` sebagai keputusan founder melalui `DEC-038`; implementasi source
-Owner/API `9ee5bcca14ace7771a169bf8823df1e9ba7241c9` aktif sebagai release
-`20260805203055-9ee5bcc`; Studio source tetap
-`2121ebb80fa4238e91eef4003f852d34841e923f` dan dipaketkan sebagai release
-`20260805203055-2121ebb`.
+`CONFIRMED` sebagai keputusan founder melalui `DEC-038`; implementasinya
+diwarisi Owner/API aktif `c8538060f64cfabce46dc7f837531015673e7a1c`
+pada release `20260805155517-c853806` dan Studio aktif
+`3b66f8d5df3e34aba11c4eab2619cfe44efd06d7` pada release
+`20260805155605-3b66f8d`.
 Workspace Tambah Frame menyediakan dua hasil yang berbeda: `Simpan Draft`
 menyimpan pekerjaan privat tanpa mengaktifkan frame, sedangkan `Publish Frame`
 menjadi aksi utama yang menyimpan draft lalu mempublish versi tersebut agar siap
@@ -251,8 +249,9 @@ Setiap item minimal 48 piksel, Escape mengembalikan fokus ke pemicu, dan pilihan
 route memindahkan fokus ke konten utama. Matriks 390x844, reflow efektif
 125/150/200 persen, 1280x720, 1440x900, 1512x982, 1920x1080, 2560x1440, dan
 3840x2160 lulus keyboard/focus, forced-colors, reduced-motion, no-overflow, dan
-tepat satu watermark. Source aktif sebagai release Studio
-`20260805170231-2b0331d`; rollback `20260805133709-57c0337` dipertahankan.
+tepat satu watermark. Source tersebut dipromosikan sebagai release Studio
+`20260805170231-2b0331d`; perilakunya diwarisi Studio aktif
+`20260805155605-3b66f8d` dengan rollback `20260805221453-3b66f8d`.
 Promosi kumulatif ini juga membawa Changelog operasional, typography asset,
 route-focus recovery, deep-route compact visibility, dialog PIN reflow, dan
 unsaved-navigation guard yang sebelumnya berstatus candidate. Subscription
@@ -505,15 +504,15 @@ untuk release frontend ini.
 ### Runtime production
 
 - Backend source:
-  `9ee5bcca14ace7771a169bf8823df1e9ba7241c9`.
-- Backend release aktif: `20260805203055-9ee5bcc`.
+  `c8538060f64cfabce46dc7f837531015673e7a1c`.
+- Backend release aktif: `20260805155517-c853806`.
 - Studio source aktif:
   `3b66f8d5df3e34aba11c4eab2619cfe44efd06d7`.
-- Studio release aktif: `20260805221453-3b66f8d`.
+- Studio release aktif: `20260805155605-3b66f8d`.
 - Studio release sebelumnya yang menjadi rollback:
-  `20260805203055-2121ebb`.
+  `20260805221453-3b66f8d`.
 - Backend release sebelumnya yang menjadi rollback:
-  `20260805193458-0b655da`.
+  `20260805203055-9ee5bcc`.
 - Saga Platform release teramati tetap
   `20260804171621-0ab9d8e`; release editor frame tidak mengubah Platform.
 - Additive migration, encrypted backup, disposable restore, candidate gate,

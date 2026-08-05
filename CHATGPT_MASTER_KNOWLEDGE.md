@@ -399,25 +399,23 @@ tetap berada di device studio.
 Status: `PRODUCTION_DEPLOYED` dan `PRODUCTION_ACTIVATED`; business readiness
 mass-scale `NEEDS CONFIRMATION`.
 Harga bulanan: Growth Rp200.000, Pro Rp500.000.
-Growth mencakup 1 device, 10 frame, 3 preset, offline 24 jam, dan 2 GB aset
-frame cloud. Pro mencakup 4 device, 50 frame, 10 preset, offline 168 jam, 10 GB
+Growth mencakup 1 device, 50 frame, 3 preset, offline 24 jam, dan 2 GB aset
+frame cloud. Pro mencakup 4 device, 100 frame, 10 preset, offline 168 jam, 10 GB
 aset frame cloud, laporan lanjutan, activity log, dan priority support. Sesi dan
 foto dipasarkan unlimited dengan fair-use; foto tetap lokal.
 Trial contract: 14 hari dua fase server-side; hari 1–7 full access, hari 8–14
 plan-limited, tanpa auto-charge.
 
-`CONFIRMED` melalui `DEC-039`: kontrak berikutnya menaikkan Growth menjadi 50
-dan Pro menjadi 100 frame aktif tanpa mengubah benefit lain. Candidate
-`c8538060f64cfabce46dc7f837531015673e7a1c` berstatus
-`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production dan entitlement live
-masih 10/50 sampai release terverifikasi.
+`CONFIRMED` melalui `DEC-039`: Growth 50 dan Pro 100 frame aktif telah live
+tanpa mengubah benefit lain. Entitlement production terverifikasi melalui
+backend source `c8538060f64cfabce46dc7f837531015673e7a1c`.
 
 Update terbaru: backend memakai source
-`9ee5bcca14ace7771a169bf8823df1e9ba7241c9`, release
-`20260805203055-9ee5bcc`, sedangkan Studio aktif memakai source
+`c8538060f64cfabce46dc7f837531015673e7a1c`, release
+`20260805155517-c853806`, sedangkan Studio aktif memakai source
 `3b66f8d5df3e34aba11c4eab2619cfe44efd06d7`, release
-`20260805221453-3b66f8d`, dengan rollback Studio
-`20260805203055-2121ebb` dan backend `20260805193458-0b655da`. Workspace
+`20260805155605-3b66f8d`, dengan rollback Studio
+`20260805221453-3b66f8d` dan backend `20260805203055-9ee5bcc`. Workspace
 Session kini memakai lebar adaptif sampai 1600 piksel pada monitor besar tanpa
 merusak reflow mobile/laptop atau menambah horizontal overflow. Workspace
 Output memakai batas 1400 piksel: satu alur vertikal pada mobile/laptop dan dua
@@ -469,16 +467,17 @@ Backend production `0b655da4` mengubah urutan frame baru menjadi 0 slot, pilih
 PNG/WebP, jalankan `Deteksi otomatis`, lalu review/koreksi slot. Penambahan slot
 manual baru aktif setelah deteksi pernah dicoba dan draft tanpa slot diblokir;
 frame existing tetap memuat slot tersimpan. Perilaku diwarisi source aktif
-`9ee5bcca14ace7771a169bf8823df1e9ba7241c9` pada release
-`20260805203055-9ee5bcc` dengan rollback `20260805193458-0b655da`.
+`c8538060f64cfabce46dc7f837531015673e7a1c` pada release
+`20260805155517-c853806` dengan rollback `20260805203055-9ee5bcc`.
 Keputusan founder `DEC-038` memisahkan hasil authoring: `Simpan Draft` menyimpan
 pekerjaan privat, sedangkan `Publish Frame` menjadi CTA utama yang menyimpan
 draft lalu mempublish frame agar siap dipakai Studio. Implementasi Owner/API
-`9ee5bcca14ace7771a169bf8823df1e9ba7241c9` juga menormalisasi `SPC 18`
+yang diwarisi source aktif `c8538060f64cfabce46dc7f837531015673e7a1c`
+juga menormalisasi `SPC 18`
 menjadi `spc-18`, mempertahankan draft
 jika tahap publish gagal, dan menampilkan error API spesifik. Perilaku ini aktif
-di production melalui backend release `20260805203055-9ee5bcc` dan Studio
-`20260805203055-2121ebb`; authenticated Owner UAT dengan frame nyata tetap
+di production melalui backend release `20260805155517-c853806` dan Studio
+`20260805155605-3b66f8d`; authenticated Owner UAT dengan frame nyata tetap
 residual sebelum klaim business-ready mass-scale.
 Implementasi rotate lama yang menukar W/H 90 derajat telah `DEPRECATED` oleh
 koreksi founder `DEC-036`. Perilaku production yang aktif adalah
@@ -507,8 +506,8 @@ foto. Backend, customer flow, local-first, privacy, payment, dan output 4R tidak
 berubah. Workspace Izin Foto sekarang dibatasi 1400 piksel: mobile/laptop
 hingga 1440 tetap satu kolom, sedangkan QHD/4K menampilkan dua kartu sesi
 berdampingan. Source `3b66f8d5df3e34aba11c4eab2619cfe44efd06d7`
-aktif sebagai release `20260805221453-3b66f8d` dengan rollback
-`20260805203055-2121ebb`; consent API, permission, subscription, dan foto lokal
+aktif sebagai release `20260805155605-3b66f8d` dengan rollback
+`20260805221453-3b66f8d`; consent API, permission, subscription, dan foto lokal
 tidak berubah.
 Install App membedakan prompt otomatis siap, manual, dan installed. Setiap
 state memiliki satu action utama, status live, recovery, panduan Chrome/Edge

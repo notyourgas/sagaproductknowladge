@@ -1,5 +1,20 @@
 # Portfolio Changelog
 
+## 2026-08-05 - SagaView active-frame limit expansion production
+
+- Growth 50 dan Pro 100 frame aktif telah live; harga, device, preset, offline,
+  storage, reports, support, payment, dan fair-use tidak berubah.
+- Backend source/release `c8538060f64cfabce46dc7f837531015673e7a1c` /
+  `20260805155517-c853806`; Studio source/release
+  `3b66f8d5df3e34aba11c4eab2619cfe44efd06d7` /
+  `20260805155605-3b66f8d`.
+- Backup, additive migration, disposable restore, deploy/rollback gate 6/6,
+  canary, entitlement/metadata 50/100, service/queue/journal, Nginx/header, dan
+  HTTP smoke lulus. Rollback exact dipertahankan.
+- Delivery dan activation production. Payment serta pilot device state tidak
+  berubah; business readiness massal tetap menunggu authenticated Owner UAT dan
+  Founding Studio Pilot.
+
 ## 2026-08-05 - SagaView Consent large-monitor production
 
 - Studio source `3b66f8d5df3e34aba11c4eab2619cfe44efd06d7` aktif sebagai

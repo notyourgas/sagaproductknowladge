@@ -130,7 +130,7 @@ keputusan pengganti.
 | Alternatif yang dipertimbangkan | Pro tanpa batas; paket multi-term publik; satu harga/bundle; trial tanpa guardrail. |
 | Dampak | Pricing, entitlement, quota, UI, billing, sales copy, trial, dan acceptance test wajib konsisten. Implementasi dan production activation tetap membutuhkan provenance source/release. |
 | Pemberi keputusan | Andreas / founder |
-| Status | `CONFIRMED` |
+| Status | `CONFIRMED`; limit frame SagaView 10/50 pada keputusan ini `DEPRECATED` oleh `DEC-039`, sedangkan harga dan benefit lainnya tetap |
 | Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaView Product](products/sagaview/PRODUCT.md), [Business Strategy](docs/business/BUSINESS_STRATEGY.md) |
 
 ## DEC-009 — Policy default, privacy, offboarding, dan support
@@ -564,7 +564,7 @@ keputusan pengganti.
 | Alternatif yang dipertimbangkan | Mempertahankan 10/50; menaikkan Growth saja; menjadikan limit custom per tenant tanpa kontrak paket baru. |
 | Dampak | Commercial policy, entitlement license/trial, katalog harga owner, validasi publish frame, metadata plan, test, dan release tooling harus menggunakan 50/100 secara konsisten. Migrasi bersifat additive dan rollback runtime tidak mencabut ekspansi entitlement yang sudah diberikan. |
 | Pemberi keputusan | Andreas / founder |
-| Status | `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; source `c8538060f64cfabce46dc7f837531015673e7a1c`, branch `codex/sagaview-frame-limits-s116`; production tetap source/release `9ee5bcca` / `20260805203055-9ee5bcc` dengan limit 10/50 |
+| Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; source `c8538060f64cfabce46dc7f837531015673e7a1c`, branch `codex/sagaview-frame-limits-s116`, backend release `20260805155517-c853806`, Studio release `20260805155605-3b66f8d`; entitlement live Growth 50/Pro 100 |
 | Dokumen terkait | [SagaView Product](products/sagaview/PRODUCT.md), [SagaView Dossier](products/sagaview/DOSSIER.md), [SagaView Pitch Demo](products/sagaview/PITCH_DEMO.md), [SagaView Changelog](products/sagaview/CHANGELOG.md), [Master Knowledge](CHATGPT_MASTER_KNOWLEDGE.md) |
 
 ## DEC-040 - AOGTICVITY mengganti dua lomba menjadi lomba tim bola

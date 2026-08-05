@@ -18,7 +18,7 @@ SagaView berdasarkan runtime production aktif.
 - Free drag rotation slot: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
 - Simpan Draft/Publish Frame: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
 - Ekspansi frame aktif Growth 50 / Pro 100:
-  `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`
+  `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
 
 ## Overview produk
 
@@ -72,9 +72,9 @@ konten operasional sampai 1600 piksel pada layar besar. Before: konten berhenti
 di 1180 piksel sehingga monitor 1920/QHD menyisakan ruang hijau berlebihan.
 After: kartu paket, form persiapan, readiness, dan status step memakai ruang
 monitor secara proporsional, sementara batas teks tetap terbaca. Source Studio
-`4bbd1665222332da7aee28da8d4ce01253b9ef8c` aktif sebagai release
-`20260805181945-4bbd166`; rollback `20260805170231-2b0331d` tersedia dan backend
-tetap `20260805133709-5906028`.
+`4bbd1665222332da7aee28da8d4ce01253b9ef8c` dipromosikan sebagai release
+`20260805181945-4bbd166`; perilakunya diwarisi Studio aktif
+`20260805155605-3b66f8d`.
 
 Workspace Output production memakai batas konten 1400 piksel. Before: tujuan
 output dan format selalu bertumpuk di dalam batas sekitar 896 piksel, sehingga
@@ -83,8 +83,9 @@ After: mobile, zoom tinggi, Windows compact, dan MacBook tetap memakai satu
 alur vertikal; layar besar menampilkan panel tujuan serta format berdampingan
 secara seimbang. Source Studio `1accf323ffa9517855f8acf2d93120c01136720d`
 dipromosikan sebagai release `20260805191930-1accf32`, lalu diwarisi source
-kumulatif aktif `2121ebb80fa4238e91eef4003f852d34841e923f`. Rollback Studio
-aktif menunjuk release Output tersebut. Perubahan tidak menyentuh folder,
+kumulatif aktif `3b66f8d5df3e34aba11c4eab2619cfe44efd06d7` pada release
+`20260805155605-3b66f8d`. Rollback Studio `20260805221453-3b66f8d` tersedia.
+Perubahan tidak menyentuh folder,
 device/session, subscription, payment, foto lokal, atau kontrak export 4R.
 
 Workspace Izin Foto production juga memakai batas konten 1400 piksel. Before:
@@ -94,7 +95,7 @@ mobile, laptop, dan 1440 piksel tetap satu kolom; QHD/4K menampilkan dua kartu
 sesi berdampingan tanpa mengubah ringkasan, filter, retry, cabut izin, consent
 API, permission, atau penyimpanan foto lokal. Source Studio
 `3b66f8d5df3e34aba11c4eab2619cfe44efd06d7` aktif sebagai release
-`20260805221453-3b66f8d`; rollback `20260805203055-2121ebb` tersedia.
+`20260805155605-3b66f8d`; rollback `20260805221453-3b66f8d` tersedia.
 
 Pemilihan frame production memakai preview, selected state, jumlah cetakan,
 serta satu aksi `Terapkan & lanjut`. Editor dan Review kini menjadi alur
@@ -118,9 +119,9 @@ baru tersedia setelah percobaan deteksi, save diblokir selama slot kosong, dan
 frame existing tetap memuat slot tersimpan. Release lulus build, 119 test
 SagaView/1.248 assertions, focused Playwright desktop, serta audit npm/composer
 nol advisory, backup, deploy gate 6/6, canary, bundle check, service/header/
-journal, dan public smoke. Source aktif sebagai release
-`20260805133709-5906028`; rollback backend
-`20260805053500-9b4b68a` dipertahankan.
+journal, dan public smoke. Source tersebut dipromosikan sebagai release
+`20260805133709-5906028`; perilakunya diwarisi backend aktif
+`20260805155517-c853806` dengan rollback `20260805203055-9ee5bcc`.
 
 Implementasi production lama memberi tombol rotate yang menukar W/H 90
 derajat. Founder mengoreksi kontrak tersebut melalui `DEC-036`: rotate yang
@@ -137,8 +138,8 @@ focused Playwright, 44 file test Studio/156 test, lint, typecheck, build/budget,
 visual QA, dan audit dependency lulus. Commerce canary dipulihkan melalui state
 machine resmi; backup, preflight/deploy gate 6/6, canary, service/header/journal,
 HTTP smoke, dan marker bundle production lulus. Perilaku free drag diwarisi
-release aktif backend `20260805203055-9ee5bcc` dan Studio
-`20260805203055-2121ebb`.
+release aktif backend `20260805155517-c853806` dan Studio
+`20260805155605-3b66f8d`.
 
 Mulai sesi production memakai checklist perangkat, paket, folder, frame, dan
 output serta satu CTA kontekstual 48 px. Utility cloud/recovery yang sehat
@@ -223,8 +224,9 @@ sidebar desktop tidak berubah. Red 3/3 menjadi focused 5/5, regresi navigasi
 7/7, unit 156/156, full E2E 113 pass/2 capture-only skip, build/budget, audit
 dependency nol, forced-colors, reduced-motion, no-overflow, dan satu watermark
 lulus. Coverage mencakup 390x844, reflow efektif 125/150/200 persen, Windows
-compact, MacBook, Full HD, QHD, serta 4K. Source aktif sebagai release
-`20260805170231-2b0331d`; rollback `20260805133709-57c0337` tersedia. Permission,
+compact, MacBook, Full HD, QHD, serta 4K. Source tersebut dipromosikan sebagai
+release `20260805170231-2b0331d`; perilakunya diwarisi Studio aktif
+`20260805155605-3b66f8d` dengan rollback `20260805221453-3b66f8d`. Permission,
 device/session, foto, payment, tenant, local-first, dan output 4R tidak berubah.
 Subscription tenant tidak diaktifkan; keputusan founder hanya melewati UAT
 subscription untuk promosi frontend ini dan business readiness tetap terbuka.
@@ -240,7 +242,7 @@ dengan 613 assertion, focused safety 15/15, audit Composer/npm nol vulnerability
 route check, dan diff check lulus. Guarded gate 6/6, backup, canary, payment
 boundary, services, header/journal, route, HTTP smoke, dan bundle marker lulus.
 Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` pada backend release
-`20260805203055-9ee5bcc` dan Studio `20260805203055-2121ebb`.
+`20260805155517-c853806` dan Studio `20260805155605-3b66f8d`.
 
 ## Fitur MVP
 
@@ -280,25 +282,22 @@ subscription, entitlement, ledger, serta cancellation terpisah.
 - Trial 14 hari: 7 hari full access lalu 7 hari plan-limited, tanpa auto-charge.
 - Bundle ditunda.
 
-Growth: 1 device, 10 frame aktif, 3 preset, offline 24 jam, 2 GB aset frame
-cloud, dan laporan dasar. Pro: 4 device, 50 frame aktif, 10 preset, offline 168
+Growth: 1 device, 50 frame aktif, 3 preset, offline 24 jam, 2 GB aset frame
+cloud, dan laporan dasar. Pro: 4 device, 100 frame aktif, 10 preset, offline 168
 jam, 10 GB aset frame cloud, laporan lanjutan, activity log, dan priority
 support. Session/foto dipasarkan unlimited dengan fair-use; foto tetap lokal.
 
-`CONFIRMED` melalui `DEC-039`: kontrak berikutnya menaikkan Growth menjadi 50
-dan Pro menjadi 100 frame aktif. Source
-`c8538060f64cfabce46dc7f837531015673e7a1c` sudah menyelaraskan commercial
+`CONFIRMED` melalui `DEC-039`: Growth 50 dan Pro 100 frame aktif telah live.
+Source `c8538060f64cfabce46dc7f837531015673e7a1c` menyelaraskan commercial
 policy, license/trial entitlement, katalog owner, boundary publish, migrasi
-metadata additive, serta release safety. Statusnya
-`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; seluruh benefit lain tetap dan
-production belum berubah dari 10/50.
+metadata additive, serta release safety. Seluruh benefit lain tetap.
 
 `CONFIRMED` — kontrak ini aktif di production. Source backend aktif adalah
-`9ee5bcca14ace7771a169bf8823df1e9ba7241c9`, release
-`20260805203055-9ee5bcc`. Source Studio aktif adalah
+`c8538060f64cfabce46dc7f837531015673e7a1c`, release
+`20260805155517-c853806`. Source Studio aktif adalah
 `3b66f8d5df3e34aba11c4eab2619cfe44efd06d7`, release
-`20260805221453-3b66f8d`; rollback Studio adalah
-`20260805203055-2121ebb`. Session, Frames, dan Install App kini memakai render
+`20260805155605-3b66f8d`; rollback Studio adalah
+`20260805221453-3b66f8d`. Session, Frames, dan Install App kini memakai render
 awal SSR/client deterministik sehingga tidak memicu hydration mismatch. Output
 Settings hanya menampilkan action simpan saat
 dirty, tidak menutup konten mobile, mempertahankan action sticky desktop, dan
@@ -389,8 +388,9 @@ pada UI customer.
 
 ## Reliability, security, dan operations
 
-- Exact backend/Studio release immutable `20260805203055-9ee5bcc` dan
-  `20260805221453-3b66f8d`; rollback Studio `20260805203055-2121ebb` tersedia.
+- Exact backend/Studio release immutable `20260805155517-c853806` dan
+  `20260805155605-3b66f8d`; rollback backend `20260805203055-9ee5bcc` serta
+  Studio `20260805221453-3b66f8d` tersedia.
 - Release Izin Foto lulus 156 unit, focused 18/18, 116 skenario Playwright
   executable dalam dua evidence round, build/budget, npm audit nol, exact
   preflight, promosi atomik, service/header/journal, empat route 200, serta

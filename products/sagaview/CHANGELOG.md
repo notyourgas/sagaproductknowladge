@@ -4,6 +4,26 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-08-05 - Ekspansi limit frame aktif production
+
+- Klasifikasi: `CONFIRMED` melalui keputusan founder `DEC-039`.
+- Status: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; business readiness tetap
+  `NEEDS CONFIRMATION` untuk penjualan massal.
+- Before: Growth 10 dan Pro 50 frame aktif. After: Growth 50 dan Pro 100 frame
+  aktif; harga serta benefit lain tidak berubah.
+- Backend source `c8538060f64cfabce46dc7f837531015673e7a1c` aktif sebagai
+  release `20260805155517-c853806`; Studio source
+  `3b66f8d5df3e34aba11c4eab2619cfe44efd06d7` aktif sebagai release
+  `20260805155605-3b66f8d`.
+- Rollback backend `20260805203055-9ee5bcc` dan Studio
+  `20260805221453-3b66f8d` dipertahankan.
+- Backup dan disposable restore terverifikasi; migrasi additive tercatat tepat
+  satu kali; deploy dan rollback gate lulus 6/6; entitlement live dan metadata
+  plan membaca Growth 50/Pro 100.
+- Single-device canary, API/login/session/pricing smoke, service, queue,
+  Nginx/header, serta journal lulus. Pilot device dan payment state tidak
+  berubah; tidak ada payment intent atau QRIS baru.
+
 ## 2026-08-05 - Workspace Izin Foto monitor besar production
 
 - Klasifikasi: `CONFIRMED`.
