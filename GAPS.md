@@ -233,7 +233,7 @@ ketika keputusan atau release baru menutup gap.
   production preflight berhenti fail-closed sebelum deploy karena commerce
   canary internal telah diarsipkan Owner dan subscription canary berstatus
   cancelled. Runtime tetap backend `20260805133709-5906028` dan Studio
-  `20260805133709-57c0337`. Penutup membutuhkan otorisasi eksplisit untuk
+  `20260805170231-2b0331d`. Penutup membutuhkan otorisasi eksplisit untuk
   memulihkan canary atau replacement canary yang melewati governance penuh;
   gate tidak boleh dilewati.
 
@@ -245,15 +245,6 @@ ketika keputusan atau release baru menutup gap.
   visual UAT belum diulang. Simulasi drag mouse pada profile sentuh mobile/tablet
   tetap residual non-blocking karena editor ditargetkan desktop; keduanya tidak
   boleh dipakai sebagai bukti `BUSINESS_READY` mass-scale.
-
-- `BLOCKED`: candidate kumulatif compact all-menu source `2b0331d5` lulus
-  red-green, focused/regression, unit 156/156, full E2E 113 pass/2 capture-only
-  skip, build/budget, audit dependency, serta matriks mobile/reflow/Windows
-  compact/MacBook/Full HD/QHD/4K sampai efektif 200 persen. Production tetap
-  `57c0337b` / `20260805053500-57c0337`. Bukti penutup adalah encrypted backup,
-  checksum, disposable restore dan migration preflight yang terikat exact S114,
-  approval, immutable release, service/header/journal, rollback proof, serta
-  public smoke exact source.
 
 - `CONFIRMED`: limit Growth/Pro, trial guardrail, cloud frame storage,
   local-photo boundary, retention, offboarding, dan support SLA sudah
@@ -276,14 +267,16 @@ ketika keputusan atau release baru menutup gap.
   end-to-end.
 - `TODO`: S72 auto-trial 7 hari masih `PRODUCTION HOLD`; activation memerlukan
   release Saga Platform dan authenticated SagaView UAT setelah provisioning.
-- `BLOCKED`: candidate kumulatif navigasi Changelog, typography visual QA, dan
-  route focus recovery Studio `2bb868f` lulus seluruh gate lokal dan tersedia
-  di branch `codex/s105-studio-route-focus`, tetapi production tetap `57c0337b` /
-  `20260805053500-57c0337`. Bukti penutup adalah fresh
-  encrypted backup/checksum/disposable restore exact S105, approval
-  deploy, immutable release, service/header/journal, dan public smoke.
-
 ### Gap SagaView ditutup
+
+- `CONFIRMED` pada 5 Agustus 2026: gap compact all-menu dan seluruh source
+  kumulatif sebelumnya (Changelog, typography, route focus, deep-route compact,
+  dialog PIN reflow, dan unsaved-navigation guard) aktif pada Studio source
+  `2b0331d5`, release `20260805170231-2b0331d`. Backup/restore, backend gate,
+  atomic activation, live Playwright 11/11, enam endpoint, Nginx/header/journal,
+  satu watermark, no-overflow, serta visual 390x844 dan 1440x900 lulus. Rollback
+  `20260805133709-57c0337` tersedia. Waiver subscription tenant tidak menutup
+  kebutuhan Founding Studio Pilot atau business readiness.
 
 - `CONFIRMED` pada 5 Agustus 2026: distorsi artwork landscape, arah putar yang
   tidak bekerja, serta hilangnya feather/resize visual ditutup pada source

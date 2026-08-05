@@ -12,14 +12,14 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-05T14:23:44+07:00 |
+| Waktu pembaruan terakhir | 2026-08-05T17:11:35+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `0b3d4edf3559a9c486d8c41f039593098f381d39` |
-| Informasi terakhir disinkronkan | SagaView free drag rotation source Owner/API `19ac8ab8653de0bf2edc18d164308ea8bbde3640` dan Studio `e48be94ab418605f81f8d1484043becfc9fa8a4a` berstatus `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap backend `20260805133709-5906028` dan Studio `20260805133709-57c0337`. |
+| Baseline sebelum pembaruan | `14388ca477bf2f095ae7e132701c44067ddfda3f` |
+| Informasi terakhir disinkronkan | SagaView compact all-menu source Studio `2b0331d53dc4c590dee5329ef892ea01fa4a8a97` aktif sebagai release `20260805170231-2b0331d`; backend tetap `20260805133709-5906028`, rollback Studio `20260805133709-57c0337`, dan free drag rotation tetap candidate. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | `DEC-035` deprecated oleh koreksi founder `DEC-036`; perilaku accepted adalah free drag angle, bukan pertukaran W/H 90 derajat. |
-| Error | Production preflight berhenti fail-closed sebelum deploy karena commerce canary internal telah diarsipkan Owner; tidak ada runtime/payment state yang diubah. |
+| Konflik | `DEC-035` deprecated oleh koreksi founder `DEC-036`; free drag rotation belum production. `DEC-037` mengizinkan release UI compact all-menu tanpa aktivasi subscription tenant, tetapi tidak mengubah entitlement atau business readiness. |
+| Error | Tidak ada error release UI terbuka. UAT subscription tenant sengaja dilewati; Founding Studio Pilot dan free drag rotation tetap terpisah sebagai gap. |
 
 ## File yang berubah pada sinkronisasi ini
 
@@ -42,6 +42,11 @@ perangkat sebelum operational activation.
 SagaBook S119 menunggu owner mengganti copy alamat placeholder pada storefront
 aktif dan menyelesaikan satu booking nyata terkontrol sebelum klaim
 `BUSINESS_READY` atau distribusi link secara luas.
+
+SagaView compact all-menu aktif pada release Studio
+`20260805170231-2b0331d`; rollback `20260805133709-57c0337` dipertahankan.
+UAT subscription tenant dilewati atas keputusan founder dan tidak boleh
+ditafsirkan sebagai bukti `BUSINESS_READY`.
 
 SagaView free drag rotation menunggu otorisasi eksplisit untuk memulihkan
 commerce canary internal yang diarsipkan Owner atau menyiapkan replacement

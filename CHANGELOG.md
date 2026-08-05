@@ -12,6 +12,30 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-05
 
+### SagaView compact all-menu production
+
+- Ringkasan: seluruh delapan route Studio Console sekarang dapat dibuka dari
+  satu disclosure aksesibel pada mobile/reflow, sementara layar desktop tetap
+  memakai sidebar langsung.
+- Alasan: menutup gap penemuan fitur pada mobile, laptop dengan zoom tinggi,
+  MacBook, Windows compact, serta monitor hingga 4K.
+- Produk/area: SagaView Studio shell, navigasi, keyboard/focus, touch target,
+  forced-colors, reduced-motion, viewport/zoom, watermark, edge header, release,
+  dan rollback. Subscription/entitlement tidak diubah.
+- Klasifikasi: `CONFIRMED`; source
+  `2b0331d53dc4c590dee5329ef892ea01fa4a8a97`, release Studio
+  `20260805170231-2b0331d`, rollback `20260805133709-57c0337`.
+- Gate: format/lint/typecheck; unit 156/156; full E2E 113 pass/2 capture-only
+  skip; build/budget; audit nol vulnerability; backup/restore; backend schema,
+  route, security, dan backup; live Playwright 11/11; enam endpoint 200; service,
+  Nginx/header tunggal, journal, dan screenshot 390x844 serta 1440x900 lulus.
+- Status: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; `BUSINESS_READY` belum
+  diklaim. Founder melewati aktivasi subscription tenant khusus release UI ini;
+  tidak ada subscription, entitlement, payment, migration, atau data tenant
+  yang dimutasi.
+- File knowledge: product, dossier, changelog SagaView, master, decisions, gaps,
+  portfolio/root changelog, dan sync status.
+
 ### SagaView free drag rotation candidate
 
 - Ringkasan: ikon rotate setiap slot kini menjadi drag handle sudut bebas;

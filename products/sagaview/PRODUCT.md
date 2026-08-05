@@ -2,7 +2,7 @@
 
 Updated: 5 Agustus 2026
 Evidence status: production deployed + production activated; frame import-order
-production, free drag rotation dan compact all-menu candidate belum deployed
+dan compact all-menu production, free drag rotation masih candidate
 
 ## Tujuan dokumen
 
@@ -178,24 +178,24 @@ melalui release governance.
 - setiap surface menampilkan tepat satu `Powered by SagaView` yang accessible;
   signature tidak dimasukkan ke export foto, hasil print, invoice, atau receipt.
 
-`CONFIRMED` sebagai candidate, bukan production: source `808470c1` membuat
+`CONFIRMED` sebagai production melalui source kumulatif `2b0331d5`: source
+`808470c1` membuat
 dialog PIN override paket dapat dikenali screen reader, menahan fokus, ditutup
 dengan Escape, dan tetap operabel pada reflow laptop efektif 125-200 persen.
 Body dialog dapat discroll tanpa mengeluarkan CTA dari visual viewport; input
 minimal 44 piksel, close/action 48 piksel, serta Axe, forced-colors,
-reduced-motion, no-overflow, dan satu watermark lulus. Production tetap source
-`57c0337b`; deploy menunggu release-safety exact S111 dan approval.
+reduced-motion, no-overflow, dan satu watermark lulus.
 
-`CONFIRMED` sebagai candidate terbaru, bukan production: source `707a6f61`
+`CONFIRMED` sebagai production melalui source kumulatif `2b0331d5`: source
+`707a6f61`
 membuat penjaga navigasi perubahan aktif pada General, Brand, dan Output menjadi
 alert dialog bernama dengan focus trap, Escape, internal scroll, dan tiga aksi
 48 piksel. Alur Simpan & Pindah tetap meneruskan operator ke route tujuan;
 persistence dan kontrak setting tidak berubah. Matriks 390x844, 1280x720,
 1440x900, serta reflow efektif 125-200 persen lulus Axe, keyboard/focus,
-forced-colors, reduced-motion, no-overflow, dan satu watermark. Production tetap
-source `57c0337b`; deploy menunggu release-safety exact S112 dan approval.
+forced-colors, reduced-motion, no-overflow, dan satu watermark.
 
-`CONFIRMED` sebagai candidate terbaru, bukan production: source `2b0331d5`
+`CONFIRMED` sebagai production: source `2b0331d5`
 menambahkan disclosure `Semua menu` pada header compact Studio Console. Delapan
 route kini dapat dilihat dan dipilih langsung pada mobile serta reflow zoom,
 tanpa menghapus navigasi sebelumnya/berikutnya; desktop tetap memakai sidebar.
@@ -203,8 +203,13 @@ Setiap item minimal 48 piksel, Escape mengembalikan fokus ke pemicu, dan pilihan
 route memindahkan fokus ke konten utama. Matriks 390x844, reflow efektif
 125/150/200 persen, 1280x720, 1440x900, 1512x982, 1920x1080, 2560x1440, dan
 3840x2160 lulus keyboard/focus, forced-colors, reduced-motion, no-overflow, dan
-tepat satu watermark. Production tetap source `57c0337b`; deploy menunggu
-release-safety exact S114 dan approval.
+tepat satu watermark. Source aktif sebagai release Studio
+`20260805170231-2b0331d`; rollback `20260805133709-57c0337` dipertahankan.
+Promosi kumulatif ini juga membawa Changelog operasional, typography asset,
+route-focus recovery, deep-route compact visibility, dialog PIN reflow, dan
+unsaved-navigation guard yang sebelumnya berstatus candidate. Subscription
+tenant tidak diaktifkan atau diubah; waiver owner hanya melewati UAT subscription
+untuk release frontend ini.
 
 ## Workflow preset, editor, dan review
 
@@ -400,12 +405,12 @@ release-safety exact S114 dan approval.
   reduced-motion tidak lagi mewarisi smooth scroll;
 - dependency backend dan Studio yang memiliki advisory sudah dipatch. Composer
   audit dan npm audit production sama-sama melaporkan nol vulnerability;
-- backend source `9b4b68a126cbf5f98f67ddf562eedbc93df60a2f`, Studio source
-  `57c0337b43b46229253ce89ace39f2ed587fc2d7`.
+- backend source `5906028703759d49ef930a7363c5efc293f6be97`, Studio source
+  `2b0331d53dc4c590dee5329ef892ea01fa4a8a97`.
 
 ## Navigasi Changelog operasional
 
-`CONFIRMED` - candidate `IMPLEMENTED_NOT_DEPLOYED`:
+`CONFIRMED` - production melalui source kumulatif `2b0331d5`:
 
 - route `/admin/changelog` mengganti 47 detail release yang seluruhnya terbuka
   dengan latest-release hierarchy, pencarian versi/perubahan, empat filter,
@@ -420,12 +425,11 @@ release-safety exact S114 dan approval.
 - focused Changelog 3/3, gabungan accessibility/navigation 12/12, unit 156/156,
   E2E 99/99 termasuk import 50/200/500, build/budget, dan audit 0; screenshot
   evidence kini berukuran viewport exact 390x844 dan 1440x900;
-- production tetap source `57c0337b`, release `20260805053500-57c0337` sampai
-  fresh backup/restore exact candidate dan approval deploy tersedia.
+- aktif pada release `20260805170231-2b0331d`.
 
 ## Sidebar deep-route lintas layar
 
-`CONFIRMED` - candidate `IMPLEMENTED_NOT_DEPLOYED`:
+`CONFIRMED` - production melalui source kumulatif `2b0331d5`:
 
 - pada Windows compact 1280x720, route dalam seperti Install App sebelumnya
   aktif tetapi berada di luar area sidebar yang terlihat;
@@ -438,8 +442,7 @@ release-safety exact S114 dan approval.
 - red proof 1/1 gagal berubah menjadi focused 6/6 lulus; format, lint,
   typecheck, unit 156/156, full E2E 105/105 termasuk import 50/200/500,
   build/budget, dan npm audit nol lulus;
-- production tetap source `57c0337b`, release `20260805053500-57c0337` sampai
-  fresh backup/restore exact S110 dan approval deploy tersedia.
+- aktif pada release `20260805170231-2b0331d`.
 
 ## Status saat ini
 
@@ -451,13 +454,13 @@ release-safety exact S114 dan approval.
 ### Runtime production
 
 - Backend source:
-  `9b4b68a126cbf5f98f67ddf562eedbc93df60a2f`.
-- Backend release aktif: `20260805053500-9b4b68a`.
+  `5906028703759d49ef930a7363c5efc293f6be97`.
+- Backend release aktif: `20260805133709-5906028`.
 - Studio source aktif:
-  `57c0337b43b46229253ce89ace39f2ed587fc2d7`.
-- Studio release aktif: `20260805053500-57c0337`.
+  `2b0331d53dc4c590dee5329ef892ea01fa4a8a97`.
+- Studio release aktif: `20260805170231-2b0331d`.
 - Studio release sebelumnya yang menjadi rollback:
-  `20260803221207-57c0337`.
+  `20260805133709-57c0337`.
 - Saga Platform release teramati tetap
   `20260804171621-0ab9d8e`; release editor frame tidak mengubah Platform.
 - Additive migration, encrypted backup, disposable restore, candidate gate,

@@ -11,8 +11,7 @@ SagaView berdasarkan runtime production aktif.
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED`
 - Business readiness: `NEEDS CONFIRMATION` untuk penjualan massal
-- Candidate UI Studio compact all-menu terbaru: `LOCAL_VALIDATED /
-  STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`
+- UI Studio compact all-menu: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
 
 ## Overview produk
 
@@ -176,7 +175,7 @@ dependency nol. Production belum berubah karena receipt backup/restore exact
 S112 dan approval belum tersedia; persistence setting dan kontrak bisnis tidak
 berubah.
 
-Candidate all-menu compact source kumulatif `2b0331d5` menutup gap akses route
+All-menu compact source kumulatif `2b0331d5` menutup gap akses route
 Studio Console pada layar sempit dan reflow zoom. Sebelumnya indikator
 `Menu n/8` hanya berupa teks dan sebagian route berada di luar area horizontal;
 operator harus berpindah satu halaman untuk menemukan route lain. Indikator kini
@@ -187,10 +186,11 @@ sidebar desktop tidak berubah. Red 3/3 menjadi focused 5/5, regresi navigasi
 7/7, unit 156/156, full E2E 113 pass/2 capture-only skip, build/budget, audit
 dependency nol, forced-colors, reduced-motion, no-overflow, dan satu watermark
 lulus. Coverage mencakup 390x844, reflow efektif 125/150/200 persen, Windows
-compact, MacBook, Full HD, QHD, serta 4K. Production belum berubah karena
-receipt backup/checksum/disposable restore dan migration preflight exact S114
-serta approval belum tersedia; permission, device/session, foto, payment,
-tenant, local-first, dan output 4R tidak berubah.
+compact, MacBook, Full HD, QHD, serta 4K. Source aktif sebagai release
+`20260805170231-2b0331d`; rollback `20260805133709-57c0337` tersedia. Permission,
+device/session, foto, payment, tenant, local-first, dan output 4R tidak berubah.
+Subscription tenant tidak diaktifkan; keputusan founder hanya melewati UAT
+subscription untuk promosi frontend ini dan business readiness tetap terbuka.
 
 ## Fitur MVP
 
@@ -236,11 +236,11 @@ jam, 10 GB aset frame cloud, laporan lanjutan, activity log, dan priority
 support. Session/foto dipasarkan unlimited dengan fair-use; foto tetap lokal.
 
 `CONFIRMED` — kontrak ini aktif di production. Source backend aktif adalah
-`9b4b68a126cbf5f98f67ddf562eedbc93df60a2f`, release
-`20260805053500-9b4b68a`. Source Studio aktif adalah
-`57c0337b43b46229253ce89ace39f2ed587fc2d7`, release
-`20260805053500-57c0337`; rollback Studio adalah
-`20260803221207-57c0337`. Session, Frames, dan Install App kini memakai render
+`5906028703759d49ef930a7363c5efc293f6be97`, release
+`20260805133709-5906028`. Source Studio aktif adalah
+`2b0331d53dc4c590dee5329ef892ea01fa4a8a97`, release
+`20260805170231-2b0331d`; rollback Studio adalah
+`20260805133709-57c0337`. Session, Frames, dan Install App kini memakai render
 awal SSR/client deterministik sehingga tidak memicu hydration mismatch. Output
 Settings hanya menampilkan action simpan saat
 dirty, tidak menutup konten mobile, mempertahankan action sticky desktop, dan

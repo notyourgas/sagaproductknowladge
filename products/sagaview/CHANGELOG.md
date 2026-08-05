@@ -4,6 +4,26 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-08-05 - Compact all-menu Studio production
+
+- Klasifikasi: `CONFIRMED`.
+- Status: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; business readiness tetap
+  `NEEDS CONFIRMATION`.
+- Source Studio `2b0331d53dc4c590dee5329ef892ea01fa4a8a97` aktif sebagai
+  release `20260805170231-2b0331d`; rollback
+  `20260805133709-57c0337` dipertahankan. Backend tetap
+  `20260805133709-5906028`.
+- Header compact membuka seluruh delapan route berkelompok dengan item 48 px,
+  current state, Escape focus restoration, dan fokus konten setelah navigasi.
+  Sidebar desktop dan navigasi paged lama tetap tersedia.
+- Unit 156/156, full E2E 113 pass/2 capture-only skip, build/budget, audit nol,
+  backup/restore, backend gate teknis, live Playwright 11/11, enam endpoint 200,
+  service/header/journal, no-overflow, satu watermark, serta visual 390x844 dan
+  1440x900 lulus.
+- Aktivasi subscription tenant dilewati atas keputusan founder hanya untuk
+  promosi frontend ini. Tidak ada entitlement, subscription, payment,
+  migration, tenant isolation, foto, atau output 4R yang berubah.
+
 ## 2026-08-05 - Free drag rotation slot candidate
 
 - Klasifikasi: `CONFIRMED` sebagai koreksi founder melalui `DEC-036`.

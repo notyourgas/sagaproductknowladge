@@ -407,10 +407,10 @@ Trial contract: 14 hari dua fase server-side; hari 1–7 full access, hari 8–1
 plan-limited, tanpa auto-charge.
 
 Update terbaru: backend memakai source
-`9b4b68a126cbf5f98f67ddf562eedbc93df60a2f`, release
-`20260805053500-9b4b68a`, sedangkan Studio aktif memakai source
-`57c0337b43b46229253ce89ace39f2ed587fc2d7`, release
-`20260805053500-57c0337`. Login dan Studio masing-masing merender tepat satu
+`5906028703759d49ef930a7363c5efc293f6be97`, release
+`20260805133709-5906028`, sedangkan Studio aktif memakai source
+`2b0331d53dc4c590dee5329ef892ea01fa4a8a97`, release
+`20260805170231-2b0331d`. Login dan Studio masing-masing merender tepat satu
 `Powered by SagaView`; footer Studio responsif memakai satu node DOM, memiliki
 ruang aman mobile, dan tetap terbaca pada forced-colors. Navigasi mobile
 berikutnya/sebelumnya membawa target sampai terlihat penuh dan menghormati
@@ -465,7 +465,7 @@ angle negatif/positif tanpa menukar W/H. Candidate Owner/API
 menerapkannya di customer render serta export PNG. Candidate berstatus
 `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; preflight fail-closed karena
 commerce canary internal telah diarsipkan Owner. Runtime tetap backend
-`20260805133709-5906028` dan Studio `20260805133709-57c0337`. Activation runtime
+`20260805133709-5906028` dan Studio `20260805170231-2b0331d`. Activation runtime
 lama tetap `PRODUCTION_ACTIVATED`, tetapi free rotation belum production dan
 owner visual UAT tetap residual sebelum klaim business-ready mass-scale.
 Output Settings kini hanya menampilkan Reset/Simpan saat dirty, menaruh action
@@ -495,7 +495,7 @@ tetap memakai permission serta kontrak operasional lama; perubahan tidak
 menyentuh customer flow, local-first, payment, privacy foto, atau output 4R.
 
 Signature login dan footer Studio sudah aktif pada backend release
-`20260805053500-9b4b68a` dan Studio release `20260805053500-57c0337`. Login dan
+`20260805133709-5906028` dan Studio release `20260805170231-2b0331d`. Login dan
 Studio masing-masing memiliki satu `Powered by SagaView`; Studio menggunakan
 satu node footer responsif. Composer/npm audit, full regression, release gate,
 dan public browser smoke mobile/desktop lulus. Business readiness mass-scale
@@ -507,11 +507,10 @@ empty/reset recovery, dan CTA kembali ke Session. Kandidat juga menutup delapan
 respons font 403 dari junction dependency serta memindahkan fokus ke konten
 utama sesudah navigasi route. Kandidat lulus focused 3/3, gabungan
 accessibility/navigation 12/12, 156 unit, 99 E2E termasuk import 50/200/500,
-build, visual exact 390x844 dan 1440x900, serta audit 0. Statusnya
-`LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`; production tetap Studio `57c0337b` /
-`20260805053500-57c0337` sampai fresh backup/restore exact candidate dan
-approval deploy tersedia. Tepat satu watermark non-fixed tetap dijaga dan
-tidak masuk artefak bisnis.
+build, visual exact 390x844 dan 1440x900, serta audit 0. Perubahan ini sekarang
+termasuk dalam source kumulatif Studio `2b0331d5`, release
+`20260805170231-2b0331d`. Tepat satu watermark non-fixed tetap dijaga dan tidak
+masuk artefak bisnis.
 
 Candidate Studio terbaru `7ad38ef` menutup gap sidebar deep-route pada Windows
 compact: route Install App yang aktif tetapi tersembunyi pada 1280x720 kini
@@ -519,20 +518,18 @@ otomatis dibawa ke area terlihat dengan scroll `nearest` dan reduced-motion,
 tanpa mengambil fokus dari konten utama. Matriks 390x844, 1280x720, 1440x900,
 1512x982, dan 2560x1440 lulus; red 1/1 menjadi focused 6/6, unit 156/156, full
 E2E 105/105 termasuk import 50/200/500, build/budget, forced-colors,
-no-overflow, target 44 piksel, satu watermark, dan npm audit nol lulus. Status
-`LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`; production tetap
-Studio `57c0337b` / `20260805053500-57c0337` sampai release-safety exact S110
-dan approval tersedia.
+no-overflow, target 44 piksel, satu watermark, dan npm audit nol lulus.
+Perubahan ini sekarang termasuk dalam source kumulatif Studio `2b0331d5`,
+release `20260805170231-2b0331d`.
 
 Candidate Studio terbaru berikutnya `808470c1` menutup gap dialog PIN pada
 override paket: dialog memiliki nama aksesibel, focus trap, Escape, scroll body
 internal, serta target input/action 44/48 piksel. Matriks 390x844, 1280x720,
 1440x900, dan reflow efektif 125/150/200 persen lulus Axe, forced-colors,
 reduced-motion, no-overflow, satu watermark, 156 unit, 106 E2E pass dengan satu
-capture-only skip, build/budget, serta audit nol. Status
-`LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`; production tetap
-Studio `57c0337b` / `20260805053500-57c0337` sampai release-safety exact S111
-dan approval tersedia. Validasi PIN dan kontrak bisnis tidak berubah.
+capture-only skip, build/budget, serta audit nol. Perubahan ini sekarang
+termasuk dalam source kumulatif Studio `2b0331d5`, release
+`20260805170231-2b0331d`. Validasi PIN dan kontrak bisnis tidak berubah.
 
 Candidate Studio terbaru berikutnya `707a6f61` menutup gap penjaga navigasi
 perubahan aktif pada General, Brand, dan Output. Dialog sekarang mempunyai nama
@@ -540,12 +537,11 @@ aksesibel, focus trap, Escape, internal scroll, overlay benar, serta tiga aksi
 48 piksel; Simpan & Pindah tetap meneruskan route end-to-end. Matriks 390x844,
 1280x720, 1440x900, dan reflow efektif 125/150/200 persen lulus Axe,
 forced-colors, reduced-motion, no-overflow, satu watermark, 156 unit, 108 E2E
-pass dengan dua capture-only skip, build/budget, serta audit nol. Status
-`LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`; production tetap
-Studio `57c0337b` / `20260805053500-57c0337` sampai release-safety exact S112
-dan approval tersedia. Persistence setting dan kontrak bisnis tidak berubah.
+pass dengan dua capture-only skip, build/budget, serta audit nol. Perubahan ini
+sekarang termasuk dalam source kumulatif Studio `2b0331d5`, release
+`20260805170231-2b0331d`. Persistence setting dan kontrak bisnis tidak berubah.
 
-Candidate Studio terbaru `2b0331d5` menutup gap penemuan route pada compact dan
+Studio production `2b0331d5` menutup gap penemuan route pada compact dan
 reflow zoom. Indikator `Menu n/8` kini merupakan disclosure 44 piksel yang
 membuka semua delapan route berkelompok dengan item 48 piksel, current state,
 Escape focus restoration, dan fokus konten setelah navigasi. Navigasi paged
@@ -554,9 +550,12 @@ efektif 125/150/200 persen, 1280x720, 1440x900, 1512x982, 1920x1080,
 2560x1440, dan 3840x2160 lulus; red 3/3 menjadi focused 5/5, regresi 7/7,
 156 unit, 113 E2E pass dengan dua capture-only skip, build/budget,
 forced-colors, reduced-motion, no-overflow, satu watermark, dan audit nol.
-Status `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`; production
-tetap Studio `57c0337b` / `20260805053500-57c0337` sampai release-safety exact
-S114 dan approval tersedia. Kontrak bisnis dan data tidak berubah.
+Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; release
+`20260805170231-2b0331d`, rollback `20260805133709-57c0337`. Backup/restore,
+gate backend teknis, atomic activation, live Playwright 11/11, enam endpoint,
+service/header/journal, dan screenshot public-safe lulus. Kontrak bisnis dan
+data tidak berubah. Aktivasi subscription tenant dilewati khusus release UI
+ini tanpa memutasi subscription/entitlement; `BUSINESS_READY` belum diklaim.
 
 Candidate Saga Platform `dcb5a3f3` menyiapkan signup SagaView auto-trial 7 hari
 tanpa approval owner/email verification. Login tetap menunggu provisioning

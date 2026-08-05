@@ -524,3 +524,17 @@ keputusan pengganti.
 | Pemberi keputusan | Andreas / founder |
 | Status | `CONFIRMED`; Owner/API source `19ac8ab8653de0bf2edc18d164308ea8bbde3640` dan Studio source `e48be94ab418605f81f8d1484043becfc9fa8a4a` berstatus `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; promotion diblokir preflight commerce canary yang telah diarsipkan Owner |
 | Dokumen terkait | [SagaView Product](products/sagaview/PRODUCT.md), [SagaView Dossier](products/sagaview/DOSSIER.md), [SagaView Changelog](products/sagaview/CHANGELOG.md), [Gaps](GAPS.md) |
+
+## DEC-037 - Release UI SagaView tidak menunggu aktivasi subscription tenant
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-05 |
+| Topik | Gate promosi frontend compact all-menu SagaView |
+| Keputusan | Aktivasi subscription tenant dilewati untuk release frontend Studio `2b0331d5`. Seluruh gate teknis lain tetap wajib dan subscription, entitlement, payment, tenant isolation, serta data tenant tidak boleh diubah. Waiver ini tidak membuktikan UAT tenant berlangganan dan tidak mengubah status business readiness. |
+| Alasan | Founder meminta pekerjaan UI/UX dilanjutkan tanpa menunggu aktivasi subscription tenant, sementara kandidat frontend tidak membawa migration atau perubahan kontrak bisnis. |
+| Alternatif yang dipertimbangkan | Menahan seluruh release UI sampai subscription pilot aktif; mengaktifkan subscription hanya untuk melewati gate; mengubah entitlement. |
+| Dampak | Source Studio `2b0331d53dc4c590dee5329ef892ea01fa4a8a97` dipromosikan setelah backup/restore, backend schema/route/security/backup, build, audit, atomic switch, service/header/journal, dan live browser acceptance lulus. Business readiness tetap `NEEDS CONFIRMATION` dan Founding Studio Pilot tetap wajib sebelum klaim mass-scale. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED`; release Studio `20260805170231-2b0331d`, rollback `20260805133709-57c0337` |
+| Dokumen terkait | [SagaView Product](products/sagaview/PRODUCT.md), [SagaView Dossier](products/sagaview/DOSSIER.md), [SagaView Changelog](products/sagaview/CHANGELOG.md), [Gaps](GAPS.md) |

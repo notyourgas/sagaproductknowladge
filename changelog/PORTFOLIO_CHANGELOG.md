@@ -1,5 +1,21 @@
 # Portfolio Changelog
 
+## 2026-08-05 - SagaView compact all-menu production
+
+- Studio source `2b0331d53dc4c590dee5329ef892ea01fa4a8a97` aktif sebagai
+  release `20260805170231-2b0331d`; rollback
+  `20260805133709-57c0337` tersedia dan backend tetap
+  `20260805133709-5906028`.
+- Mobile/reflow kini membuka seluruh delapan route dari satu disclosure; desktop
+  tetap memakai sidebar. Coverage mencakup 390x844, zoom efektif 150/200%,
+  Windows compact, MacBook, Full HD, QHD, dan 4K.
+- Exact-source acceptance, audit dependency, backup/restore, backend gate,
+  atomic activation, service/header/journal, enam endpoint, live Playwright
+  11/11, dan dua screenshot public-safe lulus.
+- Delivery `PRODUCTION_DEPLOYED`, activation `PRODUCTION_ACTIVATED`, business
+  readiness tetap belum diklaim. Waiver subscription tenant bersifat khusus
+  release UI dan tidak mengubah entitlement atau data tenant.
+
 ## 2026-08-05 - SagaView free drag rotation candidate
 
 - Koreksi founder mengganti rotate klik 90 derajat dengan drag angle bebas:
