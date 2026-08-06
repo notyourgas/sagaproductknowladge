@@ -1,5 +1,20 @@
 # Portfolio Changelog
 
+## 2026-08-06 - SagaView bulk frame export candidate
+
+- `DEC-044` menetapkan Owner dapat mencentang frame atau memilih seluruh hasil
+  filter lalu mengekspor semua pilihan sebagai file `.sagaview-frame`
+  terpisah yang kompatibel dengan import production.
+- Source `73979542ceeb8fc11e658c7d27346ca983dc163f`; build, npm audit nol,
+  focused select-all/filter/two-download Playwright, regresi export/import,
+  backend 12/12 dengan 45 assertion, dan diff check lulus.
+- Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Production tetap
+  backend `1158926b` / `20260806050513-1158926`; pricing, entitlement,
+  payment, device/session, foto customer, Studio runtime, API, dan database
+  tidak berubah.
+- Residual adalah Owner UAT dengan galeri nyata/izin multi-download, guarded
+  deploy, live smoke, dan rollback verification.
+
 ## 2026-08-06 - SagaBook report branch context S125 production
 
 - `/admin/reports` tidak lagi menampilkan total/baris cabang lain setelah

@@ -226,6 +226,24 @@ sudah ada dan tidak pernah auto-publish. Delivery dan activation berstatus
 Authenticated Owner UAT lintas dua akun tetap residual sebelum klaim
 business-ready mass-scale.
 
+## Bulk export Galeri Frame
+
+`CONFIRMED` melalui `DEC-044`, dengan delivery `LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED` pada source
+`73979542ceeb8fc11e658c7d27346ca983dc163f`. Owner dapat mencentang setiap
+kartu atau memakai `Pilih semua hasil` yang mengikuti pencarian, status, dan
+orientasi yang sedang tampil. Pilihan dari filter lain tetap tersimpan; UI
+menunjukkan jumlah pilihan, state parsial, `Kosongkan`, dan `Export dipilih`.
+
+Batch memproses frame secara berurutan agar pemakaian memori tetap terbatas.
+Setiap hasil tetap `.sagaview-frame` schema versi 1 dan melewati kontrak
+magic-byte, ukuran, dimensi, checksum, metadata portable, serta sanitasi
+tenant/customer yang sama dengan export production. Browser dapat meminta izin
+beberapa download. Tidak ada route API, migration, pricing, entitlement,
+payment, device/session, foto customer, atau Studio runtime baru. Production
+tetap backend source `1158926b2be35887aff7dc8a09cb0111e8a71fc7` pada release
+`20260806050513-1158926` sampai guarded deploy dijalankan.
+
 ## Session completion dan privacy handoff
 
 `CONFIRMED` — production:

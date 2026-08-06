@@ -239,6 +239,14 @@ ketika keputusan atau release baru menutup gap.
 
 ### SagaView
 
+- `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: `DEC-044` menambahkan pilihan
+  per frame, `Pilih semua hasil`, state parsial, jumlah/clear pilihan, dan
+  sequential `Export dipilih` pada source
+  `73979542ceeb8fc11e658c7d27346ca983dc163f`. Residual: UAT Owner dengan
+  galeri/frame nyata termasuk izin multi-download browser, lalu guarded deploy,
+  live smoke, dan rollback verification. Production tetap release
+  `20260806050513-1158926`.
+
 - `CONFIRMED`: portable frame template `DEC-042` sudah
   `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` melalui backend release
   `20260806050513-1158926`. Backup/restore, guarded deployment, live smoke, dan

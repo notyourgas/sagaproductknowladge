@@ -12,6 +12,30 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-06
 
+### SagaView bulk frame export candidate
+
+- Ringkasan: Galeri Frame memperoleh checkbox per kartu, `Pilih semua hasil`
+  berbasis filter, partial state, jumlah/clear pilihan, dan sequential
+  `Export dipilih` ke file `.sagaview-frame` terpisah.
+- Alasan: export keseluruhan atau sebagian besar katalog tidak lagi perlu
+  dilakukan frame demi frame.
+- Produk/area: SagaView Owner Galeri Frame, state/filter UI, portable template,
+  privacy/checksum, browser download, QA, dan release gate.
+- Klasifikasi: `CONFIRMED` melalui `DEC-044`; delivery `LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`.
+- Source/release: `73979542ceeb8fc11e658c7d27346ca983dc163f`, branch
+  `codex/sagaview-bulk-frame-export-s118`; belum ada release/deploy baru.
+- Gate: Vite build, npm audit nol, focused batch Playwright, regresi
+  export/import, 12 backend test/45 assertion, dan diff check lulus.
+- Production berubah: tidak; backend aktif tetap
+  `1158926b2be35887aff7dc8a09cb0111e8a71fc7` pada release
+  `20260806050513-1158926`. Pricing, entitlement, payment, device/session,
+  foto customer, Studio runtime, API, dan database tidak berubah.
+- Residual: Owner UAT frame nyata/multi-download, guarded deploy, live smoke,
+  dan rollback verification.
+- File knowledge: product, dossier, changelog, ledger SagaView, master,
+  decision, gaps, portfolio/root changelog, dan sync status.
+
 ### SagaBook report branch context S125 production
 
 - Ringkasan: scope `/admin/reports` kini mengikuti cabang terpilih untuk

@@ -12,21 +12,22 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-06T13:40:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-06T13:53:01+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `47ec68a` |
-| Informasi terakhir disinkronkan | SagaBook S125 memperbaiki branch context `/admin/reports`; source `cb8ef55`, release `20260806063717-cb8ef55`, rollback `20260806053037-f6988cb`. |
+| Baseline sebelum pembaruan | `a4e4a33` |
+| Informasi terakhir disinkronkan | Kandidat bulk export Galeri Frame SagaView pada source `73979542`; checkbox per frame, select-all berbasis filter, partial/clear state, dan sequential template-v1 download. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik informasi; kontrak storefront mobile-only, aktivasi subscription yang di-skip, dan ledger feature-by-feature dipertahankan. |
-| Error | Tidak ada error release baru; public smoke SagaBook 4/4 dan service/queue health lulus. |
+| Konflik | Tidak ada konflik informasi; production SagaView tetap release `20260806050513-1158926` sampai guarded deploy berhasil. |
+| Error | Tidak ada error kandidat; build, audit, focused browser, backend 12/12 dengan 45 assertion, dan diff check lulus. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/sagabook/PRODUCT.md`
-- `products/sagabook/DOSSIER.md`
-- `products/sagabook/CHANGELOG.md`
-- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/DOSSIER.md`
+- `products/sagaview/CHANGELOG.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `DECISIONS.md`
 - `GAPS.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
@@ -67,6 +68,11 @@ Backend aktif `20260806050513-1158926`; rollback
 `20260805155517-c853806`. Authenticated Owner visual UAT dengan frame miring dan
 publish frame nyata serta Founding Studio Pilot tetap dibutuhkan sebelum klaim
 `BUSINESS_READY` mass-scale.
+
+Bulk export Galeri Frame `DEC-044` sudah `LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED` pada source `73979542`. Residual kandidat adalah UAT
+Owner dengan galeri/frame nyata dan izin multi-download browser, guarded
+deploy, live marker/smoke, preservation payment/device, serta rollback proof.
 
 Keputusan SagaView `DEC-039` untuk Growth 50 / Pro 100 telah
 `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Entitlement API, policy runtime,

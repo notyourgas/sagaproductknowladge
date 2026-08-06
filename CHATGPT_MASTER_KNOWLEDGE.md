@@ -508,6 +508,16 @@ backend release `20260806050513-1158926` dan Studio release
 `20260806050546-3b66f8d`; delivery dan activation berstatus
 `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Authenticated Owner UAT lintas dua
 akun tetap residual sebelum klaim business-ready mass-scale.
+Keputusan founder `DEC-044` menambahkan bulk export Galeri Frame sebagai
+kandidat `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Source
+`73979542ceeb8fc11e658c7d27346ca983dc163f` menyediakan checkbox per kartu,
+`Pilih semua hasil` berbasis filter, state parsial, jumlah/clear pilihan, dan
+sequential `Export dipilih`. Pilihan di luar filter tetap dipertahankan dan
+setiap hasil masih berupa `.sagaview-frame` schema v1 tenant-neutral agar
+kompatibel dengan import production. Build, audit dependency, focused bulk
+Playwright, regresi export/import, serta backend 12/12 dengan 45 assertion
+lulus. Browser dapat meminta izin beberapa download. Production tetap backend
+release `20260806050513-1158926`; deployment belum dijalankan.
 Implementasi rotate lama yang menukar W/H 90 derajat telah `DEPRECATED` oleh
 koreksi founder `DEC-036`. Perilaku production yang aktif adalah
 diterima adalah tahan ikon rotate lalu drag ke kiri/kanan agar slot mendapat

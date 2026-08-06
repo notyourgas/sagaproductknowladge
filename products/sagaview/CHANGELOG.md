@@ -4,6 +4,25 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-08-06 - Bulk export Galeri Frame candidate
+
+- Klasifikasi: `CONFIRMED` melalui keputusan founder `DEC-044`.
+- Status: `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap
+  backend release `20260806050513-1158926`.
+- Source candidate `73979542ceeb8fc11e658c7d27346ca983dc163f`, branch
+  `codex/sagaview-bulk-frame-export-s118`.
+- Galeri Frame menambahkan checkbox per kartu, `Pilih semua hasil` mengikuti
+  filter, partial state, jumlah pilihan, `Kosongkan`, dan `Export dipilih`.
+- Pilihan tersembunyi oleh filter tetap dipertahankan. Batch berjalan
+  berurutan dan menghasilkan file `.sagaview-frame` schema v1 terpisah agar
+  kompatibel dengan import production.
+- Vite build, npm audit nol, focused bulk Playwright, regresi export/import,
+  backend Frame Authoring 12/12 dengan 45 assertion, dan diff check lulus.
+- Production, pricing, entitlement, payment, device/session, foto customer,
+  Studio runtime, route API, dan database tidak berubah.
+- Residual: UAT Owner dengan galeri/frame nyata dan izin multi-download,
+  guarded deploy, live smoke, serta rollback verification.
+
 ## 2026-08-06 - Portable frame template production
 
 - Klasifikasi: `CONFIRMED` melalui keputusan founder `DEC-042`.

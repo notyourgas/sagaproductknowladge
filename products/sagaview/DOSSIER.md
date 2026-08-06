@@ -159,6 +159,15 @@ path lokal, atau payment di dalam paket. Fitur aktif melalui backend release
 backup/restore, rehearsal candidate/rollback, deploy gate 6/6, canary, dan live
 smoke lulus. Authenticated Owner UAT lintas dua akun tetap residual.
 
+Bulk export Galeri Frame menjadi kandidat berikutnya melalui `DEC-044` dan
+source `73979542ceeb8fc11e658c7d27346ca983dc163f`. Checkbox per kartu,
+select-all berdasarkan hasil filter, partial state, jumlah/clear pilihan, dan
+sequential batch download sudah local-validated. Dua download diuji sebagai
+template v1 tenant-neutral; regresi export/import lama tetap lulus. Proses
+berurutan membatasi artwork/template aktif di memori, sementara izin beberapa
+download tetap dikendalikan browser. Delivery `IMPLEMENTED_NOT_DEPLOYED`;
+production masih release `20260806050513-1158926`.
+
 Mulai sesi production memakai checklist perangkat, paket, folder, frame, dan
 output serta satu CTA kontekstual 48 px. Utility cloud/recovery yang sehat
 diringkas; detail terbuka otomatis saat operator perlu bertindak. Alur tetap
