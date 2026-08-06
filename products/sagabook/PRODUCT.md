@@ -193,6 +193,16 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
   Login, session, logout, activity log, `last_login_at`, protected 401,
   capability 403, dan cross-tenant 403 tervalidasi end-to-end. Ini hanya
   menutup irisan auth/session; coverage produk keseluruhan masih bertahap.
+- Tenant/cabang S124 aktif pada source
+  `f6988cb945c5ca224015d7fecbc94e81c535fc60`, release immutable
+  `20260806053037-f6988cb`, dengan rollback
+  `20260806043833-a912522`. Status cabang kini mencegah request ganda,
+  menampilkan pending/error/retry tanpa sukses palsu, memakai kontrol minimum
+  44 piksel, dan menyimpan response backend aktual. Write lintas tenant ditolak
+  404 generik tanpa mengubah data, staff tanpa capability mendapat 403,
+  optimistic lock/read-after-write serta audit log lulus. Irisan status/write
+  cabang `INTEGRATION_VALIDATED`; selector/filter cabang lintas role dan route
+  tetap dilanjutkan feature-by-feature.
 - Website booking satu tenant trial diaktifkan hanya setelah pre-publish
   readiness 100, lalu post-activation setup/pilot readiness dan HTTP publik
   lulus. Release gate production 10/10, backup terenkripsi/checksum/disposable

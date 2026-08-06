@@ -12,6 +12,31 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-06
 
+### SagaBook tenant/cabang S124 production dan integration slice validated
+
+- Ringkasan: status cabang memperoleh double-submit guard, pending/error/retry
+  inline, target aksi 44 piksel, serta mutation tenant-scoped yang fail-closed.
+- Alasan: klik cepat dapat membuat request bersamaan dan ID tenant lain
+  sebelumnya jatuh ke konflik database, bukan penolakan aman.
+- Produk/area: SagaBook admin cabang, frontend store, catalog API, mutation
+  service, `branches`, optimistic lock, activity log, permission, dan tenant
+  isolation.
+- Klasifikasi: `CONFIRMED`; irisan status/write `UIUX_VALIDATED /
+  INTEGRATION_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
+- Source/release: `f6988cb945c5ca224015d7fecbc94e81c535fc60` /
+  `20260806053037-f6988cb`; rollback `20260806043833-a912522`.
+- Gate: backend 962/962 dengan 11.038 assertion, focused browser, storefront
+  S109 12/12, build/typecheck/design/audit, encrypted backup/checksum/restore,
+  migration/DB audit, service/journal, manifest, dan public smoke 4/4.
+- Production berubah: ya pada admin cabang dan backend mutation guard; tidak
+  ada migration. Storefront mobile-only, subscription activation, dan website
+  booking aktif tidak diubah.
+- Residual: selector/filter cabang lintas role/route, stale refetch, delete
+  dependency/recovery, serta fitur berikutnya pada ledger. Produk belum
+  `BUSINESS_READY`.
+- File knowledge: product, dossier, changelog, ledger SagaBook, master, gaps,
+  portfolio/root changelog, dan sync status.
+
 ### SagaView portable frame template production
 
 - Ringkasan: export/import `.sagaview-frame` tenant-neutral sekarang aktif di

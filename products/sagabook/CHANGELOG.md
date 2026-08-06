@@ -4,6 +4,32 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-06 - Tenant/cabang status dan isolation production S124
+
+- Klasifikasi: `CONFIRMED`; source
+  `f6988cb945c5ca224015d7fecbc94e81c535fc60` aktif sebagai release immutable
+  `20260806053037-f6988cb`; rollback `20260806043833-a912522` dipertahankan.
+- Before: status cabang dapat mengirim mutation ganda saat diklik cepat,
+  kegagalan hanya tampak sebagai toast, beberapa aksi kurang dari 44 piksel,
+  dan ID katalog tenant lain jatuh ke konflik database. After: in-flight guard,
+  pending/error/retry inline, response API aktual, target 44 piksel, label/focus
+  aksesibel, 404 generik lintas tenant, serta audit save menutup gap tersebut.
+- Peta integrasi: `/admin/branches` -> store ->
+  `POST /api/admin/upsertBranchFn` -> `AdminCatalogController` ->
+  `AdminModelMutationService` -> transaction/`branches`/`activity_logs` ->
+  response UI. Happy read-after-write, 503/retry, double-submit, optimistic
+  lock, staff 403, dan tenant-negative lulus.
+- Gate: full backend 962/962 dengan 11.038 assertion; focused Playwright 6
+  pass/2 intentional skip; storefront mobile-only S109 12/12; build, typecheck,
+  design 26/0, npm/Composer audit nol; backup terenkripsi/checksum/disposable
+  restore, migration 0 pending, DB audit, manifest, service, dan public smoke
+  4/4 lulus.
+- Irisan status/write cabang `UIUX_VALIDATED / INTEGRATION_VALIDATED /
+  LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Coverage
+  selector/filter lintas role dan route masih bertahap; produk belum
+  `BUSINESS_READY`. Subscription tenant tidak diaktifkan dan website booking
+  yang sudah aktif tidak dinonaktifkan.
+
 ## 2026-08-06 - Auth/session recovery dan aksesibilitas production S123
 
 - Klasifikasi: `CONFIRMED`; scope auth/session berstatus `UIUX_VALIDATED /

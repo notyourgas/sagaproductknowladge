@@ -1,5 +1,20 @@
 # Portfolio Changelog
 
+## 2026-08-06 - SagaBook tenant/cabang S124 production
+
+- Status cabang kini mencegah mutation ganda, menampilkan pending/error/retry
+  inline, dan memakai aksi minimum 44 piksel tanpa sukses palsu.
+- Backend menolak ID milik tenant lain dengan 404 generik, menolak staff tanpa
+  capability, mempertahankan optimistic lock/read-after-write, dan menulis
+  audit save public-safe.
+- Source/release `f6988cb945c5ca224015d7fecbc94e81c535fc60` /
+  `20260806053037-f6988cb`; rollback `20260806043833-a912522`. Full backend
+  962/962, focused browser, S109 mobile-only, audit, backup/restore, service,
+  manifest, dan public smoke lulus.
+- Irisan status/write cabang `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` dan
+  `INTEGRATION_VALIDATED`; coverage fitur tenant/cabang keseluruhan masih
+  feature-by-feature. Subscription activation tidak berubah.
+
 ## 2026-08-06 - SagaView portable frame template production
 
 - Export/import `.sagaview-frame` tenant-neutral aktif melalui backend source

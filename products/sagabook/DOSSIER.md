@@ -157,6 +157,19 @@ termasuk invalid credential, protected 401, capability 403, cross-tenant 403,
 dan logout lulus dengan data demo public-safe. S123 tidak mengaktifkan
 subscription dan tidak menonaktifkan website booking yang sudah aktif.
 
+Tenant/cabang S124 pada source
+`f6988cb945c5ca224015d7fecbc94e81c535fc60` aktif sebagai release
+`20260806053037-f6988cb`; rollback `20260806043833-a912522`. Switch status
+cabang memiliki in-flight guard sinkron, state pending/error/retry yang
+aksesibel, target aksi 44 piksel, dan hanya mengubah UI setelah response API
+aktual. Backend menolak ID tenant lain dengan 404 generik, menjaga optimistic
+lock, menghasilkan audit `catalog_branch_saved`, serta menolak staff tanpa
+capability. Full backend 962/962 dengan 11.038 assertion, focused browser,
+viewport/zoom, storefront mobile-only S109 12/12, dependency audit nol,
+backup/checksum/disposable restore, DB audit, service, manifest, dan public
+smoke lulus. Subscription tidak diaktifkan dan website booking aktif tidak
+dinonaktifkan.
+
 Candidate customer request terbaru adalah source kumulatif
 `b2b638cece4e9b18720a5367c05dcda3bb86ecf6` pada
 `codex/s118-sagabook-request-recovery`, berstatus `LOCAL_VALIDATED /

@@ -12,22 +12,21 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-06T12:11:31+07:00 |
+| Waktu pembaruan terakhir | 2026-08-06T12:34:29+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `51411df` |
-| Informasi terakhir disinkronkan | SagaView portable frame template aktif melalui source `1158926b`, backend release `20260806050513-1158926`, dan Studio release `20260806050546-3b66f8d`; delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. |
+| Baseline sebelum pembaruan | `d9a610b` |
+| Informasi terakhir disinkronkan | SagaBook tenant/cabang S124 aktif melalui source `f6988cb9`, release `20260806053037-f6988cb`; irisan status/write `INTEGRATION_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik informasi; baseline SagaBook dan AOGTICVITY terbaru dipertahankan. |
-| Error | Tidak ada error release baru. SagaView failed jobs nol dan journal service bersih pada pemeriksaan pasca-release. |
+| Konflik | Tidak ada konflik informasi; kontrak storefront mobile-only, SagaView local-first, dan waiver subscription dipertahankan. |
+| Error | Tidak ada error release baru; queue error sejak aktivasi nol dan public smoke 4/4. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/sagaview/PRODUCT.md`
-- `products/sagaview/DOSSIER.md`
-- `products/sagaview/CHANGELOG.md`
-- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
-- `DECISIONS.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
 - `GAPS.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
@@ -36,17 +35,14 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 ## Item menunggu konfirmasi
 
-SagaView portable frame template aktif di production. Residualnya adalah
-authenticated Owner UAT dengan frame nyata pada dua akun terkontrol,
-rename/category, collision-safe key, save draft, dan publish terpisah sebelum
-klaim `BUSINESS_READY` mass-scale.
-
 Ledger integrasi SagaBook dan SagaView masih bertahap. Auth/session SagaBook
-S123 sudah `INTEGRATION_VALIDATED`; residualnya expiry idle, revocation lintas
-device, dan UI rate-limit 429. Status
+S123 dan irisan status/write cabang S124 sudah `INTEGRATION_VALIDATED`.
+Residual tenant/cabang adalah selector/filter lintas role/route, stale refetch,
+serta delete dependency/recovery; residual auth adalah expiry idle, revocation
+lintas device, dan UI rate-limit 429. Status
 `INTEGRATION_VALIDATED` hanya diberikan setelah happy path, failure/retry,
 permission/tenant-negative, dan data integrity fitur terkait memiliki bukti
-fresh. Prioritas berikutnya: SagaBook tenant/cabang lalu katalog; SagaView
+fresh. Prioritas berikutnya: tutup tenant/cabang lalu katalog; SagaView
 auth/device/session, local ingest, lalu session flow dengan no-upload guarantee.
 
 AOGTICVITY tetap menunggu assignment empat peserta approved, PIC untuk sepuluh
