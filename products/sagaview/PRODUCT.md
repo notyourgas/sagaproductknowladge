@@ -4,7 +4,8 @@ Updated: 6 Agustus 2026
 Evidence status: production deployed + production activated; frame import-order,
 compact all-menu, workspace Session/Output/Izin Foto monitor besar, free drag
 rotation, pemisahan Simpan Draft/Publish Frame, serta limit Growth 50/Pro 100
-aktif di production
+aktif di production. Portable frame template berstatus
+`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
 
 ## Tujuan dokumen
 
@@ -204,6 +205,24 @@ dan UI menampilkan alasan API yang spesifik. Kode seperti `SPC 18` dinormalisasi
 menjadi `spc-18`. Delivery dan activation berstatus
 `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated Owner UAT dengan
 frame nyata tetap residual sebelum klaim business-ready mass-scale.
+
+## Portable frame template
+
+`CONFIRMED` melalui `DEC-042`: candidate source
+`1158926b2be35887aff7dc8a09cb0111e8a71fc7` memungkinkan Owner mengekspor
+artwork PNG/WebP dan metadata slot yang sudah disanitasi ke file
+`.sagaview-frame`, lalu mengimpornya pada akun lain sebagai draft baru.
+Orientasi, posisi/ukuran slot, hasil feather, angle per slot, dan saran kategori
+dipulihkan; nama dan kategori tetap dapat diganti. Konflik kode mendapat suffix
+copy agar frame lama tidak tertimpa. Checksum SHA-256 artwork dan metadata,
+magic-byte, ukuran, slot bounds, serta validasi server menolak paket yang rusak
+atau diubah.
+
+Paket tidak membawa identifier akun/tenant, internal version ID, device,
+session, foto customer, path lokal, credential, atau payment. Tidak ada route
+API atau migration baru; import tetap memakai save draft tenant-scoped yang
+sudah ada dan tidak pernah auto-publish. Delivery masih
+`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
 
 ## Session completion dan privacy handoff
 

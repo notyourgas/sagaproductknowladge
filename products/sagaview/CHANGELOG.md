@@ -4,6 +4,22 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-08-06 - Portable frame template candidate
+
+- Klasifikasi: `CONFIRMED` melalui keputusan founder `DEC-042`.
+- Status: `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap pada
+  backend `c8538060` dan Studio `3b66f8d5`.
+- Source candidate `1158926b2be35887aff7dc8a09cb0111e8a71fc7`, branch
+  `codex/sagaview-template-transfer-s117`.
+- Export `.sagaview-frame` membawa artwork dan metadata slot portable; import
+  selalu membuat draft baru dengan nama/kategori editable dan kode copy-safe.
+- Paket disanitasi dari data akun/tenant, internal ID, device/session, foto
+  customer, path, credential, dan payment. Checksum artwork/metadata serta
+  boundary authoring server menolak paket rusak atau diubah.
+- Build, audit npm nol vulnerability, backend 12/12 dengan 45 assertion,
+  focused export/import Playwright, regresi editor, dan diff check lulus.
+- Authenticated UAT dua akun dan guarded deployment belum dijalankan.
+
 ## 2026-08-06 - Ledger screening integrasi feature-by-feature
 
 - Klasifikasi: `CONFIRMED` melalui `DEC-041`; ini perubahan tata kelola

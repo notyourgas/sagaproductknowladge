@@ -12,21 +12,17 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-06T11:05:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-06T11:45:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `818d8ae` |
-| Informasi terakhir disinkronkan | SagaBook Template Booking S122 aktif melalui source `1b8c91fc`, release `20260806040004-1b8c91f`; `DEC-041` dan ledger feature-by-feature SagaBook/SagaView ditambahkan. |
+| Baseline sebelum pembaruan | `966577c` |
+| Informasi terakhir disinkronkan | SagaView portable frame template `DEC-042`, source `1158926b`, berstatus `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik baru. UI/UX/release tetap dipisahkan dari status integrasi; SagaView local-first tidak diubah menjadi cloud flow. |
-| Error | Tidak ada error release baru. Queue SagaBook mencatat nol error prioritas tinggi pada pemeriksaan lima menit pasca-deploy. |
+| Konflik | Tidak ada konflik baru. Paket template tetap tenant-neutral dan tidak mengubah SagaView local-first menjadi cloud photo flow. |
+| Error | Tidak ada error release baru. Kandidat menolak metadata template yang checksum-nya berubah. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/sagabook/PRODUCT.md`
-- `products/sagabook/DOSSIER.md`
-- `products/sagabook/CHANGELOG.md`
-- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
 - `products/sagaview/PRODUCT.md`
 - `products/sagaview/DOSSIER.md`
 - `products/sagaview/CHANGELOG.md`
@@ -39,6 +35,12 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `SYNC_STATUS.md`
 
 ## Item menunggu konfirmasi
+
+SagaView portable frame template masih memerlukan authenticated Owner UAT
+dengan frame nyata pada dua akun terkontrol, pemeriksaan rename/category,
+collision-safe key, publish terpisah, guarded deployment, live smoke, dan
+rollback verification. Sampai gate tersebut selesai, fitur tidak boleh disebut
+aktif di production.
 
 Ledger integrasi SagaBook dan SagaView masih bertahap. Status
 `INTEGRATION_VALIDATED` hanya diberikan setelah happy path, failure/retry,

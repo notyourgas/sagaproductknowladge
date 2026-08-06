@@ -491,6 +491,17 @@ jika tahap publish gagal, dan menampilkan error API spesifik. Perilaku ini aktif
 di production melalui backend release `20260805155517-c853806` dan Studio
 `20260805155605-3b66f8d`; authenticated Owner UAT dengan frame nyata tetap
 residual sebelum klaim business-ready mass-scale.
+Keputusan founder `DEC-042` menambahkan candidate portable frame template.
+Source `1158926b2be35887aff7dc8a09cb0111e8a71fc7` mengekspor artwork PNG/WebP
+dan metadata frame/slot yang disanitasi ke `.sagaview-frame`, lalu mengimpornya
+pada akun lain sebagai draft baru. Orientasi, geometri termasuk hasil feather,
+angle per slot, dan saran kategori dipulihkan; nama/kategori dapat diganti dan
+kode existing tidak ditimpa. Checksum artwork/metadata, magic-byte, ukuran,
+slot bounds, serta validasi API authoring existing menjadi boundary berlapis.
+Paket tidak membawa identifier akun/tenant, internal version, device/session,
+foto customer, path lokal, credential, atau payment. Statusnya
+`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap memakai source
+dan release aktif sebelumnya.
 Implementasi rotate lama yang menukar W/H 90 derajat telah `DEPRECATED` oleh
 koreksi founder `DEC-036`. Perilaku production yang aktif adalah
 diterima adalah tahan ikon rotate lalu drag ke kiri/kanan agar slot mendapat
@@ -674,6 +685,13 @@ outbox otomatis satu menit, health probe dua menit, readiness queue yang lebih
 akurat, bulk PIC assignment, serta offline cache public-only. Delivery channel
 WhatsApp dikonfirmasi founder, tetapi record provider lama perlu direkonsiliasi
 admin dan rehearsal role/two-device tetap diperlukan sebelum event-ready.
+Source runtime `b7fabaaf58dfd4d9d00043f7864ef7691f39a13f`, Hostinger release
+`20260806T043451Z`, dan Vercel `dpl_ERhafxHwXJCoTHbV8dxsskExieC7`
+memfinalisasi standing server-authoritative. Hanya hasil published/corrected
+masuk policy 15/10/5 berversi; revision/ETag, retry idempotent, stale-write 409,
+audit koreksi, rate limit, refresh operasi maksimal 3 detik, serta public/live/
+team maksimal 5 detik aktif. Worker WhatsApp juga tahan immutable release dan
+timer production kembali exit 0. UAT manusia tetap menjadi blocker event-ready.
 Source release `6b4b6feca16dc2d49b909f9301227e5078dfaf60` mengaktifkan runtime akses
 peserta via WhatsApp: outbox transaksional, provisioning role `player`, adapter
 Fonnte fail-closed, magic link single-use 30 menit, hash-only ledger, session
@@ -764,7 +782,8 @@ Source UI `2590f69d3ac609f6f92d3badb1343ad55f1a239c`, Hostinger
 menambahkan riwayat pemenang pada Standing resmi. Seluruh 10 lomba tersedia
 sebagai accordion; hanya `Published`/`Corrected` yang menampilkan Juara 1/2/3,
 sementara draft tetap privat dan hasil yang belum tersedia memakai empty state.
-Public/player refresh 12 detik serta pulih saat focus/visibility/reconnect.
+Public/player/live/team refresh maksimal 5 detik memakai snapshot server yang
+sama serta pulih saat focus/visibility/reconnect.
 Source `308a8547af171c9fc26ce07350ca332bbe8ae913`, Hostinger
 `20260804T065837Z`, Vercel `dpl_9CknJM1QQzWGjbCPXFWPXegA2SBH`, dan migration
 020 menambahkan pendaftaran pemain luar di `/register/guest`. Public hanya

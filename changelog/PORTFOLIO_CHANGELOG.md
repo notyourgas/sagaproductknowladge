@@ -1,5 +1,30 @@
 # Portfolio Changelog
 
+## 2026-08-06 - AOGTICVITY live standings production
+
+- Standing resmi kini dibentuk server dari hasil published/corrected, dengan
+  policy 15/10/5 berversi, revision/ETag, audit koreksi, conflict recovery, dan
+  refresh lintas perangkat maksimal 3 detik untuk operasi serta 5 detik untuk
+  public/live/team.
+- Source `b7fabaaf58dfd4d9d00043f7864ef7691f39a13f`, Hostinger
+  `20260806T043451Z`, Vercel `dpl_ERhafxHwXJCoTHbV8dxsskExieC7`.
+- Worker WhatsApp immutable-release regression sudah ditutup dan timer kembali
+  sehat. Delivery `PRODUCTION_DEPLOYED`; event-ready masih menunggu assignment,
+  rekonsiliasi, dan UAT dua perangkat/fisik.
+
+## 2026-08-06 - SagaView portable frame template candidate
+
+- `DEC-042` menetapkan export/import frame lintas akun sebagai file
+  `.sagaview-frame` yang tenant-neutral dan selalu masuk sebagai draft baru.
+- Artwork, orientasi, geometri slot termasuk hasil feather, angle, dan saran
+  kategori dipulihkan; nama/kategori editable dan kode existing tidak ditimpa.
+- Source `1158926b2be35887aff7dc8a09cb0111e8a71fc7`; build, npm audit nol,
+  backend 12/12 dengan 45 assertion, focused Playwright export/import dan
+  regresi editor, serta diff check lulus.
+- Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Production, pricing,
+  entitlement, payment, device/session, foto customer, dan output 4R tidak
+  berubah; UAT dua akun dan guarded deployment masih residual.
+
 ## 2026-08-06 - SagaBook Template Booking S122 production dan ledger integrasi
 
 - Editor Template Booking kini adaptif: tidak overflow pada 390 piksel, target

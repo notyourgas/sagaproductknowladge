@@ -12,6 +12,25 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-06
 
+### SagaView portable frame template candidate
+
+- Ringkasan: Owner dapat mengekspor artwork dan metadata slot portable ke
+  `.sagaview-frame`, lalu mengimpornya pada akun lain sebagai draft baru.
+- Alasan: setup frame, feather, posisi/ukuran, dan angle slot tidak perlu
+  diulang manual pada setiap akun.
+- Produk/area: SagaView Owner Console, authoring frame, client-side package,
+  checksum/security, draft save, dan acceptance.
+- Klasifikasi: `CONFIRMED` melalui `DEC-042`; delivery
+  `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- Source: `1158926b2be35887aff7dc8a09cb0111e8a71fc7`, branch
+  `codex/sagaview-template-transfer-s117`; release belum ada.
+- Gate: Vite build, npm audit nol, focused backend 12/12 dengan 45 assertion,
+  focused export/import Playwright, regresi editor, dan diff check lulus.
+- Production berubah: tidak. API route/migration, pricing, entitlement,
+  payment, device/session, foto customer, dan output 4R tetap.
+- File knowledge: product, dossier, changelog, ledger SagaView, decision, gaps,
+  master, portfolio/root changelog, dan sync status.
+
 ### SagaBook Template Booking S122 production dan feature coverage ledger
 
 - Ringkasan: editor Template Booking adaptif aktif di production dan ledger

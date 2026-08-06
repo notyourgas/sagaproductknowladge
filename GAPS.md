@@ -234,6 +234,12 @@ ketika keputusan atau release baru menutup gap.
 
 ### SagaView
 
+- `TODO`: portable frame template `DEC-042` masih
+  `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Tutup gate dengan authenticated
+  Owner UAT memakai frame nyata pada akun sumber dan akun tujuan terkontrol,
+  verifikasi perubahan nama/kategori, collision-safe key, publish terpisah,
+  lalu guarded deployment, live smoke, dan rollback verification.
+
 - `TODO`: selesaikan ledger integrasi feature-by-feature dari auth/device/session
   sampai owner dashboard/entitlement. Untuk ingest foto, editor, recovery, dan
   export, bukti wajib memakai boundary local-first, atomic write, quota,
@@ -433,7 +439,10 @@ ketika keputusan atau release baru menutup gap.
   aggregate sudah `CONFIRMED` pada migration 015, tetapi human UAT belum
   sign-off. Participant feed, revision/ETag, polling, dan reconnect recovery
   sudah `CONFIRMED` pada migration 016, tetapi assignment update UAT dua
-  perangkat belum sign-off.
+  perangkat belum sign-off. Live standing server-authoritative, policy 15/10/5,
+  refresh 3/5 detik, idempotent retry, stale-write recovery, dan correction
+  audit sudah `CONFIRMED` pada release `b7fabaaf`; authenticated browser UAT
+  dua perangkat tetap `NEEDS CONFIRMATION`.
 - `CONFIRMED`: technical finalization release `15cf5358` telah meluluskan
   production-domain/security/mobile/WCAG, offline/reconnect, 20 migration,
   22 disposable MySQL integration tests, backup/restore, serta PII-free

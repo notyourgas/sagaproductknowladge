@@ -19,6 +19,7 @@ SagaView berdasarkan runtime production aktif.
 - Simpan Draft/Publish Frame: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
 - Ekspansi frame aktif Growth 50 / Pro 100:
   `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
+- Portable frame template: `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`
 - Acceptance integrasi feature-by-feature: ledger dimulai konservatif dan
   belum membuktikan coverage penuh; lihat
   [Feature Coverage Ledger](FEATURE_COVERAGE_LEDGER.md).
@@ -143,6 +144,18 @@ machine resmi; backup, preflight/deploy gate 6/6, canary, service/header/journal
 HTTP smoke, dan marker bundle production lulus. Perilaku free drag diwarisi
 release aktif backend `20260805155517-c853806` dan Studio
 `20260805155605-3b66f8d`.
+
+Candidate portable frame template pada source
+`1158926b2be35887aff7dc8a09cb0111e8a71fc7` menutup pengulangan setup frame
+lintas akun. Owner mengekspor file `.sagaview-frame` berisi artwork dan metadata
+portable yang dibatasi pada konfigurasi frame/slot. Akun tujuan mengimpor paket
+sebagai draft baru, lalu dapat mengubah nama dan kategori sebelum save/publish.
+Orientasi, geometri termasuk hasil feather, serta angle per slot dipertahankan;
+kode yang sudah ada tidak ditimpa. Checksum ganda, magic-byte, limit ukuran,
+slot/rotated bounds, dan validasi authoring server menjadi defense in depth.
+Tidak ada foto customer, identifier akun/tenant, device, session, credential,
+path lokal, atau payment di dalam paket. Fitur ini belum dipromosikan ke
+production dan masih memerlukan authenticated Owner UAT lintas dua akun.
 
 Mulai sesi production memakai checklist perangkat, paket, folder, frame, dan
 output serta satu CTA kontekstual 48 px. Utility cloud/recovery yang sehat

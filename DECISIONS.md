@@ -594,3 +594,17 @@ keputusan pengganti.
 | Pemberi keputusan | Andreas / founder |
 | Status | `CONFIRMED`; kebijakan acceptance/heartbeat, bukan klaim bahwa seluruh integrasi sudah selesai |
 | Dokumen terkait | [SagaBook Ledger](products/sagabook/FEATURE_COVERAGE_LEDGER.md), [SagaView Ledger](products/sagaview/FEATURE_COVERAGE_LEDGER.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [SagaView Dossier](products/sagaview/DOSSIER.md), [Gaps](GAPS.md) |
+
+## DEC-042 - Metadata frame SagaView dapat dipindahkan lintas akun
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-06 |
+| Topik | Export/import template frame pada Owner Console SagaView |
+| Keputusan | Owner dapat mengekspor artwork frame dan metadata portable termasuk orientasi, posisi/ukuran slot, hasil feather, serta angle per slot; akun lain dapat mengimpornya sebagai draft baru lalu mengganti nama atau kategori. Import tidak boleh auto-publish atau menimpa frame existing. Paket harus tenant-neutral dan tidak membawa foto customer, identifier akun/tenant, device/session, credential, path lokal, atau payment. |
+| Alasan | Setup frame dan peletakan slot yang sama tidak perlu diulang manual pada setiap akun. Draft-first dan collision-safe key menjaga operator tetap memeriksa konteks akun tujuan. |
+| Alternatif yang dipertimbangkan | Mengulang upload/deteksi/koreksi secara manual; menyalin data langsung antar-tenant di server; import yang langsung publish; paket hanya metadata tanpa artwork. |
+| Dampak | Owner Console mendapat file `.sagaview-frame`, checksum artwork/metadata, sanitasi field, import-as-draft, editable name/category, serta suffix copy. API authoring tenant-scoped yang sudah ada tetap menjadi boundary save; pricing, entitlement, payment, device/session, foto customer, dan output 4R tidak berubah. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; source `1158926b2be35887aff7dc8a09cb0111e8a71fc7`, branch `codex/sagaview-template-transfer-s117` |
+| Dokumen terkait | [SagaView Product](products/sagaview/PRODUCT.md), [SagaView Dossier](products/sagaview/DOSSIER.md), [SagaView Changelog](products/sagaview/CHANGELOG.md), [SagaView Ledger](products/sagaview/FEATURE_COVERAGE_LEDGER.md), [Gaps](GAPS.md) |
