@@ -12,6 +12,25 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-07
 
+### SagaView S133 tenant-bound session candidate
+
+- Ringkasan: session start kini mengikat tenant permintaan pada tenant device
+  credential dan menolak mismatch `403` sebelum persistence; stepper horizontal
+  juga memperoleh keyboard focus/label dan marquee dekoratif disembunyikan dari
+  accessibility tree.
+- Klasifikasi: `CONFIRMED`; delivery `INTEGRATION_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- Source: backend `6dff29ddba50fc04dd315458adcfed6cdeec7aa1`, Studio
+  `573c599ea1808172d31fa32d0901bb3aed0e2d0d`, dokumentasi/provenance Studio
+  `c816166d593a35ab3e4c99490c5a02d8c7821085`.
+- Gate: UI/API/disposable SQLite Playwright 2/2, recovery 2/2, frontend 44/159,
+  backend 29/544, build/budget, Axe, Pint, npm/Composer audit, dan public smoke
+  4/4 lulus. AI regression 38/219 juga lulus tanpa promotion.
+- Production tidak berubah dari backend `20260806200400-b6af579` dan Studio
+  `20260806200400-3b66f8d`; deployment menunggu seluruh immutable release gate.
+- File knowledge: SagaView changelog, feature ledger, master knowledge, gaps,
+  portfolio/root changelog, dan sync status.
+
 ### AOGTIVITY poster theme dan rundown 12.00 candidate
 
 - Ringkasan: visual event mengikuti poster founder dan rundown menjadi opening

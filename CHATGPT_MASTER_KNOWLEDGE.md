@@ -597,6 +597,14 @@ canary/payment/device preservation, service/journal/header/public smoke lulus.
 Smoke runtime 51 frame menghasilkan ZIP 103.282.237 byte dalam 6,751 detik pada
 RAM 128 MB dengan tambahan peak 23.597.056 byte dan nol file sementara.
 Authenticated Owner UAT import 50-100 file nyata pada dua akun tetap residual.
+Candidate S133 belum production. Backend source
+`6dff29ddba50fc04dd315458adcfed6cdeec7aa1` mengikat tenant permintaan session
+ke tenant device credential dan menolak mismatch `403` sebelum persistence.
+Studio candidate `573c599ea1808172d31fa32d0901bb3aed0e2d0d` menutup keyboard focus/label
+stepper dan region dekoratif. UI -> API -> disposable database -> response UI,
+idempotency, tenant/device-negative, metadata-only/no-upload, a11y, serta dua
+anchor viewport lulus. Statusnya `INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; jangan menjawab seolah sudah aktif di production.
 Implementasi rotate lama yang menukar W/H 90 derajat telah `DEPRECATED` oleh
 koreksi founder `DEC-036`. Perilaku production yang aktif adalah
 diterima adalah tahan ikon rotate lalu drag ke kiri/kanan agar slot mendapat

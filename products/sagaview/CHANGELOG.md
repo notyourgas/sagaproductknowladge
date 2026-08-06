@@ -4,6 +4,34 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-08-07 - S133 tenant-bound session candidate
+
+- Klasifikasi: `CONFIRMED` dari source, red-to-green regression, dan acceptance
+  disposable public-safe.
+- Status: `INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; bukan `STAGING_READY`, `PRODUCTION_DEPLOYED`,
+  `PRODUCTION_ACTIVATED`, atau `BUSINESS_READY`.
+- Backend candidate source
+  `6dff29ddba50fc04dd315458adcfed6cdeec7aa1`; Studio runtime candidate source
+  `573c599ea1808172d31fa32d0901bb3aed0e2d0d` dengan dokumentasi/provenance
+  branch pada `c816166d593a35ab3e4c99490c5a02d8c7821085`.
+- Sebelum: device credential terautentikasi, tetapi tenant yang diminta saat
+  membuat session belum dibandingkan dengan tenant perangkat. Sesudah:
+  mismatch ditolak `403` sebelum persistence.
+- UI -> frontend -> HTTP API -> backend -> disposable SQLite -> response UI
+  lulus pada 390x844 dan 1440x900. Duplicate create idempotent, fingerprint
+  salah ditolak `422`, cross-tenant tidak membuat row, dan payload tidak
+  membawa byte foto customer.
+- Stepper horizontal kini keyboard-focusable dengan focus state dan label;
+  marquee dekoratif tidak lagi menjadi region screen reader. Axe, satu
+  watermark, dan overflow lulus pada dua anchor viewport.
+- Frontend 44/44 file dan 159/159 test, Playwright acceptance 2/2 plus recovery
+  2/2, build/budget, audit npm nol vulnerability; backend 29/29 dengan 544
+  assertion, Pint, dan Composer audit lulus.
+- Production tetap backend `20260806200400-b6af579` dan Studio
+  `20260806200400-3b66f8d`. Deploy menunggu fresh backup/restore, exact
+  candidate+rollback rehearsal, service/monitor health, dan post-release smoke.
+
 ## 2026-08-07 - Batch Import Control Center S122 dan ZIP memory fix production
 
 - Klasifikasi: `CONFIRMED` melalui keputusan founder `DEC-051`.

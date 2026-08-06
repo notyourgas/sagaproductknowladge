@@ -1,5 +1,23 @@
 # Portfolio Changelog
 
+## 2026-08-07 - SagaView S133 tenant-bound session candidate
+
+- Session metadata sekarang fail-closed ketika tenant permintaan tidak sama
+  dengan tenant perangkat; mismatch ditolak sebelum persistence.
+- Candidate backend `6dff29ddba50fc04dd315458adcfed6cdeec7aa1` dan Studio
+  `573c599ea1808172d31fa32d0901bb3aed0e2d0d`; source branch bersih dan sudah
+  dipush.
+- Alur UI -> HTTP API -> disposable SQLite -> response UI lulus pada 390x844
+  dan 1440x900, termasuk idempotency, device/tenant-negative, a11y, satu
+  watermark, no-overflow, serta bukti metadata-only/no-upload.
+- Delivery `INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Production S122 tetap backend
+  `20260806200400-b6af579` dan Studio `20260806200400-3b66f8d`; tidak ada
+  activation atau perubahan payment/subscription/foto customer.
+- AI Support Hub candidate `0894df00f6866688db4d053758a99d54ba4e8908`
+  kembali lulus 38/38 test dan 219 assertion; status tetap
+  `AI_EVAL_VALIDATED / AI_KNOWLEDGE_NOT_PROMOTED`.
+
 ## 2026-08-07 - AOGTIVITY poster theme dan rundown 12.00 candidate
 
 - `DEC-052` menyelaraskan hierarchy AOGTIVITY / 17 Agustus 2026 / Army of God

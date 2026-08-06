@@ -33,13 +33,15 @@ ketika keputusan atau release baru menutup gap.
 
 ### SagaBook
 
-- `TODO`: candidate AI S127 source `73de3f5541006dbe9eeed0abc00a39fbe5989998`
-  sudah memisahkan out-of-scope dari unknown produk dan lulus corpus 18
-  kategori. Promotion tetap ditahan sampai Composer advisory feed fresh dapat
-  diambil, backup/restore dan rehearsal exact candidate/rollback lulus, serta
-  live smoke product/out-of-scope/tenant-negative hijau. Inventaris chatbot
-  produk SagaDev lain, kebijakan human handoff lintas surface, provider/cost,
-  latency, dan data-retention masih perlu coverage bertahap. Fine-tuning baru
+- `TODO`: candidate AI terbaru source
+  `0894df00f6866688db4d053758a99d54ba4e8908` sudah memisahkan out-of-scope
+  dari unknown produk dan kembali lulus 38 test/219 assertion, termasuk corpus
+  minimum 18 kategori public-safe. Status `AI_EVAL_VALIDATED /
+  AI_KNOWLEDGE_NOT_PROMOTED`. Promotion tetap ditahan sampai backup/restore,
+  rehearsal exact candidate/rollback, service/monitor, serta live smoke
+  product/out-of-scope/tenant-negative hijau. Inventaris chatbot produk
+  SagaDev lain, kebijakan human handoff lintas surface, provider/cost, latency,
+  dan data-retention masih perlu coverage bertahap. Fine-tuning baru
   membutuhkan keputusan founder terpisah.
 
 - `TODO`: auth/session S123, status/write cabang S124, serta branch-context
@@ -220,11 +222,14 @@ ketika keputusan atau release baru menutup gap.
   dan akun tujuan terkontrol, termasuk rename/category, collision-safe key,
   save draft, dan publish terpisah, sebelum klaim `BUSINESS_READY` mass-scale.
 
-- `TODO`: selesaikan ledger integrasi feature-by-feature dari auth/device/session
-  sampai owner dashboard/entitlement. Untuk ingest foto, editor, recovery, dan
-  export, bukti wajib memakai boundary local-first, atomic write, quota,
-  permission, recovery, serta no-upload guarantee; jangan menggantinya dengan
-  cloud/API.
+- `TODO`: session flow S133 sudah `INTEGRATION_VALIDATED / LOCAL_VALIDATED`
+  pada candidate `6dff29dd` + `573c599`, termasuk UI -> API -> disposable DB,
+  idempotency, tenant/device-negative, dan metadata-only/no-upload. Production
+  belum berubah. Lanjutkan physical Windows folder permission/quota/recovery,
+  viewport 1280/1512/1920/2560/3840 dan zoom 125/150/200, lalu fitur berikutnya
+  dari frame selection sampai owner dashboard/entitlement. Untuk ingest foto,
+  editor, recovery, dan export, bukti wajib tetap memakai boundary local-first,
+  atomic write, quota, permission, recovery, serta no-upload guarantee.
 
 - `NEEDS CONFIRMATION`: `DEC-038` aktif pada backend
   `20260805203055-9ee5bcc` dan Studio `20260805203055-2121ebb` setelah backup,

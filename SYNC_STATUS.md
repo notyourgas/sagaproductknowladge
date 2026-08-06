@@ -12,23 +12,21 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-07T03:14:55+07:00 |
+| Waktu pembaruan terakhir | 2026-08-07T03:35:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `b076ac6f18d16d0a25a45549e8c862c55bf85b91` |
-| Informasi terakhir disinkronkan | SagaView S122 Batch Import Control Center dan ZIP export file-backed aktif pada source/release `b6af5797fb6fdcea499e727ee2bdb1e4dc666165` / `20260806200400-b6af579`; delivery/activation `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. |
+| Baseline sebelum pembaruan | `1ba4176936da28f34b15c4e8f169fe028abb7756` |
+| Informasi terakhir disinkronkan | SagaView S133 tenant-bound session candidate pada backend `6dff29ddba50fc04dd315458adcfed6cdeec7aa1` dan Studio `573c599ea1808172d31fa32d0901bb3aed0e2d0d`; delivery `INTEGRATION_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Production tetap S122. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada; histori S121 dipertahankan sebagai rollback dan baseline terdahulu. |
-| Error | Tidak ada pada validasi/deploy; authenticated Owner UAT import 50-100 file nyata pada dua akun belum dijalankan. |
+| Konflik | Tidak ada; candidate S133 dipisahkan eksplisit dari production S122. |
+| Error | Tidak ada pada validasi lokal; fresh immutable deployment gates S133 belum dijalankan. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/sagaview/PRODUCT.md`
-- `products/sagaview/DOSSIER.md`
 - `products/sagaview/CHANGELOG.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `GAPS.md`
-- `DECISIONS.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHANGELOG.md`
 - `SYNC_STATUS.md`
