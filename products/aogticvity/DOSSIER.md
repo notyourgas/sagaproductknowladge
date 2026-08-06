@@ -64,6 +64,23 @@ baris layout khusus untuk topbar dan bottom navigation. Hanya main content
 yang scroll sehingga navigasi tidak menutup field, tombol, timeline, atau
 kartu. Enam route publik lulus visual regression 47/47 pada empat viewport,
 collision/clearance assertions, touch target, reduced motion, dan axe WCAG.
+
+Candidate visual `9543450696760666b9ec50a19f918c3381c5d9cf` mengubah
+hierarchy landing agar AOGTIVITY menjadi nama acara utama, 17 Agustus 2026
+menjadi tanggal resmi, dan Army of God Madiun menjadi identitas penyelenggara.
+Lime elektrik, navy, magenta, cyan/kuning terbatas, halftone, petir, spark,
+koin, serta handheld-console frame berasal dari referensi poster founder.
+Seluruh teks tetap Plus Jakarta Sans. Candidate lulus asset pipeline, 128
+unit/API, build, dan 64/64 UI/WCAG regression, tetapi masih
+`IMPLEMENTED_NOT_DEPLOYED` sampai visual UAT dan guarded release disetujui.
+Candidate gabungan `78e725b972f2e6dfac0fa0255686cfa50a11722a`
+menambahkan kontrak rundown owner-confirmed: registrasi ulang 11.30 WIB,
+Opening Tim & Yel-yel 12.00, Sing Song 12.15, lomba 1-5 mulai 12.30, Break
+15 menit setelah lomba ke-5, lomba 6-10 mulai 14.40, dan Awarding & Closing
+17.20. Estimasi selesai 17.50 WIB masih mengikuti durasi lomba provisional.
+Schedule builder, reload API, UI publik, admin warning, migration MySQL 025,
+audit, dan rollback memakai struktur yang sama. Gate lokal lulus 129 unit/API,
+build, 64/64 UI/WCAG, serta acceptance urutan 14 blok; belum deployed.
 Kartu alur `Dari daftar sampai podium` memakai tiga track tetap untuk badge
 nomor, copy, dan panah. Badge 30 px dan gap 10 px mencegah overlap pada
 viewport 320 px; acceptance suite kini mencakup 48 Playwright checks.

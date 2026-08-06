@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-07 - AOGTIVITY poster theme dan rundown 12.00 candidate
+
+- `DEC-052` menyelaraskan hierarchy AOGTIVITY / 17 Agustus 2026 / Army of God
+  Madiun serta visual lime-navy-magenta dengan poster founder tanpa mengubah
+  Plus Jakarta Sans, mobile-first canvas, role, auth, API, data, atau domain.
+- `DEC-053` menetapkan registrasi ulang 11.30 WIB, acara 12.00 WIB, Opening Tim
+  & Yel-yel 15 menit, Sing Song 15 menit, lima lomba, Break 15 menit, lima
+  lomba, lalu Awarding & Closing. Estimasi provisional selesai 17.50 WIB.
+- Candidate source `78e725b972f2e6dfac0fa0255686cfa50a11722a`; migration 025 audited,
+  versioned, preserving operator assignment, dan reversible.
+- Typecheck, 129 unit/API, build, 64/64 UI/WCAG, serta acceptance urutan 14
+  blok lulus. Delivery `LOCAL_VALIDATED / REMOTE_BRANCH_SYNCED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap source `e4c217b`.
+
 ## 2026-08-07 - SagaView Batch Import Control Center S122 candidate
 
 - `DEC-051` menambahkan preflight kuota/storage, estimasi published/draft,

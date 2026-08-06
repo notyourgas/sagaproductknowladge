@@ -293,6 +293,16 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:
 `PRODUCTION_ACTIVATED`. Business readiness: `BLOCKED`.
 
 - UI public/player/leader/admin/live aktif pada public Vercel delivery.
+- Candidate source `78e725b972f2e6dfac0fa0255686cfa50a11722a` menerjemahkan
+  poster AOGTIVITY menjadi event identity lime-navy-magenta dengan halftone,
+  petir, spark, koin, handheld-console frame, serta hierarchy nama
+  **AOGTIVITY / 17 Agustus 2026 / Army of God Madiun**. Candidate ini
+  `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production belum berubah.
+- Rundown owner-confirmed pada candidate yang sama memindahkan registrasi ulang
+  ke 11.30 WIB dan acara ke 12.00 WIB: Opening Tim & Yel-yel 15 menit, Sing
+  Song 15 menit, lima lomba, Break 15 menit, lima lomba, lalu Awarding &
+  Closing. Estimasi provisional selesai 17.50 WIB. Migration 025 mengubah jam
+  lomba secara audited dan reversible tanpa menghapus assignment operator.
 - UI memakai `Pixel Matchday Arcade` yang tetap mobile-first 430 px: Plus
   Jakarta Sans, Feather-style icons, stepped geometry, hard shadow, quest/HUD
   hierarchy, state feedback, dan motion yang menghormati reduced-motion.

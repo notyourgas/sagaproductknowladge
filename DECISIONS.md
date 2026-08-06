@@ -231,6 +231,34 @@ keputusan pengganti.
 | Status | `CONFIRMED`; klausa nama produk AOGTICVITY `DEPRECATED` oleh `DEC-047`, sedangkan kontrak master recap, 8 tim, 10 lomba, durasi editable, dan roster seluruh tim tetap berlaku |
 | Dokumen terkait | [AOGTICVITY Product](products/aogticvity/PRODUCT.md), [AOGTICVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTICVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |
 
+## DEC-053 - Rundown AOGTIVITY dimulai pukul 12.00 WIB dalam dua sesi lomba
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-07 |
+| Topik | Struktur waktu dan urutan operasional AOGTIVITY 17 Agustus 2026 |
+| Keputusan | Registrasi ulang dan briefing dimulai 11.30 WIB. Acara dimulai 12.00 WIB dengan Opening Tim & Yel-yel 15 menit, Sing Song 15 menit, lima lomba, Break 15 menit, lima lomba, lalu Awarding & Closing. Durasi lomba dan penutupan tetap editable/provisional sampai dikunci panitia. |
+| Alasan | Founder memerlukan alur acara yang dimulai lebih awal, mudah dipahami peserta, dan memiliki jeda eksplisit di antara dua sesi berisi masing-masing lima lomba. |
+| Alternatif yang dipertimbangkan | Mempertahankan mulai 13.00; menaruh seluruh 10 lomba tanpa break; mempertahankan Makan Bersama sebagai agenda setelah seluruh lomba. |
+| Dampak | Master data version 2026.3, landing, agenda publik, schedule builder, admin warning, reload lintas perangkat, timeline, test, dan migration MySQL 025 memakai kontrak yang sama. Jam provisional menghasilkan Awarding & Closing 17.20 dan estimasi selesai 17.50 WIB. Migration mengarsipkan jam lama, menaikkan schedule version, menulis audit, dan menyediakan rollback tanpa mengubah assignment operator. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / LOCAL_VALIDATED / REMOTE_BRANCH_SYNCED / IMPLEMENTED_NOT_DEPLOYED`; source `78e725b972f2e6dfac0fa0255686cfa50a11722a`; production tetap source `e4c217b36a215b94922785f97a14b828ff87826a` sampai guarded deploy dan UAT |
+| Dokumen terkait | [AOGTIVITY Product](products/aogticvity/PRODUCT.md), [AOGTIVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTIVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |
+
+## DEC-052 - Hierarchy visual AOGTIVITY mengikuti poster event founder
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-06 |
+| Topik | Identitas event dan visual system AOGTIVITY |
+| Keputusan | AOGTIVITY menjadi nama acara utama, 17 Agustus 2026 menjadi tanggal resmi, dan Army of God Madiun menjadi identitas penyelenggara. Referensi poster diterjemahkan menjadi lime, navy, magenta, halftone, petir, spark, koin, dan handheld-console frame tanpa mengganti Plus Jakarta Sans atau kontrak mobile-first. |
+| Alasan | Visual aplikasi perlu konsisten dengan materi acara resmi dan tidak lagi menampilkan Pixel Matchday sebagai seolah-olah nama event. |
+| Alternatif yang dipertimbangkan | Mempertahankan header Pixel Matchday; menyalin poster sebagai background raster; mengganti font utama dengan pixel font. |
+| Dampak | Landing/header, theme CSS, asset pipeline, dan regression visual berubah; role, auth, API, data, domain, dan infrastructure identifier tidak berubah. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / LOCAL_VALIDATED / REMOTE_BRANCH_SYNCED / IMPLEMENTED_NOT_DEPLOYED`; visual source `9543450696760666b9ec50a19f918c3381c5d9cf`, digabung ke candidate `78e725b972f2e6dfac0fa0255686cfa50a11722a`; production tetap source `e4c217b36a215b94922785f97a14b828ff87826a` |
+| Dokumen terkait | [AOGTIVITY Product](products/aogticvity/PRODUCT.md), [AOGTIVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTIVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |
+
 ## DEC-051 - Batch import SagaView memiliki preflight, duplicate policy, dan control center
 
 | Field | Isi |

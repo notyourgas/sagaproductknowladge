@@ -782,6 +782,19 @@ Nama kanonik produk berubah dari AOGTICVITY menjadi AOGTIVITY pada 6 Agustus
 `20260806T093015Z`, dan Vercel `dpl_2ZfuhtLs4v8crJ1g3NnRyv8TSzU9`.
 Domain `aogticvities.fun` serta slug infrastruktur `aogticvity` tetap dipakai
 untuk kompatibilitas; AOGTICVITY hanya nama historis.
+Candidate source `78e725b972f2e6dfac0fa0255686cfa50a11722a` menggabungkan
+visual event berdasarkan poster founder dan rundown owner-confirmed. Hierarchy
+utama adalah AOGTIVITY / 17 Agustus 2026 / Army of God Madiun, dengan palette
+lime, navy, magenta, halftone, petir, spark, koin, serta handheld-console frame;
+Plus Jakarta Sans dan canvas mobile-first tetap dipertahankan. Registrasi ulang
+menjadi 11.30 WIB dan acara mulai 12.00 WIB: Opening Tim & Yel-yel 15 menit,
+Sing Song 15 menit, lima lomba, Break 15 menit, lima lomba, lalu Awarding &
+Closing. Estimasi provisional selesai 17.50 WIB. Migration 025 mengarsipkan jam
+lama, mengubah jadwal MySQL secara audited, dan menyediakan rollback tanpa
+menghapus assignment operator. Typecheck, 129 unit/API, build, 64/64 UI/WCAG,
+serta acceptance urutan 14 blok lulus. Status candidate `LOCAL_VALIDATED /
+REMOTE_BRANCH_SYNCED / IMPLEMENTED_NOT_DEPLOYED`; production tetap source
+`e4c217b36a215b94922785f97a14b828ff87826a` sampai guarded deploy dan UAT.
 Source runtime `640990f619156e16159be0562ccae1e7f259aa0b`, Hostinger release
 `20260805T190449Z`, Vercel `dpl_6zCCyTMBbA4eNgP7FYyanJ1RChAJ`, dan migration
 023 menambah audited WhatsApp delivery reconciliation tanpa resend, worker

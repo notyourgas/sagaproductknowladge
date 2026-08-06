@@ -8,6 +8,36 @@ Mencatat perubahan material AOGTIVITY/AOGTICVITY/17an/Olimpiade.
 
 Nama lama dipertahankan sebagai provenance; status runtime harus eksplisit.
 
+## 2026-08-07 - Rundown 12.00 owner-confirmed candidate
+
+- `CONFIRMED` melalui `DEC-053`: registrasi ulang 11.30 WIB dan acara mulai
+  12.00 WIB dengan urutan Opening Tim & Yel-yel 15 menit, Sing Song 15 menit,
+  lima lomba, Break 15 menit, lima lomba, lalu Awarding & Closing.
+- Jam lomba provisional menjadi 12.30, 12.50, 13.05, 13.20, 13.40, 14.40,
+  15.00, 15.20, 15.35, dan 16.35; Awarding & Closing mulai 17.20 dan estimasi
+  selesai 17.50 WIB. Durasi lomba/closing tetap editable oleh admin.
+- Source `78e725b972f2e6dfac0fa0255686cfa50a11722a`; migration 025 mengarsipkan jam
+  sebelumnya, memperbarui jadwal MySQL, menaikkan version, dan menulis audit
+  event. Down migration mengembalikan jam dari arsip.
+- Typecheck, 129 unit/API, build, 64/64 UI/WCAG, serta acceptance urutan 14
+  blok lulus. Delivery `LOCAL_VALIDATED / REMOTE_BRANCH_SYNCED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap source `e4c217b`.
+
+## 2026-08-06 - Poster-aligned event theme candidate
+
+- `CONFIRMED` melalui `DEC-052`: hierarchy event memakai AOGTIVITY sebagai
+  nama utama, 17 Agustus 2026 sebagai tanggal, dan Army of God Madiun sebagai
+  penyelenggara. `Pixel Matchday` tidak lagi menjadi label acara pada header;
+  bahasa arcade/pixel tetap menjadi visual system.
+- Candidate menambah event field lime, navy-magenta structure, halftone,
+  petir, spark, koin, console frame, serta dua SVG original yang masuk asset
+  pipeline. Plus Jakarta Sans, mobile canvas, role, auth, API, data, dan domain
+  tidak berubah.
+- Source `9543450696760666b9ec50a19f918c3381c5d9cf`; asset validation 71 entries,
+  128 unit/API, build, dan 64/64 UI/WCAG regression lulus.
+- Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap pada
+  release rebrand `e4c217b` sampai visual UAT dan guarded deploy disetujui.
+
 ## 2026-08-06 - Rebrand AOGTIVITY production
 
 - `CONFIRMED`: nama kanonik produk berubah dari AOGTICVITY menjadi AOGTIVITY;

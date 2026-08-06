@@ -12,6 +12,20 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-07
 
+### AOGTIVITY poster theme dan rundown 12.00 candidate
+
+- Ringkasan: visual event mengikuti poster founder dan rundown menjadi opening
+  12.00, Sing Song, dua sesi masing-masing lima lomba dengan Break 15 menit,
+  lalu Awarding & Closing.
+- Klasifikasi: `CONFIRMED` melalui `DEC-052` dan `DEC-053`; delivery
+  `LOCAL_VALIDATED / REMOTE_BRANCH_SYNCED / IMPLEMENTED_NOT_DEPLOYED`.
+- Source: `78e725b972f2e6dfac0fa0255686cfa50a11722a`, branch
+  `codex/whatsapp-magic-link`; production tetap `e4c217b`.
+- Gate: typecheck, 129 unit/API, build, 64/64 UI/WCAG, acceptance urutan 14
+  blok, migration 025 dengan audit dan rollback.
+- File knowledge: product, dossier, changelog AOGTIVITY, master, decisions,
+  gaps, portfolio/root changelog, dan sync status.
+
 ### SagaView Batch Import Control Center S122 candidate
 
 - Ringkasan: batch import maksimal 100 template memperoleh preflight
