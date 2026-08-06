@@ -4,6 +4,24 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-08-06 - Portable frame template production
+
+- Klasifikasi: `CONFIRMED` melalui keputusan founder `DEC-042`.
+- Status: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; business readiness
+  mass-scale tetap `NEEDS CONFIRMATION`.
+- Source backend `1158926b2be35887aff7dc8a09cb0111e8a71fc7`, release
+  `20260806050513-1158926`; Studio `3b66f8d5df3e34aba11c4eab2619cfe44efd06d7`,
+  release `20260806050546-3b66f8d`.
+- Rollback backend `20260805155517-c853806` dan Studio
+  `20260805155605-3b66f8d` dipertahankan.
+- Backup terenkripsi, checksum/offsite round-trip, disposable restore,
+  rehearsal candidate/rollback 6/6, deploy gate 6/6, single-device canary,
+  service/journal/header, payment/device preservation, dan HTTP smoke lulus.
+- Live bundle memuat import/export `.sagaview-frame`; authenticated Owner UAT
+  lintas dua akun tetap manual karena bridge vault lokal tidak aktif.
+- Pricing, entitlement, payment, device/session, foto customer, dan output 4R
+  tidak berubah.
+
 ## 2026-08-06 - Portable frame template candidate
 
 - Klasifikasi: `CONFIRMED` melalui keputusan founder `DEC-042`.

@@ -12,21 +12,22 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-06T11:52:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-06T12:11:31+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `f3e4bf0` |
-| Informasi terakhir disinkronkan | SagaBook auth/session S123 aktif melalui source `a9125228`, release `20260806043833-a912522`; irisan auth/session berstatus `UIUX_VALIDATED / INTEGRATION_VALIDATED / PRODUCTION_ACTIVATED`. |
+| Baseline sebelum pembaruan | `51411df` |
+| Informasi terakhir disinkronkan | SagaView portable frame template aktif melalui source `1158926b`, backend release `20260806050513-1158926`, dan Studio release `20260806050546-3b66f8d`; delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik informasi. Perubahan AOGTICVITY/SagaView pada `origin/main` dipertahankan; sinkronisasi S123 direbase dari clone bersih tanpa menimpa checkout utama. |
-| Error | Tidak ada error release baru. Queue SagaBook mencatat nol error sejak deploy pada pemeriksaan pasca-release. |
+| Konflik | Tidak ada konflik informasi; baseline SagaBook dan AOGTICVITY terbaru dipertahankan. |
+| Error | Tidak ada error release baru. SagaView failed jobs nol dan journal service bersih pada pemeriksaan pasca-release. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/sagabook/PRODUCT.md`
-- `products/sagabook/DOSSIER.md`
-- `products/sagabook/CHANGELOG.md`
-- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/DOSSIER.md`
+- `products/sagaview/CHANGELOG.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `DECISIONS.md`
 - `GAPS.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
@@ -35,11 +36,10 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 ## Item menunggu konfirmasi
 
-SagaView portable frame template masih memerlukan authenticated Owner UAT
-dengan frame nyata pada dua akun terkontrol, pemeriksaan rename/category,
-collision-safe key, publish terpisah, guarded deployment, live smoke, dan
-rollback verification. Sampai gate tersebut selesai, fitur tidak boleh disebut
-aktif di production.
+SagaView portable frame template aktif di production. Residualnya adalah
+authenticated Owner UAT dengan frame nyata pada dua akun terkontrol,
+rename/category, collision-safe key, save draft, dan publish terpisah sebelum
+klaim `BUSINESS_READY` mass-scale.
 
 Ledger integrasi SagaBook dan SagaView masih bertahap. Auth/session SagaBook
 S123 sudah `INTEGRATION_VALIDATED`; residualnya expiry idle, revocation lintas
@@ -62,10 +62,10 @@ aktif dan menyelesaikan satu booking nyata terkontrol sebelum klaim
 
 SagaView compact all-menu, workspace Session/Output/Izin Foto monitor besar,
 free drag rotation, serta pemisahan draft/publish aktif secara kumulatif pada
-Studio `20260805155605-3b66f8d`; rollback `20260805221453-3b66f8d`
+Studio `20260806050546-3b66f8d`; rollback `20260805155605-3b66f8d`
 dipertahankan.
-Backend aktif `20260805155517-c853806`; rollback
-`20260805203055-9ee5bcc`. Authenticated Owner visual UAT dengan frame miring dan
+Backend aktif `20260806050513-1158926`; rollback
+`20260805155517-c853806`. Authenticated Owner visual UAT dengan frame miring dan
 publish frame nyata serta Founding Studio Pilot tetap dibutuhkan sebelum klaim
 `BUSINESS_READY` mass-scale.
 

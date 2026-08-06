@@ -12,6 +12,30 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-06
 
+### SagaView portable frame template production
+
+- Ringkasan: export/import `.sagaview-frame` tenant-neutral sekarang aktif di
+  Owner Console production dan selalu masuk sebagai draft baru.
+- Alasan: setup artwork, orientasi, feather, geometri, dan angle slot dapat
+  dipindahkan lintas akun tanpa menyalin data tenant/customer.
+- Produk/area: SagaView Owner Console, authoring frame, client-side package,
+  checksum/security, draft save, deployment, dan rollback.
+- Klasifikasi: `CONFIRMED` melalui `DEC-042`; delivery
+  `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
+- Source/release: backend `1158926b2be35887aff7dc8a09cb0111e8a71fc7` /
+  `20260806050513-1158926`; Studio `3b66f8d5df3e34aba11c4eab2619cfe44efd06d7`
+  / `20260806050546-3b66f8d`.
+- Gate: build 5.095 modul, npm audit nol, test 12/12 dengan 45 assertion,
+  backup/offsite/restore, rehearsal dan rollback gate 6/6, deploy gate 6/6,
+  canary, payment/device preservation, service/journal/header, dan HTTP smoke.
+- Production berubah: ya pada frontend Owner frame manager; tidak ada route
+  atau migration baru dan pricing, entitlement, payment, device/session, foto
+  customer, serta output 4R tetap.
+- Residual: authenticated Owner UAT lintas dua akun sebelum klaim
+  `BUSINESS_READY` mass-scale.
+- File knowledge: product, dossier, changelog, ledger SagaView, decision, gaps,
+  master, portfolio/root changelog, dan sync status.
+
 ### AOGTICVITY live standings production
 
 - Ringkasan: standing resmi sekarang server-authoritative dan tersinkron lintas

@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-06 - SagaView portable frame template production
+
+- Export/import `.sagaview-frame` tenant-neutral aktif melalui backend source
+  `1158926b2be35887aff7dc8a09cb0111e8a71fc7`, release
+  `20260806050513-1158926`; Studio release `20260806050546-3b66f8d`.
+- Backup/restore, rehearsal candidate/rollback 6/6, deploy gate 6/6, canary,
+  service/journal/header, payment/device preservation, dan live smoke lulus;
+  rollback sebelumnya dipertahankan.
+- Delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Authenticated Owner UAT
+  lintas dua akun dan Founding Studio Pilot tetap residual sebelum
+  `BUSINESS_READY` mass-scale.
+
 ## 2026-08-06 - AOGTICVITY live standings production
 
 - Standing resmi kini dibentuk server dari hasil published/corrected, dengan

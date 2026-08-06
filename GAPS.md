@@ -236,11 +236,13 @@ ketika keputusan atau release baru menutup gap.
 
 ### SagaView
 
-- `TODO`: portable frame template `DEC-042` masih
-  `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Tutup gate dengan authenticated
-  Owner UAT memakai frame nyata pada akun sumber dan akun tujuan terkontrol,
-  verifikasi perubahan nama/kategori, collision-safe key, publish terpisah,
-  lalu guarded deployment, live smoke, dan rollback verification.
+- `CONFIRMED`: portable frame template `DEC-042` sudah
+  `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` melalui backend release
+  `20260806050513-1158926`. Backup/restore, guarded deployment, live smoke, dan
+  rollback verification lulus.
+- `TODO`: jalankan authenticated Owner UAT memakai frame nyata pada akun sumber
+  dan akun tujuan terkontrol, termasuk rename/category, collision-safe key,
+  save draft, dan publish terpisah, sebelum klaim `BUSINESS_READY` mass-scale.
 
 - `TODO`: selesaikan ledger integrasi feature-by-feature dari auth/device/session
   sampai owner dashboard/entitlement. Untuk ingest foto, editor, recovery, dan
