@@ -93,21 +93,31 @@ browser production mobile/desktop. Website booking tenant trial diaktifkan
 setelah pre-publish readiness 100; rollback `20260803194351-d70fc1e` tersedia.
 Business readiness menunggu copy alamat final dan booking nyata terkontrol.
 
-Release SagaBook terbaru adalah S125 source
-`cb8ef55a33ad1399c9383d027343a412752fc9ff`, release
-`20260806063717-cb8ef55`, rollback `20260806053037-f6988cb`. S123 menutup
+Release SagaBook terbaru adalah S126 source
+`e20c0ba3480e6143159108e313525d7576312146`, release
+`20260806072249-e20c0ba`, rollback `20260806063717-cb8ef55`. S123 menutup
 auth/session dan S124 menutup irisan status/write cabang. S125 menutup irisan
 branch context `/admin/reports`: ringkasan, analitik, tabel, dan closing state
 mengikuti cabang terpilih; write finance/closing membawa `branchId`, diblok
 saat konteks tidak konkret, dan dijaga dari double-submit. Staff/cross-branch
 ditolak tanpa perubahan data dan response/refetch backend aktual dirender UI.
 Editor Template Booking S122 dan storefront satu canvas mobile maksimum 460
-piksel tetap dipertahankan. Sesuai `DEC-041`, Payment Monitor,
+piksel tetap dipertahankan. S126 mengaktifkan pencarian, lima filter, accordion
+satu-detail, empty/reset recovery, dan CTA `Kembali ke Hari Ini` pada Admin
+Changelog tanpa mengubah API/database atau workflow bisnis. Sesuai `DEC-041`,
+Payment Monitor,
 pagination/export, reconciliation provider, selector/filter route lain, dan
 fitur berikutnya tetap discreen feature-by-feature; satu irisan tervalidasi
 tidak berarti integrasi seluruh produk selesai. SagaView tetap local-first
 untuk foto, editor, recovery, dan export. Subscription activation tidak
 berubah.
+
+Catatan status kumulatif: source storefront/recovery S98-S118 yang tercatat
+sebagai candidate pada bagian histori di bawah sudah menjadi ancestor source
+production S126 dan tidak memerlukan deploy terpisah. Pengecualian arah
+storefront tablet/lebar S94/S108 tetap `DEPRECATED`; perilaku aktif adalah S109
+satu canvas mobile maksimum 460 piksel pada semua viewport. Kandidat governance
+privacy `d4c96276` dan auto-trial tetap sengaja tidak diaktifkan.
 
 Update terbaru: Support & Recovery Center production. Owner/admin dapat
 bertanya, melakukan human handoff, melanjutkan tiket, mengakses account
@@ -383,18 +393,19 @@ tepat satu `Powered by SagaBook`. Production tetap `d70fc1e0` / release
 Booking/payment/provider, aturan availability, tenant isolation, invoice,
 receipt, preset, dan SagaView tidak berubah.
 
-Candidate navigasi admin Changelog SagaBook pada source
-`95621347050450a06dd8e5c95eedbd112aa2ff0e` tersedia di branch
-`codex/s97-sagabook-admin-nav` dengan status
-`LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`. Sebelum
+Navigasi admin Changelog SagaBook dari source asal
+`95621347050450a06dd8e5c95eedbd112aa2ff0e` aktif secara kumulatif melalui
+source `e20c0ba3480e6143159108e313525d7576312146`, release
+`20260806072249-e20c0ba`. Sebelum
 perubahan, 18 rilis/64 detail tampil terbuka bersamaan. Kandidat memakai
 pencarian, lima filter, accordion satu-detail, empty/reset recovery, dan CTA
 kembali ke Hari Ini; keyboard/focus, target 44/48 piksel, forced-colors,
 reduced-motion, no-overflow, serta satu watermark non-fixed lulus di mobile dan
-desktop. Full backend 960/960, kontrak admin 52/52, snapshot 3/3, build, design,
-dan audit dependency 0 lulus. Production tetap `d70fc1e0` release
-`20260803194351-d70fc1e` sampai backup/restore exact candidate dan approval
-deploy tersedia; workflow bisnis dan storefront tidak berubah.
+desktop. Backend regression terbaru 962/962 dengan 11.038 assertion, focused
+Playwright 2/2, visual/design 6/6, build, audit dependency nol,
+backup/restore exact candidate, manifest, DB audit, service/journal, dan public
+smoke lulus. Rollback `20260806063717-cb8ef55` tersedia; workflow bisnis dan
+storefront tidak berubah.
 
 Keputusan privacy/retention/offboarding SagaBook yang lebih rinci telah
 disetujui owner untuk implementasi dan legal review pada source docs commit
@@ -427,11 +438,11 @@ tanpa mengubah benefit lain. Entitlement production terverifikasi melalui
 backend source `c8538060f64cfabce46dc7f837531015673e7a1c`.
 
 Update terbaru: backend memakai source
-`1158926b2be35887aff7dc8a09cb0111e8a71fc7`, release
-`20260806050513-1158926`, sedangkan Studio aktif memakai source
+`73979542ceeb8fc11e658c7d27346ca983dc163f`, release
+`20260806071707-7397954`, sedangkan Studio aktif memakai source
 `3b66f8d5df3e34aba11c4eab2619cfe44efd06d7`, release
-`20260806050546-3b66f8d`, dengan rollback Studio
-`20260805155605-3b66f8d` dan backend `20260805155517-c853806`. Workspace
+`20260806071733-3b66f8d`, dengan rollback Studio
+`20260806050546-3b66f8d` dan backend `20260806050513-1158926`. Workspace
 Session kini memakai lebar adaptif sampai 1600 piksel pada monitor besar tanpa
 merusak reflow mobile/laptop atau menambah horizontal overflow. Workspace
 Output memakai batas 1400 piksel: satu alur vertikal pada mobile/laptop dan dua
@@ -508,16 +519,18 @@ backend release `20260806050513-1158926` dan Studio release
 `20260806050546-3b66f8d`; delivery dan activation berstatus
 `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Authenticated Owner UAT lintas dua
 akun tetap residual sebelum klaim business-ready mass-scale.
-Keputusan founder `DEC-044` menambahkan bulk export Galeri Frame sebagai
-kandidat `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Source
+Keputusan founder `DEC-044` menambahkan bulk export Galeri Frame yang kini
+`PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Source
 `73979542ceeb8fc11e658c7d27346ca983dc163f` menyediakan checkbox per kartu,
 `Pilih semua hasil` berbasis filter, state parsial, jumlah/clear pilihan, dan
 sequential `Export dipilih`. Pilihan di luar filter tetap dipertahankan dan
 setiap hasil masih berupa `.sagaview-frame` schema v1 tenant-neutral agar
 kompatibel dengan import production. Build, audit dependency, focused bulk
 Playwright, regresi export/import, serta backend 12/12 dengan 45 assertion
-lulus. Browser dapat meminta izin beberapa download. Production tetap backend
-release `20260806050513-1158926`; deployment belum dijalankan.
+lulus. Browser dapat meminta izin beberapa download. Fitur aktif melalui
+backend release `20260806071707-7397954` dan Studio
+`20260806071733-3b66f8d`; authenticated Owner UAT tetap residual sebelum
+`BUSINESS_READY` mass-scale.
 Implementasi rotate lama yang menukar W/H 90 derajat telah `DEPRECATED` oleh
 koreksi founder `DEC-036`. Perilaku production yang aktif adalah
 diterima adalah tahan ikon rotate lalu drag ke kiri/kanan agar slot mendapat

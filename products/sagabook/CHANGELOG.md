@@ -4,6 +4,27 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-06 - Admin Changelog navigation production S126
+
+- Klasifikasi: `CONFIRMED`; source kumulatif
+  `e20c0ba3480e6143159108e313525d7576312146` aktif sebagai release immutable
+  `20260806072249-e20c0ba`; rollback `20260806063717-cb8ef55` dipertahankan.
+- Before: 18 rilis/64 detail terbuka sekaligus tanpa pencarian dan recovery.
+  After: pencarian lintas versi/area/perubahan, lima filter, accordion
+  satu-detail, empty/reset state, dan CTA `Kembali ke Hari Ini`.
+- UI 390x844 dan 1440x900, target 44/48 px, keyboard/focus, forced-colors,
+  reduced-motion, no-overflow, dan tepat satu watermark lulus.
+- Gate: focused Playwright 2/2, visual/design 6/6, storefront mobile-only 6/6
+  lintas 390 sampai 4K, backend 962/962 dengan 11.038 assertion, typecheck,
+  build, dependency audit nol, encrypted backup/checksum/offsite/disposable
+  restore `20260806T072131Z`, manifest, DB audit 100, service, journal, dan
+  public smoke lulus.
+- Status irisan `UIUX_VALIDATED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`; tidak ada perubahan API/database atau integrasi bisnis.
+  Authenticated owner UAT tetap residual sebelum `BUSINESS_READY`.
+- Subscription tenant tetap di-skip dan website booking yang sudah aktif tidak
+  dinonaktifkan.
+
 ## 2026-08-06 - Report branch context production S125
 
 - Klasifikasi: `CONFIRMED`; source

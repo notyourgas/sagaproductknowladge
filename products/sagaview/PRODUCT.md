@@ -20,8 +20,8 @@ yang diverifikasi sampai 6 Agustus 2026.
 ## Status production terbaru
 
 - Studio source `3b66f8d5df3e34aba11c4eab2619cfe44efd06d7` aktif sebagai
-  release `20260806050546-3b66f8d`; rollback
-  `20260805155605-3b66f8d` dipertahankan.
+  release `20260806071733-3b66f8d`; rollback
+  `20260806050546-3b66f8d` dipertahankan.
 - Workspace Session memakai lebar adaptif sampai 1600 piksel pada monitor
   besar. Layar mobile, laptop compact, dan MacBook tetap memakai reflow lama;
   tidak ada horizontal overflow atau fitur yang disembunyikan.
@@ -32,9 +32,9 @@ yang diverifikasi sampai 6 Agustus 2026.
   lalu memakai dua kartu sesi berdampingan pada QHD/4K di dalam batas 1400
   piksel. Ringkasan, filter, retry, cabut izin, dan workflow privacy tidak
   berubah.
-- Backend source `1158926b2be35887aff7dc8a09cb0111e8a71fc7` aktif sebagai
-  release `20260806050513-1158926`; rollback
-  `20260805155517-c853806` dipertahankan.
+- Backend source `73979542ceeb8fc11e658c7d27346ca983dc163f` aktif sebagai
+  release `20260806071707-7397954`; rollback
+  `20260806050513-1158926` dipertahankan.
 - Entitlement live memberi Growth 50 dan Pro 100 frame aktif. Harga, device,
   preset, offline grace, storage, laporan, support, payment, dan fair-use tidak
   berubah.
@@ -228,8 +228,8 @@ business-ready mass-scale.
 
 ## Bulk export Galeri Frame
 
-`CONFIRMED` melalui `DEC-044`, dengan delivery `LOCAL_VALIDATED /
-IMPLEMENTED_NOT_DEPLOYED` pada source
+`CONFIRMED` melalui `DEC-044`, dengan delivery dan activation
+`PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` pada source
 `73979542ceeb8fc11e658c7d27346ca983dc163f`. Owner dapat mencentang setiap
 kartu atau memakai `Pilih semua hasil` yang mengikuti pencarian, status, dan
 orientasi yang sedang tampil. Pilihan dari filter lain tetap tersimpan; UI
@@ -240,9 +240,10 @@ Setiap hasil tetap `.sagaview-frame` schema versi 1 dan melewati kontrak
 magic-byte, ukuran, dimensi, checksum, metadata portable, serta sanitasi
 tenant/customer yang sama dengan export production. Browser dapat meminta izin
 beberapa download. Tidak ada route API, migration, pricing, entitlement,
-payment, device/session, foto customer, atau Studio runtime baru. Production
-tetap backend source `1158926b2be35887aff7dc8a09cb0111e8a71fc7` pada release
-`20260806050513-1158926` sampai guarded deploy dijalankan.
+payment, device/session, foto customer, atau perubahan source Studio. Fitur
+aktif melalui backend release `20260806071707-7397954` dan Studio release
+`20260806071733-3b66f8d`; authenticated Owner UAT dengan galeri nyata tetap
+residual sebelum klaim `BUSINESS_READY` mass-scale.
 
 ## Session completion dan privacy handoff
 

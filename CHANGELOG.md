@@ -12,6 +12,36 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-06
 
+### SagaBook Admin Changelog S126 production
+
+- Ringkasan: navigasi Changelog admin kini mempunyai pencarian, lima filter,
+  accordion satu-detail, empty/reset recovery, dan CTA `Kembali ke Hari Ini`.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` untuk
+  irisan UI read-only ini; produk keseluruhan belum `BUSINESS_READY`.
+- Source/release: `e20c0ba3480e6143159108e313525d7576312146` /
+  `20260806072249-e20c0ba`; rollback `20260806063717-cb8ef55`.
+- Gate: Playwright mobile/desktop, visual/design, storefront mobile-only sampai
+  4K, backend 962/962 dengan 11.038 assertion, build/audit, encrypted backup,
+  disposable restore, immutable manifest, service/journal, dan public smoke
+  lulus.
+- Production berubah: hanya UI Changelog admin. API, database, booking,
+  payment, availability, subscription, dan website booking aktif tidak diubah.
+
+### SagaView bulk frame export S118 production
+
+- Ringkasan: bulk select/export Galeri Frame aktif dengan checkbox per kartu,
+  `Pilih semua hasil`, partial/clear state, dan sequential export format v1.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` untuk
+  irisan ini; authenticated Owner UAT tetap residual sebelum `BUSINESS_READY`.
+- Source/release: backend `73979542ceeb8fc11e658c7d27346ca983dc163f` /
+  `20260806071707-7397954`; Studio `3b66f8d5df3e34aba11c4eab2619cfe44efd06d7`
+  / `20260806071733-3b66f8d`.
+- Rollback: backend `20260806050513-1158926`; Studio
+  `20260806050546-3b66f8d`.
+- Gate: backup/restore, rehearsal candidate/rollback 6/6, deploy gate 6/6,
+  canary, service/journal/header, dan public smoke lulus. Tidak ada payment
+  intent/QRIS baru dan foto customer tidak disentuh.
+
 ### SagaView bulk frame export candidate
 
 - Ringkasan: Galeri Frame memperoleh checkbox per kartu, `Pilih semua hasil`

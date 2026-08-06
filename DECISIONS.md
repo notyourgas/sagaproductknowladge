@@ -242,7 +242,7 @@ keputusan pengganti.
 | Alternatif yang dipertimbangkan | Export per frame saja; select-all selalu seluruh katalog tanpa mengikuti filter; membuat format bundle baru yang belum kompatibel dengan import; mengekspor semua otomatis tanpa review pilihan. |
 | Dampak | Galeri Frame memperoleh checkbox per kartu, select-all filtered results, partial state, jumlah pilihan, clear, dan sequential batch download. Jalur validasi serta sanitasi template versi 1 dipakai ulang; API, migration, pricing, entitlement, payment, device/session, foto customer, dan Studio runtime tidak berubah. Browser dapat meminta izin beberapa download. |
 | Pemberi keputusan | Andreas / founder |
-| Status | `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; source `73979542ceeb8fc11e658c7d27346ca983dc163f`, branch `codex/sagaview-bulk-frame-export-s118`; production tetap backend release `20260806050513-1158926` |
+| Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; source `73979542ceeb8fc11e658c7d27346ca983dc163f`, backend release `20260806071707-7397954`, Studio release `20260806071733-3b66f8d`; authenticated Owner UAT tetap residual sebelum `BUSINESS_READY` mass-scale |
 | Dokumen terkait | [SagaView Product](products/sagaview/PRODUCT.md), [SagaView Dossier](products/sagaview/DOSSIER.md), [SagaView Changelog](products/sagaview/CHANGELOG.md), [SagaView Ledger](products/sagaview/FEATURE_COVERAGE_LEDGER.md), [Gaps](GAPS.md) |
 
 ## DEC-016 — Deploy public prototype AOGTICVITY ke Vercel

@@ -12,14 +12,14 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-06T13:53:01+07:00 |
+| Waktu pembaruan terakhir | 2026-08-06T14:33:01+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `a4e4a33` |
-| Informasi terakhir disinkronkan | Kandidat bulk export Galeri Frame SagaView pada source `73979542`; checkbox per frame, select-all berbasis filter, partial/clear state, dan sequential template-v1 download. |
+| Baseline sebelum pembaruan | `5c9af28` |
+| Informasi terakhir disinkronkan | Production SagaView bulk frame export S118 (`73979542` / `20260806071707-7397954`) dan SagaBook Admin Changelog S126 (`e20c0ba3` / `20260806072249-e20c0ba`). |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik informasi; production SagaView tetap release `20260806050513-1158926` sampai guarded deploy berhasil. |
-| Error | Tidak ada error kandidat; build, audit, focused browser, backend 12/12 dengan 45 assertion, dan diff check lulus. |
+| Konflik | Tidak ada; status candidate lama dipertahankan sebagai histori dan status production terbaru menjadi otoritas aktif. |
+| Error | Tidak ada error release; seluruh gate deploy, service health, rollback, dan public smoke yang diwajibkan lulus. |
 
 ## File yang berubah pada sinkronisasi ini
 
@@ -27,6 +27,10 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `products/sagaview/DOSSIER.md`
 - `products/sagaview/CHANGELOG.md`
 - `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
 - `DECISIONS.md`
 - `GAPS.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
@@ -61,18 +65,23 @@ aktif dan menyelesaikan satu booking nyata terkontrol sebelum klaim
 `BUSINESS_READY` atau distribusi link secara luas.
 
 SagaView compact all-menu, workspace Session/Output/Izin Foto monitor besar,
-free drag rotation, serta pemisahan draft/publish aktif secara kumulatif pada
-Studio `20260806050546-3b66f8d`; rollback `20260805155605-3b66f8d`
-dipertahankan.
-Backend aktif `20260806050513-1158926`; rollback
-`20260805155517-c853806`. Authenticated Owner visual UAT dengan frame miring dan
+free drag rotation, pemisahan draft/publish, dan bulk frame export aktif secara
+kumulatif pada Studio `20260806071733-3b66f8d`; rollback
+`20260806050546-3b66f8d` dipertahankan. Backend aktif
+`20260806071707-7397954`; rollback `20260806050513-1158926`. Authenticated
+Owner visual UAT dengan frame miring dan
 publish frame nyata serta Founding Studio Pilot tetap dibutuhkan sebelum klaim
 `BUSINESS_READY` mass-scale.
 
-Bulk export Galeri Frame `DEC-044` sudah `LOCAL_VALIDATED /
-IMPLEMENTED_NOT_DEPLOYED` pada source `73979542`. Residual kandidat adalah UAT
-Owner dengan galeri/frame nyata dan izin multi-download browser, guarded
-deploy, live marker/smoke, preservation payment/device, serta rollback proof.
+Bulk export Galeri Frame `DEC-044` sudah `PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED` pada source `73979542`. Residualnya adalah authenticated
+Owner UAT dengan galeri/frame nyata, izin multi-download browser, dua akun,
+tenant-negative, serta retry/idempotency sebelum coverage penuh.
+
+SagaBook Admin Changelog S126 aktif melalui source `e20c0ba3`, release
+`20260806072249-e20c0ba`, rollback `20260806063717-cb8ef55`. Authenticated
+owner UAT pada data rilis aktual tetap residual; subscription tenant tetap
+di-skip dan website booking aktif tidak dinonaktifkan.
 
 Keputusan SagaView `DEC-039` untuk Growth 50 / Pro 100 telah
 `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Entitlement API, policy runtime,

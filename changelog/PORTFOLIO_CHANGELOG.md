@@ -1,5 +1,28 @@
 # Portfolio Changelog
 
+## 2026-08-06 - SagaBook Admin Changelog S126 production
+
+- Pencarian, lima filter, accordion satu-detail, empty/reset recovery, dan CTA
+  `Kembali ke Hari Ini` aktif pada Changelog admin.
+- Source/release `e20c0ba3480e6143159108e313525d7576312146` /
+  `20260806072249-e20c0ba`; rollback `20260806063717-cb8ef55`.
+- Focused/visual/browser, backend 962/962, build/audit, backup/restore,
+  immutable manifest, service/journal, dan public smoke lulus.
+- Irisan `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; subscription dan website
+  booking aktif tidak diubah. Owner UAT tetap residual sebelum business-ready.
+
+## 2026-08-06 - SagaView bulk frame export S118 production
+
+- Bulk select/export Galeri Frame aktif melalui backend source
+  `73979542ceeb8fc11e658c7d27346ca983dc163f`, release
+  `20260806071707-7397954`; Studio release `20260806071733-3b66f8d`.
+- Rollback backend `20260806050513-1158926` dan Studio
+  `20260806050546-3b66f8d` dipertahankan.
+- Backup/restore, rehearsal candidate/rollback, deploy gate, canary,
+  service/journal/header, dan public smoke lulus tanpa payment intent/QRIS baru.
+- Irisan `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; Owner UAT galeri nyata
+  dan izin multi-download tetap residual sebelum business-ready mass-scale.
+
 ## 2026-08-06 - SagaView bulk frame export candidate
 
 - `DEC-044` menetapkan Owner dapat mencentang frame atau memilih seluruh hasil

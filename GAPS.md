@@ -128,105 +128,27 @@ ketika keputusan atau release baru menutup gap.
   belum dipublish. Jalankan satu booking success terkontrol pada tenant pilot
   tanpa menyalin PII ke knowledge untuk membuktikan CTA detail/status dan
   WhatsApp cabang sebelum klaim activation tenant nyata atau business ready.
-- `BLOCKED`: candidate landscape tablet storefront source `1f4b7baf` sudah
-  masuk `main` dan seluruh gate lokal plus fresh S39 exact-SHA lulus, tetapi
-  approval eksekusi production pada task automation belum diberikan.
-  Production tetap `d70fc1e0` / `20260803194351-d70fc1e`; bukti penutup adalah
-  approval eksplisit, immutable deploy contract, service/header/journal, dan
-  public smoke pada exact candidate.
-- `BLOCKED`: candidate navigasi admin Changelog source `95621347` lulus
-  seluruh gate lokal dan tersedia di branch `codex/s97-sagabook-admin-nav`,
-  tetapi production tetap `d70fc1e0` / `20260803194351-d70fc1e`. Bukti penutup
-  adalah encrypted backup/checksum/disposable restore yang terikat exact
-  candidate, approval deploy, immutable release, service/header/journal, serta
-  public smoke 390x844 dan 1440x900.
-- `BLOCKED`: candidate recovery availability storefront source `0f2f7bca`
-  lulus focused 2/2, storefront 147 pass/6 expected skip, backend 960/960,
-  build, a11y/design, dan audit dependency; production tetap `d70fc1e0` /
-  `20260803194351-d70fc1e`. Bukti penutup adalah backup/checksum/disposable
-  restore, migration preflight, approval, immutable release, service/journal,
-  rollback proof, dan public smoke yang semuanya terikat exact S98.
-- `BLOCKED`: candidate recovery clipboard storefront source `07dda642` lulus
-  focused dua viewport, storefront 104 pass/4 expected skip, backend 960/960,
-  build, a11y/design, dan audit dependency; production tetap `d70fc1e0` /
-  `20260803194351-d70fc1e`. Bukti penutup adalah backup/checksum/disposable
-  restore, migration preflight, approval, immutable release, service/journal,
-  rollback proof, dan public smoke yang semuanya terikat exact S99.
-- `BLOCKED`: candidate recovery clipboard header storefront aktif source
-  `9d9c5ede` lulus red-green focused dua viewport, storefront 105 pass/5
-  expected skip, backend 960/960, build, a11y/design, dan audit dependency;
-  production tetap `d70fc1e0` / `20260803194351-d70fc1e`. Bukti penutup adalah
-  release-safety receipt berisi backup/checksum/disposable restore, migration
-  preflight, approval, immutable release, service/journal, rollback proof, dan
-  public smoke yang semuanya terikat exact S100.
-- `BLOCKED`: candidate recovery clipboard langkah `Selesai` source `2bcacb24`
-  lulus red-green focused dua viewport, storefront 106 pass/6 expected skip,
-  backend 960/960, build, a11y/design, dan audit dependency; production tetap
-  `d70fc1e0` / `20260803194351-d70fc1e`. Bukti penutup adalah release-safety
-  receipt berisi backup/checksum/disposable restore, migration preflight,
-  approval, immutable release, service/journal, rollback proof, dan public
-  smoke yang semuanya terikat exact S101.
-- `BLOCKED`: candidate koreksi Review kumulatif source `621a74a0` lulus
-  focused 2/2, backend 960/960, suite storefront 114 test terjadwal exit hijau,
-  build, design, dan npm audit; production tetap `d70fc1e0` /
-  `20260803194351-d70fc1e`. Blocker backend S102 telah ditutup tanpa mengubah
-  expiry production. Composer online segar kini nol advisory; re-verifikasi
-  backend 960/960, focused Playwright 2/2, accessibility 16/16, build, design,
-  npm audit, dan empat public smoke juga hijau. Candidate belum `STAGING_READY`
-  karena release-safety receipt yang mengikat backup terenkripsi, checksum, dan
-  disposable restore ke exact S103 belum tersedia. Lengkapi receipt, migration
-  preflight, approval, immutable release, service/journal, rollback proof, dan
-  public smoke exact source sebelum deployment.
-- `BLOCKED`: candidate state pilihan storefront source `18f2b3c1` lulus
-  focused 3/3, storefront 120 test terjadwal exit 0, backend 960/960, build,
-  design, npm/Composer audit, visual exact dua viewport, target 44 piksel, dan
-  satu watermark. Production tetap `d70fc1e0` / `20260803194351-d70fc1e`.
-  Bukti penutup adalah release-safety receipt berisi backup terenkripsi,
-  checksum, disposable restore dan migration preflight yang terikat exact S106,
-  approval, immutable release, service/header/journal, rollback proof, serta
-  public smoke exact source.
-- `BLOCKED`: candidate recovery form Detail source `2b3e544b` lulus focused
-  2/2, targeted caret 1/1, storefront final 124 test terjadwal exit 0, backend
-  960/960, build, design, npm/Composer audit, visual exact dua viewport, target
-  44 piksel, no-overflow, dan satu watermark pada lima preset. Production tetap
-  `d70fc1e0` / `20260803194351-d70fc1e`. Bukti penutup adalah release-safety
-  receipt berisi backup terenkripsi, checksum, disposable restore, migration
-  preflight yang terikat exact S107, approval, immutable release,
-  service/header/journal, rollback proof, serta public smoke exact source.
+- `DEPRECATED`: arah landscape/tablet source `1f4b7baf` yang memperlebar
+  storefront digantikan `DEC-031`/S109. Commit ada dalam sejarah kumulatif,
+  tetapi perilaku lebar tidak aktif dan tidak boleh dipulihkan; production
+  tetap satu canvas mobile maksimum 460 piksel pada semua viewport.
+- `RESIDUAL`: navigasi admin Changelog sudah aktif kumulatif melalui source
+  `e20c0ba3` / release `20260806072249-e20c0ba`; backup/restore, service,
+  manifest, dan public smoke lulus. Authenticated owner UAT pada data rilis
+  aktual masih diperlukan sebelum menyebut irisan ini `BUSINESS_READY`.
+- `CLOSED CUMULATIVE`: recovery availability, clipboard unpublished/header/
+  selesai, Review, state pilihan, dan form Detail dari source `0f2f7bca`,
+  `07dda642`, `9d9c5ede`, `2bcacb24`, `621a74a0`, `18f2b3c1`, dan `2b3e544b`
+  semuanya merupakan ancestor source production `e20c0ba3`. Bukti release
+  kumulatif S126 mencakup backup/restore, full regression, immutable manifest,
+  service/journal, rollback, serta public smoke; tidak perlu deploy terpisah.
 - `DEPRECATED`: candidate cross-monitor storefront S108 yang memperlebar canvas
   menjadi 1280 piksel digantikan keputusan mobile-only `DEC-031` dan source
   S109; S94/S108 tidak boleh dipromosikan ke production.
-- `BLOCKED`: candidate mobile-only storefront kumulatif source `1de6a935`
-  menutup baseline S109 serta route QRIS/transfer manual. Red payment 2/2,
-  focused 2/2, visual 6/6, regresi 20/20, storefront gabungan 129 pass/11
-  expected skip, backend 960/960, build, design, npm/Composer audit, matriks
-  payment 390x844 sampai 2560x1440 dan reflow efektif 200 persen, target 44
-  piksel, no-overflow, keyboard focus, serta satu watermark lulus. Production
-  tetap `d70fc1e0` / `20260803194351-d70fc1e`. Bukti penutup adalah
-  release-safety receipt berisi backup terenkripsi, checksum, disposable
-  restore, migration preflight yang terikat exact S113, approval, immutable
-  release, service/header/journal, rollback proof, serta public smoke exact
-  source.
-
-- `BLOCKED`: mismatch baseline visual flow sekunder SagaBook ditutup pada
-  source `77a25c7c`: snapshot mobile Detail Payment kini sama dengan fixture
-  tanggal 2099 dan alamat demo deterministik. Red 1/1 menjadi green 2/2;
-  storefront efektif 133 pass/11 expected skip, backend 960/960, build,
-  design, dan audit dependency lulus. Candidate `STAGING_READY`, tetapi
-  production tetap `d70fc1e0` / `20260803194351-d70fc1e`. Bukti penutup deploy
-  adalah release-safety receipt berisi backup terenkripsi, checksum,
-  disposable restore, migration preflight yang terikat exact S116, approval,
-  immutable release, service/header/journal, rollback proof, dan public smoke.
-- `BLOCKED`: candidate disclosure request customer source `8a9a2ef6` menutup
-  state/semantik/focus refund, perubahan, dan pembatalan serta kepadatan field
-  rekening 390 piksel. Red 1/1, focused 4/4, cancel E2E 2/2, storefront efektif
-  137 pass/11 expected skip, backend 960/960, build, design, npm/Composer audit,
-  matriks 390x844 sampai QHD dan effective 200 persen, target 44 piksel,
-  no-overflow, serta satu watermark lulus. Production tetap `d70fc1e0` /
-  `20260803194351-d70fc1e`. Bukti penutup deploy adalah release-safety receipt
-  backup terenkripsi/checksum/disposable restore/migration preflight yang
-  terikat exact S117, approval, immutable release, service/header/journal,
-  rollback proof, dan public smoke exact source.
+- `CLOSED CUMULATIVE`: baseline mobile-only/payment, fixture visual sekunder,
+  dan disclosure request customer dari source `1de6a935`, `77a25c7c`, serta
+  `8a9a2ef6` juga ancestor source production `e20c0ba3`. Kontrak S109 tetap
+  aktif: canvas storefront maksimum 460 piksel pada semua viewport.
 - `CLOSED` untuk deploy S119: source `20ff6829` aktif sebagai release
   `20260805052322-20ff682` setelah tenant activation readiness 100, full
   acceptance, backup/checksum/disposable restore, migration preflight, DB audit
@@ -239,13 +161,12 @@ ketika keputusan atau release baru menutup gap.
 
 ### SagaView
 
-- `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: `DEC-044` menambahkan pilihan
-  per frame, `Pilih semua hasil`, state parsial, jumlah/clear pilihan, dan
-  sequential `Export dipilih` pada source
-  `73979542ceeb8fc11e658c7d27346ca983dc163f`. Residual: UAT Owner dengan
-  galeri/frame nyata termasuk izin multi-download browser, lalu guarded deploy,
-  live smoke, dan rollback verification. Production tetap release
-  `20260806050513-1158926`.
+- `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: `DEC-044` aktif melalui source
+  `73979542ceeb8fc11e658c7d27346ca983dc163f`, backend release
+  `20260806071707-7397954`, dan Studio `20260806071733-3b66f8d`. Residual:
+  authenticated Owner UAT dengan galeri/frame nyata termasuk izin
+  multi-download browser, tenant-negative, serta retry/idempotency sebelum
+  klaim coverage penuh atau `BUSINESS_READY` mass-scale.
 
 - `CONFIRMED`: portable frame template `DEC-042` sudah
   `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` melalui backend release

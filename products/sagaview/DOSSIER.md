@@ -20,6 +20,7 @@ SagaView berdasarkan runtime production aktif.
 - Ekspansi frame aktif Growth 50 / Pro 100:
   `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
 - Portable frame template: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
+- Bulk export Galeri Frame: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
 - Acceptance integrasi feature-by-feature: ledger dimulai konservatif dan
   belum membuktikan coverage penuh; lihat
   [Feature Coverage Ledger](FEATURE_COVERAGE_LEDGER.md).
@@ -159,14 +160,17 @@ path lokal, atau payment di dalam paket. Fitur aktif melalui backend release
 backup/restore, rehearsal candidate/rollback, deploy gate 6/6, canary, dan live
 smoke lulus. Authenticated Owner UAT lintas dua akun tetap residual.
 
-Bulk export Galeri Frame menjadi kandidat berikutnya melalui `DEC-044` dan
-source `73979542ceeb8fc11e658c7d27346ca983dc163f`. Checkbox per kartu,
+Bulk export Galeri Frame aktif melalui `DEC-044` dan source
+`73979542ceeb8fc11e658c7d27346ca983dc163f`. Checkbox per kartu,
 select-all berdasarkan hasil filter, partial state, jumlah/clear pilihan, dan
 sequential batch download sudah local-validated. Dua download diuji sebagai
 template v1 tenant-neutral; regresi export/import lama tetap lulus. Proses
 berurutan membatasi artwork/template aktif di memori, sementara izin beberapa
-download tetap dikendalikan browser. Delivery `IMPLEMENTED_NOT_DEPLOYED`;
-production masih release `20260806050513-1158926`.
+download tetap dikendalikan browser. Delivery dan activation
+`PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` melalui backend release
+`20260806071707-7397954` dan Studio release `20260806071733-3b66f8d`.
+Rollback backend `20260806050513-1158926` dan Studio
+`20260806050546-3b66f8d` dipertahankan; Owner UAT galeri nyata masih residual.
 
 Mulai sesi production memakai checklist perangkat, paket, folder, frame, dan
 output serta satu CTA kontekstual 48 px. Utility cloud/recovery yang sehat

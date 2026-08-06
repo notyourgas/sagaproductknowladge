@@ -12,6 +12,12 @@ dalam satu dokumen public-safe.
 - Activation: `PRODUCTION_ACTIVATED` untuk workflow yang tercantum di
   [PRODUCT](PRODUCT.md)
 - Business readiness: `NEEDS CONFIRMATION`
+- Admin Changelog navigation: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
+- Source kumulatif aktif: `e20c0ba3480e6143159108e313525d7576312146`,
+  release `20260806072249-e20c0ba`, rollback `20260806063717-cb8ef55`
+- Label candidate pada histori menunjukkan status saat bukti dibuat. Source
+  S98-S118 yang menjadi ancestor S126 aktif kumulatif; S94/S108 yang
+  memperlebar storefront tetap deprecated dan tidak aktif.
 
 ## Overview produk
 
@@ -564,20 +570,22 @@ audit lulus. Fresh S39 exact-SHA run `20260804T001149Z` lulus; candidate ini
 tidak lagi menunggu promosi karena digantikan S109. Runtime tetap release
 `20260803194351-d70fc1e` dan tidak ada migration atau activation.
 
-Admin Changelog navigation candidate pada source
-`95621347050450a06dd8e5c95eedbd112aa2ff0e` berstatus
-`LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`. Sebelum
+Admin Changelog navigation dari source asal
+`95621347050450a06dd8e5c95eedbd112aa2ff0e` aktif secara kumulatif melalui
+source `e20c0ba3480e6143159108e313525d7576312146`, release
+`20260806072249-e20c0ba`. Sebelum
 perubahan, 18 rilis dan 64 detail terbuka bersamaan tanpa pencarian atau jalur
 recovery. Kandidat menambahkan pencarian lintas versi/area/perubahan, lima
 filter jenis, accordion satu-detail, empty/reset state, dan CTA 48 pixel
 kembali ke Hari Ini. Focus keyboard, kontrol 44 pixel, forced-colors,
 reduced-motion, no-overflow, serta satu `Powered by SagaBook` non-fixed lulus
 pada 390x844 dan 1440x900. Focused E2E 2/2, snapshot 3/3, kontrak admin 52/52,
-backend 960/960, build, design audit, dan audit dependency 0 lulus. Production
-tetap release `20260803194351-d70fc1e`; backup/checksum/disposable restore exact
-candidate dan approval deploy belum tersedia. Data rilis, booking, payment,
+backend regression terbaru 962/962 dengan 11.038 assertion, build, design
+audit, dan audit dependency 0 lulus. Backup terenkripsi/checksum/disposable
+restore `20260806T072131Z`, manifest, service, DB audit, public smoke, dan
+rollback `20260806063717-cb8ef55` lulus. Data rilis, booking, payment,
 availability, permission, tenant isolation, storefront, dan SagaView tidak
-berubah.
+berubah; authenticated owner UAT tetap residual sebelum `BUSINESS_READY`.
 
 Critical recovery dan adaptive navigation S119 pada source
 `20ff6829f96cebec22d34844291b3d522b91774a` berstatus

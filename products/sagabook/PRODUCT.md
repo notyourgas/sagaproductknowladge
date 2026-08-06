@@ -14,6 +14,22 @@ belum pasti dicatat di [GAPS](../../GAPS.md#sagabook).
 Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
+## Status production terbaru
+
+- Source kumulatif `e20c0ba3480e6143159108e313525d7576312146` aktif sebagai
+  release immutable `20260806072249-e20c0ba`; rollback
+  `20260806063717-cb8ef55` dipertahankan.
+- Admin Changelog kini memakai pencarian, lima filter, accordion satu-detail,
+  empty/reset recovery, dan CTA `Kembali ke Hari Ini`.
+- Delivery dan activation irisan ini `PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`; authenticated owner UAT dan readiness produk
+  keseluruhan tetap terpisah.
+- Subscription tenant tidak diaktifkan dan website booking yang sudah aktif
+  tidak dinonaktifkan oleh release ini.
+- Label candidate pada bagian histori di bawah adalah status saat bukti itu
+  dibuat. Source S98-S118 yang menjadi ancestor S126 sudah aktif kumulatif;
+  arah storefront lebar S94/S108 tetap deprecated dan tidak aktif.
+
 ## Ringkasan
 
 SagaBook adalah SaaS booking dan operating system untuk self-photo studio.
@@ -524,16 +540,17 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
   release `20260803194351-d70fc1e`; candidate ini tidak lagi menunggu promosi
   karena digantikan S109. Booking/payment/availability dan tenant isolation
   tidak berubah.
-- Candidate navigasi admin Changelog pada source
-  `95621347050450a06dd8e5c95eedbd112aa2ff0e` berstatus
-  `LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`. Daftar 18
+- Navigasi admin Changelog dari source asal
+  `95621347050450a06dd8e5c95eedbd112aa2ff0e` aktif secara kumulatif melalui
+  source `e20c0ba3480e6143159108e313525d7576312146`, release
+  `20260806072249-e20c0ba`. Daftar 18
   rilis/64 perubahan kini memakai pencarian, lima filter, accordion satu-detail,
   empty/reset recovery, dan CTA kembali ke Hari Ini. Kontrol discovery minimal
   44 piksel, CTA 48 piksel, keyboard/focus, forced-colors, reduced-motion,
   no-overflow, serta tepat satu `Powered by SagaBook` lulus pada 390x844 dan
-  1440x900. Production tetap `d70fc1e0` / `20260803194351-d70fc1e`; kandidat
-  menunggu backup/restore exact source dan approval deploy. Workflow bisnis,
-  registry rilis, storefront, dan SagaView tidak berubah.
+  1440x900. Backup/restore exact candidate, manifest, service, DB audit, dan
+  public smoke lulus; rollback `20260806063717-cb8ef55` tersedia. Workflow
+  bisnis, registry rilis, storefront, dan SagaView tidak berubah.
 - Refinement navigasi dari langkah Review pada source
   `fa228d89bc5bea32fb19bf424a4b0e48db1bc506` berstatus
   `PRODUCTION_DEPLOYED` sebagai release `20260803022430-fa228d8`. Enam kontrol `Ubah` yang sebelumnya sekitar

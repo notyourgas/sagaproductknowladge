@@ -4,6 +4,26 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-08-06 - Bulk export Galeri Frame production
+
+- Klasifikasi: `CONFIRMED` melalui keputusan founder `DEC-044`.
+- Status: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; business readiness
+  mass-scale tetap `NEEDS CONFIRMATION`.
+- Backend source `73979542ceeb8fc11e658c7d27346ca983dc163f`, release
+  `20260806071707-7397954`; Studio source
+  `3b66f8d5df3e34aba11c4eab2619cfe44efd06d7`, release
+  `20260806071733-3b66f8d`.
+- Rollback backend `20260806050513-1158926` dan Studio
+  `20260806050546-3b66f8d` dipertahankan.
+- Backup terenkripsi `20260806T070142Z`, checksum/offsite round-trip,
+  disposable restore, rehearsal candidate/rollback 6/6, deploy gate 6/6,
+  canary, service/journal/header, dan public smoke lulus.
+- Pricing, entitlement, payment, device/session, foto customer, API/database,
+  serta source Studio tidak berubah. Release tidak membuat payment intent atau
+  QRIS baru.
+- Authenticated Owner UAT dengan galeri nyata dan izin multi-download browser
+  tetap residual sebelum klaim `BUSINESS_READY` mass-scale.
+
 ## 2026-08-06 - Bulk export Galeri Frame candidate
 
 - Klasifikasi: `CONFIRMED` melalui keputusan founder `DEC-044`.
