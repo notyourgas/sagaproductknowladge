@@ -29,6 +29,8 @@ SagaView berdasarkan runtime production aktif.
   `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
 - S134 workspace validation dan tab recovery Batch Import:
   `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
+- S135 Owner dan Studio workspace alignment:
+  `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
 - Acceptance integrasi feature-by-feature: ledger dimulai konservatif dan
   belum membuktikan coverage penuh; lihat
   [Feature Coverage Ledger](FEATURE_COVERAGE_LEDGER.md).
@@ -268,6 +270,20 @@ lulus. Backend aktif `20260806212915-902e5dd`; Studio rebuild aktif
 `20260806200400-3b66f8d` dipertahankan. Tidak ada migration atau perubahan pada
 pricing, entitlement, payment, device/session, foto customer, maupun data
 tenant. Authenticated Owner UAT 50-100 file nyata pada dua akun tetap residual.
+
+S135 mengikat launcher Owner ke workspace target dan mewajibkan respons
+aktivasi Studio cocok dengan target tersebut. Server-auth tenant menang sebelum
+request Owner pertama; perpindahan workspace mereset batch/launcher lama.
+Studio mengarsipkan state serta metadata runtime per workspace, membersihkan
+state aktif lintas tenant, memulihkan state target bila ada, lalu bootstrap dan
+reload. Backend source/release aktif adalah `85ec0f64` /
+`20260806224422-85ec0f6`; Studio source/release aktif `07454264` /
+`20260806224441-0745426`; rollback S134 dipertahankan. Acceptance 344 test
+backend/2.852 assertion, 158 unit Studio, 5 Playwright device-transfer,
+dependency audit, backup/restore, rehearsal kandidat+rollback, deploy `6/6`,
+live marker, preservation, dan rollback lulus. Tidak ada migration atau
+perubahan payment, subscription, device/session, foto customer, maupun data
+tenant. UAT Owner dua workspace nyata tetap residual.
 
 Mulai sesi production memakai checklist perangkat, paket, folder, frame, dan
 output serta satu CTA kontekstual 48 px. Utility cloud/recovery yang sehat

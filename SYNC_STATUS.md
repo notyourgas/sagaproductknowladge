@@ -12,14 +12,14 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-07T04:30:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-07T05:50:28+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `7a6956f50d4dbc361fc571dfc47815401d84586a` |
-| Informasi terakhir disinkronkan | SagaView S134 workspace validation dan tab recovery pada backend source/release `902e5dd81919168b1978c8bfbcd62303920184a6` / `20260806212915-902e5dd` dan Studio rebuild `20260806213012-3b66f8d`; delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. |
+| Baseline sebelum pembaruan | `69d00777d4d21371e586ec1339ce4aa3358dfa7d` |
+| Informasi terakhir disinkronkan | SagaView S135 Owner dan Studio workspace alignment pada backend source/release `85ec0f64f08d7f80769480e0b7217cad55dd1591` / `20260806224422-85ec0f6` dan Studio source/release `07454264ad3c95d5fb5157135a333f6139bef054` / `20260806224441-0745426`; delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik fakta produk. Candidate S133 tetap terpisah, bercabang dari S122, dan wajib direbase ke S134 sebelum promotion. |
-| Error | Composer advisory feed candidate S134 timeout dua kali; lock dependency tidak berubah dari production dan npm audit, regression, serta seluruh formal deployment gate lulus. |
+| Konflik | Tidak ada konflik fakta produk. Candidate S133 tetap terpisah, bercabang dari S122, dan wajib direbase ke S135 sebelum promotion. |
+| Error | Tidak ada error terbuka pada sinkronisasi S135. |
 
 ## File yang berubah pada sinkronisasi ini
 
@@ -77,9 +77,9 @@ aktif dan menyelesaikan satu booking nyata terkontrol sebelum klaim
 SagaView compact all-menu, workspace Session/Output/Izin Foto monitor besar,
 free drag rotation, pemisahan draft/publish, bulk frame export, server ZIP untuk
 tiga sampai 100 pilihan, dan resumable server batch import aktif kumulatif pada
- Studio `20260806213012-3b66f8d`; rollback `20260806200400-3b66f8d`
-dipertahankan. Backend aktif `20260806212915-902e5dd`; rollback
-`20260806200400-b6af579`. Authenticated
+Studio `20260806224441-0745426`; rollback `20260806213012-3b66f8d`
+dipertahankan. Backend aktif `20260806224422-85ec0f6`; rollback
+`20260806212915-902e5dd`. Authenticated
 Owner visual UAT dengan frame miring dan
 publish frame nyata serta Founding Studio Pilot tetap dibutuhkan sebelum klaim
 `BUSINESS_READY` mass-scale.
@@ -101,8 +101,18 @@ same-session/same-tenant; preflight/create/resume/polling fail-closed terhadap
 context invalid atau berubah. Build, regression, Playwright desktop+mobile,
 fresh encrypted backup/restore, candidate+rollback rehearsal, deploy 6/6,
 canary/preservation, live smoke/marker/header, dan rollback production lulus.
-Residual: authenticated Owner UAT 50-100 file nyata pada dua akun. Candidate
-S133 wajib direbase ke atas S134 sebelum promotion.
+Residual S134 diteruskan ke acceptance S135; candidate S133 sekarang wajib
+direbase ke atas S135 sebelum promotion.
+
+SagaView S135 Owner dan Studio workspace alignment `DEC-055` sudah
+`PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` pada backend source/release
+`85ec0f64` / `20260806224422-85ec0f6` dan Studio source/release `07454264` /
+`20260806224441-0745426`. Server-auth tenant menang sebelum request Owner
+pertama; launcher/aktivasi wajib cocok dengan workspace target dan state/runtime
+Studio diisolasi per workspace. Acceptance, backup/restore, preflight,
+candidate+rollback rehearsal, deploy 6/6, preservation, marker live, rollback,
+dan post-rollback preflight lulus. Residual: authenticated Owner UAT dua
+workspace nyata. Candidate S133 wajib direbase ke atas S135 sebelum promotion.
 
 Bulk export Galeri Frame `DEC-044` sudah `PRODUCTION_DEPLOYED /
 PRODUCTION_ACTIVATED`; klausa packaging-nya dikoreksi oleh `DEC-049`. Satu atau

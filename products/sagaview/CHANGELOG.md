@@ -4,6 +4,29 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-08-07 - S135 Owner dan Studio workspace alignment production
+
+- Klasifikasi: `CONFIRMED` melalui keputusan founder `DEC-055`.
+- Status: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; business readiness
+  mass-scale tetap `NEEDS CONFIRMATION`.
+- Backend source/release `85ec0f64f08d7f80769480e0b7217cad55dd1591` /
+  `20260806224422-85ec0f6`; Studio source/release
+  `07454264ad3c95d5fb5157135a333f6139bef054` /
+  `20260806224441-0745426`.
+- Rollback S134 dipertahankan pada backend `20260806212915-902e5dd` dan Studio
+  `20260806213012-3b66f8d`.
+- Server-auth tenant menjadi sumber Owner request pertama; launcher terikat
+  workspace target. Studio memvalidasi target, mengarsipkan state/runtime lama
+  per workspace, membersihkan state lintas tenant, memulihkan target, lalu
+  bootstrap dan reload.
+- 344 test backend/2.852 assertion, 158 unit Studio, 5 Playwright
+  device-transfer, build, audit dependency, encrypted backup/restore, preflight,
+  rehearsal kandidat+rollback, deploy 6/6, canary/preservation,
+  service/journal/header/public smoke, marker live, dan rollback lulus.
+- Tidak ada migration atau perubahan pricing, entitlement, payment,
+  device/session, foto customer, maupun data tenant. Authenticated Owner UAT dua
+  workspace nyata tetap residual.
+
 ## 2026-08-07 - S134 workspace validation dan tab recovery production
 
 - Klasifikasi: `CONFIRMED` melalui keputusan founder `DEC-054`.

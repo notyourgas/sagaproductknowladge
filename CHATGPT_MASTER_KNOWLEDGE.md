@@ -612,6 +612,20 @@ perubahan pricing, entitlement, payment, device/session, foto customer, maupun
 data tenant. Delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated
 Owner UAT 50-100 file nyata pada dua akun tetap residual.
 
+Keputusan founder `DEC-055` mengaktifkan S135 Owner dan Studio workspace
+alignment. Backend source `85ec0f64f08d7f80769480e0b7217cad55dd1591`
+aktif sebagai release `20260806224422-85ec0f6`; Studio source
+`07454264ad3c95d5fb5157135a333f6139bef054` aktif sebagai release
+`20260806224441-0745426`; rollback S134 dipertahankan. Server-auth tenant
+menjadi sumber request Owner pertama dan launcher membawa workspace target yang
+wajib cocok dengan respons Studio. Saat workspace berubah, state/runtime lama
+diarsipkan per workspace, state lintas tenant dibersihkan, target dipulihkan,
+lalu Studio bootstrap dan reload. Backup/restore, preflight, candidate dan
+rollback rehearsal, deploy 6/6, preservation, live marker/smoke/header, serta
+rollback lulus. Tidak ada migration atau perubahan payment, subscription,
+device/session, foto customer, maupun data tenant. Authenticated Owner UAT dua
+workspace nyata tetap residual sebelum `BUSINESS_READY` mass-scale.
+
 Candidate S133 belum production. Backend source
 `6dff29ddba50fc04dd315458adcfed6cdeec7aa1` mengikat tenant permintaan session
 ke tenant device credential dan menolak mismatch `403` sebelum persistence.

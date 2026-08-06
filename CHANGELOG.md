@@ -12,6 +12,25 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-07
 
+### SagaView S135 Owner dan Studio workspace alignment production
+
+- Ringkasan: server-auth tenant menguasai request Owner pertama; launcher dan
+  aktivasi Studio wajib cocok dengan workspace target, sementara state/runtime
+  lokal diarsipkan dan dipulihkan per workspace.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` melalui
+  `DEC-055`; business readiness tetap `NEEDS CONFIRMATION`.
+- Source/release backend: `85ec0f64f08d7f80769480e0b7217cad55dd1591` /
+  `20260806224422-85ec0f6`; Studio `07454264` /
+  `20260806224441-0745426`; rollback S134 dipertahankan.
+- Gate: 344 test backend/2.852 assertion, 158 unit Studio, 5 Playwright,
+  dependency audit, backup/restore, preflight, rehearsal candidate+rollback,
+  deploy 6/6, preservation, live smoke/marker/header, dan rollback.
+- Boundary: tidak ada migration atau perubahan payment, subscription,
+  device/session, foto customer, maupun data tenant. UAT Owner dua workspace
+  nyata tetap residual.
+- File knowledge: product, dossier, changelog, ledger, master knowledge,
+  decisions, gaps, portfolio/root changelog, dan sync status.
+
 ### SagaView S134 workspace validation dan tab recovery production
 
 - Ringkasan: Batch Import memvalidasi tenant, membership, staff, dan

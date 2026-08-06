@@ -6,8 +6,9 @@ compact all-menu, workspace Session/Output/Izin Foto monitor besar, free drag
 rotation, pemisahan Simpan Draft/Publish Frame, limit Growth 50/Pro 100,
 portable frame template, bulk export, server ZIP untuk tiga sampai 100 pilihan,
 dan resumable server batch import sampai 100 template aktif di production.
-S134 workspace validation dan tab recovery untuk Batch Import sudah
-`PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; Owner UAT dua akun tetap residual.
+S135 menyelaraskan workspace Owner Console dan Studio Console per tenant dan
+sudah `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; Owner UAT dua workspace
+nyata tetap residual.
 
 ## Tujuan dokumen
 
@@ -364,6 +365,32 @@ desktop+mobile, backup/restore terenkripsi, rehearsal kandidat+rollback, deploy
 6/6, canary/preservation, service/journal/header/public smoke, marker live, dan
 rollback production lulus. Authenticated Owner UAT dengan 50-100 file nyata dan
 dua akun tetap residual sebelum `BUSINESS_READY`.
+
+### S135 Owner dan Studio workspace alignment production
+
+`CONFIRMED` melalui `DEC-055`, dengan delivery dan activation
+`PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Backend source
+`85ec0f64f08d7f80769480e0b7217cad55dd1591` aktif sebagai release
+`20260806224422-85ec0f6`; Studio source
+`07454264ad3c95d5fb5157135a333f6139bef054` aktif sebagai release
+`20260806224441-0745426`. Rollback S134 dipertahankan pada backend
+`20260806212915-902e5dd` dan Studio `20260806213012-3b66f8d`.
+
+Tenant yang dikonfirmasi server sekarang menjadi sumber request Owner sebelum
+API pertama. Perubahan workspace mereset proses batch/launcher lama, dan link
+Studio membawa identitas workspace yang wajib cocok dengan respons aktivasi.
+Pada perangkat yang pernah membuka workspace lain, state serta metadata runtime
+lama diarsipkan per workspace; state aktif lintas tenant dibersihkan, state
+target dipulihkan bila tersedia, lalu Studio melakukan bootstrap dan reload.
+
+Tidak ada migration atau perubahan pricing, entitlement, payment,
+device/session, foto customer, maupun data tenant. Acceptance mencakup 344 test
+backend/2.852 assertion, 158 unit Studio, 5 Playwright device-transfer, build,
+audit dependency nol advisory, encrypted backup/restore, preflight dan
+candidate+rollback rehearsal `6/6`, atomic deploy, canary/preservation,
+service/journal/header/public smoke, marker live, rollback ke S134 dan pemulihan
+ke S135. Authenticated Owner UAT dua workspace nyata tetap residual sebelum
+`BUSINESS_READY` mass-scale.
 
 ## Session completion dan privacy handoff
 

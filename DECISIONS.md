@@ -231,6 +231,20 @@ keputusan pengganti.
 | Status | `CONFIRMED`; klausa nama produk AOGTICVITY `DEPRECATED` oleh `DEC-047`, sedangkan kontrak master recap, 8 tim, 10 lomba, durasi editable, dan roster seluruh tim tetap berlaku |
 | Dokumen terkait | [AOGTICVITY Product](products/aogticvity/PRODUCT.md), [AOGTICVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTICVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |
 
+## DEC-055 - Owner dan Studio SagaView wajib memakai workspace yang sama
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-07 |
+| Topik | Penyelarasan workspace Owner Console dan Studio Console SagaView |
+| Keputusan | Tenant yang dikonfirmasi server menjadi sumber request Owner sebelum API pertama. Link Studio wajib membawa workspace target dan hasil aktivasi wajib cocok. Saat berpindah workspace, Studio mengarsipkan state dan metadata runtime lama per workspace, membersihkan state aktif lintas tenant, memulihkan target bila tersedia, lalu bootstrap dan reload. |
+| Alasan | Komputer yang sebelumnya membuka studio lain tidak boleh menampilkan nama, pengaturan, katalog, antrean, atau referensi sesi workspace lama saat Owner membuka Studio Console workspace target. |
+| Alternatif yang dipertimbangkan | Mempercayai tenant URL/session storage; memakai satu local state global; hanya mengganti nama studio; selalu menghapus seluruh state tanpa arsip per workspace. |
+| Dampak | Owner launcher dan response API memperoleh verifikasi workspace; Studio state menjadi tenant-scoped. Tidak ada migration atau perubahan pricing, entitlement, payment, device/session, foto customer, maupun data tenant. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; backend source/release `85ec0f64f08d7f80769480e0b7217cad55dd1591` / `20260806224422-85ec0f6`; Studio source/release `07454264ad3c95d5fb5157135a333f6139bef054` / `20260806224441-0745426`; Owner UAT dua workspace nyata tetap residual |
+| Dokumen terkait | [SagaView Product](products/sagaview/PRODUCT.md), [SagaView Dossier](products/sagaview/DOSSIER.md), [SagaView Changelog](products/sagaview/CHANGELOG.md), [SagaView Ledger](products/sagaview/FEATURE_COVERAGE_LEDGER.md), [Gaps](GAPS.md) |
+
 ## DEC-054 - Batch import SagaView memvalidasi workspace sebelum memilih file
 
 | Field | Isi |

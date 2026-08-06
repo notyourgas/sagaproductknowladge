@@ -172,6 +172,15 @@ ketika keputusan atau release baru menutup gap.
 
 ### SagaView
 
+- `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: `DEC-055` Owner dan Studio
+  workspace alignment aktif pada backend `20260806224422-85ec0f6` dan Studio
+  `20260806224441-0745426`; rollback S134 dipertahankan. Server-auth tenant
+  menang sebelum request pertama, launcher/aktivasi terikat workspace target,
+  dan state/runtime Studio diisolasi per workspace. Acceptance, backup/restore,
+  rehearsal, deploy 6/6, preservation, marker, rollback, serta post-rollback
+  preflight lulus. Residual: authenticated Owner UAT dari dua workspace nyata,
+  termasuk perpindahan bolak-balik pada komputer yang sama.
+
 - `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: `DEC-054` workspace validation
   dan tab recovery aktif pada backend source/release `902e5dd8` /
   `20260806212915-902e5dd` serta Studio rebuild `20260806213012-3b66f8d`.
@@ -235,7 +244,7 @@ ketika keputusan atau release baru menutup gap.
 - `TODO`: session flow S133 sudah `INTEGRATION_VALIDATED / LOCAL_VALIDATED`
   pada candidate `6dff29dd` + `573c599`, termasuk UI -> API -> disposable DB,
   idempotency, tenant/device-negative, dan metadata-only/no-upload. Production
-  kini S134; candidate S133 wajib direbase ke atas S134 dan mengulang acceptance
+  kini S135; candidate S133 wajib direbase ke atas S135 dan mengulang acceptance
   sebelum deploy. Lanjutkan physical Windows folder permission/quota/recovery,
   viewport 1280/1512/1920/2560/3840 dan zoom 125/150/200, lalu fitur berikutnya
   dari frame selection sampai owner dashboard/entitlement. Untuk ingest foto,

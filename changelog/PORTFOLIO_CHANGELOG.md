@@ -1,5 +1,20 @@
 # Portfolio Changelog
 
+## 2026-08-07 - SagaView S135 workspace alignment production
+
+- `DEC-055` mengikat Owner dan Studio ke workspace target yang sama; stale
+  tenant browser tidak boleh mengalahkan server dan state Studio lama disimpan
+  terpisah per workspace.
+- Backend source/release `85ec0f64f08d7f80769480e0b7217cad55dd1591` /
+  `20260806224422-85ec0f6`; Studio source/release `07454264` /
+  `20260806224441-0745426`; rollback S134 dipertahankan.
+- 344 test backend/2.852 assertion, 158 unit Studio, 5 Playwright, audit
+  dependency, backup/restore, preflight, candidate+rollback rehearsal, deploy
+  6/6, preservation, live smoke/marker/header, serta rollback lulus.
+- Tidak ada migration atau perubahan payment, subscription, device/session,
+  foto customer, maupun data tenant. UAT Owner dua workspace nyata tetap
+  residual sebelum business readiness mass-scale.
+
 ## 2026-08-07 - SagaView S134 workspace recovery production
 
 - `DEC-054` mewajibkan validasi server atas tenant, membership, staff, dan
