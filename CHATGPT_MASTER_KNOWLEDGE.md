@@ -577,21 +577,26 @@ lulus. Production aktif pada backend `20260806133407-e850d6c` dan Studio
 pricing, entitlement Growth 50/Pro 100, payment, device/session, foto customer,
 atau source Studio. Authenticated Owner UAT 50-100 file nyata dan dua akun tetap
 residual sebelum `BUSINESS_READY` mass-scale.
-Keputusan founder `DEC-051` menetapkan S122 Batch Import Control Center sebagai
-peningkatan berikutnya. Runtime candidate
-`6e259edae13351aee59681c6ad89735125dc5e74` sudah `LOCAL_VALIDATED /
-REMOTE_BRANCH_SYNCED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S121
-`e850d6c7542c10e97309ca045ebe2f700a488ebf`.
+Keputusan founder `DEC-051` menetapkan S122 Batch Import Control Center.
+Source `b6af5797fb6fdcea499e727ee2bdb1e4dc666165` sudah
+`PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` sebagai release
+`20260806200400-b6af579`; Studio tetap source
+`3b66f8d5df3e34aba11c4eab2619cfe44efd06d7` melalui
+`20260806200400-3b66f8d`. Rollback S121 dipertahankan.
 
 S122 menambahkan preflight kuota/storage dan estimasi publish/draft, deteksi
 duplikat checksum+geometri dengan kebijakan skip/copy/draft, riwayat tujuh
 hari, notifikasi dengan acknowledgement, cancel yang mempertahankan hasil aman,
 laporan CSV, serta bulk retry gagal, publish draft, category update, dan remove.
 Schema bersifat aditif; endpoint/mutation tenant+membership scoped dan tidak
-membawa foto customer. Build, 137 test SagaView/1.654 assertion, focused
-security/production-safety, dan Playwright 51-file lulus. Backup/restore,
-rehearsal, guarded deploy, canary/preservation, live smoke/marker, rollback,
-serta Owner UAT 50-100 file nyata pada dua akun belum dijalankan untuk S122.
+membawa foto customer. ZIP export memakai file-backed entry staging, cleanup
+fail-closed, dan reserve workspace 3x agar payload besar tidak menumpuk di RAM.
+Build, 137 test SagaView/1.656 assertion, focused 20/484, Playwright export dan
+import 51-file, backup/restore, rehearsal kandidat+rollback, deploy 6/6,
+canary/payment/device preservation, service/journal/header/public smoke lulus.
+Smoke runtime 51 frame menghasilkan ZIP 103.282.237 byte dalam 6,751 detik pada
+RAM 128 MB dengan tambahan peak 23.597.056 byte dan nol file sementara.
+Authenticated Owner UAT import 50-100 file nyata pada dua akun tetap residual.
 Implementasi rotate lama yang menukar W/H 90 derajat telah `DEPRECATED` oleh
 koreksi founder `DEC-036`. Perilaku production yang aktif adalah
 diterima adalah tahan ikon rotate lalu drag ke kiri/kanan agar slot mendapat

@@ -6,8 +6,8 @@ compact all-menu, workspace Session/Output/Izin Foto monitor besar, free drag
 rotation, pemisahan Simpan Draft/Publish Frame, limit Growth 50/Pro 100,
 portable frame template, bulk export, server ZIP untuk tiga sampai 100 pilihan,
 dan resumable server batch import sampai 100 template aktif di production.
-Peningkatan S122 Batch Import Control Center sudah `LOCAL_VALIDATED /
-REMOTE_BRANCH_SYNCED`, tetapi belum dideploy ke production.
+S122 Batch Import Control Center dan koreksi ZIP hemat memori sudah
+`PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; Owner UAT dua akun tetap residual.
 
 ## Tujuan dokumen
 
@@ -18,8 +18,7 @@ Menjadi ringkasan fakta kanonik SagaView. Detail lengkap berada di
 ## Konteks
 
 Fakta release di dokumen ini mengacu pada exact source dan runtime production
-yang diverifikasi sampai 6 Agustus 2026. Kandidat S122 diverifikasi lokal dan
-dipush pada 7 Agustus 2026 tanpa mengubah runtime production.
+yang diverifikasi sampai 7 Agustus 2026.
 
 ## Status production terbaru
 
@@ -33,12 +32,12 @@ dipush pada 7 Agustus 2026 tanpa mengubah runtime production.
   lalu memakai dua kartu sesi berdampingan pada QHD/4K di dalam batas 1400
   piksel. Ringkasan, filter, retry, cabut izin, dan workflow privacy tidak
   berubah.
-- Backend source `e850d6c7542c10e97309ca045ebe2f700a488ebf` aktif sebagai
-  release `20260806133407-e850d6c`; rollback
-  `20260806122125-ea432e9` dipertahankan.
+- Backend source `b6af5797fb6fdcea499e727ee2bdb1e4dc666165` aktif sebagai
+  release `20260806200400-b6af579`; rollback
+  `20260806133407-e850d6c` dipertahankan.
 - Studio tetap memakai source `3b66f8d5df3e34aba11c4eab2619cfe44efd06d7`
-  melalui release `20260806133407-3b66f8d`; rollback
-  `20260806122126-3b66f8d` dipertahankan.
+  melalui release `20260806200400-3b66f8d`; rollback
+  `20260806133407-3b66f8d` dipertahankan.
 - Entitlement live memberi Growth 50 dan Pro 100 frame aktif. Harga, device,
   preset, offline grace, storage, laporan, support, payment, dan fair-use tidak
   berubah.
@@ -306,13 +305,13 @@ mengubah pricing, entitlement, payment, device/session, foto customer, atau
 source Studio. Authenticated Owner UAT dengan 50-100 file nyata dan import
 lintas dua akun tetap residual sebelum klaim `BUSINESS_READY` mass-scale.
 
-### Kandidat S122 Batch Import Control Center
+### S122 Batch Import Control Center production
 
-`CONFIRMED` melalui `DEC-051`, dengan delivery `LOCAL_VALIDATED /
-REMOTE_BRANCH_SYNCED / IMPLEMENTED_NOT_DEPLOYED` pada runtime candidate
-`6e259edae13351aee59681c6ad89735125dc5e74`, branch
-`codex/sagaview-batch-import-control-center-s122`. Production tetap memakai
-S121 `e850d6c7542c10e97309ca045ebe2f700a488ebf`.
+`CONFIRMED` melalui `DEC-051`, dengan delivery dan activation
+`PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` pada source
+`b6af5797fb6fdcea499e727ee2bdb1e4dc666165`, branch
+`codex/sagaview-batch-import-control-center-s122`, release
+`20260806200400-b6af579`.
 
 Sebelum upload dimulai, Owner memperoleh preflight ukuran, storage, frame aktif,
 limit paket, serta estimasi published/draft. Duplikat checksum+geometri dapat
@@ -324,15 +323,20 @@ draft/item gagal berada pada satu control center.
 Schema baru bersifat aditif dan menyimpan duplicate policy, counter
 skipped/removed, acknowledgement, fingerprint, serta relasi duplikat. API dan
 mutation tetap tenant+membership scoped; ZIP traversal, checksum, batas 100,
-dan local-first foto customer tetap fail-closed. Acceptance lokal mencakup 137
-test SagaView/1.654 assertion dan Playwright 51-file termasuk retry chunk,
-partial result, CSV, category action, serta publish-draft wiring. Migrasi,
-PowerShell release wrapper, dan Bash atomic runner lulus syntax/hash gate.
+dan local-first foto customer tetap fail-closed. ZIP export 3-100 frame kini
+memakai file sementara privat per entry melalui `ZipArchive::addFile`, bukan
+menahan semua JSON/base64 di RAM; cleanup fail-closed dan reserve workspace 3x
+ukuran artwork diterapkan.
 
-Belum ada release production S122. Guarded deploy, encrypted backup/restore,
-candidate+rollback rehearsal, canary/preservation, live smoke/marker, dan
-authenticated Owner UAT 50-100 file nyata pada dua akun masih wajib sebelum
-status dapat dinaikkan.
+Acceptance mencakup 137 test SagaView/1.656 assertion, focused export/import
+dan production safety 20 test/484 assertion, serta Playwright export-all dan
+batch import 51 file. Fresh encrypted backup/restore, preflight, rehearsal
+kandidat+rollback, atomic deploy, canary/payment/device preservation,
+service/journal/header/public smoke, dan rollback target lulus. Smoke runtime
+production menghasilkan ZIP valid 51 entry berukuran 103.282.237 byte dalam
+6,751 detik pada batas RAM 128 MB, tambahan peak memory 23.597.056 byte, dan
+nol file sementara tertinggal. Authenticated Owner UAT import 50-100 file nyata
+dan isolasi dua akun tetap residual sebelum `BUSINESS_READY` mass-scale.
 
 ## Session completion dan privacy handoff
 

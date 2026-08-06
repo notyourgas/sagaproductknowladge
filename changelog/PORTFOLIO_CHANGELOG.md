@@ -14,20 +14,25 @@
   blok lulus. Delivery `LOCAL_VALIDATED / REMOTE_BRANCH_SYNCED /
   IMPLEMENTED_NOT_DEPLOYED`; production tetap source `e4c217b`.
 
-## 2026-08-07 - SagaView Batch Import Control Center S122 candidate
+## 2026-08-07 - SagaView S122 control center dan ZIP memory fix production
 
 - `DEC-051` menambahkan preflight kuota/storage, estimasi published/draft,
   duplicate policy skip/copy/draft, history/notification, cancel aman, CSV,
   serta bulk retry/publish/category/remove untuk batch maksimal 100 template.
-- Runtime candidate `6e259edae13351aee59681c6ad89735125dc5e74`
-  sudah `LOCAL_VALIDATED / REMOTE_BRANCH_SYNCED / IMPLEMENTED_NOT_DEPLOYED`.
-  Production tetap S121 `e850d6c7` / `20260806133407-e850d6c`; Studio tetap
-  `3b66f8d5` / `20260806133407-3b66f8d`.
+- Source/release backend `b6af5797fb6fdcea499e727ee2bdb1e4dc666165` /
+  `20260806200400-b6af579`; Studio source/release
+  `3b66f8d5df3e34aba11c4eab2619cfe44efd06d7` /
+  `20260806200400-3b66f8d`. Rollback S121 dipertahankan.
 - Schema aditif dan endpoint tenant+membership scoped tidak mengubah pricing,
   Growth 50/Pro 100, payment, device/session, foto customer, atau source Studio.
-- Build, 137 test SagaView/1.654 assertion, focused 12/183, route/syntax, serta
-  Playwright 51-file termasuk retry chunk, partial result, CSV, category, dan
-  publish draft lulus. Guarded deploy dan Owner UAT nyata tetap residual.
+- ZIP export kini file-backed dengan cleanup fail-closed dan reserve workspace
+  3x. Build, 137 test SagaView/1.656 assertion, focused 20/484, Playwright
+  export/import 51-file, backup/restore, rehearsal kandidat+rollback, deploy
+  6/6, canary/preservation, service/journal/header/public smoke lulus.
+- Smoke runtime production 51 frame menghasilkan ZIP 103.282.237 byte dalam
+  6,751 detik pada RAM 128 MB dengan tambahan peak 23.597.056 byte dan nol
+  file sementara. Delivery/activation `PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`; Owner UAT import dua akun tetap residual.
 
 ## 2026-08-06 - SagaView resumable server batch import production
 

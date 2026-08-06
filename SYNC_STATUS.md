@@ -12,20 +12,20 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-07T01:52:05+07:00 |
+| Waktu pembaruan terakhir | 2026-08-07T03:14:55+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `9567a0f1f0e29cc317fef8ef38277ba8e327dd33` |
-| Informasi terakhir disinkronkan | AOGTIVITY poster-aligned theme dan rundown owner-confirmed mulai 12.00 pada source `78e725ba0609744aa667292ff3331d08b3cf714a`; status `LOCAL_VALIDATED / REMOTE_BRANCH_SYNCED / IMPLEMENTED_NOT_DEPLOYED`, production tetap `e4c217b`. |
+| Baseline sebelum pembaruan | `b076ac6f18d16d0a25a45549e8c862c55bf85b91` |
+| Informasi terakhir disinkronkan | SagaView S122 Batch Import Control Center dan ZIP export file-backed aktif pada source/release `b6af5797fb6fdcea499e727ee2bdb1e4dc666165` / `20260806200400-b6af579`; delivery/activation `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada; pembaruan SagaView S121/S122 dari remote dipertahankan sebelum sinkronisasi AOGTIVITY. |
-| Error | Tidak ada pada validasi lokal; production deployment, migration target, visual UAT, dan authenticated schedule UAT belum dijalankan. |
+| Konflik | Tidak ada; histori S121 dipertahankan sebagai rollback dan baseline terdahulu. |
+| Error | Tidak ada pada validasi/deploy; authenticated Owner UAT import 50-100 file nyata pada dua akun belum dijalankan. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/aogticvity/PRODUCT.md`
-- `products/aogticvity/DOSSIER.md`
-- `products/aogticvity/CHANGELOG.md`
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/DOSSIER.md`
+- `products/sagaview/CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `GAPS.md`
 - `DECISIONS.md`
@@ -76,21 +76,21 @@ aktif dan menyelesaikan satu booking nyata terkontrol sebelum klaim
 SagaView compact all-menu, workspace Session/Output/Izin Foto monitor besar,
 free drag rotation, pemisahan draft/publish, bulk frame export, server ZIP untuk
 tiga sampai 100 pilihan, dan resumable server batch import aktif kumulatif pada
-Studio `20260806133407-3b66f8d`; rollback `20260806122126-3b66f8d`
-dipertahankan. Backend aktif `20260806133407-e850d6c`; rollback
-`20260806122125-ea432e9`. Authenticated
+Studio `20260806200400-3b66f8d`; rollback `20260806133407-3b66f8d`
+dipertahankan. Backend aktif `20260806200400-b6af579`; rollback
+`20260806133407-e850d6c`. Authenticated
 Owner visual UAT dengan frame miring dan
 publish frame nyata serta Founding Studio Pilot tetap dibutuhkan sebelum klaim
 `BUSINESS_READY` mass-scale.
 
-SagaView S122 Batch Import Control Center `DEC-051` sudah `LOCAL_VALIDATED /
-REMOTE_BRANCH_SYNCED / IMPLEMENTED_NOT_DEPLOYED` pada source `6e259eda`.
-Preflight, duplicate policy, history/notification, cancel, CSV, dan bulk result
-actions lulus 137 test SagaView/1.654 assertion dan focused Playwright 51-file.
-Production tetap S121 `e850d6c7` / `20260806133407-e850d6c`; guarded
-backup/restore, rehearsal, deploy, canary/preservation, live smoke/marker,
-rollback verification, dan Owner UAT 50-100 file nyata pada dua akun masih
-residual.
+SagaView S122 Batch Import Control Center `DEC-051` sudah
+`PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` pada source `b6af5797`, backend
+`20260806200400-b6af579`, dan Studio `20260806200400-3b66f8d`. Preflight,
+duplicate policy, history/notification, cancel, CSV, bulk result actions, serta
+ZIP export file-backed lulus 137 test SagaView/1.656 assertion, focused 20/484,
+Playwright export/import 51-file, backup/restore, rehearsal, deploy 6/6,
+canary/preservation, service/journal/header/public smoke, dan runtime ZIP 51
+frame. Residual: authenticated Owner UAT import 50-100 file nyata pada dua akun.
 
 Bulk export Galeri Frame `DEC-044` sudah `PRODUCTION_DEPLOYED /
 PRODUCTION_ACTIVATED`; klausa packaging-nya dikoreksi oleh `DEC-049`. Satu atau

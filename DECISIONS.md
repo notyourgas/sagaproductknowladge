@@ -270,7 +270,7 @@ keputusan pengganti.
 | Alternatif yang dipertimbangkan | Mempertahankan S121 tanpa control center; selalu skip duplikat; selalu auto-publish; menyediakan CSV saja; memindahkan seluruh processing ke browser. |
 | Dampak | Backend menambah migration aditif untuk duplicate policy, counter skipped/removed, acknowledgement, fingerprint, dan relasi duplikat; tiga endpoint kontrol ditambahkan. Frontend menambah preflight, history, notification, CSV, selection, dan bulk actions. Pricing, Growth 50/Pro 100, payment, device/session, foto customer, dan source Studio tidak berubah. |
 | Pemberi keputusan | Andreas / founder |
-| Status | `CONFIRMED / LOCAL_VALIDATED / REMOTE_BRANCH_SYNCED / IMPLEMENTED_NOT_DEPLOYED`; runtime candidate `6e259edae13351aee59681c6ad89735125dc5e74`; production tetap S121 `e850d6c7542c10e97309ca045ebe2f700a488ebf`; guarded deploy dan authenticated Owner UAT dua akun masih residual |
+| Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; source/release `b6af5797fb6fdcea499e727ee2bdb1e4dc666165` / `20260806200400-b6af579`; rollback S121 dipertahankan; authenticated Owner UAT import 50-100 file nyata pada dua akun masih residual |
 | Dokumen terkait | [SagaView Product](products/sagaview/PRODUCT.md), [SagaView Dossier](products/sagaview/DOSSIER.md), [SagaView Changelog](products/sagaview/CHANGELOG.md), [SagaView Ledger](products/sagaview/FEATURE_COVERAGE_LEDGER.md), [Gaps](GAPS.md) |
 
 ## DEC-050 - Batch import SagaView memakai upload resumable dan antrean server

@@ -4,27 +4,32 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
-## 2026-08-07 - Batch Import Control Center S122 candidate
+## 2026-08-07 - Batch Import Control Center S122 dan ZIP memory fix production
 
 - Klasifikasi: `CONFIRMED` melalui keputusan founder `DEC-051`.
-- Status: `LOCAL_VALIDATED / REMOTE_BRANCH_SYNCED /
-  IMPLEMENTED_NOT_DEPLOYED`; production tetap S121.
-- Runtime candidate `6e259edae13351aee59681c6ad89735125dc5e74`, branch
-  `codex/sagaview-batch-import-control-center-s122`; dokumentasi gate berada
-  pada commit turunan non-runtime `6d59294e`.
+- Status: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; business readiness
+  mass-scale tetap `NEEDS CONFIRMATION`.
+- Backend source `b6af5797fb6fdcea499e727ee2bdb1e4dc666165`, release
+  `20260806200400-b6af579`; Studio source
+  `3b66f8d5df3e34aba11c4eab2619cfe44efd06d7`, release
+  `20260806200400-3b66f8d`.
+- Rollback backend `20260806133407-e850d6c` dan Studio
+  `20260806133407-3b66f8d` dipertahankan.
 - Owner memperoleh preflight kuota/storage, estimasi published/draft, pilihan
   duplikat skip/copy/draft, riwayat dan notifikasi selesai, cancel, laporan CSV,
   serta bulk retry/publish/category/remove.
 - Migrasi menambah control fields dan fingerprint duplikat secara aditif.
   Endpoint dan mutation tetap tenant+membership scoped; checksum, ZIP safety,
   batas 100, dan local-first foto customer dipertahankan.
-- Build, 137 test SagaView dengan 1.654 assertion, focused 12 test dengan 183
-  assertion, route/syntax/diff checks, serta Playwright 51-file termasuk retry
-  chunk, partial result, CSV, category, dan publish draft lulus.
-- Production tidak berubah dari backend `20260806133407-e850d6c` dan Studio
-  `20260806133407-3b66f8d`. Guarded deploy, backup/restore, rehearsal,
-  canary/preservation, live smoke/marker, rollback verification, dan Owner UAT
-  50-100 file nyata pada dua akun masih wajib.
+- ZIP export memakai private file-backed entry staging, cleanup fail-closed,
+  dan reserve workspace 3x sehingga payload tidak menumpuk di RAM PHP.
+- Build, 137 test SagaView/1.656 assertion, focused 20/484, Playwright
+  export-all dan batch import 51-file, backup/restore, rehearsal
+  candidate+rollback, deploy 6/6, canary/preservation, service/journal/header,
+  public smoke, dan rollback target lulus.
+- Smoke runtime 51 frame menghasilkan 51 entry/103.282.237 byte dalam 6,751
+  detik pada RAM 128 MB, tambahan peak 23.597.056 byte, dan nol file sementara.
+  Authenticated Owner UAT import 50-100 file nyata pada dua akun tetap residual.
 
 ## 2026-08-06 - Resumable server batch import production
 

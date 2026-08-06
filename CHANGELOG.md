@@ -26,23 +26,23 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 - File knowledge: product, dossier, changelog AOGTIVITY, master, decisions,
   gaps, portfolio/root changelog, dan sync status.
 
-### SagaView Batch Import Control Center S122 candidate
+### SagaView S122 control center dan ZIP memory fix production
 
 - Ringkasan: batch import maksimal 100 template memperoleh preflight
   kuota/storage, estimasi publish/draft, pilihan duplikat, history/notification,
   cancel aman, CSV report, dan bulk retry/publish/category/remove.
-- Klasifikasi: `CONFIRMED` melalui `DEC-051`; delivery `LOCAL_VALIDATED /
-  REMOTE_BRANCH_SYNCED / IMPLEMENTED_NOT_DEPLOYED`.
-- Source: runtime candidate `6e259edae13351aee59681c6ad89735125dc5e74`,
-  branch `codex/sagaview-batch-import-control-center-s122`.
-- Production berubah: tidak; tetap backend `e850d6c7542c10e97309ca045ebe2f700a488ebf`
-  / `20260806133407-e850d6c` dan Studio `20260806133407-3b66f8d`.
-- Gate lokal: build, 137 test SagaView/1.654 assertion, focused 12/183,
-  Playwright 51-file, route, migration hash, PowerShell/Bash syntax, dan diff
-  check lulus.
-- Residual: guarded backup/restore, candidate+rollback rehearsal, deploy,
-  canary/preservation, live smoke/marker, rollback verification, serta Owner
-  UAT 50-100 file nyata pada dua akun.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
+  melalui `DEC-051`; business readiness tetap `NEEDS CONFIRMATION`.
+- Source/release backend: `b6af5797fb6fdcea499e727ee2bdb1e4dc666165` /
+  `20260806200400-b6af579`; Studio `3b66f8d5df3e34aba11c4eab2619cfe44efd06d7`
+  / `20260806200400-3b66f8d`; rollback S121 dipertahankan.
+- ZIP export memakai file-backed entry staging, cleanup fail-closed, dan
+  reserve workspace 3x agar batch besar tidak menumpuk di RAM PHP.
+- Gate: build, 137 test SagaView/1.656 assertion, focused 20/484, Playwright
+  export/import 51-file, backup/restore, rehearsal kandidat+rollback, deploy
+  6/6, canary/preservation, service/journal/header/public smoke, serta runtime
+  ZIP 51 frame/103.282.237 byte pada RAM 128 MB lulus.
+- Residual: authenticated Owner UAT import 50-100 file nyata pada dua akun.
 - File knowledge: SagaView product, dossier, changelog, ledger, master, gaps,
   decisions, portfolio changelog, root changelog, dan sync status.
 

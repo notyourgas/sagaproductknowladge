@@ -26,7 +26,7 @@ SagaView berdasarkan runtime production aktif.
 - Resumable server batch import sampai 100 template:
   `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
 - S122 Batch Import Control Center:
-  `LOCAL_VALIDATED / REMOTE_BRANCH_SYNCED / IMPLEMENTED_NOT_DEPLOYED`
+  `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
 - Acceptance integrasi feature-by-feature: ledger dimulai konservatif dan
   belum membuktikan coverage penuh; lihat
   [Feature Coverage Ledger](FEATURE_COVERAGE_LEDGER.md).
@@ -228,7 +228,7 @@ pricing, entitlement, payment, device/session, foto customer, atau source
 Studio. Authenticated Owner UAT 50-100 file nyata dan dua akun tetap residual
 sebelum `BUSINESS_READY` mass-scale.
 
-Kandidat S122 pada source `6e259edae13351aee59681c6ad89735125dc5e74`
+S122 pada source `b6af5797fb6fdcea499e727ee2bdb1e4dc666165`
 menambahkan preflight kuota/storage, duplicate policy `skip/copy/draft`, riwayat
 tujuh hari, notification acknowledgement, cancel, laporan CSV, serta bulk retry,
 publish draft, category update, dan remove draft/item gagal. Fingerprint
@@ -236,11 +236,17 @@ checksum+geometri serta semua endpoint/mutation tetap tenant+membership scoped.
 Schema tambahan bersifat aditif; foto customer, payment, pricing, entitlement,
 device/session, dan source Studio tidak berubah.
 
-Build, 137 test SagaView dengan 1.654 assertion, focused security/production
-safety, Growth 51, Pro 100, serta Playwright 51-file termasuk retry chunk,
-partial result, CSV, category, dan publish draft lulus. Production masih S121
-`20260806133407-e850d6c`; S122 belum melewati backup/restore, rehearsal,
-guarded deployment, live marker/smoke, atau authenticated Owner UAT dua akun.
+ZIP export ikut diperkeras dengan file-backed entry staging, cleanup fail-closed,
+dan reserve workspace 3x agar 51-100 frame tidak menumpuk di RAM PHP.
+
+Build, 137 test SagaView/1.656 assertion, focused 20/484, serta Playwright
+export-all dan batch import 51-file lulus. Backup/restore, rehearsal
+kandidat+rollback, deploy gate 6/6, canary/payment/device preservation,
+service/journal/header/public smoke, dan rollback target lulus. Production aktif
+pada backend `20260806200400-b6af579` dan Studio `20260806200400-3b66f8d`.
+Smoke runtime 51 frame menghasilkan ZIP 103.282.237 byte dalam 6,751 detik pada
+RAM 128 MB dengan tambahan peak 23.597.056 byte dan nol file sementara.
+Authenticated Owner UAT import 50-100 file nyata pada dua akun tetap residual.
 
 Mulai sesi production memakai checklist perangkat, paket, folder, frame, dan
 output serta satu CTA kontekstual 48 px. Utility cloud/recovery yang sehat
