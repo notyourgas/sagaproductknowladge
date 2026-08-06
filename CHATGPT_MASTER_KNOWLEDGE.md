@@ -756,15 +756,19 @@ sebelas preset journey general/F&B/jasa/produk/portfolio/creator. Preset Studio,
 readiness sesuai journey, SEO/share, aggregate analytics-to-action, QR
 lifecycle, managed review, dan guided support memiliki parity
 draft-preview-immutable publish-public. Source tervalidasi
-`06be995bf2da5e05e25ba3d394516ad9d8a52f10`; 149 test lulus, 2 controlled
-skip, 1.141 assertion, serta browser desktop-mobile lulus.
+`bdbf692a1dc031919dbf171cc1a8ca8497998810`; 151 test lulus, 2 controlled
+skip, 1.164 assertion, serta browser desktop-mobile lulus. Preset v3 Coffee
+Shop dan Personal Branding membatasi journey ke enam section utama. Renderer
+publik memakai Plus Jakarta Sans, CTA mobile minimum 52px, featured rail, dan
+navigasi bawah sesuai isi.
 
 Landing `sagabio.site`, branded login `app.sagabio.site`, dan pilot wildcard
 Coma Coffee sudah live di VPS dengan MySQL/Redis, TLS wildcard, immutable
 payload, analytics event, QR, serta legacy redirect. Status delivery:
 `PRODUCTION_DEPLOYED`; activation: `NOT_PRODUCTION_ACTIVATED`; business:
-`NOT_BUSINESS_READY`. Central signup, akun owner, SMTP/storage, dan renewal
-DNS-01 otomatis masih menjadi gate.
+`NOT_BUSINESS_READY`. Signup default-off kini menampilkan founding-pilot state.
+Central identity, akun owner/UAT, SMTP, object storage, dan renewal DNS-01
+otomatis masih menjadi gate.
 
 ### SagaMenu
 

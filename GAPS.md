@@ -373,13 +373,15 @@ ketika keputusan atau release baru menutup gap.
 - `NEEDS CONFIRMATION`: pricing, setup fee, hosting/domain, dan scope support.
 - `NEEDS CONFIRMATION`: kriteria keluar dari done-for-you menuju self-service.
 - `CONFIRMED`: exact application source
-  `06be995bf2da5e05e25ba3d394516ad9d8a52f10` sudah `PRODUCTION_DEPLOYED`;
+  `bdbf692a1dc031919dbf171cc1a8ca8497998810` sudah `PRODUCTION_DEPLOYED`;
   wildcard TLS/vhost, environment, backup/disposable restore, migration,
   rollback, queue/scheduler, browser acceptance, dan public smoke lulus.
-- `TODO`: aktifkan central identity/signup secara fail-closed dan lakukan UAT
-  akun owner untuk login, save, preview, publish, serta QR.
-- `TODO`: konfigurasi dan terima SMTP, object storage, serta Hostinger DNS API
-  renewal otomatis sebelum aktivasi komersial.
+- `CONFIRMED`: signup default-off menampilkan founding-pilot state dan tidak
+  menyediakan fallback password lokal.
+- `TODO`: konfigurasi central identity production lalu lakukan UAT akun owner
+  untuk login, save, preview, publish, serta QR.
+- `TODO`: konfigurasi dan terima transactional SMTP, object storage, serta
+  Hostinger DNS API renewal otomatis sebelum aktivasi komersial.
 
 ### SagaMenu
 

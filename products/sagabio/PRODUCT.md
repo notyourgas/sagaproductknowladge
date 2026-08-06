@@ -1,6 +1,6 @@
 # SagaBio Product Knowledge
 
-Updated: 5 Agustus 2026
+Updated: 7 Agustus 2026
 Evidence status: `PRODUCTION_DEPLOYED / NOT_PRODUCTION_ACTIVATED / NOT_BUSINESS_READY`
 
 ## Tujuan dokumen
@@ -57,6 +57,9 @@ SagaMenu tetap merupakan produk e-menu/e-katalog terpisah.
 - Sebelas preset journey kategori untuk general, F&B, jasa, produk, portfolio,
   dan creator; setiap preset membawa goal, CTA, susunan section, layout,
   starter copy, kebutuhan aset, dan starter visual yang tetap editable.
+- Preset v3 Coffee Shop dan Personal Branding menyediakan enam section utama
+  mobile-first; Coffee Shop tetap menu-first dan meneruskan katalog lengkap ke
+  e-menu eksternal.
 - Pengurutan section dengan drag desktop, keyboard, dan kontrol sentuh.
 - Keluarga layout hero, action link, CTA, featured item, galeri, testimonial,
   dan lokasi dengan preview responsif.
@@ -89,16 +92,19 @@ Status bisnis: `NOT_BUSINESS_READY`.
   dibangun.
 - Flow pilih layout/urutkan -> autosave -> preview -> immutable publish ->
   public page berada pada exact application source
-  `06be995bf2da5e05e25ba3d394516ad9d8a52f10`.
+  `bdbf692a1dc031919dbf171cc1a8ca8497998810`.
 - Penerapan preset kini langsung menyelaraskan draft server, editor, preview,
   publish snapshot, dan public renderer tanpa state layout lama.
-- Full regression lulus 149 test, 2 controlled skip, dan 1.141 assertion;
+- Public renderer memakai Plus Jakarta Sans, hero mobile yang lebih ringkas,
+  CTA minimum 52px, featured rail horizontal, dan navigasi bawah sesuai isi.
+- Full regression lulus 151 test, 2 controlled skip, dan 1.164 assertion;
   static/build/dependency gate serta browser desktop-mobile lulus.
 - `https://sagabio.site`, `https://app.sagabio.site/login`, dan pilot
   `https://coma-coffee.sagabio.site` live dengan wildcard TLS, payload ETag,
   analytics event, QR redirect, dan legacy redirect.
-- Signup pusat tetap default-off. Belum ada akun owner customer yang dapat
-  dipakai untuk authenticated save/publish UAT.
+- Signup pusat tetap default-off dan menampilkan status founding pilot, bukan
+  halaman 404. Belum ada akun owner customer untuk authenticated
+  save/publish UAT.
 
 ## Belum boleh diklaim
 
@@ -107,7 +113,8 @@ Status bisnis: `NOT_BUSINESS_READY`.
 - Pilot Coma Coffee adalah halaman demonstrasi production, bukan customer atau
   paid-pilot evidence.
 - Produk belum boleh disebut self-serve atau business-ready sebelum central
-  identity, owner handoff, SMTP/storage, dan renewal wildcard otomatis lulus.
+  identity, owner handoff/UAT, SMTP, object storage, dan renewal wildcard
+  otomatis lulus.
 
 ## Ide konten
 

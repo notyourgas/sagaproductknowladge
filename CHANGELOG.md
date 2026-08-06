@@ -12,6 +12,24 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-07
 
+### SagaBio mobile journey finalization production
+
+- Ringkasan: preset v3 Coffee Shop/Personal Branding dan public renderer
+  mobile-first dipromosikan ke production; signup default-off kini memberi
+  founding-pilot state yang aman, bukan 404.
+- Klasifikasi: `CONFIRMED`; exact application source
+  `bdbf692a1dc031919dbf171cc1a8ca8497998810`.
+- Production berubah: ya. Delivery `PRODUCTION_DEPLOYED`; activation
+  `NOT_PRODUCTION_ACTIVATED`; business readiness `NOT_BUSINESS_READY`.
+- Gate: 151 test + 2 controlled skip/1.164 assertion, browser 10/10, artifact,
+  dependency audit, backup/disposable restore, domain/TLS 66/66, 16 migration,
+  service/worker/scheduler, dan public smoke lulus.
+- Rollback source: `06be995bf2da5e05e25ba3d394516ad9d8a52f10`.
+- Residual: central identity, owner UAT, transactional SMTP, object storage,
+  dan automatic wildcard renewal.
+- File knowledge: product, dossier, changelog SagaBio, master, gaps,
+  portfolio/root changelog, dan sync status.
+
 ### SagaView S136 tenant-bound session current-baseline candidate
 
 - Ringkasan: payload session yang meminta tenant berbeda dari tenant credential

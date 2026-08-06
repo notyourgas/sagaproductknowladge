@@ -9,6 +9,24 @@ Mencatat perubahan material SagaBio dengan provenance public-safe.
 Status delivery saat ini production deployed; activation dan business readiness
 tetap dinilai terpisah.
 
+## 2026-08-07 - Mobile journey finalization production
+
+- Klasifikasi: `CONFIRMED` dari exact application source
+  `bdbf692a1dc031919dbf171cc1a8ca8497998810` dan runtime production.
+- Preset v3 Coffee Shop dan Personal Branding menyediakan enam section utama
+  mobile-first. Coffee Shop tetap menu-first dan Personal Branding berfokus
+  pada profil, karya, konten, kolaborasi, serta social discovery.
+- Public renderer kini memakai Plus Jakarta Sans, CTA minimum 52px, featured
+  rail horizontal, dan content-aware bottom navigation. Signup default-off
+  menampilkan founding-pilot state, bukan 404.
+- Gate: 151 test + 2 controlled skip/1.164 assertion, browser 10/10, dependency
+  audit, exact artifact, backup/disposable restore, domain/TLS 66/66, 16
+  migration, service/worker/scheduler, dan public smoke lulus.
+- Delivery: `PRODUCTION_DEPLOYED`; activation: `NOT_PRODUCTION_ACTIVATED`;
+  business readiness: `NOT_BUSINESS_READY`.
+- Blocker: central identity, transactional SMTP, object storage, owner UAT,
+  dan automatic wildcard renewal sebelum aktivasi komersial.
+
 ## 2026-08-05 - First VPS production release
 
 - Klasifikasi: `CONFIRMED` dari exact application source

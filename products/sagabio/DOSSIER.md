@@ -7,7 +7,7 @@ SagaBio.
 
 ## Konteks dan status bukti
 
-- Updated: 5 Agustus 2026
+- Updated: 7 Agustus 2026
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `NOT_BUSINESS_READY`
@@ -58,6 +58,13 @@ Preset general, F&B, jasa, produk, portfolio, dan creator sekarang membawa
 goal, audience, CTA, KPI, susunan section, layout, starter copy, kebutuhan aset,
 dan starter visual. Menerapkan preset hanya mengganti draft; public page tetap
 membaca versi aktif sampai owner melakukan publish.
+
+Preset v3 Coffee Shop dan Personal Branding masing-masing membatasi journey ke
+enam section utama untuk keterbacaan mobile. Coffee Shop mengutamakan `Lihat
+Menu` dan memakai e-menu sebagai katalog lengkap; Personal Branding
+memprioritaskan profil, karya, konten terbaru, kolaborasi, dan social discovery.
+Renderer publik memakai Plus Jakarta Sans, CTA minimum 52px, featured rail
+horizontal, dan navigasi bawah sesuai isi halaman.
 
 ## Fitur MVP
 
@@ -120,11 +127,12 @@ done-for-you onboarding, dan action analytics.
 
 Laravel, Inertia Vue, Blade public renderer, Filament, MySQL, Redis, Nginx,
 worker, scheduler, dan compiled publish payload. Exact application source
-production `06be995bf2da5e05e25ba3d394516ad9d8a52f10`; 149 test lulus,
-2 controlled skip, 1.141 assertion, browser desktop-mobile, build, static
+production `bdbf692a1dc031919dbf171cc1a8ca8497998810`; 151 test lulus,
+2 controlled skip, 1.164 assertion, browser desktop-mobile, build, static
 analysis, dependency audit, backup/restore, migration, dan public smoke lulus.
 Landing, branded login, wildcard pilot, immutable payload, analytics event,
-QR, serta legacy redirect live. Central signup sengaja default-off.
+QR, serta legacy redirect live. Central signup sengaja default-off dan
+menampilkan founding-pilot state.
 
 ## Integrasi
 
