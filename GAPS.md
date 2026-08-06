@@ -351,7 +351,11 @@ ketika keputusan atau release baru menutup gap.
 - `NEEDS CONFIRMATION`: SMTP, object storage, 2FA recovery, backup/restore, dan
   monitoring production.
 
-### AOGTICVITY
+### AOGTIVITY
+
+- `CONFIRMED`: nama kanonik saat ini AOGTIVITY. AOGTICVITY adalah nama lama;
+  folder, slug teknis, dan domain `aogticvities.fun` tetap dipertahankan untuk
+  kompatibilitas dan bukan gap rebrand.
 
 - `Pixel Matchday Arcade` UI production 3 Agustus 2026 tidak menutup blocker
   activation; perbaikannya berada pada visual hierarchy, responsive mobile

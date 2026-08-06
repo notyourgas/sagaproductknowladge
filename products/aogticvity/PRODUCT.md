@@ -1,13 +1,13 @@
-# AOGTICVITY Product Knowledge
+# AOGTIVITY Product Knowledge
 
 Updated: 6 Agustus 2026
 Evidence status: public Vercel delivery + database-backed auth, registration, team, and event-day operations runtime
 
 ## Tujuan dokumen
 
-Menjadi ringkasan fakta kanonik AOGTICVITY. Detail product, experience,
+Menjadi ringkasan fakta kanonik AOGTIVITY. Detail product, experience,
 business, technical, sales, dan content berada di [DOSSIER](DOSSIER.md).
-Keputusan terbuka berada di [GAPS](../../GAPS.md#aogticvity).
+Keputusan terbuka berada di [GAPS](../../GAPS.md#aogtivity).
 
 ## Konteks
 
@@ -17,11 +17,12 @@ yang masih tertunda.
 
 ## Ringkasan
 
-AOGTICVITY adalah web app mobile-first untuk community matchday dan operasi
+AOGTIVITY adalah web app mobile-first untuk community matchday dan operasi
 event/kompetisi hari-H.
 
-Nama ini menggantikan penyebutan project `17an` atau `Olimpiade Kemerdekaan`
-sebagai nama produk terbaru. Nama lama tetap disimpan sebagai provenance.
+Nama ini menggantikan **AOGTICVITY** serta penyebutan project `17an` atau
+`Olimpiade Kemerdekaan` sebagai nama produk terbaru. Nama lama dan slug teknis
+`aogticvity` tetap disimpan sebagai provenance dan compatibility identifier.
 
 ## Target pengguna
 
@@ -62,6 +63,15 @@ telah lulus. Domain technically production-activated; business readiness tetap
 menunggu human UAT.
 
 Public delivery kanonik: `https://aogticvities.fun`.
+
+Rebrand AOGTIVITY aktif pada source runtime
+`e4c217b36a215b94922785f97a14b828ff87826a`, Hostinger release
+`20260806T093015Z`, dan Vercel deployment
+`dpl_2ZfuhtLs4v8crJ1g3NnRyv8TSzU9`. UI, metadata, PWA, aset merek, pesan
+WhatsApp baru, serta issuer TOTP baru memakai AOGTIVITY. Domain, repository,
+path deploy, environment variable, cookie/session prefix, database, service,
+dan identifier integrasi lama tidak diganti agar sesi, data, dan rollback tetap
+kompatibel.
 
 ## Arsitektur status
 

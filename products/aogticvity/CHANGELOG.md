@@ -1,12 +1,28 @@
-# AOGTICVITY Changelog
+# AOGTIVITY Changelog
 
 ## Tujuan
 
-Mencatat perubahan material AOGTICVITY/17an/Olimpiade.
+Mencatat perubahan material AOGTIVITY/AOGTICVITY/17an/Olimpiade.
 
 ## Konteks
 
 Nama lama dipertahankan sebagai provenance; status runtime harus eksplisit.
+
+## 2026-08-06 - Rebrand AOGTIVITY production
+
+- `CONFIRMED`: nama kanonik produk berubah dari AOGTICVITY menjadi AOGTIVITY;
+  domain tetap `aogticvities.fun`.
+- UI, metadata, PWA, aset merek, pesan WhatsApp baru, Better Auth, dan issuer
+  TOTP baru memakai AOGTIVITY. Identifier teknis `aogticvity` dipertahankan
+  untuk kompatibilitas session, cookie, database, service, integrasi, dan
+  rollback.
+- Source runtime `e4c217b36a215b94922785f97a14b828ff87826a`; Hostinger
+  `20260806T093015Z`; Vercel `dpl_2ZfuhtLs4v8crJ1g3NnRyv8TSzU9`.
+- Gate: asset pipeline, 128 unit/API, 64/64 UI, 12/12 public production,
+  dependency audit, exact-source build, backup/restore, readiness, routing,
+  dan rollback lulus. Rebrand tidak mengubah migration atau data peserta.
+- Delivery rebrand `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; business
+  readiness produk tetap `BLOCKED` oleh UAT operasi hari-H yang sudah tercatat.
 
 ## 2026-08-06 - Other Region taxonomy production
 

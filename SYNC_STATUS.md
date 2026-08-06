@@ -12,26 +12,27 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-06T16:34:58+07:00 |
+| Waktu pembaruan terakhir | 2026-08-06T16:39:05+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `7186ade060d30f3b9e0690027183c83526ccc5e1` |
-| Informasi terakhir disinkronkan | SagaView batch frame import `DEC-045` aktif pada source `1657c16c`, backend `20260806092647-1657c16`, dan Studio `20260806092648-3b66f8d`; rollback S118 dipertahankan. |
+| Baseline sebelum pembaruan | `748c02548cb5c2fe6a43dfc80cfcbc549ba518b5` |
+| Informasi terakhir disinkronkan | Rebrand kanonik AOGTIVITY `DEC-047`; source runtime `e4c217b36a215b94922785f97a14b828ff87826a`, Hostinger `20260806T093015Z`, Vercel `dpl_2ZfuhtLs4v8crJ1g3NnRyv8TSzU9`; domain tetap `aogticvities.fun`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada; perubahan SagaBook S127 pada baseline dipertahankan. |
-| Error | Tidak ada pada sinkronisasi SagaView S119. |
+| Konflik | Tidak ada; nama lama AOGTICVITY dipertahankan hanya sebagai provenance dan identifier teknis compatibility. |
+| Error | Tidak ada pada sinkronisasi rebrand. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/sagaview/PRODUCT.md`
-- `products/sagaview/DOSSIER.md`
-- `products/sagaview/CHANGELOG.md`
-- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/aogticvity/PRODUCT.md`
+- `products/aogticvity/DOSSIER.md`
+- `products/aogticvity/CHANGELOG.md`
 - `DECISIONS.md`
 - `GAPS.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHANGELOG.md`
+- `README.md`
+- `INDEX.md`
 - `SYNC_STATUS.md`
 
 ## Item menunggu konfirmasi
@@ -56,7 +57,7 @@ product/out-of-scope/tenant-negative, monitoring latency/error/cost, serta
 inventory surface chatbot SagaDev lain. Fine-tuning/provider/data-retention
 baru memerlukan keputusan Andreas terpisah.
 
-AOGTICVITY tetap menunggu assignment empat peserta approved, PIC untuk sepuluh
+AOGTIVITY tetap menunggu assignment empat peserta approved, PIC untuk sepuluh
 lomba, roster publish/lock, audited reconciliation record lama, valid-link/
 two-device role rehearsal, authenticated draft/publish/correct/standing sync,
 dan rehearsal fisik sebelum operational activation. Standing server dan sync

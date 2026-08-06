@@ -12,6 +12,20 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-06
 
+### AOGTIVITY production rebrand
+
+- Ringkasan: nama kanonik berubah dari AOGTICVITY menjadi AOGTIVITY pada semua
+  surface yang aman diubah; domain tetap `aogticvities.fun`.
+- Klasifikasi: `CONFIRMED` melalui `DEC-047`; rebrand
+  `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
+- Source/runtime: `e4c217b36a215b94922785f97a14b828ff87826a`, Hostinger
+  `20260806T093015Z`, Vercel `dpl_2ZfuhtLs4v8crJ1g3NnRyv8TSzU9`.
+- Identifier teknis lama dipertahankan untuk session, data, integrasi, dan
+  rollback. Rebrand tidak mengubah migration, peserta, pricing, atau status
+  business readiness.
+- File knowledge: product, dossier, changelog AOGTIVITY, master, decision,
+  gaps, README, index, portfolio changelog, root changelog, dan sync status.
+
 ### SagaView batch frame import S119 production
 
 - Ringkasan: batch import maksimal 100 template dari Galeri Frame kini aktif di

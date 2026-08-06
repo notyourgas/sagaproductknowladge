@@ -56,7 +56,7 @@ Indeks mencakup knowledge publik pada evidence cut-off 31 Juli 2026.
 | SagaMenu | [PRODUCT](products/sagamenu/PRODUCT.md) | [DOSSIER](products/sagamenu/DOSSIER.md) | [CHANGELOG](products/sagamenu/CHANGELOG.md) |
 | SagaFin | [PRODUCT](products/sagafin/PRODUCT.md) | [DOSSIER](products/sagafin/DOSSIER.md) | [CHANGELOG](products/sagafin/CHANGELOG.md) |
 | COYABAG | [PRODUCT](products/coyabag/PRODUCT.md) | [DOSSIER](products/coyabag/DOSSIER.md) | [CHANGELOG](products/coyabag/CHANGELOG.md) |
-| AOGTICVITY | [PRODUCT](products/aogticvity/PRODUCT.md) | [DOSSIER](products/aogticvity/DOSSIER.md) | [CHANGELOG](products/aogticvity/CHANGELOG.md) |
+| AOGTIVITY | [PRODUCT](products/aogticvity/PRODUCT.md) | [DOSSIER](products/aogticvity/DOSSIER.md) | [CHANGELOG](products/aogticvity/CHANGELOG.md) |
 | Saga Platform | [PRODUCT](products/saga-platform/PRODUCT.md) | [DOSSIER](products/saga-platform/DOSSIER.md) | [CHANGELOG](products/saga-platform/CHANGELOG.md) |
 | SagaOPS | [PRODUCT](products/sagaops/PRODUCT.md) | [DOSSIER](products/sagaops/DOSSIER.md) | [CHANGELOG](products/sagaops/CHANGELOG.md) |
 | Saga AI | [PRODUCT](products/saga-ai/PRODUCT.md) | [DOSSIER](products/saga-ai/DOSSIER.md) | [CHANGELOG](products/saga-ai/CHANGELOG.md) |

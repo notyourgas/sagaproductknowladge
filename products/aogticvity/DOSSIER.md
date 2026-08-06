@@ -1,9 +1,9 @@
-# AOGTICVITY Dossier
+# AOGTIVITY Dossier
 
 ## Tujuan dokumen
 
 Menjaga scope event-day operations, readiness, bisnis, teknis, sales, dan
-content AOGTICVITY tetap jelas.
+content AOGTIVITY tetap jelas.
 
 ## Konteks dan status bukti
 
@@ -15,7 +15,9 @@ content AOGTICVITY tetap jelas.
 ## Overview produk
 
 Web app mobile-first untuk community matchday dan operasi event/kompetisi
-hari-H. Nama lama: 17an/Olimpiade Kemerdekaan.
+hari-H. Nama lama: AOGTICVITY, 17an, dan Olimpiade Kemerdekaan. Slug teknis
+`aogticvity` serta domain `aogticvities.fun` tetap dipertahankan untuk
+kompatibilitas.
 
 ## Masalah yang diselesaikan
 
@@ -300,7 +302,7 @@ Command center lomba; scoring audit; offline fallback; live standing.
 ## Contoh caption
 
 `PROPOSAL`: “Hari-H bukan waktunya mencari spreadsheet terakhir.
-AOGTICVITY menyatukan check-in, jadwal, hasil, dan standing dalam satu alur.”
+AOGTIVITY menyatukan check-in, jadwal, hasil, dan standing dalam satu alur.”
 
 ## Ide campaign
 
@@ -319,4 +321,4 @@ status production secara jujur.
 
 ## Keputusan dan gap
 
-Lihat [GAPS](../../GAPS.md#aogticvity).
+Lihat [GAPS](../../GAPS.md#aogtivity).

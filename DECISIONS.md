@@ -228,8 +228,22 @@ keputusan pengganti.
 | Alternatif yang dipertimbangkan | Mempertahankan konfigurasi lama enam tim; mengunci durasi sebelum konfirmasi; meminta nama peserta untuk setiap lomba seluruh tim. |
 | Dampak | Master data, schedule builder, roster rule, result policy, UI semua role, migration, audit, UAT, dan knowledge publik memakai 8 tim/10 lomba. Klausa nama Tim 7/Tim 8 yang provisional diselesaikan oleh DEC-023; keputusan open lain tetap tercatat sebagai gap. |
 | Pemberi keputusan | Andreas / founder |
-| Status | `CONFIRMED` |
+| Status | `CONFIRMED`; klausa nama produk AOGTICVITY `DEPRECATED` oleh `DEC-047`, sedangkan kontrak master recap, 8 tim, 10 lomba, durasi editable, dan roster seluruh tim tetap berlaku |
 | Dokumen terkait | [AOGTICVITY Product](products/aogticvity/PRODUCT.md), [AOGTICVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTICVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |
+
+## DEC-047 - Nama produk menjadi AOGTIVITY dengan domain tetap
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-06 |
+| Topik | Rebrand produk event dan batas compatibility identifier |
+| Keputusan | Nama produk kanonik berubah dari AOGTICVITY menjadi **AOGTIVITY** untuk seluruh surface yang aman diubah. Domain root dan role tetap memakai `aogticvities.fun`. Slug repository/path deploy, environment variable, cookie/session prefix, database, service, header, cache prefix, dan identifier integrasi `aogticvity` dipertahankan agar sesi, data, integrasi, dan rollback tidak terputus. |
+| Alasan | Founder meminta satu nama produk baru di seluruh pengalaman pengguna tanpa mengganti domain atau memaksakan migrasi identifier teknis yang berisiko. |
+| Alternatif yang dipertimbangkan | Mengganti domain; mengganti semua identifier teknis sekaligus; hanya mengganti logo; mempertahankan nama lama. |
+| Dampak | UI, metadata, PWA, aset, pesan WhatsApp baru, dokumentasi aktif, Better Auth, dan issuer TOTP baru memakai AOGTIVITY. Label TOTP yang telah tersimpan pada authenticator pengguna tidak dapat diubah dari server, tetapi kode lama tetap valid. Histori release mempertahankan nama lama sebagai provenance. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; source runtime `e4c217b36a215b94922785f97a14b828ff87826a`, Hostinger `20260806T093015Z`, Vercel `dpl_2ZfuhtLs4v8crJ1g3NnRyv8TSzU9`; business readiness keseluruhan tetap `BLOCKED` |
+| Dokumen terkait | [AOGTIVITY Product](products/aogticvity/PRODUCT.md), [AOGTIVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTIVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |
 
 ## DEC-046 - Chatbot SagaDev product-scoped dan ditingkatkan melalui guarded knowledge evaluation
 

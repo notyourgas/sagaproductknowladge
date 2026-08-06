@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-06 - AOGTIVITY production rebrand
+
+- `DEC-047` mengubah nama kanonik AOGTICVITY menjadi AOGTIVITY, sementara
+  domain tetap `aogticvities.fun`.
+- UI, metadata, PWA, aset, WhatsApp baru, Better Auth, dan issuer TOTP baru
+  memakai nama baru; identifier teknis lama dipertahankan untuk kompatibilitas.
+- Source `e4c217b36a215b94922785f97a14b828ff87826a`; Hostinger
+  `20260806T093015Z`; Vercel `dpl_2ZfuhtLs4v8crJ1g3NnRyv8TSzU9`.
+- Rebrand `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; data, migration, domain,
+  dan business-readiness gate tidak berubah.
+
 ## 2026-08-06 - SagaView batch frame import S119 production
 
 - Batch import maksimal 100 `.sagaview-frame`, auto-publish per file, category

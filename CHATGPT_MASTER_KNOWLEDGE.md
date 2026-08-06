@@ -719,7 +719,7 @@ owner 2FA, legal, backup restore, dan provider UAT selesai.
 
 Delivery: `PRODUCTION_DEPLOYED`. Activation dan business readiness: `BLOCKED`.
 
-### AOGTICVITY
+### AOGTIVITY
 
 Web app mobile-first untuk operasi event/kompetisi: registrasi, verifikasi,
 check-in, delapan tim, sepuluh lomba, roster, jadwal, hasil, standing,
@@ -732,6 +732,12 @@ persistence dan audit. Direct BFF fail-closed dan MySQL tetap loopback-only.
 Public registration juga aktif pada MySQL dengan validation, consent,
 idempotency, rate limit, receipt, audit, dan admin verification desk; participant
 fixture serta localStorage registration telah dihapus.
+Nama kanonik produk berubah dari AOGTICVITY menjadi AOGTIVITY pada 6 Agustus
+2026. Rebrand aktif melalui source
+`e4c217b36a215b94922785f97a14b828ff87826a`, Hostinger
+`20260806T093015Z`, dan Vercel `dpl_2ZfuhtLs4v8crJ1g3NnRyv8TSzU9`.
+Domain `aogticvities.fun` serta slug infrastruktur `aogticvity` tetap dipakai
+untuk kompatibilitas; AOGTICVITY hanya nama historis.
 Source runtime `640990f619156e16159be0562ccae1e7f259aa0b`, Hostinger release
 `20260805T190449Z`, Vercel `dpl_6zCCyTMBbA4eNgP7FYyanJ1RChAJ`, dan migration
 023 menambah audited WhatsApp delivery reconciliation tanpa resend, worker
@@ -955,9 +961,9 @@ Delivery: `PLANNED`. Belum production-activated.
   SagaBook–SagaView tersedia.
 - Jangan sebut SagaBio atau SagaMenu production.
 - Jangan sebut COYABAG siap transaksi penuh.
-- Jangan sebut seluruh AOGTICVITY production multi-device; auth dan public
+- Jangan sebut seluruh AOGTIVITY production multi-device; auth dan public
   registration saja sudah production-activated.
-- Jangan klaim seluruh login WhatsApp AOGTICVITY production-ready. Fonnte
+- Jangan klaim seluruh login WhatsApp AOGTIVITY production-ready. Fonnte
   runtime dan delivery channel sudah dikonfirmasi, tetapi status webhook serta
   magic-link/session/reuse/revoke UAT belum lulus.
 - Jangan klaim jalur VIP/access policy production-activated sebelum registrasi,
