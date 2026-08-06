@@ -719,6 +719,14 @@ owner 2FA, legal, backup restore, dan provider UAT selesai.
 
 Delivery: `PRODUCTION_DEPLOYED`. Activation dan business readiness: `BLOCKED`.
 
+Candidate source `368a89595ac0a667d99357b7c8216847cef707fb` memperbaiki
+rekonsiliasi cart tersimpan terhadap katalog live dan menutup advisory
+Guzzle/Promises. Candidate sudah `LOCAL_VALIDATED / REMOTE_BRANCH_SYNCED`, tetapi
+belum berada di `main`, belum tagged, belum deployed, dan CI remote belum
+terverifikasi. Production tetap source
+`33637aa9f6f79037a2555c3b0fc0d93b700450dc` melalui release
+`20260730-33637aa`.
+
 ### AOGTIVITY
 
 Web app mobile-first untuk operasi event/kompetisi: registrasi, verifikasi,

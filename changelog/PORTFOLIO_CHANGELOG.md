@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-06 - COYABAG cart recovery candidate
+
+- Candidate source `368a89595ac0a667d99357b7c8216847cef707fb` menutup stale
+  persisted-cart reconciliation, cart dialog accessibility, dan advisory
+  Guzzle/Promises.
+- Unit, storefront/admin build, Laravel, browser desktop/mobile, npm/Composer
+  audit, secret scan, dan local release gate lulus; branch remote sinkron.
+- Delivery `LOCAL_VALIDATED / REMOTE_BRANCH_SYNCED`; belum mainline, belum
+  tagged, belum deployed, dan CI remote belum memiliki evidence yang dapat
+  diakses dari audit ini.
+- Production tetap source `33637aa9f6f79037a2555c3b0fc0d93b700450dc` /
+  release `20260730-33637aa`; commerce activation dan business readiness tetap
+  `BLOCKED`.
+
 ## 2026-08-06 - AOGTIVITY production rebrand
 
 - `DEC-047` mengubah nama kanonik AOGTICVITY menjadi AOGTIVITY, sementara

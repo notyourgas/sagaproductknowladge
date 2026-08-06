@@ -12,6 +12,23 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-06
 
+### COYABAG cart recovery candidate
+
+- Ringkasan: persisted cart kini direkonsiliasi dengan katalog live setelah API
+  siap; accessibility dialog cart dan dependency Guzzle/Promises juga ditutup.
+- Klasifikasi: `CONFIRMED`; delivery `LOCAL_VALIDATED /
+  REMOTE_BRANCH_SYNCED`, belum `MAINLINE`, belum tagged, dan belum deployed.
+- Source: `368a89595ac0a667d99357b7c8216847cef707fb`, branch
+  `codex/finalization-f0-f11`.
+- Gate lokal: unit, storefront/admin build, Laravel, browser desktop/mobile,
+  npm/Composer audit, secret scan, dan release-candidate verification lulus.
+- Production berubah: tidak; tetap source
+  `33637aa9f6f79037a2555c3b0fc0d93b700450dc` / release
+  `20260730-33637aa`. Activation dan business readiness tetap `BLOCKED`.
+- Residual: CI remote perlu dibuktikan sebelum fast-forward `main` dan tag RC.
+- File knowledge: COYABAG product, dossier, changelog, master, portfolio
+  changelog, root changelog, dan sync status.
+
 ### AOGTIVITY production rebrand
 
 - Ringkasan: nama kanonik berubah dari AOGTICVITY menjadi AOGTIVITY pada semua

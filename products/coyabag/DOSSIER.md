@@ -7,7 +7,7 @@ content COYABAG tanpa menyamakan surface live dengan commerce aktif.
 
 ## Konteks dan status bukti
 
-- Updated: 31 Juli 2026
+- Updated: 6 Agustus 2026
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `BLOCKED`
 - Business readiness: `BLOCKED`
@@ -68,6 +68,12 @@ payment → fulfillment → delivery → return/support.
 
 Cart harus dipertahankan ketika API tidak dapat diverifikasi; inventory
 reservation dan terminal status fail-closed.
+
+Candidate source `368a89595ac0a667d99357b7c8216847cef707fb` juga
+merekonsiliasi item tersimpan setelah katalog live siap: item/variant yang tidak
+tersedia dikeluarkan, sedangkan stock, quantity, price, media, URL, nama, dan
+warna mengikuti katalog server. Candidate berstatus `LOCAL_VALIDATED /
+REMOTE_BRANCH_SYNCED`, belum `MAINLINE`, belum tagged, dan belum deployed.
 
 ## Business model
 

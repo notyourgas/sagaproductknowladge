@@ -12,30 +12,33 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-06T16:39:05+07:00 |
+| Waktu pembaruan terakhir | 2026-08-06T16:58:33+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `748c02548cb5c2fe6a43dfc80cfcbc549ba518b5` |
-| Informasi terakhir disinkronkan | Rebrand kanonik AOGTIVITY `DEC-047`; source runtime `e4c217b36a215b94922785f97a14b828ff87826a`, Hostinger `20260806T093015Z`, Vercel `dpl_2ZfuhtLs4v8crJ1g3NnRyv8TSzU9`; domain tetap `aogticvities.fun`. |
+| Baseline sebelum pembaruan | `47876ee05f24594ca221921b469da12b90ac5c08` |
+| Informasi terakhir disinkronkan | COYABAG cart recovery dan dependency security candidate pada source `368a89595ac0a667d99357b7c8216847cef707fb`; branch remote sinkron, production tetap `20260730-33637aa`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada; nama lama AOGTICVITY dipertahankan hanya sebagai provenance dan identifier teknis compatibility. |
-| Error | Tidak ada pada sinkronisasi rebrand. |
+| Konflik | Tidak ada; candidate source dan production runtime sengaja dibedakan. |
+| Error | CI remote COYABAG belum dapat diverifikasi dari konektor audit; promotion mainline ditahan fail-closed. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/aogticvity/PRODUCT.md`
-- `products/aogticvity/DOSSIER.md`
-- `products/aogticvity/CHANGELOG.md`
-- `DECISIONS.md`
-- `GAPS.md`
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHANGELOG.md`
-- `README.md`
-- `INDEX.md`
 - `SYNC_STATUS.md`
 
 ## Item menunggu konfirmasi
+
+COYABAG source `368a89595ac0a667d99357b7c8216847cef707fb` sudah berada pada
+branch remote `codex/finalization-f0-f11` dan seluruh gate lokal R1/R2 lulus.
+GitHub Actions repo private belum dapat dibaca oleh konektor audit, sehingga
+fast-forward `main`, tag RC, dan manifest immutable tetap ditahan. Production
+tidak berubah dari `20260730-33637aa`; provider, data final, owner 2FA,
+backup/restore, UAT, activation, dan business readiness tetap blocker.
 
 Ledger integrasi SagaBook dan SagaView masih bertahap. Auth/session SagaBook
 S123, status/write cabang S124, dan branch-context `/admin/reports` S125 sudah
