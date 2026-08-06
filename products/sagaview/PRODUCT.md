@@ -4,8 +4,8 @@ Updated: 6 Agustus 2026
 Evidence status: production deployed + production activated; frame import-order,
 compact all-menu, workspace Session/Output/Izin Foto monitor besar, free drag
 rotation, pemisahan Simpan Draft/Publish Frame, limit Growth 50/Pro 100,
-portable frame template, bulk export, ZIP untuk tiga atau lebih pilihan, dan
-batch import template aktif di production.
+portable frame template, bulk export, server ZIP untuk tiga sampai 100 pilihan,
+dan batch import template aktif di production.
 
 ## Tujuan dokumen
 
@@ -30,12 +30,12 @@ yang diverifikasi sampai 6 Agustus 2026.
   lalu memakai dua kartu sesi berdampingan pada QHD/4K di dalam batas 1400
   piksel. Ringkasan, filter, retry, cabut izin, dan workflow privacy tidak
   berubah.
-- Backend source `555682bb749fc2c97a16172bbf09de2b6d8026d4` aktif sebagai
-  release `20260806111019-555682b`; rollback
-  `20260806092647-1657c16` dipertahankan.
+- Backend source `ea432e977d02ada8f4b7289bfbd43c6e56941f9a` aktif sebagai
+  release `20260806122125-ea432e9`; rollback
+  `20260806111019-555682b` dipertahankan.
 - Studio tetap memakai source `3b66f8d5df3e34aba11c4eab2619cfe44efd06d7`
-  melalui release `20260806111020-3b66f8d`; rollback
-  `20260806092648-3b66f8d` dipertahankan.
+  melalui release `20260806122126-3b66f8d`; rollback
+  `20260806111020-3b66f8d` dipertahankan.
 - Entitlement live memberi Growth 50 dan Pro 100 frame aktif. Harga, device,
   preset, offline grace, storage, laporan, support, payment, dan fair-use tidak
   berubah.
@@ -246,24 +246,26 @@ aktif melalui backend release `20260806071707-7397954` dan Studio release
 `20260806071733-3b66f8d`; authenticated Owner UAT dengan galeri nyata tetap
 residual sebelum klaim `BUSINESS_READY` mass-scale.
 
-Koreksi packaging bulk export `CONFIRMED` melalui `DEC-048` dengan delivery dan
+Koreksi stabilitas packaging `CONFIRMED` melalui `DEC-049` dengan delivery dan
 activation `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` pada source
-`555682bb749fc2c97a16172bbf09de2b6d8026d4`, branch
+`ea432e977d02ada8f4b7289bfbd43c6e56941f9a`, branch
 `codex/sagaview-zip-bulk-export-s120`. Satu atau dua pilihan tetap diunduh
-sebagai file `.sagaview-frame` terpisah; tiga pilihan atau lebih dikemas menjadi
-satu ZIP di browser agar hanya memicu satu download. ZIP baru diunduh setelah
-seluruh template berhasil disiapkan dan tidak ada arsip parsial ketika satu
-frame gagal. Focused Playwright mobile/tablet/desktop 6/6 memverifikasi tepat
-dua pilihan tetap menghasilkan dua download, tiga pilihan menghasilkan satu ZIP
-dengan tiga template v1 tenant-neutral, production build, npm/Composer audit,
-backend 909/909 dengan 10.665 assertion, serta Frame Authoring 12/12 dengan 45
-assertion lulus. Backup terenkripsi `20260806T110247Z`, restore, rehearsal
-candidate+rollback, final preflight, atomic release, canary, preservation gate,
-service/journal/header/public smoke, 4/4 live marker, dan rollback lulus.
-Production aktif pada backend `20260806111019-555682b` dan Studio
-`20260806111020-3b66f8d`; rollback `20260806092647-1657c16` /
-`20260806092648-3b66f8d` dipertahankan. Authenticated Owner UAT dengan galeri
-nyata tetap residual sebelum klaim `BUSINESS_READY` mass-scale.
+sebagai file `.sagaview-frame` terpisah. Tiga sampai 100 pilihan kini disiapkan
+backend sebagai satu ZIP tenant-neutral pada private temp storage lalu
+diunduh sekali melalui native browser download. Export ID deterministik membuat
+retry idempotent; paket berlaku 30 menit dan satu kegagalan tetap membatalkan
+seluruh arsip. Backend 917/917 dengan 10.964 assertion, focused Playwright 3/3,
+production build, workload realistis 51 frame di atas 90 MB, batas 100 frame,
+tenant isolation, corrupt asset, TTL, dan all-or-nothing lulus. Fresh encrypted
+backup/checksum/offsite round-trip/disposable restore, rehearsal
+candidate+rollback, deploy gate 6/6, single-device canary, payment/device
+preservation, service/journal/security-header/public smoke, live route/marker,
+dan rollback lulus. Production aktif pada backend
+`20260806122125-ea432e9` dan Studio `20260806122126-3b66f8d`; rollback
+`20260806111019-555682b` / `20260806111020-3b66f8d` dipertahankan. Tidak ada
+payment intent/QRIS baru atau perubahan foto customer. Authenticated Owner UAT
+51 frame nyata, retry, dan dua akun tetap residual sebelum klaim
+`BUSINESS_READY` mass-scale.
 
 ## Batch import template Galeri Frame
 

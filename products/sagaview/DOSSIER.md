@@ -21,7 +21,7 @@ SagaView berdasarkan runtime production aktif.
   `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
 - Portable frame template: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
 - Bulk export Galeri Frame: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
-- ZIP bulk export untuk 3+ pilihan:
+- Server ZIP bulk export untuk 3-100 pilihan:
   `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
 - Acceptance integrasi feature-by-feature: ledger dimulai konservatif dan
   belum membuktikan coverage penuh; lihat
@@ -174,24 +174,26 @@ download tetap dikendalikan browser. Delivery dan activation
 Rollback backend `20260806050513-1158926` dan Studio
 `20260806050546-3b66f8d` dipertahankan; Owner UAT galeri nyata masih residual.
 
-`DEC-048` mengoreksi packaging bulk export pada production source
-`555682bb749fc2c97a16172bbf09de2b6d8026d4`, branch
+`DEC-049` mengoreksi implementasi packaging bulk export pada production source
+`ea432e977d02ada8f4b7289bfbd43c6e56941f9a`, branch
 `codex/sagaview-zip-bulk-export-s120`: satu atau dua pilihan tetap memakai
-download `.sagaview-frame` langsung, sedangkan tiga atau lebih dikemas menjadi
-satu ZIP di browser. Arsip baru diunduh setelah seluruh template berhasil
-disiapkan; kegagalan satu frame membatalkan ZIP tanpa meninggalkan arsip
-parsial. Focused Playwright 6/6 pada mobile/tablet/desktop memvalidasi dua
-download untuk dua frame serta satu ZIP berisi tiga template v1 tenant-neutral
-untuk tiga frame. Build, npm/Composer audit, backend 909/909, dan Frame
-Authoring 12/12 lulus. Backup terenkripsi `20260806T110247Z`, restore,
-candidate+rollback rehearsal, final preflight, atomic release, canary,
-payment/device preservation, service/journal/header/public smoke, 4/4 live
-marker, dan rollback lulus. Tidak ada route, migration, pricing, entitlement,
-payment, device/session, foto customer, atau source Studio yang berubah.
-Delivery dan activation `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` melalui
-backend `20260806111019-555682b` dan Studio `20260806111020-3b66f8d`; rollback
-`20260806092647-1657c16` / `20260806092648-3b66f8d` dipertahankan. Authenticated
-Owner UAT galeri nyata tetap residual sebelum `BUSINESS_READY` mass-scale.
+download `.sagaview-frame` langsung, sedangkan tiga sampai 100 pilihan disiapkan
+sebagai satu ZIP di private temp storage backend. Browser baru menjalankan satu
+native download setelah paket siap. Export ID deterministik mendukung retry
+idempotent selama TTL 30 menit; kegagalan satu frame membatalkan paket tanpa
+arsip parsial. Backend 917/917 dengan 10.964 assertion, focused Playwright 3/3,
+production build, workload 51 frame di atas 90 MB, batas 100, tenant isolation,
+corrupt asset, expiry, dan all-or-nothing lulus. Fresh encrypted backup/restore,
+candidate+rollback rehearsal, deploy gate 6/6, atomic release, canary,
+payment/device preservation, service/journal/header/public smoke, live marker,
+dan rollback lulus. Release menambah endpoint tenant-scoped dan scheduler purge,
+tetapi tidak mengubah schema, pricing, entitlement Growth 50/Pro 100, payment,
+device/session, foto customer, atau source Studio. Delivery dan activation
+`PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` melalui backend
+`20260806122125-ea432e9` dan Studio `20260806122126-3b66f8d`; rollback
+`20260806111019-555682b` / `20260806111020-3b66f8d` dipertahankan. Authenticated
+Owner UAT 51 frame nyata, retry, dan dua akun tetap residual sebelum
+`BUSINESS_READY` mass-scale.
 
 Batch import Galeri Frame ditetapkan melalui `DEC-045` dan source
 `1657c16ca3e05dd442db66ad11177f13edae1d37`. Modal gallery menerima drag-and-drop

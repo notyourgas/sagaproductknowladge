@@ -540,19 +540,21 @@ lulus. Browser dapat meminta izin beberapa download. Fitur aktif melalui
 backend release `20260806071707-7397954` dan Studio
 `20260806071733-3b66f8d`; authenticated Owner UAT tetap residual sebelum
 `BUSINESS_READY` mass-scale.
-Koreksi founder `DEC-048` menetapkan packaging bulk export yang kini
+Koreksi founder `DEC-049` menetapkan server ZIP bulk export yang kini
 `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: satu atau dua frame tetap direct
-download, sedangkan tiga atau lebih menjadi satu ZIP client-side. Source
-`555682bb749fc2c97a16172bbf09de2b6d8026d4` baru mengunduh arsip setelah semua
-template siap dan membatalkan seluruh ZIP bila satu frame gagal. Focused
-Playwright mobile/tablet/desktop 6/6, validasi tiga entry ZIP tenant-neutral,
-regresi dua download, build, audit dependency, backend 909/909, encrypted
-backup/restore, rehearsal, final preflight, atomic release, canary/preservation,
-service/journal/header/public smoke, live marker, dan rollback lulus. Production
-aktif pada backend `20260806111019-555682b` dan Studio
-`20260806111020-3b66f8d`; rollback `20260806092647-1657c16` /
-`20260806092648-3b66f8d` dipertahankan. Authenticated Owner UAT galeri nyata
-tetap residual sebelum `BUSINESS_READY` mass-scale.
+download, sedangkan tiga sampai 100 pilihan disiapkan backend sebagai satu ZIP
+tenant-neutral lalu diunduh sekali secara native. Source
+`ea432e977d02ada8f4b7289bfbd43c6e56941f9a` memakai export ID deterministik,
+retry idempotent, private temp storage, TTL 30 menit, dan all-or-nothing
+delivery. Backend 917/917 dengan 10.964 assertion, Playwright 3/3, workload
+realistis 51 frame di atas 90 MB, batas 100, tenant isolation, corrupt asset,
+expiry, build, encrypted backup/restore, rehearsal, deploy gate 6/6, atomic
+release, canary/preservation, service/journal/header/public smoke, live route
+dan marker, serta rollback lulus. Production aktif pada backend
+`20260806122125-ea432e9` dan Studio `20260806122126-3b66f8d`; rollback
+`20260806111019-555682b` / `20260806111020-3b66f8d` dipertahankan. Authenticated
+Owner UAT 51 frame nyata, retry, dan dua akun tetap residual sebelum
+`BUSINESS_READY` mass-scale.
 Keputusan founder `DEC-045` menambahkan batch import template langsung dari
 Galeri Frame dengan status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
 Source `1657c16ca3e05dd442db66ad11177f13edae1d37` menerima drag-and-drop atau

@@ -1,5 +1,23 @@
 # Portfolio Changelog
 
+## 2026-08-06 - SagaView server ZIP export stability production
+
+- `DEC-049` memindahkan packaging tiga sampai 100 frame dari browser ke private
+  server storage dengan idempotent retry, TTL 30 menit, native download, dan
+  all-or-nothing delivery; satu atau dua frame tetap direct download.
+- Source/release backend
+  `ea432e977d02ada8f4b7289bfbd43c6e56941f9a` /
+  `20260806122125-ea432e9`; Studio source/release
+  `3b66f8d5df3e34aba11c4eab2619cfe44efd06d7` /
+  `20260806122126-3b66f8d`; rollback `20260806111019-555682b` /
+  `20260806111020-3b66f8d`.
+- Backend 917/917, Playwright 3/3, workload 51 frame di atas 90 MB, batas 100,
+  encrypted backup/restore, rehearsal candidate+rollback, deploy gate 6/6,
+  canary/payment/device preservation, service/journal/security-header/public
+  smoke, live route/marker, dan rollback lulus.
+- Delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; Owner UAT 51 frame
+  nyata, retry, dan dua akun tetap residual sebelum business-ready mass-scale.
+
 ## 2026-08-06 - SagaView ZIP bulk export S120 production
 
 - `DEC-048` mengaktifkan satu atau dua direct download `.sagaview-frame` dan

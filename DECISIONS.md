@@ -231,6 +231,20 @@ keputusan pengganti.
 | Status | `CONFIRMED`; klausa nama produk AOGTICVITY `DEPRECATED` oleh `DEC-047`, sedangkan kontrak master recap, 8 tim, 10 lomba, durasi editable, dan roster seluruh tim tetap berlaku |
 | Dokumen terkait | [AOGTICVITY Product](products/aogticvity/PRODUCT.md), [AOGTICVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTICVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |
 
+## DEC-049 - ZIP bulk export SagaView disiapkan server-side
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-06 |
+| Topik | Stabilitas export ZIP Galeri Frame besar |
+| Keputusan | Satu atau dua frame tetap diunduh langsung. Tiga sampai 100 frame disiapkan sebagai satu ZIP tenant-neutral pada private temporary storage backend, lalu browser melakukan satu native download. Export ID harus deterministik agar retry idempotent, paket berumur 30 menit, akses tenant-scoped, dan satu kegagalan membatalkan seluruh arsip. |
+| Alasan | ZIP client-side berhenti pada 39 dari 51 frame dengan `Network Error` karena browser memegang artwork dan paket besar di memori sekaligus. Server-side preparation mengurangi tekanan RAM browser dan tetap menghasilkan satu download. |
+| Alternatif yang dipertimbangkan | Memperbesar timeout client-side; memecah menjadi beberapa ZIP; menurunkan batas pilihan; mempertahankan client-side ZIP dengan concurrency lebih kecil. |
+| Dampak | Backend menambah endpoint authenticated tenant-scoped untuk prepare/download dan scheduler purge. Arsip tetap kompatibel dengan batch import, tenant-neutral, tanpa foto customer. Pricing, Growth 50/Pro 100, payment, device/session, schema, dan Studio source tidak berubah. Klausa `DEC-048` bahwa ZIP dibuat client-side menjadi deprecated; threshold satu-dua versus tiga atau lebih tetap berlaku sampai batas 100. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; source `ea432e977d02ada8f4b7289bfbd43c6e56941f9a`, backend release `20260806122125-ea432e9`, Studio release `20260806122126-3b66f8d`, rollback `20260806111019-555682b` / `20260806111020-3b66f8d`; authenticated Owner UAT 51 frame nyata, retry, dan dua akun tetap residual sebelum `BUSINESS_READY` mass-scale |
+| Dokumen terkait | [SagaView Product](products/sagaview/PRODUCT.md), [SagaView Dossier](products/sagaview/DOSSIER.md), [SagaView Changelog](products/sagaview/CHANGELOG.md), [SagaView Ledger](products/sagaview/FEATURE_COVERAGE_LEDGER.md), [Gaps](GAPS.md) |
+
 ## DEC-048 - Tiga atau lebih bulk export SagaView dikemas sebagai ZIP
 
 | Field | Isi |
@@ -242,7 +256,7 @@ keputusan pengganti.
 | Alternatif yang dipertimbangkan | Seluruh jumlah tetap direct download; dua atau lebih selalu ZIP; format bundle multi-template baru; ZIP server-side. |
 | Dampak | Tombol/helper text Galeri Frame mengikuti jumlah pilihan; schema `.sagaview-frame`, sanitasi tenant/customer, dan import tetap kompatibel. ZIP dibuat di browser tanpa route, migration, pricing, entitlement, payment, device/session, foto customer, atau perubahan Studio source. Klausa DEC-044 bahwa setiap pilihan selalu diunduh terpisah menjadi deprecated, sementara selection/filter/export massal lainnya tetap berlaku. |
 | Pemberi keputusan | Andreas / founder |
-| Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; source `555682bb749fc2c97a16172bbf09de2b6d8026d4`, backend release `20260806111019-555682b`, Studio release `20260806111020-3b66f8d`, rollback `20260806092647-1657c16` / `20260806092648-3b66f8d`; authenticated Owner UAT galeri nyata tetap residual sebelum `BUSINESS_READY` mass-scale |
+| Status | `CONFIRMED / HISTORICAL PRODUCTION`; source `555682bb749fc2c97a16172bbf09de2b6d8026d4`, backend release `20260806111019-555682b`; klausa ZIP dibuat client-side `DEPRECATED` oleh `DEC-049`, sedangkan threshold satu-dua direct download dan tiga atau lebih ZIP tetap berlaku sampai batas 100 |
 | Dokumen terkait | [SagaView Product](products/sagaview/PRODUCT.md), [SagaView Dossier](products/sagaview/DOSSIER.md), [SagaView Changelog](products/sagaview/CHANGELOG.md), [SagaView Ledger](products/sagaview/FEATURE_COVERAGE_LEDGER.md), [Gaps](GAPS.md) |
 
 ## DEC-047 - Nama produk menjadi AOGTIVITY dengan domain tetap

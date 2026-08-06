@@ -4,6 +4,29 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-08-06 - Server ZIP bulk export stability production
+
+- Klasifikasi: `CONFIRMED` melalui keputusan founder `DEC-049`.
+- Status: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; business readiness
+  mass-scale tetap `NEEDS CONFIRMATION`.
+- Backend source `ea432e977d02ada8f4b7289bfbd43c6e56941f9a`, release
+  `20260806122125-ea432e9`; Studio source
+  `3b66f8d5df3e34aba11c4eab2619cfe44efd06d7`, release
+  `20260806122126-3b66f8d`.
+- Rollback backend `20260806111019-555682b` dan Studio
+  `20260806111020-3b66f8d` dipertahankan.
+- ZIP tiga sampai 100 pilihan disiapkan server-side dengan tenant isolation,
+  tenant-neutral package, idempotent retry, TTL 30 menit, native download, dan
+  all-or-nothing delivery; satu atau dua pilihan tetap direct download.
+- Backend 917/917 dengan 10.964 assertion, Playwright 3/3, workload realistis
+  51 frame di atas 90 MB, backup/restore, rehearsal candidate+rollback, deploy
+  gate 6/6, canary/preservation, route/scheduler/ZIP module, live marker,
+  service/journal/header/public smoke, dan rollback lulus.
+- Tidak ada payment intent/QRIS baru, perubahan foto customer, pricing,
+  entitlement Growth 50/Pro 100, device/session, schema, atau source Studio.
+- Authenticated Owner UAT 51 frame nyata, retry, dan dua akun tetap residual
+  sebelum klaim `BUSINESS_READY` mass-scale.
+
 ## 2026-08-06 - ZIP bulk export Galeri Frame production
 
 - Klasifikasi: `CONFIRMED` melalui keputusan founder `DEC-048`.

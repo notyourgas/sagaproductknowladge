@@ -12,6 +12,28 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-06
 
+### SagaView server ZIP export stability production
+
+- Ringkasan: tiga sampai 100 pilihan Galeri Frame kini disiapkan sebagai satu
+  ZIP pada private server storage lalu diunduh sekali secara native; satu atau
+  dua pilihan tetap direct download.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
+  melalui `DEC-049`; business readiness mass-scale tetap `NEEDS CONFIRMATION`.
+- Source/release: `ea432e977d02ada8f4b7289bfbd43c6e56941f9a` /
+  `20260806122125-ea432e9`; Studio tetap source
+  `3b66f8d5df3e34aba11c4eab2619cfe44efd06d7` melalui
+  `20260806122126-3b66f8d`.
+- Rollback: backend `20260806111019-555682b` dan Studio
+  `20260806111020-3b66f8d`.
+- Gate: backend 917/917, Playwright 3/3, workload 51 frame di atas 90 MB,
+  encrypted backup/checksum/offsite round-trip/restore,
+  candidate+rollback rehearsal, deploy gate 6/6, atomic release,
+  single-device canary, payment/device preservation,
+  service/journal/security-header/public smoke, live route/marker, dan rollback
+  lulus.
+- File knowledge: SagaView product, dossier, changelog, ledger, master, gaps,
+  decisions, portfolio changelog, root changelog, dan sync status.
+
 ### SagaView ZIP bulk export S120 production
 
 - Ringkasan: satu atau dua pilihan Galeri Frame tetap direct download; tiga
