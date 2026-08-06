@@ -1,5 +1,22 @@
 # Portfolio Changelog
 
+## 2026-08-07 - SagaView S136 tenant-bound session candidate
+
+- Candidate backend `4642b4080f6056ef289c791d8997a63f8445f03b` berbasis
+  exact runtime S135 `85ec0f64`; mismatch tenant request versus credential
+  device sekarang ditolak `403` sebelum persistence.
+- Red-to-green `200 -> 403`, 29 focused backend test/544 assertion, 142 regresi
+  SagaView/1.692 assertion, Pint, Composer audit, serta Playwright disposable
+  2/2 pada 390x844 dan 1440x900 lulus.
+- Bukti database hanya memuat tenant sah; payload tetap metadata-only dan tidak
+  mengunggah foto customer. Production S135 tidak berubah.
+- Delivery `INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; fresh backup/restore, rehearsal kandidat+rollback,
+  deploy gate, dan post-release smoke tetap blocker promotion.
+- Support Hub regression sintetis 18 kategori kembali lulus 38/38 dengan 219
+  assertion; status AI tetap `AI_EVAL_VALIDATED /
+  AI_KNOWLEDGE_NOT_PROMOTED` tanpa perubahan prompt/model/production.
+
 ## 2026-08-07 - SagaView S135 workspace alignment production
 
 - `DEC-055` mengikat Owner dan Studio ke workspace target yang sama; stale
@@ -30,7 +47,8 @@
   deploy 6/6, canary/preservation, live smoke/marker/header, dan rollback lulus.
 - Tidak ada migration atau perubahan pricing, entitlement, payment,
   device/session, foto customer, maupun data tenant. Owner UAT 50-100 file nyata
-  pada dua akun tetap residual; S133 wajib direbase ke S134 sebelum promotion.
+  pada dua akun tetap residual; S133 kini digantikan candidate S136 berbasis
+  exact runtime S135.
 
 ## 2026-08-07 - SagaView S133 tenant-bound session candidate
 

@@ -12,23 +12,21 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-07T05:50:28+07:00 |
+| Waktu pembaruan terakhir | 2026-08-07T06:09:07+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `69d00777d4d21371e586ec1339ce4aa3358dfa7d` |
-| Informasi terakhir disinkronkan | SagaView S135 Owner dan Studio workspace alignment pada backend source/release `85ec0f64f08d7f80769480e0b7217cad55dd1591` / `20260806224422-85ec0f6` dan Studio source/release `07454264ad3c95d5fb5157135a333f6139bef054` / `20260806224441-0745426`; delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. |
+| Baseline sebelum pembaruan | `f83ec11efe8351394be4e0e7613dad2ef145db40` |
+| Informasi terakhir disinkronkan | SagaView S136 tenant-bound session candidate `4642b4080f6056ef289c791d8997a63f8445f03b`, berbasis exact runtime S135 `85ec0f64`; delivery `INTEGRATION_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Support Hub regression 18 kategori tetap `AI_EVAL_VALIDATED / AI_KNOWLEDGE_NOT_PROMOTED`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik fakta produk. Candidate S133 tetap terpisah, bercabang dari S122, dan wajib direbase ke S135 sebelum promotion. |
-| Error | Tidak ada error terbuka pada sinkronisasi S135. |
+| Konflik | Tidak ada konflik fakta produk. S133 digantikan S136 yang sudah berbasis exact runtime S135; production tetap S135. |
+| Error | Tidak ada error knowledge terbuka. Release S136 ditahan karena backup/rehearsal/deploy gate fresh belum dijalankan. |
 
 ## File yang berubah pada sinkronisasi ini
 
 - `products/sagaview/CHANGELOG.md`
-- `products/sagaview/PRODUCT.md`
-- `products/sagaview/DOSSIER.md`
 - `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
-- `DECISIONS.md`
 - `GAPS.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHANGELOG.md`
@@ -104,8 +102,9 @@ same-session/same-tenant; preflight/create/resume/polling fail-closed terhadap
 context invalid atau berubah. Build, regression, Playwright desktop+mobile,
 fresh encrypted backup/restore, candidate+rollback rehearsal, deploy 6/6,
 canary/preservation, live smoke/marker/header, dan rollback production lulus.
-Residual S134 diteruskan ke acceptance S135; candidate S133 sekarang wajib
-direbase ke atas S135 sebelum promotion.
+Residual S134 diteruskan ke acceptance S135. Candidate S133 telah digantikan
+S136 `4642b408` yang berbasis exact runtime S135 dan mengulang acceptance
+tenant-negative serta disposable UI/API/database.
 
 SagaView S135 Owner dan Studio workspace alignment `DEC-055` sudah
 `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` pada backend source/release
@@ -115,7 +114,8 @@ pertama; launcher/aktivasi wajib cocok dengan workspace target dan state/runtime
 Studio diisolasi per workspace. Acceptance, backup/restore, preflight,
 candidate+rollback rehearsal, deploy 6/6, preservation, marker live, rollback,
 dan post-rollback preflight lulus. Residual: authenticated Owner UAT dua
-workspace nyata. Candidate S133 wajib direbase ke atas S135 sebelum promotion.
+workspace nyata. Candidate S136 tetap belum production dan menunggu fresh
+backup/restore, rehearsal kandidat+rollback, deploy gate, serta smoke.
 
 Bulk export Galeri Frame `DEC-044` sudah `PRODUCTION_DEPLOYED /
 PRODUCTION_ACTIVATED`; klausa packaging-nya dikoreksi oleh `DEC-049`. Satu atau

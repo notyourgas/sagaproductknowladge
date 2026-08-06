@@ -4,6 +4,29 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-08-07 - S136 tenant-bound session current-baseline candidate
+
+- Klasifikasi: `CONFIRMED` dari exact source, red-to-green regression, dan
+  acceptance disposable public-safe.
+- Status: `INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; bukan `STAGING_READY`, `PRODUCTION_DEPLOYED`,
+  `PRODUCTION_ACTIVATED`, atau `BUSINESS_READY`.
+- Backend candidate `4642b4080f6056ef289c791d8997a63f8445f03b` dibangun
+  langsung di atas exact runtime production S135 `85ec0f64`; branch bersih,
+  pushed, dan tidak membawa migration.
+- Sebelum: payload `tenantId` yang berbeda dari tenant credential perangkat
+  masih mendapat `200` lalu memakai tenant perangkat. Sesudah: mismatch
+  ditolak `403` sebelum lisensi, session, event, atau persistence dibuat.
+- Red-to-green membuktikan `200 -> 403`; backend focused 29/29 dengan 544
+  assertion, regresi SagaView 142/142 dengan 1.692 assertion, Pint, dan
+  Composer audit lulus.
+- UI -> frontend -> HTTP API -> disposable SQLite -> response UI lulus 2/2
+  pada 390x844 dan 1440x900. Dua session hanya berada pada tenant sah,
+  masing-masing membawa delapan metadata foto dan total empat event; byte foto
+  customer tetap lokal.
+- Production tetap S135. Promotion menunggu fresh backup/restore, exact
+  candidate+rollback rehearsal, deploy gate, dan post-release smoke.
+
 ## 2026-08-07 - S135 Owner dan Studio workspace alignment production
 
 - Klasifikasi: `CONFIRMED` melalui keputusan founder `DEC-055`.
@@ -51,8 +74,8 @@ Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 - Tidak ada migration atau perubahan pricing, entitlement, payment,
   device/session, foto customer, maupun data tenant. Owner UAT 50-100 file nyata
   pada dua akun tetap residual.
-- Kandidat S133 tetap belum production dan wajib direbase ke atas S134 sebelum
-  promotion berikutnya.
+- Kandidat S133 telah digantikan S136 yang direbase ke exact runtime S135;
+  S136 tetap belum production dan wajib melewati seluruh release gate.
 
 ## 2026-08-07 - S133 tenant-bound session candidate
 

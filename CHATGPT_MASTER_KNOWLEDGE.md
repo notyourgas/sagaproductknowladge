@@ -626,16 +626,15 @@ rollback lulus. Tidak ada migration atau perubahan payment, subscription,
 device/session, foto customer, maupun data tenant. Authenticated Owner UAT dua
 workspace nyata tetap residual sebelum `BUSINESS_READY` mass-scale.
 
-Candidate S133 belum production. Backend source
-`6dff29ddba50fc04dd315458adcfed6cdeec7aa1` mengikat tenant permintaan session
-ke tenant device credential dan menolak mismatch `403` sebelum persistence.
-Studio candidate `573c599ea1808172d31fa32d0901bb3aed0e2d0d` menutup keyboard focus/label
-stepper dan region dekoratif. UI -> API -> disposable database -> response UI,
-idempotency, tenant/device-negative, metadata-only/no-upload, a11y, serta dua
-anchor viewport lulus. Statusnya `INTEGRATION_VALIDATED / LOCAL_VALIDATED /
-IMPLEMENTED_NOT_DEPLOYED`; jangan menjawab seolah sudah aktif di production.
-Candidate ini bercabang dari S122 dan wajib direbase ke atas S134 serta
-mengulang acceptance/release gate sebelum promotion berikutnya.
+Candidate S136 belum production. Backend source
+`4642b4080f6056ef289c791d8997a63f8445f03b` dibangun langsung di atas exact
+runtime S135 `85ec0f64` dan menolak mismatch tenant request versus credential
+device dengan `403` sebelum persistence. UI -> API -> disposable database ->
+response UI, idempotency, tenant/device-negative, metadata-only/no-upload, dan
+dua anchor viewport lulus. Statusnya `INTEGRATION_VALIDATED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; jangan menjawab seolah sudah
+aktif di production. Promotion masih membutuhkan fresh backup/restore,
+candidate+rollback rehearsal, deploy gate, dan post-release smoke.
 Implementasi rotate lama yang menukar W/H 90 derajat telah `DEPRECATED` oleh
 koreksi founder `DEC-036`. Perilaku production yang aktif adalah
 diterima adalah tahan ikon rotate lalu drag ke kiri/kanan agar slot mendapat

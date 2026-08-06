@@ -12,6 +12,24 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-07
 
+### SagaView S136 tenant-bound session current-baseline candidate
+
+- Ringkasan: payload session yang meminta tenant berbeda dari tenant credential
+  device sekarang ditolak `403` sebelum persistence, sehingga UI tidak lagi
+  menerima sukses palsu untuk workspace yang salah.
+- Klasifikasi: `CONFIRMED`; delivery `INTEGRATION_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- Source backend `4642b4080f6056ef289c791d8997a63f8445f03b`, berbasis
+  exact runtime S135 `85ec0f64`; production tidak berubah.
+- Gate: red-to-green `200 -> 403`, backend 29/544, regresi SagaView 142/1.692,
+  Playwright disposable 2/2 pada 390x844 dan 1440x900, Pint, Composer audit,
+  metadata-only/no-upload, dan tenant-negative lulus.
+- Blocker: fresh backup/restore, exact candidate+rollback rehearsal, deploy
+  gate, serta post-release smoke belum dijalankan untuk S136.
+- AI: Support Hub 18 kategori kembali lulus 38/38 dengan 219 assertion;
+  production/prompt/model tidak berubah dan status tetap
+  `AI_EVAL_VALIDATED / AI_KNOWLEDGE_NOT_PROMOTED`.
+
 ### SagaView S135 Owner dan Studio workspace alignment production
 
 - Ringkasan: server-auth tenant menguasai request Owner pertama; launcher dan

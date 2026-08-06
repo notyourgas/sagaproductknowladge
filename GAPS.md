@@ -241,11 +241,12 @@ ketika keputusan atau release baru menutup gap.
   dan akun tujuan terkontrol, termasuk rename/category, collision-safe key,
   save draft, dan publish terpisah, sebelum klaim `BUSINESS_READY` mass-scale.
 
-- `TODO`: session flow S133 sudah `INTEGRATION_VALIDATED / LOCAL_VALIDATED`
-  pada candidate `6dff29dd` + `573c599`, termasuk UI -> API -> disposable DB,
+- `TODO`: session flow S136 sudah `INTEGRATION_VALIDATED / LOCAL_VALIDATED`
+  pada candidate backend `4642b408` yang berbasis exact runtime S135, termasuk
+  red-to-green tenant mismatch `200 -> 403`, UI -> API -> disposable DB,
   idempotency, tenant/device-negative, dan metadata-only/no-upload. Production
-  kini S135; candidate S133 wajib direbase ke atas S135 dan mengulang acceptance
-  sebelum deploy. Lanjutkan physical Windows folder permission/quota/recovery,
+  tetap S135; S136 menunggu fresh backup/restore, candidate+rollback rehearsal,
+  deploy gate, dan post-release smoke. Lanjutkan physical Windows folder permission/quota/recovery,
   viewport 1280/1512/1920/2560/3840 dan zoom 125/150/200, lalu fitur berikutnya
   dari frame selection sampai owner dashboard/entitlement. Untuk ingest foto,
   editor, recovery, dan export, bukti wajib tetap memakai boundary local-first,
