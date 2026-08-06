@@ -782,7 +782,7 @@ Nama kanonik produk berubah dari AOGTICVITY menjadi AOGTIVITY pada 6 Agustus
 `20260806T093015Z`, dan Vercel `dpl_2ZfuhtLs4v8crJ1g3NnRyv8TSzU9`.
 Domain `aogticvities.fun` serta slug infrastruktur `aogticvity` tetap dipakai
 untuk kompatibilitas; AOGTICVITY hanya nama historis.
-Candidate source `78e725b972f2e6dfac0fa0255686cfa50a11722a` menggabungkan
+Candidate source `78e725ba0609744aa667292ff3331d08b3cf714a` menggabungkan
 visual event berdasarkan poster founder dan rundown owner-confirmed. Hierarchy
 utama adalah AOGTIVITY / 17 Agustus 2026 / Army of God Madiun, dengan palette
 lime, navy, magenta, halftone, petir, spark, koin, serta handheld-console frame;

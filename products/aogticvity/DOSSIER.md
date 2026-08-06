@@ -73,7 +73,7 @@ koin, serta handheld-console frame berasal dari referensi poster founder.
 Seluruh teks tetap Plus Jakarta Sans. Candidate lulus asset pipeline, 128
 unit/API, build, dan 64/64 UI/WCAG regression, tetapi masih
 `IMPLEMENTED_NOT_DEPLOYED` sampai visual UAT dan guarded release disetujui.
-Candidate gabungan `78e725b972f2e6dfac0fa0255686cfa50a11722a`
+Candidate gabungan `78e725ba0609744aa667292ff3331d08b3cf714a`
 menambahkan kontrak rundown owner-confirmed: registrasi ulang 11.30 WIB,
 Opening Tim & Yel-yel 12.00, Sing Song 12.15, lomba 1-5 mulai 12.30, Break
 15 menit setelah lomba ke-5, lomba 6-10 mulai 14.40, dan Awarding & Closing

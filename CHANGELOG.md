@@ -19,7 +19,7 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
   lalu Awarding & Closing.
 - Klasifikasi: `CONFIRMED` melalui `DEC-052` dan `DEC-053`; delivery
   `LOCAL_VALIDATED / REMOTE_BRANCH_SYNCED / IMPLEMENTED_NOT_DEPLOYED`.
-- Source: `78e725b972f2e6dfac0fa0255686cfa50a11722a`, branch
+- Source: `78e725ba0609744aa667292ff3331d08b3cf714a`, branch
   `codex/whatsapp-magic-link`; production tetap `e4c217b`.
 - Gate: typecheck, 129 unit/API, build, 64/64 UI/WCAG, acceptance urutan 14
   blok, migration 025 dengan audit dan rollback.

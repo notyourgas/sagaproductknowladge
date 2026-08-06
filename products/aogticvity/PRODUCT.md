@@ -293,7 +293,7 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:
 `PRODUCTION_ACTIVATED`. Business readiness: `BLOCKED`.
 
 - UI public/player/leader/admin/live aktif pada public Vercel delivery.
-- Candidate source `78e725b972f2e6dfac0fa0255686cfa50a11722a` menerjemahkan
+- Candidate source `78e725ba0609744aa667292ff3331d08b3cf714a` menerjemahkan
   poster AOGTIVITY menjadi event identity lime-navy-magenta dengan halftone,
   petir, spark, koin, handheld-console frame, serta hierarchy nama
   **AOGTIVITY / 17 Agustus 2026 / Army of God Madiun**. Candidate ini

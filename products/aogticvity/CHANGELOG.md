@@ -16,7 +16,7 @@ Nama lama dipertahankan sebagai provenance; status runtime harus eksplisit.
 - Jam lomba provisional menjadi 12.30, 12.50, 13.05, 13.20, 13.40, 14.40,
   15.00, 15.20, 15.35, dan 16.35; Awarding & Closing mulai 17.20 dan estimasi
   selesai 17.50 WIB. Durasi lomba/closing tetap editable oleh admin.
-- Source `78e725b972f2e6dfac0fa0255686cfa50a11722a`; migration 025 mengarsipkan jam
+- Source `78e725ba0609744aa667292ff3331d08b3cf714a`; migration 025 mengarsipkan jam
   sebelumnya, memperbarui jadwal MySQL, menaikkan version, dan menulis audit
   event. Down migration mengembalikan jam dari arsip.
 - Typecheck, 129 unit/API, build, 64/64 UI/WCAG, serta acceptance urutan 14

@@ -8,7 +8,7 @@
 - `DEC-053` menetapkan registrasi ulang 11.30 WIB, acara 12.00 WIB, Opening Tim
   & Yel-yel 15 menit, Sing Song 15 menit, lima lomba, Break 15 menit, lima
   lomba, lalu Awarding & Closing. Estimasi provisional selesai 17.50 WIB.
-- Candidate source `78e725b972f2e6dfac0fa0255686cfa50a11722a`; migration 025 audited,
+- Candidate source `78e725ba0609744aa667292ff3331d08b3cf714a`; migration 025 audited,
   versioned, preserving operator assignment, dan reversible.
 - Typecheck, 129 unit/API, build, 64/64 UI/WCAG, serta acceptance urutan 14
   blok lulus. Delivery `LOCAL_VALIDATED / REMOTE_BRANCH_SYNCED /
