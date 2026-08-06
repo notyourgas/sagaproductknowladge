@@ -5,7 +5,7 @@ Evidence status: production deployed + production activated; frame import-order,
 compact all-menu, workspace Session/Output/Izin Foto monitor besar, free drag
 rotation, pemisahan Simpan Draft/Publish Frame, limit Growth 50/Pro 100,
 portable frame template, bulk export, server ZIP untuk tiga sampai 100 pilihan,
-dan batch import template aktif di production.
+dan resumable server batch import sampai 100 template aktif di production.
 
 ## Tujuan dokumen
 
@@ -30,12 +30,12 @@ yang diverifikasi sampai 6 Agustus 2026.
   lalu memakai dua kartu sesi berdampingan pada QHD/4K di dalam batas 1400
   piksel. Ringkasan, filter, retry, cabut izin, dan workflow privacy tidak
   berubah.
-- Backend source `ea432e977d02ada8f4b7289bfbd43c6e56941f9a` aktif sebagai
-  release `20260806122125-ea432e9`; rollback
-  `20260806111019-555682b` dipertahankan.
+- Backend source `e850d6c7542c10e97309ca045ebe2f700a488ebf` aktif sebagai
+  release `20260806133407-e850d6c`; rollback
+  `20260806122125-ea432e9` dipertahankan.
 - Studio tetap memakai source `3b66f8d5df3e34aba11c4eab2619cfe44efd06d7`
-  melalui release `20260806122126-3b66f8d`; rollback
-  `20260806111020-3b66f8d` dipertahankan.
+  melalui release `20260806133407-3b66f8d`; rollback
+  `20260806122126-3b66f8d` dipertahankan.
 - Entitlement live memberi Growth 50 dan Pro 100 frame aktif. Harga, device,
   preset, offline grace, storage, laporan, support, payment, dan fair-use tidak
   berubah.
@@ -267,34 +267,41 @@ payment intent/QRIS baru atau perubahan foto customer. Authenticated Owner UAT
 51 frame nyata, retry, dan dua akun tetap residual sebelum klaim
 `BUSINESS_READY` mass-scale.
 
-## Batch import template Galeri Frame
+## Resumable server batch import Galeri Frame
 
-`CONFIRMED` melalui `DEC-045`, dengan delivery dan activation
+`CONFIRMED` melalui koreksi founder `DEC-050`, dengan delivery dan activation
 `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` pada source
-`1657c16ca3e05dd442db66ad11177f13edae1d37`, branch
-`codex/sagaview-batch-frame-import-s119`. Owner dapat membuka `Batch import`
-langsung dari Galeri Frame lalu drag-and-drop atau memilih sampai 100 file
-`.sagaview-frame`. Setiap paket diproses berurutan: strict template-v1
-validation, collision-safe frame key, category matching/fallback, create draft,
-lalu publish otomatis. Progress dan hasil per file tetap terlihat; file invalid
-tidak menghentikan file lain. Jika draft berhasil tetapi publish ditolak oleh
-permission, entitlement/limit aktif, storage, atau aturan backend, draft tetap
-tersedia untuk diedit dan dicoba kembali.
+`e850d6c7542c10e97309ca045ebe2f700a488ebf`, branch
+`codex/sagaview-resumable-batch-import-s121`. Owner dapat drag-and-drop sampai
+100 file `.sagaview-frame` atau satu ZIP. Browser mengirim chunk 4 MB dengan
+SHA-256, retry otomatis maksimal lima kali, dan resume saat kumpulan file yang
+sama dipilih ulang. Server menyimpan batch/item secara durable, memvalidasi
+template dan ZIP secara tenant-scoped, lalu memproses item secara serial melalui
+queue agar batch 50-100 frame tidak bergantung pada satu request browser.
 
-Stress regression 50 template valid dengan source key sama, satu JSON invalid,
-dan satu publish 422 menghasilkan 49 published, 1 draft, dan 1 failed. Focused
-Playwright mobile/tablet/desktop, regresi single import, production build, npm
-audit nol, backend 909/909 dengan 10.665 assertion, Frame Authoring 12/12 dengan
-45 assertion, dan diff check lulus. Tidak ada route, migration, pricing,
-entitlement, payment, device/session, foto customer, atau perubahan source
-Studio. Fresh encrypted backup/checksum/restore, disposable candidate dan
-rollback rehearsal, deploy gate 6/6, canary/payment/device preservation, atomic
-release, service/journal/security-header/public smoke, live marker, dan rollback
-target verification lulus. Production aktif pada backend
-`20260806092647-1657c16` dan Studio `20260806092648-3b66f8d`; rollback
-`20260806071707-7397954` / `20260806071733-3b66f8d` dipertahankan.
-Authenticated Owner UAT dengan 40-100 file nyata pada dua akun tetap residual
-sebelum klaim `BUSINESS_READY` mass-scale.
+File invalid tidak menghentikan item valid. Setiap item memiliki status yang
+dapat dipantau; draft dibuat sebelum percobaan publish. Publish yang ditolak
+oleh limit Growth 50/Pro 100, storage, atau aturan backend mempertahankan draft
+untuk koreksi. ZIP menolak path traversal, folder, entry selain template,
+duplikasi nama, lebih dari 100 entry, expanded size di atas 2 GB, dan rasio
+kompresi di atas 100x. Upload privat dipurge setelah 24 jam dan riwayat batch
+setelah tujuh hari.
+
+Acceptance mencakup Growth 51 menjadi 50 published + 1 draft, Pro 100 menjadi
+100 published, resume/idempotency, checksum/manifest mismatch, ZIP valid dan
+path traversal, corrupt partial, cross-tenant/auth, serta batas 101. Focused
+suite lulus 57 test dengan 1.033 assertion; full SagaView 134 test dengan 1.620
+assertion; Playwright 51-file termasuk satu retry 503, production build,
+encrypted backup/restore, candidate+rollback rehearsal, deploy gate 6/6,
+canary/payment/device preservation, atomic release, service/journal/header,
+public smoke, live marker, dan rollback verification lulus.
+
+Production aktif pada backend `20260806133407-e850d6c` dan Studio
+`20260806133407-3b66f8d`; rollback `20260806122125-ea432e9` /
+`20260806122126-3b66f8d` dipertahankan. Migration bersifat additive dan tidak
+mengubah pricing, entitlement, payment, device/session, foto customer, atau
+source Studio. Authenticated Owner UAT dengan 50-100 file nyata dan import
+lintas dua akun tetap residual sebelum klaim `BUSINESS_READY` mass-scale.
 
 ## Session completion dan privacy handoff
 

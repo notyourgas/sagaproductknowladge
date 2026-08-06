@@ -4,6 +4,33 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-08-06 - Resumable server batch import production
+
+- Klasifikasi: `CONFIRMED` melalui koreksi founder `DEC-050`.
+- Status: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; business readiness
+  mass-scale tetap `NEEDS CONFIRMATION`.
+- Backend source `e850d6c7542c10e97309ca045ebe2f700a488ebf`, release
+  `20260806133407-e850d6c`; Studio source
+  `3b66f8d5df3e34aba11c4eab2619cfe44efd06d7`, release
+  `20260806133407-3b66f8d`.
+- Rollback backend `20260806122125-ea432e9` dan Studio
+  `20260806122126-3b66f8d` dipertahankan.
+- Maksimal 100 `.sagaview-frame` atau satu ZIP dikirim sebagai chunk 4 MB
+  dengan SHA-256, retry otomatis, resume, durable batch/item, serial queue,
+  partial success, draft preservation saat quota/publish menolak, serta purge
+  upload 24 jam dan riwayat tujuh hari.
+- ZIP fail-closed untuk path traversal, folder, non-template entry, duplicate,
+  lebih dari 100 entry, expanded size lebih dari 2 GB, dan compression ratio
+  lebih dari 100x.
+- Growth 51 -> 50 published + 1 draft dan Pro 100 -> 100 published lulus;
+  focused 57 test/1.033 assertion, full SagaView 134 test/1.620 assertion,
+  Playwright 51-file dengan retry 503, build, encrypted backup/restore,
+  rehearsal, deploy gate 6/6, canary/preservation, service/journal/header,
+  public smoke, live marker, dan rollback lulus.
+- Migration additive tidak mengubah pricing, entitlement Growth 50/Pro 100,
+  payment, device/session, foto customer, atau source Studio. Authenticated
+  Owner UAT 50-100 file nyata dan dua akun tetap residual.
+
 ## 2026-08-06 - Server ZIP bulk export stability production
 
 - Klasifikasi: `CONFIRMED` melalui keputusan founder `DEC-049`.

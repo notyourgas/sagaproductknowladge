@@ -1,5 +1,23 @@
 # Portfolio Changelog
 
+## 2026-08-06 - SagaView resumable server batch import production
+
+- `DEC-050` memindahkan import 50-100 template ke upload chunk 4 MB yang dapat
+  retry/resume dan pemrosesan durable serial di server; menerima maksimal 100
+  `.sagaview-frame` atau satu ZIP dengan partial success dan draft preservation.
+- Source/release backend
+  `e850d6c7542c10e97309ca045ebe2f700a488ebf` /
+  `20260806133407-e850d6c`; Studio source/release
+  `3b66f8d5df3e34aba11c4eab2619cfe44efd06d7` /
+  `20260806133407-3b66f8d`; rollback `20260806122125-ea432e9` /
+  `20260806122126-3b66f8d`.
+- Growth 51 dan Pro 100, retry 503, tenant/auth/checksum/ZIP safety, focused
+  57/1.033, full SagaView 134/1.620, encrypted backup/restore, rehearsal,
+  deploy gate 6/6, canary/payment/device preservation, service/journal/header,
+  public smoke, live marker, dan rollback lulus.
+- Delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated Owner
+  UAT 50-100 file nyata dan dua akun tetap residual sebelum business-ready.
+
 ## 2026-08-06 - SagaView server ZIP export stability production
 
 - `DEC-049` memindahkan packaging tiga sampai 100 frame dari browser ke private

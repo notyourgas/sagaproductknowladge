@@ -12,6 +12,27 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-06
 
+### SagaView resumable server batch import production
+
+- Ringkasan: batch import maksimal 100 template atau satu ZIP kini memakai
+  chunk upload yang dapat retry/resume, durable server queue, partial success,
+  dan draft preservation saat publish ditolak.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
+  melalui `DEC-050`; business readiness tetap `NEEDS CONFIRMATION`.
+- Source/release: `e850d6c7542c10e97309ca045ebe2f700a488ebf` /
+  `20260806133407-e850d6c`; Studio tetap source
+  `3b66f8d5df3e34aba11c4eab2619cfe44efd06d7` melalui
+  `20260806133407-3b66f8d`.
+- Rollback: backend `20260806122125-ea432e9` dan Studio
+  `20260806122126-3b66f8d`.
+- Gate: Growth 51, Pro 100, focused 57/1.033, full SagaView 134/1.620,
+  Playwright 51-file dengan retry 503, build, encrypted backup/restore,
+  candidate+rollback rehearsal, deploy gate 6/6, canary/payment/device
+  preservation, service/journal/header/public smoke, live marker, dan rollback
+  lulus.
+- File knowledge: SagaView product, dossier, changelog, ledger, master,
+  decisions, portfolio changelog, root changelog, dan sync status.
+
 ### SagaView server ZIP export stability production
 
 - Ringkasan: tiga sampai 100 pilihan Galeri Frame kini disiapkan sebagai satu

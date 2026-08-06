@@ -23,6 +23,8 @@ SagaView berdasarkan runtime production aktif.
 - Bulk export Galeri Frame: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
 - Server ZIP bulk export untuk 3-100 pilihan:
   `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
+- Resumable server batch import sampai 100 template:
+  `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
 - Acceptance integrasi feature-by-feature: ledger dimulai konservatif dan
   belum membuktikan coverage penuh; lihat
   [Feature Coverage Ledger](FEATURE_COVERAGE_LEDGER.md).
@@ -195,33 +197,34 @@ device/session, foto customer, atau source Studio. Delivery dan activation
 Owner UAT 51 frame nyata, retry, dan dua akun tetap residual sebelum
 `BUSINESS_READY` mass-scale.
 
-Batch import Galeri Frame ditetapkan melalui `DEC-045` dan source
-`1657c16ca3e05dd442db66ad11177f13edae1d37`. Modal gallery menerima drag-and-drop
-atau multi-file picker sampai 100 template. Decoder single-import dipakai ulang
-untuk schema v1, magic-byte PNG/WebP, batas 15 MB, source dimensions, SHA-256
-artwork, metadata checksum, dan slot geometry. Template valid memperoleh key
-unik lintas batch, category source dicocokkan pada target atau fallback ke
-kategori pertama/Basic, lalu draft dibuat dan publish dicoba secara berurutan.
-State per file membedakan queued, validating, publishing, published, draft, dan
-failed. Invalid template tidak menghentikan batch; publish rejection
-mempertahankan draft yang sudah tersimpan.
+Koreksi founder `DEC-050` mengganti batch import yang bergantung pada proses
+browser menjadi resumable server batch import pada source
+`e850d6c7542c10e97309ca045ebe2f700a488ebf`. Modal menerima maksimal 100 file
+`.sagaview-frame` atau satu ZIP. Browser mengirim chunk 4 MB dengan SHA-256,
+retry otomatis maksimal lima kali, dan resume melalui batch ID/manifest saat
+kumpulan file yang sama dipilih ulang. Server menyimpan batch dan item secara
+durable, memvalidasi tenant/capability, template, checksum, magic-byte, dimensi,
+metadata, serta ZIP, lalu memproses item secara serial melalui queue.
 
-Scenario 50 template valid dengan key sumber sama, satu invalid JSON, dan satu
-publish 422 membuktikan 50 draft request, 50 publish request, 49 published, 1
-draft, 1 failed, key unik, category fallback `basic`, dan `active=true`.
-Responsive Playwright tiga viewport, regresi import lama, build, npm audit nol,
-full backend 909/909 dengan 10.665 assertion, Frame Authoring 12/12 dengan 45
-assertion, dan diff check lulus. Implementasi tidak menambah route/migration dan
-tidak mengubah pricing, entitlement, payment, device/session, foto customer,
-atau source Studio. Delivery dan activation
-`PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` melalui backend release
-`20260806092647-1657c16` dan Studio release `20260806092648-3b66f8d`. Fresh
-encrypted backup/checksum/restore, candidate dan rollback rehearsal, deploy gate
-6/6, canary/payment/device preservation, atomic release, service/journal,
-security-header/public smoke, live marker, serta rollback target verification
-lulus. Rollback backend `20260806071707-7397954` dan Studio
-`20260806071733-3b66f8d` dipertahankan. Authenticated Owner UAT dengan 40-100
-file nyata pada dua akun tetap residual sebelum `BUSINESS_READY` mass-scale.
+Invalid/corrupt/cross-tenant item tidak membatalkan item valid. Draft dibuat
+sebelum publish; quota overflow mempertahankan draft. ZIP menolak folder, path
+traversal, non-template entry, nama duplikat, lebih dari 100 entry, expanded
+size di atas 2 GB, dan compression ratio di atas 100x. Upload privat dipurge
+setelah 24 jam dan riwayat batch setelah tujuh hari.
+
+Acceptance membuktikan Growth 51 menghasilkan 50 published + 1 draft dan Pro
+100 menghasilkan 100 published. Resume/idempotency, manifest mismatch, ZIP
+valid/path traversal, corrupt partial, cross-tenant/auth, serta batas 101 ikut
+lulus. Focused suite 57 test/1.033 assertion, full SagaView 134 test/1.620
+assertion, Playwright 51-file dengan retry 503, build, encrypted backup/restore,
+rehearsal candidate+rollback, deploy gate 6/6, canary/payment/device
+preservation, service/journal/header/public smoke, live marker, dan rollback
+lulus. Production aktif pada backend `20260806133407-e850d6c` dan Studio
+`20260806133407-3b66f8d`; rollback `20260806122125-ea432e9` /
+`20260806122126-3b66f8d` dipertahankan. Migration additive tidak mengubah
+pricing, entitlement, payment, device/session, foto customer, atau source
+Studio. Authenticated Owner UAT 50-100 file nyata dan dua akun tetap residual
+sebelum `BUSINESS_READY` mass-scale.
 
 Mulai sesi production memakai checklist perangkat, paket, folder, frame, dan
 output serta satu CTA kontekstual 48 px. Utility cloud/recovery yang sehat

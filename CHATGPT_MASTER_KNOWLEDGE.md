@@ -555,22 +555,28 @@ dan marker, serta rollback lulus. Production aktif pada backend
 `20260806111019-555682b` / `20260806111020-3b66f8d` dipertahankan. Authenticated
 Owner UAT 51 frame nyata, retry, dan dua akun tetap residual sebelum
 `BUSINESS_READY` mass-scale.
-Keputusan founder `DEC-045` menambahkan batch import template langsung dari
-Galeri Frame dengan status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
-Source `1657c16ca3e05dd442db66ad11177f13edae1d37` menerima drag-and-drop atau
-multi-file picker sampai 100 `.sagaview-frame`, lalu memvalidasi, membuat key
-unik, mencocokkan/fallback kategori, menyimpan draft, dan mencoba publish setiap
-file secara berurutan. File invalid tidak menghentikan batch; publish rejection
-mempertahankan draft. Stress scenario 50 template valid + satu invalid JSON +
-satu publish 422 menghasilkan 49 published, 1 draft, dan 1 failed, dengan
-responsive Playwright, build/audit, backend 909/909, serta Frame Authoring 12/12
-lulus. Fresh encrypted backup/restore, candidate/rollback rehearsal, deploy gate
-6/6, canary/payment/device preservation, service/journal/security-header/public
-smoke, live marker, dan rollback target verification lulus. Production aktif
-pada backend `20260806092647-1657c16` dan Studio `20260806092648-3b66f8d`;
-rollback `20260806071707-7397954` / `20260806071733-3b66f8d` dipertahankan.
-Authenticated Owner UAT 40-100 file nyata pada dua akun tetap residual sebelum
-`BUSINESS_READY` mass-scale.
+Koreksi founder `DEC-050` mengaktifkan resumable server batch import dengan
+status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Source
+`e850d6c7542c10e97309ca045ebe2f700a488ebf` menerima maksimal 100
+`.sagaview-frame` atau satu ZIP. Browser mengirim chunk 4 MB dengan SHA-256,
+maksimal lima retry otomatis, dan resume ketika kumpulan file yang sama dipilih
+ulang. Server menyimpan batch/item secara durable dan memproses item serial
+melalui queue. File invalid tidak menghentikan item valid; publish rejection
+atau limit mempertahankan draft.
+
+ZIP fail-closed terhadap path traversal, folder, entry non-template/duplikat,
+lebih dari 100 entry, expanded size di atas 2 GB, dan compression ratio di atas
+100x. Upload privat dipurge 24 jam dan riwayat tujuh hari. Growth 51 menghasilkan
+50 published + 1 draft dan Pro 100 menghasilkan 100 published; focused 57
+test/1.033 assertion, full SagaView 134/1.620, Playwright 51-file dengan retry
+503, build, backup/restore, rehearsal, deploy gate 6/6, canary/payment/device
+preservation, service/journal/header/public smoke, live marker, dan rollback
+lulus. Production aktif pada backend `20260806133407-e850d6c` dan Studio
+`20260806133407-3b66f8d`; rollback `20260806122125-ea432e9` /
+`20260806122126-3b66f8d` dipertahankan. Migration additive tidak mengubah
+pricing, entitlement Growth 50/Pro 100, payment, device/session, foto customer,
+atau source Studio. Authenticated Owner UAT 50-100 file nyata dan dua akun tetap
+residual sebelum `BUSINESS_READY` mass-scale.
 Implementasi rotate lama yang menukar W/H 90 derajat telah `DEPRECATED` oleh
 koreksi founder `DEC-036`. Perilaku production yang aktif adalah
 diterima adalah tahan ikon rotate lalu drag ke kiri/kanan agar slot mendapat

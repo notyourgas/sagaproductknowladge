@@ -183,14 +183,17 @@ ketika keputusan atau release baru menutup gap.
   `BUSINESS_READY`: authenticated Owner UAT memakai 51 frame nyata, dua akun,
   dan live retry.
 
-- `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: `DEC-045` batch import Galeri
-  Frame aktif melalui source `1657c16ca3e05dd442db66ad11177f13edae1d37`,
-  backend release `20260806092647-1657c16`, dan Studio release
-  `20260806092648-3b66f8d`. Rollback `20260806071707-7397954` /
-  `20260806071733-3b66f8d` dipertahankan. Residual sebelum `BUSINESS_READY`:
-  authenticated Owner UAT 40-100 file nyata pada dua akun termasuk invalid
-  template, category fallback/edit, key collision, tenant-negative,
-  plan-limit/storage rejection, retry/idempotency, dan draft recovery.
+- `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: koreksi `DEC-050` mengaktifkan
+  resumable server batch import melalui source
+  `e850d6c7542c10e97309ca045ebe2f700a488ebf`, backend release
+  `20260806133407-e850d6c`, dan Studio release `20260806133407-3b66f8d`.
+  Rollback `20260806122125-ea432e9` / `20260806122126-3b66f8d`
+  dipertahankan. Growth 51, Pro 100, retry/resume/idempotency, corrupt/invalid,
+  tenant/auth-negative, checksum, ZIP safety, quota draft preservation,
+  backup/restore, rehearsal, canary/preservation, live marker, dan public smoke
+  lulus. Residual sebelum `BUSINESS_READY`: authenticated Owner UAT 50-100 file
+  nyata pada dua akun termasuk reconnect/resume nyata, category edit,
+  plan-limit/storage rejection, dan draft recovery.
 
 - `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: `DEC-044` aktif melalui source
   `73979542ceeb8fc11e658c7d27346ca983dc163f`, backend release

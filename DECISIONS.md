@@ -231,6 +231,20 @@ keputusan pengganti.
 | Status | `CONFIRMED`; klausa nama produk AOGTICVITY `DEPRECATED` oleh `DEC-047`, sedangkan kontrak master recap, 8 tim, 10 lomba, durasi editable, dan roster seluruh tim tetap berlaku |
 | Dokumen terkait | [AOGTICVITY Product](products/aogticvity/PRODUCT.md), [AOGTICVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTICVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |
 
+## DEC-050 - Batch import SagaView memakai upload resumable dan antrean server
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-06 |
+| Topik | Keamanan dan ketahanan batch import 50-100 template frame SagaView |
+| Keputusan | Batch import menerima maksimal 100 `.sagaview-frame` atau satu ZIP. Upload harus memakai chunk, checksum, retry, dan resume; server menyimpan batch/item secara durable, memprosesnya serial melalui queue, serta memperlihatkan hasil per item. File invalid tidak membatalkan item valid, dan publish yang ditolak mempertahankan draft. ZIP harus fail-closed terhadap traversal, folder, entry non-template/duplikat, expanded size berlebih, dan compression bomb. |
+| Alasan | Import 50-100 frame tidak boleh bergantung pada satu request/browser session atau mengalami kegagalan jaringan serupa export ZIP sebelumnya. Operator juga harus dapat melanjutkan pekerjaan tanpa mengulang seluruh batch. |
+| Alternatif yang dipertimbangkan | Mempertahankan proses sequential di browser; satu upload/request besar tanpa resume; all-or-nothing import; auto-publish tanpa draft preservation; menaikkan timeout server saja. |
+| Dampak | Backend menambah schema batch/item additive, endpoint upload/status tenant-scoped, queue serial, TTL purge, dan rate limit. Browser mengirim chunk 4 MB dengan SHA-256 dan maksimal lima retry otomatis. Growth tetap 50, Pro tetap 100; pricing, payment, device/session, foto customer, dan source Studio tidak berubah. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; source `e850d6c7542c10e97309ca045ebe2f700a488ebf`, backend release `20260806133407-e850d6c`, Studio release `20260806133407-3b66f8d`; authenticated Owner UAT 50-100 file nyata dan dua akun tetap residual |
+| Dokumen terkait | [SagaView Product](products/sagaview/PRODUCT.md), [SagaView Dossier](products/sagaview/DOSSIER.md), [SagaView Changelog](products/sagaview/CHANGELOG.md), [SagaView Ledger](products/sagaview/FEATURE_COVERAGE_LEDGER.md), [Gaps](GAPS.md) |
+
 ## DEC-049 - ZIP bulk export SagaView disiapkan server-side
 
 | Field | Isi |

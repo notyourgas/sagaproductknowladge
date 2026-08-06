@@ -12,11 +12,11 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-06T19:31:11+07:00 |
+| Waktu pembaruan terakhir | 2026-08-06T20:43:16+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `2ca087993528d15df4fb9defc04a2b4086699b8c` |
-| Informasi terakhir disinkronkan | SagaView server ZIP bulk export stability production pada source `ea432e977d02ada8f4b7289bfbd43c6e56941f9a`, backend release `20260806122125-ea432e9`, dan Studio `20260806122126-3b66f8d`. |
+| Baseline sebelum pembaruan | `56b1fc867a9ce17d01063f3ca33d885b03d76027` |
+| Informasi terakhir disinkronkan | SagaView resumable server batch import production pada source `e850d6c7542c10e97309ca045ebe2f700a488ebf`, backend release `20260806133407-e850d6c`, dan Studio `20260806133407-3b66f8d`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
 | Konflik | Tidak ada pada sinkronisasi SagaView; perubahan AOGTIVITY lokal yang tidak terkait dipertahankan dan tidak dimasukkan ke commit ini. |
 | Error | Tidak ada pada release SagaView; authenticated Owner UAT galeri nyata tetap residual dan bukan bukti business readiness. |
@@ -76,10 +76,10 @@ aktif dan menyelesaikan satu booking nyata terkontrol sebelum klaim
 
 SagaView compact all-menu, workspace Session/Output/Izin Foto monitor besar,
 free drag rotation, pemisahan draft/publish, bulk frame export, server ZIP untuk
-tiga sampai 100 pilihan, dan batch import aktif secara kumulatif pada Studio
-`20260806122126-3b66f8d`; rollback `20260806111020-3b66f8d` dipertahankan.
-Backend aktif `20260806122125-ea432e9`; rollback
-`20260806111019-555682b`. Authenticated
+tiga sampai 100 pilihan, dan resumable server batch import aktif kumulatif pada
+Studio `20260806133407-3b66f8d`; rollback `20260806122126-3b66f8d`
+dipertahankan. Backend aktif `20260806133407-e850d6c`; rollback
+`20260806122125-ea432e9`. Authenticated
 Owner visual UAT dengan frame miring dan
 publish frame nyata serta Founding Studio Pilot tetap dibutuhkan sebelum klaim
 `BUSINESS_READY` mass-scale.
@@ -91,13 +91,13 @@ melalui source/release `ea432e97` / `20260806122125-ea432e9`. Residualnya
 adalah authenticated Owner UAT dengan 51 frame nyata, dua akun, serta live
 retry sebelum coverage penuh.
 
-Batch import Galeri Frame `DEC-045` sudah `PRODUCTION_DEPLOYED /
-PRODUCTION_ACTIVATED` pada source `1657c16c`, backend
-`20260806092647-1657c16`, dan Studio `20260806092648-3b66f8d`. Scenario 50
-template valid, invalid continuation, publish rejection preserving draft, tiga
-viewport, encrypted backup/restore, rehearsal candidate/rollback, canary, live
-marker, security header, dan public smoke lulus. Residual: authenticated Owner
-UAT 40-100 file nyata pada dua akun sebelum `BUSINESS_READY` mass-scale.
+Resumable server batch import Galeri Frame `DEC-050` sudah
+`PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` pada source `e850d6c7`, backend
+`20260806133407-e850d6c`, dan Studio `20260806133407-3b66f8d`. Growth 51,
+Pro 100, chunk retry/resume, tenant/auth/checksum/ZIP safety, partial success,
+encrypted backup/restore, rehearsal candidate/rollback, canary, live marker,
+security header, dan public smoke lulus. Residual: authenticated Owner UAT
+50-100 file nyata pada dua akun sebelum `BUSINESS_READY` mass-scale.
 
 SagaBook Admin Changelog S126 aktif melalui source `e20c0ba3`, release
 `20260806072249-e20c0ba`, rollback `20260806063717-cb8ef55`. Authenticated
