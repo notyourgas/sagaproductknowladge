@@ -203,6 +203,14 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
   optimistic lock/read-after-write serta audit log lulus. Irisan status/write
   cabang `INTEGRATION_VALIDATED`; selector/filter cabang lintas role dan route
   tetap dilanjutkan feature-by-feature.
+- Report branch context S125 aktif pada source
+  `cb8ef55a33ad1399c9383d027343a412752fc9ff`, release immutable
+  `20260806063717-cb8ef55`, dengan rollback `20260806053037-f6988cb`.
+  `/admin/reports` kini memfilter ringkasan, analitik, tabel, dan closing state
+  menurut cabang terpilih; write finance/closing membawa `branchId`, diblok
+  saat konteks cabang tidak konkret, serta mempunyai double-submit guard.
+  Irisan ini `INTEGRATION_VALIDATED`; Payment Monitor, pagination/export, dan
+  reconciliation provider tetap dilanjutkan feature-by-feature.
 - Website booking satu tenant trial diaktifkan hanya setelah pre-publish
   readiness 100, lalu post-activation setup/pilot readiness dan HTTP publik
   lulus. Release gate production 10/10, backup terenkripsi/checksum/disposable

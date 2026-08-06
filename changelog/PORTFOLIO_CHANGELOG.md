@@ -1,5 +1,21 @@
 # Portfolio Changelog
 
+## 2026-08-06 - SagaBook report branch context S125 production
+
+- `/admin/reports` tidak lagi menampilkan total/baris cabang lain setelah
+  selector berpindah; write add-on, expense, dan closing kini membawa
+  `branchId`, fail-closed tanpa cabang konkret, dan mempunyai double-submit
+  guard.
+- Source/release `cb8ef55a33ad1399c9383d027343a412752fc9ff` /
+  `20260806063717-cb8ef55`; rollback `20260806053037-f6988cb`.
+- Full backend 962/962 dengan 11.038 assertion, focused browser 4 pass/2
+  intentional skip, viewport/zoom, S109 12/12, build/audit, backup/restore,
+  service/manifest, dan public smoke 4/4 lulus.
+- Irisan branch context laporan `INTEGRATION_VALIDATED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; Payment Monitor,
+  pagination/export, dan reconciliation provider belum ditutup. Produk belum
+  `BUSINESS_READY`; subscription activation tidak berubah.
+
 ## 2026-08-06 - AOGTICVITY Other Region taxonomy production
 
 - Kategori utama `Other Region` dengan `AOG Ponorogo` dan `AOG Magetan` kini

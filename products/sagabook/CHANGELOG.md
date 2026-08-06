@@ -4,6 +4,32 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-06 - Report branch context production S125
+
+- Klasifikasi: `CONFIRMED`; source
+  `cb8ef55a33ad1399c9383d027343a412752fc9ff` aktif sebagai release immutable
+  `20260806063717-cb8ef55`; rollback `20260806053037-f6988cb` dipertahankan.
+- Before: memilih Cabang Dago pada `/admin/reports` masih menampilkan total dan
+  baris cabang lain, sementara write add-on/expense/closing tidak selalu
+  membawa `branchId`. After: seluruh ringkasan, analitik, tabel, dan state
+  closing mengikuti cabang terpilih; write tanpa cabang konkret diblok dan
+  double-submit dijaga.
+- Peta integrasi: `/admin/reports` -> frontend store/form ->
+  `POST /api/admin/addFinanceTransactionFn` atau
+  `POST /api/admin/closeFinanceDayFn` -> controller/service -> transaksi
+  tenant/branch-scoped -> response/refetch -> UI. Happy read-after-write,
+  failure/permission, cross-branch, dan append-only idempotency lulus.
+- Gate: full backend 962/962 dengan 11.038 assertion; focused Playwright 4
+  pass/2 intentional skip; viewport 390 sampai 2560 dan zoom 100/125/150/200,
+  forced-colors/reduced-motion, storefront S109 12/12, typecheck, build, design
+  26/0, dependency audit nol, backup/restore, manifest, service, serta public
+  smoke 4/4 lulus.
+- Irisan branch-context laporan `UIUX_VALIDATED / INTEGRATION_VALIDATED /
+  LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Payment
+  Monitor, pagination/export, reconciliation provider, dan fitur lain masih
+  bertahap; produk belum `BUSINESS_READY`. Subscription tenant tetap di-skip
+  dan website booking yang aktif tidak dinonaktifkan.
+
 ## 2026-08-06 - Tenant/cabang status dan isolation production S124
 
 - Klasifikasi: `CONFIRMED`; source

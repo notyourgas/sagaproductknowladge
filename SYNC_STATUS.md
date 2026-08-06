@@ -12,38 +12,41 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-06T13:04:57+07:00 |
+| Waktu pembaruan terakhir | 2026-08-06T13:40:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `21ca00a` |
-| Informasi terakhir disinkronkan | AOGTICVITY menambah kategori `Other Region` dengan `AOG Ponorogo` dan `AOG Magetan`; source runtime `5a2d3ef`, Hostinger `20260806T055642Z`, Vercel `dpl_4RtjNcViWkxN3fZSTZ15VWiumy5G`, migration 024. |
+| Baseline sebelum pembaruan | `47ec68a` |
+| Informasi terakhir disinkronkan | SagaBook S125 memperbaiki branch context `/admin/reports`; source `cb8ef55`, release `20260806063717-cb8ef55`, rollback `20260806053037-f6988cb`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik informasi; kategori Teen/Youth, record legacy, dan blocker UAT yang sudah ada dipertahankan. |
-| Error | Tidak ada error release baru; public taxonomy smoke 11/11 dan browser mobile tanpa overflow lulus. |
+| Konflik | Tidak ada konflik informasi; kontrak storefront mobile-only, aktivasi subscription yang di-skip, dan ledger feature-by-feature dipertahankan. |
+| Error | Tidak ada error release baru; public smoke SagaBook 4/4 dan service/queue health lulus. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/aogticvity/PRODUCT.md`
-- `products/aogticvity/DOSSIER.md`
-- `products/aogticvity/CHANGELOG.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
 - `GAPS.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
-- `DECISIONS.md`
 - `CHANGELOG.md`
 - `SYNC_STATUS.md`
 
 ## Item menunggu konfirmasi
 
 Ledger integrasi SagaBook dan SagaView masih bertahap. Auth/session SagaBook
-S123 dan irisan status/write cabang S124 sudah `INTEGRATION_VALIDATED`.
-Residual tenant/cabang adalah selector/filter lintas role/route, stale refetch,
-serta delete dependency/recovery; residual auth adalah expiry idle, revocation
-lintas device, dan UI rate-limit 429. Status
+S123, status/write cabang S124, dan branch-context `/admin/reports` S125 sudah
+`INTEGRATION_VALIDATED`. Residual tenant/cabang adalah selector/filter lintas
+role/route, stale refetch, serta delete dependency/recovery. Residual report
+adalah Payment Monitor, pagination/filter/export, reconciliation provider,
+stale multi-tab, dan closing concurrency; residual auth adalah expiry idle,
+revocation lintas device, dan UI rate-limit 429. Status
 `INTEGRATION_VALIDATED` hanya diberikan setelah happy path, failure/retry,
 permission/tenant-negative, dan data integrity fitur terkait memiliki bukti
-fresh. Prioritas berikutnya: tutup tenant/cabang lalu katalog; SagaView
-auth/device/session, local ingest, lalu session flow dengan no-upload guarantee.
+fresh. Prioritas berikutnya: tutup tenant/cabang route lain lalu katalog;
+SagaView auth/device/session, local ingest, lalu session flow dengan no-upload
+guarantee.
 
 AOGTICVITY tetap menunggu assignment empat peserta approved, PIC untuk sepuluh
 lomba, roster publish/lock, audited reconciliation record lama, valid-link/

@@ -33,15 +33,17 @@ ketika keputusan atau release baru menutup gap.
 
 ### SagaBook
 
-- `TODO`: auth/session S123 serta status/write cabang S124 sudah
-  `INTEGRATION_VALIDATED` dan aktif di production. Lanjutkan tenant/cabang pada
-  selector/filter lintas role/route, stale refetch, serta delete dependency;
-  setelah itu katalog, availability, booking, payment, admin/task,
-  WhatsApp/reminder, report/reconciliation, sampai template
-  draft/preview/publish. Residual auth/session adalah expiry idle, revocation
-  lintas device, dan UI rate-limit 429. UI/UX S122 sudah production, tetapi
-  integrasi template belum boleh disebut `INTEGRATION_VALIDATED` sebelum
-  happy, failure/retry, double-submit, dan tenant-negative terbukti.
+- `TODO`: auth/session S123, status/write cabang S124, serta branch-context
+  `/admin/reports` S125 sudah `INTEGRATION_VALIDATED` dan aktif di production.
+  Residual tenant/cabang adalah selector/filter lintas role/route, stale
+  refetch, serta delete dependency. Residual report adalah Payment Monitor,
+  pagination/filter/export, reconciliation provider, stale multi-tab, dan
+  closing concurrency. Setelah itu lanjutkan katalog, availability, booking,
+  payment, admin/task, WhatsApp/reminder, dan template draft/preview/publish.
+  Residual auth/session adalah expiry idle, revocation lintas device, dan UI
+  rate-limit 429. UI/UX S122 sudah production, tetapi integrasi template belum
+  boleh disebut `INTEGRATION_VALIDATED` sebelum happy, failure/retry,
+  double-submit, dan tenant-negative terbukti.
 
 - `CONFIRMED`: batas paket, trial guardrail, policy default
   refund/reschedule/cancel, retention, offboarding, dan support SLA sudah

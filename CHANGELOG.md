@@ -12,6 +12,28 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-06
 
+### SagaBook report branch context S125 production
+
+- Ringkasan: scope `/admin/reports` kini mengikuti cabang terpilih untuk
+  ringkasan, analitik, tabel, dan closing; write finance/closing membawa
+  `branchId`, fail-closed, dan dijaga dari double-submit.
+- Alasan: selector Cabang Dago sebelumnya masih dapat menampilkan nilai dan
+  baris cabang lain serta write kehilangan konteks cabang.
+- Produk/area: SagaBook report UI/store, finance transaction, closing,
+  branch/tenant permission, database read-after-write, release, dan rollback.
+- Klasifikasi: `CONFIRMED`; irisan `/admin/reports` `UIUX_VALIDATED /
+  INTEGRATION_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
+- Source/release: `cb8ef55a33ad1399c9383d027343a412752fc9ff` /
+  `20260806063717-cb8ef55`; rollback `20260806053037-f6988cb`.
+- Gate: backend 962/962 dengan 11.038 assertion, focused browser, matriks
+  viewport/zoom, storefront S109, build/audit, backup/restore, service,
+  manifest, dan public smoke 4/4 lulus.
+- Production berubah: ya pada branch context report dan write finance/closing;
+  tidak ada migration. Subscription tenant dan status website booking aktif
+  tidak diubah. Produk keseluruhan belum `BUSINESS_READY`.
+- File knowledge: product, dossier, changelog, ledger SagaBook, master, gaps,
+  portfolio/root changelog, dan sync status.
+
 ### AOGTICVITY Other Region taxonomy production
 
 - Ringkasan: menambahkan kategori utama `Other Region` dengan subcategory `AOG

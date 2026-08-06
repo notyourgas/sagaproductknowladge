@@ -170,6 +170,18 @@ backup/checksum/disposable restore, DB audit, service, manifest, dan public
 smoke lulus. Subscription tidak diaktifkan dan website booking aktif tidak
 dinonaktifkan.
 
+Report branch context S125 pada source
+`cb8ef55a33ad1399c9383d027343a412752fc9ff` aktif sebagai release
+`20260806063717-cb8ef55`; rollback `20260806053037-f6988cb`. Selector
+`/admin/reports` kini memfilter booking, transaksi, paket, total, analitik,
+tabel, dan closing state menurut cabang. Add-on, expense, dan closing
+menyertakan `branchId`, menolak konteks all-branch untuk write, menjaga
+double-submit, dan merender response/refetch backend aktual. Focused browser 4
+pass/2 intentional skip, backend 962/962 dengan 11.038 assertion, matriks
+viewport/zoom, forced-colors/reduced-motion, storefront S109 12/12, build,
+audit, backup/restore, service, dan public smoke 4/4 lulus. Payment Monitor,
+pagination/export, stale multi-tab, dan reconciliation provider belum ditutup.
+
 Candidate customer request terbaru adalah source kumulatif
 `b2b638cece4e9b18720a5367c05dcda3bb86ecf6` pada
 `codex/s118-sagabook-request-recovery`, berstatus `LOCAL_VALIDATED /

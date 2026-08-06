@@ -93,18 +93,21 @@ browser production mobile/desktop. Website booking tenant trial diaktifkan
 setelah pre-publish readiness 100; rollback `20260803194351-d70fc1e` tersedia.
 Business readiness menunggu copy alamat final dan booking nyata terkontrol.
 
-Release SagaBook terbaru adalah S124 source
-`f6988cb945c5ca224015d7fecbc94e81c535fc60`, release
-`20260806053037-f6988cb`, rollback `20260806043833-a912522`. S123 sebelumnya
-menutup auth/session. S124 menutup irisan status/write cabang: double-submit
-guard, pending/error/retry aksesibel, target 44 piksel, response backend aktual,
-optimistic lock/read-after-write, audit save, staff 403, serta write lintas
-tenant 404 generik tanpa perubahan data. Editor Template Booking S122 dan
-storefront satu canvas mobile maksimum 460 piksel tetap dipertahankan. Sesuai
-`DEC-041`, selector/filter cabang lintas role/route dan fitur berikutnya tetap
-discreen feature-by-feature; satu irisan tervalidasi tidak berarti integrasi
-seluruh produk selesai. SagaView tetap local-first untuk foto, editor,
-recovery, dan export. Subscription activation tidak berubah.
+Release SagaBook terbaru adalah S125 source
+`cb8ef55a33ad1399c9383d027343a412752fc9ff`, release
+`20260806063717-cb8ef55`, rollback `20260806053037-f6988cb`. S123 menutup
+auth/session dan S124 menutup irisan status/write cabang. S125 menutup irisan
+branch context `/admin/reports`: ringkasan, analitik, tabel, dan closing state
+mengikuti cabang terpilih; write finance/closing membawa `branchId`, diblok
+saat konteks tidak konkret, dan dijaga dari double-submit. Staff/cross-branch
+ditolak tanpa perubahan data dan response/refetch backend aktual dirender UI.
+Editor Template Booking S122 dan storefront satu canvas mobile maksimum 460
+piksel tetap dipertahankan. Sesuai `DEC-041`, Payment Monitor,
+pagination/export, reconciliation provider, selector/filter route lain, dan
+fitur berikutnya tetap discreen feature-by-feature; satu irisan tervalidasi
+tidak berarti integrasi seluruh produk selesai. SagaView tetap local-first
+untuk foto, editor, recovery, dan export. Subscription activation tidak
+berubah.
 
 Update terbaru: Support & Recovery Center production. Owner/admin dapat
 bertanya, melakukan human handoff, melanjutkan tiket, mengakses account
