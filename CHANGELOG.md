@@ -12,6 +12,25 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-06
 
+### AOGTICVITY live standings production
+
+- Ringkasan: standing resmi sekarang server-authoritative dan tersinkron lintas
+  perangkat dari result draft-review-publish-correct yang aman.
+- Alasan: menghilangkan perhitungan UI terpisah, reload manual, double-submit,
+  serta konflik versi yang ambigu pada operasi pertandingan.
+- Produk/area: result desk/admin, public standing, live/team view, MySQL read
+  model, API/ETag, audit/security, Hostinger worker, dan Vercel public edge.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED`; activation event dan business
+  readiness masih `BLOCKED` sampai assignment serta UAT manusia selesai.
+- Source/release: `b7fabaaf58dfd4d9d00043f7864ef7691f39a13f` /
+  `20260806T043451Z` / `dpl_ERhafxHwXJCoTHbV8dxsskExieC7`.
+- Gate: unit/API 127, MySQL disposable 27/27, UI 63/63, production 11/11,
+  build, dependency/security, backup/restore, worker timer, smoke, dan rollback.
+- Production berubah: ya; tidak ada secret, credential, PII, provider payload,
+  atau database dump yang ditulis ke knowledge publik.
+- File knowledge: product/dossier/changelog AOGTICVITY, master, gaps, portfolio,
+  root changelog, dan sync status.
+
 ### SagaView portable frame template candidate
 
 - Ringkasan: Owner dapat mengekspor artwork dan metadata slot portable ke

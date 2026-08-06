@@ -7,7 +7,7 @@ content AOGTICVITY tetap jelas.
 
 ## Konteks dan status bukti
 
-- Updated: 5 Agustus 2026
+- Updated: 6 Agustus 2026
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED`
@@ -76,9 +76,11 @@ mencakup 49 Playwright checks termasuk geometry khusus 320 px.
 Standing resmi sekarang mempunyai riwayat pemenang berbentuk accordion untuk
 seluruh 10 lomba. Hanya result `Published`/`Corrected` yang menampilkan podium
 Juara 1/2/3; `Draft` tidak masuk endpoint publik dan lomba yang belum selesai
-memakai empty state. Public/player refresh setiap 12 detik serta saat focus,
-visibility, dan reconnect. Acceptance suite kini mencakup 50 Playwright checks,
-termasuk podium mocked, pending state, geometry 320 px, dan public smoke 390 px.
+memakai empty state. Snapshot server memakai revision deterministik, ETag, dan
+kebijakan poin berversi 15/10/5. Public/player/live/team refresh maksimal setiap
+5 detik; result desk/admin maksimal 3 detik serta pulih saat focus, visibility,
+online, dan reconnect. Retry mempertahankan idempotency key, stale write 409
+memuat versi server, dan correction tetap audited.
 
 `cmp-2` kini **Ambil Bola Pakai Sarung** dan `cmp-8` kini **Paralon Bola**.
 Keduanya memakai seluruh tim tanpa selector nama, 10 menit pertandingan dan 5

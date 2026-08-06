@@ -12,22 +12,20 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-06T11:45:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-06T11:52:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `966577c` |
-| Informasi terakhir disinkronkan | SagaView portable frame template `DEC-042`, source `1158926b`, berstatus `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah. |
+| Baseline sebelum pembaruan | `40962c0` |
+| Informasi terakhir disinkronkan | AOGTICVITY live standing server-authoritative aktif melalui source `b7fabaaf`, Hostinger `20260806T043451Z`, dan Vercel `dpl_ERhafxHwXJCoTHbV8dxsskExieC7`; worker timer immutable-release regression ditutup. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik baru. Paket template tetap tenant-neutral dan tidak mengubah SagaView local-first menjadi cloud photo flow. |
-| Error | Tidak ada error release baru. Kandidat menolak metadata template yang checksum-nya berubah. |
+| Konflik | Tidak ada konflik baru. Delivery production tetap dipisahkan dari event readiness dan UAT manusia. |
+| Error | Tidak ada error AOGTICVITY aktif; application readiness sehat, worker timer exit 0, dan proxy/journal application error nol. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/sagaview/PRODUCT.md`
-- `products/sagaview/DOSSIER.md`
-- `products/sagaview/CHANGELOG.md`
-- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
-- `DECISIONS.md`
+- `products/aogticvity/PRODUCT.md`
+- `products/aogticvity/DOSSIER.md`
+- `products/aogticvity/CHANGELOG.md`
 - `GAPS.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
@@ -50,8 +48,11 @@ availability/slot; SagaView auth/device/session, local ingest, lalu session
 flow dengan no-upload guarantee.
 
 AOGTICVITY tetap menunggu assignment empat peserta approved, PIC untuk sepuluh
-lomba, audited reconciliation record lama, valid-link/two-device role
-rehearsal, dan rehearsal fisik sebelum operational activation.
+lomba, roster publish/lock, audited reconciliation record lama, valid-link/
+two-device role rehearsal, authenticated draft/publish/correct/standing sync,
+dan rehearsal fisik sebelum operational activation. Standing server dan sync
+3/5 detik sudah production-deployed; checklist ini adalah human UAT, bukan gap
+implementasi teknis.
 
 SagaBook S119 menunggu owner mengganti copy alamat placeholder pada storefront
 aktif dan menyelesaikan satu booking nyata terkontrol sebelum klaim

@@ -8,6 +8,26 @@ Mencatat perubahan material AOGTICVITY/17an/Olimpiade.
 
 Nama lama dipertahankan sebagai provenance; status runtime harus eksplisit.
 
+## 2026-08-06 - Live standings server-authoritative production
+
+- `CONFIRMED`: hasil `Draft` tetap privat; hanya `Published`/`Corrected` masuk
+  snapshot standing resmi dengan policy version 15/10/5, revision deterministik,
+  ETag, dan cache `must-revalidate`.
+- Result desk/admin sinkron maksimal 3 detik dan public standing/live/team
+  maksimal 5 detik. Retry memakai idempotency key stabil, stale write 409
+  memuat state server, publish menampilkan dampak podium/poin, correction
+  beralasan tetap audited, dan write result memiliki rate limit.
+- Source `b7fabaaf58dfd4d9d00043f7864ef7691f39a13f`; Hostinger
+  `20260806T043451Z`; Vercel `dpl_ERhafxHwXJCoTHbV8dxsskExieC7`.
+- Gate: 127 unit/API, 27/27 disposable MySQL integration, migration 001-023,
+  UI 63/63, production-domain 11/11, dependency audit nol vulnerability,
+  backup/restore, exact-source build, role/security smoke, dan rollback lulus.
+- Hotfix release worker membuat systemd menjalankan script melalui Bash dan
+  menormalkan permission archive; automatic timer berulang kembali `worker=ok`.
+- Delivery `PRODUCTION_DEPLOYED`; business readiness tetap `BLOCKED` oleh empat
+  assignment tim, sepuluh PIC, roster, rekonsiliasi provider queue, dan UAT
+  manusia dua perangkat/fisik.
+
 ## 2026-08-06 - Operations reliability production
 
 - `CONFIRMED`: admin dapat merekonsiliasi status pesan Fonnte yang sudah

@@ -61,7 +61,7 @@ DNS Hostinger, sertifikat, runtime origin, role routing, serta public smoke
 telah lulus. Domain technically production-activated; business readiness tetap
 menunggu human UAT.
 
-Public delivery saat ini: `https://olimpiade-kemerdekaan.vercel.app`.
+Public delivery kanonik: `https://aogticvities.fun`.
 
 ## Arsitektur status
 
@@ -250,6 +250,15 @@ Public delivery saat ini: `https://olimpiade-kemerdekaan.vercel.app`.
   offline cache dibatasi hanya pada public allowlist. WhatsApp delivery channel
   telah dikonfirmasi founder; record lama tetap membutuhkan rekonsiliasi admin
   agar audit server sesuai fakta.
+- Source runtime `b7fabaaf58dfd4d9d00043f7864ef7691f39a13f`, Hostinger release
+  `20260806T043451Z`, dan Vercel production
+  `dpl_ERhafxHwXJCoTHbV8dxsskExieC7` memfinalisasi hasil ke standing live.
+  Server membentuk snapshot standing resmi hanya dari hasil
+  `Published`/`Corrected`, memakai kebijakan poin berversi 15/10/5, revision
+  deterministik, ETag, idempotency, optimistic version, correction audit, dan
+  rate limit. Dashboard hasil aktif refresh maksimal 3 detik; public standing,
+  live, dan team maksimal 5 detik serta pulih saat focus/reconnect. Worker
+  WhatsApp juga dibuat tahan immutable release dan timer terverifikasi exit 0.
 - SQLite hanya fast test adapter.
 - Event-master memiliki dry-run, validation, atomic publish, versioning, dan
   audit. Durasi jadwal bersifat provisional dan dapat disunting admin.
@@ -287,8 +296,8 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:
   sebelum peringatan keselamatan.
 - Standing resmi memuat accordion riwayat untuk seluruh 10 lomba. Podium Juara
   1/2/3 muncul hanya setelah hasil dipublikasikan atau dikoreksi admin; halaman
-  menyegarkan hasil setiap 12 detik serta saat focus, visibility, dan koneksi
-  kembali aktif.
+  memakai snapshot server yang sama dan menyegarkan maksimal setiap 5 detik
+  serta saat focus, visibility, dan koneksi kembali aktif.
 - Master recap 2026 berisi 8 tim, 10 lomba, jadwal provisional, mekanisme,
   safety, equipment, dan assignment panitia.
 - Dua lomba tim bola pengganti sudah production-deployed dengan scoring jumlah
