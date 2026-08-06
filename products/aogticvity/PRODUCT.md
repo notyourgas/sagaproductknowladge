@@ -64,10 +64,10 @@ menunggu human UAT.
 
 Public delivery kanonik: `https://aogticvities.fun`.
 
-Rebrand AOGTIVITY aktif pada source runtime
-`e4c217b36a215b94922785f97a14b828ff87826a`, Hostinger release
-`20260806T093015Z`, dan Vercel deployment
-`dpl_2ZfuhtLs4v8crJ1g3NnRyv8TSzU9`. UI, metadata, PWA, aset merek, pesan
+Rebrand AOGTIVITY pertama kali aktif pada source `e4c217b`; runtime terbaru
+adalah `1dc0532991bd8bf70ba3db906880581b34bd5329`, Hostinger
+`20260806T225940Z`, dan Vercel `dpl_7HfPz4QWhcAJqiajAei9RHZyXhk7`. UI,
+metadata, PWA, aset merek, pesan
 WhatsApp baru, serta issuer TOTP baru memakai AOGTIVITY. Domain, repository,
 path deploy, environment variable, cookie/session prefix, database, service,
 dan identifier integrasi lama tidak diganti agar sesi, data, dan rollback tetap
@@ -293,12 +293,12 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:
 `PRODUCTION_ACTIVATED`. Business readiness: `BLOCKED`.
 
 - UI public/player/leader/admin/live aktif pada public Vercel delivery.
-- Candidate source `78e725ba0609744aa667292ff3331d08b3cf714a` menerjemahkan
+- Runtime source `1dc0532991bd8bf70ba3db906880581b34bd5329` menerjemahkan
   poster AOGTIVITY menjadi event identity lime-navy-magenta dengan halftone,
   petir, spark, koin, handheld-console frame, serta hierarchy nama
-  **AOGTIVITY / 17 Agustus 2026 / Army of God Madiun**. Candidate ini
-  `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production belum berubah.
-- Rundown owner-confirmed pada candidate yang sama memindahkan registrasi ulang
+  **AOGTIVITY / 17 Agustus 2026 / Army of God Madiun**. Theme ini aktif pada
+  Hostinger `20260806T225940Z` dan Vercel `dpl_7HfPz4QWhcAJqiajAei9RHZyXhk7`.
+- Rundown owner-confirmed pada runtime yang sama memindahkan registrasi ulang
   ke 11.30 WIB dan acara ke 12.00 WIB: Opening Tim & Yel-yel 15 menit, Sing
   Song 15 menit, lima lomba, Break 15 menit, lima lomba, lalu Awarding &
   Closing. Estimasi provisional selesai 17.50 WIB. Migration 025 mengubah jam

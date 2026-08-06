@@ -408,13 +408,13 @@ ketika keputusan atau release baru menutup gap.
   folder, slug teknis, dan domain `aogticvities.fun` tetap dipertahankan untuk
   kompatibilitas dan bukan gap rebrand.
 
-- `LOCAL_VALIDATED / REMOTE_BRANCH_SYNCED / IMPLEMENTED_NOT_DEPLOYED`:
-  candidate `78e725ba0609744aa667292ff3331d08b3cf714a` memuat theme poster-aligned
-  (`DEC-052`) dan rundown 12.00 dua sesi (`DEC-053`). Production masih
-  `e4c217b36a215b94922785f97a14b828ff87826a`. Residual sebelum promotion:
-  backup dan verifikasi migration 025 pada MySQL target, exact-source guarded
-  deploy Hostinger/Vercel, public smoke semua hostname, visual UAT founder,
-  authenticated admin schedule refresh, serta rollback rehearsal. Durasi
+- `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: runtime
+  `1dc0532991bd8bf70ba3db906880581b34bd5329` memuat theme poster-aligned
+  (`DEC-052`) dan rundown 12.00 dua sesi (`DEC-053`) melalui Hostinger
+  `20260806T225940Z`, Vercel `dpl_7HfPz4QWhcAJqiajAei9RHZyXhk7`, dan migration
+  025. Backup/restore, exact-source release, readiness, dan public smoke lulus.
+  Residual: visual UAT founder, authenticated admin schedule refresh, serta
+  operational rollback rehearsal. Durasi
   Awarding & Closing 30 menit dan seluruh durasi lomba tetap provisional sampai
   dikunci panitia.
 

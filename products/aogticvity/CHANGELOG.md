@@ -8,7 +8,7 @@ Mencatat perubahan material AOGTIVITY/AOGTICVITY/17an/Olimpiade.
 
 Nama lama dipertahankan sebagai provenance; status runtime harus eksplisit.
 
-## 2026-08-07 - Rundown 12.00 owner-confirmed candidate
+## 2026-08-07 - Poster theme dan rundown 12.00 production
 
 - `CONFIRMED` melalui `DEC-053`: registrasi ulang 11.30 WIB dan acara mulai
   12.00 WIB dengan urutan Opening Tim & Yel-yel 15 menit, Sing Song 15 menit,
@@ -16,12 +16,14 @@ Nama lama dipertahankan sebagai provenance; status runtime harus eksplisit.
 - Jam lomba provisional menjadi 12.30, 12.50, 13.05, 13.20, 13.40, 14.40,
   15.00, 15.20, 15.35, dan 16.35; Awarding & Closing mulai 17.20 dan estimasi
   selesai 17.50 WIB. Durasi lomba/closing tetap editable oleh admin.
-- Source `78e725ba0609744aa667292ff3331d08b3cf714a`; migration 025 mengarsipkan jam
+- Runtime source `1dc0532991bd8bf70ba3db906880581b34bd5329`; migration 025 mengarsipkan jam
   sebelumnya, memperbarui jadwal MySQL, menaikkan version, dan menulis audit
   event. Down migration mengembalikan jam dari arsip.
-- Typecheck, 129 unit/API, build, 64/64 UI/WCAG, serta acceptance urutan 14
-  blok lulus. Delivery `LOCAL_VALIDATED / REMOTE_BRANCH_SYNCED /
-  IMPLEMENTED_NOT_DEPLOYED`; production tetap source `e4c217b`.
+- Typecheck, 129 unit/API, 28/28 MySQL integration, build, 64/64 UI/WCAG,
+  acceptance urutan 14 blok, backup/restore drill, serta 12/12 public-domain
+  regression lulus. Delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` pada
+  Hostinger `20260806T225940Z` dan Vercel `dpl_7HfPz4QWhcAJqiajAei9RHZyXhk7`;
+  business readiness tetap `BLOCKED` sampai human operational UAT selesai.
 
 ## 2026-08-06 - Poster-aligned event theme candidate
 
@@ -35,8 +37,8 @@ Nama lama dipertahankan sebagai provenance; status runtime harus eksplisit.
   tidak berubah.
 - Source `9543450696760666b9ec50a19f918c3381c5d9cf`; asset validation 71 entries,
   128 unit/API, build, dan 64/64 UI/WCAG regression lulus.
-- Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap pada
-  release rebrand `e4c217b` sampai visual UAT dan guarded deploy disetujui.
+- Delivery visual tersebut kini `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
+  secara kumulatif melalui runtime `1dc0532`; visual UAT founder tetap residual.
 
 ## 2026-08-06 - Rebrand AOGTIVITY production
 

@@ -63,7 +63,10 @@ product/out-of-scope/tenant-negative, monitoring latency/error/cost, serta
 inventory surface chatbot SagaDev lain. Fine-tuning/provider/data-retention
 baru memerlukan keputusan Andreas terpisah.
 
-AOGTIVITY tetap menunggu assignment empat peserta approved, PIC untuk sepuluh
+AOGTIVITY poster theme dan rundown 12.00 sudah production-deployed melalui
+runtime `1dc0532`, Hostinger `20260806T225940Z`, Vercel
+`dpl_7HfPz4QWhcAJqiajAei9RHZyXhk7`, dan migration 025. AOGTIVITY tetap menunggu
+assignment empat peserta approved, PIC untuk sepuluh
 lomba, roster publish/lock, audited reconciliation record lama, valid-link/
 two-device role rehearsal, authenticated draft/publish/correct/standing sync,
 dan rehearsal fisik sebelum operational activation. Standing server dan sync

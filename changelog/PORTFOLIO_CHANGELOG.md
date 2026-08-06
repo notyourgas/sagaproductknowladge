@@ -50,7 +50,7 @@
   kembali lulus 38/38 test dan 219 assertion; status tetap
   `AI_EVAL_VALIDATED / AI_KNOWLEDGE_NOT_PROMOTED`.
 
-## 2026-08-07 - AOGTIVITY poster theme dan rundown 12.00 candidate
+## 2026-08-07 - AOGTIVITY poster theme dan rundown 12.00 production
 
 - `DEC-052` menyelaraskan hierarchy AOGTIVITY / 17 Agustus 2026 / Army of God
   Madiun serta visual lime-navy-magenta dengan poster founder tanpa mengubah
@@ -58,11 +58,12 @@
 - `DEC-053` menetapkan registrasi ulang 11.30 WIB, acara 12.00 WIB, Opening Tim
   & Yel-yel 15 menit, Sing Song 15 menit, lima lomba, Break 15 menit, lima
   lomba, lalu Awarding & Closing. Estimasi provisional selesai 17.50 WIB.
-- Candidate source `78e725ba0609744aa667292ff3331d08b3cf714a`; migration 025 audited,
-  versioned, preserving operator assignment, dan reversible.
-- Typecheck, 129 unit/API, build, 64/64 UI/WCAG, serta acceptance urutan 14
-  blok lulus. Delivery `LOCAL_VALIDATED / REMOTE_BRANCH_SYNCED /
-  IMPLEMENTED_NOT_DEPLOYED`; production tetap source `e4c217b`.
+- Runtime source `1dc0532991bd8bf70ba3db906880581b34bd5329`; migration 025
+  audited, versioned, preserving operator assignment, dan reversible.
+- Typecheck, 129 unit/API, 28/28 MySQL integration, build, 64/64 UI/WCAG,
+  acceptance urutan 14 blok, backup/restore drill, dan 12/12 public regression
+  lulus. Production aktif pada Hostinger `20260806T225940Z` dan Vercel
+  `dpl_7HfPz4QWhcAJqiajAei9RHZyXhk7`; operational UAT tetap residual.
 
 ## 2026-08-07 - SagaView S122 control center dan ZIP memory fix production
 

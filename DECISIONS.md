@@ -270,7 +270,7 @@ keputusan pengganti.
 | Alternatif yang dipertimbangkan | Mempertahankan mulai 13.00; menaruh seluruh 10 lomba tanpa break; mempertahankan Makan Bersama sebagai agenda setelah seluruh lomba. |
 | Dampak | Master data version 2026.3, landing, agenda publik, schedule builder, admin warning, reload lintas perangkat, timeline, test, dan migration MySQL 025 memakai kontrak yang sama. Jam provisional menghasilkan Awarding & Closing 17.20 dan estimasi selesai 17.50 WIB. Migration mengarsipkan jam lama, menaikkan schedule version, menulis audit, dan menyediakan rollback tanpa mengubah assignment operator. |
 | Pemberi keputusan | Andreas / founder |
-| Status | `CONFIRMED / LOCAL_VALIDATED / REMOTE_BRANCH_SYNCED / IMPLEMENTED_NOT_DEPLOYED`; source `78e725ba0609744aa667292ff3331d08b3cf714a`; production tetap source `e4c217b36a215b94922785f97a14b828ff87826a` sampai guarded deploy dan UAT |
+| Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; runtime source `1dc0532991bd8bf70ba3db906880581b34bd5329`, Hostinger `20260806T225940Z`, Vercel `dpl_7HfPz4QWhcAJqiajAei9RHZyXhk7`, migration 025; durasi final dan operational human UAT tetap residual |
 | Dokumen terkait | [AOGTIVITY Product](products/aogticvity/PRODUCT.md), [AOGTIVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTIVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |
 
 ## DEC-052 - Hierarchy visual AOGTIVITY mengikuti poster event founder
@@ -284,7 +284,7 @@ keputusan pengganti.
 | Alternatif yang dipertimbangkan | Mempertahankan header Pixel Matchday; menyalin poster sebagai background raster; mengganti font utama dengan pixel font. |
 | Dampak | Landing/header, theme CSS, asset pipeline, dan regression visual berubah; role, auth, API, data, domain, dan infrastructure identifier tidak berubah. |
 | Pemberi keputusan | Andreas / founder |
-| Status | `CONFIRMED / LOCAL_VALIDATED / REMOTE_BRANCH_SYNCED / IMPLEMENTED_NOT_DEPLOYED`; visual source `9543450696760666b9ec50a19f918c3381c5d9cf`, digabung ke candidate `78e725ba0609744aa667292ff3331d08b3cf714a`; production tetap source `e4c217b36a215b94922785f97a14b828ff87826a` |
+| Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; visual source `9543450696760666b9ec50a19f918c3381c5d9cf` aktif secara kumulatif melalui runtime `1dc0532991bd8bf70ba3db906880581b34bd5329`, Hostinger `20260806T225940Z`, dan Vercel `dpl_7HfPz4QWhcAJqiajAei9RHZyXhk7`; visual UAT founder tetap residual |
 | Dokumen terkait | [AOGTIVITY Product](products/aogticvity/PRODUCT.md), [AOGTIVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTIVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |
 
 ## DEC-051 - Batch import SagaView memiliki preflight, duplicate policy, dan control center

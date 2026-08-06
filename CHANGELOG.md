@@ -69,17 +69,18 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 - File knowledge: SagaView changelog, feature ledger, master knowledge, gaps,
   portfolio/root changelog, dan sync status.
 
-### AOGTIVITY poster theme dan rundown 12.00 candidate
+### AOGTIVITY poster theme dan rundown 12.00 production
 
 - Ringkasan: visual event mengikuti poster founder dan rundown menjadi opening
   12.00, Sing Song, dua sesi masing-masing lima lomba dengan Break 15 menit,
   lalu Awarding & Closing.
 - Klasifikasi: `CONFIRMED` melalui `DEC-052` dan `DEC-053`; delivery
-  `LOCAL_VALIDATED / REMOTE_BRANCH_SYNCED / IMPLEMENTED_NOT_DEPLOYED`.
-- Source: `78e725ba0609744aa667292ff3331d08b3cf714a`, branch
-  `codex/whatsapp-magic-link`; production tetap `e4c217b`.
-- Gate: typecheck, 129 unit/API, build, 64/64 UI/WCAG, acceptance urutan 14
-  blok, migration 025 dengan audit dan rollback.
+  `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
+- Runtime source: `1dc0532991bd8bf70ba3db906880581b34bd5329`, branch
+  `codex/whatsapp-magic-link`; Hostinger `20260806T225940Z`, Vercel
+  `dpl_7HfPz4QWhcAJqiajAei9RHZyXhk7`, migration 025.
+- Gate: typecheck, 129 unit/API, 28/28 MySQL integration, build, 64/64 UI/WCAG,
+  acceptance urutan 14 blok, backup/restore, dan 12/12 public regression.
 - File knowledge: product, dossier, changelog AOGTIVITY, master, decisions,
   gaps, portfolio/root changelog, dan sync status.
 
