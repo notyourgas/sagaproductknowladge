@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 5 Agustus 2026
+Evidence cut-off: 6 Agustus 2026
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -92,6 +92,18 @@ migration preflight, DB audit 100, manifest, service, empat endpoint 200, serta
 browser production mobile/desktop. Website booking tenant trial diaktifkan
 setelah pre-publish readiness 100; rollback `20260803194351-d70fc1e` tersedia.
 Business readiness menunggu copy alamat final dan booking nyata terkontrol.
+
+Release SagaBook terbaru adalah S122 source
+`1b8c91fc182d1bd8e552cafa16785e5b90bbab01`, release
+`20260806040004-1b8c91f`, rollback `20260805052322-20ff682`. Editor Template
+Booking kini tidak overflow pada 390 piksel, memiliki kontrol minimum 44
+piksel, dan menempatkan preview mobile sebagai kolom ketiga pada layar >=1400
+piksel. Storefront tetap satu canvas mobile maksimum 460 piksel pada seluruh
+viewport. Endpoint, backend, database, booking, payment, availability,
+entitlement, dan activation subscription tidak berubah. Sesuai `DEC-041`,
+SagaBook dan SagaView sekarang memakai ledger screening feature-by-feature;
+status UI/UX/release tidak dianggap bukti integrasi penuh. SagaView tetap
+local-first untuk foto, editor, recovery, dan export.
 
 Update terbaru: Support & Recovery Center production. Owner/admin dapat
 bertanya, melakukan human handoff, melanjutkan tiket, mengakses account

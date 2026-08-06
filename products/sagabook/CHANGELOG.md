@@ -4,6 +4,30 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-06 - Editor Template Booking adaptif production S122
+
+- Klasifikasi: `CONFIRMED`; delivery `PRODUCTION_DEPLOYED`. Source
+  `1b8c91fc182d1bd8e552cafa16785e5b90bbab01` pada branch
+  `codex/s118-sagabook-request-recovery` aktif sebagai release immutable
+  `20260806040004-1b8c91f`; rollback
+  `20260805052322-20ff682` dipertahankan.
+- Before: editor Template Booking overflow pada 390 piksel dan preview turun
+  hampir 999 piksel di bawah editor pada 1440 piksel. After: kontrol minimum 44
+  piksel, tab/tombol mobile tidak terpotong, panel preset dapat discroll, dan
+  preview mobile menjadi kolom ketiga stabil pada layar >=1400 piksel.
+- Storefront tetap satu canvas mobile maksimum 460 piksel pada semua viewport,
+  tanpa desktop landing/frame/rail, serta tepat satu watermark di preview.
+- Gate: full backend 960/960 dengan 11.007 assertion; Playwright lintas
+  editor/admin/storefront/accessibility 42/42; booking manual-transfer E2E 1/1;
+  build, design 26/0, npm/Composer audit nol; backup terenkripsi, checksum,
+  disposable restore, migration preflight, DB audit 100, service, dan tiga
+  public smoke 200 lulus.
+- Perubahan tidak menyentuh endpoint, backend, migration, database, booking,
+  payment, availability, entitlement, atau subscription activation. Ledger
+  feature-by-feature dibuat melalui `DEC-041`; integrasi draft/preview/publish
+  masih harus discreen sebagai batch terpisah sebelum status
+  `INTEGRATION_VALIDATED`.
+
 ## 2026-08-05 - S119 production dan website booking tenant aktif
 
 - Klasifikasi: `CONFIRMED`; delivery `PRODUCTION_DEPLOYED /

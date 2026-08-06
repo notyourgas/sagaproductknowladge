@@ -33,6 +33,13 @@ ketika keputusan atau release baru menutup gap.
 
 ### SagaBook
 
+- `TODO`: selesaikan ledger integrasi feature-by-feature dari auth/session,
+  tenant/cabang, katalog, availability, booking, payment, admin/task,
+  WhatsApp/reminder, report/reconciliation, sampai template
+  draft/preview/publish. UI/UX S122 sudah production, tetapi integrasi template
+  belum boleh disebut `INTEGRATION_VALIDATED` sebelum happy, failure/retry,
+  double-submit, dan tenant-negative terbukti.
+
 - `CONFIRMED`: batas paket, trial guardrail, policy default
   refund/reschedule/cancel, retention, offboarding, dan support SLA sudah
   diputuskan melalui `DEC-008`, `DEC-009`, dan keputusan SagaBook yang lebih
@@ -226,6 +233,12 @@ ketika keputusan atau release baru menutup gap.
   terkontrol sebelum klaim `BUSINESS_READY` atau distribusi link secara luas.
 
 ### SagaView
+
+- `TODO`: selesaikan ledger integrasi feature-by-feature dari auth/device/session
+  sampai owner dashboard/entitlement. Untuk ingest foto, editor, recovery, dan
+  export, bukti wajib memakai boundary local-first, atomic write, quota,
+  permission, recovery, serta no-upload guarantee; jangan menggantinya dengan
+  cloud/API.
 
 - `NEEDS CONFIRMATION`: `DEC-038` aktif pada backend
   `20260805203055-9ee5bcc` dan Studio `20260805203055-2121ebb` setelah backup,

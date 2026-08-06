@@ -580,3 +580,17 @@ keputusan pengganti.
 | Pemberi keputusan | Andreas / founder |
 | Status | `CONFIRMED / PRODUCTION_DEPLOYED`; source `5bc951e0b8747e113b69b18162a200c592b39d3c`, Hostinger `20260805T145857Z`, Vercel `dpl_DacHrH6BN3u3bbD4ckFje7rU3fST` |
 | Dokumen terkait | [AOGTICVITY Product](products/aogticvity/PRODUCT.md), [AOGTICVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTICVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |
+
+## DEC-041 - Screening UI/UX dilanjutkan dengan integrasi fitur per fitur
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-06 |
+| Topik | Heartbeat acceptance SagaBook dan SagaView |
+| Keputusan | Setelah UI/UX sebuah fitur tervalidasi, heartbeat melanjutkan screening fitur tersebut secara end-to-end: UI state, frontend, network/API atau boundary local-first, backend/service, database/storage, response UI, failure/retry, permission/tenant-negative, dan data integrity. Coverage disimpan dalam ledger per produk dan tidak boleh diklaim penuh sebelum seluruh fitur prioritas hijau. |
+| Alasan | Founder meminta pemeriksaan bertahap agar tampilan yang baik juga benar-benar terhubung ke data dan backend tanpa sukses palsu, schema drift, kebocoran permission, atau kehilangan data. |
+| Alternatif yang dipertimbangkan | Hanya mengaudit UI/UX; mengaudit seluruh produk sekaligus tanpa ledger; menganggap mock/localStorage/fixture sebagai integrasi; memindahkan alur foto SagaView ke cloud. |
+| Dampak | SagaBook mengikuti urutan auth sampai template publish. SagaView mengikuti urutan auth/device sampai dashboard/entitlement, tetapi ingest foto, editor, recovery, dan export tetap local-first dengan no-upload guarantee. Aktivasi subscription tenant tetap dilewati sampai instruksi baru, dan website booking yang sudah aktif tidak dinonaktifkan. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED`; kebijakan acceptance/heartbeat, bukan klaim bahwa seluruh integrasi sudah selesai |
+| Dokumen terkait | [SagaBook Ledger](products/sagabook/FEATURE_COVERAGE_LEDGER.md), [SagaView Ledger](products/sagaview/FEATURE_COVERAGE_LEDGER.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [SagaView Dossier](products/sagaview/DOSSIER.md), [Gaps](GAPS.md) |

@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 5 Agustus 2026
+- Updated: 6 Agustus 2026
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED` untuk workflow yang tercantum di
   [PRODUCT](PRODUCT.md)
@@ -133,6 +133,18 @@ Storefront tidak memiliki rail, workspace dua kolom, canvas lebar, atau layout
 landing page. Arah S94/S108 yang memperlebar storefront menjadi 1040/1280
 piksel berstatus `DEPRECATED`; responsivitas desktop penuh hanya untuk
 dashboard/admin SagaBook serta aplikasi/dashboard SagaView.
+
+Editor Template Booking S122 pada source
+`1b8c91fc182d1bd8e552cafa16785e5b90bbab01` aktif sebagai release
+`20260806040004-1b8c91f` dengan rollback `20260805052322-20ff682`. Layout
+mobile tidak lagi overflow, tab dan tombol aksi minimum 44 piksel, panel preset
+dapat discroll, dan preview mobile berada sebagai kolom ketiga stabil pada
+viewport >=1400 piksel. Storefront di dalam preview tetap maksimum 460 piksel.
+Full backend 960/960, Playwright 42/42, booking E2E 1/1, build/design/audit,
+backup/restore, DB audit 100, service, dan public smoke lulus. Tidak ada API,
+database, migration, booking, payment, availability, entitlement, atau
+subscription activation yang berubah. Screening integrasi berikutnya mengikuti
+[Feature Coverage Ledger](FEATURE_COVERAGE_LEDGER.md) dan `DEC-041`.
 
 Candidate customer request terbaru adalah source kumulatif
 `b2b638cece4e9b18720a5367c05dcda3bb86ecf6` pada

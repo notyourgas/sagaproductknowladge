@@ -1,6 +1,6 @@
 # SagaView Product Knowledge
 
-Updated: 5 Agustus 2026
+Updated: 6 Agustus 2026
 Evidence status: production deployed + production activated; frame import-order,
 compact all-menu, workspace Session/Output/Izin Foto monitor besar, free drag
 rotation, pemisahan Simpan Draft/Publish Frame, serta limit Growth 50/Pro 100
@@ -70,6 +70,11 @@ photo selection, editor, review, export, print, offline recovery, dan support.
   dan operational state yang memang dibutuhkan.
 - Diagnostics harus ter-redact dan tidak membawa PII, credential, token, raw
   local storage, atau path file customer.
+- Screening integrasi feature-by-feature mengikuti
+  [Feature Coverage Ledger](FEATURE_COVERAGE_LEDGER.md). Ingest foto, editor,
+  recovery, dan export dinilai pada boundary filesystem/local store, atomic
+  write, quota, permission, serta no-upload guarantee; bukan dipaksa memakai
+  API/cloud.
 
 ## Core journey
 

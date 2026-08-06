@@ -12,6 +12,29 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-06
 
+### SagaBook Template Booking S122 production dan feature coverage ledger
+
+- Ringkasan: editor Template Booking adaptif aktif di production dan ledger
+  screening UI/UX/integrasi feature-by-feature dibuat untuk SagaBook/SagaView.
+- Alasan: menutup overflow mobile dan preview desktop yang jatuh ke bawah,
+  sekaligus menjalankan keputusan founder agar frontend, backend/API atau
+  boundary local-first, database/storage, failure, dan permission diperiksa
+  bertahap tanpa klaim berlebihan.
+- Produk/area: SagaBook admin template, preview storefront, responsive/a11y,
+  acceptance, deployment; SagaView hanya tata kelola ledger local-first.
+- Klasifikasi: `CONFIRMED`; SagaBook S122 `PRODUCTION_DEPLOYED`. Coverage
+  integrasi keseluruhan masih berjalan dan tidak disebut selesai.
+- Source/release: `1b8c91fc182d1bd8e552cafa16785e5b90bbab01` /
+  `20260806040004-1b8c91f`; rollback `20260805052322-20ff682`.
+- Gate: backend 960/960, Playwright 42/42, booking E2E 1/1, design/build,
+  audit dependency nol, encrypted backup/checksum/disposable restore, DB audit
+  100, service, dan tiga public smoke 200.
+- Production berubah: ya, hanya UI admin SagaBook. API, migration, data,
+  booking, payment, entitlement, website booking aktif, subscription, dan
+  runtime SagaView tidak berubah.
+- File knowledge: product/dossier/changelog/ledger SagaBook dan SagaView,
+  decisions, gaps, master, portfolio, root changelog, dan sync status.
+
 ### AOGTICVITY operations reliability production
 
 - Ringkasan: audited WhatsApp delivery reconciliation tanpa resend, automated

@@ -4,6 +4,18 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-08-06 - Ledger screening integrasi feature-by-feature
+
+- Klasifikasi: `CONFIRMED` melalui `DEC-041`; ini perubahan tata kelola
+  acceptance, bukan release aplikasi baru.
+- Setiap fitur SagaView akan discreen UI -> frontend -> API hanya pada boundary
+  cloud yang disetujui, atau UI -> local store/filesystem -> response UI untuk
+  ingest foto, editor, recovery, dan export.
+- Foto customer, path lokal, dan hasil export tetap tidak boleh diunggah.
+  Ledger dimulai konservatif sebagai `NOT_SCREENED` sampai bukti fresh tersedia.
+- Production backend dan Studio tidak berubah; activation subscription tenant
+  tetap dilewati tanpa mengubah entitlement yang sudah aktif.
+
 ## 2026-08-05 - Ekspansi limit frame aktif production
 
 - Klasifikasi: `CONFIRMED` melalui keputusan founder `DEC-039`.

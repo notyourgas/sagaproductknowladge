@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 5 Agustus 2026
+Updated: 6 Agustus 2026
 Evidence status: production + source verified
 
 ## Tujuan dokumen
@@ -156,8 +156,9 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
 
 - Customer Booking Center aktif di production.
 - Source production terbaru pada cut-off: commit
-  `d70fc1e0d922eed86fe4ea4998688aad32c68c43`.
-- Release production tercatat: `20260803194351-d70fc1e`.
+  `1b8c91fc182d1bd8e552cafa16785e5b90bbab01`.
+- Release production terbaru: `20260806040004-1b8c91f`, dengan rollback
+  `20260805052322-20ff682`.
 - `CONFIRMED` melalui `DEC-031`: storefront booking tenant selalu memakai satu
   canvas mobile maksimum 460 piksel pada semua viewport. Desktop hanya
   memusatkan canvas tersebut; layout rail, workspace dua kolom, canvas lebar,
@@ -174,6 +175,15 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
   Storefront tetap satu canvas mobile maksimum 460 piksel pada semua viewport;
   tidak ada desktop landing/layout, tanpa overflow, dan tepat satu
   `Powered by SagaBook` non-fixed.
+- UI/UX editor Template Booking S122 berstatus `PRODUCTION_DEPLOYED` pada
+  source `1b8c91fc182d1bd8e552cafa16785e5b90bbab01`, release
+  `20260806040004-1b8c91f`. Editor tidak overflow pada 390 piksel, tab dan aksi
+  minimum 44 piksel, serta preview mobile berada di kolom ketiga pada layar
+  >=1400 piksel tanpa mengubah storefront mobile-only. Endpoint, backend,
+  migration, data, subscription, dan website booking aktif tidak berubah.
+  Coverage integrasi dilanjutkan melalui
+  [Feature Coverage Ledger](FEATURE_COVERAGE_LEDGER.md); status release UI/UX
+  tidak otomatis berarti `INTEGRATION_VALIDATED` untuk setiap fitur.
 - Website booking satu tenant trial diaktifkan hanya setelah pre-publish
   readiness 100, lalu post-activation setup/pilot readiness dan HTTP publik
   lulus. Release gate production 10/10, backup terenkripsi/checksum/disposable

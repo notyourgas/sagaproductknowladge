@@ -7,7 +7,7 @@ SagaView berdasarkan runtime production aktif.
 
 ## Konteks dan status bukti
 
-- Updated: 5 Agustus 2026
+- Updated: 6 Agustus 2026
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED`
 - Business readiness: `NEEDS CONFIRMATION` untuk penjualan massal
@@ -19,6 +19,9 @@ SagaView berdasarkan runtime production aktif.
 - Simpan Draft/Publish Frame: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
 - Ekspansi frame aktif Growth 50 / Pro 100:
   `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
+- Acceptance integrasi feature-by-feature: ledger dimulai konservatif dan
+  belum membuktikan coverage penuh; lihat
+  [Feature Coverage Ledger](FEATURE_COVERAGE_LEDGER.md).
 
 ## Overview produk
 

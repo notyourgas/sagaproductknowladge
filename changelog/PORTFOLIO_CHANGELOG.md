@@ -1,5 +1,21 @@
 # Portfolio Changelog
 
+## 2026-08-06 - SagaBook Template Booking S122 production dan ledger integrasi
+
+- Editor Template Booking kini adaptif: tidak overflow pada 390 piksel, target
+  aksi minimum 44 piksel, panel preset dapat discroll, dan preview mobile
+  sejajar sebagai kolom ketiga pada layar >=1400 piksel.
+- Storefront tetap satu canvas mobile maksimum 460 piksel pada mobile, laptop,
+  MacBook, Full HD, QHD, dan 4K; tidak ada desktop landing/frame/rail.
+- Source/release `1b8c91fc182d1bd8e552cafa16785e5b90bbab01` /
+  `20260806040004-1b8c91f`; rollback `20260805052322-20ff682`.
+  Backend 960/960, Playwright 42/42, booking E2E, audit, backup/restore, DB audit,
+  service, dan public smoke lulus.
+- `DEC-041` menetapkan screening integrasi fitur per fitur untuk SagaBook dan
+  SagaView. Ledger dimulai konservatif; UI/UX/release tidak otomatis berarti
+  integrasi penuh. SagaView tetap local-first dan activation subscription
+  tenant tetap dilewati.
+
 ## 2026-08-06 - AOGTICVITY operations reliability production
 
 - Admin memperoleh audited delivery reconciliation tanpa resend, bulk PIC

@@ -1,0 +1,26 @@
+# SagaView Feature Coverage Ledger
+
+Evidence cut-off: 6 Agustus 2026 11:05 WIB
+
+## Tujuan
+
+Mencatat bukti UI/UX dan integrasi SagaView secara fitur-per-fitur sambil menjaga kontrak privacy dan local-first.
+
+## Konteks
+
+SagaView tetap local-first: foto customer, editor, dan export tidak boleh dipindahkan ke API/cloud. Untuk area tersebut, integrasi berarti boundary filesystem/local store, atomic write, recovery, permission, quota, dan bukti no-upload.
+
+| Fitur/alur | Role | Route/surface | Status UI/UX | Frontend state/form | API atau boundary local-first | Backend/database/storage | Auth/tenant/permission | Happy/failure/retry/idempotency | Viewport/zoom | Evidence/source/release | Status akhir | Gap berikutnya |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Auth/device/session | Owner, operator | Owner dan Studio Console | Belum discreen ulang | Belum discreen ulang | Auth/device/session API | Backend session/device store | Product, tenant, device lease wajib | Belum discreen ulang | Belum discreen ulang | Historical production; fresh ledger belum ada | `NOT_SCREENED` | Verifikasi expiry, exclusive lease, retry, dan role-negative. |
+| Local workspace/media ingest | Operator | Studio workspace | Belum discreen ulang | Belum discreen ulang | Filesystem/local store; no-upload | Local storage saja | OS permission dan quota wajib | Belum discreen ulang | Belum discreen ulang | Kontrak local-first aktif; fresh ledger belum ada | `NOT_SCREENED` | Uji atomic ingest, corrupt file, quota, recovery, dan network capture no-upload. |
+| Session flow | Operator, customer | Studio session | UI monitor besar pernah dirilis | Integrasi fresh belum discreen | Local store + metadata boundary yang disetujui | Local/session metadata | Device/session isolation wajib | Belum discreen ulang | Historical mobile sampai 4K | Production historis; fresh ledger belum ada | `NOT_SCREENED` | Jalankan alur session lengkap dan interruption recovery. |
+| Frame catalog/selection | Owner, customer | Owner catalog dan Studio selection | UI pernah dirilis | Integrasi fresh belum discreen | Frame metadata API + local asset cache | Backend frame metadata/local cache | Tenant dan entitlement wajib | Belum discreen ulang | Historical responsive coverage | Backend `c8538060`; Studio `3b66f8d5` | `NOT_SCREENED` | Uji publish/read/cache invalidation/quota/tenant-negative. |
+| Editor | Owner, customer | Frame editor | UI rotate/draft/publish pernah dirilis | Integrasi fresh belum discreen | Local editor + frame metadata API | Local draft/backend frame metadata | Tenant/permission wajib | Belum discreen ulang | Historical responsive coverage | Production historis; fresh ledger belum ada | `NOT_SCREENED` | Uji draft, publish failure, retry, stale revision, dan export parity. |
+| Price/payment hold | Owner, customer | Pricing/payment state | Belum discreen ulang | Belum discreen ulang | Entitlement/payment API | Payment/entitlement persistence | Product scope wajib | Belum discreen ulang | Belum discreen ulang | Production historis; fresh ledger belum ada | `NOT_SCREENED` | Verifikasi hold, expiry, callback idempotency, dan permission. |
+| Export/publish | Operator | Output workspace | UI monitor besar pernah dirilis | Integrasi fresh belum discreen | Local filesystem/export; no-upload | Atomic local output | OS permission dan session scope wajib | Belum discreen ulang | Historical mobile sampai 4K | Production historis; fresh ledger belum ada | `NOT_SCREENED` | Uji write failure, retry, disk full, cancel, dan no-upload. |
+| Local recovery/quota | Operator | Recovery/support | Belum discreen ulang | Belum discreen ulang | Local DB/store/filesystem | Atomic local recovery | Device permission wajib | Belum discreen ulang | Belum discreen ulang | Kontrak local-first aktif; fresh ledger belum ada | `NOT_SCREENED` | Uji crash recovery, partial write, quota, dan safe cleanup. |
+| Metadata sync | Owner, operator | Owner/Studio boundary | Belum discreen ulang | Belum discreen ulang | Approved metadata API only | Backend metadata + local cache | Tenant/device scope wajib | Belum discreen ulang | Belum discreen ulang | Historical production; fresh ledger belum ada | `NOT_SCREENED` | Inventaris payload lalu buktikan tidak ada foto/path customer. |
+| Owner/admin dashboard dan entitlement | Owner, admin | Owner Console | UI pernah dirilis | Integrasi fresh belum discreen | Owner/entitlement API | Backend entitlement | Role, tenant, product scope wajib | Belum discreen ulang | Historical responsive coverage | Backend `c8538060`; Studio `3b66f8d5` | `NOT_SCREENED` | Screen plan/frame limit/device/session secara end-to-end. |
+
+Aktivasi subscription tenant tetap dilewati sampai ada instruksi baru; entitlement production yang sudah aktif tidak diubah.
