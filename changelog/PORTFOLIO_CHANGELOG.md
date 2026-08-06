@@ -1,5 +1,22 @@
 # Portfolio Changelog
 
+## 2026-08-07 - SagaView S134 workspace recovery production
+
+- `DEC-054` mewajibkan validasi server atas tenant, membership, staff, dan
+  subscription sebelum Batch Import mengaktifkan pemilih file.
+- Workspace target terlihat, stale tab hanya dipulihkan untuk session+tenant
+  yang sama, serta preflight/create/resume/polling memakai context tervalidasi
+  dan berhenti fail-closed bila context berubah.
+- Backend source/release `902e5dd81919168b1978c8bfbcd62303920184a6` /
+  `20260806212915-902e5dd`; Studio rebuild `20260806213012-3b66f8d`; rollback
+  S122 dipertahankan.
+- Build, 96 test SagaView/1.038 assertion, 266 boundary test/1.950 assertion,
+  Playwright desktop+mobile, backup/restore, rehearsal kandidat+rollback,
+  deploy 6/6, canary/preservation, live smoke/marker/header, dan rollback lulus.
+- Tidak ada migration atau perubahan pricing, entitlement, payment,
+  device/session, foto customer, maupun data tenant. Owner UAT 50-100 file nyata
+  pada dua akun tetap residual; S133 wajib direbase ke S134 sebelum promotion.
+
 ## 2026-08-07 - SagaView S133 tenant-bound session candidate
 
 - Session metadata sekarang fail-closed ketika tenant permintaan tidak sama

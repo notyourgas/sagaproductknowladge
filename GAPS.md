@@ -172,6 +172,16 @@ ketika keputusan atau release baru menutup gap.
 
 ### SagaView
 
+- `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: `DEC-054` workspace validation
+  dan tab recovery aktif pada backend source/release `902e5dd8` /
+  `20260806212915-902e5dd` serta Studio rebuild `20260806213012-3b66f8d`.
+  File picker menunggu context server, target workspace terlihat, stale context
+  hanya dipulihkan same-session/same-tenant, dan preflight/create/resume berhenti
+  fail-closed terhadap context invalid/cross-tenant. Acceptance desktop/mobile,
+  backup/restore, rehearsal, deploy 6/6, preservation, live smoke/marker/header,
+  dan rollback lulus. Residual: authenticated Owner UAT import 50-100 file nyata
+  pada dua akun, termasuk stale tab, reconnect, context expiry, dan resume.
+
 - `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: `DEC-051` Batch Import Control
   Center aktif pada source/release `b6af5797` / `20260806200400-b6af579`.
   Preflight, duplicate policy, history/notification, cancel, CSV, bulk actions,
@@ -225,7 +235,8 @@ ketika keputusan atau release baru menutup gap.
 - `TODO`: session flow S133 sudah `INTEGRATION_VALIDATED / LOCAL_VALIDATED`
   pada candidate `6dff29dd` + `573c599`, termasuk UI -> API -> disposable DB,
   idempotency, tenant/device-negative, dan metadata-only/no-upload. Production
-  belum berubah. Lanjutkan physical Windows folder permission/quota/recovery,
+  kini S134; candidate S133 wajib direbase ke atas S134 dan mengulang acceptance
+  sebelum deploy. Lanjutkan physical Windows folder permission/quota/recovery,
   viewport 1280/1512/1920/2560/3840 dan zoom 125/150/200, lalu fitur berikutnya
   dari frame selection sampai owner dashboard/entitlement. Untuk ingest foto,
   editor, recovery, dan export, bukti wajib tetap memakai boundary local-first,

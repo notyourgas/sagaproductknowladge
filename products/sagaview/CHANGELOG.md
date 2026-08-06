@@ -4,6 +4,33 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-08-07 - S134 workspace validation dan tab recovery production
+
+- Klasifikasi: `CONFIRMED` melalui keputusan founder `DEC-054`.
+- Status: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; business readiness
+  mass-scale tetap `NEEDS CONFIRMATION`.
+- Backend source `902e5dd81919168b1978c8bfbcd62303920184a6`, release
+  `20260806212915-902e5dd`; Studio source
+  `3b66f8d5df3e34aba11c4eab2619cfe44efd06d7`, rebuild release
+  `20260806213012-3b66f8d`.
+- Rollback backend `20260806200400-b6af579` dan Studio
+  `20260806200400-3b66f8d` dipertahankan.
+- Pemilih file baru aktif setelah server memvalidasi tenant, membership, staff,
+  dan subscription. Target workspace terlihat; stale context hanya dipulihkan
+  untuk session+tenant yang sama, dengan error `401/403/409` yang terarah.
+- Preflight/create terikat context tervalidasi, resume key tenant+membership
+  scoped, dan context change di tengah upload berhenti fail-closed tanpa
+  cross-tenant mutation.
+- Build, 96 test SagaView/1.038 assertion, 266 boundary test/1.950 assertion,
+  Playwright desktop+mobile, encrypted backup/restore, rehearsal kandidat dan
+  rollback, deploy 6/6, canary/preservation, service/journal/header/public smoke,
+  live marker, dan rollback production lulus.
+- Tidak ada migration atau perubahan pricing, entitlement, payment,
+  device/session, foto customer, maupun data tenant. Owner UAT 50-100 file nyata
+  pada dua akun tetap residual.
+- Kandidat S133 tetap belum production dan wajib direbase ke atas S134 sebelum
+  promotion berikutnya.
+
 ## 2026-08-07 - S133 tenant-bound session candidate
 
 - Klasifikasi: `CONFIRMED` dari source, red-to-green regression, dan acceptance

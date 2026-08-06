@@ -6,7 +6,7 @@ compact all-menu, workspace Session/Output/Izin Foto monitor besar, free drag
 rotation, pemisahan Simpan Draft/Publish Frame, limit Growth 50/Pro 100,
 portable frame template, bulk export, server ZIP untuk tiga sampai 100 pilihan,
 dan resumable server batch import sampai 100 template aktif di production.
-S122 Batch Import Control Center dan koreksi ZIP hemat memori sudah
+S134 workspace validation dan tab recovery untuk Batch Import sudah
 `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; Owner UAT dua akun tetap residual.
 
 ## Tujuan dokumen
@@ -32,12 +32,12 @@ yang diverifikasi sampai 7 Agustus 2026.
   lalu memakai dua kartu sesi berdampingan pada QHD/4K di dalam batas 1400
   piksel. Ringkasan, filter, retry, cabut izin, dan workflow privacy tidak
   berubah.
-- Backend source `b6af5797fb6fdcea499e727ee2bdb1e4dc666165` aktif sebagai
-  release `20260806200400-b6af579`; rollback
-  `20260806133407-e850d6c` dipertahankan.
+- Backend source `902e5dd81919168b1978c8bfbcd62303920184a6` aktif sebagai
+  release `20260806212915-902e5dd`; rollback
+  `20260806200400-b6af579` dipertahankan.
 - Studio tetap memakai source `3b66f8d5df3e34aba11c4eab2619cfe44efd06d7`
-  melalui release `20260806200400-3b66f8d`; rollback
-  `20260806133407-3b66f8d` dipertahankan.
+  melalui rebuild release `20260806213012-3b66f8d`; rollback
+  `20260806200400-3b66f8d` dipertahankan.
 - Entitlement live memberi Growth 50 dan Pro 100 frame aktif. Harga, device,
   preset, offline grace, storage, laporan, support, payment, dan fair-use tidak
   berubah.
@@ -337,6 +337,33 @@ production menghasilkan ZIP valid 51 entry berukuran 103.282.237 byte dalam
 6,751 detik pada batas RAM 128 MB, tambahan peak memory 23.597.056 byte, dan
 nol file sementara tertinggal. Authenticated Owner UAT import 50-100 file nyata
 dan isolasi dua akun tetap residual sebelum `BUSINESS_READY` mass-scale.
+
+### S134 Workspace validation dan tab recovery production
+
+`CONFIRMED` melalui `DEC-054`, dengan delivery dan activation
+`PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` pada backend source
+`902e5dd81919168b1978c8bfbcd62303920184a6`, branch
+`codex/s134-sagaview-admin-context-recovery`, release
+`20260806212915-902e5dd`. Studio memakai source yang sama seperti sebelumnya,
+`3b66f8d5df3e34aba11c4eab2619cfe44efd06d7`, melalui rebuild release
+`20260806213012-3b66f8d`.
+
+Batch Import kini menonaktifkan pemilih file sampai server mengonfirmasi tenant,
+membership, role staff, dan subscription untuk tab aktif. Target workspace
+ditampilkan dengan status `Workspace siap`. Context kedaluwarsa hanya boleh
+dipulihkan dalam session dan tenant yang sama; server-auth tenant mengalahkan
+URL atau local storage yang stale. Error `401`, `403`, dan `409` memberikan
+tindakan terarah tanpa menghapus pilihan file yang masih aman.
+
+Preflight dan create batch terikat pada context tervalidasi, resume key dicakup
+tenant+membership, dan perubahan context saat upload menghentikan polling serta
+mutation secara fail-closed. Tidak ada migration, perubahan pricing,
+entitlement, payment, device/session, foto customer, atau data tenant. Build,
+96 test SagaView/1.038 assertion, 266 test boundary/1.950 assertion, Playwright
+desktop+mobile, backup/restore terenkripsi, rehearsal kandidat+rollback, deploy
+6/6, canary/preservation, service/journal/header/public smoke, marker live, dan
+rollback production lulus. Authenticated Owner UAT dengan 50-100 file nyata dan
+dua akun tetap residual sebelum `BUSINESS_READY`.
 
 ## Session completion dan privacy handoff
 

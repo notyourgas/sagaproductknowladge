@@ -12,6 +12,25 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-07
 
+### SagaView S134 workspace validation dan tab recovery production
+
+- Ringkasan: Batch Import memvalidasi tenant, membership, staff, dan
+  subscription sebelum pemilih file aktif; workspace target terlihat dan stale
+  context hanya dipulihkan pada session+tenant yang sama.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` melalui
+  `DEC-054`; business readiness tetap `NEEDS CONFIRMATION`.
+- Source/release backend: `902e5dd81919168b1978c8bfbcd62303920184a6` /
+  `20260806212915-902e5dd`; Studio rebuild `20260806213012-3b66f8d`; rollback
+  S122 dipertahankan.
+- Gate: build, 96 test SagaView/1.038 assertion, 266 boundary test/1.950
+  assertion, Playwright desktop+mobile, backup/restore, rehearsal, deploy 6/6,
+  canary/preservation, service/journal/header/public smoke, marker, dan rollback.
+- Boundary: tidak ada migration atau perubahan pricing, entitlement, payment,
+  device/session, foto customer, maupun data tenant. Owner UAT dua akun masih
+  residual dan S133 wajib direbase sebelum promotion.
+- File knowledge: product, dossier, changelog, ledger, master knowledge,
+  decisions, gaps, portfolio/root changelog, dan sync status.
+
 ### SagaView S133 tenant-bound session candidate
 
 - Ringkasan: session start kini mengikat tenant permintaan pada tenant device

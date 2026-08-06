@@ -597,6 +597,21 @@ canary/payment/device preservation, service/journal/header/public smoke lulus.
 Smoke runtime 51 frame menghasilkan ZIP 103.282.237 byte dalam 6,751 detik pada
 RAM 128 MB dengan tambahan peak 23.597.056 byte dan nol file sementara.
 Authenticated Owner UAT import 50-100 file nyata pada dua akun tetap residual.
+
+Keputusan founder `DEC-054` mengaktifkan S134 workspace validation dan tab
+recovery Batch Import. Backend source
+`902e5dd81919168b1978c8bfbcd62303920184a6` aktif sebagai release
+`20260806212915-902e5dd`; Studio source tetap
+`3b66f8d5df3e34aba11c4eab2619cfe44efd06d7` melalui rebuild
+`20260806213012-3b66f8d`. Rollback S122 dipertahankan. Pemilih file baru aktif
+setelah server memvalidasi tenant, membership, staff, dan subscription; target
+workspace terlihat dan stale context hanya dapat dipulihkan untuk session serta
+tenant yang sama. Preflight/create/resume/polling terikat context tervalidasi
+dan berhenti fail-closed bila context berubah. Tidak ada migration atau
+perubahan pricing, entitlement, payment, device/session, foto customer, maupun
+data tenant. Delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated
+Owner UAT 50-100 file nyata pada dua akun tetap residual.
+
 Candidate S133 belum production. Backend source
 `6dff29ddba50fc04dd315458adcfed6cdeec7aa1` mengikat tenant permintaan session
 ke tenant device credential dan menolak mismatch `403` sebelum persistence.
@@ -605,6 +620,8 @@ stepper dan region dekoratif. UI -> API -> disposable database -> response UI,
 idempotency, tenant/device-negative, metadata-only/no-upload, a11y, serta dua
 anchor viewport lulus. Statusnya `INTEGRATION_VALIDATED / LOCAL_VALIDATED /
 IMPLEMENTED_NOT_DEPLOYED`; jangan menjawab seolah sudah aktif di production.
+Candidate ini bercabang dari S122 dan wajib direbase ke atas S134 serta
+mengulang acceptance/release gate sebelum promotion berikutnya.
 Implementasi rotate lama yang menukar W/H 90 derajat telah `DEPRECATED` oleh
 koreksi founder `DEC-036`. Perilaku production yang aktif adalah
 diterima adalah tahan ikon rotate lalu drag ke kiri/kanan agar slot mendapat

@@ -12,20 +12,23 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-07T03:35:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-07T04:30:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `1ba4176936da28f34b15c4e8f169fe028abb7756` |
-| Informasi terakhir disinkronkan | SagaView S133 tenant-bound session candidate pada backend `6dff29ddba50fc04dd315458adcfed6cdeec7aa1` dan Studio `573c599ea1808172d31fa32d0901bb3aed0e2d0d`; delivery `INTEGRATION_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Production tetap S122. |
+| Baseline sebelum pembaruan | `7a6956f50d4dbc361fc571dfc47815401d84586a` |
+| Informasi terakhir disinkronkan | SagaView S134 workspace validation dan tab recovery pada backend source/release `902e5dd81919168b1978c8bfbcd62303920184a6` / `20260806212915-902e5dd` dan Studio rebuild `20260806213012-3b66f8d`; delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada; candidate S133 dipisahkan eksplisit dari production S122. |
-| Error | Tidak ada pada validasi lokal; fresh immutable deployment gates S133 belum dijalankan. |
+| Konflik | Tidak ada konflik fakta produk. Candidate S133 tetap terpisah, bercabang dari S122, dan wajib direbase ke S134 sebelum promotion. |
+| Error | Composer advisory feed candidate S134 timeout dua kali; lock dependency tidak berubah dari production dan npm audit, regression, serta seluruh formal deployment gate lulus. |
 
 ## File yang berubah pada sinkronisasi ini
 
 - `products/sagaview/CHANGELOG.md`
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/DOSSIER.md`
 - `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
+- `DECISIONS.md`
 - `GAPS.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHANGELOG.md`
@@ -74,9 +77,9 @@ aktif dan menyelesaikan satu booking nyata terkontrol sebelum klaim
 SagaView compact all-menu, workspace Session/Output/Izin Foto monitor besar,
 free drag rotation, pemisahan draft/publish, bulk frame export, server ZIP untuk
 tiga sampai 100 pilihan, dan resumable server batch import aktif kumulatif pada
-Studio `20260806200400-3b66f8d`; rollback `20260806133407-3b66f8d`
-dipertahankan. Backend aktif `20260806200400-b6af579`; rollback
-`20260806133407-e850d6c`. Authenticated
+ Studio `20260806213012-3b66f8d`; rollback `20260806200400-3b66f8d`
+dipertahankan. Backend aktif `20260806212915-902e5dd`; rollback
+`20260806200400-b6af579`. Authenticated
 Owner visual UAT dengan frame miring dan
 publish frame nyata serta Founding Studio Pilot tetap dibutuhkan sebelum klaim
 `BUSINESS_READY` mass-scale.
@@ -89,6 +92,17 @@ ZIP export file-backed lulus 137 test SagaView/1.656 assertion, focused 20/484,
 Playwright export/import 51-file, backup/restore, rehearsal, deploy 6/6,
 canary/preservation, service/journal/header/public smoke, dan runtime ZIP 51
 frame. Residual: authenticated Owner UAT import 50-100 file nyata pada dua akun.
+
+SagaView S134 workspace validation dan tab recovery `DEC-054` sudah
+`PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` pada source `902e5dd8`, backend
+`20260806212915-902e5dd`, dan Studio rebuild `20260806213012-3b66f8d`. File
+picker menunggu context server; target workspace terlihat; recovery dibatasi
+same-session/same-tenant; preflight/create/resume/polling fail-closed terhadap
+context invalid atau berubah. Build, regression, Playwright desktop+mobile,
+fresh encrypted backup/restore, candidate+rollback rehearsal, deploy 6/6,
+canary/preservation, live smoke/marker/header, dan rollback production lulus.
+Residual: authenticated Owner UAT 50-100 file nyata pada dua akun. Candidate
+S133 wajib direbase ke atas S134 sebelum promotion.
 
 Bulk export Galeri Frame `DEC-044` sudah `PRODUCTION_DEPLOYED /
 PRODUCTION_ACTIVATED`; klausa packaging-nya dikoreksi oleh `DEC-049`. Satu atau

@@ -231,6 +231,20 @@ keputusan pengganti.
 | Status | `CONFIRMED`; klausa nama produk AOGTICVITY `DEPRECATED` oleh `DEC-047`, sedangkan kontrak master recap, 8 tim, 10 lomba, durasi editable, dan roster seluruh tim tetap berlaku |
 | Dokumen terkait | [AOGTICVITY Product](products/aogticvity/PRODUCT.md), [AOGTICVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTICVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |
 
+## DEC-054 - Batch import SagaView memvalidasi workspace sebelum memilih file
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-07 |
+| Topik | Pemulihan context tenant dan session pada Batch Import SagaView |
+| Keputusan | Pemilih file dinonaktifkan sampai server memvalidasi tenant, membership, role staff, dan subscription untuk tab aktif. Target workspace wajib terlihat. URL/local storage tidak boleh mengalahkan server-auth tenant; context stale hanya boleh dipulihkan dalam session dan tenant yang sama. Preflight dan create harus terikat context tervalidasi, resume key harus tenant+membership scoped, dan perubahan context saat upload berhenti fail-closed dengan error bertipe serta pilihan file aman dipertahankan. |
+| Alasan | Operator tidak boleh memilih 50-100 file lalu baru menerima pesan context generik, dan stale tab tidak boleh berisiko mengarahkan import atau resume ke tenant lain. |
+| Alternatif yang dipertimbangkan | Validasi hanya setelah file dipilih; mempercayai URL/local storage; selalu memaksa login ulang; otomatis berpindah tenant tanpa konfirmasi server. |
+| Dampak | Dua endpoint context dan middleware validasi ditambahkan tanpa migration. Pricing, entitlement, payment, device/session, foto customer, serta data tenant tidak berubah. Kandidat S133 tetap terpisah dan wajib direbase ke atas S134 sebelum deploy. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; backend source/release `902e5dd81919168b1978c8bfbcd62303920184a6` / `20260806212915-902e5dd`; Studio rebuild `20260806213012-3b66f8d`; authenticated Owner UAT 50-100 file nyata pada dua akun masih residual |
+| Dokumen terkait | [SagaView Product](products/sagaview/PRODUCT.md), [SagaView Dossier](products/sagaview/DOSSIER.md), [SagaView Changelog](products/sagaview/CHANGELOG.md), [SagaView Ledger](products/sagaview/FEATURE_COVERAGE_LEDGER.md), [Gaps](GAPS.md) |
+
 ## DEC-053 - Rundown AOGTIVITY dimulai pukul 12.00 WIB dalam dua sesi lomba
 
 | Field | Isi |

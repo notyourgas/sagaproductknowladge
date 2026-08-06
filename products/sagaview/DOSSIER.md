@@ -27,6 +27,8 @@ SagaView berdasarkan runtime production aktif.
   `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
 - S122 Batch Import Control Center:
   `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
+- S134 workspace validation dan tab recovery Batch Import:
+  `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
 - Acceptance integrasi feature-by-feature: ledger dimulai konservatif dan
   belum membuktikan coverage penuh; lihat
   [Feature Coverage Ledger](FEATURE_COVERAGE_LEDGER.md).
@@ -247,6 +249,25 @@ pada backend `20260806200400-b6af579` dan Studio `20260806200400-3b66f8d`.
 Smoke runtime 51 frame menghasilkan ZIP 103.282.237 byte dalam 6,751 detik pada
 RAM 128 MB dengan tambahan peak 23.597.056 byte dan nol file sementara.
 Authenticated Owner UAT import 50-100 file nyata pada dua akun tetap residual.
+
+S134 pada backend source `902e5dd81919168b1978c8bfbcd62303920184a6`
+memvalidasi workspace terhadap server sebelum pemilih file diaktifkan. UI
+menampilkan nama workspace dan `Workspace siap`; stale URL/local storage tidak
+boleh mengganti server-auth tenant. Pemulihan hanya berlaku untuk session dan
+tenant yang sama, sementara context invalid/cross-tenant memberi error bertipe
+`401`, `403`, atau `409` dengan tindakan terarah.
+
+Preflight, create, upload resume, dan polling memakai tenant+membership context
+yang sama dan fail-closed bila context berubah di tengah upload. Build, 96 test
+SagaView/1.038 assertion, 266 test boundary/1.950 assertion, serta Playwright
+desktop dan mobile lulus. Fresh encrypted backup/restore, rehearsal exact
+candidate+rollback, deploy gate 6/6, canary/payment/device preservation,
+service/journal/header/public smoke, marker live, dan rollback production juga
+lulus. Backend aktif `20260806212915-902e5dd`; Studio rebuild aktif
+`20260806213012-3b66f8d`; rollback `20260806200400-b6af579` /
+`20260806200400-3b66f8d` dipertahankan. Tidak ada migration atau perubahan pada
+pricing, entitlement, payment, device/session, foto customer, maupun data
+tenant. Authenticated Owner UAT 50-100 file nyata pada dua akun tetap residual.
 
 Mulai sesi production memakai checklist perangkat, paket, folder, frame, dan
 output serta satu CTA kontekstual 48 px. Utility cloud/recovery yang sehat
