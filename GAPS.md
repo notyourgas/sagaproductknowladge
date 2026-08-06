@@ -33,12 +33,14 @@ ketika keputusan atau release baru menutup gap.
 
 ### SagaBook
 
-- `TODO`: selesaikan ledger integrasi feature-by-feature dari auth/session,
-  tenant/cabang, katalog, availability, booking, payment, admin/task,
+- `TODO`: auth/session S123 sudah `INTEGRATION_VALIDATED` dan aktif di
+  production. Lanjutkan ledger feature-by-feature dari tenant/cabang, katalog,
+  availability, booking, payment, admin/task,
   WhatsApp/reminder, report/reconciliation, sampai template
-  draft/preview/publish. UI/UX S122 sudah production, tetapi integrasi template
-  belum boleh disebut `INTEGRATION_VALIDATED` sebelum happy, failure/retry,
-  double-submit, dan tenant-negative terbukti.
+  draft/preview/publish. Residual auth/session adalah expiry idle, revocation
+  lintas device, dan UI rate-limit 429. UI/UX S122 sudah production, tetapi
+  integrasi template belum boleh disebut `INTEGRATION_VALIDATED` sebelum
+  happy, failure/retry, double-submit, dan tenant-negative terbukti.
 
 - `CONFIRMED`: batas paket, trial guardrail, policy default
   refund/reschedule/cancel, retention, offboarding, dan support SLA sudah

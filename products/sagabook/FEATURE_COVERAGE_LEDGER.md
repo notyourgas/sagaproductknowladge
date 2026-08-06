@@ -1,6 +1,6 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 6 Agustus 2026 11:05 WIB
+Evidence cut-off: 6 Agustus 2026 11:44 WIB
 
 ## Tujuan
 
@@ -12,7 +12,7 @@ Ledger ini melanjutkan screening UI/UX dan integrasi secara fitur-per-fitur. Sta
 
 | Fitur/alur | Role | Route/surface | Status UI/UX | Frontend state/form | API/boundary | Backend/database | Auth/tenant/permission | Happy/failure/retry/idempotency | Viewport/zoom | Evidence/source/release | Status akhir | Gap berikutnya |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Auth/session | Owner, staff | Login dan dashboard | Belum discreen ulang | Belum discreen ulang | Web auth/session | Auth service dan session store | Wajib deny-by-default | Belum discreen ulang | Belum discreen ulang | Historical production; fresh ledger belum ada | `NOT_SCREENED` | Mulai dari login, expiry, retry, dan role-negative. |
+| Auth/session | Owner, staff | `/admin/login`, dashboard, dan logout | `UIUX_VALIDATED`: loading/error/retry/focus serta nama tombol logout mobile lulus | Form memakai timeout 15 detik, cancellation, in-flight guard, password clear/refocus, dan `aria-busy` | `POST /api/admin/login`, `GET /api/admin/session`, `POST /api/admin/logout` | `AdminApiController`, `AdminAuthService`, staff/session store, `activity_logs`, dan `last_login_at` | Login/session deny-by-default; capability dan cross-tenant negative menghasilkan 403 | Happy login/session/logout, invalid credential, network recovery, double-submit guard, protected 401, capability 403, dan cross-tenant 403 lulus; rate-limit 429 visual belum discreen | 390x844, 1280x800, 1440x900, 1512x982, 1920x1080, 2560x1440; zoom 100/125/150/200 persen; forced-colors/reduced-motion | Source `a9125228f8bda3d919a55b1a6ed154355e1bf9da`; release `20260806043833-a912522`; backend 1 test/21 assertion; focused browser 7 pass/1 intentional skip; regression 71 pass/7 intentional skip; production smoke 6/6 | `RELEASED` (`UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`) | Screen expiry saat idle, revocation lintas device, dan UI rate-limit 429; produk keseluruhan belum `BUSINESS_READY`. |
 | Tenant/cabang | Owner, admin | Dashboard cabang | Belum discreen ulang | Belum discreen ulang | Tenant/branch API | Tenant dan branch persistence | Tenant/branch isolation wajib | Belum discreen ulang | Belum discreen ulang | Historical production; fresh ledger belum ada | `NOT_SCREENED` | Verifikasi switch cabang dan cross-tenant negative. |
 | Paket/background/add-on/resource | Owner, admin | Katalog | Belum discreen ulang | Belum discreen ulang | Catalog API | Catalog service/tables | Tenant scope wajib | Belum discreen ulang | Belum discreen ulang | Historical production; fresh ledger belum ada | `NOT_SCREENED` | Verifikasi CRUD, stale state, dan permission. |
 | Availability/slot | Customer, operator | Storefront dan calendar | UI storefront tervalidasi | Integrasi fresh belum discreen | Availability API | Slot/lock persistence | Tenant dan concurrency wajib | Belum discreen ulang | Storefront 390 sampai 4K tetap canvas <=460 px | Playwright S109/S122 | `UIUX_VALIDATED` | Uji hold, race, expiry, retry, dan read-after-write. |

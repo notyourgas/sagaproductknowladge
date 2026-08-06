@@ -49,6 +49,28 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
   payment, device/session, foto customer, dan output 4R tetap.
 - File knowledge: product, dossier, changelog, ledger SagaView, decision, gaps,
   master, portfolio/root changelog, dan sync status.
+### SagaBook auth/session S123 production dan integration validated
+
+- Ringkasan: recovery network, pencegahan submit ganda, state busy/focus, dan
+  aksesibilitas logout mobile diperbaiki; auth/session diverifikasi dari UI
+  sampai API, service, persistence, dan kembali ke UI.
+- Alasan: menutup diagnosis keliru ketika network gagal dan blocker nama
+  aksesibel pada kontrol logout mobile.
+- Produk/area: SagaBook admin login, session, logout, role/capability,
+  tenant isolation, responsive/a11y, acceptance, dan immutable deployment.
+- Klasifikasi: `CONFIRMED`; scope auth/session `UIUX_VALIDATED /
+  INTEGRATION_VALIDATED / PRODUCTION_ACTIVATED`. Produk keseluruhan belum
+  `BUSINESS_READY`.
+- Source/release: `a9125228f8bda3d919a55b1a6ed154355e1bf9da` /
+  `20260806043833-a912522`; rollback `20260806040004-1b8c91f`.
+- Gate: full backend 961/961, browser regression 71 pass/7 intentional skip,
+  build, design 26/0, npm/Composer audit nol, encrypted backup/checksum/restore,
+  DB audit, service/queue/header, dan production smoke 6/6.
+- Production berubah: ya, frontend auth recovery/accessibility; kontrak API dan
+  schema tidak berubah. Subscription activation dan website booking aktif
+  tidak diubah.
+- File knowledge: product/dossier/changelog/ledger SagaBook, master, gaps,
+  portfolio, root changelog, dan sync status.
 
 ### SagaBook Template Booking S122 production dan feature coverage ledger
 

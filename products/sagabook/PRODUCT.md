@@ -156,9 +156,9 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
 
 - Customer Booking Center aktif di production.
 - Source production terbaru pada cut-off: commit
-  `1b8c91fc182d1bd8e552cafa16785e5b90bbab01`.
-- Release production terbaru: `20260806040004-1b8c91f`, dengan rollback
-  `20260805052322-20ff682`.
+  `a9125228f8bda3d919a55b1a6ed154355e1bf9da`.
+- Release production terbaru: `20260806043833-a912522`, dengan rollback
+  `20260806040004-1b8c91f`.
 - `CONFIRMED` melalui `DEC-031`: storefront booking tenant selalu memakai satu
   canvas mobile maksimum 460 piksel pada semua viewport. Desktop hanya
   memusatkan canvas tersebut; layout rail, workspace dua kolom, canvas lebar,
@@ -184,6 +184,15 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
   Coverage integrasi dilanjutkan melalui
   [Feature Coverage Ledger](FEATURE_COVERAGE_LEDGER.md); status release UI/UX
   tidak otomatis berarti `INTEGRATION_VALIDATED` untuk setiap fitur.
+- Auth/session S123 berstatus `UIUX_VALIDATED / INTEGRATION_VALIDATED /
+  LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` pada source
+  `a9125228f8bda3d919a55b1a6ed154355e1bf9da`, release
+  `20260806043833-a912522`. Login sekarang memiliki timeout/cancellation,
+  pencegahan double-submit, recovery network yang jujur, pemulihan fokus, dan
+  state busy yang dapat diakses; tombol logout mobile memiliki nama aksesibel.
+  Login, session, logout, activity log, `last_login_at`, protected 401,
+  capability 403, dan cross-tenant 403 tervalidasi end-to-end. Ini hanya
+  menutup irisan auth/session; coverage produk keseluruhan masih bertahap.
 - Website booking satu tenant trial diaktifkan hanya setelah pre-publish
   readiness 100, lalu post-activation setup/pilot readiness dan HTTP publik
   lulus. Release gate production 10/10, backup terenkripsi/checksum/disposable

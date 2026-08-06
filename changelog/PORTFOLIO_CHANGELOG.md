@@ -24,6 +24,22 @@
 - Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Production, pricing,
   entitlement, payment, device/session, foto customer, dan output 4R tidak
   berubah; UAT dua akun dan guarded deployment masih residual.
+## 2026-08-06 - SagaBook auth/session S123 production
+
+- Login SagaBook kini membedakan kegagalan network dari kredensial salah,
+  memiliki timeout/cancellation, in-flight guard, recovery focus, state busy,
+  serta tombol logout mobile yang bernama untuk teknologi bantu.
+- UI -> frontend -> API -> auth/session service -> persistence -> response UI
+  tervalidasi untuk happy path, invalid credential, logout, protected 401,
+  capability 403, dan cross-tenant 403.
+- Source/release `a9125228f8bda3d919a55b1a6ed154355e1bf9da` /
+  `20260806043833-a912522`; rollback `20260806040004-1b8c91f`. Full backend
+  961/961, regression browser 71 pass/7 intentional skip, build, audit,
+  backup/restore, service, dan production smoke 6/6 lulus.
+- Status scope auth/session `UIUX_VALIDATED / INTEGRATION_VALIDATED /
+  PRODUCTION_ACTIVATED`; coverage produk tetap feature-by-feature dan belum
+  `BUSINESS_READY`. Subscription activation serta website booking aktif tidak
+  diubah.
 
 ## 2026-08-06 - SagaBook Template Booking S122 production dan ledger integrasi
 

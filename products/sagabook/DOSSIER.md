@@ -146,6 +146,17 @@ database, migration, booking, payment, availability, entitlement, atau
 subscription activation yang berubah. Screening integrasi berikutnya mengikuti
 [Feature Coverage Ledger](FEATURE_COVERAGE_LEDGER.md) dan `DEC-041`.
 
+Auth/session S123 pada source
+`a9125228f8bda3d919a55b1a6ed154355e1bf9da` aktif sebagai release
+`20260806043833-a912522` dengan rollback `20260806040004-1b8c91f`. Frontend
+login memakai timeout 15 detik, cancellation, in-flight guard, password
+clear/refocus, pesan network yang dapat dicoba ulang, dan `aria-busy`. Tombol
+logout mobile kini memiliki nama aksesibel. Alur UI -> frontend -> API ->
+auth/session service -> staff/activity log/session store -> response UI,
+termasuk invalid credential, protected 401, capability 403, cross-tenant 403,
+dan logout lulus dengan data demo public-safe. S123 tidak mengaktifkan
+subscription dan tidak menonaktifkan website booking yang sudah aktif.
+
 Candidate customer request terbaru adalah source kumulatif
 `b2b638cece4e9b18720a5367c05dcda3bb86ecf6` pada
 `codex/s118-sagabook-request-recovery`, berstatus `LOCAL_VALIDATED /

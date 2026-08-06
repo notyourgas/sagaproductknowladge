@@ -4,6 +4,31 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-06 - Auth/session recovery dan aksesibilitas production S123
+
+- Klasifikasi: `CONFIRMED`; scope auth/session berstatus `UIUX_VALIDATED /
+  INTEGRATION_VALIDATED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`. Source
+  `a9125228f8bda3d919a55b1a6ed154355e1bf9da` aktif sebagai release immutable
+  `20260806043833-a912522`; rollback `20260806040004-1b8c91f` dipertahankan.
+- Before: gangguan network dapat dipetakan seperti kredensial salah, submit
+  ganda belum dijaga secara sinkron, dan tombol logout mobile tidak mempunyai
+  nama aksesibel. After: timeout/cancellation 15 detik, in-flight guard,
+  recovery retry yang jujur, password clear/refocus, `aria-busy`, dan label
+  logout mobile menutup gap tersebut.
+- Integrasi nyata mencakup login, session, logout, activity log,
+  `last_login_at`, protected 401, capability 403, dan cross-tenant 403.
+  Backend focused 1 test/21 assertion, browser focused 7 pass/1 intentional
+  skip, regression 71 pass/7 intentional skip, full backend 961/961 dengan
+  11.028 assertion, serta production smoke 6/6 lulus.
+- Viewport 390x844, 1280x800, 1440x900, 1512x982, 1920x1080, dan 2560x1440
+  serta zoom 100/125/150/200 persen lulus tanpa horizontal overflow. Tepat satu
+  `Powered by SagaBook` dipertahankan.
+- Backup terenkripsi/checksum/disposable restore, build, design audit 26/0,
+  npm/Composer audit nol, migration/DB audit, service/queue, header, dan public
+  smoke lulus. Subscription tenant tidak diaktifkan dan website booking yang
+  sudah aktif tidak dinonaktifkan. Produk keseluruhan belum `BUSINESS_READY`.
+
 ## 2026-08-06 - Editor Template Booking adaptif production S122
 
 - Klasifikasi: `CONFIRMED`; delivery `PRODUCTION_DEPLOYED`. Source

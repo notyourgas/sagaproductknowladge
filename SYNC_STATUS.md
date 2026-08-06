@@ -15,17 +15,18 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-08-06T11:52:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `40962c0` |
-| Informasi terakhir disinkronkan | AOGTICVITY live standing server-authoritative aktif melalui source `b7fabaaf`, Hostinger `20260806T043451Z`, dan Vercel `dpl_ERhafxHwXJCoTHbV8dxsskExieC7`; worker timer immutable-release regression ditutup. |
+| Baseline sebelum pembaruan | `f3e4bf0` |
+| Informasi terakhir disinkronkan | SagaBook auth/session S123 aktif melalui source `a9125228`, release `20260806043833-a912522`; irisan auth/session berstatus `UIUX_VALIDATED / INTEGRATION_VALIDATED / PRODUCTION_ACTIVATED`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik baru. Delivery production tetap dipisahkan dari event readiness dan UAT manusia. |
-| Error | Tidak ada error AOGTICVITY aktif; application readiness sehat, worker timer exit 0, dan proxy/journal application error nol. |
+| Konflik | Tidak ada konflik informasi. Perubahan AOGTICVITY/SagaView pada `origin/main` dipertahankan; sinkronisasi S123 direbase dari clone bersih tanpa menimpa checkout utama. |
+| Error | Tidak ada error release baru. Queue SagaBook mencatat nol error sejak deploy pada pemeriksaan pasca-release. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/aogticvity/PRODUCT.md`
-- `products/aogticvity/DOSSIER.md`
-- `products/aogticvity/CHANGELOG.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
 - `GAPS.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
@@ -40,12 +41,13 @@ collision-safe key, publish terpisah, guarded deployment, live smoke, dan
 rollback verification. Sampai gate tersebut selesai, fitur tidak boleh disebut
 aktif di production.
 
-Ledger integrasi SagaBook dan SagaView masih bertahap. Status
+Ledger integrasi SagaBook dan SagaView masih bertahap. Auth/session SagaBook
+S123 sudah `INTEGRATION_VALIDATED`; residualnya expiry idle, revocation lintas
+device, dan UI rate-limit 429. Status
 `INTEGRATION_VALIDATED` hanya diberikan setelah happy path, failure/retry,
 permission/tenant-negative, dan data integrity fitur terkait memiliki bukti
-fresh. Prioritas berikutnya: SagaBook auth/session, tenant/cabang, lalu
-availability/slot; SagaView auth/device/session, local ingest, lalu session
-flow dengan no-upload guarantee.
+fresh. Prioritas berikutnya: SagaBook tenant/cabang lalu katalog; SagaView
+auth/device/session, local ingest, lalu session flow dengan no-upload guarantee.
 
 AOGTICVITY tetap menunggu assignment empat peserta approved, PIC untuk sepuluh
 lomba, roster publish/lock, audited reconciliation record lama, valid-link/
