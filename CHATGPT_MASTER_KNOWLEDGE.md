@@ -541,7 +541,7 @@ backend release `20260806071707-7397954` dan Studio
 `20260806071733-3b66f8d`; authenticated Owner UAT tetap residual sebelum
 `BUSINESS_READY` mass-scale.
 Keputusan founder `DEC-045` menambahkan batch import template langsung dari
-Galeri Frame sebagai candidate `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+Galeri Frame dengan status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
 Source `1657c16ca3e05dd442db66ad11177f13edae1d37` menerima drag-and-drop atau
 multi-file picker sampai 100 `.sagaview-frame`, lalu memvalidasi, membuat key
 unik, mencocokkan/fallback kategori, menyimpan draft, dan mencoba publish setiap
@@ -549,8 +549,13 @@ file secara berurutan. File invalid tidak menghentikan batch; publish rejection
 mempertahankan draft. Stress scenario 50 template valid + satu invalid JSON +
 satu publish 422 menghasilkan 49 published, 1 draft, dan 1 failed, dengan
 responsive Playwright, build/audit, backend 909/909, serta Frame Authoring 12/12
-lulus. Production belum berubah dan tetap memakai backend
-`20260806071707-7397954` serta Studio `20260806071733-3b66f8d`.
+lulus. Fresh encrypted backup/restore, candidate/rollback rehearsal, deploy gate
+6/6, canary/payment/device preservation, service/journal/security-header/public
+smoke, live marker, dan rollback target verification lulus. Production aktif
+pada backend `20260806092647-1657c16` dan Studio `20260806092648-3b66f8d`;
+rollback `20260806071707-7397954` / `20260806071733-3b66f8d` dipertahankan.
+Authenticated Owner UAT 40-100 file nyata pada dua akun tetap residual sebelum
+`BUSINESS_READY` mass-scale.
 Implementasi rotate lama yang menukar W/H 90 derajat telah `DEPRECATED` oleh
 koreksi founder `DEC-036`. Perilaku production yang aktif adalah
 diterima adalah tahan ikon rotate lalu drag ke kiri/kanan agar slot mendapat

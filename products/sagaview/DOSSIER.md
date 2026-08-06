@@ -172,7 +172,7 @@ download tetap dikendalikan browser. Delivery dan activation
 Rollback backend `20260806050513-1158926` dan Studio
 `20260806050546-3b66f8d` dipertahankan; Owner UAT galeri nyata masih residual.
 
-Batch import Galeri Frame ditetapkan melalui `DEC-045` dan candidate source
+Batch import Galeri Frame ditetapkan melalui `DEC-045` dan source
 `1657c16ca3e05dd442db66ad11177f13edae1d37`. Modal gallery menerima drag-and-drop
 atau multi-file picker sampai 100 template. Decoder single-import dipakai ulang
 untuk schema v1, magic-byte PNG/WebP, batas 15 MB, source dimensions, SHA-256
@@ -190,9 +190,15 @@ Responsive Playwright tiga viewport, regresi import lama, build, npm audit nol,
 full backend 909/909 dengan 10.665 assertion, Frame Authoring 12/12 dengan 45
 assertion, dan diff check lulus. Implementasi tidak menambah route/migration dan
 tidak mengubah pricing, entitlement, payment, device/session, foto customer,
-atau Studio runtime. Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
-production tetap release backend `20260806071707-7397954` dan Studio
-`20260806071733-3b66f8d`.
+atau source Studio. Delivery dan activation
+`PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` melalui backend release
+`20260806092647-1657c16` dan Studio release `20260806092648-3b66f8d`. Fresh
+encrypted backup/checksum/restore, candidate dan rollback rehearsal, deploy gate
+6/6, canary/payment/device preservation, atomic release, service/journal,
+security-header/public smoke, live marker, serta rollback target verification
+lulus. Rollback backend `20260806071707-7397954` dan Studio
+`20260806071733-3b66f8d` dipertahankan. Authenticated Owner UAT dengan 40-100
+file nyata pada dua akun tetap residual sebelum `BUSINESS_READY` mass-scale.
 
 Mulai sesi production memakai checklist perangkat, paket, folder, frame, dan
 output serta satu CTA kontekstual 48 px. Utility cloud/recovery yang sehat

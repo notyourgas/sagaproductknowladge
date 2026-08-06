@@ -4,8 +4,8 @@ Updated: 6 Agustus 2026
 Evidence status: production deployed + production activated; frame import-order,
 compact all-menu, workspace Session/Output/Izin Foto monitor besar, free drag
 rotation, pemisahan Simpan Draft/Publish Frame, limit Growth 50/Pro 100,
-portable frame template, dan bulk export aktif di production. Batch import
-template adalah candidate local-validated dan belum dideploy.
+portable frame template, bulk export, dan batch import template aktif di
+production.
 
 ## Tujuan dokumen
 
@@ -20,9 +20,6 @@ yang diverifikasi sampai 6 Agustus 2026.
 
 ## Status production terbaru
 
-- Studio source `3b66f8d5df3e34aba11c4eab2619cfe44efd06d7` aktif sebagai
-  release `20260806071733-3b66f8d`; rollback
-  `20260806050546-3b66f8d` dipertahankan.
 - Workspace Session memakai lebar adaptif sampai 1600 piksel pada monitor
   besar. Layar mobile, laptop compact, dan MacBook tetap memakai reflow lama;
   tidak ada horizontal overflow atau fitur yang disembunyikan.
@@ -33,9 +30,12 @@ yang diverifikasi sampai 6 Agustus 2026.
   lalu memakai dua kartu sesi berdampingan pada QHD/4K di dalam batas 1400
   piksel. Ringkasan, filter, retry, cabut izin, dan workflow privacy tidak
   berubah.
-- Backend source `73979542ceeb8fc11e658c7d27346ca983dc163f` aktif sebagai
-  release `20260806071707-7397954`; rollback
-  `20260806050513-1158926` dipertahankan.
+- Backend source `1657c16ca3e05dd442db66ad11177f13edae1d37` aktif sebagai
+  release `20260806092647-1657c16`; rollback
+  `20260806071707-7397954` dipertahankan.
+- Studio tetap memakai source `3b66f8d5df3e34aba11c4eab2619cfe44efd06d7`
+  melalui release `20260806092648-3b66f8d`; rollback
+  `20260806071733-3b66f8d` dipertahankan.
 - Entitlement live memberi Growth 50 dan Pro 100 frame aktif. Harga, device,
   preset, offline grace, storage, laporan, support, payment, dan fair-use tidak
   berubah.
@@ -248,8 +248,8 @@ residual sebelum klaim `BUSINESS_READY` mass-scale.
 
 ## Batch import template Galeri Frame
 
-`CONFIRMED` melalui `DEC-045`, dengan delivery `LOCAL_VALIDATED /
-IMPLEMENTED_NOT_DEPLOYED` pada source candidate
+`CONFIRMED` melalui `DEC-045`, dengan delivery dan activation
+`PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` pada source
 `1657c16ca3e05dd442db66ad11177f13edae1d37`, branch
 `codex/sagaview-batch-frame-import-s119`. Owner dapat membuka `Batch import`
 langsung dari Galeri Frame lalu drag-and-drop atau memilih sampai 100 file
@@ -265,10 +265,15 @@ dan satu publish 422 menghasilkan 49 published, 1 draft, dan 1 failed. Focused
 Playwright mobile/tablet/desktop, regresi single import, production build, npm
 audit nol, backend 909/909 dengan 10.665 assertion, Frame Authoring 12/12 dengan
 45 assertion, dan diff check lulus. Tidak ada route, migration, pricing,
-entitlement, payment, device/session, foto customer, atau perubahan Studio.
-Production tetap backend `20260806071707-7397954` dan Studio
-`20260806071733-3b66f8d`; guarded deploy, live smoke, rollback verification, dan
-authenticated Owner UAT masih residual.
+entitlement, payment, device/session, foto customer, atau perubahan source
+Studio. Fresh encrypted backup/checksum/restore, disposable candidate dan
+rollback rehearsal, deploy gate 6/6, canary/payment/device preservation, atomic
+release, service/journal/security-header/public smoke, live marker, dan rollback
+target verification lulus. Production aktif pada backend
+`20260806092647-1657c16` dan Studio `20260806092648-3b66f8d`; rollback
+`20260806071707-7397954` / `20260806071733-3b66f8d` dipertahankan.
+Authenticated Owner UAT dengan 40-100 file nyata pada dua akun tetap residual
+sebelum klaim `BUSINESS_READY` mass-scale.
 
 ## Session completion dan privacy handoff
 

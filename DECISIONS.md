@@ -256,7 +256,7 @@ keputusan pengganti.
 | Alternatif yang dipertimbangkan | Mempertahankan import satu file; menerima hanya ZIP/bundle baru; menghentikan seluruh batch pada error pertama; membuang draft ketika publish gagal; mengabaikan category/key collision. |
 | Dampak | Galeri memperoleh modal drag-and-drop, batas 100 file, progress dan status per file, strict decoder template v1, collision-safe key, category matching/fallback, sequential draft/publish, invalid-file continuation, serta draft preservation saat publish ditolak. Backend tetap mengotorisasi permission, entitlement/limit aktif, storage, dan publish. Tidak ada route, migration, pricing, payment, device/session, foto customer, atau Studio runtime baru. |
 | Pemberi keputusan | Andreas / founder |
-| Status | `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; source `1657c16ca3e05dd442db66ad11177f13edae1d37`, production tetap backend `20260806071707-7397954` dan Studio `20260806071733-3b66f8d`; guarded deploy dan authenticated Owner UAT masih residual |
+| Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; source `1657c16ca3e05dd442db66ad11177f13edae1d37`, backend release `20260806092647-1657c16`, Studio release `20260806092648-3b66f8d`, rollback `20260806071707-7397954` / `20260806071733-3b66f8d`; authenticated Owner UAT 40-100 file nyata pada dua akun masih residual sebelum `BUSINESS_READY` mass-scale |
 | Dokumen terkait | [SagaView Product](products/sagaview/PRODUCT.md), [SagaView Dossier](products/sagaview/DOSSIER.md), [SagaView Changelog](products/sagaview/CHANGELOG.md), [SagaView Ledger](products/sagaview/FEATURE_COVERAGE_LEDGER.md), [Gaps](GAPS.md) |
 
 ## DEC-044 - Galeri Frame SagaView mendukung pilihan dan export massal

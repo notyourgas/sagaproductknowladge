@@ -170,13 +170,14 @@ ketika keputusan atau release baru menutup gap.
 
 ### SagaView
 
-- `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: `DEC-045` batch import Galeri
-  Frame selesai pada source `1657c16ca3e05dd442db66ad11177f13edae1d37`.
-  Residual: guarded deploy, backup/restore dan rehearsal rollback, live marker/
-  smoke, serta authenticated Owner UAT sampai 100 file pada dua akun termasuk
-  invalid template, category fallback/edit, key collision, plan-limit/storage
-  rejection, retry/idempotency, dan draft recovery. Production tetap backend
-  `20260806071707-7397954` dan Studio `20260806071733-3b66f8d`.
+- `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: `DEC-045` batch import Galeri
+  Frame aktif melalui source `1657c16ca3e05dd442db66ad11177f13edae1d37`,
+  backend release `20260806092647-1657c16`, dan Studio release
+  `20260806092648-3b66f8d`. Rollback `20260806071707-7397954` /
+  `20260806071733-3b66f8d` dipertahankan. Residual sebelum `BUSINESS_READY`:
+  authenticated Owner UAT 40-100 file nyata pada dua akun termasuk invalid
+  template, category fallback/edit, key collision, tenant-negative,
+  plan-limit/storage rejection, retry/idempotency, dan draft recovery.
 
 - `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: `DEC-044` aktif melalui source
   `73979542ceeb8fc11e658c7d27346ca983dc163f`, backend release

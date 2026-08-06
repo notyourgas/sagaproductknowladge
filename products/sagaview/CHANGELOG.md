@@ -4,6 +4,26 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-08-06 - Batch import template Galeri Frame production
+
+- Klasifikasi: `CONFIRMED` melalui keputusan founder `DEC-045`.
+- Status: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; business readiness
+  mass-scale tetap `NEEDS CONFIRMATION`.
+- Backend source `1657c16ca3e05dd442db66ad11177f13edae1d37`, release
+  `20260806092647-1657c16`; Studio source
+  `3b66f8d5df3e34aba11c4eab2619cfe44efd06d7`, release
+  `20260806092648-3b66f8d`.
+- Rollback backend `20260806071707-7397954` dan Studio
+  `20260806071733-3b66f8d` dipertahankan.
+- Fresh encrypted backup/checksum/restore, candidate dan rollback rehearsal,
+  deploy gate 6/6, canary/payment/device preservation, atomic release,
+  service/journal/security-header/public smoke, live marker, dan rollback target
+  verification lulus. Tidak ada payment intent/QRIS baru, perubahan device,
+  foto customer, route, atau migration dari fitur ini.
+- Authenticated Owner UAT dengan 40-100 file nyata pada dua akun, category edit,
+  tenant-negative, plan-limit/storage rejection, retry/idempotency, dan draft
+  recovery tetap residual sebelum klaim `BUSINESS_READY` mass-scale.
+
 ## 2026-08-06 - Batch import template Galeri Frame candidate
 
 - Klasifikasi: `CONFIRMED` melalui keputusan founder `DEC-045`.
