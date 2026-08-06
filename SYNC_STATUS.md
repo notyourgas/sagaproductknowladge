@@ -12,24 +12,24 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-06T12:34:29+07:00 |
+| Waktu pembaruan terakhir | 2026-08-06T13:04:57+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `d9a610b` |
-| Informasi terakhir disinkronkan | SagaBook tenant/cabang S124 aktif melalui source `f6988cb9`, release `20260806053037-f6988cb`; irisan status/write `INTEGRATION_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. |
+| Baseline sebelum pembaruan | `21ca00a` |
+| Informasi terakhir disinkronkan | AOGTICVITY menambah kategori `Other Region` dengan `AOG Ponorogo` dan `AOG Magetan`; source runtime `5a2d3ef`, Hostinger `20260806T055642Z`, Vercel `dpl_4RtjNcViWkxN3fZSTZ15VWiumy5G`, migration 024. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik informasi; kontrak storefront mobile-only, SagaView local-first, dan waiver subscription dipertahankan. |
-| Error | Tidak ada error release baru; queue error sejak aktivasi nol dan public smoke 4/4. |
+| Konflik | Tidak ada konflik informasi; kategori Teen/Youth, record legacy, dan blocker UAT yang sudah ada dipertahankan. |
+| Error | Tidak ada error release baru; public taxonomy smoke 11/11 dan browser mobile tanpa overflow lulus. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/sagabook/PRODUCT.md`
-- `products/sagabook/DOSSIER.md`
-- `products/sagabook/CHANGELOG.md`
-- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/aogticvity/PRODUCT.md`
+- `products/aogticvity/DOSSIER.md`
+- `products/aogticvity/CHANGELOG.md`
 - `GAPS.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
+- `DECISIONS.md`
 - `CHANGELOG.md`
 - `SYNC_STATUS.md`
 

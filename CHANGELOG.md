@@ -12,6 +12,28 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-06
 
+### AOGTICVITY Other Region taxonomy production
+
+- Ringkasan: menambahkan kategori utama `Other Region` dengan subcategory `AOG
+  Ponorogo` dan `AOG Magetan` pada form publik/admin, API, export, dan MySQL.
+- Alasan: anggota dua wilayah tersebut memerlukan jalur komunitas kanonik dan
+  tidak boleh dipaksa ke Youth, input bebas, atau jalur VIP.
+- Produk/area: AOGTICVITY registration taxonomy, admin participant form, API
+  validation, export, migration/constraint MySQL, test, release, dan rollback.
+- Klasifikasi: `CONFIRMED`; founder decision `DEC-043` dan runtime production
+  terverifikasi.
+- Source/release: source runtime
+  `5a2d3ef3fdb21503f9a559334796cea656f1a087`, Hostinger
+  `20260806T055642Z`, Vercel `dpl_4RtjNcViWkxN3fZSTZ15VWiumy5G`, migration 024.
+- Gate: 128 unit/API, 28/28 disposable MySQL integration, 63/63 UI, 11/11
+  public production, dependency audit, build, backup/restore, dan rollback
+  lulus.
+- Production berubah: ya pada taxonomy registrasi. Delivery/activation taxonomy
+  `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; business readiness produk tetap
+  `BLOCKED` oleh UAT operasi hari-H. Data peserta existing tidak diubah.
+- File knowledge: product, dossier, changelog AOGTICVITY, master, decision,
+  gaps, portfolio/root changelog, dan sync status.
+
 ### SagaBook tenant/cabang S124 production dan integration slice validated
 
 - Ringkasan: status cabang memperoleh double-submit guard, pending/error/retry

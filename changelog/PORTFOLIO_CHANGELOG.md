@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-08-06 - AOGTICVITY Other Region taxonomy production
+
+- Kategori utama `Other Region` dengan `AOG Ponorogo` dan `AOG Magetan` kini
+  aktif pada form publik/admin, API, export, dan constraint MySQL.
+- Source runtime `5a2d3ef3fdb21503f9a559334796cea656f1a087`, Hostinger
+  `20260806T055642Z`, Vercel `dpl_4RtjNcViWkxN3fZSTZ15VWiumy5G`, migration 024.
+- Delivery/activation taxonomy `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+  business readiness AOGTICVITY tetap `BLOCKED` oleh UAT operasi hari-H.
+
 ## 2026-08-06 - SagaBook tenant/cabang S124 production
 
 - Status cabang kini mencegah mutation ganda, menampilkan pending/error/retry

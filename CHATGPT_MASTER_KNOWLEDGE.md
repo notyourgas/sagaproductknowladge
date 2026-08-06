@@ -752,8 +752,11 @@ memisahkan track nomor, copy, dan panah pada kartu alur pendaftaran. Public
 geometry 320 px serta Playwright 48/48 membuktikan elemen tidak bertumpuk.
 Source `e38de48b2e8a88d7a7e2ac8aa54b0af9e398b38c`, Hostinger
 `20260803T192801Z`, Vercel `dpl_8PU7woDFGWbJeK3dYTMZHASfzX4K`, dan migration
-017 mengaktifkan taxonomy komunitas final. Pendaftaran baru hanya memakai
-`TEEN` dengan CG teen 1-6 atau `SOUTH, WEST, CENTRAL` dengan CG youth 1-8.
+017 mengaktifkan baseline taxonomy komunitas: `TEEN` dengan CG teen 1-6 atau
+`SOUTH, WEST, CENTRAL` dengan CG youth 1-8. Source runtime
+`5a2d3ef3fdb21503f9a559334796cea656f1a087`, Hostinger
+`20260806T055642Z`, Vercel `dpl_4RtjNcViWkxN3fZSTZ15VWiumy5G`, dan migration
+024 kemudian menambah `Other Region` dengan `AOG Ponorogo` dan `AOG Magetan`.
 Form, API, admin/export, dan database memakai kontrak yang sama; nilai demo
 lama hanya dipertahankan sebagai legacy read-only dan tidak muncul di form.
 Source `ecaa63f42deaf61e0777959853106e61e4b0bbc3`, Hostinger

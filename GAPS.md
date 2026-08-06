@@ -414,11 +414,12 @@ ketika keputusan atau release baru menutup gap.
 - Admin password claim dan public registration MySQL sudah
   `PRODUCTION_ACTIVATED`; dataset awal kosong dan participant demo tidak lagi
   menjadi sumber operasional.
-- Taxonomy pendaftaran final `TEEN`/CG teen 1-6 dan
-  `SOUTH, WEST, CENTRAL`/CG youth 1-8 sudah `PRODUCTION_DEPLOYED` pada
-  migration 017. Record taxonomy lama dipertahankan sebagai legacy read-only;
-  keputusan koreksi/penghapusan tiap record tetap memerlukan verifikasi pemilik
-  data dan tidak menjadi blocker submission baru.
+- Taxonomy pendaftaran final `TEEN`/CG teen 1-6, `SOUTH, WEST, CENTRAL`/CG
+  youth 1-8, dan `Other Region`/`AOG Ponorogo`/`AOG Magetan` sudah
+  `PRODUCTION_DEPLOYED` melalui migration 017 dan 024. Record taxonomy lama
+  dipertahankan sebagai legacy read-only; keputusan koreksi/penghapusan tiap
+  record tetap memerlukan verifikasi pemilik data dan tidak menjadi blocker
+  submission baru.
 - Jalur VIP `/register/guest` dan access policy migration 021 sudah
   `PRODUCTION_DEPLOYED`. `NEEDS CONFIRMATION`: satu UAT nyata dari submit VIP,
   pending WhatsApp, approval tanpa tim, perubahan TTL, open/close unused link,

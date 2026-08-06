@@ -8,6 +8,22 @@ Mencatat perubahan material AOGTICVITY/17an/Olimpiade.
 
 Nama lama dipertahankan sebagai provenance; status runtime harus eksplisit.
 
+## 2026-08-06 - Other Region taxonomy production
+
+- `CONFIRMED`: kategori utama `Other Region` aktif dengan dua subcategory
+  eksklusif, `AOG Ponorogo` dan `AOG Magetan`.
+- Satu source of truth mengatur form publik/admin, validasi API, export, dan
+  constraint MySQL. Pasangan category-subcategory silang ditolak.
+- Source runtime `5a2d3ef3fdb21503f9a559334796cea656f1a087`; Hostinger
+  `20260806T055642Z`; Vercel `dpl_4RtjNcViWkxN3fZSTZ15VWiumy5G`; migration
+  `024_other_region_taxonomy`.
+- Gate: 128 unit/API, 28/28 disposable MySQL integration, 63/63 UI, 11/11
+  public production, dependency audit tanpa vulnerability, exact-source build,
+  backup/restore, security/routing smoke, dan rollback lulus.
+- Delivery dan activation taxonomy `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
+  Business readiness produk tetap `BLOCKED` oleh UAT operasi hari-H yang sudah
+  tercatat; tidak ada data peserta existing yang diubah.
+
 ## 2026-08-06 - Live standings server-authoritative production
 
 - `CONFIRMED`: hasil `Draft` tetap privat; hanya `Published`/`Corrected` masuk

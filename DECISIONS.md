@@ -608,3 +608,17 @@ keputusan pengganti.
 | Pemberi keputusan | Andreas / founder |
 | Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; source `1158926b2be35887aff7dc8a09cb0111e8a71fc7`, backend release `20260806050513-1158926`, Studio release `20260806050546-3b66f8d`; authenticated Owner UAT lintas dua akun tetap residual |
 | Dokumen terkait | [SagaView Product](products/sagaview/PRODUCT.md), [SagaView Dossier](products/sagaview/DOSSIER.md), [SagaView Changelog](products/sagaview/CHANGELOG.md), [SagaView Ledger](products/sagaview/FEATURE_COVERAGE_LEDGER.md), [Gaps](GAPS.md) |
+
+## DEC-043 - AOGTICVITY menambah kategori Other Region
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-06 |
+| Topik | Perluasan kategori utama dan subcategory pendaftaran AOGTICVITY |
+| Keputusan | Tambahkan kategori utama `Other Region` dengan subcategory yang hanya terdiri dari `AOG Ponorogo` dan `AOG Magetan`. Kategori `TEEN` dan `SOUTH, WEST, CENTRAL` tetap berlaku tanpa perubahan. |
+| Alasan | Founder membutuhkan jalur pendaftaran kanonik bagi peserta dari wilayah AOG di luar kategori Teen dan Youth yang sudah ada. |
+| Alternatif yang dipertimbangkan | Memasukkan Ponorogo/Magetan ke kategori Youth; memakai input teks bebas; memakai jalur VIP untuk anggota komunitas Other Region. |
+| Dampak | Source taxonomy, form publik/admin, validasi API, export, migration/constraint MySQL, test, dan knowledge memakai kode stabil `OtherRegion` serta dua label subcategory yang disetujui. Pasangan silang ditolak dan data existing tidak dimutasi. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; source runtime `5a2d3ef3fdb21503f9a559334796cea656f1a087`, Hostinger `20260806T055642Z`, Vercel `dpl_4RtjNcViWkxN3fZSTZ15VWiumy5G`, migration 024 |
+| Dokumen terkait | [AOGTICVITY Product](products/aogticvity/PRODUCT.md), [AOGTICVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTICVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |

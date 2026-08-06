@@ -121,12 +121,15 @@ lama sampai DNS, TLS, serta public smoke lulus. Rollback langsung tetap
 Hostinger `20260804T164327Z` dan Vercel
 `dpl_5pVdzKAGfZVv4w41cLborLhDFv4Z`.
 
-Taxonomy komunitas final mempunyai dua kategori utama: `TEEN` dengan enam
-subcategory `CG teen`, dan `SOUTH, WEST, CENTRAL` dengan delapan subcategory
-`CG youth`. Form, API validation, admin display, export, team balancing, dan
-constraint MySQL memakai satu taxonomy kanonik. Nilai demo lama tidak dapat
-dipakai untuk submission baru; record historis tetap dapat dibaca sebagai
-legacy dan tidak dipetakan secara spekulatif.
+Taxonomy komunitas final mempunyai tiga kategori utama: `TEEN` dengan enam
+subcategory `CG teen`, `SOUTH, WEST, CENTRAL` dengan delapan subcategory `CG
+youth`, serta `Other Region` dengan `AOG Ponorogo` dan `AOG Magetan`. Form,
+API validation, admin display, export, team balancing, dan constraint MySQL
+memakai satu taxonomy kanonik. Nilai demo lama tidak dapat dipakai untuk
+submission baru; record historis tetap dapat dibaca sebagai legacy dan tidak
+dipetakan secara spekulatif. Penambahan `Other Region` aktif melalui migration
+024, Hostinger `20260806T055642Z`, dan Vercel production
+`dpl_4RtjNcViWkxN3fZSTZ15VWiumy5G`.
 
 Admin Control Center memetakan aksi CRUD/lifecycle untuk anggota, tim, lomba,
 roster, rundown, hasil, pengumuman, akun, WhatsApp, dan audit. Anggota dapat

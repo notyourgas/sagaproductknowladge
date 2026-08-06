@@ -148,11 +148,14 @@ Public delivery kanonik: `https://aogticvities.fun`.
 - Source `e38de48b2e8a88d7a7e2ac8aa54b0af9e398b38c`, Hostinger release
   `20260803T192801Z`, Vercel production
   `dpl_8PU7woDFGWbJeK3dYTMZHASfzX4K`, dan migration 017 mengganti taxonomy
-  komunitas demo. Pendaftaran baru hanya menawarkan kategori `TEEN` dengan
-  `CG teen 1` sampai `CG teen 6`, serta `SOUTH, WEST, CENTRAL` dengan
-  `CG youth 1` sampai `CG youth 8`. Validasi API dan constraint MySQL menolak
-  pasangan silang; record taxonomy lama tetap dipertahankan sebagai legacy
-  read-only tanpa ditampilkan pada form baru.
+  komunitas demo menjadi `TEEN`/CG teen 1-6 dan `SOUTH, WEST, CENTRAL`/CG
+  youth 1-8. Record taxonomy lama tetap dipertahankan sebagai legacy read-only.
+- Source runtime `5a2d3ef3fdb21503f9a559334796cea656f1a087`, Hostinger release
+  `20260806T055642Z`, Vercel production
+  `dpl_4RtjNcViWkxN3fZSTZ15VWiumy5G`, dan migration 024 menambah kategori utama
+  `Other Region` dengan kode stabil `OtherRegion`. Subcategory yang sah hanya
+  `AOG Ponorogo` dan `AOG Magetan`. Form publik/admin, API, export, dan
+  constraint MySQL memakai kontrak yang sama serta menolak pasangan silang.
 - Source `ecaa63f42deaf61e0777959853106e61e4b0bbc3`, Hostinger release
   `20260803T221158Z`, Vercel production
   `dpl_9jKWEEKDQJkszwBGNyyNYTpBs2CJ`, dan migration 018 mengaktifkan Admin
