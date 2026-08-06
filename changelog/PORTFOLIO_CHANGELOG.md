@@ -1,5 +1,22 @@
 # Portfolio Changelog
 
+## 2026-08-06 - SagaView ZIP bulk export S120 production
+
+- `DEC-048` mengaktifkan satu atau dua direct download `.sagaview-frame` dan
+  satu ZIP client-side untuk tiga atau lebih pilihan Galeri Frame.
+- Source/release backend
+  `555682bb749fc2c97a16172bbf09de2b6d8026d4` /
+  `20260806111019-555682b`; Studio source/release
+  `3b66f8d5df3e34aba11c4eab2619cfe44efd06d7` /
+  `20260806111020-3b66f8d`.
+- Full acceptance, audit dependency, encrypted backup/restore,
+  candidate+rollback rehearsal, final preflight, atomic release,
+  canary/payment/device preservation, service/journal/security-header/public
+  smoke, 4/4 live marker, dan rollback lulus.
+- Delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; rollback
+  `20260806092647-1657c16` / `20260806092648-3b66f8d` dipertahankan. Owner UAT
+  dengan galeri/frame nyata tetap residual sebelum business-ready.
+
 ## 2026-08-06 - COYABAG cart recovery candidate
 
 - Candidate source `368a89595ac0a667d99357b7c8216847cef707fb` menutup stale

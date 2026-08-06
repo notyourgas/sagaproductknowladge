@@ -170,6 +170,17 @@ ketika keputusan atau release baru menutup gap.
 
 ### SagaView
 
+- `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: `DEC-048` mengemas tiga atau
+  lebih pilihan bulk export menjadi satu ZIP client-side, sementara satu atau
+  dua pilihan tetap direct download. Source/release backend
+  `555682bb749fc2c97a16172bbf09de2b6d8026d4` /
+  `20260806111019-555682b`; Studio `20260806111020-3b66f8d`; rollback
+  `20260806092647-1657c16` / `20260806092648-3b66f8d`. Local acceptance,
+  encrypted backup/restore, rehearsal, final preflight, atomic release,
+  canary/preservation, live marker, service/journal/header/public smoke, dan
+  rollback lulus. Residual sebelum `BUSINESS_READY`: authenticated Owner UAT
+  memakai galeri/frame nyata, dua akun, tenant-negative, serta retry.
+
 - `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: `DEC-045` batch import Galeri
   Frame aktif melalui source `1657c16ca3e05dd442db66ad11177f13edae1d37`,
   backend release `20260806092647-1657c16`, dan Studio release

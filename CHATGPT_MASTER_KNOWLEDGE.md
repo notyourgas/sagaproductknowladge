@@ -540,6 +540,19 @@ lulus. Browser dapat meminta izin beberapa download. Fitur aktif melalui
 backend release `20260806071707-7397954` dan Studio
 `20260806071733-3b66f8d`; authenticated Owner UAT tetap residual sebelum
 `BUSINESS_READY` mass-scale.
+Koreksi founder `DEC-048` menetapkan packaging bulk export yang kini
+`PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: satu atau dua frame tetap direct
+download, sedangkan tiga atau lebih menjadi satu ZIP client-side. Source
+`555682bb749fc2c97a16172bbf09de2b6d8026d4` baru mengunduh arsip setelah semua
+template siap dan membatalkan seluruh ZIP bila satu frame gagal. Focused
+Playwright mobile/tablet/desktop 6/6, validasi tiga entry ZIP tenant-neutral,
+regresi dua download, build, audit dependency, backend 909/909, encrypted
+backup/restore, rehearsal, final preflight, atomic release, canary/preservation,
+service/journal/header/public smoke, live marker, dan rollback lulus. Production
+aktif pada backend `20260806111019-555682b` dan Studio
+`20260806111020-3b66f8d`; rollback `20260806092647-1657c16` /
+`20260806092648-3b66f8d` dipertahankan. Authenticated Owner UAT galeri nyata
+tetap residual sebelum `BUSINESS_READY` mass-scale.
 Keputusan founder `DEC-045` menambahkan batch import template langsung dari
 Galeri Frame dengan status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
 Source `1657c16ca3e05dd442db66ad11177f13edae1d37` menerima drag-and-drop atau

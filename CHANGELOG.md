@@ -12,6 +12,26 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-06
 
+### SagaView ZIP bulk export S120 production
+
+- Ringkasan: satu atau dua pilihan Galeri Frame tetap direct download; tiga
+  atau lebih kini aktif sebagai satu ZIP client-side dengan all-or-nothing
+  delivery.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
+  melalui `DEC-048`; business readiness mass-scale tetap `NEEDS CONFIRMATION`.
+- Source/release: `555682bb749fc2c97a16172bbf09de2b6d8026d4` /
+  `20260806111019-555682b`; Studio tetap source
+  `3b66f8d5df3e34aba11c4eab2619cfe44efd06d7` melalui
+  `20260806111020-3b66f8d`.
+- Rollback: backend `20260806092647-1657c16` dan Studio
+  `20260806092648-3b66f8d`.
+- Gate: local acceptance, npm/Composer audit, encrypted backup/checksum/offsite
+  round-trip/restore, candidate+rollback rehearsal, final preflight, atomic
+  release, single-device canary, payment/device preservation,
+  service/journal/security-header/public smoke, live marker, dan rollback lulus.
+- File knowledge: SagaView product, dossier, changelog, ledger, master, gaps,
+  decisions, portfolio changelog, root changelog, dan sync status.
+
 ### COYABAG cart recovery candidate
 
 - Ringkasan: persisted cart kini direkonsiliasi dengan katalog live setelah API

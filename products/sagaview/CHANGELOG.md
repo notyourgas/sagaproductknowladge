@@ -4,6 +4,45 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-08-06 - ZIP bulk export Galeri Frame production
+
+- Klasifikasi: `CONFIRMED` melalui keputusan founder `DEC-048`.
+- Status: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; business readiness
+  mass-scale tetap `NEEDS CONFIRMATION`.
+- Backend source `555682bb749fc2c97a16172bbf09de2b6d8026d4`, release
+  `20260806111019-555682b`; Studio source
+  `3b66f8d5df3e34aba11c4eab2619cfe44efd06d7`, release
+  `20260806111020-3b66f8d`.
+- Rollback backend `20260806092647-1657c16` dan Studio
+  `20260806092648-3b66f8d` dipertahankan.
+- Build, audit dependency, backend 909/909, focused responsive 6/6, ZIP
+  validation, encrypted backup/restore, candidate+rollback rehearsal, final
+  preflight, atomic release, canary/preservation, service/journal/header/public
+  smoke, 4/4 live marker, dan rollback target lulus.
+- Tidak ada payment intent/QRIS baru, perubahan device, foto customer, route,
+  migration, pricing, entitlement, atau source Studio dari fitur ini.
+- Authenticated Owner UAT dengan galeri/frame nyata, dua akun, dan retry tetap
+  residual sebelum klaim `BUSINESS_READY` mass-scale.
+
+## 2026-08-06 - ZIP bulk export Galeri Frame candidate
+
+- Klasifikasi: `CONFIRMED` melalui keputusan founder `DEC-048`.
+- Status: `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / DEPLOY_BLOCKED`;
+  production tetap backend `1657c16c` / `20260806092647-1657c16` dan Studio
+  `3b66f8d5` / `20260806092648-3b66f8d`.
+- Source candidate `555682bb749fc2c97a16172bbf09de2b6d8026d4`, branch
+  `codex/sagaview-zip-bulk-export-s120`.
+- Satu atau dua pilihan tetap diunduh sebagai `.sagaview-frame` terpisah;
+  tiga atau lebih dikemas menjadi satu ZIP client-side agar hanya ada satu
+  download. ZIP dibatalkan seluruhnya bila satu template gagal disiapkan.
+- Focused bulk Playwright mobile/tablet/desktop 6/6, validasi tiga entry ZIP,
+  regresi dua download, production build, npm audit nol, dan backend Frame
+  Authoring 12/12 dengan 45 assertion lulus.
+- Tidak ada route, migration, pricing, entitlement, payment, device/session,
+  foto customer, source Studio, atau production release yang berubah.
+- Promotion ditahan fail-closed karena fresh Composer audit mendeteksi advisory
+  dependency backend yang harus diremediasi sebelum guarded deploy.
+
 ## 2026-08-06 - Batch import template Galeri Frame production
 
 - Klasifikasi: `CONFIRMED` melalui keputusan founder `DEC-045`.

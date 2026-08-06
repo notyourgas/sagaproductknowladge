@@ -12,21 +12,24 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-06T16:58:33+07:00 |
+| Waktu pembaruan terakhir | 2026-08-06T18:17:36+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `47876ee05f24594ca221921b469da12b90ac5c08` |
-| Informasi terakhir disinkronkan | COYABAG cart recovery dan dependency security candidate pada source `368a89595ac0a667d99357b7c8216847cef707fb`; branch remote sinkron, production tetap `20260730-33637aa`. |
+| Baseline sebelum pembaruan | `8369a6cac87ec9eb8cbca27dba041754f3583346` |
+| Informasi terakhir disinkronkan | SagaView ZIP bulk export S120 production pada source `555682bb749fc2c97a16172bbf09de2b6d8026d4`, backend release `20260806111019-555682b`, dan Studio `20260806111020-3b66f8d`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada; candidate source dan production runtime sengaja dibedakan. |
-| Error | CI remote COYABAG belum dapat diverifikasi dari konektor audit; promotion mainline ditahan fail-closed. |
+| Konflik | Tidak ada pada sinkronisasi SagaView; perubahan AOGTIVITY lokal yang tidak terkait dipertahankan dan tidak dimasukkan ke commit ini. |
+| Error | Tidak ada pada release SagaView; authenticated Owner UAT galeri nyata tetap residual dan bukan bukti business readiness. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/coyabag/PRODUCT.md`
-- `products/coyabag/DOSSIER.md`
-- `products/coyabag/CHANGELOG.md`
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/DOSSIER.md`
+- `products/sagaview/CHANGELOG.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
+- `DECISIONS.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHANGELOG.md`
 - `SYNC_STATUS.md`
@@ -72,18 +75,21 @@ aktif dan menyelesaikan satu booking nyata terkontrol sebelum klaim
 `BUSINESS_READY` atau distribusi link secara luas.
 
 SagaView compact all-menu, workspace Session/Output/Izin Foto monitor besar,
-free drag rotation, pemisahan draft/publish, bulk frame export, dan batch import
-aktif secara kumulatif pada Studio `20260806092648-3b66f8d`; rollback
-`20260806071733-3b66f8d` dipertahankan. Backend aktif
-`20260806092647-1657c16`; rollback `20260806071707-7397954`. Authenticated
+free drag rotation, pemisahan draft/publish, bulk frame export, ZIP untuk tiga
+atau lebih pilihan, dan batch import aktif secara kumulatif pada Studio
+`20260806111020-3b66f8d`; rollback `20260806092648-3b66f8d` dipertahankan.
+Backend aktif `20260806111019-555682b`; rollback
+`20260806092647-1657c16`. Authenticated
 Owner visual UAT dengan frame miring dan
 publish frame nyata serta Founding Studio Pilot tetap dibutuhkan sebelum klaim
 `BUSINESS_READY` mass-scale.
 
 Bulk export Galeri Frame `DEC-044` sudah `PRODUCTION_DEPLOYED /
-PRODUCTION_ACTIVATED` pada source `73979542`. Residualnya adalah authenticated
-Owner UAT dengan galeri/frame nyata, izin multi-download browser, dua akun,
-tenant-negative, serta retry/idempotency sebelum coverage penuh.
+PRODUCTION_ACTIVATED`; klausa packaging-nya dikoreksi oleh `DEC-048`. Satu atau
+dua pilihan tetap direct download dan tiga atau lebih menjadi satu ZIP melalui
+source/release `555682bb` / `20260806111019-555682b`. Residualnya adalah
+authenticated Owner UAT dengan galeri/frame nyata, dua akun, tenant-negative,
+serta retry/idempotency sebelum coverage penuh.
 
 Batch import Galeri Frame `DEC-045` sudah `PRODUCTION_DEPLOYED /
 PRODUCTION_ACTIVATED` pada source `1657c16c`, backend

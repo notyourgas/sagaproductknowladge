@@ -231,6 +231,20 @@ keputusan pengganti.
 | Status | `CONFIRMED`; klausa nama produk AOGTICVITY `DEPRECATED` oleh `DEC-047`, sedangkan kontrak master recap, 8 tim, 10 lomba, durasi editable, dan roster seluruh tim tetap berlaku |
 | Dokumen terkait | [AOGTICVITY Product](products/aogticvity/PRODUCT.md), [AOGTICVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTICVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |
 
+## DEC-048 - Tiga atau lebih bulk export SagaView dikemas sebagai ZIP
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-06 |
+| Topik | Threshold packaging bulk export Galeri Frame SagaView |
+| Keputusan | Satu atau dua frame terpilih tetap diunduh sebagai file `.sagaview-frame` terpisah. Tiga frame atau lebih dikemas menjadi satu ZIP client-side yang berisi file template tenant-neutral yang sama. ZIP hanya boleh diunduh setelah seluruh template berhasil disiapkan; kegagalan satu template membatalkan seluruh arsip tanpa partial download. |
+| Alasan | Founder ingin export puluhan frame hanya memicu satu download agar browser tidak membanjiri operator dengan banyak file atau permintaan izin multiple-download. Threshold tiga mempertahankan alur sederhana untuk satu atau dua template. |
+| Alternatif yang dipertimbangkan | Seluruh jumlah tetap direct download; dua atau lebih selalu ZIP; format bundle multi-template baru; ZIP server-side. |
+| Dampak | Tombol/helper text Galeri Frame mengikuti jumlah pilihan; schema `.sagaview-frame`, sanitasi tenant/customer, dan import tetap kompatibel. ZIP dibuat di browser tanpa route, migration, pricing, entitlement, payment, device/session, foto customer, atau perubahan Studio source. Klausa DEC-044 bahwa setiap pilihan selalu diunduh terpisah menjadi deprecated, sementara selection/filter/export massal lainnya tetap berlaku. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; source `555682bb749fc2c97a16172bbf09de2b6d8026d4`, backend release `20260806111019-555682b`, Studio release `20260806111020-3b66f8d`, rollback `20260806092647-1657c16` / `20260806092648-3b66f8d`; authenticated Owner UAT galeri nyata tetap residual sebelum `BUSINESS_READY` mass-scale |
+| Dokumen terkait | [SagaView Product](products/sagaview/PRODUCT.md), [SagaView Dossier](products/sagaview/DOSSIER.md), [SagaView Changelog](products/sagaview/CHANGELOG.md), [SagaView Ledger](products/sagaview/FEATURE_COVERAGE_LEDGER.md), [Gaps](GAPS.md) |
+
 ## DEC-047 - Nama produk menjadi AOGTIVITY dengan domain tetap
 
 | Field | Isi |
@@ -284,7 +298,7 @@ keputusan pengganti.
 | Alternatif yang dipertimbangkan | Export per frame saja; select-all selalu seluruh katalog tanpa mengikuti filter; membuat format bundle baru yang belum kompatibel dengan import; mengekspor semua otomatis tanpa review pilihan. |
 | Dampak | Galeri Frame memperoleh checkbox per kartu, select-all filtered results, partial state, jumlah pilihan, clear, dan sequential batch download. Jalur validasi serta sanitasi template versi 1 dipakai ulang; API, migration, pricing, entitlement, payment, device/session, foto customer, dan Studio runtime tidak berubah. Browser dapat meminta izin beberapa download. |
 | Pemberi keputusan | Andreas / founder |
-| Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; source `73979542ceeb8fc11e658c7d27346ca983dc163f`, backend release `20260806071707-7397954`, Studio release `20260806071733-3b66f8d`; authenticated Owner UAT tetap residual sebelum `BUSINESS_READY` mass-scale |
+| Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; source `73979542ceeb8fc11e658c7d27346ca983dc163f`, backend release `20260806071707-7397954`, Studio release `20260806071733-3b66f8d`; klausa setiap frame selalu direct download `DEPRECATED` oleh `DEC-048`, sedangkan selection/filter/export massal lainnya tetap berlaku; authenticated Owner UAT tetap residual sebelum `BUSINESS_READY` mass-scale |
 | Dokumen terkait | [SagaView Product](products/sagaview/PRODUCT.md), [SagaView Dossier](products/sagaview/DOSSIER.md), [SagaView Changelog](products/sagaview/CHANGELOG.md), [SagaView Ledger](products/sagaview/FEATURE_COVERAGE_LEDGER.md), [Gaps](GAPS.md) |
 
 ## DEC-016 — Deploy public prototype AOGTICVITY ke Vercel

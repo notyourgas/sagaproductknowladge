@@ -21,6 +21,8 @@ SagaView berdasarkan runtime production aktif.
   `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
 - Portable frame template: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
 - Bulk export Galeri Frame: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
+- ZIP bulk export untuk 3+ pilihan:
+  `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
 - Acceptance integrasi feature-by-feature: ledger dimulai konservatif dan
   belum membuktikan coverage penuh; lihat
   [Feature Coverage Ledger](FEATURE_COVERAGE_LEDGER.md).
@@ -171,6 +173,25 @@ download tetap dikendalikan browser. Delivery dan activation
 `20260806071707-7397954` dan Studio release `20260806071733-3b66f8d`.
 Rollback backend `20260806050513-1158926` dan Studio
 `20260806050546-3b66f8d` dipertahankan; Owner UAT galeri nyata masih residual.
+
+`DEC-048` mengoreksi packaging bulk export pada production source
+`555682bb749fc2c97a16172bbf09de2b6d8026d4`, branch
+`codex/sagaview-zip-bulk-export-s120`: satu atau dua pilihan tetap memakai
+download `.sagaview-frame` langsung, sedangkan tiga atau lebih dikemas menjadi
+satu ZIP di browser. Arsip baru diunduh setelah seluruh template berhasil
+disiapkan; kegagalan satu frame membatalkan ZIP tanpa meninggalkan arsip
+parsial. Focused Playwright 6/6 pada mobile/tablet/desktop memvalidasi dua
+download untuk dua frame serta satu ZIP berisi tiga template v1 tenant-neutral
+untuk tiga frame. Build, npm/Composer audit, backend 909/909, dan Frame
+Authoring 12/12 lulus. Backup terenkripsi `20260806T110247Z`, restore,
+candidate+rollback rehearsal, final preflight, atomic release, canary,
+payment/device preservation, service/journal/header/public smoke, 4/4 live
+marker, dan rollback lulus. Tidak ada route, migration, pricing, entitlement,
+payment, device/session, foto customer, atau source Studio yang berubah.
+Delivery dan activation `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` melalui
+backend `20260806111019-555682b` dan Studio `20260806111020-3b66f8d`; rollback
+`20260806092647-1657c16` / `20260806092648-3b66f8d` dipertahankan. Authenticated
+Owner UAT galeri nyata tetap residual sebelum `BUSINESS_READY` mass-scale.
 
 Batch import Galeri Frame ditetapkan melalui `DEC-045` dan source
 `1657c16ca3e05dd442db66ad11177f13edae1d37`. Modal gallery menerima drag-and-drop
