@@ -12,21 +12,21 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-06T16:00:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-06T16:30:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `e34f8b3` |
-| Informasi terakhir disinkronkan | Candidate SagaView batch frame import S119 (`1657c16c`, belum dideploy); production tetap bulk export S118 (`73979542` / `20260806071707-7397954`) dan Studio (`3b66f8d5` / `20260806071733-3b66f8d`). |
+| Baseline sebelum pembaruan | `2c927980580bc0279abccad21c22a033027905aa` |
+| Informasi terakhir disinkronkan | Keputusan chatbot product-scoped `DEC-046` dan candidate SagaDev AI scope fallback S127 source `73de3f5541006dbe9eeed0abc00a39fbe5989998`; production SagaBook tetap S126 `e20c0ba` / `20260806072249-e20c0ba`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada; candidate batch import dicatat terpisah dan status production S118 tetap menjadi otoritas aktif. |
-| Error | Tidak ada error acceptance candidate; gate deploy/live/rollback belum dijalankan karena candidate belum dideploy. |
+| Konflik | Tidak ada; kontrak founder `CONFIRMED`, implementasi candidate dicatat terpisah dari perilaku production. |
+| Error | Fetch advisory Composer terbaru timeout; candidate menggunakan cache lokal tanpa advisory dan tetap `AI_KNOWLEDGE_NOT_PROMOTED`. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/sagaview/PRODUCT.md`
-- `products/sagaview/DOSSIER.md`
-- `products/sagaview/CHANGELOG.md`
-- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
 - `DECISIONS.md`
 - `GAPS.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
@@ -48,6 +48,13 @@ permission/tenant-negative, dan data integrity fitur terkait memiliki bukti
 fresh. Prioritas berikutnya: tutup tenant/cabang route lain lalu katalog;
 SagaView auth/device/session, local ingest, lalu session flow dengan no-upload
 guarantee.
+
+Candidate AI S127 sudah `AI_EVAL_VALIDATED` untuk 18 kategori public-safe,
+tetapi production belum berubah. Residual sebelum promotion: Composer advisory
+feed fresh, backup/restore, exact candidate/rollback rehearsal, live smoke
+product/out-of-scope/tenant-negative, monitoring latency/error/cost, serta
+inventory surface chatbot SagaDev lain. Fine-tuning/provider/data-retention
+baru memerlukan keputusan Andreas terpisah.
 
 AOGTICVITY tetap menunggu assignment empat peserta approved, PIC untuk sepuluh
 lomba, roster publish/lock, audited reconciliation record lama, valid-link/

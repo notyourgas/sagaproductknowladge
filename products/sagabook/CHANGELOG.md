@@ -4,6 +4,28 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-06 - SagaDev AI scope fallback candidate S127
+
+- Klasifikasi keputusan `CONFIRMED` melalui `DEC-046`; implementasi source
+  `73de3f5541006dbe9eeed0abc00a39fbe5989998` pada branch
+  `codex/s127-sagadev-ai-scope-fallback` berstatus `AI_EVAL_VALIDATED /
+  LOCAL_VALIDATED / AI_KNOWLEDGE_NOT_PROMOTED`.
+- Before: pertanyaan produk yang belum ada jawabannya dan pertanyaan umum di
+  luar SagaDev sama-sama menjadi fallback/knowledge-gap. After: topik luar
+  SagaDev mendapat respons natural product-scoped tanpa provider call atau
+  tiket; pertanyaan integrasi produk yang belum diketahui tetap dicatat untuk
+  human handoff.
+- Evaluasi public-safe mencakup 5 product, 3 cross-product, 3 out-of-scope, 2
+  ambiguous, 2 candidate/roadmap, 2 injection/privacy, dan 1 tenant-negative;
+  critical scope/privacy/candidate gate lulus tanpa unsupported claim.
+- Gate: focused 7/7 dengan 62 assertion, Support Hub 38/38 dengan 219
+  assertion, backend 964/964 composite, build, npm audit nol, formatting, dan
+  diff check lulus. Composer audit memakai cache tanpa advisory tetapi fetch
+  Packagist terbaru timeout.
+- Production, model/provider, fine-tuning, prompt remote, embedding, tenant,
+  booking, payment, subscription, dan data customer tidak berubah. Promotion
+  menunggu audit fresh, backup/restore, rehearsal, smoke, dan rollback.
+
 ## 2026-08-06 - Admin Changelog navigation production S126
 
 - Klasifikasi: `CONFIRMED`; source kumulatif

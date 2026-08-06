@@ -130,6 +130,15 @@ aktif. Activation Center dan Customer Booking Center tetap aktif. Source
 production terbaru: `39fb2d3ff01c3b7368ed623fbf551b349fe4b56c`,
 release `20260731172605-39fb2d3`.
 
+Kontrak chatbot terbaru mengikuti `DEC-046`: AI khusus membantu produk SagaDev,
+menjawab natural dan grounded, membedakan production/candidate/roadmap, meminta
+maksimal satu klarifikasi untuk pertanyaan produk yang ambigu, serta menolak
+topik umum di luar SagaDev dengan fallback product-scoped. Peningkatan per jam
+berarti knowledge/prompt/retrieval evaluation dan guarded rollout, bukan
+fine-tuning otomatis. Implementasi awal S127 source `73de3f55` sudah
+`AI_EVAL_VALIDATED` tetapi `AI_KNOWLEDGE_NOT_PROMOTED`; perilaku production
+Support Hub belum berubah.
+
 Routing Fonnte tenant-scoped sudah aktif di SagaBook production pada release
 `20260731181921-378bcdf`, source `378bcdf4`: default SagaDev, token Fonnte
 studio sendiri, atau manual-only. Candidate signup pada source `dcb5a3f3`

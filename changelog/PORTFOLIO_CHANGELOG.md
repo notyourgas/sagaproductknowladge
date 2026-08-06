@@ -1,5 +1,21 @@
 # Portfolio Changelog
 
+## 2026-08-06 - SagaDev AI scope fallback candidate S127
+
+- `DEC-046` menetapkan chatbot SagaDev menjawab hangat dan grounded untuk
+  produk, meminta maksimal satu klarifikasi bila ambigu, serta memakai fallback
+  natural untuk topik di luar SagaDev tanpa membuat tiket knowledge-gap palsu.
+- Source SagaBook/Support Hub
+  `73de3f5541006dbe9eeed0abc00a39fbe5989998`; corpus 18 kategori, Support Hub
+  38/38, backend 964/964 composite, build, npm audit nol, tenant-negative, dan
+  injection/privacy lulus.
+- Pertanyaan produk yang belum terjawab tetap dicatat sebagai knowledge gap;
+  OpenAI tetap opsional, hanya menyusun ulang jawaban grounded, dan tidak
+  dipanggil untuk out-of-scope, unknown, atau injection.
+- Delivery `AI_EVAL_VALIDATED / LOCAL_VALIDATED /
+  AI_KNOWLEDGE_NOT_PROMOTED`. Production tidak berubah karena advisory feed
+  Composer terbaru timeout dan fresh backup/restore/rehearsal S127 belum ada.
+
 ## 2026-08-06 - SagaView batch frame import candidate
 
 - `DEC-045` menetapkan Owner dapat batch import maksimal 100 file

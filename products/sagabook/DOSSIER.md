@@ -637,6 +637,18 @@ kerja Asia/Jakarta. Aksi triage memakai idempotency key, optimistic lock, dan
 receipt audit tersanitasi agar retry serta konflik antaroperator tidak
 menggandakan atau menimpa tindakan.
 
+Candidate AI S127 pada source
+`73de3f5541006dbe9eeed0abc00a39fbe5989998` menambahkan klasifikasi
+out-of-scope deterministik sebelum retrieval. Topik luar SagaDev mendapat
+fallback natural tanpa OpenAI call atau tiket knowledge-gap; unknown yang masih
+terkait produk tetap dicatat. OpenAI tetap opsional sebagai composer grounded,
+`store=false`, dan tidak menerima pertanyaan unknown/injection. Corpus 18
+kategori, Support Hub 38/38, backend 964/964 composite, build, npm audit,
+privacy/injection, dan tenant-negative lulus. Status tetap
+`AI_EVAL_VALIDATED / AI_KNOWLEDGE_NOT_PROMOTED`; production S126 tidak berubah
+karena advisory feed Composer fresh timeout dan backup/restore/rehearsal S127
+belum dijalankan.
+
 ## Data yang digunakan
 
 Organization, tenant, branch, staff membership, catalog/package, resource,

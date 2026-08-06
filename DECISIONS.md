@@ -231,6 +231,20 @@ keputusan pengganti.
 | Status | `CONFIRMED` |
 | Dokumen terkait | [AOGTICVITY Product](products/aogticvity/PRODUCT.md), [AOGTICVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTICVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |
 
+## DEC-046 - Chatbot SagaDev product-scoped dan ditingkatkan melalui guarded knowledge evaluation
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-06 |
+| Topik | Batas knowledge, gaya respons, dan peningkatan berkala chatbot SagaDev |
+| Keputusan | Chatbot hanya membantu informasi produk SagaDev yang tersedia. Jawaban harus natural, hangat, ringkas, grounded pada dokumen `CONFIRMED`, membedakan production/candidate/roadmap, dan meminta maksimal satu klarifikasi bila pertanyaan masih mungkin terkait produk. Topik yang benar-benar di luar SagaDev dijawab dengan fallback natural yang mengarahkan kembali ke SagaBook, SagaView, atau produk SagaDev lain. Peningkatan per jam berarti knowledge sync, prompt/retrieval/RAG evaluation, drift monitoring, dan guarded rollout; bukan fine-tuning bobot otomatis. |
+| Alasan | Founder ingin AI makin akurat mengikuti perubahan produk tanpa menjawab topik umum, mengarang status, mencampur produk, atau membocorkan data tenant/customer. |
+| Alternatif yang dipertimbangkan | Menjawab seluruh topik umum; menganggap semua unknown sebagai knowledge gap; fine-tuning otomatis tiap jam; mengunggah dokumen/customer chat privat ke provider; menyatukan SagaBook/SagaView. |
+| Dampak | Inventory surface/model/provider wajib didahulukan. Corpus hanya memakai knowledge canonical public-safe. Unknown produk tetap dapat menjadi knowledge gap/human handoff, sedangkan out-of-scope tidak membuat tiket palsu. Pertanyaan account-specific wajib melalui API terautentikasi/terotorisasi. Prompt injection, cross-tenant, secret, PII, payment, dan foto customer fail-closed. Promotion wajib memakai eval, backup/rollback, smoke, dan status AI terpisah. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED`; implementasi awal source `73de3f5541006dbe9eeed0abc00a39fbe5989998` `AI_EVAL_VALIDATED / AI_KNOWLEDGE_NOT_PROMOTED`, production belum berubah |
+| Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [SagaBook Ledger](products/sagabook/FEATURE_COVERAGE_LEDGER.md), [Master Knowledge](CHATGPT_MASTER_KNOWLEDGE.md), [Gaps](GAPS.md) |
+
 ## DEC-045 - Galeri Frame SagaView mendukung batch import dan auto-publish
 
 | Field | Isi |

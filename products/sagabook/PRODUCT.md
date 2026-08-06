@@ -633,6 +633,11 @@ After:
   aman, bukan overwrite;
 - receipt audit tidak memuat isi pesan, tenant ID mentah, provider reference,
   atau PII.
+- sesuai `DEC-046`, chatbot hanya membantu produk SagaDev, menjawab secara
+  natural dari knowledge `CONFIRMED`, membedakan status release, dan tidak
+  membuat tiket knowledge-gap untuk topik yang benar-benar di luar SagaDev;
+  pertanyaan produk yang belum terjawab tetap dapat diteruskan ke human
+  handoff. Implementasi awal S127 masih candidate dan belum production.
 
 ## Belum boleh diklaim
 

@@ -12,6 +12,22 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-06
 
+### SagaDev AI scope fallback candidate S127
+
+- Ringkasan: Support Hub SagaBook/SagaView kini dapat membedakan topik produk
+  yang belum ada di knowledge base dari topik yang benar-benar di luar SagaDev.
+- Klasifikasi: kontrak respons `CONFIRMED` melalui `DEC-046`; implementasi
+  `AI_EVAL_VALIDATED / LOCAL_VALIDATED / AI_KNOWLEDGE_NOT_PROMOTED`.
+- Source: `73de3f5541006dbe9eeed0abc00a39fbe5989998`, branch
+  `codex/s127-sagadev-ai-scope-fallback`; belum ada release/deploy baru.
+- Gate: corpus public-safe 18 kasus, Support Hub 38/38, full backend 964/964
+  secara composite setelah temp Windows diarahkan ke drive kerja, build, npm
+  audit nol, formatting, tenant-negative, injection/privacy, dan diff check
+  lulus. Composer audit lokal nol advisory, tetapi feed Packagist terbaru
+  timeout sehingga promotion fail-closed.
+- Production berubah: tidak. Provider/model/fine-tuning, tenant, subscription,
+  booking, payment, foto customer, dan data production tidak diubah.
+
 ### SagaView batch frame import candidate
 
 - Ringkasan: Galeri Frame memperoleh batch import maksimal 100 template dengan

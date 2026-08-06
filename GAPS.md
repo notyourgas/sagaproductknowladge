@@ -33,6 +33,15 @@ ketika keputusan atau release baru menutup gap.
 
 ### SagaBook
 
+- `TODO`: candidate AI S127 source `73de3f5541006dbe9eeed0abc00a39fbe5989998`
+  sudah memisahkan out-of-scope dari unknown produk dan lulus corpus 18
+  kategori. Promotion tetap ditahan sampai Composer advisory feed fresh dapat
+  diambil, backup/restore dan rehearsal exact candidate/rollback lulus, serta
+  live smoke product/out-of-scope/tenant-negative hijau. Inventaris chatbot
+  produk SagaDev lain, kebijakan human handoff lintas surface, provider/cost,
+  latency, dan data-retention masih perlu coverage bertahap. Fine-tuning baru
+  membutuhkan keputusan founder terpisah.
+
 - `TODO`: auth/session S123, status/write cabang S124, serta branch-context
   `/admin/reports` S125 sudah `INTEGRATION_VALIDATED` dan aktif di production.
   Residual tenant/cabang adalah selector/filter lintas role/route, stale
