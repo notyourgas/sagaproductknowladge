@@ -10,6 +10,28 @@ produk dan [Portfolio Changelog](changelog/PORTFOLIO_CHANGELOG.md).
 
 Root changelog tidak menggantikan changelog produk atau portfolio.
 
+## 2026-08-07
+
+### SagaView Batch Import Control Center S122 candidate
+
+- Ringkasan: batch import maksimal 100 template memperoleh preflight
+  kuota/storage, estimasi publish/draft, pilihan duplikat, history/notification,
+  cancel aman, CSV report, dan bulk retry/publish/category/remove.
+- Klasifikasi: `CONFIRMED` melalui `DEC-051`; delivery `LOCAL_VALIDATED /
+  REMOTE_BRANCH_SYNCED / IMPLEMENTED_NOT_DEPLOYED`.
+- Source: runtime candidate `6e259edae13351aee59681c6ad89735125dc5e74`,
+  branch `codex/sagaview-batch-import-control-center-s122`.
+- Production berubah: tidak; tetap backend `e850d6c7542c10e97309ca045ebe2f700a488ebf`
+  / `20260806133407-e850d6c` dan Studio `20260806133407-3b66f8d`.
+- Gate lokal: build, 137 test SagaView/1.654 assertion, focused 12/183,
+  Playwright 51-file, route, migration hash, PowerShell/Bash syntax, dan diff
+  check lulus.
+- Residual: guarded backup/restore, candidate+rollback rehearsal, deploy,
+  canary/preservation, live smoke/marker, rollback verification, serta Owner
+  UAT 50-100 file nyata pada dua akun.
+- File knowledge: SagaView product, dossier, changelog, ledger, master, gaps,
+  decisions, portfolio changelog, root changelog, dan sync status.
+
 ## 2026-08-06
 
 ### SagaView resumable server batch import production

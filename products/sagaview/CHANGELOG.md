@@ -4,6 +4,28 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-08-07 - Batch Import Control Center S122 candidate
+
+- Klasifikasi: `CONFIRMED` melalui keputusan founder `DEC-051`.
+- Status: `LOCAL_VALIDATED / REMOTE_BRANCH_SYNCED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap S121.
+- Runtime candidate `6e259edae13351aee59681c6ad89735125dc5e74`, branch
+  `codex/sagaview-batch-import-control-center-s122`; dokumentasi gate berada
+  pada commit turunan non-runtime `6d59294e`.
+- Owner memperoleh preflight kuota/storage, estimasi published/draft, pilihan
+  duplikat skip/copy/draft, riwayat dan notifikasi selesai, cancel, laporan CSV,
+  serta bulk retry/publish/category/remove.
+- Migrasi menambah control fields dan fingerprint duplikat secara aditif.
+  Endpoint dan mutation tetap tenant+membership scoped; checksum, ZIP safety,
+  batas 100, dan local-first foto customer dipertahankan.
+- Build, 137 test SagaView dengan 1.654 assertion, focused 12 test dengan 183
+  assertion, route/syntax/diff checks, serta Playwright 51-file termasuk retry
+  chunk, partial result, CSV, category, dan publish draft lulus.
+- Production tidak berubah dari backend `20260806133407-e850d6c` dan Studio
+  `20260806133407-3b66f8d`. Guarded deploy, backup/restore, rehearsal,
+  canary/preservation, live smoke/marker, rollback verification, dan Owner UAT
+  50-100 file nyata pada dua akun masih wajib.
+
 ## 2026-08-06 - Resumable server batch import production
 
 - Klasifikasi: `CONFIRMED` melalui koreksi founder `DEC-050`.

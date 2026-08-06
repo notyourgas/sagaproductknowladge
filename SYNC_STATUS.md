@@ -12,14 +12,14 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-06T20:43:16+07:00 |
+| Waktu pembaruan terakhir | 2026-08-07T00:32:50+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `56b1fc867a9ce17d01063f3ca33d885b03d76027` |
-| Informasi terakhir disinkronkan | SagaView resumable server batch import production pada source `e850d6c7542c10e97309ca045ebe2f700a488ebf`, backend release `20260806133407-e850d6c`, dan Studio `20260806133407-3b66f8d`. |
+| Baseline sebelum pembaruan | `4e3db96e3c9c4fb3b332fe3bc33ef9eaf56687d1` |
+| Informasi terakhir disinkronkan | SagaView S122 Batch Import Control Center candidate pada source `6e259edae13351aee59681c6ad89735125dc5e74`; status `LOCAL_VALIDATED / REMOTE_BRANCH_SYNCED / IMPLEMENTED_NOT_DEPLOYED`, production tetap S121. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada pada sinkronisasi SagaView; perubahan AOGTIVITY lokal yang tidak terkait dipertahankan dan tidak dimasukkan ke commit ini. |
-| Error | Tidak ada pada release SagaView; authenticated Owner UAT galeri nyata tetap residual dan bukan bukti business readiness. |
+| Konflik | Tidak ada pada sinkronisasi SagaView; perubahan AOGTIVITY lokal yang tidak terkait di worktree utama dipertahankan dan tidak dimasukkan ke commit ini. |
+| Error | Tidak ada pada validasi lokal S122; production deployment dan authenticated Owner UAT belum dijalankan. |
 
 ## File yang berubah pada sinkronisasi ini
 
@@ -83,6 +83,15 @@ dipertahankan. Backend aktif `20260806133407-e850d6c`; rollback
 Owner visual UAT dengan frame miring dan
 publish frame nyata serta Founding Studio Pilot tetap dibutuhkan sebelum klaim
 `BUSINESS_READY` mass-scale.
+
+SagaView S122 Batch Import Control Center `DEC-051` sudah `LOCAL_VALIDATED /
+REMOTE_BRANCH_SYNCED / IMPLEMENTED_NOT_DEPLOYED` pada source `6e259eda`.
+Preflight, duplicate policy, history/notification, cancel, CSV, dan bulk result
+actions lulus 137 test SagaView/1.654 assertion dan focused Playwright 51-file.
+Production tetap S121 `e850d6c7` / `20260806133407-e850d6c`; guarded
+backup/restore, rehearsal, deploy, canary/preservation, live smoke/marker,
+rollback verification, dan Owner UAT 50-100 file nyata pada dua akun masih
+residual.
 
 Bulk export Galeri Frame `DEC-044` sudah `PRODUCTION_DEPLOYED /
 PRODUCTION_ACTIVATED`; klausa packaging-nya dikoreksi oleh `DEC-049`. Satu atau

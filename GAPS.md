@@ -170,6 +170,18 @@ ketika keputusan atau release baru menutup gap.
 
 ### SagaView
 
+- `LOCAL_VALIDATED / REMOTE_BRANCH_SYNCED / IMPLEMENTED_NOT_DEPLOYED`:
+  `DEC-051` Batch Import Control Center tersedia pada runtime candidate
+  `6e259edae13351aee59681c6ad89735125dc5e74`. Preflight, duplicate policy,
+  history/notification, cancel, CSV, serta bulk retry/publish/category/remove
+  sudah lulus 137 test SagaView/1.654 assertion dan Playwright 51-file.
+  Production tetap S121 `e850d6c7` / `20260806133407-e850d6c`. Residual:
+  guarded backup/restore, candidate+rollback rehearsal, deploy/canary/payment-
+  device-photo preservation, service/journal/header/public smoke, live marker,
+  rollback verification, dan authenticated Owner UAT 50-100 file nyata pada
+  dua akun termasuk reconnect, tiga duplicate policy, quota/storage rejection,
+  CSV, category edit, publish draft, serta remove/retry.
+
 - `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: `DEC-049` memindahkan packaging
   tiga sampai 100 pilihan ke private server ZIP dengan idempotent retry, TTL 30
   menit, native download, dan all-or-nothing delivery; satu atau dua pilihan

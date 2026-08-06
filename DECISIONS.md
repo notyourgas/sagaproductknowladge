@@ -231,6 +231,20 @@ keputusan pengganti.
 | Status | `CONFIRMED`; klausa nama produk AOGTICVITY `DEPRECATED` oleh `DEC-047`, sedangkan kontrak master recap, 8 tim, 10 lomba, durasi editable, dan roster seluruh tim tetap berlaku |
 | Dokumen terkait | [AOGTICVITY Product](products/aogticvity/PRODUCT.md), [AOGTICVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTICVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |
 
+## DEC-051 - Batch import SagaView memiliki preflight, duplicate policy, dan control center
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-07 |
+| Topik | Operasional lanjutan batch import 50-100 template frame SagaView |
+| Keputusan | Sebelum upload, Owner harus melihat preflight kuota frame aktif, storage, dan estimasi publish/draft. Duplikat checksum+geometri harus dapat dilewati, dibuat copy, atau disimpan sebagai draft review. Batch harus memiliki riwayat, notifikasi selesai, cancel aman, laporan CSV, serta bulk retry gagal, publish draft, ganti kategori, dan remove draft/item gagal. Semua kontrol tetap tenant+membership scoped dan hasil yang sudah published/draft tidak boleh terhapus saat cancel. |
+| Alasan | Resumable upload S121 sudah mengatasi putus jaringan, tetapi operator masih membutuhkan prediksi kapasitas, keputusan duplikat, recovery pasca-import, dan pengelolaan hasil puluhan frame tanpa membuka editor satu per satu. |
+| Alternatif yang dipertimbangkan | Mempertahankan S121 tanpa control center; selalu skip duplikat; selalu auto-publish; menyediakan CSV saja; memindahkan seluruh processing ke browser. |
+| Dampak | Backend menambah migration aditif untuk duplicate policy, counter skipped/removed, acknowledgement, fingerprint, dan relasi duplikat; tiga endpoint kontrol ditambahkan. Frontend menambah preflight, history, notification, CSV, selection, dan bulk actions. Pricing, Growth 50/Pro 100, payment, device/session, foto customer, dan source Studio tidak berubah. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / LOCAL_VALIDATED / REMOTE_BRANCH_SYNCED / IMPLEMENTED_NOT_DEPLOYED`; runtime candidate `6e259edae13351aee59681c6ad89735125dc5e74`; production tetap S121 `e850d6c7542c10e97309ca045ebe2f700a488ebf`; guarded deploy dan authenticated Owner UAT dua akun masih residual |
+| Dokumen terkait | [SagaView Product](products/sagaview/PRODUCT.md), [SagaView Dossier](products/sagaview/DOSSIER.md), [SagaView Changelog](products/sagaview/CHANGELOG.md), [SagaView Ledger](products/sagaview/FEATURE_COVERAGE_LEDGER.md), [Gaps](GAPS.md) |
+
 ## DEC-050 - Batch import SagaView memakai upload resumable dan antrean server
 
 | Field | Isi |

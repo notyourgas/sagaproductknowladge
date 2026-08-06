@@ -1,11 +1,13 @@
 # SagaView Product Knowledge
 
-Updated: 6 Agustus 2026
+Updated: 7 Agustus 2026
 Evidence status: production deployed + production activated; frame import-order,
 compact all-menu, workspace Session/Output/Izin Foto monitor besar, free drag
 rotation, pemisahan Simpan Draft/Publish Frame, limit Growth 50/Pro 100,
 portable frame template, bulk export, server ZIP untuk tiga sampai 100 pilihan,
 dan resumable server batch import sampai 100 template aktif di production.
+Peningkatan S122 Batch Import Control Center sudah `LOCAL_VALIDATED /
+REMOTE_BRANCH_SYNCED`, tetapi belum dideploy ke production.
 
 ## Tujuan dokumen
 
@@ -16,7 +18,8 @@ Menjadi ringkasan fakta kanonik SagaView. Detail lengkap berada di
 ## Konteks
 
 Fakta release di dokumen ini mengacu pada exact source dan runtime production
-yang diverifikasi sampai 6 Agustus 2026.
+yang diverifikasi sampai 6 Agustus 2026. Kandidat S122 diverifikasi lokal dan
+dipush pada 7 Agustus 2026 tanpa mengubah runtime production.
 
 ## Status production terbaru
 
@@ -302,6 +305,34 @@ Production aktif pada backend `20260806133407-e850d6c` dan Studio
 mengubah pricing, entitlement, payment, device/session, foto customer, atau
 source Studio. Authenticated Owner UAT dengan 50-100 file nyata dan import
 lintas dua akun tetap residual sebelum klaim `BUSINESS_READY` mass-scale.
+
+### Kandidat S122 Batch Import Control Center
+
+`CONFIRMED` melalui `DEC-051`, dengan delivery `LOCAL_VALIDATED /
+REMOTE_BRANCH_SYNCED / IMPLEMENTED_NOT_DEPLOYED` pada runtime candidate
+`6e259edae13351aee59681c6ad89735125dc5e74`, branch
+`codex/sagaview-batch-import-control-center-s122`. Production tetap memakai
+S121 `e850d6c7542c10e97309ca045ebe2f700a488ebf`.
+
+Sebelum upload dimulai, Owner memperoleh preflight ukuran, storage, frame aktif,
+limit paket, serta estimasi published/draft. Duplikat checksum+geometri dapat
+dilewati, dibuat sebagai copy berkode unik, atau disimpan sebagai draft review.
+Riwayat tujuh hari, notifikasi selesai, cancel yang mempertahankan hasil aman,
+laporan CSV, serta bulk retry gagal, publish draft, ganti kategori, dan hapus
+draft/item gagal berada pada satu control center.
+
+Schema baru bersifat aditif dan menyimpan duplicate policy, counter
+skipped/removed, acknowledgement, fingerprint, serta relasi duplikat. API dan
+mutation tetap tenant+membership scoped; ZIP traversal, checksum, batas 100,
+dan local-first foto customer tetap fail-closed. Acceptance lokal mencakup 137
+test SagaView/1.654 assertion dan Playwright 51-file termasuk retry chunk,
+partial result, CSV, category action, serta publish-draft wiring. Migrasi,
+PowerShell release wrapper, dan Bash atomic runner lulus syntax/hash gate.
+
+Belum ada release production S122. Guarded deploy, encrypted backup/restore,
+candidate+rollback rehearsal, canary/preservation, live smoke/marker, dan
+authenticated Owner UAT 50-100 file nyata pada dua akun masih wajib sebelum
+status dapat dinaikkan.
 
 ## Session completion dan privacy handoff
 

@@ -7,7 +7,7 @@ SagaView berdasarkan runtime production aktif.
 
 ## Konteks dan status bukti
 
-- Updated: 6 Agustus 2026
+- Updated: 7 Agustus 2026
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED`
 - Business readiness: `NEEDS CONFIRMATION` untuk penjualan massal
@@ -25,6 +25,8 @@ SagaView berdasarkan runtime production aktif.
   `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
 - Resumable server batch import sampai 100 template:
   `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
+- S122 Batch Import Control Center:
+  `LOCAL_VALIDATED / REMOTE_BRANCH_SYNCED / IMPLEMENTED_NOT_DEPLOYED`
 - Acceptance integrasi feature-by-feature: ledger dimulai konservatif dan
   belum membuktikan coverage penuh; lihat
   [Feature Coverage Ledger](FEATURE_COVERAGE_LEDGER.md).
@@ -225,6 +227,20 @@ lulus. Production aktif pada backend `20260806133407-e850d6c` dan Studio
 pricing, entitlement, payment, device/session, foto customer, atau source
 Studio. Authenticated Owner UAT 50-100 file nyata dan dua akun tetap residual
 sebelum `BUSINESS_READY` mass-scale.
+
+Kandidat S122 pada source `6e259edae13351aee59681c6ad89735125dc5e74`
+menambahkan preflight kuota/storage, duplicate policy `skip/copy/draft`, riwayat
+tujuh hari, notification acknowledgement, cancel, laporan CSV, serta bulk retry,
+publish draft, category update, dan remove draft/item gagal. Fingerprint
+checksum+geometri serta semua endpoint/mutation tetap tenant+membership scoped.
+Schema tambahan bersifat aditif; foto customer, payment, pricing, entitlement,
+device/session, dan source Studio tidak berubah.
+
+Build, 137 test SagaView dengan 1.654 assertion, focused security/production
+safety, Growth 51, Pro 100, serta Playwright 51-file termasuk retry chunk,
+partial result, CSV, category, dan publish draft lulus. Production masih S121
+`20260806133407-e850d6c`; S122 belum melewati backup/restore, rehearsal,
+guarded deployment, live marker/smoke, atau authenticated Owner UAT dua akun.
 
 Mulai sesi production memakai checklist perangkat, paket, folder, frame, dan
 output serta satu CTA kontekstual 48 px. Utility cloud/recovery yang sehat

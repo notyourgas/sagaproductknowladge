@@ -1,5 +1,20 @@
 # Portfolio Changelog
 
+## 2026-08-07 - SagaView Batch Import Control Center S122 candidate
+
+- `DEC-051` menambahkan preflight kuota/storage, estimasi published/draft,
+  duplicate policy skip/copy/draft, history/notification, cancel aman, CSV,
+  serta bulk retry/publish/category/remove untuk batch maksimal 100 template.
+- Runtime candidate `6e259edae13351aee59681c6ad89735125dc5e74`
+  sudah `LOCAL_VALIDATED / REMOTE_BRANCH_SYNCED / IMPLEMENTED_NOT_DEPLOYED`.
+  Production tetap S121 `e850d6c7` / `20260806133407-e850d6c`; Studio tetap
+  `3b66f8d5` / `20260806133407-3b66f8d`.
+- Schema aditif dan endpoint tenant+membership scoped tidak mengubah pricing,
+  Growth 50/Pro 100, payment, device/session, foto customer, atau source Studio.
+- Build, 137 test SagaView/1.654 assertion, focused 12/183, route/syntax, serta
+  Playwright 51-file termasuk retry chunk, partial result, CSV, category, dan
+  publish draft lulus. Guarded deploy dan Owner UAT nyata tetap residual.
+
 ## 2026-08-06 - SagaView resumable server batch import production
 
 - `DEC-050` memindahkan import 50-100 template ke upload chunk 4 MB yang dapat

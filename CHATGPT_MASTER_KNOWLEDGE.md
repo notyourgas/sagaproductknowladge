@@ -577,6 +577,21 @@ lulus. Production aktif pada backend `20260806133407-e850d6c` dan Studio
 pricing, entitlement Growth 50/Pro 100, payment, device/session, foto customer,
 atau source Studio. Authenticated Owner UAT 50-100 file nyata dan dua akun tetap
 residual sebelum `BUSINESS_READY` mass-scale.
+Keputusan founder `DEC-051` menetapkan S122 Batch Import Control Center sebagai
+peningkatan berikutnya. Runtime candidate
+`6e259edae13351aee59681c6ad89735125dc5e74` sudah `LOCAL_VALIDATED /
+REMOTE_BRANCH_SYNCED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S121
+`e850d6c7542c10e97309ca045ebe2f700a488ebf`.
+
+S122 menambahkan preflight kuota/storage dan estimasi publish/draft, deteksi
+duplikat checksum+geometri dengan kebijakan skip/copy/draft, riwayat tujuh
+hari, notifikasi dengan acknowledgement, cancel yang mempertahankan hasil aman,
+laporan CSV, serta bulk retry gagal, publish draft, category update, dan remove.
+Schema bersifat aditif; endpoint/mutation tenant+membership scoped dan tidak
+membawa foto customer. Build, 137 test SagaView/1.654 assertion, focused
+security/production-safety, dan Playwright 51-file lulus. Backup/restore,
+rehearsal, guarded deploy, canary/preservation, live smoke/marker, rollback,
+serta Owner UAT 50-100 file nyata pada dua akun belum dijalankan untuk S122.
 Implementasi rotate lama yang menukar W/H 90 derajat telah `DEPRECATED` oleh
 koreksi founder `DEC-036`. Perilaku production yang aktif adalah
 diterima adalah tahan ikon rotate lalu drag ke kiri/kanan agar slot mendapat
