@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-06 - SagaView batch frame import candidate
+
+- `DEC-045` menetapkan Owner dapat batch import maksimal 100 file
+  `.sagaview-frame` langsung dari Galeri Frame, dengan auto-publish per file dan
+  category yang tetap dapat diedit.
+- Source `1657c16ca3e05dd442db66ad11177f13edae1d37`; stress regression 50 template
+  + invalid JSON + publish 422, Playwright tiga viewport, single-import
+  regression, build/audit, backend 909/909, dan Frame Authoring 12/12 lulus.
+- Invalid file tidak menghentikan batch dan publish rejection mempertahankan
+  draft. Tidak ada route, migration, pricing, entitlement, payment,
+  device/session, foto customer, atau Studio runtime baru.
+- Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap
+  backend `20260806071707-7397954` dan Studio `20260806071733-3b66f8d`.
+
 ## 2026-08-06 - SagaBook Admin Changelog S126 production
 
 - Pencarian, lima filter, accordion satu-detail, empty/reset recovery, dan CTA

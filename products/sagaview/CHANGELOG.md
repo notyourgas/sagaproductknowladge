@@ -4,6 +4,28 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-08-06 - Batch import template Galeri Frame candidate
+
+- Klasifikasi: `CONFIRMED` melalui keputusan founder `DEC-045`.
+- Status: `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap
+  backend `73979542` / `20260806071707-7397954` dan Studio
+  `3b66f8d5` / `20260806071733-3b66f8d`.
+- Source candidate `1657c16ca3e05dd442db66ad11177f13edae1d37`, branch
+  `codex/sagaview-batch-frame-import-s119`.
+- Galeri Frame menambahkan modal `Batch import`, drag-and-drop/multi-file
+  picker maksimal 100 template, validasi strict, collision-safe key, category
+  matching/fallback, draft-create, auto-publish, progress, dan hasil per file.
+- File invalid tidak menghentikan batch. Publish yang ditolak tetap
+  mempertahankan draft untuk koreksi/retry.
+- Stress regression 50 template valid + invalid JSON + publish 422, focused
+  Playwright mobile/tablet/desktop, regresi single import, build, npm audit nol,
+  full backend 909/909 dengan 10.665 assertion, Frame Authoring 12/12 dengan 45
+  assertion, dan diff check lulus.
+- Tidak ada route, migration, pricing, entitlement, payment, device/session,
+  foto customer, atau Studio runtime baru.
+- Residual: authenticated Owner UAT dengan template/akun nyata, guarded deploy,
+  live smoke, dan rollback verification.
+
 ## 2026-08-06 - Bulk export Galeri Frame production
 
 - Klasifikasi: `CONFIRMED` melalui keputusan founder `DEC-044`.

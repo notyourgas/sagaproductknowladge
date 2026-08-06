@@ -231,6 +231,20 @@ keputusan pengganti.
 | Status | `CONFIRMED` |
 | Dokumen terkait | [AOGTICVITY Product](products/aogticvity/PRODUCT.md), [AOGTICVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTICVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |
 
+## DEC-045 - Galeri Frame SagaView mendukung batch import dan auto-publish
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-06 |
+| Topik | Import puluhan portable frame template tanpa membuka editor satu per satu |
+| Keputusan | Owner dapat membuka `Batch import` langsung dari Galeri Frame, drag-and-drop atau memilih sampai 100 file `.sagaview-frame`, lalu sistem memvalidasi, membuat draft, dan mencoba mempublish setiap template valid secara berurutan. Kategori dicocokkan pada akun tujuan atau fallback ke kategori pertama/Basic dan tetap dapat diedit setelah import. |
+| Alasan | Pemindahan katalog 40-50 frame antar akun tidak boleh mengharuskan operator masuk ke halaman editor dan mengimpor satu file demi satu file. |
+| Alternatif yang dipertimbangkan | Mempertahankan import satu file; menerima hanya ZIP/bundle baru; menghentikan seluruh batch pada error pertama; membuang draft ketika publish gagal; mengabaikan category/key collision. |
+| Dampak | Galeri memperoleh modal drag-and-drop, batas 100 file, progress dan status per file, strict decoder template v1, collision-safe key, category matching/fallback, sequential draft/publish, invalid-file continuation, serta draft preservation saat publish ditolak. Backend tetap mengotorisasi permission, entitlement/limit aktif, storage, dan publish. Tidak ada route, migration, pricing, payment, device/session, foto customer, atau Studio runtime baru. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; source `1657c16ca3e05dd442db66ad11177f13edae1d37`, production tetap backend `20260806071707-7397954` dan Studio `20260806071733-3b66f8d`; guarded deploy dan authenticated Owner UAT masih residual |
+| Dokumen terkait | [SagaView Product](products/sagaview/PRODUCT.md), [SagaView Dossier](products/sagaview/DOSSIER.md), [SagaView Changelog](products/sagaview/CHANGELOG.md), [SagaView Ledger](products/sagaview/FEATURE_COVERAGE_LEDGER.md), [Gaps](GAPS.md) |
+
 ## DEC-044 - Galeri Frame SagaView mendukung pilihan dan export massal
 
 | Field | Isi |

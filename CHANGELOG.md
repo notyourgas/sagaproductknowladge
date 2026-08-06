@@ -12,6 +12,23 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-06
 
+### SagaView batch frame import candidate
+
+- Ringkasan: Galeri Frame memperoleh batch import maksimal 100 template dengan
+  drag-and-drop, strict validation, collision-safe key, category fallback,
+  sequential draft/publish, progress, dan partial-failure recovery.
+- Klasifikasi: `CONFIRMED` melalui `DEC-045`; delivery `LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`.
+- Source/release: `1657c16ca3e05dd442db66ad11177f13edae1d37`, branch
+  `codex/sagaview-batch-frame-import-s119`; belum ada release/deploy baru.
+- Gate: 50-template stress regression + invalid JSON + publish 422, responsive
+  Playwright, single-import regression, build, npm audit nol, backend 909/909
+  dengan 10.665 assertion, Frame Authoring 12/12 dengan 45 assertion, dan diff
+  check lulus.
+- Production berubah: tidak; tetap backend `20260806071707-7397954` dan Studio
+  `20260806071733-3b66f8d`. Payment, entitlement, device/session, foto customer,
+  API route, migration, dan database tidak berubah.
+
 ### SagaBook Admin Changelog S126 production
 
 - Ringkasan: navigasi Changelog admin kini mempunyai pencarian, lima filter,

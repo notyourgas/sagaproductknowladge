@@ -172,6 +172,28 @@ download tetap dikendalikan browser. Delivery dan activation
 Rollback backend `20260806050513-1158926` dan Studio
 `20260806050546-3b66f8d` dipertahankan; Owner UAT galeri nyata masih residual.
 
+Batch import Galeri Frame ditetapkan melalui `DEC-045` dan candidate source
+`1657c16ca3e05dd442db66ad11177f13edae1d37`. Modal gallery menerima drag-and-drop
+atau multi-file picker sampai 100 template. Decoder single-import dipakai ulang
+untuk schema v1, magic-byte PNG/WebP, batas 15 MB, source dimensions, SHA-256
+artwork, metadata checksum, dan slot geometry. Template valid memperoleh key
+unik lintas batch, category source dicocokkan pada target atau fallback ke
+kategori pertama/Basic, lalu draft dibuat dan publish dicoba secara berurutan.
+State per file membedakan queued, validating, publishing, published, draft, dan
+failed. Invalid template tidak menghentikan batch; publish rejection
+mempertahankan draft yang sudah tersimpan.
+
+Scenario 50 template valid dengan key sumber sama, satu invalid JSON, dan satu
+publish 422 membuktikan 50 draft request, 50 publish request, 49 published, 1
+draft, 1 failed, key unik, category fallback `basic`, dan `active=true`.
+Responsive Playwright tiga viewport, regresi import lama, build, npm audit nol,
+full backend 909/909 dengan 10.665 assertion, Frame Authoring 12/12 dengan 45
+assertion, dan diff check lulus. Implementasi tidak menambah route/migration dan
+tidak mengubah pricing, entitlement, payment, device/session, foto customer,
+atau Studio runtime. Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+production tetap release backend `20260806071707-7397954` dan Studio
+`20260806071733-3b66f8d`.
+
 Mulai sesi production memakai checklist perangkat, paket, folder, frame, dan
 output serta satu CTA kontekstual 48 px. Utility cloud/recovery yang sehat
 diringkas; detail terbuka otomatis saat operator perlu bertindak. Alur tetap

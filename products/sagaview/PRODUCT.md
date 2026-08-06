@@ -3,8 +3,9 @@
 Updated: 6 Agustus 2026
 Evidence status: production deployed + production activated; frame import-order,
 compact all-menu, workspace Session/Output/Izin Foto monitor besar, free drag
-rotation, pemisahan Simpan Draft/Publish Frame, serta limit Growth 50/Pro 100
-dan portable frame template aktif di production.
+rotation, pemisahan Simpan Draft/Publish Frame, limit Growth 50/Pro 100,
+portable frame template, dan bulk export aktif di production. Batch import
+template adalah candidate local-validated dan belum dideploy.
 
 ## Tujuan dokumen
 
@@ -244,6 +245,30 @@ payment, device/session, foto customer, atau perubahan source Studio. Fitur
 aktif melalui backend release `20260806071707-7397954` dan Studio release
 `20260806071733-3b66f8d`; authenticated Owner UAT dengan galeri nyata tetap
 residual sebelum klaim `BUSINESS_READY` mass-scale.
+
+## Batch import template Galeri Frame
+
+`CONFIRMED` melalui `DEC-045`, dengan delivery `LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED` pada source candidate
+`1657c16ca3e05dd442db66ad11177f13edae1d37`, branch
+`codex/sagaview-batch-frame-import-s119`. Owner dapat membuka `Batch import`
+langsung dari Galeri Frame lalu drag-and-drop atau memilih sampai 100 file
+`.sagaview-frame`. Setiap paket diproses berurutan: strict template-v1
+validation, collision-safe frame key, category matching/fallback, create draft,
+lalu publish otomatis. Progress dan hasil per file tetap terlihat; file invalid
+tidak menghentikan file lain. Jika draft berhasil tetapi publish ditolak oleh
+permission, entitlement/limit aktif, storage, atau aturan backend, draft tetap
+tersedia untuk diedit dan dicoba kembali.
+
+Stress regression 50 template valid dengan source key sama, satu JSON invalid,
+dan satu publish 422 menghasilkan 49 published, 1 draft, dan 1 failed. Focused
+Playwright mobile/tablet/desktop, regresi single import, production build, npm
+audit nol, backend 909/909 dengan 10.665 assertion, Frame Authoring 12/12 dengan
+45 assertion, dan diff check lulus. Tidak ada route, migration, pricing,
+entitlement, payment, device/session, foto customer, atau perubahan Studio.
+Production tetap backend `20260806071707-7397954` dan Studio
+`20260806071733-3b66f8d`; guarded deploy, live smoke, rollback verification, dan
+authenticated Owner UAT masih residual.
 
 ## Session completion dan privacy handoff
 
