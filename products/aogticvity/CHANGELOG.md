@@ -8,6 +8,24 @@ Mencatat perubahan material AOGTIVITY/AOGTICVITY/17an/Olimpiade.
 
 Nama lama dipertahankan sebagai provenance; status runtime harus eksplisit.
 
+## 2026-08-07 - Rundown 14.30 production
+
+- `CONFIRMED` melalui `DEC-058`, menggantikan waktu pada `DEC-053`: registrasi
+  ulang 14.00 WIB dan acara mulai 14.30 WIB dengan Opening Tim & Yel-yel 15
+  menit, Sing Song 15 menit, lima lomba, Break 15 menit, lima lomba, lalu
+  Awarding & Closing.
+- Jam lomba provisional menjadi 15.00, 15.20, 15.35, 15.50, 16.10, 17.10,
+  17.30, 17.50, 18.05, dan 19.05; Break mulai 16.55, Awarding & Closing 19.50,
+  serta estimasi selesai 20.20 WIB. Durasi tetap editable oleh admin.
+- Runtime source `6ec56e5b7e6859581d5a678a21b27971f10a5c14`; migration 026
+  mengarsipkan jadwal migration 025, memperbarui jadwal MySQL, menaikkan
+  version, dan menulis audit event tanpa mengubah peserta, hasil, atau PIC.
+- Typecheck, 129 unit/API, 28/28 MySQL integration, build, 65/65 UI/WCAG,
+  backup/restore drill, 14-block browser acceptance, dan 12/12 production-domain
+  regression lulus. Delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` pada
+  Hostinger `20260807T154156Z` dan Vercel `dpl_6hKz6JJ2s2vogcLXQLFEBNEZuWEF`;
+  business readiness tetap `BLOCKED` sampai human operational UAT selesai.
+
 ## 2026-08-07 - Poster theme dan rundown 12.00 production
 
 - `CONFIRMED` melalui `DEC-053`: registrasi ulang 11.30 WIB dan acara mulai

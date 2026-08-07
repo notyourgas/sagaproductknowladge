@@ -231,6 +231,20 @@ keputusan pengganti.
 | Status | `CONFIRMED`; klausa nama produk AOGTICVITY `DEPRECATED` oleh `DEC-047`, sedangkan kontrak master recap, 8 tim, 10 lomba, durasi editable, dan roster seluruh tim tetap berlaku |
 | Dokumen terkait | [AOGTICVITY Product](products/aogticvity/PRODUCT.md), [AOGTICVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTICVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |
 
+## DEC-058 - Rundown AOGTIVITY dimulai pukul 14.30 WIB
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-07 |
+| Topik | Perubahan waktu operasional AOGTIVITY 17 Agustus 2026 |
+| Keputusan | Registrasi ulang dan briefing dimulai 14.00 WIB. Acara dimulai 14.30 WIB dengan Opening Tim & Yel-yel 15 menit, Sing Song 15 menit, lima lomba, Break 15 menit, lima lomba, lalu Awarding & Closing. Durasi lomba dan penutupan tetap editable/provisional sampai dikunci panitia. |
+| Alasan | Founder mengubah jam mulai acara menjadi 14.30 dan meminta seluruh susunan dihitung ulang sesuai durasi yang sudah ada. |
+| Alternatif yang dipertimbangkan | Mempertahankan rundown 12.00; memotong durasi agar selesai pada jam lama; menggeser hanya opening tanpa menggeser seluruh lomba. |
+| Dampak | Master data version 2026.4, landing, agenda publik, schedule builder, admin warning, reload lintas perangkat, timeline, test, dan migration MySQL 026 memakai kontrak yang sama. Jam provisional menghasilkan lomba pertama 15.00, Break 16.55, sesi kedua 17.10, Awarding & Closing 19.50, dan estimasi selesai 20.20 WIB. Migration mengarsipkan jadwal migration 025, menaikkan schedule version, menulis audit, dan menyediakan rollback tanpa mengubah peserta, hasil, atau assignment operator. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; runtime source `6ec56e5b7e6859581d5a678a21b27971f10a5c14`, Hostinger `20260807T154156Z`, Vercel `dpl_6hKz6JJ2s2vogcLXQLFEBNEZuWEF`, migration 026; durasi final dan operational human UAT tetap residual |
+| Dokumen terkait | [AOGTIVITY Product](products/aogticvity/PRODUCT.md), [AOGTIVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTIVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |
+
 ## DEC-057 - Kategori frame memakai harga default kategori kecuali ada override eksplisit
 
 | Field | Isi |
@@ -298,7 +312,7 @@ keputusan pengganti.
 | Alternatif yang dipertimbangkan | Mempertahankan mulai 13.00; menaruh seluruh 10 lomba tanpa break; mempertahankan Makan Bersama sebagai agenda setelah seluruh lomba. |
 | Dampak | Master data version 2026.3, landing, agenda publik, schedule builder, admin warning, reload lintas perangkat, timeline, test, dan migration MySQL 025 memakai kontrak yang sama. Jam provisional menghasilkan Awarding & Closing 17.20 dan estimasi selesai 17.50 WIB. Migration mengarsipkan jam lama, menaikkan schedule version, menulis audit, dan menyediakan rollback tanpa mengubah assignment operator. |
 | Pemberi keputusan | Andreas / founder |
-| Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; runtime source `1dc0532991bd8bf70ba3db906880581b34bd5329`, Hostinger `20260806T225940Z`, Vercel `dpl_7HfPz4QWhcAJqiajAei9RHZyXhk7`, migration 025; durasi final dan operational human UAT tetap residual |
+| Status | `DEPRECATED` untuk kontrak waktu oleh `DEC-058`; release historis tetap `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` pada runtime `1dc0532991bd8bf70ba3db906880581b34bd5329`, Hostinger `20260806T225940Z`, Vercel `dpl_7HfPz4QWhcAJqiajAei9RHZyXhk7`, dan migration 025 |
 | Dokumen terkait | [AOGTIVITY Product](products/aogticvity/PRODUCT.md), [AOGTIVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTIVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |
 
 ## DEC-052 - Hierarchy visual AOGTIVITY mengikuti poster event founder
@@ -312,7 +326,7 @@ keputusan pengganti.
 | Alternatif yang dipertimbangkan | Mempertahankan header Pixel Matchday; menyalin poster sebagai background raster; mengganti font utama dengan pixel font. |
 | Dampak | Landing/header, theme CSS, asset pipeline, dan regression visual berubah; role, auth, API, data, domain, dan infrastructure identifier tidak berubah. |
 | Pemberi keputusan | Andreas / founder |
-| Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; visual source `9543450696760666b9ec50a19f918c3381c5d9cf` aktif secara kumulatif melalui runtime `1dc0532991bd8bf70ba3db906880581b34bd5329`, Hostinger `20260806T225940Z`, dan Vercel `dpl_7HfPz4QWhcAJqiajAei9RHZyXhk7`; visual UAT founder tetap residual |
+| Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; visual source `9543450696760666b9ec50a19f918c3381c5d9cf` aktif secara kumulatif melalui runtime `6ec56e5b7e6859581d5a678a21b27971f10a5c14`, Hostinger `20260807T154156Z`, dan Vercel `dpl_6hKz6JJ2s2vogcLXQLFEBNEZuWEF`; visual UAT founder tetap residual |
 | Dokumen terkait | [AOGTIVITY Product](products/aogticvity/PRODUCT.md), [AOGTIVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTIVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |
 
 ## DEC-051 - Batch import SagaView memiliki preflight, duplicate policy, dan control center

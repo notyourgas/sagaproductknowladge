@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-07 - AOGTIVITY rundown 14.30 production
+
+- `DEC-058` menggantikan waktu `DEC-053`: registrasi ulang 14.00 WIB, acara
+  14.30, lomba pertama 15.00, Break 16.55, sesi kedua 17.10, Awarding & Closing
+  19.50, dan estimasi provisional selesai 20.20 WIB.
+- Runtime source `6ec56e5b7e6859581d5a678a21b27971f10a5c14`; migration 026
+  audited, versioned, preserving participant/result/PIC counts, dan reversible.
+- Typecheck, 129 unit/API, 28/28 MySQL integration, build, 65/65 UI/WCAG,
+  backup/restore drill, browser acceptance 14 blok tanpa overflow, dan 12/12
+  production-domain regression lulus.
+- Production aktif pada Hostinger `20260807T154156Z` dan Vercel
+  `dpl_6hKz6JJ2s2vogcLXQLFEBNEZuWEF`; durasi final dan operational UAT tetap
+  residual sebelum business readiness.
+
 ## 2026-08-07 - SagaBook Sprint 5 package deactivation guard candidate
 
 - Source `4b71e3473d8713848158cfbed7a0923d4433bf46` menutup pelanggaran

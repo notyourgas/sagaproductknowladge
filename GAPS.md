@@ -478,10 +478,10 @@ ketika keputusan atau release baru menutup gap.
   kompatibilitas dan bukan gap rebrand.
 
 - `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: runtime
-  `1dc0532991bd8bf70ba3db906880581b34bd5329` memuat theme poster-aligned
-  (`DEC-052`) dan rundown 12.00 dua sesi (`DEC-053`) melalui Hostinger
-  `20260806T225940Z`, Vercel `dpl_7HfPz4QWhcAJqiajAei9RHZyXhk7`, dan migration
-  025. Backup/restore, exact-source release, readiness, dan public smoke lulus.
+  `6ec56e5b7e6859581d5a678a21b27971f10a5c14` memuat theme poster-aligned
+  (`DEC-052`) dan rundown 14.30 dua sesi (`DEC-058`) melalui Hostinger
+  `20260807T154156Z`, Vercel `dpl_6hKz6JJ2s2vogcLXQLFEBNEZuWEF`, dan migration
+  026. Backup/restore, exact-source release, readiness, dan public smoke lulus.
   Residual: visual UAT founder, authenticated admin schedule refresh, serta
   operational rollback rehearsal. Durasi
   Awarding & Closing 30 menit dan seluruh durasi lomba tetap provisional sampai

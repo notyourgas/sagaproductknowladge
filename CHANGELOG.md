@@ -12,6 +12,22 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-07
 
+### AOGTIVITY rundown 14.30 production
+
+- Ringkasan: waktu acara bergeser dari 12.00 ke 14.30 dengan durasi tetap;
+  registrasi 14.00, lomba pertama 15.00, Break 16.55, sesi kedua 17.10,
+  Awarding & Closing 19.50, dan estimasi selesai 20.20 WIB.
+- Klasifikasi: `CONFIRMED` melalui `DEC-058`; `DEC-053` menjadi historical dan
+  `DEPRECATED` untuk kontrak waktu. Delivery `PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`.
+- Runtime source `6ec56e5b7e6859581d5a678a21b27971f10a5c14`, branch
+  `codex/whatsapp-magic-link`; Hostinger `20260807T154156Z`, Vercel
+  `dpl_6hKz6JJ2s2vogcLXQLFEBNEZuWEF`, dan migration 026.
+- Gate: typecheck, 129 unit/API, 28/28 MySQL integration, build, 65/65 UI/WCAG,
+  backup/restore, browser acceptance 14 blok, dan 12/12 public regression.
+- File knowledge: product, dossier, changelog AOGTIVITY, master, decisions,
+  gaps, portfolio/root changelog, dan sync status.
+
 ### SagaBook Sprint 5 package deactivation dependency guard candidate
 
 - Ringkasan: paket aktif kini gagal aman ketika masih dipakai background aktif;

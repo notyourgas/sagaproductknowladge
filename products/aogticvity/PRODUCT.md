@@ -65,8 +65,8 @@ menunggu human UAT.
 Public delivery kanonik: `https://aogticvities.fun`.
 
 Rebrand AOGTIVITY pertama kali aktif pada source `e4c217b`; runtime terbaru
-adalah `1dc0532991bd8bf70ba3db906880581b34bd5329`, Hostinger
-`20260806T225940Z`, dan Vercel `dpl_7HfPz4QWhcAJqiajAei9RHZyXhk7`. UI,
+adalah `6ec56e5b7e6859581d5a678a21b27971f10a5c14`, Hostinger
+`20260807T154156Z`, dan Vercel `dpl_6hKz6JJ2s2vogcLXQLFEBNEZuWEF`. UI,
 metadata, PWA, aset merek, pesan
 WhatsApp baru, serta issuer TOTP baru memakai AOGTIVITY. Domain, repository,
 path deploy, environment variable, cookie/session prefix, database, service,
@@ -293,15 +293,16 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:
 `PRODUCTION_ACTIVATED`. Business readiness: `BLOCKED`.
 
 - UI public/player/leader/admin/live aktif pada public Vercel delivery.
-- Runtime source `1dc0532991bd8bf70ba3db906880581b34bd5329` menerjemahkan
+- Runtime source `6ec56e5b7e6859581d5a678a21b27971f10a5c14` menerjemahkan
   poster AOGTIVITY menjadi event identity lime-navy-magenta dengan halftone,
   petir, spark, koin, handheld-console frame, serta hierarchy nama
   **AOGTIVITY / 17 Agustus 2026 / Army of God Madiun**. Theme ini aktif pada
-  Hostinger `20260806T225940Z` dan Vercel `dpl_7HfPz4QWhcAJqiajAei9RHZyXhk7`.
-- Rundown owner-confirmed pada runtime yang sama memindahkan registrasi ulang
-  ke 11.30 WIB dan acara ke 12.00 WIB: Opening Tim & Yel-yel 15 menit, Sing
+  Hostinger `20260807T154156Z` dan Vercel `dpl_6hKz6JJ2s2vogcLXQLFEBNEZuWEF`.
+- Rundown owner-confirmed terbaru memindahkan registrasi ulang
+  ke 14.00 WIB dan acara ke 14.30 WIB: Opening Tim & Yel-yel 15 menit, Sing
   Song 15 menit, lima lomba, Break 15 menit, lima lomba, lalu Awarding &
-  Closing. Estimasi provisional selesai 17.50 WIB. Migration 025 mengubah jam
+  Closing. Lomba pertama mulai 15.00, Awarding & Closing mulai 19.50, dan
+  estimasi provisional selesai 20.20 WIB. Migration 026 mengubah jam
   lomba secara audited dan reversible tanpa menghapus assignment operator.
 - UI memakai `Pixel Matchday Arcade` yang tetap mobile-first 430 px: Plus
   Jakarta Sans, Feather-style icons, stepped geometry, hard shadow, quest/HUD

@@ -71,16 +71,16 @@ menjadi tanggal resmi, dan Army of God Madiun menjadi identitas penyelenggara.
 Lime elektrik, navy, magenta, cyan/kuning terbatas, halftone, petir, spark,
 koin, serta handheld-console frame berasal dari referensi poster founder.
 Seluruh teks tetap Plus Jakarta Sans. Implementasi final aktif melalui runtime
-`1dc0532991bd8bf70ba3db906880581b34bd5329`, Hostinger
-`20260806T225940Z`, dan Vercel `dpl_7HfPz4QWhcAJqiajAei9RHZyXhk7`.
-Runtime yang sama menambahkan kontrak rundown owner-confirmed: registrasi ulang 11.30 WIB,
-Opening Tim & Yel-yel 12.00, Sing Song 12.15, lomba 1-5 mulai 12.30, Break
-15 menit setelah lomba ke-5, lomba 6-10 mulai 14.40, dan Awarding & Closing
-17.20. Estimasi selesai 17.50 WIB masih mengikuti durasi lomba provisional.
-Schedule builder, reload API, UI publik, admin warning, migration MySQL 025,
-audit, dan rollback memakai struktur yang sama. Gate release lulus 129 unit/API,
-28/28 MySQL integration, build, 64/64 UI/WCAG, acceptance urutan 14 blok, dan
-12/12 public-domain regression.
+`6ec56e5b7e6859581d5a678a21b27971f10a5c14`, Hostinger
+`20260807T154156Z`, dan Vercel `dpl_6hKz6JJ2s2vogcLXQLFEBNEZuWEF`.
+Runtime terbaru memakai kontrak rundown owner-confirmed: registrasi ulang 14.00
+WIB, Opening Tim & Yel-yel 14.30, Sing Song 14.45, lomba 1-5 mulai 15.00,
+Break 15 menit setelah lomba ke-5 pada 16.55, lomba 6-10 mulai 17.10, dan
+Awarding & Closing 19.50. Estimasi selesai 20.20 WIB masih mengikuti durasi
+lomba/closing provisional. Schedule builder, reload API, UI publik, admin
+warning, migration MySQL 026, audit, dan rollback memakai struktur yang sama.
+Gate release lulus 129 unit/API, 28/28 MySQL integration, build, 65/65 UI/WCAG,
+acceptance urutan 14 blok, dan 12/12 public-domain regression.
 Kartu alur `Dari daftar sampai podium` memakai tiga track tetap untuk badge
 nomor, copy, dan panah. Badge 30 px dan gap 10 px mencegah overlap pada
 viewport 320 px; acceptance suite kini mencakup 48 Playwright checks.
