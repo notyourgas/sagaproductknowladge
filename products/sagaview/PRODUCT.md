@@ -6,9 +6,10 @@ compact all-menu, workspace Session/Output/Izin Foto monitor besar, free drag
 rotation, pemisahan Simpan Draft/Publish Frame, limit Growth 50/Pro 100,
 portable frame template, bulk export, server ZIP untuk tiga sampai 100 pilihan,
 resumable server batch import sampai 100 template, dan pemulihan bootstrap cloud
-Owner lama aktif di production. S137 sudah
+Owner lama aktif di production. S138 menambahkan tombol akhir `Selesai`, close
+via Escape, dan batch edit kategori pada frame terpilih. S138 sudah
 `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated Owner UAT pada akun
-terdampak tetap residual sebelum `BUSINESS_READY`.
+serta frame nyata tetap residual sebelum `BUSINESS_READY`.
 
 ## Tujuan dokumen
 
@@ -33,12 +34,12 @@ yang diverifikasi sampai 7 Agustus 2026.
   lalu memakai dua kartu sesi berdampingan pada QHD/4K di dalam batas 1400
   piksel. Ringkasan, filter, retry, cabut izin, dan workflow privacy tidak
   berubah.
-- Backend source `d7542fdc51dae66763057d2ac9d847c68d6dec1f` aktif sebagai
-  release `20260807010717-d7542fd`; rollback
-  `20260807003837-4642b40` dipertahankan.
+- Backend source `f515dd7a1066b2c6b5244bb1f5bc48d306430768` aktif sebagai
+  release `20260807023502-f515dd7`; rollback
+  `20260807010717-d7542fd` dipertahankan.
 - Studio source `05c5fda07a342d2977d8e6e3d836adb17a84605b` aktif sebagai
-  release `20260807010718-05c5fda`; rollback
-  `20260807003838-0745426` dipertahankan.
+  release `20260807023502-05c5fda`; rollback
+  `20260807010718-05c5fda` dipertahankan.
 - Entitlement live memberi Growth 50 dan Pro 100 frame aktif. Harga, device,
   preset, offline grace, storage, laporan, support, payment, dan fair-use tidak
   berubah.
@@ -438,6 +439,33 @@ payment, subscription, device, session, maupun data customer. Authenticated
 Owner UAT pada akun terdampak, termasuk Batch Import dan error/retry nyata,
 tetap residual sebelum `BUSINESS_READY`.
 
+### S138 import finish dan batch kategori production
+
+`CONFIRMED` dengan delivery dan activation
+`PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Backend source
+`f515dd7a1066b2c6b5244bb1f5bc48d306430768` aktif sebagai release
+`20260807023502-f515dd7`; Studio source tetap
+`05c5fda07a342d2977d8e6e3d836adb17a84605b` melalui release
+`20260807023502-05c5fda`. Rollback S137 dipertahankan.
+
+Batch Import sekarang menampilkan footer status akhir dan tombol `Selesai`
+yang selalu terlihat setelah batch completed, failed, atau cancelled. Tombol
+tutup menerima fokus, Escape menutup dialog, dan konten panjang bergulir tanpa
+menyembunyikan header/footer. Checkbox Galeri Frame kini melayani export dan
+batch edit kategori. Owner dapat memilih 1-100 frame, memilih kategori aktif,
+dan mengubah kategori published serta draft terkait dalam satu transaksi.
+
+Endpoint batch kategori tetap capability-, tenant-, dan membership-scoped.
+Kategori harus aktif; bila satu frame hilang atau lintas workspace, seluruh
+aksi gagal tanpa perubahan parsial. Tidak ada migration atau perubahan artwork,
+slot, foto customer, payment, subscription, device, session, maupun data
+operasional tenant. Regression 938 test/11.110 assertion, focused SagaView
+149/1.721, Playwright desktop+mobile, build/audit, fresh encrypted backup tiga
+database, candidate+rollback rehearsal 6/6, atomic deploy, post-preflight,
+payment/device preservation, marker source+bundle+route, public smoke, service,
+journal, dan security header lulus. Authenticated Owner UAT dengan batch nyata
+dan kategori nyata tetap residual sebelum `BUSINESS_READY`.
+
 ## Session completion dan privacy handoff
 
 `CONFIRMED` — production:
@@ -742,15 +770,15 @@ untuk release frontend ini.
 ### Runtime production
 
 - Backend source:
-  `d7542fdc51dae66763057d2ac9d847c68d6dec1f`.
-- Backend release aktif: `20260807010717-d7542fd`.
+  `f515dd7a1066b2c6b5244bb1f5bc48d306430768`.
+- Backend release aktif: `20260807023502-f515dd7`.
 - Studio source aktif:
   `05c5fda07a342d2977d8e6e3d836adb17a84605b`.
-- Studio release aktif: `20260807010718-05c5fda`.
+- Studio release aktif: `20260807023502-05c5fda`.
 - Studio release sebelumnya yang menjadi rollback:
-  `20260807003838-0745426`.
+  `20260807010718-05c5fda`.
 - Backend release sebelumnya yang menjadi rollback:
-  `20260807003837-4642b40`.
+  `20260807010717-d7542fd`.
 - Saga Platform release teramati tetap
   `20260804171621-0ab9d8e`; release editor frame tidak mengubah Platform.
 - Additive migration, encrypted backup, disposable restore, candidate gate,

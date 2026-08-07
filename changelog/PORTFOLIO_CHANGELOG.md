@@ -1,5 +1,21 @@
 # Portfolio Changelog
 
+## 2026-08-07 - SagaView S138 import finish dan batch kategori production
+
+- Backend `f515dd7a1066b2c6b5244bb1f5bc48d306430768` aktif sebagai release
+  `20260807023502-f515dd7`; Studio `05c5fda07a342d2977d8e6e3d836adb17a84605b`
+  aktif sebagai `20260807023502-05c5fda`. Rollback S137 dipertahankan.
+- Batch Import mendapat footer status akhir, tombol `Selesai`, dan close via
+  Escape. Pilihan Galeri Frame sekarang melayani export atau batch kategori
+  1-100 frame.
+- Batch kategori capability-/tenant-/membership-scoped, transactional, dan
+  membatalkan seluruh aksi jika satu frame hilang atau lintas workspace.
+- Full regression 938/11.110, SagaView 149/1.721, desktop/mobile Playwright,
+  build/audit, encrypted backup/restore, rehearsal kandidat+rollback 6/6,
+  atomic deploy/post-preflight, preservation, marker runtime, dan smoke lulus.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated Owner UAT
+  batch dan kategori nyata tetap residual sebelum `BUSINESS_READY`.
+
 ## 2026-08-07 - SagaBook Sprint 1 test harness candidate
 
 - Source `14ad88cc26aad1ebe90e60e46827bec618ed44a3` pada branch

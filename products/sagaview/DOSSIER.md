@@ -31,6 +31,8 @@ SagaView berdasarkan runtime production aktif.
   `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
 - S135 Owner dan Studio workspace alignment:
   `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
+- S138 tombol akhir Batch Import dan batch edit kategori Galeri Frame:
+  `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
 - Acceptance integrasi feature-by-feature: ledger dimulai konservatif dan
   belum membuktikan coverage penuh; lihat
   [Feature Coverage Ledger](FEATURE_COVERAGE_LEDGER.md).
@@ -315,6 +317,26 @@ subscription, device, session, maupun data customer. Status
 `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated Owner UAT tetap
 residual sebelum `BUSINESS_READY`.
 
+S138 membuat akhir batch import dapat ditutup secara jelas melalui footer
+status dan tombol `Selesai` yang selalu terlihat; Escape serta tombol tutup
+juga bekerja tanpa bergantung pada posisi scroll. Pemilihan massal Galeri Frame
+sekarang dapat dipakai untuk export atau mengubah kategori 1-100 frame ke satu
+kategori aktif. Update kategori published/draft berlangsung transactional,
+tenant+membership scoped, dan fail-closed bila satu frame tidak tersedia atau
+berasal dari workspace lain. Backend source/release aktif `f515dd7a` /
+`20260807023502-f515dd7`; Studio source yang tidak berubah `05c5fda0` dibangun
+sebagai `20260807023502-05c5fda`; rollback S137 dipertahankan.
+
+Acceptance mencakup full regression 938 test/11.110 assertion, focused
+SagaView 149/1.721, Playwright desktop+mobile, build/audit, fresh encrypted
+backup tiga database, candidate+rollback rehearsal 6/6, preflight/deploy/
+post-preflight, canary/payment/device preservation, marker source+bundle+route,
+public smoke, service, journal, dan security header. Tidak ada migration atau
+perubahan artwork, slot, foto customer, payment, subscription, device, session,
+atau data operasional tenant. Status `PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED`; authenticated Owner UAT tetap residual sebelum
+`BUSINESS_READY`.
+
 Mulai sesi production memakai checklist perangkat, paket, folder, frame, dan
 output serta satu CTA kontekstual 48 px. Utility cloud/recovery yang sehat
 diringkas; detail terbuka otomatis saat operator perlu bertindak. Alur tetap
@@ -467,11 +489,11 @@ policy, license/trial entitlement, katalog owner, boundary publish, migrasi
 metadata additive, serta release safety. Seluruh benefit lain tetap.
 
 `CONFIRMED` — kontrak ini aktif di production. Source backend aktif adalah
-`d7542fdc51dae66763057d2ac9d847c68d6dec1f`, release
-`20260807010717-d7542fd`. Source Studio aktif adalah
+`f515dd7a1066b2c6b5244bb1f5bc48d306430768`, release
+`20260807023502-f515dd7`. Source Studio aktif adalah
 `05c5fda07a342d2977d8e6e3d836adb17a84605b`, release
-`20260807010718-05c5fda`; rollback backend/Studio adalah
-`20260807003837-4642b40` / `20260807003838-0745426`. Session, Frames, dan Install App kini memakai render
+`20260807023502-05c5fda`; rollback backend/Studio adalah
+`20260807010717-d7542fd` / `20260807010718-05c5fda`. Session, Frames, dan Install App kini memakai render
 awal SSR/client deterministik sehingga tidak memicu hydration mismatch. Output
 Settings hanya menampilkan action simpan saat
 dirty, tidak menutup konten mobile, mempertahankan action sticky desktop, dan
@@ -562,9 +584,9 @@ pada UI customer.
 
 ## Reliability, security, dan operations
 
-- Exact backend/Studio release immutable `20260807010717-d7542fd` dan
-  `20260807010718-05c5fda`; rollback backend `20260807003837-4642b40` serta
-  Studio `20260807003838-0745426` tersedia.
+- Exact backend/Studio release immutable `20260807023502-f515dd7` dan
+  `20260807023502-05c5fda`; rollback backend `20260807010717-d7542fd` serta
+  Studio `20260807010718-05c5fda` tersedia.
 - Release Izin Foto lulus 156 unit, focused 18/18, 116 skenario Playwright
   executable dalam dua evidence round, build/budget, npm audit nol, exact
   preflight, promosi atomik, service/header/journal, empat route 200, serta

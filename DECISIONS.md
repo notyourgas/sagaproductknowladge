@@ -231,6 +231,20 @@ keputusan pengganti.
 | Status | `CONFIRMED`; klausa nama produk AOGTICVITY `DEPRECATED` oleh `DEC-047`, sedangkan kontrak master recap, 8 tim, 10 lomba, durasi editable, dan roster seluruh tim tetap berlaku |
 | Dokumen terkait | [AOGTICVITY Product](products/aogticvity/PRODUCT.md), [AOGTICVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTICVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |
 
+## DEC-056 - Batch Import memiliki aksi selesai dan Galeri Frame mendukung batch kategori
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-07 |
+| Topik | Penyelesaian Batch Import dan pengelolaan kategori banyak frame SagaView |
+| Keputusan | Setelah batch import completed, failed, atau cancelled, Owner harus mendapat ringkasan dan tombol `Selesai` yang selalu terlihat; Escape dan tombol tutup juga harus dapat menutup dialog. Checkbox Galeri Frame digunakan untuk export atau mengubah kategori 1-100 frame terpilih ke kategori aktif tanpa membuka tiap frame. Batch kategori harus transactional, tenant+membership scoped, dan membatalkan seluruh aksi bila satu frame tidak tersedia atau lintas workspace. |
+| Alasan | Operator tidak boleh terjebak pada dialog import panjang dan tidak perlu membuka puluhan frame satu per satu hanya untuk menyamakan kategori. |
+| Alternatif yang dipertimbangkan | Hanya mengandalkan tombol tutup di header; auto-close tanpa ringkasan; edit kategori satu per satu; update parsial ketika sebagian frame invalid. |
+| Dampak | Owner Console menambah footer status akhir, close via Escape, pilihan kategori massal, serta endpoint metadata tenant-scoped. Tidak ada perubahan artwork, slot, foto customer, pricing, payment, subscription, device/session, atau migration. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; backend source/release `f515dd7a1066b2c6b5244bb1f5bc48d306430768` / `20260807023502-f515dd7`; Studio source/release `05c5fda07a342d2977d8e6e3d836adb17a84605b` / `20260807023502-05c5fda`; authenticated Owner UAT tetap residual |
+| Dokumen terkait | [SagaView Product](products/sagaview/PRODUCT.md), [SagaView Dossier](products/sagaview/DOSSIER.md), [SagaView Changelog](products/sagaview/CHANGELOG.md), [SagaView Ledger](products/sagaview/FEATURE_COVERAGE_LEDGER.md), [Gaps](GAPS.md) |
+
 ## DEC-055 - Owner dan Studio SagaView wajib memakai workspace yang sama
 
 | Field | Isi |

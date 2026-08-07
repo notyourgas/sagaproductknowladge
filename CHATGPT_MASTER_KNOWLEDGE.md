@@ -659,6 +659,21 @@ subscription, device, session, maupun data customer. Jangan menyebut S137
 `BUSINESS_READY` sebelum authenticated Owner UAT pada akun terdampak, Batch
 Import, dan error/retry nyata selesai.
 
+S138 import finish dan batch kategori sudah
+`PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Backend source/release
+`f515dd7a1066b2c6b5244bb1f5bc48d306430768` /
+`20260807023502-f515dd7`; Studio source tetap
+`05c5fda07a342d2977d8e6e3d836adb17a84605b` melalui release
+`20260807023502-05c5fda`; rollback S137 dipertahankan. Batch Import memberi
+footer status akhir dan tombol `Selesai` yang selalu terlihat; Escape dan
+tombol tutup juga menutup dialog. Galeri Frame dapat memilih 1-100 frame untuk
+export atau update kategori massal. Update kategori published/draft bersifat
+transactional, capability-, tenant-, dan membership-scoped; satu frame hilang
+atau lintas workspace membatalkan seluruh aksi. Tidak ada migration atau
+perubahan artwork, slot, foto customer, payment, subscription, device, session,
+atau data operasional tenant. Jangan menyebut S138 `BUSINESS_READY` sebelum
+authenticated Owner UAT dengan batch dan kategori nyata selesai.
+
 Implementasi rotate lama yang menukar W/H 90 derajat telah `DEPRECATED` oleh
 koreksi founder `DEC-036`. Perilaku production yang aktif adalah
 diterima adalah tahan ikon rotate lalu drag ke kiri/kanan agar slot mendapat

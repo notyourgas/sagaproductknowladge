@@ -12,19 +12,24 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-07T09:30:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-07T09:43:04+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `2053ff93c6c8cfa8e554e6561071516985b3c23e` |
-| Informasi terakhir disinkronkan | SagaBook Sprint 1 test harness candidate pada source `14ad88cc`; runner loopback per run terisolasi, race port ditutup, dan dependency audit kembali nol. Production tetap source `0894df00` / release `20260806152606-0894df0`; SagaView S137 dari baseline tetap aktif tanpa perubahan. |
+| Baseline sebelum pembaruan | `87cecb9a659e35621a8cbc9dfeb8f8d439027862` |
+| Informasi terakhir disinkronkan | SagaView S138 import finish dan batch kategori pada backend source/release `f515dd7a` / `20260807023502-f515dd7` serta Studio `05c5fda0` / `20260807023502-05c5fda`; tombol Selesai/Escape dan batch kategori transactional 1-100 frame aktif di production. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik fakta runtime SagaBook atau SagaView S137. Status local candidate, production aktif, activation, dan business readiness dipisahkan. |
-| Error | Tidak ada error sinkronisasi. Sprint 2 auth/session dan authenticated UAT/provider/reconciliation/pilot tetap residual SagaBook; authenticated Owner UAT tetap residual SagaView S137. |
+| Konflik | Tidak ada konflik fakta runtime SagaBook atau SagaView S138. Status production aktif, activation, dan business readiness dipisahkan. |
+| Error | Tidak ada error sinkronisasi. Sprint 2 auth/session dan authenticated UAT/provider/reconciliation/pilot tetap residual SagaBook; authenticated Owner UAT batch/kategori nyata tetap residual SagaView S138. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/sagabook/CHANGELOG.md`
-- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/DOSSIER.md`
+- `products/sagaview/CHANGELOG.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `DECISIONS.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHANGELOG.md`
 - `SYNC_STATUS.md`
@@ -135,6 +140,17 @@ dan subscription SagaView; membership nonaktif tetap ditolak. UI menampilkan
 loading/aktif/nonaktif/gagal serta retry secara eksplisit. Regression 935 test/
 11.101 assertion dan seluruh guarded release gate lulus. Authenticated Owner UAT
 pada akun terdampak dan Batch Import tetap residual sebelum `BUSINESS_READY`.
+
+SagaView S138 import finish dan batch kategori sudah
+`PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` pada backend source/release
+`f515dd7a` / `20260807023502-f515dd7` dan Studio source/release `05c5fda0` /
+`20260807023502-05c5fda`; rollback S137 dipertahankan. Footer status akhir,
+tombol `Selesai`, Escape/tutup, pilihan massal untuk export atau kategori,
+serta update kategori transactional 1-100 frame aktif. Full regression 938/
+11.110, SagaView 149/1.721, desktop/mobile Playwright, backup/restore,
+candidate+rollback rehearsal 6/6, deploy/post-preflight, preservation,
+source+bundle+route marker, dan smoke lulus. Authenticated Owner UAT batch dan
+kategori nyata tetap residual sebelum `BUSINESS_READY`.
 
 Bulk export Galeri Frame `DEC-044` sudah `PRODUCTION_DEPLOYED /
 PRODUCTION_ACTIVATED`; klausa packaging-nya dikoreksi oleh `DEC-049`. Satu atau

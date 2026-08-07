@@ -174,6 +174,16 @@ ketika keputusan atau release baru menutup gap.
 
 ### SagaView
 
+- `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: S138 import finish dan batch
+  kategori aktif pada backend `f515dd7a` / `20260807023502-f515dd7` dan Studio
+  `05c5fda0` / `20260807023502-05c5fda`; rollback S137 dipertahankan. Footer
+  status akhir, tombol `Selesai`, Escape/tutup, serta batch edit kategori 1-100
+  frame sudah lulus full regression, desktop/mobile Playwright, backup/restore,
+  candidate+rollback rehearsal 6/6, deploy/post-preflight, preservation,
+  marker source+bundle+route, dan public smoke. Residual sebelum
+  `BUSINESS_READY`: authenticated Owner UAT dengan completed/failed/cancelled,
+  batch kategori published+draft dan failure preservation, serta export nyata.
+
 - `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: S137 cloud bootstrap recovery
   aktif pada backend `d7542fdc` / `20260807010717-d7542fd` dan Studio
   `05c5fda0` / `20260807010718-05c5fda`; rollback S136 dipertahankan. Owner

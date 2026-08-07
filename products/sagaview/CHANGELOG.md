@@ -4,6 +4,30 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-08-07 - S138 import finish dan batch kategori production
+
+- Klasifikasi: `CONFIRMED` melalui `DEC-056`, exact source, full regression,
+  guarded release, dan verifikasi runtime public-safe.
+- Status: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; business readiness
+  mass-scale tetap `NEEDS CONFIRMATION`.
+- Backend source/release `f515dd7a1066b2c6b5244bb1f5bc48d306430768` /
+  `20260807023502-f515dd7`; Studio source/release
+  `05c5fda07a342d2977d8e6e3d836adb17a84605b` /
+  `20260807023502-05c5fda`. Rollback S137 dipertahankan.
+- Batch Import menampilkan footer status akhir dan tombol `Selesai` yang selalu
+  terlihat; Escape dan tombol tutup bekerja tanpa bergantung posisi scroll.
+- Galeri Frame memakai pilihan yang sama untuk export atau update kategori
+  massal 1-100 frame. Published dan draft terkait diperbarui transactional;
+  missing/cross-workspace membatalkan seluruh aksi tanpa perubahan parsial.
+- Full regression 938 test/11.110 assertion, focused SagaView 149/1.721,
+  Playwright desktop+mobile, build/audit, fresh encrypted backup tiga database,
+  candidate+rollback rehearsal 6/6, preflight/deploy/post-preflight,
+  canary/payment/device preservation, marker source+bundle+route, service,
+  journal, security header, dan public smoke lulus.
+- Tidak ada migration atau perubahan artwork, slot, foto customer, payment,
+  subscription, device, session, maupun data operasional tenant. Authenticated
+  Owner UAT dengan batch dan kategori nyata tetap residual.
+
 ## 2026-08-07 - S137 cloud bootstrap recovery production
 
 - Klasifikasi: `CONFIRMED` dari exact source, full regression, guarded release,

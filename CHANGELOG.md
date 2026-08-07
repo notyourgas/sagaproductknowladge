@@ -12,6 +12,25 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-07
 
+### SagaView S138 import finish dan batch kategori production
+
+- Ringkasan: Batch Import kini dapat ditutup melalui footer `Selesai` yang
+  selalu terlihat atau Escape; pilihan Galeri Frame dapat mengubah kategori
+  1-100 frame secara transactional tanpa membuka frame satu per satu.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` melalui
+  `DEC-056`; business readiness tetap `NEEDS CONFIRMATION`.
+- Source/release backend `f515dd7a1066b2c6b5244bb1f5bc48d306430768` /
+  `20260807023502-f515dd7`; Studio `05c5fda07a342d2977d8e6e3d836adb17a84605b` /
+  `20260807023502-05c5fda`; rollback S137 dipertahankan.
+- Gate: 938 test/11.110 assertion, SagaView 149/1.721, Playwright desktop+mobile,
+  build/audit, fresh encrypted backup/restore tiga database,
+  candidate+rollback rehearsal 6/6, deploy/post-preflight, preservation,
+  source+bundle+route marker, public smoke, service, journal, dan header lulus.
+- Boundary: tidak ada migration atau perubahan artwork, slot, foto customer,
+  payment, subscription, device, session, maupun data operasional tenant.
+- File knowledge: product, dossier, changelog, ledger, decision, master
+  knowledge, gaps, portfolio/root changelog, dan sync status.
+
 ### SagaBook Sprint 1 demo tenant dan test harness terisolasi
 
 - Ringkasan: seluruh script visual/E2E utama memakai runner loopback dengan
