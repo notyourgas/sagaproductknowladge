@@ -12,6 +12,21 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-07
 
+### SagaBook Sprint 5 package stale-write recovery candidate
+
+- Ringkasan: editor paket kini dapat pulih dari konflik optimistic-write 409
+  dengan memuat versi server aktual sebelum menyimpan ulang tepat satu kali.
+- Klasifikasi: `CONFIRMED`; source
+  `0874c098440850d104868d891c2f61214cdba36b`; status `UIUX_VALIDATED /
+  INTEGRATION_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: Playwright 3 pass/1 intentional skip, regresi 6/6, focused backend
+  29/29 (227), full backend 973/973 (11.171), AI 38/38 (219), build,
+  design 26/0, audit dependency, Pint, diff, dan cleanup lulus.
+- Production berubah: tidak. Release aktif tetap `20260806152606-0894df0`;
+  S5 belum exit gate dan deploy tetap menunggu S21.
+- File knowledge: product, dossier, changelog, ledger, master knowledge, gaps,
+  portfolio/root changelog, dan sync status.
+
 ### SagaBook Sprint 3-4 tenant/branch exit gate accepted locally
 
 - Ringkasan: tujuh slice tenant/cabang kini dapat dijalankan ulang dengan satu

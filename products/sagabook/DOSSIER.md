@@ -249,6 +249,17 @@ dan database disposable. Status `LOCAL_VALIDATED / EXIT_GATE_ACCEPTED /
 IMPLEMENTED_NOT_DEPLOYED`; production tetap `20260806152606-0894df0`, dan
 vertical slice READY berikutnya berasal dari S5-S6 katalog.
 
+Vertical slice pertama S5 ditutup lokal pada source
+`0874c098440850d104868d891c2f61214cdba36b`. Konflik stale-write paket 409
+tidak lagi membuat editor buntu: operator dapat memuat versi server dari
+`GET /api/admin/getDashboardData`, baseline/draft diperbarui, lalu save
+berikutnya berjalan satu kali melalui optimistic lock existing. Playwright,
+permission/tenant-negative, full backend, build/design, dan audit dependency
+hijau. Status `UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; production tetap `20260806152606-0894df0`.
+Publish/deactivate paket, dependency integrity, background, dan exit gate S5
+belum selesai.
+
 Tenant/cabang S124 pada source
 `f6988cb945c5ca224015d7fecbc94e81c535fc60` aktif sebagai release
 `20260806053037-f6988cb`; rollback `20260806043833-a912522`. Switch status

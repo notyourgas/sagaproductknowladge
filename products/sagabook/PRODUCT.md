@@ -275,6 +275,13 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
   audit juga hijau. Status ini bukan deployment: production tetap pada release
   `20260806152606-0894df0`. Roadmap lokal berikutnya adalah S5-S6
   paket/background/add-on/resource.
+  S5 dimulai pada candidate source
+  `0874c098440850d104868d891c2f61214cdba36b`. Editor paket yang menerima
+  konflik 409 sekarang menawarkan `Muat data terbaru`, mengambil response API
+  aktual, mengganti baseline stale, lalu menyimpan edit lanjutan tepat satu
+  kali. Optimistic lock, tenant boundary, dan permission existing tetap hijau.
+  Irisan ini tervalidasi lokal dan belum production; publish/deactivate paket,
+  dependency integrity, background, dan exit gate S5 masih residual.
 - Report branch context S125 aktif pada source
   `cb8ef55a33ad1399c9383d027343a412752fc9ff`, release immutable
   `20260806063717-cb8ef55`, dengan rollback `20260806053037-f6988cb`.

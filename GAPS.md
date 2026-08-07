@@ -62,7 +62,12 @@ ketika keputusan atau release baru menutup gap.
   tenant/cabang ditutup lokal oleh combined exit gate S3-S4 source `4ee167ec`
   dengan tujuh profil terisolasi, full backend, build, AI regression, dan audit
   dependency hijau; production tetap belum berubah. Prioritas berikutnya adalah
-  S5-S6 paket/background/add-on/resource. Recovery response availability kosong,
+  S5-S6 paket/background/add-on/resource. Candidate S5 `0874c098` sudah
+  menutup pemulihan stale-write paket 409 dengan reload response API aktual,
+  baseline baru, double-submit guard, dan permission/tenant-negative. Irisan ini
+  `LOCAL_VALIDATED`, belum production. Residual S5 adalah publish/deactivate
+  paket, dependency integrity, background, dan combined exit gate; S6
+  add-on/resource belum dimulai. Recovery response availability kosong,
   initial-load manual transfer, dan aksi Payment Monitor sudah production pada
   S128-S130. Residual payment/report adalah QRIS/provider nyata,
   pagination/filter/export, reconciliation provider, stale multi-tab, dan

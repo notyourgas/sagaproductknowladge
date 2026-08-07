@@ -150,6 +150,14 @@ roadmap lokal masuk S5-S6 paket/background/add-on/resource, tetapi bukan bukti
 deployment atau activation. Production tetap release
 `20260806152606-0894df0` sampai gate S21 dijalankan.
 
+Candidate SagaBook S5 source
+`0874c098440850d104868d891c2f61214cdba36b` sudah menutup pemulihan konflik
+stale-write editor paket secara lokal. Setelah 409, operator dapat memuat versi
+server aktual lalu melanjutkan edit tanpa overwrite dan tanpa request ganda.
+Statusnya `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; jangan menyebutnya
+production atau menyebut S5 selesai. Release production tetap
+`20260806152606-0894df0`.
+
 Candidate SagaBook Sprint 2 terbaru adalah source
 `bf1766ae84c352cf3687383ca31947a3e619f575`, belum production. UI rate-limit
 429, idle expiry per tab, dan kontrol staff untuk mengeluarkan perangkat lain

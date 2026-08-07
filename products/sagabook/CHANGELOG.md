@@ -4,6 +4,25 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-07 - Sprint 5 package stale-write recovery candidate
+
+- Klasifikasi `CONFIRMED`; source
+  `0874c098440850d104868d891c2f61214cdba36b` pada branch
+  `codex/s141-sagabook-package-stale-recovery`.
+- Before: response 409 mencegah overwrite tetapi editor tidak memberi jalan
+  memuat versi server, sehingga retry terus memakai baseline stale. After: aksi
+  `Muat data terbaru` mengambil dashboard API aktual, mengganti draft/baseline,
+  lalu memungkinkan save berikutnya tepat satu kali.
+- Controller, service, transaksi, row lock, `lock_version`, tenant boundary,
+  dan permission existing tetap menjadi sumber kebenaran; tidak ada migration
+  atau data production yang diubah.
+- Playwright stale recovery 3 pass/1 intentional skip, regresi 6/6, focused
+  backend 29/29 (227), full backend 973/973 (11.171), AI 38/38 (219), build,
+  design 26/0, dan audit dependency nol advisory.
+- Status `UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap `20260806152606-0894df0`.
+  Next: publish/deactivate dan dependency integrity paket, lalu background S5.
+
 ## 2026-08-07 - Sprint 3-4 tenant/branch exit gate accepted locally
 
 - Klasifikasi `CONFIRMED`; source

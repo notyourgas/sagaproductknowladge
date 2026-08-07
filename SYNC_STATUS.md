@@ -12,14 +12,14 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-07T19:12:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-07T21:49:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `bfd158f32905c8b7c3e7a3d6d831c1111c52a265` |
-| Informasi terakhir disinkronkan | SagaBook combined exit gate Sprint 3-4 tenant/cabang pada source `4ee167ecbc95892a113c9036faada5de85994bb8`; gate diterima lokal dan production tidak berubah. |
+| Baseline sebelum pembaruan | `0d4f1e32af7ae1a159b91641e27a4f806f0c1399` |
+| Informasi terakhir disinkronkan | SagaBook S5 package stale-write recovery pada source `0874c098440850d104868d891c2f61214cdba36b`; irisan tervalidasi lokal dan production tidak berubah. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
 | Konflik | Tidak ada konflik fakta runtime SagaBook atau SagaView. Status candidate lokal, production aktif, activation, dan business readiness dipisahkan. |
-| Error | Tidak ada blocker gate aktif. Runner 7/7 profil, harness 7/7, backend 973/973, AI 44/44, typecheck/build/design, cleanup 0/0, serta npm/Composer/OSV nol advisory. |
+| Error | Tidak ada error gate slice. S5 belum exit gate: publish/deactivate paket, dependency integrity, dan background masih residual. |
 
 ## File yang berubah pada sinkronisasi ini
 
@@ -56,7 +56,11 @@ global, mempertahankan revokasi delegasi dan permission negative, serta
 menutup fresh OSV dengan nol advisory. Residual tenant/cabang kini combined
 exit gate S3-S4. Gate tersebut kemudian diterima lokal pada source `4ee167ec`:
 tujuh profil disposable, full backend, build, AI regression, cleanup, dan audit
-dependency hijau. Production tidak berubah; roadmap lokal berikutnya S5-S6.
+dependency hijau. Production tidak berubah. Candidate S5 `0874c098` kemudian
+menutup recovery stale-write paket 409 melalui API aktual, baseline baru,
+double-submit guard, dan permission/tenant-negative. Irisan ini lokal saja;
+publish/deactivate paket, dependency integrity, background, dan exit gate S5
+masih residual sebelum S6.
 Recovery response availability kosong, initial-load manual transfer, dan aksi Payment Monitor
 S128-S130 sudah production. Residual payment/report adalah QRIS/provider nyata,
 pagination/filter/export, reconciliation provider, stale multi-tab, dan

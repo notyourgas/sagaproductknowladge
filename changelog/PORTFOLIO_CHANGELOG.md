@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-07 - SagaBook Sprint 5 package stale-write recovery candidate
+
+- Source `0874c098440850d104868d891c2f61214cdba36b` menutup editor paket
+  yang sebelumnya buntu setelah konflik 409, tanpa mengubah production.
+- UI sekarang memuat versi server dari API aktual sebelum operator melanjutkan
+  edit; optimistic lock tetap mencegah overwrite, retry tersimpan satu kali,
+  dan permission/tenant boundary existing tetap hijau.
+- Playwright 3 pass/1 intentional skip, regresi 6/6, full backend 973/973,
+  AI 38/38, build/design, dan audit dependency lulus.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; release aktif tetap
+  `20260806152606-0894df0`. S5 belum exit gate.
+
 ## 2026-08-07 - SagaBook Sprint 3-4 tenant/branch exit gate
 
 - Source `4ee167ecbc95892a113c9036faada5de85994bb8` menambahkan runner
