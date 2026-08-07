@@ -18,7 +18,14 @@ PRODUCTION_ACTIVATED`; authenticated Owner UAT tetap residual sebelum
 banyak frame dengan satu `Simpan semua`; source
 `369f01140e3db0144d189fb781acdad91cfe3fc5` / release
 `20260807173443-369f011` sudah `PRODUCTION_DEPLOYED /
-PRODUCTION_ACTIVATED`. Authenticated Owner UAT tetap residual.
+PRODUCTION_ACTIVATED`. S142 menjadikan kategori Owner Console sebagai katalog
+authoritative untuk nama, status, dan harga, menghapus fallback kategori lokal
+Studio, serta menambahkan pengurutan kategori tersimpan dari Studio Console.
+Backend `e6a7f97941c6b93f88fbd90e09044a4e8fa699b6` / release
+`20260808020447-e6a7f97` dan Studio
+`c4f664fc5ad6ec1ac3ef992fc7a75b9e7205b666` / release
+`20260808020447-c4f664f` sudah `PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED`. Authenticated Owner/Studio UAT tetap residual.
 
 ## Tujuan dokumen
 
@@ -29,7 +36,7 @@ Menjadi ringkasan fakta kanonik SagaView. Detail lengkap berada di
 ## Konteks
 
 Fakta release di dokumen ini mengacu pada exact source dan runtime production
-yang diverifikasi sampai 7 Agustus 2026.
+yang diverifikasi sampai 8 Agustus 2026.
 
 ## Status production terbaru
 
@@ -43,12 +50,12 @@ yang diverifikasi sampai 7 Agustus 2026.
   lalu memakai dua kartu sesi berdampingan pada QHD/4K di dalam batas 1400
   piksel. Ringkasan, filter, retry, cabut izin, dan workflow privacy tidak
   berubah.
-- Backend source `c2a05076a626562244adabcb22fb86a9a60cbbd8` aktif sebagai
-  release `20260807161105-c2a0507`; rollback
-  `20260807045115-f05c919` dipertahankan.
-- Studio source `10bcaaae20bfff69fe250d4dd303acbedd8a4bd3` aktif sebagai
-  release `20260807161105-10bcaaa`; rollback
-  `20260807045115-05c5fda` dipertahankan.
+- Backend source `e6a7f97941c6b93f88fbd90e09044a4e8fa699b6` aktif sebagai
+  release `20260808020447-e6a7f97`; rollback
+  `20260807173443-369f011` dipertahankan.
+- Studio source `c4f664fc5ad6ec1ac3ef992fc7a75b9e7205b666` aktif sebagai
+  release `20260808020447-c4f664f`; rollback
+  `20260807161105-10bcaaa` dipertahankan.
 - Entitlement live memberi Growth 50 dan Pro 100 frame aktif. Harga, device,
   preset, offline grace, storage, laporan, support, payment, dan fair-use tidak
   berubah.
@@ -558,6 +565,39 @@ desktop+mobile, build, Pint, route, diff check, dan dependency audit lulus.
 Backup terenkripsi/offsite restore, candidate+rollback rehearsal, atomic
 switch, preservation snapshot, service/journal/header/public smoke, live marker,
 dan rollback target lulus. Authenticated Owner UAT nyata masih diperlukan
+sebelum `BUSINESS_READY`.
+
+### S142 kategori authoritative dan urutan Studio production
+
+`CONFIRMED` melalui `DEC-062`. Owner Console menjadi sumber tunggal nama,
+status aktif, dan harga kategori. Studio tidak lagi membuat kategori
+`Basic`, `Premium`, atau kategori lain dari fixture/fallback lokal. Nilai
+metadata lama yang tidak ada pada katalog aktif dipetakan saat dibaca ke
+kategori aktif pertama tanpa menulis ulang frame, artwork, atau versi lama.
+
+Studio Console menampilkan urutan kategori server-authoritative dan menyediakan
+drag, naik/turun, serta satu tombol simpan. Simpan memakai revision guard,
+menulis urutan rapat, dan menerbitkan snapshot workspace baru; konflik dari tab
+stale meminta operator memuat data terbaru. Customer picker membuka kategori
+aktif pertama sesuai urutan Studio; `Original` menjadi tie-break deterministik
+ketika urutan sama, sementara `Semua` tetap tersedia sebagai overview. Rename
+Owner mempertahankan slug stabil dan posisi; kategori yang
+dihapus atau diganti direkonsiliasi pada paket/promo agar tidak menyisakan
+referensi lokal palsu.
+
+Backend source `e6a7f97941c6b93f88fbd90e09044a4e8fa699b6` / release
+`20260808020447-e6a7f97`; Studio source
+`c4f664fc5ad6ec1ac3ef992fc7a75b9e7205b666` / release
+`20260808020447-c4f664f`. Rollback backend S141
+`20260807173443-369f011` dan Studio S140 `20260807161105-10bcaaa`
+dipertahankan. Backend 953/953 test dengan 11.215 assertion, Studio 160 unit
+test, 28/28 selected browser acceptance, lint, typecheck, build, bundle budget,
+dan npm audit lulus. Fresh backup terenkripsi/checksum/offsite restore,
+candidate+rollback rehearsal, deployment gate, atomic switch, snapshot
+preservation, CORS PUT, service/journal/security header, public smoke, live
+marker, dan rollback target lulus. Tidak ada migration atau mutasi frame,
+artwork, slot, foto customer, payment, subscription, device, session, maupun
+produk lain. Authenticated Owner/Studio UAT kategori nyata tetap diperlukan
 sebelum `BUSINESS_READY`.
 
 ## Session completion dan privacy handoff

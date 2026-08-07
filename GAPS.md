@@ -219,6 +219,15 @@ ketika keputusan atau release baru menutup gap.
 
 ### SagaView
 
+- `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: S142 kategori authoritative dan
+  urutan Studio aktif pada backend `e6a7f979` / `20260808020447-e6a7f97` dan
+  Studio `c4f664fc` / `20260808020447-c4f664f`; rollback S141/S140
+  dipertahankan. Owner menjadi sumber nama/status/harga, Studio tidak lagi
+  membuat fallback kategori, dan urutan tersimpan memakai revision guard.
+  Residual sebelum `BUSINESS_READY`: authenticated Owner/Studio UAT rename,
+  enable/disable, harga, drag/naik/turun, reload persistence, konflik stale,
+  paket/promo reconciliation, serta customer default category pada data nyata.
+
 - `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: S141 bulk frame management
   source `369f01140e3db0144d189fb781acdad91cfe3fc5` / release
   `20260807173443-369f011` sudah live; rollback S140 dipertahankan. Residual

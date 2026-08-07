@@ -231,6 +231,20 @@ keputusan pengganti.
 | Status | `CONFIRMED`; klausa nama produk AOGTICVITY `DEPRECATED` oleh `DEC-047`, sedangkan kontrak master recap, 8 tim, 10 lomba, durasi editable, dan roster seluruh tim tetap berlaku |
 | Dokumen terkait | [AOGTICVITY Product](products/aogticvity/PRODUCT.md), [AOGTICVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTICVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |
 
+## DEC-062 - Kategori Owner authoritative dan urutan dikelola Studio
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-08 |
+| Topik | Sinkronisasi dan urutan kategori frame SagaView |
+| Keputusan | Owner Console menjadi sumber tunggal nama, status aktif, dan harga kategori. Studio Console wajib mengganti katalog lokal secara exact dari konfigurasi Owner dan tidak boleh mengarang kategori fallback. Studio boleh mengubah urutan kategori melalui satu simpan tenant/device-scoped dengan exact active set dan revision guard; urutan tersimpan berlaku pada Owner, Studio, dan default kategori customer, dengan `Original` sebagai tie-break deterministik ketika urutan sama. Metadata legacy yang tidak dikenali dipetakan saat dibaca ke kategori aktif pertama tanpa memutasi frame lama. |
+| Alasan | Fixture `Basic`/`Premium` dan cache lokal membuat kategori Owner dan Studio berbeda, sedangkan urutan kategori belum dapat disesuaikan operator. Fallback diam-diam juga berisiko mengubah kategori/harga tanpa keputusan Owner. |
+| Alternatif yang dipertimbangkan | Mempertahankan fixture Studio; menyinkronkan hanya nama tanpa status/harga; menyimpan urutan hanya di localStorage; selalu memaksa `Original` pertama tanpa memberi kontrol Studio; memigrasikan seluruh metadata legacy saat deploy. |
+| Dampak | Owner rename mempertahankan slug dan sort order; Studio General menambah drag/naik/turun/satu simpan; API order memakai device credential dan optimistic revision; customer membuka kategori aktif pertama sesuai urutan; paket/promo direkonsiliasi. Tidak ada migration atau perubahan artwork, slot, foto customer, payment, subscription, device lease, session, atau produk lain. |
+| Pemberi keputusan | Andreas / founder melalui instruksi menyinkronkan kategori Owner/Studio dan memberi pengurutan di Studio Console |
+| Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; backend `e6a7f97941c6b93f88fbd90e09044a4e8fa699b6` / `20260808020447-e6a7f97`, Studio `c4f664fc5ad6ec1ac3ef992fc7a75b9e7205b666` / `20260808020447-c4f664f`; authenticated Owner/Studio UAT tetap residual |
+| Dokumen terkait | [SagaView Product](products/sagaview/PRODUCT.md), [SagaView Dossier](products/sagaview/DOSSIER.md), [SagaView Changelog](products/sagaview/CHANGELOG.md), [SagaView Ledger](products/sagaview/FEATURE_COVERAGE_LEDGER.md), [Master Knowledge](CHATGPT_MASTER_KNOWLEDGE.md), [Gaps](GAPS.md) |
+
 ## DEC-061 - Manajemen banyak frame memakai satu penyimpanan transaksional
 
 | Field | Isi |

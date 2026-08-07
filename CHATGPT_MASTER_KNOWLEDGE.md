@@ -817,6 +817,27 @@ lulus. Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; jangan menyebutnya
 `BUSINESS_READY` sebelum authenticated Owner UAT pada frame nyata. S140 menjadi
 rollback dan Studio tetap pada release sebelumnya.
 
+S142 mengikuti `DEC-062` dan sudah production. Owner Console adalah sumber
+authoritative nama, status, serta harga kategori; Studio mengganti katalog
+secara exact dari server dan tidak boleh membuat `Basic`, `Premium`, atau
+kategori fallback lokal. Studio General dapat mengurutkan kategori melalui
+drag/naik/turun dan satu simpan device-scoped dengan exact active set serta
+revision guard. Customer picker membuka kategori aktif pertama sesuai urutan
+tersimpan, sedangkan `Semua` tetap overview. Rename Owner mempertahankan slug
+dan posisi; paket/promo direkonsiliasi terhadap katalog baru. Metadata legacy
+yang tidak dikenali dipetakan saat dibaca ke kategori aktif pertama tanpa
+memutasi frame atau artwork lama. Backend source/release
+`e6a7f97941c6b93f88fbd90e09044a4e8fa699b6` /
+`20260808020447-e6a7f97`; Studio source/release
+`c4f664fc5ad6ec1ac3ef992fc7a75b9e7205b666` /
+`20260808020447-c4f664f`; rollback S141/S140 dipertahankan. Backend 953/953,
+Studio 160 unit dan 28/28 selected browser acceptance, build/audit, encrypted
+backup/restore, rehearsal, atomic switch, preservation, route/CORS,
+service/journal/header/public smoke, live marker, dan rollback lulus. Status
+`PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; jangan menyebutnya
+`BUSINESS_READY` sebelum authenticated Owner/Studio UAT kategori nyata,
+urutan/reload, stale revision, dan customer default category selesai.
+
 Implementasi rotate lama yang menukar W/H 90 derajat telah `DEPRECATED` oleh
 koreksi founder `DEC-036`. Perilaku production yang aktif adalah
 diterima adalah tahan ikon rotate lalu drag ke kiri/kanan agar slot mendapat

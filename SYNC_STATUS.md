@@ -12,28 +12,33 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-08T01:36:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-08T02:29:36+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `1c09c6a672d57c8fed58ca7292181b7b40da3276` |
-| Informasi terakhir disinkronkan | SagaBook S145 source `c5601197`: recovery stale-write Background dengan 409, GET response aktual, offline retry, dan double-submit guard sudah local-validated, tetapi belum dideploy; runtime production tetap `20260806152606-0894df0`. |
+| Baseline sebelum pembaruan | `38c23851ab64db759cf2cf58e2b4f553d97edbd7` |
+| Informasi terakhir disinkronkan | SagaView S142 backend `e6a7f979` / `20260808020447-e6a7f97` dan Studio `c4f664fc` / `20260808020447-c4f664f`: kategori Owner authoritative, exact Studio catalog, urutan kategori server-persisted, revision guard, dan legacy read mapping sudah production. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada. Kontrak storefront mobile-only, urutan sprint, subscription skip, SagaView local-first, dan runtime production tidak berubah. |
-| Error | Tidak ada error unit SagaBook satu jam terakhir. Global Pint masih memuat utang format legacy di file yang tidak disentuh; targeted changed-file Pint lulus. Rollback/previous symlink production tidak ada dan menjadi blocker S21. |
+| Konflik | Tidak ada. `DEC-062` melengkapi `DEC-057`/`DEC-061`; kategori Owner authoritative, urutan Studio, local-first foto, dan product boundary tetap konsisten. |
+| Error | Tidak ada error release. Refresh Composer advisory online mengalami timeout provider; `composer.lock` tidak berubah, lock comparison production lulus, dan npm audit backend/Studio nol advisory. Authenticated Owner/Studio UAT tetap residual. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/sagabook/PRODUCT.md`
-- `products/sagabook/DOSSIER.md`
-- `products/sagabook/CHANGELOG.md`
-- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/DOSSIER.md`
+- `products/sagaview/CHANGELOG.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
+- `DECISIONS.md`
 - `GAPS.md`
 - `SYNC_STATUS.md`
 - `CHANGELOG.md`
 
 ## Sinkronisasi sebelumnya
+
+- SagaBook S145 source `c5601197` disinkronkan sebagai recovery stale-write
+  Background local-validated; production SagaBook tetap
+  `20260806152606-0894df0`.
 
 - SagaView S141 source `369f0114` / release `20260807173443-369f011`
   dipromosikan production dengan rollback S140 dan Studio release sebelumnya

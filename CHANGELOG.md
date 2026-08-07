@@ -12,6 +12,27 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-08
 
+### SagaView S142 kategori authoritative dan urutan Studio production
+
+- Ringkasan: kategori Owner kini menjadi source of truth nama/status/harga;
+  Studio menghapus fallback lokal dan dapat menyimpan urutan kategori server
+  melalui drag/naik/turun serta satu CTA.
+- Klasifikasi: `CONFIRMED` melalui `DEC-062`; backend source/release
+  `e6a7f97941c6b93f88fbd90e09044a4e8fa699b6` /
+  `20260808020447-e6a7f97`, Studio source/release
+  `c4f664fc5ad6ec1ac3ef992fc7a75b9e7205b666` /
+  `20260808020447-c4f664f`; status `PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`.
+- Gate: backend 953/953 dan 11.215 assertion; Studio 160 unit, 28/28 selected
+  Playwright, lint/typecheck/build/budget, npm audit, encrypted backup/offsite
+  restore, candidate+rollback rehearsal, atomic switch, snapshot preservation,
+  route/CORS, service/journal/header/public smoke, live marker, dan rollback.
+- Production berubah: ya. Rollback backend S141
+  `20260807173443-369f011` dan Studio S140 `20260807161105-10bcaaa`
+  dipertahankan. Tidak ada migration atau mutasi frame/customer/payment/device.
+- File knowledge: product, dossier, changelog, ledger, decision, master,
+  gaps, portfolio/root changelog, dan sync status.
+
 ### SagaBook Sprint 5 background stale-write recovery candidate
 
 - Ringkasan: editor Background yang terkena konflik 409 kini dapat memuat

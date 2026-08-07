@@ -1,5 +1,28 @@
 # Portfolio Changelog
 
+## 2026-08-08 - SagaView S142 category source-of-truth dan urutan production
+
+- `DEC-062` menetapkan Owner Console sebagai sumber tunggal nama, status, dan
+  harga kategori; Studio tidak lagi membuat fixture/fallback kategori lokal.
+  Studio General kini dapat drag/naik/turun lalu menyimpan satu urutan
+  server-authoritative dengan revision guard.
+- Backend source/release `e6a7f97941c6b93f88fbd90e09044a4e8fa699b6` /
+  `20260808020447-e6a7f97`; Studio source/release
+  `c4f664fc5ad6ec1ac3ef992fc7a75b9e7205b666` /
+  `20260808020447-c4f664f`; rollback backend S141 dan Studio S140
+  dipertahankan.
+- Customer picker membuka kategori aktif pertama sesuai urutan tersimpan.
+  Rename Owner mempertahankan slug/posisi, paket/promo direkonsiliasi, dan
+  metadata legacy dipetakan saat dibaca tanpa memutasi frame atau artwork.
+- Backend 953/953 test dan 11.215 assertion; Studio 160 unit dan 28/28 selected
+  browser acceptance, lint/typecheck/build/budget, npm audit, fresh encrypted
+  backup/restore, rehearsal candidate+rollback, atomic switch, preservation,
+  route/CORS, service/journal/header/public smoke, marker live, dan rollback
+  lulus. Tidak ada migration atau perubahan customer/payment/device.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated
+  Owner/Studio UAT kategori nyata, urutan/reload, stale revision, dan default
+  customer masih residual sebelum `BUSINESS_READY`.
+
 ## 2026-08-08 - SagaBook Sprint 5 background stale-write recovery candidate
 
 - Source `c560119745959fe67f3234a6e278c926db595858` menutup konflik edit

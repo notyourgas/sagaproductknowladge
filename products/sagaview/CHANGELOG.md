@@ -4,6 +4,46 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-08-08 - S142 kategori authoritative dan urutan Studio production
+
+- Klasifikasi: `CONFIRMED` melalui `DEC-062`, exact source/release, regression,
+  guarded deployment, dan live verification. Status `PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`; business readiness tetap `NEEDS CONFIRMATION`.
+- Backend source/release `e6a7f97941c6b93f88fbd90e09044a4e8fa699b6` /
+  `20260808020447-e6a7f97`; Studio source/release
+  `c4f664fc5ad6ec1ac3ef992fc7a75b9e7205b666` /
+  `20260808020447-c4f664f`. Rollback backend S141
+  `20260807173443-369f011` dan Studio S140 `20260807161105-10bcaaa`
+  dipertahankan.
+- Owner Console menjadi sumber tunggal nama, status, dan harga kategori.
+  Studio menghapus fixture/fallback `Basic`, `Premium`, dan kategori lokal,
+  mengganti katalog secara exact dari konfigurasi Owner, serta tidak membuka
+  editor paket/promo sebelum konfigurasi authoritative tersedia.
+- Studio General menambah drag, naik/turun, dan satu simpan urutan kategori.
+  Endpoint device-scoped `PUT /api/sagadev/sync/categories/order` memakai
+  tenant credential, exact active set, revision guard, urutan rapat, dan
+  snapshot publish. Customer picker membuka kategori aktif pertama menurut
+  urutan tersimpan; `Semua` tetap overview.
+- Rename Owner mempertahankan slug dan posisi kategori; duplikat nama
+  case-insensitive ditolak. Referensi paket/promo direkonsiliasi ketika kategori
+  berubah. Metadata legacy/unknown dipetakan saat dibaca ke kategori aktif
+  pertama tanpa mengarang `Basic` atau memutasi frame/artwork lama.
+- Backend 953/953 test dan 11.215 assertion; Studio 160 unit test, 28/28
+  selected Playwright, lint, typecheck, build, bundle budget, npm audit, route,
+  dan diff check lulus. `composer.lock` tidak berubah; refresh advisory online
+  sempat tidak tersedia karena timeout provider dan bukan perubahan dependency.
+- Fresh encrypted backup `20260807T190244Z`, checksum, offsite round-trip,
+  disposable restore, candidate+rollback rehearsal, deployment gate, atomic
+  switch, preservation snapshot, CORS PUT, service/journal/security-header,
+  public smoke, live marker S142/0.20.5, serta rollback target lulus. Dua
+  rehearsal awal berhenti sebelum activation karena validasi runner release;
+  production baru berubah setelah gate diperbaiki dan seluruh acceptance lulus.
+- Tidak ada migration atau perubahan frame, artwork, slot, foto customer,
+  payment, subscription, device, session, SagaBook, maupun Saga Platform.
+  Next action: authenticated Owner/Studio UAT rename/status/harga/urutan kategori,
+  stale revision, reload persistence, dan customer default category sebelum
+  `BUSINESS_READY`.
+
 ## 2026-08-08 - S141 manajemen banyak frame production
 
 - Klasifikasi: `CONFIRMED` melalui `DEC-061`, exact source/release, acceptance,

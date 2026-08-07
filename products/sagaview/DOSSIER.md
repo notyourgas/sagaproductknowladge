@@ -406,6 +406,36 @@ atomic switch, preservation frame/customer/device/payment/subscription,
 service/journal/header/public smoke, live marker, dan rollback target lulus.
 Authenticated Owner UAT pada frame nyata tetap residual.
 
+S142 mengunci boundary kategori Owner/Studio. Nama, status, dan harga kategori
+hanya berasal dari Owner Console; Studio tidak lagi menambah fixture atau
+fallback `Basic`, `Premium`, dan kategori lokal. Snapshot kategori mengganti
+cache secara exact per workspace. Metadata lama yang tidak ditemukan pada
+katalog aktif dipetakan saat dibaca ke kategori aktif pertama, tanpa menulis
+ulang frame, artwork, versi, atau histori import.
+
+Studio General menyediakan drag, tombol naik/turun, dan satu aksi simpan untuk
+urutan seluruh kategori. Request `PUT /api/sagadev/sync/categories/order`
+memakai device credential, tenant scope, exact active set, dan revision guard;
+server menyimpan sort order rapat lalu menerbitkan workspace snapshot baru.
+Konflik revision memuat snapshot terbaru dan tidak menimpa perubahan tab lain.
+Customer picker membuka kategori aktif pertama menurut urutan tersimpan,
+sedangkan manajemen tetap menyediakan `Semua` sebagai overview. Rename Owner
+mempertahankan slug/posisi dan duplikat nama case-insensitive ditolak. Paket
+serta promo direkonsiliasi ketika kategori authoritative berubah, dan editor
+terkait ditahan sampai konfigurasi server tersedia.
+
+Backend source/release `e6a7f97941c6b93f88fbd90e09044a4e8fa699b6` /
+`20260808020447-e6a7f97`; Studio source/release
+`c4f664fc5ad6ec1ac3ef992fc7a75b9e7205b666` /
+`20260808020447-c4f664f`; rollback backend S141 dan Studio S140 dipertahankan.
+Backend 953/953 test dan 11.215 assertion, Studio 160 unit test, 28/28 selected
+Playwright, lint/typecheck/build/budget, npm audit, route/CORS, fresh encrypted
+backup/checksum/offsite restore, rehearsal candidate+rollback, atomic switch,
+snapshot preservation, service/journal/header/public smoke, live marker, dan
+rollback target lulus. Tidak ada migration atau mutasi data tenant/customer.
+Authenticated Owner/Studio UAT dengan kategori nyata tetap residual sebelum
+`BUSINESS_READY`.
+
 Mulai sesi production memakai checklist perangkat, paket, folder, frame, dan
 output serta satu CTA kontekstual 48 px. Utility cloud/recovery yang sehat
 diringkas; detail terbuka otomatis saat operator perlu bertindak. Alur tetap
