@@ -4,6 +4,27 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-08 - Sprint 5 background publish/deactivation integrity candidate
+
+- Klasifikasi `CONFIRMED`; source
+  `ce537667f314e80b8b94479f0defb9d60524f4f0` pada branch
+  `codex/s146-sagabook-background-status-integrity`.
+- Before: status numeric `0/1` dari API menghasilkan state switch tidak valid,
+  error mutation ditelan, dan double-click dapat menggeser kartu lalu membuka
+  editor yang salah. After: status dinormalisasi boolean, switch dikunci segera,
+  failure mempertahankan state server, dan feedback tidak menggeser target klik.
+- Recovery aktual mencakup network retry, 409 `Muat data terbaru`, dan 422
+  `Atur background`; staff tetap 403 dan record tenant lain tetap 404 tanpa
+  perubahan data.
+- Focused backend 24/24 (127), full backend 977/977 (11.213), S141-S146 browser
+  17 pass/5 intentional skip, CRUD/hardening 16/16, AI 44/44 (3.440), build,
+  typecheck, design 26/0, targeted Pint/diff, serta npm/Composer/OSV nol advisory.
+- Status irisan `UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; combined S5 `EXIT_GATE_ACCEPTED /
+  LOCAL_VALIDATED`. Production tetap `20260806152606-0894df0`; S6 add-on/resource
+  menjadi READY berikutnya. Rollback/previous symlink wajib dipulihkan sebelum
+  S21.
+
 ## 2026-08-08 - Sprint 5 background stale-write recovery candidate
 
 - Klasifikasi `CONFIRMED`; source

@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 8 Agustus 2026 01:36 WIB
+- Updated: 8 Agustus 2026 02:38 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED` untuk workflow yang tercantum di
   [PRODUCT](PRODUCT.md)
@@ -316,6 +316,24 @@ LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap
 `20260806152606-0894df0`. Publish/deactivation integrity Background dan exit
 gate S5 belum selesai; S6 belum dimulai. Health read-only hijau, tetapi
 rollback/previous symlink wajib dipulihkan sebelum S21.
+
+Vertical slice Background penutup S5 ditutup lokal pada source
+`ce537667f314e80b8b94479f0defb9d60524f4f0`. Status numeric API `0/1` sekarang
+dinormalisasi menjadi boolean aksesibel; switch dikunci segera, mutation failure
+mempertahankan status terkonfirmasi server, dan success baru dirender setelah
+response aktual. Recovery membedakan jaringan/retry, konflik 409 dengan
+`Muat data terbaru`, serta validation 422 dengan `Atur background`. Feedback
+saving ditunda 150 ms agar kartu tidak bergeser saat double-click; request awal
+tetap tepat satu. Staff mutation 403 dan tenant-negative 404 tidak mengubah
+record. Screenshot before/after 390x844 dan 1440x900, matriks desktop sampai
+2560x1440, zoom 100-200 persen, forced-colors, reduced-motion, full backend
+977/977, S141-S146 browser 17 pass/5 intentional skip, CRUD/hardening 16/16,
+AI 44/44, build/typecheck/design, targeted Pint/diff, dan audit dependency
+lulus. Status irisan `UIUX_VALIDATED / INTEGRATION_VALIDATED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; combined S5
+`EXIT_GATE_ACCEPTED / LOCAL_VALIDATED`. S6 add-on/resource menjadi READY
+berikutnya. Production tetap `20260806152606-0894df0`; rollback/previous
+symlink wajib dipulihkan sebelum S21.
 
 Tenant/cabang S124 pada source
 `f6988cb945c5ca224015d7fecbc94e81c535fc60` aktif sebagai release

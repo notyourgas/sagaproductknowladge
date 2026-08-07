@@ -12,29 +12,32 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-08T02:29:36+07:00 |
+| Waktu pembaruan terakhir | 2026-08-08T02:38:37+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `38c23851ab64db759cf2cf58e2b4f553d97edbd7` |
-| Informasi terakhir disinkronkan | SagaView S142 backend `e6a7f979` / `20260808020447-e6a7f97` dan Studio `c4f664fc` / `20260808020447-c4f664f`: kategori Owner authoritative, exact Studio catalog, urutan kategori server-persisted, revision guard, dan legacy read mapping sudah production. |
+| Baseline sebelum pembaruan | `8be0c566d5677eaa73436e89a5b17a4715d45a07` |
+| Informasi terakhir disinkronkan | SagaBook S146 source `ce537667`: publish/deactivation Background memakai status boolean, response API aktual, recovery network/409/422, double-submit/layout-shift guard, serta staff/tenant negative; S5 exit gate diterima lokal dan production tetap `20260806152606-0894df0`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada. `DEC-062` melengkapi `DEC-057`/`DEC-061`; kategori Owner authoritative, urutan Studio, local-first foto, dan product boundary tetap konsisten. |
-| Error | Tidak ada error release. Refresh Composer advisory online mengalami timeout provider; `composer.lock` tidak berubah, lock comparison production lulus, dan npm audit backend/Studio nol advisory. Authenticated Owner/Studio UAT tetap residual. |
+| Konflik | Tidak ada. Kontrak storefront mobile-only, subscription skip, urutan sprint, SagaView local-first, dan product boundary tetap konsisten. |
+| Error | Full backend pertama mengalami empat gangguan cache/fixture Windows di luar diff; empat targeted retry lulus lalu full rerun 977/977 hijau. Production tidak diubah. Rollback/previous symlink SagaBook tetap blocker S21. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/sagaview/PRODUCT.md`
-- `products/sagaview/DOSSIER.md`
-- `products/sagaview/CHANGELOG.md`
-- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
-- `DECISIONS.md`
 - `GAPS.md`
 - `SYNC_STATUS.md`
 - `CHANGELOG.md`
 
 ## Sinkronisasi sebelumnya
+
+- SagaView S142 backend `e6a7f979` dan Studio `c4f664fc` disinkronkan sebagai
+  `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated Owner/Studio UAT
+  tetap residual.
 
 - SagaBook S145 source `c5601197` disinkronkan sebagai recovery stale-write
   Background local-validated; production SagaBook tetap
@@ -88,8 +91,12 @@ candidate `4b71e347` berikutnya menutup deactivation paket yang masih dipakai
 background aktif dengan 409 transactional, row lock, dan recovery UI aktual.
 Candidate `be02a4e7` berikutnya menutup delete dependency/recovery paket dengan
 409 `package_delete_blocked`, hitungan booking/background public-safe,
-transactional row lock, double-submit guard, dan recovery UI aktual. Irisan ini
-juga lokal saja; coverage background dan exit gate S5 masih residual sebelum S6.
+transactional row lock, double-submit guard, dan recovery UI aktual. Candidate
+`b9aeb7c9` menutup delete dependency Background, `c5601197` menutup stale-write
+recovery Background, dan `ce537667` menutup publish/deactivation integrity
+dengan recovery network/409/422 serta staff/tenant negative. Combined S5 kini
+`EXIT_GATE_ACCEPTED / LOCAL_VALIDATED`; S6 add-on/resource menjadi READY tetapi
+belum dimulai.
 Recovery response availability kosong, initial-load manual transfer, dan aksi Payment Monitor
 S128-S130 sudah production. Residual payment/report adalah QRIS/provider nyata,
 pagination/filter/export, reconciliation provider, stale multi-tab, dan
@@ -99,8 +106,8 @@ sudah `LOCAL_VALIDATED`; Sprint 2 exit gate diterima lokal. Source belum
 production dan deploy tetap ditahan sampai S21. Status
 `INTEGRATION_VALIDATED` hanya diberikan per irisan setelah happy path, failure/retry,
 permission/tenant-negative, dan data integrity fitur terkait memiliki bukti
-fresh. Prioritas berikutnya: background dan exit gate S5, add-on/resource S6,
-kemudian
+fresh. Prioritas berikutnya: add-on status/persistence, add-on delete/stale
+recovery, resource status/persistence dalam S6, kemudian
 availability/slot concurrency S7-S8;
 SagaView auth/device/session, local ingest, lalu session flow dengan no-upload
 guarantee.

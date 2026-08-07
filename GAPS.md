@@ -8,7 +8,7 @@ diubah menjadi klaim publik sebelum ditutup dengan bukti atau keputusan owner.
 
 ## Konteks
 
-Daftar ini berlaku pada evidence cut-off 8 Agustus 2026 00:50 WIB dan harus diperbarui
+Daftar ini berlaku pada evidence cut-off 8 Agustus 2026 02:38 WIB dan harus diperbarui
 ketika keputusan atau release baru menutup gap.
 
 ## Cara memakai
@@ -81,9 +81,12 @@ ketika keputusan atau release baru menutup gap.
   berikutnya menutup recovery konflik stale-write Background: 409 tidak lagi
   buntu, GET recovery aktual mengganti baseline, retry offline tidak mengirim
   mutation stale, serta `lock_version` dan relasi paket versi server tetap utuh.
-  Irisan ini juga `LOCAL_VALIDATED` dan belum production. Residual S5 adalah
-  publish/deactivation integrity Background dan combined exit gate; S6
-  add-on/resource belum dimulai. Health SagaBook read-only hijau, tetapi
+  Irisan ini juga `LOCAL_VALIDATED` dan belum production. Candidate penutup
+  `ce537667` menormalisasi status Background, menjaga state server pada failure,
+  memisahkan retry/409/422 recovery, mencegah request dan layout shift ganda,
+  serta mempertahankan staff/tenant boundary. Combined S5 kini
+  `EXIT_GATE_ACCEPTED / LOCAL_VALIDATED`; S6 add-on/resource menjadi READY
+  tetapi belum dimulai. Health SagaBook read-only hijau, tetapi
   rollback/previous symlink production tidak ada dan wajib dipulihkan sebelum
   release immutable S21.
   Recovery response availability kosong,

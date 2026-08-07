@@ -1,5 +1,22 @@
 # Portfolio Changelog
 
+## 2026-08-08 - SagaBook Sprint 5 background status integrity candidate
+
+- Source `ce537667f314e80b8b94479f0defb9d60524f4f0` menutup
+  publish/deactivation integrity Background dan combined exit gate S5 tanpa
+  mengubah production.
+- UI menormalisasi status API ke boolean, mengunci switch saat mutation,
+  mempertahankan state server pada failure, serta menyediakan retry jaringan,
+  reload 409, dan editor recovery 422. Double-click menghasilkan satu request
+  awal tanpa layout shift.
+- Full backend 977/977, S141-S146 browser 17 pass/5 intentional skip,
+  CRUD/hardening 16/16, AI 44/44, build/typecheck/design, targeted Pint, dan
+  audit dependency lulus.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; combined S5
+  `EXIT_GATE_ACCEPTED / LOCAL_VALIDATED`. S6 add-on/resource menjadi READY,
+  release aktif tetap `20260806152606-0894df0`, dan rollback/previous symlink
+  wajib dipulihkan sebelum S21.
+
 ## 2026-08-08 - SagaView S142 category source-of-truth dan urutan production
 
 - `DEC-062` menetapkan Owner Console sebagai sumber tunggal nama, status, dan

@@ -12,6 +12,25 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-08
 
+### SagaBook Sprint 5 background publish/deactivation integrity candidate
+
+- Ringkasan: status Background kini memakai boolean valid, menunggu response
+  API aktual, mempertahankan state server saat failure, dan menyediakan
+  recovery network/409/422 tanpa request atau target klik ganda.
+- Klasifikasi: `CONFIRMED`; source
+  `ce537667f314e80b8b94479f0defb9d60524f4f0`; status `UIUX_VALIDATED /
+  INTEGRATION_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+  combined S5 `EXIT_GATE_ACCEPTED / LOCAL_VALIDATED`.
+- Gate: focused backend 24/24 (127), full backend 977/977 (11.213), browser
+  S141-S146 17 pass/5 intentional skip, CRUD/hardening 16/16, AI 44/44
+  (3.440), build/typecheck/design 26/0, targeted Pint/diff, dan audit dependency
+  nol advisory.
+- Production berubah: tidak. Release aktif tetap `20260806152606-0894df0`;
+  S6 add-on/resource menjadi READY, sedangkan rollback/previous symlink wajib
+  dipulihkan sebelum S21.
+- File knowledge: product, dossier, changelog, ledger, master knowledge, gaps,
+  portfolio/root changelog, dan sync status.
+
 ### SagaView S142 kategori authoritative dan urutan Studio production
 
 - Ringkasan: kategori Owner kini menjadi source of truth nama/status/harga;
