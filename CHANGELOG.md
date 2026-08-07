@@ -12,6 +12,24 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-08
 
+### SagaBook Sprint 5 background stale-write recovery candidate
+
+- Ringkasan: editor Background yang terkena konflik 409 kini dapat memuat
+  response server terbaru, mengganti baseline stale, dan melanjutkan edit tanpa
+  menimpa perubahan pengguna lain atau mengirim request ganda.
+- Klasifikasi: `CONFIRMED`; source
+  `c560119745959fe67f3234a6e278c926db595858`; status `UIUX_VALIDATED /
+  INTEGRATION_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: focused backend 2/2 (8), full backend 975/975 (11.207), browser
+  S141-S145 13 pass/3 intentional skip, CRUD/hardening 16/16, AI 44/44
+  (3.440), build/typecheck/design 26/0, targeted Pint/diff/cleanup, dan audit
+  dependency nol advisory.
+- Production berubah: tidak. Release aktif tetap `20260806152606-0894df0`;
+  service dan smoke read-only hijau, tetapi symlink rollback/previous tidak ada
+  dan wajib ditutup sebelum S21.
+- File knowledge: product, dossier, changelog, ledger, master knowledge, gaps,
+  portfolio/root changelog, dan sync status.
+
 ### SagaBook Sprint 5 background delete dependency recovery candidate
 
 - Ringkasan: delete Background yang masih terhubung paket atau booking kini

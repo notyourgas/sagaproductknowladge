@@ -4,6 +4,28 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-08 - Sprint 5 background stale-write recovery candidate
+
+- Klasifikasi `CONFIRMED`; source
+  `c560119745959fe67f3234a6e278c926db595858` pada branch
+  `codex/s145-sagabook-background-stale-recovery`.
+- Before: konflik edit 409 hanya menampilkan pesan dan operator tidak memiliki
+  recovery aman. After: `Muat data terbaru` mengambil response dashboard aktual,
+  mengganti draft/baseline dengan versi server, dan retry jaringan mengulang GET
+  recovery tanpa mengirim ulang mutation stale.
+- Optimistic lock dan transaksi mempertahankan nama, `lock_version`, serta relasi
+  paket versi server. Ref sinkron menjaga double-click save menjadi satu request.
+- UI mencakup loading/success/error/offline/retry, target 44 px, keyboard/focus,
+  forced-colors, reduced-motion, tanpa overflow, dan tepat satu watermark.
+- Focused backend 2/2 (8), full backend 975/975 (11.207), S141-S145 browser
+  13 pass/3 intentional skip, CRUD/hardening 16/16, AI 44/44 (3.440), build,
+  typecheck, design 26/0, targeted Pint/diff/cleanup, serta npm/Composer/OSV nol
+  advisory.
+- Status `UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap `20260806152606-0894df0`.
+  Next: tutup publish/deactivation integrity Background dan combined exit gate
+  S5; jangan mulai S6 atau deploy. Rollback symlink harus dipulihkan sebelum S21.
+
 ## 2026-08-08 - Sprint 5 background delete dependency recovery candidate
 
 - Klasifikasi `CONFIRMED`; source

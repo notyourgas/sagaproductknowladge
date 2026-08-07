@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 8 Agustus 2026 00:26 WIB
+Updated: 8 Agustus 2026 01:36 WIB
 Evidence status: production + source verified
 
 ## Tujuan dokumen
@@ -309,6 +309,16 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
   `UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
   IMPLEMENTED_NOT_DEPLOYED`; coverage Background dan exit gate S5 belum
   selesai, S6 belum dimulai, dan production tidak berubah.
+  Candidate berikutnya source
+  `c560119745959fe67f3234a6e278c926db595858` menutup konflik stale-write
+  Background. Setelah 409, operator dapat memuat response server terbaru,
+  mengulang GET recovery saat offline, dan melanjutkan edit tanpa menimpa
+  perubahan tab lain atau mengirim mutation ganda. `lock_version` dan relasi
+  paket versi server dipertahankan. Irisan ini `UIUX_VALIDATED /
+  INTEGRATION_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+  publish/deactivation integrity Background dan exit gate S5 belum selesai,
+  S6 belum dimulai, dan production tidak berubah. Rollback/previous symlink
+  wajib dipulihkan sebelum S21.
 - Report branch context S125 aktif pada source
   `cb8ef55a33ad1399c9383d027343a412752fc9ff`, release immutable
   `20260806063717-cb8ef55`, dengan rollback `20260806053037-f6988cb`.

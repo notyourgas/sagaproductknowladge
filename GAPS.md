@@ -77,9 +77,15 @@ ketika keputusan atau release baru menutup gap.
   menutup irisan delete dependency/recovery Background: relasi paket dan
   riwayat booking dihitung public-safe, 409 mempertahankan data tanpa audit
   sukses, serta UI memberi recovery ke Paket dan mencegah double-submit.
-  Irisan ini `LOCAL_VALIDATED` dan belum production. Residual S5 adalah
-  coverage state Background lain dan combined exit gate; S6 add-on/resource
-  belum dimulai.
+  Irisan ini `LOCAL_VALIDATED` dan belum production. Candidate `c5601197`
+  berikutnya menutup recovery konflik stale-write Background: 409 tidak lagi
+  buntu, GET recovery aktual mengganti baseline, retry offline tidak mengirim
+  mutation stale, serta `lock_version` dan relasi paket versi server tetap utuh.
+  Irisan ini juga `LOCAL_VALIDATED` dan belum production. Residual S5 adalah
+  publish/deactivation integrity Background dan combined exit gate; S6
+  add-on/resource belum dimulai. Health SagaBook read-only hijau, tetapi
+  rollback/previous symlink production tidak ada dan wajib dipulihkan sebelum
+  release immutable S21.
   Recovery response availability kosong,
   initial-load manual transfer, dan aksi Payment Monitor sudah production pada
   S128-S130. Residual payment/report adalah QRIS/provider nyata,

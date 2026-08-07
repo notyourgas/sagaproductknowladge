@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 8 Agustus 2026 00:26 WIB
+- Updated: 8 Agustus 2026 01:36 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED` untuk workflow yang tercantum di
   [PRODUCT](PRODUCT.md)
@@ -300,6 +300,22 @@ CRUD/hardening, AI SagaBook, build/design, Pint/diff, dan audit dependency
 lulus. Status `UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
 IMPLEMENTED_NOT_DEPLOYED`; production tetap `20260806152606-0894df0`.
 Coverage Background dan exit gate S5 belum selesai; S6 belum dimulai.
+
+Vertical slice Background berikutnya S5 ditutup lokal pada source
+`c560119745959fe67f3234a6e278c926db595858`. Konflik edit lintas tab sekarang
+ditolak 409 tanpa menimpa `lock_version`, nama, atau relasi paket versi server;
+UI menyediakan `Muat data terbaru`, mengganti baseline dengan response API
+aktual, serta mengulang GET recovery ketika jaringan gagal tanpa mengirim
+mutation stale. Ref sinkron mencegah double-submit. State loading, success,
+error, offline, retry, target 44 piksel, keyboard/focus,
+forced-colors/reduced-motion, no-overflow, dan satu watermark lulus. Full backend
+975/975, S141-S145 browser 13 pass/3 intentional skip, CRUD/hardening 16/16,
+AI 44/44, build/typecheck/design, targeted Pint/diff/cleanup, dan audit
+dependency lulus. Status `UIUX_VALIDATED / INTEGRATION_VALIDATED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap
+`20260806152606-0894df0`. Publish/deactivation integrity Background dan exit
+gate S5 belum selesai; S6 belum dimulai. Health read-only hijau, tetapi
+rollback/previous symlink wajib dipulihkan sebelum S21.
 
 Tenant/cabang S124 pada source
 `f6988cb945c5ca224015d7fecbc94e81c535fc60` aktif sebagai release

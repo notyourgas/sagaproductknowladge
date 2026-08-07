@@ -1,5 +1,21 @@
 # Portfolio Changelog
 
+## 2026-08-08 - SagaBook Sprint 5 background stale-write recovery candidate
+
+- Source `c560119745959fe67f3234a6e278c926db595858` menutup konflik edit
+  Background lintas tab tanpa mengubah production.
+- UI merender 409 aktual, menyediakan `Muat data terbaru`, retry saat GET gagal,
+  state loading/success, dan double-submit guard. Backend optimistic lock
+  mempertahankan versi server beserta relasi paket.
+- Full backend 975/975, S141-S145 browser 13 pass/3 intentional skip,
+  CRUD/hardening 16/16, AI 44/44, build/typecheck/design, targeted Pint, dan
+  audit dependency lulus.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; release aktif tetap
+  `20260806152606-0894df0`. Berikutnya integrity publish/deactivation Background
+  dan combined exit gate S5; S6 belum dimulai.
+- Health read-only hijau, tetapi rollback/previous symlink production tidak ada
+  dan harus ditutup sebelum S21.
+
 ## 2026-08-08 - SagaBook Sprint 5 background delete recovery candidate
 
 - Source `b9aeb7c9f2bf5205f3a740551530362447d5e9ed` menutup irisan delete
