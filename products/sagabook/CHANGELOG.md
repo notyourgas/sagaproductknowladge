@@ -4,6 +4,28 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-07 - Sprint 2 revocation perangkat lain candidate
+
+- Klasifikasi: `CONFIRMED`; source candidate
+  `6e1a3b59912e66579718fa9331c505f089812162` pada branch
+  `codex/s135-sagabook-session-revocation`; status `UIUX_VALIDATED /
+  INTEGRATION_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- Dashboard kini menyediakan dialog aksesibel `Keluarkan perangkat lain`.
+  Password step-up, loading/success/error/offline/retry, focus recovery,
+  double-submit guard, dan idempotency tervalidasi dengan response API aktual.
+- `POST /api/admin/sessions/revoke-others` menaikkan `staff.session_version`
+  secara transactional dengan row lock. Current context diperbarui agar tetap
+  aktif; context lama menerima 401 `session_revoked`. Audit hanya menyimpan
+  metadata public-safe dan hash idempotency.
+- Gate: focused revocation 2/2 (24), auth/security 29/29 (325), full backend
+  969/969 (11.133), isolated Playwright mobile/desktop 2/2, build, design audit,
+  npm audit, Pint, dan diff-check lulus. Screenshot before/after tersedia pada
+  390x844 dan 1440x900.
+- Production, migration, subscription, booking, payment, tenant, dan data
+  customer tidak berubah. Combined browser exit gate belum hijau karena drift
+  isolasi fixture/config pada rate-limit dan idle timeout; Composer advisory
+  audit perlu diulang saat Packagist dapat dijangkau. Deploy ditahan sampai S21.
+
 ## 2026-08-07 - Sprint 2 idle-session expiry candidate
 
 - Klasifikasi: `CONFIRMED`; source candidate

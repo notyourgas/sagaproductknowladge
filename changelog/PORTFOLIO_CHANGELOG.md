@@ -1,5 +1,21 @@
 # Portfolio Changelog
 
+## 2026-08-07 - SagaBook Sprint 2 session-revocation candidate
+
+- Source `6e1a3b59912e66579718fa9331c505f089812162` pada branch
+  `codex/s135-sagabook-session-revocation` menutup revocation perangkat lain
+  secara lokal dengan password step-up, idempotency, transaksi, dan audit
+  tersanitasi.
+- Current device tetap aktif setelah versi sesi dinaikkan; perangkat lama
+  menerima 401 `session_revoked` dan recovery notice aksesibel pada login.
+- Full backend 969/969 (11.133), isolated Playwright mobile/desktop 2/2, build,
+  design audit, npm audit, Pint, serta diff-check lulus. Screenshot before/after
+  390x844 dan 1440x900 tersedia pada artefak source.
+- Status `UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Production tidak berubah; combined browser exit
+  gate masih gagal akibat drift isolasi fixture/config, dan Composer advisory
+  audit perlu diulang saat Packagist dapat dijangkau.
+
 ## 2026-08-07 - SagaView S139 category-price synchronization production
 
 - Backend `f05c919ab0f7e645eabeac1ce959000eeecbf8cc` aktif sebagai release

@@ -12,6 +12,22 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-07
 
+### SagaBook Sprint 2 session-revocation candidate
+
+- Ringkasan: staff terautentikasi dapat mengeluarkan perangkat lain melalui
+  password step-up; versi sesi dinaikkan transactional, current device tetap
+  aktif, perangkat lama memperoleh 401, dan audit tersanitasi.
+- Klasifikasi: `CONFIRMED`; source
+  `6e1a3b59912e66579718fa9331c505f089812162`; status `UIUX_VALIDATED /
+  INTEGRATION_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: full backend 969/969 (11.133), isolated Playwright mobile/desktop 2/2,
+  build, design audit, npm audit, Pint, dan diff-check lulus.
+- Production berubah: tidak. Combined browser exit gate masih terbuka karena
+  drift isolasi fixture/config; Composer advisory audit perlu diulang saat
+  Packagist dapat dijangkau. Deploy tetap ditahan sampai S21.
+- File knowledge: product, dossier, changelog, ledger, master knowledge, gaps,
+  portfolio/root changelog, dan sync status.
+
 ### SagaView S139 sinkronisasi kategori dan harga frame production
 
 - Ringkasan: perubahan kategori kini menyinkronkan master, draft aktif, dan
