@@ -14,20 +14,23 @@
   `20260806152606-0894df0`. Berikutnya state Background lain dan exit gate S5;
   S6 belum dimulai.
 
-## 2026-08-08 - SagaView S141 bulk frame management candidate
+## 2026-08-08 - SagaView S141 bulk frame management production
 
 - `DEC-061` menetapkan mode pilih banyak, edit nama/kategori/harga/status, lalu
   satu `Simpan semua` untuk maksimal 100 frame.
-- Source `369f01140e3db0144d189fb781acdad91cfe3fc5` sudah
-  `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap backend S140
-  `c2a05076` / `20260807161105-c2a0507`.
+- Source `369f01140e3db0144d189fb781acdad91cfe3fc5` / release
+  `20260807173443-369f011` sudah `PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`; S140 `20260807161105-c2a0507` menjadi rollback dan
+  Studio tetap `20260807161105-10bcaaa`.
 - Satu transaksi dan optimistic lock catalog/workspace mencegah partial write
   serta overwrite dari tab stale; missing/cross-workspace/permission/kategori
   invalid membatalkan seluruh simpan dan UI mempertahankan edit.
-- Backend 14/14, Playwright desktop+mobile 6/6, Changelog UI/backend, build,
-  Pint, route, dan diff check lulus. Tidak ada migration atau perubahan
-  artwork, slot, foto customer, payment, subscription, device, maupun session.
-- Next action: guarded production deploy dan authenticated Owner UAT nyata.
+- SagaView 160/1.807, Playwright desktop+mobile 6/6, build, Pint, route, dan
+  audit dependency lulus. Encrypted backup/offsite restore, rehearsal,
+  atomic switch, preservation snapshot, service/journal/header/public smoke,
+  marker live, dan rollback lulus tanpa migration atau perubahan artwork, slot,
+  foto customer, payment, subscription, device, maupun session.
+- Next action: authenticated Owner UAT nyata sebelum `BUSINESS_READY`.
 
 ## 2026-08-07 - SagaView S140 workspace identity dan Changelog production
 

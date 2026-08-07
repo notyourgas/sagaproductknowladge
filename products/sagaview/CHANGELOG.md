@@ -4,13 +4,15 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
-## 2026-08-08 - S141 manajemen banyak frame candidate
+## 2026-08-08 - S141 manajemen banyak frame production
 
-- Klasifikasi: `CONFIRMED` melalui `DEC-061`, exact source, dan acceptance
-  lokal. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- Klasifikasi: `CONFIRMED` melalui `DEC-061`, exact source/release, acceptance,
+  guarded deployment, dan live verification. Status `PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`; business readiness tetap `NEEDS CONFIRMATION`.
 - Source `369f01140e3db0144d189fb781acdad91cfe3fc5` pada branch
-  `codex/s141-sagaview-bulk-frame-save`; production tetap backend S140
-  `c2a05076a626562244adabcb22fb86a9a60cbbd8` / `20260807161105-c2a0507`.
+  `codex/s141-sagaview-bulk-frame-save`; release backend
+  `20260807173443-369f011`, rollback S140 `20260807161105-c2a0507`, dan Studio
+  tetap `20260807161105-10bcaaa`.
 - Owner memilih sampai 100 frame, menyiapkan nama, kategori, harga
   default/khusus, dan status per frame atau secara serentak, lalu menekan satu
   `Simpan semua`.
@@ -20,12 +22,18 @@ Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
   membatalkan seluruh simpan; UI mempertahankan edit untuk retry.
 - Perubahan kategori mengikuti `DEC-057`: override per-frame lama dibersihkan
   kecuali harga khusus baru dipilih; master/draft/published aktif disinkronkan.
-- Focused backend 14 test/74 assertion, Playwright desktop+mobile 6/6,
-  Changelog visual 1/1 dan backend 1/21, build, Pint, route, serta diff check
-  lulus. Tidak ada migration atau perubahan artwork, slot, foto customer,
-  payment, subscription, device, session, maupun data customer.
-- Next action: guarded production deploy exact candidate dan authenticated
-  Owner UAT pada frame nyata sebelum menaikkan delivery/activation.
+- Seluruh test SagaView 160/1.807, Playwright desktop+mobile 6/6, build, Pint,
+  route, diff check, dan dependency audit lulus. Tidak ada migration atau
+  perubahan artwork, slot, foto customer, payment, subscription, device,
+  session, maupun data customer.
+- Fresh encrypted backup `20260807T173247Z`, checksum, offsite round-trip,
+  disposable restore, candidate+rollback rehearsal, atomic switch, deployment
+  gate, preservation snapshot, service/journal/header/public smoke, live marker
+  `Simpan semua` + `bulk-metadata`, dan rollback target lulus. Rehearsal awal
+  berhenti fail-closed sebelum activation; production tidak berubah sampai
+  seluruh gate lulus.
+- Next action: authenticated Owner UAT pada frame nyata, termasuk stale tab dan
+  failure preservation, sebelum `BUSINESS_READY`.
 
 ## 2026-08-07 - S140 identitas workspace dan Changelog Dashboard production
 

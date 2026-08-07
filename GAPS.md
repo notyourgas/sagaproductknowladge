@@ -8,7 +8,7 @@ diubah menjadi klaim publik sebelum ditutup dengan bukti atau keputusan owner.
 
 ## Konteks
 
-Daftar ini berlaku pada evidence cut-off 8 Agustus 2026 00:09 WIB dan harus diperbarui
+Daftar ini berlaku pada evidence cut-off 8 Agustus 2026 00:50 WIB dan harus diperbarui
 ketika keputusan atau release baru menutup gap.
 
 ## Cara memakai
@@ -213,13 +213,12 @@ ketika keputusan atau release baru menutup gap.
 
 ### SagaView
 
-- `TODO / IMPLEMENTED_NOT_DEPLOYED`: S141 bulk frame management source
-  `369f01140e3db0144d189fb781acdad91cfe3fc5` sudah local-validated. Residual
-  sebelum klaim production adalah guarded backup/restore, candidate+rollback
-  rehearsal, exact release, service/journal/header/public smoke, live route/UI
-  marker, rollback verification, serta authenticated Owner UAT pada frame nyata
-  untuk nama, kategori, harga default/khusus, status, stale tab, dan failure
-  preservation. Runtime tetap S140.
+- `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: S141 bulk frame management
+  source `369f01140e3db0144d189fb781acdad91cfe3fc5` / release
+  `20260807173443-369f011` sudah live; rollback S140 dipertahankan. Residual
+  sebelum `BUSINESS_READY` adalah authenticated Owner UAT pada frame nyata untuk
+  nama, kategori, harga default/khusus, status, reload persistence, stale tab,
+  failure preservation, dan sinkronisasi Studio.
 
 - `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: S140 identitas workspace dan
   Changelog aktif pada backend `c2a05076` / `20260807161105-c2a0507` dan Studio

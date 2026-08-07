@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 8 Agustus 2026 00:26 WIB
+Evidence cut-off: 8 Agustus 2026 00:50 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -792,17 +792,20 @@ Guarded release, backup/restore, rehearsal candidate+rollback, preservation,
 marker, service/journal/header, serta public smoke lulus. Jangan menyebut S140
 `BUSINESS_READY` sebelum authenticated Owner/Studio UAT pada akun nyata.
 
-Candidate S141 mengikuti `DEC-061` dan belum production. Source
-`369f01140e3db0144d189fb781acdad91cfe3fc5` menambahkan dialog manajemen untuk
+S141 mengikuti `DEC-061` dan sudah production. Source
+`369f01140e3db0144d189fb781acdad91cfe3fc5` / release
+`20260807173443-369f011` menambahkan dialog manajemen untuk
 maksimal 100 frame: Owner dapat menyiapkan nama, kategori, harga
 default/khusus, serta status per frame atau secara serentak, lalu memakai satu
 `Simpan semua`. Backend menerapkan seluruh patch dalam satu transaksi,
 menyinkronkan master/draft/published aktif, dan menolak stale catalog/workspace,
 missing, cross-workspace, permission salah, atau kategori invalid tanpa partial
-write. UI mempertahankan edit setelah failure. Focused backend 14/14 dan
-Playwright desktop+mobile 6/6 lulus. Jangan menyebut S141 production,
-activated, atau business-ready sebelum guarded deploy exact candidate dan
-authenticated Owner UAT; runtime aktif tetap S140.
+write. UI mempertahankan edit setelah failure. SagaView 160/1.807,
+Playwright desktop+mobile 6/6, backup/offsite restore, rehearsal, atomic switch,
+preservation, service/journal/header/public smoke, live marker, dan rollback
+lulus. Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; jangan menyebutnya
+`BUSINESS_READY` sebelum authenticated Owner UAT pada frame nyata. S140 menjadi
+rollback dan Studio tetap pada release sebelumnya.
 
 Implementasi rotate lama yang menukar W/H 90 derajat telah `DEPRECATED` oleh
 koreksi founder `DEC-036`. Perilaku production yang aktif adalah

@@ -36,7 +36,7 @@ SagaView berdasarkan runtime production aktif.
 - S139 sinkronisasi kategori, harga turunan, dan versi katalog frame:
   `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
 - S141 manajemen banyak frame dengan satu simpan:
-  `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`
+  `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
 - Acceptance integrasi feature-by-feature: ledger dimulai konservatif dan
   belum membuktikan coverage penuh; lihat
   [Feature Coverage Ledger](FEATURE_COVERAGE_LEDGER.md).
@@ -395,11 +395,16 @@ mengunci catalog version serta workspace revision, memverifikasi seluruh frame
 dan kategori, lalu menyinkronkan brand frame, draft aktif, dan published aktif.
 Satu target invalid atau stale membatalkan semua perubahan. Kategori baru
 menghapus override per-frame lama kecuali Owner memilih harga khusus baru;
-override cabang tetap eksplisit. Source candidate
-`369f01140e3db0144d189fb781acdad91cfe3fc5` sudah lulus focused backend 14/14,
-desktop+mobile Playwright 6/6, Changelog UI/backend, build, Pint, route, dan
-diff check. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
-tetap S140 dan belum ada runtime/backup/rehearsal/deploy evidence S141.
+override cabang tetap eksplisit. Source
+`369f01140e3db0144d189fb781acdad91cfe3fc5` / release
+`20260807173443-369f011` sudah `PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED`; S140 `20260807161105-c2a0507` menjadi rollback dan
+Studio tetap `20260807161105-10bcaaa`. Seluruh test SagaView 160/1.807,
+desktop+mobile Playwright 6/6, build, Pint, route, dan audit dependency lulus.
+Backup terenkripsi `20260807T173247Z`, offsite round-trip/restore, rehearsal,
+atomic switch, preservation frame/customer/device/payment/subscription,
+service/journal/header/public smoke, live marker, dan rollback target lulus.
+Authenticated Owner UAT pada frame nyata tetap residual.
 
 Mulai sesi production memakai checklist perangkat, paket, folder, frame, dan
 output serta satu CTA kontekstual 48 px. Utility cloud/recovery yang sehat

@@ -28,19 +28,21 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 - File knowledge: product, dossier, changelog, ledger, master knowledge, gaps,
   portfolio/root changelog, dan sync status.
 
-### SagaView S141 bulk frame management candidate
+### SagaView S141 bulk frame management production
 
 - Ringkasan: Owner memilih sampai 100 frame, menyiapkan perubahan nama,
   kategori, harga default/khusus, dan status, lalu menyimpan semua melalui satu
   CTA transaksional.
 - Klasifikasi: `CONFIRMED` melalui `DEC-061`; source
-  `369f01140e3db0144d189fb781acdad91cfe3fc5`; status `LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED`.
-- Gate: backend 14/14 (74), Playwright galeri/manajemen/pricing 6/6 pada
-  desktop+mobile, Changelog visual 1/1 dan backend 1/21, build, Pint, route,
-  JSON, dan diff check lulus.
-- Production berubah: tidak. Backend aktif tetap S140 `c2a05076` /
-  `20260807161105-c2a0507`; belum ada backup/rehearsal/deploy/live marker S141.
+  `369f01140e3db0144d189fb781acdad91cfe3fc5`; status
+  `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
+- Gate: SagaView 160/1.807, Playwright galeri/manajemen/pricing 6/6 pada
+  desktop+mobile, build, Pint, route, audit dependency, encrypted backup/offsite
+  restore, rehearsal, preservation, atomic switch, service/journal/header/public
+  smoke, marker live, dan rollback lulus.
+- Production berubah: ya. Backend aktif `20260807173443-369f011`; S140
+  `20260807161105-c2a0507` menjadi rollback dan Studio tetap
+  `20260807161105-10bcaaa`. Authenticated Owner UAT masih residual.
 - File knowledge: product, dossier, changelog, ledger, decision, master,
   gaps, portfolio/root changelog, dan sync status.
 
