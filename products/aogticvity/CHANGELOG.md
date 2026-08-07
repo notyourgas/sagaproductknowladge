@@ -8,6 +8,22 @@ Mencatat perubahan material AOGTIVITY/AOGTICVITY/17an/Olimpiade.
 
 Nama lama dipertahankan sebagai provenance; status runtime harus eksplisit.
 
+## 2026-08-07 - Durasi Lomba 9, Lomba 10, dan Awarding final
+
+- `CONFIRMED` melalui `DEC-059`: Voli Air/Lomba 9 menjadi 30 menit pada
+  18.05–18.35, Name Tag Ripped/Lomba 10 menjadi 30 menit pada 18.35–19.05,
+  dan Awarding & Closing menjadi 15 menit pada 19.05–19.20.
+- Estimasi selesai berubah dari 20.20 menjadi 19.20 WIB. Durasi confirmed
+  tetap editable oleh admin untuk penyesuaian kondisi lapangan.
+- Runtime source `d97547acf92d68ad8567401858b76e27adbd0f56`; migration 027
+  mengarsipkan jam/durasi sebelumnya, menaikkan schedule version, dan menulis
+  audit tanpa mengubah peserta, hasil, atau assignment operator.
+- 129 unit/API, 28/28 MySQL integration, build, 65/65 UI/WCAG, backup/restore,
+  browser acceptance 14 blok, dan 12/12 production-domain regression lulus.
+  Delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` pada Hostinger
+  `20260807T161422Z` dan Vercel `dpl_4oWi3Yt4x8BsGKDmMbBcA36A9JBP`;
+  business readiness tetap `BLOCKED` sampai human operational UAT selesai.
+
 ## 2026-08-07 - Rundown 14.30 production
 
 - `CONFIRMED` melalui `DEC-058`, menggantikan waktu pada `DEC-053`: registrasi

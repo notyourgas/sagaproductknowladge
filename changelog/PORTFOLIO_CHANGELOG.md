@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-07 - AOGTIVITY durasi akhir dikunci
+
+- `DEC-059` mengunci Lomba 9 dan Lomba 10 masing-masing 30 menit serta
+  Awarding & Closing 15 menit; estimasi selesai berubah dari 20.20 ke 19.20 WIB.
+- Runtime `d97547acf92d68ad8567401858b76e27adbd0f56`, migration 027,
+  Hostinger `20260807T161422Z`, dan Vercel
+  `dpl_4oWi3Yt4x8BsGKDmMbBcA36A9JBP` aktif dan reversible.
+- Seluruh gate unit/API, MySQL, build, UI/WCAG, backup/restore, exact browser,
+  dan public-domain regression lulus; human operational UAT tetap residual.
+
 ## 2026-08-07 - AOGTIVITY rundown 14.30 production
 
 - `DEC-058` menggantikan waktu `DEC-053`: registrasi ulang 14.00 WIB, acara

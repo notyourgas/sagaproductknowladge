@@ -12,6 +12,19 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-07
 
+### AOGTIVITY final duration production
+
+- Ringkasan: Lomba 9 dan Lomba 10 dikunci masing-masing 30 menit, Awarding &
+  Closing 15 menit, dan estimasi selesai berubah dari 20.20 menjadi 19.20 WIB.
+- Klasifikasi: `CONFIRMED` melalui `DEC-059`; struktur/jam mulai `DEC-058`
+  tetap berlaku dan klausa durasi provisionalnya menjadi historical.
+- Runtime `d97547acf92d68ad8567401858b76e27adbd0f56`, branch
+  `codex/whatsapp-magic-link`; Hostinger `20260807T161422Z`, Vercel
+  `dpl_4oWi3Yt4x8BsGKDmMbBcA36A9JBP`, dan migration 027.
+- Gate: 129 unit/API, 28/28 MySQL integration, build, 65/65 UI/WCAG,
+  backup/restore, browser acceptance 14 blok, dan 12/12 public regression.
+- Production berubah; business readiness tetap menunggu human operational UAT.
+
 ### AOGTIVITY rundown 14.30 production
 
 - Ringkasan: waktu acara bergeser dari 12.00 ke 14.30 dengan durasi tetap;

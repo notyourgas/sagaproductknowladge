@@ -12,16 +12,28 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-07T22:24:38+07:00 |
+| Waktu pembaruan terakhir | 2026-08-07T23:18:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `38d49fc41aa7bf33a97fc3b2557e1e38a8665586` |
-| Informasi terakhir disinkronkan | SagaBook S5 package deactivation dependency guard pada source `4b71e3473d8713848158cfbed7a0923d4433bf46`; irisan tervalidasi lokal dan production tidak berubah. |
+| Baseline sebelum pembaruan | `6cc875267efd354d6ee6da775b0d00ffb7f93234` |
+| Informasi terakhir disinkronkan | AOGTIVITY final duration pada source `d97547acf92d68ad8567401858b76e27adbd0f56`: Lomba 9/10 masing-masing 30 menit, Awarding 15 menit, selesai 19.20; production aktif pada migration 027. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik fakta runtime SagaBook atau SagaView. Status candidate lokal, production aktif, activation, dan business readiness dipisahkan. |
-| Error | Tidak ada error gate slice. S5 belum exit gate: delete dependency/recovery paket dan coverage background masih residual. |
+| Konflik | Tidak ada konflik kontrak waktu AOGTIVITY; klausa durasi provisional DEC-058 ditandai deprecated oleh DEC-059. Status production activation dan business readiness tetap dipisahkan. |
+| Error | Tidak ada error gate release; human operational UAT dan rollback rehearsal tetap residual sebelum business readiness. |
 
 ## File yang berubah pada sinkronisasi ini
+
+- `products/aogticvity/PRODUCT.md`
+- `products/aogticvity/DOSSIER.md`
+- `products/aogticvity/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `DECISIONS.md`
+- `GAPS.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
+
+## Sinkronisasi sebelumnya
 
 - `products/sagabook/PRODUCT.md`
 - `products/sagabook/DOSSIER.md`

@@ -7,7 +7,7 @@ content AOGTIVITY tetap jelas.
 
 ## Konteks dan status bukti
 
-- Updated: 6 Agustus 2026
+- Updated: 7 Agustus 2026
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED`
@@ -71,14 +71,16 @@ menjadi tanggal resmi, dan Army of God Madiun menjadi identitas penyelenggara.
 Lime elektrik, navy, magenta, cyan/kuning terbatas, halftone, petir, spark,
 koin, serta handheld-console frame berasal dari referensi poster founder.
 Seluruh teks tetap Plus Jakarta Sans. Implementasi final aktif melalui runtime
-`6ec56e5b7e6859581d5a678a21b27971f10a5c14`, Hostinger
-`20260807T154156Z`, dan Vercel `dpl_6hKz6JJ2s2vogcLXQLFEBNEZuWEF`.
+`d97547acf92d68ad8567401858b76e27adbd0f56`, Hostinger
+`20260807T161422Z`, dan Vercel `dpl_4oWi3Yt4x8BsGKDmMbBcA36A9JBP`.
 Runtime terbaru memakai kontrak rundown owner-confirmed: registrasi ulang 14.00
 WIB, Opening Tim & Yel-yel 14.30, Sing Song 14.45, lomba 1-5 mulai 15.00,
 Break 15 menit setelah lomba ke-5 pada 16.55, lomba 6-10 mulai 17.10, dan
-Awarding & Closing 19.50. Estimasi selesai 20.20 WIB masih mengikuti durasi
-lomba/closing provisional. Schedule builder, reload API, UI publik, admin
-warning, migration MySQL 026, audit, dan rollback memakai struktur yang sama.
+Lomba 9 18.05 selama 30 menit, Lomba 10 18.35 selama 30 menit, serta Awarding
+& Closing 19.05 selama 15 menit. Estimasi selesai 19.20 WIB. Ketiga durasi ini
+confirmed melalui `DEC-059` dan tetap editable oleh admin untuk recovery
+lapangan. Schedule builder, reload API, UI publik, admin, migration MySQL 027,
+audit, dan rollback memakai struktur yang sama.
 Gate release lulus 129 unit/API, 28/28 MySQL integration, build, 65/65 UI/WCAG,
 acceptance urutan 14 blok, dan 12/12 public-domain regression.
 Kartu alur `Dari daftar sampai podium` memakai tiga track tetap untuk badge

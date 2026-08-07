@@ -1,6 +1,6 @@
 # AOGTIVITY Product Knowledge
 
-Updated: 6 Agustus 2026
+Updated: 7 Agustus 2026
 Evidence status: public Vercel delivery + database-backed auth, registration, team, and event-day operations runtime
 
 ## Tujuan dokumen
@@ -293,17 +293,19 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:
 `PRODUCTION_ACTIVATED`. Business readiness: `BLOCKED`.
 
 - UI public/player/leader/admin/live aktif pada public Vercel delivery.
-- Runtime source `6ec56e5b7e6859581d5a678a21b27971f10a5c14` menerjemahkan
+- Runtime source `d97547acf92d68ad8567401858b76e27adbd0f56` menerjemahkan
   poster AOGTIVITY menjadi event identity lime-navy-magenta dengan halftone,
   petir, spark, koin, handheld-console frame, serta hierarchy nama
   **AOGTIVITY / 17 Agustus 2026 / Army of God Madiun**. Theme ini aktif pada
-  Hostinger `20260807T154156Z` dan Vercel `dpl_6hKz6JJ2s2vogcLXQLFEBNEZuWEF`.
+  Hostinger `20260807T161422Z` dan Vercel `dpl_4oWi3Yt4x8BsGKDmMbBcA36A9JBP`.
 - Rundown owner-confirmed terbaru memindahkan registrasi ulang
   ke 14.00 WIB dan acara ke 14.30 WIB: Opening Tim & Yel-yel 15 menit, Sing
   Song 15 menit, lima lomba, Break 15 menit, lima lomba, lalu Awarding &
-  Closing. Lomba pertama mulai 15.00, Awarding & Closing mulai 19.50, dan
-  estimasi provisional selesai 20.20 WIB. Migration 026 mengubah jam
-  lomba secara audited dan reversible tanpa menghapus assignment operator.
+  Closing. `DEC-059` mengunci Lomba 9 dan Lomba 10 masing-masing 30 menit,
+  serta Awarding & Closing 15 menit. Lomba pertama mulai 15.00, Lomba 9
+  18.05, Lomba 10 18.35, Awarding & Closing 19.05, dan estimasi selesai
+  19.20 WIB. Migration 027 mengubah durasi/jam secara audited dan reversible
+  tanpa menghapus peserta, hasil, atau assignment operator.
 - UI memakai `Pixel Matchday Arcade` yang tetap mobile-first 430 px: Plus
   Jakarta Sans, Feather-style icons, stepped geometry, hard shadow, quest/HUD
   hierarchy, state feedback, dan motion yang menghormati reduced-motion.

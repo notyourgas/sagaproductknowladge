@@ -231,6 +231,20 @@ keputusan pengganti.
 | Status | `CONFIRMED`; klausa nama produk AOGTICVITY `DEPRECATED` oleh `DEC-047`, sedangkan kontrak master recap, 8 tim, 10 lomba, durasi editable, dan roster seluruh tim tetap berlaku |
 | Dokumen terkait | [AOGTICVITY Product](products/aogticvity/PRODUCT.md), [AOGTICVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTICVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |
 
+## DEC-059 - Durasi akhir Lomba 9, Lomba 10, dan Awarding AOGTIVITY
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-07 |
+| Topik | Finalisasi durasi tiga blok terakhir AOGTIVITY 17 Agustus 2026 |
+| Keputusan | Lomba 9/Voli Air berdurasi 30 menit pada 18.05–18.35, Lomba 10/Name Tag Ripped berdurasi 30 menit pada 18.35–19.05, dan Awarding & Closing berdurasi 15 menit pada 19.05–19.20. Ketiga durasi confirmed, tetapi tetap dapat diedit admin untuk recovery kondisi lapangan. |
+| Alasan | Founder meminta ketiga durasi dipersingkat dan seluruh susunan acara dihitung ulang. |
+| Alternatif yang dipertimbangkan | Mempertahankan 60/45/30 menit; mengurangi durasi tanpa menggeser blok berikutnya; mengubah jam mulai acara. |
+| Dampak | Estimasi selesai berubah dari 20.20 menjadi 19.20 WIB. Master data version 2026.5, schedule builder, UI semua role, migration MySQL 027, audit, tests, release, dan rollback memakai kontrak yang sama tanpa mengubah peserta, hasil, atau assignment operator. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; runtime `d97547acf92d68ad8567401858b76e27adbd0f56`, Hostinger `20260807T161422Z`, Vercel `dpl_4oWi3Yt4x8BsGKDmMbBcA36A9JBP`, migration 027; human operational UAT tetap residual |
+| Dokumen terkait | [AOGTIVITY Product](products/aogticvity/PRODUCT.md), [AOGTIVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTIVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |
+
 ## DEC-058 - Rundown AOGTIVITY dimulai pukul 14.30 WIB
 
 | Field | Isi |
@@ -242,7 +256,7 @@ keputusan pengganti.
 | Alternatif yang dipertimbangkan | Mempertahankan rundown 12.00; memotong durasi agar selesai pada jam lama; menggeser hanya opening tanpa menggeser seluruh lomba. |
 | Dampak | Master data version 2026.4, landing, agenda publik, schedule builder, admin warning, reload lintas perangkat, timeline, test, dan migration MySQL 026 memakai kontrak yang sama. Jam provisional menghasilkan lomba pertama 15.00, Break 16.55, sesi kedua 17.10, Awarding & Closing 19.50, dan estimasi selesai 20.20 WIB. Migration mengarsipkan jadwal migration 025, menaikkan schedule version, menulis audit, dan menyediakan rollback tanpa mengubah peserta, hasil, atau assignment operator. |
 | Pemberi keputusan | Andreas / founder |
-| Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; runtime source `6ec56e5b7e6859581d5a678a21b27971f10a5c14`, Hostinger `20260807T154156Z`, Vercel `dpl_6hKz6JJ2s2vogcLXQLFEBNEZuWEF`, migration 026; durasi final dan operational human UAT tetap residual |
+| Status | `CONFIRMED` untuk jam mulai dan struktur dua sesi; klausa durasi provisional `DEPRECATED` oleh `DEC-059`. Release historis aktif melalui runtime `6ec56e5b7e6859581d5a678a21b27971f10a5c14`, Hostinger `20260807T154156Z`, Vercel `dpl_6hKz6JJ2s2vogcLXQLFEBNEZuWEF`, migration 026 |
 | Dokumen terkait | [AOGTIVITY Product](products/aogticvity/PRODUCT.md), [AOGTIVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTIVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |
 
 ## DEC-057 - Kategori frame memakai harga default kategori kecuali ada override eksplisit

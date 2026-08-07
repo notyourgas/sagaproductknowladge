@@ -8,7 +8,7 @@ diubah menjadi klaim publik sebelum ditutup dengan bukti atau keputusan owner.
 
 ## Konteks
 
-Daftar ini berlaku pada evidence cut-off 7 Agustus 2026 12:00 WIB dan harus diperbarui
+Daftar ini berlaku pada evidence cut-off 7 Agustus 2026 23:18 WIB dan harus diperbarui
 ketika keputusan atau release baru menutup gap.
 
 ## Cara memakai
@@ -478,14 +478,14 @@ ketika keputusan atau release baru menutup gap.
   kompatibilitas dan bukan gap rebrand.
 
 - `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: runtime
-  `6ec56e5b7e6859581d5a678a21b27971f10a5c14` memuat theme poster-aligned
-  (`DEC-052`) dan rundown 14.30 dua sesi (`DEC-058`) melalui Hostinger
-  `20260807T154156Z`, Vercel `dpl_6hKz6JJ2s2vogcLXQLFEBNEZuWEF`, dan migration
-  026. Backup/restore, exact-source release, readiness, dan public smoke lulus.
+  `d97547acf92d68ad8567401858b76e27adbd0f56` memuat theme poster-aligned,
+  rundown 14.30 dua sesi (`DEC-058`), dan durasi akhir (`DEC-059`) melalui
+  Hostinger `20260807T161422Z`, Vercel `dpl_4oWi3Yt4x8BsGKDmMbBcA36A9JBP`,
+  dan migration 027. Backup/restore, exact-source release, readiness, dan public smoke lulus.
   Residual: visual UAT founder, authenticated admin schedule refresh, serta
-  operational rollback rehearsal. Durasi
-  Awarding & Closing 30 menit dan seluruh durasi lomba tetap provisional sampai
-  dikunci panitia.
+  operational rollback rehearsal. Durasi Lomba 9, Lomba 10, dan Awarding &
+  Closing sudah confirmed; format bracket dan keputusan teknis lomba yang masih
+  provisional tetap perlu dikunci panitia.
 
 - `Pixel Matchday Arcade` UI production 3 Agustus 2026 tidak menutup blocker
   activation; perbaikannya berada pada visual hierarchy, responsive mobile

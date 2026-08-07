@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 7 Agustus 2026 14:10 WIB
+Evidence cut-off: 7 Agustus 2026 23:18 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -944,8 +944,8 @@ idempotency, rate limit, receipt, audit, dan admin verification desk; participan
 fixture serta localStorage registration telah dihapus.
 Nama kanonik produk berubah dari AOGTICVITY menjadi AOGTIVITY pada 6 Agustus
 2026. Runtime terbaru aktif melalui source
-`6ec56e5b7e6859581d5a678a21b27971f10a5c14`, Hostinger
-`20260807T154156Z`, dan Vercel `dpl_6hKz6JJ2s2vogcLXQLFEBNEZuWEF`.
+`d97547acf92d68ad8567401858b76e27adbd0f56`, Hostinger
+`20260807T161422Z`, dan Vercel `dpl_4oWi3Yt4x8BsGKDmMbBcA36A9JBP`.
 Domain `aogticvities.fun` serta slug infrastruktur `aogticvity` tetap dipakai
 untuk kompatibilitas; AOGTICVITY hanya nama historis.
 Runtime ini menggabungkan visual event berdasarkan poster founder dan rundown
@@ -956,10 +956,11 @@ Plus Jakarta Sans dan canvas mobile-first tetap dipertahankan. Keputusan terbaru
 `DEC-058` menggantikan waktu pada `DEC-053`: registrasi ulang menjadi 14.00 WIB
 dan acara mulai 14.30 WIB dengan Opening Tim & Yel-yel 15 menit,
 Sing Song 15 menit, lima lomba, Break 15 menit, lima lomba, lalu Awarding &
-Closing. Lomba pertama 15.00, Break 16.55, sesi kedua 17.10, Awarding & Closing
-19.50, dan estimasi provisional selesai 20.20 WIB. Migration 026 mengarsipkan
-jadwal 12.00, mengubah jadwal MySQL secara audited, dan menyediakan rollback tanpa
-menghapus assignment operator. Typecheck, 129 unit/API, 28/28 MySQL integration,
+Closing. `DEC-059` mengunci Lomba 9 dan Lomba 10 masing-masing 30 menit serta
+Awarding & Closing 15 menit: Lomba 9 18.05, Lomba 10 18.35, penutupan 19.05,
+dan estimasi selesai 19.20 WIB. Migration 027 mengarsipkan jam/durasi lama,
+mengubah jadwal MySQL secara audited, dan menyediakan rollback tanpa menghapus
+peserta, hasil, atau assignment operator. Typecheck, 129 unit/API, 28/28 MySQL integration,
 build, 65/65 UI/WCAG, acceptance urutan 14 blok, backup/restore drill, dan 12/12
 public-domain regression lulus. Status `PRODUCTION_DEPLOYED /
 PRODUCTION_ACTIVATED`; visual dan operational human UAT tetap residual.
