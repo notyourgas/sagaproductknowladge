@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 7 Agustus 2026 12:28 WIB
+Evidence cut-off: 7 Agustus 2026 13:14 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -117,13 +117,14 @@ untuk foto, editor, recovery, dan export. Subscription activation tidak
 berubah.
 
 Candidate SagaBook Sprint 2 terbaru adalah source
-`6e1a3b59912e66579718fa9331c505f089812162`, belum production. UI rate-limit
+`549b9c88ad38320815bb7e566eb7db2da9eb65a9`, belum production. UI rate-limit
 429, idle expiry per tab, dan kontrol staff untuk mengeluarkan perangkat lain
 sudah tervalidasi lokal. Revocation memakai password step-up, request idempoten,
 kenaikan versi sesi transactional, current device tetap aktif, perangkat lama
 menerima 401 `session_revoked`, dan audit tersanitasi. Jangan menyebut Sprint 2
-selesai atau production sampai drift isolasi pada combined browser exit gate
-ditutup dan release roadmap S21 lulus.
+selesai atau production sampai Composer advisory audit yang terhalang timeout
+Packagist lulus dan release roadmap S21 dijalankan. Combined browser acceptance
+empat slice sudah lulus lokal dengan 13 pass dan 1 intentional skip.
 
 Catatan status kumulatif: source storefront/recovery S98-S118 yang tercatat
 sebagai candidate pada bagian histori di bawah sudah menjadi ancestor source

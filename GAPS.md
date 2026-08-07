@@ -55,8 +55,9 @@ ketika keputusan atau release baru menutup gap.
   booking, admin/task, WhatsApp/reminder, dan template draft/preview/publish.
   UI rate-limit 429, expiry idle per tab, dan revocation perangkat lain sudah
   `LOCAL_VALIDATED` pada candidate Sprint 2, tetapi belum production. Residual
-  auth/session adalah drift isolasi fixture/config pada combined browser exit
-  gate dan pengulangan Composer advisory audit saat Packagist dapat dijangkau.
+  combined browser acceptance empat slice sudah hijau dengan runtime disposable
+  terisolasi. Residual auth/session hanya pengulangan Composer advisory audit
+  saat Packagist dapat dijangkau sebelum Sprint 2 exit gate ditutup.
   UI/UX S122 sudah production,
   tetapi integrasi template belum
   boleh disebut `INTEGRATION_VALIDATED` sebelum happy, failure/retry,

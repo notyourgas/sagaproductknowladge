@@ -12,13 +12,28 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-07
 
+### SagaBook Sprint 2 combined auth acceptance gate candidate
+
+- Ringkasan: satu perintah acceptance menjalankan empat slice auth pada runtime
+  disposable terisolasi, masing-masing dengan cache, rate-limit, dan idle
+  timeout yang sesuai kontrak pengujiannya.
+- Klasifikasi: `CONFIRMED`; source
+  `549b9c88ad38320815bb7e566eb7db2da9eb65a9`; status
+  `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: combined 13 pass/1 intentional skip, node harness 10/10, full backend
+  969/969 (11.133), build, design audit, npm audit, Pint, dan diff-check lulus.
+- Production berubah: tidak. Composer advisory audit belum fresh karena endpoint
+  Packagist timeout; Sprint 2 belum ditutup dan deploy tetap ditahan sampai S21.
+- File knowledge: product, dossier, changelog, ledger, master knowledge, gaps,
+  portfolio/root changelog, dan sync status.
+
 ### SagaBook Sprint 2 session-revocation candidate
 
 - Ringkasan: staff terautentikasi dapat mengeluarkan perangkat lain melalui
   password step-up; versi sesi dinaikkan transactional, current device tetap
   aktif, perangkat lama memperoleh 401, dan audit tersanitasi.
 - Klasifikasi: `CONFIRMED`; source
-  `6e1a3b59912e66579718fa9331c505f089812162`; status `UIUX_VALIDATED /
+  `6e1a3b59e3cd84af9f0e574c1876d3d46b64ab82`; status `UIUX_VALIDATED /
   INTEGRATION_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
 - Gate: full backend 969/969 (11.133), isolated Playwright mobile/desktop 2/2,
   build, design audit, npm audit, Pint, dan diff-check lulus.

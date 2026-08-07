@@ -4,10 +4,31 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-07 - Sprint 2 combined auth acceptance gate candidate
+
+- Klasifikasi: `CONFIRMED`; source candidate
+  `549b9c88ad38320815bb7e566eb7db2da9eb65a9` pada branch
+  `codex/s135-sagabook-session-revocation`; production tidak berubah.
+- Before: empat spec auth dijalankan pada satu konfigurasi global sehingga
+  rate-limit menerima cache nonpersisten dan idle memakai timeout default.
+  After: satu perintah menjalankan auth/session, rate-limit, idle-session, dan
+  revocation pada runtime, database, port, cache, limit, dan timeout disposable
+  yang eksplisit per slice.
+- Red-to-green: unit harness gagal karena orchestrator belum ada, lalu 10/10;
+  combined round pertama menemukan cache 429 nonpersisten, focused 429 menjadi
+  2/2 setelah cache database run-scoped, dan combined final lulus 4/4 slice
+  dengan 13 pass serta 1 intentional skip pada mobile/desktop.
+- Full backend 969/969 (11.133), build, design audit 26/0, npm audit nol
+  vulnerability, Pint, diff-check, cleanup run/port-lock 0, dan public health
+  dua URL 200 lulus. Composer manifest valid, tetapi advisory audit belum dapat
+  mengambil endpoint Packagist karena timeout.
+- Status Sprint 2 tetap `IMPLEMENTED_NOT_DEPLOYED`; exit gate belum ditutup
+  sampai Composer advisory audit mempunyai bukti fresh. Deploy ditahan S21.
+
 ## 2026-08-07 - Sprint 2 revocation perangkat lain candidate
 
 - Klasifikasi: `CONFIRMED`; source candidate
-  `6e1a3b59912e66579718fa9331c505f089812162` pada branch
+  `6e1a3b59e3cd84af9f0e574c1876d3d46b64ab82` pada branch
   `codex/s135-sagabook-session-revocation`; status `UIUX_VALIDATED /
   INTEGRATION_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
 - Dashboard kini menyediakan dialog aksesibel `Keluarkan perangkat lain`.

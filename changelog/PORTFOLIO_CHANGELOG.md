@@ -1,8 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-07 - SagaBook Sprint 2 combined auth gate candidate
+
+- Source `549b9c88ad38320815bb7e566eb7db2da9eb65a9` membuat satu combined
+  acceptance command yang menjalankan empat slice auth pada runtime disposable
+  terisolasi dengan cache, rate-limit, dan idle timeout eksplisit.
+- Combined final: auth/session 7 pass/1 intentional skip, rate-limit 2/2,
+  idle-session 2/2, dan revocation 2/2. Full backend 969/969 (11.133), node
+  harness 10/10, build/design/npm audit/Pint/diff-check juga lulus.
+- Production tidak berubah. Sprint 2 belum ditutup karena Composer advisory
+  endpoint Packagist timeout; deploy tetap ditahan sampai roadmap S21.
+
 ## 2026-08-07 - SagaBook Sprint 2 session-revocation candidate
 
-- Source `6e1a3b59912e66579718fa9331c505f089812162` pada branch
+- Source `6e1a3b59e3cd84af9f0e574c1876d3d46b64ab82` pada branch
   `codex/s135-sagabook-session-revocation` menutup revocation perangkat lain
   secara lokal dengan password step-up, idempotency, transaksi, dan audit
   tersanitasi.
