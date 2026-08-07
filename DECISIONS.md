@@ -231,6 +231,20 @@ keputusan pengganti.
 | Status | `CONFIRMED`; klausa nama produk AOGTICVITY `DEPRECATED` oleh `DEC-047`, sedangkan kontrak master recap, 8 tim, 10 lomba, durasi editable, dan roster seluruh tim tetap berlaku |
 | Dokumen terkait | [AOGTICVITY Product](products/aogticvity/PRODUCT.md), [AOGTICVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTICVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |
 
+## DEC-057 - Kategori frame memakai harga default kategori kecuali ada override eksplisit
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-07 |
+| Topik | Sinkronisasi kategori dan harga frame SagaView |
+| Keputusan | Perubahan kategori single maupun batch wajib menyinkronkan master, draft aktif, dan published aktif secara transactional. Batch kategori menghapus override harga per-frame lama sehingga harga efektif mengikuti default kategori baru; override cabang yang memang eksplisit tetap berlaku. Setiap perubahan berhasil wajib menaikkan versi/checksum katalog dan revision workspace. |
+| Alasan | Kategori published yang stale serta override harga lama membuat kategori dan harga di Owner/Studio berbeda setelah batch edit. Katalog perlu sinyal versi baru agar konsumen tidak memakai konfigurasi lama. |
+| Alternatif yang dipertimbangkan | Hanya mengubah master; mempertahankan seluruh override lama; memaksa operator membersihkan harga satu per satu; memperbaiki data tanpa menutup jalur tulis. |
+| Dampak | Service kategori, UI Galeri Frame, response audit, cache/catalog invalidation, recovery data terarah, test integrasi, release, dan UAT wajib mengikuti kontrak ini. Missing/cross-workspace membatalkan transaksi tanpa perubahan parsial. |
+| Pemberi keputusan | Andreas / founder melalui instruksi memperbaiki kategori dan harga yang tidak sinkron |
+| Status | `CONFIRMED`; production backend `f05c919a` / `20260807045115-f05c919`, Studio `05c5fda0` / `20260807045115-05c5fda`; authenticated Owner UAT masih residual sebelum `BUSINESS_READY`. |
+| Dokumen terkait | [SagaView Product](products/sagaview/PRODUCT.md), [SagaView Dossier](products/sagaview/DOSSIER.md), [SagaView Changelog](products/sagaview/CHANGELOG.md), [Feature Coverage Ledger](products/sagaview/FEATURE_COVERAGE_LEDGER.md) |
+
 ## DEC-056 - Batch Import memiliki aksi selesai dan Galeri Frame mendukung batch kategori
 
 | Field | Isi |

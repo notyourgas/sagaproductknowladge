@@ -33,6 +33,8 @@ SagaView berdasarkan runtime production aktif.
   `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
 - S138 tombol akhir Batch Import dan batch edit kategori Galeri Frame:
   `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
+- S139 sinkronisasi kategori, harga turunan, dan versi katalog frame:
+  `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
 - Acceptance integrasi feature-by-feature: ledger dimulai konservatif dan
   belum membuktikan coverage penuh; lihat
   [Feature Coverage Ledger](FEATURE_COVERAGE_LEDGER.md).
@@ -336,6 +338,23 @@ perubahan artwork, slot, foto customer, payment, subscription, device, session,
 atau data operasional tenant. Status `PRODUCTION_DEPLOYED /
 PRODUCTION_ACTIVATED`; authenticated Owner UAT tetap residual sebelum
 `BUSINESS_READY`.
+
+S139 mengoreksi batch kategori S138. Sebelum koreksi, kategori hanya berubah
+pada frame utama/draft, sementara versi published dan override harga lama dapat
+tertinggal; harga efektif tetap memakai nilai per-frame lama. Sekarang update
+tunggal dan massal menyinkronkan master, draft aktif, serta versi published
+aktif dalam transaksi yang sama. Batch kategori menghapus override harga
+per-frame agar mengikuti default kategori tujuan, sedangkan override harga
+cabang tetap dipertahankan. Versi/checksum katalog dan revisi workspace ikut
+maju agar Studio menerima perubahan.
+
+Backend source/release aktif `f05c919ab0f7e645eabeac1ce959000eeecbf8cc` /
+`20260807045115-f05c919`; Studio `05c5fda07a342d2977d8e6e3d836adb17a84605b`
+/ `20260807045115-05c5fda`; rollback S138 dipertahankan. Pemulihan data
+fail-closed menyinkronkan tepat 29 frame pada satu workspace yang memenuhi pola
+bug dan menurunkan mismatch published menjadi 0. Artwork, slot, foto customer,
+payment, subscription, device, dan session tidak berubah. Authenticated Owner
+UAT dengan kategori/harga nyata tetap residual sebelum `BUSINESS_READY`.
 
 Mulai sesi production memakai checklist perangkat, paket, folder, frame, dan
 output serta satu CTA kontekstual 48 px. Utility cloud/recovery yang sehat

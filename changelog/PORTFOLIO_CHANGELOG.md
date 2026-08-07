@@ -1,5 +1,26 @@
 # Portfolio Changelog
 
+## 2026-08-07 - SagaView S139 category-price synchronization production
+
+- Backend `f05c919ab0f7e645eabeac1ce959000eeecbf8cc` aktif sebagai release
+  `20260807045115-f05c919`; Studio `05c5fda07a342d2977d8e6e3d836adb17a84605b`
+  aktif sebagai `20260807045115-05c5fda`. Rollback S138 dipertahankan.
+- Perubahan kategori menyinkronkan master, draft aktif, dan published aktif
+  secara transactional. Batch kategori membersihkan override harga per-frame
+  lama agar harga efektif mengikuti default kategori, sementara override
+  cabang eksplisit tetap berlaku.
+- Catalog version/checksum dan workspace revision maju setelah perubahan. UI
+  menjelaskan efek harga dan memberi aksi `Terapkan kategori & harga`.
+- Recovery terarah memperbaiki 29 frame pada satu workspace; mismatch akhir
+  nol dan 73 override lain yang tidak memenuhi pola bug tidak disentuh.
+- Focused 34/182, SagaView 150/1.740, Playwright 4/4, build/audit,
+  encrypted backup/restore, rehearsal 6/6, deploy/post-preflight,
+  canary/preservation, service/journal/header/marker/smoke lulus. Satu test
+  SagaBook manual-transfer gagal identik pada baseline aktif.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated Owner UAT
+  perubahan kategori dengan harga berbeda tetap residual sebelum
+  `BUSINESS_READY`.
+
 ## 2026-08-07 - SagaBook Sprint 2 idle-session candidate
 
 - Source `a572f59c2bfddb65686271cab839ba9710e59657` pada branch

@@ -12,6 +12,29 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-07
 
+### SagaView S139 sinkronisasi kategori dan harga frame production
+
+- Ringkasan: perubahan kategori kini menyinkronkan master, draft aktif, dan
+  published aktif; batch edit menghapus override harga per-frame lama agar
+  harga efektif mengikuti default kategori baru, lalu menerbitkan versi katalog
+  dan revision workspace baru.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` melalui
+  `DEC-057`; business readiness tetap `NEEDS CONFIRMATION`.
+- Source/release backend `f05c919ab0f7e645eabeac1ce959000eeecbf8cc` /
+  `20260807045115-f05c919`; Studio `05c5fda07a342d2977d8e6e3d836adb17a84605b`
+  / `20260807045115-05c5fda`; rollback S138 dipertahankan.
+- Recovery terarah memperbaiki 29 mismatch kategori dan menghapus 29 override
+  penyebab bug; mismatch akhir nol. Sebanyak 73 override lain yang tidak
+  memenuhi pola bug dipertahankan.
+- Gate source, regression, backup/restore, candidate+rollback rehearsal,
+  preflight/deploy/post-preflight, canary/preservation, service, journal,
+  header, marker, dan public smoke lulus. Satu test SagaBook gagal identik pada
+  baseline dan tidak disebabkan rilis ini.
+- Boundary: tanpa migration atau perubahan artwork, slot, foto customer,
+  payment, subscription, device, session, maupun data customer.
+- File knowledge: product, dossier, changelog, ledger, decision, master
+  knowledge, gaps, portfolio/root changelog, dan sync status.
+
 ### SagaBook Sprint 2 idle-session expiry candidate
 
 - Ringkasan: sesi idle admin kini dibatasi per tab dengan polling pasif,

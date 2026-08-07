@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 7 Agustus 2026 08:02 WIB
+Evidence cut-off: 7 Agustus 2026 12:00 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -681,6 +681,24 @@ atau lintas workspace membatalkan seluruh aksi. Tidak ada migration atau
 perubahan artwork, slot, foto customer, payment, subscription, device, session,
 atau data operasional tenant. Jangan menyebut S138 `BUSINESS_READY` sebelum
 authenticated Owner UAT dengan batch dan kategori nyata selesai.
+
+S139 sinkronisasi kategori dan harga frame sudah
+`PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Backend source/release
+`f05c919ab0f7e645eabeac1ce959000eeecbf8cc` /
+`20260807045115-f05c919`; Studio source/release
+`05c5fda07a342d2977d8e6e3d836adb17a84605b` /
+`20260807045115-05c5fda`; rollback S138 dipertahankan. Perubahan kategori
+menyinkronkan master, draft aktif, dan published aktif secara transactional.
+Batch kategori menghapus override harga per-frame lama agar harga efektif
+mengikuti default kategori baru; override cabang eksplisit tetap berlaku.
+Catalog version/checksum dan workspace revision maju supaya Studio menerima
+konfigurasi baru. Recovery production terarah memperbaiki 29 mismatch kategori
+dan menghapus 29 override penyebab bug; mismatch akhir nol, sedangkan 73
+override lain yang tidak cocok pola bug dipertahankan. Tidak ada migration atau
+perubahan artwork, slot, foto customer, payment, subscription, device, session,
+atau data customer. Jangan menyebut S139 `BUSINESS_READY` sebelum authenticated
+Owner UAT mengganti kategori ke kategori dengan harga berbeda dan memverifikasi
+harga efektif Owner/Studio.
 
 Implementasi rotate lama yang menukar W/H 90 derajat telah `DEPRECATED` oleh
 koreksi founder `DEC-036`. Perilaku production yang aktif adalah

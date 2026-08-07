@@ -4,6 +4,37 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-08-07 - S139 sinkronisasi kategori dan harga frame production
+
+- Klasifikasi: `CONFIRMED` melalui `DEC-057`, exact source, regression, dan
+  guarded release dengan verifikasi runtime public-safe.
+- Status: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; business readiness
+  tetap `NEEDS CONFIRMATION` sampai authenticated Owner UAT selesai.
+- Backend source/release `f05c919ab0f7e645eabeac1ce959000eeecbf8cc` /
+  `20260807045115-f05c919`; Studio source/release
+  `05c5fda07a342d2977d8e6e3d836adb17a84605b` /
+  `20260807045115-05c5fda`. Rollback S138 dipertahankan.
+- Penyebab lama terdiri dari dua lapis: batch kategori belum menyinkronkan
+  versi `published`, dan override harga per-frame lama tetap mengalahkan harga
+  default kategori baru. S139 menyinkronkan master, draft aktif, dan published
+  aktif secara transactional; batch kategori menghapus override per-frame agar
+  harga efektif mengikuti default kategori. Override cabang tetap eksplisit.
+- Perubahan yang berhasil menaikkan versi/checksum katalog dan revision
+  workspace agar Studio menerima sinyal konfigurasi baru. UI menjelaskan
+  konsekuensi harga dan memakai aksi `Terapkan kategori & harga`.
+- Pemulihan terarah memperbaiki 29 frame pada satu workspace: mismatch kategori
+  master/published menjadi nol dan 29 override penyebab bug dihapus. Sebanyak
+  73 override lain yang tidak memenuhi pola bug sengaja dipertahankan.
+- Focused cloud/authoring/template 34 test/182 assertion, seluruh SagaView
+  150/1.740, Playwright desktop+mobile 4/4, build, Pint, audit dependency,
+  encrypted backup/restore, rehearsal candidate+rollback 6/6,
+  deploy/post-preflight, canary/payment/device preservation, marker, service,
+  journal, security header, dan public smoke lulus. Satu full-suite test
+  SagaBook manual-transfer gagal identik pada baseline yang tidak berubah;
+  suite dengan pengecualian baseline tersebut lulus 938/11.121.
+- Tidak ada migration atau perubahan artwork, slot, foto customer, payment,
+  subscription, device, session, maupun data customer.
+
 ## 2026-08-07 - S138 import finish dan batch kategori production
 
 - Klasifikasi: `CONFIRMED` melalui `DEC-056`, exact source, full regression,

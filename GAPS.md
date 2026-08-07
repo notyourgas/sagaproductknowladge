@@ -8,7 +8,7 @@ diubah menjadi klaim publik sebelum ditutup dengan bukti atau keputusan owner.
 
 ## Konteks
 
-Daftar ini berlaku pada evidence cut-off 7 Agustus 2026 08:02 WIB dan harus diperbarui
+Daftar ini berlaku pada evidence cut-off 7 Agustus 2026 12:00 WIB dan harus diperbarui
 ketika keputusan atau release baru menutup gap.
 
 ## Cara memakai
@@ -175,6 +175,17 @@ ketika keputusan atau release baru menutup gap.
   terkontrol sebelum klaim `BUSINESS_READY` atau distribusi link secara luas.
 
 ### SagaView
+
+- `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: S139 sinkronisasi kategori dan
+  harga aktif pada backend `f05c919a` / `20260807045115-f05c919` dan Studio
+  `05c5fda0` / `20260807045115-05c5fda`; rollback S138 dipertahankan. Master,
+  draft aktif, dan published aktif kini sinkron transactional; batch kategori
+  membersihkan override harga per-frame lama agar harga efektif mengikuti
+  default kategori serta menaikkan catalog version/checksum dan workspace
+  revision. Recovery terarah menutup 29 mismatch menjadi nol tanpa menyentuh
+  73 override lain. Residual sebelum `BUSINESS_READY`: authenticated Owner UAT
+  dengan kategori yang harga defaultnya berbeda, lalu verifikasi harga efektif
+  yang sama pada Galeri Frame dan Studio.
 
 - `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: S138 import finish dan batch
   kategori aktif pada backend `f515dd7a` / `20260807023502-f515dd7` dan Studio

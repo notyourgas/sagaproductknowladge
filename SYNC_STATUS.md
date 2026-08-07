@@ -12,21 +12,22 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-07T11:27:19+07:00 |
+| Waktu pembaruan terakhir | 2026-08-07T12:00:05+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `147b5af962fab932ee6039869e2aee4b3ffa5510` |
-| Informasi terakhir disinkronkan | SagaBook Sprint 2 idle-session expiry per tab pada candidate source `a572f59c`; UI/API/audit dan sibling-tab isolation tervalidasi lokal, belum production. |
+| Baseline sebelum pembaruan | `0e32aa65f5eb1b5af352e059c45d0f549afdf497` |
+| Informasi terakhir disinkronkan | SagaView S139 sinkronisasi kategori dan harga frame production pada backend source/release `f05c919a` / `20260807045115-f05c919` dan Studio `05c5fda0` / `20260807045115-05c5fda`; 29 mismatch production dipulihkan menjadi nol. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik fakta runtime SagaBook atau SagaView S138. Status production aktif, activation, dan business readiness dipisahkan. |
-| Error | Tidak ada error sinkronisasi. Revocation lintas device dan combined Sprint 2 exit gate tetap residual SagaBook; authenticated Owner UAT batch/kategori nyata tetap residual SagaView S138. |
+| Konflik | Tidak ada konflik fakta runtime SagaBook atau SagaView S139. Status production aktif, activation, dan business readiness dipisahkan. |
+| Error | Tidak ada error sinkronisasi. Satu full-suite test SagaBook manual-transfer gagal identik pada baseline aktif; revocation lintas device dan combined Sprint 2 exit gate tetap residual SagaBook. Authenticated Owner UAT kategori dengan harga berbeda tetap residual SagaView S139. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/sagabook/PRODUCT.md`
-- `products/sagabook/DOSSIER.md`
-- `products/sagabook/CHANGELOG.md`
-- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/DOSSIER.md`
+- `products/sagaview/CHANGELOG.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `DECISIONS.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `GAPS.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
@@ -151,6 +152,18 @@ serta update kategori transactional 1-100 frame aktif. Full regression 938/
 candidate+rollback rehearsal 6/6, deploy/post-preflight, preservation,
 source+bundle+route marker, dan smoke lulus. Authenticated Owner UAT batch dan
 kategori nyata tetap residual sebelum `BUSINESS_READY`.
+
+SagaView S139 category-price synchronization menggantikan kontrak tulis
+kategori S138 dan sudah `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` pada
+backend source/release `f05c919a` / `20260807045115-f05c919` dan Studio
+source/release `05c5fda0` / `20260807045115-05c5fda`; rollback S138
+dipertahankan. Master, draft aktif, dan published aktif kini disinkronkan dalam
+satu transaksi. Batch kategori menghapus override harga per-frame lama agar
+harga efektif mengikuti default kategori baru serta menerbitkan catalog
+version/checksum dan workspace revision baru. Recovery terarah memperbaiki 29
+frame menjadi nol mismatch; 73 override di luar pola bug tidak disentuh.
+Authenticated Owner UAT dengan kategori dan harga berbeda tetap residual
+sebelum `BUSINESS_READY`.
 
 Bulk export Galeri Frame `DEC-044` sudah `PRODUCTION_DEPLOYED /
 PRODUCTION_ACTIVATED`; klausa packaging-nya dikoreksi oleh `DEC-049`. Satu atau
