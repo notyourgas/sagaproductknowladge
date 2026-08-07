@@ -12,14 +12,14 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-07T21:49:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-07T22:24:38+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `0d4f1e32af7ae1a159b91641e27a4f806f0c1399` |
-| Informasi terakhir disinkronkan | SagaBook S5 package stale-write recovery pada source `0874c098440850d104868d891c2f61214cdba36b`; irisan tervalidasi lokal dan production tidak berubah. |
+| Baseline sebelum pembaruan | `38d49fc41aa7bf33a97fc3b2557e1e38a8665586` |
+| Informasi terakhir disinkronkan | SagaBook S5 package deactivation dependency guard pada source `4b71e3473d8713848158cfbed7a0923d4433bf46`; irisan tervalidasi lokal dan production tidak berubah. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
 | Konflik | Tidak ada konflik fakta runtime SagaBook atau SagaView. Status candidate lokal, production aktif, activation, dan business readiness dipisahkan. |
-| Error | Tidak ada error gate slice. S5 belum exit gate: publish/deactivate paket, dependency integrity, dan background masih residual. |
+| Error | Tidak ada error gate slice. S5 belum exit gate: delete dependency/recovery paket dan coverage background masih residual. |
 
 ## File yang berubah pada sinkronisasi ini
 
@@ -59,8 +59,10 @@ tujuh profil disposable, full backend, build, AI regression, cleanup, dan audit
 dependency hijau. Production tidak berubah. Candidate S5 `0874c098` kemudian
 menutup recovery stale-write paket 409 melalui API aktual, baseline baru,
 double-submit guard, dan permission/tenant-negative. Irisan ini lokal saja;
-publish/deactivate paket, dependency integrity, background, dan exit gate S5
-masih residual sebelum S6.
+candidate `4b71e347` berikutnya menutup deactivation paket yang masih dipakai
+background aktif dengan 409 transactional, row lock, dan recovery UI aktual.
+Irisan ini juga lokal saja; delete dependency/recovery paket, coverage
+background, dan exit gate S5 masih residual sebelum S6.
 Recovery response availability kosong, initial-load manual transfer, dan aksi Payment Monitor
 S128-S130 sudah production. Residual payment/report adalah QRIS/provider nyata,
 pagination/filter/export, reconciliation provider, stale multi-tab, dan

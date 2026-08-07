@@ -282,6 +282,14 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
   kali. Optimistic lock, tenant boundary, dan permission existing tetap hijau.
   Irisan ini tervalidasi lokal dan belum production; publish/deactivate paket,
   dependency integrity, background, dan exit gate S5 masih residual.
+  Candidate berikutnya source
+  `4b71e3473d8713848158cfbed7a0923d4433bf46` menutup deactivation paket
+  yang masih dipakai background aktif. Backend kini mengunci paket, relasi,
+  dan background aktif dalam satu transaksi lalu mengembalikan 409 terstruktur;
+  UI mempertahankan status Aktif, mencegah double-submit, dan mengarahkan
+  operator ke menu Background. Irisan ini `LOCAL_VALIDATED`, belum production;
+  delete dependency/recovery paket, coverage background, dan exit gate S5
+  tetap residual.
 - Report branch context S125 aktif pada source
   `cb8ef55a33ad1399c9383d027343a412752fc9ff`, release immutable
   `20260806063717-cb8ef55`, dengan rollback `20260806053037-f6988cb`.

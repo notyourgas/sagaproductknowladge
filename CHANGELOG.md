@@ -12,6 +12,22 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-07
 
+### SagaBook Sprint 5 package deactivation dependency guard candidate
+
+- Ringkasan: paket aktif kini gagal aman ketika masih dipakai background aktif;
+  backend mengembalikan 409 terstruktur dan UI mengarahkan recovery tanpa
+  sukses palsu atau double-submit.
+- Klasifikasi: `CONFIRMED`; source
+  `4b71e3473d8713848158cfbed7a0923d4433bf46`; status `UIUX_VALIDATED /
+  INTEGRATION_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: focused backend 30/30 (236), full backend 974/974 (11.180), browser
+  S142 2/2 plus stale/CRUD/hardening regression, AI 38/38 (219), build,
+  design 26/0, audit dependency, Pint, diff, dan cleanup lulus.
+- Production berubah: tidak. Release aktif tetap `20260806152606-0894df0`;
+  S5 belum exit gate dan deploy tetap menunggu S21.
+- File knowledge: product, dossier, changelog, ledger, master knowledge, gaps,
+  portfolio/root changelog, dan sync status.
+
 ### SagaBook Sprint 5 package stale-write recovery candidate
 
 - Ringkasan: editor paket kini dapat pulih dari konflik optimistic-write 409

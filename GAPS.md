@@ -65,9 +65,12 @@ ketika keputusan atau release baru menutup gap.
   S5-S6 paket/background/add-on/resource. Candidate S5 `0874c098` sudah
   menutup pemulihan stale-write paket 409 dengan reload response API aktual,
   baseline baru, double-submit guard, dan permission/tenant-negative. Irisan ini
-  `LOCAL_VALIDATED`, belum production. Residual S5 adalah publish/deactivate
-  paket, dependency integrity, background, dan combined exit gate; S6
-  add-on/resource belum dimulai. Recovery response availability kosong,
+  `LOCAL_VALIDATED`, belum production. Candidate berikutnya `4b71e347`
+  menutup deactivation paket yang masih dipakai background aktif melalui 409
+  transactional, urutan row lock, state UI aktual, dan recovery ke Background;
+  irisan ini juga `LOCAL_VALIDATED` serta belum production. Residual S5 adalah
+  delete dependency/recovery paket, coverage background, dan combined exit
+  gate; S6 add-on/resource belum dimulai. Recovery response availability kosong,
   initial-load manual transfer, dan aksi Payment Monitor sudah production pada
   S128-S130. Residual payment/report adalah QRIS/provider nyata,
   pagination/filter/export, reconciliation provider, stale multi-tab, dan

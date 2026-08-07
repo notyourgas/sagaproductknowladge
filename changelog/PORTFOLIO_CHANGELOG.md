@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-07 - SagaBook Sprint 5 package deactivation guard candidate
+
+- Source `4b71e3473d8713848158cfbed7a0923d4433bf46` menutup pelanggaran
+  integritas ketika paket aktif dijadikan Draft saat masih dipakai background
+  aktif, tanpa mengubah production.
+- Satu transaksi dan urutan row lock menjaga paket/background tetap aktif;
+  UI menampilkan 409 aktual, mencegah klik ganda, dan menyediakan recovery ke
+  menu Background.
+- Full backend 974/974, focused browser dan regression lulus, AI 38/38,
+  build/design, serta npm/Composer/OSV nol advisory.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; release aktif tetap
+  `20260806152606-0894df0`. S5 belum exit gate.
+
 ## 2026-08-07 - SagaBook Sprint 5 package stale-write recovery candidate
 
 - Source `0874c098440850d104868d891c2f61214cdba36b` menutup editor paket

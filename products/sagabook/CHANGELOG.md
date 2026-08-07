@@ -4,6 +4,24 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-07 - Sprint 5 package deactivation dependency guard candidate
+
+- Klasifikasi `CONFIRMED`; source
+  `4b71e3473d8713848158cfbed7a0923d4433bf46` pada branch
+  `codex/s142-sagabook-package-deactivation-guard`.
+- Before: paket aktif dapat dijadikan Draft walau background aktif masih
+  bergantung padanya; klik ganda menghasilkan 200 lalu 409. After: transaksi
+  mengunci paket, pivot, dan background aktif lalu menolak dengan satu 409
+  `package_deactivation_blocked` tanpa mengubah data atau menulis audit sukses.
+- UI mempertahankan status Aktif, mencegah double-submit, menampilkan state
+  failure/retry, dan menyediakan aksi 44 px `Atur background` tanpa layout-shift.
+- Focused backend 30/30 (236), full backend 974/974 (11.180), browser S142 2/2
+  plus stale/CRUD/hardening regression, AI 38/38 (219), build, design 26/0,
+  Pint/diff/cleanup, serta npm/Composer/OSV nol advisory.
+- Status `UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap `20260806152606-0894df0`.
+  Next: delete dependency/recovery paket lalu coverage background; S5 belum exit.
+
 ## 2026-08-07 - Sprint 5 package stale-write recovery candidate
 
 - Klasifikasi `CONFIRMED`; source

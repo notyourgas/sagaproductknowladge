@@ -260,6 +260,18 @@ IMPLEMENTED_NOT_DEPLOYED`; production tetap `20260806152606-0894df0`.
 Publish/deactivate paket, dependency integrity, background, dan exit gate S5
 belum selesai.
 
+Vertical slice S5 berikutnya ditutup lokal pada source
+`4b71e3473d8713848158cfbed7a0923d4433bf46`. Sebelum perbaikan, paket aktif
+dapat dijadikan Draft meski background aktif masih bergantung padanya dan klik
+ganda dapat menghasilkan respons 200 lalu 409. Setelah perbaikan, controller
+mengunci paket, pivot, dan background aktif secara transactional; satu respons
+409 `package_deactivation_blocked` mempertahankan kedua entitas tetap aktif dan
+tidak menulis audit sukses palsu. UI menyediakan state pending/error serta aksi
+`Atur background`, dengan target 44 piksel dan tanpa layout-shift pada klik
+ganda. Status `UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; production tetap `20260806152606-0894df0`. Delete
+dependency/recovery paket, coverage background, dan exit gate S5 belum selesai.
+
 Tenant/cabang S124 pada source
 `f6988cb945c5ca224015d7fecbc94e81c535fc60` aktif sebagai release
 `20260806053037-f6988cb`; rollback `20260806043833-a912522`. Switch status

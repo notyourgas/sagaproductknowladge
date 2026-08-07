@@ -158,6 +158,14 @@ Statusnya `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; jangan menyebutnya
 production atau menyebut S5 selesai. Release production tetap
 `20260806152606-0894df0`.
 
+Candidate SagaBook S5 terbaru source
+`4b71e3473d8713848158cfbed7a0923d4433bf46` menjaga paket aktif agar tidak
+dapat dijadikan Draft selama masih dipakai background aktif. Penolakan 409
+mempertahankan data, UI menampilkan recovery `Atur background`, dan klik ganda
+tidak membuat sukses palsu. Statusnya `LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; S5 belum selesai dan production tetap release
+`20260806152606-0894df0`.
+
 Candidate SagaBook Sprint 2 terbaru adalah source
 `bf1766ae84c352cf3687383ca31947a3e619f575`, belum production. UI rate-limit
 429, idle expiry per tab, dan kontrol staff untuk mengeluarkan perangkat lain
