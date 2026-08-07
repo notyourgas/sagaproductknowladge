@@ -4,6 +4,25 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-08 - Sprint 6 combined Add-on exit gate candidate
+
+- Klasifikasi `CONFIRMED`; source
+  `239b193c70f30676702da492ece287a3ff1e8c9a` pada branch
+  `codex/s149-sagabook-addon-exit-gate`.
+- Runner repeatable menjalankan empat profil: create/edit/delete, stale
+  recovery, delete dependency, serta permission boundary. Semua profil memakai
+  response API aktual dan database disposable, lalu lulus 4/4.
+- Backend katalog 29/29 (159), full backend 982/982 (11.245), build, design
+  26/0, npm audit, Composer Packagist, dan OSV Composer nol advisory. Temuan
+  dependency transitif pada gate awal ditutup dengan versi aman dan seluruh
+  gate diulang hijau.
+- S149 tidak mengubah UI; bukti before/after S147/S148 pada 390x844 dan
+  1440x900 serta matriks desktop/zoom tetap menjadi evidence visual.
+- Komponen Add-on S6 `EXIT_GATE_ACCEPTED / UIUX_VALIDATED /
+  INTEGRATION_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; S6
+  keseluruhan tetap `IN_PROGRESS` karena resource belum selesai. Production
+  tetap `20260806152606-0894df0`; rollback/previous symlink tetap residual S21.
+
 ## 2026-08-08 - Sprint 6 Add-on delete dependency recovery candidate
 
 - Klasifikasi `CONFIRMED`; source

@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-08 - SagaBook Sprint 6 combined Add-on exit gate candidate
+
+- Source `239b193c70f30676702da492ece287a3ff1e8c9a` menggabungkan empat
+  profil repeatable Add-on: create/edit/delete, stale recovery, delete
+  dependency, dan permission boundary tanpa mengubah production.
+- Runner 4/4, backend katalog 29/29, full backend 982/982, build, design, npm,
+  Composer Packagist, dan OSV Composer hijau. Temuan dependency transitif sudah
+  ditutup dengan versi aman sebelum verifikasi final.
+- Status komponen Add-on `EXIT_GATE_ACCEPTED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; S6 keseluruhan `IN_PROGRESS` karena resource belum
+  selesai. Release aktif tetap `20260806152606-0894df0`, dan rollback/previous
+  symlink masih residual sebelum S21.
+
 ## 2026-08-08 - SagaBook Sprint 6 Add-on delete recovery candidate
 
 - Source `2a3fe4c93955d1a588b663808c7c9464ded5ff01` menutup gap delete

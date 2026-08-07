@@ -50,6 +50,15 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   booking`; data serta audit tetap utuh. Status `UIUX_VALIDATED /
   INTEGRATION_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; S6
   tetap `IN_PROGRESS`, production dan aktivasi subscription tidak berubah.
+- Candidate lokal S149 source
+  `239b193c70f30676702da492ece287a3ff1e8c9a` menambahkan gate gabungan
+  repeatable untuk Add-on: create/edit/delete, recovery stale-write, delete
+  dependency, serta permission boundary dijalankan sebagai empat profil.
+  Seluruh profil, backend katalog 29/29, full backend 982/982, build, design,
+  dan audit dependency hijau. Komponen Add-on S6 kini `EXIT_GATE_ACCEPTED /
+  UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; S6 keseluruhan tetap `IN_PROGRESS` karena resource
+  belum discreen. Production dan aktivasi subscription tidak berubah.
 
 ## Ringkasan
 

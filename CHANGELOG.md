@@ -12,6 +12,26 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-08
 
+### SagaBook Sprint 6 combined Add-on exit gate candidate
+
+- Ringkasan: empat profil repeatable kini mengikat Add-on create/edit/delete,
+  stale recovery, delete dependency, dan permission boundary menjadi satu exit
+  gate yang dapat dijalankan ulang tanpa mengubah production.
+- Klasifikasi: `CONFIRMED`; source
+  `239b193c70f30676702da492ece287a3ff1e8c9a`; status komponen Add-on
+  `EXIT_GATE_ACCEPTED / UIUX_VALIDATED / INTEGRATION_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; S6 keseluruhan `IN_PROGRESS`.
+- Gate: runner 4/4 profil, backend katalog 29/29 (159), full backend 982/982
+  (11.245), build, design 26/0, npm audit, Composer Packagist, dan OSV Composer
+  nol advisory. Temuan dependency transitif saat gate awal sudah ditutup dengan
+  versi aman sebelum verifikasi final.
+- UI berubah: tidak. Gate menjalankan ulang bukti visual S147/S148 pada 390x844
+  dan 1440x900 beserta matriks desktop/zoom yang sudah diterima.
+- Production berubah: tidak. Release aktif tetap `20260806152606-0894df0`;
+  resource S6 serta rollback/previous symlink masih residual sebelum S21.
+- File knowledge: product, dossier, changelog, ledger, master knowledge, gaps,
+  portfolio/root changelog, dan sync status.
+
 ### SagaBook Sprint 6 Add-on delete dependency recovery candidate
 
 - Ringkasan: penghapusan Add-on yang masih tersimpan pada riwayat booking kini

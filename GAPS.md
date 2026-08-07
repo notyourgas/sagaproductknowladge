@@ -90,11 +90,13 @@ ketika keputusan atau release baru menutup gap.
   tanpa POST stale, double-submit guard, serta staff 403 dan tenant-negative
   404 tanpa perubahan data. Candidate S148 `2a3fe4c9` menutup delete dependency
   recovery Add-on dengan 409 terstruktur, hitungan riwayat booking, recovery UI,
-  retry aman, serta non-disclosure Staff/tenant lain. Kedua irisan
-  `LOCAL_VALIDATED`; S6 sekarang `IN_PROGRESS`, tetapi combined Add-on exit dan
-  resource masih residual. npm dan OSV Composer audit fresh nol advisory;
-  Composer Packagist timeout dan perlu diulang sebelum staging/release. Health
-  SagaBook read-only hijau, tetapi
+  retry aman, serta non-disclosure Staff/tenant lain. Candidate S149
+  `239b193c` menggabungkan create/edit/delete, stale recovery, delete dependency,
+  dan permission boundary dalam empat profil repeatable yang semuanya hijau.
+  Komponen Add-on S6 kini `EXIT_GATE_ACCEPTED / LOCAL_VALIDATED`; S6 keseluruhan
+  tetap `IN_PROGRESS` karena resource belum discreen. npm, Composer Packagist,
+  dan OSV Composer audit fresh nol advisory. Health SagaBook read-only hijau,
+  tetapi
   rollback/previous symlink production tidak ada dan wajib dipulihkan sebelum
   release immutable S21.
   Recovery response availability kosong,

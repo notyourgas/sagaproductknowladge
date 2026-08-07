@@ -364,6 +364,21 @@ timeout dicatat sebagai error provider audit, bukan advisory. Status
 IMPLEMENTED_NOT_DEPLOYED`; S6 tetap `IN_PROGRESS`, production tetap
 `20260806152606-0894df0`, dan combined Add-on exit/resource masih residual.
 
+Combined exit Add-on diterima lokal pada source
+`239b193c70f30676702da492ece287a3ff1e8c9a`. Runner repeatable menjalankan
+empat profil terisolasi: create/edit/delete, stale recovery, delete dependency,
+dan permission boundary. Semua profil lulus dengan response API aktual serta
+SQLite disposable; backend katalog 29/29 (159), full backend 982/982 (11.245),
+build, design audit 26/0, npm audit, Composer, dan OSV juga hijau. Dependency
+transitif berisiko yang ditemukan saat gate ditutup sudah dinaikkan ke versi
+aman sebelum verifikasi final. Perubahan S149 hanya test harness/provenance dan
+tidak mengubah UI, sehingga bukti before/after tetap memakai visual S147/S148
+pada 390x844 dan 1440x900 beserta matriks desktop/zoom yang telah diterima.
+Komponen Add-on S6 berstatus `EXIT_GATE_ACCEPTED / UIUX_VALIDATED /
+INTEGRATION_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; S6 secara
+keseluruhan tetap `IN_PROGRESS` sampai resource selesai. Production tetap
+`20260806152606-0894df0`.
+
 Tenant/cabang S124 pada source
 `f6988cb945c5ca224015d7fecbc94e81c535fc60` aktif sebagai release
 `20260806053037-f6988cb`; rollback `20260806043833-a912522`. Switch status
