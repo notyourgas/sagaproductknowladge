@@ -12,14 +12,14 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-07T13:14:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-07T14:10:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `64f01b1251a03ea263c9c034e35d17d36c937538` |
-| Informasi terakhir disinkronkan | SagaBook Sprint 2 combined auth acceptance gate pada source `549b9c88ad38320815bb7e566eb7db2da9eb65a9`; empat slice lulus pada runtime disposable terisolasi dan production tidak berubah. |
+| Baseline sebelum pembaruan | `4f18072b10f14560af556e212ef777074a6a8ebc` |
+| Informasi terakhir disinkronkan | SagaBook Sprint 2 auth/session exit gate diterima lokal pada source `bf1766ae84c352cf3687383ca31947a3e619f575`; dependency audit OSV 114 paket/0 advisory dan production tidak berubah. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
 | Konflik | Tidak ada konflik fakta runtime SagaBook atau SagaView. Status candidate lokal, production aktif, activation, dan business readiness dipisahkan. |
-| Error | Sinkronisasi dokumen tidak mempunyai konflik. Composer advisory audit SagaBook perlu diulang karena endpoint Packagist timeout; Sprint 2 belum ditutup. Authenticated Owner UAT kategori dengan harga berbeda tetap residual SagaView S139. |
+| Error | Tidak ada error sinkronisasi. Endpoint Packagist tetap timeout, tetapi dependency exit gate SagaBook ditutup fail-closed melalui OSV resmi untuk ekosistem Packagist. Authenticated Owner UAT kategori dengan harga berbeda tetap residual SagaView S139. |
 
 ## File yang berubah pada sinkronisasi ini
 
@@ -50,9 +50,9 @@ availability kosong, initial-load manual transfer, dan aksi Payment Monitor
 S128-S130 sudah production. Residual payment/report adalah QRIS/provider nyata,
 pagination/filter/export, reconciliation provider, stale multi-tab, dan
   closing concurrency. UI rate-limit 429, expiry idle per tab, revocation
-perangkat lain, dan combined browser acceptance sudah `LOCAL_VALIDATED` pada
-candidate yang belum production; residual auth adalah pengulangan Composer
-advisory audit saat Packagist dapat dijangkau. Status
+perangkat lain, combined browser acceptance, full backend, dan dependency audit
+sudah `LOCAL_VALIDATED`; Sprint 2 exit gate diterima lokal. Source belum
+production dan deploy tetap ditahan sampai S21. Status
 `INTEGRATION_VALIDATED` hanya diberikan setelah happy path, failure/retry,
 permission/tenant-negative, dan data integrity fitur terkait memiliki bukti
 fresh. Prioritas berikutnya: tutup tenant/cabang route lain lalu katalog;

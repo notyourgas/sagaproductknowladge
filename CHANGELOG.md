@@ -12,6 +12,21 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-07
 
+### SagaBook Sprint 2 auth/session exit gate accepted locally
+
+- Ringkasan: dependency blocker Packagist ditutup memakai fallback batch OSV
+  fail-closed untuk 114 paket Composer public; hasil nol advisory.
+- Klasifikasi: `CONFIRMED`; source
+  `bf1766ae84c352cf3687383ca31947a3e619f575`; status `LOCAL_VALIDATED /
+  EXIT_GATE_ACCEPTED / IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: combined auth 13 pass/1 intentional skip, full backend 969/969, node
+  13/13, build, design audit, npm audit, Composer manifest, Pint, diff-check,
+  cleanup, dan public health lulus.
+- Production berubah: tidak. Sprint 3 tenant/cabang menjadi prioritas berikut;
+  deploy tetap ditahan sampai S21.
+- File knowledge: product, dossier, changelog, ledger, master knowledge, gaps,
+  portfolio/root changelog, dan sync status.
+
 ### SagaBook Sprint 2 combined auth acceptance gate candidate
 
 - Ringkasan: satu perintah acceptance menjalankan empat slice auth pada runtime

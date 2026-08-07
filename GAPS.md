@@ -56,8 +56,9 @@ ketika keputusan atau release baru menutup gap.
   UI rate-limit 429, expiry idle per tab, dan revocation perangkat lain sudah
   `LOCAL_VALIDATED` pada candidate Sprint 2, tetapi belum production. Residual
   combined browser acceptance empat slice sudah hijau dengan runtime disposable
-  terisolasi. Residual auth/session hanya pengulangan Composer advisory audit
-  saat Packagist dapat dijangkau sebelum Sprint 2 exit gate ditutup.
+  terisolasi. Endpoint Packagist timeout ditutup dengan fallback OSV resmi yang
+  mengaudit 114 paket Composer dan menemukan nol advisory. Sprint 2 exit gate
+  sudah diterima lokal; gap berikutnya adalah Sprint 3 tenant/cabang.
   UI/UX S122 sudah production,
   tetapi integrasi template belum
   boleh disebut `INTEGRATION_VALIDATED` sebelum happy, failure/retry,

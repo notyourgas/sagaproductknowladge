@@ -4,6 +4,26 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-07 - Sprint 2 auth/session exit gate accepted locally
+
+- Klasifikasi: `CONFIRMED`; source
+  `bf1766ae84c352cf3687383ca31947a3e619f575` pada branch
+  `codex/s135-sagabook-session-revocation`; status `LOCAL_VALIDATED /
+  EXIT_GATE_ACCEPTED / IMPLEMENTED_NOT_DEPLOYED`.
+- Endpoint Packagist tetap timeout. Fallback fail-closed memakai batch API OSV
+  resmi untuk ekosistem Packagist dan hanya mengirim nama/versi public dari
+  `composer.lock`; 80 paket production dan 34 development menghasilkan nol
+  advisory. Parser/result-count/finding mapper tervalidasi 3/3.
+- Combined auth final lulus 4/4 slice: 13 pass dan 1 intentional skip pada
+  mobile/desktop. Full backend 969/969 (11.133), node 13/13, build, design audit
+  26/0, npm audit nol vulnerability, Composer manifest valid, Pint, diff-check,
+  cleanup run/lock 0, dan public health 2/2 200 lulus.
+- Tidak ada perubahan UI, API bisnis, migration, subscription, booking,
+  payment, tenant, data customer, atau production. Screenshot auth existing
+  S133-S135 tetap menjadi evidence visual.
+- Sprint berikutnya adalah S3 tenant/cabang. Deploy tetap ditahan sampai S21;
+  activation dan business readiness tidak berubah.
+
 ## 2026-08-07 - Sprint 2 combined auth acceptance gate candidate
 
 - Klasifikasi: `CONFIRMED`; source candidate

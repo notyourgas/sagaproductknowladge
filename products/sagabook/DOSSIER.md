@@ -168,7 +168,7 @@ dan logout lulus dengan data demo public-safe. S123 tidak mengaktifkan
 subscription dan tidak menonaktifkan website booking yang sudah aktif.
 
 Candidate Sprint 2 terbaru pada source
-`549b9c88ad38320815bb7e566eb7db2da9eb65a9` mempertahankan idle expiry per tab
+`bf1766ae84c352cf3687383ca31947a3e619f575` mempertahankan idle expiry per tab
 dan menambahkan kontrol `Keluarkan perangkat lain` bagi staff terautentikasi.
 Password step-up, idempotency, transaksi dengan row lock, kenaikan
 `staff.session_version`, current-context renewal, 401 `session_revoked`, dan
@@ -177,9 +177,12 @@ context lama dicabut. Full backend 969/969 (11.133), browser revocation
 mobile/desktop 2/2, build, design audit, npm audit, Pint, dan diff-check lulus.
 Combined browser gate menjalankan auth/session, rate-limit, idle-session, dan
 revocation pada runtime disposable dengan cache/limit/timeout eksplisit; hasil
-13 pass dan 1 intentional skip. Status `IMPLEMENTED_NOT_DEPLOYED`; Composer
-advisory audit perlu diulang saat Packagist dapat dijangkau sebelum Sprint 2
-ditutup.
+13 pass dan 1 intentional skip. Karena endpoint advisory Packagist timeout,
+fallback fail-closed mengaudit 114 nama/versi public dari `composer.lock`
+melalui OSV resmi untuk ekosistem Packagist; hasil nol advisory dan unit audit
+3/3. Full backend 969/969, node 13/13, build, design, npm audit, Pint, diff, dan
+cleanup juga lulus. Sprint 2 berstatus `LOCAL_VALIDATED /
+EXIT_GATE_ACCEPTED / IMPLEMENTED_NOT_DEPLOYED`.
 
 Tenant/cabang S124 pada source
 `f6988cb945c5ca224015d7fecbc94e81c535fc60` aktif sebagai release

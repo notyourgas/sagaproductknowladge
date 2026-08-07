@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-07 - SagaBook Sprint 2 auth exit gate accepted locally
+
+- Source `bf1766ae84c352cf3687383ca31947a3e619f575` menutup seluruh local
+  auth/session exit gate tanpa mengubah production.
+- Combined browser empat slice lulus 13 pass/1 intentional skip; full backend
+  969/969, node 13/13, build/design/npm audit/Pint/diff/cleanup juga lulus.
+- Packagist timeout ditutup dengan fallback OSV resmi: 114 paket Composer
+  public diaudit fail-closed dan nol advisory ditemukan.
+- Status `LOCAL_VALIDATED / EXIT_GATE_ACCEPTED / IMPLEMENTED_NOT_DEPLOYED`;
+  Sprint 3 tenant/cabang menjadi next action dan deploy tetap menunggu S21.
+
 ## 2026-08-07 - SagaBook Sprint 2 combined auth gate candidate
 
 - Source `549b9c88ad38320815bb7e566eb7db2da9eb65a9` membuat satu combined
