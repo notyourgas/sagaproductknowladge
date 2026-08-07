@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-07 - SagaBook Sprint 2 idle-session candidate
+
+- Source `a572f59c2bfddb65686271cab839ba9710e59657` pada branch
+  `codex/s134-sagabook-idle-session` menutup idle expiry per tab secara lokal.
+- Default timeout 30 menit; polling pasif tidak memperpanjang sesi, request
+  aktif menyentuh timestamp, sibling tab aktif tidak dicabut, dan expiry
+  menghasilkan 401 plus audit public-safe serta recovery notice aksesibel.
+- Full backend 967/967 (11.109), Playwright idle 2/2, auth regression 7 pass/1
+  intentional skip, build, AI regression 44/44, dan dependency audit lulus.
+- Status `UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Production SagaBook dan SagaView tidak berubah;
+  revocation lintas device serta combined Sprint 2 gate masih residual.
+
 ## 2026-08-07 - SagaView S138 import finish dan batch kategori production
 
 - Backend `f515dd7a1066b2c6b5244bb1f5bc48d306430768` aktif sebagai release

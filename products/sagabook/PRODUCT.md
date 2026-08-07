@@ -216,6 +216,14 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
   Login, session, logout, activity log, `last_login_at`, protected 401,
   capability 403, dan cross-tenant 403 tervalidasi end-to-end. Ini hanya
   menutup irisan auth/session; coverage produk keseluruhan masih bertahap.
+- Candidate Sprint 2 idle-session pada source
+  `a572f59c2bfddb65686271cab839ba9710e59657` berstatus
+  `UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Sesi admin idle berakhir per tab setelah default
+  30 menit; polling pasif tidak memperpanjang sesi, tab aktif lain tidak ikut
+  dicabut, event expiry tercatat tanpa credential/token/IP, dan login
+  menjelaskan cara melanjutkan pekerjaan. Production belum berubah; revocation
+  lintas device masih menjadi exit gate Sprint 2.
 - Tenant/cabang S124 aktif pada source
   `f6988cb945c5ca224015d7fecbc94e81c535fc60`, release immutable
   `20260806053037-f6988cb`, dengan rollback

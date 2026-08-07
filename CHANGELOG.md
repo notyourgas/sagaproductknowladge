@@ -12,6 +12,20 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-07
 
+### SagaBook Sprint 2 idle-session expiry candidate
+
+- Ringkasan: sesi idle admin kini dibatasi per tab dengan polling pasif,
+  invalidasi server-authoritative, audit tersanitasi, dan recovery notice login.
+- Klasifikasi: `CONFIRMED`; source candidate
+  `a572f59c2bfddb65686271cab839ba9710e59657`; status `UIUX_VALIDATED /
+  INTEGRATION_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: full backend 967/967, Playwright idle mobile/desktop 2/2, auth
+  regression, build, AI regression, dan dependency audit lulus.
+- Production berubah: tidak. Revocation lintas device dan combined Sprint 2
+  exit gate tetap blocker sebelum roadmap release S21.
+- File knowledge: product, dossier, changelog, ledger, master knowledge, gaps,
+  portfolio/root changelog, dan sync status.
+
 ### SagaView S138 import finish dan batch kategori production
 
 - Ringkasan: Batch Import kini dapat ditutup melalui footer `Selesai` yang

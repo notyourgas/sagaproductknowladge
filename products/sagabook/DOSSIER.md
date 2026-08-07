@@ -167,6 +167,17 @@ termasuk invalid credential, protected 401, capability 403, cross-tenant 403,
 dan logout lulus dengan data demo public-safe. S123 tidak mengaktifkan
 subscription dan tidak menonaktifkan website booking yang sudah aktif.
 
+Candidate idle-session Sprint 2 pada source
+`a572f59c2bfddb65686271cab839ba9710e59657` menambahkan batas idle default
+1.800 detik per tab admin. Timestamp hanya diperbarui oleh request aktif;
+polling dashboard dan pemeriksaan versi bertanda pasif. Saat expiry, middleware
+menghapus context tab tersebut, menulis audit public-safe, mengembalikan 401
+`session_expired`, lalu UI menampilkan recovery notice aksesibel pada login.
+Sibling tab aktif tetap sah. Full backend 967/967, browser idle mobile/desktop
+2/2, auth regression 7 pass/1 intentional skip, build dan dependency audit
+lulus. Status `IMPLEMENTED_NOT_DEPLOYED`; revocation lintas device dan combined
+Sprint 2 exit gate masih residual.
+
 Tenant/cabang S124 pada source
 `f6988cb945c5ca224015d7fecbc94e81c535fc60` aktif sebagai release
 `20260806053037-f6988cb`; rollback `20260806043833-a912522`. Switch status

@@ -116,6 +116,14 @@ tidak berarti integrasi seluruh produk selesai. SagaView tetap local-first
 untuk foto, editor, recovery, dan export. Subscription activation tidak
 berubah.
 
+Candidate SagaBook Sprint 2 terbaru adalah source
+`a572f59c2bfddb65686271cab839ba9710e59657`, belum production. Idle-session
+admin tervalidasi lokal per tab dengan default 30 menit: polling pasif tidak
+memperpanjang sesi, tab aktif lain tetap sah, expiry diaudit tanpa credential,
+dan login menampilkan recovery notice. UI rate-limit 429 juga sudah tervalidasi
+lokal. Jangan menyebut Sprint 2 selesai atau production sampai revocation lintas
+device, combined exit gate, dan release roadmap lulus.
+
 Catatan status kumulatif: source storefront/recovery S98-S118 yang tercatat
 sebagai candidate pada bagian histori di bawah sudah menjadi ancestor source
 production S126 dan tidak memerlukan deploy terpisah. Pengecualian arah

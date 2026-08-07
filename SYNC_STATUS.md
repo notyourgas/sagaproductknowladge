@@ -12,22 +12,21 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-07T09:43:04+07:00 |
+| Waktu pembaruan terakhir | 2026-08-07T11:27:19+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `87cecb9a659e35621a8cbc9dfeb8f8d439027862` |
-| Informasi terakhir disinkronkan | SagaView S138 import finish dan batch kategori pada backend source/release `f515dd7a` / `20260807023502-f515dd7` serta Studio `05c5fda0` / `20260807023502-05c5fda`; tombol Selesai/Escape dan batch kategori transactional 1-100 frame aktif di production. |
+| Baseline sebelum pembaruan | `147b5af962fab932ee6039869e2aee4b3ffa5510` |
+| Informasi terakhir disinkronkan | SagaBook Sprint 2 idle-session expiry per tab pada candidate source `a572f59c`; UI/API/audit dan sibling-tab isolation tervalidasi lokal, belum production. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
 | Konflik | Tidak ada konflik fakta runtime SagaBook atau SagaView S138. Status production aktif, activation, dan business readiness dipisahkan. |
-| Error | Tidak ada error sinkronisasi. Sprint 2 auth/session dan authenticated UAT/provider/reconciliation/pilot tetap residual SagaBook; authenticated Owner UAT batch/kategori nyata tetap residual SagaView S138. |
+| Error | Tidak ada error sinkronisasi. Revocation lintas device dan combined Sprint 2 exit gate tetap residual SagaBook; authenticated Owner UAT batch/kategori nyata tetap residual SagaView S138. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/sagaview/PRODUCT.md`
-- `products/sagaview/DOSSIER.md`
-- `products/sagaview/CHANGELOG.md`
-- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
-- `DECISIONS.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `GAPS.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
@@ -50,8 +49,9 @@ role/route, stale refetch, serta delete dependency/recovery. Recovery response
 availability kosong, initial-load manual transfer, dan aksi Payment Monitor
 S128-S130 sudah production. Residual payment/report adalah QRIS/provider nyata,
 pagination/filter/export, reconciliation provider, stale multi-tab, dan
-closing concurrency; residual auth adalah expiry idle,
-revocation lintas device, dan UI rate-limit 429. Status
+  closing concurrency. UI rate-limit 429 dan expiry idle per tab sudah
+`LOCAL_VALIDATED` pada candidate yang belum production; residual auth adalah
+revocation lintas device dan combined Sprint 2 exit gate. Status
 `INTEGRATION_VALIDATED` hanya diberikan setelah happy path, failure/retry,
 permission/tenant-negative, dan data integrity fitur terkait memiliki bukti
 fresh. Prioritas berikutnya: tutup tenant/cabang route lain lalu katalog;

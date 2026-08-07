@@ -4,6 +4,26 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-07 - Sprint 2 idle-session expiry candidate
+
+- Klasifikasi: `CONFIRMED`; source candidate
+  `a572f59c2bfddb65686271cab839ba9710e59657` pada branch
+  `codex/s134-sagabook-idle-session`; status `UIUX_VALIDATED /
+  INTEGRATION_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- Before: sesi per tab tidak mempunyai idle cutoff server-authoritative dan
+  polling dashboard dapat dianggap sebagai aktivitas. After: default idle 30
+  menit, polling pasif tidak menyentuh timestamp, request aktif memperbaruinya,
+  dan hanya tab idle yang dihapus dengan audit public-safe.
+- UI mengarahkan 401 `session_expired` ke login dengan recovery notice
+  aksesibel, target minimum 44 px, forced-colors/reduced-motion, tanpa overflow,
+  dan tepat satu `Powered by SagaBook`.
+- Gate: focused backend 10/10 (138), full backend 967/967 (11.109), Playwright
+  idle 2/2, auth regression 7 pass/1 intentional skip, node harness 9/9, build,
+  Composer/npm audit nol advisory, dan AI SagaBook regression 44/44.
+- Production, migration, subscription, booking, payment, tenant, dan data
+  customer tidak berubah. Next action: revocation lintas device dan combined
+  Sprint 2 exit gate; deploy tetap ditahan sampai S21.
+
 ## 2026-08-07 - Sprint 1 demo tenant dan test harness terisolasi
 
 - Klasifikasi: `CONFIRMED`; source candidate
