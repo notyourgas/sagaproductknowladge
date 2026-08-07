@@ -46,8 +46,12 @@ ketika keputusan atau release baru menutup gap.
 
 - `TODO`: auth/session S123, status/write cabang S124, serta branch-context
   `/admin/reports` S125 sudah `INTEGRATION_VALIDATED` dan aktif di production.
-  Residual tenant/cabang adalah selector/filter lintas role/route, stale
-  refetch, serta delete dependency. Recovery response availability kosong,
+  Candidate Sprint 3 `82a6f376998d8eb5778c6ccaac117a21a1ab8efd`
+  sudah mencabut sesi stale ketika delegasi cabang/role/identitas staff berubah
+  dan memuat ulang selector dari scope API setelah login ulang. Irisan ini
+  `LOCAL_VALIDATED` tetapi belum production. Residual tenant/cabang adalah
+  stale refetch lintas tab, delete dependency/recovery, serta filter cabang
+  pada route lain. Recovery response availability kosong,
   initial-load manual transfer, dan aksi Payment Monitor sudah production pada
   S128-S130. Residual payment/report adalah QRIS/provider nyata,
   pagination/filter/export, reconciliation provider, stale multi-tab, dan
@@ -58,7 +62,7 @@ ketika keputusan atau release baru menutup gap.
   combined browser acceptance empat slice sudah hijau dengan runtime disposable
   terisolasi. Endpoint Packagist timeout ditutup dengan fallback OSV resmi yang
   mengaudit 114 paket Composer dan menemukan nol advisory. Sprint 2 exit gate
-  sudah diterima lokal; gap berikutnya adalah Sprint 3 tenant/cabang.
+  sudah diterima lokal; Sprint 3-S4 tenant/cabang masih aktif.
   UI/UX S122 sudah production,
   tetapi integrasi template belum
   boleh disebut `INTEGRATION_VALIDATED` sebelum happy, failure/retry,

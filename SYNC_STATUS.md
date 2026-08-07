@@ -12,14 +12,14 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-07T14:10:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-07T15:27:28+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `4f18072b10f14560af556e212ef777074a6a8ebc` |
-| Informasi terakhir disinkronkan | SagaBook Sprint 2 auth/session exit gate diterima lokal pada source `bf1766ae84c352cf3687383ca31947a3e619f575`; dependency audit OSV 114 paket/0 advisory dan production tidak berubah. |
+| Baseline sebelum pembaruan | `d5f3b4b55bc1be70860d248c6db76d16ad7041be` |
+| Informasi terakhir disinkronkan | SagaBook Sprint 3 revokasi sesi saat batas akses staff/cabang berubah pada source `82a6f376998d8eb5778c6ccaac117a21a1ab8efd`; irisan tervalidasi lokal dan production tidak berubah. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
 | Konflik | Tidak ada konflik fakta runtime SagaBook atau SagaView. Status candidate lokal, production aktif, activation, dan business readiness dipisahkan. |
-| Error | Tidak ada error sinkronisasi. Endpoint Packagist tetap timeout, tetapi dependency exit gate SagaBook ditutup fail-closed melalui OSV resmi untuk ekosistem Packagist. Authenticated Owner UAT kategori dengan harga berbeda tetap residual SagaView S139. |
+| Error | Tidak ada error sinkronisasi. Regresi penuh serial SagaBook lulus 970/970; dependency audit OSV Packagist 114 paket/0 advisory. Authenticated Owner UAT kategori dengan harga berbeda tetap residual SagaView S139. |
 
 ## File yang berubah pada sinkronisasi ini
 
@@ -44,8 +44,10 @@ backup/restore, UAT, activation, dan business readiness tetap blocker.
 
 Ledger integrasi SagaBook dan SagaView masih bertahap. Auth/session SagaBook
 S123, status/write cabang S124, dan branch-context `/admin/reports` S125 sudah
-`INTEGRATION_VALIDATED`. Residual tenant/cabang adalah selector/filter lintas
-role/route, stale refetch, serta delete dependency/recovery. Recovery response
+`INTEGRATION_VALIDATED`. Candidate Sprint 3 source `82a6f376` mencabut sesi
+stale ketika batas akses staff/cabang berubah dan memuat ulang selector dari
+scope API setelah login ulang. Residual tenant/cabang adalah stale refetch
+lintas tab, delete dependency/recovery, serta filter cabang pada route lain. Recovery response
 availability kosong, initial-load manual transfer, dan aksi Payment Monitor
 S128-S130 sudah production. Residual payment/report adalah QRIS/provider nyata,
 pagination/filter/export, reconciliation provider, stale multi-tab, dan
@@ -53,7 +55,7 @@ pagination/filter/export, reconciliation provider, stale multi-tab, dan
 perangkat lain, combined browser acceptance, full backend, dan dependency audit
 sudah `LOCAL_VALIDATED`; Sprint 2 exit gate diterima lokal. Source belum
 production dan deploy tetap ditahan sampai S21. Status
-`INTEGRATION_VALIDATED` hanya diberikan setelah happy path, failure/retry,
+`INTEGRATION_VALIDATED` hanya diberikan per irisan setelah happy path, failure/retry,
 permission/tenant-negative, dan data integrity fitur terkait memiliki bukti
 fresh. Prioritas berikutnya: tutup tenant/cabang route lain lalu katalog;
 SagaView auth/device/session, local ingest, lalu session flow dengan no-upload

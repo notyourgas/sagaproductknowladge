@@ -238,7 +238,13 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
   404 generik tanpa mengubah data, staff tanpa capability mendapat 403,
   optimistic lock/read-after-write serta audit log lulus. Irisan status/write
   cabang `INTEGRATION_VALIDATED`; selector/filter cabang lintas role dan route
-  tetap dilanjutkan feature-by-feature.
+  tetap dilanjutkan feature-by-feature. Candidate Sprint 3 source
+  `82a6f376998d8eb5778c6ccaac117a21a1ab8efd` menutup satu celah keamanan:
+  perubahan role, status, identitas login, password, atau delegasi cabang staff
+  menaikkan `session_version`, sehingga sesi lama menerima 401
+  `session_revoked`. Setelah login ulang, selector hanya merender cabang yang
+  masih diizinkan dari response API aktual. Irisan ini tervalidasi lokal dan
+  belum production.
 - Report branch context S125 aktif pada source
   `cb8ef55a33ad1399c9383d027343a412752fc9ff`, release immutable
   `20260806063717-cb8ef55`, dengan rollback `20260806053037-f6988cb`.

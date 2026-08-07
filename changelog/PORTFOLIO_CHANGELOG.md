@@ -1,5 +1,22 @@
 # Portfolio Changelog
 
+## 2026-08-07 - SagaBook Sprint 3 stale branch-access revocation candidate
+
+- Source `82a6f376998d8eb5778c6ccaac117a21a1ab8efd` pada branch
+  `codex/s136-sagabook-branch-delegation-revocation` menutup satu irisan
+  tenant/cabang tanpa mengubah production.
+- Saat batas akses staff berubah, `session_version` naik di transaksi yang sama;
+  sesi lama menerima 401 `session_revoked`, sedangkan login ulang hanya
+  memperoleh cabang yang masih diizinkan dari API.
+- UI aktual mobile/desktop lulus 2/2 dengan screenshot before/revoked/after,
+  target 44 px, keyboard/focus, forced-colors, reduced-motion, satu watermark,
+  dan tanpa overflow. Full backend 970/970, Node 15/15, AI 44/44, build,
+  design, npm, OSV Composer, Pint, dan diff-check lulus.
+- Status `UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Release aktif tetap
+  `20260806152606-0894df0`; deploy menunggu S21 dan fitur tenant/cabang belum
+  exit gate.
+
 ## 2026-08-07 - SagaBook Sprint 2 auth exit gate accepted locally
 
 - Source `bf1766ae84c352cf3687383ca31947a3e619f575` menutup seluruh local

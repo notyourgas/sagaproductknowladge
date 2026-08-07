@@ -116,6 +116,15 @@ tidak berarti integrasi seluruh produk selesai. SagaView tetap local-first
 untuk foto, editor, recovery, dan export. Subscription activation tidak
 berubah.
 
+Candidate SagaBook Sprint 3 source
+`82a6f376998d8eb5778c6ccaac117a21a1ab8efd` belum production. Bila owner
+mengubah role, status, identitas login, password, atau delegasi cabang staff,
+sesi lama dicabut melalui kenaikan `session_version` dan menerima 401
+`session_revoked`; login ulang hanya memperoleh cabang yang masih diizinkan.
+Ini menutup satu irisan tenant/cabang, bukan exit gate seluruh fitur. Stale
+refetch lintas tab, delete dependency/recovery, dan filter route lain masih
+residual.
+
 Candidate SagaBook Sprint 2 terbaru adalah source
 `bf1766ae84c352cf3687383ca31947a3e619f575`, belum production. UI rate-limit
 429, idle expiry per tab, dan kontrol staff untuk mengeluarkan perangkat lain

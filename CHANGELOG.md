@@ -12,6 +12,24 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-07
 
+### SagaBook Sprint 3 revokasi delegasi cabang staff candidate
+
+- Ringkasan: perubahan batas akses staff kini menaikkan versi sesi sehingga
+  sesi yang masih membawa klaim cabang lama langsung menerima 401; login ulang
+  mengambil scope cabang aktual dari API.
+- Alasan: menutup stale-access lintas cabang setelah owner mengubah delegasi,
+  role, status, identitas login, atau password staff.
+- Klasifikasi: `CONFIRMED`; source
+  `82a6f376998d8eb5778c6ccaac117a21a1ab8efd`; status
+  `UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: full backend 970/970, browser 2/2 mobile/desktop, Node 15/15, AI 44/44,
+  build/design/Pint/diff, npm 0 vulnerability, dan OSV Composer 114/0 lulus.
+- Production berubah: tidak. Release aktif dan rollback tetap; Sprint 3-S4
+  masih menunggu stale refetch, delete recovery, serta filter route lain.
+- File knowledge: product, dossier, changelog, ledger, master knowledge, gaps,
+  portfolio/root changelog, dan sync status.
+
 ### SagaBook Sprint 2 auth/session exit gate accepted locally
 
 - Ringkasan: dependency blocker Packagist ditutup memakai fallback batch OSV

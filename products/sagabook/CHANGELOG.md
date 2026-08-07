@@ -4,6 +4,31 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-07 - Sprint 3 revokasi delegasi cabang staff candidate
+
+- Klasifikasi: `CONFIRMED`; source
+  `82a6f376998d8eb5778c6ccaac117a21a1ab8efd` pada branch
+  `codex/s136-sagabook-branch-delegation-revocation`; status
+  `UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`.
+- Before: perubahan cabang staff menyimpan scope baru, tetapi sesi yang sudah
+  terbuka masih membawa klaim cabang lama sampai logout. After: perubahan
+  role, status, email, username, password, atau kumpulan cabang menaikkan
+  `staff.session_version` tepat sekali dan menulis audit public-safe.
+- UI aktual membuktikan selector dua cabang -> sesi lama menerima 401
+  `session_revoked` dan recovery notice -> login ulang hanya menampilkan satu
+  cabang yang masih diizinkan. Screenshot before/revoked/after tersedia pada
+  390x844 dan 1440x900; forced-colors, reduced-motion, keyboard/focus, target
+  44 px, satu watermark, dan no-overflow lulus.
+- Gate: focused auth/tenant 18/18 (290), full backend 970/970 (11.145), browser
+  E2E 2/2, Node 15/15, AI SagaBook 44/44 (3.440), build, design audit 26/0,
+  npm audit nol vulnerability, OSV Packagist 114 paket/0 advisory, Pint, dan
+  diff-check lulus.
+- Production, migration, subscription, booking, payment, dan data customer
+  tidak berubah. Release aktif tetap `20260806152606-0894df0`; deploy ditahan
+  sampai S21. Next action: stale refetch lintas tab, delete dependency/recovery,
+  lalu filter cabang pada route lain.
+
 ## 2026-08-07 - Sprint 2 auth/session exit gate accepted locally
 
 - Klasifikasi: `CONFIRMED`; source

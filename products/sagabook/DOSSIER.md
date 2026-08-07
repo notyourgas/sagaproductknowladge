@@ -184,6 +184,19 @@ melalui OSV resmi untuk ekosistem Packagist; hasil nol advisory dan unit audit
 cleanup juga lulus. Sprint 2 berstatus `LOCAL_VALIDATED /
 EXIT_GATE_ACCEPTED / IMPLEMENTED_NOT_DEPLOYED`.
 
+Candidate Sprint 3 tenant/cabang pada source
+`82a6f376998d8eb5778c6ccaac117a21a1ab8efd` mencabut sesi stale saat owner
+mengubah batas akses staff. `StaffAccountService` membandingkan role, status,
+email, username, password, serta kumpulan cabang yang sudah dinormalisasi;
+perubahan keamanan menaikkan `staff.session_version` tepat sekali di dalam
+transaksi dan menyimpan audit public-safe. Request lama kemudian menerima 401
+`session_revoked`; login ulang mengambil scope cabang aktual dari API. Browser
+UI -> API -> service -> SQLite disposable -> response UI lulus 2/2 pada
+390x844 dan 1440x900. Full backend 970/970, AI SagaBook 44/44, build, design,
+Pint, npm audit, dan OSV Composer 114 paket/0 advisory lulus. Status irisan
+`UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; production tetap pada release sebelumnya.
+
 Tenant/cabang S124 pada source
 `f6988cb945c5ca224015d7fecbc94e81c535fc60` aktif sebagai release
 `20260806053037-f6988cb`; rollback `20260806043833-a912522`. Switch status
