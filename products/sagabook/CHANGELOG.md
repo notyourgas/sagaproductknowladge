@@ -4,6 +4,24 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-07 - Sprint 3-4 tenant/branch exit gate accepted locally
+
+- Klasifikasi `CONFIRMED`; source
+  `4ee167ecbc95892a113c9036faada5de85994bb8` pada branch
+  `codex/s140-sagabook-tenant-branch-exit-gate`.
+- Runner repeatable mengisolasi tujuh profil: branch write/retry, report
+  context, staff revocation, live refetch, delete recovery, staff context, dan
+  shared hardening. Masing-masing memakai migration/seed dan runtime disposable.
+- Runner 7/7 profil dan harness 7/7 lulus; full backend 973/973 dengan 11.171
+  assertion, AI 44/44, build/typecheck/design audit, cleanup 0/0, serta
+  npm/Composer/OSV nol advisory.
+- Bukti slice mencakup 390x844, 1440x900, laptop/QHD dan zoom efektif sampai
+  200%, happy/failure/offline/retry, stale response/session, double-submit,
+  permission/tenant-negative, audit, dan read-after-write.
+- Status `UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+  EXIT_GATE_ACCEPTED / IMPLEMENTED_NOT_DEPLOYED`; production tetap
+  `20260806152606-0894df0`. Next: mulai S5-S6 katalog feature-by-feature.
+
 ## 2026-08-07 - Sprint 3 staff branch-context candidate
 
 - Klasifikasi `CONFIRMED`; source

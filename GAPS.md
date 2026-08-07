@@ -59,7 +59,10 @@ ketika keputusan atau release baru menutup gap.
   tepat sekali. Candidate terbaru `22013fc0` menyelaraskan daftar staff dengan
   cabang aktif, mempertahankan revocation/permission boundary, dan menutup
   fresh OSV dengan nol advisory. Candidate ini juga belum production. Residual
-  tenant/cabang kini combined exit gate S3-S4. Recovery response availability kosong,
+  tenant/cabang ditutup lokal oleh combined exit gate S3-S4 source `4ee167ec`
+  dengan tujuh profil terisolasi, full backend, build, AI regression, dan audit
+  dependency hijau; production tetap belum berubah. Prioritas berikutnya adalah
+  S5-S6 paket/background/add-on/resource. Recovery response availability kosong,
   initial-load manual transfer, dan aksi Payment Monitor sudah production pada
   S128-S130. Residual payment/report adalah QRIS/provider nyata,
   pagination/filter/export, reconciliation provider, stale multi-tab, dan

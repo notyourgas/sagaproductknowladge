@@ -142,6 +142,14 @@ delegasi dan permission negative tetap berlaku. npm, Composer, dan OSV fresh
 nol advisory. Jangan menyebut Sprint 3-4 selesai sebelum combined exit gate
 diterima, dan jangan menyebut candidate ini production.
 
+Combined exit gate SagaBook S3-S4 diterima lokal pada source
+`4ee167ecbc95892a113c9036faada5de85994bb8`. Tujuh profil tenant/cabang,
+full backend, AI regression, build/typecheck/design, cleanup, dan dependency
+audit lulus menggunakan data sintetis serta database disposable. Ini mengizinkan
+roadmap lokal masuk S5-S6 paket/background/add-on/resource, tetapi bukan bukti
+deployment atau activation. Production tetap release
+`20260806152606-0894df0` sampai gate S21 dijalankan.
+
 Candidate SagaBook Sprint 2 terbaru adalah source
 `bf1766ae84c352cf3687383ca31947a3e619f575`, belum production. UI rate-limit
 429, idle expiry per tab, dan kontrol staff untuk mengeluarkan perangkat lain

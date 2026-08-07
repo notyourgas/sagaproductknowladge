@@ -12,6 +12,22 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-07
 
+### SagaBook Sprint 3-4 tenant/branch exit gate accepted locally
+
+- Ringkasan: tujuh slice tenant/cabang kini dapat dijalankan ulang dengan satu
+  runner terisolasi dan seluruh acceptance gabungan lulus.
+- Klasifikasi: `CONFIRMED`; source
+  `4ee167ecbc95892a113c9036faada5de85994bb8`; status `UIUX_VALIDATED /
+  INTEGRATION_VALIDATED / LOCAL_VALIDATED / EXIT_GATE_ACCEPTED /
+  IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: runner 7/7 profil, harness 7/7, full backend 973/973 (11.171), AI
+  44/44 (3.440), typecheck/build/design 26/0, cleanup 0/0, dan
+  npm/Composer/OSV nol advisory.
+- Production berubah: tidak. Release aktif tetap `20260806152606-0894df0`;
+  roadmap dapat masuk S5-S6 secara lokal, sedangkan deploy tetap menunggu S21.
+- File knowledge: product, dossier, changelog, ledger, master knowledge, gaps,
+  portfolio/root changelog, dan sync status.
+
 ### SagaBook Sprint 3 staff branch-context candidate
 
 - Ringkasan: daftar staff sekarang mengikuti selector cabang global dan

@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-07 - SagaBook Sprint 3-4 tenant/branch exit gate
+
+- Source `4ee167ecbc95892a113c9036faada5de85994bb8` menambahkan runner
+  repeatable untuk tujuh slice tenant/cabang tanpa mengubah production.
+- Write/retry, report context, revocation, live refetch, delete recovery,
+  staff context, dan permission hardening lulus pada runtime/database disposable.
+- Runner 7/7, full backend 973/973, AI 44/44, build/typecheck/design, cleanup
+  0/0, serta npm/Composer/OSV nol advisory.
+- Status `LOCAL_VALIDATED / EXIT_GATE_ACCEPTED / IMPLEMENTED_NOT_DEPLOYED`;
+  release aktif tetap `20260806152606-0894df0`, dan pekerjaan lokal berikutnya
+  adalah S5-S6 paket/background/add-on/resource.
+
 ## 2026-08-07 - SagaBook Sprint 3 staff branch-context candidate
 
 - Source `22013fc0acb12b9c235454048154ed1e1206f732` menyelaraskan daftar

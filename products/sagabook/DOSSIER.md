@@ -238,6 +238,17 @@ nol advisory. Status `UIUX_VALIDATED / INTEGRATION_VALIDATED /
 LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; residual berikutnya adalah
 combined exit gate S3-S4 sebelum katalog S5-S6.
 
+Combined exit gate S3-S4 diterima lokal pada source
+`4ee167ecbc95892a113c9036faada5de85994bb8`. Runner mengisolasi tujuh profil
+untuk branch write/retry, report context, staff revocation, live refetch,
+delete recovery, staff context, dan shared hardening. Runner 7/7, harness 7/7,
+full backend 973/973 dengan 11.171 assertion, AI 44/44, build/typecheck/design,
+cleanup 0/0, serta npm/Composer/OSV nol advisory. Bukti viewport/zoom dan
+failure/security berasal dari slice yang dijalankan ulang terhadap API aktual
+dan database disposable. Status `LOCAL_VALIDATED / EXIT_GATE_ACCEPTED /
+IMPLEMENTED_NOT_DEPLOYED`; production tetap `20260806152606-0894df0`, dan
+vertical slice READY berikutnya berasal dari S5-S6 katalog.
+
 Tenant/cabang S124 pada source
 `f6988cb945c5ca224015d7fecbc94e81c535fc60` aktif sebagai release
 `20260806053037-f6988cb`; rollback `20260806043833-a912522`. Switch status
