@@ -218,6 +218,16 @@ tetap 403 dan target tenant lain 404 tanpa perubahan data. Statusnya
 IMPLEMENTED_NOT_DEPLOYED`; S6 `IN_PROGRESS`, production tetap release
 `20260806152606-0894df0`, dan jangan menyebut seluruh Add-on/resource selesai.
 
+Candidate SagaBook S148 source
+`2a3fe4c93955d1a588b663808c7c9464ded5ff01` menutup delete recovery Add-on
+secara lokal. Bila Add-on masih tersimpan pada riwayat booking, API memberi 409
+`addon_delete_blocked`, hitungan public-safe, dan recovery `Lihat booking`.
+Add-on, riwayat, dan audit tidak dihapus; Staff tetap 403 dan target tenant lain
+404 tanpa dependency leak. Statusnya `UIUX_VALIDATED / INTEGRATION_VALIDATED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; S6 tetap `IN_PROGRESS`, production
+tetap release `20260806152606-0894df0`, dan jangan menyebut seluruh
+Add-on/resource selesai.
+
 Candidate SagaBook Sprint 2 terbaru adalah source
 `bf1766ae84c352cf3687383ca31947a3e619f575`, belum production. UI rate-limit
 429, idle expiry per tab, dan kontrol staff untuk mengeluarkan perangkat lain

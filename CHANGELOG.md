@@ -12,6 +12,26 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-08
 
+### SagaBook Sprint 6 Add-on delete dependency recovery candidate
+
+- Ringkasan: penghapusan Add-on yang masih tersimpan pada riwayat booking kini
+  gagal aman dengan 409 terstruktur, hitungan dependensi, dan recovery ke daftar
+  Booking tanpa menghapus Add-on, riwayat, atau menulis audit sukses palsu.
+- Klasifikasi: `CONFIRMED`; source
+  `2a3fe4c93955d1a588b663808c7c9464ded5ff01`; status `UIUX_VALIDATED /
+  INTEGRATION_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; S6
+  `IN_PROGRESS`.
+- Gate: backend katalog 29/29 (159), browser 2/2 pada 390x844 dan 1440x900,
+  matriks desktop 1280x800 sampai 2560x1440, zoom 100/125/150/200,
+  forced-colors/reduced-motion, build, diff/syntax, npm audit, dan OSV Composer
+  nol advisory lulus. Composer Packagist timeout; OSV menjadi bukti pengganti
+  fresh yang hijau.
+- Production berubah: tidak. Release aktif tetap `20260806152606-0894df0`;
+  exit Add-on/resource serta rollback/previous symlink wajib ditutup sebelum
+  S21.
+- File knowledge: product, dossier, changelog, ledger, master knowledge, gaps,
+  portfolio/root changelog, dan sync status.
+
 ### SagaBook Sprint 6 Add-on stale-write recovery candidate
 
 - Ringkasan: editor Add-on yang menerima konflik 409 kini dapat memuat response

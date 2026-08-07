@@ -349,6 +349,21 @@ audit sebelum release. Status irisan `UIUX_VALIDATED / INTEGRATION_VALIDATED /
 LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; S6 tetap `IN_PROGRESS` dan
 production tetap `20260806152606-0894df0`.
 
+Vertical slice kedua S6 ditutup lokal pada source
+`2a3fe4c93955d1a588b663808c7c9464ded5ff01`. Delete Add-on yang masih
+direferensikan `booking_addons` kini menghasilkan 409 `addon_delete_blocked`,
+hitungan `Riwayat booking`, dan action hint ke daftar Booking. UI merender
+response aktual, menjaga klik ganda menjadi satu request, menyediakan retry
+aman serta link recovery 44 px, dan lulus keyboard/focus, forced-colors,
+reduced-motion, viewport 390x844 sampai 2560x1440, serta zoom 100-200 persen.
+Add-on, riwayat, dan audit tetap konsisten; Staff 403 dan tenant lain 404 tidak
+membocorkan dependensi. Backend katalog 29/29 (159), browser 2/2, build,
+diff/syntax, npm audit, dan OSV Composer nol advisory lulus. Composer Packagist
+timeout dicatat sebagai error provider audit, bukan advisory. Status
+`UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; S6 tetap `IN_PROGRESS`, production tetap
+`20260806152606-0894df0`, dan combined Add-on exit/resource masih residual.
+
 Tenant/cabang S124 pada source
 `f6988cb945c5ca224015d7fecbc94e81c535fc60` aktif sebagai release
 `20260806053037-f6988cb`; rollback `20260806043833-a912522`. Switch status

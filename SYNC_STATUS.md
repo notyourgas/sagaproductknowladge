@@ -12,14 +12,14 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-08T03:27:19+07:00 |
+| Waktu pembaruan terakhir | 2026-08-08T04:21:12+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `9c1fb58046f8dc2fef953776e52f83d23918fb3f` |
-| Informasi terakhir disinkronkan | SagaBook S147 source `0d962430`: recovery stale-write Add-on memakai response API aktual, retry GET tanpa POST stale, double-submit guard, serta staff/tenant negative; S6 `IN_PROGRESS` dan production tetap `20260806152606-0894df0`. |
+| Baseline sebelum pembaruan | `2e55ffbb5b67380754e82b2318796b5c9688aa51` |
+| Informasi terakhir disinkronkan | SagaBook S148 source `2a3fe4c9`: delete Add-on yang masih berada pada riwayat booking kini menghasilkan 409 terstruktur, dependency count, retry aman, dan recovery ke Booking tanpa menghapus data; S6 `IN_PROGRESS` dan production tetap `20260806152606-0894df0`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
 | Konflik | Tidak ada. Kontrak storefront mobile-only, subscription skip, urutan sprint, SagaView local-first, dan product boundary tetap konsisten. |
-| Error | OSV eksternal timeout dua kali saat menghubungi `api.osv.dev`, sehingga bukti OSV fresh belum tersedia; npm dan Composer audit nol advisory. Production tidak diubah. Rollback/previous symlink SagaBook tetap blocker S21. |
+| Error | Composer Packagist timeout pada audit online; npm dan OSV Composer audit fresh nol advisory. Production tidak diubah. Combined Add-on exit/resource serta rollback/previous symlink SagaBook tetap blocker S21. |
 
 ## File yang berubah pada sinkronisasi ini
 
@@ -34,6 +34,9 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `CHANGELOG.md`
 
 ## Sinkronisasi sebelumnya
+
+- SagaBook S147 source `0d962430` disinkronkan sebagai recovery stale-write
+  Add-on local-validated; S6 tetap `IN_PROGRESS` dan production tidak berubah.
 
 - SagaBook S146 source `ce537667` disinkronkan sebagai penutup S5
   `EXIT_GATE_ACCEPTED / LOCAL_VALIDATED`; production tetap tidak berubah.

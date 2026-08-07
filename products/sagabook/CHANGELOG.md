@@ -4,6 +4,29 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-08 - Sprint 6 Add-on delete dependency recovery candidate
+
+- Klasifikasi `CONFIRMED`; source
+  `2a3fe4c93955d1a588b663808c7c9464ded5ff01` pada branch
+  `codex/s148-sagabook-addon-delete-recovery`.
+- Before: delete Add-on yang masih dipakai hanya menghasilkan 409 generik dan
+  menyuruh operator menonaktifkan Add-on, padahal state tersebut tidak tersedia.
+  After: API memberi `addon_delete_blocked`, jumlah `Riwayat booking`, action
+  hint public-safe, dan UI menyediakan `Lihat booking`.
+- Add-on serta `booking_addons` tetap utuh, audit delete tidak dibuat, target
+  tenant lain tetap 404 tanpa dependency leak, dan Staff tetap 403. Klik ganda
+  menjadi satu request; retry kedua tetap gagal aman dan tidak menampilkan
+  sukses palsu.
+- Backend katalog 29/29 (159), browser 2/2, viewport 390x844 serta 1440x900,
+  desktop 1280x800 sampai 2560x1440, zoom 100/125/150/200,
+  forced-colors/reduced-motion, build, diff/syntax, npm audit, dan OSV Composer
+  nol advisory lulus. Composer Packagist timeout dicatat tanpa menurunkan gate
+  OSV fresh yang hijau.
+- Status `UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; S6 `IN_PROGRESS`. Production tetap
+  `20260806152606-0894df0`; berikutnya tutup combined Add-on CRUD exit lalu
+  mulai resource. Rollback/previous symlink tetap blocker S21.
+
 ## 2026-08-08 - Sprint 6 Add-on stale-write recovery candidate
 
 - Klasifikasi `CONFIRMED`; source

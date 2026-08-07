@@ -43,6 +43,13 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   permission/tenant boundary. Statusnya `UIUX_VALIDATED /
   INTEGRATION_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
   production dan aktivasi subscription tidak berubah.
+- Candidate lokal S148 source
+  `2a3fe4c93955d1a588b663808c7c9464ded5ff01` menutup delete dependency
+  recovery Add-on. Add-on yang masih tersimpan pada riwayat booking sekarang
+  menghasilkan 409 terstruktur, hitungan dependensi, dan recovery `Lihat
+  booking`; data serta audit tetap utuh. Status `UIUX_VALIDATED /
+  INTEGRATION_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; S6
+  tetap `IN_PROGRESS`, production dan aktivasi subscription tidak berubah.
 
 ## Ringkasan
 

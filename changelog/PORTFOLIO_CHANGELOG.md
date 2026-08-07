@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-08 - SagaBook Sprint 6 Add-on delete recovery candidate
+
+- Source `2a3fe4c93955d1a588b663808c7c9464ded5ff01` menutup gap delete
+  Add-on yang masih menjadi bagian riwayat booking tanpa mengubah production.
+- API mengembalikan 409 `addon_delete_blocked`, hitungan public-safe, serta
+  action hint ke Booking. UI menampilkan recovery `Lihat booking`; Add-on,
+  riwayat, dan audit tetap konsisten saat failure, retry, atau double-click.
+- Backend katalog 29/29, browser 2/2, viewport/zoom/a11y, build, npm audit, dan
+  OSV Composer nol advisory lulus. Staff 403 serta tenant lain 404 tidak
+  membocorkan dependensi.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; S6 `IN_PROGRESS`, release
+  aktif tetap `20260806152606-0894df0`, combined Add-on exit/resource serta
+  rollback/previous symlink masih residual.
+
 ## 2026-08-08 - SagaBook Sprint 6 Add-on stale-write recovery candidate
 
 - Source `0d962430177569eaa6e53b053eedacd6cee01ec7` menutup konflik
