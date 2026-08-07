@@ -239,6 +239,18 @@ IMPLEMENTED_NOT_DEPLOYED`. S6 keseluruhan masih `IN_PROGRESS` karena resource
 belum discreen. Production tetap release `20260806152606-0894df0`; jangan
 menyebut S6 selesai atau candidate ini production.
 
+Candidate SagaBook S150 source
+`ff3b2babe419337c9e29b4bac8b7f9d531c97659` menutup status/persistensi
+resource secara lokal. UI mobile tidak lagi memotong status/action; mutation
+memakai response API aktual dengan 503 retry, 409 reload, 422 editor recovery,
+dan double-submit guard. Backend menolak status di luar enum, menjaga
+transaction/lock-version/audit, menolak Staff, dan tidak memutasi resource
+tenant lain. Status irisan `UIUX_VALIDATED / INTEGRATION_VALIDATED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; S6 tetap `IN_PROGRESS` karena
+dependency/delete recovery, stale-write resource, dan combined exit belum
+selesai. Production tetap release `20260806152606-0894df0`; jangan menyebut
+candidate ini production atau S6 selesai.
+
 Candidate SagaBook Sprint 2 terbaru adalah source
 `bf1766ae84c352cf3687383ca31947a3e619f575`, belum production. UI rate-limit
 429, idle expiry per tab, dan kontrol staff untuk mengeluarkan perangkat lain

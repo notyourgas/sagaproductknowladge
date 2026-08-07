@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-08 - SagaBook Sprint 6 resource status/persistence candidate
+
+- Source `ff3b2babe419337c9e29b4bac8b7f9d531c97659` menutup irisan status dan
+  persistensi resource tanpa mengubah production.
+- Kartu mobile menggantikan tabel terpotong; aksi 44 piksel, feedback/retry,
+  guard double-submit, enum status, optimistic lock, audit, Staff 403, dan
+  tenant-negative lulus melalui API aktual serta database disposable.
+- Controller 32/32, kontrak payload/role/error 19/19, browser mobile/desktop 6/6
+  dan matrix 4/4, build, audit dependency, serta AI SagaBook regression hijau.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; S6 `IN_PROGRESS` dengan
+  dependency/delete recovery, stale-write resource, dan combined exit sebagai
+  residual. Release aktif tetap `20260806152606-0894df0`.
+
 ## 2026-08-08 - SagaBook Sprint 6 combined Add-on exit gate candidate
 
 - Source `239b193c70f30676702da492ece287a3ff1e8c9a` menggabungkan empat

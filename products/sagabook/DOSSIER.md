@@ -379,6 +379,23 @@ INTEGRATION_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; S6 secara
 keseluruhan tetap `IN_PROGRESS` sampai resource selesai. Production tetap
 `20260806152606-0894df0`.
 
+Status/persistensi resource ditutup lokal pada source
+`ff3b2babe419337c9e29b4bac8b7f9d531c97659`. Before: tabel mobile memotong
+kolom status/action, tombol hanya 28 piksel, error mutation hanya toast, klik
+ganda dapat mengirim dua request, dan backend menerima status arbitrer. After:
+kartu mobile menjaga seluruh data/aksi dalam satu alur, target minimum 44
+piksel serta label/focus aksesibel, response 503 memiliki retry inline, 409
+memuat dashboard terbaru, 422 membuka editor, dan ref sinkron menjaga satu
+mutation. Controller kini hanya menerima draft/published/unpublished/archived;
+transaksi, tenant-scoped row lock, optimistic `lock_version`, read-after-write,
+audit, Staff 403, dan tenant-negative lulus di SQLite disposable. Controller
+32/32 (176), payload/role/error 19/19 (286), browser mobile+desktop 6/6,
+extended desktop/zoom/a11y 4/4, build, npm/Composer audit, serta AI SagaBook
+44/44 (3.440) hijau. Status `UIUX_VALIDATED / INTEGRATION_VALIDATED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap
+`20260806152606-0894df0`, sedangkan dependency/delete recovery, stale-write
+resource, dan combined exit S6 masih residual.
+
 Tenant/cabang S124 pada source
 `f6988cb945c5ca224015d7fecbc94e81c535fc60` aktif sebagai release
 `20260806053037-f6988cb`; rollback `20260806043833-a912522`. Switch status

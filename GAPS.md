@@ -94,8 +94,11 @@ ketika keputusan atau release baru menutup gap.
   `239b193c` menggabungkan create/edit/delete, stale recovery, delete dependency,
   dan permission boundary dalam empat profil repeatable yang semuanya hijau.
   Komponen Add-on S6 kini `EXIT_GATE_ACCEPTED / LOCAL_VALIDATED`; S6 keseluruhan
-  tetap `IN_PROGRESS` karena resource belum discreen. npm, Composer Packagist,
-  dan OSV Composer audit fresh nol advisory. Health SagaBook read-only hijau,
+  tetap `IN_PROGRESS`. Candidate S150 `ff3b2bab` menutup status/persistensi
+  resource, termasuk UI mobile, retry, double-submit, enum validation, audit,
+  Staff 403, dan tenant-negative. Residual resource adalah dependency/delete
+  recovery, stale-write recovery, serta combined exit S6. npm dan Composer
+  audit fresh nol advisory. Health SagaBook read-only hijau,
   tetapi
   rollback/previous symlink production tidak ada dan wajib dipulihkan sebelum
   release immutable S21.

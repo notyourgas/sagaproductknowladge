@@ -12,6 +12,24 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-08
 
+### SagaBook Sprint 6 resource status/persistence candidate
+
+- Ringkasan: status resource kini utuh di mobile, menunggu response API aktual,
+  dapat pulih dari 503/409/422, mencegah mutation ganda, dan ditolak backend
+  bila di luar enum yang sah.
+- Klasifikasi: `CONFIRMED`; source
+  `ff3b2babe419337c9e29b4bac8b7f9d531c97659`; status `UIUX_VALIDATED /
+  INTEGRATION_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; S6
+  keseluruhan `IN_PROGRESS`.
+- Gate: controller 32/32 (176), kontrak payload/role/error 19/19 (286), browser
+  6/6 dan extended desktop 4/4, viewport/zoom/a11y, build, npm/Composer audit,
+  serta AI SagaBook 44/44 hijau.
+- Production berubah: tidak. Release aktif tetap `20260806152606-0894df0`;
+  dependency/delete recovery, stale-write resource, combined exit S6, dan
+  rollback/previous symlink masih residual.
+- File knowledge: product, dossier, changelog, ledger, master knowledge, gaps,
+  portfolio/root changelog, dan sync status.
+
 ### SagaBook Sprint 6 combined Add-on exit gate candidate
 
 - Ringkasan: empat profil repeatable kini mengikat Add-on create/edit/delete,

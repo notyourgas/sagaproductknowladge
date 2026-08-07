@@ -4,6 +4,27 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-08 - Sprint 6 resource status/persistence candidate
+
+- Klasifikasi `CONFIRMED`; source
+  `ff3b2babe419337c9e29b4bac8b7f9d531c97659` pada branch
+  `codex/s150-sagabook-resource-status`.
+- Before: tabel mobile memotong status/action, target aksi hanya 28 piksel,
+  failure mutation hanya toast, double-click dapat mengirim request ganda, dan
+  backend menerima status arbitrer. After: kartu mobile utuh, aksi 44 piksel,
+  feedback/retry inline, guard satu request, serta enum status tervalidasi.
+- UI -> frontend -> `POST /api/admin/upsertResourceFn` -> controller/service ->
+  transaksi/row lock `resources` -> audit -> `GET /api/admin/getDashboardData`
+  -> UI lulus untuk happy path, 503/retry, reload persistensi, invalid 422,
+  Staff 403, dan tenant-negative tanpa mutasi foreign.
+- Controller 32/32 (176), payload/role/error 19/19 (286), browser
+  mobile+desktop 6/6, extended desktop/zoom/a11y 4/4, build, npm/Composer nol
+  advisory, dan AI SagaBook 44/44 (3.440) lulus.
+- Status `UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; S6 tetap `IN_PROGRESS` sampai dependency/delete
+  recovery, stale-write resource, dan combined exit selesai. Production tetap
+  `20260806152606-0894df0`; rollback/previous symlink tetap residual S21.
+
 ## 2026-08-08 - Sprint 6 combined Add-on exit gate candidate
 
 - Klasifikasi `CONFIRMED`; source

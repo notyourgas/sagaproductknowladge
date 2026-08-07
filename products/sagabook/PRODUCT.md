@@ -59,6 +59,16 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
   IMPLEMENTED_NOT_DEPLOYED`; S6 keseluruhan tetap `IN_PROGRESS` karena resource
   belum discreen. Production dan aktivasi subscription tidak berubah.
+- Candidate lokal S150 source
+  `ff3b2babe419337c9e29b4bac8b7f9d531c97659` menutup status/persistensi
+  resource. Daftar mobile kini memakai kartu utuh dengan aksi 44 piksel;
+  publish/unpublish menunggu response API aktual, menangani 503/retry, 409
+  reload, 422 editor recovery, dan klik ganda satu request. Backend memvalidasi
+  enum status, optimistic lock, audit, capability, serta tenant isolation pada
+  database disposable. Status irisan `UIUX_VALIDATED / INTEGRATION_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; S6 tetap `IN_PROGRESS` sampai
+  dependency/delete recovery, stale-write resource, dan combined exit selesai.
+  Production dan aktivasi subscription tidak berubah.
 
 ## Ringkasan
 
