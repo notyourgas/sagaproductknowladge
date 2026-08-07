@@ -121,9 +121,13 @@ Candidate SagaBook Sprint 3 source
 mengubah role, status, identitas login, password, atau delegasi cabang staff,
 sesi lama dicabut melalui kenaikan `session_version` dan menerima 401
 `session_revoked`; login ulang hanya memperoleh cabang yang masih diizinkan.
-Ini menutup satu irisan tenant/cabang, bukan exit gate seluruh fitur. Stale
-refetch lintas tab, delete dependency/recovery, dan filter route lain masih
-residual.
+Candidate berikutnya `70a6aad76f3f86589473986c0e9fa3b26c5022c2` juga belum
+production. Mutation cabang yang sukses memberi sinyal public-safe ke tab lain,
+lalu tab tersebut mengambil response API aktual; sinyal tidak memuat tenant,
+user, booking, atau data operasional. Response lama diabaikan, focus/visibility
+memicu pemulihan, dan kegagalan offline menyediakan retry. Ini menutup dua
+irisan tenant/cabang, bukan exit gate seluruh fitur. Delete dependency/recovery
+dan filter cabang pada route lain masih residual.
 
 Candidate SagaBook Sprint 2 terbaru adalah source
 `bf1766ae84c352cf3687383ca31947a3e619f575`, belum production. UI rate-limit

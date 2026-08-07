@@ -197,6 +197,23 @@ Pint, npm audit, dan OSV Composer 114 paket/0 advisory lulus. Status irisan
 `UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
 IMPLEMENTED_NOT_DEPLOYED`; production tetap pada release sebelumnya.
 
+Candidate Sprint 3 berikutnya pada source
+`70a6aad76f3f86589473986c0e9fa3b26c5022c2` menyinkronkan perubahan cabang
+antar-tab tanpa membawa tenant, user, booking, atau data operasional dalam
+sinyal invalidasi. Tab pengamat langsung mengambil ulang response API
+terautentikasi; response yang lebih lama diabaikan, focus/visibility memulihkan
+state, dan kegagalan offline menampilkan retry tanpa sukses palsu. Browser UI
+owner -> mutation API -> backend/database disposable -> invalidasi -> refetch
+API -> response UI lulus pada 390x844 dan 1440x900, termasuk race response,
+offline/retry, keyboard/focus, target 44 piksel, forced-colors, reduced-motion,
+satu watermark, dan tanpa overflow. Full backend 970/970 dengan 11.145
+assertion, AI SagaBook 44/44, regresi cabang existing, build, design audit,
+dependency audit, Pint dirty, dan diff-check lulus. Status irisan
+`UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; production tetap pada release
+`20260806152606-0894df0`. Residual tenant/cabang adalah delete
+dependency/recovery dan filter cabang pada route lain.
+
 Tenant/cabang S124 pada source
 `f6988cb945c5ca224015d7fecbc94e81c535fc60` aktif sebagai release
 `20260806053037-f6988cb`; rollback `20260806043833-a912522`. Switch status

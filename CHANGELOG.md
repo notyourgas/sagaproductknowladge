@@ -12,6 +12,24 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-07
 
+### SagaBook Sprint 3 live refetch cabang lintas tab candidate
+
+- Ringkasan: mutation cabang yang sukses kini memicu refetch API aktual pada
+  tab admin lain; response request lama tidak boleh menimpa state terbaru dan
+  offline/focus/visibility recovery tersedia.
+- Alasan: menutup stale payload lintas tab tanpa membawa tenant, user, booking,
+  atau data operasional di dalam sinyal invalidasi.
+- Klasifikasi: `CONFIRMED`; source
+  `70a6aad76f3f86589473986c0e9fa3b26c5022c2`; status `UIUX_VALIDATED /
+  INTEGRATION_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: E2E 4/4 mobile/desktop, regresi cabang 5 pass/1 intentional skip,
+  focused backend 32/32, full backend 970/970, AI 44/44, build/design/Pint
+  dirty/diff, serta npm/Composer/OSV nol advisory lulus.
+- Production berubah: tidak. Release aktif `20260806152606-0894df0`; S3-S4
+  masih menunggu delete dependency/recovery dan filter cabang route lain.
+- File knowledge: product, dossier, changelog, ledger, master knowledge, gaps,
+  portfolio/root changelog, dan sync status.
+
 ### SagaBook Sprint 3 revokasi delegasi cabang staff candidate
 
 - Ringkasan: perubahan batas akses staff kini menaikkan versi sesi sehingga

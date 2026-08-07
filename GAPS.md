@@ -49,9 +49,12 @@ ketika keputusan atau release baru menutup gap.
   Candidate Sprint 3 `82a6f376998d8eb5778c6ccaac117a21a1ab8efd`
   sudah mencabut sesi stale ketika delegasi cabang/role/identitas staff berubah
   dan memuat ulang selector dari scope API setelah login ulang. Irisan ini
-  `LOCAL_VALIDATED` tetapi belum production. Residual tenant/cabang adalah
-  stale refetch lintas tab, delete dependency/recovery, serta filter cabang
-  pada route lain. Recovery response availability kosong,
+  `LOCAL_VALIDATED` tetapi belum production. Candidate berikutnya
+  `70a6aad76f3f86589473986c0e9fa3b26c5022c2` menutup stale refetch lintas tab
+  melalui sinyal invalidasi public-safe, API refetch aktual, race protection,
+  focus/visibility recovery, serta offline/retry. Irisan ini juga
+  `LOCAL_VALIDATED` dan belum production. Residual tenant/cabang adalah delete
+  dependency/recovery serta filter cabang pada route lain. Recovery response availability kosong,
   initial-load manual transfer, dan aksi Payment Monitor sudah production pada
   S128-S130. Residual payment/report adalah QRIS/provider nyata,
   pagination/filter/export, reconciliation provider, stale multi-tab, dan

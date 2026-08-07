@@ -244,7 +244,15 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
   menaikkan `session_version`, sehingga sesi lama menerima 401
   `session_revoked`. Setelah login ulang, selector hanya merender cabang yang
   masih diizinkan dari response API aktual. Irisan ini tervalidasi lokal dan
-  belum production.
+  belum production. Candidate berikutnya pada source
+  `70a6aad76f3f86589473986c0e9fa3b26c5022c2` menutup stale payload lintas tab:
+  mutation cabang yang sukses mengirim sinyal invalidasi public-safe tanpa
+  tenant, user, booking, atau data operasional; tab lain kemudian mengambil
+  ulang response API terautentikasi. Response lama tidak boleh menimpa response
+  baru, focus/visibility memicu recovery, dan state offline menyediakan retry.
+  Irisan ini `UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; delete dependency/recovery dan filter cabang pada
+  route lain tetap residual.
 - Report branch context S125 aktif pada source
   `cb8ef55a33ad1399c9383d027343a412752fc9ff`, release immutable
   `20260806063717-cb8ef55`, dengan rollback `20260806053037-f6988cb`.

@@ -1,5 +1,22 @@
 # Portfolio Changelog
 
+## 2026-08-07 - SagaBook Sprint 3 live branch refetch candidate
+
+- Source `70a6aad76f3f86589473986c0e9fa3b26c5022c2` pada branch
+  `codex/s137-sagabook-branch-live-refetch` menutup stale payload lintas tab
+  tanpa mengubah production.
+- Mutation cabang yang sukses memberi sinyal public-safe; tab lain mengambil
+  ulang API aktual, response lama diabaikan, dan offline/focus/visibility
+  recovery tersedia. Sinyal tidak membawa tenant, user, booking, atau data
+  operasional.
+- UI aktual 390x844 dan 1440x900 lulus 4/4, termasuk race response,
+  offline/retry, keyboard/focus, target 44 px, forced-colors, reduced-motion,
+  satu watermark, dan tanpa overflow. Regresi cabang existing 5 pass/1 skip,
+  full backend 970/970, AI 44/44, build, design, dan audit dependency lulus.
+- Status `UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Release aktif tetap
+  `20260806152606-0894df0`; deploy menunggu S21 dan S3-S4 belum exit gate.
+
 ## 2026-08-07 - SagaBook Sprint 3 stale branch-access revocation candidate
 
 - Source `82a6f376998d8eb5778c6ccaac117a21a1ab8efd` pada branch

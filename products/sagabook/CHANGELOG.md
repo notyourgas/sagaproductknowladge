@@ -4,6 +4,27 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-07 - Sprint 3 live refetch cabang lintas tab candidate
+
+- Klasifikasi: `CONFIRMED`; source
+  `70a6aad76f3f86589473986c0e9fa3b26c5022c2` pada branch
+  `codex/s137-sagabook-branch-live-refetch`; status `UIUX_VALIDATED /
+  INTEGRATION_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- Before: tab admin lain dapat mempertahankan payload cabang lama sampai polling
+  berikutnya, dan response request lama dapat menimpa response yang lebih baru.
+  After: mutation cabang yang sukses memberi sinyal invalidasi public-safe,
+  pengamat mengambil ulang API terautentikasi, latest-request guard mengabaikan
+  response lama, dan focus/visibility serta retry memulihkan state.
+- Sinyal tidak memuat tenant, user, booking, atau data operasional; sesi dan
+  capability setiap tab tetap menjadi batas akses saat refetch API.
+- E2E live-refetch 4/4 dan regresi cabang existing 5 pass/1 intentional skip
+  lulus pada 390x844 dan 1440x900. Full backend 970/970 (11.145), focused
+  backend 32/32 (296), AI 44/44 (3.440), build, design 26/0, npm/Composer/OSV
+  nol advisory, Pint dirty, dan diff-check lulus.
+- Production tidak berubah: source/release aktif tetap `0894df00` /
+  `20260806152606-0894df0`; deploy ditahan sampai S21. Next action: delete
+  dependency/recovery, lalu filter cabang pada route lain.
+
 ## 2026-08-07 - Sprint 3 revokasi delegasi cabang staff candidate
 
 - Klasifikasi: `CONFIRMED`; source

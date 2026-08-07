@@ -12,14 +12,14 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-07T15:27:28+07:00 |
+| Waktu pembaruan terakhir | 2026-08-07T16:30:06+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `d5f3b4b55bc1be70860d248c6db76d16ad7041be` |
-| Informasi terakhir disinkronkan | SagaBook Sprint 3 revokasi sesi saat batas akses staff/cabang berubah pada source `82a6f376998d8eb5778c6ccaac117a21a1ab8efd`; irisan tervalidasi lokal dan production tidak berubah. |
+| Baseline sebelum pembaruan | `0276f0e105cc09b6264b7a1f2daef29accb8d066` |
+| Informasi terakhir disinkronkan | SagaBook Sprint 3 live refetch cabang lintas tab pada source `70a6aad76f3f86589473986c0e9fa3b26c5022c2`; irisan tervalidasi lokal dan production tidak berubah. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
 | Konflik | Tidak ada konflik fakta runtime SagaBook atau SagaView. Status candidate lokal, production aktif, activation, dan business readiness dipisahkan. |
-| Error | Tidak ada error sinkronisasi. Regresi penuh serial SagaBook lulus 970/970; dependency audit OSV Packagist 114 paket/0 advisory. Authenticated Owner UAT kategori dengan harga berbeda tetap residual SagaView S139. |
+| Error | Tidak ada error sinkronisasi. SagaBook live-refetch 4/4, regresi cabang 5 pass/1 intentional skip, full backend 970/970, AI 44/44, dan dependency audit nol advisory lulus. Authenticated Owner UAT kategori dengan harga berbeda tetap residual SagaView S139. |
 
 ## File yang berubah pada sinkronisasi ini
 
@@ -46,9 +46,11 @@ Ledger integrasi SagaBook dan SagaView masih bertahap. Auth/session SagaBook
 S123, status/write cabang S124, dan branch-context `/admin/reports` S125 sudah
 `INTEGRATION_VALIDATED`. Candidate Sprint 3 source `82a6f376` mencabut sesi
 stale ketika batas akses staff/cabang berubah dan memuat ulang selector dari
-scope API setelah login ulang. Residual tenant/cabang adalah stale refetch
-lintas tab, delete dependency/recovery, serta filter cabang pada route lain. Recovery response
-availability kosong, initial-load manual transfer, dan aksi Payment Monitor
+scope API setelah login ulang. Candidate berikutnya `70a6aad7` menutup stale
+refetch lintas tab melalui sinyal public-safe, API refetch aktual, race
+protection, focus/visibility recovery, dan offline/retry. Residual
+tenant/cabang adalah delete dependency/recovery serta filter cabang pada route
+lain. Recovery response availability kosong, initial-load manual transfer, dan aksi Payment Monitor
 S128-S130 sudah production. Residual payment/report adalah QRIS/provider nyata,
 pagination/filter/export, reconciliation provider, stale multi-tab, dan
   closing concurrency. UI rate-limit 429, expiry idle per tab, revocation
@@ -57,7 +59,8 @@ sudah `LOCAL_VALIDATED`; Sprint 2 exit gate diterima lokal. Source belum
 production dan deploy tetap ditahan sampai S21. Status
 `INTEGRATION_VALIDATED` hanya diberikan per irisan setelah happy path, failure/retry,
 permission/tenant-negative, dan data integrity fitur terkait memiliki bukti
-fresh. Prioritas berikutnya: tutup tenant/cabang route lain lalu katalog;
+fresh. Prioritas berikutnya: tutup delete dependency/recovery, lanjutkan filter
+cabang route lain, lalu lakukan exit gate S3-S4 sebelum katalog;
 SagaView auth/device/session, local ingest, lalu session flow dengan no-upload
 guarantee.
 
