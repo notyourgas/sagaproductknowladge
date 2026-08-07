@@ -12,6 +12,20 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-07
 
+### SagaBook Sprint 3 branch-delete recovery candidate
+
+- Ringkasan: cabang terkait kini diblokir aman dengan hitungan dependensi dan
+  recovery UI; cabang bebas terhapus tepat sekali melalui transaksi tenant-safe.
+- Klasifikasi: `CONFIRMED`; source `4606c5c594b29a4d3075617d01ffed5014d785d1`;
+  status `UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: backend 20/20 (85), Playwright 4/4 mobile/desktop, shared CRUD 8/8,
+  typecheck/build, npm 0 vulnerability, Composer cache nol advisory.
+- Production berubah: tidak. Fresh OSV timeout dua kali; filter cabang route
+  lain dan OSV terbaru tetap residual sebelum exit gate S3-S4.
+- File knowledge: product, dossier, changelog, ledger, master knowledge, gaps,
+  portfolio/root changelog, dan sync status.
+
 ### SagaBook Sprint 3 live refetch cabang lintas tab candidate
 
 - Ringkasan: mutation cabang yang sukses kini memicu refetch API aktual pada

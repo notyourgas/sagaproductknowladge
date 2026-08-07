@@ -126,8 +126,12 @@ production. Mutation cabang yang sukses memberi sinyal public-safe ke tab lain,
 lalu tab tersebut mengambil response API aktual; sinyal tidak memuat tenant,
 user, booking, atau data operasional. Response lama diabaikan, focus/visibility
 memicu pemulihan, dan kegagalan offline menyediakan retry. Ini menutup dua
-irisan tenant/cabang, bukan exit gate seluruh fitur. Delete dependency/recovery
-dan filter cabang pada route lain masih residual.
+irisan tenant/cabang, bukan exit gate seluruh fitur. Candidate terbaru
+`4606c5c594b29a4d3075617d01ffed5014d785d1` menutup delete
+dependency/recovery: cabang terkait diblokir aman dengan detail hitungan dan
+arah pemulihan, foreign-tenant/missing ID tidak membocorkan dependensi, dan
+penghapusan cabang bebas tercatat tepat sekali. Candidate ini belum production.
+Filter cabang route lain dan fresh OSV audit masih residual.
 
 Candidate SagaBook Sprint 2 terbaru adalah source
 `bf1766ae84c352cf3687383ca31947a3e619f575`, belum production. UI rate-limit

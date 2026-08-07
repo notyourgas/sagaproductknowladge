@@ -253,6 +253,13 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
   Irisan ini `UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
   IMPLEMENTED_NOT_DEPLOYED`; delete dependency/recovery dan filter cabang pada
   route lain tetap residual.
+  Candidate terbaru source `4606c5c594b29a4d3075617d01ffed5014d785d1`
+  menutup delete dependency/recovery: cabang yang masih dipakai tidak ikut
+  menghapus data terkait, UI menampilkan hitungan dependensi dan arah
+  pemulihan, sedangkan cabang bebas dapat dihapus tepat sekali. Foreign-tenant
+  atau ID hilang menghasilkan 404 tanpa dependency leak/audit dan staff
+  ditolak 403. Irisan ini tervalidasi lokal, belum production; filter cabang
+  route lain dan fresh OSV advisory audit tetap residual.
 - Report branch context S125 aktif pada source
   `cb8ef55a33ad1399c9383d027343a412752fc9ff`, release immutable
   `20260806063717-cb8ef55`, dengan rollback `20260806053037-f6988cb`.

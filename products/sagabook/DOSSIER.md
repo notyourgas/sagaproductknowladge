@@ -214,6 +214,18 @@ IMPLEMENTED_NOT_DEPLOYED`; production tetap pada release
 `20260806152606-0894df0`. Residual tenant/cabang adalah delete
 dependency/recovery dan filter cabang pada route lain.
 
+Candidate Sprint 3 source `4606c5c594b29a4d3075617d01ffed5014d785d1`
+menutup delete dependency/recovery pada `/admin/branches`. UI merender response
+409 aktual sebagai daftar hitungan public-safe dan tautan pemulihan, menangani
+offline/retry, mencegah double-submit sinkron, serta mengembalikan fokus ke aksi
+aman. Backend mengunci record tenant di dalam transaksi sebelum memeriksa
+dependensi; foreign-tenant/missing ID 404 tanpa leak/audit, staff 403, dan
+penghapusan cabang bebas menghasilkan satu audit serta read-after-reload yang
+konsisten. Browser 4/4 mobile/desktop, regresi CRUD 8/8, backend 20/20, typecheck,
+build, dan npm audit lulus. Composer cache tidak menemukan advisory, tetapi
+fresh OSV timeout dua kali; status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+Residual tenant/cabang kini filter cabang route lain dan audit OSV terbaru.
+
 Tenant/cabang S124 pada source
 `f6988cb945c5ca224015d7fecbc94e81c535fc60` aktif sebagai release
 `20260806053037-f6988cb`; rollback `20260806043833-a912522`. Switch status

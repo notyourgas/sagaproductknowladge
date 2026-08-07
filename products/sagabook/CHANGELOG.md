@@ -4,6 +4,24 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-07 - Sprint 3 branch-delete dependency recovery candidate
+
+- Klasifikasi `CONFIRMED`; source `4606c5c594b29a4d3075617d01ffed5014d785d1`
+  pada branch `codex/s138-sagabook-branch-delete-recovery`.
+- Before: dialog mengisyaratkan data terkait mungkin ikut hilang dan tidak
+  memberi detail 409/offline/retry. After: dependensi tampil sebagai hitungan
+  public-safe dengan recovery links, kontrol 44 px, fokus aman, retry, dan
+  double-submit guard.
+- Backend memakai transaction dan tenant-scoped row lock; foreign tenant atau
+  ID hilang 404 tanpa dependency leak/audit, staff 403, delete bebas 200 dengan
+  satu audit dan read-after-reload konsisten.
+- Backend 20/20 (85), Playwright 4/4 mobile/desktop, shared CRUD 8/8,
+  TypeScript/build dan npm audit lulus. Composer cache nol advisory; fresh OSV
+  timeout dua kali.
+- Status `UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap `20260806152606-0894df0`.
+  Next: filter cabang route lain dan ulang audit OSV terbaru.
+
 ## 2026-08-07 - Sprint 3 live refetch cabang lintas tab candidate
 
 - Klasifikasi: `CONFIRMED`; source

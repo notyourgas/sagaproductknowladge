@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-07 - SagaBook Sprint 3 branch-delete recovery candidate
+
+- Source `4606c5c594b29a4d3075617d01ffed5014d785d1` menutup penghapusan
+  cabang aman tanpa mengubah production.
+- UI menampilkan hitungan dependensi/recovery, offline/retry, fokus aman, dan
+  double-submit guard; backend tenant-safe menghasilkan 409/404/403/200 yang
+  sesuai serta satu audit untuk delete sukses.
+- Backend 20/20, Playwright 4/4 mobile/desktop, shared CRUD 8/8, typecheck,
+  build, dan npm audit hijau. Fresh OSV timeout dua kali.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; release aktif tetap
+  `20260806152606-0894df0` dan exit gate S3-S4 belum selesai.
+
 ## 2026-08-07 - SagaBook Sprint 3 live branch refetch candidate
 
 - Source `70a6aad76f3f86589473986c0e9fa3b26c5022c2` pada branch
