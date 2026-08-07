@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-08 - SagaBook Sprint 5 background delete recovery candidate
+
+- Source `b9aeb7c9f2bf5205f3a740551530362447d5e9ed` menutup irisan delete
+  dependency/recovery Background tanpa mengubah production.
+- Backend menghitung relasi paket dan riwayat booking secara public-safe,
+  mengembalikan 409 `background_delete_blocked`, mempertahankan data, dan tidak
+  menulis audit sukses; UI memberi recovery `Atur paket` tanpa request ganda.
+- Full backend 974/974, focused backend 27/27, S141-S144 browser 9 pass/1
+  intentional skip, CRUD/hardening 16/16, AI 38/38, build/design, Pint, dan
+  audit dependency lulus.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; release aktif tetap
+  `20260806152606-0894df0`. Berikutnya state Background lain dan exit gate S5;
+  S6 belum dimulai.
+
 ## 2026-08-08 - SagaView S141 bulk frame management candidate
 
 - `DEC-061` menetapkan mode pilih banyak, edit nama/kategori/harga/status, lalu

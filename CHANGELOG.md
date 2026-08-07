@@ -12,6 +12,22 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-08
 
+### SagaBook Sprint 5 background delete dependency recovery candidate
+
+- Ringkasan: delete Background yang masih terhubung paket atau booking kini
+  gagal aman dengan 409 terstruktur, hitungan dependensi, dan recovery ke menu
+  Paket tanpa menghapus data atau membuat sukses palsu.
+- Klasifikasi: `CONFIRMED`; source
+  `b9aeb7c9f2bf5205f3a740551530362447d5e9ed`; status `UIUX_VALIDATED /
+  INTEGRATION_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: focused backend 27/27 (255), full backend 974/974 (11.202), browser
+  S141-S144 9 pass/1 intentional skip, CRUD/hardening 16/16, AI 38/38 (219),
+  build/design 26/0, Pint/diff/cleanup, dan audit dependency nol advisory.
+- Production berubah: tidak. Release aktif tetap `20260806152606-0894df0`;
+  state Background lain dan exit gate S5 masih residual, S6 belum dimulai.
+- File knowledge: product, dossier, changelog, ledger, master knowledge, gaps,
+  portfolio/root changelog, dan sync status.
+
 ### SagaView S141 bulk frame management candidate
 
 - Ringkasan: Owner memilih sampai 100 frame, menyiapkan perubahan nama,

@@ -73,8 +73,13 @@ ketika keputusan atau release baru menutup gap.
   menghitung penggunaan booking dan relasi background, mengembalikan 409
   public-safe, serta mempertahankan paket tanpa audit sukses; UI memberi
   recovery ke Background dan mencegah double-submit. Irisan ini juga
-  `LOCAL_VALIDATED` dan belum production. Residual S5 adalah coverage
-  background dan combined exit gate; S6 add-on/resource belum dimulai.
+  `LOCAL_VALIDATED` dan belum production. Candidate `b9aeb7c9` kemudian
+  menutup irisan delete dependency/recovery Background: relasi paket dan
+  riwayat booking dihitung public-safe, 409 mempertahankan data tanpa audit
+  sukses, serta UI memberi recovery ke Paket dan mencegah double-submit.
+  Irisan ini `LOCAL_VALIDATED` dan belum production. Residual S5 adalah
+  coverage state Background lain dan combined exit gate; S6 add-on/resource
+  belum dimulai.
   Recovery response availability kosong,
   initial-load manual transfer, dan aksi Payment Monitor sudah production pada
   S128-S130. Residual payment/report adalah QRIS/provider nyata,

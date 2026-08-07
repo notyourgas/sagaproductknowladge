@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 7 Agustus 2026 23:24 WIB
+Updated: 8 Agustus 2026 00:26 WIB
 Evidence status: production + source verified
 
 ## Tujuan dokumen
@@ -299,6 +299,16 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
   menjadi satu request. Irisan ini `UIUX_VALIDATED / INTEGRATION_VALIDATED /
   LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; coverage Background dan exit
   gate S5 tetap residual, S6 belum dimulai, dan production tidak berubah.
+  Candidate berikutnya source
+  `b9aeb7c9f2bf5205f3a740551530362447d5e9ed` menutup irisan pertama
+  Background: penghapusan yang masih mempunyai relasi paket atau riwayat
+  booking kini menghasilkan 409 `background_delete_blocked`, hitungan
+  dependensi public-safe, dan arahan recovery ke menu Paket. Background tetap
+  tersimpan tanpa audit sukses palsu; UI menampilkan `Background belum dihapus`,
+  mencegah request ganda, serta memberi aksi aksesibel `Atur paket`. Irisan ini
+  `UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; coverage Background dan exit gate S5 belum
+  selesai, S6 belum dimulai, dan production tidak berubah.
 - Report branch context S125 aktif pada source
   `cb8ef55a33ad1399c9383d027343a412752fc9ff`, release immutable
   `20260806063717-cb8ef55`, dengan rollback `20260806053037-f6988cb`.

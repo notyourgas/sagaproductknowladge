@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 7 Agustus 2026 23:24 WIB
+- Updated: 8 Agustus 2026 00:26 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED` untuk workflow yang tercantum di
   [PRODUCT](PRODUCT.md)
@@ -286,6 +286,20 @@ cleanup lulus. Status `UIUX_VALIDATED / INTEGRATION_VALIDATED /
 LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap
 `20260806152606-0894df0`. Coverage Background dan exit gate S5 belum selesai;
 S6 belum dimulai.
+
+Vertical slice Background pertama S5 ditutup lokal pada source
+`b9aeb7c9f2bf5205f3a740551530362447d5e9ed`. Delete Background yang masih
+terhubung paket atau riwayat booking sekarang gagal aman dengan 409
+`background_delete_blocked`, dua jenis hitungan dependensi public-safe, dan
+petunjuk recovery ke menu Paket. Transaksi memakai tenant-scoped row lock;
+record, pivot, dan riwayat tetap utuh serta audit sukses tidak dibuat pada
+failure. UI merender response aktual, memberi target 44 piksel `Atur paket`,
+label screen-reader, fokus keyboard, forced-colors/reduced-motion, retry, dan
+double-submit guard. Full backend 974/974, browser focused/regression serta
+CRUD/hardening, AI SagaBook, build/design, Pint/diff, dan audit dependency
+lulus. Status `UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; production tetap `20260806152606-0894df0`.
+Coverage Background dan exit gate S5 belum selesai; S6 belum dimulai.
 
 Tenant/cabang S124 pada source
 `f6988cb945c5ca224015d7fecbc94e81c535fc60` aktif sebagai release

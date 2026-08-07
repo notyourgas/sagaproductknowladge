@@ -12,29 +12,32 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-08T00:09:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-08T00:26:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `5deef28b061158aab296b82c18343671831066f9` |
-| Informasi terakhir disinkronkan | SagaView S141 source `369f0114`: manajemen nama/kategori/harga/status sampai 100 frame dan satu `Simpan semua` sudah local-validated, tetapi belum dideploy; runtime production tetap S140. |
+| Baseline sebelum pembaruan | `959f36778dc96c64fbf8d56a1771bff6a7dc6a3b` |
+| Informasi terakhir disinkronkan | SagaBook S144 source `b9aeb7c9`: recovery delete Background dengan 409 terstruktur, hitungan paket/booking, dan aksi ke Paket sudah local-validated, tetapi belum dideploy; runtime production tetap `20260806152606-0894df0`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik dengan `DEC-057`; perubahan kategori S141 tetap mereset override lama kecuali Owner memilih harga khusus baru. |
-| Error | Tidak ada error gate lokal S141. Production/release gate belum dijalankan dan sengaja tidak diklaim. |
+| Konflik | Tidak ada. Kontrak storefront mobile-only, urutan sprint, subscription skip, dan runtime production tidak berubah. |
+| Error | Tidak ada error gate lokal S144. Production/release gate belum dijalankan dan sengaja tidak diklaim. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/sagaview/PRODUCT.md`
-- `products/sagaview/DOSSIER.md`
-- `products/sagaview/CHANGELOG.md`
-- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
-- `DECISIONS.md`
 - `GAPS.md`
 - `SYNC_STATUS.md`
 - `CHANGELOG.md`
 
 ## Sinkronisasi sebelumnya
+
+- SagaView S141 bulk frame management candidate pada source `369f0114`
+  disinkronkan sebagai `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; runtime
+  production tetap S140.
 
 - `products/sagabook/PRODUCT.md`
 - `products/sagabook/DOSSIER.md`

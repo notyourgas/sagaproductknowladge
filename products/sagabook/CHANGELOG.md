@@ -4,6 +4,26 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-08 - Sprint 5 background delete dependency recovery candidate
+
+- Klasifikasi `CONFIRMED`; source
+  `b9aeb7c9f2bf5205f3a740551530362447d5e9ed` pada branch
+  `codex/s144-sagabook-background-delete-recovery`.
+- Before: delete Background yang masih terkait hanya menghasilkan pesan 409
+  generik. After: backend mengembalikan `background_delete_blocked`, hitungan
+  relasi paket dan riwayat booking, serta action hint public-safe tanpa
+  menghapus data atau menulis audit sukses.
+- UI menampilkan `Background belum dihapus`, daftar dependensi, aksi 44 px
+  `Atur paket`, label screen-reader, fokus keyboard, forced-colors,
+  reduced-motion, retry, dan double-submit guard.
+- Focused backend 27/27 (255), full backend 974/974 (11.202), S141-S144 browser
+  9 pass/1 intentional skip, CRUD/hardening 16/16, AI 38/38 (219), build,
+  design 26/0, Pint/diff/cleanup, serta npm/Composer/OSV nol advisory.
+- Status `UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap `20260806152606-0894df0`.
+  Next: lanjutkan state Background lain dan combined exit gate S5; jangan
+  mulai S6 atau deploy.
+
 ## 2026-08-07 - Sprint 5 package delete dependency recovery candidate
 
 - Klasifikasi `CONFIRMED`; source
