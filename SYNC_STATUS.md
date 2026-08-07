@@ -12,23 +12,19 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-07T08:20:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-07T09:30:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `71217c4193c6c3d394c1556bf759c51a8d1d6802` |
-| Informasi terakhir disinkronkan | SagaView S137 cloud bootstrap recovery pada backend `d7542fdc` / `20260807010717-d7542fd` dan Studio `05c5fda0` / `20260807010718-05c5fda`; delivery dan activation `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`, business readiness `NEEDS CONFIRMATION`. |
+| Baseline sebelum pembaruan | `2053ff93c6c8cfa8e554e6561071516985b3c23e` |
+| Informasi terakhir disinkronkan | SagaBook Sprint 1 test harness candidate pada source `14ad88cc`; runner loopback per run terisolasi, race port ditutup, dan dependency audit kembali nol. Production tetap source `0894df00` / release `20260806152606-0894df0`; SagaView S137 dari baseline tetap aktif tanpa perubahan. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik fakta S137. Status delivery, activation, dan business readiness tetap dipisahkan. |
-| Error | Tidak ada error sinkronisasi. Authenticated Owner UAT pada akun terdampak, Batch Import, serta error/retry nyata tetap residual S137. |
+| Konflik | Tidak ada konflik fakta runtime SagaBook atau SagaView S137. Status local candidate, production aktif, activation, dan business readiness dipisahkan. |
+| Error | Tidak ada error sinkronisasi. Sprint 2 auth/session dan authenticated UAT/provider/reconciliation/pilot tetap residual SagaBook; authenticated Owner UAT tetap residual SagaView S137. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/sagaview/PRODUCT.md`
-- `products/sagaview/DOSSIER.md`
-- `products/sagaview/CHANGELOG.md`
-- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
-- `CHATGPT_MASTER_KNOWLEDGE.md`
-- `GAPS.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHANGELOG.md`
 - `SYNC_STATUS.md`

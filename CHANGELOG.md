@@ -12,6 +12,23 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-07
 
+### SagaBook Sprint 1 demo tenant dan test harness terisolasi
+
+- Ringkasan: seluruh script visual/E2E utama memakai runner loopback dengan
+  database, session, upload temp, run ID, dan port unik; remote base URL serta
+  path keluar worktree ditolak.
+- Klasifikasi: `CONFIRMED`; source candidate
+  `14ad88cc26aad1ebe90e60e46827bec618ed44a3`; status
+  `INTEGRATION_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: unit harness 8/8, dua/empat run Playwright paralel, full backend
+  964/964 dengan 11.079 assertion, build, cleanup run/lock, npm audit nol, dan
+  Composer audit nol setelah `league/commonmark 2.9.0`.
+- Production berubah: tidak. Production SagaBook tetap source `0894df00` /
+  release `20260806152606-0894df0`; tidak ada mutasi UI, API bisnis, migration,
+  subscription, payment, tenant, atau data customer.
+- File knowledge: ledger dan changelog SagaBook, portfolio/root changelog,
+  serta sync status. Next action: Sprint 2 auth/session.
+
 ### SagaView S137 cloud bootstrap recovery production
 
 - Ringkasan: Owner legacy yang sah tetapi belum memiliki membership workspace

@@ -1,5 +1,22 @@
 # Portfolio Changelog
 
+## 2026-08-07 - SagaBook Sprint 1 test harness candidate
+
+- Source `14ad88cc26aad1ebe90e60e46827bec618ed44a3` pada branch
+  `codex/s132-sagabook-harness-security` mengisolasi SQLite, session, upload
+  temp, dan pasangan port loopback per run serta menolak remote base URL dan
+  path keluar worktree.
+- Unit harness 8/8, dua/empat run Playwright paralel, full backend 964/964
+  dengan 11.079 assertion, build, cleanup artefak/lock, serta npm/Composer audit
+  lulus. `league/commonmark` dinaikkan dari 2.8.2 ke 2.9.0 untuk menutup enam
+  advisory baseline.
+- Status `INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production SagaBook tidak berubah dari source
+  `0894df00` / release `20260806152606-0894df0`. Tidak ada perubahan UI,
+  subscription, payment, tenant, atau data customer.
+- Sprint berikutnya adalah auth/session; screenshot dan matriks viewport/zoom
+  diterapkan pada vertical slice UI tersebut, bukan diklaim pada batch tooling.
+
 ## 2026-08-07 - SagaView S137 cloud bootstrap recovery production
 
 - Backend `d7542fdc51dae66763057d2ac9d847c68d6dec1f` aktif sebagai release

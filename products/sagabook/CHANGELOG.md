@@ -4,6 +4,32 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-07 - Sprint 1 demo tenant dan test harness terisolasi
+
+- Klasifikasi: `CONFIRMED`; source candidate
+  `14ad88cc26aad1ebe90e60e46827bec618ed44a3` pada branch
+  `codex/s132-sagabook-harness-security`; status `INTEGRATION_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- Before: perintah visual/E2E umum berbagi SQLite, session file, upload temp,
+  dan port default sehingga run paralel dapat saling mereset atau bertabrakan.
+  After: setiap run memakai ID, database, session database, upload temp, serta
+  pasangan port loopback unik; inherited remote base URL diabaikan dan path
+  keluar worktree ditolak.
+- Race pemilihan port yang muncul pada acceptance paralel ditutup dengan lock
+  lintas proses dan cleanup fail-safe. Gate akhir: unit harness 8/8, dua dan
+  empat run Playwright paralel hijau dengan artefak/lock tersisa 0, full backend
+  964/964 dengan 11.079 assertion, serta build lulus.
+- Audit baseline menemukan empat advisory high dan dua medium pada
+  `league/commonmark 2.8.2`; lock source dinaikkan ke 2.9.0 bersama
+  `nette/utils 4.1.5`. Composer dan npm production audit kini nol advisory.
+- Tidak ada perubahan UI, API bisnis, migration produk, tenant, subscription,
+  payment, data customer, atau production. Screenshot before/after tidak
+  berlaku untuk batch tooling ini. Production tetap source `0894df00` dan
+  release `20260806152606-0894df0` sampai release gate roadmap dijalankan.
+- Next action: Sprint 2 auth/session memakai harness ini dan menutup idle
+  expiry, revocation lintas device, serta UI rate-limit 429 tanpa mengaktifkan
+  subscription tenant.
+
 ## 2026-08-07 - Recovery availability dan payment production S127-S130
 
 - Klasifikasi: `CONFIRMED`; source kumulatif
