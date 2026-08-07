@@ -641,6 +641,24 @@ tenant/device-negative, metadata-only/no-upload, backup/restore,
 candidate+rollback rehearsal, deploy/post-preflight 6/6, canary/preservation,
 dan smoke publik lulus. Jangan menyebut S136 `PRODUCTION_ACTIVATED` atau
 `BUSINESS_READY` sebelum authenticated UAT dan keputusan activation selesai.
+
+S137 cloud bootstrap recovery sudah
+`PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Backend source/release
+`d7542fdc51dae66763057d2ac9d847c68d6dec1f` /
+`20260807010717-d7542fd`; Studio source/release
+`05c5fda07a342d2977d8e6e3d836adb17a84605b` /
+`20260807010718-05c5fda`; rollback S136 dipertahankan. Owner legacy yang sah
+tetapi belum mempunyai membership workspace kini mendapat pemulihan
+transactional/idempotent hanya bila Staff aktif, tenant sama, role legacy
+dikenali, dan subscription SagaView tersedia. Membership eksplisit nonaktif
+tetap ditolak. UI membedakan loading, aktif, nonaktif, dan gagal serta memberi
+pesan tindakan dan `Coba lagi`, sehingga `Memuat cloud` tidak lagi menutupi
+error. Full regression 935 test/11.101 assertion dan seluruh gate guarded
+release lulus. Tidak ada migration atau perubahan foto customer, payment,
+subscription, device, session, maupun data customer. Jangan menyebut S137
+`BUSINESS_READY` sebelum authenticated Owner UAT pada akun terdampak, Batch
+Import, dan error/retry nyata selesai.
+
 Implementasi rotate lama yang menukar W/H 90 derajat telah `DEPRECATED` oleh
 koreksi founder `DEC-036`. Perilaku production yang aktif adalah
 diterima adalah tahan ikon rotate lalu drag ke kiri/kanan agar slot mendapat

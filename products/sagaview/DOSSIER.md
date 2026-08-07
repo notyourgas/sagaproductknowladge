@@ -297,6 +297,24 @@ diunggah, payment intent/QRIS baru, perubahan subscription, atau aktivasi
 tenant. Status `PRODUCTION_DEPLOYED`, belum `PRODUCTION_ACTIVATED` atau
 `BUSINESS_READY`.
 
+S137 memulihkan bootstrap cloud untuk akun Owner legacy yang sah tetapi belum
+memiliki membership workspace. Sebelumnya endpoint sync memberi `403`, lalu UI
+menutup error dan terus menampilkan `Memuat cloud`. Backend sekarang membuat
+membership yang hilang secara transactional/idempotent hanya untuk Staff aktif,
+tenant yang sama, role legacy yang dikenali, dan subscription SagaView yang
+tersedia. Membership yang eksplisit nonaktif tetap ditolak. UI membedakan
+loading, aktif, nonaktif, dan gagal, lalu menyediakan pesan tindakan dan
+`Coba lagi`. Backend source/release aktif `d7542fdc` /
+`20260807010717-d7542fd`; Studio source/release `05c5fda0` /
+`20260807010718-05c5fda`; rollback S136 dipertahankan. Regression 935 test/
+11.101 assertion, build, focused Playwright, dependency audit, encrypted
+backup/restore, rehearsal kandidat+rollback 6/6, preflight/deploy,
+canary/preservation, public smoke, marker runtime, serta probe transaksi yang
+di-rollback lulus. Tidak ada migration atau perubahan foto customer, payment,
+subscription, device, session, maupun data customer. Status
+`PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated Owner UAT tetap
+residual sebelum `BUSINESS_READY`.
+
 Mulai sesi production memakai checklist perangkat, paket, folder, frame, dan
 output serta satu CTA kontekstual 48 px. Utility cloud/recovery yang sehat
 diringkas; detail terbuka otomatis saat operator perlu bertindak. Alur tetap
@@ -449,11 +467,11 @@ policy, license/trial entitlement, katalog owner, boundary publish, migrasi
 metadata additive, serta release safety. Seluruh benefit lain tetap.
 
 `CONFIRMED` — kontrak ini aktif di production. Source backend aktif adalah
-`1158926b2be35887aff7dc8a09cb0111e8a71fc7`, release
-`20260806050513-1158926`. Source Studio aktif adalah
-`3b66f8d5df3e34aba11c4eab2619cfe44efd06d7`, release
-`20260806050546-3b66f8d`; rollback Studio adalah
-`20260805155605-3b66f8d`. Session, Frames, dan Install App kini memakai render
+`d7542fdc51dae66763057d2ac9d847c68d6dec1f`, release
+`20260807010717-d7542fd`. Source Studio aktif adalah
+`05c5fda07a342d2977d8e6e3d836adb17a84605b`, release
+`20260807010718-05c5fda`; rollback backend/Studio adalah
+`20260807003837-4642b40` / `20260807003838-0745426`. Session, Frames, dan Install App kini memakai render
 awal SSR/client deterministik sehingga tidak memicu hydration mismatch. Output
 Settings hanya menampilkan action simpan saat
 dirty, tidak menutup konten mobile, mempertahankan action sticky desktop, dan
@@ -544,9 +562,9 @@ pada UI customer.
 
 ## Reliability, security, dan operations
 
-- Exact backend/Studio release immutable `20260806050513-1158926` dan
-  `20260806050546-3b66f8d`; rollback backend `20260805155517-c853806` serta
-  Studio `20260805155605-3b66f8d` tersedia.
+- Exact backend/Studio release immutable `20260807010717-d7542fd` dan
+  `20260807010718-05c5fda`; rollback backend `20260807003837-4642b40` serta
+  Studio `20260807003838-0745426` tersedia.
 - Release Izin Foto lulus 156 unit, focused 18/18, 116 skenario Playwright
   executable dalam dua evidence round, build/budget, npm audit nol, exact
   preflight, promosi atomik, service/header/journal, empat route 200, serta

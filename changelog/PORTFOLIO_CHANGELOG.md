@@ -1,5 +1,22 @@
 # Portfolio Changelog
 
+## 2026-08-07 - SagaView S137 cloud bootstrap recovery production
+
+- Backend `d7542fdc51dae66763057d2ac9d847c68d6dec1f` aktif sebagai release
+  `20260807010717-d7542fd`; Studio `05c5fda07a342d2977d8e6e3d836adb17a84605b`
+  aktif sebagai `20260807010718-05c5fda`. Rollback S136 dipertahankan.
+- Owner legacy yang sah tetapi belum memiliki membership workspace kini
+  dipulihkan transactional/idempotent dengan guard Staff aktif, same-tenant,
+  role legacy, dan subscription SagaView. Membership nonaktif tetap ditolak.
+- UI tidak lagi menyamarkan `403` sebagai `Memuat cloud` tanpa akhir; loading,
+  aktif, nonaktif, gagal, pesan tindakan, dan `Coba lagi` tampil eksplisit.
+- Full regression 935 test/11.101 assertion, build, Playwright, dependency audit,
+  encrypted backup/restore, rehearsal kandidat+rollback 6/6, deploy,
+  canary/preservation, service/journal/header/public smoke, marker runtime, dan
+  probe transaksi yang di-rollback lulus.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated Owner UAT
+  pada akun terdampak dan Batch Import tetap residual sebelum `BUSINESS_READY`.
+
 ## 2026-08-07 - SagaBook recovery availability dan payment production
 
 - Source `0894df00f6866688db4d053758a99d54ba4e8908` aktif sebagai release

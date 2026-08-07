@@ -12,21 +12,21 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-07T08:02:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-07T08:20:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `3356051c1ed7b10591d4d8a06afe1291cd53c02d` |
-| Informasi terakhir disinkronkan | SagaBook S127-S130 production pada source `0894df00` / release `20260806152606-0894df0`; recovery availability kosong, manual transfer, dan Payment Monitor aktif, sedangkan corpus/index/model AI tetap `AI_KNOWLEDGE_NOT_PROMOTED`. |
+| Baseline sebelum pembaruan | `71217c4193c6c3d394c1556bf759c51a8d1d6802` |
+| Informasi terakhir disinkronkan | SagaView S137 cloud bootstrap recovery pada backend `d7542fdc` / `20260807010717-d7542fd` dan Studio `05c5fda0` / `20260807010718-05c5fda`; delivery dan activation `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`, business readiness `NEEDS CONFIRMATION`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik fakta runtime SagaBook. Status guard app, pipeline AI, delivery, activation, dan business readiness dipisahkan. |
-| Error | Tidak ada error sinkronisasi. Authenticated UAT, provider nyata, reconciliation penuh, dan pilot tetap residual SagaBook. |
+| Konflik | Tidak ada konflik fakta S137. Status delivery, activation, dan business readiness tetap dipisahkan. |
+| Error | Tidak ada error sinkronisasi. Authenticated Owner UAT pada akun terdampak, Batch Import, serta error/retry nyata tetap residual S137. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/sagabook/PRODUCT.md`
-- `products/sagabook/DOSSIER.md`
-- `products/sagabook/CHANGELOG.md`
-- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/DOSSIER.md`
+- `products/sagaview/CHANGELOG.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `GAPS.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
@@ -128,6 +128,17 @@ canary/preservation, lima smoke 200, service/header, dan error unit runtime nol
 lulus. Tidak ada foto customer yang diunggah, intent/QRIS baru, perubahan
 subscription, atau aktivasi tenant. Authenticated UAT tetap residual sebelum
 `PRODUCTION_ACTIVATED` dan `BUSINESS_READY`.
+
+SagaView S137 cloud bootstrap recovery sudah
+`PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` pada backend source/release
+`d7542fdc` / `20260807010717-d7542fd` dan Studio source/release `05c5fda0` /
+`20260807010718-05c5fda`; rollback S136 dipertahankan. Owner legacy yang sah
+tetapi belum mempunyai membership workspace dipulihkan secara
+transactional/idempotent dengan guard Staff aktif, tenant sama, role legacy,
+dan subscription SagaView; membership nonaktif tetap ditolak. UI menampilkan
+loading/aktif/nonaktif/gagal serta retry secara eksplisit. Regression 935 test/
+11.101 assertion dan seluruh guarded release gate lulus. Authenticated Owner UAT
+pada akun terdampak dan Batch Import tetap residual sebelum `BUSINESS_READY`.
 
 Bulk export Galeri Frame `DEC-044` sudah `PRODUCTION_DEPLOYED /
 PRODUCTION_ACTIVATED`; klausa packaging-nya dikoreksi oleh `DEC-049`. Satu atau

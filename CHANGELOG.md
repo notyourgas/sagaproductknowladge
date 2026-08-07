@@ -12,6 +12,26 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-07
 
+### SagaView S137 cloud bootstrap recovery production
+
+- Ringkasan: Owner legacy yang sah tetapi belum memiliki membership workspace
+  tidak lagi terjebak pada `Memuat cloud`; backend memulihkan membership yang
+  hilang secara guarded dan UI menampilkan state gagal/retry secara eksplisit.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+  business readiness tetap `NEEDS CONFIRMATION`.
+- Source/release backend `d7542fdc51dae66763057d2ac9d847c68d6dec1f` /
+  `20260807010717-d7542fd`; Studio `05c5fda07a342d2977d8e6e3d836adb17a84605b` /
+  `20260807010718-05c5fda`; rollback S136 dipertahankan.
+- Gate: 935 test/11.101 assertion, build, focused Playwright, audit dependency,
+  encrypted backup/restore, rehearsal kandidat+rollback 6/6, preflight/deploy,
+  canary/payment/device preservation, service/journal/header/public smoke,
+  marker runtime, dan probe transaksi yang di-rollback.
+- Boundary: tidak ada migration atau perubahan foto customer, payment,
+  subscription, device, session, maupun data customer. Authenticated Owner UAT
+  pada akun terdampak dan Batch Import tetap residual.
+- File knowledge: product, dossier, changelog, ledger, master knowledge, gaps,
+  portfolio/root changelog, dan sync status.
+
 ### SagaBook recovery availability dan payment production S127-S130
 
 - Ringkasan: response availability kosong sekarang fail-closed tanpa slot

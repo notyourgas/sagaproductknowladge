@@ -5,10 +5,10 @@ Evidence status: production deployed + production activated; frame import-order,
 compact all-menu, workspace Session/Output/Izin Foto monitor besar, free drag
 rotation, pemisahan Simpan Draft/Publish Frame, limit Growth 50/Pro 100,
 portable frame template, bulk export, server ZIP untuk tiga sampai 100 pilihan,
-dan resumable server batch import sampai 100 template aktif di production.
-S135 menyelaraskan workspace Owner Console dan Studio Console per tenant dan
-sudah `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; Owner UAT dua workspace
-nyata tetap residual.
+resumable server batch import sampai 100 template, dan pemulihan bootstrap cloud
+Owner lama aktif di production. S137 sudah
+`PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated Owner UAT pada akun
+terdampak tetap residual sebelum `BUSINESS_READY`.
 
 ## Tujuan dokumen
 
@@ -33,12 +33,12 @@ yang diverifikasi sampai 7 Agustus 2026.
   lalu memakai dua kartu sesi berdampingan pada QHD/4K di dalam batas 1400
   piksel. Ringkasan, filter, retry, cabut izin, dan workflow privacy tidak
   berubah.
-- Backend source `902e5dd81919168b1978c8bfbcd62303920184a6` aktif sebagai
-  release `20260806212915-902e5dd`; rollback
-  `20260806200400-b6af579` dipertahankan.
-- Studio tetap memakai source `3b66f8d5df3e34aba11c4eab2619cfe44efd06d7`
-  melalui rebuild release `20260806213012-3b66f8d`; rollback
-  `20260806200400-3b66f8d` dipertahankan.
+- Backend source `d7542fdc51dae66763057d2ac9d847c68d6dec1f` aktif sebagai
+  release `20260807010717-d7542fd`; rollback
+  `20260807003837-4642b40` dipertahankan.
+- Studio source `05c5fda07a342d2977d8e6e3d836adb17a84605b` aktif sebagai
+  release `20260807010718-05c5fda`; rollback
+  `20260807003838-0745426` dipertahankan.
 - Entitlement live memberi Growth 50 dan Pro 100 frame aktif. Harga, device,
   preset, offline grace, storage, laporan, support, payment, dan fair-use tidak
   berubah.
@@ -409,6 +409,35 @@ service/header, dan post-preflight lulus. Tidak ada payment intent/QRIS baru,
 perubahan subscription, atau aktivasi tenant. Authenticated UAT serta matriks
 zoom/viewport luas tetap residual.
 
+### S137 cloud bootstrap recovery production
+
+`CONFIRMED` dengan delivery dan activation
+`PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Backend source
+`d7542fdc51dae66763057d2ac9d847c68d6dec1f` aktif sebagai release
+`20260807010717-d7542fd`; Studio source
+`05c5fda07a342d2977d8e6e3d836adb17a84605b` aktif sebagai release
+`20260807010718-05c5fda`. Rollback S136 dipertahankan pada backend
+`20260807003837-4642b40` dan Studio `20260807003838-0745426`.
+
+Sebelum S137, akun Owner legacy yang sah tetapi belum memiliki membership
+workspace mendapat `403`; UI menutup error itu dan terus menampilkan
+`Memuat cloud`. S137 membuat membership yang hilang secara transactional dan
+idempotent hanya untuk Staff aktif, tenant yang sama, role legacy yang dikenali,
+serta subscription SagaView yang tersedia. Membership yang telah dinonaktifkan
+tetap ditolak dan tidak pernah diaktifkan kembali secara otomatis. UI sekarang
+membedakan loading, cloud aktif, cloud nonaktif, dan kegagalan dengan aksi
+`Coba lagi` serta pesan API yang dapat ditindaklanjuti.
+
+Full regression lulus 935 test dengan 11.101 assertion, production build,
+focused Playwright, Composer/npm audit nol advisory, encrypted backup/checksum/
+offsite round-trip/disposable restore, candidate+rollback rehearsal 6/6,
+preflight/deploy, canary/payment/device preservation, service/journal/header/
+public smoke, marker runtime, rollback target, serta probe transaksi production
+yang seluruhnya di-rollback. Tidak ada migration atau perubahan foto customer,
+payment, subscription, device, session, maupun data customer. Authenticated
+Owner UAT pada akun terdampak, termasuk Batch Import dan error/retry nyata,
+tetap residual sebelum `BUSINESS_READY`.
+
 ## Session completion dan privacy handoff
 
 `CONFIRMED` — production:
@@ -713,15 +742,15 @@ untuk release frontend ini.
 ### Runtime production
 
 - Backend source:
-  `1158926b2be35887aff7dc8a09cb0111e8a71fc7`.
-- Backend release aktif: `20260806050513-1158926`.
+  `d7542fdc51dae66763057d2ac9d847c68d6dec1f`.
+- Backend release aktif: `20260807010717-d7542fd`.
 - Studio source aktif:
-  `3b66f8d5df3e34aba11c4eab2619cfe44efd06d7`.
-- Studio release aktif: `20260806050546-3b66f8d`.
+  `05c5fda07a342d2977d8e6e3d836adb17a84605b`.
+- Studio release aktif: `20260807010718-05c5fda`.
 - Studio release sebelumnya yang menjadi rollback:
-  `20260805155605-3b66f8d`.
+  `20260807003838-0745426`.
 - Backend release sebelumnya yang menjadi rollback:
-  `20260805155517-c853806`.
+  `20260807003837-4642b40`.
 - Saga Platform release teramati tetap
   `20260804171621-0ab9d8e`; release editor frame tidak mengubah Platform.
 - Additive migration, encrypted backup, disposable restore, candidate gate,

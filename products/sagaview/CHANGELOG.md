@@ -4,6 +4,33 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-08-07 - S137 cloud bootstrap recovery production
+
+- Klasifikasi: `CONFIRMED` dari exact source, full regression, guarded release,
+  dan verifikasi runtime public-safe.
+- Status: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; business readiness
+  mass-scale tetap `NEEDS CONFIRMATION`.
+- Backend source/release `d7542fdc51dae66763057d2ac9d847c68d6dec1f` /
+  `20260807010717-d7542fd`; Studio source/release
+  `05c5fda07a342d2977d8e6e3d836adb17a84605b` /
+  `20260807010718-05c5fda`. Rollback S136 dipertahankan pada backend
+  `20260807003837-4642b40` dan Studio `20260807003838-0745426`.
+- Sebelum: Owner legacy yang sah tetapi belum mempunyai membership workspace
+  mendapat `403`, sementara UI terus menampilkan `Memuat cloud`. Sesudah:
+  membership yang hilang dipulihkan secara transactional/idempotent hanya untuk
+  Staff aktif, tenant yang sama, role legacy yang dikenali, dan subscription
+  SagaView yang tersedia; membership nonaktif tetap ditolak.
+- UI kini membedakan loading, cloud aktif, cloud nonaktif, dan kegagalan, lalu
+  memberi pesan tindakan serta `Coba lagi`.
+- Full regression 935 test/11.101 assertion, build, focused Playwright,
+  Composer/npm audit nol advisory, encrypted backup/restore,
+  candidate+rollback rehearsal 6/6, deploy, canary/payment/device preservation,
+  service/journal/header/public smoke, marker runtime, dan probe transaksi yang
+  di-rollback lulus.
+- Tidak ada migration atau perubahan foto customer, payment, subscription,
+  device, session, maupun data customer. Authenticated Owner UAT pada akun
+  terdampak, Batch Import, dan error/retry nyata tetap residual.
+
 ## 2026-08-07 - S136 tenant-bound session production
 
 - Klasifikasi: `CONFIRMED` dari exact source, red-to-green regression, dan

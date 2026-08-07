@@ -174,6 +174,19 @@ ketika keputusan atau release baru menutup gap.
 
 ### SagaView
 
+- `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: S137 cloud bootstrap recovery
+  aktif pada backend `d7542fdc` / `20260807010717-d7542fd` dan Studio
+  `05c5fda0` / `20260807010718-05c5fda`; rollback S136 dipertahankan. Owner
+  legacy yang sah tetapi belum mempunyai membership workspace dipulihkan secara
+  transactional/idempotent hanya untuk Staff aktif, same-tenant, role legacy,
+  dan subscription SagaView; membership nonaktif tetap ditolak. UI tidak lagi
+  menyamarkan `403` sebagai `Memuat cloud` tanpa akhir dan menyediakan state
+  gagal serta retry. Regression 935 test/11.101 assertion, build, audit,
+  backup/restore, rehearsal kandidat+rollback 6/6, deploy, preservation,
+  live smoke/marker, serta probe transaksi yang di-rollback lulus. Residual
+  sebelum `BUSINESS_READY`: authenticated Owner UAT pada akun terdampak,
+  validasi Batch Import, serta satu failure/retry nyata.
+
 - `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: `DEC-055` Owner dan Studio
   workspace alignment aktif pada backend `20260806224422-85ec0f6` dan Studio
   `20260806224441-0745426`; rollback S134 dipertahankan. Server-auth tenant
