@@ -4,6 +4,29 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-08-08 - S141 manajemen banyak frame candidate
+
+- Klasifikasi: `CONFIRMED` melalui `DEC-061`, exact source, dan acceptance
+  lokal. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- Source `369f01140e3db0144d189fb781acdad91cfe3fc5` pada branch
+  `codex/s141-sagaview-bulk-frame-save`; production tetap backend S140
+  `c2a05076a626562244adabcb22fb86a9a60cbbd8` / `20260807161105-c2a0507`.
+- Owner memilih sampai 100 frame, menyiapkan nama, kategori, harga
+  default/khusus, dan status per frame atau secara serentak, lalu menekan satu
+  `Simpan semua`.
+- Backend memakai satu transaksi, tenant/capability guard, validasi seluruh
+  target, dan optimistic lock catalog version + workspace revision. Missing,
+  cross-workspace, kategori invalid, permission salah, atau stale tab
+  membatalkan seluruh simpan; UI mempertahankan edit untuk retry.
+- Perubahan kategori mengikuti `DEC-057`: override per-frame lama dibersihkan
+  kecuali harga khusus baru dipilih; master/draft/published aktif disinkronkan.
+- Focused backend 14 test/74 assertion, Playwright desktop+mobile 6/6,
+  Changelog visual 1/1 dan backend 1/21, build, Pint, route, serta diff check
+  lulus. Tidak ada migration atau perubahan artwork, slot, foto customer,
+  payment, subscription, device, session, maupun data customer.
+- Next action: guarded production deploy exact candidate dan authenticated
+  Owner UAT pada frame nyata sebelum menaikkan delivery/activation.
+
 ## 2026-08-07 - S140 identitas workspace dan Changelog Dashboard production
 
 - Klasifikasi: `CONFIRMED` melalui `DEC-060`, exact source, regression, dan

@@ -7,7 +7,7 @@ SagaView berdasarkan runtime production aktif.
 
 ## Konteks dan status bukti
 
-- Updated: 7 Agustus 2026
+- Updated: 8 Agustus 2026
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED`
 - Business readiness: `NEEDS CONFIRMATION` untuk penjualan massal
@@ -35,6 +35,8 @@ SagaView berdasarkan runtime production aktif.
   `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
 - S139 sinkronisasi kategori, harga turunan, dan versi katalog frame:
   `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
+- S141 manajemen banyak frame dengan satu simpan:
+  `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`
 - Acceptance integrasi feature-by-feature: ledger dimulai konservatif dan
   belum membuktikan coverage penuh; lihat
   [Feature Coverage Ledger](FEATURE_COVERAGE_LEDGER.md).
@@ -380,6 +382,24 @@ payment tidak berubah. Tidak ada migration. Backup terenkripsi dan restore,
 candidate+rollback rehearsal, atomic deploy, idempotency, service/journal,
 security header, public smoke, marker live, serta rollback target lulus.
 Authenticated UAT pada Owner Dashboard dan Studio device nyata tetap residual.
+
+S141 memperluas batch kategori menjadi mode manajemen multi-frame. Owner dapat
+menyiapkan nama, kategori, pilihan harga default/khusus, serta status berbeda
+untuk sampai 100 frame, lalu mengirim semuanya melalui satu `Simpan semua`.
+Kategori dan status juga dapat diterapkan ke seluruh pilihan tanpa menutup
+kemampuan edit per baris. Dialog dapat ditutup melalui tombol atau Escape;
+failure server tetap menampilkan alasan dan mempertahankan edit untuk retry.
+
+Endpoint bulk baru capability-, tenant-, dan membership-scoped. Satu transaksi
+mengunci catalog version serta workspace revision, memverifikasi seluruh frame
+dan kategori, lalu menyinkronkan brand frame, draft aktif, dan published aktif.
+Satu target invalid atau stale membatalkan semua perubahan. Kategori baru
+menghapus override per-frame lama kecuali Owner memilih harga khusus baru;
+override cabang tetap eksplisit. Source candidate
+`369f01140e3db0144d189fb781acdad91cfe3fc5` sudah lulus focused backend 14/14,
+desktop+mobile Playwright 6/6, Changelog UI/backend, build, Pint, route, dan
+diff check. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+tetap S140 dan belum ada runtime/backup/rehearsal/deploy evidence S141.
 
 Mulai sesi production memakai checklist perangkat, paket, folder, frame, dan
 output serta satu CTA kontekstual 48 px. Utility cloud/recovery yang sehat

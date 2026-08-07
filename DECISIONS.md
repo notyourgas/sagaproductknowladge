@@ -231,6 +231,20 @@ keputusan pengganti.
 | Status | `CONFIRMED`; klausa nama produk AOGTICVITY `DEPRECATED` oleh `DEC-047`, sedangkan kontrak master recap, 8 tim, 10 lomba, durasi editable, dan roster seluruh tim tetap berlaku |
 | Dokumen terkait | [AOGTICVITY Product](products/aogticvity/PRODUCT.md), [AOGTICVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTICVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |
 
+## DEC-061 - Manajemen banyak frame memakai satu penyimpanan transaksional
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-08 |
+| Topik | Manajemen metadata banyak frame SagaView |
+| Keputusan | Owner dapat memilih maksimal 100 frame, menyiapkan perubahan nama, kategori, harga default/khusus, dan status per frame atau secara serentak, lalu menyimpan seluruh perubahan dengan satu tombol `Simpan semua`. Seluruh patch wajib divalidasi dan diterapkan dalam satu transaksi; jika satu target invalid, lintas workspace, hilang, tidak berizin, atau snapshot stale, tidak ada perubahan parsial dan edit UI harus tetap tersedia untuk retry. |
+| Alasan | Menyimpan satu per satu memperlambat operator dan meningkatkan risiko kategori, harga, nama, atau status antar-frame tidak konsisten. |
+| Alternatif yang dipertimbangkan | Tetap memakai save per frame; hanya memperluas batch kategori; auto-save setiap field; menerima partial success dan meminta operator mencari item gagal. |
+| Dampak | Owner Gallery menambah dialog multi-frame dan satu CTA final; backend menambah endpoint metadata tenant-scoped dengan optimistic lock catalog/workspace; master, draft aktif, dan published aktif tetap mengikuti `DEC-057`. Artwork, slot, foto customer, pricing paket, payment, subscription, device, dan session tidak berubah. |
+| Pemberi keputusan | Andreas / founder melalui instruksi menambahkan manajemen keseluruhan frame dan satu tombol save |
+| Status | `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; source `369f01140e3db0144d189fb781acdad91cfe3fc5`; production tetap S140 |
+| Dokumen terkait | [SagaView Product](products/sagaview/PRODUCT.md), [SagaView Dossier](products/sagaview/DOSSIER.md), [SagaView Changelog](products/sagaview/CHANGELOG.md), [SagaView Ledger](products/sagaview/FEATURE_COVERAGE_LEDGER.md), [Master Knowledge](CHATGPT_MASTER_KNOWLEDGE.md), [Gaps](GAPS.md) |
+
 ## DEC-060 - Identitas administratif SagaView berasal dari workspace aktivasi
 
 | Field | Isi |

@@ -1,6 +1,6 @@
 # SagaView Product Knowledge
 
-Updated: 7 Agustus 2026
+Updated: 8 Agustus 2026
 Evidence status: production deployed + production activated; frame import-order,
 compact all-menu, workspace Session/Output/Izin Foto monitor besar, free drag
 rotation, pemisahan Simpan Draft/Publish Frame, limit Growth 50/Pro 100,
@@ -14,7 +14,10 @@ workspace administratif dari nama brand yang dapat diedit, memulihkan menu
 Changelog pada Dashboard Owner, dan menjelaskan bahwa `Cloud vN` adalah revisi
 katalog per workspace. S140 sudah `PRODUCTION_DEPLOYED /
 PRODUCTION_ACTIVATED`; authenticated Owner UAT tetap residual sebelum
-`BUSINESS_READY`.
+`BUSINESS_READY`. Candidate S141 menambahkan manajemen nama, kategori, harga,
+dan status banyak frame dengan satu `Simpan semua`; source
+`369f01140e3db0144d189fb781acdad91cfe3fc5` sudah `LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`, sehingga production tetap S140.
 
 ## Tujuan dokumen
 
@@ -526,6 +529,32 @@ round-trip, disposable restore, rehearsal candidate+rollback, atomic release,
 preservation, service/journal/security-header, public smoke, marker live, dan
 rollback target lulus. Authenticated Owner/Studio UAT pada akun nyata tetap
 residual sebelum `BUSINESS_READY`.
+
+### S141 manajemen banyak frame dengan satu simpan candidate
+
+`CONFIRMED` melalui `DEC-061`; source
+`369f01140e3db0144d189fb781acdad91cfe3fc5` pada branch
+`codex/s141-sagaview-bulk-frame-save` berstatus `LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`. Production belum berubah dari backend S140
+`c2a05076a626562244adabcb22fb86a9a60cbbd8` / `20260807161105-c2a0507`.
+
+Owner dapat memilih sampai 100 frame, membuka mode manajemen, mengubah nama,
+kategori, harga default/khusus, dan status setiap frame, atau menerapkan
+kategori/status ke seluruh pilihan. Edit ditahan di dialog sampai satu tombol
+`Simpan semua` ditekan. Perubahan kategori kembali memakai harga default;
+harga khusus baru hanya dikirim bila dipilih eksplisit.
+
+Backend memvalidasi seluruh patch sebelum menulis, mengunci versi katalog dan
+revision workspace, menyinkronkan master/draft/published aktif, serta
+menerbitkan katalog/revision satu kali. Missing/cross-workspace, kategori tidak
+aktif, permission salah, atau stale tab membatalkan seluruh transaksi tanpa
+perubahan parsial. Kegagalan mempertahankan semua edit di dialog. Tidak ada
+migration dan tidak ada perubahan artwork, slot, foto customer, payment,
+subscription, device, session, atau data customer. Focused backend 14 test/74
+assertion, Playwright galeri/manajemen/pricing 6/6 pada desktop+mobile, visual
+Changelog 1/1, kontrak changelog backend 1/21, build, Pint, route, dan diff
+check lulus. Guarded production deployment serta authenticated Owner UAT nyata
+masih diperlukan.
 
 ## Session completion dan privacy handoff
 

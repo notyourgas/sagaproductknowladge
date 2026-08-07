@@ -1,5 +1,20 @@
 # Portfolio Changelog
 
+## 2026-08-08 - SagaView S141 bulk frame management candidate
+
+- `DEC-061` menetapkan mode pilih banyak, edit nama/kategori/harga/status, lalu
+  satu `Simpan semua` untuk maksimal 100 frame.
+- Source `369f01140e3db0144d189fb781acdad91cfe3fc5` sudah
+  `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap backend S140
+  `c2a05076` / `20260807161105-c2a0507`.
+- Satu transaksi dan optimistic lock catalog/workspace mencegah partial write
+  serta overwrite dari tab stale; missing/cross-workspace/permission/kategori
+  invalid membatalkan seluruh simpan dan UI mempertahankan edit.
+- Backend 14/14, Playwright desktop+mobile 6/6, Changelog UI/backend, build,
+  Pint, route, dan diff check lulus. Tidak ada migration atau perubahan
+  artwork, slot, foto customer, payment, subscription, device, maupun session.
+- Next action: guarded production deploy dan authenticated Owner UAT nyata.
+
 ## 2026-08-07 - SagaView S140 workspace identity dan Changelog production
 
 - `DEC-060` memisahkan identitas workspace administratif dari brand editable.

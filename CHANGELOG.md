@@ -10,6 +10,24 @@ produk dan [Portfolio Changelog](changelog/PORTFOLIO_CHANGELOG.md).
 
 Root changelog tidak menggantikan changelog produk atau portfolio.
 
+## 2026-08-08
+
+### SagaView S141 bulk frame management candidate
+
+- Ringkasan: Owner memilih sampai 100 frame, menyiapkan perubahan nama,
+  kategori, harga default/khusus, dan status, lalu menyimpan semua melalui satu
+  CTA transaksional.
+- Klasifikasi: `CONFIRMED` melalui `DEC-061`; source
+  `369f01140e3db0144d189fb781acdad91cfe3fc5`; status `LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: backend 14/14 (74), Playwright galeri/manajemen/pricing 6/6 pada
+  desktop+mobile, Changelog visual 1/1 dan backend 1/21, build, Pint, route,
+  JSON, dan diff check lulus.
+- Production berubah: tidak. Backend aktif tetap S140 `c2a05076` /
+  `20260807161105-c2a0507`; belum ada backup/rehearsal/deploy/live marker S141.
+- File knowledge: product, dossier, changelog, ledger, decision, master,
+  gaps, portfolio/root changelog, dan sync status.
+
 ## 2026-08-07
 
 ### SagaView S140 identitas workspace dan Changelog Dashboard production

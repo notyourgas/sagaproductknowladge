@@ -12,14 +12,14 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-07T23:34:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-08T00:09:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `a44a95b7982198e1fd7d4f3d140585e46c45ba1b` |
-| Informasi terakhir disinkronkan | SagaView S140 pada backend `c2a05076` dan Studio `10bcaaae`: identitas workspace server-authoritative, Changelog Owner kembali, penjelasan revision Cloud per workspace, serta repair satu-field sudah production. |
+| Baseline sebelum pembaruan | `5deef28b061158aab296b82c18343671831066f9` |
+| Informasi terakhir disinkronkan | SagaView S141 source `369f0114`: manajemen nama/kategori/harga/status sampai 100 frame dan satu `Simpan semua` sudah local-validated, tetapi belum dideploy; runtime production tetap S140. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik dengan sinkronisasi SagaBook/AOGTIVITY pada baseline; status production activation dan business readiness tetap dipisahkan. |
-| Error | Tidak ada error gate S140. Satu full-suite SagaBook reschedule failure direproduksi identik pada baseline dan dicatat sebagai residual yang tidak disebabkan release ini. |
+| Konflik | Tidak ada konflik dengan `DEC-057`; perubahan kategori S141 tetap mereset override lama kecuali Owner memilih harga khusus baru. |
+| Error | Tidak ada error gate lokal S141. Production/release gate belum dijalankan dan sengaja tidak diklaim. |
 
 ## File yang berubah pada sinkronisasi ini
 
