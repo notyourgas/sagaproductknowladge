@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 6 Agustus 2026
+Evidence cut-off: 7 Agustus 2026 08:02 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -93,9 +93,9 @@ browser production mobile/desktop. Website booking tenant trial diaktifkan
 setelah pre-publish readiness 100; rollback `20260803194351-d70fc1e` tersedia.
 Business readiness menunggu copy alamat final dan booking nyata terkontrol.
 
-Release SagaBook terbaru adalah S126 source
-`e20c0ba3480e6143159108e313525d7576312146`, release
-`20260806072249-e20c0ba`, rollback `20260806063717-cb8ef55`. S123 menutup
+Release SagaBook terbaru adalah source kumulatif
+`0894df00f6866688db4d053758a99d54ba4e8908`, release
+`20260806152606-0894df0`, rollback `20260806142033-2415097`. S123 menutup
 auth/session dan S124 menutup irisan status/write cabang. S125 menutup irisan
 branch context `/admin/reports`: ringkasan, analitik, tabel, dan closing state
 mengikuti cabang terpilih; write finance/closing membawa `branchId`, diblok
@@ -104,9 +104,13 @@ ditolak tanpa perubahan data dan response/refetch backend aktual dirender UI.
 Editor Template Booking S122 dan storefront satu canvas mobile maksimum 460
 piksel tetap dipertahankan. S126 mengaktifkan pencarian, lima filter, accordion
 satu-detail, empty/reset recovery, dan CTA `Kembali ke Hari Ini` pada Admin
-Changelog tanpa mengubah API/database atau workflow bisnis. Sesuai `DEC-041`,
-Payment Monitor,
-pagination/export, reconciliation provider, selector/filter route lain, dan
+Changelog tanpa mengubah API/database atau workflow bisnis. S128 memastikan
+response availability kosong tidak diganti slot lokal. S129 menambahkan
+recovery initial-load manual transfer, dan S130 menambahkan recovery aksi
+Payment Monitor tanpa sukses palsu. Guard Support Hub S127 sudah production,
+tetapi corpus/index/model AI tetap `AI_KNOWLEDGE_NOT_PROMOTED`. Sesuai
+`DEC-041`, QRIS/provider nyata, pagination/export, reconciliation provider,
+selector/filter route lain, dan
 fitur berikutnya tetap discreen feature-by-feature; satu irisan tervalidasi
 tidak berarti integrasi seluruh produk selesai. SagaView tetap local-first
 untuk foto, editor, recovery, dan export. Subscription activation tidak

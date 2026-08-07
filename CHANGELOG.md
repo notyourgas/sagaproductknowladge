@@ -12,6 +12,26 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-07
 
+### SagaBook recovery availability dan payment production S127-S130
+
+- Ringkasan: response availability kosong sekarang fail-closed tanpa slot
+  lokal; manual transfer dan aksi Payment Monitor mempunyai error/retry tanpa
+  success palsu; guard Support Hub membedakan out-of-scope dari unknown produk.
+- Klasifikasi: `CONFIRMED`; source/release
+  `0894df00f6866688db4d053758a99d54ba4e8908` /
+  `20260806152606-0894df0`; rollback `20260806142033-2415097`.
+- Production berubah: ya. Irisan recovery `PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`; produk belum `BUSINESS_READY`. Corpus/index/model AI
+  tetap `AI_KNOWLEDGE_NOT_PROMOTED`.
+- Bukti runtime fresh: manifest exact source, nginx/PHP-FPM/queue aktif, tiga
+  public smoke 200, security headers konsisten, dan tidak ada journal error
+  pada unit SagaBook sejak release. Failed staging monitor host dicatat sebagai
+  triage terpisah.
+- Residual: QRIS/provider nyata, reconciliation penuh, authenticated UAT,
+  latency/error/cost canary AI, dan Founding Studio Pilot.
+- File knowledge: product, dossier, changelog dan ledger SagaBook, master,
+  gaps, portfolio/root changelog, serta sync status.
+
 ### SagaBio mobile journey finalization production
 
 - Ringkasan: preset v3 Coffee Shop/Personal Branding dan public renderer

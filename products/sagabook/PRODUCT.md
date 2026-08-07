@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 6 Agustus 2026
+Updated: 7 Agustus 2026 08:02 WIB
 Evidence status: production + source verified
 
 ## Tujuan dokumen
@@ -16,19 +16,26 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
-- Source kumulatif `e20c0ba3480e6143159108e313525d7576312146` aktif sebagai
-  release immutable `20260806072249-e20c0ba`; rollback
-  `20260806063717-cb8ef55` dipertahankan.
-- Admin Changelog kini memakai pencarian, lima filter, accordion satu-detail,
-  empty/reset recovery, dan CTA `Kembali ke Hari Ini`.
+- Source kumulatif `0894df00f6866688db4d053758a99d54ba4e8908` aktif sebagai
+  release immutable `20260806152606-0894df0`; rollback
+  `20260806142033-2415097` dipertahankan.
+- Release kumulatif ini membawa guard scope/fallback Support Hub S127,
+  pemulihan availability kosong S128, pemulihan initial-load manual transfer
+  S129, dan pemulihan aksi Payment Monitor S130.
+- Availability kosong dari backend tidak lagi diganti slot lokal; manual
+  transfer dan Payment Monitor kini mempunyai error/retry yang dapat dipakai
+  tanpa menyatakan operasi berhasil sebelum response aktual diterima.
 - Delivery dan activation irisan ini `PRODUCTION_DEPLOYED /
   PRODUCTION_ACTIVATED`; authenticated owner UAT dan readiness produk
   keseluruhan tetap terpisah.
 - Subscription tenant tidak diaktifkan dan website booking yang sudah aktif
   tidak dinonaktifkan oleh release ini.
+- Guard scope/fallback Support Hub sudah termasuk source production, tetapi
+  promosi corpus/index/model AI yang lebih luas tetap
+  `AI_KNOWLEDGE_NOT_PROMOTED` dan bukan fine-tuning otomatis.
 - Label candidate pada bagian histori di bawah adalah status saat bukti itu
-  dibuat. Source S98-S118 yang menjadi ancestor S126 sudah aktif kumulatif;
-  arah storefront lebar S94/S108 tetap deprecated dan tidak aktif.
+  dibuat. Source S98-S130 yang menjadi ancestor release aktif sudah aktif
+  kumulatif; arah storefront lebar S94/S108 tetap deprecated dan tidak aktif.
 
 ## Ringkasan
 

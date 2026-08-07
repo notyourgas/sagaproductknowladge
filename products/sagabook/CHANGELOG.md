@@ -4,6 +4,34 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-07 - Recovery availability dan payment production S127-S130
+
+- Klasifikasi: `CONFIRMED`; source kumulatif
+  `0894df00f6866688db4d053758a99d54ba4e8908` aktif sebagai release immutable
+  `20260806152606-0894df0`; rollback `20260806142033-2415097` dari source
+  `2415097ed2235008b82e67b9c970e82098450762` dipertahankan.
+- S128 membedakan availability belum terjawab dari response sukses kosong;
+  `slots: []` kini merender unavailable state dan tidak lagi membuat sebelas
+  slot fallback lokal. S129 memberi alert/retry 48 piksel ketika initial load
+  manual transfer gagal. S130 menutup recovery aksi Payment Monitor tanpa
+  success palsu sebelum response backend aktual.
+- Source production juga mencakup guard S127: topik umum di luar SagaDev
+  memakai fallback product-scoped tanpa provider call/tiket, sedangkan unknown
+  produk tetap menuju knowledge gap/human handoff. Corpus/index/model AI yang
+  lebih luas tetap `AI_KNOWLEDGE_NOT_PROMOTED`.
+- Verifikasi runtime fresh 7 Agustus 2026: manifest exact SHA cocok, nginx,
+  PHP-FPM, dan queue aktif; `/up`, `/account/login`, dan `/admin/login`
+  merespons 200; security headers konsisten; journal error ketiga unit sejak
+  release tidak memiliki entri. Satu failed unit host
+  `saga-platform-staging-monitor.service` tetap triage terpisah dan tidak
+  dijadikan bukti kegagalan layanan SagaBook production.
+- Status irisan `UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; QRIS/provider nyata,
+  reconciliation menyeluruh, authenticated operator/customer UAT, dan
+  Founding Studio Pilot tetap dibutuhkan sebelum `BUSINESS_READY`.
+- Subscription tenant tidak diaktifkan dan website booking yang sudah aktif
+  tidak dinonaktifkan oleh sinkronisasi ini.
+
 ## 2026-08-06 - SagaDev AI scope fallback candidate S127
 
 - Klasifikasi keputusan `CONFIRMED` melalui `DEC-046`; implementasi source

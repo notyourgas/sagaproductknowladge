@@ -1,5 +1,20 @@
 # Portfolio Changelog
 
+## 2026-08-07 - SagaBook recovery availability dan payment production
+
+- Source `0894df00f6866688db4d053758a99d54ba4e8908` aktif sebagai release
+  `20260806152606-0894df0`; rollback `20260806142033-2415097` dipertahankan.
+- Response availability kosong kini fail-closed tanpa slot lokal; manual
+  transfer dan aksi Payment Monitor mempunyai error/retry yang merender
+  response backend aktual dan tidak menampilkan sukses palsu.
+- Guard Support Hub membedakan topik luar SagaDev dari unknown produk. Kode
+  guard sudah production, sedangkan corpus/index/model AI yang lebih luas tetap
+  `AI_KNOWLEDGE_NOT_PROMOTED`.
+- Manifest, tiga service SagaBook, tiga public smoke 200, security headers, dan
+  journal error unit production diverifikasi fresh. Authenticated UAT,
+  provider nyata, reconciliation penuh, dan Founding Studio Pilot tetap
+  residual sebelum `BUSINESS_READY`.
+
 ## 2026-08-07 - SagaBio mobile journey finalization production
 
 - Exact source `bdbf692a1dc031919dbf171cc1a8ca8497998810` aktif di VPS

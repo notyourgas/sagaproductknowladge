@@ -8,7 +8,7 @@ diubah menjadi klaim publik sebelum ditutup dengan bukti atau keputusan owner.
 
 ## Konteks
 
-Daftar ini berlaku pada evidence cut-off 5 Agustus 2026 dan harus diperbarui
+Daftar ini berlaku pada evidence cut-off 7 Agustus 2026 08:02 WIB dan harus diperbarui
 ketika keputusan atau release baru menutup gap.
 
 ## Cara memakai
@@ -33,13 +33,13 @@ ketika keputusan atau release baru menutup gap.
 
 ### SagaBook
 
-- `TODO`: candidate AI terbaru source
-  `0894df00f6866688db4d053758a99d54ba4e8908` sudah memisahkan out-of-scope
-  dari unknown produk dan kembali lulus 38 test/219 assertion, termasuk corpus
-  minimum 18 kategori public-safe. Status `AI_EVAL_VALIDATED /
-  AI_KNOWLEDGE_NOT_PROMOTED`. Promotion tetap ditahan sampai backup/restore,
-  rehearsal exact candidate/rollback, service/monitor, serta live smoke
-  product/out-of-scope/tenant-negative hijau. Inventaris chatbot produk
+- `TODO`: guard scope/fallback source
+  `0894df00f6866688db4d053758a99d54ba4e8908` sudah production dan memisahkan
+  out-of-scope dari unknown produk. Evaluasi 38 test/219 assertion mencakup
+  corpus minimum 18 kategori public-safe, tetapi corpus/index/model AI yang
+  lebih luas tetap `AI_EVAL_VALIDATED / AI_KNOWLEDGE_NOT_PROMOTED` sampai live
+  smoke product/out-of-scope/tenant-negative, latency/error/cost canary, dan
+  rollback khusus pipeline AI terbukti. Inventaris chatbot produk
   SagaDev lain, kebijakan human handoff lintas surface, provider/cost, latency,
   dan data-retention masih perlu coverage bertahap. Fine-tuning baru
   membutuhkan keputusan founder terpisah.
@@ -47,10 +47,12 @@ ketika keputusan atau release baru menutup gap.
 - `TODO`: auth/session S123, status/write cabang S124, serta branch-context
   `/admin/reports` S125 sudah `INTEGRATION_VALIDATED` dan aktif di production.
   Residual tenant/cabang adalah selector/filter lintas role/route, stale
-  refetch, serta delete dependency. Residual report adalah Payment Monitor,
+  refetch, serta delete dependency. Recovery response availability kosong,
+  initial-load manual transfer, dan aksi Payment Monitor sudah production pada
+  S128-S130. Residual payment/report adalah QRIS/provider nyata,
   pagination/filter/export, reconciliation provider, stale multi-tab, dan
-  closing concurrency. Setelah itu lanjutkan katalog, availability, booking,
-  payment, admin/task, WhatsApp/reminder, dan template draft/preview/publish.
+  closing concurrency. Setelah itu lanjutkan katalog, availability concurrency,
+  booking, admin/task, WhatsApp/reminder, dan template draft/preview/publish.
   Residual auth/session adalah expiry idle, revocation lintas device, dan UI
   rate-limit 429. UI/UX S122 sudah production, tetapi integrasi template belum
   boleh disebut `INTEGRATION_VALIDATED` sebelum happy, failure/retry,
@@ -144,21 +146,21 @@ ketika keputusan atau release baru menutup gap.
   tetapi perilaku lebar tidak aktif dan tidak boleh dipulihkan; production
   tetap satu canvas mobile maksimum 460 piksel pada semua viewport.
 - `RESIDUAL`: navigasi admin Changelog sudah aktif kumulatif melalui source
-  `e20c0ba3` / release `20260806072249-e20c0ba`; backup/restore, service,
+  production terbaru `0894df00` / release `20260806152606-0894df0`; service,
   manifest, dan public smoke lulus. Authenticated owner UAT pada data rilis
   aktual masih diperlukan sebelum menyebut irisan ini `BUSINESS_READY`.
 - `CLOSED CUMULATIVE`: recovery availability, clipboard unpublished/header/
   selesai, Review, state pilihan, dan form Detail dari source `0f2f7bca`,
   `07dda642`, `9d9c5ede`, `2bcacb24`, `621a74a0`, `18f2b3c1`, dan `2b3e544b`
-  semuanya merupakan ancestor source production `e20c0ba3`. Bukti release
-  kumulatif S126 mencakup backup/restore, full regression, immutable manifest,
+  semuanya merupakan ancestor source production `0894df00`. Bukti release
+  kumulatif mencakup immutable manifest,
   service/journal, rollback, serta public smoke; tidak perlu deploy terpisah.
 - `DEPRECATED`: candidate cross-monitor storefront S108 yang memperlebar canvas
   menjadi 1280 piksel digantikan keputusan mobile-only `DEC-031` dan source
   S109; S94/S108 tidak boleh dipromosikan ke production.
 - `CLOSED CUMULATIVE`: baseline mobile-only/payment, fixture visual sekunder,
   dan disclosure request customer dari source `1de6a935`, `77a25c7c`, serta
-  `8a9a2ef6` juga ancestor source production `e20c0ba3`. Kontrak S109 tetap
+  `8a9a2ef6` juga ancestor source production `0894df00`. Kontrak S109 tetap
   aktif: canvas storefront maksimum 460 piksel pada semua viewport.
 - `CLOSED` untuk deploy S119: source `20ff6829` aktif sebagai release
   `20260805052322-20ff682` setelah tenant activation readiness 100, full

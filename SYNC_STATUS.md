@@ -12,23 +12,21 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-07T07:42:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-07T08:02:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `ed385e0d9057b0ca1dd90b843c755b01cbe08acb` |
-| Informasi terakhir disinkronkan | SagaView S136 tenant-bound session production pada backend `4642b408` / `20260807003837-4642b40`; delivery `PRODUCTION_DEPLOYED`, activation `NOT_PRODUCTION_ACTIVATED`, dan business readiness `NOT_BUSINESS_READY`. |
+| Baseline sebelum pembaruan | `3356051c1ed7b10591d4d8a06afe1291cd53c02d` |
+| Informasi terakhir disinkronkan | SagaBook S127-S130 production pada source `0894df00` / release `20260806152606-0894df0`; recovery availability kosong, manual transfer, dan Payment Monitor aktif, sedangkan corpus/index/model AI tetap `AI_KNOWLEDGE_NOT_PROMOTED`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik fakta S136. Status delivery, activation, dan business readiness tetap dipisahkan. |
-| Error | Tidak ada error sinkronisasi. Authenticated UAT dan matriks viewport/zoom luas tetap residual S136. |
+| Konflik | Tidak ada konflik fakta runtime SagaBook. Status guard app, pipeline AI, delivery, activation, dan business readiness dipisahkan. |
+| Error | Tidak ada error sinkronisasi. Authenticated UAT, provider nyata, reconciliation penuh, dan pilot tetap residual SagaBook. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `README.md`
-- `docs/SAGA_PRODUCT_PORTFOLIO.md`
-- `products/sagaview/PRODUCT.md`
-- `products/sagaview/DOSSIER.md`
-- `products/sagaview/CHANGELOG.md`
-- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `GAPS.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
@@ -47,9 +45,11 @@ backup/restore, UAT, activation, dan business readiness tetap blocker.
 Ledger integrasi SagaBook dan SagaView masih bertahap. Auth/session SagaBook
 S123, status/write cabang S124, dan branch-context `/admin/reports` S125 sudah
 `INTEGRATION_VALIDATED`. Residual tenant/cabang adalah selector/filter lintas
-role/route, stale refetch, serta delete dependency/recovery. Residual report
-adalah Payment Monitor, pagination/filter/export, reconciliation provider,
-stale multi-tab, dan closing concurrency; residual auth adalah expiry idle,
+role/route, stale refetch, serta delete dependency/recovery. Recovery response
+availability kosong, initial-load manual transfer, dan aksi Payment Monitor
+S128-S130 sudah production. Residual payment/report adalah QRIS/provider nyata,
+pagination/filter/export, reconciliation provider, stale multi-tab, dan
+closing concurrency; residual auth adalah expiry idle,
 revocation lintas device, dan UI rate-limit 429. Status
 `INTEGRATION_VALIDATED` hanya diberikan setelah happy path, failure/retry,
 permission/tenant-negative, dan data integrity fitur terkait memiliki bukti
@@ -57,9 +57,9 @@ fresh. Prioritas berikutnya: tutup tenant/cabang route lain lalu katalog;
 SagaView auth/device/session, local ingest, lalu session flow dengan no-upload
 guarantee.
 
-Candidate AI S127 sudah `AI_EVAL_VALIDATED` untuk 18 kategori public-safe,
-tetapi production belum berubah. Residual sebelum promotion: Composer advisory
-feed fresh, backup/restore, exact candidate/rollback rehearsal, live smoke
+Guard scope/fallback AI S127 sudah termasuk source production, tetapi
+corpus/index/model AI tetap `AI_KNOWLEDGE_NOT_PROMOTED`. Residual sebelum
+promotion pipeline AI: live smoke
 product/out-of-scope/tenant-negative, monitoring latency/error/cost, serta
 inventory surface chatbot SagaDev lain. Fine-tuning/provider/data-retention
 baru memerlukan keputusan Andreas terpisah.

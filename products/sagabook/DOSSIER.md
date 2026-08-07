@@ -7,16 +7,20 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 6 Agustus 2026
+- Updated: 7 Agustus 2026 08:02 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED` untuk workflow yang tercantum di
   [PRODUCT](PRODUCT.md)
 - Business readiness: `NEEDS CONFIRMATION`
-- Admin Changelog navigation: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
-- Source kumulatif aktif: `e20c0ba3480e6143159108e313525d7576312146`,
-  release `20260806072249-e20c0ba`, rollback `20260806063717-cb8ef55`
+- Availability empty-response recovery, manual-transfer initial-load recovery,
+  dan Payment Monitor action recovery: `PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`
+- Source kumulatif aktif: `0894df00f6866688db4d053758a99d54ba4e8908`,
+  release `20260806152606-0894df0`, rollback `20260806142033-2415097`
 - Label candidate pada histori menunjukkan status saat bukti dibuat. Source
-  S98-S118 yang menjadi ancestor S126 aktif kumulatif; S94/S108 yang
+  S98-S130 yang menjadi ancestor release aktif sudah production kumulatif;
+  guard scope/fallback Support Hub aktif, tetapi corpus/index/model AI tetap
+  `AI_KNOWLEDGE_NOT_PROMOTED`; S94/S108 yang
   memperlebar storefront tetap deprecated dan tidak aktif.
 
 ## Overview produk
