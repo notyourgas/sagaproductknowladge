@@ -4,16 +4,15 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
-## 2026-08-07 - S136 tenant-bound session current-baseline candidate
+## 2026-08-07 - S136 tenant-bound session production
 
 - Klasifikasi: `CONFIRMED` dari exact source, red-to-green regression, dan
   acceptance disposable public-safe.
-- Status: `INTEGRATION_VALIDATED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED`; bukan `STAGING_READY`, `PRODUCTION_DEPLOYED`,
-  `PRODUCTION_ACTIVATED`, atau `BUSINESS_READY`.
-- Backend candidate `4642b4080f6056ef289c791d8997a63f8445f03b` dibangun
-  langsung di atas exact runtime production S135 `85ec0f64`; branch bersih,
-  pushed, dan tidak membawa migration.
+- Status: `PRODUCTION_DEPLOYED`; bukan `PRODUCTION_ACTIVATED` atau
+  `BUSINESS_READY`.
+- Backend source `4642b4080f6056ef289c791d8997a63f8445f03b` aktif sebagai
+  release `20260807003837-4642b40`; Studio source `07454264` dibangun ulang
+  sebagai `20260807003838-0745426`. Rollback S135 dipertahankan.
 - Sebelum: payload `tenantId` yang berbeda dari tenant credential perangkat
   masih mendapat `200` lalu memakai tenant perangkat. Sesudah: mismatch
   ditolak `403` sebelum lisensi, session, event, atau persistence dibuat.
@@ -24,8 +23,10 @@ Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
   pada 390x844 dan 1440x900. Dua session hanya berada pada tenant sah,
   masing-masing membawa delapan metadata foto dan total empat event; byte foto
   customer tetap lokal.
-- Production tetap S135. Promotion menunggu fresh backup/restore, exact
-  candidate+rollback rehearsal, deploy gate, dan post-release smoke.
+- Fresh encrypted backup/restore tiga database, rehearsal exact kandidat dan
+  rollback 6/6, preflight/deploy/post-preflight 6/6, canary payment/device
+  preservation, lima public smoke 200, service/header, dan error unit runtime
+  nol lulus. Tidak ada intent/QRIS baru atau aktivasi subscription tenant.
 
 ## 2026-08-07 - S135 Owner dan Studio workspace alignment production
 
@@ -75,7 +76,7 @@ Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
   device/session, foto customer, maupun data tenant. Owner UAT 50-100 file nyata
   pada dua akun tetap residual.
 - Kandidat S133 telah digantikan S136 yang direbase ke exact runtime S135;
-  S136 tetap belum production dan wajib melewati seluruh release gate.
+  S136 kemudian lulus seluruh release gate dan dipromosikan ke production.
 
 ## 2026-08-07 - S133 tenant-bound session candidate
 

@@ -30,20 +30,24 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 - File knowledge: product, dossier, changelog SagaBio, master, gaps,
   portfolio/root changelog, dan sync status.
 
-### SagaView S136 tenant-bound session current-baseline candidate
+### SagaView S136 tenant-bound session production
 
 - Ringkasan: payload session yang meminta tenant berbeda dari tenant credential
   device sekarang ditolak `403` sebelum persistence, sehingga UI tidak lagi
   menerima sukses palsu untuk workspace yang salah.
-- Klasifikasi: `CONFIRMED`; delivery `INTEGRATION_VALIDATED /
-  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
-- Source backend `4642b4080f6056ef289c791d8997a63f8445f03b`, berbasis
-  exact runtime S135 `85ec0f64`; production tidak berubah.
-- Gate: red-to-green `200 -> 403`, backend 29/544, regresi SagaView 142/1.692,
-  Playwright disposable 2/2 pada 390x844 dan 1440x900, Pint, Composer audit,
-  metadata-only/no-upload, dan tenant-negative lulus.
-- Blocker: fresh backup/restore, exact candidate+rollback rehearsal, deploy
-  gate, serta post-release smoke belum dijalankan untuk S136.
+- Klasifikasi: `CONFIRMED`; delivery `PRODUCTION_DEPLOYED`, activation
+  `NOT_PRODUCTION_ACTIVATED`, dan business readiness `NOT_BUSINESS_READY`.
+- Source/release backend `4642b4080f6056ef289c791d8997a63f8445f03b` /
+  `20260807003837-4642b40`; Studio source tetap `07454264` melalui release
+  `20260807003838-0745426`. Rollback S135 dipertahankan.
+- Gate: red-to-green `200 -> 403`, regresi SagaView 142/1.692, Playwright
+  disposable 2/2 pada 390x844 dan 1440x900, Pint focused, audit Composer/npm,
+  encrypted backup/restore tiga database, rehearsal kandidat+rollback 6/6,
+  deploy gate 6/6, canary/preservation, lima public smoke 200, service/header,
+  dan error unit runtime nol.
+- Boundary: tidak ada foto customer yang diunggah, payment intent/QRIS baru,
+  perubahan subscription, atau aktivasi tenant. Authenticated UAT dan matriks
+  zoom/viewport luas tetap residual.
 - AI: Support Hub 18 kategori kembali lulus 38/38 dengan 219 assertion;
   production/prompt/model tidak berubah dan status tetap
   `AI_EVAL_VALIDATED / AI_KNOWLEDGE_NOT_PROMOTED`.

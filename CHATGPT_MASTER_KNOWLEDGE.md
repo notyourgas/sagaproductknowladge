@@ -613,8 +613,9 @@ data tenant. Delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticate
 Owner UAT 50-100 file nyata pada dua akun tetap residual.
 
 Keputusan founder `DEC-055` mengaktifkan S135 Owner dan Studio workspace
-alignment. Backend source `85ec0f64f08d7f80769480e0b7217cad55dd1591`
-aktif sebagai release `20260806224422-85ec0f6`; Studio source
+alignment. Saat promosi S135, backend source
+`85ec0f64f08d7f80769480e0b7217cad55dd1591` memakai release
+`20260806224422-85ec0f6`; Studio source
 `07454264ad3c95d5fb5157135a333f6139bef054` aktif sebagai release
 `20260806224441-0745426`; rollback S134 dipertahankan. Server-auth tenant
 menjadi sumber request Owner pertama dan launcher membawa workspace target yang
@@ -626,15 +627,16 @@ rollback lulus. Tidak ada migration atau perubahan payment, subscription,
 device/session, foto customer, maupun data tenant. Authenticated Owner UAT dua
 workspace nyata tetap residual sebelum `BUSINESS_READY` mass-scale.
 
-Candidate S136 belum production. Backend source
-`4642b4080f6056ef289c791d8997a63f8445f03b` dibangun langsung di atas exact
-runtime S135 `85ec0f64` dan menolak mismatch tenant request versus credential
-device dengan `403` sebelum persistence. UI -> API -> disposable database ->
-response UI, idempotency, tenant/device-negative, metadata-only/no-upload, dan
-dua anchor viewport lulus. Statusnya `INTEGRATION_VALIDATED /
-LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; jangan menjawab seolah sudah
-aktif di production. Promotion masih membutuhkan fresh backup/restore,
-candidate+rollback rehearsal, deploy gate, dan post-release smoke.
+S136 sudah `PRODUCTION_DEPLOYED`. Backend source
+`4642b4080f6056ef289c791d8997a63f8445f03b` aktif sebagai release
+`20260807003837-4642b40`; Studio tetap source `07454264` melalui release
+`20260807003838-0745426`; rollback S135 dipertahankan. Session menolak mismatch
+tenant request versus credential device dengan `403` sebelum persistence.
+UI -> API -> disposable database -> response UI, idempotency,
+tenant/device-negative, metadata-only/no-upload, backup/restore,
+candidate+rollback rehearsal, deploy/post-preflight 6/6, canary/preservation,
+dan smoke publik lulus. Jangan menyebut S136 `PRODUCTION_ACTIVATED` atau
+`BUSINESS_READY` sebelum authenticated UAT dan keputusan activation selesai.
 Implementasi rotate lama yang menukar W/H 90 derajat telah `DEPRECATED` oleh
 koreksi founder `DEC-036`. Perilaku production yang aktif adalah
 diterima adalah tahan ikon rotate lalu drag ke kiri/kanan agar slot mendapat

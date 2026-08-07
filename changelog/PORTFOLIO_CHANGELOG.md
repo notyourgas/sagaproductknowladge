@@ -14,19 +14,22 @@
   business `NOT_BUSINESS_READY`. Central identity, SMTP, object storage, owner
   UAT, dan wildcard renewal tetap blocker.
 
-## 2026-08-07 - SagaView S136 tenant-bound session candidate
+## 2026-08-07 - SagaView S136 tenant-bound session production
 
-- Candidate backend `4642b4080f6056ef289c791d8997a63f8445f03b` berbasis
-  exact runtime S135 `85ec0f64`; mismatch tenant request versus credential
+- Backend `4642b4080f6056ef289c791d8997a63f8445f03b` aktif sebagai release
+  `20260807003837-4642b40`; mismatch tenant request versus credential
   device sekarang ditolak `403` sebelum persistence.
 - Red-to-green `200 -> 403`, 29 focused backend test/544 assertion, 142 regresi
   SagaView/1.692 assertion, Pint, Composer audit, serta Playwright disposable
   2/2 pada 390x844 dan 1440x900 lulus.
 - Bukti database hanya memuat tenant sah; payload tetap metadata-only dan tidak
-  mengunggah foto customer. Production S135 tidak berubah.
-- Delivery `INTEGRATION_VALIDATED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED`; fresh backup/restore, rehearsal kandidat+rollback,
-  deploy gate, dan post-release smoke tetap blocker promotion.
+  mengunggah foto customer. Studio tetap source `07454264` melalui release
+  `20260807003838-0745426`; rollback S135 dipertahankan.
+- Fresh encrypted backup/restore tiga database, rehearsal kandidat+rollback
+  6/6, preflight/deploy/post-preflight 6/6, canary payment/device preservation,
+  lima smoke 200, service/header, dan error unit runtime nol lulus.
+- Delivery `PRODUCTION_DEPLOYED`; activation `NOT_PRODUCTION_ACTIVATED` dan
+  business readiness `NOT_BUSINESS_READY` sampai authenticated UAT selesai.
 - Support Hub regression sintetis 18 kategori kembali lulus 38/38 dengan 219
   assertion; status AI tetap `AI_EVAL_VALIDATED /
   AI_KNOWLEDGE_NOT_PROMOTED` tanpa perubahan prompt/model/production.

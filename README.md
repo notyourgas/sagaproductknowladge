@@ -45,7 +45,7 @@ status berbeda; repository harus terus disinkronkan setelah perubahan material.
 |---|---|---|---|
 | SagaDevs | Parent product hub dan lead jasa | `STAGING_DEPLOYED` pada Preview; production unchanged | [Product](products/sagadevs/PRODUCT.md) · [Dossier](products/sagadevs/DOSSIER.md) |
 | SagaBook | Booking dan operasi studio sebelum sesi | `PRODUCTION_DEPLOYED` | [Product](products/sagabook/PRODUCT.md) · [Dossier](products/sagabook/DOSSIER.md) |
-| SagaView | Selection, frame, output, dan print setelah sesi | Studio live; candidate `IMPLEMENTED_NOT_DEPLOYED` | [Product](products/sagaview/PRODUCT.md) · [Dossier](products/sagaview/DOSSIER.md) |
+| SagaView | Selection, frame, output, dan print setelah sesi | `PRODUCTION_DEPLOYED`; activation/UAT masih bertahap | [Product](products/sagaview/PRODUCT.md) · [Dossier](products/sagaview/DOSSIER.md) |
 | SagaBio | Mini website customer-journey | `LOCAL_VALIDATED` | [Product](products/sagabio/PRODUCT.md) · [Dossier](products/sagabio/DOSSIER.md) |
 | SagaMenu | E-menu/e-katalog preview-first | `LOCAL_VALIDATED` | [Product](products/sagamenu/PRODUCT.md) · [Dossier](products/sagamenu/DOSSIER.md) |
 | SagaFin | Finance tracker personal | Runtime `UNVERIFIED` | [Product](products/sagafin/PRODUCT.md) · [Dossier](products/sagafin/DOSSIER.md) |

@@ -62,7 +62,7 @@ session, cancellation, dan data masing-masing produk tetap terpisah.
 |---|---|---|---|
 | SagaDevs | Public product hub | PRODUCTION_DEPLOYED | Hero Scale v4 aktif di `sagadevs.com`; logo 3D 1,5× dan source composition tetap dipertahankan |
 | SagaBook | Core SaaS | PRODUCTION_DEPLOYED | Customer Booking Center aktif; menuju onboarding dan first-booking activation |
-| SagaView | Core SaaS | PRODUCTION_DEPLOYED + IMPLEMENTED_NOT_DEPLOYED | Studio 4R dan operator session handoff live; backend komersial terbaru masih blocked provider canary |
+| SagaView | Core SaaS | PRODUCTION_DEPLOYED | Studio 4R dan session tenant-bound live; authenticated UAT dan Founding Studio Pilot belum selesai |
 | SagaBio | Core SaaS | LOCAL_VALIDATED | MVP Laravel berjalan lokal; belum staging/production |
 | SagaMenu | Core SaaS | LOCAL_VALIDATED | Pilot closure lokal; environment production belum tersedia |
 | SagaFin | Core SaaS | UNVERIFIED | Controlled public trial pernah dilaporkan; runtime/provider perlu verifikasi ulang |

@@ -12,20 +12,23 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-07T06:40:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-07T07:42:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `07f066a0b80b534b3a57007dccb04f08fa2d8a83` |
-| Informasi terakhir disinkronkan | SagaBio mobile journey finalization production pada exact source `bdbf692a1dc031919dbf171cc1a8ca8497998810`; delivery `PRODUCTION_DEPLOYED`, activation `NOT_PRODUCTION_ACTIVATED`, dan business readiness `NOT_BUSINESS_READY`. |
+| Baseline sebelum pembaruan | `ed385e0d9057b0ca1dd90b843c755b01cbe08acb` |
+| Informasi terakhir disinkronkan | SagaView S136 tenant-bound session production pada backend `4642b408` / `20260807003837-4642b40`; delivery `PRODUCTION_DEPLOYED`, activation `NOT_PRODUCTION_ACTIVATED`, dan business readiness `NOT_BUSINESS_READY`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik fakta SagaBio. Status delivery, activation, dan business readiness tetap dipisahkan. |
-| Error | Tidak ada error sinkronisasi. Tiga integrasi eksternal dan owner UAT tetap menjadi blocker aktivasi SagaBio. |
+| Konflik | Tidak ada konflik fakta S136. Status delivery, activation, dan business readiness tetap dipisahkan. |
+| Error | Tidak ada error sinkronisasi. Authenticated UAT dan matriks viewport/zoom luas tetap residual S136. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/sagabio/PRODUCT.md`
-- `products/sagabio/DOSSIER.md`
-- `products/sagabio/CHANGELOG.md`
+- `README.md`
+- `docs/SAGA_PRODUCT_PORTFOLIO.md`
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/DOSSIER.md`
+- `products/sagaview/CHANGELOG.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `GAPS.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
@@ -78,9 +81,9 @@ aktif dan menyelesaikan satu booking nyata terkontrol sebelum klaim
 SagaView compact all-menu, workspace Session/Output/Izin Foto monitor besar,
 free drag rotation, pemisahan draft/publish, bulk frame export, server ZIP untuk
 tiga sampai 100 pilihan, dan resumable server batch import aktif kumulatif pada
-Studio `20260806224441-0745426`; rollback `20260806213012-3b66f8d`
-dipertahankan. Backend aktif `20260806224422-85ec0f6`; rollback
-`20260806212915-902e5dd`. Authenticated
+Studio `20260807003838-0745426`; rollback `20260806224441-0745426`
+dipertahankan. Backend aktif `20260807003837-4642b40`; rollback
+`20260806224422-85ec0f6`. Authenticated
 Owner visual UAT dengan frame miring dan
 publish frame nyata serta Founding Studio Pilot tetap dibutuhkan sebelum klaim
 `BUSINESS_READY` mass-scale.
@@ -114,8 +117,17 @@ pertama; launcher/aktivasi wajib cocok dengan workspace target dan state/runtime
 Studio diisolasi per workspace. Acceptance, backup/restore, preflight,
 candidate+rollback rehearsal, deploy 6/6, preservation, marker live, rollback,
 dan post-rollback preflight lulus. Residual: authenticated Owner UAT dua
-workspace nyata. Candidate S136 tetap belum production dan menunggu fresh
-backup/restore, rehearsal kandidat+rollback, deploy gate, serta smoke.
+workspace nyata.
+
+SagaView S136 tenant-bound session sudah `PRODUCTION_DEPLOYED` pada backend
+source/release `4642b408` / `20260807003837-4642b40` dan Studio rebuild
+`20260807003838-0745426`. Mismatch tenant request versus credential device
+ditolak `403` sebelum persistence. Backup/restore tiga database,
+candidate+rollback rehearsal, preflight/deploy/post-preflight 6/6,
+canary/preservation, lima smoke 200, service/header, dan error unit runtime nol
+lulus. Tidak ada foto customer yang diunggah, intent/QRIS baru, perubahan
+subscription, atau aktivasi tenant. Authenticated UAT tetap residual sebelum
+`PRODUCTION_ACTIVATED` dan `BUSINESS_READY`.
 
 Bulk export Galeri Frame `DEC-044` sudah `PRODUCTION_DEPLOYED /
 PRODUCTION_ACTIVATED`; klausa packaging-nya dikoreksi oleh `DEC-049`. Satu atau

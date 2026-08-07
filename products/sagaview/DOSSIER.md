@@ -276,7 +276,7 @@ aktivasi Studio cocok dengan target tersebut. Server-auth tenant menang sebelum
 request Owner pertama; perpindahan workspace mereset batch/launcher lama.
 Studio mengarsipkan state serta metadata runtime per workspace, membersihkan
 state aktif lintas tenant, memulihkan state target bila ada, lalu bootstrap dan
-reload. Backend source/release aktif adalah `85ec0f64` /
+reload. Saat promosi S135, backend source/release adalah `85ec0f64` /
 `20260806224422-85ec0f6`; Studio source/release aktif `07454264` /
 `20260806224441-0745426`; rollback S134 dipertahankan. Acceptance 344 test
 backend/2.852 assertion, 158 unit Studio, 5 Playwright device-transfer,
@@ -284,6 +284,18 @@ dependency audit, backup/restore, rehearsal kandidat+rollback, deploy `6/6`,
 live marker, preservation, dan rollback lulus. Tidak ada migration atau
 perubahan payment, subscription, device/session, foto customer, maupun data
 tenant. UAT Owner dua workspace nyata tetap residual.
+
+S136 memperketat boundary session: requested tenant wajib sama dengan tenant
+credential device dan mismatch ditolak `403` sebelum persistence. Backend
+source/release aktif `4642b408` / `20260807003837-4642b40`; Studio tetap source
+`07454264` melalui release `20260807003838-0745426`; rollback S135
+dipertahankan. Regression 142 test/1.692 assertion, Playwright disposable 2/2,
+encrypted backup/restore tiga database, rehearsal kandidat+rollback 6/6,
+preflight/deploy/post-preflight 6/6, canary/preservation, lima public smoke 200,
+service/header, dan error unit runtime nol lulus. Tidak ada foto customer yang
+diunggah, payment intent/QRIS baru, perubahan subscription, atau aktivasi
+tenant. Status `PRODUCTION_DEPLOYED`, belum `PRODUCTION_ACTIVATED` atau
+`BUSINESS_READY`.
 
 Mulai sesi production memakai checklist perangkat, paket, folder, frame, dan
 output serta satu CTA kontekstual 48 px. Utility cloud/recovery yang sehat

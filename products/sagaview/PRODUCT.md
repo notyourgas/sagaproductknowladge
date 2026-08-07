@@ -369,8 +369,8 @@ dua akun tetap residual sebelum `BUSINESS_READY`.
 ### S135 Owner dan Studio workspace alignment production
 
 `CONFIRMED` melalui `DEC-055`, dengan delivery dan activation
-`PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Backend source
-`85ec0f64f08d7f80769480e0b7217cad55dd1591` aktif sebagai release
+`PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Saat promosi S135, backend source
+`85ec0f64f08d7f80769480e0b7217cad55dd1591` memakai release
 `20260806224422-85ec0f6`; Studio source
 `07454264ad3c95d5fb5157135a333f6139bef054` aktif sebagai release
 `20260806224441-0745426`. Rollback S134 dipertahankan pada backend
@@ -391,6 +391,23 @@ candidate+rollback rehearsal `6/6`, atomic deploy, canary/preservation,
 service/journal/header/public smoke, marker live, rollback ke S134 dan pemulihan
 ke S135. Authenticated Owner UAT dua workspace nyata tetap residual sebelum
 `BUSINESS_READY` mass-scale.
+
+### S136 tenant-bound session production
+
+`CONFIRMED` dengan delivery `PRODUCTION_DEPLOYED`; activation dan business
+readiness belum diklaim. Backend source
+`4642b4080f6056ef289c791d8997a63f8445f03b` aktif sebagai release
+`20260807003837-4642b40`; Studio source tetap
+`07454264ad3c95d5fb5157135a333f6139bef054` melalui release
+`20260807003838-0745426`. Rollback S135 dipertahankan.
+
+Pembuatan session sekarang membandingkan tenant yang diminta dengan tenant
+credential device dan menolak mismatch `403` sebelum persistence. Alur tetap
+metadata-only: foto customer, editor, dan export tidak berpindah ke cloud.
+Backup/restore, rehearsal kandidat+rollback, deploy gate, canary, smoke publik,
+service/header, dan post-preflight lulus. Tidak ada payment intent/QRIS baru,
+perubahan subscription, atau aktivasi tenant. Authenticated UAT serta matriks
+zoom/viewport luas tetap residual.
 
 ## Session completion dan privacy handoff
 
