@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 8 Agustus 2026 02:38 WIB
+Updated: 8 Agustus 2026 03:27 WIB
 Evidence status: production + source verified
 
 ## Tujuan dokumen
@@ -36,6 +36,13 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 - Label candidate pada bagian histori di bawah adalah status saat bukti itu
   dibuat. Source S98-S130 yang menjadi ancestor release aktif sudah aktif
   kumulatif; arah storefront lebar S94/S108 tetap deprecated dan tidak aktif.
+- Candidate lokal S147 source
+  `0d962430177569eaa6e53b053eedacd6cee01ec7` menutup irisan pertama S6:
+  konflik stale-write editor Add-on kini dapat memuat response API terbaru,
+  pulih dari kegagalan GET tanpa mengirim ulang mutation stale, dan menjaga
+  permission/tenant boundary. Statusnya `UIUX_VALIDATED /
+  INTEGRATION_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+  production dan aktivasi subscription tidak berubah.
 
 ## Ringkasan
 

@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 8 Agustus 2026 02:38 WIB
+Evidence cut-off: 8 Agustus 2026 03:27 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -207,6 +207,16 @@ staff 403 dan tenant-negative 404 mempertahankan data. Statusnya
 `EXIT_GATE_ACCEPTED / LOCAL_VALIDATED`, S6 add-on/resource READY tetapi belum
 dimulai, dan production tetap release `20260806152606-0894df0`. Rollback symlink
 belum ada dan wajib ditutup sebelum S21.
+
+Candidate SagaBook S147 source
+`0d962430177569eaa6e53b053eedacd6cee01ec7` menutup irisan pertama S6 secara
+lokal. Konflik stale-write editor Add-on sekarang menyediakan `Muat data
+terbaru`; recovery mengambil response dashboard aktual, mengganti baseline
+server, dan saat jaringan gagal hanya mengulang GET, bukan POST stale. Staff
+tetap 403 dan target tenant lain 404 tanpa perubahan data. Statusnya
+`UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; S6 `IN_PROGRESS`, production tetap release
+`20260806152606-0894df0`, dan jangan menyebut seluruh Add-on/resource selesai.
 
 Candidate SagaBook Sprint 2 terbaru adalah source
 `bf1766ae84c352cf3687383ca31947a3e619f575`, belum production. UI rate-limit

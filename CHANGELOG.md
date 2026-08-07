@@ -12,6 +12,24 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-08
 
+### SagaBook Sprint 6 Add-on stale-write recovery candidate
+
+- Ringkasan: editor Add-on yang menerima konflik 409 kini dapat memuat response
+  server terbaru, mengganti baseline stale, dan melanjutkan edit tanpa
+  menimpa versi server atau mengirim request ganda.
+- Klasifikasi: `CONFIRMED`; source
+  `0d962430177569eaa6e53b053eedacd6cee01ec7`; status `UIUX_VALIDATED /
+  INTEGRATION_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; S6
+  `IN_PROGRESS`.
+- Gate: focused backend 3/3 (16), full backend 979/979 (11.227), browser
+  S141-S147 20 pass/6 intentional skip, CRUD/hardening 16/16, AI 44/44
+  (3.440), build/typecheck/design 26/0, Pint/diff, npm dan Composer audit nol.
+  OSV eksternal timeout dua kali sehingga bukti fresh belum tersedia.
+- Production berubah: tidak. Release aktif tetap `20260806152606-0894df0`;
+  rollback/previous symlink serta evidence OSV fresh wajib ditutup sebelum S21.
+- File knowledge: product, dossier, changelog, ledger, master knowledge, gaps,
+  portfolio/root changelog, dan sync status.
+
 ### SagaBook Sprint 5 background publish/deactivation integrity candidate
 
 - Ringkasan: status Background kini memakai boolean valid, menunggu response

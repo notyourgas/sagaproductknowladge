@@ -8,7 +8,7 @@ diubah menjadi klaim publik sebelum ditutup dengan bukti atau keputusan owner.
 
 ## Konteks
 
-Daftar ini berlaku pada evidence cut-off 8 Agustus 2026 02:38 WIB dan harus diperbarui
+Daftar ini berlaku pada evidence cut-off 8 Agustus 2026 03:27 WIB dan harus diperbarui
 ketika keputusan atau release baru menutup gap.
 
 ## Cara memakai
@@ -85,8 +85,14 @@ ketika keputusan atau release baru menutup gap.
   `ce537667` menormalisasi status Background, menjaga state server pada failure,
   memisahkan retry/409/422 recovery, mencegah request dan layout shift ganda,
   serta mempertahankan staff/tenant boundary. Combined S5 kini
-  `EXIT_GATE_ACCEPTED / LOCAL_VALIDATED`; S6 add-on/resource menjadi READY
-  tetapi belum dimulai. Health SagaBook read-only hijau, tetapi
+  `EXIT_GATE_ACCEPTED / LOCAL_VALIDATED`. Candidate S147 `0d962430` menutup
+  recovery konflik stale-write Add-on melalui response API aktual, retry GET
+  tanpa POST stale, double-submit guard, serta staff 403 dan tenant-negative
+  404 tanpa perubahan data. Irisan ini `LOCAL_VALIDATED`; S6 sekarang
+  `IN_PROGRESS`, tetapi delete/dependency, exit Add-on, dan resource masih
+  residual. npm dan Composer audit fresh nol advisory; OSV eksternal timeout
+  dua kali sehingga bukti fresh OSV belum tersedia dan wajib diulang sebelum
+  staging/release. Health SagaBook read-only hijau, tetapi
   rollback/previous symlink production tidak ada dan wajib dipulihkan sebelum
   release immutable S21.
   Recovery response availability kosong,

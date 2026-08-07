@@ -12,14 +12,14 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-08T02:38:37+07:00 |
+| Waktu pembaruan terakhir | 2026-08-08T03:27:19+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `8be0c566d5677eaa73436e89a5b17a4715d45a07` |
-| Informasi terakhir disinkronkan | SagaBook S146 source `ce537667`: publish/deactivation Background memakai status boolean, response API aktual, recovery network/409/422, double-submit/layout-shift guard, serta staff/tenant negative; S5 exit gate diterima lokal dan production tetap `20260806152606-0894df0`. |
+| Baseline sebelum pembaruan | `9c1fb58046f8dc2fef953776e52f83d23918fb3f` |
+| Informasi terakhir disinkronkan | SagaBook S147 source `0d962430`: recovery stale-write Add-on memakai response API aktual, retry GET tanpa POST stale, double-submit guard, serta staff/tenant negative; S6 `IN_PROGRESS` dan production tetap `20260806152606-0894df0`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
 | Konflik | Tidak ada. Kontrak storefront mobile-only, subscription skip, urutan sprint, SagaView local-first, dan product boundary tetap konsisten. |
-| Error | Full backend pertama mengalami empat gangguan cache/fixture Windows di luar diff; empat targeted retry lulus lalu full rerun 977/977 hijau. Production tidak diubah. Rollback/previous symlink SagaBook tetap blocker S21. |
+| Error | OSV eksternal timeout dua kali saat menghubungi `api.osv.dev`, sehingga bukti OSV fresh belum tersedia; npm dan Composer audit nol advisory. Production tidak diubah. Rollback/previous symlink SagaBook tetap blocker S21. |
 
 ## File yang berubah pada sinkronisasi ini
 
@@ -34,6 +34,9 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `CHANGELOG.md`
 
 ## Sinkronisasi sebelumnya
+
+- SagaBook S146 source `ce537667` disinkronkan sebagai penutup S5
+  `EXIT_GATE_ACCEPTED / LOCAL_VALIDATED`; production tetap tidak berubah.
 
 - SagaView S142 backend `e6a7f979` dan Studio `c4f664fc` disinkronkan sebagai
   `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated Owner/Studio UAT
@@ -95,8 +98,11 @@ transactional row lock, double-submit guard, dan recovery UI aktual. Candidate
 `b9aeb7c9` menutup delete dependency Background, `c5601197` menutup stale-write
 recovery Background, dan `ce537667` menutup publish/deactivation integrity
 dengan recovery network/409/422 serta staff/tenant negative. Combined S5 kini
-`EXIT_GATE_ACCEPTED / LOCAL_VALIDATED`; S6 add-on/resource menjadi READY tetapi
-belum dimulai.
+`EXIT_GATE_ACCEPTED / LOCAL_VALIDATED`. Candidate S147 `0d962430` kemudian
+menutup stale-write recovery Add-on dengan reload response API aktual, retry
+GET tanpa mutation stale, double-submit guard, staff 403, dan foreign tenant
+404 tanpa perubahan data. S6 sekarang `IN_PROGRESS`; coverage Add-on lain dan
+resource masih residual.
 Recovery response availability kosong, initial-load manual transfer, dan aksi Payment Monitor
 S128-S130 sudah production. Residual payment/report adalah QRIS/provider nyata,
 pagination/filter/export, reconciliation provider, stale multi-tab, dan
@@ -106,8 +112,8 @@ sudah `LOCAL_VALIDATED`; Sprint 2 exit gate diterima lokal. Source belum
 production dan deploy tetap ditahan sampai S21. Status
 `INTEGRATION_VALIDATED` hanya diberikan per irisan setelah happy path, failure/retry,
 permission/tenant-negative, dan data integrity fitur terkait memiliki bukti
-fresh. Prioritas berikutnya: add-on status/persistence, add-on delete/stale
-recovery, resource status/persistence dalam S6, kemudian
+fresh. Prioritas berikutnya: add-on delete/dependency, combined Add-on
+create/edit/delete exit, resource status/persistence dalam S6, kemudian
 availability/slot concurrency S7-S8;
 SagaView auth/device/session, local ingest, lalu session flow dengan no-upload
 guarantee.

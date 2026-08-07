@@ -4,6 +4,28 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-08 - Sprint 6 Add-on stale-write recovery candidate
+
+- Klasifikasi `CONFIRMED`; source
+  `0d962430177569eaa6e53b053eedacd6cee01ec7` pada branch
+  `codex/s147-sagabook-addon-stale-recovery`.
+- Before: konflik 409 editor Add-on hanya menjadi error generik tanpa recovery
+  aman. After: UI menyediakan `Muat data terbaru`, merender baseline server
+  aktual, dan ketika GET gagal hanya mengulang recovery GET melalui
+  `Coba muat lagi`, bukan mutation stale.
+- Backend mempertahankan nama, harga, dan `lock_version` versi server;
+  staff tetap 403 dan target tenant lain 404 tanpa perubahan data. Guard ref
+  sinkron mencegah save/reload ganda.
+- Focused backend 3/3 (16), full backend 979/979 (11.227), S141-S147 browser
+  20 pass/6 intentional skip, CRUD/hardening 16/16, AI 44/44 (3.440), build,
+  typecheck, design 26/0, targeted Pint/diff, npm audit nol, dan Composer audit
+  nol advisory lulus. OSV eksternal timeout dua kali sehingga bukti fresh-nya
+  belum tersedia.
+- Status `UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; S6 `IN_PROGRESS`. Production tetap
+  `20260806152606-0894df0`; rollback/previous symlink dan bukti OSV fresh harus
+  ditutup sebelum release S21.
+
 ## 2026-08-08 - Sprint 5 background publish/deactivation integrity candidate
 
 - Klasifikasi `CONFIRMED`; source

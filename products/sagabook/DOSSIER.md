@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 8 Agustus 2026 02:38 WIB
+- Updated: 8 Agustus 2026 03:27 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED` untuk workflow yang tercantum di
   [PRODUCT](PRODUCT.md)
@@ -334,6 +334,20 @@ LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; combined S5
 `EXIT_GATE_ACCEPTED / LOCAL_VALIDATED`. S6 add-on/resource menjadi READY
 berikutnya. Production tetap `20260806152606-0894df0`; rollback/previous
 symlink wajib dipulihkan sebelum S21.
+
+Vertical slice pertama S6 ditutup lokal pada source
+`0d962430177569eaa6e53b053eedacd6cee01ec7`. Konflik stale-write editor Add-on
+sekarang menampilkan recovery `Muat data terbaru`; GET dashboard aktual
+mengganti draft/baseline dengan versi server, sedangkan kegagalan jaringan
+menampilkan `Coba muat lagi` dan tidak mengulang POST stale. Ref sinkron
+mencegah save/reload ganda. Focused backend 3/3 (16), full backend 979/979
+(11.227), S141-S147 browser 20 pass/6 intentional skip, CRUD/hardening 16/16,
+AI 44/44 (3.440), build/typecheck/design 26/0, targeted Pint/diff, npm audit
+nol, dan Composer audit nol advisory lulus. OSV eksternal tidak menghasilkan
+bukti karena koneksi ke `api.osv.dev` timeout dua kali; ini dicatat sebagai gap
+audit sebelum release. Status irisan `UIUX_VALIDATED / INTEGRATION_VALIDATED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; S6 tetap `IN_PROGRESS` dan
+production tetap `20260806152606-0894df0`.
 
 Tenant/cabang S124 pada source
 `f6988cb945c5ca224015d7fecbc94e81c535fc60` aktif sebagai release

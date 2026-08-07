@@ -1,5 +1,20 @@
 # Portfolio Changelog
 
+## 2026-08-08 - SagaBook Sprint 6 Add-on stale-write recovery candidate
+
+- Source `0d962430177569eaa6e53b053eedacd6cee01ec7` menutup konflik
+  stale-write Add-on pertama S6 tanpa mengubah production.
+- UI merender 409 aktual, menyediakan `Muat data terbaru`, dan memulihkan
+  baseline dari GET dashboard. Kegagalan recovery menampilkan retry GET tanpa
+  mengirim ulang POST stale; save/reload ganda diblokir.
+- Full backend 979/979, focused backend 3/3, S141-S147 browser 20 pass/6
+  intentional skip, CRUD/hardening 16/16, AI 44/44, build/typecheck/design,
+  targeted Pint/diff, serta npm dan Composer audit nol advisory lulus. OSV
+  eksternal timeout dua kali dan dicatat sebagai evidence gap.
+- Status `UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; S6 `IN_PROGRESS`, release aktif tetap
+  `20260806152606-0894df0`, dan rollback/previous symlink belum tersedia.
+
 ## 2026-08-08 - SagaBook Sprint 5 background status integrity candidate
 
 - Source `ce537667f314e80b8b94479f0defb9d60524f4f0` menutup
