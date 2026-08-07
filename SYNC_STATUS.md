@@ -12,23 +12,23 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-07T23:18:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-07T23:24:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `6cc875267efd354d6ee6da775b0d00ffb7f93234` |
-| Informasi terakhir disinkronkan | AOGTIVITY final duration pada source `d97547acf92d68ad8567401858b76e27adbd0f56`: Lomba 9/10 masing-masing 30 menit, Awarding 15 menit, selesai 19.20; production aktif pada migration 027. |
+| Baseline sebelum pembaruan | `d5969f4cd93a9e26ad1b53c82967a77425d9eaaa` |
+| Informasi terakhir disinkronkan | SagaBook S143 pada source `be02a4e7cc092096c0fdc686c41d4144e93329f0`: penghapusan paket dengan dependensi booking/background gagal aman, menyediakan recovery UI, dan berstatus lokal tanpa perubahan production. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik kontrak waktu AOGTIVITY; klausa durasi provisional DEC-058 ditandai deprecated oleh DEC-059. Status production activation dan business readiness tetap dipisahkan. |
-| Error | Tidak ada error gate release; human operational UAT dan rollback rehearsal tetap residual sebelum business readiness. |
+| Konflik | Tidak ada konflik dengan sinkronisasi AOGTIVITY pada baseline; status candidate SagaBook, production activation, dan business readiness tetap dipisahkan. |
+| Error | Tidak ada error gate lokal S143; deployment immutable SagaBook tidak dijalankan karena roadmap belum mencapai S21. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/aogticvity/PRODUCT.md`
-- `products/aogticvity/DOSSIER.md`
-- `products/aogticvity/CHANGELOG.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
-- `DECISIONS.md`
 - `GAPS.md`
 - `SYNC_STATUS.md`
 - `CHANGELOG.md`
@@ -73,8 +73,10 @@ menutup recovery stale-write paket 409 melalui API aktual, baseline baru,
 double-submit guard, dan permission/tenant-negative. Irisan ini lokal saja;
 candidate `4b71e347` berikutnya menutup deactivation paket yang masih dipakai
 background aktif dengan 409 transactional, row lock, dan recovery UI aktual.
-Irisan ini juga lokal saja; delete dependency/recovery paket, coverage
-background, dan exit gate S5 masih residual sebelum S6.
+Candidate `be02a4e7` berikutnya menutup delete dependency/recovery paket dengan
+409 `package_delete_blocked`, hitungan booking/background public-safe,
+transactional row lock, double-submit guard, dan recovery UI aktual. Irisan ini
+juga lokal saja; coverage background dan exit gate S5 masih residual sebelum S6.
 Recovery response availability kosong, initial-load manual transfer, dan aksi Payment Monitor
 S128-S130 sudah production. Residual payment/report adalah QRIS/provider nyata,
 pagination/filter/export, reconciliation provider, stale multi-tab, dan
@@ -84,7 +86,8 @@ sudah `LOCAL_VALIDATED`; Sprint 2 exit gate diterima lokal. Source belum
 production dan deploy tetap ditahan sampai S21. Status
 `INTEGRATION_VALIDATED` hanya diberikan per irisan setelah happy path, failure/retry,
 permission/tenant-negative, dan data integrity fitur terkait memiliki bukti
-fresh. Prioritas berikutnya: paket/background S5, add-on/resource S6, kemudian
+fresh. Prioritas berikutnya: background dan exit gate S5, add-on/resource S6,
+kemudian
 availability/slot concurrency S7-S8;
 SagaView auth/device/session, local ingest, lalu session flow dengan no-upload
 guarantee.

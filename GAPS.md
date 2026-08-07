@@ -8,7 +8,7 @@ diubah menjadi klaim publik sebelum ditutup dengan bukti atau keputusan owner.
 
 ## Konteks
 
-Daftar ini berlaku pada evidence cut-off 7 Agustus 2026 23:18 WIB dan harus diperbarui
+Daftar ini berlaku pada evidence cut-off 7 Agustus 2026 23:24 WIB dan harus diperbarui
 ketika keputusan atau release baru menutup gap.
 
 ## Cara memakai
@@ -68,9 +68,14 @@ ketika keputusan atau release baru menutup gap.
   `LOCAL_VALIDATED`, belum production. Candidate berikutnya `4b71e347`
   menutup deactivation paket yang masih dipakai background aktif melalui 409
   transactional, urutan row lock, state UI aktual, dan recovery ke Background;
-  irisan ini juga `LOCAL_VALIDATED` serta belum production. Residual S5 adalah
-  delete dependency/recovery paket, coverage background, dan combined exit
-  gate; S6 add-on/resource belum dimulai. Recovery response availability kosong,
+  irisan ini juga `LOCAL_VALIDATED` serta belum production. Candidate
+  `be02a4e7` berikutnya menutup delete dependency/recovery paket: backend
+  menghitung penggunaan booking dan relasi background, mengembalikan 409
+  public-safe, serta mempertahankan paket tanpa audit sukses; UI memberi
+  recovery ke Background dan mencegah double-submit. Irisan ini juga
+  `LOCAL_VALIDATED` dan belum production. Residual S5 adalah coverage
+  background dan combined exit gate; S6 add-on/resource belum dimulai.
+  Recovery response availability kosong,
   initial-load manual transfer, dan aksi Payment Monitor sudah production pada
   S128-S130. Residual payment/report adalah QRIS/provider nyata,
   pagination/filter/export, reconciliation provider, stale multi-tab, dan

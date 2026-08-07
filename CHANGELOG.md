@@ -12,6 +12,24 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-07
 
+### SagaBook Sprint 5 package delete dependency recovery candidate
+
+- Ringkasan: penghapusan paket yang masih dipakai booking atau terhubung ke
+  background sekarang gagal aman dengan 409 terstruktur, hitungan dependensi,
+  dan recovery ke menu Background tanpa menghapus paket atau membuat sukses
+  palsu.
+- Klasifikasi: `CONFIRMED`; source
+  `be02a4e7cc092096c0fdc686c41d4144e93329f0`; status `UIUX_VALIDATED /
+  INTEGRATION_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: focused backend 27/27 (240), full backend 974/974 (11.187), browser
+  package regression 7 pass/1 intentional skip dan CRUD/hardening 16/16,
+  AI 38/38 (219), build/typecheck, design 26/0, audit dependency,
+  Pint/diff, dan cleanup lulus.
+- Production berubah: tidak. Release aktif tetap `20260806152606-0894df0`;
+  S5 belum exit gate dan deploy tetap menunggu S21.
+- File knowledge: product, dossier, changelog, ledger, master knowledge, gaps,
+  portfolio/root changelog, dan sync status.
+
 ### AOGTIVITY final duration production
 
 - Ringkasan: Lomba 9 dan Lomba 10 dikunci masing-masing 30 menit, Awarding &

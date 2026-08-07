@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 7 Agustus 2026 08:02 WIB
+- Updated: 7 Agustus 2026 23:24 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED` untuk workflow yang tercantum di
   [PRODUCT](PRODUCT.md)
@@ -271,6 +271,21 @@ tidak menulis audit sukses palsu. UI menyediakan state pending/error serta aksi
 ganda. Status `UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
 IMPLEMENTED_NOT_DEPLOYED`; production tetap `20260806152606-0894df0`. Delete
 dependency/recovery paket, coverage background, dan exit gate S5 belum selesai.
+
+Vertical slice S5 selanjutnya ditutup lokal pada source
+`be02a4e7cc092096c0fdc686c41d4144e93329f0`. Penghapusan paket yang masih
+dipakai booking atau terhubung ke background kini menghasilkan satu respons
+409 `package_delete_blocked` dengan hitungan dependensi public-safe dan petunjuk
+recovery. Controller mengunci paket di dalam transaksi, memeriksa tabel booking
+serta pivot background, mempertahankan paket, dan tidak menulis audit sukses.
+UI menampilkan `Paket belum dihapus`, daftar dependensi, dan aksi 44 piksel
+`Atur background`; pending ref mencegah double-submit dan response API aktual
+tetap menjadi sumber state. Focused/full backend, package serta CRUD/hardening
+browser regression, AI SagaBook, build/typecheck/design, dependency audit, dan
+cleanup lulus. Status `UIUX_VALIDATED / INTEGRATION_VALIDATED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap
+`20260806152606-0894df0`. Coverage Background dan exit gate S5 belum selesai;
+S6 belum dimulai.
 
 Tenant/cabang S124 pada source
 `f6988cb945c5ca224015d7fecbc94e81c535fc60` aktif sebagai release

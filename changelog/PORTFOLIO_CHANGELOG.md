@@ -1,5 +1,20 @@
 # Portfolio Changelog
 
+## 2026-08-07 - SagaBook Sprint 5 package delete recovery candidate
+
+- Source `be02a4e7cc092096c0fdc686c41d4144e93329f0` menutup penghapusan
+  paket yang sebelumnya hanya menampilkan pesan 409 generik, tanpa mengubah
+  production.
+- Backend sekarang menghitung dependensi booking/background secara public-safe,
+  mempertahankan paket, dan tidak menulis audit sukses; UI menampilkan
+  `Paket belum dihapus`, mencegah klik ganda, dan menyediakan recovery ke
+  menu Background.
+- Full backend 974/974, focused backend 27/27, browser package 7 pass/1 skip,
+  CRUD/hardening 16/16, AI 38/38, build/typecheck/design, dan audit dependency
+  lulus.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; release aktif tetap
+  `20260806152606-0894df0`. Berikutnya coverage Background dan exit gate S5.
+
 ## 2026-08-07 - AOGTIVITY durasi akhir dikunci
 
 - `DEC-059` mengunci Lomba 9 dan Lomba 10 masing-masing 30 menit serta

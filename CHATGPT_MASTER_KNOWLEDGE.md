@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 7 Agustus 2026 23:18 WIB
+Evidence cut-off: 7 Agustus 2026 23:24 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -164,6 +164,16 @@ dapat dijadikan Draft selama masih dipakai background aktif. Penolakan 409
 mempertahankan data, UI menampilkan recovery `Atur background`, dan klik ganda
 tidak membuat sukses palsu. Statusnya `LOCAL_VALIDATED /
 IMPLEMENTED_NOT_DEPLOYED`; S5 belum selesai dan production tetap release
+`20260806152606-0894df0`.
+
+Candidate SagaBook S5 berikutnya source
+`be02a4e7cc092096c0fdc686c41d4144e93329f0` menutup pemulihan penghapusan
+paket yang masih dipakai booking atau terhubung ke background. Backend
+mengembalikan 409 `package_delete_blocked` dengan hitungan public-safe,
+mempertahankan paket, dan tidak menulis audit sukses; UI menampilkan
+`Paket belum dihapus` serta recovery `Atur background` tanpa request ganda.
+Statusnya `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; S5 belum selesai,
+coverage Background masih residual, dan production tetap release
 `20260806152606-0894df0`.
 
 Candidate SagaBook Sprint 2 terbaru adalah source
