@@ -4,6 +4,37 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-08-07 - S140 identitas workspace dan Changelog Dashboard production
+
+- Klasifikasi: `CONFIRMED` melalui `DEC-060`, exact source, regression, dan
+  guarded release dengan verifikasi runtime public-safe.
+- Status: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; business readiness
+  tetap `NEEDS CONFIRMATION` sampai authenticated Owner/Studio UAT selesai.
+- Backend source/release `c2a05076a626562244adabcb22fb86a9a60cbbd8` /
+  `20260807161105-c2a0507`; Studio source/release
+  `10bcaaae20bfff69fe250d4dd303acbedd8a4bd3` /
+  `20260807161105-10bcaaa`. Rollback S139 dipertahankan.
+- Studio shell kini menampilkan workspace administratif dari konfigurasi
+  aktivasi server-authoritative. `brand.studioName` tetap editable untuk
+  branding, tetapi tidak lagi dipakai sebagai identitas akun aktif.
+- Dashboard Owner kembali memiliki menu dan route `Changelog` pada kelompok
+  `AKUN`, berisi release S140 serta riwayat terbaru. UI menjelaskan bahwa
+  `Cloud vN` adalah revisi katalog per workspace, bukan versi aplikasi atau
+  jumlah frame; perbedaan angka antar-akun adalah normal.
+- Repair exact-match/idempoten mengubah satu field brand pada satu workspace
+  terdampak, menaikkan version/checksum satu kali, dan menulis satu audit.
+  Sebanyak 51 frame, kategori, katalog, subscription, device/lease, session,
+  foto customer, payment, dan produk lain tetap tidak berubah.
+- Focused backend 140 test/1.798 assertion, visual Owner desktop+mobile,
+  build/audit, Studio 158 unit test, lint/typecheck/build/budget, serta
+  Playwright aktivasi dengan brand lama lulus. Satu full-suite SagaBook
+  reschedule failure direproduksi identik pada baseline dan tidak disebabkan
+  S140.
+- Fresh encrypted backup/checksum/offsite round-trip/disposable restore,
+  rehearsal candidate+rollback, atomic deploy, data/payment/device
+  preservation, service/journal/security-header, public smoke, marker live,
+  idempotency repair, serta rollback target lulus. Tidak ada migration.
+
 ## 2026-08-07 - S139 sinkronisasi kategori dan harga frame production
 
 - Klasifikasi: `CONFIRMED` melalui `DEC-057`, exact source, regression, dan

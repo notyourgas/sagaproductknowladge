@@ -12,6 +12,28 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-07
 
+### SagaView S140 identitas workspace dan Changelog Dashboard production
+
+- Ringkasan: shell Studio memakai identitas workspace dari aktivasi
+  server-authoritative, Owner Dashboard kembali memiliki Changelog, dan UI
+  menjelaskan `Cloud vN` sebagai revision katalog per workspace.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` melalui
+  `DEC-060`; business readiness tetap `NEEDS CONFIRMATION`.
+- Source/release backend `c2a05076a626562244adabcb22fb86a9a60cbbd8` /
+  `20260807161105-c2a0507`; Studio `10bcaaae20bfff69fe250d4dd303acbedd8a4bd3`
+  / `20260807161105-10bcaaa`; rollback S139 dipertahankan.
+- Repair exact-match/idempoten menutup satu kontaminasi brand dengan satu
+  version/checksum increment dan satu audit; 51 frame serta kategori, katalog,
+  payment, subscription, device/lease, session, foto customer, SagaBook, dan
+  Saga Platform tetap tidak berubah.
+- Gate source/regression, build/audit, backup/checksum/offsite restore,
+  candidate+rollback rehearsal, atomic deploy, preservation, idempotency,
+  service/journal/security-header, route/marker, public smoke, dan rollback
+  target lulus. Satu failure full-suite SagaBook direproduksi identik pada
+  baseline dan tidak disebabkan S140.
+- File knowledge: product, dossier, changelog, feature coverage ledger,
+  decision, master knowledge, gaps, portfolio/root changelog, dan sync status.
+
 ### SagaBook Sprint 5 package delete dependency recovery candidate
 
 - Ringkasan: penghapusan paket yang masih dipakai booking atau terhubung ke

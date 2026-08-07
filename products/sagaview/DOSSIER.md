@@ -356,6 +356,31 @@ bug dan menurunkan mismatch published menjadi 0. Artwork, slot, foto customer,
 payment, subscription, device, dan session tidak berubah. Authenticated Owner
 UAT dengan kategori/harga nyata tetap residual sebelum `BUSINESS_READY`.
 
+S140 menutup sisa kontaminasi identitas workspace setelah S135. Nama
+administratif pada shell Studio sekarang dibaca dari konfigurasi aktivasi
+server-authoritative. Nama brand yang dapat diedit tetap disimpan sebagai
+konfigurasi visual dan tidak boleh menentukan akun/workspace aktif. Test
+aktivasi membuktikan shell tetap menampilkan workspace target meskipun payload
+brand cloud masih membawa nama lama.
+
+Owner Dashboard kembali menyediakan `Changelog` pada kelompok `AKUN`, dengan
+route authenticated tersendiri, layout desktop/mobile tanpa overflow, dan data
+release terpusat. Penjelasan `Cloud vN` kini eksplisit sebagai revision katalog
+per workspace; nilainya tidak harus sama antar-akun dan tidak merepresentasikan
+versi aplikasi atau jumlah frame.
+
+Backend source/release aktif `c2a05076a626562244adabcb22fb86a9a60cbbd8` /
+`20260807161105-c2a0507`; Studio source/release
+`10bcaaae20bfff69fe250d4dd303acbedd8a4bd3` /
+`20260807161105-10bcaaa`; rollback S139 dipertahankan. Repair production
+exact-match/idempoten memperbaiki satu field brand pada satu workspace,
+menaikkan version/checksum sekali, dan menulis satu audit. Hash/count 51 frame,
+kategori, katalog, subscription, device/lease, session, foto customer, dan
+payment tidak berubah. Tidak ada migration. Backup terenkripsi dan restore,
+candidate+rollback rehearsal, atomic deploy, idempotency, service/journal,
+security header, public smoke, marker live, serta rollback target lulus.
+Authenticated UAT pada Owner Dashboard dan Studio device nyata tetap residual.
+
 Mulai sesi production memakai checklist perangkat, paket, folder, frame, dan
 output serta satu CTA kontekstual 48 px. Utility cloud/recovery yang sehat
 diringkas; detail terbuka otomatis saat operator perlu bertindak. Alur tetap

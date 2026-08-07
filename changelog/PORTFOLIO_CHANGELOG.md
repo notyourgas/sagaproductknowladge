@@ -1,5 +1,29 @@
 # Portfolio Changelog
 
+## 2026-08-07 - SagaView S140 workspace identity dan Changelog production
+
+- `DEC-060` memisahkan identitas workspace administratif dari brand editable.
+  Studio shell membaca nama workspace dari konfigurasi aktivasi
+  server-authoritative; custom `brand.studioName` tidak dapat lagi membuat akun
+  aktif terlihat sebagai akun lain.
+- Owner Dashboard kembali menampilkan Changelog pada kelompok `AKUN`. Release
+  S140 tersedia pada route authenticated dan UI menjelaskan bahwa `Cloud vN`
+  adalah revision katalog per workspace, bukan versi aplikasi atau jumlah
+  frame.
+- Backend source/release `c2a05076a626562244adabcb22fb86a9a60cbbd8` /
+  `20260807161105-c2a0507`; Studio source/release
+  `10bcaaae20bfff69fe250d4dd303acbedd8a4bd3` /
+  `20260807161105-10bcaaa`; rollback S139 dipertahankan.
+- Repair exact-match/idempoten mengubah satu field pada satu workspace
+  terdampak dengan satu audit. Sebanyak 51 frame dan seluruh kategori, katalog,
+  payment, subscription, device/lease, session, serta foto customer tidak
+  berubah. Tidak ada migration.
+- Regression backend/Studio, visual desktop+mobile, backup terenkripsi dan
+  disposable restore, candidate+rollback rehearsal, atomic deploy,
+  preservation, service/journal/header, public smoke, marker live, dan rollback
+  target lulus. Business readiness tetap menunggu authenticated Owner/Studio
+  UAT.
+
 ## 2026-08-07 - SagaBook Sprint 5 package delete recovery candidate
 
 - Source `be02a4e7cc092096c0fdc686c41d4144e93329f0` menutup penghapusan

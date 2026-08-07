@@ -231,6 +231,20 @@ keputusan pengganti.
 | Status | `CONFIRMED`; klausa nama produk AOGTICVITY `DEPRECATED` oleh `DEC-047`, sedangkan kontrak master recap, 8 tim, 10 lomba, durasi editable, dan roster seluruh tim tetap berlaku |
 | Dokumen terkait | [AOGTICVITY Product](products/aogticvity/PRODUCT.md), [AOGTICVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTICVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |
 
+## DEC-060 - Identitas administratif SagaView berasal dari workspace aktivasi
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-07 |
+| Topik | Identitas workspace Studio dan akses Changelog Owner |
+| Keputusan | Label akun/workspace administratif Studio wajib berasal dari konfigurasi aktivasi server-authoritative. `brand.studioName` tetap dapat diedit sebagai identitas visual, tetapi tidak boleh menentukan workspace aktif. Owner Dashboard wajib menyediakan Changelog pada kelompok `AKUN`, dan `Cloud vN` dijelaskan sebagai revision katalog per workspace, bukan versi aplikasi atau jumlah frame. |
+| Alasan | Nama brand lama pada satu workspace membuat device yang benar terlihat seperti membuka akun lain. Changelog Owner juga hilang dari navigasi, sementara perbedaan angka Cloud antar-akun menimbulkan kesan versi aplikasi tidak sinkron. |
+| Alternatif yang dipertimbangkan | Menyamakan brand secara manual setiap kali aktivasi; memakai nama brand sebagai identitas administratif; hanya menampilkan Changelog pada Studio; memaksa revision Cloud sama global untuk semua workspace. |
+| Dampak | Studio shell memisahkan workspace server-authoritative dari brand editable; Owner menambah route/menu/data release Changelog; repair data hanya boleh exact-match, idempoten, transactional, dan audited. Revision katalog tetap tenant-scoped. Tidak ada perubahan pricing, entitlement, payment, device lease, session, foto customer, atau schema. |
+| Pemberi keputusan | Andreas / founder melalui instruksi memperbaiki akun target dan memulihkan Changelog Dashboard |
+| Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; backend `c2a05076` / `20260807161105-c2a0507`, Studio `10bcaaae` / `20260807161105-10bcaaa`; authenticated Owner/Studio UAT tetap residual sebelum `BUSINESS_READY` |
+| Dokumen terkait | [SagaView Product](products/sagaview/PRODUCT.md), [SagaView Dossier](products/sagaview/DOSSIER.md), [SagaView Changelog](products/sagaview/CHANGELOG.md), [Master Knowledge](CHATGPT_MASTER_KNOWLEDGE.md), [Gaps](GAPS.md) |
+
 ## DEC-059 - Durasi akhir Lomba 9, Lomba 10, dan Awarding AOGTIVITY
 
 | Field | Isi |

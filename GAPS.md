@@ -208,6 +208,18 @@ ketika keputusan atau release baru menutup gap.
 
 ### SagaView
 
+- `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: S140 identitas workspace dan
+  Changelog aktif pada backend `c2a05076` / `20260807161105-c2a0507` dan Studio
+  `10bcaaae` / `20260807161105-10bcaaa`; rollback S139 dipertahankan. Label
+  administratif Studio kini berasal dari konfigurasi aktivasi
+  server-authoritative, terpisah dari brand editable. Changelog Owner kembali
+  pada kelompok `AKUN`, dan `Cloud vN` dijelaskan sebagai revision katalog per
+  workspace. Repair exact-match/idempoten memperbaiki satu field pada satu
+  workspace tanpa mengubah 51 frame, kategori, katalog, payment, subscription,
+  device/lease, session, atau foto customer. Residual sebelum `BUSINESS_READY`:
+  authenticated UAT membuka Changelog Owner dan mengaktifkan Studio pada dua
+  akun bergantian untuk memverifikasi label workspace serta revision Cloud.
+
 - `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: S139 sinkronisasi kategori dan
   harga aktif pada backend `f05c919a` / `20260807045115-f05c919` dan Studio
   `05c5fda0` / `20260807045115-05c5fda`; rollback S138 dipertahankan. Master,

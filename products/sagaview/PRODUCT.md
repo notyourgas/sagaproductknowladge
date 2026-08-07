@@ -9,9 +9,12 @@ resumable server batch import sampai 100 template, dan pemulihan bootstrap cloud
 Owner lama aktif di production. S138 menambahkan tombol akhir `Selesai`, close
 via Escape, dan batch edit kategori pada frame terpilih. S139 menyinkronkan
 kategori ke master/draft/published, menghapus override harga lama saat kategori
-diganti, serta menerbitkan versi katalog baru. S139 sudah
-`PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated Owner UAT pada akun
-serta frame nyata tetap residual sebelum `BUSINESS_READY`.
+diganti, serta menerbitkan versi katalog baru. S140 memisahkan identitas
+workspace administratif dari nama brand yang dapat diedit, memulihkan menu
+Changelog pada Dashboard Owner, dan menjelaskan bahwa `Cloud vN` adalah revisi
+katalog per workspace. S140 sudah `PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED`; authenticated Owner UAT tetap residual sebelum
+`BUSINESS_READY`.
 
 ## Tujuan dokumen
 
@@ -36,12 +39,12 @@ yang diverifikasi sampai 7 Agustus 2026.
   lalu memakai dua kartu sesi berdampingan pada QHD/4K di dalam batas 1400
   piksel. Ringkasan, filter, retry, cabut izin, dan workflow privacy tidak
   berubah.
-- Backend source `f05c919ab0f7e645eabeac1ce959000eeecbf8cc` aktif sebagai
-  release `20260807045115-f05c919`; rollback
-  `20260807023502-f515dd7` dipertahankan.
-- Studio source `05c5fda07a342d2977d8e6e3d836adb17a84605b` aktif sebagai
-  release `20260807045115-05c5fda`; rollback
-  `20260807023502-05c5fda` dipertahankan.
+- Backend source `c2a05076a626562244adabcb22fb86a9a60cbbd8` aktif sebagai
+  release `20260807161105-c2a0507`; rollback
+  `20260807045115-f05c919` dipertahankan.
+- Studio source `10bcaaae20bfff69fe250d4dd303acbedd8a4bd3` aktif sebagai
+  release `20260807161105-10bcaaa`; rollback
+  `20260807045115-05c5fda` dipertahankan.
 - Entitlement live memberi Growth 50 dan Pro 100 frame aktif. Harga, device,
   preset, offline grace, storage, laporan, support, payment, dan fair-use tidak
   berubah.
@@ -490,6 +493,39 @@ memiliki kategori aktif dan override lama, lalu disinkronkan; mismatch turun ke
 0 dan 29 override dibersihkan. Frame lain, artwork, slot, foto customer,
 payment, subscription, device, dan session tidak diubah. Authenticated Owner
 UAT kategori/harga nyata tetap residual sebelum `BUSINESS_READY`.
+
+### S140 identitas workspace dan Changelog Dashboard production
+
+`CONFIRMED` melalui `DEC-060`, dengan delivery dan activation
+`PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Backend source
+`c2a05076a626562244adabcb22fb86a9a60cbbd8` aktif sebagai release
+`20260807161105-c2a0507`; Studio source
+`10bcaaae20bfff69fe250d4dd303acbedd8a4bd3` aktif sebagai release
+`20260807161105-10bcaaa`. Rollback S139 dipertahankan.
+
+Label workspace administratif Studio kini berasal dari konfigurasi aktivasi
+server-authoritative, bukan `brand.studioName` yang memang dapat diubah sebagai
+identitas visual. Pergantian akun atau aktivasi device memperbarui label shell
+dari workspace target, sementara custom brand tetap hanya memengaruhi tampilan
+brand. Changelog Owner kembali tersedia di Dashboard pada kelompok `AKUN`;
+release S140 dan riwayat terkini dirender responsif. UI juga menegaskan bahwa
+`Cloud vN` adalah nomor revisi katalog milik workspace aktif, bukan versi
+aplikasi dan bukan jumlah frame, sehingga dua akun dapat menampilkan angka yang
+berbeda secara sah.
+
+Repair terarah yang exact-match dan idempoten memperbaiki satu setting brand
+pada satu workspace terdampak, menaikkan version/checksum tepat sekali, dan
+membuat audit tunggal. Sebanyak 51 frame, kategori, katalog, subscription,
+device/lease, session, foto customer, serta payment tetap tidak berubah. Tidak
+ada migration. Focused backend 140 test/1.798 assertion, visual Owner
+desktop+mobile, build dan audit dependency lulus; full suite membawa satu
+failure SagaBook reschedule yang direproduksi identik pada baseline. Studio
+158 unit test, lint/typecheck/build/budget, serta Playwright aktivasi dengan
+brand lama lulus. Fresh encrypted backup tiga database, checksum, offsite
+round-trip, disposable restore, rehearsal candidate+rollback, atomic release,
+preservation, service/journal/security-header, public smoke, marker live, dan
+rollback target lulus. Authenticated Owner/Studio UAT pada akun nyata tetap
+residual sebelum `BUSINESS_READY`.
 
 ## Session completion dan privacy handoff
 

@@ -764,6 +764,24 @@ atau data customer. Jangan menyebut S139 `BUSINESS_READY` sebelum authenticated
 Owner UAT mengganti kategori ke kategori dengan harga berbeda dan memverifikasi
 harga efektif Owner/Studio.
 
+Keputusan founder `DEC-060` mengaktifkan S140 identitas workspace dan
+Changelog Dashboard. Backend source/release
+`c2a05076a626562244adabcb22fb86a9a60cbbd8` /
+`20260807161105-c2a0507`; Studio source/release
+`10bcaaae20bfff69fe250d4dd303acbedd8a4bd3` /
+`20260807161105-10bcaaa`; rollback S139 dipertahankan. Label administratif
+Studio kini berasal dari konfigurasi aktivasi server-authoritative, terpisah
+dari `brand.studioName` yang hanya mengatur branding. Owner Dashboard kembali
+memiliki menu/route Changelog pada kelompok `AKUN`, dan UI menjelaskan bahwa
+`Cloud vN` adalah revision katalog per workspace, bukan versi aplikasi atau
+jumlah frame. Repair exact-match/idempoten memperbaiki satu field pada satu
+workspace terdampak dengan satu kenaikan version/checksum dan satu audit;
+frame, kategori, katalog, payment, subscription, device/lease, session, foto
+customer, SagaBook, dan Saga Platform tidak berubah. Tidak ada migration.
+Guarded release, backup/restore, rehearsal candidate+rollback, preservation,
+marker, service/journal/header, serta public smoke lulus. Jangan menyebut S140
+`BUSINESS_READY` sebelum authenticated Owner/Studio UAT pada akun nyata.
+
 Implementasi rotate lama yang menukar W/H 90 derajat telah `DEPRECATED` oleh
 koreksi founder `DEC-036`. Perilaku production yang aktif adalah
 diterima adalah tahan ikon rotate lalu drag ke kiri/kanan agar slot mendapat

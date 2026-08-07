@@ -12,23 +12,24 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-07T23:24:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-07T23:34:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `d5969f4cd93a9e26ad1b53c82967a77425d9eaaa` |
-| Informasi terakhir disinkronkan | SagaBook S143 pada source `be02a4e7cc092096c0fdc686c41d4144e93329f0`: penghapusan paket dengan dependensi booking/background gagal aman, menyediakan recovery UI, dan berstatus lokal tanpa perubahan production. |
+| Baseline sebelum pembaruan | `a44a95b7982198e1fd7d4f3d140585e46c45ba1b` |
+| Informasi terakhir disinkronkan | SagaView S140 pada backend `c2a05076` dan Studio `10bcaaae`: identitas workspace server-authoritative, Changelog Owner kembali, penjelasan revision Cloud per workspace, serta repair satu-field sudah production. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik dengan sinkronisasi AOGTIVITY pada baseline; status candidate SagaBook, production activation, dan business readiness tetap dipisahkan. |
-| Error | Tidak ada error gate lokal S143; deployment immutable SagaBook tidak dijalankan karena roadmap belum mencapai S21. |
+| Konflik | Tidak ada konflik dengan sinkronisasi SagaBook/AOGTIVITY pada baseline; status production activation dan business readiness tetap dipisahkan. |
+| Error | Tidak ada error gate S140. Satu full-suite SagaBook reschedule failure direproduksi identik pada baseline dan dicatat sebagai residual yang tidak disebabkan release ini. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/sagabook/PRODUCT.md`
-- `products/sagabook/DOSSIER.md`
-- `products/sagabook/CHANGELOG.md`
-- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/DOSSIER.md`
+- `products/sagaview/CHANGELOG.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
+- `DECISIONS.md`
 - `GAPS.md`
 - `SYNC_STATUS.md`
 - `CHANGELOG.md`
@@ -113,15 +114,12 @@ SagaBook S119 menunggu owner mengganti copy alamat placeholder pada storefront
 aktif dan menyelesaikan satu booking nyata terkontrol sebelum klaim
 `BUSINESS_READY` atau distribusi link secara luas.
 
-SagaView compact all-menu, workspace Session/Output/Izin Foto monitor besar,
-free drag rotation, pemisahan draft/publish, bulk frame export, server ZIP untuk
-tiga sampai 100 pilihan, dan resumable server batch import aktif kumulatif pada
-Studio `20260807003838-0745426`; rollback `20260806224441-0745426`
-dipertahankan. Backend aktif `20260807003837-4642b40`; rollback
-`20260806224422-85ec0f6`. Authenticated
-Owner visual UAT dengan frame miring dan
-publish frame nyata serta Founding Studio Pilot tetap dibutuhkan sebelum klaim
-`BUSINESS_READY` mass-scale.
+SagaView S140 aktif pada backend `20260807161105-c2a0507` dan Studio
+`20260807161105-10bcaaa`; rollback S139 dipertahankan. Identitas administratif
+Studio berasal dari aktivasi server-authoritative, Changelog Owner kembali, dan
+revision Cloud dijelaskan per workspace. Authenticated Owner/Studio UAT pada
+dua akun, frame miring, publish frame nyata, kategori/harga, serta Founding
+Studio Pilot tetap dibutuhkan sebelum klaim `BUSINESS_READY` mass-scale.
 
 SagaView S122 Batch Import Control Center `DEC-051` sudah
 `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` pada source `b6af5797`, backend
