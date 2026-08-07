@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-07 - SagaBook Sprint 3 staff branch-context candidate
+
+- Source `22013fc0acb12b9c235454048154ed1e1206f732` menyelaraskan daftar
+  staff dengan selector cabang global tanpa mengubah production.
+- Pada Cabang Dago, staff Kemang tidak lagi ikut terlihat; konteks aktif,
+  empty/reset recovery, revokasi delegasi, forced-colors, reduced-motion,
+  target 44 px, satu watermark, dan no-overflow lulus mobile/desktop.
+- Visual/context/revocation 10/10, hardening 6/6, backend 41/41, AI 44/44,
+  build/typecheck/design, serta npm/Composer/OSV nol advisory.
+- Status `UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; release aktif tetap
+  `20260806152606-0894df0` dan berikutnya combined exit gate S3-S4.
+
 ## 2026-08-07 - SagaBook Sprint 3 branch-delete recovery candidate
 
 - Source `4606c5c594b29a4d3075617d01ffed5014d785d1` menutup penghapusan

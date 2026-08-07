@@ -12,14 +12,14 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-07T17:22:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-07T18:34:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `07180c39be663c6d1661884619d982f53c20cca2` |
-| Informasi terakhir disinkronkan | SagaBook Sprint 3 branch-delete dependency recovery pada source `4606c5c594b29a4d3075617d01ffed5014d785d1`; irisan tervalidasi lokal dan production tidak berubah. |
+| Baseline sebelum pembaruan | `2c23a8c4d7c3dc5a756ab352de930b761460c4bd` |
+| Informasi terakhir disinkronkan | SagaBook Sprint 3 staff branch-context pada source `22013fc0acb12b9c235454048154ed1e1206f732`; irisan tervalidasi lokal dan production tidak berubah. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
 | Konflik | Tidak ada konflik fakta runtime SagaBook atau SagaView. Status candidate lokal, production aktif, activation, dan business readiness dipisahkan. |
-| Error | Fresh OSV Composer timeout dua kali; npm 0 vulnerability dan Composer cache nol advisory. Branch-delete 4/4, CRUD 8/8, backend 20/20, typecheck/build lulus. |
+| Error | Tidak ada blocker audit aktif. npm, Composer, dan fresh OSV nol advisory; visual/context/revocation 10/10, hardening 6/6, backend 41/41, AI 44/44, typecheck/build lulus. |
 
 ## File yang berubah pada sinkronisasi ini
 
@@ -51,7 +51,10 @@ refetch lintas tab melalui sinyal public-safe, API refetch aktual, race
 protection, focus/visibility recovery, dan offline/retry. Candidate terbaru
 `4606c5c5` menutup delete dependency/recovery dengan 409 terstruktur,
 recovery UI, transaction/row lock, tenant-negative tanpa leak, dan audit tunggal.
-Residual tenant/cabang adalah filter cabang route lain serta fresh OSV audit.
+Candidate terbaru `22013fc0` menyelaraskan `/admin/staff` dengan selector cabang
+global, mempertahankan revokasi delegasi dan permission negative, serta
+menutup fresh OSV dengan nol advisory. Residual tenant/cabang kini combined
+exit gate S3-S4.
 Recovery response availability kosong, initial-load manual transfer, dan aksi Payment Monitor
 S128-S130 sudah production. Residual payment/report adalah QRIS/provider nyata,
 pagination/filter/export, reconciliation provider, stale multi-tab, dan
@@ -61,8 +64,8 @@ sudah `LOCAL_VALIDATED`; Sprint 2 exit gate diterima lokal. Source belum
 production dan deploy tetap ditahan sampai S21. Status
 `INTEGRATION_VALIDATED` hanya diberikan per irisan setelah happy path, failure/retry,
 permission/tenant-negative, dan data integrity fitur terkait memiliki bukti
-fresh. Prioritas berikutnya: ulang fresh OSV, lanjutkan filter cabang route lain,
-lalu lakukan exit gate S3-S4 sebelum katalog;
+fresh. Prioritas berikutnya: combined exit gate S3-S4, lalu katalog S5-S6,
+kemudian availability/slot concurrency S7-S8;
 SagaView auth/device/session, local ingest, lalu session flow dengan no-upload
 guarantee.
 

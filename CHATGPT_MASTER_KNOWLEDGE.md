@@ -133,6 +133,15 @@ arah pemulihan, foreign-tenant/missing ID tidak membocorkan dependensi, dan
 penghapusan cabang bebas tercatat tepat sekali. Candidate ini belum production.
 Filter cabang route lain dan fresh OSV audit masih residual.
 
+Candidate SagaBook Sprint 3 terbaru adalah source
+`22013fc0acb12b9c235454048154ed1e1206f732`, belum production. Daftar staff
+pada `/admin/staff` kini mengikuti selector cabang global dan menampilkan
+konteks aktif secara aksesibel; Cabang Dago tidak lagi menampilkan staff
+Kemang. UI tetap merender response API dashboard aktual, sementara revokasi
+delegasi dan permission negative tetap berlaku. npm, Composer, dan OSV fresh
+nol advisory. Jangan menyebut Sprint 3-4 selesai sebelum combined exit gate
+diterima, dan jangan menyebut candidate ini production.
+
 Candidate SagaBook Sprint 2 terbaru adalah source
 `bf1766ae84c352cf3687383ca31947a3e619f575`, belum production. UI rate-limit
 429, idle expiry per tab, dan kontrol staff untuk mengeluarkan perangkat lain

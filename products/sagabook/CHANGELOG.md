@@ -4,6 +4,26 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-07 - Sprint 3 staff branch-context candidate
+
+- Klasifikasi `CONFIRMED`; source
+  `22013fc0acb12b9c235454048154ed1e1206f732` pada branch
+  `codex/s139-sagabook-staff-branch-context`.
+- Before: selector global dapat menunjukkan Cabang Dago sementara filter lokal
+  staff tetap Semua Cabang. After: store global menjadi satu sumber kebenaran,
+  filter/reset staff tetap sinkron, dan konteks daftar tampil sebagai status
+  aksesibel.
+- UI merender `GET /api/admin/getDashboardData` aktual; delegasi yang dicabut
+  tetap menghasilkan 401 dan rehidrasi scope. Staff dan branch-admin tidak
+  memperoleh capability mutation tambahan; tidak ada migration atau write
+  bisnis baru.
+- Playwright visual/context/revocation 10/10 dan hardening 6/6, backend 41/41
+  (347), AI 44/44 (3.440), typecheck/build/design, npm/Composer/OSV nol
+  advisory, dan diff-check lulus.
+- Status `UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap `20260806152606-0894df0`.
+  Next: combined exit gate S3-S4 sebelum katalog S5-S6.
+
 ## 2026-08-07 - Sprint 3 branch-delete dependency recovery candidate
 
 - Klasifikasi `CONFIRMED`; source `4606c5c594b29a4d3075617d01ffed5014d785d1`

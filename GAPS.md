@@ -53,11 +53,13 @@ ketika keputusan atau release baru menutup gap.
   `70a6aad76f3f86589473986c0e9fa3b26c5022c2` menutup stale refetch lintas tab
   melalui sinyal invalidasi public-safe, API refetch aktual, race protection,
   focus/visibility recovery, serta offline/retry. Irisan ini juga
-  `LOCAL_VALIDATED` dan belum production. Candidate terbaru `4606c5c5`
+  `LOCAL_VALIDATED` dan belum production. Candidate `4606c5c5`
   menutup delete dependency/recovery dengan 409 terstruktur, recovery UI,
   transaksi/row lock, tenant-negative 404 tanpa leak/audit, serta delete/audit
-  tepat sekali. Candidate ini juga belum production. Residual tenant/cabang
-  adalah filter cabang pada route lain dan fresh OSV audit yang timeout. Recovery response availability kosong,
+  tepat sekali. Candidate terbaru `22013fc0` menyelaraskan daftar staff dengan
+  cabang aktif, mempertahankan revocation/permission boundary, dan menutup
+  fresh OSV dengan nol advisory. Candidate ini juga belum production. Residual
+  tenant/cabang kini combined exit gate S3-S4. Recovery response availability kosong,
   initial-load manual transfer, dan aksi Payment Monitor sudah production pada
   S128-S130. Residual payment/report adalah QRIS/provider nyata,
   pagination/filter/export, reconciliation provider, stale multi-tab, dan

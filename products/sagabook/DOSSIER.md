@@ -226,6 +226,18 @@ build, dan npm audit lulus. Composer cache tidak menemukan advisory, tetapi
 fresh OSV timeout dua kali; status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
 Residual tenant/cabang kini filter cabang route lain dan audit OSV terbaru.
 
+Candidate Sprint 3 terbaru source
+`22013fc0acb12b9c235454048154ed1e1206f732` menyelaraskan `/admin/staff`
+dengan selector cabang global. Sebelumnya owner dapat berada pada Cabang Dago
+namun daftar masih memakai Semua Cabang; sekarang filter, reset, jumlah, dan
+status konteks memakai satu state kanonik. Browser memakai response dashboard
+aktual, revokasi delegasi tetap memaksa rehidrasi scope, dan staff/branch-admin
+mutation negative tetap ditolak. Visual/context/revocation 10/10, hardening
+6/6, backend 41/41, AI 44/44, build/typecheck/design, serta npm/Composer/OSV
+nol advisory. Status `UIUX_VALIDATED / INTEGRATION_VALIDATED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; residual berikutnya adalah
+combined exit gate S3-S4 sebelum katalog S5-S6.
+
 Tenant/cabang S124 pada source
 `f6988cb945c5ca224015d7fecbc94e81c535fc60` aktif sebagai release
 `20260806053037-f6988cb`; rollback `20260806043833-a912522`. Switch status

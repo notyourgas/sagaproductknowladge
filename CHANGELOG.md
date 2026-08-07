@@ -12,6 +12,22 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-07
 
+### SagaBook Sprint 3 staff branch-context candidate
+
+- Ringkasan: daftar staff sekarang mengikuti selector cabang global dan
+  menampilkan konteks aktif secara aksesibel, sehingga staff cabang lain tidak
+  lagi muncul ketika owner sedang bekerja pada satu cabang.
+- Klasifikasi: `CONFIRMED`; source
+  `22013fc0acb12b9c235454048154ed1e1206f732`; status `UIUX_VALIDATED /
+  INTEGRATION_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: visual/context/revocation 10/10, hardening 6/6, backend 41/41 (347),
+  AI regression 44/44 (3.440), typecheck/build/design, serta npm, Composer, dan
+  fresh OSV nol advisory.
+- Production berubah: tidak. Release aktif tetap `20260806152606-0894df0`;
+  combined exit gate S3-S4 menjadi residual sebelum katalog S5-S6.
+- File knowledge: product, dossier, changelog, ledger, master knowledge, gaps,
+  portfolio/root changelog, dan sync status.
+
 ### SagaBook Sprint 3 branch-delete recovery candidate
 
 - Ringkasan: cabang terkait kini diblokir aman dengan hitungan dependensi dan

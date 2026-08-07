@@ -260,6 +260,14 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
   atau ID hilang menghasilkan 404 tanpa dependency leak/audit dan staff
   ditolak 403. Irisan ini tervalidasi lokal, belum production; filter cabang
   route lain dan fresh OSV advisory audit tetap residual.
+  Candidate terbaru source `22013fc0acb12b9c235454048154ed1e1206f732`
+  menyelaraskan `/admin/staff` dengan selector cabang global: Cabang Dago hanya
+  menampilkan staff yang berada dalam konteks Dago, filter/reset memakai satu
+  state kanonik, dan konteks daftar diumumkan secara aksesibel. Response tetap
+  berasal dari API dashboard aktual; revokasi delegasi, capability negative,
+  dan tenant boundary existing tetap hijau. Fresh npm, Composer, dan OSV nol
+  advisory. Candidate ini tervalidasi lokal, belum production; residual Sprint
+  3-4 kini combined exit gate sebelum katalog Sprint 5-6.
 - Report branch context S125 aktif pada source
   `cb8ef55a33ad1399c9383d027343a412752fc9ff`, release immutable
   `20260806063717-cb8ef55`, dengan rollback `20260806053037-f6988cb`.
