@@ -12,16 +12,26 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-09T00:29:55+07:00 |
+| Waktu pembaruan terakhir | 2026-08-09T01:24:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `5547ce302b5d0cdbf60669b52de9b472519d2a40` |
-| Informasi terakhir disinkronkan | COYABAG `df2853add505814918dfe33128c55938360b8962` lulus seluruh gate lokal dan empat job GitHub Actions exact-SHA run `31269460133`; production tidak berubah. |
+| Baseline sebelum pembaruan | `71a0ea38fac9fc8bb9a1514256232dc60c520059` |
+| Informasi terakhir disinkronkan | SagaView S149 `b1e0425847cde1da0d8ec3893fcef421ea4cece9` menutup recovery checkpoint atomik secara `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S147. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik source/runtime. Merge `main`, tag RC, deployment, provider activation, dan production mutation COYABAG tidak dijalankan. |
-| Error | Tidak ada error sinkronisasi yang diketahui; annotation deprecation runtime Node untuk GitHub Actions dicatat sebagai backlog hardening non-blocking. |
+| Konflik | Tidak ada konflik source/runtime. Kandidat S149 belum dideploy dan authenticated Windows UAT belum dijalankan. |
+| Error | Tidak ada error sinkronisasi yang diketahui. |
 
 ## File yang berubah pada sinkronisasi ini
+
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/CHANGELOG.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
+
+## File dari sinkronisasi sebelumnya
 
 - `products/coyabag/PRODUCT.md`
 - `products/coyabag/CHANGELOG.md`
@@ -78,6 +88,10 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `CHANGELOG.md`
 
 ## Sinkronisasi sebelumnya
+
+- SagaView S149 source `b1e04258` disinkronkan sebagai recovery checkpoint
+  atomik `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S147
+  dan Windows authenticated UAT masih residual.
 
 - SagaView S148 source `6a80d6dc` disinkronkan sebagai export folder
   fail-closed `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap

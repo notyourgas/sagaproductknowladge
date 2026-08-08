@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-09 - SagaView S149 recovery checkpoint atomik candidate
+
+- Studio `b1e04258` menunggu checkpoint IndexedDB benar-benar commit sebelum
+  mengubah status sesi cloud atau membuka customer flow. Checkpoint lanjutan
+  mempertahankan handle folder, dan klik ganda dibatasi satu percobaan.
+- Kegagalan quota synthetic menahan operator di Session, menutup fullscreen,
+  memulihkan tombol, serta tidak mengirim status `active`. Full 185 unit,
+  Playwright local-session 7/7, 50/200/500 foto no-upload, dua viewport, Axe,
+  build/budget, dan audit dependency lulus.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production SagaView
+  tetap S147. Crash/quota Windows nyata, safe cleanup, authenticated UAT, dan
+  deploy tetap gate terpisah.
+
 ## 2026-08-09 - COYABAG Batch A exact-SHA CI closure
 
 - Source `df2853add505814918dfe33128c55938360b8962` menutup incompatibility

@@ -676,6 +676,12 @@ kegagalan tulis folder output menghentikan export tanpa fallback download
 otomatis, writer gagal dibatalkan, dan operator mendapat panduan izin/ruang
 disk serta retry. Stepper horizontal customer kini dapat difokuskan keyboard.
 Production belum berubah dan tetap S147.
+S149 Studio `b1e0425847cde1da0d8ec3893fcef421ea4cece9` juga
+`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: checkpoint recovery lokal kini
+menunggu commit IndexedDB sebelum update status cloud dan navigasi. Handle
+folder dipertahankan pada checkpoint lanjutan; klik ganda, quota failure, dan
+fullscreen recovery fail-closed tanpa mengunggah foto/path. Production tetap
+S147.
 Harga bulanan: Growth Rp200.000, Pro Rp500.000.
 Growth mencakup 1 device, 50 frame, 3 preset, offline 24 jam, dan 2 GB aset
 frame cloud. Pro mencakup 4 device, 100 frame, 10 preset, offline 168 jam, 10 GB

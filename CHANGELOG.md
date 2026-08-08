@@ -12,6 +12,23 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-09
 
+### SagaView S149 recovery checkpoint atomik candidate
+
+- Ringkasan: checkpoint Session kini menunggu transaction complete, menjaga
+  handle folder yang sudah dipilih, dan menjadi gate sebelum customer flow
+  maupun status cloud dimulai.
+- Klasifikasi `CONFIRMED`; Studio
+  `b1e0425847cde1da0d8ec3893fcef421ea4cece9`, status `LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: 48 file/185 unit, format/lint/typecheck, build/budget, Playwright
+  local-session 7/7 termasuk quota/double-submit/fullscreen dan 50/200/500 foto,
+  visual/a11y dua viewport, serta npm audit nol vulnerability.
+- Production berubah: tidak. Runtime tetap S147; Windows crash/quota nyata,
+  safe cleanup, authenticated UAT, dan deployment tetap memerlukan gate
+  terpisah.
+- File knowledge: product/changelog/ledger SagaView, portfolio/root changelog,
+  master, dan sync status.
+
 ### COYABAG Batch A exact-SHA CI closure
 
 - Ringkasan: dependency backend diselaraskan dengan PHP 8.3 dan asumsi lokal

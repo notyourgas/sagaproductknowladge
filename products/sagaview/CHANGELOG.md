@@ -1,5 +1,28 @@
 # SagaView Changelog
 
+## 2026-08-09 - S149 recovery checkpoint atomik candidate
+
+- Klasifikasi `CONFIRMED` melalui source Studio
+  `b1e0425847cde1da0d8ec3893fcef421ea4cece9` dan acceptance lokal.
+- Before: checkpoint saat membuka customer flow dapat menimpa handle folder,
+  dianggap selesai sebelum transaksi IndexedDB commit, dan kegagalannya
+  diabaikan sementara navigasi serta status cloud tetap berjalan. After:
+  checkpoint read-merge-write menunggu transaction complete, mempertahankan
+  handle folder lama ketika tidak diganti, dan menjadi prasyarat sebelum
+  update status cloud maupun navigasi.
+- Klik ganda menghasilkan satu percobaan checkpoint. Quota synthetic menahan
+  operator di Session, memulihkan tombol, menutup fullscreen, memberi pesan
+  aman, dan tidak mengirim status sesi `active`; foto, path, dan isi folder
+  tetap tidak masuk cloud/API.
+- Gate hijau: 48 file/185 unit test, format, lint, typecheck, production build,
+  bundle budget 450 KiB, Playwright local-session 7/7 termasuk 50/200/500 foto,
+  visual 1440x900 dan 390x844, Axe serious/critical nol, serta npm audit nol
+  vulnerability.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; branch
+  `codex/s149-sagaview-recovery-checkpoint` sudah dipush. Production tetap
+  S147. Residual: crash/reload setelah checkpoint nyata, quota/disk Windows,
+  safe cleanup, dan authenticated operator UAT sebelum keputusan deploy.
+
 ## 2026-08-09 - S148 export folder fail-closed candidate
 
 - Klasifikasi `CONFIRMED` melalui source Studio

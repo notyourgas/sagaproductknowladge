@@ -1,6 +1,6 @@
 # SagaView Product Knowledge
 
-Updated: 8 Agustus 2026
+Updated: 9 Agustus 2026
 Evidence status: production deployed + production activated; frame import-order,
 compact all-menu, workspace Session/Output/Izin Foto monitor besar, free drag
 rotation, pemisahan Simpan Draft/Publish Frame, limit Growth 50/Pro 100,
@@ -62,6 +62,12 @@ tersebut dan meredaksi response record lama. Studio
   izin/ruang disk serta retry; mode download tetap hanya aktif bila dipilih
   eksplisit. Stepper customer yang dapat digulir kini dapat difokuskan dan
   diberi nama aksesibel pada semua tema.
+  S149 source Studio `b1e0425847cde1da0d8ec3893fcef421ea4cece9`
+  berstatus `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: checkpoint recovery
+  lokal sekarang harus benar-benar commit sebelum status sesi cloud diubah dan
+  customer flow dibuka. Checkpoint lanjutan mempertahankan handle folder yang
+  sudah dipilih, klik ganda ditahan, dan kegagalan quota tetap di halaman
+  Session dengan pesan aman serta keluar dari fullscreen.
 
 ## Tujuan dokumen
 
@@ -74,8 +80,8 @@ Menjadi ringkasan fakta kanonik SagaView. Detail lengkap berada di
 Fakta release di dokumen ini mengacu pada exact source dan runtime production
 yang diverifikasi sampai 8 Agustus 2026.
 
-Kandidat S148 diverifikasi lokal pada 9 Agustus 2026 dan belum mengubah
-runtime production.
+Kandidat S148 dan S149 diverifikasi lokal pada 9 Agustus 2026 dan belum
+mengubah runtime production.
 
 ## Status production terbaru
 
