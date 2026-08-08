@@ -671,6 +671,11 @@ session API serta meredaksi field tersebut dari response historis. Keduanya
 aktif sebagai release `20260808225730-df959cc` dan
 `20260808225730-0cda8a0`; rollback S146 tersedia. Data historis tidak dimutasi
 sesuai keputusan founder, dan agregat read-only sebelum/sesudah release identik.
+S148 Studio `6a80d6dc` sudah `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:
+kegagalan tulis folder output menghentikan export tanpa fallback download
+otomatis, writer gagal dibatalkan, dan operator mendapat panduan izin/ruang
+disk serta retry. Stepper horizontal customer kini dapat difokuskan keyboard.
+Production belum berubah dan tetap S147.
 Harga bulanan: Growth Rp200.000, Pro Rp500.000.
 Growth mencakup 1 device, 50 frame, 3 preset, offline 24 jam, dan 2 GB aset
 frame cloud. Pro mencakup 4 device, 100 frame, 10 preset, offline 168 jam, 10 GB

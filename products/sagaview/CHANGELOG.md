@@ -1,5 +1,27 @@
 # SagaView Changelog
 
+## 2026-08-09 - S148 export folder fail-closed candidate
+
+- Klasifikasi `CONFIRMED` melalui source Studio
+  `6a80d6dc41fb8227ece6b002c8d00a9b9dd0c444` dan acceptance lokal.
+- Before: kegagalan penulisan folder output dapat beralih otomatis ke download
+  browser, sehingga hasil folder dan download berisiko tercampur tanpa pilihan
+  eksplisit operator. After: writer gagal dibatalkan, export berhenti dengan
+  pesan izin/ruang disk dan retry, serta download hanya dipakai ketika mode itu
+  memang dipilih operator.
+- Error yang dicatat di UI dibatasi pada nama dan pesan aman; foto, path lokal,
+  nama file customer, dan isi output tidak dikirim ke cloud/API.
+- Stepper customer horizontal pada semua tema kini merupakan region bernama
+  yang dapat difokuskan keyboard; no-overflow dan Axe serious/critical nol
+  dibuktikan pada 1440x900 serta 390x844.
+- Gate hijau: 47 file/183 unit test, format, lint, typecheck, production build,
+  bundle budget 450 KiB, Playwright output 5/5, focused write failure/retry,
+  visual dua viewport, dan npm audit nol vulnerability.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; branch
+  `codex/s148-sagaview-export-fail-closed` sudah dipush. Production tetap S147.
+  Residual: UAT folder Windows/disk-full nyata, crash/partial batch recovery,
+  lalu keputusan deploy terpisah.
+
 ## 2026-08-08 - S147 boundary metadata sesi local-first production
 
 - Klasifikasi `CONFIRMED` melalui `DEC-066` sampai `DEC-069`, source,

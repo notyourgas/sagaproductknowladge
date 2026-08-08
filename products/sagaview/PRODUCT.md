@@ -52,9 +52,16 @@ tersebut dan meredaksi response record lama. Studio
 `df959ccba2a69306d4aa50795b5aa35e875ffe43` / release
 `20260808225730-df959cc` dan backend
 `0cda8a09fa3f4bb08a483f6bd46ba25dc4fa6b28` / release
-`20260808225730-0cda8a0` sudah `PRODUCTION_DEPLOYED /
-PRODUCTION_ACTIVATED`; rollback langsung adalah S146. Row historis tidak
-dimutasi sesuai `DEC-067`; agregat sebelum/sesudah release tetap identik.
+  `20260808225730-0cda8a0` sudah `PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`; rollback langsung adalah S146. Row historis tidak
+  dimutasi sesuai `DEC-067`; agregat sebelum/sesudah release tetap identik.
+  S148 source Studio `6a80d6dc41fb8227ece6b002c8d00a9b9dd0c444`
+  berstatus `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: kegagalan tulis
+  folder output kini menghentikan export, membatalkan writer yang gagal, dan
+  tidak berpindah diam-diam ke download browser. Operator mendapat panduan
+  izin/ruang disk serta retry; mode download tetap hanya aktif bila dipilih
+  eksplisit. Stepper customer yang dapat digulir kini dapat difokuskan dan
+  diberi nama aksesibel pada semua tema.
 
 ## Tujuan dokumen
 
@@ -66,6 +73,9 @@ Menjadi ringkasan fakta kanonik SagaView. Detail lengkap berada di
 
 Fakta release di dokumen ini mengacu pada exact source dan runtime production
 yang diverifikasi sampai 8 Agustus 2026.
+
+Kandidat S148 diverifikasi lokal pada 9 Agustus 2026 dan belum mengubah
+runtime production.
 
 ## Status production terbaru
 

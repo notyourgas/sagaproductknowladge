@@ -10,6 +10,23 @@ produk dan [Portfolio Changelog](changelog/PORTFOLIO_CHANGELOG.md).
 
 Root changelog tidak menggantikan changelog produk atau portfolio.
 
+## 2026-08-09
+
+### SagaView S148 export folder fail-closed candidate
+
+- Ringkasan: kegagalan write/close folder kini menghentikan export, membatalkan
+  writer gagal, dan tidak memicu download browser otomatis; operator mendapat
+  panduan izin/ruang disk serta retry.
+- Klasifikasi `CONFIRMED`; Studio
+  `6a80d6dc41fb8227ece6b002c8d00a9b9dd0c444`, status `LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: 47 file/183 unit, format/lint/typecheck, build/budget, Playwright output
+  5/5, visual/a11y 1440x900 dan 390x844, serta npm audit nol vulnerability.
+- Production berubah: tidak. Runtime tetap S147; UAT folder Windows dan
+  disk-full nyata serta deploy production tetap gate terpisah.
+- File knowledge: product, changelog, ledger SagaView, portfolio/root
+  changelog, master, dan sync status.
+
 ## 2026-08-08
 
 ### COYABAG Batch A dependency security candidate

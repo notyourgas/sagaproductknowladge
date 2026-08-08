@@ -12,16 +12,26 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-08T23:26:22+07:00 |
+| Waktu pembaruan terakhir | 2026-08-09T00:06:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `640aec42470e43fdd46ffe6b05c3a3500f8ce23e` |
-| Informasi terakhir disinkronkan | COYABAG Batch A `a8e8dd1b` menutup advisory CommonMark dan Vite storefront/admin; branch remote sinkron, CI exact-SHA belum terverifikasi, production tidak berubah. |
+| Baseline sebelum pembaruan | `661ea4a606e66fc2f4d15fcac4b4d321b31551b2` |
+| Informasi terakhir disinkronkan | SagaView S148 `6a80d6dc` membuat kegagalan folder output fail-closed tanpa fallback download otomatis dan menutup blocker fokus stepper; production tetap S147. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik source/runtime. Merge `main`, tag RC, deployment, provider activation, dan production mutation tidak dijalankan. |
-| Error | GitHub Actions repo private belum dapat dibaca dari sesi audit; seluruh gate lokal lulus dan knowledge validator wajib dijalankan sebelum commit. |
+| Konflik | Tidak ada konflik source/runtime. Deploy SagaView S148, UAT Windows fisik, dan production mutation tidak dijalankan. |
+| Error | Tidak ada error sinkronisasi yang diketahui; validator wajib dijalankan sebelum commit. |
 
 ## File yang berubah pada sinkronisasi ini
+
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/CHANGELOG.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
+
+## File dari sinkronisasi sebelumnya
 
 - `products/coyabag/PRODUCT.md`
 - `products/coyabag/CHANGELOG.md`
@@ -30,7 +40,7 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `SYNC_STATUS.md`
 - `CHANGELOG.md`
 
-## File dari sinkronisasi sebelumnya
+## File sinkronisasi lebih awal
 
 - `products/sagaview/PRODUCT.md`
 - `products/sagaview/DOSSIER.md`
@@ -68,6 +78,10 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `CHANGELOG.md`
 
 ## Sinkronisasi sebelumnya
+
+- SagaView S148 source `6a80d6dc` disinkronkan sebagai export folder
+  fail-closed `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap
+  S147 dan UAT Windows nyata masih residual.
 
 - SagaBook S160 `71eb45ba` disinkronkan sebagai fallback callback transition
   exactly-once `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap

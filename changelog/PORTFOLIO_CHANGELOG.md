@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-09 - SagaView S148 export fail-closed candidate
+
+- Studio `6a80d6dc` menghentikan export ketika folder output gagal ditulis,
+  membatalkan writer gagal, dan tidak lagi memindahkan hasil otomatis ke
+  download browser. Operator mendapat panduan izin/ruang disk dan retry.
+- Stepper customer yang dapat digulir sekarang fokusable dan bernama aksesibel
+  pada semua tema. Full 183 unit, Playwright output 5/5, visual 1440x900 dan
+  390x844, Axe, build/budget, serta audit dependency lulus.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production SagaView
+  tetap S147. UAT folder Windows dan disk-full nyata serta deploy memerlukan
+  gate terpisah.
+
 ## 2026-08-08 - COYABAG Batch A dependency security candidate
 
 - Source `a8e8dd1b64c3b5f8ced11b9dc49533b1aac1b8bc` memperbarui CommonMark
