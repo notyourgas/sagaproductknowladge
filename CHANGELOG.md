@@ -12,6 +12,22 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-09
 
+### COYABAG Batch A exact-SHA CI closure
+
+- Ringkasan: dependency backend diselaraskan dengan PHP 8.3 dan asumsi lokal
+  pada browser discovery, Inertia page path, Vite manifest, serta fixture
+  shipping quote MySQL ditutup.
+- Klasifikasi `CONFIRMED`; source
+  `df2853add505814918dfe33128c55938360b8962`, status `LOCAL_VALIDATED /
+  REMOTE_BRANCH_SYNCED / CI_VERIFIED / IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: Laravel full 177 test dengan 176 pass dan 1 skip, storefront/admin,
+  browser cart desktop/mobile, audit dependency, serta GitHub Actions exact-SHA
+  run `31269460133`; seluruh empat job `success`.
+- Production berubah: tidak. Merge `main`, tag RC, deployment, dan activation
+  tetap memerlukan persetujuan serta gate terpisah.
+- File knowledge: product/changelog COYABAG, portfolio/root changelog, master,
+  dan sync status.
+
 ### SagaView S148 export folder fail-closed candidate
 
 - Ringkasan: kegagalan write/close folder kini menghentikan export, membatalkan

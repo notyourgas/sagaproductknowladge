@@ -1189,12 +1189,13 @@ owner 2FA, legal, backup restore, dan provider UAT selesai.
 
 Delivery: `PRODUCTION_DEPLOYED`. Activation dan business readiness: `BLOCKED`.
 
-Candidate source `a8e8dd1b64c3b5f8ced11b9dc49533b1aac1b8bc` memperbaiki
+Candidate source `df2853add505814918dfe33128c55938360b8962` memperbaiki
 rekonsiliasi cart tersimpan terhadap katalog live dan menutup advisory
-Guzzle/Promises, CommonMark, serta tooling Vite storefront/admin. Candidate
-sudah `LOCAL_VALIDATED / REMOTE_BRANCH_SYNCED / CI_UNVERIFIED`, tetapi belum
-berada di `main`, belum tagged, belum deployed, dan empat job CI exact-SHA belum
-terverifikasi. Production tetap source
+Guzzle/Promises, CommonMark, tooling Vite storefront/admin, kompatibilitas PHP
+8.3, dan asumsi environment lokal pada gate CI. Candidate sudah
+`LOCAL_VALIDATED / REMOTE_BRANCH_SYNCED / CI_VERIFIED`; GitHub Actions
+exact-SHA run `31269460133` lulus pada keempat job. Candidate belum berada di
+`main`, belum tagged, dan belum deployed. Production tetap source
 `33637aa9f6f79037a2555c3b0fc0d93b700450dc` melalui release
 `20260730-33637aa`.
 

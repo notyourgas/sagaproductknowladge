@@ -8,6 +8,21 @@ Mencatat perubahan material COYABAG dengan provenance public-safe.
 
 Surface deployment tidak otomatis berarti commerce activation.
 
+## 2026-08-09 - Batch A exact-SHA CI closure
+
+- Source `df2853add505814918dfe33128c55938360b8962` pada branch
+  `codex/finalization-f0-f11` menyelaraskan dependency backend dengan PHP 8.3,
+  discovery browser lintas-platform, case-sensitive Inertia page path, test
+  isolation dari Vite manifest, dan fixture shipping quote MySQL.
+- Gate lokal lulus: Laravel full 177 test dengan 176 pass dan 1 skip,
+  storefront unit/build/runtime, admin build, browser cart desktop/mobile,
+  serta audit Composer/npm nol vulnerability.
+- GitHub Actions exact-SHA run `31269460133` lulus pada Frontend QA, Backend
+  QA, MySQL 8 Integration, dan Cart Browser QA.
+- Status `LOCAL_VALIDATED / REMOTE_BRANCH_SYNCED / CI_VERIFIED /
+  IMPLEMENTED_NOT_DEPLOYED`. Tidak ada merge `main`, tag RC, deployment,
+  aktivasi provider, atau perubahan production.
+
 ## 2026-08-08 - Batch A dependency security candidate
 
 - CommonMark diperbarui ke `2.9.0`; Vite storefront dan admin diperbarui ke

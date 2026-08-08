@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-09 - COYABAG Batch A exact-SHA CI closure
+
+- Source `df2853add505814918dfe33128c55938360b8962` menutup incompatibility
+  dependency PHP 8.3 dan asumsi environment lokal pada browser metadata,
+  Inertia page discovery, Vite manifest, serta shipping quote fixture MySQL.
+- Gate lokal dan GitHub Actions exact-SHA run `31269460133` lulus; Frontend QA,
+  Backend QA, MySQL 8 Integration, dan Cart Browser QA seluruhnya `success`.
+- Status `LOCAL_VALIDATED / REMOTE_BRANCH_SYNCED / CI_VERIFIED /
+  IMPLEMENTED_NOT_DEPLOYED`. Tidak ada merge `main`, tag RC, deployment,
+  aktivasi provider, atau perubahan production.
+
 ## 2026-08-09 - SagaView S148 export fail-closed candidate
 
 - Studio `6a80d6dc` menghentikan export ketika folder output gagal ditulis,
