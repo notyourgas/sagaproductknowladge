@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 8 Agustus 2026 11:26 WIB
+- Updated: 8 Agustus 2026 12:27 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED` untuk workflow yang tercantum di
   [PRODUCT](PRODUCT.md)
@@ -22,6 +22,12 @@ dalam satu dokumen public-safe.
   guard scope/fallback Support Hub aktif, tetapi corpus/index/model AI tetap
   `AI_KNOWLEDGE_NOT_PROMOTED`; S94/S108 yang
   memperlebar storefront tetap deprecated dan tidak aktif.
+- Candidate S156 `04c9b641` membuktikan race slot melalui dua proses PHP
+  independen yang berbagi database disposable. Hasil 5/5 selalu satu winner
+  dan satu 409 `slot_conflict`; persistensi akhir tepat satu booking, hold,
+  slot lock, dan audit, tanpa SQL atau kode booking pada response. Transaction
+  retry serta fallback concurrency yang disanitasi local-validated dan belum
+  production.
 - Candidate S155 `f04e4a9c` menyinkronkan expiry payment hold pada tab QRIS dan
   transfer dari deadline backend. Request status sah mengakhiri booking/hold/
   sesi secara atomik, melepas slot, dan menampilkan recovery yang sama; token

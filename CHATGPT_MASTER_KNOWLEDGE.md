@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 8 Agustus 2026 10:20 WIB
+Evidence cut-off: 8 Agustus 2026 12:27 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -76,14 +76,14 @@ Booking dipasarkan unlimited dengan fair-use.
 Trial SagaBook: 7 hari full access, kemudian grace read-only hari 8-14 dan
 suspend setelah hari 14; tidak ada auto-charge.
 
-Candidate lokal terbaru S155 source `f04e4a9c` memperbaiki payment hold yang
-berakhir ketika tab QRIS dan transfer masih terbuka: deadline berasal dari
-backend, status sah mengakhiri booking/hold/sesi dan melepas slot secara atomik,
-sesi QR lama ditolak, lalu kedua tab meminta customer memilih jadwal baru.
-Token salah ditolak sebelum mutasi. Status `LOCAL_VALIDATED /
-IMPLEMENTED_NOT_DEPLOYED`; jangan menyebut perilaku ini production sampai
-release immutable S21 terbukti. Candidate S154 `1d9d774f` tetap menjadi bukti
-recovery konflik slot saat customer pertama kali memulai pembayaran.
+Candidate lokal terbaru S156 source `04c9b641` menutup race aktual dua proses
+pada slot sama: transaction retry dan sanitasi contention memastikan satu
+booking berhasil, request kalah mendapat 409 `slot_conflict`, dan database
+menyimpan tepat satu booking, hold, slot lock, serta audit tanpa membocorkan
+SQL/kode booking. Candidate S155 `f04e4a9c` tetap menjadi bukti payment-hold
+expiry lintas tab dan S154 `1d9d774f` menjadi bukti recovery UI Bayar ke
+Jadwal. Status S156 `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; jangan
+menyebut perilaku ini production sampai release immutable S21 terbukti.
 
 SagaBook S119 aktif pada source
 `20ff6829f96cebec22d34844291b3d522b91774a`, release

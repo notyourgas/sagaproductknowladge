@@ -8,7 +8,7 @@ diubah menjadi klaim publik sebelum ditutup dengan bukti atau keputusan owner.
 
 ## Konteks
 
-Daftar ini berlaku pada evidence cut-off 8 Agustus 2026 10:20 WIB dan harus diperbarui
+Daftar ini berlaku pada evidence cut-off 8 Agustus 2026 12:27 WIB dan harus diperbarui
 ketika keputusan atau release baru menutup gap.
 
 ## Cara memakai
@@ -34,12 +34,13 @@ ketika keputusan atau release baru menutup gap.
 ### SagaBook
 
 - `TODO`: candidate S154 `1d9d774f` sudah menutup recovery konflik slot saat
-  pembayaran dan S155 `f04e4a9c` sudah menutup expiry payment hold lintas tab
-  QRIS/transfer secara local-validated. Availability/slot keseluruhan tetap
-  `INTEGRATION_IN_PROGRESS`; race aktual multi-process, retry mutation, dan
-  read-after-write operator masih harus ditutup sebelum exit S7-S8. Production
-  tetap `20260806152606-0894df0`; REVISION/previous/rollback runtime masih
-  residual sebelum S21.
+  pembayaran, S155 `f04e4a9c` menutup expiry payment hold lintas tab, dan S156
+  `04c9b641` menutup race aktual dua proses pada slot sama secara
+  local-validated. Availability/slot keseluruhan tetap
+  `INTEGRATION_IN_PROGRESS`; retry mutation dan read-after-write operator masih
+  harus ditutup sebelum combined exit S7-S8. Production tetap
+  `20260806152606-0894df0`; REVISION/previous/rollback runtime masih residual
+  sebelum S21.
 
 - `TODO`: guard scope/fallback source
   `0894df00f6866688db4d053758a99d54ba4e8908` sudah production dan memisahkan

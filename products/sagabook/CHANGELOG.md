@@ -4,6 +4,30 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-08 - Sprint 7 multi-process same-slot race recovery candidate
+
+- Klasifikasi `CONFIRMED`; source
+  `04c9b6416fbe401a001f3fd7b83dad47c613e8e4` pada branch
+  `codex/s156-sagabook-slot-race`.
+- Before: dua proses dapat sama-sama melewati availability awal; request kalah
+  sesekali menerima `booking_conflict` berisi detail SQL/database lock. After:
+  transaksi mencoba ulang contention sampai tiga kali dan exception database
+  tersisa dipetakan ke 409 `slot_conflict` dengan reason/action hint
+  public-safe.
+- Dua server PHP independen mengirim `POST /api/submit-booking` bersamaan ke
+  satu database SQLite disposable. Lima dari lima race memberi satu 200 dan
+  satu 409; database berakhir dengan tepat satu booking, hold, slot lock, dan
+  `web_booking_created` audit tanpa write parsial atau data tenant/customer.
+- Focused backend 253/253 (1.864), full backend 993/993 (11.342), browser
+  recovery fresh 2/2 pada 390x844 dan 1440x900, build, design 26/0,
+  npm/Composer/OSV nol advisory, serta Support Hub AI 38/38 (219) hijau.
+  Bootstrap PHPUnit juga fail-closed terhadap autoloader donor junction agar
+  exact worktree source yang diuji.
+- Status irisan `UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; S7-S8 tetap `INTEGRATION_IN_PROGRESS` menunggu
+  retry mutation dan read-after-write operator. Production tetap
+  `20260806152606-0894df0`; deploy ditahan sampai S21.
+
 ## 2026-08-08 - Sprint 7 payment-hold expiry cross-tab recovery candidate
 
 - Klasifikasi `CONFIRMED`; source

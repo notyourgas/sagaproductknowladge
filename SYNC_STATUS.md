@@ -12,11 +12,11 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-08T11:26:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-08T12:27:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `1aa840e1dd238cb63238c36c0c2201cc30eaae8f` |
-| Informasi terakhir disinkronkan | SagaBook S155 source `f04e4a9c`: expiry payment hold QRIS/transfer kini backend-authoritative, tersinkron lintas tab, melepas slot atomik, menolak sesi stale, dan memberi recovery jadwal baru; irisan `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`, S7-S8 tetap berjalan, production tetap `20260806152606-0894df0`. |
+| Baseline sebelum pembaruan | `693ba7aa3e285025b4824e2db729ec476f7fe6ef` |
+| Informasi terakhir disinkronkan | SagaBook S156 source `04c9b641`: race aktual dua proses pada slot sama kini satu winner + satu 409 public-safe, dengan tepat satu booking/hold/slot lock/audit dan tanpa SQL leak; irisan `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`, S7-S8 tetap berjalan, production tetap `20260806152606-0894df0`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
 | Konflik | Tidak ada. Kontrak storefront mobile-only, subscription skip, urutan sprint, SagaView local-first, dan product boundary tetap konsisten. |
 | Error | Tidak ada advisory npm/Composer/OSV. Production tidak diubah. File REVISION serta previous/rollback symlink SagaBook tetap residual sebelum S21. |
@@ -34,6 +34,9 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `CHANGELOG.md`
 
 ## Sinkronisasi sebelumnya
+
+- SagaBook S156 source `04c9b641` disinkronkan sebagai multi-process same-slot
+  race recovery local-validated; S7-S8 belum exit dan production tidak berubah.
 
 - SagaBook S155 source `f04e4a9c` disinkronkan sebagai payment-hold expiry
   cross-tab local-validated; S7-S8 belum exit dan production tidak berubah.

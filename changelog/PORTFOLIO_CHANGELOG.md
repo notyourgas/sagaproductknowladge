@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-08 - SagaBook Sprint 7 multi-process slot race candidate
+
+- Source `04c9b6416fbe401a001f3fd7b83dad47c613e8e4` menutup race aktual
+  dua proses saat customer memilih slot yang sama.
+- Transaction retry dan sanitasi contention menghasilkan satu booking sukses
+  serta satu 409 `slot_conflict`; satu database disposable membuktikan tepat
+  satu booking, hold, slot lock, dan audit tanpa SQL atau kode booking bocor.
+- Race 5/5, full backend 993/993, browser recovery 2/2, build/design, audit
+  dependency, dan AI SagaBook 38/38 hijau. Bukti 390x844 serta 1440x900 tetap
+  menjaga canvas storefront maksimum 460 piksel.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; fitur S7-S8 belum exit
+  dan production tetap `20260806152606-0894df0`.
+
 ## 2026-08-08 - SagaBook Sprint 7 payment-hold expiry recovery candidate
 
 - Source `f04e4a9c174c965b2e8308077d9f643f97ef6bd6` menutup timer QRIS

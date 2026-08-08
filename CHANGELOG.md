@@ -12,6 +12,23 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-08
 
+### SagaBook Sprint 7 multi-process slot race recovery candidate
+
+- Ringkasan: dua proses booking pada slot sama kini menghasilkan tepat satu
+  winner dan satu recovery 409; contention database dicoba ulang lalu
+  disanitasi tanpa detail SQL atau write parsial.
+- Klasifikasi: `CONFIRMED`; source
+  `04c9b6416fbe401a001f3fd7b83dad47c613e8e4`; status `UIUX_VALIDATED /
+  INTEGRATION_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: race aktual 5/5, focused 253/253 (1.864), full backend 993/993
+  (11.342), browser 2/2, build/design 26/0, dependency advisory nol, dan AI
+  38/38 (219).
+- Production berubah: tidak. Release aktif tetap `20260806152606-0894df0`;
+  S7-S8 masih menunggu retry mutation dan read-after-write operator, deploy
+  ditahan sampai S21.
+- File knowledge: product, dossier, changelog, ledger, master knowledge, gaps,
+  portfolio/root changelog, dan sync status.
+
 ### SagaBook Sprint 7 payment-hold expiry recovery candidate
 
 - Ringkasan: QRIS dan transfer kini memakai deadline payment hold backend,
