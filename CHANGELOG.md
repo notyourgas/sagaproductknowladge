@@ -12,6 +12,27 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-08
 
+### SagaView S143 galeri stabil dan harga paket jujur production
+
+- Ringkasan: polling manifest identik kini mempertahankan pilihan/urutan/aset/
+  scroll, sedangkan paket hanya menagihkan surcharge kategori berbayar di atas
+  Original yang sudah termasuk.
+- Klasifikasi: `CONFIRMED` melalui `DEC-064`; backend source/release
+  `8fac4f681d45660da27afdd72ba36460d4bd6d0c` /
+  `20260808134902-8fac4f6`, Studio source/release
+  `91d7bd7bf13d6dcf7d386431d652a9cf9f3cdefa` /
+  `20260808134902-91d7bd7`; status `PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`.
+- Gate: backend 953/953 (11.215), Studio 171 unit, browser 119 pass/2 skip,
+  lint/typecheck/build/budget, dependency advisory nol, backup/restore tiga DB,
+  candidate+rollback rehearsal, live rollback/re-activation, preservation,
+  service/journal/header/public smoke, dan marker live.
+- Production berubah: ya. Rollback backend `20260808020447-e6a7f97` dan Studio
+  `20260808020447-c4f664f` tersedia. Tidak ada migration atau mutasi frame,
+  artwork, foto customer, payment, subscription, device, SagaBook, atau Platform.
+- File knowledge: product, dossier, changelog, ledger, decision, master, gaps,
+  portfolio/root changelog, dan sync status.
+
 ### SagaBook cumulative S131-S156 production release
 
 - Ringkasan: seluruh ancestor pending S131-S156 dipromosikan sebagai satu

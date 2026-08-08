@@ -937,6 +937,25 @@ service/journal/header/public smoke, live marker, dan rollback lulus. Status
 `BUSINESS_READY` sebelum authenticated Owner/Studio UAT kategori nyata,
 urutan/reload, stale revision, dan customer default category selesai.
 
+S143 mengikuti `DEC-064` dan sudah production. Polling Studio membandingkan
+fingerprint tenant/version/checksum; manifest identik tidak lagi menerapkan ulang
+katalog sehingga pilihan frame, urutan, URL aset, dan scroll tetap stabil.
+Perubahan katalog nyata di-update in-place dan diurutkan deterministik. Pricing
+paket hanya memberi credit pada nonpremium: Original pertama termasuk paket,
+Special Rp15.000 menambah tepat Rp15.000, dan Original kedua tetap mengikuti
+extra print Rp10.000 bila dikonfigurasi. Paket stale direkonsiliasi ke kategori
+authoritative saat simpan General. Retry metadata 408/425/429/5xx boleh masuk
+antrean lokal tanpa credential; 422 tetap fail-closed. Backend source/release
+`8fac4f681d45660da27afdd72ba36460d4bd6d0c` /
+`20260808134902-8fac4f6`; Studio source/release
+`91d7bd7bf13d6dcf7d386431d652a9cf9f3cdefa` /
+`20260808134902-91d7bd7`; rollback S142 tersedia. Backend 953/953, Studio 171
+unit dan full browser 119 pass/2 intentional skip, dependency advisory nol,
+backup/restore, rehearsal, live rollback/re-activation, preservation,
+service/journal/header/public smoke, dan marker S143/0.20.6 lulus. Status
+`PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; jangan sebut `BUSINESS_READY`
+sebelum authenticated UAT galeri panjang dan kombinasi harga paket nyata.
+
 Implementasi rotate lama yang menukar W/H 90 derajat telah `DEPRECATED` oleh
 koreksi founder `DEC-036`. Perilaku production yang aktif adalah
 diterima adalah tahan ikon rotate lalu drag ke kiri/kanan agar slot mendapat

@@ -1,5 +1,25 @@
 # Portfolio Changelog
 
+## 2026-08-08 - SagaView S143 galeri stabil dan harga paket jujur production
+
+- `DEC-064` menetapkan polling identik tidak boleh mengubah frame terpilih,
+  urutan, aset, atau scroll; Original pertama termasuk paket dan frame Special
+  hanya menambahkan harga kategorinya.
+- Backend source/release `8fac4f681d45660da27afdd72ba36460d4bd6d0c` /
+  `20260808134902-8fac4f6`; Studio source/release
+  `91d7bd7bf13d6dcf7d386431d652a9cf9f3cdefa` /
+  `20260808134902-91d7bd7`; rollback S142 dipertahankan.
+- Backend 953/953 dan 11.215 assertion; Studio 171 unit, Playwright 119 pass/2
+  intentional skip, lint/typecheck/build/budget, serta npm/Composer audit nol
+  advisory lulus. `nanoid` dipatch ke 3.3.18 pada dua lockfile.
+- Backup terenkripsi `20260808T064733Z`, checksum/offsite/disposable restore,
+  rehearsal candidate+rollback, live rollback/re-activation, atomic switch,
+  preservation frame/customer/device/session/payment/subscription,
+  service/journal/header/public smoke, dan marker S143/0.20.6 lulus.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated UAT galeri
+  panjang dan harga paket workspace nyata masih residual sebelum
+  `BUSINESS_READY`. SagaBook dan Saga Platform tidak berubah.
+
 ## 2026-08-08 - SagaBook cumulative S131-S156 production release
 
 - Source `04c9b6416fbe401a001f3fd7b83dad47c613e8e4` aktif sebagai release

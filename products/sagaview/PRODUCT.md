@@ -25,6 +25,15 @@ Backend `e6a7f97941c6b93f88fbd90e09044a4e8fa699b6` / release
 `20260808020447-e6a7f97` dan Studio
 `c4f664fc5ad6ec1ac3ef992fc7a75b9e7205b666` / release
 `20260808020447-c4f664f` sudah `PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED`. S143 menahan rekonsiliasi katalog cloud ketika
+tenant/version/checksum identik sehingga frame terpilih, urutan, URL aset, dan
+posisi scroll stabil. Pricing paket kini menanggung Original dan hanya
+menambahkan surcharge kategori Special; Studio juga memulihkan paket stale ke
+kategori authoritative terbaru saat simpan. Backend
+`8fac4f681d45660da27afdd72ba36460d4bd6d0c` / release
+`20260808134902-8fac4f6` dan Studio
+`91d7bd7bf13d6dcf7d386431d652a9cf9f3cdefa` / release
+`20260808134902-91d7bd7` sudah `PRODUCTION_DEPLOYED /
 PRODUCTION_ACTIVATED`. Authenticated Owner/Studio UAT tetap residual.
 
 ## Tujuan dokumen
@@ -50,12 +59,12 @@ yang diverifikasi sampai 8 Agustus 2026.
   lalu memakai dua kartu sesi berdampingan pada QHD/4K di dalam batas 1400
   piksel. Ringkasan, filter, retry, cabut izin, dan workflow privacy tidak
   berubah.
-- Backend source `e6a7f97941c6b93f88fbd90e09044a4e8fa699b6` aktif sebagai
-  release `20260808020447-e6a7f97`; rollback
-  `20260807173443-369f011` dipertahankan.
-- Studio source `c4f664fc5ad6ec1ac3ef992fc7a75b9e7205b666` aktif sebagai
-  release `20260808020447-c4f664f`; rollback
-  `20260807161105-10bcaaa` dipertahankan.
+- Backend source `8fac4f681d45660da27afdd72ba36460d4bd6d0c` aktif sebagai
+  release `20260808134902-8fac4f6`; rollback
+  `20260808020447-e6a7f97` dipertahankan.
+- Studio source `91d7bd7bf13d6dcf7d386431d652a9cf9f3cdefa` aktif sebagai
+  release `20260808134902-91d7bd7`; rollback
+  `20260808020447-c4f664f` dipertahankan.
 - Entitlement live memberi Growth 50 dan Pro 100 frame aktif. Harga, device,
   preset, offline grace, storage, laporan, support, payment, dan fair-use tidak
   berubah.
@@ -599,6 +608,38 @@ marker, dan rollback target lulus. Tidak ada migration atau mutasi frame,
 artwork, slot, foto customer, payment, subscription, device, session, maupun
 produk lain. Authenticated Owner/Studio UAT kategori nyata tetap diperlukan
 sebelum `BUSINESS_READY`.
+
+### S143 galeri stabil dan harga paket jujur production
+
+`CONFIRMED` melalui `DEC-064`. Polling cloud tetap membaca manifest berkala,
+tetapi hanya merekonsiliasi katalog ketika fingerprint tenant, version, atau
+checksum berubah. Frame yang metadata, SHA, versi, dan URL lokalnya masih
+current dilewati; frame berubah diperbarui di posisi lama dan urutan remote
+diterapkan deterministik hanya bila memang berbeda. Pilihan operator dan posisi
+scroll tidak lagi berubah pada polling identik.
+
+Kredit paket hanya dipakai untuk cetakan kategori nonpremium. Original yang
+termasuk paket bernilai Rp0; Special Rp15.000 menambah tepat Rp15.000. Original
+kedua tetap mengikuti biaya extra print yang dikonfigurasi. Draft Pengaturan
+Umum yang terbentuk sebelum bootstrap kategori selesai direkonsiliasi terhadap
+kategori authoritative terbaru saat simpan, sehingga perubahan lain tidak lagi
+gagal karena eligibility paket stale. Respons metadata 408/425/429/5xx dapat
+masuk antrean lokal tanpa credential, sedangkan 422 tetap fail-closed.
+
+Backend source/release `8fac4f681d45660da27afdd72ba36460d4bd6d0c` /
+`20260808134902-8fac4f6`; Studio source/release
+`91d7bd7bf13d6dcf7d386431d652a9cf9f3cdefa` /
+`20260808134902-91d7bd7`. Rollback S142 backend
+`20260808020447-e6a7f97` dan Studio `20260808020447-c4f664f` dipertahankan.
+Backend 953/953 test dengan 11.215 assertion; Studio 171 unit test dan full
+Playwright 119 pass/2 intentional skip, lint/typecheck/build/budget, serta audit
+npm/Composer nol advisory lulus. Backup terenkripsi `20260808T064733Z`,
+checksum/offsite/disposable restore, candidate+rollback rehearsal, live rollback
+cycle, atomic re-activation, preservation frame/customer/device/session/payment/
+subscription, service/journal/header/public smoke, dan marker S143/0.20.6 lulus.
+Tidak ada migration atau perubahan foto customer, artwork, payment, subscription,
+device lease, SagaBook, maupun Saga Platform. Authenticated UAT galeri panjang
+dan kombinasi harga paket nyata tetap diperlukan sebelum `BUSINESS_READY`.
 
 ## Session completion dan privacy handoff
 

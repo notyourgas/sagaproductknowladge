@@ -436,6 +436,36 @@ rollback target lulus. Tidak ada migration atau mutasi data tenant/customer.
 Authenticated Owner/Studio UAT dengan kategori nyata tetap residual sebelum
 `BUSINESS_READY`.
 
+S143 memperbaiki stabilitas galeri dan kontrak pricing paket. Runtime cloud
+tetap polling setiap interval, namun fingerprint tenant/version/checksum
+menghindari recovery ketika manifest identik. Aset dengan metadata/SHA/version
+yang sama tidak dibuat ulang; frame berubah di-update pada ID/posisi lama, dan
+urutan katalog hanya ditulis ulang bila benar-benar berbeda. Acceptance browser
+mempercepat timer polling dan membuktikan pilihan, urutan, URL gambar, dan scroll
+tetap sama setelah polling identik.
+
+Pricing kini memisahkan cetakan paket dan surcharge kategori: credit paket hanya
+menanggung nonpremium, base extra price tidak diterapkan ke premium, dan Special
+tetap membayar kategori penuhnya. Kasus kontrak: Original x1 + Special Rp15.000
+= Rp15.000; Original x2 + Special = Rp25.000 ketika extra Original Rp10.000.
+Review menyebutnya `Tambahan kategori berbayar`. Eligibility paket yang kosong
+atau stale karena bootstrap kategori terlambat direkonsiliasi ke kategori aktif
+pertama saat simpan, tanpa mengganti pilihan yang masih valid.
+
+S143 juga membawa retry metadata aman: respons 408, 425, 429, dan 5xx dapat masuk
+antrean lokal yang tidak menyimpan credential atau lease token; validation 422
+tetap meminta koreksi operator. Dependency `nanoid` pada Studio dan Owner Console
+dipatch ke 3.3.18 setelah audit menemukan advisory high.
+
+Backend `8fac4f681d45660da27afdd72ba36460d4bd6d0c` /
+`20260808134902-8fac4f6` dan Studio
+`91d7bd7bf13d6dcf7d386431d652a9cf9f3cdefa` /
+`20260808134902-91d7bd7` sudah production. Full backend 953/11.215, Studio 171
+unit dan 119 browser pass/2 intentional skip, build/budget/audit, backup encrypted
+offsite restore, rehearsal, live rollback/re-activation, preservation snapshot,
+service/journal/header/public smoke, dan live marker lulus. S142 tersedia sebagai
+rollback. UAT authenticated pada galeri dan harga workspace nyata masih residual.
+
 Mulai sesi production memakai checklist perangkat, paket, folder, frame, dan
 output serta satu CTA kontekstual 48 px. Utility cloud/recovery yang sehat
 diringkas; detail terbuka otomatis saat operator perlu bertindak. Alur tetap

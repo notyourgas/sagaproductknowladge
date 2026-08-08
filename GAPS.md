@@ -255,6 +255,15 @@ ketika keputusan atau release baru menutup gap.
 
 ### SagaView
 
+- `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: S143 galeri stabil dan harga
+  paket jujur aktif pada backend `8fac4f68` / `20260808134902-8fac4f6` dan
+  Studio `91d7bd7b` / `20260808134902-91d7bd7`; rollback S142 tersedia.
+  Polling identik mempertahankan pilihan/scroll/aset, Original pertama termasuk
+  paket, dan Special hanya menambah surcharge kategori. Residual sebelum
+  `BUSINESS_READY`: authenticated UAT galeri panjang selama beberapa interval
+  polling, Original x1/x2 + Special dengan harga workspace nyata, serta simpan
+  Pengaturan Umum setelah bootstrap cloud.
+
 - `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: S142 kategori authoritative dan
   urutan Studio aktif pada backend `e6a7f979` / `20260808020447-e6a7f97` dan
   Studio `c4f664fc` / `20260808020447-c4f664f`; rollback S141/S140

@@ -245,6 +245,20 @@ keputusan pengganti.
 | Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; runtime `f26da5e87dc8d56729befe5f9c538cd04038674d`, Hostinger `20260808T053225Z`, Vercel `dpl_CUkHFWTxh9jnuKWgW54Z1Np2h2Li`; human operational UAT tetap residual |
 | Dokumen terkait | [AOGTIVITY Product](products/aogticvity/PRODUCT.md), [AOGTIVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTIVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |
 
+## DEC-064 - Polling frame stabil dan paket hanya menagih tambahan kategori
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-08 |
+| Topik | Stabilitas galeri dan kontrak harga paket SagaView |
+| Keputusan | Polling cloud tidak boleh menerapkan ulang katalog ketika tenant, version, dan checksum identik; pilihan, urutan, URL aset, dan posisi scroll operator harus tetap. Original pertama termasuk paket dan bernilai gratis; frame kategori berbayar hanya menambahkan harga kategorinya. Extra Original berikutnya tetap mengikuti biaya extra print yang dikonfigurasi. |
+| Alasan | Rekonsiliasi setiap polling membuat galeri tampak refresh dan pilihan berubah. Pricing lama mengenakan base print pada Special sehingga Original yang sudah termasuk paket ikut terhitung bayar. |
+| Alternatif yang dipertimbangkan | Menghentikan polling; selalu rebuild katalog; memberi debounce visual saja; mengenakan base print untuk semua kategori; menjadikan Special pemakai credit paket. |
+| Dampak | Runtime memakai fingerprint dan update in-place; package credit hanya untuk nonpremium; review membedakan surcharge kategori; paket stale direkonsiliasi saat simpan. Tidak ada migration atau perubahan artwork, foto customer, payment, subscription, device lease, SagaBook, maupun Saga Platform. |
+| Pemberi keputusan | Andreas / founder melalui instruksi memperbaiki refresh frame dan menjadikan Original termasuk paket |
+| Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; backend `8fac4f681d45660da27afdd72ba36460d4bd6d0c` / `20260808134902-8fac4f6`, Studio `91d7bd7bf13d6dcf7d386431d652a9cf9f3cdefa` / `20260808134902-91d7bd7`; authenticated UAT tetap residual |
+| Dokumen terkait | [SagaView Product](products/sagaview/PRODUCT.md), [SagaView Dossier](products/sagaview/DOSSIER.md), [SagaView Changelog](products/sagaview/CHANGELOG.md), [SagaView Ledger](products/sagaview/FEATURE_COVERAGE_LEDGER.md), [Master Knowledge](CHATGPT_MASTER_KNOWLEDGE.md), [Gaps](GAPS.md) |
+
 ## DEC-062 - Kategori Owner authoritative dan urutan dikelola Studio
 
 | Field | Isi |

@@ -12,24 +12,25 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-08T13:43:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-08T14:02:28+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `f4a5e391be52d4b0293e8d2c0c801ee15d690d92` |
-| Informasi terakhir disinkronkan | SagaBook source kumulatif S156 `04c9b641` aktif sebagai release immutable `20260808063729-04c9b64`; rollback `20260806152606-0894df0` tersedia. |
+| Baseline sebelum pembaruan | `4e3a731092242031d073894f65dfb8d7186620f3` |
+| Informasi terakhir disinkronkan | SagaView S143 backend `8fac4f68` / `20260808134902-8fac4f6` dan Studio `91d7bd7b` / `20260808134902-91d7bd7` aktif; rollback S142 tersedia. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik source/runtime. Label candidate lama adalah histori; status current `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`, belum `BUSINESS_READY`. |
-| Error | Service dan endpoint SagaBook sehat. Monitor staging lintas-produk gagal karena DNS SagaFin dan tujuan monitor eksternal belum dikonfigurasi; ini bukan blocker release SagaBook. |
+| Konflik | Tidak ada konflik source/runtime. Kontrak pricing S143 melanjutkan kategori authoritative S142; status current `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`, belum `BUSINESS_READY`. |
+| Error | Dua attempt berhenti fail-closed sebelum activation karena slug dan policy sesi; attempt final, live rollback/re-activation, service, journal, header, public smoke, dan marker lulus. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/sagabook/PRODUCT.md`
-- `products/sagabook/DOSSIER.md`
-- `products/sagabook/CHANGELOG.md`
-- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/DOSSIER.md`
+- `products/sagaview/CHANGELOG.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `GAPS.md`
+- `DECISIONS.md`
 - `SYNC_STATUS.md`
 - `CHANGELOG.md`
 
@@ -46,6 +47,10 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `CHANGELOG.md`
 
 ## Sinkronisasi sebelumnya
+
+- SagaView S143 backend `8fac4f68` dan Studio `91d7bd7b` disinkronkan sebagai
+  `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated galeri/pricing UAT
+  tetap residual.
 
 - SagaBook S156 source `04c9b641`, release `20260808063729-04c9b64`, dan
   rollback `20260806152606-0894df0` disinkronkan sebagai

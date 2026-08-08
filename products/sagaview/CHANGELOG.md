@@ -4,6 +4,42 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-08-08 - S143 galeri stabil dan harga paket jujur production
+
+- Klasifikasi: `CONFIRMED` melalui `DEC-064`, exact source/release, full
+  regression, guarded deployment, live rollback cycle, dan independent live
+  verification. Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; business
+  readiness tetap `NEEDS CONFIRMATION`.
+- Backend source/release `8fac4f681d45660da27afdd72ba36460d4bd6d0c` /
+  `20260808134902-8fac4f6`; Studio source/release
+  `91d7bd7bf13d6dcf7d386431d652a9cf9f3cdefa` /
+  `20260808134902-91d7bd7`. Rollback S142 backend
+  `20260808020447-e6a7f97` dan Studio `20260808020447-c4f664f` tersedia.
+- Polling katalog membandingkan fingerprint tenant/version/checksum dan melewati
+  frame current, sehingga pilihan, urutan, posisi scroll, dan URL aset tidak
+  berubah ketika manifest identik. Perubahan nyata tetap diperbarui in-place
+  lalu diurutkan deterministik.
+- Pricing paket tidak lagi mengenakan base extra print pada frame premium.
+  Original pertama tetap termasuk paket; Special Rp15.000 menambah tepat
+  Rp15.000. Extra Original berikutnya tetap mengikuti konfigurasi extra print.
+- Paket stale dari draft yang terbentuk sebelum kategori cloud selesai dimuat
+  direkonsiliasi ke kategori authoritative saat simpan. Metadata aman pada
+  408/425/429/5xx dapat antre retry lokal tanpa credential; 422 tidak diantrikan.
+- Backend 953/953 dan 11.215 assertion; Studio 171 unit dan Playwright 119 pass/
+  2 intentional skip; lint/typecheck/build/budget serta npm/Composer audit nol
+  advisory lulus. Lockfile Studio dan Owner Console menutup advisory high
+  `nanoid` dengan 3.3.18.
+- Backup terenkripsi `20260808T064733Z`, tiga checksum, offsite round-trip,
+  disposable restore, candidate+rollback rehearsal, live rollback dan
+  re-activation, atomic release, snapshot preservation, service/journal/header,
+  public smoke, serta marker S143/0.20.6 lulus. Dua pre-activation attempt
+  berhenti fail-closed karena slug dan policy sesi; production belum berubah
+  sampai seluruh gate benar.
+- Tidak ada migration atau mutasi artwork, frame metadata, foto customer,
+  payment, subscription, device lease, SagaBook, maupun Saga Platform. Next:
+  authenticated UAT scroll/selection galeri panjang serta Original + Special
+  dan extra Original pada konfigurasi harga nyata sebelum `BUSINESS_READY`.
+
 ## 2026-08-08 - S142 kategori authoritative dan urutan Studio production
 
 - Klasifikasi: `CONFIRMED` melalui `DEC-062`, exact source/release, regression,
