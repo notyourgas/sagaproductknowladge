@@ -12,16 +12,28 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-08T14:38:12+07:00 |
+| Waktu pembaruan terakhir | 2026-08-08T16:15:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `e81d87400faa4d5a26a57ade3d3750955cef3d23` |
-| Informasi terakhir disinkronkan | SagaView S144 Studio `76f06a8a` pilihan izin foto cepat local-validated; production tetap S143. |
+| Baseline sebelum pembaruan | `77d1dc0dcf532a36100c84ce008d1c892813794e` |
+| Informasi terakhir disinkronkan | SagaBook Support Hub `dad3f5fb` intent-switch dan greeting reset local-validated; production tidak berubah. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik source/runtime. S144 tidak mengubah policy/payload consent lama dan belum mengganti production S143. |
-| Error | Gate changelog awal menolak versi 0.20.6 lama dan istilah internal; copy public-safe serta test versi diperbarui lalu seluruh validator lulus. |
+| Konflik | Tidak ada konflik source/runtime. Candidate chatbot tidak mengubah model, prompt, KB, provider, atau production. |
+| Error | Tidak ada; seluruh gate lokal dan knowledge validator wajib dijalankan sebelum commit. |
 
 ## File yang berubah pada sinkronisasi ini
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
+
+## File dari sinkronisasi sebelumnya
 
 - `products/sagaview/PRODUCT.md`
 - `products/sagaview/DOSSIER.md`

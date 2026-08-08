@@ -947,6 +947,19 @@ privacy/injection, dan tenant-negative lulus. Status tetap
 karena advisory feed Composer fresh timeout dan backup/restore/rehearsal S127
 belum dijalankan.
 
+Candidate finalisasi grounding berikutnya pada source
+`dad3f5fb1b4af7a0b45aed99ead3f164d9b70b1d` menutup regresi konteks yang
+pernah menjawab pertanyaan voucher dengan artikel cabang. Semantic score kini
+dipisahkan dari bonus surface, intent eksplisit baru mengalahkan previous
+intent, `caranya` bukan penanda follow-up mandiri, dan greeting menghasilkan
+direct response tanpa citation lalu mereset konteks. Sequence cabang -> voucher
+-> greeting -> voucher lulus pada service, API, dan browser 390x844 serta
+1440x900. Focused 45/45 dengan 3.413 assertion, full backend 964/964 dengan
+11.022 assertion, corpus 1.000/1.000, build, lint, Pint, diff, dan Composer
+advisory nol lulus. Status `AI_EVAL_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; model/prompt/KB tidak diubah, latency/cost belum
+diukur, dan production belum dipromosikan.
+
 ## Data yang digunakan
 
 Organization, tenant, branch, staff membership, catalog/package, resource,

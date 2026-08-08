@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-08 - SagaBook Support Hub grounding candidate
+
+- Source `dad3f5fb1b4af7a0b45aed99ead3f164d9b70b1d` memastikan pertanyaan
+  voucher tidak lagi dijawab sebagai cabang setelah konteks berganti.
+- Intent eksplisit mengalahkan previous intent; bonus surface tidak dapat
+  menjadi bukti tunggal; greeting mereset konteks tanpa citation fitur.
+- Focused 45/45, full backend 964/964, corpus 1.000/1.000, browser 4/4,
+  build/lint, serta Composer advisory nol lulus.
+- Status `AI_EVAL_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+  production, model, prompt, KB, provider, dan data customer tidak berubah.
+
 ## 2026-08-08 - SagaView S144 pilihan izin foto cepat candidate
 
 - `DEC-065` menetapkan empat tindakan consent pada Review; hanya pilihan manual

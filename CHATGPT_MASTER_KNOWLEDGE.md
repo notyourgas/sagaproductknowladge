@@ -127,6 +127,13 @@ tidak berarti integrasi seluruh produk selesai. SagaView tetap local-first
 untuk foto, editor, recovery, dan export. Subscription activation tidak
 berubah.
 
+Candidate Support Hub SagaBook source `dad3f5fb` sudah local-validated untuk
+pergantian intent cabang -> voucher, greeting reset, dan citation-intent yang
+sesuai. Intent eksplisit baru mengalahkan konteks lama, `caranya` tidak cukup
+untuk dianggap follow-up, dan greeting tidak mengambil artikel fitur. Status
+tetap `AI_EVAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; jangan menyebut perubahan
+ini production sampai live smoke, monitoring, dan rollback pipeline AI lulus.
+
 Candidate SagaBook Sprint 3 source
 `82a6f376998d8eb5778c6ccaac117a21a1ab8efd` belum production. Bila owner
 mengubah role, status, identitas login, password, atau delegasi cabang staff,

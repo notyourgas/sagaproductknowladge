@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 8 Agustus 2026 13:43 WIB
+Updated: 8 Agustus 2026 16:15 WIB
 Evidence status: production + source verified
 
 ## Tujuan dokumen
@@ -46,6 +46,15 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   kumulatif; arah storefront lebar S94/S108 tetap deprecated dan tidak aktif.
 
 ## Histori kandidat sebelum release S156
+- Candidate Support Hub source
+  `dad3f5fb1b4af7a0b45aed99ead3f164d9b70b1d` memperbaiki pergantian konteks
+  cabang ke voucher serta reset greeting. Intent eksplisit baru kini
+  mengalahkan previous intent, bonus surface tidak dapat menjadi satu-satunya
+  bukti, kata `caranya` tidak dianggap follow-up sendiri, dan greeting tidak
+  mengambil artikel fitur. Full backend 964/964, corpus 1.000/1.000, serta
+  Playwright 4/4 pada 390x844 dan 1440x900 lulus. Status
+  `AI_EVAL_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; model,
+  prompt, KB, dan production tidak berubah.
 - Candidate lokal S156 source
   `04c9b6416fbe401a001f3fd7b83dad47c613e8e4` menutup race aktual dua
   proses pada slot, tenant, resource, tanggal, dan jam yang sama. Transaksi

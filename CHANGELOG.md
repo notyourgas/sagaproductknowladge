@@ -12,6 +12,24 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-08
 
+### SagaBook Support Hub intent-switch grounding candidate
+
+- Ringkasan: pertanyaan voucher setelah topik cabang kini memilih intent dan
+  citation voucher; greeting memberi direct response dan mereset konteks.
+- Alasan: previous intent dan bonus surface sebelumnya dapat mempertahankan
+  artikel cabang walaupun user sudah berpindah topik.
+- Produk/area: SagaBook Support Hub retrieval, context handling, composer,
+  sequence test, browser acceptance, dan dependency security.
+- Klasifikasi: `CONFIRMED`; source
+  `dad3f5fb1b4af7a0b45aed99ead3f164d9b70b1d`; status
+  `AI_EVAL_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: focused 45/45, full backend 964/964, corpus 1.000/1.000, browser 4/4,
+  build/lint/Pint/diff, dan Composer advisory nol.
+- Production berubah: tidak. Model, prompt, KB, provider, endpoint, schema,
+  data customer, dan subscription tidak berubah.
+- File knowledge: product, dossier, changelog, ledger SagaBook, master, gaps,
+  portfolio/root changelog, dan sync status.
+
 ### SagaView S144 pilihan izin foto cepat candidate
 
 - Ringkasan: Review memakai empat tindakan consent; hanya pilihan manual yang

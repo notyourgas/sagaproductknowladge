@@ -1,5 +1,24 @@
 # SagaBook Changelog
 
+## 2026-08-08 - Support Hub intent-switch grounding candidate
+
+- Klasifikasi `CONFIRMED`; source
+  `dad3f5fb1b4af7a0b45aed99ead3f164d9b70b1d`, feature commit
+  `de85c7d47cbdcab04c55a202345b45331f3fde7d`, branch
+  `codex/chatbot-grounding-finalization`.
+- Before: pertanyaan voucher setelah topik cabang dapat mempertahankan artikel
+  cabang karena previous intent dan surface terlalu dominan. After: intent
+  eksplisit baru menang, bonus surface bukan bukti tunggal, `caranya` bukan
+  follow-up mandiri, dan greeting memberi direct response tanpa citation serta
+  mereset konteks.
+- Gate hijau: focused 45/45 (3.413 assertion), full backend 964/964 (11.022),
+  corpus 1.000/1.000, Playwright 4/4 pada 390x844 dan 1440x900, build,
+  lint/Pint/diff, dan Composer advisory nol.
+- Status `AI_EVAL_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+  Tidak ada perubahan model, prompt, KB, endpoint, schema, data customer,
+  subscription, atau production. Residual: authenticated live smoke,
+  latency/error/token/cost, rollback pipeline AI, dan adapter SagaView.
+
 ## Tujuan
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
