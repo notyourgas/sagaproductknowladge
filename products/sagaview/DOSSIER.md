@@ -42,7 +42,9 @@ SagaView berdasarkan runtime production aktif.
 - S146 bantuan AI device-scoped dan consent gabungan:
   `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
 - S147 boundary metadata sesi tanpa nama/path file:
-  `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S146
+  `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; backend
+  `0cda8a09` / `20260808225730-0cda8a0`, Studio `df959ccb` /
+  `20260808225730-df959cc`, rollback S146
 - Acceptance integrasi feature-by-feature: ledger dimulai konservatif dan
   belum membuktikan coverage penuh; lihat
   [Feature Coverage Ledger](FEATURE_COVERAGE_LEDGER.md).
@@ -75,6 +77,16 @@ SagaDev.
 
 Foto tetap local-first, sementara workflow selection sampai output 4R lebih
 terstruktur.
+
+S147 menegakkan metadata-only pada session API. Studio menyaring label folder,
+nama/path/ukuran foto, nama output, path absolut, dan key lokal sebelum request;
+backend menolak field tersebut dan meredaksi response record historis. Dry-run
+agregat menemukan 31 sesi historis, tanpa embedded image, dan keputusan founder
+adalah mempertahankan row tersebut tanpa cleanup production. Backup tiga
+database, restore disposable, rehearsal kandidat/rollback, live rollback,
+snapshot preservation, header/CORS/service/journal, dan smoke exact release
+lulus. Authenticated UAT menggunakan data sintetis/disposable; UAT operator pada
+folder Windows nyata dan `BUSINESS_READY` tetap gate terpisah.
 
 ## Use case
 

@@ -1,8 +1,9 @@
 # SagaView Changelog
 
-## 2026-08-08 - S147 boundary metadata sesi local-first candidate
+## 2026-08-08 - S147 boundary metadata sesi local-first production
 
-- Klasifikasi `CONFIRMED` melalui source dan acceptance lokal. Studio
+- Klasifikasi `CONFIRMED` melalui `DEC-066` sampai `DEC-069`, source,
+  acceptance lokal, guarded release, dan live verification. Studio
   `df959ccba2a69306d4aa50795b5aa35e875ffe43` menyaring label folder,
   nama/path/ukuran foto, nama output, path absolut, serta key metadata lokal
   sebelum request; backend `0cda8a09fa3f4bb08a483f6bd46ba25dc4fa6b28`
@@ -14,9 +15,21 @@
 - Gate hijau: Studio 181/181 unit, format/lint/typecheck/build/bundle budget,
   browser 12/12 termasuk 50/200/500 foto dan mobile/WCAG; backend 40/40 dengan
   723 assertion, Pint, Composer/npm audit nol advisory/vulnerability.
-- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S146
-  backend `1af88524` dan Studio `81e55adc`. Cleanup nilai historis di database
-  belum dilakukan dan memerlukan keputusan production terpisah.
+- Dry-run read-only menemukan 31 sesi lama: 31 row berlabel folder, 15 row
+  dengan key foto lokal, 14 row dengan key output lokal, dan nol embedded
+  image. Agregat sebelum/sesudah release identik; tidak ada cleanup atau
+  mutasi row historis.
+- Fresh backup `20260808T155606Z` mencakup tiga database terenkripsi, checksum,
+  Google Drive round-trip, dan restore disposable 148 tabel SagaView. Exact
+  artifact, rehearsal kandidat/rollback, live rollback/re-activation, snapshot
+  tenant/payment/subscription, service/header/CORS/journal, serta smoke API 422
+  lulus.
+- Backend `0cda8a09fa3f4bb08a483f6bd46ba25dc4fa6b28` aktif sebagai release
+  `20260808225730-0cda8a0`; Studio
+  `df959ccba2a69306d4aa50795b5aa35e875ffe43` aktif sebagai release
+  `20260808225730-df959cc`. Rollback S146 dipertahankan. Status
+  `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated UAT operator pada
+  folder Windows nyata dan `BUSINESS_READY` tetap residual.
 
 ## 2026-08-08 - S146 consent dan bantuan AI immutable production release
 

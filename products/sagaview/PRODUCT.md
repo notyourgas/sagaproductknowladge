@@ -48,10 +48,13 @@ diautentikasi perangkat. Backend
 PRODUCTION_ACTIVATED`; rollback langsung tetap S143.
 S147 menutup boundary metadata sesi secara lokal: Studio tidak lagi mengirim
 label folder, nama/path/ukuran foto, atau nama output; backend menolak field
-tersebut dan meredaksi response record lama. Kandidat Studio
-`df959ccba2a69306d4aa50795b5aa35e875ffe43` dan backend
-`0cda8a09fa3f4bb08a483f6bd46ba25dc4fa6b28` berstatus
-`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S146.
+tersebut dan meredaksi response record lama. Studio
+`df959ccba2a69306d4aa50795b5aa35e875ffe43` / release
+`20260808225730-df959cc` dan backend
+`0cda8a09fa3f4bb08a483f6bd46ba25dc4fa6b28` / release
+`20260808225730-0cda8a0` sudah `PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED`; rollback langsung adalah S146. Row historis tidak
+dimutasi sesuai `DEC-067`; agregat sebelum/sesudah release tetap identik.
 
 ## Tujuan dokumen
 
@@ -76,16 +79,20 @@ yang diverifikasi sampai 8 Agustus 2026.
   lalu memakai dua kartu sesi berdampingan pada QHD/4K di dalam batas 1400
   piksel. Ringkasan, filter, retry, cabut izin, dan workflow privacy tidak
   berubah.
-- Backend source `1af885248f04d95960a015749152c784af33307e` aktif sebagai
-  release `20260808190040-1af8852`; rollback
-  `20260808134902-8fac4f6` dipertahankan.
-- Studio source `81e55adc170af0949245e3f381d881b716e25b0e` aktif sebagai
-  release `20260808190040-81e55ad`; rollback
-  `20260808134902-91d7bd7` dipertahankan.
+- Backend source `0cda8a09fa3f4bb08a483f6bd46ba25dc4fa6b28` aktif sebagai
+  release `20260808225730-0cda8a0`; rollback
+  `20260808190040-1af8852` dipertahankan.
+- Studio source `df959ccba2a69306d4aa50795b5aa35e875ffe43` aktif sebagai
+  release `20260808225730-df959cc`; rollback
+  `20260808190040-81e55ad` dipertahankan.
 - S146 mengaktifkan consent S144 dan Support Hub device-scoped. Missing/
   invalid/revoked credential ditolak, tenant/product/actor diturunkan
   server-side, launcher tetap fail-soft, dan foto/folder/editor/export tidak
   dipindai atau diunggah.
+- S147 menegakkan allowlist metadata sesi pada client dan server. Cloud hanya
+  menerima ID lokal opaque, urutan, hitungan, status, harga, dan mode simpan;
+  nama/path/ukuran file serta label folder ditolak atau disaring. Data lama
+  tetap tersimpan tetapi tidak dikembalikan melalui response API.
 - Entitlement live memberi Growth 50 dan Pro 100 frame aktif. Harga, device,
   preset, offline grace, storage, laporan, support, payment, dan fair-use tidak
   berubah.

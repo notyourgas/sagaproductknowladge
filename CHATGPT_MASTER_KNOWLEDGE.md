@@ -656,11 +656,12 @@ tetap berada di device studio.
 Status: `PRODUCTION_DEPLOYED` dan `PRODUCTION_ACTIVATED`; business readiness
 mass-scale `NEEDS CONFIRMATION`. Consent cepat S144 dan bantuan AI
 device-scoped aktif kumulatif melalui S146.
-Kandidat S147 Studio `df959ccb` dan backend `0cda8a09` menutup pengiriman
+S147 Studio `df959ccb` dan backend `0cda8a09` menutup pengiriman
 label folder, nama/path/ukuran foto, nama output, dan path absolut melalui
-session API serta meredaksi field tersebut dari response historis. Statusnya
-`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S146 dan data
-historis belum dimutasi.
+session API serta meredaksi field tersebut dari response historis. Keduanya
+aktif sebagai release `20260808225730-df959cc` dan
+`20260808225730-0cda8a0`; rollback S146 tersedia. Data historis tidak dimutasi
+sesuai keputusan founder, dan agregat read-only sebelum/sesudah release identik.
 Harga bulanan: Growth Rp200.000, Pro Rp500.000.
 Growth mencakup 1 device, 50 frame, 3 preset, offline 24 jam, dan 2 GB aset
 frame cloud. Pro mencakup 4 device, 100 frame, 10 preset, offline 168 jam, 10 GB
@@ -674,11 +675,11 @@ tanpa mengubah benefit lain. Entitlement production terverifikasi melalui
 backend source `c8538060f64cfabce46dc7f837531015673e7a1c`.
 
 Update terbaru: backend memakai source
-`73979542ceeb8fc11e658c7d27346ca983dc163f`, release
-`20260806071707-7397954`, sedangkan Studio aktif memakai source
-`3b66f8d5df3e34aba11c4eab2619cfe44efd06d7`, release
-`20260806071733-3b66f8d`, dengan rollback Studio
-`20260806050546-3b66f8d` dan backend `20260806050513-1158926`. Workspace
+`0cda8a09fa3f4bb08a483f6bd46ba25dc4fa6b28`, release
+`20260808225730-0cda8a0`, sedangkan Studio aktif memakai source
+`df959ccba2a69306d4aa50795b5aa35e875ffe43`, release
+`20260808225730-df959cc`, dengan rollback S146 backend
+`20260808190040-1af8852` dan Studio `20260808190040-81e55ad`. Workspace
 Session kini memakai lebar adaptif sampai 1600 piksel pada monitor besar tanpa
 merusak reflow mobile/laptop atau menambah horizontal overflow. Workspace
 Output memakai batas 1400 piksel: satu alur vertikal pada mobile/laptop dan dua
@@ -695,16 +696,14 @@ perangkat menyediakan diagnostik ter-redact dan format laporan aman saat
 Support Hub gagal. S146 mengaktifkan endpoint online yang diautentikasi
 credential+fingerprint perangkat; tenant/product/actor ditentukan server-side
 dan first-use bootstrap langsung menerima pertanyaan. Folder foto, editor, dan
-export tetap local-first dan tidak dipindai/diunggah. Backend
-`1af885248f04d95960a015749152c784af33307e` / release
-`20260808190040-1af8852` serta Studio
-`81e55adc170af0949245e3f381d881b716e25b0e` / release
-`20260808190040-81e55ad` aktif dengan rollback S143. Gate final: backend
-961/961, Studio 180/180, browser 122 pass/3 intentional skip, build/audit,
-backup/restore, rehearsal, live rollback, snapshot data, header/CORS/service/
-journal, dan device-negative 422. Status `AI_EVAL_VALIDATED /
-INTEGRATION_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
-authenticated device/consent UAT dan latency/cost masih residual.
+export tetap local-first dan tidak dipindai/diunggah. S147 menambah allowlist
+metadata pada client dan larangan server; 31 row lama dipertahankan tanpa
+cleanup dan response API meredaksinya. Gate final: Studio 181/181, backend
+40/40 dengan 723 assertion, browser 12/12, backup tiga database terenkripsi/
+offsite/restore, rehearsal, live rollback, snapshot data, header/CORS/service/
+journal, dan live boundary 422. Status `INTEGRATION_VALIDATED /
+PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated UAT operator dengan
+folder Windows nyata dan business readiness masih residual.
 Session, Frames, dan Install App tidak lagi memicu
 hydration mismatch karena state online/PWA/recovery memakai snapshot awal
 SSR/client yang deterministik. Owner Console lintas browser,

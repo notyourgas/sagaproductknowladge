@@ -270,8 +270,64 @@ keputusan pengganti.
 | Alternatif yang dipertimbangkan | Mempertahankan radio + preview + satu tombol simpan; selalu membuka galeri; menghapus scope foto pilihan existing; memilih default otomatis. |
 | Dampak | Dialog menjadi dua step choices/specific; persistence, policy snapshot, folder-copy, export, finish, permission, dan privacy boundary lama tetap dipakai. Tidak ada backend, migration, atau mutasi data lama. |
 | Pemberi keputusan | Andreas / founder melalui instruksi alur pop-up empat tombol |
-| Status | `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; Studio `76f06a8a59a1bb88ad140250faaf2db1a8f1ce51`; production tetap S143 sampai guarded deployment dan live UAT |
+| Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; source S144 `76f06a8a59a1bb88ad140250faaf2db1a8f1ce51` aktif kumulatif melalui Studio S147 `df959ccbba2a69306d4aa50795b5aa35e875ffe43` |
 | Dokumen terkait | [SagaView Product](products/sagaview/PRODUCT.md), [SagaView Dossier](products/sagaview/DOSSIER.md), [SagaView Changelog](products/sagaview/CHANGELOG.md), [SagaView Ledger](products/sagaview/FEATURE_COVERAGE_LEDGER.md), [Master Knowledge](CHATGPT_MASTER_KNOWLEDGE.md), [Gaps](GAPS.md) |
+
+## DEC-066 - S147 memakai exact-production integration dan guarded release
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-08 |
+| Topik | Jalur integrasi dan release metadata no-upload SagaView |
+| Keputusan | S147 wajib dibentuk dari exact source production, melewati local gate, authenticated UAT terkontrol, backup/restore, candidate+rollback rehearsal, atomic switch, live rollback, dan independent post-verification. Deployment berhenti fail-closed bila lineage, sesi aktif, data preservation, service, security header, smoke, atau rollback tidak hijau. |
+| Alasan | Backend SagaView berbagi repository dengan SagaBook sehingga merge/rebase ke `main` dapat membawa perubahan produk lain. Boundary privacy juga memerlukan bukti runtime, bukan hanya test kandidat. |
+| Alternatif yang dipertimbangkan | Merge ke repository `main` bersama SagaBook; deploy kandidat langsung; menunda release setelah semua gate hijau. |
+| Dampak | Backend `0cda8a09` dan Studio `df959ccb` dirilis sebagai `20260808225730-0cda8a0` dan `20260808225730-df959cc`; rollback S146 tersedia; SagaBook dan Saga Platform tidak berubah. |
+| Pemberi keputusan | Andreas / founder melalui persetujuan seluruh rekomendasi laporan harian |
+| Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; `BUSINESS_READY` tetap terpisah |
+| Dokumen terkait | [SagaView Product](products/sagaview/PRODUCT.md), [SagaView Changelog](products/sagaview/CHANGELOG.md), [SagaView Ledger](products/sagaview/FEATURE_COVERAGE_LEDGER.md), [Gaps](GAPS.md) |
+
+## DEC-067 - Metadata sesi historis dipertahankan tanpa cleanup production
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-08 |
+| Topik | Penanganan metadata lokal historis SagaView |
+| Keputusan | Lakukan dry-run agregat read-only, jangan mengubah row historis, redaksi field lokal pada response, dan larang field lokal baru pada client serta server. Cleanup production memerlukan keputusan founder baru. |
+| Alasan | Redaksi read-time dan larangan write baru menutup exposure tanpa risiko mengubah riwayat sesi atau memerlukan rollback data. |
+| Alternatif yang dipertimbangkan | Rewrite seluruh row saat deploy; cleanup bertahap; mempertahankan response lama tanpa redaksi. |
+| Dampak | Sebelum/sesudah release tetap 31 sesi, 31 row berlabel folder, 15 row dengan key foto lokal, 14 row dengan key output lokal, dan nol embedded image. Tidak ada mutasi database; response live aman dan payload baru ditolak 422. |
+| Pemberi keputusan | Andreas / founder melalui persetujuan rekomendasi default aman |
+| Status | `CONFIRMED / PRODUCTION_ACTIVATED`; cleanup historis tidak diotorisasi |
+| Dokumen terkait | [SagaView Product](products/sagaview/PRODUCT.md), [SagaView Dossier](products/sagaview/DOSSIER.md), [SagaView Ledger](products/sagaview/FEATURE_COVERAGE_LEDGER.md), [Data Privacy](docs/technical/DATA_PRIVACY.md) |
+
+## DEC-068 - Authenticated UAT SagaView dijalankan terkontrol
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-08 |
+| Topik | Lingkungan dan data untuk UAT authenticated SagaView |
+| Keputusan | Gate pre-release memakai credential, tenant, device, session, dan database sintetis/disposable. Production hanya menerima smoke nonmutating atau negative yang tidak mengirim foto/path/customer data. UAT operator pada folder Windows nyata tetap gate terpisah sebelum `BUSINESS_READY`. |
+| Alasan | Auth/session boundary perlu dibuktikan tanpa memakai data customer, mengonsumsi entitlement perangkat nyata, atau mengubah tenant production. |
+| Alternatif yang dipertimbangkan | Memakai akun/customer production; hanya unit test tanpa request pipeline; menunda seluruh release sampai UAT manusia. |
+| Dampak | Focused backend authenticated flow dan browser acceptance selesai dengan data sintetis; live API 422, CORS, health, dan exact asset diperiksa tanpa mutasi customer. |
+| Pemberi keputusan | Andreas / founder melalui persetujuan rekomendasi authenticated UAT terkontrol |
+| Status | `CONFIRMED`; UAT Windows nyata dan `BUSINESS_READY` masih `NEEDS CONFIRMATION` |
+| Dokumen terkait | [SagaView Product](products/sagaview/PRODUCT.md), [SagaView Ledger](products/sagaview/FEATURE_COVERAGE_LEDGER.md), [Gaps](GAPS.md) |
+
+## DEC-069 - Screening SagaView berikutnya memprioritaskan export dan recovery lokal
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-08 |
+| Topik | Prioritas screening vertikal berikutnya SagaView |
+| Keputusan | Setelah S147, prioritas pertama adalah export/output dan recovery/quota pada Windows: permission/write failure, disk full, partial write, crash recovery, safe cleanup, retry/cancel, dan network capture no-upload. |
+| Alasan | Area local-first tersebut paling dekat dengan hasil customer dan masih `NOT_SCREENED`; kegagalan filesystem dapat merusak output atau membuat operator mengulang pekerjaan. |
+| Alternatif yang dipertimbangkan | Melanjutkan fitur baru; screening entitlement Owner; price/payment hold lebih dulu. |
+| Dampak | Slice berikutnya dimulai dari failure matrix dan acceptance criteria, menggunakan filesystem sementara/data sintetis, tanpa mengubah pricing, provider, atau produk lain. |
+| Pemberi keputusan | Andreas / founder melalui persetujuan seluruh rekomendasi laporan harian |
+| Status | `CONFIRMED / READY` |
+| Dokumen terkait | [SagaView Ledger](products/sagaview/FEATURE_COVERAGE_LEDGER.md), [Gaps](GAPS.md), [SagaView Product](products/sagaview/PRODUCT.md) |
 
 ## DEC-062 - Kategori Owner authoritative dan urutan dikelola Studio
 

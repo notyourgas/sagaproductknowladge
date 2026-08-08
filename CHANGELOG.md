@@ -26,17 +26,20 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 - File knowledge: product, dossier, changelog, ledger SagaBook,
   portfolio/root changelog, master, gaps, dan sync status.
 
-### SagaView S147 metadata no-upload candidate
+### SagaView S147 metadata no-upload production
 
 - Ringkasan: metadata sesi cloud baru tidak lagi membawa label folder,
   nama/path/ukuran foto, nama output, atau path absolut; backend menolak field
   lokal dan meredaksi response record lama.
 - Klasifikasi `CONFIRMED`; Studio `df959ccb`, backend `0cda8a09`, status
-  `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+  `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` melalui `DEC-066` sampai
+  `DEC-069`.
 - Gate: Studio 181/181, backend 40/40 dengan 723 assertion, browser 12/12,
   build/budget, formatter/type/lint, dan audit dependency nol temuan.
-- Production berubah: tidak. Runtime tetap S146; cleanup database historis dan
-  deployment membutuhkan keputusan serta gate terpisah.
+- Production berubah: ya. Backend `20260808225730-0cda8a0` dan Studio
+  `20260808225730-df959cc` aktif; rollback S146 tersedia. Backup tiga database,
+  offsite/restore, rehearsal/live rollback, snapshot preservation, dan smoke
+  lulus. Row historis tidak dibersihkan dan agregat sebelum/sesudah identik.
 - File knowledge: product, dossier, changelog, ledger SagaView,
   portfolio/root changelog, master, gaps, dan sync status.
 

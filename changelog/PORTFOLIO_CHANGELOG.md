@@ -12,15 +12,20 @@
   `c7f13487` / `20260808115539-c7f1348`. Gap berikutnya adalah callback expiry
   provider, reconciliation, stale multi-tab, dan permission-negative.
 
-## 2026-08-08 - SagaView S147 metadata no-upload candidate
+## 2026-08-08 - SagaView S147 metadata no-upload production
 
 - Studio `df959ccb` dan backend `0cda8a09` memisahkan label folder,
   nama/path/ukuran foto, nama output, serta path absolut dari metadata sesi
   cloud; API menolak field lokal dan response lama meredaksinya.
 - Gate lulus: Studio 181/181, backend 40/40 (723 assertion), browser 12/12,
-  build/budget, format/type/lint/Pint, dan audit dependency nol temuan.
-- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S146.
-  Cleanup database historis dan deployment memerlukan gate/otorisasi terpisah.
+  build/budget, format/type/lint/Pint, audit dependency nol temuan, backup tiga
+  database/offsite/restore, rehearsal, live rollback, snapshot preservation,
+  service/header/CORS/journal, dan live API 422.
+- Backend `0cda8a09` / `20260808225730-0cda8a0` dan Studio `df959ccb` /
+  `20260808225730-df959cc` aktif dengan rollback S146. Agregat 31 sesi lama
+  tidak berubah; founder memilih tanpa cleanup row historis. Status
+  `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; UAT Windows nyata dan
+  `BUSINESS_READY` tetap terpisah.
 
 ## 2026-08-08 - SagaBook S7-S8 combined exit accepted locally
 
