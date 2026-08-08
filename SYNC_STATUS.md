@@ -12,14 +12,14 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-08T14:02:28+07:00 |
+| Waktu pembaruan terakhir | 2026-08-08T14:38:12+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `4e3a731092242031d073894f65dfb8d7186620f3` |
-| Informasi terakhir disinkronkan | SagaView S143 backend `8fac4f68` / `20260808134902-8fac4f6` dan Studio `91d7bd7b` / `20260808134902-91d7bd7` aktif; rollback S142 tersedia. |
+| Baseline sebelum pembaruan | `e81d87400faa4d5a26a57ade3d3750955cef3d23` |
+| Informasi terakhir disinkronkan | SagaView S144 Studio `76f06a8a` pilihan izin foto cepat local-validated; production tetap S143. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik source/runtime. Kontrak pricing S143 melanjutkan kategori authoritative S142; status current `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`, belum `BUSINESS_READY`. |
-| Error | Dua attempt berhenti fail-closed sebelum activation karena slug dan policy sesi; attempt final, live rollback/re-activation, service, journal, header, public smoke, dan marker lulus. |
+| Konflik | Tidak ada konflik source/runtime. S144 tidak mengubah policy/payload consent lama dan belum mengganti production S143. |
+| Error | Gate changelog awal menolak versi 0.20.6 lama dan istilah internal; copy public-safe serta test versi diperbarui lalu seluruh validator lulus. |
 
 ## File yang berubah pada sinkronisasi ini
 
@@ -47,6 +47,9 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `CHANGELOG.md`
 
 ## Sinkronisasi sebelumnya
+
+- SagaView S144 Studio `76f06a8a` disinkronkan sebagai pilihan izin foto cepat
+  `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S143.
 
 - SagaView S143 backend `8fac4f68` dan Studio `91d7bd7b` disinkronkan sebagai
   `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated galeri/pricing UAT

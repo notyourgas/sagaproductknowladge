@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 8 Agustus 2026 13:43 WIB
+Evidence cut-off: 8 Agustus 2026 14:38 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -629,6 +629,8 @@ tetap berada di device studio.
 
 Status: `PRODUCTION_DEPLOYED` dan `PRODUCTION_ACTIVATED`; business readiness
 mass-scale `NEEDS CONFIRMATION`.
+Candidate S144 `76f06a8a` menyederhanakan consent akhir sesi, tetapi berstatus
+`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S143.
 Harga bulanan: Growth Rp200.000, Pro Rp500.000.
 Growth mencakup 1 device, 50 frame, 3 preset, offline 24 jam, dan 2 GB aset
 frame cloud. Pro mencakup 4 device, 100 frame, 10 preset, offline 168 jam, 10 GB
@@ -955,6 +957,16 @@ backup/restore, rehearsal, live rollback/re-activation, preservation,
 service/journal/header/public smoke, dan marker S143/0.20.6 lulus. Status
 `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; jangan sebut `BUSINESS_READY`
 sebelum authenticated UAT galeri panjang dan kombinasi harga paket nyata.
+
+S144 mengikuti `DEC-065`, tetapi belum production. Review menampilkan empat
+tindakan izin foto: semua foto, foto yang sudah dipilih, pilihan manual beberapa
+foto, atau tidak mengizinkan. Tiga tindakan selain pilihan manual langsung
+memakai persistence consent dan workflow export/finish existing; galeri baru
+dimuat untuk pilihan manual. Tidak ada default, policy snapshot dan local-first
+boundary tidak berubah. Studio source
+`76f06a8a59a1bb88ad140250faaf2db1a8f1ce51` berstatus
+`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S143 dan jangan
+menyebut S144 tersedia sebelum guarded deployment serta live UAT selesai.
 
 Implementasi rotate lama yang menukar W/H 90 derajat telah `DEPRECATED` oleh
 koreksi founder `DEC-036`. Perilaku production yang aktif adalah

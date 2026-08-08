@@ -37,6 +37,8 @@ SagaView berdasarkan runtime production aktif.
   `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
 - S141 manajemen banyak frame dengan satu simpan:
   `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
+- S144 pilihan izin foto cepat:
+  `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`
 - Acceptance integrasi feature-by-feature: ledger dimulai konservatif dan
   belum membuktikan coverage penuh; lihat
   [Feature Coverage Ledger](FEATURE_COVERAGE_LEDGER.md).
@@ -117,6 +119,14 @@ sesi berdampingan tanpa mengubah ringkasan, filter, retry, cabut izin, consent
 API, permission, atau penyimpanan foto lokal. Source Studio
 `3b66f8d5df3e34aba11c4eab2619cfe44efd06d7` aktif sebagai release
 `20260806050546-3b66f8d`; rollback `20260805155605-3b66f8d` tersedia.
+
+Candidate S144 mengubah consent customer pada Review menjadi pop-up empat
+tindakan. Izinkan semua, foto yang sudah dipilih, dan jangan gunakan foto
+langsung memakai penyimpanan consent serta penyelesaian sesi existing; pilihan
+beberapa foto saja yang memuat wizard galeri. Tidak ada default, policy snapshot
+dan local-first boundary tetap sama, serta kegagalan simpan tetap berada di
+dialog untuk retry. Source `76f06a8a59a1bb88ad140250faaf2db1a8f1ce51`
+berstatus `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S143.
 
 Pemilihan frame production memakai preview, selected state, jumlah cetakan,
 serta satu aksi `Terapkan & lanjut`. Editor dan Review kini menjadi alur

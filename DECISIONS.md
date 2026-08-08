@@ -259,6 +259,20 @@ keputusan pengganti.
 | Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; backend `8fac4f681d45660da27afdd72ba36460d4bd6d0c` / `20260808134902-8fac4f6`, Studio `91d7bd7bf13d6dcf7d386431d652a9cf9f3cdefa` / `20260808134902-91d7bd7`; authenticated UAT tetap residual |
 | Dokumen terkait | [SagaView Product](products/sagaview/PRODUCT.md), [SagaView Dossier](products/sagaview/DOSSIER.md), [SagaView Changelog](products/sagaview/CHANGELOG.md), [SagaView Ledger](products/sagaview/FEATURE_COVERAGE_LEDGER.md), [Master Knowledge](CHATGPT_MASTER_KNOWLEDGE.md), [Gaps](GAPS.md) |
 
+## DEC-065 - Izin foto memakai empat tindakan dan galeri hanya untuk pilihan manual
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-08 |
+| Topik | Penyederhanaan consent penggunaan foto pada akhir sesi SagaView |
+| Keputusan | Setelah aksi lanjut pada Review, tampilkan empat tindakan: izinkan semua foto, hanya foto yang sudah dipilih, pilih beberapa foto secara manual, atau jangan gunakan foto. Semua tindakan selain pilihan manual harus menyimpan keputusan dan langsung melanjutkan penyelesaian sesi; hanya pilihan manual yang membuka wizard galeri. Tidak ada pilihan aktif otomatis. |
+| Alasan | Wizard besar sejak awal menambah langkah, memuat banyak thumbnail yang belum dibutuhkan, dan membuat customer harus menyimpan ulang pilihan yang sebenarnya sudah eksplisit. |
+| Alternatif yang dipertimbangkan | Mempertahankan radio + preview + satu tombol simpan; selalu membuka galeri; menghapus scope foto pilihan existing; memilih default otomatis. |
+| Dampak | Dialog menjadi dua step choices/specific; persistence, policy snapshot, folder-copy, export, finish, permission, dan privacy boundary lama tetap dipakai. Tidak ada backend, migration, atau mutasi data lama. |
+| Pemberi keputusan | Andreas / founder melalui instruksi alur pop-up empat tombol |
+| Status | `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; Studio `76f06a8a59a1bb88ad140250faaf2db1a8f1ce51`; production tetap S143 sampai guarded deployment dan live UAT |
+| Dokumen terkait | [SagaView Product](products/sagaview/PRODUCT.md), [SagaView Dossier](products/sagaview/DOSSIER.md), [SagaView Changelog](products/sagaview/CHANGELOG.md), [SagaView Ledger](products/sagaview/FEATURE_COVERAGE_LEDGER.md), [Master Knowledge](CHATGPT_MASTER_KNOWLEDGE.md), [Gaps](GAPS.md) |
+
 ## DEC-062 - Kategori Owner authoritative dan urutan dikelola Studio
 
 | Field | Isi |

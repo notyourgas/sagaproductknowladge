@@ -4,6 +4,29 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-08-08 - S144 pilihan izin foto cepat candidate
+
+- Klasifikasi: `CONFIRMED` melalui `DEC-065` dan exact source
+  `76f06a8a59a1bb88ad140250faaf2db1a8f1ce51`. Status
+  `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S143 Studio
+  `20260808134902-91d7bd7`.
+- Review sekarang membuka pop-up ringkas dengan empat tindakan consent. Semua,
+  foto yang sudah dipilih, dan tidak mengizinkan langsung menyimpan keputusan
+  lalu meneruskan export/finish. Hanya pilihan beberapa foto yang membuka
+  galeri manual.
+- Tidak ada scope aktif otomatis. Policy text/snapshot, payload cloud,
+  penyalinan foto yang diizinkan, retry error, dan local-photo boundary tetap
+  memakai kontrak lama; tidak ada backend atau migration.
+- Pemilihan manual bertahan ketika kembali ke empat jawaban selama dialog masih
+  terbuka. Tombol kembali, close, Escape, 44 px, mobile 390x844, dan WCAG
+  serious/critical tervalidasi.
+- Gate: format/lint/typecheck, 177 unit, production build/budget, focused 8 unit
+  + 2 browser, full Playwright 121 pass/2 intentional skip, serta npm audit nol
+  advisory lulus.
+- Production berubah: tidak. Tidak ada mutasi consent lama, foto customer,
+  frame, pricing, payment, subscription, device, SagaBook, atau Saga Platform.
+  Next: guarded deployment terpisah dan authenticated UAT empat cabang consent.
+
 ## 2026-08-08 - S143 galeri stabil dan harga paket jujur production
 
 - Klasifikasi: `CONFIRMED` melalui `DEC-064`, exact source/release, full

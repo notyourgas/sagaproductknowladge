@@ -12,6 +12,23 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-08
 
+### SagaView S144 pilihan izin foto cepat candidate
+
+- Ringkasan: Review memakai empat tindakan consent; hanya pilihan manual yang
+  membuka galeri, sedangkan tiga scope lain langsung menyimpan dan melanjutkan
+  penyelesaian sesi.
+- Klasifikasi: `CONFIRMED` melalui `DEC-065`; Studio source
+  `76f06a8a59a1bb88ad140250faaf2db1a8f1ce51`; status
+  `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: 177 unit, focused 8 unit + 2 browser, full Playwright 121 pass/2 skip,
+  format/lint/typecheck/build/budget, mobile/WCAG, dan audit dependency nol
+  advisory lulus.
+- Production berubah: tidak; production tetap S143. Tidak ada backend,
+  migration, atau mutasi consent lama, foto, frame, pricing, payment,
+  subscription, device, SagaBook, maupun Platform.
+- File knowledge: product, dossier, changelog, ledger, decision, master, gaps,
+  portfolio/root changelog, dan sync status.
+
 ### SagaView S143 galeri stabil dan harga paket jujur production
 
 - Ringkasan: polling manifest identik kini mempertahankan pilihan/urutan/aset/

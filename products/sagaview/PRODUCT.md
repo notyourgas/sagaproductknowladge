@@ -35,6 +35,10 @@ kategori authoritative terbaru saat simpan. Backend
 `91d7bd7bf13d6dcf7d386431d652a9cf9f3cdefa` / release
 `20260808134902-91d7bd7` sudah `PRODUCTION_DEPLOYED /
 PRODUCTION_ACTIVATED`. Authenticated Owner/Studio UAT tetap residual.
+S144 menyederhanakan izin penggunaan foto menjadi empat tindakan cepat dan
+hanya membuka galeri untuk pilihan manual. Studio source
+`76f06a8a59a1bb88ad140250faaf2db1a8f1ce51` berstatus
+`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S143.
 
 ## Tujuan dokumen
 
@@ -65,6 +69,8 @@ yang diverifikasi sampai 8 Agustus 2026.
 - Studio source `91d7bd7bf13d6dcf7d386431d652a9cf9f3cdefa` aktif sebagai
   release `20260808134902-91d7bd7`; rollback
   `20260808020447-c4f664f` dipertahankan.
+- Studio candidate S144 `76f06a8a59a1bb88ad140250faaf2db1a8f1ce51`
+  belum dideploy; runtime production dan rollback tidak berubah.
 - Entitlement live memberi Growth 50 dan Pro 100 frame aktif. Harga, device,
   preset, offline grace, storage, laporan, support, payment, dan fair-use tidak
   berubah.
@@ -640,6 +646,26 @@ subscription, service/journal/header/public smoke, dan marker S143/0.20.6 lulus.
 Tidak ada migration atau perubahan foto customer, artwork, payment, subscription,
 device lease, SagaBook, maupun Saga Platform. Authenticated UAT galeri panjang
 dan kombinasi harga paket nyata tetap diperlukan sebelum `BUSINESS_READY`.
+
+### S144 pilihan izin foto cepat candidate
+
+`CONFIRMED` melalui `DEC-065`, tetapi belum production. Pada Review, aksi akhir
+membuka pop-up ringkas dengan empat jawaban: `Izinkan semua foto`, `Hanya foto
+yang saya pilih`, `Pilih beberapa foto`, dan `Jangan gunakan foto saya`. Tiga
+jawaban selain pilihan manual menyimpan scope consent lalu melanjutkan workflow
+export dan penyelesaian sesi yang sudah ada. Hanya `Pilih beberapa foto` yang
+memuat galeri thumbnail; kembali ke daftar jawaban mempertahankan pilihan manual
+selama dialog masih terbuka.
+
+Tidak ada pilihan otomatis. Policy snapshot, payload consent, penyalinan foto
+yang memang diizinkan, persistence cloud, dan batas local-first tetap memakai
+kontrak production lama. Source Studio
+`76f06a8a59a1bb88ad140250faaf2db1a8f1ce51`; status
+`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Format/lint/typecheck, 177 unit,
+production build/budget, focused consent 8 unit + 2 browser, full browser 121
+pass/2 intentional skip, mobile 390x844, keyboard/Escape, WCAG, dan audit
+dependency nol advisory lulus. Production tetap S143 sampai guarded deployment
+diotorisasi dan live UAT empat cabang consent selesai.
 
 ## Session completion dan privacy handoff
 

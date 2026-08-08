@@ -443,6 +443,11 @@ ketika keputusan atau release baru menutup gap.
   end-to-end.
 - `TODO`: S72 auto-trial 7 hari masih `PRODUCTION HOLD`; activation memerlukan
   release Saga Platform dan authenticated SagaView UAT setelah provisioning.
+- `NEEDS CONFIRMATION`: S144 pilihan izin foto cepat source `76f06a8a` sudah
+  local-validated tetapi belum dideploy. Guarded deploy dan authenticated UAT
+  untuk empat scope, permission folder, retry, export, serta finish nyata wajib
+  selesai sebelum S144 disebut production atau business-ready.
+
 ### Gap SagaView ditutup
 
 - `CONFIRMED` pada 5 Agustus 2026: gap ruang kosong ekstrem dan scan vertikal

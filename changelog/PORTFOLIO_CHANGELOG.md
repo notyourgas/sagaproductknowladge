@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-08 - SagaView S144 pilihan izin foto cepat candidate
+
+- `DEC-065` menetapkan empat tindakan consent pada Review; hanya pilihan manual
+  yang membuka galeri, sedangkan tiga scope lain langsung menyimpan dan
+  melanjutkan penyelesaian sesi.
+- Studio source `76f06a8a59a1bb88ad140250faaf2db1a8f1ce51`; 177 unit,
+  focused consent, full browser 121 pass/2 skip, build/budget, mobile/WCAG, dan
+  audit dependency nol advisory lulus.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S143.
+  Tidak ada backend, migration, atau mutasi consent lama, foto, frame, payment,
+  subscription, device, SagaBook, maupun Saga Platform.
+
 ## 2026-08-08 - SagaView S143 galeri stabil dan harga paket jujur production
 
 - `DEC-064` menetapkan polling identik tidak boleh mengubah frame terpilih,
