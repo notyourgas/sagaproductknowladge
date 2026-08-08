@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 8 Agustus 2026 09:12 WIB
+Updated: 8 Agustus 2026 10:20 WIB
 Evidence status: production + source verified
 
 ## Tujuan dokumen
@@ -36,6 +36,15 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 - Label candidate pada bagian histori di bawah adalah status saat bukti itu
   dibuat. Source S98-S130 yang menjadi ancestor release aktif sudah aktif
   kumulatif; arah storefront lebar S94/S108 tetap deprecated dan tidak aktif.
+- Candidate lokal S154 source
+  `1d9d774fe1f506dd076fe09668c7a05e3685c387` menutup irisan pertama S7:
+  ketika slot diambil transaksi lain saat customer menekan pembayaran,
+  storefront mengunci double-submit, tidak menyimpan booking lokal sebelum API
+  sukses, kembali ke Jadwal, memuat availability aktual, dan meminta satu slot
+  baru. Reason publik tidak lagi memuat kode booking atau alasan blok internal.
+  Statusnya `UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; fitur availability/concurrency keseluruhan tetap
+  `INTEGRATION_IN_PROGRESS`, production dan aktivasi subscription tidak berubah.
 - Candidate lokal S147 source
   `0d962430177569eaa6e53b053eedacd6cee01ec7` menutup irisan pertama S6:
   konflik stale-write editor Add-on kini dapat memuat response API terbaru,

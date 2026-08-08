@@ -12,6 +12,21 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-08
 
+### SagaBook Sprint 7 slot conflict recovery candidate
+
+- Ringkasan: konflik slot saat pembayaran kini fail-safe melalui satu submit,
+  409 public-safe, kembali ke Jadwal, availability refetch aktual, dan tanpa
+  booking lokal/DB parsial sebelum response sukses.
+- Klasifikasi: `CONFIRMED`; source
+  `1d9d774fe1f506dd076fe09668c7a05e3685c387`; status `UIUX_VALIDATED /
+  INTEGRATION_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: focused 5/5 (32), full backend 992/992 (11.327), browser 12/12,
+  build/typecheck/design 26/0, dependency advisory nol, dan AI 38/38 (219).
+- Production berubah: tidak. Release aktif tetap `20260806152606-0894df0`;
+  S7-S8 masih berjalan dan deploy ditahan sampai S21.
+- File knowledge: product, dossier, changelog, ledger, master knowledge, gaps,
+  portfolio/root changelog, dan sync status.
+
 ### SagaBook Sprint 6 combined Resource exit gate candidate
 
 - Ringkasan: lima profil repeatable kini mengikat CRUD, status/retry,

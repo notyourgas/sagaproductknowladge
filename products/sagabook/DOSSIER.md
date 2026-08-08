@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 8 Agustus 2026 09:12 WIB
+- Updated: 8 Agustus 2026 10:20 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED` untuk workflow yang tercantum di
   [PRODUCT](PRODUCT.md)
@@ -22,6 +22,10 @@ dalam satu dokumen public-safe.
   guard scope/fallback Support Hub aktif, tetapi corpus/index/model AI tetap
   `AI_KNOWLEDGE_NOT_PROMOTED`; S94/S108 yang
   memperlebar storefront tetap deprecated dan tidak aktif.
+- Candidate S154 `1d9d774f` memulihkan konflik slot pada batas Bayar -> Jadwal:
+  satu request mutation, 409 `slot_conflict` public-safe, availability refetch,
+  pilihan slot stale dibersihkan, dan sessionStorage baru ditulis setelah API
+  menerima booking. Candidate ini local-validated dan belum production.
 
 ## Overview produk
 

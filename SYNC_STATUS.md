@@ -12,11 +12,11 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-08T09:12:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-08T10:20:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `271cc21d9f4ddcffbb8961821a5f82149ae82356` |
-| Informasi terakhir disinkronkan | SagaBook S153 source `57310ddd`: combined exit Resource 5/5 untuk CRUD, status/retry/double-submit, stale recovery, delete dependency recovery, dan Staff 403 spesifik Resource; S6 `EXIT_GATE_ACCEPTED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`, S7-S8 menjadi prioritas berikutnya, dan production tetap `20260806152606-0894df0`. |
+| Baseline sebelum pembaruan | `975b17955e1c10c8d97b117c24bfeb43d8faca40` |
+| Informasi terakhir disinkronkan | SagaBook S154 source `1d9d774f`: recovery konflik slot saat pembayaran kini satu-submit, public-safe, kembali ke Jadwal dengan availability aktual, dan tidak menulis booking lokal/DB parsial; irisan `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`, S7-S8 tetap berjalan, production tetap `20260806152606-0894df0`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
 | Konflik | Tidak ada. Kontrak storefront mobile-only, subscription skip, urutan sprint, SagaView local-first, dan product boundary tetap konsisten. |
 | Error | Tidak ada advisory npm/Composer/OSV. Production tidak diubah. Rollback/previous symlink SagaBook tetap residual sebelum S21. |
@@ -34,6 +34,9 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `CHANGELOG.md`
 
 ## Sinkronisasi sebelumnya
+
+- SagaBook S154 source `1d9d774f` disinkronkan sebagai recovery konflik slot
+  local-validated; S7-S8 belum exit dan production tidak berubah.
 
 - SagaBook S153 source `57310ddd` disinkronkan sebagai combined Resource exit
   S6 `EXIT_GATE_ACCEPTED / LOCAL_VALIDATED`; production tidak berubah.

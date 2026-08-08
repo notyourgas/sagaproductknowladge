@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 8 Agustus 2026 09:12 WIB
+Evidence cut-off: 8 Agustus 2026 10:20 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -75,6 +75,13 @@ cabang/30 staff self-service; kebutuhan lebih besar menggunakan Custom.
 Booking dipasarkan unlimited dengan fair-use.
 Trial SagaBook: 7 hari full access, kemudian grace read-only hari 8-14 dan
 suspend setelah hari 14; tidak ada auto-charge.
+
+Candidate lokal terbaru S154 source `1d9d774f` memperbaiki recovery ketika
+slot berubah saat customer memulai pembayaran: request ganda diblok, booking
+lokal tidak disimpan sebelum response sukses, customer dikembalikan ke Jadwal,
+dan reason publik tidak membocorkan kode booking/alasan blok internal. Status
+`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; jangan menyebut perilaku ini
+production sampai release immutable S21 terbukti.
 
 SagaBook S119 aktif pada source
 `20ff6829f96cebec22d34844291b3d522b91774a`, release

@@ -4,6 +4,27 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-08 - Sprint 7 payment-time slot conflict recovery candidate
+
+- Klasifikasi `CONFIRMED`; source
+  `1d9d774fe1f506dd076fe09668c7a05e3685c387` pada branch
+  `codex/s154-sagabook-slot-conflict-recovery`.
+- Before: klik ganda dapat mengirim dua submit, konflik 409 tertahan sebagai
+  error generik di Bayar, pilihan slot stale tetap aktif, dan sessionStorage
+  berisi booking sebelum server menerimanya. After: synchronous in-flight
+  guard membuat satu request, booking lokal hanya ditulis setelah sukses, lalu
+  customer kembali ke Jadwal dengan alert natural dan availability aktual.
+- API `POST /api/submit-booking` memberi kode `slot_conflict`/action hint;
+  `POST /api/availability` dan conflict response menyamarkan kode booking serta
+  alasan block internal. Unique slot lock, transaction, hold, dan rollback
+  request kedua menjaga database tanpa booking/hold/lock parsial.
+- Focused 5/5 (32), full backend 992/992 (11.327), browser S98+S154 12/12,
+  build/typecheck, design 26/0, npm/Composer/OSV nol advisory, dan Support Hub
+  AI 38/38 (219) hijau; before/after 390x844 dan 1440x900 terverifikasi.
+- Status irisan `UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; S7-S8 tetap `INTEGRATION_IN_PROGRESS`.
+  Production tetap `20260806152606-0894df0`; deploy ditahan sampai S21.
+
 ## 2026-08-08 - Sprint 6 combined Resource exit gate candidate
 
 - Klasifikasi `CONFIRMED`; source

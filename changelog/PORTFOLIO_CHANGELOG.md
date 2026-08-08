@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-08 - SagaBook Sprint 7 slot conflict recovery candidate
+
+- Source `1d9d774fe1f506dd076fe09668c7a05e3685c387` menutup false local
+  success dan double-submit saat slot berubah pada batas pembayaran.
+- Customer sekarang kembali ke Jadwal dengan slot aktual; API menyamarkan kode
+  booking dan alasan block internal, sementara transaction/unique slot lock
+  mencegah booking, hold, atau lock parsial pada request yang kalah.
+- Full backend 992/992, browser 12/12, build/typecheck/design, audit dependency,
+  dan AI SagaBook 38/38 hijau. Bukti before/after mobile dan desktop menjaga
+  canvas storefront maksimum 460 piksel serta satu watermark.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; fitur S7-S8 belum exit
+  dan production tetap `20260806152606-0894df0`.
+
 ## 2026-08-08 - SagaBook Sprint 6 combined Resource exit gate candidate
 
 - Source `57310ddd1958dc5fc9f585196b8757ffeb051c41` menambahkan runner
