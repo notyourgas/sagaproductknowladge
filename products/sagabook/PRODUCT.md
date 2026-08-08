@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 8 Agustus 2026 08:18 WIB
+Updated: 8 Agustus 2026 09:12 WIB
 Evidence status: production + source verified
 
 ## Tujuan dokumen
@@ -89,6 +89,15 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   `UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
   IMPLEMENTED_NOT_DEPLOYED`; S6 tetap `IN_PROGRESS` hanya sampai combined exit
   gate. Production dan aktivasi subscription tidak berubah.
+- Candidate lokal S153 source
+  `57310ddd1958dc5fc9f585196b8757ffeb051c41` menutup combined exit S6
+  Resource. Runner repeatable 5/5 mengikat CRUD, status/retry/double-submit,
+  stale recovery, delete dependency recovery, dan Staff 403 spesifik Resource.
+  Seluruh bukti UI/API/backend/database/permission tetap hijau; tidak ada
+  perubahan UI atau production. S6 kini `EXIT_GATE_ACCEPTED / UIUX_VALIDATED /
+  INTEGRATION_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+  Sprint aktif berikutnya S7-S8 availability/slot concurrency; deployment
+  tetap ditahan sampai S21.
 
 ## Ringkasan
 

@@ -8,7 +8,7 @@ diubah menjadi klaim publik sebelum ditutup dengan bukti atau keputusan owner.
 
 ## Konteks
 
-Daftar ini berlaku pada evidence cut-off 8 Agustus 2026 08:18 WIB dan harus diperbarui
+Daftar ini berlaku pada evidence cut-off 8 Agustus 2026 09:12 WIB dan harus diperbarui
 ketika keputusan atau release baru menutup gap.
 
 ## Cara memakai
@@ -102,8 +102,12 @@ ketika keputusan atau release baru menutup gap.
   no-success-audit pada failure, Staff 403, serta foreign tenant 404 tanpa leak.
   Candidate S152 `872fb8d2` menutup stale-write recovery resource dengan 409
   terstruktur, recovery GET aktual, offline/retry, draft preservation,
-  double-submit guard, serta integritas relasi/audit/tenant. Residual S6 kini
-  hanya combined exit gate. npm, Composer, dan OSV audit fresh nol advisory.
+  double-submit guard, serta integritas relasi/audit/tenant. Residual S6 pada
+  snapshot S152 hanya combined exit gate. Candidate S153 `57310ddd` kemudian
+  menutup combined exit Resource dengan lima profil repeatable, Staff 403
+  spesifik Resource, full regression, audit dependency, visual/accessibility,
+  dan AI regression hijau. S6 kini `EXIT_GATE_ACCEPTED / LOCAL_VALIDATED`.
+  npm, Composer, dan OSV audit fresh nol advisory.
   Health SagaBook read-only hijau,
   tetapi
   rollback/previous symlink production tidak ada dan wajib dipulihkan sebelum
@@ -112,8 +116,9 @@ ketika keputusan atau release baru menutup gap.
   initial-load manual transfer, dan aksi Payment Monitor sudah production pada
   S128-S130. Residual payment/report adalah QRIS/provider nyata,
   pagination/filter/export, reconciliation provider, stale multi-tab, dan
-  closing concurrency. Setelah itu lanjutkan katalog, availability concurrency,
-  booking, admin/task, WhatsApp/reminder, dan template draft/preview/publish.
+  closing concurrency. Sprint aktif berikutnya adalah S7-S8 availability/slot
+  concurrency, lalu booking, admin/task, WhatsApp/reminder, dan template
+  draft/preview/publish.
   UI rate-limit 429, expiry idle per tab, dan revocation perangkat lain sudah
   `LOCAL_VALIDATED` pada candidate Sprint 2, tetapi belum production. Residual
   combined browser acceptance empat slice sudah hijau dengan runtime disposable

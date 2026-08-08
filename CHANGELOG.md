@@ -12,6 +12,24 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-08
 
+### SagaBook Sprint 6 combined Resource exit gate candidate
+
+- Ringkasan: lima profil repeatable kini mengikat CRUD, status/retry,
+  double-submit, stale recovery, delete dependency recovery, dan permission
+  boundary Resource menjadi satu exit gate.
+- Klasifikasi: `CONFIRMED`; source
+  `57310ddd1958dc5fc9f585196b8757ffeb051c41`; status S6
+  `EXIT_GATE_ACCEPTED / UIUX_VALIDATED / INTEGRATION_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: runner 5/5, focused backend 41/41 (344), full backend 991/991 (11.309),
+  build/typecheck/design 26/0, npm/Composer/OSV nol advisory, AI 44/44 (3.440),
+  serta corpus 1.000/1.000 hijau.
+- Production berubah: tidak. Release aktif tetap `20260806152606-0894df0`;
+  rollback/previous symlink harus dipulihkan sebelum S21. Sprint berikutnya
+  S7-S8 availability/slot concurrency.
+- File knowledge: product, dossier, changelog, ledger, master knowledge, gaps,
+  portfolio/root changelog, dan sync status.
+
 ### SagaBook Sprint 6 resource stale-write recovery candidate
 
 - Ringkasan: editor studio/resource kini menjelaskan konflik 409, memuat versi

@@ -12,14 +12,14 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-08T08:18:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-08T09:12:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `9a43f72ec3abbbc3cc92624233bc38fc43a8692e` |
-| Informasi terakhir disinkronkan | SagaBook S152 source `872fb8d2`: stale-write recovery resource, 409 terstruktur, GET versi server, offline/retry, draft preservation, double-submit guard, integritas relasi/audit, permission, dan tenant-negative lulus; irisan `LOCAL_VALIDATED`, S6 hanya menunggu combined exit, dan production tetap `20260806152606-0894df0`. |
+| Baseline sebelum pembaruan | `271cc21d9f4ddcffbb8961821a5f82149ae82356` |
+| Informasi terakhir disinkronkan | SagaBook S153 source `57310ddd`: combined exit Resource 5/5 untuk CRUD, status/retry/double-submit, stale recovery, delete dependency recovery, dan Staff 403 spesifik Resource; S6 `EXIT_GATE_ACCEPTED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`, S7-S8 menjadi prioritas berikutnya, dan production tetap `20260806152606-0894df0`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
 | Konflik | Tidak ada. Kontrak storefront mobile-only, subscription skip, urutan sprint, SagaView local-first, dan product boundary tetap konsisten. |
-| Error | Tidak ada advisory npm/Composer/OSV; Packagist sempat timeout dan Composer memakai cache, sedangkan OSV fresh hijau. Production tidak diubah. Combined exit S6 serta rollback/previous symlink SagaBook tetap residual sebelum S21. |
+| Error | Tidak ada advisory npm/Composer/OSV. Production tidak diubah. Rollback/previous symlink SagaBook tetap residual sebelum S21. |
 
 ## File yang berubah pada sinkronisasi ini
 
@@ -34,6 +34,9 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `CHANGELOG.md`
 
 ## Sinkronisasi sebelumnya
+
+- SagaBook S153 source `57310ddd` disinkronkan sebagai combined Resource exit
+  S6 `EXIT_GATE_ACCEPTED / LOCAL_VALIDATED`; production tidak berubah.
 
 - SagaBook S150 source `ff3b2bab` disinkronkan sebagai status/persistensi
   resource local-validated; production tidak berubah.

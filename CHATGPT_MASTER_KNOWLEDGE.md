@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 8 Agustus 2026 08:18 WIB
+Evidence cut-off: 8 Agustus 2026 09:12 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -274,6 +274,15 @@ LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; S6 masih `IN_PROGRESS` hanya
 sampai combined exit gate. Production tetap release
 `20260806152606-0894df0`; jangan menyebut candidate ini production atau S6
 selesai.
+
+Candidate SagaBook S153 source
+`57310ddd1958dc5fc9f585196b8757ffeb051c41` menutup combined exit S6
+Resource secara lokal. Runner 5/5 mengikat CRUD, status/retry/double-submit,
+stale recovery, delete dependency recovery, dan permission Staff spesifik
+Resource. S6 kini `EXIT_GATE_ACCEPTED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; production tetap release
+`20260806152606-0894df0`. Sprint berikutnya adalah S7-S8 availability/slot
+concurrency; jangan menyebut S153 production.
 
 Candidate SagaBook Sprint 2 terbaru adalah source
 `bf1766ae84c352cf3687383ca31947a3e619f575`, belum production. UI rate-limit

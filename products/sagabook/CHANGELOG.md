@@ -4,6 +4,27 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-08 - Sprint 6 combined Resource exit gate candidate
+
+- Klasifikasi `CONFIRMED`; source
+  `57310ddd1958dc5fc9f585196b8757ffeb051c41` pada branch
+  `codex/s153-sagabook-resource-exit-gate`.
+- Runner repeatable mengikat lima profil Resource: create/edit/delete,
+  status/retry/double-submit, stale recovery, delete dependency recovery, dan
+  permission boundary. Staff kini diuji 403 langsung pada endpoint Resource.
+- UI tidak berubah. Bukti S150-S152 dijalankan ulang pada 390x844 dan
+  1440x900 beserta matriks desktop 1280-2560, zoom 100-200 persen,
+  forced-colors, reduced-motion, keyboard/focus, target 44 piksel, dan satu
+  watermark.
+- Runner 5/5, focused backend 41/41 (344), full backend 991/991 (11.309),
+  build/typecheck/design 26/0, npm/Composer/OSV nol advisory, AI 44/44 (3.440),
+  dan corpus 1.000/1.000 hijau.
+- S6 `EXIT_GATE_ACCEPTED / UIUX_VALIDATED / INTEGRATION_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Production tetap
+  `20260806152606-0894df0`; S7-S8 availability/slot concurrency menjadi sprint
+  berikutnya, sementara deploy ditahan sampai S21 dan rollback/previous
+  symlink dipulihkan.
+
 ## 2026-08-08 - Sprint 6 resource stale-write recovery candidate
 
 - Klasifikasi `CONFIRMED`; source

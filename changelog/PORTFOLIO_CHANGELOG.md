@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-08 - SagaBook Sprint 6 combined Resource exit gate candidate
+
+- Source `57310ddd1958dc5fc9f585196b8757ffeb051c41` menambahkan runner
+  repeatable 5/5 untuk CRUD, status/retry/double-submit, stale recovery, delete
+  dependency recovery, dan permission boundary Resource.
+- Full backend 991/991, focused 41/41, build/typecheck/design, audit dependency,
+  AI 44/44, serta corpus 1.000/1.000 hijau. Bukti visual mobile/desktop dan
+  matriks zoom/accessibility dijalankan ulang tanpa perubahan UI.
+- S6 `EXIT_GATE_ACCEPTED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+  Production tetap `20260806152606-0894df0`; sprint berikutnya S7-S8
+  availability/slot concurrency.
+
 ## 2026-08-08 - SagaBook Sprint 6 resource stale-write recovery candidate
 
 - Source `872fb8d2f406f2c9ee0712992f1e25874b2259e0` menutup gap konflik

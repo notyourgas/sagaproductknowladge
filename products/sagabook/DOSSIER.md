@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 8 Agustus 2026 08:18 WIB
+- Updated: 8 Agustus 2026 09:12 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED` untuk workflow yang tercantum di
   [PRODUCT](PRODUCT.md)
@@ -425,6 +425,16 @@ npm/Composer/OSV nol advisory, serta AI 44/44 (3.440) hijau. Status
 `UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
 IMPLEMENTED_NOT_DEPLOYED`; production tetap `20260806152606-0894df0` dan S6
 hanya menunggu combined exit gate.
+
+Combined exit S6 Resource ditutup lokal pada source
+`57310ddd1958dc5fc9f585196b8757ffeb051c41`. Runner repeatable menjalankan
+lima profil terisolasi: CRUD, status/retry/double-submit, stale recovery,
+delete dependency recovery, dan Staff 403 spesifik Resource. Fresh runner 5/5,
+focused backend 41/41 (344), full backend 991/991 (11.309), build/typecheck,
+design 26/0, audit dependency, AI 44/44 (3.440), dan corpus 1.000/1.000 hijau.
+Tidak ada mutasi UI/production. S6 `EXIT_GATE_ACCEPTED / UIUX_VALIDATED /
+INTEGRATION_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; S7-S8
+availability/slot concurrency menjadi sprint berikutnya.
 
 Tenant/cabang S124 pada source
 `f6988cb945c5ca224015d7fecbc94e81c535fc60` aktif sebagai release
