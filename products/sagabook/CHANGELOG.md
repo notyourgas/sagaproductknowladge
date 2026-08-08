@@ -4,6 +4,29 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-08 - Cumulative S131-S156 immutable production release
+
+- Klasifikasi `CONFIRMED`; source kumulatif
+  `04c9b6416fbe401a001f3fd7b83dad47c613e8e4` aktif sebagai release
+  `20260808063729-04c9b64`, dengan rollback
+  `20260806152606-0894df0` tersedia.
+- Release mempromosikan ancestor S131-S156: auth/session, tenant/cabang,
+  paket/background/Add-on/Resource, availability/slot recovery, expiry payment
+  hold lintas tab, dan race aktual multi-process.
+- Gate fresh lulus: backend 993/993 (11.342), auth 4/4, tenant/cabang 7/7,
+  Add-on 4/4, Resource 5/5, storefront/slot 30 test, race 5/5, build/design
+  26/0, serta npm/Composer/OSV nol advisory.
+- Backup terenkripsi/checksum/disposable restore exact-SHA, manifest, DB audit
+  100, migration pending nol, service health, dan public smoke lulus. Production
+  390x844 serta 1440x900 menunjukkan canvas 390/460 piksel terpusat, tanpa
+  overflow, console/request failure nol, dan satu watermark non-fixed.
+- Status code `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
+  `BUSINESS_READY` belum tercapai karena dua tenant masih mempunyai gap setup
+  pilot. Subscription tenant tidak diaktifkan atau dinonaktifkan oleh release.
+- Monitor staging lintas-produk masih gagal karena DNS SagaFin dan tujuan
+  monitor eksternal belum dikonfigurasi; service serta endpoint SagaBook sehat
+  dan temuan ini bukan blocker rilis SagaBook.
+
 ## 2026-08-08 - Sprint 7 multi-process same-slot race recovery candidate
 
 - Klasifikasi `CONFIRMED`; source

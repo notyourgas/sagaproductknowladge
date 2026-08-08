@@ -1,5 +1,20 @@
 # Portfolio Changelog
 
+## 2026-08-08 - SagaBook cumulative S131-S156 production release
+
+- Source `04c9b6416fbe401a001f3fd7b83dad47c613e8e4` aktif sebagai release
+  immutable `20260808063729-04c9b64`; rollback
+  `20260806152606-0894df0` tersedia.
+- Ancestor S131-S156 dipromosikan kumulatif setelah backend 993/993, browser
+  auth/tenant/katalog/storefront, race multi-process, build/design, audit
+  dependency, backup/restore, manifest, DB audit 100, service, dan public smoke
+  hijau.
+- Production booking mempertahankan canvas mobile maksimum 460 piksel pada
+  mobile/desktop, tanpa overflow, dan satu watermark non-fixed.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; `BUSINESS_READY` masih
+  menunggu setup pilot dua tenant dan authenticated owner UAT. Subscription
+  tenant tidak diubah; SagaView tidak berubah.
+
 ## 2026-08-08 - AOGTIVITY hadir dan mulai 14.30 production
 
 - `DEC-063` menyamakan waktu hadir dan mulai AOGTIVITY menjadi 14.30 WIB;

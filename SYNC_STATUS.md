@@ -12,23 +12,23 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-08T12:37:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-08T13:43:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `696fc98acdaf97574531af1d0a9316419a921c35` |
-| Informasi terakhir disinkronkan | AOGTIVITY runtime `f26da5e`: waktu hadir dan mulai sama-sama 14.30, jadwal selanjutnya tetap, dependency high ditutup dengan nanoid 3.3.17, dan production aktif pada Hostinger/Vercel terbaru. |
+| Baseline sebelum pembaruan | `f4a5e391be52d4b0293e8d2c0c801ee15d690d92` |
+| Informasi terakhir disinkronkan | SagaBook source kumulatif S156 `04c9b641` aktif sebagai release immutable `20260808063729-04c9b64`; rollback `20260806152606-0894df0` tersedia. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik AOGTIVITY; waktu hadir 14.00 pada DEC-058 menjadi historical oleh DEC-063. Status production dan business readiness tetap dipisahkan. |
-| Error | Tidak ada advisory npm/pnpm AOGTIVITY setelah pin patched. Human operational UAT tetap residual. |
+| Konflik | Tidak ada konflik source/runtime. Label candidate lama adalah histori; status current `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`, belum `BUSINESS_READY`. |
+| Error | Service dan endpoint SagaBook sehat. Monitor staging lintas-produk gagal karena DNS SagaFin dan tujuan monitor eksternal belum dikonfigurasi; ini bukan blocker release SagaBook. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/aogticvity/PRODUCT.md`
-- `products/aogticvity/DOSSIER.md`
-- `products/aogticvity/CHANGELOG.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
-- `DECISIONS.md`
 - `GAPS.md`
 - `SYNC_STATUS.md`
 - `CHANGELOG.md`
@@ -46,6 +46,11 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `CHANGELOG.md`
 
 ## Sinkronisasi sebelumnya
+
+- SagaBook S156 source `04c9b641`, release `20260808063729-04c9b64`, dan
+  rollback `20260806152606-0894df0` disinkronkan sebagai
+  `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; business readiness tetap
+  menunggu setup pilot dua tenant dan authenticated owner UAT.
 
 - SagaBook S156 source `04c9b641` disinkronkan sebagai multi-process same-slot
   race recovery local-validated; S7-S8 belum exit dan production tidak berubah.

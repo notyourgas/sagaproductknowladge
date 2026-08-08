@@ -8,7 +8,7 @@ diubah menjadi klaim publik sebelum ditutup dengan bukti atau keputusan owner.
 
 ## Konteks
 
-Daftar ini berlaku pada evidence cut-off 8 Agustus 2026 12:27 WIB dan harus diperbarui
+Daftar ini berlaku pada evidence cut-off 8 Agustus 2026 13:43 WIB dan harus diperbarui
 ketika keputusan atau release baru menutup gap.
 
 ## Cara memakai
@@ -33,14 +33,14 @@ ketika keputusan atau release baru menutup gap.
 
 ### SagaBook
 
-- `TODO`: candidate S154 `1d9d774f` sudah menutup recovery konflik slot saat
-  pembayaran, S155 `f04e4a9c` menutup expiry payment hold lintas tab, dan S156
-  `04c9b641` menutup race aktual dua proses pada slot sama secara
-  local-validated. Availability/slot keseluruhan tetap
-  `INTEGRATION_IN_PROGRESS`; retry mutation dan read-after-write operator masih
-  harus ditutup sebelum combined exit S7-S8. Production tetap
-  `20260806152606-0894df0`; REVISION/previous/rollback runtime masih residual
-  sebelum S21.
+- `TODO`: source kumulatif S156 `04c9b641` sudah
+  `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` sebagai release
+  `20260808063729-04c9b64`; rollback `20260806152606-0894df0` tersedia.
+  Recovery konflik slot S154, expiry payment hold S155, dan race aktual S156
+  aktif. Availability/slot keseluruhan tetap `INTEGRATION_IN_PROGRESS`; retry
+  mutation dan read-after-write operator masih harus ditutup sebelum combined
+  exit S7-S8. `BUSINESS_READY` menunggu setup pilot dua tenant dan authenticated
+  owner UAT; subscription tenant tidak diubah.
 
 - `TODO`: guard scope/fallback source
   `0894df00f6866688db4d053758a99d54ba4e8908` sudah production dan memisahkan
@@ -53,7 +53,9 @@ ketika keputusan atau release baru menutup gap.
   dan data-retention masih perlu coverage bertahap. Fine-tuning baru
   membutuhkan keputusan founder terpisah.
 
-- `TODO`: auth/session S123, status/write cabang S124, serta branch-context
+- `TODO`: kronologi validasi di bawah mempertahankan label candidate pada saat
+  masing-masing bukti dibuat; seluruh ancestor S131-S156 kini aktif kumulatif
+  melalui release S156. Auth/session S123, status/write cabang S124, serta branch-context
   `/admin/reports` S125 sudah `INTEGRATION_VALIDATED` dan aktif di production.
   Candidate Sprint 3 `82a6f376998d8eb5778c6ccaac117a21a1ab8efd`
   sudah mencabut sesi stale ketika delegasi cabang/role/identitas staff berubah
@@ -117,10 +119,8 @@ ketika keputusan atau release baru menutup gap.
   spesifik Resource, full regression, audit dependency, visual/accessibility,
   dan AI regression hijau. S6 kini `EXIT_GATE_ACCEPTED / LOCAL_VALIDATED`.
   npm, Composer, dan OSV audit fresh nol advisory.
-  Health SagaBook read-only hijau,
-  tetapi
-  rollback/previous symlink production tidak ada dan wajib dipulihkan sebelum
-  release immutable S21.
+  Health SagaBook read-only hijau; rollback/previous symlink production sudah
+  tersedia dan diverifikasi melalui release immutable S156.
   Recovery response availability kosong,
   initial-load manual transfer, dan aksi Payment Monitor sudah production pada
   S128-S130. Residual payment/report adalah QRIS/provider nyata,
@@ -129,11 +129,11 @@ ketika keputusan atau release baru menutup gap.
   concurrency, lalu booking, admin/task, WhatsApp/reminder, dan template
   draft/preview/publish.
   UI rate-limit 429, expiry idle per tab, dan revocation perangkat lain sudah
-  `LOCAL_VALIDATED` pada candidate Sprint 2, tetapi belum production. Residual
+  aktif kumulatif pada release S156. Residual
   combined browser acceptance empat slice sudah hijau dengan runtime disposable
   terisolasi. Endpoint Packagist timeout ditutup dengan fallback OSV resmi yang
-  mengaudit 114 paket Composer dan menemukan nol advisory. Sprint 2 exit gate
-  sudah diterima lokal; Sprint 3-S4 tenant/cabang masih aktif.
+  mengaudit 114 paket Composer dan menemukan nol advisory. Sprint 2, S3-S4,
+  S5, dan S6 exit gate sudah diterima; S7-S8 masih aktif.
   UI/UX S122 sudah production,
   tetapi integrasi template belum
   boleh disebut `INTEGRATION_VALIDATED` sebelum happy, failure/retry,

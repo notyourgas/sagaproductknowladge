@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 8 Agustus 2026 12:27 WIB
+- Updated: 8 Agustus 2026 13:43 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED` untuk workflow yang tercantum di
   [PRODUCT](PRODUCT.md)
@@ -15,13 +15,24 @@ dalam satu dokumen public-safe.
 - Availability empty-response recovery, manual-transfer initial-load recovery,
   dan Payment Monitor action recovery: `PRODUCTION_DEPLOYED /
   PRODUCTION_ACTIVATED`
-- Source kumulatif aktif: `0894df00f6866688db4d053758a99d54ba4e8908`,
-  release `20260806152606-0894df0`, rollback `20260806142033-2415097`
+- Source kumulatif aktif: `04c9b6416fbe401a001f3fd7b83dad47c613e8e4`,
+  release `20260808063729-04c9b64`, rollback `20260806152606-0894df0`
+- S131-S156 aktif kumulatif. Gate fresh backend 993/993, browser auth,
+  tenant/cabang, Add-on, Resource, storefront/slot, race 5/5, build/design,
+  dependency audit, backup/restore exact-SHA, manifest, DB audit 100, service,
+  dan public smoke lulus.
+- Browser production 390x844 dan 1440x900 mempertahankan satu canvas mobile
+  390/460 piksel terpusat, tanpa overflow, serta satu watermark non-fixed.
+- Code `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; `BUSINESS_READY` masih
+  `NEEDS CONFIRMATION` karena dua tenant belum lolos setup pilot. Aktivasi
+  subscription tidak diubah.
 - Label candidate pada histori menunjukkan status saat bukti dibuat. Source
-  S98-S130 yang menjadi ancestor release aktif sudah production kumulatif;
+  S98-S156 yang menjadi ancestor release aktif sudah production kumulatif;
   guard scope/fallback Support Hub aktif, tetapi corpus/index/model AI tetap
   `AI_KNOWLEDGE_NOT_PROMOTED`; S94/S108 yang
   memperlebar storefront tetap deprecated dan tidak aktif.
+
+### Histori kandidat sebelum release S156
 - Candidate S156 `04c9b641` membuktikan race slot melalui dua proses PHP
   independen yang berbagi database disposable. Hasil 5/5 selalu satu winner
   dan satu 409 `slot_conflict`; persistensi akhir tepat satu booking, hold,

@@ -12,6 +12,24 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-08
 
+### SagaBook cumulative S131-S156 production release
+
+- Ringkasan: seluruh ancestor pending S131-S156 dipromosikan sebagai satu
+  release immutable setelah gate source, data, runtime, visual, security, dan
+  rollback hijau.
+- Klasifikasi: `CONFIRMED`; source
+  `04c9b6416fbe401a001f3fd7b83dad47c613e8e4`; release
+  `20260808063729-04c9b64`; rollback `20260806152606-0894df0`.
+- Gate: backend 993/993, browser auth/tenant/katalog/storefront, race 5/5,
+  build/design 26/0, dependency advisory nol, backup/restore exact-SHA,
+  manifest, DB audit 100, service, dan public smoke hijau.
+- Production berubah: ya. Code `PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`; `BUSINESS_READY` belum tercapai karena dua tenant
+  masih mempunyai gap setup pilot. Subscription tenant dan SagaView tidak
+  diubah.
+- File knowledge: product, dossier, changelog, ledger, master knowledge, gaps,
+  portfolio/root changelog, dan sync status.
+
 ### AOGTIVITY hadir dan mulai 14.30 production
 
 - Ringkasan: waktu hadir dan waktu mulai sama-sama 14.30 WIB; lomba pertama

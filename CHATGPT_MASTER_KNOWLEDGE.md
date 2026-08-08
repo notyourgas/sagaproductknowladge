@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 8 Agustus 2026 12:37 WIB
+Evidence cut-off: 8 Agustus 2026 13:43 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -68,7 +68,8 @@ pembayaran, menerima status/reminder, dan mengelola request dari secure booking
 link. Operator mengelola calendar, task, check-in, session, payment,
 reconciliation, report, staff, tenant, dan subscription.
 
-Status: `PRODUCTION_DEPLOYED`.
+Status code: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; business readiness
+belum tercapai karena dua tenant masih mempunyai gap setup pilot.
 Harga bulanan: Basic Rp500.000, Growth Rp950.000, Pro Rp1.500.000.
 Limit: Basic 1 cabang/3 staff; Growth 3 cabang/10 staff; Pro maksimal 10
 cabang/30 staff self-service; kebutuhan lebih besar menggunakan Custom.
@@ -76,14 +77,15 @@ Booking dipasarkan unlimited dengan fair-use.
 Trial SagaBook: 7 hari full access, kemudian grace read-only hari 8-14 dan
 suspend setelah hari 14; tidak ada auto-charge.
 
-Candidate lokal terbaru S156 source `04c9b641` menutup race aktual dua proses
-pada slot sama: transaction retry dan sanitasi contention memastikan satu
-booking berhasil, request kalah mendapat 409 `slot_conflict`, dan database
-menyimpan tepat satu booking, hold, slot lock, serta audit tanpa membocorkan
-SQL/kode booking. Candidate S155 `f04e4a9c` tetap menjadi bukti payment-hold
-expiry lintas tab dan S154 `1d9d774f` menjadi bukti recovery UI Bayar ke
-Jadwal. Status S156 `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; jangan
-menyebut perilaku ini production sampai release immutable S21 terbukti.
+Source kumulatif S156 `04c9b6416fbe401a001f3fd7b83dad47c613e8e4`
+aktif sebagai release immutable `20260808063729-04c9b64`; rollback
+`20260806152606-0894df0` tersedia. Release mempromosikan ancestor S131-S156,
+termasuk auth/session, tenant/cabang, katalog, recovery availability/slot,
+expiry payment hold lintas tab, dan race aktual dua proses. Gate backend
+993/993, browser, race 5/5, build/design, dependency audit, backup/restore,
+manifest, DB audit 100, service, dan public smoke hijau. Storefront production
+tetap satu canvas mobile maksimum 460 piksel pada semua viewport serta satu
+watermark non-fixed. Subscription tenant tidak diubah.
 
 SagaBook S119 aktif pada source
 `20ff6829f96cebec22d34844291b3d522b91774a`, release
@@ -102,9 +104,9 @@ browser production mobile/desktop. Website booking tenant trial diaktifkan
 setelah pre-publish readiness 100; rollback `20260803194351-d70fc1e` tersedia.
 Business readiness menunggu copy alamat final dan booking nyata terkontrol.
 
-Release SagaBook terbaru adalah source kumulatif
+Release SagaBook sebelumnya adalah source kumulatif
 `0894df00f6866688db4d053758a99d54ba4e8908`, release
-`20260806152606-0894df0`, rollback `20260806142033-2415097`. S123 menutup
+`20260806152606-0894df0`, dan kini menjadi rollback release S156. S123 menutup
 auth/session dan S124 menutup irisan status/write cabang. S125 menutup irisan
 branch context `/admin/reports`: ringkasan, analitik, tabel, dan closing state
 mengikuti cabang terpilih; write finance/closing membawa `branchId`, diblok
