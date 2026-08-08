@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 8 Agustus 2026 21:25 WIB
+Updated: 8 Agustus 2026 23:17 WIB
 Evidence status: production + source verified
 
 ## Tujuan dokumen
@@ -47,6 +47,17 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   kumulatif; arah storefront lebar S94/S108 tetap deprecated dan tidak aktif.
 
 ## Histori kandidat sebelum release S157
+- Candidate S160 source `71eb45bab26107b7d3f067bed08e518f0fc6b262`
+  pada branch `codex/s160-sagabook-provider-transition` memungkinkan callback
+  provider dengan reference fallback yang sama bergerak dari pending atau
+  expired ke paid tepat satu kali. Retry state sama tetap idempoten; perubahan
+  nominal atau identitas kritis ditolak 409 tanpa write tambahan. Tokopay signed
+  membuktikan settlement/accounting tunggal, dan booking-status read-after-write
+  tetap authoritative. Gate hijau: payment 61/61 (434 assertion), full backend
+  1.001/1.001 (11.417), browser Payment Monitor 10/10, build/design, Pint/diff,
+  serta npm/Composer/OSV nol advisory. Status `UIUX_VALIDATED /
+  INTEGRATION_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+  production tetap `c7f13487` / `20260808115539-c7f1348`.
 - Candidate payment callback replay integrity source
   `2b101b87d57939932248c35d047f21cc467b776b` pada branch
   `codex/s159-sagabook-callback-replay` membedakan callback baru dari replay

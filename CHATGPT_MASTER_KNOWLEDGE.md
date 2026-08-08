@@ -104,6 +104,15 @@ pertama tidak berubah pada konflik. Gate backend 999/999, payment 50/50,
 browser Payment Monitor 10/10, build/design, serta audit dependency hijau.
 Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
 
+Candidate payment transition `71eb45bab26107b7d3f067bed08e518f0fc6b262`
+melanjutkan kontrak S159 untuk provider yang memakai reference fallback yang
+sama saat status berubah. Pending/expired kini dapat maju ke paid tepat satu
+kali; retry paid tidak menggandakan event/audit/settlement/accounting dan
+konflik nominal state sama ditolak 409. Payment 61/61, backend 1.001/1.001,
+browser 10/10, build/design, serta audit dependency hijau. Status
+`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap `c7f13487` /
+`20260808115539-c7f1348`.
+
 SagaBook S119 aktif pada source
 `20ff6829f96cebec22d34844291b3d522b91774a`, release
 `20260805052322-20ff682`, berstatus `PRODUCTION_DEPLOYED /

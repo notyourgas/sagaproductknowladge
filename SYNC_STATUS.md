@@ -12,16 +12,28 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-08T23:08:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-08T23:17:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `ee3b9e98055c787983a109e292138e15c592d835` |
-| Informasi terakhir disinkronkan | SagaView S147 backend `0cda8a09` / `20260808225730-0cda8a0` dan Studio `df959ccb` / `20260808225730-df959cc` production aktif; rollback S146 tersedia. |
+| Baseline sebelum pembaruan | `2c26bd60ac8a1708a2ffa4159cc22619e1f8d0b2` |
+| Informasi terakhir disinkronkan | SagaBook S160 `71eb45ba` menutup transisi pending/expired -> paid exactly-once untuk reference fallback; production tetap `c7f13487` / `20260808115539-c7f1348`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik source/runtime. Row metadata historis dipertahankan tanpa cleanup; UAT operator pada folder Windows nyata, export/recovery/quota, dan business readiness tetap gate terpisah. |
+| Konflik | Tidak ada konflik source/runtime. Provider canary nyata dan deployment tidak dijalankan; reconciliation, stale multi-tab, permission-negative, recovery UI provider, dan business readiness tetap gate terpisah. |
 | Error | Tidak ada; seluruh gate lokal dan knowledge validator wajib dijalankan sebelum commit. |
 
 ## File yang berubah pada sinkronisasi ini
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
+
+## File dari sinkronisasi sebelumnya
 
 - `products/sagaview/PRODUCT.md`
 - `products/sagaview/DOSSIER.md`
@@ -34,7 +46,7 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `SYNC_STATUS.md`
 - `CHANGELOG.md`
 
-## File dari sinkronisasi sebelumnya
+## File sinkronisasi lebih awal
 
 - `products/sagabook/PRODUCT.md`
 - `products/sagabook/DOSSIER.md`
@@ -59,6 +71,10 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `CHANGELOG.md`
 
 ## Sinkronisasi sebelumnya
+
+- SagaBook S160 `71eb45ba` disinkronkan sebagai fallback callback transition
+  exactly-once `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap
+  `c7f13487` dan provider canary nyata tidak dijalankan.
 
 - SagaView S147 backend `0cda8a09` dan Studio `df959ccb` disinkronkan sebagai
   `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; rollback S146, backup/restore,

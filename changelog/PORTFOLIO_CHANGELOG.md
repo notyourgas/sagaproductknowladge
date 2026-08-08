@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-08 - SagaBook fallback callback transition candidate
+
+- Source `71eb45ba` membuat reference fallback provider mampu bergerak dari
+  pending/expired ke paid tepat satu kali tanpa menggandakan event, audit,
+  settlement, atau accounting; konflik nominal state sama ditolak 409.
+- Payment 61/61, backend 1.001/1.001, browser Payment Monitor 10/10,
+  build/design, format/diff, dan audit dependency nol temuan.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap
+  `c7f13487` / `20260808115539-c7f1348`. Gap berikutnya adalah reconciliation,
+  stale multi-tab, permission-negative, dan recovery UI provider.
+
 ## 2026-08-08 - SagaBook payment callback replay conflict candidate
 
 - Source `2b101b87` membuat replay callback dengan `event_id` eksplisit

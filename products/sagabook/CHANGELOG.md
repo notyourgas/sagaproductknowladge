@@ -1,5 +1,26 @@
 # SagaBook Changelog
 
+## 2026-08-08 - Provider fallback status transition exactly-once candidate
+
+- Klasifikasi `CONFIRMED`; source
+  `71eb45bab26107b7d3f067bed08e518f0fc6b262` pada branch
+  `codex/s160-sagabook-provider-transition` sudah dipush.
+- Before: callback pending dengan fallback reference transaksi membuat callback
+  paid berikutnya dianggap replay sebelum status dibaca. After: tiap state
+  kanonik fallback mempunyai ID transisi deterministik tenant-scoped.
+- Pending/expired -> paid diproses sekali; retry paid tidak menggandakan payment
+  event, audit, settlement, atau accounting. Nominal/identitas kritis berubah
+  pada state sama ditolak 409 tanpa mutation; event ID eksplisit tetap memakai
+  kontrak immutable S159.
+- Gate hijau: payment/API/settlement 61/61 (434 assertion), full backend
+  1.001/1.001 (11.417), browser Payment Monitor 10/10 mobile/desktop,
+  build/design 26 artefak, Pint/diff, serta npm/Composer/OSV nol advisory.
+- Browser run awal berhenti karena manifest build worktree belum tersedia;
+  setelah build, correction run kedua lulus 10/10. Status `UIUX_VALIDATED /
+  INTEGRATION_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+  Production tetap `c7f13487` / `20260808115539-c7f1348`; provider canary dan
+  deployment tidak dilakukan.
+
 ## 2026-08-08 - Payment callback conflicting replay protection candidate
 
 - Klasifikasi `CONFIRMED`; source

@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 8 Agustus 2026 21:25 WIB
+- Updated: 8 Agustus 2026 23:17 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED` untuk workflow yang tercantum di
   [PRODUCT](PRODUCT.md)
@@ -40,6 +40,15 @@ dalam satu dokumen public-safe.
   Model, prompt, provider, dan KB tidak diubah oleh release ini.
 
 ### Histori kandidat sebelum release S157
+- Candidate S160 `71eb45ba` menutup state transition untuk callback provider
+  yang hanya memberi reference transaksi fallback. Pending/expired dapat maju
+  ke paid melalui ID transisi deterministik tenant-scoped; retry paid tidak
+  menggandakan payment event, audit, settlement, atau accounting, sedangkan
+  nominal/identitas kritis yang berubah ditolak 409. Tokopay signed, recovery
+  expiry, dan booking-status read-after-write lulus. Payment 61/61, backend
+  1.001/1.001, browser 10/10, build/design, format/diff, serta audit dependency
+  hijau. Candidate ini `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+  production tidak berubah.
 - Candidate S159 `2b101b87` menutup replay conflict untuk callback dengan
   `event_id` eksplisit. Payload identik, termasuk urutan field berbeda dan
   signature retry baru, me-replay event pertama tanpa write/audit sukses ganda

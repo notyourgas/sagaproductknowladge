@@ -12,6 +12,20 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-08
 
+### SagaBook provider fallback status transition candidate
+
+- Ringkasan: callback reference fallback kini dapat bergerak dari pending atau
+  expired ke paid tepat satu kali; retry state sama idempoten dan konflik
+  nominal ditolak 409 tanpa write tambahan.
+- Klasifikasi `CONFIRMED`; source `71eb45ba`, status `UIUX_VALIDATED /
+  INTEGRATION_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: payment 61/61, backend 1.001/1.001, browser Payment Monitor 10/10,
+  build/design, Pint/diff, dan audit dependency nol advisory.
+- Production berubah: tidak. Runtime tetap `c7f13487` /
+  `20260808115539-c7f1348`; provider canary nyata tidak dijalankan.
+- File knowledge: product, dossier, changelog, ledger SagaBook,
+  portfolio/root changelog, master, gaps, dan sync status.
+
 ### SagaBook payment callback replay conflict candidate
 
 - Ringkasan: replay identik dengan `event_id` eksplisit kini exactly-once dan
