@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 8 Agustus 2026 19:15 WIB
+- Updated: 8 Agustus 2026 19:16 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED` untuk workflow yang tercantum di
   [PRODUCT](PRODUCT.md)
@@ -39,7 +39,13 @@ dalam satu dokumen public-safe.
   dependency, backup/restore, public smoke, service health, dan rollback.
   Model, prompt, provider, dan KB tidak diubah oleh release ini.
 
-### Histori kandidat sebelum release S156
+### Histori kandidat sebelum release S157
+- Candidate manual-booking retry `fe329a0b` menambahkan kunci idempotensi
+  tenant-scoped, replay response asli, penolakan payload conflict, optimistic
+  calendar update, refresh recovery, dan double-submit guard. Backend 995/995,
+  Playwright terfokus 2/2, UI mobile/desktop, build/design, serta audit
+  dependency hijau. Candidate ini `LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap `c7f13487`.
 - Candidate S156 `04c9b641` membuktikan race slot melalui dua proses PHP
   independen yang berbagi database disposable. Hasil 5/5 selalu satu winner
   dan satu 409 `slot_conflict`; persistensi akhir tepat satu booking, hold,

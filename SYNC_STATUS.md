@@ -12,13 +12,13 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-08T19:15:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-08T19:16:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `4b6c6083661bb7fc38e85e72ec35f5f378421e3d` |
-| Informasi terakhir disinkronkan | SagaBook grounding `c7f13487` dan SagaView S146 backend `1af88524` + Studio `81e55adc` aktif sebagai immutable production release. |
+| Baseline sebelum pembaruan | `060cc077f43306be13869b0faac90cd85ae8e412` |
+| Informasi terakhir disinkronkan | SagaBook manual-booking retry `fe329a0b` local-validated dan belum deployed; production tetap `c7f13487` / `20260808115539-c7f1348`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik source/runtime. Authenticated owner/device/consent UAT, latency/cost, dan business readiness masih residual dan tidak disamakan dengan deployment. |
+| Konflik | Tidak ada konflik source/runtime. Combined exit S7-S8, authenticated owner/device/consent UAT, latency/cost, dan business readiness masih residual dan tidak disamakan dengan deployment. |
 | Error | Tidak ada; seluruh gate lokal dan knowledge validator wajib dijalankan sebelum commit. |
 
 ## File yang berubah pada sinkronisasi ini
@@ -63,6 +63,10 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `CHANGELOG.md`
 
 ## Sinkronisasi sebelumnya
+
+- SagaBook manual-booking retry `fe329a0b` disinkronkan sebagai
+  `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap `c7f13487` dan
+  combined exit S7-S8 belum dijalankan.
 
 - SagaBook `c7f13487` / `20260808115539-c7f1348` dan SagaView S146 backend
   `1af88524` / `20260808190040-1af8852` + Studio `81e55adc` /

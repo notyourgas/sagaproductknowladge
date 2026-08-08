@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-08 - SagaBook manual booking retry candidate
+
+- Source `fe329a0b` membuat retry booking manual idempoten, menolak payload
+  conflict, memperbarui kalender langsung dari response mutation, dan
+  memisahkan recovery refresh dari status penyimpanan booking.
+- Backend 995/995, Playwright retry/recovery 2/2, UI 390x844 dan 1440x900,
+  build/design, serta audit dependency nol advisory lulus.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap
+  `c7f13487` / `20260808115539-c7f1348`. Combined exit S7-S8 belum dijalankan.
+
 ## 2026-08-08 - Chatbot SagaBook dan SagaView S146 production
 
 - SagaBook source `c7f13487` aktif sebagai release

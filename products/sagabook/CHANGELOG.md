@@ -1,5 +1,25 @@
 # SagaBook Changelog
 
+## 2026-08-08 - Manual booking retry dan read-after-write operator candidate
+
+- Klasifikasi `CONFIRMED`; source
+  `fe329a0b12e49ae6c32c4ec861318ccca843c86b` pada branch
+  `codex/s157-sagabook-manual-booking-retry` sudah dipush.
+- Before: respons mutation yang hilang atau refresh dashboard yang gagal dapat
+  terlihat sebagai booking gagal dan mendorong operator membuat booking ganda.
+  After: retry memakai kunci stabil tenant-scoped, backend me-replay booking
+  asli, payload conflict ditolak 409, kalender diisi dari response mutation,
+  dan refresh memiliki recovery terpisah.
+- Double-submit diblok sinkron; state loading/error/retry diumumkan secara
+  aksesibel dan target aksi minimum 44 piksel.
+- Gate hijau: backend 995/995 (11.356 assertion), focused manual booking 17/17,
+  Playwright retry/recovery 2/2, matriks UI 390x844 dan 1440x900,
+  forced-colors/reduced-motion/no-overflow, build/design, Pint/diff, dan audit
+  npm/Composer/OSV nol advisory.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Production tetap source
+  `c7f13487` / release `20260808115539-c7f1348`; subscription dan data customer
+  tidak diubah. Gap berikutnya adalah combined exit S7-S8.
+
 ## 2026-08-08 - Support Hub grounding immutable production release
 
 - Klasifikasi `CONFIRMED`; source kumulatif

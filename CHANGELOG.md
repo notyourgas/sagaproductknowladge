@@ -12,6 +12,20 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-08
 
+### SagaBook manual booking retry candidate
+
+- Ringkasan: retry booking manual kini idempoten dan refresh dashboard yang
+  gagal tidak lagi mengubah booking tersimpan menjadi kegagalan palsu.
+- Klasifikasi `CONFIRMED`; source `fe329a0b`, status `LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: backend 995/995, focused manual booking 17/17, Playwright 2/2,
+  matriks UI mobile/desktop, build/design, format/diff, dan audit dependency
+  nol advisory.
+- Production berubah: tidak. Runtime tetap `c7f13487` /
+  `20260808115539-c7f1348`; combined exit S7-S8 masih pending.
+- File knowledge: product, dossier, changelog, ledger SagaBook,
+  portfolio/root changelog, master, gaps, dan sync status.
+
 ### SagaBook grounding dan SagaView S146 immutable production release
 
 - Ringkasan: grounding pergantian intent/reset greeting SagaBook serta consent

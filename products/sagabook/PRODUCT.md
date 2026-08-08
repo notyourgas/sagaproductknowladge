@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 8 Agustus 2026 19:15 WIB
+Updated: 8 Agustus 2026 19:16 WIB
 Evidence status: production + source verified
 
 ## Tujuan dokumen
@@ -47,6 +47,17 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   kumulatif; arah storefront lebar S94/S108 tetap deprecated dan tidak aktif.
 
 ## Histori kandidat sebelum release S157
+- Candidate manual-booking retry source
+  `fe329a0b12e49ae6c32c4ec861318ccca843c86b` membuat percobaan ulang
+  operator idempoten per tenant. Respons mutation langsung mengisi kalender;
+  kegagalan refresh tidak lagi dilaporkan sebagai booking gagal dan tersedia
+  aksi `Coba lagi`. Double-submit diblok dan payload berbeda dengan kunci retry
+  yang sama ditolak 409 tanpa booking, hold, atau audit ganda. Gate hijau:
+  backend 995/995 (11.356 assertion), Playwright retry/recovery 2/2, matriks UI
+  390x844 dan 1440x900, build/design, serta audit npm/Composer/OSV nol
+  advisory. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+  tetap `c7f13487` / `20260808115539-c7f1348`. Combined exit S7-S8 masih
+  menjadi gate berikutnya.
 - Candidate Support Hub current-baseline source `dedef195` di atas S143
   `8fac4f68` memperbaiki pergantian konteks
   cabang ke voucher serta reset greeting. Intent eksplisit baru kini
@@ -65,9 +76,9 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   menghasilkan tepat satu booking, hold, slot lock, dan audit; request kalah
   tidak menyisakan write parsial atau membocorkan kode booking/detail database.
   Statusnya `UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED`; S7-S8 tetap `INTEGRATION_IN_PROGRESS` sampai
-  retry mutation dan read-after-write operator ditutup. Production dan
-  aktivasi subscription tidak berubah.
+  IMPLEMENTED_NOT_DEPLOYED`; retry mutation dan read-after-write operator kini
+  ditutup oleh candidate `fe329a0b`, tetapi combined exit S7-S8 belum dijalankan.
+  Production dan aktivasi subscription tidak berubah.
 - Candidate lokal S155 source
   `f04e4a9c174c965b2e8308077d9f643f97ef6bd6` menutup expiry payment hold
   lintas tab QRIS dan transfer. Deadline berasal dari backend, status publik

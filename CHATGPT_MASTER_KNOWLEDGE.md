@@ -77,15 +77,21 @@ Booking dipasarkan unlimited dengan fair-use.
 Trial SagaBook: 7 hari full access, kemudian grace read-only hari 8-14 dan
 suspend setelah hari 14; tidak ada auto-charge.
 
-Source kumulatif S156 `04c9b6416fbe401a001f3fd7b83dad47c613e8e4`
-aktif sebagai release immutable `20260808063729-04c9b64`; rollback
-`20260806152606-0894df0` tersedia. Release mempromosikan ancestor S131-S156,
+Source kumulatif `c7f13487f33b8075ba7c84f05fc41daec6a622e7`
+aktif sebagai release immutable `20260808115539-c7f1348`; rollback
+`20260808063729-04c9b64` tersedia. Release mempromosikan ancestor S131-S156,
 termasuk auth/session, tenant/cabang, katalog, recovery availability/slot,
 expiry payment hold lintas tab, dan race aktual dua proses. Gate backend
-993/993, browser, race 5/5, build/design, dependency audit, backup/restore,
+996/996, browser, race 5/5, build/design, dependency audit, backup/restore,
 manifest, DB audit 100, service, dan public smoke hijau. Storefront production
 tetap satu canvas mobile maksimum 460 piksel pada semua viewport serta satu
 watermark non-fixed. Subscription tenant tidak diubah.
+
+Candidate `fe329a0b12e49ae6c32c4ec861318ccca843c86b` membuat retry
+booking manual idempoten, me-replay response asli tanpa write/audit ganda,
+menolak payload conflict, dan memisahkan recovery refresh kalender dari hasil
+mutation. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak
+berubah dan combined exit S7-S8 masih pending.
 
 SagaBook S119 aktif pada source
 `20ff6829f96cebec22d34844291b3d522b91774a`, release

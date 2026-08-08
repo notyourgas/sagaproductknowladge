@@ -8,7 +8,7 @@ diubah menjadi klaim publik sebelum ditutup dengan bukti atau keputusan owner.
 
 ## Konteks
 
-Daftar ini berlaku pada evidence cut-off 8 Agustus 2026 17:01 WIB dan harus diperbarui
+Daftar ini berlaku pada evidence cut-off 8 Agustus 2026 19:16 WIB dan harus diperbarui
 ketika keputusan atau release baru menutup gap.
 
 ## Cara memakai
@@ -33,14 +33,15 @@ ketika keputusan atau release baru menutup gap.
 
 ### SagaBook
 
-- `TODO`: source kumulatif S156 `04c9b641` sudah
+- `TODO`: source kumulatif `c7f13487` sudah
   `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` sebagai release
-  `20260808063729-04c9b64`; rollback `20260806152606-0894df0` tersedia.
+  `20260808115539-c7f1348`; rollback `20260808063729-04c9b64` tersedia.
   Recovery konflik slot S154, expiry payment hold S155, dan race aktual S156
-  aktif. Availability/slot keseluruhan tetap `INTEGRATION_IN_PROGRESS`; retry
-  mutation dan read-after-write operator masih harus ditutup sebelum combined
-  exit S7-S8. `BUSINESS_READY` menunggu setup pilot dua tenant dan authenticated
-  owner UAT; subscription tenant tidak diubah.
+  aktif. Candidate manual-booking retry/read-after-write `fe329a0b` sudah
+  `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; availability/slot keseluruhan
+  tetap `INTEGRATION_IN_PROGRESS` sampai combined exit S7-S8 dijalankan.
+  `BUSINESS_READY` menunggu setup pilot dua tenant dan authenticated owner UAT;
+  subscription tenant tidak diubah.
 
 - `TODO`: guard scope/fallback source
   `0894df00f6866688db4d053758a99d54ba4e8908` sudah production dan memisahkan
