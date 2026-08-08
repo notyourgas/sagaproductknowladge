@@ -12,6 +12,12 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-08
 
+### SagaView S146 combined consent and device support candidate
+
+- Source Studio exact `02d2f71c` merekonsiliasi S144+S145 tanpa conflict.
+- Gate gabungan 180 unit, focused browser 5 pass/1 skip, build/budget, dan audit
+  dependency lulus; production tetap S143 dan status `IMPLEMENTED_NOT_DEPLOYED`.
+
 ### SagaView S145 device-authenticated Support Hub candidate
 
 - Ringkasan: launcher Studio kini tersambung ke Support Hub memakai autentikasi

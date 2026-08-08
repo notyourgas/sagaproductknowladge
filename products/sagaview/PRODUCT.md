@@ -920,6 +920,10 @@ untuk release frontend ini.
 - backend `181fb0d2` + `dedef195` dan Studio `f3f8cd0` sudah
   `AI_EVAL_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
   IMPLEMENTED_NOT_DEPLOYED`; production tetap S143.
+- Studio S144 dan S145 sudah direkonsiliasi tanpa conflict pada kandidat S146
+  exact `02d2f71cb959f10e0a72aa60d15b9820b7c2c28b`. Gate gabungan 180 unit,
+  focused browser support+consent 5 pass/1 intentional skip, build/budget, dan
+  audit dependency lulus; status tetap `IMPLEMENTED_NOT_DEPLOYED`.
 
 ## Signature login dan watermark shell
 

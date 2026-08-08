@@ -4,6 +4,21 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-08-08 - S146 kandidat gabungan consent dan bantuan AI
+
+- Studio S144 `76f06a8a` dan S145 `f3f8cd0` sudah direkonsiliasi tanpa conflict
+  pada branch `codex/s146-sagaview-support-consent-integration`, source exact
+  `02d2f71cb959f10e0a72aa60d15b9820b7c2c28b`, dan sudah dipush.
+- Empat pilihan izin foto cepat dan Support Hub berautentikasi perangkat kini
+  berada pada satu kandidat Studio. Backend tetap kandidat S145 `181fb0d2` +
+  grounding `dedef195`; tidak ada migration atau perubahan kontrak backend.
+- Gate gabungan lulus: 180/180 unit, format, lint, typecheck, production build,
+  bundle budget, focused Playwright 5 pass/1 intentional skip, serta npm audit
+  nol vulnerability.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S143.
+  Next: full browser regression, immutable staging/backup/restore/rollback,
+  lalu authenticated UAT perangkat dan consent nyata sebelum deploy.
+
 ## 2026-08-08 - S145 bantuan AI device-authenticated candidate
 
 - Klasifikasi `CONFIRMED` melalui exact source dan test lokal. Backend

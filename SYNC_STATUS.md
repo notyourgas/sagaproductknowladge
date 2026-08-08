@@ -12,13 +12,13 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-08T17:01:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-08T18:12:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `f9191855bf118e5cd51d27f4aad7e13eee1acc4a` |
-| Informasi terakhir disinkronkan | SagaView device-authenticated Support Hub backend `181fb0d2`/Studio `f3f8cd0`, serta port grounding SagaBook `dedef195`; semuanya local-validated dan production tidak berubah. |
+| Baseline sebelum pembaruan | `7f74815176d42d240d4fe4c41a220972b39d5d54` |
+| Informasi terakhir disinkronkan | SagaView Studio S146 `02d2f71c` merekonsiliasi consent S144 dan Support Hub S145; local-validated dan production tetap S143. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik source/runtime; rekonsiliasi source Studio S144 dan S145 masih menjadi gate release, bukan konflik kontrak. Candidate chatbot tidak mengubah model, prompt, KB, provider, atau production. |
+| Konflik | Tidak ada konflik source/runtime; rekonsiliasi Studio S144 dan S145 selesai. Full regression, immutable release gate, dan authenticated UAT masih residual. |
 | Error | Tidak ada; seluruh gate lokal dan knowledge validator wajib dijalankan sebelum commit. |
 
 ## File yang berubah pada sinkronisasi ini

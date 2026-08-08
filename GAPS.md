@@ -59,10 +59,11 @@ ketika keputusan atau release baru menutup gap.
   error/timeout, token/cost bila tersedia, serta rollback pipeline AI.
 
 - `TODO`: adapter SagaView device-authenticated sudah local-validated pada
-  backend `181fb0d2` dan Studio `f3f8cd0`. Promotion menunggu rekonsiliasi
-  candidate Studio S144, immutable staging, backup/restore, live smoke
-  authenticated, monitoring, dan rollback. Production tetap S143; boundary
-  foto/editor/export tetap local-first.
+  backend `181fb0d2` dan kandidat Studio gabungan S146 `02d2f71c`.
+  Rekonsiliasi S144+S145 selesai; promotion masih menunggu full browser
+  regression, immutable staging, backup/restore, live smoke authenticated,
+  monitoring, dan rollback. Production tetap S143; boundary foto/editor/export
+  tetap local-first.
 
 - `TODO`: kronologi validasi di bawah mempertahankan label candidate pada saat
   masing-masing bukti dibuat; seluruh ancestor S131-S156 kini aktif kumulatif

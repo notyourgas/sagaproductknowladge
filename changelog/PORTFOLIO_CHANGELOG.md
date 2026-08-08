@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-08-08 - SagaView S146 kandidat gabungan S144 dan S145
+
+- Studio exact `02d2f71cb959f10e0a72aa60d15b9820b7c2c28b` menyatukan consent
+  cepat S144 dan Support Hub device-authenticated S145 tanpa conflict.
+- 180/180 unit, format/lint/typecheck/build/budget, focused Playwright 5 pass/1
+  intentional skip, dan npm audit nol vulnerability lulus.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S143.
+  Backend tetap kandidat S145 `181fb0d2` + `dedef195`.
+
 ## 2026-08-08 - SagaView S145 bantuan AI device-authenticated candidate
 
 - Backend `181fb0d2` + grounding current-baseline `dedef195` dan Studio

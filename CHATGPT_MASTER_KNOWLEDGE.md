@@ -680,6 +680,11 @@ first-use bootstrap dapat langsung menerima pertanyaan. Folder foto, editor,
 dan export tetap local-first dan tidak dipindai/diunggah. Status
 `AI_EVAL_VALIDATED / INTEGRATION_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
 production tetap S143 sampai gate immutable dan rekonsiliasi S144 lulus.
+Rekonsiliasi Studio S144+S145 kemudian selesai pada kandidat S146 exact
+`02d2f71cb959f10e0a72aa60d15b9820b7c2c28b`. Gate gabungan 180 unit,
+focused Playwright support+consent 5 pass/1 intentional skip, build/budget, dan
+audit dependency lulus. Production masih tetap S143 sampai full regression,
+immutable release gate, dan authenticated UAT selesai.
 Session, Frames, dan Install App tidak lagi memicu
 hydration mismatch karena state online/PWA/recovery memakai snapshot awal
 SSR/client yang deterministik. Owner Console lintas browser,
