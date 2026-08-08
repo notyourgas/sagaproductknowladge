@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 8 Agustus 2026 19:16 WIB
+- Updated: 8 Agustus 2026 20:30 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED` untuk workflow yang tercantum di
   [PRODUCT](PRODUCT.md)
@@ -40,6 +40,13 @@ dalam satu dokumen public-safe.
   Model, prompt, provider, dan KB tidak diubah oleh release ini.
 
 ### Histori kandidat sebelum release S157
+- Candidate combined exit S7-S8 `c8138517` menyatukan lineage production
+  `c7f13487` dan retry booking manual dalam satu runner fail-fast. Konflik slot,
+  expiry lintas tab, race dua proses, serta retry/read-after-write operator
+  lulus bersama: focused 265/265, race 5/5, browser 6/6, full backend 998/998,
+  Support Hub 4/4, build/design, dan dependency audit nol advisory. S7-S8
+  `EXIT_GATE_ACCEPTED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+  production tidak berubah.
 - Candidate manual-booking retry `fe329a0b` menambahkan kunci idempotensi
   tenant-scoped, replay response asli, penolakan payload conflict, optimistic
   calendar update, refresh recovery, dan double-submit guard. Backend 995/995,

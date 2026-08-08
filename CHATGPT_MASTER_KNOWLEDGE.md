@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 8 Agustus 2026 19:15 WIB
+Evidence cut-off: 8 Agustus 2026 20:30 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -90,8 +90,11 @@ watermark non-fixed. Subscription tenant tidak diubah.
 Candidate `fe329a0b12e49ae6c32c4ec861318ccca843c86b` membuat retry
 booking manual idempoten, me-replay response asli tanpa write/audit ganda,
 menolak payload conflict, dan memisahkan recovery refresh kalender dari hasil
-mutation. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak
-berubah dan combined exit S7-S8 masih pending.
+mutation. Candidate gabungan `c8138517b027978b234ababee061e6679716db84`
+kemudian menjalankan konflik slot, expiry lintas tab, race dua proses, dan
+retry/read-after-write operator pada satu lineage. S7-S8 kini
+`EXIT_GATE_ACCEPTED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+tetap `c7f13487` / `20260808115539-c7f1348`.
 
 SagaBook S119 aktif pada source
 `20ff6829f96cebec22d34844291b3d522b91774a`, release

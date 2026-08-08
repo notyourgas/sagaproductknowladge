@@ -8,7 +8,7 @@ diubah menjadi klaim publik sebelum ditutup dengan bukti atau keputusan owner.
 
 ## Konteks
 
-Daftar ini berlaku pada evidence cut-off 8 Agustus 2026 19:16 WIB dan harus diperbarui
+Daftar ini berlaku pada evidence cut-off 8 Agustus 2026 20:30 WIB dan harus diperbarui
 ketika keputusan atau release baru menutup gap.
 
 ## Cara memakai
@@ -37,9 +37,12 @@ ketika keputusan atau release baru menutup gap.
   `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` sebagai release
   `20260808115539-c7f1348`; rollback `20260808063729-04c9b64` tersedia.
   Recovery konflik slot S154, expiry payment hold S155, dan race aktual S156
-  aktif. Candidate manual-booking retry/read-after-write `fe329a0b` sudah
-  `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; availability/slot keseluruhan
-  tetap `INTEGRATION_IN_PROGRESS` sampai combined exit S7-S8 dijalankan.
+  aktif. Candidate gabungan `c8138517` menutup combined exit S7-S8 dengan
+  konflik slot, expiry lintas tab, race dua proses, serta retry/read-after-write
+  operator pada satu lineage. S7-S8 `EXIT_GATE_ACCEPTED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; prioritas berikutnya payment/status exactly-once,
+  callback replay/expiry, reconciliation, stale multi-tab, permission-negative,
+  dan recovery UI.
   `BUSINESS_READY` menunggu setup pilot dua tenant dan authenticated owner UAT;
   subscription tenant tidak diubah.
 
@@ -147,7 +150,7 @@ ketika keputusan atau release baru menutup gap.
   combined browser acceptance empat slice sudah hijau dengan runtime disposable
   terisolasi. Endpoint Packagist timeout ditutup dengan fallback OSV resmi yang
   mengaudit 114 paket Composer dan menemukan nol advisory. Sprint 2, S3-S4,
-  S5, dan S6 exit gate sudah diterima; S7-S8 masih aktif.
+  S5, S6, dan S7-S8 exit gate sudah diterima lokal.
   UI/UX S122 sudah production,
   tetapi integrasi template belum
   boleh disebut `INTEGRATION_VALIDATED` sebelum happy, failure/retry,

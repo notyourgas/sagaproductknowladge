@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-08 - SagaBook S7-S8 combined exit accepted locally
+
+- Source `c8138517` menggabungkan lineage production SagaBook terbaru dengan
+  retry booking manual dan menyediakan runner fail-fast untuk konflik slot,
+  expiry lintas tab, race dua proses, serta retry/read-after-write operator.
+- Focused 265/265, race 5/5, browser recovery 6/6, backend 998/998, Support Hub
+  4/4, build/design, Pint/diff, dan audit dependency nol advisory lulus.
+- S7-S8 `EXIT_GATE_ACCEPTED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+  Production tetap `c7f13487` / `20260808115539-c7f1348`; prioritas berikutnya
+  payment/status exactly-once dan recovery, bukan deployment otomatis.
+
 ## 2026-08-08 - SagaBook manual booking retry candidate
 
 - Source `fe329a0b` membuat retry booking manual idempoten, menolak payload

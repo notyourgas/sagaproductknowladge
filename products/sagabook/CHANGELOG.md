@@ -1,5 +1,24 @@
 # SagaBook Changelog
 
+## 2026-08-08 - Combined exit S7-S8 availability/slot candidate
+
+- Klasifikasi `CONFIRMED`; source
+  `c8138517b027978b234ababee061e6679716db84` pada branch
+  `codex/s158-sagabook-s7-s8-exit-gate` menggabungkan lineage production
+  Support Hub dengan retry booking manual dan runner combined exit repeatable.
+- Gate mengikat konflik slot Bayar -> Jadwal, expiry payment hold QRIS/transfer
+  lintas tab, race aktual dua proses, serta retry dan read-after-write booking
+  manual tanpa mengubah workflow universal.
+- Focused backend 265/265, race 5/5, browser recovery 6/6, full backend 998/998
+  (11.370 assertion), Support Hub 4/4, build/design 26 artefak, Pint/diff, dan
+  audit npm/Composer/OSV nol advisory lulus. Bukti mencakup 390x844,
+  1440x900, keyboard/focus, forced-colors, reduced-motion, target 44 px, dan
+  no-overflow.
+- S7-S8 `EXIT_GATE_ACCEPTED / UIUX_VALIDATED / INTEGRATION_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Production tetap source
+  `c7f13487` / release `20260808115539-c7f1348`; deployment, activation,
+  subscription, credential, dan data customer tidak diubah.
+
 ## 2026-08-08 - Manual booking retry dan read-after-write operator candidate
 
 - Klasifikasi `CONFIRMED`; source

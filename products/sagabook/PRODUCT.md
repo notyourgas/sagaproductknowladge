@@ -47,6 +47,16 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   kumulatif; arah storefront lebar S94/S108 tetap deprecated dan tidak aktif.
 
 ## Histori kandidat sebelum release S157
+- Candidate combined exit S7-S8 source
+  `c8138517b027978b234ababee061e6679716db84` menggabungkan source production
+  Support Hub terbaru dengan retry booking manual, lalu menjalankan satu gate
+  repeatable untuk konflik slot, expiry payment hold lintas tab, race aktual
+  dua proses, serta retry/read-after-write operator. Focused backend 265/265,
+  race 5/5, browser recovery 6/6, full backend 998/998 (11.370 assertion),
+  Support Hub 4/4, build/design, Pint/diff, serta audit npm/Composer/OSV nol
+  advisory lulus. S7-S8 kini `EXIT_GATE_ACCEPTED / UIUX_VALIDATED /
+  INTEGRATION_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+  production tetap `c7f13487` / `20260808115539-c7f1348`.
 - Candidate manual-booking retry source
   `fe329a0b12e49ae6c32c4ec861318ccca843c86b` membuat percobaan ulang
   operator idempoten per tenant. Respons mutation langsung mengisi kalender;
@@ -56,8 +66,8 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   backend 995/995 (11.356 assertion), Playwright retry/recovery 2/2, matriks UI
   390x844 dan 1440x900, build/design, serta audit npm/Composer/OSV nol
   advisory. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
-  tetap `c7f13487` / `20260808115539-c7f1348`. Combined exit S7-S8 masih
-  menjadi gate berikutnya.
+  tetap `c7f13487` / `20260808115539-c7f1348`. Status ini merupakan snapshot
+  sebelum combined exit S158 diterima.
 - Candidate Support Hub current-baseline source `dedef195` di atas S143
   `8fac4f68` memperbaiki pergantian konteks
   cabang ke voucher serta reset greeting. Intent eksplisit baru kini

@@ -12,13 +12,13 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-08T19:16:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-08T20:30:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `060cc077f43306be13869b0faac90cd85ae8e412` |
-| Informasi terakhir disinkronkan | SagaBook manual-booking retry `fe329a0b` local-validated dan belum deployed; production tetap `c7f13487` / `20260808115539-c7f1348`. |
+| Baseline sebelum pembaruan | `f144310b6babb66a44b696bb3fe65a0f0d2053a4` |
+| Informasi terakhir disinkronkan | SagaBook combined exit S7-S8 `c8138517` accepted secara lokal dan belum deployed; production tetap `c7f13487` / `20260808115539-c7f1348`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik source/runtime. Combined exit S7-S8, authenticated owner/device/consent UAT, latency/cost, dan business readiness masih residual dan tidak disamakan dengan deployment. |
+| Konflik | Tidak ada konflik source/runtime. Payment/status provider, authenticated owner UAT, latency/cost, dan business readiness masih residual dan tidak disamakan dengan deployment. |
 | Error | Tidak ada; seluruh gate lokal dan knowledge validator wajib dijalankan sebelum commit. |
 
 ## File yang berubah pada sinkronisasi ini
@@ -27,10 +27,6 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `products/sagabook/DOSSIER.md`
 - `products/sagabook/CHANGELOG.md`
 - `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
-- `products/sagaview/PRODUCT.md`
-- `products/sagaview/DOSSIER.md`
-- `products/sagaview/CHANGELOG.md`
-- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `GAPS.md`
@@ -63,6 +59,10 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `CHANGELOG.md`
 
 ## Sinkronisasi sebelumnya
+
+- SagaBook combined exit S7-S8 `c8138517` diterima sebagai
+  `EXIT_GATE_ACCEPTED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+  tetap `c7f13487` dan prioritas berpindah ke payment/status.
 
 - SagaBook manual-booking retry `fe329a0b` disinkronkan sebagai
   `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap `c7f13487` dan

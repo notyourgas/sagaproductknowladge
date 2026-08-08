@@ -12,6 +12,20 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-08
 
+### SagaBook S7-S8 combined exit accepted locally
+
+- Ringkasan: konflik slot, expiry payment hold lintas tab, race dua proses,
+  serta retry/read-after-write booking manual kini terikat dalam satu runner
+  exit repeatable pada source `c8138517`.
+- Klasifikasi `CONFIRMED`; status `EXIT_GATE_ACCEPTED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: focused 265/265, race 5/5, browser recovery 6/6, backend 998/998,
+  Support Hub 4/4, build/design, Pint/diff, dan audit dependency nol advisory.
+- Production berubah: tidak. Runtime tetap `c7f13487` /
+  `20260808115539-c7f1348`; payment/status menjadi prioritas berikutnya.
+- File knowledge: product, dossier, changelog, ledger SagaBook,
+  portfolio/root changelog, master, gaps, dan sync status.
+
 ### SagaBook manual booking retry candidate
 
 - Ringkasan: retry booking manual kini idempoten dan refresh dashboard yang
