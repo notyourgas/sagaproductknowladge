@@ -33,14 +33,13 @@ ketika keputusan atau release baru menutup gap.
 
 ### SagaBook
 
-- `TODO`: candidate S154 `1d9d774f` sudah menutup recovery konflik slot pada
-  saat pembayaran secara local-validated: satu submit, 409 public-safe,
-  refetch availability, tanpa sessionStorage/booking/hold/lock parsial, serta
-  tanpa kebocoran kode booking atau alasan blok internal. Availability/slot
-  keseluruhan tetap `INTEGRATION_IN_PROGRESS`; expiry lintas tab, race aktual
-  multi-process, retry mutation, dan read-after-write operator masih harus
-  ditutup sebelum exit S7-S8. Production tetap `20260806152606-0894df0` dan
-  rollback/previous symlink tetap residual sebelum S21.
+- `TODO`: candidate S154 `1d9d774f` sudah menutup recovery konflik slot saat
+  pembayaran dan S155 `f04e4a9c` sudah menutup expiry payment hold lintas tab
+  QRIS/transfer secara local-validated. Availability/slot keseluruhan tetap
+  `INTEGRATION_IN_PROGRESS`; race aktual multi-process, retry mutation, dan
+  read-after-write operator masih harus ditutup sebelum exit S7-S8. Production
+  tetap `20260806152606-0894df0`; REVISION/previous/rollback runtime masih
+  residual sebelum S21.
 
 - `TODO`: guard scope/fallback source
   `0894df00f6866688db4d053758a99d54ba4e8908` sudah production dan memisahkan

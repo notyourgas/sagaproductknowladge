@@ -12,6 +12,21 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-08
 
+### SagaBook Sprint 7 payment-hold expiry recovery candidate
+
+- Ringkasan: QRIS dan transfer kini memakai deadline payment hold backend,
+  menyinkronkan expiry lintas tab, melepas slot secara atomik, menolak sesi lama
+  dengan 409, dan memberi satu jalur memilih jadwal baru.
+- Klasifikasi: `CONFIRMED`; source
+  `f04e4a9c174c965b2e8308077d9f643f97ef6bd6`; status `UIUX_VALIDATED /
+  INTEGRATION_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: focused final 253/253 (1.864), full backend 993/993 (11.342), browser
+  14/14, build/design 26/0, dependency advisory nol, dan AI 38/38 (219).
+- Production berubah: tidak. Release aktif tetap `20260806152606-0894df0`;
+  S7-S8 masih berjalan dan deploy ditahan sampai S21.
+- File knowledge: product, dossier, changelog, ledger, master knowledge, gaps,
+  portfolio/root changelog, dan sync status.
+
 ### SagaBook Sprint 7 slot conflict recovery candidate
 
 - Ringkasan: konflik slot saat pembayaran kini fail-safe melalui satu submit,

@@ -12,14 +12,14 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-08T10:20:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-08T11:26:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `975b17955e1c10c8d97b117c24bfeb43d8faca40` |
-| Informasi terakhir disinkronkan | SagaBook S154 source `1d9d774f`: recovery konflik slot saat pembayaran kini satu-submit, public-safe, kembali ke Jadwal dengan availability aktual, dan tidak menulis booking lokal/DB parsial; irisan `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`, S7-S8 tetap berjalan, production tetap `20260806152606-0894df0`. |
+| Baseline sebelum pembaruan | `1aa840e1dd238cb63238c36c0c2201cc30eaae8f` |
+| Informasi terakhir disinkronkan | SagaBook S155 source `f04e4a9c`: expiry payment hold QRIS/transfer kini backend-authoritative, tersinkron lintas tab, melepas slot atomik, menolak sesi stale, dan memberi recovery jadwal baru; irisan `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`, S7-S8 tetap berjalan, production tetap `20260806152606-0894df0`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
 | Konflik | Tidak ada. Kontrak storefront mobile-only, subscription skip, urutan sprint, SagaView local-first, dan product boundary tetap konsisten. |
-| Error | Tidak ada advisory npm/Composer/OSV. Production tidak diubah. Rollback/previous symlink SagaBook tetap residual sebelum S21. |
+| Error | Tidak ada advisory npm/Composer/OSV. Production tidak diubah. File REVISION serta previous/rollback symlink SagaBook tetap residual sebelum S21. |
 
 ## File yang berubah pada sinkronisasi ini
 
@@ -34,6 +34,9 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `CHANGELOG.md`
 
 ## Sinkronisasi sebelumnya
+
+- SagaBook S155 source `f04e4a9c` disinkronkan sebagai payment-hold expiry
+  cross-tab local-validated; S7-S8 belum exit dan production tidak berubah.
 
 - SagaBook S154 source `1d9d774f` disinkronkan sebagai recovery konflik slot
   local-validated; S7-S8 belum exit dan production tidak berubah.

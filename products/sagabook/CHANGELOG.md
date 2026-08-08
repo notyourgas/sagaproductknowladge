@@ -4,6 +4,29 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-08 - Sprint 7 payment-hold expiry cross-tab recovery candidate
+
+- Klasifikasi `CONFIRMED`; source
+  `f04e4a9c174c965b2e8308077d9f643f97ef6bd6` pada branch
+  `codex/s155-sagabook-hold-expiry-recovery`.
+- Before: QRIS memakai timer lokal yang dapat direset dan tab transfer dapat
+  tetap menampilkan aksi lama sesudah hold server berakhir. After: deadline
+  `paymentHoldExpiresAt` berasal dari backend, QRIS/transfer sinkron saat
+  interval/focus/visibility, lalu merender recovery bersama tanpa QR atau aksi
+  upload stale.
+- `GET /api/booking-status/{code}` menyinkronkan expiry setelah token sah;
+  transaction/row lock mengakhiri booking, hold, sesi, slot lock, dan settlement
+  terkait dengan audit tunggal. `POST /api/payment/create-session` menolak
+  refresh sesi expired dengan 409 `payment_hold_expired`; token salah 403
+  sebelum mutasi.
+- Focused final 253/253 (1.864), full backend 993/993 (11.342), browser gabungan
+  S129+S154+S155 14/14, build, design 26/0, npm/Composer/OSV nol advisory, dan
+  Support Hub AI 38/38 (219) hijau. Before exact-parent dan after 390x844 serta
+  1440x900 menjaga canvas maksimum 460 piksel dan satu watermark non-fixed.
+- Status irisan `UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; S7-S8 tetap `INTEGRATION_IN_PROGRESS`.
+  Production tetap `20260806152606-0894df0`; deploy ditahan sampai S21.
+
 ## 2026-08-08 - Sprint 7 payment-time slot conflict recovery candidate
 
 - Klasifikasi `CONFIRMED`; source

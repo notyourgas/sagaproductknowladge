@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-08 - SagaBook Sprint 7 payment-hold expiry recovery candidate
+
+- Source `f04e4a9c174c965b2e8308077d9f643f97ef6bd6` menutup timer QRIS
+  lokal dan status transfer stale saat payment hold server berakhir.
+- Booking-status sah sekarang mengakhiri booking/hold/sesi, melepas slot, dan
+  menulis audit satu kali dalam boundary transaction; create-session menolak QR
+  lama dengan 409. Token salah 403 sebelum mutasi.
+- Full backend 993/993, browser regresi gabungan 14/14, build/design, audit
+  dependency, serta AI SagaBook 38/38 hijau. Bukti before/after mobile dan
+  desktop mempertahankan canvas storefront maksimum 460 piksel.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; fitur S7-S8 belum exit
+  dan production tetap `20260806152606-0894df0`.
+
 ## 2026-08-08 - SagaBook Sprint 7 slot conflict recovery candidate
 
 - Source `1d9d774fe1f506dd076fe09668c7a05e3685c387` menutup false local

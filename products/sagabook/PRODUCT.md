@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 8 Agustus 2026 10:20 WIB
+Updated: 8 Agustus 2026 11:26 WIB
 Evidence status: production + source verified
 
 ## Tujuan dokumen
@@ -36,6 +36,15 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 - Label candidate pada bagian histori di bawah adalah status saat bukti itu
   dibuat. Source S98-S130 yang menjadi ancestor release aktif sudah aktif
   kumulatif; arah storefront lebar S94/S108 tetap deprecated dan tidak aktif.
+- Candidate lokal S155 source
+  `f04e4a9c174c965b2e8308077d9f643f97ef6bd6` menutup expiry payment hold
+  lintas tab QRIS dan transfer. Deadline berasal dari backend, status publik
+  melakukan expiry atomik sebelum scheduler, slot lock dilepas, sesi lama
+  ditolak 409, dan kedua tab merender satu recovery untuk memilih jadwal baru.
+  Token salah ditolak 403 sebelum mutasi dan audit expiry tetap satu kali.
+  Statusnya `UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; S7-S8 tetap `INTEGRATION_IN_PROGRESS`, production
+  dan aktivasi subscription tidak berubah.
 - Candidate lokal S154 source
   `1d9d774fe1f506dd076fe09668c7a05e3685c387` menutup irisan pertama S7:
   ketika slot diambil transaksi lain saat customer menekan pembayaran,

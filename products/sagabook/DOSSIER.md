@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 8 Agustus 2026 10:20 WIB
+- Updated: 8 Agustus 2026 11:26 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED` untuk workflow yang tercantum di
   [PRODUCT](PRODUCT.md)
@@ -22,6 +22,10 @@ dalam satu dokumen public-safe.
   guard scope/fallback Support Hub aktif, tetapi corpus/index/model AI tetap
   `AI_KNOWLEDGE_NOT_PROMOTED`; S94/S108 yang
   memperlebar storefront tetap deprecated dan tidak aktif.
+- Candidate S155 `f04e4a9c` menyinkronkan expiry payment hold pada tab QRIS dan
+  transfer dari deadline backend. Request status sah mengakhiri booking/hold/
+  sesi secara atomik, melepas slot, dan menampilkan recovery yang sama; token
+  salah tidak memicu mutasi. Candidate ini local-validated dan belum production.
 - Candidate S154 `1d9d774f` memulihkan konflik slot pada batas Bayar -> Jadwal:
   satu request mutation, 409 `slot_conflict` public-safe, availability refetch,
   pilihan slot stale dibersihkan, dan sessionStorage baru ditulis setelah API

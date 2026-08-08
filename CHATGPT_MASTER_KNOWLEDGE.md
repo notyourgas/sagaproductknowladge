@@ -76,12 +76,14 @@ Booking dipasarkan unlimited dengan fair-use.
 Trial SagaBook: 7 hari full access, kemudian grace read-only hari 8-14 dan
 suspend setelah hari 14; tidak ada auto-charge.
 
-Candidate lokal terbaru S154 source `1d9d774f` memperbaiki recovery ketika
-slot berubah saat customer memulai pembayaran: request ganda diblok, booking
-lokal tidak disimpan sebelum response sukses, customer dikembalikan ke Jadwal,
-dan reason publik tidak membocorkan kode booking/alasan blok internal. Status
-`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; jangan menyebut perilaku ini
-production sampai release immutable S21 terbukti.
+Candidate lokal terbaru S155 source `f04e4a9c` memperbaiki payment hold yang
+berakhir ketika tab QRIS dan transfer masih terbuka: deadline berasal dari
+backend, status sah mengakhiri booking/hold/sesi dan melepas slot secara atomik,
+sesi QR lama ditolak, lalu kedua tab meminta customer memilih jadwal baru.
+Token salah ditolak sebelum mutasi. Status `LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; jangan menyebut perilaku ini production sampai
+release immutable S21 terbukti. Candidate S154 `1d9d774f` tetap menjadi bukti
+recovery konflik slot saat customer pertama kali memulai pembayaran.
 
 SagaBook S119 aktif pada source
 `20ff6829f96cebec22d34844291b3d522b91774a`, release
