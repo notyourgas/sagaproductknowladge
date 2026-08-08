@@ -12,6 +12,25 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-08
 
+### SagaBook Sprint 6 resource delete/dependency recovery candidate
+
+- Ringkasan: penghapusan resource kini gagal aman dengan 409 terstruktur saat
+  masih dipakai paket, booking, block time, atau resource lain; UI memberi
+  hitungan dan jalur pemulihan tanpa menghapus data atau menulis audit sukses.
+- Klasifikasi: `CONFIRMED`; source
+  `ac11487f046c8acae328cba89975035b888d00de`; status `UIUX_VALIDATED /
+  INTEGRATION_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; S6
+  keseluruhan tetap `IN_PROGRESS`.
+- Gate: focused katalog 37/37 (214), kontrak/role/error 56/56 (500), full
+  backend 990/990 (11.300), browser 9 pass/1 intentional skip, build,
+  typecheck, design 26/0, npm/Composer/OSV nol advisory, serta AI SagaBook
+  44/44 (3.440) hijau.
+- Production berubah: tidak. Release aktif tetap `20260806152606-0894df0`;
+  stale-write resource, combined exit S6, dan rollback/previous symlink masih
+  residual.
+- File knowledge: product, dossier, changelog, ledger, master knowledge, gaps,
+  portfolio/root changelog, dan sync status.
+
 ### SagaBook Sprint 6 resource status/persistence candidate
 
 - Ringkasan: status resource kini utuh di mobile, menunggu response API aktual,

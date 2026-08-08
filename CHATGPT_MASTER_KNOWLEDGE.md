@@ -251,6 +251,19 @@ dependency/delete recovery, stale-write resource, dan combined exit belum
 selesai. Production tetap release `20260806152606-0894df0`; jangan menyebut
 candidate ini production atau S6 selesai.
 
+Candidate SagaBook S151 source
+`ac11487f046c8acae328cba89975035b888d00de` menutup delete/dependency
+recovery resource secara lokal. Resource yang masih dipakai paket, booking,
+block time, atau resource lain menghasilkan 409 `resource_delete_blocked`
+dengan hitungan public-safe dan arah recovery; failure/retry tidak menghapus
+data atau menulis audit sukses. Resource bebas tetap dapat dihapus. Staff 403
+dan target tenant lain 404 tidak membocorkan dependensi. Status irisan
+`UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; S6 tetap `IN_PROGRESS` karena stale-write resource
+dan combined exit belum selesai. Production tetap release
+`20260806152606-0894df0`; jangan menyebut candidate ini production atau S6
+selesai.
+
 Candidate SagaBook Sprint 2 terbaru adalah source
 `bf1766ae84c352cf3687383ca31947a3e619f575`, belum production. UI rate-limit
 429, idle expiry per tab, dan kontrol staff untuk mengeluarkan perangkat lain

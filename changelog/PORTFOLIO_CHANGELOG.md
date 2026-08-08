@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-08 - SagaBook Sprint 6 resource delete recovery candidate
+
+- Source `ac11487f046c8acae328cba89975035b888d00de` menutup gap delete
+  resource yang masih mempunyai dependensi tanpa mengubah production.
+- API 409 `resource_delete_blocked` membawa hitungan public-safe paket,
+  booking, block time, dan resource tertaut. UI menyediakan pemulihan ke
+  surface terkait; data serta audit tetap konsisten pada failure/retry.
+- Focused 37/37, kontrak/role/error 56/56, full backend 990/990, browser
+  9 pass/1 intentional skip, build/typecheck/design, audit dependency, dan AI
+  SagaBook regression hijau.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; S6 `IN_PROGRESS` dengan
+  stale-write resource dan combined exit sebagai residual. Release aktif tetap
+  `20260806152606-0894df0`.
+
 ## 2026-08-08 - SagaBook Sprint 6 resource status/persistence candidate
 
 - Source `ff3b2babe419337c9e29b4bac8b7f9d531c97659` menutup irisan status dan

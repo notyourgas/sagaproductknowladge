@@ -4,6 +4,30 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-08 - Sprint 6 resource delete/dependency recovery candidate
+
+- Klasifikasi `CONFIRMED`; source
+  `ac11487f046c8acae328cba89975035b888d00de` pada branch
+  `codex/s151-sagabook-resource-delete-recovery`.
+- Before: 409 hanya generik dan resource yang direferensikan resource lain
+  dapat terhapus sehingga meninggalkan relasi menggantung. After: API memberi
+  `resource_delete_blocked`, hitungan dependensi public-safe, dan UI memberi
+  aksi pemulihan `Atur paket`, `Lihat booking`, `Buka kalender`, atau `Atur
+  studio`.
+- UI -> frontend -> `POST /api/admin/deleteResourceFn` -> controller ->
+  transaksi/tenant row lock -> `CatalogDeletionGuard` -> resources/packages/
+  bookings/block_times/activity_logs -> response 409/200 -> UI lulus. Resource
+  bebas tetap dapat dihapus dan audit hanya ditulis pada sukses.
+- Failure/retry tidak memutasi data; double-click menghasilkan satu request,
+  retry kedua tetap aman; Staff 403 dan foreign tenant 404 tidak membocorkan
+  dependensi. Focused 37/37 (214), kontrak/role/error 56/56 (500), full backend
+  990/990 (11.300), browser 9 pass/1 intentional skip, build/typecheck/design
+  26/0, npm/Composer/OSV nol advisory, serta AI 44/44 (3.440) lulus.
+- Status `UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; S6 tetap `IN_PROGRESS` sampai stale-write
+  resource dan combined exit selesai. Production tetap
+  `20260806152606-0894df0`; rollback/previous symlink tetap residual S21.
+
 ## 2026-08-08 - Sprint 6 resource status/persistence candidate
 
 - Klasifikasi `CONFIRMED`; source

@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 8 Agustus 2026 03:27 WIB
+- Updated: 8 Agustus 2026 07:19 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED` untuk workflow yang tercantum di
   [PRODUCT](PRODUCT.md)
@@ -395,6 +395,21 @@ extended desktop/zoom/a11y 4/4, build, npm/Composer audit, serta AI SagaBook
 LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap
 `20260806152606-0894df0`, sedangkan dependency/delete recovery, stale-write
 resource, dan combined exit S6 masih residual.
+
+Delete/dependency recovery resource ditutup lokal pada source
+`ac11487f046c8acae328cba89975035b888d00de`. Backend sekarang menghitung
+dependensi paket, booking, block time, dan resource tertaut dalam tenant yang
+sama, lalu memberi 409 `resource_delete_blocked` dengan detail public-safe.
+UI merender response aktual dan jalur recovery ke Paket, Booking, Kalender,
+atau Resource; klik ganda satu request dan retry kedua tetap gagal aman tanpa
+sukses palsu. Resource bebas tetap terhapus dan audit hanya dibuat pada sukses;
+Staff 403 dan target tenant lain 404 tidak membocorkan dependensi. Focused
+katalog 37/37 (214), kontrak/role/error 56/56 (500), full backend 990/990
+(11.300), browser 9 pass/1 intentional skip, build/typecheck/design 26/0,
+npm/Composer/OSV nol advisory, serta AI 44/44 (3.440) hijau. Status
+`UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; production tetap `20260806152606-0894df0`,
+sedangkan stale-write resource dan combined exit S6 masih residual.
 
 Tenant/cabang S124 pada source
 `f6988cb945c5ca224015d7fecbc94e81c535fc60` aktif sebagai release

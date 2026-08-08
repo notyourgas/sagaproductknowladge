@@ -8,7 +8,7 @@ diubah menjadi klaim publik sebelum ditutup dengan bukti atau keputusan owner.
 
 ## Konteks
 
-Daftar ini berlaku pada evidence cut-off 8 Agustus 2026 03:27 WIB dan harus diperbarui
+Daftar ini berlaku pada evidence cut-off 8 Agustus 2026 07:19 WIB dan harus diperbarui
 ketika keputusan atau release baru menutup gap.
 
 ## Cara memakai
@@ -96,9 +96,12 @@ ketika keputusan atau release baru menutup gap.
   Komponen Add-on S6 kini `EXIT_GATE_ACCEPTED / LOCAL_VALIDATED`; S6 keseluruhan
   tetap `IN_PROGRESS`. Candidate S150 `ff3b2bab` menutup status/persistensi
   resource, termasuk UI mobile, retry, double-submit, enum validation, audit,
-  Staff 403, dan tenant-negative. Residual resource adalah dependency/delete
-  recovery, stale-write recovery, serta combined exit S6. npm dan Composer
-  audit fresh nol advisory. Health SagaBook read-only hijau,
+  Staff 403, dan tenant-negative. Candidate S151 `ac11487f` menutup
+  dependency/delete recovery resource dengan 409 terstruktur, hitungan dan
+  recovery UI public-safe, perlindungan relasi resource tertaut, retry aman,
+  no-success-audit pada failure, Staff 403, serta foreign tenant 404 tanpa leak.
+  Residual resource adalah stale-write recovery serta combined exit S6. npm,
+  Composer, dan OSV audit fresh nol advisory. Health SagaBook read-only hijau,
   tetapi
   rollback/previous symlink production tidak ada dan wajib dipulihkan sebelum
   release immutable S21.

@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 8 Agustus 2026 03:27 WIB
+Updated: 8 Agustus 2026 07:19 WIB
 Evidence status: production + source verified
 
 ## Tujuan dokumen
@@ -69,6 +69,17 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; S6 tetap `IN_PROGRESS` sampai
   dependency/delete recovery, stale-write resource, dan combined exit selesai.
   Production dan aktivasi subscription tidak berubah.
+- Candidate lokal S151 source
+  `ac11487f046c8acae328cba89975035b888d00de` menutup delete/dependency
+  recovery resource. API menghitung paket, booking, block time, dan resource
+  tertaut secara tenant-scoped lalu memberi 409 terstruktur; UI merender
+  hitungan serta jalur pemulihan aktual. Failure/retry, double-submit, Staff
+  403, dan foreign tenant 404 tidak menghapus data atau membocorkan dependensi;
+  resource tanpa dependensi tetap dapat dihapus dengan audit sukses tunggal.
+  Status irisan `UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; S6 tetap `IN_PROGRESS` sampai stale-write
+  resource dan combined exit selesai. Production dan aktivasi subscription
+  tidak berubah.
 
 ## Ringkasan
 
