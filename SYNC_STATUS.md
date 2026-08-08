@@ -12,13 +12,13 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-09T01:24:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-09T02:16:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `71a0ea38fac9fc8bb9a1514256232dc60c520059` |
-| Informasi terakhir disinkronkan | SagaView S149 `b1e0425847cde1da0d8ec3893fcef421ea4cece9` menutup recovery checkpoint atomik secara `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S147. |
+| Baseline sebelum pembaruan | `b533b4ea14c252b34b4a9e59c89218405cf2b898` |
+| Informasi terakhir disinkronkan | SagaView S150 `4d25f6069737dc8f14342a62b6c6241081d544d3` menutup cleanup import lokal secara `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S147. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik source/runtime. Kandidat S149 belum dideploy dan authenticated Windows UAT belum dijalankan. |
+| Konflik | Tidak ada konflik source/runtime. Kandidat S150 belum dideploy; Windows permission/quota dan authenticated UAT belum dijalankan. |
 | Error | Tidak ada error sinkronisasi yang diketahui. |
 
 ## File yang berubah pada sinkronisasi ini
@@ -88,6 +88,10 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `CHANGELOG.md`
 
 ## Sinkronisasi sebelumnya
+
+- SagaView S150 source `4d25f606` disinkronkan sebagai cleanup import foto
+  lokal `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S147
+  dan Windows authenticated UAT masih residual.
 
 - SagaView S149 source `b1e04258` disinkronkan sebagai recovery checkpoint
   atomik `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S147

@@ -68,6 +68,12 @@ tersebut dan meredaksi response record lama. Studio
   customer flow dibuka. Checkpoint lanjutan mempertahankan handle folder yang
   sudah dipilih, klik ganda ditahan, dan kegagalan quota tetap di halaman
   Session dengan pesan aman serta keluar dari fullscreen.
+  S150 source Studio `4d25f6069737dc8f14342a62b6c6241081d544d3`
+  berstatus `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: import foto lokal
+  kini baru mengubah folder dan target foto setelah session cloud diterima.
+  Bila thumbnail dibatalkan atau pencatatan cloud gagal, seluruh object URL
+  sementara dilepas, state sesi lama tidak ditimpa, dan pesan backend mentah
+  tidak ditampilkan kepada operator.
 
 ## Tujuan dokumen
 
@@ -80,7 +86,7 @@ Menjadi ringkasan fakta kanonik SagaView. Detail lengkap berada di
 Fakta release di dokumen ini mengacu pada exact source dan runtime production
 yang diverifikasi sampai 8 Agustus 2026.
 
-Kandidat S148 dan S149 diverifikasi lokal pada 9 Agustus 2026 dan belum
+Kandidat S148 sampai S150 diverifikasi lokal pada 9 Agustus 2026 dan belum
 mengubah runtime production.
 
 ## Status production terbaru

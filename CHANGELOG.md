@@ -12,6 +12,23 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-09
 
+### SagaView S150 cleanup import foto lokal candidate
+
+- Ringkasan: object URL staged kini selalu dilepas pada pembatalan thumbnail
+  atau kegagalan pencatatan cloud; folder dan target baru hanya dikomit setelah
+  alur import berhasil.
+- Klasifikasi `CONFIRMED`; Studio
+  `4d25f6069737dc8f14342a62b6c6241081d544d3`, status `LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: 48 file/185 unit, format/lint/typecheck, build/budget, Playwright
+  local-session 8/8 termasuk 50/200/500 foto dan cleanup failure, visual/a11y
+  dua viewport, serta npm audit nol vulnerability.
+- Production berubah: tidak. Runtime tetap S147; race/corrupt-file,
+  permission/quota Windows nyata, authenticated UAT, dan deployment tetap
+  memerlukan gate terpisah.
+- File knowledge: product/changelog/ledger SagaView, portfolio/root changelog,
+  master, dan sync status.
+
 ### SagaView S149 recovery checkpoint atomik candidate
 
 - Ringkasan: checkpoint Session kini menunggu transaction complete, menjaga

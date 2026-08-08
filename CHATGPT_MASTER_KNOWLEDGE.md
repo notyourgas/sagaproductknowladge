@@ -682,6 +682,11 @@ menunggu commit IndexedDB sebelum update status cloud dan navigasi. Handle
 folder dipertahankan pada checkpoint lanjutan; klik ganda, quota failure, dan
 fullscreen recovery fail-closed tanpa mengunggah foto/path. Production tetap
 S147.
+S150 Studio `4d25f6069737dc8f14342a62b6c6241081d544d3` menutup cleanup
+import lokal secara `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Object URL
+foto/thumbnail staged dilepas saat cancel atau pencatatan cloud gagal; folder,
+photo-count, serta target tidak berubah sebelum commit sukses; pesan backend
+mentah tidak dirender. Production tetap S147.
 Harga bulanan: Growth Rp200.000, Pro Rp500.000.
 Growth mencakup 1 device, 50 frame, 3 preset, offline 24 jam, dan 2 GB aset
 frame cloud. Pro mencakup 4 device, 100 frame, 10 preset, offline 168 jam, 10 GB

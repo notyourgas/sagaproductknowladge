@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-09 - SagaView S150 cleanup import foto lokal candidate
+
+- Studio `4d25f606` melepas seluruh object URL foto/thumbnail sementara ketika
+  import dibatalkan atau session cloud gagal. Folder, photo-count, dan target
+  sesi tidak berubah sampai import baru benar-benar dikomit.
+- UI menampilkan pesan retry yang aman tanpa merender pesan backend mentah.
+  Full 185 unit, Playwright local-session 8/8 termasuk 50/200/500 foto
+  no-upload, dua viewport, Axe, build/budget, dan audit dependency lulus.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production SagaView
+  tetap S147. Cancel/replace race, corrupt decode, Windows permission/quota,
+  authenticated UAT, dan deploy tetap gate terpisah.
+
 ## 2026-08-09 - SagaView S149 recovery checkpoint atomik candidate
 
 - Studio `b1e04258` menunggu checkpoint IndexedDB benar-benar commit sebelum

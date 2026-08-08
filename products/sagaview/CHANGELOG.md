@@ -1,5 +1,26 @@
 # SagaView Changelog
 
+## 2026-08-09 - S150 cleanup import foto lokal candidate
+
+- Klasifikasi `CONFIRMED` melalui source Studio
+  `4d25f6069737dc8f14342a62b6c6241081d544d3` dan acceptance lokal.
+- Before: object URL foto/thumbnail yang sudah disiapkan dapat tertinggal ketika
+  import dibatalkan atau session cloud ditolak; target foto juga dapat berubah
+  walau folder baru belum berhasil dikomit. After: thumbnail hasil pembatalan
+  dan seluruh foto staged pada cloud failure dilepas, sedangkan folder,
+  photo-count, serta target tetap pada state sebelum import.
+- Pesan error UI memakai copy aman berbasis kategori kegagalan dan tidak
+  merender pesan backend mentah. Foto, nama/path file, isi folder, serta object
+  URL tetap tidak dikirim ke cloud/API.
+- Gate hijau: 48 file/185 unit test, format, lint, typecheck, production build,
+  bundle budget 450 KiB, Playwright local-session 8/8 termasuk 50/200/500 foto,
+  seluruh object URL staged terlepas pada 503 synthetic, visual 1440x900 dan
+  390x844, Axe serious/critical nol, serta npm audit nol vulnerability.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; branch
+  `codex/s150-sagaview-local-ingest-cleanup` sudah dipush. Production tetap
+  S147. Residual: cancel/replace race, corrupt decode matrix, permission/quota
+  browser/Windows nyata, dan authenticated UAT sebelum keputusan deploy.
+
 ## 2026-08-09 - S149 recovery checkpoint atomik candidate
 
 - Klasifikasi `CONFIRMED` melalui source Studio
