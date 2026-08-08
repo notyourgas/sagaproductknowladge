@@ -1,5 +1,20 @@
 # Portfolio Changelog
 
+## 2026-08-08 - Chatbot SagaBook dan SagaView S146 production
+
+- SagaBook source `c7f13487` aktif sebagai release
+  `20260808115539-c7f1348`; grounding pergantian intent, reset greeting, dan
+  citation-intent kini production dengan rollback S156 tersedia.
+- SagaView backend `1af88524` / `20260808190040-1af8852` dan Studio
+  `81e55adc` / `20260808190040-81e55ad` mengaktifkan consent cepat serta
+  Support Hub device-scoped; rollback langsung tetap S143.
+- Gate gabungan mencakup full backend, full browser, build/audit, backup
+  terenkripsi/restore, rehearsal, live rollback, snapshot data, service/header/
+  CORS/journal, dan public/negative smoke. Foto/folder/editor/export SagaView
+  tetap local-first; payment/subscription dan data customer tidak berubah.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated UAT,
+  latency/cost, dan `BUSINESS_READY` tetap gate terpisah.
+
 ## 2026-08-08 - SagaView S146 kandidat gabungan S144 dan S145
 
 - Studio exact `02d2f71cb959f10e0a72aa60d15b9820b7c2c28b` menyatukan consent

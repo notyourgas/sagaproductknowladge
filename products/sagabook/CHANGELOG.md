@@ -1,5 +1,21 @@
 # SagaBook Changelog
 
+## 2026-08-08 - Support Hub grounding immutable production release
+
+- Klasifikasi `CONFIRMED`; source kumulatif
+  `c7f13487f33b8075ba7c84f05fc41daec6a622e7` aktif sebagai release
+  `20260808115539-c7f1348`, dengan rollback `20260808063729-04c9b64`.
+- Intent eksplisit baru kini mengalahkan previous intent, greeting mereset
+  konteks, `caranya` bukan follow-up mandiri, bonus surface tidak dapat menjadi
+  bukti tunggal, dan citation harus mendukung intent jawaban.
+- Gate hijau: focused Support Hub 47/47 (3.454 assertion), full backend 996/996
+  (11.356), browser context 2/2, build, Composer/npm/OSV audit, backup
+  terenkripsi/checksum/disposable restore, immutable deploy, service/header/
+  public smoke, dan rollback.
+- Status app `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; model, prompt,
+  provider, KB, subscription, booking/payment, dan data customer tidak diubah.
+  `BUSINESS_READY` serta evaluasi latency/cost authenticated tetap terpisah.
+
 ## 2026-08-08 - Support Hub grounding dipindahkan ke baseline S143
 
 - Klasifikasi `CONFIRMED` melalui exact source dan test lokal. Perbaikan

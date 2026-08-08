@@ -38,7 +38,14 @@ PRODUCTION_ACTIVATED`. Authenticated Owner/Studio UAT tetap residual.
 S144 menyederhanakan izin penggunaan foto menjadi empat tindakan cepat dan
 hanya membuka galeri untuk pilihan manual. Studio source
 `76f06a8a59a1bb88ad140250faaf2db1a8f1ce51` berstatus
-`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S143.
+`LOCAL_VALIDATED` saat bukti dibuat dan kini aktif kumulatif melalui S146.
+S146 mengaktifkan empat pilihan izin foto cepat serta bantuan AI yang
+diautentikasi perangkat. Backend
+`1af885248f04d95960a015749152c784af33307e` / release
+`20260808190040-1af8852` dan Studio
+`81e55adc170af0949245e3f381d881b716e25b0e` / release
+`20260808190040-81e55ad` sudah `PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED`; rollback langsung tetap S143.
 
 ## Tujuan dokumen
 
@@ -63,14 +70,16 @@ yang diverifikasi sampai 8 Agustus 2026.
   lalu memakai dua kartu sesi berdampingan pada QHD/4K di dalam batas 1400
   piksel. Ringkasan, filter, retry, cabut izin, dan workflow privacy tidak
   berubah.
-- Backend source `8fac4f681d45660da27afdd72ba36460d4bd6d0c` aktif sebagai
-  release `20260808134902-8fac4f6`; rollback
-  `20260808020447-e6a7f97` dipertahankan.
-- Studio source `91d7bd7bf13d6dcf7d386431d652a9cf9f3cdefa` aktif sebagai
-  release `20260808134902-91d7bd7`; rollback
-  `20260808020447-c4f664f` dipertahankan.
-- Studio candidate S144 `76f06a8a59a1bb88ad140250faaf2db1a8f1ce51`
-  belum dideploy; runtime production dan rollback tidak berubah.
+- Backend source `1af885248f04d95960a015749152c784af33307e` aktif sebagai
+  release `20260808190040-1af8852`; rollback
+  `20260808134902-8fac4f6` dipertahankan.
+- Studio source `81e55adc170af0949245e3f381d881b716e25b0e` aktif sebagai
+  release `20260808190040-81e55ad`; rollback
+  `20260808134902-91d7bd7` dipertahankan.
+- S146 mengaktifkan consent S144 dan Support Hub device-scoped. Missing/
+  invalid/revoked credential ditolak, tenant/product/actor diturunkan
+  server-side, launcher tetap fail-soft, dan foto/folder/editor/export tidak
+  dipindai atau diunggah.
 - Entitlement live memberi Growth 50 dan Pro 100 frame aktif. Harga, device,
   preset, offline grace, storage, laporan, support, payment, dan fair-use tidak
   berubah.
@@ -647,9 +656,9 @@ Tidak ada migration atau perubahan foto customer, artwork, payment, subscription
 device lease, SagaBook, maupun Saga Platform. Authenticated UAT galeri panjang
 dan kombinasi harga paket nyata tetap diperlukan sebelum `BUSINESS_READY`.
 
-### S144 pilihan izin foto cepat candidate
+### S144 pilihan izin foto cepat
 
-`CONFIRMED` melalui `DEC-065`, tetapi belum production. Pada Review, aksi akhir
+`CONFIRMED` melalui `DEC-065` dan aktif kumulatif pada S146. Pada Review, aksi akhir
 membuka pop-up ringkas dengan empat jawaban: `Izinkan semua foto`, `Hanya foto
 yang saya pilih`, `Pilih beberapa foto`, dan `Jangan gunakan foto saya`. Tiga
 jawaban selain pilihan manual menyimpan scope consent lalu melanjutkan workflow
@@ -660,12 +669,13 @@ selama dialog masih terbuka.
 Tidak ada pilihan otomatis. Policy snapshot, payload consent, penyalinan foto
 yang memang diizinkan, persistence cloud, dan batas local-first tetap memakai
 kontrak production lama. Source Studio
-`76f06a8a59a1bb88ad140250faaf2db1a8f1ce51`; status
-`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Format/lint/typecheck, 177 unit,
+`76f06a8a59a1bb88ad140250faaf2db1a8f1ce51`; status saat validasi
+`LOCAL_VALIDATED`. Format/lint/typecheck, 177 unit,
 production build/budget, focused consent 8 unit + 2 browser, full browser 121
 pass/2 intentional skip, mobile 390x844, keyboard/Escape, WCAG, dan audit
-dependency nol advisory lulus. Production tetap S143 sampai guarded deployment
-diotorisasi dan live UAT empat cabang consent selesai.
+dependency nol advisory lulus. Source ini aktif melalui Studio S146
+`81e55adc`; live UAT empat cabang consent tetap residual sebelum
+`BUSINESS_READY`.
 
 ## Session completion dan privacy handoff
 
@@ -908,7 +918,7 @@ untuk release frontend ini.
 - panel mobile/desktop memakai target minimal 44 px, forced-colors,
   reduced-motion, tanpa overflow, dan tidak menutupi `Powered by SagaView`.
 
-`CONFIRMED` - candidate lokal S145:
+`CONFIRMED` - production S146:
 
 - Studio memakai credential dan fingerprint perangkat untuk endpoint Support
   Hub device-scoped; tenant, product `sagaview`, dan identitas actor diturunkan
@@ -917,13 +927,16 @@ untuk release frontend ini.
   menampilkan label `Bantuan` dan input mempunyai label aksesibel;
 - hanya metadata teknis allowlist yang dapat diteruskan. Folder foto, editor,
   export, credential, tenant browser, dan path lokal tidak dipindai/diunggah;
-- backend `181fb0d2` + `dedef195` dan Studio `f3f8cd0` sudah
-  `AI_EVAL_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED`; production tetap S143.
-- Studio S144 dan S145 sudah direkonsiliasi tanpa conflict pada kandidat S146
-  exact `02d2f71cb959f10e0a72aa60d15b9820b7c2c28b`. Gate gabungan 180 unit,
-  focused browser support+consent 5 pass/1 intentional skip, build/budget, dan
-  audit dependency lulus; status tetap `IMPLEMENTED_NOT_DEPLOYED`.
+- backend `1af885248f04d95960a015749152c784af33307e` dan Studio
+  `81e55adc170af0949245e3f381d881b716e25b0e` aktif sebagai release immutable
+  `20260808190040-1af8852` / `20260808190040-81e55ad`.
+- Gate hijau: backend 961/961, Studio 180/180, full browser 122 pass/3
+  intentional skip, build/budget/audit, backup/checksum/restore, candidate dan
+  rollback rehearsal, live rollback cycle, snapshot data, header/CORS/service/
+  journal, serta smoke device-negative 422.
+- Status `AI_EVAL_VALIDATED / INTEGRATION_VALIDATED / RELEASED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated perangkat nyata,
+  latency, error/timeout, dan cost tetap residual sebelum `AI_BUSINESS_READY`.
 
 ## Signature login dan watermark shell
 

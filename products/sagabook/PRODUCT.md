@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 8 Agustus 2026 16:15 WIB
+Updated: 8 Agustus 2026 19:15 WIB
 Evidence status: production + source verified
 
 ## Tujuan dokumen
@@ -16,9 +16,9 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
-- Source kumulatif S156 `04c9b6416fbe401a001f3fd7b83dad47c613e8e4`
-  aktif sebagai release immutable `20260808063729-04c9b64`; rollback
-  `20260806152606-0894df0` tersedia.
+- Source kumulatif S157 `c7f13487f33b8075ba7c84f05fc41daec6a622e7`
+  aktif sebagai release immutable `20260808115539-c7f1348`; rollback langsung
+  `20260808063729-04c9b64` tersedia.
 - Release kumulatif ini mempromosikan seluruh ancestor S131-S156, termasuk
   hardening auth/session, tenant/cabang, paket/background/Add-on/Resource,
   recovery availability/slot, expiry payment hold lintas tab, dan race aktual
@@ -38,14 +38,15 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   pilot; authenticated owner UAT tetap terpisah.
 - Subscription tenant tidak diaktifkan dan website booking yang sudah aktif
   tidak dinonaktifkan oleh release ini.
-- Guard scope/fallback Support Hub sudah termasuk source production, tetapi
-  promosi corpus/index/model AI yang lebih luas tetap
-  `AI_KNOWLEDGE_NOT_PROMOTED` dan bukan fine-tuning otomatis.
+- Perbaikan grounding Support Hub sekarang production: intent eksplisit baru
+  mengalahkan konteks lama, greeting mereset konteks, `caranya` bukan follow-up
+  mandiri, dan citation wajib mendukung intent. Model, prompt, provider, dan KB
+  tidak diganti; promosi corpus/index/model AI yang lebih luas tetap terpisah.
 - Label candidate pada bagian histori di bawah adalah status saat bukti itu
   dibuat. Source S98-S156 yang menjadi ancestor release aktif sudah aktif
   kumulatif; arah storefront lebar S94/S108 tetap deprecated dan tidak aktif.
 
-## Histori kandidat sebelum release S156
+## Histori kandidat sebelum release S157
 - Candidate Support Hub current-baseline source `dedef195` di atas S143
   `8fac4f68` memperbaiki pergantian konteks
   cabang ke voucher serta reset greeting. Intent eksplisit baru kini
@@ -54,8 +55,8 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   mengambil artikel fitur. Port current-baseline lulus combined 41/41 dengan
   3.394 assertion; source awal `dad3f5fb` mempertahankan bukti full backend,
   corpus, dan Playwright dua viewport. Status
-  `AI_EVAL_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; model,
-  prompt, KB, dan production tidak berubah.
+  `AI_EVAL_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED` saat bukti
+  dibuat; perbaikannya kini aktif kumulatif melalui source S157 `c7f13487`.
 - Candidate lokal S156 source
   `04c9b6416fbe401a001f3fd7b83dad47c613e8e4` menutup race aktual dua
   proses pada slot, tenant, resource, tanggal, dan jam yang sama. Transaksi

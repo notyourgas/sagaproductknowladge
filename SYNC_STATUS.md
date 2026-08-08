@@ -12,13 +12,13 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-08T18:12:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-08T19:15:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `7f74815176d42d240d4fe4c41a220972b39d5d54` |
-| Informasi terakhir disinkronkan | SagaView Studio S146 `02d2f71c` merekonsiliasi consent S144 dan Support Hub S145; local-validated dan production tetap S143. |
+| Baseline sebelum pembaruan | `4b6c6083661bb7fc38e85e72ec35f5f378421e3d` |
+| Informasi terakhir disinkronkan | SagaBook grounding `c7f13487` dan SagaView S146 backend `1af88524` + Studio `81e55adc` aktif sebagai immutable production release. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik source/runtime; rekonsiliasi Studio S144 dan S145 selesai. Full regression, immutable release gate, dan authenticated UAT masih residual. |
+| Konflik | Tidak ada konflik source/runtime. Authenticated owner/device/consent UAT, latency/cost, dan business readiness masih residual dan tidak disamakan dengan deployment. |
 | Error | Tidak ada; seluruh gate lokal dan knowledge validator wajib dijalankan sebelum commit. |
 
 ## File yang berubah pada sinkronisasi ini
@@ -63,6 +63,11 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `CHANGELOG.md`
 
 ## Sinkronisasi sebelumnya
+
+- SagaBook `c7f13487` / `20260808115539-c7f1348` dan SagaView S146 backend
+  `1af88524` / `20260808190040-1af8852` + Studio `81e55adc` /
+  `20260808190040-81e55ad` disinkronkan sebagai `PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`; rollback, service, smoke, dan data preservation hijau.
 
 - SagaView S144 Studio `76f06a8a` disinkronkan sebagai pilihan izin foto cepat
   `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S143.

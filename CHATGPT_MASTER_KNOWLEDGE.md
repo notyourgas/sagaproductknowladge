@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 8 Agustus 2026 14:38 WIB
+Evidence cut-off: 8 Agustus 2026 19:15 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -127,13 +127,14 @@ tidak berarti integrasi seluruh produk selesai. SagaView tetap local-first
 untuk foto, editor, recovery, dan export. Subscription activation tidak
 berubah.
 
-Candidate Support Hub SagaBook current-baseline `dedef195` di atas S143
-`8fac4f68` sudah local-validated untuk
-pergantian intent cabang -> voucher, greeting reset, dan citation-intent yang
-sesuai. Intent eksplisit baru mengalahkan konteks lama, `caranya` tidak cukup
-untuk dianggap follow-up, dan greeting tidak mengambil artikel fitur. Status
-tetap `AI_EVAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; jangan menyebut perubahan
-ini production sampai live smoke, monitoring, dan rollback pipeline AI lulus.
+Support Hub SagaBook source kumulatif
+`c7f13487f33b8075ba7c84f05fc41daec6a622e7` aktif sebagai release
+`20260808115539-c7f1348`, rollback `20260808063729-04c9b64`. Intent eksplisit
+baru mengalahkan konteks lama, `caranya` tidak cukup untuk dianggap follow-up,
+greeting mereset konteks, dan citation harus mendukung intent. Status app
+`PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; model, prompt, provider, dan KB
+tidak diganti. Authenticated UAT serta latency/cost tetap terpisah dari
+deployment dan business readiness.
 
 Candidate SagaBook Sprint 3 source
 `82a6f376998d8eb5778c6ccaac117a21a1ab8efd` belum production. Bila owner
@@ -636,9 +637,8 @@ customer memilih frame/foto, menyusun output, lalu export/print. Foto customer
 tetap berada di device studio.
 
 Status: `PRODUCTION_DEPLOYED` dan `PRODUCTION_ACTIVATED`; business readiness
-mass-scale `NEEDS CONFIRMATION`.
-Candidate S144 `76f06a8a` menyederhanakan consent akhir sesi, tetapi berstatus
-`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S143.
+mass-scale `NEEDS CONFIRMATION`. Consent cepat S144 dan bantuan AI
+device-scoped aktif kumulatif melalui S146.
 Harga bulanan: Growth Rp200.000, Pro Rp500.000.
 Growth mencakup 1 device, 50 frame, 3 preset, offline 24 jam, dan 2 GB aset
 frame cloud. Pro mencakup 4 device, 100 frame, 10 preset, offline 168 jam, 10 GB
@@ -669,22 +669,20 @@ ruang aman mobile, dan tetap terbaca pada forced-colors. Navigasi mobile
 berikutnya/sebelumnya membawa target sampai terlihat penuh dan menghormati
 reduced-motion. Dependency advisory backend dan Studio sudah dipatch; audit
 Composer/npm production melaporkan nol vulnerability. Launcher bantuan
-perangkat tetap tersedia saat
-Support Hub online belum aktif dan menyediakan diagnostik ter-redact serta
-format laporan aman; endpoint online hanya dicoba atas aksi operator. Remote
-AI/ticket masih residual 404, tetapi kegagalan tidak menghilangkan fallback.
-Candidate lokal S145 backend `181fb0d2` + `dedef195` dan Studio `f3f8cd0`
-menutup residual tersebut dengan endpoint Support Hub yang diautentikasi
-credential+fingerprint perangkat. Tenant/product/actor ditentukan server-side;
-first-use bootstrap dapat langsung menerima pertanyaan. Folder foto, editor,
-dan export tetap local-first dan tidak dipindai/diunggah. Status
-`AI_EVAL_VALIDATED / INTEGRATION_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
-production tetap S143 sampai gate immutable dan rekonsiliasi S144 lulus.
-Rekonsiliasi Studio S144+S145 kemudian selesai pada kandidat S146 exact
-`02d2f71cb959f10e0a72aa60d15b9820b7c2c28b`. Gate gabungan 180 unit,
-focused Playwright support+consent 5 pass/1 intentional skip, build/budget, dan
-audit dependency lulus. Production masih tetap S143 sampai full regression,
-immutable release gate, dan authenticated UAT selesai.
+perangkat menyediakan diagnostik ter-redact dan format laporan aman saat
+Support Hub gagal. S146 mengaktifkan endpoint online yang diautentikasi
+credential+fingerprint perangkat; tenant/product/actor ditentukan server-side
+dan first-use bootstrap langsung menerima pertanyaan. Folder foto, editor, dan
+export tetap local-first dan tidak dipindai/diunggah. Backend
+`1af885248f04d95960a015749152c784af33307e` / release
+`20260808190040-1af8852` serta Studio
+`81e55adc170af0949245e3f381d881b716e25b0e` / release
+`20260808190040-81e55ad` aktif dengan rollback S143. Gate final: backend
+961/961, Studio 180/180, browser 122 pass/3 intentional skip, build/audit,
+backup/restore, rehearsal, live rollback, snapshot data, header/CORS/service/
+journal, dan device-negative 422. Status `AI_EVAL_VALIDATED /
+INTEGRATION_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+authenticated device/consent UAT dan latency/cost masih residual.
 Session, Frames, dan Install App tidak lagi memicu
 hydration mismatch karena state online/PWA/recovery memakai snapshot awal
 SSR/client yang deterministik. Owner Console lintas browser,
@@ -978,15 +976,16 @@ service/journal/header/public smoke, dan marker S143/0.20.6 lulus. Status
 `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; jangan sebut `BUSINESS_READY`
 sebelum authenticated UAT galeri panjang dan kombinasi harga paket nyata.
 
-S144 mengikuti `DEC-065`, tetapi belum production. Review menampilkan empat
+S144 mengikuti `DEC-065` dan aktif kumulatif melalui S146. Review menampilkan empat
 tindakan izin foto: semua foto, foto yang sudah dipilih, pilihan manual beberapa
 foto, atau tidak mengizinkan. Tiga tindakan selain pilihan manual langsung
 memakai persistence consent dan workflow export/finish existing; galeri baru
 dimuat untuk pilihan manual. Tidak ada default, policy snapshot dan local-first
 boundary tidak berubah. Studio source
-`76f06a8a59a1bb88ad140250faaf2db1a8f1ce51` berstatus
-`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S143 dan jangan
-menyebut S144 tersedia sebelum guarded deployment serta live UAT selesai.
+`76f06a8a59a1bb88ad140250faaf2db1a8f1ce51` aktif melalui Studio
+`81e55adc170af0949245e3f381d881b716e25b0e` / release
+`20260808190040-81e55ad`. Live UAT empat pilihan consent tetap residual sebelum
+`BUSINESS_READY`.
 
 Implementasi rotate lama yang menukar W/H 90 derajat telah `DEPRECATED` oleh
 koreksi founder `DEC-036`. Perilaku production yang aktif adalah

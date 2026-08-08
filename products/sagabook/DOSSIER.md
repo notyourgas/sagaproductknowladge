@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 8 Agustus 2026 13:43 WIB
+- Updated: 8 Agustus 2026 19:15 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED` untuk workflow yang tercantum di
   [PRODUCT](PRODUCT.md)
@@ -15,8 +15,8 @@ dalam satu dokumen public-safe.
 - Availability empty-response recovery, manual-transfer initial-load recovery,
   dan Payment Monitor action recovery: `PRODUCTION_DEPLOYED /
   PRODUCTION_ACTIVATED`
-- Source kumulatif aktif: `04c9b6416fbe401a001f3fd7b83dad47c613e8e4`,
-  release `20260808063729-04c9b64`, rollback `20260806152606-0894df0`
+- Source kumulatif aktif: `c7f13487f33b8075ba7c84f05fc41daec6a622e7`,
+  release `20260808115539-c7f1348`, rollback `20260808063729-04c9b64`
 - S131-S156 aktif kumulatif. Gate fresh backend 993/993, browser auth,
   tenant/cabang, Add-on, Resource, storefront/slot, race 5/5, build/design,
   dependency audit, backup/restore exact-SHA, manifest, DB audit 100, service,
@@ -28,9 +28,16 @@ dalam satu dokumen public-safe.
   subscription tidak diubah.
 - Label candidate pada histori menunjukkan status saat bukti dibuat. Source
   S98-S156 yang menjadi ancestor release aktif sudah production kumulatif;
-  guard scope/fallback Support Hub aktif, tetapi corpus/index/model AI tetap
-  `AI_KNOWLEDGE_NOT_PROMOTED`; S94/S108 yang
+  grounding intent-switch/reset greeting Support Hub aktif, tetapi promosi
+  corpus/index/model AI yang lebih luas tetap terpisah; S94/S108 yang
   memperlebar storefront tetap deprecated dan tidak aktif.
+
+- Support Hub production sekarang memprioritaskan intent eksplisit baru,
+  mereset konteks saat greeting, tidak menganggap kata `caranya` sebagai
+  follow-up mandiri, dan menolak citation yang tidak mendukung intent. Gate
+  release mencakup 996/996 backend, 47/47 focused support, build, audit
+  dependency, backup/restore, public smoke, service health, dan rollback.
+  Model, prompt, provider, dan KB tidak diubah oleh release ini.
 
 ### Histori kandidat sebelum release S156
 - Candidate S156 `04c9b641` membuktikan race slot melalui dua proses PHP

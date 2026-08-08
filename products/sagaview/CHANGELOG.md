@@ -1,5 +1,24 @@
 # SagaView Changelog
 
+## 2026-08-08 - S146 consent dan bantuan AI immutable production release
+
+- Klasifikasi `CONFIRMED`; backend
+  `1af885248f04d95960a015749152c784af33307e` aktif sebagai release
+  `20260808190040-1af8852`, dan Studio
+  `81e55adc170af0949245e3f381d881b716e25b0e` sebagai release
+  `20260808190040-81e55ad`. Rollback langsung tetap S143 backend/Studio.
+- Consent S144 dan Support Hub S145/S146 kini aktif bersama. Endpoint bantuan
+  memerlukan credential+fingerprint perangkat, menurunkan tenant/product/actor
+  server-side, dan tetap fail-soft tanpa memindai atau mengunggah foto, folder,
+  editor, atau export.
+- Gate hijau: backend 961/961 (11.282 assertion), Studio 180/180, browser 122
+  pass/3 intentional skip, build/budget/audit, backup terenkripsi/checksum/
+  restore, rehearsal, live rollback cycle, data/payment/subscription snapshot,
+  service/header/CORS/journal, dan smoke device-negative 422.
+- Status `AI_EVAL_VALIDATED / INTEGRATION_VALIDATED / RELEASED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated device/consent UAT
+  dan latency/cost tetap residual sebelum `BUSINESS_READY`.
+
 ## Tujuan
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.

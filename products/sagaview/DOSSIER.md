@@ -38,7 +38,9 @@ SagaView berdasarkan runtime production aktif.
 - S141 manajemen banyak frame dengan satu simpan:
   `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
 - S144 pilihan izin foto cepat:
-  `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`
+  `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` melalui S146
+- S146 bantuan AI device-scoped dan consent gabungan:
+  `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
 - Acceptance integrasi feature-by-feature: ledger dimulai konservatif dan
   belum membuktikan coverage penuh; lihat
   [Feature Coverage Ledger](FEATURE_COVERAGE_LEDGER.md).
@@ -120,13 +122,14 @@ API, permission, atau penyimpanan foto lokal. Source Studio
 `3b66f8d5df3e34aba11c4eab2619cfe44efd06d7` aktif sebagai release
 `20260806050546-3b66f8d`; rollback `20260805155605-3b66f8d` tersedia.
 
-Candidate S144 mengubah consent customer pada Review menjadi pop-up empat
+S144 yang kini aktif kumulatif melalui S146 mengubah consent customer pada Review menjadi pop-up empat
 tindakan. Izinkan semua, foto yang sudah dipilih, dan jangan gunakan foto
 langsung memakai penyimpanan consent serta penyelesaian sesi existing; pilihan
 beberapa foto saja yang memuat wizard galeri. Tidak ada default, policy snapshot
 dan local-first boundary tetap sama, serta kegagalan simpan tetap berada di
-dialog untuk retry. Source `76f06a8a59a1bb88ad140250faaf2db1a8f1ce51`
-berstatus `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S143.
+dialog untuk retry. Source ancestor `76f06a8a59a1bb88ad140250faaf2db1a8f1ce51`
+aktif melalui Studio `81e55adc` / release `20260808190040-81e55ad`; UAT empat
+pilihan consent nyata tetap residual sebelum `BUSINESS_READY`.
 
 Pemilihan frame production memakai preview, selected state, jumlah cetakan,
 serta satu aksi `Terapkan & lanjut`. Editor dan Review kini menjadi alur
@@ -504,16 +507,21 @@ file. Endpoint online baru dicoba setelah aksi operator dan kegagalan 404 tidak
 lagi menghilangkan fallback. Panel touch-safe, aksesibel, bebas overflow, dan
 tidak menutupi signature produk pada mobile/desktop.
 
-Candidate lokal S145 menyambungkan bantuan online melalui autentikasi perangkat,
+Production S146 menyambungkan bantuan online melalui autentikasi perangkat,
 bukan sesi admin SagaBook. Credential dan fingerprint diverifikasi backend;
 tenant, product, dan actor ditentukan server-side sebelum gateway bertanda
 tangan memanggil Support Hub pusat. First-use bootstrap tanpa conversation kini
 tetap membuka composer. Launcher mobile berlabel `Bantuan`, input berlabel
 aksesibel, dan fallback diagnostik lokal tetap tersedia. Boundary local-first
 tidak berubah: folder foto, editor, serta export tidak dipindai atau diunggah.
-Backend `181fb0d2` + `dedef195` dan Studio `f3f8cd0` lulus backend 41/41,
-Studio 174/174, Playwright 3/3 dua viewport, accessibility/build/budget, serta
-audit dependency nol. Status `IMPLEMENTED_NOT_DEPLOYED`; production tetap S143.
+Backend `1af885248f04d95960a015749152c784af33307e` dan Studio
+`81e55adc170af0949245e3f381d881b716e25b0e` aktif sebagai release
+`20260808190040-1af8852` dan `20260808190040-81e55ad`. Gate final meliputi
+backend 961/961, Studio 180/180, full browser 122 pass/3 intentional skip,
+accessibility/build/budget/audit, backup/restore, rehearsal, live rollback,
+snapshot data, service/header/CORS/journal, dan smoke device-negative 422.
+Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated device UAT
+dan metrik latency/cost tetap residual sebelum `BUSINESS_READY`.
 
 Changelog Studio candidate sekarang mengutamakan release terbaru, menyediakan
 pencarian, filter status, enam batch versi, satu detail terbuka, empty/reset

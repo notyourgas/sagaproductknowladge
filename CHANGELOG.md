@@ -12,6 +12,23 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-08
 
+### SagaBook grounding dan SagaView S146 immutable production release
+
+- Ringkasan: grounding pergantian intent/reset greeting SagaBook serta consent
+  dan Support Hub device-scoped SagaView kini aktif di production.
+- Klasifikasi `CONFIRMED`; SagaBook source/release `c7f13487` /
+  `20260808115539-c7f1348`; SagaView backend `1af88524` /
+  `20260808190040-1af8852`; Studio `81e55adc` /
+  `20260808190040-81e55ad`. Rollback langsung tersedia.
+- Gate: full/focused backend, full browser, build/audit, backup terenkripsi dan
+  disposable restore, immutable rehearsal, live rollback, snapshot data,
+  service/header/CORS/journal, public smoke, serta device-negative 422 hijau.
+- Production berubah: ya. Model/prompt/provider/KB, foto/folder/editor/export,
+  payment/subscription, dan data customer tidak diubah. Authenticated UAT,
+  latency/cost, activation bisnis, dan `BUSINESS_READY` tetap terpisah.
+- File knowledge: product, dossier, changelog, ledger SagaBook/SagaView,
+  portfolio/root changelog, master, gaps, dan sync status.
+
 ### SagaView S146 combined consent and device support candidate
 
 - Source Studio exact `02d2f71c` merekonsiliasi S144+S145 tanpa conflict.

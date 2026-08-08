@@ -53,17 +53,18 @@ ketika keputusan atau release baru menutup gap.
   dan data-retention masih perlu coverage bertahap. Fine-tuning baru
   membutuhkan keputusan founder terpisah.
 
-- `TODO`: candidate grounding current-baseline `dedef195` sudah menutup salah routing
-  cabang -> voucher, greeting reset, dan surface-only match secara lokal.
-  Promotion tetap menunggu authenticated live smoke, latency p50/p95,
-  error/timeout, token/cost bila tersedia, serta rollback pipeline AI.
+- `TODO`: grounding salah routing cabang -> voucher, greeting reset, dan
+  surface-only match sudah production melalui SagaBook `c7f13487` /
+  `20260808115539-c7f1348`; rollback aplikasi lulus. Residual hanya authenticated
+  owner UAT, latency p50/p95, error/timeout, token/cost bila tersedia, serta
+  evaluasi terpisah bila model/prompt/KB kelak dipromosikan.
 
-- `TODO`: adapter SagaView device-authenticated sudah local-validated pada
-  backend `181fb0d2` dan kandidat Studio gabungan S146 `02d2f71c`.
-  Rekonsiliasi S144+S145 selesai; promotion masih menunggu full browser
-  regression, immutable staging, backup/restore, live smoke authenticated,
-  monitoring, dan rollback. Production tetap S143; boundary foto/editor/export
-  tetap local-first.
+- `TODO`: adapter SagaView device-authenticated sudah production pada backend
+  `1af88524` / `20260808190040-1af8852` dan Studio `81e55adc` /
+  `20260808190040-81e55ad`. Full browser, immutable backup/restore, rehearsal,
+  live rollback, negative/CORS smoke, monitoring, dan data-preservation lulus.
+  Residual: authenticated device UAT, empat pilihan consent nyata, latency/
+  error/cost, dan human handoff; boundary foto/editor/export tetap local-first.
 
 - `TODO`: kronologi validasi di bawah mempertahankan label candidate pada saat
   masing-masing bukti dibuat; seluruh ancestor S131-S156 kini aktif kumulatif
