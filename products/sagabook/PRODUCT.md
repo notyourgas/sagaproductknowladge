@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 8 Agustus 2026 07:19 WIB
+Updated: 8 Agustus 2026 08:18 WIB
 Evidence status: production + source verified
 
 ## Tujuan dokumen
@@ -80,6 +80,15 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   IMPLEMENTED_NOT_DEPLOYED`; S6 tetap `IN_PROGRESS` sampai stale-write
   resource dan combined exit selesai. Production dan aktivasi subscription
   tidak berubah.
+- Candidate lokal S152 source
+  `872fb8d2f406f2c9ee0712992f1e25874b2259e0` menutup stale-write
+  resource. Editor kini merender konflik 409 aktual, memuat versi server lewat
+  GET, menjaga draft jika jaringan gagal, dan mencegah POST stale serta
+  double-submit. Backend mempertahankan jadwal, relasi, lock version, dan audit;
+  permission/tenant-negative lulus pada database disposable. Status irisan
+  `UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; S6 tetap `IN_PROGRESS` hanya sampai combined exit
+  gate. Production dan aktivasi subscription tidak berubah.
 
 ## Ringkasan
 

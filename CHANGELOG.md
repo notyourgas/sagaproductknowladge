@@ -12,6 +12,25 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-08
 
+### SagaBook Sprint 6 resource stale-write recovery candidate
+
+- Ringkasan: editor studio/resource kini menjelaskan konflik 409, memuat versi
+  server terbaru lewat GET, mempertahankan draft saat jaringan gagal, dan
+  mencegah POST stale maupun double-submit selama recovery.
+- Klasifikasi: `CONFIRMED`; source
+  `872fb8d2f406f2c9ee0712992f1e25874b2259e0`; status `UIUX_VALIDATED /
+  INTEGRATION_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; S6
+  tetap `IN_PROGRESS` sampai combined exit gate dijalankan.
+- Gate: focused backend 1/1 (9), kontrak/role/error 57/57 (509), full backend
+  991/991 (11.309), browser regression 12 pass/2 intentional skip, build,
+  typecheck, design 26/0, npm/Composer/OSV nol advisory, serta AI SagaBook
+  44/44 (3.440) hijau. Packagist sempat timeout, tetapi cache Composer dan OSV
+  fresh tidak menemukan advisory.
+- Production berubah: tidak. Release aktif tetap `20260806152606-0894df0`;
+  combined exit S6 dan rollback/previous symlink masih residual.
+- File knowledge: product, dossier, changelog, ledger, master knowledge, gaps,
+  portfolio/root changelog, dan sync status.
+
 ### SagaBook Sprint 6 resource delete/dependency recovery candidate
 
 - Ringkasan: penghapusan resource kini gagal aman dengan 409 terstruktur saat

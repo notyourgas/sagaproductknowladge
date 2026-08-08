@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-08 - SagaBook Sprint 6 resource stale-write recovery candidate
+
+- Source `872fb8d2f406f2c9ee0712992f1e25874b2259e0` menutup gap konflik
+  stale-write editor studio/resource tanpa mengubah production.
+- UI merender 409 aktual, recovery memuat versi server lewat GET, kegagalan
+  jaringan menjaga draft, dan ref sinkron mencegah POST stale/double-submit.
+  Backend mempertahankan versi remote, relasi kalender, audit, capability, dan
+  tenant isolation pada database disposable.
+- Full backend 991/991, kontrak/role/error 57/57, browser regression 12 pass/2
+  intentional skip, build/typecheck/design, audit dependency, dan AI SagaBook
+  regression hijau.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; S6 `IN_PROGRESS` hanya
+  menunggu combined exit gate. Release aktif tetap `20260806152606-0894df0`.
+
 ## 2026-08-08 - SagaBook Sprint 6 resource delete recovery candidate
 
 - Source `ac11487f046c8acae328cba89975035b888d00de` menutup gap delete

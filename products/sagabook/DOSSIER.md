@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 8 Agustus 2026 07:19 WIB
+- Updated: 8 Agustus 2026 08:18 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED` untuk workflow yang tercantum di
   [PRODUCT](PRODUCT.md)
@@ -410,6 +410,21 @@ npm/Composer/OSV nol advisory, serta AI 44/44 (3.440) hijau. Status
 `UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
 IMPLEMENTED_NOT_DEPLOYED`; production tetap `20260806152606-0894df0`,
 sedangkan stale-write resource dan combined exit S6 masih residual.
+
+Stale-write recovery resource ditutup lokal pada source
+`872fb8d2f406f2c9ee0712992f1e25874b2259e0`. Before: backend sudah
+menolak expected lock version lama, tetapi editor hanya merender error teknis.
+After: 409 menjelaskan konflik dan memberi aksi `Muat data terbaru`; recovery
+memakai GET aktual, menjaga draft pada offline/error, mengganti baseline hanya
+setelah response sukses, serta memblok POST stale dan double-submit. Remote
+capacity, buffer, mode, linked resource, dan lock version tidak tertimpa dan
+tidak menghasilkan audit sukses palsu. Focused backend 1/1 (9),
+kontrak/role/error 57/57 (509), full backend 991/991 (11.309), browser
+regression 12 pass/2 intentional skip, build/typecheck/design 26/0,
+npm/Composer/OSV nol advisory, serta AI 44/44 (3.440) hijau. Status
+`UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; production tetap `20260806152606-0894df0` dan S6
+hanya menunggu combined exit gate.
 
 Tenant/cabang S124 pada source
 `f6988cb945c5ca224015d7fecbc94e81c535fc60` aktif sebagai release

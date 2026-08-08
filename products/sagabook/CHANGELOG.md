@@ -4,6 +4,30 @@
 
 Mencatat perubahan material SagaBook dengan provenance public-safe.
 
+## 2026-08-08 - Sprint 6 resource stale-write recovery candidate
+
+- Klasifikasi `CONFIRMED`; source
+  `872fb8d2f406f2c9ee0712992f1e25874b2259e0` pada branch
+  `codex/s152-sagabook-resource-stale-recovery`.
+- Before: backend sudah menolak expected lock version lama dengan 409, tetapi
+  editor hanya menampilkan error teknis dan tidak memiliki pemulihan aman.
+  After: UI menjelaskan konflik, menawarkan `Muat data terbaru`, menjaga draft
+  saat GET gagal, lalu mengganti baseline hanya dari response server aktual.
+- UI -> frontend -> stale `POST /api/admin/upsertResourceFn` -> 409 -> recovery
+  `GET /api/admin/getDashboardData` -> response terbaru -> edit final -> satu
+  POST -> transaction/tenant row lock -> resources/activity_logs -> UI lulus.
+- Remote capacity, buffer, mode, linked resource, dan lock version tetap utuh
+  pada konflik; tidak ada audit sukses palsu. Failure/retry, double-submit,
+  keyboard/focus, forced-colors, reduced-motion, target 44 piksel, tanpa
+  overflow, permission, dan tenant-negative lulus.
+- Focused backend 1/1 (9), kontrak/role/error 57/57 (509), full backend 991/991
+  (11.309), browser regression 12 pass/2 intentional skip, build/typecheck,
+  design 26/0, npm/Composer/OSV nol advisory, dan AI 44/44 (3.440) hijau.
+- Status `UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; S6 tetap `IN_PROGRESS` sampai combined exit gate.
+  Production tetap `20260806152606-0894df0`; rollback/previous symlink tetap
+  residual S21.
+
 ## 2026-08-08 - Sprint 6 resource delete/dependency recovery candidate
 
 - Klasifikasi `CONFIRMED`; source

@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 8 Agustus 2026 05:28 WIB
+Evidence cut-off: 8 Agustus 2026 08:18 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -261,6 +261,17 @@ dan target tenant lain 404 tidak membocorkan dependensi. Status irisan
 `UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
 IMPLEMENTED_NOT_DEPLOYED`; S6 tetap `IN_PROGRESS` karena stale-write resource
 dan combined exit belum selesai. Production tetap release
+`20260806152606-0894df0`; jangan menyebut candidate ini production atau S6
+selesai.
+
+Candidate SagaBook S152 source
+`872fb8d2f406f2c9ee0712992f1e25874b2259e0` menutup stale-write
+resource secara lokal. Konflik 409 kini memiliki recovery GET versi server;
+draft tetap aman jika jaringan gagal, POST stale/double-submit diblok, dan
+versi remote beserta relasi kalender tidak tertimpa atau menghasilkan audit
+sukses palsu. Status irisan `UIUX_VALIDATED / INTEGRATION_VALIDATED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; S6 masih `IN_PROGRESS` hanya
+sampai combined exit gate. Production tetap release
 `20260806152606-0894df0`; jangan menyebut candidate ini production atau S6
 selesai.
 

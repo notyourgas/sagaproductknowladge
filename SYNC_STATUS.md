@@ -12,14 +12,14 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-08T07:19:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-08T08:18:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `59e377f0d1b33c5259351e47c44934a420442bb6` |
-| Informasi terakhir disinkronkan | SagaBook S151 source `ac11487f`: delete/dependency recovery resource, 409 terstruktur, recovery UI, no-dangling-link, retry/double-submit, Staff 403, dan tenant-negative lulus; irisan `LOCAL_VALIDATED`, S6 tetap `IN_PROGRESS`, dan production tetap `20260806152606-0894df0`. |
+| Baseline sebelum pembaruan | `9a43f72ec3abbbc3cc92624233bc38fc43a8692e` |
+| Informasi terakhir disinkronkan | SagaBook S152 source `872fb8d2`: stale-write recovery resource, 409 terstruktur, GET versi server, offline/retry, draft preservation, double-submit guard, integritas relasi/audit, permission, dan tenant-negative lulus; irisan `LOCAL_VALIDATED`, S6 hanya menunggu combined exit, dan production tetap `20260806152606-0894df0`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
 | Konflik | Tidak ada. Kontrak storefront mobile-only, subscription skip, urutan sprint, SagaView local-first, dan product boundary tetap konsisten. |
-| Error | Tidak ada advisory npm/Composer/OSV. Production tidak diubah. Stale-write resource, combined exit S6, serta rollback/previous symlink SagaBook tetap residual sebelum S21. |
+| Error | Tidak ada advisory npm/Composer/OSV; Packagist sempat timeout dan Composer memakai cache, sedangkan OSV fresh hijau. Production tidak diubah. Combined exit S6 serta rollback/previous symlink SagaBook tetap residual sebelum S21. |
 
 ## File yang berubah pada sinkronisasi ini
 
@@ -122,8 +122,11 @@ resource melalui response API aktual, retry/409/422 recovery, one-request
 double-submit, enum validation, audit, Staff 403, dan tenant-negative. Candidate
 S151 `ac11487f` menutup delete/dependency recovery resource melalui 409
 terstruktur, recovery UI, transaction/tenant row lock, no-dangling-link,
-retry/double-submit, Staff 403, dan tenant-negative. S6 keseluruhan tetap
-`IN_PROGRESS` karena stale-write resource dan combined exit masih residual.
+retry/double-submit, Staff 403, dan tenant-negative. Candidate S152 `872fb8d2`
+menutup stale-write recovery resource dengan recovery GET aktual,
+offline/retry, draft preservation, double-submit guard, dan integritas
+relasi/audit/tenant. S6 keseluruhan tetap `IN_PROGRESS` karena combined exit
+gate masih residual.
 Recovery response availability kosong, initial-load manual transfer, dan aksi Payment Monitor
 S128-S130 sudah production. Residual payment/report adalah QRIS/provider nyata,
 pagination/filter/export, reconciliation provider, stale multi-tab, dan
@@ -133,10 +136,9 @@ sudah `LOCAL_VALIDATED`; Sprint 2 exit gate diterima lokal. Source belum
 production dan deploy tetap ditahan sampai S21. Status
 `INTEGRATION_VALIDATED` hanya diberikan per irisan setelah happy path, failure/retry,
 permission/tenant-negative, dan data integrity fitur terkait memiliki bukti
-fresh. Prioritas berikutnya: resource stale-write recovery, combined exit S6,
-lalu availability/slot
-concurrency S7-S8. SagaView tidak menerima implementasi fitur baru pada fase
-SagaBook ini.
+fresh. Prioritas berikutnya: combined exit S6, availability/slot concurrency
+S7-S8, lalu storefront/public booking/recovery S9-S11. SagaView tidak menerima
+implementasi fitur baru pada fase SagaBook ini.
 
 Guard scope/fallback AI S127 sudah termasuk source production, tetapi
 corpus/index/model AI tetap `AI_KNOWLEDGE_NOT_PROMOTED`. Residual sebelum

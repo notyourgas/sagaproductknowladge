@@ -8,7 +8,7 @@ diubah menjadi klaim publik sebelum ditutup dengan bukti atau keputusan owner.
 
 ## Konteks
 
-Daftar ini berlaku pada evidence cut-off 8 Agustus 2026 07:19 WIB dan harus diperbarui
+Daftar ini berlaku pada evidence cut-off 8 Agustus 2026 08:18 WIB dan harus diperbarui
 ketika keputusan atau release baru menutup gap.
 
 ## Cara memakai
@@ -100,8 +100,11 @@ ketika keputusan atau release baru menutup gap.
   dependency/delete recovery resource dengan 409 terstruktur, hitungan dan
   recovery UI public-safe, perlindungan relasi resource tertaut, retry aman,
   no-success-audit pada failure, Staff 403, serta foreign tenant 404 tanpa leak.
-  Residual resource adalah stale-write recovery serta combined exit S6. npm,
-  Composer, dan OSV audit fresh nol advisory. Health SagaBook read-only hijau,
+  Candidate S152 `872fb8d2` menutup stale-write recovery resource dengan 409
+  terstruktur, recovery GET aktual, offline/retry, draft preservation,
+  double-submit guard, serta integritas relasi/audit/tenant. Residual S6 kini
+  hanya combined exit gate. npm, Composer, dan OSV audit fresh nol advisory.
+  Health SagaBook read-only hijau,
   tetapi
   rollback/previous symlink production tidak ada dan wajib dipulihkan sebelum
   release immutable S21.
