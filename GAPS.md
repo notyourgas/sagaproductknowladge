@@ -8,7 +8,7 @@ diubah menjadi klaim publik sebelum ditutup dengan bukti atau keputusan owner.
 
 ## Konteks
 
-Daftar ini berlaku pada evidence cut-off 8 Agustus 2026 16:15 WIB dan harus diperbarui
+Daftar ini berlaku pada evidence cut-off 8 Agustus 2026 17:01 WIB dan harus diperbarui
 ketika keputusan atau release baru menutup gap.
 
 ## Cara memakai
@@ -53,11 +53,16 @@ ketika keputusan atau release baru menutup gap.
   dan data-retention masih perlu coverage bertahap. Fine-tuning baru
   membutuhkan keputusan founder terpisah.
 
-- `TODO`: candidate grounding `dad3f5fb` sudah menutup salah routing
+- `TODO`: candidate grounding current-baseline `dedef195` sudah menutup salah routing
   cabang -> voucher, greeting reset, dan surface-only match secara lokal.
   Promotion tetap menunggu authenticated live smoke, latency p50/p95,
-  error/timeout, token/cost bila tersedia, rollback pipeline AI, serta adapter
-  SagaView yang authenticated dan tenant/device scoped.
+  error/timeout, token/cost bila tersedia, serta rollback pipeline AI.
+
+- `TODO`: adapter SagaView device-authenticated sudah local-validated pada
+  backend `181fb0d2` dan Studio `f3f8cd0`. Promotion menunggu rekonsiliasi
+  candidate Studio S144, immutable staging, backup/restore, live smoke
+  authenticated, monitoring, dan rollback. Production tetap S143; boundary
+  foto/editor/export tetap local-first.
 
 - `TODO`: kronologi validasi di bawah mempertahankan label candidate pada saat
   masing-masing bukti dibuat; seluruh ancestor S131-S156 kini aktif kumulatif

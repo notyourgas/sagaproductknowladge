@@ -127,7 +127,8 @@ tidak berarti integrasi seluruh produk selesai. SagaView tetap local-first
 untuk foto, editor, recovery, dan export. Subscription activation tidak
 berubah.
 
-Candidate Support Hub SagaBook source `dad3f5fb` sudah local-validated untuk
+Candidate Support Hub SagaBook current-baseline `dedef195` di atas S143
+`8fac4f68` sudah local-validated untuk
 pergantian intent cabang -> voucher, greeting reset, dan citation-intent yang
 sesuai. Intent eksplisit baru mengalahkan konteks lama, `caranya` tidak cukup
 untuk dianggap follow-up, dan greeting tidak mengambil artikel fitur. Status
@@ -672,6 +673,13 @@ perangkat tetap tersedia saat
 Support Hub online belum aktif dan menyediakan diagnostik ter-redact serta
 format laporan aman; endpoint online hanya dicoba atas aksi operator. Remote
 AI/ticket masih residual 404, tetapi kegagalan tidak menghilangkan fallback.
+Candidate lokal S145 backend `181fb0d2` + `dedef195` dan Studio `f3f8cd0`
+menutup residual tersebut dengan endpoint Support Hub yang diautentikasi
+credential+fingerprint perangkat. Tenant/product/actor ditentukan server-side;
+first-use bootstrap dapat langsung menerima pertanyaan. Folder foto, editor,
+dan export tetap local-first dan tidak dipindai/diunggah. Status
+`AI_EVAL_VALIDATED / INTEGRATION_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+production tetap S143 sampai gate immutable dan rekonsiliasi S144 lulus.
 Session, Frames, dan Install App tidak lagi memicu
 hydration mismatch karena state online/PWA/recovery memakai snapshot awal
 SSR/client yang deterministik. Owner Console lintas browser,

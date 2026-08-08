@@ -908,6 +908,19 @@ untuk release frontend ini.
 - panel mobile/desktop memakai target minimal 44 px, forced-colors,
   reduced-motion, tanpa overflow, dan tidak menutupi `Powered by SagaView`.
 
+`CONFIRMED` - candidate lokal S145:
+
+- Studio memakai credential dan fingerprint perangkat untuk endpoint Support
+  Hub device-scoped; tenant, product `sagaview`, dan identitas actor diturunkan
+  server-side, bukan dari browser;
+- first-use bootstrap tanpa percakapan tetap membuka composer; launcher mobile
+  menampilkan label `Bantuan` dan input mempunyai label aksesibel;
+- hanya metadata teknis allowlist yang dapat diteruskan. Folder foto, editor,
+  export, credential, tenant browser, dan path lokal tidak dipindai/diunggah;
+- backend `181fb0d2` + `dedef195` dan Studio `f3f8cd0` sudah
+  `AI_EVAL_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap S143.
+
 ## Signature login dan watermark shell
 
 `CONFIRMED` - production:

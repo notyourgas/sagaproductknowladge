@@ -1,5 +1,20 @@
 # SagaBook Changelog
 
+## 2026-08-08 - Support Hub grounding dipindahkan ke baseline S143
+
+- Klasifikasi `CONFIRMED` melalui exact source dan test lokal. Perbaikan
+  intent-switch dari candidate awal dipindahkan ke source `dedef195` di atas
+  baseline production S143 `8fac4f68`, pada branch
+  `codex/s145-sagaview-chatbot-support` yang sudah dipush.
+- Intent eksplisit tetap mengalahkan konteks lama, greeting mereset konteks,
+  `caranya` bukan follow-up mandiri, dan citation harus mendukung intent.
+- Combined Support Hub + device support lulus 41/41 dengan 3.394 assertion;
+  Composer audit nol advisory. Prompt, model, KB, schema, data customer, dan
+  production tidak berubah.
+- Status `AI_EVAL_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; live smoke authenticated, latency/error,
+  monitoring, dan rollback pipeline AI masih menjadi gate promotion.
+
 ## 2026-08-08 - Support Hub intent-switch grounding candidate
 
 - Klasifikasi `CONFIRMED`; source

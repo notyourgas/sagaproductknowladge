@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-08 - SagaView S145 bantuan AI device-authenticated candidate
+
+- Backend `181fb0d2` + grounding current-baseline `dedef195` dan Studio
+  `f3f8cd0` menyambungkan launcher SagaView ke Support Hub pusat memakai
+  credential+fingerprint perangkat; tenant/product/user tidak dipercaya dari
+  browser.
+- First-use bootstrap tanpa percakapan kini tetap membuka composer. Launcher
+  mobile berlabel `Bantuan`, input aksesibel, dan fallback lokal tetap aman.
+- Backend 41/41 (3.394), Studio 174/174, Playwright 3/3 pada 390x844 dan
+  1440x900, Axe/build/budget, serta audit dependency nol advisory lulus.
+- Status `AI_EVAL_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap S143. Tidak ada foto, folder,
+  editor, export, subscription, payment, atau data customer yang diunggah.
+
 ## 2026-08-08 - SagaBook Support Hub grounding candidate
 
 - Source `dad3f5fb1b4af7a0b45aed99ead3f164d9b70b1d` memastikan pertanyaan

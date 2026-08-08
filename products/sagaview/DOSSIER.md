@@ -504,6 +504,17 @@ file. Endpoint online baru dicoba setelah aksi operator dan kegagalan 404 tidak
 lagi menghilangkan fallback. Panel touch-safe, aksesibel, bebas overflow, dan
 tidak menutupi signature produk pada mobile/desktop.
 
+Candidate lokal S145 menyambungkan bantuan online melalui autentikasi perangkat,
+bukan sesi admin SagaBook. Credential dan fingerprint diverifikasi backend;
+tenant, product, dan actor ditentukan server-side sebelum gateway bertanda
+tangan memanggil Support Hub pusat. First-use bootstrap tanpa conversation kini
+tetap membuka composer. Launcher mobile berlabel `Bantuan`, input berlabel
+aksesibel, dan fallback diagnostik lokal tetap tersedia. Boundary local-first
+tidak berubah: folder foto, editor, serta export tidak dipindai atau diunggah.
+Backend `181fb0d2` + `dedef195` dan Studio `f3f8cd0` lulus backend 41/41,
+Studio 174/174, Playwright 3/3 dua viewport, accessibility/build/budget, serta
+audit dependency nol. Status `IMPLEMENTED_NOT_DEPLOYED`; production tetap S143.
+
 Changelog Studio candidate sekarang mengutamakan release terbaru, menyediakan
 pencarian, filter status, enam batch versi, satu detail terbuka, empty/reset
 recovery, dan CTA kembali ke Session. Source kumulatif `2bb868f` juga menutup

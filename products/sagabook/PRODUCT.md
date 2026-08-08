@@ -46,13 +46,14 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   kumulatif; arah storefront lebar S94/S108 tetap deprecated dan tidak aktif.
 
 ## Histori kandidat sebelum release S156
-- Candidate Support Hub source
-  `dad3f5fb1b4af7a0b45aed99ead3f164d9b70b1d` memperbaiki pergantian konteks
+- Candidate Support Hub current-baseline source `dedef195` di atas S143
+  `8fac4f68` memperbaiki pergantian konteks
   cabang ke voucher serta reset greeting. Intent eksplisit baru kini
   mengalahkan previous intent, bonus surface tidak dapat menjadi satu-satunya
   bukti, kata `caranya` tidak dianggap follow-up sendiri, dan greeting tidak
-  mengambil artikel fitur. Full backend 964/964, corpus 1.000/1.000, serta
-  Playwright 4/4 pada 390x844 dan 1440x900 lulus. Status
+  mengambil artikel fitur. Port current-baseline lulus combined 41/41 dengan
+  3.394 assertion; source awal `dad3f5fb` mempertahankan bukti full backend,
+  corpus, dan Playwright dua viewport. Status
   `AI_EVAL_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; model,
   prompt, KB, dan production tidak berubah.
 - Candidate lokal S156 source

@@ -12,6 +12,23 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-08
 
+### SagaView S145 device-authenticated Support Hub candidate
+
+- Ringkasan: launcher Studio kini tersambung ke Support Hub memakai autentikasi
+  perangkat, tenant diturunkan server-side, dan first-use bootstrap dapat
+  langsung menerima pertanyaan.
+- Alasan: widget sebelumnya memakai kontrak sesi admin SagaBook yang tidak
+  tersedia di runtime SagaView; bootstrap tanpa conversation juga menahan
+  composer.
+- Klasifikasi `CONFIRMED`; backend `181fb0d2` + `dedef195`, Studio `f3f8cd0`;
+  status `AI_EVAL_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: backend 41/41 (3.394), Studio 174/174, Playwright 3/3 pada dua viewport,
+  accessibility/build/budget/audit dependency hijau.
+- Production berubah: tidak. Production tetap S143; foto/folder/export tidak
+  dipindai atau diunggah. Residual: rekonsiliasi S144 dan immutable release
+  gate, monitoring, live smoke, serta rollback.
+
 ### SagaBook Support Hub intent-switch grounding candidate
 
 - Ringkasan: pertanyaan voucher setelah topik cabang kini memilih intent dan

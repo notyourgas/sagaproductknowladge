@@ -4,6 +4,28 @@
 
 Mencatat perubahan material SagaView tanpa mencampur candidate dan production.
 
+## 2026-08-08 - S145 bantuan AI device-authenticated candidate
+
+- Klasifikasi `CONFIRMED` melalui exact source dan test lokal. Backend
+  `181fb0d2` dengan grounding `dedef195`; Studio `f3f8cd0`; keduanya pada
+  branch `codex/s145-sagaview-chatbot-support` dan sudah dipush.
+- Before: widget memakai sesi admin SagaBook pada origin Studio dan first-use
+  bootstrap tanpa percakapan tidak membuka composer. After: Studio memakai
+  credential+fingerprint perangkat ke lima endpoint device support; tenant,
+  product, dan user diturunkan server-side serta percakapan pertama langsung
+  dapat menerima pertanyaan.
+- Launcher mobile sekarang menampilkan teks `Bantuan`; input mempunyai label
+  aksesibel. Fallback diagnostik lokal, retry, cancellation, dan konfirmasi
+  eksplisit screenshot tetap tersedia tanpa memindai/mengunggah folder foto,
+  editor, atau export.
+- Gate: backend 41/41 dengan 3.394 assertion, Studio 174/174 unit, Playwright
+  3/3 pada 390x844 dan 1440x900, Axe serious/critical nol, lint/typecheck/
+  format/build/budget, serta npm/Composer audit nol advisory.
+- Status `AI_EVAL_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Production tetap S143; candidate perlu
+  direkonsiliasi dengan Studio S144 dan melewati staging, backup/restore,
+  monitoring, live smoke, serta rollback sebelum deploy/activation.
+
 ## 2026-08-08 - S144 pilihan izin foto cepat candidate
 
 - Klasifikasi: `CONFIRMED` melalui `DEC-065` dan exact source
