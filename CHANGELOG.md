@@ -12,6 +12,20 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-08
 
+### SagaBook payment callback replay conflict candidate
+
+- Ringkasan: replay identik dengan `event_id` eksplisit kini exactly-once dan
+  ditandai pada response; payload bisnis berbeda dengan ID sama ditolak 409
+  tanpa write payment kedua.
+- Klasifikasi `CONFIRMED`; source `2b101b87`, status `UIUX_VALIDATED /
+  INTEGRATION_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: focused 5/5, payment regression 50/50, backend 999/999, browser Payment
+  Monitor 10/10, build/design, Pint/diff, dan audit dependency nol advisory.
+- Production berubah: tidak. Runtime tetap `c7f13487` /
+  `20260808115539-c7f1348`; provider canary nyata tidak dijalankan.
+- File knowledge: product, dossier, changelog, ledger SagaBook,
+  portfolio/root changelog, master, gaps, dan sync status.
+
 ### SagaView S147 metadata no-upload candidate
 
 - Ringkasan: metadata sesi cloud baru tidak lagi membawa label folder,

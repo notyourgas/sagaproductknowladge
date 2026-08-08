@@ -96,6 +96,14 @@ retry/read-after-write operator pada satu lineage. S7-S8 kini
 `EXIT_GATE_ACCEPTED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
 tetap `c7f13487` / `20260808115539-c7f1348`.
 
+Candidate payment callback replay `2b101b87d57939932248c35d047f21cc467b776b`
+menolak payload bisnis berbeda yang memakai `event_id` eksplisit sama dengan
+409 public-safe, sementara replay identik tetap sukses exactly-once dan diberi
+penanda idempoten. Booking, session, settlement, payment event, dan audit sukses
+pertama tidak berubah pada konflik. Gate backend 999/999, payment 50/50,
+browser Payment Monitor 10/10, build/design, serta audit dependency hijau.
+Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
+
 SagaBook S119 aktif pada source
 `20ff6829f96cebec22d34844291b3d522b91774a`, release
 `20260805052322-20ff682`, berstatus `PRODUCTION_DEPLOYED /

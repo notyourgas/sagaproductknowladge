@@ -1,5 +1,25 @@
 # SagaBook Changelog
 
+## 2026-08-08 - Payment callback conflicting replay protection candidate
+
+- Klasifikasi `CONFIRMED`; source
+  `2b101b87d57939932248c35d047f21cc467b776b` pada branch
+  `codex/s159-sagabook-callback-replay` sudah dipush.
+- Before: callback dengan `event_id` sama langsung dianggap replay sukses walau
+  status, nominal, atau payload bisnis berubah. After: payload replay
+  dikanonisasi, signature retry yang sudah diverifikasi tidak dianggap state
+  bisnis, replay identik diberi `idempotentReplay=true`, dan konflik ditolak
+  409 `payment_webhook_replay_conflict`.
+- Penolakan tidak mengubah booking confirmed/paid, payment session, settlement,
+  payment event, atau audit sukses pertama; rejection tetap masuk audit
+  public-safe dan booking-status read-after-write tetap authoritative.
+- Gate hijau: focused 5/5 (39 assertion), payment/API regression 50/50 (358),
+  full backend 999/999 (11.383), browser Payment Monitor mobile/desktop 10/10,
+  build/design 26 artefak, Pint/diff, serta npm/Composer/OSV nol advisory.
+- Status `UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Production tetap source `c7f13487` / release
+  `20260808115539-c7f1348`; provider canary nyata dan deployment tidak dilakukan.
+
 ## 2026-08-08 - Combined exit S7-S8 availability/slot candidate
 
 - Klasifikasi `CONFIRMED`; source

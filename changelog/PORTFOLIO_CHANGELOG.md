@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-08 - SagaBook payment callback replay conflict candidate
+
+- Source `2b101b87` membuat replay callback dengan `event_id` eksplisit
+  exactly-once: payload identik me-replay hasil pertama, sedangkan perubahan
+  status/nominal/payload pada ID sama ditolak 409 tanpa rollback atau write
+  payment ganda.
+- Focused 5/5, payment regression 50/50, backend 999/999, browser Payment
+  Monitor 10/10, build/design, format/diff, dan audit dependency nol temuan.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap
+  `c7f13487` / `20260808115539-c7f1348`. Gap berikutnya adalah callback expiry
+  provider, reconciliation, stale multi-tab, dan permission-negative.
+
 ## 2026-08-08 - SagaView S147 metadata no-upload candidate
 
 - Studio `df959ccb` dan backend `0cda8a09` memisahkan label folder,

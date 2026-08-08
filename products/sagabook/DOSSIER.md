@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 8 Agustus 2026 20:30 WIB
+- Updated: 8 Agustus 2026 21:25 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED` untuk workflow yang tercantum di
   [PRODUCT](PRODUCT.md)
@@ -40,6 +40,15 @@ dalam satu dokumen public-safe.
   Model, prompt, provider, dan KB tidak diubah oleh release ini.
 
 ### Histori kandidat sebelum release S157
+- Candidate S159 `2b101b87` menutup replay conflict untuk callback dengan
+  `event_id` eksplisit. Payload identik, termasuk urutan field berbeda dan
+  signature retry baru, me-replay event pertama tanpa write/audit sukses ganda
+  serta mengembalikan penanda idempoten. Payload bisnis berbeda dengan ID sama
+  ditolak 409, dicatat sebagai rejection public-safe, dan status customer tetap
+  memakai booking pertama yang sudah confirmed/paid. Focused 5/5, payment
+  regression 50/50, full backend 999/999, browser Payment Monitor 10/10,
+  build/design, format/diff, serta audit dependency lulus. Candidate ini
+  `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
 - Candidate combined exit S7-S8 `c8138517` menyatukan lineage production
   `c7f13487` dan retry booking manual dalam satu runner fail-fast. Konflik slot,
   expiry lintas tab, race dua proses, serta retry/read-after-write operator

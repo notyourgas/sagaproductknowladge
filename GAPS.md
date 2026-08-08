@@ -40,9 +40,11 @@ ketika keputusan atau release baru menutup gap.
   aktif. Candidate gabungan `c8138517` menutup combined exit S7-S8 dengan
   konflik slot, expiry lintas tab, race dua proses, serta retry/read-after-write
   operator pada satu lineage. S7-S8 `EXIT_GATE_ACCEPTED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED`; prioritas berikutnya payment/status exactly-once,
-  callback replay/expiry, reconciliation, stale multi-tab, permission-negative,
-  dan recovery UI.
+  IMPLEMENTED_NOT_DEPLOYED`. Candidate payment callback `2b101b87` menutup
+  replay identik dan conflicting replay untuk `event_id` eksplisit tanpa write
+  ganda. Residual payment berikutnya adalah callback expiry/transisi provider
+  yang memakai reference fallback, reconciliation, stale multi-tab,
+  permission-negative, dan recovery UI provider.
   `BUSINESS_READY` menunggu setup pilot dua tenant dan authenticated owner UAT;
   subscription tenant tidak diubah.
 

@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 8 Agustus 2026 19:16 WIB
+Updated: 8 Agustus 2026 21:25 WIB
 Evidence status: production + source verified
 
 ## Tujuan dokumen
@@ -47,6 +47,19 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   kumulatif; arah storefront lebar S94/S108 tetap deprecated dan tidak aktif.
 
 ## Histori kandidat sebelum release S157
+- Candidate payment callback replay integrity source
+  `2b101b87d57939932248c35d047f21cc467b776b` pada branch
+  `codex/s159-sagabook-callback-replay` membedakan callback baru dari replay
+  identik dan konflik payload untuk `event_id` eksplisit. Replay identik tetap
+  sukses satu kali dengan `idempotentReplay=true`; payload berbeda memakai ID
+  sama ditolak 409 public-safe tanpa mengubah booking, payment session,
+  settlement, payment event, atau audit sukses pertama. Gate hijau: focused
+  5/5 (39 assertion), payment regression 50/50 (358), full backend 999/999
+  (11.383), browser Payment Monitor mobile/desktop 10/10, build/design,
+  Pint/diff, serta audit npm/Composer/OSV nol advisory. Status
+  `UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap `c7f13487` /
+  `20260808115539-c7f1348`.
 - Candidate combined exit S7-S8 source
   `c8138517b027978b234ababee061e6679716db84` menggabungkan source production
   Support Hub terbaru dengan retry booking manual, lalu menjalankan satu gate

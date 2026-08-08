@@ -12,21 +12,21 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-08T21:18:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-08T21:25:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `8bf73c2e257e2714a49ffffde55d6c25b7c1074e` |
-| Informasi terakhir disinkronkan | SagaView S147 metadata no-upload Studio `df959ccb` dan backend `0cda8a09` tervalidasi lokal; production tetap S146. |
+| Baseline sebelum pembaruan | `a49191e8a0bea8467595316f1208038e44bdd541` |
+| Informasi terakhir disinkronkan | SagaBook payment callback replay conflict source `2b101b87` tervalidasi lokal; production tetap `c7f13487`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik source/runtime. Cleanup row metadata historis, deployment S147, authenticated UAT, dan business readiness tetap keputusan/gate terpisah. |
+| Konflik | Tidak ada konflik source/runtime. Callback expiry/transisi provider fallback, reconciliation, stale multi-tab, permission-negative, deployment, authenticated UAT, dan business readiness tetap gate terpisah. |
 | Error | Tidak ada; seluruh gate lokal dan knowledge validator wajib dijalankan sebelum commit. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/sagaview/PRODUCT.md`
-- `products/sagaview/DOSSIER.md`
-- `products/sagaview/CHANGELOG.md`
-- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `GAPS.md`
@@ -42,11 +42,10 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `GAPS.md`
-- `DECISIONS.md`
 - `SYNC_STATUS.md`
 - `CHANGELOG.md`
 
-## File sinkronisasi sebelumnya
+## File sinkronisasi lebih awal
 
 - `products/sagabook/PRODUCT.md`
 - `products/sagabook/DOSSIER.md`
@@ -59,6 +58,9 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `CHANGELOG.md`
 
 ## Sinkronisasi sebelumnya
+
+- SagaBook payment callback replay conflict `2b101b87` disinkronkan sebagai
+  `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap `c7f13487`.
 
 - SagaBook combined exit S7-S8 `c8138517` diterima sebagai
   `EXIT_GATE_ACCEPTED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
