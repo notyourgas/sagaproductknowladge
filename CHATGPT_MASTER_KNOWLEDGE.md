@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 8 Agustus 2026 12:27 WIB
+Evidence cut-off: 8 Agustus 2026 12:37 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -1125,8 +1125,8 @@ idempotency, rate limit, receipt, audit, dan admin verification desk; participan
 fixture serta localStorage registration telah dihapus.
 Nama kanonik produk berubah dari AOGTICVITY menjadi AOGTIVITY pada 6 Agustus
 2026. Runtime terbaru aktif melalui source
-`d97547acf92d68ad8567401858b76e27adbd0f56`, Hostinger
-`20260807T161422Z`, dan Vercel `dpl_4oWi3Yt4x8BsGKDmMbBcA36A9JBP`.
+`f26da5e87dc8d56729befe5f9c538cd04038674d`, Hostinger
+`20260808T053225Z`, dan Vercel `dpl_CUkHFWTxh9jnuKWgW54Z1Np2h2Li`.
 Domain `aogticvities.fun` serta slug infrastruktur `aogticvity` tetap dipakai
 untuk kompatibilitas; AOGTICVITY hanya nama historis.
 Runtime ini menggabungkan visual event berdasarkan poster founder dan rundown
@@ -1134,8 +1134,8 @@ owner-confirmed. Hierarchy
 utama adalah AOGTIVITY / 17 Agustus 2026 / Army of God Madiun, dengan palette
 lime, navy, magenta, halftone, petir, spark, koin, serta handheld-console frame;
 Plus Jakarta Sans dan canvas mobile-first tetap dipertahankan. Keputusan terbaru
-`DEC-058` menggantikan waktu pada `DEC-053`: registrasi ulang menjadi 14.00 WIB
-dan acara mulai 14.30 WIB dengan Opening Tim & Yel-yel 15 menit,
+`DEC-063` menyamakan waktu hadir dan mulai menjadi 14.30 WIB; struktur
+`DEC-058` tetap dipakai dengan Opening Tim & Yel-yel 15 menit,
 Sing Song 15 menit, lima lomba, Break 15 menit, lima lomba, lalu Awarding &
 Closing. `DEC-059` mengunci Lomba 9 dan Lomba 10 masing-masing 30 menit serta
 Awarding & Closing 15 menit: Lomba 9 18.05, Lomba 10 18.35, penutupan 19.05,
@@ -1145,6 +1145,8 @@ peserta, hasil, atau assignment operator. Typecheck, 129 unit/API, 28/28 MySQL i
 build, 65/65 UI/WCAG, acceptance urutan 14 blok, backup/restore drill, dan 12/12
 public-domain regression lulus. Status `PRODUCTION_DEPLOYED /
 PRODUCTION_ACTIVATED`; visual dan operational human UAT tetap residual.
+Remote security gate pada release ini juga menutup advisory high `nanoid`
+dengan pin patched 3.3.17; audit npm/pnpm production kembali nol vulnerability.
 Source runtime `640990f619156e16159be0562ccae1e7f259aa0b`, Hostinger release
 `20260805T190449Z`, Vercel `dpl_6zCCyTMBbA4eNgP7FYyanJ1RChAJ`, dan migration
 023 menambah audited WhatsApp delivery reconciliation tanpa resend, worker

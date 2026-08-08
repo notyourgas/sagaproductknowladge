@@ -7,7 +7,7 @@ content AOGTIVITY tetap jelas.
 
 ## Konteks dan status bukti
 
-- Updated: 7 Agustus 2026
+- Updated: 8 Agustus 2026
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED`
@@ -71,9 +71,9 @@ menjadi tanggal resmi, dan Army of God Madiun menjadi identitas penyelenggara.
 Lime elektrik, navy, magenta, cyan/kuning terbatas, halftone, petir, spark,
 koin, serta handheld-console frame berasal dari referensi poster founder.
 Seluruh teks tetap Plus Jakarta Sans. Implementasi final aktif melalui runtime
-`d97547acf92d68ad8567401858b76e27adbd0f56`, Hostinger
-`20260807T161422Z`, dan Vercel `dpl_4oWi3Yt4x8BsGKDmMbBcA36A9JBP`.
-Runtime terbaru memakai kontrak rundown owner-confirmed: registrasi ulang 14.00
+`f26da5e87dc8d56729befe5f9c538cd04038674d`, Hostinger
+`20260808T053225Z`, dan Vercel `dpl_CUkHFWTxh9jnuKWgW54Z1Np2h2Li`.
+Runtime terbaru memakai kontrak rundown owner-confirmed: hadir dan mulai 14.30
 WIB, Opening Tim & Yel-yel 14.30, Sing Song 14.45, lomba 1-5 mulai 15.00,
 Break 15 menit setelah lomba ke-5 pada 16.55, lomba 6-10 mulai 17.10, dan
 Lomba 9 18.05 selama 30 menit, Lomba 10 18.35 selama 30 menit, serta Awarding
@@ -83,6 +83,8 @@ lapangan. Schedule builder, reload API, UI publik, admin, migration MySQL 027,
 audit, dan rollback memakai struktur yang sama.
 Gate release lulus 129 unit/API, 28/28 MySQL integration, build, 65/65 UI/WCAG,
 acceptance urutan 14 blok, dan 12/12 public-domain regression.
+Release gate juga memaksa `nanoid` transitif ke 3.3.17; audit npm/pnpm runtime
+kembali nol vulnerability.
 Kartu alur `Dari daftar sampai podium` memakai tiga track tetap untuk badge
 nomor, copy, dan panah. Badge 30 px dan gap 10 px mencegah overlap pada
 viewport 320 px; acceptance suite kini mencakup 48 Playwright checks.

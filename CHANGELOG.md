@@ -12,6 +12,20 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-08
 
+### AOGTIVITY hadir dan mulai 14.30 production
+
+- Ringkasan: waktu hadir dan waktu mulai sama-sama 14.30 WIB; lomba pertama
+  tetap 15.00 dan estimasi selesai tetap 19.20 WIB.
+- Klasifikasi: `CONFIRMED` melalui `DEC-063`; waktu hadir 14.00 pada DEC-058
+  menjadi historical. Jadwal MySQL dan migration 027 tidak berubah.
+- Runtime `f26da5e87dc8d56729befe5f9c538cd04038674d`, branch
+  `codex/whatsapp-magic-link`; Hostinger `20260808T053225Z` dan Vercel
+  `dpl_CUkHFWTxh9jnuKWgW54Z1Np2h2Li`.
+- Security gate menutup advisory high transitif dengan `nanoid` 3.3.17;
+  audit production nol, 129 unit/API, 65/65 UI/WCAG, exact browser, dan 12/12
+  public regression lulus.
+- Production berubah; business readiness tetap menunggu human operational UAT.
+
 ### SagaBook Sprint 7 multi-process slot race recovery candidate
 
 - Ringkasan: dua proses booking pada slot sama kini menghasilkan tepat satu

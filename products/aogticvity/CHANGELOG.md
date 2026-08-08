@@ -8,6 +8,19 @@ Mencatat perubahan material AOGTIVITY/AOGTICVITY/17an/Olimpiade.
 
 Nama lama dipertahankan sebagai provenance; status runtime harus eksplisit.
 
+## 2026-08-08 - Waktu hadir dan mulai sama-sama 14.30
+
+- `CONFIRMED` melalui `DEC-063`: waktu hadir peserta dan waktu mulai acara
+  sama-sama 14.30 WIB. Opening tetap 14.30, lomba pertama 15.00, dan estimasi
+  selesai tetap 19.20 WIB; jadwal database 10 lomba tidak berubah.
+- Runtime source `f26da5e87dc8d56729befe5f9c538cd04038674d`; security follow-up
+  memaksa `nanoid` transitif ke patched 3.3.17 setelah advisory high terdeteksi
+  saat remote preflight. Audit npm/pnpm production kembali nol vulnerability.
+- 129 unit/API, build, 65/65 UI/WCAG, exact browser acceptance, dan 12/12
+  production-domain regression lulus. Delivery aktif pada Hostinger
+  `20260808T053225Z` dan Vercel `dpl_CUkHFWTxh9jnuKWgW54Z1Np2h2Li`;
+  business readiness tetap menunggu human operational UAT.
+
 ## 2026-08-07 - Durasi Lomba 9, Lomba 10, dan Awarding final
 
 - `CONFIRMED` melalui `DEC-059`: Voli Air/Lomba 9 menjadi 30 menit pada

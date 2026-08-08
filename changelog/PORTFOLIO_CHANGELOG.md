@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-08-08 - AOGTIVITY hadir dan mulai 14.30 production
+
+- `DEC-063` menyamakan waktu hadir dan mulai AOGTIVITY menjadi 14.30 WIB;
+  rangkaian lomba dan estimasi selesai 19.20 tidak berubah.
+- Runtime `f26da5e87dc8d56729befe5f9c538cd04038674d`, Hostinger
+  `20260808T053225Z`, dan Vercel `dpl_CUkHFWTxh9jnuKWgW54Z1Np2h2Li` aktif.
+- Remote gate menemukan lalu menutup advisory high `nanoid`; audit production
+  kembali nol, 129 unit/API, 65/65 UI/WCAG, browser, dan 12/12 public regression lulus.
+
 ## 2026-08-08 - SagaBook Sprint 7 multi-process slot race candidate
 
 - Source `04c9b6416fbe401a001f3fd7b83dad47c613e8e4` menutup race aktual

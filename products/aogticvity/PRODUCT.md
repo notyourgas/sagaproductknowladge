@@ -1,6 +1,6 @@
 # AOGTIVITY Product Knowledge
 
-Updated: 7 Agustus 2026
+Updated: 8 Agustus 2026
 Evidence status: public Vercel delivery + database-backed auth, registration, team, and event-day operations runtime
 
 ## Tujuan dokumen
@@ -293,19 +293,21 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:
 `PRODUCTION_ACTIVATED`. Business readiness: `BLOCKED`.
 
 - UI public/player/leader/admin/live aktif pada public Vercel delivery.
-- Runtime source `d97547acf92d68ad8567401858b76e27adbd0f56` menerjemahkan
+- Runtime source `f26da5e87dc8d56729befe5f9c538cd04038674d` menerjemahkan
   poster AOGTIVITY menjadi event identity lime-navy-magenta dengan halftone,
   petir, spark, koin, handheld-console frame, serta hierarchy nama
   **AOGTIVITY / 17 Agustus 2026 / Army of God Madiun**. Theme ini aktif pada
-  Hostinger `20260807T161422Z` dan Vercel `dpl_4oWi3Yt4x8BsGKDmMbBcA36A9JBP`.
-- Rundown owner-confirmed terbaru memindahkan registrasi ulang
-  ke 14.00 WIB dan acara ke 14.30 WIB: Opening Tim & Yel-yel 15 menit, Sing
+  Hostinger `20260808T053225Z` dan Vercel `dpl_CUkHFWTxh9jnuKWgW54Z1Np2h2Li`.
+- Rundown owner-confirmed terbaru menyamakan waktu hadir dan waktu mulai
+  menjadi 14.30 WIB (`DEC-063`): Opening Tim & Yel-yel 15 menit, Sing
   Song 15 menit, lima lomba, Break 15 menit, lima lomba, lalu Awarding &
   Closing. `DEC-059` mengunci Lomba 9 dan Lomba 10 masing-masing 30 menit,
   serta Awarding & Closing 15 menit. Lomba pertama mulai 15.00, Lomba 9
   18.05, Lomba 10 18.35, Awarding & Closing 19.05, dan estimasi selesai
   19.20 WIB. Migration 027 mengubah durasi/jam secara audited dan reversible
   tanpa menghapus peserta, hasil, atau assignment operator.
+- Security gate release juga memaksa dependency transitif `nanoid` ke versi
+  patched 3.3.17; audit npm/pnpm production kembali nol vulnerability.
 - UI memakai `Pixel Matchday Arcade` yang tetap mobile-first 430 px: Plus
   Jakarta Sans, Feather-style icons, stepped geometry, hard shadow, quest/HUD
   hierarchy, state feedback, dan motion yang menghormati reduced-motion.

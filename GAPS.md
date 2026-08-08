@@ -558,14 +558,16 @@ ketika keputusan atau release baru menutup gap.
   kompatibilitas dan bukan gap rebrand.
 
 - `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: runtime
-  `d97547acf92d68ad8567401858b76e27adbd0f56` memuat theme poster-aligned,
-  rundown 14.30 dua sesi (`DEC-058`), dan durasi akhir (`DEC-059`) melalui
-  Hostinger `20260807T161422Z`, Vercel `dpl_4oWi3Yt4x8BsGKDmMbBcA36A9JBP`,
+  `f26da5e87dc8d56729befe5f9c538cd04038674d` memuat theme poster-aligned,
+  hadir/mulai 14.30 (`DEC-063`), dan durasi akhir (`DEC-059`) melalui
+  Hostinger `20260808T053225Z`, Vercel `dpl_CUkHFWTxh9jnuKWgW54Z1Np2h2Li`,
   dan migration 027. Backup/restore, exact-source release, readiness, dan public smoke lulus.
   Residual: visual UAT founder, authenticated admin schedule refresh, serta
   operational rollback rehearsal. Durasi Lomba 9, Lomba 10, dan Awarding &
   Closing sudah confirmed; format bracket dan keputusan teknis lomba yang masih
   provisional tetap perlu dikunci panitia.
+  Advisory high dependency yang muncul saat preflight sudah ditutup dengan
+  `nanoid` 3.3.17; audit npm/pnpm production kembali nol vulnerability.
 
 - `Pixel Matchday Arcade` UI production 3 Agustus 2026 tidak menutup blocker
   activation; perbaikannya berada pada visual hierarchy, responsive mobile
