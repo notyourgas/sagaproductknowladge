@@ -1,6 +1,6 @@
 # COYABAG Product Knowledge
 
-Updated: 6 Agustus 2026
+Updated: 8 Agustus 2026
 Evidence status: production surfaces + blocked commerce activation
 
 ## Tujuan dokumen
@@ -61,12 +61,16 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 
 - Storefront, API, dan admin sudah live di Hostinger.
 - Scheduler terminal expiry sudah fail-closed dan concurrency-tested.
-- Candidate source `368a89595ac0a667d99357b7c8216847cef707fb` merekonsiliasi
+- Candidate source `a8e8dd1b64c3b5f8ced11b9dc49533b1aac1b8bc` merekonsiliasi
   cart tersimpan dengan katalog live setelah API siap, mempertahankan cart saat
   API gagal, dan menahan checkout sebelum verifikasi katalog selesai.
-- Candidate tersebut lulus unit, build, browser desktop/mobile, Laravel,
-  npm/Composer audit, dan secret scan lokal; branch remote sudah sinkron.
+- Batch A pada candidate tersebut memperbarui CommonMark dan Vite storefront/
+  admin serta menutup advisory dependency yang terdeteksi pada baseline.
+- Candidate lulus unit, build, browser desktop/mobile, Laravel, npm/Composer
+  audit, dan secret scan lokal; branch remote sudah sinkron.
 - Candidate belum berada di `main`, belum memiliki tag RC, dan belum deployed.
+- Empat job GitHub Actions exact-SHA belum dapat diverifikasi dari sesi audit,
+  sehingga promotion tetap fail-closed.
 - Commerce nyata tetap ditahan oleh blocker provider/operasional.
 
 ## Blocker business activation

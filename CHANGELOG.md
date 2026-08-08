@@ -12,6 +12,20 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-08
 
+### COYABAG Batch A dependency security candidate
+
+- Ringkasan: CommonMark dan Vite storefront/admin diperbarui; audit Composer
+  serta npm tidak lagi menemukan advisory dependency.
+- Klasifikasi `CONFIRMED`; source
+  `a8e8dd1b64c3b5f8ced11b9dc49533b1aac1b8bc`, status
+  `LOCAL_VALIDATED / REMOTE_BRANCH_SYNCED / CI_UNVERIFIED`.
+- Gate: Laravel full 177 test dengan 1 skip, focused provider/notification 22,
+  storefront unit/build/runtime, admin build, dan browser cart desktop/mobile.
+- Production berubah: tidak. Empat job CI exact-SHA belum dapat dibaca; merge
+  `main`, tag RC, deployment, dan activation tetap ditahan.
+- File knowledge: product/changelog COYABAG, portfolio/root changelog, master,
+  dan sync status.
+
 ### SagaBook provider fallback status transition candidate
 
 - Ringkasan: callback reference fallback kini dapat bergerak dari pending atau

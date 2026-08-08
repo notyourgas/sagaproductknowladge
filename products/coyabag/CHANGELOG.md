@@ -8,6 +8,20 @@ Mencatat perubahan material COYABAG dengan provenance public-safe.
 
 Surface deployment tidak otomatis berarti commerce activation.
 
+## 2026-08-08 - Batch A dependency security candidate
+
+- CommonMark diperbarui ke `2.9.0`; Vite storefront dan admin diperbarui ke
+  `8.2.1` beserta dependency transitive yang aman.
+- Composer audit serta full npm audit storefront/admin tidak menemukan
+  vulnerability.
+- Source `a8e8dd1b64c3b5f8ced11b9dc49533b1aac1b8bc` pada branch
+  `codex/finalization-f0-f11`; branch lokal dan remote sinkron.
+- Gate lokal lulus: storefront unit/build/runtime, admin build, Laravel full
+  suite, provider/notification tests, dan browser cart desktop/mobile.
+- Status `LOCAL_VALIDATED / REMOTE_BRANCH_SYNCED / CI_UNVERIFIED`. Empat job CI
+  exact-SHA belum dapat dibaca, sehingga `main`, tag RC, dan deployment tetap
+  ditahan. Production tidak berubah.
+
 ## 2026-08-06 — Cart recovery dan dependency security candidate
 
 - Cart persisted kini direkonsiliasi terhadap katalog live setelah API siap;
