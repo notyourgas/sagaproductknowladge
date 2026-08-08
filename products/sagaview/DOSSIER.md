@@ -41,6 +41,8 @@ SagaView berdasarkan runtime production aktif.
   `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` melalui S146
 - S146 bantuan AI device-scoped dan consent gabungan:
   `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
+- S147 boundary metadata sesi tanpa nama/path file:
+  `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S146
 - Acceptance integrasi feature-by-feature: ledger dimulai konservatif dan
   belum membuktikan coverage penuh; lihat
   [Feature Coverage Ledger](FEATURE_COVERAGE_LEDGER.md).

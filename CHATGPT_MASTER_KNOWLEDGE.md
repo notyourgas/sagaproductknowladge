@@ -648,6 +648,11 @@ tetap berada di device studio.
 Status: `PRODUCTION_DEPLOYED` dan `PRODUCTION_ACTIVATED`; business readiness
 mass-scale `NEEDS CONFIRMATION`. Consent cepat S144 dan bantuan AI
 device-scoped aktif kumulatif melalui S146.
+Kandidat S147 Studio `df959ccb` dan backend `0cda8a09` menutup pengiriman
+label folder, nama/path/ukuran foto, nama output, dan path absolut melalui
+session API serta meredaksi field tersebut dari response historis. Statusnya
+`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S146 dan data
+historis belum dimutasi.
 Harga bulanan: Growth Rp200.000, Pro Rp500.000.
 Growth mencakup 1 device, 50 frame, 3 preset, offline 24 jam, dan 2 GB aset
 frame cloud. Pro mencakup 4 device, 100 frame, 10 preset, offline 168 jam, 10 GB

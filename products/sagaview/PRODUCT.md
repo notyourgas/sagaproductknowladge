@@ -46,6 +46,12 @@ diautentikasi perangkat. Backend
 `81e55adc170af0949245e3f381d881b716e25b0e` / release
 `20260808190040-81e55ad` sudah `PRODUCTION_DEPLOYED /
 PRODUCTION_ACTIVATED`; rollback langsung tetap S143.
+S147 menutup boundary metadata sesi secara lokal: Studio tidak lagi mengirim
+label folder, nama/path/ukuran foto, atau nama output; backend menolak field
+tersebut dan meredaksi response record lama. Kandidat Studio
+`df959ccba2a69306d4aa50795b5aa35e875ffe43` dan backend
+`0cda8a09fa3f4bb08a483f6bd46ba25dc4fa6b28` berstatus
+`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S146.
 
 ## Tujuan dokumen
 
@@ -113,6 +119,9 @@ photo selection, editor, review, export, print, offline recovery, dan support.
 - Foto customer dan export tetap berada di device studio.
 - Cloud menyimpan account, entitlement, device/session metadata, frame tenant,
   dan operational state yang memang dibutuhkan.
+- Metadata sesi cloud baru hanya membawa ID lokal opaque, urutan, hitungan,
+  status, harga, dan mode simpan. Label/path folder, nama/path/ukuran foto, dan
+  nama output tetap berada di device; response record lama meredaksi field itu.
 - Diagnostics harus ter-redact dan tidak membawa PII, credential, token, raw
   local storage, atau path file customer.
 - Screening integrasi feature-by-feature mengikuti

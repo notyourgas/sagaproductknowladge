@@ -1,5 +1,23 @@
 # SagaView Changelog
 
+## 2026-08-08 - S147 boundary metadata sesi local-first candidate
+
+- Klasifikasi `CONFIRMED` melalui source dan acceptance lokal. Studio
+  `df959ccba2a69306d4aa50795b5aa35e875ffe43` menyaring label folder,
+  nama/path/ukuran foto, nama output, path absolut, serta key metadata lokal
+  sebelum request; backend `0cda8a09fa3f4bb08a483f6bd46ba25dc4fa6b28`
+  menolak payload tersebut dan meredaksi response record historis.
+- Session cloud tetap menerima metadata operasional yang diperlukan: ID lokal
+  opaque, urutan pilihan/output, hitungan, status, harga, dan mode simpan.
+  Consent eksplisit tetap menyimpan nama file, tetapi tidak lagi mengirim path
+  relatif atau ukuran file.
+- Gate hijau: Studio 181/181 unit, format/lint/typecheck/build/bundle budget,
+  browser 12/12 termasuk 50/200/500 foto dan mobile/WCAG; backend 40/40 dengan
+  723 assertion, Pint, Composer/npm audit nol advisory/vulnerability.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S146
+  backend `1af88524` dan Studio `81e55adc`. Cleanup nilai historis di database
+  belum dilakukan dan memerlukan keputusan production terpisah.
+
 ## 2026-08-08 - S146 consent dan bantuan AI immutable production release
 
 - Klasifikasi `CONFIRMED`; backend

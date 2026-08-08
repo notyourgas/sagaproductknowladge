@@ -12,21 +12,21 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-08T20:30:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-08T21:18:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `f144310b6babb66a44b696bb3fe65a0f0d2053a4` |
-| Informasi terakhir disinkronkan | SagaBook combined exit S7-S8 `c8138517` accepted secara lokal dan belum deployed; production tetap `c7f13487` / `20260808115539-c7f1348`. |
+| Baseline sebelum pembaruan | `8bf73c2e257e2714a49ffffde55d6c25b7c1074e` |
+| Informasi terakhir disinkronkan | SagaView S147 metadata no-upload Studio `df959ccb` dan backend `0cda8a09` tervalidasi lokal; production tetap S146. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik source/runtime. Payment/status provider, authenticated owner UAT, latency/cost, dan business readiness masih residual dan tidak disamakan dengan deployment. |
+| Konflik | Tidak ada konflik source/runtime. Cleanup row metadata historis, deployment S147, authenticated UAT, dan business readiness tetap keputusan/gate terpisah. |
 | Error | Tidak ada; seluruh gate lokal dan knowledge validator wajib dijalankan sebelum commit. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/sagabook/PRODUCT.md`
-- `products/sagabook/DOSSIER.md`
-- `products/sagabook/CHANGELOG.md`
-- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/DOSSIER.md`
+- `products/sagaview/CHANGELOG.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `GAPS.md`

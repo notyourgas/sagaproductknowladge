@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-08 - SagaView S147 metadata no-upload candidate
+
+- Studio `df959ccb` dan backend `0cda8a09` memisahkan label folder,
+  nama/path/ukuran foto, nama output, serta path absolut dari metadata sesi
+  cloud; API menolak field lokal dan response lama meredaksinya.
+- Gate lulus: Studio 181/181, backend 40/40 (723 assertion), browser 12/12,
+  build/budget, format/type/lint/Pint, dan audit dependency nol temuan.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S146.
+  Cleanup database historis dan deployment memerlukan gate/otorisasi terpisah.
+
 ## 2026-08-08 - SagaBook S7-S8 combined exit accepted locally
 
 - Source `c8138517` menggabungkan lineage production SagaBook terbaru dengan

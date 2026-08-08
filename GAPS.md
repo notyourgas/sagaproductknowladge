@@ -272,6 +272,13 @@ ketika keputusan atau release baru menutup gap.
 
 ### SagaView
 
+- `NEEDS CONFIRMATION`: S147 metadata no-upload sudah `LOCAL_VALIDATED` pada
+  Studio `df959ccb` dan backend `0cda8a09`, tetapi nilai local folder/file lama
+  dapat masih tersimpan pada row production. Response kandidat meredaksinya.
+  Tentukan apakah cleanup historis dilakukan setelah backup, dry-run agregat,
+  restore rehearsal, dan approval mutasi production; default aman adalah tidak
+  mengubah row lama dan tidak deploy otomatis.
+
 - `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: S143 galeri stabil dan harga
   paket jujur aktif pada backend `8fac4f68` / `20260808134902-8fac4f6` dan
   Studio `91d7bd7b` / `20260808134902-91d7bd7`; rollback S142 tersedia.
