@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-09 - SagaView S158 payment reference integrity candidate
+
+- Backend `07f44cc4145fe7a6c65d0c8025e550cdcdd99278` mengubah referensi
+  pembayaran baru menjadi HMAC, menghapus raw reference dari metadata/audit
+  baru, dan mencegah reuse lintas sesi lewat unique constraint per tenant.
+- Focused 8/103, cross-regression 45/737, full backend 980/11.477, migration
+  cycle, build, dependency audit, dan database integrity nol issue lulus.
+- Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production, SagaBook, harga, provider, foto/path
+  lokal, dan data tenant tidak berubah.
+
 ## 2026-08-09 - SagaBook S168 manual production deploy gate candidate
 
 - Source `abda8f6ac2f84dccba8920ea3ee459e847eb91dc` menghapus pemicu

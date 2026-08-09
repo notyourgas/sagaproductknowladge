@@ -126,6 +126,13 @@ tersebut dan meredaksi response record lama. Studio
   migration cycle, build, dependency audit, dan integrity audit nol issue
   lulus. Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
   LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
+  S158 backend `07f44cc4145fe7a6c65d0c8025e550cdcdd99278` menambah
+  integritas referensi pembayaran opsional: input memakai allowlist ASCII,
+  referensi baru disimpan sebagai HMAC, audit hanya memuat fingerprint pendek,
+  dan unique constraint per tenant mencegah reuse lintas sesi. Full backend
+  980/11.477, migration cycle, build, dependency audit, dan integrity audit nol
+  issue lulus. Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
 
 ## Tujuan dokumen
 

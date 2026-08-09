@@ -52,6 +52,9 @@ SagaView berdasarkan runtime production aktif.
 - S157 payment hold integrity: `SECURITY_VALIDATED /
   DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
   backend `cf16003ff58915f22a00d51198c9426ea930c9ab`
+- S158 payment reference integrity: `SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+  backend `07f44cc4145fe7a6c65d0c8025e550cdcdd99278`
 - Acceptance integrasi feature-by-feature: ledger dimulai konservatif dan
   belum membuktikan coverage penuh; lihat
   [Feature Coverage Ledger](FEATURE_COVERAGE_LEDGER.md).
@@ -110,6 +113,23 @@ backend 975/11.410, migration fresh/rollback/re-apply, build, cache,
 Composer/npm audit, deploy gate testing, dan integrity audit nol issue. Status
 tetap `IMPLEMENTED_NOT_DEPLOYED`; backup/restore, exact-SHA release, rollback,
 smoke, dan authenticated payment-hold UAT diperlukan sebelum promosi.
+
+### Payment reference integrity S158
+
+S158 melindungi referensi pembayaran yang disediakan pada alur manual maupun
+integrasi mendatang. API menolak spasi dan control character, service menyimpan
+HMAC SHA-256 alih-alih referensi mentah, dan audit hanya memuat fingerprint
+pendek. Precheck menghasilkan error aman, sedangkan unique constraint per
+tenant tetap menjadi authority bila dua sesi bersaing memakai referensi yang
+sama. Replay identik pada sesi yang sama tetap idempoten; replay dengan
+referensi berbeda ditolak.
+
+Referensi masih opsional agar kontrak manual existing tidak berubah tanpa
+keputusan founder. Row historis juga tidak dibersihkan otomatis. Kandidat lulus
+S157-S158 focused 8/103, cross-regression 45/737, full backend 980/11.477,
+migration fresh/rollback/re-apply, build, cache, dependency audit, deploy gate
+testing, dan integrity audit nol issue. Tidak ada perubahan UI, harga, paket,
+provider, subscription, foto/path lokal, atau data production.
 
 ## Use case
 

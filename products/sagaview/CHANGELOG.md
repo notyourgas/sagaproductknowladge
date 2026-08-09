@@ -1,5 +1,24 @@
 # SagaView Changelog
 
+## 2026-08-09 - S158 payment reference integrity candidate
+
+- Klasifikasi `CONFIRMED` melalui source
+  `07f44cc4145fe7a6c65d0c8025e550cdcdd99278` dan acceptance lokal.
+- Before: referensi mentah masuk metadata/audit, karakter ambigu diterima, dan
+  referensi yang sama dapat digunakan lintas sesi. After: allowlist API, HMAC
+  server-side, fingerprint audit, precheck aman, serta unique constraint per
+  tenant menjaga write baru.
+- Replay identik pada sesi paid tetap idempoten; replay dengan referensi berbeda
+  ditolak. Referensi tetap opsional untuk mempertahankan alur manual existing,
+  dan row historis tidak dibersihkan otomatis.
+- Gate hijau: S157-S158 8/103, cross-regression 45/737, full backend
+  980/11.477, migration fresh/rollback/re-apply, scoped Pint, syntax, build,
+  cache, Composer/npm audit nol advisory, deploy gate testing, dan integrity
+  audit nol issue.
+- Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Production, harga, paket, provider, subscription,
+  foto/path lokal, dan data tenant tidak berubah.
+
 ## 2026-08-09 - S157 payment hold integrity candidate
 
 - Klasifikasi `CONFIRMED` melalui source

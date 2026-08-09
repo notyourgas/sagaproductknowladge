@@ -795,6 +795,14 @@ dependency audit, dan integrity audit nol issue lulus. Status
 `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED /
 IMPLEMENTED_NOT_DEPLOYED`; production tetap pada lineage device-reopen S147 dan
 Studio S150.
+S158 backend `07f44cc4145fe7a6c65d0c8025e550cdcdd99278` melindungi
+referensi pembayaran opsional dengan allowlist API, HMAC server-side,
+fingerprint audit, replay conflict check, dan unique tenant+hash. Raw reference
+tidak masuk metadata, response, atau audit baru. Focused 8/103,
+cross-regression 45/737, full backend 980/11.477, migration cycle, build,
+dependency audit, dan integrity audit nol issue lulus. Status
+`SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
 Harga bulanan: Growth Rp200.000, Pro Rp500.000.
 Growth mencakup 1 device, 50 frame, 3 preset, offline 24 jam, dan 2 GB aset
 frame cloud. Pro mencakup 4 device, 100 frame, 10 preset, offline 168 jam, 10 GB

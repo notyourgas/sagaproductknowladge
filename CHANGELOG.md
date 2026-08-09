@@ -12,6 +12,21 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-09
 
+### SagaView S158 payment reference integrity candidate
+
+- Ringkasan: referensi pembayaran baru memakai allowlist dan HMAC; raw value
+  tidak masuk metadata/audit, sedangkan unique constraint per tenant mencegah
+  reuse lintas sesi.
+- Klasifikasi `CONFIRMED`; source
+  `07f44cc4145fe7a6c65d0c8025e550cdcdd99278`.
+- Production berubah: tidak. Status `SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- Full backend 980/11.477, migration cycle, build, dependency audit, deploy
+  gate testing, dan integrity audit nol issue lulus. Referensi tetap opsional;
+  expiry dan provider callback masih menjadi gap.
+- File knowledge: PRODUCT, DOSSIER, CHANGELOG, FEATURE_COVERAGE_LEDGER,
+  portfolio/root changelog, master knowledge, dan sync status SagaView.
+
 ### SagaBook S168 manual production deploy evidence gate candidate
 
 - Ringkasan: Quality Gate tidak lagi dapat memulai deploy production;
