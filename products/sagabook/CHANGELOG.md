@@ -1,6 +1,6 @@
 # SagaBook Changelog
 
-## 2026-08-09 - Reverse proxy body-limit observability S166 candidate
+## 2026-08-09 - Release kumulatif S162-S166 production
 
 - Klasifikasi `CONFIRMED`; source
   `5c76735315c7979269832aada77fba3390368c31` pada branch
@@ -16,11 +16,14 @@
   1.014/1.014 (11.511), database disposable migration/seed/backfill/reconcile
   dengan audit 100, Payment Monitor browser mobile/desktop, build/design 26/0,
   targeted Pint, PHP/Bash syntax, diff, npm/Composer/OSV nol advisory.
-- Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED`. Production tetap source
-  `64ed036b514d351f3e537be557d69117badf9d24` / release
-  `20260809033844-64ed036`; tidak ada schema, data customer, canary, atau
-  activation.
+- Source S166 memuat ancestor S162-S165 dan aktif sebagai release immutable
+  `20260809083131-5c76735`; rollback langsung `20260809033844-64ed036`.
+- Workflow production `31303720382` lulus dengan exact manifest, encrypted
+  backup/checksum, disposable restore, migration gate, body-limit
+  observability, service health, dan public smoke.
+- Status `RELEASED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Provider
+  canary, authenticated Owner/operator UAT, dan dua gap pilot tetap terpisah
+  sebelum `BUSINESS_READY`.
 
 ## 2026-08-09 - Payment Monitor stale multi-tab recovery S165 candidate
 

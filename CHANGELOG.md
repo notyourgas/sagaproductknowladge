@@ -30,19 +30,20 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 - File knowledge: PRODUCT, DOSSIER, CHANGELOG, FEATURE_COVERAGE_LEDGER,
   portfolio/root changelog, master knowledge, dan sync status SagaView.
 
-### SagaBook S166 reverse proxy body-limit observability candidate
+### SagaBook S162-S166 production release
 
 - Ringkasan: release gate kini membuktikan batas body reverse proxy kompatibel
   dengan guard webhook aplikasi sebelum migration dan sesudah activation.
 - Klasifikasi `CONFIRMED`; source
-  `5c76735315c7979269832aada77fba3390368c31`, status
-  `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED`.
+  `5c76735315c7979269832aada77fba3390368c31` aktif sebagai release
+  `20260809083131-5c76735`, rollback `20260809033844-64ed036`.
 - Gate: focused 5/5, backend 1.014/1.014, DB audit disposable 100, browser
   mobile/desktop, build/design, targeted Pint, syntax/diff, serta
   npm/Composer/OSV nol advisory.
-- Production berubah: tidak. Runtime tetap S161; tidak ada schema, credential,
-  data customer, callback mentah, canary provider, atau activation.
+- Workflow `31303720382`, exact manifest, backup/restore, body-limit readiness,
+  services, dan public smoke lulus. Production berubah: ya. Status
+  `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; tidak ada credential, data
+  customer, callback mentah, atau canary provider.
 - File knowledge: PRODUCT, DOSSIER, CHANGELOG, FEATURE_COVERAGE_LEDGER,
   portfolio/root changelog, master knowledge, dan sync status SagaBook.
 

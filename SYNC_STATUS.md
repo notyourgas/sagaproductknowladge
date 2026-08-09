@@ -12,21 +12,21 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-09T15:33:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-09T15:40:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `751f97dd0bbf193cdaf2f499b093be7a83f99c4a` |
-| Informasi terakhir disinkronkan | SagaView device lease close/reopen recovery: Studio `5eeef36904f84c7cf01d8f365f3d6a94ba9eec9e`, backend `75f43b40dcd1dc81d601f16245cea3b659af483d`; status `SECURITY_VALIDATED / UIUX_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`, production tetap backend S147 dan Studio S150. |
+| Baseline sebelum pembaruan | `603373d398c877c44fac93234253f200dd5360f2` |
+| Informasi terakhir disinkronkan | SagaBook S162-S166 source `5c76735315c7979269832aada77fba3390368c31` aktif sebagai release `20260809083131-5c76735`, rollback `20260809033844-64ed036`; status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik source/runtime SagaView. Candidate belum dideploy; authenticated close/reopen, crash, dan dua-instance UAT pada perangkat Studio nyata tetap gate release. |
+| Konflik | Tidak ada konflik source/runtime SagaBook. Authenticated Owner/operator UAT, provider canary, dan dua gap pilot tetap gate sebelum `BUSINESS_READY`. |
 | Error | Tidak ada error sinkronisasi yang diketahui. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/sagaview/PRODUCT.md`
-- `products/sagaview/DOSSIER.md`
-- `products/sagaview/CHANGELOG.md`
-- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `SYNC_STATUS.md`

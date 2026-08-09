@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 9 Agustus 2026 15:24 WIB
+- Updated: 9 Agustus 2026 15:40 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED` untuk workflow yang tercantum di
   [PRODUCT](PRODUCT.md)
@@ -15,8 +15,8 @@ dalam satu dokumen public-safe.
 - Availability empty-response recovery, manual-transfer initial-load recovery,
   dan Payment Monitor action recovery: `PRODUCTION_DEPLOYED /
   PRODUCTION_ACTIVATED`
-- Source kumulatif aktif: `64ed036b514d351f3e537be557d69117badf9d24`,
-  release `20260809033844-64ed036`, rollback `20260808115539-c7f1348`
+- Source kumulatif aktif: `5c76735315c7979269832aada77fba3390368c31`,
+  release `20260809083131-5c76735`, rollback `20260809033844-64ed036`
 - S131-S156 aktif kumulatif. Gate fresh backend 993/993, browser auth,
   tenant/cabang, Add-on, Resource, storefront/slot, race 5/5, build/design,
   dependency audit, backup/restore exact-SHA, manifest, DB audit 100, service,
@@ -39,8 +39,8 @@ dalam satu dokumen public-safe.
   dependency, backup/restore, public smoke, service health, dan rollback.
   Model, prompt, provider, dan KB tidak diubah oleh release ini.
 
-### Kandidat setelah release S161 dan histori terkait
-- Candidate S166 `5c767353` menambahkan observability fail-closed antara batas
+### Release kumulatif S162-S166 dan histori terkait
+- S166 `5c767353` menambahkan observability fail-closed antara batas
   body reverse proxy dan guard webhook aplikasi. Inspector hanya mengeluarkan
   metadata public-safe, memilih batas efektif paling konservatif termasuk
   nested override, dan kontrak deploy menjalankan pembanding sebelum migration
@@ -48,7 +48,9 @@ dalam satu dokumen public-safe.
   aplikasi ditolak. Full backend 1.014/1.014 (11.511 assertion), focused 5/5,
   DB audit disposable 100, browser Payment Monitor mobile/desktop, build/design,
   format/syntax/diff, npm/Composer/OSV, dan read-only live inspection hijau.
-  Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S161.
+  Workflow `31303720382`, exact manifest, backup/restore, body-limit readiness,
+  services, dan public smoke lulus. Status `PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`; belum `BUSINESS_READY`.
 - Candidate S165 `33c10710` menambah optimistic stale-version pada rekonsiliasi
   Payment Monitor di atas lock S164. Tab yang membawa versi lama mendapat 409
   sebelum provider/audit, memuat ulang state server, dan menampilkan status

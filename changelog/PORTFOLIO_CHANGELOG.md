@@ -13,7 +13,7 @@
   `SECURITY_VALIDATED / UIUX_VALIDATED / LOCAL_VALIDATED /
   IMPLEMENTED_NOT_DEPLOYED`; production tetap backend S147 dan Studio S150.
 
-## 2026-08-09 - SagaBook S166 reverse proxy body-limit observability
+## 2026-08-09 - SagaBook S162-S166 production
 
 - Source `5c76735315c7979269832aada77fba3390368c31` menambahkan release
   gate yang membandingkan batas body reverse proxy dengan guard webhook
@@ -21,9 +21,11 @@
 - Missing, invalid, unbounded, batas lebih kecil, serta nested override yang
   lebih kecil berhenti fail-closed. Full backend 1.014/1.014, DB audit 100,
   browser regression, build/design, format/syntax, dan audit dependency lulus.
-- Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED`; production SagaBook tetap S161 dan tidak ada
-  mutation data, canary provider, atau activation.
+- Source kumulatif aktif sebagai release `20260809083131-5c76735`, rollback
+  langsung `20260809033844-64ed036`. Workflow `31303720382`, exact manifest,
+  backup/restore, body-limit readiness, services, dan public smoke lulus.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated UAT,
+  provider canary, dan dua gap pilot tetap menahan `BUSINESS_READY`.
 
 ## 2026-08-09 - SagaView S155 entitlement optimistic concurrency candidate
 

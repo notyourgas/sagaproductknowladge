@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 9 Agustus 2026 15:24 WIB
+Updated: 9 Agustus 2026 15:40 WIB
 Evidence status: production + source verified
 
 ## Tujuan dokumen
@@ -16,19 +16,22 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
-- Source kumulatif S161 `64ed036b514d351f3e537be557d69117badf9d24`
-  aktif sebagai release immutable `20260809033844-64ed036`; rollback langsung
-  `20260808115539-c7f1348` tersedia.
-- Release ini mempromosikan seluruh ancestor S157-S161: retry booking manual
+- Source kumulatif S166 `5c76735315c7979269832aada77fba3390368c31`
+  aktif sebagai release immutable `20260809083131-5c76735`; rollback langsung
+  `20260809033844-64ed036` tersedia.
+- Release ini mempromosikan seluruh ancestor S157-S166: retry booking manual
   idempoten dan read-after-write operator, combined exit S7-S8, callback replay
   conflict protection, transisi status provider exactly-once, serta CTA Maps
   dan WhatsApp yang mengikuti skin preset aktif dan tetap terpusat.
-- Gate rilis hijau: backend 1.002/1.002 dengan 11.421 assertion, focused release
+- S162-S166 menambahkan abuse limiter webhook, batas payload 256 KiB,
+  reconciliation lock, stale-tab recovery, dan observability fail-closed
+  untuk batas body reverse proxy.
+- Gate rilis hijau: backend 1.014/1.014 dengan 11.511 assertion, focused release
   hardening 10/10, build, design audit 26/0, accessibility kelima preset,
   visual Lokasi, race 5/5, serta npm/Composer/OSV tanpa advisory.
-- Backup terenkripsi, checksum, disposable restore exact-SHA, manifest, DB
-  audit 100, migration baru berstatus `Ran`, empat service aktif, maintenance
-  off, log error queue bersih, serta public HTTP smoke lulus. Storefront Ngawi
+- Workflow production `31303720382`, backup terenkripsi, checksum, disposable
+  restore exact-SHA, manifest, DB audit 100, body-limit readiness, empat
+  service aktif, maintenance off, serta public HTTP smoke lulus. Storefront Ngawi
   canonical merespons 200 dan mengembalikan empat paket selectable.
 - Availability kosong dari backend tidak lagi diganti slot lokal; manual
   transfer dan Payment Monitor kini mempunyai error/retry yang dapat dipakai
@@ -43,11 +46,11 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   mandiri, dan citation wajib mendukung intent. Model, prompt, provider, dan KB
   tidak diganti; promosi corpus/index/model AI yang lebih luas tetap terpisah.
 - Label candidate pada bagian histori di bawah adalah status saat bukti itu
-  dibuat. Source S98-S161 yang menjadi ancestor release aktif sudah aktif
+  dibuat. Source S98-S166 yang menjadi ancestor release aktif sudah aktif
   kumulatif; arah storefront lebar S94/S108 tetap deprecated dan tidak aktif.
 
-## Kandidat setelah release S161 dan histori terkait
-- Candidate security/infrastructure S166 source
+## Release S162-S166 dan histori terkait
+- Security/infrastructure S166 source
   `5c76735315c7979269832aada77fba3390368c31` pada branch
   `codex/s166-sagabook-body-limit-observability` membuat release gate membaca
   batas body reverse proxy untuk host SagaBook dan membandingkannya dengan
@@ -56,9 +59,8 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   pemeriksaan diulang sesudah aktivasi dan menghasilkan evidence public-safe.
   Full backend 1.014/1.014, database disposable audit 100, browser regression
   Payment Monitor mobile/desktop, build/design, format/syntax/diff, serta
-  npm/Composer/OSV hijau. Status `SECURITY_VALIDATED /
-  DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
-  production tetap S161 dan tidak ada mutation data atau canary provider.
+  npm/Composer/OSV hijau. Status kumulatif `RELEASED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`; tidak ada mutation data bisnis atau canary provider.
 - Candidate security/database S165 source
   `33c1071069f9f20d74268738c87d2c22e4580391` pada branch
   `codex/s165-sagabook-payment-stale-recovery` menutup stale multi-tab pada

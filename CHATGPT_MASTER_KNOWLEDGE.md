@@ -77,14 +77,17 @@ Booking dipasarkan unlimited dengan fair-use.
 Trial SagaBook: 7 hari full access, kemudian grace read-only hari 8-14 dan
 suspend setelah hari 14; tidak ada auto-charge.
 
-Source kumulatif `64ed036b514d351f3e537be557d69117badf9d24`
-aktif sebagai release immutable `20260809033844-64ed036`; rollback
-`20260808115539-c7f1348` tersedia. Release mempromosikan S157-S161: retry
+Source kumulatif `5c76735315c7979269832aada77fba3390368c31`
+aktif sebagai release immutable `20260809083131-5c76735`; rollback
+`20260809033844-64ed036` tersedia. Release mempromosikan S157-S166: retry
 booking manual idempoten dan read-after-write operator, combined exit S7-S8,
 payment callback replay conflict protection, transisi status provider
 exactly-once, serta CTA Maps/WhatsApp yang mengikuti preset aktif dan tetap
-terpusat. Full backend 1.002/1.002, build/audit, backup/restore exact-SHA,
-migration, manifest, DB audit 100, service/log, dan public smoke hijau.
+terpusat. S162-S166 menambahkan webhook abuse limiter, batas payload,
+reconciliation lock, stale-tab recovery, dan reverse-proxy body-limit gate.
+Full backend 1.014/1.014, build/audit, workflow `31303720382`, backup/restore
+exact-SHA, manifest, DB audit 100, body-limit readiness, service, dan public
+smoke hijau.
 Storefront Ngawi canonical merespons 200 dengan empat paket selectable.
 Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; provider canary nyata,
 subscription activation, authenticated Owner/operator UAT, dan pilot tetap
@@ -117,14 +120,15 @@ build/design, dan dependency audit hijau. Status `LOCAL_VALIDATED /
 IMPLEMENTED_NOT_DEPLOYED`; production tetap S161 dan canary nyata tidak
 dijalankan.
 
-Candidate security/infrastructure SagaBook S166 source
+Security/infrastructure SagaBook S166 source
 `5c76735315c7979269832aada77fba3390368c31` menambah observability
 fail-closed untuk batas body reverse proxy versus guard webhook aplikasi.
 Release dihentikan sebelum migration bila batas tidak dapat dibaca, tidak
 terbatas, lebih kecil, atau dioverride lebih kecil; gate diulang setelah
 activation. Backend 1.014/1.014, DB audit 100, browser regression, build/design,
-dan dependency audit hijau. Status `LOCAL_VALIDATED /
-IMPLEMENTED_NOT_DEPLOYED`; production tetap S161 tanpa mutation atau canary.
+dan dependency audit hijau. Status kumulatif `PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED`; release `20260809083131-5c76735` aktif tanpa mutation
+data bisnis atau canary provider.
 
 Candidate security/database SagaBook S164 source
 `ea023fff1ce451c851abc97ba1b68a99344286aa` membuat rekonsiliasi payment
