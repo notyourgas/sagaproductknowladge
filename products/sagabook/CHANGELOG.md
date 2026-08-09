@@ -1,5 +1,29 @@
 # SagaBook Changelog
 
+## 2026-08-09 - Release kumulatif S157-S161 production
+
+- Klasifikasi `CONFIRMED`; source
+  `64ed036b514d351f3e537be557d69117badf9d24` aktif pada release immutable
+  `20260809033844-64ed036`, dengan rollback `20260808115539-c7f1348`.
+- Before: S157-S161 telah tervalidasi lokal tetapi production masih memakai
+  release S157 sebelumnya; parser preflight migration juga salah membaca
+  indentasi output Laravel. After: parser mempunyai regression test executable,
+  migration baru diterapkan, dan seluruh lineage S157-S161 aktif.
+- Dampak produk: booking manual retry/read-after-write, combined exit S7-S8,
+  callback replay conflict protection, transisi provider exactly-once, serta
+  CTA Maps/WhatsApp bertema dan terpusat kini `PRODUCTION_DEPLOYED /`
+  `PRODUCTION_ACTIVATED`.
+- Gate: focused release 10/10, full backend 1.002/1.002 (11.421 assertion),
+  build, design/accessibility/visual relevan, race 5/5, dan audit dependency
+  nol advisory. Backup terenkripsi, checksum, disposable restore exact-SHA,
+  manifest, migration, DB audit 100, service, maintenance, log queue, serta
+  public smoke lulus.
+- Storefront Ngawi canonical mengembalikan empat paket selectable. Dua akun
+  studio lama yang suspended tidak diaktifkan atau dimutasi oleh release ini.
+- `BUSINESS_READY` belum diklaim; authenticated Owner/operator UAT dan pilot
+  tetap gate terpisah. Provider canary nyata, subscription activation, dan
+  pesan WhatsApp customer tidak dijalankan.
+
 ## 2026-08-08 - Provider fallback status transition exactly-once candidate
 
 - Klasifikasi `CONFIRMED`; source

@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-09 - SagaBook S157-S161 production
+
+- Source `64ed036b514d351f3e537be557d69117badf9d24` aktif sebagai release
+  `20260809033844-64ed036`; rollback langsung `20260808115539-c7f1348`.
+- Booking manual retry/read-after-write, exit S7-S8, payment callback
+  exactly-once/replay protection, dan CTA Maps/WhatsApp bertema kini aktif.
+- Full backend 1.002/1.002, build/audit, backup/restore exact-SHA, migration,
+  manifest, DB audit 100, services, log queue, dan public smoke lulus.
+- Storefront Ngawi canonical menampilkan empat paket selectable. Status
+  `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated UAT dan pilot
+  masih memisahkan release ini dari `BUSINESS_READY`.
+
 ## 2026-08-09 - SagaView S150 cleanup import foto lokal candidate
 
 - Studio `4d25f606` melepas seluruh object URL foto/thumbnail sementara ketika

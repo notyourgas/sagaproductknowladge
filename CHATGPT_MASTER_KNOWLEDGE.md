@@ -77,41 +77,18 @@ Booking dipasarkan unlimited dengan fair-use.
 Trial SagaBook: 7 hari full access, kemudian grace read-only hari 8-14 dan
 suspend setelah hari 14; tidak ada auto-charge.
 
-Source kumulatif `c7f13487f33b8075ba7c84f05fc41daec6a622e7`
-aktif sebagai release immutable `20260808115539-c7f1348`; rollback
-`20260808063729-04c9b64` tersedia. Release mempromosikan ancestor S131-S156,
-termasuk auth/session, tenant/cabang, katalog, recovery availability/slot,
-expiry payment hold lintas tab, dan race aktual dua proses. Gate backend
-996/996, browser, race 5/5, build/design, dependency audit, backup/restore,
-manifest, DB audit 100, service, dan public smoke hijau. Storefront production
-tetap satu canvas mobile maksimum 460 piksel pada semua viewport serta satu
-watermark non-fixed. Subscription tenant tidak diubah.
-
-Candidate `fe329a0b12e49ae6c32c4ec861318ccca843c86b` membuat retry
-booking manual idempoten, me-replay response asli tanpa write/audit ganda,
-menolak payload conflict, dan memisahkan recovery refresh kalender dari hasil
-mutation. Candidate gabungan `c8138517b027978b234ababee061e6679716db84`
-kemudian menjalankan konflik slot, expiry lintas tab, race dua proses, dan
-retry/read-after-write operator pada satu lineage. S7-S8 kini
-`EXIT_GATE_ACCEPTED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
-tetap `c7f13487` / `20260808115539-c7f1348`.
-
-Candidate payment callback replay `2b101b87d57939932248c35d047f21cc467b776b`
-menolak payload bisnis berbeda yang memakai `event_id` eksplisit sama dengan
-409 public-safe, sementara replay identik tetap sukses exactly-once dan diberi
-penanda idempoten. Booking, session, settlement, payment event, dan audit sukses
-pertama tidak berubah pada konflik. Gate backend 999/999, payment 50/50,
-browser Payment Monitor 10/10, build/design, serta audit dependency hijau.
-Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
-
-Candidate payment transition `71eb45bab26107b7d3f067bed08e518f0fc6b262`
-melanjutkan kontrak S159 untuk provider yang memakai reference fallback yang
-sama saat status berubah. Pending/expired kini dapat maju ke paid tepat satu
-kali; retry paid tidak menggandakan event/audit/settlement/accounting dan
-konflik nominal state sama ditolak 409. Payment 61/61, backend 1.001/1.001,
-browser 10/10, build/design, serta audit dependency hijau. Status
-`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap `c7f13487` /
-`20260808115539-c7f1348`.
+Source kumulatif `64ed036b514d351f3e537be557d69117badf9d24`
+aktif sebagai release immutable `20260809033844-64ed036`; rollback
+`20260808115539-c7f1348` tersedia. Release mempromosikan S157-S161: retry
+booking manual idempoten dan read-after-write operator, combined exit S7-S8,
+payment callback replay conflict protection, transisi status provider
+exactly-once, serta CTA Maps/WhatsApp yang mengikuti preset aktif dan tetap
+terpusat. Full backend 1.002/1.002, build/audit, backup/restore exact-SHA,
+migration, manifest, DB audit 100, service/log, dan public smoke hijau.
+Storefront Ngawi canonical merespons 200 dengan empat paket selectable.
+Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; provider canary nyata,
+subscription activation, authenticated Owner/operator UAT, dan pilot tetap
+gate terpisah sebelum `BUSINESS_READY`.
 
 SagaBook S119 aktif pada source
 `20ff6829f96cebec22d34844291b3d522b91774a`, release

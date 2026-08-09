@@ -12,20 +12,20 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-09T02:16:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-09T10:40:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `b533b4ea14c252b34b4a9e59c89218405cf2b898` |
-| Informasi terakhir disinkronkan | SagaView S150 `4d25f6069737dc8f14342a62b6c6241081d544d3` menutup cleanup import lokal secara `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S147. |
+| Baseline sebelum pembaruan | `95c5455cb77d8bba847bcff1acbc81c50d23730a` |
+| Informasi terakhir disinkronkan | SagaBook source `64ed036b514d351f3e537be557d69117badf9d24` aktif sebagai release `20260809033844-64ed036` dengan status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik source/runtime. Kandidat S150 belum dideploy; Windows permission/quota dan authenticated UAT belum dijalankan. |
+| Konflik | Tidak ada konflik source/runtime SagaBook. Business readiness tetap menunggu authenticated Owner/operator UAT dan pilot. |
 | Error | Tidak ada error sinkronisasi yang diketahui. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/sagaview/PRODUCT.md`
-- `products/sagaview/CHANGELOG.md`
-- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `SYNC_STATUS.md`

@@ -12,6 +12,22 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-09
 
+### SagaBook S157-S161 production
+
+- Ringkasan: lineage retry booking manual, exit S7-S8, webhook payment
+  exactly-once/replay protection, dan CTA lokasi bertema dipromosikan ke
+  production setelah blocker parser migration diperbaiki.
+- Klasifikasi `CONFIRMED`; source
+  `64ed036b514d351f3e537be557d69117badf9d24`, release
+  `20260809033844-64ed036`, rollback `20260808115539-c7f1348`.
+- Gate: backend 1.002/1.002, build/audit, backup terenkripsi, checksum,
+  disposable restore, migration, manifest, DB audit 100, service/log, dan
+  public smoke lulus; storefront Ngawi canonical mempunyai empat paket.
+- Production berubah: ya. Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+  business readiness tetap menunggu authenticated UAT dan pilot.
+- File knowledge: PRODUCT, CHANGELOG, FEATURE_COVERAGE_LEDGER, portfolio/root
+  changelog, master knowledge, dan sync status SagaBook.
+
 ### SagaView S150 cleanup import foto lokal candidate
 
 - Ringkasan: object URL staged kini selalu dilepas pada pembatalan thumbnail
