@@ -12,23 +12,23 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-10T06:20:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-10T06:27:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `efd0d45a707570edc864a82e3d0bc31ca975f2bb` |
-| Informasi terakhir disinkronkan | AOGTIVITY source `625efddf2da75a416fb82ed21e51725390a77e7c`; permanent participant access dan WA Manual Restricted production-deployed, human UAT pending. |
+| Baseline sebelum pembaruan | `13850b3a555291ccb9ab06ab59ecf3ac3df904c7` |
+| Informasi terakhir disinkronkan | SagaBook S171 source `33aa5261d23656fd452826f82cfef4eda377eca4`; masking PII admin local-validated dan belum production-deployed. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik kanonik; worker Google Sheets otomatis tetap OFF karena credential runtime belum tersedia. |
+| Konflik | Tidak ada konflik kanonik. Production SagaBook tetap S170; authenticated Owner/operator UAT dan gap pilot tetap terbuka. |
 | Error | Tidak ada error knowledge sync yang diketahui. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/aogticvity/PRODUCT.md`
-- `products/aogticvity/DOSSIER.md`
-- `products/aogticvity/CHANGELOG.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
-- `GAPS.md`
 - `DECISIONS.md`
 - `SYNC_STATUS.md`
 - `CHANGELOG.md`

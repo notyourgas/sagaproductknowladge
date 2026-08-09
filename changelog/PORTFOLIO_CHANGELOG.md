@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-10 - SagaBook S171 admin customer PII masking
+
+- Dashboard, Booking list, dan Booking Detail kini menyamarkan nomor WhatsApp
+  customer secara default; akses lengkap memerlukan tindakan eksplisit dalam
+  scope tenant/cabang yang sah dan dicatat tanpa PII.
+- Source `33aa5261d23656fd452826f82cfef4eda377eca4` sudah dipush. Gate
+  backend/contract/tenant/role 15/15 (233 assertion), Playwright 6/6,
+  build/typecheck/design/format, serta audit dependency lulus.
+- Status `SECURITY_VALIDATED / UIUX_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production SagaBook tetap S170 dan belum
+  `BUSINESS_READY`.
+
 ## 2026-08-10 - AOGTIVITY permanent participant access
 
 - AOGTIVITY menambahkan link peserta reusable yang tetap diverifikasi terhadap

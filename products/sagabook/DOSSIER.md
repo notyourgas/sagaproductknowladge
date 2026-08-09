@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 9 Agustus 2026 22:42 WIB
+- Updated: 10 Agustus 2026 06:27 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED` untuk workflow yang tercantum di
   [PRODUCT](PRODUCT.md)
@@ -17,6 +17,11 @@ dalam satu dokumen public-safe.
   PRODUCTION_ACTIVATED`
 - Source kumulatif aktif: `f69170a7e61080f90a3bcea7df1f22f5612f0369`,
   release `20260809153848-f69170a`, rollback `20260809083131-5c76735`.
+- Candidate S171 `33aa5261d23656fd452826f82cfef4eda377eca4`
+  menutup gap privasi admin: nomor customer dimasking pada payload dashboard
+  dan hanya dibuka melalui aksi berizin, tenant/cabang-scoped, no-store, serta
+  audit tanpa nomor lengkap atau empat digit terakhir. Production belum
+  berubah.
 - Repository source `main`, manifest production, dan embedded release commit
   menunjuk exact SHA S170 yang sama.
 - S170 mempromosikan S168 dan S169: deploy production hanya melalui dispatch
@@ -48,7 +53,18 @@ dalam satu dokumen public-safe.
   dependency, backup/restore, public smoke, service health, dan rollback.
   Model, prompt, provider, dan KB tidak diubah oleh release ini.
 
-### Release S170, candidate S169-S168, release kumulatif S162-S166, dan histori terkait
+### Candidate S171, release S170, dan histori terkait
+- S171 `33aa5261` mengubah Dashboard, Booking list, dan Booking Detail menjadi
+  secure-by-default untuk nomor WhatsApp customer. Tampilkan, Salin, dan CTA
+  WhatsApp memakai endpoint akses eksplisit; respons tidak dicache, reveal
+  hanya hidup sementara di browser, dan pergantian booking mereset masking.
+  Owner/operator tetap dibatasi capability, tenant, dan cabang. Activity log
+  hanya mencatat tindakan dan role. Backend/contract/tenant/role 15/15 dengan
+  233 assertion, Playwright 6/6 pada 390x844, 768x1024, dan 1440x900,
+  keyboard/focus, target 44 px, forced-colors, reduced-motion, no-overflow,
+  build, typecheck, design audit 26/0, Pint, serta audit dependency lulus.
+  Status `SECURITY_VALIDATED / UIUX_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap S170 dan belum `BUSINESS_READY`.
 - S170 `f69170a7` mempertahankan tiga parent provenance S166, S168, dan S169.
   Release `20260809153848-f69170a` aktif dengan rollback langsung
   `20260809083131-5c76735`. Status `PRODUCTION_DEPLOYED /

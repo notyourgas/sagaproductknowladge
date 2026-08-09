@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-073 - SagaBook menyamarkan nomor customer secara default di admin
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-10 |
+| Topik | Perlindungan PII pada Dashboard, Booking list, dan Booking Detail |
+| Keputusan | Nomor WhatsApp customer harus tersamarkan secara default. Nomor lengkap hanya boleh diakses melalui tindakan eksplisit Tampilkan, Salin, atau WhatsApp oleh user yang lolos capability serta scope tenant/cabang. |
+| Alasan | Data operasional tetap dapat dipakai saat diperlukan tanpa terus-menerus mengekspos PII pada layar dan payload utama admin. |
+| Alternatif yang dipertimbangkan | Menampilkan nomor penuh untuk semua role operasional; masking berdasarkan role saja; menghapus akses nomor dari detail. |
+| Dampak | Payload dashboard dimasking; endpoint akses PII memakai no-store dan audit tanpa nomor lengkap maupun empat digit terakhir; reveal browser bersifat sementara. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED`; source S171 dipush, belum production-deployed |
+| Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [SagaBook Ledger](products/sagabook/FEATURE_COVERAGE_LEDGER.md) |
+
 ## DEC-072 - AOGTIVITY memakai permanent participant access untuk fallback WA
 
 | Field | Isi |

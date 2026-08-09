@@ -1,5 +1,22 @@
 # SagaBook Changelog
 
+## 2026-08-10 - Admin customer PII masking S171 candidate
+
+- Keputusan Andreas `CONFIRMED`: Dashboard, Booking list, dan Booking Detail
+  harus menyamarkan nomor WhatsApp customer secara default.
+- Before: payload admin membawa nomor lengkap dan detail menampilkan/menyalin
+  langsung. After: nomor default hanya memperlihatkan empat digit terakhir;
+  Tampilkan, Salin, dan WhatsApp memakai endpoint eksplisit yang tenant/cabang-
+  scoped, no-store, dan menulis audit tanpa PII.
+- Source `33aa5261d23656fd452826f82cfef4eda377eca4` pada branch
+  `codex/s171-sagabook-admin-pii-mask` sudah dipush. Gate 15/15 (233
+  assertion), Playwright 6/6 pada 390x844, 768x1024, 1440x900, build,
+  typecheck, design audit 26/0, Pint, npm dan Composer audit lulus.
+- Status `SECURITY_VALIDATED / UIUX_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Production tetap source S170/release
+  `20260809153848-f69170a`; tidak ada deploy, migration, data customer,
+  provider canary, atau aktivasi subscription.
+
 ## 2026-08-09 - Integrated S168-S169 production release S170
 
 - Keputusan Andreas `CONFIRMED`: S168 dan S169 digabung dan dipromosikan

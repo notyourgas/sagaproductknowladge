@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 9 Agustus 2026 22:42 WIB
+Updated: 10 Agustus 2026 06:27 WIB
 Evidence status: production source and runtime verified
 
 ## Tujuan dokumen
@@ -16,6 +16,15 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
+- Candidate S171 `33aa5261d23656fd452826f82cfef4eda377eca4` membuat
+  nomor WhatsApp customer tersamarkan secara default di Dashboard, Booking
+  list, dan Booking Detail. Akses lengkap hanya melalui tindakan eksplisit
+  Tampilkan, Salin, atau WhatsApp dalam scope tenant/cabang yang sah; audit
+  menyimpan jenis tindakan dan role tanpa PII. Gate 15/15 (233 assertion),
+  Playwright 6/6 pada mobile/tablet/desktop, build, design audit, typecheck,
+  format, serta npm/Composer audit lulus. Status `SECURITY_VALIDATED /
+  UIUX_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+  tetap S170.
 - Source integrasi S170 `f69170a7e61080f90a3bcea7df1f22f5612f0369`
   aktif sebagai release immutable `20260809153848-f69170a`; rollback langsung
   `20260809083131-5c76735` tersedia. Branch source `main` menunjuk exact SHA

@@ -12,6 +12,20 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-10
 
+### SagaBook S171 admin customer PII masking candidate
+
+- Ringkasan: nomor WhatsApp customer di Dashboard, Booking list, dan Booking
+  Detail dimasking secara default; akses penuh eksplisit, scoped, no-store,
+  dan audit tidak menyimpan PII.
+- Klasifikasi `CONFIRMED`; source
+  `33aa5261d23656fd452826f82cfef4eda377eca4`.
+- Gate: 15/15 dengan 233 assertion, Playwright 6/6 mobile/tablet/desktop,
+  build, typecheck, design 26/0, Pint, serta npm/Composer nol vulnerability.
+- Production berubah: tidak. Status `SECURITY_VALIDATED / UIUX_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- File knowledge: PRODUCT, DOSSIER, CHANGELOG, FEATURE_COVERAGE_LEDGER,
+  portfolio/root changelog, master knowledge, DECISIONS, dan SYNC_STATUS.
+
 ### AOGTIVITY permanent participant access
 
 - Ringkasan: peserta Approved mendapat link reusable yang dapat dicabut admin;
