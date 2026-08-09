@@ -1,5 +1,25 @@
 # SagaBook Changelog
 
+## 2026-08-09 - Integrated S168-S169 production release S170
+
+- Keputusan Andreas `CONFIRMED`: S168 dan S169 digabung dan dipromosikan
+  melalui release immutable setelah seluruh gate hijau.
+- Before: deploy evidence gate dan centered Background editor masih kandidat
+  terpisah; production tetap S166. After: source/main
+  `f69170a7e61080f90a3bcea7df1f22f5612f0369` aktif sebagai release
+  `20260809153848-f69170a`, dengan rollback `20260809083131-5c76735`.
+- Quality Gate `31321196676`, fresh encrypted backup, checksum, disposable
+  restore, deploy manual `31321655190`, manifest, DB audit 100, service,
+  journal tanpa error, maintenance off, dan tiga endpoint publik HTTP 200
+  lulus.
+- Dampak: editor tambah/edit Background Admin kini terpusat dan tidak terpotong;
+  production deploy tidak lagi otomatis dan wajib membawa evidence backup/
+  restore. Tidak ada migration baru, canary provider, aktivasi subscription,
+  atau mutation data bisnis oleh release code.
+- Status `SECURITY_VALIDATED / UIUX_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`; authenticated Owner UAT dan pilot tetap memisahkan
+  release ini dari `BUSINESS_READY`.
+
 ## 2026-08-09 - Background Admin centered editor S169 candidate
 
 - Keputusan Andreas `CONFIRMED`: wizard tambah dan edit Background Admin harus

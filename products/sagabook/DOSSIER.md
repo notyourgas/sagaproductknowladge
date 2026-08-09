@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 9 Agustus 2026 21:46 WIB
+- Updated: 9 Agustus 2026 22:42 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED` untuk workflow yang tercantum di
   [PRODUCT](PRODUCT.md)
@@ -15,19 +15,17 @@ dalam satu dokumen public-safe.
 - Availability empty-response recovery, manual-transfer initial-load recovery,
   dan Payment Monitor action recovery: `PRODUCTION_DEPLOYED /
   PRODUCTION_ACTIVATED`
-- Source kumulatif aktif: `5c76735315c7979269832aada77fba3390368c31`,
-  release `20260809083131-5c76735`, rollback `20260809033844-64ed036`
-- Repository source `main` sudah menunjuk exact ke SHA production S166;
-  rekonsiliasi branch tidak memicu deployment atau mutation data baru.
-- Candidate S168 `abda8f6ac2f84dccba8920ea3ee459e847eb91dc`
-  membatasi workflow production menjadi manual-only dengan backup run dan
-  checksum restore receipt sebagai input wajib. Quality Gate exact-SHA hijau
-  dan tidak menghasilkan run deploy otomatis; production tetap S166.
-- Candidate S169 `28fccc91fbc65b9354edd50a73054326740bab32`
-  memusatkan dialog tambah/edit Background Admin dan memberi area kerja lebih
-  lebar tanpa mengubah workflow, API, atau data. Konten panjang menggulir di
-  dalam dialog dan tetap aman pada viewport mobile sampai desktop. Quality
-  Gate exact-SHA hijau; production tetap S166.
+- Source kumulatif aktif: `f69170a7e61080f90a3bcea7df1f22f5612f0369`,
+  release `20260809153848-f69170a`, rollback `20260809083131-5c76735`.
+- Repository source `main`, manifest production, dan embedded release commit
+  menunjuk exact SHA S170 yang sama.
+- S170 mempromosikan S168 dan S169: deploy production hanya melalui dispatch
+  manual dengan backup/restore evidence wajib, dan dialog tambah/edit
+  Background Admin sekarang terpusat, lebar, scroll-internal, serta aman pada
+  viewport mobile sampai desktop tanpa mengubah API atau schema.
+- Quality Gate `31321196676`, fresh encrypted backup/restore, workflow deploy
+  `31321655190`, DB audit 100, service/journal, rollback, dan public smoke
+  lulus. Tidak ada provider canary atau aktivasi subscription.
 - S131-S156 aktif kumulatif. Gate fresh backend 993/993, browser auth,
   tenant/cabang, Add-on, Resource, storefront/slot, race 5/5, build/design,
   dependency audit, backup/restore exact-SHA, manifest, DB audit 100, service,
@@ -50,7 +48,12 @@ dalam satu dokumen public-safe.
   dependency, backup/restore, public smoke, service health, dan rollback.
   Model, prompt, provider, dan KB tidak diubah oleh release ini.
 
-### Candidate S169-S168, release kumulatif S162-S166, dan histori terkait
+### Release S170, candidate S169-S168, release kumulatif S162-S166, dan histori terkait
+- S170 `f69170a7` mempertahankan tiga parent provenance S166, S168, dan S169.
+  Release `20260809153848-f69170a` aktif dengan rollback langsung
+  `20260809083131-5c76735`. Status `PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`; authenticated Owner UAT dan dua gap pilot tetap
+  menahan `BUSINESS_READY`.
 - S169 `28fccc91` mengganti drawer kanan editor Background Admin dengan dialog
   terpusat yang dipakai bersama oleh aksi tambah dan edit. Dialog mempertahankan
   draft protection dan seluruh mutation existing, membatasi tinggi terhadap

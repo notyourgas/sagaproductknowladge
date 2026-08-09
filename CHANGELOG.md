@@ -12,6 +12,22 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-09
 
+### SagaBook S170 integrated production release
+
+- Ringkasan: kandidat S168 dan S169 digabung; deploy production menjadi
+  manual-only dengan evidence wajib, dan editor tambah/edit Background Admin
+  sekarang terpusat serta viewport-safe.
+- Klasifikasi `CONFIRMED`; keputusan Andreas, source/main
+  `f69170a7e61080f90a3bcea7df1f22f5612f0369`, release
+  `20260809153848-f69170a`, rollback `20260809083131-5c76735`.
+- Gate: Quality Gate `31321196676`, backup terenkripsi/checksum/restore,
+  workflow deploy `31321655190`, manifest, DB audit 100, service/journal, dan
+  public smoke lulus.
+- Production berubah: ya. Status `PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`; `BUSINESS_READY` masih menunggu authenticated Owner
+  UAT dan pilot. Tidak ada migration baru, provider canary, atau aktivasi
+  subscription.
+
 ### SagaBook S169 centered Background editor candidate
 
 - Ringkasan: dialog tambah/edit Background Admin sekarang terpusat dan lebih

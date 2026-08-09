@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-09 - SagaBook S170 integrated production release
+
+- Source/main `f69170a7e61080f90a3bcea7df1f22f5612f0369` menggabungkan manual
+  production deploy evidence gate S168 dan centered Background editor S169.
+- Quality Gate `31321196676`, fresh encrypted backup/restore, deploy manual
+  `31321655190`, manifest, DB audit 100, service/journal, rollback, dan public
+  smoke lulus.
+- Release `20260809153848-f69170a` aktif dengan rollback
+  `20260809083131-5c76735`. Status `PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`; tidak ada migration baru, provider canary, aktivasi
+  subscription, atau perubahan produk SagaDev lain.
+
 ## 2026-08-09 - SagaBook S169 centered Background editor candidate
 
 - Source `28fccc91fbc65b9354edd50a73054326740bab32` memindahkan editor

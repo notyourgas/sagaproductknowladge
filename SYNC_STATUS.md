@@ -12,13 +12,13 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-09T21:46:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-09T22:42:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `a8bb51cab9d3aa89a455179fa170b3c03da8ede3` |
-| Informasi terakhir disinkronkan | SagaBook S169 centered Background editor pada source `28fccc91fbc65b9354edd50a73054326740bab32`; dialog tambah/edit terpusat dan responsif tanpa mengubah API, schema, atau production. |
+| Baseline sebelum pembaruan | `c5585b4d374d5c95b700f39003b82b25818056e3` |
+| Informasi terakhir disinkronkan | SagaBook S170 source/main `f69170a7e61080f90a3bcea7df1f22f5612f0369`, release `20260809153848-f69170a`, rollback `20260809083131-5c76735`; S168+S169 production-deployed/activated. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik. S169 belum production; review/merge, guarded deploy, dan authenticated Owner UAT tetap gate terpisah. |
+| Konflik | Tidak ada konflik. Authenticated Owner UAT dan pilot tetap gate terpisah sebelum `BUSINESS_READY`. |
 | Error | Tidak ada error sinkronisasi yang diketahui. |
 
 ## File yang berubah pada sinkronisasi ini
@@ -31,6 +31,7 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `SYNC_STATUS.md`
 - `CHANGELOG.md`
+- `DECISIONS.md`
 
 ## File dari sinkronisasi sebelumnya
 

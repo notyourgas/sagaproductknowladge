@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 9 Agustus 2026 21:46 WIB
+Evidence cut-off: 9 Agustus 2026 22:42 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -68,27 +68,21 @@ pembayaran, menerima status/reminder, dan mengelola request dari secure booking
 link. Operator mengelola calendar, task, check-in, session, payment,
 reconciliation, report, staff, tenant, dan subscription.
 
-Source production S166 `5c76735315c7979269832aada77fba3390368c31`
-sekarang juga menjadi exact `main` repository source. Sinkronisasi branch ini
-tidak mengubah runtime, data, entitlement, subscription, atau workflow; release
-production tetap `20260809083131-5c76735` dan belum `BUSINESS_READY` tanpa
-authenticated Owner/operator UAT serta penutupan gap pilot.
+Source production dan `main` S170
+`f69170a7e61080f90a3bcea7df1f22f5612f0369` menggabungkan S168 dan S169.
+Workflow production sekarang manual-only: backup run serta checksum restore
+receipt wajib, sedangkan exact-SHA, migration, DB audit, rollback, dan smoke
+tetap fail-closed. Dialog tambah/edit Background Admin sekarang terpusat,
+lebih lebar, scroll-internal, dan viewport-safe agar preview/upload tidak
+terpotong.
 
-Candidate security/deployment S168
-`abda8f6ac2f84dccba8920ea3ee459e847eb91dc` membuat workflow production
-manual-only. Quality Gate tidak lagi memicu deploy; backup run dan checksum
-restore receipt wajib diberikan melalui dispatch manual, sedangkan exact-SHA,
-migration, DB audit, rollback, dan smoke tetap fail-closed. Quality Gate
-`31314888994` hijau. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
-production tetap S166.
-
-Candidate UI SagaBook S169
-`28fccc91fbc65b9354edd50a73054326740bab32` memusatkan dialog tambah/edit
-Background Admin, memperlebar area kerja, serta menggulirkan form panjang di
-dalam viewport agar preview dan upload tidak terpotong. Mobile, tablet,
-desktop, fokus/Escape, CRUD, build, design, dependency audit, dan Quality Gate
-`31319295683` hijau. Status `UIUX_VALIDATED / LOCAL_VALIDATED /
-IMPLEMENTED_NOT_DEPLOYED`; production tetap S166.
+Quality Gate `31321196676`, fresh encrypted backup/restore, deploy manual
+`31321655190`, manifest, DB audit 100, service/journal, rollback, dan public
+smoke lulus. Release `20260809153848-f69170a` aktif dengan rollback
+`20260809083131-5c76735`. Status `PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED`; authenticated Owner/operator UAT dan penutupan gap pilot
+tetap wajib sebelum `BUSINESS_READY`. Tidak ada provider canary atau aktivasi
+subscription oleh release ini.
 
 Status code: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; business readiness
 belum tercapai karena dua tenant masih mempunyai gap setup pilot.

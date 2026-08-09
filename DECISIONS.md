@@ -1000,3 +1000,17 @@ keputusan pengganti.
 | Pemberi keputusan | Andreas / founder |
 | Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; source runtime `5a2d3ef3fdb21503f9a559334796cea656f1a087`, Hostinger `20260806T055642Z`, Vercel `dpl_4RtjNcViWkxN3fZSTZ15VWiumy5G`, migration 024 |
 | Dokumen terkait | [AOGTICVITY Product](products/aogticvity/PRODUCT.md), [AOGTICVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTICVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |
+
+## DEC-071 - SagaBook menggabungkan S168 dan S169 untuk release production
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-09 |
+| Topik | Promosi manual deploy gate dan centered Background editor |
+| Keputusan | Kandidat S168 dan S169 boleh digabung menjadi satu source integrasi dan dipromosikan melalui release immutable setelah seluruh Quality Gate, backup terenkripsi, checksum, disposable restore, rollback, service, dan public smoke hijau. |
+| Alasan | Founder menyetujui penggabungan agar hardening deploy dan perbaikan area kerja Background masuk dalam satu kandidat yang memiliki provenance dan rollback tunggal. |
+| Alternatif yang dipertimbangkan | Mendeploy dua kandidat terpisah; menahan S169 sambil hanya mempromosikan S168; tetap membiarkan keduanya lokal. |
+| Dampak | Source/main `f69170a7e61080f90a3bcea7df1f22f5612f0369` aktif sebagai release `20260809153848-f69170a`, rollback `20260809083131-5c76735`. Deploy production kini manual-only dan editor Background terpusat. Provider canary, aktivasi subscription, authenticated Owner UAT, dan business readiness tidak ikut disetujui oleh keputusan ini. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; belum `BUSINESS_READY` |
+| Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [SagaBook Changelog](products/sagabook/CHANGELOG.md), [SagaBook Ledger](products/sagabook/FEATURE_COVERAGE_LEDGER.md) |

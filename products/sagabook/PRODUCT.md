@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 9 Agustus 2026 21:46 WIB
-Evidence status: production + candidate source verified
+Updated: 9 Agustus 2026 22:42 WIB
+Evidence status: production source and runtime verified
 
 ## Tujuan dokumen
 
@@ -16,24 +16,18 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
-- Source kumulatif S166 `5c76735315c7979269832aada77fba3390368c31`
-  aktif sebagai release immutable `20260809083131-5c76735`; rollback langsung
-  `20260809033844-64ed036` tersedia.
-- Branch `main` repository source sudah di-fast-forward ke exact source
-  production tersebut. Rekonsiliasi ini tidak mengubah runtime, database,
-  tenant, subscription, provider, maupun workflow customer/operator.
-- Candidate hardening S168 `abda8f6ac2f84dccba8920ea3ee459e847eb91dc`
-  menghapus pemicu deploy otomatis setelah Quality Gate. Deploy production
-  sekarang hanya dapat dimulai manual dengan backup run dan checksum receipt
-  restore yang wajib, serta tetap mengunci exact SHA. Quality Gate
-  `31314888994` hijau dan tidak memicu deploy; production tetap S166.
-- Candidate UI S169 `28fccc91fbc65b9354edd50a73054326740bab32`
-  mengganti editor Background Admin dari drawer kanan sempit menjadi dialog
-  lebar yang terpusat untuk alur tambah dan edit. Isi panjang menggulir di
-  dalam dialog, tetap berada di viewport, dan tidak memotong panel upload.
-  Gate lokal dan Quality Gate `31319295683` hijau; status
-  `UIUX_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`, production
-  tetap S166.
+- Source integrasi S170 `f69170a7e61080f90a3bcea7df1f22f5612f0369`
+  aktif sebagai release immutable `20260809153848-f69170a`; rollback langsung
+  `20260809083131-5c76735` tersedia. Branch source `main` menunjuk exact SHA
+  yang sama.
+- Release ini menggabungkan S168 dan S169. Workflow production sekarang
+  manual-only dengan backup run serta checksum restore receipt wajib; editor
+  tambah/edit Background Admin sekarang berupa dialog lebar yang terpusat,
+  viewport-safe, dan memakai scroll internal agar panel upload tidak terpotong.
+- Quality Gate exact-SHA `31321196676`, fresh encrypted backup/restore, deploy
+  workflow `31321655190`, manifest, DB audit 100, service/journal, rollback,
+  dan public HTTP smoke lulus. Tidak ada migration baru, provider canary,
+  aktivasi subscription, atau mutation data bisnis oleh release code.
 - Release ini mempromosikan seluruh ancestor S157-S166: retry booking manual
   idempoten dan read-after-write operator, combined exit S7-S8, callback replay
   conflict protection, transisi status provider exactly-once, serta CTA Maps
@@ -64,7 +58,13 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   dibuat. Source S98-S166 yang menjadi ancestor release aktif sudah aktif
   kumulatif; arah storefront lebar S94/S108 tetap deprecated dan tidak aktif.
 
-## Candidate S169-S168, release S162-S166, dan histori terkait
+## Release S170, candidate S169-S168, release S162-S166, dan histori terkait
+- S170 `f69170a7` adalah merge provenance exact S166, S168, dan S169. Quality
+  Gate `31321196676` lulus, deployment manual `31321655190` memakai fresh
+  encrypted backup dan disposable restore, lalu mengaktifkan release
+  `20260809153848-f69170a` dengan rollback `20260809083131-5c76735`. Status
+  `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated Owner UAT dan
+  pilot tetap gate terpisah sebelum `BUSINESS_READY`.
 - Candidate UI S169 `28fccc91` pada branch
   `codex/s169-sagabook-background-modal-center` memakai dialog bersama untuk
   tambah dan edit Background Admin. Dialog terpusat, lebarnya responsif sampai
