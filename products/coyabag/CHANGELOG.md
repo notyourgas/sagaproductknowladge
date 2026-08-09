@@ -8,6 +8,21 @@ Mencatat perubahan material COYABAG dengan provenance public-safe.
 
 Surface deployment tidak otomatis berarti commerce activation.
 
+## 2026-08-09 - R5 immutable Node 24 CI supply chain
+
+- Source `b739106018b6a8ddbdccabe3046623ed413ebf5d` memindahkan tiga
+  job Node dari runtime 20 yang sudah EOL ke Node 24.
+- Seluruh 11 action uses dipin ke full commit SHA: checkout `v7.0.1`,
+  setup-node `v7.0.0`, cache `v6.1.0`, dan setup-php `2.37.2`; workflow juga
+  dibatasi ke `permissions: contents: read`.
+- Verifier Goal 8 kini fail-closed terhadap floating tag, action tambahan,
+  Node 20, perubahan job/trigger, dan permission yang melebar.
+- Local Goal 8, Goal 10, production-runtime, full RC/backend/admin/browser dari
+  checkpoint kandidat, dan dependency audit lulus. Branch run `31301386158`
+  serta exact-main run `31301462116` lulus empat job dengan nol anotasi.
+- Status `MAINLINE_SYNCED / CI_VERIFIED`. Production, provider, credential,
+  data bisnis, activation, dan business readiness tidak berubah.
+
 ## 2026-08-09 - R4 storefront security-header inheritance
 
 - Source `599f19272e3f02c35b0ed654259ca5bad2273ee6` menduplikasi empat

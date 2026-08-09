@@ -123,6 +123,14 @@ mempertahankan security header pada HTML dan asset walaupun kedua location
 memiliki cache policy sendiri. Kontrak source, exact-main CI, syntax/reload,
 public header/cache probe, dan browser desktop/mobile sudah lulus production.
 
+Workflow CI source `b739106018b6a8ddbdccabe3046623ed413ebf5d` memakai
+Node 24 untuk tiga jalur build/test, mem-pin 11 action ke commit SHA immutable,
+dan menetapkan repository permission read-only. Verifier deployment menolak
+floating tag, runtime Node 20, jumlah action/job yang berubah, trigger yang
+hilang, atau permission yang melebar. Branch CI `31301386158` dan exact-main CI
+`31301462116` lulus empat job tanpa anotasi. Ini adalah hardening CI, bukan
+deployment aplikasi atau perubahan runtime production.
+
 ## Integrasi
 
 Payment, shipping, SMTP, object storage, analytics, dan support. Production

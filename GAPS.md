@@ -603,6 +603,12 @@ ketika keputusan atau release baru menutup gap.
   Exact-main CI, guarded Nginx deploy, public header/cache probe, browser dua
   viewport, rollback safety, dan postdeploy audit lulus. CSP tidak diubah.
 
+- `CLOSED`: warning runtime Node 20 dan floating major tag GitHub Actions
+  ditutup pada source `b739106018b6a8ddbdccabe3046623ed413ebf5d`.
+  Seluruh action immutable, job Node memakai Node 24, permission read-only,
+  serta branch/exact-main CI empat job lulus tanpa anotasi. Production tidak
+  berubah.
+
 - `NEEDS CONFIRMATION`: katalog, harga, stok, media, seller identity, payment,
   shipping, return/refund, tax, dan legal copy.
 - `NEEDS CONFIRMATION`: SMTP, object storage, 2FA recovery, backup/restore, dan

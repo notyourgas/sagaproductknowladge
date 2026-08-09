@@ -12,23 +12,23 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-09T14:35:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-09T14:40:55+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `a481883a13dc2c39849757101d71c93b93d5c204` |
-| Informasi terakhir disinkronkan | SagaBook S165 source `33c1071069f9f20d74268738c87d2c22e4580391` menutup stale multi-tab Payment Monitor dengan version guard di dalam lock dan recovery status authoritative; status `IMPLEMENTED_NOT_DEPLOYED`. |
+| Baseline sebelum pembaruan | `fb5b99b946244e68b30d288df6a095fc6eb13693` |
+| Informasi terakhir disinkronkan | COYABAG R5 source `b739106018b6a8ddbdccabe3046623ed413ebf5d` memindahkan CI ke Node 24, mem-pin 11 action uses, dan membatasi permission read-only; status `MAINLINE_SYNCED / CI_VERIFIED`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik source/runtime. Production SagaBook tetap S161; provider canary, credential, data customer, subscription, activation, dan business readiness tidak diubah. |
+| Konflik | Tidak ada konflik source/runtime. Production COYABAG tetap release `20260809-264c6ac`; provider, credential, data bisnis, activation, dan business readiness tidak diubah. |
 | Error | Tidak ada error sinkronisasi yang diketahui. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/sagabook/PRODUCT.md`
-- `products/sagabook/DOSSIER.md`
-- `products/sagabook/CHANGELOG.md`
-- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
 - `SYNC_STATUS.md`
 - `CHANGELOG.md`
 
@@ -248,6 +248,9 @@ COYABAG source `264c6ac2ebec33c6471a4c49572ddcdc82b51cf2` sudah aktif sebagai
 immutable release `20260809-264c6ac`, dengan rollback `20260730-33637aa`.
 Source config `599f19272e3f02c35b0ed654259ca5bad2273ee6` sudah menutup
 inheritance security header storefront di production.
+Source CI `b739106018b6a8ddbdccabe3046623ed413ebf5d` sudah menutup
+runtime Node 20/floating action pada `main`; perubahan ini tidak dideploy ke
+production.
 Provider, data final, owner 2FA, restore drill, UAT transaksi, activation, dan
 business readiness tetap blocker; readiness runtime masih 17 pass / 17 blocker.
 

@@ -1263,6 +1263,13 @@ nosniff, frame policy, dan referrer policy bersama cache policy masing-masing.
 Application release, provider, data bisnis, CSP, activation, dan readiness
 commerce tidak berubah.
 
+Source CI hardening `b739106018b6a8ddbdccabe3046623ed413ebf5d` sudah
+`MAINLINE_SYNCED / CI_VERIFIED`. Tiga job memakai Node 24, seluruh 11 GitHub
+Action dipin ke full commit SHA, permission workflow dibatasi read-only, dan
+verifier menolak regresi supply-chain/runtime. Branch run `31301386158` serta
+exact-main run `31301462116` lulus empat job dengan nol anotasi. Ini tidak
+mengubah release, konfigurasi, provider, data bisnis, atau production runtime.
+
 ### AOGTIVITY
 
 Web app mobile-first untuk operasi event/kompetisi: registrasi, verifikasi,

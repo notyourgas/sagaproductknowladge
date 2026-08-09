@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-09 - COYABAG R5 immutable Node 24 CI supply chain
+
+- Source `b739106018b6a8ddbdccabe3046623ed413ebf5d` memindahkan CI
+  build/test ke Node 24, mem-pin seluruh 11 action uses ke commit SHA, dan
+  membatasi workflow ke permission `contents: read`.
+- Verifier fail-closed menjaga pin, runtime, jumlah action, empat job, trigger,
+  dan permission. Branch CI `31301386158` serta exact-main CI `31301462116`
+  lulus empat job tanpa anotasi Node 20.
+- Status `MAINLINE_SYNCED / CI_VERIFIED`; production tetap application release
+  `20260809-264c6ac` dengan hardening Nginx R4. Commerce activation dan
+  business readiness tetap `BLOCKED`.
+
 ## 2026-08-09 - SagaBook S165 stale multi-tab payment recovery candidate
 
 - Source `33c1071069f9f20d74268738c87d2c22e4580391` membuat Payment

@@ -85,6 +85,13 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
   location-level. Exact-main CI run `31300148412`, guarded Nginx deploy,
   browser dua viewport, dan postdeploy audit lulus; HTML dan asset kini
   konsisten mengirim HSTS, nosniff, frame policy, serta referrer policy.
+- Source CI hardening `b739106018b6a8ddbdccabe3046623ed413ebf5d`
+  memindahkan tiga job build/test ke Node 24, mem-pin seluruh 11 pemakaian
+  GitHub Action ke full commit SHA, dan membatasi permission workflow ke
+  `contents: read`. Branch run `31301386158` serta exact-main run
+  `31301462116` lulus empat job dengan nol anotasi, termasuk nol warning Node
+  20. Status perubahan ini `MAINLINE_SYNCED / CI_VERIFIED`; production tidak
+  berubah.
 - Status `LOCAL_VALIDATED / MAINLINE_SYNCED / CI_VERIFIED /
   PRODUCTION_DEPLOYED`. Activation dan business readiness tetap `BLOCKED`.
 - Commerce nyata tetap ditahan oleh blocker provider/operasional.

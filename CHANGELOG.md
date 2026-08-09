@@ -12,6 +12,22 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-09
 
+### COYABAG R5 immutable Node 24 CI supply chain
+
+- Ringkasan: tiga job build/test pindah ke Node 24, seluruh 11 action uses
+  dipin ke full commit SHA, dan permission workflow dibatasi read-only.
+- Klasifikasi `CONFIRMED`; source
+  `b739106018b6a8ddbdccabe3046623ed413ebf5d`, status
+  `MAINLINE_SYNCED / CI_VERIFIED`.
+- Gate: Goal 8/10, production-runtime, checkpoint full RC/backend/admin/browser,
+  dependency audit, branch CI `31301386158`, dan exact-main CI `31301462116`;
+  empat job lulus dengan nol anotasi Node 20.
+- Production berubah: tidak. Application release tetap `20260809-264c6ac`;
+  provider, credential, data customer/owner, activation, dan business readiness
+  tidak berubah.
+- File knowledge: product/dossier/changelog COYABAG, portfolio/root changelog,
+  master, GAPS, dan sync status.
+
 ### SagaBook S165 Payment Monitor stale multi-tab recovery candidate
 
 - Ringkasan: versi payment session dari browser kini diperiksa di dalam lock;
