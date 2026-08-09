@@ -118,6 +118,11 @@ dipublikasikan sebelum data owner final.
 React/Vite storefront dan Laravel/Inertia backend/admin dengan MySQL, Redis,
 queue, cron, dan immutable release tooling.
 
+Nginx storefront source `599f19272e3f02c35b0ed654259ca5bad2273ee6`
+mempertahankan security header pada HTML dan asset walaupun kedua location
+memiliki cache policy sendiri. Kontrak source, exact-main CI, syntax/reload,
+public header/cache probe, dan browser desktop/mobile sudah lulus production.
+
 ## Integrasi
 
 Payment, shipping, SMTP, object storage, analytics, dan support. Production
@@ -133,6 +138,8 @@ request.
 
 Surface live dapat disalahartikan sebagai checkout aktif; dummy data, provider,
 2FA recovery, restore drill, monitoring, dan legal policy adalah blocker.
+Residual inheritance security header storefront sudah ditutup; CSP tidak
+diubah dalam hardening ini.
 
 ## KPI dan success metrics
 

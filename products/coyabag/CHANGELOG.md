@@ -8,6 +8,24 @@ Mencatat perubahan material COYABAG dengan provenance public-safe.
 
 Surface deployment tidak otomatis berarti commerce activation.
 
+## 2026-08-09 - R4 storefront security-header inheritance
+
+- Source `599f19272e3f02c35b0ed654259ca5bad2273ee6` menduplikasi empat
+  security header yang sudah disetujui ke location HTML dan asset agar directive
+  `Cache-Control` tidak menonaktifkan inheritance Nginx.
+- Contract test baru memeriksa nilai header lengkap, modifier `always`, serta
+  cache policy `no-cache` untuk HTML dan `public, immutable` untuk asset.
+- Full RC, Laravel 177 test (176 pass, 1 intentional skip), cart browser dua
+  viewport, admin build, dan dependency audit lulus. Exact-main GitHub Actions
+  run `31300148412` lulus pada empat job.
+- Guarded config deploy menyimpan rollback checksum, lulus `nginx -t`, reload,
+  independent header/cache probes, browser 1440x900 dan 390x844, serta service/
+  log audit. Probe pertama terlalu cepat setelah reload dan rollback otomatis;
+  percobaan berikutnya memakai readiness retry dan lulus.
+- Status `PRODUCTION_DEPLOYED`; application release tetap
+  `20260809-264c6ac`. Provider, data bisnis, canary order, readiness 17/17,
+  activation, dan business readiness tidak berubah.
+
 ## 2026-08-09 - R3 guarded production parity deploy
 
 - Exact source `264c6ac2ebec33c6471a4c49572ddcdc82b51cf2` dan artifact

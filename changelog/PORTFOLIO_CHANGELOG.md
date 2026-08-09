@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-09 - COYABAG R4 storefront security-header inheritance
+
+- Source `599f19272e3f02c35b0ed654259ca5bad2273ee6` menjaga HSTS,
+  nosniff, frame policy, dan referrer policy pada response HTML serta asset
+  bersamaan dengan cache policy masing-masing.
+- Contract regression, full local gates, exact-main CI run `31300148412`,
+  guarded Nginx deploy/rollback, browser dua viewport, dan postdeploy service/
+  header/cache/log audit lulus.
+- Delivery tetap `PRODUCTION_DEPLOYED`; application release tetap
+  `20260809-264c6ac`. Commerce activation/business readiness tetap `BLOCKED`
+  dan tidak ada provider, data owner, canary order, atau CSP baru.
+
 ## 2026-08-09 - SagaView S153 serial redemption abuse hardening candidate
 
 - Backend `4d41125c0779be2cbfb7862ce7bbf7989c9e62cb` menutup race

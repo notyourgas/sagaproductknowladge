@@ -598,6 +598,11 @@ ketika keputusan atau release baru menutup gap.
   lulus. Readiness masih 17 pass / 17 blocker sehingga activation/business
   readiness tetap `BLOCKED`.
 
+- `CLOSED`: inheritance security header storefront pada location HTML/asset
+  ditutup oleh source `599f19272e3f02c35b0ed654259ca5bad2273ee6`.
+  Exact-main CI, guarded Nginx deploy, public header/cache probe, browser dua
+  viewport, rollback safety, dan postdeploy audit lulus. CSP tidak diubah.
+
 - `NEEDS CONFIRMATION`: katalog, harga, stok, media, seller identity, payment,
   shipping, return/refund, tax, dan legal copy.
 - `NEEDS CONFIRMATION`: SMTP, object storage, 2FA recovery, backup/restore, dan

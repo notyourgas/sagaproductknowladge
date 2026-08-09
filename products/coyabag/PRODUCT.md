@@ -80,6 +80,11 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
   admin smoke, dua queue worker, security header API/admin, browser desktop/
   mobile, dan tiga scheduler cycle lulus. Deployment manifest public-safe
   mencatat exact source dan artifact parity.
+- Source hardening `599f19272e3f02c35b0ed654259ca5bad2273ee6` menutup
+  inheritance header storefront ketika HTML/asset memakai cache policy
+  location-level. Exact-main CI run `31300148412`, guarded Nginx deploy,
+  browser dua viewport, dan postdeploy audit lulus; HTML dan asset kini
+  konsisten mengirim HSTS, nosniff, frame policy, serta referrer policy.
 - Status `LOCAL_VALIDATED / MAINLINE_SYNCED / CI_VERIFIED /
   PRODUCTION_DEPLOYED`. Activation dan business readiness tetap `BLOCKED`.
 - Commerce nyata tetap ditahan oleh blocker provider/operasional.

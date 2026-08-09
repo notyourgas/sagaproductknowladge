@@ -1237,6 +1237,13 @@ scheduler cycle lulus. Readiness tetap fail-closed 17 pass / 17 blocker;
 provider, data owner, canary order, restore drill, commerce activation, dan
 business readiness tidak diaktifkan.
 
+Source hardening Nginx `599f19272e3f02c35b0ed654259ca5bad2273ee6`
+sudah `PRODUCTION_DEPLOYED` setelah exact-main CI run `31300148412` dan guarded
+config rollout. Response storefront HTML serta asset kini mempertahankan HSTS,
+nosniff, frame policy, dan referrer policy bersama cache policy masing-masing.
+Application release, provider, data bisnis, CSP, activation, dan readiness
+commerce tidak berubah.
+
 ### AOGTIVITY
 
 Web app mobile-first untuk operasi event/kompetisi: registrasi, verifikasi,

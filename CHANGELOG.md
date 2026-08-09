@@ -12,6 +12,22 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-09
 
+### COYABAG R4 storefront security-header inheritance
+
+- Ringkasan: Nginx storefront kini mempertahankan HSTS, nosniff, frame policy,
+  dan referrer policy pada HTML/asset walaupun location memiliki cache policy.
+- Klasifikasi `CONFIRMED`; source
+  `599f19272e3f02c35b0ed654259ca5bad2273ee6`, exact-main CI run
+  `31300148412`, status `PRODUCTION_DEPLOYED`.
+- Gate: red/green contract test, full RC, Laravel full, cart browser dua
+  viewport, admin build, dependency audit, Nginx syntax/reload, recoverable
+  config replacement, public header/cache probes, dan postdeploy service/log.
+- Production berubah: ya, hanya source-controlled Nginx storefront config.
+  Application release tetap `20260809-264c6ac`; provider, data customer/owner,
+  canary order, CSP, activation, dan business readiness tidak berubah.
+- File knowledge: product/dossier/changelog COYABAG, portfolio/root changelog,
+  master, GAPS, dan sync status.
+
 ### SagaBook S164 payment reconciliation concurrency lock candidate
 
 - Ringkasan: rekonsiliasi admin untuk payment session sama kini memakai lock
