@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 9 Agustus 2026 20:12 WIB
+- Updated: 9 Agustus 2026 21:46 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED` untuk workflow yang tercantum di
   [PRODUCT](PRODUCT.md)
@@ -23,6 +23,11 @@ dalam satu dokumen public-safe.
   membatasi workflow production menjadi manual-only dengan backup run dan
   checksum restore receipt sebagai input wajib. Quality Gate exact-SHA hijau
   dan tidak menghasilkan run deploy otomatis; production tetap S166.
+- Candidate S169 `28fccc91fbc65b9354edd50a73054326740bab32`
+  memusatkan dialog tambah/edit Background Admin dan memberi area kerja lebih
+  lebar tanpa mengubah workflow, API, atau data. Konten panjang menggulir di
+  dalam dialog dan tetap aman pada viewport mobile sampai desktop. Quality
+  Gate exact-SHA hijau; production tetap S166.
 - S131-S156 aktif kumulatif. Gate fresh backend 993/993, browser auth,
   tenant/cabang, Add-on, Resource, storefront/slot, race 5/5, build/design,
   dependency audit, backup/restore exact-SHA, manifest, DB audit 100, service,
@@ -45,7 +50,17 @@ dalam satu dokumen public-safe.
   dependency, backup/restore, public smoke, service health, dan rollback.
   Model, prompt, provider, dan KB tidak diubah oleh release ini.
 
-### Candidate S168, release kumulatif S162-S166, dan histori terkait
+### Candidate S169-S168, release kumulatif S162-S166, dan histori terkait
+- S169 `28fccc91` mengganti drawer kanan editor Background Admin dengan dialog
+  terpusat yang dipakai bersama oleh aksi tambah dan edit. Dialog mempertahankan
+  draft protection dan seluruh mutation existing, membatasi tinggi terhadap
+  viewport, memakai scroll internal, serta menyediakan target tutup minimum
+  44 piksel. Playwright membuktikan centered/no-overflow pada 390x844,
+  768x1024, dan 1440x900; fokus/Escape mobile/desktop serta CRUD
+  tambah-edit-persist-hapus juga lulus. Build, design audit 26/0, npm audit nol,
+  dan Quality Gate `31319295683` hijau. Status `UIUX_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; tidak ada perubahan database
+  production, API, auth, tenant, permission, provider, atau subscription.
 - S168 `abda8f6a` menghapus trigger `workflow_run` dan fallback evidence dari
   variables sehingga Quality Gate tidak dapat memulai deploy production.
   Operator tetap harus memberi dua evidence wajib melalui dispatch manual;

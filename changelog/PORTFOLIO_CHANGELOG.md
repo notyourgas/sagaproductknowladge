@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-09 - SagaBook S169 centered Background editor candidate
+
+- Source `28fccc91fbc65b9354edd50a73054326740bab32` memindahkan editor
+  tambah/edit Background Admin dari drawer kanan sempit ke dialog terpusat.
+- Area kerja kini lebih lebar, form panjang menggulir internal, target tutup
+  minimum 44 piksel, dan tidak overflow pada mobile, tablet, atau desktop.
+- Layout 3/3, fokus/Escape 2/2, CRUD 1/1, build, design 26/0, npm audit nol,
+  serta Quality Gate `31319295683` lulus. Status `UIUX_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production SagaBook tetap S166
+  dan produk SagaDev lain tidak berubah.
+
 ## 2026-08-09 - SagaView S158 payment reference integrity candidate
 
 - Backend `07f44cc4145fe7a6c65d0c8025e550cdcdd99278` mengubah referensi

@@ -12,16 +12,27 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-09T20:27:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-09T21:46:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `0b6fd0f5d03fd79c212cce92e2db7d34f0eab3d8` |
-| Informasi terakhir disinkronkan | SagaView S158 payment reference integrity pada source `07f44cc4145fe7a6c65d0c8025e550cdcdd99278`; write baru memakai allowlist, HMAC, dan unique tenant+hash tanpa raw reference pada metadata/audit. |
+| Baseline sebelum pembaruan | `a8bb51cab9d3aa89a455179fa170b3c03da8ede3` |
+| Informasi terakhir disinkronkan | SagaBook S169 centered Background editor pada source `28fccc91fbc65b9354edd50a73054326740bab32`; dialog tambah/edit terpusat dan responsif tanpa mengubah API, schema, atau production. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik. S158 belum production; referensi tetap opsional, sedangkan expiry dan provider callback masih gap. Guarded deploy dan authenticated UAT tetap wajib. |
+| Konflik | Tidak ada konflik. S169 belum production; review/merge, guarded deploy, dan authenticated Owner UAT tetap gate terpisah. |
 | Error | Tidak ada error sinkronisasi yang diketahui. |
 
 ## File yang berubah pada sinkronisasi ini
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
+
+## File dari sinkronisasi sebelumnya
 
 - `products/sagaview/PRODUCT.md`
 - `products/sagaview/DOSSIER.md`

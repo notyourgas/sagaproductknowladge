@@ -12,6 +12,20 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-09
 
+### SagaBook S169 centered Background editor candidate
+
+- Ringkasan: dialog tambah/edit Background Admin sekarang terpusat dan lebih
+  lebar, dengan scroll internal agar preview dan upload tidak terpotong.
+- Klasifikasi `CONFIRMED`; keputusan Andreas dan source
+  `28fccc91fbc65b9354edd50a73054326740bab32`.
+- Gate: Playwright layout 3/3, fokus/Escape 2/2, CRUD 1/1, build, design 26/0,
+  npm audit nol, dan Quality Gate `31319295683` sukses.
+- Production berubah: tidak. Status `UIUX_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; tidak ada API, schema/data mutation, provider,
+  subscription, atau data customer.
+- File knowledge: PRODUCT, DOSSIER, CHANGELOG, FEATURE_COVERAGE_LEDGER,
+  portfolio/root changelog, master knowledge, dan sync status SagaBook.
+
 ### SagaView S158 payment reference integrity candidate
 
 - Ringkasan: referensi pembayaran baru memakai allowlist dan HMAC; raw value

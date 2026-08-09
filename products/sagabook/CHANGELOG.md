@@ -1,5 +1,24 @@
 # SagaBook Changelog
 
+## 2026-08-09 - Background Admin centered editor S169 candidate
+
+- Keputusan Andreas `CONFIRMED`: wizard tambah dan edit Background Admin harus
+  berada di tengah agar ukuran dan isi tidak terpotong oleh drawer kanan.
+- Before: editor memakai drawer kanan sempit sehingga panel preview, upload,
+  status file, dan tips mudah terjepit. After: kedua alur memakai dialog bersama
+  yang terpusat, responsif sampai `max-w-4xl`, dibatasi tinggi viewport, dan
+  menggulirkan form panjang di dalam dialog. Dampak: area pengeditan lebih lega
+  dan tetap mudah dipakai pada mobile, tablet, maupun desktop.
+- Source `28fccc91fbc65b9354edd50a73054326740bab32` pada branch
+  `codex/s169-sagabook-background-modal-center` sudah dipush. Playwright layout
+  3/3 untuk 390x844, 768x1024, 1440x900; fokus/Escape 2/2; CRUD
+  tambah-edit-persist-hapus 1/1; build, design audit 26/0, npm audit nol, dan
+  Quality Gate `31319295683` lulus.
+- Klasifikasi `CONFIRMED`. Status `UIUX_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Production tetap source S166 / release
+  `20260809083131-5c76735`; tidak ada deploy, schema/data mutation, provider,
+  subscription, atau credential customer.
+
 ## 2026-08-09 - Production deploy manual evidence gate S168 candidate
 
 - Klasifikasi `CONFIRMED`; source

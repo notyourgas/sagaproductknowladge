@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 9 Agustus 2026 17:12 WIB
+Evidence cut-off: 9 Agustus 2026 21:46 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -81,6 +81,14 @@ restore receipt wajib diberikan melalui dispatch manual, sedangkan exact-SHA,
 migration, DB audit, rollback, dan smoke tetap fail-closed. Quality Gate
 `31314888994` hijau. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
 production tetap S166.
+
+Candidate UI SagaBook S169
+`28fccc91fbc65b9354edd50a73054326740bab32` memusatkan dialog tambah/edit
+Background Admin, memperlebar area kerja, serta menggulirkan form panjang di
+dalam viewport agar preview dan upload tidak terpotong. Mobile, tablet,
+desktop, fokus/Escape, CRUD, build, design, dependency audit, dan Quality Gate
+`31319295683` hijau. Status `UIUX_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; production tetap S166.
 
 Status code: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; business readiness
 belum tercapai karena dua tenant masih mempunyai gap setup pilot.

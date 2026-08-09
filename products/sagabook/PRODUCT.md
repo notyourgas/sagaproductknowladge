@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 9 Agustus 2026 20:12 WIB
+Updated: 9 Agustus 2026 21:46 WIB
 Evidence status: production + candidate source verified
 
 ## Tujuan dokumen
@@ -27,6 +27,13 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   sekarang hanya dapat dimulai manual dengan backup run dan checksum receipt
   restore yang wajib, serta tetap mengunci exact SHA. Quality Gate
   `31314888994` hijau dan tidak memicu deploy; production tetap S166.
+- Candidate UI S169 `28fccc91fbc65b9354edd50a73054326740bab32`
+  mengganti editor Background Admin dari drawer kanan sempit menjadi dialog
+  lebar yang terpusat untuk alur tambah dan edit. Isi panjang menggulir di
+  dalam dialog, tetap berada di viewport, dan tidak memotong panel upload.
+  Gate lokal dan Quality Gate `31319295683` hijau; status
+  `UIUX_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`, production
+  tetap S166.
 - Release ini mempromosikan seluruh ancestor S157-S166: retry booking manual
   idempoten dan read-after-write operator, combined exit S7-S8, callback replay
   conflict protection, transisi status provider exactly-once, serta CTA Maps
@@ -57,7 +64,16 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   dibuat. Source S98-S166 yang menjadi ancestor release aktif sudah aktif
   kumulatif; arah storefront lebar S94/S108 tetap deprecated dan tidak aktif.
 
-## Candidate S168, release S162-S166, dan histori terkait
+## Candidate S169-S168, release S162-S166, dan histori terkait
+- Candidate UI S169 `28fccc91` pada branch
+  `codex/s169-sagabook-background-modal-center` memakai dialog bersama untuk
+  tambah dan edit Background Admin. Dialog terpusat, lebarnya responsif sampai
+  `max-w-4xl`, tinggi dibatasi viewport, dan area form menggulir internal.
+  Playwright layout mobile/tablet/desktop 3/3, fokus/Escape mobile/desktop 2/2,
+  CRUD tambah-edit-persist-hapus 1/1, build, design audit 26/0, npm audit nol,
+  serta Quality Gate `31319295683` lulus. Status `UIUX_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; tidak ada API, schema, data
+  production, subscription, provider, atau runtime production yang berubah.
 - Candidate S168 `abda8f6a` membuat workflow production manual-only dan tidak
   lagi mengambil fallback evidence dari repository variables. Focused release
   hardening 14/14 (118 assertion), build, npm/Composer audit, diff, MySQL 8.4,
