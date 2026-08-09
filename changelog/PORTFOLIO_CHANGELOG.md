@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-09 - SagaBook S162 payment webhook abuse guard candidate
+
+- Source `e294fb4791f168772ab7c101443efbf45f9147a8` menambah boundary
+  agregat dan per-event dengan cache key ter-fingerprint pada webhook pembayaran.
+- Request yang terkena 429 berhenti sebelum controller dan tidak menambah
+  payment event maupun audit database. 136 test relevan/unit, DB audit
+  disposable 100, build/design, dan audit dependency lulus.
+- Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production SagaBook tetap S161, tanpa canary atau
+  perubahan data production.
+
 ## 2026-08-09 - SagaView S148-S150 cumulative production
 
 - Studio `4d25f6069737dc8f14342a62b6c6241081d544d3` aktif sebagai release

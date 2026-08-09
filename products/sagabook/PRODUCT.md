@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 9 Agustus 2026 10:40 WIB
+Updated: 9 Agustus 2026 12:09 WIB
 Evidence status: production + source verified
 
 ## Tujuan dokumen
@@ -47,6 +47,17 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   kumulatif; arah storefront lebar S94/S108 tetap deprecated dan tidak aktif.
 
 ## Histori kandidat sebelum release S161
+- Candidate security/database S162 source
+  `e294fb4791f168772ab7c101443efbf45f9147a8` pada branch
+  `codex/s162-sagabook-webhook-abuse-guard` menambah abuse boundary webhook
+  pembayaran berlapis: batas agregat client dan batas per-event memakai
+  fingerprint, sementara response 429 tetap public-safe. Request yang dibatasi
+  berhenti sebelum controller dan tidak menambah payment event atau audit.
+  Gate hijau: 136 test relevan/unit dengan 885 assertion, migration penuh,
+  backfill/reconcile dan DB audit disposable 100, build/design, Pint/syntax/diff,
+  serta npm/Composer/OSV nol advisory. Status `SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+  production tetap source/release S161 dan provider canary nyata tidak dijalankan.
 - Candidate S160 source `71eb45bab26107b7d3f067bed08e518f0fc6b262`
   pada branch `codex/s160-sagabook-provider-transition` memungkinkan callback
   provider dengan reference fallback yang sama bergerak dari pending atau

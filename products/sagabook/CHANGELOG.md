@@ -1,5 +1,24 @@
 # SagaBook Changelog
 
+## 2026-08-09 - Payment webhook abuse guard S162 candidate
+
+- Klasifikasi `CONFIRMED`; source
+  `e294fb4791f168772ab7c101443efbf45f9147a8` pada branch
+  `codex/s162-sagabook-webhook-abuse-guard` sudah dipush.
+- Before: limiter webhook hanya mempunyai satu boundary per event. After:
+  boundary agregat client dan per-event berjalan berlapis dengan cache key
+  ter-fingerprint; response 429 public-safe existing dipertahankan.
+- Request yang dibatasi berhenti sebelum controller sehingga tidak menambah
+  payment event atau audit database. Tidak ada migration, perubahan workflow,
+  provider canary, credential, atau data customer.
+- Gate hijau: 136 test relevan/unit (885 assertion), migration penuh,
+  backfill/reconcile dan DB audit disposable 100, build/design 26/0,
+  Pint/syntax/diff, serta npm/Composer/OSV nol advisory.
+- Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Production tetap source
+  `64ed036b514d351f3e537be557d69117badf9d24` / release
+  `20260809033844-64ed036`.
+
 ## 2026-08-09 - Release kumulatif S157-S161 production
 
 - Klasifikasi `CONFIRMED`; source

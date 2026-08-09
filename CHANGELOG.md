@@ -12,6 +12,23 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-09
 
+### SagaBook S162 payment webhook abuse guard candidate
+
+- Ringkasan: webhook payment memperoleh boundary agregat dan per-event
+  berlapis dengan cache key ter-fingerprint; request 429 berhenti sebelum
+  controller dan tidak menambah payment event atau audit database.
+- Klasifikasi `CONFIRMED`; source
+  `e294fb4791f168772ab7c101443efbf45f9147a8`, status
+  `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: 136 test relevan/unit (885 assertion), migration penuh,
+  backfill/reconcile dan DB audit disposable 100, build/design, Pint/syntax,
+  diff, serta npm/Composer/OSV nol advisory.
+- Production berubah: tidak. Runtime SagaBook tetap S161; provider canary,
+  credential, dan data customer tidak digunakan.
+- File knowledge: PRODUCT, DOSSIER, CHANGELOG, FEATURE_COVERAGE_LEDGER,
+  portfolio/root changelog, master knowledge, dan sync status SagaBook.
+
 ### SagaView S148-S150 cumulative production
 
 - Ringkasan: export folder fail-closed, checkpoint recovery atomik, dan cleanup

@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 8 Agustus 2026 23:17 WIB
+- Updated: 9 Agustus 2026 12:09 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED` untuk workflow yang tercantum di
   [PRODUCT](PRODUCT.md)
@@ -196,6 +196,13 @@ setelahnya tersedia grace read-only 7 hari sebelum suspend.
 terverifikasi; fallback manual harus tetap terlihat.
 
 ## Technical overview
+
+Candidate S162 source `e294fb4791f168772ab7c101443efbf45f9147a8`
+menambah limiter webhook pembayaran berlapis dengan cache key ter-fingerprint.
+Boundary agregat dan per-event mencegah request berlebih mencapai controller;
+tes membuktikan response 429 tidak menambah payment event maupun audit. Gate
+relevan/unit, database disposable, build, dan dependency security hijau. Status
+`IMPLEMENTED_NOT_DEPLOYED`; production dan provider runtime tidak berubah.
 
 Multi-tenant web application dengan storefront, admin, super-admin, background
 jobs, billing, audit, dan immutable release process.

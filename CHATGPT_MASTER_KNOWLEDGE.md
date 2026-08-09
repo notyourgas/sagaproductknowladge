@@ -90,6 +90,14 @@ Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; provider canary nyata,
 subscription activation, authenticated Owner/operator UAT, dan pilot tetap
 gate terpisah sebelum `BUSINESS_READY`.
 
+Candidate security/database SagaBook S162 source
+`e294fb4791f168772ab7c101443efbf45f9147a8` menambah limiter webhook
+pembayaran berlapis dengan cache key ter-fingerprint. Boundary agregat dan
+per-event mencegah request yang dibatasi mencapai controller atau menambah
+payment event/audit. Gate relevan/unit, database disposable, build/design, dan
+dependency audit hijau. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+production tetap S161 dan provider canary nyata tidak dijalankan.
+
 SagaBook S119 aktif pada source
 `20ff6829f96cebec22d34844291b3d522b91774a`, release
 `20260805052322-20ff682`, berstatus `PRODUCTION_DEPLOYED /
