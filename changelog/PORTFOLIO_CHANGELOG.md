@@ -1,5 +1,22 @@
 # Portfolio Changelog
 
+## 2026-08-09 - SagaView device lease close/reopen recovery production
+
+- Studio `5eeef36904f84c7cf01d8f365f3d6a94ba9eec9e` / release
+  `20260809162045-5eeef36` dan backend production-lineage
+  `13a94c5f32d278fd3fa7fad7035b4ddc8184763f` / release
+  `20260809162045-13a94c5` aktif di production.
+- Close normal melepas lease secara background; reopen cepat pulih melalui
+  close intent, dan crash/force-close memiliki takeover eksplisit yang
+  memerlukan proof device sama, merotasi token, serta tercatat di audit.
+- Backup terenkripsi, disposable restore tiga database, rehearsal, live
+  rollback-cycle, preservation, service/header/route/queue/CORS/journal smoke
+  lulus. Rollback backend S147 dan Studio S150 dipertahankan.
+- Status `SECURITY_VALIDATED / UIUX_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`; tidak ada migration, perubahan paket/pricing/payment,
+  atau promosi kandidat hardening S152-S156 lain. UAT device nyata tetap gate
+  sebelum `BUSINESS_READY`.
+
 ## 2026-08-09 - SagaView S156 backend security integration candidate
 
 - Backend `65721ebc949e8325d9ab3c5b52306fb66c9de90d` menyatukan

@@ -101,16 +101,17 @@ tersebut dan meredaksi response record lama. Studio
   lock; request tanpa versi ditolak 422 dan snapshot stale ditolak 409 tanpa
   mutasi database. Browser memuat ulang state terbaru dan tidak mengulang
   mutasi otomatis. Production tidak berubah.
-  Candidate pemulihan lease membuka ulang memakai Studio
-  `5eeef36904f84c7cf01d8f365f3d6a94ba9eec9e` dan backend
-  `75f43b40dcd1dc81d601f16245cea3b659af483d`. Saat Studio ditutup normal,
+  Pemulihan lease membuka ulang aktif memakai Studio
+  `5eeef36904f84c7cf01d8f365f3d6a94ba9eec9e` dan backend production-lineage
+  `13a94c5f32d278fd3fa7fad7035b4ddc8184763f`. Saat Studio ditutup normal,
   client mengantrekan release lease dan menandai close intent singkat agar
   reopen cepat dapat pulih tanpa menunggu TTL. Bila browser crash atau proses
   ditutup paksa, operator dapat memilih `Ambil alih di jendela ini`; backend
   hanya menerima takeover dari credential dan proof perangkat yang sama,
   mengganti token lama, dan mencatat audit. Status `SECURITY_VALIDATED /
-  UIUX_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
-  tetap backend S147 dan Studio S150.
+  UIUX_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; backend release
+  `20260809162045-13a94c5` dan Studio release
+  `20260809162045-5eeef36` aktif, dengan S147/S150 dipertahankan sebagai rollback.
   S156 backend `65721ebc949e8325d9ab3c5b52306fb66c9de90d`
   mengintegrasikan S155 entitlement dan audited device takeover pada satu
   lineage kumulatif S152-S156. Full backend gabungan 972/11.374, build,
@@ -129,7 +130,8 @@ Menjadi ringkasan fakta kanonik SagaView. Detail lengkap berada di
 
 Fakta release di dokumen ini mengacu pada exact source dan runtime production
 yang diverifikasi sampai 9 Agustus 2026. S148 sampai S150 sudah aktif
-kumulatif melalui exact source S150.
+kumulatif dan pemulihan close/reopen aktif melalui exact source Studio
+`5eeef369` serta backend production-lineage `13a94c5f`.
 
 ## Status production terbaru
 
@@ -143,12 +145,12 @@ kumulatif melalui exact source S150.
   lalu memakai dua kartu sesi berdampingan pada QHD/4K di dalam batas 1400
   piksel. Ringkasan, filter, retry, cabut izin, dan workflow privacy tidak
   berubah.
-- Backend source `0cda8a09fa3f4bb08a483f6bd46ba25dc4fa6b28` aktif sebagai
-  release `20260808225730-0cda8a0`; rollback
-  `20260808190040-1af8852` dipertahankan.
-- Studio source `4d25f6069737dc8f14342a62b6c6241081d544d3` aktif sebagai
-  release `20260809103753-4d25f60`; rollback langsung
-  `20260808225730-df959cc` dipertahankan.
+- Backend source `13a94c5f32d278fd3fa7fad7035b4ddc8184763f` aktif sebagai
+  release `20260809162045-13a94c5`; rollback
+  `20260808225730-0cda8a0` dipertahankan.
+- Studio source `5eeef36904f84c7cf01d8f365f3d6a94ba9eec9e` aktif sebagai
+  release `20260809162045-5eeef36`; rollback langsung
+  `20260809103753-4d25f60` dipertahankan.
 - S146 mengaktifkan consent S144 dan Support Hub device-scoped. Missing/
   invalid/revoked credential ditolak, tenant/product/actor diturunkan
   server-side, launcher tetap fail-soft, dan foto/folder/editor/export tidak
@@ -178,15 +180,20 @@ kumulatif melalui exact source S150.
   read model mengirim versi, PATCH wajib membawa expected version, dan service
   memeriksanya di dalam transaksi setelah row lock. Konflik stale mengembalikan
   respons aman dan tidak mengubah database; kandidat belum dideploy.
-- Pemulihan lease setelah reopen sudah tervalidasi lokal: close normal melepas
+- Pemulihan lease setelah reopen sudah aktif di production: close normal melepas
   lease secara background, race reopen cepat diselesaikan otomatis hanya bila
   ada close intent terbaru, dan crash/force-close memiliki takeover eksplisit
   dengan konfirmasi operator. Token instance lama langsung tidak valid setelah
-  takeover; kandidat belum dideploy.
-- S156 menyatukan backend entitlement dan takeover pada exact SHA
+  takeover. Guarded release lulus backup/restore tiga database, candidate dan
+  rollback rehearsal, live rollback-cycle, snapshot preservation, service,
+  header, route, queue, serta journal smoke. UAT perangkat nyata tetap langkah
+  operasional sebelum klaim `BUSINESS_READY`.
+- S156 tetap merupakan kandidat kumulatif yang menyatukan backend entitlement
+  dan takeover pada exact SHA
   `65721ebc949e8325d9ab3c5b52306fb66c9de90d`, sehingga release berikutnya tidak
-  kehilangan salah satu hardening. Studio reopen tetap kandidat terpisah dan
-  urutan deploy kelak wajib backend lebih dahulu.
+  kehilangan salah satu hardening bila kelak dipromosikan. Release recovery
+  saat ini sengaja memakai lineage S147 plus takeover saja; hardening S152-S156
+  lainnya tetap belum dideploy.
 - Entitlement live memberi Growth 50 dan Pro 100 frame aktif. Harga, device,
   preset, offline grace, storage, laporan, support, payment, dan fair-use tidak
   berubah.

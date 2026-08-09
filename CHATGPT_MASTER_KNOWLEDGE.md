@@ -749,24 +749,29 @@ SagaVIEW 175/1.935, full backend 971/11.365, build, dependency audit, integrity
 audit nol issue, dan deploy gate disposable 6/6 lulus. Status
 `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED /
 IMPLEMENTED_NOT_DEPLOYED`; production tetap backend S147 dan Studio S150.
-Candidate pemulihan close/reopen memakai Studio
-`5eeef36904f84c7cf01d8f365f3d6a94ba9eec9e` dan backend
-`75f43b40dcd1dc81d601f16245cea3b659af483d`. Close normal mengantrekan
+Pemulihan close/reopen production memakai Studio
+`5eeef36904f84c7cf01d8f365f3d6a94ba9eec9e` / release
+`20260809162045-5eeef36` dan backend production-lineage
+`13a94c5f32d278fd3fa7fad7035b4ddc8184763f` / release
+`20260809162045-13a94c5`. Close normal mengantrekan
 release; close intent singkat membuat reopen cepat pulih tanpa menunggu TTL.
 Crash/force-close memiliki takeover eksplisit dengan konfirmasi. Takeover wajib
 memakai credential dan proof device existing, mengganti token lama, serta
-mencatat audit. Backend 970/11.360, Studio 188 unit, dan browser 126 pass/3
-intentional skip lulus. Status `SECURITY_VALIDATED / UIUX_VALIDATED /
-LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap backend S147 dan
-Studio S150.
+mencatat audit. Exact-lineage backend 962/11.312, Studio 188 unit, dan browser
+126 pass/3 intentional skip lulus. Guarded release juga lulus backup/restore,
+rehearsal, live rollback-cycle, preservation, service/header/route/queue/CORS,
+dan journal smoke. Status `SECURITY_VALIDATED / UIUX_VALIDATED /
+PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; rollback backend S147 dan Studio
+S150 dipertahankan. UAT device nyata masih gate sebelum `BUSINESS_READY`.
 S156 backend `65721ebc949e8325d9ab3c5b52306fb66c9de90d` menyatukan
 S155 entitlement dan audited device takeover pada satu lineage kumulatif
 S152-S156. Focused device 4/47, entitlement 2/14, full backend 972/11.374,
 build, dependency audit, database disposable integrity nol issue, dan deploy
 gate testing 6/6 lulus. Status `SECURITY_VALIDATED /
 DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
-production tetap backend S147 dan Studio S150. Studio reopen `5eeef369` tetap
-candidate terpisah dan urutan deploy wajib backend S156 lebih dahulu.
+production untuk hardening S152-S156 tersebut tetap backend lineage S147 plus
+takeover saja. Studio reopen `5eeef369` sudah aktif, tetapi kandidat backend
+S152-S156 lain tetap belum dideploy.
 Harga bulanan: Growth Rp200.000, Pro Rp500.000.
 Growth mencakup 1 device, 50 frame, 3 preset, offline 24 jam, dan 2 GB aset
 frame cloud. Pro mencakup 4 device, 100 frame, 10 preset, offline 168 jam, 10 GB

@@ -104,14 +104,16 @@ handoff, support diagnostics, trial dua fase, subscription, dan billing.
 Owner Console, Studio Console, device lease, session workflow, frame catalog,
 editor/review, export/print, recovery, support, trial, plan, dan billing.
 
-Candidate pemulihan reopen membuat Studio melepas exclusive lease melalui
+Pemulihan reopen production membuat Studio melepas exclusive lease melalui
 background beacon saat jendela ditutup normal. Close intent berumur pendek
 menutup race saat aplikasi dibuka kembali terlalu cepat. Jika unload tidak
 terjadi karena crash/force-close, operator mendapat aksi `Ambil alih di jendela
 ini` dengan konfirmasi. Takeover tetap memerlukan credential dan proof
 kriptografis perangkat yang sama; backend mengganti token lease, mencatat audit,
 dan instance lama gagal pada heartbeat/request berikutnya. Foto, folder,
-editor, export, pricing, entitlement, dan offline grace tidak berubah.
+editor, export, pricing, entitlement, dan offline grace tidak berubah. Fitur
+aktif pada backend `20260809162045-13a94c5` dan Studio
+`20260809162045-5eeef36`.
 
 UI production memakai shell operasional solid dengan hierarchy lokasi,
 tenant, status, dan aksi utama yang jelas. Target interaktif minimal 44 px,
@@ -650,10 +652,14 @@ Device lease hanya mengunci Studio/start-session. Owner Console dapat digunakan
 dari browser setelah login. Customer tidak mereset sesi sendiri; cleanup
 recovery state, error/offline/reconnect/retry, dan emergency transfer
 fail-closed. Entitlement ditentukan server; UI hanya merender snapshot.
-Pada candidate reopen, close normal memulihkan lease otomatis. Crash atau
+Pada release reopen production, close normal memulihkan lease otomatis. Crash atau
 force-close tidak menuntut operator mengetahui cara mematikan instance lama;
 operator dapat melakukan takeover eksplisit dari device terautentikasi yang
-sama tanpa menunggu TTL. Candidate belum production.
+sama tanpa menunggu TTL. Backend `20260809162045-13a94c5` dan Studio
+`20260809162045-5eeef36` aktif; S147/S150 tetap tersedia sebagai rollback.
+Backup/restore, rehearsal, live rollback-cycle, preservation, service, header,
+route, queue, dan journal gate lulus. UAT pada device Studio nyata masih perlu
+dilakukan sebelum status `BUSINESS_READY`.
 
 ## Business model
 

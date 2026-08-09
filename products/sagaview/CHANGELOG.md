@@ -1,5 +1,31 @@
 # SagaView Changelog
 
+## 2026-08-09 - Device lease close/reopen recovery production
+
+- Klasifikasi `CONFIRMED`. Studio source
+  `5eeef36904f84c7cf01d8f365f3d6a94ba9eec9e` aktif sebagai release
+  `20260809162045-5eeef36`; backend production-lineage
+  `13a94c5f32d278fd3fa7fad7035b4ddc8184763f` aktif sebagai release
+  `20260809162045-13a94c5`.
+- Close normal mengirim release lease secara background. Reopen cepat memakai
+  close intent 15 detik, sedangkan crash/force-close menyediakan takeover
+  eksplisit yang tetap membutuhkan credential dan proof device yang sama,
+  merotasi token lama, dan mencatat audit.
+- Backend sengaja dibuat dari exact S147 plus perubahan takeover saja; kandidat
+  hardening S152-S156 lain tidak ikut terpromosikan. Tidak ada migration,
+  perubahan foto/path lokal, pricing, paket, subscription, atau payment.
+- Exact-lineage gate lulus focused 4/45 dan full backend 962/11.312. Gate Studio
+  tetap 188 unit dan Playwright 126 pass/3 intentional skip; dependency audit
+  nol advisory.
+- Guarded production gate lulus encrypted backup checksum dan disposable
+  restore tiga database, candidate/rollback rehearsal, atomic activation,
+  live rollback-cycle, data/payment preservation, service, security header,
+  route, queue, CORS, dan journal smoke. Rollback dipertahankan pada backend
+  `20260808225730-0cda8a0` dan Studio `20260809103753-4d25f60`.
+- Status `SECURITY_VALIDATED / UIUX_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`. UAT close/reopen pada perangkat Studio nyata dan
+  monitoring conflict-rate masih diperlukan sebelum klaim `BUSINESS_READY`.
+
 ## 2026-08-09 - S156 backend security integration candidate
 
 - Backend `65721ebc949e8325d9ab3c5b52306fb66c9de90d` menyatukan sibling

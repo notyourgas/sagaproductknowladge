@@ -12,6 +12,27 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-09
 
+### SagaView device lease close/reopen recovery production
+
+- Ringkasan: perbaikan close/reopen SagaView aktif di production; close normal
+  melepas lease, reopen cepat dapat pulih, dan crash/force-close memiliki
+  takeover eksplisit dari device terautentikasi yang sama.
+- Klasifikasi `CONFIRMED`; backend source/release
+  `13a94c5f32d278fd3fa7fad7035b4ddc8184763f` /
+  `20260809162045-13a94c5`, Studio source/release
+  `5eeef36904f84c7cf01d8f365f3d6a94ba9eec9e` /
+  `20260809162045-5eeef36`.
+- Production berubah: ya. Status `PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`; rollback S147/S150 dipertahankan. Backup/restore,
+  rehearsal, live rollback-cycle, preservation, service, security header,
+  route, queue, CORS, dan journal smoke lulus.
+- Tidak ada migration atau perubahan foto/path lokal, pricing, paket,
+  subscription, payment, provider, maupun data tenant. Kandidat backend
+  S152-S156 lain tetap belum dideploy; UAT device nyata masih memisahkan
+  release ini dari `BUSINESS_READY`.
+- File knowledge: PRODUCT, DOSSIER, CHANGELOG, FEATURE_COVERAGE_LEDGER,
+  portfolio/root changelog, master knowledge, dan sync status SagaView.
+
 ### SagaView device lease close/reopen recovery candidate
 
 - Ringkasan: Studio kini melepas exclusive lease saat close normal, memulihkan
