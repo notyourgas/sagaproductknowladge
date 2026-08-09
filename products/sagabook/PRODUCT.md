@@ -48,7 +48,7 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Histori kandidat sebelum release S161
 - Candidate security/database S165 source
-  `33c10710f0aa18586658959162662df790ed55a6` pada branch
+  `33c1071069f9f20d74268738c87d2c22e4580391` pada branch
   `codex/s165-sagabook-payment-stale-recovery` menutup stale multi-tab pada
   Payment Monitor. Browser mengirim versi payment session yang sedang dilihat;
   versi lama ditolak 409 di dalam lock sebelum provider atau audit, lalu UI

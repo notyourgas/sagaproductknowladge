@@ -16,7 +16,7 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
 | Baseline sebelum pembaruan | `a481883a13dc2c39849757101d71c93b93d5c204` |
-| Informasi terakhir disinkronkan | SagaBook S165 source `33c10710f0aa18586658959162662df790ed55a6` menutup stale multi-tab Payment Monitor dengan version guard di dalam lock dan recovery status authoritative; status `IMPLEMENTED_NOT_DEPLOYED`. |
+| Informasi terakhir disinkronkan | SagaBook S165 source `33c1071069f9f20d74268738c87d2c22e4580391` menutup stale multi-tab Payment Monitor dengan version guard di dalam lock dan recovery status authoritative; status `IMPLEMENTED_NOT_DEPLOYED`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
 | Konflik | Tidak ada konflik source/runtime. Production SagaBook tetap S161; provider canary, credential, data customer, subscription, activation, dan business readiness tidak diubah. |
 | Error | Tidak ada error sinkronisasi yang diketahui. |

@@ -108,7 +108,7 @@ dependency audit hijau. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
 production tetap S161 dan provider canary nyata tidak dijalankan.
 
 Candidate security/database SagaBook S165 source
-`33c10710f0aa18586658959162662df790ed55a6` menutup stale multi-tab Payment
+`33c1071069f9f20d74268738c87d2c22e4580391` menutup stale multi-tab Payment
 Monitor. Versi payment session dari browser diperiksa di dalam lock; request
 stale ditolak 409 sebelum provider/audit dan UI memuat status authoritative
 dengan recovery aksesibel. Dua tab berurutan hanya memicu satu provider check.

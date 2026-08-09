@@ -2,7 +2,7 @@
 
 ## 2026-08-09 - SagaBook S165 stale multi-tab payment recovery candidate
 
-- Source `33c10710f0aa18586658959162662df790ed55a6` membuat Payment
+- Source `33c1071069f9f20d74268738c87d2c22e4580391` membuat Payment
   Monitor mengirim versi payment session, menolak tab stale 409 di dalam lock
   sebelum provider/audit, lalu memuat status server yang authoritative.
 - Dua tab berurutan menghasilkan satu provider check; permission-negative,

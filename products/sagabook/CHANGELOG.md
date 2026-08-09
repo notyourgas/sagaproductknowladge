@@ -3,7 +3,7 @@
 ## 2026-08-09 - Payment Monitor stale multi-tab recovery S165 candidate
 
 - Klasifikasi `CONFIRMED`; source
-  `33c10710f0aa18586658959162662df790ed55a6` pada branch
+  `33c1071069f9f20d74268738c87d2c22e4580391` pada branch
   `codex/s165-sagabook-payment-stale-recovery` sudah dipush.
 - Before: tab lama dapat menjalankan rekonsiliasi setelah tab lain mengubah
   payment session. After: frontend mengirim versi yang dilihat, backend
