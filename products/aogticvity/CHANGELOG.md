@@ -8,6 +8,22 @@ Mencatat perubahan material AOGTIVITY/AOGTICVITY/17an/Olimpiade.
 
 Nama lama dipertahankan sebagai provenance; status runtime harus eksplisit.
 
+## 2026-08-10 - Permanent participant access dan WA Manual
+
+- `CONFIRMED` melalui `DEC-072`: peserta Approved memperoleh link personal
+  reusable sampai admin revoke/rotate; sesi browser tetap delapan jam.
+- Source `625efddf2da75a416fb82ed21e51725390a77e7c`, migration 030,
+  Hostinger `20260809T230612Z`, dan Vercel
+  `dpl_4txuxGraGsfaT9BSWzWvT24uZ8wg` production-deployed.
+- Sheet Restricted/owner-only memproyeksikan link hanya ke baris Approved pada
+  tab `WA Manual`; pesan salin, tombol WA, alignment, dan formula lulus tanpa
+  memindahkan source of truth dari MySQL. Worker otomatis tetap OFF karena
+  credential service account belum tersedia.
+- Gate: 145 regression test, 28 integration test MySQL, 30 migrations,
+  dependency audit nol vulnerability, backup/restore drill, immutable release,
+  dan 13 public-domain checks lulus. Valid-link/revoke/two-device UAT manusia
+  tetap pending.
+
 ## 2026-08-09 - Guarded Google Sheets participant reporting
 
 - `CONFIRMED`: Google Sheet `PESERTA AOGTIVITY` memiliki Dashboard, Data

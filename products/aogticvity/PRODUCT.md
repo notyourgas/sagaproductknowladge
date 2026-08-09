@@ -1,6 +1,6 @@
 # AOGTIVITY Product Knowledge
 
-Updated: 9 Agustus 2026
+Updated: 10 Agustus 2026
 Evidence status: public Vercel delivery + database-backed auth, registration, team, and event-day operations runtime
 
 ## Tujuan dokumen
@@ -65,8 +65,8 @@ menunggu human UAT.
 Public delivery kanonik: `https://aogticvities.fun`.
 
 Rebrand AOGTIVITY pertama kali aktif pada source `e4c217b`; runtime terbaru
-adalah `e35accbbdb9d220d4e1ac432ab1c5d06d40397e1`, Hostinger
-`20260809T155737Z`, dan Vercel `dpl_J7P2d2iUfsrv23ZP5EpahfypLeXz`. UI,
+adalah `625efddf2da75a416fb82ed21e51725390a77e7c`, Hostinger
+`20260809T230612Z`, dan Vercel `dpl_4txuxGraGsfaT9BSWzWvT24uZ8wg`. UI,
 metadata, PWA, aset merek, pesan
 WhatsApp baru, serta issuer TOTP baru memakai AOGTIVITY. Domain, repository,
 path deploy, environment variable, cookie/session prefix, database, service,
@@ -86,12 +86,15 @@ kompatibel.
   loopback-only.
 - Check-in, roster, event-master, dan result publish/correct memakai versioning,
   idempotency, permission, persistence MySQL, dan audit event.
-- Migration 029 serta runtime source `e35accb` menyediakan laporan peserta satu
-  arah MySQL ke Google Sheets: dashboard, data lengkap, antrean proses, rekap
-  kategori, sync log, digest idempotent, timer satu menit, dan kontrol admin.
-  Sinkronisasi PII masih OFF dan fail-closed sampai Sheet berstatus Restricted
-  serta service account hanya-runtime tersedia; layout Sheet tanpa data peserta
-  sudah aktif dan tervalidasi.
+- Migration 029 menyediakan laporan peserta satu arah MySQL ke Google Sheets.
+  Sheet kini Restricted/owner-only dan tab `WA Manual` berisi link personal
+  hanya untuk peserta Approved melalui koneksi Drive terautentikasi. Worker
+  otomatis Hostinger tetap OFF karena credential service account belum tersedia.
+- Migration 030 dan runtime source `625efdd` menyediakan permanent participant
+  access yang dapat dipakai ulang. Token HMAC berada di URL fragment dan tidak
+  disimpan mentah; setiap login memeriksa approval, role, banned state, access
+  policy, status, dan versi pass. Revoke/withdraw memutar versi serta mencabut
+  sesi aktif. Sesi browser tetap HttpOnly/Secure dan berumur delapan jam.
 - Public registration memakai validasi server, consent version, anti-bot,
   anonymous rate limit, idempotent receipt, transaksi MySQL, dan audit. Admin
   dapat membaca serta memverifikasi pendaftaran dari authenticated desk.

@@ -305,14 +305,24 @@ sudah terverifikasi, tetapi status webhook dan valid-link two-device session
 UAT masih menunggu. Projection display, export/print, dan custom domain/TLS
 tersedia; rehearsal runtime penuh belum terverifikasi.
 
+Permanent participant access menjadi fallback operasional saat provider WA
+tidak tersedia. Link personal dapat dipakai ulang sampai admin mencabut atau
+memutar pass; sesi browser tetap terbatas delapan jam. Token ditandatangani,
+berada pada URL fragment, tidak disimpan mentah, dan diverifikasi terhadap
+approval, role player, banned state, access policy, status, serta versi pass.
+Withdraw/revoke juga mencabut sesi aktif. Fitur sudah production-deployed;
+valid-link UAT pada perangkat nyata tetap diperlukan.
+
 Google Sheets participant reporting memakai proyeksi satu arah dari MySQL,
 bukan database kedua. Dashboard admin dapat mengaktifkan, menonaktifkan, dan
 memicu sync; timer Hostinger menjalankan reconciliation maksimal setiap menit
 dan digest melewati snapshot yang tidak berubah. Adapter memeriksa permission
 Drive dan menolak semua target bertipe `anyone` sebelum nomor WhatsApp penuh
 ditulis. Service-account private key hanya boleh berada di runtime Hostinger.
-Fondasi dan layout sudah `PRODUCTION_DEPLOYED`, tetapi data sync tetap
-`NOT_PRODUCTION_ACTIVATED` sampai Sheet Restricted dan credential tersedia.
+Sheet sekarang Restricted/owner-only; tab `WA Manual` menerima link personal
+Approved melalui koneksi Drive terautentikasi. Worker otomatis tetap
+`NOT_PRODUCTION_ACTIVATED` karena credential service account belum tersedia;
+source of truth tetap MySQL.
 
 ## Data yang digunakan
 

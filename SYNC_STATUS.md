@@ -12,16 +12,28 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-10T02:18:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-10T06:20:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `6f07e73658f40d76560d756d30e1fdcad630c430` |
-| Informasi terakhir disinkronkan | SagaVIEW S162 source `063dfc1ac628c7862ac6140e53ca7e5158521c4c`; stale save draft ditolak dengan checksum revisi, local validated dan belum dideploy. |
+| Baseline sebelum pembaruan | `efd0d45a707570edc864a82e3d0bc31ca975f2bb` |
+| Informasi terakhir disinkronkan | AOGTIVITY source `625efddf2da75a416fb82ed21e51725390a77e7c`; permanent participant access dan WA Manual Restricted production-deployed, human UAT pending. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik kanonik untuk S162; authenticated dua browser dan failure/retry jaringan nyata masih residual. |
+| Konflik | Tidak ada konflik kanonik; worker Google Sheets otomatis tetap OFF karena credential runtime belum tersedia. |
 | Error | Tidak ada error knowledge sync yang diketahui. |
 
 ## File yang berubah pada sinkronisasi ini
+
+- `products/aogticvity/PRODUCT.md`
+- `products/aogticvity/DOSSIER.md`
+- `products/aogticvity/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
+- `DECISIONS.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
+
+## File dari sinkronisasi sebelumnya
 
 - `products/sagaview/PRODUCT.md`
 - `products/sagaview/DOSSIER.md`

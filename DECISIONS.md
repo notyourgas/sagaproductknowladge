@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-072 - AOGTIVITY memakai permanent participant access untuk fallback WA
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-10 |
+| Topik | Login peserta dan fallback pengiriman manual |
+| Keputusan | Peserta Approved menerima satu link personal yang dapat digunakan ulang sampai admin mencabut atau memutar pass. Link boleh berada pada Sheet Restricted milik founder untuk pengiriman WA manual; sesi browser tetap terbatas dan link bukan sesi permanen. |
+| Alasan | Provider WA tidak tersedia, sedangkan operator memerlukan akses yang dapat disalin tanpa terus membuat magic link baru. |
+| Alternatif yang dipertimbangkan | Magic link single-use 30 menit; OTP provider baru; login nomor telepon tanpa faktor kepemilikan. |
+| Dampak | Migration 030 menambah pass ledger berversi; token HMAC memakai URL fragment dan tidak disimpan mentah; login memeriksa approval/role/banned/policy/status/version; revoke mencabut sesi; Sheet tetap projection dan MySQL tetap source of truth. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED`; production-deployed, human UAT pending |
+| Dokumen terkait | [AOGTIVITY Product](products/aogticvity/PRODUCT.md), [AOGTIVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTIVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |
+
 ## DEC-001 — Repository sebagai single source of truth
 
 | Field | Isi |

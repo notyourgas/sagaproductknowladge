@@ -634,13 +634,16 @@ ketika keputusan atau release baru menutup gap.
   folder, slug teknis, dan domain `aogticvities.fun` tetap dipertahankan untuk
   kompatibilitas dan bukan gap rebrand.
 
-- `NEEDS CONFIRMATION`: Google Sheets reporting sudah production-deployed pada
-  source `e35accb`, migration 029, Hostinger `20260809T155737Z`, dan Vercel
-  `dpl_J7P2d2iUfsrv23ZP5EpahfypLeXz`, tetapi data sync masih OFF. Target Sheet
-  masih public writer dan service-account runtime belum tersedia. Bukti penutup:
-  General access Restricted, share editor hanya ke service account yang sah,
-  initial sync 31 record, count/filter reconciliation, timer sehat, serta UAT
-  admin tanpa edit manual pada tab source.
+- `PARTIALLY CLOSED`: Google Sheet sudah Restricted/owner-only dan tab `WA
+  Manual` menerima link permanent hanya pada baris Approved melalui koneksi
+  Drive terautentikasi. Permission, alignment, formula, dan tombol WA lulus.
+  Residual: worker otomatis Hostinger tetap OFF sampai credential service account
+  tersedia dan initial automated reconciliation lulus.
+- `NEEDS CONFIRMATION`: permanent participant access sudah production-deployed
+  pada source `625efdd`, migration 030, Hostinger `20260809T230612Z`, dan Vercel
+  `dpl_4txuxGraGsfaT9BSWzWvT24uZ8wg`. UAT pemilik harus membuktikan link yang
+  sama dapat login di dua perangkat, revoke menolak link lama, dan roster pada
+  workspace participant sesuai data server.
 
 - `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: runtime
   `c9a6702094ea36088c44040656f638d3db28da57` memuat theme poster-aligned,

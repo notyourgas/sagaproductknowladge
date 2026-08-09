@@ -1405,11 +1405,19 @@ Remote security gate pada release ini juga menutup advisory high `nanoid`
 dengan pin patched 3.3.17; audit npm/pnpm production kembali nol vulnerability.
 Migration 029 menambahkan Google Sheets participant reporting satu arah dari
 MySQL dengan lima tab operasional, digest idempotent, timer satu menit, kontrol
-admin, dan permission gate. Aplikasi sudah `PRODUCTION_DEPLOYED`, tetapi data
-sync tetap `NOT_PRODUCTION_ACTIVATED`: target masih public writer dan service
-account Hostinger belum tersedia. Jangan klaim data peserta real-time sudah
-aktif atau menyalin PII sebelum Sheet Restricted dan initial reconciliation
-lulus.
+admin, dan permission gate. Target kini Restricted/owner-only; tab `WA Manual`
+menerima link personal untuk peserta Approved melalui koneksi Drive
+terautentikasi. Worker otomatis Hostinger tetap `NOT_PRODUCTION_ACTIVATED`
+karena credential service account belum tersedia. Jangan klaim sinkronisasi
+otomatis real-time aktif.
+Migration 030, source `625efddf2da75a416fb82ed21e51725390a77e7c`, Hostinger
+`20260809T230612Z`, dan Vercel `dpl_4txuxGraGsfaT9BSWzWvT24uZ8wg` menambahkan
+permanent participant access yang dapat dipakai ulang sampai dicabut admin.
+Token HMAC berada pada URL fragment, tidak disimpan mentah, dan setiap login
+memeriksa approval, role player, banned state, access policy, status, serta
+versi pass. Revoke/withdraw juga mencabut sesi; cookie sesi tetap HttpOnly,
+Secure, dan delapan jam. Status `PRODUCTION_DEPLOYED`; valid-link/revoke/two-
+device UAT manusia masih residual.
 Master terbaru memakai `Lingkarin Angka` pada slot 17.30 selama 20 menit untuk
 menggantikan nama lama. Sepuluh lomba mempunyai 12 penugasan panitia final;
 Suit Karton dan Voli Air memisahkan Grup A/B. Legacy slug tetap kompatibel dan

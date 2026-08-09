@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-10 - AOGTIVITY permanent participant access
+
+- AOGTIVITY menambahkan link peserta reusable yang tetap diverifikasi terhadap
+  approval, role, banned state, policy, status, dan versi pass; revoke juga
+  mencabut sesi aktif.
+- Source `625efddf2da75a416fb82ed21e51725390a77e7c`, migration 030,
+  Hostinger `20260809T230612Z`, dan Vercel
+  `dpl_4txuxGraGsfaT9BSWzWvT24uZ8wg` production-deployed.
+- Sheet Restricted memuat fallback pesan WA manual tanpa menjadikan Sheet source
+  of truth. Automated worker tetap OFF; valid-link/revoke/two-device UAT masih
+  diperlukan sebelum event-ready.
+
 ## 2026-08-10 - SagaView S162 stale draft write protection
 
 - Source `063dfc1ac628c7862ac6140e53ca7e5158521c4c` menambahkan checksum

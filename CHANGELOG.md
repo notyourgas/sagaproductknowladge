@@ -12,6 +12,19 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-10
 
+### AOGTIVITY permanent participant access
+
+- Ringkasan: peserta Approved mendapat link reusable yang dapat dicabut admin;
+  tab WA Manual pada Sheet Restricted menyiapkan pesan fallback tanpa Fonnte.
+- Klasifikasi `CONFIRMED`; source
+  `625efddf2da75a416fb82ed21e51725390a77e7c`, migration 030, Hostinger
+  `20260809T230612Z`, dan Vercel `dpl_4txuxGraGsfaT9BSWzWvT24uZ8wg`.
+- Production berubah: ya. Status `PRODUCTION_DEPLOYED`; UAT valid-link,
+  revoke, dua perangkat, dan roster participant masih pending. Worker Google
+  Sheets otomatis tetap OFF karena credential runtime belum tersedia.
+- File knowledge: PRODUCT, DOSSIER, CHANGELOG, portfolio/root changelog, master
+  knowledge, GAPS, DECISIONS, dan SYNC_STATUS.
+
 ### SagaView S162 stale draft write protection candidate
 
 - Ringkasan: save draft Owner kini memakai ID dan checksum revisi isi; tab
