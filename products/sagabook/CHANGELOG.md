@@ -1,5 +1,27 @@
 # SagaBook Changelog
 
+## 2026-08-09 - Reverse proxy body-limit observability S166 candidate
+
+- Klasifikasi `CONFIRMED`; source
+  `5c76735315c7979269832aada77fba3390368c31` pada branch
+  `codex/s166-sagabook-body-limit-observability` sudah dipush.
+- Before: guard ukuran webhook aplikasi tidak mempunyai release evidence yang
+  membuktikan batas body reverse proxy kompatibel. After: inspector Nginx dan
+  command readiness membandingkan batas efektif dengan guard aplikasi sebelum
+  migration dan setelah activation.
+- Missing, invalid, unbounded, batas lebih kecil, dan nested override yang lebih
+  kecil gagal tertutup tanpa membuka konfigurasi mentah. Pemeriksaan production
+  read-only menunjukkan konfigurasi efektif saat ini kompatibel.
+- Gate hijau: focused release/security 5/5 (44 assertion), full backend
+  1.014/1.014 (11.511), database disposable migration/seed/backfill/reconcile
+  dengan audit 100, Payment Monitor browser mobile/desktop, build/design 26/0,
+  targeted Pint, PHP/Bash syntax, diff, npm/Composer/OSV nol advisory.
+- Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Production tetap source
+  `64ed036b514d351f3e537be557d69117badf9d24` / release
+  `20260809033844-64ed036`; tidak ada schema, data customer, canary, atau
+  activation.
+
 ## 2026-08-09 - Payment Monitor stale multi-tab recovery S165 candidate
 
 - Klasifikasi `CONFIRMED`; source

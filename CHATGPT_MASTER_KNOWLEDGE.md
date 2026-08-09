@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 8 Agustus 2026 20:30 WIB
+Evidence cut-off: 9 Agustus 2026 15:24 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -116,6 +116,15 @@ Payment 49/49, backend 1.010/1.010, DB audit 100/integrity ok, browser 16/16,
 build/design, dan dependency audit hijau. Status `LOCAL_VALIDATED /
 IMPLEMENTED_NOT_DEPLOYED`; production tetap S161 dan canary nyata tidak
 dijalankan.
+
+Candidate security/infrastructure SagaBook S166 source
+`5c76735315c7979269832aada77fba3390368c31` menambah observability
+fail-closed untuk batas body reverse proxy versus guard webhook aplikasi.
+Release dihentikan sebelum migration bila batas tidak dapat dibaca, tidak
+terbatas, lebih kecil, atau dioverride lebih kecil; gate diulang setelah
+activation. Backend 1.014/1.014, DB audit 100, browser regression, build/design,
+dan dependency audit hijau. Status `LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; production tetap S161 tanpa mutation atau canary.
 
 Candidate security/database SagaBook S164 source
 `ea023fff1ce451c851abc97ba1b68a99344286aa` membuat rekonsiliasi payment
@@ -726,7 +735,16 @@ lulus focused 2/16, SagaVIEW 173/1.921, full backend 969/11.351, disposable
 database, integrity audit, cache compile, dependency audit, dan deploy gate
 testing 6/6. Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
 LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production dan SagaBook tidak
-berubah. Optimistic stale-version dari browser masih menjadi gap berikutnya.
+berubah.
+S155 source `1aae8a2efc65da754dd1ef6373d34640fcc3d13c` menutup gap
+optimistic stale-version tersebut. Read model mengirim versi entitlement,
+PATCH SagaVIEW wajib membawa expected version, dan service memeriksanya setelah
+row lock. Request tanpa versi ditolak 422; snapshot stale ditolak 409 tanpa
+mutation, lalu browser memuat state terbaru tanpa retry otomatis. Focused 2/14,
+SagaVIEW 175/1.935, full backend 971/11.365, build, dependency audit, integrity
+audit nol issue, dan deploy gate disposable 6/6 lulus. Status
+`SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; production tetap backend S147 dan Studio S150.
 Harga bulanan: Growth Rp200.000, Pro Rp500.000.
 Growth mencakup 1 device, 50 frame, 3 preset, offline 24 jam, dan 2 GB aset
 frame cloud. Pro mencakup 4 device, 100 frame, 10 preset, offline 168 jam, 10 GB

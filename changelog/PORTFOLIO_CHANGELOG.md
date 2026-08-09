@@ -1,5 +1,30 @@
 # Portfolio Changelog
 
+## 2026-08-09 - SagaBook S166 reverse proxy body-limit observability
+
+- Source `5c76735315c7979269832aada77fba3390368c31` menambahkan release
+  gate yang membandingkan batas body reverse proxy dengan guard webhook
+  aplikasi sebelum migration dan sesudah activation.
+- Missing, invalid, unbounded, batas lebih kecil, serta nested override yang
+  lebih kecil berhenti fail-closed. Full backend 1.014/1.014, DB audit 100,
+  browser regression, build/design, format/syntax, dan audit dependency lulus.
+- Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production SagaBook tetap S161 dan tidak ada
+  mutation data, canary provider, atau activation.
+
+## 2026-08-09 - SagaView S155 entitlement optimistic concurrency candidate
+
+- Source `1aae8a2efc65da754dd1ef6373d34640fcc3d13c` membuat PATCH
+  entitlement SagaVIEW wajib membawa versi snapshot dan memeriksanya setelah
+  row lock sebelum database berubah.
+- Request tanpa versi mendapat 422; stale tab mendapat 409, memuat ulang state
+  terbaru, dan tidak menimpa status atau custom entitlement. Focused 2/14,
+  SagaVIEW 175/1.935, backend 971/11.365, build, audit dependency, integrity
+  audit nol issue, serta deploy gate disposable 6/6 lulus.
+- Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production, SagaBook, paket, harga, provider, dan
+  data tenant production tidak berubah.
+
 ## 2026-08-09 - AOGTIVITY final games and committee production
 
 - `Lingkarin Angka` menggantikan nama lama pada master 10 lomba, sementara 12

@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 9 Agustus 2026 14:35 WIB
+- Updated: 9 Agustus 2026 15:24 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED` untuk workflow yang tercantum di
   [PRODUCT](PRODUCT.md)
@@ -39,7 +39,16 @@ dalam satu dokumen public-safe.
   dependency, backup/restore, public smoke, service health, dan rollback.
   Model, prompt, provider, dan KB tidak diubah oleh release ini.
 
-### Histori kandidat sebelum release S157
+### Kandidat setelah release S161 dan histori terkait
+- Candidate S166 `5c767353` menambahkan observability fail-closed antara batas
+  body reverse proxy dan guard webhook aplikasi. Inspector hanya mengeluarkan
+  metadata public-safe, memilih batas efektif paling konservatif termasuk
+  nested override, dan kontrak deploy menjalankan pembanding sebelum migration
+  serta sesudah activation. Missing, invalid, unbounded, dan batas di bawah
+  aplikasi ditolak. Full backend 1.014/1.014 (11.511 assertion), focused 5/5,
+  DB audit disposable 100, browser Payment Monitor mobile/desktop, build/design,
+  format/syntax/diff, npm/Composer/OSV, dan read-only live inspection hijau.
+  Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S161.
 - Candidate S165 `33c10710` menambah optimistic stale-version pada rekonsiliasi
   Payment Monitor di atas lock S164. Tab yang membawa versi lama mendapat 409
   sebelum provider/audit, memuat ulang state server, dan menampilkan status

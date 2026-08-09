@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 9 Agustus 2026 14:35 WIB
+Updated: 9 Agustus 2026 15:24 WIB
 Evidence status: production + source verified
 
 ## Tujuan dokumen
@@ -46,7 +46,19 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   dibuat. Source S98-S161 yang menjadi ancestor release aktif sudah aktif
   kumulatif; arah storefront lebar S94/S108 tetap deprecated dan tidak aktif.
 
-## Histori kandidat sebelum release S161
+## Kandidat setelah release S161 dan histori terkait
+- Candidate security/infrastructure S166 source
+  `5c76735315c7979269832aada77fba3390368c31` pada branch
+  `codex/s166-sagabook-body-limit-observability` membuat release gate membaca
+  batas body reverse proxy untuk host SagaBook dan membandingkannya dengan
+  guard webhook aplikasi. Batas yang hilang, tidak terbatas, lebih kecil, atau
+  dioverride lebih kecil pada location menghentikan deploy sebelum migration;
+  pemeriksaan diulang sesudah aktivasi dan menghasilkan evidence public-safe.
+  Full backend 1.014/1.014, database disposable audit 100, browser regression
+  Payment Monitor mobile/desktop, build/design, format/syntax/diff, serta
+  npm/Composer/OSV hijau. Status `SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+  production tetap S161 dan tidak ada mutation data atau canary provider.
 - Candidate security/database S165 source
   `33c1071069f9f20d74268738c87d2c22e4580391` pada branch
   `codex/s165-sagabook-payment-stale-recovery` menutup stale multi-tab pada

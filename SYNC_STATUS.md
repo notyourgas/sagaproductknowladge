@@ -12,16 +12,27 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-09T15:02:55+07:00 |
+| Waktu pembaruan terakhir | 2026-08-09T15:24:14+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `623259a4419c4e6aa9efe607f62789b992cced1d` |
-| Informasi terakhir disinkronkan | AOGTIVITY final games/committee source `c9a6702094ea36088c44040656f638d3db28da57` aktif pada Hostinger `20260809T075137Z` dan Vercel `dpl_D1ubBCWkFs6ENp9CqPz5Fv25zwYE`; status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. |
+| Baseline sebelum pembaruan | `a508a8a20624183c9a3d36a31493697ef01da7b1` |
+| Informasi terakhir disinkronkan | SagaBook S166 source `5c76735315c7979269832aada77fba3390368c31` menambah reverse proxy body-limit observability fail-closed; status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`, production tetap S161. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik source/runtime. Nama lomba dan penugasan panitia final; format bracket, authenticated operational UAT, serta rehearsal fisik tetap residual. |
+| Konflik | Tidak ada konflik source/runtime SagaBook. Readiness production tetap terpisah dari kandidat dan masih tertahan setup pilot/authenticated UAT. |
 | Error | Tidak ada error sinkronisasi yang diketahui. |
 
 ## File yang berubah pada sinkronisasi ini
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
+
+## File dari sinkronisasi sebelumnya
 
 - `products/aogticvity/PRODUCT.md`
 - `products/aogticvity/DOSSIER.md`
