@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-09 - SagaView S156 backend security integration candidate
+
+- Backend `65721ebc949e8325d9ab3c5b52306fb66c9de90d` menyatukan
+  optimistic entitlement dan audited device takeover pada satu lineage
+  kumulatif S152-S156.
+- Device 4/47, entitlement 2/14, backend 972/11.374, build, dependency audit,
+  database disposable integrity nol issue, dan deploy gate testing 6/6 lulus.
+- Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production, SagaBook, paket, harga, provider, dan
+  data tenant production tidak berubah. Studio reopen tetap candidate terpisah.
+
 ## 2026-08-09 - SagaView device lease close/reopen recovery candidate
 
 - Studio `5eeef36904f84c7cf01d8f365f3d6a94ba9eec9e` melepas lease saat

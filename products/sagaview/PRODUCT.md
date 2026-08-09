@@ -111,6 +111,13 @@ tersebut dan meredaksi response record lama. Studio
   mengganti token lama, dan mencatat audit. Status `SECURITY_VALIDATED /
   UIUX_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
   tetap backend S147 dan Studio S150.
+  S156 backend `65721ebc949e8325d9ab3c5b52306fb66c9de90d`
+  mengintegrasikan S155 entitlement dan audited device takeover pada satu
+  lineage kumulatif S152-S156. Full backend gabungan 972/11.374, build,
+  dependency audit, database disposable, integrity audit nol issue, dan deploy
+  gate testing 6/6 lulus. Status `SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+  production tidak berubah.
 
 ## Tujuan dokumen
 
@@ -176,6 +183,10 @@ kumulatif melalui exact source S150.
   ada close intent terbaru, dan crash/force-close memiliki takeover eksplisit
   dengan konfirmasi operator. Token instance lama langsung tidak valid setelah
   takeover; kandidat belum dideploy.
+- S156 menyatukan backend entitlement dan takeover pada exact SHA
+  `65721ebc949e8325d9ab3c5b52306fb66c9de90d`, sehingga release berikutnya tidak
+  kehilangan salah satu hardening. Studio reopen tetap kandidat terpisah dan
+  urutan deploy kelak wajib backend lebih dahulu.
 - Entitlement live memberi Growth 50 dan Pro 100 frame aktif. Harga, device,
   preset, offline grace, storage, laporan, support, payment, dan fair-use tidak
   berubah.

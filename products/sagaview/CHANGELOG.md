@@ -1,5 +1,26 @@
 # SagaView Changelog
 
+## 2026-08-09 - S156 backend security integration candidate
+
+- Backend `65721ebc949e8325d9ab3c5b52306fb66c9de90d` menyatukan sibling
+  candidate S155 entitlement `1aae8a2e` dan audited device takeover
+  `75f43b40` pada lineage kumulatif S152-S156.
+- Before: release salah satu branch berisiko kehilangan hardening branch lain.
+  After: stale entitlement, schema/row-lock PATCH, replay/rate-limit device,
+  serial redemption, dan lease takeover tersedia pada satu exact candidate.
+- Boundary tetap fail-closed: entitlement missing/stale ditolak 422/409 tanpa
+  mutation; takeover memerlukan credential, fingerprint, proof kriptografis,
+  throttle, row lock, token rotation, dan audit event.
+- Gate hijau: device focused 4/47, entitlement focused 2/14, full backend
+  972/11.374, build 5.097 modul, targeted Pint, syntax, cache compile/clear,
+  npm/Composer audit nol temuan, database disposable integrity nol issue, dan
+  deploy gate testing 6/6.
+- Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Production tetap backend S147 dan Studio S150.
+  Studio reopen `5eeef369` tetap kandidat terpisah; deploy kelak wajib backend
+  S156 lebih dahulu lalu Studio, dengan backup/restore, rollback, smoke, dan
+  authenticated UAT.
+
 ## 2026-08-09 - Device lease close/reopen recovery candidate
 
 - Klasifikasi `CONFIRMED` melalui source Studio
