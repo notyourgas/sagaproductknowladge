@@ -799,6 +799,15 @@ pembayaran aktif. Backend 44/44 (741), Studio 188/188, Playwright
 desktop/mobile/a11y, migration cycle, build/budget, dan audit dependency lulus.
 S157-S158 `DEPRECATED / DO_NOT_DEPLOY`; S159 `IMPLEMENTED_NOT_DEPLOYED` dan
 production tidak berubah.
+S160 backend `28e0ab9b8159426633d88d52b68b5f713fa86aa2` memperketat Owner
+Console: 47/47 route halaman dan API admin SagaVIEW kini hanya menerima owner
+aktif setelah identitas database, tenant, dan membership workspace cocok. Role
+admin/staff, role sesi palsu, membership tidak aktif, dan tenant mismatch
+ditolak tanpa membuat token aktivasi. Gate 123 test/1.427 assertion, build,
+format/syntax, dan audit dependency nol vulnerability lulus. Status
+`SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; production, Studio, SagaBook, pricing, estimasi
+biaya, foto/path lokal, dan data tenant tidak berubah.
 Harga bulanan: Growth Rp200.000, Pro Rp500.000.
 Growth mencakup 1 device, 50 frame, 3 preset, offline 24 jam, dan 2 GB aset
 frame cloud. Pro mencakup 4 device, 100 frame, 10 preset, offline 168 jam, 10 GB

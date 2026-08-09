@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-10 - SagaView S160 Owner Console authorization hardening
+
+- Source `28e0ab9b8159426633d88d52b68b5f713fa86aa2` membatasi seluruh 47 route
+  Owner Surface kepada owner aktif yang lolos verifikasi database, tenant, dan
+  membership workspace; role dari sesi saja tidak cukup.
+- Admin/staff, role palsu, membership tidak aktif, serta konteks tenant salah
+  ditolak fail-closed tanpa membuat token aktivasi atau mutasi database.
+- SagaVIEW 123/123 (1.427 assertion), route audit 47/47, build, syntax/format,
+  dan audit dependency nol vulnerability lulus. Status
+  `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production, Studio, SagaBook, pricing, estimasi,
+  foto/path lokal, dan data tenant tidak berubah.
+
 ## 2026-08-09 - SagaView S159 estimate-only contract candidate
 
 - Keputusan founder menghapus pembayaran dari scope SagaVIEW: aplikasi hanya

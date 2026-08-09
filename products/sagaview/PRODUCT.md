@@ -128,6 +128,15 @@ tersebut dan meredaksi response record lama. Studio
   Kandidat S157-S158 berstatus `DEPRECATED / DO_NOT_DEPLOY`. S159 berstatus
   `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / UIUX_VALIDATED /
   LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
+  S160 backend `28e0ab9b8159426633d88d52b68b5f713fa86aa2`
+  menutup gap Owner Console: halaman dan 34 endpoint admin SagaVIEW sekarang
+  hanya menerima owner aktif yang identitas database serta role membership
+  workspace-nya sama-sama valid. Role non-owner, role sesi yang dipalsukan,
+  membership tidak aktif, dan konteks workspace yang salah tetap fail-closed
+  dengan error aman tanpa membuat link aktivasi perangkat. Gate 123 test dengan
+  1.427 assertion, cakupan 47/47 route, build, format/syntax, serta audit
+  dependency lulus. Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
 
 ## Tujuan dokumen
 

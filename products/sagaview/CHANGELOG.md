@@ -1,5 +1,26 @@
 # SagaView Changelog
 
+## 2026-08-10 - S160 Owner Console authorization hardening candidate
+
+- Before: role tenant non-owner dengan sesi valid masih dapat membuka halaman
+  Owner Console dan membaca snapshot admin; role admin juga dapat mencapai
+  pembuatan link aktivasi melalui capability umum.
+- After: halaman Owner Console dan seluruh route admin SagaVIEW memakai gate
+  owner khusus yang memverifikasi staff aktif dari database, tenant yang sama,
+  serta role owner aktif pada membership workspace. Klaim role dari sesi tidak
+  dipercaya sebagai sumber tunggal.
+- Role admin/staff, role sesi yang dipalsukan, membership tidak aktif, dan
+  tenant mismatch ditolak fail-closed. Request yang ditolak tidak membuat token
+  aktivasi atau mutasi database lain; kontrak error membership lama tetap
+  dipertahankan.
+- Evidence: backend SagaVIEW 123/123 dengan 1.427 assertion; 47/47 route Owner
+  Surface memiliki middleware; build Vite, Pint, PHP syntax, diff check,
+  Composer audit, dan npm production audit lulus tanpa vulnerability.
+- Source `28e0ab9b8159426633d88d52b68b5f713fa86aa2`; status
+  `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Tidak ada migration, perubahan Studio, foto/path
+  lokal, pricing, estimasi biaya, atau deployment production.
+
 ## 2026-08-09 - S159 estimate-only contract candidate
 
 - Keputusan founder: SagaVIEW tidak memiliki alur pembayaran, provider,
