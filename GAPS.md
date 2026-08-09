@@ -591,6 +591,13 @@ ketika keputusan atau release baru menutup gap.
 
 ### COYABAG
 
+- `PRODUCTION_DEPLOYED`: source
+  `264c6ac2ebec33c6471a4c49572ddcdc82b51cf2` aktif sebagai release
+  `20260809-264c6ac`; rollback `20260730-33637aa` dipertahankan. Exact-SHA CI,
+  backup/checksum, migration, services, browser smoke, dan tiga scheduler cycle
+  lulus. Readiness masih 17 pass / 17 blocker sehingga activation/business
+  readiness tetap `BLOCKED`.
+
 - `NEEDS CONFIRMATION`: katalog, harga, stok, media, seller identity, payment,
   shipping, return/refund, tax, dan legal copy.
 - `NEEDS CONFIRMATION`: SMTP, object storage, 2FA recovery, backup/restore, dan

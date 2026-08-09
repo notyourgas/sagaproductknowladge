@@ -1194,10 +1194,13 @@ Guzzle/Promises, CommonMark, tooling Vite storefront/admin, kompatibilitas PHP
 `main` dan ditag immutable `v1.0.0-rc.3`. GitHub Actions `main` exact-SHA run
 `31292840016` lulus pada keempat job; prerelease source/storefront/admin,
 manifest, dan checksum menunjuk SHA yang sama. Status `LOCAL_VALIDATED /
-MAINLINE_SYNCED / CI_VERIFIED / RELEASE_CANDIDATE / NOT_DEPLOYED`. Production
-tetap source
-`33637aa9f6f79037a2555c3b0fc0d93b700450dc` melalui release
-`20260730-33637aa`.
+MAINLINE_SYNCED / CI_VERIFIED / PRODUCTION_DEPLOYED`. Source tersebut aktif
+sebagai immutable Hostinger release `20260809-264c6ac`; rollback langsung
+`20260730-33637aa` dipertahankan. Backup/checksum, artifact parity, migration
+nol pending, services/worker, public smoke, browser desktop/mobile, dan tiga
+scheduler cycle lulus. Readiness tetap fail-closed 17 pass / 17 blocker;
+provider, data owner, canary order, restore drill, commerce activation, dan
+business readiness tidak diaktifkan.
 
 ### AOGTIVITY
 

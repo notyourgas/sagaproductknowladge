@@ -8,6 +8,24 @@ Mencatat perubahan material COYABAG dengan provenance public-safe.
 
 Surface deployment tidak otomatis berarti commerce activation.
 
+## 2026-08-09 - R3 guarded production parity deploy
+
+- Exact source `264c6ac2ebec33c6471a4c49572ddcdc82b51cf2` dan artifact
+  `v1.0.0-rc.3` dipromosikan ke immutable Hostinger release
+  `20260809-264c6ac`; rollback `20260730-33637aa` dipertahankan.
+- Fresh database backup lulus checksum/gzip validation. Composer production
+  install/audit, 30 migration dengan nol pending, readiness, storefront/API/
+  admin, dua worker, dan security header API/admin lulus.
+- Browser production 1440x900 dan 390x844 lulus untuk stale-cart
+  reconciliation, focus/Escape, no-overflow, API-failure preservation, dan
+  checkout fail-closed. Tiga scheduler cycle teramati tanpa tipe error baru.
+- Atomic cutover memakai rollback otomatis. Tiga false-positive pada gate
+  orchestration kembali ke release lama dengan sehat sebelum percobaan final
+  diterima; tidak ada provider activation, data owner mutation, canary order,
+  atau restore drill.
+- Status `PRODUCTION_DEPLOYED`. Readiness tetap fail-closed 17 pass / 17
+  blocker; activation dan business readiness tetap `BLOCKED`.
+
 ## 2026-08-09 - R2 mainline dan immutable RC
 
 - Source `264c6ac2ebec33c6471a4c49572ddcdc82b51cf2` dipromosikan ke

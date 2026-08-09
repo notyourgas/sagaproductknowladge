@@ -12,6 +12,23 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-09
 
+### COYABAG R3 guarded production parity deploy
+
+- Ringkasan: exact source/artifact `v1.0.0-rc.3` dipromosikan secara atomik ke
+  immutable Hostinger release `20260809-264c6ac` dengan rollback langsung
+  `20260730-33637aa`.
+- Klasifikasi `CONFIRMED`; source
+  `264c6ac2ebec33c6471a4c49572ddcdc82b51cf2`, status
+  `PRODUCTION_DEPLOYED`, activation dan business readiness `BLOCKED`.
+- Gate: fresh backup/checksum, artifact parity, Composer audit, 30 migration
+  dengan nol pending, storefront/API/admin, dua worker, security header,
+  browser 1440x900 dan 390x844, serta tiga scheduler cycle tanpa tipe error
+  baru.
+- Production berubah: ya. Provider, credential, data owner, canary order, dan
+  restore drill tidak diubah/dijalankan; readiness tetap 17 pass / 17 blocker.
+- File knowledge: product/dossier/changelog COYABAG, portfolio/root changelog,
+  master, GAPS, dan sync status.
+
 ### SagaBook S162 payment webhook abuse guard candidate
 
 - Ringkasan: webhook payment memperoleh boundary agregat dan per-event

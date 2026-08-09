@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-09 - COYABAG R3 guarded production parity deploy
+
+- Source/tag exact `264c6ac2ebec33c6471a4c49572ddcdc82b51cf2` /
+  `v1.0.0-rc.3` aktif sebagai immutable release `20260809-264c6ac`; rollback
+  `20260730-33637aa` dipertahankan.
+- Backup/checksum, artifact parity, migration nol pending, services/worker,
+  public smoke, browser desktop/mobile, dan tiga scheduler cycle lulus tanpa
+  tipe error baru.
+- Delivery `PRODUCTION_DEPLOYED`; commerce activation dan business readiness
+  tetap `BLOCKED` dengan readiness 17 pass / 17 blocker. Provider, data owner,
+  canary order, dan restore drill tidak dijalankan.
+
 ## 2026-08-09 - SagaBook S162 payment webhook abuse guard candidate
 
 - Source `e294fb4791f168772ab7c101443efbf45f9147a8` menambah boundary

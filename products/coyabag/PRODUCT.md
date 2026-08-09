@@ -74,8 +74,14 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 - Source sudah fast-forward ke `main` tanpa history rewrite dan ditag immutable
   sebagai `v1.0.0-rc.3`. GitHub prerelease memuat source, storefront, admin,
   manifest, serta checksum yang menunjuk exact SHA yang sama.
+- Release tersebut aktif di Hostinger sebagai immutable release
+  `20260809-264c6ac`; rollback langsung `20260730-33637aa` dipertahankan.
+- Guarded cutover, fresh backup/checksum, nol migration pending, storefront/API/
+  admin smoke, dua queue worker, security header API/admin, browser desktop/
+  mobile, dan tiga scheduler cycle lulus. Deployment manifest public-safe
+  mencatat exact source dan artifact parity.
 - Status `LOCAL_VALIDATED / MAINLINE_SYNCED / CI_VERIFIED /
-  RELEASE_CANDIDATE / NOT_DEPLOYED`.
+  PRODUCTION_DEPLOYED`. Activation dan business readiness tetap `BLOCKED`.
 - Commerce nyata tetap ditahan oleh blocker provider/operasional.
 
 ## Blocker business activation

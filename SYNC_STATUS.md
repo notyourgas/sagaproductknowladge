@@ -12,23 +12,23 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-09T12:09:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-09T12:18:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `9de2a719870398c8c2914d4862668dc071dc62da` |
-| Informasi terakhir disinkronkan | SagaBook S162 `e294fb4791f168772ab7c101443efbf45f9147a8` menambah payment webhook abuse guard berlapis dan lulus gate security/data-integrity; production tetap S161. |
+| Baseline sebelum pembaruan | `11548dd12709913c7c7728e823e856701f04d49e` |
+| Informasi terakhir disinkronkan | COYABAG source `264c6ac2ebec33c6471a4c49572ddcdc82b51cf2` aktif sebagai immutable release `20260809-264c6ac`; delivery `PRODUCTION_DEPLOYED`, activation dan business readiness tetap `BLOCKED`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik source/runtime. S162 belum dideploy dan provider canary nyata tidak dijalankan. |
+| Konflik | Tidak ada konflik source/runtime. Commerce provider, data owner, canary order, dan restore drill COYABAG sengaja tidak diaktifkan/dijalankan. |
 | Error | Tidak ada error sinkronisasi yang diketahui. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/sagabook/PRODUCT.md`
-- `products/sagabook/DOSSIER.md`
-- `products/sagabook/CHANGELOG.md`
-- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
 - `SYNC_STATUS.md`
 - `CHANGELOG.md`
 
@@ -217,12 +217,10 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 ## Item menunggu konfirmasi
 
-COYABAG source `264c6ac2ebec33c6471a4c49572ddcdc82b51cf2` sudah berada pada
-`main`, lulus empat job GitHub Actions exact-SHA run `31292840016`, dan dikunci
-sebagai annotated tag/prerelease `v1.0.0-rc.3` dengan manifest serta artifact
-parity. Guarded production deploy R3 tetap memerlukan persetujuan terpisah.
-Production tidak berubah dari `20260730-33637aa`; provider, data final, owner
-2FA, backup/restore, UAT, activation, dan business readiness tetap blocker.
+COYABAG source `264c6ac2ebec33c6471a4c49572ddcdc82b51cf2` sudah aktif sebagai
+immutable release `20260809-264c6ac`, dengan rollback `20260730-33637aa`.
+Provider, data final, owner 2FA, restore drill, UAT transaksi, activation, dan
+business readiness tetap blocker; readiness runtime masih 17 pass / 17 blocker.
 
 Ledger integrasi SagaBook dan SagaView masih bertahap. Auth/session SagaBook
 S123, status/write cabang S124, dan branch-context `/admin/reports` S125 sudah

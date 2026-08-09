@@ -7,7 +7,7 @@ content COYABAG tanpa menyamakan surface live dengan commerce aktif.
 
 ## Konteks dan status bukti
 
-- Updated: 6 Agustus 2026
+- Updated: 9 Agustus 2026
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `BLOCKED`
 - Business readiness: `BLOCKED`
@@ -69,11 +69,14 @@ payment → fulfillment → delivery → return/support.
 Cart harus dipertahankan ketika API tidak dapat diverifikasi; inventory
 reservation dan terminal status fail-closed.
 
-Candidate source `368a89595ac0a667d99357b7c8216847cef707fb` juga
+Source `264c6ac2ebec33c6471a4c49572ddcdc82b51cf2` juga
 merekonsiliasi item tersimpan setelah katalog live siap: item/variant yang tidak
 tersedia dikeluarkan, sedangkan stock, quantity, price, media, URL, nama, dan
-warna mengikuti katalog server. Candidate berstatus `LOCAL_VALIDATED /
-REMOTE_BRANCH_SYNCED`, belum `MAINLINE`, belum tagged, dan belum deployed.
+warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
+`v1.0.0-rc.3`, lulus empat exact-SHA CI job, dan aktif pada immutable release
+`20260809-264c6ac`. Browser production desktop/mobile membuktikan recovery,
+focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
+Commerce activation tetap ditahan.
 
 ## Business model
 
@@ -129,7 +132,7 @@ request.
 ## Risiko dan asumsi
 
 Surface live dapat disalahartikan sebagai checkout aktif; dummy data, provider,
-2FA recovery, backup/restore, dan legal policy adalah blocker.
+2FA recovery, restore drill, monitoring, dan legal policy adalah blocker.
 
 ## KPI dan success metrics
 
