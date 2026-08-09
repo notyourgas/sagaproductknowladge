@@ -119,6 +119,13 @@ tersebut dan meredaksi response record lama. Studio
   gate testing 6/6 lulus. Status `SECURITY_VALIDATED /
   DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
   production tidak berubah.
+  S157 backend `cf16003ff58915f22a00d51198c9426ea930c9ab` menutup bypass
+  payment hold dari klaim client, mengunci konfirmasi pembayaran dalam
+  transaksi, dan memberi event pembayaran kunci idempotensi unik. Nominal dan
+  status yang sudah dikonfirmasi dipertahankan server. Full backend 975/11.410,
+  migration cycle, build, dependency audit, dan integrity audit nol issue
+  lulus. Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
 
 ## Tujuan dokumen
 

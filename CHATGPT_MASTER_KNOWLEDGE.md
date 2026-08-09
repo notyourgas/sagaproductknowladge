@@ -778,6 +778,15 @@ DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
 production untuk hardening S152-S156 tersebut tetap backend lineage S147 plus
 takeover saja. Studio reopen `5eeef369` sudah aktif, tetapi kandidat backend
 S152-S156 lain tetap belum dideploy.
+S157 backend `cf16003ff58915f22a00d51198c9426ea930c9ab` menutup bypass
+payment hold: client tidak dapat menetapkan `paid`, konfirmasi server memakai
+transaction dan row lock, event pembayaran memiliki unique idempotency key,
+serta nominal paid tersimpan tidak dapat diturunkan client. Payment integrity
+3/36, cross-regression 19/203, full backend 975/11.410, migration cycle, build,
+dependency audit, dan integrity audit nol issue lulus. Status
+`SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; production tetap pada lineage device-reopen S147 dan
+Studio S150.
 Harga bulanan: Growth Rp200.000, Pro Rp500.000.
 Growth mencakup 1 device, 50 frame, 3 preset, offline 24 jam, dan 2 GB aset
 frame cloud. Pro mencakup 4 device, 100 frame, 10 preset, offline 168 jam, 10 GB

@@ -1,5 +1,24 @@
 # SagaView Changelog
 
+## 2026-08-09 - S157 payment hold integrity candidate
+
+- Klasifikasi `CONFIRMED` melalui source
+  `cf16003ff58915f22a00d51198c9426ea930c9ab` dan acceptance lokal.
+- Before: endpoint penyelesaian sesi menerima klaim `paid` dari client dan
+  konfirmasi pembayaran belum dikunci per baris. After: hanya endpoint server
+  resmi yang dapat menetapkan `paid`; transaksi, row lock, dan unique
+  idempotency key menjaga replay serta request bersamaan.
+- Nominal dan status pembayaran yang sudah dikonfirmasi dipertahankan server,
+  sehingga payload penyelesaian berikutnya tidak dapat menurunkannya.
+- Gate hijau: payment integrity 3/36, cross-regression 19/203, full backend
+  975/11.410, migration fresh/rollback/re-apply, scoped Pint, syntax, build,
+  cache, Composer/npm audit nol advisory, deploy gate testing, serta integrity
+  audit nol issue.
+- Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Production, foto/path lokal, harga, paket,
+  provider, dan data tenant tidak berubah. Deployment tetap memerlukan
+  backup/restore, rollback, smoke, serta authenticated payment-hold UAT.
+
 ## 2026-08-09 - Device lease close/reopen recovery production
 
 - Klasifikasi `CONFIRMED`. Studio source

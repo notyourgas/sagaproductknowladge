@@ -49,6 +49,9 @@ SagaView berdasarkan runtime production aktif.
   lokal: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; Studio `4d25f606` /
   `20260809103753-4d25f60`, rollback langsung S147; backend tetap
   `0cda8a09` / `20260808225730-0cda8a0`
+- S157 payment hold integrity: `SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+  backend `cf16003ff58915f22a00d51198c9426ea930c9ab`
 - Acceptance integrasi feature-by-feature: ledger dimulai konservatif dan
   belum membuktikan coverage penuh; lihat
   [Feature Coverage Ledger](FEATURE_COVERAGE_LEDGER.md).
@@ -91,6 +94,22 @@ database, restore disposable, rehearsal kandidat/rollback, live rollback,
 snapshot preservation, header/CORS/service/journal, dan smoke exact release
 lulus. Authenticated UAT menggunakan data sintetis/disposable; UAT operator pada
 folder Windows nyata dan `BUSINESS_READY` tetap gate terpisah.
+
+### Payment hold integrity S157
+
+S157 menjadikan server satu-satunya authority untuk status pembayaran `paid`.
+Client tidak lagi dapat menyelesaikan sesi premium dengan mengklaim status
+tersebut. Konfirmasi resmi dikunci per baris dalam transaksi database; replay
+mempertahankan hasil pertama, sedangkan unique idempotency key mencegah event
+pembayaran ganda. Nominal premium yang sudah dikonfirmasi tidak dapat diturunkan
+oleh payload penyelesaian berikutnya. Perubahan tidak menyentuh foto, path
+lokal, harga, paket, provider, credential, atau data tenant production.
+
+Kandidat lulus focused payment integrity 3/36, cross-regression 19/203, full
+backend 975/11.410, migration fresh/rollback/re-apply, build, cache,
+Composer/npm audit, deploy gate testing, dan integrity audit nol issue. Status
+tetap `IMPLEMENTED_NOT_DEPLOYED`; backup/restore, exact-SHA release, rollback,
+smoke, dan authenticated payment-hold UAT diperlukan sebelum promosi.
 
 ## Use case
 
