@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 9 Agustus 2026 12:09 WIB
+Updated: 9 Agustus 2026 12:27 WIB
 Evidence status: production + source verified
 
 ## Tujuan dokumen
@@ -47,6 +47,16 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   kumulatif; arah storefront lebar S94/S108 tetap deprecated dan tidak aktif.
 
 ## Histori kandidat sebelum release S161
+- Candidate security/database S163 source
+  `fc898bf8e63160933213980f1ec3d69ee721590f` pada branch
+  `codex/s163-sagabook-webhook-payload-limit` menolak payload webhook
+  pembayaran yang terlalu besar sebelum throttle, controller, parsing bisnis,
+  dan mutation database. Guard memeriksa ukuran yang dideklarasikan serta
+  ukuran body aktual, mengembalikan 413 public-safe dengan request ID, dan
+  mempertahankan alur autentikasi payload normal. Gate 116 test relevan/unit,
+  DB audit disposable 100, cache compile, build/design, serta audit dependency
+  hijau. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap
+  S161 dan provider canary nyata tidak dijalankan.
 - Candidate security/database S162 source
   `e294fb4791f168772ab7c101443efbf45f9147a8` pada branch
   `codex/s162-sagabook-webhook-abuse-guard` menambah abuse boundary webhook

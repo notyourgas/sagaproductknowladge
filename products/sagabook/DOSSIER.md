@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 9 Agustus 2026 12:09 WIB
+- Updated: 9 Agustus 2026 12:27 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED` untuk workflow yang tercantum di
   [PRODUCT](PRODUCT.md)
@@ -15,8 +15,8 @@ dalam satu dokumen public-safe.
 - Availability empty-response recovery, manual-transfer initial-load recovery,
   dan Payment Monitor action recovery: `PRODUCTION_DEPLOYED /
   PRODUCTION_ACTIVATED`
-- Source kumulatif aktif: `c7f13487f33b8075ba7c84f05fc41daec6a622e7`,
-  release `20260808115539-c7f1348`, rollback `20260808063729-04c9b64`
+- Source kumulatif aktif: `64ed036b514d351f3e537be557d69117badf9d24`,
+  release `20260809033844-64ed036`, rollback `20260808115539-c7f1348`
 - S131-S156 aktif kumulatif. Gate fresh backend 993/993, browser auth,
   tenant/cabang, Add-on, Resource, storefront/slot, race 5/5, build/design,
   dependency audit, backup/restore exact-SHA, manifest, DB audit 100, service,
@@ -40,6 +40,14 @@ dalam satu dokumen public-safe.
   Model, prompt, provider, dan KB tidak diubah oleh release ini.
 
 ### Histori kandidat sebelum release S157
+- Candidate S163 `fc898bf8` menambah batas ukuran fail-closed pada dua route
+  webhook pembayaran. Header ukuran yang melampaui batas ditolak sebelum body
+  dibaca oleh proses bisnis; ukuran body aktual tetap diverifikasi untuk
+  menangkal deklarasi palsu. Response 413 public-safe membawa request ID dan
+  rejection tidak menambah payment event atau audit database. Gate 116/116
+  (777 assertion), DB audit disposable 100, cache compile, build/design,
+  format/diff, npm/Composer/OSV hijau. Status `LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap S161.
 - Candidate S160 `71eb45ba` menutup state transition untuk callback provider
   yang hanya memberi reference transaksi fallback. Pending/expired dapat maju
   ke paid melalui ID transisi deterministik tenant-scoped; retry paid tidak

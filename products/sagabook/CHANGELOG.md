@@ -1,5 +1,25 @@
 # SagaBook Changelog
 
+## 2026-08-09 - Payment webhook payload-size guard S163 candidate
+
+- Klasifikasi `CONFIRMED`; source
+  `fc898bf8e63160933213980f1ec3d69ee721590f` pada branch
+  `codex/s163-sagabook-webhook-payload-limit` sudah dipush.
+- Before: callback berukuran sangat besar masih dapat mencapai parsing dan
+  autentikasi bisnis. After: dua route webhook pembayaran menolak ukuran yang
+  dideklarasikan maupun body aktual yang melampaui batas sebelum throttle dan
+  controller, dengan response 413 public-safe serta request ID.
+- Rejection tidak membuat payment event atau activity log. Payload normal tetap
+  melewati autentikasi, tenant/provider boundary, idempotency, dan proses lama.
+  Tidak ada migration, UI, workflow, credential, data customer, atau canary.
+- Gate hijau: 116 test relevan/unit (777 assertion), migration/backfill/
+  reconcile dan DB audit disposable 100, cache compile, build/design 26/0,
+  Pint/syntax/diff, serta npm/Composer/OSV nol advisory.
+- Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Production tetap source
+  `64ed036b514d351f3e537be557d69117badf9d24` / release
+  `20260809033844-64ed036`.
+
 ## 2026-08-09 - Payment webhook abuse guard S162 candidate
 
 - Klasifikasi `CONFIRMED`; source

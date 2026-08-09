@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-09 - SagaBook S163 payment webhook payload-size guard candidate
+
+- Source `fc898bf8e63160933213980f1ec3d69ee721590f` menolak callback
+  pembayaran terlalu besar sebelum throttle, controller, dan mutation database.
+- Ukuran deklarasi dan body aktual diverifikasi; response 413 public-safe
+  membawa request ID. Payload normal tetap memakai autentikasi dan boundary
+  tenant/provider existing. 116 test/777 assertion, DB audit 100, cache
+  compile, build/design, dan audit dependency lulus.
+- Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production SagaBook tetap S161 tanpa canary atau
+  perubahan data production.
+
 ## 2026-08-09 - COYABAG R3 guarded production parity deploy
 
 - Source/tag exact `264c6ac2ebec33c6471a4c49572ddcdc82b51cf2` /

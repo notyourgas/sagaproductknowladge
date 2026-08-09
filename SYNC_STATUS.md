@@ -12,16 +12,27 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-09T12:21:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-09T12:27:46+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `8298196fa88c260d9a45729a527ee825e75e43f1` |
-| Informasi terakhir disinkronkan | SagaView S152 backend `e2cb726705bb630d2bb1b737a54c1d30cb1176e9` tervalidasi lokal untuk hardening auth/device/session; status `IMPLEMENTED_NOT_DEPLOYED` dan production tetap backend S147 / Studio S150. |
+| Baseline sebelum pembaruan | `90073586f4c9f3271175675b80cd7eed89edd537` |
+| Informasi terakhir disinkronkan | SagaBook S163 source `fc898bf8e63160933213980f1ec3d69ee721590f` tervalidasi lokal untuk batas ukuran webhook pembayaran; status `IMPLEMENTED_NOT_DEPLOYED` dan production tetap S161. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik source/runtime. Deployment, activation, authenticated UAT, dan business readiness S152 sengaja tetap terpisah. |
+| Konflik | Tidak ada konflik source/runtime. Deployment S163, provider canary, authenticated UAT, dan business readiness sengaja tetap terpisah. |
 | Error | Tidak ada error sinkronisasi yang diketahui. |
 
 ## File yang berubah pada sinkronisasi ini
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
+
+## File dari sinkronisasi sebelumnya
 
 - `products/sagaview/PRODUCT.md`
 - `products/sagaview/DOSSIER.md`

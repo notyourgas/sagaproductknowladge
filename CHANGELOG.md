@@ -12,6 +12,23 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-09
 
+### SagaBook S163 payment webhook payload-size guard candidate
+
+- Ringkasan: dua route callback pembayaran kini menolak ukuran deklarasi atau
+  body aktual yang terlalu besar sebelum throttle, controller, dan mutation
+  database; response 413 tetap public-safe dengan request ID.
+- Klasifikasi `CONFIRMED`; source
+  `fc898bf8e63160933213980f1ec3d69ee721590f`, status
+  `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: 116 test relevan/unit (777 assertion), DB audit disposable 100, cache
+  compile, build/design, Pint/syntax/diff, dan npm/Composer/OSV nol advisory.
+- Production berubah: tidak. Production tetap S161; tidak ada migration,
+  credential, data customer, callback mentah, canary provider, atau perubahan
+  workflow/UI.
+- File knowledge: PRODUCT, DOSSIER, CHANGELOG, FEATURE_COVERAGE_LEDGER,
+  portfolio/root changelog, master knowledge, dan sync status SagaBook.
+
 ### SagaView S152 auth/device/session abuse hardening candidate
 
 - Ringkasan: request read/license/write kini memiliki boundary sumber dan
