@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-09 - SagaView device lease close/reopen recovery candidate
+
+- Studio `5eeef36904f84c7cf01d8f365f3d6a94ba9eec9e` melepas lease saat
+  close normal, menutup race reopen cepat melalui close intent singkat, dan
+  menyediakan takeover eksplisit bila instance lama crash atau force-close.
+- Backend `75f43b40dcd1dc81d601f16245cea3b659af483d` menerima takeover
+  hanya dari credential dan proof perangkat existing, menerbitkan token baru,
+  menolak token lama, serta mencatat audit.
+- Backend 970/11.360, Studio 188 unit, browser 126 pass/3 skip terkontrol,
+  build/budget, dan dependency audit nol advisory lulus. Status
+  `SECURITY_VALIDATED / UIUX_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap backend S147 dan Studio S150.
+
 ## 2026-08-09 - SagaBook S166 reverse proxy body-limit observability
 
 - Source `5c76735315c7979269832aada77fba3390368c31` menambahkan release

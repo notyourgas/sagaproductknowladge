@@ -745,6 +745,16 @@ SagaVIEW 175/1.935, full backend 971/11.365, build, dependency audit, integrity
 audit nol issue, dan deploy gate disposable 6/6 lulus. Status
 `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED /
 IMPLEMENTED_NOT_DEPLOYED`; production tetap backend S147 dan Studio S150.
+Candidate pemulihan close/reopen memakai Studio
+`5eeef36904f84c7cf01d8f365f3d6a94ba9eec9e` dan backend
+`75f43b40dcd1dc81d601f16245cea3b659af483d`. Close normal mengantrekan
+release; close intent singkat membuat reopen cepat pulih tanpa menunggu TTL.
+Crash/force-close memiliki takeover eksplisit dengan konfirmasi. Takeover wajib
+memakai credential dan proof device existing, mengganti token lama, serta
+mencatat audit. Backend 970/11.360, Studio 188 unit, dan browser 126 pass/3
+intentional skip lulus. Status `SECURITY_VALIDATED / UIUX_VALIDATED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap backend S147 dan
+Studio S150.
 Harga bulanan: Growth Rp200.000, Pro Rp500.000.
 Growth mencakup 1 device, 50 frame, 3 preset, offline 24 jam, dan 2 GB aset
 frame cloud. Pro mencakup 4 device, 100 frame, 10 preset, offline 168 jam, 10 GB

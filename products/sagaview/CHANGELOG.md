@@ -1,5 +1,29 @@
 # SagaView Changelog
 
+## 2026-08-09 - Device lease close/reopen recovery candidate
+
+- Klasifikasi `CONFIRMED` melalui source Studio
+  `5eeef36904f84c7cf01d8f365f3d6a94ba9eec9e` dan backend
+  `75f43b40dcd1dc81d601f16245cea3b659af483d` pada feature branch terpisah.
+- Before: token lease berada di session storage, tetapi Studio tidak memanggil
+  endpoint release saat jendela ditutup; reopen membuat instance baru dan
+  dapat tertahan sampai TTL 90 detik. After: close normal memakai background
+  beacon, reopen cepat memakai close intent 15 detik untuk menyelesaikan race,
+  dan crash/force-close memiliki takeover eksplisit dengan konfirmasi.
+- Takeover hanya diterima setelah autentikasi credential, fingerprint, dan
+  proof kriptografis perangkat existing. Token baru menggantikan token lama di
+  dalam row lock dan event audit `device_lease_taken_over` dicatat. Foto,
+  folder, editor, export, pricing, paket, subscription, dan data production
+  tidak berubah.
+- Gate hijau: backend focused 4/47 dan full 970/11.360; Studio 188 unit, full
+  Playwright 126 pass/3 intentional skip, format/lint/typecheck/build/bundle
+  budget; npm production audit dan Composer lock audit nol advisory.
+- Status `SECURITY_VALIDATED / UIUX_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Production tetap backend S147
+  `0cda8a09` / `20260808225730-0cda8a0` dan Studio S150 `4d25f606` /
+  `20260809103753-4d25f60`; guarded deploy, authenticated close/reopen UAT pada
+  perangkat Studio nyata, rollback, smoke, dan monitoring conflict tetap gate.
+
 ## 2026-08-09 - S155 entitlement optimistic concurrency candidate
 
 - Klasifikasi `CONFIRMED` melalui source

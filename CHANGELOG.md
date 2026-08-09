@@ -12,6 +12,24 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-09
 
+### SagaView device lease close/reopen recovery candidate
+
+- Ringkasan: Studio kini melepas exclusive lease saat close normal, memulihkan
+  race reopen cepat, dan memberi takeover eksplisit untuk crash/force-close
+  tanpa meminta operator mengetahui cara mengakhiri instance lama.
+- Klasifikasi `CONFIRMED`; Studio
+  `5eeef36904f84c7cf01d8f365f3d6a94ba9eec9e`, backend
+  `75f43b40dcd1dc81d601f16245cea3b659af483d`, status
+  `SECURITY_VALIDATED / UIUX_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: backend 970/11.360, Studio 188 unit, browser 126 pass/3 intentional
+  skip, format/lint/typecheck/build/budget, serta npm/Composer audit nol.
+- Production berubah: tidak. Backend tetap S147 dan Studio tetap S150; tidak
+  ada migration, perubahan foto/path lokal, pricing, paket, subscription,
+  provider, atau data tenant production.
+- File knowledge: PRODUCT, DOSSIER, CHANGELOG, FEATURE_COVERAGE_LEDGER,
+  portfolio/root changelog, master knowledge, dan sync status SagaView.
+
 ### SagaBook S166 reverse proxy body-limit observability candidate
 
 - Ringkasan: release gate kini membuktikan batas body reverse proxy kompatibel

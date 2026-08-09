@@ -104,6 +104,15 @@ handoff, support diagnostics, trial dua fase, subscription, dan billing.
 Owner Console, Studio Console, device lease, session workflow, frame catalog,
 editor/review, export/print, recovery, support, trial, plan, dan billing.
 
+Candidate pemulihan reopen membuat Studio melepas exclusive lease melalui
+background beacon saat jendela ditutup normal. Close intent berumur pendek
+menutup race saat aplikasi dibuka kembali terlalu cepat. Jika unload tidak
+terjadi karena crash/force-close, operator mendapat aksi `Ambil alih di jendela
+ini` dengan konfirmasi. Takeover tetap memerlukan credential dan proof
+kriptografis perangkat yang sama; backend mengganti token lease, mencatat audit,
+dan instance lama gagal pada heartbeat/request berikutnya. Foto, folder,
+editor, export, pricing, entitlement, dan offline grace tidak berubah.
+
 UI production memakai shell operasional solid dengan hierarchy lokasi,
 tenant, status, dan aksi utama yang jelas. Target interaktif minimal 44 px,
 motion dibatasi 180 ms, forced-colors/reduced-motion didukung, dan tepat satu
@@ -641,6 +650,10 @@ Device lease hanya mengunci Studio/start-session. Owner Console dapat digunakan
 dari browser setelah login. Customer tidak mereset sesi sendiri; cleanup
 recovery state, error/offline/reconnect/retry, dan emergency transfer
 fail-closed. Entitlement ditentukan server; UI hanya merender snapshot.
+Pada candidate reopen, close normal memulihkan lease otomatis. Crash atau
+force-close tidak menuntut operator mengetahui cara mematikan instance lama;
+operator dapat melakukan takeover eksplisit dari device terautentikasi yang
+sama tanpa menunggu TTL. Candidate belum production.
 
 ## Business model
 

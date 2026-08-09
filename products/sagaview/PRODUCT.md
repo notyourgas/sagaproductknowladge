@@ -101,6 +101,16 @@ tersebut dan meredaksi response record lama. Studio
   lock; request tanpa versi ditolak 422 dan snapshot stale ditolak 409 tanpa
   mutasi database. Browser memuat ulang state terbaru dan tidak mengulang
   mutasi otomatis. Production tidak berubah.
+  Candidate pemulihan lease membuka ulang memakai Studio
+  `5eeef36904f84c7cf01d8f365f3d6a94ba9eec9e` dan backend
+  `75f43b40dcd1dc81d601f16245cea3b659af483d`. Saat Studio ditutup normal,
+  client mengantrekan release lease dan menandai close intent singkat agar
+  reopen cepat dapat pulih tanpa menunggu TTL. Bila browser crash atau proses
+  ditutup paksa, operator dapat memilih `Ambil alih di jendela ini`; backend
+  hanya menerima takeover dari credential dan proof perangkat yang sama,
+  mengganti token lama, dan mencatat audit. Status `SECURITY_VALIDATED /
+  UIUX_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+  tetap backend S147 dan Studio S150.
 
 ## Tujuan dokumen
 
@@ -161,6 +171,11 @@ kumulatif melalui exact source S150.
   read model mengirim versi, PATCH wajib membawa expected version, dan service
   memeriksanya di dalam transaksi setelah row lock. Konflik stale mengembalikan
   respons aman dan tidak mengubah database; kandidat belum dideploy.
+- Pemulihan lease setelah reopen sudah tervalidasi lokal: close normal melepas
+  lease secara background, race reopen cepat diselesaikan otomatis hanya bila
+  ada close intent terbaru, dan crash/force-close memiliki takeover eksplisit
+  dengan konfirmasi operator. Token instance lama langsung tidak valid setelah
+  takeover; kandidat belum dideploy.
 - Entitlement live memberi Growth 50 dan Pro 100 frame aktif. Harga, device,
   preset, offline grace, storage, laporan, support, payment, dan fair-use tidak
   berubah.
