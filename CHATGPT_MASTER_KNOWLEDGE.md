@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 10 Agustus 2026 01:12 WIB
+Evidence cut-off: 10 Agustus 2026 02:18 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -815,6 +815,14 @@ audit publish. Cross-tenant tetap ditolak. SagaVIEW 127/1.240 dan regression
 entitlement/editor 55/749, build, format/syntax, serta audit dependency lulus.
 Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED /
 IMPLEMENTED_NOT_DEPLOYED`; production dan Studio tidak berubah.
+S162 source `063dfc1ac628c7862ac6140e53ca7e5158521c4c` membuat save draft
+Owner memakai ID dan checksum revisi isi. Missing context ditolak 422 dan tab
+stale ditolak 409 sebelum mutasi database/storage; draft terbaru, aset, kuota,
+katalog, dan audit tetap utuh. UI menahan Simpan/Publish sampai reload draft
+terbaru. SagaVIEW 179/1.982, Playwright desktop+mobile, build, format, dan audit
+dependency lulus. Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
+UIUX_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak
+berubah.
 Harga bulanan: Growth Rp200.000, Pro Rp500.000.
 Growth mencakup 1 device, 50 frame, 3 preset, offline 24 jam, dan 2 GB aset
 frame cloud. Pro mencakup 4 device, 100 frame, 10 preset, offline 168 jam, 10 GB

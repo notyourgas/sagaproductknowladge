@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-10 - SagaView S162 stale draft write protection
+
+- Source `063dfc1ac628c7862ac6140e53ca7e5158521c4c` menambahkan checksum
+  revisi isi untuk save draft Owner. Tab stale ditolak 409 tanpa mengubah draft,
+  aset, kuota, katalog, atau audit; UI menahan Simpan/Publish hingga reload.
+- SagaVIEW 179/1.982, Playwright desktop+mobile, target 44 px/no-overflow,
+  build, format, dan audit dependency nol vulnerability lulus.
+- Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / UIUX_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production, SagaBook, kontrak
+  estimate-only, foto/path customer, dan data tenant tidak berubah.
+
 ## 2026-08-10 - SagaView S161 idempotent frame publish
 
 - Source `49cc6673d5875142fdbc31f8cea95c8dd2efef77` membuat retry publish

@@ -12,13 +12,13 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-10T01:12:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-10T02:18:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `3e655f9fa9a513aaadac870181cb6f2d94e4dddc` |
-| Informasi terakhir disinkronkan | SagaVIEW S161 source `49cc6673d5875142fdbc31f8cea95c8dd2efef77`; publish frame retry idempotent, local validated dan belum dideploy. |
+| Baseline sebelum pembaruan | `6f07e73658f40d76560d756d30e1fdcad630c430` |
+| Informasi terakhir disinkronkan | SagaVIEW S162 source `063dfc1ac628c7862ac6140e53ca7e5158521c4c`; stale save draft ditolak dengan checksum revisi, local validated dan belum dideploy. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik kanonik untuk S161; optimistic concurrency saat dua browser menyunting draft yang sama masih residual. |
+| Konflik | Tidak ada konflik kanonik untuk S162; authenticated dua browser dan failure/retry jaringan nyata masih residual. |
 | Error | Tidak ada error knowledge sync yang diketahui. |
 
 ## File yang berubah pada sinkronisasi ini

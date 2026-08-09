@@ -12,6 +12,20 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-10
 
+### SagaView S162 stale draft write protection candidate
+
+- Ringkasan: save draft Owner kini memakai ID dan checksum revisi isi; tab
+  stale ditolak 409 dan UI menahan Simpan/Publish sampai reload terbaru.
+- Klasifikasi `CONFIRMED`; source
+  `063dfc1ac628c7862ac6140e53ca7e5158521c4c`.
+- Gate: SagaVIEW 179/1.982, focused 15 assertion, Playwright desktop+mobile,
+  build, Pint, diff check, dan Composer/npm audit nol vulnerability.
+- Production berubah: tidak. Status `SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / UIUX_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`.
+- File knowledge: PRODUCT, DOSSIER, CHANGELOG, FEATURE_COVERAGE_LEDGER,
+  portfolio/root changelog, master knowledge, GAPS, dan SYNC_STATUS.
+
 ### SagaView S161 idempotent frame publish candidate
 
 - Ringkasan: retry publish frame sesudah respons jaringan hilang kini

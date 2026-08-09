@@ -1,5 +1,23 @@
 # SagaView Changelog
 
+## 2026-08-10 - S162 stale draft write protection candidate
+
+- Before: dua tab Owner dapat menyimpan frame yang sama secara berurutan dan
+  tab lama berpotensi menimpa perubahan tab terbaru tanpa peringatan.
+- After: UI/API wajib membawa ID dan checksum revisi isi draft. Missing context
+  ditolak 422; checksum stale ditolak 409 sebelum database/storage berubah.
+  Simpan dan Publish ditahan sampai operator memuat ulang draft terbaru.
+- Dampak integritas: draft terbaru, aset, reservasi/kuota, katalog, dan audit
+  tidak berubah pada konflik; checksum tetap membedakan update dalam detik yang
+  sama. Tenant/Owner gate existing tetap berlaku.
+- Evidence: focused red->green 1/15; SagaVIEW 179/179 dengan 1.982 assertion;
+  Playwright 1440x900 dan 390x844, target 44 px, no-overflow; Vite build, Pint,
+  diff check, Composer audit, dan npm production audit lulus tanpa vulnerability.
+- Source `063dfc1ac628c7862ac6140e53ca7e5158521c4c`; status
+  `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / UIUX_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Tidak ada migration, perubahan
+  foto/path customer, pricing/payment, SagaBook, atau deployment production.
+
 ## 2026-08-10 - S161 idempotent frame publish candidate
 
 - Before: publish frame pertama dapat sukses di server tetapi responsnya hilang;
