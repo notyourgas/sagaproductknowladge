@@ -648,22 +648,23 @@ session API serta meredaksi field tersebut dari response historis. Keduanya
 aktif sebagai release `20260808225730-df959cc` dan
 `20260808225730-0cda8a0`; rollback S146 tersedia. Data historis tidak dimutasi
 sesuai keputusan founder, dan agregat read-only sebelum/sesudah release identik.
-S148 Studio `6a80d6dc` sudah `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:
+S148 Studio `6a80d6dc`, kini aktif kumulatif melalui S150:
 kegagalan tulis folder output menghentikan export tanpa fallback download
 otomatis, writer gagal dibatalkan, dan operator mendapat panduan izin/ruang
 disk serta retry. Stepper horizontal customer kini dapat difokuskan keyboard.
-Production belum berubah dan tetap S147.
 S149 Studio `b1e0425847cde1da0d8ec3893fcef421ea4cece9` juga
-`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: checkpoint recovery lokal kini
+aktif kumulatif melalui S150: checkpoint recovery lokal kini
 menunggu commit IndexedDB sebelum update status cloud dan navigasi. Handle
 folder dipertahankan pada checkpoint lanjutan; klik ganda, quota failure, dan
-fullscreen recovery fail-closed tanpa mengunggah foto/path. Production tetap
-S147.
+fullscreen recovery fail-closed tanpa mengunggah foto/path.
 S150 Studio `4d25f6069737dc8f14342a62b6c6241081d544d3` menutup cleanup
-import lokal secara `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Object URL
+import lokal dan aktif sebagai release `20260809103753-4d25f60`. Object URL
 foto/thumbnail staged dilepas saat cancel atau pencatatan cloud gagal; folder,
 photo-count, serta target tidak berubah sebelum commit sukses; pesan backend
-mentah tidak dirender. Production tetap S147.
+mentah tidak dirender. Status kumulatif S148-S150 adalah
+`PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; rollback langsung S147
+`20260808225730-df959cc` tersedia. Authenticated UAT folder Windows dan residual
+race/corrupt-file tetap menahan `BUSINESS_READY`.
 Harga bulanan: Growth Rp200.000, Pro Rp500.000.
 Growth mencakup 1 device, 50 frame, 3 preset, offline 24 jam, dan 2 GB aset
 frame cloud. Pro mencakup 4 device, 100 frame, 10 preset, offline 168 jam, 10 GB
@@ -679,9 +680,9 @@ backend source `c8538060f64cfabce46dc7f837531015673e7a1c`.
 Update terbaru: backend memakai source
 `0cda8a09fa3f4bb08a483f6bd46ba25dc4fa6b28`, release
 `20260808225730-0cda8a0`, sedangkan Studio aktif memakai source
-`df959ccba2a69306d4aa50795b5aa35e875ffe43`, release
-`20260808225730-df959cc`, dengan rollback S146 backend
-`20260808190040-1af8852` dan Studio `20260808190040-81e55ad`. Workspace
+`4d25f6069737dc8f14342a62b6c6241081d544d3`, release
+`20260809103753-4d25f60`, dengan rollback backend
+`20260808190040-1af8852` dan Studio S147 `20260808225730-df959cc`. Workspace
 Session kini memakai lebar adaptif sampai 1600 piksel pada monitor besar tanpa
 merusak reflow mobile/laptop atau menambah horizontal overflow. Workspace
 Output memakai batas 1400 piksel: satu alur vertikal pada mobile/laptop dan dua

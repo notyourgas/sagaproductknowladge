@@ -1,5 +1,25 @@
 # SagaView Changelog
 
+## 2026-08-09 - S148-S150 cumulative immutable production release
+
+- Studio source `4d25f6069737dc8f14342a62b6c6241081d544d3` aktif sebagai
+  release `20260809103753-4d25f60`; rollback langsung S147
+  `20260808225730-df959cc` dipertahankan. Backend tetap
+  `0cda8a09fa3f4bb08a483f6bd46ba25dc4fa6b28` / `20260808225730-0cda8a0`.
+- S148 export folder fail-closed, S149 recovery checkpoint atomik, dan S150
+  cleanup import lokal kini aktif kumulatif. Tidak ada perubahan SagaBook,
+  paket, harga, payment, subscription, atau data sensitif tenant.
+- Gate release hijau: 48 file/185 unit, full Playwright 126 pass dan 3 skip
+  disengaja, format/lint/typecheck/build/bundle budget, npm audit nol
+  vulnerability, fresh backup/checksum, disposable restore 148 tabel,
+  candidate/rollback rehearsal, live rollback cycle, smoke, header keamanan,
+  service health, journal, dan preservation snapshot.
+- Verifikasi browser production pada 1440x900 dan 390x844 memberi HTTP 200,
+  tanpa error JavaScript, tanpa overflow horizontal, dan tampilan login/session
+  aman. Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated UAT
+  folder Windows nyata dan residual race/corrupt-file tetap memisahkan release
+  ini dari `BUSINESS_READY`.
+
 ## 2026-08-09 - S150 cleanup import foto lokal candidate
 
 - Klasifikasi `CONFIRMED` melalui source Studio

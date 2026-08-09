@@ -275,15 +275,16 @@ ketika keputusan atau release baru menutup gap.
 
 ### SagaView
 
-- `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: S147 metadata no-upload aktif
-  pada Studio `df959ccb` / `20260808225730-df959cc` dan backend `0cda8a09` /
-  `20260808225730-0cda8a0`; rollback S146 tersedia. Andreas menetapkan row
+- `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: S148-S150 aktif kumulatif pada
+  Studio `4d25f606` / `20260809103753-4d25f60`, backend S147 tetap `0cda8a09` /
+  `20260808225730-0cda8a0`, dan rollback Studio S147
+  `20260808225730-df959cc` tersedia. Andreas menetapkan row
   historis tidak dibersihkan. Dry-run agregat sebelum/sesudah identik: 31 sesi,
   31 label folder, 15 key foto lokal, 14 key output lokal, dan nol embedded
   image; response live meredaksi data itu dan field baru ditolak 422. Residual
-  sebelum `BUSINESS_READY`: UAT operator dengan folder Windows nyata serta
-  screening export/output dan recovery/quota (write failure, disk full, crash,
-  partial write, safe cleanup, dan network no-upload).
+  sebelum `BUSINESS_READY`: UAT operator dengan folder Windows nyata untuk
+  disk full, permission revoke, crash/partial write, safe cleanup, network
+  no-upload, cancel/replace race, dan corrupt/unsupported decode.
 
 - `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: S143 galeri stabil dan harga
   paket jujur aktif pada backend `8fac4f68` / `20260808134902-8fac4f6` dan

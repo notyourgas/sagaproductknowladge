@@ -1,5 +1,20 @@
 # Portfolio Changelog
 
+## 2026-08-09 - SagaView S148-S150 cumulative production
+
+- Studio `4d25f6069737dc8f14342a62b6c6241081d544d3` aktif sebagai release
+  `20260809103753-4d25f60`; rollback langsung S147
+  `20260808225730-df959cc` dipertahankan. Backend S147 tidak berubah.
+- Export folder kini fail-closed, recovery checkpoint menunggu commit lokal,
+  dan import staged dibersihkan aman pada cancel/cloud failure. Full 185 unit,
+  126 browser pass/3 intentional skip, build/audit, backup/restore 148 tabel,
+  rehearsal, live rollback cycle, preservation, service/security/journal, dan
+  smoke dua viewport lulus.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated UAT folder
+  Windows nyata serta residual cancel/replace race dan corrupt decode tetap
+  menahan `BUSINESS_READY`. SagaBook, pricing, payment, subscription, dan data
+  sensitif tenant tidak berubah.
+
 ## 2026-08-09 - COYABAG R2 mainline dan immutable RC
 
 - Source `264c6ac2ebec33c6471a4c49572ddcdc82b51cf2` di-fast-forward ke

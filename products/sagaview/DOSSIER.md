@@ -45,6 +45,10 @@ SagaView berdasarkan runtime production aktif.
   `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; backend
   `0cda8a09` / `20260808225730-0cda8a0`, Studio `df959ccb` /
   `20260808225730-df959cc`, rollback S146
+- S148-S150 export fail-closed, recovery checkpoint atomik, dan cleanup import
+  lokal: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; Studio `4d25f606` /
+  `20260809103753-4d25f60`, rollback langsung S147; backend tetap
+  `0cda8a09` / `20260808225730-0cda8a0`
 - Acceptance integrasi feature-by-feature: ledger dimulai konservatif dan
   belum membuktikan coverage penuh; lihat
   [Feature Coverage Ledger](FEATURE_COVERAGE_LEDGER.md).

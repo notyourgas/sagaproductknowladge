@@ -56,20 +56,20 @@ tersebut dan meredaksi response record lama. Studio
   PRODUCTION_ACTIVATED`; rollback langsung adalah S146. Row historis tidak
   dimutasi sesuai `DEC-067`; agregat sebelum/sesudah release tetap identik.
   S148 source Studio `6a80d6dc41fb8227ece6b002c8d00a9b9dd0c444`
-  berstatus `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: kegagalan tulis
+  kini aktif kumulatif melalui S150: kegagalan tulis
   folder output kini menghentikan export, membatalkan writer yang gagal, dan
   tidak berpindah diam-diam ke download browser. Operator mendapat panduan
   izin/ruang disk serta retry; mode download tetap hanya aktif bila dipilih
   eksplisit. Stepper customer yang dapat digulir kini dapat difokuskan dan
   diberi nama aksesibel pada semua tema.
   S149 source Studio `b1e0425847cde1da0d8ec3893fcef421ea4cece9`
-  berstatus `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: checkpoint recovery
+  kini aktif kumulatif melalui S150: checkpoint recovery
   lokal sekarang harus benar-benar commit sebelum status sesi cloud diubah dan
   customer flow dibuka. Checkpoint lanjutan mempertahankan handle folder yang
   sudah dipilih, klik ganda ditahan, dan kegagalan quota tetap di halaman
   Session dengan pesan aman serta keluar dari fullscreen.
   S150 source Studio `4d25f6069737dc8f14342a62b6c6241081d544d3`
-  berstatus `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: import foto lokal
+  aktif sebagai release `20260809103753-4d25f60`: import foto lokal
   kini baru mengubah folder dan target foto setelah session cloud diterima.
   Bila thumbnail dibatalkan atau pencatatan cloud gagal, seluruh object URL
   sementara dilepas, state sesi lama tidak ditimpa, dan pesan backend mentah
@@ -84,10 +84,8 @@ Menjadi ringkasan fakta kanonik SagaView. Detail lengkap berada di
 ## Konteks
 
 Fakta release di dokumen ini mengacu pada exact source dan runtime production
-yang diverifikasi sampai 8 Agustus 2026.
-
-Kandidat S148 sampai S150 diverifikasi lokal pada 9 Agustus 2026 dan belum
-mengubah runtime production.
+yang diverifikasi sampai 9 Agustus 2026. S148 sampai S150 sudah aktif
+kumulatif melalui exact source S150.
 
 ## Status production terbaru
 
@@ -104,9 +102,9 @@ mengubah runtime production.
 - Backend source `0cda8a09fa3f4bb08a483f6bd46ba25dc4fa6b28` aktif sebagai
   release `20260808225730-0cda8a0`; rollback
   `20260808190040-1af8852` dipertahankan.
-- Studio source `df959ccba2a69306d4aa50795b5aa35e875ffe43` aktif sebagai
-  release `20260808225730-df959cc`; rollback
-  `20260808190040-81e55ad` dipertahankan.
+- Studio source `4d25f6069737dc8f14342a62b6c6241081d544d3` aktif sebagai
+  release `20260809103753-4d25f60`; rollback langsung
+  `20260808225730-df959cc` dipertahankan.
 - S146 mengaktifkan consent S144 dan Support Hub device-scoped. Missing/
   invalid/revoked credential ditolak, tenant/product/actor diturunkan
   server-side, launcher tetap fail-soft, dan foto/folder/editor/export tidak
@@ -115,6 +113,10 @@ mengubah runtime production.
   menerima ID lokal opaque, urutan, hitungan, status, harga, dan mode simpan;
   nama/path/ukuran file serta label folder ditolak atau disaring. Data lama
   tetap tersimpan tetapi tidak dikembalikan melalui response API.
+- S148-S150 aktif kumulatif: export folder gagal secara fail-closed tanpa
+  fallback download otomatis, checkpoint recovery harus commit sebelum
+  navigasi/status cloud, dan import staged dibersihkan tanpa menimpa state lama
+  ketika dibatalkan atau cloud gagal.
 - Entitlement live memberi Growth 50 dan Pro 100 frame aktif. Harga, device,
   preset, offline grace, storage, laporan, support, payment, dan fair-use tidak
   berubah.

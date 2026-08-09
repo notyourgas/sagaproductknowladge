@@ -12,6 +12,23 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-09
 
+### SagaView S148-S150 cumulative production
+
+- Ringkasan: export folder fail-closed, checkpoint recovery atomik, dan cleanup
+  import foto lokal dipromosikan secara kumulatif melalui Studio source
+  `4d25f6069737dc8f14342a62b6c6241081d544d3`, release
+  `20260809103753-4d25f60`, rollback S147 `20260808225730-df959cc`.
+- Gate: 185 unit, full Playwright 126 pass/3 intentional skip, build/budget,
+  audit dependency, fresh backup/checksum, disposable restore 148 tabel,
+  rehearsal kandidat/rollback, live rollback cycle, preservation, services,
+  security headers, journal, dan smoke browser dua viewport lulus.
+- Production berubah: ya. Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+  backend tetap S147 dan SagaBook, harga, paket, payment, subscription, serta
+  data sensitif tenant tidak berubah. Authenticated Windows UAT dan residual
+  race/corrupt-file masih menahan `BUSINESS_READY`.
+- File knowledge: PRODUCT, DOSSIER, CHANGELOG, FEATURE_COVERAGE_LEDGER,
+  portfolio/root changelog, master knowledge, GAPS, dan sync status SagaView.
+
 ### COYABAG R2 mainline dan immutable RC
 
 - Ringkasan: kandidat finalisasi dipromosikan ke `main` melalui fast-forward
