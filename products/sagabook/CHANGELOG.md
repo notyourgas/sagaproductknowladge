@@ -3,7 +3,7 @@
 ## 2026-08-09 - Payment webhook payload-size guard S163 candidate
 
 - Klasifikasi `CONFIRMED`; source
-  `fc898bf8e63160933213980f1ec3d69ee721590f` pada branch
+  `fc898bf86512e3863c497debd62d99ca5e380a6d` pada branch
   `codex/s163-sagabook-webhook-payload-limit` sudah dipush.
 - Before: callback berukuran sangat besar masih dapat mencapai parsing dan
   autentikasi bisnis. After: dua route webhook pembayaran menolak ukuran yang

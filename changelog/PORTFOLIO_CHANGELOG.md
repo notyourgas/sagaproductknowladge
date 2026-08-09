@@ -2,7 +2,7 @@
 
 ## 2026-08-09 - SagaBook S163 payment webhook payload-size guard candidate
 
-- Source `fc898bf8e63160933213980f1ec3d69ee721590f` menolak callback
+- Source `fc898bf86512e3863c497debd62d99ca5e380a6d` menolak callback
   pembayaran terlalu besar sebelum throttle, controller, dan mutation database.
 - Ukuran deklarasi dan body aktual diverifikasi; response 413 public-safe
   membawa request ID. Payload normal tetap memakai autentikasi dan boundary

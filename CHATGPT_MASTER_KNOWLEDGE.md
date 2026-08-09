@@ -99,7 +99,7 @@ dependency audit hijau. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
 production tetap S161 dan provider canary nyata tidak dijalankan.
 
 Candidate security/database SagaBook S163 source
-`fc898bf8e63160933213980f1ec3d69ee721590f` menambah batas ukuran callback
+`fc898bf86512e3863c497debd62d99ca5e380a6d` menambah batas ukuran callback
 pembayaran sebelum throttle dan controller. Ukuran deklarasi serta body aktual
 diverifikasi; rejection 413 public-safe tidak menambah payment event atau audit,
 sedangkan payload normal tetap melewati autentikasi dan boundary existing. Gate

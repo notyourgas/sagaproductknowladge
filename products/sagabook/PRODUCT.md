@@ -48,7 +48,7 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Histori kandidat sebelum release S161
 - Candidate security/database S163 source
-  `fc898bf8e63160933213980f1ec3d69ee721590f` pada branch
+  `fc898bf86512e3863c497debd62d99ca5e380a6d` pada branch
   `codex/s163-sagabook-webhook-payload-limit` menolak payload webhook
   pembayaran yang terlalu besar sebelum throttle, controller, parsing bisnis,
   dan mutation database. Guard memeriksa ukuran yang dideklarasikan serta
