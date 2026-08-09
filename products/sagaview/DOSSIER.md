@@ -53,6 +53,9 @@ SagaView berdasarkan runtime production aktif.
 - S159 estimate-only contract: `SECURITY_VALIDATED /
   DATA_INTEGRITY_VALIDATED / UIUX_VALIDATED / LOCAL_VALIDATED /
   IMPLEMENTED_NOT_DEPLOYED`; backend `38c4221e`, Studio `6d7083a3`
+- S161 publish frame idempotent: `SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+  backend `49cc6673`, tanpa migration atau perubahan Studio
 - Acceptance integrasi feature-by-feature: ledger dimulai konservatif dan
   belum membuktikan coverage penuh; lihat
   [Feature Coverage Ledger](FEATURE_COVERAGE_LEDGER.md).

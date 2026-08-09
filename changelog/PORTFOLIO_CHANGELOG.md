@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-10 - SagaView S161 idempotent frame publish
+
+- Source `49cc6673d5875142fdbc31f8cea95c8dd2efef77` membuat retry publish
+  frame mengembalikan versi dan snapshot yang sama ketika publish awal sudah
+  sukses, tanpa menambah revisi katalog, versi frame, atau audit kedua.
+- Cross-tenant tetap ditolak. SagaVIEW 127/127 (1.240 assertion), regression
+  entitlement/editor 55/55 (749), build, format/syntax, dan audit dependency nol
+  vulnerability lulus.
+- Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production, Studio, SagaBook, foto/path lokal,
+  estimasi biaya, dan data tenant tidak berubah.
+
 ## 2026-08-10 - SagaView S160 Owner Console authorization hardening
 
 - Source `28e0ab9b8159426633d88d52b68b5f713fa86aa2` membatasi seluruh 47 route

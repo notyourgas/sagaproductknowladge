@@ -275,6 +275,12 @@ ketika keputusan atau release baru menutup gap.
 
 ### SagaView
 
+- `IMPLEMENTED_NOT_DEPLOYED`: S161 backend `49cc6673` membuat retry publish
+  frame idempotent tanpa menggandakan revisi katalog, versi frame, atau audit.
+  Residual editor berikutnya adalah optimistic concurrency saat dua browser
+  menyunting draft yang sama, authenticated failure/retry, dan customer export
+  parity. Production belum berubah.
+
 - `IMPLEMENTED_NOT_DEPLOYED`: S159 menetapkan SagaVIEW estimate-only. Backend
   `38c4221e` dan Studio `6d7083a3` menghapus payment hold, mark-paid,
   provider/expiry/callback, QRIS/rekening, dan gate export/cetak. S157-S158

@@ -1,5 +1,21 @@
 # SagaView Changelog
 
+## 2026-08-10 - S161 idempotent frame publish candidate
+
+- Before: publish frame pertama dapat sukses di server tetapi responsnya hilang;
+  retry operator lalu mendapat 404 walau frame sebenarnya sudah terbit.
+- After: retry pada draft yang sudah published mengembalikan snapshot yang sama
+  tanpa menaikkan versi katalog, membuat versi frame tambahan, atau menulis audit
+  publish kedua. Draft tenant lain dan versi superseded tetap fail-closed.
+- Evidence: focused red gagal 1/1 lalu hijau; regression SagaVIEW 127/127 dengan
+  1.240 assertion; regression entitlement/editor 55/55 dengan 749 assertion;
+  API replay menghasilkan response identik; build Vite, Pint, PHP syntax, diff
+  check, Composer audit, dan npm production audit lulus tanpa vulnerability.
+- Source `49cc6673d5875142fdbc31f8cea95c8dd2efef77`; status
+  `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Tidak ada migration, perubahan Studio/UI, foto/path
+  lokal, estimasi biaya, SagaBook, atau deployment production.
+
 ## 2026-08-10 - S160 Owner Console authorization hardening candidate
 
 - Before: role tenant non-owner dengan sesi valid masih dapat membuka halaman

@@ -10,6 +10,23 @@ produk dan [Portfolio Changelog](changelog/PORTFOLIO_CHANGELOG.md).
 
 Root changelog tidak menggantikan changelog produk atau portfolio.
 
+## 2026-08-10
+
+### SagaView S161 idempotent frame publish candidate
+
+- Ringkasan: retry publish frame sesudah respons jaringan hilang kini
+  mengembalikan hasil yang sama tanpa menggandakan revisi katalog, versi, atau
+  audit publish.
+- Klasifikasi `CONFIRMED`; source
+  `49cc6673d5875142fdbc31f8cea95c8dd2efef77`.
+- Gate: SagaVIEW 127/127 dengan 1.240 assertion, entitlement/editor 55/55
+  dengan 749 assertion, API replay identik, build, format/syntax, diff check,
+  serta Composer/npm audit nol vulnerability.
+- Production berubah: tidak. Status `SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- File knowledge: PRODUCT, DOSSIER, CHANGELOG, FEATURE_COVERAGE_LEDGER,
+  portfolio/root changelog, master knowledge, GAPS, dan SYNC_STATUS.
+
 ## 2026-08-09
 
 ### SagaView S159 estimate-only contract candidate

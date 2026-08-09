@@ -1,6 +1,6 @@
 # SagaView Product Knowledge
 
-Updated: 9 Agustus 2026
+Updated: 10 Agustus 2026
 Evidence status: production deployed + production activated; frame import-order,
 compact all-menu, workspace Session/Output/Izin Foto monitor besar, free drag
 rotation, pemisahan Simpan Draft/Publish Frame, limit Growth 50/Pro 100,
@@ -135,8 +135,16 @@ tersebut dan meredaksi response record lama. Studio
   membership tidak aktif, dan konteks workspace yang salah tetap fail-closed
   dengan error aman tanpa membuat link aktivasi perangkat. Gate 123 test dengan
   1.427 assertion, cakupan 47/47 route, build, format/syntax, serta audit
-  dependency lulus. Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
-  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
+   dependency lulus. Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
+   LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
+   S161 backend `49cc6673d5875142fdbc31f8cea95c8dd2efef77`
+   membuat publish frame aman diulang setelah respons jaringan hilang. Retry
+   untuk draft yang sudah published mengembalikan versi yang sama tanpa
+   menaikkan revisi katalog, membuat versi tambahan, atau menggandakan audit.
+   Cross-tenant tetap ditolak. Regression SagaVIEW 127 test/1.240 assertion,
+   regression entitlement/editor 55/749, build, format/syntax, serta audit
+   dependency lulus. Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
+   LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
 
 ## Tujuan dokumen
 
