@@ -278,9 +278,12 @@ ketika keputusan atau release baru menutup gap.
 - `IMPLEMENTED_NOT_DEPLOYED`: S162 source `063dfc1a` menutup optimistic
   concurrency draft dengan ID+checksum revisi isi, 409 fail-closed, cleanup aset
   konflik, dan recovery UI desktop/mobile. S161 publish retry idempotent tetap
-  tercakup. Residual berikutnya: authenticated Owner dua browser pada workspace
-  nyata, failure/retry jaringan, dan customer export parity. Production belum
-  berubah.
+  tercakup. Blocker permission database rehearsal sudah ditutup dengan principal
+  ephemeral scoped satu schema; tiga rehearsal dan forced rollback lulus tanpa
+  perubahan production. Status kini `STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
+  Residual berikutnya: guarded production deployment, authenticated Owner dua
+  browser pada workspace nyata, failure/retry jaringan, dan customer export
+  parity. Production belum berubah.
 
 - `IMPLEMENTED_NOT_DEPLOYED`: S159 menetapkan SagaVIEW estimate-only. Backend
   `38c4221e` dan Studio `6d7083a3` menghapus payment hold, mark-paid,

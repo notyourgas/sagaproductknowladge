@@ -12,16 +12,28 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-10T06:27:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-10T06:38:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `13850b3a555291ccb9ab06ab59ecf3ac3df904c7` |
-| Informasi terakhir disinkronkan | SagaBook S171 source `33aa5261d23656fd452826f82cfef4eda377eca4`; masking PII admin local-validated dan belum production-deployed. |
+| Baseline sebelum pembaruan | `528978790a921d886ea6c2749a4267a119c896ce` |
+| Informasi terakhir disinkronkan | SagaView S162 backend `063dfc1a` dan Studio `6d7083a3`; database release rehearsal memakai principal ephemeral scoped satu schema dan berstatus `STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik kanonik. Production SagaBook tetap S170; authenticated Owner/operator UAT dan gap pilot tetap terbuka. |
+| Konflik | Tidak ada konflik kanonik. Production SagaView tetap pada release 9 Agustus; guarded deploy dan authenticated Owner/Studio UAT tetap terbuka. |
 | Error | Tidak ada error knowledge sync yang diketahui. |
 
 ## File yang berubah pada sinkronisasi ini
+
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/DOSSIER.md`
+- `products/sagaview/CHANGELOG.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
+
+## File dari sinkronisasi sebelumnya
 
 - `products/sagabook/PRODUCT.md`
 - `products/sagabook/DOSSIER.md`

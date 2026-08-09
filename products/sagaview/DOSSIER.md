@@ -57,10 +57,13 @@ SagaView berdasarkan runtime production aktif.
   DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
   backend `49cc6673`, tanpa migration atau perubahan Studio
 - S162 draft optimistic concurrency: `SECURITY_VALIDATED /
-  DATA_INTEGRITY_VALIDATED / UIUX_VALIDATED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED`; source `063dfc1a`, tanpa migration/deploy. Save
+  DATA_INTEGRITY_VALIDATED / UIUX_VALIDATED / LOCAL_VALIDATED / STAGING_READY /
+  IMPLEMENTED_NOT_DEPLOYED`; source `063dfc1a`, tanpa deployment. Save
   Owner memakai ID+checksum revisi isi; stale 409 tidak mengubah draft, aset,
   kuota, katalog, atau audit. UI menahan Simpan/Publish sampai reload terbaru.
+  Harness release memakai principal MySQL ephemeral dengan privilege hanya pada
+  satu schema disposable; tiga rehearsal dan forced rollback lulus tanpa
+  mengubah schema/data/symlink production.
 - Acceptance integrasi feature-by-feature: ledger dimulai konservatif dan
   belum membuktikan coverage penuh; lihat
   [Feature Coverage Ledger](FEATURE_COVERAGE_LEDGER.md).

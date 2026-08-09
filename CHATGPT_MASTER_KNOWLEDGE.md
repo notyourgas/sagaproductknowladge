@@ -831,8 +831,11 @@ stale ditolak 409 sebelum mutasi database/storage; draft terbaru, aset, kuota,
 katalog, dan audit tetap utuh. UI menahan Simpan/Publish sampai reload draft
 terbaru. SagaVIEW 179/1.982, Playwright desktop+mobile, build, format, dan audit
 dependency lulus. Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
-UIUX_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak
-berubah.
+UIUX_VALIDATED / LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
+Release rehearsal memakai principal database ephemeral yang hanya berhak pada
+satu schema disposable. Tiga siklus migrate-rollback-reapply dan forced-failure
+rollback lulus; principal/schema sementara kembali nol dan production guard
+tidak berubah. Production tetap pada release sebelumnya dan belum diaktifkan.
 Harga bulanan: Growth Rp200.000, Pro Rp500.000.
 Growth mencakup 1 device, 50 frame, 3 preset, offline 24 jam, dan 2 GB aset
 frame cloud. Pro mencakup 4 device, 100 frame, 10 preset, offline 168 jam, 10 GB

@@ -12,6 +12,21 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-10
 
+### SagaView S162 release rehearsal blocker closed
+
+- Ringkasan: rehearsal database kini memakai principal ephemeral scoped satu
+  schema disposable dan cleanup fail-closed, tanpa memperluas privilege user
+  runtime production.
+- Klasifikasi `CONFIRMED`; source backend
+  `063dfc1ac628c7862ac6140e53ca7e5158521c4c` dan Studio
+  `6d7083a3e9ae8e91b948622f24485a4226748344`.
+- Gate: tiga migrate-rollback-reapply, forced-failure rollback, cleanup
+  principal/schema, production guard, service, dan HTTP smoke lulus.
+- Production berubah: tidak. Status `RELEASE_REHEARSAL_VALIDATED /
+  STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
+- File knowledge: PRODUCT, DOSSIER, product/portfolio/root changelog,
+  FEATURE_COVERAGE_LEDGER, master knowledge, GAPS, dan SYNC_STATUS.
+
 ### SagaBook S171 admin customer PII masking candidate
 
 - Ringkasan: nomor WhatsApp customer di Dashboard, Booking list, dan Booking

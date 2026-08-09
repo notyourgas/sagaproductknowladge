@@ -1,5 +1,23 @@
 # SagaView Changelog
 
+## 2026-08-10 - S162 release rehearsal blocker closed
+
+- Before: Laravel tidak dapat menjalankan migration pada clone disposable
+  karena user runtime benar dibatasi hanya ke schema production; deploy berhenti
+  fail-closed sebelum migration/cutover production.
+- After: harness membuat principal acak berumur pendek dengan privilege hanya
+  pada satu schema rehearsal, memakai config cache terisolasi, lalu menghapus
+  principal dan schema pada success maupun failure.
+- Evidence: exact candidate backend
+  `063dfc1ac628c7862ac6140e53ca7e5158521c4c` dan Studio
+  `6d7083a3e9ae8e91b948622f24485a4226748344`; tiga siklus
+  migrate-rollback-reapply, forced-failure rollback, production guard, cleanup
+  user/schema, service, dan HTTP smoke lulus.
+- Status `RELEASE_REHEARSAL_VALIDATED / STAGING_READY /
+  IMPLEMENTED_NOT_DEPLOYED`. Production tetap backend
+  `20260809162045-13a94c5` dan Studio `20260809162045-5eeef36`; schema kandidat,
+  payment/provider, foto/path customer, SagaBook, dan data tenant tidak berubah.
+
 ## 2026-08-10 - S162 stale draft write protection candidate
 
 - Before: dua tab Owner dapat menyimpan frame yang sama secara berurutan dan

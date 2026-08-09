@@ -152,7 +152,11 @@ tersebut dan meredaksi response record lama. Studio
    menyediakan tombol muat ulang 44 px. SagaVIEW 179/1.982, Playwright
    1440x900 dan 390x844, build, Pint, serta audit dependency lulus. Status
    `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / UIUX_VALIDATED /
-   LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
+   LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`. Release
+   rehearsal terakhir menjalankan tiga siklus migrate-rollback-reapply dan satu
+   forced-failure rollback memakai principal database sementara yang hanya
+   berhak pada schema disposable; seluruh principal/schema sementara terhapus
+   dan production guard tidak berubah. Production belum diaktifkan.
 
 ## Tujuan dokumen
 

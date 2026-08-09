@@ -2,6 +2,14 @@
 
 Evidence cut-off: 10 Agustus 2026 02:18 WIB
 
+Release rehearsal cut-off: 10 Agustus 2026 06:38 WIB. Kandidat kumulatif S162
+backend `063dfc1a` dan Studio `6d7083a3` menjalankan tiga siklus disposable
+migrate-rollback-reapply serta satu forced-failure rollback. Principal MySQL
+ephemeral hanya mendapat privilege pada satu schema disposable dan kembali nol
+bersama schema sementaranya; production guard, symlink, schema kandidat, data,
+service, dan HTTP smoke tidak berubah. Status release gate:
+`RELEASE_REHEARSAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
+
 ## Tujuan
 
 Mencatat bukti UI/UX dan integrasi SagaView secara fitur-per-fitur sambil menjaga kontrak privacy dan local-first.

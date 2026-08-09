@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-10 - SagaView S162 release rehearsal gate
+
+- Harness tidak lagi meminta user runtime production mengakses database
+  disposable. Setiap rehearsal memakai principal ephemeral yang hanya berhak
+  pada satu schema clone dan dihapus fail-closed.
+- Kandidat backend `063dfc1a` dan Studio `6d7083a3` lulus tiga siklus
+  migrate-rollback-reapply, forced-failure rollback, cleanup, production guard,
+  service, dan HTTP smoke.
+- Status `RELEASE_REHEARSAL_VALIDATED / STAGING_READY /
+  IMPLEMENTED_NOT_DEPLOYED`; production SagaView tetap backend
+  `20260809162045-13a94c5` dan Studio `20260809162045-5eeef36`. SagaBook,
+  payment/provider, foto/path customer, schema, dan data production tidak berubah.
+
 ## 2026-08-10 - SagaBook S171 admin customer PII masking
 
 - Dashboard, Booking list, dan Booking Detail kini menyamarkan nomor WhatsApp
