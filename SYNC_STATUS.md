@@ -12,23 +12,24 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-09T14:40:55+07:00 |
+| Waktu pembaruan terakhir | 2026-08-09T15:02:55+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `fb5b99b946244e68b30d288df6a095fc6eb13693` |
-| Informasi terakhir disinkronkan | COYABAG R5 source `b739106018b6a8ddbdccabe3046623ed413ebf5d` memindahkan CI ke Node 24, mem-pin 11 action uses, dan membatasi permission read-only; status `MAINLINE_SYNCED / CI_VERIFIED`. |
+| Baseline sebelum pembaruan | `623259a4419c4e6aa9efe607f62789b992cced1d` |
+| Informasi terakhir disinkronkan | AOGTIVITY final games/committee source `c9a6702094ea36088c44040656f638d3db28da57` aktif pada Hostinger `20260809T075137Z` dan Vercel `dpl_D1ubBCWkFs6ENp9CqPz5Fv25zwYE`; status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik source/runtime. Production COYABAG tetap release `20260809-264c6ac`; provider, credential, data bisnis, activation, dan business readiness tidak diubah. |
+| Konflik | Tidak ada konflik source/runtime. Nama lomba dan penugasan panitia final; format bracket, authenticated operational UAT, serta rehearsal fisik tetap residual. |
 | Error | Tidak ada error sinkronisasi yang diketahui. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/coyabag/PRODUCT.md`
-- `products/coyabag/DOSSIER.md`
-- `products/coyabag/CHANGELOG.md`
+- `products/aogticvity/PRODUCT.md`
+- `products/aogticvity/DOSSIER.md`
+- `products/aogticvity/CHANGELOG.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `GAPS.md`
+- `DECISIONS.md`
 - `SYNC_STATUS.md`
 - `CHANGELOG.md`
 
@@ -316,9 +317,11 @@ product/out-of-scope/tenant-negative, monitoring latency/error/cost, serta
 inventory surface chatbot SagaDev lain. Fine-tuning/provider/data-retention
 baru memerlukan keputusan Andreas terpisah.
 
-AOGTIVITY poster theme dan rundown 14.30 sudah production-deployed melalui
-runtime `6ec56e5`, Hostinger `20260807T154156Z`, Vercel
-`dpl_6hKz6JJ2s2vogcLXQLFEBNEZuWEF`, dan migration 026. AOGTIVITY tetap menunggu
+AOGTIVITY final games/committee dan rundown 14.30 sudah production-deployed
+melalui runtime `c9a6702094ea36088c44040656f638d3db28da57`, Hostinger
+`20260809T075137Z`, Vercel `dpl_D1ubBCWkFs6ENp9CqPz5Fv25zwYE`, dan migration
+027. `Lingkarin Angka` serta 12 penugasan panitia final aktif tanpa migration
+atau mutasi data operasional. AOGTIVITY tetap menunggu
 assignment empat peserta approved, PIC untuk sepuluh
 lomba, roster publish/lock, audited reconciliation record lama, valid-link/
 two-device role rehearsal, authenticated draft/publish/correct/standing sync,

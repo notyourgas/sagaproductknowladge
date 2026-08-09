@@ -1285,8 +1285,8 @@ idempotency, rate limit, receipt, audit, dan admin verification desk; participan
 fixture serta localStorage registration telah dihapus.
 Nama kanonik produk berubah dari AOGTICVITY menjadi AOGTIVITY pada 6 Agustus
 2026. Runtime terbaru aktif melalui source
-`f26da5e87dc8d56729befe5f9c538cd04038674d`, Hostinger
-`20260808T053225Z`, dan Vercel `dpl_CUkHFWTxh9jnuKWgW54Z1Np2h2Li`.
+`c9a6702094ea36088c44040656f638d3db28da57`, Hostinger
+`20260809T075137Z`, dan Vercel `dpl_D1ubBCWkFs6ENp9CqPz5Fv25zwYE`.
 Domain `aogticvities.fun` serta slug infrastruktur `aogticvity` tetap dipakai
 untuk kompatibilitas; AOGTICVITY hanya nama historis.
 Runtime ini menggabungkan visual event berdasarkan poster founder dan rundown
@@ -1301,12 +1301,16 @@ Closing. `DEC-059` mengunci Lomba 9 dan Lomba 10 masing-masing 30 menit serta
 Awarding & Closing 15 menit: Lomba 9 18.05, Lomba 10 18.35, penutupan 19.05,
 dan estimasi selesai 19.20 WIB. Migration 027 mengarsipkan jam/durasi lama,
 mengubah jadwal MySQL secara audited, dan menyediakan rollback tanpa menghapus
-peserta, hasil, atau assignment operator. Typecheck, 129 unit/API, 28/28 MySQL integration,
-build, 65/65 UI/WCAG, acceptance urutan 14 blok, backup/restore drill, dan 12/12
-public-domain regression lulus. Status `PRODUCTION_DEPLOYED /
+peserta, hasil, atau assignment operator. Typecheck, 130 unit/API non-DB,
+build, 66/66 UI/WCAG, backup/restore drill, dan 12/12 public-domain regression
+lulus. Status `PRODUCTION_DEPLOYED /
 PRODUCTION_ACTIVATED`; visual dan operational human UAT tetap residual.
 Remote security gate pada release ini juga menutup advisory high `nanoid`
 dengan pin patched 3.3.17; audit npm/pnpm production kembali nol vulnerability.
+Master terbaru memakai `Lingkarin Angka` pada slot 17.30 selama 20 menit untuk
+menggantikan nama lama. Sepuluh lomba mempunyai 12 penugasan panitia final;
+Suit Karton dan Voli Air memisahkan Grup A/B. Legacy slug tetap kompatibel dan
+release tidak memutasi jadwal MySQL, peserta, roster, hasil, atau standing.
 Source runtime `640990f619156e16159be0562ccae1e7f259aa0b`, Hostinger release
 `20260805T190449Z`, Vercel `dpl_6zCCyTMBbA4eNgP7FYyanJ1RChAJ`, dan migration
 023 menambah audited WhatsApp delivery reconciliation tanpa resend, worker

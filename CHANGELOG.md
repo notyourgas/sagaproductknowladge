@@ -12,6 +12,25 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-09
 
+### AOGTIVITY final games and committee production
+
+- Ringkasan: nama `Lingkarin Angka` dan 12 penugasan panitia final untuk 10
+  lomba aktif, termasuk pemisahan Grup A/B pada dua lomba paralel dan
+  compatibility legacy slug.
+- Klasifikasi `CONFIRMED`; keputusan `DEC-070`, source
+  `c9a6702094ea36088c44040656f638d3db28da57`, status
+  `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
+- Release: Hostinger `20260809T075137Z`, Vercel
+  `dpl_D1ubBCWkFs6ENp9CqPz5Fv25zwYE`, domain `aogticvities.fun`. Exact-source,
+  security, build, backup/restore, mobile/WCAG, public, dan canonical content
+  gates lulus.
+- Production berubah: ya, application source saja. Tidak ada migration atau
+  mutasi peserta, jadwal MySQL, roster, hasil, standing, credential, maupun
+  secret. Business readiness tetap menunggu authenticated operational UAT dan
+  rehearsal fisik.
+- File knowledge: product/dossier/changelog AOGTIVITY, portfolio/root
+  changelog, master knowledge, decisions, gaps, dan sync status.
+
 ### COYABAG R5 immutable Node 24 CI supply chain
 
 - Ringkasan: tiga job build/test pindah ke Node 24, seluruh 11 action uses

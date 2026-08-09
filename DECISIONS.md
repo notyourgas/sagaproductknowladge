@@ -245,6 +245,20 @@ keputusan pengganti.
 | Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; runtime `f26da5e87dc8d56729befe5f9c538cd04038674d`, Hostinger `20260808T053225Z`, Vercel `dpl_CUkHFWTxh9jnuKWgW54Z1Np2h2Li`; human operational UAT tetap residual |
 | Dokumen terkait | [AOGTIVITY Product](products/aogticvity/PRODUCT.md), [AOGTIVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTIVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |
 
+## DEC-070 - Nama Lingkarin Angka dan penugasan panitia AOGTIVITY final
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-09 |
+| Topik | Finalisasi nama lomba dan pembagian panitia AOGTIVITY |
+| Keputusan | `Trenggiling Bolak-Balik` diganti menjadi `Lingkarin Angka` pada slot 17.30 selama 20 menit. Master tetap berisi 10 lomba dan memiliki 12 penugasan panitia; Suit Karton serta Voli Air dibagi Grup A/B, sedangkan Name Tag Ripped memakai satu penugasan tanpa grup. |
+| Alasan | Founder mengonfirmasi daftar lomba dan panitia final sebagai overlay terbaru terhadap master recap. |
+| Alternatif yang dipertimbangkan | Mempertahankan nama lama; menggabungkan panitia lomba paralel; membuat grup semu untuk Name Tag Ripped. |
+| Dampak | Master data version, agenda, detail lomba, admin master data, validation, tests, release, dan legacy slug memakai kontrak baru. Jadwal MySQL, peserta, roster, hasil, standing, serta schema tidak berubah. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; runtime `c9a6702094ea36088c44040656f638d3db28da57`, Hostinger `20260809T075137Z`, Vercel `dpl_D1ubBCWkFs6ENp9CqPz5Fv25zwYE`; authenticated operational UAT tetap residual |
+| Dokumen terkait | [AOGTIVITY Product](products/aogticvity/PRODUCT.md), [AOGTIVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTIVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |
+
 ## DEC-064 - Polling frame stabil dan paket hanya menagih tambahan kategori
 
 | Field | Isi |

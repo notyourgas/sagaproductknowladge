@@ -621,9 +621,9 @@ ketika keputusan atau release baru menutup gap.
   kompatibilitas dan bukan gap rebrand.
 
 - `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: runtime
-  `f26da5e87dc8d56729befe5f9c538cd04038674d` memuat theme poster-aligned,
+  `c9a6702094ea36088c44040656f638d3db28da57` memuat theme poster-aligned,
   hadir/mulai 14.30 (`DEC-063`), dan durasi akhir (`DEC-059`) melalui
-  Hostinger `20260808T053225Z`, Vercel `dpl_CUkHFWTxh9jnuKWgW54Z1Np2h2Li`,
+  Hostinger `20260809T075137Z`, Vercel `dpl_D1ubBCWkFs6ENp9CqPz5Fv25zwYE`,
   dan migration 027. Backup/restore, exact-source release, readiness, dan public smoke lulus.
   Residual: visual UAT founder, authenticated admin schedule refresh, serta
   operational rollback rehearsal. Durasi Lomba 9, Lomba 10, dan Awarding &
@@ -631,6 +631,13 @@ ketika keputusan atau release baru menutup gap.
   provisional tetap perlu dikunci panitia.
   Advisory high dependency yang muncul saat preflight sudah ditutup dengan
   `nanoid` 3.3.17; audit npm/pnpm production kembali nol vulnerability.
+
+- `CLOSED` melalui `DEC-070`: nama `Lingkarin Angka` dan 12 penugasan panitia
+  untuk 10 lomba sudah final serta production-activated. Pemisahan Grup A/B
+  berlaku pada Suit Karton dan Voli Air; Name Tag Ripped tidak memakai grup.
+  Residual tetap pada format bracket/keputusan teknis lomba yang masih
+  provisional, assignment akun operator, dan rehearsal lapangan—bukan pada
+  nama atau daftar penugasan.
 
 - `Pixel Matchday Arcade` UI production 3 Agustus 2026 tidak menutup blocker
   activation; perbaikannya berada pada visual hierarchy, responsive mobile

@@ -1,6 +1,6 @@
 # AOGTIVITY Product Knowledge
 
-Updated: 8 Agustus 2026
+Updated: 9 Agustus 2026
 Evidence status: public Vercel delivery + database-backed auth, registration, team, and event-day operations runtime
 
 ## Tujuan dokumen
@@ -65,8 +65,8 @@ menunggu human UAT.
 Public delivery kanonik: `https://aogticvities.fun`.
 
 Rebrand AOGTIVITY pertama kali aktif pada source `e4c217b`; runtime terbaru
-adalah `6ec56e5b7e6859581d5a678a21b27971f10a5c14`, Hostinger
-`20260807T154156Z`, dan Vercel `dpl_6hKz6JJ2s2vogcLXQLFEBNEZuWEF`. UI,
+adalah `c9a6702094ea36088c44040656f638d3db28da57`, Hostinger
+`20260809T075137Z`, dan Vercel `dpl_D1ubBCWkFs6ENp9CqPz5Fv25zwYE`. UI,
 metadata, PWA, aset merek, pesan
 WhatsApp baru, serta issuer TOTP baru memakai AOGTIVITY. Domain, repository,
 path deploy, environment variable, cookie/session prefix, database, service,
@@ -293,11 +293,11 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:
 `PRODUCTION_ACTIVATED`. Business readiness: `BLOCKED`.
 
 - UI public/player/leader/admin/live aktif pada public Vercel delivery.
-- Runtime source `f26da5e87dc8d56729befe5f9c538cd04038674d` menerjemahkan
+- Runtime source `c9a6702094ea36088c44040656f638d3db28da57` menerjemahkan
   poster AOGTIVITY menjadi event identity lime-navy-magenta dengan halftone,
   petir, spark, koin, handheld-console frame, serta hierarchy nama
   **AOGTIVITY / 17 Agustus 2026 / Army of God Madiun**. Theme ini aktif pada
-  Hostinger `20260808T053225Z` dan Vercel `dpl_CUkHFWTxh9jnuKWgW54Z1Np2h2Li`.
+  Hostinger `20260809T075137Z` dan Vercel `dpl_D1ubBCWkFs6ENp9CqPz5Fv25zwYE`.
 - Rundown owner-confirmed terbaru menyamakan waktu hadir dan waktu mulai
   menjadi 14.30 WIB (`DEC-063`): Opening Tim & Yel-yel 15 menit, Sing
   Song 15 menit, lima lomba, Break 15 menit, lima lomba, lalu Awarding &
@@ -311,7 +311,7 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:
 - UI memakai `Pixel Matchday Arcade` yang tetap mobile-first 430 px: Plus
   Jakarta Sans, Feather-style icons, stepped geometry, hard shadow, quest/HUD
   hierarchy, state feedback, dan motion yang menghormati reduced-motion.
-- Public visual regression lulus 62/62 pada route publik dan viewport 320, 390,
+- Public visual regression lulus 66/66 pada route publik dan viewport 320, 390,
   430, serta 1440 px; matriks memeriksa overflow teks, collision sibling,
   clearance navigasi, touch target, reduced motion, axe WCAG, CTA modal pada
   visual viewport pendek, dan origin POST magic-link.
@@ -326,8 +326,11 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:
   1/2/3 muncul hanya setelah hasil dipublikasikan atau dikoreksi admin; halaman
   memakai snapshot server yang sama dan menyegarkan maksimal setiap 5 detik
   serta saat focus, visibility, dan koneksi kembali aktif.
-- Master recap 2026 berisi 8 tim, 10 lomba, jadwal provisional, mekanisme,
-  safety, equipment, dan assignment panitia.
+- Master recap 2026 berisi 8 tim dan 10 lomba. `Lingkarin Angka` menggantikan
+  `Trenggiling Bolak-Balik` pada slot 17.30 selama 20 menit; 12 penugasan
+  panitia final mencakup pemisahan Grup A/B untuk Suit Karton dan Voli Air.
+  Jadwal, peserta, roster, hasil, dan standing tidak dimutasi oleh perubahan
+  master ini.
 - Dua lomba tim bola pengganti sudah production-deployed dengan scoring jumlah
   bola dan tie-break fail-closed; rehearsal keselamatan serta authenticated
   two-device scoring UAT belum sign-off.

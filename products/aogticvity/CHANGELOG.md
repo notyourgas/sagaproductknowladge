@@ -8,6 +8,24 @@ Mencatat perubahan material AOGTIVITY/AOGTICVITY/17an/Olimpiade.
 
 Nama lama dipertahankan sebagai provenance; status runtime harus eksplisit.
 
+## 2026-08-09 - Lomba dan penugasan panitia final production
+
+- `CONFIRMED` melalui `DEC-070`: `Lingkarin Angka` menggantikan
+  `Trenggiling Bolak-Balik` pada slot 17.30 selama 20 menit. Master berisi 10
+  lomba dan 12 penugasan panitia; Suit Karton serta Voli Air dipisah Grup A/B,
+  sedangkan Name Tag Ripped memakai satu penugasan tanpa grup.
+- Runtime source `c9a6702094ea36088c44040656f638d3db28da57`, Hostinger
+  `20260809T075137Z`, dan Vercel `dpl_D1ubBCWkFs6ENp9CqPz5Fv25zwYE` aktif di
+  `https://aogticvities.fun`. Rollback langsung adalah Hostinger
+  `20260808T053225Z` dan Vercel `dpl_CUkHFWTxh9jnuKWgW54Z1Np2h2Li`.
+- Tidak ada migration atau mutasi peserta, jadwal MySQL, roster, hasil, maupun
+  standing. Exact-source preflight, 130 unit/API non-DB, typecheck, build,
+  dependency audit nol vulnerability, backup/restore 63 tabel, 12/12 public
+  regression, dan canonical content smoke lulus.
+- Business readiness tetap menunggu authenticated operational UAT, assignment
+  PIC akun operator, roster, scoring/standing dua perangkat, dan rehearsal
+  fisik.
+
 ## 2026-08-08 - Waktu hadir dan mulai sama-sama 14.30
 
 - `CONFIRMED` melalui `DEC-063`: waktu hadir peserta dan waktu mulai acara

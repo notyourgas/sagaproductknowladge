@@ -71,8 +71,8 @@ menjadi tanggal resmi, dan Army of God Madiun menjadi identitas penyelenggara.
 Lime elektrik, navy, magenta, cyan/kuning terbatas, halftone, petir, spark,
 koin, serta handheld-console frame berasal dari referensi poster founder.
 Seluruh teks tetap Plus Jakarta Sans. Implementasi final aktif melalui runtime
-`f26da5e87dc8d56729befe5f9c538cd04038674d`, Hostinger
-`20260808T053225Z`, dan Vercel `dpl_CUkHFWTxh9jnuKWgW54Z1Np2h2Li`.
+`c9a6702094ea36088c44040656f638d3db28da57`, Hostinger
+`20260809T075137Z`, dan Vercel `dpl_D1ubBCWkFs6ENp9CqPz5Fv25zwYE`.
 Runtime terbaru memakai kontrak rundown owner-confirmed: hadir dan mulai 14.30
 WIB, Opening Tim & Yel-yel 14.30, Sing Song 14.45, lomba 1-5 mulai 15.00,
 Break 15 menit setelah lomba ke-5 pada 16.55, lomba 6-10 mulai 17.10, dan
@@ -81,8 +81,10 @@ Lomba 9 18.05 selama 30 menit, Lomba 10 18.35 selama 30 menit, serta Awarding
 confirmed melalui `DEC-059` dan tetap editable oleh admin untuk recovery
 lapangan. Schedule builder, reload API, UI publik, admin, migration MySQL 027,
 audit, dan rollback memakai struktur yang sama.
-Gate release lulus 129 unit/API, 28/28 MySQL integration, build, 65/65 UI/WCAG,
-acceptance urutan 14 blok, dan 12/12 public-domain regression.
+Gate release terbaru lulus 130 unit/API non-DB, typecheck, build, 66/66
+UI/WCAG, backup/restore disposable, dan 12/12 public-domain regression.
+Perubahan master tidak memerlukan migration MySQL; schema tetap pada migration
+027 dan 63 tabel lulus parity restore.
 Release gate juga memaksa `nanoid` transitif ke 3.3.17; audit npm/pnpm runtime
 kembali nol vulnerability.
 Kartu alur `Dari daftar sampai podium` memakai tiga track tetap untuk badge
@@ -104,6 +106,13 @@ kebijakan poin berversi 15/10/5. Public/player/live/team refresh maksimal setiap
 5 detik; result desk/admin maksimal 3 detik serta pulih saat focus, visibility,
 online, dan reconnect. Retry mempertahankan idempotency key, stale write 409
 memuat versi server, dan correction tetap audited.
+
+Master data terbaru memakai dataVersion
+`master-recap-2026.7-final-committee-lingkarin-angka`. `Lingkarin Angka`
+menggantikan `Trenggiling Bolak-Balik` pada slot 17.30 selama 20 menit, dan 12
+penugasan panitia final mencakup pemisahan Grup A/B pada Suit Karton serta Voli
+Air. Legacy slug tetap menuju detail kanonik. Perubahan ini tidak memutasi
+peserta, roster, hasil, standing, atau jadwal MySQL.
 
 `cmp-2` kini **Ambil Bola Pakai Sarung** dan `cmp-8` kini **Paralon Bola**.
 Keduanya memakai seluruh tim tanpa selector nama, 10 menit pertandingan dan 5
@@ -182,7 +191,9 @@ dan rehearsal fisik masih menahan activation keseluruhan.
    recovery melalui public Vercel.
 2. Lakukan two-device authorization dan stale-state reconciliation UAT.
 3. Monitor domain `aogticvities.fun` dan pilih recovery/notification provider.
-4. Finalisasi durasi dan keputusan lain yang masih open pada master recap.
+4. Finalisasi format bracket serta keputusan teknis lomba lain yang masih
+   provisional pada master recap; nama Lingkarin Angka dan penugasan panitia
+   sudah dikunci.
 5. Uji scoring dua lomba bola dari dua perangkat, termasuk seri, publish,
    standing, correction, serta recovery setelah reconnect.
 6. Rehearsal keselamatan pengangkatan dengan sarung, spotter, titik henti,

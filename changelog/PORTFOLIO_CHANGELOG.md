@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-09 - AOGTIVITY final games and committee production
+
+- `Lingkarin Angka` menggantikan nama lama pada master 10 lomba, sementara 12
+  penugasan panitia final telah dikunci dengan Grup A/B untuk dua lomba paralel.
+- Source `c9a6702094ea36088c44040656f638d3db28da57` aktif melalui Hostinger
+  `20260809T075137Z` dan Vercel `dpl_D1ubBCWkFs6ENp9CqPz5Fv25zwYE`; domain
+  `aogticvities.fun`, role routing, dan legacy slug terverifikasi.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Tidak ada migration atau
+  mutasi data operasional; backup/restore, security, build, mobile/WCAG, public
+  regression, dan canonical content smoke lulus. Business readiness tetap
+  `BLOCKED` oleh authenticated operational UAT dan rehearsal fisik.
+
 ## 2026-08-09 - COYABAG R5 immutable Node 24 CI supply chain
 
 - Source `b739106018b6a8ddbdccabe3046623ed413ebf5d` memindahkan CI
