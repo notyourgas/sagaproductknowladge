@@ -1,5 +1,26 @@
 # SagaBook Changelog
 
+## 2026-08-09 - Payment Monitor stale multi-tab recovery S165 candidate
+
+- Klasifikasi `CONFIRMED`; source
+  `33c10710f0aa18586658959162662df790ed55a6` pada branch
+  `codex/s165-sagabook-payment-stale-recovery` sudah dipush.
+- Before: tab lama dapat menjalankan rekonsiliasi setelah tab lain mengubah
+  payment session. After: frontend mengirim versi yang dilihat, backend
+  memeriksanya di dalam lock, dan versi stale mendapat 409 public-safe sebelum
+  provider, audit, atau mutation kedua.
+- Payment Monitor memuat ulang status authoritative, menampilkan status
+  provider dan recovery aksesibel, serta menjaga double-submit, tenant,
+  permission, rate limit, lock, read-after-write, dan idempotensi existing.
+- Gate hijau: payment/security 49/49 (295 assertion), full backend 1.010/1.010
+  (11.478), database disposable migration/seed/backfill/reconcile dengan audit
+  100 dan integrity ok, Playwright 16/16, build/design 26/0, Pint/syntax/diff,
+  serta npm/Composer/OSV nol advisory.
+- Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / UIUX_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Production tetap source
+  `64ed036b514d351f3e537be557d69117badf9d24` / release
+  `20260809033844-64ed036`; tidak ada canary atau data production.
+
 ## 2026-08-09 - Payment reconciliation concurrency lock S164 candidate
 
 - Klasifikasi `CONFIRMED`; source

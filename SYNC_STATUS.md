@@ -12,23 +12,23 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-09T14:07:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-09T14:35:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `cc1719dab6e8fecbdfaaef3794eac64968b562b3` |
-| Informasi terakhir disinkronkan | COYABAG source `599f19272e3f02c35b0ed654259ca5bad2273ee6` menutup inheritance security header storefront dan sudah `PRODUCTION_DEPLOYED`; commerce activation tetap `BLOCKED`. |
+| Baseline sebelum pembaruan | `a481883a13dc2c39849757101d71c93b93d5c204` |
+| Informasi terakhir disinkronkan | SagaBook S165 source `33c10710f0aa18586658959162662df790ed55a6` menutup stale multi-tab Payment Monitor dengan version guard di dalam lock dan recovery status authoritative; status `IMPLEMENTED_NOT_DEPLOYED`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik source/runtime. Application release COYABAG tetap `20260809-264c6ac`; provider, data bisnis, canary order, CSP, activation, dan business readiness sengaja tidak diubah. |
+| Konflik | Tidak ada konflik source/runtime. Production SagaBook tetap S161; provider canary, credential, data customer, subscription, activation, dan business readiness tidak diubah. |
 | Error | Tidak ada error sinkronisasi yang diketahui. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/coyabag/PRODUCT.md`
-- `products/coyabag/DOSSIER.md`
-- `products/coyabag/CHANGELOG.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
-- `GAPS.md`
 - `SYNC_STATUS.md`
 - `CHANGELOG.md`
 

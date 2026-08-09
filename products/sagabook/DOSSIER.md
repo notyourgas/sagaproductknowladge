@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 9 Agustus 2026 13:22 WIB
+- Updated: 9 Agustus 2026 14:35 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED` untuk workflow yang tercantum di
   [PRODUCT](PRODUCT.md)
@@ -40,6 +40,15 @@ dalam satu dokumen public-safe.
   Model, prompt, provider, dan KB tidak diubah oleh release ini.
 
 ### Histori kandidat sebelum release S157
+- Candidate S165 `33c10710` menambah optimistic stale-version pada rekonsiliasi
+  Payment Monitor di atas lock S164. Tab yang membawa versi lama mendapat 409
+  sebelum provider/audit, memuat ulang state server, dan menampilkan status
+  provider serta recovery screen-reader tanpa false success. Dua tab berurutan
+  membuktikan satu provider check; permission-negative dan tenant-negative
+  tetap fail-closed. Payment 49/49, full backend 1.010/1.010, DB audit 100 dan
+  integrity ok, browser 16/16, build/design, format/diff, npm/Composer/OSV
+  hijau. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap
+  S161.
 - Candidate S164 `ea023fff` menambah lock database tenant+payment-session pada
   rekonsiliasi admin. Request paralel untuk sesi sama sekarang mendapat 409
   public-safe sebelum provider dipanggil, tanpa perubahan booking, payment

@@ -12,6 +12,22 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-09
 
+### SagaBook S165 Payment Monitor stale multi-tab recovery candidate
+
+- Ringkasan: versi payment session dari browser kini diperiksa di dalam lock;
+  tab stale ditolak sebelum provider/audit dan memuat status authoritative
+  dengan recovery UI aksesibel.
+- Klasifikasi `CONFIRMED`; source
+  `33c10710f0aa18586658959162662df790ed55a6`, status
+  `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / UIUX_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: payment 49/49, backend 1.010/1.010, DB audit 100/integrity ok, browser
+  16/16, build/design, Pint/diff, serta npm/Composer/OSV nol advisory.
+- Production berubah: tidak. Production tetap S161; tidak ada schema,
+  credential, data customer, callback mentah, atau canary provider.
+- File knowledge: PRODUCT, DOSSIER, CHANGELOG, FEATURE_COVERAGE_LEDGER,
+  portfolio/root changelog, master knowledge, dan sync status SagaBook.
+
 ### COYABAG R4 storefront security-header inheritance
 
 - Ringkasan: Nginx storefront kini mempertahankan HSTS, nosniff, frame policy,

@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 9 Agustus 2026 13:22 WIB
+Updated: 9 Agustus 2026 14:35 WIB
 Evidence status: production + source verified
 
 ## Tujuan dokumen
@@ -47,6 +47,18 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   kumulatif; arah storefront lebar S94/S108 tetap deprecated dan tidak aktif.
 
 ## Histori kandidat sebelum release S161
+- Candidate security/database S165 source
+  `33c10710f0aa18586658959162662df790ed55a6` pada branch
+  `codex/s165-sagabook-payment-stale-recovery` menutup stale multi-tab pada
+  Payment Monitor. Browser mengirim versi payment session yang sedang dilihat;
+  versi lama ditolak 409 di dalam lock sebelum provider atau audit, lalu UI
+  memuat status authoritative dan menampilkan recovery aksesibel. Dua tab
+  berurutan terbukti hanya memicu satu provider check. Gate payment 49/49,
+  full backend 1.010/1.010, database disposable audit 100/integrity ok,
+  browser 16/16, build/design, serta audit dependency hijau. Status
+  `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / UIUX_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S161 dan
+  provider canary nyata tidak dijalankan.
 - Candidate security/database S164 source
   `ea023fff1ce451c851abc97ba1b68a99344286aa` pada branch
   `codex/s164-sagabook-payment-reconcile-lock` membuat rekonsiliasi payment
