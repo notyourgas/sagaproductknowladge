@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-09 - SagaBook S164 payment reconciliation concurrency lock candidate
+
+- Source `ea023fff1ce451c851abc97ba1b68a99344286aa` menambahkan lock
+  database tenant+payment-session pada rekonsiliasi admin.
+- Request paralel untuk sesi sama mendapat 409 public-safe sebelum panggilan
+  provider atau mutation. Lock dilepas setelah proses; full backend 1.008/1.008,
+  DB audit 100, Payment Monitor 10/10, build/design, dan audit dependency lulus.
+- Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production SagaBook tetap S161 tanpa canary atau
+  perubahan data production.
+
 ## 2026-08-09 - SagaBook S163 payment webhook payload-size guard candidate
 
 - Source `fc898bf86512e3863c497debd62d99ca5e380a6d` menolak callback

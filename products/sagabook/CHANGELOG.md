@@ -1,5 +1,30 @@
 # SagaBook Changelog
 
+## 2026-08-09 - Payment reconciliation concurrency lock S164 candidate
+
+- Klasifikasi `CONFIRMED`; source
+  `ea023fff1ce451c851abc97ba1b68a99344286aa` pada branch
+  `codex/s164-sagabook-payment-reconcile-lock` sudah dipush.
+- Before: dua tab/worker dapat memanggil status provider untuk payment session
+  sama sebelum row lock mutation berjalan. After: lock database bersama dengan
+  key tenant+session ter-fingerprint menolak request paralel dengan 409
+  `payment_reconciliation_in_progress` sebelum provider dan mutation.
+- Happy path tetap menyinkronkan status, read-after-write, dan audit; lock
+  dilepas melalui `finally`. Request konflik tidak memanggil provider dan tidak
+  mengubah booking, payment session, payment event, settlement, accounting,
+  atau activity log. Permission, rate limit, dan tenant-negative existing
+  dipertahankan; tidak ada schema, UI, credential, data customer, atau canary.
+- Gate hijau: focused payment/security 80/80 (550 assertion), full backend
+  1.008/1.008 (11.467), database disposable migration/seed/backfill/reconcile
+  dengan audit 100, Payment Monitor Playwright 10/10, cache compile,
+  build/design 26/0, Pint/syntax/diff, serta npm/Composer/OSV nol advisory.
+  Run visual pertama tidak menemukan test karena selector path Windows;
+  correction run dengan selector judul lulus 10/10.
+- Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Production tetap source
+  `64ed036b514d351f3e537be557d69117badf9d24` / release
+  `20260809033844-64ed036`.
+
 ## 2026-08-09 - Payment webhook payload-size guard S163 candidate
 
 - Klasifikasi `CONFIRMED`; source

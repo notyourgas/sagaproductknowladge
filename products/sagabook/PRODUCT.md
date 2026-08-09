@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 9 Agustus 2026 12:27 WIB
+Updated: 9 Agustus 2026 13:22 WIB
 Evidence status: production + source verified
 
 ## Tujuan dokumen
@@ -47,6 +47,16 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   kumulatif; arah storefront lebar S94/S108 tetap deprecated dan tidak aktif.
 
 ## Histori kandidat sebelum release S161
+- Candidate security/database S164 source
+  `ea023fff1ce451c851abc97ba1b68a99344286aa` pada branch
+  `codex/s164-sagabook-payment-reconcile-lock` membuat rekonsiliasi payment
+  session tenant-scoped saling eksklusif melalui lock database bersama. Dua
+  tab/worker yang menyinkronkan sesi sama tidak lagi menggandakan panggilan
+  provider; request kedua menerima 409 public-safe sebelum mutation atau audit.
+  Gate full backend 1.008/1.008, database disposable audit 100, Payment Monitor
+  Playwright 10/10, cache compile, build/design, serta audit dependency hijau.
+  Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S161
+  dan provider canary nyata tidak dijalankan.
 - Candidate security/database S163 source
   `fc898bf86512e3863c497debd62d99ca5e380a6d` pada branch
   `codex/s163-sagabook-webhook-payload-limit` menolak payload webhook

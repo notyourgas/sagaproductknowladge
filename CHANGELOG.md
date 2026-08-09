@@ -12,6 +12,23 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-09
 
+### SagaBook S164 payment reconciliation concurrency lock candidate
+
+- Ringkasan: rekonsiliasi admin untuk payment session sama kini memakai lock
+  database tenant-scoped; request paralel ditolak 409 sebelum provider dan
+  mutation sehingga double-submit lintas tab/worker tidak menggandakan kerja.
+- Klasifikasi `CONFIRMED`; source
+  `ea023fff1ce451c851abc97ba1b68a99344286aa`, status
+  `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: full backend 1.008/1.008 (11.467 assertion), DB audit disposable 100,
+  Payment Monitor 10/10, cache compile, build/design, Pint/diff, serta
+  npm/Composer/OSV nol advisory.
+- Production berubah: tidak. Production tetap S161; tidak ada schema,
+  credential, data customer, canary provider, atau perubahan workflow/UI.
+- File knowledge: PRODUCT, DOSSIER, CHANGELOG, FEATURE_COVERAGE_LEDGER,
+  portfolio/root changelog, master knowledge, dan sync status SagaBook.
+
 ### SagaBook S163 payment webhook payload-size guard candidate
 
 - Ringkasan: dua route callback pembayaran kini menolak ukuran deklarasi atau

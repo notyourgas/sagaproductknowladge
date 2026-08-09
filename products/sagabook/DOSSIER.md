@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 9 Agustus 2026 12:27 WIB
+- Updated: 9 Agustus 2026 13:22 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED` untuk workflow yang tercantum di
   [PRODUCT](PRODUCT.md)
@@ -40,6 +40,14 @@ dalam satu dokumen public-safe.
   Model, prompt, provider, dan KB tidak diubah oleh release ini.
 
 ### Histori kandidat sebelum release S157
+- Candidate S164 `ea023fff` menambah lock database tenant+payment-session pada
+  rekonsiliasi admin. Request paralel untuk sesi sama sekarang mendapat 409
+  public-safe sebelum provider dipanggil, tanpa perubahan booking, payment
+  session, atau activity log; lock selalu dilepas setelah proses selesai.
+  Full backend 1.008/1.008 (11.467 assertion), focused payment/security 80/80,
+  DB audit disposable 100, Payment Monitor 10/10, cache compile, build/design,
+  format/diff, npm/Composer/OSV hijau. Status `LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap S161.
 - Candidate S163 `fc898bf8` menambah batas ukuran fail-closed pada dua route
   webhook pembayaran. Header ukuran yang melampaui batas ditolak sebelum body
   dibaca oleh proses bisnis; ukuran body aktual tetap diverifikasi untuk
