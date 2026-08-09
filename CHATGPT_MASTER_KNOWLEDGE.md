@@ -699,6 +699,15 @@ lease dilepas. Kandidat lulus focused 6/50, SagaView 123/1.212, full backend
 dan Composer audit. Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
 LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap backend S147 dan
 Studio S150.
+S153 backend `4d41125c0779be2cbfb7862ce7bbf7989c9e62cb` menutup race
+aktivasi serial dengan row lock tenant dan serial, ledger sebagai guard kuota,
+retry tenant yang sama secara idempoten, serta constraint unik klaim
+tenant+serial. Migration berhenti aman bila ada duplikasi historis dan tidak
+menghapus data otomatis. Kandidat lulus focused 3/18, SagaView 172/1.914, full
+backend 967/11.335, siklus migration, duplicate preflight, format target,
+Composer audit, dan deploy gate disposable 6/6. Status `SECURITY_VALIDATED /
+DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+production, paket, harga, provider, dan subscription aktif tidak berubah.
 Harga bulanan: Growth Rp200.000, Pro Rp500.000.
 Growth mencakup 1 device, 50 frame, 3 preset, offline 24 jam, dan 2 GB aset
 frame cloud. Pro mencakup 4 device, 100 frame, 10 preset, offline 168 jam, 10 GB

@@ -1,5 +1,26 @@
 # SagaView Changelog
 
+## 2026-08-09 - S153 serial redemption abuse hardening candidate
+
+- Klasifikasi `CONFIRMED` melalui source backend
+  `4d41125c0779be2cbfb7862ce7bbf7989c9e62cb` dan acceptance lokal.
+- Before: pemeriksaan kuota serial terjadi sebelum transaksi, counter dapat
+  tertinggal dari ledger, dan database belum mencegah klaim tenant+serial ganda.
+  After: tenant dan serial dikunci dalam transaksi, ledger menjadi guard kuota,
+  retry tenant yang sama idempoten, dan constraint unik menolak duplikasi.
+- Migration fail-closed bila menemukan duplikasi historis; tidak ada data yang
+  diperbaiki atau dihapus otomatis. Plan serial juga wajib milik produk yang
+  sama. Foto, path lokal, editor, dan output tetap tidak masuk cloud/API.
+- Gate hijau: focused 3/18; subscription/device 39/654; SagaView 172/1.914;
+  full backend 967/11.335; migration fresh/rollback/re-apply; duplicate
+  preflight expected-block; format target, syntax, deploy gate disposable 6/6,
+  Composer validate, dan Composer audit nol advisory.
+- Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Production tetap backend S147 `0cda8a09` /
+  `20260808225730-0cda8a0` dan Studio S150 `4d25f606` /
+  `20260809103753-4d25f60`; guarded deploy, authenticated UAT, dan monitoring
+  abuse tetap gate terpisah.
+
 ## 2026-08-09 - S152 auth/device/session abuse hardening candidate
 
 - Klasifikasi `CONFIRMED` melalui source backend

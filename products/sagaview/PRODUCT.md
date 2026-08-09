@@ -80,6 +80,13 @@ tersebut dan meredaksi response record lama. Studio
   request berlapis, ledger replay perangkat berbasis hash yang tetap bekerja
   setelah cache hilang, dan serialisasi pelepasan lease. Production tidak
   berubah; backend aktif tetap S147 dan Studio aktif tetap S150.
+  S153 backend `4d41125c0779be2cbfb7862ce7bbf7989c9e62cb`
+  berstatus `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Redeem serial kini mengunci
+  baris tenant dan serial dalam satu transaksi, memakai ledger sebagai guard
+  kuota, mengembalikan retry tenant yang sama secara idempoten, serta memiliki
+  constraint unik database untuk satu klaim per tenant dan serial. Production,
+  paket, harga, provider, dan subscription aktif tidak berubah.
 
 ## Tujuan dokumen
 
@@ -128,6 +135,10 @@ kumulatif melalui exact source S150.
   ditolak setelah cache dikosongkan, dan pelepasan lease ditulis dalam
   transaksi terkunci. Database hanya menyimpan hash nonce dan metadata minimum.
   Kandidat belum dideploy.
+- S153 sudah tervalidasi lokal untuk integritas aktivasi serial: race paralel
+  diserialkan dengan row lock, counter yang tertinggal tidak mengalahkan ledger,
+  retry tenant yang sama tidak mengonsumsi kuota atau memperpanjang trial, dan
+  database menolak klaim ganda. Kandidat belum dideploy.
 - Entitlement live memberi Growth 50 dan Pro 100 frame aktif. Harga, device,
   preset, offline grace, storage, laporan, support, payment, dan fair-use tidak
   berubah.

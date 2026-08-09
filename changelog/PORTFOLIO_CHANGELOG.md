@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-09 - SagaView S153 serial redemption abuse hardening candidate
+
+- Backend `4d41125c0779be2cbfb7862ce7bbf7989c9e62cb` menutup race
+  redeem serial dengan row lock tenant+serial, ledger-based quota guard,
+  idempotent retry, dan constraint unik database per tenant+serial.
+- Migration menolak duplikasi historis secara fail-closed tanpa menghapus data.
+  Full SagaView 172/1.914 dan full backend 967/11.335 lulus bersama siklus
+  migration, duplicate preflight, format target, audit dependency, dan deploy
+  gate disposable 6/6.
+- Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap backend S147 dan Studio S150.
+  Paket, harga, provider, subscription aktif, dan data production tidak diubah.
+
 ## 2026-08-09 - SagaBook S164 payment reconciliation concurrency lock candidate
 
 - Source `ea023fff1ce451c851abc97ba1b68a99344286aa` menambahkan lock
