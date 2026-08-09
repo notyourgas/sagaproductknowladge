@@ -1,5 +1,26 @@
 # SagaView Changelog
 
+## 2026-08-09 - S155 entitlement optimistic concurrency candidate
+
+- Klasifikasi `CONFIRMED` melalui source
+  `1aae8a2efc65da754dd1ef6373d34640fcc3d13c` dan acceptance lokal.
+- Before: browser atau klien API dengan snapshot lama dapat menimpa entitlement
+  yang lebih baru. After: read model mengirim versi, PATCH SagaVIEW wajib
+  membawa `expectedEntitlementVersion`, dan service membandingkannya setelah
+  row lock sebelum mutation.
+- Request tanpa versi ditolak 422. Snapshot stale ditolak 409 dengan versi
+  server yang aman; status, custom entitlement, dan nomor versi database tidak
+  berubah. Browser memuat ulang state terbaru tanpa retry mutation otomatis.
+- Gate hijau: red proof 2 gagal/4 assertion menjadi focused 2/14;
+  subscription 37/634; SagaVIEW 175/1.935; full backend 971/11.365; build
+  frontend, cache compile/clear, route security, dependency audit nol advisory,
+  integrity audit nol issue, dan deploy gate disposable 6/6.
+- Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Production tetap backend S147 `0cda8a09` /
+  `20260808225730-0cda8a0` dan Studio S150 `4d25f606` /
+  `20260809103753-4d25f60`; backup/restore production, authenticated Owner UAT
+  dua browser, rollback, smoke, dan monitoring conflict tetap gate release.
+
 ## 2026-08-09 - S154 Owner entitlement PATCH integrity candidate
 
 - Klasifikasi `CONFIRMED` melalui source backend

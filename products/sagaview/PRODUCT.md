@@ -94,6 +94,13 @@ tersebut dan meredaksi response record lama. Studio
   subscription, menaikkan versi entitlement, serta menolak key atau tipe
   override SagaVIEW yang tidak dikenal. Produk lain dan production tidak
   berubah.
+  S155 source `1aae8a2efc65da754dd1ef6373d34640fcc3d13c`
+  berstatus `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Browser/API kini wajib membawa
+  versi snapshot untuk PATCH entitlement SagaVIEW. Versi diperiksa setelah row
+  lock; request tanpa versi ditolak 422 dan snapshot stale ditolak 409 tanpa
+  mutasi database. Browser memuat ulang state terbaru dan tidak mengulang
+  mutasi otomatis. Production tidak berubah.
 
 ## Tujuan dokumen
 
@@ -150,6 +157,10 @@ kumulatif melalui exact source S150.
   perubahan lifecycle tidak lagi menghapus override yang tidak dikirim,
   payload custom memakai schema fail-closed, write diserialkan, dan versi
   entitlement maju pada setiap mutation. Kandidat belum dideploy.
+- S155 sudah tervalidasi lokal untuk optimistic concurrency entitlement:
+  read model mengirim versi, PATCH wajib membawa expected version, dan service
+  memeriksanya di dalam transaksi setelah row lock. Konflik stale mengembalikan
+  respons aman dan tidak mengubah database; kandidat belum dideploy.
 - Entitlement live memberi Growth 50 dan Pro 100 frame aktif. Harga, device,
   preset, offline grace, storage, laporan, support, payment, dan fair-use tidak
   berubah.
