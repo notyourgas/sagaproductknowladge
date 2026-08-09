@@ -1,6 +1,25 @@
 # SagaView Changelog
 
+## 2026-08-09 - S159 estimate-only contract candidate
+
+- Keputusan founder: SagaVIEW tidak memiliki alur pembayaran, provider,
+  expiry, callback, payment hold, atau status paid. Aplikasi hanya menampilkan
+  estimasi total; pembayaran dilakukan langsung kepada staf di lokasi.
+- Backend `38c4221e7a37fc3400488d0422bde6440b96ae2f` menghapus endpoint mark-paid,
+  melarang field pembayaran lama, memaksa legacy field ke nilai netral, serta
+  menyimpan `estimated_total_rupiah` melalui migration additive.
+- Studio `6d7083a3e9ae8e91b948622f24485a4226748344` menghapus kontrol pembayaran dan
+  memastikan export/cetak tidak pernah bergantung pada pembayaran.
+- Evidence: backend 44/44 dengan 741 assertion, migration rollback/re-apply,
+  Studio 188/188, focused Playwright desktop+mobile+a11y 1/1, build/budget,
+  lint/typecheck/format, dan audit dependency nol advisory.
+- Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / UIUX_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. S157-S158 menjadi `DEPRECATED /
+  DO_NOT_DEPLOY`; production tetap pada release aktif sebelumnya.
+
 ## 2026-08-09 - S158 payment reference integrity candidate
+
+- Status historis: `DEPRECATED / DO_NOT_DEPLOY` oleh koreksi kontrak S159.
 
 - Klasifikasi `CONFIRMED` melalui source
   `07f44cc4145fe7a6c65d0c8025e550cdcdd99278` dan acceptance lokal.
@@ -20,6 +39,8 @@
   foto/path lokal, dan data tenant tidak berubah.
 
 ## 2026-08-09 - S157 payment hold integrity candidate
+
+- Status historis: `DEPRECATED / DO_NOT_DEPLOY` oleh koreksi kontrak S159.
 
 - Klasifikasi `CONFIRMED` melalui source
   `cf16003ff58915f22a00d51198c9426ea930c9ab` dan acceptance lokal.

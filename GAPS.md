@@ -275,6 +275,13 @@ ketika keputusan atau release baru menutup gap.
 
 ### SagaView
 
+- `IMPLEMENTED_NOT_DEPLOYED`: S159 menetapkan SagaVIEW estimate-only. Backend
+  `38c4221e` dan Studio `6d7083a3` menghapus payment hold, mark-paid,
+  provider/expiry/callback, QRIS/rekening, dan gate export/cetak. S157-S158
+  `DEPRECATED / DO_NOT_DEPLOY`. Production belum berubah. Sebelum promosi:
+  backup/restore, exact release, rollback, smoke, authenticated UAT estimasi
+  dengan kategori/harga nyata, serta verifikasi export/cetak tanpa pembayaran.
+
 - `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: S148-S150 aktif kumulatif pada
   Studio `4d25f606` / `20260809103753-4d25f60`, backend S147 tetap `0cda8a09` /
   `20260808225730-0cda8a0`, dan rollback Studio S147

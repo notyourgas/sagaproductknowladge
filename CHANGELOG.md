@@ -12,6 +12,20 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-09
 
+### SagaView S159 estimate-only contract candidate
+
+- Ringkasan: SagaVIEW hanya menampilkan estimasi biaya; pembayaran ditangani
+  staf di lokasi tanpa provider, expiry, callback, status paid, atau gate export.
+- Klasifikasi `CONFIRMED`; backend
+  `38c4221e7a37fc3400488d0422bde6440b96ae2f`, Studio
+  `6d7083a3e9ae8e91b948622f24485a4226748344`.
+- Gate: backend 44/44 dengan 741 assertion, Studio 188/188, migration cycle,
+  Playwright desktop/mobile/a11y, build/budget, lint/typecheck, dan audit nol.
+- Production berubah: tidak. S157-S158 `DEPRECATED / DO_NOT_DEPLOY`; S159
+  `IMPLEMENTED_NOT_DEPLOYED`.
+- File knowledge: PRODUCT, DOSSIER, CHANGELOG, FEATURE_COVERAGE_LEDGER,
+  portfolio/root changelog, master knowledge, dan GAPS.
+
 ### AOGTIVITY guarded participant spreadsheet reporting
 
 - Ringkasan: menambahkan laporan participant real-time satu arah dari MySQL ke

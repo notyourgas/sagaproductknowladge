@@ -49,12 +49,10 @@ SagaView berdasarkan runtime production aktif.
   lokal: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; Studio `4d25f606` /
   `20260809103753-4d25f60`, rollback langsung S147; backend tetap
   `0cda8a09` / `20260808225730-0cda8a0`
-- S157 payment hold integrity: `SECURITY_VALIDATED /
-  DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
-  backend `cf16003ff58915f22a00d51198c9426ea930c9ab`
-- S158 payment reference integrity: `SECURITY_VALIDATED /
-  DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
-  backend `07f44cc4145fe7a6c65d0c8025e550cdcdd99278`
+- S157-S158 payment candidates: `DEPRECATED / DO_NOT_DEPLOY`
+- S159 estimate-only contract: `SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / UIUX_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; backend `38c4221e`, Studio `6d7083a3`
 - Acceptance integrasi feature-by-feature: ledger dimulai konservatif dan
   belum membuktikan coverage penuh; lihat
   [Feature Coverage Ledger](FEATURE_COVERAGE_LEDGER.md).
@@ -98,38 +96,19 @@ snapshot preservation, header/CORS/service/journal, dan smoke exact release
 lulus. Authenticated UAT menggunakan data sintetis/disposable; UAT operator pada
 folder Windows nyata dan `BUSINESS_READY` tetap gate terpisah.
 
-### Payment hold integrity S157
+### Estimate-only contract S159
 
-S157 menjadikan server satu-satunya authority untuk status pembayaran `paid`.
-Client tidak lagi dapat menyelesaikan sesi premium dengan mengklaim status
-tersebut. Konfirmasi resmi dikunci per baris dalam transaksi database; replay
-mempertahankan hasil pertama, sedangkan unique idempotency key mencegah event
-pembayaran ganda. Nominal premium yang sudah dikonfirmasi tidak dapat diturunkan
-oleh payload penyelesaian berikutnya. Perubahan tidak menyentuh foto, path
-lokal, harga, paket, provider, credential, atau data tenant production.
+Keputusan founder menetapkan bahwa SagaVIEW hanya menampilkan estimasi total
+biaya. Pembayaran dilakukan langsung kepada staf di lokasi dan tidak dicatat,
+dikonfirmasi, atau diproses aplikasi. Karena itu tidak ada provider, expiry,
+callback, QRIS, rekening, payment hold, status paid, atau gate export/cetak.
 
-Kandidat lulus focused payment integrity 3/36, cross-regression 19/203, full
-backend 975/11.410, migration fresh/rollback/re-apply, build, cache,
-Composer/npm audit, deploy gate testing, dan integrity audit nol issue. Status
-tetap `IMPLEMENTED_NOT_DEPLOYED`; backup/restore, exact-SHA release, rollback,
-smoke, dan authenticated payment-hold UAT diperlukan sebelum promosi.
-
-### Payment reference integrity S158
-
-S158 melindungi referensi pembayaran yang disediakan pada alur manual maupun
-integrasi mendatang. API menolak spasi dan control character, service menyimpan
-HMAC SHA-256 alih-alih referensi mentah, dan audit hanya memuat fingerprint
-pendek. Precheck menghasilkan error aman, sedangkan unique constraint per
-tenant tetap menjadi authority bila dua sesi bersaing memakai referensi yang
-sama. Replay identik pada sesi yang sama tetap idempoten; replay dengan
-referensi berbeda ditolak.
-
-Referensi masih opsional agar kontrak manual existing tidak berubah tanpa
-keputusan founder. Row historis juga tidak dibersihkan otomatis. Kandidat lulus
-S157-S158 focused 8/103, cross-regression 45/737, full backend 980/11.477,
-migration fresh/rollback/re-apply, build, cache, dependency audit, deploy gate
-testing, dan integrity audit nol issue. Tidak ada perubahan UI, harga, paket,
-provider, subscription, foto/path lokal, atau data production.
+Backend menolak field pembayaran lama, menghapus route mark-paid, menetralkan
+kolom legacy, serta menyimpan estimasi melalui migration additive. Studio
+menghapus seluruh kontrol pembayaran aktif dan selalu mengizinkan export ketika
+prasyarat foto/output terpenuhi. S157-S158 tidak boleh dipromosikan. S159 lulus
+backend 44/44 dengan 741 assertion, Studio 188/188, migration cycle, focused
+Playwright desktop/mobile/a11y, build/budget, lint/typecheck, dan audit dependency.
 
 ## Use case
 

@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-09 - SagaView S159 estimate-only contract candidate
+
+- Keputusan founder menghapus pembayaran dari scope SagaVIEW: aplikasi hanya
+  menampilkan estimasi total, sedangkan pembayaran ditangani staf di lokasi.
+- Backend `38c4221e7a37fc3400488d0422bde6440b96ae2f` dan Studio
+  `6d7083a3e9ae8e91b948622f24485a4226748344` menghapus payment hold, mark-paid,
+  provider/expiry/callback, kontrol QRIS/rekening, dan gate export/cetak.
+- Backend 44/44 (741), Studio 188/188, Playwright desktop/mobile/a11y 1/1,
+  migration cycle, build/budget, lint/typecheck, dan dependency audit lulus.
+  Status `IMPLEMENTED_NOT_DEPLOYED`; S157-S158 `DEPRECATED / DO_NOT_DEPLOY`,
+  production dan produk lain tidak berubah.
+
 ## 2026-08-09 - AOGTIVITY guarded participant spreadsheet reporting
 
 - Source `e35accbbdb9d220d4e1ac432ab1c5d06d40397e1`, Hostinger release

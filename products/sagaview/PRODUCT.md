@@ -119,19 +119,14 @@ tersebut dan meredaksi response record lama. Studio
   gate testing 6/6 lulus. Status `SECURITY_VALIDATED /
   DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
   production tidak berubah.
-  S157 backend `cf16003ff58915f22a00d51198c9426ea930c9ab` menutup bypass
-  payment hold dari klaim client, mengunci konfirmasi pembayaran dalam
-  transaksi, dan memberi event pembayaran kunci idempotensi unik. Nominal dan
-  status yang sudah dikonfirmasi dipertahankan server. Full backend 975/11.410,
-  migration cycle, build, dependency audit, dan integrity audit nol issue
-  lulus. Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
-  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
-  S158 backend `07f44cc4145fe7a6c65d0c8025e550cdcdd99278` menambah
-  integritas referensi pembayaran opsional: input memakai allowlist ASCII,
-  referensi baru disimpan sebagai HMAC, audit hanya memuat fingerprint pendek,
-  dan unique constraint per tenant mencegah reuse lintas sesi. Full backend
-  980/11.477, migration cycle, build, dependency audit, dan integrity audit nol
-  issue lulus. Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
+  S159 menetapkan koreksi kontrak final: SagaVIEW hanya menampilkan estimasi
+  total biaya; pembayaran ditangani staf di lokasi dan tidak diproses aplikasi.
+  Backend `38c4221e7a37fc3400488d0422bde6440b96ae2f` menolak payload pembayaran,
+  menghapus endpoint mark-paid dan menambah kolom estimasi additive. Studio
+  `6d7083a3e9ae8e91b948622f24485a4226748344` menghapus QRIS, instruksi bayar,
+  status paid, payment hold, dan gate export/cetak dari surface aktif.
+  Kandidat S157-S158 berstatus `DEPRECATED / DO_NOT_DEPLOY`. S159 berstatus
+  `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / UIUX_VALIDATED /
   LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
 
 ## Tujuan dokumen

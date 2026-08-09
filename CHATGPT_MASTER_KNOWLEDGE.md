@@ -788,23 +788,17 @@ DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
 production untuk hardening S152-S156 tersebut tetap backend lineage S147 plus
 takeover saja. Studio reopen `5eeef369` sudah aktif, tetapi kandidat backend
 S152-S156 lain tetap belum dideploy.
-S157 backend `cf16003ff58915f22a00d51198c9426ea930c9ab` menutup bypass
-payment hold: client tidak dapat menetapkan `paid`, konfirmasi server memakai
-transaction dan row lock, event pembayaran memiliki unique idempotency key,
-serta nominal paid tersimpan tidak dapat diturunkan client. Payment integrity
-3/36, cross-regression 19/203, full backend 975/11.410, migration cycle, build,
-dependency audit, dan integrity audit nol issue lulus. Status
-`SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED /
-IMPLEMENTED_NOT_DEPLOYED`; production tetap pada lineage device-reopen S147 dan
-Studio S150.
-S158 backend `07f44cc4145fe7a6c65d0c8025e550cdcdd99278` melindungi
-referensi pembayaran opsional dengan allowlist API, HMAC server-side,
-fingerprint audit, replay conflict check, dan unique tenant+hash. Raw reference
-tidak masuk metadata, response, atau audit baru. Focused 8/103,
-cross-regression 45/737, full backend 980/11.477, migration cycle, build,
-dependency audit, dan integrity audit nol issue lulus. Status
-`SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED /
-IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
+S159 menetapkan koreksi kontrak SagaVIEW: aplikasi hanya menampilkan estimasi
+total biaya. Pembayaran ditangani langsung oleh staf di lokasi dan tidak
+diproses aplikasi; tidak ada provider, expiry, callback, QRIS/rekening, payment
+hold, status paid, atau gate export/cetak. Backend
+`38c4221e7a37fc3400488d0422bde6440b96ae2f` menolak payload lama, menghapus
+mark-paid, dan menyimpan estimasi additive. Studio
+`6d7083a3e9ae8e91b948622f24485a4226748344` menghapus seluruh kontrol
+pembayaran aktif. Backend 44/44 (741), Studio 188/188, Playwright
+desktop/mobile/a11y, migration cycle, build/budget, dan audit dependency lulus.
+S157-S158 `DEPRECATED / DO_NOT_DEPLOY`; S159 `IMPLEMENTED_NOT_DEPLOYED` dan
+production tidak berubah.
 Harga bulanan: Growth Rp200.000, Pro Rp500.000.
 Growth mencakup 1 device, 50 frame, 3 preset, offline 24 jam, dan 2 GB aset
 frame cloud. Pro mencakup 4 device, 100 frame, 10 preset, offline 168 jam, 10 GB
