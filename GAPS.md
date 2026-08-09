@@ -620,6 +620,14 @@ ketika keputusan atau release baru menutup gap.
   folder, slug teknis, dan domain `aogticvities.fun` tetap dipertahankan untuk
   kompatibilitas dan bukan gap rebrand.
 
+- `NEEDS CONFIRMATION`: Google Sheets reporting sudah production-deployed pada
+  source `e35accb`, migration 029, Hostinger `20260809T155737Z`, dan Vercel
+  `dpl_J7P2d2iUfsrv23ZP5EpahfypLeXz`, tetapi data sync masih OFF. Target Sheet
+  masih public writer dan service-account runtime belum tersedia. Bukti penutup:
+  General access Restricted, share editor hanya ke service account yang sah,
+  initial sync 31 record, count/filter reconciliation, timer sehat, serta UAT
+  admin tanpa edit manual pada tab source.
+
 - `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: runtime
   `c9a6702094ea36088c44040656f638d3db28da57` memuat theme poster-aligned,
   hadir/mulai 14.30 (`DEC-063`), dan durasi akhir (`DEC-059`) melalui

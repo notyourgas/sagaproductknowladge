@@ -305,6 +305,15 @@ sudah terverifikasi, tetapi status webhook dan valid-link two-device session
 UAT masih menunggu. Projection display, export/print, dan custom domain/TLS
 tersedia; rehearsal runtime penuh belum terverifikasi.
 
+Google Sheets participant reporting memakai proyeksi satu arah dari MySQL,
+bukan database kedua. Dashboard admin dapat mengaktifkan, menonaktifkan, dan
+memicu sync; timer Hostinger menjalankan reconciliation maksimal setiap menit
+dan digest melewati snapshot yang tidak berubah. Adapter memeriksa permission
+Drive dan menolak semua target bertipe `anyone` sebelum nomor WhatsApp penuh
+ditulis. Service-account private key hanya boleh berada di runtime Hostinger.
+Fondasi dan layout sudah `PRODUCTION_DEPLOYED`, tetapi data sync tetap
+`NOT_PRODUCTION_ACTIVATED` sampai Sheet Restricted dan credential tersedia.
+
 ## Data yang digunakan
 
 Event, participant beserta sumber Community/Guest dan status CG, delapan team,

@@ -12,16 +12,27 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-09T22:42:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-09T23:05:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `c5585b4d374d5c95b700f39003b82b25818056e3` |
-| Informasi terakhir disinkronkan | SagaBook S170 source/main `f69170a7e61080f90a3bcea7df1f22f5612f0369`, release `20260809153848-f69170a`, rollback `20260809083131-5c76735`; S168+S169 production-deployed/activated. |
+| Baseline sebelum pembaruan | `54c68023ee42f3399ceb7de540d8df99aef019b5` |
+| Informasi terakhir disinkronkan | AOGTIVITY source `e35accbbdb9d220d4e1ac432ab1c5d06d40397e1`, Hostinger `20260809T155737Z`, Vercel `dpl_J7P2d2iUfsrv23ZP5EpahfypLeXz`, migration 029; aplikasi deployed, spreadsheet data sync belum activated. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik. Authenticated Owner UAT dan pilot tetap gate terpisah sebelum `BUSINESS_READY`. |
-| Error | Tidak ada error sinkronisasi yang diketahui. |
+| Konflik | Tidak ada konflik kanonik. Target Sheet masih public writer dan service account belum tersedia; PII sync ditahan fail-closed. |
+| Error | Tidak ada error knowledge sync yang diketahui. |
 
 ## File yang berubah pada sinkronisasi ini
+
+- `products/aogticvity/PRODUCT.md`
+- `products/aogticvity/DOSSIER.md`
+- `products/aogticvity/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
+
+## File dari sinkronisasi sebelumnya
 
 - `products/sagabook/PRODUCT.md`
 - `products/sagabook/DOSSIER.md`

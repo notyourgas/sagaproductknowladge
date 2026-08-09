@@ -65,8 +65,8 @@ menunggu human UAT.
 Public delivery kanonik: `https://aogticvities.fun`.
 
 Rebrand AOGTIVITY pertama kali aktif pada source `e4c217b`; runtime terbaru
-adalah `c9a6702094ea36088c44040656f638d3db28da57`, Hostinger
-`20260809T075137Z`, dan Vercel `dpl_D1ubBCWkFs6ENp9CqPz5Fv25zwYE`. UI,
+adalah `e35accbbdb9d220d4e1ac432ab1c5d06d40397e1`, Hostinger
+`20260809T155737Z`, dan Vercel `dpl_J7P2d2iUfsrv23ZP5EpahfypLeXz`. UI,
 metadata, PWA, aset merek, pesan
 WhatsApp baru, serta issuer TOTP baru memakai AOGTIVITY. Domain, repository,
 path deploy, environment variable, cookie/session prefix, database, service,
@@ -86,6 +86,12 @@ kompatibel.
   loopback-only.
 - Check-in, roster, event-master, dan result publish/correct memakai versioning,
   idempotency, permission, persistence MySQL, dan audit event.
+- Migration 029 serta runtime source `e35accb` menyediakan laporan peserta satu
+  arah MySQL ke Google Sheets: dashboard, data lengkap, antrean proses, rekap
+  kategori, sync log, digest idempotent, timer satu menit, dan kontrol admin.
+  Sinkronisasi PII masih OFF dan fail-closed sampai Sheet berstatus Restricted
+  serta service account hanya-runtime tersedia; layout Sheet tanpa data peserta
+  sudah aktif dan tervalidasi.
 - Public registration memakai validasi server, consent version, anti-bot,
   anonymous rate limit, idempotent receipt, transaksi MySQL, dan audit. Admin
   dapat membaca serta memverifikasi pendaftaran dari authenticated desk.

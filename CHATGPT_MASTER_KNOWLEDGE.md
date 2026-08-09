@@ -1363,8 +1363,8 @@ idempotency, rate limit, receipt, audit, dan admin verification desk; participan
 fixture serta localStorage registration telah dihapus.
 Nama kanonik produk berubah dari AOGTICVITY menjadi AOGTIVITY pada 6 Agustus
 2026. Runtime terbaru aktif melalui source
-`c9a6702094ea36088c44040656f638d3db28da57`, Hostinger
-`20260809T075137Z`, dan Vercel `dpl_D1ubBCWkFs6ENp9CqPz5Fv25zwYE`.
+`e35accbbdb9d220d4e1ac432ab1c5d06d40397e1`, Hostinger
+`20260809T155737Z`, dan Vercel `dpl_J7P2d2iUfsrv23ZP5EpahfypLeXz`.
 Domain `aogticvities.fun` serta slug infrastruktur `aogticvity` tetap dipakai
 untuk kompatibilitas; AOGTICVITY hanya nama historis.
 Runtime ini menggabungkan visual event berdasarkan poster founder dan rundown
@@ -1385,6 +1385,13 @@ lulus. Status `PRODUCTION_DEPLOYED /
 PRODUCTION_ACTIVATED`; visual dan operational human UAT tetap residual.
 Remote security gate pada release ini juga menutup advisory high `nanoid`
 dengan pin patched 3.3.17; audit npm/pnpm production kembali nol vulnerability.
+Migration 029 menambahkan Google Sheets participant reporting satu arah dari
+MySQL dengan lima tab operasional, digest idempotent, timer satu menit, kontrol
+admin, dan permission gate. Aplikasi sudah `PRODUCTION_DEPLOYED`, tetapi data
+sync tetap `NOT_PRODUCTION_ACTIVATED`: target masih public writer dan service
+account Hostinger belum tersedia. Jangan klaim data peserta real-time sudah
+aktif atau menyalin PII sebelum Sheet Restricted dan initial reconciliation
+lulus.
 Master terbaru memakai `Lingkarin Angka` pada slot 17.30 selama 20 menit untuk
 menggantikan nama lama. Sepuluh lomba mempunyai 12 penugasan panitia final;
 Suit Karton dan Voli Air memisahkan Grup A/B. Legacy slug tetap kompatibel dan

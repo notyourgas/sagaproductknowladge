@@ -8,6 +8,24 @@ Mencatat perubahan material AOGTIVITY/AOGTICVITY/17an/Olimpiade.
 
 Nama lama dipertahankan sebagai provenance; status runtime harus eksplisit.
 
+## 2026-08-09 - Guarded Google Sheets participant reporting
+
+- `CONFIRMED`: Google Sheet `PESERTA AOGTIVITY` memiliki Dashboard, Data
+  Peserta, Perlu Diproses, Rekap Kategori, dan Sync Log dengan filter status,
+  kategori, CG, serta VIP. Tanpa master target, laporan tidak mengklaim dapat
+  menghitung orang yang belum mendaftar.
+- Source `e35accbbdb9d220d4e1ac432ab1c5d06d40397e1`, Hostinger
+  `20260809T155737Z`, Vercel `dpl_J7P2d2iUfsrv23ZP5EpahfypLeXz`, dan migration
+  029 aktif. Backend menyediakan proyeksi MySQL satu arah, digest idempotent,
+  permission gate, manual sync, on/off admin, audit run, dan timer satu menit.
+- Delivery aplikasi `PRODUCTION_DEPLOYED`; spreadsheet data sync
+  `NOT_PRODUCTION_ACTIVATED`. Target masih memiliki permission public writer
+  dan credential service account belum dipasang, sehingga tidak ada PII yang
+  dikirim. Aktivasi wajib menutup kedua gate tersebut terlebih dahulu.
+- 138 unit/API test, typecheck, build lokal/Hostinger/Vercel, backup dan restore
+  disposable, migration preservation, exact-source release, role routing,
+  readiness, public smoke, serta formula Sheet tanpa error lulus.
+
 ## 2026-08-09 - Lomba dan penugasan panitia final production
 
 - `CONFIRMED` melalui `DEC-070`: `Lingkarin Angka` menggantikan

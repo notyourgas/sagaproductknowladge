@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-09 - AOGTIVITY guarded participant spreadsheet reporting
+
+- Source `e35accbbdb9d220d4e1ac432ab1c5d06d40397e1`, Hostinger release
+  `20260809T155737Z`, Vercel production
+  `dpl_J7P2d2iUfsrv23ZP5EpahfypLeXz`, dan migration 029 menambahkan laporan
+  peserta Google Sheets satu arah dari MySQL.
+- Lima tab, filter status/kategori/CG/VIP, digest idempotent, manual on/off,
+  timer satu menit, permission check, run audit, backup/restore, build, test,
+  exact-source, dan public smoke lulus.
+- Aplikasi `PRODUCTION_DEPLOYED`, tetapi data sync
+  `NOT_PRODUCTION_ACTIVATED`: target masih public writer dan service account
+  belum dipasang. Tidak ada PII peserta yang disalin dan produk SagaDev lain
+  tidak berubah.
+
 ## 2026-08-09 - SagaBook S170 integrated production release
 
 - Source/main `f69170a7e61080f90a3bcea7df1f22f5612f0369` menggabungkan manual

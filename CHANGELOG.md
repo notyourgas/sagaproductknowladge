@@ -12,6 +12,21 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-09
 
+### AOGTIVITY guarded participant spreadsheet reporting
+
+- Ringkasan: menambahkan laporan participant real-time satu arah dari MySQL ke
+  Google Sheets dengan dashboard, rekap/filter, sync log, digest, timer, dan
+  kontrol admin.
+- Klasifikasi `CONFIRMED`; source
+  `e35accbbdb9d220d4e1ac432ab1c5d06d40397e1`, Hostinger
+  `20260809T155737Z`, Vercel `dpl_J7P2d2iUfsrv23ZP5EpahfypLeXz`, migration
+  029, dan public-safe runtime evidence.
+- Production aplikasi berubah: ya. Status spreadsheet data sync tetap
+  `NOT_PRODUCTION_ACTIVATED` karena target masih public writer dan credential
+  service account belum tersedia; PII tidak disalin.
+- File knowledge: PRODUCT, DOSSIER, product/portfolio/root changelog, master
+  knowledge, GAPS, dan sync status AOGTIVITY.
+
 ### SagaBook S170 integrated production release
 
 - Ringkasan: kandidat S168 dan S169 digabung; deploy production menjadi
