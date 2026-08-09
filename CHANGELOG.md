@@ -12,6 +12,20 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-09
 
+### SagaBook S168 manual production deploy evidence gate candidate
+
+- Ringkasan: Quality Gate tidak lagi dapat memulai deploy production;
+  workflow deploy sekarang manual-only dengan backup run dan checksum restore
+  receipt sebagai input wajib.
+- Klasifikasi `CONFIRMED`; source
+  `abda8f6ac2f84dccba8920ea3ee459e847eb91dc`, Quality Gate
+  `31314888994` sukses.
+- Production berubah: tidak. Status `SECURITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap S166, DB audit 100, maintenance
+  off, dan empat service aktif.
+- File knowledge: PRODUCT, DOSSIER, CHANGELOG, FEATURE_COVERAGE_LEDGER,
+  portfolio/root changelog, master knowledge, dan sync status SagaBook.
+
 ### SagaView S157 payment hold integrity candidate
 
 - Ringkasan: client tidak lagi dapat mengklaim pembayaran premium `paid`;

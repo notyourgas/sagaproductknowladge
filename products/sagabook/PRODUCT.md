@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 9 Agustus 2026 17:12 WIB
-Evidence status: production + source verified
+Updated: 9 Agustus 2026 20:12 WIB
+Evidence status: production + candidate source verified
 
 ## Tujuan dokumen
 
@@ -22,6 +22,11 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 - Branch `main` repository source sudah di-fast-forward ke exact source
   production tersebut. Rekonsiliasi ini tidak mengubah runtime, database,
   tenant, subscription, provider, maupun workflow customer/operator.
+- Candidate hardening S168 `abda8f6ac2f84dccba8920ea3ee459e847eb91dc`
+  menghapus pemicu deploy otomatis setelah Quality Gate. Deploy production
+  sekarang hanya dapat dimulai manual dengan backup run dan checksum receipt
+  restore yang wajib, serta tetap mengunci exact SHA. Quality Gate
+  `31314888994` hijau dan tidak memicu deploy; production tetap S166.
 - Release ini mempromosikan seluruh ancestor S157-S166: retry booking manual
   idempoten dan read-after-write operator, combined exit S7-S8, callback replay
   conflict protection, transisi status provider exactly-once, serta CTA Maps
@@ -52,7 +57,14 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   dibuat. Source S98-S166 yang menjadi ancestor release aktif sudah aktif
   kumulatif; arah storefront lebar S94/S108 tetap deprecated dan tidak aktif.
 
-## Release S162-S166 dan histori terkait
+## Candidate S168, release S162-S166, dan histori terkait
+- Candidate S168 `abda8f6a` membuat workflow production manual-only dan tidak
+  lagi mengambil fallback evidence dari repository variables. Focused release
+  hardening 14/14 (118 assertion), build, npm/Composer audit, diff, MySQL 8.4,
+  Laravel, visual/browser, booking smoke, dan Saga AI pada Quality Gate
+  `31314888994` lulus. Status `SECURITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; tidak ada schema/data mutation atau perubahan
+  production.
 - Security/infrastructure S166 source
   `5c76735315c7979269832aada77fba3390368c31` pada branch
   `codex/s166-sagabook-body-limit-observability` membuat release gate membaca

@@ -1,5 +1,27 @@
 # SagaBook Changelog
 
+## 2026-08-09 - Production deploy manual evidence gate S168 candidate
+
+- Klasifikasi `CONFIRMED`; source
+  `abda8f6ac2f84dccba8920ea3ee459e847eb91dc` pada branch
+  `codex/s168-sagabook-manual-deploy-gate` sudah dipush.
+- Before: Quality Gate sukses dapat membuat run deploy otomatis tanpa input
+  backup/restore, lalu baru berhenti pada validasi. After: workflow production
+  hanya tersedia lewat dispatch manual dengan backup run dan checksum restore
+  receipt wajib; fallback repository variables dan trigger otomatis dihapus.
+- Exact source checkout, environment protection, migration preflight, database
+  audit, immutable activation, automatic rollback, dan public smoke tetap
+  dipertahankan.
+- Gate hijau: focused release hardening 14/14 (118 assertion), PHP syntax,
+  diff-check, build, npm/Composer nol advisory, dan Quality Gate
+  `31314888994` yang mencakup MySQL 8.4, Laravel, visual/browser, Saga Platform
+  E2E, booking smoke, serta Saga AI. Hanya Quality Gate yang dibuat untuk SHA
+  kandidat; tidak ada deploy otomatis baru.
+- Status `SECURITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Production tetap source S166 / release
+  `20260809083131-5c76735`, DB audit 100, maintenance off, empat service aktif;
+  tidak ada schema/data mutation, provider canary, atau aktivasi subscription.
+
 ## 2026-08-09 - Source main reconciliation S167
 
 - Klasifikasi `CONFIRMED`; branch source `main` di-fast-forward dari

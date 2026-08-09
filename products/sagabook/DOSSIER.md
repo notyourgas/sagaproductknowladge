@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 9 Agustus 2026 17:12 WIB
+- Updated: 9 Agustus 2026 20:12 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED` untuk workflow yang tercantum di
   [PRODUCT](PRODUCT.md)
@@ -19,6 +19,10 @@ dalam satu dokumen public-safe.
   release `20260809083131-5c76735`, rollback `20260809033844-64ed036`
 - Repository source `main` sudah menunjuk exact ke SHA production S166;
   rekonsiliasi branch tidak memicu deployment atau mutation data baru.
+- Candidate S168 `abda8f6ac2f84dccba8920ea3ee459e847eb91dc`
+  membatasi workflow production menjadi manual-only dengan backup run dan
+  checksum restore receipt sebagai input wajib. Quality Gate exact-SHA hijau
+  dan tidak menghasilkan run deploy otomatis; production tetap S166.
 - S131-S156 aktif kumulatif. Gate fresh backend 993/993, browser auth,
   tenant/cabang, Add-on, Resource, storefront/slot, race 5/5, build/design,
   dependency audit, backup/restore exact-SHA, manifest, DB audit 100, service,
@@ -41,7 +45,14 @@ dalam satu dokumen public-safe.
   dependency, backup/restore, public smoke, service health, dan rollback.
   Model, prompt, provider, dan KB tidak diubah oleh release ini.
 
-### Release kumulatif S162-S166 dan histori terkait
+### Candidate S168, release kumulatif S162-S166, dan histori terkait
+- S168 `abda8f6a` menghapus trigger `workflow_run` dan fallback evidence dari
+  variables sehingga Quality Gate tidak dapat memulai deploy production.
+  Operator tetap harus memberi dua evidence wajib melalui dispatch manual;
+  checkout dan validasi tetap terkunci pada exact SHA. Focused contract 14/14
+  (118 assertion), build, dependency audit, MySQL 8.4, Laravel,
+  visual/browser, dan booking smoke hijau. Status `LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; database dan runtime production tidak berubah.
 - S166 `5c767353` menambahkan observability fail-closed antara batas
   body reverse proxy dan guard webhook aplikasi. Inspector hanya mengeluarkan
   metadata public-safe, memilih batas efektif paling konservatif termasuk

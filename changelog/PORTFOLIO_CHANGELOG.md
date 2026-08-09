@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-09 - SagaBook S168 manual production deploy gate candidate
+
+- Source `abda8f6ac2f84dccba8920ea3ee459e847eb91dc` menghapus pemicu
+  deploy otomatis setelah Quality Gate dan fallback evidence dari repository
+  variables.
+- Deploy production sekarang manual-only dengan backup run dan checksum
+  restore receipt wajib; exact-SHA, migration, DB audit, atomic activation,
+  rollback, dan public smoke tetap dipertahankan.
+- Focused 14/14 (118), build, dependency audit, serta Quality Gate
+  `31314888994` termasuk MySQL 8.4, Laravel, visual/browser, dan booking smoke
+  lulus. Status `SECURITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production dan database tidak berubah.
+
 ## 2026-08-09 - SagaView S157 payment hold integrity candidate
 
 - Backend `cf16003ff58915f22a00d51198c9426ea930c9ab` menolak klaim

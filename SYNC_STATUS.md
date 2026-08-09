@@ -12,21 +12,21 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-09T19:10:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-09T20:12:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `7b04c0014f4cccee6c1c6964dbe984e76049631c` |
-| Informasi terakhir disinkronkan | SagaView S157 payment hold integrity pada source `cf16003ff58915f22a00d51198c9426ea930c9ab`; client-paid bypass ditutup dan konfirmasi pembayaran menjadi transactional serta idempotent. |
+| Baseline sebelum pembaruan | `ea8bb2f477289a13e16c67d9e18a25889b0b8fda` |
+| Informasi terakhir disinkronkan | SagaBook S168 manual production deploy gate pada source `abda8f6ac2f84dccba8920ea3ee459e847eb91dc`; Quality Gate tidak lagi memicu deploy dan dua evidence backup/restore wajib diberikan manual. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik. S157 belum production; hold expiry, provider callback, guarded deploy, dan authenticated payment-hold UAT tetap gate berikutnya. |
+| Konflik | Tidak ada konflik. S168 belum production; merge/promosi dan deployment kandidat tetap memerlukan review, instruksi Andreas, serta fresh backup/restore exact-SHA. |
 | Error | Tidak ada error sinkronisasi yang diketahui. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/sagaview/PRODUCT.md`
-- `products/sagaview/DOSSIER.md`
-- `products/sagaview/CHANGELOG.md`
-- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `SYNC_STATUS.md`

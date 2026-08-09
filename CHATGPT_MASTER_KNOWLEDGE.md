@@ -74,6 +74,14 @@ tidak mengubah runtime, data, entitlement, subscription, atau workflow; release
 production tetap `20260809083131-5c76735` dan belum `BUSINESS_READY` tanpa
 authenticated Owner/operator UAT serta penutupan gap pilot.
 
+Candidate security/deployment S168
+`abda8f6ac2f84dccba8920ea3ee459e847eb91dc` membuat workflow production
+manual-only. Quality Gate tidak lagi memicu deploy; backup run dan checksum
+restore receipt wajib diberikan melalui dispatch manual, sedangkan exact-SHA,
+migration, DB audit, rollback, dan smoke tetap fail-closed. Quality Gate
+`31314888994` hijau. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+production tetap S166.
+
 Status code: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; business readiness
 belum tercapai karena dua tenant masih mempunyai gap setup pilot.
 Harga bulanan: Basic Rp500.000, Growth Rp950.000, Pro Rp1.500.000.
