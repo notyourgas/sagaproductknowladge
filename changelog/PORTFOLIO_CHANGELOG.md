@@ -23,6 +23,19 @@
   IMPLEMENTED_NOT_DEPLOYED`; production SagaBook tetap S161, tanpa canary atau
   perubahan data production.
 
+## 2026-08-09 - SagaView S152 auth/device/session abuse hardening candidate
+
+- Backend `e2cb726705bb630d2bb1b737a54c1d30cb1176e9` menambah boundary
+  request berlapis, replay ledger durable berbasis hash, dan serialisasi
+  pelepasan lease tanpa mengubah kontrak local-first atau mengirim foto/path.
+- Focused 6/50, SagaView 123/1.212, full backend 964/11.317, migration
+  fresh/rollback/re-apply, format kandidat, syntax, deploy gate disposable,
+  dan Composer audit nol advisory lulus.
+- Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Production SagaView tetap backend S147 dan Studio
+  S150; deployment, activation, authenticated UAT, dan business readiness
+  tetap terpisah.
+
 ## 2026-08-09 - SagaView S148-S150 cumulative production
 
 - Studio `4d25f6069737dc8f14342a62b6c6241081d544d3` aktif sebagai release

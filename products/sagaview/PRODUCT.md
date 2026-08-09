@@ -74,6 +74,12 @@ tersebut dan meredaksi response record lama. Studio
   Bila thumbnail dibatalkan atau pencatatan cloud gagal, seluruh object URL
   sementara dilepas, state sesi lama tidak ditimpa, dan pesan backend mentah
   tidak ditampilkan kepada operator.
+  S152 backend `e2cb726705bb630d2bb1b737a54c1d30cb1176e9`
+  berstatus `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Kandidat menambahkan pembatasan
+  request berlapis, ledger replay perangkat berbasis hash yang tetap bekerja
+  setelah cache hilang, dan serialisasi pelepasan lease. Production tidak
+  berubah; backend aktif tetap S147 dan Studio aktif tetap S150.
 
 ## Tujuan dokumen
 
@@ -117,6 +123,11 @@ kumulatif melalui exact source S150.
   fallback download otomatis, checkpoint recovery harus commit sebelum
   navigasi/status cloud, dan import staged dibersihkan tanpa menimpa state lama
   ketika dibatalkan atau cloud gagal.
+- S152 sudah tervalidasi lokal untuk hardening auth/device/session: rotasi
+  identitas input tidak melewati batas request per sumber, replay proof tetap
+  ditolak setelah cache dikosongkan, dan pelepasan lease ditulis dalam
+  transaksi terkunci. Database hanya menyimpan hash nonce dan metadata minimum.
+  Kandidat belum dideploy.
 - Entitlement live memberi Growth 50 dan Pro 100 frame aktif. Harga, device,
   preset, offline grace, storage, laporan, support, payment, dan fair-use tidak
   berubah.

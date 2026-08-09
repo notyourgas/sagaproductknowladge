@@ -673,6 +673,14 @@ mentah tidak dirender. Status kumulatif S148-S150 adalah
 `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; rollback langsung S147
 `20260808225730-df959cc` tersedia. Authenticated UAT folder Windows dan residual
 race/corrupt-file tetap menahan `BUSINESS_READY`.
+S152 backend `e2cb726705bb630d2bb1b737a54c1d30cb1176e9` menambah
+boundary request berlapis yang tidak bergantung pada satu field identitas,
+ledger replay perangkat durable berbasis hash, dan transaksi terkunci saat
+lease dilepas. Kandidat lulus focused 6/50, SagaView 123/1.212, full backend
+964/11.317, migration fresh/rollback/re-apply, format/syntax, gate disposable,
+dan Composer audit. Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap backend S147 dan
+Studio S150.
 Harga bulanan: Growth Rp200.000, Pro Rp500.000.
 Growth mencakup 1 device, 50 frame, 3 preset, offline 24 jam, dan 2 GB aset
 frame cloud. Pro mencakup 4 device, 100 frame, 10 preset, offline 168 jam, 10 GB

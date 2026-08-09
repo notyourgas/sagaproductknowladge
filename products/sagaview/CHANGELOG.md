@@ -1,5 +1,28 @@
 # SagaView Changelog
 
+## 2026-08-09 - S152 auth/device/session abuse hardening candidate
+
+- Klasifikasi `CONFIRMED` melalui source backend
+  `e2cb726705bb630d2bb1b737a54c1d30cb1176e9` dan acceptance lokal.
+- Before: batas request SagaView menggabungkan IP dengan field identitas yang
+  belum dipercaya, sehingga rotasi input dapat mengurangi efektivitas batas
+  agregat; replay proof hanya bergantung pada cache; pelepasan lease belum
+  memakai transaksi dan row lock. After: read/license/write memiliki boundary
+  sumber dan identitas ter-hash, replay juga dicatat durable sebagai hash
+  berumur pendek, dan release lease diserialkan.
+- Database baru menyimpan hash nonce, action, timestamp, expiry, dan relasi
+  device; tidak menyimpan nonce, signature, credential, fingerprint, foto,
+  path lokal, atau data customer mentah.
+- Gate hijau: red proof 1 gagal menjadi focused 6 test/50 assertion; seluruh
+  regresi SagaView 123/1.212; full backend 964/11.317; migration
+  fresh/rollback/re-apply; format kandidat, syntax, deploy gate disposable
+  tanpa critical failure, dan Composer audit nol advisory.
+- Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Production tidak berubah: backend tetap S147
+  `0cda8a09` / `20260808225730-0cda8a0`, Studio tetap S150 `4d25f606` /
+  `20260809103753-4d25f60`. Guarded deploy dan authenticated UAT tetap gate
+  terpisah.
+
 ## 2026-08-09 - S148-S150 cumulative immutable production release
 
 - Studio source `4d25f6069737dc8f14342a62b6c6241081d544d3` aktif sebagai

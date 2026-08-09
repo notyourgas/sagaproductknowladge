@@ -760,6 +760,14 @@ pada UI customer.
 
 ## Reliability, security, dan operations
 
+- Kandidat S152 backend `e2cb726705bb630d2bb1b737a54c1d30cb1176e9`
+  menambah pembatasan abuse berlapis, ledger replay perangkat durable berbasis
+  hash, cleanup berumur pendek, foreign-key cleanup, dan transaksi terkunci
+  saat lease dilepas. Focused 6/50, seluruh regresi SagaView 123/1.212, full
+  backend 964/11.317, migration fresh/rollback/re-apply, format kandidat,
+  syntax, dan Composer audit lulus. Status `SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
 - Exact backend/Studio release immutable `20260807023502-f515dd7` dan
   `20260807023502-05c5fda`; rollback backend `20260807010717-d7542fd` serta
   Studio `20260807010718-05c5fda` tersedia.

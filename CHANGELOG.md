@@ -12,6 +12,24 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-09
 
+### SagaView S152 auth/device/session abuse hardening candidate
+
+- Ringkasan: request read/license/write kini memiliki boundary sumber dan
+  identitas ter-hash; replay proof dicatat durable sebagai hash berumur pendek;
+  pelepasan lease memakai transaksi dan row lock.
+- Klasifikasi `CONFIRMED`; source
+  `e2cb726705bb630d2bb1b737a54c1d30cb1176e9`, status
+  `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`.
+- Gate: focused 6/50, regresi SagaView 123/1.212, full backend 964/11.317,
+  migration fresh/rollback/re-apply, format kandidat, syntax, deploy gate
+  disposable tanpa critical failure, dan Composer audit nol advisory.
+- Production berubah: tidak. Backend tetap S147 dan Studio tetap S150; tidak
+  ada foto/path customer, credential, tenant/device identifier, payment,
+  pricing, atau subscription yang diubah.
+- File knowledge: PRODUCT, DOSSIER, CHANGELOG, FEATURE_COVERAGE_LEDGER,
+  portfolio/root changelog, master knowledge, dan sync status SagaView.
+
 ### COYABAG R3 guarded production parity deploy
 
 - Ringkasan: exact source/artifact `v1.0.0-rc.3` dipromosikan secara atomik ke
