@@ -87,6 +87,13 @@ tersebut dan meredaksi response record lama. Studio
   kuota, mengembalikan retry tenant yang sama secara idempoten, serta memiliki
   constraint unik database untuk satu klaim per tenant dan serial. Production,
   paket, harga, provider, dan subscription aktif tidak berubah.
+  S154 backend `20c09f0795853661033fa73a070bcd89818646cd`
+  berstatus `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. PATCH lifecycle SagaVIEW kini
+  mempertahankan field entitlement yang tidak dikirim, mengunci tenant dan
+  subscription, menaikkan versi entitlement, serta menolak key atau tipe
+  override SagaVIEW yang tidak dikenal. Produk lain dan production tidak
+  berubah.
 
 ## Tujuan dokumen
 
@@ -139,6 +146,10 @@ kumulatif melalui exact source S150.
   diserialkan dengan row lock, counter yang tertinggal tidak mengalahkan ledger,
   retry tenant yang sama tidak mengonsumsi kuota atau memperpanjang trial, dan
   database menolak klaim ganda. Kandidat belum dideploy.
+- S154 sudah tervalidasi lokal untuk integritas PATCH entitlement Owner/admin:
+  perubahan lifecycle tidak lagi menghapus override yang tidak dikirim,
+  payload custom memakai schema fail-closed, write diserialkan, dan versi
+  entitlement maju pada setiap mutation. Kandidat belum dideploy.
 - Entitlement live memberi Growth 50 dan Pro 100 frame aktif. Harga, device,
   preset, offline grace, storage, laporan, support, payment, dan fair-use tidak
   berubah.

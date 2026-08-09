@@ -708,6 +708,15 @@ backend 967/11.335, siklus migration, duplicate preflight, format target,
 Composer audit, dan deploy gate disposable 6/6. Status `SECURITY_VALIDATED /
 DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
 production, paket, harga, provider, dan subscription aktif tidak berubah.
+S154 backend `20c09f0795853661033fa73a070bcd89818646cd` menutup
+penghapusan entitlement akibat semantik PATCH yang salah. Field omitted kini
+dipertahankan, custom entitlement SagaVIEW memakai schema key/type fail-closed,
+tenant dan subscription dikunci, serta versi entitlement bertambah. Kandidat
+lulus focused 2/16, SagaVIEW 173/1.921, full backend 969/11.351, disposable
+database, integrity audit, cache compile, dependency audit, dan deploy gate
+testing 6/6. Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production dan SagaBook tidak
+berubah. Optimistic stale-version dari browser masih menjadi gap berikutnya.
 Harga bulanan: Growth Rp200.000, Pro Rp500.000.
 Growth mencakup 1 device, 50 frame, 3 preset, offline 24 jam, dan 2 GB aset
 frame cloud. Pro mencakup 4 device, 100 frame, 10 preset, offline 168 jam, 10 GB

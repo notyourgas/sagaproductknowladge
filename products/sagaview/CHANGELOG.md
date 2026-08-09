@@ -1,5 +1,26 @@
 # SagaView Changelog
 
+## 2026-08-09 - S154 Owner entitlement PATCH integrity candidate
+
+- Klasifikasi `CONFIRMED` melalui source backend
+  `20c09f0795853661033fa73a070bcd89818646cd` dan acceptance lokal.
+- Before: PATCH lifecycle menulis ulang field opsional yang tidak dikirim,
+  sehingga aksi active/suspended dapat menghapus custom entitlement; payload
+  custom SagaVIEW juga menerima key dan tipe arbitrary. After: field omitted
+  dipertahankan, schema produk fail-closed, write memakai row lock, dan versi
+  entitlement bertambah pada mutation.
+- Produk selain SagaVIEW mempertahankan jalur lama. Harga, paket, provider,
+  subscription production, foto, path lokal, editor, dan output tidak diubah.
+- Gate hijau: red proof 2 gagal menjadi focused 2/16; subscription 35/620;
+  SagaVIEW 173/1.921; full backend 969/11.351; disposable migration/seed,
+  integrity audit nol issue, deploy gate testing 6/6, cache compilation,
+  format/syntax, Composer validate, dan audit nol advisory.
+- Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Production tetap backend S147 `0cda8a09` /
+  `20260808225730-0cda8a0` dan Studio S150 `4d25f606` /
+  `20260809103753-4d25f60`. Backup/restore production, optimistic stale-version
+  end-to-end, authenticated Owner UAT, dan monitoring tetap gate terpisah.
+
 ## 2026-08-09 - S153 serial redemption abuse hardening candidate
 
 - Klasifikasi `CONFIRMED` melalui source backend
