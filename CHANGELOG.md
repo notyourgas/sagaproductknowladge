@@ -12,6 +12,18 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-09
 
+### SagaBook source main reconciliation S167
+
+- Ringkasan: branch source `main` sekarang exact sama dengan source S166 yang
+  sudah aktif di production; selisih 14 commit ditutup melalui fast-forward.
+- Klasifikasi `CONFIRMED`; source
+  `5c76735315c7979269832aada77fba3390368c31`, release tetap
+  `20260809083131-5c76735`, rollback tetap `20260809033844-64ed036`.
+- Production berubah: tidak. Tidak ada deployment, schema/data mutation,
+  aktivasi subscription/public booking, provider canary, atau data customer.
+- File knowledge: PRODUCT, DOSSIER, CHANGELOG, FEATURE_COVERAGE_LEDGER,
+  portfolio/root changelog, master knowledge, dan sync status SagaBook.
+
 ### SagaView device lease close/reopen recovery production
 
 - Ringkasan: perbaikan close/reopen SagaView aktif di production; close normal

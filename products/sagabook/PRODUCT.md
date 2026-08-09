@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 9 Agustus 2026 15:40 WIB
+Updated: 9 Agustus 2026 17:12 WIB
 Evidence status: production + source verified
 
 ## Tujuan dokumen
@@ -19,6 +19,9 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 - Source kumulatif S166 `5c76735315c7979269832aada77fba3390368c31`
   aktif sebagai release immutable `20260809083131-5c76735`; rollback langsung
   `20260809033844-64ed036` tersedia.
+- Branch `main` repository source sudah di-fast-forward ke exact source
+  production tersebut. Rekonsiliasi ini tidak mengubah runtime, database,
+  tenant, subscription, provider, maupun workflow customer/operator.
 - Release ini mempromosikan seluruh ancestor S157-S166: retry booking manual
   idempoten dan read-after-write operator, combined exit S7-S8, callback replay
   conflict protection, transisi status provider exactly-once, serta CTA Maps

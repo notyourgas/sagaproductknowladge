@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 9 Agustus 2026 15:40 WIB
+- Updated: 9 Agustus 2026 17:12 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED` untuk workflow yang tercantum di
   [PRODUCT](PRODUCT.md)
@@ -17,6 +17,8 @@ dalam satu dokumen public-safe.
   PRODUCTION_ACTIVATED`
 - Source kumulatif aktif: `5c76735315c7979269832aada77fba3390368c31`,
   release `20260809083131-5c76735`, rollback `20260809033844-64ed036`
+- Repository source `main` sudah menunjuk exact ke SHA production S166;
+  rekonsiliasi branch tidak memicu deployment atau mutation data baru.
 - S131-S156 aktif kumulatif. Gate fresh backend 993/993, browser auth,
   tenant/cabang, Add-on, Resource, storefront/slot, race 5/5, build/design,
   dependency audit, backup/restore exact-SHA, manifest, DB audit 100, service,

@@ -12,21 +12,21 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-09T16:43:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-09T17:12:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `a4ea6c4c254a4a382fa33b477f35c6c1c6378689` |
-| Informasi terakhir disinkronkan | SagaView close/reopen recovery aktif pada backend `13a94c5f32d278fd3fa7fad7035b4ddc8184763f` / `20260809162045-13a94c5` dan Studio `5eeef36904f84c7cf01d8f365f3d6a94ba9eec9e` / `20260809162045-5eeef36`; status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. |
+| Baseline sebelum pembaruan | `56f056ea3e54b7504c5be100b559537931143f6f` |
+| Informasi terakhir disinkronkan | SagaBook source `main` sudah exact sama dengan source production S166 `5c76735315c7979269832aada77fba3390368c31`; runtime tetap release `20260809083131-5c76735` dan production tidak berubah. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik source/runtime SagaView. UAT close/reopen pada device Studio nyata dan monitoring conflict-rate tetap gate sebelum `BUSINESS_READY`. |
+| Konflik | Tidak ada konflik source/runtime SagaBook. Authenticated UAT, provider canary berizin, dan dua gap pilot tetap gate sebelum `BUSINESS_READY`. |
 | Error | Tidak ada error sinkronisasi yang diketahui. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/sagaview/PRODUCT.md`
-- `products/sagaview/DOSSIER.md`
-- `products/sagaview/CHANGELOG.md`
-- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `SYNC_STATUS.md`
