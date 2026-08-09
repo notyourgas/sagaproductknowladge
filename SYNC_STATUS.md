@@ -12,20 +12,19 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-09T10:40:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-09T10:43:24+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `95c5455cb77d8bba847bcff1acbc81c50d23730a` |
-| Informasi terakhir disinkronkan | SagaBook source `64ed036b514d351f3e537be557d69117badf9d24` aktif sebagai release `20260809033844-64ed036` dengan status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. |
+| Baseline sebelum pembaruan | `eb59855210e16460af51ccf0cacf1cded0e76f67` |
+| Informasi terakhir disinkronkan | COYABAG `264c6ac2ebec33c6471a4c49572ddcdc82b51cf2` berada di `main`, ditag immutable `v1.0.0-rc.3`, dan lulus empat job exact-SHA CI dengan artifact parity; production tidak berubah. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik source/runtime SagaBook. Business readiness tetap menunggu authenticated Owner/operator UAT dan pilot. |
-| Error | Tidak ada error sinkronisasi yang diketahui. |
+| Konflik | Tidak ada konflik source/runtime. RC COYABAG belum dideploy dan commerce belum diaktifkan. |
+| Error | Tidak ada error sinkronisasi yang diketahui; annotation deprecation runtime Node GitHub Actions tetap backlog hardening non-blocking. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/sagabook/PRODUCT.md`
-- `products/sagabook/CHANGELOG.md`
-- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/CHANGELOG.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `SYNC_STATUS.md`
@@ -33,8 +32,9 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 ## File dari sinkronisasi sebelumnya
 
-- `products/coyabag/PRODUCT.md`
-- `products/coyabag/CHANGELOG.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `SYNC_STATUS.md`
@@ -193,10 +193,10 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 ## Item menunggu konfirmasi
 
-COYABAG source `df2853add505814918dfe33128c55938360b8962` sudah berada pada
-branch remote `codex/finalization-f0-f11`; seluruh gate lokal dan empat job
-GitHub Actions exact-SHA run `31269460133` lulus. Fast-forward `main`, tag RC,
-manifest immutable, dan deployment tetap memerlukan persetujuan terpisah.
+COYABAG source `264c6ac2ebec33c6471a4c49572ddcdc82b51cf2` sudah berada pada
+`main`, lulus empat job GitHub Actions exact-SHA run `31292840016`, dan dikunci
+sebagai annotated tag/prerelease `v1.0.0-rc.3` dengan manifest serta artifact
+parity. Guarded production deploy R3 tetap memerlukan persetujuan terpisah.
 Production tidak berubah dari `20260730-33637aa`; provider, data final, owner
 2FA, backup/restore, UAT, activation, dan business readiness tetap blocker.
 

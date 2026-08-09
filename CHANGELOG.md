@@ -12,6 +12,22 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-09
 
+### COYABAG R2 mainline dan immutable RC
+
+- Ringkasan: kandidat finalisasi dipromosikan ke `main` melalui fast-forward
+  dan dikunci sebagai annotated tag `v1.0.0-rc.3` dengan release artifact
+  parity.
+- Klasifikasi `CONFIRMED`; source
+  `264c6ac2ebec33c6471a4c49572ddcdc82b51cf2`, status `LOCAL_VALIDATED /
+  MAINLINE_SYNCED / CI_VERIFIED / RELEASE_CANDIDATE / NOT_DEPLOYED`.
+- Gate: GitHub Actions `main` exact-SHA run `31292840016` lulus pada empat job;
+  manifest, checksum, source, storefront, dan admin artifact terverifikasi dan
+  digest asset GitHub cocok.
+- Production berubah: tidak. Deployment, provider activation, data mutation,
+  canary transaction, dan commerce activation tetap gate terpisah.
+- File knowledge: product/changelog COYABAG, portfolio/root changelog, master,
+  dan sync status.
+
 ### SagaBook S157-S161 production
 
 - Ringkasan: lineage retry booking manual, exit S7-S8, webhook payment

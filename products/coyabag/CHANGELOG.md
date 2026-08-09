@@ -8,6 +8,23 @@ Mencatat perubahan material COYABAG dengan provenance public-safe.
 
 Surface deployment tidak otomatis berarti commerce activation.
 
+## 2026-08-09 - R2 mainline dan immutable RC
+
+- Source `264c6ac2ebec33c6471a4c49572ddcdc82b51cf2` dipromosikan ke
+  `main` melalui fast-forward tanpa squash, rebase, force-push, atau history
+  rewrite.
+- GitHub Actions `main` exact-SHA run `31292840016` lulus pada Frontend QA,
+  Backend QA, MySQL 8 Integration, dan Cart Browser QA.
+- Tag annotated immutable `v1.0.0-rc.3` dan GitHub prerelease menunjuk exact
+  SHA yang sama. Release memuat source archive, storefront, admin, manifest,
+  serta SHA-256 checksums yang tervalidasi.
+- Manifest merekam checksum lock/build, 30 file migration, rollback production
+  `20260730-33637aa` / `33637aa9f6f79037a2555c3b0fc0d93b700450dc`,
+  dan batas `UNVERIFIED_NOT_DEPLOYED` untuk migration production.
+- Status `LOCAL_VALIDATED / MAINLINE_SYNCED / CI_VERIFIED /
+  RELEASE_CANDIDATE / NOT_DEPLOYED`. Provider, konfigurasi, data, deployment,
+  dan commerce production tidak berubah.
+
 ## 2026-08-09 - Batch A exact-SHA CI closure
 
 - Source `df2853add505814918dfe33128c55938360b8962` pada branch

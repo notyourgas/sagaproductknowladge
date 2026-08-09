@@ -1177,13 +1177,16 @@ owner 2FA, legal, backup restore, dan provider UAT selesai.
 
 Delivery: `PRODUCTION_DEPLOYED`. Activation dan business readiness: `BLOCKED`.
 
-Candidate source `df2853add505814918dfe33128c55938360b8962` memperbaiki
+Release candidate source `264c6ac2ebec33c6471a4c49572ddcdc82b51cf2`
+memperbaiki
 rekonsiliasi cart tersimpan terhadap katalog live dan menutup advisory
 Guzzle/Promises, CommonMark, tooling Vite storefront/admin, kompatibilitas PHP
-8.3, dan asumsi environment lokal pada gate CI. Candidate sudah
-`LOCAL_VALIDATED / REMOTE_BRANCH_SYNCED / CI_VERIFIED`; GitHub Actions
-exact-SHA run `31269460133` lulus pada keempat job. Candidate belum berada di
-`main`, belum tagged, dan belum deployed. Production tetap source
+8.3, dan asumsi environment lokal pada gate CI. Source sudah di-fast-forward ke
+`main` dan ditag immutable `v1.0.0-rc.3`. GitHub Actions `main` exact-SHA run
+`31292840016` lulus pada keempat job; prerelease source/storefront/admin,
+manifest, dan checksum menunjuk SHA yang sama. Status `LOCAL_VALIDATED /
+MAINLINE_SYNCED / CI_VERIFIED / RELEASE_CANDIDATE / NOT_DEPLOYED`. Production
+tetap source
 `33637aa9f6f79037a2555c3b0fc0d93b700450dc` melalui release
 `20260730-33637aa`.
 

@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-09 - COYABAG R2 mainline dan immutable RC
+
+- Source `264c6ac2ebec33c6471a4c49572ddcdc82b51cf2` di-fast-forward ke
+  `main` dengan provenance utuh dan ditag annotated `v1.0.0-rc.3`.
+- GitHub Actions `main` exact-SHA run `31292840016` lulus pada keempat job.
+  GitHub prerelease memuat source, storefront, admin, manifest, dan checksum;
+  seluruh digest remote cocok dengan artifact lokal.
+- Status `LOCAL_VALIDATED / MAINLINE_SYNCED / CI_VERIFIED /
+  RELEASE_CANDIDATE / NOT_DEPLOYED`. Production tetap
+  `20260730-33637aa`; deployment, provider activation, data mutation, canary,
+  dan commerce activation tidak dilakukan.
+
 ## 2026-08-09 - SagaBook S157-S161 production
 
 - Source `64ed036b514d351f3e537be557d69117badf9d24` aktif sebagai release

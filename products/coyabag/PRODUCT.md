@@ -61,18 +61,21 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 
 - Storefront, API, dan admin sudah live di Hostinger.
 - Scheduler terminal expiry sudah fail-closed dan concurrency-tested.
-- Candidate source `df2853add505814918dfe33128c55938360b8962` merekonsiliasi
+- Release candidate source `264c6ac2ebec33c6471a4c49572ddcdc82b51cf2`
+  merekonsiliasi
   cart tersimpan dengan katalog live setelah API siap, mempertahankan cart saat
   API gagal, dan menahan checkout sebelum verifikasi katalog selesai.
-- Batch A pada candidate tersebut memperbarui CommonMark dan Vite storefront/
+- Batch A pada release candidate tersebut memperbarui CommonMark dan Vite storefront/
   admin serta menutup advisory dependency yang terdeteksi pada baseline.
 - Candidate lulus unit, build, browser desktop/mobile, Laravel, npm/Composer
   audit, dan secret scan lokal; branch remote sudah sinkron.
-- GitHub Actions exact-SHA run `31269460133` lulus pada seluruh empat job:
+- GitHub Actions `main` exact-SHA run `31292840016` lulus pada seluruh empat job:
   Frontend QA, Backend QA, MySQL 8 Integration, dan Cart Browser QA.
-- Candidate belum berada di `main`, belum memiliki tag RC, dan belum deployed.
-- Status candidate `LOCAL_VALIDATED / REMOTE_BRANCH_SYNCED / CI_VERIFIED`;
-  promotion tetap fail-closed sampai memperoleh persetujuan terpisah.
+- Source sudah fast-forward ke `main` tanpa history rewrite dan ditag immutable
+  sebagai `v1.0.0-rc.3`. GitHub prerelease memuat source, storefront, admin,
+  manifest, serta checksum yang menunjuk exact SHA yang sama.
+- Status `LOCAL_VALIDATED / MAINLINE_SYNCED / CI_VERIFIED /
+  RELEASE_CANDIDATE / NOT_DEPLOYED`.
 - Commerce nyata tetap ditahan oleh blocker provider/operasional.
 
 ## Blocker business activation
