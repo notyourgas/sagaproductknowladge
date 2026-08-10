@@ -1,6 +1,6 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 10 Agustus 2026 21:20 WIB
+Evidence cut-off: 10 Agustus 2026 21:18 WIB
 
 Source integrasi S170 sudah `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
 sebagai release immutable `20260809153848-f69170a`, dengan release S166
