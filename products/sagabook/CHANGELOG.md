@@ -1,5 +1,24 @@
 # SagaBook Changelog
 
+## 2026-08-11 - Payment/status combined exit S183 candidate
+
+- Gap payment/status roadmap `CONFIRMED`; route, schema, permission, provider,
+  dan workflow pembayaran tidak berubah.
+- Before: bukti payment tersebar dan full backend tertahan baseline ukuran
+  controller. After: satu runner fail-fast mengikat lifecycle, exactly-once,
+  replay/transisi, reconciliation, stale, permission/tenant-negative, serta
+  recovery browser; notification publik dipisahkan ke service dan controller
+  kembali di bawah batas 900 baris.
+- Source `12fd512ced523a41167b9b68cfad55eaa3b04e4e` pada branch
+  `codex/s183-sagabook-payment-exit-gate` sudah dipush. Combined exit 301/301
+  (2.245 assertion), focused 309/309 (2.349), full backend 1.026/1.026 (11.626),
+  audit database disposable 100/100, build/design 26/0, Pint/diff, serta npm
+  dan OSV nol advisory.
+- Status `EXIT_GATE_ACCEPTED / SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / UIUX_VALIDATED / INTEGRATION_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Production tetap S170; tidak
+  ada deploy, provider canary, credential/data customer, atau activation.
+
 ## 2026-08-11 - Template publish recovery S182 candidate
 
 - Gap roadmap template existing `CONFIRMED`; preset, sembilan langkah,

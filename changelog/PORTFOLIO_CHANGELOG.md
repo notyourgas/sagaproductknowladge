@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-11 - SagaBook S183 payment/status combined exit
+
+- Satu gate fail-fast kini mengikat payment lifecycle, callback exactly-once,
+  replay/transisi, reconciliation, stale/permission-negative, dan recovery UI.
+- Source `12fd512ced523a41167b9b68cfad55eaa3b04e4e` sudah dipush; combined 301/301,
+  full backend 1.026/1.026, database 100/100, build/browser/accessibility,
+  design, dan audit dependency lulus.
+- Status `EXIT_GATE_ACCEPTED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production SagaBook tetap S170 dan produk SagaDev
+  lain tidak berubah.
+
 ## 2026-08-11 - SagaView S176 backend runtime commit provenance
 
 - Backend marker exact `.release-commit` kini fail-closed dan UAT memeriksanya

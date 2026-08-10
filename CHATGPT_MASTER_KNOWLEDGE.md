@@ -68,6 +68,16 @@ pembayaran, menerima status/reminder, dan mengelola request dari secure booking
 link. Operator mengelola calendar, task, check-in, session, payment,
 reconciliation, report, staff, tenant, dan subscription.
 
+Candidate SagaBook S183 source
+`12fd512ced523a41167b9b68cfad55eaa3b04e4e` mengikat payment/status ke satu
+combined exit fail-fast: exactly-once/replay/transisi callback, reconciliation,
+stale multi-tab, permission/tenant-negative, cancellation, QRIS/transfer, serta
+recovery browser. Transaction, idempotency, audit public-safe, read-after-write,
+database disposable 100/100, full backend, build, accessibility, dan audit
+dependency lulus. Status `EXIT_GATE_ACCEPTED / SECURITY_VALIDATED /
+DATA_INTEGRITY_VALIDATED / UIUX_VALIDATED / INTEGRATION_VALIDATED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S170.
+
 Candidate SagaBook S182 source
 `67a64df3503cde2116666bdeb14cc70c19d61d15` membuat publish template existing
 tahan aktivasi ganda dan retry respons ambigu. Konten yang sama mengembalikan

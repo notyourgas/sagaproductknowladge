@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-11 - SagaBook S183 payment/status combined exit candidate
+
+- Menyinkronkan source `12fd512ced523a41167b9b68cfad55eaa3b04e4e`
+  sebagai combined exit fail-fast untuk payment/status SagaBook.
+- Klasifikasi `CONFIRMED`; combined 301/301, full backend 1.026/1.026,
+  database 100/100, browser/accessibility, build/design, dan audit dependency
+  lulus.
+- Production berubah: tidak. Status `EXIT_GATE_ACCEPTED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; deploy, authenticated UAT, pilot, dan provider
+  canary tetap gate terpisah.
+
 ## 2026-08-11 - SagaView S176 backend runtime provenance
 
 - Menyinkronkan backend source

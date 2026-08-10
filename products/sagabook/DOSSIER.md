@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 11 Agustus 2026 03:21 WIB
+- Updated: 11 Agustus 2026 06:01 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED` untuk workflow yang tercantum di
   [PRODUCT](PRODUCT.md)
@@ -17,6 +17,15 @@ dalam satu dokumen public-safe.
   PRODUCTION_ACTIVATED`
 - Source kumulatif aktif: `f69170a7e61080f90a3bcea7df1f22f5612f0369`,
   release `20260809153848-f69170a`, rollback `20260809083131-5c76735`.
+- Candidate S183 `12fd512ced523a41167b9b68cfad55eaa3b04e4e`
+  menambahkan combined exit payment/status yang fail-fast atas backend,
+  database, build, serta recovery browser. Exactly-once/replay/transisi,
+  reconciliation concurrency, stale multi-tab, permission/tenant-negative,
+  cancellation, QRIS/transfer, keyboard, screen reader, forced-colors,
+  reduced-motion, dan no-overflow dibuktikan kumulatif. Pemisahan service
+  notification publik menurunkan `BookingController` dari 931 menjadi 895 baris
+  tanpa mengubah route, schema, atau workflow. Production tetap S170; deploy,
+  provider canary, authenticated UAT, dan pilot tetap gate terpisah.
 - Candidate S182 `67a64df3503cde2116666bdeb14cc70c19d61d15`
   menambahkan guard sinkron pada tombol draft/publish dan serialisasi publish
   per tenant. Retry konten published yang sama menjadi replay no-op untuk

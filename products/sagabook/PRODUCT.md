@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 11 Agustus 2026 03:21 WIB
+Updated: 11 Agustus 2026 06:01 WIB
 Evidence status: production source and runtime verified
 
 ## Tujuan dokumen
@@ -16,6 +16,18 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
+- Candidate S183 `12fd512ced523a41167b9b68cfad55eaa3b04e4e`
+  mengikat payment/status ke satu combined exit fail-fast: lifecycle pembayaran,
+  callback exactly-once/replay/transisi, reconciliation lock, stale multi-tab,
+  permission/tenant-negative, cancellation, QRIS/transfer recovery, build, dan
+  browser accessibility. Boundary notification publik dipisahkan dari
+  `BookingController` tanpa mengubah route, schema, permission, atau workflow;
+  controller kembali di bawah baseline 900 baris. Combined exit 301/301 (2.245
+  assertion), focused 309/309 (2.349), full backend 1.026/1.026 (11.626), audit
+  database disposable 100/100, build/design 26/0, serta npm/OSV nol advisory.
+  Status `EXIT_GATE_ACCEPTED / SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / UIUX_VALIDATED / INTEGRATION_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S170.
 - Candidate S182 `67a64df3503cde2116666bdeb14cc70c19d61d15`
   membuat publish template existing aman terhadap aktivasi ganda dan retry
   setelah respons ambigu. Payload yang sama mengembalikan profil authoritative

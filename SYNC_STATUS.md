@@ -12,24 +12,23 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-11T05:23:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-11T06:01:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `c2a71f31f218cc39cacec386ecd047bd719609ef` |
-| Informasi terakhir disinkronkan | SagaView S176 backend `a37fe9474f54de01befc308168f42816ba4719d9` dan Studio gate `353293f1285839712c6bfbe6200fc33514440956` mengikat preflight/finalize ke exact runtime backend; status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED` dan production tetap S163/S159. |
+| Baseline sebelum pembaruan | `04e76312bb30947c0eeb8321fcfce42bbf93a559` |
+| Informasi terakhir disinkronkan | SagaBook S183 source `12fd512ced523a41167b9b68cfad55eaa3b04e4e` menutup combined exit payment/status secara lokal; status `EXIT_GATE_ACCEPTED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED` dan production tetap S170. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, fast-forward ke `main`, push, dan remote verification. |
-| Konflik | Tidak ada konflik kanonik; fast-forward mempertahankan SagaBook S182, SagaView S175, dan seluruh histori sebelumnya. |
-| Error | Tidak ada error source atau validator yang diketahui. Runtime production SagaView tidak diubah. |
+| Konflik | Tidak ada konflik kanonik; fast-forward mempertahankan SagaView S176, SagaBook S182, dan seluruh histori sebelumnya. |
+| Error | Tidak ada error source atau validator yang diketahui. Runtime production SagaBook tidak diubah. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/sagaview/PRODUCT.md`
-- `products/sagaview/DOSSIER.md`
-- `products/sagaview/CHANGELOG.md`
-- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
-- `GAPS.md`
 - `SYNC_STATUS.md`
 - `CHANGELOG.md`
 
