@@ -980,6 +980,13 @@ intentional skip, visual 390x844/1440x900, accessibility, build/budget, serta
 audit dependency lulus. Status `UIUX_VALIDATED / SECURITY_VALIDATED /
 QA_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production S163
 tidak berubah.
+S171 mengemas kandidat kumulatif Studio S170 sebagai release rehearsal
+immutable `20260810210515-c52c141` dengan SHA-256
+`dbc9d3fe35521cbb445b77e1aefd4d00c38ccb13b8dee92efd43d2bc71f7e6d7`.
+Clean install, build server/client, budget bundle, smoke route kanonik, switch
+lokal, rollback ke S159, dan preflight production read-only lulus. Status
+`RELEASE_REHEARSAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap
+S163/S159 hingga UAT fisik Windows dan authenticated workspace selesai.
 Harga bulanan: Growth Rp200.000, Pro Rp500.000.
 Growth mencakup 1 device, 50 frame, 3 preset, offline 24 jam, dan 2 GB aset
 frame cloud. Pro mencakup 4 device, 100 frame, 10 preset, offline 168 jam, 10 GB

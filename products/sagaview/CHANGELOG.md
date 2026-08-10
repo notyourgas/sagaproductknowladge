@@ -1,5 +1,22 @@
 # SagaView Changelog
 
+## 2026-08-10 - S171 Studio S170 release rehearsal
+
+- Before: S170 sudah lulus quality gate, tetapi belum mempunyai arsip release
+  immutable, checksum, clean-install build, dan bukti rollback yang terikat ke
+  exact source.
+- After: source S170 dikemas menjadi release `20260810210515-c52c141` dan
+  berhasil melalui verifikasi isi, install bersih, build server/client, smoke
+  route kanonik, switch kandidat, serta rollback lokal ke S159.
+- Evidence: source `c52c1416b7a604509e00a858a606b92f47990dcc`;
+  SHA-256 `dbc9d3fe35521cbb445b77e1aefd4d00c38ccb13b8dee92efd43d2bc71f7e6d7`,
+  361 entry, forbidden content 0, bundle terbesar 299,7 KiB dari batas 450
+  KiB. Preflight production read-only: runtime S163/S159, service aktif,
+  Studio/API 200, rollback tersedia, journal error kosong.
+- Status `RELEASE_REHEARSAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+  Production tidak berubah; UAT fisik Windows dan authenticated workspace
+  tetap wajib sebelum guarded deploy.
+
 ## 2026-08-10 - S170 mobile Support Hub launcher candidate
 
 - Before: launcher `Bantuan` mobile berada di akhir halaman panjang; pada

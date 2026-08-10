@@ -236,6 +236,15 @@ tersebut dan meredaksi response record lama. Studio
    build/budget, serta audit dependency lulus. Status
    `UIUX_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
    IMPLEMENTED_NOT_DEPLOYED`; production S163 tidak berubah.
+   S171 mengikat kandidat kumulatif Studio S170 ke arsip immutable
+   `20260810210515-c52c141` dengan SHA-256
+   `dbc9d3fe35521cbb445b77e1aefd4d00c38ccb13b8dee92efd43d2bc71f7e6d7`.
+   Verifikasi 361 entry tanpa secret/runtime content, clean install, build
+   server/client, budget bundle, smoke route kanonik, switch lokal, dan
+   rollback ke S159 lulus. Preflight production read-only tetap menunjukkan
+   S163/S159 sehat dan rollback tersedia. Status
+   `RELEASE_REHEARSAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production belum
+   diubah karena UAT fisik Windows dan authenticated workspace masih residual.
    S165 source `fcaf1547cc7c5765d7ed0a30a4d8e3ea69df3006`
    merapikan Changelog Owner menjadi arsip yang dapat dicari dan difilter,
    dengan tepat satu detail terbuka, empty-state yang dapat dipulihkan, serta

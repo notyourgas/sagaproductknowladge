@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-08-10 - SagaView S171 Studio release rehearsal
+
+- Kandidat kumulatif Studio S170 kini mempunyai arsip immutable, checksum,
+  clean-install build, smoke route, serta bukti switch dan rollback lokal.
+- Source `c52c1416b7a604509e00a858a606b92f47990dcc`, release rehearsal
+  `20260810210515-c52c141`, dan bundle 299,7/450 KiB terverifikasi.
+- Status `RELEASE_REHEARSAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+  tetap S163/S159 dan menunggu UAT fisik/authenticated sebelum guarded deploy.
+
 ## 2026-08-10 - SagaView S170 mobile Support Hub launcher
 
 - Launcher bantuan mobile kini fixed di dalam viewport dan menghormati

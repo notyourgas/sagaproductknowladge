@@ -1,6 +1,20 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 10 Agustus 2026 20:30 WIB
+Evidence cut-off: 10 Agustus 2026 21:22 WIB
+
+Studio release rehearsal cut-off: 10 Agustus 2026 21:22 WIB. S171 mengemas
+kandidat kumulatif Studio S170 source
+`c52c1416b7a604509e00a858a606b92f47990dcc` menjadi arsip immutable
+`20260810210515-c52c141` dengan SHA-256
+`dbc9d3fe35521cbb445b77e1aefd4d00c38ccb13b8dee92efd43d2bc71f7e6d7`.
+Arsip 361 entry bebas `.env`, `.git`, dan `node_modules`; install bersih,
+build server/client, bundle budget 299,7/450 KiB, smoke route kanonik, switch
+kandidat, serta rollback lokal ke Studio S159 lulus. Preflight production
+read-only membuktikan runtime tetap backend S163/Studio S159, lima service
+aktif, Studio/API HTTP 200, sekitar 33 GB disk tersedia, masing-masing dua
+target rollback, dan journal error 15 menit kosong. Status
+`RELEASE_REHEARSAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; UAT fisik Windows
+dan authenticated workspace tetap residual sehingga production tidak diubah.
 
 Release rehearsal cut-off: 10 Agustus 2026 08:20 WIB. Kandidat kumulatif S163
 backend `f3b07749` dan Studio `6d7083a3` menjalankan tiga siklus disposable
