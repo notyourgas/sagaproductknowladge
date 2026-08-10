@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-10 - SagaBook S175 public booking double-submit feedback
+
+- Tahap Bayar kini memberi status proses yang aksesibel dan acceptance
+  membuktikan dua aktivasi cepat hanya memanggil submit booking serta sesi
+  pembayaran masing-masing sekali.
+- Source `27ea36a2724adebe996006882a465364543d78c9` sudah dipush. Backend
+  12/12 (162 assertion), race 5/5, Playwright 4/4 lintas tiga viewport,
+  build/design, dan audit dependency lulus.
+- Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / UIUX_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production SagaBook tetap S170.
+
 ## 2026-08-10 - SagaView S165 Owner Changelog navigation
 
 - Changelog Owner kini dapat dicari/difilter, hanya membuka satu detail, punya

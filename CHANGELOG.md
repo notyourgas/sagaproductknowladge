@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-10 - SagaBook S175 public booking double-submit candidate
+
+- Menyinkronkan source `27ea36a2724adebe996006882a465364543d78c9` sebagai
+  kandidat UI/UX yang membuktikan satu write booking dan satu sesi pembayaran
+  meskipun CTA Bayar diaktifkan dua kali dengan cepat.
+- Klasifikasi `CONFIRMED`; gate backend 12/12 (162 assertion), race 5/5,
+  Playwright 4/4 tiga viewport, build/design, dan audit dependency lulus.
+- Production berubah: tidak. Status `SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / UIUX_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`.
+
 ## 2026-08-10 - SagaView S165 Owner Changelog navigation candidate
 
 - Menyinkronkan source `fcaf1547cc7c5765d7ed0a30a4d8e3ea69df3006` sebagai

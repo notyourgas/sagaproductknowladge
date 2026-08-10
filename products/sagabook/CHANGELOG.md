@@ -1,5 +1,21 @@
 # SagaBook Changelog
 
+## 2026-08-10 - Public booking double-submit feedback S175 candidate
+
+- Mandat Andreas `CONFIRMED`: negative/recovery storefront dilanjutkan tanpa
+  mengubah workflow universal.
+- Before: guard mutation belum mempunyai bukti browser dua aktivasi cepat dan
+  belum ada announcement proses khusus screen reader. After: dua klik cepat
+  menghasilkan tepat satu submit booking dan satu sesi pembayaran; tombol
+  disabled/`aria-busy`, status proses diumumkan, serta CTA aman untuk
+  forced-colors dan reduced-motion.
+- Source `27ea36a2724adebe996006882a465364543d78c9` pada branch
+  `codex/s175-sagabook-storefront-double-submit` sudah dipush. Backend 12/12
+  (162 assertion), race 5/5, Playwright 4/4 termasuk regresi S154/S174 lintas
+  tiga viewport, build/design 26/0, dan audit dependency lulus.
+- Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / UIUX_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Production tetap S170.
+
 ## 2026-08-10 - Public booking ambiguous-submit recovery S174 candidate
 
 - Mandat Andreas `CONFIRMED`: negative/recovery storefront dikerjakan sebagai

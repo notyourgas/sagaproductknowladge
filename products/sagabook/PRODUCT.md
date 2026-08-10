@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 10 Agustus 2026 10:25 WIB
+Updated: 10 Agustus 2026 11:20 WIB
 Evidence status: production source and runtime verified
 
 ## Tujuan dokumen
@@ -16,6 +16,14 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
+- Candidate S175 `27ea36a2724adebe996006882a465364543d78c9`
+  membuktikan dua aktivasi cepat hanya membentuk satu submit booking dan satu
+  sesi pembayaran. Tombol dikunci selama write, status proses diumumkan ke
+  screen reader, dan CTA aman untuk reduced-motion serta forced-colors. Gate
+  backend 12/12 (162 assertion), race 5/5, Playwright 4/4 lintas tiga viewport,
+  build/design 26/0, dan audit dependency lulus. Status `SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / UIUX_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap S170.
 - Candidate S174 `73f0ec20c44ded9fb9f31c2bbb134107ad160265`
   membuat retry submit booking publik aman ketika respons pertama terputus.
   Pilihan customer tetap tersimpan, aksi retry dapat diakses, dan dua request

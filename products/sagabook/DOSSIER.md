@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 10 Agustus 2026 10:25 WIB
+- Updated: 10 Agustus 2026 11:20 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED` untuk workflow yang tercantum di
   [PRODUCT](PRODUCT.md)
@@ -17,6 +17,12 @@ dalam satu dokumen public-safe.
   PRODUCTION_ACTIVATED`
 - Source kumulatif aktif: `f69170a7e61080f90a3bcea7df1f22f5612f0369`,
   release `20260809153848-f69170a`, rollback `20260809083131-5c76735`.
+- Candidate S175 `27ea36a2724adebe996006882a465364543d78c9`
+  menutup gap double-submit di tahap Bayar. Dua klik cepat hanya memanggil
+  write booking dan create-session masing-masing sekali; customer mendapat
+  status proses yang terbaca screen reader dan CTA stabil pada forced-colors
+  serta reduced-motion. Booking-status read-after-write memakai database
+  disposable. Production belum berubah.
 - Candidate S174 `73f0ec20c44ded9fb9f31c2bbb134107ad160265`
   menutup ambiguity saat write booking publik sudah tersimpan tetapi respons
   jaringan tidak sampai ke customer. Storefront mempertahankan state dan
@@ -72,7 +78,10 @@ dalam satu dokumen public-safe.
   dependency, backup/restore, public smoke, service health, dan rollback.
   Model, prompt, provider, dan KB tidak diubah oleh release ini.
 
-### Candidate S174-S171, release S170, dan histori terkait
+### Candidate S175-S171, release S170, dan histori terkait
+- S175 `27ea36a2` membuktikan repeated activation pada Bayar tidak melewati
+  guard mutation. Gate Playwright 4/4, backend 12/12 (162 assertion), race
+  5/5, build/design, dan audit dependency lulus.
 - S174 `73f0ec20` memberi recovery aktual ketika respons submit booking hilang:
   alert mempertahankan pilihan dan aksi keyboard 44 px mengulang request yang
   sama. Backend me-replay hasil authoritative, menolak payload berbeda, dan
