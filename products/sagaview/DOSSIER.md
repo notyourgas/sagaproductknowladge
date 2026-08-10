@@ -76,6 +76,12 @@ SagaView berdasarkan runtime production aktif.
   bersama, serta tetap menolak payment/provider/expiry/callback/QRIS pada
   namespace SagaVIEW. Tiga rehearsal, forced rollback, cleanup, dan audit
   baseline production lulus; production belum berubah.
+- S163 guarded production release: `PRODUCTION_DEPLOYED`; backend
+  `f3b07749` / `20260810091159-f3b0774`, Studio `6d7083a3` /
+  `20260810091159-6d7083a`. Rollback backend `20260809162045-13a94c5` dan
+  Studio `20260809162045-5eeef36` tersedia. Schema additive aktif, data lama
+  tetap utuh, route payment SagaVIEW 405, layanan dan smoke hijau.
+  `PRODUCTION_ACTIVATED` dan `BUSINESS_READY` belum diklaim.
 - Acceptance integrasi feature-by-feature: ledger dimulai konservatif dan
   belum membuktikan coverage penuh; lihat
   [Feature Coverage Ledger](FEATURE_COVERAGE_LEDGER.md).

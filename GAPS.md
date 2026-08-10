@@ -286,11 +286,13 @@ ketika keputusan atau release baru menutup gap.
   `mark-paid` settlement platform bersama; route SagaVIEW sendiri sudah tidak
   tersedia. S163 source `f3b07749` sudah menutup false-positive dengan kontrak
   route khusus namespace SagaVIEW; manifest aktual, tiga rehearsal, forced
-  rollback, cleanup, dan audit production lulus. Status kini
-  `RELEASE_REHEARSAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
-  Residual berikutnya: guarded production deployment, authenticated Owner dua
+  rollback, cleanup, dan audit production lulus. Guarded deploy kemudian aktif
+  sebagai backend `20260810091159-f3b0774` dan Studio
+  `20260810091159-6d7083a`; backup, migration, live rollback-cycle, data
+  preservation, route contract, service, dan smoke lulus. Status
+  `PRODUCTION_DEPLOYED`. Residual berikutnya: authenticated Owner dua
   browser pada workspace nyata, failure/retry jaringan, dan customer export
-  parity. Production belum berubah.
+  parity sebelum `PRODUCTION_ACTIVATED / BUSINESS_READY`.
 
 - `IMPLEMENTED_NOT_DEPLOYED`: S159 menetapkan SagaVIEW estimate-only. Backend
   `38c4221e` dan Studio `6d7083a3` menghapus payment hold, mark-paid,

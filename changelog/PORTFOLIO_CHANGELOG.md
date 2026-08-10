@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-10 - SagaView S163 production deployment
+
+- Backend `f3b07749` / `20260810091159-f3b0774` dan Studio `6d7083a3` /
+  `20260810091159-6d7083a` aktif di production dengan kontrak estimate-only;
+  pembayaran tetap di luar aplikasi oleh staf.
+- Backup terenkripsi, rehearsal database tiga kali, forced rollback, migration,
+  atomic switch, live rollback-cycle, data preservation, route contract,
+  service/header/smoke/queue/journal, serta cleanup lulus. Rollback lama tersedia.
+- Status `PRODUCTION_DEPLOYED`; belum `PRODUCTION_ACTIVATED` atau
+  `BUSINESS_READY` sampai authenticated Owner/Studio UAT selesai.
+
 ## 2026-08-10 - SagaBook S173 nine-step booking progress
 
 - Indikator booking customer sekarang menampilkan sembilan langkah universal,

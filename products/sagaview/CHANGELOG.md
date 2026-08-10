@@ -1,5 +1,24 @@
 # SagaView Changelog
 
+## 2026-08-10 - S163 guarded production deployment
+
+- Before: backend S163 dan Studio S159 sudah staging-ready, sementara runtime
+  production masih memakai backend `20260809162045-13a94c5` dan Studio
+  `20260809162045-5eeef36`.
+- After: backend `f3b077499c356e1fff6f6a9095116cd9e9446ead` aktif sebagai
+  `20260810091159-f3b0774`; Studio
+  `6d7083a3e9ae8e91b948622f24485a4226748344` aktif sebagai
+  `20260810091159-6d7083a`. SagaVIEW tetap estimate-only dan pembayaran tetap
+  ditangani staf di lokasi.
+- Evidence: backup terenkripsi/checksum, tiga migrate-rollback-reapply,
+  forced-failure rollback, tiga migration production, atomic switch, live
+  rollback-cycle, snapshot data, contract route, service, security header,
+  HTTP smoke, queue, journal, dan cleanup lulus. Schema guard aktif, 32 sesi dan
+  0 redemption tetap, payment mark-paid SagaVIEW 405.
+- Status `PRODUCTION_DEPLOYED`. Rollback backend
+  `20260809162045-13a94c5` dan Studio `20260809162045-5eeef36` tersedia;
+  authenticated UAT masih menahan `PRODUCTION_ACTIVATED / BUSINESS_READY`.
+
 ## 2026-08-10 - S163 release route gate scoped
 
 - Before: acceptance release mencari `mark-paid` secara global sehingga route

@@ -29,6 +29,16 @@ provider SagaVIEW tetap tidak ada/fail-closed. Focused 10/12, kontrak/API
 rollback, dan audit production lulus. Composer cache lokal tidak menemukan
 advisory, tetapi refresh Packagist timeout. Production tidak berubah.
 
+Production cut-off: 10 Agustus 2026 09:16 WIB. Backend S163
+`f3b07749` / `20260810091159-f3b0774` dan Studio S159
+`6d7083a3` / `20260810091159-6d7083a` aktif. Backup terenkripsi, tiga
+rehearsal, forced rollback, tiga migration, atomic switch, live rollback-cycle,
+snapshot data, route contract, service/header/smoke/queue/journal, dan cleanup
+lulus. Schema guard 1/1/2, data agregat tetap 32 sesi/0 redemption, route
+mark-paid SagaVIEW 405, dan rollback lama tersedia. Status
+`PRODUCTION_DEPLOYED`; authenticated UAT residual sebelum
+`PRODUCTION_ACTIVATED / BUSINESS_READY`.
+
 ## Tujuan
 
 Mencatat bukti UI/UX dan integrasi SagaView secara fitur-per-fitur sambil menjaga kontrak privacy dan local-first.

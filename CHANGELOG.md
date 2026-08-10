@@ -12,6 +12,23 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-10
 
+### SagaView S163 guarded production deployment
+
+- Ringkasan: backend S163 dan Studio estimate-only S159 diaktifkan melalui
+  guarded deploy dengan rollback lama tetap tersedia.
+- Klasifikasi `CONFIRMED`; backend
+  `f3b077499c356e1fff6f6a9095116cd9e9446ead` /
+  `20260810091159-f3b0774`, Studio
+  `6d7083a3e9ae8e91b948622f24485a4226748344` /
+  `20260810091159-6d7083a`.
+- Gate: backup/checksum, tiga rehearsal, forced rollback, migration, atomic
+  switch, live rollback-cycle, snapshot data, route contract, service/header/
+  smoke/queue/journal, dan cleanup lulus.
+- Production berubah: ya. Status `PRODUCTION_DEPLOYED`; authenticated UAT masih
+  menahan `PRODUCTION_ACTIVATED / BUSINESS_READY`.
+- File knowledge: PRODUCT, DOSSIER, CHANGELOG, FEATURE_COVERAGE_LEDGER,
+  portfolio/root changelog, master knowledge, GAPS, dan SYNC_STATUS.
+
 ### SagaBook S173 universal booking progress candidate
 
 - Ringkasan: progress customer kini memakai sembilan langkah kanonik yang sama

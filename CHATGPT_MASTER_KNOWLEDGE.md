@@ -869,6 +869,12 @@ callback/QRIS SagaVIEW tetap fail-closed. Full SagaVIEW 189/1.994, kontrak/API
 48/661, tiga rehearsal dan forced rollback lulus; production tidak berubah.
 Status `RELEASE_REHEARSAL_VALIDATED / STAGING_READY /
 IMPLEMENTED_NOT_DEPLOYED`.
+Guarded deploy S163 kemudian mengaktifkan backend sebagai
+`20260810091159-f3b0774` dan Studio estimate-only sebagai
+`20260810091159-6d7083a`. Backup, tiga rehearsal database, forced rollback,
+live rollback-cycle, snapshot data, route contract, service/header/smoke/
+queue/journal, dan cleanup lulus. Status `PRODUCTION_DEPLOYED`; authenticated
+UAT masih diperlukan sebelum `PRODUCTION_ACTIVATED / BUSINESS_READY`.
 Harga bulanan: Growth Rp200.000, Pro Rp500.000.
 Growth mencakup 1 device, 50 frame, 3 preset, offline 24 jam, dan 2 GB aset
 frame cloud. Pro mencakup 4 device, 100 frame, 10 preset, offline 168 jam, 10 GB
