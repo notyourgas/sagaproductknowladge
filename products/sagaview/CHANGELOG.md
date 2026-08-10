@@ -1,5 +1,25 @@
 # SagaView Changelog
 
+## 2026-08-11 - S176 backend runtime commit provenance
+
+- Klasifikasi: `CONFIRMED`.
+- Status: `QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
+- Before: UAT mengunci exact Git candidate dan build Studio, tetapi backend
+  lama pada URL yang sama masih dapat lolos karena hanya HTTP health yang
+  diperiksa.
+- After: backend menyediakan marker read-only/no-cache
+  `/api/sagadev/runtime-provenance` dari `.release-commit`, fail-closed 503
+  bila invalid; preflight/finalize memeriksa product+SHA dan schema evidence v4
+  mencegah reuse evidence lama.
+- Dampak: evidence fisik terikat ke exact runtime Studio dan backend tanpa
+  mengekspos foto/path, tenant/device/session, credential, atau data customer.
+- Provenance: backend `a37fe9474f54de01befc308168f42816ba4719d9`;
+  Studio gate `353293f1285839712c6bfbe6200fc33514440956`.
+- Evidence: backend 987/987 dan 11.433 assertion; Studio 202/202; exact-SHA
+  runtime HTTP 200; build 299,7/450 KiB; audit dependency nol vulnerability.
+- Residual: physical Windows/printer UAT dan authenticated Owner/Studio UAT.
+
 ## 2026-08-11 - S175 Studio runtime commit provenance
 
 - Before: worktree/remote sudah exact, tetapi runtime Studio hanya diwajibkan

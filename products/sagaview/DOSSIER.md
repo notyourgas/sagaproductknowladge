@@ -657,6 +657,21 @@ LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production, backend, foto/path,
 output, metadata cloud, dan kontrak pembayaran off-app tidak berubah. Marker
 exact runtime backend masih residual.
 
+Candidate S176 backend source
+`a37fe9474f54de01befc308168f42816ba4719d9` menutup gap identitas runtime
+backend. Route read-only/no-cache `/api/sagadev/runtime-provenance` membaca
+marker immutable `.release-commit`, mengembalikan hanya produk dan SHA, serta
+fail-closed HTTP 503 saat marker hilang atau tidak valid. Studio gate source
+`353293f1285839712c6bfbe6200fc33514440956` memeriksa marker pada preflight
+dan finalize serta menaikkan schema evidence ke v4. Focused backend 11/11,
+full backend 987/987 dengan 11.433 assertion, Studio 202/202, exact-SHA runtime
+HTTP 200, parser/format/lint/typecheck, build/budget 299,7/450 KiB, dan audit
+dependency nol vulnerability lulus. Status `QA_VALIDATED /
+SECURITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production,
+database, foto/path, metadata cloud, dan pembayaran off-app tidak berubah.
+Residual sekarang adalah UAT fisik Windows/printer dan authenticated
+Owner/Studio.
+
 Changelog Studio candidate sekarang mengutamakan release terbaru, menyediakan
 pencarian, filter status, enam batch versi, satu detail terbuka, empty/reset
 recovery, dan CTA kembali ke Session. Source kumulatif `2bb868f` juga menutup

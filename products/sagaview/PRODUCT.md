@@ -278,6 +278,16 @@ tersebut dan meredaksi response record lama. Studio
     build/budget, dan audit dependency lulus. Status `QA_VALIDATED /
     SECURITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
     production dan data customer tidak berubah. Marker backend masih residual.
+    S176 backend source `a37fe9474f54de01befc308168f42816ba4719d9`
+    menutup residual tersebut melalui marker read-only/no-cache yang hanya
+    mengembalikan produk dan exact `.release-commit`, serta fail-closed 503
+    bila marker tidak valid. Studio gate source
+    `353293f1285839712c6bfbe6200fc33514440956` memverifikasi marker saat
+    preflight dan finalize. Backend 987/987 (11.433 assertion), Studio 202/202,
+    exact-SHA runtime smoke, build/budget, dan audit dependency lulus. Status
+    `QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+    IMPLEMENTED_NOT_DEPLOYED`; production, database, metadata, dan payment
+    off-app tidak berubah. Residual hanya UAT fisik/authenticated.
    S165 source `fcaf1547cc7c5765d7ed0a30a4d8e3ea69df3006`
    merapikan Changelog Owner menjadi arsip yang dapat dicari dan difilter,
    dengan tepat satu detail terbuka, empty-state yang dapat dipulihkan, serta
@@ -300,7 +310,7 @@ Menjadi ringkasan fakta kanonik SagaView. Detail lengkap berada di
 Fakta release di dokumen ini mengacu pada exact source dan runtime production
 yang diverifikasi sampai 11 Agustus 2026. Runtime aktif memakai backend S163
 `f3b07749` dan Studio estimate-only S159 `6d7083a3`; kandidat pascaproduksi
-S164-S175 belum dideploy.
+S164-S176 belum dideploy.
 
 ## Status production terbaru
 

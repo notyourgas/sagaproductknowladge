@@ -466,9 +466,11 @@ ketika keputusan atau release baru menutup gap.
   Harness S172 source `1a6d1d0b7ed7959321c902d7d561938642efcee0`
   sudah mengikat exact candidate dan 14 gate tersebut secara fail-closed;
   S175 source `ab1d884a77872869f64a0b5c724940b2643f4f50` juga sudah
-  mengikat respons runtime Studio ke exact build commit. Marker exact runtime
-  backend belum tersedia dan tetap menjadi gap release,
-  residual sekarang adalah eksekusi UAT fisik dengan dataset sintetis,
+  mengikat respons runtime Studio ke exact build commit. S176 backend source
+  `a37fe9474f54de01befc308168f42816ba4719d9` dan Studio gate source
+  `353293f1285839712c6bfbe6200fc33514440956` sudah menutup marker exact
+  runtime backend secara fail-closed. Residual sekarang hanya eksekusi UAT
+  fisik dengan dataset sintetis,
   operator/reviewer sign-off, dan authenticated workspace nyata.
 
 - `NEEDS CONFIRMATION`: `DEC-038` aktif pada backend

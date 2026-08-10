@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-11 - SagaView S176 backend runtime commit provenance
+
+- Backend marker exact `.release-commit` kini fail-closed dan UAT memeriksanya
+  saat preflight/finalize; evidence v4 tidak dapat memakai ulang bukti lama.
+- Backend source `a37fe9474f54de01befc308168f42816ba4719d9` dan Studio gate
+  `353293f1285839712c6bfbe6200fc33514440956`; 987 backend tests, 202 Studio
+  tests, exact runtime smoke, build/budget, dan audit dependency lulus.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production SagaView,
+  database, metadata, payment off-app, dan produk lain tidak berubah.
+
 ## 2026-08-11 - SagaView S175 Studio runtime commit provenance
 
 - Preflight/finalize kini membuktikan build Studio hidup berasal dari exact

@@ -1057,6 +1057,15 @@ server lama tidak lagi cukup. Exact-commit runtime smoke, focused 9/9, unit
 audit lulus. Status `QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
 IMPLEMENTED_NOT_DEPLOYED`; production tetap S163/S159 dan marker backend masih
 residual.
+S176 backend source `a37fe9474f54de01befc308168f42816ba4719d9`
+menutup residual marker backend melalui endpoint read-only/no-cache yang
+membaca exact `.release-commit` dan fail-closed 503 bila invalid. Studio gate
+source `353293f1285839712c6bfbe6200fc33514440956` memeriksa product+SHA saat
+preflight/finalize dan memakai evidence v4. Backend 987/987 (11.433 assertion),
+Studio 202/202, exact runtime smoke, build/budget, serta audit dependency lulus.
+Status `QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; production tetap S163/S159. Residual adalah UAT
+fisik Windows/printer dan authenticated Owner/Studio.
 Harga bulanan: Growth Rp200.000, Pro Rp500.000.
 Growth mencakup 1 device, 50 frame, 3 preset, offline 24 jam, dan 2 GB aset
 frame cloud. Pro mencakup 4 device, 100 frame, 10 preset, offline 168 jam, 10 GB

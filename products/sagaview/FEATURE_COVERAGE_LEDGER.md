@@ -1,6 +1,20 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 11 Agustus 2026 04:13 WIB
+Evidence cut-off: 11 Agustus 2026 05:23 WIB
+
+Backend runtime-provenance cut-off: 11 Agustus 2026 05:23 WIB. S176 backend
+source `a37fe9474f54de01befc308168f42816ba4719d9` menyediakan marker
+read-only/no-cache `/api/sagadev/runtime-provenance` yang membaca exact
+`.release-commit`, fail-closed HTTP 503 ketika marker hilang/tidak valid, dan
+tidak memuat data tenant/device/session/foto/path. S176 Studio gate source
+`353293f1285839712c6bfbe6200fc33514440956` mengikat preflight/finalize ke
+marker backend tersebut; schema evidence v4 menolak reuse evidence lama.
+Focused backend 11/11, full backend 987/987 dengan 11.433 assertion, Studio
+202/202, exact-SHA runtime HTTP 200, parser/format/lint/typecheck,
+build/budget 299,7/450 KiB, serta audit dependency nol vulnerability lulus.
+Status `QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; production tetap S163/S159. Residual kini UAT fisik
+Windows/printer dan authenticated Owner/Studio.
 
 Studio runtime-provenance cut-off: 11 Agustus 2026 04:13 WIB. S175 source
 `ab1d884a77872869f64a0b5c724940b2643f4f50` menyematkan exact source
@@ -13,7 +27,7 @@ Playwright relevan 19 pass/1 intentional skip, parser, format/lint/typecheck,
 build/budget 299,7/450 KiB, serta audit dependency nol vulnerability lulus.
 Status `QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
 IMPLEMENTED_NOT_DEPLOYED`; production tetap S163/S159. Marker exact backend
-dan UAT fisik/authenticated masih residual.
+ditutup S176; UAT fisik/authenticated masih residual.
 
 UAT remote-provenance cut-off: 11 Agustus 2026 03:10 WIB. S174 source
 `691999568651118fbb82cc7124c563d10e4f3058` mengikat preflight dan
