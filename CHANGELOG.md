@@ -1,5 +1,15 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-10 - SagaBook S176 cancelled payment recovery candidate
+
+- Menyinkronkan source `d62b9d6edbc29da6660b13fc03ce23a6f2a2c1ad`
+  sebagai kandidat recovery QRIS/transfer saat booking dibatalkan operator.
+- Klasifikasi `CONFIRMED`; backend/read-after-write, Playwright lintas tiga
+  viewport, expiry regression, build/design, dan audit dependency lulus.
+- Production berubah: tidak. Status `SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / UIUX_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`.
+
 ## 2026-08-10 - SagaView S167 long gallery filter candidate
 
 - Menyinkronkan source `7ba3be61d3f0141bc2b5524d86b6bcabe11ae28e`

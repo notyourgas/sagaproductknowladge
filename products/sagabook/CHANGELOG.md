@@ -1,5 +1,23 @@
 # SagaBook Changelog
 
+## 2026-08-10 - Cancelled payment recovery S176 candidate
+
+- Mandat Andreas `CONFIRMED`: negative/recovery storefront dilanjutkan sebagai
+  satu vertical slice tanpa mengubah workflow universal.
+- Before: booking yang dibatalkan operator tanpa timestamp hold dapat tetap
+  menampilkan QR atau form transfer lama. After: polling/focus menyimpan status
+  authoritative, menghapus bukti lokal, menutup semua tindakan pembayaran, dan
+  menampilkan alasan pembatalan serta satu CTA booking baru.
+- Validasi nonpayable dipindahkan sebelum redirect transfer manual sehingga
+  create-session booking batal mengembalikan 409 `booking_not_payable`.
+- Source `d62b9d6edbc29da6660b13fc03ce23a6f2a2c1ad` pada branch
+  `codex/s176-sagabook-booking-cancel-recovery` sudah dipush. Backend 6/6 (49
+  assertion), focused read-after-write 1/1 (11), public/expiry contract 2/2,
+  Playwright 5/5, build/design 26/0, dan npm/Composer audit lulus.
+- Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / UIUX_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Production tetap S170; tidak
+  ada migration, data customer, provider canary, atau deploy.
+
 ## 2026-08-10 - Public booking double-submit feedback S175 candidate
 
 - Mandat Andreas `CONFIRMED`: negative/recovery storefront dilanjutkan tanpa

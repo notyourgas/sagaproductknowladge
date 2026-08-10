@@ -68,6 +68,16 @@ pembayaran, menerima status/reminder, dan mengelola request dari secure booking
 link. Operator mengelola calendar, task, check-in, session, payment,
 reconciliation, report, staff, tenant, dan subscription.
 
+Candidate SagaBook S176 source
+`d62b9d6edbc29da6660b13fc03ce23a6f2a2c1ad` menutup stale payment setelah
+pembatalan operator. QRIS dan transfer manual menyimpan status authoritative,
+menutup tindakan lama, membuang bukti lokal, dan memberi recovery booking baru;
+create-session transfer manual yang batal ditolak 409 sebelum redirect. Backend
+6/6 (49 assertion), focused read-after-write 1/1 (11), Playwright 5/5,
+build/design, dan audit dependency lulus. Status `SECURITY_VALIDATED /
+DATA_INTEGRITY_VALIDATED / UIUX_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; production tetap S170.
+
 Candidate SagaBook S175 source
 `27ea36a27a22de165758962be307ab4cdd0e125a` membuat tahap Bayar tahan dua
 aktivasi cepat: tombol terkunci selama write, status proses diumumkan ke screen

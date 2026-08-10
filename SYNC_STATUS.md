@@ -12,16 +12,26 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-10T14:08:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-10T14:30:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `b5d9abc1fc3ad638a0f0034ea4ea8b83dc429f28` |
-| Informasi terakhir disinkronkan | SagaView S167 source `7ba3be61d3f0141bc2b5524d86b6bcabe11ae28e` menjaga konteks scroll/fokus galeri virtual 500 foto; status `IMPLEMENTED_NOT_DEPLOYED` dan production tetap S163. |
+| Baseline sebelum pembaruan | `d84c1e7e832c04d5c74ea1fddffc567183049611` |
+| Informasi terakhir disinkronkan | SagaBook S176 source `d62b9d6edbc29da6660b13fc03ce23a6f2a2c1ad` menutup stale QRIS/transfer setelah pembatalan operator; status `IMPLEMENTED_NOT_DEPLOYED` dan production tetap S170. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik kanonik. UAT perangkat Studio nyata untuk 50/200/500 foto, zoom, monitor besar, dan keyboard panjang masih menahan deploy/activation S167. |
-| Error | Tidak ada error source atau validator yang diketahui. Production SagaView dan SagaBook tidak diubah. |
+| Konflik | Tidak ada konflik kanonik. Authenticated Owner/operator UAT, gap pilot, dan gate release masih menahan business readiness/deploy SagaBook. |
+| Error | Tidak ada error source atau validator yang diketahui. Production SagaBook tidak diubah. |
 
 ## File yang berubah pada sinkronisasi ini
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
+
+## File dari sinkronisasi sebelumnya
 
 - `products/sagaview/PRODUCT.md`
 - `products/sagaview/CHANGELOG.md`

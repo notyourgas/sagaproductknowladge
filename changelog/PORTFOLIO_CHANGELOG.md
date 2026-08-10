@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-10 - SagaBook S176 cancelled payment recovery
+
+- QRIS dan transfer manual kini berhenti menawarkan pembayaran saat status
+  authoritative berubah menjadi batal, membuang bukti lokal lama, dan memberi
+  satu CTA booking baru dengan copy yang tidak salah menyebut kedaluwarsa.
+- Backend juga menolak create-session transfer manual yang batal dengan 409
+  sebelum redirect. Source `d62b9d6edbc29da6660b13fc03ce23a6f2a2c1ad`
+  sudah dipush; backend/contract, Playwright 5/5, build/design, dan audit
+  dependency lulus.
+- Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / UIUX_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production SagaBook tetap S170.
+
 ## 2026-08-10 - SagaView S167 long gallery filter context
 
 - Galeri virtual 500 foto kini mengingat posisi masing-masing untuk semua foto

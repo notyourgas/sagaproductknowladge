@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 10 Agustus 2026 12:08 WIB
+Updated: 10 Agustus 2026 14:30 WIB
 Evidence status: production source and runtime verified
 
 ## Tujuan dokumen
@@ -16,6 +16,17 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
+- Candidate S176 `d62b9d6edbc29da6660b13fc03ce23a6f2a2c1ad`
+  menutup pembayaran stale setelah booking dibatalkan operator. QRIS dan
+  transfer manual kini membaca status authoritative, membuang bukti lokal yang
+  tidak lagi aman, menyembunyikan tindakan pembayaran lama, dan menampilkan
+  satu recovery CTA dengan alasan pembatalan yang benar. Backend menolak sesi
+  baru untuk booking transfer manual yang batal sebelum memberi redirect.
+  Backend 6/6 (49 assertion), focused read-after-write 1/1 (11), Playwright
+  cancellation 3/3 dan expiry regression 2/2, build/design 26/0, serta audit
+  dependency lulus. Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
+  UIUX_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+  tetap S170.
 - Candidate S175 `27ea36a27a22de165758962be307ab4cdd0e125a`
   membuktikan dua aktivasi cepat hanya membentuk satu submit booking dan satu
   sesi pembayaran. Tombol dikunci selama write, status proses diumumkan ke
