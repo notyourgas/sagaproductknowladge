@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-10 - SagaBook S177 QRIS initial-load recovery candidate
+
+- Menyinkronkan source `3ede7ccd0388b3dd05284d26efc0ec7e02955507`
+  sebagai kandidat recovery bootstrap QRIS untuk error jaringan dan link tidak
+  valid tanpa membentuk sesi pembayaran prematur.
+- Klasifikasi `CONFIRMED`; Playwright 2/2 lintas tiga viewport, regresi QRIS
+  1/1, kontrak token/tenant 2/2 (32 assertion), build/design, dan audit
+  dependency lulus.
+- Production berubah: tidak. Status `SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / UIUX_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`.
+
 ## 2026-08-10 - SagaView S168 long gallery UAT matrix
 
 - Menyinkronkan test-only source

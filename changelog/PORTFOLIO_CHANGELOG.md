@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-10 - SagaBook S177 QRIS initial-load recovery
+
+- Halaman QRIS kini keluar dari loading buntu saat status booking gagal:
+  gangguan jaringan dapat dicoba ulang, sedangkan link tidak valid memberi
+  arahan aman tanpa membentuk sesi pembayaran.
+- Source `3ede7ccd0388b3dd05284d26efc0ec7e02955507` sudah dipush.
+  Playwright 2/2 lintas tiga viewport, regresi QRIS 1/1, kontrak token/tenant
+  2/2 (32 assertion), build/design, dan audit dependency lulus.
+- Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / UIUX_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production SagaBook tetap S170.
+
 ## 2026-08-10 - SagaView S168 long gallery UAT matrix
 
 - Acceptance test-only memperluas bukti galeri menjadi 50/200/500 foto,

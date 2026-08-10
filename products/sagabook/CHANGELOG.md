@@ -1,5 +1,24 @@
 # SagaBook Changelog
 
+## 2026-08-10 - QRIS initial-load recovery S177 candidate
+
+- Mandat Andreas `CONFIRMED`: negative/recovery storefront dilanjutkan tanpa
+  mengubah workflow universal atau payment provider.
+- Before: status booking yang gagal pada pemuatan pertama meninggalkan customer
+  di teks loading tanpa akhir. After: loading diumumkan ke screen reader,
+  jaringan gagal memberi satu retry 48 px, dan link salah/kedaluwarsa memberi
+  arahan aman untuk meminta link terbaru.
+- Polling status ditahan sampai bootstrap selesai; create-session tidak dipanggil
+  sebelum booking valid, dan dua aktivasi retry cepat hanya membentuk satu sesi.
+- Source `3ede7ccd0388b3dd05284d26efc0ec7e02955507` pada branch
+  `codex/s177-sagabook-qris-load-recovery` sudah dipush. Playwright S177 2/2
+  lintas 390x844, 768x1024, dan 1440x900; regresi recovery QRIS 1/1; kontrak
+  token/tenant 2/2 (32 assertion); build/design 26/0; npm dan Composer OSV nol
+  advisory.
+- Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / UIUX_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Production tetap S170; tidak ada
+  migration, data customer, provider canary, activation, atau deploy.
+
 ## 2026-08-10 - Cancelled payment recovery S176 candidate
 
 - Mandat Andreas `CONFIRMED`: negative/recovery storefront dilanjutkan sebagai

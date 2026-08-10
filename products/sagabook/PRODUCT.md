@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 10 Agustus 2026 14:30 WIB
+Updated: 10 Agustus 2026 16:12 WIB
 Evidence status: production source and runtime verified
 
 ## Tujuan dokumen
@@ -16,6 +16,16 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
+- Candidate S177 `3ede7ccd0388b3dd05284d26efc0ec7e02955507`
+  menutup dead-end saat halaman QRIS pertama kali gagal membaca status booking.
+  Error jaringan kini memberi satu retry yang menjaga link, sedangkan token
+  salah atau kedaluwarsa memberi pesan aman untuk meminta link terbaru. Polling
+  dan create-session tidak berjalan sebelum status booking valid; aktivasi
+  retry ganda tetap membentuk satu sesi. Playwright 2/2 lintas tiga viewport,
+  regresi QRIS 1/1, kontrak token/tenant 2/2 (32 assertion), build/design 26/0,
+  dan audit dependency lulus. Status `SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / UIUX_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap S170.
 - Candidate S176 `d62b9d6edbc29da6660b13fc03ce23a6f2a2c1ad`
   menutup pembayaran stale setelah booking dibatalkan operator. QRIS dan
   transfer manual kini membaca status authoritative, membuang bukti lokal yang
