@@ -885,6 +885,13 @@ Guarded deploy S163 kemudian mengaktifkan backend sebagai
 live rollback-cycle, snapshot data, route contract, service/header/smoke/
 queue/journal, dan cleanup lulus. Status `PRODUCTION_DEPLOYED`; authenticated
 UAT masih diperlukan sebelum `PRODUCTION_ACTIVATED / BUSINESS_READY`.
+S164 source `8fe779491649328a90d91fb0bbbf88a2fcf6290a` membuat Owner
+`Kategori & Harga` lebih ringkas: tepat satu editor/aksi aktif, draft tetap
+aman ketika gagal atau berpindah panel, dan recovery copy tampil dekat aksi.
+Focused Playwright 4/4, viewport 390-3840, ekuivalen zoom 125-200%,
+forced-colors/reduced-motion, build, SagaVIEW 189/1.994, dan audit dependency
+lulus. Status `UIUX_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; production S163 tidak berubah.
 Harga bulanan: Growth Rp200.000, Pro Rp500.000.
 Growth mencakup 1 device, 50 frame, 3 preset, offline 24 jam, dan 2 GB aset
 frame cloud. Pro mencakup 4 device, 100 frame, 10 preset, offline 168 jam, 10 GB

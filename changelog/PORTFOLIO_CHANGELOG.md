@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-10 - SagaView S164 Owner pricing progressive disclosure
+
+- Owner `Kategori & Harga` kini memakai satu editor dan satu aksi simpan aktif;
+  draft tetap aman ketika request gagal atau operator berpindah panel.
+- Source `8fe779491649328a90d91fb0bbbf88a2fcf6290a` sudah dipush. Focused
+  Playwright 4/4, viewport 390-3840, ekuivalen zoom 125-200%, forced-colors,
+  reduced-motion, build, SagaVIEW 189/1.994, dan audit dependency lulus.
+- Status `UIUX_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap S163 dan tidak ada perubahan
+  API/database, pembayaran, foto/path customer, atau SagaBook.
+
 ## 2026-08-10 - SagaBook S174 public booking recovery
 
 - Storefront sekarang dapat memulihkan respons submit booking yang terputus

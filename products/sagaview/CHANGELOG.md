@@ -1,5 +1,22 @@
 # SagaView Changelog
 
+## 2026-08-10 - S164 Owner pricing progressive disclosure candidate
+
+- Before: halaman `Kategori & Harga` membuka form tambah, semua kategori, dan
+  semua frame sekaligus sehingga lima tombol simpan bersaing pada fixture dua
+  kategori dan dua frame.
+- After: hanya satu editor dapat aktif. Ringkasan kategori/frame tetap terlihat,
+  draft kotor bertanda `Belum disimpan`, dan kegagalan API menjaga draft sambil
+  memberi langkah retry di dekat aksi.
+- Evidence: source `8fe779491649328a90d91fb0bbbf88a2fcf6290a`;
+  focused Playwright 4/4 pada 390x844 dan 1440x900; viewport 1280-3840,
+  ekuivalen zoom 125-200%, forced-colors/reduced-motion, target 76 piksel,
+  no-overflow, Vite build, SagaVIEW 189/1.994, npm audit nol vulnerability,
+  dan Composer audit nol advisory lulus.
+- Status `UIUX_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. API, database, foto/path customer, pembayaran,
+  SagaBook, dan production S163 tidak berubah.
+
 ## 2026-08-10 - S163 guarded production deployment
 
 - Before: backend S163 dan Studio S159 sudah staging-ready, sementara runtime

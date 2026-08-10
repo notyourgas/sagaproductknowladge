@@ -179,6 +179,16 @@ tersebut dan meredaksi response record lama. Studio
    publik lulus. Status `PRODUCTION_DEPLOYED`; activation dan business readiness
    tetap menunggu authenticated Owner/Studio UAT pada workspace dan perangkat
    nyata.
+   S164 source `8fe779491649328a90d91fb0bbbf88a2fcf6290a`
+   menyederhanakan halaman Owner `Kategori & Harga`: form tambah, kategori,
+   dan frame kini memakai progressive disclosure dengan tepat satu editor dan
+   satu aksi simpan aktif. Draft yang gagal disimpan atau ditinggalkan ke panel
+   lain tetap utuh, dan pesan menjelaskan kegagalan serta langkah berikutnya.
+   Focused Playwright 4/4 lulus pada 390x844 dan 1440x900; audit viewport
+   1280-3840, ekuivalen zoom 125-200%, forced-colors, reduced-motion, target
+   76 piksel, build, full SagaVIEW 189/1.994, serta audit dependency lulus.
+   Status `UIUX_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+   IMPLEMENTED_NOT_DEPLOYED`; production S163 tidak berubah.
 
 ## Tujuan dokumen
 
@@ -189,9 +199,9 @@ Menjadi ringkasan fakta kanonik SagaView. Detail lengkap berada di
 ## Konteks
 
 Fakta release di dokumen ini mengacu pada exact source dan runtime production
-yang diverifikasi sampai 9 Agustus 2026. S148 sampai S150 sudah aktif
-kumulatif dan pemulihan close/reopen aktif melalui exact source Studio
-`5eeef369` serta backend production-lineage `13a94c5f`.
+yang diverifikasi sampai 10 Agustus 2026. Runtime aktif memakai backend S163
+`f3b07749` dan Studio estimate-only S159 `6d7083a3`; kandidat UI Owner S164
+belum dideploy.
 
 ## Status production terbaru
 
@@ -1171,22 +1181,22 @@ untuk release frontend ini.
 ## Status saat ini
 
 - Delivery: `PRODUCTION_DEPLOYED`.
-- Activation: `PRODUCTION_ACTIVATED`.
+- Activation: `NEEDS CONFIRMATION` melalui authenticated Owner/Studio UAT.
 - Business readiness: `NEEDS CONFIRMATION` untuk penjualan massal; pilot
   terkontrol dan pitch produk dapat dijalankan.
 
 ### Runtime production
 
 - Backend source:
-  `f515dd7a1066b2c6b5244bb1f5bc48d306430768`.
-- Backend release aktif: `20260807023502-f515dd7`.
+  `f3b077499c356e1fff6f6a9095116cd9e9446ead`.
+- Backend release aktif: `20260810091159-f3b0774`.
 - Studio source aktif:
-  `05c5fda07a342d2977d8e6e3d836adb17a84605b`.
-- Studio release aktif: `20260807023502-05c5fda`.
+  `6d7083a3e9ae8e91b948622f24485a4226748344`.
+- Studio release aktif: `20260810091159-6d7083a`.
 - Studio release sebelumnya yang menjadi rollback:
-  `20260807010718-05c5fda`.
+  `20260809162045-5eeef36`.
 - Backend release sebelumnya yang menjadi rollback:
-  `20260807010717-d7542fd`.
+  `20260809162045-13a94c5`.
 - Saga Platform release teramati tetap
   `20260804171621-0ab9d8e`; release editor frame tidak mengubah Platform.
 - Additive migration, encrypted backup, disposable restore, candidate gate,
