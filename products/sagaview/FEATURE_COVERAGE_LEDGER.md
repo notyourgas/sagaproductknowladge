@@ -2,8 +2,8 @@
 
 Evidence cut-off: 10 Agustus 2026 02:18 WIB
 
-Release rehearsal cut-off: 10 Agustus 2026 06:38 WIB. Kandidat kumulatif S162
-backend `063dfc1a` dan Studio `6d7083a3` menjalankan tiga siklus disposable
+Release rehearsal cut-off: 10 Agustus 2026 08:20 WIB. Kandidat kumulatif S163
+backend `f3b07749` dan Studio `6d7083a3` menjalankan tiga siklus disposable
 migrate-rollback-reapply serta satu forced-failure rollback. Principal MySQL
 ephemeral hanya mendapat privilege pada satu schema disposable dan kembali nol
 bersama schema sementaranya; production guard, symlink, schema kandidat, data,
@@ -20,6 +20,14 @@ kandidat kembali 0/0/0, 32 sesi dan 0 redemption tetap, service/HTTP/queue/
 journal serta cleanup database sementara hijau. Status:
 `GUARDED_DEPLOY_BLOCKED / ROLLED_BACK / STAGING_READY /
 IMPLEMENTED_NOT_DEPLOYED`.
+
+Route gate repair cut-off: 10 Agustus 2026 08:20 WIB. S163 mengganti pencarian
+route global dengan kontrak namespace SagaVIEW. Manifest aktual membuktikan
+route settlement platform bersama diizinkan, sedangkan route pembayaran dan
+provider SagaVIEW tetap tidak ada/fail-closed. Focused 10/12, kontrak/API
+48/661, full SagaVIEW 189/1.994, build, audit npm, rehearsal tiga kali, forced
+rollback, dan audit production lulus. Composer cache lokal tidak menemukan
+advisory, tetapi refresh Packagist timeout. Production tidak berubah.
 
 ## Tujuan
 

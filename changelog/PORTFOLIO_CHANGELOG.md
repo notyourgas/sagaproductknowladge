@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-10 - SagaView S163 release route contract
+
+- Source `f3b077499c356e1fff6f6a9095116cd9e9446ead` membatasi acceptance
+  route ke namespace SagaVIEW, sehingga settlement platform bersama tidak lagi
+  menjadi false-positive dan route pembayaran SagaVIEW tetap fail-closed.
+- Focused 10/12, kontrak/API 48/661, full SagaVIEW 189/1.994, build, audit npm,
+  tiga database rehearsal, forced rollback, cleanup, dan production guard
+  lulus. Refresh Composer advisory eksternal timeout; cache lokal bersih.
+- Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
+  RELEASE_REHEARSAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`;
+  production SagaView tetap backend `20260809162045-13a94c5` dan Studio
+  `20260809162045-5eeef36`.
+
 ## 2026-08-10 - SagaBook S172 Task Center primary action and recovery
 
 - Task Cepat kini benar-benar membuat record melalui API/database, dan Task

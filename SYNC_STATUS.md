@@ -12,23 +12,24 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-10T07:25:19+07:00 |
+| Waktu pembaruan terakhir | 2026-08-10T08:20:10+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `547b6e30457870cce2723b8b89f15c44ce81fbf4` |
-| Informasi terakhir disinkronkan | SagaView S162 backend `063dfc1a` dan Studio `6d7083a3`; guarded deploy awal plus dua correction rounds rollback dan tertahan pada acceptance route yang masih mencocokkan settlement platform bersama. |
+| Baseline sebelum pembaruan | `97906ae23102563994751173ecad41476fd8c2f2` |
+| Informasi terakhir disinkronkan | SagaView S163 backend `f3b07749` dan Studio `6d7083a3`; route gate kini scoped ke namespace SagaVIEW dan rehearsal database lengkap lulus. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
 | Konflik | Tidak ada konflik kanonik. Production SagaView tetap backend `20260809162045-13a94c5` dan Studio `20260809162045-5eeef36`; authenticated Owner/Studio UAT tetap terbuka. |
-| Error | `GUARDED_DEPLOY_BLOCKED`: acceptance route perlu di-scope khusus SagaVIEW sebelum retry. |
+| Error | Tidak ada blocker release-harness yang tersisa; refresh advisory Composer eksternal timeout dan authenticated UAT tetap residual. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/sagabook/PRODUCT.md`
-- `products/sagabook/DOSSIER.md`
-- `products/sagabook/CHANGELOG.md`
-- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/DOSSIER.md`
+- `products/sagaview/CHANGELOG.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
 - `SYNC_STATUS.md`
 - `CHANGELOG.md`
 

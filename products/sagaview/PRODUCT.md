@@ -161,9 +161,16 @@ tersebut dan meredaksi response record lama. Studio
    terakhir terlalu luas karena mencocokkan route `mark-paid` milik settlement
    platform bersama; route pembayaran SagaVIEW sendiri sudah tidak tersedia.
    Baseline runtime, 32 sesi, schema, service, HTTP, queue, journal, dan cleanup
-   database sementara terverifikasi pulih. Status delivery tetap
-   `GUARDED_DEPLOY_BLOCKED / ROLLED_BACK / STAGING_READY /
-   IMPLEMENTED_NOT_DEPLOYED`; production belum diaktifkan.
+   database sementara terverifikasi pulih. S163 source
+   `f3b077499c356e1fff6f6a9095116cd9e9446ead` mengganti pencarian global itu
+   dengan kontrak route berversi yang hanya memeriksa namespace produk
+   SagaVIEW. Route settlement platform bersama tetap sah, sementara route
+   payment/provider/expiry/callback/QRIS SagaVIEW tetap fail-closed. Focused
+   10/12, kontrak/API 48/661, full SagaVIEW 189/1.994, build, npm audit, tiga
+   rehearsal database, forced rollback, dan audit production lulus. Status
+   delivery `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
+   RELEASE_REHEARSAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`;
+   production belum diubah.
 
 ## Tujuan dokumen
 

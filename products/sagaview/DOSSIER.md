@@ -69,6 +69,13 @@ SagaView berdasarkan runtime production aktif.
   masih mencocokkan `mark-paid` settlement platform bersama. Route pembayaran
   SagaVIEW sendiri tidak ada. Production tetap baseline dan retry ditahan sampai
   acceptance route di-scope khusus SagaVIEW serta diuji lokal.
+- S163 release route contract: `SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / RELEASE_REHEARSAL_VALIDATED / STAGING_READY /
+  IMPLEMENTED_NOT_DEPLOYED`; source `f3b07749`. Gate hanya memeriksa route
+  `api/sagadev/` dan `api/admin/sagaview/`, mengizinkan settlement platform
+  bersama, serta tetap menolak payment/provider/expiry/callback/QRIS pada
+  namespace SagaVIEW. Tiga rehearsal, forced rollback, cleanup, dan audit
+  baseline production lulus; production belum berubah.
 - Acceptance integrasi feature-by-feature: ledger dimulai konservatif dan
   belum membuktikan coverage penuh; lihat
   [Feature Coverage Ledger](FEATURE_COVERAGE_LEDGER.md).

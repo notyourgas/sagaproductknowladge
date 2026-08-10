@@ -284,9 +284,11 @@ ketika keputusan atau release baru menutup gap.
   seluruhnya rollback. Snapshot lintas schema sudah diperbaiki dan backfill
   default `0` dibuktikan, tetapi gate terakhir masih mencocokkan route
   `mark-paid` settlement platform bersama; route SagaVIEW sendiri sudah tidak
-  tersedia. Status `GUARDED_DEPLOY_BLOCKED / ROLLED_BACK / STAGING_READY /
-  IMPLEMENTED_NOT_DEPLOYED`. Residual berikutnya: scope dan test acceptance
-  route khusus SagaVIEW, baru guarded production deployment, authenticated Owner dua
+  tersedia. S163 source `f3b07749` sudah menutup false-positive dengan kontrak
+  route khusus namespace SagaVIEW; manifest aktual, tiga rehearsal, forced
+  rollback, cleanup, dan audit production lulus. Status kini
+  `RELEASE_REHEARSAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
+  Residual berikutnya: guarded production deployment, authenticated Owner dua
   browser pada workspace nyata, failure/retry jaringan, dan customer export
   parity. Production belum berubah.
 

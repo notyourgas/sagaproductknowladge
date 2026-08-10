@@ -853,6 +853,13 @@ SagaVIEW sendiri sudah tidak tersedia. Production tetap backend
 `20260809162045-13a94c5` dan Studio `20260809162045-5eeef36`; status
 `GUARDED_DEPLOY_BLOCKED / ROLLED_BACK / STAGING_READY /
 IMPLEMENTED_NOT_DEPLOYED` sampai acceptance route khusus SagaVIEW lulus.
+S163 source `f3b077499c356e1fff6f6a9095116cd9e9446ead` menutup blocker
+tersebut dengan kontrak route berversi yang hanya memeriksa namespace
+SagaVIEW. Settlement platform bersama tetap sah; payment/provider/expiry/
+callback/QRIS SagaVIEW tetap fail-closed. Full SagaVIEW 189/1.994, kontrak/API
+48/661, tiga rehearsal dan forced rollback lulus; production tidak berubah.
+Status `RELEASE_REHEARSAL_VALIDATED / STAGING_READY /
+IMPLEMENTED_NOT_DEPLOYED`.
 Harga bulanan: Growth Rp200.000, Pro Rp500.000.
 Growth mencakup 1 device, 50 frame, 3 preset, offline 24 jam, dan 2 GB aset
 frame cloud. Pro mencakup 4 device, 100 frame, 10 preset, offline 168 jam, 10 GB

@@ -12,6 +12,22 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-10
 
+### SagaView S163 release route contract
+
+- Ringkasan: acceptance release sekarang memeriksa namespace SagaVIEW, bukan
+  seluruh route platform, sehingga settlement bersama tidak salah memblokir
+  sementara payment/provider/expiry/callback/QRIS SagaVIEW tetap fail-closed.
+- Klasifikasi `CONFIRMED`; source
+  `f3b077499c356e1fff6f6a9095116cd9e9446ead`.
+- Gate: focused 10/12, kontrak/API 48/661, full SagaVIEW 189/1.994, build,
+  npm audit, tiga rehearsal database, forced rollback, cleanup, dan audit
+  production lulus. Refresh advisory Composer eksternal timeout.
+- Production berubah: tidak. Status `SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / RELEASE_REHEARSAL_VALIDATED / STAGING_READY /
+  IMPLEMENTED_NOT_DEPLOYED`.
+- File knowledge: PRODUCT, DOSSIER, CHANGELOG, FEATURE_COVERAGE_LEDGER,
+  portfolio/root changelog, master knowledge, GAPS, dan SYNC_STATUS.
+
 ### SagaBook S172 Task Center primary action and recovery candidate
 
 - Ringkasan: Task Cepat sekarang membuat data melalui API/database, detail task

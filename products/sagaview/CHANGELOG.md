@@ -1,5 +1,23 @@
 # SagaView Changelog
 
+## 2026-08-10 - S163 release route gate scoped
+
+- Before: acceptance release mencari `mark-paid` secara global sehingga route
+  settlement platform bersama salah dianggap sebagai route pembayaran SagaVIEW.
+- After: source `f3b077499c356e1fff6f6a9095116cd9e9446ead` menambahkan kontrak
+  route berversi yang hanya memeriksa namespace SagaVIEW. Route pembayaran,
+  provider, expiry, callback, QRIS, settlement, dan rekening tetap dilarang
+  pada produk; route platform bersama tidak lagi memblokir rehearsal.
+- Evidence: focused 10/12, kontrak/API 48/661, full SagaVIEW 189/1.994,
+  manifest route, build, npm audit nol vulnerability, tiga
+  migrate-rollback-reapply, forced-failure rollback, cleanup ephemeral, serta
+  audit production lulus. Composer tidak menemukan advisory dari cache lokal,
+  tetapi refresh Packagist timeout sehingga freshness eksternal belum terbukti.
+- Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
+  RELEASE_REHEARSAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
+  Production tetap backend `20260809162045-13a94c5` dan Studio
+  `20260809162045-5eeef36`.
+
 ## 2026-08-10 - S162 guarded deploy fail-closed
 
 - Before: kandidat telah lulus rehearsal, tetapi gate production belum
