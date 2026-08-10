@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-10 - SagaBook S178 cached payment bootstrap
+
+- QRIS dan transfer manual kini menunggu verifikasi status server sebelum
+  menampilkan detail/aksi pembayaran; link salah tidak menimpa cache valid.
+- Source `1337af50739e6c573235a55a424b3ff49426c614` sudah dipush. Playwright
+  S178 3/3, regresi 9/9, backend 3/3 (51 assertion), build/design, dan audit
+  dependency lulus.
+- Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / UIUX_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production SagaBook tetap S170.
+
 ## 2026-08-10 - SagaView S169 session crash recovery guidance
 
 - Pemulihan sesi setelah crash/reload kini memiliki panel persisten yang

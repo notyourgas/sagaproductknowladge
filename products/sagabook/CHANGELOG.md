@@ -1,5 +1,21 @@
 # SagaBook Changelog
 
+## 2026-08-10 - Cached payment bootstrap S178 candidate
+
+- Mandat peningkatan recovery Andreas `CONFIRMED`; workflow dan provider tidak
+  berubah.
+- Before: cache booking dapat membuka detail pembayaran sebelum verifikasi dan
+  token URL salah dapat menimpa token cache valid. After: QRIS serta transfer
+  manual menahan semua detail/aksi sampai status server valid, menjaga cache
+  saat offline atau 403, dan memberi recovery yang konsisten.
+- Source `1337af50739e6c573235a55a424b3ff49426c614` pada branch
+  `codex/s178-sagabook-transfer-link-recovery` sudah dipush. Playwright S178
+  3/3 lintas 390x844, 768x1024, 1440x900; regresi 9/9; backend 3/3 (51
+  assertion); build/design 26/0; npm dan Composer OSV nol advisory.
+- Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / UIUX_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Production tetap S170; tidak
+  ada migration, provider canary, data customer, activation, atau deploy.
+
 ## 2026-08-10 - QRIS initial-load recovery S177 candidate
 
 - Mandat Andreas `CONFIRMED`: negative/recovery storefront dilanjutkan tanpa

@@ -68,6 +68,15 @@ pembayaran, menerima status/reminder, dan mengelola request dari secure booking
 link. Operator mengelola calendar, task, check-in, session, payment,
 reconciliation, report, staff, tenant, dan subscription.
 
+Candidate SagaBook S178 source
+`1337af50739e6c573235a55a424b3ff49426c614` membuat bootstrap QRIS dan transfer
+manual fail-closed terhadap cache lama. Detail/aksi pembayaran menunggu status
+server, link salah tidak menimpa token cache valid, dan offline memberi satu
+retry terkunci. Playwright S178 3/3, regresi payment 9/9, backend token/tenant/
+proof 3/3 (51 assertion), build/design, serta audit dependency lulus. Status
+`SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / UIUX_VALIDATED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S170.
+
 Candidate SagaBook S177 source
 `3ede7ccd0388b3dd05284d26efc0ec7e02955507` memberi recovery saat halaman QRIS
 gagal membaca status booking pada pemuatan pertama. Gangguan jaringan dapat
