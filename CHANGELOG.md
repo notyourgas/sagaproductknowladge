@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-11 - SagaView S173 UAT runtime-collision repair
+
+- Menyinkronkan source `b71d2008cb235f6aefedfe3897830616b0dca8f9`
+  yang mengizinkan server kandidat selama preflight dan tetap memblokir profil
+  Chrome UAT A/B yang aktif.
+- Evidence public-safe: red-green contract, reproduksi disposable, simulation
+  fail-closed, unit 197/197, Playwright 17/17, build/budget, dan audit
+  dependency lulus.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak
+  berubah dan UAT fisik/authenticated tetap residual.
+
 ## 2026-08-10 - SagaBook S180 Manual Booking dialog candidate
 
 - Menyinkronkan source `d32d09b2267d1ccc867c70203737e112ea5fc1a1`

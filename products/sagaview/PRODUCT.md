@@ -256,6 +256,13 @@ tersebut dan meredaksi response record lama. Studio
     `QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
     IMPLEMENTED_NOT_DEPLOYED`; production S163/S159 tidak berubah dan UAT fisik
     tetap harus dijalankan manusia.
+    S173 source `b71d2008cb235f6aefedfe3897830616b0dca8f9`
+    memperbaiki false-positive preflight S172: server Node kandidat yang wajib
+    hidup tidak lagi dianggap collision, sedangkan Chrome yang masih memakai
+    profil UAT A/B tetap memblokir run. Focused contract 5/5, unit 197/197,
+    Playwright relevan 17/17, build/budget, reproduksi proses disposable, dan
+    audit dependency lulus. Status `QA_VALIDATED / SECURITY_VALIDATED /
+    LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
    S165 source `fcaf1547cc7c5765d7ed0a30a4d8e3ea69df3006`
    merapikan Changelog Owner menjadi arsip yang dapat dicari dan difilter,
    dengan tepat satu detail terbuka, empty-state yang dapat dipulihkan, serta
@@ -276,9 +283,9 @@ Menjadi ringkasan fakta kanonik SagaView. Detail lengkap berada di
 ## Konteks
 
 Fakta release di dokumen ini mengacu pada exact source dan runtime production
-yang diverifikasi sampai 10 Agustus 2026. Runtime aktif memakai backend S163
+yang diverifikasi sampai 11 Agustus 2026. Runtime aktif memakai backend S163
 `f3b07749` dan Studio estimate-only S159 `6d7083a3`; kandidat pascaproduksi
-S164-S172 belum dideploy.
+S164-S173 belum dideploy.
 
 ## Status production terbaru
 

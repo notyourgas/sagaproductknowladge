@@ -623,6 +623,16 @@ dapat dipromosikan dan hasil physical tertinggi hanya
 Status `QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
 IMPLEMENTED_NOT_DEPLOYED`; production S163/S159 tidak berubah.
 
+Candidate S173 source `b71d2008cb235f6aefedfe3897830616b0dca8f9`
+menutup kontradiksi preflight pada harness S172. Node kandidat yang memang
+wajib hidup tidak lagi dihitung sebagai collision; hanya Chrome yang masih
+memakai profil UAT A/B yang memblokir run. Red contract 1 gagal sebelum
+perbaikan, lalu focused 5/5, unit/contract 197/197, Playwright relevan 17/17,
+parser, reproduksi proses disposable, simulation active-profile exit 2,
+build/budget, dan audit dependency lulus. Status `QA_VALIDATED /
+SECURITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production,
+backend/API/database, foto, output, dan boundary no-upload tidak berubah.
+
 Changelog Studio candidate sekarang mengutamakan release terbaru, menyediakan
 pencarian, filter status, enam batch versi, satu detail terbuka, empty/reset
 recovery, dan CTA kembali ke Session. Source kumulatif `2bb868f` juga menutup

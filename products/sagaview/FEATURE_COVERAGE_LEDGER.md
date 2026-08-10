@@ -1,6 +1,18 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 10 Agustus 2026 23:12 WIB
+Evidence cut-off: 11 Agustus 2026 02:41 WIB
+
+UAT runtime-collision cut-off: 11 Agustus 2026 02:41 WIB. S173 source
+`b71d2008cb235f6aefedfe3897830616b0dca8f9` memperbaiki kontradiksi
+preflight: server Studio/API kandidat yang wajib hidup tidak lagi dianggap
+collision. Gate collision kini hanya menghitung proses Chrome yang masih
+memakai profil UAT A/B, dan tetap fail-closed ketika profil tersebut aktif.
+Red test 1 gagal sebelum perbaikan; focused contract 5/5, unit/contract
+197/197, Playwright relevan 17/17, parser, reproduksi proses disposable,
+simulation profile aktif exit 2, build/budget 299,7/450 KiB, serta audit
+dependency nol vulnerability lulus. Status `QA_VALIDATED /
+SECURITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+tetap backend S163/Studio S159 dan UAT fisik/authenticated masih residual.
 
 Windows UAT harness cut-off: 10 Agustus 2026 23:12 WIB. S172 source
 `1a6d1d0b7ed7959321c902d7d561938642efcee0` mengganti gate fisik lama

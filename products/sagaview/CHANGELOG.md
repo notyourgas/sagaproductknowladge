@@ -1,5 +1,19 @@
 # SagaView Changelog
 
+## 2026-08-11 - S173 UAT runtime-collision repair
+
+- Before: preflight mewajibkan Studio/API kandidat sudah merespons 200, tetapi
+  juga menolak proses Node dari worktree kandidat sebagai runtime collision.
+- After: server kandidat diizinkan; collision dibatasi pada Chrome yang masih
+  memakai profil UAT A/B. Profil aktif tetap menghasilkan blocker fail-closed.
+- Evidence: source `b71d2008cb235f6aefedfe3897830616b0dca8f9`;
+  red 1 gagal, focused contract 5/5, reproduksi proses disposable membuktikan
+  aturan lama collision dan aturan baru tidak, simulation profil aktif exit 2,
+  unit 197/197, Playwright 17/17, build/budget, dan audit dependency lulus.
+- Status `QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Production tetap S163/S159; UAT fisik Windows dan
+  authenticated workspace belum dijalankan.
+
 ## 2026-08-10 - S172 Windows physical UAT harness v2
 
 - Before: harness fisik mengunci default backend lama, hanya mewajibkan 200

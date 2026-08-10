@@ -1018,6 +1018,13 @@ tertinggi hanya siap untuk review manusia. Unit/contract 196/196, Playwright
 relevan 17/17, build/budget, dan audit dependency lulus. Status
 `QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
 IMPLEMENTED_NOT_DEPLOYED`; production S163/S159 tidak berubah.
+S173 source `b71d2008cb235f6aefedfe3897830616b0dca8f9` memperbaiki
+false-positive runtime collision pada harness tersebut. Server kandidat yang
+wajib hidup sekarang diizinkan, sementara Chrome yang memakai profil UAT A/B
+lama tetap memblokir run. Red-green contract, reproduksi disposable,
+active-profile exit 2, unit 197/197, Playwright 17/17, build/budget, dan audit
+dependency lulus. Status `QA_VALIDATED / SECURITY_VALIDATED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S163/S159.
 Harga bulanan: Growth Rp200.000, Pro Rp500.000.
 Growth mencakup 1 device, 50 frame, 3 preset, offline 24 jam, dan 2 GB aset
 frame cloud. Pro mencakup 4 device, 100 frame, 10 preset, offline 168 jam, 10 GB

@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-11 - SagaView S173 UAT runtime-collision repair
+
+- Preflight kini mengizinkan server kandidat yang wajib hidup dan hanya
+  memblokir Chrome yang masih memakai profil UAT A/B.
+- Source `b71d2008cb235f6aefedfe3897830616b0dca8f9`; red-green contract,
+  reproduksi disposable, active-profile fail-closed, unit 197/197, Playwright
+  17/17, build/budget, dan dependency audit lulus.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production SagaView
+  tetap backend S163/Studio S159 dan produk SagaDev lain tidak berubah.
+
 ## 2026-08-10 - SagaBook S180 standardized Manual Booking dialog
 
 - Dialog Manual Booking kini memakai header/footer stabil, scroll internal,
