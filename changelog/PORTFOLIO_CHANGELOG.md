@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-10 - SagaBook S174 public booking recovery
+
+- Storefront sekarang dapat memulihkan respons submit booking yang terputus
+  tanpa kehilangan pilihan customer atau membuat booking dan side effect ganda.
+- Source `73f0ec20c44ded9fb9f31c2bbb134107ad160265` sudah dipush. Gate 12/12
+  (162 assertion), race multi-proses 5/5, Playwright 3/3 lintas tiga viewport,
+  build/design, format, dan audit dependency lulus.
+- Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / UIUX_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production SagaBook tetap S170.
+
 ## 2026-08-10 - SagaView S163 production deployment
 
 - Backend `f3b07749` / `20260810091159-f3b0774` dan Studio `6d7083a3` /

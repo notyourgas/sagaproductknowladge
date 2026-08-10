@@ -12,6 +12,21 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-10
 
+### SagaBook S174 public booking ambiguous-submit recovery
+
+- Ringkasan: retry setelah respons submit terputus kini mempertahankan state
+  customer dan mengembalikan booking authoritative tanpa side effect ganda.
+- Klasifikasi `CONFIRMED`; source
+  `73f0ec20c44ded9fb9f31c2bbb134107ad160265`.
+- Gate: backend/contract 12/12 (162 assertion), race multi-proses 5/5,
+  Playwright 3/3 pada tiga viewport, build/design 26/0, format/sintaks/diff,
+  serta npm/Composer/OSV nol advisory.
+- Production berubah: tidak. Status `SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / UIUX_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`.
+- File knowledge: PRODUCT, DOSSIER, CHANGELOG, FEATURE_COVERAGE_LEDGER,
+  portfolio/root changelog, master knowledge, dan SYNC_STATUS.
+
 ### SagaView S163 guarded production deployment
 
 - Ringkasan: backend S163 dan Studio estimate-only S159 diaktifkan melalui

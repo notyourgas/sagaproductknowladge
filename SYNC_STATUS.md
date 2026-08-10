@@ -12,24 +12,23 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-10T09:16:55+07:00 |
+| Waktu pembaruan terakhir | 2026-08-10T10:25:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `ed832d9e781f6e2b841ccb050c4801e13e02d3a8` |
-| Informasi terakhir disinkronkan | SagaView S163 backend `f3b07749` / `20260810091159-f3b0774` dan Studio `6d7083a3` / `20260810091159-6d7083a` sudah `PRODUCTION_DEPLOYED`. |
+| Baseline sebelum pembaruan | `19058b7556c199ce2f2852b9933c16eca4bae586` |
+| Informasi terakhir disinkronkan | SagaBook S174 source `73f0ec20c44ded9fb9f31c2bbb134107ad160265` menutup recovery submit publik yang ambigu sebagai `IMPLEMENTED_NOT_DEPLOYED`; production tetap S170. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik kanonik. SagaBook/platform tidak berubah; authenticated Owner/Studio SagaView UAT tetap terbuka. |
-| Error | Tidak ada error deploy atau sinkronisasi. Notifikasi Fonnte completion S163 masih ditolak dan dilaporkan terpisah sebagai `WA_FAILED`. |
+| Konflik | Tidak ada konflik kanonik. Negative storefront selain retry ambigu masih terbuka; authenticated Owner/operator UAT dan dua gap pilot tetap menahan `BUSINESS_READY`. |
+| Error | Tidak ada error source atau sinkronisasi. Production SagaBook tidak diubah. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/sagaview/PRODUCT.md`
-- `products/sagaview/DOSSIER.md`
-- `products/sagaview/CHANGELOG.md`
-- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
-- `GAPS.md`
 - `SYNC_STATUS.md`
 - `CHANGELOG.md`
 

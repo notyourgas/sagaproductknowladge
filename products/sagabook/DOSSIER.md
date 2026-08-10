@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 10 Agustus 2026 08:41 WIB
+- Updated: 10 Agustus 2026 10:25 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED` untuk workflow yang tercantum di
   [PRODUCT](PRODUCT.md)
@@ -17,6 +17,13 @@ dalam satu dokumen public-safe.
   PRODUCTION_ACTIVATED`
 - Source kumulatif aktif: `f69170a7e61080f90a3bcea7df1f22f5612f0369`,
   release `20260809153848-f69170a`, rollback `20260809083131-5c76735`.
+- Candidate S174 `73f0ec20c44ded9fb9f31c2bbb134107ad160265`
+  menutup ambiguity saat write booking publik sudah tersimpan tetapi respons
+  jaringan tidak sampai ke customer. Storefront mempertahankan state dan
+  memakai request yang sama saat retry; backend menahan race dengan transaksi,
+  unique tenant scope, serta HMAC tanpa menyimpan kunci mentah. Dua respons
+  identik menunjuk satu booking, hold, audit, dan notifikasi. Production belum
+  berubah.
 - Candidate S173 `e70b2389a7488d7e9d30a399cb1863a8bd8fc4dc`
   membuat posisi customer konsisten dengan sembilan langkah workflow tanpa
   mengubah urutan, aksi lanjut/kembali, skip Background, API, atau database.
@@ -65,7 +72,15 @@ dalam satu dokumen public-safe.
   dependency, backup/restore, public smoke, service health, dan rollback.
   Model, prompt, provider, dan KB tidak diubah oleh release ini.
 
-### Candidate S173-S171, release S170, dan histori terkait
+### Candidate S174-S171, release S170, dan histori terkait
+- S174 `73f0ec20` memberi recovery aktual ketika respons submit booking hilang:
+  alert mempertahankan pilihan dan aksi keyboard 44 px mengulang request yang
+  sama. Backend me-replay hasil authoritative, menolak payload berbeda, dan
+  menjaga tenant isolation serta side effect exactly-once. Gate 12/12 (162
+  assertion), race multi-proses 5/5, Playwright recovery/regresi 3/3 pada
+  390x844, 768x1024, 1440x900, build/design 26/0, dan audit dependency lulus.
+  Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / UIUX_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S170.
 - S173 `e70b2389` mengganti indikator lima label yang menggabungkan tiga
   langkah menjadi perjalanan sembilan langkah kanonik. Header memakai bentuk
   ringkas `Langkah X/9`, progressbar menyatakan nilai serta nama langkah, dan

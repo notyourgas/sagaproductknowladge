@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 10 Agustus 2026 08:41 WIB
+Updated: 10 Agustus 2026 10:25 WIB
 Evidence status: production source and runtime verified
 
 ## Tujuan dokumen
@@ -16,6 +16,16 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
+- Candidate S174 `73f0ec20c44ded9fb9f31c2bbb134107ad160265`
+  membuat retry submit booking publik aman ketika respons pertama terputus.
+  Pilihan customer tetap tersimpan, aksi retry dapat diakses, dan dua request
+  identik menghasilkan booking serta side effect yang sama tepat satu kali.
+  Kunci dan fingerprint disimpan sebagai HMAC tenant-scoped, sedangkan payload
+  berbeda ditolak. Gate 12/12 (162 assertion), race multi-proses 5/5,
+  Playwright 3/3 pada mobile/tablet/desktop, build/design 26/0, format, serta
+  audit dependency lulus. Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED
+  / UIUX_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+  tetap S170.
 - Candidate S173 `e70b2389a7488d7e9d30a399cb1863a8bd8fc4dc`
   menyelaraskan indikator customer dengan sembilan langkah universal: Lokasi,
   Paket, Jadwal, Background, Add-on, Detail, Review, Bayar, dan Selesai.

@@ -68,6 +68,16 @@ pembayaran, menerima status/reminder, dan mengelola request dari secure booking
 link. Operator mengelola calendar, task, check-in, session, payment,
 reconciliation, report, staff, tenant, dan subscription.
 
+Candidate SagaBook S174 source
+`73f0ec20c44ded9fb9f31c2bbb134107ad160265` membuat submit booking publik
+retry-safe ketika respons jaringan hilang setelah write. Storefront menjaga
+pilihan dan menyediakan retry; backend me-replay hasil identik tenant-scoped,
+menolak payload berbeda, serta menjaga booking dan side effect exactly-once.
+Gate 12/12 (162 assertion), race multi-proses 5/5, Playwright 3/3 lintas tiga
+viewport, build/design/format, serta audit dependency lulus. Status
+`SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / UIUX_VALIDATED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S170.
+
 Candidate SagaBook S171 source
 `33aa5261d23656fd452826f82cfef4eda377eca4` membuat nomor WhatsApp customer
 tersamarkan secara default pada Dashboard, Booking list, dan Booking Detail.

@@ -1,5 +1,25 @@
 # SagaBook Changelog
 
+## 2026-08-10 - Public booking ambiguous-submit recovery S174 candidate
+
+- Mandat Andreas `CONFIRMED`: negative/recovery storefront dikerjakan sebagai
+  peningkatan terukur tanpa mengubah sembilan langkah workflow universal.
+- Before: respons submit yang hilang setelah database commit menampilkan error
+  tanpa jalur retry aman dan percobaan ulang dapat membentuk booking kedua.
+  After: state Bayar tetap tersimpan, alert menyediakan `Coba proses lagi`, dan
+  frontend memakai request key stabil sampai respons booking diketahui.
+- Backend menyimpan HMAC key/fingerprint tenant-scoped, me-replay hasil identik,
+  menolak payload berbeda, dan menutup race transaksi tanpa menggandakan
+  booking, hold, slot lock, audit, atau notifikasi.
+- Source `73f0ec20c44ded9fb9f31c2bbb134107ad160265` pada branch
+  `codex/s174-sagabook-storefront-recovery` sudah dipush. Backend/contract 12/12
+  (162 assertion), race aktual 5/5, Playwright recovery/regresi 3/3 pada
+  390x844, 768x1024, dan 1440x900, build/design 26/0, Pint/sintaks/diff, serta
+  npm/Composer/OSV nol advisory.
+- Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / UIUX_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Production tetap source S170 /
+  release `20260809153848-f69170a`; belum `BUSINESS_READY`.
+
 ## 2026-08-10 - Universal nine-step booking progress S173 candidate
 
 - Keputusan Andreas `CONFIRMED`: indikator customer harus mengikuti sembilan
