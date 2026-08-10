@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-11 - SagaBook S181 reminder recovery candidate
+
+- Menyinkronkan source `34006a5a4a692778176834394ddee224e50193d9`
+  sebagai kandidat recovery reminder yang idempoten, fail-closed, dan memiliki
+  fallback manual tanpa provider send.
+- Klasifikasi `CONFIRMED`; reminder 25/25 (105 assertion), tenant/routing 8/8
+  (42 assertion), Playwright 4/4, build/design, Pint/diff, serta npm dan OSV
+  nol advisory.
+- Production berubah: tidak. Status `SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / UIUX_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`.
+
 ## 2026-08-11 - SagaView S173 UAT runtime-collision repair
 
 - Menyinkronkan source `b71d2008cb235f6aefedfe3897830616b0dca8f9`

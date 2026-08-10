@@ -1,5 +1,24 @@
 # SagaBook Changelog
 
+## 2026-08-11 - WhatsApp reminder recovery S181 candidate
+
+- Mandat peningkatan reliability Andreas `CONFIRMED`; routing/provider policy,
+  workflow booking, dan schema tidak berubah.
+- Before: request retry yang terulang mendapat 409, UI menampilkan kode
+  internal, target aksi belum 44 px, dan kegagalan belum mempunyai fallback
+  manual langsung. After: replay mengembalikan state authoritative tanpa
+  mutation/audit kedua, status booking dan notifikasi dipisahkan, penyebab
+  memakai bahasa Indonesia, dan template mentah ber-placeholder dapat disalin
+  tanpa provider send.
+- Source `34006a5a4a692778176834394ddee224e50193d9` pada branch
+  `codex/s181-sagabook-reminder-recovery` sudah dipush. Reminder 25/25 (105
+  assertion), tenant/routing 8/8 (42 assertion), Playwright 4/4, build/design
+  26/0, Pint/diff, serta npm dan OSV nol advisory.
+- Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / UIUX_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Production tetap S170; tidak
+  ada migration, credential/data customer, provider canary, activation, atau
+  deploy.
+
 ## 2026-08-10 - Standardized Manual Booking dialog S180 candidate
 
 - Backlog UI/UX form/modal panjang Andreas `CONFIRMED`; workflow booking,

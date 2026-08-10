@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-11 - SagaBook S181 WhatsApp reminder recovery
+
+- Retry reminder aman kini idempoten saat request terulang, status booking
+  dipisahkan dari status notifikasi, kode internal diganti arahan manusia, dan
+  fallback template manual tersedia tanpa provider send.
+- Source `34006a5a4a692778176834394ddee224e50193d9` sudah dipush. Reminder
+  25/25, tenant/routing 8/8, Playwright 4/4 lintas tiga viewport, build/design,
+  dan audit dependency OSV lulus.
+- Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / UIUX_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production SagaBook tetap S170
+  dan produk SagaDev lain tidak berubah.
+
 ## 2026-08-11 - SagaView S173 UAT runtime-collision repair
 
 - Preflight kini mengizinkan server kandidat yang wajib hidup dan hanya

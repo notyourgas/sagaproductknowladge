@@ -12,16 +12,27 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-11T02:41:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-11T02:43:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `65f6794ab525aee391b9f33a9312774ed69a9a9d` |
-| Informasi terakhir disinkronkan | SagaView S173 source `b71d2008cb235f6aefedfe3897830616b0dca8f9` memperbaiki false-positive runtime collision pada preflight UAT; status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED` dan production tetap S163/S159. |
+| Baseline sebelum pembaruan | `cc039a937d4e0a3b1bee493457b854691df75257` |
+| Informasi terakhir disinkronkan | SagaBook S181 source `34006a5a4a692778176834394ddee224e50193d9` menutup retry replay, status recovery, dan fallback manual reminder; status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED` dan production tetap S170. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, fast-forward ke `main`, push, dan remote verification. |
-| Konflik | Tidak ada konflik kanonik; fast-forward mempertahankan perubahan SagaBook S180 dan perubahan SagaView sebelumnya. |
-| Error | Tidak ada error source atau validator yang diketahui. Runtime production SagaView tidak diubah. |
+| Konflik | Tidak ada konflik kanonik; fast-forward mempertahankan perubahan SagaView S173 dan seluruh histori SagaBook sebelumnya. |
+| Error | Feed audit Composer resmi tidak tersedia saat validasi source; audit OSV independen lulus tanpa advisory. Runtime production SagaBook tidak diubah. |
 
 ## File yang berubah pada sinkronisasi ini
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
+
+## File dari sinkronisasi sebelumnya
 
 - `products/sagaview/PRODUCT.md`
 - `products/sagaview/DOSSIER.md`

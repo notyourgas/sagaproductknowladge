@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 10 Agustus 2026 23:35 WIB
+- Updated: 11 Agustus 2026 02:43 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED` untuk workflow yang tercantum di
   [PRODUCT](PRODUCT.md)
@@ -17,6 +17,15 @@ dalam satu dokumen public-safe.
   PRODUCTION_ACTIVATED`
 - Source kumulatif aktif: `f69170a7e61080f90a3bcea7df1f22f5612f0369`,
   release `20260809153848-f69170a`, rollback `20260809083131-5c76735`.
+- Candidate S181 `34006a5a4a692778176834394ddee224e50193d9`
+  membuat retry reminder aman terhadap double activation dan request replay.
+  Write pertama tetap memakai transaction/row lock; replay state yang sama
+  hanya mengembalikan hasil authoritative tanpa mutation atau audit kedua.
+  Dashboard memisahkan status booking dari notifikasi, menyembunyikan kode
+  internal, dan memberi fallback template manual ber-placeholder saat provider
+  atau clipboard tidak siap. Outcome ambigu tidak dapat di-retry; role owner,
+  recent-auth, tenant, dan audit public-safe tetap berlaku. Production tetap
+  S170 dan tidak ada provider send/canary.
 - Candidate S180 `d32d09b2267d1ccc867c70203737e112ea5fc1a1`
   menstandarkan dialog Manual Booking dengan scroll internal, header/footer
   stabil, target 44 px, dan proteksi draft. Create/read-after-write tetap
