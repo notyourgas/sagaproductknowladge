@@ -12,14 +12,14 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-10T21:20:00+07:00 |
-| Branch aktif | `codex/knowledge-s179-payment-status-dictionary` |
-| Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `b78dab3d0d6695fffe3869928948ae13eb926e27` |
+| Waktu pembaruan terakhir | 2026-08-10T21:30:00+07:00 |
+| Branch aktif | `main` |
+| Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
+| Baseline sebelum pembaruan | `3e9279cc72116aacd70e09b460d93ad2ca562014` |
 | Informasi terakhir disinkronkan | SagaBook S179 source `7eac46e4681a48caa479bc02e859f7165257b192` menyatukan kamus status pembayaran; status `IMPLEMENTED_NOT_DEPLOYED` dan production tetap S170. |
-| Status sinkronisasi | `PENDING MAIN`; update tervalidasi disiapkan pada branch terisolasi karena worktree utama masih memuat perubahan produk lain. |
-| Konflik | Tidak ada konflik fakta SagaBook. Promosi ke `main` menunggu worktree utama bersih agar tidak menimpa perubahan SagaView. |
-| Error | Tidak ada error source. Validator wajib lulus sebelum branch dipush. Runtime dan production SagaBook tidak diubah. |
+| Status sinkronisasi | `UP TO DATE` setelah validator, fast-forward ke `main`, push, dan remote verification. |
+| Konflik | Tidak ada konflik kanonik; perubahan SagaView terbaru dipertahankan melalui merge tanpa overwrite. |
+| Error | Tidak ada error source atau validator yang diketahui. Runtime dan production SagaBook tidak diubah. |
 
 ## File yang berubah pada sinkronisasi ini
 
