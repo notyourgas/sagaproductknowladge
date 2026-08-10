@@ -1,5 +1,22 @@
 # SagaView Changelog
 
+## 2026-08-10 - S169 session crash recovery guidance candidate
+
+- Before: kegagalan membuka ulang folder setelah crash/reload hanya muncul
+  sebagai error sesaat dan acceptance lama masih mengunci detail teknis browser.
+- After: panel recovery persisten memisahkan apa yang gagal, keamanan draft dan
+  foto lokal, serta aksi pilih ulang folder. Error permission/umum disanitasi,
+  CTA minimal 44 piksel, dan forced-colors mempertahankan teks yang terbaca.
+- Evidence: source `13e565814ed1c987e887b9024e87d6c0124c522d`;
+  unit 195/195, Playwright recovery/output 14/14 termasuk 50/200/500 foto,
+  1440x900 dan 390x844, Axe/no-overflow/no-upload, build/budget, serta npm audit
+  nol vulnerability lulus.
+- Status `UIUX_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. API/backend/database,
+  foto/path customer, pembayaran off-app, SagaBook, dan production S163 tidak
+  berubah. UAT fisik Windows untuk crash, permission revoke, dan disk/quota
+  tetap residual.
+
 ## 2026-08-10 - S168 long gallery UAT matrix
 
 - Before: kandidat S167 hanya mempunyai bukti focused 500 foto pada

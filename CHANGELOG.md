@@ -1,5 +1,14 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-10 - SagaView S169 session crash recovery candidate
+
+- Menyinkronkan source `13e565814ed1c987e887b9024e87d6c0124c522d`
+  sebagai kandidat panel recovery persisten untuk crash/reload sesi lokal.
+- Klasifikasi `CONFIRMED`; unit 195/195, Playwright recovery/output 14/14,
+  accessibility, no-upload, build/budget, dan audit dependency lulus.
+- Production berubah: tidak. Status `UIUX_VALIDATED / SECURITY_VALIDATED /
+  QA_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+
 ## 2026-08-10 - SagaBook S177 QRIS initial-load recovery candidate
 
 - Menyinkronkan source `3ede7ccd0388b3dd05284d26efc0ec7e02955507`

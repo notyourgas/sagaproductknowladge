@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-10 - SagaView S169 session crash recovery guidance
+
+- Pemulihan sesi setelah crash/reload kini memiliki panel persisten yang
+  menjelaskan kegagalan, keamanan draft/foto lokal, dan aksi pilih ulang folder
+  tanpa membocorkan detail browser atau label folder.
+- Source `13e565814ed1c987e887b9024e87d6c0124c522d` sudah dipush. Unit
+  195/195, Playwright recovery/output 14/14, Axe/no-overflow/no-upload,
+  build/budget, dan npm audit nol vulnerability lulus.
+- Status `UIUX_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production SagaView S163 dan
+  SagaBook tidak berubah.
+
 ## 2026-08-10 - SagaBook S177 QRIS initial-load recovery
 
 - Halaman QRIS kini keluar dari loading buntu saat status booking gagal:

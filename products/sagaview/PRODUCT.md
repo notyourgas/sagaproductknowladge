@@ -216,6 +216,16 @@ tersebut dan meredaksi response record lama. Studio
    dependency. Status `QA_VALIDATED / PERFORMANCE_VALIDATED /
    SECURITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
    runtime dan production S163 tidak berubah.
+   S169 source `13e565814ed1c987e887b9024e87d6c0124c522d`
+   memperjelas kegagalan pemulihan draft sesi setelah crash/reload. Panel
+   persisten menjawab apa yang gagal, memastikan draft dan foto lokal tetap
+   aman, serta menyediakan tombol pilih ulang folder tanpa merender detail
+   error browser atau label folder. Unit 195/195 dan Playwright recovery/output
+   14/14 mencakup 50/200/500 foto, 1440x900, 390x844, target 44 piksel,
+   forced-colors/reduced-motion, Axe, no-overflow, dan no-upload; build/budget
+   serta npm audit nol vulnerability lulus. Status `UIUX_VALIDATED /
+   SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+   IMPLEMENTED_NOT_DEPLOYED`; production S163 tidak berubah.
    S165 source `fcaf1547cc7c5765d7ed0a30a4d8e3ea69df3006`
    merapikan Changelog Owner menjadi arsip yang dapat dicari dan difilter,
    dengan tepat satu detail terbuka, empty-state yang dapat dipulihkan, serta
