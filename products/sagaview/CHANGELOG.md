@@ -1,5 +1,22 @@
 # SagaView Changelog
 
+## 2026-08-10 - S170 mobile Support Hub launcher candidate
+
+- Before: launcher `Bantuan` mobile berada di akhir halaman panjang; pada
+  viewport 390x844 batas bawahnya terukur di y=2.677,5 sehingga tidak terlihat
+  saat operator membuka Session.
+- After: launcher fixed di atas safe-area pada mobile/desktop, target 56 piksel,
+  panel memiliki semantik dialog non-modal, dan fokus kembali ke launcher
+  setelah panel ditutup.
+- Evidence: source `c52c1416b7a604509e00a858a606b92f47990dcc`;
+  unit 195/195, focused Playwright 8/8, full Playwright 132 pass/3 intentional
+  skip, visual 390x844 dan 1440x900, Axe/forced-colors/reduced-motion,
+  no-overflow/no-upload, format/lint/typecheck, build/budget, dan npm audit nol
+  vulnerability lulus.
+- Status `UIUX_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Backend/API/database,
+  foto/path customer, SagaBook, dan production S163 tidak berubah.
+
 ## 2026-08-10 - S169 session crash recovery guidance candidate
 
 - Before: kegagalan membuka ulang folder setelah crash/reload hanya muncul

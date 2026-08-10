@@ -12,20 +12,21 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-10T17:25:41+07:00 |
+| Waktu pembaruan terakhir | 2026-08-10T20:30:12+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `5e55b52a7899f4e8a816f42e95084e92c7b37378` |
-| Informasi terakhir disinkronkan | SagaBook S178 source `1337af50739e6c573235a55a424b3ff49426c614` menahan cache QRIS/transfer sampai verifikasi server; status `IMPLEMENTED_NOT_DEPLOYED` dan production tetap S170. |
+| Baseline sebelum pembaruan | `04f8c12100c2918a7e39ff78575774073521d27a` |
+| Informasi terakhir disinkronkan | SagaView S170 source `c52c1416b7a604509e00a858a606b92f47990dcc` menjaga launcher Support Hub mobile tetap di viewport; status `IMPLEMENTED_NOT_DEPLOYED` dan production tetap S163. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik kanonik. Deployment SagaBook dan authenticated Owner/operator UAT tetap gate terpisah. |
-| Error | Tidak ada error source atau validator yang diketahui. Runtime dan production SagaBook tidak diubah. |
+| Konflik | Tidak ada konflik kanonik. Deployment SagaView serta authenticated device/operator UAT tetap gate terpisah. |
+| Error | Tidak ada error source atau validator yang diketahui. Runtime dan production SagaView tidak diubah. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/sagabook/PRODUCT.md`
-- `products/sagabook/CHANGELOG.md`
-- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/DOSSIER.md`
+- `products/sagaview/CHANGELOG.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `SYNC_STATUS.md`

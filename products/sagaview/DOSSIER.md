@@ -599,6 +599,16 @@ snapshot data, service/header/CORS/journal, dan smoke device-negative 422.
 Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated device UAT
 dan metrik latency/cost tetap residual sebelum `BUSINESS_READY`.
 
+Candidate S170 source `c52c1416b7a604509e00a858a606b92f47990dcc`
+menutup regresi keterjangkauan launcher pada mobile: tombol yang sebelumnya
+berada di akhir halaman panjang sekarang fixed di atas safe-area. Panel tetap
+non-modal, bebas overflow, dan mengembalikan fokus ke launcher setelah ditutup;
+tidak ada request Support Hub sebelum operator memilih koneksi online. Unit
+195/195, focused Playwright 8/8, full Playwright 132 pass/3 intentional skip,
+visual 390x844 dan 1440x900, Axe/forced-colors/reduced-motion, build/budget,
+serta npm audit lulus. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+production S163, backend/API/database, dan boundary no-upload tidak berubah.
+
 Changelog Studio candidate sekarang mengutamakan release terbaru, menyediakan
 pencarian, filter status, enam batch versi, satu detail terbuka, empty/reset
 recovery, dan CTA kembali ke Session. Source kumulatif `2bb868f` juga menutup

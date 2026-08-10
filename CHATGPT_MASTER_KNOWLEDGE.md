@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 10 Agustus 2026 16:12 WIB
+Evidence cut-off: 10 Agustus 2026 20:30 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -971,6 +971,15 @@ build/budget, serta npm audit nol vulnerability lulus. Status
 `UIUX_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
 IMPLEMENTED_NOT_DEPLOYED`; production S163 tidak berubah dan UAT fisik Windows
 untuk crash, permission revoke, serta disk/quota tetap residual.
+S170 source `c52c1416b7a604509e00a858a606b92f47990dcc` menjaga launcher
+Support Hub tetap fixed di dalam viewport mobile, menghormati safe-area, dan
+memulihkan fokus saat panel dialog non-modal dibuka/ditutup. Kandidat tidak
+menghubungi endpoint support sebelum aksi operator dan tidak mengubah
+no-upload. Unit 195/195, focused Playwright 8/8, full Playwright 132 pass/3
+intentional skip, visual 390x844/1440x900, accessibility, build/budget, serta
+audit dependency lulus. Status `UIUX_VALIDATED / SECURITY_VALIDATED /
+QA_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production S163
+tidak berubah.
 Harga bulanan: Growth Rp200.000, Pro Rp500.000.
 Growth mencakup 1 device, 50 frame, 3 preset, offline 24 jam, dan 2 GB aset
 frame cloud. Pro mencakup 4 device, 100 frame, 10 preset, offline 168 jam, 10 GB

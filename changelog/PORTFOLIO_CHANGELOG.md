@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-10 - SagaView S170 mobile Support Hub launcher
+
+- Launcher bantuan mobile kini fixed di dalam viewport dan menghormati
+  safe-area; panel non-modal memulihkan fokus setelah ditutup tanpa request
+  online otomatis atau upload foto/path customer.
+- Source `c52c1416b7a604509e00a858a606b92f47990dcc` sudah dipush. Unit
+  195/195, focused Playwright 8/8, full Playwright 132 pass/3 intentional skip,
+  visual/accessibility, build/budget, dan audit dependency lulus.
+- Status `UIUX_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production SagaView S163 dan
+  SagaBook tidak berubah.
+
 ## 2026-08-10 - SagaBook S178 cached payment bootstrap
 
 - QRIS dan transfer manual kini menunggu verifikasi status server sebelum

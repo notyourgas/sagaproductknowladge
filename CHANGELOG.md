@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-10 - SagaView S170 mobile Support Hub launcher candidate
+
+- Menyinkronkan source `c52c1416b7a604509e00a858a606b92f47990dcc`
+  sebagai kandidat launcher bantuan fixed, safe-area, semantik dialog, dan
+  pemulihan fokus pada mobile.
+- Klasifikasi `CONFIRMED`; unit 195/195, focused Playwright 8/8, full
+  Playwright 132 pass/3 intentional skip, visual/accessibility/no-upload,
+  build/budget, serta audit dependency lulus.
+- Production berubah: tidak. Status `UIUX_VALIDATED / SECURITY_VALIDATED /
+  QA_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+
 ## 2026-08-10 - SagaBook S178 cached payment bootstrap candidate
 
 - Menyinkronkan source `1337af50739e6c573235a55a424b3ff49426c614`

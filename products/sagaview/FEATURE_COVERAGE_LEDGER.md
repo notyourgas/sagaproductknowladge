@@ -1,6 +1,6 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 10 Agustus 2026 17:05 WIB
+Evidence cut-off: 10 Agustus 2026 20:30 WIB
 
 Release rehearsal cut-off: 10 Agustus 2026 08:20 WIB. Kandidat kumulatif S163
 backend `f3b07749` dan Studio `6d7083a3` menjalankan tiga siklus disposable
@@ -97,6 +97,19 @@ pada forced-colors. Unit 195/195, Playwright recovery/output 14/14 termasuk
 vulnerability lulus. Status `UIUX_VALIDATED / SECURITY_VALIDATED /
 QA_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production S163
 tidak berubah.
+
+Support launcher mobile cut-off: 10 Agustus 2026 20:30 WIB. S170 source
+`c52c1416` mengubah launcher tertutup dari elemen relatif di akhir halaman
+menjadi kontrol fixed yang menghormati safe-area pada mobile dan desktop.
+Panel memakai semantik dialog non-modal; fokus berpindah ke tombol tutup saat
+dibuka dan kembali ke launcher saat ditutup. Red test membuktikan launcher
+sebelumnya berakhir pada y=2.677,5 di viewport setinggi 844; kandidat tetap di
+dalam viewport dengan target 56 piksel. Unit 195/195, focused Playwright 8/8,
+full Playwright 132 pass/3 intentional skip, visual 390x844 dan 1440x900,
+Axe/forced-colors/reduced-motion/no-overflow/no-upload, format/lint/typecheck,
+build/budget, serta npm audit nol vulnerability lulus. Status
+`UIUX_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; production S163 tidak berubah.
 
 ## Tujuan
 

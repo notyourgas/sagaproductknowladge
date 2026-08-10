@@ -226,6 +226,16 @@ tersebut dan meredaksi response record lama. Studio
    serta npm audit nol vulnerability lulus. Status `UIUX_VALIDATED /
    SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
    IMPLEMENTED_NOT_DEPLOYED`; production S163 tidak berubah.
+   S170 source `c52c1416b7a604509e00a858a606b92f47990dcc`
+   menjaga launcher Support Hub tetap fixed di dalam viewport mobile dengan
+   safe-area, target 56 piksel, semantik dialog non-modal, serta pemulihan
+   fokus saat panel dibuka/ditutup. Red test sebelumnya menempatkan launcher
+   di bawah halaman pada y=2.677,5 untuk viewport 390x844. Unit 195/195,
+   focused Playwright 8/8, full Playwright 132 pass/3 intentional skip,
+   visual 390x844 dan 1440x900, accessibility/no-overflow/no-upload,
+   build/budget, serta audit dependency lulus. Status
+   `UIUX_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+   IMPLEMENTED_NOT_DEPLOYED`; production S163 tidak berubah.
    S165 source `fcaf1547cc7c5765d7ed0a30a4d8e3ea69df3006`
    merapikan Changelog Owner menjadi arsip yang dapat dicari dan difilter,
    dengan tepat satu detail terbuka, empty-state yang dapat dipulihkan, serta
