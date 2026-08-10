@@ -207,6 +207,15 @@ tersebut dan meredaksi response record lama. Studio
    forced-colors/reduced-motion, build/budget, dan audit dependency lulus.
    Status `UIUX_VALIDATED / PERFORMANCE_VALIDATED / SECURITY_VALIDATED /
    LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production S163 tidak berubah.
+   S168 test-only source `0ce176a6af570acfc1d24b3be9816505fe9dfefd`
+   memperluas acceptance galeri panjang menjadi matriks 50/200/500 foto,
+   monitor 1280-3840, dan ekuivalen zoom 125-200 persen. Empat dari empat
+   skenario menjaga fokus dan konteks filter, node thumbnail tetap bounded,
+   tidak overflow atau mengunggah foto sintetis, serta lulus Axe,
+   forced-colors, reduced-motion, unit 192/192, build/budget, dan audit
+   dependency. Status `QA_VALIDATED / PERFORMANCE_VALIDATED /
+   SECURITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+   runtime dan production S163 tidak berubah.
    S165 source `fcaf1547cc7c5765d7ed0a30a4d8e3ea69df3006`
    merapikan Changelog Owner menjadi arsip yang dapat dicari dan difilter,
    dengan tepat satu detail terbuka, empty-state yang dapat dipulihkan, serta

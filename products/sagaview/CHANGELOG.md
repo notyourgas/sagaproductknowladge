@@ -1,5 +1,21 @@
 # SagaView Changelog
 
+## 2026-08-10 - S168 long gallery UAT matrix
+
+- Before: kandidat S167 hanya mempunyai bukti focused 500 foto pada
+  1440x900; matriks 50/200/500, monitor besar, dan zoom tinggi masih residual.
+- After: acceptance test-only memverifikasi 50/200/500 foto, lima lebar
+  monitor 1280-3840, ekuivalen zoom 125/150/200 persen, preservasi konteks dan
+  fokus filter, virtualisasi bounded, target 44 piksel, no-overflow, no-upload,
+  Axe, forced-colors, serta reduced-motion.
+- Evidence: source `0ce176a6af570acfc1d24b3be9816505fe9dfefd`;
+  Playwright 4/4, unit 192/192, lint, typecheck, build/budget, npm audit nol
+  vulnerability, dan empat screenshot before/after lulus.
+- Status `QA_VALIDATED / PERFORMANCE_VALIDATED / SECURITY_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Ini hanya menambah evidence;
+  runtime, API/backend/database, foto/path customer, pembayaran off-app,
+  SagaBook, dan production S163 tidak berubah. UAT fisik Windows tetap residual.
+
 ## 2026-08-10 - S167 long gallery filter context candidate
 
 - Before: setelah operator menggulir jauh pada galeri virtual lalu membuka

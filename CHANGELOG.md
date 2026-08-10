@@ -1,5 +1,15 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-10 - SagaView S168 long gallery UAT matrix
+
+- Menyinkronkan test-only source
+  `0ce176a6af570acfc1d24b3be9816505fe9dfefd` sebagai evidence 50/200/500 foto,
+  lima lebar monitor, dan ekuivalen zoom 125/150/200 persen.
+- Klasifikasi `CONFIRMED`; Playwright 4/4, unit 192/192, accessibility,
+  no-upload, build/budget, dan audit dependency lulus.
+- Production berubah: tidak. Status `QA_VALIDATED / PERFORMANCE_VALIDATED /
+  SECURITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+
 ## 2026-08-10 - SagaBook S176 cancelled payment recovery candidate
 
 - Menyinkronkan source `d62b9d6edbc29da6660b13fc03ce23a6f2a2c1ad`

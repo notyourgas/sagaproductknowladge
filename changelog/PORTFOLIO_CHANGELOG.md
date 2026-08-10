@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-10 - SagaView S168 long gallery UAT matrix
+
+- Acceptance test-only memperluas bukti galeri menjadi 50/200/500 foto,
+  monitor 1280-3840, ekuivalen zoom 125-200 persen, fokus/filter, virtualisasi,
+  no-overflow, no-upload, Axe, forced-colors, dan reduced-motion.
+- Source `0ce176a6af570acfc1d24b3be9816505fe9dfefd` sudah dipush. Playwright
+  4/4, unit 192/192, lint/typecheck/build/budget, dan npm audit lulus.
+- Status `QA_VALIDATED / PERFORMANCE_VALIDATED / SECURITY_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; runtime/production SagaView S163
+  dan SagaBook tidak berubah.
+
 ## 2026-08-10 - SagaBook S176 cancelled payment recovery
 
 - QRIS dan transfer manual kini berhenti menawarkan pembayaran saat status
