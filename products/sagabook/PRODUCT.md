@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 10 Agustus 2026 11:20 WIB
+Updated: 10 Agustus 2026 12:08 WIB
 Evidence status: production source and runtime verified
 
 ## Tujuan dokumen
@@ -16,7 +16,7 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
-- Candidate S175 `27ea36a2724adebe996006882a465364543d78c9`
+- Candidate S175 `27ea36a27a22de165758962be307ab4cdd0e125a`
   membuktikan dua aktivasi cepat hanya membentuk satu submit booking dan satu
   sesi pembayaran. Tombol dikunci selama write, status proses diumumkan ke
   screen reader, dan CTA aman untuk reduced-motion serta forced-colors. Gate

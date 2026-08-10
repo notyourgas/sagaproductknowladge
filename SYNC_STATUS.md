@@ -12,14 +12,14 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-10T11:20:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-10T12:08:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `e56ba15598a0d1a68b00e3d86f8ffc59b4569a70` |
-| Informasi terakhir disinkronkan | SagaBook S175 source `27ea36a2724adebe996006882a465364543d78c9` menutup feedback dan acceptance double-submit tahap Bayar sebagai `IMPLEMENTED_NOT_DEPLOYED`; production tetap S170. |
+| Baseline sebelum pembaruan | `8aa0934770db95d5396400377ce2f362e3d3b98f` |
+| Informasi terakhir disinkronkan | Provenance SagaBook S175 dikoreksi ke exact source `27ea36a27a22de165758962be307ab4cdd0e125a`; status tetap `IMPLEMENTED_NOT_DEPLOYED` dan production tetap S170. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
 | Konflik | Tidak ada konflik kanonik. Stale/cancellation, tenant-negative, permission, dan state-preservation storefront masih terbuka; authenticated Owner/operator UAT dan dua gap pilot tetap menahan `BUSINESS_READY`. |
-| Error | Tidak ada error source atau sinkronisasi. Production SagaBook tidak diubah. |
+| Error | SHA S175 pada sinkronisasi sebelumnya salah ketik dan sudah dikoreksi; tidak ada error source. Production SagaBook tidak diubah. |
 
 ## File yang berubah pada sinkronisasi ini
 

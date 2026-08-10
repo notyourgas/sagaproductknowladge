@@ -1,8 +1,15 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-10 - Koreksi provenance SagaBook S175
+
+- Mengoreksi SHA S175 yang salah ketik menjadi exact source
+  `27ea36a27a22de165758962be307ab4cdd0e125a` pada seluruh knowledge terkait.
+- Klasifikasi `CONFIRMED`; branch remote dan ancestry terhadap production S170
+  diverifikasi ulang. Tidak ada perubahan source produk atau production.
+
 ## 2026-08-10 - SagaBook S175 public booking double-submit candidate
 
-- Menyinkronkan source `27ea36a2724adebe996006882a465364543d78c9` sebagai
+- Menyinkronkan source `27ea36a27a22de165758962be307ab4cdd0e125a` sebagai
   kandidat UI/UX yang membuktikan satu write booking dan satu sesi pembayaran
   meskipun CTA Bayar diaktifkan dua kali dengan cepat.
 - Klasifikasi `CONFIRMED`; gate backend 12/12 (162 assertion), race 5/5,

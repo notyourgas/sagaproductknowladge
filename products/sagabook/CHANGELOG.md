@@ -9,7 +9,7 @@
   menghasilkan tepat satu submit booking dan satu sesi pembayaran; tombol
   disabled/`aria-busy`, status proses diumumkan, serta CTA aman untuk
   forced-colors dan reduced-motion.
-- Source `27ea36a2724adebe996006882a465364543d78c9` pada branch
+- Source `27ea36a27a22de165758962be307ab4cdd0e125a` pada branch
   `codex/s175-sagabook-storefront-double-submit` sudah dipush. Backend 12/12
   (162 assertion), race 5/5, Playwright 4/4 termasuk regresi S154/S174 lintas
   tiga viewport, build/design 26/0, dan audit dependency lulus.

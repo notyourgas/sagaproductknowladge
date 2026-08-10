@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 10 Agustus 2026 11:20 WIB
+- Updated: 10 Agustus 2026 12:08 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED` untuk workflow yang tercantum di
   [PRODUCT](PRODUCT.md)
@@ -17,7 +17,7 @@ dalam satu dokumen public-safe.
   PRODUCTION_ACTIVATED`
 - Source kumulatif aktif: `f69170a7e61080f90a3bcea7df1f22f5612f0369`,
   release `20260809153848-f69170a`, rollback `20260809083131-5c76735`.
-- Candidate S175 `27ea36a2724adebe996006882a465364543d78c9`
+- Candidate S175 `27ea36a27a22de165758962be307ab4cdd0e125a`
   menutup gap double-submit di tahap Bayar. Dua klik cepat hanya memanggil
   write booking dan create-session masing-masing sekali; customer mendapat
   status proses yang terbaca screen reader dan CTA stabil pada forced-colors

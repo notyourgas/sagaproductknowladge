@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 10 Agustus 2026 11:20 WIB
+Evidence cut-off: 10 Agustus 2026 12:08 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -69,7 +69,7 @@ link. Operator mengelola calendar, task, check-in, session, payment,
 reconciliation, report, staff, tenant, dan subscription.
 
 Candidate SagaBook S175 source
-`27ea36a2724adebe996006882a465364543d78c9` membuat tahap Bayar tahan dua
+`27ea36a27a22de165758962be307ab4cdd0e125a` membuat tahap Bayar tahan dua
 aktivasi cepat: tombol terkunci selama write, status proses diumumkan ke screen
 reader, dan submit booking serta sesi pembayaran masing-masing terjadi sekali.
 Gate backend 12/12 (162 assertion), race 5/5, Playwright 4/4 lintas tiga
