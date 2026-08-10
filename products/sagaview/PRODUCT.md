@@ -263,6 +263,13 @@ tersebut dan meredaksi response record lama. Studio
     Playwright relevan 17/17, build/budget, reproduksi proses disposable, dan
     audit dependency lulus. Status `QA_VALIDATED / SECURITY_VALIDATED /
     LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
+    S174 source `691999568651118fbb82cc7124c563d10e4f3058`
+    memastikan kandidat backend dan Studio sudah ada secara exact pada branch
+    remote `origin/*`, bukan hanya bersih di lokal. Finalize mengulang gate dan
+    menolak drift commit atau path repository. Contract 6/6, unit 198/198,
+    Playwright 17/17, reproduksi Git disposable, build/budget, dan audit
+    dependency lulus. Status `QA_VALIDATED / SECURITY_VALIDATED /
+    LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
    S165 source `fcaf1547cc7c5765d7ed0a30a4d8e3ea69df3006`
    merapikan Changelog Owner menjadi arsip yang dapat dicari dan difilter,
    dengan tepat satu detail terbuka, empty-state yang dapat dipulihkan, serta
@@ -285,7 +292,7 @@ Menjadi ringkasan fakta kanonik SagaView. Detail lengkap berada di
 Fakta release di dokumen ini mengacu pada exact source dan runtime production
 yang diverifikasi sampai 11 Agustus 2026. Runtime aktif memakai backend S163
 `f3b07749` dan Studio estimate-only S159 `6d7083a3`; kandidat pascaproduksi
-S164-S173 belum dideploy.
+S164-S174 belum dideploy.
 
 ## Status production terbaru
 

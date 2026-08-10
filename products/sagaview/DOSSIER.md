@@ -633,6 +633,16 @@ build/budget, dan audit dependency lulus. Status `QA_VALIDATED /
 SECURITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production,
 backend/API/database, foto, output, dan boundary no-upload tidak berubah.
 
+Candidate S174 source `691999568651118fbb82cc7124c563d10e4f3058`
+menutup gap provenance kandidat pada harness fisik. Preflight kini mewajibkan
+HEAD, upstream `origin/*`, tracking commit, dan SHA remote identik untuk backend
+serta Studio. Finalize mengulang pemeriksaan live, termasuk path worktree, agar
+drift selama UAT berhenti fail-closed. Reproduksi Git disposable membedakan
+tanpa-upstream, pushed-exact, dan commit lokal belum dipush. Contract 6/6,
+unit 198/198, Playwright 17/17, parser, build/budget, dan audit dependency
+lulus. Status `QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; production dan boundary local-first tidak berubah.
+
 Changelog Studio candidate sekarang mengutamakan release terbaru, menyediakan
 pencarian, filter status, enam batch versi, satu detail terbuka, empty/reset
 recovery, dan CTA kembali ke Session. Source kumulatif `2bb868f` juga menutup

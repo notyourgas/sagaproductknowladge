@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-11 - SagaView S174 pushed-candidate UAT provenance
+
+- Preflight/finalize kini hanya menerima backend dan Studio yang HEAD,
+  upstream `origin/*`, tracking commit, serta SHA remote-nya exact.
+- Source `691999568651118fbb82cc7124c563d10e4f3058`; reproduksi Git
+  disposable, contract 6/6, unit 198/198, Playwright 17/17, build/budget, dan
+  dependency audit lulus.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production SagaView
+  tetap S163/S159 dan produk SagaDev lain tidak berubah.
+
 ## 2026-08-11 - SagaBook S181 WhatsApp reminder recovery
 
 - Retry reminder aman kini idempoten saat request terulang, status booking

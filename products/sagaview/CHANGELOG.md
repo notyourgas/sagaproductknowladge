@@ -1,5 +1,19 @@
 # SagaView Changelog
 
+## 2026-08-11 - S174 UAT pushed-candidate provenance gate
+
+- Before: HEAD dan worktree bersih dapat lolos walau branch belum punya
+  upstream atau commit kandidat belum ada pada remote.
+- After: backend dan Studio wajib exact pada HEAD, upstream `origin/*`, tracking
+  ref, serta SHA remote. Finalize mengulang pemeriksaan dan menolak path drift.
+- Evidence: source `691999568651118fbb82cc7124c563d10e4f3058`;
+  disposable Git menunjukkan tanpa-upstream ditolak, pushed-exact diterima,
+  dan commit lokal baru ditolak. Contract 6/6, unit 198/198, Playwright 17/17,
+  parser, build/budget, dan audit dependency lulus.
+- Status `QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Production tetap S163/S159; UAT fisik Windows dan
+  authenticated workspace belum dijalankan.
+
 ## 2026-08-11 - S173 UAT runtime-collision repair
 
 - Before: preflight mewajibkan Studio/API kandidat sudah merespons 200, tetapi

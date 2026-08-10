@@ -1,6 +1,19 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 11 Agustus 2026 02:41 WIB
+Evidence cut-off: 11 Agustus 2026 03:10 WIB
+
+UAT remote-provenance cut-off: 11 Agustus 2026 03:10 WIB. S174 source
+`691999568651118fbb82cc7124c563d10e4f3058` mengikat preflight dan
+finalize ke candidate yang sudah dipush: HEAD, upstream `origin/*`, tracking
+commit, dan SHA branch remote wajib sama. Finalize mengulang pemeriksaan live
+dan menolak path repository yang berganti. Reproduksi disposable membuktikan
+aturan lama menerima branch tanpa upstream, sedangkan gate baru menerima hanya
+state pushed-exact dan kembali memblokir commit lokal yang belum dipush.
+Focused contract 6/6, unit 198/198, Playwright 17/17, parser, build/budget
+299,7/450 KiB, serta audit dependency nol vulnerability lulus. Status
+`QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; production tetap S163/S159 dan UAT fisik manusia
+masih residual.
 
 UAT runtime-collision cut-off: 11 Agustus 2026 02:41 WIB. S173 source
 `b71d2008cb235f6aefedfe3897830616b0dca8f9` memperbaiki kontradiksi
