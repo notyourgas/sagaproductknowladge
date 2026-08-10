@@ -12,6 +12,21 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-10
 
+### SagaBook S172 Task Center primary action and recovery candidate
+
+- Ringkasan: Task Cepat sekarang membuat data melalui API/database, detail task
+  memiliki satu aksi utama per status, serta konflik stale dan retry ditangani
+  tanpa menimpa data terbaru atau menggandakan audit.
+- Klasifikasi `CONFIRMED`; source
+  `e111f40187a970cf6dc36cf76da5e25cbeaac55d`.
+- Gate: backend 16/16 (210 assertion), Task Center Playwright 6/6 tiga
+  viewport, Booking Detail functional regression 5/5, build/typecheck/design,
+  Pint, dan dependency audit lulus.
+- Production berubah: tidak. Status `SECURITY_VALIDATED / UIUX_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- File knowledge: PRODUCT, DOSSIER, CHANGELOG, FEATURE_COVERAGE_LEDGER,
+  portfolio/root changelog, master knowledge, dan SYNC_STATUS.
+
 ### SagaView S162 release rehearsal blocker closed
 
 - Ringkasan: rehearsal database kini memakai principal ephemeral scoped satu

@@ -78,6 +78,17 @@ Playwright 6/6 mobile/tablet/desktop, build/typecheck/design/format, dan audit
 dependency lulus. Status `SECURITY_VALIDATED / UIUX_VALIDATED /
 LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S170.
 
+Candidate SagaBook S172 source
+`e111f40187a970cf6dc36cf76da5e25cbeaac55d` menghidupkan Task Cepat dari UI
+sampai database dan kembali ke UI, serta menegakkan satu aksi utama sesuai
+status di Task Center. Update status memakai row lock dan versi waktu; stale
+write menerima 409 dengan data terbaru, double-submit diblok, retry hasil sama
+idempoten, dan permission/cabang tetap fail-closed. Gate backend 16/16 (210
+assertion), Task Center Playwright 6/6, Booking Detail functional regression
+5/5, build/typecheck/design/format, serta audit dependency lulus. Status
+`SECURITY_VALIDATED / UIUX_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; production tetap S170.
+
 Source production dan `main` S170
 `f69170a7e61080f90a3bcea7df1f22f5612f0369` menggabungkan S168 dan S169.
 Workflow production sekarang manual-only: backup run serta checksum restore

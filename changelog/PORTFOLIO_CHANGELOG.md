@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-10 - SagaBook S172 Task Center primary action and recovery
+
+- Task Cepat kini benar-benar membuat record melalui API/database, dan Task
+  Center hanya menonjolkan satu aksi utama sesuai status.
+- Status update memakai version check serta row lock; stale write ditolak,
+  retry hasil sama tidak membuat audit ganda, dan permission/cabang tetap
+  fail-closed. UI mempertahankan draft ketika akses ditolak.
+- Source `e111f40187a970cf6dc36cf76da5e25cbeaac55d` sudah dipush. Backend
+  16/16 (210 assertion), Task Center Playwright 6/6, Booking Detail functional
+  regression 5/5, build/typecheck/design/format, dan audit dependency lulus.
+- Status `SECURITY_VALIDATED / UIUX_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production SagaBook tetap S170.
+
 ## 2026-08-10 - SagaView S162 release rehearsal gate
 
 - Harness tidak lagi meminta user runtime production mengakses database

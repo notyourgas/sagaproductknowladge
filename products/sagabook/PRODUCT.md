@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 10 Agustus 2026 06:27 WIB
+Updated: 10 Agustus 2026 07:25 WIB
 Evidence status: production source and runtime verified
 
 ## Tujuan dokumen
@@ -16,6 +16,16 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
+- Candidate S172 `e111f40187a970cf6dc36cf76da5e25cbeaac55d` menghidupkan
+  pembuatan task cepat dari UI sampai database, menetapkan satu aksi utama
+  sesuai status di Task Center, dan memberi recovery ketika task berubah di
+  tab/perangkat lain. Update status memakai row lock serta versi waktu,
+  double-submit diblok, retry ke hasil yang sama idempoten, permission/cabang
+  tetap fail-closed, dan audit tidak berulang. Gate backend 16/16 (210
+  assertion), Task Center Playwright 6/6 mobile/tablet/desktop, Booking Detail
+  functional regression 5/5, build/typecheck/design/format, serta dependency
+  audit lulus. Status `SECURITY_VALIDATED / UIUX_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap S170.
 - Candidate S171 `33aa5261d23656fd452826f82cfef4eda377eca4` membuat
   nomor WhatsApp customer tersamarkan secara default di Dashboard, Booking
   list, dan Booking Detail. Akses lengkap hanya melalui tindakan eksplisit

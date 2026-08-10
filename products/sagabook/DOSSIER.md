@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 10 Agustus 2026 06:27 WIB
+- Updated: 10 Agustus 2026 07:25 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED` untuk workflow yang tercantum di
   [PRODUCT](PRODUCT.md)
@@ -17,6 +17,12 @@ dalam satu dokumen public-safe.
   PRODUCTION_ACTIVATED`
 - Source kumulatif aktif: `f69170a7e61080f90a3bcea7df1f22f5612f0369`,
   release `20260809153848-f69170a`, rollback `20260809083131-5c76735`.
+- Candidate S172 `e111f40187a970cf6dc36cf76da5e25cbeaac55d`
+  menyelesaikan alur create/update Task Center dari UI ke database dan kembali
+  ke UI. Detail task hanya menonjolkan satu aksi utama per status; stale write
+  ditolak dengan data terbaru, retry idempoten, draft bertahan saat permission
+  ditolak, dan cabang yang tidak didelegasikan tetap tidak dapat dimutasi.
+  Production belum berubah.
 - Candidate S171 `33aa5261d23656fd452826f82cfef4eda377eca4`
   menutup gap privasi admin: nomor customer dimasking pada payload dashboard
   dan hanya dibuka melalui aksi berizin, tenant/cabang-scoped, no-store, serta

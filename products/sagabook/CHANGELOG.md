@@ -1,5 +1,29 @@
 # SagaBook Changelog
 
+## 2026-08-10 - Task Center primary action and stale recovery S172 candidate
+
+- Keputusan Andreas `CONFIRMED`: gap Booking Detail/Task Center dikerjakan
+  berurutan dengan satu primary action, create/update nyata, conflict,
+  permission, retry, dan data-integrity sebagai gate.
+- Before: tombol Task Cepat tidak melakukan apa pun, kartu kanban memakai
+  kontrol interaktif bersarang, detail menampilkan beberapa aksi setara, dan
+  update status dapat menimpa perubahan lebih baru serta menggandakan audit.
+  After: dialog centered menyimpan melalui API, detail memilih tepat satu aksi
+  utama berdasarkan status, double-submit diblok, stale write mendapat 409 +
+  data terbaru, dan retry hasil sama menjadi no-op idempoten.
+- Source `e111f40187a970cf6dc36cf76da5e25cbeaac55d` pada branch
+  `codex/s172-sagabook-booking-task-primary` sudah dipush. Gate backend 16/16
+  (210 assertion), Task Center Playwright 6/6 pada 390x844, 768x1024, dan
+  1440x900, Booking Detail functional regression 5/5, build, typecheck,
+  design 26/0, Pint, npm dan Composer audit lulus.
+- Snapshot Booking list lama masih mencerminkan nomor tanpa masking sehingga
+  comparison terpisah drift setelah S171; baseline tidak ditimpa pada slice
+  ini. Functional/a11y Booking Detail tetap lulus.
+- Status `SECURITY_VALIDATED / UIUX_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Production tetap source S170/release
+  `20260809153848-f69170a`; tidak ada deploy, migration, data customer, atau
+  canary provider.
+
 ## 2026-08-10 - Admin customer PII masking S171 candidate
 
 - Keputusan Andreas `CONFIRMED`: Dashboard, Booking list, dan Booking Detail
