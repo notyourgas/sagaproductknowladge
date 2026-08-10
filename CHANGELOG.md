@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-11 - SagaBook S182 template publish recovery candidate
+
+- Menyinkronkan source `67a64df3503cde2116666bdeb14cc70c19d61d15`
+  sebagai kandidat publish template existing yang tahan double-submit dan retry
+  ambigu tanpa versi aktif atau audit kedua.
+- Klasifikasi `CONFIRMED`; backend/public contract 12/12 (156 assertion),
+  Playwright 2/2 + 10/10, build/design, Pint/diff, serta npm dan OSV nol
+  advisory.
+- Production berubah: tidak. Status `SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / UIUX_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`.
+
 ## 2026-08-11 - SagaView S174 pushed-candidate UAT provenance
 
 - Menyinkronkan source `691999568651118fbb82cc7124c563d10e4f3058`

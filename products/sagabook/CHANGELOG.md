@@ -1,5 +1,23 @@
 # SagaBook Changelog
 
+## 2026-08-11 - Template publish recovery S182 candidate
+
+- Gap roadmap template existing `CONFIRMED`; preset, sembilan langkah,
+  permission, dan schema tidak berubah.
+- Before: dua aktivasi UI dapat berlomba dan retry payload identik menulis audit
+  publish lagi. After: guard sinkron menghasilkan satu request, lock tenant
+  menserialkan publish, replay konten yang sama tidak membuat versi/audit kedua,
+  kegagalan mempertahankan draft, dan public booking membaca profil published
+  authoritative.
+- Source `67a64df3503cde2116666bdeb14cc70c19d61d15` pada branch
+  `codex/s182-sagabook-template-recovery` sudah dipush. Backend/public contract
+  12/12 (156 assertion), recovery Playwright 2/2, regresi editor/public
+  accessibility 10/10, build/design 26/0, Pint/diff, serta npm dan OSV nol
+  advisory.
+- Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / UIUX_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Production tetap S170; tidak
+  ada migration, credential/data customer, activation, atau deploy.
+
 ## 2026-08-11 - WhatsApp reminder recovery S181 candidate
 
 - Mandat peningkatan reliability Andreas `CONFIRMED`; routing/provider policy,

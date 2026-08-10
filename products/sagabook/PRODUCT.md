@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 11 Agustus 2026 02:43 WIB
+Updated: 11 Agustus 2026 03:21 WIB
 Evidence status: production source and runtime verified
 
 ## Tujuan dokumen
@@ -16,6 +16,17 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
+- Candidate S182 `67a64df3503cde2116666bdeb14cc70c19d61d15`
+  membuat publish template existing aman terhadap aktivasi ganda dan retry
+  setelah respons ambigu. Payload yang sama mengembalikan profil authoritative
+  dengan `replayed=true`, tanpa versi aktif atau audit publish kedua; kegagalan
+  tetap mempertahankan draft dan membuka retry. Public booking membaca profil
+  published yang sama, sementara Staff dan Owner tenant lain tetap ditolak.
+  Backend/public contract 12/12 (156 assertion), Playwright recovery 2/2 dan
+  regresi template/accessibility 10/10, build/design 26/0, serta npm/OSV nol
+  advisory. Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
+  UIUX_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+  tetap S170.
 - Candidate S181 `34006a5a4a692778176834394ddee224e50193d9`
   memperjelas recovery reminder WhatsApp di dashboard admin. Status booking
   tetap berlaku ketika notifikasi gagal; kode internal diganti penyebab yang

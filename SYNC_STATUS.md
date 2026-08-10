@@ -12,21 +12,21 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-11T03:10:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-11T03:21:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `ded7ed9115a70154b42ccb062f3811e8ce23e359` |
-| Informasi terakhir disinkronkan | SagaView S174 source `691999568651118fbb82cc7124c563d10e4f3058` mengikat preflight/finalize UAT ke kandidat pushed-exact; status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED` dan production tetap S163/S159. |
+| Baseline sebelum pembaruan | `eb9fa2f9ff414efc0af9ef81986fc201fa100b0c` |
+| Informasi terakhir disinkronkan | SagaBook S182 source `67a64df3503cde2116666bdeb14cc70c19d61d15` menutup double-submit dan retry ambigu pada publish template existing tanpa versi aktif atau audit kedua; status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED` dan production tetap S170. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, fast-forward ke `main`, push, dan remote verification. |
-| Konflik | Tidak ada konflik kanonik; fast-forward mempertahankan SagaBook S181 dan seluruh histori SagaView sebelumnya. |
-| Error | Tidak ada error source atau validator yang diketahui. Runtime production SagaView tidak diubah. |
+| Konflik | Tidak ada konflik kanonik; fast-forward mempertahankan SagaView S174, SagaBook S181, dan seluruh histori sebelumnya. |
+| Error | Tidak ada error source atau validator yang diketahui. Runtime production SagaBook tidak diubah. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/sagaview/PRODUCT.md`
-- `products/sagaview/DOSSIER.md`
-- `products/sagaview/CHANGELOG.md`
-- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `SYNC_STATUS.md`
@@ -34,10 +34,10 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 ## File dari sinkronisasi sebelumnya
 
-- `products/sagabook/PRODUCT.md`
-- `products/sagabook/DOSSIER.md`
-- `products/sagabook/CHANGELOG.md`
-- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/DOSSIER.md`
+- `products/sagaview/CHANGELOG.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `SYNC_STATUS.md`

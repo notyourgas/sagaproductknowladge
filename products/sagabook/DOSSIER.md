@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 11 Agustus 2026 02:43 WIB
+- Updated: 11 Agustus 2026 03:21 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED` untuk workflow yang tercantum di
   [PRODUCT](PRODUCT.md)
@@ -17,6 +17,14 @@ dalam satu dokumen public-safe.
   PRODUCTION_ACTIVATED`
 - Source kumulatif aktif: `f69170a7e61080f90a3bcea7df1f22f5612f0369`,
   release `20260809153848-f69170a`, rollback `20260809083131-5c76735`.
+- Candidate S182 `67a64df3503cde2116666bdeb14cc70c19d61d15`
+  menambahkan guard sinkron pada tombol draft/publish dan serialisasi publish
+  per tenant. Retry konten published yang sama menjadi replay no-op untuk
+  profil/audit, UI menjelaskan bahwa versi authoritative sudah aktif, dan
+  respons gagal tetap menjaga draft. Public read-after-write, permission dan
+  tenant-negative, tiga viewport, forced-colors, reduced-motion, target 44 px,
+  serta lima preset existing lulus. Tidak ada schema, preset, workflow, data
+  customer, atau runtime production yang berubah.
 - Candidate S181 `34006a5a4a692778176834394ddee224e50193d9`
   membuat retry reminder aman terhadap double activation dan request replay.
   Write pertama tetap memakai transaction/row lock; replay state yang sama

@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-11 - SagaBook S182 template publish recovery
+
+- Publish template existing kini mengunci aktivasi ganda, menjaga draft setelah
+  kegagalan, dan mengembalikan replay authoritative tanpa versi atau audit
+  kedua.
+- Source `67a64df3503cde2116666bdeb14cc70c19d61d15` sudah dipush. Backend/public
+  contract 12/12, Playwright recovery 2/2, regresi template/accessibility 10/10,
+  build/design, dan audit dependency lulus.
+- Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / UIUX_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production SagaBook tetap S170
+  dan produk SagaDev lain tidak berubah.
+
 ## 2026-08-11 - SagaView S174 pushed-candidate UAT provenance
 
 - Preflight/finalize kini hanya menerima backend dan Studio yang HEAD,
