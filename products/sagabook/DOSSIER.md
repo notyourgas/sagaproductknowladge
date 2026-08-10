@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 10 Agustus 2026 07:25 WIB
+- Updated: 10 Agustus 2026 08:41 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED` untuk workflow yang tercantum di
   [PRODUCT](PRODUCT.md)
@@ -17,6 +17,12 @@ dalam satu dokumen public-safe.
   PRODUCTION_ACTIVATED`
 - Source kumulatif aktif: `f69170a7e61080f90a3bcea7df1f22f5612f0369`,
   release `20260809153848-f69170a`, rollback `20260809083131-5c76735`.
+- Candidate S173 `e70b2389a7488d7e9d30a399cb1863a8bd8fc4dc`
+  membuat posisi customer konsisten dengan sembilan langkah workflow tanpa
+  mengubah urutan, aksi lanjut/kembali, skip Background, API, atau database.
+  Marker selesai/aktif/berikutnya/lewati tetap terbaca pada forced-colors dan
+  oleh screen reader; canvas tetap maksimum 460 piksel pada mobile, tablet,
+  dan desktop. Production belum berubah.
 - Candidate S172 `e111f40187a970cf6dc36cf76da5e25cbeaac55d`
   menyelesaikan alur create/update Task Center dari UI ke database dan kembali
   ke UI. Detail task hanya menonjolkan satu aksi utama per status; stale write
@@ -59,7 +65,15 @@ dalam satu dokumen public-safe.
   dependency, backup/restore, public smoke, service health, dan rollback.
   Model, prompt, provider, dan KB tidak diubah oleh release ini.
 
-### Candidate S171, release S170, dan histori terkait
+### Candidate S173-S171, release S170, dan histori terkait
+- S173 `e70b2389` mengganti indikator lima label yang menggabungkan tiga
+  langkah menjadi perjalanan sembilan langkah kanonik. Header memakai bentuk
+  ringkas `Langkah X/9`, progressbar menyatakan nilai serta nama langkah, dan
+  daftar semantik membedakan state tanpa warna saja. Focused 5/5, regresi
+  visual seluruh layar dan template accessibility pada 390x844, 768x1024,
+  1440x900, build/typecheck/design 26/0, backend 12/12 (136 assertion), serta
+  npm/Composer audit lulus. Status `SECURITY_VALIDATED / UIUX_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S170.
 - S171 `33aa5261` mengubah Dashboard, Booking list, dan Booking Detail menjadi
   secure-by-default untuk nomor WhatsApp customer. Tampilkan, Salin, dan CTA
   WhatsApp memakai endpoint akses eksplisit; respons tidak dicache, reveal

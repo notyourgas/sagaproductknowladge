@@ -1042,3 +1042,17 @@ keputusan pengganti.
 | Pemberi keputusan | Andreas / founder |
 | Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; belum `BUSINESS_READY` |
 | Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [SagaBook Changelog](products/sagabook/CHANGELOG.md), [SagaBook Ledger](products/sagabook/FEATURE_COVERAGE_LEDGER.md) |
+
+## DEC-074 - Indikator booking SagaBook mengikuti sembilan langkah universal
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-10 |
+| Topik | Konsistensi progress customer dengan workflow booking |
+| Keputusan | Indikator customer harus memakai urutan Lokasi, Paket, Jadwal, Background, Add-on, Detail, Review, Bayar, dan Selesai yang sama dengan workflow universal. Preset tetap hanya mengubah skin/data; fungsi lanjut/kembali dan skip Background tidak diubah. |
+| Alasan | Indikator lima label sebelumnya membuat Background, Add-on, dan Review terlihat seolah menjadi Detail, sehingga posisi customer membingungkan. |
+| Alternatif yang dipertimbangkan | Mempertahankan lima label; hanya menampilkan angka tanpa state; mengubah workflow agar mengikuti indikator lama. |
+| Dampak | Storefront memakai progressbar dan sembilan marker semantik dengan state selesai, aktif, berikutnya, dan lewati; baseline visual/accessibility diperbarui. API, backend, database, payment, tenant, permission, dan production tidak berubah. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / UIUX_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; source `e70b2389a7488d7e9d30a399cb1863a8bd8fc4dc` |
+| Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [SagaBook Changelog](products/sagabook/CHANGELOG.md), [SagaBook Ledger](products/sagabook/FEATURE_COVERAGE_LEDGER.md) |

@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 10 Agustus 2026 07:25 WIB
+Updated: 10 Agustus 2026 08:41 WIB
 Evidence status: production source and runtime verified
 
 ## Tujuan dokumen
@@ -16,6 +16,16 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
+- Candidate S173 `e70b2389a7488d7e9d30a399cb1863a8bd8fc4dc`
+  menyelaraskan indikator customer dengan sembilan langkah universal: Lokasi,
+  Paket, Jadwal, Background, Add-on, Detail, Review, Bayar, dan Selesai.
+  Sebelumnya Background, Add-on, dan Review digabung ke label Detail; sekarang
+  progress, marker, dan announcement screen reader memakai sumber langkah yang
+  sama, termasuk status Background yang tidak diperlukan. Focused 5/5,
+  baseline sembilan layar serta template accessibility lintas tiga viewport,
+  build/typecheck/design 26/0, backend 12/12 (136 assertion), dan audit
+  dependency lulus. Status `SECURITY_VALIDATED / UIUX_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S170.
 - Candidate S172 `e111f40187a970cf6dc36cf76da5e25cbeaac55d` menghidupkan
   pembuatan task cepat dari UI sampai database, menetapkan satu aksi utama
   sesuai status di Task Center, dan memberi recovery ketika task berubah di

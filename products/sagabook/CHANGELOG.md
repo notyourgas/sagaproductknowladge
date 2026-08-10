@@ -1,5 +1,23 @@
 # SagaBook Changelog
 
+## 2026-08-10 - Universal nine-step booking progress S173 candidate
+
+- Keputusan Andreas `CONFIRMED`: indikator customer harus mengikuti sembilan
+  langkah workflow universal tanpa redesign atau perubahan alur booking.
+- Before: progress hanya mempunyai lima label dan memetakan Background,
+  Add-on, serta Review ke Detail. After: header, progressbar, sembilan marker,
+  dan announcement screen reader memakai urutan Lokasi sampai Selesai yang
+  sama; Background yang tidak diperlukan memiliki status lewati tersendiri.
+- Source `e70b2389a7488d7e9d30a399cb1863a8bd8fc4dc` pada branch
+  `codex/s173-sagabook-booking-progress` sudah dipush. Focused 5/5; visual
+  seluruh layar dan template accessibility pada 390x844, 768x1024, 1440x900;
+  build/typecheck/design 26/0; backend 12/12 (136 assertion); npm/Composer
+  audit lulus.
+- Status `SECURITY_VALIDATED / UIUX_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Production tetap source S170/release
+  `20260809153848-f69170a`; workflow, API, database, payment, permission,
+  tenant, dan subscription tidak berubah.
+
 ## 2026-08-10 - Task Center primary action and stale recovery S172 candidate
 
 - Keputusan Andreas `CONFIRMED`: gap Booking Detail/Task Center dikerjakan

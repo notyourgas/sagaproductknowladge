@@ -193,6 +193,15 @@ browser production mobile/desktop. Website booking tenant trial diaktifkan
 setelah pre-publish readiness 100; rollback `20260803194351-d70fc1e` tersedia.
 Business readiness menunggu copy alamat final dan booking nyata terkontrol.
 
+Candidate SagaBook S173 source
+`e70b2389a7488d7e9d30a399cb1863a8bd8fc4dc` belum production. Indikator
+customer sekarang mengikuti sembilan langkah kanonik Lokasi, Paket, Jadwal,
+Background, Add-on, Detail, Review, Bayar, dan Selesai. Marker serta
+announcement membedakan selesai, aktif, berikutnya, dan Background yang tidak
+diperlukan tanpa mengubah workflow, API, database, payment, tenant, atau
+permission. Status `SECURITY_VALIDATED / UIUX_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; production SagaBook tetap S170.
+
 Release SagaBook sebelumnya adalah source kumulatif
 `0894df00f6866688db4d053758a99d54ba4e8908`, release
 `20260806152606-0894df0`, dan kini menjadi rollback release S156. S123 menutup

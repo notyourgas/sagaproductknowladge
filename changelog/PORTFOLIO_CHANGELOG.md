@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-10 - SagaBook S173 nine-step booking progress
+
+- Indikator booking customer sekarang menampilkan sembilan langkah universal,
+  bukan lima label yang menggabungkan Background, Add-on, dan Review.
+- Source `e70b2389a7488d7e9d30a399cb1863a8bd8fc4dc` sudah dipush. Focused
+  5/5, visual seluruh layar dan template accessibility lintas tiga viewport,
+  build/typecheck/design, backend 12/12, serta audit dependency lulus.
+- Status `SECURITY_VALIDATED / UIUX_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production SagaBook tetap S170 dan belum
+  `BUSINESS_READY`.
+
 ## 2026-08-10 - SagaView S163 release route contract
 
 - Source `f3b077499c356e1fff6f6a9095116cd9e9446ead` membatasi acceptance

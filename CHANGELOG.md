@@ -12,6 +12,21 @@ Root changelog tidak menggantikan changelog produk atau portfolio.
 
 ## 2026-08-10
 
+### SagaBook S173 universal booking progress candidate
+
+- Ringkasan: progress customer kini memakai sembilan langkah kanonik yang sama
+  dengan workflow, termasuk state selesai, aktif, berikutnya, dan Background
+  yang tidak diperlukan.
+- Klasifikasi `CONFIRMED`; source
+  `e70b2389a7488d7e9d30a399cb1863a8bd8fc4dc`.
+- Gate: focused 5/5, visual seluruh layar dan template accessibility tiga
+  viewport, build/typecheck/design 26/0, backend 12/12 (136 assertion), serta
+  npm/Composer audit lulus.
+- Production berubah: tidak. Status `SECURITY_VALIDATED / UIUX_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- File knowledge: PRODUCT, DOSSIER, CHANGELOG, FEATURE_COVERAGE_LEDGER,
+  portfolio/root changelog, master knowledge, DECISIONS, dan SYNC_STATUS.
+
 ### SagaView S163 release route contract
 
 - Ringkasan: acceptance release sekarang memeriksa namespace SagaVIEW, bukan
