@@ -1,6 +1,6 @@
 # SagaView Product Knowledge
 
-Updated: 10 Agustus 2026
+Updated: 11 Agustus 2026
 Evidence status: production deployed; activation/authenticated UAT residual;
 frame import-order,
 compact all-menu, workspace Session/Output/Izin Foto monitor besar, free drag
@@ -270,6 +270,14 @@ tersebut dan meredaksi response record lama. Studio
     Playwright 17/17, reproduksi Git disposable, build/budget, dan audit
     dependency lulus. Status `QA_VALIDATED / SECURITY_VALIDATED /
     LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
+    S175 source `ab1d884a77872869f64a0b5c724940b2643f4f50`
+    mengikat UAT ke build Studio yang benar-benar hidup, bukan sekadar endpoint
+    HTTP 200. Build menyematkan exact source commit; marker read-only/no-cache
+    diperiksa saat preflight dan finalize. Unit/contract 201/201, focused 9/9,
+    Playwright 19 pass/1 intentional skip, exact-commit runtime smoke,
+    build/budget, dan audit dependency lulus. Status `QA_VALIDATED /
+    SECURITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+    production dan data customer tidak berubah. Marker backend masih residual.
    S165 source `fcaf1547cc7c5765d7ed0a30a4d8e3ea69df3006`
    merapikan Changelog Owner menjadi arsip yang dapat dicari dan difilter,
    dengan tepat satu detail terbuka, empty-state yang dapat dipulihkan, serta
@@ -292,7 +300,7 @@ Menjadi ringkasan fakta kanonik SagaView. Detail lengkap berada di
 Fakta release di dokumen ini mengacu pada exact source dan runtime production
 yang diverifikasi sampai 11 Agustus 2026. Runtime aktif memakai backend S163
 `f3b07749` dan Studio estimate-only S159 `6d7083a3`; kandidat pascaproduksi
-S164-S174 belum dideploy.
+S164-S175 belum dideploy.
 
 ## Status production terbaru
 

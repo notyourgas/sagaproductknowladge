@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-11 - SagaView S175 Studio runtime provenance
+
+- Menyinkronkan source `ab1d884a77872869f64a0b5c724940b2643f4f50`
+  yang mengikat preflight/finalize ke exact build Studio melalui marker
+  read-only/no-cache, bukan sekadar HTTP 200.
+- Klasifikasi `CONFIRMED`; exact-commit runtime smoke, focused 9/9, unit
+  201/201, Playwright 19 pass/1 intentional skip, build/budget, dan audit
+  dependency lulus.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak
+  berubah, marker backend dan UAT fisik/authenticated tetap residual.
+
 ## 2026-08-11 - SagaBook S182 template publish recovery candidate
 
 - Menyinkronkan source `67a64df3503cde2116666bdeb14cc70c19d61d15`

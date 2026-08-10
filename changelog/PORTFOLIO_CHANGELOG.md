@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-11 - SagaView S175 Studio runtime commit provenance
+
+- Preflight/finalize kini membuktikan build Studio hidup berasal dari exact
+  candidate SHA melalui marker read-only/no-cache, bukan hanya HTTP 200.
+- Source `ab1d884a77872869f64a0b5c724940b2643f4f50`; exact runtime smoke,
+  focused 9/9, unit 201/201, Playwright 19 pass/1 intentional skip,
+  build/budget, dan dependency audit lulus.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production SagaView
+  tetap S163/S159 dan produk SagaDev lain tidak berubah.
+
 ## 2026-08-11 - SagaBook S182 template publish recovery
 
 - Publish template existing kini mengunci aktivasi ganda, menjaga draft setelah

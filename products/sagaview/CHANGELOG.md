@@ -1,5 +1,23 @@
 # SagaView Changelog
 
+## 2026-08-11 - S175 Studio runtime commit provenance
+
+- Before: worktree/remote sudah exact, tetapi runtime Studio hanya diwajibkan
+  merespons HTTP 200 sehingga server atau build lama pada port yang sama dapat
+  terlihat sebagai kandidat.
+- After: build menyematkan exact source SHA; endpoint read-only/no-cache
+  `/api/runtime-provenance` diverifikasi saat preflight dan finalize. Marker
+  hilang, produk/commit salah, atau build/URL yang berganti berhenti
+  fail-closed.
+- Evidence: source `ab1d884a77872869f64a0b5c724940b2643f4f50` sudah
+  dipush exact; preview commit final mengembalikan HTTP 200,
+  `sagaview-studio`, dan SHA yang sama. Focused 9/9, unit 201/201, Playwright
+  19 pass/1 intentional skip, parser, format/lint/typecheck, build/budget, dan
+  audit dependency lulus.
+- Status `QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Production tetap S163/S159; marker backend dan
+  UAT fisik/authenticated tetap residual.
+
 ## 2026-08-11 - S174 UAT pushed-candidate provenance gate
 
 - Before: HEAD dan worktree bersih dapat lolos walau branch belum punya

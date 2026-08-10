@@ -465,6 +465,9 @@ ketika keputusan atau release baru menutup gap.
   atomic write, quota, permission, recovery, serta no-upload guarantee.
   Harness S172 source `1a6d1d0b7ed7959321c902d7d561938642efcee0`
   sudah mengikat exact candidate dan 14 gate tersebut secara fail-closed;
+  S175 source `ab1d884a77872869f64a0b5c724940b2643f4f50` juga sudah
+  mengikat respons runtime Studio ke exact build commit. Marker exact runtime
+  backend belum tersedia dan tetap menjadi gap release,
   residual sekarang adalah eksekusi UAT fisik dengan dataset sintetis,
   operator/reviewer sign-off, dan authenticated workspace nyata.
 

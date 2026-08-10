@@ -1,6 +1,19 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 11 Agustus 2026 03:10 WIB
+Evidence cut-off: 11 Agustus 2026 04:13 WIB
+
+Studio runtime-provenance cut-off: 11 Agustus 2026 04:13 WIB. S175 source
+`ab1d884a77872869f64a0b5c724940b2643f4f50` menyematkan exact source
+commit ke build Studio dan menyediakan marker read-only, no-cache
+`/api/runtime-provenance`. Preflight kini menolak marker tidak terjangkau,
+produk salah, atau commit berbeda; finalize membaca marker lagi dan menolak
+build/URL yang berganti. Exact-commit preview memberi HTTP 200, produk
+`sagaview-studio`, dan SHA S175. Unit/contract 201/201, focused 9/9,
+Playwright relevan 19 pass/1 intentional skip, parser, format/lint/typecheck,
+build/budget 299,7/450 KiB, serta audit dependency nol vulnerability lulus.
+Status `QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; production tetap S163/S159. Marker exact backend
+dan UAT fisik/authenticated masih residual.
 
 UAT remote-provenance cut-off: 11 Agustus 2026 03:10 WIB. S174 source
 `691999568651118fbb82cc7124c563d10e4f3058` mengikat preflight dan

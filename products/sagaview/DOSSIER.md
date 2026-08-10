@@ -643,6 +643,20 @@ unit 198/198, Playwright 17/17, parser, build/budget, dan audit dependency
 lulus. Status `QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
 IMPLEMENTED_NOT_DEPLOYED`; production dan boundary local-first tidak berubah.
 
+Candidate S175 source `ab1d884a77872869f64a0b5c724940b2643f4f50`
+menutup gap identitas runtime Studio pada harness fisik. Build menyematkan exact
+source commit dari environment release, marker `.release-commit`, atau HEAD Git
+lokal. Endpoint read-only/no-cache `/api/runtime-provenance` hanya mengembalikan
+produk dan SHA; preflight/finalize menolak marker hilang, produk salah, commit
+berbeda, serta marker URL/build yang berganti. Exact-commit preview
+mengembalikan HTTP 200, `sagaview-studio`, dan SHA S175. Focused 9/9,
+unit/contract 201/201, Playwright relevan 19 pass/1 intentional skip, parser,
+format/lint/typecheck, build/budget 299,7/450 KiB, dan audit dependency nol
+vulnerability lulus. Status `QA_VALIDATED / SECURITY_VALIDATED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production, backend, foto/path,
+output, metadata cloud, dan kontrak pembayaran off-app tidak berubah. Marker
+exact runtime backend masih residual.
+
 Changelog Studio candidate sekarang mengutamakan release terbaru, menyediakan
 pencarian, filter status, enam batch versi, satu detail terbuka, empty/reset
 recovery, dan CTA kembali ke Session. Source kumulatif `2bb868f` juga menutup
