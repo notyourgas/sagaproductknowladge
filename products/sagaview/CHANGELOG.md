@@ -1,5 +1,22 @@
 # SagaView Changelog
 
+## 2026-08-10 - S172 Windows physical UAT harness v2
+
+- Before: harness fisik mengunci default backend lama, hanya mewajibkan 200
+  foto, dan masih memasukkan receipt WhatsApp/provider yang bukan kontrak
+  SagaVIEW.
+- After: backend dan Studio commit wajib exact; checklist v2 memiliki 14 gate
+  untuk 50/200/500, permission/crash/output/quota/disk/offline/no-upload,
+  isolasi sesi, dual runtime, serta printer portrait/landscape. Evidence teks
+  sensitif dan checklist di luar root ditolak.
+- Evidence: source `1a6d1d0b7ed7959321c902d7d561938642efcee0`;
+  simulation ready tetap blocked untuk release, low disk exit 2, finalize
+  simulation ditolak, unit/contract 196/196, Playwright relevan 17/17, build,
+  bundle 299,7/450 KiB, dan audit dependency nol vulnerability lulus.
+- Status `QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Production tetap S163/S159; UAT fisik Windows dan
+  authenticated workspace belum dijalankan.
+
 ## 2026-08-10 - S171 Studio S170 release rehearsal
 
 - Before: S170 sudah lulus quality gate, tetapi belum mempunyai arsip release

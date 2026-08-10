@@ -463,6 +463,10 @@ ketika keputusan atau release baru menutup gap.
   dari frame selection sampai owner dashboard/entitlement. Untuk ingest foto,
   editor, recovery, dan export, bukti wajib tetap memakai boundary local-first,
   atomic write, quota, permission, recovery, serta no-upload guarantee.
+  Harness S172 source `1a6d1d0b7ed7959321c902d7d561938642efcee0`
+  sudah mengikat exact candidate dan 14 gate tersebut secara fail-closed;
+  residual sekarang adalah eksekusi UAT fisik dengan dataset sintetis,
+  operator/reviewer sign-off, dan authenticated workspace nyata.
 
 - `NEEDS CONFIRMATION`: `DEC-038` aktif pada backend
   `20260805203055-9ee5bcc` dan Studio `20260805203055-2121ebb` setelah backup,

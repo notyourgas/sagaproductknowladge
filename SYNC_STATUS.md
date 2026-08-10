@@ -12,23 +12,24 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-10T21:18:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-10T23:12:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `3e9279cc72116aacd70e09b460d93ad2ca562014` |
-| Informasi terakhir disinkronkan | SagaBook S179 source `7eac46e4681a48caa479bc02e859f7165257b192` menyatukan kamus status pembayaran; status `IMPLEMENTED_NOT_DEPLOYED` dan production tetap S170. |
+| Baseline sebelum pembaruan | `751913364fb399be5a365db93bf12eb7dd38668d` |
+| Informasi terakhir disinkronkan | SagaView S172 source `1a6d1d0b7ed7959321c902d7d561938642efcee0` memperbarui harness Windows menjadi exact-candidate dan 14 gate local-first; status `IMPLEMENTED_NOT_DEPLOYED` dan production tetap S163/S159. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, fast-forward ke `main`, push, dan remote verification. |
 | Konflik | Tidak ada konflik kanonik; perubahan SagaView terbaru dipertahankan melalui merge tanpa overwrite. |
-| Error | Tidak ada error source atau validator yang diketahui. Runtime dan production SagaBook tidak diubah. |
+| Error | Tidak ada error source atau validator yang diketahui. Runtime production SagaView dan SagaBook tidak diubah. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/sagabook/PRODUCT.md`
-- `products/sagabook/DOSSIER.md`
-- `products/sagabook/CHANGELOG.md`
-- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/DOSSIER.md`
+- `products/sagaview/CHANGELOG.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
 - `SYNC_STATUS.md`
 - `CHANGELOG.md`
 

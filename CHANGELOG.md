@@ -1,5 +1,15 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-10 - SagaView S172 Windows UAT harness v2
+
+- Menyinkronkan source `1a6d1d0b7ed7959321c902d7d561938642efcee0`
+  sebagai harness exact-candidate untuk 14 gate local-first/recovery Windows.
+- Klasifikasi `CONFIRMED`; unit/contract 196/196, Playwright relevan 17/17,
+  simulation fail-closed, build/budget, dan audit dependency lulus.
+- Production berubah: tidak. Status `QA_VALIDATED / SECURITY_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; physical/authenticated UAT tetap
+  residual.
+
 ## 2026-08-10 - SagaBook S179 payment status dictionary candidate
 
 - Menyinkronkan source `7eac46e4681a48caa479bc02e859f7165257b192`

@@ -1,7 +1,8 @@
 # SagaView Product Knowledge
 
 Updated: 10 Agustus 2026
-Evidence status: production deployed + production activated; frame import-order,
+Evidence status: production deployed; activation/authenticated UAT residual;
+frame import-order,
 compact all-menu, workspace Session/Output/Izin Foto monitor besar, free drag
 rotation, pemisahan Simpan Draft/Publish Frame, limit Growth 50/Pro 100,
 portable frame template, bulk export, server ZIP untuk tiga sampai 100 pilihan,
@@ -243,8 +244,18 @@ tersebut dan meredaksi response record lama. Studio
    server/client, budget bundle, smoke route kanonik, switch lokal, dan
    rollback ke S159 lulus. Preflight production read-only tetap menunjukkan
    S163/S159 sehat dan rollback tersedia. Status
-   `RELEASE_REHEARSAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production belum
-   diubah karena UAT fisik Windows dan authenticated workspace masih residual.
+    `RELEASE_REHEARSAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production belum
+    diubah karena UAT fisik Windows dan authenticated workspace masih residual.
+    S172 source `1a6d1d0b7ed7959321c902d7d561938642efcee0`
+    memutakhirkan harness UAT fisik agar commit backend dan Studio wajib exact,
+    lalu menguji 50/200/500 foto, permission revoke, crash, output read-only,
+    quota/disk penuh, offline, no-upload, isolasi 10 sesi, dual runtime, serta
+    dua orientasi printer. Gate receipt WhatsApp/provider lama dihapus karena
+    bukan kontrak SagaVIEW. Unit/contract 196/196, Playwright relevan 17/17,
+    build/budget, simulation fail-closed, dan audit dependency lulus. Status
+    `QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+    IMPLEMENTED_NOT_DEPLOYED`; production S163/S159 tidak berubah dan UAT fisik
+    tetap harus dijalankan manusia.
    S165 source `fcaf1547cc7c5765d7ed0a30a4d8e3ea69df3006`
    merapikan Changelog Owner menjadi arsip yang dapat dicari dan difilter,
    dengan tepat satu detail terbuka, empty-state yang dapat dipulihkan, serta
@@ -266,8 +277,8 @@ Menjadi ringkasan fakta kanonik SagaView. Detail lengkap berada di
 
 Fakta release di dokumen ini mengacu pada exact source dan runtime production
 yang diverifikasi sampai 10 Agustus 2026. Runtime aktif memakai backend S163
-`f3b07749` dan Studio estimate-only S159 `6d7083a3`; kandidat UI S164-S167
-belum dideploy.
+`f3b07749` dan Studio estimate-only S159 `6d7083a3`; kandidat pascaproduksi
+S164-S172 belum dideploy.
 
 ## Status production terbaru
 

@@ -997,6 +997,16 @@ Clean install, build server/client, budget bundle, smoke route kanonik, switch
 lokal, rollback ke S159, dan preflight production read-only lulus. Status
 `RELEASE_REHEARSAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap
 S163/S159 hingga UAT fisik Windows dan authenticated workspace selesai.
+S172 source `1a6d1d0b7ed7959321c902d7d561938642efcee0` memperbarui harness
+Windows menjadi checklist v2 dengan exact backend/Studio commit dan 14 gate:
+50/200/500 foto, permission revoke, crash recovery, output read-only,
+quota/disk-full, offline/no-upload, isolasi 10 sesi, dual runtime, serta printer
+portrait/landscape. Receipt WhatsApp/provider lama dikeluarkan karena SagaVIEW
+tidak memproses pembayaran. Simulation tetap fail-closed dan hasil physical
+tertinggi hanya siap untuk review manusia. Unit/contract 196/196, Playwright
+relevan 17/17, build/budget, dan audit dependency lulus. Status
+`QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; production S163/S159 tidak berubah.
 Harga bulanan: Growth Rp200.000, Pro Rp500.000.
 Growth mencakup 1 device, 50 frame, 3 preset, offline 24 jam, dan 2 GB aset
 frame cloud. Pro mencakup 4 device, 100 frame, 10 preset, offline 168 jam, 10 GB

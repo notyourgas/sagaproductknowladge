@@ -609,6 +609,20 @@ visual 390x844 dan 1440x900, Axe/forced-colors/reduced-motion, build/budget,
 serta npm audit lulus. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
 production S163, backend/API/database, dan boundary no-upload tidak berubah.
 
+Candidate S172 source `1a6d1d0b7ed7959321c902d7d561938642efcee0`
+menutup debt acceptance pada harness Windows. Dua commit kandidat kini wajib
+exact dan worktree bersih; checklist v2 memerlukan 14 gate untuk 50/200/500
+foto, permission revoke, crash recovery, output read-only, quota/disk-full,
+offline/no-upload, 10 sesi tanpa state silang, dual runtime, serta print
+portrait/landscape. JSON/TXT evidence yang memuat path, identitas, credential,
+filename, atau payload foto ditolak. Gate receipt WhatsApp/provider lama
+dihapus karena pembayaran berlangsung di luar aplikasi. Simulation tetap tidak
+dapat dipromosikan dan hasil physical tertinggi hanya
+`ready_for_human_release_review`. Unit/contract 196/196, Playwright relevan
+17/17, build/budget, parser, simulation negative, dan audit dependency lulus.
+Status `QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; production S163/S159 tidak berubah.
+
 Changelog Studio candidate sekarang mengutamakan release terbaru, menyediakan
 pencarian, filter status, enam batch versi, satu detail terbuka, empty/reset
 recovery, dan CTA kembali ke Session. Source kumulatif `2bb868f` juga menutup

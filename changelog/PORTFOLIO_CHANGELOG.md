@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-10 - SagaView S172 Windows UAT harness v2
+
+- Harness kandidat kini mengikat exact backend/Studio commit dan 14 gate
+  local-first untuk workload 50/200/500, recovery Windows, no-upload, isolasi
+  sesi, serta print; receipt payment/provider lama dikeluarkan dari acceptance.
+- Source `1a6d1d0b7ed7959321c902d7d561938642efcee0` sudah dipush. Unit/contract
+  196/196, Playwright relevan 17/17, simulation fail-closed, build/budget, dan
+  audit dependency lulus.
+- Status `QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production SagaView tetap S163/S159 dan SagaBook
+  tidak berubah.
+
 ## 2026-08-10 - SagaBook S179 unified payment status dictionary
 
 - Booking Detail customer, Booking Detail admin, dan Payment Monitor kini

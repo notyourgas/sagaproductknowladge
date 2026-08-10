@@ -1,6 +1,19 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 10 Agustus 2026 21:12 WIB
+Evidence cut-off: 10 Agustus 2026 23:12 WIB
+
+Windows UAT harness cut-off: 10 Agustus 2026 23:12 WIB. S172 source
+`1a6d1d0b7ed7959321c902d7d561938642efcee0` mengganti gate fisik lama
+dengan 14 gate yang sesuai kontrak local-first: exact backend/Studio commit,
+50/200/500 foto, permission revoke, crash recovery, output read-only,
+quota/disk-full, offline, no-upload, isolasi 10 sesi, dual runtime, serta
+portrait/landscape print. Receipt WhatsApp/provider dihapus karena SagaVIEW
+tidak memproses pembayaran. Parser, simulation ready dan low-disk fail-closed,
+simulation-finalize rejection, unit/contract 196/196, Playwright recovery/
+output/gallery 10/10, accessibility/security 7/7, build, bundle 299,7/450 KiB,
+dan audit dependency nol vulnerability lulus. Status `QA_VALIDATED /
+SECURITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+tetap backend S163/Studio S159 dan UAT fisik/authenticated masih residual.
 
 Studio release rehearsal cut-off: 10 Agustus 2026 21:12 WIB. S171 mengemas
 kandidat kumulatif Studio S170 source
