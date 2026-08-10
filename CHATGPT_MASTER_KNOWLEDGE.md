@@ -892,6 +892,14 @@ Focused Playwright 4/4, viewport 390-3840, ekuivalen zoom 125-200%,
 forced-colors/reduced-motion, build, SagaVIEW 189/1.994, dan audit dependency
 lulus. Status `UIUX_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
 IMPLEMENTED_NOT_DEPLOYED`; production S163 tidak berubah.
+S165 source `fcaf1547cc7c5765d7ed0a30a4d8e3ea69df3006` membuat Changelog
+Owner dapat dicari dan difilter, membatasi arsip pada satu detail terbuka,
+menyediakan recovery untuk hasil kosong, dan memberi jalur kembali ke Riwayat
+Sesi. Tinggi fixture turun sekitar 42% di desktop dan 46% di mobile; Playwright
+390-3840, zoom ekuivalen 125-200%, forced-colors/reduced-motion, build, full
+SagaVIEW 189/1.994, dan audit dependency lulus. Status `UIUX_VALIDATED /
+SECURITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+S163 tidak berubah.
 Harga bulanan: Growth Rp200.000, Pro Rp500.000.
 Growth mencakup 1 device, 50 frame, 3 preset, offline 24 jam, dan 2 GB aset
 frame cloud. Pro mencakup 4 device, 100 frame, 10 preset, offline 168 jam, 10 GB

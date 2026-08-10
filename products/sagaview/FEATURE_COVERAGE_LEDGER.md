@@ -49,6 +49,16 @@ serta audit dependency lulus. Status `UIUX_VALIDATED / SECURITY_VALIDATED /
 LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; runtime production S163 tidak
 berubah.
 
+Owner Changelog UI cut-off: 10 Agustus 2026 11:14 WIB. S165 source
+`fcaf1547` menambahkan pencarian, filter status versi, tepat satu detail
+terbuka, empty-state recovery, dan jalur kembali ke Riwayat Sesi dengan
+konteks Owner tetap terjaga. Tinggi fixture turun 4.733->2.728 piksel pada
+desktop dan 8.429->4.511 pada mobile. Focused PHP 1/21, Playwright 1/1 lintas
+390-3840, ekuivalen zoom 125-200%, forced-colors/reduced-motion, build,
+SagaVIEW 189/1.994, dan audit dependency lulus. Status `UIUX_VALIDATED /
+SECURITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+S163 tidak berubah.
+
 ## Tujuan
 
 Mencatat bukti UI/UX dan integrasi SagaView secara fitur-per-fitur sambil menjaga kontrak privacy dan local-first.

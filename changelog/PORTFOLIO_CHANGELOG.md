@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-10 - SagaView S165 Owner Changelog navigation
+
+- Changelog Owner kini dapat dicari/difilter, hanya membuka satu detail, punya
+  empty-state recovery, dan memberi jalur kembali ke Riwayat Sesi.
+- Source `fcaf1547cc7c5765d7ed0a30a4d8e3ea69df3006` sudah dipush. Tinggi halaman
+  fixture turun sekitar 42% di desktop dan 46% di mobile; focused contract,
+  Playwright 390-3840, zoom ekuivalen 125-200%, forced-colors/reduced-motion,
+  build, SagaVIEW 189/1.994, dan audit dependency lulus.
+- Status `UIUX_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production SagaView tetap S163 dan SagaBook tidak
+  berubah.
+
 ## 2026-08-10 - SagaView S164 Owner pricing progressive disclosure
 
 - Owner `Kategori & Harga` kini memakai satu editor dan satu aksi simpan aktif;

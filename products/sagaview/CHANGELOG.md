@@ -1,5 +1,22 @@
 # SagaView Changelog
 
+## 2026-08-10 - S165 Owner Changelog navigation candidate
+
+- Before: seluruh detail sembilan versi dibuka sekaligus; halaman mencapai
+  4.733 piksel di desktop dan 8.429 piksel di mobile, tanpa pencarian/filter
+  maupun jalur langsung kembali ke operasional.
+- After: Owner dapat mencari versi/isi perubahan, memfilter status rilis,
+  membuka tepat satu detail, memulihkan hasil kosong, dan kembali ke Riwayat
+  Sesi sambil mempertahankan konteks tenant/tab.
+- Evidence: source `fcaf1547cc7c5765d7ed0a30a4d8e3ea69df3006`;
+  tinggi halaman turun menjadi 2.728/4.511 piksel; focused PHP 1/21,
+  Playwright 1/1 lintas 390-3840 dan ekuivalen zoom 125-200%,
+  forced-colors/reduced-motion, no-overflow, build, SagaVIEW 189/1.994, npm
+  audit nol vulnerability, dan Composer audit nol advisory lulus.
+- Status `UIUX_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Backend, database, foto/path customer, estimasi
+  biaya, pembayaran off-app, SagaBook, dan production S163 tidak berubah.
+
 ## 2026-08-10 - S164 Owner pricing progressive disclosure candidate
 
 - Before: halaman `Kategori & Harga` membuka form tambah, semua kategori, dan

@@ -189,6 +189,16 @@ tersebut dan meredaksi response record lama. Studio
    76 piksel, build, full SagaVIEW 189/1.994, serta audit dependency lulus.
    Status `UIUX_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
    IMPLEMENTED_NOT_DEPLOYED`; production S163 tidak berubah.
+   S165 source `fcaf1547cc7c5765d7ed0a30a4d8e3ea69df3006`
+   merapikan Changelog Owner menjadi arsip yang dapat dicari dan difilter,
+   dengan tepat satu detail terbuka, empty-state yang dapat dipulihkan, serta
+   jalur kembali ke Riwayat Sesi tanpa kehilangan konteks Owner. Tinggi halaman
+   fixture turun dari 4.733 ke 2.728 piksel pada desktop dan 8.429 ke 4.511
+   piksel pada mobile. Focused contract dan Playwright lulus pada 390-3840,
+   ekuivalen zoom 125-200%, forced-colors/reduced-motion, build, full SagaVIEW
+   189/1.994, serta audit dependency. Status `UIUX_VALIDATED /
+   SECURITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+   production S163 tidak berubah.
 
 ## Tujuan dokumen
 
@@ -200,8 +210,8 @@ Menjadi ringkasan fakta kanonik SagaView. Detail lengkap berada di
 
 Fakta release di dokumen ini mengacu pada exact source dan runtime production
 yang diverifikasi sampai 10 Agustus 2026. Runtime aktif memakai backend S163
-`f3b07749` dan Studio estimate-only S159 `6d7083a3`; kandidat UI Owner S164
-belum dideploy.
+`f3b07749` dan Studio estimate-only S159 `6d7083a3`; kandidat UI Owner S164 dan
+S165 belum dideploy.
 
 ## Status production terbaru
 
