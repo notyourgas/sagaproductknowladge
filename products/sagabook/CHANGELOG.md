@@ -1,5 +1,22 @@
 # SagaBook Changelog
 
+## 2026-08-10 - Standardized Manual Booking dialog S180 candidate
+
+- Backlog UI/UX form/modal panjang Andreas `CONFIRMED`; workflow booking,
+  endpoint, permission, dan schema tidak berubah.
+- Before: isi dialog ikut menggulir bersama header/footer, target tutup belum
+  44 px, dan Escape/Batal dapat membuang draft tanpa peringatan. After: dialog
+  terpusat mempunyai scroll internal, header/footer stabil, target 44 px,
+  focus trap/restore, serta konfirmasi buang draft untuk semua jalur tutup.
+- Source `d32d09b2267d1ccc867c70203737e112ea5fc1a1` pada branch
+  `codex/s180-sagabook-manual-booking-dialog` sudah dipush. S180 Playwright
+  7/7, regresi workspace/retry 3/3, backend/database 17/17 (77 assertion),
+  build/typecheck/design 26/0, serta npm dan Composer OSV nol advisory.
+- Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / UIUX_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Production tetap S170; tidak
+  ada deploy, migration, credential/data customer, provider canary, atau
+  activation.
+
 ## 2026-08-10 - Unified payment status dictionary S179 candidate
 
 - Backlog UI/UX pembayaran Andreas `CONFIRMED`; workflow, provider, API, dan

@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-10 - SagaBook S180 Manual Booking dialog candidate
+
+- Menyinkronkan source `d32d09b2267d1ccc867c70203737e112ea5fc1a1`
+  sebagai kandidat dialog Manual Booking yang contained, aksesibel, dan menjaga
+  draft saat operator menutup tanpa sengaja.
+- Klasifikasi `CONFIRMED`; Playwright S180 7/7, regresi UI 3/3,
+  backend/database 17/17 (77 assertion), build/typecheck/design, serta audit
+  dependency lulus.
+- Production berubah: tidak. Status `SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / UIUX_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`.
+
 ## 2026-08-10 - SagaView S172 Windows UAT harness v2
 
 - Menyinkronkan source `1a6d1d0b7ed7959321c902d7d561938642efcee0`

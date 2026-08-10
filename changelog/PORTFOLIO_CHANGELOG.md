@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-10 - SagaBook S180 standardized Manual Booking dialog
+
+- Dialog Manual Booking kini memakai header/footer stabil, scroll internal,
+  target 44 px, focus trap/restore, dan perlindungan draft pada seluruh jalur
+  penutupan tanpa mengubah workflow atau API.
+- Source `d32d09b2267d1ccc867c70203737e112ea5fc1a1` sudah dipush. S180
+  Playwright 7/7, regresi UI 3/3, backend/database 17/17 (77 assertion),
+  build/typecheck/design, dan audit dependency lulus.
+- Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / UIUX_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production SagaBook tetap S170
+  dan produk SagaDev lain tidak berubah.
+
 ## 2026-08-10 - SagaView S172 Windows UAT harness v2
 
 - Harness kandidat kini mengikat exact backend/Studio commit dan 14 gate

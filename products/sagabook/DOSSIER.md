@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 10 Agustus 2026 21:18 WIB
+- Updated: 10 Agustus 2026 23:35 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED` untuk workflow yang tercantum di
   [PRODUCT](PRODUCT.md)
@@ -17,6 +17,10 @@ dalam satu dokumen public-safe.
   PRODUCTION_ACTIVATED`
 - Source kumulatif aktif: `f69170a7e61080f90a3bcea7df1f22f5612f0369`,
   release `20260809153848-f69170a`, rollback `20260809083131-5c76735`.
+- Candidate S180 `d32d09b2267d1ccc867c70203737e112ea5fc1a1`
+  menstandarkan dialog Manual Booking dengan scroll internal, header/footer
+  stabil, target 44 px, dan proteksi draft. Create/read-after-write tetap
+  memakai boundary booking existing; production tetap S170.
 - Candidate S179 `7eac46e4681a48caa479bc02e859f7165257b192`
   menyatukan label, penyebab, expiry WIB, dan tindakan pembayaran pada detail
   customer, detail admin, serta Payment Monitor. Status asing berhenti aman

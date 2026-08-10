@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 10 Agustus 2026 21:18 WIB
+Updated: 10 Agustus 2026 23:35 WIB
 Evidence status: production source and runtime verified
 
 ## Tujuan dokumen
@@ -16,6 +16,15 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
+- Candidate S180 `d32d09b2267d1ccc867c70203737e112ea5fc1a1`
+  menstandarkan dialog Manual Booking dengan header/footer stabil, scroll
+  internal, target 44 px, focus trap, dan proteksi draft saat Escape, tombol
+  tutup, klik luar, atau Batal. Alur create existing tetap satu mutation saat
+  dua aktivasi cepat dan hasil persisted terbaca kembali pada Booking list.
+  S180 Playwright 7/7, regresi UI 3/3, backend/database 17/17 (77 assertion),
+  build/typecheck/design 26/0, serta audit dependency lulus. Status
+  `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / UIUX_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S170.
 - Candidate S179 `7eac46e4681a48caa479bc02e859f7165257b192`
   menyatukan kamus status pembayaran pada Booking Detail customer, Booking
   Detail admin, dan Payment Monitor. Label, penyebab, batas waktu WIB, serta
