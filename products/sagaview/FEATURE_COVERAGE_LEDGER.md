@@ -10,6 +10,17 @@ bersama schema sementaranya; production guard, symlink, schema kandidat, data,
 service, dan HTTP smoke tidak berubah. Status release gate:
 `RELEASE_REHEARSAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
 
+Guarded deploy cut-off: 10 Agustus 2026 07:25 WIB. Percobaan awal dan dua
+correction rounds seluruhnya rollback. Snapshot lintas schema telah
+dinormalisasi dan backfill default `0` diverifikasi, tetapi acceptance route
+terakhir masih mencocokkan `mark-paid` milik settlement platform bersama.
+Route pembayaran SagaVIEW sendiri sudah tidak tersedia. Production tetap
+backend `20260809162045-13a94c5` dan Studio `20260809162045-5eeef36`; schema
+kandidat kembali 0/0/0, 32 sesi dan 0 redemption tetap, service/HTTP/queue/
+journal serta cleanup database sementara hijau. Status:
+`GUARDED_DEPLOY_BLOCKED / ROLLED_BACK / STAGING_READY /
+IMPLEMENTED_NOT_DEPLOYED`.
+
 ## Tujuan
 
 Mencatat bukti UI/UX dan integrasi SagaView secara fitur-per-fitur sambil menjaga kontrak privacy dan local-first.

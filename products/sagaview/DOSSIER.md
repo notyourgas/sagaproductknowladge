@@ -63,7 +63,12 @@ SagaView berdasarkan runtime production aktif.
   kuota, katalog, atau audit. UI menahan Simpan/Publish sampai reload terbaru.
   Harness release memakai principal MySQL ephemeral dengan privilege hanya pada
   satu schema disposable; tiga rehearsal dan forced rollback lulus tanpa
-  mengubah schema/data/symlink production.
+  mengubah schema/data/symlink production. Guarded deploy awal plus dua
+  correction rounds seluruhnya rollback. Snapshot lintas schema sudah
+  dinormalisasi dengan verifikasi backfill default `0`, tetapi gate route akhir
+  masih mencocokkan `mark-paid` settlement platform bersama. Route pembayaran
+  SagaVIEW sendiri tidak ada. Production tetap baseline dan retry ditahan sampai
+  acceptance route di-scope khusus SagaVIEW serta diuji lokal.
 - Acceptance integrasi feature-by-feature: ledger dimulai konservatif dan
   belum membuktikan coverage penuh; lihat
   [Feature Coverage Ledger](FEATURE_COVERAGE_LEDGER.md).

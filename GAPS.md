@@ -280,8 +280,13 @@ ketika keputusan atau release baru menutup gap.
   konflik, dan recovery UI desktop/mobile. S161 publish retry idempotent tetap
   tercakup. Blocker permission database rehearsal sudah ditutup dengan principal
   ephemeral scoped satu schema; tiga rehearsal dan forced rollback lulus tanpa
-  perubahan production. Status kini `STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
-  Residual berikutnya: guarded production deployment, authenticated Owner dua
+  perubahan production. Guarded deploy awal plus dua correction rounds
+  seluruhnya rollback. Snapshot lintas schema sudah diperbaiki dan backfill
+  default `0` dibuktikan, tetapi gate terakhir masih mencocokkan route
+  `mark-paid` settlement platform bersama; route SagaVIEW sendiri sudah tidak
+  tersedia. Status `GUARDED_DEPLOY_BLOCKED / ROLLED_BACK / STAGING_READY /
+  IMPLEMENTED_NOT_DEPLOYED`. Residual berikutnya: scope dan test acceptance
+  route khusus SagaVIEW, baru guarded production deployment, authenticated Owner dua
   browser pada workspace nyata, failure/retry jaringan, dan customer export
   parity. Production belum berubah.
 

@@ -156,7 +156,14 @@ tersebut dan meredaksi response record lama. Studio
    rehearsal terakhir menjalankan tiga siklus migrate-rollback-reapply dan satu
    forced-failure rollback memakai principal database sementara yang hanya
    berhak pada schema disposable; seluruh principal/schema sementara terhapus
-   dan production guard tidak berubah. Production belum diaktifkan.
+   dan production guard tidak berubah. Guarded deploy berikutnya menjalankan
+   percobaan awal dan dua correction rounds, lalu seluruhnya rollback. Gate
+   terakhir terlalu luas karena mencocokkan route `mark-paid` milik settlement
+   platform bersama; route pembayaran SagaVIEW sendiri sudah tidak tersedia.
+   Baseline runtime, 32 sesi, schema, service, HTTP, queue, journal, dan cleanup
+   database sementara terverifikasi pulih. Status delivery tetap
+   `GUARDED_DEPLOY_BLOCKED / ROLLED_BACK / STAGING_READY /
+   IMPLEMENTED_NOT_DEPLOYED`; production belum diaktifkan.
 
 ## Tujuan dokumen
 

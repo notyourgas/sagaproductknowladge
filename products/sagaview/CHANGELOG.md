@@ -1,5 +1,22 @@
 # SagaView Changelog
 
+## 2026-08-10 - S162 guarded deploy fail-closed
+
+- Before: kandidat telah lulus rehearsal, tetapi gate production belum
+  membedakan route pembayaran SagaVIEW dari route settlement platform bersama.
+- After: dua masalah harness ditemukan dengan aman: snapshot lintas schema
+  menafsirkan kolom estimasi default `0` sebagai perubahan data, lalu pemeriksaan
+  route mendeteksi `mark-paid` milik settlement platform walau route SagaVIEW
+  sendiri sudah tidak ada.
+- Evidence: percobaan awal dan dua correction rounds seluruhnya rollback.
+  Production kembali ke backend `20260809162045-13a94c5` dan Studio
+  `20260809162045-5eeef36`; schema kandidat kembali 0/0/0, 32 sesi dan 0
+  redemption tetap, principal/schema ephemeral 0, seluruh service aktif,
+  API/Studio 200, failed job dan error journal 0.
+- Status `GUARDED_DEPLOY_BLOCKED / ROLLED_BACK / STAGING_READY /
+  IMPLEMENTED_NOT_DEPLOYED`. Retry dilarang sampai gate route dibatasi pada
+  namespace SagaVIEW dan diuji lokal; production tidak berubah.
+
 ## 2026-08-10 - S162 release rehearsal blocker closed
 
 - Before: Laravel tidak dapat menjalankan migration pada clone disposable

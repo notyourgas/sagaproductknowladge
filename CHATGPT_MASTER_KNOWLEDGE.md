@@ -846,7 +846,13 @@ UIUX_VALIDATED / LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
 Release rehearsal memakai principal database ephemeral yang hanya berhak pada
 satu schema disposable. Tiga siklus migrate-rollback-reapply dan forced-failure
 rollback lulus; principal/schema sementara kembali nol dan production guard
-tidak berubah. Production tetap pada release sebelumnya dan belum diaktifkan.
+tidak berubah. Guarded deploy setelah rehearsal menjalankan percobaan awal dan
+dua correction rounds; semuanya rollback aman. Gate terakhir salah mencocokkan
+route `mark-paid` settlement platform bersama, sedangkan route pembayaran
+SagaVIEW sendiri sudah tidak tersedia. Production tetap backend
+`20260809162045-13a94c5` dan Studio `20260809162045-5eeef36`; status
+`GUARDED_DEPLOY_BLOCKED / ROLLED_BACK / STAGING_READY /
+IMPLEMENTED_NOT_DEPLOYED` sampai acceptance route khusus SagaVIEW lulus.
 Harga bulanan: Growth Rp200.000, Pro Rp500.000.
 Growth mencakup 1 device, 50 frame, 3 preset, offline 24 jam, dan 2 GB aset
 frame cloud. Pro mencakup 4 device, 100 frame, 10 preset, offline 168 jam, 10 GB

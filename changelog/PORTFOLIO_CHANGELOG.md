@@ -13,6 +13,18 @@
 - Status `SECURITY_VALIDATED / UIUX_VALIDATED / LOCAL_VALIDATED /
   IMPLEMENTED_NOT_DEPLOYED`; production SagaBook tetap S170.
 
+## 2026-08-10 - SagaView S162 guarded deploy rolled back
+
+- Guarded deploy menemukan dua false-positive pada acceptance harness: kolom
+  estimasi baru dengan default `0` dan route `mark-paid` milik settlement
+  platform bersama. Route pembayaran SagaVIEW sendiri sudah tidak tersedia.
+- Percobaan awal dan dua correction rounds berhenti fail-closed. Semua
+  migration dan symlink kembali ke baseline; 32 sesi, 0 redemption, service,
+  HTTP, queue, journal, serta cleanup principal/schema sementara terverifikasi.
+- Status `GUARDED_DEPLOY_BLOCKED / ROLLED_BACK / STAGING_READY /
+  IMPLEMENTED_NOT_DEPLOYED`; production SagaView tetap backend
+  `20260809162045-13a94c5` dan Studio `20260809162045-5eeef36`.
+
 ## 2026-08-10 - SagaView S162 release rehearsal gate
 
 - Harness tidak lagi meminta user runtime production mengakses database

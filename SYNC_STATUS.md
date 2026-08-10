@@ -12,14 +12,14 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-10T07:25:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-10T07:25:19+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `50d16b09fa7e7d18a32d306e411befbc75c257b4` |
-| Informasi terakhir disinkronkan | SagaBook S172 source `e111f40187a970cf6dc36cf76da5e25cbeaac55d`; Task Center create/update, single primary action, stale recovery, idempotency, permission, dan branch isolation berstatus `IMPLEMENTED_NOT_DEPLOYED`. |
+| Baseline sebelum pembaruan | `547b6e30457870cce2723b8b89f15c44ce81fbf4` |
+| Informasi terakhir disinkronkan | SagaView S162 backend `063dfc1a` dan Studio `6d7083a3`; guarded deploy awal plus dua correction rounds rollback dan tertahan pada acceptance route yang masih mencocokkan settlement platform bersama. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik kanonik. Snapshot visual Booking list pra-S171 drift setelah masking PII; baseline belum diubah. Production SagaBook tetap S170 dan authenticated Owner/operator UAT tetap terbuka. |
-| Error | Tidak ada error knowledge sync yang diketahui. |
+| Konflik | Tidak ada konflik kanonik. Production SagaView tetap backend `20260809162045-13a94c5` dan Studio `20260809162045-5eeef36`; authenticated Owner/Studio UAT tetap terbuka. |
+| Error | `GUARDED_DEPLOY_BLOCKED`: acceptance route perlu di-scope khusus SagaVIEW sebelum retry. |
 
 ## File yang berubah pada sinkronisasi ini
 
