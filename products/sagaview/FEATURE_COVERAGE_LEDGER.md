@@ -1,8 +1,8 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 10 Agustus 2026 21:22 WIB
+Evidence cut-off: 10 Agustus 2026 21:12 WIB
 
-Studio release rehearsal cut-off: 10 Agustus 2026 21:22 WIB. S171 mengemas
+Studio release rehearsal cut-off: 10 Agustus 2026 21:12 WIB. S171 mengemas
 kandidat kumulatif Studio S170 source
 `c52c1416b7a604509e00a858a606b92f47990dcc` menjadi arsip immutable
 `20260810210515-c52c141` dengan SHA-256
