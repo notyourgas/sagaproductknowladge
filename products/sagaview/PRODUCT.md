@@ -198,6 +198,15 @@ tersebut dan meredaksi response record lama. Studio
    no-overflow dan Axe; 191 unit, build/budget, serta audit dependency lulus.
    Status `UIUX_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
    IMPLEMENTED_NOT_DEPLOYED`; production S163 tidak berubah.
+   S167 source `7ba3be61d3f0141bc2b5524d86b6bcabe11ae28e`
+   memperbaiki galeri virtual 500 foto: posisi scroll kini disimpan terpisah
+   untuk tampilan semua foto dan hanya pilihan, fokus keyboard tetap pada
+   filter, jumlah hasil diumumkan, serta filter/CTA utama memenuhi target 44
+   piksel. Fixture 500 foto menjaga node thumbnail kurang dari 30; unit
+   192/192, Playwright 1/1 1440x900, Axe/no-overflow,
+   forced-colors/reduced-motion, build/budget, dan audit dependency lulus.
+   Status `UIUX_VALIDATED / PERFORMANCE_VALIDATED / SECURITY_VALIDATED /
+   LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production S163 tidak berubah.
    S165 source `fcaf1547cc7c5765d7ed0a30a4d8e3ea69df3006`
    merapikan Changelog Owner menjadi arsip yang dapat dicari dan difilter,
    dengan tepat satu detail terbuka, empty-state yang dapat dipulihkan, serta
@@ -219,7 +228,7 @@ Menjadi ringkasan fakta kanonik SagaView. Detail lengkap berada di
 
 Fakta release di dokumen ini mengacu pada exact source dan runtime production
 yang diverifikasi sampai 10 Agustus 2026. Runtime aktif memakai backend S163
-`f3b07749` dan Studio estimate-only S159 `6d7083a3`; kandidat UI S164-S166
+`f3b07749` dan Studio estimate-only S159 `6d7083a3`; kandidat UI S164-S167
 belum dideploy.
 
 ## Status production terbaru

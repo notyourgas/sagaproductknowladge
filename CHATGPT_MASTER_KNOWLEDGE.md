@@ -917,6 +917,14 @@ Playwright 4/4 pada 390-3840, forced-colors/reduced-motion, no-overflow/Axe,
 build/budget dan audit dependency lulus. Status `UIUX_VALIDATED /
 SECURITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
 S163 tidak berubah.
+S167 source `7ba3be61d3f0141bc2b5524d86b6bcabe11ae28e` menutup gap konteks
+galeri virtual panjang. Offset scroll dipertahankan per view semua/pilihan,
+fokus keyboard filter stabil, target kontrol 44 piksel, dan fixture 500 foto
+tetap merender kurang dari 30 thumbnail DOM. Unit 192/192, Playwright 1/1,
+Axe/no-overflow, forced-colors/reduced-motion, build/budget, dan audit
+dependency lulus. Status `UIUX_VALIDATED / PERFORMANCE_VALIDATED /
+SECURITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+S163 tidak berubah.
 Harga bulanan: Growth Rp200.000, Pro Rp500.000.
 Growth mencakup 1 device, 50 frame, 3 preset, offline 24 jam, dan 2 GB aset
 frame cloud. Pro mencakup 4 device, 100 frame, 10 preset, offline 168 jam, 10 GB

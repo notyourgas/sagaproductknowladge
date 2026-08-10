@@ -12,21 +12,20 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-10T12:08:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-10T14:08:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub |
-| Baseline sebelum pembaruan | `8aa0934770db95d5396400377ce2f362e3d3b98f` |
-| Informasi terakhir disinkronkan | Provenance SagaBook S175 dikoreksi ke exact source `27ea36a27a22de165758962be307ab4cdd0e125a`; status tetap `IMPLEMENTED_NOT_DEPLOYED` dan production tetap S170. |
+| Baseline sebelum pembaruan | `b5d9abc1fc3ad638a0f0034ea4ea8b83dc429f28` |
+| Informasi terakhir disinkronkan | SagaView S167 source `7ba3be61d3f0141bc2b5524d86b6bcabe11ae28e` menjaga konteks scroll/fokus galeri virtual 500 foto; status `IMPLEMENTED_NOT_DEPLOYED` dan production tetap S163. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, commit, push, dan remote verification; commit kanonik adalah HEAD `main` terbaru. |
-| Konflik | Tidak ada konflik kanonik. Stale/cancellation, tenant-negative, permission, dan state-preservation storefront masih terbuka; authenticated Owner/operator UAT dan dua gap pilot tetap menahan `BUSINESS_READY`. |
-| Error | SHA S175 pada sinkronisasi sebelumnya salah ketik dan sudah dikoreksi; tidak ada error source. Production SagaBook tidak diubah. |
+| Konflik | Tidak ada konflik kanonik. UAT perangkat Studio nyata untuk 50/200/500 foto, zoom, monitor besar, dan keyboard panjang masih menahan deploy/activation S167. |
+| Error | Tidak ada error source atau validator yang diketahui. Production SagaView dan SagaBook tidak diubah. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/sagabook/PRODUCT.md`
-- `products/sagabook/DOSSIER.md`
-- `products/sagabook/CHANGELOG.md`
-- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/CHANGELOG.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `SYNC_STATUS.md`

@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-10 - SagaView S167 long gallery filter candidate
+
+- Menyinkronkan source `7ba3be61d3f0141bc2b5524d86b6bcabe11ae28e`
+  sebagai kandidat UI/performance galeri 500 foto yang menjaga offset per
+  filter dan fokus keyboard.
+- Klasifikasi `CONFIRMED`; unit, Playwright/Axe, visual 1440x900,
+  forced-colors/reduced-motion, build/budget, dan audit dependency lulus.
+- Production berubah: tidak. Status `UIUX_VALIDATED /
+  PERFORMANCE_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`.
+
 ## 2026-08-10 - SagaView S166 consent copy recovery candidate
 
 - Menyinkronkan source `9df9faaab3849dc1b39500f55b67d3dc2d789a30`

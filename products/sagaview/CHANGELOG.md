@@ -1,5 +1,22 @@
 # SagaView Changelog
 
+## 2026-08-10 - S167 long gallery filter context candidate
+
+- Before: setelah operator menggulir jauh pada galeri virtual lalu membuka
+  `Terpilih saja`, offset tampilan semua foto hilang dan kembali ke atas saat
+  filter ditutup.
+- After: setiap view menyimpan offset sendiri; filter delapan pilihan tetap
+  ringkas, fokus keyboard tidak berpindah, jumlah hasil diumumkan, dan kontrol
+  filter serta CTA utama memakai target minimal 44 piksel.
+- Evidence: source `7ba3be61d3f0141bc2b5524d86b6bcabe11ae28e`;
+  unit 192/192, Playwright 1/1 dengan fixture 500 foto pada 1440x900, DOM
+  thumbnail kurang dari 30, Axe/no-overflow, forced-colors/reduced-motion,
+  build/budget, dan npm audit nol vulnerability lulus.
+- Status `UIUX_VALIDATED / PERFORMANCE_VALIDATED / SECURITY_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. API/backend/database,
+  foto/path customer, pembayaran off-app, SagaBook, dan production S163 tidak
+  berubah.
+
 ## 2026-08-10 - S166 consent copy recovery candidate
 
 - Before: kartu izin hanya menampilkan status gagal dan tombol retry; operator

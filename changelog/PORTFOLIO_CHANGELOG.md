@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-10 - SagaView S167 long gallery filter context
+
+- Galeri virtual 500 foto kini mengingat posisi masing-masing untuk semua foto
+  dan hanya pilihan, menjaga fokus keyboard, serta mempertahankan jumlah node
+  thumbnail yang terbatas.
+- Source `7ba3be61d3f0141bc2b5524d86b6bcabe11ae28e` sudah dipush. Unit
+  192/192, Playwright 1/1 1440x900, target 44 piksel, Axe/no-overflow,
+  forced-colors/reduced-motion, build/budget, dan npm audit lulus.
+- Status `UIUX_VALIDATED / PERFORMANCE_VALIDATED / SECURITY_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production SagaView tetap S163
+  dan SagaBook tidak berubah.
+
 ## 2026-08-10 - SagaView S166 consent copy recovery
 
 - Kartu Izin Foto kini menjelaskan penyebab penyalinan gagal, keamanan foto
