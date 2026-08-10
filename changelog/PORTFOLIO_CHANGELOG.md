@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-10 - SagaView S166 consent copy recovery
+
+- Kartu Izin Foto kini menjelaskan penyebab penyalinan gagal, keamanan foto
+  asli/status izin, dan tindakan berikutnya untuk permission, folder hilang,
+  serta quota/disk tanpa fallback cloud.
+- Source `9df9faaab3849dc1b39500f55b67d3dc2d789a30` sudah dipush. Unit
+  191/191, Playwright 4/4 lintas 390-3840, forced-colors/reduced-motion,
+  no-overflow/Axe, build/budget, dan npm audit lulus.
+- Status `UIUX_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production SagaView tetap S163 dan SagaBook tidak
+  berubah.
+
 ## 2026-08-10 - SagaBook S175 public booking double-submit feedback
 
 - Tahap Bayar kini memberi status proses yang aksesibel dan acceptance

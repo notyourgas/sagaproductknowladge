@@ -189,6 +189,15 @@ tersebut dan meredaksi response record lama. Studio
    76 piksel, build, full SagaVIEW 189/1.994, serta audit dependency lulus.
    Status `UIUX_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
    IMPLEMENTED_NOT_DEPLOYED`; production S163 tidak berubah.
+   S166 source `9df9faaab3849dc1b39500f55b67d3dc2d789a30`
+   memperjelas recovery penyalinan foto berizin. Kegagalan izin, folder hilang,
+   dan ruang penyimpanan kini dinormalisasi menjadi pesan operator yang aman;
+   kartu izin menjelaskan apa yang gagal, bahwa foto asli dan status izin tetap
+   aman, serta tindakan berikutnya tanpa fallback cloud. Focused Playwright
+   4/4 mencakup 390-3840, forced-colors/reduced-motion, target 44 piksel,
+   no-overflow dan Axe; 191 unit, build/budget, serta audit dependency lulus.
+   Status `UIUX_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+   IMPLEMENTED_NOT_DEPLOYED`; production S163 tidak berubah.
    S165 source `fcaf1547cc7c5765d7ed0a30a4d8e3ea69df3006`
    merapikan Changelog Owner menjadi arsip yang dapat dicari dan difilter,
    dengan tepat satu detail terbuka, empty-state yang dapat dipulihkan, serta
@@ -210,8 +219,8 @@ Menjadi ringkasan fakta kanonik SagaView. Detail lengkap berada di
 
 Fakta release di dokumen ini mengacu pada exact source dan runtime production
 yang diverifikasi sampai 10 Agustus 2026. Runtime aktif memakai backend S163
-`f3b07749` dan Studio estimate-only S159 `6d7083a3`; kandidat UI Owner S164 dan
-S165 belum dideploy.
+`f3b07749` dan Studio estimate-only S159 `6d7083a3`; kandidat UI S164-S166
+belum dideploy.
 
 ## Status production terbaru
 

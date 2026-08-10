@@ -1,5 +1,21 @@
 # SagaView Changelog
 
+## 2026-08-10 - S166 consent copy recovery candidate
+
+- Before: kartu izin hanya menampilkan status gagal dan tombol retry; operator
+  belum diberi ringkasan penyebab, kepastian keamanan foto asli, atau langkah
+  pemulihan spesifik.
+- After: kegagalan permission, folder hilang, quota/disk, dan error umum
+  dinormalisasi. Panel recovery menjelaskan apa yang gagal, bahwa foto asli dan
+  status izin tetap aman, no-upload foto/path, serta aksi berikutnya.
+- Evidence: source `9df9faaab3849dc1b39500f55b67d3dc2d789a30`;
+  unit 191/191, focused Playwright 4/4 pada 390-3840, forced-colors,
+  reduced-motion, target 44 piksel, no-overflow/Axe, build/budget, dan npm audit
+  nol vulnerability lulus.
+- Status `UIUX_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. API/backend/database, foto/path customer,
+  pembayaran off-app, SagaBook, dan production S163 tidak berubah.
+
 ## 2026-08-10 - S165 Owner Changelog navigation candidate
 
 - Before: seluruh detail sembilan versi dibuka sekaligus; halaman mencapai
