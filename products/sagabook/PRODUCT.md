@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 10 Agustus 2026 17:25 WIB
+Updated: 10 Agustus 2026 21:20 WIB
 Evidence status: production source and runtime verified
 
 ## Tujuan dokumen
@@ -16,6 +16,15 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
+- Candidate S179 `7eac46e4681a48caa479bc02e859f7165257b192`
+  menyatukan kamus status pembayaran pada Booking Detail customer, Booking
+  Detail admin, dan Payment Monitor. Label, penyebab, batas waktu WIB, serta
+  tindakan berikutnya kini konsisten; status provider mentah dinormalisasi dan
+  status tidak dikenal berhenti aman sebagai `Perlu dicek`. Booking batal yang
+  belum lunas tidak lagi meminta customer membayar. Focused Playwright 10/10,
+  regresi stale multi-tab 2/2, backend 17/17 (128 assertion), build/design
+  26/0, serta audit dependency lulus. Status `UIUX_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S170.
 - Candidate S178 `1337af50739e6c573235a55a424b3ff49426c614`
   membuat bootstrap QRIS dan transfer manual fail-closed terhadap cache lama.
   Detail rekening, QR, dan aksi pembayaran baru tampil setelah status booking

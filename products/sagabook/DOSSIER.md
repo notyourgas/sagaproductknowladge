@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 10 Agustus 2026 12:08 WIB
+- Updated: 10 Agustus 2026 21:20 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED` untuk workflow yang tercantum di
   [PRODUCT](PRODUCT.md)
@@ -17,6 +17,10 @@ dalam satu dokumen public-safe.
   PRODUCTION_ACTIVATED`
 - Source kumulatif aktif: `f69170a7e61080f90a3bcea7df1f22f5612f0369`,
   release `20260809153848-f69170a`, rollback `20260809083131-5c76735`.
+- Candidate S179 `7eac46e4681a48caa479bc02e859f7165257b192`
+  menyatukan label, penyebab, expiry WIB, dan tindakan pembayaran pada detail
+  customer, detail admin, serta Payment Monitor. Status asing berhenti aman
+  sebagai `Perlu dicek`; production tetap S170.
 - Candidate S175 `27ea36a27a22de165758962be307ab4cdd0e125a`
   menutup gap double-submit di tahap Bayar. Dua klik cepat hanya memanggil
   write booking dan create-session masing-masing sekali; customer mendapat

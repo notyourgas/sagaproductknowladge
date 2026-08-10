@@ -68,6 +68,16 @@ pembayaran, menerima status/reminder, dan mengelola request dari secure booking
 link. Operator mengelola calendar, task, check-in, session, payment,
 reconciliation, report, staff, tenant, dan subscription.
 
+Candidate SagaBook S179 source
+`7eac46e4681a48caa479bc02e859f7165257b192` menyatukan kamus status
+pembayaran pada Booking Detail customer, Booking Detail admin, dan Payment
+Monitor. Label Indonesia, penyebab, expiry WIB, dan tindakan berikutnya kini
+konsisten; status provider mentah dinormalisasi, unknown menjadi `Perlu dicek`,
+dan booking batal yang belum lunas tidak meminta pembayaran ulang. Focused
+Playwright 10/10, stale multi-tab 2/2, backend 17/17 (128 assertion),
+build/design, serta audit dependency lulus. Status `UIUX_VALIDATED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S170.
+
 Candidate SagaBook S178 source
 `1337af50739e6c573235a55a424b3ff49426c614` membuat bootstrap QRIS dan transfer
 manual fail-closed terhadap cache lama. Detail/aksi pembayaran menunggu status

@@ -1,5 +1,22 @@
 # SagaBook Changelog
 
+## 2026-08-10 - Unified payment status dictionary S179 candidate
+
+- Backlog UI/UX pembayaran Andreas `CONFIRMED`; workflow, provider, API, dan
+  database tidak berubah.
+- Before: Booking Detail customer, Booking Detail admin, dan Payment Monitor
+  memakai label campuran, status provider mentah, serta arahan yang belum
+  selalu menjelaskan penyebab, expiry, dan langkah berikutnya. After: ketiga
+  surface memakai satu kamus Indonesia, status tak dikenal fail-closed, dan
+  booking batal yang belum lunas tidak menawarkan pembayaran lama.
+- Source `7eac46e4681a48caa479bc02e859f7165257b192` pada branch
+  `codex/s179-sagabook-payment-status-dictionary` sudah dipush. Focused
+  Playwright 10/10, regresi stale multi-tab 2/2, backend 17/17 (128 assertion),
+  build/design 26/0, serta npm dan Composer OSV nol advisory.
+- Status `UIUX_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+  Production tetap S170; tidak ada migration, provider canary, data customer,
+  activation, atau deploy.
+
 ## 2026-08-10 - Cached payment bootstrap S178 candidate
 
 - Mandat peningkatan recovery Andreas `CONFIRMED`; workflow dan provider tidak

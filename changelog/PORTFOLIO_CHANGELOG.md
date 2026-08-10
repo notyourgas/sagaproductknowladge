@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-10 - SagaBook S179 unified payment status dictionary
+
+- Booking Detail customer, Booking Detail admin, dan Payment Monitor kini
+  memakai label, penyebab, expiry WIB, dan arahan berikutnya dari satu kamus;
+  status provider mentah dinormalisasi dan unknown berhenti aman.
+- Source `7eac46e4681a48caa479bc02e859f7165257b192` sudah dipush. Focused
+  Playwright 10/10, stale multi-tab 2/2, backend 17/17 (128 assertion),
+  build/design, dan audit dependency lulus.
+- Status `UIUX_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+  production SagaBook tetap S170 dan SagaView tidak berubah.
+
 ## 2026-08-10 - SagaView S171 Studio release rehearsal
 
 - Kandidat kumulatif Studio S170 kini mempunyai arsip immutable, checksum,
