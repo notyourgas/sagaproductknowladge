@@ -2,15 +2,25 @@
 
 Updated: 11 Agustus 2026
 
-S191 menyatukan lineage S185 release tooling dan S186 perbaikan kontras Review
-menjadi satu kandidat Studio kumulatif. Source
-`6902f4b7a9ecda0b42eb9e3e77fb6b30e6f09ff1` sudah `PUSHED` dan berstatus
-`UIUX_VALIDATED / ACCESSIBILITY_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED /
-RELEASE_TOOLING_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
-Kandidat mempertahankan workflow estimasi saja, no-upload/local-first, dan
-tooling exact-commit menuju VPS; production tidak berubah. Physical Windows UAT
-untuk pasangan exact Studio/backend, bukti rollback production, backup/restore
-terbaru, serta otorisasi Andreas tetap wajib sebelum deploy.
+Studio exact local commit
+`86b04c9133fc7c28f6b4a6ff7c2aeb80d1480d58` aktif sebagai release
+`20260811124309-86b04c9`. Release menggabungkan jalur local-first yang sudah
+divalidasi, perbaikan kontras badge Review, kompatibilitas clean-install npm
+VPS, dan provenance read-only di `/admin/runtime-provenance`. Archive immutable,
+SHA-256, git bundle, backup source lokal/VPS, atomic switch, public smoke,
+service, journal, exact backend binding, serta rollback ke
+`20260810091159-6d7083a` lulus. Status `PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED / REMOTE_PUSH_PENDING`; UAT printer fisik dikonfirmasi
+lulus dan dibawa maju karena perubahan sesudah baseline tidak menyentuh jalur
+print/export. Authenticated normal-browser UAT tetap residual sebelum
+`BUSINESS_READY`.
+
+S191 source `6902f4b7a9ecda0b42eb9e3e77fb6b30e6f09ff1` tetap menjadi bukti audit
+lokal yang sudah `PUSHED`, tetapi `SUPERSEDED / DO_NOT_DEPLOY` sebagai kandidat
+release karena production `86b04c9` juga membawa kompatibilitas clean-install
+npm 9 dan provenance runtime yang tidak ada pada S191. Unit 207/207,
+Playwright relevan 28/28, build/budget, audit dependency, dan package-only S191
+tetap valid sebagai evidence; production tidak berasal dari commit S191.
 
 S190 memulihkan login browser yang sebelumnya dapat kembali ke form kosong
 akibat benturan scope sesi lama. Source

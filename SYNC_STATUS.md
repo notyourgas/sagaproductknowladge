@@ -12,14 +12,14 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-11T20:10:00+07:00 |
-| Branch aktif | `main` (sinkronisasi source `codex/s191-sagaview-cumulative-candidate`) |
+| Waktu pembaruan terakhir | 2026-08-11T20:20:00+07:00 |
+| Branch aktif | `main` (rekonsiliasi Studio production `86b04c9` dan audit S191) |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `e3a1c2d786faa3d0c5922fdafde0c42d61a67172` |
-| Informasi terakhir disinkronkan | SagaView S191 menyatukan S185 release tooling dan S186 Review contrast sebagai candidate `6902f4b7a9ecda0b42eb9e3e77fb6b30e6f09ff1`. |
+| Baseline sebelum pembaruan | `1bb5f675fc15d3a7a598a77d99bc2d33cfd2068e` |
+| Informasi terakhir disinkronkan | Studio exact local `86b04c9` aktif sebagai release `20260811124309-86b04c9`; S191 `6902f4b7` ditandai superseded dan tidak boleh dideploy. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, fast-forward ke `main`, push, dan remote verification. |
-| Konflik | Tidak ada konflik source saat lineage S185 dan S186 digabungkan; kontrak estimasi, local-first/no-upload, API, database, dan pricing tetap sama. |
-| Error | Tidak ada error source/package. Physical Windows UAT exact, rollback production, backup/restore terbaru, dan otorisasi deploy masih residual. |
+| Konflik | Konflik histori knowledge S191 dan activation lokal sudah direkonsiliasi tanpa mengubah kontrak estimasi, local-first/no-upload, API, database, atau pricing. |
+| Error | Source Studio production masih `REMOTE_PUSH_PENDING`; authenticated normal-browser UAT dan symlink rollback backend masih residual. |
 
 ## File yang berubah pada sinkronisasi ini
 

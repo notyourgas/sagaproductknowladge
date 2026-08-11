@@ -887,14 +887,23 @@ SaaS launch menunggu legal, acceptance, release, serta publication gate.
 
 ### SagaView
 
+Studio exact local commit
+`86b04c9133fc7c28f6b4a6ff7c2aeb80d1480d58` aktif sebagai release
+`20260811124309-86b04c9`, terikat ke backend S190 `475db4c2`. Jalur release
+memakai archive immutable, SHA-256, git bundle, backup source lokal/VPS,
+clean-install npm 9, atomic switch, public smoke, runtime provenance
+`/admin/runtime-provenance`, service/journal release, serta rollback Studio yang
+terverifikasi. UAT printer fisik lulus. Status `PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED / REMOTE_PUSH_PENDING`; authenticated normal-browser UAT
+dan rollback backend masih residual dan `BUSINESS_READY` belum diklaim.
+
 Candidate kumulatif S191 source
 `6902f4b7a9ecda0b42eb9e3e77fb6b30e6f09ff1` menyatukan S185 exact local
 release tooling dan S186 Review contrast pada satu lineage bersih yang sudah
 `PUSHED`. Unit 207/207, Playwright relevan 28/28, build/budget, audit
 dependency, archive immutable, manifest SHA-256, git bundle, dan dua salinan
-identik lulus. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
-tidak berubah. Physical Windows UAT exact Studio/backend, rollback production,
-backup/restore terbaru, serta otorisasi Andreas tetap gate deploy.
+identik lulus. Status `LOCAL_VALIDATED / SUPERSEDED / DO_NOT_DEPLOY` karena
+production `86b04c9` juga membawa kompatibilitas npm 9 dan provenance runtime.
 
 S190 source `475db4c21b00440004d88b8f876e3eb38aea6be0` aktif sebagai
 backend release `20260811190515-475db4c` dan memulihkan benturan scope sesi

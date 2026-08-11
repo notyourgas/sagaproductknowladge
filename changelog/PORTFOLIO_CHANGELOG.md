@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-11 - SagaView Studio local release activated
+
+- Exact local Studio `86b04c9133fc7c28f6b4a6ff7c2aeb80d1480d58`
+  aktif sebagai `20260811124309-86b04c9`, terikat ke backend S190
+  `475db4c21b00440004d88b8f876e3eb38aea6be0`.
+- Gate lokal, npm 9 clean-install/build VPS, immutable archive/SHA-256/git
+  bundle, backup source lokal/VPS, atomic switch, public smoke, provenance,
+  service, journal release, dan rollback Studio lulus. UAT printer fisik lulus.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+  REMOTE_PUSH_PENDING`; authenticated normal-browser UAT dan rollback backend
+  masih residual. `BUSINESS_READY` belum diklaim. Produk lain tidak berubah.
+
 ## 2026-08-11 - SagaView S191 cumulative Studio candidate
 
 - S185 release tooling dan S186 Review contrast kini berada pada satu source
@@ -8,10 +20,9 @@
 - Unit 207/207, Playwright relevan 28/28, format/lint/typecheck/build, budget,
   audit dependency, archive immutable, manifest, git bundle, dan dua salinan
   ber-hash identik lulus.
-- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production, API,
-  database, pricing, workflow estimasi, dan produk SagaDev lain tidak berubah.
-  Physical Windows UAT, rollback production, backup/restore terbaru, serta
-  otorisasi Andreas tetap gate deploy.
+- Status `LOCAL_VALIDATED / SUPERSEDED / DO_NOT_DEPLOY`; source S191 bukan
+  source production karena tidak membawa tambahan lockfile npm 9 dan
+  provenance runtime pada `86b04c9`. Produk SagaDev lain tidak berubah.
 
 ## 2026-08-11 - SagaView S185 local exact-commit release tooling
 

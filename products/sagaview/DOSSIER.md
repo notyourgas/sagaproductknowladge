@@ -11,17 +11,24 @@ SagaView berdasarkan runtime production aktif.
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED`
 - Business readiness: `NEEDS CONFIRMATION` untuk penjualan massal
-- S191 cumulative Studio candidate: `UIUX_VALIDATED /
+- Studio local production activation: `PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / REMOTE_PUSH_PENDING`; exact source
+  `86b04c9133fc7c28f6b4a6ff7c2aeb80d1480d58`, release
+  `20260811124309-86b04c9`, terikat ke backend S190 `475db4c2`. Gate exact,
+  clean-install npm 9, build/browser/audit, artifact immutable, backup, atomic
+  switch, smoke, runtime provenance, service, journal release, dan rollback
+  Studio lulus. UAT printer fisik lulus. Residual: push exact source Studio,
+  authenticated normal-browser UAT, dan symlink rollback backend.
+- S191 cumulative Studio audit: `UIUX_VALIDATED /
   ACCESSIBILITY_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED /
-  RELEASE_TOOLING_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+  RELEASE_TOOLING_VALIDATED / LOCAL_VALIDATED / SUPERSEDED / DO_NOT_DEPLOY`;
   source `6902f4b7a9ecda0b42eb9e3e77fb6b30e6f09ff1` menyatukan S185 dan S186 pada
   satu lineage bersih yang sudah `PUSHED`. Unit 207/207, Playwright relevan
   28/28, format/lint/typecheck/build, budget 299,7/450 KiB, serta audit
   dependency nol vulnerability lulus. Archive immutable, manifest SHA-256,
   git bundle, embedded source commit/tree, dan salinan kedua dengan hash identik
-  tersedia. Production tidak berubah; physical Windows UAT exact
-  Studio/backend, rollback production, backup/restore terbaru, dan otorisasi
-  Andreas tetap gate deploy.
+  tersedia. S191 bukan source production dan tidak membawa tambahan
+  kompatibilitas npm 9 serta provenance runtime yang ada pada `86b04c9`.
 - S190 session-cookie recovery: `SECURITY_VALIDATED / QA_VALIDATED /
   RELEASE_REHEARSAL_VALIDATED / PRODUCTION_DEPLOYED /
   PRODUCTION_ACTIVATED`; backend

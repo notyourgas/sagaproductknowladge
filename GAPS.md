@@ -281,20 +281,26 @@ ketika keputusan atau release baru menutup gap.
 
 ### SagaView
 
-- `CLOSED IN CANDIDATE / IMPLEMENTED_NOT_DEPLOYED`: S191 source
-  `6902f4b7a9ecda0b42eb9e3e77fb6b30e6f09ff1` menyatukan S185 release tooling
-  dan S186 Review contrast pada satu lineage yang sudah `PUSHED`. Residual
-  release bukan lagi konflik lineage, melainkan physical Windows UAT exact
-  Studio/backend, rollback production, backup/restore terbaru, dan otorisasi
-  Andreas. Production tidak berubah.
+- `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / REMOTE_PUSH_PENDING`: jalur S185
+  dan perbaikan S186 aktif kumulatif pada Studio exact local
+  `86b04c9133fc7c28f6b4a6ff7c2aeb80d1480d58` / release
+  `20260811124309-86b04c9`. Archive, manifest, git bundle, backup source
+  lokal/VPS, npm 9 build, atomic switch, provenance, smoke, service, journal
+  release, dan rollback Studio lulus. UAT printer fisik lulus; residual adalah
+  push exact Studio ke remote, authenticated normal-browser UAT, dan rollback
+  backend sebelum `BUSINESS_READY`.
 
-- `CLOSED IN CANDIDATE / IMPLEMENTED_NOT_DEPLOYED`: S185 source
+- `SUPERSEDED / DO_NOT_DEPLOY`: S191 source
+  `6902f4b7a9ecda0b42eb9e3e77fb6b30e6f09ff1` menyatukan S185 release tooling
+  dan S186 Review contrast pada satu lineage yang sudah `PUSHED`, tetapi tidak
+  membawa tambahan kompatibilitas npm 9 dan provenance runtime pada production
+  `86b04c9`. Evidence lokal tetap valid; commit ini bukan source production.
+
+- `CLOSED / SUPERSEDED BY PRODUCTION`: S185 source
   `996344c2ef139746143480d22ca09adac82fde04` menutup tooling release exact
   local commit dengan archive, manifest, git bundle, salinan terpisah, status
   remote, approval, atomic switch, dan rollback target persisten. Source sudah
-  `PUSHED`; production tidak berubah. Residual release tetap physical Windows
-  UAT exact Studio/backend, backup/restore produksi terbaru, verifikasi
-  rollback production, serta otorisasi eksplisit Andreas.
+  `PUSHED`; tooling aktif kumulatif melalui production `86b04c9`.
 - `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT RESIDUAL`: S190 backend
   `475db4c2` / release `20260811190515-475db4c` memulihkan benturan scope sesi
   legacy secara otomatis. Probe production membuktikan scope lama terhapus dan
@@ -309,12 +315,13 @@ ketika keputusan atau release baru menutup gap.
   `awaiting_payment` masuk ke Review estimasi pada browser tanpa surface atau
   gate pembayaran. Production tidak berubah.
 
-- `CLOSED IN CANDIDATE / IMPLEMENTED_NOT_DEPLOYED`: S186 source
+- `CLOSED IN PRODUCTION / INCLUDED IN STUDIO 86b04c9`: S186 source
   `556c2818c7629907717e245863a3ed2d86649fbe` memperbaiki badge kategori
   berbayar Review dari rasio 1,72:1 menjadi sekitar 14,44:1. Acceptance Axe
   WCAG 2 AA kini berjalan tanpa pengecualian `color-contrast`; desktop/mobile,
   zoom 200%, forced-colors, reduced-motion, fokus, dan no-overflow lulus.
-  Production tidak berubah; authenticated UAT dan deploy tetap gate terpisah.
+  Aktif kumulatif pada release `20260811124309-86b04c9`; authenticated
+  normal-browser UAT tetap gate terpisah sebelum `BUSINESS_READY`.
 
 - `CLOSED IN CANDIDATE / IMPLEMENTED_NOT_DEPLOYED`: S183 source
   `1eb8689588ec96fb5629338c19c804bff25ec27e` membuktikan pada browser nyata

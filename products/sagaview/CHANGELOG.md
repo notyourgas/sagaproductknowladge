@@ -1,11 +1,34 @@
 # SagaView Changelog
 
+## 2026-08-11 - Studio local exact-commit production activation
+
+- Klasifikasi: `CONFIRMED`.
+- Status: `LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+  REMOTE_PUSH_PENDING`; `BUSINESS_READY` belum diklaim.
+- Before: kandidat Studio S185/S186 belum aktif; npm 9 VPS menolak lockfile
+  yang belum memuat satu dependency transitif dan endpoint provenance lama
+  jatuh ke Laravel karena batas routing Nginx.
+- After: lockfile kompatibel clean-install npm 9 dan provenance Studio memakai
+  jalur proxy `/admin/runtime-provenance`. Exact Studio
+  `86b04c9133fc7c28f6b4a6ff7c2aeb80d1480d58` aktif sebagai release
+  `20260811124309-86b04c9`, terikat ke backend
+  `475db4c21b00440004d88b8f876e3eb38aea6be0`.
+- Evidence: exact local gate, build, browser regression, dependency audit,
+  immutable archive, SHA-256, git bundle, backup source lokal/VPS, atomic
+  switch, empat public smoke HTTP 200, runtime provenance exact, service aktif,
+  journal release nol, dan rollback target `20260810091159-6d7083a` lulus.
+- UAT printer fisik dikonfirmasi lulus dan dibawa maju karena delta setelah
+  baseline tidak mengubah print/export. Residual: source Studio masih
+  `REMOTE_PUSH_PENDING`, authenticated normal-browser UAT belum selesai, dan
+  symlink rollback backend belum tersedia. Tidak ada migration, pricing,
+  subscription, credential, foto, atau data customer yang berubah.
+
 ## 2026-08-11 - S191 cumulative S185 plus S186 Studio candidate
 
 - Klasifikasi: `CONFIRMED`.
 - Status: `UIUX_VALIDATED / ACCESSIBILITY_VALIDATED / SECURITY_VALIDATED /
-  QA_VALIDATED / RELEASE_TOOLING_VALIDATED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED`; source sudah `PUSHED`, production tidak berubah.
+  QA_VALIDATED / RELEASE_TOOLING_VALIDATED / LOCAL_VALIDATED / SUPERSEDED /
+  DO_NOT_DEPLOY`; source sudah `PUSHED` dan bukan source production.
 - Before: release tooling S185 dan perbaikan kontras Review S186 berada pada
   dua lineage kandidat berbeda, sehingga exact source deploy berikutnya belum
   membawa keduanya bersama.
@@ -21,11 +44,10 @@
   git bundle SHA-256
   `2135e3e62cbd5d01f7340166a53411d48a81c380df7e3957955b69ba4296ae5d`
   cocok pada dua salinan.
-- Dampak: kandidat deploy berikutnya tidak perlu memilih antara safety tooling
-  dan aksesibilitas Review. Workflow estimasi, local-first/no-upload, API,
-  database, pricing, dan production tidak berubah. Physical Windows UAT exact
-  Studio/backend, rollback production, backup/restore terbaru, serta otorisasi
-  Andreas tetap wajib.
+- Dampak: S191 membuktikan integrasi S185/S186, tetapi tidak boleh dipakai
+  untuk deploy karena production `86b04c9` membawa tambahan lockfile npm 9 dan
+  provenance runtime. Workflow estimasi, local-first/no-upload, API, database,
+  dan pricing tetap tidak berubah.
 
 ## 2026-08-11 - S185 exact local commit to VPS release tooling
 

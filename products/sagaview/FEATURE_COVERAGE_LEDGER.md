@@ -1,6 +1,17 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 11 Agustus 2026 20:10 WIB
+Evidence cut-off: 11 Agustus 2026 20:20 WIB
+
+Studio activation cut-off: 11 Agustus 2026 20:20 WIB. Exact local source
+`86b04c9133fc7c28f6b4a6ff7c2aeb80d1480d58` aktif sebagai release
+`20260811124309-86b04c9`, terikat ke backend S190 `475db4c2`. Release membawa
+S185/S186, lockfile kompatibel clean-install npm 9 VPS, dan provenance
+read-only `/admin/runtime-provenance`. Gate exact, build/browser/audit,
+artifact immutable, backup source lokal/VPS, atomic switch, empat public smoke,
+service, journal release, dan rollback Studio ke `20260810091159-6d7083a`
+lulus; UAT printer fisik lulus. Status `PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED / REMOTE_PUSH_PENDING`; authenticated normal-browser UAT
+dan symlink rollback backend masih residual. `BUSINESS_READY` belum diklaim.
 
 Cumulative candidate cut-off: 11 Agustus 2026 20:10 WIB. S191 Studio source
 `6902f4b7a9ecda0b42eb9e3e77fb6b30e6f09ff1` menyatukan S185 exact local
@@ -11,9 +22,9 @@ vulnerability lulus. Package `20260811130729-6902f4b` berstatus
 `PACKAGED_NOT_DEPLOYED`; archive immutable, manifest SHA-256, git bundle,
 embedded source commit/tree, dan salinan kedua memiliki hash identik. Status
 `UIUX_VALIDATED / ACCESSIBILITY_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED /
-RELEASE_TOOLING_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
-production tidak berubah. Physical Windows UAT exact Studio/backend, rollback
-production, backup/restore terbaru, dan otorisasi Andreas masih menjadi gate.
+RELEASE_TOOLING_VALIDATED / LOCAL_VALIDATED / SUPERSEDED / DO_NOT_DEPLOY`.
+S191 bukan source production karena tidak membawa tambahan kompatibilitas npm 9
+dan runtime provenance pada `86b04c9`; evidence lokalnya tetap valid.
 
 Local release tooling cut-off: 11 Agustus 2026 19:10 WIB. S185 Studio source
 `996344c2ef139746143480d22ca09adac82fde04` menyediakan jalur exact local
