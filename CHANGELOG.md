@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-11 - SagaBook S187 provider reconciliation rehearsal
+
+- Menyinkronkan source `94d2b59fe6c77cd74e9625a841f0798265d1eb73`
+  sebagai paket acceptance serta runbook rehearsal reconciliation sintetis.
+- Klasifikasi `CONFIRMED`; read-only gap detection, tenant isolation,
+  permission-negative, regresi payment/backend, visual recovery, build,
+  migration disposable, dan audit dependency lulus.
+- Production berubah: tidak. Status `ACCEPTANCE_PACK_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; real provider canary,
+  authenticated UAT, pilot, dan deploy tetap gate terpisah.
+
 ## 2026-08-11 - SagaBook S186 daily closing concurrency candidate
 
 - Menyinkronkan source `55f65940277b589165ec66f20b1a5a1d94953a26`

@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 11 Agustus 2026 12:23 WIB
+Updated: 11 Agustus 2026 13:21 WIB
 Evidence status: production source and runtime verified
 
 ## Tujuan dokumen
@@ -16,6 +16,18 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
+- Candidate S187 `94d2b59fe6c77cd74e9625a841f0798265d1eb73`
+  menambahkan rehearsal sintetis dan runbook public-safe untuk reconciliation
+  pembayaran. Acceptance membuktikan gap provider-net dan legacy accounting
+  dapat dibaca tanpa membentuk task, notifikasi, atau audit baru; filter tenant
+  tetap terisolasi dan `platform_support` ditolak 403 pada read maupun run.
+  Focused reconciliation 8/8 (49 assertion), regresi payment/backend 314/314
+  (2.314 assertion), enam visual recovery spec exit 0, build, migration
+  disposable, serta npm/Composer/OSV nol advisory. Tidak ada perubahan logic,
+  API, schema, UI, provider, atau data production. Status
+  `ACCEPTANCE_PACK_VALIDATED / SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+  production tetap S170 dan canary provider nyata tetap memerlukan izin.
 - Candidate S186 `55f65940277b589165ec66f20b1a5a1d94953a26`
   membuat closing harian idempoten berdasarkan tenant, cabang, dan tanggal.
   Retry dengan nominal sama membaca kembali row authoritative tanpa audit kedua;

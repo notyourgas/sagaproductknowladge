@@ -145,9 +145,12 @@ ketika keputusan atau release baru menutup gap.
   initial-load manual transfer, dan aksi Payment Monitor sudah production pada
   S128-S130. Candidate S183-S186 telah menutup stale multi-tab, export
   recovery, pagination/filter laporan, serta closing concurrency secara lokal.
-  Residual payment/report adalah QRIS/provider dan reconciliation provider
-  nyata yang memerlukan otorisasi terpisah. Authenticated Owner/operator UAT
-  dan dua gap pilot tetap exit gate `BUSINESS_READY`.
+  Candidate S187 menambahkan rehearsal sintetis untuk gap provider-net dan
+  legacy accounting dengan bukti read-only, tenant isolation, serta permission
+  negative. Residual payment/report tetap QRIS/provider inquiry,
+  reconciliation, settlement, dan canary nyata yang memerlukan otorisasi
+  terpisah. Authenticated Owner/operator UAT dan dua gap pilot tetap exit gate
+  `BUSINESS_READY`.
   UI rate-limit 429, expiry idle per tab, dan revocation perangkat lain sudah
   aktif kumulatif pada release S156. Residual
   combined browser acceptance empat slice sudah hijau dengan runtime disposable

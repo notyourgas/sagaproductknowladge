@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 11 Agustus 2026 12:23 WIB
+- Updated: 11 Agustus 2026 13:21 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED` untuk workflow yang tercantum di
   [PRODUCT](PRODUCT.md)
@@ -17,6 +17,15 @@ dalam satu dokumen public-safe.
   PRODUCTION_ACTIVATED`
 - Source kumulatif aktif: `f69170a7e61080f90a3bcea7df1f22f5612f0369`,
   release `20260809153848-f69170a`, rollback `20260809083131-5c76735`.
+- Candidate S187 `94d2b59fe6c77cd74e9625a841f0798265d1eb73`
+  memberi operator paket acceptance dan runbook untuk rehearsal reconciliation
+  memakai database serta data sintetis. Gap provider-net dan legacy accounting
+  terdeteksi read-only tanpa task, notifikasi, atau audit baru; tenant filter
+  tidak bocor dan role `platform_support` tidak dapat membaca atau menjalankan
+  reconciliation. Focused 8/8, regresi payment/backend 314/314, visual recovery,
+  build, migration disposable, dan audit dependency lulus. Produk, API, schema,
+  UI, provider, serta production tidak berubah; real provider inquiry,
+  reconciliation, settlement, canary, UAT, pilot, dan deploy tetap terpisah.
 - Candidate S186 `55f65940277b589165ec66f20b1a5a1d94953a26`
   mengunci satu closing per tenant/cabang/tanggal pada database dan backend.
   Retry identik mengembalikan row yang sudah ada tanpa audit kedua, sedangkan

@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-11 - SagaBook S187 provider reconciliation rehearsal
+
+- Rehearsal sintetis kini membuktikan gap provider-net dan legacy accounting
+  terdeteksi tanpa mutation, tetap terisolasi per tenant, dan ditolak untuk role
+  tanpa izin; runbook operator public-safe ikut tersedia.
+- Source `94d2b59fe6c77cd74e9625a841f0798265d1eb73` sudah dipush; focused,
+  regresi payment/backend, visual recovery, build, migration disposable, serta
+  audit dependency lulus.
+- Status `ACCEPTANCE_PACK_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production SagaBook tetap S170 dan produk SagaDev
+  lain tidak berubah.
+
 ## 2026-08-11 - SagaBook S186 daily closing concurrency
 
 - Closing harian kini satu row per tenant/cabang/tanggal; retry identik membaca

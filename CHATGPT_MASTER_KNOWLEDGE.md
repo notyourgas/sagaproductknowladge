@@ -68,6 +68,17 @@ pembayaran, menerima status/reminder, dan mengelola request dari secure booking
 link. Operator mengelola calendar, task, check-in, session, payment,
 reconciliation, report, staff, tenant, dan subscription.
 
+Candidate SagaBook S187 source
+`94d2b59fe6c77cd74e9625a841f0798265d1eb73` menambahkan paket acceptance dan
+runbook rehearsal reconciliation sintetis. Rehearsal mendeteksi gap provider-net
+dan legacy accounting tanpa mutation, membuktikan tenant filter terisolasi,
+serta menolak role `platform_support` pada read maupun run. Focused 8/8,
+regresi payment/backend 314/314, visual recovery, build, migration disposable,
+dan audit dependency lulus. Status `ACCEPTANCE_PACK_VALIDATED /
+SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; production tetap S170 dan real provider canary,
+UAT, pilot, serta deploy tetap gate terpisah.
+
 Candidate SagaBook S186 source
 `55f65940277b589165ec66f20b1a5a1d94953a26` membuat closing harian idempoten
 berdasarkan tenant, cabang, dan tanggal. Retry identik membaca row authoritative

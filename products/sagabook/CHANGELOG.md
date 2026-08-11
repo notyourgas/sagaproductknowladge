@@ -1,5 +1,24 @@
 # SagaBook Changelog
 
+## 2026-08-11 - Provider reconciliation rehearsal S187 candidate
+
+- Gap reconciliation roadmap `CONFIRMED`; source ini hanya menambah acceptance
+  sintetis dan runbook, tanpa mengubah product logic, API, schema, UI, provider,
+  atau production.
+- Before: belum ada rehearsal terfokus untuk gap provider-net dan legacy
+  accounting yang sekaligus membuktikan read-only, isolasi tenant, permission
+  negative, dan tidak adanya task/notifikasi/audit tambahan. After: seluruh
+  boundary tersebut mempunyai bukti repeatable pada database disposable.
+- Source `94d2b59fe6c77cd74e9625a841f0798265d1eb73` pada branch
+  `codex/s187-sagabook-reconciliation-rehearsal` sudah dipush. Focused 8/8
+  (49 assertion), regresi payment/backend 314/314 (2.314 assertion), enam
+  visual recovery spec exit 0, build, migration, dan audit npm/Composer/OSV
+  lulus.
+- Status `ACCEPTANCE_PACK_VALIDATED / SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+  Production tetap S170; real provider canary/reconciliation, authenticated
+  UAT, pilot, dan deploy masih memerlukan gate serta izin terpisah.
+
 ## 2026-08-11 - Daily closing concurrency/recovery S186 candidate
 
 - Gap closing concurrency roadmap `CONFIRMED`; workflow status, permission,

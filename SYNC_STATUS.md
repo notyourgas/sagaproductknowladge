@@ -12,11 +12,11 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-11T12:23:00+07:00 |
-| Branch aktif | `main` (sinkronisasi source `codex/s186-sagabook-closing-concurrency`) |
+| Waktu pembaruan terakhir | 2026-08-11T13:21:35+07:00 |
+| Branch aktif | `main` (sinkronisasi source `codex/s187-sagabook-reconciliation-rehearsal`) |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `c605dae3fc8d2e8b9acaa126e3124da5a03c65c3` |
-| Informasi terakhir disinkronkan | SagaBook S186 menutup closing concurrency/retry dengan natural key, replay authoritative, konflik 409, tenant-negative, audit tunggal, dan recovery UI. |
+| Baseline sebelum pembaruan | `0572838642d7295c9491cef43b3d478b09aa874e` |
+| Informasi terakhir disinkronkan | SagaBook S187 menambah acceptance dan runbook rehearsal reconciliation sintetis dengan read-only gap detection, tenant isolation, permission-negative, dan no-side-effect evidence. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, fast-forward ke `main`, push, dan remote verification. |
 | Konflik | Tidak ada konflik baru; workflow dan permission SagaBook tidak berubah. |
 | Error | Tidak ada error source. Deploy SagaBook tetap memerlukan otorisasi dan gate kandidat terpisah. |
@@ -524,8 +524,10 @@ relasi/audit/tenant. S6 keseluruhan tetap `IN_PROGRESS` karena combined exit
 gate masih residual.
 Recovery response availability kosong, initial-load manual transfer, dan aksi Payment Monitor
 S128-S130 sudah production. Candidate S183-S186 menutup stale multi-tab,
-export, pagination/filter, dan closing concurrency secara lokal. Residual
-payment/report adalah QRIS/provider serta reconciliation provider nyata. UI
+export, pagination/filter, dan closing concurrency secara lokal. Candidate S187
+menambahkan rehearsal reconciliation sintetis yang read-only, tenant-scoped,
+dan permission-negative. Residual payment/report tetap QRIS/provider inquiry,
+reconciliation, settlement, serta canary provider nyata. UI
 rate-limit 429, expiry idle per tab, revocation
 perangkat lain, combined browser acceptance, full backend, dan dependency audit
 sudah `LOCAL_VALIDATED`; Sprint 2 exit gate diterima lokal. Source belum
