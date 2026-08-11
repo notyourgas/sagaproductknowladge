@@ -143,8 +143,9 @@ ketika keputusan atau release baru menutup gap.
   tersedia dan diverifikasi melalui release immutable S156.
   Recovery response availability kosong,
   initial-load manual transfer, dan aksi Payment Monitor sudah production pada
-  S128-S130. Residual payment/report adalah QRIS/provider nyata,
-  pagination/filter/export, reconciliation provider, stale multi-tab, dan
+  S128-S130. Candidate S183-S185 telah menutup stale multi-tab,
+  export recovery, serta pagination/filter laporan secara lokal. Residual
+  payment/report adalah QRIS/provider nyata, reconciliation provider, dan
   closing concurrency. Sprint aktif berikutnya adalah S7-S8 availability/slot
   concurrency, lalu booking, admin/task, WhatsApp/reminder, dan template
   draft/preview/publish.

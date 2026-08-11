@@ -1,5 +1,23 @@
 # SagaBook Changelog
 
+## 2026-08-11 - Report transaction pagination/filter S185 candidate
+
+- Gap report roadmap `CONFIRMED`; API, schema, total laporan, permission,
+  workflow booking, dan production tidak berubah.
+- Before: tombol Filter tidak mempunyai aksi dan seluruh transaksi dirender
+  sekaligus. After: pencarian, filter metode, reset, empty state, live status,
+  serta pagination 10 baris bekerja pada rows tenant/cabang-scoped tanpa
+  mengubah ringkasan authoritative.
+- Source `e1772b2b94bc9feae65ec2367b62ab00926b6622` pada branch
+  `codex/s185-sagabook-report-pagination-filter` sudah dipush. Playwright S185
+  4 lulus/2 skip terencana, regresi laporan 4 lulus/5 skip, focused backend
+  11/11 (213), full backend 1.029/1.029 (11.650), database 100/100,
+  build/typecheck/design 26/0, serta npm/Composer/OSV nol advisory.
+- Status `EXIT_GATE_ACCEPTED / SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / UIUX_VALIDATED / INTEGRATION_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Production tetap S170; tidak
+  ada deploy, credential/data customer, canary, atau activation.
+
 ## 2026-08-11 - Report export recovery S184 candidate
 
 - Gap report/export roadmap `CONFIRMED`; schema, data laporan, permission,

@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-11 - SagaBook S185 report pagination/filter candidate
+
+- Menyinkronkan source `e1772b2b94bc9feae65ec2367b62ab00926b6622`
+  sebagai pencarian, filter metode, reset, empty state, dan pagination 10 baris
+  untuk Detail Transaksi laporan harian.
+- Klasifikasi `CONFIRMED`; Playwright S185/regresi laporan, focused/full
+  backend, database disposable 100/100, build/typecheck/design, dan audit
+  dependency lulus.
+- Production berubah: tidak. Status `EXIT_GATE_ACCEPTED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; authenticated Owner/operator UAT, pilot, real
+  provider/reconciliation, dan deploy tetap gate terpisah.
+
 ## 2026-08-11 - SagaBook S184 report export recovery candidate
 
 - Menyinkronkan source `f63713e1b8e7e9fa677fec7ed22fdb4c8573122f`

@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 11 Agustus 2026 07:25 WIB
+- Updated: 11 Agustus 2026 10:05 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED` untuk workflow yang tercantum di
   [PRODUCT](PRODUCT.md)
@@ -17,6 +17,15 @@ dalam satu dokumen public-safe.
   PRODUCTION_ACTIVATED`
 - Source kumulatif aktif: `f69170a7e61080f90a3bcea7df1f22f5612f0369`,
   release `20260809153848-f69170a`, rollback `20260809083131-5c76735`.
+- Candidate S185 `e1772b2b94bc9feae65ec2367b62ab00926b6622`
+  mengganti tombol Filter inert pada Detail Transaksi dengan pencarian lokal,
+  filter metode, reset, empty state, live region, dan pagination 10 baris.
+  Ringkasan total tetap authoritative; rows tetap berasal dari response yang
+  sudah capability dan tenant/cabang scoped. Tidak ada endpoint, schema, write,
+  raw PII, atau audit payload baru. Keyboard Enter/Escape, target 44 px,
+  forced-colors, reduced-motion, zoom/no-overflow, tiga viewport, full backend,
+  database 100/100, build, dan audit dependency lulus. Production tetap S170;
+  authenticated UAT, pilot, serta real provider/reconciliation tetap terpisah.
 - Candidate S184 `f63713e1b8e7e9fa677fec7ed22fdb4c8573122f`
   mengaktifkan jalur export background existing sebagai satu primary action
   sesuai status. Kunci request stabil menjaga retry ambigu dan double-submit

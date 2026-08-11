@@ -12,13 +12,13 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-11T07:25:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-11T10:05:00+07:00 |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `590599f753011ecba61338f46ac4268429cf303d` |
-| Informasi terakhir disinkronkan | SagaBook S184 source `f63713e1b8e7e9fa677fec7ed22fdb4c8573122f` menutup recovery export laporan secara lokal; status `EXIT_GATE_ACCEPTED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED` dan production tetap S170. |
+| Baseline sebelum pembaruan | `c6066ae3eca01d2b9bd33e0c5336a800d4ecf1ae` |
+| Informasi terakhir disinkronkan | SagaBook S185 source `e1772b2b94bc9feae65ec2367b62ab00926b6622` menutup pagination/filter transaksi laporan secara lokal; status `EXIT_GATE_ACCEPTED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED` dan production tetap S170. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, fast-forward ke `main`, push, dan remote verification. |
-| Konflik | Tidak ada konflik kanonik; fast-forward mempertahankan SagaView S176, SagaBook S183, dan seluruh histori sebelumnya. |
+| Konflik | Tidak ada konflik kanonik; fast-forward mempertahankan SagaBook S184, SagaView S176, dan seluruh histori sebelumnya. |
 | Error | Tidak ada error source atau validator yang diketahui. Runtime production SagaBook tidak diubah. |
 
 ## File yang berubah pada sinkronisasi ini
@@ -29,6 +29,7 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
 - `SYNC_STATUS.md`
 - `CHANGELOG.md`
 

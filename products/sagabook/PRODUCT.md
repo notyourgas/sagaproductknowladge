@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 11 Agustus 2026 07:25 WIB
+Updated: 11 Agustus 2026 10:05 WIB
 Evidence status: production source and runtime verified
 
 ## Tujuan dokumen
@@ -16,6 +16,17 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
+- Candidate S185 `e1772b2b94bc9feae65ec2367b62ab00926b6622`
+  menutup gap pagination/filter transaksi laporan harian. Tabel kini mempunyai
+  pencarian, filter metode, reset, empty state, live status, dan pagination 10
+  baris tanpa mengubah total laporan atau menambah endpoint/schema. Rows tetap
+  mengikuti capability serta scope tenant/cabang backend existing. Playwright
+  S185 4 lulus/2 skip terencana, regresi laporan 4 lulus/5 skip, focused backend
+  11/11 (213 assertion), full backend 1.029/1.029 (11.650), database disposable
+  100/100, build/typecheck/design 26/0, serta npm/Composer/OSV nol advisory.
+  Status `EXIT_GATE_ACCEPTED / SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / UIUX_VALIDATED / INTEGRATION_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S170.
 - Candidate S184 `f63713e1b8e7e9fa677fec7ed22fdb4c8573122f`
   membuat export laporan admin memakai satu aksi authoritative untuk buat,
   periksa, unduh, atau coba lagi. Request ID stabil mencegah job/audit ganda

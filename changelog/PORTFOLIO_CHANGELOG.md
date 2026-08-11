@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-11 - SagaBook S185 report pagination/filter
+
+- Detail Transaksi laporan harian kini mempunyai pencarian, filter metode,
+  reset, empty state, live status, dan pagination 10 baris tanpa mengubah total
+  authoritative atau boundary tenant/cabang.
+- Source `e1772b2b94bc9feae65ec2367b62ab00926b6622` sudah dipush; Playwright
+  S185/regresi laporan, full backend 1.029/1.029, database 100/100,
+  build/typecheck/design, dan audit dependency lulus.
+- Status `EXIT_GATE_ACCEPTED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production SagaBook tetap S170 dan produk SagaDev
+  lain tidak berubah.
+
 ## 2026-08-11 - SagaBook S184 report export recovery
 
 - Export laporan admin kini memakai satu aksi berbasis status database, retry
