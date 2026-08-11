@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 11 Agustus 2026 10:05 WIB
+- Updated: 11 Agustus 2026 12:23 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED` untuk workflow yang tercantum di
   [PRODUCT](PRODUCT.md)
@@ -17,6 +17,17 @@ dalam satu dokumen public-safe.
   PRODUCTION_ACTIVATED`
 - Source kumulatif aktif: `f69170a7e61080f90a3bcea7df1f22f5612f0369`,
   release `20260809153848-f69170a`, rollback `20260809083131-5c76735`.
+- Candidate S186 `55f65940277b589165ec66f20b1a5a1d94953a26`
+  mengunci satu closing per tenant/cabang/tanggal pada database dan backend.
+  Retry identik mengembalikan row yang sudah ada tanpa audit kedua, sedangkan
+  retry dengan actual cash berbeda mengembalikan konflik 409 serta row
+  authoritative. Cabang di luar tenant ditolak. UI Owner, Staff, dan Report
+  memakai lock sinkron, status loading, serta recovery copy; panel Closing yang
+  sebelumnya tidak mempunyai tab kini dapat dinavigasi. Migration fresh,
+  rollback, dan migrate ulang lulus; data production read-only tidak memiliki
+  natural-key duplicate. Browser mobile/tablet/desktop, accessibility mode,
+  focused backend, regresi report, build, dan audit dependency lulus.
+  Production tetap S170; authenticated UAT, pilot, dan deploy terpisah.
 - Candidate S185 `e1772b2b94bc9feae65ec2367b62ab00926b6622`
   mengganti tombol Filter inert pada Detail Transaksi dengan pencarian lokal,
   filter metode, reset, empty state, live region, dan pagination 10 baris.

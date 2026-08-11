@@ -143,12 +143,11 @@ ketika keputusan atau release baru menutup gap.
   tersedia dan diverifikasi melalui release immutable S156.
   Recovery response availability kosong,
   initial-load manual transfer, dan aksi Payment Monitor sudah production pada
-  S128-S130. Candidate S183-S185 telah menutup stale multi-tab,
-  export recovery, serta pagination/filter laporan secara lokal. Residual
-  payment/report adalah QRIS/provider nyata, reconciliation provider, dan
-  closing concurrency. Sprint aktif berikutnya adalah S7-S8 availability/slot
-  concurrency, lalu booking, admin/task, WhatsApp/reminder, dan template
-  draft/preview/publish.
+  S128-S130. Candidate S183-S186 telah menutup stale multi-tab, export
+  recovery, pagination/filter laporan, serta closing concurrency secara lokal.
+  Residual payment/report adalah QRIS/provider dan reconciliation provider
+  nyata yang memerlukan otorisasi terpisah. Authenticated Owner/operator UAT
+  dan dua gap pilot tetap exit gate `BUSINESS_READY`.
   UI rate-limit 429, expiry idle per tab, dan revocation perangkat lain sudah
   aktif kumulatif pada release S156. Residual
   combined browser acceptance empat slice sudah hijau dengan runtime disposable

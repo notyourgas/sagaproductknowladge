@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-11 - SagaBook S186 daily closing concurrency
+
+- Closing harian kini satu row per tenant/cabang/tanggal; retry identik membaca
+  row authoritative tanpa audit kedua, sedangkan nominal berbeda gagal 409 dan
+  input operator tetap tersimpan.
+- Source `55f65940277b589165ec66f20b1a5a1d94953a26` sudah dipush; backend,
+  migration, browser tiga viewport/accessibility mode, regresi report, build,
+  dan audit dependency lulus.
+- Status `EXIT_GATE_ACCEPTED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production SagaBook tetap S170 dan produk SagaDev
+  lain tidak berubah.
+
 ## 2026-08-11 - SagaView S181 active-pair rollback rehearsal
 
 - Exact artifact runtime aktif S163/S159 berhasil direstore pada filesystem

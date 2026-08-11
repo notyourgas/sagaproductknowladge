@@ -1,5 +1,24 @@
 # SagaBook Changelog
 
+## 2026-08-11 - Daily closing concurrency/recovery S186 candidate
+
+- Gap closing concurrency roadmap `CONFIRMED`; workflow status, permission,
+  provider, dan production tidak berubah.
+- Before: ID acak client memungkinkan dua row/audit untuk cabang dan tanggal
+  sama, double-click sinkron dapat mengirim dua request, dan panel Closing di
+  Report tidak mempunyai tab. After: natural key database, transaction/lock,
+  replay authoritative, konflik 409, tenant-negative, satu-request guard, serta
+  loading/recovery UI bekerja end-to-end.
+- Source `55f65940277b589165ec66f20b1a5a1d94953a26` pada branch
+  `codex/s186-sagabook-closing-concurrency` sudah dipush. Focused backend 13/13
+  (104 assertion), Playwright S186 5 lulus/4 skip terencana, regresi report
+  14 lulus/10 skip, kontrak UI admin 26/26, migration fresh/rollback, build,
+  serta npm/Composer/OSV nol advisory.
+- Status `EXIT_GATE_ACCEPTED / SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / UIUX_VALIDATED / INTEGRATION_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Production tetap S170; tidak
+  ada deploy, credential/data customer, canary, atau activation.
+
 ## 2026-08-11 - Report transaction pagination/filter S185 candidate
 
 - Gap report roadmap `CONFIRMED`; API, schema, total laporan, permission,

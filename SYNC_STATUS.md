@@ -12,21 +12,21 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-11T12:08:00+07:00 |
-| Branch aktif | `main` (disiapkan dari branch terisolasi `codex/s181-sagaview-rollback-rehearsal`) |
+| Waktu pembaruan terakhir | 2026-08-11T12:23:00+07:00 |
+| Branch aktif | `main` (sinkronisasi source `codex/s186-sagabook-closing-concurrency`) |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `7ee704e84543d0f35d31467c85e1a08b897866fd` |
-| Informasi terakhir disinkronkan | SagaView S181 membuktikan restore/switch disposable dan rollback exact runtime aktif S163/S159; S155 tetap `DEPRECATED / DO_NOT_ROLLBACK`. |
+| Baseline sebelum pembaruan | `c605dae3fc8d2e8b9acaa126e3124da5a03c65c3` |
+| Informasi terakhir disinkronkan | SagaBook S186 menutup closing concurrency/retry dengan natural key, replay authoritative, konflik 409, tenant-negative, audit tunggal, dan recovery UI. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, fast-forward ke `main`, push, dan remote verification. |
-| Konflik | Tidak ada konflik baru; kontrak estimate-only tetap authority. |
-| Error | Tidak ada error source. Deploy SagaView tetap memerlukan otorisasi dan gate kandidat terpisah. |
+| Konflik | Tidak ada konflik baru; workflow dan permission SagaBook tidak berubah. |
+| Error | Tidak ada error source. Deploy SagaBook tetap memerlukan otorisasi dan gate kandidat terpisah. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/sagaview/PRODUCT.md`
-- `products/sagaview/DOSSIER.md`
-- `products/sagaview/CHANGELOG.md`
-- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `GAPS.md`
@@ -523,9 +523,10 @@ offline/retry, draft preservation, double-submit guard, dan integritas
 relasi/audit/tenant. S6 keseluruhan tetap `IN_PROGRESS` karena combined exit
 gate masih residual.
 Recovery response availability kosong, initial-load manual transfer, dan aksi Payment Monitor
-S128-S130 sudah production. Residual payment/report adalah QRIS/provider nyata,
-pagination/filter/export, reconciliation provider, stale multi-tab, dan
-  closing concurrency. UI rate-limit 429, expiry idle per tab, revocation
+S128-S130 sudah production. Candidate S183-S186 menutup stale multi-tab,
+export, pagination/filter, dan closing concurrency secara lokal. Residual
+payment/report adalah QRIS/provider serta reconciliation provider nyata. UI
+rate-limit 429, expiry idle per tab, revocation
 perangkat lain, combined browser acceptance, full backend, dan dependency audit
 sudah `LOCAL_VALIDATED`; Sprint 2 exit gate diterima lokal. Source belum
 production dan deploy tetap ditahan sampai S21. Status

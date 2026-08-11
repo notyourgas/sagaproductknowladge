@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 11 Agustus 2026 10:05 WIB
+Updated: 11 Agustus 2026 12:23 WIB
 Evidence status: production source and runtime verified
 
 ## Tujuan dokumen
@@ -16,6 +16,20 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
+- Candidate S186 `55f65940277b589165ec66f20b1a5a1d94953a26`
+  membuat closing harian idempoten berdasarkan tenant, cabang, dan tanggal.
+  Retry dengan nominal sama membaca kembali row authoritative tanpa audit kedua;
+  nominal berbeda ditolak 409 dan input operator tetap tersimpan. Database
+  menegakkan natural key unik, cabang tenant lain ditolak, dan UI dashboard
+  Owner/Staff serta Report memakai guard sinkron untuk mencegah dua request.
+  Tab Closing kini dapat diakses pada Report dengan status loading/recovery,
+  target 44 px, forced-colors, reduced-motion, dan no-overflow. Focused backend
+  13/13 (104 assertion), Playwright S186 5 lulus/4 skip terencana, regresi
+  report/export/pagination/closing 14 lulus/10 skip, kontrak UI admin 26/26,
+  migrasi fresh/rollback, build, serta npm/Composer/OSV nol advisory. Status
+  `EXIT_GATE_ACCEPTED / SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
+  UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap S170.
 - Candidate S185 `e1772b2b94bc9feae65ec2367b62ab00926b6622`
   menutup gap pagination/filter transaksi laporan harian. Tabel kini mempunyai
   pencarian, filter metode, reset, empty state, live status, dan pagination 10
