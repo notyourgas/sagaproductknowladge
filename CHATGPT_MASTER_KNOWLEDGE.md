@@ -1069,6 +1069,14 @@ Playwright alias dan regresi estimate-only, desktop/mobile no-overflow,
 forced-colors/reduced-motion, unit 203/203, build/budget, serta audit dependency
 lulus. Kontras warna Review belum diklaim. Status `LOCAL_VALIDATED /
 IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
+S186 source `556c2818c7629907717e245863a3ed2d86649fbe` menutup gap kontras
+warna Review: badge kategori berbayar berubah dari rasio 1,72:1 menjadi sekitar
+14,44:1. Axe WCAG 2 AA kini berjalan tanpa pengecualian `color-contrast`;
+Playwright 7/7 desktop/mobile, zoom 200%, forced-colors, reduced-motion, fokus,
+offline/retry, alias historis, hydration legacy, dan no-overflow lulus. Unit
+203/203, build/budget, serta audit dependency juga lulus. Status
+`ACCESSIBILITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+production tidak berubah.
 S164 source `8fe779491649328a90d91fb0bbbf88a2fcf6290a` membuat Owner
 `Kategori & Harga` lebih ringkas: tepat satu editor/aksi aktif, draft tetap
 aman ketika gagal atau berpindah panel, dan recovery copy tampil dekat aksi.

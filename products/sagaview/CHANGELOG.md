@@ -1,5 +1,26 @@
 # SagaView Changelog
 
+## 2026-08-11 - S186 Review badge contrast repair
+
+- Klasifikasi: `CONFIRMED`.
+- Status: `UIUX_VALIDATED / ACCESSIBILITY_VALIDATED / SECURITY_VALIDATED /
+  QA_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak
+  berubah.
+- Before: badge `PREMIUM` pada Review memakai teks warning di atas tint warning
+  dengan rasio 1,72:1, di bawah syarat WCAG 2 AA 4,5:1; acceptance Review
+  menonaktifkan rule Axe `color-contrast`.
+- After: badge memakai amber gelap di atas amber terang dengan rasio sekitar
+  14,44:1. Acceptance browser menjalankan seluruh rule WCAG 2 AA tanpa
+  pengecualian kontras dan tetap memeriksa fokus serta reflow zoom 200%.
+- Evidence: source Studio
+  `556c2818c7629907717e245863a3ed2d86649fbe`; Playwright 7/7 pada 1440x900 dan
+  390x844 termasuk forced-colors, reduced-motion, fokus, offline/retry,
+  no-overflow, alias historis, dan hydration legacy. Unit 203/203,
+  format/lint/typecheck/build, budget 299,7/450 KiB, npm audit nol
+  vulnerability, immutable ZIP, SHA-256 manifest, dan git bundle lulus.
+- Dampak: label kategori berbayar lebih mudah dibaca tanpa mengubah harga,
+  workflow estimasi, local-first/no-upload, API, database, atau production.
+
 ## 2026-08-11 - S184 historical Review route browser acceptance
 
 - Klasifikasi: `CONFIRMED`.

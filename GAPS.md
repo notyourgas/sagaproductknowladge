@@ -286,10 +286,12 @@ ketika keputusan atau release baru menutup gap.
   `awaiting_payment` masuk ke Review estimasi pada browser tanpa surface atau
   gate pembayaran. Production tidak berubah.
 
-- `TODO / ACCESSIBILITY`: acceptance Review existing masih mengecualikan rule
-  Axe `color-contrast`. S184 membuktikan serious/critical non-kontras nol,
-  forced-colors, reduced-motion, dan no-overflow, tetapi audit/fix kontras warna
-  Review perlu slice UI tersendiri sebelum klaim a11y penuh.
+- `CLOSED IN CANDIDATE / IMPLEMENTED_NOT_DEPLOYED`: S186 source
+  `556c2818c7629907717e245863a3ed2d86649fbe` memperbaiki badge kategori
+  berbayar Review dari rasio 1,72:1 menjadi sekitar 14,44:1. Acceptance Axe
+  WCAG 2 AA kini berjalan tanpa pengecualian `color-contrast`; desktop/mobile,
+  zoom 200%, forced-colors, reduced-motion, fokus, dan no-overflow lulus.
+  Production tidak berubah; authenticated UAT dan deploy tetap gate terpisah.
 
 - `CLOSED IN CANDIDATE / IMPLEMENTED_NOT_DEPLOYED`: S183 source
   `1eb8689588ec96fb5629338c19c804bff25ec27e` membuktikan pada browser nyata

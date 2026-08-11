@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-11 - SagaView S186 Review contrast repair
+
+- Badge kategori berbayar Review berubah dari rasio 1,72:1 menjadi sekitar
+  14,44:1 dan acceptance Axe WCAG 2 AA kini berjalan tanpa pengecualian
+  `color-contrast`.
+- Source `556c2818c7629907717e245863a3ed2d86649fbe` sudah dipush; Playwright 7/7,
+  unit 203/203, build/budget, audit dependency, immutable archive, manifest,
+  dan git bundle lulus.
+- Status `ACCESSIBILITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production SagaView dan produk SagaDev lain tidak
+  berubah.
+
 ## 2026-08-11 - SagaBook S189 provider-before-expiry reconciliation
 
 - Reconciliation kini membaca status provider sebelum expiry lokal sehingga

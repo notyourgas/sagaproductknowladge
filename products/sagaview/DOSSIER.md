@@ -173,6 +173,15 @@ build/budget, dan audit dependency lulus. Rule Axe `color-contrast` mengikuti
 pengecualian suite Review existing dan belum diklaim selesai. Production tidak
 berubah.
 
+S186 source `556c2818c7629907717e245863a3ed2d86649fbe` menutup pengecualian
+tersebut. Badge kategori berbayar Review sebelumnya memakai teks warning di
+atas tint warning dengan rasio 1,72:1; kandidat memakai amber gelap di atas
+amber terang dengan rasio sekitar 14,44:1. Axe WCAG 2 AA kini berjalan tanpa
+menonaktifkan `color-contrast`. Playwright 7/7 memverifikasi desktop/mobile,
+zoom 200%, forced-colors, reduced-motion, fokus, offline/retry, no-overflow,
+alias historis, dan hydration legacy. Unit 203/203, format/lint/typecheck,
+build/budget, serta audit dependency juga lulus. Production tidak berubah.
+
 ## Use case
 
 Provisioning, Owner Console, device activation, exclusive Studio lease,
