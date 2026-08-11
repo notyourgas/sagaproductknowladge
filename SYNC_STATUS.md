@@ -12,21 +12,21 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-11T14:12:12+07:00 |
-| Branch aktif | `main` (sinkronisasi source `codex/s183-sagaview-legacy-store-browser-uat`) |
+| Waktu pembaruan terakhir | 2026-08-11T14:20:02+07:00 |
+| Branch aktif | `main` (sinkronisasi source `codex/s188-sagabook-reconcile-tenant-scope`) |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `e5c034ea2b8a24fc8a19651283983ee9156e0b91` |
-| Informasi terakhir disinkronkan | SagaView S183 membuktikan sanitasi persisted payment state S182 melalui hydration browser nyata pada desktop/mobile/a11y. |
+| Baseline sebelum pembaruan | `d6c75f10dab2ed86fdff7ab8d778add1fbc48c83` |
+| Informasi terakhir disinkronkan | SagaBook S188 membatasi expiry reconciliation operator ke tenant terpilih dan membuktikan tenant lain tidak berubah. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, fast-forward ke `main`, push, dan remote verification. |
-| Konflik | Tidak ada konflik baru; fixture hanya data sintetis dan kontrak local-first/no-upload tetap terjaga. |
-| Error | Tidak ada error source. Production tidak berubah; deploy SagaView tetap memerlukan otorisasi, gate release, dan authenticated UAT terpisah. |
+| Konflik | Tidak ada konflik baru; scheduler tanpa filter tetap global dan tidak ada perubahan UI, schema, atau provider. |
+| Error | Tidak ada error source. Production tidak berubah; provider nyata, authenticated UAT, pilot, dan deploy SagaBook tetap memerlukan otorisasi terpisah. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/sagaview/PRODUCT.md`
-- `products/sagaview/DOSSIER.md`
-- `products/sagaview/CHANGELOG.md`
-- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `GAPS.md`

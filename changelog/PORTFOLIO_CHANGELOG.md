@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-11 - SagaBook S188 tenant-scoped reconciliation expiry
+
+- Reconciliation operator untuk satu tenant kini hanya dapat meng-expire hold,
+  session, booking, slot, settlement, dan audit tenant tersebut; scheduler
+  global tetap kompatibel.
+- Source `95a22d3bf27be9dca2e45fcbf6af5c01f40b6879` sudah dipush; acceptance lintas
+  tenant, 346 regresi payment/backend, enam visual recovery spec, build,
+  database audit, dan audit dependency lulus.
+- Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production SagaBook dan produk SagaDev lain tidak
+  berubah.
+
 ## 2026-08-11 - SagaView S183 legacy-store browser acceptance
 
 - Hydration browser nyata kini membuktikan payload Studio lama yang membawa

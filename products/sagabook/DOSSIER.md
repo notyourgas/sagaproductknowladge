@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 11 Agustus 2026 13:21 WIB
+- Updated: 11 Agustus 2026 14:20 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED` untuk workflow yang tercantum di
   [PRODUCT](PRODUCT.md)
@@ -17,6 +17,15 @@ dalam satu dokumen public-safe.
   PRODUCTION_ACTIVATED`
 - Source kumulatif aktif: `f69170a7e61080f90a3bcea7df1f22f5612f0369`,
   release `20260809153848-f69170a`, rollback `20260809083131-5c76735`.
+- Candidate S188 `95a22d3bf27be9dca2e45fcbf6af5c01f40b6879`
+  membuat reconciliation operator yang difilter tenant meneruskan scope yang
+  sama ke expiry hold dan payment session. Booking, slot, settlement expiry,
+  serta audit tenant lain tidak lagi dapat berubah dalam run tersebut;
+  scheduler tanpa filter tetap kompatibel dan global. Acceptance lintas tenant,
+  regresi command/payment/backend, enam visual recovery spec, build, database
+  disposable 100/100, dan audit dependency lulus. Tidak ada perubahan UI,
+  schema, provider, data customer, atau production; provider nyata, UAT, pilot,
+  serta deploy tetap gate terpisah.
 - Candidate S187 `94d2b59fe6c77cd74e9625a841f0798265d1eb73`
   memberi operator paket acceptance dan runbook untuk rehearsal reconciliation
   memakai database serta data sintetis. Gap provider-net dan legacy accounting

@@ -1,5 +1,15 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-11 - SagaBook S188 tenant-scoped payment reconciliation
+
+- Menyinkronkan source `95a22d3bf27be9dca2e45fcbf6af5c01f40b6879`
+  yang membatasi expiry reconciliation operator ke tenant terpilih.
+- Klasifikasi `CONFIRMED`; acceptance lintas tenant, regresi command/payment,
+  visual recovery, build, database audit 100/100, dan audit dependency lulus.
+- Production berubah: tidak. Status `SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+  real provider, authenticated UAT, pilot, dan deploy tetap gate terpisah.
+
 ## 2026-08-11 - SagaView S183 browser hydration acceptance
 
 - Menyinkronkan source `1eb8689588ec96fb5629338c19c804bff25ec27e`

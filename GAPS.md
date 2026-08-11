@@ -147,7 +147,9 @@ ketika keputusan atau release baru menutup gap.
   recovery, pagination/filter laporan, serta closing concurrency secara lokal.
   Candidate S187 menambahkan rehearsal sintetis untuk gap provider-net dan
   legacy accounting dengan bukti read-only, tenant isolation, serta permission
-  negative. Residual payment/report tetap QRIS/provider inquiry,
+  negative. Candidate S188 menutup risiko expiry lintas tenant ketika operator
+  menjalankan reconciliation dengan filter tenant; scheduler global tetap
+  kompatibel. Residual payment/report tetap QRIS/provider inquiry,
   reconciliation, settlement, dan canary nyata yang memerlukan otorisasi
   terpisah. Authenticated Owner/operator UAT dan dua gap pilot tetap exit gate
   `BUSINESS_READY`.

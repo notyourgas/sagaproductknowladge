@@ -1,5 +1,23 @@
 # SagaBook Changelog
 
+## 2026-08-11 - Tenant-scoped payment reconciliation S188 candidate
+
+- Gap tenant isolation pada reconciliation command `CONFIRMED`; UI, schema,
+  provider, workflow global scheduler, dan production tidak berubah.
+- Before: `reconcile-payments --tenant` memfilter provider scan tetapi memanggil
+  expiry secara global sehingga data payment tenant lain dapat berubah. After:
+  scope tenant diteruskan ke hold/session expiry; booking, slot, settlement
+  expiry, dan audit tenant lain tetap utuh, sementara run tanpa filter tetap
+  global.
+- Source `95a22d3bf27be9dca2e45fcbf6af5c01f40b6879` pada branch
+  `codex/s188-sagabook-reconcile-tenant-scope` sudah dipush. Focused 4/4 (21
+  assertion), regresi payment/backend 346/346 (2.511 assertion), enam visual
+  recovery spec exit 0, build, database disposable 100/100, dan audit
+  npm/Composer/OSV lulus.
+- Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Production tetap S170; real provider, UAT, pilot,
+  dan deployment masih memerlukan izin serta gate terpisah.
+
 ## 2026-08-11 - Provider reconciliation rehearsal S187 candidate
 
 - Gap reconciliation roadmap `CONFIRMED`; source ini hanya menambah acceptance
