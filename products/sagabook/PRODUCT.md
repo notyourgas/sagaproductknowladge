@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 11 Agustus 2026 06:01 WIB
+Updated: 11 Agustus 2026 07:25 WIB
 Evidence status: production source and runtime verified
 
 ## Tujuan dokumen
@@ -16,6 +16,18 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
+- Candidate S184 `f63713e1b8e7e9fa677fec7ed22fdb4c8573122f`
+  membuat export laporan admin memakai satu aksi authoritative untuk buat,
+  periksa, unduh, atau coba lagi. Request ID stabil mencegah job/audit ganda
+  saat double-submit atau retry jaringan; replay dengan filter berbeda ditolak
+  409 dan PDF yang tidak didukung ditolak 422. Status export selalu dibaca
+  kembali dari database, filter cabang bertahan saat offline/403, dan pesan
+  kegagalan tidak membocorkan exception atau path. Full backend 1.029/1.029
+  (11.650 assertion), Playwright recovery 5 lulus dengan regresi laporan cabang
+  4 lulus, audit database disposable 100/100, build/design 26/0, serta npm/OSV
+  nol advisory. Status `EXIT_GATE_ACCEPTED / SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / UIUX_VALIDATED / INTEGRATION_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S170.
 - Candidate S183 `12fd512ced523a41167b9b68cfad55eaa3b04e4e`
   mengikat payment/status ke satu combined exit fail-fast: lifecycle pembayaran,
   callback exactly-once/replay/transisi, reconciliation lock, stale multi-tab,

@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-11 - SagaBook S184 report export recovery candidate
+
+- Menyinkronkan source `f63713e1b8e7e9fa677fec7ed22fdb4c8573122f`
+  sebagai export laporan authoritative yang tahan double-submit/retry ambigu,
+  membaca status database sebelum download, dan menjaga filter pada recovery.
+- Klasifikasi `CONFIRMED`; full backend 1.029/1.029, Playwright recovery dan
+  regresi laporan, database 100/100, build/design, serta audit dependency lulus.
+- Production berubah: tidak. Status `EXIT_GATE_ACCEPTED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; pagination/filter lanjutan dan authenticated Owner
+  UAT tetap gate terpisah.
+
 ## 2026-08-11 - SagaBook S183 payment/status combined exit candidate
 
 - Menyinkronkan source `12fd512ced523a41167b9b68cfad55eaa3b04e4e`

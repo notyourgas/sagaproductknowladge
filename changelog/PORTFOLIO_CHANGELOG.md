@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-11 - SagaBook S184 report export recovery
+
+- Export laporan admin kini memakai satu aksi berbasis status database, retry
+  idempoten, filter yang tetap tersimpan, dan pesan kegagalan public-safe.
+- Source `f63713e1b8e7e9fa677fec7ed22fdb4c8573122f` sudah dipush; full backend
+  1.029/1.029, Playwright recovery/regresi laporan lulus, database 100/100,
+  build/design, dan audit dependency lulus.
+- Status `EXIT_GATE_ACCEPTED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production SagaBook tetap S170 dan produk SagaDev
+  lain tidak berubah.
+
 ## 2026-08-11 - SagaBook S183 payment/status combined exit
 
 - Satu gate fail-fast kini mengikat payment lifecycle, callback exactly-once,

@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 11 Agustus 2026 06:01 WIB
+- Updated: 11 Agustus 2026 07:25 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED` untuk workflow yang tercantum di
   [PRODUCT](PRODUCT.md)
@@ -17,6 +17,17 @@ dalam satu dokumen public-safe.
   PRODUCTION_ACTIVATED`
 - Source kumulatif aktif: `f69170a7e61080f90a3bcea7df1f22f5612f0369`,
   release `20260809153848-f69170a`, rollback `20260809083131-5c76735`.
+- Candidate S184 `f63713e1b8e7e9fa677fec7ed22fdb4c8573122f`
+  mengaktifkan jalur export background existing sebagai satu primary action
+  sesuai status. Kunci request stabil menjaga retry ambigu dan double-submit
+  tetap satu row, satu job, dan satu audit; filter yang berbeda dengan kunci
+  sama ditolak. UI membaca status authoritative sebelum download, menjaga
+  pilihan cabang pada offline/permission denial, dan mengganti scope export
+  ketika jenis/periode/cabang berubah. Format PDF palsu dihapus dari UI dan
+  backend menolak format/rentang invalid tanpa write. Pesan job/audit
+  public-safe, tiga viewport/accessibility, full backend, database 100/100,
+  build, serta audit dependency lulus. Production tetap S170; tidak ada schema,
+  deploy, credential/data customer, atau activation.
 - Candidate S183 `12fd512ced523a41167b9b68cfad55eaa3b04e4e`
   menambahkan combined exit payment/status yang fail-fast atas backend,
   database, build, serta recovery browser. Exactly-once/replay/transisi,

@@ -1,5 +1,23 @@
 # SagaBook Changelog
 
+## 2026-08-11 - Report export recovery S184 candidate
+
+- Gap report/export roadmap `CONFIRMED`; schema, data laporan, permission,
+  workflow booking, dan production tidak berubah.
+- Before: UI mengklaim berhasil segera setelah membuka tab export dan
+  menawarkan PDF yang backend tidak dukung. After: satu aksi mengikuti status
+  database, retry memakai request ID stabil, replay konflik ditolak, filter
+  tetap tersimpan, dan failure UI/audit public-safe.
+- Source `f63713e1b8e7e9fa677fec7ed22fdb4c8573122f` pada branch
+  `codex/s184-sagabook-report-export-recovery` sudah dipush. Full backend
+  1.029/1.029 (11.650 assertion), Playwright recovery 5 lulus dan regresi
+  laporan cabang 4 lulus, database 100/100, build/design 26/0, serta npm/OSV
+  nol advisory.
+- Status `EXIT_GATE_ACCEPTED / SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / UIUX_VALIDATED / INTEGRATION_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Production tetap S170; tidak
+  ada deploy, credential/data customer, canary, atau activation.
+
 ## 2026-08-11 - Payment/status combined exit S183 candidate
 
 - Gap payment/status roadmap `CONFIRMED`; route, schema, permission, provider,
