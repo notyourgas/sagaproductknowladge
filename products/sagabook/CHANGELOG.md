@@ -1,5 +1,23 @@
 # SagaBook Changelog
 
+## 2026-08-11 - Provider-before-expiry reconciliation S189 candidate
+
+- Gap urutan reconciliation `CONFIRMED`; UI, schema, provider nyata, credential,
+  data customer, dan production tidak berubah.
+- Before: expiry lokal berjalan sebelum inquiry provider sehingga pembayaran
+  yang sudah paid di provider pada batas waktu dapat terlanjur menjadi
+  expired/cancelled. After: provider direkonsiliasi dahulu; paid menjadi
+  session paid dan booking confirmed, hold/slot/settlement tetap benar, lalu
+  replay tidak membuat inquiry, event, atau collection kedua.
+- Source `a8652ba5fd196f30930297064ea6625fd912a928` pada branch
+  `codex/s189-sagabook-provider-before-expiry` sudah dipush. Acceptance baru
+  1/1 (14 assertion), focused 4/4 (21), regresi payment/backend 351/351 (2.538),
+  enam recovery spec dengan 25 skenario browser, build, database disposable
+  100/100, dan audit npm/Composer/OSV lulus.
+- Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Production tetap S170; real provider canary,
+  authenticated UAT, pilot, dan deployment tetap memerlukan izin terpisah.
+
 ## 2026-08-11 - Tenant-scoped payment reconciliation S188 candidate
 
 - Gap tenant isolation pada reconciliation command `CONFIRMED`; UI, schema,

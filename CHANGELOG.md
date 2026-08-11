@@ -1,5 +1,24 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-11 - SagaBook S189 provider-before-expiry reconciliation
+
+- Informasi `CONFIRMED` dari source SagaBook
+  `a8652ba5fd196f30930297064ea6625fd912a928` pada branch
+  `codex/s189-sagabook-provider-before-expiry`; source sudah dipush.
+- Ringkasan: reconciliation kini memeriksa provider sebelum expiry lokal agar
+  pembayaran paid pada boundary tidak salah dibatalkan; replay tetap exactly-once.
+- Alasan: menutup risiko data-integrity booking, hold, slot, settlement, dan
+  payment event tanpa mengubah UI, schema, atau kontrak tenant.
+- Produk/area terdampak: SagaBook payment reconciliation; file knowledge yang
+  diperbarui adalah PRODUCT, DOSSIER, CHANGELOG, coverage ledger, portfolio,
+  master knowledge, GAPS, dan SYNC_STATUS.
+- Evidence: acceptance 1/1 (14), focused 4/4 (21), regresi 351/351 (2.538),
+  browser 25/25 dari enam spec, build, database audit 100/100, serta
+  npm/Composer/OSV nol advisory.
+- Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak
+  berubah dan tetap S170. Real provider canary, UAT, pilot, dan deploy tetap
+  memerlukan otorisasi terpisah.
+
 ## 2026-08-11 - SagaView S184 historical Review route acceptance
 
 - Menyinkronkan source `7c3d1b2f5fb5cd1da4fdc4826667299669f602ae`

@@ -149,10 +149,11 @@ ketika keputusan atau release baru menutup gap.
   legacy accounting dengan bukti read-only, tenant isolation, serta permission
   negative. Candidate S188 menutup risiko expiry lintas tenant ketika operator
   menjalankan reconciliation dengan filter tenant; scheduler global tetap
-  kompatibel. Residual payment/report tetap QRIS/provider inquiry,
-  reconciliation, settlement, dan canary nyata yang memerlukan otorisasi
-  terpisah. Authenticated Owner/operator UAT dan dua gap pilot tetap exit gate
-  `BUSINESS_READY`.
+  kompatibel. Candidate S189 menutup risiko paid-at-expiry dengan menjalankan
+  provider inquiry sebelum expiry lokal serta membuktikan replay exactly-once.
+  Residual payment/report tetap inquiry dan settlement terhadap provider nyata,
+  canary berizin, serta observasi operasional production. Authenticated
+  Owner/operator UAT dan dua gap pilot tetap exit gate `BUSINESS_READY`.
   UI rate-limit 429, expiry idle per tab, dan revocation perangkat lain sudah
   aktif kumulatif pada release S156. Residual
   combined browser acceptance empat slice sudah hijau dengan runtime disposable

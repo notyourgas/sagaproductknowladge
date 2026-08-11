@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-11 - SagaBook S189 provider-before-expiry reconciliation
+
+- Reconciliation kini membaca status provider sebelum expiry lokal sehingga
+  pembayaran paid pada boundary mempertahankan booking, hold, slot, dan
+  settlement yang benar; replay tetap exactly-once.
+- Source `a8652ba5fd196f30930297064ea6625fd912a928` sudah dipush; acceptance,
+  351 regresi payment/backend, 25 skenario browser dari enam recovery spec,
+  build, database audit, dan audit dependency lulus.
+- Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production SagaBook dan produk SagaDev lain tidak
+  berubah.
+
 ## 2026-08-11 - SagaView S184 historical Review route acceptance
 
 - Status `awaiting_payment` dari sesi lama kini terbukti masuk ke Review

@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 11 Agustus 2026 14:20 WIB
+Updated: 11 Agustus 2026 16:12 WIB
 Evidence status: production source and runtime verified
 
 ## Tujuan dokumen
@@ -16,6 +16,18 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
+- Candidate S189 `a8652ba5fd196f30930297064ea6625fd912a928`
+  membuat reconciliation memeriksa status provider sebelum menjalankan expiry
+  lokal. Pembayaran yang sudah dinyatakan paid oleh provider pada batas expiry
+  kini menjadi session paid dan booking confirmed, mempertahankan slot serta
+  settlement, lalu replay tetap exactly-once tanpa inquiry, event, atau
+  collection kedua. Acceptance baru 1/1 (14 assertion), focused command/expiry
+  4/4 (21), regresi payment/backend 351/351 (2.538), enam recovery spec dengan
+  25 skenario browser, build, database disposable audit 100/100, serta
+  npm/Composer/OSV nol advisory. Tidak ada perubahan UI, schema, credential,
+  provider nyata, data customer, atau production. Status `SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+  production tetap S170.
 - Candidate S188 `95a22d3bf27be9dca2e45fcbf6af5c01f40b6879`
   menutup mutasi lintas tenant pada perintah reconciliation operator. Opsi
   `--tenant` kini diteruskan ke expiry hold/session sehingga booking, slot,

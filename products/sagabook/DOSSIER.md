@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 11 Agustus 2026 14:20 WIB
+- Updated: 11 Agustus 2026 16:12 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED` untuk workflow yang tercantum di
   [PRODUCT](PRODUCT.md)
@@ -17,6 +17,16 @@ dalam satu dokumen public-safe.
   PRODUCTION_ACTIVATED`
 - Source kumulatif aktif: `f69170a7e61080f90a3bcea7df1f22f5612f0369`,
   release `20260809153848-f69170a`, rollback `20260809083131-5c76735`.
+- Candidate S189 `a8652ba5fd196f30930297064ea6625fd912a928`
+  mengubah urutan reconciliation agar inquiry provider selesai sebelum expiry
+  hold/session lokal. Status paid dari provider pada boundary expiry kini
+  menang secara authoritative: session dan booking menjadi paid/confirmed,
+  hold dikonversi, slot dipertahankan, dan collection tercatat satu kali.
+  Replay tidak memanggil provider atau menambah event/collection. Acceptance,
+  regresi payment/backend, enam recovery spec pada browser, build, database
+  disposable 100/100, dan audit dependency lulus. UI, schema, credential,
+  provider nyata, data customer, dan production tidak berubah; canary, UAT,
+  pilot, serta deploy tetap gate terpisah.
 - Candidate S188 `95a22d3bf27be9dca2e45fcbf6af5c01f40b6879`
   membuat reconciliation operator yang difilter tenant meneruskan scope yang
   sama ke expiry hold dan payment session. Booking, slot, settlement expiry,

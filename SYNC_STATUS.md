@@ -12,14 +12,14 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-11T15:27:10+07:00 |
-| Branch aktif | `main` (sinkronisasi source `codex/s184-sagaview-awaiting-payment-browser-alias`) |
+| Waktu pembaruan terakhir | 2026-08-11T16:12:00+07:00 |
+| Branch aktif | `main` (sinkronisasi source `codex/s189-sagabook-provider-before-expiry`) |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `4d742eccf3abaf2b08b2a87ddaa92b6b2ba12f91` |
-| Informasi terakhir disinkronkan | SagaView S184 membuktikan status historis awaiting_payment masuk ke Review estimasi tanpa surface atau gate pembayaran. |
+| Baseline sebelum pembaruan | `6e609073cb04c462933a5633d4e61e6497b8787d` |
+| Informasi terakhir disinkronkan | SagaBook S189 menjalankan provider inquiry sebelum expiry lokal agar paid-at-expiry tetap paid/confirmed dan replay exactly-once. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, fast-forward ke `main`, push, dan remote verification. |
-| Konflik | Tidak ada konflik kontrak; rule Axe color-contrast Review masih gap yang dicatat eksplisit dan tidak diklaim lulus. |
-| Error | Tidak ada error source. Production tidak berubah; deploy dan authenticated UAT SagaView tetap memerlukan otorisasi terpisah. |
+| Konflik | Tidak ada konflik kontrak; workflow, UI, schema, dan tenant boundary tetap sama. |
+| Error | Tidak ada error source. Production tidak berubah; real provider canary, deploy, authenticated UAT, dan pilot tetap memerlukan otorisasi terpisah. |
 
 ## File yang berubah pada sinkronisasi ini
 
