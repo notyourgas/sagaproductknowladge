@@ -278,6 +278,14 @@ ketika keputusan atau release baru menutup gap.
 
 ### SagaView
 
+- `CLOSED IN CANDIDATE / IMPLEMENTED_NOT_DEPLOYED`: S182 source
+  `e6a6769b9e9d837cbecedcb616a8e0229fb171e0` menutup residual implementasi
+  estimate-only pada Studio. Switch konfirmasi pembayaran, module QRIS/rekening,
+  state/action paid, dan field kontrak lokal aktif sudah dihapus; persisted key
+  lama dibuang saat rehydrate dan status lama hanya diarahkan ke Review
+  estimasi. Residual kini hanya guarded deploy serta authenticated UAT pada
+  perangkat nyata; production tetap S163/S159.
+
 - `ROLLBACK_REHEARSAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: audit S180
   membuktikan S155 tidak aman dan tidak tersedia; S181 menutup blocker
   restore/switch disposable untuk exact runtime aktif S163/S159, termasuk

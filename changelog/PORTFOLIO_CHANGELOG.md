@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-11 - SagaView S182 legacy payment surface removal
+
+- Studio General, state lokal, dan kontrak data aktif tidak lagi membawa
+  switch konfirmasi pembayaran, QRIS/rekening, status paid, atau action payment;
+  persisted key lama dibersihkan saat rehydrate.
+- Source `e6a6769b9e9d837cbecedcb616a8e0229fb171e0` sudah dipush; unit 203/203,
+  Playwright 3/3 desktop/mobile/a11y, build/budget, dan audit dependency lulus.
+- Status `UIUX_VALIDATED / SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
+  QA_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production dan
+  produk SagaDev lain tidak berubah.
+
 ## 2026-08-11 - SagaBook S187 provider reconciliation rehearsal
 
 - Rehearsal sintetis kini membuktikan gap provider-net dan legacy accounting

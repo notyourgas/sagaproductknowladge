@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-11 - SagaView S182 estimate-only residual candidate
+
+- Menyinkronkan source `e6a6769b9e9d837cbecedcb616a8e0229fb171e0`
+  yang menghapus surface/state/kontrak pembayaran lama dari Studio aktif dan
+  menyaring persisted key lama saat rehydrate.
+- Klasifikasi `CONFIRMED`; red-green, full unit 203/203, Playwright 3/3 pada
+  desktop/mobile/a11y, format/lint/typecheck/build/budget, serta audit
+  dependency lulus.
+- Production berubah: tidak. Status `UIUX_VALIDATED / SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; guarded deploy dan authenticated UAT tetap gate
+  terpisah.
+
 ## 2026-08-11 - SagaBook S187 provider reconciliation rehearsal
 
 - Menyinkronkan source `94d2b59fe6c77cd74e9625a841f0798265d1eb73`

@@ -1026,6 +1026,15 @@ dan switch kandidat sintetis serta rollback ke pasangan aktif lulus. Studio
 backend lulus. Status `ROLLBACK_REHEARSAL_VALIDATED / LOCAL_VALIDATED /
 IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan S155 tetap
 `DEPRECATED / DO_NOT_ROLLBACK`.
+S182 Studio source `e6a6769b9e9d837cbecedcb616a8e0229fb171e0` menutup
+residual kontrak estimate-only yang ditemukan pada kandidat kumulatif. Switch
+konfirmasi pembayaran di General, module QRIS/rekening, state/action paid, dan
+field kontrak lokal aktif dihapus. Rehydrate membuang persisted key lama,
+sedangkan status `awaiting_payment` hanya menjadi alias migrasi ke Review
+estimasi. Focused 10/10, full unit 203/203, Playwright 3/3 desktop/mobile/Axe,
+build/budget, dan audit dependency lulus. Status `UIUX_VALIDATED /
+SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / QA_VALIDATED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S163/S159.
 S164 source `8fe779491649328a90d91fb0bbbf88a2fcf6290a` membuat Owner
 `Kategori & Harga` lebih ringkas: tepat satu editor/aksi aktif, draft tetap
 aman ketika gagal atau berpindah panel, dan recovery copy tampil dekat aksi.

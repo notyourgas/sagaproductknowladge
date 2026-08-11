@@ -146,6 +146,15 @@ prasyarat foto/output terpenuhi. S157-S158 tidak boleh dipromosikan. S159 lulus
 backend 44/44 dengan 741 assertion, Studio 188/188, migration cycle, focused
 Playwright desktop/mobile/a11y, build/budget, lint/typecheck, dan audit dependency.
 
+Audit kandidat pascaproduksi menemukan residual field dan satu switch
+konfirmasi pembayaran pada source Studio kumulatif. S182 source
+`e6a6769b9e9d837cbecedcb616a8e0229fb171e0` menghapus module QRIS/rekening,
+state/action paid, switch General, serta field kontrak lokal tersebut. Migrasi
+rehydrate hanya membuang key lama dan mempertahankan setting operator yang sah;
+status `awaiting_payment` lama tetap inert dan diarahkan ke Review estimasi.
+Full unit 203/203, Playwright 3/3 desktop/mobile/a11y, build/budget, dan audit
+dependency lulus. Kandidat belum dideploy; production tetap S163/S159.
+
 ## Use case
 
 Provisioning, Owner Console, device activation, exclusive Studio lease,

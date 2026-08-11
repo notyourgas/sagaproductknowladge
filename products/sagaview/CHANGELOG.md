@@ -1,5 +1,27 @@
 # SagaView Changelog
 
+## 2026-08-11 - S182 legacy payment surface removal
+
+- Klasifikasi: `CONFIRMED`.
+- Status: `UIUX_VALIDATED / SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
+  QA_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak
+  berubah.
+- Before: Review S159 sudah estimate-only, tetapi Studio General, state lokal,
+  dan kontrak data masih menyimpan kontrol serta metadata pembayaran lama.
+- After: switch konfirmasi pembayaran, QRIS/rekening, status paid, action
+  payment, dan field kontrak lama dihapus dari surface/state aktif. Rehydrate
+  membuang key lama secara eksplisit; status `awaiting_payment` hanya menjadi
+  alias migrasi ke Review estimasi.
+- Evidence: source Studio
+  `e6a6769b9e9d837cbecedcb616a8e0229fb171e0`; red proof 1 gagal lalu focused
+  10/10, full unit 203/203, Playwright 3/3 pada 390x844 dan 1440x900 termasuk
+  Axe/forced-colors/reduced-motion, format/lint/typecheck/build, budget
+  299,7/450 KiB, serta npm audit nol vulnerability.
+- Dampak: operator tidak lagi melihat setting pembayaran yang menyesatkan dan
+  payload lokal lama tidak dapat menghidupkan kembali kemampuan tersebut.
+  Production tetap backend S163 dan Studio S159; deploy, activation, dan UAT
+  authenticated tetap gate terpisah.
+
 ## 2026-08-11 - S181 active-pair rollback rehearsal
 
 - Klasifikasi: `CONFIRMED`.

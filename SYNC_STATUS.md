@@ -12,16 +12,28 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-11T13:21:35+07:00 |
-| Branch aktif | `main` (sinkronisasi source `codex/s187-sagabook-reconciliation-rehearsal`) |
+| Waktu pembaruan terakhir | 2026-08-11T13:24:25+07:00 |
+| Branch aktif | `main` (sinkronisasi source `codex/s182-sagaview-remove-payment-legacy`) |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `0572838642d7295c9491cef43b3d478b09aa874e` |
-| Informasi terakhir disinkronkan | SagaBook S187 menambah acceptance dan runbook rehearsal reconciliation sintetis dengan read-only gap detection, tenant isolation, permission-negative, dan no-side-effect evidence. |
+| Baseline sebelum pembaruan | `012afdc1486737e9f2f34d0fed656d915c8f2bb5` |
+| Informasi terakhir disinkronkan | SagaView S182 menghapus residual surface/state/kontrak pembayaran lama dari Studio aktif dan menyaring persisted key lama saat rehydrate. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, fast-forward ke `main`, push, dan remote verification. |
-| Konflik | Tidak ada konflik baru; workflow dan permission SagaBook tidak berubah. |
-| Error | Tidak ada error source. Deploy SagaBook tetap memerlukan otorisasi dan gate kandidat terpisah. |
+| Konflik | Tidak ada konflik baru; kontrak estimate-only tetap kanonik dan status lama hanya dipertahankan sebagai alias migrasi. |
+| Error | Tidak ada error source. Deploy SagaView tetap memerlukan otorisasi, gate release, dan authenticated UAT terpisah. |
 
 ## File yang berubah pada sinkronisasi ini
+
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/DOSSIER.md`
+- `products/sagaview/CHANGELOG.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
+
+## File dari sinkronisasi sebelumnya
 
 - `products/sagabook/PRODUCT.md`
 - `products/sagabook/DOSSIER.md`

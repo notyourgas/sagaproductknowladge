@@ -1315,6 +1315,14 @@ untuk release frontend ini.
   aktif pada filesystem disposable. Status `ROLLBACK_REHEARSAL_VALIDATED /
   LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; downgrade langsung ke S155
   tetap `DEPRECATED / DO_NOT_ROLLBACK`.
+- Kandidat Studio S182
+  `e6a6769b9e9d837cbecedcb616a8e0229fb171e0` menutup residual kontrak S159:
+  Studio General, state lokal, dan tipe data aktif tidak lagi membawa kontrol
+  atau metadata pembayaran. Persisted state lama dibersihkan saat rehydrate,
+  sedangkan `awaiting_payment` hanya diarahkan ke Review estimasi untuk
+  kompatibilitas migrasi. Status `UIUX_VALIDATED / SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap S163/S159.
 - Saga Platform release teramati tetap
   `20260804171621-0ab9d8e`; release editor frame tidak mengubah Platform.
 - Additive migration, encrypted backup, disposable restore, candidate gate,
