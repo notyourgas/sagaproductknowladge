@@ -1,5 +1,27 @@
 # SagaView Changelog
 
+## 2026-08-11 - S180 rollback artifact and contract audit
+
+- Klasifikasi: `CONFIRMED`.
+- Status: `RECOVERY_ARTIFACT_VALIDATED / ROLLBACK_GUARD_BLOCKED`; production
+  tidak berubah.
+- Before: knowledge menyebut release S155 sebagai rollback langsung yang
+  tersedia untuk runtime S163/S159.
+- After: audit read-only membuktikan direktori S155 tidak lagi ada di server.
+  Arsipnya utuh dan checksum cocok, tetapi Studio S155 masih memiliki QRIS,
+  rekening, status lunas, dan gate export sehingga `DEPRECATED /
+  DO_NOT_ROLLBACK` terhadap kontrak estimate-only.
+- Recovery aman: artifact exact runtime aktif backend S163 dan Studio S159
+  tersedia dengan checksum sesuai manifest; backup terenkripsi lulus checksum
+  tanpa SQL plaintext. Pasangan aktif wajib dipertahankan sebagai rollback
+  untuk deploy berikutnya.
+- Evidence: lima service aktif, API/Changelog/Session HTTP 200, journal error
+  15 menit nol, HSTS dan frame policy lulus; ekstraksi disposable memverifikasi
+  2.383 file backend dan 335 file Studio tanpa `.env`, `.git`, vendor, atau
+  `node_modules` terlarang.
+- Next: jangan deploy sampai preflight baru membuktikan restore/switch
+  disposable dan rollback ke pasangan S163/S159.
+
 ## 2026-08-11 - S176 backend runtime commit provenance
 
 - Klasifikasi: `CONFIRMED`.

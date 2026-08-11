@@ -12,16 +12,28 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-11T10:05:00+07:00 |
-| Branch aktif | `main` |
+| Waktu pembaruan terakhir | 2026-08-11T11:11:00+07:00 |
+| Branch aktif | `main` (disiapkan dari branch terisolasi `codex/s180-sagaview-rollback-audit`) |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `c6066ae3eca01d2b9bd33e0c5336a800d4ecf1ae` |
-| Informasi terakhir disinkronkan | SagaBook S185 source `e1772b2b94bc9feae65ec2367b62ab00926b6622` menutup pagination/filter transaksi laporan secara lokal; status `EXIT_GATE_ACCEPTED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED` dan production tetap S170. |
+| Baseline sebelum pembaruan | `eca4edee258cf3de8905d2c27fa1163203fdc63a` |
+| Informasi terakhir disinkronkan | SagaView S180 mengoreksi klaim rollback S155: direktori live tidak ada dan Studio lama `DO_NOT_ROLLBACK`; artifact exact runtime aktif S163/S159 serta backup terenkripsi lulus checksum. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, fast-forward ke `main`, push, dan remote verification. |
-| Konflik | Tidak ada konflik kanonik; fast-forward mempertahankan SagaBook S184, SagaView S176, dan seluruh histori sebelumnya. |
-| Error | Tidak ada error source atau validator yang diketahui. Runtime production SagaBook tidak diubah. |
+| Konflik | Klaim rollback lama digantikan evidence runtime terbaru; kontrak estimate-only tetap authority. |
+| Error | Tidak ada error source. Deploy SagaView tetap ditahan sampai restore/switch disposable lulus. |
 
 ## File yang berubah pada sinkronisasi ini
+
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/DOSSIER.md`
+- `products/sagaview/CHANGELOG.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
+
+## File dari sinkronisasi sebelumnya
 
 - `products/sagabook/PRODUCT.md`
 - `products/sagabook/DOSSIER.md`

@@ -990,6 +990,13 @@ Guarded deploy S163 kemudian mengaktifkan backend sebagai
 live rollback-cycle, snapshot data, route contract, service/header/smoke/
 queue/journal, dan cleanup lulus. Status `PRODUCTION_DEPLOYED`; authenticated
 UAT masih diperlukan sebelum `PRODUCTION_ACTIVATED / BUSINESS_READY`.
+Audit S180 mengoreksi rollback runtime: direktori S155 sudah tidak tersedia dan
+Studio S155 masih memuat QRIS, rekening, status lunas, serta gate export,
+sehingga `DEPRECATED / DO_NOT_ROLLBACK`. Artifact exact runtime aktif S163/S159
+dan backup database terenkripsi lulus checksum tanpa SQL plaintext. Pasangan
+aktif wajib dipertahankan sebagai rollback untuk deploy berikutnya; status
+`RECOVERY_ARTIFACT_VALIDATED / ROLLBACK_GUARD_BLOCKED` dan production tidak
+berubah.
 S164 source `8fe779491649328a90d91fb0bbbf88a2fcf6290a` membuat Owner
 `Kategori & Harga` lebih ringkas: tepat satu editor/aksi aktif, draft tetap
 aman ketika gagal atau berpindah panel, dan recovery copy tampil dekat aksi.

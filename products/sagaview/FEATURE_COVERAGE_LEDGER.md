@@ -1,6 +1,19 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 11 Agustus 2026 05:23 WIB
+Evidence cut-off: 11 Agustus 2026 11:11 WIB
+
+Rollback recovery cut-off: 11 Agustus 2026 11:11 WIB. Audit S180 read-only
+membuktikan runtime tetap backend `f3b07749` /
+`20260810091159-f3b0774` dan Studio `6d7083a3` /
+`20260810091159-6d7083a`; lima service aktif, API/Changelog/Session 200,
+journal error 15 menit nol, HSTS dan frame policy lulus. Direktori rollback
+S155 yang tercatat tidak lagi ada. Artifact S155 lulus checksum/ekstraksi,
+tetapi Studio lama masih memuat QRIS, rekening, status lunas, dan gate export,
+sehingga `DEPRECATED / DO_NOT_ROLLBACK`. Artifact exact runtime aktif dan
+backup terenkripsi lulus checksum; tidak ada SQL plaintext. Status
+`RECOVERY_ARTIFACT_VALIDATED / ROLLBACK_GUARD_BLOCKED`; production tidak
+berubah dan deploy berikutnya wajib mempertahankan S163/S159 sebagai rollback
+serta melewati restore/switch disposable.
 
 Backend runtime-provenance cut-off: 11 Agustus 2026 05:23 WIB. S176 backend
 source `a37fe9474f54de01befc308168f42816ba4719d9` menyediakan marker

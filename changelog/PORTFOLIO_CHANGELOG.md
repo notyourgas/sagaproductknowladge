@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-11 - SagaView S180 rollback contract audit
+
+- Audit read-only menemukan rollback S155 yang tercatat sudah tidak tersedia
+  di server dan Studio lamanya bertentangan dengan kontrak estimate-only karena
+  masih memuat QRIS, rekening, status lunas, serta gate export.
+- Artifact exact runtime aktif S163/S159 dan backup terenkripsi lulus checksum;
+  pasangan aktif wajib dipertahankan sebagai rollback deploy berikutnya.
+- Status `RECOVERY_ARTIFACT_VALIDATED / ROLLBACK_GUARD_BLOCKED`; production dan
+  produk lain tidak berubah, serta deploy SagaView berikutnya tetap ditahan
+  sampai restore/switch disposable lulus.
+
 ## 2026-08-11 - SagaBook S185 report pagination/filter
 
 - Detail Transaksi laporan harian kini mempunyai pencarian, filter metode,

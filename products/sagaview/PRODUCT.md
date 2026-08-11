@@ -1302,10 +1302,16 @@ untuk release frontend ini.
 - Studio source aktif:
   `6d7083a3e9ae8e91b948622f24485a4226748344`.
 - Studio release aktif: `20260810091159-6d7083a`.
-- Studio release sebelumnya yang menjadi rollback:
-  `20260809162045-5eeef36`.
-- Backend release sebelumnya yang menjadi rollback:
-  `20260809162045-13a94c5`.
+- Direktori release lama `20260809162045-5eeef36` dan
+  `20260809162045-13a94c5` tidak lagi tersedia pada runtime. Audit S180 juga
+  membuktikan Studio lama masih memuat QRIS, rekening, status lunas, dan gate
+  export, sehingga pasangan itu `DEPRECATED / DO_NOT_ROLLBACK` terhadap
+  kontrak estimate-only saat ini.
+- Arsip immutable exact untuk release aktif S163/S159 tersedia dan checksum-nya
+  cocok dengan manifest deploy: backend SHA-256 `ec1bd4e6...ff29a20` dan Studio
+  SHA-256 `ff6994b3...ddfee`. Pasangan aktif wajib dipertahankan sebagai target
+  rollback untuk deploy berikutnya; downgrade langsung ke S155 tetap
+  `ROLLBACK_GUARD_BLOCKED`.
 - Saga Platform release teramati tetap
   `20260804171621-0ab9d8e`; release editor frame tidak mengubah Platform.
 - Additive migration, encrypted backup, disposable restore, candidate gate,
@@ -1373,11 +1379,19 @@ untuk release frontend ini.
   mengubah kontrak output/device, sehingga attestation dibawa forward secara
   terbatas dan bukan pengganti artifact restricted.
 
-### Rollback
+### Rollback dan recovery
 
-- Backend: `20260803221207-b504dae`.
-- Studio: `20260803221207-57c0337`.
-- Backup release dan konfigurasi Nginx sebelumnya dipertahankan.
+- Runtime sehat yang wajib menjadi rollback untuk deploy berikutnya: backend
+  `20260810091159-f3b0774` dan Studio `20260810091159-6d7083a`.
+- Paket exact runtime aktif lulus checksum dan struktur arsip pada audit S180;
+  backup database terenkripsi juga lulus checksum, berisi tiga arsip terenkripsi,
+  dan tidak menyimpan SQL plaintext.
+- Downgrade langsung ke `20260809162045-13a94c5` /
+  `20260809162045-5eeef36` dilarang: direktori live sudah tidak ada dan Studio
+  lama bertentangan dengan kontrak payment off-app.
+- Production tidak berubah pada S180. Sebelum deploy berikutnya, preflight wajib
+  membuktikan release aktif tetap ada, checksum artifact exact, switch/restore
+  disposable, dan rollback kembali ke pasangan S163/S159.
 
 ## Belum boleh diklaim
 

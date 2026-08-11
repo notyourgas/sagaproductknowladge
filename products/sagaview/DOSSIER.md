@@ -78,10 +78,14 @@ SagaView berdasarkan runtime production aktif.
   baseline production lulus; production belum berubah.
 - S163 guarded production release: `PRODUCTION_DEPLOYED`; backend
   `f3b07749` / `20260810091159-f3b0774`, Studio `6d7083a3` /
-  `20260810091159-6d7083a`. Rollback backend `20260809162045-13a94c5` dan
-  Studio `20260809162045-5eeef36` tersedia. Schema additive aktif, data lama
-  tetap utuh, route payment SagaVIEW 405, layanan dan smoke hijau.
-  `PRODUCTION_ACTIVATED` dan `BUSINESS_READY` belum diklaim.
+  `20260810091159-6d7083a`. Schema additive aktif, data lama tetap utuh, route
+  payment SagaVIEW 405, layanan dan smoke hijau. Audit S180 menemukan direktori
+  rollback S155 sudah tidak ada dan artifact Studio S155 melanggar kontrak
+  estimate-only, sehingga S155 `DEPRECATED / DO_NOT_ROLLBACK`. Artifact exact
+  runtime aktif serta backup terenkripsi lulus checksum dan menjadi dasar
+  rollback deploy berikutnya. Status recovery `RECOVERY_ARTIFACT_VALIDATED /
+  ROLLBACK_GUARD_BLOCKED`; `PRODUCTION_ACTIVATED` dan `BUSINESS_READY` belum
+  diklaim.
 - Acceptance integrasi feature-by-feature: ledger dimulai konservatif dan
   belum membuktikan coverage penuh; lihat
   [Feature Coverage Ledger](FEATURE_COVERAGE_LEDGER.md).

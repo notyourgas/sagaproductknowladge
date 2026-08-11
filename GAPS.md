@@ -276,6 +276,14 @@ ketika keputusan atau release baru menutup gap.
 
 ### SagaView
 
+- `ROLLBACK_GUARD_BLOCKED`: audit S180 membuktikan direktori rollback S155 yang
+  tercatat sudah tidak ada. Artifact S155 utuh, tetapi Studio lama masih memuat
+  QRIS, rekening, status lunas, dan gate export sehingga tidak boleh dipakai
+  pada kontrak estimate-only. Artifact exact runtime aktif S163/S159 dan backup
+  terenkripsi lulus checksum; deploy berikutnya wajib mempertahankan pasangan
+  aktif sebagai rollback dan membuktikan restore/switch disposable sebelum
+  promosi.
+
 - `IMPLEMENTED_NOT_DEPLOYED`: S162 source `063dfc1a` menutup optimistic
   concurrency draft dengan ID+checksum revisi isi, 409 fail-closed, cleanup aset
   konflik, dan recovery UI desktop/mobile. S161 publish retry idempotent tetap

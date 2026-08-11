@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-11 - SagaView S180 rollback contract audit
+
+- Mengoreksi klaim rollback S155 setelah audit runtime read-only: direktori
+  release sudah tidak tersedia dan Studio lama bertentangan dengan kontrak
+  payment off-app.
+- Menetapkan artifact exact S163/S159 yang checksum-nya terverifikasi sebagai
+  basis rollback deploy berikutnya; backup terenkripsi tetap utuh tanpa SQL
+  plaintext.
+- Klasifikasi `CONFIRMED`; status `RECOVERY_ARTIFACT_VALIDATED /
+  ROLLBACK_GUARD_BLOCKED`. Production tidak berubah.
+
 ## 2026-08-11 - SagaBook S185 report pagination/filter candidate
 
 - Menyinkronkan source `e1772b2b94bc9feae65ec2367b62ab00926b6622`
