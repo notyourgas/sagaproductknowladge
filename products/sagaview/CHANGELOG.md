@@ -1,5 +1,26 @@
 # SagaView Changelog
 
+## 2026-08-12 - S193 backend rollback recovery contract
+
+- Klasifikasi: `CONFIRMED`.
+- Status: `SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PUSHED`; production tidak berubah.
+- Before: backend aktif memiliki release sebelumnya yang masih utuh, tetapi
+  symlink rollback persisten tidak tersedia sehingga recovery production belum
+  mempunyai target satu langkah yang terverifikasi.
+- After: source `2f008d57b24231e8159d6fe6a7082c5b951a94be` menambahkan repair
+  approval-bound dan exact-release-bound yang hanya mengganti symlink rollback
+  secara atomik setelah current/commit/struktur/umur/path lulus verifikasi.
+- Evidence: focused 3/31, regresi production-safety 3/129, full backend
+  991/11.469, Pint, syntax Bash, rehearsal filesystem disposable, diff check,
+  dan Composer audit nol advisory lulus. Rehearsal membuktikan mismatch tidak
+  memutasi rollback, rerun idempoten, serta current/database/service tetap
+  tidak berubah.
+- Dampak: jalur repair aman sudah siap diaudit dan dijalankan melalui gate
+  production terotorisasi. Symlink production belum dipasang; authenticated
+  normal-browser UAT dan rollback backend tetap residual sebelum
+  `BUSINESS_READY`.
+
 ## 2026-08-11 - S192 exact production source recovery
 
 - Klasifikasi: `CONFIRMED`.

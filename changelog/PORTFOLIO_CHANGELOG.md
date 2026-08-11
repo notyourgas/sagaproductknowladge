@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-12 - SagaView S193 backend rollback recovery contract
+
+- Repair rollback backend kini approval-bound, exact-release-bound, dan hanya
+  boleh mengganti symlink rollback secara atomik setelah marker commit,
+  struktur immutable, containment path, serta current aktif terverifikasi.
+- Source `2f008d57b24231e8159d6fe6a7082c5b951a94be` sudah dipush; focused
+  3/31, production-safety 3/129, full backend 991/11.469, Pint, syntax Bash,
+  rehearsal disposable, diff check, dan audit dependency lulus.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PUSHED`; production,
+  database, service, symlink current, dan produk SagaDev lain tidak berubah.
+  Eksekusi production serta authenticated normal-browser UAT tetap residual.
+
 ## 2026-08-11 - SagaBook S191 authenticated UAT preflight
 
 - Preflight read-only Owner/operator berbasis fixture sintetis kini menolak

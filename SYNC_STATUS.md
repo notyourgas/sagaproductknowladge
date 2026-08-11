@@ -12,22 +12,23 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-11T21:18:06+07:00 |
-| Branch aktif | `main` (sinkronisasi SagaBook S191 authenticated UAT preflight) |
+| Waktu pembaruan terakhir | 2026-08-12T00:13:44+07:00 |
+| Branch aktif | `main` (sinkronisasi SagaView S193 backend rollback recovery) |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `6b8303626be762a16a3dc47b076a892b76edc706` |
-| Informasi terakhir disinkronkan | SagaBook S191 `44fc6bcc` menambahkan preflight read-only Owner/operator sintetis; production tetap S170. |
+| Baseline sebelum pembaruan | `06d6f3cc04b586fb823ce286cf8023cd5e38584d` |
+| Informasi terakhir disinkronkan | SagaView S193 `2f008d57` menambahkan repair rollback backend terjaga; production tetap tidak berubah. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, fast-forward ke `main`, push, dan remote verification. |
-| Konflik | Tidak ada konflik fakta SagaBook; checkout knowledge bersama yang divergen tidak disentuh dan sinkronisasi dilakukan dari worktree exact `origin/main`. |
-| Error | Authenticated Owner/operator UAT nyata, dua gap pilot, real provider canary, dan deploy SagaBook masih residual; production tidak berubah. |
+| Konflik | Tidak ada konflik fakta SagaView; checkout knowledge bersama yang divergen tidak disentuh dan sinkronisasi dilakukan dari clone exact `origin/main`. |
+| Error | Symlink rollback backend belum dipasang dan authenticated normal-browser UAT masih residual; production tidak berubah. |
 
 ## File yang berubah pada sinkronisasi ini
 
-- `products/sagabook/PRODUCT.md`
-- `products/sagabook/CHANGELOG.md`
-- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/CHANGELOG.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
 - `SYNC_STATUS.md`
 - `CHANGELOG.md`
 

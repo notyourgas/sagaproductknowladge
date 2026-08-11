@@ -916,6 +916,16 @@ PRODUCTION_ACTIVATED / PUSHED`; exact source tersedia pada branch remote
 `codex/s192-sagaview-production-source-recovery`. Authenticated normal-browser UAT
 dan rollback backend masih residual dan `BUSINESS_READY` belum diklaim.
 
+S193 source `2f008d57b24231e8159d6fe6a7082c5b951a94be` menyiapkan repair
+symlink rollback backend yang approval-bound dan exact-release-bound. Focused
+3/31, production-safety 3/129, full backend 991/11.469, Pint, syntax Bash,
+rehearsal filesystem disposable, serta Composer audit lulus. Script hanya
+mengganti symlink rollback secara atomik setelah current/marker/struktur/path
+terverifikasi dan tidak menyentuh database, service, jaringan, atau symlink
+current. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PUSHED`;
+production masih belum mempunyai symlink rollback sampai gate terotorisasi
+dijalankan.
+
 Candidate kumulatif S191 source
 `6902f4b7a9ecda0b42eb9e3e77fb6b30e6f09ff1` menyatukan S185 exact local
 release tooling dan S186 Review contrast pada satu lineage bersih yang sudah

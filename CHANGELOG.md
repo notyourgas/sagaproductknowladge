@@ -1,5 +1,21 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-12 - SagaView S193 backend rollback recovery contract
+
+- Informasi `CONFIRMED` dari source SagaView
+  `2f008d57b24231e8159d6fe6a7082c5b951a94be` pada branch
+  `codex/s193-sagaview-backend-rollback-repair`; source sudah dipush.
+- Ringkasan: repair symlink rollback backend kini approval-bound,
+  exact-release-bound, memverifikasi marker/struktur/path/current, dan hanya
+  melakukan atomic switch pada symlink rollback.
+- Evidence: focused 3/31, production-safety 3/129, full backend 991/11.469,
+  Pint, syntax Bash, rehearsal disposable, diff check, dan Composer audit nol
+  advisory.
+- Delivery `SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PUSHED`; production, database, service, dan
+  symlink current tidak berubah. Symlink rollback production dan authenticated
+  normal-browser UAT masih residual sebelum `BUSINESS_READY`.
+
 ## 2026-08-11 - SagaBook S191 authenticated UAT preflight
 
 - Informasi `CONFIRMED` dari source SagaBook

@@ -1,6 +1,6 @@
 # SagaView Product Knowledge
 
-Updated: 11 Agustus 2026
+Updated: 12 Agustus 2026
 
 Studio exact local commit
 `86b04c9133fc7c28f6b4a6ff7c2aeb80d1480d58` aktif sebagai release
@@ -33,6 +33,16 @@ Status `SECURITY_VALIDATED / QA_VALIDATED / RELEASE_REHEARSAL_VALIDATED /
 PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; uji recovery cookie stale
 production lulus, sedangkan authenticated login pada profil browser normal
 tetap checkpoint UAT terakhir sebelum klaim penutupan operasional penuh.
+
+S193 source `2f008d57b24231e8159d6fe6a7082c5b951a94be` menyediakan kontrak
+pemulihan symlink rollback backend yang approval-bound dan terikat ke exact
+release/commit. Rehearsal filesystem disposable membuktikan approval salah,
+current mismatch, marker rollback salah, rerun idempoten, dan penggantian
+rollback lama seluruhnya fail-closed atau selesai tanpa mengubah symlink
+`current`, database, maupun service. Status `SECURITY_VALIDATED / QA_VALIDATED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PUSHED`; production belum berubah
+dan symlink rollback backend masih harus dipasang melalui gate production
+terotorisasi sebelum `BUSINESS_READY`.
 
 Evidence status: production deployed; activation/authenticated UAT residual;
 frame import-order,

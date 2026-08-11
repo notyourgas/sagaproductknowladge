@@ -1,6 +1,21 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 11 Agustus 2026 21:05 WIB
+Evidence cut-off: 12 Agustus 2026 00:13 WIB
+
+Backend rollback recovery cut-off: 12 Agustus 2026 00:13 WIB. Audit read-only
+membuktikan backend aktif tetap `20260811190515-475db4c`, symlink rollback
+belum tersedia, dan release sebelumnya `20260810091159-f3b0774` masih utuh.
+S193 source `2f008d57b24231e8159d6fe6a7082c5b951a94be` menambahkan repair
+approval-bound yang memverifikasi exact current/rollback release, marker commit,
+struktur immutable, umur release, containment path, dan atomic switch hanya
+untuk symlink rollback. Rehearsal disposable lulus untuk approval, mismatch,
+marker salah, idempotensi, serta stale-link replacement; focused 3/31,
+production-safety regression 3/129, full backend 991/11.469, Pint, syntax Bash,
+diff check, dan Composer audit nol advisory lulus. Status `SECURITY_VALIDATED /
+QA_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PUSHED`;
+production, database, service, dan symlink `current` tidak berubah. Gap berikutnya
+adalah eksekusi gate production terotorisasi dan authenticated normal-browser
+UAT sebelum `BUSINESS_READY`.
 
 Studio activation cut-off: 11 Agustus 2026 20:20 WIB. Exact local source
 `86b04c9133fc7c28f6b4a6ff7c2aeb80d1480d58` aktif sebagai release

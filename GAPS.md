@@ -8,7 +8,7 @@ diubah menjadi klaim publik sebelum ditutup dengan bukti atau keputusan owner.
 
 ## Konteks
 
-Daftar ini berlaku pada evidence cut-off 11 Agustus 2026 20:10 WIB dan harus diperbarui
+Daftar ini berlaku pada evidence cut-off 12 Agustus 2026 00:13 WIB dan harus diperbarui
 ketika keputusan atau release baru menutup gap.
 
 ## Cara memakai
@@ -281,14 +281,21 @@ ketika keputusan atau release baru menutup gap.
 
 ### SagaView
 
-- `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / REMOTE_PUSH_PENDING`: jalur S185
+- `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / PUSHED`: jalur S185
   dan perbaikan S186 aktif kumulatif pada Studio exact local
   `86b04c9133fc7c28f6b4a6ff7c2aeb80d1480d58` / release
   `20260811124309-86b04c9`. Archive, manifest, git bundle, backup source
   lokal/VPS, npm 9 build, atomic switch, provenance, smoke, service, journal
-  release, dan rollback Studio lulus. UAT printer fisik lulus; residual adalah
-  push exact Studio ke remote, authenticated normal-browser UAT, dan rollback
-  backend sebelum `BUSINESS_READY`.
+  release, dan rollback Studio lulus. Exact Studio sudah dipulihkan ke remote
+  melalui S192 dan UAT printer fisik lulus; residual adalah authenticated
+  normal-browser UAT dan rollback backend sebelum `BUSINESS_READY`.
+
+- `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PUSHED`: S193 source
+  `2f008d57b24231e8159d6fe6a7082c5b951a94be` menyiapkan repair symlink
+  rollback backend yang approval-bound, exact-release-bound, atomic, dan
+  tervalidasi pada filesystem disposable. Production belum berubah; gap baru
+  tertutup setelah repair dijalankan melalui gate production terotorisasi dan
+  target rollback diverifikasi tanpa mengubah symlink current atau service.
 
 - `SUPERSEDED / DO_NOT_DEPLOY`: S191 source
   `6902f4b7a9ecda0b42eb9e3e77fb6b30e6f09ff1` menyatukan S185 release tooling
