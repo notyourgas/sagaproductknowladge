@@ -1,5 +1,22 @@
 # SagaBook Changelog
 
+## 2026-08-11 - Template draft preview authoritative S190 candidate
+
+- Gap fresh draft -> preview preset existing CONFIRMED; schema, preset,
+  workflow universal, credential, data customer, dan production tidak berubah.
+- Before: UI menyimpan draft ke server tetapi mengisi iframe preview dari
+  payload client sebelum normalisasi. After: state editor, local preview tenant,
+  dan iframe memakai settings authoritative pada respons save yang terikat ke
+  profile draft database; double activation tetap satu request.
+- Source 1b794e533788abf384af25e489a9b016669573fd pada branch
+  codex/s190-sagabook-template-draft-preview sudah dipush. Focused 12/12
+  (160 assertion), full backend 1.038/1.038 (11.722), browser S190 plus regresi
+  publish/public accessibility, build, Pint, dan audit npm/Composer/OSV lulus.
+- Status EXIT_GATE_ACCEPTED / SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
+  UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED. Production tetap S170; authenticated Owner UAT,
+  pilot, dan deploy tetap gate terpisah.
+
 ## 2026-08-11 - Provider-before-expiry reconciliation S189 candidate
 
 - Gap urutan reconciliation `CONFIRMED`; UI, schema, provider nyata, credential,

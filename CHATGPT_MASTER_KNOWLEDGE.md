@@ -68,6 +68,15 @@ pembayaran, menerima status/reminder, dan mengelola request dari secure booking
 link. Operator mengelola calendar, task, check-in, session, payment,
 reconciliation, report, staff, tenant, dan subscription.
 
+Candidate SagaBook S190 source
+1b794e533788abf384af25e489a9b016669573fd membuat preview draft template
+existing memakai settings authoritative dari respons server yang sama dengan
+profile draft database. State editor dan iframe kini tidak dapat menyimpang
+karena payload client sebelum normalisasi; double activation tetap satu request
+dan public tanpa preview tetap membaca published profile. Focused 12/12, full
+backend 1.038/1.038, browser, build, format, serta audit dependency lulus.
+Status LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED; production tetap S170.
+
 Candidate SagaBook S189 source
 `a8652ba5fd196f30930297064ea6625fd912a928` memindahkan expiry lokal setelah
 provider inquiry. Pembayaran yang sudah paid di provider pada batas expiry kini

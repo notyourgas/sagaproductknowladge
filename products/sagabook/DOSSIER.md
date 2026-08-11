@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 11 Agustus 2026 16:12 WIB
+- Updated: 11 Agustus 2026 20:24 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED` untuk workflow yang tercantum di
   [PRODUCT](PRODUCT.md)
@@ -17,6 +17,15 @@ dalam satu dokumen public-safe.
   PRODUCTION_ACTIVATED`
 - Source kumulatif aktif: `f69170a7e61080f90a3bcea7df1f22f5612f0369`,
   release `20260809153848-f69170a`, rollback `20260809083131-5c76735`.
+- Candidate S190 1b794e533788abf384af25e489a9b016669573fd
+  menutup gap fresh draft -> preview untuk preset existing. UI kini memakai
+  candidate settings yang benar-benar dikembalikan server setelah save, lalu
+  menyimpan nilai itu ke preview tenant dan memuat ulang iframe. API/database
+  membuktikan respons sama dengan profile draft per tenant; public tanpa preview
+  tetap membaca published profile. Double activation satu request, recovery
+  publish, permission/tenant-negative, multi-viewport, accessibility, full
+  backend, build, dan audit dependency lulus. Schema, preset, workflow universal,
+  credential, data customer, dan production tidak berubah.
 - Candidate S189 `a8652ba5fd196f30930297064ea6625fd912a928`
   mengubah urutan reconciliation agar inquiry provider selesai sebelum expiry
   hold/session lokal. Status paid dari provider pada boundary expiry kini

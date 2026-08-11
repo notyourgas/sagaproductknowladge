@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 11 Agustus 2026 16:12 WIB
+Updated: 11 Agustus 2026 20:24 WIB
 Evidence status: production source and runtime verified
 
 ## Tujuan dokumen
@@ -16,6 +16,17 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
+- Candidate S190 1b794e533788abf384af25e489a9b016669573fd
+  membuat preview draft template existing memakai settings authoritative dari
+  respons server yang juga menjadi sumber profile draft database. Sebelum
+  perbaikan, iframe dapat memakai payload client sebelum normalisasi; kini state
+  editor, local preview tenant, dan iframe konsisten dengan hasil save. Lock
+  sinkron tetap memastikan dua aktivasi hanya satu mutation. Focused 12/12
+  (160 assertion), full backend 1.038/1.038 (11.722), browser S190 plus regresi
+  publish/public accessibility, build, Pint, dan audit npm/Composer/OSV lulus.
+  Status EXIT_GATE_ACCEPTED / SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
+  UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED; production tetap S170.
 - Candidate S189 `a8652ba5fd196f30930297064ea6625fd912a928`
   membuat reconciliation memeriksa status provider sebelum menjalankan expiry
   lokal. Pembayaran yang sudah dinyatakan paid oleh provider pada batas expiry

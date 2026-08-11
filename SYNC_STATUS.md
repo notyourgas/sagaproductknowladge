@@ -12,16 +12,27 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-11T20:20:00+07:00 |
-| Branch aktif | `main` (rekonsiliasi Studio production `86b04c9` dan audit S191) |
+| Waktu pembaruan terakhir | 2026-08-11T20:24:00+07:00 |
+| Branch aktif | `main` (sinkronisasi SagaBook S190 authoritative draft preview) |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `1bb5f675fc15d3a7a598a77d99bc2d33cfd2068e` |
-| Informasi terakhir disinkronkan | Studio exact local `86b04c9` aktif sebagai release `20260811124309-86b04c9`; S191 `6902f4b7` ditandai superseded dan tidak boleh dideploy. |
+| Baseline sebelum pembaruan | `38f61e33032d8e1e4fcb40d987aeaab6f6df0d97` |
+| Informasi terakhir disinkronkan | SagaBook S190 `1b794e53` menutup fresh draft -> preview existing dengan respons server authoritative; production tetap S170. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, fast-forward ke `main`, push, dan remote verification. |
-| Konflik | Konflik histori knowledge S191 dan activation lokal sudah direkonsiliasi tanpa mengubah kontrak estimasi, local-first/no-upload, API, database, atau pricing. |
-| Error | Source Studio production masih `REMOTE_PUSH_PENDING`; authenticated normal-browser UAT dan symlink rollback backend masih residual. |
+| Konflik | Tidak ada konflik fakta SagaBook; checkout knowledge bersama yang divergen tidak disentuh dan sinkronisasi dilakukan dari worktree exact `origin/main`. |
+| Error | Authenticated Owner UAT, dua gap pilot, real provider canary, dan deploy SagaBook masih residual; production tidak berubah. |
 
 ## File yang berubah pada sinkronisasi ini
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
+
+## File dari sinkronisasi sebelumnya
 
 - `products/sagaview/PRODUCT.md`
 - `products/sagaview/DOSSIER.md`

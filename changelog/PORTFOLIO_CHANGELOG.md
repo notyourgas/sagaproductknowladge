@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-11 - SagaBook S190 authoritative draft preview
+
+- Preview template existing kini memakai hasil save authoritative dari server
+  yang sama dengan profile draft database, bukan payload client sebelum
+  normalisasi; public published profile tidak berubah.
+- Source 1b794e533788abf384af25e489a9b016669573fd sudah dipush;
+  focused 12/12, full backend 1.038/1.038, browser, build, format, dan audit
+  dependency lulus.
+- Status LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED; production SagaBook dan
+  produk SagaDev lain tidak berubah.
+
 ## 2026-08-11 - SagaView Studio local release activated
 
 - Exact local Studio `86b04c9133fc7c28f6b4a6ff7c2aeb80d1480d58`

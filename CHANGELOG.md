@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-11 - SagaBook S190 authoritative draft preview
+
+- Informasi CONFIRMED dari source SagaBook
+  1b794e533788abf384af25e489a9b016669573fd pada branch
+  codex/s190-sagabook-template-draft-preview; source sudah dipush.
+- Ringkasan: preview draft template existing kini memakai settings hasil save
+  server yang sama dengan profile database; public published profile, workflow,
+  schema, preset, permission, dan tenant boundary tidak berubah.
+- Evidence: focused 12/12 (160), full backend 1.038/1.038 (11.722), browser
+  S190 dan regresi template, build, Pint, npm/Composer/OSV nol advisory.
+- Delivery EXIT_GATE_ACCEPTED / SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / UIUX_VALIDATED / INTEGRATION_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED; production tidak berubah.
+
 ## 2026-08-11 - SagaView Studio local production activation
 
 - Informasi `CONFIRMED` dari exact local Studio
