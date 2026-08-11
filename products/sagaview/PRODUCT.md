@@ -1310,8 +1310,11 @@ untuk release frontend ini.
 - Arsip immutable exact untuk release aktif S163/S159 tersedia dan checksum-nya
   cocok dengan manifest deploy: backend SHA-256 `ec1bd4e6...ff29a20` dan Studio
   SHA-256 `ff6994b3...ddfee`. Pasangan aktif wajib dipertahankan sebagai target
-  rollback untuk deploy berikutnya; downgrade langsung ke S155 tetap
-  `ROLLBACK_GUARD_BLOCKED`.
+  rollback untuk deploy berikutnya. S181 telah membuktikan restore exact,
+  preflight fail-closed, switch kandidat sintetis, dan rollback ke pasangan
+  aktif pada filesystem disposable. Status `ROLLBACK_REHEARSAL_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; downgrade langsung ke S155
+  tetap `DEPRECATED / DO_NOT_ROLLBACK`.
 - Saga Platform release teramati tetap
   `20260804171621-0ab9d8e`; release editor frame tidak mengubah Platform.
 - Additive migration, encrypted backup, disposable restore, candidate gate,
@@ -1389,9 +1392,11 @@ untuk release frontend ini.
 - Downgrade langsung ke `20260809162045-13a94c5` /
   `20260809162045-5eeef36` dilarang: direktori live sudah tidak ada dan Studio
   lama bertentangan dengan kontrak payment off-app.
-- Production tidak berubah pada S180. Sebelum deploy berikutnya, preflight wajib
-  membuktikan release aktif tetap ada, checksum artifact exact, switch/restore
-  disposable, dan rollback kembali ke pasangan S163/S159.
+- Production tidak berubah pada S180-S181. Rehearsal S181 membuktikan release
+  aktif, checksum artifact exact, restore/switch disposable, preflight
+  fail-closed, dan rollback kembali ke pasangan S163/S159. Deploy berikutnya
+  tetap memerlukan otorisasi, backup/restore, candidate-specific gate, smoke,
+  dan verifikasi rollback production terpisah.
 
 ## Belum boleh diklaim
 

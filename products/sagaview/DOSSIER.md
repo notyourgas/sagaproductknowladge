@@ -7,7 +7,7 @@ SagaView berdasarkan runtime production aktif.
 
 ## Konteks dan status bukti
 
-- Updated: 8 Agustus 2026
+- Updated: 11 Agustus 2026
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED`
 - Business readiness: `NEEDS CONFIRMATION` untuk penjualan massal
@@ -83,8 +83,11 @@ SagaView berdasarkan runtime production aktif.
   rollback S155 sudah tidak ada dan artifact Studio S155 melanggar kontrak
   estimate-only, sehingga S155 `DEPRECATED / DO_NOT_ROLLBACK`. Artifact exact
   runtime aktif serta backup terenkripsi lulus checksum dan menjadi dasar
-  rollback deploy berikutnya. Status recovery `RECOVERY_ARTIFACT_VALIDATED /
-  ROLLBACK_GUARD_BLOCKED`; `PRODUCTION_ACTIVATED` dan `BUSINESS_READY` belum
+  rollback deploy berikutnya. S181 membuktikan restore exact, marker
+  fail-closed, switch kandidat sintetis, dan rollback ke pasangan aktif pada
+  filesystem disposable; build/test/audit dependency juga lulus. Status
+  `ROLLBACK_REHEARSAL_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; `PRODUCTION_ACTIVATED` dan `BUSINESS_READY` belum
   diklaim.
 - Acceptance integrasi feature-by-feature: ledger dimulai konservatif dan
   belum membuktikan coverage penuh; lihat

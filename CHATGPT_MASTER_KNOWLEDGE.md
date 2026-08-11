@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 11 Agustus 2026 10:05 WIB
+Evidence cut-off: 11 Agustus 2026 12:08 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -997,6 +997,13 @@ dan backup database terenkripsi lulus checksum tanpa SQL plaintext. Pasangan
 aktif wajib dipertahankan sebagai rollback untuk deploy berikutnya; status
 `RECOVERY_ARTIFACT_VALIDATED / ROLLBACK_GUARD_BLOCKED` dan production tidak
 berubah.
+S181 kemudian menutup blocker rehearsal: exact artifact S163/S159 dipulihkan
+di filesystem disposable, marker kandidat salah ditolak sebelum link berubah,
+dan switch kandidat sintetis serta rollback ke pasangan aktif lulus. Studio
+188/188, typecheck/lint/build/budget, npm/Composer audit, serta hash lock/build
+backend lulus. Status `ROLLBACK_REHEARSAL_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan S155 tetap
+`DEPRECATED / DO_NOT_ROLLBACK`.
 S164 source `8fe779491649328a90d91fb0bbbf88a2fcf6290a` membuat Owner
 `Kategori & Harga` lebih ringkas: tepat satu editor/aksi aktif, draft tetap
 aman ketika gagal atau berpindah panel, dan recovery copy tampil dekat aksi.

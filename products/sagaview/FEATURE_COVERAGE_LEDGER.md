@@ -1,6 +1,16 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 11 Agustus 2026 11:11 WIB
+Evidence cut-off: 11 Agustus 2026 12:08 WIB
+
+Rollback rehearsal cut-off: 11 Agustus 2026 12:08 WIB. S181 memulihkan exact
+artifact backend S163 dan Studio S159 pada filesystem disposable, memverifikasi
+checksum/struktur/marker, menolak marker kandidat salah tanpa mengubah link,
+lalu menyelesaikan switch kandidat sintetis dan rollback kembali ke pasangan
+aktif. Studio lulus 48 file test/188 test, typecheck, lint, build dan budget
+299,7/450 KiB; npm dan Composer audit nol vulnerability/advisory. Production
+tetap exact, lima service aktif, API/login/review 200, dan header keamanan
+lulus. Status `ROLLBACK_REHEARSAL_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; S155 tetap `DEPRECATED / DO_NOT_ROLLBACK`.
 
 Rollback recovery cut-off: 11 Agustus 2026 11:11 WIB. Audit S180 read-only
 membuktikan runtime tetap backend `f3b07749` /
@@ -11,9 +21,9 @@ S155 yang tercatat tidak lagi ada. Artifact S155 lulus checksum/ekstraksi,
 tetapi Studio lama masih memuat QRIS, rekening, status lunas, dan gate export,
 sehingga `DEPRECATED / DO_NOT_ROLLBACK`. Artifact exact runtime aktif dan
 backup terenkripsi lulus checksum; tidak ada SQL plaintext. Status
-`RECOVERY_ARTIFACT_VALIDATED / ROLLBACK_GUARD_BLOCKED`; production tidak
-berubah dan deploy berikutnya wajib mempertahankan S163/S159 sebagai rollback
-serta melewati restore/switch disposable.
+`RECOVERY_ARTIFACT_VALIDATED`; production tidak berubah. Kewajiban
+restore/switch disposable telah ditutup oleh S181, sedangkan deploy tetap
+memerlukan otorisasi dan gate kandidat tersendiri.
 
 Backend runtime-provenance cut-off: 11 Agustus 2026 05:23 WIB. S176 backend
 source `a37fe9474f54de01befc308168f42816ba4719d9` menyediakan marker

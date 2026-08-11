@@ -1,5 +1,15 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-11 - SagaView S181 rollback rehearsal
+
+- Menutup blocker rehearsal S180 dengan restore exact artifact aktif,
+  preflight marker fail-closed, switch kandidat sintetis, dan rollback ke
+  pasangan S163/S159 pada filesystem disposable.
+- Mencatat test/build/budget serta audit dependency hijau dan runtime
+  production tetap exact tanpa mutasi.
+- Klasifikasi `CONFIRMED`; status `ROLLBACK_REHEARSAL_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. S155 tetap dilarang rollback.
+
 ## 2026-08-11 - SagaView S180 rollback contract audit
 
 - Mengoreksi klaim rollback S155 setelah audit runtime read-only: direktori

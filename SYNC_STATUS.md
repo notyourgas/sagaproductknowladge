@@ -12,14 +12,14 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-11T11:11:00+07:00 |
-| Branch aktif | `main` (disiapkan dari branch terisolasi `codex/s180-sagaview-rollback-audit`) |
+| Waktu pembaruan terakhir | 2026-08-11T12:08:00+07:00 |
+| Branch aktif | `main` (disiapkan dari branch terisolasi `codex/s181-sagaview-rollback-rehearsal`) |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `eca4edee258cf3de8905d2c27fa1163203fdc63a` |
-| Informasi terakhir disinkronkan | SagaView S180 mengoreksi klaim rollback S155: direktori live tidak ada dan Studio lama `DO_NOT_ROLLBACK`; artifact exact runtime aktif S163/S159 serta backup terenkripsi lulus checksum. |
+| Baseline sebelum pembaruan | `7ee704e84543d0f35d31467c85e1a08b897866fd` |
+| Informasi terakhir disinkronkan | SagaView S181 membuktikan restore/switch disposable dan rollback exact runtime aktif S163/S159; S155 tetap `DEPRECATED / DO_NOT_ROLLBACK`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, fast-forward ke `main`, push, dan remote verification. |
-| Konflik | Klaim rollback lama digantikan evidence runtime terbaru; kontrak estimate-only tetap authority. |
-| Error | Tidak ada error source. Deploy SagaView tetap ditahan sampai restore/switch disposable lulus. |
+| Konflik | Tidak ada konflik baru; kontrak estimate-only tetap authority. |
+| Error | Tidak ada error source. Deploy SagaView tetap memerlukan otorisasi dan gate kandidat terpisah. |
 
 ## File yang berubah pada sinkronisasi ini
 

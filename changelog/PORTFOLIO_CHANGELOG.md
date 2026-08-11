@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-11 - SagaView S181 active-pair rollback rehearsal
+
+- Exact artifact runtime aktif S163/S159 berhasil direstore pada filesystem
+  disposable; marker salah berhenti fail-closed, switch kandidat sintetis dan
+  rollback ke pasangan aktif lulus.
+- Studio 188/188, typecheck/lint/build/budget, npm/Composer audit, serta hash
+  lock/build backend lulus. Runtime production tetap exact dan sehat.
+- Status `ROLLBACK_REHEARSAL_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production dan produk lain tidak berubah, S155
+  tetap `DEPRECATED / DO_NOT_ROLLBACK`.
+
 ## 2026-08-11 - SagaView S180 rollback contract audit
 
 - Audit read-only menemukan rollback S155 yang tercatat sudah tidak tersedia

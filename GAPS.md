@@ -276,13 +276,13 @@ ketika keputusan atau release baru menutup gap.
 
 ### SagaView
 
-- `ROLLBACK_GUARD_BLOCKED`: audit S180 membuktikan direktori rollback S155 yang
-  tercatat sudah tidak ada. Artifact S155 utuh, tetapi Studio lama masih memuat
-  QRIS, rekening, status lunas, dan gate export sehingga tidak boleh dipakai
-  pada kontrak estimate-only. Artifact exact runtime aktif S163/S159 dan backup
-  terenkripsi lulus checksum; deploy berikutnya wajib mempertahankan pasangan
-  aktif sebagai rollback dan membuktikan restore/switch disposable sebelum
-  promosi.
+- `ROLLBACK_REHEARSAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: audit S180
+  membuktikan S155 tidak aman dan tidak tersedia; S181 menutup blocker
+  restore/switch disposable untuk exact runtime aktif S163/S159, termasuk
+  marker mismatch fail-closed, switch kandidat sintetis, dan rollback penuh.
+  S155 tetap `DEPRECATED / DO_NOT_ROLLBACK`. Residual hanya gate kandidat
+  deploy berikutnya: otorisasi Andreas, backup/restore terbaru, smoke, dan
+  verifikasi rollback production.
 
 - `IMPLEMENTED_NOT_DEPLOYED`: S162 source `063dfc1a` menutup optimistic
   concurrency draft dengan ID+checksum revisi isi, 409 fail-closed, cleanup aset

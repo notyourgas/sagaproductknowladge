@@ -1,5 +1,23 @@
 # SagaView Changelog
 
+## 2026-08-11 - S181 active-pair rollback rehearsal
+
+- Klasifikasi: `CONFIRMED`.
+- Status: `ROLLBACK_REHEARSAL_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
+- Before: artifact exact runtime aktif S163/S159 telah tervalidasi, tetapi
+  restore/switch disposable dan rollback kembali belum dibuktikan.
+- After: checksum dan ekstraksi exact lulus; preflight marker salah berhenti
+  sebelum link berubah; switch kandidat sintetis dan rollback ke pasangan aktif
+  lulus pada junction terisolasi.
+- Evidence: Studio typecheck/lint/build/budget, 48 file test/188 test, npm audit
+  nol vulnerability; Composer manifest/audit lulus; hash lock/build manifest
+  backend cocok dengan stage S163. Runtime production tetap exact dan lima
+  service aktif dengan API/login/review 200 serta header keamanan lulus.
+- Dampak: pasangan aktif kini terbukti dapat dipulihkan sebagai target rollback
+  deploy berikutnya. S155 tetap `DEPRECATED / DO_NOT_ROLLBACK`; deploy dan
+  activation tidak diotorisasi.
+
 ## 2026-08-11 - S180 rollback artifact and contract audit
 
 - Klasifikasi: `CONFIRMED`.
