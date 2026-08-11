@@ -278,6 +278,13 @@ ketika keputusan atau release baru menutup gap.
 
 ### SagaView
 
+- `CLOSED IN CANDIDATE / IMPLEMENTED_NOT_DEPLOYED`: S183 source
+  `1eb8689588ec96fb5629338c19c804bff25ec27e` membuktikan pada browser nyata
+  bahwa persisted payment/QRIS/rekening/gate/status lama dibuang saat hydration,
+  sesi kembali ke state aman, dan setting operator non-payment dipertahankan.
+  Residual estimate-only kini hanya guarded deploy dan authenticated UAT pada
+  perangkat nyata; production tidak berubah.
+
 - `CLOSED IN CANDIDATE / IMPLEMENTED_NOT_DEPLOYED`: S182 source
   `e6a6769b9e9d837cbecedcb616a8e0229fb171e0` menutup residual implementasi
   estimate-only pada Studio. Switch konfirmasi pembayaran, module QRIS/rekening,

@@ -1323,6 +1323,15 @@ untuk release frontend ini.
   kompatibilitas migrasi. Status `UIUX_VALIDATED / SECURITY_VALIDATED /
   DATA_INTEGRITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
   IMPLEMENTED_NOT_DEPLOYED`; production tetap S163/S159.
+- S183 source `1eb8689588ec96fb5629338c19c804bff25ec27e` menutup gap acceptance
+  persistence S182 pada browser nyata. Payload sintetis lama berisi paid,
+  QRIS/rekening, payment gate, dan `awaiting_payment` dibuang saat hydration;
+  status sesi kembali `idle`, sedangkan session name, output, workflow, dan
+  privacy setting non-payment tetap utuh. Playwright 4/4 desktop/mobile/Axe,
+  unit 203/203, build/budget, dan audit dependency lulus. Status
+  `UIUX_VALIDATED / SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
+  QA_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak
+  berubah.
 - Saga Platform release teramati tetap
   `20260804171621-0ab9d8e`; release editor frame tidak mengubah Platform.
 - Additive migration, encrypted backup, disposable restore, candidate gate,

@@ -12,14 +12,14 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-11T13:24:25+07:00 |
-| Branch aktif | `main` (sinkronisasi source `codex/s182-sagaview-remove-payment-legacy`) |
+| Waktu pembaruan terakhir | 2026-08-11T14:12:12+07:00 |
+| Branch aktif | `main` (sinkronisasi source `codex/s183-sagaview-legacy-store-browser-uat`) |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `012afdc1486737e9f2f34d0fed656d915c8f2bb5` |
-| Informasi terakhir disinkronkan | SagaView S182 menghapus residual surface/state/kontrak pembayaran lama dari Studio aktif dan menyaring persisted key lama saat rehydrate. |
+| Baseline sebelum pembaruan | `e5c034ea2b8a24fc8a19651283983ee9156e0b91` |
+| Informasi terakhir disinkronkan | SagaView S183 membuktikan sanitasi persisted payment state S182 melalui hydration browser nyata pada desktop/mobile/a11y. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, fast-forward ke `main`, push, dan remote verification. |
-| Konflik | Tidak ada konflik baru; kontrak estimate-only tetap kanonik dan status lama hanya dipertahankan sebagai alias migrasi. |
-| Error | Tidak ada error source. Deploy SagaView tetap memerlukan otorisasi, gate release, dan authenticated UAT terpisah. |
+| Konflik | Tidak ada konflik baru; fixture hanya data sintetis dan kontrak local-first/no-upload tetap terjaga. |
+| Error | Tidak ada error source. Production tidak berubah; deploy SagaView tetap memerlukan otorisasi, gate release, dan authenticated UAT terpisah. |
 
 ## File yang berubah pada sinkronisasi ini
 

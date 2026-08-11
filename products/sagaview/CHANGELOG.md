@@ -1,5 +1,27 @@
 # SagaView Changelog
 
+## 2026-08-11 - S183 legacy-store browser hydration acceptance
+
+- Klasifikasi: `CONFIRMED`.
+- Status: `UIUX_VALIDATED / SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
+  QA_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak
+  berubah.
+- Before: S182 telah menghapus state pembayaran lama dan unit test sanitizer
+  lulus, tetapi jalur persistence/hydration Zustand belum dibuktikan pada
+  browser nyata.
+- After: acceptance browser menyuntikkan payload sintetis lama yang membawa
+  paid, QRIS/rekening, payment gate, dan `awaiting_payment`; hydration membuang
+  seluruh key tersebut, memulihkan sesi ke `idle`, dan mempertahankan setting
+  operator non-payment yang sah.
+- Evidence: source Studio
+  `1eb8689588ec96fb5629338c19c804bff25ec27e`; Playwright focused/regression
+  4/4 pada 1440x900 dan 390x844 termasuk Axe, forced-colors, reduced-motion,
+  serta no-overflow; full unit 203/203, format/lint/typecheck/build, budget
+  299,7/450 KiB, dan npm audit nol vulnerability.
+- Dampak: pembukaan ulang Studio dari storage versi lama tidak dapat
+  menghidupkan kembali alur pembayaran, sementara preferensi operasional tetap
+  aman. Deploy, activation, dan authenticated UAT tetap gate terpisah.
+
 ## 2026-08-11 - S182 legacy payment surface removal
 
 - Klasifikasi: `CONFIRMED`.

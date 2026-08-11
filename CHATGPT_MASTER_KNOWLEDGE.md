@@ -1035,6 +1035,12 @@ estimasi. Focused 10/10, full unit 203/203, Playwright 3/3 desktop/mobile/Axe,
 build/budget, dan audit dependency lulus. Status `UIUX_VALIDATED /
 SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / QA_VALIDATED /
 LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S163/S159.
+S183 source `1eb8689588ec96fb5629338c19c804bff25ec27e` kemudian membuktikan
+migrasi persisted state tersebut di browser nyata: fixture payment/QRIS/
+rekening/gate/status lama dibuang saat hydration, status sesi kembali `idle`,
+dan setting operator non-payment tetap terjaga. Playwright 4/4 desktop/mobile/
+Axe, unit 203/203, build/budget, dan audit dependency lulus. Status tetap
+`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
 S164 source `8fe779491649328a90d91fb0bbbf88a2fcf6290a` membuat Owner
 `Kategori & Harga` lebih ringkas: tepat satu editor/aksi aktif, draft tetap
 aman ketika gagal atau berpindah panel, dan recovery copy tampil dekat aksi.

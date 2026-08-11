@@ -1,5 +1,15 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-11 - SagaView S183 browser hydration acceptance
+
+- Menyinkronkan source `1eb8689588ec96fb5629338c19c804bff25ec27e`
+  sebagai acceptance browser untuk migrasi persisted state pembayaran lama.
+- Klasifikasi `CONFIRMED`; Playwright 4/4 desktop/mobile/Axe, unit 203/203,
+  format/lint/typecheck/build/budget, serta audit dependency lulus.
+- Production berubah: tidak. Status `UIUX_VALIDATED / SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; deploy dan authenticated UAT tetap gate terpisah.
+
 ## 2026-08-11 - SagaView S182 estimate-only residual candidate
 
 - Menyinkronkan source `e6a6769b9e9d837cbecedcb616a8e0229fb171e0`

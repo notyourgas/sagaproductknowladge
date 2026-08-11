@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-11 - SagaView S183 legacy-store browser acceptance
+
+- Hydration browser nyata kini membuktikan payload Studio lama yang membawa
+  payment/QRIS/rekening/status tidak dapat menghidupkan kembali alur pembayaran;
+  setting operator non-payment tetap dipertahankan.
+- Source `1eb8689588ec96fb5629338c19c804bff25ec27e` sudah dipush; Playwright 4/4
+  desktop/mobile/a11y, unit 203/203, build/budget, dan audit dependency lulus.
+- Status `UIUX_VALIDATED / SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
+  QA_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production dan
+  produk SagaDev lain tidak berubah.
+
 ## 2026-08-11 - SagaView S182 legacy payment surface removal
 
 - Studio General, state lokal, dan kontrak data aktif tidak lagi membawa

@@ -155,6 +155,14 @@ status `awaiting_payment` lama tetap inert dan diarahkan ke Review estimasi.
 Full unit 203/203, Playwright 3/3 desktop/mobile/a11y, build/budget, dan audit
 dependency lulus. Kandidat belum dideploy; production tetap S163/S159.
 
+S183 source `1eb8689588ec96fb5629338c19c804bff25ec27e` membuktikan jalur
+persistence/hydration tersebut pada browser nyata. Fixture sintetis membawa
+paid, QRIS/rekening, payment gate, dan status `awaiting_payment`; setelah reload
+seluruh key payment hilang, status sesi aman kembali `idle`, dan setting
+non-payment tetap utuh. Playwright 4/4 pada desktop/mobile termasuk Axe,
+forced-colors, reduced-motion, dan no-overflow; unit 203/203, build/budget, dan
+audit dependency lulus. Production tidak berubah.
+
 ## Use case
 
 Provisioning, Owner Console, device activation, exclusive Studio lease,
