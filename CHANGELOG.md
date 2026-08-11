@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-11 - SagaBook S191 authenticated UAT preflight
+
+- Informasi `CONFIRMED` dari source SagaBook
+  `44fc6bccc2028710dc82cd975b54cef2c9b8a1f4`, sudah dipush.
+- Ringkasan: acceptance pack read-only Owner/operator kini memakai akun dan
+  database sintetis serta fail-closed pada mutation, network/browser error,
+  raw PII, overflow, dan role navigation yang tidak sesuai capability.
+- Evidence: browser 4/4, permission backend 14/14, full backend 1.038/1.038,
+  build, design 26/0, dan audit dependency nol advisory.
+- Delivery `ACCEPTANCE_PACK_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; UAT nyata dan production tidak berubah.
+
 ## 2026-08-11 - SagaBook S190 authoritative draft preview
 
 - Informasi CONFIRMED dari source SagaBook

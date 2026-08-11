@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 11 Agustus 2026 20:24 WIB
+Updated: 11 Agustus 2026 21:18 WIB
 Evidence status: production source and runtime verified
 
 ## Tujuan dokumen
@@ -16,6 +16,16 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
+- Candidate S191 `44fc6bccc2028710dc82cd975b54cef2c9b8a1f4`
+  menambahkan preflight authenticated Owner/operator memakai akun dan database
+  sintetis. Sepuluh surface kritis dibaca setelah login pada 390x844 dan
+  1440x900; gate menolak request mutasi, respons 4xx/5xx, request gagal, error
+  browser, raw nomor customer, overflow, serta tujuan Owner yang tidak sesuai
+  capability operator. Browser 4/4, permission backend 14/14 (200 assertion),
+  full backend 1.038/1.038 (11.722), build, design 26/0, serta audit
+  npm/Composer/OSV lulus. Ini hanya `ACCEPTANCE_PACK_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; authenticated UAT nyata, pilot,
+  provider canary, dan deployment tetap gate terpisah. Production tetap S170.
 - Candidate S190 1b794e533788abf384af25e489a9b016669573fd
   membuat preview draft template existing memakai settings authoritative dari
   respons server yang juga menjadi sumber profile draft database. Sebelum

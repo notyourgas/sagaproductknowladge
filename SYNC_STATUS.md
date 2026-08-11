@@ -12,19 +12,18 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-11T20:24:00+07:00 |
-| Branch aktif | `main` (sinkronisasi SagaBook S190 authoritative draft preview) |
+| Waktu pembaruan terakhir | 2026-08-11T21:18:06+07:00 |
+| Branch aktif | `main` (sinkronisasi SagaBook S191 authenticated UAT preflight) |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `38f61e33032d8e1e4fcb40d987aeaab6f6df0d97` |
-| Informasi terakhir disinkronkan | SagaBook S190 `1b794e53` menutup fresh draft -> preview existing dengan respons server authoritative; production tetap S170. |
+| Baseline sebelum pembaruan | `6b8303626be762a16a3dc47b076a892b76edc706` |
+| Informasi terakhir disinkronkan | SagaBook S191 `44fc6bcc` menambahkan preflight read-only Owner/operator sintetis; production tetap S170. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, fast-forward ke `main`, push, dan remote verification. |
 | Konflik | Tidak ada konflik fakta SagaBook; checkout knowledge bersama yang divergen tidak disentuh dan sinkronisasi dilakukan dari worktree exact `origin/main`. |
-| Error | Authenticated Owner UAT, dua gap pilot, real provider canary, dan deploy SagaBook masih residual; production tidak berubah. |
+| Error | Authenticated Owner/operator UAT nyata, dua gap pilot, real provider canary, dan deploy SagaBook masih residual; production tidak berubah. |
 
 ## File yang berubah pada sinkronisasi ini
 
 - `products/sagabook/PRODUCT.md`
-- `products/sagabook/DOSSIER.md`
 - `products/sagabook/CHANGELOG.md`
 - `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`

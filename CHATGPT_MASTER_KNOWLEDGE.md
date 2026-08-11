@@ -68,6 +68,15 @@ pembayaran, menerima status/reminder, dan mengelola request dari secure booking
 link. Operator mengelola calendar, task, check-in, session, payment,
 reconciliation, report, staff, tenant, dan subscription.
 
+Candidate SagaBook S191 source
+`44fc6bccc2028710dc82cd975b54cef2c9b8a1f4` menambahkan acceptance preflight
+read-only Owner/operator dengan akun dan database sintetis. Mobile dan desktop
+fail-closed bila ada request mutation, 4xx/5xx, request/browser error, raw nomor
+customer, overflow, atau tujuan role yang tidak sesuai capability. Browser 4/4,
+permission backend 14/14, full backend 1.038/1.038, build, design, dan audit
+dependency lulus. Status LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED;
+authenticated UAT nyata dan production tidak berubah.
+
 Candidate SagaBook S190 source
 1b794e533788abf384af25e489a9b016669573fd membuat preview draft template
 existing memakai settings authoritative dari respons server yang sama dengan

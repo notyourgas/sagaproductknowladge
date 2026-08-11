@@ -1,5 +1,23 @@
 # SagaBook Changelog
 
+## 2026-08-11 - Authenticated Owner/operator UAT preflight S191 candidate
+
+- Acceptance pack `CONFIRMED`; tidak ada perubahan workflow, API, schema,
+  permission, data customer, provider, atau production.
+- Before: runbook UAT mencampur langkah read-only dan mutasi serta belum
+  mempunyai guard otomatis terhadap unsafe request dan bukti berisi PII.
+  After: preflight sintetis memeriksa Owner/operator pada mobile dan desktop,
+  fail-closed terhadap mutation, 4xx/5xx, request/browser error, raw nomor,
+  overflow, dan tujuan Owner yang tidak sesuai capability; runbook memisahkan
+  preflight lokal dari UAT nyata dan melarang credential/PII pada evidence.
+- Source `44fc6bccc2028710dc82cd975b54cef2c9b8a1f4` pada branch
+  `codex/s191-sagabook-auth-uat-preflight` sudah dipush. Browser 4/4,
+  permission backend 14/14 (200 assertion), full backend 1.038/1.038 (11.722),
+  build, design 26/0, serta npm/Composer/OSV nol advisory.
+- Status `ACCEPTANCE_PACK_VALIDATED / SECURITY_VALIDATED / UIUX_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Production tetap S170;
+  authenticated UAT nyata, pilot, provider canary, dan deploy belum dijalankan.
+
 ## 2026-08-11 - Template draft preview authoritative S190 candidate
 
 - Gap fresh draft -> preview preset existing CONFIRMED; schema, preset,
