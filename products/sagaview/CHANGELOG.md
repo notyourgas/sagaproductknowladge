@@ -25,6 +25,27 @@
   UAT, backup/restore produksi terbaru, rollback production, dan otorisasi
   Andreas tetap wajib.
 
+## 2026-08-11 - S190 session-cookie collision recovery
+
+- Klasifikasi: `CONFIRMED`.
+- Status: `SECURITY_VALIDATED / QA_VALIDATED /
+  RELEASE_REHEARSAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`; authenticated normal-browser UAT masih residual.
+- Before: browser dengan scope sesi legacy dapat memilih sesi yang salah
+  sesudah login sukses, sehingga dashboard mengembalikan pengguna ke form login
+  kosong; profil browser bersih tidak terdampak.
+- After: sesi aplikasi dan API dibatasi ke host masing-masing, scope legacy
+  dipensiunkan otomatis pada allowlist host SagaView, dan guard mencegah
+  pembersihan pada host marketing atau domain produk lain.
+- Evidence: source `475db4c21b00440004d88b8f876e3eb38aea6be0`, backend
+  release `20260811190515-475db4c`; focused final 5/53, regression terkait
+  58/805, full backend 987/11.434, Pint, dan Composer audit nol advisory lulus.
+  Backup database, candidate/deploy gate, rehearsal aktivasi+rollback, atomic
+  switch, service/health/journal, serta uji cookie stale production lulus.
+- Dampak: browser normal dapat memulihkan sesi lama tanpa pembersihan manual.
+  Tidak ada migration atau perubahan Studio, frontend artifact, Nginx, pricing,
+  subscription, device/session bisnis, foto, maupun data customer.
+
 ## 2026-08-11 - S186 Review badge contrast repair
 
 - Klasifikasi: `CONFIRMED`.

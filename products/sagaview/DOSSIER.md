@@ -11,6 +11,20 @@ SagaView berdasarkan runtime production aktif.
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED`
 - Business readiness: `NEEDS CONFIRMATION` untuk penjualan massal
+- S190 session-cookie recovery: `SECURITY_VALIDATED / QA_VALIDATED /
+  RELEASE_REHEARSAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`; backend
+  `475db4c21b00440004d88b8f876e3eb38aea6be0` / release
+  `20260811190515-475db4c`. Sesi aplikasi dan API kini host-only; scope legacy
+  dipensiunkan otomatis pada allowlist host SagaView tanpa memengaruhi host
+  marketing atau domain produk lain. Focused final 5/5 dengan 53 assertion,
+  regression terkait 58/58 dengan 805 assertion, dan full backend 987/987
+  dengan 11.434 assertion lulus; Composer audit nol advisory. Backup,
+  candidate cache, deploy gate, aktivasi/rollback rehearsal, atomic switch,
+  health, service, journal, dan uji cookie stale production lulus. Tidak ada
+  migration; Studio, frontend artifact, Nginx, dan data bisnis tidak berubah.
+  Authenticated login profil browser normal tetap UAT residual sebelum
+  `BUSINESS_READY`.
 - UI Studio compact all-menu: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
 - UI Session monitor besar: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
 - UI Output monitor besar: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`

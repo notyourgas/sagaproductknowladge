@@ -15,6 +15,28 @@
   LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production, pricing, workflow
   estimasi, API, database, dan produk SagaDev lain tidak berubah.
 
+## 2026-08-11 - SagaView S190 session-cookie recovery production
+
+- Informasi `CONFIRMED` dari source SagaView
+  `475db4c21b00440004d88b8f876e3eb38aea6be0` pada branch
+  `codex/s190-sagaview-session-cookie-recovery`; source sudah dipush.
+- Ringkasan: benturan scope sesi legacy yang dapat mengembalikan login sukses
+  ke form kosong kini dipulihkan otomatis dengan sesi host-only dan retirement
+  scope lama pada allowlist host produk.
+- Produk/area terdampak: SagaView owner authentication/session. PRODUCT,
+  DOSSIER, CHANGELOG, coverage ledger, portfolio, master knowledge, GAPS, dan
+  SYNC_STATUS diperbarui.
+- Evidence: backend release `20260811190515-475db4c`; focused final 5/53,
+  regression terkait 58/805, full backend 987/11.434, Pint, Composer audit nol
+  advisory, backup, deploy gate, rehearsal aktivasi/rollback, atomic switch,
+  health/service/journal, dan stale-cookie production probe lulus.
+- Delivery `SECURITY_VALIDATED / QA_VALIDATED /
+  RELEASE_REHEARSAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`. Production berubah: ya, backend-only. Migration,
+  Studio, frontend artifact, Nginx, pricing, subscription, dan data bisnis tidak
+  berubah. Authenticated normal-browser UAT tetap residual sebelum
+  `BUSINESS_READY`.
+
 ## 2026-08-11 - SagaView S186 Review contrast repair
 
 - Informasi `CONFIRMED` dari source SagaView

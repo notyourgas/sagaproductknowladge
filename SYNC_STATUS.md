@@ -12,14 +12,14 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-11T19:10:51+07:00 |
-| Branch aktif | `main` (sinkronisasi source `codex/s185-sagaview-local-vps-release`) |
+| Waktu pembaruan terakhir | 2026-08-11T19:13:42+07:00 |
+| Branch aktif | `main` (sinkronisasi source `codex/s190-sagaview-session-cookie-recovery`) |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `06e7eca65894b373e414307ca68374bd87f68605` |
-| Informasi terakhir disinkronkan | SagaView S185 memvalidasi jalur release exact local commit ke VPS tanpa menjadikan GitHub Actions gate tunggal. |
+| Baseline sebelum pembaruan | `e644b813b0b0b69faad360eee5d24291af68cece` |
+| Informasi terakhir disinkronkan | SagaView S190 memulihkan benturan scope sesi legacy dan aktif sebagai backend release `20260811190515-475db4c`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, fast-forward ke `main`, push, dan remote verification. |
-| Konflik | Tidak ada konflik kontrak; workflow estimasi, no-upload, harga, API, schema, dan tenant boundary tetap sama. |
-| Error | Tidak ada error source. Production tidak berubah; physical UAT, backup/restore, rollback production, deploy, activation, dan business readiness tetap gate terpisah. |
+| Konflik | Tidak ada konflik kontrak; host marketing, domain produk lain, Studio, schema, pricing, dan data bisnis tetap sama. |
+| Error | Tidak ada error source/release. Authenticated normal-browser UAT masih residual; business readiness belum diklaim. |
 
 ## File yang berubah pada sinkronisasi ini
 

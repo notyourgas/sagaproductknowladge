@@ -12,6 +12,21 @@
   IMPLEMENTED_NOT_DEPLOYED`; production SagaView dan produk SagaDev lain tidak
   berubah.
 
+## 2026-08-11 - SagaView S190 session-cookie recovery
+
+- Login SagaView kini memulihkan benturan scope sesi browser lama secara
+  otomatis: aplikasi dan API memakai sesi host-only, sedangkan scope legacy
+  dipensiunkan hanya pada host produk yang diizinkan.
+- Source `475db4c21b00440004d88b8f876e3eb38aea6be0` aktif sebagai backend
+  release `20260811190515-475db4c`; full backend 987/11.434, focused final
+  5/53, audit dependency, backup, rehearsal aktivasi/rollback, deploy gate,
+  service/health/journal, dan uji cookie stale production lulus.
+- Status `SECURITY_VALIDATED / QA_VALIDATED /
+  RELEASE_REHEARSAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`; produk lain, Studio, Nginx, frontend, database schema,
+  dan data bisnis tidak berubah. Authenticated normal-browser UAT tetap
+  residual sebelum `BUSINESS_READY`.
+
 ## 2026-08-11 - SagaView S186 Review contrast repair
 
 - Badge kategori berbayar Review berubah dari rasio 1,72:1 menjadi sekitar

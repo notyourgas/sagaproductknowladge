@@ -1,6 +1,18 @@
 # SagaView Product Knowledge
 
 Updated: 11 Agustus 2026
+
+S190 memulihkan login browser yang sebelumnya dapat kembali ke form kosong
+akibat benturan scope sesi lama. Source
+`475db4c21b00440004d88b8f876e3eb38aea6be0` aktif sebagai backend release
+`20260811190515-475db4c`: host aplikasi dan API memakai sesi host-only,
+sementara scope legacy dipensiunkan otomatis hanya pada host SagaView yang
+diizinkan. Guard domain produk lain dan host marketing tetap tidak berubah.
+Status `SECURITY_VALIDATED / QA_VALIDATED / RELEASE_REHEARSAL_VALIDATED /
+PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; uji recovery cookie stale
+production lulus, sedangkan authenticated login pada profil browser normal
+tetap checkpoint UAT terakhir sebelum klaim penutupan operasional penuh.
+
 Evidence status: production deployed; activation/authenticated UAT residual;
 frame import-order,
 compact all-menu, workspace Session/Output/Izin Foto monitor besar, free drag

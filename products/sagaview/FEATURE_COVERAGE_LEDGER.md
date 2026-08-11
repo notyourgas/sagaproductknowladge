@@ -1,6 +1,6 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 11 Agustus 2026 19:10 WIB
+Evidence cut-off: 11 Agustus 2026 19:13 WIB
 
 Local release tooling cut-off: 11 Agustus 2026 19:10 WIB. S185 Studio source
 `996344c2ef139746143480d22ca09adac82fde04` menyediakan jalur exact local
@@ -16,6 +16,20 @@ dependency nol vulnerability, dan rehearsal package-only final lulus. Status
 LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; source sudah `PUSHED`, production
 tidak berubah. Physical Windows UAT, backup/restore produksi terbaru,
 rollback production, serta otorisasi Andreas tetap gate deploy.
+
+Session-cookie recovery cut-off: 11 Agustus 2026 19:13 WIB. S190 backend
+source `475db4c21b00440004d88b8f876e3eb38aea6be0` aktif sebagai release
+`20260811190515-475db4c`. Sesi aplikasi dan API memakai scope host-only;
+scope legacy dipensiunkan otomatis hanya pada allowlist host SagaView, dengan
+negative coverage untuk host marketing serta domain produk lain. Focused final
+5/5 dengan 53 assertion, regression terkait 58/58 dengan 805 assertion, full
+backend 987/987 dengan 11.434 assertion, Pint, dan Composer audit nol advisory
+lulus. Backup, candidate cache, deploy gate, activation/rollback rehearsal,
+atomic switch, service/health/journal, dan stale-cookie production probe lulus.
+Status `SECURITY_VALIDATED / QA_VALIDATED /
+RELEASE_REHEARSAL_VALIDATED / PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED`; authenticated normal-browser UAT masih residual dan
+`BUSINESS_READY` belum diklaim.
 
 Review contrast cut-off: 11 Agustus 2026 16:19 WIB. S186 Studio source
 `556c2818c7629907717e245863a3ed2d86649fbe` mengganti badge kategori berbayar

@@ -887,6 +887,20 @@ SaaS launch menunggu legal, acceptance, release, serta publication gate.
 
 ### SagaView
 
+S190 source `475db4c21b00440004d88b8f876e3eb38aea6be0` aktif sebagai
+backend release `20260811190515-475db4c` dan memulihkan benturan scope sesi
+legacy yang dapat mengembalikan login sukses ke form kosong pada profil browser
+lama. Sesi aplikasi/API kini host-only dan scope legacy dipensiunkan otomatis
+hanya pada allowlist host SagaView; host marketing serta domain produk lain
+tidak dibersihkan. Full backend 987/11.434, focused final 5/53, audit
+dependency, backup, rehearsal aktivasi/rollback, deploy gate, atomic switch,
+service/health/journal, dan uji cookie stale production lulus. Status
+`SECURITY_VALIDATED / QA_VALIDATED / RELEASE_REHEARSAL_VALIDATED /
+PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated login pada profil
+browser normal tetap residual sebelum `BUSINESS_READY`. Tidak ada migration
+atau perubahan Studio, frontend artifact, Nginx, pricing, subscription, foto,
+atau data customer.
+
 SaaS local-first untuk workflow studio setelah pemotretan. Operator mengaktifkan
 device, membuka session, memilih folder, mengimpor 50/200/500 foto, membiarkan
 customer memilih frame/foto, menyusun output, lalu export/print. Foto customer

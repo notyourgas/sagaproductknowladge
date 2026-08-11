@@ -288,6 +288,14 @@ ketika keputusan atau release baru menutup gap.
   `PUSHED`; production tidak berubah. Residual release tetap physical Windows
   UAT exact Studio/backend, backup/restore produksi terbaru, verifikasi
   rollback production, serta otorisasi eksplisit Andreas.
+- `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT RESIDUAL`: S190 backend
+  `475db4c2` / release `20260811190515-475db4c` memulihkan benturan scope sesi
+  legacy secara otomatis. Probe production membuktikan scope lama terhapus dan
+  sesi host-only tetap tersimpan; service, health, journal, deploy gate, backup,
+  serta rehearsal rollback hijau. Residual penutupan masalah hanya satu login
+  authenticated memakai profil browser normal yang sebelumnya terdampak,
+  termasuk refresh dashboard; data akun dan credential tidak dicatat di
+  knowledge publik. `BUSINESS_READY` tetap tidak diklaim.
 
 - `CLOSED IN CANDIDATE / IMPLEMENTED_NOT_DEPLOYED`: S184 source
   `7c3d1b2f5fb5cd1da4fdc4826667299669f602ae` membuktikan status historis
