@@ -1,6 +1,6 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 11 Agustus 2026 20:20 WIB
+Evidence cut-off: 11 Agustus 2026 21:05 WIB
 
 Studio activation cut-off: 11 Agustus 2026 20:20 WIB. Exact local source
 `86b04c9133fc7c28f6b4a6ff7c2aeb80d1480d58` aktif sebagai release
@@ -10,8 +10,18 @@ read-only `/admin/runtime-provenance`. Gate exact, build/browser/audit,
 artifact immutable, backup source lokal/VPS, atomic switch, empat public smoke,
 service, journal release, dan rollback Studio ke `20260810091159-6d7083a`
 lulus; UAT printer fisik lulus. Status `PRODUCTION_DEPLOYED /
-PRODUCTION_ACTIVATED / REMOTE_PUSH_PENDING`; authenticated normal-browser UAT
+PRODUCTION_ACTIVATED / PUSHED`; exact commit production tersedia di branch
+remote `codex/s192-sagaview-production-source-recovery`. Authenticated normal-browser UAT
 dan symlink rollback backend masih residual. `BUSINESS_READY` belum diklaim.
+
+Production source recovery cut-off: 11 Agustus 2026 21:05 WIB. S192
+memverifikasi bundle recovery lengkap, checksum SHA-256 archive/bundle,
+embedded source commit/tree, dan Git object exact Studio production
+`86b04c9133fc7c28f6b4a6ff7c2aeb80d1480d58`. Commit kemudian dipush tanpa
+perubahan source ke branch remote
+`codex/s192-sagaview-production-source-recovery`; SHA local, tracking, dan
+remote cocok. Status risiko provenance berubah dari `REMOTE_PUSH_PENDING`
+menjadi `PUSHED`; runtime production tidak diubah.
 
 Cumulative candidate cut-off: 11 Agustus 2026 20:10 WIB. S191 Studio source
 `6902f4b7a9ecda0b42eb9e3e77fb6b30e6f09ff1` menyatukan S185 exact local

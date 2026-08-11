@@ -10,7 +10,8 @@ VPS, dan provenance read-only di `/admin/runtime-provenance`. Archive immutable,
 SHA-256, git bundle, backup source lokal/VPS, atomic switch, public smoke,
 service, journal, exact backend binding, serta rollback ke
 `20260810091159-6d7083a` lulus. Status `PRODUCTION_DEPLOYED /
-PRODUCTION_ACTIVATED / REMOTE_PUSH_PENDING`; UAT printer fisik dikonfirmasi
+PRODUCTION_ACTIVATED / PUSHED`; exact source production tersedia di branch
+remote `codex/s192-sagaview-production-source-recovery`. UAT printer fisik dikonfirmasi
 lulus dan dibawa maju karena perubahan sesudah baseline tidak menyentuh jalur
 print/export. Authenticated normal-browser UAT tetap residual sebelum
 `BUSINESS_READY`.

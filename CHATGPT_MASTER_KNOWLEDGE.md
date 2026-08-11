@@ -903,7 +903,8 @@ memakai archive immutable, SHA-256, git bundle, backup source lokal/VPS,
 clean-install npm 9, atomic switch, public smoke, runtime provenance
 `/admin/runtime-provenance`, service/journal release, serta rollback Studio yang
 terverifikasi. UAT printer fisik lulus. Status `PRODUCTION_DEPLOYED /
-PRODUCTION_ACTIVATED / REMOTE_PUSH_PENDING`; authenticated normal-browser UAT
+PRODUCTION_ACTIVATED / PUSHED`; exact source tersedia pada branch remote
+`codex/s192-sagaview-production-source-recovery`. Authenticated normal-browser UAT
 dan rollback backend masih residual dan `BUSINESS_READY` belum diklaim.
 
 Candidate kumulatif S191 source

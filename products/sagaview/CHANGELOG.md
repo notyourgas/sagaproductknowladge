@@ -1,10 +1,25 @@
 # SagaView Changelog
 
+## 2026-08-11 - S192 exact production source recovery
+
+- Klasifikasi: `CONFIRMED`.
+- Status: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / PUSHED`; production
+  tidak diubah pada slice ini.
+- Before: exact Studio production `86b04c9` hanya terlindungi oleh archive dan
+  Git bundle lokal/VPS dengan status `REMOTE_PUSH_PENDING`.
+- After: bundle lengkap dan checksum SHA-256 diverifikasi, embedded
+  commit/tree cocok, lalu commit exact tanpa perubahan source dipush ke branch
+  remote `codex/s192-sagaview-production-source-recovery`. SHA local, tracking,
+  dan remote sama.
+- Dampak: source yang sedang aktif dapat dipulihkan dari remote tanpa
+  merekonstruksi runtime. Authenticated normal-browser UAT dan symlink rollback
+  backend tetap residual; `BUSINESS_READY` belum diklaim.
+
 ## 2026-08-11 - Studio local exact-commit production activation
 
 - Klasifikasi: `CONFIRMED`.
 - Status: `LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
-  REMOTE_PUSH_PENDING`; `BUSINESS_READY` belum diklaim.
+  PUSHED`; `BUSINESS_READY` belum diklaim.
 - Before: kandidat Studio S185/S186 belum aktif; npm 9 VPS menolak lockfile
   yang belum memuat satu dependency transitif dan endpoint provenance lama
   jatuh ke Laravel karena batas routing Nginx.
@@ -18,8 +33,7 @@
   switch, empat public smoke HTTP 200, runtime provenance exact, service aktif,
   journal release nol, dan rollback target `20260810091159-6d7083a` lulus.
 - UAT printer fisik dikonfirmasi lulus dan dibawa maju karena delta setelah
-  baseline tidak mengubah print/export. Residual: source Studio masih
-  `REMOTE_PUSH_PENDING`, authenticated normal-browser UAT belum selesai, dan
+  baseline tidak mengubah print/export. Residual: authenticated normal-browser UAT belum selesai, dan
   symlink rollback backend belum tersedia. Tidak ada migration, pricing,
   subscription, credential, foto, atau data customer yang berubah.
 
