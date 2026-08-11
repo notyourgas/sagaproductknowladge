@@ -1,5 +1,32 @@
 # SagaView Changelog
 
+## 2026-08-11 - S191 cumulative S185 plus S186 Studio candidate
+
+- Klasifikasi: `CONFIRMED`.
+- Status: `UIUX_VALIDATED / ACCESSIBILITY_VALIDATED / SECURITY_VALIDATED /
+  QA_VALIDATED / RELEASE_TOOLING_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; source sudah `PUSHED`, production tidak berubah.
+- Before: release tooling S185 dan perbaikan kontras Review S186 berada pada
+  dua lineage kandidat berbeda, sehingga exact source deploy berikutnya belum
+  membawa keduanya bersama.
+- After: source Studio
+  `6902f4b7a9ecda0b42eb9e3e77fb6b30e6f09ff1` menggabungkan contract release
+  exact-commit, alias Review estimasi, dan badge `PREMIUM` berkontras tinggi
+  pada satu branch kumulatif yang bersih.
+- Evidence: format/lint/typecheck, unit 207/207, Playwright relevan 28/28,
+  build, budget 299,7/450 KiB, npm audit penuh dan production nol
+  vulnerability. Package `20260811130729-6902f4b` berstatus
+  `PACKAGED_NOT_DEPLOYED`; archive SHA-256
+  `eab1591593019610ae70443fdd30256ff97ca0a96cec31a6d1b35b6121ce5ea8` dan
+  git bundle SHA-256
+  `2135e3e62cbd5d01f7340166a53411d48a81c380df7e3957955b69ba4296ae5d`
+  cocok pada dua salinan.
+- Dampak: kandidat deploy berikutnya tidak perlu memilih antara safety tooling
+  dan aksesibilitas Review. Workflow estimasi, local-first/no-upload, API,
+  database, pricing, dan production tidak berubah. Physical Windows UAT exact
+  Studio/backend, rollback production, backup/restore terbaru, serta otorisasi
+  Andreas tetap wajib.
+
 ## 2026-08-11 - S185 exact local commit to VPS release tooling
 
 - Klasifikasi: `CONFIRMED`.

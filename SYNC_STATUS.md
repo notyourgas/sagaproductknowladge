@@ -12,14 +12,14 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-11T19:13:42+07:00 |
-| Branch aktif | `main` (sinkronisasi source `codex/s190-sagaview-session-cookie-recovery`) |
+| Waktu pembaruan terakhir | 2026-08-11T20:10:00+07:00 |
+| Branch aktif | `main` (sinkronisasi source `codex/s191-sagaview-cumulative-candidate`) |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `e644b813b0b0b69faad360eee5d24291af68cece` |
-| Informasi terakhir disinkronkan | SagaView S190 memulihkan benturan scope sesi legacy dan aktif sebagai backend release `20260811190515-475db4c`. |
+| Baseline sebelum pembaruan | `e3a1c2d786faa3d0c5922fdafde0c42d61a67172` |
+| Informasi terakhir disinkronkan | SagaView S191 menyatukan S185 release tooling dan S186 Review contrast sebagai candidate `6902f4b7a9ecda0b42eb9e3e77fb6b30e6f09ff1`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, fast-forward ke `main`, push, dan remote verification. |
-| Konflik | Tidak ada konflik kontrak; host marketing, domain produk lain, Studio, schema, pricing, dan data bisnis tetap sama. |
-| Error | Tidak ada error source/release. Authenticated normal-browser UAT masih residual; business readiness belum diklaim. |
+| Konflik | Tidak ada konflik source saat lineage S185 dan S186 digabungkan; kontrak estimasi, local-first/no-upload, API, database, dan pricing tetap sama. |
+| Error | Tidak ada error source/package. Physical Windows UAT exact, rollback production, backup/restore terbaru, dan otorisasi deploy masih residual. |
 
 ## File yang berubah pada sinkronisasi ini
 

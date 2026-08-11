@@ -8,7 +8,7 @@ diubah menjadi klaim publik sebelum ditutup dengan bukti atau keputusan owner.
 
 ## Konteks
 
-Daftar ini berlaku pada evidence cut-off 8 Agustus 2026 20:30 WIB dan harus diperbarui
+Daftar ini berlaku pada evidence cut-off 11 Agustus 2026 20:10 WIB dan harus diperbarui
 ketika keputusan atau release baru menutup gap.
 
 ## Cara memakai
@@ -280,6 +280,13 @@ ketika keputusan atau release baru menutup gap.
   terkontrol sebelum klaim `BUSINESS_READY` atau distribusi link secara luas.
 
 ### SagaView
+
+- `CLOSED IN CANDIDATE / IMPLEMENTED_NOT_DEPLOYED`: S191 source
+  `6902f4b7a9ecda0b42eb9e3e77fb6b30e6f09ff1` menyatukan S185 release tooling
+  dan S186 Review contrast pada satu lineage yang sudah `PUSHED`. Residual
+  release bukan lagi konflik lineage, melainkan physical Windows UAT exact
+  Studio/backend, rollback production, backup/restore terbaru, dan otorisasi
+  Andreas. Production tidak berubah.
 
 - `CLOSED IN CANDIDATE / IMPLEMENTED_NOT_DEPLOYED`: S185 source
   `996344c2ef139746143480d22ca09adac82fde04` menutup tooling release exact

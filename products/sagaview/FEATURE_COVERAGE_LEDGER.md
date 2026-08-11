@@ -1,6 +1,19 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 11 Agustus 2026 19:13 WIB
+Evidence cut-off: 11 Agustus 2026 20:10 WIB
+
+Cumulative candidate cut-off: 11 Agustus 2026 20:10 WIB. S191 Studio source
+`6902f4b7a9ecda0b42eb9e3e77fb6b30e6f09ff1` menyatukan S185 exact local
+release tooling dan S186 Review contrast pada satu lineage bersih yang sudah
+`PUSHED`. Format/lint/typecheck, unit 207/207, Playwright relevan 28/28,
+build, budget 299,7/450 KiB, serta npm audit penuh dan production nol
+vulnerability lulus. Package `20260811130729-6902f4b` berstatus
+`PACKAGED_NOT_DEPLOYED`; archive immutable, manifest SHA-256, git bundle,
+embedded source commit/tree, dan salinan kedua memiliki hash identik. Status
+`UIUX_VALIDATED / ACCESSIBILITY_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED /
+RELEASE_TOOLING_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+production tidak berubah. Physical Windows UAT exact Studio/backend, rollback
+production, backup/restore terbaru, dan otorisasi Andreas masih menjadi gate.
 
 Local release tooling cut-off: 11 Agustus 2026 19:10 WIB. S185 Studio source
 `996344c2ef139746143480d22ca09adac82fde04` menyediakan jalur exact local

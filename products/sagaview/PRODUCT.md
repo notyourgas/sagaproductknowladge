@@ -2,6 +2,16 @@
 
 Updated: 11 Agustus 2026
 
+S191 menyatukan lineage S185 release tooling dan S186 perbaikan kontras Review
+menjadi satu kandidat Studio kumulatif. Source
+`6902f4b7a9ecda0b42eb9e3e77fb6b30e6f09ff1` sudah `PUSHED` dan berstatus
+`UIUX_VALIDATED / ACCESSIBILITY_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED /
+RELEASE_TOOLING_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+Kandidat mempertahankan workflow estimasi saja, no-upload/local-first, dan
+tooling exact-commit menuju VPS; production tidak berubah. Physical Windows UAT
+untuk pasangan exact Studio/backend, bukti rollback production, backup/restore
+terbaru, serta otorisasi Andreas tetap wajib sebelum deploy.
+
 S190 memulihkan login browser yang sebelumnya dapat kembali ke form kosong
 akibat benturan scope sesi lama. Source
 `475db4c21b00440004d88b8f876e3eb38aea6be0` aktif sebagai backend release
