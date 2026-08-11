@@ -1332,6 +1332,14 @@ untuk release frontend ini.
   `UIUX_VALIDATED / SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
   QA_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak
   berubah.
+- S184 source `7c3d1b2f5fb5cd1da4fdc4826667299669f602ae` membuktikan alias status
+  historis `awaiting_payment` pada router browser. Sesi sintetis masuk ke Review
+  estimasi, export tetap tersedia, dan tidak ada surface/gate pembayaran.
+  Playwright alias serta regresi estimate-only, desktop/mobile no-overflow,
+  forced-colors/reduced-motion, unit 203/203, build/budget, dan audit dependency
+  lulus. Axe serious/critical non-kontras nol; audit `color-contrast` Review
+  masih gap terpisah. Status `QA_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
 - Saga Platform release teramati tetap
   `20260804171621-0ab9d8e`; release editor frame tidak mengubah Platform.
 - Additive migration, encrypted backup, disposable restore, candidate gate,

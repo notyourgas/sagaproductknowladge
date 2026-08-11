@@ -12,14 +12,14 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-11T14:20:02+07:00 |
-| Branch aktif | `main` (sinkronisasi source `codex/s188-sagabook-reconcile-tenant-scope`) |
+| Waktu pembaruan terakhir | 2026-08-11T15:27:10+07:00 |
+| Branch aktif | `main` (sinkronisasi source `codex/s184-sagaview-awaiting-payment-browser-alias`) |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `d6c75f10dab2ed86fdff7ab8d778add1fbc48c83` |
-| Informasi terakhir disinkronkan | SagaBook S188 membatasi expiry reconciliation operator ke tenant terpilih dan membuktikan tenant lain tidak berubah. |
+| Baseline sebelum pembaruan | `4d742eccf3abaf2b08b2a87ddaa92b6b2ba12f91` |
+| Informasi terakhir disinkronkan | SagaView S184 membuktikan status historis awaiting_payment masuk ke Review estimasi tanpa surface atau gate pembayaran. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, fast-forward ke `main`, push, dan remote verification. |
-| Konflik | Tidak ada konflik baru; scheduler tanpa filter tetap global dan tidak ada perubahan UI, schema, atau provider. |
-| Error | Tidak ada error source. Production tidak berubah; provider nyata, authenticated UAT, pilot, dan deploy SagaBook tetap memerlukan otorisasi terpisah. |
+| Konflik | Tidak ada konflik kontrak; rule Axe color-contrast Review masih gap yang dicatat eksplisit dan tidak diklaim lulus. |
+| Error | Tidak ada error source. Production tidak berubah; deploy dan authenticated UAT SagaView tetap memerlukan otorisasi terpisah. |
 
 ## File yang berubah pada sinkronisasi ini
 

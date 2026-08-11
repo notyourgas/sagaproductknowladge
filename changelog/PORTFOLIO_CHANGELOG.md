@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-11 - SagaView S184 historical Review route acceptance
+
+- Status `awaiting_payment` dari sesi lama kini terbukti masuk ke Review
+  estimasi di browser tanpa QRIS, rekening, status paid, atau gate export.
+- Source `7c3d1b2f5fb5cd1da4fdc4826667299669f602ae` sudah dipush; Playwright alias
+  dan regresi estimate-only, unit 203/203, build/budget, serta audit dependency
+  lulus. Rule Axe kontras Review belum diklaim dan tetap gap terpisah.
+- Status `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / QA_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production dan produk SagaDev
+  lain tidak berubah.
+
 ## 2026-08-11 - SagaBook S188 tenant-scoped reconciliation expiry
 
 - Reconciliation operator untuk satu tenant kini hanya dapat meng-expire hold,

@@ -1,5 +1,26 @@
 # SagaView Changelog
 
+## 2026-08-11 - S184 historical Review route browser acceptance
+
+- Klasifikasi: `CONFIRMED`.
+- Status: `SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / QA_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
+- Before: source contract S182 memetakan `awaiting_payment` ke Review estimasi,
+  tetapi alias migrasi tersebut belum diuji end-to-end pada router browser.
+- After: fixture lokal sintetis dengan status lama diarahkan dari route customer
+  tidak dikenal ke Review; estimasi tampil, export tetap tersedia, dan tidak ada
+  QRIS, rekening, status paid, atau konfirmasi pembayaran.
+- Evidence: source Studio
+  `7c3d1b2f5fb5cd1da4fdc4826667299669f602ae`; Playwright S184 1/1 dan regresi
+  estimate-only 1/1, viewport 1440x900 serta 390x844, no-overflow,
+  forced-colors/reduced-motion, dan Axe serious/critical nol dengan rule
+  `color-contrast` dikecualikan sesuai suite Review existing. Full unit 203/203,
+  format/lint/typecheck/build, budget 299,7/450 KiB, dan npm audit nol
+  vulnerability juga lulus.
+- Dampak: sesi versi lama tidak tersangkut di langkah pembayaran yang sudah
+  dihapus. Audit kontras warna Review tetap gap terpisah; deploy, activation,
+  dan authenticated UAT belum dilakukan.
+
 ## 2026-08-11 - S183 legacy-store browser hydration acceptance
 
 - Klasifikasi: `CONFIRMED`.

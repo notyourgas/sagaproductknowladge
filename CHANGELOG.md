@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-11 - SagaView S184 historical Review route acceptance
+
+- Menyinkronkan source `7c3d1b2f5fb5cd1da4fdc4826667299669f602ae`
+  sebagai acceptance browser untuk alias migrasi `awaiting_payment` ke Review
+  estimasi.
+- Klasifikasi `CONFIRMED`; Playwright alias/regresi estimate-only, unit 203/203,
+  format/lint/typecheck/build/budget, dan audit dependency lulus. Kontras warna
+  Review tetap tidak diklaim.
+- Production berubah: tidak. Status `SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; deploy dan authenticated UAT tetap gate terpisah.
+
 ## 2026-08-11 - SagaBook S188 tenant-scoped payment reconciliation
 
 - Menyinkronkan source `95a22d3bf27be9dca2e45fcbf6af5c01f40b6879`

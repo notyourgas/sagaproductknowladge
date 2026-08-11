@@ -163,6 +163,16 @@ non-payment tetap utuh. Playwright 4/4 pada desktop/mobile termasuk Axe,
 forced-colors, reduced-motion, dan no-overflow; unit 203/203, build/budget, dan
 audit dependency lulus. Production tidak berubah.
 
+S184 source `7c3d1b2f5fb5cd1da4fdc4826667299669f602ae` membuktikan alias
+`awaiting_payment` di router browser. Dengan fixture lokal sintetis yang telah
+memenuhi prasyarat foto/frame/output, route customer lama diarahkan ke Review,
+estimasi tetap tampil, export aktif, dan surface pembayaran tetap tidak ada.
+Playwright alias serta regresi estimate-only lulus pada kanal browser standar;
+desktop/mobile, no-overflow, forced-colors/reduced-motion, unit 203/203,
+build/budget, dan audit dependency lulus. Rule Axe `color-contrast` mengikuti
+pengecualian suite Review existing dan belum diklaim selesai. Production tidak
+berubah.
+
 ## Use case
 
 Provisioning, Owner Console, device activation, exclusive Studio lease,

@@ -280,6 +280,16 @@ ketika keputusan atau release baru menutup gap.
 
 ### SagaView
 
+- `CLOSED IN CANDIDATE / IMPLEMENTED_NOT_DEPLOYED`: S184 source
+  `7c3d1b2f5fb5cd1da4fdc4826667299669f602ae` membuktikan status historis
+  `awaiting_payment` masuk ke Review estimasi pada browser tanpa surface atau
+  gate pembayaran. Production tidak berubah.
+
+- `TODO / ACCESSIBILITY`: acceptance Review existing masih mengecualikan rule
+  Axe `color-contrast`. S184 membuktikan serious/critical non-kontras nol,
+  forced-colors, reduced-motion, dan no-overflow, tetapi audit/fix kontras warna
+  Review perlu slice UI tersendiri sebelum klaim a11y penuh.
+
 - `CLOSED IN CANDIDATE / IMPLEMENTED_NOT_DEPLOYED`: S183 source
   `1eb8689588ec96fb5629338c19c804bff25ec27e` membuktikan pada browser nyata
   bahwa persisted payment/QRIS/rekening/gate/status lama dibuang saat hydration,

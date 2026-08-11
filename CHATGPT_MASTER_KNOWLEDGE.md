@@ -1051,6 +1051,13 @@ rekening/gate/status lama dibuang saat hydration, status sesi kembali `idle`,
 dan setting operator non-payment tetap terjaga. Playwright 4/4 desktop/mobile/
 Axe, unit 203/203, build/budget, dan audit dependency lulus. Status tetap
 `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
+S184 source `7c3d1b2f5fb5cd1da4fdc4826667299669f602ae` menutup bukti router
+browser untuk status historis `awaiting_payment`: sesi diarahkan ke Review
+estimasi, export tidak dikunci, dan tidak ada QRIS/rekening/status paid.
+Playwright alias dan regresi estimate-only, desktop/mobile no-overflow,
+forced-colors/reduced-motion, unit 203/203, build/budget, serta audit dependency
+lulus. Kontras warna Review belum diklaim. Status `LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
 S164 source `8fe779491649328a90d91fb0bbbf88a2fcf6290a` membuat Owner
 `Kategori & Harga` lebih ringkas: tepat satu editor/aksi aktif, draft tetap
 aman ketika gagal atau berpindah panel, dan recovery copy tampil dekat aksi.
