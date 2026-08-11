@@ -1349,6 +1349,17 @@ untuk release frontend ini.
   lulus. Status `UIUX_VALIDATED / ACCESSIBILITY_VALIDATED /
   SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
   IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
+- S185 source `996344c2ef139746143480d22ca09adac82fde04` menutup jalur
+  release local-only yang tetap dapat diaudit saat GitHub Actions tidak
+  tersedia. Exact clean commit dikemas menjadi archive immutable, manifest
+  SHA-256, git bundle, dan salinan terpisah; status remote dicatat sebagai
+  `PUSHED` atau `REMOTE_PUSH_PENDING`. Contract deployment tetap memerlukan
+  approval produksi, physical UAT exact Studio/backend, build/E2E/audit,
+  atomic switch, runtime provenance, health/smoke/journal, dan rollback target
+  persisten. Focused 12/12, unit 207/207, Playwright relevan 28/28,
+  format/lint/typecheck/build/budget, audit dependency, serta package-only
+  rehearsal lulus. Status `RELEASE_TOOLING_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; source sudah `PUSHED`, production tidak berubah.
 - Saga Platform release teramati tetap
   `20260804171621-0ab9d8e`; release editor frame tidak mengubah Platform.
 - Additive migration, encrypted backup, disposable restore, candidate gate,

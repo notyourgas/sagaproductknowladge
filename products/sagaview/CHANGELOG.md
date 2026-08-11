@@ -1,5 +1,30 @@
 # SagaView Changelog
 
+## 2026-08-11 - S185 exact local commit to VPS release tooling
+
+- Klasifikasi: `CONFIRMED`.
+- Status: `RELEASE_TOOLING_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; source sudah `PUSHED`,
+  production tidak berubah.
+- Before: kontrak UAT Windows masih mengharuskan origin exact, schema test masih
+  mengunci v4, dan jalur local-only belum memiliki satu orchestrator yang
+  membuat archive immutable, manifest SHA-256, git bundle, salinan terpisah,
+  approval production, atomic switch, serta rollback target persisten.
+- After: exact commit lokal yang bersih dapat dikemas dengan status remote
+  terpisah `PUSHED` atau `REMOTE_PUSH_PENDING`. Deploy tetap fail-closed pada
+  approval, physical UAT exact Studio/backend, hash, backup source, build/E2E/
+  audit, runtime provenance, service, smoke, journal, dan rollback.
+- Evidence: source Studio
+  `996344c2ef139746143480d22ca09adac82fde04`; focused contract 12/12, full unit
+  207/207, Playwright relevan 28/28, format/lint/typecheck/build, budget
+  299,7/450 KiB, dan audit dependency nol vulnerability. Package-only final
+  memuat archive, manifest, bundle, embedded source commit/tree, serta salinan
+  kedua yang hash-nya identik.
+- Dampak: gangguan GitHub Actions tidak lagi menjadi satu-satunya penghambat
+  release aman. Deployment dan activation belum dilakukan; physical Windows
+  UAT, backup/restore produksi terbaru, rollback production, dan otorisasi
+  Andreas tetap wajib.
+
 ## 2026-08-11 - S186 Review badge contrast repair
 
 - Klasifikasi: `CONFIRMED`.

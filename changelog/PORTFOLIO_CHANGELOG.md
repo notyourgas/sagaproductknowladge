@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-11 - SagaView S185 local exact-commit release tooling
+
+- Jalur release Studio kini dapat memakai exact clean local commit ketika
+  GitHub Actions tidak tersedia, dengan archive immutable, manifest SHA-256,
+  git bundle, salinan terpisah, approval, atomic switch, dan rollback target.
+- Source `996344c2ef139746143480d22ca09adac82fde04` sudah dipush; contract 12/12,
+  unit 207/207, Playwright relevan 28/28, build/budget, audit dependency, dan
+  package-only final lulus.
+- Status `RELEASE_TOOLING_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production SagaView dan produk SagaDev lain tidak
+  berubah.
+
 ## 2026-08-11 - SagaView S186 Review contrast repair
 
 - Badge kategori berbayar Review berubah dari rasio 1,72:1 menjadi sekitar

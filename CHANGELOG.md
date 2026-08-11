@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-11 - SagaView S185 local exact-commit release tooling
+
+- Informasi `CONFIRMED` dari source SagaView
+  `996344c2ef139746143480d22ca09adac82fde04` pada branch
+  `codex/s185-sagaview-local-vps-release`; source sudah dipush.
+- Ringkasan: jalur release local-only memverifikasi clean commit, archive
+  immutable, manifest SHA-256, git bundle, salinan terpisah, status remote,
+  approval, physical UAT exact, atomic switch, health, dan rollback target.
+- Evidence: contract 12/12, unit 207/207, Playwright relevan 28/28,
+  format/lint/typecheck/build, budget 299,7/450 KiB, audit dependency nol
+  vulnerability, serta rehearsal package-only final lulus.
+- Delivery `RELEASE_TOOLING_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production, pricing, workflow
+  estimasi, API, database, dan produk SagaDev lain tidak berubah.
+
 ## 2026-08-11 - SagaView S186 Review contrast repair
 
 - Informasi `CONFIRMED` dari source SagaView

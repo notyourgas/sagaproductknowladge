@@ -182,6 +182,19 @@ zoom 200%, forced-colors, reduced-motion, fokus, offline/retry, no-overflow,
 alias historis, dan hydration legacy. Unit 203/203, format/lint/typecheck,
 build/budget, serta audit dependency juga lulus. Production tidak berubah.
 
+S185 source `996344c2ef139746143480d22ca09adac82fde04` menyediakan jalur
+release exact local commit yang tidak bergantung pada GitHub Actions sebagai
+gate tunggal. Package-only final membuktikan archive immutable, embedded
+commit/tree, manifest SHA-256, git bundle, dan salinan terpisah dengan hash
+identik. Status remote dipisahkan menjadi `PUSHED` atau
+`REMOTE_PUSH_PENDING`; deployment tetap ditolak tanpa approval Andreas,
+physical UAT exact Studio/backend, local quality gate, backup source,
+runtime provenance, service/smoke/journal, atomic switch, dan rollback target
+persisten. Focused 12/12, unit 207/207, Playwright relevan 28/28,
+format/lint/typecheck/build/budget, serta audit dependency lulus. Status
+`RELEASE_TOOLING_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+production tidak berubah.
+
 ## Use case
 
 Provisioning, Owner Console, device activation, exclusive Studio lease,

@@ -12,14 +12,14 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-11T16:19:35+07:00 |
-| Branch aktif | `main` (sinkronisasi source `codex/s186-review-color-contrast`) |
+| Waktu pembaruan terakhir | 2026-08-11T19:10:51+07:00 |
+| Branch aktif | `main` (sinkronisasi source `codex/s185-sagaview-local-vps-release`) |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `e0bff2f23a0aac5cea52c65d7e70deaaede2a8c0` |
-| Informasi terakhir disinkronkan | SagaView S186 memperbaiki kontras badge kategori berbayar Review dan menutup pengecualian Axe `color-contrast`. |
+| Baseline sebelum pembaruan | `06e7eca65894b373e414307ca68374bd87f68605` |
+| Informasi terakhir disinkronkan | SagaView S185 memvalidasi jalur release exact local commit ke VPS tanpa menjadikan GitHub Actions gate tunggal. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, fast-forward ke `main`, push, dan remote verification. |
-| Konflik | Tidak ada konflik kontrak; workflow estimasi, harga, local-first, API, schema, dan tenant boundary tetap sama. |
-| Error | Tidak ada error source. Production tidak berubah; authenticated UAT, deploy, activation, dan business readiness tetap memerlukan gate terpisah. |
+| Konflik | Tidak ada konflik kontrak; workflow estimasi, no-upload, harga, API, schema, dan tenant boundary tetap sama. |
+| Error | Tidak ada error source. Production tidak berubah; physical UAT, backup/restore, rollback production, deploy, activation, dan business readiness tetap gate terpisah. |
 
 ## File yang berubah pada sinkronisasi ini
 

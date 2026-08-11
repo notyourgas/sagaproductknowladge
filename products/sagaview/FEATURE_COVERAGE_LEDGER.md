@@ -1,6 +1,21 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 11 Agustus 2026 16:19 WIB
+Evidence cut-off: 11 Agustus 2026 19:10 WIB
+
+Local release tooling cut-off: 11 Agustus 2026 19:10 WIB. S185 Studio source
+`996344c2ef139746143480d22ca09adac82fde04` menyediakan jalur exact local
+commit menuju VPS tanpa menjadikan GitHub Actions sebagai gate tunggal.
+Worktree bersih, source commit/tree, status `PUSHED` atau
+`REMOTE_PUSH_PENDING`, archive immutable, manifest SHA-256, git bundle,
+salinan terpisah, approval production, physical UAT exact, atomic switch,
+runtime provenance, service/smoke/journal, serta rollback target persisten
+terikat dalam contract. Focused contract 12/12, unit 207/207, Playwright
+relevan 28/28, format/lint/typecheck/build, budget 299,7/450 KiB, audit
+dependency nol vulnerability, dan rehearsal package-only final lulus. Status
+`RELEASE_TOOLING_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; source sudah `PUSHED`, production
+tidak berubah. Physical Windows UAT, backup/restore produksi terbaru,
+rollback production, serta otorisasi Andreas tetap gate deploy.
 
 Review contrast cut-off: 11 Agustus 2026 16:19 WIB. S186 Studio source
 `556c2818c7629907717e245863a3ed2d86649fbe` mengganti badge kategori berbayar
