@@ -1,5 +1,29 @@
 # SagaView Changelog
 
+## 2026-08-13 - S198 Owner Changelog production-lineage recovery
+
+- Klasifikasi: `CONFIRMED`.
+- Status: `UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / COMMITTED_LOCAL /
+  PUSHED`; production tidak berubah.
+- Before: exact backend production `475db4c2` masih menampilkan seluruh
+  detail sembilan rilis sekaligus, sehingga arsip panjang dan jalur kembali ke
+  pekerjaan frame tidak langsung terlihat.
+- After: source `ff0c178fe84b36d02fc530a051b0ebc4588715c0` membawa kembali
+  progressive disclosure ke lineage production aktif: pencarian versi/isi,
+  filter jenis perubahan, tepat satu detail terbuka, hasil kosong yang dapat
+  di-reset, dan tautan kembali ke Galeri Frame yang mempertahankan konteks
+  tenant serta tab Owner. Perubahan hanya pada UI dan test; API, database,
+  foto/path/output, serta workflow pembayaran off-app tidak berubah.
+- Evidence: focused red lalu green 1/1 pada 1440x900 dan 390x844, regresi
+  navigasi terisolasi 1/1, keyboard Enter, target kontrol minimal 44 piksel,
+  no-overflow, before/after screenshot, build 5.097 modul, npm audit 0
+  vulnerability dari 311 dependency, dan diff check lulus. Chunk Owner
+  bertambah 4.367 byte mentah / 949 byte gzip.
+- Dampak: Owner dapat menemukan perubahan tanpa menggulir semua detail dan
+  kembali ke pengelolaan frame dengan konteks kerja tetap utuh. Kandidat sudah
+  dipush, tetapi belum dideploy.
+
 ## 2026-08-12 - S196 authenticated Support Hub UAT gate
 
 - Klasifikasi: `CONFIRMED`.

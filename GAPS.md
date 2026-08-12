@@ -417,6 +417,14 @@ ketika keputusan atau release baru menutup gap.
   nama, kategori, harga default/khusus, status, reload persistence, stale tab,
   failure preservation, dan sinkronisasi Studio.
 
+- `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / COMMITTED_LOCAL / PUSHED`:
+  S198 source
+  `ff0c178fe84b36d02fc530a051b0ebc4588715c0` memulihkan pencarian/filter,
+  satu detail terbuka, empty-state recovery, dan jalur kembali ke Galeri Frame
+  pada exact backend production lineage `475db4c2`. Residual: guarded deploy
+  dan authenticated Owner UAT sebelum mengubah
+  status production atau `BUSINESS_READY`.
+
 - `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: S140 identitas workspace dan
   Changelog aktif pada backend `c2a05076` / `20260807161105-c2a0507` dan Studio
   `10bcaaae` / `20260807161105-10bcaaa`; rollback S139 dipertahankan. Label

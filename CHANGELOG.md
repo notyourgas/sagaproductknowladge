@@ -1,5 +1,14 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-13 - SagaView S198 Owner Changelog production-lineage recovery
+
+- Mendokumentasikan kandidat lokal exact source
+  `ff0c178fe84b36d02fc530a051b0ebc4588715c0` untuk pencarian/filter
+  Changelog Owner, satu detail terbuka, empty-state recovery, dan tautan kembali
+  ke Galeri Frame yang mempertahankan konteks Owner.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / COMMITTED_LOCAL /
+  PUSHED`; production dan produk lain tidak berubah.
+
 ## 2026-08-13 - SagaBook cumulative local-VPS production release
 
 - Informasi `CONFIRMED` dari exact source SagaBook

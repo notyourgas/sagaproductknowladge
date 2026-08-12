@@ -366,6 +366,18 @@ tersebut dan meredaksi response record lama. Studio
    189/1.994, serta audit dependency. Status `UIUX_VALIDATED /
    SECURITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
    production S163 tidak berubah.
+   S198 source `ff0c178fe84b36d02fc530a051b0ebc4588715c0`
+   memulihkan kemampuan Changelog tersebut di atas exact backend production
+   lineage `475db4c2`, sekaligus mengarahkan aksi kembali ke Galeri Frame
+   dengan konteks tenant/admin-tab tetap utuh. Filter memakai jenis perubahan,
+   pencarian mencakup versi, judul, area, dan deskripsi, hanya satu detail rilis
+   dirender, serta hasil kosong dapat dipulihkan. Focused red-green 1/1 pada
+   1440x900 dan 390x844, regresi navigasi terisolasi 1/1, keyboard, target 44
+   piksel, no-overflow, build 5.097 modul, npm audit 0/311, dan diff check
+   lulus. Status `UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+   LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / COMMITTED_LOCAL /
+   PUSHED`; production, API, database, serta workflow pembayaran
+   off-app tidak berubah.
 
 ## Tujuan dokumen
 
