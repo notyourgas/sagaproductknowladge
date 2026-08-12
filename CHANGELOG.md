@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-12 - SagaView S195 Support Hub production re-screen
+
+- Informasi `CONFIRMED` dari exact Studio production
+  `86b04c9133fc7c28f6b4a6ff7c2aeb80d1480d58` dan backend production
+  `475db4c21b00440004d88b8f876e3eb38aea6be0`; tidak ada mutasi production.
+- Ringkasan: Studio memakai endpoint device-scoped yang aktif. Endpoint Owner
+  juga terdaftar dan lulus terautentikasi; 404 anonim adalah concealment
+  tenant/session yang disengaja, bukan routing yang hilang.
+- Evidence: unit Studio 9/9, Playwright 4/4 mobile/desktop, Axe/no-overflow/
+  focus, backend 34/34 (176 assertion), CORS 204, missing credential 422, npm
+  audit nol vulnerability, serta runtime/rollback/service/journal sehat. Fresh
+  Composer advisory refresh timeout; audit exact source sebelumnya nol.
+- Delivery `SECURITY_VALIDATED / QA_VALIDATED / PRODUCTION_SCREENED`;
+  authenticated UAT perangkat dan Owner nyata tetap residual.
+
 ## 2026-08-12 - SagaBook S196 two-pilot database rehearsal
 
 - Informasi `CONFIRMED` dari source SagaBook

@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-12 - SagaView S195 Support Hub production re-screen
+
+- Audit read-only membuktikan launcher Studio aktif memakai endpoint perangkat
+  yang tersedia; CORS 204 dan penolakan tanpa credential 422 bekerja.
+- Endpoint Owner terdaftar dan contract terautentikasi lulus. Response 404
+  anonim adalah concealment tenant/session, bukan gangguan routing Studio.
+- Unit Studio 9/9, browser 4/4 pada mobile/desktop dengan Axe/no-overflow/focus,
+  backend 34/34 (176 assertion), dan npm audit nol vulnerability lulus. Refresh
+  Composer eksternal timeout; audit exact source sebelumnya tetap nol advisory.
+- Status `SECURITY_VALIDATED / QA_VALIDATED / PRODUCTION_SCREENED`; production
+  dan produk SagaDev lain tidak berubah. Authenticated UAT nyata tetap residual.
+
 ## 2026-08-12 - SagaBook S196 two-pilot database rehearsal
 
 - Dua pilot sintetis kini dibuktikan end-to-end dari database disposable ke

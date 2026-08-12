@@ -1,5 +1,27 @@
 # SagaView Changelog
 
+## 2026-08-12 - S195 Support Hub production re-screen
+
+- Klasifikasi: `CONFIRMED`.
+- Status: `SECURITY_VALIDATED / QA_VALIDATED / PRODUCTION_SCREENED`; tidak ada
+  perubahan source atau production.
+- Before: bukti lama berupa 404 anonim pada
+  `/api/admin/support/bootstrap` masih dapat disalahartikan sebagai endpoint
+  Support Hub Studio yang hilang.
+- After: exact Studio production `86b04c9133fc7c28f6b4a6ff7c2aeb80d1480d58`
+  terbukti memakai `POST /api/admin/support/device/bootstrap` dan `/ask`.
+  Route tersebut aktif, CORS preflight 204, dan request tanpa credential
+  ditolak 422. Route Owner juga terdaftar dan lulus pada contract
+  terautentikasi; 404 anonim adalah concealment tenant/session yang benar.
+- Evidence: unit Studio 9/9, Playwright 4/4 pada 390x844 dan 1440x900,
+  Axe/no-overflow/focus/satu watermark, backend 34/34 dengan 176 assertion,
+  npm audit nol vulnerability, serta exact current/rollback, enam service,
+  health, dan journal nol error. Fresh Composer advisory refresh gagal karena
+  timeout Packagist setelah dua percobaan; audit exact source sebelumnya nol
+  advisory dan source tidak berubah.
+- Dampak: jalur Studio aktif tidak memiliki gap 404 dan boundary no-upload
+  tetap terjaga. Authenticated UAT perangkat dan Owner nyata masih residual.
+
 ## 2026-08-12 - S193 backend rollback recovery activated
 
 - Klasifikasi: `CONFIRMED`.

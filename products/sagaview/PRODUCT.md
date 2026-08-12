@@ -46,6 +46,19 @@ error nol. Status `SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
 PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated
 normal-browser UAT tetap residual sebelum `BUSINESS_READY`.
 
+Audit S195 pada 12 Agustus 2026 memverifikasi ulang Support Hub tanpa mutasi
+production. Studio aktif `86b04c9133fc7c28f6b4a6ff7c2aeb80d1480d58`
+memakai endpoint perangkat `POST /api/admin/support/device/*`; bootstrap dan
+ask menolak request tanpa credential dengan 422, sementara preflight CORS
+berhasil 204. Endpoint Owner `GET /api/admin/support/bootstrap` terdaftar dan
+lulus pada contract terautentikasi; response 404 untuk request anonim adalah
+penyamaran tenant/session yang disengaja, bukan gangguan routing. Unit Studio
+9/9, browser 4/4 pada 390x844 dan 1440x900, Axe/no-overflow/focus, backend
+34/34 dengan 176 assertion, serta npm audit nol vulnerability lulus. Launcher
+tidak otomatis mengirim folder, foto, path, editor, atau output; production
+tetap tidak berubah. Authenticated UAT pada perangkat dan Owner nyata tetap
+residual sebelum `AI_BUSINESS_READY` atau `BUSINESS_READY`.
+
 Evidence status: production deployed; activation/authenticated UAT residual;
 frame import-order,
 compact all-menu, workspace Session/Output/Izin Foto monitor besar, free drag

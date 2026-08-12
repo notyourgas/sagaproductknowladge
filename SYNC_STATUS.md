@@ -12,14 +12,23 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-12T20:03:00+07:00 |
-| Branch aktif | `main` (sinkronisasi SagaBook S196 two-pilot database rehearsal) |
+| Waktu pembaruan terakhir | 2026-08-12T20:18:00+07:00 |
+| Branch aktif | `main` (sinkronisasi SagaView S195 Support Hub production re-screen) |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `14371529a972db51fd7d9197114439fb1291cb9c` |
-| Informasi terakhir disinkronkan | SagaBook S196 `3b8ac785` membuktikan dua pilot sintetis dari database sampai output public-safe read-only; production tetap S170. |
+| Baseline sebelum pembaruan | `55f41779b5fa3316458facc3e2445c077bfc2a3d` |
+| Informasi terakhir disinkronkan | SagaView S195 membuktikan endpoint Support Hub Studio aktif dan 404 anonim Owner merupakan concealment tenant/session; production tidak berubah. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
-| Konflik | Tidak ada; branch dibuat dari exact `origin/main` setelah sinkronisasi SagaView terbaru. |
-| Error | Authenticated Owner/operator UAT dan dua studio pilot nyata masih residual; `BUSINESS_READY` belum diklaim. |
+| Konflik | Tidak ada; sinkronisasi dimulai dari exact `origin/main` terbaru. |
+| Error | Fresh Composer advisory refresh timeout; authenticated perangkat/Owner nyata masih residual dan `BUSINESS_READY` belum diklaim. |
+
+## File yang berubah pada sinkronisasi ini (SagaView S195)
+
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/CHANGELOG.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaBook S196)
 
