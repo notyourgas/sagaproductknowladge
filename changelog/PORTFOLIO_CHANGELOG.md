@@ -14,9 +14,13 @@
 - Repair rollback backend kini approval-bound, exact-release-bound, dan hanya
   boleh mengganti symlink rollback secara atomik setelah marker commit,
   struktur immutable, containment path, serta current aktif terverifikasi.
-- Source `2f008d57b24231e8159d6fe6a7082c5b951a94be` sudah dipush; focused
-  3/31, production-safety 3/129, full backend 991/11.469, Pint, syntax Bash,
-  rehearsal disposable, diff check, dan audit dependency lulus.
+- Source final `cf9ec67d7850ed9070455dcd072998889d0ac3e5` sudah dipush; focused
+  8/184, full backend 993/11.493, Pint, parser PowerShell, syntax Bash, dua
+  rehearsal disposable, diff check, audit dependency, dan preflight VPS
+  read-only lulus.
+- Preflight dikirim melalui stdin sehingga probe disk tidak diubah oleh quoting
+  PowerShell. Exact lineage, target rollback, disk, enam service, dua health
+  200, dan journal error nol terverifikasi dengan `production_mutated=no`.
 - Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PUSHED`; production,
   database, service, symlink current, dan produk SagaDev lain tidak berubah.
   Eksekusi production serta authenticated normal-browser UAT tetap residual.

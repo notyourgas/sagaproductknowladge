@@ -1,5 +1,17 @@
 # SagaView Dossier
 
+## S193 backend rollback preflight hardening
+
+Source final `cf9ec67d7850ed9070455dcd072998889d0ac3e5` menambahkan preflight
+read-only yang mengirim Bash melalui stdin, sehingga quoting PowerShell tidak
+mengubah ekspresi disk `awk`. Exact current/rollback lineage, release marker,
+containment, kapasitas disk, enam service, health backend/Studio, dan journal
+diverifikasi tanpa file remote, restart, database write, atau perubahan
+symlink. Focused 8/184, full backend 993/11.493, Pint, parser PowerShell,
+syntax Bash, dua rehearsal disposable, Composer audit nol advisory, dan
+preflight VPS read-only lulus. Status `SECURITY_VALIDATED / QA_VALIDATED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PUSHED`; production belum berubah.
+
 ## Tujuan dokumen
 
 Merangkum product, UX, business, technical, sales, dan content contract
@@ -7,7 +19,7 @@ SagaView berdasarkan runtime production aktif.
 
 ## Konteks dan status bukti
 
-- Updated: 11 Agustus 2026
+- Updated: 12 Agustus 2026
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED`
 - Business readiness: `NEEDS CONFIRMATION` untuk penjualan massal

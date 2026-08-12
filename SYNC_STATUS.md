@@ -13,21 +13,33 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Field | Nilai |
 |---|---|
 | Waktu pembaruan terakhir | 2026-08-12T13:15:00+07:00 |
-| Branch aktif | `main` (sinkronisasi SagaBook S194 refund acceptance clock recovery) |
+| Branch aktif | `main` (sinkronisasi SagaView S193 setelah SagaBook S194) |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `c4347c08f5b49980967954b2722bcda00332f848` |
-| Informasi terakhir disinkronkan | SagaBook S194 `e1c5452c` menutup fixture refund kedaluwarsa; runtime dan production tidak berubah. |
-| Status sinkronisasi | `UP TO DATE` setelah validator, push fast-forward ke `main`, dan remote verification. |
-| Konflik | Tidak ada konflik fakta; branch dibuat dari exact `origin/main` dan checkout knowledge lain tidak disentuh. |
-| Error | Tidak ada error produk baru; authenticated UAT dan dua tenant pilot tetap residual. |
+| Baseline sebelum pembaruan | `ae5112905d779131d54ab27e2afe2610d33c689c` |
+| Informasi terakhir disinkronkan | SagaView S193 `cf9ec67d` menambahkan preflight rollback read-only berbasis stdin; exact local dan VPS gate lulus, production tetap tidak berubah. |
+| Status sinkronisasi | `UP TO DATE` setelah rebase aman di atas SagaBook S194, validator, push, dan remote verification. |
+| Konflik | Konflik administratif `SYNC_STATUS.md` diselesaikan dengan mempertahankan fakta SagaBook S194; tidak ada konflik fakta produk atau source. |
+| Error | Symlink rollback backend belum dipasang dan authenticated normal-browser UAT masih residual; production tidak berubah. |
 
-## File yang berubah pada sinkronisasi ini
+## File yang berubah pada sinkronisasi sebelumnya (SagaBook S194)
 
 - `products/sagabook/PRODUCT.md`
 - `products/sagabook/CHANGELOG.md`
 - `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
+
+## File yang berubah pada sinkronisasi ini (SagaView S193)
+
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/CHANGELOG.md`
+- `products/sagaview/DOSSIER.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
 - `SYNC_STATUS.md`
 - `CHANGELOG.md`
 

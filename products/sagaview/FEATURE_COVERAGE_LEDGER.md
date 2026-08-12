@@ -1,21 +1,25 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 12 Agustus 2026 00:13 WIB
+Evidence cut-off: 12 Agustus 2026 13:01 WIB
 
-Backend rollback recovery cut-off: 12 Agustus 2026 00:13 WIB. Audit read-only
+Backend rollback recovery cut-off: 12 Agustus 2026 13:01 WIB. Audit read-only
 membuktikan backend aktif tetap `20260811190515-475db4c`, symlink rollback
 belum tersedia, dan release sebelumnya `20260810091159-f3b0774` masih utuh.
-S193 source `2f008d57b24231e8159d6fe6a7082c5b951a94be` menambahkan repair
+S193 source final `cf9ec67d7850ed9070455dcd072998889d0ac3e5` menambahkan repair
 approval-bound yang memverifikasi exact current/rollback release, marker commit,
 struktur immutable, umur release, containment path, dan atomic switch hanya
-untuk symlink rollback. Rehearsal disposable lulus untuk approval, mismatch,
-marker salah, idempotensi, serta stale-link replacement; focused 3/31,
-production-safety regression 3/129, full backend 991/11.469, Pint, syntax Bash,
-diff check, dan Composer audit nol advisory lulus. Status `SECURITY_VALIDATED /
+untuk symlink rollback, serta preflight VPS read-only yang dikirim sebagai Bash
+melalui stdin agar quoting PowerShell tidak mengubah probe disk. Rehearsal
+disposable lulus untuk approval, mismatch, marker salah, idempotensi,
+stale-link replacement, disk tidak terbaca/kurang, HTTP gagal, dan journal
+error. Focused final 8/184, full backend exact commit 993/11.493, Pint, parser
+PowerShell, syntax Bash, diff check, Composer audit nol advisory, dan preflight
+production read-only lulus. Status `SECURITY_VALIDATED /
 QA_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PUSHED`;
-production, database, service, dan symlink `current` tidak berubah. Gap berikutnya
-adalah eksekusi gate production terotorisasi dan authenticated normal-browser
-UAT sebelum `BUSINESS_READY`.
+production, database, service, symlink `current`, dan symlink `rollback` tidak
+berubah. Gap berikutnya adalah fresh backup/restore lalu eksekusi repair
+production terotorisasi dan authenticated normal-browser UAT sebelum
+`BUSINESS_READY`.
 
 Studio activation cut-off: 11 Agustus 2026 20:20 WIB. Exact local source
 `86b04c9133fc7c28f6b4a6ff7c2aeb80d1480d58` aktif sebagai release

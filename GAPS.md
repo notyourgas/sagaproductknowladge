@@ -290,12 +290,13 @@ ketika keputusan atau release baru menutup gap.
   melalui S192 dan UAT printer fisik lulus; residual adalah authenticated
   normal-browser UAT dan rollback backend sebelum `BUSINESS_READY`.
 
-- `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PUSHED`: S193 source
-  `2f008d57b24231e8159d6fe6a7082c5b951a94be` menyiapkan repair symlink
+- `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PUSHED`: S193 source final
+  `cf9ec67d7850ed9070455dcd072998889d0ac3e5` menyiapkan repair symlink
   rollback backend yang approval-bound, exact-release-bound, atomic, dan
-  tervalidasi pada filesystem disposable. Production belum berubah; gap baru
-  tertutup setelah repair dijalankan melalui gate production terotorisasi dan
-  target rollback diverifikasi tanpa mengubah symlink current atau service.
+  tervalidasi pada filesystem disposable. Preflight VPS read-only kini lulus
+  tanpa mutasi. Production belum berubah; gap baru tertutup setelah fresh
+  backup/restore lulus dan repair dijalankan melalui gate production
+  terotorisasi tanpa mengubah symlink current atau service.
 
 - `SUPERSEDED / DO_NOT_DEPLOY`: S191 source
   `6902f4b7a9ecda0b42eb9e3e77fb6b30e6f09ff1` menyatukan S185 release tooling
