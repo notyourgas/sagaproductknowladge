@@ -1,10 +1,10 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 12 Agustus 2026 13:01 WIB
+Evidence cut-off: 12 Agustus 2026 14:10 WIB
 
-Backend rollback recovery cut-off: 12 Agustus 2026 13:01 WIB. Audit read-only
-membuktikan backend aktif tetap `20260811190515-475db4c`, symlink rollback
-belum tersedia, dan release sebelumnya `20260810091159-f3b0774` masih utuh.
+Backend rollback recovery cut-off: 12 Agustus 2026 14:10 WIB. Backend aktif
+tetap `20260811190515-475db4c` dan rollback persisten kini menunjuk release
+utuh `20260810091159-f3b0774`.
 S193 source final `cf9ec67d7850ed9070455dcd072998889d0ac3e5` menambahkan repair
 approval-bound yang memverifikasi exact current/rollback release, marker commit,
 struktur immutable, umur release, containment path, dan atomic switch hanya
@@ -14,12 +14,13 @@ disposable lulus untuk approval, mismatch, marker salah, idempotensi,
 stale-link replacement, disk tidak terbaca/kurang, HTTP gagal, dan journal
 error. Focused final 8/184, full backend exact commit 993/11.493, Pint, parser
 PowerShell, syntax Bash, diff check, Composer audit nol advisory, dan preflight
-production read-only lulus. Status `SECURITY_VALIDATED /
-QA_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PUSHED`;
-production, database, service, symlink `current`, dan symlink `rollback` tidak
-berubah. Gap berikutnya adalah fresh backup/restore lalu eksekusi repair
-production terotorisasi dan authenticated normal-browser UAT sebelum
-`BUSINESS_READY`.
+production read-only lulus. Fresh encrypted backup tiga database, checksum,
+offsite round-trip, disposable restore, artifact exact-commit dengan dua
+salinan identik, remote hash, atomic rollback switch, service, health 200/200,
+journal nol, dan cleanup lulus. Status `SECURITY_VALIDATED / QA_VALIDATED /
+LOCAL_VALIDATED / PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+database, service, symlink `current`, dan Studio tidak berubah. Satu gap
+berikutnya adalah authenticated normal-browser UAT sebelum `BUSINESS_READY`.
 
 Studio activation cut-off: 11 Agustus 2026 20:20 WIB. Exact local source
 `86b04c9133fc7c28f6b4a6ff7c2aeb80d1480d58` aktif sebagai release
@@ -31,7 +32,8 @@ service, journal release, dan rollback Studio ke `20260810091159-6d7083a`
 lulus; UAT printer fisik lulus. Status `PRODUCTION_DEPLOYED /
 PRODUCTION_ACTIVATED / PUSHED`; exact commit production tersedia di branch
 remote `codex/s192-sagaview-production-source-recovery`. Authenticated normal-browser UAT
-dan symlink rollback backend masih residual. `BUSINESS_READY` belum diklaim.
+masih residual; symlink rollback backend sudah dipulihkan melalui S193.
+`BUSINESS_READY` belum diklaim.
 
 Production source recovery cut-off: 11 Agustus 2026 21:05 WIB. S192
 memverifikasi bundle recovery lengkap, checksum SHA-256 archive/bundle,

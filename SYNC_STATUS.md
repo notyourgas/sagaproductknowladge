@@ -12,14 +12,14 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-12T13:15:00+07:00 |
-| Branch aktif | `main` (sinkronisasi SagaView S193 setelah SagaBook S194) |
+| Waktu pembaruan terakhir | 2026-08-12T14:12:00+07:00 |
+| Branch aktif | `main` (aktivasi production SagaView S193) |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `ae5112905d779131d54ab27e2afe2610d33c689c` |
-| Informasi terakhir disinkronkan | SagaView S193 `cf9ec67d` menambahkan preflight rollback read-only berbasis stdin; exact local dan VPS gate lulus, production tetap tidak berubah. |
-| Status sinkronisasi | `UP TO DATE` setelah rebase aman di atas SagaBook S194, validator, push, dan remote verification. |
-| Konflik | Konflik administratif `SYNC_STATUS.md` diselesaikan dengan mempertahankan fakta SagaBook S194; tidak ada konflik fakta produk atau source. |
-| Error | Symlink rollback backend belum dipasang dan authenticated normal-browser UAT masih residual; production tidak berubah. |
+| Baseline sebelum pembaruan | `11ccc4ae80933037066fdfb6eb286c7a87616a60` |
+| Informasi terakhir disinkronkan | SagaView S193 `cf9ec67d` diaktifkan: rollback backend production kini menunjuk `20260810091159-f3b0774`; current backend dan Studio tidak berubah. |
+| Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
+| Konflik | Tidak ada. |
+| Error | Authenticated normal-browser UAT masih residual; `BUSINESS_READY` belum diklaim. |
 
 ## File yang berubah pada sinkronisasi sebelumnya (SagaBook S194)
 

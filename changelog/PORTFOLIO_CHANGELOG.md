@@ -9,7 +9,7 @@
 - Status `QA_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
   production dan produk SagaDev lain tidak berubah.
 
-## 2026-08-12 - SagaView S193 backend rollback recovery contract
+## 2026-08-12 - SagaView S193 backend rollback recovery activated
 
 - Repair rollback backend kini approval-bound, exact-release-bound, dan hanya
   boleh mengganti symlink rollback secara atomik setelah marker commit,
@@ -21,9 +21,13 @@
 - Preflight dikirim melalui stdin sehingga probe disk tidak diubah oleh quoting
   PowerShell. Exact lineage, target rollback, disk, enam service, dua health
   200, dan journal error nol terverifikasi dengan `production_mutated=no`.
-- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PUSHED`; production,
-  database, service, symlink current, dan produk SagaDev lain tidak berubah.
-  Eksekusi production serta authenticated normal-browser UAT tetap residual.
+- Fresh encrypted backup/restore tiga database, checksum, offsite round-trip,
+  artifact exact-commit, remote hash, atomic switch, service, health, journal,
+  dan cleanup lulus. Rollback backend kini menunjuk
+  `20260810091159-f3b0774`; current backend dan Studio tidak berubah.
+- Status `LOCAL_VALIDATED / PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`; database, service, produk SagaDev lain, dan source
+  runtime tidak berubah. Authenticated normal-browser UAT tetap residual.
 
 ## 2026-08-11 - SagaBook S191 authenticated UAT preflight
 

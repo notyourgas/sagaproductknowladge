@@ -1,26 +1,28 @@
 # SagaView Changelog
 
-## 2026-08-12 - S193 backend rollback recovery contract
+## 2026-08-12 - S193 backend rollback recovery activated
 
 - Klasifikasi: `CONFIRMED`.
-- Status: `SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED / PUSHED`; production tidak berubah.
+- Status: `SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED / PUSHED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
 - Before: backend aktif memiliki release sebelumnya yang masih utuh, tetapi
   symlink rollback persisten tidak tersedia sehingga recovery production belum
   mempunyai target satu langkah yang terverifikasi.
 - After: source final `cf9ec67d7850ed9070455dcd072998889d0ac3e5`
-  menambahkan repair approval-bound dan exact-release-bound serta preflight
-  read-only berbasis stdin. Probe memverifikasi current/rollback commit,
-  struktur immutable, kapasitas disk, service, health, dan journal tanpa
-  menulis file remote atau mengubah runtime.
+  menyediakan repair approval-bound dan exact-release-bound serta preflight
+  read-only berbasis stdin. Setelah fresh backup/restore lulus, archive exact
+  commit diunggah dan diverifikasi hash-nya, lalu symlink rollback dipasang
+  atomik ke `20260810091159-f3b0774` tanpa mengubah current backend
+  `20260811190515-475db4c`.
 - Evidence: focused final 8/184, full backend exact commit 993/11.493, Pint,
   parser PowerShell, syntax Bash, dua rehearsal filesystem disposable, diff
   check, Composer audit nol advisory, dan preflight VPS read-only lulus.
-  Target rollback tersedia, enam service aktif, dua health 200, journal error
-  nol, serta `production_mutated=no`.
-- Dampak: jalur repair aman sudah siap diaudit dan dijalankan melalui gate
-  production terotorisasi. Symlink production belum dipasang; authenticated
-  normal-browser UAT dan rollback backend tetap residual sebelum
+  Fresh encrypted backup tiga database, checksum, offsite round-trip,
+  disposable restore, dua salinan artifact, remote hash, enam service aktif,
+  dua health 200, journal error nol, serta cleanup artifact lulus. Database,
+  service, current backend, dan Studio tidak berubah.
+- Dampak: target rollback backend persisten kembali tersedia untuk pemulihan
+  satu langkah. Authenticated normal-browser UAT tetap residual sebelum
   `BUSINESS_READY`.
 
 ## 2026-08-11 - S192 exact production source recovery

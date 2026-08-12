@@ -11,7 +11,7 @@
 - Delivery `QA_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
   production, activation, dan business readiness tidak berubah.
 
-## 2026-08-12 - SagaView S193 backend rollback recovery contract
+## 2026-08-12 - SagaView S193 backend rollback recovery activated
 
 - Informasi `CONFIRMED` dari source SagaView final
   `cf9ec67d7850ed9070455dcd072998889d0ac3e5` pada branch
@@ -20,12 +20,14 @@
   exact-release-bound, memverifikasi marker/struktur/path/current, dan hanya
   melakukan atomic switch pada symlink rollback.
 - Evidence: focused 8/184, full backend 993/11.493, Pint, parser PowerShell,
-  syntax Bash, dua rehearsal disposable, diff check, Composer audit nol
-  advisory, dan preflight VPS read-only lulus tanpa mutasi production.
-- Delivery `SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED / PUSHED`; production, database, service, dan
-  symlink current tidak berubah. Symlink rollback production dan authenticated
-  normal-browser UAT masih residual sebelum `BUSINESS_READY`.
+  syntax Bash, dua rehearsal disposable, audit nol advisory, fresh encrypted
+  backup/restore tiga database, artifact exact, remote hash, atomic switch,
+  health 200/200, service aktif, journal nol, dan cleanup lulus.
+- Delivery `SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED / PUSHED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; rollback backend kini menunjuk
+  `20260810091159-f3b0774`. Current backend, Studio, database, dan service tidak
+  berubah. Authenticated normal-browser UAT tetap residual sebelum
+  `BUSINESS_READY`.
 
 ## 2026-08-11 - SagaBook S191 authenticated UAT preflight
 

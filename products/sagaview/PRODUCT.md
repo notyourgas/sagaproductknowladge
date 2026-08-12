@@ -36,16 +36,15 @@ tetap checkpoint UAT terakhir sebelum klaim penutupan operasional penuh.
 
 S193 source final `cf9ec67d7850ed9070455dcd072998889d0ac3e5` menyediakan kontrak
 pemulihan symlink rollback backend yang approval-bound dan terikat ke exact
-release/commit. Rehearsal filesystem disposable membuktikan approval salah,
-current mismatch, marker rollback salah, rerun idempoten, dan penggantian
-rollback lama seluruhnya fail-closed atau selesai tanpa mengubah symlink
-`current`, database, maupun service. Preflight read-only kini dikirim ke VPS
-melalui stdin, memeriksa exact lineage, kapasitas disk, service, health, dan
-journal tanpa menulis file remote; gate production read-only lulus dengan
-`production_mutated=no`. Status `SECURITY_VALIDATED / QA_VALIDATED /
-LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PUSHED`; production belum berubah
-dan symlink rollback backend masih harus dipasang melalui gate production
-terotorisasi sebelum `BUSINESS_READY`.
+release/commit. Setelah fresh encrypted backup, checksum, round-trip offsite,
+dan disposable restore lulus, repair dijalankan dari archive exact commit yang
+hash-nya diverifikasi di VPS. Backend aktif tetap
+`20260811190515-475db4c`; symlink rollback kini menunjuk
+`20260810091159-f3b0774`. Studio tetap `20260811124309-86b04c9`, database dan
+service tidak dimutasi atau direstart, health backend/Studio 200, dan journal
+error nol. Status `SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated
+normal-browser UAT tetap residual sebelum `BUSINESS_READY`.
 
 Evidence status: production deployed; activation/authenticated UAT residual;
 frame import-order,

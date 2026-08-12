@@ -921,7 +921,7 @@ clean-install npm 9, atomic switch, public smoke, runtime provenance
 terverifikasi. UAT printer fisik lulus. Status `PRODUCTION_DEPLOYED /
 PRODUCTION_ACTIVATED / PUSHED`; exact source tersedia pada branch remote
 `codex/s192-sagaview-production-source-recovery`. Authenticated normal-browser UAT
-dan rollback backend masih residual dan `BUSINESS_READY` belum diklaim.
+masih residual dan `BUSINESS_READY` belum diklaim.
 
 S193 source final `cf9ec67d7850ed9070455dcd072998889d0ac3e5` menyiapkan repair
 symlink rollback backend yang approval-bound dan exact-release-bound. Focused
@@ -931,9 +931,13 @@ lulus. Preflight dikirim sebagai Bash melalui stdin dan memverifikasi exact
 lineage, disk, service, health, serta journal tanpa mutasi. Script repair hanya
 mengganti symlink rollback secara atomik setelah current/marker/struktur/path
 terverifikasi dan tidak menyentuh database, service, jaringan, atau symlink
-current. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PUSHED`;
-production masih belum mempunyai symlink rollback sampai gate terotorisasi
-dijalankan.
+current. Fresh encrypted backup/restore tiga database, artifact exact-commit,
+remote hash, atomic switch, service, health, journal, dan cleanup lulus.
+Rollback backend production kini menunjuk `20260810091159-f3b0774`, sementara
+current backend tetap `20260811190515-475db4c` dan Studio tetap
+`20260811124309-86b04c9`. Status `LOCAL_VALIDATED / PUSHED /
+PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated normal-browser UAT
+tetap residual.
 
 Candidate kumulatif S191 source
 `6902f4b7a9ecda0b42eb9e3e77fb6b30e6f09ff1` menyatukan S185 exact local

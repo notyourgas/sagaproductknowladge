@@ -1,6 +1,6 @@
 # SagaView Dossier
 
-## S193 backend rollback preflight hardening
+## S193 backend rollback recovery activated
 
 Source final `cf9ec67d7850ed9070455dcd072998889d0ac3e5` menambahkan preflight
 read-only yang mengirim Bash melalui stdin, sehingga quoting PowerShell tidak
@@ -9,8 +9,14 @@ containment, kapasitas disk, enam service, health backend/Studio, dan journal
 diverifikasi tanpa file remote, restart, database write, atau perubahan
 symlink. Focused 8/184, full backend 993/11.493, Pint, parser PowerShell,
 syntax Bash, dua rehearsal disposable, Composer audit nol advisory, dan
-preflight VPS read-only lulus. Status `SECURITY_VALIDATED / QA_VALIDATED /
-LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PUSHED`; production belum berubah.
+preflight VPS read-only lulus. Fresh encrypted backup tiga database, checksum,
+offsite round-trip, dan disposable restore lulus sebelum archive exact commit
+diunggah dan hash-nya diverifikasi di VPS. Symlink rollback backend kemudian
+diaktifkan secara atomik ke `20260810091159-f3b0774`; current backend tetap
+`20260811190515-475db4c`, Studio tetap `20260811124309-86b04c9`, service tidak
+direstart, database tidak dimutasi, health 200/200, dan journal error nol.
+Status `SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED / PUSHED /
+PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
 
 ## Tujuan dokumen
 
@@ -30,7 +36,8 @@ SagaView berdasarkan runtime production aktif.
   clean-install npm 9, build/browser/audit, artifact immutable, backup, atomic
   switch, smoke, runtime provenance, service, journal release, dan rollback
   Studio lulus. UAT printer fisik lulus. Residual: push exact source Studio,
-  authenticated normal-browser UAT, dan symlink rollback backend.
+  authenticated normal-browser UAT. Symlink rollback backend sudah dipulihkan
+  melalui S193.
 - S191 cumulative Studio audit: `UIUX_VALIDATED /
   ACCESSIBILITY_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED /
   RELEASE_TOOLING_VALIDATED / LOCAL_VALIDATED / SUPERSEDED / DO_NOT_DEPLOY`;
