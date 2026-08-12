@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 13 Agustus 2026 00:18 WIB
+Updated: 13 Agustus 2026 05:15 WIB
 Evidence status: production source and runtime verified
 
 ## Tujuan dokumen
@@ -16,6 +16,17 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
+- Tool verifikasi release production S201 pada source
+  `948dea70c97b8e5d489e9cfb7bd5a5fe3e6acb61` sudah `PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Satu command read-only kini memeriksa exact remote
+  main, source/release aktif, manifest, rollback, service, maintenance,
+  migration, journal queue, dan tiga public smoke lalu mengeluarkan JSON
+  public-safe yang fail-closed. Full backend 1.043/1.043 (11.825 assertion),
+  contract release 15/15 (147), build, Pint, npm/Composer/OSV nol advisory,
+  positive 13/13, serta negative wrong-commit lulus tanpa mutation. Tool ini
+  memverifikasi release S199 di bawah; production tidak berubah dan
+  `BUSINESS_READY` tetap menunggu UAT nyata, dua studio pilot, serta canary
+  provider.
 - Release integrasi `20260812171125-d79c3e0` dengan exact source
   `d79c3e06830940188b9e4ee5db420d3d7e3081df` sudah
   `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / PUSHED`. Release ini

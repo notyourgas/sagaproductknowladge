@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 13 Agustus 2026 00:18 WIB
+- Updated: 13 Agustus 2026 05:15 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED` untuk workflow yang tercantum di
   [PRODUCT](PRODUCT.md)
@@ -20,6 +20,14 @@ dalam satu dokumen public-safe.
   `20260811095718-207eca8`. Exact source tersedia di remote; archive, Git
   bundle, backup/restore, migrasi, atomic activation, smoke, service, journal,
   dan rollback terverifikasi.
+- Tool operasi S201 pada source
+  `948dea70c97b8e5d489e9cfb7bd5a5fe3e6acb61` sudah dipush dan tervalidasi
+  lokal. Verifier PowerShell read-only membandingkan expected source/release/
+  rollback dengan remote dan runtime, memeriksa manifest, service,
+  maintenance, migration, journal, serta public smoke, lalu menghasilkan JSON
+  public-safe. Verifikasi positif lulus 13/13 dan input commit salah gagal
+  tertutup tanpa mutation; source ini belum dideploy dan tidak mengubah runtime
+  S199.
 - Candidate S190 1b794e533788abf384af25e489a9b016669573fd
   menutup gap fresh draft -> preview untuk preset existing. UI kini memakai
   candidate settings yang benar-benar dikembalikan server setelah save, lalu

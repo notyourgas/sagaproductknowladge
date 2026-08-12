@@ -1,5 +1,24 @@
 # SagaBook Changelog
 
+## 2026-08-13 - Read-only production release verifier S201
+
+- Perubahan `CONFIRMED`; source
+  `948dea70c97b8e5d489e9cfb7bd5a5fe3e6acb61` sudah dipush pada branch
+  `codex/s201-sagabook-production-verifier`.
+- Before: verifikasi release S199 memerlukan beberapa command manual dan rawan
+  salah menafsirkan source, manifest, service, atau smoke. After: satu command
+  read-only memvalidasi exact remote/source/release/rollback, manifest,
+  maintenance, migration, service, journal, dan tiga public smoke serta
+  mengeluarkan JSON public-safe fail-closed.
+- Evidence: full backend 1.043/1.043 (11.825 assertion), contract release 15/15
+  (147), focused verifier 1/1 (26), build, Pint, syntax/diff, npm/Composer/OSV
+  nol advisory, positive runtime check 13/13, dan negative wrong-commit lulus.
+- Status `PUSHED / SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Production tetap source S199
+  `d79c3e06830940188b9e4ee5db420d3d7e3081df`; tidak ada deploy, activation,
+  migration, data customer, atau provider traffic. UAT nyata, dua studio pilot,
+  dan provider canary tetap residual sebelum `BUSINESS_READY`.
+
 ## 2026-08-13 - Cumulative local-VPS production release S199
 
 - Perubahan `CONFIRMED`; exact source
