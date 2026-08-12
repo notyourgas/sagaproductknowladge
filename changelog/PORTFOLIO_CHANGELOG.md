@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-12 - SagaView S196 authenticated Support Hub UAT gate
+
+- Harness kandidat kini mewajibkan bukti terpisah untuk perangkat Studio dan
+  Owner terautentikasi, termasuk auth boundary, no-upload, dan review redaksi.
+- Source `42a59a139085568f61bcb9c0cf235363707748d9` sudah dipush; focused
+  8/8, full unit 207/207, build/budget, lint/typecheck/format, PowerShell
+  syntax, audit dependency, dan simulation 16 gate lulus.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production dan produk
+  SagaDev lain tidak berubah, sedangkan UAT manusia tetap residual.
+
 ## 2026-08-12 - SagaBook S197 deterministic pilot evidence ordering
 
 - Slot ordinal readiness kini stabil saat dua pilot mempunyai timestamp sama;

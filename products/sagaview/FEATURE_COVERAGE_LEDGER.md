@@ -1,6 +1,17 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 12 Agustus 2026 20:18 WIB
+Evidence cut-off: 12 Agustus 2026 21:10 WIB
+
+Authenticated Support UAT gate cut-off: 12 Agustus 2026 21:10 WIB. S196
+source `42a59a139085568f61bcb9c0cf235363707748d9` menambah dua gate kandidat
+lokal untuk perangkat Studio dan Owner terautentikasi. Keduanya wajib
+mengonfirmasi auth boundary, no-photo/path upload, dan review redaksi; finalize
+menolak pola credential/cookie/token/session/conversation identifier. Focused
+8/8, full unit 207/207, format/lint/typecheck, PowerShell syntax, build, budget
+299,7/450 KiB, audit dependency nol, serta simulation checklist 16 gate lulus.
+Status `SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED / PUSHED`; production, akun nyata, dan UAT manusia
+tidak berubah.
 
 Support Hub re-screen cut-off: 12 Agustus 2026 20:18 WIB. Audit S195 read-only
 memastikan Studio production `86b04c9133fc7c28f6b4a6ff7c2aeb80d1480d58`

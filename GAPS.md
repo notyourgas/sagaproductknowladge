@@ -8,7 +8,7 @@ diubah menjadi klaim publik sebelum ditutup dengan bukti atau keputusan owner.
 
 ## Konteks
 
-Daftar ini berlaku pada evidence cut-off 12 Agustus 2026 00:13 WIB dan harus diperbarui
+Daftar ini berlaku pada evidence cut-off 12 Agustus 2026 21:10 WIB dan harus diperbarui
 ketika keputusan atau release baru menutup gap.
 
 ## Cara memakai
@@ -280,6 +280,13 @@ ketika keputusan atau release baru menutup gap.
   terkontrol sebelum klaim `BUSINESS_READY` atau distribusi link secara luas.
 
 ### SagaView
+
+- `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PUSHED`: S196 source
+  `42a59a139085568f61bcb9c0cf235363707748d9` membuat dua gate authenticated
+  Support Hub eksplisit dan fail-closed pada harness kandidat. Bukti tetap
+  belum lengkap sampai operator/reviewer menjalankan UAT perangkat Studio dan
+  Owner sintetis serta mengonfirmasi auth boundary, no-upload, dan redaksi.
+  Production, akun nyata, dan `BUSINESS_READY` tidak berubah.
 
 - `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / PUSHED`: jalur S185
   dan perbaikan S186 aktif kumulatif pada Studio exact local

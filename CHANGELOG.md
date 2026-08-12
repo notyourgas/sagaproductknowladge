@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-12 - SagaView S196 authenticated Support Hub UAT gate
+
+- Informasi `CONFIRMED` dari source SagaView
+  `42a59a139085568f61bcb9c0cf235363707748d9`; source sudah dipush.
+- Ringkasan: physical UAT harness sekarang fail-closed bila bukti perangkat
+  atau Owner terautentikasi belum mengonfirmasi auth boundary, no-upload, dan
+  redaksi identifier sensitif.
+- Evidence: focused 8/8, full unit 207/207, format/lint/typecheck, syntax
+  PowerShell, build, budget 299,7/450 KiB, audit dependency nol, dan simulation
+  checklist 16 gate.
+- Delivery `SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PUSHED`; production dan business readiness tidak
+  berubah.
+
 ## 2026-08-12 - SagaBook S197 deterministic pilot evidence ordering
 
 - Informasi `CONFIRMED` dari source SagaBook

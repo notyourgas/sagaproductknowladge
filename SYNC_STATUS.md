@@ -12,14 +12,25 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-12T20:18:00+07:00 |
-| Branch aktif | `main` (sinkronisasi SagaBook S197 deterministic pilot ordering) |
+| Waktu pembaruan terakhir | 2026-08-12T21:10:00+07:00 |
+| Branch aktif | `main` (sinkronisasi SagaView S196 authenticated Support Hub UAT gate) |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `9861e93e14bbf164b0a96b1b165f7cfdba287dd7` |
-| Informasi terakhir disinkronkan | SagaBook S197 `0fcb3861` menstabilkan slot ordinal pilot pada timestamp sama tanpa membocorkan ID; production tetap S170. |
+| Baseline sebelum pembaruan | `1b5c0a28ebd7c840f4306105c00b67ca609c38f1` |
+| Informasi terakhir disinkronkan | SagaView S196 `42a59a1` menambah gate UAT perangkat dan Owner terautentikasi yang fail-closed pada auth, no-upload, dan redaksi; production tidak berubah. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
 | Konflik | Tidak ada; sinkronisasi dimulai dari exact `origin/main` terbaru. |
-| Error | Authenticated Owner/operator UAT dan dua studio pilot nyata masih residual; timeout refresh Composer SagaView sebelumnya tetap terdokumentasi. |
+| Error | Authenticated Support UAT manusia masih residual; timeout refresh Composer SagaView sebelumnya tetap terdokumentasi. |
+
+## File yang berubah pada sinkronisasi ini (SagaView S196)
+
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/CHANGELOG.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaBook S197)
 

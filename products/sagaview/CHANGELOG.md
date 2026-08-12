@@ -1,5 +1,23 @@
 # SagaView Changelog
 
+## 2026-08-12 - S196 authenticated Support Hub UAT gate
+
+- Klasifikasi: `CONFIRMED`.
+- Status: `SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PUSHED`; production tidak berubah.
+- Before: harness fisik belum mewajibkan bukti manusia terpisah untuk Support
+  Hub perangkat Studio dan Owner terautentikasi.
+- After: source `42a59a139085568f61bcb9c0cf235363707748d9` menambah dua gate
+  wajib. Finalize menolak auth boundary, no-photo/path upload, atau review
+  redaksi yang belum dikonfirmasi, serta pola cookie/token/session/conversation
+  identifier pada evidence teks.
+- Evidence: red-green focused 8/8, full unit 207/207, format/lint/typecheck,
+  PowerShell syntax, build, budget 299,7/450 KiB, audit dependency nol, dan
+  simulation checklist 16 gate lulus.
+- Dampak: langkah UAT nyata kini eksplisit dan fail-closed tanpa menyimpan
+  credential atau data customer. UAT manusia tetap residual dan kandidat belum
+  dideploy.
+
 ## 2026-08-12 - S195 Support Hub production re-screen
 
 - Klasifikasi: `CONFIRMED`.

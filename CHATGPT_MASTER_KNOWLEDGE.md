@@ -965,6 +965,14 @@ current backend tetap `20260811190515-475db4c` dan Studio tetap
 PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated normal-browser UAT
 tetap residual.
 
+S196 source `42a59a139085568f61bcb9c0cf235363707748d9` menambah gate
+authenticated Support Hub pada harness UAT kandidat: perangkat Studio dan Owner
+wajib membuktikan auth boundary, no-photo/path upload, serta review redaksi.
+Focused 8/8, full unit 207/207, build/budget, lint/typecheck/format,
+PowerShell syntax, audit dependency nol, dan simulation 16 gate lulus. Status
+`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PUSHED`; production dan UAT
+manusia tidak berubah.
+
 Candidate kumulatif S191 source
 `6902f4b7a9ecda0b42eb9e3e77fb6b30e6f09ff1` menyatukan S185 exact local
 release tooling dan S186 Review contrast pada satu lineage bersih yang sudah
