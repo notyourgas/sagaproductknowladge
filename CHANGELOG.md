@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-12 - SagaBook S195 public-safe pilot readiness evidence
+
+- Informasi `CONFIRMED` dari source SagaBook
+  `abe4914e560515d433186f215f6a8e753457d5d4`; source sudah dipush.
+- Ringkasan: evidence readiness dapat memakai slot ordinal dan action map
+  allowlist tanpa identitas tenant/owner, message, atau metadata mentah; command
+  dibuktikan read-only dan key dinamis menjadi `unknown_check`.
+- Evidence: focused 27/27 (154 assertion), full backend 1.040/1.040 (11.755),
+  build, Pint, syntax, diff check, dan audit npm/Composer nol advisory.
+- Delivery `ACCEPTANCE_PACK_VALIDATED / SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+  production, activation, dan business readiness tidak berubah.
+
 ## 2026-08-12 - SagaBook S194 refund acceptance clock recovery
 
 - Informasi `CONFIRMED` dari source SagaBook

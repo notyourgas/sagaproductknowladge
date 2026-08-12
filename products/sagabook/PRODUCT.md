@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 12 Agustus 2026 13:15 WIB
+Updated: 12 Agustus 2026 14:18 WIB
 Evidence status: production source and runtime verified
 
 ## Tujuan dokumen
@@ -16,6 +16,17 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
+- Candidate S195 `abe4914e560515d433186f215f6a8e753457d5d4`
+  menambahkan mode public-safe pada readiness pilot. Evidence sekarang memakai
+  slot ordinal sementara, kode blocker/warning yang di-allowlist, severity, dan
+  tindakan tetap; nama, ID, slug, email owner, URL booking, message, serta
+  metadata mentah tidak diteruskan. Key tak dikenal menjadi `unknown_check` dan
+  command dibuktikan read-only pada database disposable. Focused 27/27 (154
+  assertion), full backend 1.040/1.040 (11.755), build, Pint, syntax, diff, dan
+  audit npm/Composer lulus. Status `ACCEPTANCE_PACK_VALIDATED /
+  SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap S170 dan evidence ini tidak
+  menggantikan authenticated UAT maupun dua tenant pilot nyata.
 - Candidate S194 `e1c5452c70efbc7dec966c57e8d8fca708a7e314`
   menghilangkan time-bomb pada acceptance refund customer. Fixture yang semula
   memakai tanggal tetap dan mulai ditolak sah oleh policy 24/48 jam kini selalu

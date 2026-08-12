@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 12 Agustus 2026 13:15 WIB
+Evidence cut-off: 12 Agustus 2026 14:18 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -67,6 +67,15 @@ SaaS booking dan operasi self-photo studio. Customer melakukan booking,
 pembayaran, menerima status/reminder, dan mengelola request dari secure booking
 link. Operator mengelola calendar, task, check-in, session, payment,
 reconciliation, report, staff, tenant, dan subscription.
+
+Candidate SagaBook S195 source
+`abe4914e560515d433186f215f6a8e753457d5d4` menambahkan evidence readiness
+public-safe berbasis slot ordinal, allowlisted blocker/warning, severity, dan
+action tetap. Identitas tenant/owner, URL, message, metadata mentah, serta key
+dinamis tidak diteruskan; command dibuktikan read-only. Focused 27/27, full
+backend 1.040/1.040, build, format, dan audit dependency lulus. Status
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED; production tetap S170 dan UAT/pilot
+nyata belum selesai.
 
 Candidate SagaBook S194 source
 `e1c5452c70efbc7dec966c57e8d8fca708a7e314` membuat acceptance refund

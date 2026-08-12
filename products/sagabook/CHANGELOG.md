@@ -1,5 +1,25 @@
 # SagaBook Changelog
 
+## 2026-08-12 - Public-safe pilot readiness evidence S195
+
+- Perubahan `CONFIRMED`; workflow booking, UI, schema, permission, provider,
+  data customer, dan production tidak berubah.
+- Before: JSON readiness operator dapat membawa identitas tenant/owner dan
+  metadata/message mentah. After: opsi `--public-safe` hanya mengeluarkan slot
+  ordinal sementara, summary, blocker/warning allowlist, severity, dan action
+  tetap. Key dinamis fail-closed menjadi `unknown_check`.
+- Dua pilot sintetis mempertahankan gap yang dapat ditindaklanjuti tanpa nama,
+  ID, slug, email, URL booking, credential hint, atau identifier restricted;
+  snapshot tenant/staff/task membuktikan command tidak menulis database.
+- Source `abe4914e560515d433186f215f6a8e753457d5d4` pada branch
+  `codex/s195-sagabook-pilot-public-evidence` sudah dipush. Focused 27/27 (154
+  assertion), full backend 1.040/1.040 (11.755), build, Pint, syntax, diff, dan
+  audit npm/Composer nol advisory.
+- Status `ACCEPTANCE_PACK_VALIDATED / SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+  Production tetap S170; authenticated Owner/operator UAT dan dua tenant pilot
+  nyata masih diperlukan sebelum `BUSINESS_READY`.
+
 ## 2026-08-12 - Refund acceptance clock recovery S194
 
 - Perubahan `CONFIRMED` hanya pada fixture acceptance; workflow customer,

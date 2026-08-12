@@ -12,16 +12,16 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-12T14:12:00+07:00 |
-| Branch aktif | `main` (aktivasi production SagaView S193) |
+| Waktu pembaruan terakhir | 2026-08-12T14:18:00+07:00 |
+| Branch aktif | `main` (sinkronisasi SagaBook S195 public-safe pilot evidence) |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `11ccc4ae80933037066fdfb6eb286c7a87616a60` |
-| Informasi terakhir disinkronkan | SagaView S193 `cf9ec67d` diaktifkan: rollback backend production kini menunjuk `20260810091159-f3b0774`; current backend dan Studio tidak berubah. |
+| Baseline sebelum pembaruan | `b4c9df020ad9df414c9a912f16bbd63998553062` |
+| Informasi terakhir disinkronkan | SagaBook S195 `abe4914e` menambahkan evidence pilot public-safe dan read-only; production tetap S170. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
-| Konflik | Tidak ada. |
-| Error | Authenticated normal-browser UAT masih residual; `BUSINESS_READY` belum diklaim. |
+| Konflik | Tidak ada; branch dibuat dari exact `origin/main` setelah sinkronisasi SagaView terbaru. |
+| Error | Authenticated Owner/operator UAT dan dua tenant pilot nyata masih residual; `BUSINESS_READY` belum diklaim. |
 
-## File yang berubah pada sinkronisasi sebelumnya (SagaBook S194)
+## File yang berubah pada sinkronisasi ini (SagaBook S195)
 
 - `products/sagabook/PRODUCT.md`
 - `products/sagabook/CHANGELOG.md`
@@ -31,7 +31,7 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `SYNC_STATUS.md`
 - `CHANGELOG.md`
 
-## File yang berubah pada sinkronisasi ini (SagaView S193)
+## File yang berubah pada sinkronisasi sebelumnya (SagaView S193)
 
 - `products/sagaview/PRODUCT.md`
 - `products/sagaview/CHANGELOG.md`
