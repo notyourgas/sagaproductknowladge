@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-12 - SagaBook S194 refund acceptance clock recovery
+
+- Informasi `CONFIRMED` dari source SagaBook
+  `e1c5452c70efbc7dec966c57e8d8fca708a7e314`; source sudah dipush.
+- Ringkasan: fixture refund customer berubah dari tanggal tetap menjadi 72 jam
+  relatif agar policy 24/48 jam tetap deterministic tanpa mengubah runtime.
+- Evidence: focused refund 5/5 (32 assertion), full backend 1.038/1.038
+  (11.722), build, syntax, diff check, dan audit npm/Composer nol advisory.
+- Delivery `QA_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+  production, activation, dan business readiness tidak berubah.
+
 ## 2026-08-12 - SagaView S193 backend rollback recovery contract
 
 - Informasi `CONFIRMED` dari source SagaView

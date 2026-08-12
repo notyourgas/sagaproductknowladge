@@ -1,5 +1,22 @@
 # SagaBook Changelog
 
+## 2026-08-12 - Refund acceptance clock recovery S194
+
+- Perubahan `CONFIRMED` hanya pada fixture acceptance; workflow customer,
+  policy refund 24/48 jam, API, backend runtime, schema, permission, UI, dan
+  production tidak berubah.
+- Before: booking sintetis memakai 13 Agustus 2026 pukul 10.00 dan menjadi
+  kurang dari 24 jam saat suite berjalan 12 Agustus siang, sehingga backend
+  benar menolak 422 `refund_not_eligible`. After: sesi sintetis dihitung 72 jam
+  dari clock test sehingga kontrak refund dapat diuji stabil lintas tanggal.
+- Source `e1c5452c70efbc7dec966c57e8d8fca708a7e314` pada branch
+  `codex/s194-sagabook-refund-test-clock` sudah dipush. Focused refund 5/5 (32
+  assertion), full backend 1.038/1.038 (11.722), build, syntax, diff check, dan
+  audit npm/Composer nol advisory.
+- Status `QA_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+  Production tetap S170; S193 public-safe pilot evidence tetap belum dikomit,
+  sedangkan authenticated UAT, dua tenant pilot, dan deploy masih gate terpisah.
+
 ## 2026-08-11 - Authenticated Owner/operator UAT preflight S191 candidate
 
 - Acceptance pack `CONFIRMED`; tidak ada perubahan workflow, API, schema,

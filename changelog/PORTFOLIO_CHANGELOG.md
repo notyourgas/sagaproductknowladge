@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-08-12 - SagaBook S194 refund acceptance clock recovery
+
+- Acceptance refund customer kini memakai jadwal sintetis 72 jam relatif,
+  sehingga policy 24/48 jam tetap diuji tanpa fixture tanggal tetap yang kedaluwarsa.
+- Source `e1c5452c70efbc7dec966c57e8d8fca708a7e314` sudah dipush; focused
+  5/5, full backend 1.038/1.038, build, syntax, diff, serta audit dependency lulus.
+- Status `QA_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+  production dan produk SagaDev lain tidak berubah.
+
 ## 2026-08-12 - SagaView S193 backend rollback recovery contract
 
 - Repair rollback backend kini approval-bound, exact-release-bound, dan hanya

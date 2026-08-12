@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 11 Agustus 2026 21:18 WIB
+Updated: 12 Agustus 2026 13:15 WIB
 Evidence status: production source and runtime verified
 
 ## Tujuan dokumen
@@ -16,6 +16,14 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
+- Candidate S194 `e1c5452c70efbc7dec966c57e8d8fca708a7e314`
+  menghilangkan time-bomb pada acceptance refund customer. Fixture yang semula
+  memakai tanggal tetap dan mulai ditolak sah oleh policy 24/48 jam kini selalu
+  menjadwalkan sesi sintetis 72 jam setelah waktu test. Kebijakan refund,
+  controller, API, schema, data, UI, dan production tidak berubah. Refund
+  focused 5/5 (32 assertion), full backend 1.038/1.038 (11.722), build, syntax,
+  diff check, serta audit npm/Composer lulus. Status `QA_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S170.
 - Candidate S191 `44fc6bccc2028710dc82cd975b54cef2c9b8a1f4`
   menambahkan preflight authenticated Owner/operator memakai akun dan database
   sintetis. Sepuluh surface kritis dibaca setelah login pada 390x844 dan
