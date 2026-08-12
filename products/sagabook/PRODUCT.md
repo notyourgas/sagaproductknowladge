@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 12 Agustus 2026 14:18 WIB
+Updated: 12 Agustus 2026 20:03 WIB
 Evidence status: production source and runtime verified
 
 ## Tujuan dokumen
@@ -16,6 +16,17 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
+- Candidate S196 `3b8ac7858f80a166fc58c504a9cd9d78c89215c2`
+  menambahkan rehearsal dua pilot sintetis dari database disposable sampai
+  command public-safe. Dua subscription usable terbaca sebagai `pilot-01/02`,
+  blocker owner dan task urgent tetap dapat ditindaklanjuti, sedangkan identitas
+  tenant dan detail task/actor tidak diteruskan. Snapshot tenant, subscription,
+  staff, dan task membuktikan command read-only. Focused 5/5 (52 assertion),
+  readiness regression 14/14 (121), full backend 1.041/1.041 (11.772), build,
+  Pint, syntax, diff, serta audit npm/Composer/OSV lulus. Status
+  `ACCEPTANCE_PACK_VALIDATED / SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S170 dan
+  authenticated UAT serta dua studio pilot nyata belum selesai.
 - Candidate S195 `abe4914e560515d433186f215f6a8e753457d5d4`
   menambahkan mode public-safe pada readiness pilot. Evidence sekarang memakai
   slot ordinal sementara, kode blocker/warning yang di-allowlist, severity, dan

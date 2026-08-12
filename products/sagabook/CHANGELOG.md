@@ -1,5 +1,24 @@
 # SagaBook Changelog
 
+## 2026-08-12 - Two-pilot database rehearsal S196
+
+- Perubahan `CONFIRMED` hanya pada acceptance; workflow, UI, API runtime,
+  schema, permission, provider, data customer, dan production tidak berubah.
+- Before: dua pilot public-safe S195 dibuktikan dari array fixture dan satu
+  tenant seeded. After: dua tenant serta subscription sintetis benar-benar
+  dibaca dari database disposable melalui readiness service dan command global.
+- Output mempertahankan slot ordinal serta blocker berbeda tanpa identitas
+  tenant maupun detail task/actor; snapshot tenant/subscription/staff/task
+  sebelum-sesudah identik.
+- Source `3b8ac7858f80a166fc58c504a9cd9d78c89215c2` pada branch
+  `codex/s196-sagabook-pilot-db-rehearsal` sudah dipush. Focused 5/5 (52),
+  readiness regression 14/14 (121), full backend 1.041/1.041 (11.772), build,
+  Pint, syntax, diff, dan audit npm/Composer/OSV lulus.
+- Status `ACCEPTANCE_PACK_VALIDATED / SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+  Production tetap S170; authenticated UAT dan dua studio pilot nyata tetap
+  diperlukan sebelum `BUSINESS_READY`.
+
 ## 2026-08-12 - Public-safe pilot readiness evidence S195
 
 - Perubahan `CONFIRMED`; workflow booking, UI, schema, permission, provider,

@@ -77,6 +77,15 @@ backend 1.040/1.040, build, format, dan audit dependency lulus. Status
 LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED; production tetap S170 dan UAT/pilot
 nyata belum selesai.
 
+Candidate SagaBook S196 source
+`3b8ac7858f80a166fc58c504a9cd9d78c89215c2` membuktikan dua pilot sintetis
+end-to-end dari database disposable ke command public-safe. Slot ordinal dan
+blocker berbeda tetap tersedia tanpa identitas tenant atau detail task/actor;
+snapshot domain membuktikan read-only. Focused 5/5, readiness regression 14/14,
+full backend 1.041/1.041, build, format, dan audit dependency lulus. Status
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED; production tetap S170, sedangkan
+authenticated UAT dan dua studio pilot nyata belum selesai.
+
 Candidate SagaBook S194 source
 `e1c5452c70efbc7dec966c57e8d8fca708a7e314` membuat acceptance refund
 customer tahan perubahan tanggal dengan sesi sintetis 72 jam relatif. Kontrak

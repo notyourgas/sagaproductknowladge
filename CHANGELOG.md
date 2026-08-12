@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-12 - SagaBook S196 two-pilot database rehearsal
+
+- Informasi `CONFIRMED` dari source SagaBook
+  `3b8ac7858f80a166fc58c504a9cd9d78c89215c2`; source sudah dipush.
+- Ringkasan: dua pilot sintetis dibaca dari database sampai command public-safe;
+  slot dan blocker tetap actionable tanpa identitas, serta snapshot empat domain
+  membuktikan command tidak menulis data.
+- Evidence: focused 5/5 (52), readiness regression 14/14 (121), full backend
+  1.041/1.041 (11.772), build, Pint, syntax, diff, serta audit npm/Composer/OSV.
+- Delivery `ACCEPTANCE_PACK_VALIDATED / SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+  production, activation, dan business readiness tidak berubah.
+
 ## 2026-08-12 - SagaBook S195 public-safe pilot readiness evidence
 
 - Informasi `CONFIRMED` dari source SagaBook

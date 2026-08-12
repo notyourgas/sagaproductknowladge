@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-12 - SagaBook S196 two-pilot database rehearsal
+
+- Dua pilot sintetis kini dibuktikan end-to-end dari database disposable ke
+  output operator public-safe, dengan blocker berbeda dan tanpa identitas.
+- Source `3b8ac7858f80a166fc58c504a9cd9d78c89215c2` sudah dipush; focused 5/5,
+  readiness regression 14/14, full backend 1.041/1.041, build, format, dan audit
+  dependency lulus.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production dan produk
+  SagaDev lain tidak berubah, sedangkan UAT serta pilot nyata tetap residual.
+
 ## 2026-08-12 - SagaBook S195 public-safe pilot readiness evidence
 
 - Mode public-safe readiness kini mempertahankan blocker/action dua pilot
