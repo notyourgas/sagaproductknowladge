@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-12 - SagaBook S197 deterministic pilot evidence ordering
+
+- Informasi `CONFIRMED` dari source SagaBook
+  `0fcb3861435cfdc8865f287f5ac7d0fa31b23050`; source sudah dipush.
+- Ringkasan: tenant pilot bertimestamp sama kini mempunyai tie-breaker internal
+  stabil sebelum identitas diubah menjadi slot ordinal public-safe.
+- Evidence: red-green, focused 5/5 (53), readiness regression 14/14 (121), full
+  backend 1.041/1.041 (11.773), build, Pint, syntax, diff, dan audit dependency.
+- Delivery `ACCEPTANCE_PACK_VALIDATED / SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+  production, activation, dan business readiness tidak berubah.
+
 ## 2026-08-12 - SagaView S195 Support Hub production re-screen
 
 - Informasi `CONFIRMED` dari exact Studio production

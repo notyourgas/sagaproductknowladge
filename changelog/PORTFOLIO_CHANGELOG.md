@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-12 - SagaBook S197 deterministic pilot evidence ordering
+
+- Slot ordinal readiness kini stabil saat dua pilot mempunyai timestamp sama;
+  tie-breaker memakai ID hanya di internal dan tidak membocorkannya ke output.
+- Source `0fcb3861435cfdc8865f287f5ac7d0fa31b23050` sudah dipush; focused 5/5,
+  readiness regression 14/14, full backend 1.041/1.041, build, format, serta
+  audit dependency lulus.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production dan produk
+  SagaDev lain tidak berubah, sedangkan UAT serta pilot nyata tetap residual.
+
 ## 2026-08-12 - SagaView S195 Support Hub production re-screen
 
 - Audit read-only membuktikan launcher Studio aktif memakai endpoint perangkat

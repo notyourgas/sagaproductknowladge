@@ -1,5 +1,23 @@
 # SagaBook Changelog
 
+## 2026-08-12 - Deterministic pilot evidence ordering S197
+
+- Perubahan `CONFIRMED` pada backend readiness; workflow booking, UI, schema,
+  permission, provider, data customer, dan production tidak berubah.
+- Before: tenant pilot hanya diurutkan berdasarkan `created_at`, sehingga dua
+  tenant dengan timestamp sama tidak mempunyai tie-breaker eksplisit. After:
+  internal ID menjadi urutan kedua sebelum report mengganti identitas dengan
+  slot ordinal.
+- Red test menangkap kontrak ordering yang belum ada; green membuktikan slot dan
+  blocker stabil, identitas tetap teredaksi, serta command tetap read-only.
+- Source `0fcb3861435cfdc8865f287f5ac7d0fa31b23050` pada branch
+  `codex/s197-sagabook-pilot-stable-order` sudah dipush. Focused 5/5 (53),
+  readiness regression 14/14 (121), full backend 1.041/1.041 (11.773), build,
+  Pint, syntax, diff, dan audit npm/Composer/OSV lulus.
+- Status `ACCEPTANCE_PACK_VALIDATED / SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+  Production tetap S170; authenticated UAT dan pilot nyata masih menjadi gate.
+
 ## 2026-08-12 - Two-pilot database rehearsal S196
 
 - Perubahan `CONFIRMED` hanya pada acceptance; workflow, UI, API runtime,

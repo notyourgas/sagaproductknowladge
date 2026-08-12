@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 12 Agustus 2026 20:03 WIB
+Updated: 12 Agustus 2026 20:18 WIB
 Evidence status: production source and runtime verified
 
 ## Tujuan dokumen
@@ -16,6 +16,16 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
+- Candidate S197 `0fcb3861435cfdc8865f287f5ac7d0fa31b23050`
+  membuat mapping slot ordinal pilot deterministik saat beberapa tenant memiliki
+  timestamp pembuatan sama. Query kini memakai `created_at` lalu internal ID;
+  ID tetap tidak keluar pada report public-safe. Red-green membuktikan kontrak
+  ordering, sementara snapshot tenant/subscription/staff/task tetap identik.
+  Focused 5/5 (53 assertion), readiness regression 14/14 (121), full backend
+  1.041/1.041 (11.773), build, Pint, syntax, diff, serta audit npm/Composer/OSV
+  lulus. Status `ACCEPTANCE_PACK_VALIDATED / SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+  production tetap S170 dan UAT/pilot nyata belum selesai.
 - Candidate S196 `3b8ac7858f80a166fc58c504a9cd9d78c89215c2`
   menambahkan rehearsal dua pilot sintetis dari database disposable sampai
   command public-safe. Dua subscription usable terbaca sebagai `pilot-01/02`,
