@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-13 - SagaBook cumulative local-VPS production release
+
+- Informasi `CONFIRMED` dari exact source SagaBook
+  `d79c3e06830940188b9e4ee5db420d3d7e3081df`, release
+  `20260812171125-d79c3e0`, dan runtime VPS yang diverifikasi sesudah aktivasi.
+- Ringkasan: lineage kandidat dan perbaikan release production digabungkan,
+  dua migrasi diterapkan, serta activation dilakukan dari artifact immutable
+  tanpa bergantung pada GitHub Actions.
+- Evidence: 1.042 test backend/11.799 assertion, UAT sintetis 4/4, build,
+  audit dependency nol, encrypted backup/restore, SHA-256 archive, Git bundle,
+  source backup lokal+VPS, atomic switch, smoke, service/journal, dan rollback.
+- Delivery `PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+  `BUSINESS_READY` tetap menunggu authenticated UAT nyata, pilot, dan provider
+  canary.
+
 ## 2026-08-12 - SagaView S196 authenticated Support Hub UAT gate
 
 - Informasi `CONFIRMED` dari source SagaView

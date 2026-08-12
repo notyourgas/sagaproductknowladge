@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-13 - SagaBook cumulative production release S199
+
+- Exact source `d79c3e06830940188b9e4ee5db420d3d7e3081df` aktif sebagai
+  release `20260812171125-d79c3e0`; source sudah tersedia di remote.
+- Kandidat menggabungkan lineage runtime/acceptance terbaru dengan perbaikan
+  local-VPS release yang sudah berada di production, lalu melewati full backend,
+  build, dependency audit, UAT sintetis, backup/restore, artifact+bundle,
+  migrasi, atomic activation, public smoke, service/journal, dan rollback.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; produk SagaDev lain tidak
+  berubah. SagaBook belum `BUSINESS_READY` sampai UAT nyata, dua studio pilot,
+  dan provider canary selesai.
+
 ## 2026-08-12 - SagaView S196 authenticated Support Hub UAT gate
 
 - Harness kandidat kini mewajibkan bukti terpisah untuk perangkat Studio dan

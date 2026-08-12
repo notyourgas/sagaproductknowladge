@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 11 Agustus 2026 20:24 WIB
+- Updated: 13 Agustus 2026 00:18 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED` untuk workflow yang tercantum di
   [PRODUCT](PRODUCT.md)
@@ -15,8 +15,11 @@ dalam satu dokumen public-safe.
 - Availability empty-response recovery, manual-transfer initial-load recovery,
   dan Payment Monitor action recovery: `PRODUCTION_DEPLOYED /
   PRODUCTION_ACTIVATED`
-- Source kumulatif aktif: `f69170a7e61080f90a3bcea7df1f22f5612f0369`,
-  release `20260809153848-f69170a`, rollback `20260809083131-5c76735`.
+- Source kumulatif aktif: `d79c3e06830940188b9e4ee5db420d3d7e3081df`,
+  release `20260812171125-d79c3e0`, rollback
+  `20260811095718-207eca8`. Exact source tersedia di remote; archive, Git
+  bundle, backup/restore, migrasi, atomic activation, smoke, service, journal,
+  dan rollback terverifikasi.
 - Candidate S190 1b794e533788abf384af25e489a9b016669573fd
   menutup gap fresh draft -> preview untuk preset existing. UI kini memakai
   candidate settings yang benar-benar dikembalikan server setelah save, lalu

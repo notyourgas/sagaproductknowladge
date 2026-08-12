@@ -33,21 +33,14 @@ ketika keputusan atau release baru menutup gap.
 
 ### SagaBook
 
-- `TODO`: source kumulatif `c7f13487` sudah
-  `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` sebagai release
-  `20260808115539-c7f1348`; rollback `20260808063729-04c9b64` tersedia.
-  Recovery konflik slot S154, expiry payment hold S155, dan race aktual S156
-  aktif. Candidate gabungan `c8138517` menutup combined exit S7-S8 dengan
-  konflik slot, expiry lintas tab, race dua proses, serta retry/read-after-write
-  operator pada satu lineage. S7-S8 `EXIT_GATE_ACCEPTED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED`. Candidate payment callback `2b101b87` menutup
-  replay identik dan conflicting replay untuk `event_id` eksplisit. Candidate
-  `71eb45ba` menutup pending/expired -> paid exactly-once untuk reference
-  fallback tanpa event/audit/accounting ganda. Residual payment berikutnya
-  adalah reconciliation provider, stale multi-tab, permission-negative, dan
-  recovery UI provider.
-  `BUSINESS_READY` menunggu setup pilot dua tenant dan authenticated owner UAT;
-  subscription tenant tidak diubah.
+- `TODO`: exact source kumulatif
+  `d79c3e06830940188b9e4ee5db420d3d7e3081df` sudah
+  `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / PUSHED` sebagai release
+  `20260812171125-d79c3e0`; rollback `20260811095718-207eca8` tersedia.
+  Full gate, UAT sintetis, backup/restore, dua migrasi, smoke, service/journal,
+  dan rollback lulus. Residual bukan deploy teknis: authenticated Owner/operator
+  UAT nyata, setup dua studio pilot, dan provider canary sebelum
+  `BUSINESS_READY`; subscription tenant tidak diubah.
 
 - `TODO`: guard scope/fallback source
   `0894df00f6866688db4d053758a99d54ba4e8908` sudah production dan memisahkan

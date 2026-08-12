@@ -68,6 +68,14 @@ pembayaran, menerima status/reminder, dan mengelola request dari secure booking
 link. Operator mengelola calendar, task, check-in, session, payment,
 reconciliation, report, staff, tenant, dan subscription.
 
+Exact source `d79c3e06830940188b9e4ee5db420d3d7e3081df` aktif sebagai
+release `20260812171125-d79c3e0` dengan rollback
+`20260811095718-207eca8`. Source remote, archive immutable, Git bundle, backup
+terenkripsi/disposable restore, migrasi, atomic switch, manifest, DB audit,
+public smoke, service, journal, dan rollback terverifikasi. Status
+`PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated UAT nyata, dua
+studio pilot, dan provider canary tetap menahan `BUSINESS_READY`.
+
 Candidate SagaBook S195 source
 `abe4914e560515d433186f215f6a8e753457d5d4` menambahkan evidence readiness
 public-safe berbasis slot ordinal, allowlisted blocker/warning, severity, dan

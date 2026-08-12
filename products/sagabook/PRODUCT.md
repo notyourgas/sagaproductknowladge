@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 12 Agustus 2026 20:18 WIB
+Updated: 13 Agustus 2026 00:18 WIB
 Evidence status: production source and runtime verified
 
 ## Tujuan dokumen
@@ -16,6 +16,19 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
+- Release integrasi `20260812171125-d79c3e0` dengan exact source
+  `d79c3e06830940188b9e4ee5db420d3d7e3081df` sudah
+  `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / PUSHED`. Release ini
+  menggabungkan lineage runtime S171-S190, acceptance S191-S198, dan tooling
+  local-VPS yang sebelumnya aktif, tanpa menghilangkan perbaikan production.
+  Dua migrasi baru sudah diterapkan dan tidak ada migrasi pending. Full backend
+  1.042/1.042 (11.799 assertion), build, format file berubah, npm/Composer/OSV
+  nol advisory, UAT sintetis Owner/operator 4/4 mobile-desktop, backup
+  terenkripsi, checksum, round-trip offsite, disposable restore, archive dan
+  Git bundle, atomic switch, manifest, DB audit, smoke publik, service, journal,
+  serta rollback ke `20260811095718-207eca8` lulus. `BUSINESS_READY` belum
+  diklaim karena authenticated UAT nyata, dua studio pilot, dan canary provider
+  nyata tetap gate terpisah.
 - Candidate S197 `0fcb3861435cfdc8865f287f5ac7d0fa31b23050`
   membuat mapping slot ordinal pilot deterministik saat beberapa tenant memiliki
   timestamp pembuatan sama. Query kini memakai `created_at` lalu internal ID;
