@@ -1,5 +1,20 @@
 # SagaView Changelog
 
+## 2026-08-13 - S198 Owner Changelog production activation
+
+- Klasifikasi: `CONFIRMED`.
+- Before: Owner Changelog S198 sudah pre-activation ready tetapi belum aktif.
+- After: source `ff0c178fe84b36d02fc530a051b0ebc4588715c0` aktif sebagai
+  release `20260813152501-ff0c178`; pencarian versi/perubahan, filter jenis,
+  satu detail terbuka, empty/reset, dan kembali ke Galeri Frame tersedia.
+- Evidence: fresh AES-256 backup dan restore 149 tabel, checksum VPS/off-VPS,
+  migration tree identik, pre/post deploy-gate 6/6, atomic switch, API/login/
+  session 200, auth boundary 302, asset 200, tiga service aktif, journal 0.
+- Rollback: `20260811190515-475db4c` / `475db4c2`.
+- Status: `PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+  `BUSINESS_READY` belum diklaim tanpa UAT Owner terautentikasi. Completion
+  notifier `WA_FAILED` karena Fonnte menolak request.
+
 ## 2026-08-13 - S198 pre-activation storage blocker closed
 
 - Klasifikasi: `CONFIRMED`.

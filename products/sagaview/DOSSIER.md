@@ -1,5 +1,17 @@
 # SagaView Dossier
 
+## S198 Owner Changelog production activation
+
+Source `ff0c178fe84b36d02fc530a051b0ebc4588715c0` aktif sebagai release
+`20260813152501-ff0c178`. Fresh backup terenkripsi dipulihkan ke database
+disposable dengan 149 tabel dan checksum VPS/off-VPS identik; migration tree,
+pre/post gate 6/6, atomic switch, API/login/session, auth boundary, Owner asset,
+service, dan journal lulus. Rollback langsung adalah
+`20260811190515-475db4c`. Status `PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED`; UAT Owner terautentikasi tetap residual sebelum
+`BUSINESS_READY`. Tidak ada perubahan pada foto/path/output lokal atau kontrak
+pembayaran off-app.
+
 ## S198 pre-activation blocker closed
 
 Candidate nonaktif `20260813152501-ff0c178` sekarang memakai exact shared

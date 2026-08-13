@@ -1,6 +1,15 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 13 Agustus 2026 17:02 WIB
+Evidence cut-off: 13 Agustus 2026 18:15 WIB
+
+S198 production activation cut-off: exact source
+`ff0c178fe84b36d02fc530a051b0ebc4588715c0` aktif sebagai release
+`20260813152501-ff0c178`; rollback `20260811190515-475db4c`. Fresh backup
+terenkripsi, restore 149 tabel, checksum VPS/off-VPS, migration tree identik,
+shared storage exact, pre/post deploy-gate 6/6, atomic switch, API/login/session
+200, auth boundary 302, Owner asset 200, tiga service aktif, dan journal 0
+lulus. Status `PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+`BUSINESS_READY` menunggu UAT Owner terautentikasi.
 
 S198 pre-activation gate cut-off: candidate nonaktif
 `20260813152501-ff0c178` sudah memakai exact shared-storage link setelah

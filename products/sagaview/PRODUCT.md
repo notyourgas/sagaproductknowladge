@@ -2,6 +2,16 @@
 
 Updated: 13 Agustus 2026
 
+Owner Changelog S198 sekarang aktif di production. Source
+`ff0c178fe84b36d02fc530a051b0ebc4588715c0` berjalan sebagai release
+`20260813152501-ff0c178`; rollback langsung `20260811190515-475db4c`.
+Pencarian versi/perubahan, filter jenis, satu detail terbuka, empty/reset, dan
+navigasi kembali ke Galeri Frame tersedia. Fresh backup/restore 149 tabel,
+checksum, migration compatibility, pre/post gate 6/6, atomic switch, service,
+journal, endpoint, dan Owner asset lulus. Status `PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED`; UAT Owner terautentikasi masih diperlukan sebelum
+`BUSINESS_READY`.
+
 Blocker pre-activation S198 sudah ditutup pada kandidat nonaktif
 `20260813152501-ff0c178`. Shared-storage link kini exact, config cache dibangun
 ulang, dan deploy-gate lulus 6/6. Source tetap

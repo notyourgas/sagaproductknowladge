@@ -12,14 +12,26 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-13T18:13:00+07:00 |
-| Branch aktif | `codex/s206-sagabook-uat-evidence-contract` |
+| Waktu pembaruan terakhir | 2026-08-13T18:15:10+07:00 |
+| Branch aktif | `codex/s198-deploy-blocker-20260813` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `4e211bc4fbd78e6db5401b6921eaed8bff51a3ed` |
-| Informasi terakhir disinkronkan | SagaBook S206 memvalidasi evidence UAT Owner/operator secara public-safe dan fail-closed; actual UAT belum dilakukan dan production tetap S205. |
+| Baseline sebelum pembaruan | `0f8817c3e0f8422e9b115e866ae9ff2206eae202` |
+| Informasi terakhir disinkronkan | SagaView S198 `ff0c178f` aktif sebagai `20260813152501-ff0c178`; rollback `475db4c2`, seluruh release gate hijau. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
-| Konflik | Tidak ada; perubahan dibuat dari exact `origin/main` terbaru pada worktree terisolasi. |
-| Error | Tidak ada error tooling; UAT nyata, dua pilot, dan canary tetap residual bisnis. |
+| Konflik | Update SagaBook S206 dari `origin/main` dipertahankan melalui rebase; tidak ada informasi produk yang ditimpa. |
+| Error | Tidak ada blocker deployment; completion notifier `WA_FAILED` karena Fonnte menolak request. UAT Owner terautentikasi tetap residual. |
+
+## File yang berubah pada sinkronisasi ini (SagaView S198 production activation)
+
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/DOSSIER.md`
+- `products/sagaview/CHANGELOG.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaBook S206 UAT evidence contract)
 
@@ -27,18 +39,6 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `products/sagabook/DOSSIER.md`
 - `products/sagabook/CHANGELOG.md`
 - `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
-- `changelog/PORTFOLIO_CHANGELOG.md`
-- `CHATGPT_MASTER_KNOWLEDGE.md`
-- `GAPS.md`
-- `SYNC_STATUS.md`
-- `CHANGELOG.md`
-
-## File yang berubah pada sinkronisasi ini (SagaView S198 deploy blocker)
-
-- `products/sagaview/PRODUCT.md`
-- `products/sagaview/DOSSIER.md`
-- `products/sagaview/CHANGELOG.md`
-- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `GAPS.md`

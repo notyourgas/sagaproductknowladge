@@ -10,6 +10,15 @@
 - Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production SagaBook
   tetap S205 dan produk lain tidak berubah. Actual UAT belum dilakukan.
 
+## 2026-08-13 - SagaView S198 production activation
+
+- Owner Changelog source `ff0c178f` aktif sebagai release
+  `20260813152501-ff0c178`; rollback langsung `20260811190515-475db4c`.
+- Fresh backup/restore 149 tabel, checksum, migration compatibility, pre/post
+  gate 6/6, atomic switch, service/journal, smoke, dan asset lulus.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; SagaBook dan produk lain
+  tidak berubah. `BUSINESS_READY` menunggu UAT Owner terautentikasi.
+
 ## 2026-08-13 - SagaView S198 pre-activation blocker closed
 
 - Candidate nonaktif source `ff0c178f` sekarang memakai exact shared-storage

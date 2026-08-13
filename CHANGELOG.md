@@ -12,6 +12,18 @@
   tetap S205 dan `BUSINESS_READY` belum berubah karena actual UAT, dua pilot,
   dan provider canary belum selesai.
 
+## 2026-08-13 - SagaView S198 production activation
+
+- Exact source `ff0c178fe84b36d02fc530a051b0ebc4588715c0` aktif sebagai
+  release `20260813152501-ff0c178`; rollback langsung
+  `20260811190515-475db4c` tersedia.
+- Fresh encrypted backup, restore disposable 149 tabel, checksum VPS/off-VPS,
+  migration tree, pre/post deploy-gate 6/6, atomic switch, service, journal,
+  public smoke, dan Owner asset lulus.
+- Delivery `PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+  `BUSINESS_READY` menunggu UAT Owner terautentikasi. Notifikasi completion
+  `WA_FAILED` karena Fonnte menolak request.
+
 ## 2026-08-13 - SagaView S198 pre-activation blocker closed
 
 - Rehearsal kandidat nonaktif membuktikan shared-storage link exact setelah
