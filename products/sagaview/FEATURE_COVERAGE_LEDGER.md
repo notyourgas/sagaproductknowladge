@@ -1,6 +1,14 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 13 Agustus 2026 16:08 WIB
+Evidence cut-off: 13 Agustus 2026 17:02 WIB
+
+S198 pre-activation gate cut-off: candidate nonaktif
+`20260813152501-ff0c178` sudah memakai exact shared-storage link setelah
+path-scope repair, config cache rebuilt, dan deploy-gate lulus 6/6. Current
+`20260811190515-475db4c`, rollback `20260810091159-f3b0774`, database,
+migrasi, service, dan public endpoint tidak berubah. Status `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PREACTIVATION_READY`; aktivasi
+production belum dilakukan.
 
 S198 deploy cut-off: source Owner Changelog
 `ff0c178fe84b36d02fc530a051b0ebc4588715c0` sudah `PUSHED` dan lulus build,

@@ -974,12 +974,12 @@ Candidate gate lulus schema, route, security, tenant pilot, dan source state,
 namun gagal pada manifest backup disk lokal setelah config cache kandidat.
 Akar masalah sudah direproduksi: archive membawa direktori `storage`, sehingga
 perintah link membuat `storage/storage` dan tidak mengarahkan root disk lokal ke
-shared storage. Harness lokal sudah dikoreksi dan rehearsal disposable lulus;
-candidate gate 6/6 pada release baru tetap wajib sebelum retry production.
+shared storage. Harness lokal sudah dikoreksi; kandidat nonaktif kini memakai
+exact shared-storage link, config cache dibangun ulang, dan gate lulus 6/6.
 Backup terenkripsi, checksum/off-VPS, restore disposable 149 tabel, build, 142
 test SagaView, 13 browser regression, dan dependency audit sudah lulus.
-Status `IMPLEMENTED_NOT_DEPLOYED / BLOCKED_PREACTIVATION`; jangan retry sebelum
-release candidate baru membuktikan shared-storage link exact dan gate 6/6. Backend aktif
+Status `IMPLEMENTED_NOT_DEPLOYED / PREACTIVATION_READY`; aktivasi production
+belum dilakukan. Backend aktif
 tetap `475db4c2`, rollback `f3b0774`, dan Studio tetap `86b04c91`.
 
 Studio exact local commit

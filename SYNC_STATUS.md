@@ -12,14 +12,14 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-13T16:08:37+07:00 |
+| Waktu pembaruan terakhir | 2026-08-13T17:02:49+07:00 |
 | Branch aktif | `codex/s198-deploy-blocker-20260813` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | `24c470e4f707dd4b7144d0463c50ad0c44da4abe` |
-| Informasi terakhir disinkronkan | Akar blocker S198 adalah link shared storage bersarang dari direktori `storage` archive; harness lokal dikoreksi dan rehearsal disposable lulus, production tetap `475db4c2`. |
+| Informasi terakhir disinkronkan | Blocker S198 ditutup pada kandidat nonaktif: shared-storage link exact, config cache rebuilt, deploy-gate 6/6; production tetap `475db4c2`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
 | Konflik | Checkout main lokal yang divergen tidak disentuh; perubahan dibuat dari exact `origin/main` pada worktree terisolasi. |
-| Error | Candidate lama tetap tidak layak aktivasi; retry ditahan sampai release baru membuktikan exact shared-storage link dan gate 6/6. |
+| Error | Tidak ada blocker pre-activation yang tersisa; aktivasi production belum dilakukan dan tetap memerlukan seluruh gate release. |
 
 ## File yang berubah pada sinkronisasi ini (SagaView S198 deploy blocker)
 

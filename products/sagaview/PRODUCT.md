@@ -2,6 +2,14 @@
 
 Updated: 13 Agustus 2026
 
+Blocker pre-activation S198 sudah ditutup pada kandidat nonaktif
+`20260813152501-ff0c178`. Shared-storage link kini exact, config cache dibangun
+ulang, dan deploy-gate lulus 6/6. Source tetap
+`ff0c178fe84b36d02fc530a051b0ebc4588715c0`; status menjadi
+`IMPLEMENTED_NOT_DEPLOYED / PREACTIVATION_READY`. Production belum diaktifkan:
+current tetap `20260811190515-475db4c`, rollback
+`20260810091159-f3b0774`, dan service serta endpoint tetap sehat.
+
 Deploy kandidat Owner Changelog S198 pada 13 Agustus 2026 berhenti aman sebelum
 aktivasi. Source `ff0c178fe84b36d02fc530a051b0ebc4588715c0` sudah `PUSHED`
 dan lulus build, 142 test SagaView, 13 regresi browser terisolasi, release

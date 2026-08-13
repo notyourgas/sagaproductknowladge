@@ -1,5 +1,16 @@
 # SagaView Dossier
 
+## S198 pre-activation blocker closed
+
+Candidate nonaktif `20260813152501-ff0c178` sekarang memakai exact shared
+storage setelah harness menghapus hanya path storage kandidat yang tervalidasi,
+membuat symlink, lalu membangun config/route/view cache. Deploy-gate lulus 6/6;
+current, rollback, database, migrasi, layanan, dan endpoint production tidak
+berubah. Source tetap `ff0c178fe84b36d02fc530a051b0ebc4588715c0` dan status
+menjadi `IMPLEMENTED_NOT_DEPLOYED / PREACTIVATION_READY`. Aktivasi production,
+backup fresh, atomic switch, smoke, journal, dan rollback verification tetap
+fase terpisah.
+
 ## S198 Owner Changelog deploy blocked before activation
 
 Source `ff0c178fe84b36d02fc530a051b0ebc4588715c0` menambahkan pencarian/filter

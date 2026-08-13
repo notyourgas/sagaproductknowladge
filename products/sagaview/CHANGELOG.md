@@ -1,5 +1,19 @@
 # SagaView Changelog
 
+## 2026-08-13 - S198 pre-activation storage blocker closed
+
+- Klasifikasi: `CONFIRMED`.
+- Before: candidate gate 5/6 karena link shared storage bersarang dan manifest
+  backup tidak terlihat dari root disk lokal kandidat.
+- After: path storage kandidat nonaktif diganti dengan exact shared-storage
+  link, config cache dibangun ulang, dan deploy-gate lulus 6/6.
+- Evidence: rehearsal failure/recovery lulus, Bash syntax dan path-scope guard
+  lulus, dua salinan artifact/manifest SHA-256 identik, service aktif, API/login/
+  session HTTP 200, serta auth boundary Changelog 302.
+- Status: `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PREACTIVATION_READY`. Current `20260811190515-475db4c` dan rollback
+  `20260810091159-f3b0774` tidak berubah; belum ada cutover atau restart.
+
 ## 2026-08-13 - S198 Owner Changelog deployment blocked pre-activation
 
 - Klasifikasi: `CONFIRMED`.

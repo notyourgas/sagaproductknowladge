@@ -1,5 +1,14 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-13 - SagaView S198 pre-activation blocker closed
+
+- Rehearsal kandidat nonaktif membuktikan shared-storage link exact setelah
+  koreksi harness; config cache dibangun ulang dan deploy-gate lulus 6/6.
+- Current, rollback, database, migrasi, layanan, dan endpoint production tidak
+  berubah. Source tetap `ff0c178fe84b36d02fc530a051b0ebc4588715c0`.
+- Delivery `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PREACTIVATION_READY`; aktivasi production masih langkah terpisah.
+
 ## 2026-08-13 - SagaView S198 blocked deployment sync
 
 - Informasi `CONFIRMED` dari exact source

@@ -1,5 +1,12 @@
 # Portfolio Changelog
 
+## 2026-08-13 - SagaView S198 pre-activation blocker closed
+
+- Candidate nonaktif source `ff0c178f` sekarang memakai exact shared-storage
+  link, config cache rebuilt, dan deploy-gate lulus 6/6.
+- Current/rollback, database, migrasi, service, dan public endpoint tidak
+  berubah. Status `IMPLEMENTED_NOT_DEPLOYED / PREACTIVATION_READY`.
+
 ## 2026-08-13 - SagaView S198 deploy blocked pre-activation
 
 - Source Owner Changelog `ff0c178fe84b36d02fc530a051b0ebc4588715c0`

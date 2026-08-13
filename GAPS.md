@@ -274,15 +274,17 @@ ketika keputusan atau release baru menutup gap.
 
 ### SagaView
 
-- `BLOCKED_PREACTIVATION`: S198 Owner Changelog
+- `PREACTIVATION_READY / DEPLOYMENT PENDING`: S198 Owner Changelog
   `ff0c178fe84b36d02fc530a051b0ebc4588715c0` lulus seluruh gate lokal dan
   backup/restore disposable, tetapi candidate deploy-gate hanya 5/6 karena
   manifest backup disk lokal tidak ditemukan setelah config cache dibangun.
   Rehearsal disposable membuktikan archive menyisakan direktori `storage`, lalu
   link shared storage terbentuk bersarang sebagai `storage/storage`. Harness
   lokal sudah memaksa urutan remove path kandidat -> link shared storage ->
-  config cache -> gate. Production tetap `475db4c2`; bukti penutup yang tersisa
-  adalah candidate release baru dengan exact shared-storage link dan gate 6/6.
+  config cache -> gate. Kandidat nonaktif sudah memakai exact shared-storage
+  link dan lulus gate 6/6. Production tetap `475db4c2`; gap tersisa adalah
+  langkah aktivasi production dengan backup fresh, atomic switch, smoke,
+  service/journal check, dan rollback verification.
 
 - `CLOSED IN PRODUCTION / AUTHENTICATED UAT RESIDUAL`: audit S203 membuktikan
   S160 `28e0ab9b8159426633d88d52b68b5f713fa86aa2` merupakan ancestor backend
