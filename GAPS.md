@@ -212,8 +212,10 @@ ketika keputusan atau release baru menutup gap.
   dan 3/3 endpoint merespons 200, tetapi hanya 1/3 profil security header lulus
   karena header anti-MIME ganda pada dua halaman login. Candidate S204
   `2add43c0` sudah menetapkan edge sebagai pemilik tunggal dengan fallback
-  aplikasi dan seluruh gate lokal hijau. Residual: izin deployment exact
-  candidate, backup/rehearsal/atomic switch, lalu verifier S203 harus hijau
+  aplikasi dan seluruh gate lokal hijau. Candidate S205 `50afa6e4` juga sudah
+  membuat archive, Git bundle, metadata, dan manifest SHA-256 exact candidate
+  pada dua lokasi terpisah dengan checksum identik. Residual: izin deployment
+  exact candidate, backup/rehearsal/atomic switch, lalu verifier S203 harus hijau
   sebelum menegaskan ulang `PRODUCTION_ACTIVATED`. HSTS health `/up` tetap
   defense-in-depth terpisah.
 - `CONFIRMED`: candidate UI/UX dan auth/fallback hardening kumulatif sudah

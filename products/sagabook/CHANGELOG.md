@@ -1,5 +1,19 @@
 # SagaBook Changelog
 
+## 2026-08-13 - Exact-candidate release reproducibility S205
+
+- Informasi `CONFIRMED` dari source
+  `50afa6e4a2096f0b111714121e9fa8042c219a8e`; branch source sudah dipush.
+- Before: lineage kandidat S204 mempunyai `-PackageOnly`, tetapi bukti source
+  belum disimpan fail-closed sebagai archive, Git bundle, metadata, dan
+  manifest SHA-256 pada dua lokasi terpisah. After: tool S205 memverifikasi
+  clean HEAD, remote, path, bundle, dan checksum kedua salinan.
+- Contract 1/1 (16 assertion), full backend 1.045/1.045 (11.868), build 5.116
+  modul, format file perubahan, parser/diff, dan audit npm/Composer/OSV lulus.
+- Status `SECURITY_VALIDATED / QA_VALIDATED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Production tetap S199; activation tetap gagal
+  sampai candidate dirilis dengan izin dan verifier S203 hijau.
+
 ## 2026-08-13 - Single-owner anti-MIME header S204 candidate
 
 - Perubahan `CONFIRMED`; source

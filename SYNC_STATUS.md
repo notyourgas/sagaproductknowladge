@@ -12,14 +12,26 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-13T14:09:00+07:00 |
-| Branch aktif | `codex/s203-sagaview-owner-entitlement-ledger` (koreksi provenance Owner SagaView) |
+| Waktu pembaruan terakhir | 2026-08-13T14:20:00+07:00 |
+| Branch aktif | `codex/s205-sagabook-release-reproducibility` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `c85ba02fa64e198ad4c8156b7bce2f7c2906673f` |
-| Informasi terakhir disinkronkan | SagaView S160 `28e0ab9b` terbukti ancestor backend production `475db4c2`; Owner entitlement dikoreksi menjadi production screened. |
+| Baseline sebelum pembaruan | `60668844a0b02072d6cfd12541936acd64e2dc24` |
+| Informasi terakhir disinkronkan | SagaBook S205 `50afa6e4` menutup bukti reproducibility exact kandidat dengan archive, Git bundle, metadata, manifest SHA-256, dan dua salinan terverifikasi. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
 | Konflik | Checkout main lokal yang divergen tidak disentuh; perubahan dibuat dari exact `origin/main` pada worktree terisolasi. |
-| Error | Refresh advisory Composer timeout; dependency lock dan runtime tidak berubah. Authenticated Owner UAT sintetis tetap residual sebelum `BUSINESS_READY`. |
+| Error | Tidak ada pada sinkronisasi ini; production tetap S199 dan deployment S205 belum diizinkan. |
+
+## File yang berubah pada sinkronisasi ini (SagaBook S205 release reproducibility)
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaView S203 Owner entitlement)
 

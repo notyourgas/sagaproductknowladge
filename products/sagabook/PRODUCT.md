@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 13 Agustus 2026 13:26 WIB
+Updated: 13 Agustus 2026 14:20 WIB
 Evidence status: production provenance verified; activation security gate failed
 
 ## Tujuan dokumen
@@ -16,6 +16,17 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
+- Candidate S205 source
+  `50afa6e4a2096f0b111714121e9fa8042c219a8e` sudah `PUSHED /
+  SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Tool packaging fail-closed kini berada pada
+  lineage kandidat aktif: hanya menerima exact HEAD dari worktree bersih dan
+  remote SagaBook yang benar, lalu membuat source archive, Git bundle,
+  metadata public-safe, serta manifest SHA-256 ke dua lokasi non-nested di
+  luar worktree. Empat artefak exact commit terbukti identik di kedua lokasi;
+  full backend 1.045/1.045 (11.868 assertion), build, format file perubahan,
+  serta audit npm/Composer/OSV lulus. Production tidak berubah; paket ini bukan
+  deployment, activation, atau business readiness.
 - Candidate S204 source
   `2add43c0b7eaedf7db444ffe3a1330be9e80d813` sudah `PUSHED /
   SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /

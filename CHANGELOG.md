@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-13 - SagaBook S205 release reproducibility sync
+
+- Informasi `CONFIRMED` dari source SagaBook
+  `50afa6e4a2096f0b111714121e9fa8042c219a8e`; source sudah dipush.
+- Packaging exact candidate kini fail-closed dan menghasilkan archive, Git
+  bundle, metadata public-safe, serta manifest SHA-256 pada dua lokasi berbeda.
+- Evidence: dua salinan identik, contract 1/1, full backend 1.045/1.045
+  (11.868 assertion), build, format, dan audit dependency nol.
+- Delivery `PUSHED / SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production dan business readiness tidak berubah.
+
 ## 2026-08-13 - SagaView S203 Owner entitlement provenance sync
 
 - Informasi `CONFIRMED`: S160 `28e0ab9b` adalah ancestor backend SagaView

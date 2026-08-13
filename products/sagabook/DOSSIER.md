@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 13 Agustus 2026 13:26 WIB
+- Updated: 13 Agustus 2026 14:20 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: release S199 pernah diaktifkan, tetapi re-verifikasi S203 saat ini
   `ACTIVATION_GATE_FAILED` pada profil security header login; jangan menegaskan
@@ -50,6 +50,14 @@ dalam satu dokumen public-safe.
   sudah memiliki edge header. Candidate lulus full regression, build, format,
   dan audit dependency; belum dideploy sehingga gate activation current belum
   berubah.
+- Candidate S205 source `50afa6e4a2096f0b111714121e9fa8042c219a8e`
+  membawa packaging reproducibility ke lineage kandidat S204. Script menolak
+  worktree kotor, commit selain HEAD, remote selain SagaBook, output relatif,
+  output di dalam source, serta dua tujuan yang sama atau nested. Archive,
+  Git bundle, metadata, dan manifest SHA-256 exact commit sudah dibuat pada
+  dua lokasi terpisah dan checksum keduanya identik. Tool tidak membaca data,
+  credential, atau production dan secara eksplisit melaporkan
+  `productionDeployed=false`.
 - Candidate S190 1b794e533788abf384af25e489a9b016669573fd
   menutup gap fresh draft -> preview untuk preset existing. UI kini memakai
   candidate settings yang benar-benar dikembalikan server setelah save, lalu
