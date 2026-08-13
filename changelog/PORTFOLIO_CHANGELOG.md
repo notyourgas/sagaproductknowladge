@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-13 - SagaBook S203 public security-header verification
+
+- Source `e67757fe15cdd388b3f59f9f21faeb17849b01e7` sudah dipush. Verifier
+  memisahkan provenance deployment dari activation serta memeriksa profil
+  security header tanpa menyimpan nilai mentah.
+- Exact release S199 stabil dan 3/3 URL merespons 200, tetapi security profile
+  hanya lulus 1/3 akibat header anti-MIME ganda pada dua halaman login. Gate
+  gagal tertutup dan tidak melakukan mutation.
+- Status tooling `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PUSHED`;
+  production tidak berubah. `PRODUCTION_DEPLOYED` tetap terverifikasi, sedangkan
+  activation tidak boleh ditegaskan ulang sebelum normalisasi header dirilis
+  dan verifier hijau. Produk SagaDev lain tidak berubah.
+
 ## 2026-08-13 - SagaBook S202 stable release verification
 
 - Source `2ad6cb6d830c48347a9578f73f4ce477c89cf385` sudah dipush. Verifier kini

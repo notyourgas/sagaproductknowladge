@@ -208,12 +208,13 @@ ketika keputusan atau release baru menutup gap.
   release `20260802183533-35c8219` belum dijalankan tanpa credential.
   Exact-source regression mobile/tablet/desktop dan public production browser
   smoke sudah lulus.
-- `TODO`: normalkan HSTS pada endpoint health `/up`; route aplikasi/login yang
-  diaudit mengirim HSTS dan CSP satu kali. Normalisasi juga kontrak
-  `X-Frame-Options`: sampel login release Staff tidak mengirim header tersebut,
-  meski CSP `frame-ancestors` tetap aktif. Triage historis
-  `saga-platform-staging-monitor.service` tetap isu host terpisah; journal
-  service SagaBook pada release Staff bersih.
+- `TODO`: verifier S203 source `e67757fe` membuktikan exact release S199 stabil
+  dan 3/3 endpoint merespons 200, tetapi hanya 1/3 profil security header lulus
+  karena header anti-MIME ganda pada dua halaman login. Normalisasi konfigurasi
+  respons melalui kandidat/release berizin, lalu wajibkan verifier S203 hijau
+  sebelum menegaskan ulang `PRODUCTION_ACTIVATED`. Tidak ada mutation runtime
+  pada audit ini. HSTS health `/up` tetap defense-in-depth terpisah dan bukan
+  penyebab gate S203 gagal.
 - `CONFIRMED`: candidate UI/UX dan auth/fallback hardening kumulatif sudah
   `PRODUCTION_DEPLOYED` sebagai release `20260802002923-d9bbbac`; manifest,
   public HTTP smoke, production auth browser 6/6, matriks browser

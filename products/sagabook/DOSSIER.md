@@ -7,10 +7,11 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 13 Agustus 2026 10:12 WIB
+- Updated: 13 Agustus 2026 12:11 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
-- Activation: `PRODUCTION_ACTIVATED` untuk workflow yang tercantum di
-  [PRODUCT](PRODUCT.md)
+- Activation: release S199 pernah diaktifkan, tetapi re-verifikasi S203 saat ini
+  `ACTIVATION_GATE_FAILED` pada profil security header login; jangan menegaskan
+  ulang `PRODUCTION_ACTIVATED` sampai normalisasi dirilis dan verifier lulus
 - Business readiness: `NEEDS CONFIRMATION`
 - Availability empty-response recovery, manual-transfer initial-load recovery,
   dan Payment Monitor action recovery: `PRODUCTION_DEPLOYED /
@@ -34,6 +35,13 @@ dalam satu dokumen public-safe.
   read-only, dan tidak mengubah runtime atau database. Positive production
   check lulus 16/16; expected commit salah menghasilkan status tidak deployed/
   activated tanpa mutation.
+- Hardening S203 source `e67757fe15cdd388b3f59f9f21faeb17849b01e7`
+  menambahkan profil security header public-safe dan memisahkan provenance
+  deployment dari activation runtime. Exact runtime S199 stabil serta 3/3 URL
+  merespons 200, tetapi hanya 1/3 profil header lulus karena header anti-MIME
+  ganda pada dua halaman login. Output hanya berisi boolean/profile, tidak
+  membawa nilai header mentah, dan `mutationPerformed=false`. Tooling sudah
+  dipush; runtime belum diubah.
 - Candidate S190 1b794e533788abf384af25e489a9b016669573fd
   menutup gap fresh draft -> preview untuk preset existing. UI kini memakai
   candidate settings yang benar-benar dikembalikan server setelah save, lalu

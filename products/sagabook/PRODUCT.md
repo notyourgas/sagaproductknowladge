@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 13 Agustus 2026 10:12 WIB
-Evidence status: production source and runtime verified
+Updated: 13 Agustus 2026 12:11 WIB
+Evidence status: production provenance verified; activation security gate failed
 
 ## Tujuan dokumen
 
@@ -16,6 +16,17 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
+- Hardening verifier S203 pada source
+  `e67757fe15cdd388b3f59f9f21faeb17849b01e7` sudah `PUSHED /
+  SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Tiga public endpoint tetap merespons 200 dan
+  provenance exact source/release/rollback S199 stabil, tetapi profil security
+  header hanya lulus 1/3 karena dua halaman login mengirim header anti-MIME
+  ganda. Verifier v2 memisahkan `productionDeployed=true` dari
+  `productionActivated=false`, gagal tertutup, tidak membawa nilai header
+  mentah, dan tidak melakukan mutation. Production tidak berubah; status
+  activation tidak boleh ditegaskan ulang sampai header dinormalisasi melalui
+  release berizin dan verifier lulus. `BUSINESS_READY` tetap belum tercapai.
 - Hardening verifier S202 pada source
   `2ad6cb6d830c48347a9578f73f4ce477c89cf385` sudah `PUSHED / LOCAL_VALIDATED /
   IMPLEMENTED_NOT_DEPLOYED`. Remote main serta pasangan release/commit aktif

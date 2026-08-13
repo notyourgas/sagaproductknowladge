@@ -1,5 +1,26 @@
 # SagaBook Changelog
 
+## 2026-08-13 - Public security-header verifier S203
+
+- Perubahan `CONFIRMED`; source
+  `e67757fe15cdd388b3f59f9f21faeb17849b01e7` sudah dipush pada branch
+  `codex/s203-sagabook-header-verification`.
+- Before: verifier S202 hanya menjadikan status HTTP bagian public smoke dan
+  belum memisahkan provenance deployment dari activation runtime. After:
+  profil health/login memeriksa header public-safe secara fail-closed, required
+  URL set tidak dapat dikurangi, dan JSON hanya membawa hasil boolean/profile.
+- Evidence: full backend 1.043/1.043 (11.847 assertion), release contract
+  15/15 (169), focused 1/1 (48), PowerShell syntax, build, Pint, npm/Composer
+  nol advisory. Exact runtime stabil dan 3/3 URL merespons 200; security profile
+  1/3 karena header anti-MIME ganda pada dua halaman login. Verifier exit 1,
+  `productionDeployed=true`, `productionActivated=false`, dan tidak melakukan
+  mutation sesuai kontrak fail-closed.
+- Status tooling `PUSHED / SECURITY_VALIDATED / QA_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Production tetap exact S199 dan
+  tidak berubah; activation belum dapat ditegaskan ulang sampai normalisasi
+  header dirilis serta verifier lulus. Authenticated UAT, dua studio pilot, dan
+  provider canary tetap residual sebelum `BUSINESS_READY`.
+
 ## 2026-08-13 - Stable production verification snapshot S202
 
 - Perubahan `CONFIRMED`; source
