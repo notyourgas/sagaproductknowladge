@@ -1068,5 +1068,5 @@ keputusan pengganti.
 | Alternatif yang dipertimbangkan | Mempertahankan opening lama; menyembunyikan break/closing dari agenda; membuat entitas lomba baru; mempertahankan Grup A/B atau bracket tujuh pertandingan. |
 | Dampak | Jadwal publik, detail agenda, schedule builder, migration/archive/rollback, dan acceptance test mengikuti jam baru. Sepuluh ID lomba, peserta, roster, hasil, operator, serta relasi data dipertahankan. |
 | Pemberi keputusan | Andreas / founder |
-| Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; source `8155c070b8d2d7739020d7d399e0910db2d492c8`, Hostinger `20260813T162858Z`, Vercel `dpl_GkygEttue2MNd1kZErfhDyH29Rdp`, migration 031 |
+| Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; source `0cbde68e91d5e35779f4d5708e9c63ec29e056fe`, Hostinger `20260813T164834Z`, Vercel `dpl_Gxp1T1LCi1RfSYXo5n4qr3DtoXTm`, migration 031-032 |
 | Dokumen terkait | [AOGTIVITY Product](products/aogticvity/PRODUCT.md), [AOGTIVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTIVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |

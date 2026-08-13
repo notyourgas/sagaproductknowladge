@@ -314,10 +314,10 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:
   031 menggeser jam secara audited dan reversible tanpa membuat ulang atau
   menghapus kompetisi, peserta, roster, hasil, maupun assignment operator.
 - Rundown ini aktif melalui source runtime
-  `8155c070b8d2d7739020d7d399e0910db2d492c8`, Hostinger
-  `20260813T162858Z`, dan Vercel `dpl_GkygEttue2MNd1kZErfhDyH29Rdp`.
+  `0cbde68e91d5e35779f4d5708e9c63ec29e056fe`, Hostinger
+  `20260813T164834Z`, dan Vercel `dpl_Gxp1T1LCi1RfSYXo5n4qr3DtoXTm`.
   Backup/restore drill, 31 migration, preservation gate, dependency audit nol
-  vulnerability, dan 13/13 production-domain acceptance lulus.
+  vulnerability, 67/67 UI/WCAG, dan 14/14 production-domain acceptance lulus.
 - Security gate release juga memaksa dependency transitif `nanoid` ke versi
   patched 3.3.17; audit npm/pnpm production kembali nol vulnerability.
 - UI memakai `Pixel Matchday Arcade` yang tetap mobile-first 430 px: Plus

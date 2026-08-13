@@ -81,8 +81,8 @@ pertandingan bersama 18.50-19.20 tanpa Grup A/B, serta Awarding & Closing
 031, audit, dan rollback memakai struktur yang sama. Seluruh 10 ID kompetisi
 dan relasi data dipertahankan.
 Kontrak ini aktif melalui source runtime
-`8155c070b8d2d7739020d7d399e0910db2d492c8`, Hostinger
-`20260813T162858Z`, dan Vercel `dpl_GkygEttue2MNd1kZErfhDyH29Rdp`.
+`0cbde68e91d5e35779f4d5708e9c63ec29e056fe`, Hostinger
+`20260813T164834Z`, dan Vercel `dpl_Gxp1T1LCi1RfSYXo5n4qr3DtoXTm`.
 Gate release terbaru lulus 130 unit/API non-DB, typecheck, build, 66/66
 UI/WCAG, backup/restore disposable, dan 12/12 public-domain regression.
 Perubahan master tidak memerlukan migration MySQL; schema tetap pada migration

@@ -6,9 +6,9 @@
   Opening AOGTIVITY 15.00-15.15, Break, dan Awarding & Closing secara publik.
 - Name Tag Ripped tetap ID `cmp-10` tetapi menjadi satu pertandingan bersama
   tanpa Grup A/B; sepuluh ID kompetisi dan seluruh relasi data dipertahankan.
-- Source `8155c070b8d2d7739020d7d399e0910db2d492c8`, Hostinger
-  `20260813T162858Z`, Vercel `dpl_GkygEttue2MNd1kZErfhDyH29Rdp`, dan migration
-  031 aktif. Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; produk SagaDev
+- Source `0cbde68e91d5e35779f4d5708e9c63ec29e056fe`, Hostinger
+  `20260813T164834Z`, Vercel `dpl_Gxp1T1LCi1RfSYXo5n4qr3DtoXTm`, dan migration
+  031-032 aktif. Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; produk SagaDev
   lain tidak berubah dan business readiness AOGTIVITY tetap menunggu UAT hari-H.
 
 ## 2026-08-13 - SagaBook S206 UAT evidence contract

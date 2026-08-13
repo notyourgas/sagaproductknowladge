@@ -16,12 +16,12 @@ Nama lama dipertahankan sebagai provenance; status runtime harus eksplisit.
 - Name Tag Ripped tetap memakai ID `cmp-10`, durasi 30 menit, dan satu
   penugasan panitia, tetapi formatnya menjadi satu pertandingan bersama tanpa
   Grup A/B.
-- Source runtime `8155c070b8d2d7739020d7d399e0910db2d492c8`, migration 031,
-  Hostinger `20260813T162858Z`, dan Vercel
-  `dpl_GkygEttue2MNd1kZErfhDyH29Rdp` production-activated.
+- Source runtime `0cbde68e91d5e35779f4d5708e9c63ec29e056fe`, migration
+  031-032, Hostinger `20260813T164834Z`, dan Vercel
+  `dpl_Gxp1T1LCi1RfSYXo5n4qr3DtoXTm` production-activated.
 - Backup integrity, restore disposable, preservation seluruh ID dan relasi,
   145 test, typecheck, build, 67/67 UI/WCAG, dependency audit nol vulnerability,
-  dan 13/13 production-domain acceptance lulus. Authenticated operational UAT
+  67/67 UI/WCAG, dan 14/14 production-domain acceptance lulus. Authenticated operational UAT
   tetap residual; perubahan ini belum menjadikan produk keseluruhan
   `BUSINESS_READY`.
 
