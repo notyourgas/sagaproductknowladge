@@ -73,14 +73,16 @@ koin, serta handheld-console frame berasal dari referensi poster founder.
 Seluruh teks tetap Plus Jakarta Sans. Implementasi final aktif melalui runtime
 `c9a6702094ea36088c44040656f638d3db28da57`, Hostinger
 `20260809T075137Z`, dan Vercel `dpl_D1ubBCWkFs6ENp9CqPz5Fv25zwYE`.
-Runtime terbaru memakai kontrak rundown owner-confirmed: hadir dan mulai 14.30
-WIB, Opening Tim & Yel-yel 14.30, Sing Song 14.45, lomba 1-5 mulai 15.00,
-Break 15 menit setelah lomba ke-5 pada 16.55, lomba 6-10 mulai 17.10, dan
-Lomba 9 18.05 selama 30 menit, Lomba 10 18.35 selama 30 menit, serta Awarding
-& Closing 19.05 selama 15 menit. Estimasi selesai 19.20 WIB. Ketiga durasi ini
-confirmed melalui `DEC-059` dan tetap editable oleh admin untuk recovery
-lapangan. Schedule builder, reload API, UI publik, admin, migration MySQL 027,
-audit, dan rollback memakai struktur yang sama.
+Runtime terbaru memakai kontrak rundown owner-confirmed `DEC-075`: Registrasi
+& Perkenalan Tim 14.30-15.00, Opening AOGTIVITY 15.00-15.15, lomba 1-5 mulai
+15.15, Break 17.15-17.30, lomba 6-10 mulai 17.30, Name Tag Ripped sebagai satu
+pertandingan bersama 18.50-19.20 tanpa Grup A/B, serta Awarding & Closing
+19.20-19.35. Schedule builder, reload API, UI publik, admin, migration MySQL
+031, audit, dan rollback memakai struktur yang sama. Seluruh 10 ID kompetisi
+dan relasi data dipertahankan.
+Kontrak ini aktif melalui source runtime
+`8155c070b8d2d7739020d7d399e0910db2d492c8`, Hostinger
+`20260813T162858Z`, dan Vercel `dpl_GkygEttue2MNd1kZErfhDyH29Rdp`.
 Gate release terbaru lulus 130 unit/API non-DB, typecheck, build, 66/66
 UI/WCAG, backup/restore disposable, dan 12/12 public-domain regression.
 Perubahan master tidak memerlukan migration MySQL; schema tetap pada migration

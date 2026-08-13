@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-13 - AOGTIVITY opening dan Name Tag single match production
+
+- Rundown aktif kini menampilkan Registrasi & Perkenalan Tim 14.30-15.00,
+  Opening AOGTIVITY 15.00-15.15, Break, dan Awarding & Closing secara publik.
+- Name Tag Ripped tetap ID `cmp-10` tetapi menjadi satu pertandingan bersama
+  tanpa Grup A/B; sepuluh ID kompetisi dan seluruh relasi data dipertahankan.
+- Source `8155c070b8d2d7739020d7d399e0910db2d492c8`, Hostinger
+  `20260813T162858Z`, Vercel `dpl_GkygEttue2MNd1kZErfhDyH29Rdp`, dan migration
+  031 aktif. Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; produk SagaDev
+  lain tidak berubah dan business readiness AOGTIVITY tetap menunggu UAT hari-H.
+
 ## 2026-08-13 - SagaBook S206 UAT evidence contract
 
 - Tool public-safe memvalidasi exact source/release, Owner/operator, surface,

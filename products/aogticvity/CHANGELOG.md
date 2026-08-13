@@ -8,6 +8,23 @@ Mencatat perubahan material AOGTIVITY/AOGTICVITY/17an/Olimpiade.
 
 Nama lama dipertahankan sebagai provenance; status runtime harus eksplisit.
 
+## 2026-08-13 - Opening transparan dan Name Tag Ripped satu pertandingan
+
+- `CONFIRMED` melalui `DEC-075`: Registrasi & Perkenalan Tim berlangsung
+  14.30-15.00, Opening AOGTIVITY 15.00-15.15, Break 17.15-17.30, dan Awarding
+  & Closing 19.20-19.35; seluruh baris non-lomba ikut tampil di agenda publik.
+- Name Tag Ripped tetap memakai ID `cmp-10`, durasi 30 menit, dan satu
+  penugasan panitia, tetapi formatnya menjadi satu pertandingan bersama tanpa
+  Grup A/B.
+- Source runtime `8155c070b8d2d7739020d7d399e0910db2d492c8`, migration 031,
+  Hostinger `20260813T162858Z`, dan Vercel
+  `dpl_GkygEttue2MNd1kZErfhDyH29Rdp` production-activated.
+- Backup integrity, restore disposable, preservation seluruh ID dan relasi,
+  145 test, typecheck, build, 67/67 UI/WCAG, dependency audit nol vulnerability,
+  dan 13/13 production-domain acceptance lulus. Authenticated operational UAT
+  tetap residual; perubahan ini belum menjadikan produk keseluruhan
+  `BUSINESS_READY`.
+
 ## 2026-08-10 - Permanent participant access dan WA Manual
 
 - `CONFIRMED` melalui `DEC-072`: peserta Approved memperoleh link personal

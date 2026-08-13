@@ -1056,3 +1056,17 @@ keputusan pengganti.
 | Pemberi keputusan | Andreas / founder |
 | Status | `CONFIRMED / UIUX_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; source `e70b2389a7488d7e9d30a399cb1863a8bd8fc4dc` |
 | Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [SagaBook Changelog](products/sagabook/CHANGELOG.md), [SagaBook Ledger](products/sagabook/FEATURE_COVERAGE_LEDGER.md) |
+
+## DEC-075 - AOGTIVITY menambah opening transparan dan satu pertandingan Name Tag Ripped
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-13 |
+| Topik | Rundown acara dan format Name Tag Ripped |
+| Keputusan | Registrasi & Perkenalan Tim berlangsung 14.30-15.00, Opening AOGTIVITY 15.00-15.15, lima lomba lalu Break 15 menit, lima lomba berikutnya, dan Awarding & Closing 19.20-19.35. Break serta closing tampil di agenda publik. Name Tag Ripped tetap ID `cmp-10` dan durasi 30 menit, tetapi menjadi satu pertandingan bersama tanpa Grup A/B. |
+| Alasan | Founder membutuhkan rundown transparan bagi peserta serta format Name Tag Ripped yang lebih sederhana tanpa pembagian dua grup. |
+| Alternatif yang dipertimbangkan | Mempertahankan opening lama; menyembunyikan break/closing dari agenda; membuat entitas lomba baru; mempertahankan Grup A/B atau bracket tujuh pertandingan. |
+| Dampak | Jadwal publik, detail agenda, schedule builder, migration/archive/rollback, dan acceptance test mengikuti jam baru. Sepuluh ID lomba, peserta, roster, hasil, operator, serta relasi data dipertahankan. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; source `8155c070b8d2d7739020d7d399e0910db2d492c8`, Hostinger `20260813T162858Z`, Vercel `dpl_GkygEttue2MNd1kZErfhDyH29Rdp`, migration 031 |
+| Dokumen terkait | [AOGTIVITY Product](products/aogticvity/PRODUCT.md), [AOGTIVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTIVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |

@@ -12,14 +12,25 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-13T18:15:10+07:00 |
-| Branch aktif | `codex/s198-deploy-blocker-20260813` |
+| Waktu pembaruan terakhir | 2026-08-13T23:35:00+07:00 |
+| Branch aktif | `codex/aogtivity-knowledge-opening` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `0f8817c3e0f8422e9b115e866ae9ff2206eae202` |
-| Informasi terakhir disinkronkan | SagaView S198 `ff0c178f` aktif sebagai `20260813152501-ff0c178`; rollback `475db4c2`, seluruh release gate hijau. |
+| Baseline sebelum pembaruan | `4dcc35074c7f1e7db60a3b333008e75d4e0a55b3` |
+| Informasi terakhir disinkronkan | AOGTIVITY source `8155c070` aktif dengan Registrasi & Perkenalan Tim, Opening AOGTIVITY, break/closing publik, dan Name Tag Ripped satu pertandingan. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
-| Konflik | Update SagaBook S206 dari `origin/main` dipertahankan melalui rebase; tidak ada informasi produk yang ditimpa. |
-| Error | Tidak ada blocker deployment; completion notifier `WA_FAILED` karena Fonnte menolak request. UAT Owner terautentikasi tetap residual. |
+| Konflik | Worktree utama lokal tertinggal dan memiliki commit lokal; sinkronisasi dilakukan dari worktree terisolasi berbasis `origin/main` tanpa menimpa histori tersebut. |
+| Error | Tidak ada blocker deployment. Authenticated operational UAT AOGTIVITY tetap residual. |
+
+## File yang berubah pada sinkronisasi ini (AOGTIVITY opening dan Name Tag single match)
+
+- `products/aogticvity/PRODUCT.md`
+- `products/aogticvity/DOSSIER.md`
+- `products/aogticvity/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `DECISIONS.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaView S198 production activation)
 

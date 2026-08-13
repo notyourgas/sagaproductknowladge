@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-13 - AOGTIVITY opening dan Name Tag single match sync
+
+- Informasi `CONFIRMED` dari Andreas dan runtime exact source
+  `8155c070b8d2d7739020d7d399e0910db2d492c8`.
+- Rundown publik kini memuat Registrasi & Perkenalan Tim 14.30-15.00, Opening
+  AOGTIVITY 15.00-15.15, Break 17.15-17.30, serta Awarding & Closing
+  19.20-19.35. Name Tag Ripped tetap ID `cmp-10` dan berubah menjadi satu
+  pertandingan bersama tanpa Grup A/B.
+- Migration 031, Hostinger `20260813T162858Z`, dan Vercel
+  `dpl_GkygEttue2MNd1kZErfhDyH29Rdp` aktif setelah backup/restore, preservation,
+  build, audit, UI/WCAG, dan production-domain gate lulus.
+- Delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated
+  operational UAT dan `BUSINESS_READY` tetap residual.
+
 ## 2026-08-13 - SagaBook S206 UAT evidence contract sync
 
 - Informasi `CONFIRMED` dari exact source

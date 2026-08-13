@@ -307,14 +307,17 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:
   petir, spark, koin, handheld-console frame, serta hierarchy nama
   **AOGTIVITY / 17 Agustus 2026 / Army of God Madiun**. Theme ini aktif pada
   Hostinger `20260809T075137Z` dan Vercel `dpl_D1ubBCWkFs6ENp9CqPz5Fv25zwYE`.
-- Rundown owner-confirmed terbaru menyamakan waktu hadir dan waktu mulai
-  menjadi 14.30 WIB (`DEC-063`): Opening Tim & Yel-yel 15 menit, Sing
-  Song 15 menit, lima lomba, Break 15 menit, lima lomba, lalu Awarding &
-  Closing. `DEC-059` mengunci Lomba 9 dan Lomba 10 masing-masing 30 menit,
-  serta Awarding & Closing 15 menit. Lomba pertama mulai 15.00, Lomba 9
-  18.05, Lomba 10 18.35, Awarding & Closing 19.05, dan estimasi selesai
-  19.20 WIB. Migration 027 mengubah durasi/jam secara audited dan reversible
-  tanpa menghapus peserta, hasil, atau assignment operator.
+- Rundown owner-confirmed terbaru (`DEC-075`) memakai Registrasi & Perkenalan
+  Tim 14.30-15.00, Opening AOGTIVITY 15.00-15.15, lima lomba, Break 15 menit,
+  lima lomba, lalu Awarding & Closing 19.20-19.35. Name Tag Ripped tetap ID
+  `cmp-10`, tetapi menjadi satu pertandingan bersama tanpa Grup A/B. Migration
+  031 menggeser jam secara audited dan reversible tanpa membuat ulang atau
+  menghapus kompetisi, peserta, roster, hasil, maupun assignment operator.
+- Rundown ini aktif melalui source runtime
+  `8155c070b8d2d7739020d7d399e0910db2d492c8`, Hostinger
+  `20260813T162858Z`, dan Vercel `dpl_GkygEttue2MNd1kZErfhDyH29Rdp`.
+  Backup/restore drill, 31 migration, preservation gate, dependency audit nol
+  vulnerability, dan 13/13 production-domain acceptance lulus.
 - Security gate release juga memaksa dependency transitif `nanoid` ke versi
   patched 3.3.17; audit npm/pnpm production kembali nol vulnerability.
 - UI memakai `Pixel Matchday Arcade` yang tetap mobile-first 430 px: Plus

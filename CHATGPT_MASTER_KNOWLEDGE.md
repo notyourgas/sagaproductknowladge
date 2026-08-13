@@ -1913,8 +1913,8 @@ idempotency, rate limit, receipt, audit, dan admin verification desk; participan
 fixture serta localStorage registration telah dihapus.
 Nama kanonik produk berubah dari AOGTICVITY menjadi AOGTIVITY pada 6 Agustus
 2026. Runtime terbaru aktif melalui source
-`e35accbbdb9d220d4e1ac432ab1c5d06d40397e1`, Hostinger
-`20260809T155737Z`, dan Vercel `dpl_J7P2d2iUfsrv23ZP5EpahfypLeXz`.
+`8155c070b8d2d7739020d7d399e0910db2d492c8`, Hostinger
+`20260813T162858Z`, dan Vercel `dpl_GkygEttue2MNd1kZErfhDyH29Rdp`.
 Domain `aogticvities.fun` serta slug infrastruktur `aogticvity` tetap dipakai
 untuk kompatibilitas; AOGTICVITY hanya nama historis.
 Runtime ini menggabungkan visual event berdasarkan poster founder dan rundown
@@ -1922,19 +1922,17 @@ owner-confirmed. Hierarchy
 utama adalah AOGTIVITY / 17 Agustus 2026 / Army of God Madiun, dengan palette
 lime, navy, magenta, halftone, petir, spark, koin, serta handheld-console frame;
 Plus Jakarta Sans dan canvas mobile-first tetap dipertahankan. Keputusan terbaru
-`DEC-063` menyamakan waktu hadir dan mulai menjadi 14.30 WIB; struktur
-`DEC-058` tetap dipakai dengan Opening Tim & Yel-yel 15 menit,
-Sing Song 15 menit, lima lomba, Break 15 menit, lima lomba, lalu Awarding &
-Closing. `DEC-059` mengunci Lomba 9 dan Lomba 10 masing-masing 30 menit serta
-Awarding & Closing 15 menit: Lomba 9 18.05, Lomba 10 18.35, penutupan 19.05,
-dan estimasi selesai 19.20 WIB. Migration 027 mengarsipkan jam/durasi lama,
-mengubah jadwal MySQL secara audited, dan menyediakan rollback tanpa menghapus
-peserta, hasil, atau assignment operator. Typecheck, 130 unit/API non-DB,
-build, 66/66 UI/WCAG, backup/restore drill, dan 12/12 public-domain regression
-lulus. Status `PRODUCTION_DEPLOYED /
-PRODUCTION_ACTIVATED`; visual dan operational human UAT tetap residual.
-Remote security gate pada release ini juga menutup advisory high `nanoid`
-dengan pin patched 3.3.17; audit npm/pnpm production kembali nol vulnerability.
+`DEC-075` menetapkan Registrasi & Perkenalan Tim 14.30-15.00, Opening AOGTIVITY
+15.00-15.15, lima lomba, Break 17.15-17.30, lima lomba, lalu Awarding & Closing
+19.20-19.35. Name Tag Ripped tetap ID `cmp-10` tetapi menjadi satu pertandingan
+bersama tanpa Grup A/B. Migration 031 mengarsipkan jam lama, mengubah jadwal
+MySQL secara audited, dan menyediakan rollback tanpa membuat ulang atau
+menghapus kompetisi, peserta, roster, hasil, atau assignment operator.
+Typecheck, 145 test, build, 67/67 UI/WCAG, backup/restore drill, dan 13/13
+public-domain regression lulus. Status `PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED`; operational human UAT tetap residual. Remote security
+gate memakai `nanoid` patched 3.3.18; audit npm/pnpm production nol
+vulnerability.
 Migration 029 menambahkan Google Sheets participant reporting satu arah dari
 MySQL dengan lima tab operasional, digest idempotent, timer satu menit, kontrol
 admin, dan permission gate. Target kini Restricted/owner-only; tab `WA Manual`
