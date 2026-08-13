@@ -12,14 +12,24 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-13T05:15:49+07:00 |
-| Branch aktif | `codex/s201-sagabook-production-verifier` (sinkronisasi tooling SagaBook S201) |
+| Waktu pembaruan terakhir | 2026-08-13T10:12:40+07:00 |
+| Branch aktif | `codex/s202-sagabook-release-stability` (sinkronisasi tooling SagaBook S202) |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `8f005036d3e952d8f3def939c2a30614e5b9d9a1` |
-| Informasi terakhir disinkronkan | SagaBook S201 source `948dea70` menambahkan verifier production read-only 13/13; production tetap source/release S199 dan tidak berubah. |
+| Baseline sebelum pembaruan | `9eff5b080e6f153688ccc8026b43602a02ff9c6f` |
+| Informasi terakhir disinkronkan | SagaBook S202 source `2ad6cb6d` menambahkan snapshot awal-akhir pada verifier production; runtime tetap S199 dan tidak berubah. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
 | Konflik | Tidak ada; sinkronisasi dimulai dari exact `origin/main` terbaru. |
 | Error | SagaBook belum `BUSINESS_READY`: authenticated UAT nyata, dua studio pilot, dan provider canary masih residual. |
+
+## File yang berubah pada sinkronisasi ini (SagaBook S202 stable verifier)
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaBook S201 verifier)
 

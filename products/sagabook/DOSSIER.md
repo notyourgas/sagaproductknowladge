@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 13 Agustus 2026 05:15 WIB
+- Updated: 13 Agustus 2026 10:12 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED` untuk workflow yang tercantum di
   [PRODUCT](PRODUCT.md)
@@ -28,6 +28,12 @@ dalam satu dokumen public-safe.
   public-safe. Verifikasi positif lulus 13/13 dan input commit salah gagal
   tertutup tanpa mutation; source ini belum dideploy dan tidak mengubah runtime
   S199.
+- Hardening S202 source `2ad6cb6d830c48347a9578f73f4ce477c89cf385`
+  menambahkan snapshot awal-akhir untuk remote main dan release/commit aktif.
+  Verifier gagal tertutup bila pointer berubah selama pemeriksaan, tetap
+  read-only, dan tidak mengubah runtime atau database. Positive production
+  check lulus 16/16; expected commit salah menghasilkan status tidak deployed/
+  activated tanpa mutation.
 - Candidate S190 1b794e533788abf384af25e489a9b016669573fd
   menutup gap fresh draft -> preview untuk preset existing. UI kini memakai
   candidate settings yang benar-benar dikembalikan server setelah save, lalu
