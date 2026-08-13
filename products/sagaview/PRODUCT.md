@@ -2,6 +2,20 @@
 
 Updated: 13 Agustus 2026
 
+Deploy kandidat Owner Changelog S198 pada 13 Agustus 2026 berhenti aman sebelum
+aktivasi. Source `ff0c178fe84b36d02fc530a051b0ebc4588715c0` sudah `PUSHED`
+dan lulus build, 142 test SagaView, 13 regresi browser terisolasi, release
+contract, serta audit dependency nol. Backup SagaView terenkripsi, checksum,
+restore disposable 149 tabel, dan source recovery bundle juga lulus. Namun
+deploy-gate kandidat hanya lulus 5/6 karena manifest backup pada disk lokal
+tidak ditemukan setelah candidate config cache dibangun. Status kandidat
+`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / BLOCKED_PREACTIVATION`.
+Production tetap backend `475db4c21b00440004d88b8f876e3eb38aea6be0` /
+`20260811190515-475db4c`, rollback `20260810091159-f3b0774`, dan Studio
+`86b04c9133fc7c28f6b4a6ff7c2aeb80d1480d58`; deploy tidak boleh diulang
+sebelum parity path manifest backup/config-cache kandidat dibuktikan pada
+rehearsal disposable.
+
 Audit S203 pada 13 Agustus 2026 mengoreksi provenance Owner/admin entitlement:
 S160 `28e0ab9b8159426633d88d52b68b5f713fa86aa2` adalah ancestor backend
 production `475db4c21b00440004d88b8f876e3eb38aea6be0`, dan blob middleware owner

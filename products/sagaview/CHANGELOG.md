@@ -1,5 +1,27 @@
 # SagaView Changelog
 
+## 2026-08-13 - S198 Owner Changelog deployment blocked pre-activation
+
+- Klasifikasi: `CONFIRMED`.
+- Status: `LOCAL_VALIDATED / PUSHED / IMPLEMENTED_NOT_DEPLOYED /
+  BLOCKED_PREACTIVATION`; production tidak berubah.
+- Before: Owner Changelog aktif belum membawa pencarian/filter dan satu-detail
+  dari candidate S198 pada runtime production.
+- Candidate: source `ff0c178fe84b36d02fc530a051b0ebc4588715c0` menyediakan
+  pencarian/filter versi dan tipe perubahan, satu detail terbuka, empty/reset,
+  target 44 piksel, serta navigasi kembali ke Galeri Frame.
+- Evidence: build, 142 test SagaView/1.308 assertion, focused browser dua
+  viewport, 13 regresi browser terisolasi, release contract 9/9, npm audit nol,
+  Composer audit nol, backup AES-256, checksum, off-VPS copy, dan restore
+  disposable 149 tabel lulus.
+- Blocker: deploy-gate kandidat hanya 5/6; manifest backup pada disk lokal tidak
+  ditemukan setelah candidate config cache dibangun. Dua correction round
+  selesai tanpa atomic switch.
+- Runtime tetap backend `475db4c21b00440004d88b8f876e3eb38aea6be0` /
+  `20260811190515-475db4c`, rollback `20260810091159-f3b0774`, dan Studio
+  `86b04c9133fc7c28f6b4a6ff7c2aeb80d1480d58`. Retry dilarang sampai parity
+  manifest/config-cache dibuktikan dalam rehearsal disposable.
+
 ## 2026-08-13 - S203 Owner entitlement production provenance correction
 
 - Klasifikasi: `CONFIRMED`.

@@ -1,6 +1,18 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 12 Agustus 2026 21:10 WIB
+Evidence cut-off: 13 Agustus 2026 15:48 WIB
+
+S198 deploy cut-off: source Owner Changelog
+`ff0c178fe84b36d02fc530a051b0ebc4588715c0` sudah `PUSHED` dan lulus build,
+142 test SagaView/1.308 assertion, focused browser 1440x900 + 390x844, 13
+regresi browser terisolasi, release contract 9/9, serta audit npm/Composer nol.
+Backup khusus SagaView terenkripsi, checksum/off-VPS, dan restore disposable
+149 tabel lulus. Candidate gate lulus 5/6 tetapi gagal critical pada manifest
+backup disk lokal setelah config cache kandidat. Tidak ada cutover; current
+tetap `20260811190515-475db4c`, rollback `20260810091159-f3b0774`, dan service/
+health hijau. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+BLOCKED_PREACTIVATION`; gap berikutnya adalah rehearsal parity path manifest
+backup/config-cache, bukan retry production.
 
 Authenticated Support UAT gate cut-off: 12 Agustus 2026 21:10 WIB. S196
 source `42a59a139085568f61bcb9c0cf235363707748d9` menambah dua gate kandidat

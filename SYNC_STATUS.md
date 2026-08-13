@@ -12,14 +12,26 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-13T15:26:00+07:00 |
-| Branch aktif | `codex/s205-sagabook-production-deploy` |
+| Waktu pembaruan terakhir | 2026-08-13T15:48:00+07:00 |
+| Branch aktif | `codex/s198-deploy-blocker-20260813` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `80b8598a0962a12889c52696638ccac7a1b8c26d` |
-| Informasi terakhir disinkronkan | SagaBook S205 `50afa6e4` aktif sebagai release `20260813081427-50afa6e`; rollback S199 dan verifier 17/17 terverifikasi. |
+| Baseline sebelum pembaruan | `24c470e4f707dd4b7144d0463c50ad0c44da4abe` |
+| Informasi terakhir disinkronkan | SagaView S198 `ff0c178f` berhenti sebelum aktivasi pada candidate deploy-gate 5/6; production tetap `475db4c2`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
 | Konflik | Checkout main lokal yang divergen tidak disentuh; perubahan dibuat dari exact `origin/main` pada worktree terisolasi. |
-| Error | Wrapper output deploy sempat gagal parsing setelah release selesai; verifikasi read-only exact runtime kemudian lulus 17/17. |
+| Error | Candidate tidak menemukan manifest backup disk lokal setelah config cache; retry production ditahan sampai rehearsal parity lulus. |
+
+## File yang berubah pada sinkronisasi ini (SagaView S198 deploy blocker)
+
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/DOSSIER.md`
+- `products/sagaview/CHANGELOG.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaBook S205 production release)
 

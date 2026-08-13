@@ -274,6 +274,14 @@ ketika keputusan atau release baru menutup gap.
 
 ### SagaView
 
+- `BLOCKED_PREACTIVATION`: S198 Owner Changelog
+  `ff0c178fe84b36d02fc530a051b0ebc4588715c0` lulus seluruh gate lokal dan
+  backup/restore disposable, tetapi candidate deploy-gate hanya 5/6 karena
+  manifest backup disk lokal tidak ditemukan setelah config cache dibangun.
+  Production tetap pada backend `475db4c2`. Bukti penutup: rehearsal disposable
+  yang membandingkan disk root/path manifest current versus candidate setelah
+  config cache, lalu candidate gate 6/6 tanpa fallback atau mutasi production.
+
 - `CLOSED IN PRODUCTION / AUTHENTICATED UAT RESIDUAL`: audit S203 membuktikan
   S160 `28e0ab9b8159426633d88d52b68b5f713fa86aa2` merupakan ancestor backend
   aktif `475db4c21b00440004d88b8f876e3eb38aea6be0`. Blob guard owner identik,
