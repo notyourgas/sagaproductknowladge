@@ -12,14 +12,26 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-13T17:02:49+07:00 |
-| Branch aktif | `codex/s198-deploy-blocker-20260813` |
+| Waktu pembaruan terakhir | 2026-08-13T18:13:00+07:00 |
+| Branch aktif | `codex/s206-sagabook-uat-evidence-contract` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `24c470e4f707dd4b7144d0463c50ad0c44da4abe` |
-| Informasi terakhir disinkronkan | Blocker S198 ditutup pada kandidat nonaktif: shared-storage link exact, config cache rebuilt, deploy-gate 6/6; production tetap `475db4c2`. |
+| Baseline sebelum pembaruan | `4e211bc4fbd78e6db5401b6921eaed8bff51a3ed` |
+| Informasi terakhir disinkronkan | SagaBook S206 memvalidasi evidence UAT Owner/operator secara public-safe dan fail-closed; actual UAT belum dilakukan dan production tetap S205. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
-| Konflik | Checkout main lokal yang divergen tidak disentuh; perubahan dibuat dari exact `origin/main` pada worktree terisolasi. |
-| Error | Tidak ada blocker pre-activation yang tersisa; aktivasi production belum dilakukan dan tetap memerlukan seluruh gate release. |
+| Konflik | Tidak ada; perubahan dibuat dari exact `origin/main` terbaru pada worktree terisolasi. |
+| Error | Tidak ada error tooling; UAT nyata, dua pilot, dan canary tetap residual bisnis. |
+
+## File yang berubah pada sinkronisasi ini (SagaBook S206 UAT evidence contract)
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaView S198 deploy blocker)
 

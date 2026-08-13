@@ -8,7 +8,7 @@ diubah menjadi klaim publik sebelum ditutup dengan bukti atau keputusan owner.
 
 ## Konteks
 
-Daftar ini berlaku pada evidence cut-off 13 Agustus 2026 13:26 WIB dan harus diperbarui
+Daftar ini berlaku pada evidence cut-off 13 Agustus 2026 18:13 WIB dan harus diperbarui
 ketika keputusan atau release baru menutup gap.
 
 ## Cara memakai
@@ -33,13 +33,13 @@ ketika keputusan atau release baru menutup gap.
 
 ### SagaBook
 
-- `TODO`: exact source kumulatif
-  `d79c3e06830940188b9e4ee5db420d3d7e3081df` sudah
+- `TODO`: exact source S205
+  `50afa6e4a2096f0b111714121e9fa8042c219a8e` sudah
   `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / PUSHED` sebagai release
-  `20260812171125-d79c3e0`; rollback `20260811095718-207eca8` tersedia.
-  Full gate, UAT sintetis, backup/restore, dua migrasi, smoke, service/journal,
-  dan rollback lulus. Residual bukan deploy teknis: authenticated Owner/operator
-  UAT nyata, setup dua studio pilot, dan provider canary sebelum
+  `20260813081427-50afa6e`; rollback `20260812171125-d79c3e0` tersedia.
+  Tooling S206 `8ce42d1a` kini memvalidasi evidence UAT public-safe secara
+  fail-closed, tetapi actual authenticated Owner/operator UAT belum dijalankan.
+  Dua studio pilot dan provider canary tetap residual sebelum
   `BUSINESS_READY`; subscription tenant tidak diubah.
 
 - `TODO`: guard scope/fallback source

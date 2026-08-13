@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 13 Agustus 2026 15:26 WIB
+Updated: 13 Agustus 2026 18:13 WIB
 Evidence status: production deployment and activation verified; business readiness pending
 
 ## Tujuan dokumen
@@ -16,6 +16,15 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
+- Tooling S206 source
+  `8ce42d1af34627e84285261cdfca984906104356` sudah `PUSHED /
+  SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Validator public-safe kini menolak evidence UAT
+  Owner/operator yang tidak lengkap, provenance source/release yang berbeda,
+  mutation/error/overflow, kegagalan aksesibilitas, serta marker PII/secret.
+  Evidence valid hanya menghasilkan `uatAccepted=true`; tool tetap menetapkan
+  `businessReady=false` dengan dua studio pilot dan provider canary sebagai
+  residual. Tool tidak melakukan login atau mengubah production.
 - Release S205 source
   `50afa6e4a2096f0b111714121e9fa8042c219a8e` aktif sebagai release immutable
   `20260813081427-50afa6e` dengan rollback langsung
