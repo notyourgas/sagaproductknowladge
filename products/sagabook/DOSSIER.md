@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 13 Agustus 2026 12:11 WIB
+- Updated: 13 Agustus 2026 13:26 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: release S199 pernah diaktifkan, tetapi re-verifikasi S203 saat ini
   `ACTIVATION_GATE_FAILED` pada profil security header login; jangan menegaskan
@@ -42,6 +42,14 @@ dalam satu dokumen public-safe.
   ganda pada dua halaman login. Output hanya berisi boolean/profile, tidak
   membawa nilai header mentah, dan `mutationPerformed=false`. Tooling sudah
   dipush; runtime belum diubah.
+- Candidate S204 source `2add43c0b7eaedf7db444ffe3a1330be9e80d813`
+  menghapus kepemilikan ganda header anti-MIME pada source production:
+  middleware tidak lagi menambah `nosniff` ketika edge ownership aktif, tetapi
+  fallback tetap tersedia dan diuji untuk environment tanpa edge. Pemeriksaan
+  Nginx read-only membuktikan domain app, platform, dan storefront SagaBook
+  sudah memiliki edge header. Candidate lulus full regression, build, format,
+  dan audit dependency; belum dideploy sehingga gate activation current belum
+  berubah.
 - Candidate S190 1b794e533788abf384af25e489a9b016669573fd
   menutup gap fresh draft -> preview untuk preset existing. UI kini memakai
   candidate settings yang benar-benar dikembalikan server setelah save, lalu

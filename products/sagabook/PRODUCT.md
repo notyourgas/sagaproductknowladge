@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 13 Agustus 2026 12:11 WIB
+Updated: 13 Agustus 2026 13:26 WIB
 Evidence status: production provenance verified; activation security gate failed
 
 ## Tujuan dokumen
@@ -16,6 +16,17 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
+- Candidate S204 source
+  `2add43c0b7eaedf7db444ffe3a1330be9e80d813` sudah `PUSHED /
+  SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Middleware kini menyerahkan
+  `X-Content-Type-Options` kepada edge pada production dan mempertahankan
+  fallback aplikasi untuk environment tanpa edge. Nginx aktif terbukti
+  menyediakan satu `nosniff` pada domain app, platform, dan storefront.
+  Red-green, 19/19 test security, release contract 15/15, full backend
+  1.044/1.044 (11.852 assertion), build, Pint, serta audit npm/Composer/OSV
+  lulus. Production belum berubah dan activation gate S203 masih gagal sampai
+  kandidat ini dirilis dengan izin lalu verifier hijau.
 - Hardening verifier S203 pada source
   `e67757fe15cdd388b3f59f9f21faeb17849b01e7` sudah `PUSHED /
   SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /

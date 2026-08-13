@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-13 - SagaBook S204 single-owner security header
+
+- Source `2add43c0b7eaedf7db444ffe3a1330be9e80d813` sudah dipush. Production
+  candidate menyerahkan header anti-MIME kepada Nginx dan mempertahankan
+  fallback aplikasi bila edge ownership tidak aktif.
+- Nginx app/platform/storefront memiliki header; red-green, full regression,
+  build, format, dan audit dependency lulus.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PUSHED`. Production dan
+  produk SagaDev lain tidak berubah; activation SagaBook menunggu deployment
+  berizin dan verifier S203 hijau.
+
 ## 2026-08-13 - SagaView S202 recovery provenance correction
 
 - S169 `13e56581` terbukti sudah tercakup pada Studio production exact

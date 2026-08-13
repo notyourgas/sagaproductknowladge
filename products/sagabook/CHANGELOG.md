@@ -1,5 +1,23 @@
 # SagaBook Changelog
 
+## 2026-08-13 - Single-owner anti-MIME header S204 candidate
+
+- Perubahan `CONFIRMED`; source
+  `2add43c0b7eaedf7db444ffe3a1330be9e80d813` sudah dipush pada branch
+  `codex/s204-sagabook-header-ownership`.
+- Before: Nginx dan middleware aplikasi sama-sama mengirim `nosniff`, sehingga
+  dua halaman login gagal pada verifier S203. After: production menyerahkan
+  header ini kepada edge; aplikasi tetap menyediakan fallback eksplisit untuk
+  environment tanpa edge.
+- Evidence: Nginx active read-only memiliki header pada domain app, platform,
+  dan storefront. Red-green, security 19/19 (103 assertion), focused 1/1 (5),
+  release contract 15/15 (169), full backend 1.044/1.044 (11.852), build, Pint,
+  npm/Composer/OSV nol advisory, syntax, serta diff check lulus.
+- Status `PUSHED / SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Production tetap exact S199 dan verifier current
+  tetap 1/3 sampai deployment berizin; activation dan business readiness belum
+  dinaikkan.
+
 ## 2026-08-13 - Public security-header verifier S203
 
 - Perubahan `CONFIRMED`; source

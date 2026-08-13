@@ -8,7 +8,7 @@ diubah menjadi klaim publik sebelum ditutup dengan bukti atau keputusan owner.
 
 ## Konteks
 
-Daftar ini berlaku pada evidence cut-off 12 Agustus 2026 21:10 WIB dan harus diperbarui
+Daftar ini berlaku pada evidence cut-off 13 Agustus 2026 13:26 WIB dan harus diperbarui
 ketika keputusan atau release baru menutup gap.
 
 ## Cara memakai
@@ -210,11 +210,12 @@ ketika keputusan atau release baru menutup gap.
   smoke sudah lulus.
 - `TODO`: verifier S203 source `e67757fe` membuktikan exact release S199 stabil
   dan 3/3 endpoint merespons 200, tetapi hanya 1/3 profil security header lulus
-  karena header anti-MIME ganda pada dua halaman login. Normalisasi konfigurasi
-  respons melalui kandidat/release berizin, lalu wajibkan verifier S203 hijau
-  sebelum menegaskan ulang `PRODUCTION_ACTIVATED`. Tidak ada mutation runtime
-  pada audit ini. HSTS health `/up` tetap defense-in-depth terpisah dan bukan
-  penyebab gate S203 gagal.
+  karena header anti-MIME ganda pada dua halaman login. Candidate S204
+  `2add43c0` sudah menetapkan edge sebagai pemilik tunggal dengan fallback
+  aplikasi dan seluruh gate lokal hijau. Residual: izin deployment exact
+  candidate, backup/rehearsal/atomic switch, lalu verifier S203 harus hijau
+  sebelum menegaskan ulang `PRODUCTION_ACTIVATED`. HSTS health `/up` tetap
+  defense-in-depth terpisah.
 - `CONFIRMED`: candidate UI/UX dan auth/fallback hardening kumulatif sudah
   `PRODUCTION_DEPLOYED` sebagai release `20260802002923-d9bbbac`; manifest,
   public HTTP smoke, production auth browser 6/6, matriks browser

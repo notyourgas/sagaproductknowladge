@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 13 Agustus 2026 12:11 WIB
+Evidence cut-off: 13 Agustus 2026 13:26 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -83,6 +83,13 @@ header anti-MIME ganda di dua halaman login. Production tidak berubah dan
 tetap melayani endpoint; jangan menegaskan ulang `PRODUCTION_ACTIVATED` sampai
 normalisasi header dirilis dan verifier S203 lulus. Tooling S203 berstatus
 LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PUSHED.
+
+Candidate S204 source `2add43c0b7eaedf7db444ffe3a1330be9e80d813`
+menetapkan Nginx sebagai pemilik tunggal header anti-MIME di production dan
+mempertahankan fallback aplikasi untuk environment tanpa edge. Source, full
+regression, build, dan audit dependency sudah hijau serta dipush; production
+belum berubah. Activation tetap menunggu deployment berizin dan verifier S203
+hijau.
 
 Candidate SagaBook S195 source
 `abe4914e560515d433186f215f6a8e753457d5d4` menambahkan evidence readiness

@@ -12,14 +12,26 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-13T13:16:00+07:00 |
-| Branch aktif | `codex/s202-sagaview-recovery-ledger` (koreksi provenance recovery SagaView) |
+| Waktu pembaruan terakhir | 2026-08-13T13:26:31+07:00 |
+| Branch aktif | `codex/s204-sagabook-header-ownership` (sinkronisasi candidate SagaBook S204) |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `da88faa8492079147c2cca3c1ee159686d1d1f17` |
-| Informasi terakhir disinkronkan | SagaView S169 `13e56581` terbukti ancestor Studio production `86b04c91`; recovery/quota dikoreksi menjadi production screened. |
+| Baseline sebelum pembaruan | `d5f4fff0608206f577828a7a4677a1bcb71f79cc` |
+| Informasi terakhir disinkronkan | SagaBook S204 source `2add43c0` menetapkan edge sebagai pemilik tunggal header anti-MIME dengan fallback aplikasi; production belum berubah. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
 | Konflik | Checkout main lokal yang divergen tidak disentuh; perubahan dibuat dari exact `origin/main` pada worktree terisolasi. |
-| Error | Tidak ada error produk baru. Physical Windows permission/disk UAT tetap residual sebelum `BUSINESS_READY`. |
+| Error | Activation SagaBook menunggu deployment berizin dan verifier S203 hijau; authenticated UAT, pilot, dan provider canary tetap residual sebelum `BUSINESS_READY`. |
+
+## File yang berubah pada sinkronisasi ini (SagaBook S204 header ownership)
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaView S202 recovery provenance)
 
