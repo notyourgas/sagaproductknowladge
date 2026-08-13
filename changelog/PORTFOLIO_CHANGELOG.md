@@ -7,6 +7,9 @@
   serta restore disposable lulus.
 - Candidate deploy-gate berhenti pada 5/6 karena manifest backup disk lokal
   tidak ditemukan setelah config cache kandidat. Tidak ada atomic switch.
+- Rehearsal disposable membuktikan direktori `storage` dari archive menyebabkan
+  link shared storage bersarang. Harness lokal sudah dikoreksi dengan guard path
+  exact dan lulus syntax/kontrak; production belum dicoba ulang.
 - Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
   BLOCKED_PREACTIVATION`; backend production tetap `475db4c2`, rollback
   `f3b0774`, Studio tetap `86b04c91`, dan produk SagaDev lain tidak berubah.

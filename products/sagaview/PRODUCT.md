@@ -10,11 +10,15 @@ restore disposable 149 tabel, dan source recovery bundle juga lulus. Namun
 deploy-gate kandidat hanya lulus 5/6 karena manifest backup pada disk lokal
 tidak ditemukan setelah candidate config cache dibangun. Status kandidat
 `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / BLOCKED_PREACTIVATION`.
+Rehearsal disposable kemudian membuktikan archive membawa direktori `storage`,
+sehingga link shared storage terbentuk bersarang sebagai `storage/storage`.
+Harness lokal sudah dikoreksi untuk mengganti path storage kandidat secara
+terbatas sebelum config cache dan lulus syntax/kontrak link.
 Production tetap backend `475db4c21b00440004d88b8f876e3eb38aea6be0` /
 `20260811190515-475db4c`, rollback `20260810091159-f3b0774`, dan Studio
 `86b04c9133fc7c28f6b4a6ff7c2aeb80d1480d58`; deploy tidak boleh diulang
-sebelum parity path manifest backup/config-cache kandidat dibuktikan pada
-rehearsal disposable.
+sebelum release candidate baru membuktikan exact shared-storage link dan
+deploy-gate 6/6.
 
 Audit S203 pada 13 Agustus 2026 mengoreksi provenance Owner/admin entitlement:
 S160 `28e0ab9b8159426633d88d52b68b5f713fa86aa2` adalah ancestor backend

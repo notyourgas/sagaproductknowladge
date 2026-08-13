@@ -278,9 +278,11 @@ ketika keputusan atau release baru menutup gap.
   `ff0c178fe84b36d02fc530a051b0ebc4588715c0` lulus seluruh gate lokal dan
   backup/restore disposable, tetapi candidate deploy-gate hanya 5/6 karena
   manifest backup disk lokal tidak ditemukan setelah config cache dibangun.
-  Production tetap pada backend `475db4c2`. Bukti penutup: rehearsal disposable
-  yang membandingkan disk root/path manifest current versus candidate setelah
-  config cache, lalu candidate gate 6/6 tanpa fallback atau mutasi production.
+  Rehearsal disposable membuktikan archive menyisakan direktori `storage`, lalu
+  link shared storage terbentuk bersarang sebagai `storage/storage`. Harness
+  lokal sudah memaksa urutan remove path kandidat -> link shared storage ->
+  config cache -> gate. Production tetap `475db4c2`; bukti penutup yang tersisa
+  adalah candidate release baru dengan exact shared-storage link dan gate 6/6.
 
 - `CLOSED IN PRODUCTION / AUTHENTICATED UAT RESIDUAL`: audit S203 membuktikan
   S160 `28e0ab9b8159426633d88d52b68b5f713fa86aa2` merupakan ancestor backend

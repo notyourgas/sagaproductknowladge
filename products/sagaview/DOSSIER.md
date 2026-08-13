@@ -16,8 +16,12 @@ manifest disk lokal tidak ditemukan setelah config cache kandidat dibuat.
 Setelah dua correction round, deployment dihentikan fail-closed. Current tetap
 `20260811190515-475db4c`, rollback tetap `20260810091159-f3b0774`, service dan
 health tetap hijau. Status `LOCAL_VALIDATED / PUSHED /
-IMPLEMENTED_NOT_DEPLOYED / BLOCKED_PREACTIVATION`; next action adalah
-reproduksi disposable untuk parity path manifest/config-cache sebelum retry.
+IMPLEMENTED_NOT_DEPLOYED / BLOCKED_PREACTIVATION`. Rehearsal disposable lalu
+membuktikan archive membawa direktori `storage`, sehingga link ke shared storage
+terbentuk bersarang sebagai `storage/storage`. Harness lokal sekarang menghapus
+hanya path storage kandidat yang tervalidasi, membuat exact shared-storage link,
+baru menjalankan config cache/gate; syntax dan kontrak link lulus. Retry tetap
+ditahan sampai release candidate baru membuktikan gate 6/6.
 
 ## S203 Owner entitlement production provenance correction
 

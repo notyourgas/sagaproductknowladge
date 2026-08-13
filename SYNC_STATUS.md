@@ -12,14 +12,14 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-13T15:48:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-13T16:08:37+07:00 |
 | Branch aktif | `codex/s198-deploy-blocker-20260813` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | `24c470e4f707dd4b7144d0463c50ad0c44da4abe` |
-| Informasi terakhir disinkronkan | SagaView S198 `ff0c178f` berhenti sebelum aktivasi pada candidate deploy-gate 5/6; production tetap `475db4c2`. |
+| Informasi terakhir disinkronkan | Akar blocker S198 adalah link shared storage bersarang dari direktori `storage` archive; harness lokal dikoreksi dan rehearsal disposable lulus, production tetap `475db4c2`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
 | Konflik | Checkout main lokal yang divergen tidak disentuh; perubahan dibuat dari exact `origin/main` pada worktree terisolasi. |
-| Error | Candidate tidak menemukan manifest backup disk lokal setelah config cache; retry production ditahan sampai rehearsal parity lulus. |
+| Error | Candidate lama tetap tidak layak aktivasi; retry ditahan sampai release baru membuktikan exact shared-storage link dan gate 6/6. |
 
 ## File yang berubah pada sinkronisasi ini (SagaView S198 deploy blocker)
 

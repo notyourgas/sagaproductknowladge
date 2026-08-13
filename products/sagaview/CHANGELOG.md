@@ -17,10 +17,14 @@
 - Blocker: deploy-gate kandidat hanya 5/6; manifest backup pada disk lokal tidak
   ditemukan setelah candidate config cache dibangun. Dua correction round
   selesai tanpa atomic switch.
+- Root cause: archive membawa direktori `storage`, sehingga `ln` membuat link
+  `storage/storage` dan root disk lokal kandidat tidak membaca shared storage.
+  Rehearsal disposable mereproduksi kegagalan dan membuktikan urutan perbaikan;
+  harness lokal kini memiliki scope guard, exact link assertion, dan Bash syntax hijau.
 - Runtime tetap backend `475db4c21b00440004d88b8f876e3eb38aea6be0` /
   `20260811190515-475db4c`, rollback `20260810091159-f3b0774`, dan Studio
-  `86b04c9133fc7c28f6b4a6ff7c2aeb80d1480d58`. Retry dilarang sampai parity
-  manifest/config-cache dibuktikan dalam rehearsal disposable.
+  `86b04c9133fc7c28f6b4a6ff7c2aeb80d1480d58`. Retry dilarang sampai release
+  candidate baru membuktikan exact shared-storage link dan deploy-gate 6/6.
 
 ## 2026-08-13 - S203 Owner entitlement production provenance correction
 

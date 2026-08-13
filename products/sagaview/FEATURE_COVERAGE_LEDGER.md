@@ -1,6 +1,6 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 13 Agustus 2026 15:48 WIB
+Evidence cut-off: 13 Agustus 2026 16:08 WIB
 
 S198 deploy cut-off: source Owner Changelog
 `ff0c178fe84b36d02fc530a051b0ebc4588715c0` sudah `PUSHED` dan lulus build,
@@ -13,6 +13,14 @@ tetap `20260811190515-475db4c`, rollback `20260810091159-f3b0774`, dan service/
 health hijau. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
 BLOCKED_PREACTIVATION`; gap berikutnya adalah rehearsal parity path manifest
 backup/config-cache, bukan retry production.
+
+S198 blocker rehearsal cut-off: pola gagal direproduksi tanpa mutasi production.
+Archive menyediakan direktori `storage`; perintah link lama membuat
+`storage/storage`, sehingga root disk lokal kandidat tidak mencapai shared
+manifest. Harness lokal sudah memiliki scope guard, menghapus hanya storage
+kandidat, membuat exact shared-storage link sebelum config cache, dan lulus
+Bash syntax serta rehearsal kontrak. Status tetap `BLOCKED_PREACTIVATION` sampai
+release candidate baru membuktikan deploy-gate 6/6.
 
 Authenticated Support UAT gate cut-off: 12 Agustus 2026 21:10 WIB. S196
 source `42a59a139085568f61bcb9c0cf235363707748d9` menambah dua gate kandidat

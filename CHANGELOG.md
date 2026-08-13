@@ -8,6 +8,10 @@
   terenkripsi, checksum, source recovery, dan restore disposable 149 tabel.
 - Deployment berhenti sebelum aktivasi karena candidate deploy-gate 5/6 tidak
   menemukan manifest backup disk lokal setelah config cache dibangun.
+- Rehearsal disposable berikutnya membuktikan akar masalah: archive membawa
+  direktori `storage`, sehingga link shared storage terbentuk bersarang sebagai
+  `storage/storage`. Harness lokal kini memaksa penggantian path kandidat
+  sebelum config cache; syntax dan kontrak link lulus, production belum diulang.
 - Delivery `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
   BLOCKED_PREACTIVATION`; production dan produk SagaDev lain tidak berubah.
 
