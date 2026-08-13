@@ -1,5 +1,22 @@
 # SagaBook Changelog
 
+## 2026-08-13 - Production release S205
+
+- Atas izin deployment eksplisit Andreas, exact source
+  `50afa6e4a2096f0b111714121e9fa8042c219a8e` dipromosikan ke remote `main` dan
+  release immutable `20260813081427-50afa6e`; rollback langsung adalah
+  `20260812171125-d79c3e0`.
+- Fresh encrypted backup tiga database, checksum offsite, disposable restore,
+  archive, Git bundle, source backup VPS, migration compatibility, full test,
+  build, audit dependency, atomic switch, manifest, service, journal, dan
+  rollback lulus.
+- Verifier final lulus 17/17: snapshot stabil, pending migration 0, HTTP 3/3,
+  dan security profile 3/3. Duplikasi header anti-MIME pada login tertutup.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / PUSHED`;
+  `BUSINESS_READY` tetap menunggu authenticated UAT nyata, dua studio pilot,
+  dan provider canary. Tidak ada canary, subscription, atau data customer yang
+  digunakan dalam release ini.
+
 ## 2026-08-13 - Exact-candidate release reproducibility S205
 
 - Informasi `CONFIRMED` dari source

@@ -1,14 +1,14 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 13 Agustus 2026 14:20 WIB
+Evidence cut-off: 13 Agustus 2026 15:26 WIB
 
-Source integrasi S199 sudah `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
-PUSHED` sebagai release immutable `20260812171125-d79c3e0`, dengan release
-`20260811095718-207eca8` sebagai rollback langsung. Release menggabungkan
-lineage runtime S171-S190, acceptance S191-S198, dan tooling local-VPS yang
-sebelumnya aktif. Dua migrasi diterapkan tanpa pending; backup/restore, archive,
-Git bundle, atomic switch, manifest, DB audit, smoke, service, journal, dan
-rollback lulus. `BUSINESS_READY` belum tercapai karena authenticated UAT nyata,
+Source S205 sudah `PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` sebagai
+release immutable `20260813081427-50afa6e`, dengan release S199
+`20260812171125-d79c3e0` sebagai rollback langsung. Source exact berada di
+remote `main`; fresh encrypted backup, checksum offsite, disposable restore,
+archive, Git bundle, migration compatibility, atomic switch, manifest, DB
+audit, smoke, service, journal, rollback, dan verifier 17/17 lulus.
+`BUSINESS_READY` belum tercapai karena authenticated UAT nyata,
 dua studio pilot, dan canary provider tetap residual; subscription tidak diubah.
 Kolom gap pada baris sebelumnya dipertahankan sebagai snapshot saat irisan
 tersebut ditutup; baris terbaru menjadi status current.
@@ -25,16 +25,14 @@ Status candidate pada row S162-S165 adalah snapshot saat acceptance lokal.
 Seluruh row tersebut kini aktif kumulatif melalui source/release S166 yang
 tercantum pada ringkasan dan row release di atas.
 
-Re-verifikasi S203 mempertahankan provenance `PRODUCTION_DEPLOYED`, tetapi gate
-activation terbaru gagal pada duplikasi header anti-MIME di dua halaman login.
-Production tidak dimutasi dan tetap melayani 3/3 URL; jangan menegaskan ulang
-`PRODUCTION_ACTIVATED` sampai normalisasi header dirilis serta verifier lulus.
-Candidate S204 sudah menutup penyebab di source, tetapi belum dideploy.
-Candidate S205 menutup gap reproducibility source kandidat dengan dua salinan
-artefak exact commit yang terverifikasi; ini tidak mengubah production.
+Gap re-verifikasi S203 dan penyebab source S204 sudah ditutup kumulatif melalui
+release S205. Header anti-MIME kini memiliki satu pemilik; HTTP dan security
+profile masing-masing lulus 3/3. Reproducibility exact source tetap dibuktikan
+oleh dua salinan artefak dengan checksum identik.
 
 | Fitur/alur | Role | Route/surface | Status UI/UX | Frontend state/form | API/boundary | Backend/database | Auth/tenant/permission | Happy/failure/retry/idempotency | Viewport/zoom | Evidence/source/release | Status akhir | Gap berikutnya |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Cumulative production release S205 | Customer, Owner, operator; DevOps, Security, QA, Production Auditor | Exact source -> immutable artifact -> VPS release -> Nginx/Laravel -> public response | Tidak mengubah UI; seluruh UI production existing dipertahankan | Tidak mengubah frontend state/form | API existing tidak berubah; public HTTP 3/3 dan security profile 3/3 | Tidak ada migration baru; pending 0; fresh encrypted backup tiga database, checksum offsite, dan disposable restore lulus | Auth, tenant, permission, PII, payment, dan provider policy tidak berubah; source exact tersedia di remote `main` | Full 1.045/1.045 (11.868), release contract 21/21 (207), manifest, service, journal 0 error, snapshot stabil, rollback tersedia, verifier 17/17 | Tidak ada perubahan visual; a11y/viewport existing tidak dinaikkan | Source `50afa6e4a2096f0b111714121e9fa8042c219a8e`; release `20260813081427-50afa6e`; rollback `20260812171125-d79c3e0`; archive/Git bundle/source backup lokal+VPS terverifikasi | `SECURITY_VALIDATED / QA_VALIDATED / PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; belum `BUSINESS_READY` | Authenticated Owner/operator UAT nyata, dua studio pilot, dan provider canary tetap gate terpisah. |
 | Exact-candidate release reproducibility S205 | DevOps, Security, QA, Production Auditor | Clean Git worktree -> PowerShell packager -> archive/bundle/metadata/manifest -> dua lokasi lokal | Tidak ada perubahan UI/UX | Tidak ada perubahan frontend | Tidak ada API atau network production; tool hanya membaca Git lokal dan menulis file baru ke tujuan eksplisit | Tidak ada schema, database, migration, atau data mutation | Remote harus exact `notyourgas/sagabook`; output wajib di luar worktree, absolut, berbeda, non-nested; metadata tidak memuat credential, PII, callback, receipt, tenant, atau device identifier | Worktree/commit/remote/path mismatch fail-closed; bundle verify dan exact HEAD lulus; empat artefak di dua lokasi memiliki SHA-256 identik | Tidak relevan karena tooling operator; bukti a11y/viewport tidak dinaikkan | Source `50afa6e4a2096f0b111714121e9fa8042c219a8e`; branch `codex/s205-sagabook-release-reproducibility`; contract 1/1 (16), full 1.045/1.045 (11.868), build 5.116 modul, Pint file berubah, npm/Composer/OSV nol advisory | `SECURITY_VALIDATED / QA_VALIDATED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; `productionDeployed=false` | Minta izin deployment exact kandidat S205; fresh backup/restore, migration compatibility, upload, atomic switch, service/smoke/rollback, dan verifier S203 hijau tetap wajib. |
 | Single-owner anti-MIME header S204 | Security, Backend, DevOps, QA, Production Auditor | Laravel `SecurityHeaders` -> edge ownership config -> Nginx -> public response | Tidak ada perubahan UI/UX | Tidak ada perubahan frontend | Header kompatibilitas memiliki satu pemilik; fallback aplikasi tetap tersedia bila edge ownership false | Tidak ada schema/write/data mutation; production default edge ownership true, local/example false | Tidak mengubah auth, tenant, permission, CSP, HSTS, atau referrer policy; Nginx app/platform/storefront terbukti memiliki `nosniff` | Red membuktikan header aplikasi masih ada; green membuktikan edge mode melepasnya dan fallback mengembalikan tepat satu; full regression hijau | Tidak relevan karena tidak ada UI; bukti a11y/viewport existing tidak dinaikkan | Source `2add43c0b7eaedf7db444ffe3a1330be9e80d813`; branch `codex/s204-sagabook-header-ownership`; security 19/19 (103), focused 1/1 (5), release 15/15 (169), full 1.044/1.044 (11.852), build/Pint/npm/Composer/OSV hijau | `SECURITY_VALIDATED / QA_VALIDATED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; runtime tetap `PRODUCTION_DEPLOYED / ACTIVATION_GATE_FAILED` | Minta izin deployment exact candidate, lakukan backup/rehearsal/atomic switch, lalu wajibkan verifier S203 hijau sebelum activation diklaim; UAT/pilot/provider canary tetap gate bisnis. |
 | Public security-header verification S203 | DevOps, Security, QA, Production Auditor | Operator verifier -> 3 public endpoint -> profile health/login -> JSON | Tidak ada perubahan UI/UX | Tidak ada perubahan frontend | Required URL set fail-closed; HTTP dan security header dinilai terpisah | Tidak ada schema/write; exact release S199 tetap stabil dan `mutationPerformed=false` | Output hanya boolean/profile tanpa nilai header mentah; health/login memakai allowlist kontrak | Runtime: HTTP 3/3, security 1/3; dua login gagal karena header anti-MIME ganda; full 1.043/1.043 (11.847), contract 15/15 (169), focused 1/1 (48), build/Pint/npm/Composer hijau | Tidak relevan untuk tooling; bukti UI/a11y production tidak dinaikkan | Source `e67757fe15cdd388b3f59f9f21faeb17849b01e7`; branch `codex/s203-sagabook-header-verification`; provenance source/release/rollback stabil; verifier exit 1 sesuai fail-closed | Tooling `SECURITY_VALIDATED / QA_VALIDATED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; runtime `PRODUCTION_DEPLOYED / ACTIVATION_GATE_FAILED`; production tidak berubah | Normalisasi header login melalui kandidat/release berizin, lalu verifier S203 harus hijau; UAT nyata, dua studio pilot, dan provider canary tetap gate `BUSINESS_READY`. |

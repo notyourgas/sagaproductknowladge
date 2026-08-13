@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 13 Agustus 2026 14:20 WIB
-Evidence status: production provenance verified; activation security gate failed
+Updated: 13 Agustus 2026 15:26 WIB
+Evidence status: production deployment and activation verified; business readiness pending
 
 ## Tujuan dokumen
 
@@ -16,17 +16,22 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
-- Candidate S205 source
-  `50afa6e4a2096f0b111714121e9fa8042c219a8e` sudah `PUSHED /
-  SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED`. Tool packaging fail-closed kini berada pada
+- Release S205 source
+  `50afa6e4a2096f0b111714121e9fa8042c219a8e` aktif sebagai release immutable
+  `20260813081427-50afa6e` dengan rollback langsung
+  `20260812171125-d79c3e0`. Source exact sudah fast-forward ke remote `main`.
+  Tool packaging fail-closed berada pada
   lineage kandidat aktif: hanya menerima exact HEAD dari worktree bersih dan
   remote SagaBook yang benar, lalu membuat source archive, Git bundle,
   metadata public-safe, serta manifest SHA-256 ke dua lokasi non-nested di
   luar worktree. Empat artefak exact commit terbukti identik di kedua lokasi;
   full backend 1.045/1.045 (11.868 assertion), build, format file perubahan,
-  serta audit npm/Composer/OSV lulus. Production tidak berubah; paket ini bukan
-  deployment, activation, atau business readiness.
+  serta audit npm/Composer/OSV lulus. Fresh encrypted backup, checksum offsite,
+  disposable restore, archive, Git bundle, source backup VPS, migration
+  compatibility, atomic switch, manifest, service, journal, HTTP smoke 3/3,
+  dan security profile 3/3 lulus. Final verifier 17/17 menetapkan
+  `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; `BUSINESS_READY` tetap menunggu
+  authenticated UAT nyata, dua studio pilot, dan provider canary.
 - Candidate S204 source
   `2add43c0b7eaedf7db444ffe3a1330be9e80d813` sudah `PUSHED /
   SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
@@ -36,8 +41,8 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   menyediakan satu `nosniff` pada domain app, platform, dan storefront.
   Red-green, 19/19 test security, release contract 15/15, full backend
   1.044/1.044 (11.852 assertion), build, Pint, serta audit npm/Composer/OSV
-  lulus. Production belum berubah dan activation gate S203 masih gagal sampai
-  kandidat ini dirilis dengan izin lalu verifier hijau.
+  lulus. Perubahan ini kini aktif kumulatif melalui release S205 dan activation
+  gate security header telah lulus 3/3.
 - Hardening verifier S203 pada source
   `e67757fe15cdd388b3f59f9f21faeb17849b01e7` sudah `PUSHED /
   SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /

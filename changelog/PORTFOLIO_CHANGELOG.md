@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-13 - SagaBook S205 production release
+
+- Exact source `50afa6e4a2096f0b111714121e9fa8042c219a8e` aktif sebagai release
+  `20260813081427-50afa6e`; rollback `20260812171125-d79c3e0` tersedia.
+- Fresh encrypted backup/restore, artifact dan Git bundle, migration
+  compatibility, atomic switch, service, journal, manifest, serta verifier
+  17/17 lulus. HTTP dan security profile masing-masing 3/3.
+- Status `PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; production
+  SagaBook berubah, produk lain tidak. `BUSINESS_READY` tetap belum tercapai.
+
 ## 2026-08-13 - SagaBook S205 exact-candidate package
 
 - Candidate source `50afa6e4a2096f0b111714121e9fa8042c219a8e` sudah dipush.

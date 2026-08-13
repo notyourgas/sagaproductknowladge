@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 13 Agustus 2026 14:20 WIB
+Evidence cut-off: 13 Agustus 2026 15:26 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -68,11 +68,12 @@ pembayaran, menerima status/reminder, dan mengelola request dari secure booking
 link. Operator mengelola calendar, task, check-in, session, payment,
 reconciliation, report, staff, tenant, dan subscription.
 
-Exact source `d79c3e06830940188b9e4ee5db420d3d7e3081df` aktif sebagai
-release `20260812171125-d79c3e0` dengan rollback
-`20260811095718-207eca8`. Source remote, archive immutable, Git bundle, backup
+Exact source `50afa6e4a2096f0b111714121e9fa8042c219a8e` aktif sebagai
+release `20260813081427-50afa6e` dengan rollback
+`20260812171125-d79c3e0`. Source remote `main`, archive immutable, Git bundle, backup
 terenkripsi/disposable restore, migrasi, atomic switch, manifest, DB audit,
-public smoke, service, journal, dan rollback terverifikasi. Status
+public smoke, service, journal, rollback, dan verifier 17/17 terverifikasi.
+HTTP dan security profile masing-masing lulus 3/3. Status
 `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated UAT nyata, dua
 studio pilot, dan provider canary tetap menahan `BUSINESS_READY`.
 
@@ -81,21 +82,20 @@ Re-verifikasi public-safe S203 source
 `PRODUCTION_DEPLOYED` serta HTTP 3/3, tetapi gate activation terbaru gagal pada
 header anti-MIME ganda di dua halaman login. Production tidak berubah dan
 tetap melayani endpoint; jangan menegaskan ulang `PRODUCTION_ACTIVATED` sampai
-normalisasi header dirilis dan verifier S203 lulus. Tooling S203 berstatus
-LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PUSHED.
+normalisasi header dirilis dan verifier S203 lulus. Gap ini sekarang sudah
+ditutup release S205; tooling S203 aktif kumulatif dan final verifier 17/17.
 
 Candidate S204 source `2add43c0b7eaedf7db444ffe3a1330be9e80d813`
 menetapkan Nginx sebagai pemilik tunggal header anti-MIME di production dan
 mempertahankan fallback aplikasi untuk environment tanpa edge. Source, full
-regression, build, dan audit dependency sudah hijau serta dipush; production
-belum berubah. Activation tetap menunggu deployment berizin dan verifier S203
-hijau.
+regression, build, dan audit dependency sudah hijau serta dipush. Perubahan
+aktif kumulatif melalui release S205 dan security profile production lulus 3/3.
 
 Candidate S205 source `50afa6e4a2096f0b111714121e9fa8042c219a8e`
 menambahkan packaging exact-candidate fail-closed pada lineage S204. Archive,
 Git bundle, metadata public-safe, dan manifest SHA-256 telah diverifikasi sama
-pada dua lokasi terpisah. Source sudah dipush dan seluruh gate lokal hijau;
-production tidak berubah dan deployment tetap memerlukan izin Andreas.
+pada dua lokasi terpisah. Source sudah dipush ke `main`, dirilis sebagai S205,
+dan final verifier production lulus 17/17.
 
 Candidate SagaBook S195 source
 `abe4914e560515d433186f215f6a8e753457d5d4` menambahkan evidence readiness

@@ -12,14 +12,26 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-13T14:20:00+07:00 |
-| Branch aktif | `codex/s205-sagabook-release-reproducibility` |
+| Waktu pembaruan terakhir | 2026-08-13T15:26:00+07:00 |
+| Branch aktif | `codex/s205-sagabook-production-deploy` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `60668844a0b02072d6cfd12541936acd64e2dc24` |
-| Informasi terakhir disinkronkan | SagaBook S205 `50afa6e4` menutup bukti reproducibility exact kandidat dengan archive, Git bundle, metadata, manifest SHA-256, dan dua salinan terverifikasi. |
+| Baseline sebelum pembaruan | `80b8598a0962a12889c52696638ccac7a1b8c26d` |
+| Informasi terakhir disinkronkan | SagaBook S205 `50afa6e4` aktif sebagai release `20260813081427-50afa6e`; rollback S199 dan verifier 17/17 terverifikasi. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
 | Konflik | Checkout main lokal yang divergen tidak disentuh; perubahan dibuat dari exact `origin/main` pada worktree terisolasi. |
-| Error | Tidak ada pada sinkronisasi ini; production tetap S199 dan deployment S205 belum diizinkan. |
+| Error | Wrapper output deploy sempat gagal parsing setelah release selesai; verifikasi read-only exact runtime kemudian lulus 17/17. |
+
+## File yang berubah pada sinkronisasi ini (SagaBook S205 production release)
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaBook S205 release reproducibility)
 
