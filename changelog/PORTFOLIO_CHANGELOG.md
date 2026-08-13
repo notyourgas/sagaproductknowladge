@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-14 - AOGTIVITY lokasi final production
+
+- Lokasi final aktif: Pendopo Utama untuk lomba 1-2 dan Awarding & Closing;
+  Lapangan A untuk lomba 3, 5, 7, 9, dan 10; Lapangan B untuk lomba 4, 6, dan
+  8. Rundown, ID, dan relasi kompetisi tidak berubah.
+- Source `70aa749764cdeb6a5bc59b36438c23e22c3a1e66`, Hostinger
+  `20260813T171101Z`, Vercel `dpl_EvVDPn38C6R5h56oyRNdzT8abHu6`, dan migration
+  033 aktif setelah backup/restore, preservation, rollback, UI/WCAG, serta
+  production acceptance lulus.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; produk SagaDev lain
+  tidak berubah dan business readiness AOGTIVITY tetap menunggu UAT hari-H.
+
 ## 2026-08-13 - AOGTIVITY opening dan Name Tag single match production
 
 - Rundown aktif kini menampilkan Registrasi & Perkenalan Tim 14.30-15.00,

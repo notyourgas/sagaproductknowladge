@@ -8,6 +8,21 @@ Mencatat perubahan material AOGTIVITY/AOGTICVITY/17an/Olimpiade.
 
 Nama lama dipertahankan sebagai provenance; status runtime harus eksplisit.
 
+## 2026-08-14 - Lokasi final seluruh lomba dan awarding
+
+- `CONFIRMED` melalui `DEC-076`: urutan lokasi final adalah Pendopo Utama untuk
+  lomba 1-2, Lapangan A untuk lomba 3, 5, 7, 9, dan 10, Lapangan B untuk lomba
+  4, 6, dan 8, serta Pendopo Utama untuk Awarding & Closing.
+- Registrasi, Opening AOGTIVITY, Break, waktu, urutan, sepuluh ID kompetisi,
+  peserta, roster, hasil, dan operator tidak diubah. Ejaan lokasi pada UI
+  dinormalisasi menjadi `Pendopo Utama`, `Lapangan A`, dan `Lapangan B`.
+- Source runtime `70aa749764cdeb6a5bc59b36438c23e22c3a1e66`, migration 033,
+  Hostinger `20260813T171101Z`, dan Vercel
+  `dpl_EvVDPn38C6R5h56oyRNdzT8abHu6` production-activated.
+- Backup/restore, rollback/reapply migration, preservation data, 145 unit/API,
+  28 MySQL integration, 67/67 UI/WCAG, dan 15/15 production-domain acceptance
+  lulus. Operational human UAT dan business readiness tetap residual.
+
 ## 2026-08-13 - Opening transparan dan Name Tag Ripped satu pertandingan
 
 - `CONFIRMED` melalui `DEC-075`: Registrasi & Perkenalan Tim berlangsung

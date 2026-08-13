@@ -1913,8 +1913,8 @@ idempotency, rate limit, receipt, audit, dan admin verification desk; participan
 fixture serta localStorage registration telah dihapus.
 Nama kanonik produk berubah dari AOGTICVITY menjadi AOGTIVITY pada 6 Agustus
 2026. Runtime terbaru aktif melalui source
-`0cbde68e91d5e35779f4d5708e9c63ec29e056fe`, Hostinger
-`20260813T164834Z`, dan Vercel `dpl_Gxp1T1LCi1RfSYXo5n4qr3DtoXTm`.
+`70aa749764cdeb6a5bc59b36438c23e22c3a1e66`, Hostinger
+`20260813T171101Z`, dan Vercel `dpl_EvVDPn38C6R5h56oyRNdzT8abHu6`.
 Domain `aogticvities.fun` serta slug infrastruktur `aogticvity` tetap dipakai
 untuk kompatibilitas; AOGTICVITY hanya nama historis.
 Runtime ini menggabungkan visual event berdasarkan poster founder dan rundown
@@ -1928,7 +1928,11 @@ Plus Jakarta Sans dan canvas mobile-first tetap dipertahankan. Keputusan terbaru
 bersama tanpa Grup A/B. Migration 031-032 mengarsipkan jam dan arena lama, mengubah jadwal
 MySQL secara audited, dan menyediakan rollback tanpa membuat ulang atau
 menghapus kompetisi, peserta, roster, hasil, atau assignment operator.
-Typecheck, 145 test, build, 67/67 UI/WCAG, backup/restore drill, dan 14/14
+`DEC-076` menetapkan Pendopo Utama untuk lomba 1-2 dan Awarding & Closing,
+Lapangan A untuk lomba 3, 5, 7, 9, dan 10, serta Lapangan B untuk lomba 4, 6,
+dan 8. Migration 033 mengarsipkan arena lama dan menerapkan lokasi final secara
+audited/reversible tanpa mengubah ID maupun relasi kompetisi. Typecheck, 145
+unit/API, 28 MySQL integration, build, 67/67 UI/WCAG, backup/restore drill, dan 15/15
 public-domain regression lulus. Status `PRODUCTION_DEPLOYED /
 PRODUCTION_ACTIVATED`; operational human UAT tetap residual. Remote security
 gate memakai `nanoid` patched 3.3.18; audit npm/pnpm production nol

@@ -1070,3 +1070,17 @@ keputusan pengganti.
 | Pemberi keputusan | Andreas / founder |
 | Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; source `0cbde68e91d5e35779f4d5708e9c63ec29e056fe`, Hostinger `20260813T164834Z`, Vercel `dpl_Gxp1T1LCi1RfSYXo5n4qr3DtoXTm`, migration 031-032 |
 | Dokumen terkait | [AOGTIVITY Product](products/aogticvity/PRODUCT.md), [AOGTIVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTIVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |
+
+## DEC-076 - AOGTIVITY menetapkan lokasi final seluruh lomba
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-14 |
+| Topik | Lokasi lomba dan awarding |
+| Keputusan | Berdasarkan urutan agenda aktif, lomba 1-2 memakai Pendopo Utama; lomba 3, 5, 7, 9, dan 10 memakai Lapangan A; lomba 4, 6, dan 8 memakai Lapangan B; Awarding & Closing memakai Pendopo Utama. Ejaan lokasi pada antarmuka dinormalisasi tanpa mengubah maksud founder. |
+| Alasan | Peserta dan panitia membutuhkan lokasi final yang eksplisit dan konsisten pada agenda publik serta backend operasional. |
+| Alternatif yang dipertimbangkan | Mempertahankan arena lama; memakai kapitalisasi mentah yang tidak konsisten; mengubah urutan atau membuat ulang entitas lomba. |
+| Dampak | Agenda publik, schedule builder, reload API, master recap, MySQL, acceptance test, migration/archive, dan rollback mengikuti lokasi final. Registrasi, Opening AOGTIVITY, Break, waktu, urutan, sepuluh ID kompetisi, peserta, roster, hasil, operator, dan relasi data dipertahankan. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; source `70aa749764cdeb6a5bc59b36438c23e22c3a1e66`, Hostinger `20260813T171101Z`, Vercel `dpl_EvVDPn38C6R5h56oyRNdzT8abHu6`, migration 033 |
+| Dokumen terkait | [AOGTIVITY Product](products/aogticvity/PRODUCT.md), [AOGTIVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTIVITY Changelog](products/aogticvity/CHANGELOG.md) |

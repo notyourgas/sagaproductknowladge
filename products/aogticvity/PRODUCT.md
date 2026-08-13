@@ -313,11 +313,17 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:
   `cmp-10`, tetapi menjadi satu pertandingan bersama tanpa Grup A/B. Migration
   031 menggeser jam secara audited dan reversible tanpa membuat ulang atau
   menghapus kompetisi, peserta, roster, hasil, maupun assignment operator.
-- Rundown ini aktif melalui source runtime
-  `0cbde68e91d5e35779f4d5708e9c63ec29e056fe`, Hostinger
-  `20260813T164834Z`, dan Vercel `dpl_Gxp1T1LCi1RfSYXo5n4qr3DtoXTm`.
-  Backup/restore drill, 31 migration, preservation gate, dependency audit nol
-  vulnerability, 67/67 UI/WCAG, dan 14/14 production-domain acceptance lulus.
+- `CONFIRMED` melalui `DEC-076`: lokasi final menurut urutan lomba adalah
+  Pendopo Utama untuk lomba 1-2, Lapangan A untuk lomba 3, 5, 7, 9, dan 10,
+  Lapangan B untuk lomba 4, 6, dan 8, serta Pendopo Utama untuk Awarding &
+  Closing. Registrasi, Opening AOGTIVITY, Break, waktu, urutan, serta sepuluh ID
+  kompetisi tidak berubah.
+- Rundown dan lokasi final aktif melalui source runtime
+  `70aa749764cdeb6a5bc59b36438c23e22c3a1e66`, Hostinger
+  `20260813T171101Z`, Vercel `dpl_EvVDPn38C6R5h56oyRNdzT8abHu6`, dan migration
+  031-033. Backup/restore drill, preservation gate, 145 unit/API, 28 MySQL
+  integration, dependency audit nol vulnerability, 67/67 UI/WCAG, dan 15/15
+  production-domain acceptance lulus.
 - Security gate release juga memaksa dependency transitif `nanoid` ke versi
   patched 3.3.17; audit npm/pnpm production kembali nol vulnerability.
 - UI memakai `Pixel Matchday Arcade` yang tetap mobile-first 430 px: Plus

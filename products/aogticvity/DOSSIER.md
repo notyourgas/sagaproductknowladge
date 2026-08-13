@@ -7,7 +7,7 @@ content AOGTIVITY tetap jelas.
 
 ## Konteks dan status bukti
 
-- Updated: 8 Agustus 2026
+- Updated: 14 Agustus 2026
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED`
@@ -80,13 +80,19 @@ pertandingan bersama 18.50-19.20 tanpa Grup A/B, serta Awarding & Closing
 19.20-19.35. Schedule builder, reload API, UI publik, admin, migration MySQL
 031, audit, dan rollback memakai struktur yang sama. Seluruh 10 ID kompetisi
 dan relasi data dipertahankan.
-Kontrak ini aktif melalui source runtime
-`0cbde68e91d5e35779f4d5708e9c63ec29e056fe`, Hostinger
-`20260813T164834Z`, dan Vercel `dpl_Gxp1T1LCi1RfSYXo5n4qr3DtoXTm`.
-Gate release terbaru lulus 130 unit/API non-DB, typecheck, build, 66/66
-UI/WCAG, backup/restore disposable, dan 12/12 public-domain regression.
-Perubahan master tidak memerlukan migration MySQL; schema tetap pada migration
-027 dan 63 tabel lulus parity restore.
+`DEC-076` menetapkan lokasi final berdasarkan urutan agenda: Pendopo Utama
+untuk lomba 1-2, Lapangan A untuk lomba 3, 5, 7, 9, dan 10, Lapangan B untuk
+lomba 4, 6, dan 8, serta Pendopo Utama untuk Awarding & Closing. Ejaan lokasi
+dinormalisasi tanpa mengubah maksud founder. Registrasi, Opening AOGTIVITY,
+Break, jam, urutan, sepuluh ID kompetisi, peserta, roster, hasil, dan operator
+tetap dipertahankan.
+Kontrak rundown dan lokasi final aktif melalui source runtime
+`70aa749764cdeb6a5bc59b36438c23e22c3a1e66`, Hostinger
+`20260813T171101Z`, Vercel `dpl_EvVDPn38C6R5h56oyRNdzT8abHu6`, serta
+migration 031-033. Gate release lulus 145 unit/API, typecheck, build, 28 MySQL
+integration, 67/67 UI/WCAG, backup/restore disposable, preservation gate, dan
+15/15 public-domain regression. Migration 033 mengarsipkan arena lama dan
+menyediakan rollback tanpa membuat ulang entitas kompetisi.
 Release gate juga memaksa `nanoid` transitif ke 3.3.17; audit npm/pnpm runtime
 kembali nol vulnerability.
 Kartu alur `Dari daftar sampai podium` memakai tiga track tetap untuk badge

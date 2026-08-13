@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-14 - AOGTIVITY final venue sync
+
+- Informasi `CONFIRMED` dari Andreas dan runtime exact source
+  `70aa749764cdeb6a5bc59b36438c23e22c3a1e66`.
+- Lokasi final menurut urutan agenda: Pendopo Utama untuk lomba 1-2 dan
+  Awarding & Closing; Lapangan A untuk lomba 3, 5, 7, 9, dan 10; Lapangan B
+  untuk lomba 4, 6, dan 8. Waktu, urutan, ID, dan relasi data tidak berubah.
+- Migration 033, Hostinger `20260813T171101Z`, dan Vercel
+  `dpl_EvVDPn38C6R5h56oyRNdzT8abHu6` aktif setelah seluruh gate data,
+  rollback, build, UI/WCAG, dan production-domain lulus.
+- Delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated
+  operational UAT dan `BUSINESS_READY` tetap residual.
+
 ## 2026-08-13 - AOGTIVITY opening dan Name Tag single match sync
 
 - Informasi `CONFIRMED` dari Andreas dan runtime exact source
