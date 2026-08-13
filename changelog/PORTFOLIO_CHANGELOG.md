@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-13 - SagaView S202 recovery provenance correction
+
+- S169 `13e56581` terbukti sudah tercakup pada Studio production exact
+  `86b04c91` / release `20260811124309-86b04c9`.
+- Focused 13 unit dan 16 browser test recovery/session lulus, termasuk
+  checkpoint atomik, sanitasi, no-upload, dan 50/200/500 foto.
+- Status recovery/quota dikoreksi menjadi `PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / PRODUCTION_SCREENED`. Production dan produk SagaDev
+  lain tidak berubah; physical Windows permission/disk UAT tetap residual.
+
 ## 2026-08-13 - SagaBook S203 public security-header verification
 
 - Source `e67757fe15cdd388b3f59f9f21faeb17849b01e7` sudah dipush. Verifier

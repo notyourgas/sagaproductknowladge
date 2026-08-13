@@ -1,5 +1,14 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-13 - SagaView S202 recovery provenance sync
+
+- Informasi `CONFIRMED`: S169 `13e56581` adalah ancestor Studio production
+  `86b04c91`, sehingga status `IMPLEMENTED_NOT_DEPLOYED` lama tidak lagi benar.
+- Evidence fresh mencakup 13 unit, 16 Playwright, exact runtime/release,
+  rollback, health, dan service; semuanya read-only terhadap production.
+- Knowledge recovery/quota kini `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+  PRODUCTION_SCREENED`; `BUSINESS_READY` tetap menunggu UAT Windows nyata.
+
 ## 2026-08-13 - SagaBook S203 security-header verifier sync
 
 - Informasi `CONFIRMED` dari source SagaBook

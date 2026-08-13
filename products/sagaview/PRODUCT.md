@@ -1,6 +1,16 @@
 # SagaView Product Knowledge
 
-Updated: 12 Agustus 2026
+Updated: 13 Agustus 2026
+
+Audit S202 pada 13 Agustus 2026 mengoreksi provenance recovery/quota: S169
+`13e565814ed1c987e887b9024e87d6c0124c522d` adalah ancestor exact Studio
+production `86b04c9133fc7c28f6b4a6ff7c2aeb80d1480d58`, bukan kandidat yang masih
+menunggu deploy. Fresh 13 unit dan 16 browser test membuktikan recovery
+crash/reload, checkpoint atomik, sanitasi error, no-upload, serta matriks
+50/200/500 foto. Status recovery/quota kini `PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED / PRODUCTION_SCREENED`; UAT fisik Windows untuk cabut
+izin dan disk/quota penuh tetap residual sebelum `BUSINESS_READY`. Audit ini
+tidak mengubah source, runtime, foto, path lokal, API, atau database.
 
 Studio exact local commit
 `86b04c9133fc7c28f6b4a6ff7c2aeb80d1480d58` aktif sebagai release

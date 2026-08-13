@@ -1,5 +1,25 @@
 # SagaView Changelog
 
+## 2026-08-13 - S202 recovery/quota production provenance correction
+
+- Klasifikasi: `CONFIRMED`.
+- Status: `QA_VALIDATED / SECURITY_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / PRODUCTION_SCREENED`; production tidak berubah.
+- Before: ledger masih menyebut S169 `IMPLEMENTED_NOT_DEPLOYED`, walaupun exact
+  Studio production sudah membawa commit tersebut.
+- After: ancestry Git membuktikan S169
+  `13e565814ed1c987e887b9024e87d6c0124c522d` berada dalam Studio aktif
+  `86b04c9133fc7c28f6b4a6ff7c2aeb80d1480d58` / release
+  `20260811124309-86b04c9`.
+- Evidence: 13 unit dan 16 Playwright lulus untuk recovery crash/reload,
+  checkpoint atomik, sanitasi error, cleanup, no-upload, serta ingest
+  50/200/500 foto. Login/Session 200, runtime provenance exact, service aktif,
+  dan rollback `20260810091159-6d7083a` tetap terverifikasi.
+- Dampak: release berikutnya tidak lagi salah menganggap recovery S169 belum
+  aktif. UAT Windows nyata untuk permission revoke dan disk/quota penuh tetap
+  residual sebelum `BUSINESS_READY`; source, API, database, dan production
+  tidak dimutasi.
+
 ## 2026-08-12 - S196 authenticated Support Hub UAT gate
 
 - Klasifikasi: `CONFIRMED`.

@@ -12,14 +12,26 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-13T12:11:02+07:00 |
-| Branch aktif | `codex/s203-sagabook-header-verification` (sinkronisasi tooling SagaBook S203) |
+| Waktu pembaruan terakhir | 2026-08-13T13:16:00+07:00 |
+| Branch aktif | `codex/s202-sagaview-recovery-ledger` (koreksi provenance recovery SagaView) |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `bb1b9888d5c4b0a98b18b82216a2e5838c65f79e` |
-| Informasi terakhir disinkronkan | SagaBook S203 source `e67757fe` menambahkan profile security header public-safe; runtime tetap S199, HTTP 3/3, tetapi activation gate gagal pada dua login. |
+| Baseline sebelum pembaruan | `da88faa8492079147c2cca3c1ee159686d1d1f17` |
+| Informasi terakhir disinkronkan | SagaView S169 `13e56581` terbukti ancestor Studio production `86b04c91`; recovery/quota dikoreksi menjadi production screened. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
-| Konflik | Tidak ada pada lineage fast-forward SagaBook S199 -> S201 -> S202 -> S203; checkout main lokal yang divergen tidak disentuh. |
-| Error | Activation harus diverifikasi ulang setelah normalisasi header login; SagaBook juga belum `BUSINESS_READY` karena authenticated UAT nyata, dua studio pilot, dan provider canary masih residual. |
+| Konflik | Checkout main lokal yang divergen tidak disentuh; perubahan dibuat dari exact `origin/main` pada worktree terisolasi. |
+| Error | Tidak ada error produk baru. Physical Windows permission/disk UAT tetap residual sebelum `BUSINESS_READY`. |
+
+## File yang berubah pada sinkronisasi ini (SagaView S202 recovery provenance)
+
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/DOSSIER.md`
+- `products/sagaview/CHANGELOG.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaBook S203 security header)
 
