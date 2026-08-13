@@ -1,5 +1,14 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-13 - SagaView S203 Owner entitlement provenance sync
+
+- Informasi `CONFIRMED`: S160 `28e0ab9b` adalah ancestor backend SagaView
+  production `475db4c2`; status `IMPLEMENTED_NOT_DEPLOYED` lama tidak lagi benar.
+- Evidence fresh: 47 route guard owner, blob middleware identik, 7 test dengan
+  241 assertion, probe auth anonim, exact release/rollback, service, dan journal.
+- Knowledge menjadi `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+  PRODUCTION_SCREENED`; akun production dan data tenant tidak digunakan.
+
 ## 2026-08-13 - SagaBook S204 header ownership sync
 
 - Informasi `CONFIRMED` dari source SagaBook

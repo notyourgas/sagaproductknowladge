@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-13 - SagaView S203 Owner entitlement provenance correction
+
+- S160 `28e0ab9b` terbukti sudah tercakup pada backend production exact
+  `475db4c2` / release `20260811190515-475db4c`.
+- 47/47 route memakai guard owner; fresh 7 test/241 assertion untuk owner,
+  non-owner, role palsu, device limit, membership, tenant, dan no-write lulus.
+- Status dikoreksi menjadi `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+  PRODUCTION_SCREENED`. Production dan produk SagaDev lain tidak berubah;
+  authenticated UAT sintetis tetap residual.
+
 ## 2026-08-13 - SagaBook S204 single-owner security header
 
 - Source `2add43c0b7eaedf7db444ffe3a1330be9e80d813` sudah dipush. Production

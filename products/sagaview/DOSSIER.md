@@ -1,5 +1,19 @@
 # SagaView Dossier
 
+## S203 Owner entitlement production provenance correction
+
+Audit read-only membuktikan S160
+`28e0ab9b8159426633d88d52b68b5f713fa86aa2` berada dalam backend aktif
+`475db4c21b00440004d88b8f876e3eb38aea6be0` / release
+`20260811190515-475db4c`. Middleware owner mempunyai blob Git identik, dan
+47/47 route Owner Surface masih memakainya. Fresh 7 test dengan 241 assertion
+meliputi owner positif, admin/staff, role sesi palsu, batas device, membership
+nonaktif, tenant mismatch, dan no-write activation token. Probe anonim
+mengarah ke login atau concealment 404 yang aman; current/rollback, service,
+health, dan journal tetap sehat. Status `SECURITY_VALIDATED /
+DATA_INTEGRITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+PRODUCTION_SCREENED`; authenticated UAT akun sintetis tetap residual.
+
 ## S202 recovery/quota production provenance correction
 
 Audit read-only membuktikan S169

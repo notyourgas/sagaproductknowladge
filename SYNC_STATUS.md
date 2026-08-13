@@ -12,14 +12,26 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-13T13:26:31+07:00 |
-| Branch aktif | `codex/s204-sagabook-header-ownership` (sinkronisasi candidate SagaBook S204) |
+| Waktu pembaruan terakhir | 2026-08-13T14:09:00+07:00 |
+| Branch aktif | `codex/s203-sagaview-owner-entitlement-ledger` (koreksi provenance Owner SagaView) |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `d5f4fff0608206f577828a7a4677a1bcb71f79cc` |
-| Informasi terakhir disinkronkan | SagaBook S204 source `2add43c0` menetapkan edge sebagai pemilik tunggal header anti-MIME dengan fallback aplikasi; production belum berubah. |
+| Baseline sebelum pembaruan | `c85ba02fa64e198ad4c8156b7bce2f7c2906673f` |
+| Informasi terakhir disinkronkan | SagaView S160 `28e0ab9b` terbukti ancestor backend production `475db4c2`; Owner entitlement dikoreksi menjadi production screened. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
 | Konflik | Checkout main lokal yang divergen tidak disentuh; perubahan dibuat dari exact `origin/main` pada worktree terisolasi. |
-| Error | Activation SagaBook menunggu deployment berizin dan verifier S203 hijau; authenticated UAT, pilot, dan provider canary tetap residual sebelum `BUSINESS_READY`. |
+| Error | Refresh advisory Composer timeout; dependency lock dan runtime tidak berubah. Authenticated Owner UAT sintetis tetap residual sebelum `BUSINESS_READY`. |
+
+## File yang berubah pada sinkronisasi ini (SagaView S203 Owner entitlement)
+
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/DOSSIER.md`
+- `products/sagaview/CHANGELOG.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaBook S204 header ownership)
 
