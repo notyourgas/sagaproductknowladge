@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-14 - SagaView S200 Owner Support Hub browser contract
+
+- Browser Owner kini membuktikan bootstrap/ask 200, scope `sagaview`, flag
+  no-upload, metadata allowlist, serta jawaban lokal yang benar-benar dirender;
+  peringatan data aman tetap terlihat selama percakapan.
+- Source `c3d4bc5412ff70495bfae6498b21f73b464c04ad` sudah dipush; build,
+  Playwright Owner mobile+desktop 2/2, regresi widget bersama, backend 34/34
+  dengan 176 assertion, dan audit dependency lulus.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PUSHED`; production
+  SagaView tetap `20260813152501-ff0c178`, SagaBook dan produk lain tidak
+  berubah, serta tidak ada foto/path/output customer yang diunggah.
+
 ## 2026-08-14 - SagaView S199 Owner Support Hub candidate
 
 - Owner Console kini memasang launcher dan panel Support Hub bersama saat

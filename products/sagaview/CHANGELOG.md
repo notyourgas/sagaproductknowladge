@@ -1,5 +1,25 @@
 # SagaView Changelog
 
+## 2026-08-14 - S200 Owner Support Hub browser contract candidate
+
+- Klasifikasi: `CONFIRMED`.
+- Before: launcher S199 sudah terlihat, tetapi bootstrap/ask, scope produk,
+  allowlist metadata, dan render jawaban belum dibuktikan dalam kontrak browser;
+  peringatan data aman juga hilang setelah percakapan memiliki pesan.
+- After: browser membuktikan `GET /api/admin/support/bootstrap` dan
+  `POST /api/admin/support/ask` berstatus 200, response memakai product code
+  `sagaview`, flag no-upload aktif, payload hanya membawa metadata aman, jawaban
+  lokal dirender, dan peringatan data aman tetap terlihat sepanjang percakapan.
+- Evidence: source exact
+  `c3d4bc5412ff70495bfae6498b21f73b464c04ad`; build 5.097 modul,
+  Playwright Owner 2/2 pada 390x844 dan 1440x900, regresi widget bersama,
+  backend 34/34 dengan 176 assertion, npm audit nol vulnerability, Composer
+  audit nol advisory, dan worktree exact commit bersih.
+- Status: `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PUSHED`. Production
+  tetap `20260813152501-ff0c178`; tidak ada deploy, migration, perubahan
+  database, atau upload foto/path/output customer. Perilaku SagaBook tidak
+  diubah.
+
 ## 2026-08-14 - S199 Owner Support Hub discoverability candidate
 
 - Klasifikasi: `CONFIRMED`.
