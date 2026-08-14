@@ -1,5 +1,20 @@
 # SagaView Changelog
 
+## 2026-08-14 - S204 Owner Support Hub strict no-upload candidate
+
+- Klasifikasi: `CONFIRMED` privacy correction.
+- Before: production S201 mengembalikan flag no-upload dan peringatan lokal,
+  tetapi widget Owner masih merender kontrol upload screenshot dan endpoint
+  menerima upload bila dipanggil langsung.
+- After: source exact `82aa973312d112c43ad12e0b63857ea271f5a2be`
+  menghapus surface upload dari SagaView dan membuat endpoint Owner fail-closed
+  404 tanpa menyimpan attachment; kontrol SagaBook tetap tersedia.
+- Evidence: focused red terbukti, backend 35/35 dengan 179 assertion,
+  Playwright SagaView mobile+desktop 2/2, regresi SagaBook 1/1, build 5.097
+  modul, serta npm/Composer audit nol advisory.
+- Delivery: `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+  Production tetap S201 sampai guarded deploy S204 diotorisasi dan lulus.
+
 ## 2026-08-14 - S201 Owner Support Hub production activation
 
 - Klasifikasi: `CONFIRMED`.

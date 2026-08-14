@@ -1,8 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 14 Agustus 2026 17:20 WIB
+Evidence cut-off: 14 Agustus 2026 19:15 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
+
+Koreksi SagaView S204: source
+`82aa973312d112c43ad12e0b63857ea271f5a2be` sudah
+`PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED` untuk menutup upload
+screenshot Owner Support Hub secara UI dan endpoint. Production tetap S201;
+flag no-upload S201 tidak boleh ditafsirkan sebagai no-upload end-to-end sampai
+S204 aktif dan diverifikasi.
 
 ## Tujuan
 

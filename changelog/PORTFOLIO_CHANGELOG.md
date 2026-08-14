@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-14 - SagaView S204 Support Hub no-upload candidate
+
+- Audit privacy menemukan kontrol upload screenshot masih tersedia di Owner
+  Support Hub production S201 meski bootstrap menyatakan no-upload.
+- Kandidat `82aa973312d112c43ad12e0b63857ea271f5a2be` menghilangkan kontrol
+  untuk SagaView dan menolak endpoint upload dengan 404 tanpa write; SagaBook
+  tidak berubah.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+  masih S201 dan memerlukan guarded deploy terpisah.
+
 ## 2026-08-14 - SagaView S201 Support Hub production
 
 - Owner Console production kini menampilkan launcher/panel Support Hub pada

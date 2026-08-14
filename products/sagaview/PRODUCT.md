@@ -2,6 +2,14 @@
 
 Updated: 14 Agustus 2026
 
+Koreksi privacy S204: audit setelah aktivasi S201 menemukan Owner Support Hub
+masih menampilkan kontrol upload screenshot walau bootstrap menyatakan
+no-upload. Kandidat exact `82aa973312d112c43ad12e0b63857ea271f5a2be`
+menyembunyikan kontrol tersebut untuk SagaView, menolak request upload dengan
+404 sebelum validasi file, dan mempertahankan perilaku SagaBook. Kandidat sudah
+`PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production S201 belum
+berubah dan belum boleh disebut no-upload end-to-end sampai S204 dideploy.
+
 Support Hub Owner S199-S200 sekarang aktif melalui release backend S201
 `20260814170455-c3d4bc5` dari source exact
 `c3d4bc5412ff70495bfae6498b21f73b464c04ad`. Launcher tersedia pada desktop
