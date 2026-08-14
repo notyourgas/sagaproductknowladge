@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-08-14 - AOGTIVITY kandidat taxonomy VOLTAGE
+
+- `DEC-077` menetapkan kategori `VOLTAGE` dengan stable code `Voltage` dan satu
+  subkategori `ALL CG VOLTAGE` untuk registrasi komunitas.
+- Source kandidat `04ac3fa` lulus unit/API, UI/WCAG, build, migration 001-034,
+  rollback/reapply 034, dan 29 MySQL integration tanpa mutasi production.
+- Status `IMPLEMENTED_NOT_DEPLOYED`; runtime AOGTIVITY tetap pada release dan
+  migration sebelumnya. Produk SagaDev lain tidak berubah.
+
 ## 2026-08-14 - AOGTIVITY lokasi final production
 
 - Lokasi final aktif: Pendopo Utama untuk lomba 1-2 dan Awarding & Closing;

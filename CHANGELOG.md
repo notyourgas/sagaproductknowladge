@@ -1,5 +1,22 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-14 - AOGTIVITY VOLTAGE taxonomy candidate sync
+
+- Ringkasan: menambahkan fakta kanonik kategori `VOLTAGE`, stable code
+  `Voltage`, dan subkategori tunggal `ALL CG VOLTAGE` melalui `DEC-077`.
+- Alasan: menyelaraskan product, technical, registration, reporting, dan
+  release knowledge dengan keputusan founder terbaru.
+- Produk/area: AOGTIVITY registration taxonomy, API, MySQL migration 034,
+  spreadsheet projection, dan release governance.
+- Klasifikasi: `CONFIRMED`; source kandidat `04ac3fa`, branch
+  `codex/aogtivity-voltage-taxonomy`.
+- Delivery: `IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah. Gate kandidat
+  lulus 146 unit/API, 29 MySQL integration, 67/67 UI/WCAG, typecheck, build,
+  migration 001-034, rollback 034, dan reapply 034.
+- File knowledge: product/dossier/changelog AOGTIVITY, master, decisions, gaps,
+  portfolio/root changelog, dan sync status. Next action: guarded production
+  deployment serta public smoke setelah persetujuan terpisah.
+
 ## 2026-08-14 - AOGTIVITY final venue sync
 
 - Informasi `CONFIRMED` dari Andreas dan runtime exact source

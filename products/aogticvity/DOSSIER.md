@@ -11,6 +11,7 @@ content AOGTIVITY tetap jelas.
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED`
+- Kandidat taxonomy VOLTAGE: `IMPLEMENTED_NOT_DEPLOYED`
 
 ## Overview produk
 
@@ -161,7 +162,7 @@ lama sampai DNS, TLS, serta public smoke lulus. Rollback langsung tetap
 Hostinger `20260804T164327Z` dan Vercel
 `dpl_5pVdzKAGfZVv4w41cLborLhDFv4Z`.
 
-Taxonomy komunitas final mempunyai tiga kategori utama: `TEEN` dengan enam
+Taxonomy komunitas production mempunyai tiga kategori utama: `TEEN` dengan enam
 subcategory `CG teen`, `SOUTH, WEST, CENTRAL` dengan delapan subcategory `CG
 youth`, serta `Other Region` dengan `AOG Ponorogo` dan `AOG Magetan`. Form,
 API validation, admin display, export, team balancing, dan constraint MySQL
@@ -170,6 +171,14 @@ submission baru; record historis tetap dapat dibaca sebagai legacy dan tidak
 dipetakan secara spekulatif. Penambahan `Other Region` aktif melalui migration
 024, Hostinger `20260806T055642Z`, dan Vercel production
 `dpl_4RtjNcViWkxN3fZSTZ15VWiumy5G`.
+
+`DEC-077` menambahkan kandidat kategori keempat `VOLTAGE` dengan stable code
+`Voltage` dan satu-satunya subkategori `ALL CG VOLTAGE`. Source `04ac3fa`
+menyelaraskan form publik/admin, kontrak API, proyeksi laporan, dan constraint
+MySQL migration 034. Gate kandidat lulus 146 unit/API, 29 MySQL integration,
+67/67 UI/WCAG, typecheck, build, serta rollback/reapply migration disposable.
+Status tetap `IMPLEMENTED_NOT_DEPLOYED`; production masih menjalankan taxonomy
+tiga kategori dan migration 033 sampai guarded deployment terpisah disetujui.
 
 Admin Control Center memetakan aksi CRUD/lifecycle untuk anggota, tim, lomba,
 roster, rundown, hasil, pengumuman, akun, WhatsApp, dan audit. Anggota dapat

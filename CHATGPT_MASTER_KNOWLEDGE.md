@@ -2034,6 +2034,12 @@ Source `e38de48b2e8a88d7a7e2ac8aa54b0af9e398b38c`, Hostinger
 024 kemudian menambah `Other Region` dengan `AOG Ponorogo` dan `AOG Magetan`.
 Form, API, admin/export, dan database memakai kontrak yang sama; nilai demo
 lama hanya dipertahankan sebagai legacy read-only dan tidak muncul di form.
+`DEC-077` menetapkan kandidat kategori keempat `VOLTAGE` dengan stable code
+`Voltage` dan tepat satu subkategori `ALL CG VOLTAGE`. Source `04ac3fa` sudah
+lulus 146 unit/API, 29 MySQL integration, 67/67 UI/WCAG, typecheck, build,
+serta migration 034 rollback/reapply pada database disposable. Statusnya
+`IMPLEMENTED_NOT_DEPLOYED`; jangan menyebut VOLTAGE sudah tersedia di
+production sampai guarded deployment dan public smoke terverifikasi.
 Source `ecaa63f42deaf61e0777959853106e61e4b0bbc3`, Hostinger
 `20260803T221158Z`, Vercel `dpl_9jKWEEKDQJkszwBGNyyNYTpBs2CJ`, dan migration
 018 mengaktifkan Admin Control Center, create/edit/archive anggota, serta

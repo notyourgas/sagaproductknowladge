@@ -12,14 +12,26 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-14T00:18:00+07:00 |
-| Branch aktif | `codex/aogtivity-knowledge-venues` |
+| Waktu pembaruan terakhir | 2026-08-14T11:48:56+07:00 |
+| Branch aktif | `codex/aogtivity-knowledge-voltage` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `a33cbd47083bc3b622f07bdb7b0e38c66d362eb4` |
-| Informasi terakhir disinkronkan | AOGTIVITY source `70aa7497` aktif dengan lokasi final sepuluh lomba dan Awarding & Closing sesuai `DEC-076`; rundown, ID, dan relasi data dipertahankan. |
+| Baseline sebelum pembaruan | `16c8b59c1fe43d039066eaf354908c32d4cca0a7` |
+| Informasi terakhir disinkronkan | `DEC-077` menambahkan kandidat AOGTIVITY `VOLTAGE`/`ALL CG VOLTAGE` pada source `04ac3fa`; status `IMPLEMENTED_NOT_DEPLOYED`, production tetap pada taxonomy sebelumnya. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
 | Konflik | Worktree utama lokal tertinggal dan memiliki commit lokal; sinkronisasi dilakukan dari worktree terisolasi berbasis `origin/main` tanpa menimpa histori tersebut. |
-| Error | Tidak ada blocker deployment. Authenticated operational UAT AOGTIVITY tetap residual. |
+| Error | Guarded production deployment dan public smoke VOLTAGE belum dilakukan; authenticated operational UAT AOGTIVITY tetap residual. |
+
+## File yang berubah pada sinkronisasi ini (AOGTIVITY VOLTAGE candidate)
+
+- `products/aogticvity/PRODUCT.md`
+- `products/aogticvity/DOSSIER.md`
+- `products/aogticvity/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `DECISIONS.md`
+- `GAPS.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
 
 ## File yang berubah pada sinkronisasi ini (AOGTIVITY lokasi final)
 

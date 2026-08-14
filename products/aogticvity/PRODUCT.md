@@ -1,7 +1,7 @@
 # AOGTIVITY Product Knowledge
 
-Updated: 10 Agustus 2026
-Evidence status: public Vercel delivery + database-backed auth, registration, team, and event-day operations runtime
+Updated: 14 Agustus 2026
+Evidence status: public Vercel runtime + kandidat taxonomy VOLTAGE yang sudah tervalidasi tetapi belum dideploy
 
 ## Tujuan dokumen
 
@@ -175,6 +175,11 @@ kompatibel.
   `Other Region` dengan kode stabil `OtherRegion`. Subcategory yang sah hanya
   `AOG Ponorogo` dan `AOG Magetan`. Form publik/admin, API, export, dan
   constraint MySQL memakai kontrak yang sama serta menolak pasangan silang.
+- `CONFIRMED` melalui `DEC-077`: kandidat source `04ac3fa` menambah kategori
+  `VOLTAGE` dengan kode stabil `Voltage` dan tepat satu subkategori
+  `ALL CG VOLTAGE`. Form publik/admin, API, proyeksi laporan, serta migration
+  034 memakai kontrak yang sama. Statusnya `IMPLEMENTED_NOT_DEPLOYED`; runtime
+  production dan migration aktif belum berubah.
 - Source `ecaa63f42deaf61e0777959853106e61e4b0bbc3`, Hostinger release
   `20260803T221158Z`, Vercel production
   `dpl_9jKWEEKDQJkszwBGNyyNYTpBs2CJ`, dan migration 018 mengaktifkan Admin

@@ -809,6 +809,11 @@ ketika keputusan atau release baru menutup gap.
   dipertahankan sebagai legacy read-only; keputusan koreksi/penghapusan tiap
   record tetap memerlukan verifikasi pemilik data dan tidak menjadi blocker
   submission baru.
+- `DEC-077` menambah kandidat `VOLTAGE`/`ALL CG VOLTAGE` melalui source
+  `04ac3fa` dan migration 034. Gate kandidat/disposable lulus, tetapi statusnya
+  `IMPLEMENTED_NOT_DEPLOYED`; production belum menampilkan kategori ini.
+  Next action: guarded deployment, migration dengan backup terverifikasi, dan
+  public smoke terpisah.
 - Jalur VIP `/register/guest` dan access policy migration 021 sudah
   `PRODUCTION_DEPLOYED`. `NEEDS CONFIRMATION`: satu UAT nyata dari submit VIP,
   pending WhatsApp, approval tanpa tim, perubahan TTL, open/close unused link,
