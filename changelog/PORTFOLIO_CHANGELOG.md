@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-14 - SagaView S199 Owner Support Hub candidate
+
+- Owner Console kini memasang launcher dan panel Support Hub bersama saat
+  feature flag aktif; sebelumnya widget tidak pernah dirender pada shell Owner.
+- Source `3aee0ad89c317fbc0e538b8fca822fcb031fdf69` sudah dipush; build,
+  Playwright mobile+desktop 2/2, backend 34/34 dengan 176 assertion, serta audit
+  npm/Composer lulus.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PUSHED`; production
+  SagaView tetap `20260813152501-ff0c178`, foto/path/output customer dan produk
+  SagaDev lain tidak berubah.
+
 ## 2026-08-14 - SagaDevs mobile-first bio directory production
 
 - Route `sagadevs.com/bio` aktif sebagai link directory satu kolom maksimal 440 px dan tidak ditautkan dari homepage.

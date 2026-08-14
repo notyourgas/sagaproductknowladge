@@ -1,6 +1,19 @@
 # SagaView Product Knowledge
 
-Updated: 13 Agustus 2026
+Updated: 14 Agustus 2026
+
+Kandidat S199 memasang Support Hub bersama pada Owner Console SagaView ketika
+feature flag bantuan aktif. Sebelumnya route/API dan widget sudah tersedia,
+tetapi shell Owner tidak merender launcher sehingga `Bantuan AI` hilang pada
+desktop dan mobile. Source exact
+`3aee0ad89c317fbc0e538b8fca822fcb031fdf69` sudah dipush dan lulus build,
+browser 2/2 pada 390x844 serta 1440x900, regresi backend 34/34 dengan 176
+assertion, dan audit npm/Composer tanpa advisory. Launcher serta panel tetap di
+dalam viewport, target launcher minimal 44 piksel, dan copy menegaskan foto
+customer tetap local-first serta melarang password, OTP, dan API key. Status
+`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PUSHED`; production tetap source
+`ff0c178fe84b36d02fc530a051b0ebc4588715c0` / release
+`20260813152501-ff0c178` dan belum berubah.
 
 Owner Changelog S198 sekarang aktif di production. Source
 `ff0c178fe84b36d02fc530a051b0ebc4588715c0` berjalan sebagai release

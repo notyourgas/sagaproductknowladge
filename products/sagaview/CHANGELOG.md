@@ -1,5 +1,23 @@
 # SagaView Changelog
 
+## 2026-08-14 - S199 Owner Support Hub discoverability candidate
+
+- Klasifikasi: `CONFIRMED`.
+- Before: endpoint dan widget Support Hub bersama tersedia, tetapi Owner Console
+  SagaView tidak merender launcher sehingga bantuan tidak dapat ditemukan pada
+  desktop maupun mobile.
+- After: Owner Console merender `SupportHubWidget` hanya ketika feature flag
+  bantuan aktif; launcher 44 piksel dan panel tetap di dalam viewport serta
+  mempertahankan copy local-first dan larangan mengirim credential.
+- Evidence: source exact
+  `3aee0ad89c317fbc0e538b8fca822fcb031fdf69`; build production lulus,
+  Playwright mobile+desktop 2/2, backend Support Hub/device support 34/34 dengan
+  176 assertion, npm audit nol vulnerability, Composer audit nol advisory, dan
+  worktree exact commit bersih.
+- Status: `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PUSHED`. Production
+  tetap `20260813152501-ff0c178`; tidak ada deploy, migration, perubahan
+  database, atau upload foto/path/output customer.
+
 ## 2026-08-13 - S198 Owner Changelog production activation
 
 - Klasifikasi: `CONFIRMED`.
