@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 14 Agustus 2026 23:13 WIB
+Evidence cut-off: 15 Agustus 2026 00:45 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -68,6 +68,23 @@ nyata lengkap; `BUSINESS_READY` tetap membutuhkan UAT nyata, dua studio pilot,
 dan canary.
 
 ## Ringkasan produk
+
+### SagaTech
+
+Website kemitraan Self Photo Studio dan Photobooth yang berfungsi sebagai
+brosur, portofolio, dan qualification system. Harga publik mulai Rp55 juta
+untuk Self Photo dan Rp45 juta untuk Photobooth; harga final mengikuti proposal.
+
+Scope 2 production memakai Decision Studio, Market Lens, Fit Engine policy
+`2026.08-v15`, Risk Map, contextual comparison, Proof Lens, dan Decision
+Passport lokal yang dapat diekspor atau dikirim ke WhatsApp oleh pengguna.
+Outcome dapat `not-ready` atau `compare`; website tidak menjamin ROI, BEP,
+omzet, kelayakan investasi, atau status waralaba.
+
+Production `dpl_GTQ96ZbwH3RxxvyTqzZcwD3xHce1` aktif pada
+`sagatech.vercel.app`; status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+NOT_BUSINESS_READY` karena Linktree/PDF lama, analytics persistence,
+real-device UAT, dan Git remote kanonik masih residual.
 
 ### SagaDevs
 

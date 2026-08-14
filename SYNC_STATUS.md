@@ -12,14 +12,27 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-14T23:13:00+07:00 |
-| Branch aktif | `codex/s201-sagaview-production-knowledge` pada worktree terisolasi exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-15T00:45:00+07:00 |
+| Branch aktif | `main` pada clone terisolasi exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `eb27db041ab104af7c4789855bf5b4b26e6c83da` |
-| Informasi terakhir disinkronkan | SagaView S204 source `82aa973312d112c43ad12e0b63857ea271f5a2be` memiliki release archive `20260814231346-82aa973` yang lulus rehearsal disposable dan dua salinan hash-identik; production tetap S201. |
+| Baseline sebelum pembaruan | `9e365c8bd903744a08dd8f945e32fbb6a3f434a3` |
+| Informasi terakhir disinkronkan | SagaTech Scope 2 v15 production dengan Fit Engine, Risk Map, Proof Lens, Decision Passport, deployment `dpl_GTQ96ZbwH3RxxvyTqzZcwD3xHce1`, dan rollback tercatat. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
-| Konflik | Checkout knowledge utama lokal tidak disentuh; sinkronisasi dilakukan dari worktree terisolasi exact `origin/main`. |
-| Error | Blocker BOM dan cached-root package S204 tertutup. Guarded deploy belum diotorisasi; authenticated Owner Support Hub UAT dan business readiness tetap residual operasional. |
+| Konflik | Checkout knowledge utama lokal yang ahead/behind tidak disentuh; sinkronisasi dilakukan dari clone terisolasi exact `origin/main`. |
+| Error | Tidak ada error sinkronisasi. Linktree/PDF, analytics persistence, real-device UAT, dan Git remote SagaTech tetap residual sebelum business readiness. |
+
+## File yang berubah pada sinkronisasi ini (SagaTech Scope 2 v15)
+
+- `products/sagatech/PRODUCT.md`
+- `products/sagatech/DOSSIER.md`
+- `products/sagatech/CHANGELOG.md`
+- `INDEX.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `DECISIONS.md`
+- `GAPS.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaView S204 release package)
 

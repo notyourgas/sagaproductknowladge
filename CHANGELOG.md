@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-15 - SagaTech Scope 2 v15 production sync
+
+- Informasi `CONFIRMED` dari keputusan Andreas, source manifest
+  `0cf764da2facff05387d5007b6b42b08ab8833450153cef7a6adb8394ea94cb4`,
+  dan runtime public yang diverifikasi pada 15 Agustus 2026.
+- SagaTech ditambahkan sebagai produk kanonik dengan positioning, harga,
+  qualification journey, proof governance, privacy, release, dan residual gate.
+- Delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; business readiness
+  tetap tertahan oleh Linktree/PDF, analytics persistence, real-device UAT, dan
+  repository source kanonik.
+- Dokumen terdampak: SagaTech product/dossier/changelog, index, decision, gaps,
+  portfolio/master changelog, root changelog, dan sync status.
+
 ## 2026-08-14 - SagaView S204 release-package blocker closure
 
 - Informasi `CONFIRMED` dari source exact

@@ -28,6 +28,7 @@ ketika keputusan atau release baru menutup gap.
 | GAP-005 | COYABAG | NEEDS CONFIRMATION | Katalog final, identitas seller, pajak/legal, payment, shipping, dan kebijakan belum dikunci. | Data owner yang disetujui dan UAT transaksi nyata. |
 | GAP-006 | Semua produk berbayar | NEEDS CONFIRMATION | Kebijakan pajak, invoice, refund, dunning, grace, dan SLA komersial lintas produk belum disatukan. | Policy founder/legal yang disetujui per produk. |
 | GAP-007 | Semua produk | NEEDS CONFIRMATION | Owner data-retention, deletion SLA, incident contact, dan subprocessor list belum lengkap untuk semua produk. | Policy per produk, owner, dan tanggal berlaku. |
+| GAP-008 | SagaTech | NEEDS CONFIRMATION | Business readiness belum tercapai karena Linktree/PDF lama, persistensi analytics, UAT perangkat nyata, dan repository source kanonik belum ditutup. | Linktree owner UAT, dashboard/network evidence analytics, iPhone/Android UAT, serta Git remote dan source push SagaTech. |
 
 ## Keputusan produk
 

@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-079 - SagaTech Scope 2 menjadi qualification system
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-15 |
+| Topik | Positioning dan journey kemitraan SagaTech |
+| Keputusan | Scope 2 harus membantu calon mitra memilih model berdasarkan konteks operasi, sumber permintaan, budget, timeline, kesiapan, risiko, dan bukti sebelum handoff WhatsApp; sistem boleh menyatakan belum siap dan tidak boleh menjanjikan hasil finansial. |
+| Alasan | Brosur harga saja tidak cukup menyaring kecocokan atau membangun trust yang dapat diperiksa. |
+| Alternatif yang dipertimbangkan | Halaman paket statis; kalkulator ROI sebagai jalur utama; CTA WhatsApp tanpa brief. |
+| Dampak | Decision Studio, Fit Engine, Risk Map, Proof Lens, dan Decision Passport menjadi journey kanonik Scope 2. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED`; production active pada `dpl_GTQ96ZbwH3RxxvyTqzZcwD3xHce1` |
+| Dokumen terkait | [SagaTech Product](products/sagatech/PRODUCT.md), [SagaTech Dossier](products/sagatech/DOSSIER.md), [SagaTech Changelog](products/sagatech/CHANGELOG.md) |
+
 ## DEC-073 - SagaBook menyamarkan nomor customer secara default di admin
 
 | Field | Isi |

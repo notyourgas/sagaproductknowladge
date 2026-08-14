@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-15 - SagaTech Scope 2 Qualification OS production
+
+- Website kemitraan mengubah Scope 2 menjadi qualification flow: Market Lens,
+  Fit Engine policy `2026.08-v15`, Risk Map, contextual comparison, Proof Lens,
+  dan portable Decision Passport.
+- Instagram `@notyourgas` dipakai sebagai Operator/Field Note dengan provenance
+  dan batas klaim; Project Archive tetap dipisahkan dari bukti finansial.
+- Production `dpl_GTQ96ZbwH3RxxvyTqzZcwD3xHce1` aktif pada
+  `sagatech.vercel.app`; rollback `dpl_5DAsu8Gz1bq4ecwuwDnYjKMoFfbE` tersedia.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / NOT_BUSINESS_READY`;
+  Linktree owner action, analytics persistence, real-device UAT, dan Git remote
+  SagaTech kanonik tetap residual.
+
 ## 2026-08-14 - SagaView S204 Support Hub no-upload candidate
 
 - Audit privacy menemukan kontrol upload screenshot masih tersedia di Owner
