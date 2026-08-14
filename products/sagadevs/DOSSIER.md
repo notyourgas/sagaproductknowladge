@@ -6,11 +6,11 @@ Menjadi rujukan publik untuk positioning, experience, technical boundary, dan re
 
 ## Konteks dan status bukti
 
-- Updated: 31 Juli 2026.
+- Updated: 14 Agustus 2026.
 - Delivery: `PRODUCTION_DEPLOYED` pada Vercel.
 - Activation: `PRODUCTION_ACTIVATED` pada `sagadevs.com`.
 - Business readiness: `NEEDS_CONFIRMATION`.
-- Evidence: production release `source-preserving-hero-scale-v4`, versioned 3D entry module, health, security headers, static/browser/accessibility gate, visual audit sembilan viewport, protected Preview, promotion, dan public-domain browser regression. Release redesign sebelumnya ditolak.
+- Evidence: production deployment `dpl_FZA1XUs3G4YKymqkqaFCMHnrAx3A`, rollback `dpl_5qvER4vn4H8m2CmpgmEtkcbnNxcU`, health, security headers, static/browser/accessibility gate, protected Preview, founder UAT, exact-candidate promotion, public-domain homepage regression empat viewport, serta bio regression desktop/mobile. Release redesign sebelumnya ditolak.
 
 ## Overview produk
 
@@ -49,6 +49,7 @@ Satu hub yang menunjukkan bukti workflow asli dan meneruskan pengunjung ke produ
 - Responsive navigation dan accessible keyboard controls.
 - Compact WhatsApp CTA dan footer lengkap dengan navigasi, direct product links, contact, availability, copyright, serta back-to-top.
 - Component-safe product titles, repositioned 3D hero, coherent CTA hierarchy, restrained reveal/product motion, reduced-motion fallback, dan offscreen WebGL pause.
+- Route tersembunyi dari homepage `sagadevs.com/bio` dengan shell mobile-first maksimal 440 px, website utama, dropdown delapan portfolio tertutup secara default, dan CTA Contact Us ke WhatsApp.
 
 ## Fitur MVP
 
@@ -56,7 +57,7 @@ Static public landing, sembilan preview image, link landing produk, WhatsApp con
 
 ## Roadmap
 
-`PROPOSAL`: tambahkan portfolio client setelah evidence dan izin publik tersedia. `PROPOSAL`: bangun Super Admin terpisah ketika kebutuhan publishing dan lead management sudah terdefinisi.
+`CONFIRMED`: link directory `/bio` memuat delapan portfolio yang dipilih founder. `PROPOSAL`: bangun Super Admin terpisah ketika kebutuhan publishing dan lead management sudah terdefinisi.
 
 ## User journey
 
@@ -64,7 +65,7 @@ Pengunjung memahami SagaDevs, memilih produk atau layanan, meninjau bukti, lalu 
 
 ## User flow
 
-`Hero -> Services/System Map -> Product Showroom -> source capture -> product landing` atau `Hero -> Process/Workflow -> Contact -> WhatsApp`.
+`Hero -> Services/System Map -> Product Showroom -> source capture -> product landing`, `Hero -> Process/Workflow -> Contact -> WhatsApp`, atau direct `/bio -> website/portfolio/contact`.
 
 ## Business model
 
@@ -94,7 +95,7 @@ Pesan utama menekankan digital systems that make businesses move serta bukti pro
 
 - Apakah showroom merupakan live app? Tidak, showroom menampilkan capture prototype terkurasi.
 - Apakah SagaDevs memiliki login publik? Tidak pada static hub.
-- Apakah domain production sudah memakai release ini? Belum.
+- Apakah domain production sudah memakai route bio? Ya, `sagadevs.com/bio` aktif dan tidak muncul pada navigasi homepage.
 
 ## Technical overview
 
@@ -110,9 +111,8 @@ Konfigurasi produk publik dan event sessionStorage yang data-minimized. Tidak ad
 
 ## Risiko dan asumsi
 
-- Vercel Preview dilindungi dan memerlukan akses reviewer.
-- Production promotion menunggu visual UAT founder.
-- Portfolio client menunggu sumber, izin, dan claim review.
+- Source workspace belum memiliki commit Git kanonik untuk perubahan bio; provenance aktivasi dijaga melalui exact Vercel preview dan production deployment ID.
+- Delapan URL portfolio aktif saat release diverifikasi, tetapi availability situs eksternal tetap dapat berubah di luar lifecycle SagaDevs hub.
 
 ## KPI dan success metrics
 
@@ -142,4 +142,4 @@ Jika calon pengguna meminta demo penuh, arahkan ke landing atau guided demo prod
 
 ## Keputusan dan gap
 
-`CONFIRMED`: SagaDevs adalah parent hub, product landing tetap terpisah, original style/features/font dipertahankan, Hero Scale v4 memperbesar logo 3D 1,5× dan aktif di production `sagadevs.com`. `NEEDS CONFIRMATION`: analytics production, portfolio publik, serta scope Super Admin.
+`CONFIRMED`: SagaDevs adalah parent hub, product landing tetap terpisah, original style/features/font dipertahankan, Hero Scale v4 aktif pada homepage, dan link directory mobile-first `/bio` aktif di production tanpa tautan dari homepage. `NEEDS CONFIRMATION`: analytics production serta scope Super Admin. `TODO`: tutup gap source Git commit untuk perubahan bio.

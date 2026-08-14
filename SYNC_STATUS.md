@@ -12,16 +12,28 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-14T12:05:00+07:00 |
-| Branch aktif | `codex/s207-sagabook-uat-execution-pack-knowledge` |
+| Waktu pembaruan terakhir | 2026-08-14T12:10:25+07:00 |
+| Branch aktif | `main` pada clone terisolasi exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `0a8d9bdc155d426ed8375966815bb3af92a0a9d0` |
-| Informasi terakhir disinkronkan | SagaBook S207 menambahkan generator create-only untuk template evidence UAT Owner/operator berprovenance exact pada source `a1e56bfc07df4a6c9105b3a61a8f2a2033535466`; template tetap pending sampai UAT nyata lengkap dan production tidak berubah. |
+| Baseline sebelum pembaruan | `21eae7fb60e790a031f5728ad4a2eb1622d4eb8e` |
+| Informasi terakhir disinkronkan | SagaDevs mengaktifkan link directory mobile-first `sagadevs.com/bio` sebagai production `dpl_FZA1XUs3G4YKymqkqaFCMHnrAx3A`, dengan rollback `dpl_5qvER4vn4H8m2CmpgmEtkcbnNxcU`; homepage tetap tidak menautkan route bio. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
-| Konflik | Tidak ada; sinkronisasi dilakukan dari worktree terisolasi berbasis exact `origin/main` terbaru. |
-| Error | Audit Composer native pasca-commit terhambat timeout Packagist; pemeriksaan independen OSV atas exact lock lulus 114 paket tanpa advisory. UAT nyata, dua pilot studio, dan provider canary tetap residual. |
+| Konflik | Checkout knowledge utama lokal diverged `ahead 1 / behind 33` dan tidak disentuh; sinkronisasi dilakukan dari clone terisolasi exact `origin/main`. |
+| Error | Source workspace bio belum memiliki commit Git kanonik; exact preview/production deployment ID menjadi release provenance. Tidak ada error runtime atau validation yang terbuka. |
 
-## File yang berubah pada sinkronisasi ini (SagaBook S207)
+## File yang berubah pada sinkronisasi ini (SagaDevs bio production)
+
+- `products/sagadevs/PRODUCT.md`
+- `products/sagadevs/DOSSIER.md`
+- `products/sagadevs/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `DECISIONS.md`
+- `GAPS.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
+
+## File yang berubah pada sinkronisasi sebelumnya (SagaBook S207)
 
 - `products/sagabook/PRODUCT.md`
 - `products/sagabook/DOSSIER.md`

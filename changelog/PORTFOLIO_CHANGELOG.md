@@ -1,5 +1,12 @@
 # Portfolio Changelog
 
+## 2026-08-14 - SagaDevs mobile-first bio directory production
+
+- Route `sagadevs.com/bio` aktif sebagai link directory satu kolom maksimal 440 px dan tidak ditautkan dari homepage.
+- Website utama, dropdown delapan portfolio tertutup secara default, serta Contact Us WhatsApp lulus desktop/mobile, keyboard, overflow, runtime, link, header, asset, dan homepage regression.
+- Protected Preview `dpl_zVyVGrSbNy7keqoj2i3PuE7fXRvp` dipromosikan menjadi production `dpl_FZA1XUs3G4YKymqkqaFCMHnrAx3A`; rollback `dpl_5qvER4vn4H8m2CmpgmEtkcbnNxcU` tersedia.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; produk lain tidak berubah dan source commit Git bio masih TODO.
+
 ## 2026-08-14 - SagaBook S207 UAT execution template
 
 - Tool public-safe membuat template exact-provenance Owner/operator secara

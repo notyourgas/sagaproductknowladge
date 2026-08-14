@@ -881,8 +881,9 @@ ketika keputusan atau release baru menutup gap.
 
 ### SagaDevs
 
-- `NEEDS CONFIRMATION`: visual UAT dan tanggal promotion corrected source-preserving Preview ke `sagadevs.com`.
-- `NEEDS CONFIRMATION`: portfolio client yang boleh dipublikasikan dan evidence tiap claim.
+- `CONFIRMED`: visual UAT founder selesai; bio candidate dipromosikan ke production `sagadevs.com` pada 14 Agustus 2026 sebagai deployment `dpl_FZA1XUs3G4YKymqkqaFCMHnrAx3A`.
+- `CONFIRMED`: delapan portfolio pada `/bio` dipilih founder dan seluruh URL merespons HTTP 200 saat activation.
+- `TODO`: source workspace perubahan bio belum memiliki commit Git kanonik; pertahankan exact Vercel deployment provenance dan commit source pada release berikutnya tanpa mengubah runtime yang sudah aktif.
 - `NEEDS CONFIRMATION`: analytics production, data retention, dan KPI conversion.
 - `NEEDS CONFIRMATION`: scope, auth, permission, dan data boundary Super Admin terpisah.
 

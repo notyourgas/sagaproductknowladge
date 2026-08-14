@@ -66,6 +66,13 @@ module versioned untuk cache safety. Hub tidak
 memiliki login, pricing, payment, database lead, atau Super Admin aktif;
 placeholder source yang tersisa tersembunyi dan inert.
 
+Route langsung `sagadevs.com/bio` aktif sebagai link directory mobile-first
+yang tidak ditautkan dari homepage. Initial view menampilkan website utama,
+dropdown delapan portfolio yang tertutup secara default, dan Contact Us ke
+WhatsApp. Shell tetap satu kolom maksimal 440 px pada desktop maupun mobile.
+Production deployment aktif `dpl_FZA1XUs3G4YKymqkqaFCMHnrAx3A`; rollback
+langsung `dpl_5qvER4vn4H8m2CmpgmEtkcbnNxcU` tersedia.
+
 Status: `PRODUCTION_DEPLOYED` dan `PRODUCTION_ACTIVATED` pada `sagadevs.com`;
 prototype tetap `noindex`.
 

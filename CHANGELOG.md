@@ -1,5 +1,13 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-14 - SagaDevs mobile-first bio directory production sync
+
+- Informasi `CONFIRMED` dari keputusan Andreas dan runtime production yang diverifikasi pada 14 Agustus 2026.
+- `sagadevs.com/bio` aktif sebagai link directory satu kolom maksimal 440 px, tersembunyi dari navigation homepage, dengan website utama, dropdown delapan portfolio tertutup secara default, dan Contact Us WhatsApp.
+- Exact protected Preview `dpl_zVyVGrSbNy7keqoj2i3PuE7fXRvp` dipromosikan menjadi production `dpl_FZA1XUs3G4YKymqkqaFCMHnrAx3A`; rollback `dpl_5qvER4vn4H8m2CmpgmEtkcbnNxcU` tersedia.
+- Core/static, public-safety, bio desktop/mobile, homepage empat viewport, accessibility, HTTP/header/asset, sembilan link portfolio, dan health lulus. Delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; source commit Git bio masih TODO dan `BUSINESS_READY` belum berubah.
+- Dokumen terdampak: SagaDevs product/dossier/changelog, master knowledge, decision `DEC-078`, gaps, portfolio/root changelog, dan sync status.
+
 ## 2026-08-14 - SagaBook S207 UAT execution template sync
 
 - Informasi `CONFIRMED` dari exact source

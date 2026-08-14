@@ -8,6 +8,15 @@ Mencatat perubahan material pada website induk dan showroom SagaDevs dengan prov
 
 Entri preview tidak otomatis berarti production atau domain activation.
 
+## 2026-08-14 - Mobile-first Bio Link Directory Production
+
+- Founder menyetujui route langsung `sagadevs.com/bio` sebagai link directory yang tidak muncul pada homepage.
+- Initial view memuat website utama, dropdown `Lihat 8 Portfolio` yang tertutup secara default, dan Contact Us ke WhatsApp; shell tetap satu kolom maksimal 440 px pada mobile maupun desktop.
+- Portfolio terverifikasi: Neo Ceramic, SagaView, SagaBook, Jersey, COYABAG, Sagafin, Saga Tech, dan Ayam Pemuda. Seluruh URL merespons HTTP 200 saat activation.
+- Candidate protected Preview `dpl_zVyVGrSbNy7keqoj2i3PuE7fXRvp` dipromosikan menjadi production `dpl_FZA1XUs3G4YKymqkqaFCMHnrAx3A`; rollback langsung `dpl_5qvER4vn4H8m2CmpgmEtkcbnNxcU` tersedia.
+- Core/static, public-safety, bio desktop/mobile, homepage browser empat viewport, accessibility, security header, CSS/font, health, dan public-domain regression lulus. Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; `BUSINESS_READY` tetap `NEEDS_CONFIRMATION`.
+- Source workspace belum memiliki commit Git kanonik untuk perubahan bio; exact deployment ID menjadi release provenance public-safe dan source commit tetap TODO.
+
 ## 2026-07-31 — Source-preserving Hero Scale v4 Production
 
 - Release `source-preserving-hero-scale-v4` berstatus `PRODUCTION_DEPLOYED` dan `PRODUCTION_ACTIVATED` pada `sagadevs.com`.

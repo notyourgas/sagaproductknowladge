@@ -1098,3 +1098,17 @@ keputusan pengganti.
 | Pemberi keputusan | Andreas / founder |
 | Status | `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`; source kandidat `04ac3fa`, branch `codex/aogtivity-voltage-taxonomy`; gate unit/API, UI/WCAG, build, migration disposable, dan MySQL integration lulus |
 | Dokumen terkait | [AOGTIVITY Product](products/aogticvity/PRODUCT.md), [AOGTIVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTIVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |
+
+## DEC-078 - SagaDevs mengaktifkan mobile-first bio link directory
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-14 |
+| Topik | Link bio, portfolio, dan boundary homepage SagaDevs |
+| Keputusan | Aktifkan `sagadevs.com/bio` sebagai link directory satu kolom maksimal 440 px yang tidak ditautkan dari homepage. Initial view hanya menampilkan website utama, dropdown `Lihat 8 Portfolio` yang tertutup secara default, dan Contact Us. Dropdown memuat Neo Ceramic, SagaView, SagaBook, Jersey, COYABAG, Sagafin, Saga Tech, dan Ayam Pemuda. |
+| Alasan | Link bio harus ringkas, mobile-first, mudah dipindai, dan tidak memperpanjang atau mengubah navigation website utama. |
+| Alternatif yang dipertimbangkan | Menampilkan seluruh portfolio sejak initial load; memakai layout desktop melebar; menambahkan route bio ke navigation homepage. |
+| Dampak | Route baru memakai CSS terisolasi `/bio/styles.css`, target sentuh dan keyboard disclosure terverifikasi, homepage tetap tanpa link bio, dan seluruh portfolio membuka URL eksternal dengan guard aman. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; production `dpl_FZA1XUs3G4YKymqkqaFCMHnrAx3A`, rollback `dpl_5qvER4vn4H8m2CmpgmEtkcbnNxcU` |
+| Dokumen terkait | [SagaDevs Product](products/sagadevs/PRODUCT.md), [SagaDevs Dossier](products/sagadevs/DOSSIER.md), [SagaDevs Changelog](products/sagadevs/CHANGELOG.md), [Gaps](GAPS.md) |
