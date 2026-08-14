@@ -1,5 +1,20 @@
 # SagaView Dossier
 
+## S201 Owner Support Hub production activation
+
+Source exact `c3d4bc5412ff70495bfae6498b21f73b464c04ad` aktif sebagai
+release `20260814170455-c3d4bc5`. S199 memasang launcher Support Hub pada Owner
+Console dan S200 membuktikan bootstrap/ask, scope `sagaview`, no-upload,
+metadata allowlist, jawaban lokal, serta persistent safety warning pada browser
+390x844 dan 1440x900. Build, backend 34/34 dengan 176 assertion, audit
+dependency, archive/bundle/copy checksum, encrypted backup dan disposable
+restore 149 tabel, deploy-gate 6/6, atomic switch, public smoke, route cache,
+Owner asset, tiga service, source/database backup checksum, dan journal lulus.
+Rollback langsung `20260813152501-ff0c178`. Status `PUSHED /
+PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated Owner UAT masih
+residual sebelum `BUSINESS_READY`. Tidak ada migration, payment, foto/path/
+output upload, atau perubahan SagaBook.
+
 ## S198 Owner Changelog production activation
 
 Source `ff0c178fe84b36d02fc530a051b0ebc4588715c0` aktif sebagai release

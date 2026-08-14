@@ -12,16 +12,28 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-14T16:29:00+07:00 |
-| Branch aktif | `codex/s208-sagabook-production-knowledge` pada worktree terisolasi exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-14T17:20:00+07:00 |
+| Branch aktif | `codex/s201-sagaview-production-knowledge` pada worktree terisolasi exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `9bd37048ac56038da3d1062fffc2e62fa2875a94` |
-| Informasi terakhir disinkronkan | SagaBook S208 source `1765fe8f12fda08666afaeb6bce43ba8312cd7e6` aktif sebagai release `20260814092112-1765fe8`, rollback `20260813081427-50afa6e`; manifest UAT bersama dan fixture future-relative tervalidasi. |
+| Baseline sebelum pembaruan | `4838d56fbf295d8fadea5e78460e11c953959e97` |
+| Informasi terakhir disinkronkan | SagaView S201 source `c3d4bc5412ff70495bfae6498b21f73b464c04ad` aktif sebagai release `20260814170455-c3d4bc5`, rollback `20260813152501-ff0c178`; Owner Support Hub S199-S200 sudah production. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
 | Konflik | Checkout knowledge utama lokal tidak disentuh; sinkronisasi dilakukan dari worktree terisolasi exact `origin/main`. |
-| Error | Tidak ada error deployment atau validation yang terbuka. Authenticated Owner/operator UAT, dua studio pilot, provider canary, dan business readiness tetap residual operasional. |
+| Error | Tidak ada error deployment atau validation S201 yang terbuka. Authenticated Owner Support Hub UAT dan business readiness tetap residual operasional. |
 
-## File yang berubah pada sinkronisasi ini (SagaBook S208 production)
+## File yang berubah pada sinkronisasi ini (SagaView S201 production)
+
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/DOSSIER.md`
+- `products/sagaview/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
+
+## File yang berubah pada sinkronisasi sebelumnya (SagaBook S208 production)
 
 - `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
 - `products/sagabook/PRODUCT.md`

@@ -1,5 +1,21 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-14 - SagaView S201 Support Hub production sync
+
+- Informasi `CONFIRMED` dari exact source
+  `c3d4bc5412ff70495bfae6498b21f73b464c04ad` dan runtime production yang
+  diverifikasi pada 14 Agustus 2026.
+- Release `20260814170455-c3d4bc5` mengaktifkan Owner Support Hub S199-S200;
+  rollback langsung `20260813152501-ff0c178`.
+- Build, browser mobile/desktop, backend, dependency audit, immutable artifact,
+  encrypted backup/restore 149 tabel, deploy-gate 6/6, atomic switch, public
+  smoke, route cache, asset, service, checksum, dan journal lulus.
+- Delivery `PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+  authenticated Owner UAT tetap residual sebelum `BUSINESS_READY`. Tidak ada
+  migration, payment, upload data lokal customer, atau perubahan SagaBook.
+- Dokumen terdampak: SagaView product/dossier/changelog/coverage, master,
+  gaps, portfolio/root changelog, dan sync status.
+
 ## 2026-08-14 - SagaBook S208 production sync
 
 - Informasi `CONFIRMED` dari exact source

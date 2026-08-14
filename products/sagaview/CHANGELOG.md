@@ -1,5 +1,26 @@
 # SagaView Changelog
 
+## 2026-08-14 - S201 Owner Support Hub production activation
+
+- Klasifikasi: `CONFIRMED`.
+- Before: S199-S200 sudah `PUSHED / LOCAL_VALIDATED`, tetapi launcher dan
+  kontrak browser Support Hub Owner belum aktif pada runtime production.
+- After: source exact
+  `c3d4bc5412ff70495bfae6498b21f73b464c04ad` aktif sebagai release
+  `20260814170455-c3d4bc5`; launcher Owner tersedia pada desktop/mobile saat
+  flag aktif dan kontrak bootstrap/ask tetap local-first serta product-scoped.
+- Evidence: build 5.097 modul, Playwright 2/2, backend 34/34 dengan 176
+  assertion, npm audit nol vulnerability, Composer audit nol advisory, artifact
+  dan salinan SHA-256 identik, backup terenkripsi, restore disposable 149 tabel,
+  deploy-gate 6/6, atomic switch, API/login/session 200, auth boundary 302,
+  route bootstrap terdaftar, Owner asset 200, tiga service aktif, dan journal 0.
+- Rollback: `20260813152501-ff0c178` /
+  `ff0c178fe84b36d02fc530a051b0ebc4588715c0`.
+- Status: `PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+  `BUSINESS_READY` belum diklaim tanpa authenticated Owner UAT. Tidak ada
+  migration, lockfile, payment, database business-data, atau upload foto/path/
+  output customer; SagaBook tidak berubah.
+
 ## 2026-08-14 - S200 Owner Support Hub browser contract candidate
 
 - Klasifikasi: `CONFIRMED`.

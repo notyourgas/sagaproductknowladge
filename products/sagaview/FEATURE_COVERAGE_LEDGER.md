@@ -1,6 +1,17 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 14 Agustus 2026 16:00 WIB
+Evidence cut-off: 14 Agustus 2026 17:20 WIB
+
+S201 production activation cut-off: source exact
+`c3d4bc5412ff70495bfae6498b21f73b464c04ad` aktif sebagai release
+`20260814170455-c3d4bc5`; rollback `20260813152501-ff0c178`. Coverage Owner
+Support Hub S199-S200 kini `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`:
+launcher mobile/desktop, bootstrap/ask product-scoped, no-upload, metadata
+allowlist, jawaban lokal, persistent safety warning, dan route cache produksi
+terverifikasi. Build, browser 2/2, backend 34/34/176 assertion, audit dependency,
+artifact/copy hash, encrypted backup, restore 149 tabel, deploy-gate 6/6,
+atomic switch, public smoke, asset, service, checksum, dan journal lulus.
+Authenticated Owner UAT masih `NOT_SCREENED`; `BUSINESS_READY` belum diklaim.
 
 S200 Owner Support Hub browser contract cut-off: source
 `c3d4bc5412ff70495bfae6498b21f73b464c04ad` sudah `PUSHED`. Browser Owner

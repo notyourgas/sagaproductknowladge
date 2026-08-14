@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-14 - SagaView S201 Support Hub production
+
+- Owner Console production kini menampilkan launcher/panel Support Hub pada
+  desktop dan mobile saat flag aktif, dengan bootstrap/ask product-scoped,
+  no-upload, metadata allowlist, jawaban lokal, dan peringatan data aman.
+- Exact source `c3d4bc5412ff70495bfae6498b21f73b464c04ad` aktif sebagai
+  release `20260814170455-c3d4bc5`; rollback `20260813152501-ff0c178`.
+- Build/browser/backend/audit, dua salinan artifact, encrypted backup/restore
+  149 tabel, gate 6/6, atomic switch, smoke, asset, service, checksum, dan
+  journal lulus. Status `PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`; authenticated Owner UAT menahan `BUSINESS_READY`.
+  SagaBook, payment, dan data lokal customer tidak berubah.
+
 ## 2026-08-14 - SagaBook S208 production release
 
 - Shared manifest immutable kini menjaga coverage generator, validator, dan
