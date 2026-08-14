@@ -8,17 +8,21 @@ Mencatat perubahan material AOGTIVITY/AOGTICVITY/17an/Olimpiade.
 
 Nama lama dipertahankan sebagai provenance; status runtime harus eksplisit.
 
-## 2026-08-14 - Kandidat taxonomy VOLTAGE
+## 2026-08-14 - Taxonomy VOLTAGE production
 
 - `CONFIRMED` melalui `DEC-077`: kategori `VOLTAGE` memakai stable code
   `Voltage` dan tepat satu subkategori `ALL CG VOLTAGE`.
-- Source `04ac3fa` pada branch `codex/aogtivity-voltage-taxonomy` memperbarui
+- Source `f9f43e16d5fe885fbd12b4cf627bfbdd343b38e9` pada branch
+  `codex/aogtivity-voltage-taxonomy` memperbarui
   form publik/admin, API, proyeksi laporan, migration 034, dan rollback
   fail-closed tanpa memigrasikan atau menghapus peserta lama.
 - 146 unit/API, 29 MySQL integration, 67/67 UI/WCAG, typecheck, build, migration
   001-034, rollback 034, dan reapply 034 lulus pada kandidat/disposable.
-- Status `IMPLEMENTED_NOT_DEPLOYED`; production, release aktif, dan migration
-  production belum berubah. Next action adalah guarded deployment terpisah.
+- Backup/restore production, preservation 48 peserta, 15/15 public regression,
+  dan smoke taxonomy langsung lulus. Hostinger `20260814T053031Z`, Vercel
+  `dpl_Bn3Y8p71Y3AZdK3p4iYam5aer9JF`, dan migration 034 aktif.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; operational human UAT
+  dan business readiness tetap residual.
 
 ## 2026-08-14 - Lokasi final seluruh lomba dan awarding
 

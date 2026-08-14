@@ -1094,9 +1094,9 @@ keputusan pengganti.
 | Keputusan | Tambahkan kategori utama berlabel `VOLTAGE` dengan stable code `Voltage` dan tepat satu subkategori `ALL CG VOLTAGE`. Pasangan kategori-subkategori wajib konsisten pada form publik/admin, API, proyeksi laporan, dan MySQL. |
 | Alasan | Founder membutuhkan pengelompokan seluruh CG VOLTAGE sebagai kategori kanonik tersendiri tanpa memetakan ulang kategori peserta lama. |
 | Alternatif yang dipertimbangkan | Memakai kategori Youth; menambah banyak subkategori CG VOLTAGE; menyimpan label tanpa stable code. |
-| Dampak | Source menambah kontrak taxonomy dan migration 034 dengan rollback fail-closed. Tidak ada peserta lama yang dimigrasikan/dihapus, MySQL tetap source of truth, dan production belum berubah sebelum guarded deployment terpisah. |
+| Dampak | Source menambah kontrak taxonomy dan migration 034 dengan rollback fail-closed. Tidak ada peserta lama yang dimigrasikan/dihapus, MySQL tetap source of truth, dan kategori kini aktif pada form publik/admin, API, laporan, serta database production. |
 | Pemberi keputusan | Andreas / founder |
-| Status | `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`; source kandidat `04ac3fa`, branch `codex/aogtivity-voltage-taxonomy`; gate unit/API, UI/WCAG, build, migration disposable, dan MySQL integration lulus |
+| Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; source `f9f43e16d5fe885fbd12b4cf627bfbdd343b38e9`, Hostinger `20260814T053031Z`, Vercel `dpl_Bn3Y8p71Y3AZdK3p4iYam5aer9JF`, migration 034; backup/restore, preservation, test kandidat, dan public regression lulus |
 | Dokumen terkait | [AOGTIVITY Product](products/aogticvity/PRODUCT.md), [AOGTIVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTIVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |
 
 ## DEC-078 - SagaDevs mengaktifkan mobile-first bio link directory

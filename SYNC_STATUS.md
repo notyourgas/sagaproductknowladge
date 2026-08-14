@@ -12,16 +12,28 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-14T12:10:25+07:00 |
+| Waktu pembaruan terakhir | 2026-08-14T12:40:00+07:00 |
 | Branch aktif | `main` pada clone terisolasi exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `21eae7fb60e790a031f5728ad4a2eb1622d4eb8e` |
-| Informasi terakhir disinkronkan | SagaDevs mengaktifkan link directory mobile-first `sagadevs.com/bio` sebagai production `dpl_FZA1XUs3G4YKymqkqaFCMHnrAx3A`, dengan rollback `dpl_5qvER4vn4H8m2CmpgmEtkcbnNxcU`; homepage tetap tidak menautkan route bio. |
+| Baseline sebelum pembaruan | `1def9e42a651cff01695208d9f32ee602f62c4e5` |
+| Informasi terakhir disinkronkan | AOGTIVITY mengaktifkan taxonomy `VOLTAGE`/`ALL CG VOLTAGE` melalui source `f9f43e16d5fe885fbd12b4cf627bfbdd343b38e9`, Hostinger `20260814T053031Z`, Vercel `dpl_Bn3Y8p71Y3AZdK3p4iYam5aer9JF`, dan migration 034. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
-| Konflik | Checkout knowledge utama lokal diverged `ahead 1 / behind 33` dan tidak disentuh; sinkronisasi dilakukan dari clone terisolasi exact `origin/main`. |
-| Error | Source workspace bio belum memiliki commit Git kanonik; exact preview/production deployment ID menjadi release provenance. Tidak ada error runtime atau validation yang terbuka. |
+| Konflik | Checkout knowledge utama lokal diverged `ahead 1 / behind 34` dan tidak disentuh; sinkronisasi dilakukan dari worktree terisolasi exact `origin/main`. |
+| Error | Tidak ada error deployment atau validation yang terbuka. UAT operator terautentikasi dan business readiness tetap residual operasional. |
 
-## File yang berubah pada sinkronisasi ini (SagaDevs bio production)
+## File yang berubah pada sinkronisasi ini (AOGTIVITY VOLTAGE production)
+
+- `products/aogticvity/PRODUCT.md`
+- `products/aogticvity/DOSSIER.md`
+- `products/aogticvity/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `DECISIONS.md`
+- `GAPS.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
+
+## File yang berubah pada sinkronisasi sebelumnya (SagaDevs bio production)
 
 - `products/sagadevs/PRODUCT.md`
 - `products/sagadevs/DOSSIER.md`

@@ -16,14 +16,17 @@
 - Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production SagaBook
   tetap S205 dan produk lain tidak berubah. Actual UAT belum dilakukan.
 
-## 2026-08-14 - AOGTIVITY kandidat taxonomy VOLTAGE
+## 2026-08-14 - AOGTIVITY taxonomy VOLTAGE production
 
 - `DEC-077` menetapkan kategori `VOLTAGE` dengan stable code `Voltage` dan satu
   subkategori `ALL CG VOLTAGE` untuk registrasi komunitas.
-- Source kandidat `04ac3fa` lulus unit/API, UI/WCAG, build, migration 001-034,
-  rollback/reapply 034, dan 29 MySQL integration tanpa mutasi production.
-- Status `IMPLEMENTED_NOT_DEPLOYED`; runtime AOGTIVITY tetap pada release dan
-  migration sebelumnya. Produk SagaDev lain tidak berubah.
+- Source `f9f43e16d5fe885fbd12b4cf627bfbdd343b38e9` lulus unit/API, UI/WCAG,
+  build, migration 001-034, rollback/reapply 034, 29 MySQL integration,
+  backup/restore production, preservation data, dan public regression.
+- Hostinger `20260814T053031Z`, Vercel
+  `dpl_Bn3Y8p71Y3AZdK3p4iYam5aer9JF`, dan migration 034 aktif. Status
+  `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; produk SagaDev lain tidak
+  berubah.
 
 ## 2026-08-14 - AOGTIVITY lokasi final production
 

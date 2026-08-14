@@ -1,5 +1,22 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-14 - AOGTIVITY VOLTAGE taxonomy production sync
+
+- Informasi `CONFIRMED` dari keputusan Andreas, exact source
+  `f9f43e16d5fe885fbd12b4cf627bfbdd343b38e9`, dan runtime production yang
+  diverifikasi pada 14 Agustus 2026.
+- Kategori `VOLTAGE` dengan stable code `Voltage` dan subkategori tunggal
+  `ALL CG VOLTAGE` aktif pada form publik/admin, API, proyeksi laporan, dan
+  constraint MySQL migration 034.
+- Hostinger `20260814T053031Z`, Vercel
+  `dpl_Bn3Y8p71Y3AZdK3p4iYam5aer9JF`, serta migration 034 aktif setelah
+  backup/restore, preservation 48 peserta, 146 unit/API, 29 MySQL integration,
+  67/67 UI/WCAG, 15/15 public regression, dan smoke taxonomy langsung lulus.
+- Delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; operational human UAT
+  dan business readiness tetap residual. Produk SagaDev lain tidak berubah.
+- Dokumen terdampak: AOGTIVITY product/dossier/changelog, master knowledge,
+  `DEC-077`, gaps, portfolio/root changelog, dan sync status.
+
 ## 2026-08-14 - SagaDevs mobile-first bio directory production sync
 
 - Informasi `CONFIRMED` dari keputusan Andreas dan runtime production yang diverifikasi pada 14 Agustus 2026.

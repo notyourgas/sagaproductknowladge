@@ -1,7 +1,7 @@
 # AOGTIVITY Product Knowledge
 
 Updated: 14 Agustus 2026
-Evidence status: public Vercel runtime + kandidat taxonomy VOLTAGE yang sudah tervalidasi tetapi belum dideploy
+Evidence status: public Hostinger/Vercel runtime + taxonomy VOLTAGE production-activated
 
 ## Tujuan dokumen
 
@@ -65,8 +65,8 @@ menunggu human UAT.
 Public delivery kanonik: `https://aogticvities.fun`.
 
 Rebrand AOGTIVITY pertama kali aktif pada source `e4c217b`; runtime terbaru
-adalah `625efddf2da75a416fb82ed21e51725390a77e7c`, Hostinger
-`20260809T230612Z`, dan Vercel `dpl_4txuxGraGsfaT9BSWzWvT24uZ8wg`. UI,
+adalah `f9f43e16d5fe885fbd12b4cf627bfbdd343b38e9`, Hostinger
+`20260814T053031Z`, dan Vercel `dpl_Bn3Y8p71Y3AZdK3p4iYam5aer9JF`. UI,
 metadata, PWA, aset merek, pesan
 WhatsApp baru, serta issuer TOTP baru memakai AOGTIVITY. Domain, repository,
 path deploy, environment variable, cookie/session prefix, database, service,
@@ -175,11 +175,14 @@ kompatibel.
   `Other Region` dengan kode stabil `OtherRegion`. Subcategory yang sah hanya
   `AOG Ponorogo` dan `AOG Magetan`. Form publik/admin, API, export, dan
   constraint MySQL memakai kontrak yang sama serta menolak pasangan silang.
-- `CONFIRMED` melalui `DEC-077`: kandidat source `04ac3fa` menambah kategori
+- `CONFIRMED` melalui `DEC-077`: source production
+  `f9f43e16d5fe885fbd12b4cf627bfbdd343b38e9` menambah kategori
   `VOLTAGE` dengan kode stabil `Voltage` dan tepat satu subkategori
   `ALL CG VOLTAGE`. Form publik/admin, API, proyeksi laporan, serta migration
-  034 memakai kontrak yang sama. Statusnya `IMPLEMENTED_NOT_DEPLOYED`; runtime
-  production dan migration aktif belum berubah.
+  034 memakai kontrak yang sama. Hostinger `20260814T053031Z`, Vercel
+  `dpl_Bn3Y8p71Y3AZdK3p4iYam5aer9JF`, dan migration 034 sudah
+  `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; peserta lama dan relasi
+  operasional dipertahankan.
 - Source `ecaa63f42deaf61e0777959853106e61e4b0bbc3`, Hostinger release
   `20260803T221158Z`, Vercel production
   `dpl_9jKWEEKDQJkszwBGNyyNYTpBs2CJ`, dan migration 018 mengaktifkan Admin
