@@ -1,5 +1,22 @@
 # SagaBook Changelog
 
+## 2026-08-15 - SagaBook-only authenticated production UAT runner S214
+
+- Informasi `CONFIRMED` dari exact source
+  `ff21079d27af5b49b92d752bbbeb1aa253726121`; branch source sudah dipush.
+- Before: runner lama mencampur surface SagaBook dan SagaView serta tidak
+  memisahkan UAT Owner/operator. After: runner S214 hanya memuat SagaBook,
+  memakai reference vault terpisah, memverifikasi provenance production lebih
+  dulu, membatasi browser ke read-only setelah login, dan membuat evidence
+  create-only yang wajib lulus validator S206.
+- Tooling baru 6/6, kontrak existing 13/13, full backend 1.045/1.045 (11.868
+  assertion), browser synthetic exit 0, build 5.116 modul, npm/Composer/OSV,
+  syntax, diff, dan clean-worktree lulus.
+- Actual UAT berhenti aman karena credential bridge lokal belum tersedia.
+  Tidak ada credential/PII tercetak, evidence dibuat, atau mutation production.
+  Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+  tetap S208 dan deployment menunggu actual UAT dua role lulus.
+
 ## 2026-08-14 - Shared authenticated UAT manifest S208 production release
 
 - Before: generator S207, validator S206, dan browser preflight S191 membawa

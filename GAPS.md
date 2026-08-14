@@ -8,7 +8,7 @@ diubah menjadi klaim publik sebelum ditutup dengan bukti atau keputusan owner.
 
 ## Konteks
 
-Daftar ini berlaku pada evidence cut-off 14 Agustus 2026 12:05 WIB dan harus diperbarui
+Daftar ini berlaku pada evidence cut-off 15 Agustus 2026 01:34 WIB dan harus diperbarui
 ketika keputusan atau release baru menutup gap.
 
 ## Cara memakai
@@ -33,6 +33,14 @@ ketika keputusan atau release baru menutup gap.
 ## Keputusan produk
 
 ### SagaBook
+
+- `TODO`: runner UAT SagaBook-only S214 exact source
+  `ff21079d27af5b49b92d752bbbeb1aa253726121` sudah `PUSHED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Semua gate lokal dan synthetic
+  lulus, tetapi actual Owner/operator UAT berhenti aman karena credential
+  bridge lokal belum tersedia; keberadaan reference yang dibutuhkan belum dapat
+  diverifikasi. Production tetap S208. Aktifkan bridge, verifikasi dua reference
+  tanpa menyalin credential ke chat, lalu jalankan evidence S206 sebelum deploy.
 
 - `TODO`: exact source S208
   `1765fe8f12fda08666afaeb6bce43ba8312cd7e6` sudah

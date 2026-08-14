@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-15 - SagaBook S214 production UAT runner sync
+
+- Informasi `CONFIRMED` dari exact source
+  `ff21079d27af5b49b92d752bbbeb1aa253726121` dan gate lokal terisolasi.
+- Runner UAT kini eksklusif SagaBook, memisahkan reference Owner/operator,
+  memverifikasi provenance, membatasi sesi browser read-only, dan membuat
+  evidence create-only.
+- Actual UAT berhenti aman karena credential bridge belum tersedia; production
+  tetap S208. Delivery `PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`.
+- Dokumen terdampak: SagaBook product/changelog/coverage, gaps,
+  portfolio/master, root changelog, dan sync status.
+
 ## 2026-08-15 - SagaView S205 corrupt local-image ingest sync
 
 - Informasi `CONFIRMED` dari exact source

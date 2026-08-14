@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 14 Agustus 2026 16:29 WIB
+Updated: 15 Agustus 2026 01:34 WIB
 Evidence status: production deployment and activation verified; business readiness pending
 
 ## Tujuan dokumen
@@ -16,6 +16,17 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
+- Candidate S214 source `ff21079d27af5b49b92d752bbbeb1aa253726121`
+  sudah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Runner UAT
+  production kini eksklusif SagaBook, memisahkan akun Owner dan operator,
+  memverifikasi exact source/release/rollback sebelum akses credential,
+  membatasi sesi browser ke operasi read-only setelah login, dan membuat
+  evidence secara create-only untuk validator S206. Tooling baru 6/6, kontrak
+  existing 13/13, full backend 1.045/1.045 (11.868 assertion), browser
+  synthetic exit 0, build 5.116 modul, serta audit npm/Composer/OSV lulus.
+  Eksekusi UAT nyata berhenti aman tanpa evidence atau mutasi karena credential
+  bridge lokal belum tersedia; keberadaan dua reference vault belum dapat
+  diverifikasi. Production tetap S208 dan deployment S214 belum dilakukan.
 - Release S208 source `1765fe8f12fda08666afaeb6bce43ba8312cd7e6`
   sudah `PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` sebagai
   `20260814092112-1765fe8`, dengan `20260813081427-50afa6e` sebagai rollback.

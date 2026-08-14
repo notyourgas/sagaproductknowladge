@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-15 - SagaBook authenticated production UAT runner S214
+
+- Runner UAT baru hanya mencakup SagaBook dan memisahkan reference Owner serta
+  operator, dengan exact-release preflight dan evidence create-only.
+- Tooling 19/19, full backend 1.045/1.045, synthetic browser exit 0, build 5.116
+  modul, dan audit dependency lulus pada source
+  `ff21079d27af5b49b92d752bbbeb1aa253726121`.
+- Actual UAT berhenti aman karena credential bridge belum tersedia; tidak ada
+  evidence atau mutation production. Status `PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap S208.
+
 ## 2026-08-15 - SagaView S205 corrupt local-image ingest candidate
 
 - Studio kini menolak file gambar yang gagal decode, melepas URL lokalnya, dan
