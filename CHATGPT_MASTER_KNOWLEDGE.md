@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 14 Agustus 2026 12:05 WIB
+Evidence cut-off: 14 Agustus 2026 16:29 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -43,13 +43,13 @@ operasional produk satuan stabil. Akun/identity dapat memiliki seam bersama,
 tetapi role, permission, session, entitlement, subscription, trial, data, dan
 payment ledger tetap terpisah per produk.
 
-SagaBook mempunyai tooling S206-S207 public-safe untuk membuat template dan
+SagaBook mempunyai tooling S206-S208 public-safe untuk membuat template dan
 memvalidasi evidence authenticated UAT Owner/operator terhadap exact
 source/release, coverage, aksesibilitas, zero-error/zero-mutation, serta
-PII/secret. Template selalu pending sampai UAT nyata lengkap. Tooling ini
-tervalidasi lokal dan dipush, tetapi tidak login, tidak menjalankan UAT, serta
-tidak mengubah production; `BUSINESS_READY` tetap membutuhkan UAT nyata, dua
-studio pilot, dan canary.
+PII/secret. S208 menjadikan satu manifest immutable sebagai sumber coverage
+generator, validator, dan browser preflight. Template selalu pending sampai UAT
+nyata lengkap; `BUSINESS_READY` tetap membutuhkan UAT nyata, dua studio pilot,
+dan canary.
 
 ## Ringkasan produk
 
@@ -83,14 +83,19 @@ pembayaran, menerima status/reminder, dan mengelola request dari secure booking
 link. Operator mengelola calendar, task, check-in, session, payment,
 reconciliation, report, staff, tenant, dan subscription.
 
-Exact source `50afa6e4a2096f0b111714121e9fa8042c219a8e` aktif sebagai
-release `20260813081427-50afa6e` dengan rollback
-`20260812171125-d79c3e0`. Source remote `main`, archive immutable, Git bundle, backup
+Exact source `1765fe8f12fda08666afaeb6bce43ba8312cd7e6` aktif sebagai
+release `20260814092112-1765fe8` dengan rollback
+`20260813081427-50afa6e`. Source remote `main`, archive immutable, Git bundle, backup
 terenkripsi/disposable restore, migrasi, atomic switch, manifest, DB audit,
 public smoke, service, journal, rollback, dan verifier 17/17 terverifikasi.
 HTTP dan security profile masing-masing lulus 3/3. Status
 `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated UAT nyata, dua
 studio pilot, dan provider canary tetap menahan `BUSINESS_READY`.
+
+Release S208 menyatukan coverage S191/S206/S207 dalam manifest immutable dan
+membuat tiga fixture booking future-relative. Full backend 1.045/1.045, tooling
+13/13, browser synthetic 4/4, build, database disposable, serta audit dependency
+lulus tanpa perubahan workflow API, schema, provider, atau data customer.
 
 Re-verifikasi public-safe S203 source
 `e67757fe15cdd388b3f59f9f21faeb17849b01e7` mempertahankan exact provenance

@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-14 - SagaBook S208 production release
+
+- Shared manifest immutable kini menjaga coverage generator, validator, dan
+  browser preflight authenticated UAT tetap konsisten; tiga fixture booking
+  future-relative menutup kegagalan regression berbasis tanggal.
+- Exact source `1765fe8f12fda08666afaeb6bce43ba8312cd7e6` aktif sebagai release
+  `20260814092112-1765fe8`, rollback `20260813081427-50afa6e`; backup/restore,
+  full backend, build, dependency audit, public smoke, service, header, journal,
+  dan verifier 17/17 lulus.
+- Status `PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; workflow API,
+  schema, provider, subscription, data customer, dan produk SagaDev lain tidak
+  berubah. Authenticated UAT nyata, dua studio pilot, dan provider canary tetap
+  residual sebelum `BUSINESS_READY`.
+
 ## 2026-08-14 - SagaView S200 Owner Support Hub browser contract
 
 - Browser Owner kini membuktikan bootstrap/ask 200, scope `sagaview`, flag

@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 14 Agustus 2026 12:05 WIB
+Updated: 14 Agustus 2026 16:29 WIB
 Evidence status: production deployment and activation verified; business readiness pending
 
 ## Tujuan dokumen
@@ -16,6 +16,18 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
+- Release S208 source `1765fe8f12fda08666afaeb6bce43ba8312cd7e6`
+  sudah `PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` sebagai
+  `20260814092112-1765fe8`, dengan `20260813081427-50afa6e` sebagai rollback.
+  Satu manifest immutable kini menjadi sumber coverage generator S207,
+  validator S206, dan browser preflight S191; tiga fixture booking dibuat
+  future-relative agar regression tidak kedaluwarsa. Focused 3/3, tooling
+  13/13, full backend 1.045/1.045 (11.868 assertion), browser synthetic 4/4,
+  build 5.116 modul, database disposable, audit dependency, backup/restore,
+  smoke, service, header, journal, rollback, dan verifier 17/17 lulus. Workflow
+  runtime, API, schema, provider, subscription, dan data customer tidak diubah.
+  Authenticated UAT nyata, dua studio pilot, dan provider canary tetap menahan
+  `BUSINESS_READY`.
 - Tooling S207 source
   `a1e56bfc07df4a6c9105b3a61a8f2a2033535466` sudah `PUSHED /
   SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /

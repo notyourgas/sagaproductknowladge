@@ -12,16 +12,28 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-14T12:40:00+07:00 |
-| Branch aktif | `main` pada clone terisolasi exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-14T16:29:00+07:00 |
+| Branch aktif | `codex/s208-sagabook-production-knowledge` pada worktree terisolasi exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `1def9e42a651cff01695208d9f32ee602f62c4e5` |
-| Informasi terakhir disinkronkan | AOGTIVITY mengaktifkan taxonomy `VOLTAGE`/`ALL CG VOLTAGE` melalui source `f9f43e16d5fe885fbd12b4cf627bfbdd343b38e9`, Hostinger `20260814T053031Z`, Vercel `dpl_Bn3Y8p71Y3AZdK3p4iYam5aer9JF`, dan migration 034. |
+| Baseline sebelum pembaruan | `9bd37048ac56038da3d1062fffc2e62fa2875a94` |
+| Informasi terakhir disinkronkan | SagaBook S208 source `1765fe8f12fda08666afaeb6bce43ba8312cd7e6` aktif sebagai release `20260814092112-1765fe8`, rollback `20260813081427-50afa6e`; manifest UAT bersama dan fixture future-relative tervalidasi. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
-| Konflik | Checkout knowledge utama lokal diverged `ahead 1 / behind 34` dan tidak disentuh; sinkronisasi dilakukan dari worktree terisolasi exact `origin/main`. |
-| Error | Tidak ada error deployment atau validation yang terbuka. UAT operator terautentikasi dan business readiness tetap residual operasional. |
+| Konflik | Checkout knowledge utama lokal tidak disentuh; sinkronisasi dilakukan dari worktree terisolasi exact `origin/main`. |
+| Error | Tidak ada error deployment atau validation yang terbuka. Authenticated Owner/operator UAT, dua studio pilot, provider canary, dan business readiness tetap residual operasional. |
 
-## File yang berubah pada sinkronisasi ini (AOGTIVITY VOLTAGE production)
+## File yang berubah pada sinkronisasi ini (SagaBook S208 production)
+
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
+
+## File yang berubah pada sinkronisasi sebelumnya (AOGTIVITY VOLTAGE production)
 
 - `products/aogticvity/PRODUCT.md`
 - `products/aogticvity/DOSSIER.md`

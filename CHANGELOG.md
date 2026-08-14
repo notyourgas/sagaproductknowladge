@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-14 - SagaBook S208 production sync
+
+- Informasi `CONFIRMED` dari exact source
+  `1765fe8f12fda08666afaeb6bce43ba8312cd7e6` dan runtime production yang
+  diverifikasi pada 14 Agustus 2026.
+- Manifest immutable menyatukan kontrak generator, validator, dan browser
+  preflight authenticated UAT; tiga fixture booking dibuat future-relative.
+- Release `20260814092112-1765fe8` aktif dengan rollback
+  `20260813081427-50afa6e`; full test/build/audit, encrypted backup/disposable
+  restore, smoke, service, header, journal, dan verifier 17/17 lulus.
+- Delivery `PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+  authenticated UAT nyata, dua studio pilot, dan provider canary tetap menahan
+  `BUSINESS_READY`.
+
 ## 2026-08-14 - AOGTIVITY VOLTAGE taxonomy production sync
 
 - Informasi `CONFIRMED` dari keputusan Andreas, exact source

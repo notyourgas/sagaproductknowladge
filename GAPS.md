@@ -33,15 +33,17 @@ ketika keputusan atau release baru menutup gap.
 
 ### SagaBook
 
-- `TODO`: exact source S205
-  `50afa6e4a2096f0b111714121e9fa8042c219a8e` sudah
+- `TODO`: exact source S208
+  `1765fe8f12fda08666afaeb6bce43ba8312cd7e6` sudah
   `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / PUSHED` sebagai release
-  `20260813081427-50afa6e`; rollback `20260812171125-d79c3e0` tersedia.
+  `20260814092112-1765fe8`; rollback `20260813081427-50afa6e` tersedia.
   Tooling S206 `8ce42d1a` memvalidasi evidence UAT public-safe secara
   fail-closed; S207 `a1e56bfc` menyiapkan template exact-provenance secara
-  create-only dan sudah dipush. Template tetap pending dan actual authenticated
-  Owner/operator UAT belum dijalankan. Dua studio pilot serta provider canary
-  tetap residual sebelum `BUSINESS_READY`; subscription tenant tidak diubah.
+  create-only. S208 menyatukan coverage tool melalui manifest immutable dan
+  membuat fixture booking future-relative. Template tetap pending dan actual
+  authenticated Owner/operator UAT belum dijalankan. Dua studio pilot serta
+  provider canary tetap residual sebelum `BUSINESS_READY`; subscription tenant
+  tidak diubah.
 
 - `TODO`: guard scope/fallback source
   `0894df00f6866688db4d053758a99d54ba4e8908` sudah production dan memisahkan

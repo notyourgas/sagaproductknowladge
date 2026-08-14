@@ -1,5 +1,24 @@
 # SagaBook Changelog
 
+## 2026-08-14 - Shared authenticated UAT manifest S208 production release
+
+- Before: generator S207, validator S206, dan browser preflight S191 membawa
+  coverage UAT sendiri-sendiri; tiga regression booking juga memakai tanggal
+  kalender yang telah lewat. After: seluruh tool membaca satu manifest
+  immutable dan fixture memakai tanggal future-relative tanpa mengubah aturan
+  runtime untuk tanggal lampau.
+- Source `1765fe8f12fda08666afaeb6bce43ba8312cd7e6` sudah dipush ke `main` dan
+  aktif sebagai release `20260814092112-1765fe8`; rollback langsung
+  `20260813081427-50afa6e` tersedia.
+- Focused 3/3, tooling 13/13, backend 1.045/1.045 (11.868 assertion), browser
+  synthetic 4/4, build 5.116 modul, database disposable, npm/Composer/OSV,
+  encrypted backup/disposable restore, public smoke, service, header, journal,
+  dan verifier 17/17 lulus.
+- Status `PUSHED / SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
+  QA_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Workflow API dan
+  schema production tidak berubah; authenticated UAT nyata, dua studio pilot,
+  dan provider canary tetap residual sebelum `BUSINESS_READY`.
+
 ## 2026-08-14 - Authenticated UAT execution template S207
 
 - Informasi `CONFIRMED` dari source
