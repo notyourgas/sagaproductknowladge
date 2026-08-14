@@ -1,5 +1,24 @@
 # SagaView Changelog
 
+## 2026-08-15 - S205 corrupt local-image ingest candidate
+
+- Klasifikasi: `CONFIRMED`.
+- Before: file berekstensi JPG/PNG/WEBP yang gagal decode masih dapat memakai
+  URL blob penuh sebagai fallback dan ikut dianggap foto valid.
+- After: source exact `a7386800404dd2e136cadf9827d89d7e333499bb`
+  memisahkan file gagal decode, melepas URL lokalnya, memperbarui count/metering
+  hanya dari foto valid, serta fail-closed sebelum session cloud bila tidak ada
+  satu pun foto yang dapat dibuka.
+- Dampak: operator dapat melanjutkan folder campuran dengan pesan aman; file
+  rusak tidak masuk editor, recovery, atau payload metadata. Tidak ada foto,
+  nama file, path, maupun byte sintetis yang dikirim.
+- Evidence: unit 207/207; Playwright local-session 10/10 dengan failure path
+  campuran dan all-corrupt, matriks 50/200/500, Axe 1440x900 dan 390x844,
+  no-overflow/no-upload; format, lint, typecheck, build, bundle budget, dan npm
+  audit nol vulnerability.
+- Delivery: `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Production,
+  backend, database, payment, dan SagaBook tidak berubah.
+
 ## 2026-08-14 - S204 Owner Support Hub strict no-upload candidate
 
 - Klasifikasi: `CONFIRMED` privacy correction.

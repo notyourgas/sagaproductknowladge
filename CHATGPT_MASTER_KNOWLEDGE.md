@@ -1,8 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 15 Agustus 2026 00:45 WIB
+Evidence cut-off: 15 Agustus 2026 01:23 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
+
+SagaView S205 source `a7386800404dd2e136cadf9827d89d7e333499bb`
+sudah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Import foto lokal
+kini memisahkan file yang gagal decode, melepas object URL, menghitung metadata
+hanya dari foto valid, dan berhenti sebelum session cloud jika seluruh file
+rusak. Folder campuran tetap dapat dilanjutkan tanpa mengunggah foto, nama/path,
+atau byte. Production tidak berubah.
 
 Koreksi SagaView S204: source
 `82aa973312d112c43ad12e0b63857ea271f5a2be` sudah
@@ -1134,8 +1141,9 @@ foto/thumbnail staged dilepas saat cancel atau pencatatan cloud gagal; folder,
 photo-count, serta target tidak berubah sebelum commit sukses; pesan backend
 mentah tidak dirender. Status kumulatif S148-S150 adalah
 `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; rollback langsung S147
-`20260808225730-df959cc` tersedia. Authenticated UAT folder Windows dan residual
-race/corrupt-file tetap menahan `BUSINESS_READY`.
+`20260808225730-df959cc` tersedia. S205 menutup corrupt-file otomatis pada
+source kandidat; authenticated UAT folder Windows nyata dan residual race tetap
+menahan `BUSINESS_READY`.
 S152 backend `e2cb726705bb630d2bb1b737a54c1d30cb1176e9` menambah
 boundary request berlapis yang tidak bergantung pada satu field identitas,
 ledger replay perangkat durable berbasis hash, dan transaksi terkunci saat

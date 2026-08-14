@@ -1,6 +1,17 @@
 # SagaView Product Knowledge
 
-Updated: 14 Agustus 2026
+Updated: 15 Agustus 2026
+
+Kandidat Studio S205 source exact
+`a7386800404dd2e136cadf9827d89d7e333499bb` sudah `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Import folder lokal kini
+memisahkan foto yang gagal decode dari foto valid, melepas object URL file
+rusak, menghitung metrik dan `sourcePhotoCount` hanya dari foto yang dapat
+dibuka, serta berhenti sebelum membuat session cloud bila semua file rusak.
+Operator mendapat pesan aman tanpa nama/path/byte foto. Unit 207/207,
+Playwright local-session 10/10 termasuk matriks 50/200/500, Axe dan no-overflow
+desktop/mobile, build/budget, serta audit dependency lulus. Production tidak
+berubah.
 
 Koreksi privacy S204: audit setelah aktivasi S201 menemukan Owner Support Hub
 masih menampilkan kontrol upload screenshot walau bootstrap menyatakan

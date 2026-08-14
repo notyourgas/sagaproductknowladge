@@ -12,16 +12,27 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-15T00:45:00+07:00 |
-| Branch aktif | `main` pada clone terisolasi exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-15T01:23:00+07:00 |
+| Branch aktif | `codex/s205-sagaview-ingest-corrupt-knowledge` pada worktree terisolasi exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `9e365c8bd903744a08dd8f945e32fbb6a3f434a3` |
-| Informasi terakhir disinkronkan | SagaTech Scope 2 v15 production dengan Fit Engine, Risk Map, Proof Lens, Decision Passport, deployment `dpl_GTQ96ZbwH3RxxvyTqzZcwD3xHce1`, dan rollback tercatat. |
+| Baseline sebelum pembaruan | `0bcd8a2dfb752e8f07ec1e3ab6b7ba9d3d26ecd4` |
+| Informasi terakhir disinkronkan | SagaView S205 source `a7386800404dd2e136cadf9827d89d7e333499bb` menolak file gambar gagal decode, melepas URL lokalnya, dan hanya menghitung foto valid; production tidak berubah. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
-| Konflik | Checkout knowledge utama lokal yang ahead/behind tidak disentuh; sinkronisasi dilakukan dari clone terisolasi exact `origin/main`. |
-| Error | Tidak ada error sinkronisasi. Linktree/PDF, analytics persistence, real-device UAT, dan Git remote SagaTech tetap residual sebelum business readiness. |
+| Konflik | Checkout knowledge lain tidak disentuh; sinkronisasi dilakukan dari worktree terisolasi exact `origin/main`. |
+| Error | Tidak ada error sinkronisasi. Guarded deploy belum diotorisasi; UAT folder Windows nyata dan business readiness tetap residual operasional. |
 
-## File yang berubah pada sinkronisasi ini (SagaTech Scope 2 v15)
+## File yang berubah pada sinkronisasi ini (SagaView S205 corrupt ingest)
+
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/DOSSIER.md`
+- `products/sagaview/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
+
+## File yang berubah pada sinkronisasi sebelumnya (SagaTech Scope 2 v15)
 
 - `products/sagatech/PRODUCT.md`
 - `products/sagatech/DOSSIER.md`
@@ -34,7 +45,7 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `SYNC_STATUS.md`
 - `CHANGELOG.md`
 
-## File yang berubah pada sinkronisasi ini (SagaView S204 release package)
+## File yang berubah pada sinkronisasi sebelumnya (SagaView S204 release package)
 
 - `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
 - `products/sagaview/PRODUCT.md`

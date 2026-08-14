@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-15 - SagaView S205 corrupt local-image ingest candidate
+
+- Studio kini menolak file gambar yang gagal decode, melepas URL lokalnya, dan
+  hanya meneruskan count foto valid sebagai metadata cloud.
+- Folder campuran tetap dapat dipakai dengan pesan aman; folder seluruhnya
+  rusak berhenti sebelum session cloud dibuat. Foto/path/byte tetap lokal.
+- Exact source `a7386800404dd2e136cadf9827d89d7e333499bb` lulus unit
+  207/207, Playwright local-session 10/10 termasuk 50/200/500, Axe/no-overflow
+  desktop-mobile, build/budget, dan audit dependency.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production,
+  backend, database, payment, dan SagaBook tidak berubah.
+
 ## 2026-08-15 - SagaTech Scope 2 Qualification OS production
 
 - Website kemitraan mengubah Scope 2 menjadi qualification flow: Market Lens,

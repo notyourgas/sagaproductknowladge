@@ -1,6 +1,18 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 14 Agustus 2026 23:13 WIB
+Evidence cut-off: 15 Agustus 2026 01:23 WIB
+
+S205 local-ingest corrupt-image cut-off: Studio source exact
+`a7386800404dd2e136cadf9827d89d7e333499bb` sudah `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. File dengan ekstensi gambar yang
+gagal decode tidak lagi dipakai sebagai foto valid: object URL dilepas,
+metrik/count cloud hanya memakai foto yang benar-benar dapat dibuka, folder
+campuran tetap lanjut dengan pesan aman, dan folder seluruhnya rusak berhenti
+sebelum session cloud dibuat. Unit 207/207, Playwright local-session 10/10
+termasuk 50/200/500 foto, Axe desktop/mobile, no-overflow, no-upload payload,
+format/lint/typecheck, build/budget, dan audit dependency lulus. Production
+tetap Studio S159; UAT folder Windows nyata dan deploy kandidat kumulatif tetap
+gap terpisah.
 
 S204 privacy correction cut-off: source exact
 `82aa973312d112c43ad12e0b63857ea271f5a2be` sudah `PUSHED /

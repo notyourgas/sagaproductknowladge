@@ -270,6 +270,14 @@ snapshot preservation, header/CORS/service/journal, dan smoke exact release
 lulus. Authenticated UAT menggunakan data sintetis/disposable; UAT operator pada
 folder Windows nyata dan `BUSINESS_READY` tetap gate terpisah.
 
+S205 source Studio `a7386800404dd2e136cadf9827d89d7e333499bb`
+menutup residual corrupt-image pada ingest lokal. Thumbnail worker yang gagal
+mencoba decode main-thread; file yang tetap gagal dipisahkan, URL lokalnya
+dilepas, dan tidak pernah masuk state sesi maupun metadata cloud. Folder
+campuran mempertahankan foto valid, sedangkan folder seluruhnya rusak berhenti
+sebelum pencatatan session cloud. Status `PUSHED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; production dan database tidak berubah.
+
 ### Estimate-only contract S159
 
 Keputusan founder menetapkan bahwa SagaVIEW hanya menampilkan estimasi total

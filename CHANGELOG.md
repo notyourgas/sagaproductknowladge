@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-15 - SagaView S205 corrupt local-image ingest sync
+
+- Informasi `CONFIRMED` dari exact source
+  `a7386800404dd2e136cadf9827d89d7e333499bb` dan gate lokal terisolasi.
+- File gambar gagal decode dipisahkan dari foto valid, URL lokal dilepas,
+  count cloud hanya mencerminkan foto valid, dan all-corrupt berhenti sebelum
+  session cloud dibuat.
+- Delivery `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production,
+  backend, database, payment, dan SagaBook tidak berubah.
+- Dokumen terdampak: SagaView product/dossier/changelog/coverage,
+  portfolio/master, root changelog, dan sync status.
+
 ## 2026-08-15 - SagaTech Scope 2 v15 production sync
 
 - Informasi `CONFIRMED` dari keputusan Andreas, source manifest
