@@ -12,6 +12,10 @@
   rollback langsung, enam service aktif, public smoke sehat, dan journal bersih.
 - Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / STAGING_READY`;
   production masih S201 dan memerlukan guarded deploy terpisah.
+- Rehearsal release archive berhenti aman: cache/build/route contract dan
+  shared-storage junction disposable lulus, tetapi cached-root harness serta
+  BOM metadata belum lulus. Archive ditandai `.rejected`; production tidak
+  berubah dan deploy tetap dilarang.
 
 ## 2026-08-14 - SagaView S201 Support Hub production
 

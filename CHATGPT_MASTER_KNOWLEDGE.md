@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 14 Agustus 2026 20:11 WIB
+Evidence cut-off: 14 Agustus 2026 21:09 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -12,6 +12,10 @@ git bundle exact ref, manifest SHA-256, dan dua salinan lintas-drive sudah
 diverifikasi identik; preflight production read-only juga sehat. Production
 tetap S201; flag no-upload S201 tidak boleh ditafsirkan sebagai no-upload
 end-to-end sampai S204 aktif dan diverifikasi.
+
+Release archive S204 belum boleh digunakan: rehearsal fail-closed setelah dua
+correction rounds karena cached-root assertion harness gagal dan metadata JSON
+mengandung BOM. Archive ditandai `.rejected`; production tidak berubah.
 
 ## Tujuan
 

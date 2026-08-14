@@ -20,6 +20,11 @@
 - Delivery: `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
   STAGING_READY`. Production tetap S201 sampai guarded deploy S204 diotorisasi
   dan seluruh gate production lulus.
+- Release archive rehearsal 21.00 WIB: build 5.097 modul, config/route/view
+  cache, route contract, dan shared-storage junction disposable lulus. Gate
+  berhenti aman setelah dua correction rounds karena inspeksi cached storage
+  root pada harness gagal akibat quoting PHP dan release manifest mengandung
+  BOM. Archive diberi suffix `.rejected`; production tidak berubah.
 
 ## 2026-08-14 - S201 Owner Support Hub production activation
 

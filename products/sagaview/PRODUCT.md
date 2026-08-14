@@ -19,6 +19,13 @@ Preflight production read-only S204 mengonfirmasi current tetap release
 60 menit tanpa fatal/error. Deploy S204 tetap memerlukan persetujuan eksplisit,
 backup/restore baru, gate kandidat, atomic switch, dan post-deploy verification.
 
+Rehearsal release archive S204 pukul 21.00 WIB berhenti aman setelah dua
+correction rounds. Build, config cache, route cache, view cache, route contract,
+dan shared-storage junction disposable lulus, tetapi inspeksi cached storage root
+pada harness gagal karena quoting PHP dan metadata JSON archive membawa BOM.
+Archive tersebut ditandai `.rejected`; source archive dan git bundle tetap valid,
+tetapi deploy tidak boleh memakai release archive sampai keduanya ditutup.
+
 Support Hub Owner S199-S200 sekarang aktif melalui release backend S201
 `20260814170455-c3d4bc5` dari source exact
 `c3d4bc5412ff70495bfae6498b21f73b464c04ad`. Launcher tersedia pada desktop
