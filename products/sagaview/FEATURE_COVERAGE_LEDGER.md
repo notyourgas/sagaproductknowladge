@@ -1,16 +1,20 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 14 Agustus 2026 19:15 WIB
+Evidence cut-off: 14 Agustus 2026 20:11 WIB
 
 S204 privacy correction cut-off: source exact
 `82aa973312d112c43ad12e0b63857ea271f5a2be` sudah `PUSHED /
-LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Owner Support Hub SagaView tidak
-lagi merender file input atau aksi upload, fungsi client fail-closed, dan
-endpoint Owner menolak request upload dengan 404 tanpa attachment tersimpan.
-Backend 35/35/179 assertion, Playwright SagaView 2/2 dan regresi SagaBook 1/1,
-build, syntax, serta audit dependency lulus. Koreksi: klaim no-upload S201 di
-bawah hanya membuktikan flag/payload bootstrap; production belum no-upload
-end-to-end sampai kandidat S204 dideploy dan diverifikasi.
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / STAGING_READY`. Owner Support Hub
+SagaView tidak lagi merender file input atau aksi upload, fungsi client
+fail-closed, dan endpoint Owner menolak request upload dengan 404 tanpa
+attachment tersimpan. Backend 35/35/179 assertion, Playwright SagaView 2/2 dan
+regresi SagaBook 1/1, build, syntax, serta audit dependency lulus. Archive,
+git bundle exact ref, manifest SHA-256, dan dua salinan lintas-drive sudah
+diverifikasi identik. Preflight production read-only membuktikan current S201,
+rollback langsung, enam service aktif, public smoke sehat, dan journal 60 menit
+tanpa fatal/error. Koreksi: klaim no-upload S201 di bawah hanya membuktikan
+flag/payload bootstrap; production belum no-upload end-to-end sampai kandidat
+S204 dideploy dan diverifikasi.
 
 S201 production activation cut-off: source exact
 `c3d4bc5412ff70495bfae6498b21f73b464c04ad` aktif sebagai release

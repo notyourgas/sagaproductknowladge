@@ -7,8 +7,11 @@
 - Kandidat `82aa973312d112c43ad12e0b63857ea271f5a2be` menghilangkan kontrol
   untuk SagaView dan menolak endpoint upload dengan 404 tanpa write; SagaBook
   tidak berubah.
-- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
-  masih S201 dan memerlukan guarded deploy terpisah.
+- Archive, git bundle exact ref, manifest SHA-256, dan dua salinan lintas-drive
+  sudah diverifikasi identik. Preflight production read-only mengonfirmasi S201,
+  rollback langsung, enam service aktif, public smoke sehat, dan journal bersih.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / STAGING_READY`;
+  production masih S201 dan memerlukan guarded deploy terpisah.
 
 ## 2026-08-14 - SagaView S201 Support Hub production
 

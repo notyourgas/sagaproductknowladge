@@ -12,8 +12,14 @@
 - Evidence: focused red terbukti, backend 35/35 dengan 179 assertion,
   Playwright SagaView mobile+desktop 2/2, regresi SagaBook 1/1, build 5.097
   modul, serta npm/Composer audit nol advisory.
-- Delivery: `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
-  Production tetap S201 sampai guarded deploy S204 diotorisasi dan lulus.
+- Release package: archive source dan git bundle exact commit dibuat bersama
+  manifest SHA-256; dua salinan lintas-drive memiliki hash identik dan bundle
+  memuat ref branch exact. Preflight production read-only membuktikan current
+  S201, rollback langsung, enam service aktif, public smoke sehat, dan journal
+  60 menit tanpa fatal/error.
+- Delivery: `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  STAGING_READY`. Production tetap S201 sampai guarded deploy S204 diotorisasi
+  dan seluruh gate production lulus.
 
 ## 2026-08-14 - S201 Owner Support Hub production activation
 

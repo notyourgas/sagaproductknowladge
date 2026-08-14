@@ -7,8 +7,17 @@ masih menampilkan kontrol upload screenshot walau bootstrap menyatakan
 no-upload. Kandidat exact `82aa973312d112c43ad12e0b63857ea271f5a2be`
 menyembunyikan kontrol tersebut untuk SagaView, menolak request upload dengan
 404 sebelum validasi file, dan mempertahankan perilaku SagaBook. Kandidat sudah
-`PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production S201 belum
-berubah dan belum boleh disebut no-upload end-to-end sampai S204 dideploy.
+`PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / STAGING_READY` setelah
+archive, git bundle, manifest SHA-256, dan salinan lintas-drive diverifikasi
+identik. Production S201 belum berubah dan belum boleh disebut no-upload
+end-to-end sampai S204 dideploy.
+
+Preflight production read-only S204 mengonfirmasi current tetap release
+`20260814170455-c3d4bc5` dari source
+`c3d4bc5412ff70495bfae6498b21f73b464c04ad`, rollback langsung
+`20260813152501-ff0c178`, enam service aktif, public smoke sehat, dan journal
+60 menit tanpa fatal/error. Deploy S204 tetap memerlukan persetujuan eksplisit,
+backup/restore baru, gate kandidat, atomic switch, dan post-deploy verification.
 
 Support Hub Owner S199-S200 sekarang aktif melalui release backend S201
 `20260814170455-c3d4bc5` dari source exact
