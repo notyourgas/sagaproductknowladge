@@ -16,6 +16,11 @@
   shared-storage junction disposable lulus, tetapi cached-root harness serta
   BOM metadata belum lulus. Archive ditandai `.rejected`; production tidak
   berubah dan deploy tetap dilarang.
+- Blocker package kemudian ditutup dengan archive baru
+  `20260814231346-82aa973`: metadata tanpa BOM, cached local root, cache/route/
+  view, route contract, storage junction, build manifest, dan ekstraksi ulang
+  lulus. SHA-256 dua salinan identik; production tetap S201 dan guarded deploy
+  masih memerlukan persetujuan Andreas serta gate production lengkap.
 
 ## 2026-08-14 - SagaView S201 Support Hub production
 

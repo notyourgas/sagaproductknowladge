@@ -1,6 +1,6 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 14 Agustus 2026 21:09 WIB
+Evidence cut-off: 14 Agustus 2026 23:13 WIB
 
 S204 privacy correction cut-off: source exact
 `82aa973312d112c43ad12e0b63857ea271f5a2be` sudah `PUSHED /
@@ -16,13 +16,16 @@ tanpa fatal/error. Koreksi: klaim no-upload S201 di bawah hanya membuktikan
 flag/payload bootstrap; production belum no-upload end-to-end sampai kandidat
 S204 dideploy dan diverifikasi.
 
-S204 release-archive rehearsal cut-off: build 5.097 modul, config cache, route
-cache, view cache, route contract, dan exact shared-storage junction disposable
-lulus. Rehearsal berhenti aman setelah dua correction rounds karena cached
-storage-root assertion harness gagal akibat quoting PHP dan JSON release manifest
-mengandung BOM. Archive hash-bound ditandai `.rejected` pada kedua salinan;
-source archive serta git bundle tetap identik dan valid. Gap berikutnya adalah
-regenerasi archive tanpa BOM dan pembuktian cached root, bukan deploy production.
+S204 release-archive closure cut-off: archive baru
+`20260814231346-82aa973` dari source/tree exact lulus ekstraksi ulang, metadata
+UTF-8 tanpa BOM, build manifest, config/route/view cache, route contract, exact
+shared-storage junction disposable, pembuktian cached local root, dan Owner
+Admin asset. SHA-256
+`cde8339fda316bc2e5a1c5d3107c4b42a16c1798ef6ce4e47105bb0616cba86a`
+identik pada dua drive; archive gagal sebelumnya tetap `.rejected`. Blocker
+package lokal tertutup. Gap berikutnya adalah persetujuan guarded deploy,
+backup/restore baru, atomic switch, smoke/service/journal, dan rollback;
+production tidak berubah.
 
 S201 production activation cut-off: source exact
 `c3d4bc5412ff70495bfae6498b21f73b464c04ad` aktif sebagai release

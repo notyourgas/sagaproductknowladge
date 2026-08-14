@@ -12,16 +12,26 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-14T17:20:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-14T23:13:00+07:00 |
 | Branch aktif | `codex/s201-sagaview-production-knowledge` pada worktree terisolasi exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `4838d56fbf295d8fadea5e78460e11c953959e97` |
-| Informasi terakhir disinkronkan | SagaView S201 source `c3d4bc5412ff70495bfae6498b21f73b464c04ad` aktif sebagai release `20260814170455-c3d4bc5`, rollback `20260813152501-ff0c178`; Owner Support Hub S199-S200 sudah production. |
+| Baseline sebelum pembaruan | `eb27db041ab104af7c4789855bf5b4b26e6c83da` |
+| Informasi terakhir disinkronkan | SagaView S204 source `82aa973312d112c43ad12e0b63857ea271f5a2be` memiliki release archive `20260814231346-82aa973` yang lulus rehearsal disposable dan dua salinan hash-identik; production tetap S201. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
 | Konflik | Checkout knowledge utama lokal tidak disentuh; sinkronisasi dilakukan dari worktree terisolasi exact `origin/main`. |
-| Error | Tidak ada error deployment atau validation S201 yang terbuka. Authenticated Owner Support Hub UAT dan business readiness tetap residual operasional. |
+| Error | Blocker BOM dan cached-root package S204 tertutup. Guarded deploy belum diotorisasi; authenticated Owner Support Hub UAT dan business readiness tetap residual operasional. |
 
-## File yang berubah pada sinkronisasi ini (SagaView S201 production)
+## File yang berubah pada sinkronisasi ini (SagaView S204 release package)
+
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
+
+## File yang berubah pada sinkronisasi sebelumnya (SagaView S201 production)
 
 - `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
 - `products/sagaview/PRODUCT.md`

@@ -25,6 +25,14 @@
   berhenti aman setelah dua correction rounds karena inspeksi cached storage
   root pada harness gagal akibat quoting PHP dan release manifest mengandung
   BOM. Archive diberi suffix `.rejected`; production tidak berubah.
+- Closure 23.13 WIB: release archive baru `20260814231346-82aa973` lulus
+  ekstraksi ulang, metadata tanpa BOM, exact source/tree, build manifest,
+  config/route/view cache, route contract, junction storage disposable, cached
+  local root, serta Owner Admin asset. SHA-256
+  `cde8339fda316bc2e5a1c5d3107c4b42a16c1798ef6ce4e47105bb0616cba86a`
+  identik pada dua drive; archive lama tetap `.rejected`. Status tetap
+  `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / STAGING_READY` dan
+  production tidak berubah.
 
 ## 2026-08-14 - S201 Owner Support Hub production activation
 

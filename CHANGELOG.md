@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-14 - SagaView S204 release-package blocker closure
+
+- Informasi `CONFIRMED` dari source exact
+  `82aa973312d112c43ad12e0b63857ea271f5a2be` dan rehearsal disposable.
+- Archive `20260814231346-82aa973` lulus metadata tanpa BOM, exact source/tree,
+  build manifest, cache, route contract, shared-storage junction, cached local
+  root, ekstraksi ulang, dan hash dua salinan identik.
+- Delivery tetap `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  STAGING_READY`; production S201 tidak berubah. Persetujuan Andreas,
+  backup/restore baru, switch, smoke, service, journal, dan rollback tetap gate.
+- Dokumen terdampak: SagaView product/changelog/coverage, portfolio/master,
+  root changelog, dan sync status.
+
 ## 2026-08-14 - SagaView S201 Support Hub production sync
 
 - Informasi `CONFIRMED` dari exact source
