@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-15 - SagaView S207 backend provenance gate
+
+- Backend kembali menyediakan runtime provenance public-safe yang hanya
+  menerima marker exact 40-character commit dan gagal tertutup bila invalid.
+- Exact source `04c474ad08f4adaded86b6065ff097084c463c15` lulus full backend
+  991/991, focused 42/42, formatter, syntax, dependency audit, serta preflight
+  exact backend/Studio.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; UAT fisik
+  masih menunggu EPSON L8050/driver dan ruang output minimum 10 GB. Production
+  serta produk lain tidak berubah.
+
 ## 2026-08-15 - SagaBook credential bridge negative acceptance S216
 
 - Acceptance preflight kini mencakup unavailable, locked, respons malformed,

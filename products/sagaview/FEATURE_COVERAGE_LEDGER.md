@@ -1,6 +1,18 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 15 Agustus 2026 12:10 WIB
+Evidence cut-off: 15 Agustus 2026 14:35 WIB
+
+S207 backend runtime-provenance cut-off: backend source exact
+`04c474ad08f4adaded86b6065ff097084c463c15` sudah `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Endpoint publik read-only kini
+melaporkan hanya product dan exact 40-character release commit, memakai
+`no-store` serta `noindex`, dan fail-closed 503 bila marker hilang atau tidak
+valid. Full backend 991/991 (11.450 assertions), focused Support Hub/
+estimate-only/provenance 42/42, formatter, syntax, dan dependency audit lulus.
+Preflight Windows membuktikan backend dan Studio exact/clean/remote serta dua
+runtime provenance HTTP 200; UAT fisik belum dapat dimulai karena EPSON L8050
+beserta driver belum tersedia dan ruang output masih 8,28 GB dari minimum 10
+GB. Production tidak berubah.
 
 S206 local-ingest cancel/replace race cut-off: Studio source exact
 `d0655c46f08e0a8322dd4c30fb47c29c25e11fe9` sudah `PUSHED /

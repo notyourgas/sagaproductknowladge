@@ -1,5 +1,23 @@
 # SagaView Changelog
 
+## 2026-08-15 - S207 exact backend runtime provenance candidate
+
+- Klasifikasi: `CONFIRMED`.
+- Before: kandidat Support Hub tidak memiliki route GET runtime provenance,
+  sehingga harness UAT menerima 405 dan tidak dapat membuktikan runtime backend
+  berasal dari exact source.
+- After: source exact `04c474ad08f4adaded86b6065ff097084c463c15`
+  menyediakan respons public-safe berisi schema, product, exact release commit,
+  dan status; marker hilang/tidak valid gagal tertutup dengan HTTP 503.
+- Security/privacy: respons memakai `no-store`, `no-cache`, `noindex`, rate
+  limit, dan tidak memuat tenant, device, credential, path, atau data customer.
+- Evidence: full backend 991/991 (11.450 assertions), focused Support Hub/
+  estimate-only/provenance 42/42, syntax/formatter, dependency audit, dan
+  preflight exact runtime backend serta Studio HTTP 200.
+- Delivery: `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. UAT fisik
+  masih menunggu EPSON L8050/driver dan ruang output minimal 10 GB; production,
+  database, payment, SagaBook, dan produk lain tidak berubah.
+
 ## 2026-08-15 - S206 local folder cancel/replace race candidate
 
 - Klasifikasi: `CONFIRMED`.
