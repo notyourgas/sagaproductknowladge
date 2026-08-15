@@ -12,16 +12,25 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-15T21:26:00+07:00 |
-| Branch aktif | `codex/s218-sagabook-uat-launcher-idempotency-knowledge` pada worktree terisolasi exact `origin/main` |
-| Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `d8cf4d2c69db39594b93fdec1b225b5cf8fd0fea` |
-| Informasi terakhir disinkronkan | SagaBook S218 membuat launcher UAT idempoten melalui guard per-port, reuse prompt aktif, dan deteksi proses baru terikat waktu mulai. |
-| Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
-| Konflik | Checkout knowledge lain tidak disentuh; sinkronisasi dilakukan dari worktree terisolasi exact `origin/main`. |
+| Waktu pembaruan terakhir | 2026-08-16T01:24:00+07:00 |
+| Branch aktif | `codex/s219-sagabook-uat-prompt-ownership-knowledge` pada worktree terisolasi |
+| Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
+| Baseline sebelum pembaruan | `bb072bcc00e15925cef0b99094449090a9f8fe10` |
+| Informasi terakhir disinkronkan | SagaBook S219 mengikat kepemilikan prompt UAT ke guard port SagaBook agar prompt produk lain tidak salah diatribusikan. |
+| Status sinkronisasi | `BRANCH_SYNCED / MAIN_MERGE_PENDING` setelah validator, push, dan remote verification. |
+| Konflik | Checkout `main` tertinggal dan memiliki commit lokal sehingga tidak disentuh; sinkronisasi dilanjutkan dari branch S218 yang sudah remote-exact. |
 | Error | Actual unlock dan authenticated Owner/operator UAT SagaBook belum dilakukan; production tetap S208. |
 
-## File yang berubah pada sinkronisasi ini (SagaBook S218 launcher idempotency)
+## File yang berubah pada sinkronisasi ini (SagaBook S219 prompt ownership)
+
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
+
+## File yang berubah pada sinkronisasi sebelumnya (SagaBook S218 launcher idempotency)
 
 - `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
 - `products/sagabook/PRODUCT.md`

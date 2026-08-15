@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-16 - SagaBook S219 UAT prompt ownership sync
+
+- Informasi `CONFIRMED` dari exact source
+  `b4fce5619a3d15c385af27bb13135f651627989e` dan gate lokal terisolasi.
+- Prompt unlock kini terikat ke guard per-port SagaBook; prompt produk lain
+  tidak dibaca sebagai prompt SagaBook atau memblokir launcher.
+- Delivery `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; actual UAT
+  belum dilakukan dan production tetap S208.
+- Dokumen terdampak: SagaBook product/changelog/coverage, portfolio, root
+  changelog, dan sync status.
+
 ## 2026-08-15 - SagaBook S218 UAT bridge launcher idempotency sync
 
 - Informasi `CONFIRMED` dari exact source

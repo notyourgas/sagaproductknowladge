@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 15 Agustus 2026 21:26 WIB
+Updated: 16 Agustus 2026 01:24 WIB
 Evidence status: production deployment and activation verified; business readiness pending
 
 ## Tujuan dokumen
@@ -16,6 +16,14 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
+- Candidate S219 source `b4fce5619a3d15c385af27bb13135f651627989e`
+  sudah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Kepemilikan
+  prompt unlock UAT kini memakai guard per-port SagaBook; launcher tidak lagi
+  memindai proses Bitwarden global yang dapat tertukar dengan prompt produk
+  lain. Focused tooling 17/17, kontrak evidence 13/13, full backend
+  1.045/1.045 (11.868 assertion), build 5.116 modul, syntax, serta audit
+  npm/Composer/OSV lulus. Actual unlock/UAT belum dilakukan dan production
+  tetap S208.
 - Candidate S218 source `60e115db0458b4791938e692dda79643f47d342a`
   sudah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Launcher UAT
   kini memakai guard per-port dan mendeteksi prompt unlock aktif sehingga dua

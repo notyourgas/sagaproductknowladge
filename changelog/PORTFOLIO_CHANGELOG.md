@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-16 - SagaBook UAT prompt ownership S219
+
+- Launcher UAT kini mengikat prompt unlock ke guard port SagaBook dan tidak
+  lagi menganggap proses Bitwarden global sebagai bukti kepemilikan.
+- Source exact `b4fce5619a3d15c385af27bb13135f651627989e` sudah dipush dan
+  lulus focused 17/17, evidence 13/13, backend 1.045/1.045, build, syntax,
+  serta audit dependency.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; actual UAT belum
+  berjalan dan production SagaBook tetap S208.
+
 ## 2026-08-15 - SagaBook UAT bridge launcher idempotency S218
 
 - Guard per-port mencegah dua invocation paralel membuka dua terminal unlock;
