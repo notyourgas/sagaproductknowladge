@@ -1,5 +1,27 @@
 # SagaView Changelog
 
+## 2026-08-15 - S210 exact backend test-runtime guard
+
+- Klasifikasi: `CONFIRMED` release-safety correction.
+- Before: dependency `vendor` berbentuk junction dapat membuat PHPUnit memuat
+  application root dan controller dari worktree lama; gate Support Hub
+  menghasilkan 34/37 dengan upload 201 dan provenance 405 pada runtime yang
+  bukan source kandidat.
+- After: source exact `a07d8af9924b49977adf184a921979fcd8bdec4a`
+  mengikat bootstrap PHPUnit ke repository aktif, memverifikasi namespace
+  project serta framework/PHPUnit, dan menolak dependency tree asing sebelum
+  test menjadi evidence release.
+- Security/privacy: strict no-upload SagaView kembali terbukti 404 pada source
+  exact; runtime provenance valid/missing kembali 200/503. Hanya data sintetis
+  dipakai dan tidak ada foto, path, credential, atau data customer.
+- Evidence: negative/current runtime contract 2/2; focused Support Hub/device/
+  provenance 39/39 dengan 193 assertion; full backend 993/993 dengan 11.455
+  assertion; build 5.097 modul; Pint, Composer validation/audit, dan npm audit
+  lulus.
+- Delivery: `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Production,
+  database, payment, SagaBook, dan produk lain tidak berubah. UAT fisik serta
+  guarded deploy tetap gate terpisah.
+
 ## 2026-08-15 - S207 exact backend runtime provenance candidate
 
 - Klasifikasi: `CONFIRMED`.
@@ -11,9 +33,10 @@
   dan status; marker hilang/tidak valid gagal tertutup dengan HTTP 503.
 - Security/privacy: respons memakai `no-store`, `no-cache`, `noindex`, rate
   limit, dan tidak memuat tenant, device, credential, path, atau data customer.
-- Evidence: full backend 991/991 (11.450 assertions), focused Support Hub/
-  estimate-only/provenance 42/42, syntax/formatter, dependency audit, dan
-  preflight exact runtime backend serta Studio HTTP 200.
+- Koreksi evidence: angka awal 991/991 dan focused 42/42 tidak lagi dipakai
+  sebagai bukti exact karena S209 menemukan runtime test dapat berasal dari
+  worktree lain. S210 menggantinya dengan full exact 993/993 dan focused 39/39
+  yang menolak dependency tree asing.
 - Delivery: `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. UAT fisik
   masih menunggu EPSON L8050/driver dan ruang output minimal 10 GB; production,
   database, payment, SagaBook, dan produk lain tidak berubah.

@@ -1,8 +1,16 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 15 Agustus 2026 14:35 WIB
+Evidence cut-off: 15 Agustus 2026 17:12 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
+
+SagaView S210 backend source `a07d8af9924b49977adf184a921979fcd8bdec4a`
+sudah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. PHPUnit sekarang
+terikat ke application root dan namespace worktree aktif; dependency tree
+asing ditolak sebelum hasil dapat menjadi bukti release. Revalidasi exact
+Support Hub/device/provenance 39/39, full backend 993/993, build 5.097 modul,
+formatter, serta audit Composer/npm lulus. Production, database, payment,
+SagaBook, dan produk lain tidak berubah.
 
 SagaView S207 backend source `04c474ad08f4adaded86b6065ff097084c463c15`
 sudah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Runtime provenance
@@ -10,7 +18,8 @@ kembali fail-closed dan public-safe: exact marker memberi HTTP 200, sedangkan
 marker hilang/tidak valid memberi 503 tanpa nilai mentah. Full backend 991/991,
 focused 42/42, security/dependency audit, dan preflight exact backend/Studio
 lulus. UAT fisik masih ditahan oleh EPSON L8050/driver dan ruang output minimum
-10 GB; production tidak berubah.
+10 GB; production tidak berubah. Angka gate awal S207 digantikan oleh
+revalidasi exact S210 setelah audit dependency-junction.
 
 SagaBook S216 source `473b63f8b8846160844976b07d477f6759846d04`
 sudah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Acceptance

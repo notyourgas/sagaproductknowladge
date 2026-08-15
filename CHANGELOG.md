@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-15 - SagaView S210 exact test-runtime sync
+
+- Informasi `CONFIRMED` dari source exact
+  `a07d8af9924b49977adf184a921979fcd8bdec4a` dan gate lokal pada dependency
+  install worktree sendiri.
+- Bootstrap PHPUnit kini menolak application root, namespace, framework, atau
+  controller dari worktree lain; bukti test lama S207 digantikan revalidasi
+  exact 993/993.
+- Delivery `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production,
+  database, payment, SagaBook, dan produk lain tidak berubah.
+- Dokumen terdampak: SagaView product/changelog/coverage, portfolio/master,
+  root changelog, dan sync status.
+
 ## 2026-08-15 - SagaBook S216 bridge negative acceptance sync
 
 - Informasi `CONFIRMED` dari exact source

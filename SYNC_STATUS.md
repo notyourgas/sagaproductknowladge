@@ -12,16 +12,26 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-15T14:06:00+07:00 |
-| Branch aktif | `codex/s216-sagabook-bridge-negative-knowledge` pada worktree terisolasi exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-15T17:12:00+07:00 |
+| Branch aktif | `codex/s210-sagaview-backend-test-provenance-knowledge` pada worktree terisolasi exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `adff1b796861bd9651039ffb26fcf4070b01c023` |
-| Informasi terakhir disinkronkan | SagaBook S216 source `473b63f8b8846160844976b07d477f6759846d04` membuktikan unavailable, locked, respons malformed, dan URL non-loopback gagal tertutup tanpa akses credential atau production; production tetap S208. |
+| Baseline sebelum pembaruan | `425f3da44b24ddbe17e8f79fb5678b5a0e18eab3` |
+| Informasi terakhir disinkronkan | SagaView S210 source `a07d8af9924b49977adf184a921979fcd8bdec4a` mengikat gate PHPUnit ke worktree exact dan menggantikan bukti test S207 yang dapat terkontaminasi dependency junction. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
 | Konflik | Checkout knowledge lain tidak disentuh; sinkronisasi dilakukan dari worktree terisolasi exact `origin/main`. |
-| Error | Tidak ada error sinkronisasi. Kondisi aktual `bridge_unavailable`; actual Owner/operator UAT dan deploy belum dilakukan, production tetap S208. |
+| Error | Tidak ada error sinkronisasi. UAT fisik dan guarded deploy SagaView belum dilakukan; production tidak berubah. |
 
-## File yang berubah pada sinkronisasi ini (SagaBook S216 bridge negative acceptance)
+## File yang berubah pada sinkronisasi ini (SagaView S210 exact test runtime)
+
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
+
+## File yang berubah pada sinkronisasi sebelumnya (SagaBook S216 bridge negative acceptance)
 
 - `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
 - `products/sagabook/PRODUCT.md`

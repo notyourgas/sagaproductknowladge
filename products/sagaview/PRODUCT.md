@@ -2,14 +2,26 @@
 
 Updated: 15 Agustus 2026
 
+Kandidat backend S210 source exact
+`a07d8af9924b49977adf184a921979fcd8bdec4a` sudah `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Gate PHPUnit kini mengikat
+application root, namespace project, framework, dan PHPUnit ke worktree aktif,
+serta menolak dependency tree asing sebelum hasil dapat dipakai sebagai bukti
+release. Perubahan ini menutup blocker S209 ketika junction dependency membuat
+test mengeksekusi controller lama. Full backend exact 993/993 dengan 11.455
+assertion, focused Support Hub/device/provenance 39/39 dengan 193 assertion,
+build 5.097 modul, formatter, Composer validation/audit, dan npm audit lulus.
+Tidak ada perubahan perilaku runtime, database, production, payment, SagaBook,
+atau produk lain.
+
 Kandidat backend S207 source exact
 `04c474ad08f4adaded86b6065ff097084c463c15` sudah `PUSHED /
 LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Endpoint runtime provenance
 SagaVIEW kembali tersedia secara read-only dan fail-closed: marker exact valid
 menghasilkan HTTP 200, sedangkan marker hilang/tidak valid menghasilkan 503
 tanpa membocorkan nilai mentah. Respons tidak boleh disimpan cache atau
-diindeks. Full backend 991/991, focused 42/42, formatter, syntax, dependency
-audit, dan preflight exact backend/Studio lulus. UAT fisik tetap ditahan hanya
+diindeks. Evidence test lama digantikan oleh gate exact S210 setelah audit
+menemukan dependency junction dapat memuat worktree lain. UAT fisik tetap ditahan hanya
 oleh ketersediaan EPSON L8050/driver serta ruang output minimum 10 GB;
 production tidak berubah.
 

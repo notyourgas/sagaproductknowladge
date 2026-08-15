@@ -1,12 +1,22 @@
 # Portfolio Changelog
 
+## 2026-08-15 - SagaView S210 exact test-runtime guard
+
+- Gate backend kini berhenti aman bila Composer/PHPUnit memuat application
+  root, namespace, framework, atau controller dari worktree lain.
+- Source exact `a07d8af9924b49977adf184a921979fcd8bdec4a` lulus focused
+  Support Hub/device/provenance 39/39, full backend 993/993, build 5.097 modul,
+  formatter, serta audit Composer/npm.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production,
+  database, SagaBook, dan produk lain tidak berubah. Bukti test S207 lama
+  digantikan oleh revalidasi exact S210.
+
 ## 2026-08-15 - SagaView S207 backend provenance gate
 
 - Backend kembali menyediakan runtime provenance public-safe yang hanya
   menerima marker exact 40-character commit dan gagal tertutup bila invalid.
-- Exact source `04c474ad08f4adaded86b6065ff097084c463c15` lulus full backend
-  991/991, focused 42/42, formatter, syntax, dependency audit, serta preflight
-  exact backend/Studio.
+- Evidence test awal pada source S207 ditemukan dapat terikat ke worktree lama
+  melalui dependency junction; revalidasi exact sekarang berada pada S210.
 - Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; UAT fisik
   masih menunggu EPSON L8050/driver dan ruang output minimum 10 GB. Production
   serta produk lain tidak berubah.

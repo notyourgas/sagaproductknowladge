@@ -1,14 +1,30 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 15 Agustus 2026 14:35 WIB
+Evidence cut-off: 15 Agustus 2026 17:12 WIB
+
+S210 exact backend test-runtime cut-off: source exact
+`a07d8af9924b49977adf184a921979fcd8bdec4a` sudah `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Audit menemukan dependency
+junction dapat membuat PHPUnit memuat application root dan controller dari
+worktree lama, sehingga hasil test tidak membuktikan source kandidat yang
+sedang diperiksa. Bootstrap PHPUnit sekarang mengikat application root serta
+namespace App, Tests, database, dan adapter ke repository aktif; framework dan
+PHPUnit dari dependency tree lain ditolak sebelum hasil menjadi evidence.
+Negative contract 2/2, focused Support Hub/device/provenance 39/39 dengan 193
+assertion, dan full backend exact 993/993 dengan 11.455 assertion lulus. Build
+5.097 modul, Pint, Composer validation/audit, serta npm audit juga lulus.
+Production, database, SagaBook, dan produk lain tidak berubah. S207 tetap
+fitur kandidat, tetapi angka gate lama digantikan oleh bukti exact S210 ini.
 
 S207 backend runtime-provenance cut-off: backend source exact
 `04c474ad08f4adaded86b6065ff097084c463c15` sudah `PUSHED /
 LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Endpoint publik read-only kini
 melaporkan hanya product dan exact 40-character release commit, memakai
 `no-store` serta `noindex`, dan fail-closed 503 bila marker hilang atau tidak
-valid. Full backend 991/991 (11.450 assertions), focused Support Hub/
-estimate-only/provenance 42/42, formatter, syntax, dan dependency audit lulus.
+valid. Bukti test awal 991/991 kemudian ditemukan tidak cukup menjamin source
+exact ketika dependency junction mengarah ke worktree lain; S210 menggantinya
+dengan full backend exact 993/993 dan focused 39/39 yang fail-closed terhadap
+runtime asing.
 Preflight Windows membuktikan backend dan Studio exact/clean/remote serta dua
 runtime provenance HTTP 200; UAT fisik belum dapat dimulai karena EPSON L8050
 beserta driver belum tersedia dan ruang output masih 8,28 GB dari minimum 10
