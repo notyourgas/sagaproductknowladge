@@ -12,16 +12,27 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-15T12:10:00+07:00 |
-| Branch aktif | `codex/s206-sagaview-ingest-replace-race-knowledge` pada worktree terisolasi exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-15T14:06:00+07:00 |
+| Branch aktif | `codex/s216-sagabook-bridge-negative-knowledge` pada worktree terisolasi exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `b8f66b55ad652ccc3d532496cb837f3b7b8d8047` |
-| Informasi terakhir disinkronkan | SagaView S206 source `d0655c46f08e0a8322dd4c30fb47c29c25e11fe9` menutup race cancel/ganti folder dan kebocoran nama file fallback; production tidak berubah. |
+| Baseline sebelum pembaruan | `adff1b796861bd9651039ffb26fcf4070b01c023` |
+| Informasi terakhir disinkronkan | SagaBook S216 source `473b63f8b8846160844976b07d477f6759846d04` membuktikan unavailable, locked, respons malformed, dan URL non-loopback gagal tertutup tanpa akses credential atau production; production tetap S208. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
 | Konflik | Checkout knowledge lain tidak disentuh; sinkronisasi dilakukan dari worktree terisolasi exact `origin/main`. |
-| Error | Tidak ada error sinkronisasi. UAT folder Windows nyata dan deploy kandidat SagaView belum dilakukan. |
+| Error | Tidak ada error sinkronisasi. Kondisi aktual `bridge_unavailable`; actual Owner/operator UAT dan deploy belum dilakukan, production tetap S208. |
 
-## File yang berubah pada sinkronisasi ini (SagaView S206 local folder race)
+## File yang berubah pada sinkronisasi ini (SagaBook S216 bridge negative acceptance)
+
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
+
+## File yang berubah pada sinkronisasi sebelumnya (SagaView S206 local folder race)
 
 - `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
 - `products/sagaview/PRODUCT.md`

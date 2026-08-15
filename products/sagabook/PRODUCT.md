@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 15 Agustus 2026 12:03 WIB
+Updated: 15 Agustus 2026 14:06 WIB
 Evidence status: production deployment and activation verified; business readiness pending
 
 ## Tujuan dokumen
@@ -16,6 +16,14 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
+- Candidate S216 source `473b63f8b8846160844976b07d477f6759846d04`
+  sudah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Acceptance
+  preflight credential bridge kini secara eksplisit membuktikan kondisi
+  unavailable, locked, respons malformed, dan URL non-loopback selalu gagal
+  tertutup sebelum akses credential, evidence, atau request production.
+  Focused tooling 24/24, full backend 1.045/1.045 (11.868 assertion), build
+  5.116 modul, serta audit npm/Composer/OSV lulus. Pemeriksaan aktual tetap
+  `bridge_unavailable`; production tetap S208.
 - Candidate S215 source `f8dfbe1291be88e1d72cd54216aff637b12c4df8`
   sudah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Preflight
   credential bridge kini memberi alasan public-safe yang dapat ditindaklanjuti

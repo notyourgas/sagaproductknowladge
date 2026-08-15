@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-15 - SagaBook credential bridge negative acceptance S216
+
+- Acceptance preflight kini mencakup unavailable, locked, respons malformed,
+  dan URL non-loopback secara fail-closed tanpa membaca credential.
+- Source `473b63f8b8846160844976b07d477f6759846d04` lulus focused 24/24,
+  backend 1.045/1.045, build 5.116 modul, dan audit dependency.
+- Kondisi aktual tetap `bridge_unavailable`; tidak ada evidence, request, atau
+  mutation production. Status `PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap S208.
+
 ## 2026-08-15 - SagaView S206 local folder race candidate
 
 - Import lokal kini menolak progres stale setelah cancel/ganti folder dan

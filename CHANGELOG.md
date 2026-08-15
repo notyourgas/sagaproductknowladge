@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-15 - SagaBook S216 bridge negative acceptance sync
+
+- Informasi `CONFIRMED` dari exact source
+  `473b63f8b8846160844976b07d477f6759846d04` dan gate lokal terisolasi.
+- Acceptance preflight kini membuktikan unavailable, locked, respons malformed,
+  dan URL non-loopback gagal tertutup tanpa akses credential, evidence, atau
+  request production.
+- Kondisi aktual `bridge_unavailable`; production tetap S208. Delivery
+  `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- Dokumen terdampak: SagaBook product/changelog/coverage, gaps,
+  portfolio/master, root changelog, dan sync status.
+
 ## 2026-08-15 - SagaView S206 local folder race sync
 
 - Informasi `CONFIRMED` dari exact source

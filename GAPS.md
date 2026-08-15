@@ -8,7 +8,7 @@ diubah menjadi klaim publik sebelum ditutup dengan bukti atau keputusan owner.
 
 ## Konteks
 
-Daftar ini berlaku pada evidence cut-off 15 Agustus 2026 01:34 WIB dan harus diperbarui
+Daftar ini berlaku pada evidence cut-off 15 Agustus 2026 14:06 WIB dan harus diperbarui
 ketika keputusan atau release baru menutup gap.
 
 ## Cara memakai
@@ -33,6 +33,14 @@ ketika keputusan atau release baru menutup gap.
 ## Keputusan produk
 
 ### SagaBook
+
+- `TODO`: acceptance negatif S216 exact source
+  `473b63f8b8846160844976b07d477f6759846d04` sudah `PUSHED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Unavailable, locked, respons
+  malformed, dan URL non-loopback terbukti gagal tertutup tanpa credential,
+  evidence, atau request production. Kondisi aktual masih
+  `bridge_unavailable`; aktifkan dan unlock bridge sebelum UAT S214. Production
+  tetap S208.
 
 - `TODO`: preflight S215 exact source
   `f8dfbe1291be88e1d72cd54216aff637b12c4df8` sudah `PUSHED /

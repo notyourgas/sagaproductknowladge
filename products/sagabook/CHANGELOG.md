@@ -1,5 +1,19 @@
 # SagaBook Changelog
 
+## 2026-08-15 - Credential bridge negative acceptance S216
+
+- Informasi `CONFIRMED` dari exact source
+  `473b63f8b8846160844976b07d477f6759846d04`; branch source sudah dipush.
+- Before: preflight baru membuktikan unlocked/locked, sedangkan unavailable,
+  respons malformed, dan URL non-loopback belum menjadi acceptance eksplisit.
+  After: empat kelas negatif wajib gagal tertutup sebelum akses credential,
+  pembuatan evidence, atau request production.
+- Focused tooling 24/24, full backend 1.045/1.045 (11.868 assertion), build
+  5.116 modul, npm/Composer/OSV, dan diff check lulus.
+- Pemeriksaan aktual tetap `bridge_unavailable`; credential tidak dibaca,
+  evidence tidak dibuat, dan production tetap S208. Status `PUSHED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+
 ## 2026-08-15 - Credential bridge readiness preflight S215
 
 - Informasi `CONFIRMED` dari exact source
