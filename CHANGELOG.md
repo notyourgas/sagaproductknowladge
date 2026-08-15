@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-16 - SagaBook S220 UAT credential cleanup sync
+
+- Informasi `CONFIRMED` dari exact source
+  `b2934f297d3bb791f4cf53a8ee8743c49ca0dd8f` dan gate lokal terisolasi.
+- Cleanup kini mencakup pembacaan item serta credential Owner/operator, sehingga
+  kegagalan parsial tidak meninggalkan nilai credential pada scope invoker.
+- Delivery `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; actual UAT
+  belum dilakukan dan production tetap S208.
+- Dokumen terdampak: SagaBook product/changelog/coverage, portfolio, root
+  changelog, dan sync status.
+
 ## 2026-08-16 - SagaBook S219 UAT prompt ownership sync
 
 - Informasi `CONFIRMED` dari exact source

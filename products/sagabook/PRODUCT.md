@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 16 Agustus 2026 01:24 WIB
+Updated: 16 Agustus 2026 02:15 WIB
 Evidence status: production deployment and activation verified; business readiness pending
 
 ## Tujuan dokumen
@@ -16,6 +16,15 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
+- Candidate S220 source `b2934f297d3bb791f4cf53a8ee8743c49ca0dd8f`
+  sudah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Batas cleanup
+  invoker authenticated UAT kini dimulai sebelum daftar item vault dan
+  credential Owner/operator dibaca. Jika pembacaan operator gagal setelah
+  Owner berhasil, nilai Owner, operator, koleksi item, dan environment child
+  process tetap dibersihkan. Focused tooling 18/18, kontrak evidence 13/13,
+  full backend 1.045/1.045 (11.868 assertion), build 5.116 modul, syntax, serta
+  audit npm/Composer/OSV lulus. Credential nyata tidak dibaca, actual UAT belum
+  dilakukan, dan production tetap S208.
 - Candidate S219 source `b4fce5619a3d15c385af27bb13135f651627989e`
   sudah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Kepemilikan
   prompt unlock UAT kini memakai guard per-port SagaBook; launcher tidak lagi

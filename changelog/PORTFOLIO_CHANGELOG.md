@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-16 - SagaBook UAT credential cleanup S220
+
+- Invoker UAT kini membersihkan credential dan koleksi item walau pembacaan
+  operator gagal setelah Owner berhasil dibaca.
+- Source exact `b2934f297d3bb791f4cf53a8ee8743c49ca0dd8f` sudah dipush dan
+  lulus focused 18/18, evidence 13/13, backend 1.045/1.045, build, syntax,
+  serta audit dependency.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; actual UAT belum
+  berjalan dan production SagaBook tetap S208.
+
 ## 2026-08-16 - SagaBook UAT prompt ownership S219
 
 - Launcher UAT kini mengikat prompt unlock ke guard port SagaBook dan tidak

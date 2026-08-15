@@ -1,5 +1,19 @@
 # SagaBook Changelog
 
+## 2026-08-16 - UAT credential partial-failure cleanup S220
+
+- Informasi `CONFIRMED` dari exact source
+  `b2934f297d3bb791f4cf53a8ee8743c49ca0dd8f`; branch source sudah dipush.
+- Before: cleanup baru dimulai setelah Owner dan operator selesai dibaca,
+  sehingga kegagalan operator setelah Owner berhasil berada di luar finalizer.
+  After: pembacaan item, kedua credential, dan child process berada dalam satu
+  batas cleanup fail-closed.
+- Focused tooling 18/18, kontrak evidence 13/13, full backend 1.045/1.045
+  (11.868 assertion), build 5.116 modul, syntax, npm/Composer/OSV, dan diff
+  check lulus.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Credential
+  nyata tidak dibaca, actual UAT belum dilakukan, dan production tetap S208.
+
 ## 2026-08-16 - UAT prompt ownership S219
 
 - Informasi `CONFIRMED` dari exact source
