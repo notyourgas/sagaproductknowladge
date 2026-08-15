@@ -1,5 +1,15 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-15 - SagaView S212 exact-runtime closure sync
+
+- Informasi `CONFIRMED` dari archive/runtime exact backend S210 dan Studio S206.
+- Backend serta Studio provenance memberi 200 tanpa membuat source dirty;
+  focused backend 4/4 dan Studio 2/2 lulus.
+- Slice `LOCAL_VALIDATED`; UAT tetap `BLOCKED_PREFLIGHT` hanya oleh EPSON
+  L8050/driver dan ruang output 2,72 GB. Production tidak berubah.
+- Dokumen terdampak: SagaView product/dossier/changelog/coverage,
+  portfolio/master, root changelog, dan sync status.
+
 ## 2026-08-15 - SagaView S211 physical-UAT preflight sync
 
 - Informasi `CONFIRMED` dari preflight exact backend S210 dan Studio S206.

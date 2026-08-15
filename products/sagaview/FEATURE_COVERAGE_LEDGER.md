@@ -1,18 +1,27 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 15 Agustus 2026 18:10 WIB
+Evidence cut-off: 15 Agustus 2026 19:04 WIB
+
+S212 exact-runtime preflight closure: backend S210
+`a07d8af9924b49977adf184a921979fcd8bdec4a` dijalankan dari git archive
+disposable dengan marker release terpisah, sehingga source tetap clean. Backend
+health/provenance dan Studio S206 page/provenance seluruhnya HTTP 200 dengan
+product serta commit exact; focused backend 4/4 dengan 14 assertion dan Studio
+2/2 lulus. Preflight sekarang hanya memblokir EPSON L8050/driver dan ruang
+output 2,72 GB dari minimum 10 GB. Slice runtime `LOCAL_VALIDATED`; keseluruhan
+UAT tetap `BLOCKED_PREFLIGHT / hold_manual_evidence`, tanpa finalize, deploy,
+database write, atau mutasi production.
 
 S211 physical-UAT preflight cut-off: backend S210 exact
 `a07d8af9924b49977adf184a921979fcd8bdec4a` dan Studio S206 exact
 `d0655c46f08e0a8322dd4c30fb47c29c25e11fe9` sama-sama clean setelah run,
 terikat upstream `origin/*`, dan remote exact. Studio kandidat serta marker
 runtime exact memberi HTTP 200; backend health juga 200. Preflight tetap
-`BLOCKED_PREFLIGHT / hold_manual_evidence`: marker runtime backend tidak dapat
-dibaca pada konfigurasi launch lokal setelah dua correction rounds, EPSON
-L8050 beserta driver tidak ditemukan, dan ruang output hanya 2,70 GB dari gate
-minimum 10 GB. Flag dirty backend pada manifest berasal dari marker sementara
-yang sudah dihapus; kedua worktree kembali clean. Tidak ada finalize, UAT
-manual, deploy, perubahan database, atau mutasi production.
+`BLOCKED_PREFLIGHT / hold_manual_evidence`: marker runtime backend awalnya tidak
+dapat dibaca pada konfigurasi launch worktree. S212 menutup blocker tersebut
+dengan runtime artifact disposable; residual tinggal EPSON L8050/driver dan
+ruang output minimum 10 GB. Flag dirty backend pada manifest berasal dari
+marker sementara yang sudah dihapus; kedua worktree kembali clean.
 
 S210 exact backend test-runtime cut-off: source exact
 `a07d8af9924b49977adf184a921979fcd8bdec4a` sudah `PUSHED /

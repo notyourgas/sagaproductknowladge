@@ -1,5 +1,18 @@
 # SagaView Dossier
 
+## S212 exact-runtime preflight closure
+
+Git archive exact backend S210
+`a07d8af9924b49977adf184a921979fcd8bdec4a` dijalankan sebagai runtime
+disposable dengan marker release terpisah dari source checkout. Ini membuat
+source tetap clean sekaligus memberi backend health dan runtime provenance HTTP
+200 dengan product/commit exact, no-store, dan noindex. Studio S206
+`d0655c46f08e0a8322dd4c30fb47c29c25e11fe9` page/runtime provenance juga
+200. Focused backend 4/4 dengan 14 assertion dan Studio 2/2 lulus. Harness
+preflight exact kini hanya mencatat EPSON L8050/driver dan kapasitas output
+2,72 GB sebagai blocker. Runtime closure `LOCAL_VALIDATED`; UAT keseluruhan
+tetap blocked dan production tidak berubah.
+
 ## S211 physical-UAT exact-candidate preflight
 
 Preflight lokal memakai backend S210
@@ -8,9 +21,10 @@ Preflight lokal memakai backend S210
 branch kedua kandidat exact; kedua worktree kembali clean setelah marker
 sementara dibuang. Windows 11, Chrome, spooler, antrean cetak kosong, profil
 browser terpisah, Studio page/runtime provenance 200, dan backend health 200
-lulus. Gate berhenti pada marker runtime backend konfigurasi lokal, ketiadaan
-EPSON L8050/driver, serta ruang output 2,70 GB dari minimum 10 GB. Harness
-memberi `BLOCKED_PREFLIGHT / hold_manual_evidence`; tidak ada finalize,
+lulus. Gate awal berhenti pada marker runtime backend konfigurasi lokal; S212
+kemudian menutupnya dengan artifact disposable. Ketiadaan EPSON L8050/driver
+serta ruang output di bawah minimum 10 GB tetap membuat harness berstatus
+`BLOCKED_PREFLIGHT / hold_manual_evidence`; tidak ada finalize,
 evidence foto customer, deploy, database write, atau perubahan production.
 
 ## S201 Owner Support Hub production activation

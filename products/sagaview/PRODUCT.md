@@ -2,16 +2,25 @@
 
 Updated: 15 Agustus 2026
 
+S212 menutup blocker runtime-provenance lokal S211 tanpa mengubah source.
+Backend S210 `a07d8af9924b49977adf184a921979fcd8bdec4a` dijalankan dari git
+archive disposable dengan marker release di luar worktree; backend health dan
+marker exact memberi HTTP 200 dengan header no-store/noindex. Studio S206
+`d0655c46f08e0a8322dd4c30fb47c29c25e11fe9` page dan marker exact juga 200.
+Focused backend 4/4 dan Studio 2/2 lulus; kedua worktree clean dan remote exact.
+Slice runtime `LOCAL_VALIDATED`, tetapi UAT fisik tetap
+`BLOCKED_PREFLIGHT` hanya karena EPSON L8050/driver belum ada dan ruang output
+2,72 GB masih di bawah minimum 10 GB. Production dan database tidak berubah.
+
 Preflight fisik S211 pada pasangan backend S210
 `a07d8af9924b49977adf184a921979fcd8bdec4a` dan Studio S206
 `d0655c46f08e0a8322dd4c30fb47c29c25e11fe9` berhenti aman. Kedua source
 clean setelah run, sudah dipush exact, Studio dan marker runtime memberi HTTP
-200, serta backend health memberi 200. UAT manual belum boleh dimulai karena
-marker runtime backend tidak tersedia pada konfigurasi launch lokal, EPSON
-L8050/driver tidak ditemukan, dan ruang output hanya 2,70 GB dari minimum 10
-GB. Dua correction rounds sudah dipakai; status `BLOCKED_PREFLIGHT`, bukan
-completion atau readiness. Production, database, foto/path lokal, payment,
-SagaBook, dan produk lain tidak berubah.
+200, serta backend health memberi 200. Blocker runtime backend kemudian ditutup
+S212 memakai artifact disposable. UAT manual belum boleh dimulai karena EPSON
+L8050/driver tidak ditemukan dan ruang output masih di bawah minimum 10 GB.
+Production, database, foto/path lokal, payment, SagaBook, dan produk lain tidak
+berubah.
 
 Kandidat backend S210 source exact
 `a07d8af9924b49977adf184a921979fcd8bdec4a` sudah `PUSHED /

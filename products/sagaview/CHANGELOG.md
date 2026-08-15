@@ -1,5 +1,23 @@
 # SagaView Changelog
 
+## 2026-08-15 - S212 exact-runtime preflight closure
+
+- Klasifikasi: `CONFIRMED` release-safety evidence.
+- Before: runtime backend S210 tidak dapat dibuktikan sambil menaruh marker
+  release sementara di source, karena kontrak UAT benar menolak worktree dirty.
+- After: git archive exact
+  `a07d8af9924b49977adf184a921979fcd8bdec4a` dijalankan sebagai artifact
+  disposable; source tetap clean dan backend health/provenance memberi 200
+  dengan commit exact serta header no-store/noindex.
+- Pairing: Studio S206
+  `d0655c46f08e0a8322dd4c30fb47c29c25e11fe9` page/provenance juga 200;
+  focused backend 4/4 dengan 14 assertion dan Studio 2/2 lulus.
+- Dampak: blocker runtime lokal tertutup. Preflight masih blocked hanya karena
+  EPSON L8050/driver tidak ditemukan dan ruang output 2,72 GB di bawah 10 GB.
+- Delivery: slice `LOCAL_VALIDATED`; UAT keseluruhan
+  `BLOCKED_PREFLIGHT / hold_manual_evidence`. Tidak ada finalize, deploy,
+  database/payment change, SagaBook change, atau mutasi production.
+
 ## 2026-08-15 - S211 physical-UAT preflight
 
 - Klasifikasi: `CONFIRMED` operational/release blocker update.
@@ -9,9 +27,10 @@
   `a07d8af9924b49977adf184a921979fcd8bdec4a` dan Studio
   `d0655c46f08e0a8322dd4c30fb47c29c25e11fe9` terbukti exact, remote, dan
   clean setelah run; Studio/runtime serta backend health memberi HTTP 200.
-- Blocker: runtime provenance backend gagal tersedia pada konfigurasi launch
-  lokal setelah dua correction rounds, EPSON L8050/driver tidak ditemukan,
-  dan ruang output turun menjadi 2,70 GB dari minimum 10 GB.
+- Blocker saat itu: runtime provenance backend gagal tersedia pada konfigurasi
+  launch worktree, EPSON L8050/driver tidak ditemukan, dan ruang output turun
+  menjadi 2,70 GB. S212 kemudian menutup blocker runtime memakai artifact
+  disposable; dua blocker fisik tetap berlaku.
 - Integritas: marker sementara yang membuat manifest mencatat worktree dirty
   sudah dihapus dan kedua source kembali clean. Hanya data sintetis/public-safe
   dipakai; tidak ada customer data, foto/path, credential, atau provider data.

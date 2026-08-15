@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-08-15 - SagaView S212 exact-runtime preflight closure
+
+- Backend S210 dijalankan dari archive disposable sehingga marker exact dapat
+  diverifikasi tanpa mengotori source; backend dan Studio runtime sama-sama 200.
+- Focused backend 4/4 dan Studio 2/2 lulus. Residual UAT kini hanya EPSON
+  L8050/driver dan ruang output 2,72 GB dari minimum 10 GB.
+- Slice `LOCAL_VALIDATED`; keseluruhan UAT masih `BLOCKED_PREFLIGHT` dan
+  production, database, SagaBook, serta produk lain tidak berubah.
+
 ## 2026-08-15 - SagaView S211 physical-UAT preflight
 
 - Backend S210 dan Studio S206 exact/remote/clean setelah run; Studio runtime
