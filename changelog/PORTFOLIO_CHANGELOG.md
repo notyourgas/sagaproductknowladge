@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-08-15 - SagaView S211 physical-UAT preflight
+
+- Backend S210 dan Studio S206 exact/remote/clean setelah run; Studio runtime
+  dan backend health kandidat memberi HTTP 200.
+- Preflight fail-closed karena runtime provenance backend lokal belum tersedia,
+  EPSON L8050/driver tidak ditemukan, dan ruang output hanya 2,70 GB.
+- Status `BLOCKED_PREFLIGHT / hold_manual_evidence`; production, database,
+  SagaBook, dan produk lain tidak berubah.
+
 ## 2026-08-15 - SagaView S210 exact test-runtime guard
 
 - Gate backend kini berhenti aman bila Composer/PHPUnit memuat application

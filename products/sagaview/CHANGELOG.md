@@ -1,5 +1,23 @@
 # SagaView Changelog
 
+## 2026-08-15 - S211 physical-UAT preflight
+
+- Klasifikasi: `CONFIRMED` operational/release blocker update.
+- Before: residual UAT masih mencatat ruang output 8,28 GB dan belum menguji
+  pasangan backend S210 dengan Studio S206 pada runtime lokal yang sama.
+- After: source backend
+  `a07d8af9924b49977adf184a921979fcd8bdec4a` dan Studio
+  `d0655c46f08e0a8322dd4c30fb47c29c25e11fe9` terbukti exact, remote, dan
+  clean setelah run; Studio/runtime serta backend health memberi HTTP 200.
+- Blocker: runtime provenance backend gagal tersedia pada konfigurasi launch
+  lokal setelah dua correction rounds, EPSON L8050/driver tidak ditemukan,
+  dan ruang output turun menjadi 2,70 GB dari minimum 10 GB.
+- Integritas: marker sementara yang membuat manifest mencatat worktree dirty
+  sudah dihapus dan kedua source kembali clean. Hanya data sintetis/public-safe
+  dipakai; tidak ada customer data, foto/path, credential, atau provider data.
+- Delivery: `BLOCKED_PREFLIGHT / hold_manual_evidence`; tidak ada completion,
+  finalize, deploy, perubahan database, payment, SagaBook, atau production.
+
 ## 2026-08-15 - S210 exact backend test-runtime guard
 
 - Klasifikasi: `CONFIRMED` release-safety correction.

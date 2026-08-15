@@ -1,5 +1,15 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-15 - SagaView S211 physical-UAT preflight sync
+
+- Informasi `CONFIRMED` dari preflight exact backend S210 dan Studio S206.
+- Source/remote, Studio runtime, dan backend health lulus; runtime provenance
+  backend lokal, EPSON L8050/driver, dan ruang output 2,70 GB memblokir UAT.
+- Delivery `BLOCKED_PREFLIGHT / hold_manual_evidence`; production, database,
+  payment, SagaBook, dan produk lain tidak berubah.
+- Dokumen terdampak: SagaView product/dossier/changelog/coverage,
+  portfolio/master, root changelog, dan sync status.
+
 ## 2026-08-15 - SagaView S210 exact test-runtime sync
 
 - Informasi `CONFIRMED` dari source exact

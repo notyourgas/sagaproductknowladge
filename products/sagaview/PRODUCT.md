@@ -2,6 +2,17 @@
 
 Updated: 15 Agustus 2026
 
+Preflight fisik S211 pada pasangan backend S210
+`a07d8af9924b49977adf184a921979fcd8bdec4a` dan Studio S206
+`d0655c46f08e0a8322dd4c30fb47c29c25e11fe9` berhenti aman. Kedua source
+clean setelah run, sudah dipush exact, Studio dan marker runtime memberi HTTP
+200, serta backend health memberi 200. UAT manual belum boleh dimulai karena
+marker runtime backend tidak tersedia pada konfigurasi launch lokal, EPSON
+L8050/driver tidak ditemukan, dan ruang output hanya 2,70 GB dari minimum 10
+GB. Dua correction rounds sudah dipakai; status `BLOCKED_PREFLIGHT`, bukan
+completion atau readiness. Production, database, foto/path lokal, payment,
+SagaBook, dan produk lain tidak berubah.
+
 Kandidat backend S210 source exact
 `a07d8af9924b49977adf184a921979fcd8bdec4a` sudah `PUSHED /
 LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Gate PHPUnit kini mengikat

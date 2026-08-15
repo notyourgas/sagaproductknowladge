@@ -1,6 +1,18 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 15 Agustus 2026 17:12 WIB
+Evidence cut-off: 15 Agustus 2026 18:10 WIB
+
+S211 physical-UAT preflight cut-off: backend S210 exact
+`a07d8af9924b49977adf184a921979fcd8bdec4a` dan Studio S206 exact
+`d0655c46f08e0a8322dd4c30fb47c29c25e11fe9` sama-sama clean setelah run,
+terikat upstream `origin/*`, dan remote exact. Studio kandidat serta marker
+runtime exact memberi HTTP 200; backend health juga 200. Preflight tetap
+`BLOCKED_PREFLIGHT / hold_manual_evidence`: marker runtime backend tidak dapat
+dibaca pada konfigurasi launch lokal setelah dua correction rounds, EPSON
+L8050 beserta driver tidak ditemukan, dan ruang output hanya 2,70 GB dari gate
+minimum 10 GB. Flag dirty backend pada manifest berasal dari marker sementara
+yang sudah dihapus; kedua worktree kembali clean. Tidak ada finalize, UAT
+manual, deploy, perubahan database, atau mutasi production.
 
 S210 exact backend test-runtime cut-off: source exact
 `a07d8af9924b49977adf184a921979fcd8bdec4a` sudah `PUSHED /

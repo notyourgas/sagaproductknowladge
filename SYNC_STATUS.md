@@ -12,16 +12,27 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-15T17:12:00+07:00 |
-| Branch aktif | `codex/s210-sagaview-backend-test-provenance-knowledge` pada worktree terisolasi exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-15T18:10:00+07:00 |
+| Branch aktif | `codex/s211-sagaview-physical-uat-preflight-knowledge` pada worktree terisolasi exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `425f3da44b24ddbe17e8f79fb5678b5a0e18eab3` |
-| Informasi terakhir disinkronkan | SagaView S210 source `a07d8af9924b49977adf184a921979fcd8bdec4a` mengikat gate PHPUnit ke worktree exact dan menggantikan bukti test S207 yang dapat terkontaminasi dependency junction. |
+| Baseline sebelum pembaruan | `876596a99197ed80b110474087c4296b3d00eb1a` |
+| Informasi terakhir disinkronkan | SagaView S211 physical-UAT preflight exact backend S210/Studio S206: source/runtime parsial lulus, tetapi runtime provenance backend lokal, EPSON L8050/driver, dan ruang output 2,70 GB memblokir. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
 | Konflik | Checkout knowledge lain tidak disentuh; sinkronisasi dilakukan dari worktree terisolasi exact `origin/main`. |
-| Error | Tidak ada error sinkronisasi. UAT fisik dan guarded deploy SagaView belum dilakukan; production tidak berubah. |
+| Error | Preflight `BLOCKED_PREFLIGHT`; UAT manual, finalize, dan deploy belum dilakukan. Production tidak berubah. |
 
-## File yang berubah pada sinkronisasi ini (SagaView S210 exact test runtime)
+## File yang berubah pada sinkronisasi ini (SagaView S211 physical-UAT preflight)
+
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/DOSSIER.md`
+- `products/sagaview/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
+
+## File yang berubah pada sinkronisasi sebelumnya (SagaView S210 exact test runtime)
 
 - `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
 - `products/sagaview/PRODUCT.md`

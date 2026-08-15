@@ -1,5 +1,18 @@
 # SagaView Dossier
 
+## S211 physical-UAT exact-candidate preflight
+
+Preflight lokal memakai backend S210
+`a07d8af9924b49977adf184a921979fcd8bdec4a` dan Studio S206
+`d0655c46f08e0a8322dd4c30fb47c29c25e11fe9`. HEAD, upstream, dan remote
+branch kedua kandidat exact; kedua worktree kembali clean setelah marker
+sementara dibuang. Windows 11, Chrome, spooler, antrean cetak kosong, profil
+browser terpisah, Studio page/runtime provenance 200, dan backend health 200
+lulus. Gate berhenti pada marker runtime backend konfigurasi lokal, ketiadaan
+EPSON L8050/driver, serta ruang output 2,70 GB dari minimum 10 GB. Harness
+memberi `BLOCKED_PREFLIGHT / hold_manual_evidence`; tidak ada finalize,
+evidence foto customer, deploy, database write, atau perubahan production.
+
 ## S201 Owner Support Hub production activation
 
 Source exact `c3d4bc5412ff70495bfae6498b21f73b464c04ad` aktif sebagai
