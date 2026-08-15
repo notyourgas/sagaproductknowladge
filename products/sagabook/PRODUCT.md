@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 16 Agustus 2026 02:15 WIB
+Updated: 16 Agustus 2026 03:14 WIB
 Evidence status: production deployment and activation verified; business readiness pending
 
 ## Tujuan dokumen
@@ -16,6 +16,14 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
+- Candidate S221 source `37c016f36976d9ecf9195dc8ca5f69d9f9368451`
+  sudah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Child process
+  authenticated UAT kini memiliki timeout default 900 detik dengan rentang
+  operator 30-3.600 detik. Saat hang, seluruh process tree dihentikan, stream
+  dibuang, handle didispose, lalu credential parent dibersihkan. Focused
+  tooling 19/19, kontrak evidence 13/13, full backend 1.045/1.045 (11.868
+  assertion), build 5.116 modul, syntax, serta audit npm/Composer/OSV lulus.
+  Actual credential/UAT tidak dijalankan dan production tetap S208.
 - Candidate S220 source `b2934f297d3bb791f4cf53a8ee8743c49ca0dd8f`
   sudah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Batas cleanup
   invoker authenticated UAT kini dimulai sebelum daftar item vault dan

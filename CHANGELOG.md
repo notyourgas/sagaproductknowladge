@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-16 - SagaBook S221 authenticated UAT timeout sync
+
+- Informasi `CONFIRMED` dari exact source
+  `37c016f36976d9ecf9195dc8ca5f69d9f9368451` dan gate lokal terisolasi.
+- Child runner kini memiliki timeout, kill-tree, dispose handle, dan cleanup
+  credential parent agar hang tidak mempertahankan proses tanpa batas.
+- Delivery `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; actual UAT
+  belum dilakukan dan production tetap S208.
+- Dokumen terdampak: SagaBook product/changelog/coverage, portfolio, root
+  changelog, dan sync status.
+
 ## 2026-08-16 - SagaBook S220 UAT credential cleanup sync
 
 - Informasi `CONFIRMED` dari exact source

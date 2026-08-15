@@ -12,16 +12,25 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-16T02:15:00+07:00 |
-| Branch aktif | `codex/s220-sagabook-uat-credential-cleanup-knowledge` pada worktree terisolasi |
+| Waktu pembaruan terakhir | 2026-08-16T03:14:00+07:00 |
+| Branch aktif | `codex/s221-sagabook-uat-process-timeout-knowledge` pada worktree terisolasi |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `317bf2e492637a9cb0ca4daa442a050200b97320` |
-| Informasi terakhir disinkronkan | SagaBook S220 memperluas cleanup credential UAT agar kegagalan parsial Owner/operator tetap fail-closed. |
+| Baseline sebelum pembaruan | `2284436fea49a86a9b7aadebcc690b3562dc1e73` |
+| Informasi terakhir disinkronkan | SagaBook S221 membatasi runtime child UAT dan memastikan kill-tree, dispose, serta cleanup credential saat timeout. |
 | Status sinkronisasi | `BRANCH_SYNCED / MAIN_MERGE_PENDING` setelah validator, push, dan remote verification. |
-| Konflik | Checkout `main` tertinggal dan memiliki commit lokal sehingga tidak disentuh; sinkronisasi dilanjutkan dari branch S219 yang sudah remote-exact. |
+| Konflik | Checkout `main` tertinggal dan memiliki commit lokal sehingga tidak disentuh; sinkronisasi dilanjutkan dari branch S220 yang sudah remote-exact. |
 | Error | Actual unlock dan authenticated Owner/operator UAT SagaBook belum dilakukan; production tetap S208. |
 
-## File yang berubah pada sinkronisasi ini (SagaBook S220 credential cleanup)
+## File yang berubah pada sinkronisasi ini (SagaBook S221 process timeout)
+
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
+
+## File yang berubah pada sinkronisasi sebelumnya (SagaBook S220 credential cleanup)
 
 - `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
 - `products/sagabook/PRODUCT.md`

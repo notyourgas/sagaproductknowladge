@@ -1,5 +1,19 @@
 # SagaBook Changelog
 
+## 2026-08-16 - Authenticated UAT process timeout S221
+
+- Informasi `CONFIRMED` dari exact source
+  `37c016f36976d9ecf9195dc8ca5f69d9f9368451`; branch source sudah dipush.
+- Before: child runner menunggu tanpa batas, sehingga hang browser/network dapat
+  mempertahankan proses dan environment credential terlalu lama. After:
+  runtime default 900 detik, kill-tree saat timeout, dispose handle, dan cleanup
+  parent selalu dijalankan.
+- Focused tooling 19/19, kontrak evidence 13/13, full backend 1.045/1.045
+  (11.868 assertion), build 5.116 modul, syntax, npm/Composer/OSV, dan diff
+  check lulus.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Actual
+  credential/UAT tidak dijalankan dan production tetap S208.
+
 ## 2026-08-16 - UAT credential partial-failure cleanup S220
 
 - Informasi `CONFIRMED` dari exact source

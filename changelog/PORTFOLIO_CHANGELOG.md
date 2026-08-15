@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-16 - SagaBook authenticated UAT timeout S221
+
+- Child runner UAT kini berhenti aman setelah timeout, membunuh process tree,
+  melepas handle, lalu membersihkan credential parent.
+- Source exact `37c016f36976d9ecf9195dc8ca5f69d9f9368451` sudah dipush dan
+  lulus focused 19/19, evidence 13/13, backend 1.045/1.045, build, syntax,
+  serta audit dependency.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; actual UAT belum
+  berjalan dan production SagaBook tetap S208.
+
 ## 2026-08-16 - SagaBook UAT credential cleanup S220
 
 - Invoker UAT kini membersihkan credential dan koleksi item walau pembacaan
