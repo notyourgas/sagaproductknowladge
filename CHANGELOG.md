@@ -1,5 +1,15 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-15 - SagaView S213 output-capacity audit sync
+
+- Informasi `CONFIRMED` dari audit read-only seluruh volume lokal tetap.
+- Dua volume sehat hanya memiliki 2,71 GiB dan 2,17 GiB ruang bebas, sehingga
+  belum ada target output yang memenuhi minimum 10 GiB.
+- Delivery tetap `BLOCKED_PREFLIGHT`; source, production, database, SagaBook,
+  dan produk lain tidak berubah.
+- Dokumen terdampak: SagaView product/dossier/changelog/coverage,
+  portfolio/master, root changelog, dan sync status.
+
 ## 2026-08-15 - SagaView S212 exact-runtime closure sync
 
 - Informasi `CONFIRMED` dari archive/runtime exact backend S210 dan Studio S206.

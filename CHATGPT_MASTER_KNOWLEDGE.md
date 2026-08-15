@@ -1,8 +1,14 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 15 Agustus 2026 19:04 WIB
+Evidence cut-off: 15 Agustus 2026 20:07 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
+
+SagaView S213 mengaudit seluruh volume lokal tetap secara read-only. Dua volume
+yang tersedia sehat, tetapi ruang bebasnya hanya 2,71 GiB dan 2,17 GiB; tidak
+ada target lokal yang memenuhi gate output 10 GiB. UAT fisik tetap
+`BLOCKED_PREFLIGHT` pada kapasitas, EPSON L8050, dan driver. Source backend
+S210/Studio S206 tetap clean dan remote exact; production tidak berubah.
 
 SagaView S212 menutup blocker runtime lokal S211 dengan menjalankan backend
 S210 exact `a07d8af9924b49977adf184a921979fcd8bdec4a` dari archive

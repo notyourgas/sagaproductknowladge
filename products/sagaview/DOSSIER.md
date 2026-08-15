@@ -1,5 +1,16 @@
 # SagaView Dossier
 
+## S213 output-capacity preflight audit
+
+Audit read-only memeriksa seluruh volume lokal tetap sebelum mencoba target
+output alternatif. Hanya dua volume tersedia; keduanya sehat tetapi ruang
+bebasnya 2,71 GiB dan 2,17 GiB, di bawah gate 10 GiB. Karena itu tidak ada
+folder output yang dipaksakan dan preflight tetap fail-closed. Backend S210
+`a07d8af9924b49977adf184a921979fcd8bdec4a` serta Studio S206
+`d0655c46f08e0a8322dd4c30fb47c29c25e11fe9` tetap clean dan remote exact.
+Residual UAT: kapasitas output, EPSON L8050, dan driver; production tidak
+berubah.
+
 ## S212 exact-runtime preflight closure
 
 Git archive exact backend S210

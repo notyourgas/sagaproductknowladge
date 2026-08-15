@@ -1,6 +1,14 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 15 Agustus 2026 19:04 WIB
+Evidence cut-off: 15 Agustus 2026 20:07 WIB
+
+S213 output-capacity audit: pemeriksaan read-only seluruh volume lokal tetap
+menemukan hanya drive C dan D. Keduanya sehat, tetapi ruang bebas masing-masing
+2,71 GiB dan 2,17 GiB, sehingga kekurangan 7,29 GiB dan 7,83 GiB terhadap gate
+minimum 10 GiB. Percobaan memindahkan target output tidak dilanjutkan karena
+tidak ada volume yang memenuhi syarat. Status tetap `BLOCKED_PREFLIGHT` dengan
+residual kapasitas output, EPSON L8050, dan driver; source backend S210 serta
+Studio S206 tetap clean/remote exact dan production tidak berubah.
 
 S212 exact-runtime preflight closure: backend S210
 `a07d8af9924b49977adf184a921979fcd8bdec4a` dijalankan dari git archive

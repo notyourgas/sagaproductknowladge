@@ -1,5 +1,13 @@
 # Portfolio Changelog
 
+## 2026-08-15 - SagaView S213 output-capacity audit
+
+- Audit read-only membuktikan dua volume lokal tetap hanya memiliki 2,71 GiB
+  dan 2,17 GiB ruang bebas; keduanya belum memenuhi gate output 10 GiB.
+- UAT tetap `BLOCKED_PREFLIGHT` pada kapasitas, EPSON L8050, dan driver.
+- Source backend/Studio tetap exact dan clean; production, database, SagaBook,
+  serta produk lain tidak berubah.
+
 ## 2026-08-15 - SagaView S212 exact-runtime preflight closure
 
 - Backend S210 dijalankan dari archive disposable sehingga marker exact dapat

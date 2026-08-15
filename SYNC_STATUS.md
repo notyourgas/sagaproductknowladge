@@ -12,16 +12,16 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-15T19:04:00+07:00 |
-| Branch aktif | `codex/s212-sagaview-runtime-preflight-closure-knowledge` pada worktree terisolasi exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-15T20:07:00+07:00 |
+| Branch aktif | `codex/s213-sagaview-output-capacity-audit-knowledge` pada worktree terisolasi exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `b0042f3e0481f9a6ee0f1f98202491667c50c2ae` |
-| Informasi terakhir disinkronkan | SagaView S212 menutup runtime provenance backend lokal memakai archive disposable exact; residual UAT hanya EPSON L8050/driver dan ruang output 2,72 GB. |
+| Baseline sebelum pembaruan | `5b6aeaacfb58cdc0c371e9da88a5fee80a093026` |
+| Informasi terakhir disinkronkan | SagaView S213 membuktikan dua volume lokal tetap hanya memiliki 2,71 GiB dan 2,17 GiB ruang bebas; gate output 10 GiB masih blocked bersama EPSON L8050/driver. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
 | Konflik | Checkout knowledge lain tidak disentuh; sinkronisasi dilakukan dari worktree terisolasi exact `origin/main`. |
-| Error | UAT keseluruhan tetap `BLOCKED_PREFLIGHT` pada dua syarat fisik; finalize dan deploy belum dilakukan. Production tidak berubah. |
+| Error | UAT keseluruhan tetap `BLOCKED_PREFLIGHT` pada kapasitas dan dua syarat printer; finalize dan deploy belum dilakukan. Production tidak berubah. |
 
-## File yang berubah pada sinkronisasi ini (SagaView S212 exact-runtime closure)
+## File yang berubah pada sinkronisasi ini (SagaView S213 output-capacity audit)
 
 - `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
 - `products/sagaview/PRODUCT.md`

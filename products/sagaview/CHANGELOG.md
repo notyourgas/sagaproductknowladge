@@ -1,5 +1,18 @@
 # SagaView Changelog
 
+## 2026-08-15 - S213 output-capacity preflight audit
+
+- Klasifikasi: `CONFIRMED` operational/release blocker evidence.
+- Before: S212 mencatat drive output aktif hanya memiliki 2,72 GB dan masih
+  ada kemungkinan target lokal lain memenuhi gate minimum 10 GiB.
+- After: audit read-only seluruh volume lokal tetap membuktikan hanya dua
+  volume tersedia; keduanya sehat dengan ruang bebas 2,71 GiB dan 2,17 GiB.
+- Dampak: target output tidak dapat dipindah untuk menutup gate. Preflight
+  tetap `BLOCKED_PREFLIGHT` pada kapasitas, EPSON L8050, dan driver.
+- Integritas: source backend S210 dan Studio S206 tetap clean/remote exact;
+  tidak ada penghapusan file, data customer, deploy, database write, SagaBook,
+  atau perubahan production.
+
 ## 2026-08-15 - S212 exact-runtime preflight closure
 
 - Klasifikasi: `CONFIRMED` release-safety evidence.

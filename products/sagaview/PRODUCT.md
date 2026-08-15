@@ -2,6 +2,13 @@
 
 Updated: 15 Agustus 2026
 
+Audit kapasitas S213 membuktikan perpindahan folder output ke drive lokal lain
+belum dapat menutup gate 10 GiB. Dua volume lokal tetap yang tersedia sama-sama
+sehat, tetapi hanya memiliki 2,71 GiB dan 2,17 GiB ruang bebas. UAT fisik tetap
+`BLOCKED_PREFLIGHT` pada kapasitas output, EPSON L8050, dan driver. Tidak ada
+file yang dihapus, source/backend/Studio tidak diubah, dan production serta
+database tetap sama.
+
 S212 menutup blocker runtime-provenance lokal S211 tanpa mengubah source.
 Backend S210 `a07d8af9924b49977adf184a921979fcd8bdec4a` dijalankan dari git
 archive disposable dengan marker release di luar worktree; backend health dan
