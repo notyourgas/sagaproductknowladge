@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-08-15 - SagaView S214 storage-remediation audit
+
+- C 0,88 GiB, D 2,04 GiB, dan E 8,09 GiB dengan health warning belum memenuhi
+  gate output 10 GiB.
+- Empat belas worktree SagaVIEW lama yang clean dan remote-exact berjumlah
+  9,63 GiB; pensiun terkontrol memproyeksikan D menjadi 11,67 GiB.
+- Status `ACTION_REQUIRED / BLOCKED_PREFLIGHT`; tidak ada penghapusan, deploy,
+  database, SagaBook, atau perubahan production.
+
 ## 2026-08-15 - SagaBook UAT bridge launcher S217
 
 - Launcher operator khusus SagaBook mengirim shared bridge melalui encoded

@@ -1,5 +1,15 @@
 # SagaView Dossier
 
+## S214 storage-remediation audit
+
+Audit read-only memperbarui risiko kapasitas: C 0,88 GiB, D 2,04 GiB, dan E
+8,09 GiB dengan health warning. Empat belas worktree SagaVIEW lama berjumlah
+9,63 GiB terbukti clean serta sama dengan upstream/remote. Daftar tidak
+memasukkan worktree aktif S210/S206, artefak release immutable, atau worktree
+dirty. Jika Andreas menyetujui pensiun worktree dan state diperiksa ulang tepat
+sebelum operasi, ruang D diproyeksikan menjadi 11,67 GiB. Audit tidak menghapus
+file; UAT tetap `BLOCKED_PREFLIGHT` pada kapasitas dan perangkat printer.
+
 ## S213 output-capacity preflight audit
 
 Audit read-only memeriksa seluruh volume lokal tetap sebelum mencoba target

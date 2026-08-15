@@ -2,6 +2,13 @@
 
 Updated: 15 Agustus 2026
 
+Audit remediasi storage S214 menemukan C tersisa 0,88 GiB, D 2,04 GiB, dan
+volume E berstatus warning dengan 8,09 GiB; semuanya belum memenuhi gate output
+10 GiB. Sebanyak 14 worktree SagaVIEW lama terverifikasi clean serta exact di
+remote dan berjumlah 9,63 GiB. Pensiun terkontrol setelah persetujuan dapat
+membawa proyeksi D ke 11,67 GiB. Tidak ada penghapusan dilakukan; source aktif,
+artefak immutable, database, dan production tidak berubah.
+
 Audit kapasitas S213 membuktikan perpindahan folder output ke drive lokal lain
 belum dapat menutup gate 10 GiB. Dua volume lokal tetap yang tersedia sama-sama
 sehat, tetapi hanya memiliki 2,71 GiB dan 2,17 GiB ruang bebas. UAT fisik tetap

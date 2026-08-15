@@ -1,6 +1,15 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 15 Agustus 2026 20:07 WIB
+Evidence cut-off: 15 Agustus 2026 21:23 WIB
+
+S214 storage-remediation audit: ruang bebas turun menjadi C 0,88 GiB dan D
+2,04 GiB; volume E berstatus warning dan hanya 8,09 GiB, sehingga tidak ada
+volume yang memenuhi gate 10 GiB. Audit read-only menemukan 14 worktree
+SagaVIEW lama, seluruhnya clean dan exact pada upstream/remote, dengan total
+9,63 GiB. Bila dipensiunkan setelah persetujuan dan recheck, proyeksi ruang D
+menjadi 11,67 GiB. Worktree aktif S210/S206, artefak release immutable, dan
+worktree dirty dikecualikan. Status `ACTION_REQUIRED / BLOCKED_PREFLIGHT`;
+tidak ada file yang dihapus atau perubahan production.
 
 S213 output-capacity audit: pemeriksaan read-only seluruh volume lokal tetap
 menemukan hanya drive C dan D. Keduanya sehat, tetapi ruang bebas masing-masing

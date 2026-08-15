@@ -12,16 +12,27 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-15T20:15:00+07:00 |
-| Branch aktif | `codex/s217-sagabook-uat-bridge-launcher-knowledge` pada worktree terisolasi exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-15T21:23:00+07:00 |
+| Branch aktif | `codex/s214-sagaview-storage-remediation-knowledge` pada worktree terisolasi exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `3ec926f9b97dd6773b7fa4735453b27255bb60e2` |
-| Informasi terakhir disinkronkan | SagaBook S217 menambahkan launcher bridge berbasis encoded command, loopback guard, dan dry-run public-safe pada source exact yang sudah dipush. |
+| Baseline sebelum pembaruan | `03b9183cf1a056b8b73e37fb79c93c9b8b6f8679` |
+| Informasi terakhir disinkronkan | SagaView S214 memetakan 14 worktree clean/remote-exact sejumlah 9,63 GiB sebagai jalur remediasi kapasitas terkontrol tanpa melakukan penghapusan. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
 | Konflik | Checkout knowledge lain tidak disentuh; sinkronisasi dilakukan dari worktree terisolasi exact `origin/main`. |
-| Error | Actual unlock dan authenticated Owner/operator UAT belum dilakukan; production SagaBook tetap S208. |
+| Error | UAT SagaView tetap `ACTION_REQUIRED / BLOCKED_PREFLIGHT`; persetujuan pensiun worktree dan perangkat printer masih diperlukan. Production tidak berubah. |
 
-## File yang berubah pada sinkronisasi ini (SagaBook S217 UAT bridge launcher)
+## File yang berubah pada sinkronisasi ini (SagaView S214 storage-remediation audit)
+
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/DOSSIER.md`
+- `products/sagaview/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
+
+## File yang berubah pada sinkronisasi sebelumnya (SagaBook S217 UAT bridge launcher)
 
 - `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
 - `products/sagabook/PRODUCT.md`

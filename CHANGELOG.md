@@ -1,5 +1,15 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-15 - SagaView S214 storage-remediation sync
+
+- Informasi `CONFIRMED` dari audit storage read-only dan pemeriksaan exact Git.
+- C 0,88 GiB, D 2,04 GiB, dan E 8,09 GiB warning tetap di bawah 10 GiB;
+  14 worktree SagaVIEW clean/remote-exact berjumlah 9,63 GiB.
+- Delivery `ACTION_REQUIRED / BLOCKED_PREFLIGHT`; tidak ada penghapusan,
+  source change, production, database, SagaBook, atau perubahan produk lain.
+- Dokumen terdampak: SagaView product/dossier/changelog/coverage,
+  portfolio/master, root changelog, dan sync status.
+
 ## 2026-08-15 - SagaBook S217 UAT bridge launcher sync
 
 - Informasi `CONFIRMED` dari exact source

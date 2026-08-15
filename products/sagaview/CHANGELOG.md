@@ -1,5 +1,19 @@
 # SagaView Changelog
 
+## 2026-08-15 - S214 storage-remediation audit
+
+- Klasifikasi: `CONFIRMED` operational risk and remediation evidence.
+- Before: S213 memastikan C/D tidak lolos 10 GiB, tetapi belum memiliki jalur
+  pemulihan terukur yang menjaga source dan artefak release.
+- After: C hanya 0,88 GiB, D 2,04 GiB, dan E 8,09 GiB dengan health warning.
+  Empat belas worktree SagaVIEW lama yang clean serta remote-exact berjumlah
+  9,63 GiB; pensiun terkontrol memproyeksikan D menjadi 11,67 GiB.
+- Guardrail: worktree aktif S210/S206, artefak immutable, dan worktree dirty
+  dikecualikan; state wajib diperiksa ulang dan Andreas harus menyetujui sebelum
+  removal.
+- Delivery: `ACTION_REQUIRED / BLOCKED_PREFLIGHT`; tidak ada file dihapus,
+  deploy, database write, SagaBook, atau perubahan production.
+
 ## 2026-08-15 - S213 output-capacity preflight audit
 
 - Klasifikasi: `CONFIRMED` operational/release blocker evidence.

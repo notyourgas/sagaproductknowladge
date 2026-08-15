@@ -1,8 +1,16 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 15 Agustus 2026 20:15 WIB
+Evidence cut-off: 15 Agustus 2026 21:23 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
+
+SagaView S214 menemukan kapasitas semakin kritis: C 0,88 GiB, D 2,04 GiB,
+sedangkan E 8,09 GiB dan berstatus warning. Empat belas worktree SagaVIEW lama
+yang clean serta remote-exact berjumlah 9,63 GiB dan dapat memproyeksikan D ke
+11,67 GiB bila dipensiunkan secara terkontrol setelah persetujuan Andreas.
+Worktree aktif, artefak immutable, dan worktree dirty dikecualikan. Tidak ada
+file yang dihapus; UAT tetap `ACTION_REQUIRED / BLOCKED_PREFLIGHT` dan
+production tidak berubah.
 
 SagaBook S217 source `4e9cca53ee8d5839c879e31f87e5d4258fe82ae9`
 sudah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Launcher operator
