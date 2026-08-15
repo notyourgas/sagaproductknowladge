@@ -12,16 +12,25 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-15T12:03:00+07:00 |
-| Branch aktif | `codex/s215-sagabook-bridge-preflight-knowledge` pada worktree terisolasi exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-15T12:10:00+07:00 |
+| Branch aktif | `codex/s206-sagaview-ingest-replace-race-knowledge` pada worktree terisolasi exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `e8a050835b95ce6fd466d859af9d05ae303190eb` |
-| Informasi terakhir disinkronkan | SagaBook S215 source `f8dfbe1291be88e1d72cd54216aff637b12c4df8` menyediakan preflight status-only yang mengklasifikasikan blocker credential bridge sebelum item vault dibaca; production tetap S208. |
+| Baseline sebelum pembaruan | `b8f66b55ad652ccc3d532496cb837f3b7b8d8047` |
+| Informasi terakhir disinkronkan | SagaView S206 source `d0655c46f08e0a8322dd4c30fb47c29c25e11fe9` menutup race cancel/ganti folder dan kebocoran nama file fallback; production tidak berubah. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
 | Konflik | Checkout knowledge lain tidak disentuh; sinkronisasi dilakukan dari worktree terisolasi exact `origin/main`. |
-| Error | Tidak ada error sinkronisasi. Kondisi aktual `bridge_unavailable`; actual Owner/operator UAT dan deploy belum dilakukan, production tetap S208. |
+| Error | Tidak ada error sinkronisasi. UAT folder Windows nyata dan deploy kandidat SagaView belum dilakukan. |
 
-## File yang berubah pada sinkronisasi ini (SagaBook S215 credential bridge preflight)
+## File yang berubah pada sinkronisasi ini (SagaView S206 local folder race)
+
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
+
+## File yang berubah pada sinkronisasi sebelumnya (SagaBook S215 credential bridge preflight)
 
 - `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
 - `products/sagabook/PRODUCT.md`

@@ -1,5 +1,26 @@
 # SagaView Changelog
 
+## 2026-08-15 - S206 local folder cancel/replace race candidate
+
+- Klasifikasi: `CONFIRMED`.
+- Before: import yang dibatalkan dapat menyelesaikan callback terlambat dan
+  berisiko menimpa folder pengganti; warning folder berat juga muncul ketika
+  request metadata cloud pertama masih berjalan.
+- After: source exact `d0655c46f08e0a8322dd4c30fb47c29c25e11fe9`
+  memberi token/controller pada setiap operasi, mengabaikan progres stale,
+  menahan cancel/ganti saat fase cloud, dan baru menampilkan aksi pengganti
+  setelah commit selesai.
+- Koreksi privacy: fallback tanpa `webkitRelativePath` tidak lagi memakai nama
+  file pertama sebagai nama sesi cloud; nama sesi aman dipakai sebagai gantinya.
+- Dampak: cancel 500 foto lalu import 2 foto berakhir konsisten pada dua foto
+  baru dengan tepat satu create-session; nama file/path/byte lokal tidak masuk
+  request cloud.
+- Evidence: focused red lalu green 2/2; full Playwright local-session 12/12,
+  unit 207/207, matriks 50/200/500, Axe dan no-overflow 1440x900 serta 390x844,
+  format/lint/typecheck, build/budget, dan npm audit nol vulnerability.
+- Delivery: `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Production,
+  backend, database, payment, SagaBook, dan produk lain tidak berubah.
+
 ## 2026-08-15 - S205 corrupt local-image ingest candidate
 
 - Klasifikasi: `CONFIRMED`.

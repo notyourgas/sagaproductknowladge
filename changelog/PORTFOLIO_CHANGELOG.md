@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-15 - SagaView S206 local folder race candidate
+
+- Import lokal kini menolak progres stale setelah cancel/ganti folder dan
+  menahan kontrol pengganti selama metadata cloud sedang dicatat.
+- Fallback tanpa informasi folder memakai nama sesi aman; nama file pertama
+  tidak lagi dapat menjadi metadata cloud.
+- Exact source `d0655c46f08e0a8322dd4c30fb47c29c25e11fe9` lulus unit
+  207/207, Playwright local-session 12/12, 50/200/500 foto, Axe/no-overflow
+  desktop-mobile, build/budget, dan audit dependency.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production,
+  backend, database, payment, SagaBook, dan produk lain tidak berubah.
+
 ## 2026-08-15 - SagaBook credential bridge preflight S215
 
 - Preflight status-only kini membedakan bridge unavailable, locked, invalid,

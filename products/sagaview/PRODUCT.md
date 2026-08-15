@@ -2,6 +2,18 @@
 
 Updated: 15 Agustus 2026
 
+Kandidat Studio S206 source exact
+`d0655c46f08e0a8322dd4c30fb47c29c25e11fe9` sudah `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Import folder lokal kini memakai
+token operasi per-run: cancel/ganti folder membatalkan proses lama dan hasil
+lama tidak dapat menimpa folder berikutnya. Selama metadata sesi dicatat,
+kontrol cancel/ganti ditahan sampai commit selesai. Fallback tanpa informasi
+folder memakai nama sesi aman sehingga nama file pertama tidak ikut terkirim
+sebagai metadata. Playwright local-session 12/12 mencakup cancel 500 foto lalu
+replace 2 foto, cloud-delay 100 foto, no-upload, Axe/no-overflow desktop/mobile,
+dan matriks 50/200/500; unit 207/207, build/budget, serta audit dependency juga
+lulus. Production tidak berubah.
+
 Kandidat Studio S205 source exact
 `a7386800404dd2e136cadf9827d89d7e333499bb` sudah `PUSHED /
 LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Import folder lokal kini

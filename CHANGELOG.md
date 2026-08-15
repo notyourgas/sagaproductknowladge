@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-15 - SagaView S206 local folder race sync
+
+- Informasi `CONFIRMED` dari exact source
+  `d0655c46f08e0a8322dd4c30fb47c29c25e11fe9` dan gate lokal terisolasi.
+- Cancel/ganti folder sekarang mengisolasi operasi lama; fase cloud tidak dapat
+  dibatalkan dari UI, dan fallback tanpa folder tidak memakai nama file sebagai
+  metadata sesi.
+- Delivery `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production,
+  backend, database, payment, SagaBook, dan produk lain tidak berubah.
+- Dokumen terdampak: SagaView product/changelog/coverage, portfolio, root
+  changelog, dan sync status.
+
 ## 2026-08-15 - SagaBook S215 credential bridge preflight sync
 
 - Informasi `CONFIRMED` dari exact source
