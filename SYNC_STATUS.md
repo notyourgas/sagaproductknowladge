@@ -12,16 +12,16 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-16T00:16:44+07:00 |
-| Branch aktif | `codex/s215-sagaview-storage-target-eligibility-knowledge` pada worktree terisolasi exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-16T03:26:38+07:00 |
+| Branch aktif | `codex/knowledge-s216-recovery-checkpoint-warning` pada worktree terisolasi exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `bb072bcc00e15925cef0b99094449090a9f8fe10` |
-| Informasi terakhir disinkronkan | SagaView S215 membuktikan volume E tidak persisten/tersedia dan tidak boleh menjadi target output; C/D tetap di bawah gate 10 GiB. |
+| Baseline sebelum pembaruan | `8092dddce9546d0c219e0a6825a339b084f14b35` |
+| Informasi terakhir disinkronkan | SagaView Studio S216 membuat kegagalan tulis checkpoint recovery tampil dominan, aman, dan dapat ditindaklanjuti pada exact source `d9a284812b29ab8688365e319c2c098d4357ca8c`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
 | Konflik | Checkout knowledge lain tidak disentuh; sinkronisasi dilakukan dari worktree terisolasi exact `origin/main`. |
-| Error | UAT SagaVIEW tetap blocked oleh ruang output minimum 10 GiB serta EPSON L8050/driver; production tidak berubah. |
+| Error | Tidak ada error source S216; deployment production belum dilakukan. UAT fisik terpisah tetap blocked oleh ruang output minimum 10 GiB serta EPSON L8050/driver. |
 
-## File yang berubah pada sinkronisasi ini (SagaView S215 storage-target eligibility)
+## File yang berubah pada sinkronisasi ini (SagaView S216 recovery checkpoint warning)
 
 - `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
 - `products/sagaview/PRODUCT.md`

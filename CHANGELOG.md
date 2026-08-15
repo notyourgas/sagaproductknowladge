@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-16 - SagaView S216 recovery checkpoint warning sync
+
+- Informasi `CONFIRMED` dari exact Studio source
+  `d9a284812b29ab8688365e319c2c098d4357ca8c` dan gate lokal terisolasi.
+- Kegagalan tulis checkpoint setelah impor folder kini tampil sebagai warning
+  dominan yang menjelaskan kegagalan, keamanan data lokal, dan aksi pemulihan.
+- Delivery `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production,
+  backend, database, SagaBook, dan produk lain tidak berubah.
+- Dokumen terdampak: SagaView product/dossier/changelog/coverage,
+  portfolio/master, root changelog, dan sync status.
+
 ## 2026-08-16 - SagaView S215 storage-target eligibility sync
 
 - Informasi `CONFIRMED` dari audit volume, partisi, disk, printer, dan exact Git

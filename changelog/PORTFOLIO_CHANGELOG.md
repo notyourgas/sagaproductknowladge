@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-16 - SagaView recovery checkpoint warning S216
+
+- Kegagalan penyimpanan checkpoint setelah impor folder kini menjadi warning
+  dominan; toast sukses lokal tidak lagi menutupi risiko recovery.
+- Copy menjelaskan foto dan sesi lokal tetap aman, tidak diunggah, serta aksi
+  ruang browser yang harus dilakukan sebelum alur customer.
+- Exact source `d9a284812b29ab8688365e319c2c098d4357ca8c` sudah dipush dan
+  lulus 209 unit, 13 browser regression, responsive/a11y, build, privacy,
+  bundle budget, serta dependency audit.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
+
 ## 2026-08-16 - SagaView S215 storage-target eligibility audit
 
 - Volume E yang sebelumnya warning kini tidak lagi tersedia sebagai volume,

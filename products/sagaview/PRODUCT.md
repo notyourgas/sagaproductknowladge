@@ -2,6 +2,15 @@
 
 Updated: 16 Agustus 2026
 
+Studio S216 memperjelas kegagalan penyimpanan checkpoint recovery setelah
+folder foto lokal diimpor. Operator sekarang mendapat warning dominan yang
+menjelaskan checkpoint belum tersimpan, sesi di layar dan foto asli tetap aman,
+foto tidak diunggah, serta tindakan ruang browser sebelum membuka alur customer.
+Toast sukses lokal tidak lagi menutupi kegagalan ini. Exact source
+`d9a284812b29ab8688365e319c2c098d4357ca8c` berstatus `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production, backend, dan database
+tidak berubah.
+
 Audit kelayakan storage S215 membuktikan volume E yang sebelumnya warning tidak
 persisten/tersedia: E kini tidak terdaftar sebagai volume, partisi, atau disk
 lokal dan tidak boleh dipakai sebagai target output. Hanya C 3,05 GiB dan D

@@ -1,5 +1,17 @@
 # SagaView Dossier
 
+## S216 recovery checkpoint write-failure transparency
+
+Studio source `d9a284812b29ab8688365e319c2c098d4357ca8c` menutup silent
+failure ketika IndexedDB tidak dapat menyimpan checkpoint setelah folder lokal
+diimpor. Warning kini menjadi pesan dominan dan menjelaskan kegagalan, keamanan
+sesi/foto lokal, larangan upload, serta aksi ruang browser sebelum operator
+membuka alur customer. Foto yang sudah dipilih tetap tersedia di state lokal;
+toast sukses lokal tidak ditampilkan pada jalur gagal ini. Unit 209/209,
+Playwright 13/13, responsive/a11y dua viewport, no-upload check, build/budget,
+dan audit dependency lulus. Status `PUSHED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; production, backend, dan database tidak berubah.
+
 ## S215 storage-target eligibility audit
 
 Audit read-only menutup ambiguitas volume E. Volume yang S214 lihat warning

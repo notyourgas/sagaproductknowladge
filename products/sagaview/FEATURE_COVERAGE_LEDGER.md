@@ -1,6 +1,16 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 16 Agustus 2026 00:16 WIB
+Evidence cut-off: 16 Agustus 2026 03:26 WIB
+
+S216 recovery checkpoint warning: exact Studio source
+`d9a284812b29ab8688365e319c2c098d4357ca8c` mengubah write failure setelah
+impor folder dari silent failure menjadi warning dominan. Warning menyebut apa
+yang gagal, bahwa state layar dan foto asli di folder lokal tetap aman serta
+tidak diunggah, dan aksi ruang browser sebelum alur customer. Toast sukses lokal
+tidak muncul pada jalur gagal. Unit 209/209, Playwright 13/13, Axe dua viewport,
+no-overflow/no-upload, build/budget, lint/typecheck, dan audit dependency lulus.
+Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production,
+backend, database, SagaBook, dan produk lain tidak berubah.
 
 S215 storage-target eligibility audit: volume E yang S214 lihat warning kini
 tidak lagi terdaftar sebagai volume, partisi, atau disk lokal dan tidak boleh

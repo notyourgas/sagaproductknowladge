@@ -1,5 +1,21 @@
 # SagaView Changelog
 
+## 2026-08-16 - S216 recovery checkpoint write-failure transparency
+
+- Klasifikasi: `CONFIRMED` recovery and operator-safety fix.
+- Before: kegagalan tulis IndexedDB setelah impor folder ditelan diam-diam dan
+  toast sukses lokal dapat menutupi peringatan quota.
+- After: warning dominan menjelaskan apa yang gagal, bahwa sesi di layar dan
+  foto asli tetap aman serta tidak diunggah, dan aksi sebelum alur customer.
+- Data boundary: hanya metadata recovery lokal; uji sintetis membuktikan nama
+  serta byte foto tidak masuk mutation request.
+- Evidence: unit 209/209, Playwright 13/13, Axe tanpa serious/critical pada
+  1440x900 dan 390x844, tanpa overflow, build/budget, lint/typecheck, dan
+  `npm audit` nol vulnerability.
+- Delivery: exact Studio source `d9a284812b29ab8688365e319c2c098d4357ca8c`
+  sudah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production,
+  backend, database, SagaBook, dan produk lain tidak berubah.
+
 ## 2026-08-16 - S215 storage-target eligibility audit
 
 - Klasifikasi: `CONFIRMED` operational/release blocker evidence.
