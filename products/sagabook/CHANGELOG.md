@@ -1,5 +1,19 @@
 # SagaBook Changelog
 
+## 2026-08-15 - Credential bridge readiness preflight S215
+
+- Informasi `CONFIRMED` dari exact source
+  `f8dfbe1291be88e1d72cd54216aff637b12c4df8`; branch source sudah dipush.
+- Before: bridge unavailable/locked berhenti sebagai kegagalan invoker yang
+  kurang mudah ditindaklanjuti. After: preflight status-only mengklasifikasikan
+  unavailable, locked, invalid, atau ready dan memberi next action public-safe
+  sebelum item vault dibaca.
+- Focused tooling 21/21, full backend 1.045/1.045 (11.868 assertion), build
+  5.116 modul, npm/Composer/OSV, PowerShell syntax, dan diff check lulus.
+- Pemeriksaan aktual menghasilkan `bridge_unavailable`, credential tidak
+  dibaca, evidence tidak dibuat, dan production tidak dimutasi. Status
+  `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S208.
+
 ## 2026-08-15 - SagaBook-only authenticated production UAT runner S214
 
 - Informasi `CONFIRMED` dari exact source

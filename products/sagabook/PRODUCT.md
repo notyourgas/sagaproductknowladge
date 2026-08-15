@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 15 Agustus 2026 01:34 WIB
+Updated: 15 Agustus 2026 12:03 WIB
 Evidence status: production deployment and activation verified; business readiness pending
 
 ## Tujuan dokumen
@@ -16,6 +16,14 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
+- Candidate S215 source `f8dfbe1291be88e1d72cd54216aff637b12c4df8`
+  sudah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Preflight
+  credential bridge kini memberi alasan public-safe yang dapat ditindaklanjuti
+  untuk kondisi unavailable, locked, invalid, atau ready sebelum runner UAT
+  membaca item vault. Focused tooling 21/21, full backend 1.045/1.045 (11.868
+  assertion), build 5.116 modul, serta audit npm/Composer/OSV lulus. Pemeriksaan
+  aktual menghasilkan `bridge_unavailable` tanpa membaca credential, membuat
+  evidence, atau memutasi production. Production tetap S208.
 - Candidate S214 source `ff21079d27af5b49b92d752bbbeb1aa253726121`
   sudah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Runner UAT
   production kini eksklusif SagaBook, memisahkan akun Owner dan operator,

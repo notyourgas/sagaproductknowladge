@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-15 - SagaBook S215 credential bridge preflight sync
+
+- Informasi `CONFIRMED` dari exact source
+  `f8dfbe1291be88e1d72cd54216aff637b12c4df8` dan gate lokal terisolasi.
+- Preflight status-only mengubah kegagalan bridge menjadi diagnosis public-safe
+  dan next action sebelum item vault dibaca.
+- Kondisi aktual `bridge_unavailable`; production tetap S208. Delivery
+  `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- Dokumen terdampak: SagaBook product/changelog/coverage, gaps,
+  portfolio/master, root changelog, dan sync status.
+
 ## 2026-08-15 - SagaBook S214 production UAT runner sync
 
 - Informasi `CONFIRMED` dari exact source

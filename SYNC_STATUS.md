@@ -12,16 +12,27 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-15T01:34:00+07:00 |
-| Branch aktif | `codex/s214-sagabook-uat-knowledge` pada worktree terisolasi exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-15T12:03:00+07:00 |
+| Branch aktif | `codex/s215-sagabook-bridge-preflight-knowledge` pada worktree terisolasi exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `58fa798cdaa79d6fa490e40e63fb8684b5374c42` |
-| Informasi terakhir disinkronkan | SagaBook S214 source `ff21079d27af5b49b92d752bbbeb1aa253726121` menyediakan runner authenticated production UAT yang eksklusif SagaBook dan fail-closed saat credential bridge tidak tersedia; production tetap S208. |
+| Baseline sebelum pembaruan | `e8a050835b95ce6fd466d859af9d05ae303190eb` |
+| Informasi terakhir disinkronkan | SagaBook S215 source `f8dfbe1291be88e1d72cd54216aff637b12c4df8` menyediakan preflight status-only yang mengklasifikasikan blocker credential bridge sebelum item vault dibaca; production tetap S208. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
 | Konflik | Checkout knowledge lain tidak disentuh; sinkronisasi dilakukan dari worktree terisolasi exact `origin/main`. |
-| Error | Tidak ada error sinkronisasi. Actual Owner/operator UAT dan deploy S214 belum dilakukan karena credential bridge lokal belum tersedia; production tetap S208. |
+| Error | Tidak ada error sinkronisasi. Kondisi aktual `bridge_unavailable`; actual Owner/operator UAT dan deploy belum dilakukan, production tetap S208. |
 
-## File yang berubah pada sinkronisasi ini (SagaBook S214 production UAT runner)
+## File yang berubah pada sinkronisasi ini (SagaBook S215 credential bridge preflight)
+
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
+
+## File yang berubah pada sinkronisasi sebelumnya (SagaBook S214 production UAT runner)
 
 - `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
 - `products/sagabook/PRODUCT.md`

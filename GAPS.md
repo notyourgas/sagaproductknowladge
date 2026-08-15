@@ -34,6 +34,13 @@ ketika keputusan atau release baru menutup gap.
 
 ### SagaBook
 
+- `TODO`: preflight S215 exact source
+  `f8dfbe1291be88e1d72cd54216aff637b12c4df8` sudah `PUSHED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED` dan mengklasifikasikan blocker
+  secara public-safe sebelum item vault dibaca. Kondisi aktual adalah
+  `bridge_unavailable`; aktifkan serta unlock bridge lokal, ulang sampai
+  `ready=true`, lalu jalankan UAT S214. Production tetap S208.
+
 - `TODO`: runner UAT SagaBook-only S214 exact source
   `ff21079d27af5b49b92d752bbbeb1aa253726121` sudah `PUSHED /
   LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Semua gate lokal dan synthetic

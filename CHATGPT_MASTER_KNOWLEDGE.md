@@ -1,8 +1,14 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 15 Agustus 2026 01:34 WIB
+Evidence cut-off: 15 Agustus 2026 12:03 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
+
+SagaBook S215 source `f8dfbe1291be88e1d72cd54216aff637b12c4df8`
+sudah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Preflight
+status-only memberi alasan public-safe dan tindakan pemulihan sebelum runner
+UAT membaca item vault. Kondisi aktual `bridge_unavailable`; credential tidak
+dibaca, evidence tidak dibuat, dan production tetap S208.
 
 SagaBook S214 source `ff21079d27af5b49b92d752bbbeb1aa253726121`
 sudah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Runner UAT kini

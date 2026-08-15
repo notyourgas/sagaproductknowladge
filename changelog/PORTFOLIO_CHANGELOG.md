@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-15 - SagaBook credential bridge preflight S215
+
+- Preflight status-only kini membedakan bridge unavailable, locked, invalid,
+  dan ready tanpa membaca item atau nilai credential.
+- Source `f8dfbe1291be88e1d72cd54216aff637b12c4df8` lulus tooling 21/21,
+  backend 1.045/1.045, build 5.116 modul, dan audit dependency.
+- Kondisi aktual `bridge_unavailable`; tidak ada evidence atau mutation
+  production. Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+  production tetap S208.
+
 ## 2026-08-15 - SagaBook authenticated production UAT runner S214
 
 - Runner UAT baru hanya mencakup SagaBook dan memisahkan reference Owner serta
