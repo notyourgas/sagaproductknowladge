@@ -12,16 +12,27 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-15T20:07:00+07:00 |
-| Branch aktif | `codex/s213-sagaview-output-capacity-audit-knowledge` pada worktree terisolasi exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-15T20:15:00+07:00 |
+| Branch aktif | `codex/s217-sagabook-uat-bridge-launcher-knowledge` pada worktree terisolasi exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `5b6aeaacfb58cdc0c371e9da88a5fee80a093026` |
-| Informasi terakhir disinkronkan | SagaView S213 membuktikan dua volume lokal tetap hanya memiliki 2,71 GiB dan 2,17 GiB ruang bebas; gate output 10 GiB masih blocked bersama EPSON L8050/driver. |
+| Baseline sebelum pembaruan | `3ec926f9b97dd6773b7fa4735453b27255bb60e2` |
+| Informasi terakhir disinkronkan | SagaBook S217 menambahkan launcher bridge berbasis encoded command, loopback guard, dan dry-run public-safe pada source exact yang sudah dipush. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
 | Konflik | Checkout knowledge lain tidak disentuh; sinkronisasi dilakukan dari worktree terisolasi exact `origin/main`. |
-| Error | UAT keseluruhan tetap `BLOCKED_PREFLIGHT` pada kapasitas dan dua syarat printer; finalize dan deploy belum dilakukan. Production tidak berubah. |
+| Error | Actual unlock dan authenticated Owner/operator UAT belum dilakukan; production SagaBook tetap S208. |
 
-## File yang berubah pada sinkronisasi ini (SagaView S213 output-capacity audit)
+## File yang berubah pada sinkronisasi ini (SagaBook S217 UAT bridge launcher)
+
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
+
+## File yang berubah pada sinkronisasi sebelumnya (SagaView S213 output-capacity audit)
 
 - `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
 - `products/sagaview/PRODUCT.md`

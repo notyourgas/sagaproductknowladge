@@ -1,5 +1,18 @@
 # SagaBook Changelog
 
+## 2026-08-15 - SagaBook UAT bridge launcher S217
+
+- Informasi `CONFIRMED` dari exact source
+  `4e9cca53ee8d5839c879e31f87e5d4258fe82ae9`; branch source sudah dipush.
+- Before: prompt unlock manual gagal karena quoting path Windows berspasi dan
+  proses operator tidak memiliki satu entry point SagaBook. After: launcher
+  memakai encoded command, memvalidasi loopback, dan memberi status public-safe.
+- Focused tooling 14/14, kontrak evidence 13/13, full backend 1.045/1.045
+  (11.868 assertion), build 5.116 modul, syntax, npm/Composer/OSV, dan diff
+  check lulus.
+- Actual unlock serta authenticated UAT belum dijalankan. Status `PUSHED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S208.
+
 ## 2026-08-15 - Credential bridge negative acceptance S216
 
 - Informasi `CONFIRMED` dari exact source

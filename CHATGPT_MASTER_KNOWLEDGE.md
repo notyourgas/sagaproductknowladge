@@ -1,8 +1,16 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 15 Agustus 2026 20:07 WIB
+Evidence cut-off: 15 Agustus 2026 20:15 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
+
+SagaBook S217 source `4e9cca53ee8d5839c879e31f87e5d4258fe82ae9`
+sudah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Launcher operator
+khusus SagaBook memakai encoded command untuk menghindari kegagalan quoting path
+Windows berspasi, menolak URL non-loopback, dan menyediakan dry-run public-safe
+tanpa membaca credential atau memutasi production. Focused 14/14, evidence
+13/13, backend 1.045/1.045, build, serta audit dependency lulus. Actual unlock
+dan UAT dua role masih perlu dijalankan; production tetap S208.
 
 SagaView S213 mengaudit seluruh volume lokal tetap secara read-only. Dua volume
 yang tersedia sehat, tetapi ruang bebasnya hanya 2,71 GiB dan 2,17 GiB; tidak

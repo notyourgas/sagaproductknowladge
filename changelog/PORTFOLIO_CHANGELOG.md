@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-15 - SagaBook UAT bridge launcher S217
+
+- Launcher operator khusus SagaBook mengirim shared bridge melalui encoded
+  command sehingga path Windows berspasi tidak lagi rusak oleh quoting.
+- Loopback guard, dry-run public-safe, focused 14/14, evidence 13/13, backend
+  1.045/1.045, build, dan audit dependency lulus pada source exact
+  `4e9cca53ee8d5839c879e31f87e5d4258fe82ae9` yang sudah dipush.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; actual UAT masih
+  menunggu unlock operator dan production tetap S208.
+
 ## 2026-08-15 - SagaView S213 output-capacity audit
 
 - Audit read-only membuktikan dua volume lokal tetap hanya memiliki 2,71 GiB

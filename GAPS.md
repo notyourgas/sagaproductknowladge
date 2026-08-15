@@ -8,7 +8,7 @@ diubah menjadi klaim publik sebelum ditutup dengan bukti atau keputusan owner.
 
 ## Konteks
 
-Daftar ini berlaku pada evidence cut-off 15 Agustus 2026 14:06 WIB dan harus diperbarui
+Daftar ini berlaku pada evidence cut-off 15 Agustus 2026 20:15 WIB dan harus diperbarui
 ketika keputusan atau release baru menutup gap.
 
 ## Cara memakai
@@ -33,6 +33,15 @@ ketika keputusan atau release baru menutup gap.
 ## Keputusan produk
 
 ### SagaBook
+
+- `TODO`: launcher S217 exact source
+  `4e9cca53ee8d5839c879e31f87e5d4258fe82ae9` sudah `PUSHED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Transport encoded menutup
+  kegagalan quoting path Windows, loopback guard dan dry-run public-safe lulus,
+  tetapi unlock manual serta actual UAT Owner/operator belum dijalankan.
+  Operator perlu menjalankan `npm run start:sagabook-uat-bridge`, memasukkan
+  master password hanya di terminal lokal, lalu mempertahankan bridge aktif
+  selama UAT S214. Production tetap S208.
 
 - `TODO`: acceptance negatif S216 exact source
   `473b63f8b8846160844976b07d477f6759846d04` sudah `PUSHED /

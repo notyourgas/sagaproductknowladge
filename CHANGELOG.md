@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-15 - SagaBook S217 UAT bridge launcher sync
+
+- Informasi `CONFIRMED` dari exact source
+  `4e9cca53ee8d5839c879e31f87e5d4258fe82ae9` dan gate lokal terisolasi.
+- Launcher khusus SagaBook memakai encoded command untuk path Windows berspasi,
+  membatasi bridge ke loopback, serta memberi dry-run public-safe tanpa akses
+  credential atau mutation production.
+- Delivery `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; actual UAT
+  belum dilakukan dan production tetap S208.
+- Dokumen terdampak: SagaBook product/changelog/coverage, gaps,
+  portfolio/master, root changelog, dan sync status.
+
 ## 2026-08-15 - SagaView S213 output-capacity audit sync
 
 - Informasi `CONFIRMED` dari audit read-only seluruh volume lokal tetap.

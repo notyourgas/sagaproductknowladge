@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 15 Agustus 2026 14:06 WIB
+Updated: 15 Agustus 2026 20:15 WIB
 Evidence status: production deployment and activation verified; business readiness pending
 
 ## Tujuan dokumen
@@ -16,6 +16,15 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
+- Candidate S217 source `4e9cca53ee8d5839c879e31f87e5d4258fe82ae9`
+  sudah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Launcher
+  operator khusus SagaBook kini membuka prompt unlock bridge dengan encoded
+  command sehingga path Windows berspasi tetap utuh, menolak URL non-loopback,
+  dan menyediakan dry-run public-safe tanpa membaca credential atau menyentuh
+  production. Focused tooling 14/14, kontrak evidence 13/13, full backend
+  1.045/1.045 (11.868 assertion), build 5.116 modul, syntax, serta audit
+  npm/Composer/OSV lulus. Actual unlock dan authenticated UAT belum dilakukan;
+  production tetap S208.
 - Candidate S216 source `473b63f8b8846160844976b07d477f6759846d04`
   sudah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Acceptance
   preflight credential bridge kini secara eksplisit membuktikan kondisi
