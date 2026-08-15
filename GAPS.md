@@ -8,7 +8,7 @@ diubah menjadi klaim publik sebelum ditutup dengan bukti atau keputusan owner.
 
 ## Konteks
 
-Daftar ini berlaku pada evidence cut-off 15 Agustus 2026 20:15 WIB dan harus diperbarui
+Daftar ini berlaku pada evidence cut-off 15 Agustus 2026 21:26 WIB dan harus diperbarui
 ketika keputusan atau release baru menutup gap.
 
 ## Cara memakai
@@ -33,6 +33,13 @@ ketika keputusan atau release baru menutup gap.
 ## Keputusan produk
 
 ### SagaBook
+
+- `TODO`: idempotency S218 exact source
+  `60e115db0458b4791938e692dda79643f47d342a` sudah `PUSHED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Pemanggilan paralel kini ditolak
+  tanpa terminal kedua dan prompt unlock existing dipakai ulang. Actual unlock
+  serta UAT Owner/operator masih memerlukan operator aktif; production tetap
+  S208.
 
 - `TODO`: launcher S217 exact source
   `4e9cca53ee8d5839c879e31f87e5d4258fe82ae9` sudah `PUSHED /

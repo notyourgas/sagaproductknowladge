@@ -1,5 +1,18 @@
 # SagaBook Changelog
 
+## 2026-08-15 - UAT bridge launcher idempotency S218
+
+- Informasi `CONFIRMED` dari exact source
+  `60e115db0458b4791938e692dda79643f47d342a`; branch source sudah dipush.
+- Before: dua pemanggilan cepat dapat membuka prompt unlock ganda dan proses
+  unlock lama dapat terbaca sebagai hasil launcher baru. After: mutex per-port,
+  reuse prompt aktif, serta filter waktu mulai membuat launch idempoten.
+- Focused tooling 15/15, kontrak evidence 13/13, full backend 1.045/1.045
+  (11.868 assertion), build 5.116 modul, syntax, npm/Composer/OSV, dan diff
+  check lulus.
+- Actual unlock/UAT belum dilakukan. Status `PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap S208.
+
 ## 2026-08-15 - SagaBook UAT bridge launcher S217
 
 - Informasi `CONFIRMED` dari exact source

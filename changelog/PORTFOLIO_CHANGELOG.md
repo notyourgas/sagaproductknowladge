@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-15 - SagaBook UAT bridge launcher idempotency S218
+
+- Guard per-port mencegah dua invocation paralel membuka dua terminal unlock;
+  prompt existing dipakai ulang dan deteksi proses dibatasi waktu mulai.
+- Source exact `60e115db0458b4791938e692dda79643f47d342a` sudah dipush dan
+  lulus focused 15/15, evidence 13/13, backend 1.045/1.045, build, syntax,
+  serta audit dependency.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; actual UAT belum
+  berjalan dan production SagaBook tetap S208.
+
 ## 2026-08-15 - SagaView S214 storage-remediation audit
 
 - C 0,88 GiB, D 2,04 GiB, dan E 8,09 GiB dengan health warning belum memenuhi

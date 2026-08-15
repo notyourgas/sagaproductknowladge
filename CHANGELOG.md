@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-15 - SagaBook S218 UAT bridge launcher idempotency sync
+
+- Informasi `CONFIRMED` dari exact source
+  `60e115db0458b4791938e692dda79643f47d342a` dan gate lokal terisolasi.
+- Guard per-port mencegah double-launch, prompt unlock existing dipakai ulang,
+  dan proses lama tidak menjadi bukti launch baru.
+- Delivery `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; actual UAT
+  belum dilakukan dan production tetap S208.
+- Dokumen terdampak: SagaBook product/changelog/coverage, gaps,
+  portfolio/master, root changelog, dan sync status.
+
 ## 2026-08-15 - SagaView S214 storage-remediation sync
 
 - Informasi `CONFIRMED` dari audit storage read-only dan pemeriksaan exact Git.
