@@ -1,6 +1,15 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 15 Agustus 2026 21:23 WIB
+Evidence cut-off: 16 Agustus 2026 00:16 WIB
+
+S215 storage-target eligibility audit: volume E yang S214 lihat warning kini
+tidak lagi terdaftar sebagai volume, partisi, atau disk lokal dan tidak boleh
+dipakai untuk output SagaVIEW. Hanya C dan D tersedia; keduanya fixed/NTFS,
+healthy/OK, tetapi ruang bebasnya 3,05 GiB dan 2,01 GiB, di bawah gate 10 GiB.
+Spooler berjalan, sementara antrean dan driver EPSON L8050 tidak ditemukan.
+Backend S210 dan Studio S206 tetap clean/upstream exact. Status
+`AUDIT_COMPLETE / BLOCKED_PREFLIGHT`; tidak ada penghapusan, source change,
+database write, SagaBook, atau perubahan production.
 
 S214 storage-remediation audit: ruang bebas turun menjadi C 0,88 GiB dan D
 2,04 GiB; volume E berstatus warning dan hanya 8,09 GiB, sehingga tidak ada

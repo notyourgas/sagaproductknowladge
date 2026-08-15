@@ -1,5 +1,17 @@
 # SagaView Dossier
 
+## S215 storage-target eligibility audit
+
+Audit read-only menutup ambiguitas volume E. Volume yang S214 lihat warning
+sekarang tidak terdaftar sebagai volume, partisi, atau disk lokal, sehingga
+tidak boleh dipakai untuk output SagaVIEW. Hanya C dan D tersedia pada satu SSD
+NVMe sehat; ruang bebasnya 3,05 GiB dan 2,01 GiB, tetap di bawah gate 10 GiB.
+Spooler berjalan, tetapi EPSON L8050 dan driver belum terpasang. Backend S210
+`a07d8af9924b49977adf184a921979fcd8bdec4a` dan Studio S206
+`d0655c46f08e0a8322dd4c30fb47c29c25e11fe9` tetap clean/upstream exact.
+Status `AUDIT_COMPLETE / BLOCKED_PREFLIGHT`; tidak ada mutasi source,
+production, database, atau file operator.
+
 ## S214 storage-remediation audit
 
 Audit read-only memperbarui risiko kapasitas: C 0,88 GiB, D 2,04 GiB, dan E

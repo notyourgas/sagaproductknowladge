@@ -1,5 +1,17 @@
 # SagaView Changelog
 
+## 2026-08-16 - S215 storage-target eligibility audit
+
+- Klasifikasi: `CONFIRMED` operational/release blocker evidence.
+- Before: S214 melihat volume E berstatus warning dengan ruang 8,09 GiB, tetapi
+  persistensi dan kelayakannya sebagai target output belum dibuktikan.
+- After: E tidak lagi terdaftar sebagai volume, partisi, atau disk lokal. Hanya
+  C 3,05 GiB dan D 2,01 GiB tersedia; keduanya sehat tetapi di bawah 10 GiB.
+- Printer: spooler berjalan, namun antrean serta driver EPSON L8050 tidak ada.
+- Delivery: `AUDIT_COMPLETE / BLOCKED_PREFLIGHT`; backend S210 dan Studio S206
+  tetap clean/upstream exact. Tidak ada penghapusan, deploy, database write,
+  SagaBook, atau perubahan production.
+
 ## 2026-08-15 - S214 storage-remediation audit
 
 - Klasifikasi: `CONFIRMED` operational risk and remediation evidence.

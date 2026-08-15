@@ -12,16 +12,27 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-15T21:26:00+07:00 |
-| Branch aktif | `codex/s218-sagabook-uat-launcher-idempotency-knowledge` pada worktree terisolasi exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-16T00:16:44+07:00 |
+| Branch aktif | `codex/s215-sagaview-storage-target-eligibility-knowledge` pada worktree terisolasi exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `d8cf4d2c69db39594b93fdec1b225b5cf8fd0fea` |
-| Informasi terakhir disinkronkan | SagaBook S218 membuat launcher UAT idempoten melalui guard per-port, reuse prompt aktif, dan deteksi proses baru terikat waktu mulai. |
+| Baseline sebelum pembaruan | `bb072bcc00e15925cef0b99094449090a9f8fe10` |
+| Informasi terakhir disinkronkan | SagaView S215 membuktikan volume E tidak persisten/tersedia dan tidak boleh menjadi target output; C/D tetap di bawah gate 10 GiB. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
 | Konflik | Checkout knowledge lain tidak disentuh; sinkronisasi dilakukan dari worktree terisolasi exact `origin/main`. |
-| Error | Actual unlock dan authenticated Owner/operator UAT SagaBook belum dilakukan; production tetap S208. |
+| Error | UAT SagaVIEW tetap blocked oleh ruang output minimum 10 GiB serta EPSON L8050/driver; production tidak berubah. |
 
-## File yang berubah pada sinkronisasi ini (SagaBook S218 launcher idempotency)
+## File yang berubah pada sinkronisasi ini (SagaView S215 storage-target eligibility)
+
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/DOSSIER.md`
+- `products/sagaview/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
+
+## File yang berubah pada sinkronisasi sebelumnya (SagaBook S218 launcher idempotency)
 
 - `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
 - `products/sagabook/PRODUCT.md`

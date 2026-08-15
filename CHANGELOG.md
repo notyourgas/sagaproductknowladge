@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-16 - SagaView S215 storage-target eligibility sync
+
+- Informasi `CONFIRMED` dari audit volume, partisi, disk, printer, dan exact Git
+  secara read-only.
+- Volume E yang S214 lihat berstatus warning kini tidak lagi tersedia; hanya C
+  3,05 GiB dan D 2,01 GiB yang sehat tetapi tetap di bawah gate 10 GiB.
+- Delivery `AUDIT_COMPLETE / BLOCKED_PREFLIGHT`; source, production, database,
+  SagaBook, dan file operator tidak berubah.
+- Dokumen terdampak: SagaView product/dossier/changelog/coverage,
+  portfolio/master, root changelog, dan sync status.
+
 ## 2026-08-15 - SagaBook S218 UAT bridge launcher idempotency sync
 
 - Informasi `CONFIRMED` dari exact source

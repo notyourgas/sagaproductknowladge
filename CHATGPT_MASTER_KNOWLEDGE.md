@@ -1,8 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 15 Agustus 2026 21:26 WIB
+Evidence cut-off: 16 Agustus 2026 00:16 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
+
+SagaView S215 membuktikan volume E bukan target output yang layak: volume yang
+S214 lihat berstatus warning kini tidak lagi terdaftar sebagai volume, partisi,
+atau disk lokal. Hanya C dan D tersedia; keduanya sehat tetapi ruang bebasnya
+3,05 GiB dan 2,01 GiB, tetap di bawah gate 10 GiB. EPSON L8050 dan drivernya
+belum tersedia. Status `AUDIT_COMPLETE / BLOCKED_PREFLIGHT`; source backend
+S210 dan Studio S206 tetap clean/upstream exact, production tidak berubah.
 
 SagaBook S218 source `60e115db0458b4791938e692dda79643f47d342a`
 sudah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Mutex per-port

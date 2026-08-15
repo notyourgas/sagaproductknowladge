@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-08-16 - SagaView S215 storage-target eligibility audit
+
+- Volume E yang sebelumnya warning kini tidak lagi tersedia sebagai volume,
+  partisi, atau disk lokal sehingga tidak boleh dipilih sebagai output.
+- Hanya C 3,05 GiB dan D 2,01 GiB yang tersedia; keduanya sehat tetapi gagal
+  gate 10 GiB. EPSON L8050/driver juga tetap belum ada.
+- Status `AUDIT_COMPLETE / BLOCKED_PREFLIGHT`; source, production, database,
+  SagaBook, dan file operator tidak berubah.
+
 ## 2026-08-15 - SagaBook UAT bridge launcher idempotency S218
 
 - Guard per-port mencegah dua invocation paralel membuka dua terminal unlock;

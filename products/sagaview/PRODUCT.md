@@ -1,6 +1,14 @@
 # SagaView Product Knowledge
 
-Updated: 15 Agustus 2026
+Updated: 16 Agustus 2026
+
+Audit kelayakan storage S215 membuktikan volume E yang sebelumnya warning tidak
+persisten/tersedia: E kini tidak terdaftar sebagai volume, partisi, atau disk
+lokal dan tidak boleh dipakai sebagai target output. Hanya C 3,05 GiB dan D
+2,01 GiB yang tersedia; keduanya sehat tetapi gagal gate 10 GiB. Spooler aktif,
+namun EPSON L8050 dan drivernya belum ada. UAT tetap
+`AUDIT_COMPLETE / BLOCKED_PREFLIGHT`; source backend S210/Studio S206,
+database, production, dan file operator tidak berubah.
 
 Audit remediasi storage S214 menemukan C tersisa 0,88 GiB, D 2,04 GiB, dan
 volume E berstatus warning dengan 8,09 GiB; semuanya belum memenuhi gate output
