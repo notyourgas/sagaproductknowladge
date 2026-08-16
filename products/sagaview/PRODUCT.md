@@ -2,6 +2,14 @@
 
 Updated: 16 Agustus 2026
 
+Preflight Windows S220 memperbarui blocker output nyata. C hanya memiliki 1,56
+GiB dan D 1,94 GiB ruang bebas; keduanya sehat/NTFS tetapi gagal minimum 10
+GiB. Spooler aktif otomatis, namun queue dan driver EPSON L8050 belum tersedia.
+Karena itu UAT output tidak dimulai dan status tetap `AUDIT_COMPLETE /
+BLOCKED_PREFLIGHT`. Studio S219 tetap exact/clean/remote; source, database,
+production, dan file operator tidak berubah. UAT baru boleh berjalan setelah
+satu fixed volume sehat memiliki minimal 10 GiB dan printer/driver tersedia.
+
 Studio S219 tidak lagi memperlakukan kegagalan membaca draft awal sebagai
 kondisi kosong. Panel persisten menjelaskan apa yang gagal, bahwa penyimpanan
 lokal belum diubah/dihapus dan foto tidak diunggah, serta aksi retry. Pemilihan

@@ -1,8 +1,16 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 16 Agustus 2026 10:24 WIB
+Evidence cut-off: 16 Agustus 2026 11:05 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
+
+SagaView S220 Windows output/printer preflight berstatus `AUDIT_COMPLETE /
+BLOCKED_PREFLIGHT`. Audit read-only membuktikan C hanya bebas 1,56 GiB dan D
+1,94 GiB; keduanya fixed, sehat, dan NTFS tetapi gagal minimum 10 GiB. Spooler
+aktif otomatis, namun queue/driver EPSON L8050 tidak tersedia. Studio S219
+`25012842e9e74ba3ac6a9dee566e205446b656ea` tetap clean/upstream/remote exact.
+UAT output tidak dimulai; source, database, production, file operator,
+SagaBook, dan data customer tidak berubah.
 
 SagaView Studio S219 source `25012842e9e74ba3ac6a9dee566e205446b656ea`
 sudah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Initial recovery

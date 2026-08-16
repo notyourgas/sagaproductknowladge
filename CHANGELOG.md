@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-16 - SagaView S220 Windows output preflight sync
+
+- Informasi `CONFIRMED` dari audit read-only fixed volume, disk health,
+  spooler, printer/driver, dan exact Git candidate.
+- C hanya bebas 1,56 GiB dan D 1,94 GiB; EPSON L8050/driver tidak tersedia,
+  sehingga UAT output tetap fail-closed.
+- Delivery `AUDIT_COMPLETE / BLOCKED_PREFLIGHT`; source, database, production,
+  file operator, SagaBook, dan produk lain tidak berubah.
+- Dokumen terdampak: SagaView product/dossier/changelog/coverage,
+  portfolio/master, root changelog, dan sync status.
+
 ## 2026-08-16 - SagaView S219 recovery initial-load failure sync
 
 - Informasi `CONFIRMED` dari exact Studio source

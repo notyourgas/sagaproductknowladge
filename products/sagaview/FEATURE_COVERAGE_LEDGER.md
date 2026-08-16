@@ -1,6 +1,16 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 16 Agustus 2026 10:24 WIB
+Evidence cut-off: 16 Agustus 2026 11:05 WIB
+
+S220 Windows output/printer preflight: audit read-only membuktikan hanya dua
+fixed volume tersedia. C sehat/NTFS tetapi tinggal 1,56 GiB dan D sehat/NTFS
+tinggal 1,94 GiB; keduanya jauh di bawah gate 10 GiB. Dibanding S215, C turun
+1,49 GiB dan D turun 0,07 GiB. Spooler berjalan otomatis, tetapi queue dan
+driver EPSON L8050 tidak ditemukan. UAT output tidak dimulai. Studio S219
+`25012842e9e74ba3ac6a9dee566e205446b656ea` tetap clean/upstream/remote exact.
+Status `AUDIT_COMPLETE / BLOCKED_PREFLIGHT`; tidak ada source/database/
+production change, file deletion, atau data customer. Gate berikutnya adalah
+minimal 10 GiB bebas pada satu fixed NTFS sehat serta EPSON L8050 dan driver.
 
 S219 recovery initial-load failure transparency: exact Studio source
 `25012842e9e74ba3ac6a9dee566e205446b656ea` mengganti initial IndexedDB read

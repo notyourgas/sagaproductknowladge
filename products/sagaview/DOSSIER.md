@@ -1,5 +1,17 @@
 # SagaView Dossier
 
+## S220 Windows output and printer preflight
+
+Audit read-only pada perangkat Windows memeriksa fixed volume, health disk,
+spooler, printer, driver, dan exact candidate. C/D berada pada satu SSD sehat;
+C hanya bebas 1,56 GiB dan D 1,94 GiB, sehingga tidak ada target yang lolos
+gate 10 GiB. Spooler `Running/Automatic`, tetapi tiga printer yang terpasang
+tidak mencakup EPSON L8050 dan tidak ada driver EPSON/L8050. Delapan worktree
+SagaVIEW terukur sekitar 0,71 GiB dan tidak dihapus. Studio S219
+`25012842e9e74ba3ac6a9dee566e205446b656ea` tetap exact/clean/remote.
+Status `AUDIT_COMPLETE / BLOCKED_PREFLIGHT`; physical output UAT belum dimulai
+dan production tidak berubah.
+
 ## S219 recovery initial-load failure transparency
 
 Studio source `25012842e9e74ba3ac6a9dee566e205446b656ea` menutup false-empty

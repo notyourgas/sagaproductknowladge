@@ -12,14 +12,25 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-16T10:24:00+07:00 |
-| Branch aktif | `codex/knowledge-s219-recovery-load-failure` pada worktree terisolasi exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-16T11:05:00+07:00 |
+| Branch aktif | `codex/knowledge-s220-windows-output-preflight` pada worktree terisolasi exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `b2d15e651215e7cc2bbf0e0648d7352ce6c0eb02` |
-| Informasi terakhir disinkronkan | SagaView S219 recovery initial-load failure transparency pada exact source `25012842e9e74ba3ac6a9dee566e205446b656ea`, termasuk fail-closed import/customer flow, public-safe retry, dan residual physical Windows storage UAT. |
+| Baseline sebelum pembaruan | `a7e9b4493f05dbdc18387420f3dad6325a7bd3d2` |
+| Informasi terakhir disinkronkan | SagaView S220 Windows output/printer preflight: C 1,56 GiB, D 1,94 GiB, EPSON L8050/driver tidak tersedia, dan UAT tetap blocked. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
 | Konflik | Checkout knowledge lain tidak disentuh; sinkronisasi dilakukan dari worktree terisolasi exact `origin/main`. |
 | Error | Tidak ada error knowledge; deployment production SagaView tidak dilakukan. |
+
+## File yang berubah pada sinkronisasi ini (SagaView S220 Windows output preflight)
+
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/DOSSIER.md`
+- `products/sagaview/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaView S219 recovery initial-load failure)
 

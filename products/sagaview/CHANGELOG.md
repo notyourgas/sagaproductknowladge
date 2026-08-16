@@ -1,5 +1,20 @@
 # SagaView Changelog
 
+## 2026-08-16 - S220 Windows output and printer preflight
+
+- Klasifikasi: `CONFIRMED` operational/release blocker evidence.
+- Before: S219 menyisakan physical Windows storage/disk-pressure UAT; snapshot
+  terakhir S215 mencatat C 3,05 GiB dan D 2,01 GiB.
+- After: audit read-only menemukan C 1,56 GiB dan D 1,94 GiB. Keduanya sehat,
+  fixed, dan NTFS, tetapi gagal gate minimum 10 GiB.
+- Printer: spooler `Running/Automatic`; EPSON L8050 queue dan driver tidak ada.
+- Dampak: UAT output tidak dimulai; perlu minimal 10 GiB pada satu volume sehat
+  dan printer/driver tersedia.
+- Delivery: `AUDIT_COMPLETE / BLOCKED_PREFLIGHT`; Studio S219
+  `25012842e9e74ba3ac6a9dee566e205446b656ea` tetap clean/upstream/remote exact.
+  Tidak ada source, database, production, file deletion, SagaBook, atau data
+  customer yang berubah.
+
 ## 2026-08-16 - S219 recovery initial-load failure transparency
 
 - Klasifikasi: `CONFIRMED` recovery integrity and operator-safety fix.
