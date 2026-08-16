@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-16 - SagaView recovery clear-failure preservation S218
+
+- Buang Draft dan Reset Session kini menunggu penghapusan checkpoint lokal;
+  failure menjaga draft/sesi aktif, mencegah klik ganda, dan tidak memberi
+  sukses palsu.
+- Panel persisten menjelaskan apa yang gagal, keamanan foto lokal/no-upload,
+  serta aksi ruang browser yang dapat dilakukan operator.
+- Exact source `889baae919869f56b560c8c10a605ec38314b421` sudah dipush dan
+  lulus 211 unit, 15 browser scenario, responsive/a11y, build, privacy, bundle
+  budget, serta dependency audit.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah
+  dan initial recovery-load failure tetap residual terpisah.
+
 ## 2026-08-16 - SagaBooth milestone M0 foundation
 
 - SagaBooth ditetapkan sebagai software instant photobooth mandiri dengan

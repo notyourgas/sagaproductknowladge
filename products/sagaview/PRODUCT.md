@@ -2,6 +2,17 @@
 
 Updated: 16 Agustus 2026
 
+Studio S218 menjaga state pemulihan ketika penghapusan checkpoint lokal gagal.
+`Buang Draft` dan `Reset Session` sekarang menunggu commit penghapusan sebelum
+menutup draft atau mereset sesi; failure mempertahankan pekerjaan di layar,
+menahan double-submit, meniadakan sukses palsu, dan memberi panel tiga bagian:
+apa yang gagal, keamanan data, serta aksi berikutnya. Exact source
+`889baae919869f56b560c8c10a605ec38314b421` sudah `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; 211 unit, 15 browser scenario,
+focused exact-commit 9+2, responsive/a11y, no-upload, build/budget, dan audit
+dependency lulus. Production, backend, dan database tidak berubah. Kegagalan
+initial load recovery masih menjadi gap terpisah.
+
 Studio S216 memperjelas kegagalan penyimpanan checkpoint recovery setelah
 folder foto lokal diimpor. Operator sekarang mendapat warning dominan yang
 menjelaskan checkpoint belum tersimpan, sesi di layar dan foto asli tetap aman,

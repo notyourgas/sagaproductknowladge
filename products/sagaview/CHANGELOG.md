@@ -1,5 +1,22 @@
 # SagaView Changelog
 
+## 2026-08-16 - S218 recovery clear-failure preservation
+
+- Klasifikasi: `CONFIRMED` recovery integrity and operator-safety fix.
+- Before: `Buang Draft` dapat menyembunyikan draft sebelum delete IndexedDB
+  selesai; `Reset Session` menelan delete failure dan tetap memberi sukses.
+- After: kedua aksi menunggu commit penghapusan, menjaga draft/sesi aktif saat
+  gagal, mencegah double-submit, dan memberi panduan persisten yang actionable.
+- Data boundary: foto dan path lokal tetap di perangkat; browser test sintetis
+  membuktikan filename/byte foto tidak masuk mutation request.
+- Evidence: 211 unit, 15 Playwright sequential, focused exact-commit 9 unit + 2
+  browser, Axe tanpa serious/critical pada 1440x900 dan 390x844, no-overflow,
+  build/budget, lint/typecheck, serta `npm audit` nol vulnerability.
+- Delivery: exact Studio source `889baae919869f56b560c8c10a605ec38314b421`
+  sudah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production,
+  backend, database, SagaBook, dan produk lain tidak berubah. Initial
+  recovery-load failure tetap residual untuk slice berikutnya.
+
 ## 2026-08-16 - S216 recovery checkpoint write-failure transparency
 
 - Klasifikasi: `CONFIRMED` recovery and operator-safety fix.

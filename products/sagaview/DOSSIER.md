@@ -1,5 +1,18 @@
 # SagaView Dossier
 
+## S218 recovery clear-failure preservation
+
+Studio source `889baae919869f56b560c8c10a605ec38314b421` menutup dua false-success
+path pada cleanup checkpoint lokal. `Buang Draft` tidak lagi menyembunyikan
+draft sebelum delete IndexedDB berhasil; `Reset Session` tidak lagi mereset
+state lokal atau memberi toast sukses bila delete gagal. Keduanya memakai
+in-flight guard dan panel persisten yang memisahkan kegagalan, keamanan data,
+serta aksi berikutnya. Full 211 unit dan 15 browser scenario, focused
+exact-commit 9+2, responsive/a11y dua viewport, no-upload, build/budget, dan
+audit dependency lulus. Status `PUSHED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; production/backend/database tidak berubah. Initial
+recovery-load failure masih residual terpisah.
+
 ## S216 recovery checkpoint write-failure transparency
 
 Studio source `d9a284812b29ab8688365e319c2c098d4357ca8c` menutup silent

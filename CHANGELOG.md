@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-16 - SagaView S218 recovery clear-failure preservation sync
+
+- Informasi `CONFIRMED` dari exact Studio source
+  `889baae919869f56b560c8c10a605ec38314b421` dan gate lokal terisolasi.
+- Buang Draft/Reset Session kini menunggu delete checkpoint; failure menjaga
+  state terlihat, menahan double-submit, dan memberi pemulihan yang jujur.
+- Delivery `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production,
+  backend, database, SagaBook, dan produk lain tidak berubah.
+- Dokumen terdampak: SagaView product/dossier/changelog/coverage,
+  portfolio/master, root changelog, dan sync status.
+
 ## 2026-08-16 - SagaBooth milestone M0 knowledge sync
 
 - Informasi `CONFIRMED` dari keputusan Andreas dan exact source

@@ -1,6 +1,18 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 16 Agustus 2026 03:26 WIB
+Evidence cut-off: 16 Agustus 2026 09:18 WIB
+
+S218 recovery clear-failure preservation: exact Studio source
+`889baae919869f56b560c8c10a605ec38314b421` memastikan `Buang Draft` dan
+`Reset Session` menunggu penghapusan checkpoint IndexedDB selesai. Bila
+penghapusan gagal, draft atau sesi aktif tetap terlihat, sukses palsu tidak
+ditampilkan, klik ganda ditahan, dan panel persisten menjelaskan kegagalan,
+keamanan foto lokal/no-upload, serta aksi ruang browser. Full 211 unit dan 15
+browser scenario lulus; focused exact-commit 9 unit + 2 browser, Axe dua
+viewport, no-overflow/no-upload, build/budget, lint/typecheck, serta audit
+dependency juga lulus. Status `PUSHED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; production, backend, database, SagaBook, dan produk
+lain tidak berubah. Initial recovery-load failure masih residual terpisah.
 
 S216 recovery checkpoint warning: exact Studio source
 `d9a284812b29ab8688365e319c2c098d4357ca8c` mengubah write failure setelah

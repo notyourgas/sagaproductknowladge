@@ -12,14 +12,25 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-16T08:39:46+07:00 |
-| Branch aktif | `codex/sagabooth-m0-sync` pada worktree terisolasi exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-16T09:18:00+07:00 |
+| Branch aktif | `codex/knowledge-s218-recovery-clear-failure` pada worktree terisolasi exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `8928f6f2d39811e37d92aba38098fbd9eab60663` |
-| Informasi terakhir disinkronkan | SagaBooth milestone M0 pada exact source `c08765f3a5ab40ff39e5741c1abfc609006ceef5`, termasuk product boundary, architecture baseline, local validation, serta external governance blockers. |
+| Baseline sebelum pembaruan | `c3caf4e8766ccb19e7aa1700a1b5bd7de644c2b5` |
+| Informasi terakhir disinkronkan | SagaView S218 recovery clear-failure preservation pada exact source `889baae919869f56b560c8c10a605ec38314b421`, termasuk failure preservation, double-submit guard, no-upload evidence, dan residual initial-load failure. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
 | Konflik | Checkout knowledge lain tidak disentuh; sinkronisasi dilakukan dari worktree terisolasi exact `origin/main`. |
-| Error | SagaBooth source lulus lokal; GitHub Actions billing/spending limit dan kebutuhan GitHub Pro untuk branch protection private masih terbuka. Deployment production belum dilakukan. |
+| Error | Tidak ada error knowledge; deployment production SagaView tidak dilakukan. |
+
+## File yang berubah pada sinkronisasi ini (SagaView S218 recovery clear-failure preservation)
+
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/DOSSIER.md`
+- `products/sagaview/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaBooth milestone M0)
 
