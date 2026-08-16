@@ -12,16 +12,25 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-16T13:22:00+07:00 |
-| Branch aktif | `codex/s227-sagabook-uat-output-isolation-knowledge` pada worktree terisolasi |
+| Waktu pembaruan terakhir | 2026-08-16T20:06:00+07:00 |
+| Branch aktif | `codex/s228-sagabook-uat-output-revalidation-knowledge` pada worktree terisolasi |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `be2733bb86c9578bd1b9900881c3bb69c7759a0a` |
-| Informasi terakhir disinkronkan | SagaBook S227 menolak output evidence di dalam repository setelah normalisasi path. |
+| Baseline sebelum pembaruan | `dd216dcd3f43d7e0c0ba63bde72d2d62b5edfa83` |
+| Informasi terakhir disinkronkan | SagaBook S228 me-resolve ulang output dan memakai destination kanonik saat publikasi evidence. |
 | Status sinkronisasi | `BRANCH_SYNCED / MAIN_MERGE_PENDING` setelah validator, push, dan remote verification. |
-| Konflik | Checkout `main` tertinggal dan memiliki commit lokal sehingga tidak disentuh; sinkronisasi dilanjutkan dari branch S226 yang sudah remote-exact. |
+| Konflik | Checkout `main` tertinggal dan memiliki commit lokal sehingga tidak disentuh; sinkronisasi dilanjutkan dari branch S227 yang sudah remote-exact. |
 | Error | Actual unlock dan authenticated Owner/operator UAT SagaBook belum dilakukan; production tetap S208. |
 
-## File yang berubah pada sinkronisasi ini (SagaBook S227 UAT output isolation)
+## File yang berubah pada sinkronisasi ini (SagaBook S228 UAT output revalidation)
+
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
+
+## File yang berubah pada sinkronisasi sebelumnya (SagaBook S227 UAT output isolation)
 
 - `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
 - `products/sagabook/PRODUCT.md`

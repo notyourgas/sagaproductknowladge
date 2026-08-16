@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-16 - SagaBook authenticated UAT output revalidation S228
+
+- Runner UAT kini mengulang resolve parent setelah browser ditutup dan memakai
+  path kanonik sampai publikasi, read-back, serta cleanup selesai.
+- Source exact `a18973dd097529b1a2af57b769ddad695135607f` sudah dipush dan
+  lulus focused 26/26, evidence 13/13, backend 1.045/1.045, build, syntax,
+  serta audit dependency pada exact commit.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; actual UAT belum
+  berjalan dan production SagaBook tetap S208.
+
 ## 2026-08-16 - SagaBook authenticated UAT output isolation S227
 
 - Runner UAT kini menolak output evidence di dalam repository, termasuk alias

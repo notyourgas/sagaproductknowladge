@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-16 - SagaBook S228 UAT output revalidation sync
+
+- Informasi `CONFIRMED` dari exact source
+  `a18973dd097529b1a2af57b769ddad695135607f` dan gate exact-commit.
+- Runner kini me-resolve ulang destination sesudah browser cleanup dan memakai
+  path kanonik sampai read-after-write serta cleanup selesai.
+- Delivery `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; actual UAT
+  belum dilakukan dan production tetap S208.
+- Dokumen terdampak: SagaBook product/changelog/coverage, portfolio, root
+  changelog, dan sync status.
+
 ## 2026-08-16 - SagaBook S227 UAT output isolation sync
 
 - Informasi `CONFIRMED` dari exact source

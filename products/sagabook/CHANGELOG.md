@@ -1,5 +1,19 @@
 # SagaBook Changelog
 
+## 2026-08-16 - Authenticated UAT output revalidation S228
+
+- Informasi `CONFIRMED` dari exact source
+  `a18973dd097529b1a2af57b769ddad695135607f`; branch source sudah dipush.
+- Before: parent output hanya di-resolve pada validasi awal sebelum browser
+  berjalan. After: parent di-resolve ulang setelah browser ditutup dan seluruh
+  publikasi memakai path kanonik, sehingga pergantian symlink/junction tidak
+  dapat mengarahkan evidence ke repository.
+- Red-green 25/26 menjadi focused 26/26, kontrak evidence 13/13, full backend
+  1.045/1.045 (11.868 assertion), build 5.116 modul, syntax,
+  npm/Composer/OSV, dan diff check lulus pada exact commit.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Actual
+  credential/UAT tidak dijalankan dan production tetap S208.
+
 ## 2026-08-16 - Authenticated UAT output isolation S227
 
 - Informasi `CONFIRMED` dari exact source
