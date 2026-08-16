@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-16 - SagaBook S227 UAT output isolation sync
+
+- Informasi `CONFIRMED` dari exact source
+  `48b9e74d82eec2f6419c79cc4d9d590c956c8797` dan gate lokal terisolasi.
+- Runner kini menormalisasi parent output dan menolak destination di dalam
+  repository, termasuk alias symlink/junction, sebelum akses credential.
+- Delivery `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; actual UAT
+  belum dilakukan dan production tetap S208.
+- Dokumen terdampak: SagaBook product/changelog/coverage, portfolio, root
+  changelog, dan sync status.
+
 ## 2026-08-16 - SagaBook S226 persisted UAT evidence sync
 
 - Informasi `CONFIRMED` dari exact source

@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-16 - SagaBook authenticated UAT output isolation S227
+
+- Runner UAT kini menolak output evidence di dalam repository, termasuk alias
+  symlink/junction, sebelum browser atau credential digunakan.
+- Source exact `48b9e74d82eec2f6419c79cc4d9d590c956c8797` sudah dipush dan
+  lulus focused 25/25, evidence 13/13, backend 1.045/1.045, build, syntax,
+  serta audit dependency.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; actual UAT belum
+  berjalan dan production SagaBook tetap S208.
+
 ## 2026-08-16 - SagaBook persisted UAT evidence read-after-write S226
 
 - Runner UAT kini memverifikasi ulang evidence yang benar-benar tersimpan;

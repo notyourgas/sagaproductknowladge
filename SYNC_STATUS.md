@@ -12,16 +12,25 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-16T12:05:00+07:00 |
-| Branch aktif | `codex/s226-sagabook-uat-evidence-readback-knowledge` pada worktree terisolasi |
+| Waktu pembaruan terakhir | 2026-08-16T13:22:00+07:00 |
+| Branch aktif | `codex/s227-sagabook-uat-output-isolation-knowledge` pada worktree terisolasi |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `3548b27431ec0bb2201c5bb9d3511be997d60840` |
-| Informasi terakhir disinkronkan | SagaBook S226 memverifikasi destination evidence dengan read-after-write dan validasi objek persisted. |
+| Baseline sebelum pembaruan | `be2733bb86c9578bd1b9900881c3bb69c7759a0a` |
+| Informasi terakhir disinkronkan | SagaBook S227 menolak output evidence di dalam repository setelah normalisasi path. |
 | Status sinkronisasi | `BRANCH_SYNCED / MAIN_MERGE_PENDING` setelah validator, push, dan remote verification. |
-| Konflik | Checkout `main` tertinggal dan memiliki commit lokal sehingga tidak disentuh; sinkronisasi dilanjutkan dari branch S225 yang sudah remote-exact. |
+| Konflik | Checkout `main` tertinggal dan memiliki commit lokal sehingga tidak disentuh; sinkronisasi dilanjutkan dari branch S226 yang sudah remote-exact. |
 | Error | Actual unlock dan authenticated Owner/operator UAT SagaBook belum dilakukan; production tetap S208. |
 
-## File yang berubah pada sinkronisasi ini (SagaBook S226 persisted evidence read-after-write)
+## File yang berubah pada sinkronisasi ini (SagaBook S227 UAT output isolation)
+
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
+
+## File yang berubah pada sinkronisasi sebelumnya (SagaBook S226 persisted evidence read-after-write)
 
 - `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
 - `products/sagabook/PRODUCT.md`
