@@ -1,5 +1,22 @@
 # SagaView Changelog
 
+## 2026-08-17 - S226 Support Hub Studio no-upload enforcement
+
+- Klasifikasi: `CONFIRMED` privacy/security correction.
+- Before: Support Hub Studio menampilkan kontrol upload screenshot dan client
+  mengizinkan operasi `upload`; konfirmasi pengguna belum cukup menjamin bahwa
+  foto, path lokal, editor, atau output customer tidak ikut terkirim.
+- After: file input dan tombol screenshot dihapus; operasi upload ditolak
+  sebelum request jaringan. Bantuan hanya menerima teks dan metadata teknis
+  allowlist, sedangkan diagnostik aman tetap lokal.
+- Evidence: 213 unit, focused 5/5, browser support 3/3, visual evidence 1/1
+  pada 390x844 dan 1440x900, Axe nol, format/lint/typecheck, build/budget, dan
+  npm audit nol.
+- Delivery: exact Studio source
+  `e0416650b95c25f2a2486efe17b15f8bf4510129` sudah `PUSHED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production, backend, database,
+  SagaBook, payment, foto/path, editor, dan output customer tidak berubah.
+
 ## 2026-08-16 - S225 device transfer viewport acceptance
 
 - Klasifikasi: `CONFIRMED` QA/accessibility evidence.

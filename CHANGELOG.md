@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-17 - SagaView S226 Support Hub no-upload sync
+
+- Informasi `CONFIRMED` dari exact Studio source
+  `e0416650b95c25f2a2486efe17b15f8bf4510129` dan gate exact-commit.
+- Support Hub Studio menghapus screenshot/file input dan menolak operasi upload
+  sebelum jaringan; hanya teks, metadata teknis allowlist, dan diagnostik lokal
+  yang dipertahankan.
+- Delivery `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production,
+  backend/database, SagaBook, payment, dan data customer tidak berubah.
+- Dokumen terdampak: SagaView product/dossier/changelog/coverage,
+  portfolio/master, root changelog, dan sync status.
+
 ## 2026-08-16 - SagaView S225 device transfer viewport sync
 
 - Informasi `CONFIRMED` dari exact Studio source

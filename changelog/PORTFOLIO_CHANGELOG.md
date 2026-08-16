@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-17 - SagaView Support Hub Studio no-upload S226
+
+- Support Hub Studio tidak lagi menyediakan upload screenshot/file dan client
+  menolak operasi upload sebelum request jaringan.
+- Exact source `e0416650b95c25f2a2486efe17b15f8bf4510129` lulus 213 unit,
+  3 browser support, visual mobile/desktop, Axe, build/budget,
+  format/lint/typecheck, dan audit dependency nol.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; bantuan teks,
+  metadata allowlist, dan diagnostik lokal tetap tersedia. Production,
+  backend/database, SagaBook, payment, serta data customer tidak berubah.
+
 ## 2026-08-16 - SagaView device transfer viewport acceptance S225
 
 - Layar konflik dan transfer perangkat kini terbukti operabel pada mobile 390,

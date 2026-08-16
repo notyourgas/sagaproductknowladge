@@ -1,5 +1,17 @@
 # SagaView Dossier
 
+## S226 Support Hub Studio no-upload enforcement
+
+Studio source `e0416650b95c25f2a2486efe17b15f8bf4510129` menghapus kontrol
+screenshot/file dari Support Hub dan mencabut operasi `upload` dari allowlist
+client. Permintaan upload kini ditolak lokal sebelum `fetch`; bantuan online
+hanya menerima teks dan metadata teknis yang sudah disaring. Diagnostik aman
+tetap dibuat dan diunduh secara lokal. Full 213 unit, focused 5 unit/contract,
+3 browser support, visual 390x844 dan 1440x900, Axe nol, build/budget,
+format/lint/typecheck, serta audit dependency nol lulus. Status `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production, backend/database,
+payment, SagaBook, dan data customer tidak berubah.
+
 ## S225 device transfer viewport acceptance
 
 Studio source `36db9a452530cf09f68edfa932bf023bd0362286` menambah acceptance

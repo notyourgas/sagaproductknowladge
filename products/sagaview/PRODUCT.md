@@ -2,6 +2,17 @@
 
 Updated: 16 Agustus 2026
 
+S226 menutup celah no-upload pada Support Hub Studio. Sebelumnya client masih
+menampilkan tombol screenshot dan mengizinkan operasi `upload`, walau
+screenshot dapat memuat foto, path lokal, editor, atau output customer. Exact
+Studio source `e0416650b95c25f2a2486efe17b15f8bf4510129` menghapus file
+input/tombol tersebut dan menolak operasi upload sebelum request jaringan.
+Bantuan tetap menerima teks dan metadata teknis allowlist; diagnostik aman
+tetap dibuat lokal. Gate lulus 213 unit, 3 browser support, 1 visual evidence
+mobile/desktop, Axe, format/lint/typecheck, build/budget, dan audit dependency
+nol. Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+production, backend/database, payment, foto/path, dan SagaBook tidak berubah.
+
 S225 menutup matriks layar konflik dan pemindahan perangkat tanpa mengubah
 runtime. Exact Studio source `36db9a452530cf09f68edfa932bf023bd0362286`
 membuktikan aksi transfer tetap terlihat, dapat difokuskan keyboard, minimal
