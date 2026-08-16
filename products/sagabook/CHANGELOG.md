@@ -1,5 +1,18 @@
 # SagaBook Changelog
 
+## 2026-08-16 - Authenticated UAT evidence after cleanup S224
+
+- Informasi `CONFIRMED` dari exact source
+  `f315015e177567f7103504dd88c28da038c411f0`; branch source sudah dipush.
+- Before: evidence ditulis sebelum `browser.close()` selesai, sehingga cleanup
+  gagal dapat meninggalkan file walau run berstatus gagal. After: browser
+  ditutup di finalizer sebelum create-only evidence write dijalankan.
+- Focused tooling 22/22, kontrak evidence 13/13, full backend 1.045/1.045
+  (11.868 assertion), build 5.116 modul, syntax, npm/Composer/OSV, dan diff
+  check lulus.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Actual
+  credential/UAT tidak dijalankan dan production tetap S208.
+
 ## 2026-08-16 - Authenticated UAT Playwright load boundary S223
 
 - Informasi `CONFIRMED` dari exact source

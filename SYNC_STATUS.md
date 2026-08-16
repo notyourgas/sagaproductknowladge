@@ -12,16 +12,25 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-16T08:31:00+07:00 |
-| Branch aktif | `codex/s223-sagabook-uat-playwright-load-boundary-knowledge` pada worktree terisolasi |
+| Waktu pembaruan terakhir | 2026-08-16T09:11:00+07:00 |
+| Branch aktif | `codex/s224-sagabook-uat-evidence-after-cleanup-knowledge` pada worktree terisolasi |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `529e45b711114e4195809a6331fcec12e8ed042e` |
-| Informasi terakhir disinkronkan | SagaBook S223 memuat Playwright setelah batas kegagalan CLI aktif agar error module-load ikut disanitasi. |
+| Baseline sebelum pembaruan | `c3ca403133d8eb62f0aeaa831027bcb5ee75896f` |
+| Informasi terakhir disinkronkan | SagaBook S224 menulis evidence UAT hanya setelah browser cleanup selesai. |
 | Status sinkronisasi | `BRANCH_SYNCED / MAIN_MERGE_PENDING` setelah validator, push, dan remote verification. |
-| Konflik | Checkout `main` tertinggal dan memiliki commit lokal sehingga tidak disentuh; sinkronisasi dilanjutkan dari branch S222 yang sudah remote-exact. |
+| Konflik | Checkout `main` tertinggal dan memiliki commit lokal sehingga tidak disentuh; sinkronisasi dilanjutkan dari branch S223 yang sudah remote-exact. |
 | Error | Actual unlock dan authenticated Owner/operator UAT SagaBook belum dilakukan; production tetap S208. |
 
-## File yang berubah pada sinkronisasi ini (SagaBook S223 Playwright load boundary)
+## File yang berubah pada sinkronisasi ini (SagaBook S224 evidence after cleanup)
+
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
+
+## File yang berubah pada sinkronisasi sebelumnya (SagaBook S223 Playwright load boundary)
 
 - `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
 - `products/sagabook/PRODUCT.md`

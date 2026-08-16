@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-16 - SagaBook UAT evidence after cleanup S224
+
+- Evidence UAT sekarang baru dibuat setelah browser selesai ditutup; cleanup
+  gagal tidak meninggalkan file yang dapat dianggap final.
+- Source exact `f315015e177567f7103504dd88c28da038c411f0` sudah dipush dan
+  lulus focused 22/22, evidence 13/13, backend 1.045/1.045, build, syntax,
+  serta audit dependency.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; actual UAT belum
+  berjalan dan production SagaBook tetap S208.
+
 ## 2026-08-16 - SagaBook Playwright UAT load boundary S223
 
 - Playwright kini dimuat setelah pengaman CLI aktif agar kegagalan module-load
