@@ -12,14 +12,26 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-17T02:07:24+07:00 |
-| Branch aktif | `codex/s228-sagaview-paired-immutable-artifacts` pada worktree terisolasi exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-17T03:17:24+07:00 |
+| Branch aktif | `codex/s229-sagaview-restore-rehearsal-blocker` pada worktree terisolasi exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `9efbb9c7cdd1c522dbea6410d112bbc36d477cf0` |
-| Informasi terakhir disinkronkan | SagaView S228 paired immutable no-upload candidate untuk Studio S226 dan backend S227. |
+| Baseline sebelum pembaruan | `330517c6da85e09f7cbbf4ab141205ed870590da` |
+| Informasi terakhir disinkronkan | SagaView S229 disposable restore rehearsal partial dan blocker runtime dependency. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
 | Konflik | Checkout knowledge lain tidak disentuh; sinkronisasi dilakukan dari worktree terisolasi exact `origin/main`. |
-| Error | Tidak ada error knowledge; production tidak diubah. |
+| Error | Runtime gate hasil restore belum lengkap; production tidak diubah. |
+
+## File yang berubah pada sinkronisasi ini (SagaView S229 restore rehearsal blocker)
+
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/DOSSIER.md`
+- `products/sagaview/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaView S228 paired immutable candidate)
 

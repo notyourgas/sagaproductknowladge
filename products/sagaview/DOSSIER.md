@@ -1,5 +1,29 @@
 # SagaView Dossier
 
+## S229 disposable restore rehearsal blocker
+
+Restore dijalankan dari salinan media terpisah S228 tanpa menyentuh production
+atau data customer. Dua archive lulus scan path traversal dan dapat diekstrak;
+359/359 file Studio cocok byte-for-byte dengan worktree exact bersih, sedangkan
+2.211 file runtime backend cocok dan dua workflow CI memang dikecualikan oleh
+`/.github export-ignore`. Marker commit/manifest Studio cocok dengan commit
+`e0416650b95c25f2a2486efe17b15f8bf4510129` dan tree
+`4bbeba9787149278cd799ae01d8d65fedcfc9986`. Dua bundle dipulihkan ke bare
+repository disposable; backend kembali ke
+`a648c180310e197934ac84eed8519e51ae90f0eb` / tree
+`e08644bf67112018bbacfd15ebc56c59dab03477`, dan keduanya lulus full fsck.
+
+Rehearsal berhenti setelah dua correction round. Pertama, `.gitattributes`
+memang mengekspor `.cmd` sebagai CRLF sehingga acceptance diperbaiki dari raw
+blob parity menjadi filesystem parity terhadap worktree exact. Kedua, exFAT
+tidak mencatat ownership sehingga bundle recovery memakai `safe.directory`
+command-local tanpa mengubah konfigurasi global. Gate runtime Studio berikutnya
+gagal start karena hasil ekstraksi tidak membawa dependency `vitest`; tidak ada
+install improvisasi pada media exFAT. Status `RESTORE_REHEARSAL_PARTIAL /
+BLOCKED_RUNTIME_DEPENDENCY / IMPLEMENTED_NOT_DEPLOYED`. Penyelesaian memerlukan
+clean install lockfile-exact pada target disposable NTFS, lalu test/build Studio
+dan backend runtime/release gate dari hasil restore.
+
 ## S228 paired immutable no-upload candidate
 
 Studio S226 `e0416650b95c25f2a2486efe17b15f8bf4510129` dan backend S227

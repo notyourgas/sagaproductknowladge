@@ -2,6 +2,17 @@
 
 Updated: 17 Agustus 2026
 
+S229 menjalankan restore rehearsal disposable dari salinan terpisah S228 dan
+berhenti fail-closed sebelum runtime promotion. Scan path traversal, ekstraksi,
+filesystem parity terhadap worktree exact bersih, embedded provenance Studio,
+serta pemulihan dua git bundle ke commit/tree exact dan `git fsck --full`
+lulus. Rehearsal runtime Studio belum dapat dimulai dari hasil ekstraksi karena
+archive source tidak membawa dependency `vitest`; clean dependency install
+pada target disposable NTFS belum dijalankan. Status `RESTORE_REHEARSAL_PARTIAL
+/ BLOCKED_RUNTIME_DEPENDENCY / IMPLEMENTED_NOT_DEPLOYED`; production dan data
+customer tidak berubah. Kandidat tidak boleh dipromosikan sampai install
+lockfile-exact, test/build, serta backend runtime gate pada hasil restore hijau.
+
 S228 membungkus kandidat kumulatif no-upload sebagai pasangan immutable tanpa
 deploy: Studio S226 `e0416650b95c25f2a2486efe17b15f8bf4510129` dan backend
 S227 `a648c180310e197934ac84eed8519e51ae90f0eb`. Masing-masing memiliki source

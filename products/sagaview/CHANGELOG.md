@@ -1,5 +1,21 @@
 # SagaView Changelog
 
+## 2026-08-17 - S229 disposable restore rehearsal partial
+
+- Klasifikasi: `CONFIRMED` release-blocker evidence.
+- Before: S228 membuktikan checksum dan dua salinan artifact, tetapi belum
+  membuktikan archive serta bundle dapat dipulihkan secara disposable.
+- After: path traversal scan, extraction, filesystem parity 359 Studio dan
+  2.211 backend runtime file, embedded Studio provenance, dua bundle recovery
+  ke exact commit/tree, serta full Git fsck lulus.
+- Blocker: runtime contract Studio dari hasil restore tidak dapat start karena
+  source archive tidak membawa dependency `vitest`; clean lockfile-exact
+  install pada target disposable NTFS belum dijalankan. Backend runtime gate
+  dari hasil restore juga belum diklaim.
+- Delivery: `RESTORE_REHEARSAL_PARTIAL / BLOCKED_RUNTIME_DEPENDENCY /
+  IMPLEMENTED_NOT_DEPLOYED`; production, database, payment, SagaBook, dan data
+  customer tidak berubah. Tidak ada promotion atau notifikasi completion.
+
 ## 2026-08-17 - S228 paired immutable no-upload candidate
 
 - Klasifikasi: `CONFIRMED` release/provenance evidence.

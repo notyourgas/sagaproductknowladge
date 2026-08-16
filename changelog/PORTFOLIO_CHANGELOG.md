@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-17 - SagaView restore rehearsal partial S229
+
+- Archive dan bundle pasangan S228 berhasil dipulihkan secara disposable;
+  path safety, filesystem parity, embedded provenance, exact commit/tree, dan
+  Git fsck lulus.
+- Runtime Studio dari hasil restore belum dapat dimulai karena dependency
+  `vitest` tidak ada di source archive; clean install lockfile-exact pada target
+  NTFS serta backend runtime gate masih wajib.
+- Status `RESTORE_REHEARSAL_PARTIAL / BLOCKED_RUNTIME_DEPENDENCY /
+  IMPLEMENTED_NOT_DEPLOYED`; production dan data customer tidak berubah.
+
 ## 2026-08-17 - SagaView paired immutable no-upload candidate S228
 
 - Studio S226 `e0416650b95c25f2a2486efe17b15f8bf4510129` dan backend S227

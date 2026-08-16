@@ -1,5 +1,15 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-17 - SagaView S229 restore rehearsal blocker sync
+
+- Informasi `CONFIRMED` dari restore disposable pasangan artifact S228.
+- Archive/bundle lulus path safety, filesystem parity, exact commit/tree, dan
+  Git fsck; runtime gate hasil restore belum lengkap.
+- Delivery `RESTORE_REHEARSAL_PARTIAL / BLOCKED_RUNTIME_DEPENDENCY /
+  IMPLEMENTED_NOT_DEPLOYED`; production dan data customer tidak berubah.
+- Dokumen terdampak: SagaView product/dossier/changelog/coverage, gaps,
+  portfolio/master, root changelog, dan sync status.
+
 ## 2026-08-17 - SagaView S228 paired immutable candidate sync
 
 - Informasi `CONFIRMED` dari exact Studio
