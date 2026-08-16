@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-17 - SagaView S227 backend Support Hub no-upload sync
+
+- Informasi `CONFIRMED` dari exact backend source
+  `a648c180310e197934ac84eed8519e51ae90f0eb` dan gate exact-worktree.
+- Route/method upload perangkat SagaView dihapus dan release gate kini
+  fail-closed bila route upload muncul kembali.
+- Delivery `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production,
+  database/migration, SagaBook, payment, dan data customer tidak berubah.
+- Dokumen terdampak: SagaView product/dossier/changelog/coverage,
+  portfolio/master, root changelog, dan sync status.
+
 ## 2026-08-17 - SagaView S226 Support Hub no-upload sync
 
 - Informasi `CONFIRMED` dari exact Studio source

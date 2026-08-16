@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-17 - SagaView backend Support Hub no-upload S227
+
+- Route dan controller upload Support Hub perangkat SagaView dihapus; POST
+  langsung gagal tanpa membuat attachment.
+- Release gate sekarang menolak kandidat bila route upload kembali aktif.
+  Exact source `a648c180310e197934ac84eed8519e51ae90f0eb` lulus full 994 test,
+  11.460 assertion, build, formatter, dan audit dependency nol.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production,
+  database, SagaBook, payment, dan data customer tidak berubah.
+
 ## 2026-08-17 - SagaView Support Hub Studio no-upload S226
 
 - Support Hub Studio tidak lagi menyediakan upload screenshot/file dan client

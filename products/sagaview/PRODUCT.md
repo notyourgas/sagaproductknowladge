@@ -2,6 +2,17 @@
 
 Updated: 16 Agustus 2026
 
+S227 menegakkan no-upload Support Hub di backend perangkat SagaView. Exact
+backend source `a648c180310e197934ac84eed8519e51ae90f0eb` menghapus route dan
+controller upload perangkat; POST langsung ke URL lama gagal 405 tanpa
+membuat attachment. Release gate kini fail-closed bila route upload muncul
+kembali, sementara bootstrap, ask, handoff, feedback, device auth, throttle,
+scope tenant server-authoritative, dan metadata allowlist tetap aktif. Gate
+lulus 6 focused/58 assertion, full 994/11.460, route contract, formatter,
+build 5.097 modul, Composer validation/audit, dan npm audit nol. Status `PUSHED
+/ LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production, database/migration,
+payment, foto/path/editor/output customer, dan SagaBook tidak berubah.
+
 S226 menutup celah no-upload pada Support Hub Studio. Sebelumnya client masih
 menampilkan tombol screenshot dan mengizinkan operasi `upload`, walau
 screenshot dapat memuat foto, path lokal, editor, atau output customer. Exact

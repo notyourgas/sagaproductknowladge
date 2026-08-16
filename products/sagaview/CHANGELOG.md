@@ -1,5 +1,22 @@
 # SagaView Changelog
 
+## 2026-08-17 - S227 backend device Support Hub no-upload
+
+- Klasifikasi: `CONFIRMED` backend privacy/security correction.
+- Before: backend masih mendaftarkan route upload perangkat SagaView,
+  controller dapat meneruskan screenshot, dan release gate mewajibkan route
+  tersebut tersedia.
+- After: route/method upload dihapus; POST langsung 405 tanpa attachment;
+  release gate fail-closed bila route upload muncul kembali. Empat endpoint
+  sah tetap memakai device guard dan throttle.
+- Evidence: focused 6/6 dengan 58 assertion, full 994/994 dengan 11.460
+  assertion, route contract, formatter, build 5.097 modul, Composer
+  validation/audit, dan npm audit nol.
+- Delivery: exact backend source
+  `a648c180310e197934ac84eed8519e51ae90f0eb` sudah `PUSHED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production, database/migration,
+  SagaBook, payment, foto/path/editor/output customer tidak berubah.
+
 ## 2026-08-17 - S226 Support Hub Studio no-upload enforcement
 
 - Klasifikasi: `CONFIRMED` privacy/security correction.

@@ -1,5 +1,18 @@
 # SagaView Dossier
 
+## S227 backend device Support Hub no-upload enforcement
+
+Backend source `a648c180310e197934ac84eed8519e51ae90f0eb` menghapus handler
+`POST /api/admin/support/device/upload` dan method controller yang sebelumnya
+dapat meneruskan screenshot. POST langsung sekarang 405 karena hanya wildcard
+OPTIONS/CORS yang tersisa dan tidak membuat attachment. Release gate juga
+menolak kandidat bila route upload SagaView muncul kembali. Focused 6/6 dengan
+58 assertion, full 994/994 dengan 11.460 assertion, route list empat endpoint
+sah, formatter, build 5.097 modul, Composer validation/audit, dan npm audit nol
+lulus. Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+production, database/migration, payment, SagaBook, dan data customer tidak
+berubah.
+
 ## S226 Support Hub Studio no-upload enforcement
 
 Studio source `e0416650b95c25f2a2486efe17b15f8bf4510129` menghapus kontrol
