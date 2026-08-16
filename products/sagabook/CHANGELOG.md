@@ -1,5 +1,19 @@
 # SagaBook Changelog
 
+## 2026-08-17 - Authenticated UAT browser executable preflight S232
+
+- Informasi `CONFIRMED` dari exact source
+  `730b074dc3414bc7f3e2ad4748e883be35e5ea1a`; branch source sudah dipush.
+- Before: preflight hanya memastikan module dan launcher Chromium tersedia.
+  After: preflight membuka serta menutup Chromium headless sebelum verifier,
+  bridge, atau akses vault dan memberi issue public-safe terpisah ketika launch
+  gagal.
+- Red-green 27/28 menjadi focused 28/28, kontrak evidence 13/13, full backend
+  1.045/1.045 (11.868 assertion), build 5.116 modul, syntax,
+  npm/Composer/OSV, dan diff check lulus pada exact commit.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Actual
+  credential/UAT tidak dijalankan dan production tetap S208.
+
 ## 2026-08-17 - Authenticated UAT Playwright runtime preflight S231
 
 - Informasi `CONFIRMED` dari exact source

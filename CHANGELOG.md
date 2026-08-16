@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-17 - SagaBook S232 UAT browser preflight sync
+
+- Informasi `CONFIRMED` dari exact source
+  `730b074dc3414bc7f3e2ad4748e883be35e5ea1a` dan gate exact-commit.
+- Invoker kini membuktikan Chromium headless dapat dibuka dan ditutup sebelum
+  verifier, bridge, atau pembacaan item vault, dengan output public-safe.
+- Delivery `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; actual UAT
+  belum dilakukan dan production tetap S208.
+- Dokumen terdampak: SagaBook product/changelog/coverage, portfolio, root
+  changelog, dan sync status.
+
 ## 2026-08-17 - SagaBook S231 UAT Playwright preflight sync
 
 - Informasi `CONFIRMED` dari exact source

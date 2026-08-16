@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-17 - SagaBook authenticated UAT browser preflight S232
+
+- Parent invoker kini membuktikan Chromium headless dapat dibuka dan ditutup
+  sebelum verifikasi release, bridge, atau akses item vault.
+- Source exact `730b074dc3414bc7f3e2ad4748e883be35e5ea1a` sudah dipush dan
+  lulus focused 28/28, evidence 13/13, backend 1.045/1.045, build, syntax,
+  serta audit dependency pada exact commit.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; actual UAT belum
+  berjalan dan production SagaBook tetap S208.
+
 ## 2026-08-17 - SagaBook authenticated UAT Playwright preflight S231
 
 - Parent invoker kini memastikan module Playwright dapat dimuat dan launcher

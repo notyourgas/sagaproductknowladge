@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 17 Agustus 2026 01:10 WIB
+Updated: 17 Agustus 2026 05:15 WIB
 Evidence status: production deployment and activation verified; business readiness pending
 
 ## Tujuan dokumen
@@ -16,6 +16,17 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
+- Candidate S232 source `730b074dc3414bc7f3e2ad4748e883be35e5ea1a`
+  sudah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Runtime
+  preflight authenticated UAT kini membuka lalu menutup Chromium headless
+  sebelum verifikasi release, bridge, atau pembacaan item vault. Module yang
+  tidak tersedia tetap menghasilkan `playwright_runtime_unavailable`, sedangkan
+  kegagalan binary/dependency browser menghasilkan
+  `playwright_browser_unavailable` tanpa detail native, credential, request,
+  atau mutation production. Focused tooling 28/28, kontrak evidence 13/13,
+  full backend 1.045/1.045 (11.868 assertion), build 5.116 modul, syntax, serta
+  audit npm/Composer/OSV lulus pada exact commit. Actual credential/UAT tidak
+  dijalankan dan production tetap S208.
 - Candidate S231 source `6768133417cb607e39ac9483fbc2bd399cc41614`
   sudah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Runtime
   preflight authenticated UAT kini juga memuat module Playwright dan memastikan
