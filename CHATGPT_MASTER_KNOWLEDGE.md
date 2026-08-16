@@ -1,8 +1,20 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 16 Agustus 2026 21:08 WIB
+Evidence cut-off: 16 Agustus 2026 23:13 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
+
+SagaView Studio S225 source `36db9a452530cf09f68edfa932bf023bd0362286`
+sudah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Acceptance layar
+konflik dan transfer perangkat kini mencakup mobile 390, enam monitor desktop
+1280-3840, serta zoom efektif 125/150/200%. CTA tetap aktif, fokus keyboard,
+minimal 44x44 px, dan seluruhnya di dalam viewport; forced-colors,
+reduced-motion, no-overflow, serta Axe nol serious/critical lulus. Gate
+exact-commit meliputi 212 unit, lima Playwright device-transfer,
+format/lint/typecheck, build/budget, dan audit dependency nol. Hanya
+test/evidence serta dokumentasi berubah; production, backend/database,
+SagaBook, payment, foto/path, dan no-upload tidak berubah. Authenticated UAT
+perangkat nyata masih residual.
 
 SagaView Studio S224 source `3a21da0c4732a483e08aea80edf2bba1caec6907`
 sudah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Session kini

@@ -2,6 +2,17 @@
 
 Updated: 16 Agustus 2026
 
+S225 menutup matriks layar konflik dan pemindahan perangkat tanpa mengubah
+runtime. Exact Studio source `36db9a452530cf09f68edfa932bf023bd0362286`
+membuktikan aksi transfer tetap terlihat, dapat difokuskan keyboard, minimal
+44 px, dan berada penuh di viewport pada mobile 390, enam monitor desktop
+1280-3840, serta zoom efektif 125/150/200%. Forced-colors, reduced-motion,
+no-overflow, dan Axe nol serious/critical juga lulus. Gate exact-commit meliputi
+212 unit, lima regresi device-transfer, format/lint/typecheck, build/budget,
+dan audit dependency nol. Status `PUSHED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; production, backend/database, foto/path,
+local-first/no-upload, payment, dan SagaBook tidak berubah.
+
 S224 menutup residual matriks Session dan memperbaiki active state navigasi
 mobile pada Windows forced-colors. Sebelumnya teks active Session hanya
 memiliki rasio kontras 1,02:1; exact source

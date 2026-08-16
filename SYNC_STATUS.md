@@ -12,14 +12,25 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-16T21:08:00+07:00 |
-| Branch aktif | `codex/s224-sagaview-session-viewport-matrix` pada worktree terisolasi exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-16T23:13:00+07:00 |
+| Branch aktif | `codex/s225-sagaview-device-transfer-viewport` pada worktree terisolasi exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `3ed6e1ab6a2f687ab7e5b9e9b14db4684cf1df40` |
-| Informasi terakhir disinkronkan | SagaView S224 Session viewport/zoom dan forced-colors lulus pada exact source `3a21da0c4732a483e08aea80edf2bba1caec6907`. |
+| Baseline sebelum pembaruan | `85da6273f356e7ededd61464f9e29120f486d958` |
+| Informasi terakhir disinkronkan | SagaView S225 device-transfer viewport matrix lulus pada exact source `36db9a452530cf09f68edfa932bf023bd0362286`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
 | Konflik | Checkout knowledge lain tidak disentuh; sinkronisasi dilakukan dari worktree terisolasi exact `origin/main`. |
 | Error | Tidak ada error knowledge; production tidak berubah. |
+
+## File yang berubah pada sinkronisasi ini (SagaView S225 device transfer viewport)
+
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/DOSSIER.md`
+- `products/sagaview/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaView S224 Session viewport and forced-colors)
 

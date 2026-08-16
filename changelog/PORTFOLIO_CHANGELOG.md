@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-16 - SagaView device transfer viewport acceptance S225
+
+- Layar konflik dan transfer perangkat kini terbukti operabel pada mobile 390,
+  enam monitor 1280-3840, serta zoom efektif 125%, 150%, dan 200%.
+- Exact source `36db9a452530cf09f68edfa932bf023bd0362286` lulus 212 unit,
+  lima browser regression, keyboard, target 44 px, forced-colors,
+  reduced-motion, Axe, no-overflow, build/budget, dan audit dependency nol.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; hanya
+  test/evidence berubah dan production, backend/database, SagaBook, payment,
+  foto/path, serta no-upload tetap sama.
+
 ## 2026-08-16 - SagaView Session viewport and forced-colors S224
 
 - Session kini terbukti operabel pada enam monitor desktop dan zoom efektif

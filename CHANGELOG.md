@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-16 - SagaView S225 device transfer viewport sync
+
+- Informasi `CONFIRMED` dari exact Studio source
+  `36db9a452530cf09f68edfa932bf023bd0362286` dan gate exact-commit.
+- Acceptance transfer perangkat mencakup mobile 390, monitor 1280-3840, zoom
+  efektif 125/150/200%, keyboard, target 44 px, forced-colors,
+  reduced-motion, Axe, dan no-overflow.
+- Delivery `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; hanya
+  test/evidence berubah dan production, backend/database, SagaBook, payment,
+  foto/path, serta no-upload tidak berubah.
+- Dokumen terdampak: SagaView product/dossier/changelog/coverage,
+  portfolio/master, root changelog, dan sync status.
+
 ## 2026-08-16 - SagaView S224 Session viewport and forced-colors sync
 
 - Informasi `CONFIRMED` dari exact Studio source

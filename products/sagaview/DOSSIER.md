@@ -1,5 +1,19 @@
 # SagaView Dossier
 
+## S225 device transfer viewport acceptance
+
+Studio source `36db9a452530cf09f68edfa932bf023bd0362286` menambah acceptance
+eksplisit untuk layar konflik dan pemindahan perangkat. CTA transfer tetap
+aktif, fokus keyboard, minimal 44x44 px, dan seluruhnya berada di viewport pada
+390x844, enam monitor 1280-3840, serta reflow efektif zoom 125/150/200%.
+Forced-colors dan reduced-motion teruji; tidak ada overflow horizontal dan Axe
+nol serious/critical pada empat anchor. Exact-commit lulus 212 unit, lima
+Playwright device-transfer berurutan, format/lint/typecheck, build/budget, dan
+audit dependency nol. Status `PUSHED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; hanya test/evidence dan dokumentasi berubah.
+Production, backend/database, foto/path, payment, SagaBook, dan no-upload tetap
+sama. Authenticated UAT pada perangkat Studio nyata masih residual.
+
 ## S224 Session viewport, zoom, and forced-colors closure
 
 Studio source `3a21da0c4732a483e08aea80edf2bba1caec6907` memperluas acceptance

@@ -1,5 +1,23 @@
 # SagaView Changelog
 
+## 2026-08-16 - S225 device transfer viewport acceptance
+
+- Klasifikasi: `CONFIRMED` QA/accessibility evidence.
+- Before: alur transfer perangkat sudah memiliki kontrak API dan empat anchor
+  desktop, tetapi belum memiliki matriks mobile, monitor besar, zoom tinggi,
+  forced-colors, dan reduced-motion yang lengkap.
+- After: CTA transfer terbukti aktif, keyboard-focusable, minimal 44x44 px,
+  seluruhnya di dalam viewport, dan tanpa overflow pada mobile 390, monitor
+  1280-3840, serta zoom efektif 125/150/200%.
+- Evidence: focused 1/1, device-transfer 5/5, Axe nol serious/critical pada
+  empat anchor, 212 unit, format/lint/typecheck, build/budget, dan npm audit
+  nol.
+- Delivery: exact Studio source
+  `36db9a452530cf09f68edfa932bf023bd0362286` sudah `PUSHED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; hanya test/evidence dan
+  dokumentasi berubah. Production, backend, database, SagaBook, payment,
+  foto/path, dan no-upload tidak berubah.
+
 ## 2026-08-16 - S224 Session viewport and forced-colors closure
 
 - Klasifikasi: `CONFIRMED` UI/accessibility and QA evidence.
