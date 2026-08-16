@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-16 - SagaBook S222 authenticated UAT error redaction sync
+
+- Informasi `CONFIRMED` dari exact source
+  `a56477b8a4ce5876745f8d9b6a00544e5a7eacb4` dan gate lokal terisolasi.
+- Error tak terduga pada runner UAT kini dipetakan ke pesan generik; hanya
+  pesan validasi operator dalam allowlist yang dapat diteruskan.
+- Delivery `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; actual UAT
+  belum dilakukan dan production tetap S208.
+- Dokumen terdampak: SagaBook product/changelog/coverage, portfolio, root
+  changelog, dan sync status.
+
 ## 2026-08-16 - SagaBook S221 authenticated UAT timeout sync
 
 - Informasi `CONFIRMED` dari exact source

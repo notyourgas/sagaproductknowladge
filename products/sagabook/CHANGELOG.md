@@ -1,5 +1,18 @@
 # SagaBook Changelog
 
+## 2026-08-16 - Authenticated UAT error redaction S222
+
+- Informasi `CONFIRMED` dari exact source
+  `a56477b8a4ce5876745f8d9b6a00544e5a7eacb4`; branch source sudah dipush.
+- Before: kegagalan tak terduga dapat meneruskan `error.message` yang memuat
+  path lokal atau detail browser/runtime. After: hanya pesan validasi operator
+  dalam allowlist eksplisit yang diteruskan; error lain menjadi pesan generik.
+- Focused tooling 20/20, kontrak evidence 13/13, full backend 1.045/1.045
+  (11.868 assertion), build 5.116 modul, syntax, npm/Composer/OSV, dan diff
+  check lulus.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Actual
+  credential/UAT tidak dijalankan dan production tetap S208.
+
 ## 2026-08-16 - Authenticated UAT process timeout S221
 
 - Informasi `CONFIRMED` dari exact source

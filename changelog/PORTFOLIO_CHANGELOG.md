@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-16 - SagaBook authenticated UAT error redaction S222
+
+- Runner UAT kini menyamarkan error tak terduga agar path lokal dan detail
+  internal tidak ikut muncul pada output operator.
+- Source exact `a56477b8a4ce5876745f8d9b6a00544e5a7eacb4` sudah dipush dan
+  lulus focused 20/20, evidence 13/13, backend 1.045/1.045, build, syntax,
+  serta audit dependency.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; actual UAT belum
+  berjalan dan production SagaBook tetap S208.
+
 ## 2026-08-16 - SagaBook authenticated UAT timeout S221
 
 - Child runner UAT kini berhenti aman setelah timeout, membunuh process tree,
