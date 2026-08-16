@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-16 - SagaBook atomic UAT evidence publication S225
+
+- Evidence UAT kini baru terlihat pada destination setelah JSON lengkap ditulis
+  dan disinkronkan; file existing tetap utuh dan temporary file dibersihkan.
+- Source exact `408c9137e33f94cba6107fd3e2db9722812a6975` sudah dipush dan
+  lulus focused 23/23, evidence 13/13, backend 1.045/1.045, build, syntax,
+  serta audit dependency.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; actual UAT belum
+  berjalan dan production SagaBook tetap S208.
+
 ## 2026-08-16 - SagaBook UAT evidence after cleanup S224
 
 - Evidence UAT sekarang baru dibuat setelah browser selesai ditutup; cleanup

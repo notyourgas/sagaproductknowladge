@@ -12,16 +12,25 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-16T09:11:00+07:00 |
-| Branch aktif | `codex/s224-sagabook-uat-evidence-after-cleanup-knowledge` pada worktree terisolasi |
+| Waktu pembaruan terakhir | 2026-08-16T10:09:00+07:00 |
+| Branch aktif | `codex/s225-sagabook-uat-atomic-evidence-knowledge` pada worktree terisolasi |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `c3ca403133d8eb62f0aeaa831027bcb5ee75896f` |
-| Informasi terakhir disinkronkan | SagaBook S224 menulis evidence UAT hanya setelah browser cleanup selesai. |
+| Baseline sebelum pembaruan | `ecc3f377e76abe14cea3303d8db3617ac825dade` |
+| Informasi terakhir disinkronkan | SagaBook S225 memublikasikan evidence UAT secara atomik dan create-only setelah write serta fsync selesai. |
 | Status sinkronisasi | `BRANCH_SYNCED / MAIN_MERGE_PENDING` setelah validator, push, dan remote verification. |
-| Konflik | Checkout `main` tertinggal dan memiliki commit lokal sehingga tidak disentuh; sinkronisasi dilanjutkan dari branch S223 yang sudah remote-exact. |
+| Konflik | Checkout `main` tertinggal dan memiliki commit lokal sehingga tidak disentuh; sinkronisasi dilanjutkan dari branch S224 yang sudah remote-exact. |
 | Error | Actual unlock dan authenticated Owner/operator UAT SagaBook belum dilakukan; production tetap S208. |
 
-## File yang berubah pada sinkronisasi ini (SagaBook S224 evidence after cleanup)
+## File yang berubah pada sinkronisasi ini (SagaBook S225 atomic evidence publication)
+
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
+
+## File yang berubah pada sinkronisasi sebelumnya (SagaBook S224 evidence after cleanup)
 
 - `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
 - `products/sagabook/PRODUCT.md`

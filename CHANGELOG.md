@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-16 - SagaBook S225 atomic UAT evidence sync
+
+- Informasi `CONFIRMED` dari exact source
+  `408c9137e33f94cba6107fd3e2db9722812a6975` dan gate lokal terisolasi.
+- Evidence runner kini menulis, menyinkronkan, lalu memublikasikan destination
+  secara atomik dan create-only agar artefak parsial tidak tampak final.
+- Delivery `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; actual UAT
+  belum dilakukan dan production tetap S208.
+- Dokumen terdampak: SagaBook product/changelog/coverage, portfolio, root
+  changelog, dan sync status.
+
 ## 2026-08-16 - SagaBook S224 UAT evidence after cleanup sync
 
 - Informasi `CONFIRMED` dari exact source

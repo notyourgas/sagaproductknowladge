@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 16 Agustus 2026 09:11 WIB
+Updated: 16 Agustus 2026 10:09 WIB
 Evidence status: production deployment and activation verified; business readiness pending
 
 ## Tujuan dokumen
@@ -16,6 +16,15 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
+- Candidate S225 source `408c9137e33f94cba6107fd3e2db9722812a6975`
+  sudah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Runner
+  authenticated UAT kini menulis JSON evidence lengkap ke file sementara satu
+  direktori, menjalankan `fsync`, lalu memublikasikannya secara atomik dan
+  create-only. File tujuan existing tidak ditimpa dan file sementara selalu
+  dibersihkan. Focused tooling 23/23, kontrak evidence 13/13, full backend
+  1.045/1.045 (11.868 assertion), build 5.116 modul, syntax, serta audit
+  npm/Composer/OSV lulus. Actual credential/UAT tidak dijalankan dan production
+  tetap S208.
 - Candidate S224 source `f315015e177567f7103504dd88c28da038c411f0`
   sudah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Runner
   authenticated UAT kini menyelesaikan `browser.close()` sebelum menulis file

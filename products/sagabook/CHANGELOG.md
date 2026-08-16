@@ -1,5 +1,19 @@
 # SagaBook Changelog
 
+## 2026-08-16 - Atomic authenticated UAT evidence publication S225
+
+- Informasi `CONFIRMED` dari exact source
+  `408c9137e33f94cba6107fd3e2db9722812a6975`; branch source sudah dipush.
+- Before: write langsung ke destination dapat meninggalkan file parsial bila
+  proses storage gagal setelah file dibuat. After: JSON lengkap ditulis dan
+  di-`fsync` pada file sementara, lalu destination dipublikasikan atomik dan
+  create-only tanpa menimpa file existing.
+- Focused tooling 23/23, kontrak evidence 13/13, full backend 1.045/1.045
+  (11.868 assertion), build 5.116 modul, syntax, npm/Composer/OSV, dan diff
+  check lulus.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Actual
+  credential/UAT tidak dijalankan dan production tetap S208.
+
 ## 2026-08-16 - Authenticated UAT evidence after cleanup S224
 
 - Informasi `CONFIRMED` dari exact source
