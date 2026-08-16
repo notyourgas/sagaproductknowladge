@@ -1,5 +1,20 @@
 # SagaView Changelog
 
+## 2026-08-16 - S224 Session viewport and forced-colors closure
+
+- Klasifikasi: `CONFIRMED` UI/accessibility and QA evidence.
+- Before: matriks Session berhenti di anchor 390/1440 dan active link Session
+  pada forced-colors mobile memiliki kontras 1,02:1.
+- After: active route memakai warna sistem yang terbaca; matriks mencakup
+  1280/1440/1512/1920/2560/3840 serta zoom efektif 125/150/200%, keyboard,
+  target 44/48 px, satu signature, Axe, dan no-overflow.
+- Evidence: exact-commit 212 unit, enam Playwright berurutan, focused
+  forced-colors 1/1, format/lint/typecheck, build/budget, dan npm audit nol.
+- Delivery: exact Studio source
+  `3a21da0c4732a483e08aea80edf2bba1caec6907` sudah `PUSHED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production, backend, database,
+  SagaBook, foto/path, dan no-upload tidak berubah.
+
 ## 2026-08-16 - S223 Changelog single-detail and zoom acceptance
 
 - Klasifikasi: `CONFIRMED` QA/accessibility evidence.

@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-16 - SagaView Session viewport and forced-colors S224
+
+- Session kini terbukti operabel pada enam monitor desktop dan zoom efektif
+  125%, 150%, serta 200%; CTA, disclosure, keyboard, target 44/48 px,
+  signature, dan no-overflow tetap terjaga.
+- Active link Session mobile yang sebelumnya hanya 1,02:1 pada forced-colors
+  kini memakai warna sistem. Exact source
+  `3a21da0c4732a483e08aea80edf2bba1caec6907` lulus 212 unit, enam browser
+  regression, Axe, build/budget, lint/typecheck, dan audit dependency.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production,
+  backend/database, SagaBook, foto/path, dan no-upload tetap sama.
+
 ## 2026-08-16 - SagaBooth milestone M1 local vertical slice
 
 - Final source `0bdee15db0e0a9a6ebff55573655fe61cdec97ba` dengan implementation

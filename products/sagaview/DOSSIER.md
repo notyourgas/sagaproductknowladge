@@ -1,5 +1,18 @@
 # SagaView Dossier
 
+## S224 Session viewport, zoom, and forced-colors closure
+
+Studio source `3a21da0c4732a483e08aea80edf2bba1caec6907` memperluas acceptance
+Session ke 1280/1440/1512/1920/2560/3840 serta viewport efektif zoom
+125/150/200%. Satu CTA kontekstual tetap fokus dan minimal 48 px, disclosure
+perangkat tetap keyboard-operable dan minimal 44 px, satu signature serta
+no-overflow terjaga. Regresi menemukan active Session pada navigasi mobile
+forced-colors hanya 1,02:1; warna sistem `Highlight`/`HighlightText` menutup
+pelanggaran WCAG 1.4.3. Exact-commit lulus 212 unit, enam Playwright berurutan,
+Axe, format/lint/typecheck, build/budget, dan audit dependency nol. Status
+`PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production, data,
+backend, dan kontrak no-upload tidak berubah.
+
 ## S223 Changelog single-detail and zoom acceptance
 
 Studio source `f0ce5f7bcce592410e4fe19f183ebcd5104e8fe9` menambah acceptance
