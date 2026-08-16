@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-16 - SagaBook persisted UAT evidence read-after-write S226
+
+- Runner UAT kini memverifikasi ulang evidence yang benar-benar tersimpan;
+  mismatch menghapus artefak baru agar tidak dapat dianggap final.
+- Source exact `c4e6ec513872152cedb3a436fa3432447d2d1b3f` sudah dipush dan
+  lulus focused 24/24, evidence 13/13, backend 1.045/1.045, build, syntax,
+  serta audit dependency.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; actual UAT belum
+  berjalan dan production SagaBook tetap S208.
+
 ## 2026-08-16 - SagaBook atomic UAT evidence publication S225
 
 - Evidence UAT kini baru terlihat pada destination setelah JSON lengkap ditulis

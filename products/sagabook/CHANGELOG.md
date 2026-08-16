@@ -1,5 +1,19 @@
 # SagaBook Changelog
 
+## 2026-08-16 - Persisted UAT evidence read-after-write S226
+
+- Informasi `CONFIRMED` dari exact source
+  `c4e6ec513872152cedb3a436fa3432447d2d1b3f`; branch source sudah dipush.
+- Before: status runner berasal dari objek di memori tanpa membaca ulang file
+  destination. After: byte persisted dibandingkan exact dan objek hasil baca
+  divalidasi; mismatch menghapus destination baru serta temporary file.
+- Focused tooling 24/24, kontrak evidence 13/13, full backend 1.045/1.045
+  (11.868 assertion), build 5.116 modul, syntax, npm/Composer/OSV, dan diff
+  check lulus. Audit OSV sempat gagal karena timeout jaringan lalu lulus tanpa
+  advisory saat koneksi pulih.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Actual
+  credential/UAT tidak dijalankan dan production tetap S208.
+
 ## 2026-08-16 - Atomic authenticated UAT evidence publication S225
 
 - Informasi `CONFIRMED` dari exact source

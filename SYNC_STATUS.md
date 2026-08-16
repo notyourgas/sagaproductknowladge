@@ -12,16 +12,25 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-16T10:09:00+07:00 |
-| Branch aktif | `codex/s225-sagabook-uat-atomic-evidence-knowledge` pada worktree terisolasi |
+| Waktu pembaruan terakhir | 2026-08-16T12:05:00+07:00 |
+| Branch aktif | `codex/s226-sagabook-uat-evidence-readback-knowledge` pada worktree terisolasi |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `ecc3f377e76abe14cea3303d8db3617ac825dade` |
-| Informasi terakhir disinkronkan | SagaBook S225 memublikasikan evidence UAT secara atomik dan create-only setelah write serta fsync selesai. |
+| Baseline sebelum pembaruan | `3548b27431ec0bb2201c5bb9d3511be997d60840` |
+| Informasi terakhir disinkronkan | SagaBook S226 memverifikasi destination evidence dengan read-after-write dan validasi objek persisted. |
 | Status sinkronisasi | `BRANCH_SYNCED / MAIN_MERGE_PENDING` setelah validator, push, dan remote verification. |
-| Konflik | Checkout `main` tertinggal dan memiliki commit lokal sehingga tidak disentuh; sinkronisasi dilanjutkan dari branch S224 yang sudah remote-exact. |
+| Konflik | Checkout `main` tertinggal dan memiliki commit lokal sehingga tidak disentuh; sinkronisasi dilanjutkan dari branch S225 yang sudah remote-exact. |
 | Error | Actual unlock dan authenticated Owner/operator UAT SagaBook belum dilakukan; production tetap S208. |
 
-## File yang berubah pada sinkronisasi ini (SagaBook S225 atomic evidence publication)
+## File yang berubah pada sinkronisasi ini (SagaBook S226 persisted evidence read-after-write)
+
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
+
+## File yang berubah pada sinkronisasi sebelumnya (SagaBook S225 atomic evidence publication)
 
 - `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
 - `products/sagabook/PRODUCT.md`
