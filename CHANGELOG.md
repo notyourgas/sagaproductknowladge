@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-17 - AOGTIVITY public event hub sync
+
+- Informasi `CONFIRMED` dari keputusan Andreas, exact source
+  `a74221c4720b0afc59cadbf3f115e4934c4745e1`, immutable Hostinger release,
+  Vercel production, dan 21 production-domain acceptance.
+- Pendaftaran/participant login ditutup dan diganti public event hub; kontrak
+  direktori tim dibatasi ke nama/tim setelah roster dipublikasi.
+- Delivery `PRODUCTION_DEPLOYED`; public hub `PRODUCTION_ACTIVATED`;
+  registration/player login `DEPRECATED / CLOSED`; tidak ada migration atau
+  mutasi data peserta/tim.
+- Dokumen terdampak: AOGTIVITY product/dossier/changelog, portfolio/master,
+  decision/gaps, root changelog, dan sync status.
+
 ## 2026-08-17 - SagaView S227 backend Support Hub no-upload sync
 
 - Informasi `CONFIRMED` dari exact backend source

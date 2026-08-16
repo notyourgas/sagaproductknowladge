@@ -12,14 +12,26 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-17T01:36:00+07:00 |
-| Branch aktif | `codex/s227-sagaview-backend-support-no-upload` pada worktree terisolasi exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-17T02:01:09+07:00 |
+| Branch aktif | `codex/aogtivity-public-hub-sync` pada worktree terisolasi exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `d343e2c3750d6baadb2b6fa1daa5a5920138fde8` |
-| Informasi terakhir disinkronkan | SagaView S227 backend Support Hub device no-upload lulus pada exact source `a648c180310e197934ac84eed8519e51ae90f0eb`. |
+| Baseline sebelum pembaruan | `4dce7c686c35c95ff7c89c5a24f011c5f8d6d2bb` |
+| Informasi terakhir disinkronkan | AOGTIVITY public event hub tanpa registration/participant login aktif pada exact source `a74221c4720b0afc59cadbf3f115e4934c4745e1`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
 | Konflik | Checkout knowledge lain tidak disentuh; sinkronisasi dilakukan dari worktree terisolasi exact `origin/main`. |
-| Error | Tidak ada error knowledge; production tidak berubah. |
+| Error | Tidak ada error knowledge; perubahan production sudah diverifikasi melalui 21 browser acceptance. |
+
+## File yang berubah pada sinkronisasi ini (AOGTIVITY public event hub)
+
+- `products/aogticvity/PRODUCT.md`
+- `products/aogticvity/DOSSIER.md`
+- `products/aogticvity/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `DECISIONS.md`
+- `GAPS.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaView S227 backend Support Hub no-upload)
 

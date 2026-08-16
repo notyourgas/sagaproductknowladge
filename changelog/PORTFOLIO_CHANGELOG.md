@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-17 - AOGTIVITY public event hub production
+
+- `CONFIRMED` melalui `DEC-081`: pendaftaran dan participant login ditutup;
+  website publik membuka agenda, delapan tim, lomba, standing, pengumuman, dan
+  info tanpa akun peserta.
+- Direktori tim fail-closed saat Draft dan hanya mempublikasikan nama/tim saat
+  Published/Locked. Admin/operator/leader tetap terlindungi auth; route player
+  lama mengalihkan permanen ke public hub.
+- Source `a74221c4720b0afc59cadbf3f115e4934c4745e1`, Hostinger
+  `20260816T185201Z`, dan Vercel `dpl_F2nGXwrWRSNerhKybbWUUikwz94G` aktif;
+  local/remote/production gate lulus tanpa migration atau mutasi data peserta.
+- Public hub `PRODUCTION_ACTIVATED`; registration/player login
+  `DEPRECATED / CLOSED`; operations UAT dan business readiness tetap residual.
+
 ## 2026-08-17 - SagaView backend Support Hub no-upload S227
 
 - Route dan controller upload Support Hub perangkat SagaView dihapus; POST

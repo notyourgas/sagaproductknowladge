@@ -7,9 +7,10 @@ content AOGTIVITY tetap jelas.
 
 ## Konteks dan status bukti
 
-- Updated: 14 Agustus 2026
+- Updated: 17 Agustus 2026
 - Delivery: `PRODUCTION_DEPLOYED`
-- Activation: `PRODUCTION_ACTIVATED`
+- Public event hub: `PRODUCTION_ACTIVATED`
+- Public registration dan participant login: `DEPRECATED / CLOSED`
 - Business readiness: `BLOCKED`
 - Taxonomy VOLTAGE: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
 
@@ -22,8 +23,10 @@ kompatibilitas.
 
 ## Masalah yang diselesaikan
 
-Registrasi, roster, check-in, jadwal, scoring, standing, announcement, dan
-projection sering tersebar dan rawan koreksi tanpa audit.
+Informasi peserta, roster, check-in, jadwal, scoring, standing, announcement,
+dan projection sering tersebar dan rawan koreksi tanpa audit. Setelah
+pendaftaran ditutup, peserta membutuhkan satu sumber informasi tanpa hambatan
+akun.
 
 ## Target pengguna
 
@@ -31,7 +34,7 @@ Peserta, leader tim, admin event, operator check-in/scoring, dan penonton.
 
 ## Persona pengguna
 
-- Peserta: melihat tim/jadwal/status.
+- Peserta: melihat agenda, tim, lomba, standing, dan pengumuman tanpa login.
 - Leader: mengelola roster dan koordinasi.
 - Operator: check-in/scoring cepat dengan fallback.
 - Admin: publish/correct/audit.
@@ -48,13 +51,14 @@ dan offline fallback.
 
 ## Fitur utama
 
-Public/player/leader/admin/live surfaces; master recap 8 tim/10 lomba; serta
+Public/leader/admin/live surfaces; master recap 8 tim/10 lomba; serta
 backend identity, access directory, check-in, roster, session/security,
 event-master, result operations, announcement persistence, dan Day-H readiness
 vertical slices.
-Workspace peserta menampilkan onboarding status, `Lomba Saya`, tim, agenda,
-dan feed assignment dari server. Snapshot memakai revision/ETag, polling 12
-detik, serta recovery saat focus, visibility, dan koneksi kembali aktif.
+Public event hub menampilkan agenda transparan, pembagian delapan tim, katalog
+lomba/detail, standing, pengumuman, dan info tanpa akun peserta. Workspace
+peserta lama, permanent access, dan magic-link tetap dipertahankan sebagai
+provenance/rollback tetapi tidak lagi menjadi entry point publik.
 Public Vercel delivery memakai `Pixel Matchday Arcade`: hierarchy quest/HUD,
 stepped geometry, hard shadow, physical button state, animated navigation,
 modal/state motion, dan reduced-motion fallback. Plus Jakarta Sans tetap satu-
@@ -65,6 +69,16 @@ baris layout khusus untuk topbar dan bottom navigation. Hanya main content
 yang scroll sehingga navigasi tidak menutup field, tombol, timeline, atau
 kartu. Enam route publik lulus visual regression 47/47 pada empat viewport,
 collision/clearance assertions, touch target, reduced motion, dan axe WCAG.
+
+`DEC-081` menutup registration dan participant login. `/register` serta
+`/register/guest` hanya menampilkan status penutupan; POST registration
+fail-closed dengan `410`. `/app` dan subdomain player mengalihkan permanen ke
+route publik setara. Direktori tim hanya aktif setelah roster
+`Published/Locked` dan hanya membawa nama serta team membership; nomor kontak,
+internal ID, kategori komunitas, attendance, dan version tidak dipublikasikan.
+Runtime source `a74221c4720b0afc59cadbf3f115e4934c4745e1`, Hostinger
+`20260816T185201Z`, dan Vercel `dpl_F2nGXwrWRSNerhKybbWUUikwz94G` sudah
+production-activated. Tidak ada migration atau mutasi peserta/tim.
 
 Visual source awal `9543450696760666b9ec50a19f918c3381c5d9cf` mengubah
 hierarchy landing agar AOGTIVITY menjadi nama acara utama, 17 Agustus 2026
@@ -134,17 +148,19 @@ tie-break dikonfirmasi. Migration 022 mengarsipkan roster/hasil lama sebelum
 rekonsiliasi dan menyediakan rollback. Legacy URL tetap membuka detail lomba
 pengganti; total rundown provisional tetap 275 menit.
 
-Peserta dari luar komunitas memakai jalur VIP di `/register/guest`. Data minimum
+`DEPRECATED`: peserta dari luar komunitas sebelumnya memakai jalur VIP di
+`/register/guest`. Data minimum
 adalah nama, nomor WhatsApp, status sudah/belum memiliki CG, dan consent; role
 maupun tim tidak dipilih public. Admin menyetujui VIP tanpa tim; identity player,
 WhatsApp outbox, dan audit tetap atomik. VIP kemudian ikut generator tim
 seimbang bersama peserta komunitas dan dapat dipindahkan manual saat Draft.
 Nilai storage legacy `Guest` dipertahankan untuk rollback. UI publik
 guest lulus matriks 320–1440 px, WCAG axe, no-overflow, serta total 58
-Playwright checks. Full VIP-to-valid-session dan two-device team sync UAT nyata
-masih diperlukan.
+Playwright checks. Route itu sekarang hanya menampilkan pendaftaran ditutup;
+flow historis dipertahankan untuk audit dan rollback, bukan onboarding baru.
 
-Admin mempunyai policy server-side untuk membuka/menutup link peserta dan
+`DEPRECATED` untuk peserta baru: admin mempunyai policy server-side untuk
+membuka/menutup link peserta dan
 memilih TTL 15/30/60/360/1440 menit. Off menolak penerbitan serta konsumsi link
 yang belum dipakai tanpa memutus sesi aktif. Mutation admin-only memakai
 same-origin, idempotency UUID, optimistic version, transaksi, dan audit MySQL.
@@ -202,14 +218,14 @@ Patience** dengan arti Kesabaran. Penetapan ini tidak mengubah ID
 Satu event dengan delapan tim dan sepuluh lomba, authenticated roles, MySQL
 persistence, multi-device check-in/scoring, audit, projection, dan fallback.
 Master event dan backend auth/operations sudah terhubung ke public Vercel lewat
-guarded HTTPS proxy. Auth dan public registration aktif; core operations UAT
-dan rehearsal fisik masih menahan activation keseluruhan.
+guarded HTTPS proxy. Public event hub aktif tanpa login peserta; auth hanya
+untuk panitia/role berwenang. Core operations UAT dan rehearsal fisik masih
+menahan activation keseluruhan.
 
 ## Roadmap
 
-1. Uji jalur pemain undangan nyata dari submit, pending WhatsApp, approval
-   bertim, valid-link, dan player session pada dua perangkat; lanjutkan role
-   redirect, assignment tim/operator, roster, status lomba, check-in,
+1. Lanjutkan authenticated role redirect, assignment tim/operator, roster,
+   status lomba, check-in,
    result draft/publish, live display, announcement, readiness, audit, dan
    recovery melalui public Vercel.
 2. Lakukan two-device authorization dan stale-state reconciliation UAT.
@@ -226,8 +242,8 @@ dan rehearsal fisik masih menahan activation keseluruhan.
 
 ## User journey
 
-Register → admin approve → WhatsApp access → player workspace → team/roster →
-check-in → play → result publish/correct → standing/announcement.
+Peserta membuka public hub → melihat agenda/tim/lomba/pengumuman → check-in
+oleh panitia → bermain → hasil dipublish/dikoreksi → standing publik.
 
 ## User flow
 
@@ -264,9 +280,9 @@ Operational app untuk matchday komunitas, bukan sekadar landing event.
 
 ## FAQ
 
-**Apakah domain sudah live?** Ya. Public, admin, player, leader, serta `www`
-aktif melalui Vercel dengan DNS Hostinger dan HTTPS tervalidasi. Human UAT
-login/WhatsApp serta operations readiness tetap terpisah.
+**Apakah domain sudah live?** Ya. Public, admin, leader, serta `www` aktif
+melalui Vercel dengan DNS Hostinger dan HTTPS tervalidasi. Subdomain player
+lama mengalihkan permanen ke public hub. Human UAT operations tetap terpisah.
 **Apakah notification aktif?** Sebagian. Runtime Fonnte, migration 009–010,
 dan satu pengiriman kanal UAT sudah aktif. Provider status webhook serta flow
 approval → valid magic-link → session → reuse/revoke belum lulus UAT. Origin
@@ -275,12 +291,9 @@ terverifikasi, tetapi login WhatsApp penuh belum production-ready.
 **Apakah auth sudah nyata?** Ya, real credential login, MySQL identity,
 database session, dan admin password claim sudah terverifikasi melalui public
 Vercel.
-**Apakah pendaftaran sudah nyata?** Ya. Submit publik, receipt, persistence
-MySQL, admin list/approve, idempotent replay, dan audit sudah lulus UAT.
-Jalur VIP dan access policy sudah production-deployed tetapi belum
-production-activated sampai registrasi VIP nyata, approval tanpa tim,
-open/close link, retensi sesi aktif, generator tim, WhatsApp link, dan session
-player dua perangkat lulus UAT.
+**Apakah pendaftaran masih dibuka?** Tidak. Pendaftaran ditutup; halaman
+registration hanya memberi informasi penutupan dan POST ditolak `410`.
+Persistence/audit historis dipertahankan tanpa membuka onboarding baru.
 **Apakah MFA wajib?** Tidak. MFA admin opsional; kontrol password, session,
 rate limit, RBAC, revoke, dan audit tetap wajib.
 **Apakah bisa multi-device?** Backend contract dan test MySQL tersedia, tetapi
@@ -290,14 +303,15 @@ UAT fisik pada runtime public belum terverifikasi.
 
 Frontend mobile-first dengan lebar aplikasi maksimum 430 px, Plus Jakarta Sans,
 Feather-style icons, Motion for React, canvas-confetti terbatas, dan
-public/player/leader/admin/live surfaces. Backend Hostinger memakai Better
+public/leader/admin/live surfaces. Backend Hostinger memakai Better
 Auth dengan MySQL, HttpOnly database session, TOTP admin, role authorization,
 rate limit, account suspend/reactivate, session revocation, identity audit,
 check-in, roster assignment, competition status, event-master, serta
 server-authoritative result operations.
 Vercel menjadi public edge dan guarded HTTPS proxy ke backend; endpoint backend
 langsung 404 tanpa server-only proxy secret dan MySQL tetap loopback-only.
-Registrasi tidak lagi memakai participant fixture atau localStorage. Roster,
+Registrasi historis tidak memakai participant fixture atau localStorage dan
+submission publik sekarang fail-closed. Roster,
 status lomba, rundown, assignment operator, result draft/publish/correct, live
 display, serta announcement publish/pin/archive/restore memakai optimistic
 version, idempotency, RBAC, audit, dan MySQL.
@@ -328,13 +342,15 @@ sudah terverifikasi, tetapi status webhook dan valid-link two-device session
 UAT masih menunggu. Projection display, export/print, dan custom domain/TLS
 tersedia; rehearsal runtime penuh belum terverifikasi.
 
-Permanent participant access menjadi fallback operasional saat provider WA
-tidak tersedia. Link personal dapat dipakai ulang sampai admin mencabut atau
+`DEPRECATED` sebagai entry point publik: permanent participant access pernah
+menjadi fallback operasional saat provider WA tidak tersedia. Link personal
+dapat dipakai ulang sampai admin mencabut atau
 memutar pass; sesi browser tetap terbatas delapan jam. Token ditandatangani,
 berada pada URL fragment, tidak disimpan mentah, dan diverifikasi terhadap
 approval, role player, banned state, access policy, status, serta versi pass.
-Withdraw/revoke juga mencabut sesi aktif. Fitur sudah production-deployed;
-valid-link UAT pada perangkat nyata tetap diperlukan.
+Withdraw/revoke juga mencabut sesi aktif. Backend historis tetap tersedia
+untuk audit/rollback, tetapi public hub tidak memerlukan link atau session
+peserta.
 
 Google Sheets participant reporting memakai proyeksi satu arah dari MySQL,
 bukan database kedua. Dashboard admin dapat mengaktifkan, menonaktifkan, dan
@@ -360,7 +376,7 @@ export.
 Event-day time pressure, network failure, duplicate scoring, stale projection,
 authenticated four-role event-day UAT, stale-write/offline readiness recovery
 UAT, aktivasi/recovery provider notification,
-operations UAT, guest registration end-to-end UAT, serta durasi dan keputusan
+operations UAT, public roster privacy monitoring, serta durasi dan keputusan
 master recap yang masih provisional/open.
 
 ## KPI dan success metrics

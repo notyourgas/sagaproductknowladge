@@ -1140,3 +1140,17 @@ keputusan pengganti.
 | Pemberi keputusan | Andreas / founder |
 | Status | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; exact source `c08765f3a5ab40ff39e5741c1abfc609006ceef5`, GitHub CI dan branch protection masih memiliki blocker akun/plan |
 | Dokumen terkait | [SagaBooth Product](products/sagabooth/PRODUCT.md), [SagaBooth Dossier](products/sagabooth/DOSSIER.md), [SagaBooth Changelog](products/sagabooth/CHANGELOG.md), [Gaps](GAPS.md) |
+
+## DEC-081 - AOGTIVITY menjadi public event hub tanpa login peserta
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-17 |
+| Topik | Penutupan pendaftaran dan penyederhanaan akses informasi peserta |
+| Keputusan | Tutup pendaftaran publik, tampilkan informasi bahwa pendaftaran sudah ditutup, dan hilangkan kebutuhan login peserta. Domain utama menjadi public event hub untuk agenda transparan, pembagian delapan tim, katalog/detail lomba, standing, pengumuman, dan info. Login tetap khusus admin/operator/leader. Direktori tim publik hanya boleh memuat nama dan team membership setelah roster Published/Locked. |
+| Alasan | Daftar peserta dan pembagian tim sudah difinalkan; peserta lebih membutuhkan akses langsung ke informasi hari-H daripada onboarding dan session tambahan. |
+| Alternatif yang dipertimbangkan | Mempertahankan form dalam mode disabled; mempertahankan participant login untuk membaca informasi; membuka roster saat Draft; menghapus backend historis beserta data. |
+| Dampak | `/register` dan `/register/guest` menjadi halaman status ditutup; POST registration `410`; `/app` dan subdomain player redirect permanen ke public hub; route publik utama dapat dibuka tanpa akun. Auth panitia, MySQL source of truth, ID/relasi peserta, roster, hasil, dan audit tetap dipertahankan. Tidak ada migration atau mutasi data. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; source `a74221c4720b0afc59cadbf3f115e4934c4745e1`, Hostinger `20260816T185201Z`, Vercel `dpl_F2nGXwrWRSNerhKybbWUUikwz94G`; public registration dan participant login `DEPRECATED / CLOSED` |
+| Dokumen terkait | [AOGTIVITY Product](products/aogticvity/PRODUCT.md), [AOGTIVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTIVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |

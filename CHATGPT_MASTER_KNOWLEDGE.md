@@ -2182,23 +2182,30 @@ mengubah release, konfigurasi, provider, data bisnis, atau production runtime.
 
 ### AOGTIVITY
 
-Web app mobile-first untuk operasi event/kompetisi: registrasi, verifikasi,
-check-in, delapan tim, sepuluh lomba, roster, jadwal, hasil, standing,
-pengumuman, audit, dan live projection. Master recap 17 Agustus 2026 sudah
+Web app mobile-first untuk operasi event/kompetisi: public event hub, check-in,
+delapan tim, sepuluh lomba, roster, jadwal, hasil, standing, pengumuman, audit,
+dan live projection. Master recap 17 Agustus 2026 sudah
 dipublikasikan pada MySQL dark staging dengan durasi yang tetap provisional.
 Public Vercel memakai guarded HTTPS proxy ke Hostinger untuk identity MySQL,
 database session, forced password change, optional admin MFA, role
 authorization, user/session operations, serta server-authoritative result
 persistence dan audit. Direct BFF fail-closed dan MySQL tetap loopback-only.
-Public registration juga aktif pada MySQL dengan validation, consent,
-idempotency, rate limit, receipt, audit, dan admin verification desk; participant
-fixture serta localStorage registration telah dihapus.
+Registration historis tetap tersimpan/audited di MySQL, tetapi submission
+publik dan participant login ditutup melalui `DEC-081`. Public hub membuka
+agenda, tim, lomba, standing, pengumuman, dan info tanpa akun peserta; panel
+admin/operator/leader tetap terautentikasi.
 Nama kanonik produk berubah dari AOGTICVITY menjadi AOGTIVITY pada 6 Agustus
 2026. Runtime terbaru aktif melalui source
-`70aa749764cdeb6a5bc59b36438c23e22c3a1e66`, Hostinger
-`20260813T171101Z`, dan Vercel `dpl_EvVDPn38C6R5h56oyRNdzT8abHu6`.
+`a74221c4720b0afc59cadbf3f115e4934c4745e1`, Hostinger
+`20260816T185201Z`, dan Vercel `dpl_F2nGXwrWRSNerhKybbWUUikwz94G`.
 Domain `aogticvities.fun` serta slug infrastruktur `aogticvity` tetap dipakai
 untuk kompatibilitas; AOGTICVITY hanya nama historis.
+`DEC-081` menetapkan `/register` dan `/register/guest` sebagai halaman status
+ditutup, POST registration `410`, serta `/app`/subdomain player sebagai redirect
+permanen ke public hub. Direktori delapan tim hanya terbuka saat roster
+`Published/Locked` dan hanya memuat nama/tim; data kontak, internal ID,
+kategori komunitas, attendance, version, dan credential tidak dipublikasikan.
+Tidak ada migration atau mutasi peserta/tim pada release ini.
 Runtime ini menggabungkan visual event berdasarkan poster founder dan rundown
 owner-confirmed. Hierarchy
 utama adalah AOGTIVITY / 17 Agustus 2026 / Army of God Madiun, dengan palette
@@ -2470,14 +2477,12 @@ Delivery: `PLANNED`. Belum production-activated.
   SagaBook–SagaView tersedia.
 - Jangan sebut SagaBio atau SagaMenu production.
 - Jangan sebut COYABAG siap transaksi penuh.
-- Jangan sebut seluruh AOGTIVITY production multi-device; auth dan public
-  registration saja sudah production-activated.
-- Jangan klaim seluruh login WhatsApp AOGTIVITY production-ready. Fonnte
-  runtime dan delivery channel sudah dikonfirmasi, tetapi status webhook serta
-  magic-link/session/reuse/revoke UAT belum lulus.
-- Jangan klaim jalur VIP/access policy production-activated sebelum registrasi,
-  approval tanpa tim, open/close link, retensi sesi aktif, generator tim,
-  WhatsApp valid-link, dan sync dua perangkat lulus UAT.
+- Jangan sebut seluruh AOGTIVITY production multi-device; public event hub dan
+  auth panitia sudah production-activated, sedangkan operasi hari-H tetap
+  memerlukan UAT.
+- Jangan menawarkan login WhatsApp/participant atau jalur VIP sebagai flow
+  aktif. Keduanya `DEPRECATED / CLOSED`; histori backend hanya dipertahankan
+  untuk audit/rollback.
 - Jangan klaim Gmail sync, Google Sheets, atau PDF server-side SagaFin sebagai
   fitur aktif bila bukti terbaru belum berubah.
 - Jangan menyebut dummy/fixture/local log sebagai bukti provider.

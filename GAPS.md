@@ -816,16 +816,25 @@ ketika keputusan atau release baru menutup gap.
   folder, slug teknis, dan domain `aogticvities.fun` tetap dipertahankan untuk
   kompatibilitas dan bukan gap rebrand.
 
+- `CLOSED` melalui `DEC-081`: pendaftaran dan participant login tidak lagi
+  menjadi surface aktif. Public event hub membuka agenda, delapan tim, lomba,
+  standing, pengumuman, dan info tanpa akun; registration POST ditolak `410`.
+  Direktori tim hanya memuat nama/tim setelah roster Published/Locked. Auth
+  admin/operator/leader tetap aktif dan tidak dibuka ke publik.
+- `DEPRECATED`: UAT permanent participant access, VIP registration, dan
+  WhatsApp participant login bukan lagi blocker activation public experience.
+  Backend historis dipertahankan untuk audit/rollback; jangan dipasarkan atau
+  dipakai untuk onboarding baru.
+
 - `PARTIALLY CLOSED`: Google Sheet sudah Restricted/owner-only dan tab `WA
   Manual` menerima link permanent hanya pada baris Approved melalui koneksi
   Drive terautentikasi. Permission, alignment, formula, dan tombol WA lulus.
   Residual: worker otomatis Hostinger tetap OFF sampai credential service account
   tersedia dan initial automated reconciliation lulus.
-- `NEEDS CONFIRMATION`: permanent participant access sudah production-deployed
+- `DEPRECATED`: permanent participant access sudah production-deployed
   pada source `625efdd`, migration 030, Hostinger `20260809T230612Z`, dan Vercel
-  `dpl_4txuxGraGsfaT9BSWzWvT24uZ8wg`. UAT pemilik harus membuktikan link yang
-  sama dapat login di dua perangkat, revoke menolak link lama, dan roster pada
-  workspace participant sesuai data server.
+  `dpl_4txuxGraGsfaT9BSWzWvT24uZ8wg`. Flow tidak lagi menjadi entry point
+  peserta atau blocker public hub; backend dipertahankan untuk audit/rollback.
 
 - `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: runtime
   `c9a6702094ea36088c44040656f638d3db28da57` memuat theme poster-aligned,
@@ -853,9 +862,8 @@ ketika keputusan atau release baru menutup gap.
   player visual UAT dengan session production masih `NEEDS CONFIRMATION`.
 - Identity, role authorization, database session, optional MFA, dan guarded
   Vercel-to-Hostinger path sudah `PRODUCTION_DEPLOYED`; real login terbukti.
-- Admin password claim dan public registration MySQL sudah
-  `PRODUCTION_ACTIVATED`; dataset awal kosong dan participant demo tidak lagi
-  menjadi sumber operasional.
+- Admin password claim sudah `PRODUCTION_ACTIVATED`; public registration kini
+  `DEPRECATED / CLOSED`. Participant demo tidak menjadi sumber operasional.
 - Taxonomy pendaftaran final `TEEN`/CG teen 1-6, `SOUTH, WEST, CENTRAL`/CG
   youth 1-8, dan `Other Region`/`AOG Ponorogo`/`AOG Magetan` sudah
   `PRODUCTION_DEPLOYED` melalui migration 017 dan 024. Record taxonomy lama
@@ -868,18 +876,15 @@ ketika keputusan atau release baru menutup gap.
   status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Gap deployment taxonomy
   ditutup. UAT operator terautentikasi dan business readiness tetap mengikuti
   residual operasional AOGTIVITY yang sudah dicatat terpisah.
-- Jalur VIP `/register/guest` dan access policy migration 021 sudah
-  `PRODUCTION_DEPLOYED`. `NEEDS CONFIRMATION`: satu UAT nyata dari submit VIP,
-  pending WhatsApp, approval tanpa tim, perubahan TTL, open/close unused link,
-  retensi sesi aktif, generator tim, valid-link, session player, sampai update
-  tim/roster lintas perangkat. Nomor duplicate tetap harus ditolak; fixture
-  tidak boleh menjadi bukti provider.
+- Jalur VIP `/register/guest` dan access policy migration 021 tetap ada sebagai
+  provenance tetapi `DEPRECATED / CLOSED`; route hanya menampilkan status
+  pendaftaran ditutup dan bukan lagi flow onboarding aktif.
 - Fonnte runtime, migration 009–010, dan channel delivery UAT sudah
   `PRODUCTION_DEPLOYED`. Public-origin redirect, typed failure state, dan
   player workspace sync migration 016 juga sudah `PRODUCTION_DEPLOYED`.
   Hotfix `111e0115` menutup form POST `Origin: null` dan CTA modal mobile;
-  provider status webhook serta valid-link two-device
-  approval/session/reuse/revoke UAT masih `NEEDS CONFIRMATION`.
+  provider status webhook serta valid-link two-device adalah residual backend
+  historis, bukan blocker public hub tanpa login peserta.
 - `NEEDS CONFIRMATION`: model bisnis produk (event internal, jasa per event, atau
   SaaS).
 - `NEEDS CONFIRMATION`: authenticated four-role serta

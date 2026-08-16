@@ -1,7 +1,7 @@
 # AOGTIVITY Product Knowledge
 
-Updated: 14 Agustus 2026
-Evidence status: public Hostinger/Vercel runtime + taxonomy VOLTAGE production-activated
+Updated: 17 Agustus 2026
+Evidence status: public event hub Hostinger/Vercel production-activated
 
 ## Tujuan dokumen
 
@@ -26,7 +26,7 @@ Nama ini menggantikan **AOGTICVITY** serta penyebutan project `17an` atau
 
 ## Target pengguna
 
-- Peserta/player.
+- Peserta melalui public event hub tanpa akun.
 - Leader tim.
 - Admin event.
 - Operator check-in dan scoring.
@@ -34,7 +34,7 @@ Nama ini menggantikan **AOGTICVITY** serta penyebutan project `17an` atau
 
 ## Scope
 
-- Registrasi dan verifikasi.
+- Registrasi dan verifikasi historis; submission publik ditutup.
 - Check-in.
 - Delapan tim.
 - Sepuluh lomba dari master recap 17 Agustus 2026.
@@ -54,7 +54,7 @@ Nama ini menggantikan **AOGTICVITY** serta penyebutan project `17an` atau
 |---|---|
 | Public | `aogticvities.fun` |
 | Admin | `admin.aogticvities.fun` |
-| Player | `app.aogticvities.fun` |
+| Player lama | `app.aogticvities.fun` mengalihkan permanen ke public hub |
 | Leader | `appl.aogticvities.fun` |
 
 Domain telah dibeli dan kelima hostname, termasuk `www`, aktif melalui Vercel.
@@ -65,8 +65,8 @@ menunggu human UAT.
 Public delivery kanonik: `https://aogticvities.fun`.
 
 Rebrand AOGTIVITY pertama kali aktif pada source `e4c217b`; runtime terbaru
-adalah `f9f43e16d5fe885fbd12b4cf627bfbdd343b38e9`, Hostinger
-`20260814T053031Z`, dan Vercel `dpl_Bn3Y8p71Y3AZdK3p4iYam5aer9JF`. UI,
+adalah `a74221c4720b0afc59cadbf3f115e4934c4745e1`, Hostinger
+`20260816T185201Z`, dan Vercel `dpl_F2nGXwrWRSNerhKybbWUUikwz94G`. UI,
 metadata, PWA, aset merek, pesan
 WhatsApp baru, serta issuer TOTP baru memakai AOGTIVITY. Domain, repository,
 path deploy, environment variable, cookie/session prefix, database, service,
@@ -95,9 +95,14 @@ kompatibel.
   disimpan mentah; setiap login memeriksa approval, role, banned state, access
   policy, status, dan versi pass. Revoke/withdraw memutar versi serta mencabut
   sesi aktif. Sesi browser tetap HttpOnly/Secure dan berumur delapan jam.
-- Public registration memakai validasi server, consent version, anti-bot,
-  anonymous rate limit, idempotent receipt, transaksi MySQL, dan audit. Admin
-  dapat membaca serta memverifikasi pendaftaran dari authenticated desk.
+- `CONFIRMED` melalui `DEC-081`: public registration ditutup. `/register` dan
+  `/register/guest` hanya menampilkan informasi penutupan, sedangkan POST
+  registration mengembalikan `410`. Backend historis dipertahankan untuk
+  audit/rollback dan desk admin tetap terautentikasi.
+- Public event hub membuka agenda transparan, pembagian delapan tim, katalog
+  lomba, standing, pengumuman, dan info tanpa akun peserta. Direktori tim hanya
+  mempublikasikan nama dan tim setelah roster `Published/Locked`; field kontak,
+  internal ID, kategori komunitas, attendance, dan version tidak keluar.
 - Source release `6b4b6feca16dc2d49b909f9301227e5078dfaf60` membawa akses peserta
   passwordless ke runtime public: transactional WhatsApp outbox, provisioning
   role `player`, Better Auth magic link single-use 30 menit, hash-only token
@@ -306,10 +311,20 @@ kompatibel.
 ## Status saat ini
 
 Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:
-`NOT_PRODUCTION_ACTIVATED`; auth dan public registration:
-`PRODUCTION_ACTIVATED`. Business readiness: `BLOCKED`.
+`NOT_PRODUCTION_ACTIVATED`; public event hub dan auth panitia:
+`PRODUCTION_ACTIVATED`; public registration dan participant login:
+`DEPRECATED / CLOSED`. Business readiness: `BLOCKED`.
 
-- UI public/player/leader/admin/live aktif pada public Vercel delivery.
+- UI public/leader/admin/live aktif pada public Vercel delivery. Route dan
+  subdomain player lama mengalihkan permanen ke public hub; login tetap khusus
+  panel panitia/role berwenang.
+- `CONFIRMED` melalui `DEC-081`: runtime
+  `a74221c4720b0afc59cadbf3f115e4934c4745e1`, Hostinger
+  `20260816T185201Z`, dan Vercel `dpl_F2nGXwrWRSNerhKybbWUUikwz94G`
+  mengaktifkan public event hub tanpa login peserta. Registration POST
+  fail-closed `410`; delapan tim yang sudah dipublikasi tampil melalui kontrak
+  nama/tim saja. 150 unit, 85 UI/WCAG, 21 production-domain acceptance,
+  build, exact-SHA preflight, readiness, redirect, dan runtime error gate lulus.
 - Runtime source `c9a6702094ea36088c44040656f638d3db28da57` menerjemahkan
   poster AOGTIVITY menjadi event identity lime-navy-magenta dengan halftone,
   petir, spark, koin, handheld-console frame, serta hierarchy nama
@@ -363,9 +378,9 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation produk keseluruhan:
 - Database-backed auth aktif melalui Vercel: real credential login dan forced
   password change terverifikasi; akun admin sudah diklaim, privileged routes
   memakai server session, dan dev session tetap 404.
-- Public submit, MySQL persistence, admin list/approve, idempotent replay,
-  audit, reconciliation, dan cleanup UAT terbukti end-to-end. Dataset awal
-  production kosong dan pendaftaran dibuka eksplisit pada backend.
+- Public submission tidak lagi tersedia. Persistence, audit, dan histori
+  registration lama dipertahankan; desk admin tetap terproteksi dan tidak ada
+  migration maupun mutasi data peserta pada release public hub.
 - Hostinger BFF hanya menerima Vercel proxy secret melalui HTTPS; direct endpoint
   404 dan MySQL tetap bind pada loopback.
 - Typecheck, test, build, security, accessibility, responsive, migration, dan

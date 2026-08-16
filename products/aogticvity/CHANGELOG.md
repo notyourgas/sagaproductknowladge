@@ -8,6 +8,27 @@ Mencatat perubahan material AOGTIVITY/AOGTICVITY/17an/Olimpiade.
 
 Nama lama dipertahankan sebagai provenance; status runtime harus eksplisit.
 
+## 2026-08-17 - Public event hub tanpa login peserta
+
+- `CONFIRMED` melalui `DEC-081`: pendaftaran ditutup; `/register` dan jalur VIP
+  hanya menampilkan informasi penutupan, sedangkan POST registration
+  fail-closed `410`.
+- Website publik kini membuka agenda transparan, delapan tim, katalog/detail
+  lomba, standing, pengumuman, dan info tanpa akun peserta. Route/subdomain
+  player lama mengalihkan permanen ke public hub; admin/operator/leader tetap
+  memakai authentication dan authorization sebelumnya.
+- Direktori tim hanya aktif saat roster `Published/Locked` dan hanya
+  mempublikasikan nama serta team membership. Kontak, internal ID, kategori
+  komunitas, attendance, version, credential, dan data akses tidak keluar.
+- Source runtime `a74221c4720b0afc59cadbf3f115e4934c4745e1`, Hostinger
+  `20260816T185201Z`, dan Vercel `dpl_F2nGXwrWRSNerhKybbWUUikwz94G` aktif.
+  150 unit, 85 UI/WCAG, 21 production-domain acceptance, exact-SHA preflight,
+  build, readiness, redirect, dan runtime error gate lulus.
+- Tidak ada migration atau mutasi peserta/tim. Public event hub
+  `PRODUCTION_ACTIVATED`; public registration dan participant login
+  `DEPRECATED / CLOSED`; authenticated event-day UAT dan business readiness
+  tetap residual.
+
 ## 2026-08-14 - Taxonomy VOLTAGE production
 
 - `CONFIRMED` melalui `DEC-077`: kategori `VOLTAGE` memakai stable code
