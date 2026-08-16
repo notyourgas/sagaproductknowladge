@@ -12,14 +12,25 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-16T09:18:00+07:00 |
-| Branch aktif | `codex/knowledge-s218-recovery-clear-failure` pada worktree terisolasi exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-16T10:24:00+07:00 |
+| Branch aktif | `codex/knowledge-s219-recovery-load-failure` pada worktree terisolasi exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `c3caf4e8766ccb19e7aa1700a1b5bd7de644c2b5` |
-| Informasi terakhir disinkronkan | SagaView S218 recovery clear-failure preservation pada exact source `889baae919869f56b560c8c10a605ec38314b421`, termasuk failure preservation, double-submit guard, no-upload evidence, dan residual initial-load failure. |
+| Baseline sebelum pembaruan | `b2d15e651215e7cc2bbf0e0648d7352ce6c0eb02` |
+| Informasi terakhir disinkronkan | SagaView S219 recovery initial-load failure transparency pada exact source `25012842e9e74ba3ac6a9dee566e205446b656ea`, termasuk fail-closed import/customer flow, public-safe retry, dan residual physical Windows storage UAT. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
 | Konflik | Checkout knowledge lain tidak disentuh; sinkronisasi dilakukan dari worktree terisolasi exact `origin/main`. |
 | Error | Tidak ada error knowledge; deployment production SagaView tidak dilakukan. |
+
+## File yang berubah pada sinkronisasi ini (SagaView S219 recovery initial-load failure)
+
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/DOSSIER.md`
+- `products/sagaview/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaView S218 recovery clear-failure preservation)
 

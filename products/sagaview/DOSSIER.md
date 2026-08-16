@@ -1,5 +1,18 @@
 # SagaView Dossier
 
+## S219 recovery initial-load failure transparency
+
+Studio source `25012842e9e74ba3ac6a9dee566e205446b656ea` menutup false-empty
+state ketika IndexedDB gagal membaca checkpoint saat halaman dibuka. UI kini
+memiliki state loading, failure persisten tiga bagian, dan retry. Import folder
+serta customer flow fail-closed sampai read berhasil, mencegah checkpoint yang
+belum terbaca tertimpa sesi baru. Raw browser error tidak dirender dan foto
+tetap local-first/no-upload. Full 212 unit dan 17 browser scenario, focused
+exact-commit 10+2, responsive/a11y dua viewport, build/budget, dan audit
+dependency lulus. Status `PUSHED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; production/backend/database tidak berubah. Physical
+Windows storage failure tetap residual UAT terpisah.
+
 ## S218 recovery clear-failure preservation
 
 Studio source `889baae919869f56b560c8c10a605ec38314b421` menutup dua false-success

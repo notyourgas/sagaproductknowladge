@@ -2,6 +2,17 @@
 
 Updated: 16 Agustus 2026
 
+Studio S219 tidak lagi memperlakukan kegagalan membaca draft awal sebagai
+kondisi kosong. Panel persisten menjelaskan apa yang gagal, bahwa penyimpanan
+lokal belum diubah/dihapus dan foto tidak diunggah, serta aksi retry. Pemilihan
+folder baru dan customer flow ditahan sampai read berhasil agar checkpoint yang
+belum terbaca tidak tertimpa. Exact source
+`25012842e9e74ba3ac6a9dee566e205446b656ea` sudah `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; 212 unit, 17 browser scenario,
+focused exact-commit 10+2, responsive/a11y, no-upload, build/budget, dan audit
+dependency lulus. Production/backend/database tidak berubah. UAT kegagalan
+storage Windows nyata tetap residual terpisah.
+
 Studio S218 menjaga state pemulihan ketika penghapusan checkpoint lokal gagal.
 `Buang Draft` dan `Reset Session` sekarang menunggu commit penghapusan sebelum
 menutup draft atau mereset sesi; failure mempertahankan pekerjaan di layar,

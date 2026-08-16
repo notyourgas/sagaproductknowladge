@@ -1,5 +1,22 @@
 # SagaView Changelog
 
+## 2026-08-16 - S219 recovery initial-load failure transparency
+
+- Klasifikasi: `CONFIRMED` recovery integrity and operator-safety fix.
+- Before: initial IndexedDB read failure ditelan sebagai `null`, sehingga UI
+  terlihat tidak memiliki draft dan operator dapat memulai import baru.
+- After: failure tampil persisten, menahan import/customer flow, menyanitasi
+  detail browser, dan menyediakan retry sampai read berhasil.
+- Data boundary: penyimpanan tidak diubah/dihapus pada failure; foto/path tetap
+  lokal dan no-upload regression lulus.
+- Evidence: 212 unit, 17 Playwright sequential, focused exact-commit 10 unit +
+  2 browser, Axe tanpa serious/critical pada failure mobile, 1440x900 dan
+  390x844 tanpa overflow, build/budget, lint/typecheck, dan `npm audit` nol.
+- Delivery: exact Studio source `25012842e9e74ba3ac6a9dee566e205446b656ea`
+  sudah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production,
+  backend, database, SagaBook, dan produk lain tidak berubah. Physical Windows
+  storage/disk-pressure UAT tetap residual terpisah.
+
 ## 2026-08-16 - S218 recovery clear-failure preservation
 
 - Klasifikasi: `CONFIRMED` recovery integrity and operator-safety fix.

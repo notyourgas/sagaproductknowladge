@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-16 - SagaView recovery initial-load failure S219
+
+- Initial IndexedDB read failure tidak lagi disamarkan sebagai kondisi tanpa
+  draft; warning persisten menjelaskan keamanan data lokal dan langkah retry.
+- Import folder/customer flow ditahan sampai read berhasil, sehingga checkpoint
+  yang belum terbaca tidak berisiko tertimpa sesi baru.
+- Exact source `25012842e9e74ba3ac6a9dee566e205446b656ea` sudah dipush dan
+  lulus 212 unit, 17 browser scenario, responsive/a11y, build, privacy, bundle
+  budget, serta dependency audit.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah
+  dan physical Windows storage UAT tetap residual.
+
 ## 2026-08-16 - SagaView recovery clear-failure preservation S218
 
 - Buang Draft dan Reset Session kini menunggu penghapusan checkpoint lokal;
