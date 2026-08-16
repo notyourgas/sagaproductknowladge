@@ -5,7 +5,7 @@
 - SagaBooth ditetapkan sebagai software instant photobooth mandiri dengan
   runtime Windows offline-first dan control plane web, terpisah dari SagaBook
   serta SagaView.
-- Exact source `c08765f25840b968524f305dfe32c6e18d8df02b` memuat contracts,
+- Exact source `c08765f3a5ab40ff39e5741c1abfc609006ceef5` memuat contracts,
   guarded state machine, simulator kamera/printer/payment, ADR, governance, dan
   CI definition; 27 test serta seluruh gate lokal lulus.
 - Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; CI tertahan

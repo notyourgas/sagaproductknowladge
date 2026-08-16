@@ -3,7 +3,7 @@
 ## 2026-08-16 - SagaBooth milestone M0 knowledge sync
 
 - Informasi `CONFIRMED` dari keputusan Andreas dan exact source
-  `c08765f25840b968524f305dfe32c6e18d8df02b`.
+  `c08765f3a5ab40ff39e5741c1abfc609006ceef5`.
 - Menambahkan SagaBooth sebagai produk instant photobooth mandiri, architecture
   baseline offline-first, M0 evidence, hardware roadmap, dan readiness boundary.
 - Delivery `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production

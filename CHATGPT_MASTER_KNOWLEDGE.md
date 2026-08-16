@@ -4,7 +4,7 @@ Evidence cut-off: 16 Agustus 2026 08:39 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
-SagaBooth M0 exact source `c08765f25840b968524f305dfe32c6e18d8df02b`
+SagaBooth M0 exact source `c08765f3a5ab40ff39e5741c1abfc609006ceef5`
 sudah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Produk adalah
 instant photobooth mandiri untuk runtime Windows offline-first dan control
 plane web, berbeda dari SagaBook/SagaView. Fondasi contracts, state machine,

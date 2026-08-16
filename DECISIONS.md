@@ -1138,5 +1138,5 @@ keputusan pengganti.
 | Alternatif yang dipertimbangkan | Web-only booth; cloud-first media; memakai SagaBook/SagaView sebagai runtime booth; mendukung semua kamera sejak V1; menyimpan media sebagai blob MySQL. |
 | Dampak | M0 membakukan contracts, state machine, adapters/simulators, filesystem media, idempotency, payment verification, dan boundary aplikasi. Hardware/payment compatibility tetap tidak boleh diklaim sebelum implementation dan qualification nyata. |
 | Pemberi keputusan | Andreas / founder |
-| Status | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; exact source `c08765f25840b968524f305dfe32c6e18d8df02b`, GitHub CI dan branch protection masih memiliki blocker akun/plan |
+| Status | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; exact source `c08765f3a5ab40ff39e5741c1abfc609006ceef5`, GitHub CI dan branch protection masih memiliki blocker akun/plan |
 | Dokumen terkait | [SagaBooth Product](products/sagabooth/PRODUCT.md), [SagaBooth Dossier](products/sagabooth/DOSSIER.md), [SagaBooth Changelog](products/sagabooth/CHANGELOG.md), [Gaps](GAPS.md) |

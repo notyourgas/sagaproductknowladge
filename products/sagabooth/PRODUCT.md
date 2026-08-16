@@ -14,7 +14,7 @@ control plane web. Produk ini berbeda dari SagaBook maupun SagaView: SagaBooth
 menjalankan sesi otomatis dari konfigurasi paket, pembayaran terverifikasi,
 countdown/capture, render frame, print queue, sampai delivery hasil.
 
-Milestone M0 exact source `c08765f25840b968524f305dfe32c6e18d8df02b`
+Milestone M0 exact source `c08765f3a5ab40ff39e5741c1abfc609006ceef5`
 berstatus `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Fondasi
 monorepo, kontrak runtime, guarded session state machine, simulator kamera,
 printer, dan pembayaran, lima ADR, governance, serta CI definition tersedia.

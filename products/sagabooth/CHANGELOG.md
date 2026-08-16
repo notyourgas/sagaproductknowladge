@@ -20,7 +20,7 @@ business readiness.
   simulators, lima ADR, governance, dan GitHub CI definition.
 - Validation: format, lint, typecheck, 27 test, build, dan npm audit nol
   vulnerability lulus pada exact source
-  `c08765f25840b968524f305dfe32c6e18d8df02b`.
+  `c08765f3a5ab40ff39e5741c1abfc609006ceef5`.
 - Delivery: `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; tidak ada
   runtime app, hardware/payment integration, VPS/domain, deployment, production
   activation, atau business readiness.

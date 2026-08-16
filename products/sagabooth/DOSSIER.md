@@ -9,7 +9,7 @@ tetap terpisah dari SagaBook serta SagaView.
 
 - Updated: 16 Agustus 2026
 - Source: private repository `notyourgas/sagabooth`
-- Exact source: `c08765f25840b968524f305dfe32c6e18d8df02b`
+- Exact source: `c08765f3a5ab40ff39e5741c1abfc609006ceef5`
 - Delivery: `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`
 - Production activation: belum ada
 - Business readiness: `BLOCKED`

@@ -16,7 +16,7 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Branch aktif | `codex/sagabooth-m0-sync` pada worktree terisolasi exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | `8928f6f2d39811e37d92aba38098fbd9eab60663` |
-| Informasi terakhir disinkronkan | SagaBooth milestone M0 pada exact source `c08765f25840b968524f305dfe32c6e18d8df02b`, termasuk product boundary, architecture baseline, local validation, serta external governance blockers. |
+| Informasi terakhir disinkronkan | SagaBooth milestone M0 pada exact source `c08765f3a5ab40ff39e5741c1abfc609006ceef5`, termasuk product boundary, architecture baseline, local validation, serta external governance blockers. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
 | Konflik | Checkout knowledge lain tidak disentuh; sinkronisasi dilakukan dari worktree terisolasi exact `origin/main`. |
 | Error | SagaBooth source lulus lokal; GitHub Actions billing/spending limit dan kebutuhan GitHub Pro untuk branch protection private masih terbuka. Deployment production belum dilakukan. |
