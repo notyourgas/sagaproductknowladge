@@ -2,18 +2,18 @@
 
 Updated: 17 Agustus 2026
 
-S229 menjalankan restore rehearsal disposable dari salinan terpisah S228 dan
-berhenti fail-closed sebelum runtime promotion. Scan path traversal, ekstraksi,
-filesystem parity terhadap worktree exact bersih, embedded provenance Studio,
-serta pemulihan dua git bundle ke commit/tree exact dan `git fsck --full`
-lulus. Clean install Studio pada NTFS native berhasil dan 52 file/213 unit test
-lulus. Gate build menemukan konflik kontrak artifact: marker commit yang wajib
-untuk provenance membuat format-check gagal, sedangkan ketika marker dipisahkan
-build tidak dapat memperoleh source commit karena archive memang tidak membawa
-`.git`. Status `RESTORE_REHEARSAL_PARTIAL / BLOCKED_RELEASE_CONTRACT /
-IMPLEMENTED_NOT_DEPLOYED`; production dan data customer tidak berubah. Kandidat
-tidak boleh dipromosikan sampai kontrak marker/provenance diperbaiki lalu gate
-Studio dan backend diulang dari restore bersih.
+S229 menutup blocker restore kandidat no-upload. Studio exact
+`c132c04eb483ac3ab699d424af1ed5acf395a4b4` mengecualikan dua marker provenance
+dari formatter tanpa menghapusnya dari archive. Archive baru 383 entry memiliki
+marker commit/tree exact, lulus path-safety, clean install, format, lint,
+typecheck, 214 unit test, build/budget, serta npm audit nol langsung dari restore
+NTFS native. SHA-256 empat file artifact cocok pada dua media. Backend exact
+`a648c180310e197934ac84eed8519e51ae90f0eb` lulus archive-focused 6 test/58
+assertion, bundle exact-source 994/11.460, build 5.097 modul, route no-upload,
+Composer validation/audit, dan npm audit nol. Status
+`RESTORE_REHEARSAL_VALIDATED / RELEASE_ARTIFACT_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; production, database, SagaBook, payment, dan data
+customer tidak berubah.
 
 S228 membungkus kandidat kumulatif no-upload sebagai pasangan immutable tanpa
 deploy: Studio S226 `e0416650b95c25f2a2486efe17b15f8bf4510129` dan backend

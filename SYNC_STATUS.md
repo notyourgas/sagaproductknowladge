@@ -12,16 +12,16 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-17T05:18:00+07:00 |
-| Branch aktif | `codex/s229-sagaview-restore-contract-blocker` pada worktree terisolasi exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-17T06:26:46+07:00 |
+| Branch aktif | `codex/s229-sagaview-restore-closure` pada worktree terisolasi exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `9821668e5e8676bbe81e5e9b2239244d2940239b` |
-| Informasi terakhir disinkronkan | SagaView S229 clean-install evidence dan blocker kontrak marker provenance. |
+| Baseline sebelum pembaruan | `70937f32425e967fda14c11c9f4f80498d45f3ce` |
+| Informasi terakhir disinkronkan | SagaView S229 restore rehearsal closure dan exact artifact evidence. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
 | Konflik | Checkout knowledge lain tidak disentuh; sinkronisasi dilakukan dari worktree terisolasi exact `origin/main`. |
-| Error | Build restore fail-closed pada konflik marker provenance; production tidak diubah. |
+| Error | Tidak ada blocker restore tersisa; physical output UAT dan deploy tetap terpisah. |
 
-## File yang berubah pada sinkronisasi ini (SagaView S229 restore contract blocker)
+## File yang berubah pada sinkronisasi ini (SagaView S229 restore rehearsal closure)
 
 - `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
 - `products/sagaview/PRODUCT.md`

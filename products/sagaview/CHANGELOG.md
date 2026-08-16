@@ -1,6 +1,6 @@
 # SagaView Changelog
 
-## 2026-08-17 - S229 disposable restore rehearsal contract blocker
+## 2026-08-17 - S229 disposable restore rehearsal validated
 
 - Klasifikasi: `CONFIRMED` release-blocker evidence.
 - Before: S228 membuktikan checksum dan dua salinan artifact, tetapi belum
@@ -8,15 +8,19 @@
 - After: path traversal scan, extraction, filesystem parity 359 Studio dan
   2.211 backend runtime file, embedded Studio provenance, dua bundle recovery
   ke exact commit/tree, serta full Git fsck lulus.
-- Runtime evidence: clean install lockfile-exact pada NTFS native memasang 600
-  package; format, lint, typecheck, dan 52 file/213 unit test Studio lulus.
-- Blocker: marker commit artifact membuat format-check gagal bila tetap pada app
-  root, tetapi build memerlukan marker/provenance karena archive tidak membawa
-  `.git`. Sesuai batas koreksi, browser/audit/build budget dan backend restored
-  runtime gate tidak diklaim.
-- Delivery: `RESTORE_REHEARSAL_PARTIAL / BLOCKED_RELEASE_CONTRACT /
+- Repair: Studio `c132c04eb483ac3ab699d424af1ed5acf395a4b4` mengecualikan
+  marker commit/manifest dari formatter tetapi tetap mengunci packager dan
+  build provenance melalui tes kontrak merah-hijau.
+- Studio evidence: artifact baru 383 entry/361 file, exact marker, SHA-256
+  identik pada dua media, clean restore, 214 unit, build/budget, dan npm audit
+  nol.
+- Backend evidence: exact `a648c180310e197934ac84eed8519e51ae90f0eb`,
+  archive-focused 6/58, bundle exact-source 994/11.460, build 5.097 modul,
+  route no-upload, Composer validation/audit, dan npm audit nol.
+- Delivery: `RESTORE_REHEARSAL_VALIDATED / RELEASE_ARTIFACT_VALIDATED /
+  LOCAL_VALIDATED /
   IMPLEMENTED_NOT_DEPLOYED`; production, database, payment, SagaBook, dan data
-  customer tidak berubah. Tidak ada promotion atau notifikasi completion.
+  customer tidak berubah.
 
 ## 2026-08-17 - S228 paired immutable no-upload candidate
 

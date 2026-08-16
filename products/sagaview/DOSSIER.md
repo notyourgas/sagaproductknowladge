@@ -1,6 +1,6 @@
 # SagaView Dossier
 
-## S229 disposable restore rehearsal contract blocker
+## S229 disposable restore rehearsal validated
 
 Restore dijalankan dari salinan media terpisah S228 tanpa menyentuh production
 atau data customer. Dua archive lulus scan path traversal dan dapat diekstrak;
@@ -13,18 +13,26 @@ repository disposable; backend kembali ke
 `a648c180310e197934ac84eed8519e51ae90f0eb` / tree
 `e08644bf67112018bbacfd15ebc56c59dab03477`, dan keduanya lulus full fsck.
 
-Rehearsal lanjutan memakai target NTFS native dan clean install lockfile-exact;
-600 package Studio terpasang dan format, lint, typecheck, serta 52 file/213 unit
-test lulus. Build kemudian gagal fail-closed karena source archive tidak
-membawa `.git`: `vite.config.ts` memerlukan `git rev-parse HEAD`. Marker commit
-yang tersedia di archive tidak dapat dibiarkan pada app root karena
-format-check menganggapnya file yang harus diformat. Ini konflik kontrak
-artifact/provenance, bukan kegagalan unit produk. Sesuai batas dua correction
-round, browser, audit dependency, build budget, serta seluruh backend restored
-runtime gate tidak diklaim. Status `RESTORE_REHEARSAL_PARTIAL /
-BLOCKED_RELEASE_CONTRACT / IMPLEMENTED_NOT_DEPLOYED`. Penyelesaian memerlukan
-kontrak marker yang dikecualikan dari formatter namun dapat dibaca build, lalu
-seluruh gate restore Studio dan backend diulang dari awal.
+Kontrak marker ditutup pada Studio exact
+`c132c04eb483ac3ab699d424af1ed5acf395a4b4` / tree
+`0ff5f298264a75409ac850ca4f2ddfbb9ce8a107`: `.release-commit` dan
+`.release-manifest.json` dikecualikan dari formatter, tetap diwajibkan oleh tes
+release, dan tetap ditambahkan oleh packager. Tes kontrak merah lalu hijau;
+full source check lulus 214 test, build, dan budget. Artifact baru berisi 383
+entry/361 file, lolos path-safety, membawa exact marker, mempunyai archive,
+bundle, manifest, dan checksums dengan hash identik pada dua media. Restore
+NTFS native kemudian lulus clean install 600 package, format, lint, typecheck,
+214 unit test, build/budget, serta npm audit nol tanpa `.git`.
+
+Backend tetap exact `a648c180310e197934ac84eed8519e51ae90f0eb` / tree
+`e08644bf67112018bbacfd15ebc56c59dab03477`. Runtime archive lulus clean
+Composer install, validation/audit, focused Support Hub 6 test/58 assertion,
+route contract lima route sah tanpa upload, clean npm install, build 5.097
+modul, dan npm audit nol. Karena dua workflow CI sengaja dikecualikan archive,
+full regression dijalankan dari bundle exact-source dengan dependency lokal;
+994 test/11.460 assertion lulus. Status `RESTORE_REHEARSAL_VALIDATED /
+RELEASE_ARTIFACT_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+Production, database, SagaBook, payment, dan data customer tidak berubah.
 
 ## S228 paired immutable no-upload candidate
 

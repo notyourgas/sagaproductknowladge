@@ -1,14 +1,14 @@
 # Saga Product Knowledge Changelog
 
-## 2026-08-17 - SagaView S229 restore contract blocker sync
+## 2026-08-17 - SagaView S229 restore rehearsal closure sync
 
 - Informasi `CONFIRMED` dari restore disposable pasangan artifact S228.
-- Archive/bundle lulus path safety, filesystem parity, exact commit/tree, dan
-  Git fsck. Clean install NTFS native serta 213 unit Studio juga lulus.
-- Build mengungkap konflik marker provenance terhadap formatter dan archive
-  tanpa `.git`; runtime gate hasil restore belum lengkap.
-- Delivery `RESTORE_REHEARSAL_PARTIAL / BLOCKED_RELEASE_CONTRACT /
-  IMPLEMENTED_NOT_DEPLOYED`; production dan data customer tidak berubah.
+- Studio exact `c132c04eb483ac3ab699d424af1ed5acf395a4b4` menutup konflik
+  marker provenance; artifact dua media dan restore 214 unit/build/audit lulus.
+- Backend exact `a648c180310e197934ac84eed8519e51ae90f0eb` lulus focused
+  6/58, full 994/11.460, build, route no-upload, dan dependency audit.
+- Delivery `RESTORE_REHEARSAL_VALIDATED / RELEASE_ARTIFACT_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
 - Dokumen terdampak: SagaView product/dossier/changelog/coverage, gaps,
   portfolio/master, root changelog, dan sync status.
 

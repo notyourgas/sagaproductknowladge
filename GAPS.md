@@ -8,7 +8,7 @@ diubah menjadi klaim publik sebelum ditutup dengan bukti atau keputusan owner.
 
 ## Konteks
 
-Daftar ini berlaku pada evidence cut-off 17 Agustus 2026 05:18 WIB dan harus diperbarui
+Daftar ini berlaku pada evidence cut-off 17 Agustus 2026 06:26 WIB dan harus diperbarui
 ketika keputusan atau release baru menutup gap.
 
 ## Cara memakai
@@ -318,15 +318,14 @@ ketika keputusan atau release baru menutup gap.
 
 ### SagaView
 
-- `TODO / RELEASE BLOCKER`: S229 memulihkan archive dan bundle S228 secara
-  disposable dengan filesystem parity, exact commit/tree, dan Git fsck hijau.
-  Clean install NTFS native serta format/lint/typecheck dan 52 file/213 unit
-  test Studio juga hijau. Blocker tersisa adalah kontrak marker provenance:
-  marker gagal format-check bila berada di app root, sedangkan build tanpa
-  marker tidak dapat memperoleh source commit dari archive tanpa `.git`.
-  Perbaiki kontrak marker/build lalu ulang seluruh gate restore Studio dan
-  backend. Sampai seluruhnya hijau, status tetap `BLOCKED_RELEASE_CONTRACT /
-  IMPLEMENTED_NOT_DEPLOYED` dan deploy dilarang.
+- `CLOSED / RELEASE BLOCKER RESOLVED`: S229 exact Studio
+  `c132c04eb483ac3ab699d424af1ed5acf395a4b4` menutup konflik marker provenance.
+  Restore artifact Studio lulus 214 unit/build/audit dan backend exact
+  `a648c180310e197934ac84eed8519e51ae90f0eb` lulus focused 6/58, full
+  994/11.460, build, route no-upload, serta audit. Status
+  `RESTORE_REHEARSAL_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap tidak berubah. Gate berikutnya
+  terpisah adalah physical output UAT dan persetujuan deploy eksplisit.
 
 - `CLOSED IN PRODUCTION / AUTHENTICATED UAT RESIDUAL`: S199-S200 Support Hub
   Owner aktif melalui S201 source

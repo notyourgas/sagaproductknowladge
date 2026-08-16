@@ -1,20 +1,21 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 17 Agustus 2026 05:18 WIB
+Evidence cut-off: 17 Agustus 2026 06:26 WIB
 
 S229 disposable restore rehearsal: scan path traversal, extraction,
 filesystem parity terhadap exact clean worktree untuk 359 file Studio dan
 2.211 backend runtime file, embedded Studio provenance, dua bundle recovery ke
 exact commit/tree, serta full Git fsck lulus. Dua workflow backend tidak ada di
 archive sesuai kontrak `/.github export-ignore` dan tetap tersedia di bundle.
-Clean install lockfile-exact pada NTFS native berhasil memasang 600 package;
-format, lint, typecheck, serta 52 file/213 unit test Studio lulus. Build masih
-fail-closed karena marker commit artifact membuat format-check gagal jika tetap
-di app root, sedangkan tanpa marker build tidak dapat menjalankan
-`git rev-parse HEAD` dari archive tanpa `.git`. Browser, audit dependency,
-build budget, dan backend restored runtime gate belum diklaim. Status
-`RESTORE_REHEARSAL_PARTIAL / BLOCKED_RELEASE_CONTRACT /
-IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan promotion dilarang.
+Studio exact `c132c04eb483ac3ab699d424af1ed5acf395a4b4` menutup konflik
+marker/formatter dengan tes kontrak. Artifact baru 383 entry/361 file membawa
+exact commit/tree, lulus path-safety, SHA-256 parity dua media, clean install,
+format/lint/typecheck, 214 unit, build/budget, dan npm audit nol dari restore.
+Backend exact `a648c180310e197934ac84eed8519e51ae90f0eb` lulus
+archive-focused 6/58, bundle exact-source 994/11.460, build 5.097 modul, lima
+route Support Hub sah tanpa upload, Composer validation/audit, dan npm audit
+nol. Status `RESTORE_REHEARSAL_VALIDATED / RELEASE_ARTIFACT_VALIDATED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
 
 S228 paired immutable no-upload candidate: Studio S226
 `e0416650b95c25f2a2486efe17b15f8bf4510129` dan backend S227

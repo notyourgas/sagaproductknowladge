@@ -1,16 +1,17 @@
 # Portfolio Changelog
 
-## 2026-08-17 - SagaView restore rehearsal contract blocker S229
+## 2026-08-17 - SagaView restore rehearsal validated S229
 
 - Archive dan bundle pasangan S228 berhasil dipulihkan secara disposable;
   path safety, filesystem parity, embedded provenance, exact commit/tree, dan
   Git fsck lulus.
-- Clean install NTFS native serta format/lint/typecheck dan 52 file/213 unit
-  test Studio lulus. Build menemukan konflik marker provenance: marker gagal
-  format-check, tetapi build tanpa marker tidak dapat memperoleh source commit
-  dari archive tanpa `.git`.
-- Status `RESTORE_REHEARSAL_PARTIAL / BLOCKED_RELEASE_CONTRACT /
-  IMPLEMENTED_NOT_DEPLOYED`; production dan data customer tidak berubah.
+- Studio `c132c04eb483ac3ab699d424af1ed5acf395a4b4` menutup konflik
+  marker/formatter dan menghasilkan artifact baru dengan hash identik pada dua
+  media. Restore bersih lulus 214 unit, build/budget, dan audit dependency.
+- Backend `a648c180310e197934ac84eed8519e51ae90f0eb` lulus focused 6/58,
+  full 994/11.460, build 5.097 modul, route no-upload, dan dua audit dependency.
+- Status `RESTORE_REHEARSAL_VALIDATED / RELEASE_ARTIFACT_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
 
 ## 2026-08-17 - SagaView paired immutable no-upload candidate S228
 
