@@ -1,6 +1,17 @@
 # SagaView Product Knowledge
 
-Updated: 16 Agustus 2026
+Updated: 17 Agustus 2026
+
+S228 membungkus kandidat kumulatif no-upload sebagai pasangan immutable tanpa
+deploy: Studio S226 `e0416650b95c25f2a2486efe17b15f8bf4510129` dan backend
+S227 `a648c180310e197934ac84eed8519e51ae90f0eb`. Masing-masing memiliki source
+archive, manifest SHA-256, dan git bundle; total 10 file/199.703.531 byte
+tersimpan pada salinan utama dan media USB terpisah dengan hash identik. Dua
+bundle memuat history lengkap, dua archive terbaca tanpa metadata `.git`,
+kontrak release Studio 4/4 dan regresi backend 6/6 dengan 58 assertion lulus.
+Status `RELEASE_ARTIFACT_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan physical output UAT
+tetap menunggu fixed NTFS minimal 10 GiB serta EPSON L8050/driver.
 
 S227 menegakkan no-upload Support Hub di backend perangkat SagaView. Exact
 backend source `a648c180310e197934ac84eed8519e51ae90f0eb` menghapus route dan

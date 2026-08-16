@@ -1,5 +1,22 @@
 # SagaView Dossier
 
+## S228 paired immutable no-upload candidate
+
+Studio S226 `e0416650b95c25f2a2486efe17b15f8bf4510129` dan backend S227
+`a648c180310e197934ac84eed8519e51ae90f0eb` dipaketkan sebagai satu kandidat
+no-upload tanpa deployment. Setiap komponen memiliki archive, evidence
+manifest, SHA-256 sums, dan recovery git bundle; paired manifest mengunci exact
+commit/tree serta kontrak local-first, upload Support Hub nonaktif di client
+dan server, dan pembayaran tetap off-app. Sepuluh file berjumlah 199.703.531
+byte memiliki hash identik pada salinan utama dan USB terpisah. Bundle verify
+menunjukkan history lengkap; archive berisi 383 entry Studio dan 2.379 entry
+backend tanpa metadata `.git`. Kontrak release Studio 4/4 serta focused backend
+6/6 dengan 58 assertion lulus. Status `RELEASE_ARTIFACT_VALIDATED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production, database, payment,
+foto/path/editor/output customer, dan SagaBook tidak berubah. Media USB exFAT
+hanya menjadi backup artifact dan tidak menutup gate output fixed NTFS 10 GiB
+atau kebutuhan EPSON L8050/driver.
+
 ## S227 backend device Support Hub no-upload enforcement
 
 Backend source `a648c180310e197934ac84eed8519e51ae90f0eb` menghapus handler

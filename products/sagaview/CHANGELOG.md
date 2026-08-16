@@ -1,5 +1,22 @@
 # SagaView Changelog
 
+## 2026-08-17 - S228 paired immutable no-upload candidate
+
+- Klasifikasi: `CONFIRMED` release/provenance evidence.
+- Before: perbaikan no-upload Studio S226 dan backend S227 sudah tervalidasi
+  terpisah, tetapi belum mempunyai paket pasangan immutable dan salinan fisik
+  terpisah untuk jalur release lokal tanpa GitHub Actions.
+- After: exact Studio `e0416650b95c25f2a2486efe17b15f8bf4510129` dan backend
+  `a648c180310e197934ac84eed8519e51ae90f0eb` memiliki archive, SHA-256
+  manifest, git bundle, paired manifest, serta salinan USB dengan hash identik.
+- Evidence: 10 file/199.703.531 byte, copy hash parity, dua bundle complete
+  history, archive 383/2.379 entry tanpa `.git`, release contract Studio 4/4,
+  dan focused backend 6/6 dengan 58 assertion.
+- Delivery: `RELEASE_ARTIFACT_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production, database, payment, SagaBook, dan data
+  customer tidak berubah. Physical output UAT tetap terpisah dan blocked oleh
+  fixed NTFS 10 GiB serta EPSON L8050/driver.
+
 ## 2026-08-17 - S227 backend device Support Hub no-upload
 
 - Klasifikasi: `CONFIRMED` backend privacy/security correction.

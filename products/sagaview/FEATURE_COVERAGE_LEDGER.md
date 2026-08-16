@@ -1,6 +1,17 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 17 Agustus 2026 01:36 WIB
+Evidence cut-off: 17 Agustus 2026 02:07 WIB
+
+S228 paired immutable no-upload candidate: Studio S226
+`e0416650b95c25f2a2486efe17b15f8bf4510129` dan backend S227
+`a648c180310e197934ac84eed8519e51ae90f0eb` kini dikunci oleh archive,
+manifest SHA-256, git bundle, dan paired manifest. Sepuluh file/199.703.531
+byte memiliki hash identik pada salinan utama dan USB terpisah; dua bundle
+complete history, archive 383/2.379 entry tanpa `.git`, kontrak release Studio
+4/4, dan focused backend 6/6 dengan 58 assertion lulus. Status
+`RELEASE_ARTIFACT_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+production tidak berubah. Backup USB exFAT tidak menggantikan gate output fixed
+NTFS minimal 10 GiB serta EPSON L8050/driver.
 
 S227 backend Support Hub device no-upload: exact source
 `a648c180310e197934ac84eed8519e51ae90f0eb` menghapus route/method upload
