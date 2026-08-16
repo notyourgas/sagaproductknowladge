@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 16 Agustus 2026 08:19 WIB
+Updated: 16 Agustus 2026 08:31 WIB
 Evidence status: production deployment and activation verified; business readiness pending
 
 ## Tujuan dokumen
@@ -16,6 +16,15 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
+- Candidate S223 source `f9d1ca7ef9a08883c991369c648a61ec6a9daf0f`
+  sudah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Playwright
+  runner authenticated UAT kini dimuat dinamis setelah batas kegagalan CLI
+  aktif, sehingga kegagalan module-load ikut melewati sanitizer dan tidak
+  mencetak stack/path internal sebelum output public-safe dibuat. Focused
+  tooling 21/21, kontrak evidence 13/13, dynamic-load check, full backend
+  1.045/1.045 (11.868 assertion), build 5.116 modul, syntax, serta audit
+  npm/Composer/OSV lulus. Actual credential/UAT tidak dijalankan dan
+  production tetap S208.
 - Candidate S222 source `a56477b8a4ce5876745f8d9b6a00544e5a7eacb4`
   sudah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Runner
   authenticated UAT kini hanya meneruskan pesan error operator yang masuk
