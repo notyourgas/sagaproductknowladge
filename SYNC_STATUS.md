@@ -12,14 +12,23 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-16T21:19:00+07:00 |
-| Branch aktif | `codex/s230-sagabook-uat-runtime-preflight-knowledge` pada worktree terisolasi |
+| Waktu pembaruan terakhir | 2026-08-17T01:10:00+07:00 |
+| Branch aktif | `codex/s231-sagabook-uat-playwright-preflight-knowledge` pada worktree terisolasi |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `c21dc6a4f19a9172cca66b15512c8196dd9f2bc0` |
-| Informasi terakhir disinkronkan | SagaBook S230 memeriksa runtime UAT sebelum akses credential. |
+| Baseline sebelum pembaruan | `303d4a593890c5e1c1c244cea1ae2025deebe91b` |
+| Informasi terakhir disinkronkan | SagaBook S231 memeriksa Playwright dan launcher Chromium sebelum akses credential. |
 | Status sinkronisasi | `BRANCH_SYNCED / MAIN_MERGE_PENDING` setelah validator, push, dan remote verification. |
-| Konflik | Checkout `main` tertinggal dan memiliki commit lokal sehingga tidak disentuh; sinkronisasi dilanjutkan dari branch S229 yang sudah remote-exact. |
+| Konflik | Remote `main` dan rangkaian knowledge SagaBook telah divergen; sinkronisasi dilanjutkan dari branch S230 yang sudah remote-exact tanpa menimpa perubahan produk lain. |
 | Error | Actual unlock dan authenticated Owner/operator UAT SagaBook belum dilakukan; production tetap S208. |
+
+## File yang berubah pada sinkronisasi ini (SagaBook S231 UAT Playwright preflight)
+
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaBook S230 UAT runtime preflight)
 

@@ -1,5 +1,18 @@
 # SagaBook Changelog
 
+## 2026-08-17 - Authenticated UAT Playwright runtime preflight S231
+
+- Informasi `CONFIRMED` dari exact source
+  `6768133417cb607e39ac9483fbc2bd399cc41614`; branch source sudah dipush.
+- Before: runtime preflight hanya memeriksa Node, file runner, dan syntax.
+  After: preflight juga memuat module Playwright serta memastikan launcher
+  Chromium tersedia sebelum verifier, bridge, atau akses vault.
+- Focused 28/28, kontrak evidence 13/13, full backend 1.045/1.045 (11.868
+  assertion), build 5.116 modul, syntax, npm/Composer/OSV, dan diff check lulus
+  pada exact commit.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Actual
+  credential/UAT tidak dijalankan dan production tetap S208.
+
 ## 2026-08-16 - Authenticated UAT runtime preflight S230
 
 - Informasi `CONFIRMED` dari exact source

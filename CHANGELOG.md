@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-17 - SagaBook S231 UAT Playwright preflight sync
+
+- Informasi `CONFIRMED` dari exact source
+  `6768133417cb607e39ac9483fbc2bd399cc41614` dan gate exact-commit.
+- Invoker kini memastikan module Playwright serta launcher Chromium siap
+  sebelum verifier, bridge, atau pembacaan item vault, dengan output
+  public-safe.
+- Delivery `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; actual UAT
+  belum dilakukan dan production tetap S208.
+- Dokumen terdampak: SagaBook product/changelog/coverage, portfolio, root
+  changelog, dan sync status.
+
 ## 2026-08-16 - SagaBook S230 UAT runtime preflight sync
 
 - Informasi `CONFIRMED` dari exact source
