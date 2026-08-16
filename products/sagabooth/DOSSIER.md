@@ -9,7 +9,8 @@ tetap terpisah dari SagaBook serta SagaView.
 
 - Updated: 16 Agustus 2026
 - Source: private repository `notyourgas/sagabooth`
-- Exact source: `c08765f3a5ab40ff39e5741c1abfc609006ceef5`
+- Final source: `0bdee15db0e0a9a6ebff55573655fe61cdec97ba`
+- Implementation source: `cc09470506b58b213111b7f138b3725140f6cb90`
 - Delivery: `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`
 - Production activation: belum ada
 - Business readiness: `BLOCKED`
@@ -55,24 +56,35 @@ callback, immutable financial audit, scoped booth identity, idempotent print
 dan webhook, checksum media/config, retention policy, diagnostic redaction,
 offline recovery, dan fail-closed transition.
 
-## Bukti M0
+## Bukti M1
 
-Strict TypeScript, runtime Zod contracts, guarded state machine, deterministic
-camera/printer/payment simulators, 27 test, format/lint/typecheck/build, dan npm
-audit nol vulnerability. CI definition tersedia tetapi GitHub tidak memulai job
-karena billing/spending limit akun.
+- Electron + React operator shell memakai custom app protocol, CSP, sandbox,
+  context isolation, navigation denial, dan named validated IPC.
+- Native SQLite memakai WAL, synchronous FULL, foreign key, optimistic state
+  version, event ledger, artifacts, serta durable outbox.
+- Atomic filesystem journal dapat direkonsiliasi dari SQLite setelah entry
+  hilang; artifact yang bentrok ditolak, bukan ditimpa diam-diam.
+- Sesi paid selesai saat cloud offline, lalu outbox menjadi ACK hanya setelah
+  reconnect dan ACK terverifikasi.
+- Camera crash masuk `RECOVERY_REQUIRED`, dapat restart/resume sampai complete;
+  ambiguous print tidak melakukan auto-reprint.
+- Clean install, format, lint, typecheck, 39 test, build, Electron smoke, dan
+  dependency audit nol vulnerability lulus lokal.
+- CI definition tersedia, tetapi GitHub menghentikan job sebelum step dimulai
+  karena billing/spending limit akun.
 
 ## Risiko dan blocker
 
 - GitHub Actions billing/spending limit harus diselesaikan dan CI diulang.
 - Branch protection private repository memerlukan GitHub Pro.
-- Runtime app, database migration, hardware SDK/driver, QRIS, installer,
-  observability, deployment, dan pilot belum dibuat.
+- Customer kiosk, hardware SDK/driver, QRIS, MySQL/control plane, signed
+  installer, production observability, deployment, dan pilot belum dibuat.
 - Klaim kompatibilitas Canon/Sony/DNP belum boleh dibuat sebelum qualification
   matrix dan test perangkat nyata lulus.
 
 ## Next milestone
 
-M1 membangun vertical slice lokal dengan simulator: Electron shell, SQLite,
-filesystem session journal, durable outbox, recovery checkpoint, serta satu
-alur paid → capture → render → print/delivery → completed tanpa hardware nyata.
+M2 membangun customer-facing kiosk vertical slice: package/frame/delivery
+selection, device preflight, countdown, capture review/retake policy, dan final
+frame composition. Simulator tetap dipakai sampai qualification Canon/DNP
+memiliki test matrix dan perangkat nyata.

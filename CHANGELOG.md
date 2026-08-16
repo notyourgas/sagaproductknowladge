@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-16 - SagaBooth milestone M1 knowledge sync
+
+- Informasi `CONFIRMED` dari final source
+  `0bdee15db0e0a9a6ebff55573655fe61cdec97ba` dan implementation source
+  `cc09470506b58b213111b7f138b3725140f6cb90`.
+- M1 menambah Electron operator shell, native SQLite/journal/outbox, simulator,
+  offline completion, verified ACK, crash recovery, dan ambiguous-print guard.
+- Delivery `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+  tidak berubah dan hardware/payment/MySQL/deploy belum tersedia.
+- Dokumen terdampak: product/dossier/changelog SagaBooth, gaps,
+  portfolio/master, root changelog, dan sync status.
+
 ## 2026-08-16 - SagaView S223 Changelog single-detail and zoom sync
 
 - Informasi `CONFIRMED` dari exact Studio source

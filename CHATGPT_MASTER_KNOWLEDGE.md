@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 16 Agustus 2026 14:14 WIB
+Evidence cut-off: 16 Agustus 2026 20:30 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -58,14 +58,16 @@ exact-commit 9+2, Axe dua viewport, build/budget, privacy check, dan audit
 dependency lulus. Production/backend/database tidak berubah. Initial
 recovery-load failure masih residual terpisah.
 
-SagaBooth M0 exact source `c08765f3a5ab40ff39e5741c1abfc609006ceef5`
-sudah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Produk adalah
-instant photobooth mandiri untuk runtime Windows offline-first dan control
-plane web, berbeda dari SagaBook/SagaView. Fondasi contracts, state machine,
-simulator, ADR, governance, dan CI definition lulus 27 test serta seluruh gate
-lokal. GitHub Actions belum memulai job karena billing/spending limit dan
-branch protection repo private memerlukan GitHub Pro. Belum ada deploy,
-hardware/payment integration, production activation, atau business readiness.
+SagaBooth M1 final source `0bdee15db0e0a9a6ebff55573655fe61cdec97ba`
+dengan implementation source `cc09470506b58b213111b7f138b3725140f6cb90`
+sudah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Electron operator
+shell, native SQLite ledger, atomic journal, durable outbox, deterministic
+media, dan simulator membuktikan offline completion, verified ACK, camera
+crash/recovery, serta no-auto-reprint pada ambiguous print. Clean gate mencakup
+39 test, build, Electron smoke, dan audit nol vulnerability. GitHub Actions
+masih tertahan billing/spending limit; branch protection private memerlukan
+GitHub Pro. Customer kiosk, hardware/QRIS nyata, MySQL/control plane, installer,
+deploy, activation, dan business readiness belum ada.
 
 SagaView Studio S216 source `d9a284812b29ab8688365e319c2c098d4357ca8c`
 sudah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Kegagalan tulis
@@ -282,9 +284,11 @@ Software instant photobooth mandiri dengan alur otomatis payment-verified,
 countdown/capture, render frame, print/delivery, dan recovery. V1 diarahkan ke
 Electron + SQLite/filesystem lokal, NestJS + MySQL 8.4 LTS + Next.js pada VPS
 Hostinger, Canon R10/R50, DNP, serta QRIS melalui PJP berizin. Sony
-a6700/ZV-E10 II berada pada qualification V1.1. M0 baru berupa fondasi
-`LOCAL_VALIDATED`; jangan mengklaim hardware support, payment integration,
-deployment, SaaS licensing aktif, atau production readiness.
+a6700/ZV-E10 II berada pada qualification V1.1. M1 sudah membuktikan vertical
+slice runtime lokal memakai simulator, tetapi customer kiosk, hardware nyata,
+QRIS, MySQL/control plane, installer, serta deployment belum ada. Jangan
+mengklaim hardware support, payment integration, SaaS licensing aktif, atau
+production readiness.
 
 ### SagaBook
 

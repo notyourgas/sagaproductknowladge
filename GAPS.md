@@ -8,7 +8,7 @@ diubah menjadi klaim publik sebelum ditutup dengan bukti atau keputusan owner.
 
 ## Konteks
 
-Daftar ini berlaku pada evidence cut-off 15 Agustus 2026 21:26 WIB dan harus diperbarui
+Daftar ini berlaku pada evidence cut-off 16 Agustus 2026 20:30 WIB dan harus diperbarui
 ketika keputusan atau release baru menutup gap.
 
 ## Cara memakai
@@ -29,7 +29,7 @@ ketika keputusan atau release baru menutup gap.
 | GAP-006 | Semua produk berbayar | NEEDS CONFIRMATION | Kebijakan pajak, invoice, refund, dunning, grace, dan SLA komersial lintas produk belum disatukan. | Policy founder/legal yang disetujui per produk. |
 | GAP-007 | Semua produk | NEEDS CONFIRMATION | Owner data-retention, deletion SLA, incident contact, dan subprocessor list belum lengkap untuk semua produk. | Policy per produk, owner, dan tanggal berlaku. |
 | GAP-008 | SagaTech | NEEDS CONFIRMATION | Business readiness belum tercapai karena Linktree/PDF lama, persistensi analytics, UAT perangkat nyata, dan repository source kanonik belum ditutup. | Linktree owner UAT, dashboard/network evidence analytics, iPhone/Android UAT, serta Git remote dan source push SagaTech. |
-| GAP-009 | SagaBooth | TODO | GitHub Actions tidak memulai job karena billing/spending limit dan branch protection repo private memerlukan GitHub Pro. Runtime, database, hardware, payment, deploy, serta pilot juga belum masuk M0. | Selesaikan billing, ulang CI hingga hijau, aktifkan protection, lalu tutup M1 vertical slice dan qualification perangkat secara bertahap. |
+| GAP-009 | SagaBooth | TODO | M1 local runtime, native SQLite, journal/outbox, recovery, simulator, dan operator shell sudah tertutup. GitHub Actions tetap tidak memulai job karena billing/spending limit dan branch protection repo private memerlukan GitHub Pro. Customer kiosk, hardware, QRIS, MySQL/control plane, signed installer, deploy, serta pilot belum ada. | Selesaikan billing, ulang CI hingga hijau, aktifkan protection, lalu bangun M2 customer kiosk dan qualification Canon/DNP secara bertahap. |
 
 ## Keputusan produk
 

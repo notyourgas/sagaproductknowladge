@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-16 - SagaBooth milestone M1 local vertical slice
+
+- Final source `0bdee15db0e0a9a6ebff55573655fe61cdec97ba` dengan implementation
+  source `cc09470506b58b213111b7f138b3725140f6cb90` sudah dipush.
+- Electron operator shell, native SQLite ledger, atomic filesystem journal,
+  durable outbox, deterministic media artifacts, dan simulator integration
+  membuktikan satu sesi dapat selesai ketika cloud offline.
+- Verified ACK, camera crash/recovery, journal reconciliation, collision guard,
+  dan no-auto-reprint pada ambiguous print lulus 39 test serta Electron smoke.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; CI tertahan
+  billing GitHub, sedangkan customer kiosk, hardware/QRIS/MySQL, signed
+  installer, deployment, dan production activation belum ada.
+
 ## 2026-08-16 - SagaView Changelog single-detail and zoom S223
 
 - Changelog kini memiliki bukti bahwa navigasi keyboard hanya membuka satu
