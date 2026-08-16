@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-16 - SagaView Changelog single-detail and zoom S223
+
+- Changelog kini memiliki bukti bahwa navigasi keyboard hanya membuka satu
+  detail versi, pencarian menjaga fokus dan menutup detail yang tidak cocok.
+- Exact source `f0ce5f7bcce592410e4fe19f183ebcd5104e8fe9` sudah dipush dan
+  lulus empat E2E Changelog, Axe, no-overflow pada zoom efektif 200%, 212 unit,
+  build/budget, lint/typecheck, serta audit dependency.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; hanya acceptance test
+  berubah dan runtime, production, backend/database, SagaBook, serta no-upload
+  tetap sama.
+
 ## 2026-08-16 - SagaView recovery desktop/zoom matrix S222
 
 - Recovery initial-load failure kini terbukti operabel pada monitor 1280 sampai

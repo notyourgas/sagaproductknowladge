@@ -1,5 +1,23 @@
 # SagaView Changelog
 
+## 2026-08-16 - S223 Changelog single-detail and zoom acceptance
+
+- Klasifikasi: `CONFIRMED` QA/accessibility evidence.
+- Before: pencarian/filter, enam versi per halaman, satu state detail, dan aksi
+  kembali ke Session sudah ada, tetapi transisi single-detail dan zoom 200%
+  belum memiliki acceptance eksplisit.
+- After: keyboard membuka versi berikutnya sambil menutup versi sebelumnya;
+  pencarian tetap fokus, menutup detail yang tidak cocok, dan tidak overflow
+  pada viewport efektif 640x360 untuk simulasi 1280x720 pada zoom 200%.
+- Evidence: empat E2E Changelog, focused exact-commit 1/1, Axe nol
+  serious/critical, 212 unit, format/lint/typecheck, build/budget, dan audit
+  dependency nol.
+- Delivery: exact Studio source
+  `f0ce5f7bcce592410e4fe19f183ebcd5104e8fe9` sudah `PUSHED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; slice hanya menambah acceptance
+  test. Runtime, production, backend, database, SagaBook, dan no-upload tidak
+  berubah.
+
 ## 2026-08-16 - S222 recovery desktop and zoom acceptance matrix
 
 - Klasifikasi: `CONFIRMED` QA/accessibility evidence.

@@ -1,5 +1,17 @@
 # SagaView Dossier
 
+## S223 Changelog single-detail and zoom acceptance
+
+Studio source `f0ce5f7bcce592410e4fe19f183ebcd5104e8fe9` menambah acceptance
+eksplisit untuk single-detail Changelog dan reflow zoom tinggi. Membuka detail
+kedua lewat keyboard menutup detail pertama; pencarian mempertahankan fokus dan
+menutup detail yang tidak lagi sesuai. Viewport efektif 640x360 sebagai
+simulasi 1280x720 pada zoom 200% tidak overflow, dan Axe nol serious/critical.
+Empat E2E Changelog, focused exact-commit 1/1, 212 unit, format/lint/typecheck,
+build/budget, serta audit dependency nol lulus. Status `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; hanya test/evidence berubah,
+runtime/production/backend/database dan no-upload tetap sama.
+
 ## S222 recovery desktop and zoom acceptance matrix
 
 Studio source `b605bd54ebfe1c1a11049df9317fa2447b537450` menambah matriks

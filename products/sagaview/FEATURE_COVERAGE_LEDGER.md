@@ -1,6 +1,16 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 16 Agustus 2026 13:12 WIB
+Evidence cut-off: 16 Agustus 2026 14:14 WIB
+
+S223 Changelog single-detail/zoom: exact Studio source
+`f0ce5f7bcce592410e4fe19f183ebcd5104e8fe9` menambah acceptance eksplisit
+untuk membuka versi lewat keyboard, menutup detail sebelumnya, menjaga fokus
+pencarian, dan menutup detail ketika filter hasil berubah. Simulasi 1280x720
+pada zoom efektif 200% menggunakan viewport 640x360 lulus no-overflow; Axe nol
+serious/critical. Empat E2E Changelog, focused exact-commit 1/1, 212 unit,
+format/lint/typecheck, build/budget, serta audit dependency nol. Status `PUSHED
+/ LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; ini test/evidence tanpa runtime,
+backend, database, production, SagaBook, atau perubahan batas no-upload.
 
 S222 recovery desktop/zoom matrix: exact Studio source
 `b605bd54ebfe1c1a11049df9317fa2447b537450` menambah acceptance initial-load

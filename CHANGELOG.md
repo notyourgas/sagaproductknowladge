@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-16 - SagaView S223 Changelog single-detail and zoom sync
+
+- Informasi `CONFIRMED` dari exact Studio source
+  `f0ce5f7bcce592410e4fe19f183ebcd5104e8fe9` dan gate lokal terisolasi.
+- Acceptance Changelog membuktikan hanya satu detail versi terbuka, pencarian
+  tetap fokus, hasil baru menutup detail lama, dan zoom efektif 200% tanpa
+  overflow atau pelanggaran Axe serious/critical.
+- Delivery `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; hanya test
+  berubah, runtime/production/backend/database/SagaBook/no-upload tetap sama.
+- Dokumen terdampak: SagaView product/dossier/changelog/coverage,
+  portfolio/master, root changelog, dan sync status.
+
 ## 2026-08-16 - SagaView S222 recovery viewport matrix sync
 
 - Informasi `CONFIRMED` dari exact Studio source

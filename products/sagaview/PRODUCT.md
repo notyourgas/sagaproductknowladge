@@ -2,6 +2,15 @@
 
 Updated: 16 Agustus 2026
 
+S223 menutup bukti operasional Changelog tanpa mengubah runtime. Exact source
+`f0ce5f7bcce592410e4fe19f183ebcd5104e8fe9` membuktikan keyboard hanya
+menyisakan satu detail versi terbuka, pencarian tetap fokus dan menutup detail
+yang tidak cocok, serta zoom efektif 200% tidak overflow. Empat E2E Changelog,
+Axe, 212 unit, format/lint/typecheck, build/budget, dan audit dependency lulus.
+Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; runtime,
+production, backend/database, foto/path, dan batas local-first/no-upload tidak
+berubah.
+
 S222 menutup bukti responsive recovery initial-load failure pada monitor
 desktop dan zoom tinggi. Exact source
 `b605bd54ebfe1c1a11049df9317fa2447b537450` menguji 1280 sampai 3840 serta
