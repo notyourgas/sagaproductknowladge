@@ -1,6 +1,17 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 16 Agustus 2026 12:12 WIB
+Evidence cut-off: 16 Agustus 2026 13:12 WIB
+
+S222 recovery desktop/zoom matrix: exact Studio source
+`b605bd54ebfe1c1a11049df9317fa2447b537450` menambah acceptance initial-load
+failure untuk monitor 1280, 1512, 1920, 2560, dan 3840 serta reflow efektif
+125%, 150%, dan 200%. Guidance public-safe, tombol retry keyboard/Enter, target
+minimal 44 px, dan no-overflow lulus di delapan skenario; Axe nol
+serious/critical pada tiga cut-off visual. Full 212 unit dan 19 browser
+scenario, focused exact-commit 1/1, build/budget, lint/typecheck, dan audit
+dependency nol. Status `PUSHED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; ini test/evidence tanpa runtime, backend, database,
+production, SagaBook, atau perubahan batas no-upload. Residual fisik S220 tetap.
 
 S221 recovery accessibility modes: exact Studio source
 `3139f91e7c5edc210f1a609536407e34eefcc264` menutup label tombol yang hilang

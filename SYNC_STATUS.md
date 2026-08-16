@@ -12,14 +12,25 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-16T12:12:00+07:00 |
-| Branch aktif | `codex/knowledge-s221-recovery-a11y-modes` pada worktree terisolasi exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-16T13:12:00+07:00 |
+| Branch aktif | `codex/knowledge-s222-recovery-viewport-matrix` pada worktree terisolasi exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `872fa2ff01ba3b0386f3f5fc359b99623da5ac21` |
-| Informasi terakhir disinkronkan | SagaView S221 recovery accessibility modes: label tombol forced-colors kembali terbaca pada exact Studio source `3139f91e7c5edc210f1a609536407e34eefcc264`. |
+| Baseline sebelum pembaruan | `96091c9e93da5cdee739f2301407e65e87a617de` |
+| Informasi terakhir disinkronkan | SagaView S222 recovery viewport matrix: lima monitor dan zoom efektif 125/150/200% lulus pada exact Studio source `b605bd54ebfe1c1a11049df9317fa2447b537450`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
 | Konflik | Checkout knowledge lain tidak disentuh; sinkronisasi dilakukan dari worktree terisolasi exact `origin/main`. |
-| Error | Tidak ada error knowledge; Fonnte menolak notifikasi completion dan deployment production SagaView tidak dilakukan. |
+| Error | Tidak ada error knowledge; Fonnte menolak notifikasi completion S222 dan deployment production SagaView tidak dilakukan. |
+
+## File yang berubah pada sinkronisasi ini (SagaView S222 recovery viewport matrix)
+
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/DOSSIER.md`
+- `products/sagaview/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaView S221 recovery accessibility modes)
 

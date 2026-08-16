@@ -2,6 +2,15 @@
 
 Updated: 16 Agustus 2026
 
+S222 menutup bukti responsive recovery initial-load failure pada monitor
+desktop dan zoom tinggi. Exact source
+`b605bd54ebfe1c1a11049df9317fa2447b537450` menguji 1280 sampai 3840 serta
+reflow efektif 125/150/200%; panduan, retry keyboard, target 44 px, Axe, dan
+no-overflow lulus. Status `PUSHED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; slice hanya menambah acceptance test. Runtime,
+production, backend/database, foto/path, dan batas local-first/no-upload tidak
+berubah. Blocker fisik S220 tetap terpisah.
+
 Studio S221 memastikan aksi recovery tetap terbaca pada Windows forced-colors.
 Review visual menemukan label tombol retry dan aksi utama hilang walau struktur
 aksesibilitasnya masih terbaca mesin. Tombol utama kini memakai warna sistem

@@ -1,5 +1,19 @@
 # SagaView Changelog
 
+## 2026-08-16 - S222 recovery desktop and zoom acceptance matrix
+
+- Klasifikasi: `CONFIRMED` QA/accessibility evidence.
+- Before: recovery initial-load failure sudah diuji pada mobile dan
+  forced-colors, tetapi belum memiliki matriks monitor desktop dan zoom tinggi.
+- After: acceptance mencakup 1280/1512/1920/2560/3840 serta reflow efektif
+  125/150/200%; guidance, retry keyboard, target 44 px, dan no-overflow lulus.
+- Evidence: 212 unit, 19 Playwright sequential, focused exact-commit 1/1, Axe
+  nol serious/critical, build/budget, lint/typecheck, dan audit dependency nol.
+- Delivery: exact Studio source
+  `b605bd54ebfe1c1a11049df9317fa2447b537450` sudah `PUSHED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; slice hanya menambah acceptance
+  test. Production, backend, database, SagaBook, dan no-upload tidak berubah.
+
 ## 2026-08-16 - S221 recovery accessibility modes
 
 - Klasifikasi: `CONFIRMED` UI accessibility and recovery acceptance fix.

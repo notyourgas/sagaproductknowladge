@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-16 - SagaView recovery desktop/zoom matrix S222
+
+- Recovery initial-load failure kini terbukti operabel pada monitor 1280 sampai
+  3840 dan reflow efektif zoom 125%, 150%, serta 200%.
+- Exact source `b605bd54ebfe1c1a11049df9317fa2447b537450` sudah dipush dan
+  lulus 212 unit, 19 browser scenario, Axe, keyboard, target 44 px,
+  no-overflow, build/budget, lint/typecheck, serta audit dependency.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; hanya acceptance test
+  berubah dan production, backend/database, SagaBook, serta no-upload tetap.
+
 ## 2026-08-16 - SagaView recovery accessibility modes S221
 
 - Label tombol retry dan aksi utama yang hilang pada Windows forced-colors kini

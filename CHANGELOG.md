@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-16 - SagaView S222 recovery viewport matrix sync
+
+- Informasi `CONFIRMED` dari exact Studio source
+  `b605bd54ebfe1c1a11049df9317fa2447b537450` dan gate lokal terisolasi.
+- Acceptance recovery kini mencakup lima monitor desktop dan zoom efektif
+  125/150/200% dengan keyboard, target 44 px, Axe, dan no-overflow hijau.
+- Delivery `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; hanya test
+  berubah, production/backend/database/SagaBook/no-upload tetap sama.
+- Dokumen terdampak: SagaView product/dossier/changelog/coverage,
+  portfolio/master, root changelog, dan sync status.
+
 ## 2026-08-16 - SagaView S221 recovery accessibility modes sync
 
 - Informasi `CONFIRMED` dari exact Studio source

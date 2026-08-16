@@ -1,5 +1,16 @@
 # SagaView Dossier
 
+## S222 recovery desktop and zoom acceptance matrix
+
+Studio source `b605bd54ebfe1c1a11049df9317fa2447b537450` menambah matriks
+acceptance recovery pada 1280/1512/1920/2560/3840 dan viewport efektif untuk
+zoom 125/150/200%. Guidance tetap terlihat, retry menerima fokus serta Enter,
+target minimal 44 px, dan tidak ada overflow horizontal. Full 212 unit dan 19
+Playwright, focused exact-commit 1/1, Axe nol serious/critical, build/budget,
+lint/typecheck, serta audit dependency nol lulus. Status `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; hanya test/evidence berubah,
+production/backend/database dan no-upload tetap sama. Residual S220 tetap.
+
 ## S221 recovery accessibility modes
 
 Studio source `3139f91e7c5edc210f1a609536407e34eefcc264` memperbaiki label
