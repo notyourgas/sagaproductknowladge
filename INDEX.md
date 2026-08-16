@@ -8,7 +8,7 @@ produk, atau riwayat perubahan.
 
 ## Konteks
 
-Indeks mencakup knowledge publik pada evidence cut-off 31 Juli 2026.
+Indeks mencakup knowledge publik pada evidence cut-off 16 Agustus 2026 08:39 WIB.
 
 ## Cara membaca
 
@@ -53,6 +53,7 @@ Indeks mencakup knowledge publik pada evidence cut-off 31 Juli 2026.
 | SagaTech | [PRODUCT](products/sagatech/PRODUCT.md) | [DOSSIER](products/sagatech/DOSSIER.md) | [CHANGELOG](products/sagatech/CHANGELOG.md) |
 | SagaBook | [PRODUCT](products/sagabook/PRODUCT.md) | [DOSSIER](products/sagabook/DOSSIER.md) | [CHANGELOG](products/sagabook/CHANGELOG.md) |
 | SagaView | [PRODUCT](products/sagaview/PRODUCT.md) | [DOSSIER](products/sagaview/DOSSIER.md) | [CHANGELOG](products/sagaview/CHANGELOG.md) |
+| SagaBooth | [PRODUCT](products/sagabooth/PRODUCT.md) | [DOSSIER](products/sagabooth/DOSSIER.md) | [CHANGELOG](products/sagabooth/CHANGELOG.md) |
 | SagaBio | [PRODUCT](products/sagabio/PRODUCT.md) | [DOSSIER](products/sagabio/DOSSIER.md) | [CHANGELOG](products/sagabio/CHANGELOG.md) |
 | SagaMenu | [PRODUCT](products/sagamenu/PRODUCT.md) | [DOSSIER](products/sagamenu/DOSSIER.md) | [CHANGELOG](products/sagamenu/CHANGELOG.md) |
 | SagaFin | [PRODUCT](products/sagafin/PRODUCT.md) | [DOSSIER](products/sagafin/DOSSIER.md) | [CHANGELOG](products/sagafin/CHANGELOG.md) |

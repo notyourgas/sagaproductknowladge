@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-16 - SagaBooth milestone M0 foundation
+
+- SagaBooth ditetapkan sebagai software instant photobooth mandiri dengan
+  runtime Windows offline-first dan control plane web, terpisah dari SagaBook
+  serta SagaView.
+- Exact source `c08765f25840b968524f305dfe32c6e18d8df02b` memuat contracts,
+  guarded state machine, simulator kamera/printer/payment, ADR, governance, dan
+  CI definition; 27 test serta seluruh gate lokal lulus.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; CI tertahan
+  billing/spending limit GitHub dan branch protection private memerlukan Pro.
+  Belum ada deploy, hardware/payment integration, atau production activation.
+
 ## 2026-08-16 - SagaView recovery checkpoint warning S216
 
 - Kegagalan penyimpanan checkpoint setelah impor folder kini menjadi warning

@@ -1126,3 +1126,17 @@ keputusan pengganti.
 | Pemberi keputusan | Andreas / founder |
 | Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; production `dpl_FZA1XUs3G4YKymqkqaFCMHnrAx3A`, rollback `dpl_5qvER4vn4H8m2CmpgmEtkcbnNxcU` |
 | Dokumen terkait | [SagaDevs Product](products/sagadevs/PRODUCT.md), [SagaDevs Dossier](products/sagadevs/DOSSIER.md), [SagaDevs Changelog](products/sagadevs/CHANGELOG.md), [Gaps](GAPS.md) |
+
+## DEC-080 - SagaBooth menjadi instant photobooth hybrid offline-first
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-16 |
+| Topik | Product boundary, delivery model, stack, dan hardware roadmap SagaBooth |
+| Keputusan | SagaBooth adalah software instant photobooth mandiri, bukan SagaBook atau SagaView. Internal assisted pilot didahulukan sebelum lisensi/SaaS. Runtime Windows memakai Electron dengan SQLite/filesystem lokal dan durable outbox; control plane memakai NestJS, MySQL 8.4 LTS, Next.js, serta target VPS/domain Hostinger. V1 menargetkan Canon R10/R50 dan DNP; Sony a6700/ZV-E10 II masuk qualification V1.1; QRIS wajib melalui PJP berizin. |
+| Alasan | Booth harus tetap beroperasi dan pulih saat internet tidak stabil, sementara konfigurasi, lisensi, observability, dan audit dapat dikelola terpusat tanpa mencampur domain produk lain. |
+| Alternatif yang dipertimbangkan | Web-only booth; cloud-first media; memakai SagaBook/SagaView sebagai runtime booth; mendukung semua kamera sejak V1; menyimpan media sebagai blob MySQL. |
+| Dampak | M0 membakukan contracts, state machine, adapters/simulators, filesystem media, idempotency, payment verification, dan boundary aplikasi. Hardware/payment compatibility tetap tidak boleh diklaim sebelum implementation dan qualification nyata. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; exact source `c08765f25840b968524f305dfe32c6e18d8df02b`, GitHub CI dan branch protection masih memiliki blocker akun/plan |
+| Dokumen terkait | [SagaBooth Product](products/sagabooth/PRODUCT.md), [SagaBooth Dossier](products/sagabooth/DOSSIER.md), [SagaBooth Changelog](products/sagabooth/CHANGELOG.md), [Gaps](GAPS.md) |

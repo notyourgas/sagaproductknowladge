@@ -1,8 +1,17 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 16 Agustus 2026 03:26 WIB
+Evidence cut-off: 16 Agustus 2026 08:39 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
+
+SagaBooth M0 exact source `c08765f25840b968524f305dfe32c6e18d8df02b`
+sudah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Produk adalah
+instant photobooth mandiri untuk runtime Windows offline-first dan control
+plane web, berbeda dari SagaBook/SagaView. Fondasi contracts, state machine,
+simulator, ADR, governance, dan CI definition lulus 27 test serta seluruh gate
+lokal. GitHub Actions belum memulai job karena billing/spending limit dan
+branch protection repo private memerlukan GitHub Pro. Belum ada deploy,
+hardware/payment integration, production activation, atau business readiness.
 
 SagaView Studio S216 source `d9a284812b29ab8688365e319c2c098d4357ca8c`
 sudah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Kegagalan tulis
@@ -212,6 +221,16 @@ langsung `dpl_5qvER4vn4H8m2CmpgmEtkcbnNxcU` tersedia.
 
 Status: `PRODUCTION_DEPLOYED` dan `PRODUCTION_ACTIVATED` pada `sagadevs.com`;
 prototype tetap `noindex`.
+
+### SagaBooth
+
+Software instant photobooth mandiri dengan alur otomatis payment-verified,
+countdown/capture, render frame, print/delivery, dan recovery. V1 diarahkan ke
+Electron + SQLite/filesystem lokal, NestJS + MySQL 8.4 LTS + Next.js pada VPS
+Hostinger, Canon R10/R50, DNP, serta QRIS melalui PJP berizin. Sony
+a6700/ZV-E10 II berada pada qualification V1.1. M0 baru berupa fondasi
+`LOCAL_VALIDATED`; jangan mengklaim hardware support, payment integration,
+deployment, SaaS licensing aktif, atau production readiness.
 
 ### SagaBook
 

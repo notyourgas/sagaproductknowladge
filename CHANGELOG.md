@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-16 - SagaBooth milestone M0 knowledge sync
+
+- Informasi `CONFIRMED` dari keputusan Andreas dan exact source
+  `c08765f25840b968524f305dfe32c6e18d8df02b`.
+- Menambahkan SagaBooth sebagai produk instant photobooth mandiri, architecture
+  baseline offline-first, M0 evidence, hardware roadmap, dan readiness boundary.
+- Delivery `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+  tidak berubah karena SagaBooth belum dideploy atau diaktivasi.
+- Dokumen terdampak: product/dossier/changelog SagaBooth, index, decision,
+  gaps, portfolio/master, root changelog, dan sync status.
+
 ## 2026-08-16 - SagaView S216 recovery checkpoint warning sync
 
 - Informasi `CONFIRMED` dari exact Studio source
