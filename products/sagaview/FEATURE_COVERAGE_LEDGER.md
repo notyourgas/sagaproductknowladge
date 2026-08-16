@@ -1,16 +1,19 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 17 Agustus 2026 03:17 WIB
+Evidence cut-off: 17 Agustus 2026 05:18 WIB
 
 S229 disposable restore rehearsal: scan path traversal, extraction,
 filesystem parity terhadap exact clean worktree untuk 359 file Studio dan
 2.211 backend runtime file, embedded Studio provenance, dua bundle recovery ke
 exact commit/tree, serta full Git fsck lulus. Dua workflow backend tidak ada di
 archive sesuai kontrak `/.github export-ignore` dan tetap tersedia di bundle.
-Runtime test Studio dari hasil restore belum dapat start karena dependency
-`vitest` tidak dibawa source archive; clean install lockfile-exact pada target
-disposable NTFS dan backend runtime gate belum selesai. Status
-`RESTORE_REHEARSAL_PARTIAL / BLOCKED_RUNTIME_DEPENDENCY /
+Clean install lockfile-exact pada NTFS native berhasil memasang 600 package;
+format, lint, typecheck, serta 52 file/213 unit test Studio lulus. Build masih
+fail-closed karena marker commit artifact membuat format-check gagal jika tetap
+di app root, sedangkan tanpa marker build tidak dapat menjalankan
+`git rev-parse HEAD` dari archive tanpa `.git`. Browser, audit dependency,
+build budget, dan backend restored runtime gate belum diklaim. Status
+`RESTORE_REHEARSAL_PARTIAL / BLOCKED_RELEASE_CONTRACT /
 IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan promotion dilarang.
 
 S228 paired immutable no-upload candidate: Studio S226

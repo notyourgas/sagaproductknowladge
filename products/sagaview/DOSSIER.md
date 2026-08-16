@@ -1,6 +1,6 @@
 # SagaView Dossier
 
-## S229 disposable restore rehearsal blocker
+## S229 disposable restore rehearsal contract blocker
 
 Restore dijalankan dari salinan media terpisah S228 tanpa menyentuh production
 atau data customer. Dua archive lulus scan path traversal dan dapat diekstrak;
@@ -13,16 +13,18 @@ repository disposable; backend kembali ke
 `a648c180310e197934ac84eed8519e51ae90f0eb` / tree
 `e08644bf67112018bbacfd15ebc56c59dab03477`, dan keduanya lulus full fsck.
 
-Rehearsal berhenti setelah dua correction round. Pertama, `.gitattributes`
-memang mengekspor `.cmd` sebagai CRLF sehingga acceptance diperbaiki dari raw
-blob parity menjadi filesystem parity terhadap worktree exact. Kedua, exFAT
-tidak mencatat ownership sehingga bundle recovery memakai `safe.directory`
-command-local tanpa mengubah konfigurasi global. Gate runtime Studio berikutnya
-gagal start karena hasil ekstraksi tidak membawa dependency `vitest`; tidak ada
-install improvisasi pada media exFAT. Status `RESTORE_REHEARSAL_PARTIAL /
-BLOCKED_RUNTIME_DEPENDENCY / IMPLEMENTED_NOT_DEPLOYED`. Penyelesaian memerlukan
-clean install lockfile-exact pada target disposable NTFS, lalu test/build Studio
-dan backend runtime/release gate dari hasil restore.
+Rehearsal lanjutan memakai target NTFS native dan clean install lockfile-exact;
+600 package Studio terpasang dan format, lint, typecheck, serta 52 file/213 unit
+test lulus. Build kemudian gagal fail-closed karena source archive tidak
+membawa `.git`: `vite.config.ts` memerlukan `git rev-parse HEAD`. Marker commit
+yang tersedia di archive tidak dapat dibiarkan pada app root karena
+format-check menganggapnya file yang harus diformat. Ini konflik kontrak
+artifact/provenance, bukan kegagalan unit produk. Sesuai batas dua correction
+round, browser, audit dependency, build budget, serta seluruh backend restored
+runtime gate tidak diklaim. Status `RESTORE_REHEARSAL_PARTIAL /
+BLOCKED_RELEASE_CONTRACT / IMPLEMENTED_NOT_DEPLOYED`. Penyelesaian memerlukan
+kontrak marker yang dikecualikan dari formatter namun dapat dibaca build, lalu
+seluruh gate restore Studio dan backend diulang dari awal.
 
 ## S228 paired immutable no-upload candidate
 

@@ -12,16 +12,16 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-17T03:17:24+07:00 |
-| Branch aktif | `codex/s229-sagaview-restore-rehearsal-blocker` pada worktree terisolasi exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-17T05:18:00+07:00 |
+| Branch aktif | `codex/s229-sagaview-restore-contract-blocker` pada worktree terisolasi exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `330517c6da85e09f7cbbf4ab141205ed870590da` |
-| Informasi terakhir disinkronkan | SagaView S229 disposable restore rehearsal partial dan blocker runtime dependency. |
+| Baseline sebelum pembaruan | `9821668e5e8676bbe81e5e9b2239244d2940239b` |
+| Informasi terakhir disinkronkan | SagaView S229 clean-install evidence dan blocker kontrak marker provenance. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
 | Konflik | Checkout knowledge lain tidak disentuh; sinkronisasi dilakukan dari worktree terisolasi exact `origin/main`. |
-| Error | Runtime gate hasil restore belum lengkap; production tidak diubah. |
+| Error | Build restore fail-closed pada konflik marker provenance; production tidak diubah. |
 
-## File yang berubah pada sinkronisasi ini (SagaView S229 restore rehearsal blocker)
+## File yang berubah pada sinkronisasi ini (SagaView S229 restore contract blocker)
 
 - `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
 - `products/sagaview/PRODUCT.md`

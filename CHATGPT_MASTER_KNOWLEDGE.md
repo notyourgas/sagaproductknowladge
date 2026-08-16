@@ -1,18 +1,20 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 17 Agustus 2026 03:17 WIB
+Evidence cut-off: 17 Agustus 2026 05:18 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
 SagaView S229 berstatus `RESTORE_REHEARSAL_PARTIAL /
-BLOCKED_RUNTIME_DEPENDENCY / IMPLEMENTED_NOT_DEPLOYED`. Restore disposable dari
+BLOCKED_RELEASE_CONTRACT / IMPLEMENTED_NOT_DEPLOYED`. Restore disposable dari
 salinan S228 lulus path traversal scan, filesystem parity untuk 359 file Studio
 dan 2.211 backend runtime file, embedded Studio provenance, dua bundle recovery
-ke exact commit/tree, dan full Git fsck. Runtime test Studio dari hasil restore
-tidak dapat start karena source archive tidak membawa dependency `vitest`;
-clean install lockfile-exact pada target disposable NTFS dan backend runtime
-gate belum selesai. Production, database, payment, SagaBook, dan data customer
-tidak berubah; kandidat tidak boleh dipromosikan.
+ke exact commit/tree, dan full Git fsck. Clean install pada NTFS native memasang
+600 package; format/lint/typecheck serta 52 file/213 unit test Studio lulus.
+Build masih fail-closed karena marker commit artifact gagal format-check bila
+tetap di app root, tetapi build tanpa marker tidak dapat memperoleh source
+commit dari archive tanpa `.git`. Browser/audit/build budget dan backend
+restored runtime gate belum diklaim. Production, database, payment, SagaBook,
+dan data customer tidak berubah; kandidat tidak boleh dipromosikan.
 
 SagaView S228 mengunci pasangan no-upload Studio S226
 `e0416650b95c25f2a2486efe17b15f8bf4510129` dan backend S227

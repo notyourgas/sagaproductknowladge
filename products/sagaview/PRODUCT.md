@@ -6,12 +6,14 @@ S229 menjalankan restore rehearsal disposable dari salinan terpisah S228 dan
 berhenti fail-closed sebelum runtime promotion. Scan path traversal, ekstraksi,
 filesystem parity terhadap worktree exact bersih, embedded provenance Studio,
 serta pemulihan dua git bundle ke commit/tree exact dan `git fsck --full`
-lulus. Rehearsal runtime Studio belum dapat dimulai dari hasil ekstraksi karena
-archive source tidak membawa dependency `vitest`; clean dependency install
-pada target disposable NTFS belum dijalankan. Status `RESTORE_REHEARSAL_PARTIAL
-/ BLOCKED_RUNTIME_DEPENDENCY / IMPLEMENTED_NOT_DEPLOYED`; production dan data
-customer tidak berubah. Kandidat tidak boleh dipromosikan sampai install
-lockfile-exact, test/build, serta backend runtime gate pada hasil restore hijau.
+lulus. Clean install Studio pada NTFS native berhasil dan 52 file/213 unit test
+lulus. Gate build menemukan konflik kontrak artifact: marker commit yang wajib
+untuk provenance membuat format-check gagal, sedangkan ketika marker dipisahkan
+build tidak dapat memperoleh source commit karena archive memang tidak membawa
+`.git`. Status `RESTORE_REHEARSAL_PARTIAL / BLOCKED_RELEASE_CONTRACT /
+IMPLEMENTED_NOT_DEPLOYED`; production dan data customer tidak berubah. Kandidat
+tidak boleh dipromosikan sampai kontrak marker/provenance diperbaiki lalu gate
+Studio dan backend diulang dari restore bersih.
 
 S228 membungkus kandidat kumulatif no-upload sebagai pasangan immutable tanpa
 deploy: Studio S226 `e0416650b95c25f2a2486efe17b15f8bf4510129` dan backend

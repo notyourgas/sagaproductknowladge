@@ -8,7 +8,7 @@ diubah menjadi klaim publik sebelum ditutup dengan bukti atau keputusan owner.
 
 ## Konteks
 
-Daftar ini berlaku pada evidence cut-off 17 Agustus 2026 03:17 WIB dan harus diperbarui
+Daftar ini berlaku pada evidence cut-off 17 Agustus 2026 05:18 WIB dan harus diperbarui
 ketika keputusan atau release baru menutup gap.
 
 ## Cara memakai
@@ -320,11 +320,13 @@ ketika keputusan atau release baru menutup gap.
 
 - `TODO / RELEASE BLOCKER`: S229 memulihkan archive dan bundle S228 secara
   disposable dengan filesystem parity, exact commit/tree, dan Git fsck hijau.
-  Runtime test Studio dari hasil restore belum dapat start karena source archive
-  tidak membawa dependency `vitest`; jalankan clean install lockfile-exact pada
-  target disposable NTFS, lalu test/build Studio serta backend runtime/release
-  gate. Sampai seluruhnya hijau, status tetap
-  `BLOCKED_RUNTIME_DEPENDENCY / IMPLEMENTED_NOT_DEPLOYED` dan deploy dilarang.
+  Clean install NTFS native serta format/lint/typecheck dan 52 file/213 unit
+  test Studio juga hijau. Blocker tersisa adalah kontrak marker provenance:
+  marker gagal format-check bila berada di app root, sedangkan build tanpa
+  marker tidak dapat memperoleh source commit dari archive tanpa `.git`.
+  Perbaiki kontrak marker/build lalu ulang seluruh gate restore Studio dan
+  backend. Sampai seluruhnya hijau, status tetap `BLOCKED_RELEASE_CONTRACT /
+  IMPLEMENTED_NOT_DEPLOYED` dan deploy dilarang.
 
 - `CLOSED IN PRODUCTION / AUTHENTICATED UAT RESIDUAL`: S199-S200 Support Hub
   Owner aktif melalui S201 source
