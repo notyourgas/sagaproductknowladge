@@ -1,5 +1,17 @@
 # SagaView Dossier
 
+## S221 recovery accessibility modes
+
+Studio source `3139f91e7c5edc210f1a609536407e34eefcc264` memperbaiki label
+tombol utama yang hilang pada Windows forced-colors. Tombol retry recovery dan
+aksi utama sekarang memakai warna sistem kontras, tetap memiliki fokus
+keyboard, target minimal 44 px, dan retry dapat dijalankan dengan Enter. Full
+212 unit dan 18 Playwright, focused exact-commit 1/1, forced-colors,
+reduced-motion, Axe nol serious/critical, build/budget, lint/typecheck, dan
+audit dependency lulus. Status `PUSHED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; production/backend/database dan no-upload tidak
+berubah. Residual fisik S220 tetap terpisah.
+
 ## S220 Windows output and printer preflight
 
 Audit read-only pada perangkat Windows memeriksa fixed volume, health disk,

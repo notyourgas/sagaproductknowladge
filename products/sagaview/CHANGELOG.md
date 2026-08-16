@@ -1,5 +1,20 @@
 # SagaView Changelog
 
+## 2026-08-16 - S221 recovery accessibility modes
+
+- Klasifikasi: `CONFIRMED` UI accessibility and recovery acceptance fix.
+- Before: review visual menemukan label tombol utama hilang pada Windows
+  forced-colors, termasuk tombol retry saat pembacaan draft gagal.
+- After: tombol utama memakai warna sistem `Highlight`/`HighlightText` secara
+  eksplisit; label, border, dan fokus keyboard tetap terlihat.
+- Evidence: 212 unit, 18 Playwright sequential, focused exact-commit 1/1,
+  forced-colors + reduced-motion, target minimal 44 px, Axe nol
+  serious/critical, build/budget, lint/typecheck, dan audit dependency nol.
+- Delivery: exact Studio source
+  `3139f91e7c5edc210f1a609536407e34eefcc264` sudah `PUSHED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production, backend, database,
+  SagaBook, foto/path customer, dan batas no-upload tidak berubah.
+
 ## 2026-08-16 - S220 Windows output and printer preflight
 
 - Klasifikasi: `CONFIRMED` operational/release blocker evidence.

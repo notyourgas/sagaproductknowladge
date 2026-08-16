@@ -12,14 +12,25 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-16T11:05:00+07:00 |
-| Branch aktif | `codex/knowledge-s220-windows-output-preflight` pada worktree terisolasi exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-16T12:12:00+07:00 |
+| Branch aktif | `codex/knowledge-s221-recovery-a11y-modes` pada worktree terisolasi exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `a7e9b4493f05dbdc18387420f3dad6325a7bd3d2` |
-| Informasi terakhir disinkronkan | SagaView S220 Windows output/printer preflight: C 1,56 GiB, D 1,94 GiB, EPSON L8050/driver tidak tersedia, dan UAT tetap blocked. |
+| Baseline sebelum pembaruan | `872fa2ff01ba3b0386f3f5fc359b99623da5ac21` |
+| Informasi terakhir disinkronkan | SagaView S221 recovery accessibility modes: label tombol forced-colors kembali terbaca pada exact Studio source `3139f91e7c5edc210f1a609536407e34eefcc264`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
 | Konflik | Checkout knowledge lain tidak disentuh; sinkronisasi dilakukan dari worktree terisolasi exact `origin/main`. |
-| Error | Tidak ada error knowledge; deployment production SagaView tidak dilakukan. |
+| Error | Tidak ada error knowledge; Fonnte menolak notifikasi completion dan deployment production SagaView tidak dilakukan. |
+
+## File yang berubah pada sinkronisasi ini (SagaView S221 recovery accessibility modes)
+
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/DOSSIER.md`
+- `products/sagaview/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaView S220 Windows output preflight)
 

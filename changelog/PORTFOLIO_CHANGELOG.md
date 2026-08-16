@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-16 - SagaView recovery accessibility modes S221
+
+- Label tombol retry dan aksi utama yang hilang pada Windows forced-colors kini
+  memakai warna sistem kontras serta tetap terlihat saat fokus keyboard.
+- Exact source `3139f91e7c5edc210f1a609536407e34eefcc264` sudah dipush dan
+  lulus 212 unit, 18 browser scenario, Axe, reduced-motion, target 44 px,
+  build/budget, lint/typecheck, serta audit dependency.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production, backend,
+  database, SagaBook, dan batas local-first/no-upload tidak berubah.
+
 ## 2026-08-16 - SagaView Windows output preflight S220
 
 - Audit read-only membuktikan C hanya bebas 1,56 GiB dan D 1,94 GiB; keduanya

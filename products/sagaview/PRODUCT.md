@@ -2,6 +2,16 @@
 
 Updated: 16 Agustus 2026
 
+Studio S221 memastikan aksi recovery tetap terbaca pada Windows forced-colors.
+Review visual menemukan label tombol retry dan aksi utama hilang walau struktur
+aksesibilitasnya masih terbaca mesin. Tombol utama kini memakai warna sistem
+kontras, mempertahankan fokus keyboard dan target minimal 44 px. Exact source
+`3139f91e7c5edc210f1a609536407e34eefcc264` sudah `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; 212 unit, 18 browser scenario,
+focused exact-commit, Axe, reduced-motion, build/budget, dan audit dependency
+lulus. Production/backend/database serta batas local-first/no-upload tidak
+berubah. Blocker fisik S220 tetap terpisah.
+
 Preflight Windows S220 memperbarui blocker output nyata. C hanya memiliki 1,56
 GiB dan D 1,94 GiB ruang bebas; keduanya sehat/NTFS tetapi gagal minimum 10
 GiB. Spooler aktif otomatis, namun queue dan driver EPSON L8050 belum tersedia.

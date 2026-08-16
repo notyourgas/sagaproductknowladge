@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-16 - SagaView S221 recovery accessibility modes sync
+
+- Informasi `CONFIRMED` dari exact Studio source
+  `3139f91e7c5edc210f1a609536407e34eefcc264` dan gate lokal terisolasi.
+- Tombol recovery/aksi utama tetap terbaca pada forced-colors, fokus keyboard,
+  reduced-motion, target 44 px, serta Axe nol serious/critical.
+- Delivery `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production,
+  backend, database, SagaBook, dan batas no-upload tidak berubah.
+- Dokumen terdampak: SagaView product/dossier/changelog/coverage,
+  portfolio/master, root changelog, dan sync status.
+
 ## 2026-08-16 - SagaView S220 Windows output preflight sync
 
 - Informasi `CONFIRMED` dari audit read-only fixed volume, disk health,

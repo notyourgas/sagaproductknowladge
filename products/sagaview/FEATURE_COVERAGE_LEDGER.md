@@ -1,6 +1,17 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 16 Agustus 2026 11:05 WIB
+Evidence cut-off: 16 Agustus 2026 12:12 WIB
+
+S221 recovery accessibility modes: exact Studio source
+`3139f91e7c5edc210f1a609536407e34eefcc264` menutup label tombol yang hilang
+pada Windows forced-colors. Tombol retry initial recovery dan aksi utama kini
+memakai warna sistem yang kontras, tetap fokus keyboard, target minimal 44 px,
+dan dapat diaktifkan dengan Enter. Full 212 unit dan 18 browser scenario lulus;
+focused exact-commit 1/1, forced-colors + reduced-motion, Axe nol
+serious/critical, build/budget, lint/typecheck, serta audit dependency nol.
+Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production,
+backend, database, SagaBook, dan batas local-first/no-upload tidak berubah.
+Residual fisik S220 tetap: ruang minimum 10 GiB dan EPSON L8050/driver.
 
 S220 Windows output/printer preflight: audit read-only membuktikan hanya dua
 fixed volume tersedia. C sehat/NTFS tetapi tinggal 1,56 GiB dan D sehat/NTFS
