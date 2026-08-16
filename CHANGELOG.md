@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-17 - SagaBook S233 ledger summary reconciliation
+
+- Informasi `CONFIRMED` dari source/exit evidence S158, S181, S183-S189 dan
+  ancestry production S208.
+- Empat ringkasan stale diganti dengan status accepted/deployed yang konsisten;
+  historical row dan residual authorization gate tetap dipertahankan.
+- Delivery `DOCUMENTATION_VALIDATED`; tidak ada perubahan source produk,
+  database, provider, deployment, activation, atau business readiness.
+- Dokumen terdampak: SagaBook product/changelog/coverage, portfolio, root
+  changelog, dan sync status.
+
 ## 2026-08-17 - SagaBook S232 UAT browser preflight sync
 
 - Informasi `CONFIRMED` dari exact source

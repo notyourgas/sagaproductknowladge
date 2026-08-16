@@ -12,14 +12,23 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-17T05:15:00+07:00 |
-| Branch aktif | `codex/s232-sagabook-uat-browser-preflight-knowledge` pada worktree terisolasi |
+| Waktu pembaruan terakhir | 2026-08-17T06:00:00+07:00 |
+| Branch aktif | `codex/s233-sagabook-ledger-summary-reconciliation-knowledge` pada worktree terisolasi |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `3a30186f4c47748c357f4cbc20a3b34b94f00038` |
-| Informasi terakhir disinkronkan | SagaBook S232 membuktikan Chromium headless dapat dibuka dan ditutup sebelum akses credential. |
+| Baseline sebelum pembaruan | `f2aaf1d429412cec95bed049ff5f102fc20d0971` |
+| Informasi terakhir disinkronkan | SagaBook S233 menyelaraskan empat ringkasan fitur dengan exit evidence dan ancestry production S208. |
 | Status sinkronisasi | `BRANCH_SYNCED / MAIN_MERGE_PENDING` setelah validator, push, dan remote verification. |
-| Konflik | Remote `main` dan rangkaian knowledge SagaBook telah divergen; sinkronisasi dilanjutkan dari branch S231 yang sudah remote-exact tanpa menimpa perubahan produk lain. |
-| Error | Actual unlock dan authenticated Owner/operator UAT SagaBook belum dilakukan; production tetap S208. |
+| Konflik | Remote `main` dan rangkaian knowledge SagaBook telah divergen; sinkronisasi dilanjutkan dari branch S232 yang sudah remote-exact tanpa menimpa perubahan produk lain. |
+| Error | Tidak ada error sinkronisasi; authenticated Owner/operator UAT, dua studio pilot, dan real provider canary tetap residual. Production tetap S208. |
+
+## File yang berubah pada sinkronisasi ini (SagaBook S233 ledger summary reconciliation)
+
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaBook S232 UAT browser preflight)
 
