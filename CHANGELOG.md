@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-18 - SagaBook S238 auth/session ledger reconciliation
+
+- Informasi `CONFIRMED` dari feature sources S133-S135, exit exact, Git
+  ancestry, dan production S208 exact
+  `1765fe8f12fda08666afaeb6bce43ba8312cd7e6`.
+- Ringkasan Auth/session sekarang mencatat coverage accepted,
+  production/activation S208, serta residual authenticated UAT dan dua studio
+  pilot; kode, database, provider, dan runtime production tidak berubah.
+- Status `DOCUMENTATION_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`; `BUSINESS_READY` belum.
+
 ## 2026-08-17 - SagaBook S237 catalog ledger reconciliation
 
 - Informasi `CONFIRMED` dari exit S5/S6 exact, Git ancestry, dan production

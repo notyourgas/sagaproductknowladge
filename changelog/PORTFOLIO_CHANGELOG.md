@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-18 - SagaBook auth/session ledger reconciliation S238
+
+- Ringkasan Auth/session kini menunjuk feature sources S133-S135, exit exact
+  `549b9c88ad38320815bb7e566eb7db2da9eb65a9` dan
+  `bf1766ae84c352cf3687383ca31947a3e619f575`, serta production S208 exact
+  `1765fe8f12fda08666afaeb6bce43ba8312cd7e6`.
+- Recovery 429, idle expiry per tab, sibling-tab isolation, revocation
+  perangkat lain, idempotency, permission/tenant-negative, audit,
+  data-integrity, dan accessibility dicatat sebagai accepted serta deployed.
+- Status `DOCUMENTATION_VALIDATED`; production tidak berubah dan
+  `BUSINESS_READY` tetap menunggu authenticated Owner/operator UAT serta dua
+  studio pilot.
+
 ## 2026-08-17 - SagaBook catalog ledger reconciliation S237
 
 - Ringkasan paket/background/add-on/resource kini menunjuk exit S5

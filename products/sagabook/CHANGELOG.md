@@ -1,5 +1,25 @@
 # SagaBook Changelog
 
+## 2026-08-18 - Auth/session ledger reconciliation S238
+
+- Informasi `CONFIRMED` dari feature sources S133-S135, exit exact
+  `549b9c88ad38320815bb7e566eb7db2da9eb65a9` dan
+  `bf1766ae84c352cf3687383ca31947a3e619f575`, Git ancestry, serta production
+  S208 exact `1765fe8f12fda08666afaeb6bce43ba8312cd7e6`.
+- Before: ringkasan Auth/session masih menyebut idle expiry dan revocation
+  lintas device sebagai gap, sementara PRODUCT masih memisahkan Sprint 2
+  sebagai candidate local-only. After: ringkasan menunjuk coverage 429, idle
+  expiry per tab, sibling-tab isolation, revocation perangkat lain,
+  idempotency, permission/tenant-negative, audit, data-integrity,
+  accessibility, dan production/activation S208 tanpa mengubah snapshot
+  historis tiap irisan.
+- Dampak: heartbeat tidak lagi mengulang gap auth/session yang sudah accepted
+  dan deployed; residual yang benar adalah authenticated Owner/operator UAT
+  nyata dan dua studio pilot.
+- Status `DOCUMENTATION_VALIDATED`; kode, database, provider, production,
+  activation, dan `BUSINESS_READY` tidak berubah. File terdampak: product,
+  coverage ledger, product/portfolio/root changelog, dan sync status.
+
 ## 2026-08-17 - Catalog ledger reconciliation S237
 
 - Informasi `CONFIRMED` dari exit S5 exact

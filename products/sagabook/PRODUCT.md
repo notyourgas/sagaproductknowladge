@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 17 Agustus 2026 20:00 WIB
+Updated: 18 Agustus 2026 02:00 WIB
 Evidence status: production deployment and activation verified; business readiness pending
 
 ## Tujuan dokumen
@@ -15,6 +15,21 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- S238 mengoreksi ringkasan Auth/session yang masih menyebut idle expiry dan
+  revocation lintas device sebagai gap. Feature sources S133 exact
+  `e95e1f2bb02547721bed1ba345a41c5d7baf01d0`, S134 exact
+  `a572f59c2bfddb65686271cab839ba9710e59657`, S135 exact
+  `6e1a3b59e3cd84af9f0e574c1876d3d46b64ab82`, serta exit exact
+  `549b9c88ad38320815bb7e566eb7db2da9eb65a9` dan
+  `bf1766ae84c352cf3687383ca31947a3e619f575` membuktikan recovery 429,
+  idle expiry per tab, sibling-tab isolation, revocation perangkat lain,
+  idempotency, permission/tenant-negative, audit, data-integrity, dan matriks
+  aksesibilitas. Git ancestry ke production S208 exact
+  `1765fe8f12fda08666afaeb6bce43ba8312cd7e6` terverifikasi. Koreksi ini
+  `CONFIRMED / DOCUMENTATION_VALIDATED`; kode, database, provider, release,
+  activation, dan `BUSINESS_READY` tidak berubah. Residual tetap authenticated
+  Owner/operator UAT nyata dan dua studio pilot.
 
 - S237 mengoreksi ringkasan paket/background/add-on/resource yang masih
   menunjuk production lama dan status local-only. Exit S5 exact
@@ -907,28 +922,21 @@ yang dibuktikan di bawah. Business readiness: `NEEDS CONFIRMATION`.
   Coverage integrasi dilanjutkan melalui
   [Feature Coverage Ledger](FEATURE_COVERAGE_LEDGER.md); status release UI/UX
   tidak otomatis berarti `INTEGRATION_VALIDATED` untuk setiap fitur.
-- Auth/session S123 berstatus `UIUX_VALIDATED / INTEGRATION_VALIDATED /
-  LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` pada source
-  `a9125228f8bda3d919a55b1a6ed154355e1bf9da`, release
-  `20260806043833-a912522`. Login sekarang memiliki timeout/cancellation,
-  pencegahan double-submit, recovery network yang jujur, pemulihan fokus, dan
-  state busy yang dapat diakses; tombol logout mobile memiliki nama aksesibel.
-  Login, session, logout, activity log, `last_login_at`, protected 401,
-  capability 403, dan cross-tenant 403 tervalidasi end-to-end. Ini hanya
-  menutup irisan auth/session; coverage produk keseluruhan masih bertahap.
-- Candidate Sprint 2 terbaru pada source
-  `bf1766ae84c352cf3687383ca31947a3e619f575` berstatus
-  `UIUX_VALIDATED / INTEGRATION_VALIDATED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED`. Selain idle expiry per tab, staff terautentikasi
-  kini dapat mengeluarkan perangkat lain melalui password step-up dan request
-  idempoten. Versi sesi dinaikkan secara transactional; current device tetap
+- Auth/session S123 sampai Sprint 2 berstatus `EXIT_GATE_ACCEPTED /
+  SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / UIUX_VALIDATED /
+  INTEGRATION_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` dalam
+  production S208 exact `1765fe8f12fda08666afaeb6bce43ba8312cd7e6`.
+  Baseline S123 mempertahankan timeout/cancellation, double-submit guard,
+  recovery network/fokus, login/session/logout, protected 401, capability 403,
+  dan cross-tenant 403. Sprint 2 menambahkan cooldown 429 authoritative, idle
+  expiry per tab tanpa memperpanjang sesi dari polling pasif, sibling-tab
+  isolation, serta keluarkan perangkat lain melalui password step-up dan
+  request idempoten. Versi sesi dinaikkan transactional; current device tetap
   aktif, perangkat lama menerima 401 `session_revoked`, dan audit tidak memuat
-  password, token, cookie, IP, atau PII. Production belum berubah. Combined
-  browser acceptance gabungan sudah lulus pada empat runtime disposable
-  terisolasi: 13 pass dan 1 intentional skip di mobile/desktop. Full backend
-  969/969, build, npm audit, dan audit 114 paket Composer melalui OSV resmi
-  untuk Packagist menghasilkan nol advisory. Sprint 2 exit gate sudah diterima
-  lokal; production belum berubah dan deploy tetap ditahan sampai S21.
+  password, token, cookie, IP, atau PII. Combined browser acceptance 13 pass
+  dan 1 intentional skip, full backend 969/969, build, npm audit, serta OSV
+  Packagist 114 paket/0 advisory tetap menjadi evidence exit; authenticated
+  Owner/operator UAT nyata dan dua studio pilot masih residual bisnis.
 - Tenant/cabang S124 aktif pada source
   `f6988cb945c5ca224015d7fecbc94e81c535fc60`, release immutable
   `20260806053037-f6988cb`, dengan rollback
