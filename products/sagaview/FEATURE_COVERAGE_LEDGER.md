@@ -1,6 +1,17 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 17 Agustus 2026 09:17 WIB
+Evidence cut-off: 17 Agustus 2026 10:12 WIB
+
+S233 physical UAT finalize printer binding: exact Studio
+`c81e934cd2907196f8be35d764ced7b0a76b7068` menutup gap TOCTOU printer
+setelah Preflight. Finalize kini memeriksa ulang Print Spooler, identitas
+hash-only printer/driver/port/versi, serta antrean kosong. Schema naik ke v7
+dan release gate menolak v6. Red-green contract, 217 unit,
+format/lint/typecheck, build 2.121 client/195 SSR, bundle budget, tiga simulasi,
+physical fail-closed probe, serta npm audit nol lulus. Status `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; 14 gate fisik tetap belum lulus
+karena fixed NTFS ≥10 GiB dan EPSON L8050/driver belum tersedia. Production
+tidak berubah.
 
 S232 physical UAT finalize storage binding: exact Studio
 `72e7a0a940a3e428cb8cdc6bb4e1d166abeea45d` menutup gap TOCTOU setelah

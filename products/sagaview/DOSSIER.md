@@ -1,5 +1,22 @@
 # SagaView Dossier
 
+## S233 physical UAT finalize printer binding
+
+Studio exact `c81e934cd2907196f8be35d764ced7b0a76b7068` mengikat printer
+physical output UAT dari Preflight sampai Finalize. Sebelumnya EPSON L8050,
+driver, Print Spooler, dan antrean kosong hanya diperiksa saat Preflight.
+Finalize kini memeriksa ulang Spooler aktif, printer/driver yang sama, serta
+antrean kembali kosong sebelum evidence dapat ditutup.
+
+Queue dipilih deterministik bila lebih dari satu perangkat cocok. Identitas
+queue, driver, port, dan versi driver hanya disimpan sebagai SHA-256; nama,
+port, dan path driver mentah tidak dipersistenkan. Schema preflight/index naik
+ke v7 dan release contract menolak v6. Red-green contract, 217 unit,
+format/lint/typecheck, build 2.121 client/195 SSR, bundle budget, tiga simulasi,
+physical fail-closed probe, dan npm audit nol lulus. Status `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production, printer/service,
+database, foto/path/output customer, pembayaran, dan SagaBook tidak berubah.
+
 ## S232 physical UAT finalize storage binding
 
 Studio exact `72e7a0a940a3e428cb8cdc6bb4e1d166abeea45d` mengikat storage

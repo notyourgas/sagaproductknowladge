@@ -2,6 +2,17 @@
 
 Updated: 17 Agustus 2026
 
+S233 menutup celah perubahan printer antara Preflight dan Finalize pada Studio
+exact `c81e934cd2907196f8be35d764ced7b0a76b7068`. Finalize sekarang
+memeriksa ulang Print Spooler, printer/driver yang sama, dan antrean cetak
+kosong. Identitas queue, driver, port, dan versi driver hanya disimpan sebagai
+SHA-256; data mentah tidak masuk evidence. Schema evidence naik ke v7 dan
+release gate menolak v6. Tes merah-hijau, 217 unit, format/lint/typecheck,
+build 2.121 client/195 SSR, bundle budget, tiga simulasi storage, physical
+fail-closed probe, dan npm audit nol lulus. Status `PUSHED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; 14 gate fisik tetap menunggu fixed NTFS ≥10 GiB
+serta EPSON L8050/driver. Production tidak berubah.
+
 S232 menutup celah pergantian storage antara Preflight dan Finalize pada Studio
 exact `72e7a0a940a3e428cb8cdc6bb4e1d166abeea45d`. Finalize sekarang wajib
 menerima folder output yang sama, membuktikan identitas volume yang sama, lalu

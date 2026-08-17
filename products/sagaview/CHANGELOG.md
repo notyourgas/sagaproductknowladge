@@ -1,5 +1,20 @@
 # SagaView Changelog
 
+## 2026-08-17 - S233 physical UAT finalize printer binding
+
+- Klasifikasi: `CONFIRMED` release-blocker tooling correction.
+- Before: printer, driver, Spooler, dan antrean kosong hanya dibuktikan saat
+  Preflight; perubahan selama UAT belum ditolak oleh Finalize.
+- After: Finalize wajib membuktikan Spooler aktif, printer/driver yang sama,
+  serta antrean kembali kosong. Identitas dicatat hash-only dan schema v7
+  menggantikan v6.
+- Evidence: red-green contract, 217 unit, format/lint/typecheck, build 2.121
+  client/195 SSR, bundle budget, tiga simulasi, physical fail-closed probe, dan
+  npm audit nol.
+- Delivery: exact Studio `c81e934cd2907196f8be35d764ced7b0a76b7068`
+  `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; physical UAT tetap
+  blocked oleh storage/printer mesin dan production tidak berubah.
+
 ## 2026-08-17 - S232 physical UAT finalize storage binding
 
 - Klasifikasi: `CONFIRMED` release-blocker tooling correction.

@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-08-17 - SagaView physical UAT finalize printer binding S233
+
+- Exact Studio `c81e934cd2907196f8be35d764ced7b0a76b7068` memeriksa ulang
+  Spooler, printer/driver yang sama, dan antrean kosong saat Finalize.
+- Evidence printer hash-only; schema v7, 217 unit, build/budget, simulasi,
+  physical fail-closed probe, dan audit dependency nol lulus.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; physical UAT
+  tetap blocked oleh hardware/storage mesin dan production tidak berubah.
+
 ## 2026-08-17 - SagaBook current ledger summary reconciliation S233
 
 - Empat ringkasan SagaBook kini selaras dengan exit gate availability/slot,

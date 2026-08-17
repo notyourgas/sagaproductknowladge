@@ -8,7 +8,7 @@ diubah menjadi klaim publik sebelum ditutup dengan bukti atau keputusan owner.
 
 ## Konteks
 
-Daftar ini berlaku pada evidence cut-off 17 Agustus 2026 09:17 WIB dan harus diperbarui
+Daftar ini berlaku pada evidence cut-off 17 Agustus 2026 10:12 WIB dan harus diperbarui
 ketika keputusan atau release baru menutup gap.
 
 ## Cara memakai
@@ -22,10 +22,10 @@ ketika keputusan atau release baru menutup gap.
 
 ## Prioritas tinggi
 
-SagaView S232 sudah menutup gap tooling pergantian storage antara Preflight dan
-Finalize dengan binding folder/volume dan recheck fixed NTFS ≥10 GiB. Residual
-yang belum tertutup tetap bersifat fisik: fixed NTFS yang memenuhi kapasitas,
-EPSON L8050/driver, serta eksekusi matriks 14 gate pada exact kandidat.
+SagaView S233 sudah menutup gap tooling perubahan printer setelah Preflight
+dengan binding hash printer/driver serta recheck Spooler dan antrean kosong.
+Residual yang belum tertutup tetap bersifat fisik: fixed NTFS ≥10 GiB, EPSON
+L8050/driver, serta eksekusi matriks 14 gate pada exact kandidat.
 
 | ID | Produk/area | Label | Pertanyaan atau gap | Bukti penutup |
 |---|---|---|---|---|

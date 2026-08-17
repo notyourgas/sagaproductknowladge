@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-17 - SagaView S233 finalize printer binding sync
+
+- Informasi `CONFIRMED` dari exact Studio
+  `c81e934cd2907196f8be35d764ced7b0a76b7068` dan gate exact-worktree.
+- Finalize physical UAT kini memeriksa ulang Spooler, printer/driver yang sama,
+  dan antrean kosong; evidence hash-only dan schema v7.
+- Delivery `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; physical UAT
+  tetap blocked oleh kesiapan mesin dan production tidak berubah.
+- Dokumen terdampak: SagaView product/dossier/changelog/coverage, gaps,
+  portfolio/master, root changelog, dan sync status.
+
 ## 2026-08-17 - SagaBook S233 ledger summary reconciliation
 
 - Informasi `CONFIRMED` dari source/exit evidence S158, S181, S183-S189 dan
