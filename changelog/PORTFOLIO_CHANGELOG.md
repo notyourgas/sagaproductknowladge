@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-17 - SagaBook catalog ledger reconciliation S237
+
+- Ringkasan paket/background/add-on/resource kini menunjuk exit S5
+  `ce537667f314e80b8b94479f0defb9d60524f4f0`, exit S6
+  `57310ddd1958dc5fc9f585196b8757ffeb051c41`, dan production S208 exact
+  `1765fe8f12fda08666afaeb6bce43ba8312cd7e6`.
+- Coverage CRUD/read-after-write, stale/retry, dependency/delete recovery,
+  double-submit, permission/tenant-negative, audit, data-integrity, dan
+  accessibility dicatat sebagai accepted serta deployed.
+- Status `DOCUMENTATION_VALIDATED`; production tidak berubah dan
+  `BUSINESS_READY` tetap menunggu authenticated Owner/operator UAT serta dua
+  studio pilot.
+
 ## 2026-08-17 - SagaView physical receipt single-read binding S238
 
 - Exact Studio `2fadbe9d54617307bfd8c84b4250bbbfa28caeca` membuat checksum dan JSON
