@@ -1,5 +1,21 @@
 # SagaBook Changelog
 
+## 2026-08-17 - Tenant/cabang ledger reconciliation S236
+
+- Informasi `CONFIRMED` dari combined exit Sprint 3-4 exact
+  `4ee167ecbc95892a113c9036faada5de85994bb8`, Git ancestry, dan production
+  S208 exact `1765fe8f12fda08666afaeb6bce43ba8312cd7e6`.
+- Before: ringkasan Tenant/cabang masih menunjuk production `0894df00`, status
+  local-only, dan mengarahkan heartbeat ke S5-S6 yang sudah lewat. After:
+  ringkasan menunjuk exit source authoritative, 7/7 profil combined gate, dan
+  production/activation S208 tanpa mengubah snapshot historis tiap irisan.
+- Dampak: heartbeat tidak lagi mengulang coverage cabang yang sudah accepted
+  dan deployed; residual yang benar adalah authenticated Owner/operator UAT
+  nyata dan dua studio pilot.
+- Status `DOCUMENTATION_VALIDATED`; production, activation, dan
+  `BUSINESS_READY` tidak berubah. File terdampak: product, coverage ledger,
+  product/portfolio/root changelog, dan sync status.
+
 ## 2026-08-17 - Public booking ledger reconciliation S235
 
 - Informasi `CONFIRMED` dari row feature S173-S179, combined S183, Git ancestry,

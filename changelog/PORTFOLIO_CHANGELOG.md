@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-17 - SagaBook Tenant/cabang ledger reconciliation S236
+
+- Ringkasan Tenant/cabang kini menunjuk combined exit Sprint 3-4 exact
+  `4ee167ecbc95892a113c9036faada5de85994bb8` dan production S208 exact
+  `1765fe8f12fda08666afaeb6bce43ba8312cd7e6`.
+- Coverage 7/7 profil untuk write/retry, context/revocation/refetch/delete,
+  permission/tenant-negative, audit, dan read-after-write dicatat sebagai
+  accepted serta deployed; tidak ada gap kode READY pada ringkasan ini.
+- Status `DOCUMENTATION_VALIDATED`; production tidak berubah dan
+  `BUSINESS_READY` tetap menunggu authenticated Owner/operator UAT serta dua
+  studio pilot.
+
 ## 2026-08-17 - SagaView reviewed physical receipt checksum binding S237
 
 - Exact Studio `894f697590b04d472de8b32d506fe66f74afe0ed` mengikat receipt physical

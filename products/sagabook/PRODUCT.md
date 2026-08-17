@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 17 Agustus 2026 14:00 WIB
+Updated: 17 Agustus 2026 16:09 WIB
 Evidence status: production deployment and activation verified; business readiness pending
 
 ## Tujuan dokumen
@@ -15,6 +15,16 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- S236 mengoreksi ringkasan Tenant/cabang yang masih menunjuk production lama
+  dan kandidat local-only. Combined exit Sprint 3-4 exact
+  `4ee167ecbc95892a113c9036faada5de85994bb8` membuktikan 7/7 profil untuk
+  write/retry, context/revocation/refetch/delete, permission/tenant-negative,
+  audit, dan read-after-write; Git ancestry ke production S208 exact
+  `1765fe8f12fda08666afaeb6bce43ba8312cd7e6` terverifikasi. Koreksi ini
+  `CONFIRMED / DOCUMENTATION_VALIDATED`; kode, database, provider, release,
+  activation, dan `BUSINESS_READY` tidak berubah. Residual tetap authenticated
+  Owner/operator UAT nyata dan dua studio pilot.
 
 - S235 mengoreksi ringkasan Public booking yang masih menyebut negative fresh
   belum lengkap. Feature-level S173-S179 dan combined S183 membuktikan sembilan
