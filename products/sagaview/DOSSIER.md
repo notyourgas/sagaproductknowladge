@@ -1,5 +1,20 @@
 # SagaView Dossier
 
+## S235 physical UAT final availability receipt
+
+Studio exact `831ea54bf979fc2bf8d24f9d33f07f77d7fd4053` membuat hasil recheck
+availability S234 dapat diaudit langsung dari `evidence-index.json`. Sebelumnya
+Finalize sudah mewajibkan Studio dan API tetap HTTP 200, tetapi status akhir itu
+belum tercatat dalam receipt.
+
+Evidence index v9 menambahkan `finalAvailability` berisi status HTTP akhir serta
+SHA-256 URL Studio/API yang sudah diikat Preflight. URL mentah, credential, path
+lokal, foto, output, dan data customer tidak disimpan. Release contract menolak
+evidence sebelum v9. Contract 18/18, 219 unit, format/lint/typecheck, build 2.121
+client/195 SSR, bundle 299,7 KiB/450 KiB, tiga simulasi storage, dan npm audit
+nol lulus. Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+production tidak berubah dan 14 gate fisik masih residual.
+
 ## S234 physical UAT finalize availability binding
 
 Studio exact `d9d95f518fd1cb49cc8e235b1afb935789954fe6` mengikat

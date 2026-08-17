@@ -1,6 +1,16 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 17 Agustus 2026 11:20 WIB
+Evidence cut-off: 17 Agustus 2026 14:11 WIB
+
+S235 physical UAT final availability receipt: exact Studio
+`831ea54bf979fc2bf8d24f9d33f07f77d7fd4053` mencatat hasil recheck S234 di
+evidence index v9. `finalAvailability` berisi status HTTP akhir Studio/API dan
+SHA-256 URL dari Preflight tanpa URL mentah. Release gate menolak evidence lama.
+Contract 18/18, 219 unit, format/lint/typecheck, build 2.121 client/195 SSR,
+bundle 299,7 KiB/450 KiB, tiga simulasi storage, dan npm audit nol lulus. Status
+`PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; 14 gate fisik tetap
+belum lulus karena fixed NTFS minimal 10 GiB dan EPSON L8050/driver belum
+tersedia. Production tidak berubah.
 
 S234 physical UAT finalize availability binding: exact Studio
 `d9d95f518fd1cb49cc8e235b1afb935789954fe6` menutup gap TOCTOU route

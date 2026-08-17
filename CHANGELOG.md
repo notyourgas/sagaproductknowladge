@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-17 - SagaView S235 final availability receipt sync
+
+- Informasi `CONFIRMED` dari exact Studio
+  `831ea54bf979fc2bf8d24f9d33f07f77d7fd4053` dan gate exact-worktree.
+- Evidence index v9 mencatat status HTTP akhir serta hash URL Studio/API tanpa
+  URL mentah; release contract menolak evidence lama.
+- Delivery `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; physical UAT
+  tetap blocked oleh kesiapan mesin dan production tidak berubah.
+- Dokumen terdampak: SagaView product/dossier/changelog/coverage, gaps,
+  portfolio/master, root changelog, dan sync status.
+
 ## 2026-08-17 - SagaBook S235 Public booking ledger reconciliation
 
 - Informasi `CONFIRMED` dari exit source S173-S179, combined S183, dan ancestry

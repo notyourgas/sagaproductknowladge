@@ -8,7 +8,7 @@ diubah menjadi klaim publik sebelum ditutup dengan bukti atau keputusan owner.
 
 ## Konteks
 
-Daftar ini berlaku pada evidence cut-off 17 Agustus 2026 11:20 WIB dan harus diperbarui
+Daftar ini berlaku pada evidence cut-off 17 Agustus 2026 14:11 WIB dan harus diperbarui
 ketika keputusan atau release baru menutup gap.
 
 ## Cara memakai
@@ -22,10 +22,10 @@ ketika keputusan atau release baru menutup gap.
 
 ## Prioritas tinggi
 
-SagaView S234 sudah menutup gap tooling availability setelah Preflight dengan
-binding hash URL Studio/API health dan recheck HTTP 200 saat Finalize. Residual
-yang belum tertutup tetap bersifat fisik: fixed NTFS ≥10 GiB, EPSON L8050/
-driver, serta eksekusi matriks 14 gate pada exact kandidat.
+SagaView S235 sudah membuat recheck availability akhir dapat diaudit melalui
+status HTTP dan hash URL di evidence index v9. Residual yang belum tertutup
+tetap bersifat fisik: fixed NTFS minimal 10 GiB, EPSON L8050/driver, serta
+eksekusi matriks 14 gate pada exact kandidat.
 
 | ID | Produk/area | Label | Pertanyaan atau gap | Bukti penutup |
 |---|---|---|---|---|

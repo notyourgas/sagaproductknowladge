@@ -2,6 +2,16 @@
 
 Updated: 17 Agustus 2026
 
+S235 menambahkan receipt availability akhir pada Studio exact
+`831ea54bf979fc2bf8d24f9d33f07f77d7fd4053`. Evidence index v9 sekarang
+mencatat status HTTP akhir Studio/API dan SHA-256 URL yang sudah diikat oleh
+Preflight; URL mentah tidak disimpan. Release gate menolak evidence sebelum v9.
+Contract 18/18, 219 unit, format/lint/typecheck, build 2.121 client/195 SSR,
+bundle terbesar 299,7 KiB dari batas 450 KiB, tiga simulasi storage, dan npm
+audit nol lulus. Status `PUSHED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; 14 gate fisik tetap menunggu fixed NTFS minimal 10
+GiB serta EPSON L8050/driver. Production tidak berubah.
+
 S234 menutup celah availability antara Preflight dan Finalize pada Studio exact
 `d9d95f518fd1cb49cc8e235b1afb935789954fe6`. Preflight v8 menyimpan
 SHA-256 URL Studio dan API health; Finalize menolak URL yang berubah dan wajib

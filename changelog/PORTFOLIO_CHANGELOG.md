@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-17 - SagaView physical UAT final availability receipt S235
+
+- Exact Studio `831ea54bf979fc2bf8d24f9d33f07f77d7fd4053` mencatat status HTTP
+  akhir serta hash URL Studio/API dalam evidence index v9.
+- Receipt tetap public-safe tanpa URL mentah, credential, path lokal, foto,
+  output, atau data customer; 219 unit, build/budget, simulasi, dan audit nol
+  lulus.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; physical UAT
+  tetap blocked oleh hardware/storage mesin dan production tidak berubah.
+
 ## 2026-08-17 - SagaBook Public booking ledger reconciliation S235
 
 - Ringkasan Public booking kini menunjuk ke exit S173-S179 dan combined S183;

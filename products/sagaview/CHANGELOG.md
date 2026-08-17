@@ -1,5 +1,20 @@
 # SagaView Changelog
 
+## 2026-08-17 - S235 physical UAT final availability receipt
+
+- Klasifikasi: `CONFIRMED` release-evidence correction.
+- Before: recheck HTTP 200 S234 menghentikan Finalize bila route mati, tetapi
+  hasil akhir belum tercatat dalam evidence index.
+- After: evidence index v9 mencatat status HTTP akhir dan SHA-256 URL terikat
+  dalam `finalAvailability`; URL mentah tetap tidak disimpan dan release gate
+  menolak evidence lama.
+- Evidence: red-green contract 18/18, 219 unit, format/lint/typecheck, build
+  2.121 client/195 SSR, bundle 299,7 KiB/450 KiB, tiga simulasi storage, dan npm
+  audit nol.
+- Delivery: exact Studio `831ea54bf979fc2bf8d24f9d33f07f77d7fd4053`
+  `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; physical UAT tetap
+  blocked oleh storage/printer mesin dan production tidak berubah.
+
 ## 2026-08-17 - S234 physical UAT finalize availability binding
 
 - Klasifikasi: `CONFIRMED` release-blocker tooling correction.
