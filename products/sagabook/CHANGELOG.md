@@ -1,5 +1,24 @@
 # SagaBook Changelog
 
+## 2026-08-18 - Admin PII ledger reconciliation S239
+
+- Informasi `CONFIRMED` dari source S171 exact
+  `33aa5261d23656fd452826f82cfef4eda377eca4`, Git ancestry, release integrasi
+  S199, dan production S208 exact
+  `1765fe8f12fda08666afaeb6bce43ba8312cd7e6`.
+- Before: masking PII admin hanya tercatat sebagai snapshot candidate
+  local-only dan belum memiliki ringkasan current. After: ringkasan current
+  mencatat masking default, reveal/copy/WhatsApp explicit, response
+  no-store/private, state sementara, permission tenant/cabang, audit tanpa PII,
+  recovery/double-submit, accessibility, dan production/activation S208 tanpa
+  mengubah snapshot historis S171.
+- Dampak: prioritas PII admin tidak akan diulang sebagai gap kode; residual
+  yang benar adalah authenticated Owner/operator UAT nyata dan dua studio
+  pilot.
+- Status `DOCUMENTATION_VALIDATED`; kode, database, provider, production,
+  activation, dan `BUSINESS_READY` tidak berubah. File terdampak: product,
+  coverage ledger, product/portfolio/root changelog, dan sync status.
+
 ## 2026-08-18 - Auth/session ledger reconciliation S238
 
 - Informasi `CONFIRMED` dari feature sources S133-S135, exit exact

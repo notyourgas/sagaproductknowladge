@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 18 Agustus 2026 02:00 WIB
+Updated: 18 Agustus 2026 04:11 WIB
 Evidence status: production deployment and activation verified; business readiness pending
 
 ## Tujuan dokumen
@@ -15,6 +15,20 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- S239 menambahkan ringkasan current untuk perlindungan PII admin yang masih
+  hanya tercatat sebagai candidate S171. Source exact
+  `33aa5261d23656fd452826f82cfef4eda377eca4` membuktikan masking default pada
+  Dashboard, Booking list, dan Booking Detail; akses penuh hanya melalui aksi
+  eksplisit dalam scope tenant/cabang yang sah, response `no-store/private`,
+  state browser sementara, serta audit tanpa nomor atau PII lain. Gate 15/15
+  (233 assertion), Playwright 6/6 pada 390x844, 768x1024, dan 1440x900,
+  build/typecheck/design/Pint, serta audit dependency lulus. Git ancestry ke
+  production S199 dan S208 exact
+  `1765fe8f12fda08666afaeb6bce43ba8312cd7e6` terverifikasi. Koreksi ini
+  `CONFIRMED / DOCUMENTATION_VALIDATED`; kode, database, provider, release,
+  activation, dan `BUSINESS_READY` tidak berubah. Residual tetap authenticated
+  Owner/operator UAT nyata dan dua studio pilot.
 
 - S238 mengoreksi ringkasan Auth/session yang masih menyebut idle expiry dan
   revocation lintas device sebagai gap. Feature sources S133 exact
@@ -477,15 +491,17 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   functional regression 5/5, build/typecheck/design/format, serta dependency
   audit lulus. Status `SECURITY_VALIDATED / UIUX_VALIDATED / LOCAL_VALIDATED /
   IMPLEMENTED_NOT_DEPLOYED`; production tetap S170.
-- Candidate S171 `33aa5261d23656fd452826f82cfef4eda377eca4` membuat
-  nomor WhatsApp customer tersamarkan secara default di Dashboard, Booking
-  list, dan Booking Detail. Akses lengkap hanya melalui tindakan eksplisit
-  Tampilkan, Salin, atau WhatsApp dalam scope tenant/cabang yang sah; audit
-  menyimpan jenis tindakan dan role tanpa PII. Gate 15/15 (233 assertion),
-  Playwright 6/6 pada mobile/tablet/desktop, build, design audit, typecheck,
-  format, serta npm/Composer audit lulus. Status `SECURITY_VALIDATED /
-  UIUX_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
-  tetap S170.
+- S171 `33aa5261d23656fd452826f82cfef4eda377eca4` membuat nomor WhatsApp
+  customer tersamarkan secara default di Dashboard, Booking list, dan Booking
+  Detail. Akses lengkap hanya melalui tindakan eksplisit Tampilkan, Salin,
+  atau WhatsApp dalam scope tenant/cabang yang sah; response tidak dicache,
+  reveal hanya state browser sementara, dan audit menyimpan jenis tindakan
+  serta role tanpa PII. Gate 15/15 (233 assertion), Playwright 6/6 pada
+  mobile/tablet/desktop, build, design audit, typecheck, format, serta
+  npm/Composer audit lulus. Source ini berada dalam ancestry release integrasi
+  S199 dan production S208; status current `SECURITY_VALIDATED /
+  UIUX_VALIDATED / INTEGRATION_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`, sedangkan authenticated UAT dan pilot tetap residual.
 - Source integrasi S170 `f69170a7e61080f90a3bcea7df1f22f5612f0369`
   aktif sebagai release immutable `20260809153848-f69170a`; rollback langsung
   `20260809083131-5c76735` tersedia. Branch source `main` menunjuk exact SHA
