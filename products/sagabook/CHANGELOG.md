@@ -1,5 +1,20 @@
 # SagaBook Changelog
 
+## 2026-08-17 - Public booking ledger reconciliation S235
+
+- Informasi `CONFIRMED` dari row feature S173-S179, combined S183, Git ancestry,
+  dan release S208 exact `1765fe8f12fda08666afaeb6bce43ba8312cd7e6`.
+- Before: ringkasan Public booking hanya mencatat happy path dan menyebut
+  failure/tenant-negative belum lengkap. After: ringkasan menunjuk ke coverage
+  recovery, security, API, database, accessibility, dan production yang sudah
+  accepted tanpa mengubah snapshot historis tiap irisan.
+- Dampak: heartbeat tidak lagi mengulang negative/recovery storefront yang
+  sudah hijau; residual yang benar adalah authenticated Owner/operator UAT,
+  dua studio pilot, dan real provider canary berizin.
+- Status `DOCUMENTATION_VALIDATED`; production, activation, dan
+  `BUSINESS_READY` tidak berubah. File terdampak: product, coverage ledger,
+  product/portfolio/root changelog, dan sync status.
+
 ## 2026-08-17 - Booking dan template ledger reconciliation S234
 
 - Informasi `CONFIRMED` dari row feature S172, S182, S190, Git ancestry, dan

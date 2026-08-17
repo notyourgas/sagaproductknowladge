@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-17 - SagaBook S235 Public booking ledger reconciliation
+
+- Informasi `CONFIRMED` dari exit source S173-S179, combined S183, dan ancestry
+  production S208.
+- Ringkasan Public booking yang stale diganti dengan status accepted/deployed;
+  historical row dan residual authorization gate tetap dipertahankan.
+- Delivery `DOCUMENTATION_VALIDATED`; tidak ada perubahan source produk,
+  database, provider, deployment, activation, atau business readiness.
+- Dokumen terdampak: SagaBook product/changelog/coverage, portfolio, root
+  changelog, dan sync status.
+
 ## 2026-08-17 - SagaBook S234 booking/template ledger reconciliation
 
 - Informasi `CONFIRMED` dari exit source S172, S182, S190 dan ancestry

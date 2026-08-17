@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-17 - SagaBook Public booking ledger reconciliation S235
+
+- Ringkasan Public booking kini menunjuk ke exit S173-S179 dan combined S183;
+  seluruh source terverifikasi dalam ancestry production S208.
+- Koreksi public-safe ini menutup status stale untuk sembilan langkah,
+  negative/recovery, tenant/permission, state preservation, dan read-after-write.
+- Status `DOCUMENTATION_VALIDATED`; production, activation, dan business
+  readiness tidak berubah. Residual tetap authenticated UAT, dua pilot, dan
+  real provider canary berizin.
+
 ## 2026-08-17 - SagaBook booking dan template ledger reconciliation S234
 
 - Ringkasan Booking Admin/Task Center kini menunjuk ke exit S172 dan template

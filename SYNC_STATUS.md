@@ -12,14 +12,23 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-17T12:10:55+07:00 |
-| Branch aktif | `codex/s234-sagabook-booking-template-ledger-reconcile` pada worktree terisolasi exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-17T14:00:27+07:00 |
+| Branch aktif | `codex/s235-sagabook-public-booking-ledger-reconcile` pada worktree terisolasi exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `c86040d669dad17a23100c2dbf3325dbc07752dd` |
-| Informasi terakhir disinkronkan | SagaBook S234 Booking Admin/Task Center dan template existing ledger reconciliation. |
+| Baseline sebelum pembaruan | `0dbce39e227fff1f9359af6313d7ad2d0dc61525` |
+| Informasi terakhir disinkronkan | SagaBook S235 Public booking ledger reconciliation. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
-| Konflik | Sinkronisasi SagaBook diterapkan dari exact `origin/main`; pembaruan SagaView S234 existing dipertahankan utuh. |
-| Error | Tidak ada error sinkronisasi; authenticated Owner/operator UAT nyata dan dua studio pilot tetap residual `BUSINESS_READY`. |
+| Konflik | Sinkronisasi SagaBook diterapkan dari exact `origin/main`; S234 SagaBook dan SagaView existing dipertahankan utuh. |
+| Error | Tidak ada error sinkronisasi; authenticated Owner/operator UAT nyata, dua studio pilot, dan real provider canary tetap residual `BUSINESS_READY`. |
+
+## File yang berubah pada sinkronisasi ini (SagaBook S235 Public booking ledger reconciliation)
+
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaBook S234 booking/template ledger reconciliation)
 
