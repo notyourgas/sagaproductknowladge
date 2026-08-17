@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-17 - SagaView physical output UAT preflight S230
+
+- Exact kandidat Studio `c132c04eb483ac3ab699d424af1ed5acf395a4b4` dan
+  backend `a648c180310e197934ac84eed8519e51ae90f0eb` tetap bersih/pushed;
+  Print Spooler aktif otomatis.
+- Mesin belum memiliki fixed NTFS bebas minimal 10 GiB atau EPSON
+  L8050/driver; media removable exFAT tidak memenuhi kontrak output.
+- Status `PHYSICAL_UAT_PREFLIGHT_BLOCKED / IMPLEMENTED_NOT_DEPLOYED`; 14 gate
+  fisik belum dijalankan dan production tidak berubah.
+
 ## 2026-08-17 - SagaView restore rehearsal validated S229
 
 - Archive dan bundle pasangan S228 berhasil dipulihkan secara disposable;

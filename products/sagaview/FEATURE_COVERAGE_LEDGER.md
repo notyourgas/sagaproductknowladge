@@ -1,6 +1,15 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 17 Agustus 2026 06:26 WIB
+Evidence cut-off: 17 Agustus 2026 07:12 WIB
+
+S230 physical output UAT preflight: kandidat exact Studio
+`c132c04eb483ac3ab699d424af1ed5acf395a4b4` dan backend
+`a648c180310e197934ac84eed8519e51ae90f0eb` tetap bersih/pushed; Print Spooler
+aktif otomatis. Prasyarat belum lulus karena dua fixed NTFS hanya memiliki
+6,44 GiB dan 0,60 GiB bebas, media 26,82 GiB adalah removable exFAT, dan queue
+serta driver EPSON L8050 tidak tersedia. Matriks 14 gate fisik belum
+dijalankan. Status `PHYSICAL_UAT_PREFLIGHT_BLOCKED /
+IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
 
 S229 disposable restore rehearsal: scan path traversal, extraction,
 filesystem parity terhadap exact clean worktree untuk 359 file Studio dan

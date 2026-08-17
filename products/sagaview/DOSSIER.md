@@ -1,5 +1,23 @@
 # SagaView Dossier
 
+## S230 physical output UAT preflight blocked
+
+Audit read-only dijalankan pada kandidat exact Studio
+`c132c04eb483ac3ab699d424af1ed5acf395a4b4` dan backend
+`a648c180310e197934ac84eed8519e51ae90f0eb`; kedua worktree bersih dan remote
+memuat exact commit. Print Spooler berjalan dengan startup otomatis. Namun,
+tidak ada fixed NTFS dengan ruang bebas minimum 10 GiB: dua volume internal
+tersisa 6,44 GiB dan 0,60 GiB. Media removable mempunyai 26,82 GiB tetapi
+berformat exFAT, sehingga tidak sah sebagai target output kontrak UAT.
+
+Daftar printer hanya memuat printer virtual; queue EPSON L8050 dan driver
+EPSON/L8050 tidak ditemukan. Karena prasyarat fisik belum terpenuhi, runner
+tidak dipaksakan dan 14 gate physical output UAT—termasuk galeri 50/200/500,
+permission/recovery, quota/disk-full, offline/no-upload, isolasi 10 sesi, serta
+print portrait/landscape—belum dijalankan. Status
+`PHYSICAL_UAT_PREFLIGHT_BLOCKED / IMPLEMENTED_NOT_DEPLOYED`; production,
+database, pembayaran, SagaBook, serta data customer tidak berubah.
+
 ## S229 disposable restore rehearsal validated
 
 Restore dijalankan dari salinan media terpisah S228 tanpa menyentuh production

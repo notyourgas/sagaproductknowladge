@@ -1,8 +1,17 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 17 Agustus 2026 06:26 WIB
+Evidence cut-off: 17 Agustus 2026 07:12 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
+
+SagaView S230 berstatus `PHYSICAL_UAT_PREFLIGHT_BLOCKED /
+IMPLEMENTED_NOT_DEPLOYED`. Exact kandidat Studio
+`c132c04eb483ac3ab699d424af1ed5acf395a4b4` dan backend
+`a648c180310e197934ac84eed8519e51ae90f0eb` tetap bersih/pushed dan Print
+Spooler aktif otomatis. Dua fixed NTFS hanya memiliki 6,44 GiB dan 0,60 GiB
+bebas, media 26,82 GiB adalah removable exFAT, serta queue/driver EPSON L8050
+belum tersedia. Karena itu 14 gate physical output UAT belum dijalankan;
+production dan data customer tidak berubah.
 
 SagaView S229 berstatus `RESTORE_REHEARSAL_VALIDATED /
 RELEASE_ARTIFACT_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.

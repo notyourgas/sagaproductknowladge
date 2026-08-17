@@ -1,5 +1,18 @@
 # SagaView Changelog
 
+## 2026-08-17 - S230 physical output UAT preflight
+
+- Klasifikasi: `CONFIRMED` read-only readiness evidence.
+- Before: residual physical output UAT masih tercatat umum sebagai kebutuhan
+  fixed NTFS 10 GiB dan EPSON L8050/driver tanpa snapshot mesin terkini.
+- After: exact candidate tetap bersih/pushed dan Spooler aktif otomatis, tetapi
+  dua fixed NTFS hanya memiliki 6,44 GiB dan 0,60 GiB; media 26,82 GiB adalah
+  removable exFAT; queue serta driver EPSON L8050 tidak tersedia.
+- Dampak: 14 gate fisik tidak dijalankan pada lingkungan yang tidak sah dan
+  klaim readiness tetap fail-closed.
+- Delivery: `PHYSICAL_UAT_PREFLIGHT_BLOCKED / IMPLEMENTED_NOT_DEPLOYED`;
+  production, database, SagaBook, payment, dan data customer tidak berubah.
+
 ## 2026-08-17 - S229 disposable restore rehearsal validated
 
 - Klasifikasi: `CONFIRMED` release-blocker evidence.

@@ -12,14 +12,26 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-17T06:26:46+07:00 |
-| Branch aktif | `codex/s229-sagaview-restore-closure` pada worktree terisolasi exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-17T07:12:48+07:00 |
+| Branch aktif | `codex/s230-sagaview-physical-uat-preflight` pada worktree terisolasi exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `70937f32425e967fda14c11c9f4f80498d45f3ce` |
-| Informasi terakhir disinkronkan | SagaView S229 restore rehearsal closure dan exact artifact evidence. |
+| Baseline sebelum pembaruan | `6f4c3d2b17238734608e5438eb27b722ad76aec1` |
+| Informasi terakhir disinkronkan | SagaView S230 physical output UAT preflight dan blocker mesin terkini. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
 | Konflik | Checkout knowledge lain tidak disentuh; sinkronisasi dilakukan dari worktree terisolasi exact `origin/main`. |
-| Error | Tidak ada blocker restore tersisa; physical output UAT dan deploy tetap terpisah. |
+| Error | Physical output UAT blocked oleh fixed NTFS minimum 10 GiB serta EPSON L8050/driver; production tidak berubah. |
+
+## File yang berubah pada sinkronisasi ini (SagaView S230 physical output UAT preflight)
+
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/DOSSIER.md`
+- `products/sagaview/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaView S229 restore rehearsal closure)
 

@@ -8,7 +8,7 @@ diubah menjadi klaim publik sebelum ditutup dengan bukti atau keputusan owner.
 
 ## Konteks
 
-Daftar ini berlaku pada evidence cut-off 17 Agustus 2026 06:26 WIB dan harus diperbarui
+Daftar ini berlaku pada evidence cut-off 17 Agustus 2026 07:12 WIB dan harus diperbarui
 ketika keputusan atau release baru menutup gap.
 
 ## Cara memakai
@@ -32,6 +32,16 @@ ketika keputusan atau release baru menutup gap.
 | GAP-009 | SagaBooth | TODO | M1 local runtime, native SQLite, journal/outbox, recovery, simulator, dan operator shell sudah tertutup. GitHub Actions tetap tidak memulai job karena billing/spending limit dan branch protection repo private memerlukan GitHub Pro. Customer kiosk, hardware, QRIS, MySQL/control plane, signed installer, deploy, serta pilot belum ada. | Selesaikan billing, ulang CI hingga hijau, aktifkan protection, lalu bangun M2 customer kiosk dan qualification Canon/DNP secara bertahap. |
 
 ## Keputusan produk
+
+### SagaView
+
+- `PHYSICAL_UAT_PREFLIGHT_BLOCKED`: audit S230 pada exact Studio
+  `c132c04eb483ac3ab699d424af1ed5acf395a4b4` dan backend
+  `a648c180310e197934ac84eed8519e51ae90f0eb` membuktikan source bersih/pushed
+  dan Spooler aktif, tetapi belum ada fixed NTFS bebas minimal 10 GiB atau
+  queue/driver EPSON L8050. Media removable exFAT tidak memenuhi kontrak.
+  Sediakan target fixed NTFS yang sah serta printer/driver, lalu jalankan
+  matriks 14 gate pada exact kandidat. Production tidak berubah.
 
 ### SagaBook
 

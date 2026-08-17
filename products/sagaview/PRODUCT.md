@@ -2,6 +2,16 @@
 
 Updated: 17 Agustus 2026
 
+S230 memverifikasi kesiapan mesin untuk physical output UAT kandidat exact
+Studio `c132c04eb483ac3ab699d424af1ed5acf395a4b4` dan backend
+`a648c180310e197934ac84eed8519e51ae90f0eb`. Kedua source tetap bersih dan
+tersedia di remote, Print Spooler aktif otomatis, tetapi tidak ada fixed NTFS
+dengan ruang bebas minimal 10 GiB; dua volume internal hanya memiliki 6,44 GiB
+dan 0,60 GiB. Media removable 26,82 GiB memakai exFAT sehingga tidak memenuhi
+kontrak output. Queue printer EPSON L8050 dan drivernya juga belum tersedia.
+Status `PHYSICAL_UAT_PREFLIGHT_BLOCKED / IMPLEMENTED_NOT_DEPLOYED`; 14 gate
+fisik belum dijalankan, production dan data customer tidak berubah.
+
 S229 menutup blocker restore kandidat no-upload. Studio exact
 `c132c04eb483ac3ab699d424af1ed5acf395a4b4` mengecualikan dua marker provenance
 dari formatter tanpa menghapusnya dari archive. Archive baru 383 entry memiliki
