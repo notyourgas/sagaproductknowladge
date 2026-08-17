@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-17 - SagaBook booking dan template ledger reconciliation S234
+
+- Ringkasan Booking Admin/Task Center kini menunjuk ke exit S172 dan template
+  existing ke S182+S190; seluruh source terverifikasi dalam ancestry production
+  S208.
+- Koreksi public-safe ini mencegah pengulangan create/update/conflict/permission
+  serta draft -> preview -> publish -> public read yang sudah accepted.
+- Status `DOCUMENTATION_VALIDATED`; production, activation, dan business
+  readiness tidak berubah. Residual tetap authenticated UAT dan dua pilot.
+
 ## 2026-08-17 - SagaView physical UAT finalize availability binding S234
 
 - Exact Studio `d9d95f518fd1cb49cc8e235b1afb935789954fe6` mengikat URL

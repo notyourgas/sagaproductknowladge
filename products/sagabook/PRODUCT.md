@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 17 Agustus 2026 10:10 WIB
+Updated: 17 Agustus 2026 12:10 WIB
 Evidence status: production deployment and activation verified; business readiness pending
 
 ## Tujuan dokumen
@@ -16,6 +16,14 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
+- S234 mengoreksi dua ringkasan coverage yang tertinggal. Booking Admin/Task
+  Center S172 dan template existing S182+S190 sudah berada dalam ancestry
+  production S208 exact `1765fe8f12fda08666afaeb6bce43ba8312cd7e6`.
+  Ringkasan kini mencatat create/update/conflict/permission Task Center serta
+  draft -> preview -> publish -> public read sebagai accepted dan aktif di
+  production. Koreksi ini `CONFIRMED / DOCUMENTATION_VALIDATED`; tidak mengubah
+  kode, database, provider, release, activation, atau `BUSINESS_READY`.
+  Residual tetap authenticated Owner/operator UAT nyata dan dua studio pilot.
 - S233 mengoreksi empat ringkasan coverage yang tertinggal: availability/slot
   sudah accepted melalui combined S7-S8, payment/status melalui combined S183
   dan reconciliation S187-S189, WhatsApp/reminder melalui S181, serta

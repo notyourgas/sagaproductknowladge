@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-17 - SagaBook S234 booking/template ledger reconciliation
+
+- Informasi `CONFIRMED` dari exit source S172, S182, S190 dan ancestry
+  production S208.
+- Dua ringkasan stale diganti dengan status accepted/deployed yang konsisten;
+  historical row dan residual authorization gate tetap dipertahankan.
+- Delivery `DOCUMENTATION_VALIDATED`; tidak ada perubahan source produk,
+  database, provider, deployment, activation, atau business readiness.
+- Dokumen terdampak: SagaBook product/changelog/coverage, portfolio, root
+  changelog, dan sync status.
+
 ## 2026-08-17 - SagaView S234 finalize availability binding sync
 
 - Informasi `CONFIRMED` dari exact Studio

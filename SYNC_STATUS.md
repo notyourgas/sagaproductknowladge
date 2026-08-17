@@ -12,14 +12,23 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-17T11:20:37+07:00 |
-| Branch aktif | `codex/s234-sagaview-finalize-availability-knowledge` pada worktree terisolasi exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-17T12:10:55+07:00 |
+| Branch aktif | `codex/s234-sagabook-booking-template-ledger-reconcile` pada worktree terisolasi exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `b43f9fcb72a70c87fb6cf5d3331b146541671e28` |
-| Informasi terakhir disinkronkan | SagaView S234 finalize availability binding dan exact validation evidence. |
+| Baseline sebelum pembaruan | `c86040d669dad17a23100c2dbf3325dbc07752dd` |
+| Informasi terakhir disinkronkan | SagaBook S234 Booking Admin/Task Center dan template existing ledger reconciliation. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
-| Konflik | Sinkronisasi SagaView diterapkan dari exact `origin/main`; pembaruan SagaBook S233 existing dipertahankan utuh. |
-| Error | Tooling finalize availability sudah tertutup; physical output UAT masih blocked sampai storage sah serta EPSON L8050/driver tersedia. |
+| Konflik | Sinkronisasi SagaBook diterapkan dari exact `origin/main`; pembaruan SagaView S234 existing dipertahankan utuh. |
+| Error | Tidak ada error sinkronisasi; authenticated Owner/operator UAT nyata dan dua studio pilot tetap residual `BUSINESS_READY`. |
+
+## File yang berubah pada sinkronisasi ini (SagaBook S234 booking/template ledger reconciliation)
+
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaView S234 finalize availability binding)
 

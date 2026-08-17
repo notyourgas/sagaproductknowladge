@@ -1,5 +1,20 @@
 # SagaBook Changelog
 
+## 2026-08-17 - Booking dan template ledger reconciliation S234
+
+- Informasi `CONFIRMED` dari row feature S172, S182, S190, Git ancestry, dan
+  release S208 exact `1765fe8f12fda08666afaeb6bce43ba8312cd7e6`.
+- Before: ringkasan Booking Admin/Task Center dan template existing masih
+  berstatus local-only serta mengarahkan heartbeat ke gap yang sudah ditutup.
+  After: kedua ringkasan menunjuk ke exit source authoritative dan production
+  S208 tanpa mengubah snapshot historis tiap irisan.
+- Dampak: create/update/conflict/permission Task Center serta draft -> preview
+  -> publish -> public read tidak akan diulang; residual yang benar hanya
+  authenticated Owner/operator UAT nyata dan dua studio pilot.
+- Status `DOCUMENTATION_VALIDATED`; production, activation, dan
+  `BUSINESS_READY` tidak berubah. File terdampak: product, coverage ledger,
+  product/portfolio/root changelog, dan sync status.
+
 ## 2026-08-17 - Current ledger summary reconciliation S233
 
 - Informasi `CONFIRMED` dari ledger feature-level, Git ancestry, dan release
