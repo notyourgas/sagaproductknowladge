@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-17 - SagaBook current ledger summary reconciliation S233
+
+- Empat ringkasan SagaBook kini selaras dengan exit gate availability/slot,
+  payment/status, WhatsApp/reminder, serta report/reconciliation yang sudah
+  accepted dan berada dalam ancestry production S208.
+- Koreksi public-safe ini mencegah pengulangan pekerjaan hijau. Residual tetap
+  authenticated UAT, dua studio pilot, dan real provider canary berizin.
+- Status `DOCUMENTATION_VALIDATED`; production dan business readiness tidak
+  berubah.
+
 ## 2026-08-17 - SagaView physical UAT finalize storage binding S232
 
 - Exact Studio `72e7a0a940a3e428cb8cdc6bb4e1d166abeea45d` mengikat folder dan

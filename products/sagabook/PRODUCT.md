@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 15 Agustus 2026 21:26 WIB
+Updated: 17 Agustus 2026 10:10 WIB
 Evidence status: production deployment and activation verified; business readiness pending
 
 ## Tujuan dokumen
@@ -16,6 +16,14 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
+- S233 mengoreksi empat ringkasan coverage yang tertinggal: availability/slot
+  sudah accepted melalui combined S7-S8, payment/status melalui combined S183
+  dan reconciliation S187-S189, WhatsApp/reminder melalui S181, serta
+  report/reconciliation melalui S184-S189. Seluruh source tersebut berada pada
+  ancestry production S208. Koreksi ini `CONFIRMED / DOCUMENTATION_VALIDATED`;
+  tidak mengubah kode, database, provider, release, activation, atau status
+  `BUSINESS_READY`. Residual tetap authenticated Owner/operator UAT nyata, dua
+  studio pilot, dan real provider canary yang memerlukan izin terpisah.
 - Candidate S218 source `60e115db0458b4791938e692dda79643f47d342a`
   sudah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Launcher UAT
   kini memakai guard per-port dan mendeteksi prompt unlock aktif sehingga dua

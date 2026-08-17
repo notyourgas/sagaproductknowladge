@@ -1,5 +1,20 @@
 # SagaBook Changelog
 
+## 2026-08-17 - Current ledger summary reconciliation S233
+
+- Informasi `CONFIRMED` dari ledger feature-level, Git ancestry, dan release
+  S208 exact `1765fe8f12fda08666afaeb6bce43ba8312cd7e6`.
+- Before: empat ringkasan masih menyebut combined S7-S8, payment gaps,
+  WhatsApp screening, serta report/reconciliation sebagai pekerjaan belum
+  selesai. After: ringkasan menunjuk ke exit source S158, S181, S183-S189 dan
+  ancestry production S208 tanpa mengubah snapshot historis tiap irisan.
+- Dampak: heartbeat tidak lagi diarahkan untuk mengulang item accepted; residual
+  yang benar adalah authenticated Owner/operator UAT, dua studio pilot, dan
+  real provider canary dengan izin terpisah.
+- Status `DOCUMENTATION_VALIDATED`; production, activation, dan
+  `BUSINESS_READY` tidak berubah. File terdampak: product, coverage ledger,
+  product/portfolio/root changelog, dan sync status.
+
 ## 2026-08-15 - UAT bridge launcher idempotency S218
 
 - Informasi `CONFIRMED` dari exact source
