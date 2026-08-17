@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-08-17 - SagaView reviewed physical receipt checksum binding S237
+
+- Exact Studio `894f697590b04d472de8b32d506fe66f74afe0ed` mengikat receipt physical
+  UAT ke SHA-256 yang direview sebelum file dibaca oleh release gate.
+- Receipt hilang/berubah berhenti sebelum full gate, SSH, upload, atau aktivasi;
+  221 unit, build/budget, dan audit dependency nol lulus tanpa data customer.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; physical UAT
+  tetap blocked oleh hardware/storage mesin dan production tidak berubah.
+
 ## 2026-08-17 - SagaView release availability receipt gate S236
 
 - Exact Studio `bf7ae3c495f062d1a840a4852b73f0f64329dc9c` mewajibkan status HTTP

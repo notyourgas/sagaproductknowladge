@@ -1,6 +1,16 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 17 Agustus 2026 15:16 WIB
+Evidence cut-off: 17 Agustus 2026 16:06 WIB
+
+S237 reviewed physical receipt checksum binding: exact Studio
+`894f697590b04d472de8b32d506fe66f74afe0ed` mewajibkan caller memberi SHA-256
+receipt physical UAT. Gate menghitung hash file aktual dan menolak nilai
+hilang/mismatch sebelum JSON dibaca, full gate, SSH, upload, atau aktivasi.
+Red-green focused 20/20, 221 unit, parser PowerShell, format/lint/typecheck,
+build 2.121 client/195 SSR, bundle 299,7 KiB/450 KiB, dan npm audit nol lulus.
+Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; 14 gate fisik
+tetap belum lulus karena fixed NTFS minimal 10 GiB dan EPSON L8050/driver belum
+tersedia. Production tidak berubah.
 
 S236 release availability receipt gate: exact Studio
 `bf7ae3c495f062d1a840a4852b73f0f64329dc9c` mewajibkan release gate

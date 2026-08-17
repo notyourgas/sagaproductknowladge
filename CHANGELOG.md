@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-17 - SagaView S237 physical receipt checksum sync
+
+- Informasi `CONFIRMED` dari exact Studio
+  `894f697590b04d472de8b32d506fe66f74afe0ed` dan gate exact-worktree.
+- Release gate mengikat file receipt physical UAT ke SHA-256 yang direview
+  sebelum JSON/full gate/SSH/upload/aktivasi; mismatch ditolak fail-closed.
+- Delivery `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; physical UAT
+  tetap blocked oleh kesiapan mesin dan production tidak berubah.
+- Dokumen terdampak: SagaView product/dossier/changelog/coverage, gaps,
+  portfolio/master, root changelog, dan sync status.
+
 ## 2026-08-17 - SagaView S236 release availability receipt gate sync
 
 - Informasi `CONFIRMED` dari exact Studio

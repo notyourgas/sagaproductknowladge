@@ -12,14 +12,26 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-17T15:16:48+07:00 |
-| Branch aktif | `codex/s236-sagaview-release-availability-gate-knowledge` pada worktree terisolasi exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-17T16:06:49+07:00 |
+| Branch aktif | `codex/s237-sagaview-release-receipt-checksum-knowledge` pada worktree terisolasi exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `8aac58c4d4b403a85945a1e3530700bac4cb5474` |
-| Informasi terakhir disinkronkan | SagaView S236 release availability receipt gate. |
+| Baseline sebelum pembaruan | `eac6a622eeb5c288c0a67f5c78528a85907cee36` |
+| Informasi terakhir disinkronkan | SagaView S237 reviewed physical receipt checksum binding. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
-| Konflik | Sinkronisasi dibangun di atas exact `origin/main`; SagaTech v23, SagaBook, dan SagaView S235 dipertahankan utuh. |
+| Konflik | Sinkronisasi dibangun di atas exact `origin/main`; SagaTech v23, SagaBook, dan SagaView S236 dipertahankan utuh. |
 | Error | Tidak ada error sinkronisasi; 14 gate physical UAT masih menunggu storage dan printer yang sah. |
+
+## File yang berubah pada sinkronisasi ini (SagaView S237 reviewed physical receipt checksum)
+
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/DOSSIER.md`
+- `products/sagaview/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaView S236 release availability receipt gate)
 

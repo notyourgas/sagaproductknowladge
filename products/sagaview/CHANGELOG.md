@@ -1,5 +1,20 @@
 # SagaView Changelog
 
+## 2026-08-17 - S237 reviewed physical receipt checksum binding
+
+- Klasifikasi: `CONFIRMED` release-provenance correction.
+- Before: release gate memvalidasi isi receipt physical UAT, tetapi belum
+  mengikat file aktual ke checksum yang telah direview.
+- After: SHA-256 receipt wajib diberikan dan dibandingkan dengan hash file
+  aktual sebelum JSON dibaca; nilai hilang/mismatch berhenti sebelum full gate,
+  SSH, upload, atau aktivasi.
+- Evidence: red-green focused contract 20/20, 221 unit, parser PowerShell,
+  format/lint/typecheck, build 2.121 client/195 SSR, bundle 299,7 KiB/450 KiB,
+  dan npm audit nol.
+- Delivery: exact Studio `894f697590b04d472de8b32d506fe66f74afe0ed`
+  `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; 14 gate fisik tetap
+  blocked oleh storage/printer mesin dan production tidak berubah.
+
 ## 2026-08-17 - S236 release availability receipt gate
 
 - Klasifikasi: `CONFIRMED` release-blocker correction.

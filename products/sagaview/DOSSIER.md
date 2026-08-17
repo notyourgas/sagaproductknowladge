@@ -1,5 +1,19 @@
 # SagaView Dossier
 
+## S237 reviewed physical receipt checksum binding
+
+Studio exact `894f697590b04d472de8b32d506fe66f74afe0ed` menutup celah provenance
+receipt physical UAT. Sebelumnya release gate memvalidasi isi receipt, tetapi
+belum membuktikan bahwa file tersebut sama dengan byte yang direview.
+
+Release sekarang mewajibkan SHA-256 receipt dari caller, menghitung hash file
+aktual, dan menolak nilai kosong atau mismatch sebelum JSON diparse maupun full
+gate, SSH, upload artifact, atau aktivasi dimulai. Focused 20/20, 221 unit,
+parser PowerShell, format/lint/typecheck, build 2.121 client/195 SSR, bundle
+299,7 KiB/450 KiB, dan npm audit nol lulus. Status `PUSHED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; production, runtime UI, database, payment,
+foto/path/output customer, printer/service, dan SagaBook tidak berubah.
+
 ## S236 release availability receipt gate
 
 Studio exact `bf7ae3c495f062d1a840a4852b73f0f64329dc9c` menutup gap antara receipt

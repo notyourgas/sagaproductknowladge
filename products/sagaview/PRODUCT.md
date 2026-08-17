@@ -2,6 +2,16 @@
 
 Updated: 17 Agustus 2026
 
+S237 mengikat byte receipt physical UAT yang telah direview ke release gate pada
+Studio exact `894f697590b04d472de8b32d506fe66f74afe0ed`. Caller wajib memberi
+SHA-256 receipt; gate menghitung hash file aktual dan menolak nilai hilang atau
+berbeda sebelum JSON dibaca, full gate lokal, SSH, upload, atau aktivasi.
+Focused contract 20/20, 221 unit, parser PowerShell, format/lint/typecheck,
+build 2.121 client/195 SSR, bundle terbesar 299,7 KiB dari batas 450 KiB, dan
+npm audit nol lulus. Status `PUSHED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; 14 gate fisik tetap menunggu fixed NTFS minimal 10
+GiB serta EPSON L8050/driver. Production tidak berubah.
+
 S236 membuat release gate mengonsumsi receipt availability S235 pada Studio
 exact `bf7ae3c495f062d1a840a4852b73f0f64329dc9c`. Status HTTP akhir Studio
 dan API wajib 200, sedangkan kedua hash URL wajib berbentuk SHA-256 64
