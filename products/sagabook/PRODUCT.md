@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 18 Agustus 2026 04:11 WIB
+Updated: 18 Agustus 2026 05:17 WIB
 Evidence status: production deployment and activation verified; business readiness pending
 
 ## Tujuan dokumen
@@ -15,6 +15,20 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- Release S240 mengaktifkan cumulative tooling UAT S214-S232 dari exact source
+  `730b074dc3414bc7f3e2ad4748e883be35e5ea1a` sebagai immutable release
+  `20260817221051-730b074`; rollback langsung adalah
+  `20260814092112-1765fe8`. Source remote `main`, dua salinan archive/bundle
+  dengan checksum identik, fresh encrypted backup dan disposable restore,
+  atomic switch, manifest, migration, service/journal, smoke, security header,
+  dan verifier independen 17/17 lulus. Tooling focused 28/28, full backend
+  1.045/1.045 (11.868 assertion), build 5.116 modul, serta audit npm,
+  Composer, dan OSV lulus. Perubahan hanya tooling operator UAT; workflow,
+  schema, provider, subscription, dan pesan customer tidak berubah. Status
+  `PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; `BUSINESS_READY`
+  belum karena credential bridge tetap unavailable sehingga authenticated
+  Owner/operator UAT belum berjalan, dan dua studio pilot masih residual.
 
 - S239 menambahkan ringkasan current untuk perlindungan PII admin yang masih
   hanya tercatat sebagai candidate S171. Source exact

@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-18 - SagaBook S240 production release
+
+- Informasi `CONFIRMED` dari exact source
+  `730b074dc3414bc7f3e2ad4748e883be35e5ea1a`, immutable release
+  `20260817221051-730b074`, dan verifier independen 17/17.
+- Tooling UAT S214-S232 aktif kumulatif setelah artifact ganda, encrypted
+  backup/disposable restore, full regression, audit, atomic switch, service,
+  smoke, dan security gate lulus; workflow/database/provider tidak berubah.
+- Delivery `PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+  authenticated Owner/operator UAT serta dua studio pilot masih menahan
+  `BUSINESS_READY`.
+
 ## 2026-08-18 - SagaBook S239 admin PII ledger reconciliation
 
 - Informasi `CONFIRMED` dari source S171 exact, Git ancestry, release integrasi

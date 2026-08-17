@@ -1,13 +1,14 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 17 Agustus 2026 10:10 WIB
+Evidence cut-off: 18 Agustus 2026 05:17 WIB
 
-Source S208 sudah `PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` sebagai
-release immutable `20260814092112-1765fe8`, dengan release S205
-`20260813081427-50afa6e` sebagai rollback langsung. Source exact berada di
-remote `main`; fresh encrypted backup, checksum offsite, disposable restore,
-archive, Git bundle, migration compatibility, atomic switch, manifest, DB
-audit, smoke, service, journal, rollback, dan verifier 17/17 lulus.
+Source S240 exact `730b074dc3414bc7f3e2ad4748e883be35e5ea1a` sudah
+`PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` sebagai release immutable
+`20260817221051-730b074`, dengan release S208 `20260814092112-1765fe8` sebagai
+rollback langsung. Source exact berada di remote `main`; dua salinan
+archive/bundle, fresh encrypted backup, checksum offsite, disposable restore,
+migration compatibility, atomic switch, manifest, DB audit, smoke, service,
+journal, rollback, dan verifier 17/17 lulus.
 `BUSINESS_READY` belum tercapai karena authenticated UAT nyata,
 dua studio pilot, dan canary provider tetap residual; subscription tidak diubah.
 Kolom gap pada baris sebelumnya dipertahankan sebagai snapshot saat irisan
@@ -56,6 +57,15 @@ memulai UAT; production tetap tidak disentuh.
 S218 menutup race double-launch pada launcher S217. Guard per-port membuat
 pemanggilan paralel gagal tertutup, prompt unlock yang sudah aktif dipakai
 kembali, dan proses lama tidak diterima sebagai bukti proses yang baru dibuka.
+
+S219-S232 mengeraskan launcher dan runner UAT: ownership prompt per-port,
+cleanup credential pada partial failure, runtime timeout, redaction error,
+Playwright load boundary, evidence create-only/atomic/read-after-write,
+isolasi output, serta preflight output/runtime/browser sebelum credential.
+Seluruh rangkaian aktif kumulatif melalui S240. Focused 28/28, full backend
+1.045/1.045 (11.868 assertion), build 5.116 modul, serta audit dependency nol
+temuan lulus. Actual bridge tetap unavailable pada release run sehingga tidak
+ada credential yang dibaca dan authenticated Owner/operator UAT masih residual.
 
 S233 merekonsiliasi empat baris ringkasan fitur yang masih memakai snapshot
 sebelum exit gate. Status availability/slot, payment/status, WhatsApp/reminder,

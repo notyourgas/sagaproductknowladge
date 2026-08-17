@@ -441,14 +441,21 @@ pembayaran, menerima status/reminder, dan mengelola request dari secure booking
 link. Operator mengelola calendar, task, check-in, session, payment,
 reconciliation, report, staff, tenant, dan subscription.
 
-Exact source `1765fe8f12fda08666afaeb6bce43ba8312cd7e6` aktif sebagai
-release `20260814092112-1765fe8` dengan rollback
-`20260813081427-50afa6e`. Source remote `main`, archive immutable, Git bundle, backup
+Exact source `730b074dc3414bc7f3e2ad4748e883be35e5ea1a` aktif sebagai
+release `20260817221051-730b074` dengan rollback
+`20260814092112-1765fe8`. Source remote `main`, archive immutable, Git bundle, backup
 terenkripsi/disposable restore, migrasi, atomic switch, manifest, DB audit,
 public smoke, service, journal, rollback, dan verifier 17/17 terverifikasi.
 HTTP dan security profile masing-masing lulus 3/3. Status
 `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated UAT nyata, dua
 studio pilot, dan provider canary tetap menahan `BUSINESS_READY`.
+
+Release S240 mengaktifkan hardening tooling authenticated UAT S214-S232.
+Focused 28/28, backend 1.045/1.045, build, audit dependency, artifact ganda,
+encrypted backup/disposable restore, serta verifier 17/17 lulus. Credential
+bridge unavailable saat release sehingga tidak ada credential dibaca dan UAT
+Owner/operator belum dijalankan. Workflow, schema, provider, subscription, dan
+pesan customer tidak berubah.
 
 Release S208 menyatukan coverage S191/S206/S207 dalam manifest immutable dan
 membuat tiga fixture booking future-relative. Full backend 1.045/1.045, tooling

@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-18 - SagaBook production release S240
+
+- Exact source `730b074dc3414bc7f3e2ad4748e883be35e5ea1a` aktif sebagai
+  `20260817221051-730b074`; rollback `20260814092112-1765fe8` tersedia.
+- Hardening tooling UAT S214-S232 kini aktif kumulatif. Full regression,
+  dependency audit, artifact ganda, encrypted backup/disposable restore,
+  atomic switch, service/journal, smoke, security header, dan verifier 17/17
+  lulus tanpa perubahan workflow, schema, provider, atau pesan customer.
+- Status `PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+  `BUSINESS_READY` belum karena authenticated Owner/operator UAT dan dua studio
+  pilot masih residual.
+
 ## 2026-08-18 - SagaBook admin PII ledger reconciliation S239
 
 - Ringkasan current perlindungan PII admin kini menunjuk source S171 exact
