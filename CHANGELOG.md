@@ -1,5 +1,14 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-18 - SagaView S243 runtime-origin binding
+
+- Informasi `CONFIRMED` dari exact Studio
+  `d5d52297348b4c0269ecd17798114c3e432c4f17` dan gate exact-commit lokal.
+- Harness UAT fisik sekarang mewajibkan pasangan URL service/provenance Studio
+  dan backend memakai origin yang sama; mismatch fail-closed tanpa evidence.
+- Delivery `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+  tidak berubah dan 14 gate fisik belum selesai.
+
 ## 2026-08-18 - SagaBook S240 production release
 
 - Informasi `CONFIRMED` dari exact source

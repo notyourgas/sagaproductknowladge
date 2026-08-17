@@ -1,6 +1,17 @@
 # SagaView Product Knowledge
 
-Updated: 17 Agustus 2026
+Updated: 18 Agustus 2026
+
+S243 menutup false-positive runtime pada harness UAT fisik di Studio exact
+`d5d52297348b4c0269ecd17798114c3e432c4f17`. URL halaman Studio sekarang
+wajib satu origin dengan marker provenance Studio; URL health backend juga
+wajib satu origin dengan marker provenance backend. Perbedaan host, skema, atau
+port berhenti sebelum pemeriksaan kandidat lain dan tidak menulis evidence.
+Red-green contract 14/14, dua probe mismatch fail-closed, 223 unit,
+format/lint/typecheck, build 2.121 client/195 SSR, bundle terbesar 299,7 KiB
+dari batas 450 KiB, dan npm audit nol lulus. Status `PUSHED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; UAT fisik 14 gate tetap menunggu EPSON L8050 dan
+driver serta fresh preflight storage. Production tidak berubah.
 
 S238 menutup jendela pergantian receipt di release gate pada Studio exact
 `2fadbe9d54617307bfd8c84b4250bbbfa28caeca`. Receipt physical UAT sekarang

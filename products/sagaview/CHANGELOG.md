@@ -1,5 +1,21 @@
 # SagaView Changelog
 
+## 2026-08-18 - S243 physical UAT runtime-origin binding
+
+- Klasifikasi: `CONFIRMED` release-provenance correction.
+- Before: URL halaman/health dan URL provenance dapat menunjuk origin berbeda,
+  sehingga layanan dari produk atau port lain dapat ikut dinilai reachable.
+- After: pasangan Studio dan backend masing-masing wajib memakai origin yang
+  sama; beda host, skema, atau port berhenti sebelum pemeriksaan kandidat lain
+  dan tidak menulis evidence.
+- Evidence: red-green contract 14/14, probe mismatch Studio/backend exit 1,
+  223 unit, format/lint/typecheck, build 2.121 client/195 SSR, bundle 299,7
+  KiB/450 KiB, dan npm audit nol.
+- Delivery: exact Studio `d5d52297348b4c0269ecd17798114c3e432c4f17`
+  `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; UAT fisik tetap
+  blocked oleh printer/driver dan fresh preflight storage. Production tidak
+  berubah.
+
 ## 2026-08-17 - S238 physical receipt single-read binding
 
 - Klasifikasi: `CONFIRMED` release-security correction.

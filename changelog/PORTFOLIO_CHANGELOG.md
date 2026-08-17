@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-18 - SagaView S243 runtime-origin binding
+
+- Harness UAT fisik kini menolak pasangan halaman/health dan provenance yang
+  berbeda host, skema, atau port sebelum pemeriksaan kandidat lain.
+- Exact Studio `d5d52297348b4c0269ecd17798114c3e432c4f17`; 223 unit, build,
+  bundle budget, dua probe fail-closed, dan audit dependency nol lulus.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+  tidak berubah dan UAT fisik tetap menunggu printer/driver serta fresh
+  preflight storage.
+
 ## 2026-08-18 - SagaBook production release S240
 
 - Exact source `730b074dc3414bc7f3e2ad4748e883be35e5ea1a` aktif sebagai

@@ -1,6 +1,17 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 17 Agustus 2026 17:21 WIB
+Evidence cut-off: 18 Agustus 2026 06:22 WIB
+
+S243 physical UAT runtime-origin binding: exact Studio
+`d5d52297348b4c0269ecd17798114c3e432c4f17` mewajibkan URL halaman Studio dan
+marker Studio memakai origin yang sama, serta URL health dan marker backend
+memakai origin yang sama. Beda host, skema, atau port ditolak sebelum probe
+kandidat lain dan tanpa menulis evidence. Red-green focused 14/14, dua probe
+mismatch fail-closed, 223 unit, format/lint/typecheck, build 2.121 client/195
+SSR, bundle 299,7 KiB/450 KiB, dan npm audit nol lulus. Status `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; UAT fisik 14 gate tetap belum
+lulus karena EPSON L8050/driver belum tersedia dan storage perlu fresh
+preflight. Production tidak berubah.
 
 S238 physical receipt single-read binding: exact Studio
 `2fadbe9d54617307bfd8c84b4250bbbfa28caeca` membaca receipt physical UAT satu
