@@ -2,6 +2,16 @@
 
 Updated: 17 Agustus 2026
 
+S238 menutup jendela pergantian receipt di release gate pada Studio exact
+`2fadbe9d54617307bfd8c84b4250bbbfa28caeca`. Receipt physical UAT sekarang
+dibaca satu kali sebagai byte snapshot; SHA-256 dan JSON dihitung dari snapshot
+yang sama sehingga file tidak dapat diganti di antara checksum dan parsing.
+Focused contract 21/21, simulasi single-read, 222 unit, parser PowerShell,
+format/lint/typecheck, build 2.121 client/195 SSR, bundle terbesar 299,7 KiB
+dari batas 450 KiB, dan npm audit nol lulus. Status `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; 14 gate fisik tetap menunggu fixed
+NTFS minimal 10 GiB serta EPSON L8050/driver. Production tidak berubah.
+
 S237 mengikat byte receipt physical UAT yang telah direview ke release gate pada
 Studio exact `894f697590b04d472de8b32d506fe66f74afe0ed`. Caller wajib memberi
 SHA-256 receipt; gate menghitung hash file aktual dan menolak nilai hilang atau

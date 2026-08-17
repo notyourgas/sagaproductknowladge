@@ -8,7 +8,7 @@ diubah menjadi klaim publik sebelum ditutup dengan bukti atau keputusan owner.
 
 ## Konteks
 
-Daftar ini berlaku pada evidence cut-off 17 Agustus 2026 16:06 WIB dan harus diperbarui
+Daftar ini berlaku pada evidence cut-off 17 Agustus 2026 17:21 WIB dan harus diperbarui
 ketika keputusan atau release baru menutup gap.
 
 ## Cara memakai
@@ -22,10 +22,10 @@ ketika keputusan atau release baru menutup gap.
 
 ## Prioritas tinggi
 
-SagaView S237 sudah mengikat receipt physical UAT ke SHA-256 yang direview dan
-menolak file berubah sebelum full gate/SSH. Residual yang belum tertutup tetap
-bersifat fisik: fixed NTFS minimal 10 GiB, EPSON L8050/driver, serta eksekusi
-matriks 14 gate pada exact kandidat.
+SagaView S238 sudah membuat checksum dan parsing receipt physical UAT memakai
+byte snapshot yang sama. Residual yang belum tertutup tetap bersifat fisik:
+fixed NTFS minimal 10 GiB, EPSON L8050/driver, serta eksekusi matriks 14 gate
+pada exact kandidat.
 
 | ID | Produk/area | Label | Pertanyaan atau gap | Bukti penutup |
 |---|---|---|---|---|

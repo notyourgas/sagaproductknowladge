@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-17 - SagaView S238 physical receipt single-read sync
+
+- Informasi `CONFIRMED` dari exact Studio
+  `2fadbe9d54617307bfd8c84b4250bbbfa28caeca` dan gate exact-worktree.
+- Checksum dan JSON receipt physical UAT kini memakai byte snapshot yang sama;
+  pergantian file di antara dua tahap ditutup sebelum full gate/SSH.
+- Delivery `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; physical UAT
+  tetap blocked oleh kesiapan mesin dan production tidak berubah.
+- Dokumen terdampak: SagaView product/dossier/changelog/coverage, gaps,
+  portfolio/master, root changelog, dan sync status.
+
 ## 2026-08-17 - SagaBook S236 Tenant/cabang ledger reconciliation
 
 - Informasi `CONFIRMED` dari combined exit Sprint 3-4 exact

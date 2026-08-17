@@ -1,5 +1,19 @@
 # SagaView Changelog
 
+## 2026-08-17 - S238 physical receipt single-read binding
+
+- Klasifikasi: `CONFIRMED` release-security correction.
+- Before: release gate menghitung checksum lalu membuka path receipt kembali
+  untuk parsing, menyisakan jendela pergantian file di antara dua pembacaan.
+- After: receipt dibaca satu kali; SHA-256 dan JSON memakai byte snapshot yang
+  sama, dan mismatch berhenti sebelum full gate, SSH, upload, atau aktivasi.
+- Evidence: red-green focused contract 21/21, simulasi single-read, 222 unit,
+  parser PowerShell, format/lint/typecheck, build 2.121 client/195 SSR, bundle
+  299,7 KiB/450 KiB, dan npm audit nol.
+- Delivery: exact Studio `2fadbe9d54617307bfd8c84b4250bbbfa28caeca`
+  `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; 14 gate fisik tetap
+  blocked oleh storage/printer mesin dan production tidak berubah.
+
 ## 2026-08-17 - S237 reviewed physical receipt checksum binding
 
 - Klasifikasi: `CONFIRMED` release-provenance correction.

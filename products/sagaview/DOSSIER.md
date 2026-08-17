@@ -1,5 +1,20 @@
 # SagaView Dossier
 
+## S238 physical receipt single-read binding
+
+Studio exact `2fadbe9d54617307bfd8c84b4250bbbfa28caeca` menutup risiko time-of-check
+to time-of-use pada receipt physical UAT. S237 membandingkan checksum lalu
+membuka path kembali untuk parsing, sehingga masih ada jendela kecil tempat
+file dapat diganti di antara dua pembacaan.
+
+Release gate kini membaca receipt satu kali menjadi byte snapshot. SHA-256 dan
+JSON berasal dari byte yang sama; mismatch berhenti sebelum full gate, SSH,
+upload artifact, atau aktivasi. Focused 21/21, simulasi single-read, 222 unit,
+parser PowerShell, format/lint/typecheck, build 2.121 client/195 SSR, bundle
+299,7 KiB/450 KiB, dan npm audit nol lulus. Status `PUSHED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; production, runtime UI, database, payment,
+foto/path/output customer, printer/service, dan SagaBook tidak berubah.
+
 ## S237 reviewed physical receipt checksum binding
 
 Studio exact `894f697590b04d472de8b32d506fe66f74afe0ed` menutup celah provenance

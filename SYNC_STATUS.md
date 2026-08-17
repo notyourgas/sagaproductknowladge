@@ -12,14 +12,26 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-17T16:09:00+07:00 |
-| Branch aktif | `codex/s236-sagabook-tenant-branch-ledger-reconcile` pada clone sinkronisasi terisolasi exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-17T17:21:22+07:00 |
+| Branch aktif | `codex/s238-sagaview-receipt-single-read-knowledge` pada worktree terisolasi exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `0c42669bd88605533e4c62ebd1d66f3cfc73553e` |
-| Informasi terakhir disinkronkan | SagaBook S236 Tenant/cabang ledger reconciliation. |
+| Baseline sebelum pembaruan | `ba75d7a7b32365442814dac7bc979817708860be` |
+| Informasi terakhir disinkronkan | SagaView S238 physical receipt single-read binding. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
-| Konflik | Perubahan SagaTech, SagaView S236-S237, dan SagaBook sebelumnya pada baseline terbaru dipertahankan utuh; checkout lain tidak disentuh. |
-| Error | Tidak ada error sinkronisasi; authenticated Owner/operator UAT dan dua studio pilot SagaBook tetap exit gate `BUSINESS_READY`. |
+| Konflik | Sinkronisasi dibangun di atas exact `origin/main`; SagaBook S236 dan SagaView S237 dipertahankan utuh; checkout lain tidak disentuh. |
+| Error | Tidak ada error sinkronisasi; 14 gate physical UAT SagaView masih menunggu storage dan printer yang sah. |
+
+## File yang berubah pada sinkronisasi ini (SagaView S238 physical receipt single-read)
+
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/DOSSIER.md`
+- `products/sagaview/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
+- `SYNC_STATUS.md`
+- `CHANGELOG.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaBook S236 Tenant/cabang ledger reconciliation)
 

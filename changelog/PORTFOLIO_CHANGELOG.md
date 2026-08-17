@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-08-17 - SagaView physical receipt single-read binding S238
+
+- Exact Studio `2fadbe9d54617307bfd8c84b4250bbbfa28caeca` membuat checksum dan JSON
+  receipt physical UAT berasal dari satu byte snapshot.
+- Pergantian file di antara checksum/parsing ditutup; 222 unit, simulasi
+  single-read, build/budget, dan audit dependency nol lulus tanpa data customer.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; physical UAT
+  tetap blocked oleh hardware/storage mesin dan production tidak berubah.
+
 ## 2026-08-17 - SagaBook Tenant/cabang ledger reconciliation S236
 
 - Ringkasan Tenant/cabang kini menunjuk combined exit Sprint 3-4 exact
