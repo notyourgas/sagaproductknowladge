@@ -1,5 +1,20 @@
 # SagaView Changelog
 
+## 2026-08-17 - S236 release availability receipt gate
+
+- Klasifikasi: `CONFIRMED` release-blocker correction.
+- Before: receipt v9 mencatat `finalAvailability`, tetapi release gate belum
+  mengonsumsi status HTTP dan format hash tersebut secara eksplisit.
+- After: status akhir Studio/API wajib 200 dan kedua hash URL wajib SHA-256 64
+  karakter; receipt tidak lengkap/rusak berhenti sebelum full gate, SSH,
+  upload, atau aktivasi.
+- Evidence: red-green focused contract 19/19, 220 unit,
+  format/lint/typecheck, build 2.121 client/195 SSR, bundle 299,7 KiB/450 KiB,
+  dan npm audit nol.
+- Delivery: exact Studio `bf7ae3c495f062d1a840a4852b73f0f64329dc9c`
+  `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; physical UAT tetap
+  blocked oleh storage/printer mesin dan production tidak berubah.
+
 ## 2026-08-17 - S235 physical UAT final availability receipt
 
 - Klasifikasi: `CONFIRMED` release-evidence correction.

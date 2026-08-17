@@ -1,6 +1,16 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 17 Agustus 2026 14:11 WIB
+Evidence cut-off: 17 Agustus 2026 15:16 WIB
+
+S236 release availability receipt gate: exact Studio
+`bf7ae3c495f062d1a840a4852b73f0f64329dc9c` mewajibkan release gate
+mengonsumsi `finalAvailability`. Status HTTP akhir Studio/API harus 200 dan
+kedua hash URL harus SHA-256 64 karakter; receipt tidak lengkap/rusak ditolak
+sebelum full gate, SSH, upload, atau aktivasi. Red-green focused 19/19, 220
+unit, format/lint/typecheck, build 2.121 client/195 SSR, bundle 299,7 KiB/450
+KiB, dan npm audit nol lulus. Status `PUSHED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; 14 gate fisik tetap belum lulus karena fixed NTFS
+minimal 10 GiB dan EPSON L8050/driver belum tersedia. Production tidak berubah.
 
 S235 physical UAT final availability receipt: exact Studio
 `831ea54bf979fc2bf8d24f9d33f07f77d7fd4053` mencatat hasil recheck S234 di

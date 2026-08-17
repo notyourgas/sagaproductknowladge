@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-17 - SagaView S236 release availability receipt gate sync
+
+- Informasi `CONFIRMED` dari exact Studio
+  `bf7ae3c495f062d1a840a4852b73f0f64329dc9c` dan gate exact-worktree.
+- Release gate mengonsumsi status HTTP akhir serta hash URL receipt v9 sebelum
+  full gate/SSH/upload/aktivasi; receipt rusak ditolak fail-closed.
+- Delivery `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; physical UAT
+  tetap blocked oleh kesiapan mesin dan production tidak berubah.
+- Dokumen terdampak: SagaView product/dossier/changelog/coverage, gaps,
+  portfolio/master, root changelog, dan sync status.
+
 ## 2026-08-17 - SagaTech Photobooth Commercial Truth v23 production sync
 
 - Informasi `CONFIRMED` dari keputusan Andreas, source truth/test, production

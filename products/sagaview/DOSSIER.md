@@ -1,5 +1,20 @@
 # SagaView Dossier
 
+## S236 release availability receipt gate
+
+Studio exact `bf7ae3c495f062d1a840a4852b73f0f64329dc9c` menutup gap antara receipt
+S235 dan keputusan release. Sebelumnya `finalAvailability` sudah tercatat untuk
+reviewer, tetapi release gate hanya memeriksa schema, status UAT, blocker, dan
+pasangan commit.
+
+Release gate kini mewajibkan status HTTP akhir Studio/API sama dengan 200 dan
+kedua hash URL berbentuk SHA-256 64 karakter. Field hilang, status gagal, atau
+hash rusak ditolak sebelum full gate lokal, SSH, upload artifact, atau aktivasi.
+Focused 19/19, 220 unit, format/lint/typecheck, build 2.121 client/195 SSR,
+bundle 299,7 KiB/450 KiB, dan npm audit nol lulus. Status `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production, database, payment,
+foto/path/output customer, printer/service, dan SagaBook tidak berubah.
+
 ## S235 physical UAT final availability receipt
 
 Studio exact `831ea54bf979fc2bf8d24f9d33f07f77d7fd4053` membuat hasil recheck

@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-08-17 - SagaView release availability receipt gate S236
+
+- Exact Studio `bf7ae3c495f062d1a840a4852b73f0f64329dc9c` mewajibkan status HTTP
+  akhir 200 dan hash URL valid sebelum release dapat melanjutkan gate lokal.
+- Receipt rusak berhenti sebelum SSH/upload/aktivasi; 220 unit, build/budget,
+  dan audit dependency nol lulus tanpa data customer.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; physical UAT
+  tetap blocked oleh hardware/storage mesin dan production tidak berubah.
+
 ## 2026-08-17 - SagaTech Photobooth Commercial Truth v23
 
 - Photobooth kini membedakan booth lengkap/vendor lokal, customer self-service

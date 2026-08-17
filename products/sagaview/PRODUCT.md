@@ -2,6 +2,16 @@
 
 Updated: 17 Agustus 2026
 
+S236 membuat release gate mengonsumsi receipt availability S235 pada Studio
+exact `bf7ae3c495f062d1a840a4852b73f0f64329dc9c`. Status HTTP akhir Studio
+dan API wajib 200, sedangkan kedua hash URL wajib berbentuk SHA-256 64
+karakter. Receipt hilang/rusak ditolak sebelum full gate lokal, SSH, upload,
+atau aktivasi. Focused contract 19/19, 220 unit, format/lint/typecheck, build
+2.121 client/195 SSR, bundle terbesar 299,7 KiB dari batas 450 KiB, dan npm
+audit nol lulus. Status `PUSHED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; 14 gate fisik tetap menunggu fixed NTFS minimal 10
+GiB serta EPSON L8050/driver. Production tidak berubah.
+
 S235 menambahkan receipt availability akhir pada Studio exact
 `831ea54bf979fc2bf8d24f9d33f07f77d7fd4053`. Evidence index v9 sekarang
 mencatat status HTTP akhir Studio/API dan SHA-256 URL yang sudah diikat oleh
