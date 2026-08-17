@@ -35,6 +35,20 @@ keputusan pengganti.
 | Status | `CONFIRMED`; production active pada `dpl_GTQ96ZbwH3RxxvyTqzZcwD3xHce1` |
 | Dokumen terkait | [SagaTech Product](products/sagatech/PRODUCT.md), [SagaTech Dossier](products/sagatech/DOSSIER.md), [SagaTech Changelog](products/sagatech/CHANGELOG.md) |
 
+## DEC-082 - SagaTech memisahkan public claim dan quotation lock Photobooth
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-17 |
+| Topik | Commercial truth dan branded domain Photobooth |
+| Keputusan | Website hanya memublikasikan harga mulai Rp45 juta, opsi booth lengkap/vendor lokal, ownership, self-service dengan PIC, dan batas scope yang stabil. Harga sistem-only Rp37 juta, exact device, renewal, DNP, ongkir, replacement, serta payment limits tidak menjadi janji publik dan harus dikunci pada quotation. Canonical utama adalah `https://sagatech.site`. |
+| Alasan | Pertanyaan calon mitra membutuhkan jawaban lengkap tanpa mengubah harga promo, vendor terms, atau asumsi teknis menjadi janji permanen. |
+| Alternatif yang dipertimbangkan | Memublikasikan seluruh jawaban chat; mempertahankan FAQ pendek; menjadikan Rp37 juta dan Rp375 ribu sebagai harga tetap. |
+| Dampak | Halaman Photobooth, FAQ, simulator V5, quotation checklist, warranty matrix, local-booth handoff, metadata, dan release gate memakai satu commercial truth. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED`; production active pada `dpl_7kSjSQKiYTbq7HvfXqEvfqs7m7Zf` |
+| Dokumen terkait | [SagaTech Product](products/sagatech/PRODUCT.md), [SagaTech Dossier](products/sagatech/DOSSIER.md), [SagaTech Changelog](products/sagatech/CHANGELOG.md), [Gaps](GAPS.md) |
+
 ## DEC-073 - SagaBook menyamarkan nomor customer secara default di admin
 
 | Field | Isi |

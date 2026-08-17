@@ -1,5 +1,15 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-17 - SagaTech Photobooth Commercial Truth v23 production sync
+
+- Informasi `CONFIRMED` dari keputusan Andreas, source truth/test, production
+  `dpl_7kSjSQKiYTbq7HvfXqEvfqs7m7Zf`, dan runtime `sagatech.site`.
+- Opsi pengadaan, self-service/PIC, quotation, simulator V5, branded domain,
+  serta batas claim Photobooth disinkronkan secara public-safe.
+- Delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / NOT_BUSINESS_READY`.
+- Dokumen terdampak: SagaTech product/dossier/changelog, portfolio/master,
+  decision, gaps, root changelog, dan sync status.
+
 ## 2026-08-17 - SagaView S235 final availability receipt sync
 
 - Informasi `CONFIRMED` dari exact Studio

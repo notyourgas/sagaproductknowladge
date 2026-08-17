@@ -10,6 +10,22 @@ aktivasi secara publik dan aman.
 Entri membedakan implementasi, deployment, aktivasi produksi, dan kesiapan
 bisnis. Secret, PII, serta bukti terbatas tidak dicantumkan.
 
+## 2026-08-17 - Photobooth Commercial Truth v23 production
+
+- Klasifikasi: `CONFIRMED` dari keputusan Andreas, source truth sheet/test,
+  deployment `dpl_7kSjSQKiYTbq7HvfXqEvfqs7m7Zf`, dan runtime branded domain.
+- Halaman Photobooth kini membedakan booth lengkap/vendor lokal, self-service
+  customer/PIC, 15 FAQ, serta checklist quotation sebelum DP.
+- Simulator V5 menambahkan CAPEX quotation, shipping, upgrade, software, MDR,
+  waste, printer profile, dan mode pengadaan sebagai input editable.
+- Canonical berpindah ke `https://sagatech.site`; `www` dan alias Vercel
+  diarahkan ke deployment yang sama.
+- Gate: 49 test, 110 local dan 36 production page-view, build/export,
+  accessibility, dependency, claim, header, serta route smoke lulus.
+- Delivery: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / NOT_BUSINESS_READY`;
+  seller identity, exact BOM/warranty, renewal/DNP quote, real-device UAT, dan
+  source Git kanonik tetap residual.
+
 ## 2026-08-15 - Scope 2 Qualification OS v15 production
 
 - Klasifikasi: `CONFIRMED` dari keputusan Andreas, source manifest

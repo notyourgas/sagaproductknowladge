@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-17 - SagaTech Photobooth Commercial Truth v23
+
+- Photobooth kini membedakan booth lengkap/vendor lokal, customer self-service
+  dengan PIC, 15 FAQ, quotation checklist, dan simulator CAPEX/OPEX V5.
+- Canonical branded domain aktif di `https://sagatech.site` pada production
+  `dpl_7kSjSQKiYTbq7HvfXqEvfqs7m7Zf`.
+- 49 test, 110 local dan 36 production page-view, build/export, accessibility,
+  security header, serta dependency gate lulus.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / NOT_BUSINESS_READY`;
+  exact commercial/device evidence dan real-device UAT tetap residual.
+
 ## 2026-08-17 - SagaView physical UAT final availability receipt S235
 
 - Exact Studio `831ea54bf979fc2bf8d24f9d33f07f77d7fd4053` mencatat status HTTP

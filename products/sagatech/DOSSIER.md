@@ -1,6 +1,6 @@
 # SagaTech Product Dossier
 
-Updated: 15 Agustus 2026
+Updated: 17 Agustus 2026
 
 ## Tujuan dokumen
 
@@ -9,8 +9,8 @@ operasional SagaTech bagi implementer dan operator.
 
 ## Konteks dan status bukti
 
-Dossier ini bersumber dari Scope 2 Qualification OS v15 yang telah aktif di
-produksi. Bukti sosial dipisahkan dari klaim hasil bisnis dan readiness tetap
+Dossier ini bersumber dari Scope 2 Qualification OS dan Photobooth Commercial
+Truth v23 yang telah aktif di produksi. Bukti sosial dipisahkan dari klaim hasil bisnis dan readiness tetap
 dibedakan dari deployment teknis.
 
 ## Job to be done
@@ -27,6 +27,10 @@ brosur harga menjadi kualifikasi yang dapat diperiksa dan dibawa ke konsultasi.
 4. Fit Engine memberi outcome beserta alasan, gap, alternatif, dan Risk Map.
 5. Proof Lens menyaring bukti yang relevan tanpa mengarang hasil bisnis.
 6. Decision Passport merangkum keputusan dan handoff WhatsApp.
+
+Pada Photobooth, journey dilanjutkan dengan pemilihan booth lengkap atau vendor
+lokal, pembagian tanggung jawab customer/PIC/SagaTech, FAQ komersial, checklist
+quotation, lalu simulator CAPEX/OPEX yang seluruh asumsi kritisnya dapat diubah.
 
 ## Experience system
 
@@ -45,19 +49,26 @@ brosur harga menjadi kualifikasi yang dapat diperiksa dan dibawa ke konsultasi.
   click; payload hanya enum atau source statis.
 - `qualified_brief_submitted` dan `whatsapp_clicked` adalah conversion proxy,
   bukan bukti pesan diterima.
+- Simulator V5 memigrasikan state lokal V3/V4 dan menambahkan package cost,
+  shipping, upgrade, software, MDR, waste, printer profile, serta procurement
+  mode tanpa mengirim input tersebut ke backend SagaTech.
 
 ## Release quality
 
-- Local: 90 page-view pada 320/390/768/1024/1440, failures 0.
-- Production: 28 page-view pada 390/1440, failures 0.
-- Lighthouse production: Performance 91, Accessibility 100, Best Practices 96,
-  SEO 100, transfer 528 KiB, TBT 170 ms, CLS 0.
+- Local: 110 page-view pada 320/390/768/1024/1440, page failures 0.
+- Production: 36 page-view pada 390/1440, failures 0.
+- Unit: 49 test; export: 28 halaman dan 56 internal link; JSON-LD valid.
 - Security: dependency production 0 vulnerability, secret-pattern scan bersih,
   CSP, frame denial, nosniff, referrer, dan permissions policy aktif.
 
 ## Commercial truth
 
 Harga publik hanya harga mulai. Training, support, pengiriman, instalasi,
-garansi, SLA, renewal software, dan kewajiban tiap pihak mengikuti scope produk
-serta proposal/perjanjian final. Website tidak menjanjikan BEP, ROI, omzet,
-traffic, atau status partner aktif.
+garansi, SLA, renewal software, exact model, harga sistem-only, DNP, dan
+kewajiban tiap pihak mengikuti scope serta proposal/perjanjian final. Website
+tidak menjanjikan replacement otomatis, HPP tetap, BEP, ROI, omzet, traffic,
+atau status partner aktif.
+
+Baseline tidak memakai sewa perangkat, royalty, atau bagi hasil dengan
+SagaTech. Kepemilikan hardware berlaku setelah pelunasan dan serah terima sesuai
+perjanjian. Garansi produsen/distributor/toko dipisahkan dari support SagaTech.

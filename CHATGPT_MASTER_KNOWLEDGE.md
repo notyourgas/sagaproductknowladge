@@ -360,16 +360,19 @@ Website kemitraan Self Photo Studio dan Photobooth yang berfungsi sebagai
 brosur, portofolio, dan qualification system. Harga publik mulai Rp55 juta
 untuk Self Photo dan Rp45 juta untuk Photobooth; harga final mengikuti proposal.
 
-Scope 2 production memakai Decision Studio, Market Lens, Fit Engine policy
-`2026.08-v15`, Risk Map, contextual comparison, Proof Lens, dan Decision
-Passport lokal yang dapat diekspor atau dikirim ke WhatsApp oleh pengguna.
-Outcome dapat `not-ready` atau `compare`; website tidak menjamin ROI, BEP,
-omzet, kelayakan investasi, atau status waralaba.
+Scope 2 production memakai Decision Studio, Market Lens, Fit Engine, Risk Map,
+Proof Lens, dan Decision Passport. Photobooth Commercial Truth v23 menambahkan
+opsi booth lengkap/vendor lokal, batas self-service versus PIC, 15 FAQ,
+checklist quotation, serta simulator V5 untuk ongkir, upgrade, software, MDR,
+waste, HPP, printer, dan mode pengadaan. Exact model, renewal, warranty,
+system-only price, dan DNP tetap quote-only; website tidak menjamin replacement,
+HPP, ROI, BEP, omzet, kelayakan investasi, atau status waralaba.
 
-Production `dpl_GTQ96ZbwH3RxxvyTqzZcwD3xHce1` aktif pada
-`sagatech.vercel.app`; status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
-NOT_BUSINESS_READY` karena Linktree/PDF lama, analytics persistence,
-real-device UAT, dan Git remote kanonik masih residual.
+Production `dpl_7kSjSQKiYTbq7HvfXqEvfqs7m7Zf` aktif pada
+`https://sagatech.site`; status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+NOT_BUSINESS_READY` karena seller identity, exact BOM/warranty, renewal/DNP,
+Linktree/PDF lama, analytics persistence, real-device UAT, dan source Git
+kanonik masih residual.
 
 ### SagaDevs
 

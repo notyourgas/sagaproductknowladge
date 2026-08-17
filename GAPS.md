@@ -8,7 +8,7 @@ diubah menjadi klaim publik sebelum ditutup dengan bukti atau keputusan owner.
 
 ## Konteks
 
-Daftar ini berlaku pada evidence cut-off 17 Agustus 2026 14:11 WIB dan harus diperbarui
+Daftar ini berlaku pada evidence cut-off 17 Agustus 2026 14:24 WIB dan harus diperbarui
 ketika keputusan atau release baru menutup gap.
 
 ## Cara memakai
@@ -33,7 +33,7 @@ eksekusi matriks 14 gate pada exact kandidat.
 | GAP-005 | COYABAG | NEEDS CONFIRMATION | Katalog final, identitas seller, pajak/legal, payment, shipping, dan kebijakan belum dikunci. | Data owner yang disetujui dan UAT transaksi nyata. |
 | GAP-006 | Semua produk berbayar | NEEDS CONFIRMATION | Kebijakan pajak, invoice, refund, dunning, grace, dan SLA komersial lintas produk belum disatukan. | Policy founder/legal yang disetujui per produk. |
 | GAP-007 | Semua produk | NEEDS CONFIRMATION | Owner data-retention, deletion SLA, incident contact, dan subprocessor list belum lengkap untuk semua produk. | Policy per produk, owner, dan tanggal berlaku. |
-| GAP-008 | SagaTech | NEEDS CONFIRMATION | Business readiness belum tercapai karena Linktree/PDF lama, persistensi analytics, UAT perangkat nyata, dan repository source kanonik belum ditutup. | Linktree owner UAT, dashboard/network evidence analytics, iPhone/Android UAT, serta Git remote dan source push SagaTech. |
+| GAP-008 | SagaTech | NEEDS CONFIRMATION | V23 aktif di branded domain, tetapi business readiness belum tercapai karena seller of record, exact BOM/condition/warranty, renewal software/DNP, Linktree/PDF lama, persistensi analytics, UAT perangkat nyata, dan repository source kanonik belum ditutup. | Quotation final terverifikasi, Linktree owner UAT, dashboard/network evidence analytics, iPhone/Android dan booth UAT, serta Git remote/source push SagaTech. |
 | GAP-009 | SagaBooth | TODO | M1 local runtime, native SQLite, journal/outbox, recovery, simulator, dan operator shell sudah tertutup. GitHub Actions tetap tidak memulai job karena billing/spending limit dan branch protection repo private memerlukan GitHub Pro. Customer kiosk, hardware, QRIS, MySQL/control plane, signed installer, deploy, serta pilot belum ada. | Selesaikan billing, ulang CI hingga hijau, aktifkan protection, lalu bangun M2 customer kiosk dan qualification Canon/DNP secara bertahap. |
 
 ## Keputusan produk

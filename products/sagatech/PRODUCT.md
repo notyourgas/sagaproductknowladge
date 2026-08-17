@@ -1,6 +1,6 @@
 # SagaTech Product Knowledge
 
-Updated: 15 Agustus 2026
+Updated: 17 Agustus 2026
 Evidence status: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / NOT_BUSINESS_READY`
 
 ## Tujuan dokumen
@@ -10,7 +10,7 @@ serta batas kesiapan bisnis website SagaTech.
 
 ## Konteks dan status bukti
 
-Dokumen ini merangkum keadaan produksi per 15 Agustus 2026. Klaim fitur dan
+Dokumen ini merangkum keadaan produksi per 17 Agustus 2026. Klaim fitur dan
 status ditautkan pada manifest source, deployment Vercel, serta gate QA; klaim
 hasil bisnis tidak dibuat tanpa data operasional yang memadai.
 
@@ -45,6 +45,21 @@ Positioning:
 - Decision Passport tersimpan lokal dan dapat disalin, diunduh, dicetak,
   diteruskan ke planner, atau dikirim ke WhatsApp oleh pengguna.
 
+## Photobooth Commercial Truth v23
+
+- Halaman Photobooth membedakan booth lengkap dari opsi booth yang dibuat
+  vendor lokal; harga sistem-only tidak dipublikasikan sebelum permanen.
+- Customer dapat menjalankan workflow self-service, tetapi PIC lokal tetap
+  dibutuhkan untuk consumable dan gangguan fisik.
+- Software Photobooth dapat termasuk hingga enam bulan sesuai quotation;
+  renewal, fitur, device, payment provider, dan add-on mengikuti dokumen final.
+- Exact Bill of Materials, kondisi unit, garansi, ongkir, DNP RX1HS, dan
+  aturan substitusi harus dikunci sebelum DP.
+- Simulator V5 memisahkan harga quotation, ongkir, upgrade, software bulanan,
+  MDR, waste/reprint, HPP, serta mode pengadaan sebagai input editable.
+- Checklist quotation publik membantu calon mitra memeriksa hardware,
+  software, payment, garansi, logistik, acceptance test, dan serah terima.
+
 ## Batas klaim dan privasi
 
 - Website menggunakan istilah `kemitraan`, bukan otomatis `franchise` atau
@@ -57,11 +72,11 @@ Positioning:
 
 ## Status release
 
-- Public: `https://sagatech.vercel.app`.
-- Production deployment: `dpl_GTQ96ZbwH3RxxvyTqzZcwD3xHce1`.
-- Rollback baseline: `dpl_5DAsu8Gz1bq4ecwuwDnYjKMoFfbE`.
-- Source manifest: `0cf764da2facff05387d5007b6b42b08ab8833450153cef7a6adb8394ea94cb4`.
-- 37 test, build/export, 90 local page-view, 28 production page-view,
+- Public/canonical: `https://sagatech.site`.
+- Production deployment: `dpl_7kSjSQKiYTbq7HvfXqEvfqs7m7Zf`.
+- Preview: `dpl_8HqqzCVM6Mwa1p2KwNw85T3wChcp`.
+- Rollback V22: `dpl_2NMgqG2KkcpPXXuW7stP29gBkMQF`.
+- 49 test, build/export, 110 local page-view, 36 production page-view,
   dependency/secret scan, dan security-header smoke lulus.
 
 ## Residual sebelum business-ready
@@ -69,5 +84,7 @@ Positioning:
 - Linktree dan PDF lama perlu diganti owner agar istilah serta harga konsisten.
 - Persistensi custom analytics perlu diverifikasi di production dashboard/network.
 - UAT nyata iPhone dan Android belum dilakukan.
-- Repository Git SagaTech kanonik belum dibuat; release memakai deployment ID
-  dan manifest hash sebagai provenance.
+- Repository Git SagaTech kanonik belum dipastikan; release memakai deployment
+  ID, acceptance report, dan hash HTML production sebagai provenance operasional.
+- Seller of record, exact model/condition/warranty issuer, renewal software,
+  serta harga upgrade DNP tetap harus dikunci sebelum transaksi.
