@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-17 - SagaView S234 finalize availability binding sync
+
+- Informasi `CONFIRMED` dari exact Studio
+  `d9d95f518fd1cb49cc8e235b1afb935789954fe6` dan gate exact-worktree.
+- Finalize physical UAT kini mengikat URL Studio/API health dari Preflight dan
+  memeriksa ulang HTTP 200; evidence hash-only dan schema v8.
+- Delivery `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; physical UAT
+  tetap blocked oleh kesiapan mesin dan production tidak berubah.
+- Dokumen terdampak: SagaView product/dossier/changelog/coverage, gaps,
+  portfolio/master, root changelog, dan sync status.
+
 ## 2026-08-17 - SagaView S233 finalize printer binding sync
 
 - Informasi `CONFIRMED` dari exact Studio

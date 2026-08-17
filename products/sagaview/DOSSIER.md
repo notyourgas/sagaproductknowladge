@@ -1,5 +1,21 @@
 # SagaView Dossier
 
+## S234 physical UAT finalize availability binding
+
+Studio exact `d9d95f518fd1cb49cc8e235b1afb935789954fe6` mengikat
+availability halaman Studio dan API health dari Preflight sampai Finalize.
+Sebelumnya kedua route hanya diperiksa saat Preflight, sehingga evidence manual
+berpotensi disahkan setelah halaman utama atau API kandidat berhenti tersedia.
+
+Preflight v8 menyimpan SHA-256 kedua URL, lalu Finalize menolak URL yang berubah
+dan memeriksa ulang HTTP 200. Guardrail candidate URL tetap melarang endpoint
+production dan evidence tidak membawa credential, path lokal, foto, atau data
+customer. Release contract menolak evidence index lama. Red-green contract
+17/17, 218 unit, format/lint/typecheck, build 2.121 client/195 SSR, bundle
+terbesar 299,7 KiB dari batas 450 KiB, tiga simulasi storage, dan npm audit nol
+lulus. Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production,
+database, payment, printer/service, dan SagaBook tidak berubah.
+
 ## S233 physical UAT finalize printer binding
 
 Studio exact `c81e934cd2907196f8be35d764ced7b0a76b7068` mengikat printer

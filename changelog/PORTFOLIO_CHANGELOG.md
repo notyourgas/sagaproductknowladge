@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-08-17 - SagaView physical UAT finalize availability binding S234
+
+- Exact Studio `d9d95f518fd1cb49cc8e235b1afb935789954fe6` mengikat URL
+  Studio/API health dari Preflight dan memeriksa ulang HTTP 200 saat Finalize.
+- Evidence hash-only; schema v8, contract 17/17, 218 unit, build/budget, tiga
+  simulasi storage, dan audit dependency nol lulus.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; physical UAT
+  tetap blocked oleh hardware/storage mesin dan production tidak berubah.
+
 ## 2026-08-17 - SagaView physical UAT finalize printer binding S233
 
 - Exact Studio `c81e934cd2907196f8be35d764ced7b0a76b7068` memeriksa ulang

@@ -1,5 +1,20 @@
 # SagaView Changelog
 
+## 2026-08-17 - S234 physical UAT finalize availability binding
+
+- Klasifikasi: `CONFIRMED` release-blocker tooling correction.
+- Before: halaman Studio dan API health hanya dibuktikan saat Preflight;
+  Finalize belum menolak URL yang berubah atau candidate route yang mati.
+- After: Preflight v8 mengikat kedua URL dengan SHA-256; Finalize memeriksa URL
+  yang sama dan HTTP 200 sebelum evidence dapat disahkan. Release contract
+  menolak evidence index sebelum v8.
+- Evidence: red-green contract 17/17, 218 unit, format/lint/typecheck, build
+  2.121 client/195 SSR, bundle terbesar 299,7 KiB/450 KiB, tiga simulasi
+  storage, dan npm audit nol.
+- Delivery: exact Studio `d9d95f518fd1cb49cc8e235b1afb935789954fe6`
+  `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; physical UAT tetap
+  blocked oleh storage/printer mesin dan production tidak berubah.
+
 ## 2026-08-17 - S233 physical UAT finalize printer binding
 
 - Klasifikasi: `CONFIRMED` release-blocker tooling correction.

@@ -12,16 +12,16 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-17T10:12:41+07:00 |
-| Branch aktif | `codex/s233-sagaview-finalize-printer-knowledge` pada worktree terisolasi exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-17T11:20:37+07:00 |
+| Branch aktif | `codex/s234-sagaview-finalize-availability-knowledge` pada worktree terisolasi exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `6919a8d2e635f2be24ba0a4e30035647f80ce9e5` |
-| Informasi terakhir disinkronkan | SagaView S233 finalize printer binding dan exact validation evidence. |
+| Baseline sebelum pembaruan | `b43f9fcb72a70c87fb6cf5d3331b146541671e28` |
+| Informasi terakhir disinkronkan | SagaView S234 finalize availability binding dan exact validation evidence. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
 | Konflik | Sinkronisasi SagaView diterapkan dari exact `origin/main`; pembaruan SagaBook S233 existing dipertahankan utuh. |
-| Error | Tooling finalize printer sudah tertutup; physical output UAT masih blocked sampai storage sah serta EPSON L8050/driver tersedia. |
+| Error | Tooling finalize availability sudah tertutup; physical output UAT masih blocked sampai storage sah serta EPSON L8050/driver tersedia. |
 
-## File yang berubah pada sinkronisasi ini (SagaView S233 finalize printer binding)
+## File yang berubah pada sinkronisasi ini (SagaView S234 finalize availability binding)
 
 - `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
 - `products/sagaview/PRODUCT.md`
