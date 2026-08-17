@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-17 - SagaView physical UAT finalize storage binding S232
+
+- Exact Studio `72e7a0a940a3e428cb8cdc6bb4e1d166abeea45d` mengikat folder dan
+  volume output yang sama dari Preflight sampai Finalize, lalu memeriksa ulang
+  fixed NTFS serta ruang bebas minimal 10 GiB.
+- Evidence hanya membawa hash; schema v6, 216 unit, build/budget, tiga simulasi,
+  dan audit dependency nol lulus.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; physical UAT
+  tetap blocked oleh hardware/storage mesin dan production tidak berubah.
+
 ## 2026-08-17 - SagaView physical UAT fixed NTFS gate S231
 
 - Exact Studio `f2f67bea9004549e16cc0d4206dffe9830718c2b` membuat preflight

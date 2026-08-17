@@ -2,6 +2,17 @@
 
 Updated: 17 Agustus 2026
 
+S232 menutup celah pergantian storage antara Preflight dan Finalize pada Studio
+exact `72e7a0a940a3e428cb8cdc6bb4e1d166abeea45d`. Finalize sekarang wajib
+menerima folder output yang sama, membuktikan identitas volume yang sama, lalu
+memeriksa ulang fixed NTFS dan ruang bebas minimal 10 GiB. Path dan serial
+volume tidak disimpan mentah; evidence hanya membawa SHA-256. Schema evidence
+naik ke v6 dan release gate menolak bukti v5. Tes merah-hijau, 216 unit,
+format/lint/typecheck, build 2.121 client/195 SSR, bundle budget, tiga simulasi,
+dan npm audit nol lulus. Status `PUSHED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; 14 gate fisik tetap menunggu storage sah serta EPSON
+L8050/driver. Production tidak berubah.
+
 S231 menutup celah preflight physical output UAT pada Studio exact
 `f2f67bea9004549e16cc0d4206dffe9830718c2b`. Sebelumnya harness hanya
 memeriksa ruang bebas sehingga removable exFAT berkapasitas besar dapat salah

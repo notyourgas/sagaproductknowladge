@@ -1,5 +1,20 @@
 # SagaView Changelog
 
+## 2026-08-17 - S232 physical UAT finalize storage binding
+
+- Klasifikasi: `CONFIRMED` release-blocker tooling correction.
+- Before: fixed NTFS dan kapasitas hanya dibuktikan pada Preflight; Finalize
+  belum menolak pergantian folder/volume atau penurunan ruang bebas.
+- After: Finalize wajib memakai folder dan volume yang sama, lalu memeriksa
+  ulang fixed NTFS serta ruang bebas minimal 10 GiB. Path/serial hanya dicatat
+  sebagai SHA-256; schema v6 menggantikan v5.
+- Evidence: red-green contract, tiga simulasi storage, 216 unit,
+  format/lint/typecheck, build 2.121 client/195 SSR, bundle budget, dan npm audit
+  nol.
+- Delivery: exact Studio `72e7a0a940a3e428cb8cdc6bb4e1d166abeea45d`
+  `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; physical UAT tetap
+  blocked oleh storage/printer mesin dan production tidak berubah.
+
 ## 2026-08-17 - S231 physical UAT fixed NTFS gate
 
 - Klasifikasi: `CONFIRMED` release-blocker tooling correction.

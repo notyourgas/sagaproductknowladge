@@ -1,5 +1,22 @@
 # SagaView Dossier
 
+## S232 physical UAT finalize storage binding
+
+Studio exact `72e7a0a940a3e428cb8cdc6bb4e1d166abeea45d` mengikat storage
+physical output UAT dari Preflight sampai Finalize. Sebelumnya fixed NTFS dan
+kapasitas hanya diperiksa pada Preflight, sehingga pergantian folder/volume
+setelahnya belum ditolak. Finalize kini mewajibkan `OutputDirectory`, mencocokkan
+hash folder serta identitas volume, dan memeriksa ulang fixed NTFS serta ruang
+bebas minimum 10 GiB.
+
+Evidence hanya menyimpan SHA-256 folder dan identitas volume; path serta serial
+volume tidak dipersistenkan mentah. Schema preflight/evidence index naik ke v6
+dan release contract hanya menerima v6. Red-green contract test, tiga simulasi
+storage, 216 unit, format/lint/typecheck, build 2.121 client/195 SSR, bundle
+budget, dan npm audit nol lulus. Status `PUSHED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; production, database, foto/path/output customer,
+printer, pembayaran, dan SagaBook tidak berubah.
+
 ## S231 physical UAT fixed NTFS gate
 
 Studio exact `f2f67bea9004549e16cc0d4206dffe9830718c2b` memperketat

@@ -1,6 +1,17 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 17 Agustus 2026 08:07 WIB
+Evidence cut-off: 17 Agustus 2026 09:17 WIB
+
+S232 physical UAT finalize storage binding: exact Studio
+`72e7a0a940a3e428cb8cdc6bb4e1d166abeea45d` menutup gap TOCTOU setelah
+Preflight. Finalize kini wajib menerima folder output yang sama, mencocokkan
+identitas volume, dan memeriksa ulang fixed NTFS serta ruang bebas minimal 10
+GiB. Evidence hanya menyimpan SHA-256, schema naik ke v6, dan release gate
+menolak v5. Red-green contract, tiga simulasi storage, 216 unit,
+format/lint/typecheck, build 2.121 client/195 SSR, bundle budget, serta npm audit
+nol lulus. Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; 14
+gate fisik tetap belum lulus karena storage/printer fisik belum tersedia dan
+production tidak berubah.
 
 S231 physical UAT fixed NTFS gate: exact Studio
 `f2f67bea9004549e16cc0d4206dffe9830718c2b` menutup false-ready ketika

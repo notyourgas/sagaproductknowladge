@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-17 - SagaView S232 finalize storage binding sync
+
+- Informasi `CONFIRMED` dari exact Studio
+  `72e7a0a940a3e428cb8cdc6bb4e1d166abeea45d` dan gate exact-worktree.
+- Finalize physical UAT kini terikat ke folder/volume Preflight dan memeriksa
+  ulang fixed NTFS ≥10 GiB; evidence hash-only dan schema v6.
+- Delivery `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; physical UAT
+  tetap blocked oleh kesiapan mesin dan production tidak berubah.
+- Dokumen terdampak: SagaView product/dossier/changelog/coverage, gaps,
+  portfolio/master, root changelog, dan sync status.
+
 ## 2026-08-17 - SagaView S231 fixed NTFS UAT gate sync
 
 - Informasi `CONFIRMED` dari exact Studio
