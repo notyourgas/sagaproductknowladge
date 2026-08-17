@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-08-17 - SagaView physical UAT fixed NTFS gate S231
+
+- Exact Studio `f2f67bea9004549e16cc0d4206dffe9830718c2b` membuat preflight
+  menolak removable drive dan filesystem selain NTFS meskipun kapasitas cukup.
+- Tiga simulasi storage, 215 unit, format/lint/typecheck, build/budget, serta
+  audit dependency nol lulus tanpa foto/path atau data customer.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; physical UAT
+  tetap blocked oleh mesin dan production tidak berubah.
+
 ## 2026-08-17 - SagaView physical output UAT preflight S230
 
 - Exact kandidat Studio `c132c04eb483ac3ab699d424af1ed5acf395a4b4` dan

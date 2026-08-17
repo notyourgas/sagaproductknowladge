@@ -1,5 +1,18 @@
 # SagaView Changelog
 
+## 2026-08-17 - S231 physical UAT fixed NTFS gate
+
+- Klasifikasi: `CONFIRMED` release-blocker tooling correction.
+- Before: kapasitas ≥10 GiB cukup untuk melewati pemeriksaan output, termasuk
+  removable drive atau filesystem selain NTFS.
+- After: preflight wajib fixed NTFS dan kapasitas ≥10 GiB; kondisi drive tidak
+  dikenal gagal aman dan evidence tidak menyimpan path.
+- Evidence: tes merah-hijau, tiga simulasi ready/exFAT/low-disk, 215 unit,
+  format/lint/typecheck, build/budget, dan npm audit nol.
+- Delivery: exact Studio `f2f67bea9004549e16cc0d4206dffe9830718c2b`
+  `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; physical UAT tetap
+  blocked oleh kesiapan mesin, production dan data customer tidak berubah.
+
 ## 2026-08-17 - S230 physical output UAT preflight
 
 - Klasifikasi: `CONFIRMED` read-only readiness evidence.

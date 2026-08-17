@@ -1,6 +1,16 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 17 Agustus 2026 07:12 WIB
+Evidence cut-off: 17 Agustus 2026 08:07 WIB
+
+S231 physical UAT fixed NTFS gate: exact Studio
+`f2f67bea9004549e16cc0d4206dffe9830718c2b` menutup false-ready ketika
+removable exFAT mempunyai ruang ≥10 GiB. Preflight kini wajib fixed NTFS,
+mencatat status tanpa path, dan gagal aman untuk drive tidak dikenal. Tes
+merah-hijau, simulasi fixed NTFS 50 GiB ready-for-script-only, removable exFAT
+50 GiB blocked, fixed NTFS 9 GiB blocked, 215 unit, format/lint/typecheck,
+build/budget, serta audit dependency nol lulus. Status `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; 14 gate fisik tetap belum lulus
+karena hardware/storage mesin belum siap dan production tidak berubah.
 
 S230 physical output UAT preflight: kandidat exact Studio
 `c132c04eb483ac3ab699d424af1ed5acf395a4b4` dan backend

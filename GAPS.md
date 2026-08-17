@@ -8,7 +8,7 @@ diubah menjadi klaim publik sebelum ditutup dengan bukti atau keputusan owner.
 
 ## Konteks
 
-Daftar ini berlaku pada evidence cut-off 17 Agustus 2026 07:12 WIB dan harus diperbarui
+Daftar ini berlaku pada evidence cut-off 17 Agustus 2026 08:07 WIB dan harus diperbarui
 ketika keputusan atau release baru menutup gap.
 
 ## Cara memakai
@@ -34,6 +34,13 @@ ketika keputusan atau release baru menutup gap.
 ## Keputusan produk
 
 ### SagaView
+
+- `CLOSED IN TOOLING / PHYSICAL UAT STILL BLOCKED`: S231 exact Studio
+  `f2f67bea9004549e16cc0d4206dffe9830718c2b` menutup false-ready removable
+  exFAT dengan gate fixed NTFS ≥10 GiB dan sudah `PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Residual tetap menyediakan fixed NTFS yang sah,
+  EPSON L8050/driver, lalu menjalankan 14 gate fisik dengan backend exact
+  `a648c180310e197934ac84eed8519e51ae90f0eb`. Production tidak berubah.
 
 - `PHYSICAL_UAT_PREFLIGHT_BLOCKED`: audit S230 pada exact Studio
   `c132c04eb483ac3ab699d424af1ed5acf395a4b4` dan backend

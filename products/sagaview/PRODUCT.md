@@ -2,6 +2,16 @@
 
 Updated: 17 Agustus 2026
 
+S231 menutup celah preflight physical output UAT pada Studio exact
+`f2f67bea9004549e16cc0d4206dffe9830718c2b`. Sebelumnya harness hanya
+memeriksa ruang bebas sehingga removable exFAT berkapasitas besar dapat salah
+dianggap siap. Sekarang target output wajib fixed NTFS dan minimal 10 GiB;
+jenis drive/filesystem dicatat tanpa path dan kondisi tidak dikenal gagal aman.
+Tes merah-hijau, 215 unit, format/lint/typecheck, build/budget, tiga simulasi,
+serta npm audit nol lulus. Status `PUSHED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; physical UAT tetap blocked sampai fixed NTFS yang
+sah serta EPSON L8050/driver tersedia. Production tidak berubah.
+
 S230 memverifikasi kesiapan mesin untuk physical output UAT kandidat exact
 Studio `c132c04eb483ac3ab699d424af1ed5acf395a4b4` dan backend
 `a648c180310e197934ac84eed8519e51ae90f0eb`. Kedua source tetap bersih dan

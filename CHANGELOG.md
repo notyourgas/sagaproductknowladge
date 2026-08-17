@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-17 - SagaView S231 fixed NTFS UAT gate sync
+
+- Informasi `CONFIRMED` dari exact Studio
+  `f2f67bea9004549e16cc0d4206dffe9830718c2b` dan gate exact-worktree.
+- Preflight physical output UAT kini mewajibkan fixed NTFS ≥10 GiB dan menolak
+  removable exFAT walaupun kapasitasnya cukup.
+- Delivery `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; physical UAT
+  tetap blocked oleh kesiapan mesin dan production tidak berubah.
+- Dokumen terdampak: SagaView product/dossier/changelog/coverage, gaps,
+  portfolio/master, root changelog, dan sync status.
+
 ## 2026-08-17 - SagaView S230 physical UAT preflight sync
 
 - Informasi `CONFIRMED` dari audit readiness read-only exact kandidat S229.

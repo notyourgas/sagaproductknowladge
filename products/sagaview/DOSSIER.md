@@ -1,5 +1,22 @@
 # SagaView Dossier
 
+## S231 physical UAT fixed NTFS gate
+
+Studio exact `f2f67bea9004549e16cc0d4206dffe9830718c2b` memperketat
+orchestrator physical output UAT. Preflight kini membaca `DriveType` dan
+filesystem target: selain fixed menghasilkan `output_drive_not_fixed`, selain
+NTFS menghasilkan `output_filesystem_not_ntfs`, dan drive yang tidak dapat
+diidentifikasi gagal aman dengan kapasitas nol. Evidence hanya mencatat status
+drive/filesystem tanpa folder path.
+
+Tes kontrak merah sebelum implementasi lalu hijau. Simulasi fixed NTFS 50 GiB
+tetap hanya siap untuk validasi script; removable exFAT 50 GiB diblokir oleh
+dua alasan eksplisit; fixed NTFS 9 GiB tetap diblokir kapasitas. Gate lengkap
+lulus 215 unit, format/lint/typecheck, build 2.121 modul/budget, dan npm audit
+nol. Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Perubahan
+hanya tooling UAT; production, runtime, database, printer, pembayaran, foto,
+path, output customer, dan SagaBook tidak berubah.
+
 ## S230 physical output UAT preflight blocked
 
 Audit read-only dijalankan pada kandidat exact Studio
