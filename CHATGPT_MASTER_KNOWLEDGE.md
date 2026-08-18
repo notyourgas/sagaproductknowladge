@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 18 Agustus 2026 09:17 WIB
+Evidence cut-off: 18 Agustus 2026 14:10 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -441,14 +441,22 @@ pembayaran, menerima status/reminder, dan mengelola request dari secure booking
 link. Operator mengelola calendar, task, check-in, session, payment,
 reconciliation, report, staff, tenant, dan subscription.
 
-Exact source `730b074dc3414bc7f3e2ad4748e883be35e5ea1a` aktif sebagai
-release `20260817221051-730b074` dengan rollback
-`20260814092112-1765fe8`. Source remote `main`, archive immutable, Git bundle, backup
-terenkripsi/disposable restore, migrasi, atomic switch, manifest, DB audit,
-public smoke, service, journal, rollback, dan verifier 17/17 terverifikasi.
+Exact source `7e617b7ba2ff280d137d4d4f263c60f5e7aa6f0a` aktif sebagai
+release `20260818054003-7e617b7` dengan rollback
+`20260817221051-730b074`. Source remote `main`, manifest, migrasi, public smoke,
+service, queue journal, security header, rollback, dan verifier 17/17 terverifikasi.
 HTTP dan security profile masing-masing lulus 3/3. Status
 `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated UAT nyata, dua
 studio pilot, dan provider canary tetap menahan `BUSINESS_READY`.
+
+S244 exact `7fb80375915771457e343016e4851bbfc876199d` mengelompokkan
+navigasi admin sesuai capability ke lima area: Operasional, Katalog,
+Organisasi, Keuangan, dan Pengaturan. Payment Monitor, Laporan, dan SagaDev
+Gateway konsisten di Keuangan; header workspace mengikuti taxonomy yang sama.
+Owner tiga viewport, staff permission-negative, accessibility, backend contract,
+build, typecheck, design, dan audit dependency lulus. Status
+`PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; S244 tidak dideploy dan
+production aktif tetap release S73 di atas.
 
 Release S240 mengaktifkan hardening tooling authenticated UAT S214-S232.
 Focused 28/28, backend 1.045/1.045, build, audit dependency, artifact ganda,

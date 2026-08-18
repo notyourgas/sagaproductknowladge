@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 18 Agustus 2026 09:17 WIB
+Updated: 18 Agustus 2026 14:10 WIB
 Evidence status: production deployment and activation verified; business readiness pending
 
 ## Tujuan dokumen
@@ -15,6 +15,27 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- Production aktif terverifikasi pada exact source
+  `7e617b7ba2ff280d137d4d4f263c60f5e7aa6f0a` sebagai immutable release
+  `20260818054003-7e617b7`, dengan release S240
+  `20260817221051-730b074` sebagai rollback langsung. Manifest, migration,
+  service, queue journal, public smoke, security header, rollback, dan verifier
+  independen 17/17 lulus. Release ini memuat lifecycle clearing Tokopay S73;
+  `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` terverifikasi, sedangkan
+  `BUSINESS_READY` tetap belum karena authenticated UAT, dua studio pilot, dan
+  provider canary masih residual.
+
+- S244 exact source `7fb80375915771457e343016e4851bbfc876199d`
+  mengelompokkan navigasi admin yang sudah diizinkan role menjadi Operasional,
+  Katalog, Organisasi, Keuangan, dan Pengaturan. Payment Monitor, Laporan, dan
+  SagaDev Gateway sekarang konsisten berada di Keuangan; header workspace
+  mengikuti taxonomy yang sama. Capability filter, tenant boundary, dan route
+  authorization tidak berubah. Gate exact commit mencakup Playwright owner pada
+  390x844, 768x1024, 1440x900 serta staff permission-negative, backend 8/8
+  (195 assertion), build, typecheck, design audit 26/0, dan audit dependency nol
+  temuan. Status `CONFIRMED / PUSHED / UIUX_VALIDATED / SECURITY_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production S244 tidak berubah.
 
 - S243 exact source `55a885a538737bf1f0a202b12e4b20f27fad2512`
   menambahkan kontrak dan validator evidence public-safe untuk tepat dua studio

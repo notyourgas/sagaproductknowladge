@@ -1,5 +1,23 @@
 # SagaBook Changelog
 
+## 2026-08-18 - Admin navigation berbasis role S244
+
+- Informasi `CONFIRMED` dari exact source
+  `7fb80375915771457e343016e4851bbfc876199d` dan remote branch exact.
+- Before: Payment Monitor berada di Operasional, Laporan/Gateway berada di
+  Organisasi, dan group terakhir memakai istilah Konfigurasi. After: sidebar
+  dan header workspace konsisten memakai Operasional, Katalog, Organisasi,
+  Keuangan, dan Pengaturan tanpa memperluas capability.
+- Gate exact commit: Playwright 4 pass/2 intentional skip pada 390x844,
+  768x1024, dan 1440x900; staff permission-negative; backend 8/8 dengan 195
+  assertion; broader UI regression 27/27; build, typecheck, design 26/0,
+  npm/Composer/OSV, dan diff check lulus.
+- Dampak: tujuan admin lebih mudah dipindai dan role tidak melihat menu yang
+  tidak dapat diakses. Status `PUSHED / UIUX_VALIDATED / SECURITY_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; S244 tidak dideploy. Production
+  aktif terverifikasi tetap S73 `7e617b7ba2ff280d137d4d4f263c60f5e7aa6f0a`
+  / `20260818054003-7e617b7`; `BUSINESS_READY` belum.
+
 ## 2026-08-18 - Two-studio pilot evidence contract S243
 
 - Informasi `CONFIRMED` dari exact source

@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-18 - SagaBook S244 admin navigation berbasis role
+
+- Exact source `7fb80375915771457e343016e4851bbfc876199d` mengelompokkan
+  sidebar dan header admin ke Operasional, Katalog, Organisasi, Keuangan, dan
+  Pengaturan.
+- Capability filtering tetap fail-closed; owner dan staff permission-negative,
+  accessibility, tiga viewport, build, backend contract, design, typecheck,
+  serta audit dependency lulus.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; S244 tidak
+  dideploy. Production aktif yang diverifikasi adalah S73
+  `20260818054003-7e617b7`; `BUSINESS_READY` tetap belum.
+
 ## 2026-08-18 - SagaBook S243 two-studio pilot evidence contract
 
 - Exact source `55a885a538737bf1f0a202b12e4b20f27fad2512` menambahkan

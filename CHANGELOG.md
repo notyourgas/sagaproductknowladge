@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-18 - SagaBook S244 role navigation knowledge sync
+
+- Informasi `CONFIRMED` dari exact source
+  `7fb80375915771457e343016e4851bbfc876199d` dan gate exact commit.
+- Knowledge mencatat taxonomy lima area admin, capability-negative staff,
+  accessibility tiga viewport, serta status local-only S244.
+- Delivery `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; S244 tidak
+  dideploy. Production aktif diverifikasi pada S73
+  `7e617b7ba2ff280d137d4d4f263c60f5e7aa6f0a` /
+  `20260818054003-7e617b7`; `BUSINESS_READY` belum.
+- Dokumen terdampak: SagaBook product/changelog/coverage, portfolio/master,
+  root changelog, dan sync status.
+
 ## 2026-08-18 - SagaBook S243 two-studio pilot evidence knowledge sync
 
 - Informasi `CONFIRMED` dari exact source

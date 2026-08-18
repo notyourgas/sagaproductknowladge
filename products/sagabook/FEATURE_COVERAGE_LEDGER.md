@@ -1,14 +1,13 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 18 Agustus 2026 09:17 WIB
+Evidence cut-off: 18 Agustus 2026 14:10 WIB
 
-Source S240 exact `730b074dc3414bc7f3e2ad4748e883be35e5ea1a` sudah
+Source S73 exact `7e617b7ba2ff280d137d4d4f263c60f5e7aa6f0a` sudah
 `PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` sebagai release immutable
-`20260817221051-730b074`, dengan release S208 `20260814092112-1765fe8` sebagai
-rollback langsung. Source exact berada di remote `main`; dua salinan
-archive/bundle, fresh encrypted backup, checksum offsite, disposable restore,
-migration compatibility, atomic switch, manifest, DB audit, smoke, service,
-journal, rollback, dan verifier 17/17 lulus.
+`20260818054003-7e617b7`, dengan release S240 `20260817221051-730b074` sebagai
+rollback langsung. Source exact berada di remote `main`; manifest, migration,
+service, queue journal, public smoke, security header, rollback, dan verifier
+17/17 lulus.
 `BUSINESS_READY` belum tercapai karena authenticated UAT nyata,
 dua studio pilot, dan canary provider tetap residual; subscription tidak diubah.
 Kolom gap pada baris sebelumnya dipertahankan sebagai snapshot saat irisan
@@ -88,6 +87,15 @@ build 5.116 modul, dan audit dependency nol temuan. Production tetap S240;
 authenticated UAT dan pilot nyata belum dijalankan, provider canary tetap
 residual, dan output validator selalu `businessReady=false`.
 
+S244 mengelompokkan navigasi admin menjadi lima domain bisnis tanpa mengubah
+capability, tenant boundary, route authorization, workflow, API, atau database.
+Source `7fb80375915771457e343016e4851bbfc876199d` sudah pushed pada branch
+terisolasi. Exact-commit gate membuktikan urutan group owner, permission-negative
+staff, landmark screen reader, keyboard focus, target 44 px, forced-colors,
+reduced-motion, no-overflow, 390x844, 768x1024, dan 1440x900. Status
+`UIUX_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; production tetap release S73.
+
 S233 merekonsiliasi empat baris ringkasan fitur yang masih memakai snapshot
 sebelum exit gate. Status availability/slot, payment/status, WhatsApp/reminder,
 serta report/reconciliation kini menunjuk ke evidence accepted dan ancestry
@@ -96,6 +104,7 @@ database, provider, release, activation, dan business readiness tidak berubah.
 
 | Fitur/alur | Role | Route/surface | Status UI/UX | Frontend state/form | API/boundary | Backend/database | Auth/tenant/permission | Happy/failure/retry/idempotency | Viewport/zoom | Evidence/source/release | Status akhir | Gap berikutnya |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Admin navigation berbasis role S244 | Owner dan staff capability-negative | Seluruh `/admin/*` melalui sidebar dan header workspace | Lima group berurutan: Operasional, Katalog, Organisasi, Keuangan, Pengaturan; landmark navigation aksesibel, keyboard focus, target 44 px, forced-colors, reduced-motion, dan no-overflow lulus | Menu hanya dirender dari capability payload existing; Payment Monitor, Laporan, dan SagaDev Gateway konsisten di Keuangan; header memakai taxonomy yang sama | Tidak ada endpoint atau response contract baru | Tidak ada schema, migration, atau write; disposable migration rehearsal termasuk lifecycle clearing production terbaru lulus | Capability filtering existing dipertahankan; staff hanya melihat tujuan yang diizinkan, sedangkan katalog, organisasi, laporan, gateway, subscription, dan audit yang tidak berhak tetap tidak dirender | Owner group/order dan staff permission-negative lulus; tidak ada mutation, double-submit, atau state bisnis baru | 390x844, 768x1024, 1440x900; keyboard/focus, screen reader landmark, target 44 px, forced-colors, reduced-motion, no-overflow | Source `7fb80375915771457e343016e4851bbfc876199d`; branch `codex/s244-sagabook-admin-role-navigation`; focused Playwright 4 pass/2 intentional skip, backend 8/8 (195), broader UI regression 27/27, build, typecheck, design 26/0, npm/Composer/OSV nol | `CONFIRMED / PUSHED / UIUX_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S73 | Authenticated Owner/operator UAT dan pilot tetap exit gate `BUSINESS_READY`; deployment S244 memerlukan release candidate/gate terpisah. |
 | Two-studio pilot evidence contract S243 | Owner/operator/customer; Product, Security, QA, DevOps, Production Auditor | Template create-only -> dua pilot nyata -> evidence JSON public-safe -> validator CLI | Tidak mengubah UI produk; kontrak mewajibkan coverage role dan alur pilot yang sudah disetujui | Tidak mengubah frontend; hasil hanya menerima evidence lengkap dari dua pilot | Tidak ada login, API, network, provider, atau mutation production; exact source/release wajib | Tidak ada schema/migration/write; backup/restore, audit, payment accounting, dan rollback harus terbukti true | Tepat dua slot pilot ordinal; tenant isolation dan permission-negative wajib; strict allowlist menolak PII/secret/URL/UUID/field asing | Seluruh setup/flow/recovery/idempotency/audit harus pass; metrik 95-100%, booking median <240 detik, transfer verification median <120 detik, zero cross-tenant/duplikasi finansial/Critical/High | Tepat 390x844 dan 1440x900 untuk role Owner/operator/customer; aksesibilitas diwarisi dari acceptance UAT | Source `55a885a538737bf1f0a202b12e4b20f27fad2512`; branch `codex/s243-sagabook-two-pilot-evidence-contract`; focused 15/15, UAT 13/13, production tooling 28/28, backend 1.045/1.045 (11.868), build 5.116, npm/Composer/OSV nol | `CONFIRMED / PUSHED / SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S240 | Minta izin eksplisit sebelum authenticated UAT memakai credential/data studio; setelah UAT accepted, jalankan tepat dua pilot nyata memakai kontrak ini. Provider canary tetap izin terpisah dan `BUSINESS_READY` false. |
 | UAT bridge recovery runbook S242 | Owner/operator UAT; Product, Security, QA, DevOps, Production Auditor | Preflight status -> recovery map -> exact release verifier -> read-only UAT -> evidence validator | Tidak mengubah UI produk; instruksi operator memuat state public-safe dan stop condition | Tidak mengubah frontend | Hanya memanggil tooling existing; bridge wajib loopback dan UAT tetap read-only setelah login | Tidak ada schema/database/migration/write | Master password hanya di terminal lokal; dua reference role terpisah; tidak ada PII/secret pada evidence | Unavailable/locked/invalid/concurrent/prompt/launcher/terminal status dipetakan; maksimal dua correction rounds; output create-only dan cleanup wajib | Runner existing tetap mencakup 390x844 dan 1440x900, focus, screen reader, target 44 px, forced-colors, reduced-motion, zoom, no-overflow | Source `0d8e3f36f19859f646f4307e02b63828c6510b26`; branch `codex/s242-sagabook-uat-bridge-recovery-runbook`; runbook 2/2, tooling 28/28, npm/Composer/OSV nol, production verifier 17/17 | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S240 | Andreas/operator unlock bridge pada terminal lokal, ulang preflight sampai ready, lalu jalankan UAT read-only exact S240; dua studio pilot dan provider canary tetap residual. |
 | UAT bridge launcher idempotency S218 | Owner/operator UAT; Security, QA, DevOps, Production Auditor | Dua invocation launcher -> mutex per-port -> satu prompt unlock | Tidak mengubah UI produk; status `launch_in_progress`/`unlock_prompt_active` public-safe | Tidak mengubah frontend | Tidak mengakses API SagaBook/production; preflight tetap status-only loopback | Tidak ada schema/database/migration/write; full backend disposable lulus | Mutex lokal tidak memuat credential; prompt existing dipakai ulang; proses unlock dibatasi command exact dan waktu mulai | Concurrent launch ditolak exit 4 tanpa terminal kedua; dry-run tetap hijau; proses lama tidak dianggap hasil launch baru | Tidak mengubah surface browser; coverage 390x844 dan 1440x900 tetap di runner S214 | Source `60e115db0458b4791938e692dda79643f47d342a`; branch `codex/s218-sagabook-uat-launcher-idempotency`; focused 15/15, evidence 13/13, backend 1.045/1.045 (11.868), build 5.116, syntax, npm/Composer/OSV hijau | `PUSHED / SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S208 | Operator jalankan satu launcher, unlock di terminal lokal, lalu actual Owner/operator UAT S214; deploy kandidat produk hanya setelah evidence S206 hijau. |
