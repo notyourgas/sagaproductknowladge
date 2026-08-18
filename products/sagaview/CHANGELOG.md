@@ -1,5 +1,23 @@
 # SagaView Changelog
 
+## 2026-08-18 - S247 operator print acceptance
+
+- Klasifikasi: `CONFIRMED` operator acceptance dan release-evidence correction.
+- Before: dua gate print tetap meminta UAT agen walau Andreas sudah mencoba
+  sendiri dan menyatakan print aman.
+- After: receipt publik-aman ber-SHA-256 memberi status
+  `OPERATOR_ACCEPTED / UAT_WAIVED` hanya pada portrait dan landscape. Dua belas
+  gate non-print, exact provenance, runtime, storage, recovery, dan no-upload
+  tetap fail-closed.
+- Evidence: focused contract 27/27, 228 unit, Playwright 146 pass/3 intentional
+  skip, format/lint/typecheck, build, bundle 299,7 KiB/450 KiB, parser
+  PowerShell, npm audit nol, dan preflight exact-commit bersih tanpa blocker
+  printer/acceptance.
+- Delivery: exact Studio `9e5491b113f6e5cd07c32081c1b1d4d6d6ea4999`
+  `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak
+  berubah. Release tetap ditahan oleh fixed NTFS 9,23 GiB dan runtime lokal
+  yang belum aktif.
+
 ## 2026-08-18 - S244 immutable release artifact rehearsal
 
 - Klasifikasi: `CONFIRMED` release-readiness evidence.

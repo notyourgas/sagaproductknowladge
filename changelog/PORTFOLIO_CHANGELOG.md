@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-18 - SagaView S247 operator print acceptance
+
+- Keputusan Andreas bahwa print sudah diuji sendiri kini dicatat sebagai
+  `OPERATOR_ACCEPTED / UAT_WAIVED` hanya untuk portrait dan landscape, dengan
+  receipt publik-aman yang diikat SHA-256.
+- Dua belas gate non-print dan seluruh boundary local-first, provenance,
+  runtime, storage, recovery, serta no-upload tetap wajib lulus dan tidak dapat
+  ikut di-waive.
+- Exact Studio `9e5491b113f6e5cd07c32081c1b1d4d6d6ea4999` berstatus `PUSHED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan
+  release masih ditahan oleh storage di bawah 10 GiB serta runtime lokal.
+
 ## 2026-08-18 - SagaView S244 immutable release artifacts
 
 - Kandidat S243 dibekukan sebagai release `20260818000201-d5d5229` dengan

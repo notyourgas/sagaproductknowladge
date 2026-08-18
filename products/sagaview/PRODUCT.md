@@ -2,6 +2,19 @@
 
 Updated: 18 Agustus 2026
 
+S247 mencatat keputusan operator bahwa print portrait dan landscape sudah
+diuji sendiri dan tidak memerlukan UAT agen tambahan pada Studio exact
+`9e5491b113f6e5cd07c32081c1b1d4d6d6ea4999`. Harness sekarang menerima
+receipt publik-aman ber-SHA-256 hanya untuk dua gate print dengan status
+`OPERATOR_ACCEPTED / UAT_WAIVED`; 12 gate non-print tetap wajib `pass` dengan
+evidence dan seluruh pemeriksaan source, runtime, storage, recovery, serta
+no-upload tetap fail-closed. Focused contract 27/27, 228 unit, Playwright 146
+pass/3 intentional skip, format/lint/typecheck, build, bundle 299,7 KiB dari
+batas 450 KiB, parser PowerShell, dan npm audit nol lulus. Status `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
+Preflight exact-commit membuktikan waiver print valid, tetapi release tetap
+ditahan karena fixed NTFS hanya 9,23 GiB bebas dan runtime lokal belum aktif.
+
 S244 membekukan kandidat Studio S243 sebagai release artifact immutable
 `20260818000201-d5d5229`. Archive source, evidence manifest, `SHA256SUMS`, dan
 git bundle dibuat dari exact `d5d52297348b4c0269ecd17798114c3e432c4f17`,
