@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 18 Agustus 2026 16:05 WIB
+Evidence cut-off: 18 Agustus 2026 18:08 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -454,9 +454,9 @@ pembayaran, menerima status/reminder, dan mengelola request dari secure booking
 link. Operator mengelola calendar, task, check-in, session, payment,
 reconciliation, report, staff, tenant, dan subscription.
 
-Exact source `7e617b7ba2ff280d137d4d4f263c60f5e7aa6f0a` aktif sebagai
-release `20260818054003-7e617b7` dengan rollback
-`20260817221051-730b074`. Source remote `main`, manifest, migrasi, public smoke,
+Exact source `7fb80375915771457e343016e4851bbfc876199d` aktif sebagai
+release `20260818091438-7fb8037` dengan rollback
+`20260818054003-7e617b7`. Source remote `main`, manifest, migrasi, public smoke,
 service, queue journal, security header, rollback, dan verifier 17/17 terverifikasi.
 HTTP dan security profile masing-masing lulus 3/3. Status
 `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated UAT nyata, dua
@@ -467,13 +467,14 @@ navigasi admin sesuai capability ke lima area: Operasional, Katalog,
 Organisasi, Keuangan, dan Pengaturan. Payment Monitor, Laporan, dan SagaDev
 Gateway konsisten di Keuangan; header workspace mengikuti taxonomy yang sama.
 Owner tiga viewport, staff permission-negative, accessibility, backend contract,
-build, typecheck, design, dan audit dependency lulus. Status
-`PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; S244 tidak dideploy dan
-production aktif tetap release S73 di atas. Kandidat ini juga mempunyai source
+build, typecheck, design, release contract, dan audit dependency lulus. Status
+`PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
+Kandidat ini juga mempunyai source
 archive, metadata, manifest SHA-256, dan Git bundle exact HEAD pada dua salinan
 checksum-identik. Contract 1/1 dan pemeriksaan archive public-safe lulus.
-Status tambahan `RELEASE_ARTIFACT_VALIDATED / PACKAGED_NOT_DEPLOYED`; ini bukan
-`STAGING_READY`.
+Status tambahan `RELEASE_ARTIFACT_VALIDATED`; encrypted backup, checksum,
+disposable restore, manifest, rollback, migration, service/journal,
+smoke/header, dan verifier 17/17 lulus. `BUSINESS_READY` belum.
 
 Release S240 mengaktifkan hardening tooling authenticated UAT S214-S232.
 Focused 28/28, backend 1.045/1.045, build, audit dependency, artifact ganda,

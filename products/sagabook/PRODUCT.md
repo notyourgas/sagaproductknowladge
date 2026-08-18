@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 18 Agustus 2026 16:05 WIB
+Updated: 18 Agustus 2026 18:08 WIB
 Evidence status: production deployment and activation verified; business readiness pending
 
 ## Tujuan dokumen
@@ -17,12 +17,13 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 ## Status production terbaru
 
 - Production aktif terverifikasi pada exact source
-  `7e617b7ba2ff280d137d4d4f263c60f5e7aa6f0a` sebagai immutable release
-  `20260818054003-7e617b7`, dengan release S240
-  `20260817221051-730b074` sebagai rollback langsung. Manifest, migration,
-  service, queue journal, public smoke, security header, rollback, dan verifier
-  independen 17/17 lulus. Release ini memuat lifecycle clearing Tokopay S73;
-  `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` terverifikasi, sedangkan
+  `7fb80375915771457e343016e4851bbfc876199d` sebagai immutable release
+  `20260818091438-7fb8037`, dengan release S73
+  `20260818054003-7e617b7` sebagai rollback langsung. Remote `main`, manifest,
+  migration, service, queue journal, public smoke, security header, rollback,
+  dan verifier independen 17/17 lulus. Fresh encrypted backup, checksum, dan
+  disposable restore terikat exact commit juga lulus. Status
+  `PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` terverifikasi;
   `BUSINESS_READY` tetap belum karena authenticated UAT, dua studio pilot, dan
   provider canary masih residual.
 
@@ -32,15 +33,17 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   SagaDev Gateway sekarang konsisten berada di Keuangan; header workspace
   mengikuti taxonomy yang sama. Capability filter, tenant boundary, dan route
   authorization tidak berubah. Gate exact commit mencakup Playwright owner pada
-  390x844, 768x1024, 1440x900 serta staff permission-negative, backend 8/8
-  (195 assertion), build, typecheck, design audit 26/0, dan audit dependency nol
-  temuan. Source archive, metadata, manifest SHA-256, dan Git bundle exact HEAD
+  390x844, 768x1024, 1440x900 serta staff permission-negative, full backend
+  1.051/1.051 (11.894 assertion), build, typecheck, design audit 26/0, release
+  contract 16/16 (186 assertion), dan audit dependency nol temuan. Source
+  archive, metadata, manifest SHA-256, dan Git bundle exact HEAD
   sudah dibuat pada dua salinan terpisah; checksum 4/4 identik, bundle
   terverifikasi, archive 2.713 entri tidak memuat `.env` aktual atau `.git`, dan
   contract test 1/1 (16 assertion) lulus. Status `CONFIRMED / PUSHED /
   UIUX_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
-  RELEASE_ARTIFACT_VALIDATED / PACKAGED_NOT_DEPLOYED /
-  IMPLEMENTED_NOT_DEPLOYED`; production S244 tidak berubah.
+  RELEASE_ARTIFACT_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
+  Tidak ada canary provider atau pesan customer pada release ini dan
+  `BUSINESS_READY` belum.
 
 - S243 exact source `55a885a538737bf1f0a202b12e4b20f27fad2512`
   menambahkan kontrak dan validator evidence public-safe untuk tepat dua studio

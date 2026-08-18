@@ -1,5 +1,22 @@
 # SagaBook Changelog
 
+## 2026-08-18 - Production release S244 admin navigation
+
+- Informasi `CONFIRMED` dari exact source
+  `7fb80375915771457e343016e4851bbfc876199d`, immutable release
+  `20260818091438-7fb8037`, dan verifier production independen 17/17.
+- Before: S244 sudah local-validated dan mempunyai dua salinan artefak, tetapi
+  belum aktif. After: remote `main` dan production aktif memakai exact source
+  S244; rollback langsung S73 `20260818054003-7e617b7` tersedia.
+- Gate: full backend 1.051/1.051 (11.894 assertion), focused browser 4 pass/2
+  intentional skip, build, typecheck, design 26/0, release contract 16/16
+  (186 assertion), dependency audit nol, encrypted backup/checksum/disposable
+  restore, manifest, migration, service/journal, smoke/header, dan rollback
+  lulus.
+- Delivery `PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
+  `BUSINESS_READY` belum; authenticated Owner/operator UAT, dua studio pilot,
+  dan provider canary tetap residual. Tidak ada canary atau pesan customer.
+
 ## 2026-08-18 - Immutable release artifacts untuk S244
 
 - Informasi `CONFIRMED` dari exact source

@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-18 - SagaBook S244 production activation
+
+- Exact source `7fb80375915771457e343016e4851bbfc876199d` aktif sebagai
+  release `20260818091438-7fb8037`; rollback S73
+  `20260818054003-7e617b7` tersedia.
+- Full backend 1.051/1.051, browser tiga viewport, build/typecheck/design,
+  release contract, dependency audit, artefak ganda, encrypted
+  backup/disposable restore, manifest, migration, service/journal,
+  smoke/header, dan verifier 17/17 lulus.
+- Status `PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+  `BUSINESS_READY` belum karena authenticated UAT, dua studio pilot, dan
+  provider canary masih residual.
+
 ## 2026-08-18 - SagaBook S244 immutable release artifacts
 
 - Exact source `7fb80375915771457e343016e4851bbfc876199d` kini mempunyai
