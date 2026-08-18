@@ -12,14 +12,23 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-18T06:22:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-18T07:05:00+07:00 |
 | Branch aktif | `main` pada clone sinkronisasi terisolasi exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `a1b1f9a1b65edcec4dc74536981594f558444182` |
-| Informasi terakhir disinkronkan | SagaView S243 physical UAT runtime-origin binding. |
+| Baseline sebelum pembaruan | `96313a2ae614a6ce88fa8a8fdb744427cf414d69` |
+| Informasi terakhir disinkronkan | SagaView S244 immutable release artifact rehearsal. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
 | Konflik | Sinkronisasi dibangun di atas exact `origin/main`; perubahan SagaBook dan produk lain dipertahankan utuh; checkout lain tidak disentuh. |
-| Error | Tidak ada error sinkronisasi; UAT fisik SagaView tetap menunggu EPSON L8050/driver serta fresh preflight storage. |
+| Error | Tidak ada error sinkronisasi; UAT fisik SagaView tetap menunggu EPSON L8050/driver dan fixed NTFS minimal 10 GiB. |
+
+## File yang berubah pada sinkronisasi ini (SagaView S244 immutable release artifacts)
+
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaView S243 runtime-origin binding)
 

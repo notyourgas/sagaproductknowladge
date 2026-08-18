@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-08-18 - SagaView S244 immutable release artifacts
+
+- Kandidat S243 dibekukan sebagai release `20260818000201-d5d5229` dengan
+  archive, manifest, checksum, dan git bundle pada dua lokasi terverifikasi.
+- Hash kedua salinan sama dan bundle memuat exact HEAD beserta complete history.
+- Status `PUSHED / ARTIFACT_VERIFIED / PACKAGED_NOT_DEPLOYED`; production
+  tidak berubah dan physical UAT tetap blocked oleh printer/driver serta
+  storage di bawah 10 GiB.
+
 ## 2026-08-18 - SagaView S243 runtime-origin binding
 
 - Harness UAT fisik kini menolak pasangan halaman/health dan provenance yang

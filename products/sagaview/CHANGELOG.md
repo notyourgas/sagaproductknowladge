@@ -1,5 +1,21 @@
 # SagaView Changelog
 
+## 2026-08-18 - S244 immutable release artifact rehearsal
+
+- Klasifikasi: `CONFIRMED` release-readiness evidence.
+- Before: source S243 sudah remote-exact, tetapi belum memiliki paket recovery
+  immutable dan salinan kedua untuk release lokal.
+- After: release `20260818000201-d5d5229` memiliki archive, manifest,
+  `SHA256SUMS`, dan git bundle pada dua lokasi; hash cocok dan kedua bundle
+  memuat HEAD exact dengan complete history.
+- Evidence: archive SHA-256
+  `ef55e2b2c44e0f68821bd39d008abf3e39b531729600ffc2890435c14a728964` dan
+  bundle SHA-256
+  `ed4060e6aec2a26e2a7a6bd9ba7be7c49d06c9c6e247dfc37f1dd7c736d8c455`.
+- Delivery: `PUSHED / ARTIFACT_VERIFIED / PACKAGED_NOT_DEPLOYED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah. Physical UAT tetap
+  blocked oleh printer/driver dan fixed NTFS di bawah 10 GiB.
+
 ## 2026-08-18 - S243 physical UAT runtime-origin binding
 
 - Klasifikasi: `CONFIRMED` release-provenance correction.

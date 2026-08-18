@@ -1,6 +1,18 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 18 Agustus 2026 06:22 WIB
+Evidence cut-off: 18 Agustus 2026 07:05 WIB
+
+S244 immutable release artifact rehearsal: release
+`20260818000201-d5d5229` membekukan exact Studio
+`d5d52297348b4c0269ecd17798114c3e432c4f17` sebagai archive, evidence
+manifest, `SHA256SUMS`, dan git bundle pada dua lokasi. Keempat hash cocok;
+kedua bundle memuat HEAD exact dan complete history. Archive SHA-256
+`ef55e2b2c44e0f68821bd39d008abf3e39b531729600ffc2890435c14a728964` dan
+bundle SHA-256
+`ed4060e6aec2a26e2a7a6bd9ba7be7c49d06c9c6e247dfc37f1dd7c736d8c455`.
+Status `PUSHED / ARTIFACT_VERIFIED / PACKAGED_NOT_DEPLOYED /
+IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah. Physical UAT 14 gate
+tetap blocked oleh EPSON L8050/driver dan fixed NTFS di bawah 10 GiB.
 
 S243 physical UAT runtime-origin binding: exact Studio
 `d5d52297348b4c0269ecd17798114c3e432c4f17` mewajibkan URL halaman Studio dan

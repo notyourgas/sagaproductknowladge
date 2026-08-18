@@ -2,6 +2,15 @@
 
 Updated: 18 Agustus 2026
 
+S244 membekukan kandidat Studio S243 sebagai release artifact immutable
+`20260818000201-d5d5229`. Archive source, evidence manifest, `SHA256SUMS`, dan
+git bundle dibuat dari exact `d5d52297348b4c0269ecd17798114c3e432c4f17`,
+lalu disalin ke lokasi kedua. Keempat hash antar-salinan cocok; kedua bundle
+terverifikasi memuat HEAD exact dan complete history. Status `PUSHED /
+ARTIFACT_VERIFIED / PACKAGED_NOT_DEPLOYED / IMPLEMENTED_NOT_DEPLOYED`;
+production tidak berubah. Physical UAT masih blocked karena EPSON L8050/driver
+belum tersedia dan ruang fixed NTFS saat verifikasi berada di bawah 10 GiB.
+
 S243 menutup false-positive runtime pada harness UAT fisik di Studio exact
 `d5d52297348b4c0269ecd17798114c3e432c4f17`. URL halaman Studio sekarang
 wajib satu origin dengan marker provenance Studio; URL health backend juga

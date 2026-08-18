@@ -1,5 +1,14 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-18 - SagaView S244 immutable release artifacts
+
+- Informasi `CONFIRMED` dari exact source S243 dan verifikasi dua salinan
+  release `20260818000201-d5d5229`.
+- Archive, evidence manifest, checksum, dan bundle recovery memiliki hash yang
+  cocok; bundle memuat exact HEAD dan complete history.
+- Delivery `PUSHED / ARTIFACT_VERIFIED / PACKAGED_NOT_DEPLOYED`; production
+  tidak berubah dan physical UAT belum selesai.
+
 ## 2026-08-18 - SagaView S243 runtime-origin binding
 
 - Informasi `CONFIRMED` dari exact Studio
