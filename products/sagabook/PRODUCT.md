@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 18 Agustus 2026 08:10 WIB
+Updated: 18 Agustus 2026 09:17 WIB
 Evidence status: production deployment and activation verified; business readiness pending
 
 ## Tujuan dokumen
@@ -15,6 +15,22 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- S243 exact source `55a885a538737bf1f0a202b12e4b20f27fad2512`
+  menambahkan kontrak dan validator evidence public-safe untuk tepat dua studio
+  pilot nyata. Validator mengikat exact production source/release, role
+  Owner/operator/customer, viewport 390x844 dan 1440x900, tenant isolation,
+  permission-negative, idempotency, audit, payment accounting, backup/restore,
+  rollback, batas metrik operasional, dan zero Critical/High. Allowlist serta
+  marker scan menolak PII, secret, URL, UUID, field asing, overwrite, dan path
+  evidence lokal. Gate focused 15/15, kontrak UAT 13/13, tooling production UAT
+  28/28, backend 1.045/1.045 (11.868 assertion), build 5.116 modul, serta audit
+  npm/Composer/OSV nol temuan. Status `CONFIRMED / PUSHED / SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap S240. Credential bridge metadata
+  kini ready, tetapi authenticated UAT tidak dijalankan tanpa izin penggunaan
+  credential/data studio. Dua pilot nyata dan provider canary tetap residual;
+  validator tidak pernah menyatakan `businessReady=true`.
 
 - S242 exact source `0d8e3f36f19859f646f4307e02b63828c6510b26`
   menambahkan runbook pemulihan credential bridge UAT dan acceptance statis.

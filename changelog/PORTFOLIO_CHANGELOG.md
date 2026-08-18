@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-18 - SagaBook S243 two-studio pilot evidence contract
+
+- Exact source `55a885a538737bf1f0a202b12e4b20f27fad2512` menambahkan
+  template create-only dan validator public-safe untuk tepat dua studio pilot.
+- Provenance, role, viewport, tenant/permission, idempotency, audit, payment,
+  backup/restore, rollback, metrik operasional, dan zero Critical/High kini
+  divalidasi fail-closed; PII, secret, URL, UUID, dan field asing ditolak.
+- Seluruh gate lokal lulus. Status `PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap S240 dan `BUSINESS_READY` tetap
+  menunggu authenticated UAT berizin, dua pilot nyata, serta provider canary.
+
 ## 2026-08-18 - SagaBook S242 UAT bridge recovery runbook
 
 - Exact source `0d8e3f36f19859f646f4307e02b63828c6510b26`

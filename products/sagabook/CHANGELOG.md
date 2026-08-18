@@ -1,5 +1,24 @@
 # SagaBook Changelog
 
+## 2026-08-18 - Two-studio pilot evidence contract S243
+
+- Informasi `CONFIRMED` dari exact source
+  `55a885a538737bf1f0a202b12e4b20f27fad2512` dan remote branch exact.
+- Before: rehearsal dan readiness sintetis sudah tersedia, tetapi belum ada
+  validator fail-closed untuk evidence dua studio pilot nyata. After: template
+  create-only dan validator strict-allowlist mengikat provenance, otorisasi,
+  dua slot pilot, role, viewport, workflow, tenant/permission, idempotency,
+  audit, payment, backup/restore, rollback, metrik, serta zero Critical/High.
+- Gate: focused 15/15, kontrak UAT 13/13, tooling production UAT 28/28, backend
+  1.045/1.045 dengan 11.868 assertion, build 5.116 modul, npm audit nol, serta
+  Composer/OSV 114 paket nol advisory.
+- Dampak: evidence pilot kini konsisten dan aman dibagikan tanpa PII/secret;
+  validator tetap menghasilkan `businessReady=false`. Status `PUSHED /
+  SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / QA_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S240. Tidak ada
+  authenticated UAT, pilot nyata, provider canary, subscription, atau pesan
+  customer yang dijalankan.
+
 ## 2026-08-18 - Authenticated UAT bridge recovery runbook S242
 
 - Informasi `CONFIRMED` dari exact source

@@ -12,14 +12,24 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-18T08:10:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-18T09:17:00+07:00 |
 | Branch aktif | `main` pada clone sinkronisasi terisolasi exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `da7efb6c8648170d52a2e4b64dde4092650af6b6` |
-| Informasi terakhir disinkronkan | SagaBook S242 authenticated UAT bridge recovery runbook. |
+| Baseline sebelum pembaruan | `b32505d1f5e2f381ed9f248692844684e0d60683` |
+| Informasi terakhir disinkronkan | SagaBook S243 two-studio pilot evidence contract. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
 | Konflik | Sinkronisasi dibangun di atas exact `origin/main`; perubahan SagaView dan produk lain dipertahankan utuh; checkout lain tidak disentuh. |
-| Error | Tidak ada error sinkronisasi; bridge SagaBook aktual tetap unavailable sehingga authenticated UAT belum dijalankan. |
+| Error | Tidak ada error sinkronisasi; authenticated UAT tidak dijalankan karena penggunaan credential/data studio memerlukan izin eksplisit. |
+
+## File yang berubah pada sinkronisasi ini (SagaBook S243 two-studio pilot evidence)
+
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaBook S242 UAT bridge recovery)
 

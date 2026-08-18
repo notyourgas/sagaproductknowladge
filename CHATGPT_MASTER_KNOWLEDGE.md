@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 18 Agustus 2026 08:10 WIB
+Evidence cut-off: 18 Agustus 2026 09:17 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -464,6 +464,17 @@ rounds, exact release binding, output create-only di luar repository, stop
 condition, serta cleanup kini mempunyai instruksi tunggal. Status
 `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S240,
 bridge aktual masih unavailable, dan authenticated UAT belum dijalankan.
+
+S243 exact `55a885a538737bf1f0a202b12e4b20f27fad2512` menambahkan
+kontrak evidence public-safe untuk tepat dua studio pilot. Template create-only
+dan validator strict-allowlist mengikat exact production provenance, role,
+viewport, workflow, tenant isolation, permission-negative, idempotency, audit,
+payment accounting, backup/restore, rollback, metrik operasional, dan zero
+Critical/High sambil menolak PII, secret, URL, UUID, serta field asing. Status
+`PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S240.
+Authenticated UAT dan pilot nyata belum dijalankan tanpa izin credential/data
+studio, provider canary tetap residual, dan validator tidak menaikkan
+`BUSINESS_READY`.
 
 Release S208 menyatukan coverage S191/S206/S207 dalam manifest immutable dan
 membuat tiga fixture booking future-relative. Full backend 1.045/1.045, tooling
