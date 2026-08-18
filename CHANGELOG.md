@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-19 - SagaBook S247 refund recovery knowledge sync
+
+- Informasi `CONFIRMED` dari exact source
+  `c2951c721508f459807b8236731613f8412b267c` dan gate exact-worktree.
+- Knowledge mencatat paid settlement immutable, refund/audit tepat sekali,
+  tenant-negative, nol provider/transfer, serta stop condition public-safe.
+- Delivery `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+  S244 tidak berubah. Pilihan carry-forward/debit/penanggung biaya tetap
+  `NEEDS CONFIRMATION`.
+- Dokumen terdampak: SagaBook product/changelog/coverage, portfolio/master,
+  gaps, root changelog, dan sync status.
+
 ## 2026-08-19 - SagaBook S246 refund atomicity knowledge sync
 
 - Informasi `CONFIRMED` dari exact source

@@ -57,6 +57,14 @@ pada exact kandidat.
 
 ### SagaBook
 
+- `NEEDS CONFIRMATION`: S247 exact
+  `c2951c721508f459807b8236731613f8412b267c` membuktikan recovery refund
+  setelah payout dapat fail-closed tanpa mengubah paid batch, memanggil
+  provider, atau mentransfer dana. Andreas masih perlu memilih mekanisme
+  carry-forward payout berikutnya, debit/invoice tenant, atau biaya ditanggung
+  SagaDev; sekaligus batas nominal, approval ganda, dan expiry kasus. Sebelum
+  keputusan, operator hanya boleh mencatat evidence dan eskalasi.
+
 - `TODO`: idempotency S218 exact source
   `60e115db0458b4791938e692dda79643f47d342a` sudah `PUSHED /
   LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Pemanggilan paralel kini ditolak

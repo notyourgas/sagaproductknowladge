@@ -12,14 +12,25 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-19T02:14:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-19T05:10:00+07:00 |
 | Branch aktif | `main` pada clone sinkronisasi terisolasi exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `3bcf3e1cfc8f104c290551c9a770122a722a14b1` |
-| Informasi terakhir disinkronkan | SagaBook S246 refund payout atomicity candidate. |
+| Baseline sebelum pembaruan | `2c9337d524e1fb18c363500abc63b93bac9c522f` |
+| Informasi terakhir disinkronkan | SagaBook S247 post-payout refund recovery contract. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
 | Konflik | Sinkronisasi dibangun di atas exact `origin/main`; perubahan produk lain dipertahankan utuh; checkout utama yang divergen tidak disentuh. |
-| Error | Tidak ada error sinkronisasi; candidate belum dideploy dan `BUSINESS_READY` tetap belum karena authenticated UAT, dua studio pilot, dan provider canary masih residual. |
+| Error | Tidak ada error sinkronisasi; S247 belum dideploy, kebijakan carry-forward tetap `NEEDS CONFIRMATION`, dan `BUSINESS_READY` masih menunggu authenticated UAT, dua studio pilot, serta provider canary. |
+
+## File yang berubah pada sinkronisasi ini (SagaBook S247 refund recovery)
+
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaBook S246 refund atomicity)
 

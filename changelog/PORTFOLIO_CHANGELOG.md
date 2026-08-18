@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-19 - SagaBook S247 post-payout refund recovery contract
+
+- Exact source `c2951c721508f459807b8236731613f8412b267c` menambahkan
+  runbook fail-closed dan acceptance sintetis untuk refund setelah payout.
+- Paid collection/batch/item tetap immutable; finance/audit tepat sekali,
+  replay 409, tenant-negative, DB 100/100, backend 1.053/1.053, build, Pint,
+  dan dependency audit lulus tanpa provider call atau transfer.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+  S244 tidak berubah dan kebijakan carry-forward tetap menunggu keputusan.
+
 ## 2026-08-19 - SagaBook S246 refund payout atomicity
 
 - Exact candidate source `c6d6b39045a6df94071892b45678405a557f531f`

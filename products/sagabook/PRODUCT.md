@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 19 Agustus 2026 02:14 WIB
+Updated: 19 Agustus 2026 05:10 WIB
 Evidence status: production deployment and activation verified; business readiness pending
 
 ## Tujuan dokumen
@@ -15,6 +15,20 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- S247 exact source `c2951c721508f459807b8236731613f8412b267c`
+  menambahkan recovery contract dan acceptance sintetis untuk refund setelah
+  collection masuk payout batch paid. Test membuktikan refund payout tetap
+  membuat finance negatif, booking refunded, audit, dan pelepasan slot,
+  sementara paid collection, paid batch, serta batch item historis tidak
+  berubah. Replay kedua 409, tenant lain ditolak sebelum mutation, dan tidak
+  ada provider call atau transfer otomatis. Gate exact commit: focused 2/2
+  (32 assertion), regresi refund/settlement 37/37 (292), backend 1.053/1.053
+  (11.926), database disposable 100/100, build, Pint, dan audit
+  npm/Composer/OSV nol temuan. Status `CONFIRMED / PUSHED /
+  DATA_INTEGRITY_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap S244. Pilihan carry-forward,
+  debit tenant, atau biaya ditanggung SagaDev tetap `NEEDS CONFIRMATION`.
 
 - Candidate S246 exact source `c6d6b39045a6df94071892b45678405a557f531f`
   membuat penyelesaian payout refund manual atomik. Request refund dan booking

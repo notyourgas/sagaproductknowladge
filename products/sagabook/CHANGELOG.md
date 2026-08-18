@@ -1,5 +1,21 @@
 # SagaBook Changelog
 
+## 2026-08-19 - Post-payout refund recovery contract S247
+
+- Informasi `CONFIRMED` dari exact source
+  `c2951c721508f459807b8236731613f8412b267c` pada remote branch terisolasi.
+- Before: residual refund setelah payout hanya disebut sebagai tanggung jawab
+  reconciliation/carry-forward operator. After: runbook fail-closed dan
+  acceptance executable mengikat paid batch immutable, finance negatif tepat
+  sekali, tenant-negative, audit privacy, read-after-write, serta nol provider
+  call/transfer otomatis.
+- Gate exact commit: focused 2/2 (32 assertion), refund/settlement 37/37 (292),
+  backend 1.053/1.053 (11.926), database disposable 100/100, build, Pint,
+  npm/Composer/OSV nol temuan, dan verifier production S244 17/17.
+- Status `PUSHED / DATA_INTEGRITY_VALIDATED / SECURITY_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
+  Kebijakan carry-forward/debit/penanggung biaya tetap `NEEDS CONFIRMATION`.
+
 ## 2026-08-19 - Refund payout atomicity S246
 
 - Informasi `CONFIRMED` dari exact candidate source
