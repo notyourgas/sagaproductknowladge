@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-18 - SagaBook S244 immutable release artifacts
+
+- Exact source `7fb80375915771457e343016e4851bbfc876199d` kini mempunyai
+  archive, metadata, manifest SHA-256, dan Git bundle pada dua salinan.
+- Checksum 4/4 cocok, bundle exact HEAD, archive public-safe, contract 1/1, dan
+  verifier production read-only 17/17 lulus.
+- Status `RELEASE_ARTIFACT_VALIDATED / PACKAGED_NOT_DEPLOYED /
+  IMPLEMENTED_NOT_DEPLOYED`; S244 belum `STAGING_READY` dan production S73
+  tidak berubah.
+
 ## 2026-08-18 - SagaView S245 backend no-upload production activation
 
 - Exact backend `a648c180310e197934ac84eed8519e51ae90f0eb` aktif sebagai

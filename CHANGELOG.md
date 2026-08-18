@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-18 - SagaBook S244 immutable artifact knowledge sync
+
+- Informasi `CONFIRMED` dari exact source S244, branch remote exact, dan paket
+  source dua salinan yang checksum-identik.
+- Knowledge mencatat archive, metadata, manifest SHA-256, Git bundle exact HEAD,
+  contract 1/1, dan archive public-safe sebagai evidence recovery kandidat.
+- Delivery `RELEASE_ARTIFACT_VALIDATED / PACKAGED_NOT_DEPLOYED /
+  IMPLEMENTED_NOT_DEPLOYED`; S244 belum `STAGING_READY`, production S73 tidak
+  berubah, dan `BUSINESS_READY` belum.
+- Dokumen terdampak: SagaBook product/changelog/coverage, portfolio/master,
+  root changelog, dan sync status.
+
 ## 2026-08-18 - SagaView S245 backend production sync
 
 - Informasi `CONFIRMED` dari exact source

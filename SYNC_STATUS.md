@@ -12,14 +12,24 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-18T16:03:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-18T16:05:00+07:00 |
 | Branch aktif | `main` pada clone sinkronisasi terisolasi exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `681c66e9677b5977fea34cbf3263ab871ed8f57e` |
-| Informasi terakhir disinkronkan | SagaView S245 backend no-upload production activation. |
+| Baseline sebelum pembaruan | `659f4c581b925338befd5f8d3d880658c7f01ba1` |
+| Informasi terakhir disinkronkan | SagaBook S244 immutable release artifacts dua salinan. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
 | Konflik | Sinkronisasi dibangun di atas exact `origin/main`; perubahan SagaView dan produk lain dipertahankan utuh; checkout lain tidak disentuh. |
-| Error | Tidak ada error sinkronisasi; Studio SagaView S243/S244 tetap belum dideploy karena receipt physical UAT exact-release belum tersedia. |
+| Error | Tidak ada error sinkronisasi; S244 SagaBook belum staging/deploy dan production SagaBook tidak berubah. |
+
+## File yang berubah pada sinkronisasi ini (SagaBook S244 immutable artifacts)
+
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaView S245 backend production)
 

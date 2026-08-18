@@ -1,5 +1,22 @@
 # SagaBook Changelog
 
+## 2026-08-18 - Immutable release artifacts untuk S244
+
+- Informasi `CONFIRMED` dari exact source
+  `7fb80375915771457e343016e4851bbfc876199d`, branch remote exact, dan worktree
+  bersih.
+- Before: kandidat navigasi sudah local-validated dan pushed, tetapi belum
+  mempunyai paket source recovery dua salinan. After: source archive, metadata,
+  manifest SHA-256, dan Git bundle exact HEAD tersedia pada dua salinan
+  terpisah tanpa menimpa file lama.
+- Gate: contract 1/1 (16 assertion), checksum 4/4 identik, bundle verify/head,
+  metadata public-safe, archive 2.713 entri tanpa `.env` aktual atau `.git`, dan
+  production verifier read-only 17/17 lulus.
+- Status `RELEASE_ARTIFACT_VALIDATED / PACKAGED_NOT_DEPLOYED /
+  IMPLEMENTED_NOT_DEPLOYED`; belum `STAGING_READY`. Production tetap S73
+  `7e617b7ba2ff280d137d4d4f263c60f5e7aa6f0a` /
+  `20260818054003-7e617b7` dan tidak dimutasi.
+
 ## 2026-08-18 - Admin navigation berbasis role S244
 
 - Informasi `CONFIRMED` dari exact source
