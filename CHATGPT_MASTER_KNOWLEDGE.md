@@ -1,8 +1,19 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 18 Agustus 2026 18:08 WIB
+Evidence cut-off: 19 Agustus 2026 01:05 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
+
+SagaBook S73 provider-cleared payout memakai source fitur
+`305baaaea324301e379d8594604e13f233a3976b` dan release source
+`7e617b7ba2ff280d137d4d4f263c60f5e7aa6f0a`. Release immutable
+`20260818054003-7e617b7` pernah aktif dan sekarang terverifikasi sebagai rollback
+langsung S244. Payment collected tetap held sampai status order terminal,
+maturity clearing H+0/H+1, dan saldo merchant tersedia konsisten. Missing atau
+contradictory evidence fail-closed; snapshot audit tidak menyimpan raw provider
+response. Batch Jumat hanya menyiapkan payout manual dan tidak melakukan
+withdrawal atau transfer otomatis. Provider canary nyata dan business readiness
+tetap memerlukan gate terpisah.
 
 SagaView backend S245 exact `a648c180310e197934ac84eed8519e51ae90f0eb`
 aktif di production sebagai release `20260818110257-a648c18`; rollback langsung

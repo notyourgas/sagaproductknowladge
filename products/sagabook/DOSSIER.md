@@ -7,19 +7,28 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 14 Agustus 2026 16:29 WIB
+- Updated: 19 Agustus 2026 01:05 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
-- Activation: `PRODUCTION_ACTIVATED`; verifier final release S208 lulus 17/17,
-  termasuk HTTP 3/3 dan security profile 3/3
+- Activation: `PRODUCTION_ACTIVATED`; current release S244
+  `20260818091438-7fb8037` lulus verifier 17/17, termasuk HTTP 3/3 dan security
+  profile 3/3
 - Business readiness: `NEEDS CONFIRMATION`
 - Availability empty-response recovery, manual-transfer initial-load recovery,
   dan Payment Monitor action recovery: `PRODUCTION_DEPLOYED /
   PRODUCTION_ACTIVATED`
-- Source kumulatif aktif: `1765fe8f12fda08666afaeb6bce43ba8312cd7e6`,
-  release `20260814092112-1765fe8`, rollback
-  `20260813081427-50afa6e`. Exact source tersedia di remote `main`; archive, Git
+- Source kumulatif aktif: `7fb80375915771457e343016e4851bbfc876199d`,
+  release `20260818091438-7fb8037`, rollback
+  `20260818054003-7e617b7`. Exact source tersedia di remote `main`; archive, Git
   bundle, backup/restore, migrasi, atomic activation, smoke, service, journal,
   dan rollback terverifikasi.
+- S73 provider-cleared payout pada source fitur
+  `305baaaea324301e379d8594604e13f233a3976b` dan release source
+  `7e617b7ba2ff280d137d4d4f263c60f5e7aa6f0a` pernah aktif sebagai release
+  `20260818054003-7e617b7` dan sekarang menjadi rollback langsung S244.
+  Collection yang berhasil tetap held sampai order terminal, maturity clearing,
+  dan saldo tersedia konsisten. Snapshot hanya menyimpan fingerprint audit;
+  batch mingguan tidak melakukan withdrawal atau transfer otomatis. Risiko
+  refund setelah payout manual tetap ditangani reconciliation operator.
 - Release S208 membuat manifest immutable sebagai satu sumber coverage untuk
   generator S207, validator S206, dan browser preflight S191. Tiga fixture
   booking dibuat future-relative sehingga regression tidak gagal palsu karena

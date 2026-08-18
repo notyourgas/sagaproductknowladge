@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-19 - SagaBook S73 production provenance reconciliation
+
+- Informasi `CONFIRMED` dari tiga source commit S73, immutable release
+  `20260818054003-7e617b7`, dan verifikasi rollback current S244.
+- Knowledge sekarang mencatat kontrak provider-cleared payout, fail-closed
+  evidence, UI report, scheduler manual, test, status delivery, serta risiko
+  refund residual tanpa payload provider, credential, PII, atau identifier tenant.
+- Production tidak berubah oleh sinkronisasi knowledge ini. S244 tetap aktif,
+  S73 tetap rollback tersedia, dan `BUSINESS_READY` belum.
+- Dokumen terdampak: SagaBook product/dossier/changelog/coverage,
+  portfolio/master, root changelog, dan sync status.
+
 ## 2026-08-18 - SagaBook S244 production knowledge sync
 
 - Informasi `CONFIRMED` dari exact source

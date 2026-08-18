@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-19 - SagaBook S73 provider-cleared payout provenance
+
+- Source fitur `305baaaea324301e379d8594604e13f233a3976b` dan release source
+  `7e617b7ba2ff280d137d4d4f263c60f5e7aa6f0a` mengharuskan status terminal,
+  maturity clearing, dan saldo merchant tersedia sebelum collection eligible.
+- Release `20260818054003-7e617b7` pernah aktif dan sekarang terverifikasi sebagai
+  rollback langsung S244. Batch mingguan tetap manual dan tidak memanggil
+  withdrawal atau transfer provider.
+- Gate 47/47, backend 1.051/1.051, build dan audit source lulus. Provider canary
+  nyata, authenticated UAT, pilot, dan `BUSINESS_READY` tetap residual.
+
 ## 2026-08-18 - SagaBook S244 production activation
 
 - Exact source `7fb80375915771457e343016e4851bbfc876199d` aktif sebagai

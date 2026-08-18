@@ -1,5 +1,26 @@
 # SagaBook Changelog
 
+## 2026-08-19 - Rekonsiliasi provenance release S73 provider-cleared payout
+
+- Informasi `CONFIRMED` dari source fitur
+  `305baaaea324301e379d8594604e13f233a3976b`, hardening migration
+  `239f4bd23218bbeb9335a147e27f0da3f20480d3`, release source
+  `7e617b7ba2ff280d137d4d4f263c60f5e7aa6f0a`, release immutable
+  `20260818054003-7e617b7`, dan verifier production S244 17/17 yang memastikan
+  release S73 tersedia sebagai rollback langsung.
+- Before: knowledge hanya menyebut S73 sebagai production terdahulu atau
+  rollback S244 tanpa entry fitur/release tersendiri. After: kontrak clearing,
+  UI laporan, fail-closed evidence, scheduler, batas payout manual, test, source,
+  release, dan risiko residual dicatat public-safe.
+- Payment collected tidak langsung eligible. Status order terminal, maturity
+  H+0/H+1, dan saldo merchant tersedia wajib konsisten. Batch Jumat hanya
+  menyiapkan pekerjaan operator; tidak ada withdrawal atau transfer otomatis.
+- Gate source: focused 47/47 (330 assertion), backend 1.051/1.051 (11.893),
+  build, Pint, diff, schedule proof, dan migration lulus. Status historis
+  `PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; status current
+  `ROLLBACK_AVAILABLE` di bawah S244. Canary provider nyata tidak dijalankan dan
+  `BUSINESS_READY` tetap belum.
+
 ## 2026-08-18 - Production release S244 admin navigation
 
 - Informasi `CONFIRMED` dari exact source

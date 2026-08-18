@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 18 Agustus 2026 18:08 WIB
+Updated: 19 Agustus 2026 01:05 WIB
 Evidence status: production deployment and activation verified; business readiness pending
 
 ## Tujuan dokumen
@@ -15,6 +15,20 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- S73 provider-cleared payout pernah aktif sebagai immutable release
+  `20260818054003-7e617b7` dari release source
+  `7e617b7ba2ff280d137d4d4f263c60f5e7aa6f0a` dan sekarang terverifikasi
+  sebagai rollback langsung S244. Source fitur
+  `305baaaea324301e379d8594604e13f233a3976b` membuat collection yang berhasil
+  tetap held sampai status order terminal, maturity clearing H+0/H+1, dan saldo
+  merchant tersedia konsisten; evidence hilang atau bertentangan fail-closed.
+  Payout batch Jumat hanya disiapkan untuk operator dan tidak memanggil
+  withdrawal atau transfer otomatis. Fingerprint audit tidak menyimpan raw
+  provider response. Gate 47/47 (330 assertion), backend 1.051/1.051 (11.893),
+  build, Pint, diff, schedule proof, migration, dan lineage release lulus.
+  Provider canary nyata tidak dijalankan dan refund setelah payout manual masih
+  menjadi tanggung jawab reconciliation operator selama beta.
 
 - Production aktif terverifikasi pada exact source
   `7fb80375915771457e343016e4851bbfc876199d` sebagai immutable release
