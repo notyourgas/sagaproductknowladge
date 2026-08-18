@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-18 - SagaView S245 backend no-upload production activation
+
+- Exact backend `a648c180310e197934ac84eed8519e51ae90f0eb` aktif sebagai
+  release `20260818110257-a648c18`; rollback langsung
+  `20260814170455-c3d4bc5` tersedia.
+- Full regression 994/994, build 5.097 modul, audit dependency nol, immutable
+  archive/source/bundle, encrypted backup dengan restore-canary 149 tabel,
+  deploy gate 6/6, atomic switch, smoke, service, dan journal lulus.
+- Status `PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; Studio
+  S243/S244 masih `IMPLEMENTED_NOT_DEPLOYED` sampai receipt physical UAT exact
+  tersedia. `BUSINESS_READY` belum.
+
 ## 2026-08-18 - SagaBook S244 admin navigation berbasis role
 
 - Exact source `7fb80375915771457e343016e4851bbfc876199d` mengelompokkan

@@ -1,8 +1,19 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 18 Agustus 2026 14:10 WIB
+Evidence cut-off: 18 Agustus 2026 16:03 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
+
+SagaView backend S245 exact `a648c180310e197934ac84eed8519e51ae90f0eb`
+aktif di production sebagai release `20260818110257-a648c18`; rollback langsung
+`20260814170455-c3d4bc5`. Route/method upload Support Hub perangkat dihapus
+fail-closed, sedangkan bantuan teks dan metadata allowlist tetap aktif. Full
+994/11.460, build 5.097 modul, audit dependency nol, immutable artifact,
+encrypted backup/restore-canary 149 tabel, deploy gate 6/6, atomic switch,
+health/login/session/asset smoke, service, dan journal lulus. Status `PUSHED /
+PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; Studio S243/S244 tetap
+`IMPLEMENTED_NOT_DEPLOYED` menunggu receipt physical UAT exact-release dan
+`BUSINESS_READY` belum.
 
 SagaView Studio S238 exact `2fadbe9d54617307bfd8c84b4250bbbfa28caeca`
 berstatus `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Receipt
@@ -104,15 +115,17 @@ USB exFAT hanya backup artifact; physical output UAT tetap membutuhkan fixed
 NTFS minimal 10 GiB dan EPSON L8050/driver.
 
 SagaView backend S227 source `a648c180310e197934ac84eed8519e51ae90f0eb`
-sudah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Route dan method
+sudah `PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` sebagai release
+`20260818110257-a648c18`. Route dan method
 upload Support Hub perangkat SagaView dihapus; POST langsung mendapat 405
 tanpa membuat attachment. Release gate kini fail-closed bila route upload
 muncul kembali. Bootstrap, ask, handoff, feedback, device auth, throttle,
 tenant scope server-authoritative, dan metadata allowlist tetap tersedia. Gate
 lulus focused 6/6, full 994/994 dengan 11.460 assertion, build 5.097 modul,
-formatter, Composer validation/audit, dan npm audit nol. Production,
-database/migration, SagaBook, payment, foto/path/editor/output customer tidak
-berubah.
+formatter, Composer validation/audit, dan npm audit nol. Aktivasi memakai
+backup terenkripsi, restore-canary 149 tabel, deploy gate 6/6, atomic switch,
+smoke/service/journal, dan rollback `20260814170455-c3d4bc5`; tidak ada
+migration. SagaBook, payment, foto/path/editor/output customer tidak berubah.
 
 SagaView Studio S226 source `e0416650b95c25f2a2486efe17b15f8bf4510129`
 sudah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Support Hub Studio

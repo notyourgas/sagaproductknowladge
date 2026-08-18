@@ -1,5 +1,25 @@
 # SagaView Changelog
 
+## 2026-08-18 - S245 backend no-upload production activation
+
+- Klasifikasi: `CONFIRMED` production release.
+- Before: backend no-upload S227 exact
+  `a648c180310e197934ac84eed8519e51ae90f0eb` sudah pushed dan local-validated,
+  tetapi production masih menjalankan S201
+  `20260814170455-c3d4bc5` / `c3d4bc5412ff70495bfae6498b21f73b464c04ad`.
+- After: exact S227 aktif sebagai release `20260818110257-a648c18`; endpoint
+  upload perangkat tetap tidak terdaftar dan direct POST gagal 405 tanpa
+  attachment, sedangkan endpoint bantuan teks/metadata allowlist tetap aktif.
+- Evidence: 994/994 test dengan 11.460 assertion, build 5.097 modul,
+  Composer/npm audit nol, immutable archive/source/bundle beserta SHA-256,
+  encrypted backup, restore-canary 149 tabel, deploy gate 6/6, atomic switch,
+  health/login/session/asset smoke, seluruh service aktif, dan error journal
+  bersih.
+- Delivery: `PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; rollback
+  langsung `20260814170455-c3d4bc5`. Tidak ada migration. Studio S243/S244
+  tetap belum dideploy karena receipt physical UAT exact-release belum ada;
+  `BUSINESS_READY` belum.
+
 ## 2026-08-18 - S244 immutable release artifact rehearsal
 
 - Klasifikasi: `CONFIRMED` release-readiness evidence.

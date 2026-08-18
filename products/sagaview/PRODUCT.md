@@ -2,6 +2,20 @@
 
 Updated: 18 Agustus 2026
 
+Backend SagaView S227 exact `a648c180310e197934ac84eed8519e51ae90f0eb`
+aktif di production sebagai release `20260818110257-a648c18`. Perubahan
+menghapus route/method upload Support Hub perangkat secara fail-closed; POST
+langsung ke URL lama mendapat 405 tanpa membuat attachment, sementara
+bootstrap, ask, handoff, feedback, auth perangkat, throttle, tenant scope
+server-authoritative, dan metadata allowlist tetap tersedia. Full regression
+994/994 dengan 11.460 assertion, build 5.097 modul, Composer/npm audit nol,
+backup terenkripsi dengan restore-canary 149 tabel, deploy gate 6/6, atomic
+switch, health/login/session/asset smoke, service, dan journal lulus. Status
+`PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; rollback langsung
+`20260814170455-c3d4bc5`. Studio S243/S244 tetap
+`IMPLEMENTED_NOT_DEPLOYED` sampai receipt physical UAT exact-release tersedia;
+`BUSINESS_READY` belum diklaim.
+
 S244 membekukan kandidat Studio S243 sebagai release artifact immutable
 `20260818000201-d5d5229`. Archive source, evidence manifest, `SHA256SUMS`, dan
 git bundle dibuat dari exact `d5d52297348b4c0269ecd17798114c3e432c4f17`,
