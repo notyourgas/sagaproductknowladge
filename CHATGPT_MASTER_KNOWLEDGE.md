@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 17 Agustus 2026 17:21 WIB
+Evidence cut-off: 18 Agustus 2026 08:10 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -456,6 +456,14 @@ encrypted backup/disposable restore, serta verifier 17/17 lulus. Credential
 bridge unavailable saat release sehingga tidak ada credential dibaca dan UAT
 Owner/operator belum dijalankan. Workflow, schema, provider, subscription, dan
 pesan customer tidak berubah.
+
+S242 exact `0d8e3f36f19859f646f4307e02b63828c6510b26`
+menambahkan runbook pemulihan bridge UAT yang public-safe dan diuji statis.
+Seluruh status preflight/launcher, larangan prompt duplikat, dua correction
+rounds, exact release binding, output create-only di luar repository, stop
+condition, serta cleanup kini mempunyai instruksi tunggal. Status
+`PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S240,
+bridge aktual masih unavailable, dan authenticated UAT belum dijalankan.
 
 Release S208 menyatukan coverage S191/S206/S207 dalam manifest immutable dan
 membuat tiga fixture booking future-relative. Full backend 1.045/1.045, tooling

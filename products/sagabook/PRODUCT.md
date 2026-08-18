@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 18 Agustus 2026 05:17 WIB
+Updated: 18 Agustus 2026 08:10 WIB
 Evidence status: production deployment and activation verified; business readiness pending
 
 ## Tujuan dokumen
@@ -15,6 +15,17 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- S242 exact source `0d8e3f36f19859f646f4307e02b63828c6510b26`
+  menambahkan runbook pemulihan credential bridge UAT dan acceptance statis.
+  Operator kini mempunyai satu alur public-safe untuk status unavailable,
+  locked, invalid, concurrent launcher, prompt aktif, terminal/launcher gagal,
+  stop condition dua correction rounds, exact release, output create-only di
+  luar repository, serta cleanup. Gate runbook 2/2, tooling UAT 28/28, audit
+  npm/Composer/OSV nol temuan, dan verifier production 17/17 lulus. Status
+  `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+  production tetap S240 dan `BUSINESS_READY` tetap menunggu authenticated UAT
+  nyata, dua studio pilot, serta provider canary.
 
 - Release S240 mengaktifkan cumulative tooling UAT S214-S232 dari exact source
   `730b074dc3414bc7f3e2ad4748e883be35e5ea1a` sebagai immutable release

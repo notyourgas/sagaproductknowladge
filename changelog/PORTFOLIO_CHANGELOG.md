@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-18 - SagaBook S242 UAT bridge recovery runbook
+
+- Exact source `0d8e3f36f19859f646f4307e02b63828c6510b26`
+  menyediakan diagnosis, recovery map, retry limit, stop condition, exact
+  release binding, output evidence, dan cleanup untuk bridge UAT SagaBook.
+- Runbook 2/2, tooling UAT 28/28, audit dependency nol, dan verifier production
+  17/17 lulus tanpa membaca credential atau mengubah production.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+  tetap S240 dan authenticated UAT serta dua studio pilot masih residual.
+
 ## 2026-08-18 - SagaView S244 immutable release artifacts
 
 - Kandidat S243 dibekukan sebagai release `20260818000201-d5d5229` dengan

@@ -1,5 +1,21 @@
 # SagaBook Changelog
 
+## 2026-08-18 - Authenticated UAT bridge recovery runbook S242
+
+- Informasi `CONFIRMED` dari exact source
+  `0d8e3f36f19859f646f4307e02b63828c6510b26`, branch terisolasi yang sudah
+  pushed, dan verification exact production S240.
+- Before: status `bridge_unavailable` sudah fail-closed, tetapi belum ada satu
+  prosedur operator yang mengikat diagnosis, retry limit, stop condition,
+  exact release, output evidence, dan cleanup. After: runbook public-safe dan
+  acceptance statis menutup alur tersebut tanpa membaca credential.
+- Gate: runbook 2/2, tooling UAT existing 28/28, npm/Composer/OSV nol temuan,
+  diff check, serta verifier production 17/17 lulus.
+- Dampak: pemulihan UAT lebih terarah dan tidak mendorong prompt duplikat atau
+  kebocoran credential. Status `PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap S240, bridge aktual masih
+  unavailable, dan business readiness tidak berubah.
+
 ## 2026-08-18 - Production release tooling UAT cumulative S240
 
 - Informasi `CONFIRMED` dari exact source

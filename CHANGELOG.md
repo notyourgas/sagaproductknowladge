@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-18 - SagaBook S242 UAT bridge recovery knowledge sync
+
+- Informasi `CONFIRMED` dari exact source
+  `0d8e3f36f19859f646f4307e02b63828c6510b26` dan gate exact-worktree.
+- Knowledge mencatat runbook public-safe untuk diagnosis, retry limit, stop
+  condition, exact release, output evidence, serta cleanup credential bridge.
+- Delivery `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+  tidak berubah, authenticated UAT dan dua studio pilot tetap residual.
+- Dokumen terdampak: SagaBook product/changelog/coverage, portfolio/master,
+  root changelog, dan sync status.
+
 ## 2026-08-18 - SagaView S244 immutable release artifacts
 
 - Informasi `CONFIRMED` dari exact source S243 dan verifikasi dua salinan
