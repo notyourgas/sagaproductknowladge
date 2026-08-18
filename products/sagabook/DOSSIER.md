@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 19 Agustus 2026 01:05 WIB
+- Updated: 19 Agustus 2026 02:14 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED`; current release S244
   `20260818091438-7fb8037` lulus verifier 17/17, termasuk HTTP 3/3 dan security
@@ -29,6 +29,15 @@ dalam satu dokumen public-safe.
   dan saldo tersedia konsisten. Snapshot hanya menyimpan fingerprint audit;
   batch mingguan tidak melakukan withdrawal atau transfer otomatis. Risiko
   refund setelah payout manual tetap ditangani reconciliation operator.
+- Candidate S246 exact source `c6d6b39045a6df94071892b45678405a557f531f`
+  mengunci request refund dan booking lalu menjalankan finance transaction,
+  perubahan status, pelepasan slot, task/notifikasi, dan audit dalam satu
+  transaksi database. Kegagalan final audit sintetis membuktikan seluruh write
+  dan slot lock kembali ke before-state; double-submit tidak menduplikasi
+  finance/audit dan tenant lain tidak dapat disentuh. Gate 39/39 (401
+  assertion), database disposable 100/100, build, Pint, serta dependency audit
+  lulus. Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+  production, provider, schema, dan kebijakan carry-forward tidak berubah.
 - Release S208 membuat manifest immutable sebagai satu sumber coverage untuk
   generator S207, validator S206, dan browser preflight S191. Tiga fixture
   booking dibuat future-relative sehingga regression tidak gagal palsu karena

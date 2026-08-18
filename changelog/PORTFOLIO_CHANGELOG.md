@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-19 - SagaBook S246 refund payout atomicity
+
+- Exact candidate source `c6d6b39045a6df94071892b45678405a557f531f`
+  membuat pencatatan finance, status refund/booking, pelepasan slot,
+  task/notifikasi, dan audit commit atau rollback bersama dengan row lock.
+- Rollback sintetis, double-submit tepat sekali, tenant-negative, 39/39 test
+  (401 assertion), database disposable 100/100, build, Pint, serta audit
+  dependency lulus.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+  tetap S244, kebijakan reconciliation tidak berubah, dan tidak ada provider
+  canary atau pesan customer.
+
 ## 2026-08-19 - SagaBook S73 provider-cleared payout provenance
 
 - Source fitur `305baaaea324301e379d8594604e13f233a3976b` dan release source

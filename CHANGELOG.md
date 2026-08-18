@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-19 - SagaBook S246 refund atomicity knowledge sync
+
+- Informasi `CONFIRMED` dari exact source
+  `c6d6b39045a6df94071892b45678405a557f531f` dan gate exact-worktree.
+- Knowledge mencatat transaction/row lock refund, rollback kegagalan,
+  double-submit tepat sekali, tenant boundary, audit, serta status candidate
+  tanpa PII, credential, raw payment data, atau identifier tenant.
+- Delivery `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+  S244, activation, `BUSINESS_READY`, dan kebijakan reconciliation tidak
+  berubah.
+- Dokumen terdampak: SagaBook product/dossier/changelog/coverage, portfolio,
+  root changelog, dan sync status.
+
 ## 2026-08-19 - SagaBook S73 production provenance reconciliation
 
 - Informasi `CONFIRMED` dari tiga source commit S73, immutable release

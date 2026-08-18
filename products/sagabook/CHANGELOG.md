@@ -1,5 +1,23 @@
 # SagaBook Changelog
 
+## 2026-08-19 - Refund payout atomicity S246
+
+- Informasi `CONFIRMED` dari exact candidate source
+  `c6d6b39045a6df94071892b45678405a557f531f` pada remote branch terisolasi.
+- Before: finance transaction refund dibuat sebelum seluruh perubahan booking,
+  slot, task/notifikasi, dan audit selesai sehingga kegagalan di tengah alur
+  dapat meninggalkan write parsial. After: request/booking memakai row lock dan
+  seluruh mutasi commit atau rollback sebagai satu transaksi database.
+- Acceptance membuktikan kegagalan final audit mengembalikan finance, request,
+  booking, dan slot ke before-state; double-submit menghasilkan tepat satu
+  finance/audit; tenant lain ditolak tanpa write.
+- Gate exact commit: 39/39 test (401 assertion), fresh migration dan backfill
+  database disposable dengan audit 100/100, build 5.116 modul, Pint, serta
+  npm/Composer/OSV nol temuan. Status `PUSHED / DATA_INTEGRITY_VALIDATED /
+  SECURITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+  Production tetap S244 dan tidak ada provider canary, transfer, pesan
+  customer, atau perubahan kebijakan settlement.
+
 ## 2026-08-19 - Rekonsiliasi provenance release S73 provider-cleared payout
 
 - Informasi `CONFIRMED` dari source fitur
