@@ -1,8 +1,17 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 20 Agustus 2026 00:31 WIB
+Evidence cut-off: 20 Agustus 2026 02:09 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
+
+SagaBook S255 exact `74e082366afc544c69dc35e560c19c91424a63ff`
+berstatus `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Bundler
+kandidat release lokal wajib memeriksa kapasitas sebelum membuat direktori atau
+artefak: minimum 2 GiB per target, kebutuhan target satu volume diakumulasi,
+dan mode check-only tidak melakukan mutasi. Kapasitas kurang gagal tertutup
+dengan output public-safe. Gate release hardening, build, parser/lint, serta
+audit dependency lulus. Ini perubahan tooling release, bukan fitur pengguna;
+production aktif tetap S244 dan `BUSINESS_READY` belum.
 
 SagaBook S254 exact `02c4fff8a404fb9d9fcd57d657709ef442566f90`
 berstatus `PUSHED / UIUX_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /

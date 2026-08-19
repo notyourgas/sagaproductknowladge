@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-20 - SagaBook S255 local capacity preflight sync
+
+- Informasi `CONFIRMED` dari exact source
+  `74e082366afc544c69dc35e560c19c91424a63ff` dan gate exact-worktree.
+- Knowledge mencatat preflight kapasitas read-only, kebutuhan per-target yang
+  diakumulasi per volume, check-only tanpa mutation, dan fail-closed sebelum
+  packaging tanpa menjadikannya headline produk.
+- Delivery `PUSHED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production S244 dan `BUSINESS_READY` tetap.
+- Dokumen terdampak: SagaBook product/dossier/changelog/coverage,
+  portfolio/master, root changelog, dan sync status.
+
 ## 2026-08-20 - SagaBook S254 admin dashboard knowledge sync
 
 - Informasi `CONFIRMED` dari exact source

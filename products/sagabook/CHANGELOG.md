@@ -1,5 +1,22 @@
 # SagaBook Changelog
 
+## 2026-08-20 - Local release capacity preflight S255
+
+- Informasi `CONFIRMED` dari exact source
+  `74e082366afc544c69dc35e560c19c91424a63ff` pada remote branch terisolasi.
+- Before: bundler kandidat lokal baru mengetahui kekurangan ruang setelah
+  proses build/packaging mulai membuat output. After: kapasitas staging,
+  primary, dan secondary diperiksa read-only sebelum mutation, dengan minimum
+  2 GiB per target dan kebutuhan volume sama diakumulasi.
+- Mode check-only menghasilkan status public-safe tanpa membuat folder;
+  kapasitas cukup lulus dan kapasitas kurang gagal tertutup.
+- Gate exact commit: release hardening 16/16 (196 assertion), build 5.132
+  modul, PowerShell parser, PHP lint, audit npm nol vulnerability, dan Composer
+  OSV 114 paket/nol advisory.
+- Status `PUSHED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; UI, API, database, tenant, payment, provider,
+  production, activation, dan business readiness tidak berubah.
+
 ## 2026-08-20 - SleekFlow-inspired admin dashboard S254
 
 - Informasi `CONFIRMED` dari exact source

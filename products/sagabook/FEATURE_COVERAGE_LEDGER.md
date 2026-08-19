@@ -1,6 +1,18 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 20 Agustus 2026 00:31 WIB
+Evidence cut-off: 20 Agustus 2026 02:09 WIB
+
+S255 exact source `74e082366afc544c69dc35e560c19c91424a63ff`
+telah `PUSHED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`. Bundler kandidat release lokal kini menjalankan
+preflight kapasitas read-only sebelum membuat direktori atau artefak, memakai
+minimum 2 GiB per target dan mengakumulasi kebutuhan target yang berada pada
+volume sama. Mode check-only tidak melakukan mutasi; kapasitas kurang gagal
+tertutup dengan output public-safe. Red-green contract, kasus pass/fail-closed
+tanpa folder baru, release hardening 16/16 (196 assertion), build 5.132 modul,
+parser/lint, serta audit npm dan Composer OSV nol temuan lulus. Tidak ada
+perubahan UI, API, database, tenant, payment, provider, atau production.
+Production aktif tetap S244 dan `BUSINESS_READY` belum.
 
 S254 exact source `02c4fff8a404fb9d9fcd57d657709ef442566f90`
 telah `PUSHED / UIUX_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /

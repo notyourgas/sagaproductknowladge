@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-20 - SagaBook S255 local release capacity preflight
+
+- Exact source `74e082366afc544c69dc35e560c19c91424a63ff` menambahkan
+  preflight ruang read-only pada bundler kandidat lokal sebelum direktori atau
+  artefak dibuat.
+- Minimum 2 GiB per target diakumulasi per volume; mode check-only tidak
+  melakukan mutasi dan kapasitas kurang gagal tertutup secara public-safe.
+- Release hardening 16/16, build 5.132 modul, parser/lint, dan audit dependency
+  nol temuan lulus. Status `PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production S244 tidak berubah.
+
 ## 2026-08-20 - SagaBook S254 admin dashboard redesign
 
 - Exact source `02c4fff8a404fb9d9fcd57d657709ef442566f90` membawa pola

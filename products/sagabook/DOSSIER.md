@@ -7,12 +7,18 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 20 Agustus 2026 00:31 WIB
+- Updated: 20 Agustus 2026 02:09 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED`; current release S244
   `20260818091438-7fb8037` lulus verifier 17/17, termasuk HTTP 3/3 dan security
   profile 3/3
 - Business readiness: `NEEDS CONFIRMATION`
+- Candidate tooling S255 exact
+  `74e082366afc544c69dc35e560c19c91424a63ff`: `PUSHED / QA_VALIDATED /
+  SECURITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; bundler
+  release lokal melakukan preflight ruang read-only dengan minimum 2 GiB per
+  target sebelum mutasi, mengakumulasi target satu volume, dan gagal tertutup
+  bila kapasitas kurang. Production tetap S244.
 - Candidate dashboard S254 exact
   `02c4fff8a404fb9d9fcd57d657709ef442566f90`: `PUSHED /
   UIUX_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
