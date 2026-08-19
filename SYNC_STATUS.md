@@ -12,14 +12,24 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-19T11:09:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-19T14:09:00+07:00 |
 | Branch aktif | `main` pada clone sinkronisasi terisolasi exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `a17faccbbd9f20b5e3531b1b9109a7004f1d6d21` |
-| Informasi terakhir disinkronkan | SagaBook S250 authenticated UAT evidence integrity. |
+| Baseline sebelum pembaruan | `8812b8b66d8bae5b76b74b90ff83186ca9c8e4f5` |
+| Informasi terakhir disinkronkan | SagaBook S251 pilot UAT receipt file binding. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
 | Konflik | Sinkronisasi dibangun di atas exact `origin/main`; perubahan produk lain dipertahankan utuh; checkout utama yang divergen tidak disentuh. |
-| Error | Tidak ada error sinkronisasi; S250 belum dideploy dan `BUSINESS_READY` masih menunggu authenticated UAT, dua studio pilot, serta provider canary. |
+| Error | Tidak ada error sinkronisasi; S251 belum dideploy. Kapasitas storage workspace lokal perlu dibersihkan, tetapi build exact-source lulus melalui output terisolasi. `BUSINESS_READY` masih menunggu authenticated UAT, dua studio pilot, serta provider canary. |
+
+## File yang berubah pada sinkronisasi ini (SagaBook S251 UAT receipt binding)
+
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaBook S250 UAT evidence integrity)
 

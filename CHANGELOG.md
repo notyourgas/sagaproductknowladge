@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-19 - SagaBook S251 UAT receipt binding knowledge sync
+
+- Informasi `CONFIRMED` dari exact source
+  `824a9a01e3ff0cc8c6aea70d17bc5e28e98ac7bb` dan gate exact-worktree.
+- Knowledge mencatat kewajiban file receipt UAT tervalidasi, hash internal, dan
+  penolakan jalur hash-only tanpa mengubah fakta runtime.
+- Delivery `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+  S244 tidak berubah dan `BUSINESS_READY` tetap belum.
+- Dokumen terdampak: SagaBook product/changelog/coverage, portfolio/master,
+  root changelog, dan sync status.
+
 ## 2026-08-19 - SagaBook S250 UAT evidence integrity knowledge sync
 
 - Informasi `CONFIRMED` dari exact source

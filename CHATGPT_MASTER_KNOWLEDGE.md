@@ -1,8 +1,18 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 19 Agustus 2026 11:09 WIB
+Evidence cut-off: 19 Agustus 2026 14:09 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
+
+SagaBook S251 exact `824a9a01e3ff0cc8c6aea70d17bc5e28e98ac7bb`
+berstatus `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Gate pilot
+tidak lagi boleh menerima hash UAT manual sebagai sumber kepercayaan; CLI wajib
+membaca receipt authenticated UAT aktual, memvalidasi exact source/release, dan
+menghitung SHA-256 dari byte file. Tooling terkait 63/63, build, audit
+dependency, dan verifier production 17/17 lulus. Production S244 tidak berubah;
+actual UAT, dua pilot, provider canary, serta `BUSINESS_READY` tetap gate
+terpisah. Receipt otorisasi masih memakai digest tepercaya sampai schema bisnis
+disetujui.
 
 SagaBook S250 exact `3082ef03e175f53dc06dd999fd9e8a0942fda716`
 berstatus `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Evidence

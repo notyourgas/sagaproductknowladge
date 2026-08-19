@@ -1,5 +1,22 @@
 # SagaBook Changelog
 
+## 2026-08-19 - Pilot UAT receipt file binding S251
+
+- Informasi `CONFIRMED` dari exact source
+  `824a9a01e3ff0cc8c6aea70d17bc5e28e98ac7bb` pada remote branch terisolasi.
+- Before: validator pilot mempercayai digest UAT yang dimasukkan operator tanpa
+  membaca receipt aktual. After: CLI wajib membaca receipt UAT, menjalankan
+  validator exact source/release, menghitung SHA-256 dari byte file, dan
+  menolak jalur hash-only, receipt invalid, atau digest pilot mismatch.
+- Gate exact commit: focused 20/20, tooling UAT/pilot 63/63, syntax/diff check,
+  build 5.116 modul pada output terisolasi, audit npm/Composer OSV nol, serta
+  verifier production S244 17/17.
+- Status `PUSHED / SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; UI, API, database, credential, provider, dan
+  production tidak berubah. Receipt otorisasi tetap digest tepercaya sampai
+  schema bisnis disetujui; actual UAT, dua pilot, canary, dan `BUSINESS_READY`
+  masih residual.
+
 ## 2026-08-19 - Authenticated UAT evidence integrity S250
 
 - Informasi `CONFIRMED` dari exact source

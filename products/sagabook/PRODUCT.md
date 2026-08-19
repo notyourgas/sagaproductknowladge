@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 19 Agustus 2026 11:09 WIB
+Updated: 19 Agustus 2026 14:09 WIB
 Evidence status: production deployment and activation verified; business readiness pending
 
 ## Tujuan dokumen
@@ -15,6 +15,16 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- S251 exact source `824a9a01e3ff0cc8c6aea70d17bc5e28e98ac7bb`
+  berstatus `CONFIRMED / PUSHED / SECURITY_VALIDATED / QA_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Validator pilot sekarang wajib
+  membaca receipt authenticated UAT aktual, memvalidasi exact source/release,
+  lalu menghitung SHA-256 dari byte file; input hash-only lama ditolak. Focused
+  20/20 dan tooling UAT/pilot 63/63 lulus, build 5.116 modul berhasil pada
+  output terisolasi, serta audit npm/Composer OSV nol temuan. Production S244
+  diverifikasi 17/17 dan tidak berubah; actual UAT, dua pilot, provider canary,
+  serta `BUSINESS_READY` tetap residual.
 
 - S250 exact source `3082ef03e175f53dc06dd999fd9e8a0942fda716`
   berstatus `CONFIRMED / PUSHED / SECURITY_VALIDATED / QA_VALIDATED /

@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-19 - SagaBook S251 pilot UAT receipt file binding
+
+- Exact source `824a9a01e3ff0cc8c6aea70d17bc5e28e98ac7bb` menghapus
+  trust pada hash UAT manual: receipt aktual wajib valid untuk exact
+  source/release dan digest dihitung internal dari byte file.
+- Focused 20/20, tooling terkait 63/63, build 5.116, syntax/diff check,
+  dependency audit nol, dan verifier production 17/17 lulus.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+  S244 tidak berubah. Actual UAT, dua pilot, provider canary, dan
+  `BUSINESS_READY` tetap gate terpisah.
+
 ## 2026-08-19 - SagaBook S250 authenticated UAT evidence integrity
 
 - Exact source `3082ef03e175f53dc06dd999fd9e8a0942fda716` menolak
