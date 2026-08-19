@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-19 - SagaBook S250 authenticated UAT evidence integrity
+
+- Exact source `3082ef03e175f53dc06dd999fd9e8a0942fda716` menolak
+  timestamp UAT di masa depan dan coverage Owner/operator tambahan atau
+  duplikat di luar manifest bersama.
+- Red-green 15/15, tooling terkait 60/60, build 5.116, syntax/diff check,
+  dependency audit nol, dan verifier production 17/17 lulus.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+  S244 tidak berubah. Actual UAT, dua pilot, provider canary, dan
+  `BUSINESS_READY` tetap gate terpisah.
+
 ## 2026-08-19 - SagaBook S249 pilot prerequisite evidence binding
 
 - Exact source `f96ce6ac653ec07c9a72ad0728126385813672a8` membawa kontrak

@@ -1,5 +1,20 @@
 # SagaBook Changelog
 
+## 2026-08-19 - Authenticated UAT evidence integrity S250
+
+- Informasi `CONFIRMED` dari exact source
+  `3082ef03e175f53dc06dd999fd9e8a0942fda716` pada remote branch terisolasi.
+- Before: timestamp ISO yang berada di masa depan serta coverage
+  surface/viewport tambahan atau duplikat masih dapat diterima validator.
+  After: timestamp masa depan gagal tertutup dan coverage setiap role harus
+  persis sama dengan manifest bersama.
+- Gate exact commit: red-green 15/15, tooling terkait 60/60, build 5.116 modul,
+  syntax/diff check, audit npm/Composer OSV nol, dan verifier production S244
+  17/17.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; UI, API,
+  database, provider, credential, dan production tidak berubah. Authenticated
+  UAT nyata, dua pilot, provider canary, serta `BUSINESS_READY` masih residual.
+
 ## 2026-08-19 - Pilot prerequisite evidence binding S249
 
 - Informasi `CONFIRMED` dari exact source

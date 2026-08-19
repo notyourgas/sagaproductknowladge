@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 19 Agustus 2026 09:14 WIB
+Updated: 19 Agustus 2026 11:09 WIB
 Evidence status: production deployment and activation verified; business readiness pending
 
 ## Tujuan dokumen
@@ -15,6 +15,17 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- S250 exact source `3082ef03e175f53dc06dd999fd9e8a0942fda716`
+  berstatus `CONFIRMED / PUSHED / SECURITY_VALIDATED / QA_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Validator evidence
+  authenticated UAT sekarang menolak timestamp eksekusi di masa depan dan
+  mewajibkan daftar surface/viewport Owner serta operator persis sama dengan
+  manifest bersama, tanpa item tambahan atau duplikat. Red-green 15/15,
+  tooling terkait 60/60, build 5.116 modul, syntax/diff check, serta audit
+  npm/Composer OSV nol temuan lulus. Production S244 diverifikasi 17/17 dan
+  tidak berubah; actual UAT, dua pilot, provider canary, dan `BUSINESS_READY`
+  tetap residual.
 
 - S249 exact source `f96ce6ac653ec07c9a72ad0728126385813672a8`
   berstatus `CONFIRMED / PUSHED / SECURITY_VALIDATED / QA_VALIDATED /

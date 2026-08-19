@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-19 - SagaBook S250 UAT evidence integrity knowledge sync
+
+- Informasi `CONFIRMED` dari exact source
+  `3082ef03e175f53dc06dd999fd9e8a0942fda716` dan gate exact-worktree.
+- Knowledge mencatat penolakan timestamp masa depan dan kewajiban coverage
+  exact-manifest tanpa tambahan/duplikat, tanpa mengubah fakta runtime.
+- Delivery `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+  S244 tidak berubah dan `BUSINESS_READY` tetap belum.
+- Dokumen terdampak: SagaBook product/changelog/coverage, portfolio/master,
+  root changelog, dan sync status.
+
 ## 2026-08-19 - SagaBook S249 pilot evidence binding knowledge sync
 
 - Informasi `CONFIRMED` dari exact source
