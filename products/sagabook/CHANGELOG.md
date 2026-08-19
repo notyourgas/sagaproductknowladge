@@ -1,5 +1,21 @@
 # SagaBook Changelog
 
+## 2026-08-19 - Booking payment provider canary contract S253
+
+- Informasi `CONFIRMED` dari exact source
+  `e172a7c5c474a27be1d10ed66897c0b72e018e21` pada remote branch terisolasi.
+- Before: residual provider canary booking belum mempunyai kontrak eksekusi
+  tersendiri dan dapat tertukar dengan canary subscription. After: scope,
+  authorization, preflight, flow, state/recovery, evidence public-safe,
+  acceptance, stop condition, dan rollback booking-payment dibuat eksplisit.
+- Gate exact commit: kontrak dokumen dan focused reconciliation 8/8 (49
+  assertion), payment exit 309/309 (2.299 assertion), build 5.116 modul,
+  browser payment recovery, audit npm/Composer OSV nol, diff check, serta
+  verifier production read-only 17/17.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; canary tetap
+  `NOT_AUTHORIZED / NOT_EXECUTED`. Tidak ada credential, transaksi, callback,
+  production mutation, deploy, activation, atau perubahan business readiness.
+
 ## 2026-08-19 - Pilot authorization receipt decision brief S252
 
 - Artefak `CONFIRMED` dari exact source

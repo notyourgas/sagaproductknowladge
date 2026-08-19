@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 19 Agustus 2026 18:10 WIB
+Updated: 19 Agustus 2026 21:10 WIB
 Evidence status: production deployment and activation verified; business readiness pending
 
 ## Tujuan dokumen
@@ -15,6 +15,18 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- S253 exact source `e172a7c5c474a27be1d10ed66897c0b72e018e21`
+  berstatus `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Kontrak booking-payment provider canary sekarang
+  membatasi future execution ke satu controlled tenant/branch/booking dan
+  memisahkannya dari canary subscription. Exactly-once, replay/expiry, stale
+  multi-tab, permission/tenant-negative, reconciliation, read-after-write,
+  stop/rollback, dan evidence public-safe wajib dibuktikan. Focused
+  reconciliation 8/8 (49 assertion), payment exit 309/309 (2.299 assertion),
+  build 5.116 modul, browser payment recovery, audit dependency nol, serta
+  verifier production 17/17 lulus. Canary tetap `NOT_AUTHORIZED /
+  NOT_EXECUTED`; production S244 tidak berubah dan `BUSINESS_READY` belum.
 
 - S252 exact source `16f06d516f1b640053a55e5a08a138df0f2fd571`
   berstatus `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Decision

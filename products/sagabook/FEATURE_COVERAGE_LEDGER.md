@@ -1,6 +1,18 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 19 Agustus 2026 18:10 WIB
+Evidence cut-off: 19 Agustus 2026 21:10 WIB
+
+S253 exact source `e172a7c5c474a27be1d10ed66897c0b72e018e21`
+telah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Kontrak
+booking-payment provider canary kini memisahkan canary booking dari canary
+subscription dan mengikat satu controlled tenant/branch/booking, exactly-once,
+replay/expiry, stale multi-tab, permission/tenant-negative, reconciliation,
+read-after-write, stop condition, rollback, serta evidence public-safe. Kontrak
+dan focused reconciliation 8/8 (49 assertion) lulus; payment exit 309/309
+(2.299 assertion), build 5.116 modul, browser payment recovery, audit dependency
+nol, dan production verifier read-only 17/17 juga lulus. Canary tetap
+`NOT_AUTHORIZED / NOT_EXECUTED`; tidak ada credential, transaksi, callback,
+database production, deployment, atau activation baru.
 
 S252 exact source `16f06d516f1b640053a55e5a08a138df0f2fd571`
 telah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Artefak keputusan

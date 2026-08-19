@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-19 - SagaBook S253 booking provider canary contract
+
+- Exact source `e172a7c5c474a27be1d10ed66897c0b72e018e21` menetapkan
+  kontrak booking-payment canary yang terpisah dari subscription canary.
+- Satu controlled scope, exactly-once/replay/expiry, recovery multi-tab,
+  permission/tenant boundary, reconciliation, read-after-write, stop/rollback,
+  dan evidence public-safe kini eksplisit.
+- Focused 8/8, payment exit 309/309, build 5.116, browser recovery, dependency
+  audit nol, dan verifier production 17/17 lulus. Status `PUSHED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; canary `NOT_AUTHORIZED /
+  NOT_EXECUTED` dan production S244 tidak berubah.
+
 ## 2026-08-19 - SagaBook S252 pilot authorization receipt brief
 
 - Exact source `16f06d516f1b640053a55e5a08a138df0f2fd571` mengubah gap

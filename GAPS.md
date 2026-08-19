@@ -57,6 +57,16 @@ pada exact kandidat.
 
 ### SagaBook
 
+- `NOT AUTHORIZED / NOT EXECUTED`: S253 exact
+  `e172a7c5c474a27be1d10ed66897c0b72e018e21` sudah menyediakan kontrak
+  booking-payment provider canary yang terpisah dari subscription. Eksekusi
+  tetap memerlukan izin eksplisit Andreas setelah authenticated UAT dan
+  authority receipt siap, dengan exact source/release, controlled target,
+  nominal/metode, window, operator, data uji, penanganan uang, dan stop
+  authority yang ditetapkan. Jangan memakai keberhasilan subscription canary
+  sebagai pengganti atau menjalankan credential/transaksi/callback sebelum
+  seluruh prasyarat tersedia.
+
 - `NEEDS CONFIRMATION`: S252 exact
   `16f06d516f1b640053a55e5a08a138df0f2fd571` menyediakan brief authority
   receipt otorisasi pilot. Rekomendasi `PROPOSAL` adalah signed receipt offline

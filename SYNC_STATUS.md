@@ -12,14 +12,25 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-19T18:10:00+07:00 |
-| Branch aktif | `codex/knowledge-s252-pilot-authorization-brief` pada worktree terisolasi exact baseline `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-19T21:10:00+07:00 |
+| Branch aktif | `codex/knowledge-s253-booking-provider-canary-spec` pada worktree terisolasi exact baseline `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `d40f99980855ac4085d9a22dd5cd873e0906ffb0` |
-| Informasi terakhir disinkronkan | SagaBook S252 pilot authorization receipt decision brief. |
+| Baseline sebelum pembaruan | `3cd85d3f2dfd34421c0908d71c6fd39c4bb15e20` |
+| Informasi terakhir disinkronkan | SagaBook S253 booking payment provider canary contract. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
 | Konflik | Sinkronisasi dibangun di atas exact `origin/main`; perubahan produk lain dipertahankan utuh; checkout utama yang divergen tidak disentuh. |
-| Error | Tidak ada error sinkronisasi; S252 belum dideploy dan mekanisme receipt masih menunggu keputusan Andreas. `BUSINESS_READY` masih menunggu authenticated UAT, dua studio pilot, serta provider canary. |
+| Error | Tidak ada error sinkronisasi; S253 belum dideploy dan booking provider canary tetap `NOT_AUTHORIZED / NOT_EXECUTED`. `BUSINESS_READY` masih menunggu authenticated UAT, dua studio pilot, serta provider canary nyata. |
+
+## File yang berubah pada sinkronisasi ini (SagaBook S253 booking provider canary contract)
+
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaBook S252 authorization receipt brief)
 

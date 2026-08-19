@@ -1,8 +1,19 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 19 Agustus 2026 18:10 WIB
+Evidence cut-off: 19 Agustus 2026 21:10 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
+
+SagaBook S253 exact `e172a7c5c474a27be1d10ed66897c0b72e018e21`
+berstatus `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Kontrak
+booking-payment provider canary telah diverifikasi dan wajib dipisahkan dari
+canary subscription. Future execution hanya boleh memakai scope terkontrol,
+otorisasi eksplisit, exactly-once/replay/expiry, recovery stale multi-tab,
+permission/tenant-negative, reconciliation, read-after-write, stop/rollback,
+dan evidence public-safe. Canary sendiri tetap `NOT_AUTHORIZED /
+NOT_EXECUTED`; jangan menyebut transaksi, callback, settlement, deployment,
+atau activation telah terjadi. Production S244 tetap aktif dan
+`BUSINESS_READY` belum.
 
 SagaBook S252 exact `16f06d516f1b640053a55e5a08a138df0f2fd571`
 berstatus `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Artefak

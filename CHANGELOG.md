@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-19 - SagaBook S253 booking provider canary contract sync
+
+- Informasi `CONFIRMED` dari exact source
+  `e172a7c5c474a27be1d10ed66897c0b72e018e21` dan gate exact-worktree.
+- Knowledge mencatat batas booking-payment canary, pemisahan dari subscription,
+  acceptance recovery/integritas, stop/rollback, dan larangan klaim eksekusi.
+- Delivery `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; canary tetap
+  `NOT_AUTHORIZED / NOT_EXECUTED`, production S244 tidak berubah, dan
+  `BUSINESS_READY` tetap belum.
+- Dokumen terdampak: SagaBook product/changelog/coverage, portfolio/master,
+  gaps, root changelog, dan sync status.
+
 ## 2026-08-19 - SagaBook S252 authorization receipt brief sync
 
 - Artefak `CONFIRMED` dari exact source
