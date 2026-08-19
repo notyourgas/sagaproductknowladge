@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 19 Agustus 2026 05:10 WIB
+Updated: 19 Agustus 2026 07:06 WIB
 Evidence status: production deployment and activation verified; business readiness pending
 
 ## Tujuan dokumen
@@ -15,6 +15,17 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- S248 exact source `0097dc0da5905e7ac471c481d9203e11c5ece8ae`
+  berstatus `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Artefak
+  `CONFIRMED` ini menyiapkan decision brief dan validator public-safe untuk
+  kebijakan refund setelah payout; kebijakannya sendiri tetap `PROPOSAL /
+  NEEDS CONFIRMATION`. Rekomendasi hybrid adalah carry-forward default, invoice
+  manual setelah 30 hari sebagai fallback, approval ganda selama beta, dan
+  biaya SagaDev hanya untuk exception insiden platform yang disetujui. Gate
+  exact commit: validator red-green, build 5.116 modul, diff check, serta audit
+  npm/Composer/OSV nol temuan. Tidak ada perubahan runtime, UI, API, database,
+  provider, atau production; keputusan Andreas wajib sebelum coding kebijakan.
 
 - S247 exact source `c2951c721508f459807b8236731613f8412b267c`
   menambahkan recovery contract dan acceptance sintetis untuk refund setelah

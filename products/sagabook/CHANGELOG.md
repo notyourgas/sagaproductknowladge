@@ -1,5 +1,20 @@
 # SagaBook Changelog
 
+## 2026-08-19 - Post-payout refund policy decision brief S248
+
+- Artefak `CONFIRMED` dari exact source
+  `0097dc0da5905e7ac471c481d9203e11c5ece8ae` pada remote branch terisolasi;
+  kebijakan tetap `PROPOSAL / NEEDS CONFIRMATION`.
+- Before: S247 sudah mengunci paid payout immutable, tetapi mekanisme penutup
+  selisih belum dipilih. After: brief membandingkan carry-forward, invoice
+  manual, dan biaya SagaDev, lalu merekomendasikan hybrid carry-forward ->
+  invoice dengan exception founder-only.
+- Parameter proposal: invoice setelah 30 hari, approval ganda selama beta,
+  tidak ada payout negatif, auto-withdrawal, auto-transfer, atau auto-debit.
+- Gate: validator red-green lulus, build 5.116 modul, diff check, dan audit
+  npm/Composer/OSV nol temuan. Status `PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production S244 tidak berubah.
+
 ## 2026-08-19 - Post-payout refund recovery contract S247
 
 - Informasi `CONFIRMED` dari exact source

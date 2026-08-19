@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-19 - SagaBook S248 post-payout refund policy brief
+
+- Exact source `0097dc0da5905e7ac471c481d9203e11c5ece8ae` menambahkan
+  decision brief dan validator public-safe; artefaknya terverifikasi, sedangkan
+  kebijakan tetap proposal yang menunggu Andreas.
+- Rekomendasi: carry-forward default, invoice manual setelah 30 hari sebagai
+  fallback, approval ganda beta, dan biaya SagaDev hanya exception yang
+  disetujui. Paid payout tetap immutable dan tidak ada auto-debit/transfer.
+- Validator red-green, build 5.116, diff check, dan audit dependency nol lulus.
+  Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production S244
+  tidak berubah.
+
 ## 2026-08-19 - SagaBook S247 post-payout refund recovery contract
 
 - Exact source `c2951c721508f459807b8236731613f8412b267c` menambahkan

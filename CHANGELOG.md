@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-19 - SagaBook S248 refund policy brief knowledge sync
+
+- Artefak `CONFIRMED` dari exact source
+  `0097dc0da5905e7ac471c481d9203e11c5ece8ae`; kebijakan tetap `PROPOSAL /
+  NEEDS CONFIRMATION`.
+- Knowledge mencatat rekomendasi hybrid carry-forward -> invoice, guardrail no
+  negative payout/no auto-transfer, parameter keputusan, dan acceptance masa
+  depan tanpa mengubah fakta runtime.
+- Delivery `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+  S244 tidak berubah dan `BUSINESS_READY` tetap belum.
+- Dokumen terdampak: SagaBook product/changelog/coverage, portfolio/master,
+  gaps, root changelog, dan sync status.
+
 ## 2026-08-19 - SagaBook S247 refund recovery knowledge sync
 
 - Informasi `CONFIRMED` dari exact source

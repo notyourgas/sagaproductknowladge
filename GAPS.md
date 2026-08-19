@@ -57,13 +57,14 @@ pada exact kandidat.
 
 ### SagaBook
 
-- `NEEDS CONFIRMATION`: S247 exact
-  `c2951c721508f459807b8236731613f8412b267c` membuktikan recovery refund
-  setelah payout dapat fail-closed tanpa mengubah paid batch, memanggil
-  provider, atau mentransfer dana. Andreas masih perlu memilih mekanisme
-  carry-forward payout berikutnya, debit/invoice tenant, atau biaya ditanggung
-  SagaDev; sekaligus batas nominal, approval ganda, dan expiry kasus. Sebelum
-  keputusan, operator hanya boleh mencatat evidence dan eskalasi.
+- `NEEDS CONFIRMATION`: S248 exact
+  `0097dc0da5905e7ac471c481d9203e11c5ece8ae` menyediakan brief keputusan di
+  atas bukti S247. Rekomendasi `PROPOSAL` adalah carry-forward default, invoice
+  manual setelah 30 hari, approval ganda selama beta, dan biaya SagaDev hanya
+  exception insiden platform yang disetujui. Andreas perlu memilih hybrid,
+  tenggat 30 hari atau lain, aturan approval, serta penanggung saldo yang tetap
+  tidak tertagih. Sebelum keputusan, operator hanya mencatat evidence dan
+  eskalasi; tidak ada auto-withdrawal, auto-transfer, atau auto-debit.
 
 - `TODO`: idempotency S218 exact source
   `60e115db0458b4791938e692dda79643f47d342a` sudah `PUSHED /
