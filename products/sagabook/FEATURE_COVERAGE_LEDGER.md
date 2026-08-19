@@ -1,6 +1,16 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 19 Agustus 2026 21:10 WIB
+Evidence cut-off: 20 Agustus 2026 00:31 WIB
+
+S254 exact source `02c4fff8a404fb9d9fcd57d657709ef442566f90`
+telah `PUSHED / UIUX_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`. Admin shell menggunakan rail modul navy dan menu
+konteks terang, canvas biru-abu, active state biru, panel datar, serta Plus
+Jakarta Sans. Navigasi capability-aware yang sudah ada tetap menjadi authority;
+staff permission-negative lulus. Build, design audit 26/0, focused role/visual
+6/6, visual desktop-tablet-mobile 3/3, dan full admin UI contract 26/26 lulus.
+Tidak ada perubahan API, auth, permission, database, booking flow, credential,
+atau production. Production aktif tetap S244 dan `BUSINESS_READY` belum.
 
 S253 exact source `e172a7c5c474a27be1d10ed66897c0b72e018e21`
 telah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Kontrak

@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-083 - SagaBook memakai arah visual dashboard SleekFlow-inspired
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-20 |
+| Topik | Arah UI/UX dashboard admin SagaBook |
+| Keputusan | Dashboard admin menggunakan pola visual SleekFlow sebagai referensi utama: rail modul navy, menu konteks terang, canvas biru-abu, active state biru, panel datar, dan Plus Jakarta Sans. Struktur capability dan identitas SagaBook tetap dipertahankan; aset serta merek proprietary SleekFlow tidak disalin. |
+| Alasan | Founder menginginkan dashboard operasional yang lebih ringkas, modern, dan konsisten dengan pola SaaS omnichannel yang sudah familier. |
+| Alternatif yang dipertimbangkan | Mempertahankan sidebar tunggal dan font sebelumnya; redesign tanpa referensi produk utama. |
+| Dampak | Candidate S254 menerapkan shell dua tingkat dan token visual baru pada dashboard admin tanpa mengubah API, permission, database, atau booking flow. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED`; source S254 dipush, tervalidasi lokal, belum production-deployed |
+| Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [SagaBook Changelog](products/sagabook/CHANGELOG.md) |
+
 ## DEC-079 - SagaTech Scope 2 menjadi qualification system
 
 | Field | Isi |

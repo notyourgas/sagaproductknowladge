@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-20 - SagaBook S254 admin dashboard redesign
+
+- Exact source `02c4fff8a404fb9d9fcd57d657709ef442566f90` membawa pola
+  visual SleekFlow-inspired ke dashboard melalui rail modul, menu konteks,
+  canvas biru-abu, active state biru, panel datar, dan Plus Jakarta Sans.
+- Capability filtering tetap utuh. Build, design audit 26/0, focused 6/6,
+  visual matrix 3/3, serta full admin UI contract 26/26 lulus.
+- Status `PUSHED / UIUX_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production S244 dan `BUSINESS_READY` tidak
+  berubah.
+
 ## 2026-08-19 - SagaBook S253 booking provider canary contract
 
 - Exact source `e172a7c5c474a27be1d10ed66897c0b72e018e21` menetapkan

@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 19 Agustus 2026 21:10 WIB
+Updated: 20 Agustus 2026 00:31 WIB
 Evidence status: production deployment and activation verified; business readiness pending
 
 ## Tujuan dokumen
@@ -15,6 +15,17 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- S254 exact source `02c4fff8a404fb9d9fcd57d657709ef442566f90`
+  berstatus `CONFIRMED / PUSHED / UIUX_VALIDATED / QA_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Dashboard admin kini memakai
+  shell dua tingkat terinspirasi pola navigasi SleekFlow: rail modul navy,
+  menu konteks terang, canvas biru-abu, active state biru, panel datar, dan
+  Plus Jakarta Sans. Capability filtering lama tetap dipertahankan. Build,
+  design audit 26 artefak/0 pelanggaran, focused role/visual 6/6, visual
+  desktop-tablet-mobile 3/3, dan full admin UI contract 26/26 lulus. Tidak ada
+  perubahan API, auth, permission, database, booking flow, atau production;
+  production S244 dan status `BUSINESS_READY` tidak berubah.
 
 - S253 exact source `e172a7c5c474a27be1d10ed66897c0b72e018e21`
   berstatus `CONFIRMED / PUSHED / LOCAL_VALIDATED /

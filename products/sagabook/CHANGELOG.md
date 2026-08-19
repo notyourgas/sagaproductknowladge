@@ -1,5 +1,22 @@
 # SagaBook Changelog
 
+## 2026-08-20 - SleekFlow-inspired admin dashboard S254
+
+- Informasi `CONFIRMED` dari exact source
+  `02c4fff8a404fb9d9fcd57d657709ef442566f90` pada remote branch terisolasi.
+- Before: dashboard memakai satu sidebar dan visual surface lama. After: admin
+  memakai shell dua tingkat dengan rail modul navy, menu konteks terang,
+  active state biru, panel datar, canvas biru-abu, dan Plus Jakarta Sans.
+- Capability filtering serta taxonomy Operasional, Katalog, Organisasi,
+  Keuangan, dan Pengaturan dipertahankan; tidak ada aset atau merek proprietary
+  SleekFlow yang disalin.
+- Gate exact commit: build lulus, design audit 26 artefak/0 pelanggaran,
+  focused role/visual 6/6, visual desktop-tablet-mobile 3/3, dan full admin UI
+  contract 26/26.
+- Status `PUSHED / UIUX_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; API, auth, permission, database, booking flow,
+  credential, dan production tidak berubah. Production aktif tetap S244.
+
 ## 2026-08-19 - Booking payment provider canary contract S253
 
 - Informasi `CONFIRMED` dari exact source
