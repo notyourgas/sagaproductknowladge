@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-19 - SagaBook S249 pilot evidence binding knowledge sync
+
+- Informasi `CONFIRMED` dari exact source
+  `f96ce6ac653ec07c9a72ad0728126385813672a8` dan gate exact-worktree.
+- Knowledge mencatat schema v2 yang mengikat receipt UAT/otorisasi melalui
+  digest SHA-256 tepercaya, fail-closed boolean-only/mismatch, serta batas data
+  public-safe tanpa mengubah fakta runtime.
+- Delivery `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+  S244 tidak berubah dan `BUSINESS_READY` tetap belum.
+- Dokumen terdampak: SagaBook product/changelog/coverage, portfolio/master,
+  root changelog, dan sync status.
+
 ## 2026-08-19 - SagaBook S248 refund policy brief knowledge sync
 
 - Artefak `CONFIRMED` dari exact source

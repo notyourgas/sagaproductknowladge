@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-19 - SagaBook S249 pilot prerequisite evidence binding
+
+- Exact source `f96ce6ac653ec07c9a72ad0728126385813672a8` membawa kontrak
+  dua-studio ke lineage production terbaru dan mewajibkan digest SHA-256 receipt
+  UAT/otorisasi yang cocok; boolean-only tidak lagi cukup.
+- Red-green 17/17, tooling 58/58, build 5.116, diff check, audit dependency nol,
+  dan verifier production 17/17 lulus. Output tetap public-safe dan tidak
+  mencetak digest/path.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production S244
+  tidak berubah. Authenticated UAT, dua pilot, provider canary, dan
+  `BUSINESS_READY` masih residual.
+
 ## 2026-08-19 - SagaBook S248 post-payout refund policy brief
 
 - Exact source `0097dc0da5905e7ac471c481d9203e11c5ece8ae` menambahkan

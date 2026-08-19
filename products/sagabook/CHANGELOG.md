@@ -1,5 +1,21 @@
 # SagaBook Changelog
 
+## 2026-08-19 - Pilot prerequisite evidence binding S249
+
+- Informasi `CONFIRMED` dari exact source
+  `f96ce6ac653ec07c9a72ad0728126385813672a8` pada remote branch terisolasi.
+- Before: kontrak S243 berada pada lineage lama dan menerima UAT/otorisasi
+  sebagai boolean. After: kontrak berada di atas production S244 dan schema v2
+  mewajibkan digest SHA-256 receipt UAT serta otorisasi yang cocok dengan input
+  tepercaya operator.
+- Missing, malformed, mismatch, PII/secret/URL/UUID, overwrite, dan path lokal
+  gagal tertutup; output tidak mencetak digest. Provider canary dan
+  `businessReady=false` dipertahankan.
+- Gate exact commit: red-green 17/17, seluruh tooling 58/58, build 5.116 modul,
+  diff check, audit npm/Composer OSV nol, dan verifier production 17/17.
+  Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production S244
+  tidak berubah.
+
 ## 2026-08-19 - Post-payout refund policy decision brief S248
 
 - Artefak `CONFIRMED` dari exact source

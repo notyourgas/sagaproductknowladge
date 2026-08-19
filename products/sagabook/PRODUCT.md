@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 19 Agustus 2026 07:06 WIB
+Updated: 19 Agustus 2026 09:14 WIB
 Evidence status: production deployment and activation verified; business readiness pending
 
 ## Tujuan dokumen
@@ -15,6 +15,19 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- S249 exact source `f96ce6ac653ec07c9a72ad0728126385813672a8`
+  berstatus `CONFIRMED / PUSHED / SECURITY_VALIDATED / QA_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Kontrak evidence dua-studio
+  S243 dibawa ke lineage production S244 terbaru dan schema v2 sekarang
+  mewajibkan digest SHA-256 lowercase dari receipt authenticated UAT serta
+  receipt otorisasi public-safe. Dua nilai di evidence harus cocok dengan input
+  tepercaya operator; boolean-only, digest hilang/malformed/mismatch, PII,
+  secret, URL, UUID, overwrite, dan path lokal gagal tertutup. Gate exact
+  commit: red-green 17/17, seluruh tooling 58/58, build 5.116 modul, diff check,
+  audit npm/Composer OSV nol, dan verifier production 17/17. Tidak ada perubahan
+  UI, API, database, provider, atau production. Authenticated UAT, dua studio
+  pilot, provider canary, dan `BUSINESS_READY` tetap residual.
 
 - S248 exact source `0097dc0da5905e7ac471c481d9203e11c5ece8ae`
   berstatus `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Artefak
