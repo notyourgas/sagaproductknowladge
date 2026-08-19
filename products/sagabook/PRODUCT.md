@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 19 Agustus 2026 14:09 WIB
+Updated: 19 Agustus 2026 18:10 WIB
 Evidence status: production deployment and activation verified; business readiness pending
 
 ## Tujuan dokumen
@@ -15,6 +15,18 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- S252 exact source `16f06d516f1b640053a55e5a08a138df0f2fd571`
+  berstatus `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Decision
+  brief public-safe menutup gap analisis authority receipt otorisasi pilot
+  tanpa mengaktifkan kebijakan. Rekomendasi `PROPOSAL` adalah signed receipt
+  offline yang terikat satu exact source/release, maksimum 14 hari, dua
+  aktivitas allowlist, dua slot ordinal, dan revocation oleh Andreas. Opsi
+  repository private serta digest manual didokumentasikan sebagai pembanding.
+  Kontrak dokumen, tooling pilot/UAT 63/63, audit dependency, dan production
+  verifier 17/17 lulus. Production tidak berubah; keputusan Andreas,
+  authenticated UAT, dua pilot, provider canary, dan `BUSINESS_READY` masih
+  residual.
 
 - S251 exact source `824a9a01e3ff0cc8c6aea70d17bc5e28e98ac7bb`
   berstatus `CONFIRMED / PUSHED / SECURITY_VALIDATED / QA_VALIDATED /

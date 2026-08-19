@@ -1,5 +1,21 @@
 # SagaBook Changelog
 
+## 2026-08-19 - Pilot authorization receipt decision brief S252
+
+- Artefak `CONFIRMED` dari exact source
+  `16f06d516f1b640053a55e5a08a138df0f2fd571`; keputusan tetap `PROPOSAL /
+  NEEDS CONFIRMATION`.
+- Before: digest otorisasi S251 membuktikan integritas byte tetapi belum
+  authority, scope, expiry, atau revocation. After: brief membandingkan tiga
+  opsi, merekomendasikan signed receipt offline, serta mendefinisikan alur
+  operator, threat model, public-safety, dan acceptance implementasi berikutnya.
+- Gate exact commit: kontrak dokumen lulus, tooling pilot/UAT 63/63, audit
+  npm/Composer OSV nol, diff check, dan verifier production read-only 17/17.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; UI, API,
+  database, credential/key, provider, pilot, dan production tidak berubah.
+  Andreas harus memilih mekanisme, masa berlaku, authority revocation, dan
+  storage sebelum validator otorisasi boleh diimplementasikan.
+
 ## 2026-08-19 - Pilot UAT receipt file binding S251
 
 - Informasi `CONFIRMED` dari exact source

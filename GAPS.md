@@ -57,6 +57,16 @@ pada exact kandidat.
 
 ### SagaBook
 
+- `NEEDS CONFIRMATION`: S252 exact
+  `16f06d516f1b640053a55e5a08a138df0f2fd571` menyediakan brief authority
+  receipt otorisasi pilot. Rekomendasi `PROPOSAL` adalah signed receipt offline
+  untuk satu exact source/release, maksimum 14 hari, dua aktivitas allowlist,
+  dua slot ordinal, dan revocation oleh Andreas. Andreas perlu memilih Opsi A
+  signed receipt, Opsi B approval repository private, atau Opsi C digest
+  manual; juga menetapkan expiry, authority pencabutan, dan storage restricted.
+  Sampai dikonfirmasi, jangan mengimplementasikan schema/key atau menjalankan
+  pilot nyata hanya berdasarkan digest S251.
+
 - `NEEDS CONFIRMATION`: S248 exact
   `0097dc0da5905e7ac471c481d9203e11c5ece8ae` menyediakan brief keputusan di
   atas bukti S247. Rekomendasi `PROPOSAL` adalah carry-forward default, invoice

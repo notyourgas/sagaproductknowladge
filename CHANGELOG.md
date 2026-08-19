@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-19 - SagaBook S252 authorization receipt brief sync
+
+- Artefak `CONFIRMED` dari exact source
+  `16f06d516f1b640053a55e5a08a138df0f2fd571`; mekanisme receipt tetap
+  `PROPOSAL / NEEDS CONFIRMATION`.
+- Knowledge mencatat opsi authority, rekomendasi signed receipt offline,
+  expiry/revocation, threat model, public-safety, dan acceptance tanpa mengubah
+  fakta runtime atau mengizinkan pilot.
+- Delivery `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+  S244 tidak berubah dan `BUSINESS_READY` tetap belum.
+- Dokumen terdampak: SagaBook product/changelog/coverage, portfolio/master,
+  gaps, root changelog, dan sync status.
+
 ## 2026-08-19 - SagaBook S251 UAT receipt binding knowledge sync
 
 - Informasi `CONFIRMED` dari exact source

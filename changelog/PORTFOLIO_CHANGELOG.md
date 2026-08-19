@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-19 - SagaBook S252 pilot authorization receipt brief
+
+- Exact source `16f06d516f1b640053a55e5a08a138df0f2fd571` mengubah gap
+  authority receipt pilot menjadi tiga opsi dan rekomendasi signed receipt
+  offline; keputusan tetap `PROPOSAL / NEEDS CONFIRMATION`.
+- Scope, exact source/release, expiry, revocation, public-safety, threat model,
+  alur operator, dan acceptance masa depan kini eksplisit tanpa membuat key,
+  receipt, credential, atau pilot.
+- Kontrak dokumen, tooling pilot/UAT 63/63, audit dependency nol, dan verifier
+  production 17/17 lulus. Status `PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production S244 tidak berubah.
+
 ## 2026-08-19 - SagaBook S251 pilot UAT receipt file binding
 
 - Exact source `824a9a01e3ff0cc8c6aea70d17bc5e28e98ac7bb` menghapus

@@ -1,6 +1,16 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 19 Agustus 2026 14:09 WIB
+Evidence cut-off: 19 Agustus 2026 18:10 WIB
+
+S252 exact source `16f06d516f1b640053a55e5a08a138df0f2fd571`
+telah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Artefak keputusan
+receipt otorisasi pilot membandingkan signed receipt offline, approval pada
+repository private, dan digest manual; rekomendasi signed receipt tetap
+`PROPOSAL / NEEDS CONFIRMATION`. Brief mengikat exact source/release,
+environment, scope, expiry, revocation, threat model, dan acceptance masa
+depan. Kontrak dokumen lulus, tooling pilot/UAT 63/63, audit dependency nol,
+dan production verifier read-only 17/17. Tidak ada UI, API, database, key,
+credential, pilot, provider, atau production mutation.
 
 S251 exact source `824a9a01e3ff0cc8c6aea70d17bc5e28e98ac7bb`
 telah `PUSHED / SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
