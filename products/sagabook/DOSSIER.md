@@ -7,12 +7,18 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 20 Agustus 2026 02:09 WIB
+- Updated: 20 Agustus 2026 04:05 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED`; current release S244
   `20260818091438-7fb8037` lulus verifier 17/17, termasuk HTTP 3/3 dan security
   profile 3/3
 - Business readiness: `NEEDS CONFIRMATION`
+- Candidate tooling S256 exact
+  `f43e011d9cc7d13270d5ead267fb57ba5453c260`: `PUSHED / QA_VALIDATED /
+  SECURITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; preflight
+  release menolak volume removable/unknown dan fixed filesystem selain
+  NTFS/ReFS sebelum mutation, serta memeriksa health fixed Windows ketika
+  probe tersedia. Production tetap S244.
 - Candidate tooling S255 exact
   `74e082366afc544c69dc35e560c19c91424a63ff`: `PUSHED / QA_VALIDATED /
   SECURITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; bundler

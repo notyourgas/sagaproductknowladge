@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-20 - SagaBook S256 release volume suitability sync
+
+- Informasi `CONFIRMED` dari exact source
+  `f43e011d9cc7d13270d5ead267fb57ba5453c260` dan gate exact-worktree.
+- Knowledge mencatat rejection media removable/unknown, allowlist NTFS/ReFS
+  untuk fixed volume, health probe, dan check-only public-safe tanpa
+  menjadikannya headline produk.
+- Delivery `PUSHED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production S244 dan `BUSINESS_READY` tetap.
+- Dokumen terdampak: SagaBook product/dossier/changelog/coverage,
+  portfolio/master, root changelog, dan sync status.
+
 ## 2026-08-20 - SagaBook S255 local capacity preflight sync
 
 - Informasi `CONFIRMED` dari exact source

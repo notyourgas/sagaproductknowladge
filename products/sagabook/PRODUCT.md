@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 20 Agustus 2026 02:09 WIB
+Updated: 20 Agustus 2026 04:05 WIB
 Evidence status: production deployment and activation verified; business readiness pending
 
 ## Tujuan dokumen
@@ -15,6 +15,17 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- S256 exact source `f43e011d9cc7d13270d5ead267fb57ba5453c260`
+  berstatus `CONFIRMED / PUSHED / QA_VALIDATED / SECURITY_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Tool release lokal menolak
+  volume removable/unknown dan filesystem fixed selain NTFS/ReFS sebelum
+  mutation; health fixed Windows juga diperiksa ketika probe tersedia. Uji
+  nyata membuktikan fixed NTFS sehat lulus dan removable FAT32 Warning gagal
+  tertutup tanpa folder baru. Release hardening 16/16 (204 assertion), build
+  5.132 modul, parser/lint, dan audit dependency nol temuan lulus. Tidak ada
+  perubahan workflow, UI, API, database, tenant, payment, provider, atau
+  production; production S244 dan status `BUSINESS_READY` tidak berubah.
 
 - S255 exact source `74e082366afc544c69dc35e560c19c91424a63ff`
   berstatus `CONFIRMED / PUSHED / QA_VALIDATED / SECURITY_VALIDATED /

@@ -1,5 +1,23 @@
 # SagaBook Changelog
 
+## 2026-08-20 - Local release volume suitability S256
+
+- Informasi `CONFIRMED` dari exact source
+  `f43e011d9cc7d13270d5ead267fb57ba5453c260` pada remote branch terisolasi.
+- Before: check kapasitas S255 menerima media removable FAT32 berstatus Warning
+  selama ruang bebas cukup. After: volume removable/unknown dan fixed
+  filesystem selain NTFS/ReFS ditolak sebelum mutation; health fixed Windows
+  diperiksa ketika probe tersedia.
+- Check-only memuat drive type, filesystem, dan health public-safe. Fixed NTFS
+  sehat lulus; media removable FAT32 Warning gagal tertutup tanpa membuat
+  folder.
+- Gate exact commit: release hardening 16/16 (204 assertion), build 5.132
+  modul, PowerShell parser, PHP lint, audit npm nol vulnerability, Composer OSV
+  114 paket/nol advisory, serta verifier production read-only 17/17.
+- Status `PUSHED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; UI, API, database, tenant, payment, provider,
+  production, activation, dan business readiness tidak berubah.
+
 ## 2026-08-20 - Local release capacity preflight S255
 
 - Informasi `CONFIRMED` dari exact source

@@ -1,6 +1,19 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 20 Agustus 2026 02:09 WIB
+Evidence cut-off: 20 Agustus 2026 04:05 WIB
+
+S256 exact source `f43e011d9cc7d13270d5ead267fb57ba5453c260`
+telah `PUSHED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`. Preflight bundler kandidat lokal kini menolak
+volume removable/unknown serta filesystem fixed selain NTFS/ReFS; volume fixed
+Windows juga wajib berstatus sehat ketika health probe tersedia. Metadata
+drive type, filesystem, dan health masuk ke output check-only public-safe.
+Before nyata menerima media removable FAT32 berstatus Warning; after media itu
+gagal tertutup sebelum folder atau artefak dibuat, sedangkan fixed NTFS sehat
+lulus tanpa mutasi. Release hardening 16/16 (204 assertion), build 5.132 modul,
+parser/lint, dan audit npm/Composer OSV nol temuan lulus. UI, API, database,
+tenant, payment, provider, dan production tidak berubah; production aktif tetap
+S244 dan `BUSINESS_READY` belum.
 
 S255 exact source `74e082366afc544c69dc35e560c19c91424a63ff`
 telah `PUSHED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /

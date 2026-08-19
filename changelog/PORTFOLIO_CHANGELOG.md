@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-20 - SagaBook S256 local release volume suitability
+
+- Exact source `f43e011d9cc7d13270d5ead267fb57ba5453c260` memperketat
+  preflight bundler: media removable/unknown dan fixed filesystem selain
+  NTFS/ReFS ditolak sebelum mutation; fixed Windows dicek health-nya ketika
+  probe tersedia.
+- Fixed NTFS sehat lulus dan removable FAT32 Warning gagal tertutup tanpa
+  membuat folder. Release hardening 16/16, build, parser/lint, dependency
+  audit, dan verifier production 17/17 lulus.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+  S244 dan `BUSINESS_READY` tidak berubah.
+
 ## 2026-08-20 - SagaBook S255 local release capacity preflight
 
 - Exact source `74e082366afc544c69dc35e560c19c91424a63ff` menambahkan
