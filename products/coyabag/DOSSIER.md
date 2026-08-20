@@ -7,7 +7,7 @@ content COYABAG tanpa menyamakan surface live dengan commerce aktif.
 
 ## Konteks dan status bukti
 
-- Updated: 9 Agustus 2026
+- Updated: 20 Agustus 2026
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `BLOCKED`
 - Business readiness: `BLOCKED`
@@ -78,6 +78,15 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
+Release production terbaru `20260820-51a29ab` memakai source
+`51a29abe211af5e663ba49b9844ef1bbc3fe3c66` dan rollback
+`20260820-fd1787a`. Customer flow kini memiliki quote snapshot yang divalidasi
+server, payment-to-fulfillment, serta timeline order/pengiriman terpadu.
+Operator memiliki shipping command center, packing/weight review, provider
+operation journal, pickup/label/tracking foundation, finance ledger,
+cancellation guard, incident, stock disposition, dan refund review. Seluruh
+provider baru dan COD tetap fail-closed.
+
 ## Business model
 
 Direct-to-consumer ecommerce. Margin, shipping subsidy, discount, tax, dan
@@ -136,6 +145,11 @@ deployment aplikasi atau perubahan runtime production.
 Payment, shipping, SMTP, object storage, analytics, dan support. Production
 provider belum terverifikasi lengkap.
 
+Adapter RajaOngkir/Komerce Cost/Delivery dan Komerce Payment sudah berada di
+runtime production sebagai kemampuan default-off. Activation tetap menunggu
+credential/entitlement, authenticity webhook, sandbox dan controlled-live UAT,
+kurir/gudang, finance reconciliation, serta sign-off owner/admin/finance.
+
 ## Data yang digunakan
 
 Catalog/product/variant/media, customer, cart, order, inventory ledger,
@@ -148,6 +162,10 @@ Surface live dapat disalahartikan sebagai checkout aktif; dummy data, provider,
 2FA recovery, restore drill, monitoring, dan legal policy adalah blocker.
 Residual inheritance security header storefront sudah ditutup; CSP tidak
 diubah dalam hardening ini.
+
+Readiness runtime terbaru `20/40` atau 50%, `ready=false`, dengan 20 blocker.
+Status code `PRODUCTION_DEPLOYED` tidak mengubah activation maupun business
+readiness yang tetap `BLOCKED`.
 
 ## KPI dan success metrics
 

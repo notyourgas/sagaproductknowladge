@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-20 - COYABAG shipping/payment operations production
+
+- Source `51a29abe211af5e663ba49b9844ef1bbc3fe3c66` aktif sebagai
+  Hostinger release `20260820-51a29ab` dengan rollback
+  `20260820-fd1787a`.
+- Release menyelesaikan quote integrity, payment-to-fulfillment, shipping
+  provider foundation, tracking, finance reconciliation, exception/refund,
+  operator command center, dan customer timeline.
+- Migration/backup/checksum, worker/monitor, dan 39 public smoke checks lulus.
+  Provider serta COD tetap default-off; readiness `20/40`, `ready=false`, dan
+  activation/business readiness tetap `BLOCKED`.
+- Produk Saga lain tidak berubah.
+
 ## 2026-08-20 - SagaBook S266 release-path revalidation
 
 - Exact source `253c4e0b497a07ead472643b827d405538343ed7` memperketat

@@ -12,14 +12,25 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-20T17:15:00+07:00 |
-| Branch aktif | `codex/s265-sagabook-service-fee-knowledge` pada worktree exact baseline `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-20T17:30:00+07:00 |
+| Branch aktif | `main` pada clone bersih exact baseline `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `a5d1b04` |
-| Informasi terakhir disinkronkan | SagaBook S265 exact release candidate, owner UAT approval, backup/restore evidence, dan release blocker sebelum activation. |
+| Baseline sebelum pembaruan | `2438f6f` |
+| Informasi terakhir disinkronkan | COYABAG release `20260820-51a29ab`, shipping/payment operations, runtime acceptance, dan activation blockers. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
-| Konflik | Catatan S265 direbase ke sinkronisasi S266 terbaru tanpa menimpa provenance; checkout utama tidak disentuh. |
-| Error | `RELEASE_BLOCKED`: readiness production 80/100 karena koneksi Fonnte platform-managed terputus dan satu notifikasi verifikasi pembayaran telah menghabiskan retry. Activation tidak dicoba. Reconnect, penanganan aman tanpa blind duplicate, dan readiness 100/100 wajib sebelum atomic deployment. S264 tetap aktif; `BUSINESS_READY=false` juga masih menunggu dua studio pilot serta provider canary nyata. |
+| Konflik | Repo knowledge utama lokal tertinggal dan memiliki commit lokal; sinkronisasi dilakukan dari clone bersih origin/main tanpa force atau overwrite. |
+| Error | COYABAG `PRODUCTION_DEPLOYED`, tetapi readiness `20/40`, `ready=false`; provider/COD activation dan business readiness tetap `BLOCKED`. |
+
+## File yang berubah pada sinkronisasi ini (COYABAG shipping/payment operations)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaBook S266 release-path revalidation)
 

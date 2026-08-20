@@ -1,6 +1,6 @@
 # COYABAG Product Knowledge
 
-Updated: 9 Agustus 2026
+Updated: 20 Agustus 2026
 Evidence status: production surfaces + blocked commerce activation
 
 ## Tujuan dokumen
@@ -60,6 +60,18 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
+- Release `20260820-51a29ab` dengan source
+  `51a29abe211af5e663ba49b9844ef1bbc3fe3c66` aktif di Hostinger; rollback
+  langsung `20260820-fd1787a` dipertahankan.
+- Release ini menambahkan destination/quote integrity, payment-to-fulfillment,
+  Delivery Order/AWB/pickup/label foundation, tracking webhook inbox, shipping
+  finance ledger, cancellation/incident/refund workflow, command center, dan
+  customer timeline.
+- Empat migration additive, fresh backup/checksum, dua worker, operational
+  monitor, serta 39 public smoke check desktop/mobile lulus.
+- Readiness production resmi `20/40` atau 50%, `ready=false`, dengan 20
+  blocker. COD, Delivery API, Komerce Payment, dan provider webhook eksplisit
+  tidak diaktifkan.
 - Scheduler terminal expiry sudah fail-closed dan concurrency-tested.
 - Release candidate source `264c6ac2ebec33c6471a4c49572ddcdc82b51cf2`
   merekonsiliasi

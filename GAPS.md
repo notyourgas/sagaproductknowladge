@@ -847,6 +847,17 @@ pada exact kandidat.
 
 ### COYABAG
 
+- `PRODUCTION_DEPLOYED`: exact source
+  `51a29abe211af5e663ba49b9844ef1bbc3fe3c66` aktif sebagai release
+  `20260820-51a29ab`; rollback `20260820-fd1787a` tersedia. Empat migration,
+  backup/checksum, dua worker, monitor, dan 39 public smoke checks lulus.
+  Readiness tetap `20/40`, 50%, `ready=false`.
+
+- `BLOCKED`: credential/entitlement Delivery API dan payment, authenticity
+  webhook shipping, sandbox/controlled-live UAT, COD/insurance/settlement,
+  printer/pickup/kurir, notification delivery, finance sign-off, dan owner UAT.
+  Provider serta COD tetap default-off.
+
 - `PRODUCTION_DEPLOYED`: source
   `264c6ac2ebec33c6471a4c49572ddcdc82b51cf2` aktif sebagai release
   `20260809-264c6ac`; rollback `20260730-33637aa` dipertahankan. Exact-SHA CI,

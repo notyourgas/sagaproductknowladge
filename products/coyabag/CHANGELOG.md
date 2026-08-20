@@ -8,6 +8,23 @@ Mencatat perubahan material COYABAG dengan provenance public-safe.
 
 Surface deployment tidak otomatis berarti commerce activation.
 
+## 2026-08-20 - Shipping/payment operations production deployment
+
+- Exact source `51a29abe211af5e663ba49b9844ef1bbc3fe3c66` aktif sebagai
+  immutable Hostinger release `20260820-51a29ab`; rollback langsung
+  `20260820-fd1787a` tersedia.
+- Destination/quote integrity, paid-to-fulfillment, Delivery Order foundation,
+  pickup/label/tracking, shipping finance, cancellation/incident/refund,
+  command center, dan customer timeline kini `PRODUCTION_DEPLOYED`.
+- Exact-source RC gate, empat migration additive, fresh backup/checksum, dua
+  worker, operational monitor, dan 39 public checks desktop/mobile lulus.
+- Provider dan COD tetap eksplisit default-off. Readiness `20/40`, 50%,
+  `ready=false`, dengan 20 blocker; activation dan business readiness tetap
+  `BLOCKED`.
+- Source project tidak dipush ke GitHub sesuai arahan owner; release provenance
+  menggunakan exact commit lokal, manifest, checksum, revision runtime, dan
+  Hostinger evidence.
+
 ## 2026-08-09 - R5 immutable Node 24 CI supply chain
 
 - Source `b739106018b6a8ddbdccabe3046623ed413ebf5d` memindahkan tiga

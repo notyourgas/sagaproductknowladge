@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-20 - COYABAG shipping/payment operations release sync
+
+- Informasi `CONFIRMED` dari exact runtime release `20260820-51a29ab` dan
+  source `51a29abe211af5e663ba49b9844ef1bbc3fe3c66`.
+- Knowledge mencatat shipping/payment operations, finance/exception workflow,
+  command center, customer timeline, migration/backup/worker/monitor, serta
+  public smoke desktop/mobile.
+- Delivery `PRODUCTION_DEPLOYED`; provider/COD tidak diaktifkan. Readiness
+  `20/40`, 50%, `ready=false`, sehingga activation dan business readiness tetap
+  `BLOCKED`.
+- Dokumen terdampak: COYABAG product/dossier/changelog, portfolio/master,
+  gaps, root changelog, dan sync status.
+
 ## 2026-08-20 - SagaBook S266 release-path revalidation sync
 
 - Informasi `CONFIRMED` dari exact source
