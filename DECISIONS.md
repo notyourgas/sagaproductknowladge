@@ -1210,3 +1210,17 @@ keputusan pengganti.
 | Pemberi keputusan | Andreas / founder |
 | Status | `CONFIRMED / PUSHED / OWNER_UAT_APPROVED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; feature source `26a34eca77d63dfb3eea35678a7b63caed4ebce8`, exact release source `7ac5efd371b83162566120c7c832cb2c25943c71`, release `20260820080539-7ac5efd` |
 | Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [SagaBook Changelog](products/sagabook/CHANGELOG.md), [SagaBook Ledger](products/sagabook/FEATURE_COVERAGE_LEDGER.md) |
+
+## DEC-086 - Area upload Foto Paket harus ringkas dan kontekstual
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-20 |
+| Topik | Penyederhanaan UI/UX upload Foto Paket SagaBook |
+| Keputusan | Area upload menampilkan satu header dan count, satu status yang sesuai state saat ini, satu dropzone utama, hasil upload, serta bantuan singkat. Teks berulang, status pasif yang tidak relevan, dan panduan panjang tidak ditampilkan bersamaan. |
+| Alasan | Founder menilai tampilan sebelumnya terlalu padat, teksnya panjang, dan empat status sekaligus membuat proses upload lebih sulit dipindai. |
+| Alternatif yang dipertimbangkan | Mempertahankan empat kartu status; hanya memendekkan copy tanpa mengubah hierarki; menyembunyikan semua petunjuk; membuat wizard upload terpisah. |
+| Dampak | Form Paket lebih pendek dan satu CTA lebih jelas, sementara batas 10 foto, aturan file, cover pertama, validation, keyboard focus, live status, error placement, dan persistensi upload tetap dipertahankan. Shared upload surfaces memperoleh struktur ringkas yang sama tanpa perubahan backend. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / PUSHED / UIUX_VALIDATED / QA_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; exact source `a6d585eb5627071f3a62c3bef342284598adb751` |
+| Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [SagaBook Changelog](products/sagabook/CHANGELOG.md), [SagaBook Ledger](products/sagabook/FEATURE_COVERAGE_LEDGER.md) |

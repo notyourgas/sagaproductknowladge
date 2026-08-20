@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 20 Agustus 2026 15:15 WIB
-Evidence status: S263 production activated and independently verified; business readiness pending
+Updated: 20 Agustus 2026 15:32 WIB
+Evidence status: S264 upload UI locally validated; production remains S263; business readiness pending
 
 ## Tujuan dokumen
 
@@ -15,6 +15,19 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- Candidate S264 exact source `a6d585eb5627071f3a62c3bef342284598adb751`
+  berstatus `CONFIRMED / PUSHED / UIUX_VALIDATED / QA_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Area Foto Paket kini memakai satu judul dan satu
+  hitungan, satu status kontekstual, dropzone ringkas, serta dua petunjuk pendek;
+  empat kartu state pasif, label ganda, dan tiga blok panduan berulang dihapus.
+  Copy dipadatkan menjadi “Tampil sebagai galeri di halaman booking”, “Pilih
+  Foto”, dan “Belum ada foto”; foto pertama tetap menjadi cover. Fokus keyboard,
+  live status, angka tabular, error dekat aksi, batas 10 file, format, dan
+  validasi upload dipertahankan. Build 5.132 modul, design audit 26/0, browser
+  Paket tanpa overflow, shared upload surfaces 3/3, serta E2E upload dua foto dan
+  reload 1/1 lulus. API, database, tenant, permission, asset persistence, dan
+  production tidak berubah; S263 `20260820080539-7ac5efd` tetap aktif.
 
 - S263 feature source `26a34eca77d63dfb3eea35678a7b63caed4ebce8`
   dan exact release source `7ac5efd371b83162566120c7c832cb2c25943c71`

@@ -1,5 +1,21 @@
 # SagaBook Changelog
 
+## 2026-08-20 - Simplified package photo upload UI S264 candidate
+
+- Founder meminta area Foto Paket lebih sederhana, singkat, dan efisien.
+  Exact source `a6d585eb5627071f3a62c3bef342284598adb751` sudah dipush.
+- Before: judul/count muncul dua kali, empat kemungkinan status tampil
+  bersamaan, empty panel mengulang konteks, dan tiga blok panduan membuat form
+  panjang. After: satu header/count, satu status kontekstual, dropzone ringkas,
+  grid foto, serta dua petunjuk pendek.
+- Copy utama menjadi “Tampil sebagai galeri di halaman booking”, “Pilih Foto”,
+  “Belum ada foto”, dan penjelasan bahwa foto pertama menjadi cover. Keyboard
+  focus, live status, error placement, batas 10 foto, validasi, dan persistensi
+  tetap dipertahankan.
+- Build 5.132 modul, design 26/0, browser Paket 1/1, shared surfaces 3/3, dan
+  upload-persist E2E 1/1 lulus. Status `PUSHED / UIUX_VALIDATED / QA_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap S263.
+
 ## 2026-08-20 - Production package booking display order S263
 
 - Informasi `CONFIRMED` dari keputusan Andreas dan exact source

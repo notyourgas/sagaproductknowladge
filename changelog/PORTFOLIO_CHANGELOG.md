@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-20 - SagaBook S264 simplified upload UI candidate
+
+- Exact source `a6d585eb5627071f3a62c3bef342284598adb751` menyederhanakan
+  Foto Paket menjadi satu header/count, satu state kontekstual, dropzone ringkas,
+  grid hasil, dan dua petunjuk pendek.
+- Duplikasi label, empat kartu state pasif, serta tiga blok panduan berulang
+  dihapus; batas 10 foto, validasi, cover pertama, keyboard focus, live status,
+  dan persistensi tetap sama.
+- Build 5.132, design 26/0, browser Paket, tiga shared upload surfaces, serta
+  E2E upload/reload lulus. Status `PUSHED / UIUX_VALIDATED / QA_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; SagaBook production tetap S263 dan produk lain
+  tidak berubah.
+
 ## 2026-08-20 - SagaBook S263 package ordering production
 
 - Exact source `26a34eca77d63dfb3eea35678a7b63caed4ebce8` menambahkan

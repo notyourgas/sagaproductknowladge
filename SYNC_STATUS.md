@@ -12,14 +12,26 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-20T15:15:00+07:00 |
-| Branch aktif | `codex/s263-sagabook-package-order-knowledge` pada worktree baru exact baseline `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-20T15:32:00+07:00 |
+| Branch aktif | `codex/s264-sagabook-upload-ui-knowledge` pada worktree baru exact baseline `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `e778cbe` |
-| Informasi terakhir disinkronkan | SagaBook S263 package ordering production activation, exact release, rollback, backup/restore, migration rehearsal, dan independent verifier. |
+| Baseline sebelum pembaruan | `9a943fe` |
+| Informasi terakhir disinkronkan | SagaBook S264 simplified Foto Paket upload UI candidate, source provenance, accessibility, dan local browser validation. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
 | Konflik | Sinkronisasi dibangun pada worktree baru exact `origin/main`; checkout utama yang divergen dan commit lokalnya tidak disentuh. |
-| Error | Tidak ada blocker release. Keterbatasan ruang D: pada restore disposable ditangani dengan lokasi sementara C: dan backup yang sama lulus 3/3; production tidak disentuh saat gate gagal. `BUSINESS_READY=false` masih menunggu dua studio pilot serta provider canary nyata. |
+| Error | Tidak ada blocker lokal. S264 belum production dan menunggu owner UAT/release approval; S263 tetap aktif. `BUSINESS_READY=false` masih menunggu dua studio pilot serta provider canary nyata. |
+
+## File yang berubah pada sinkronisasi ini (SagaBook S264 simplified upload UI)
+
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `DECISIONS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaBook S263 package ordering)
 
