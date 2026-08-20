@@ -12,14 +12,26 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-20T17:30:00+07:00 |
-| Branch aktif | `main` pada clone bersih exact baseline `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-20T17:38:00+07:00 |
+| Branch aktif | `codex/s265-sagabook-service-fee-knowledge` pada worktree exact baseline `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `2438f6f` |
-| Informasi terakhir disinkronkan | COYABAG release `20260820-51a29ab`, shipping/payment operations, runtime acceptance, dan activation blockers. |
+| Baseline sebelum pembaruan | `87f1832` |
+| Informasi terakhir disinkronkan | SagaBook S265 production activation, scoped Fonnte release exception, rollback, verifier, dan residual readiness. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
-| Konflik | Repo knowledge utama lokal tertinggal dan memiliki commit lokal; sinkronisasi dilakukan dari clone bersih origin/main tanpa force atau overwrite. |
-| Error | COYABAG `PRODUCTION_DEPLOYED`, tetapi readiness `20/40`, `ready=false`; provider/COD activation dan business readiness tetap `BLOCKED`. |
+| Konflik | Tidak ada. Worktree di-fast-forward ke `origin/main` terbaru agar sinkronisasi COYABAG tetap utuh; checkout utama tidak disentuh. |
+| Error | SagaBook S265 `PRODUCTION_ACTIVATED`, tetapi Fonnte platform-managed masih disconnected dan satu notifikasi verifikasi pembayaran tetap gagal. Readiness 80/100 dan `BUSINESS_READY=false`; exception owner-approved tidak mengubah status provider. |
+
+## File yang berubah pada sinkronisasi ini (SagaBook S265 production activation)
+
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `DECISIONS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## File yang berubah pada sinkronisasi ini (COYABAG shipping/payment operations)
 

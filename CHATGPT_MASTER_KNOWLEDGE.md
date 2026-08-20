@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 20 Agustus 2026 17:15 WIB
+Evidence cut-off: 20 Agustus 2026 17:38 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -10,23 +10,24 @@ IMPLEMENTED_NOT_DEPLOYED`. Bundler kandidat release mengulang validasi
 reparse-point dan volume root pada output, staging, serta source parent tepat
 sebelum write/copy dan sesudah copy. Focused contract 16/16, full backend
 1.055/1.055, build 5.132, parser/formatter, serta audit dependency lulus. Ini
-hardening tooling, bukan fitur customer; production tetap S264.
+hardening tooling, bukan fitur customer; tooling S266 belum dideploy dan
+production saat ini S265.
 
 SagaBook S265 feature source `63b17f9a6af5437e663db265a3f1f2c6305a4ce5`
-dan exact release source `d46d48514a5b13f742325d03d531b1e898ace9a5`
+dan exact release source `5a4e24fa67d28ab0e15c7d8110d7742f26d875a0`
 berstatus `PUSHED / OWNER_UAT_APPROVED / UIUX_VALIDATED / QA_VALIDATED /
-RELEASE_GATE_PARTIAL / RELEASE_BLOCKED / IMPLEMENTED_NOT_DEPLOYED`. Customer
+SECURITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Customer
 melihat satu `Biaya layanan` gabungan dan
 total QRIS; rincian SagaDev/provider serta paragraf penjelasan tidak dirender.
 Split internal tetap authoritative untuk ledger, settlement, dan audit. API,
 database, fee calculation, dan payment flow tidak berubah. Settlement 19/19,
 browser mobile/desktop 4/4, build 5.132, design 26/0, dan visual lulus. Registry
-`1.12.2` dan backup terenkripsi/offsite/restore disposable lulus. Readiness
-production 80/100 karena koneksi Fonnte platform-managed terputus dan satu
-notifikasi verifikasi pembayaran telah menghabiskan retry; activation tidak
-dicoba. Setelah reconnect, notifikasi harus ditangani tanpa blind duplicate dan
-readiness wajib 100/100 sebelum atomic deploy. Production tetap S264; jangan
-mengklaim S265 deployed atau activated.
+`1.12.2`, backup terenkripsi/offsite/restore disposable, atomic activation, dan
+verifier 17/17 lulus. Release `20260820103024-5a4e24f` aktif dengan rollback
+`20260820084829-6d89fc1`. Founder-approved exception hanya menerima satu failed
+job Fonnte sebagai satu-satunya failed smoke check. Fonnte masih disconnected
+dan notifikasi gagal tetap residual tanpa blind retry/delete; readiness 80/100
+dan `BUSINESS_READY=false`. Jangan mengklaim provider sehat.
 
 SagaBook S264 feature source `a6d585eb5627071f3a62c3bef342284598adb751`
 dan exact release source `6d89fc14649f48886f38d39f66580a36e2784552`

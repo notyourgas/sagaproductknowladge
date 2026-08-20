@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-20 - SagaBook S265 combined service-fee production
+
+- Exact release source `5a4e24fa67d28ab0e15c7d8110d7742f26d875a0`
+  aktif sebagai `20260820103024-5a4e24f`, rollback S264
+  `20260820084829-6d89fc1`.
+- Backup/restore terenkripsi, full gate, atomic activation, verifier 17/17,
+  public smoke 3/3, dan security header 3/3 lulus. Founder-approved exception
+  dibatasi pada satu failed job Fonnte sebagai satu-satunya failed smoke check.
+- Customer kini melihat satu `Biaya layanan` gabungan. Fonnte tetap residual,
+  readiness 80/100, dan `BUSINESS_READY=false`; produk lain tidak berubah.
+
 ## 2026-08-20 - COYABAG shipping/payment operations production
 
 - Source `51a29abe211af5e663ba49b9844ef1bbc3fe3c66` aktif sebagai
@@ -22,7 +33,8 @@
   parser/formatter, dan audit dependency lulus. Perubahan hanya pada tooling
   SagaBook; produk lain dan production tidak berubah.
 - Status `PUSHED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED`; SagaBook production tetap S264.
+  IMPLEMENTED_NOT_DEPLOYED`; tooling S266 belum dideploy dan SagaBook
+  production saat ini S265.
 
 ## 2026-08-20 - SagaBook S265 combined service-fee release blocked
 

@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 20 Agustus 2026 17:15 WIB
-Evidence status: S265 release gate blocked before activation; production remains S264; business readiness pending
+Updated: 20 Agustus 2026 17:38 WIB
+Evidence status: S265 production activated with a scoped Fonnte exception; business readiness pending
 
 ## Tujuan dokumen
 
@@ -26,27 +26,29 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   contract 16/16 (240 assertion), full backend 1.055/1.055 (12.050), build
   5.132 modul, parser PowerShell, Pint, serta audit npm/Composer nol temuan
   lulus. Ini hardening tooling, bukan fitur customer; UI, API, database,
-  workflow, dan production tidak berubah. S264 tetap aktif.
+  workflow, dan production tidak berubah. Tooling S266 sendiri belum
+  dideploy; production saat ini adalah S265.
 
-- Candidate S265 feature source `63b17f9a6af5437e663db265a3f1f2c6305a4ce5`
-  dan exact release source `d46d48514a5b13f742325d03d531b1e898ace9a5`
+- S265 feature source `63b17f9a6af5437e663db265a3f1f2c6305a4ce5`
+  dan exact release source `5a4e24fa67d28ab0e15c7d8110d7742f26d875a0`
   berstatus `CONFIRMED / PUSHED / OWNER_UAT_APPROVED / UIUX_VALIDATED /
-  QA_VALIDATED / RELEASE_GATE_PARTIAL / RELEASE_BLOCKED /
-  IMPLEMENTED_NOT_DEPLOYED`. Customer kini melihat satu baris `Biaya layanan`
+  QA_VALIDATED / SECURITY_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`. Customer kini melihat satu baris `Biaya layanan`
   yang merupakan selisih nominal final dengan subtotal booking, bukan rincian
   persentase SagaDev dan biaya provider. Paragraf penjelasan berulang dihapus;
   `Total dibayar via QRIS` tetap terlihat. Split internal provider dan SagaDev
   tetap dipertahankan untuk ledger, settlement, dan audit. Focused settlement
   19/19 (173 assertion), browser mobile/desktop 4/4, build 5.132 modul, design
   audit 26/0, visual baseline, serta no-overflow lulus. Registry `1.12.2` dan
-  backup terenkripsi `20260820T101121Z` dengan checksum, offsite round-trip,
-  serta restore disposable tiga database juga lulus. Activation tidak dicoba
-  karena readiness production fail-closed: koneksi Fonnte platform-managed
-  terputus dan satu notifikasi verifikasi pembayaran telah menghabiskan retry.
-  Perangkat harus tersambung kembali, notifikasi gagal harus ditangani tanpa
-  duplikasi, lalu readiness wajib 100/100 sebelum atomic deploy. Tidak ada
-  perubahan API, database, fee calculation, payment flow, atau production;
-  S264 `20260820084829-6d89fc1` tetap aktif.
+  backup terenkripsi `20260820T102608Z` dengan checksum, offsite round-trip,
+  serta restore disposable tiga database lulus. Founder menyetujui release
+  exception yang hanya menerima satu kegagalan `failed_jobs_24h`; kegagalan
+  smoke lain tetap fail-closed. Atomic activation dan verifier independen
+  17/17 lulus, termasuk public smoke 3/3 serta security header 3/3. Release
+  aktif `20260820103024-5a4e24f` dengan rollback S264
+  `20260820084829-6d89fc1`. Koneksi Fonnte platform-managed dan satu notifikasi
+  verifikasi pembayaran gagal tetap residual; tidak ada retry atau penghapusan
+  otomatis. Readiness tetap 80/100 dan `BUSINESS_READY=false`.
 
 - S264 feature source `a6d585eb5627071f3a62c3bef342284598adb751`
   dan exact release source `6d89fc14649f48886f38d39f66580a36e2784552`

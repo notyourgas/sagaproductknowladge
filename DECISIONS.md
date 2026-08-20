@@ -1236,5 +1236,19 @@ keputusan pengganti.
 | Alternatif yang dipertimbangkan | Tetap menampilkan dua fee; mengganti nama provider saja; menyembunyikan seluruh fee dan hanya menampilkan total. |
 | Dampak | Hierarki pembayaran lebih ringkas tanpa mengubah calculation, jumlah yang dibayar, ledger, settlement, audit, API, database, atau payment flow. |
 | Pemberi keputusan | Andreas / founder |
-| Status | `CONFIRMED / PUSHED / OWNER_UAT_APPROVED / UIUX_VALIDATED / QA_VALIDATED / RELEASE_GATE_PARTIAL / RELEASE_BLOCKED / IMPLEMENTED_NOT_DEPLOYED`; feature source `63b17f9a6af5437e663db265a3f1f2c6305a4ce5`, exact release source `d46d48514a5b13f742325d03d531b1e898ace9a5`; activation menunggu reconnect Fonnte platform-managed, penanganan aman notifikasi verifikasi pembayaran yang gagal, dan readiness 100/100 |
+| Status | `CONFIRMED / PUSHED / OWNER_UAT_APPROVED / UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; feature source `63b17f9a6af5437e663db265a3f1f2c6305a4ce5`, exact release source `5a4e24fa67d28ab0e15c7d8110d7742f26d875a0`, release `20260820103024-5a4e24f` |
+| Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [SagaBook Changelog](products/sagabook/CHANGELOG.md), [SagaBook Ledger](products/sagabook/FEATURE_COVERAGE_LEDGER.md) |
+
+## DEC-088 - Release S265 boleh melewati satu failed job Fonnte secara terbatas
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-20 |
+| Topik | Pengecualian release gate Fonnte SagaBook S265 |
+| Keputusan | Founder mengizinkan release S265 dilanjutkan meskipun Fonnte platform-managed disconnected, hanya bila tepat satu `failed_jobs_24h` menjadi satu-satunya failed smoke check. Exception harus tertulis di evidence; check lain, perubahan jumlah, atau scope berbeda tetap menghentikan atau me-rollback deploy. |
+| Alasan | Perubahan S265 hanya pada presentasi biaya layanan dan founder menerima sementara bahwa notifikasi WhatsApp terkait belum sehat. |
+| Alternatif yang dipertimbangkan | Menunggu reconnect Fonnte; menghapus failed job; retry otomatis; melewati seluruh smoke gate. |
+| Dampak | S265 dapat diaktifkan tanpa menghapus audit atau melakukan blind retry. Fonnte dan notifikasi gagal tetap residual, readiness 80/100, dan `BUSINESS_READY=false`; exception bukan bukti provider sehat. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / IMPLEMENTED / PRODUCTION_ACTIVATED`; exact release source `5a4e24fa67d28ab0e15c7d8110d7742f26d875a0`, release `20260820103024-5a4e24f` |
 | Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [SagaBook Changelog](products/sagabook/CHANGELOG.md), [SagaBook Ledger](products/sagabook/FEATURE_COVERAGE_LEDGER.md) |

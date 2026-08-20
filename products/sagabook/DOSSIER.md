@@ -7,12 +7,12 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 20 Agustus 2026 17:15 WIB
+- Updated: 20 Agustus 2026 17:38 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
-- Activation: `PRODUCTION_ACTIVATED`; current release S264
-  `20260820084829-6d89fc1`, exact release source
-  `6d89fc14649f48886f38d39f66580a36e2784552`, rollback langsung
-  `20260820080539-7ac5efd`, dan verifier independen 17/17 termasuk HTTP 3/3
+- Activation: `PRODUCTION_ACTIVATED`; current release S265
+  `20260820103024-5a4e24f`, exact release source
+  `5a4e24fa67d28ab0e15c7d8110d7742f26d875a0`, rollback langsung S264
+  `20260820084829-6d89fc1`, dan verifier independen 17/17 termasuk HTTP 3/3
   serta security profile 3/3
 - Business readiness: `NEEDS CONFIRMATION`
 - Release tooling S266 exact `253c4e0b497a07ead472643b827d405538343ed7`:
@@ -23,12 +23,12 @@ dalam satu dokumen public-safe.
   pada setiap guard gagal tertutup. Focused release contract 16/16 (240), full
   backend 1.055/1.055 (12.050), build 5.132, parser PowerShell, Pint, npm audit,
   dan Composer audit lulus. Tidak ada perubahan UI, API, schema, data, tenant,
-  payment, provider, atau production; S264 tetap aktif.
+  payment atau provider. Tooling S266 belum dideploy; production saat ini S265.
 - Combined service-fee UI S265 feature source
   `63b17f9a6af5437e663db265a3f1f2c6305a4ce5` dan exact release source
-  `d46d48514a5b13f742325d03d531b1e898ace9a5`: `CONFIRMED / PUSHED /
-  OWNER_UAT_APPROVED / UIUX_VALIDATED / QA_VALIDATED / RELEASE_GATE_PARTIAL /
-  RELEASE_BLOCKED / IMPLEMENTED_NOT_DEPLOYED`. Ringkasan customer
+  `5a4e24fa67d28ab0e15c7d8110d7742f26d875a0`: `CONFIRMED / PUSHED /
+  OWNER_UAT_APPROVED / UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Ringkasan customer
   menggabungkan service fee SagaDev dan provider menjadi satu `Biaya layanan`
   berdasarkan selisih customer payable dengan booking amount; total QRIS tetap
   eksplisit. Nama SagaDev, persentase, nama provider, status fee provider, dan
@@ -36,11 +36,12 @@ dalam satu dokumen public-safe.
   settlement dan audit tetap authoritative. Focused backend 19/19 (173),
   browser known/unknown provider mobile-desktop 4/4, build 5.132, design 26/0,
   screenshot, serta no-overflow lulus. Registry `1.12.2`; backup terenkripsi
-  `20260820T101121Z`, offsite round-trip, dan restore disposable tiga database
-  lulus. Activation tidak dicoba karena provider Fonnte platform-managed
-  berstatus disconnected dan satu notifikasi verifikasi pembayaran telah
-  menghabiskan retry. Reconnect, penanganan aman tanpa blind duplicate, dan
-  readiness 100/100 wajib mendahului atomic deploy. Production tetap S264.
+  `20260820T102608Z`, offsite round-trip, dan restore disposable tiga database
+  lulus. Founder menyetujui exception sempit hanya untuk satu failed job Fonnte;
+  contract menolak exception bila ada check lain gagal atau jumlahnya berubah.
+  Atomic activation dan verifier 17/17 lulus. Fonnte masih disconnected dan
+  satu notifikasi verifikasi pembayaran tetap gagal tanpa blind retry/delete;
+  readiness 80/100 dan `BUSINESS_READY=false`. Production aktif S265.
 - Upload UI S264 feature source
   `a6d585eb5627071f3a62c3bef342284598adb751` dan exact release source
   `6d89fc14649f48886f38d39f66580a36e2784552`: `CONFIRMED / PUSHED /

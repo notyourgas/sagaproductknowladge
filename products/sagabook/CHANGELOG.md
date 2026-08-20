@@ -1,5 +1,22 @@
 # SagaBook Changelog
 
+## 2026-08-20 - Combined customer service-fee UI S265 production
+
+- Andreas menyetujui release dilanjutkan dengan pengecualian Fonnte. Exact
+  release source `5a4e24fa67d28ab0e15c7d8110d7742f26d875a0` membatasi
+  exception hanya ketika satu `failed_jobs_24h` adalah satu-satunya check smoke
+  yang gagal; check lain atau perubahan jumlah tetap menghentikan/rollback.
+- Backup terenkripsi `20260820T102608Z`, checksum, offsite round-trip, restore
+  disposable tiga database, full test/build/dependency gate, atomic activation,
+  dan verifier independen 17/17 lulus. Public smoke dan security header 3/3.
+- Release aktif `20260820103024-5a4e24f`; rollback langsung S264
+  `20260820084829-6d89fc1`. Status `PUSHED / OWNER_UAT_APPROVED /
+  UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`.
+- Fonnte platform-managed masih disconnected dan satu notifikasi verifikasi
+  pembayaran tetap gagal tanpa blind retry/delete. Readiness 80/100 dan
+  `BUSINESS_READY=false`; exception tidak boleh diklaim sebagai provider sehat.
+
 ## 2026-08-20 - Release artifact path revalidation S266
 
 - Exact source `253c4e0b497a07ead472643b827d405538343ed7` sudah dipush.
@@ -14,7 +31,7 @@
   lulus. Check-only pada dua drive satu disk tetap gagal tertutup tanpa mutasi.
 - Status `PUSHED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
   IMPLEMENTED_NOT_DEPLOYED`. UI, API, database, data tenant, dan production
-  tidak berubah; S265 terpisah diblokir pada readiness dan S264 tetap aktif.
+  tidak berubah; tooling S266 belum dideploy dan production S265 aktif.
 
 ## 2026-08-20 - Combined customer service-fee UI S265 release blocked
 

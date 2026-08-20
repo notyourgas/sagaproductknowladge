@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-20 - SagaBook S265 combined service-fee production sync
+
+- Informasi `CONFIRMED` dari arahan/exception approval Andreas dan exact release
+  source `5a4e24fa67d28ab0e15c7d8110d7742f26d875a0`.
+- Knowledge mencatat activation `20260820103024-5a4e24f`, rollback S264,
+  backup/restore, verifier 17/17, dan batas exception hanya untuk satu failed job
+  Fonnte sebagai satu-satunya failed smoke check.
+- Delivery `PUSHED / OWNER_UAT_APPROVED / UIUX_VALIDATED / QA_VALIDATED /
+  SECURITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
+- Fonnte/notifikasi gagal tetap residual; readiness 80/100 dan
+  `BUSINESS_READY=false`. Dokumen terdampak: SagaBook product/dossier/changelog/
+  coverage, portfolio/master, founder decisions, root changelog, dan sync.
+
 ## 2026-08-20 - COYABAG shipping/payment operations release sync
 
 - Informasi `CONFIRMED` dari exact runtime release `20260820-51a29ab` dan

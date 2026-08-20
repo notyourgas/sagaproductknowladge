@@ -1,6 +1,6 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 20 Agustus 2026 17:15 WIB
+Evidence cut-off: 20 Agustus 2026 17:38 WIB
 
 S266 exact source `253c4e0b497a07ead472643b827d405538343ed7` telah
 `CONFIRMED / PUSHED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
@@ -12,12 +12,12 @@ pada setiap guard gagal tertutup; metadata publik menandai
 assertion), full backend 1.055/1.055 (12.050), build 5.132, parser PowerShell,
 Pint, dan audit dependency nol temuan lulus. Check-only dua drive pada disk
 fisik sama tetap menolak tanpa mutasi. Tidak ada perubahan UI, API, database,
-tenant, workflow, atau runtime; production tetap S264.
+tenant, workflow, atau runtime. Tooling S266 belum dideploy; production S265.
 
 S265 feature source `63b17f9a6af5437e663db265a3f1f2c6305a4ce5` dan exact
-release source `d46d48514a5b13f742325d03d531b1e898ace9a5` telah
+release source `5a4e24fa67d28ab0e15c7d8110d7742f26d875a0` telah
 `CONFIRMED / PUSHED / OWNER_UAT_APPROVED / UIUX_VALIDATED / QA_VALIDATED /
-RELEASE_GATE_PARTIAL / RELEASE_BLOCKED / IMPLEMENTED_NOT_DEPLOYED`. Ringkasan
+SECURITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Ringkasan
 pembayaran customer menampilkan satu
 `Biaya layanan` sebesar selisih nominal final dan subtotal booking, lalu total
 QRIS; rincian SagaDev/provider dan paragraf penjelasan dihapus. Split internal,
@@ -26,12 +26,13 @@ berubah. Browser mengunci nominal gabungan pada provider fee known maupun
 unknown, memastikan copy lama tidak kembali, dan lulus mobile/desktop 4/4 tanpa
 overflow. Settlement 19/19 (173 assertion), build 5.132, design 26/0, serta
 visual baseline lulus. Registry `1.12.2` dan backup terenkripsi
-`20260820T101121Z` beserta offsite round-trip serta restore disposable tiga
-database lulus. Activation tidak dicoba: Fonnte platform-managed disconnected
-dan satu notifikasi verifikasi pembayaran telah menghabiskan retry, sehingga
-readiness production 80/100. Reconnect, penyelesaian notifikasi tanpa blind
-duplicate, dan readiness 100/100 menjadi release gate. Production tetap S264
-`20260820084829-6d89fc1`.
+`20260820T102608Z` beserta offsite round-trip serta restore disposable tiga
+database lulus. Owner-approved exception hanya menerima satu failed job Fonnte
+sebagai satu-satunya failed smoke check; semua gate lain tetap fail-closed.
+Release `20260820103024-5a4e24f` aktif dengan rollback
+`20260820084829-6d89fc1`; verifier 17/17, smoke 3/3, dan security 3/3 lulus.
+Fonnte disconnected dan notifikasi gagal tetap residual tanpa retry/delete;
+readiness 80/100 dan `BUSINESS_READY=false`.
 
 S264 feature source `a6d585eb5627071f3a62c3bef342284598adb751` dan exact
 release source `6d89fc14649f48886f38d39f66580a36e2784552` telah `CONFIRMED /
