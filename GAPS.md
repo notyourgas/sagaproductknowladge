@@ -57,6 +57,14 @@ pada exact kandidat.
 
 ### SagaBook
 
+- `TODO / HOST STORAGE NO_GO`: S267 exact
+  `ad1285cf9d02fb700e2b952ba736698580e9e2a5` menyediakan runbook pemulihan
+  public-safe setelah kapasitas host mengganggu disposable restore. Volume
+  aktual yang dipakai pipeline masih di bawah floor existing 2 GiB. Jangan
+  memulai release baru atau cleanup otomatis. Tutup gap dengan inventory target
+  eksplisit, pemulihan ruang tanpa menyentuh backup/data/provenance, lalu
+  otomatisasi preflight fail-closed pada slice terpisah.
+
 - `NOT AUTHORIZED / NOT EXECUTED`: S253 exact
   `e172a7c5c474a27be1d10ed66897c0b72e018e21` sudah menyediakan kontrak
   booking-payment provider canary yang terpisah dari subscription. Eksekusi

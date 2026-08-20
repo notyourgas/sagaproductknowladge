@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-20 - SagaBook S267 host-storage recovery sync
+
+- Informasi `CONFIRMED` dari exact source
+  `ad1285cf9d02fb700e2b952ba736698580e9e2a5` yang sudah dipush.
+- Knowledge mencatat before/after runbook recovery, floor existing, batas
+  cleanup, validation, dan status host `NO_GO`.
+- Delivery `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+  SagaBook tetap S265 dan `BUSINESS_READY=false`.
+- Dokumen terdampak: SagaBook product/dossier/changelog/coverage,
+  portfolio/master, gaps, root changelog, dan sync status.
+
 ## 2026-08-20 - SagaBook S265 combined service-fee production sync
 
 - Informasi `CONFIRMED` dari arahan/exception approval Andreas dan exact release

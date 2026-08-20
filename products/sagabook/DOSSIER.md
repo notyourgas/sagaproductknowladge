@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 20 Agustus 2026 17:38 WIB
+- Updated: 20 Agustus 2026 21:04 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED`; current release S265
   `20260820103024-5a4e24f`, exact release source
@@ -15,6 +15,14 @@ dalam satu dokumen public-safe.
   `20260820084829-6d89fc1`, dan verifier independen 17/17 termasuk HTTP 3/3
   serta security profile 3/3
 - Business readiness: `NEEDS CONFIRMATION`
+- Host-storage recovery S267 exact
+  `ad1285cf9d02fb700e2b952ba736698580e9e2a5`: `CONFIRMED / PUSHED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Runbook operator menetapkan
+  freeze sebelum pemeriksaan, inventaris read-only, perlindungan backup/data/
+  provenance, cleanup target eksplisit bertahap, floor existing 2 GiB, dan
+  rerun backup/restore dari awal setelah kegagalan kapasitas. Contract 10/10
+  serta scan destructive-command lulus. Host tetap `NO_GO` sampai volume
+  pipeline memenuhi kebutuhan; production S265 tidak berubah.
 - Release tooling S266 exact `253c4e0b497a07ead472643b827d405538343ed7`:
   `CONFIRMED / PUSHED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
   IMPLEMENTED_NOT_DEPLOYED`. Setelah preflight awal, bundler memvalidasi ulang

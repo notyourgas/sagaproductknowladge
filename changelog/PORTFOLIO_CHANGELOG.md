@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-08-20 - SagaBook S267 release host storage recovery
+
+- Exact source `ad1285cf9d02fb700e2b952ba736698580e9e2a5` menambahkan
+  runbook recovery kapasitas host dengan freeze, inventory read-only,
+  perlindungan backup/data/provenance, dan gate resume release.
+- Contract 10/10 serta destructive-command scan lulus. Status `PUSHED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; host masih `NO_GO`, cleanup
+  otomatis tidak dilakukan, production S265 dan produk lain tidak berubah.
+
 ## 2026-08-20 - SagaBook S265 combined service-fee production
 
 - Exact release source `5a4e24fa67d28ab0e15c7d8110d7742f26d875a0`

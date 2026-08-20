@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 20 Agustus 2026 17:38 WIB
-Evidence status: S265 production activated with a scoped Fonnte exception; business readiness pending
+Updated: 20 Agustus 2026 21:04 WIB
+Evidence status: S267 host-storage recovery runbook pushed; S265 production active; business readiness pending
 
 ## Tujuan dokumen
 
@@ -15,6 +15,16 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- S267 exact source `ad1285cf9d02fb700e2b952ba736698580e9e2a5`
+  berstatus `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Runbook operator baru mengunci freeze,
+  inventaris read-only, klasifikasi target dilindungi/recoverable, urutan
+  pemulihan bertahap, serta gate resume release setelah kapasitas host tidak
+  memenuhi floor existing 2 GiB. Contract dokumen 10/10 dan scan perintah
+  destruktif lulus. Runbook tidak melakukan atau mengotorisasi cleanup
+  otomatis. Kapasitas host release masih `NO_GO`; production S265 tidak
+  berubah.
 
 - S266 exact source `253c4e0b497a07ead472643b827d405538343ed7`
   berstatus `CONFIRMED / PUSHED / QA_VALIDATED / SECURITY_VALIDATED /

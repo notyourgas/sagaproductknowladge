@@ -1,6 +1,16 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 20 Agustus 2026 17:38 WIB
+Evidence cut-off: 20 Agustus 2026 21:04 WIB
+
+S267 exact source `ad1285cf9d02fb700e2b952ba736698580e9e2a5` telah
+`CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Runbook
+recovery host release mendokumentasikan freeze, inventaris read-only,
+perlindungan backup/data/provenance, klasifikasi recoverable, cleanup bertahap
+target eksplisit, floor existing 2 GiB, rerun backup/restore, dan evidence
+public-safe. Contract 10/10 serta destructive-command scan lulus. Dokumen tidak
+melakukan cleanup atau mutation; host tetap `NO_GO` sampai semua volume aktual
+pipeline memenuhi kebutuhan. UI, API, database, tenant, workflow, dan
+production tidak berubah; S265 tetap aktif.
 
 S266 exact source `253c4e0b497a07ead472643b827d405538343ed7` telah
 `CONFIRMED / PUSHED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /

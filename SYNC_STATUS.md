@@ -12,14 +12,26 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-20T17:38:00+07:00 |
-| Branch aktif | `codex/s265-sagabook-service-fee-knowledge` pada worktree exact baseline `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-20T21:04:00+07:00 |
+| Branch aktif | `codex/s267-sagabook-release-host-storage-recovery-knowledge` pada worktree exact baseline `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `87f1832` |
-| Informasi terakhir disinkronkan | SagaBook S265 production activation, scoped Fonnte release exception, rollback, verifier, dan residual readiness. |
+| Baseline sebelum pembaruan | `71ce741` |
+| Informasi terakhir disinkronkan | SagaBook S267 release-host storage recovery runbook, source provenance, validation, dan residual host NO_GO. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
-| Konflik | Tidak ada. Worktree di-fast-forward ke `origin/main` terbaru agar sinkronisasi COYABAG tetap utuh; checkout utama tidak disentuh. |
-| Error | SagaBook S265 `PRODUCTION_ACTIVATED`, tetapi Fonnte platform-managed masih disconnected dan satu notifikasi verifikasi pembayaran tetap gagal. Readiness 80/100 dan `BUSINESS_READY=false`; exception owner-approved tidak mengubah status provider. |
+| Konflik | Tidak ada. Sinkronisasi dibangun dari exact `origin/main`; perubahan produk lain tetap utuh. |
+| Error | Host release masih `NO_GO` karena volume pipeline belum memenuhi floor existing; jangan memulai release baru. Production S265 tetap aktif. Fonnte masih residual dan `BUSINESS_READY=false`. |
+
+## File yang berubah pada sinkronisasi ini (SagaBook S267 host-storage recovery)
+
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaBook S265 production activation)
 

@@ -1,5 +1,21 @@
 # SagaBook Changelog
 
+## 2026-08-20 - Release host storage recovery runbook S267
+
+- Exact source `ad1285cf9d02fb700e2b952ba736698580e9e2a5` sudah dipush.
+- Before: kapasitas host release sempat membuat disposable MySQL gagal sebelum
+  receipt terbentuk dan belum ada satu runbook khusus yang membedakan target
+  dilindungi dari file recoverable. After: operator mempunyai freeze,
+  inventaris read-only, klasifikasi target, langkah pemulihan kecil, gate
+  resume, evidence public-safe, dan handoff otomatisasi.
+- Floor existing 2 GiB dipertahankan sebagai minimum, bukan jaminan semua
+  pipeline. Backup, receipt, data customer, active/rollback artifact, dirty
+  worktree, serta perubahan agent lain tidak boleh dihapus. Cleanup otomatis
+  tidak diizinkan.
+- Contract dokumen 10/10 dan scan destructive-command lulus. Status
+  `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; kapasitas host tetap
+  `NO_GO`, UI/API/database tidak berubah, dan production S265 tetap aktif.
+
 ## 2026-08-20 - Combined customer service-fee UI S265 production
 
 - Andreas menyetujui release dilanjutkan dengan pengecualian Fonnte. Exact
