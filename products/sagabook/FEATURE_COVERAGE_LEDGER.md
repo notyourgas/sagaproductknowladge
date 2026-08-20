@@ -1,6 +1,6 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 20 Agustus 2026 17:14 WIB
+Evidence cut-off: 20 Agustus 2026 17:15 WIB
 
 S266 exact source `253c4e0b497a07ead472643b827d405538343ed7` telah
 `CONFIRMED / PUSHED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
@@ -14,16 +14,24 @@ Pint, dan audit dependency nol temuan lulus. Check-only dua drive pada disk
 fisik sama tetap menolak tanpa mutasi. Tidak ada perubahan UI, API, database,
 tenant, workflow, atau runtime; production tetap S264.
 
-S265 exact source `63b17f9a6af5437e663db265a3f1f2c6305a4ce5` telah
-`CONFIRMED / PUSHED / UIUX_VALIDATED / QA_VALIDATED /
-IMPLEMENTED_NOT_DEPLOYED`. Ringkasan pembayaran customer menampilkan satu
+S265 feature source `63b17f9a6af5437e663db265a3f1f2c6305a4ce5` dan exact
+release source `d46d48514a5b13f742325d03d531b1e898ace9a5` telah
+`CONFIRMED / PUSHED / OWNER_UAT_APPROVED / UIUX_VALIDATED / QA_VALIDATED /
+RELEASE_GATE_PARTIAL / RELEASE_BLOCKED / IMPLEMENTED_NOT_DEPLOYED`. Ringkasan
+pembayaran customer menampilkan satu
 `Biaya layanan` sebesar selisih nominal final dan subtotal booking, lalu total
 QRIS; rincian SagaDev/provider dan paragraf penjelasan dihapus. Split internal,
 ledger, settlement, fee calculation, API, schema, tenant, dan payment flow tidak
 berubah. Browser mengunci nominal gabungan pada provider fee known maupun
 unknown, memastikan copy lama tidak kembali, dan lulus mobile/desktop 4/4 tanpa
 overflow. Settlement 19/19 (173 assertion), build 5.132, design 26/0, serta
-visual baseline lulus. Production tetap S264.
+visual baseline lulus. Registry `1.12.2` dan backup terenkripsi
+`20260820T101121Z` beserta offsite round-trip serta restore disposable tiga
+database lulus. Activation tidak dicoba: Fonnte platform-managed disconnected
+dan satu notifikasi verifikasi pembayaran telah menghabiskan retry, sehingga
+readiness production 80/100. Reconnect, penyelesaian notifikasi tanpa blind
+duplicate, dan readiness 100/100 menjadi release gate. Production tetap S264
+`20260820084829-6d89fc1`.
 
 S264 feature source `a6d585eb5627071f3a62c3bef342284598adb751` dan exact
 release source `6d89fc14649f48886f38d39f66580a36e2784552` telah `CONFIRMED /

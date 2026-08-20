@@ -12,14 +12,14 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-20T17:14:00+07:00 |
-| Branch aktif | `codex/s266-sagabook-release-path-recheck-knowledge` pada worktree exact baseline `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-20T17:15:00+07:00 |
+| Branch aktif | `codex/s265-sagabook-service-fee-knowledge` pada worktree exact baseline `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | `a5d1b04` |
-| Informasi terakhir disinkronkan | SagaBook S266 release artifact path revalidation, exact source provenance, dan local security/QA gate. |
+| Informasi terakhir disinkronkan | SagaBook S265 exact release candidate, owner UAT approval, backup/restore evidence, dan release blocker sebelum activation. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
-| Konflik | Tidak ada. Sinkronisasi dibangun pada worktree baru exact `origin/main`; checkout utama tidak disentuh. |
-| Error | Tidak ada blocker S266. S265 belum production dan menunggu owner UAT/release approval; S264 tetap aktif. `BUSINESS_READY=false` masih menunggu dua studio pilot serta provider canary nyata. |
+| Konflik | Catatan S265 direbase ke sinkronisasi S266 terbaru tanpa menimpa provenance; checkout utama tidak disentuh. |
+| Error | `RELEASE_BLOCKED`: readiness production 80/100 karena koneksi Fonnte platform-managed terputus dan satu notifikasi verifikasi pembayaran telah menghabiskan retry. Activation tidak dicoba. Reconnect, penanganan aman tanpa blind duplicate, dan readiness 100/100 wajib sebelum atomic deployment. S264 tetap aktif; `BUSINESS_READY=false` juga masih menunggu dua studio pilot serta provider canary nyata. |
 
 ## File yang berubah pada sinkronisasi ini (SagaBook S266 release-path revalidation)
 

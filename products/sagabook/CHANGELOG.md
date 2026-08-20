@@ -14,13 +14,14 @@
   lulus. Check-only pada dua drive satu disk tetap gagal tertutup tanpa mutasi.
 - Status `PUSHED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
   IMPLEMENTED_NOT_DEPLOYED`. UI, API, database, data tenant, dan production
-  tidak berubah; S265 tetap menunggu owner UAT dan S264 tetap aktif.
+  tidak berubah; S265 terpisah diblokir pada readiness dan S264 tetap aktif.
 
-## 2026-08-20 - Combined customer service-fee UI S265 candidate
+## 2026-08-20 - Combined customer service-fee UI S265 release blocked
 
 - Founder meminta breakdown SagaDev 2%, fee Tokopay, dan paragraf penjelasan
-  tidak lagi ditampilkan kepada customer. Exact source
-  `63b17f9a6af5437e663db265a3f1f2c6305a4ce5` sudah dipush.
+  tidak lagi ditampilkan kepada customer. Feature source
+  `63b17f9a6af5437e663db265a3f1f2c6305a4ce5` dan exact release source
+  `d46d48514a5b13f742325d03d531b1e898ace9a5` sudah dipush; registry `1.12.2`.
 - Before: kartu memecah biaya menjadi dua baris dan menjelaskan bahwa harga
   booking tidak berubah. After: satu baris `Biaya layanan` menampilkan selisih
   nominal final terhadap subtotal, diikuti `Total dibayar via QRIS`.
@@ -28,8 +29,15 @@
   audit; API, database, fee calculation, dan payment flow tidak berubah.
 - Focused settlement 19/19 (173), browser known/unknown provider mobile-desktop
   4/4, build 5.132, design 26/0, screenshot baseline, dan no-overflow lulus.
-  Status `PUSHED / UIUX_VALIDATED / QA_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED`; production tetap S264.
+  Backup terenkripsi `20260820T101121Z`, checksum, offsite round-trip, dan
+  restore disposable tiga database lulus.
+- Readiness production fail-closed pada 80/100 karena Fonnte platform-managed
+  disconnected dan satu notifikasi verifikasi pembayaran telah menghabiskan
+  retry. Activation tidak dicoba; reconnect, penanganan aman notifikasi tanpa
+  blind duplicate, dan readiness 100/100 wajib sebelum atomic deployment.
+  Status `PUSHED / OWNER_UAT_APPROVED / UIUX_VALIDATED / QA_VALIDATED /
+  RELEASE_GATE_PARTIAL / RELEASE_BLOCKED / IMPLEMENTED_NOT_DEPLOYED`;
+  production tetap S264 `20260820084829-6d89fc1`.
 
 ## 2026-08-20 - Simplified package photo upload UI S264 production
 

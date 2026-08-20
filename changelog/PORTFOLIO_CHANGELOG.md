@@ -11,7 +11,7 @@
 - Status `PUSHED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
   IMPLEMENTED_NOT_DEPLOYED`; SagaBook production tetap S264.
 
-## 2026-08-20 - SagaBook S265 combined service-fee UI candidate
+## 2026-08-20 - SagaBook S265 combined service-fee release blocked
 
 - Exact source `63b17f9a6af5437e663db265a3f1f2c6305a4ce5` menyederhanakan
   ringkasan customer menjadi satu `Biaya layanan` dan total QRIS tanpa rincian
@@ -19,9 +19,13 @@
 - Split fee internal, ledger, settlement, audit, API, database, dan calculation
   tidak berubah. Settlement 19/19, browser mobile/desktop 4/4, build 5.132,
   design 26/0, visual baseline, dan no-overflow lulus.
-- Status `PUSHED / UIUX_VALIDATED / QA_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED`; SagaBook production tetap S264 dan produk lain
-  tidak berubah.
+- Exact release source `d46d48514a5b13f742325d03d531b1e898ace9a5`, registry
+  `1.12.2`, dan backup/restore terenkripsi lulus, tetapi readiness production
+  berhenti pada 80/100 karena koneksi Fonnte platform-managed terputus dan satu
+  notifikasi verifikasi pembayaran telah menghabiskan retry. Activation tidak
+  dicoba. Status `PUSHED / OWNER_UAT_APPROVED / UIUX_VALIDATED / QA_VALIDATED /
+  RELEASE_GATE_PARTIAL / RELEASE_BLOCKED / IMPLEMENTED_NOT_DEPLOYED`;
+  SagaBook production tetap S264 dan produk lain tidak berubah.
 
 ## 2026-08-20 - SagaBook S264 simplified upload UI production
 

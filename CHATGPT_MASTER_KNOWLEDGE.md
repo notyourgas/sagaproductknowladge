@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 20 Agustus 2026 17:14 WIB
+Evidence cut-off: 20 Agustus 2026 17:15 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -10,17 +10,23 @@ IMPLEMENTED_NOT_DEPLOYED`. Bundler kandidat release mengulang validasi
 reparse-point dan volume root pada output, staging, serta source parent tepat
 sebelum write/copy dan sesudah copy. Focused contract 16/16, full backend
 1.055/1.055, build 5.132, parser/formatter, serta audit dependency lulus. Ini
-hardening tooling, bukan fitur customer; production tetap S264 dan S265 masih
-menunggu owner UAT.
+hardening tooling, bukan fitur customer; production tetap S264.
 
-SagaBook S265 exact `63b17f9a6af5437e663db265a3f1f2c6305a4ce5`
-berstatus `PUSHED / UIUX_VALIDATED / QA_VALIDATED /
-IMPLEMENTED_NOT_DEPLOYED`. Customer melihat satu `Biaya layanan` gabungan dan
+SagaBook S265 feature source `63b17f9a6af5437e663db265a3f1f2c6305a4ce5`
+dan exact release source `d46d48514a5b13f742325d03d531b1e898ace9a5`
+berstatus `PUSHED / OWNER_UAT_APPROVED / UIUX_VALIDATED / QA_VALIDATED /
+RELEASE_GATE_PARTIAL / RELEASE_BLOCKED / IMPLEMENTED_NOT_DEPLOYED`. Customer
+melihat satu `Biaya layanan` gabungan dan
 total QRIS; rincian SagaDev/provider serta paragraf penjelasan tidak dirender.
 Split internal tetap authoritative untuk ledger, settlement, dan audit. API,
 database, fee calculation, dan payment flow tidak berubah. Settlement 19/19,
-browser mobile/desktop 4/4, build 5.132, design 26/0, dan visual lulus.
-Production tetap S264; jangan mengklaim S265 deployed atau activated.
+browser mobile/desktop 4/4, build 5.132, design 26/0, dan visual lulus. Registry
+`1.12.2` dan backup terenkripsi/offsite/restore disposable lulus. Readiness
+production 80/100 karena koneksi Fonnte platform-managed terputus dan satu
+notifikasi verifikasi pembayaran telah menghabiskan retry; activation tidak
+dicoba. Setelah reconnect, notifikasi harus ditangani tanpa blind duplicate dan
+readiness wajib 100/100 sebelum atomic deploy. Production tetap S264; jangan
+mengklaim S265 deployed atau activated.
 
 SagaBook S264 feature source `a6d585eb5627071f3a62c3bef342284598adb751`
 dan exact release source `6d89fc14649f48886f38d39f66580a36e2784552`

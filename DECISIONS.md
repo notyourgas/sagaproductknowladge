@@ -1236,5 +1236,5 @@ keputusan pengganti.
 | Alternatif yang dipertimbangkan | Tetap menampilkan dua fee; mengganti nama provider saja; menyembunyikan seluruh fee dan hanya menampilkan total. |
 | Dampak | Hierarki pembayaran lebih ringkas tanpa mengubah calculation, jumlah yang dibayar, ledger, settlement, audit, API, database, atau payment flow. |
 | Pemberi keputusan | Andreas / founder |
-| Status | `CONFIRMED / PUSHED / UIUX_VALIDATED / QA_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; exact source `63b17f9a6af5437e663db265a3f1f2c6305a4ce5` |
+| Status | `CONFIRMED / PUSHED / OWNER_UAT_APPROVED / UIUX_VALIDATED / QA_VALIDATED / RELEASE_GATE_PARTIAL / RELEASE_BLOCKED / IMPLEMENTED_NOT_DEPLOYED`; feature source `63b17f9a6af5437e663db265a3f1f2c6305a4ce5`, exact release source `d46d48514a5b13f742325d03d531b1e898ace9a5`; activation menunggu reconnect Fonnte platform-managed, penanganan aman notifikasi verifikasi pembayaran yang gagal, dan readiness 100/100 |
 | Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [SagaBook Changelog](products/sagabook/CHANGELOG.md), [SagaBook Ledger](products/sagabook/FEATURE_COVERAGE_LEDGER.md) |

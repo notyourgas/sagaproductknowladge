@@ -11,14 +11,20 @@
 - Dokumen terdampak: SagaBook product/dossier/changelog/coverage,
   portfolio/master, root changelog, dan sync status.
 
-## 2026-08-20 - SagaBook S265 combined service-fee UI candidate sync
+## 2026-08-20 - SagaBook S265 combined service-fee release-blocker sync
 
-- Informasi `CONFIRMED` dari arahan Andreas dan exact source
-  `63b17f9a6af5437e663db265a3f1f2c6305a4ce5` yang sudah dipush.
+- Informasi `CONFIRMED` dari arahan Andreas, owner UAT approval, feature source
+  `63b17f9a6af5437e663db265a3f1f2c6305a4ce5`, dan exact release source
+  `d46d48514a5b13f742325d03d531b1e898ace9a5` yang sudah dipush.
 - Knowledge mencatat satu biaya layanan customer, removal rincian provider dan
   copy berulang, preservasi settlement/audit internal, serta hasil validation.
-- Delivery `PUSHED / UIUX_VALIDATED / QA_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED`; production SagaBook tetap S264.
+- Registry `1.12.2` dan backup terenkripsi/offsite/restore disposable lulus.
+  Readiness production fail-closed 80/100 karena Fonnte platform-managed
+  disconnected dan satu notifikasi verifikasi pembayaran telah menghabiskan
+  retry; activation tidak dicoba.
+- Delivery `PUSHED / OWNER_UAT_APPROVED / UIUX_VALIDATED / QA_VALIDATED /
+  RELEASE_GATE_PARTIAL / RELEASE_BLOCKED / IMPLEMENTED_NOT_DEPLOYED`;
+  production SagaBook tetap S264 `20260820084829-6d89fc1`.
 - Dokumen terdampak: SagaBook product/dossier/changelog/coverage,
   portfolio/master, founder decision, root changelog, dan sync status.
 
