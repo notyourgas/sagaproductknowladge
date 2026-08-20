@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-20 - SagaBook S260 contextual sidebar modules
+
+- Exact source `54188003be44bb993add3a7daf2cf99e63fd1c45` menghapus
+  duplikasi rail: lima ikon kini mewakili lima modul bisnis dan panel
+  desktop/tablet hanya memuat grup aktif.
+- Ikon kotak empat membuka Operasional berisi Hari Ini, Task Center, Kalender,
+  dan Booking; drawer mobile serta capability boundary tetap utuh.
+- Build, design audit 26/0, focused navigation 4/4, visual regression 48/48,
+  dashboard baseline 3/3, dan full UI contract 26/26 lulus. Status `PUSHED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production S244 dan
+  `BUSINESS_READY` tidak berubah.
+
 ## 2026-08-20 - SagaBook S259 physical disk independence guard
 
 - Exact source `e3b754f5bf2c6fe4e3c2bfd19bd920ddaf0cea2c` menolak dua

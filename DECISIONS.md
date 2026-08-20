@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-084 - Rail SagaBook memakai satu ikon per modul bisnis
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-20 |
+| Topik | Perilaku navigasi dua tingkat dashboard SagaBook |
+| Keputusan | Rail kiri hanya berisi Operasional, Katalog, Organisasi, Keuangan, dan Pengaturan. Saat satu ikon dipilih, panel desktop/tablet hanya menampilkan grup tersebut; ikon kotak empat khusus membuka Operasional yang berisi Hari Ini, Task Center, Kalender, dan Booking. Item Operasional tidak boleh diduplikasi menjadi ikon rail terpisah. |
+| Alasan | Founder menilai rail dan panel sebelumnya mendobel navigasi sehingga hirarki modul tidak jelas. |
+| Alternatif yang dipertimbangkan | Mempertahankan tujuh ikon pintasan sekaligus lima grup; selalu menampilkan seluruh grup pada panel konteks. |
+| Dampak | Candidate S260 memfilter panel berdasarkan route/modul aktif, tetap mempertahankan semua grup pada drawer mobile, dan menurunkan visibility modul dari capability user. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED`; source S260 dipush, tervalidasi lokal, belum production-deployed |
+| Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [SagaBook Changelog](products/sagabook/CHANGELOG.md) |
+
 ## DEC-083 - SagaBook memakai arah visual dashboard SleekFlow-inspired
 
 | Field | Isi |

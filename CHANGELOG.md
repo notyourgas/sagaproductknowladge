@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-20 - SagaBook S260 sidebar module filter sync
+
+- Informasi `CONFIRMED` dari exact source
+  `54188003be44bb993add3a7daf2cf99e63fd1c45` dan gate exact-worktree.
+- Knowledge mencatat keputusan satu ikon per modul, panel kontekstual tunggal,
+  perilaku mobile, capability boundary, dan hasil regresi tanpa mengubah fakta
+  runtime production.
+- Delivery `PUSHED / UIUX_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production S244 dan `BUSINESS_READY` tetap.
+- Dokumen terdampak: SagaBook product/dossier/changelog/coverage,
+  portfolio/master, founder decisions, root changelog, dan sync status.
+
 ## 2026-08-20 - SagaBook S259 physical disk guard sync
 
 - Informasi `CONFIRMED` dari exact source

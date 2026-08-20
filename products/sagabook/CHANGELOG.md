@@ -1,5 +1,23 @@
 # SagaBook Changelog
 
+## 2026-08-20 - Contextual sidebar module filter S260
+
+- Informasi `CONFIRMED` dari exact source
+  `54188003be44bb993add3a7daf2cf99e63fd1c45` pada remote branch terisolasi.
+- Before: Task Center dan Booking hadir sebagai ikon rail sekaligus item
+  Operasional, sedangkan panel konteks selalu menampilkan seluruh grup. After:
+  rail hanya berisi lima modul bisnis; desktop/tablet hanya menampilkan grup
+  aktif dan ikon kotak empat hanya membuka menu Operasional.
+- Drawer mobile tetap memuat seluruh grup. Module visibility mengikuti item
+  capability-aware yang tersedia, sehingga permission lama tetap menjadi
+  authority.
+- Gate exact commit: build 5.132 modul, design audit 26/0, focused navigation
+  4/4 dengan 2 expected skip, visual dashboard 3/3, visual regression 48/48,
+  dan full admin UI contract 26/26.
+- Status `PUSHED / UIUX_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; API, auth, permission, database, booking flow,
+  production, activation, dan business readiness tidak berubah.
+
 ## 2026-08-20 - Physical disk independence guard S259
 
 - Informasi `CONFIRMED` dari exact source

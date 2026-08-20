@@ -1,6 +1,18 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 20 Agustus 2026 10:07 WIB
+Evidence cut-off: 20 Agustus 2026 11:08 WIB
+
+S260 exact source `54188003be44bb993add3a7daf2cf99e63fd1c45`
+telah `PUSHED / UIUX_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`. Navigasi desktop/tablet sekarang memakai lima modul
+unik dan hanya merender grup kontekstual yang aktif. Operasional memiliki Hari
+Ini, Task Center, Kalender, dan Booking tanpa duplikasi pada rail; drawer mobile
+tetap memuat semua grup. Module visibility diturunkan dari item capability-aware
+yang benar-benar tersedia, sehingga staff tidak menerima pintasan tanpa izin.
+Build 5.132 modul, design audit 26/0, focused navigation 4/4 dengan 2 expected
+skip, visual dashboard 3/3, visual regression 48/48, dan full UI contract 26/26
+lulus. API, auth, permission, database, booking flow, credential, dan production
+tidak berubah; production aktif tetap S244 dan `BUSINESS_READY` belum.
 
 S259 exact source `e3b754f5bf2c6fe4e3c2bfd19bd920ddaf0cea2c`
 telah `PUSHED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /

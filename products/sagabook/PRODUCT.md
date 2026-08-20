@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 20 Agustus 2026 10:07 WIB
+Updated: 20 Agustus 2026 11:08 WIB
 Evidence status: production deployment and activation verified; business readiness pending
 
 ## Tujuan dokumen
@@ -15,6 +15,20 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- S260 exact source `54188003be44bb993add3a7daf2cf99e63fd1c45`
+  berstatus `CONFIRMED / PUSHED / UIUX_VALIDATED / QA_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Rail kiri dashboard kini
+  berisi lima modul unik: Operasional, Katalog, Organisasi, Keuangan, dan
+  Pengaturan. Desktop/tablet hanya menampilkan satu grup kontekstual sesuai
+  modul aktif; ikon kotak empat membuka Operasional yang berisi Hari Ini, Task
+  Center, Kalender, dan Booking. Drawer mobile tetap memuat semua grup agar
+  perpindahan modul tidak terputus. Capability filtering lama dipertahankan.
+  Build 5.132 modul, design audit 26/0, focused navigation lintas viewport 4/4
+  dengan 2 expected skip, visual dashboard 3/3, visual regression 48/48, dan
+  full admin UI contract 26/26 lulus. API, auth, permission, database, booking
+  flow, dan production tidak berubah; production S244 serta
+  `BUSINESS_READY` tetap.
 
 - S259 exact source `e3b754f5bf2c6fe4e3c2bfd19bd920ddaf0cea2c`
   berstatus `CONFIRMED / PUSHED / QA_VALIDATED / SECURITY_VALIDATED /

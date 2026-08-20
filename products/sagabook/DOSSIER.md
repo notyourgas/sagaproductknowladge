@@ -7,12 +7,16 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 20 Agustus 2026 10:07 WIB
+- Updated: 20 Agustus 2026 11:08 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED`; current release S244
   `20260818091438-7fb8037` lulus verifier 17/17, termasuk HTTP 3/3 dan security
   profile 3/3
 - Business readiness: `NEEDS CONFIRMATION`
+- Candidate dashboard S260 exact
+  `54188003be44bb993add3a7daf2cf99e63fd1c45`: `PUSHED /
+  UIUX_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap S244
 - Candidate tooling S259 exact
   `e3b754f5bf2c6fe4e3c2bfd19bd920ddaf0cea2c`: `PUSHED / QA_VALIDATED /
   SECURITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; bundler
@@ -1063,6 +1067,18 @@ audit nol vulnerability lulus. API/payment/provider, availability rules,
 booking mutation, tenant isolation, invoice, dan receipt tidak berubah.
 Production tetap source `d70fc1e0`, release `20260803194351-d70fc1e`, karena
 belum ada backup/restore, approval, dan rollback package exact S98.
+
+Candidate UI/UX S260 pada exact source
+`54188003be44bb993add3a7daf2cf99e63fd1c45` berstatus `PUSHED /
+UIUX_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`. Rail desktop/tablet kini hanya mempunyai lima modul
+bisnis dan panel konteks hanya merender grup aktif. Operasional memuat Hari Ini,
+Task Center, Kalender, dan Booking; duplikasi item yang sebelumnya juga hadir
+sebagai ikon rail dihapus. Drawer mobile tetap memuat seluruh grup dan module
+visibility mengikuti item capability-aware yang tersedia. Build 5.132 modul,
+design audit 26/0, focused navigation 4/4 dengan 2 expected skip, visual
+regression 48/48, baseline dashboard 3/3, serta full UI contract 26/26 lulus.
+API, auth, permission, database, booking flow, dan production tidak berubah.
 
 Candidate UI/UX S254 pada exact source
 `02c4fff8a404fb9d9fcd57d657709ef442566f90` berstatus `PUSHED /
