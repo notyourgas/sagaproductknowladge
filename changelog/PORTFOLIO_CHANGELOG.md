@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-20 - SagaBook S261 production toolbar interaction
+
+- Exact source `62a7acb0fb3197568a9721a47cf43564ab321e48` aktif sebagai
+  release `20260820052220-62a7acb`; rollback langsung
+  `20260818091438-7fb8037`.
+- Toolbar dapat diminimalkan, preview sementara terbuka melalui hover/focus
+  tanpa layout shift, dan expand dapat dipasang terbuka. Lima modul
+  kontekstual tidak lagi menghasilkan menu ganda.
+- Full backend 1.051/1.051, build 5.132, design audit 26/0, UI contract 26/26,
+  backup/restore, atomic activation, verifier 17/17, public smoke 3/3, dan
+  security profile 3/3 lulus.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated UAT, dua
+  studio pilot, provider canary, dan `BUSINESS_READY` tetap gate terpisah.
+
 ## 2026-08-20 - SagaBook S260 contextual sidebar modules
 
 - Exact source `54188003be44bb993add3a7daf2cf99e63fd1c45` menghapus

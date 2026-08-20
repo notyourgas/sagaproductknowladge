@@ -1,5 +1,25 @@
 # SagaBook Changelog
 
+## 2026-08-20 - Production toolbar minimize and hover expand S261
+
+- Exact source `62a7acb0fb3197568a9721a47cf43564ab321e48` aktif sebagai
+  release immutable `20260820052220-62a7acb` dengan rollback langsung
+  `20260818091438-7fb8037`.
+- Toolbar dashboard desktop/tablet dapat diminimalkan. Hover atau keyboard
+  focus pada logo/ikon menampilkan panel sementara tanpa menggeser canvas;
+  tombol expand memasang panel tetap terbuka.
+- Lima modul kontekstual S260 sekarang production tanpa duplikasi menu;
+  SleekFlow-inspired shell, Plus Jakarta Sans, capability boundary, dan drawer
+  mobile tetap dipertahankan.
+- Gate exact commit: full backend 1.051/1.051 (11.955 assertion), build 5.132
+  modul, design audit 26/0, focused responsive/toolbar, full UI contract 26/26,
+  backup terenkripsi dan disposable restore, atomic activation, verifier
+  independen 17/17, public smoke 3/3, serta security profile 3/3.
+- Status `CONFIRMED / PUSHED / UIUX_VALIDATED / QA_VALIDATED /
+  SECURITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+  `BUSINESS_READY=false` sampai authenticated Owner/operator UAT, dua studio
+  pilot, dan provider canary nyata selesai.
+
 ## 2026-08-20 - Contextual sidebar module filter S260
 
 - Informasi `CONFIRMED` dari exact source

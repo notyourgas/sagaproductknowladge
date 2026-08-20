@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 20 Agustus 2026 11:08 WIB
+Updated: 20 Agustus 2026 12:40 WIB
 Evidence status: production deployment and activation verified; business readiness pending
 
 ## Tujuan dokumen
@@ -15,6 +15,21 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- S261 exact source `62a7acb0fb3197568a9721a47cf43564ab321e48`
+  berstatus `CONFIRMED / PUSHED / UIUX_VALIDATED / QA_VALIDATED /
+  SECURITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Release
+  immutable aktif `20260820052220-62a7acb` dengan rollback langsung
+  `20260818091438-7fb8037`. Dashboard SleekFlow-inspired dan Plus Jakarta Sans
+  sekarang aktif dengan lima modul unik tanpa menu ganda. Toolbar
+  desktop/tablet dapat diminimalkan; hover atau keyboard focus pada logo/ikon
+  membuka preview sementara tanpa menggeser canvas, sedangkan tombol expand
+  memasang panel tetap terbuka. Full backend 1.051/1.051 (11.955 assertion),
+  build 5.132 modul, design audit 26/0, focused responsive/toolbar, full admin
+  UI contract 26/26, backup terenkripsi dan disposable restore, serta verifier
+  independen 17/17 termasuk public smoke 3/3 dan security profile 3/3 lulus.
+  `BUSINESS_READY=false`: authenticated Owner/operator UAT, dua studio pilot,
+  dan provider canary nyata tetap gate terpisah.
 
 - S260 exact source `54188003be44bb993add3a7daf2cf99e63fd1c45`
   berstatus `CONFIRMED / PUSHED / UIUX_VALIDATED / QA_VALIDATED /

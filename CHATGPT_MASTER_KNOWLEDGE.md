@@ -1,8 +1,19 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 20 Agustus 2026 11:08 WIB
+Evidence cut-off: 20 Agustus 2026 12:40 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
+
+SagaBook S261 exact `62a7acb0fb3197568a9721a47cf43564ab321e48`
+aktif di production sebagai release `20260820052220-62a7acb` dengan rollback
+langsung `20260818091438-7fb8037`. Dashboard SleekFlow-inspired memakai Plus
+Jakarta Sans, lima modul unik tanpa menu ganda, minimize toolbar, hover/focus
+preview tanpa layout shift, dan pinned expand. Full backend 1.051/1.051
+(11.955 assertion), build 5.132, design audit 26/0, UI contract 26/26,
+backup/restore, atomic activation, verifier 17/17, public smoke 3/3, serta
+security profile 3/3 lulus. Status `PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED`; jangan menyebut `BUSINESS_READY` sampai authenticated
+Owner/operator UAT, dua studio pilot, dan provider canary nyata selesai.
 
 SagaBook S260 exact `54188003be44bb993add3a7daf2cf99e63fd1c45`
 berstatus `PUSHED / UIUX_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
@@ -11,8 +22,8 @@ desktop/tablet hanya menampilkan grup aktif. Ikon kotak empat membuka
 Operasional berisi Hari Ini, Task Center, Kalender, dan Booking; drawer mobile
 tetap menampilkan semua grup. Capability boundary tidak berubah. Build, design
 audit 26/0, focused navigation 4/4, visual regression 48/48, baseline 3/3, dan
-full UI contract 26/26 lulus. Jangan menyebutnya production; production aktif
-tetap S244 dan `BUSINESS_READY` belum.
+full UI contract 26/26 lulus. Ini adalah status historis sebelum deployment;
+lineage kumulatifnya kemudian diaktifkan melalui S261. `BUSINESS_READY` belum.
 
 SagaBook S259 exact `e3b754f5bf2c6fe4e3c2bfd19bd920ddaf0cea2c`
 berstatus `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Bundler
@@ -64,8 +75,8 @@ SleekFlow-inspired, Plus Jakarta Sans, canvas biru-abu, dan active state biru;
 tidak ada aset proprietary SleekFlow yang disalin. Capability filtering tetap
 utuh dan staff permission-negative lulus. Build, design audit 26/0, focused
 6/6, visual lintas tiga viewport 3/3, dan full admin UI contract 26/26 lulus.
-Jangan menyebut desain ini sudah production; production aktif tetap S244 dan
-`BUSINESS_READY` belum.
+Ini adalah status historis sebelum deployment; desain kumulatifnya kemudian
+diaktifkan melalui S261. `BUSINESS_READY` belum.
 
 SagaBook S253 exact `e172a7c5c474a27be1d10ed66897c0b72e018e21`
 berstatus `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Kontrak

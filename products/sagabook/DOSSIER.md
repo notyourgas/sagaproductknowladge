@@ -7,12 +7,22 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 20 Agustus 2026 11:08 WIB
+- Updated: 20 Agustus 2026 12:40 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
-- Activation: `PRODUCTION_ACTIVATED`; current release S244
-  `20260818091438-7fb8037` lulus verifier 17/17, termasuk HTTP 3/3 dan security
-  profile 3/3
+- Activation: `PRODUCTION_ACTIVATED`; current release S261
+  `20260820052220-62a7acb`, exact source
+  `62a7acb0fb3197568a9721a47cf43564ab321e48`, rollback langsung
+  `20260818091438-7fb8037`, dan verifier independen 17/17 termasuk HTTP 3/3
+  serta security profile 3/3
 - Business readiness: `NEEDS CONFIRMATION`
+- Dashboard production S261: shell SleekFlow-inspired memakai Plus Jakarta
+  Sans, lima modul unik tanpa menu ganda, tombol minimize, preview sementara
+  via hover/keyboard focus tanpa layout shift, dan tombol expand untuk pin
+  terbuka. Full backend 1.051/1.051 (11.955 assertion), build 5.132 modul,
+  design audit 26/0, focused responsive/toolbar, UI contract 26/26, backup
+  terenkripsi/disposable restore, atomic activation, dan public verification
+  lulus. Authenticated Owner/operator UAT, dua studio pilot, dan provider
+  canary nyata tetap residual; `BUSINESS_READY=false`.
 - Candidate dashboard S260 exact
   `54188003be44bb993add3a7daf2cf99e63fd1c45`: `PUSHED /
   UIUX_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
@@ -55,9 +65,9 @@ dalam satu dokumen public-safe.
 - Availability empty-response recovery, manual-transfer initial-load recovery,
   dan Payment Monitor action recovery: `PRODUCTION_DEPLOYED /
   PRODUCTION_ACTIVATED`
-- Source kumulatif aktif: `7fb80375915771457e343016e4851bbfc876199d`,
-  release `20260818091438-7fb8037`, rollback
-  `20260818054003-7e617b7`. Exact source tersedia di remote `main`; archive, Git
+- Source kumulatif aktif: `62a7acb0fb3197568a9721a47cf43564ab321e48`,
+  release `20260820052220-62a7acb`, rollback
+  `20260818091438-7fb8037`. Exact source tersedia di remote `main`; archive, Git
   bundle, backup/restore, migrasi, atomic activation, smoke, service, journal,
   dan rollback terverifikasi.
 - S73 provider-cleared payout pada source fitur

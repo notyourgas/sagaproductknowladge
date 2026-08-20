@@ -12,14 +12,25 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-20T11:08:28+07:00 |
-| Branch aktif | `codex/s260-sagabook-sidebar-module-filter-knowledge` pada worktree terisolasi exact baseline `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-20T12:40:00+07:00 |
+| Branch aktif | `codex/s261-sagabook-toolbar-production-knowledge` pada worktree terisolasi exact baseline `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `1a27e2c` |
-| Informasi terakhir disinkronkan | SagaBook S260 contextual sidebar module filter. |
+| Baseline sebelum pembaruan | `59a9e6a` |
+| Informasi terakhir disinkronkan | SagaBook S261 toolbar minimize/hover expand production activation. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
 | Konflik | Sinkronisasi dibangun di atas exact `origin/main`; perubahan produk lain dipertahankan utuh; checkout utama yang divergen tidak disentuh. |
-| Error | Tidak ada error sinkronisasi; S260 belum dideploy. Production tetap S244 dan `BUSINESS_READY` masih menunggu authenticated UAT, dua studio pilot, serta provider canary nyata. |
+| Error | Tidak ada error sinkronisasi; S261 production aktif dan terverifikasi. `BUSINESS_READY=false` masih menunggu authenticated UAT, dua studio pilot, serta provider canary nyata. |
+
+## File yang berubah pada sinkronisasi ini (SagaBook S261 production toolbar)
+
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaBook S260 contextual sidebar modules)
 

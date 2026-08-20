@@ -1,6 +1,19 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 20 Agustus 2026 11:08 WIB
+Evidence cut-off: 20 Agustus 2026 12:40 WIB
+
+S261 exact source `62a7acb0fb3197568a9721a47cf43564ab321e48`
+telah `CONFIRMED / PUSHED / UIUX_VALIDATED / QA_VALIDATED /
+SECURITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Release aktif
+`20260820052220-62a7acb` memakai rollback langsung
+`20260818091438-7fb8037`. Lima modul kontekstual S260 kini aktif tanpa menu
+ganda; toolbar dapat diminimalkan, hover/focus pada logo atau ikon membuka
+preview tanpa layout shift, dan tombol expand memasang panel terbuka. Full
+backend 1.051/1.051 (11.955 assertion), build 5.132 modul, design audit 26/0,
+focused responsive/toolbar, UI contract 26/26, backup terenkripsi/disposable
+restore, atomic activation, verifier 17/17, public smoke 3/3, dan security
+profile 3/3 lulus. Authenticated Owner/operator UAT, dua studio pilot, dan
+provider canary nyata belum dijalankan; `BUSINESS_READY=false`.
 
 S260 exact source `54188003be44bb993add3a7daf2cf99e63fd1c45`
 telah `PUSHED / UIUX_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /

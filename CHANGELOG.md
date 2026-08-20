@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-20 - SagaBook S261 production toolbar sync
+
+- Informasi `CONFIRMED` dari exact source
+  `62a7acb0fb3197568a9721a47cf43564ab321e48`, release aktif
+  `20260820052220-62a7acb`, dan rollback `20260818091438-7fb8037`.
+- Knowledge mencatat minimize, hover/focus preview tanpa layout shift, pinned
+  expand, lima modul tanpa duplikasi, Plus Jakarta Sans, hasil full regression,
+  backup/restore, atomic activation, serta verifier independen.
+- Delivery `PUSHED / UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; `BUSINESS_READY=false` sampai
+  authenticated UAT, dua studio pilot, dan provider canary nyata selesai.
+- Dokumen terdampak: SagaBook product/dossier/changelog/coverage,
+  portfolio/master, root changelog, dan sync status.
+
 ## 2026-08-20 - SagaBook S260 sidebar module filter sync
 
 - Informasi `CONFIRMED` dari exact source
