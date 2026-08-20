@@ -1,5 +1,22 @@
 # SagaBook Changelog
 
+## 2026-08-20 - Physical disk independence guard S259
+
+- Informasi `CONFIRMED` dari exact source
+  `e3b754f5bf2c6fe4e3c2bfd19bd920ddaf0cea2c` pada remote branch terisolasi.
+- Before: C: dan D: diterima karena volume root berbeda, walaupun keduanya
+  berada pada satu disk fisik. After: pasangan volume lokal pada disk fisik
+  yang sama ditolak sebelum capacity check atau mutation.
+- C:+D: gagal tertutup tanpa folder baru. C:+E: melewati pemeriksaan beda disk
+  lalu tetap ditolak gate suitability karena E: adalah media removable; host
+  validasi belum mempunyai pasangan disk fixed lokal yang memenuhi semua gate.
+- Gate exact commit: release contract/regression 22/22 (259 assertion), build
+  5.132 modul, PowerShell parser, PHP lint, audit npm/Composer/OSV nol temuan,
+  serta verifier production read-only 17/17.
+- Status `PUSHED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; UI, API, database, tenant, payment, provider,
+  production, activation, dan business readiness tidak berubah.
+
 ## 2026-08-20 - Release output reparse-point guard S258
 
 - Informasi `CONFIRMED` dari exact source

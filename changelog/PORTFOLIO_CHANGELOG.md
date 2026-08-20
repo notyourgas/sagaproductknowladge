@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-20 - SagaBook S259 physical disk independence guard
+
+- Exact source `e3b754f5bf2c6fe4e3c2bfd19bd920ddaf0cea2c` menolak dua
+  output local-letter pada disk fisik sama sebelum capacity check dan mutation.
+- C:+D: gagal tertutup tanpa folder baru. C:+E: melewati guard beda disk lalu
+  tetap ditolak sebagai media removable. Release regression 22/22, build,
+  parser/lint, dependency audit, dan verifier production 17/17 lulus.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+  S244 dan `BUSINESS_READY` tidak berubah.
+
 ## 2026-08-20 - SagaBook S258 release reparse-point guard
 
 - Exact source `2b00e8c36cffd814d8e687202abb0bc0c1309bc6` menolak path

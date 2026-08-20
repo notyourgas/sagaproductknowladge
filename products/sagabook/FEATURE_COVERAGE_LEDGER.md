@@ -1,6 +1,20 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 20 Agustus 2026 09:05 WIB
+Evidence cut-off: 20 Agustus 2026 10:07 WIB
+
+S259 exact source `e3b754f5bf2c6fe4e3c2bfd19bd920ddaf0cea2c`
+telah `PUSHED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`. Bundler kandidat release lokal kini memetakan
+volume letter Windows ke disk fisik dan menolak primary serta secondary yang
+berada pada disk sama sebelum capacity check atau mutation. Before, C:+D:
+lulus karena volume berbeda walaupun keduanya satu disk; after, kombinasi itu
+gagal tertutup tanpa folder baru. C:+E: membuktikan disk berbeda tidak ditolak
+oleh guard baru, lalu tetap gagal pada gate suitability lama karena E: media
+removable. Host validasi belum memiliki dua disk fixed lokal yang memenuhi
+semua gate. Release contract/regression 22/22 (259 assertion), build 5.132
+modul, parser/lint, audit dependency nol temuan, dan verifier production 17/17
+lulus. UI, API, database, tenant, payment, provider, dan production tidak
+berubah; production aktif tetap S244 dan `BUSINESS_READY` belum.
 
 S258 exact source `2b00e8c36cffd814d8e687202abb0bc0c1309bc6`
 telah `PUSHED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
