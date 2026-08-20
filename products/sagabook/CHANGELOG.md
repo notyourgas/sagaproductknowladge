@@ -1,5 +1,21 @@
 # SagaBook Changelog
 
+## 2026-08-20 - Release artifact path revalidation S266
+
+- Exact source `253c4e0b497a07ead472643b827d405538343ed7` sudah dipush.
+- Before: suitability, reparse-point, physical disk, dan kapasitas diperiksa
+  pada preflight, tetapi create/copy berikutnya belum mengulang validasi path.
+  After: primary, secondary, staging, source parent, dan destination
+  divalidasi lagi tepat sebelum mutasi/copy dan sesudah copy; perubahan
+  reparse-point atau volume yang sudah terlihat pada guard ditolak.
+- Metadata release menandai `preWritePathRevalidationGuarded=true`. Focused
+  release contract 16/16 (240 assertion), full backend 1.055/1.055 (12.050),
+  build 5.132 modul, parser PowerShell, Pint, npm audit, dan Composer audit
+  lulus. Check-only pada dua drive satu disk tetap gagal tertutup tanpa mutasi.
+- Status `PUSHED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. UI, API, database, data tenant, dan production
+  tidak berubah; S265 tetap menunggu owner UAT dan S264 tetap aktif.
+
 ## 2026-08-20 - Combined customer service-fee UI S265 candidate
 
 - Founder meminta breakdown SagaDev 2%, fee Tokopay, dan paragraf penjelasan

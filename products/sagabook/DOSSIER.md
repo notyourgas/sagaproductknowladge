@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 20 Agustus 2026 16:34 WIB
+- Updated: 20 Agustus 2026 17:14 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED`; current release S264
   `20260820084829-6d89fc1`, exact release source
@@ -15,6 +15,15 @@ dalam satu dokumen public-safe.
   `20260820080539-7ac5efd`, dan verifier independen 17/17 termasuk HTTP 3/3
   serta security profile 3/3
 - Business readiness: `NEEDS CONFIRMATION`
+- Release tooling S266 exact `253c4e0b497a07ead472643b827d405538343ed7`:
+  `CONFIRMED / PUSHED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Setelah preflight awal, bundler memvalidasi ulang
+  reparse-point dan volume root pada direktori output, staging, dan parent
+  sumber segera sebelum mutasi/copy serta setelah copy. Drift yang sudah hadir
+  pada setiap guard gagal tertutup. Focused release contract 16/16 (240), full
+  backend 1.055/1.055 (12.050), build 5.132, parser PowerShell, Pint, npm audit,
+  dan Composer audit lulus. Tidak ada perubahan UI, API, schema, data, tenant,
+  payment, provider, atau production; S264 tetap aktif.
 - Combined service-fee UI S265 exact
   `63b17f9a6af5437e663db265a3f1f2c6305a4ce5`: `CONFIRMED / PUSHED /
   UIUX_VALIDATED / QA_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Ringkasan customer

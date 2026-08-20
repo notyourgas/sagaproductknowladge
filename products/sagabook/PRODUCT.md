@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 20 Agustus 2026 16:34 WIB
-Evidence status: S265 combined service-fee UI locally validated; production remains S264; business readiness pending
+Updated: 20 Agustus 2026 17:14 WIB
+Evidence status: S266 release-path revalidation locally validated; production remains S264; business readiness pending
 
 ## Tujuan dokumen
 
@@ -15,6 +15,19 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- S266 exact source `253c4e0b497a07ead472643b827d405538343ed7`
+  berstatus `CONFIRMED / PUSHED / QA_VALIDATED / SECURITY_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Bundler kandidat release kini
+  mengulang validasi reparse-point dan volume root pada primary, secondary,
+  staging, serta parent sumber tepat sebelum write/copy dan sesudah copy.
+  Perubahan path atau volume yang sudah tampak pada setiap guard gagal tertutup;
+  metadata menandai `preWritePathRevalidationGuarded=true`. Focused release
+  contract 16/16 (240 assertion), full backend 1.055/1.055 (12.050), build
+  5.132 modul, parser PowerShell, Pint, serta audit npm/Composer nol temuan
+  lulus. Ini hardening tooling, bukan fitur customer; UI, API, database,
+  workflow, dan production tidak berubah. S265 tetap kandidat menunggu UAT dan
+  S264 tetap aktif.
 
 - Candidate S265 exact source `63b17f9a6af5437e663db265a3f1f2c6305a4ce5`
   berstatus `CONFIRMED / PUSHED / UIUX_VALIDATED / QA_VALIDATED /

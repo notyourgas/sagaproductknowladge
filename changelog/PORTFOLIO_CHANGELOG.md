@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-20 - SagaBook S266 release-path revalidation
+
+- Exact source `253c4e0b497a07ead472643b827d405538343ed7` memperketat
+  bundler kandidat release dengan validasi ulang path dan volume tepat sebelum
+  write/copy serta sesudah copy.
+- Focused release contract 16/16, full backend 1.055/1.055, build 5.132,
+  parser/formatter, dan audit dependency lulus. Perubahan hanya pada tooling
+  SagaBook; produk lain dan production tidak berubah.
+- Status `PUSHED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; SagaBook production tetap S264.
+
 ## 2026-08-20 - SagaBook S265 combined service-fee UI candidate
 
 - Exact source `63b17f9a6af5437e663db265a3f1f2c6305a4ce5` menyederhanakan

@@ -1,6 +1,18 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 20 Agustus 2026 16:34 WIB
+Evidence cut-off: 20 Agustus 2026 17:14 WIB
+
+S266 exact source `253c4e0b497a07ead472643b827d405538343ed7` telah
+`CONFIRMED / PUSHED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`. Release bundler memvalidasi ulang reparse-point dan
+volume root primary, secondary, staging, source parent, serta destination tepat
+sebelum write/copy dan sesudah copy. Drift path atau volume yang sudah hadir
+pada setiap guard gagal tertutup; metadata publik menandai
+`preWritePathRevalidationGuarded=true`. Focused release contract 16/16 (240
+assertion), full backend 1.055/1.055 (12.050), build 5.132, parser PowerShell,
+Pint, dan audit dependency nol temuan lulus. Check-only dua drive pada disk
+fisik sama tetap menolak tanpa mutasi. Tidak ada perubahan UI, API, database,
+tenant, workflow, atau runtime; production tetap S264.
 
 S265 exact source `63b17f9a6af5437e663db265a3f1f2c6305a4ce5` telah
 `CONFIRMED / PUSHED / UIUX_VALIDATED / QA_VALIDATED /

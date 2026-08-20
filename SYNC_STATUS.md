@@ -12,14 +12,25 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-20T16:34:00+07:00 |
-| Branch aktif | `codex/s265-sagabook-service-fee-knowledge` pada worktree exact baseline `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-20T17:14:00+07:00 |
+| Branch aktif | `codex/s266-sagabook-release-path-recheck-knowledge` pada worktree exact baseline `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `0b36acd` |
-| Informasi terakhir disinkronkan | SagaBook S265 combined customer service-fee UI candidate, source provenance, internal settlement preservation, dan local browser validation. |
+| Baseline sebelum pembaruan | `a5d1b04` |
+| Informasi terakhir disinkronkan | SagaBook S266 release artifact path revalidation, exact source provenance, dan local security/QA gate. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
-| Konflik | Sinkronisasi dibangun pada worktree baru exact `origin/main`; checkout utama yang divergen dan commit lokalnya tidak disentuh. |
-| Error | Tidak ada blocker lokal. S265 belum production dan menunggu owner UAT/release approval; S264 tetap aktif. `BUSINESS_READY=false` masih menunggu dua studio pilot serta provider canary nyata. |
+| Konflik | Tidak ada. Sinkronisasi dibangun pada worktree baru exact `origin/main`; checkout utama tidak disentuh. |
+| Error | Tidak ada blocker S266. S265 belum production dan menunggu owner UAT/release approval; S264 tetap aktif. `BUSINESS_READY=false` masih menunggu dua studio pilot serta provider canary nyata. |
+
+## File yang berubah pada sinkronisasi ini (SagaBook S266 release-path revalidation)
+
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaBook S265 combined service fee)
 

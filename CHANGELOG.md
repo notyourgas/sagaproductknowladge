@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-20 - SagaBook S266 release-path revalidation sync
+
+- Informasi `CONFIRMED` dari exact source
+  `253c4e0b497a07ead472643b827d405538343ed7` yang sudah dipush.
+- Knowledge mencatat before/after revalidasi path sebelum write/copy, hasil
+  full/focused gate, dan batas bahwa perubahan hanya tooling lokal.
+- Delivery `PUSHED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production SagaBook tetap S264.
+- Dokumen terdampak: SagaBook product/dossier/changelog/coverage,
+  portfolio/master, root changelog, dan sync status.
+
 ## 2026-08-20 - SagaBook S265 combined service-fee UI candidate sync
 
 - Informasi `CONFIRMED` dari arahan Andreas dan exact source
