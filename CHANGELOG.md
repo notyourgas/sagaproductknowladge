@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-20 - SagaBook S263 package ordering candidate sync
+
+- Informasi `CONFIRMED` dari keputusan Andreas, owner UAT approval, dan exact
+  source `26a34eca77d63dfb3eea35678a7b63caed4ebce8` yang sudah dipush.
+- Knowledge mencatat urutan kanonik per cabang, drag-and-drop plus kontrol
+  aksesibel, kategori paket eksplisit, parity seluruh Template Booking,
+  transaksi/stale guard, serta preservasi ID dan booking historis.
+- Delivery `PUSHED / OWNER_UAT_APPROVED / UIUX_VALIDATED / QA_VALIDATED /
+  SECURITY_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S262 sampai
+  exact-commit release gate selesai.
+- Dokumen terdampak: SagaBook product/dossier/changelog/coverage,
+  portfolio/master, founder decisions, root changelog, dan sync status.
+
 ## 2026-08-20 - SagaBook S262 settings navigation production sync
 
 - Informasi `CONFIRMED` dari exact source

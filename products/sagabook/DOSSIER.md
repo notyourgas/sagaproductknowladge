@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 20 Agustus 2026 14:10 WIB
+- Updated: 20 Agustus 2026 14:44 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED`; current release S262
   `20260820064803-ab9687c`, exact source
@@ -15,6 +15,18 @@ dalam satu dokumen public-safe.
   `20260820052220-62a7acb`, dan verifier independen 17/17 termasuk HTTP 3/3
   serta security profile 3/3
 - Business readiness: `NEEDS CONFIRMATION`
+- Candidate package ordering S263 exact
+  `26a34eca77d63dfb3eea35678a7b63caed4ebce8`: `CONFIRMED / PUSHED /
+  OWNER_UAT_APPROVED / UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Menu Paket menyediakan pengurutan per cabang
+  dengan drag-and-drop dan kontrol naik/turun; satu urutan authoritative
+  dipakai seluruh Template Booking. Kategori Solo, Couple, Grup, Family, dan
+  Lainnya disimpan eksplisit. Draft tetap tidak publik, paket baru ditambahkan
+  di akhir, dan save memakai transaksi, capability `manage_catalog`, scope
+  tenant/cabang, serta stale-order 409. Full backend 1.055/1.055 (11.985
+  assertion), focused final 42/42 (240), build 5.132 modul, design 26/0, visual
+  mobile/desktop, dan E2E drag-save-reload lulus. Production masih S262 sampai
+  release gate lengkap.
 - Navigation fix S262: klik ikon Pengaturan sekarang membuka Template Booking
   dan merender seluruh grup Pengaturan; Subscription & Billing tetap tersedia
   sebagai menu tersendiri. Full backend 1.051/1.051 (11.968 assertion), build

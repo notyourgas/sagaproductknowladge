@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 20 Agustus 2026 14:10 WIB
-Evidence status: production deployment and activation verified; business readiness pending
+Updated: 20 Agustus 2026 14:44 WIB
+Evidence status: S263 source and owner UAT verified; production remains S262; business readiness pending
 
 ## Tujuan dokumen
 
@@ -15,6 +15,20 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- Candidate S263 exact source `26a34eca77d63dfb3eea35678a7b63caed4ebce8`
+  berstatus `CONFIRMED / PUSHED / OWNER_UAT_APPROVED / UIUX_VALIDATED /
+  QA_VALIDATED / SECURITY_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Owner dapat
+  mengatur satu urutan paket kanonik per cabang melalui drag-and-drop atau
+  tombol naik/turun; urutan yang sama dipakai seluruh Template Booking.
+  Kategori paket kini eksplisit sebagai Solo, Couple, Grup, Family, atau
+  Lainnya. Paket draft mempertahankan posisi tetapi tetap tersembunyi dari
+  customer, paket baru masuk posisi terakhir, dan konflik tab lain ditolak.
+  Full backend 1.055/1.055 (11.985 assertion), focused final 42/42 (240), build
+  5.132 modul, design audit 26/0, visual Paket mobile, form Paket desktop, dan
+  E2E drag-save-reload lulus. ID paket serta riwayat booking dipertahankan;
+  production aktif tetap S262 `20260820064803-ab9687c` sampai exact-commit
+  release gate, backup/restore, migrasi, activation, dan verifier selesai.
 
 - S262 exact source `ab9687c48b27840222001b461bfe33cf86d36ae1`
   berstatus `CONFIRMED / PUSHED / UIUX_VALIDATED / QA_VALIDATED /

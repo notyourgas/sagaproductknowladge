@@ -1196,3 +1196,17 @@ keputusan pengganti.
 | Pemberi keputusan | Andreas / founder |
 | Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; source `a74221c4720b0afc59cadbf3f115e4934c4745e1`, Hostinger `20260816T185201Z`, Vercel `dpl_F2nGXwrWRSNerhKybbWUUikwz94G`; public registration dan participant login `DEPRECATED / CLOSED` |
 | Dokumen terkait | [AOGTIVITY Product](products/aogticvity/PRODUCT.md), [AOGTIVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTIVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |
+
+## DEC-085 - SagaBook memakai satu urutan paket kanonik per cabang
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-20 |
+| Topik | Urutan dan kategori paket pada website booking |
+| Keputusan | Owner mengatur satu urutan paket per cabang dari menu Paket melalui drag-and-drop atau tombol naik/turun. Urutan yang sama berlaku untuk seluruh Template Booking. Kategori disimpan eksplisit sebagai Solo, Couple, Grup, Family, atau Lainnya; draft boleh diposisikan tetapi tetap tidak tampil publik. |
+| Alasan | Sorting admin sebelumnya tidak memengaruhi website dan kategori diinferensikan dari kapasitas, sehingga urutan Couple/Group dan paket lain tidak dapat dikontrol secara konsisten. |
+| Alternatif yang dipertimbangkan | Mempertahankan urutan database implisit; membuat urutan berbeda per template; mengurutkan hanya paket aktif; tetap menebak kategori dari kapasitas. |
+| Dampak | Schema bertambah secara aditif; API reorder transaksional dan tenant/cabang-scoped; admin, preview, dan publik membaca urutan yang sama. ID paket, relasi booking, harga, availability, payment, dan permission authority dipertahankan. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / PUSHED / OWNER_UAT_APPROVED / IMPLEMENTED_NOT_DEPLOYED`; exact source `26a34eca77d63dfb3eea35678a7b63caed4ebce8` |
+| Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [SagaBook Changelog](products/sagabook/CHANGELOG.md), [SagaBook Ledger](products/sagabook/FEATURE_COVERAGE_LEDGER.md) |

@@ -1,5 +1,26 @@
 # SagaBook Changelog
 
+## 2026-08-20 - Package booking display order S263 candidate
+
+- Informasi `CONFIRMED` dari keputusan Andreas dan exact source
+  `26a34eca77d63dfb3eea35678a7b63caed4ebce8` yang sudah dipush serta mendapat
+  owner UAT approval.
+- Before: urutan paket publik mengikuti urutan database implisit, sorting admin
+  hanya visual, dan kategori Solo/Berdua-Grup diinferensikan dari kapasitas.
+  After: operator mengatur satu urutan kanonik per cabang melalui drag-and-drop
+  atau tombol naik/turun; kategori Solo, Couple, Grup, Family, dan Lainnya
+  disimpan eksplisit dan semua Template Booking membaca urutan yang sama.
+- Paket draft mempertahankan posisi tetapi tidak tampil publik; paket baru atau
+  pindah cabang masuk terakhir. Endpoint bulk memakai transaksi,
+  `manage_catalog`, tenant/cabang guard, full-list validation, dan stale-order
+  409. ID paket serta booking historis tidak dibuat ulang.
+- Full backend 1.055/1.055 (11.985 assertion), focused final 42/42 (240), build
+  5.132 modul, design 26/0, visual Paket mobile, form Paket desktop, dan E2E
+  drag-save-reload lulus.
+- Status `PUSHED / OWNER_UAT_APPROVED / UIUX_VALIDATED / QA_VALIDATED /
+  SECURITY_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Production tetap S262
+  `20260820064803-ab9687c` sampai release gate exact commit selesai.
+
 ## 2026-08-20 - Settings module navigation recovery S262
 
 - Exact source `ab9687c48b27840222001b461bfe33cf86d36ae1` aktif sebagai

@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-20 - SagaBook S263 package ordering candidate
+
+- Exact source `26a34eca77d63dfb3eea35678a7b63caed4ebce8` menambahkan
+  urutan paket kanonik per cabang, drag-and-drop serta tombol naik/turun, dan
+  kategori Solo/Couple/Grup/Family/Lainnya yang eksplisit.
+- Admin, preview, dan semua Template Booking memakai urutan authoritative yang
+  sama; draft tetap tersembunyi dari customer dan stale multi-tab ditolak tanpa
+  menimpa urutan terbaru.
+- Full backend 1.055/1.055, focused 42/42, build 5.132, design 26/0, visual
+  mobile/desktop, dan E2E reorder lulus. Status `PUSHED /
+  OWNER_UAT_APPROVED / IMPLEMENTED_NOT_DEPLOYED`; production SagaBook tetap
+  S262 dan produk SagaDev lain tidak berubah.
+
 ## 2026-08-20 - SagaBook S262 settings navigation recovery
 
 - Exact source `ab9687c48b27840222001b461bfe33cf86d36ae1` aktif sebagai
