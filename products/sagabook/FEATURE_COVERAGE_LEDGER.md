@@ -1,6 +1,19 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 20 Agustus 2026 12:40 WIB
+Evidence cut-off: 20 Agustus 2026 14:10 WIB
+
+S262 exact source `ab9687c48b27840222001b461bfe33cf86d36ae1`
+telah `CONFIRMED / PUSHED / UIUX_VALIDATED / QA_VALIDATED /
+SECURITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Release aktif
+`20260820064803-ab9687c` memakai rollback langsung
+`20260820052220-62a7acb`. Default ikon Pengaturan dipulihkan ke Template
+Booking, seluruh menu setting kembali terlihat, dan Subscription & Billing
+tetap tersedia sebagai item eksplisit. Full backend 1.051/1.051 (11.968
+assertion), build 5.132 modul, design audit 26/0, navigation lintas viewport,
+template dan UI contract 27/27, changelog 3/3, backup terenkripsi/disposable
+restore, atomic activation, verifier 17/17, public smoke 3/3, dan security
+profile 3/3 lulus. Authenticated Owner/operator UAT, dua studio pilot, dan
+provider canary nyata belum dijalankan; `BUSINESS_READY=false`.
 
 S261 exact source `62a7acb0fb3197568a9721a47cf43564ab321e48`
 telah `CONFIRMED / PUSHED / UIUX_VALIDATED / QA_VALIDATED /

@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-20 - SagaBook S262 settings navigation recovery
+
+- Exact source `ab9687c48b27840222001b461bfe33cf86d36ae1` aktif sebagai
+  release `20260820064803-ab9687c`; rollback langsung
+  `20260820052220-62a7acb`.
+- Ikon Pengaturan kembali membuka Template Booking dan seluruh alat setting;
+  billing tetap tersedia sebagai item tersendiri dan tidak lagi mengambil alih
+  tujuan default gear.
+- Full backend 1.051/1.051, build 5.132, design audit 26/0, UI/template 27/27,
+  backup/restore, atomic activation, verifier 17/17, smoke 3/3, dan security
+  3/3 lulus. Status `PRODUCTION_ACTIVATED`; `BUSINESS_READY` tetap gate
+  terpisah.
+
 ## 2026-08-20 - SagaBook S261 production toolbar interaction
 
 - Exact source `62a7acb0fb3197568a9721a47cf43564ab321e48` aktif sebagai

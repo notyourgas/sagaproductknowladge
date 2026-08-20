@@ -1,5 +1,24 @@
 # SagaBook Changelog
 
+## 2026-08-20 - Settings module navigation recovery S262
+
+- Exact source `ab9687c48b27840222001b461bfe33cf86d36ae1` aktif sebagai
+  release `20260820064803-ab9687c` dengan rollback langsung
+  `20260820052220-62a7acb`.
+- Before: klik ikon Pengaturan membuka portal Subscription & Billing sehingga
+  panel Template Booking dan alat setting lain tidak terlihat. After: gear
+  membuka Template Booking dan panel merender seluruh grup Pengaturan.
+- Subscription & Billing tetap tersedia sebagai item eksplisit; permission,
+  billing flow, API, database, dan data tenant tidak berubah. Registry produk
+  naik ke versi `1.11.1`.
+- Gate exact commit: full backend 1.051/1.051 (11.968 assertion), build 5.132,
+  design audit 26/0, navigation lintas viewport, template dan UI contract
+  27/27, changelog 3/3, backup terenkripsi/disposable restore, verifier 17/17,
+  public smoke 3/3, dan security profile 3/3.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+  `BUSINESS_READY=false` sampai authenticated Owner/operator UAT, dua studio
+  pilot, dan provider canary nyata selesai.
+
 ## 2026-08-20 - Production toolbar minimize and hover expand S261
 
 - Exact source `62a7acb0fb3197568a9721a47cf43564ab321e48` aktif sebagai

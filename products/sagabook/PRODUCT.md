@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 20 Agustus 2026 12:40 WIB
+Updated: 20 Agustus 2026 14:10 WIB
 Evidence status: production deployment and activation verified; business readiness pending
 
 ## Tujuan dokumen
@@ -15,6 +15,22 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- S262 exact source `ab9687c48b27840222001b461bfe33cf86d36ae1`
+  berstatus `CONFIRMED / PUSHED / UIUX_VALIDATED / QA_VALIDATED /
+  SECURITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Release
+  aktif `20260820064803-ab9687c` dengan rollback langsung
+  `20260820052220-62a7acb`. Ikon Pengaturan kini membuka Template Booking dan
+  panel kontekstual kembali menampilkan Setup Checklist, Pengaturan,
+  Subscription & Billing, Audit Log, Privasi & Data, Bantuan & Recovery, dan
+  Changelog. Billing tetap tersedia sebagai tujuan eksplisit, bukan default
+  gear. Full backend 1.051/1.051 (11.968 assertion), build 5.132 modul, design
+  audit 26/0, focused navigation desktop/tablet/mobile, template dan full UI
+  contract 27/27, changelog 3/3 (398 assertion), backup terenkripsi/disposable
+  restore, serta verifier independen 17/17 termasuk public smoke 3/3 dan
+  security profile 3/3 lulus. `BUSINESS_READY=false`: authenticated
+  Owner/operator UAT, dua studio pilot, dan provider canary nyata tetap gate
+  terpisah.
 
 - S261 exact source `62a7acb0fb3197568a9721a47cf43564ab321e48`
   berstatus `CONFIRMED / PUSHED / UIUX_VALIDATED / QA_VALIDATED /

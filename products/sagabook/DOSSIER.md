@@ -7,14 +7,22 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 20 Agustus 2026 12:40 WIB
+- Updated: 20 Agustus 2026 14:10 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
-- Activation: `PRODUCTION_ACTIVATED`; current release S261
-  `20260820052220-62a7acb`, exact source
-  `62a7acb0fb3197568a9721a47cf43564ab321e48`, rollback langsung
-  `20260818091438-7fb8037`, dan verifier independen 17/17 termasuk HTTP 3/3
+- Activation: `PRODUCTION_ACTIVATED`; current release S262
+  `20260820064803-ab9687c`, exact source
+  `ab9687c48b27840222001b461bfe33cf86d36ae1`, rollback langsung
+  `20260820052220-62a7acb`, dan verifier independen 17/17 termasuk HTTP 3/3
   serta security profile 3/3
 - Business readiness: `NEEDS CONFIRMATION`
+- Navigation fix S262: klik ikon Pengaturan sekarang membuka Template Booking
+  dan merender seluruh grup Pengaturan; Subscription & Billing tetap tersedia
+  sebagai menu tersendiri. Full backend 1.051/1.051 (11.968 assertion), build
+  5.132 modul, design audit 26/0, navigation lintas viewport, template dan UI
+  contract 27/27, changelog 3/3, backup terenkripsi/disposable restore, atomic
+  activation, dan verifier 17/17 lulus. `BUSINESS_READY=false` sampai
+  authenticated Owner/operator UAT, dua studio pilot, dan provider canary
+  nyata selesai.
 - Dashboard production S261: shell SleekFlow-inspired memakai Plus Jakarta
   Sans, lima modul unik tanpa menu ganda, tombol minimize, preview sementara
   via hover/keyboard focus tanpa layout shift, dan tombol expand untuk pin
@@ -65,9 +73,9 @@ dalam satu dokumen public-safe.
 - Availability empty-response recovery, manual-transfer initial-load recovery,
   dan Payment Monitor action recovery: `PRODUCTION_DEPLOYED /
   PRODUCTION_ACTIVATED`
-- Source kumulatif aktif: `62a7acb0fb3197568a9721a47cf43564ab321e48`,
-  release `20260820052220-62a7acb`, rollback
-  `20260818091438-7fb8037`. Exact source tersedia di remote `main`; archive, Git
+- Source kumulatif aktif: `ab9687c48b27840222001b461bfe33cf86d36ae1`,
+  release `20260820064803-ab9687c`, rollback
+  `20260820052220-62a7acb`. Exact source tersedia di remote `main`; archive, Git
   bundle, backup/restore, migrasi, atomic activation, smoke, service, journal,
   dan rollback terverifikasi.
 - S73 provider-cleared payout pada source fitur

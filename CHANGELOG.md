@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-20 - SagaBook S262 settings navigation production sync
+
+- Informasi `CONFIRMED` dari exact source
+  `ab9687c48b27840222001b461bfe33cf86d36ae1`, release aktif
+  `20260820064803-ab9687c`, dan rollback `20260820052220-62a7acb`.
+- Knowledge mencatat pemulihan default gear ke Template Booking, seluruh menu
+  Pengaturan, pemisahan tujuan Subscription & Billing, registry `1.11.1`,
+  hasil regression, backup/restore, activation, dan verifier independen.
+- Delivery `PUSHED / UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; `BUSINESS_READY=false`.
+- Dokumen terdampak: SagaBook product/dossier/changelog/coverage,
+  portfolio/master, root changelog, dan sync status.
+
 ## 2026-08-20 - SagaBook S261 production toolbar sync
 
 - Informasi `CONFIRMED` dari exact source
