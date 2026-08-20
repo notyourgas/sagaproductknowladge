@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 20 Agustus 2026 15:32 WIB
-Evidence status: S264 upload UI locally validated; production remains S263; business readiness pending
+Updated: 20 Agustus 2026 15:56 WIB
+Evidence status: S264 upload UI production-activated; business readiness pending
 
 ## Tujuan dokumen
 
@@ -16,9 +16,11 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
-- Candidate S264 exact source `a6d585eb5627071f3a62c3bef342284598adb751`
-  berstatus `CONFIRMED / PUSHED / UIUX_VALIDATED / QA_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED`. Area Foto Paket kini memakai satu judul dan satu
+- S264 feature source `a6d585eb5627071f3a62c3bef342284598adb751`
+  dan exact release source `6d89fc14649f48886f38d39f66580a36e2784552`
+  berstatus `CONFIRMED / PUSHED / OWNER_UAT_APPROVED / UIUX_VALIDATED /
+  QA_VALIDATED / SECURITY_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`. Area Foto Paket kini memakai satu judul dan satu
   hitungan, satu status kontekstual, dropzone ringkas, serta dua petunjuk pendek;
   empat kartu state pasif, label ganda, dan tiga blok panduan berulang dihapus.
   Copy dipadatkan menjadi “Tampil sebagai galeri di halaman booking”, “Pilih
@@ -26,8 +28,13 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   live status, angka tabular, error dekat aksi, batas 10 file, format, dan
   validasi upload dipertahankan. Build 5.132 modul, design audit 26/0, browser
   Paket tanpa overflow, shared upload surfaces 3/3, serta E2E upload dua foto dan
-  reload 1/1 lulus. API, database, tenant, permission, asset persistence, dan
-  production tidak berubah; S263 `20260820080539-7ac5efd` tetap aktif.
+  reload 1/1 lulus. Registry produk `1.12.1`; full release gate dan dependency
+  audit lulus. Backup terenkripsi run `20260820T084630Z`, checksum, offsite
+  round-trip, dan restore disposable tiga database lulus tanpa plaintext.
+  Release aktif `20260820084829-6d89fc1` dengan rollback langsung
+  `20260820080539-7ac5efd`; verifier independen 17/17, public smoke 3/3, dan
+  security profile 3/3 lulus. API, schema, tenant, permission, dan kontrak
+  persistensi aset tidak berubah. `BUSINESS_READY=false` tetap gate terpisah.
 
 - S263 feature source `26a34eca77d63dfb3eea35678a7b63caed4ebce8`
   dan exact release source `7ac5efd371b83162566120c7c832cb2c25943c71`

@@ -1,9 +1,10 @@
 # SagaBook Changelog
 
-## 2026-08-20 - Simplified package photo upload UI S264 candidate
+## 2026-08-20 - Simplified package photo upload UI S264 production
 
 - Founder meminta area Foto Paket lebih sederhana, singkat, dan efisien.
-  Exact source `a6d585eb5627071f3a62c3bef342284598adb751` sudah dipush.
+  Feature source `a6d585eb5627071f3a62c3bef342284598adb751` sudah dipush dan
+  mendapat owner UAT approval.
 - Before: judul/count muncul dua kali, empat kemungkinan status tampil
   bersamaan, empty panel mengulang konteks, dan tiga blok panduan membuat form
   panjang. After: satu header/count, satu status kontekstual, dropzone ringkas,
@@ -13,8 +14,16 @@
   focus, live status, error placement, batas 10 foto, validasi, dan persistensi
   tetap dipertahankan.
 - Build 5.132 modul, design 26/0, browser Paket 1/1, shared surfaces 3/3, dan
-  upload-persist E2E 1/1 lulus. Status `PUSHED / UIUX_VALIDATED / QA_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED`; production tetap S263.
+  upload-persist E2E 1/1 lulus. Exact release source
+  `6d89fc14649f48886f38d39f66580a36e2784552` menambahkan registry `1.12.1`.
+- Backup terenkripsi run `20260820T084630Z`, checksum, offsite round-trip,
+  restore disposable tiga database, full release gate, dependency audit, dan
+  atomic activation lulus. Release aktif `20260820084829-6d89fc1`, rollback
+  langsung `20260820080539-7ac5efd`; verifier independen 17/17, smoke 3/3, dan
+  security profile 3/3 lulus.
+- Status `PUSHED / OWNER_UAT_APPROVED / UIUX_VALIDATED / QA_VALIDATED /
+  SECURITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
+  `BUSINESS_READY=false` tetap gate terpisah.
 
 ## 2026-08-20 - Production package booking display order S263
 

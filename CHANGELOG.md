@@ -1,14 +1,19 @@
 # Saga Product Knowledge Changelog
 
-## 2026-08-20 - SagaBook S264 simplified upload UI candidate sync
+## 2026-08-20 - SagaBook S264 simplified upload UI production sync
 
 - Informasi `CONFIRMED` dari arahan Andreas dan exact source
   `a6d585eb5627071f3a62c3bef342284598adb751` yang sudah dipush.
 - Knowledge mencatat before/after hierarki Foto Paket, copy singkat, satu state
   kontekstual, accessibility safeguards, hasil build/design/browser/E2E, dan
   tidak adanya perubahan backend maupun production.
-- Delivery `PUSHED / UIUX_VALIDATED / QA_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED`; production SagaBook tetap S263.
+- Exact release source `6d89fc14649f48886f38d39f66580a36e2784552`
+  aktif sebagai `20260820084829-6d89fc1` dengan rollback langsung
+  `20260820080539-7ac5efd`; registry produk `1.12.1`.
+- Delivery `PUSHED / OWNER_UAT_APPROVED / UIUX_VALIDATED / QA_VALIDATED /
+  SECURITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; encrypted
+  backup/disposable restore, dependency audit, atomic activation, verifier
+  17/17, smoke 3/3, dan security profile 3/3 lulus.
 - Dokumen terdampak: SagaBook product/dossier/changelog/coverage,
   portfolio/master, founder decision, root changelog, dan sync status.
 

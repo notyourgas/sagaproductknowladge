@@ -1,18 +1,23 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 20 Agustus 2026 15:32 WIB
+Evidence cut-off: 20 Agustus 2026 15:56 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
-SagaBook S264 exact `a6d585eb5627071f3a62c3bef342284598adb751`
-berstatus `PUSHED / UIUX_VALIDATED / QA_VALIDATED /
-IMPLEMENTED_NOT_DEPLOYED`. Foto Paket kini memakai satu header/count, satu
+SagaBook S264 feature source `a6d585eb5627071f3a62c3bef342284598adb751`
+dan exact release source `6d89fc14649f48886f38d39f66580a36e2784552`
+berstatus `PUSHED / OWNER_UAT_APPROVED / UIUX_VALIDATED / QA_VALIDATED /
+SECURITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Foto Paket
+kini memakai satu header/count, satu
 status kontekstual, dropzone ringkas, grid hasil, serta dua petunjuk pendek;
 copy menyebut galeri booking, tombol Pilih Foto, empty state Belum ada foto,
 dan foto pertama sebagai cover. Batas 10 file, validation, keyboard focus,
 live status, error placement, upload persistence, API, database, tenant, dan
 permission tidak berubah. Build 5.132, design 26/0, browser dan E2E upload
-lulus. Production tetap S263; jangan mengklaim S264 deployed atau activated.
+lulus. Registry `1.12.1`; backup/restore, dependency audit, atomic activation,
+verifier 17/17, smoke 3/3, dan security 3/3 lulus. Release aktif
+`20260820084829-6d89fc1`, rollback `20260820080539-7ac5efd`. Jangan menyebut
+`BUSINESS_READY` sebelum dua studio pilot dan provider canary nyata selesai.
 
 SagaBook S263 feature source `26a34eca77d63dfb3eea35678a7b63caed4ebce8`
 dan exact release source `7ac5efd371b83162566120c7c832cb2c25943c71`

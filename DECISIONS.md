@@ -1222,5 +1222,5 @@ keputusan pengganti.
 | Alternatif yang dipertimbangkan | Mempertahankan empat kartu status; hanya memendekkan copy tanpa mengubah hierarki; menyembunyikan semua petunjuk; membuat wizard upload terpisah. |
 | Dampak | Form Paket lebih pendek dan satu CTA lebih jelas, sementara batas 10 foto, aturan file, cover pertama, validation, keyboard focus, live status, error placement, dan persistensi upload tetap dipertahankan. Shared upload surfaces memperoleh struktur ringkas yang sama tanpa perubahan backend. |
 | Pemberi keputusan | Andreas / founder |
-| Status | `CONFIRMED / PUSHED / UIUX_VALIDATED / QA_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; exact source `a6d585eb5627071f3a62c3bef342284598adb751` |
+| Status | `CONFIRMED / PUSHED / OWNER_UAT_APPROVED / UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; feature source `a6d585eb5627071f3a62c3bef342284598adb751`, exact release source `6d89fc14649f48886f38d39f66580a36e2784552`, release `20260820084829-6d89fc1` |
 | Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [SagaBook Changelog](products/sagabook/CHANGELOG.md), [SagaBook Ledger](products/sagabook/FEATURE_COVERAGE_LEDGER.md) |

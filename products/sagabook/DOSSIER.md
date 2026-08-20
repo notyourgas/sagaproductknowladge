@@ -7,25 +7,29 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 20 Agustus 2026 15:32 WIB
+- Updated: 20 Agustus 2026 15:56 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
-- Activation: `PRODUCTION_ACTIVATED`; current release S263
-  `20260820080539-7ac5efd`, exact release source
-  `7ac5efd371b83162566120c7c832cb2c25943c71`, rollback langsung
-  `20260820064803-ab9687c`, dan verifier independen 17/17 termasuk HTTP 3/3
+- Activation: `PRODUCTION_ACTIVATED`; current release S264
+  `20260820084829-6d89fc1`, exact release source
+  `6d89fc14649f48886f38d39f66580a36e2784552`, rollback langsung
+  `20260820080539-7ac5efd`, dan verifier independen 17/17 termasuk HTTP 3/3
   serta security profile 3/3
 - Business readiness: `NEEDS CONFIRMATION`
-- Candidate upload UI S264 exact
-  `a6d585eb5627071f3a62c3bef342284598adb751`: `CONFIRMED / PUSHED /
-  UIUX_VALIDATED / QA_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Upload Foto Paket
+- Upload UI S264 feature source
+  `a6d585eb5627071f3a62c3bef342284598adb751` dan exact release source
+  `6d89fc14649f48886f38d39f66580a36e2784552`: `CONFIRMED / PUSHED /
+  OWNER_UAT_APPROVED / UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Upload Foto Paket
   diringkas dari label ganda, empat kartu status, empty panel, dan tiga kolom
   panduan menjadi satu header, count singkat, satu current-state panel,
   dropzone, grid hasil, serta dua microcopy bantuan. Empty state menyebut foto
   pertama sebagai cover; input file tetap keyboard-focusable, status memakai
   live region, error tetap dekat tindakan, dan batas 10 file tidak berubah.
   Build 5.132 modul, design 26/0, browser Paket, tiga shared surface, dan E2E
-  upload-persist lulus. Tidak ada perubahan API, schema, tenant scope,
-  permission, storage, atau production; S263 tetap aktif.
+  upload-persist lulus. Registry `1.12.1`; full release gate, dependency audit,
+  encrypted backup `20260820T084630Z`, offsite round-trip, restore disposable,
+  atomic activation, verifier 17/17, smoke 3/3, dan security profile 3/3 lulus.
+  Tidak ada perubahan API, schema, tenant scope, permission, atau storage.
 - Package ordering S263 feature source
   `26a34eca77d63dfb3eea35678a7b63caed4ebce8` dan exact release source
   `7ac5efd371b83162566120c7c832cb2c25943c71`: `CONFIRMED / PUSHED /
