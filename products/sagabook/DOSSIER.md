@@ -7,26 +7,28 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 20 Agustus 2026 14:44 WIB
+- Updated: 20 Agustus 2026 15:15 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
-- Activation: `PRODUCTION_ACTIVATED`; current release S262
-  `20260820064803-ab9687c`, exact source
-  `ab9687c48b27840222001b461bfe33cf86d36ae1`, rollback langsung
-  `20260820052220-62a7acb`, dan verifier independen 17/17 termasuk HTTP 3/3
+- Activation: `PRODUCTION_ACTIVATED`; current release S263
+  `20260820080539-7ac5efd`, exact release source
+  `7ac5efd371b83162566120c7c832cb2c25943c71`, rollback langsung
+  `20260820064803-ab9687c`, dan verifier independen 17/17 termasuk HTTP 3/3
   serta security profile 3/3
 - Business readiness: `NEEDS CONFIRMATION`
-- Candidate package ordering S263 exact
-  `26a34eca77d63dfb3eea35678a7b63caed4ebce8`: `CONFIRMED / PUSHED /
+- Package ordering S263 feature source
+  `26a34eca77d63dfb3eea35678a7b63caed4ebce8` dan exact release source
+  `7ac5efd371b83162566120c7c832cb2c25943c71`: `CONFIRMED / PUSHED /
   OWNER_UAT_APPROVED / UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED`. Menu Paket menyediakan pengurutan per cabang
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Menu Paket menyediakan pengurutan per cabang
   dengan drag-and-drop dan kontrol naik/turun; satu urutan authoritative
   dipakai seluruh Template Booking. Kategori Solo, Couple, Grup, Family, dan
   Lainnya disimpan eksplisit. Draft tetap tidak publik, paket baru ditambahkan
   di akhir, dan save memakai transaksi, capability `manage_catalog`, scope
   tenant/cabang, serta stale-order 409. Full backend 1.055/1.055 (11.985
   assertion), focused final 42/42 (240), build 5.132 modul, design 26/0, visual
-  mobile/desktop, dan E2E drag-save-reload lulus. Production masih S262 sampai
-  release gate lengkap.
+  mobile/desktop, dan E2E drag-save-reload lulus. Registry `1.12.0`; backup
+  terenkripsi/disposable restore, migration rehearsal, atomic activation,
+  verifier 17/17, public smoke 3/3, dan security profile 3/3 lulus.
 - Navigation fix S262: klik ikon Pengaturan sekarang membuka Template Booking
   dan merender seluruh grup Pengaturan; Subscription & Billing tetap tersedia
   sebagai menu tersendiri. Full backend 1.051/1.051 (11.968 assertion), build

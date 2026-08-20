@@ -1,10 +1,12 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 20 Agustus 2026 14:44 WIB
+Evidence cut-off: 20 Agustus 2026 15:15 WIB
 
-S263 exact source `26a34eca77d63dfb3eea35678a7b63caed4ebce8`
+S263 feature source `26a34eca77d63dfb3eea35678a7b63caed4ebce8` dan exact
+release source `7ac5efd371b83162566120c7c832cb2c25943c71`
 telah `CONFIRMED / PUSHED / OWNER_UAT_APPROVED / UIUX_VALIDATED /
-QA_VALIDATED / SECURITY_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Operator dapat
+QA_VALIDATED / SECURITY_VALIDATED / PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED`. Operator dapat
 mengurutkan seluruh paket dalam satu cabang menggunakan drag-and-drop atau
 tombol naik/turun; urutan authoritative yang sama dibaca admin, preview, dan
 semua renderer Template Booking. Kategori paket tidak lagi diinferensikan dari
@@ -15,8 +17,11 @@ cabang, memakai transaksi, capability dan tenant/branch guard, menolak stale
 tab 409, duplikasi, serta payload tidak lengkap tanpa mengubah ID paket atau
 riwayat booking. Full backend 1.055/1.055 (11.985 assertion), focused final
 42/42 (240), build 5.132 modul, design audit 26/0, visual Paket mobile, form
-Paket desktop, dan E2E drag-save-reload lulus. Production aktif tetap S262
-`20260820064803-ab9687c` sampai release gate lengkap selesai.
+Paket desktop, dan E2E drag-save-reload lulus. Registry `1.12.0`; backup
+terenkripsi, disposable restore, exact migration rehearsal, atomic activation,
+verifier 17/17, public smoke 3/3, serta security profile 3/3 lulus. Release
+aktif `20260820080539-7ac5efd` dengan rollback langsung
+`20260820064803-ab9687c`; `BUSINESS_READY=false` tetap gate terpisah.
 
 S262 exact source `ab9687c48b27840222001b461bfe33cf86d36ae1`
 telah `CONFIRMED / PUSHED / UIUX_VALIDATED / QA_VALIDATED /

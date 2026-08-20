@@ -1,6 +1,6 @@
 # SagaBook Changelog
 
-## 2026-08-20 - Package booking display order S263 candidate
+## 2026-08-20 - Production package booking display order S263
 
 - Informasi `CONFIRMED` dari keputusan Andreas dan exact source
   `26a34eca77d63dfb3eea35678a7b63caed4ebce8` yang sudah dipush serta mendapat
@@ -17,9 +17,16 @@
 - Full backend 1.055/1.055 (11.985 assertion), focused final 42/42 (240), build
   5.132 modul, design 26/0, visual Paket mobile, form Paket desktop, dan E2E
   drag-save-reload lulus.
+- Exact release source `7ac5efd371b83162566120c7c832cb2c25943c71`
+  menambahkan registry `1.12.0` dan checksum allowlist migrasi tanpa mengubah
+  perilaku fitur yang sudah di-UAT. Backup run `20260820T080307Z`, checksum,
+  restore disposable, exact migration rehearsal, full release gate, dan atomic
+  activation lulus.
 - Status `PUSHED / OWNER_UAT_APPROVED / UIUX_VALIDATED / QA_VALIDATED /
-  SECURITY_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Production tetap S262
-  `20260820064803-ab9687c` sampai release gate exact commit selesai.
+  SECURITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Release
+  aktif `20260820080539-7ac5efd`, rollback langsung
+  `20260820064803-ab9687c`, verifier independen 17/17, smoke 3/3, dan security
+  profile 3/3 lulus. `BUSINESS_READY=false` tetap gate terpisah.
 
 ## 2026-08-20 - Settings module navigation recovery S262
 

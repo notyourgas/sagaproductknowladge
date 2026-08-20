@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 20 Agustus 2026 14:44 WIB
-Evidence status: S263 source and owner UAT verified; production remains S262; business readiness pending
+Updated: 20 Agustus 2026 15:15 WIB
+Evidence status: S263 production activated and independently verified; business readiness pending
 
 ## Tujuan dokumen
 
@@ -16,9 +16,11 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
-- Candidate S263 exact source `26a34eca77d63dfb3eea35678a7b63caed4ebce8`
+- S263 feature source `26a34eca77d63dfb3eea35678a7b63caed4ebce8`
+  dan exact release source `7ac5efd371b83162566120c7c832cb2c25943c71`
   berstatus `CONFIRMED / PUSHED / OWNER_UAT_APPROVED / UIUX_VALIDATED /
-  QA_VALIDATED / SECURITY_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Owner dapat
+  QA_VALIDATED / SECURITY_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`. Owner dapat
   mengatur satu urutan paket kanonik per cabang melalui drag-and-drop atau
   tombol naik/turun; urutan yang sama dipakai seluruh Template Booking.
   Kategori paket kini eksplisit sebagai Solo, Couple, Grup, Family, atau
@@ -26,9 +28,14 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   customer, paket baru masuk posisi terakhir, dan konflik tab lain ditolak.
   Full backend 1.055/1.055 (11.985 assertion), focused final 42/42 (240), build
   5.132 modul, design audit 26/0, visual Paket mobile, form Paket desktop, dan
-  E2E drag-save-reload lulus. ID paket serta riwayat booking dipertahankan;
-  production aktif tetap S262 `20260820064803-ab9687c` sampai exact-commit
-  release gate, backup/restore, migrasi, activation, dan verifier selesai.
+  E2E drag-save-reload lulus. Registry produk `1.12.0`. Backup terenkripsi run
+  `20260820T080307Z`, checksum, Google Drive round-trip, restore disposable
+  tiga database, dan rehearsal migrasi exact commit lulus tanpa menyimpan
+  plaintext. Release aktif `20260820080539-7ac5efd` dengan rollback langsung
+  `20260820064803-ab9687c`; verifier independen 17/17 termasuk migrasi nol
+  pending, journal nol error, public smoke 3/3, dan security profile 3/3 lulus.
+  ID paket serta riwayat booking dipertahankan. `BUSINESS_READY=false` sampai
+  dua studio pilot dan provider canary nyata selesai.
 
 - S262 exact source `ab9687c48b27840222001b461bfe33cf86d36ae1`
   berstatus `CONFIRMED / PUSHED / UIUX_VALIDATED / QA_VALIDATED /

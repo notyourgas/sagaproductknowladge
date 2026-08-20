@@ -1,19 +1,23 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 20 Agustus 2026 14:44 WIB
+Evidence cut-off: 20 Agustus 2026 15:15 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
-SagaBook S263 exact `26a34eca77d63dfb3eea35678a7b63caed4ebce8`
+SagaBook S263 feature source `26a34eca77d63dfb3eea35678a7b63caed4ebce8`
+dan exact release source `7ac5efd371b83162566120c7c832cb2c25943c71`
 berstatus `PUSHED / OWNER_UAT_APPROVED / UIUX_VALIDATED / QA_VALIDATED /
-SECURITY_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Owner dapat mengatur satu
+SECURITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Owner dapat mengatur satu
 urutan paket per cabang melalui drag-and-drop atau tombol naik/turun; kategori
 Solo, Couple, Grup, Family, dan Lainnya disimpan eksplisit. Semua Template
 Booking membaca urutan yang sama, draft tidak tampil publik, paket baru masuk
 terakhir, dan konflik tab lain ditolak. Full backend 1.055/1.055 (11.985
 assertion), focused 42/42 (240), build 5.132, design 26/0, visual dan E2E
-reorder lulus. Production aktif tetap S262 sampai release gate lengkap; jangan
-mengklaim S263 deployed atau activated sebelum receipt production terverifikasi.
+reorder lulus. Registry `1.12.0`; release aktif `20260820080539-7ac5efd`
+dengan rollback `20260820064803-ab9687c`. Backup/restore, exact migration
+rehearsal, atomic activation, verifier 17/17, smoke 3/3, dan security profile
+3/3 lulus. Jangan menyebut `BUSINESS_READY` sebelum dua studio pilot dan
+provider canary nyata selesai.
 
 SagaBook S262 exact `ab9687c48b27840222001b461bfe33cf86d36ae1`
 aktif di production sebagai release `20260820064803-ab9687c` dengan rollback

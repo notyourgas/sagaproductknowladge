@@ -1,6 +1,6 @@
 # Portfolio Changelog
 
-## 2026-08-20 - SagaBook S263 package ordering candidate
+## 2026-08-20 - SagaBook S263 package ordering production
 
 - Exact source `26a34eca77d63dfb3eea35678a7b63caed4ebce8` menambahkan
   urutan paket kanonik per cabang, drag-and-drop serta tombol naik/turun, dan
@@ -9,9 +9,12 @@
   sama; draft tetap tersembunyi dari customer dan stale multi-tab ditolak tanpa
   menimpa urutan terbaru.
 - Full backend 1.055/1.055, focused 42/42, build 5.132, design 26/0, visual
-  mobile/desktop, dan E2E reorder lulus. Status `PUSHED /
-  OWNER_UAT_APPROVED / IMPLEMENTED_NOT_DEPLOYED`; production SagaBook tetap
-  S262 dan produk SagaDev lain tidak berubah.
+  mobile/desktop, dan E2E reorder lulus. Exact release source
+  `7ac5efd371b83162566120c7c832cb2c25943c71` aktif sebagai
+  `20260820080539-7ac5efd`, rollback `20260820064803-ab9687c`; backup/restore,
+  migration rehearsal, atomic activation, verifier 17/17, smoke 3/3, dan
+  security 3/3 lulus. Status `PRODUCTION_ACTIVATED`; produk SagaDev lain tidak
+  berubah dan `BUSINESS_READY` tetap gate terpisah.
 
 ## 2026-08-20 - SagaBook S262 settings navigation recovery
 

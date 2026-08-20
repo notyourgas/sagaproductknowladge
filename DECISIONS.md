@@ -1208,5 +1208,5 @@ keputusan pengganti.
 | Alternatif yang dipertimbangkan | Mempertahankan urutan database implisit; membuat urutan berbeda per template; mengurutkan hanya paket aktif; tetap menebak kategori dari kapasitas. |
 | Dampak | Schema bertambah secara aditif; API reorder transaksional dan tenant/cabang-scoped; admin, preview, dan publik membaca urutan yang sama. ID paket, relasi booking, harga, availability, payment, dan permission authority dipertahankan. |
 | Pemberi keputusan | Andreas / founder |
-| Status | `CONFIRMED / PUSHED / OWNER_UAT_APPROVED / IMPLEMENTED_NOT_DEPLOYED`; exact source `26a34eca77d63dfb3eea35678a7b63caed4ebce8` |
+| Status | `CONFIRMED / PUSHED / OWNER_UAT_APPROVED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; feature source `26a34eca77d63dfb3eea35678a7b63caed4ebce8`, exact release source `7ac5efd371b83162566120c7c832cb2c25943c71`, release `20260820080539-7ac5efd` |
 | Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [SagaBook Changelog](products/sagabook/CHANGELOG.md), [SagaBook Ledger](products/sagabook/FEATURE_COVERAGE_LEDGER.md) |
