@@ -1,8 +1,16 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 20 Agustus 2026 04:05 WIB
+Evidence cut-off: 20 Agustus 2026 07:04 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
+
+SagaBook S257 exact `622e2b76df0e2fb182e8bec4ccb50425877fce3f`
+berstatus `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Bundler
+kandidat release lokal kini menolak primary dan secondary pada volume root yang
+sama sebelum mutation; C:+C: gagal tanpa folder baru dan C:+D: lulus
+check-only. Output menandai `primarySecondaryVolumeDistinct=true`. Ini bukti
+volume root berbeda, bukan disk fisik terpisah, dan bukan fitur pengguna;
+production aktif tetap S244 serta `BUSINESS_READY` belum.
 
 SagaBook S256 exact `f43e011d9cc7d13270d5ead267fb57ba5453c260`
 berstatus `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Bundler

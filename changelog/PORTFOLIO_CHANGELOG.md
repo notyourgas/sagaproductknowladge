@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-20 - SagaBook S257 independent release copy volumes
+
+- Exact source `622e2b76df0e2fb182e8bec4ccb50425877fce3f` mewajibkan
+  salinan primary dan secondary kandidat lokal berada pada volume root berbeda
+  sebelum mutation.
+- C:+C: gagal tertutup tanpa folder baru; C:+D: lulus check-only. Release
+  hardening 16/16, build, parser/lint, dependency audit, dan verifier production
+  17/17 lulus. Ini tidak mengklaim disk fisik terpisah.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+  S244 dan `BUSINESS_READY` tidak berubah.
+
 ## 2026-08-20 - SagaBook S256 local release volume suitability
 
 - Exact source `f43e011d9cc7d13270d5ead267fb57ba5453c260` memperketat

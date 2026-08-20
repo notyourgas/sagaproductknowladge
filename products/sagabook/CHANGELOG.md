@@ -1,5 +1,21 @@
 # SagaBook Changelog
 
+## 2026-08-20 - Independent local release copy volumes S257
+
+- Informasi `CONFIRMED` dari exact source
+  `622e2b76df0e2fb182e8bec4ccb50425877fce3f` pada remote branch terisolasi.
+- Before: primary dan secondary yang berbeda direktori tetapi sama-sama pada C:
+  diterima. After: volume root yang sama ditolak sebelum mutation; C:+C: gagal
+  tanpa folder baru, sedangkan C:+D: lulus check-only.
+- Output public-safe memuat `primarySecondaryVolumeDistinct=true`; klaim hanya
+  mencakup volume root berbeda, bukan disk fisik terpisah.
+- Gate exact commit: release hardening 16/16 (209 assertion), build 5.132 modul,
+  PowerShell parser, PHP lint, audit npm nol vulnerability, Composer OSV 114
+  paket/nol advisory, serta verifier production read-only 17/17.
+- Status `PUSHED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; UI, API, database, tenant, payment, provider,
+  production, activation, dan business readiness tidak berubah.
+
 ## 2026-08-20 - Local release volume suitability S256
 
 - Informasi `CONFIRMED` dari exact source

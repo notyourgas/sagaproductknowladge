@@ -1,6 +1,18 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 20 Agustus 2026 04:05 WIB
+Evidence cut-off: 20 Agustus 2026 07:04 WIB
+
+S257 exact source `622e2b76df0e2fb182e8bec4ccb50425877fce3f`
+telah `PUSHED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`. Bundler kandidat release lokal kini mewajibkan
+salinan primary dan secondary berada pada volume root berbeda sebelum mutasi.
+Before, dua direktori berbeda pada C: lolos; after, kombinasi C:+C: gagal
+tertutup tanpa membuat folder, sedangkan C:+D: lulus check-only dan melaporkan
+`primarySecondaryVolumeDistinct=true`. Release hardening 16/16 (209 assertion),
+build 5.132 modul, parser/lint, audit npm/Composer OSV nol temuan, dan verifier
+production 17/17 lulus. Ini membuktikan independensi volume root, bukan disk
+fisik. UI, API, database, tenant, payment, provider, dan production tidak
+berubah; production aktif tetap S244 dan `BUSINESS_READY` belum.
 
 S256 exact source `f43e011d9cc7d13270d5ead267fb57ba5453c260`
 telah `PUSHED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
