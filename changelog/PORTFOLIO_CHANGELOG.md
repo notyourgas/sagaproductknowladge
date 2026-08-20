@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-20 - SagaBook S258 release reparse-point guard
+
+- Exact source `2b00e8c36cffd814d8e687202abb0bc0c1309bc6` menolak path
+  output/staging melalui junction atau reparse point sebelum capacity check dan
+  mutation.
+- Junction C: menuju D: gagal tertutup tanpa folder baru; path normal C:+D:
+  tetap lulus. Release hardening 16/16, build, parser/lint, dependency audit,
+  dan verifier production 17/17 lulus.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+  S244 dan `BUSINESS_READY` tidak berubah.
+
 ## 2026-08-20 - SagaBook S257 independent release copy volumes
 
 - Exact source `622e2b76df0e2fb182e8bec4ccb50425877fce3f` mewajibkan

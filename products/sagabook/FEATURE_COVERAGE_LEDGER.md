@@ -1,6 +1,19 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 20 Agustus 2026 07:04 WIB
+Evidence cut-off: 20 Agustus 2026 09:05 WIB
+
+S258 exact source `2b00e8c36cffd814d8e687202abb0bc0c1309bc6`
+telah `PUSHED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`. Bundler kandidat release lokal kini menolak path
+primary, secondary, atau staging yang melewati junction/reparse point sebelum
+capacity check maupun mutasi. Before, junction yang terlihat C: tetapi menuju
+D: lolos sebagai C:+D: berbeda; after, jalur itu gagal tertutup tanpa folder
+baru, sedangkan path normal C:+D: tetap lulus. Output menandai
+`reparsePointTraversalGuarded=true`. Release hardening 16/16 (218 assertion),
+build 5.132 modul, parser/lint, audit npm/Composer OSV nol temuan, dan verifier
+production 17/17 lulus. UI, API, database, tenant, payment, provider, dan
+production tidak berubah; production aktif tetap S244 dan `BUSINESS_READY`
+belum.
 
 S257 exact source `622e2b76df0e2fb182e8bec4ccb50425877fce3f`
 telah `PUSHED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /

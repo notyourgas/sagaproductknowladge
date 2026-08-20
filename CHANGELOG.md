@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-20 - SagaBook S258 release reparse guard sync
+
+- Informasi `CONFIRMED` dari exact source
+  `2b00e8c36cffd814d8e687202abb0bc0c1309bc6` dan gate exact-worktree.
+- Knowledge mencatat rejection junction/reparse path sebelum capacity check dan
+  mutation, acceptance path normal, serta batas perubahan hanya pada tooling
+  release tanpa menjadikannya headline produk.
+- Delivery `PUSHED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production S244 dan `BUSINESS_READY` tetap.
+- Dokumen terdampak: SagaBook product/dossier/changelog/coverage,
+  portfolio/master, root changelog, dan sync status.
+
 ## 2026-08-20 - SagaBook S257 independent release volumes sync
 
 - Informasi `CONFIRMED` dari exact source

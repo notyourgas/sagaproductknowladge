@@ -1,5 +1,21 @@
 # SagaBook Changelog
 
+## 2026-08-20 - Release output reparse-point guard S258
+
+- Informasi `CONFIRMED` dari exact source
+  `2b00e8c36cffd814d8e687202abb0bc0c1309bc6` pada remote branch terisolasi.
+- Before: junction yang terlihat berada di C: tetapi menuju D: lolos sebagai
+  pasangan volume C:+D:. After: setiap komponen path existing dengan atribut
+  reparse point ditolak sebelum capacity check atau mutation.
+- Junction gagal tertutup tanpa folder baru; path normal C:+D: tetap lulus dan
+  output public-safe memuat `reparsePointTraversalGuarded=true`.
+- Gate exact commit: release hardening 16/16 (218 assertion), build 5.132 modul,
+  PowerShell parser, PHP lint, audit npm nol vulnerability, Composer OSV 114
+  paket/nol advisory, serta verifier production read-only 17/17.
+- Status `PUSHED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; UI, API, database, tenant, payment, provider,
+  production, activation, dan business readiness tidak berubah.
+
 ## 2026-08-20 - Independent local release copy volumes S257
 
 - Informasi `CONFIRMED` dari exact source
