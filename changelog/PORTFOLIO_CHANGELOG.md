@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-20 - SagaBook S265 combined service-fee UI candidate
+
+- Exact source `63b17f9a6af5437e663db265a3f1f2c6305a4ce5` menyederhanakan
+  ringkasan customer menjadi satu `Biaya layanan` dan total QRIS tanpa rincian
+  SagaDev/provider atau paragraf penjelasan berulang.
+- Split fee internal, ledger, settlement, audit, API, database, dan calculation
+  tidak berubah. Settlement 19/19, browser mobile/desktop 4/4, build 5.132,
+  design 26/0, visual baseline, dan no-overflow lulus.
+- Status `PUSHED / UIUX_VALIDATED / QA_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; SagaBook production tetap S264 dan produk lain
+  tidak berubah.
+
 ## 2026-08-20 - SagaBook S264 simplified upload UI production
 
 - Exact source `a6d585eb5627071f3a62c3bef342284598adb751` menyederhanakan

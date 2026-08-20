@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Updated: 20 Agustus 2026 15:56 WIB
+- Updated: 20 Agustus 2026 16:34 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED`; current release S264
   `20260820084829-6d89fc1`, exact release source
@@ -15,6 +15,16 @@ dalam satu dokumen public-safe.
   `20260820080539-7ac5efd`, dan verifier independen 17/17 termasuk HTTP 3/3
   serta security profile 3/3
 - Business readiness: `NEEDS CONFIRMATION`
+- Combined service-fee UI S265 exact
+  `63b17f9a6af5437e663db265a3f1f2c6305a4ce5`: `CONFIRMED / PUSHED /
+  UIUX_VALIDATED / QA_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Ringkasan customer
+  menggabungkan service fee SagaDev dan provider menjadi satu `Biaya layanan`
+  berdasarkan selisih customer payable dengan booking amount; total QRIS tetap
+  eksplisit. Nama SagaDev, persentase, nama provider, status fee provider, dan
+  paragraf penjelasan tidak dirender. Data split internal tidak diubah sehingga
+  settlement dan audit tetap authoritative. Focused backend 19/19 (173),
+  browser known/unknown provider mobile-desktop 4/4, build 5.132, design 26/0,
+  screenshot, serta no-overflow lulus. Production tetap S264.
 - Upload UI S264 feature source
   `a6d585eb5627071f3a62c3bef342284598adb751` dan exact release source
   `6d89fc14649f48886f38d39f66580a36e2784552`: `CONFIRMED / PUSHED /

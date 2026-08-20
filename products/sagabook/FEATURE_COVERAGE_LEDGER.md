@@ -1,6 +1,17 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 20 Agustus 2026 15:56 WIB
+Evidence cut-off: 20 Agustus 2026 16:34 WIB
+
+S265 exact source `63b17f9a6af5437e663db265a3f1f2c6305a4ce5` telah
+`CONFIRMED / PUSHED / UIUX_VALIDATED / QA_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`. Ringkasan pembayaran customer menampilkan satu
+`Biaya layanan` sebesar selisih nominal final dan subtotal booking, lalu total
+QRIS; rincian SagaDev/provider dan paragraf penjelasan dihapus. Split internal,
+ledger, settlement, fee calculation, API, schema, tenant, dan payment flow tidak
+berubah. Browser mengunci nominal gabungan pada provider fee known maupun
+unknown, memastikan copy lama tidak kembali, dan lulus mobile/desktop 4/4 tanpa
+overflow. Settlement 19/19 (173 assertion), build 5.132, design 26/0, serta
+visual baseline lulus. Production tetap S264.
 
 S264 feature source `a6d585eb5627071f3a62c3bef342284598adb751` dan exact
 release source `6d89fc14649f48886f38d39f66580a36e2784552` telah `CONFIRMED /

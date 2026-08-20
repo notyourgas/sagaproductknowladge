@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-20 - SagaBook S265 combined service-fee UI candidate sync
+
+- Informasi `CONFIRMED` dari arahan Andreas dan exact source
+  `63b17f9a6af5437e663db265a3f1f2c6305a4ce5` yang sudah dipush.
+- Knowledge mencatat satu biaya layanan customer, removal rincian provider dan
+  copy berulang, preservasi settlement/audit internal, serta hasil validation.
+- Delivery `PUSHED / UIUX_VALIDATED / QA_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production SagaBook tetap S264.
+- Dokumen terdampak: SagaBook product/dossier/changelog/coverage,
+  portfolio/master, founder decision, root changelog, dan sync status.
+
 ## 2026-08-20 - SagaBook S264 simplified upload UI production sync
 
 - Informasi `CONFIRMED` dari arahan Andreas dan exact source

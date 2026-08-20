@@ -1,5 +1,20 @@
 # SagaBook Changelog
 
+## 2026-08-20 - Combined customer service-fee UI S265 candidate
+
+- Founder meminta breakdown SagaDev 2%, fee Tokopay, dan paragraf penjelasan
+  tidak lagi ditampilkan kepada customer. Exact source
+  `63b17f9a6af5437e663db265a3f1f2c6305a4ce5` sudah dipush.
+- Before: kartu memecah biaya menjadi dua baris dan menjelaskan bahwa harga
+  booking tidak berubah. After: satu baris `Biaya layanan` menampilkan selisih
+  nominal final terhadap subtotal, diikuti `Total dibayar via QRIS`.
+- Split internal SagaDev/provider tetap tersedia bagi ledger, settlement, dan
+  audit; API, database, fee calculation, dan payment flow tidak berubah.
+- Focused settlement 19/19 (173), browser known/unknown provider mobile-desktop
+  4/4, build 5.132, design 26/0, screenshot baseline, dan no-overflow lulus.
+  Status `PUSHED / UIUX_VALIDATED / QA_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap S264.
+
 ## 2026-08-20 - Simplified package photo upload UI S264 production
 
 - Founder meminta area Foto Paket lebih sederhana, singkat, dan efisien.

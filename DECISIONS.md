@@ -1224,3 +1224,17 @@ keputusan pengganti.
 | Pemberi keputusan | Andreas / founder |
 | Status | `CONFIRMED / PUSHED / OWNER_UAT_APPROVED / UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; feature source `a6d585eb5627071f3a62c3bef342284598adb751`, exact release source `6d89fc14649f48886f38d39f66580a36e2784552`, release `20260820084829-6d89fc1` |
 | Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [SagaBook Changelog](products/sagabook/CHANGELOG.md), [SagaBook Ledger](products/sagabook/FEATURE_COVERAGE_LEDGER.md) |
+
+## DEC-087 - Customer melihat satu biaya layanan gabungan
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-20 |
+| Topik | Penyederhanaan breakdown biaya QRIS SagaBook |
+| Keputusan | Ringkasan pembayaran customer menampilkan satu baris `Biaya layanan` sebesar selisih nominal final terhadap subtotal booking. Persentase SagaDev, biaya atau nama provider, dan paragraf penjelasan tidak ditampilkan; total dibayar via QRIS tetap eksplisit. |
+| Alasan | Founder menilai customer sudah memahami konsep biaya layanan dan rincian internal membuat kartu pembayaran terlalu panjang. |
+| Alternatif yang dipertimbangkan | Tetap menampilkan dua fee; mengganti nama provider saja; menyembunyikan seluruh fee dan hanya menampilkan total. |
+| Dampak | Hierarki pembayaran lebih ringkas tanpa mengubah calculation, jumlah yang dibayar, ledger, settlement, audit, API, database, atau payment flow. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / PUSHED / UIUX_VALIDATED / QA_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; exact source `63b17f9a6af5437e663db265a3f1f2c6305a4ce5` |
+| Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [SagaBook Changelog](products/sagabook/CHANGELOG.md), [SagaBook Ledger](products/sagabook/FEATURE_COVERAGE_LEDGER.md) |

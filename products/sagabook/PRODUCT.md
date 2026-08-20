@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 20 Agustus 2026 15:56 WIB
-Evidence status: S264 upload UI production-activated; business readiness pending
+Updated: 20 Agustus 2026 16:34 WIB
+Evidence status: S265 combined service-fee UI locally validated; production remains S264; business readiness pending
 
 ## Tujuan dokumen
 
@@ -15,6 +15,17 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- Candidate S265 exact source `63b17f9a6af5437e663db265a3f1f2c6305a4ce5`
+  berstatus `CONFIRMED / PUSHED / UIUX_VALIDATED / QA_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Customer kini melihat satu baris `Biaya layanan`
+  yang merupakan selisih nominal final dengan subtotal booking, bukan rincian
+  persentase SagaDev dan biaya provider. Paragraf penjelasan berulang dihapus;
+  `Total dibayar via QRIS` tetap terlihat. Split internal provider dan SagaDev
+  tetap dipertahankan untuk ledger, settlement, dan audit. Focused settlement
+  19/19 (173 assertion), browser mobile/desktop 4/4, build 5.132 modul, design
+  audit 26/0, visual baseline, serta no-overflow lulus. Tidak ada perubahan API,
+  database, fee calculation, payment flow, atau production; S264 tetap aktif.
 
 - S264 feature source `a6d585eb5627071f3a62c3bef342284598adb751`
   dan exact release source `6d89fc14649f48886f38d39f66580a36e2784552`
