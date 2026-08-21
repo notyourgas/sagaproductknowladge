@@ -1,8 +1,24 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 21 Agustus 2026 18:40 WIB
+Evidence cut-off: 21 Agustus 2026 19:59 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
+
+SagaBook Template Booking semantic component colors exact release source
+`9bc208af60b9a9abc08c64ad463313d734cca734`, feature implementation
+`c8fd2103f7274bdb3d5d0d2a4748ca547f0f418b`, berstatus `CONFIRMED / PUSHED /
+UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED`. Global dan Custom halaman memiliki tujuh token semantic
+untuk heading, card/card text, primary button text, secondary button/text, dan
+border. Judul biasa transparan tanpa kotak; card, input, filter, payment method,
+CTA, dan secondary action memakai token aktif di preview serta public booking.
+Fallback legacy/manual `Minimal` telah disamakan agar tidak kembali ke palette
+cream preset. Registry `1.15.1`; release `20260821124922-9bc208a` aktif dengan
+rollback `20260821122634-c8fd210`. Full PHP 1.064/1.064 (12.336), focused final
+24/24 (916), visual final 23 pass/3 intentional skip, type-check, build,
+dependency audit, encrypted backup/restore, verifier 17/17, public/security
+smoke 3/3, readiness 100/100, dan Chrome production sembilan halaman lulus.
+Draft customer tidak diedit atau dipublish; `BUSINESS_READY=false`.
 
 SagaBook Template Booking token-parity hotfix exact release source
 `9fa050286ecacac6e04d154b36f899476bcab035`, feature implementation

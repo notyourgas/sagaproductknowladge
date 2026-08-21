@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 21 Agustus 2026 18:40 WIB
-Evidence status: Template Booking token-parity hotfix production active and owner-preview UAT passed; broader business readiness pending
+Updated: 21 Agustus 2026 19:59 WIB
+Evidence status: Template Booking semantic component colors production active and nine-page Chrome UAT passed; broader business readiness pending
 
 ## Tujuan dokumen
 
@@ -15,6 +15,26 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- Template Booking semantic component colors exact release source
+  `9bc208af60b9a9abc08c64ad463313d734cca734` (feature implementation
+  `c8fd2103f7274bdb3d5d0d2a4748ca547f0f418b`) berstatus `CONFIRMED /
+  PUSHED / UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Global Brand dan Custom halaman
+  kini menambahkan tujuh kontrol semantic untuk judul, latar card, teks card,
+  teks tombol utama, tombol sekunder beserta teksnya, dan border. Judul biasa
+  tidak lagi menerima kotak background/border/shadow; card, input, filter,
+  payment method, CTA, serta aksi sekunder membaca token yang sama di preview
+  dan website booking. Fallback template legacy/manual `Minimal` juga memakai
+  kontrak ini, bukan palette cream preset. Registry aktif `1.15.1`; release
+  `20260821124922-9bc208a` aktif dengan rollback
+  `20260821122634-c8fd210`. Full PHP 1.064/1.064 (12.336 assertion), focused
+  final 24/24 (916 assertion), type-check, build, audit dependency, encrypted
+  backup/restore, atomic activation, verifier 17/17, readiness 100/100, serta
+  visual final 23 pass/3 intentional skip lulus. Chrome production memeriksa
+  sembilan halaman `Minimal`: judul transparan dan warna heading/card/input/
+  button/border cocok dengan token. Draft customer tidak diubah atau
+  dipublish; `BUSINESS_READY=false`.
 
 - Template Booking token-parity hotfix exact release source
   `9fa050286ecacac6e04d154b36f899476bcab035` (feature implementation

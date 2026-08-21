@@ -1,6 +1,22 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 21 Agustus 2026 18:40 WIB
+Evidence cut-off: 21 Agustus 2026 19:59 WIB
+
+Template Booking semantic component colors exact release source
+`9bc208af60b9a9abc08c64ad463313d734cca734`, feature implementation
+`c8fd2103f7274bdb3d5d0d2a4748ca547f0f418b`, telah `CONFIRMED / PUSHED /
+UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED`. Coverage mengikat tujuh token heading/card/card text/
+primary button text/secondary button/secondary text/border ke Global Brand dan
+Custom halaman, contrast warning, canonical hash, rehydrate, exact publish,
+preview ACK, public renderer, serta legacy/manual `Minimal`. Plain title wajib
+transparan; card, input, filter, payment method, CTA, dan secondary action wajib
+memakai computed token. Full PHP 1.064/1.064 (12.336), focused final 24/24
+(916), editor/publish/layout/parity regression, visual final 23 pass/3
+intentional skip, build/audit, encrypted backup/restore, verifier 17/17,
+smoke/security 3/3, readiness 100/100, dan Chrome production sembilan halaman
+lulus. Registry `1.15.1`; release `20260821124922-9bc208a` aktif dengan
+rollback `20260821122634-c8fd210`; `BUSINESS_READY=false`.
 
 Template Booking token-parity hotfix exact release source
 `9fa050286ecacac6e04d154b36f899476bcab035`, feature implementation

@@ -12,16 +12,28 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-21T18:40:00+07:00 |
-| Branch aktif | `codex/knowledge-sagabook-token-parity-hotfix` dari worktree bersih exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-21T19:59:00+07:00 |
+| Branch aktif | `codex/sagabook-component-colors-knowledge` dari worktree bersih exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `050c884864920d4e5ecbd9d116a10915c89246ea` |
-| Informasi terakhir disinkronkan | SagaBook Template Booking token parity exact release source `9fa050286ecacac6e04d154b36f899476bcab035` production-activated sebagai `20260821112729-9fa0502`; Owner UAT preview merah lulus tanpa Publish. |
+| Baseline sebelum pembaruan | `7e04531f710d8b5760b2b95f144bde2b08e53301` |
+| Informasi terakhir disinkronkan | SagaBook Template Booking semantic component colors exact release source `9bc208af60b9a9abc08c64ad463313d734cca734` production-activated sebagai `20260821124922-9bc208a`; Chrome production sembilan halaman lulus. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
-| Konflik | Worktree bersih memakai exact `origin/main`; clone canonical lokal yang divergen 1/137 tidak disentuh. Produk lain tidak diubah. |
+| Konflik | Worktree bersih memakai exact `origin/main`; clone canonical lokal yang divergen tidak disentuh. Produk lain tidak diubah. |
 | Error | Tidak ada blocker release. UAT operator/cohort lebih luas tetap diperlukan sebelum `BUSINESS_READY`; status saat ini `BUSINESS_READY=false`. |
 
-## File yang berubah pada sinkronisasi ini (SagaBook token parity hotfix)
+## File yang berubah pada sinkronisasi ini (SagaBook semantic component colors S272)
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
+
+## File yang berubah pada sinkronisasi sebelumnya (SagaBook token parity hotfix)
 
 - `products/sagabook/PRODUCT.md`
 - `products/sagabook/DOSSIER.md`

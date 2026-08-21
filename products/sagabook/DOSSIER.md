@@ -7,6 +7,23 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Template Booking semantic component colors exact release source
+  `9bc208af60b9a9abc08c64ad463313d734cca734`, feature implementation
+  `c8fd2103f7274bdb3d5d0d2a4748ca547f0f418b`: `CONFIRMED / PUSHED /
+  UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`. Tujuh token semantic Global/Custom mengatur heading,
+  card/card text, primary button text, secondary button/text, dan border.
+  Plain title transparan tanpa kotak; card, input, filter, payment method, CTA,
+  dan secondary action memakai token aktif. Validator, canonical hash,
+  rehydrate, exact publish, dan public snapshot mempertahankan seluruh token.
+  Fallback legacy/manual `Minimal` juga mengikuti kontrak ini. Full PHP
+  1.064/1.064 (12.336), focused 24/24 (916), visual final 23 pass/3
+  intentional skip, build/audit, encrypted backup/restore, activation atomik,
+  verifier 17/17, smoke/security 3/3, readiness 100/100, dan Chrome production
+  sembilan halaman lulus. Registry `1.15.1`; release aktif
+  `20260821124922-9bc208a`, rollback `20260821122634-c8fd210`;
+  `BUSINESS_READY=false`.
+
 - Template Booking token-parity hotfix exact release source
   `9fa050286ecacac6e04d154b36f899476bcab035`, feature implementation
   `0617dba3c5c8e73045c24f0db84b4ca6fb65c0f3`: `CONFIRMED / PUSHED /
@@ -79,12 +96,12 @@ dalam satu dokumen public-safe.
   assisted, bukan perubahan runtime SagaBook; lifecycle DEC-029 tetap berlaku
   sampai ada release entitlement terpisah.
 
-- Updated: 21 Agustus 2026 18:40 WIB
+- Updated: 21 Agustus 2026 19:59 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED`; current release
-  `20260821112729-9fa0502`, exact release source
-  `9fa050286ecacac6e04d154b36f899476bcab035`, rollback langsung hotfix awal
-  `20260821110414-0617dba`, dan verifier independen 17/17 termasuk HTTP 3/3
+  `20260821124922-9bc208a`, exact release source
+  `9bc208af60b9a9abc08c64ad463313d734cca734`, rollback langsung
+  `20260821122634-c8fd210`, dan verifier independen 17/17 termasuk HTTP 3/3
   serta security profile 3/3
 - Business readiness: `NEEDS CONFIRMATION`
 - Host-storage recovery S267 exact

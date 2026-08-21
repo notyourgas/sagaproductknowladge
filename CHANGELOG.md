@@ -1,5 +1,21 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-21 - SagaBook semantic component colors S272 production sync
+
+- Informasi `CONFIRMED` berasal dari keputusan Andreas, exact source
+  `9bc208af60b9a9abc08c64ad463313d734cca734`, feature implementation
+  `c8fd2103f7274bdb3d5d0d2a4748ca547f0f418b`, dan release production
+  `20260821124922-9bc208a`.
+- Knowledge mencatat tujuh token semantic Global/Custom, title transparan,
+  contrast warning, parity preview/public, fallback template legacy `Minimal`,
+  serta registry `1.15.1`.
+- Delivery `PUSHED / UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; rollback
+  `20260821122634-c8fd210`, verifier 17/17, smoke/security 3/3, readiness
+  100/100, dan Chrome production sembilan halaman lulus.
+- Dokumen terdampak: SagaBook product/dossier/changelog/coverage, portfolio,
+  master, gaps, root changelog, dan sync status. `BUSINESS_READY=false`.
+
 ## 2026-08-21 - SagaBook Template Booking token parity production sync
 
 - Informasi `CONFIRMED` berasal dari keputusan Andreas, exact source

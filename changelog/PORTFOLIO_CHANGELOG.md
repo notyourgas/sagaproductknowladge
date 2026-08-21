@@ -1,5 +1,21 @@
 # Portfolio Changelog
 
+## 2026-08-21 - SagaBook semantic component colors S272
+
+- Global Brand dan Custom halaman kini mengatur judul, card, teks card, teks
+  tombol utama, tombol sekunder beserta teksnya, dan border melalui tujuh token
+  semantic baru; warning contrast tersedia di editor.
+- Kotak background/border/shadow pada judul biasa dihapus. Card, input,
+  filter, payment method, CTA, dan aksi sekunder memakai token yang sama pada
+  Preview Live dan website booking, termasuk template legacy `Minimal`.
+- Exact release source `9bc208af60b9a9abc08c64ad463313d734cca734`
+  aktif sebagai `20260821124922-9bc208a`; rollback
+  `20260821122634-c8fd210` tersedia.
+- Full PHP 1.064/1.064, focused final 24/24, visual final 23 pass/3 intentional
+  skip, build/audit, backup/restore, verifier 17/17, smoke/security 3/3, dan
+  readiness 100/100 lulus. Chrome production sembilan halaman lulus;
+  `BUSINESS_READY=false`.
+
 ## 2026-08-21 - SagaBook Template Booking token parity hotfix
 
 - Global Brand dan Custom halaman sekarang mengubah enam warna yang benar-benar

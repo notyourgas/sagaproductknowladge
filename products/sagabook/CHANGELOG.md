@@ -1,5 +1,30 @@
 # SagaBook Changelog
 
+## 2026-08-21 - Semantic component colors S272 production
+
+- Klasifikasi: `CONFIRMED`; keputusan desain berasal dari Andreas dan exact
+  release source `9bc208af60b9a9abc08c64ad463313d734cca734` (feature
+  `c8fd2103f7274bdb3d5d0d2a4748ca547f0f418b`) aktif di production.
+- Before: selector CSS preset dapat memberi kotak gelap pada judul, sementara
+  card, input, tombol, teks, dan border masih jatuh ke palette cream. After:
+  judul biasa transparan dan tujuh token semantic baru mengatur heading,
+  card/card text, primary button text, secondary button/text, dan border pada
+  Global Brand maupun Custom halaman.
+- Editor memberi warning contrast AA; backend memvalidasi warna hex dan
+  mempertahankan token dalam draft hash, rehydrate, exact publish, serta
+  public snapshot. Template legacy/manual `Minimal` mendapat fallback dari
+  token aktif sehingga tidak kembali ke cream preset.
+- Full PHP 1.064/1.064 (12.336 assertion), focused final 24/24 (916),
+  type-check, build, Composer/npm audit, matriks editor/publish/layout/parity,
+  dan visual produksi final 23 pass/3 intentional skip lulus.
+- Release `20260821124922-9bc208a` aktif dengan rollback
+  `20260821122634-c8fd210`; encrypted backup/restore, atomic activation,
+  verifier 17/17, public/security smoke 3/3, dan readiness 100/100 lulus.
+- Chrome production memeriksa seluruh sembilan halaman `Minimal`, termasuk
+  title transparent, card/input, CTA, tombol sekunder, dan border. Sesi admin
+  yang terbuka sudah kedaluwarsa sehingga tidak ada draft customer yang
+  diedit atau dipublish. `BUSINESS_READY=false`.
+
 ## 2026-08-21 - Global/Custom Brand token parity production hotfix
 
 - Klasifikasi: `CONFIRMED`; keputusan perbaikan berasal dari Andreas dan exact

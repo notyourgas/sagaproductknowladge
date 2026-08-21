@@ -8,7 +8,7 @@ diubah menjadi klaim publik sebelum ditutup dengan bukti atau keputusan owner.
 
 ## Konteks
 
-Daftar ini berlaku pada evidence cut-off 21 Agustus 2026 18:40 WIB dan harus diperbarui
+Daftar ini berlaku pada evidence cut-off 21 Agustus 2026 19:59 WIB dan harus diperbarui
 ketika keputusan atau release baru menutup gap.
 
 ## Cara memakai
@@ -38,6 +38,14 @@ server authoritative, dan public profile tidak berubah sebelum publish sah.
 Authenticated Owner UAT khusus parity background sudah lulus di Chrome tanpa
 Publish. Residualnya adalah UAT operator lebih luas dan cohort pilot pada
 GAP-004, bukan gap implementasi template.
+
+SagaBook GAP-012 `CLOSED`; exact source
+`9bc208af60b9a9abc08c64ad463313d734cca734` menutup kotak background pada plain
+title dan palette cream yang masih mengunci card, input, tombol, teks, serta
+border. Tujuh token semantic tersimpan dalam snapshot exact dan berlaku pada
+preview/public, termasuk fallback template legacy `Minimal`. Chrome production
+sembilan halaman dan automated regression lulus. Residual tetap cohort pilot
+GAP-004, bukan gap implementasi warna komponen.
 
 | ID | Produk/area | Label | Pertanyaan atau gap | Bukti penutup |
 |---|---|---|---|---|
