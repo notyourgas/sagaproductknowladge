@@ -1,6 +1,18 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 21 Agustus 2026 23:45 WIB
+Evidence cut-off: 22 Agustus 2026 00:40 WIB
+
+Preset booking `Cinematic Noir` exact source
+`3ffe3b8c612baead82e303242151559fc1b717c0` telah `CONFIRMED / PUSHED /
+UIUX_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED / NOT_DEPLOYED`. Coverage
+mengikat sembilan recipe layout ke workflow universal, inheritance Global Brand,
+token semantic dark editorial, CTA solid, title tanpa kotak, safe-area, touch
+target 44 piksel, dan viewport 344/360/390/430/460. Visual khusus preset 3/3
+membuktikan seluruh halaman, responsive/no-overflow, serta select -> save ->
+authoritative preview ACK; accessibility enam preset 20/20 dan backend contract
+21/21 (378 assertion) lulus bersama TypeScript, build, XML, serta audit npm/
+Composer. Branch sudah pushed tetapi belum merge/deploy; runtime production dan
+asset foto final tidak berubah.
 
 Normalisasi orientasi foto cabang exact source
 `7afdf345cf32427d390c2d636ef1107833136ae8` telah `CONFIRMED / PUSHED /

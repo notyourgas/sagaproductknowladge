@@ -12,16 +12,27 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-21T23:45:00+07:00 |
-| Branch aktif | `codex/knowledge-s270-branch-photo-exif` dari worktree bersih exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-22T00:40:00+07:00 |
+| Branch aktif | `codex/s272-cinematic-noir-knowledge` dari worktree bersih exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `1a8e3e2cc33f4caa34bbe23485a9dc48ec82177d` |
-| Informasi terakhir disinkronkan | SagaBook normalisasi orientasi foto cabang exact source `7afdf345cf32427d390c2d636ef1107833136ae8` aktif sebagai release `20260821163643-7afdf34`; rollback `20260821124922-9bc208a`. |
-| Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
+| Baseline sebelum pembaruan | `79edb47d7c94a0cbdb4c56a1b595b9ad875de653` |
+| Informasi terakhir disinkronkan | SagaBook preset booking `Cinematic Noir` exact source `3ffe3b8c612baead82e303242151559fc1b717c0` sudah pushed dan local-validated; belum merge/deploy. |
+| Status sinkronisasi | `UP TO DATE` setelah validator dan fast-forward push. |
 | Konflik | Worktree bersih memakai exact `origin/main`; clone canonical lokal yang divergen tidak disentuh. Produk lain tidak diubah. |
-| Error | Tidak ada blocker deployment. Foto lama yang sudah miring perlu di-upload ulang; authenticated Owner/operator UAT dan pilot tetap diperlukan sebelum `BUSINESS_READY`. |
+| Error | Tidak ada blocker source. Preset belum merge/deploy dan asset fotografi final belum digenerate; production serta `BUSINESS_READY` tidak berubah. |
 
-## File yang berubah pada sinkronisasi ini (SagaBook branch photo orientation)
+## File yang berubah pada sinkronisasi ini (SagaBook Cinematic Noir)
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
+
+## File yang berubah pada sinkronisasi sebelumnya (SagaBook branch photo orientation)
 
 - `products/sagabook/PRODUCT.md`
 - `products/sagabook/DOSSIER.md`

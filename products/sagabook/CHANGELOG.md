@@ -1,5 +1,24 @@
 # SagaBook Changelog
 
+## 2026-08-22 - Cinematic Noir booking preset source candidate
+
+- Klasifikasi: `CONFIRMED`; keputusan arah preset berasal dari Andreas dan
+  exact source `3ffe3b8c612baead82e303242151559fc1b717c0` sudah pushed ke
+  `codex/s272-sagabook-cinematic-noir`.
+- Before: lima preset existing belum menyediakan arah dark editorial yang
+  photography-first. After: `Cinematic Noir` menambah sembilan layout recipe,
+  surface charcoal, aksen amber, heading Cormorant, body Nexa, radius 12
+  piksel, CTA solid, serta inheritance Global Brand pada seluruh halaman.
+- Wireframe 3x3 dan asset-generation brief mencatat artboard 360/390/430/460,
+  layout, spacing, crop, format, prompt, negative prompt, safe-area, dan touch
+  target minimal 44 piksel.
+- Visual preset 3/3, accessibility enam preset 20/20, backend contract 21/21
+  (378 assertion), TypeScript, build, XML wireframe, npm audit nol vulnerability,
+  dan Composer audit nol advisory lulus.
+- Status `PUSHED / LOCAL_VALIDATED / NOT_DEPLOYED`; branch belum merge, release
+  production tidak berubah, asset fotografi final belum digenerate, dan
+  `BUSINESS_READY=false`.
+
 ## 2026-08-21 - Normalisasi orientasi foto cabang production
 
 - Klasifikasi: `CONFIRMED`; exact source

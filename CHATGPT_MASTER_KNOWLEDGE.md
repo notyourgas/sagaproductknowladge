@@ -1,8 +1,19 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 21 Agustus 2026 23:45 WIB
+Evidence cut-off: 22 Agustus 2026 00:40 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
+
+SagaBook preset booking `Cinematic Noir` exact source
+`3ffe3b8c612baead82e303242151559fc1b717c0` berstatus `CONFIRMED / PUSHED /
+UIUX_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED / NOT_DEPLOYED`. Preset keenam
+ini khusus storefront booking: dark editorial, photography-first, charcoal dan
+amber, Cormorant/Nexa, CTA solid, serta sembilan recipe yang mempertahankan
+workflow universal dan inherit Global Brand. Wireframe 3x3 serta asset brief
+menetapkan artboard 360/390/430/460, spacing, crop, format, prompt, safe-area,
+dan touch target. Visual 3/3, accessibility enam preset 20/20, backend 21/21
+(378 assertion), TypeScript/build, XML, dan audit dependency lulus. Branch belum
+merge/deploy; production, asset foto final, dan `BUSINESS_READY` tidak berubah.
 
 SagaBook normalisasi orientasi foto cabang exact source
 `7afdf345cf32427d390c2d636ef1107833136ae8` berstatus `CONFIRMED / PUSHED /

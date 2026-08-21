@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-22 - SagaBook Cinematic Noir source-candidate sync
+
+- Informasi `CONFIRMED` berasal dari keputusan Andreas dan exact source
+  `3ffe3b8c612baead82e303242151559fc1b717c0` yang telah pushed.
+- Knowledge mencatat preset dark editorial, sembilan recipe universal,
+  inheritance Global Brand, wireframe 3x3, asset-generation brief, viewport,
+  spacing, crop, format, safe-area, touch target, dan gate lokal.
+- Delivery `PUSHED / UIUX_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+  NOT_DEPLOYED`; belum merge, tidak ada perubahan runtime production, asset
+  final belum digenerate, dan `BUSINESS_READY=false`.
+- Dokumen terdampak: SagaBook product/dossier/changelog/coverage, portfolio,
+  master, root changelog, dan sync status.
+
 ## 2026-08-21 - SagaBook branch photo orientation production sync
 
 - Informasi `CONFIRMED` berasal dari exact source

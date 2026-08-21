@@ -7,6 +7,21 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Preset booking `Cinematic Noir` exact source
+  `3ffe3b8c612baead82e303242151559fc1b717c0`: `CONFIRMED / PUSHED /
+  UIUX_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED / NOT_DEPLOYED`. Arah visual
+  dark editorial memakai photography-first layout, surface charcoal, satu
+  aksen amber, heading Cormorant, body Nexa, radius 12 piksel, dan CTA solid
+  tanpa gradient baru. Sembilan layout recipe tetap memakai workflow universal
+  Lokasi, Paket, Waktu, Background, Add-on, Detail, Review, Pembayaran, dan
+  Selesai; semuanya inherit Global Brand secara default. Wireframe 3x3 dan
+  asset brief mendefinisikan ukuran 360/390/430/460, spacing, crop portrait/
+  landscape, format WebP/AVIF, prompt, negative prompt, safe area, dan minimum
+  touch target 44 piksel. Visual 3/3, accessibility enam preset 20/20, backend
+  21/21 (378 assertion), TypeScript/build, XML, serta audit dependency lulus.
+  Branch sudah pushed tetapi belum merge/deploy; tidak ada perubahan runtime
+  production atau asset fotografi final.
+
 - Normalisasi orientasi foto cabang exact source
   `7afdf345cf32427d390c2d636ef1107833136ae8`: `CONFIRMED / PUSHED /
   QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /

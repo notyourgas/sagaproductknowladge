@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-22 - SagaBook Cinematic Noir source candidate
+
+- Storefront booking memperoleh preset keenam `Cinematic Noir`: dark editorial,
+  photography-first, surface charcoal, aksen amber, typography Cormorant/Nexa,
+  CTA solid, dan sembilan layout recipe yang tetap memakai workflow universal.
+- Wireframe 3x3 dan asset-generation brief merinci viewport 360/390/430/460,
+  grid, padding, gap, crop, format, prompt, negative prompt, safe-area, serta
+  touch target minimum 44 piksel.
+- Exact source `3ffe3b8c612baead82e303242151559fc1b717c0` sudah pushed; visual
+  3/3, accessibility enam preset 20/20, backend 21/21, TypeScript/build, XML,
+  dan audit dependency lulus.
+- Status `LOCAL_VALIDATED / NOT_DEPLOYED`; belum merge, production dan
+  business readiness tidak berubah, serta asset foto final belum digenerate.
+
 ## 2026-08-21 - SagaBook branch photo orientation production
 
 - Upload foto cabang kini menormalkan orientasi JPEG kamera menjadi piksel
