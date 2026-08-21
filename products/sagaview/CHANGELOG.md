@@ -1,5 +1,24 @@
 # SagaView Changelog
 
+## 2026-08-22 - Rekonsiliasi lineage S159/S162 pada production aktif
+
+- Klasifikasi: koreksi provenance public-safe; runtime tidak diubah.
+- Before: ledger masih memberi status global `IMPLEMENTED_NOT_DEPLOYED` pada
+  kontrak estimasi-only S159 dan stale-conflict editor S162, walaupun pasangan
+  production telah bergerak ke release kumulatif yang memuat keduanya.
+- After: Git ancestry exact membuktikan backend S159 `38c4221e...`, Studio S159
+  `6d7083a3...`, dan backend S162 `063dfc1a...` merupakan ancestor backend aktif
+  `16fa73bf...` / `20260821151535-16fa73b` serta Studio aktif `645dddb...` /
+  `20260821090659-645dddb`. S164 `8fe77949...` bukan ancestor dan tetap
+  `IMPLEMENTED_NOT_DEPLOYED`.
+- Evidence: frame authoring exact-lineage 14/14 dengan 68 assertion; unit
+  estimasi/API 29/29; browser legacy payment hydration dan alias Review 2/2;
+  kedua worktree source exact, bersih, dan tersedia di remote.
+- Delivery: S159/S162 `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+  PRODUCTION_SCREENED`; S164 tetap `LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Tidak ada deploy, migration, perubahan data,
+  payment/provider, atau upload foto/path/output customer.
+
 ## 2026-08-21 - Login build-manifest recovery dan release guard
 
 - Klasifikasi: `CONFIRMED` production incident repair.

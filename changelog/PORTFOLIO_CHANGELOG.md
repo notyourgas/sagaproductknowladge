@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-22 - SagaView S159/S162 production lineage reconciliation
+
+- Audit exact Git ancestry memastikan kontrak estimasi-only S159 dan proteksi
+  stale-conflict editor S162 sudah tercakup pada backend aktif `16fa73bf...` /
+  `20260821151535-16fa73b` serta Studio aktif `645dddb...` /
+  `20260821090659-645dddb`.
+- Uji ulang active lineage lulus: frame authoring 14/14 dengan 68 assertion,
+  boundary estimasi/API 29/29, dan browser rehydrate/alias Review 2/2.
+- Kandidat progressive-disclosure Owner Pricing S164 `8fe77949...` bukan
+  ancestor production dan tetap `IMPLEMENTED_NOT_DEPLOYED`.
+- Ini koreksi provenance public-safe; source, runtime, database, payment, dan
+  batas local-first/no-upload tidak berubah.
+
 ## 2026-08-22 - SagaBook Cinematic Noir source candidate
 
 - Storefront booking memperoleh preset keenam `Cinematic Noir`: dark editorial,
