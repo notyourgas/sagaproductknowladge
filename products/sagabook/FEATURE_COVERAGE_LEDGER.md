@@ -1,6 +1,18 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 20 Agustus 2026 21:04 WIB
+Evidence cut-off: 21 Agustus 2026 14:00 WIB
+
+S269 exact source `73feb12f5f9cfd3f7f126e3b1fa42970335c97f7` telah
+`CONFIRMED / PUSHED / UIUX_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`. Tab Global Brand menyediakan aksi kontekstual
+`Simpan untuk Preview`; perubahan nama studio, warna, dan font menjadi draft
+preview lebih dulu, lalu Publish baru aktif. Preview menggunakan settings
+authoritative dari respons server dan website customer tetap memakai profile
+published. Double click tetap satu mutasi, status dirty/loading terbaca, target
+sentuh minimum 44 piksel, iframe menampilkan brand baru, dan tidak ada overflow
+pada matriks mobile/desktop. Build, feature 12/12 (160 assertion), draft/publish
+browser 3/3, adaptive 1/1, dan accessibility 18/18 lulus. Endpoint, schema,
+permission, pricing, payment, serta production tidak berubah; S265 tetap aktif.
 
 S267 exact source `ad1285cf9d02fb700e2b952ba736698580e9e2a5` telah
 `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Runbook

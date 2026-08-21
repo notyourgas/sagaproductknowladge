@@ -12,16 +12,29 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-21T12:20:00+07:00 |
-| Branch aktif | `codex/knowledge-saga-product-v25` dari clone bersih exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-21T14:00:00+07:00 |
+| Branch aktif | `codex/knowledge-s269-global-brand-preview` dari worktree bersih exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `f49934f70e29aa3012b8887264d0781cfda1497c` |
-| Informasi terakhir disinkronkan | SagaTech V25 memakai dashboard admin aktual sebagai thumbnail dan poster SagaBook; runtime, pricing, entitlement, PDF, video, trial, dan SagaView tidak berubah. |
+| Baseline sebelum pembaruan | `8a0555696de9c34f55ec146c0574e23e47520d5e` |
+| Informasi terakhir disinkronkan | SagaBook S269 menambahkan Global Brand `Simpan untuk Preview`, gate preview sebelum Publish, dan draft preview authoritative; production tetap S265. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
-| Konflik | Worktree bersih memakai exact `origin/main`; clone canonical lama yang divergen tidak disentuh. Trial SagaBook DEC-029 tidak diganti oleh revisi visual sales surface. |
-| Error | GAP-010 masih terbuka untuk runbook fulfillment assisted, quota register, dan receipt entitlement. Host SagaBook tetap `NO_GO`; Fonnte residual dan `BUSINESS_READY=false`. |
+| Konflik | Worktree bersih memakai exact `origin/main`; clone canonical lokal yang divergen tidak disentuh. Tidak ada perubahan runtime production, pricing, payment, atau produk lain. |
+| Error | GAP-011 mencatat hardening optimistic concurrency dan recovery draft lintas reload/tab. Host SagaBook tetap `NO_GO`; Fonnte residual dan `BUSINESS_READY=false`. |
 
-## File yang berubah pada sinkronisasi ini (SagaTech V25 admin thumbnail)
+## File yang berubah pada sinkronisasi ini (SagaBook S269 Global Brand preview-save)
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `DECISIONS.md`
+- `GAPS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
+
+## File yang berubah pada sinkronisasi sebelumnya (SagaTech V25 admin thumbnail)
 
 - `products/sagatech/PRODUCT.md`
 - `products/sagatech/DOSSIER.md`

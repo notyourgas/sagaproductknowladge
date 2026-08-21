@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-091 - Global Brand SagaBook wajib disimpan ke preview sebelum publish
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-21 |
+| Topik | Workflow Template Booking dan Global Brand |
+| Keputusan | Edit nama studio, warna, atau font pada Global Brand harus memiliki aksi kontekstual `Simpan untuk Preview`. Preview Live memakai draft yang sudah disimpan; Publish baru boleh dilakukan setelah save preview berhasil. Customer tetap melihat versi published sampai owner menekan Publish. |
+| Alasan | Tombol save sebelumnya hanya berada di header sehingga mudah terlewat dan perubahan dapat dipublish tanpa checkpoint preview yang jelas. |
+| Alternatif yang dipertimbangkan | Autosave setiap input; mempertahankan save hanya di header; membiarkan Publish langsung memakai form yang belum dipreview. |
+| Dampak | Tab Global Brand memiliki tombol dan status dirty; Publish digate oleh state preview tersimpan; header Preview membuka draft preview. Endpoint draft/publish, schema, pricing, payment, dan permission existing tidak berubah. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / PUSHED / UIUX_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; source `73feb12f5f9cfd3f7f126e3b1fa42970335c97f7` |
+| Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [SagaBook Changelog](products/sagabook/CHANGELOG.md), [SagaBook Ledger](products/sagabook/FEATURE_COVERAGE_LEDGER.md), [Gaps](GAPS.md) |
+
 ## DEC-089 - Saga Product menjadi funnel bio dengan penawaran early adopter assisted
 
 | Field | Isi |

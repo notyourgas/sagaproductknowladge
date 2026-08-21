@@ -1,8 +1,20 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 21 Agustus 2026 12:20 WIB
+Evidence cut-off: 21 Agustus 2026 14:00 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
+
+SagaBook S269 exact `73feb12f5f9cfd3f7f126e3b1fa42970335c97f7`
+berstatus `CONFIRMED / PUSHED / UIUX_VALIDATED / QA_VALIDATED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Pada `Template Booking > Global
+Brand`, owner mengedit nama studio, warna, dan font lalu klik `Simpan untuk
+Preview`. Draft tenant dan Preview Live memakai respons server; Publish tetap
+nonaktif sampai perubahan tersimpan ke preview, dan customer tetap membaca
+versi published sampai owner mempublish. Header `Buka Preview` membuka draft
+preview. Build, feature 12/12 (160 assertion), browser draft-publish 3/3,
+brand iframe, adaptive 1/1, dan accessibility 18/18 mobile/desktop lulus. Tidak
+ada API/schema/permission/pricing/payment baru. Production tetap S265 dan
+`BUSINESS_READY=false`.
 
 SagaTech V25 berstatus `CONFIRMED / PRODUCTION_DEPLOYED /
 PRODUCTION_ACTIVATED`. `https://sagatech.site/saga-product/` memakai satu

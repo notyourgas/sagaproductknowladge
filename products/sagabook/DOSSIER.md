@@ -7,6 +7,19 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Global Brand preview-save S269 exact
+  `73feb12f5f9cfd3f7f126e3b1fa42970335c97f7`: `CONFIRMED / PUSHED /
+  UIUX_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Owner mengedit nama studio, enam token warna, dan
+  dua font di tab Global Brand, lalu memakai tombol kontekstual `Simpan untuk
+  Preview`. Save menggunakan boundary draft tenant existing dan respons server
+  menjadi sumber editor, local preview scoped, serta iframe Preview Live.
+  Perubahan belum terlihat customer sebelum `Publish`; aksi Publish dinonaktifkan
+  ketika draft form belum disimpan ke preview. Build, 12 feature test/160
+  assertion, browser draft/publish recovery, brand iframe, adaptive layout,
+  serta 18 accessibility test mobile/desktop lulus. API, schema, role/capability,
+  pricing, payment, dan production tidak berubah; production tetap S265.
+
 - SagaTech V25 sales surface: `CONFIRMED / PRODUCTION_DEPLOYED /
   PRODUCTION_ACTIVATED` pada `https://sagatech.site/saga-product/`, production
   `dpl_5S2BWzukN4Fat1xdpPVsx9kvFbFF`, runtime source
@@ -24,7 +37,7 @@ dalam satu dokumen public-safe.
   assisted, bukan perubahan runtime SagaBook; lifecycle DEC-029 tetap berlaku
   sampai ada release entitlement terpisah.
 
-- Updated: 20 Agustus 2026 21:04 WIB
+- Updated: 21 Agustus 2026 14:00 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED`; current release S265
   `20260820103024-5a4e24f`, exact release source

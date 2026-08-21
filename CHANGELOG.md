@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-21 - SagaBook S269 Global Brand preview-save sync
+
+- Informasi `CONFIRMED` berasal dari keputusan Andreas dan exact source
+  `73feb12f5f9cfd3f7f126e3b1fa42970335c97f7` yang sudah dipush.
+- Knowledge mencatat before/after tombol Global Brand, gate save-preview sebelum
+  Publish, draft preview authoritative, validasi lokal, serta batas production.
+- Delivery `PUSHED / UIUX_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production SagaBook tetap S265 dan
+  `BUSINESS_READY=false`.
+- Dokumen terdampak: SagaBook product/dossier/changelog/coverage, portfolio,
+  master, founder decision, gaps, root changelog, dan sync status.
+
 ## 2026-08-21 - SagaTech V25 admin-thumbnail production sync
 
 - Informasi `CONFIRMED` berasal dari keputusan Andreas, exact source

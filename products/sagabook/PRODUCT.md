@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 21 Agustus 2026 12:00 WIB
-Evidence status: SagaTech V25 mobile-only sales surface active; S267 host-storage recovery runbook pushed; S265 production active; business readiness pending
+Updated: 21 Agustus 2026 14:00 WIB
+Evidence status: S269 Global Brand preview-save pushed/local validated; SagaTech V25 sales surface active; S267 host-storage recovery runbook pushed; S265 production active; business readiness pending
 
 ## Tujuan dokumen
 
@@ -15,6 +15,19 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- S269 exact source `73feb12f5f9cfd3f7f126e3b1fa42970335c97f7`
+  berstatus `CONFIRMED / PUSHED / UIUX_VALIDATED / QA_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Tab `Global Brand` pada
+  Template Booking kini memiliki tombol `Simpan untuk Preview` tepat di bawah
+  form. Nama studio, warna, dan font disimpan sebagai draft tenant; Preview
+  Live memakai respons server, sedangkan customer tetap membaca versi
+  published. `Publish` nonaktif selama ada perubahan yang belum disimpan ke
+  preview, lalu aktif setelah save berhasil. Header `Buka Preview` juga membuka
+  draft preview, bukan website published. Build, 12 feature test/160 assertion,
+  tiga skenario draft-publish, assertion brand di iframe, adaptive layout, dan
+  18 accessibility test mobile/desktop lulus. Tidak ada endpoint, schema,
+  pricing, payment, atau permission baru; production tetap S265.
 
 - `CONFIRMED / SALES_SURFACE_PRODUCTION_ACTIVATED`: SagaTech V25 mengganti
   funnel panjang V24 menjadi alur mobile-only yang ringkas. Dari

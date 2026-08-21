@@ -1,5 +1,23 @@
 # SagaBook Changelog
 
+## 2026-08-21 - Global Brand save-before-publish S269 candidate
+
+- Klasifikasi: `CONFIRMED`; keputusan workflow berasal dari Andreas dan source
+  exact `73feb12f5f9cfd3f7f126e3b1fa42970335c97f7` sudah dipush.
+- Before: save draft hanya terlihat di header dan Publish dapat aktif saat
+  perubahan Global Brand belum masuk preview. After: tab Global Brand memiliki
+  `Simpan untuk Preview`, status dirty kontekstual, Preview Live berbasis
+  respons server, dan Publish menunggu save preview berhasil.
+- `Buka Preview` membuka draft preview; website customer tetap memakai profile
+  published sampai owner menekan Publish.
+- Build, 12 feature test/160 assertion, tiga skenario draft-publish, assertion
+  brand pada iframe, adaptive layout, dan 18 accessibility test mobile/desktop
+  lulus. Status `PUSHED / UIUX_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production S265 tidak berubah.
+- API, schema, pricing, payment, role/capability, dan produk lain tidak berubah.
+  Hardening optimistic concurrency serta exact server-draft binding lintas tab
+  tetap gap lanjutan.
+
 ## 2026-08-21 - SagaTech V25 mobile-only PDF lalu video
 
 - Klasifikasi: `CONFIRMED`; runtime SagaBook tidak berubah.

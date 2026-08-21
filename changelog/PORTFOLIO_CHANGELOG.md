@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-21 - SagaBook Global Brand preview-save S269
+
+- Template Booking kini menempatkan `Simpan untuk Preview` langsung di tab
+  Global Brand. Nama studio, warna, dan font dapat diperiksa pada Preview Live
+  sebelum customer melihatnya.
+- Publish menunggu draft preview tersimpan; tombol header membuka draft preview,
+  sedangkan website publik tetap membaca versi published.
+- Exact source `73feb12f5f9cfd3f7f126e3b1fa42970335c97f7` sudah dipush dan
+  lulus build, 12 feature test/160 assertion, browser draft-publish, brand
+  iframe, adaptive layout, serta 18 accessibility test mobile/desktop.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production SagaBook
+  tetap S265, pricing/payment/business readiness dan produk lain tidak berubah.
+
 ## 2026-08-21 - SagaTech V25 SagaBook admin-dashboard thumbnail
 
 - SagaBook pada hub Saga Product kini memakai dashboard admin aktual dengan
