@@ -7,6 +7,14 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- SagaTech V25 sales surface: `CONFIRMED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED` pada `https://sagatech.site/saga-product/`, production
+  `dpl_5S2BWzukN4Fat1xdpPVsx9kvFbFF`, runtime source
+  `6cfab80a9a06b50ec72e139b46ad5e4b3171f87a`. Hub hanya memilih produk;
+  halaman SagaBook berurutan PDF interaktif, video inline, lalu CTA trial.
+  Layout tetap mobile shell maksimum 430 px pada semua viewport. Tidak ada
+  perubahan runtime SagaBook, pricing, billing, lifecycle, atau entitlement.
+
 - SagaTech V24 sales surface: `CONFIRMED / PRODUCTION_DEPLOYED /
   PRODUCTION_ACTIVATED` pada `https://sagatech.site/saga-product/`, production
   deployment `dpl_D1xLKDsFxrVxn3UC1BjP4ftz892x`, runtime source

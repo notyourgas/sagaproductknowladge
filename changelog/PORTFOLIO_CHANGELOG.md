@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-21 - SagaTech V25 mobile-only Saga Product funnel
+
+- `https://sagatech.site/saga-product/` kini hanya menjadi pemilih SagaBook
+  atau SagaView; setiap produk langsung membuka PDF interaktif, video inline,
+  lalu CTA trial.
+- Semua viewport memakai satu mobile shell maksimum 430 px; tidak ada layout
+  desktop alternatif.
+- SagaView sales evidence memakai frame TRIAL 3 enam slot dengan data dummy,
+  menggantikan SPECIAL 17/ORIGINAL 14 pada funnel V24. Runtime kedua produk
+  tidak berubah.
+- Source `6cfab80a9a06b50ec72e139b46ad5e4b3171f87a`, production
+  `dpl_5S2BWzukN4Fat1xdpPVsx9kvFbFF`; public UI, PDF, video, fullscreen,
+  accessibility, alias, hash, dan security-header smoke lulus.
+
 ## 2026-08-21 - SagaTech V24 Saga Product bio funnel
 
 - Mobile-first `https://sagatech.site/saga-product/` aktif sebagai satu pintu

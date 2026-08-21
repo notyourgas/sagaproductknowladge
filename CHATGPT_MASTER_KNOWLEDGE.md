@@ -1,8 +1,22 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 21 Agustus 2026 11:25 WIB
+Evidence cut-off: 21 Agustus 2026 12:00 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
+
+SagaTech V25 berstatus `CONFIRMED / PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED`. `https://sagatech.site/saga-product/` memakai satu
+mobile shell maksimum 430 px pada semua viewport. Hub hanya memilih SagaBook
+atau SagaView; halaman produk langsung menampilkan viewer/PDF delapan halaman,
+video inline, lalu CTA trial. Bukti SagaView memakai UI aktual dengan data
+dummy dan frame TRIAL 3 enam slot yang konsisten dari katalog kosong ke editor
+penuh, review, dan output settings. Nama frame bukan entitlement atau kontrak
+katalog. Source `6cfab80a9a06b50ec72e139b46ad5e4b3171f87a`, production
+`dpl_5S2BWzukN4Fat1xdpPVsx9kvFbFF`; public visual, accessibility, PDF, video,
+fullscreen, byte-range, alias, hash, dan security header lulus. Trial 14 hari
+tanpa auto-charge serta early adopter bayar 1 bulan aktif total 2 bulan tetap
+assisted. Runtime, pricing, billing, entitlement, device/output, physical UAT,
+dan `BUSINESS_READY` kedua produk tidak berubah.
 
 SagaTech V24 berstatus `CONFIRMED / PRODUCTION_DEPLOYED /
 PRODUCTION_ACTIVATED`. `https://sagatech.site/saga-product/` menjadi pintu
@@ -18,6 +32,8 @@ V24 tidak mengubah runtime, pricing, billing, entitlement, device/output,
 physical UAT, atau `BUSINESS_READY` kedua produk. Untuk SagaBook, lifecycle
 DEC-029 tetap kanonik sampai ada release entitlement terpisah; fulfillment
 program per studio bersifat assisted dan harus dikonfirmasi sebelum aktivasi.
+Struktur landing panjang dan bukti SPECIAL 17 V24 `DEPRECATED` oleh V25;
+kontrak komersial dan batas klaim yang tidak diubah tetap berlaku.
 
 SagaBook S267 exact `ad1285cf9d02fb700e2b952ba736698580e9e2a5`
 berstatus `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Runbook

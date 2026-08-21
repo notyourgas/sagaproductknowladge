@@ -1,5 +1,17 @@
 # SagaView Dossier
 
+## SagaTech V25 mobile-only sales surface
+
+`CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` pada
+`https://sagatech.site/saga-product/`, production
+`dpl_5S2BWzukN4Fat1xdpPVsx9kvFbFF`, runtime source
+`6cfab80a9a06b50ec72e139b46ad5e4b3171f87a`. Setelah SagaView dipilih,
+viewer/PDF delapan halaman tampil lebih dahulu, diikuti video inline dan CTA
+trial. Bukti UI aktual memakai data dummy serta frame TRIAL 3 enam slot dari
+katalog kosong ke editor penuh dan review. Nama frame ini bukan entitlement
+atau kontrak katalog. Runtime Studio/backend, pricing, device/output, physical
+UAT, dan `BUSINESS_READY` tidak berubah.
+
 ## SagaTech V24 sales surface
 
 `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` pada
@@ -10,6 +22,8 @@ SagaView termasuk SPECIAL 17, video, viewer/PDF penawaran, trial 14 hari tanpa
 auto-charge, dan early adopter 1 bulan berlangganan menjadi total 2 bulan
 aktif. Ini sales promise assisted dan tidak mengubah Studio/backend,
 entitlement, pricing, device limit, output, atau gate physical UAT.
+Struktur visual V24 dan penggunaan SPECIAL 17 pada sales surface `DEPRECATED`
+oleh V25.
 
 ## S238 physical receipt single-read binding
 

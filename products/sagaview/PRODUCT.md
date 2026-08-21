@@ -1,6 +1,17 @@
 # SagaView Product Knowledge
 
-Updated: 21 Agustus 2026
+Updated: 21 Agustus 2026 12:00 WIB
+
+SagaTech V25 berstatus `CONFIRMED / SALES_SURFACE_PRODUCTION_ACTIVATED` pada
+`https://sagatech.site/saga-product/`. Funnel kini mobile-only: owner memilih
+SagaView lalu langsung membaca viewer/PDF delapan halaman, menonton video inline
+132,053 detik, dan dapat melanjutkan ke CTA trial. Bukti penawaran memakai UI
+aktual dengan data dummy dan frame TRIAL 3 enam slot yang konsisten dari katalog,
+editor penuh, review, sampai output settings. TRIAL 3 hanya nama frame dummy pada
+bukti sales surface, bukan klaim katalog atau entitlement. Source SagaTech
+`6cfab80a9a06b50ec72e139b46ad5e4b3171f87a`, production
+`dpl_5S2BWzukN4Fat1xdpPVsx9kvFbFF`. Runtime, pricing, entitlement, device/output,
+physical UAT, dan `BUSINESS_READY` SagaView tidak berubah.
 
 SagaTech V24 berstatus `CONFIRMED / SALES_SURFACE_PRODUCTION_ACTIVATED` pada
 `https://sagatech.site/saga-product/`. Owner studio dapat melihat UI aktual
@@ -11,6 +22,8 @@ total masa aktif 2 bulan. Kuota dikonfirmasi saat aktivasi; produk tetap dapat
 dipilih satuan dan tidak ada bundle price. V24 tidak mengubah Studio/backend
 SagaView, entitlement, pricing, device limit, output, atau `BUSINESS_READY`;
 fulfillment manual per studio harus dikonfirmasi sebelum aktivasi.
+Struktur visual dan frame sales surface V24 ini `DEPRECATED` oleh V25; fakta
+trial/early adopter dan batas runtime-nya tetap berlaku.
 
 Backend SagaView S227 exact `a648c180310e197934ac84eed8519e51ae90f0eb`
 aktif di production sebagai release `20260818110257-a648c18`. Perubahan

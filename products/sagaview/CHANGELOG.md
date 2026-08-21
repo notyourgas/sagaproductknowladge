@@ -1,5 +1,17 @@
 # SagaView Changelog
 
+## 2026-08-21 - SagaTech V25 mobile-only dan frame alternatif
+
+- Klasifikasi: `CONFIRMED`; runtime SagaView tidak berubah.
+- Hub hanya memilih produk; halaman SagaView langsung menampilkan PDF, video
+  inline, lalu CTA trial dalam shell maksimum 430 px.
+- Bukti sales surface mengganti SPECIAL 17/ORIGINAL 14 dengan UI aktual data
+  dummy frame TRIAL 3 enam slot yang konsisten dari katalog, editor penuh,
+  review, dan output settings. Nama frame bukan entitlement paket.
+- Source SagaTech `6cfab80a9a06b50ec72e139b46ad5e4b3171f87a`, production
+  `dpl_5S2BWzukN4Fat1xdpPVsx9kvFbFF`; visual, accessibility, PDF, video,
+  fullscreen, range request, alias, dan security-header smoke lulus.
+
 ## 2026-08-21 - SagaTech V24 bio-ready sales surface
 
 - Klasifikasi: `CONFIRMED` untuk keputusan komersial dan production sales

@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-21 - SagaTech V25 mobile-only sales-surface sync
+
+- Informasi `CONFIRMED` berasal dari keputusan Andreas dan production release
+  SagaTech V25, source `6cfab80a9a06b50ec72e139b46ad5e4b3171f87a`, deployment
+  `dpl_5S2BWzukN4Fat1xdpPVsx9kvFbFF`.
+- Knowledge mencatat hub dua produk, urutan PDF → video → trial, mobile shell
+  maksimum 430 px, dan penggantian bukti frame SagaView menjadi TRIAL 3 enam
+  slot dengan data dummy.
+- Trial/early adopter, runtime SagaBook/SagaView, pricing, entitlement,
+  device/output, physical UAT, dan business readiness tidak berubah.
+- Dokumen terdampak: product/dossier/changelog SagaBook dan SagaView,
+  portfolio/master, decisions, root changelog, dan sync status.
+
 ## 2026-08-21 - SagaTech V24 Saga Product sales-surface sync
 
 - Informasi `CONFIRMED` berasal dari keputusan Andreas dan production release

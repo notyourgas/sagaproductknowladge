@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 21 Agustus 2026 11:25 WIB
-Evidence status: SagaTech V24 sales surface active; S267 host-storage recovery runbook pushed; S265 production active; business readiness pending
+Updated: 21 Agustus 2026 12:00 WIB
+Evidence status: SagaTech V25 mobile-only sales surface active; S267 host-storage recovery runbook pushed; S265 production active; business readiness pending
 
 ## Tujuan dokumen
 
@@ -15,6 +15,15 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- `CONFIRMED / SALES_SURFACE_PRODUCTION_ACTIVATED`: SagaTech V25 mengganti
+  funnel panjang V24 menjadi alur mobile-only yang ringkas. Dari
+  `https://sagatech.site/saga-product/`, owner memilih SagaBook lalu langsung
+  melihat viewer/PDF delapan halaman, video inline 120 detik, dan CTA trial.
+  Shell tetap maksimum 430 px pada desktop; PDF mendahului video. Source
+  SagaTech `6cfab80a9a06b50ec72e139b46ad5e4b3171f87a`, production
+  `dpl_5S2BWzukN4Fat1xdpPVsx9kvFbFF`. Perubahan tidak mengubah runtime,
+  pricing, lifecycle DEC-029, entitlement, billing, atau `BUSINESS_READY`.
 
 - `CONFIRMED / SALES_SURFACE_PRODUCTION_ACTIVATED`: SagaTech V24 menambahkan
   pintu mobile-first `https://sagatech.site/saga-product/` untuk owner Self

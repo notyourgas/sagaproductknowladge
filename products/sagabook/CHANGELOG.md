@@ -1,5 +1,17 @@
 # SagaBook Changelog
 
+## 2026-08-21 - SagaTech V25 mobile-only PDF lalu video
+
+- Klasifikasi: `CONFIRMED`; runtime SagaBook tidak berubah.
+- Before: landing V24 memuat banyak section sebelum owner membuka penawaran.
+  After: hub hanya memilih produk; halaman SagaBook langsung menampilkan PDF,
+  video inline, lalu CTA trial dalam shell maksimum 430 px.
+- Trial 14 hari tanpa auto-charge dan early adopter bayar 1 bulan aktif total
+  2 bulan tetap sama dan tetap assisted.
+- Source SagaTech `6cfab80a9a06b50ec72e139b46ad5e4b3171f87a`, production
+  `dpl_5S2BWzukN4Fat1xdpPVsx9kvFbFF`; visual, accessibility, PDF, video,
+  fullscreen, range request, alias, dan security-header smoke lulus.
+
 ## 2026-08-21 - SagaTech V24 bio-ready sales surface
 
 - Klasifikasi: `CONFIRMED` untuk keputusan komersial dan production sales

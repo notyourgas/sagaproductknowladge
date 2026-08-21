@@ -32,7 +32,7 @@ keputusan pengganti.
 | Alternatif yang dipertimbangkan | Mengirim PDF langsung pada pesan pembuka; menyatukan kedua produk sebagai bundle wajib; menaruh video/PDF pada Drive; menunda funnel sampai entitlement otomatis tersedia. |
 | Dampak | SagaTech menambah landing, video first-party, viewer/PDF, link bio ber-UTM, WhatsApp, dan analytics allowlist. Runtime, pricing, entitlement, billing, dan business readiness SagaBook/SagaView tidak berubah. Lifecycle SagaBook DEC-029 tetap kanonik sampai release entitlement terpisah; GAP-010 menutup runbook fulfillment. |
 | Pemberi keputusan | Andreas / founder |
-| Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; SagaTech source `124f55191b2288fc8f2365b83c5472199fa0a310`, production `dpl_D1xLKDsFxrVxn3UC1BjP4ftz892x` |
+| Status | Struktur landing dan urutan media `DEPRECATED` oleh DEC-090; trial, early adopter, assisted fulfillment, pilihan satuan, dan batas runtime tetap `CONFIRMED`. SagaTech V24 source `124f55191b2288fc8f2365b83c5472199fa0a310`, production historis `dpl_D1xLKDsFxrVxn3UC1BjP4ftz892x`. |
 | Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaView Product](products/sagaview/PRODUCT.md), [Gaps](GAPS.md), [Portfolio Changelog](changelog/PORTFOLIO_CHANGELOG.md) |
 
 ## DEC-084 - Rail SagaBook memakai satu ikon per modul bisnis
@@ -1266,3 +1266,17 @@ keputusan pengganti.
 | Pemberi keputusan | Andreas / founder |
 | Status | `CONFIRMED / IMPLEMENTED / PRODUCTION_ACTIVATED`; exact release source `5a4e24fa67d28ab0e15c7d8110d7742f26d875a0`, release `20260820103024-5a4e24f` |
 | Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [SagaBook Changelog](products/sagabook/CHANGELOG.md), [SagaBook Ledger](products/sagabook/FEATURE_COVERAGE_LEDGER.md) |
+
+## DEC-090 - Saga Product memakai funnel mobile-only PDF lalu video
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-21 |
+| Topik | Penyederhanaan sales funnel SagaBook dan SagaView dari bio |
+| Keputusan | `/saga-product/` hanya menampilkan pilihan SagaBook dan SagaView. Setelah produk dipilih, owner langsung melihat viewer/PDF penawaran, video inline, lalu CTA trial. Semua viewport memakai mobile shell maksimum 430 px tanpa layout desktop alternatif. Bukti SagaView memakai UI aktual data dummy dengan frame TRIAL 3 enam slot; SPECIAL 17 dan ORIGINAL 14 tidak dipakai pada funnel V25. |
+| Alasan | Owner studio perlu memahami penawaran secepat mungkin dari browser Instagram/TikTok tanpa melewati landing panjang, dan bukti frame harus konsisten serta mudah dibaca. |
+| Alternatif yang dipertimbangkan | Mempertahankan landing panjang V24; membuat layout desktop terpisah; menampilkan video sebelum PDF; memakai UI/frame generatif. |
+| Dampak | Funnel menjadi tiga tahap ringkas, media tetap first-party dan fullscreen, serta UI produk tidak dipalsukan. Trial/early adopter, runtime, pricing, entitlement, device/output, dan business readiness tidak berubah. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; source `6cfab80a9a06b50ec72e139b46ad5e4b3171f87a`, production `dpl_5S2BWzukN4Fat1xdpPVsx9kvFbFF`, rollback V24 `dpl_D1xLKDsFxrVxn3UC1BjP4ftz892x` |
+| Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaView Product](products/sagaview/PRODUCT.md), [Portfolio Changelog](changelog/PORTFOLIO_CHANGELOG.md), [Master Knowledge](CHATGPT_MASTER_KNOWLEDGE.md) |
