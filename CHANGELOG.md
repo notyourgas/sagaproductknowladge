@@ -1,16 +1,17 @@
 # Saga Product Knowledge Changelog
 
-## 2026-08-21 - SagaBook branch photo orientation candidate sync
+## 2026-08-21 - SagaBook branch photo orientation production sync
 
 - Informasi `CONFIRMED` berasal dari exact source
-  `7afdf345cf32427d390c2d636ef1107833136ae8` yang telah pushed dan lulus gate
-  lokal.
+  `7afdf345cf32427d390c2d636ef1107833136ae8` yang telah pushed, lulus gate
+  lokal, dan aktif sebagai release `20260821163643-7afdf34`.
 - Knowledge mencatat sebab foto portrait miring, normalisasi piksel JPEG sebelum
   resize, metadata removal, checksum/kuota byte canonical, serta jalur upload
   sampai admin/public read.
 - Delivery `PUSHED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED`; production tetap release
-  `20260821124922-9bc208a` dan `BUSINESS_READY=false`.
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; rollback
+  `20260821124922-9bc208a`, verifier 17/17, public/security 3/3, dan
+  `BUSINESS_READY=false`.
 - Dokumen terdampak: SagaBook product/dossier/changelog/coverage, portfolio,
   master, root changelog, dan sync status.
 

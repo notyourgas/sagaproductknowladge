@@ -12,14 +12,14 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-21T22:58:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-21T23:45:00+07:00 |
 | Branch aktif | `codex/knowledge-s270-branch-photo-exif` dari worktree bersih exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `e85cd87f136d0b949b85b2b407a051393f1d26d6` |
-| Informasi terakhir disinkronkan | SagaBook normalisasi orientasi foto cabang exact source `7afdf345cf32427d390c2d636ef1107833136ae8` telah pushed dan local-validated; production tetap `20260821124922-9bc208a`. |
+| Baseline sebelum pembaruan | `1a8e3e2cc33f4caa34bbe23485a9dc48ec82177d` |
+| Informasi terakhir disinkronkan | SagaBook normalisasi orientasi foto cabang exact source `7afdf345cf32427d390c2d636ef1107833136ae8` aktif sebagai release `20260821163643-7afdf34`; rollback `20260821124922-9bc208a`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
 | Konflik | Worktree bersih memakai exact `origin/main`; clone canonical lokal yang divergen tidak disentuh. Produk lain tidak diubah. |
-| Error | Tidak ada blocker implementasi. Deploy tetap memerlukan izin; foto lama yang sudah miring perlu di-upload ulang setelah release. UAT operator/cohort lebih luas tetap diperlukan sebelum `BUSINESS_READY`. |
+| Error | Tidak ada blocker deployment. Foto lama yang sudah miring perlu di-upload ulang; authenticated Owner/operator UAT dan pilot tetap diperlukan sebelum `BUSINESS_READY`. |
 
 ## File yang berubah pada sinkronisasi ini (SagaBook branch photo orientation)
 

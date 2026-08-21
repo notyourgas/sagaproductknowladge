@@ -9,16 +9,18 @@ dalam satu dokumen public-safe.
 
 - Normalisasi orientasi foto cabang exact source
   `7afdf345cf32427d390c2d636ef1107833136ae8`: `CONFIRMED / PUSHED /
-  QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED`. Pipeline upload mengubah orientasi JPEG kamera
+  QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`. Pipeline upload mengubah orientasi JPEG kamera
   menjadi piksel canonical sebelum resize dan membuang metadata, lalu memakai
   byte tersimpan untuk checksum serta kuota. Regresi sintetis membuktikan dua
   arah rotasi, preservasi PNG/WebP, upload sampai admin/public read, tenant dan
   permission-negative, serta response asset. PHP 270/270 (2.017 assertion),
   browser 2/2 mobile/desktop, build 5.132 modul, design audit 26/0, dan audit
   dependency nol lulus. Tidak ada migration atau perubahan workflow universal.
-  Production tetap release `20260821124922-9bc208a`; foto lama yang sudah
-  tersimpan miring tidak dimutasi otomatis.
+  Release `20260821163643-7afdf34` aktif dengan rollback
+  `20260821124922-9bc208a`; backup terenkripsi exact commit, restore disposable,
+  source backup lokal+VPS, verifier 17/17, public smoke 3/3, dan security header
+  3/3 lulus. Foto lama yang sudah tersimpan miring tidak dimutasi otomatis.
 
 - Template Booking semantic component colors exact release source
   `9bc208af60b9a9abc08c64ad463313d734cca734`, feature implementation
@@ -109,12 +111,12 @@ dalam satu dokumen public-safe.
   assisted, bukan perubahan runtime SagaBook; lifecycle DEC-029 tetap berlaku
   sampai ada release entitlement terpisah.
 
-- Updated: 21 Agustus 2026 22:58 WIB
+- Updated: 21 Agustus 2026 23:45 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED`; current release
-  `20260821124922-9bc208a`, exact release source
-  `9bc208af60b9a9abc08c64ad463313d734cca734`, rollback langsung
-  `20260821122634-c8fd210`, dan verifier independen 17/17 termasuk HTTP 3/3
+  `20260821163643-7afdf34`, exact release source
+  `7afdf345cf32427d390c2d636ef1107833136ae8`, rollback langsung
+  `20260821124922-9bc208a`, dan verifier independen 17/17 termasuk HTTP 3/3
   serta security profile 3/3
 - Business readiness: `NEEDS CONFIRMATION`
 - Host-storage recovery S267 exact
