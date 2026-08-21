@@ -1,5 +1,21 @@
 # Portfolio Changelog
 
+## 2026-08-22 - SagaBook Template Booking text inspector S273
+
+- Warna heading halaman, nama studio, nama cabang di foto, dan nama cabang pada
+  card/ringkasan kini menjadi kontrol independen di Global Brand dan Custom.
+- Hover/focus/klik kontrol menandai komponen yang terdampak di Preview Live;
+  klik komponen preview memilih kontrol terkait, dengan keyboard, screen-reader,
+  forced-colors, reduced-motion, dan mobile/desktop coverage.
+- Snapshot lama tetap kompatibel, sedangkan inspector memerlukan same-origin
+  serta authority preview valid agar raw preview tidak dapat mengaktifkannya.
+- Exact source `1a7f5fb80c422bf759c6092110d35c1606361cc3`
+  sudah pushed; full PHP 1.076/1.076, template 12/12,
+  accessibility/adaptive 21/21, Promotion Center ber-flag 4/4, build,
+  formatter, dan audit dependency lulus.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; belum merge/deploy,
+  production dan `BUSINESS_READY` tidak berubah.
+
 ## 2026-08-22 - SagaView S159/S162 production lineage reconciliation
 
 - Audit exact Git ancestry memastikan kontrak estimasi-only S159 dan proteksi

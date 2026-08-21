@@ -7,6 +7,23 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Template Booking text inspector S273 exact source
+  `1a7f5fb80c422bf759c6092110d35c1606361cc3`: `CONFIRMED / PUSHED /
+  UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Empat semantic text color memisahkan heading
+  halaman, nama studio, nama cabang pada overlay foto, dan nama cabang pada
+  card/ringkasan. Nilai tersedia pada Global Brand serta override per halaman,
+  masuk ke canonical hash, draft rehydrate, exact publish, dan public snapshot,
+  dengan fallback snapshot legacy. Editor dan Preview Live memiliki inspector
+  dua arah melalui hover/focus/pin, tanda seleksi, Escape, aria-live, target 44
+  piksel, forced-colors, reduced-motion, dan no-overflow mobile/desktop.
+  Boundary pesan preview dibatasi same-origin dan authority server yang cocok;
+  raw query preview tanpa authority gagal tertutup. Full PHP 1.076/1.076
+  (12.507 assertion), template matrix 12/12, accessibility/adaptive 21/21,
+  Promotion Center ber-flag 4/4, build, formatter, dan dependency audit lulus.
+  Tidak ada schema, pricing, payment, atau permission baru. Production dan
+  published customer profile tidak berubah; `BUSINESS_READY=false`.
+
 - Preset booking `Cinematic Noir` implementation exact source
   `3ffe3b8c612baead82e303242151559fc1b717c0`: `CONFIRMED / PUSHED /
   UIUX_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED / NOT_DEPLOYED`. Arah visual

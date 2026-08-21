@@ -1,8 +1,21 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 22 Agustus 2026 02:10 WIB
+Evidence cut-off: 22 Agustus 2026 02:42 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
+
+SagaBook Template Booking text inspector S273 exact source
+`1a7f5fb80c422bf759c6092110d35c1606361cc3` berstatus `CONFIRMED / PUSHED /
+UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`. Heading halaman, nama studio, nama cabang pada foto,
+serta nama cabang pada card/ringkasan memiliki warna independen di Global Brand
+dan Custom. Hover/focus/klik editor menandai target di Preview Live dan klik
+preview memilih kontrol terkait. Snapshot/hash/publish/public renderer menjaga
+nilai tersebut dengan fallback legacy; inspector hanya aktif untuk same-origin
+dan authority preview valid. Full PHP 1.076/1.076 (12.507 assertion), template
+12/12, accessibility/adaptive 21/21, Promotion Center ber-flag 4/4, build,
+formatter, dan audit dependency lulus. Branch belum merge/deploy, profile
+published dan production tidak berubah, serta `BUSINESS_READY=false`.
 
 SagaBook preset booking `Cinematic Noir` implementation exact source
 `3ffe3b8c612baead82e303242151559fc1b717c0` berstatus `CONFIRMED / PUSHED /

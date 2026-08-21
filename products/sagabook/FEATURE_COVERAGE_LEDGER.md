@@ -1,6 +1,19 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 22 Agustus 2026 02:18 WIB
+Evidence cut-off: 22 Agustus 2026 02:42 WIB
+
+Template Booking text inspector S273 exact source
+`1a7f5fb80c422bf759c6092110d35c1606361cc3` telah `CONFIRMED / PUSHED /
+UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`. Coverage mengikat empat semantic text color dari UI
+editor ke snapshot/hash backend, authoritative Preview Live, publish, public
+renderer, dan fallback legacy. Inspector dua arah mencakup hover, focus, click,
+pin, Escape, aria-live, same-origin plus authority validation, raw-preview
+negative, target 44 piksel, forced-colors, reduced-motion, serta no-overflow
+390x844 dan 1440x900. Full PHP 1.076/1.076 (12.507 assertion), template matrix
+12/12, accessibility/adaptive 21/21, Promotion Center ber-flag 4/4, build,
+formatter, dan dependency audit lulus. Branch sudah pushed tetapi belum
+merge/deploy; production, published profile, dan `BUSINESS_READY` tidak berubah.
 
 Preset booking `Cinematic Noir` implementation exact source
 `3ffe3b8c612baead82e303242151559fc1b717c0` telah `CONFIRMED / PUSHED /

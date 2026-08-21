@@ -1,5 +1,30 @@
 # SagaBook Changelog
 
+## 2026-08-22 - Template Booking semantic text inspector S273
+
+- Klasifikasi: `CONFIRMED`; keputusan pemisahan warna dan inspector berasal
+  dari Andreas, dengan exact source
+  `1a7f5fb80c422bf759c6092110d35c1606361cc3` sudah pushed ke
+  `codex/s273-sagabook-template-text-inspector`.
+- Before: heading halaman, nama studio, serta nama cabang berbagi token warna
+  sehingga teks dapat bertabrakan dengan foto atau surface berbeda. After:
+  empat semantic text color independen tersedia pada Global Brand dan Custom
+  halaman, lengkap dengan fallback snapshot lama.
+- Hover/focus/klik kontrol memberi highlight biru pada elemen Preview Live;
+  klik elemen preview memilih kontrolnya. Inspector keyboard menyediakan
+  Escape, aria-live, target 44 piksel, forced-colors, reduced-motion, dan
+  responsive no-overflow.
+- Same-origin saja tidak cukup: pesan inspector juga memerlukan authority
+  preview server yang cocok dengan revisi/hash/token; raw preview query tanpa
+  authority gagal tertutup.
+- Full PHP 1.076/1.076 (12.507 assertion), regresi template 12/12,
+  accessibility/adaptive 21/21, Promotion Center ber-flag 4/4, build,
+  formatter, npm/Composer audit nol, serta OSV nol pada lockfile yang tidak
+  berubah lulus. Dua retry OSV setelah rebase mengalami timeout eksternal.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; belum merge,
+  belum deploy, draft customer tidak dipublish, production tidak berubah, dan
+  `BUSINESS_READY=false`.
+
 ## 2026-08-22 - Cinematic Noir booking preset source candidate
 
 - Klasifikasi: `CONFIRMED`; keputusan arah preset berasal dari Andreas dan

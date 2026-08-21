@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 22 Agustus 2026 02:18 WIB
-Evidence status: Cinematic Noir source-validated dan belum production-deployed; production tetap pada release sebelumnya
+Updated: 22 Agustus 2026 02:42 WIB
+Evidence status: S273 text inspector source-validated dan belum production-deployed; production tetap pada release sebelumnya
 
 ## Tujuan dokumen
 
@@ -15,6 +15,21 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- Template Booking text inspector S273 exact source
+  `1a7f5fb80c422bf759c6092110d35c1606361cc3` berstatus `CONFIRMED / PUSHED /
+  UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Warna `Heading Halaman`, `Nama Studio / Brand`,
+  `Nama Cabang di Foto`, serta `Nama Cabang di Card & Ringkasan` kini dapat
+  diatur terpisah pada Global Brand maupun Custom halaman. Hover, fokus, dan
+  klik kontrol editor menandai komponen tepat di Preview Live; klik komponen
+  preview memilih kontrol terkait. Inspector hanya menerima pesan same-origin
+  dengan authority preview revisi/hash/token yang valid dan tetap memiliki
+  fallback kompatibel untuk snapshot lama. Full PHP 1.076/1.076 (12.507
+  assertion), regresi template 12/12, accessibility/adaptive 21/21, Promotion
+  Center ber-flag 4/4, build, formatter, serta audit dependency tanpa advisory
+  lulus. Source belum merge/deploy, draft customer tidak dipublish, production
+  tidak berubah, dan `BUSINESS_READY=false`.
 
 - Preset booking `Cinematic Noir` implementation exact source
   `3ffe3b8c612baead82e303242151559fc1b717c0` berstatus `CONFIRMED / PUSHED /

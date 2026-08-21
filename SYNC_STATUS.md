@@ -12,16 +12,27 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-22T02:18:00+07:00 |
-| Branch aktif | `codex/s272-cinematic-noir-knowledge` dari worktree bersih exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-22T02:42:00+07:00 |
+| Branch aktif | `codex/s273-template-text-knowledge` dari worktree bersih exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `ca52581c46fb82f8632af973ad0a509317cb12c0` |
-| Informasi terakhir disinkronkan | SagaBook preset `Cinematic Noir` implementation `3ffe3b8c612baead82e303242151559fc1b717c0` dan paket sembilan UI direction `4a40a1b180412c20090e81bfecdda766f6e78987` sudah pushed; belum merge/deploy. |
+| Baseline sebelum pembaruan | `7ade016f355ab879e53e1b0e8ec6c84831f276b9` |
+| Informasi terakhir disinkronkan | SagaBook Template Booking text inspector S273 exact source `1a7f5fb80c422bf759c6092110d35c1606361cc3` sudah pushed; belum merge/deploy. |
 | Status sinkronisasi | `UP TO DATE` setelah validator dan fast-forward push. |
 | Konflik | Worktree bersih memakai exact `origin/main`; clone canonical lokal yang divergen tidak disentuh. Produk lain tidak diubah. |
-| Error | Tidak ada blocker source. Preset belum merge/deploy; UI direction sudah generated tetapi asset fotografi final belum dibuat. Production serta `BUSINESS_READY` tidak berubah. |
+| Error | Tidak ada blocker source. S273 belum merge/deploy; production serta `BUSINESS_READY` tidak berubah. |
 
-## File yang berubah pada sinkronisasi ini (SagaBook Cinematic Noir)
+## File yang berubah pada sinkronisasi ini (SagaBook S273 text inspector)
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
+
+## File yang berubah pada sinkronisasi sebelumnya (SagaBook Cinematic Noir)
 
 - `products/sagabook/PRODUCT.md`
 - `products/sagabook/DOSSIER.md`

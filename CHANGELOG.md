@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-22 - SagaBook S273 text inspector source sync
+
+- Informasi `CONFIRMED` berasal dari keputusan Andreas dan exact source
+  `1a7f5fb80c422bf759c6092110d35c1606361cc3` yang telah pushed.
+- Knowledge mencatat empat semantic text color, inspector preview dua arah,
+  fallback snapshot legacy, boundary same-origin plus authority, serta gate
+  backend, browser, accessibility, build, formatter, dan dependency.
+- Delivery `PUSHED / UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; belum merge/deploy, production
+  tidak berubah, dan `BUSINESS_READY=false`.
+- Dokumen terdampak: SagaBook product/dossier/changelog/coverage, portfolio,
+  master, root changelog, dan sync status.
+
 ## 2026-08-22 - SagaBook Cinematic Noir source-candidate sync
 
 - Informasi `CONFIRMED` berasal dari keputusan Andreas dan exact source
