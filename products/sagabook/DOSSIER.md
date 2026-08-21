@@ -10,7 +10,7 @@ dalam satu dokumen public-safe.
 - Renderer halaman khusus `Cinematic Noir` exact source
   `f6f850df3796e653e5c7c69692ba06ced6befd63`: `CONFIRMED / PUSHED /
   UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED`. Implementasi membangun ulang sembilan halaman
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Implementasi membangun ulang sembilan halaman
   dengan HTML/CSS native dari pedoman visual, tidak mengimpor PNG ImageGen.
   State universal tetap utuh: loading/empty/error slot, konflik jadwal,
   voucher, payment failure, review correction, clipboard fallback, dan
@@ -18,8 +18,12 @@ dalam satu dokumen public-safe.
   minimum 44 piksel, safe area, reduced motion, forced colors, serta fokus
   keyboard eksplisit. Full PHP 1.076/1.076 (12.507 assertion), browser preset
   4/4, editor/publish/parity 8/8, accessibility/recovery 19 skenario, build,
-  TypeScript, design audit, dan dependency audit nol lulus. Production tidak
-  berubah dan tetap memakai implementation source `fca0fe510f...`.
+  TypeScript, design audit, dan dependency audit nol lulus. Exact source aktif
+  sebagai release `20260821215633-f6f850d` dengan rollback
+  `20260821212120-1a7f5fb`; encrypted backup/checksum/disposable restore,
+  source backup lokal+VPS, readiness 100/100, verifier 17/17, public smoke 3/3,
+  dan security header 3/3 lulus tanpa exception. Published tenant profile tidak
+  dimutasi; `BUSINESS_READY=false`.
 
 - Template Booking text inspector S273 exact source
   `1a7f5fb80c422bf759c6092110d35c1606361cc3`: `CONFIRMED / PUSHED /

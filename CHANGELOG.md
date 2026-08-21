@@ -1,15 +1,19 @@
 # Saga Product Knowledge Changelog
 
-## 2026-08-22 - SagaBook Cinematic Noir dedicated renderer sync
+## 2026-08-22 - SagaBook Cinematic Noir dedicated renderer production sync
 
 - Informasi `CONFIRMED` berasal dari keputusan Andreas dan exact source
   `f6f850df3796e653e5c7c69692ba06ced6befd63` yang telah pushed.
 - Knowledge mencatat sembilan renderer native, boundary ImageGen
   documentation-only, state universal, token/preview/publish parity,
   aksesibilitas, responsive, dan gate backend/browser/dependency.
+- Exact source aktif sebagai release `20260821215633-f6f850d` dengan rollback
+  `20260821212120-1a7f5fb`; fresh encrypted backup/restore, source backup,
+  atomic activation, readiness 100/100, verifier 17/17, serta public/security
+  3/3 lulus tanpa exception.
 - Delivery `PUSHED / UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
-  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan
-  `BUSINESS_READY=false`.
+  LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; published
+  tenant profile tidak dimutasi dan `BUSINESS_READY=false`.
 - Dokumen terdampak: SagaBook product/dossier/changelog/coverage, portfolio,
   master, root changelog, dan sync status.
 

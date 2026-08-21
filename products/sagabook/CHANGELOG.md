@@ -1,6 +1,6 @@
 # SagaBook Changelog
 
-## 2026-08-22 - Cinematic Noir dedicated renderer candidate
+## 2026-08-22 - Cinematic Noir dedicated renderer production
 
 - Klasifikasi: `CONFIRMED`; implementasi exact
   `f6f850df3796e653e5c7c69692ba06ced6befd63` sudah pushed ke
@@ -19,9 +19,14 @@
   (390 assertion), Cinematic 4/4, editor/publish/parity 8/8,
   accessibility/recovery 19 skenario, TypeScript, build, design 26/0, dan
   audit npm/Composer/OSV nol.
-- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; belum merge ke
-  `main`, production tetap pada `20260821212120-1a7f5fb`, dan
-  `BUSINESS_READY=false`.
+- Exact source aktif sebagai release `20260821215633-f6f850d` dengan rollback
+  `20260821212120-1a7f5fb`. Backup terenkripsi/checksum/restore disposable,
+  source backup lokal+VPS, atomic activation, readiness 100/100, verifier
+  independen 17/17, public smoke 3/3, dan security header 3/3 lulus tanpa
+  release exception.
+- Status `PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`; deployment tidak memilih atau mem-publish preset
+  tenant dan `BUSINESS_READY=false`.
 
 ## 2026-08-22 - Template Booking semantic text inspector S273 production
 

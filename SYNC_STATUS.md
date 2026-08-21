@@ -12,14 +12,14 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-22T04:48:12+07:00 |
+| Waktu pembaruan terakhir | 2026-08-22T05:03:38+07:00 |
 | Branch aktif | `codex/s272-cinematic-noir-knowledge` dari worktree bersih exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `efa4d9041d0ef1eabac62cde5a557a0f412dfd0a` |
-| Informasi terakhir disinkronkan | SagaBook Cinematic Noir dedicated renderer exact `f6f850df...` telah local-validated dan pushed; belum merge/deploy, production tetap pada `20260821212120-1a7f5fb`. |
+| Baseline sebelum pembaruan | `781020126e51458e82b101503bb76c2f9660c62b` |
+| Informasi terakhir disinkronkan | SagaBook Cinematic Noir dedicated renderer exact `f6f850df...` aktif sebagai `20260821215633-f6f850d`, rollback `20260821212120-1a7f5fb`, readiness 100/100 dan verifier 17/17 lulus. |
 | Status sinkronisasi | `UP TO DATE` setelah validator dan fast-forward push. |
 | Konflik | Tidak ada. Worktree knowledge terisolasi di-fast-forward ke exact `origin/main` sebelum edit. |
-| Error | Tidak ada blocker sinkronisasi. Source kandidat belum merge/deploy dan `BUSINESS_READY=false`. |
+| Error | Tidak ada blocker sinkronisasi atau release. Published tenant profile tidak dimutasi; `BUSINESS_READY=false`. |
 
 ## File yang berubah pada sinkronisasi ini (SagaBook Cinematic Noir dedicated renderer)
 
