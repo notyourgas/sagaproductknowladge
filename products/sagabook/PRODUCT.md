@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 21 Agustus 2026 16:25 WIB
-Evidence status: Template Booking editor v2 production active; authenticated owner UAT and business readiness pending
+Updated: 21 Agustus 2026 18:20 WIB
+Evidence status: Template Booking token-parity hotfix production active; authenticated owner UAT and business readiness pending
 
 ## Tujuan dokumen
 
@@ -15,6 +15,24 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- Template Booking token-parity hotfix exact source
+  `0617dba3c5c8e73045c24f0db84b4ca6fb65c0f3` berstatus `CONFIRMED /
+  PUSHED / UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Lima preset kini memakai enam
+  token Global Brand atau Custom halaman untuk warna semantic yang benar-benar
+  terlihat; gradient dekoratif tetap preset-specific tetapi pigmennya berasal
+  dari token aktif. Background merah tidak lagi ditutup warna cream bawaan.
+  Toggle Custom juga tidak lagi menulis button style atau card radius implisit,
+  dan selector menampilkan pilihan `Ikuti preset`. Batas tinggi preview lama
+  dihapus agar kanvas 390/430/460 tidak tertekan. Full backend 1.063/1.063
+  (12.282 assertion), visual regression 9/9, type-check, build, Composer/npm
+  audit, backup terenkripsi, restore disposable, atomic activation, verifier
+  independen 17/17, serta readiness production 100/100 lulus. Registry aktif
+  `1.14.1`; release `20260821110414-0617dba` aktif dengan rollback
+  `20260821091334-57635d4`. Chrome Owner UAT menunggu owner login pada tab yang
+  sudah dibuka; draft customer tidak dipublish oleh release ini dan
+  `BUSINESS_READY=false`.
 
 - Template Booking editor v2 exact source
   `57635d4a6d29218797e1406385fed64d09abf2a0` berstatus `CONFIRMED /

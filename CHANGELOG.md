@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-21 - SagaBook Template Booking token parity production sync
+
+- Informasi `CONFIRMED` berasal dari keputusan Andreas, exact source
+  `0617dba3c5c8e73045c24f0db84b4ca6fb65c0f3`, dan release production
+  `20260821110414-0617dba`.
+- Knowledge mencatat before/after hardcoded preset palette, enam token
+  Global/Custom, preservasi variant/radius, preview mobile, serta registry
+  `1.14.1`.
+- Delivery `PUSHED / UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; rollback
+  `20260821091334-57635d4`, verifier 17/17, smoke/security 3/3, readiness
+  100/100. Owner UAT Chrome menunggu login dan `BUSINESS_READY=false`.
+- Dokumen terdampak: SagaBook product/dossier/changelog/coverage, portfolio,
+  master, root changelog, dan sync status.
+
 ## 2026-08-21 - SagaBook Template Booking editor v2 production sync
 
 - Informasi `CONFIRMED` berasal dari keputusan Andreas, exact source

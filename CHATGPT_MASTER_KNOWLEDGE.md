@@ -1,8 +1,22 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 21 Agustus 2026 16:25 WIB
+Evidence cut-off: 21 Agustus 2026 18:20 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
+
+SagaBook Template Booking token-parity hotfix exact source
+`0617dba3c5c8e73045c24f0db84b4ca6fb65c0f3` berstatus `CONFIRMED / PUSHED /
+UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED`. Lima preset kini menghormati background, surface,
+primary, accent, text, dan muted Global Brand/Custom pada computed renderer;
+gradient dekoratif memakai token aktif. Color-only Custom mempertahankan
+button/radius preset dan UI menampilkan `Ikuti preset`; preview mobile tidak
+lagi terpotong batas tinggi. Full backend 1.063/1.063 (12.282), visual 9/9,
+build/audit, backup/restore, verifier 17/17, public/security smoke 3/3, dan
+readiness 100/100 lulus. Registry `1.14.1`; release
+`20260821110414-0617dba` aktif dengan rollback `20260821091334-57635d4`.
+Authenticated Owner UAT menunggu login Chrome; draft customer tidak dipublish
+oleh release dan `BUSINESS_READY=false`.
 
 SagaBook Template Booking editor v2 exact source
 `57635d4a6d29218797e1406385fed64d09abf2a0` berstatus `CONFIRMED / PUSHED /

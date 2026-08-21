@@ -8,7 +8,7 @@ diubah menjadi klaim publik sebelum ditutup dengan bukti atau keputusan owner.
 
 ## Konteks
 
-Daftar ini berlaku pada evidence cut-off 21 Agustus 2026 16:25 WIB dan harus diperbarui
+Daftar ini berlaku pada evidence cut-off 21 Agustus 2026 18:20 WIB dan harus diperbarui
 ketika keputusan atau release baru menutup gap.
 
 ## Cara memakai
@@ -30,12 +30,13 @@ blocker dan kedua surface sudah production-activated. Residual SagaView kini
 adalah Founding Studio Pilot dan acceptance operasional mass-scale sebelum
 `BUSINESS_READY`, bukan blocker deployment release ini.
 
-SagaBook GAP-011 sudah `CLOSED` oleh Template Booking editor v2 exact source
-`57635d4a6d29218797e1406385fed64d09abf2a0`: save/publish memakai revision dan
+SagaBook GAP-011 tetap `CLOSED`; hotfix token parity exact source
+`0617dba3c5c8e73045c24f0db84b4ca6fb65c0f3` menutup masking warna preset di
+computed renderer, sedangkan fondasi editor v2 tetap memakai revision dan
 content hash, draft rehydrate setelah reload, stale mutation ditolak, preview
 server authoritative, dan public profile tidak berubah sebelum publish sah.
-Residualnya adalah authenticated Owner/operator UAT dan cohort pilot pada
-GAP-004, bukan gap implementasi template.
+Residualnya adalah authenticated Owner/operator UAT setelah owner login di
+Chrome dan cohort pilot pada GAP-004, bukan gap implementasi template.
 
 | ID | Produk/area | Label | Pertanyaan atau gap | Bukti penutup |
 |---|---|---|---|---|

@@ -1,6 +1,19 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 21 Agustus 2026 16:25 WIB
+Evidence cut-off: 21 Agustus 2026 18:20 WIB
+
+Template Booking token-parity hotfix exact source
+`0617dba3c5c8e73045c24f0db84b4ca6fb65c0f3` telah `CONFIRMED / PUSHED /
+UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED`. S271 menguji lima preset, enam computed semantic token,
+seluruh halaman inherited, satu Custom page terisolasi, authoritative
+revision/hash/token/iframe ACK, serta preservasi family-solid/card 20px/CTA
+16px tanpa override implisit. Regresi editor/publish/layout total 9/9, full
+backend 1.063/1.063 (12.282), build/type-check/audit dependency,
+backup/restore, verifier 17/17, public/security smoke 3/3, dan readiness 100/100
+lulus. Registry `1.14.1`; release `20260821110414-0617dba` aktif dengan
+rollback `20260821091334-57635d4`. Authenticated Owner UAT menunggu login dan
+`BUSINESS_READY=false`.
 
 Template Booking editor v2 exact source
 `57635d4a6d29218797e1406385fed64d09abf2a0` telah `CONFIRMED / PUSHED /

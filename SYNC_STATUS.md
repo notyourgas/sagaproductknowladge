@@ -12,14 +12,26 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-21T16:25:00+07:00 |
-| Branch aktif | `codex/knowledge-sagabook-template-v2` dari worktree bersih exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-21T18:20:00+07:00 |
+| Branch aktif | `codex/knowledge-sagabook-token-parity-hotfix` dari worktree bersih exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `6fc6b2ce9840d322272c9379f23eb9cdda6bb9d9` |
-| Informasi terakhir disinkronkan | SagaBook Template Booking editor v2 exact `57635d4a6d29218797e1406385fed64d09abf2a0` production-activated sebagai `20260821091334-57635d4`. |
+| Baseline sebelum pembaruan | `050c884864920d4e5ecbd9d116a10915c89246ea` |
+| Informasi terakhir disinkronkan | SagaBook Template Booking token parity exact `0617dba3c5c8e73045c24f0db84b4ca6fb65c0f3` production-activated sebagai `20260821110414-0617dba`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
 | Konflik | Worktree bersih memakai exact `origin/main`; clone canonical lokal yang divergen 1/137 tidak disentuh. Produk lain tidak diubah. |
-| Error | Authenticated Owner/operator UAT tertunda karena credential bridge lokal tidak aktif; `BUSINESS_READY=false`. |
+| Error | Authenticated Owner UAT tertunda sampai owner login pada tab Chrome yang sudah dibuka; `BUSINESS_READY=false`. |
+
+## File yang berubah pada sinkronisasi ini (SagaBook token parity hotfix)
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaBook Template Booking editor v2)
 

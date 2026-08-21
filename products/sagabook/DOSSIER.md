@@ -7,6 +7,23 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Template Booking token-parity hotfix exact source
+  `0617dba3c5c8e73045c24f0db84b4ca6fb65c0f3`: `CONFIRMED / PUSHED /
+  UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`. Root, mobile canvas, header, card, input, primary,
+  accent, foreground, dan muted renderer pada lima preset kini memakai token
+  semantic aktif. Alias Elegant, Retro, dan Streetwear dipetakan ke token
+  Global/Custom; gradient dekoratif tetap ada dengan pigment token-driven.
+  Color-only Custom tidak lagi mengubah component variant atau radius preset,
+  dan UI menyediakan `Ikuti preset`. S271 membuktikan lima preset, seluruh
+  halaman inherited, enam token, isolasi Custom, save revision/hash/token,
+  iframe ACK, family-solid, radius card 20px, dan CTA 16px. Full backend
+  1.063/1.063 (12.282), visual matrix 9/9, build/type-check, dependency audit,
+  backup/restore, activation atomik, verifier 17/17, public/security smoke 3/3,
+  dan readiness 100/100 lulus. Registry `1.14.1`; release aktif
+  `20260821110414-0617dba`, rollback `20260821091334-57635d4`. Owner UAT
+  authenticated menunggu login Chrome; `BUSINESS_READY=false`.
+
 - Template Booking editor v2 exact source
   `57635d4a6d29218797e1406385fed64d09abf2a0`: `CONFIRMED / PUSHED /
   UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / PRODUCTION_DEPLOYED /
@@ -59,12 +76,12 @@ dalam satu dokumen public-safe.
   assisted, bukan perubahan runtime SagaBook; lifecycle DEC-029 tetap berlaku
   sampai ada release entitlement terpisah.
 
-- Updated: 21 Agustus 2026 16:25 WIB
+- Updated: 21 Agustus 2026 18:20 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED`; current release
-  `20260821091334-57635d4`, exact release source
-  `57635d4a6d29218797e1406385fed64d09abf2a0`, rollback langsung S269
-  `20260821073107-161ba76`, dan verifier independen 17/17 termasuk HTTP 3/3
+  `20260821110414-0617dba`, exact release source
+  `0617dba3c5c8e73045c24f0db84b4ca6fb65c0f3`, rollback langsung editor v2
+  `20260821091334-57635d4`, dan verifier independen 17/17 termasuk HTTP 3/3
   serta security profile 3/3
 - Business readiness: `NEEDS CONFIRMATION`
 - Host-storage recovery S267 exact
