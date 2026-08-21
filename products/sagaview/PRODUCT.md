@@ -1,18 +1,18 @@
 # SagaView Product Knowledge
 
-Updated: 22 Agustus 2026 04:21 WIB
+Updated: 22 Agustus 2026 04:33 WIB
 
 Backend dan Studio SagaView terbaru berstatus `CONFIRMED / PUSHED /
 LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Backend exact
-`16fa73bf4fca8251f074e63bae8141f7af333b51` aktif sebagai release
-`20260821151535-16fa73b`; Studio exact
+`51ceefcbf47a825e6b2df147ab14cd4890fd2d25` aktif sebagai release
+`20260821211648-51ceefc`; Studio exact
 `645dddb90dc55d36288d4b4cd96b6acd73c009e8` aktif sebagai release
-`20260821090659-645dddb`. Release backend memperbaiki incident login 500:
-paket sebelumnya tidak membawa `public/build/manifest.json`, sedangkan release
-aktif sekarang selalu dibangun dari exact commit dan ditolak bila manifest atau
-entry login/SagaView wajib hilang. Login publik dan admin kembali 200 pada 10
-request berulang serta browser production 390x844 dan 1440x900, tanpa overflow
-atau runtime error. Support Hub tetap konsisten dengan kontrak produk:
+`20260821090659-645dddb`. Release backend kumulatif mempertahankan perbaikan
+login 500 dan mengaktifkan progressive disclosure Owner Pricing: ringkasan
+kategori/frame tetap terlihat, tepat satu editor aktif, dan draft gagal tetap
+aman. Artifact dibangun dari exact commit dan ditolak bila manifest atau entry
+login/SagaView wajib hilang. Login publik dan admin lulus 10/10 setelah
+aktivasi. Support Hub tetap konsisten dengan kontrak produk:
 hanya estimasi, pembayaran dilakukan di luar aplikasi, dan bantuan hanya teks
 serta metadata teknis aman tanpa screenshot, file, foto, path, QRIS, rekening,
 provider, callback, checkout subscription, status paid, atau payment hold.
@@ -22,8 +22,8 @@ commit lulus 201 test SagaView/3.462 assertion, build 5.097 modul, focused
 contract 2/2, dependency audit nol, backup terenkripsi/offsite/restore
 disposable, archive dan git bundle immutable pada dua lokasi, atomic
 activation, health/provenance, service/journal, public smoke, serta visual
-production. Rollback langsung backend adalah `20260821082751-ea24cc6` dan
-Studio tetap `20260811124309-86b04c9`.
+production. Rollback langsung backend adalah `20260821151535-16fa73b` dan
+Studio tetap `20260821090659-645dddb`.
 `BUSINESS_READY` belum diklaim; Founding Studio Pilot dan acceptance operasional
 mass-scale tetap gate terpisah.
 
@@ -39,7 +39,8 @@ aman dan metadata save tidak memuat foto, path, atau output customer. Gate
 exact lulus: SagaView 146/146 dengan 1.324 assertion, focused API 41/41 dengan
 170 assertion, browser desktop/mobile 4/4, build 5.097 modul, dan npm audit nol.
 Status `PUSHED / UIUX_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED /
-LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production dan data tidak berubah.
+LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; schema dan data
+tidak berubah.
 S263 membekukan exact source tersebut sebagai release artifact
 `20260821211648-51ceefc`. Archive SHA-256
 `9001d29a7d041d8fc302f5365aeb7ab04f4015543af86a140714e0bde002c5f5` dan
@@ -47,10 +48,12 @@ git bundle SHA-256
 `219899470aaad612896ce4f0cf2c04e728a616d2aa99aa8f120cae4da175edf3`
 tersedia pada dua volume dengan hash identik; bundle memuat complete history
 dan archive memuat tiga entry build wajib tanpa `.env`, vendor, atau
-node_modules. Kontrak release 11/11 lulus. Status
-`ARTIFACT_VERIFIED / PACKAGED_NOT_DEPLOYED`; authenticated Owner UAT,
-fresh backup/restore, dan persetujuan deploy tetap gate. Production read-only
-tetap backend `16fa73bf...`, Studio `645dddb...`, sehat, dan tidak berubah.
+node_modules. Kontrak release 11/11 lulus. Fresh encrypted offsite backup dan
+disposable restore tiga database lulus dengan 146/154/149 tabel. Atomic
+activation, rollback target, manifest, service, journal, security header,
+login/admin 10/10, route operasional, dan API health lulus. Status
+`ARTIFACT_VERIFIED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+authenticated Owner UAT tetap residual sebelum `BUSINESS_READY`.
 
 SagaTech V25 berstatus `CONFIRMED / SALES_SURFACE_PRODUCTION_ACTIVATED` pada
 `https://sagatech.site/saga-product/`. Funnel kini mobile-only: owner memilih

@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 22 Agustus 2026 04:29 WIB
+Evidence cut-off: 22 Agustus 2026 04:33 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -97,11 +97,11 @@ public smoke dan security header 3/3 lulus. Authenticated Owner/operator UAT
 belum berjalan karena credential bridge lokal tidak aktif. Exception Fonnte
 tetap sempit dan bukan bukti provider sehat; `BUSINESS_READY=false`.
 
-SagaView backend exact `16fa73bf4fca8251f074e63bae8141f7af333b51`
+SagaView backend exact `51ceefcbf47a825e6b2df147ab14cd4890fd2d25`
 berstatus `CONFIRMED / PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
-PRODUCTION_ACTIVATED` sebagai release `20260821151535-16fa73b`. Release ini
-memulihkan login publik/admin yang sempat 500 karena backend release
-`20260821082751-ea24cc6` tidak membawa manifest build Vite. Packager sekarang
+PRODUCTION_ACTIVATED` sebagai release `20260821211648-51ceefc`. Release ini
+mencakup pemulihan login publik/admin dan Owner Pricing progressive disclosure.
+Packager sekarang
 membangun dari exact clean commit dan artifact/deploy menolak manifest atau
 entry login/SagaView wajib yang hilang. Respons Support Hub tetap hanya
 menjelaskan estimasi, pembayaran off-app, dan bantuan text-only
@@ -110,41 +110,42 @@ pembayaran, provider/callback, checkout subscription, status paid, atau
 permintaan screenshot/log/file. Studio exact
 `645dddb90dc55d36288d4b4cd96b6acd73c009e8` aktif sebagai release
 `20260821090659-645dddb`. Physical UAT pasangan final lulus 14 gate tanpa
-blocker; repair backend lulus 201 test SagaView/3.462 assertion, focused 2/2,
-build 5.097 modul, dependency audit nol, artifact/checksum/git bundle dua
-lokasi, backup terenkripsi/offsite/restore disposable 149 tabel, atomic
-activation, 10/10 login 200, enam route smoke, empat service, journal, serta
-browser 390x844 dan 1440x900. Rollback langsung backend
-`20260821082751-ea24cc6` dan Studio
-`20260811124309-86b04c9`. Ini bukan klaim `BUSINESS_READY`; Founding Studio
+blocker; Owner Pricing lulus SagaView 146/146 dengan 1.324 assertion, focused
+API 41/41 dengan 170 assertion, browser desktop/mobile 4/4, build 5.097 modul,
+dependency audit nol, artifact/checksum/git bundle dua lokasi, backup
+terenkripsi/offsite/restore disposable 149 tabel, atomic activation, 10/10
+login dan admin login 200, API/admin smoke, tiga service, journal nol, manifest,
+serta security header. Rollback langsung backend
+`20260821151535-16fa73b`; Studio tetap pada release aktif di atas. Ini bukan
+klaim `BUSINESS_READY`; Founding Studio
 Pilot dan acceptance operasional mass-scale tetap diperlukan.
 
 SagaView Owner Pricing S262 exact source
 `51ceefcbf47a825e6b2df147ab14cd4890fd2d25` berstatus `CONFIRMED / PUSHED /
-UIUX_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
-IMPLEMENTED_NOT_DEPLOYED`. Progressive disclosure S164 telah diintegrasikan di
+UIUX_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED / PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED`. Progressive disclosure S164 telah diintegrasikan di
 atas exact backend production lineage `16fa73bf...`: ringkasan kategori/frame
 tetap terlihat, tepat satu editor aktif, draft gagal tetap aman, dan aksi save
 menahan double-submit. Payload tetap metadata katalog/harga tanpa foto, path,
 editor, atau output customer; tenant/owner authority dan stale handling tetap
 fail-closed. SagaView 146/146 dengan 1.324 assertion, focused API 41/41 dengan
 170 assertion, browser desktop/mobile 4/4, build 5.097 modul, dan npm audit nol
-lulus. Production, schema, data, pricing nyata, dan `BUSINESS_READY` tidak
-berubah.
+lulus. Production backend berubah melalui S264; schema dan data tidak berubah,
+sedangkan authenticated Owner UAT masih residual dan `BUSINESS_READY=false`.
 
 SagaView S263 membekukan exact S262 sebagai immutable release artifact
-`20260821211648-51ceefc` berstatus `ARTIFACT_VERIFIED /
-PACKAGED_NOT_DEPLOYED`. Archive SHA-256 `9001d29a...c5f5` dan git bundle
+`20260821211648-51ceefc` berstatus `ARTIFACT_VERIFIED / PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED`. Archive SHA-256 `9001d29a...c5f5` dan git bundle
 SHA-256 `21989947...edf3` tersedia pada dua volume dengan hash identik.
 Bundle memuat exact HEAD dan complete history; archive memuat tiga entry build
 wajib tanpa `.env`, `.git`, vendor, atau node_modules. Build 5.097 modul
-serta contract release 11/11 dengan 41 assertion lulus. Production read-only
-tetap backend `16fa73bf...` / `20260821151535-16fa73b`, Studio
-`645dddb...`, rollback backend `20260821082751-ea24cc6`, service aktif,
-public smoke 200, dan journal error satu jam nol. Authenticated Owner UAT,
-fresh backup/restore, dan persetujuan deploy masih wajib; `STAGING_READY`,
-`PRODUCTION_DEPLOYED`, `PRODUCTION_ACTIVATED`, dan `BUSINESS_READY` belum
-berlaku untuk S263.
+serta contract release 11/11 dengan 41 assertion lulus. S264 menjalankan fresh
+encrypted backup, offsite round-trip, restore disposable 149 tabel, lalu atomic
+activation exact artifact. Backend aktif `51ceefcb...` /
+`20260821211648-51ceefc`, Studio `645dddb...`, rollback backend
+`16fa73bf...` / `20260821151535-16fa73b`, service aktif, login/admin 10/10,
+API/admin smoke 200, security header lengkap, dan journal error nol.
+Authenticated Owner UAT masih wajib sebelum `BUSINESS_READY`.
 
 Audit lineage SagaView 22 Agustus 2026 membuktikan kontrak estimasi-only S159
 (backend `38c4221e...`, Studio `6d7083a3...`) dan stale-conflict editor S162

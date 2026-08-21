@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-22 - SagaView S264 Owner Pricing production activation sync
+
+- Informasi `CONFIRMED` berasal dari exact source
+  `51ceefcbf47a825e6b2df147ab14cd4890fd2d25`, release backend aktif
+  `20260821211648-51ceefc`, dan verifikasi independen production.
+- Knowledge mengubah status Owner Pricing menjadi `PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`, mengikat rollback backend `20260821151535-16fa73b`,
+  dan mencatat Studio tetap `20260821090659-645dddb`.
+- Fresh encrypted backup/offsite/restore disposable 149 tabel, login/admin
+  10/10, API/admin smoke 200, service/journal, manifest, dan security header
+  lulus; tidak ada migration atau perubahan kontrak no-upload/payment off-app.
+- Authenticated Owner UAT masih residual dan `BUSINESS_READY=false`.
+- Dokumen terdampak: SagaView product/changelog/coverage, portfolio, master,
+  root changelog, dan sync status.
+
 ## 2026-08-22 - SagaBook S273 production activation sync
 
 - Informasi `CONFIRMED` berasal dari exact source

@@ -12,16 +12,26 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-22T04:29:00+07:00 |
-| Branch aktif | `codex/s273-production-knowledge` dari worktree bersih exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-22T04:33:00+07:00 |
+| Branch aktif | `codex/s264-sagaview-owner-pricing-production` dari worktree bersih exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `49d7b22b928e7a12847f262356ec5c3e478f2391` |
-| Informasi terakhir disinkronkan | SagaBook S273 text inspector dan Cinematic Noir aktif pada release `20260821212120-1a7f5fb`; rollback serta verifier 17/17 terverifikasi. |
+| Baseline sebelum pembaruan | `b1da8f761b8529939b825ea741e687c8df6722f5` |
+| Informasi terakhir disinkronkan | SagaView S264 Owner Pricing aktif pada backend release `20260821211648-51ceefc`; Studio tetap `20260821090659-645dddb`, rollback, backup/restore, smoke, service, journal, manifest, dan header keamanan terverifikasi. |
 | Status sinkronisasi | `UP TO DATE` setelah validator dan fast-forward push. |
-| Konflik | Worktree bersih memakai exact `origin/main`; clone canonical lokal yang kotor/divergen tidak disentuh. Lineage production Cinematic Noir dibedakan dari branch desain referensi. |
-| Error | Tidak ada blocker release. Authenticated Owner UAT tenant dan pilot tetap belum dilakukan; `BUSINESS_READY=false`. |
+| Konflik | Worktree SagaView terisolasi memakai exact `origin/main`; perubahan SagaBook terbaru dipertahankan dan tidak disentuh. Clone canonical lokal yang kotor/divergen tidak digunakan. |
+| Error | Tidak ada blocker release. Authenticated Owner UAT katalog nyata belum dilakukan; `BUSINESS_READY=false`. |
 
-## File yang berubah pada sinkronisasi ini (SagaBook S273 production)
+## File yang berubah pada sinkronisasi ini (SagaView S264 production activation)
+
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/CHANGELOG.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
+
+## File yang berubah pada sinkronisasi sebelumnya (SagaBook S273 production)
 
 - `products/sagabook/PRODUCT.md`
 - `products/sagabook/DOSSIER.md`
@@ -32,7 +42,7 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `CHANGELOG.md`
 - `SYNC_STATUS.md`
 
-## File yang berubah pada sinkronisasi ini (SagaView S263 immutable release pack)
+## File yang berubah pada sinkronisasi sebelumnya (SagaView S263 immutable release pack)
 
 - `products/sagaview/PRODUCT.md`
 - `products/sagaview/CHANGELOG.md`

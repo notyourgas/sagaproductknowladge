@@ -1,5 +1,28 @@
 # SagaView Changelog
 
+## 2026-08-22 - S264 Owner Pricing production activation
+
+- Klasifikasi: `CONFIRMED`; diotorisasi langsung oleh Andreas.
+- Before: exact source S262 dan artifact S263 sudah tervalidasi tetapi belum
+  aktif; backend production masih `20260821151535-16fa73b`.
+- After: backend exact `51ceefcbf47a825e6b2df147ab14cd4890fd2d25`
+  aktif secara atomic sebagai `20260821211648-51ceefc`. Studio tetap exact
+  `645dddb90dc55d36288d4b4cd96b6acd73c009e8` /
+  `20260821090659-645dddb`.
+- Data/release safety: tidak ada migration. Fresh backup terenkripsi tiga
+  database, checksum, offsite round-trip, dan restore disposable 146/154/149
+  tabel lulus; plaintext tidak disimpan. Rollback langsung backend adalah
+  `20260821151535-16fa73b`.
+- Verification: manifest dan tiga entry build cocok; login dan admin login
+  masing-masing 10/10 HTTP 200; Session, Changelog, dan API health 200; worker,
+  PHP-FPM, dan Nginx aktif; journal error sepuluh menit nol; HSTS, DENY
+  frame-options, dan CSP aktif. SagaBook, Saga Platform, dan Studio tidak
+  diubah oleh deploy ini.
+- Delivery: `PUSHED / LOCAL_VALIDATED / ARTIFACT_VERIFIED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Authenticated Owner UAT pada
+  katalog nyata dan acceptance mass-scale tetap residual; `BUSINESS_READY`
+  belum diklaim.
+
 ## 2026-08-22 - S263 immutable release pack Owner Pricing
 
 - Klasifikasi: `CONFIRMED` release preparation; production read-only.

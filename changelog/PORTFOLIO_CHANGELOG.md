@@ -1,5 +1,20 @@
 # Portfolio Changelog
 
+## 2026-08-22 - SagaView S264 Owner Pricing production activation
+
+- Exact source `51ceefcbf47a825e6b2df147ab14cd4890fd2d25` aktif sebagai
+  release backend `20260821211648-51ceefc`; Studio tetap pada
+  `645dddb90dc55d36288d4b4cd96b6acd73c009e8` /
+  `20260821090659-645dddb`.
+- Progressive disclosure Owner Pricing kini aktif di production dengan satu
+  editor dominan, draft gagal tetap aman, dan payload metadata-only.
+- Fresh encrypted backup, offsite round-trip, disposable restore 149 tabel,
+  atomic switch, login/admin 10/10, API/admin smoke, service, journal, rollback,
+  dan header keamanan lulus tanpa migration.
+- Status `PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; rollback
+  langsung `16fa73bf...` / `20260821151535-16fa73b`, sedangkan authenticated
+  Owner UAT masih residual sebelum `BUSINESS_READY`.
+
 ## 2026-08-22 - SagaBook S273 text inspector dan Cinematic Noir production
 
 - Exact release source `1a7f5fb80c422bf759c6092110d35c1606361cc3`
