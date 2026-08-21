@@ -7,6 +7,25 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Template Booking editor v2 exact source
+  `57635d4a6d29218797e1406385fed64d09abf2a0`: `CONFIRMED / PUSHED /
+  UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`. Snapshot kanonik menyatukan booking brand, enam warna,
+  dua font, copy sembilan step, override/inheritance per halaman, button style,
+  card radius, asset font tenant-owned, dan preset. Save memakai optimistic
+  revision serta content hash; stale save/publish ditolak, publish tidak lagi
+  menerima snapshot arbitrer client, dan preview memakai token server terbatas
+  yang terikat tenant/user/revisi/hash. Preview hanya memberi ACK dari authority
+  yang diinject setelah server merender draft exact. Draft rehydrate setelah
+  reload; published profile bersifat hash-addressed dan scope global/cabang
+  dikunci exact. Layout editor lebih ramping, preview sticky memakai kanvas
+  proporsional 390/430/460 tanpa squeeze. Full backend 1.063/1.063 (12.265),
+  browser gate 8/8, public accessibility 27/27, build/type-check/formatter,
+  audit dependency, backup/restore, atomic activation, dan verifier 17/17
+  lulus. Release aktif `20260821091334-57635d4`, rollback langsung
+  `20260821073107-161ba76`. Authenticated Owner/operator UAT masih residual;
+  `BUSINESS_READY=false`.
+
 - Global Brand preview-save S269 exact release source
   `161ba76b8caa620741b76fe8d8d8bad18ec2841e`: `CONFIRMED / PUSHED /
   UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / PRODUCTION_DEPLOYED /
@@ -40,12 +59,12 @@ dalam satu dokumen public-safe.
   assisted, bukan perubahan runtime SagaBook; lifecycle DEC-029 tetap berlaku
   sampai ada release entitlement terpisah.
 
-- Updated: 21 Agustus 2026 14:41 WIB
+- Updated: 21 Agustus 2026 16:25 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
-- Activation: `PRODUCTION_ACTIVATED`; current release S269
-  `20260821073107-161ba76`, exact release source
-  `161ba76b8caa620741b76fe8d8d8bad18ec2841e`, rollback langsung S265
-  `20260820103024-5a4e24f`, dan verifier independen 17/17 termasuk HTTP 3/3
+- Activation: `PRODUCTION_ACTIVATED`; current release
+  `20260821091334-57635d4`, exact release source
+  `57635d4a6d29218797e1406385fed64d09abf2a0`, rollback langsung S269
+  `20260821073107-161ba76`, dan verifier independen 17/17 termasuk HTTP 3/3
   serta security profile 3/3
 - Business readiness: `NEEDS CONFIRMATION`
 - Host-storage recovery S267 exact

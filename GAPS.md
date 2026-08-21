@@ -8,7 +8,7 @@ diubah menjadi klaim publik sebelum ditutup dengan bukti atau keputusan owner.
 
 ## Konteks
 
-Daftar ini berlaku pada evidence cut-off 21 Agustus 2026 14:00 WIB dan harus diperbarui
+Daftar ini berlaku pada evidence cut-off 21 Agustus 2026 16:25 WIB dan harus diperbarui
 ketika keputusan atau release baru menutup gap.
 
 ## Cara memakai
@@ -30,6 +30,13 @@ blocker dan kedua surface sudah production-activated. Residual SagaView kini
 adalah Founding Studio Pilot dan acceptance operasional mass-scale sebelum
 `BUSINESS_READY`, bukan blocker deployment release ini.
 
+SagaBook GAP-011 sudah `CLOSED` oleh Template Booking editor v2 exact source
+`57635d4a6d29218797e1406385fed64d09abf2a0`: save/publish memakai revision dan
+content hash, draft rehydrate setelah reload, stale mutation ditolak, preview
+server authoritative, dan public profile tidak berubah sebelum publish sah.
+Residualnya adalah authenticated Owner/operator UAT dan cohort pilot pada
+GAP-004, bukan gap implementasi template.
+
 | ID | Produk/area | Label | Pertanyaan atau gap | Bukti penutup |
 |---|---|---|---|---|
 | GAP-004 | SagaBook | NEEDS CONFIRMATION | Business readiness belum dibuktikan pada cohort studio nyata. | Minimal cohort onboarding, booking nyata, support observation, dan incident review. |
@@ -39,7 +46,6 @@ adalah Founding Studio Pilot dan acceptance operasional mass-scale sebelum
 | GAP-008 | SagaTech | NEEDS CONFIRMATION | V23 aktif di branded domain, tetapi business readiness belum tercapai karena seller of record, exact BOM/condition/warranty, renewal software/DNP, Linktree/PDF lama, persistensi analytics, UAT perangkat nyata, dan repository source kanonik belum ditutup. | Quotation final terverifikasi, Linktree owner UAT, dashboard/network evidence analytics, iPhone/Android dan booth UAT, serta Git remote/source push SagaTech. |
 | GAP-009 | SagaBooth | TODO | M1 local runtime, native SQLite, journal/outbox, recovery, simulator, dan operator shell sudah tertutup. GitHub Actions tetap tidak memulai job karena billing/spending limit dan branch protection repo private memerlukan GitHub Pro. Customer kiosk, hardware, QRIS, MySQL/control plane, signed installer, deploy, serta pilot belum ada. | Selesaikan billing, ulang CI hingga hijau, aktifkan protection, lalu bangun M2 customer kiosk dan qualification Canon/DNP secara bertahap. |
 | GAP-010 | SagaBook / SagaView | NEEDS CONFIRMATION | SagaTech V24 sudah memublikasikan trial 14 hari dan early adopter 1 bulan berlangganan menjadi total 2 bulan aktif, tetapi runbook fulfillment, eligibility/quota register, serta receipt aktivasi per produk belum ada di knowledge. SagaBook tetap memiliki lifecycle DEC-029 dan V24 tidak mengubah entitlement backend. | Kunci runbook assisted activation per produk, pemilik approval, receipt entitlement, cara menangani hari 8–14 SagaBook, kuota, dan bukti bulan bonus sebelum cohort pertama diaktivasi. |
-| GAP-011 | SagaBook Template Booking | TODO | S269 menutup alur normal edit -> save preview -> publish di satu tab, tetapi exact binding publish ke revisi draft server dan recovery draft lintas reload/tab belum memiliki optimistic concurrency end-to-end. | Tambahkan revision/updated-at contract pada save dan publish, rehydrate draft tersimpan, tolak stale mutation, lalu buktikan multi-tab dan recovery tanpa mengubah published profile sebelum publish sah. |
 
 ## Keputusan produk
 

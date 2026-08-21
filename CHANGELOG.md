@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-21 - SagaBook Template Booking editor v2 production sync
+
+- Informasi `CONFIRMED` berasal dari keputusan Andreas, exact source
+  `57635d4a6d29218797e1406385fed64d09abf2a0`, dan release production
+  `20260821091334-57635d4`.
+- Knowledge mencatat snapshot draft server, optimistic revision/hash,
+  authoritative preview ACK, exact publish, seluruh Global/per-page control,
+  draft reload recovery, serta preview mobile proporsional yang lebih besar.
+- Delivery `PUSHED / UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; rollback
+  `20260821073107-161ba76`, verifier 17/17, public smoke/security 3/3.
+  Authenticated UAT dan `BUSINESS_READY` tetap residual.
+- Dokumen terdampak: SagaBook product/dossier/changelog/coverage, portfolio,
+  master, founder decision, gaps, root changelog, dan sync status.
+
 ## 2026-08-21 - SagaView Support contract dan Studio production activation
 
 - Informasi `CONFIRMED` berasal dari exact runtime backend

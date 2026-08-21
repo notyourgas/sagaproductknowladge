@@ -1,5 +1,31 @@
 # SagaBook Changelog
 
+## 2026-08-21 - Template Booking editor v2 production
+
+- Klasifikasi: `CONFIRMED`; keputusan workflow berasal dari Andreas dan exact
+  source `57635d4a6d29218797e1406385fed64d09abf2a0` aktif di production.
+- Before: preview dapat terasa tidak berubah karena draft bergantung pada state
+  browser, Global/per-page tidak sepenuhnya parity, dan kanvas mobile tertekan
+  oleh layout editor. After: satu snapshot server menghubungkan booking brand,
+  enam warna, dua font, copy sembilan halaman, inheritance, button style, card
+  radius, preset, preview, dan website booking published.
+- Save memakai revision/content hash dan mendeteksi no-op/stale tab. Preview
+  memakai token authority server dan ACK exact revision/hash. Publish hanya
+  menerima draft tersimpan yang sama, termasuk isolasi tenant dan scope cabang.
+- Editor/preview kini dua panel; canvas 390/430/460 tetap proporsional. Draft
+  rehydrate setelah reload dan Global/Custom tampil eksplisit.
+- Full backend 1.063/1.063 (12.265 assertion), browser gate 8/8, public
+  accessibility 27/27, type-check, build, formatter, Composer/npm audit,
+  backup terenkripsi, restore disposable, atomic activation, dan verifier
+  independen 17/17 lulus.
+- Release `20260821091334-57635d4` aktif dengan rollback
+  `20260821073107-161ba76`; public smoke serta security header 3/3. Status
+  `PUSHED / UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
+- Authenticated Owner/operator UAT belum dijalankan karena credential bridge
+  lokal tidak aktif. Exception Fonnte tetap sempit, provider tidak diklaim
+  sehat, dan `BUSINESS_READY=false`.
+
 ## 2026-08-21 - Global Brand save-before-publish S269 production
 
 - Klasifikasi: `CONFIRMED`; keputusan workflow berasal dari Andreas dan exact

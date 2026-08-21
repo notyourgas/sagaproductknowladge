@@ -12,16 +12,29 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-21T16:14:00+07:00 |
-| Branch aktif | `codex/s259-sagaview-final-release-knowledge` dari worktree bersih exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-21T16:25:00+07:00 |
+| Branch aktif | `codex/knowledge-sagabook-template-v2` dari worktree bersih exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `619a00ffa347bcf848b79177eb34cdbc5f8afe1b` |
-| Informasi terakhir disinkronkan | SagaView backend `ea24cc687dbb176380674b70985214ece592051d` dan Studio `645dddb90dc55d36288d4b4cd96b6acd73c009e8` production-activated sebagai `20260821082751-ea24cc6` dan `20260821090659-645dddb`. |
-| Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
-| Konflik | Worktree bersih memakai exact `origin/main`; clone canonical lokal yang divergen tidak disentuh. SagaBook dan produk lain tidak diubah. |
-| Error | Tidak ada blocker deployment SagaView yang tersisa; Founding Studio Pilot dan acceptance mass-scale tetap menahan `BUSINESS_READY`. |
+| Baseline sebelum pembaruan | `6fc6b2ce9840d322272c9379f23eb9cdda6bb9d9` |
+| Informasi terakhir disinkronkan | SagaBook Template Booking editor v2 exact `57635d4a6d29218797e1406385fed64d09abf2a0` production-activated sebagai `20260821091334-57635d4`. |
+| Status sinkronisasi | `READY TO COMMIT` setelah validator; push dan remote verification mengikuti. |
+| Konflik | Worktree bersih memakai exact `origin/main`; clone canonical lokal yang divergen 1/137 tidak disentuh. Produk lain tidak diubah. |
+| Error | Authenticated Owner/operator UAT tertunda karena credential bridge lokal tidak aktif; `BUSINESS_READY=false`. |
 
-## File yang berubah pada sinkronisasi ini (SagaView production activation)
+## File yang berubah pada sinkronisasi ini (SagaBook Template Booking editor v2)
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `DECISIONS.md`
+- `GAPS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
+
+## File yang berubah pada sinkronisasi sebelumnya (SagaView production activation)
 
 - `products/sagaview/PRODUCT.md`
 - `products/sagaview/DOSSIER.md`

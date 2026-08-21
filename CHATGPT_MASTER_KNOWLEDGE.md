@@ -1,8 +1,24 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 21 Agustus 2026 16:14 WIB
+Evidence cut-off: 21 Agustus 2026 16:25 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
+
+SagaBook Template Booking editor v2 exact source
+`57635d4a6d29218797e1406385fed64d09abf2a0` berstatus `CONFIRMED / PUSHED /
+UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED` sebagai release `20260821091334-57635d4`, dengan rollback
+`20260821073107-161ba76`. Global Brand, enam warna, dua font, copy sembilan
+halaman, Global/Custom inheritance, button style, card radius, dan preset kini
+menjadi satu snapshot draft server. Save memakai revision/content hash, draft
+rehydrate setelah reload, stale tab ditolak, Preview Live memakai token dan ACK
+server exact, dan Publish hanya menerima draft yang sama. Preview mobile
+390/430/460 tetap proporsional dalam layout dua panel. Full backend
+1.063/1.063 (12.265), browser 8/8, accessibility publik 27/27, build/type-check,
+formatter, dependency audit, backup/restore, atomic activation, verifier 17/17,
+public smoke dan security header 3/3 lulus. Authenticated Owner/operator UAT
+belum berjalan karena credential bridge lokal tidak aktif. Exception Fonnte
+tetap sempit dan bukan bukti provider sehat; `BUSINESS_READY=false`.
 
 SagaView backend exact `ea24cc687dbb176380674b70985214ece592051d`
 berstatus `CONFIRMED / PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /

@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-092 - Template Booking memakai satu draft server untuk preview dan publish
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-21 |
+| Topik | Arsitektur dan pengalaman Template Booking SagaBook |
+| Keputusan | Global Brand, style dan teks per halaman, preset, Preview Live, serta Publish harus memakai satu snapshot draft server yang sama. Save harus memiliki revision/content hash, preview harus membuktikan draft exact yang dirender, Publish hanya boleh memakai revisi tersebut, dan editor harus memberi canvas mobile proporsional yang lebih besar. |
+| Alasan | Preview sebelumnya dapat terlihat tidak berubah, beberapa kontrol tidak benar-benar terhubung, konflik tab tidak terdeteksi, dan layout membuat tampilan mobile terlalu kecil atau tertekan. |
+| Alternatif yang dipertimbangkan | Tetap memakai localStorage sebagai authority; publish payload client langsung; autosave tanpa revisi; mempertahankan preview 360 piksel di bawah editor. |
+| Dampak | Snapshot kanonik mencakup booking brand, enam warna, dua font, copy sembilan halaman, inheritance, button style, card radius, preset, dan asset font tenant-owned. Draft rehydrate, stale/no-op handling, server preview token/ACK, exact branch-scoped publish, serta canvas 390/430/460 aktif. DEC-091 dipertahankan sebagai keputusan historis save-before-publish tetapi detail tombol kontekstualnya digantikan satu aksi save kanonik. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / PUSHED / UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; exact source `57635d4a6d29218797e1406385fed64d09abf2a0`, release `20260821091334-57635d4`, rollback `20260821073107-161ba76`; authenticated UAT residual dan `BUSINESS_READY=false` |
+| Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [SagaBook Changelog](products/sagabook/CHANGELOG.md), [SagaBook Ledger](products/sagabook/FEATURE_COVERAGE_LEDGER.md), [Gaps](GAPS.md) |
+
 ## DEC-091 - Global Brand SagaBook wajib disimpan ke preview sebelum publish
 
 | Field | Isi |
@@ -32,7 +46,7 @@ keputusan pengganti.
 | Alternatif yang dipertimbangkan | Autosave setiap input; mempertahankan save hanya di header; membiarkan Publish langsung memakai form yang belum dipreview. |
 | Dampak | Tab Global Brand memiliki tombol dan status dirty; Publish digate oleh state preview tersimpan; header Preview membuka draft preview. Endpoint draft/publish, schema, pricing, payment, dan permission existing tidak berubah. |
 | Pemberi keputusan | Andreas / founder |
-| Status | `CONFIRMED / PUSHED / UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; exact release source `161ba76b8caa620741b76fe8d8d8bad18ec2841e`, release `20260821073107-161ba76`, rollback `20260820103024-5a4e24f` |
+| Status | `DEPRECATED IN PART BY DEC-092`; prinsip save-before-publish tetap `CONFIRMED`, tetapi tombol kontekstual Global Brand dan preview berbasis state browser diganti oleh satu save kanonik serta authority draft server. Release historis `20260821073107-161ba76`. |
 | Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [SagaBook Changelog](products/sagabook/CHANGELOG.md), [SagaBook Ledger](products/sagabook/FEATURE_COVERAGE_LEDGER.md), [Gaps](GAPS.md) |
 
 ## DEC-089 - Saga Product menjadi funnel bio dengan penawaran early adopter assisted

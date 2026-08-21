@@ -1,6 +1,22 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 21 Agustus 2026 14:41 WIB
+Evidence cut-off: 21 Agustus 2026 16:25 WIB
+
+Template Booking editor v2 exact source
+`57635d4a6d29218797e1406385fed64d09abf2a0` telah `CONFIRMED / PUSHED /
+UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED`. Coverage mengikat enam warna dan dua font Global,
+booking brand, copy sembilan halaman, enam warna dan dua font per halaman,
+inherit/reset, button style, card radius, preset parity, draft rehydrate,
+no-op, stale two-tab, exact publish, preview token tamper/expiry, asset font
+tenant-owned, dan scope global/cabang. Browser membuktikan editor, iframe ACK,
+layout 390/430, touch target, no-overflow, double activation, serta ambiguous
+publish recovery 8/8; public accessibility lulus 27/27. Full backend
+1.063/1.063 (12.265 assertion), build/type-check/formatter/audit dependency,
+backup/restore, atomic activation, verifier 17/17, public smoke 3/3, dan
+security header 3/3 lulus. Release aktif `20260821091334-57635d4` dengan
+rollback `20260821073107-161ba76`. Authenticated Owner/operator UAT masih
+residual dan `BUSINESS_READY=false`.
 
 S269 exact release source `161ba76b8caa620741b76fe8d8d8bad18ec2841e` telah
 `CONFIRMED / PUSHED / UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /

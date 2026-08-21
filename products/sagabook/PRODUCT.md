@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 21 Agustus 2026 14:41 WIB
-Evidence status: S269 Global Brand preview-save production active; SagaTech V25 sales surface active; business readiness pending
+Updated: 21 Agustus 2026 16:25 WIB
+Evidence status: Template Booking editor v2 production active; authenticated owner UAT and business readiness pending
 
 ## Tujuan dokumen
 
@@ -15,6 +15,24 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- Template Booking editor v2 exact source
+  `57635d4a6d29218797e1406385fed64d09abf2a0` berstatus `CONFIRMED /
+  PUSHED / UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Global Brand, enam warna, dua
+  font, teks sembilan halaman, inheritance Global/Custom, gaya tombol, dan
+  radius card kini memakai satu snapshot draft server. Preview Live hanya
+  mengakui revisi/hash yang benar-benar dirender server; Publish hanya menerima
+  draft exact tersebut. Draft pulih setelah reload, save no-op tidak menaikkan
+  revisi, dan tab usang ditolak. Editor dirampingkan berdampingan dengan preview
+  mobile proporsional 390/430/460 piksel. Full backend 1.063/1.063 (12.265
+  assertion), browser editor/publish 8/8, accessibility publik 27/27,
+  type-check, build, formatter, dan dependency audit lulus. Backup terenkripsi
+  dan restore disposable lulus; release `20260821091334-57635d4` aktif dengan
+  rollback `20260821073107-161ba76`; verifier independen 17/17, public smoke dan
+  security header 3/3 lulus. Exception Fonnte tetap sempit dan bukan bukti
+  provider sehat. Authenticated Owner/operator UAT belum dijalankan karena
+  credential bridge lokal tidak aktif; `BUSINESS_READY=false`.
 
 - S269 exact release source `161ba76b8caa620741b76fe8d8d8bad18ec2841e`
   berstatus `CONFIRMED / PUSHED / UIUX_VALIDATED / QA_VALIDATED /

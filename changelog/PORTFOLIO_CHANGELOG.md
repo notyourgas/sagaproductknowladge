@@ -1,5 +1,20 @@
 # Portfolio Changelog
 
+## 2026-08-21 - SagaBook Template Booking editor v2 production
+
+- Global Brand, style/copy sembilan halaman, inheritance, button style, card
+  radius, preset, preview, dan website booking kini terhubung melalui satu
+  snapshot draft server dengan revision/content hash.
+- Preview mobile diperbesar menjadi canvas proporsional 390/430/460 dalam
+  workspace dua panel; Publish hanya menerima draft exact yang sudah dirender
+  dan di-ACK oleh preview server.
+- Exact source `57635d4a6d29218797e1406385fed64d09abf2a0` aktif sebagai
+  `20260821091334-57635d4`, rollback `20260821073107-161ba76` tersedia.
+- Full backend 1.063/1.063, browser 8/8, accessibility 27/27, build/audit,
+  backup/restore, atomic activation, verifier 17/17, public smoke dan security
+  header 3/3 lulus. Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+  authenticated Owner/operator UAT dan `BUSINESS_READY` masih tertunda.
+
 ## 2026-08-21 - SagaView Support contract dan Studio cumulative release
 
 - Backend exact `ea24cc687dbb176380674b70985214ece592051d` aktif sebagai
