@@ -1,17 +1,22 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 21 Agustus 2026 16:14 WIB
+Evidence cut-off: 21 Agustus 2026 22:20 WIB
 
 Release cumulative terbaru: backend exact
-`ea24cc687dbb176380674b70985214ece592051d` aktif sebagai
-`20260821082751-ea24cc6` dan Studio exact
+`16fa73bf4fca8251f074e63bae8141f7af333b51` aktif sebagai
+`20260821151535-16fa73b` dan Studio exact
 `645dddb90dc55d36288d4b4cd96b6acd73c009e8` aktif sebagai
-`20260821090659-645dddb`. Support Hub terbukti estimate-only, pembayaran
+`20260821090659-645dddb`. Incident login 500 akibat build manifest yang hilang
+sudah dipulihkan; manifest dan tiga entry Vite wajib sekarang menjadi gate
+fail-closed pada artifact dan deployment. Login publik/admin lulus 10/10
+request dan visual production 390x844/1440x900 tanpa overflow atau runtime
+error. Support Hub tetap terbukti estimate-only, pembayaran
 off-app, serta text-only/no-upload tanpa provider/callback/payment status.
-Physical UAT pasangan exact 14 gate lulus tanpa blocker. Full backend
-product-surface 993/993, Studio check 228/228, E2E 146 pass/3 controlled skip,
-audit dependency, artifact/backup/restore, atomic activation, health/provenance,
-service/journal, public smoke, dan rollback rehearsal lulus. Status
+Physical UAT pasangan Studio/backend kumulatif 14 gate lulus tanpa blocker.
+Repair exact backend lulus 201 test/3.462 assertion, focused 2/2, build 5.097
+modul, audit dependency nol, artifact dua lokasi, encrypted backup/offsite/
+restore disposable 149 tabel, atomic activation, health/provenance,
+service/journal, public smoke, dan rollback lulus. Status
 `PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; `BUSINESS_READY` belum.
 
 S245 backend no-upload production activation: exact S227

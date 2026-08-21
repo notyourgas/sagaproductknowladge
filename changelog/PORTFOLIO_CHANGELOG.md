@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-21 - SagaView login production recovery
+
+- Login SagaView sempat merespons 500 karena release backend tidak membawa
+  manifest build Vite, sementara Studio utama dan API tetap sehat.
+- Exact backend `16fa73bf4fca8251f074e63bae8141f7af333b51` kini aktif sebagai
+  `20260821151535-16fa73b`; packager dan deployment menolak paket tanpa
+  manifest/entry wajib sebelum activation.
+- Test 201/201, build 5.097 modul, audit dependency nol, artifact immutable dua
+  lokasi, backup terenkripsi/restore disposable, atomic switch, 10/10 login,
+  service/journal, dan visual mobile/desktop production lulus.
+- Status `PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; rollback
+  `20260821082751-ea24cc6` tersedia. Studio tetap `645dddb`; data, pricing,
+  payment/provider, dan batas no-upload tidak berubah.
+
 ## 2026-08-21 - SagaBook semantic component colors S272
 
 - Global Brand dan Custom halaman kini mengatur judul, card, teks card, teks

@@ -1,22 +1,29 @@
 # SagaView Product Knowledge
 
-Updated: 21 Agustus 2026 16:14 WIB
+Updated: 21 Agustus 2026 22:20 WIB
 
 Backend dan Studio SagaView terbaru berstatus `CONFIRMED / PUSHED /
 LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Backend exact
-`ea24cc687dbb176380674b70985214ece592051d` aktif sebagai release
-`20260821082751-ea24cc6`; Studio exact
+`16fa73bf4fca8251f074e63bae8141f7af333b51` aktif sebagai release
+`20260821151535-16fa73b`; Studio exact
 `645dddb90dc55d36288d4b4cd96b6acd73c009e8` aktif sebagai release
-`20260821090659-645dddb`. Support Hub kini konsisten dengan kontrak produk:
+`20260821090659-645dddb`. Release backend memperbaiki incident login 500:
+paket sebelumnya tidak membawa `public/build/manifest.json`, sedangkan release
+aktif sekarang selalu dibangun dari exact commit dan ditolak bila manifest atau
+entry login/SagaView wajib hilang. Login publik dan admin kembali 200 pada 10
+request berulang serta browser production 390x844 dan 1440x900, tanpa overflow
+atau runtime error. Support Hub tetap konsisten dengan kontrak produk:
 hanya estimasi, pembayaran dilakukan di luar aplikasi, dan bantuan hanya teks
 serta metadata teknis aman tanpa screenshot, file, foto, path, QRIS, rekening,
 provider, callback, checkout subscription, status paid, atau payment hold.
 Physical UAT 14 gate pada pasangan exact commit lulus tanpa blocker; full
-backend product-surface 993/993, Studio check 228/228, E2E 146 pass/3 controlled
-skip, dependency audit nol, backup/restore, archive dan git bundle immutable,
-atomic activation, health/provenance, service/journal, public smoke, serta
-rollback rehearsal lulus. Rollback langsung tetap backend
-`20260818110257-a648c18` dan Studio `20260811124309-86b04c9`.
+backend product-surface 993/993 pada release kumulatif sebelumnya; repair exact
+commit lulus 201 test SagaView/3.462 assertion, build 5.097 modul, focused
+contract 2/2, dependency audit nol, backup terenkripsi/offsite/restore
+disposable, archive dan git bundle immutable pada dua lokasi, atomic
+activation, health/provenance, service/journal, public smoke, serta visual
+production. Rollback langsung backend adalah `20260821082751-ea24cc6` dan
+Studio tetap `20260811124309-86b04c9`.
 `BUSINESS_READY` belum diklaim; Founding Studio Pilot dan acceptance operasional
 mass-scale tetap gate terpisah.
 

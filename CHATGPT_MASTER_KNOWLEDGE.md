@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 21 Agustus 2026 19:59 WIB
+Evidence cut-off: 21 Agustus 2026 22:20 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -52,19 +52,25 @@ public smoke dan security header 3/3 lulus. Authenticated Owner/operator UAT
 belum berjalan karena credential bridge lokal tidak aktif. Exception Fonnte
 tetap sempit dan bukan bukti provider sehat; `BUSINESS_READY=false`.
 
-SagaView backend exact `ea24cc687dbb176380674b70985214ece592051d`
+SagaView backend exact `16fa73bf4fca8251f074e63bae8141f7af333b51`
 berstatus `CONFIRMED / PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
-PRODUCTION_ACTIVATED` sebagai release `20260821082751-ea24cc6`. Respons Support
-Hub aktif hanya menjelaskan estimasi, pembayaran off-app, dan bantuan text-only
+PRODUCTION_ACTIVATED` sebagai release `20260821151535-16fa73b`. Release ini
+memulihkan login publik/admin yang sempat 500 karena backend release
+`20260821082751-ea24cc6` tidak membawa manifest build Vite. Packager sekarang
+membangun dari exact clean commit dan artifact/deploy menolak manifest atau
+entry login/SagaView wajib yang hilang. Respons Support Hub tetap hanya
+menjelaskan estimasi, pembayaran off-app, dan bantuan text-only
 dengan metadata aman; tidak ada QRIS/rekening, payment hold, konfirmasi
 pembayaran, provider/callback, checkout subscription, status paid, atau
 permintaan screenshot/log/file. Studio exact
 `645dddb90dc55d36288d4b4cd96b6acd73c009e8` aktif sebagai release
 `20260821090659-645dddb`. Physical UAT pasangan final lulus 14 gate tanpa
-blocker; backend product-surface 993/993, Studio check 228/228, E2E 146 pass/3
-controlled skip, audit dependency, artifact/backup/restore, atomic activation,
-provenance, public smoke, service/journal, dan rollback rehearsal lulus.
-Rollback langsung tetap backend `20260818110257-a648c18` dan Studio
+blocker; repair backend lulus 201 test SagaView/3.462 assertion, focused 2/2,
+build 5.097 modul, dependency audit nol, artifact/checksum/git bundle dua
+lokasi, backup terenkripsi/offsite/restore disposable 149 tabel, atomic
+activation, 10/10 login 200, enam route smoke, empat service, journal, serta
+browser 390x844 dan 1440x900. Rollback langsung backend
+`20260821082751-ea24cc6` dan Studio
 `20260811124309-86b04c9`. Ini bukan klaim `BUSINESS_READY`; Founding Studio
 Pilot dan acceptance operasional mass-scale tetap diperlukan.
 

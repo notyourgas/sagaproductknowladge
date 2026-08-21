@@ -1,5 +1,28 @@
 # SagaView Changelog
 
+## 2026-08-21 - Login build-manifest recovery dan release guard
+
+- Klasifikasi: `CONFIRMED` production incident repair.
+- Before: backend `ea24cc687dbb176380674b70985214ece592051d` / release
+  `20260821082751-ea24cc6` tidak membawa `public/build/manifest.json`, sehingga
+  login publik dan admin merespons 500 walaupun Studio utama, API, dan service
+  tetap sehat.
+- After: backend exact `16fa73bf4fca8251f074e63bae8141f7af333b51`
+  aktif sebagai `20260821151535-16fa73b`. Packager membangun frontend dari
+  exact clean commit, memvalidasi entry Vite wajib, membuat archive/checksum/git
+  bundle pada dua lokasi, dan deploy berhenti aman bila manifest hilang.
+- Evidence: 201 test SagaView/3.462 assertion, focused 2/2 dengan 32 assertion,
+  build 5.097 modul, npm/Composer audit nol vulnerability, backup terenkripsi
+  dan offsite round-trip, restore disposable SagaView 149 tabel, preflight
+  read-only, atomic switch, 10/10 login 200, enam route smoke 200, empat service
+  aktif, journal/error baru nol, serta browser 390x844 dan 1440x900 tanpa 500,
+  overflow, atau runtime error.
+- Delivery: `PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`. Rollback langsung `20260821082751-ea24cc6`; Studio
+  tetap `20260821090659-645dddb`. Tidak ada migration, perubahan data,
+  payment/provider, atau upload foto/path/output customer. `BUSINESS_READY`
+  belum diklaim.
+
 ## 2026-08-21 - Support contract dan Studio cumulative production activation
 
 - Klasifikasi: `CONFIRMED` production release.
