@@ -3,15 +3,17 @@
 ## 2026-08-21 - SagaBook Template Booking token parity production sync
 
 - Informasi `CONFIRMED` berasal dari keputusan Andreas, exact source
+  release source `9fa050286ecacac6e04d154b36f899476bcab035`, feature implementation
   `0617dba3c5c8e73045c24f0db84b4ca6fb65c0f3`, dan release production
-  `20260821110414-0617dba`.
+  `20260821112729-9fa0502`.
 - Knowledge mencatat before/after hardcoded preset palette, enam token
   Global/Custom, preservasi variant/radius, preview mobile, serta registry
   `1.14.1`.
 - Delivery `PUSHED / UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
   PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; rollback
-  `20260821091334-57635d4`, verifier 17/17, smoke/security 3/3, readiness
-  100/100. Owner UAT Chrome menunggu login dan `BUSINESS_READY=false`.
+  `20260821110414-0617dba`, verifier 17/17, smoke/security 3/3, readiness
+  100/100. Owner UAT Chrome preview merah lulus tanpa Publish;
+  `BUSINESS_READY=false`.
 - Dokumen terdampak: SagaBook product/dossier/changelog/coverage, portfolio,
   master, root changelog, dan sync status.
 

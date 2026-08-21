@@ -7,7 +7,8 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Template Booking token-parity hotfix exact source
+- Template Booking token-parity hotfix exact release source
+  `9fa050286ecacac6e04d154b36f899476bcab035`, feature implementation
   `0617dba3c5c8e73045c24f0db84b4ca6fb65c0f3`: `CONFIRMED / PUSHED /
   UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / PRODUCTION_DEPLOYED /
   PRODUCTION_ACTIVATED`. Root, mobile canvas, header, card, input, primary,
@@ -21,8 +22,10 @@ dalam satu dokumen public-safe.
   1.063/1.063 (12.282), visual matrix 9/9, build/type-check, dependency audit,
   backup/restore, activation atomik, verifier 17/17, public/security smoke 3/3,
   dan readiness 100/100 lulus. Registry `1.14.1`; release aktif
-  `20260821110414-0617dba`, rollback `20260821091334-57635d4`. Owner UAT
-  authenticated menunggu login Chrome; `BUSINESS_READY=false`.
+  `20260821112729-9fa0502`, rollback `20260821110414-0617dba`. Authenticated
+  Chrome Owner UAT membuktikan background tersimpan `#ff0000`, preview revision
+  3 siap, root/shell merah, dan surface terpisah tanpa menekan Publish;
+  `BUSINESS_READY=false`.
 
 - Template Booking editor v2 exact source
   `57635d4a6d29218797e1406385fed64d09abf2a0`: `CONFIRMED / PUSHED /
@@ -76,12 +79,12 @@ dalam satu dokumen public-safe.
   assisted, bukan perubahan runtime SagaBook; lifecycle DEC-029 tetap berlaku
   sampai ada release entitlement terpisah.
 
-- Updated: 21 Agustus 2026 18:20 WIB
+- Updated: 21 Agustus 2026 18:40 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED`; current release
-  `20260821110414-0617dba`, exact release source
-  `0617dba3c5c8e73045c24f0db84b4ca6fb65c0f3`, rollback langsung editor v2
-  `20260821091334-57635d4`, dan verifier independen 17/17 termasuk HTTP 3/3
+  `20260821112729-9fa0502`, exact release source
+  `9fa050286ecacac6e04d154b36f899476bcab035`, rollback langsung hotfix awal
+  `20260821110414-0617dba`, dan verifier independen 17/17 termasuk HTTP 3/3
   serta security profile 3/3
 - Business readiness: `NEEDS CONFIRMATION`
 - Host-storage recovery S267 exact

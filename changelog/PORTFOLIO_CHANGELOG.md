@@ -7,11 +7,12 @@
 - Dekorasi preset tetap ada dengan pigment token-driven, preview mobile tidak
   lagi dibatasi tinggi, dan color-only Custom mempertahankan button/radius
   preset melalui pilihan eksplisit `Ikuti preset`.
-- Exact source `0617dba3c5c8e73045c24f0db84b4ca6fb65c0f3` aktif sebagai
-  `20260821110414-0617dba`; rollback `20260821091334-57635d4` tersedia.
+- Exact release source `9fa050286ecacac6e04d154b36f899476bcab035`
+  (feature `0617dba3c5c8e73045c24f0db84b4ca6fb65c0f3`) aktif sebagai
+  `20260821112729-9fa0502`; rollback `20260821110414-0617dba` tersedia.
 - Full backend 1.063/1.063, visual 9/9, build/audit, backup/restore, verifier
   17/17, smoke/security 3/3, dan readiness 100/100 lulus. Owner UAT Chrome
-  menunggu login dan `BUSINESS_READY=false`.
+  preview merah lulus tanpa Publish; `BUSINESS_READY=false`.
 
 ## 2026-08-21 - SagaBook Template Booking editor v2 production
 

@@ -12,14 +12,14 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-21T18:20:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-21T18:40:00+07:00 |
 | Branch aktif | `codex/knowledge-sagabook-token-parity-hotfix` dari worktree bersih exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | `050c884864920d4e5ecbd9d116a10915c89246ea` |
-| Informasi terakhir disinkronkan | SagaBook Template Booking token parity exact `0617dba3c5c8e73045c24f0db84b4ca6fb65c0f3` production-activated sebagai `20260821110414-0617dba`. |
+| Informasi terakhir disinkronkan | SagaBook Template Booking token parity exact release source `9fa050286ecacac6e04d154b36f899476bcab035` production-activated sebagai `20260821112729-9fa0502`; Owner UAT preview merah lulus tanpa Publish. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
 | Konflik | Worktree bersih memakai exact `origin/main`; clone canonical lokal yang divergen 1/137 tidak disentuh. Produk lain tidak diubah. |
-| Error | Authenticated Owner UAT tertunda sampai owner login pada tab Chrome yang sudah dibuka; `BUSINESS_READY=false`. |
+| Error | Tidak ada blocker release. UAT operator/cohort lebih luas tetap diperlukan sebelum `BUSINESS_READY`; status saat ini `BUSINESS_READY=false`. |
 
 ## File yang berubah pada sinkronisasi ini (SagaBook token parity hotfix)
 

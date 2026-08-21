@@ -8,7 +8,7 @@ diubah menjadi klaim publik sebelum ditutup dengan bukti atau keputusan owner.
 
 ## Konteks
 
-Daftar ini berlaku pada evidence cut-off 21 Agustus 2026 18:20 WIB dan harus diperbarui
+Daftar ini berlaku pada evidence cut-off 21 Agustus 2026 18:40 WIB dan harus diperbarui
 ketika keputusan atau release baru menutup gap.
 
 ## Cara memakai
@@ -35,8 +35,9 @@ SagaBook GAP-011 tetap `CLOSED`; hotfix token parity exact source
 computed renderer, sedangkan fondasi editor v2 tetap memakai revision dan
 content hash, draft rehydrate setelah reload, stale mutation ditolak, preview
 server authoritative, dan public profile tidak berubah sebelum publish sah.
-Residualnya adalah authenticated Owner/operator UAT setelah owner login di
-Chrome dan cohort pilot pada GAP-004, bukan gap implementasi template.
+Authenticated Owner UAT khusus parity background sudah lulus di Chrome tanpa
+Publish. Residualnya adalah UAT operator lebih luas dan cohort pilot pada
+GAP-004, bukan gap implementasi template.
 
 | ID | Produk/area | Label | Pertanyaan atau gap | Bukti penutup |
 |---|---|---|---|---|

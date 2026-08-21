@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 21 Agustus 2026 18:20 WIB
-Evidence status: Template Booking token-parity hotfix production active; authenticated owner UAT and business readiness pending
+Updated: 21 Agustus 2026 18:40 WIB
+Evidence status: Template Booking token-parity hotfix production active and owner-preview UAT passed; broader business readiness pending
 
 ## Tujuan dokumen
 
@@ -16,8 +16,9 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
-- Template Booking token-parity hotfix exact source
-  `0617dba3c5c8e73045c24f0db84b4ca6fb65c0f3` berstatus `CONFIRMED /
+- Template Booking token-parity hotfix exact release source
+  `9fa050286ecacac6e04d154b36f899476bcab035` (feature implementation
+  `0617dba3c5c8e73045c24f0db84b4ca6fb65c0f3`) berstatus `CONFIRMED /
   PUSHED / UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
   PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Lima preset kini memakai enam
   token Global Brand atau Custom halaman untuk warna semantic yang benar-benar
@@ -29,10 +30,11 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   (12.282 assertion), visual regression 9/9, type-check, build, Composer/npm
   audit, backup terenkripsi, restore disposable, atomic activation, verifier
   independen 17/17, serta readiness production 100/100 lulus. Registry aktif
-  `1.14.1`; release `20260821110414-0617dba` aktif dengan rollback
-  `20260821091334-57635d4`. Chrome Owner UAT menunggu owner login pada tab yang
-  sudah dibuka; draft customer tidak dipublish oleh release ini dan
-  `BUSINESS_READY=false`.
+  `1.14.1`; release `20260821112729-9fa0502` aktif dengan rollback
+  `20260821110414-0617dba`. Authenticated Chrome Owner UAT membuktikan saved
+  `#ff0000`, preview revision 3 ready, root/mobile shell `rgb(255, 0, 0)`, dan
+  surface header tetap terpisah; Publish tidak ditekan. Draft customer tidak
+  dipublish oleh release ini dan `BUSINESS_READY=false`.
 
 - Template Booking editor v2 exact source
   `57635d4a6d29218797e1406385fed64d09abf2a0` berstatus `CONFIRMED /

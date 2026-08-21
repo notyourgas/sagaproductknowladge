@@ -3,7 +3,8 @@
 ## 2026-08-21 - Global/Custom Brand token parity production hotfix
 
 - Klasifikasi: `CONFIRMED`; keputusan perbaikan berasal dari Andreas dan exact
-  source `0617dba3c5c8e73045c24f0db84b4ca6fb65c0f3` aktif di production.
+  release source `9fa050286ecacac6e04d154b36f899476bcab035` (feature implementation
+  `0617dba3c5c8e73045c24f0db84b4ca6fb65c0f3`) aktif di production.
 - Before: draft preview sudah menyimpan background merah, tetapi CSS preset
   tetap merender cream/hardcoded palette. After: lima preset mengambil
   background, surface, primary, accent, text, dan muted dari Global Brand atau
@@ -13,11 +14,13 @@
 - S271 lima preset/seluruh inherited page dan matrix editor/publish/layout 9/9,
   full backend 1.063/1.063 (12.282), type-check, build, Composer/npm audit,
   backup terenkripsi dan disposable restore lulus.
-- Release `20260821110414-0617dba` aktif dengan rollback
-  `20260821091334-57635d4`; verifier 17/17, public/security smoke 3/3, dan
+- Release `20260821112729-9fa0502` aktif dengan rollback
+  `20260821110414-0617dba`; verifier 17/17, public/security smoke 3/3, dan
   readiness production 100/100. Registry `1.14.1`.
-- Release tidak mempublish draft customer. Authenticated Chrome Owner UAT masih
-  menunggu login; exception Fonnte tetap sempit dan `BUSINESS_READY=false`.
+- Release tidak mempublish draft customer. Authenticated Chrome Owner UAT
+  membuktikan saved `#ff0000` sama dengan root/shell merah pada preview revision
+  3; Publish tidak ditekan. Exception Fonnte tetap sempit dan
+  `BUSINESS_READY=false`.
 
 ## 2026-08-21 - Template Booking editor v2 production
 
