@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-22 - SagaView S262 Owner Pricing active-lineage integration
+
+- Progressive disclosure Owner Pricing S164 kini terintegrasi tanpa konflik di
+  atas exact backend production lineage, menghasilkan source
+  `51ceefcbf47a825e6b2df147ab14cd4890fd2d25` yang sudah pushed.
+- Owner melihat ringkasan kategori/frame dan membuka satu editor saat diperlukan;
+  draft tetap aman pada kegagalan dan CTA menyatakan langkah pemulihan.
+- Payload tetap metadata-only tanpa foto, path, editor, atau output customer;
+  tenant/permission dan stale/double-submit handling tidak dilonggarkan.
+- SagaView 146/146, focused API 41/41, browser desktop/mobile 4/4, build 5.097
+  modul, dan npm audit nol lulus.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production, database,
+  harga nyata, dan `BUSINESS_READY` tidak berubah.
+
 ## 2026-08-22 - SagaBook Template Booking text inspector S273
 
 - Warna heading halaman, nama studio, nama cabang di foto, dan nama cabang pada
