@@ -1,20 +1,25 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 21 Agustus 2026 14:00 WIB
+Evidence cut-off: 21 Agustus 2026 14:41 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
-SagaBook S269 exact `73feb12f5f9cfd3f7f126e3b1fa42970335c97f7`
+SagaBook S269 exact release source `161ba76b8caa620741b76fe8d8d8bad18ec2841e`
 berstatus `CONFIRMED / PUSHED / UIUX_VALIDATED / QA_VALIDATED /
-LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Pada `Template Booking > Global
+SECURITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Pada `Template Booking > Global
 Brand`, owner mengedit nama studio, warna, dan font lalu klik `Simpan untuk
 Preview`. Draft tenant dan Preview Live memakai respons server; Publish tetap
 nonaktif sampai perubahan tersimpan ke preview, dan customer tetap membaca
 versi published sampai owner mempublish. Header `Buka Preview` membuka draft
-preview. Build, feature 12/12 (160 assertion), browser draft-publish 3/3,
-brand iframe, adaptive 1/1, dan accessibility 18/18 mobile/desktop lulus. Tidak
-ada API/schema/permission/pricing/payment baru. Production tetap S265 dan
-`BUSINESS_READY=false`.
+preview. Build, feature 12/12 (160 assertion), browser gate 22/22, brand
+iframe, adaptive, accessibility 18/18, dan full backend 1.055/1.055 (12.058
+assertion) lulus. Registry `1.13.0`; backup terenkripsi `20260821T072648Z`,
+offsite round-trip, restore disposable tiga database, dependency audit, atomic
+activation, verifier 17/17, public smoke 3/3, dan security header 3/3 lulus.
+Release `20260821073107-161ba76` aktif dengan rollback S265
+`20260820103024-5a4e24f`. Exception sempit hanya menerima satu
+`failed_jobs_24h` sebagai satu-satunya failure; ini bukan bukti Fonnte sehat.
+Tidak ada API/schema/permission/pricing/payment baru dan `BUSINESS_READY=false`.
 
 SagaTech V25 berstatus `CONFIRMED / PRODUCTION_DEPLOYED /
 PRODUCTION_ACTIVATED`. `https://sagatech.site/saga-product/` memakai satu
@@ -54,8 +59,10 @@ berstatus `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Runbook
 recovery host release membedakan backup/data/provenance yang wajib dilindungi
 dari file recoverable, memakai inventaris read-only dan cleanup bertahap target
 eksplisit, serta mempertahankan floor existing 2 GiB. Contract 10/10 dan scan
-perintah destruktif lulus. Host masih `NO_GO`; dokumen tidak mengotorisasi
-cleanup otomatis dan production tetap S265.
+perintah destruktif lulus. Blocker kapasitas ditutup untuk S269 dengan cleanup
+exact duplikat transport yang memiliki salinan persisten checksum-valid;
+dokumen S267 tidak mengotorisasi cleanup otomatis dan tooling tetap belum
+dideploy.
 
 SagaBook S266 exact `253c4e0b497a07ead472643b827d405538343ed7`
 berstatus `PUSHED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
@@ -64,7 +71,7 @@ reparse-point dan volume root pada output, staging, serta source parent tepat
 sebelum write/copy dan sesudah copy. Focused contract 16/16, full backend
 1.055/1.055, build 5.132, parser/formatter, serta audit dependency lulus. Ini
 hardening tooling, bukan fitur customer; tooling S266 belum dideploy dan
-production saat ini S265.
+production saat ini S269.
 
 SagaBook S265 feature source `63b17f9a6af5437e663db265a3f1f2c6305a4ce5`
 dan exact release source `5a4e24fa67d28ab0e15c7d8110d7742f26d875a0`

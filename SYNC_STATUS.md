@@ -12,16 +12,16 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-21T14:00:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-21T14:41:00+07:00 |
 | Branch aktif | `codex/knowledge-s269-global-brand-preview` dari worktree bersih exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `8a0555696de9c34f55ec146c0574e23e47520d5e` |
-| Informasi terakhir disinkronkan | SagaBook S269 menambahkan Global Brand `Simpan untuk Preview`, gate preview sebelum Publish, dan draft preview authoritative; production tetap S265. |
+| Baseline sebelum pembaruan | `31147b412a67d95c17e15abc1c16637c56aeb3c6` |
+| Informasi terakhir disinkronkan | SagaBook S269 Global Brand preview-save aktif sebagai release `20260821073107-161ba76` dari exact source `161ba76b8caa620741b76fe8d8d8bad18ec2841e`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
-| Konflik | Worktree bersih memakai exact `origin/main`; clone canonical lokal yang divergen tidak disentuh. Tidak ada perubahan runtime production, pricing, payment, atau produk lain. |
-| Error | GAP-011 mencatat hardening optimistic concurrency dan recovery draft lintas reload/tab. Host SagaBook tetap `NO_GO`; Fonnte residual dan `BUSINESS_READY=false`. |
+| Konflik | Worktree bersih memakai exact `origin/main`; clone canonical lokal yang divergen tidak disentuh. Pricing, payment, dan produk lain tidak berubah. |
+| Error | GAP-011 mencatat hardening optimistic concurrency dan recovery draft lintas reload/tab. Satu failed job memakai exception sempit; Fonnte tidak diklaim sehat dan `BUSINESS_READY=false`. |
 
-## File yang berubah pada sinkronisasi ini (SagaBook S269 Global Brand preview-save)
+## File yang berubah pada sinkronisasi ini (SagaBook S269 production activation)
 
 - `products/sagabook/PRODUCT.md`
 - `products/sagabook/DOSSIER.md`
@@ -30,7 +30,6 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `DECISIONS.md`
-- `GAPS.md`
 - `CHANGELOG.md`
 - `SYNC_STATUS.md`
 

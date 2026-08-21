@@ -7,18 +7,21 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Global Brand preview-save S269 exact
-  `73feb12f5f9cfd3f7f126e3b1fa42970335c97f7`: `CONFIRMED / PUSHED /
-  UIUX_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED`. Owner mengedit nama studio, enam token warna, dan
+- Global Brand preview-save S269 exact release source
+  `161ba76b8caa620741b76fe8d8d8bad18ec2841e`: `CONFIRMED / PUSHED /
+  UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`. Owner mengedit nama studio, enam token warna, dan
   dua font di tab Global Brand, lalu memakai tombol kontekstual `Simpan untuk
   Preview`. Save menggunakan boundary draft tenant existing dan respons server
   menjadi sumber editor, local preview scoped, serta iframe Preview Live.
   Perubahan belum terlihat customer sebelum `Publish`; aksi Publish dinonaktifkan
   ketika draft form belum disimpan ke preview. Build, 12 feature test/160
   assertion, browser draft/publish recovery, brand iframe, adaptive layout,
-  serta 18 accessibility test mobile/desktop lulus. API, schema, role/capability,
-  pricing, payment, dan production tidak berubah; production tetap S265.
+  serta 18 accessibility test mobile/desktop lulus. Full backend 1.055/1.055
+  (12.058 assertion), registry `1.13.0`, build, dependency audit, backup
+  terenkripsi/offsite, restore disposable tiga database, atomic activation,
+  verifier 17/17, public smoke 3/3, dan security header 3/3 lulus. API, schema,
+  role/capability, pricing, dan payment tidak berubah.
 
 - SagaTech V25 sales surface: `CONFIRMED / PRODUCTION_DEPLOYED /
   PRODUCTION_ACTIVATED` pada `https://sagatech.site/saga-product/`, production
@@ -37,12 +40,12 @@ dalam satu dokumen public-safe.
   assisted, bukan perubahan runtime SagaBook; lifecycle DEC-029 tetap berlaku
   sampai ada release entitlement terpisah.
 
-- Updated: 21 Agustus 2026 14:00 WIB
+- Updated: 21 Agustus 2026 14:41 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
-- Activation: `PRODUCTION_ACTIVATED`; current release S265
-  `20260820103024-5a4e24f`, exact release source
-  `5a4e24fa67d28ab0e15c7d8110d7742f26d875a0`, rollback langsung S264
-  `20260820084829-6d89fc1`, dan verifier independen 17/17 termasuk HTTP 3/3
+- Activation: `PRODUCTION_ACTIVATED`; current release S269
+  `20260821073107-161ba76`, exact release source
+  `161ba76b8caa620741b76fe8d8d8bad18ec2841e`, rollback langsung S265
+  `20260820103024-5a4e24f`, dan verifier independen 17/17 termasuk HTTP 3/3
   serta security profile 3/3
 - Business readiness: `NEEDS CONFIRMATION`
 - Host-storage recovery S267 exact
@@ -51,8 +54,9 @@ dalam satu dokumen public-safe.
   freeze sebelum pemeriksaan, inventaris read-only, perlindungan backup/data/
   provenance, cleanup target eksplisit bertahap, floor existing 2 GiB, dan
   rerun backup/restore dari awal setelah kegagalan kapasitas. Contract 10/10
-  serta scan destructive-command lulus. Host tetap `NO_GO` sampai volume
-  pipeline memenuhi kebutuhan; production S265 tidak berubah.
+  serta scan destructive-command lulus. Blocker kapasitas ditutup untuk S269
+  melalui cleanup exact duplikat transport yang sudah memiliki salinan
+  persisten checksum-valid; tooling S267 tetap belum dideploy.
 - Release tooling S266 exact `253c4e0b497a07ead472643b827d405538343ed7`:
   `CONFIRMED / PUSHED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
   IMPLEMENTED_NOT_DEPLOYED`. Setelah preflight awal, bundler memvalidasi ulang
@@ -61,7 +65,7 @@ dalam satu dokumen public-safe.
   pada setiap guard gagal tertutup. Focused release contract 16/16 (240), full
   backend 1.055/1.055 (12.050), build 5.132, parser PowerShell, Pint, npm audit,
   dan Composer audit lulus. Tidak ada perubahan UI, API, schema, data, tenant,
-  payment atau provider. Tooling S266 belum dideploy; production saat ini S265.
+  payment atau provider. Tooling S266 belum dideploy; production saat ini S269.
 - Combined service-fee UI S265 feature source
   `63b17f9a6af5437e663db265a3f1f2c6305a4ce5` dan exact release source
   `5a4e24fa67d28ab0e15c7d8110d7742f26d875a0`: `CONFIRMED / PUSHED /

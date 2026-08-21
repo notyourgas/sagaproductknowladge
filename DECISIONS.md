@@ -32,7 +32,7 @@ keputusan pengganti.
 | Alternatif yang dipertimbangkan | Autosave setiap input; mempertahankan save hanya di header; membiarkan Publish langsung memakai form yang belum dipreview. |
 | Dampak | Tab Global Brand memiliki tombol dan status dirty; Publish digate oleh state preview tersimpan; header Preview membuka draft preview. Endpoint draft/publish, schema, pricing, payment, dan permission existing tidak berubah. |
 | Pemberi keputusan | Andreas / founder |
-| Status | `CONFIRMED / PUSHED / UIUX_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; source `73feb12f5f9cfd3f7f126e3b1fa42970335c97f7` |
+| Status | `CONFIRMED / PUSHED / UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; exact release source `161ba76b8caa620741b76fe8d8d8bad18ec2841e`, release `20260821073107-161ba76`, rollback `20260820103024-5a4e24f` |
 | Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [SagaBook Changelog](products/sagabook/CHANGELOG.md), [SagaBook Ledger](products/sagabook/FEATURE_COVERAGE_LEDGER.md), [Gaps](GAPS.md) |
 
 ## DEC-089 - Saga Product menjadi funnel bio dengan penawaran early adopter assisted

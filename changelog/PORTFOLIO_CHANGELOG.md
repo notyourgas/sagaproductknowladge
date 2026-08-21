@@ -7,11 +7,13 @@
   sebelum customer melihatnya.
 - Publish menunggu draft preview tersimpan; tombol header membuka draft preview,
   sedangkan website publik tetap membaca versi published.
-- Exact source `73feb12f5f9cfd3f7f126e3b1fa42970335c97f7` sudah dipush dan
-  lulus build, 12 feature test/160 assertion, browser draft-publish, brand
-  iframe, adaptive layout, serta 18 accessibility test mobile/desktop.
-- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production SagaBook
-  tetap S265, pricing/payment/business readiness dan produk lain tidak berubah.
+- Exact release source `161ba76b8caa620741b76fe8d8d8bad18ec2841e`
+  aktif sebagai `20260821073107-161ba76`, dengan rollback S265
+  `20260820103024-5a4e24f`.
+- Full backend 1.055/1.055, build, browser gate 22/22, backup/restore tiga
+  database, atomic activation, verifier 17/17, public smoke 3/3, dan security
+  header 3/3 lulus. Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+  pricing/payment/produk lain tidak berubah dan `BUSINESS_READY=false`.
 
 ## 2026-08-21 - SagaTech V25 SagaBook admin-dashboard thumbnail
 
@@ -58,7 +60,8 @@
   perlindungan backup/data/provenance, dan gate resume release.
 - Contract 10/10 serta destructive-command scan lulus. Status `PUSHED /
   LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; host masih `NO_GO`, cleanup
-  otomatis tidak dilakukan, production S265 dan produk lain tidak berubah.
+  otomatis tidak dilakukan oleh runbook. Blocker kapasitas kemudian ditutup
+  secara operasional untuk release S269; produk lain tidak berubah.
 
 ## 2026-08-20 - SagaBook S265 combined service-fee production
 
@@ -94,7 +97,7 @@
   SagaBook; produk lain dan production tidak berubah.
 - Status `PUSHED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
   IMPLEMENTED_NOT_DEPLOYED`; tooling S266 belum dideploy dan SagaBook
-  production saat ini S265.
+  production saat ini S269.
 
 ## 2026-08-20 - SagaBook S265 combined service-fee release blocked
 

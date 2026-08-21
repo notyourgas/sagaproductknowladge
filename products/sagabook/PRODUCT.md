@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 21 Agustus 2026 14:00 WIB
-Evidence status: S269 Global Brand preview-save pushed/local validated; SagaTech V25 sales surface active; S267 host-storage recovery runbook pushed; S265 production active; business readiness pending
+Updated: 21 Agustus 2026 14:41 WIB
+Evidence status: S269 Global Brand preview-save production active; SagaTech V25 sales surface active; business readiness pending
 
 ## Tujuan dokumen
 
@@ -16,9 +16,9 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
-- S269 exact source `73feb12f5f9cfd3f7f126e3b1fa42970335c97f7`
+- S269 exact release source `161ba76b8caa620741b76fe8d8d8bad18ec2841e`
   berstatus `CONFIRMED / PUSHED / UIUX_VALIDATED / QA_VALIDATED /
-  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Tab `Global Brand` pada
+  SECURITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Tab `Global Brand` pada
   Template Booking kini memiliki tombol `Simpan untuk Preview` tepat di bawah
   form. Nama studio, warna, dan font disimpan sebagai draft tenant; Preview
   Live memakai respons server, sedangkan customer tetap membaca versi
@@ -26,8 +26,15 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   preview, lalu aktif setelah save berhasil. Header `Buka Preview` juga membuka
   draft preview, bukan website published. Build, 12 feature test/160 assertion,
   tiga skenario draft-publish, assertion brand di iframe, adaptive layout, dan
-  18 accessibility test mobile/desktop lulus. Tidak ada endpoint, schema,
-  pricing, payment, atau permission baru; production tetap S265.
+  18 accessibility test mobile/desktop lulus. Full backend 1.055/1.055 (12.058
+  assertion), registry `1.13.0`, build, dan audit dependency juga lulus.
+  Backup terenkripsi `20260821T072648Z`, offsite round-trip, restore disposable
+  tiga database, atomic activation, serta verifier independen 17/17 lulus.
+  Release aktif `20260821073107-161ba76` dengan rollback S265
+  `20260820103024-5a4e24f`; public smoke dan security header 3/3. Exception
+  sempit hanya menerima satu `failed_jobs_24h` sebagai satu-satunya failure;
+  ini bukan bukti Fonnte sehat dan `BUSINESS_READY=false`. Tidak ada endpoint,
+  schema, pricing, payment, atau permission baru.
 
 - `CONFIRMED / SALES_SURFACE_PRODUCTION_ACTIVATED`: SagaTech V25 mengganti
   funnel panjang V24 menjadi alur mobile-only yang ringkas. Dari
@@ -56,8 +63,9 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   pemulihan bertahap, serta gate resume release setelah kapasitas host tidak
   memenuhi floor existing 2 GiB. Contract dokumen 10/10 dan scan perintah
   destruktif lulus. Runbook tidak melakukan atau mengotorisasi cleanup
-  otomatis. Kapasitas host release masih `NO_GO`; production S265 tidak
-  berubah.
+  otomatis. Blocker kapasitas ditutup untuk S269 dengan cleanup exact sembilan
+  duplikat transport yang sudah memiliki salinan persisten checksum-valid;
+  release aktif dan rollback tidak disentuh. Tooling S267 tetap belum dideploy.
 
 - S266 exact source `253c4e0b497a07ead472643b827d405538343ed7`
   berstatus `CONFIRMED / PUSHED / QA_VALIDATED / SECURITY_VALIDATED /
@@ -70,7 +78,7 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   5.132 modul, parser PowerShell, Pint, serta audit npm/Composer nol temuan
   lulus. Ini hardening tooling, bukan fitur customer; UI, API, database,
   workflow, dan production tidak berubah. Tooling S266 sendiri belum
-  dideploy; production saat ini adalah S265.
+  dideploy; production saat ini adalah S269.
 
 - S265 feature source `63b17f9a6af5437e663db265a3f1f2c6305a4ce5`
   dan exact release source `5a4e24fa67d28ab0e15c7d8110d7742f26d875a0`

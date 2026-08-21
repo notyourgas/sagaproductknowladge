@@ -1,9 +1,9 @@
 # SagaBook Changelog
 
-## 2026-08-21 - Global Brand save-before-publish S269 candidate
+## 2026-08-21 - Global Brand save-before-publish S269 production
 
-- Klasifikasi: `CONFIRMED`; keputusan workflow berasal dari Andreas dan source
-  exact `73feb12f5f9cfd3f7f126e3b1fa42970335c97f7` sudah dipush.
+- Klasifikasi: `CONFIRMED`; keputusan workflow berasal dari Andreas dan exact
+  release source `161ba76b8caa620741b76fe8d8d8bad18ec2841e` aktif di production.
 - Before: save draft hanya terlihat di header dan Publish dapat aktif saat
   perubahan Global Brand belum masuk preview. After: tab Global Brand memiliki
   `Simpan untuk Preview`, status dirty kontekstual, Preview Live berbasis
@@ -11,9 +11,17 @@
 - `Buka Preview` membuka draft preview; website customer tetap memakai profile
   published sampai owner menekan Publish.
 - Build, 12 feature test/160 assertion, tiga skenario draft-publish, assertion
-  brand pada iframe, adaptive layout, dan 18 accessibility test mobile/desktop
-  lulus. Status `PUSHED / UIUX_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED`; production S265 tidak berubah.
+  brand pada iframe, adaptive layout, 18 accessibility test mobile/desktop,
+  dan full backend 1.055/1.055 (12.058 assertion) lulus. Registry aktif
+  `1.13.0`.
+- Backup terenkripsi `20260821T072648Z`, offsite round-trip, restore disposable
+  tiga database, dependency audit, atomic activation, dan verifier independen
+  17/17 lulus. Release `20260821073107-161ba76` aktif dengan rollback S265
+  `20260820103024-5a4e24f`; public smoke serta security header 3/3.
+- Status `PUSHED / UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Exception hanya menerima satu
+  `failed_jobs_24h` sebagai satu-satunya failure; Fonnte tidak diklaim sehat
+  dan `BUSINESS_READY=false`.
 - API, schema, pricing, payment, role/capability, dan produk lain tidak berubah.
   Hardening optimistic concurrency serta exact server-draft binding lintas tab
   tetap gap lanjutan.

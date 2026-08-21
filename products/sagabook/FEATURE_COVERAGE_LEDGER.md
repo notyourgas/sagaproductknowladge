@@ -1,28 +1,32 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 21 Agustus 2026 14:00 WIB
+Evidence cut-off: 21 Agustus 2026 14:41 WIB
 
-S269 exact source `73feb12f5f9cfd3f7f126e3b1fa42970335c97f7` telah
-`CONFIRMED / PUSHED / UIUX_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
-IMPLEMENTED_NOT_DEPLOYED`. Tab Global Brand menyediakan aksi kontekstual
+S269 exact release source `161ba76b8caa620741b76fe8d8d8bad18ec2841e` telah
+`CONFIRMED / PUSHED / UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Tab Global Brand menyediakan aksi kontekstual
 `Simpan untuk Preview`; perubahan nama studio, warna, dan font menjadi draft
 preview lebih dulu, lalu Publish baru aktif. Preview menggunakan settings
 authoritative dari respons server dan website customer tetap memakai profile
 published. Double click tetap satu mutasi, status dirty/loading terbaca, target
 sentuh minimum 44 piksel, iframe menampilkan brand baru, dan tidak ada overflow
 pada matriks mobile/desktop. Build, feature 12/12 (160 assertion), draft/publish
-browser 3/3, adaptive 1/1, dan accessibility 18/18 lulus. Endpoint, schema,
-permission, pricing, payment, serta production tidak berubah; S265 tetap aktif.
+browser 3/3, adaptive 1/1, dan accessibility 18/18 lulus. Full backend
+1.055/1.055 (12.058 assertion), registry `1.13.0`, build, dependency audit,
+backup/restore, atomic activation, verifier 17/17, public smoke 3/3, serta
+security header 3/3 lulus. Release `20260821073107-161ba76` aktif dengan
+rollback `20260820103024-5a4e24f`. Endpoint, schema, permission, pricing, dan
+payment tidak berubah; `BUSINESS_READY=false`.
 
 S267 exact source `ad1285cf9d02fb700e2b952ba736698580e9e2a5` telah
 `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Runbook
 recovery host release mendokumentasikan freeze, inventaris read-only,
 perlindungan backup/data/provenance, klasifikasi recoverable, cleanup bertahap
 target eksplisit, floor existing 2 GiB, rerun backup/restore, dan evidence
-public-safe. Contract 10/10 serta destructive-command scan lulus. Dokumen tidak
-melakukan cleanup atau mutation; host tetap `NO_GO` sampai semua volume aktual
-pipeline memenuhi kebutuhan. UI, API, database, tenant, workflow, dan
-production tidak berubah; S265 tetap aktif.
+public-safe. Contract 10/10 serta destructive-command scan lulus. Blocker
+kapasitas S269 ditutup melalui cleanup exact duplikat transport dengan salinan
+persisten checksum-valid; tooling S267 tidak melakukan cleanup otomatis dan
+tetap belum dideploy. UI, API, database, tenant, dan workflow tidak berubah.
 
 S266 exact source `253c4e0b497a07ead472643b827d405538343ed7` telah
 `CONFIRMED / PUSHED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
@@ -34,7 +38,7 @@ pada setiap guard gagal tertutup; metadata publik menandai
 assertion), full backend 1.055/1.055 (12.050), build 5.132, parser PowerShell,
 Pint, dan audit dependency nol temuan lulus. Check-only dua drive pada disk
 fisik sama tetap menolak tanpa mutasi. Tidak ada perubahan UI, API, database,
-tenant, workflow, atau runtime. Tooling S266 belum dideploy; production S265.
+tenant, workflow, atau runtime. Tooling S266 belum dideploy; production S269.
 
 S265 feature source `63b17f9a6af5437e663db265a3f1f2c6305a4ce5` dan exact
 release source `5a4e24fa67d28ab0e15c7d8110d7742f26d875a0` telah
