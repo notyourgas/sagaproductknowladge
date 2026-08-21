@@ -7,6 +7,9 @@
 - Knowledge mencatat preset dark editorial, sembilan recipe universal,
   inheritance Global Brand, wireframe 3x3, asset-generation brief, viewport,
   spacing, crop, format, safe-area, touch target, dan gate lokal.
+- Sembilan UI direction hasil built-in ImageGen beserta manifest prompt dan
+  usage boundary disinkronkan dari exact source
+  `4a40a1b180412c20090e81bfecdda766f6e78987`.
 - Delivery `PUSHED / UIUX_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
   NOT_DEPLOYED`; belum merge, tidak ada perubahan runtime production, asset
   final belum digenerate, dan `BUSINESS_READY=false`.

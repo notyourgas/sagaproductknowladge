@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Preset booking `Cinematic Noir` exact source
+- Preset booking `Cinematic Noir` implementation exact source
   `3ffe3b8c612baead82e303242151559fc1b717c0`: `CONFIRMED / PUSHED /
   UIUX_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED / NOT_DEPLOYED`. Arah visual
   dark editorial memakai photography-first layout, surface charcoal, satu
@@ -19,8 +19,11 @@ dalam satu dokumen public-safe.
   landscape, format WebP/AVIF, prompt, negative prompt, safe area, dan minimum
   touch target 44 piksel. Visual 3/3, accessibility enam preset 20/20, backend
   21/21 (378 assertion), TypeScript/build, XML, serta audit dependency lulus.
+  Paket UI direction sembilan halaman dibangkitkan melalui built-in ImageGen
+  pada exact source `4a40a1b180412c20090e81bfecdda766f6e78987`; manifest
+  membatasi penggunaannya sebagai referensi HTML/CSS, bukan raster UI shipping.
   Branch sudah pushed tetapi belum merge/deploy; tidak ada perubahan runtime
-  production atau asset fotografi final.
+  production dan asset fotografi final tetap belum dibuat.
 
 - Normalisasi orientasi foto cabang exact source
   `7afdf345cf32427d390c2d636ef1107833136ae8`: `CONFIRMED / PUSHED /

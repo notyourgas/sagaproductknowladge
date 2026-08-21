@@ -21,6 +21,9 @@
 - Wireframe 3x3 dan asset-generation brief merinci viewport 360/390/430/460,
   grid, padding, gap, crop, format, prompt, negative prompt, safe-area, serta
   touch target minimum 44 piksel.
+- Sembilan UI direction individual hasil built-in ImageGen berada pada exact
+  source `4a40a1b180412c20090e81bfecdda766f6e78987`, lengkap dengan
+  manifest prompt dan batas penggunaan sebagai referensi HTML/CSS.
 - Exact source `3ffe3b8c612baead82e303242151559fc1b717c0` sudah pushed; visual
   3/3, accessibility enam preset 20/20, backend 21/21, TypeScript/build, XML,
   dan audit dependency lulus.

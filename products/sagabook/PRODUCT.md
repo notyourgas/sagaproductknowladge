@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 22 Agustus 2026 00:40 WIB
+Updated: 22 Agustus 2026 02:18 WIB
 Evidence status: Cinematic Noir source-validated dan belum production-deployed; production tetap pada release sebelumnya
 
 ## Tujuan dokumen
@@ -16,7 +16,7 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
-- Preset booking `Cinematic Noir` exact source
+- Preset booking `Cinematic Noir` implementation exact source
   `3ffe3b8c612baead82e303242151559fc1b717c0` berstatus `CONFIRMED / PUSHED /
   UIUX_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED / NOT_DEPLOYED`. Preset baru
   ini menambah arah dark editorial untuk storefront booking saja: fotografi
@@ -28,9 +28,12 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   prompt, dan guardrail foto. Gate lulus: visual preset 3/3, accessibility
   storefront enam preset 20/20, backend contract 21/21 (378 assertion),
   TypeScript, build, XML wireframe, serta audit npm/Composer nol advisory.
-  Source berada di branch `codex/s272-sagabook-cinematic-noir`; belum merge,
-  belum deploy, belum mengubah release production, dan asset fotografi final
-  belum digenerate.
+  Paket visual direction sembilan halaman hasil built-in ImageGen berada pada
+  exact source `4a40a1b180412c20090e81bfecdda766f6e78987`; tiap PNG memiliki
+  manifest prompt dan usage boundary sebagai referensi implementasi HTML/CSS,
+  bukan raster UI shipping. Source berada di branch
+  `codex/s272-sagabook-cinematic-noir`; belum merge/deploy dan belum mengubah
+  release production. Asset fotografi final tetap belum digenerate.
 
 - Normalisasi orientasi foto cabang exact source
   `7afdf345cf32427d390c2d636ef1107833136ae8` berstatus `CONFIRMED / PUSHED /

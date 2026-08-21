@@ -12,6 +12,10 @@
 - Wireframe 3x3 dan asset-generation brief mencatat artboard 360/390/430/460,
   layout, spacing, crop, format, prompt, negative prompt, safe-area, dan touch
   target minimal 44 piksel.
+- Sembilan high-fidelity UI direction dibuat dengan built-in ImageGen dan
+  disimpan terpisah per halaman pada exact source
+  `4a40a1b180412c20090e81bfecdda766f6e78987`. Manifest menegaskan output
+  sebagai referensi HTML/CSS, bukan raster pengganti komponen interaktif.
 - Visual preset 3/3, accessibility enam preset 20/20, backend contract 21/21
   (378 assertion), TypeScript, build, XML wireframe, npm audit nol vulnerability,
   dan Composer audit nol advisory lulus.
