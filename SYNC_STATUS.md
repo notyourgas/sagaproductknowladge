@@ -17,7 +17,7 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | `6fc6b2ce9840d322272c9379f23eb9cdda6bb9d9` |
 | Informasi terakhir disinkronkan | SagaBook Template Booking editor v2 exact `57635d4a6d29218797e1406385fed64d09abf2a0` production-activated sebagai `20260821091334-57635d4`. |
-| Status sinkronisasi | `READY TO COMMIT` setelah validator; push dan remote verification mengikuti. |
+| Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
 | Konflik | Worktree bersih memakai exact `origin/main`; clone canonical lokal yang divergen 1/137 tidak disentuh. Produk lain tidak diubah. |
 | Error | Authenticated Owner/operator UAT tertunda karena credential bridge lokal tidak aktif; `BUSINESS_READY=false`. |
 
