@@ -12,16 +12,25 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-22T05:03:38+07:00 |
-| Branch aktif | `codex/s272-cinematic-noir-knowledge` dari worktree bersih exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-22T05:09:55+07:00 |
+| Branch aktif | `codex/s274-template-color-layering-knowledge` dari worktree bersih exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `781020126e51458e82b101503bb76c2f9660c62b` |
-| Informasi terakhir disinkronkan | SagaBook Cinematic Noir dedicated renderer exact `f6f850df...` aktif sebagai `20260821215633-f6f850d`, rollback `20260821212120-1a7f5fb`, readiness 100/100 dan verifier 17/17 lulus. |
+| Baseline sebelum pembaruan | `cea3a89182822000cb8fc47ff06fa594483d95e5` |
+| Informasi terakhir disinkronkan | SagaBook S274 exact `5cf6d4bd...`: akurasi warna semantic dan lapisan nama cabang local-validated, belum production; production tetap `f6f850df...`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator dan fast-forward push. |
 | Konflik | Tidak ada. Worktree knowledge terisolasi di-fast-forward ke exact `origin/main` sebelum edit. |
-| Error | Tidak ada blocker sinkronisasi atau release. Published tenant profile tidak dimutasi; `BUSINESS_READY=false`. |
+| Error | Audit OSV source tambahan timeout jaringan eksternal dua kali; npm/Composer audit lulus. Tidak ada blocker sinkronisasi. Published tenant profile tidak dimutasi; `BUSINESS_READY=false`. |
 
-## File yang berubah pada sinkronisasi ini (SagaBook Cinematic Noir dedicated renderer)
+## File yang berubah pada sinkronisasi ini (SagaBook S274 template color/layering)
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
+
+## File yang berubah pada sinkronisasi sebelumnya (SagaBook Cinematic Noir dedicated renderer)
 
 - `products/sagabook/PRODUCT.md`
 - `products/sagabook/DOSSIER.md`

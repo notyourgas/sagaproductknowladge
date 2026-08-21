@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 22 Agustus 2026 05:03 WIB
-Evidence status: Cinematic Noir dedicated renderer production-activated pada exact release terverifikasi
+Updated: 22 Agustus 2026 05:09 WIB
+Evidence status: perbaikan akurasi warna semantic dan lapisan nama cabang S274 sudah local-validated, belum production
 
 ## Tujuan dokumen
 
@@ -15,6 +15,22 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- Perbaikan S274 exact source
+  `5cf6d4bd3f09a63cc93f9d177092453bca793f76` berstatus `CONFIRMED / PUSHED /
+  UIUX_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Pilihan warna `Nama Studio / Brand` dan `Nama
+  Cabang di Foto` sekarang menang terhadap aturan typography/card generik,
+  sehingga warna hitam atau putih pada editor sama dengan computed color di
+  Preview Live. Renderer lokasi Cinematic kembali menampilkan nama cabang di
+  atas foto dengan scrim media yang sudah ada, lapisan teks deterministik, dan
+  target inspector yang tepat. Gate lulus: browser S274 4/4, regresi Cinematic
+  4/4, accessibility lintas forced-colors/reduced-motion/viewport 4/4, backend
+  template 9/9 (229 assertion), TypeScript, build, npm audit nol vulnerability,
+  dan Composer audit nol advisory. Audit OSV tambahan dua kali tidak selesai
+  karena timeout jaringan eksternal; lockfile tidak berubah. Tidak ada perubahan
+  schema, API, auth, data tenant, atau production. Production tetap pada exact
+  source `f6f850df3796e653e5c7c69692ba06ced6befd63`; `BUSINESS_READY=false`.
 
 - Renderer halaman khusus `Cinematic Noir` exact source
   `f6f850df3796e653e5c7c69692ba06ced6befd63` berstatus `CONFIRMED / PUSHED /

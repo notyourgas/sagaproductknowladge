@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-22 - SagaBook S274 template color/layering source sync
+
+- Informasi `CONFIRMED` berasal dari laporan Andreas dan exact source
+  `5cf6d4bd3f09a63cc93f9d177092453bca793f76` yang telah pushed.
+- Knowledge mencatat precedence warna semantic yang tepat, overlay nama cabang
+  Cinematic, scrim/layer inspector, serta gate browser, backend, accessibility,
+  build, TypeScript, dan dependency.
+- Delivery `PUSHED / UIUX_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap exact `f6f850df...`, tenant
+  profile tidak dimutasi, dan `BUSINESS_READY=false`.
+- Dokumen terdampak: SagaBook product/changelog/coverage, portfolio, root
+  changelog, dan sync status.
+
 ## 2026-08-22 - SagaBook Cinematic Noir dedicated renderer production sync
 
 - Informasi `CONFIRMED` berasal dari keputusan Andreas dan exact source

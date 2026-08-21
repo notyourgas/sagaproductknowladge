@@ -1,5 +1,29 @@
 # SagaBook Changelog
 
+## 2026-08-22 - Akurasi warna semantic dan lapisan nama cabang S274
+
+- Klasifikasi: `CONFIRMED`; laporan bug dan expected behavior berasal dari
+  Andreas, dengan exact source
+  `5cf6d4bd3f09a63cc93f9d177092453bca793f76` sudah pushed ke
+  `codex/s274-sagabook-template-color-layering`.
+- Before: aturan typography/card generik yang lebih spesifik menimpa warna
+  semantic sehingga pilihan hitam dapat tampil putih; renderer lokasi
+  Cinematic juga tidak menyediakan target `Nama Cabang di Foto` pada media.
+  After: semantic text color memiliki precedence tepat, nama cabang kembali
+  berada di atas foto dengan scrim dan z-index deterministik, serta hover
+  inspector menunjuk area yang benar tanpa mengubah computed color.
+- Browser membuktikan Studio hitam dan overlay cabang putih persis sesuai input,
+  scrim terlihat, background teks transparan, layer teks menjadi elemen paling
+  atas, dan highlight inspector tidak mencemari warna.
+- Gate lulus: S274 4/4, Cinematic regression 4/4, accessibility 4/4, backend
+  template 9/9 (229 assertion), TypeScript, build, npm audit nol vulnerability,
+  dan Composer audit nol advisory. Audit OSV tambahan mengalami dua timeout
+  koneksi eksternal; lockfile tidak berubah.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; tidak ada
+  migration, perubahan API/auth/data tenant, deploy, aktivasi, atau publish
+  profile tenant. Production tetap exact `f6f850df...` dan
+  `BUSINESS_READY=false`.
+
 ## 2026-08-22 - Cinematic Noir dedicated renderer production
 
 - Klasifikasi: `CONFIRMED`; implementasi exact

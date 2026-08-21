@@ -1,5 +1,20 @@
 # Portfolio Changelog
 
+## 2026-08-22 - SagaBook akurasi warna template dan layering cabang S274
+
+- Exact source `5cf6d4bd3f09a63cc93f9d177092453bca793f76` sudah pushed pada
+  `codex/s274-sagabook-template-color-layering`.
+- Preview Live kini mempertahankan warna semantic yang dipilih operator;
+  aturan card generik tidak lagi mengubah Studio hitam menjadi putih.
+- Nama cabang Cinematic kembali terlihat di atas foto dengan scrim, layer
+  deterministik, dan area inspector yang akurat tanpa mengubah workflow.
+- Browser S274/Cinematic/accessibility 12/12, backend 9/9 (229 assertion),
+  TypeScript, build, npm audit, dan Composer audit lulus. Audit OSV tambahan
+  tertahan timeout jaringan eksternal; lockfile tidak berubah.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+  tetap `f6f850df...`, tidak ada data tenant yang dimutasi, dan
+  `BUSINESS_READY=false`.
+
 ## 2026-08-22 - SagaBook Cinematic Noir dedicated renderer production
 
 - Exact source `f6f850df3796e653e5c7c69692ba06ced6befd63` sudah pushed pada
