@@ -22,10 +22,13 @@ ketika keputusan atau release baru menutup gap.
 
 ## Prioritas tinggi
 
-SagaView S238 sudah membuat checksum dan parsing receipt physical UAT memakai
-byte snapshot yang sama. Residual yang belum tertutup tetap bersifat fisik:
-fixed NTFS minimal 10 GiB, EPSON L8050/driver, serta eksekusi matriks 14 gate
-pada exact kandidat.
+SagaView physical UAT yang sebelumnya tertahan storage dan printer sudah
+`CLOSED` pada pasangan exact backend
+`ea24cc687dbb176380674b70985214ece592051d` dan Studio
+`645dddb90dc55d36288d4b4cd96b6acd73c009e8`: matriks 14 gate lulus tanpa
+blocker dan kedua surface sudah production-activated. Residual SagaView kini
+adalah Founding Studio Pilot dan acceptance operasional mass-scale sebelum
+`BUSINESS_READY`, bukan blocker deployment release ini.
 
 | ID | Produk/area | Label | Pertanyaan atau gap | Bukti penutup |
 |---|---|---|---|---|
@@ -42,14 +45,22 @@ pada exact kandidat.
 
 ### SagaView
 
-- `CLOSED IN TOOLING / PHYSICAL UAT STILL BLOCKED`: S231 exact Studio
+- `CLOSED / PRODUCTION_ACTIVATED`: blocker fixed NTFS, printer/driver, dan
+  physical UAT exact-release S231-S244 sudah ditutup. Pasangan final backend
+  `ea24cc687dbb176380674b70985214ece592051d` dan Studio
+  `645dddb90dc55d36288d4b4cd96b6acd73c009e8` lulus 14 gate fisik, lalu aktif
+  sebagai release `20260821082751-ea24cc6` dan
+  `20260821090659-645dddb`. `BUSINESS_READY` tetap menunggu pilot/acceptance
+  operasional.
+
+- `HISTORICAL / SUPERSEDED BY 2026-08-21 ACTIVATION`: S231 exact Studio
   `f2f67bea9004549e16cc0d4206dffe9830718c2b` menutup false-ready removable
   exFAT dengan gate fixed NTFS ≥10 GiB dan sudah `PUSHED / LOCAL_VALIDATED /
   IMPLEMENTED_NOT_DEPLOYED`. Residual tetap menyediakan fixed NTFS yang sah,
   EPSON L8050/driver, lalu menjalankan 14 gate fisik dengan backend exact
   `a648c180310e197934ac84eed8519e51ae90f0eb`. Production tidak berubah.
 
-- `PHYSICAL_UAT_PREFLIGHT_BLOCKED`: audit S230 pada exact Studio
+- `HISTORICAL / SUPERSEDED BY 2026-08-21 ACTIVATION`: audit S230 pada exact Studio
   `c132c04eb483ac3ab699d424af1ed5acf395a4b4` dan backend
   `a648c180310e197934ac84eed8519e51ae90f0eb` membuktikan source bersih/pushed
   dan Spooler aktif, tetapi belum ada fixed NTFS bebas minimal 10 GiB atau

@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-21 - SagaView Support contract dan Studio cumulative release
+
+- Backend exact `ea24cc687dbb176380674b70985214ece592051d` aktif sebagai
+  `20260821082751-ea24cc6`; Support Hub kini konsisten estimate-only,
+  pembayaran off-app, dan text-only/no-upload.
+- Studio exact `645dddb90dc55d36288d4b4cd96b6acd73c009e8` aktif sebagai
+  `20260821090659-645dddb` setelah physical UAT pasangan exact 14 gate lulus.
+- Full backend product-surface 993/993, Studio check 228/228, E2E 146 pass/3
+  controlled skip, dependency audit, immutable artifact, backup/restore,
+  atomic activation, provenance, smoke, service/journal, dan rollback rehearsal
+  lulus.
+- Status `PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; rollback
+  backend S245 dan Studio S192 dipertahankan. `BUSINESS_READY` tetap false.
+
 ## 2026-08-21 - SagaBook Global Brand preview-save S269
 
 - Template Booking kini menempatkan `Simpan untuk Preview` langsung di tab

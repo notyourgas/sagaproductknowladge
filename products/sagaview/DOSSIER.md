@@ -1,5 +1,36 @@
 # SagaView Dossier
 
+## 2026-08-21 - Support contract dan Studio cumulative production activation
+
+`CONFIRMED / PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED`. Backend exact
+`ea24cc687dbb176380674b70985214ece592051d` aktif sebagai
+`20260821082751-ea24cc6`; Studio exact
+`645dddb90dc55d36288d4b4cd96b6acd73c009e8` aktif sebagai
+`20260821090659-645dddb`.
+
+Backend mengganti respons knowledge Support Hub yang masih membawa kontrak
+lama. Jawaban aktif sekarang hanya menjelaskan estimasi biaya, pembayaran
+off-app, dan bantuan text-only dengan metadata teknis aman. Tidak ada instruksi
+QRIS/rekening, konfirmasi pembayaran, payment hold, callback/provider,
+checkout subscription, status paid, atau pengiriman screenshot/log/file.
+Studio membawa kumulatif hardening physical-UAT/recovery/no-upload dan memakai
+root aplikasi yang benar untuk deploy smoke.
+
+Acceptance exact-source mencakup full backend product-surface 993/993 dengan
+12.854 assertion, focused Support Knowledge 9/9 dengan 4.630 assertion, Studio
+check 228/228, E2E 146 pass/3 controlled skip, build/budget, serta audit
+dependency nol. Receipt physical UAT mengikat 14 gate ke kedua commit final dan
+tidak menyisakan blocker. Archive dan git bundle immutable, backup/restore,
+atomic switch, health dan runtime provenance, seluruh service, journal,
+rollback rehearsal, dan public smoke lulus. Rollback langsung dipertahankan ke
+backend `20260818110257-a648c18` dan Studio
+`20260811124309-86b04c9`.
+
+Activation tidak sama dengan business readiness. Founding Studio Pilot,
+monitoring operasional, dan acceptance mass-scale masih diperlukan sebelum
+`BUSINESS_READY`.
+
 ## SagaTech V25 mobile-only sales surface
 
 `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` pada

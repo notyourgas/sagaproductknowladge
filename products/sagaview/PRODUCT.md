@@ -1,6 +1,24 @@
 # SagaView Product Knowledge
 
-Updated: 21 Agustus 2026 12:00 WIB
+Updated: 21 Agustus 2026 16:14 WIB
+
+Backend dan Studio SagaView terbaru berstatus `CONFIRMED / PUSHED /
+LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Backend exact
+`ea24cc687dbb176380674b70985214ece592051d` aktif sebagai release
+`20260821082751-ea24cc6`; Studio exact
+`645dddb90dc55d36288d4b4cd96b6acd73c009e8` aktif sebagai release
+`20260821090659-645dddb`. Support Hub kini konsisten dengan kontrak produk:
+hanya estimasi, pembayaran dilakukan di luar aplikasi, dan bantuan hanya teks
+serta metadata teknis aman tanpa screenshot, file, foto, path, QRIS, rekening,
+provider, callback, checkout subscription, status paid, atau payment hold.
+Physical UAT 14 gate pada pasangan exact commit lulus tanpa blocker; full
+backend product-surface 993/993, Studio check 228/228, E2E 146 pass/3 controlled
+skip, dependency audit nol, backup/restore, archive dan git bundle immutable,
+atomic activation, health/provenance, service/journal, public smoke, serta
+rollback rehearsal lulus. Rollback langsung tetap backend
+`20260818110257-a648c18` dan Studio `20260811124309-86b04c9`.
+`BUSINESS_READY` belum diklaim; Founding Studio Pilot dan acceptance operasional
+mass-scale tetap gate terpisah.
 
 SagaTech V25 berstatus `CONFIRMED / SALES_SURFACE_PRODUCTION_ACTIVATED` pada
 `https://sagatech.site/saga-product/`. Funnel kini mobile-only: owner memilih

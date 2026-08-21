@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-21 - SagaView Support contract dan Studio production activation
+
+- Informasi `CONFIRMED` berasal dari exact runtime backend
+  `ea24cc687dbb176380674b70985214ece592051d` dan Studio
+  `645dddb90dc55d36288d4b4cd96b6acd73c009e8`.
+- Knowledge mencatat koreksi respons Support Hub menjadi estimate-only,
+  pembayaran off-app, text-only/no-upload, serta penutupan blocker physical UAT
+  Studio cumulative.
+- Delivery `PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`; release backend `20260821082751-ea24cc6`, Studio
+  `20260821090659-645dddb`, dengan rollback langsung masing-masing tetap
+  tersedia. `BUSINESS_READY=false`.
+- Dokumen terdampak: SagaView product/dossier/changelog/coverage, portfolio,
+  master, gaps, root changelog, dan sync status.
+
 ## 2026-08-21 - SagaBook S269 Global Brand preview-save sync
 
 - Informasi `CONFIRMED` berasal dari keputusan Andreas dan exact release source

@@ -1,5 +1,28 @@
 # SagaView Changelog
 
+## 2026-08-21 - Support contract dan Studio cumulative production activation
+
+- Klasifikasi: `CONFIRMED` production release.
+- Before: backend `a648c180310e197934ac84eed8519e51ae90f0eb`
+  masih memuat respons knowledge Support Hub yang menyebut alur pembayaran dan
+  pengiriman screenshot/log; Studio cumulative belum mempunyai receipt
+  physical UAT exact-release yang lulus.
+- After: backend exact `ea24cc687dbb176380674b70985214ece592051d`
+  aktif sebagai `20260821082751-ea24cc6`, dengan kontrak estimasi-only,
+  pembayaran off-app, dan Support Hub text-only/no-upload. Studio exact
+  `645dddb90dc55d36288d4b4cd96b6acd73c009e8` aktif sebagai
+  `20260821090659-645dddb` setelah physical UAT 14 gate lulus.
+- Evidence: backend product-surface 993/993 dengan 12.854 assertion, focused
+  Support Knowledge 9/9 dengan 4.630 assertion; Studio check 228/228, E2E 146
+  pass/3 controlled skip, build/budget, dependency audit nol, archive dan git
+  bundle immutable, backup/restore, atomic switch, exact runtime provenance,
+  health/public smoke, service/journal, serta rollback rehearsal lulus.
+- Rollback langsung: backend `20260818110257-a648c18`; Studio
+  `20260811124309-86b04c9`.
+- Delivery: `PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`. `BUSINESS_READY` belum diklaim; Founding Studio Pilot
+  dan acceptance operasional mass-scale tetap residual.
+
 ## 2026-08-21 - SagaTech V25 mobile-only dan frame alternatif
 
 - Klasifikasi: `CONFIRMED`; runtime SagaView tidak berubah.
