@@ -1,5 +1,29 @@
 # SagaView Changelog
 
+## 2026-08-22 - S263 immutable release pack Owner Pricing
+
+- Klasifikasi: `CONFIRMED` release preparation; production read-only.
+- Before: exact source S262 sudah pushed dan tervalidasi, tetapi belum memiliki
+  archive deploy immutable, checksum manifest, dan git bundle pada dua salinan.
+- After: release artifact `20260821211648-51ceefc` dibuat dari exact clean
+  source `51ceefcbf47a825e6b2df147ab14cd4890fd2d25`. Archive dan bundle
+  mempunyai SHA-256 `9001d29a...c5f5` dan `21989947...edf3`; salinan pada
+  dua volume byte-identik, bundle memuat complete history, dan manifest build
+  memuat login, Owner SagaView, serta Subscription Portal.
+- Security/release: archive tidak memuat `.env`, `.git`, vendor, atau
+  node_modules; dirty source tidak ikut. Kontrak release 11/11 dengan 41
+  assertion dan artifact contract lulus.
+- Production verification: backend tetap
+  `16fa73bf4fca8251f074e63bae8141f7af333b51` /
+  `20260821151535-16fa73b`; Studio tetap `645dddb...` /
+  `20260821090659-645dddb`; rollback backend `20260821082751-ea24cc6`.
+  Manifest, tiga service, login/admin login/API health 200, dan journal error
+  satu jam nol.
+- Delivery: `PUSHED / LOCAL_VALIDATED / ARTIFACT_VERIFIED /
+  PACKAGED_NOT_DEPLOYED`. Belum `STAGING_READY`, belum deploy/aktif, dan
+  `BUSINESS_READY` tidak berubah. Authenticated Owner UAT serta fresh
+  backup/restore tetap gate.
+
 ## 2026-08-22 - S262 Owner pricing progressive disclosure pada active lineage
 
 - Klasifikasi: `CONFIRMED` integration candidate; production tidak diubah.

@@ -12,16 +12,26 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-22T02:42:00+07:00 |
-| Branch aktif | `codex/s273-template-text-knowledge` dari worktree bersih exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-22T04:21:00+07:00 |
+| Branch aktif | `codex/s263-sagaview-owner-pricing-package` dari worktree bersih exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `7ade016f355ab879e53e1b0e8ec6c84831f276b9` |
-| Informasi terakhir disinkronkan | SagaBook Template Booking text inspector S273 exact source `1a7f5fb80c422bf759c6092110d35c1606361cc3` sudah pushed; belum merge/deploy. |
+| Baseline sebelum pembaruan | `e8a4e256afceee880e075d6aea42152683410e16` |
+| Informasi terakhir disinkronkan | SagaView S263 membekukan exact S262 sebagai artifact `20260821211648-51ceefc` pada dua salinan terverifikasi; production tidak berubah. |
 | Status sinkronisasi | `UP TO DATE` setelah validator dan fast-forward push. |
-| Konflik | Worktree bersih memakai exact `origin/main`; clone canonical lokal yang divergen tidak disentuh. Produk lain tidak diubah. |
-| Error | Tidak ada blocker source. S273 belum merge/deploy; production serta `BUSINESS_READY` tidak berubah. |
+| Konflik | Worktree bersih memakai exact `origin/main`; clone canonical lokal yang tertinggal tidak disentuh. SagaBook dan produk lain tidak diubah. |
+| Error | Tidak ada blocker artifact. Owner UAT dan fresh backup/restore kandidat belum dilakukan; production serta `BUSINESS_READY` tidak berubah. |
 
-## File yang berubah pada sinkronisasi ini (SagaBook S273 text inspector)
+## File yang berubah pada sinkronisasi ini (SagaView S263 immutable release pack)
+
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/CHANGELOG.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
+
+## File yang berubah pada sinkronisasi sebelumnya (SagaBook S273 text inspector)
 
 - `products/sagabook/PRODUCT.md`
 - `products/sagabook/DOSSIER.md`

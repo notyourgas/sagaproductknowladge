@@ -1,6 +1,6 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 22 Agustus 2026 03:18 WIB
+Evidence cut-off: 22 Agustus 2026 04:21 WIB
 
 Release cumulative terbaru: backend exact
 `16fa73bf4fca8251f074e63bae8141f7af333b51` aktif sebagai
@@ -29,6 +29,19 @@ Playwright desktop/mobile 4/4, build 5.097 modul, npm audit nol, dan exact lock
 dependency terverifikasi. Status `PUSHED / UIUX_VALIDATED /
 SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
 IMPLEMENTED_NOT_DEPLOYED`; production, schema, dan data tidak berubah.
+
+S263 immutable release pack: exact S262 dibekukan menjadi artifact
+`20260821211648-51ceefc`. Archive SHA-256 `9001d29a...c5f5`, bundle SHA-256
+`21989947...edf3`, manifest, dan dua salinan lintas-volume cocok. Bundle
+memuat exact HEAD dan complete history; 2.578 entry archive tidak memuat
+`.env`, `.git`, vendor, atau node_modules serta membawa manifest build,
+composer lock, dan Owner Admin source. Build 5.097 modul dan contract release
+11/11 dengan 41 assertion lulus. Production read-only tetap backend
+`16fa73bf...` / `20260821151535-16fa73b`, rollback
+`20260821082751-ea24cc6`, Studio `645dddb...`, tiga service aktif, public
+smoke 200, dan journal error satu jam nol. Status `ARTIFACT_VERIFIED /
+PACKAGED_NOT_DEPLOYED`; authenticated Owner UAT dan fresh backup/restore belum
+lulus untuk kandidat ini.
 
 S245 backend no-upload production activation: exact S227
 `a648c180310e197934ac84eed8519e51ae90f0eb` aktif sebagai release

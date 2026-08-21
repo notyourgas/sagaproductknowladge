@@ -1,6 +1,6 @@
 # SagaView Product Knowledge
 
-Updated: 22 Agustus 2026 03:18 WIB
+Updated: 22 Agustus 2026 04:21 WIB
 
 Backend dan Studio SagaView terbaru berstatus `CONFIRMED / PUSHED /
 LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Backend exact
@@ -40,6 +40,17 @@ exact lulus: SagaView 146/146 dengan 1.324 assertion, focused API 41/41 dengan
 170 assertion, browser desktop/mobile 4/4, build 5.097 modul, dan npm audit nol.
 Status `PUSHED / UIUX_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED /
 LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production dan data tidak berubah.
+S263 membekukan exact source tersebut sebagai release artifact
+`20260821211648-51ceefc`. Archive SHA-256
+`9001d29a7d041d8fc302f5365aeb7ab04f4015543af86a140714e0bde002c5f5` dan
+git bundle SHA-256
+`219899470aaad612896ce4f0cf2c04e728a616d2aa99aa8f120cae4da175edf3`
+tersedia pada dua volume dengan hash identik; bundle memuat complete history
+dan archive memuat tiga entry build wajib tanpa `.env`, vendor, atau
+node_modules. Kontrak release 11/11 lulus. Status
+`ARTIFACT_VERIFIED / PACKAGED_NOT_DEPLOYED`; authenticated Owner UAT,
+fresh backup/restore, dan persetujuan deploy tetap gate. Production read-only
+tetap backend `16fa73bf...`, Studio `645dddb...`, sehat, dan tidak berubah.
 
 SagaTech V25 berstatus `CONFIRMED / SALES_SURFACE_PRODUCTION_ACTIVATED` pada
 `https://sagatech.site/saga-product/`. Funnel kini mobile-only: owner memilih
