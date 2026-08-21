@@ -10,6 +10,20 @@ aktivasi secara publik dan aman.
 Entri membedakan implementasi, deployment, aktivasi produksi, dan kesiapan
 bisnis. Secret, PII, serta bukti terbatas tidak dicantumkan.
 
+## 2026-08-21 - Saga Product V25 admin-dashboard thumbnail
+
+- Klasifikasi: `CONFIRMED` dari keputusan Andreas, exact source
+  `94992fdfb243822c895266bfe90ecc680cbbb576`, dan runtime publik.
+- Thumbnail serta poster SagaBook pada Saga Product memakai dashboard admin
+  aktual dengan data dummy dan kontak termasking, menggantikan layar jadwal
+  customer pada hub.
+- Production `dpl_FYGb1kcSN9rjW2HRC44RghjyQrbu`; tiga alias publik memiliki
+  HTML identik dan aset dashboard memberi HTTP 200 `image/webp`.
+- Gate: 55/55 test, 37 route, local/production visual QA, PDF, video,
+  fullscreen, accessibility, dan horizontal overflow lulus.
+- Delivery: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / NOT_BUSINESS_READY`;
+  runtime, pricing, entitlement, PDF, video, dan trial tidak berubah.
+
 ## 2026-08-17 - Photobooth Commercial Truth v23 production
 
 - Klasifikasi: `CONFIRMED` dari keputusan Andreas, source truth sheet/test,

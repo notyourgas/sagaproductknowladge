@@ -1,6 +1,6 @@
 # SagaTech Product Dossier
 
-Updated: 17 Agustus 2026
+Updated: 21 Agustus 2026
 
 ## Tujuan dokumen
 
@@ -31,6 +31,12 @@ brosur harga menjadi kualifikasi yang dapat diperiksa dan dibawa ke konsultasi.
 Pada Photobooth, journey dilanjutkan dengan pemilihan booth lengkap atau vendor
 lokal, pembagian tanggung jawab customer/PIC/SagaTech, FAQ komersial, checklist
 quotation, lalu simulator CAPEX/OPEX yang seluruh asumsi kritisnya dapat diubah.
+
+Pada Saga Product V25, hub hanya memilih SagaBook atau SagaView. Halaman produk
+menempatkan PDF interaktif sebelum video inline dan CTA trial. Thumbnail
+SagaBook memakai dashboard admin aktual agar fungsi operasional studio terbaca
+sejak hub; screenshot menggunakan data dummy dan kontak termasking. Runtime
+produk, pricing, entitlement, PDF, dan video tidak diubah oleh revisi visual ini.
 
 ## Experience system
 

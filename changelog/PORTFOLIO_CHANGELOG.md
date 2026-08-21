@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-21 - SagaTech V25 SagaBook admin-dashboard thumbnail
+
+- SagaBook pada hub Saga Product kini memakai dashboard admin aktual dengan
+  KPI booking, slot, omzet, dan operasional sesi; layar jadwal customer tidak
+  lagi menjadi thumbnail utama.
+- Source `94992fdfb243822c895266bfe90ecc680cbbb576`, production
+  `dpl_FYGb1kcSN9rjW2HRC44RghjyQrbu`; public visual, alias, aset, PDF, video,
+  fullscreen, accessibility, dan overflow smoke lulus.
+- SagaView, PDF, video, trial, pricing, runtime, entitlement, dan
+  `BUSINESS_READY` tidak berubah.
+
 ## 2026-08-21 - SagaTech V25 mobile-only Saga Product funnel
 
 - `https://sagatech.site/saga-product/` kini hanya menjadi pemilih SagaBook

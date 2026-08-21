@@ -12,16 +12,26 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-21T12:00:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-21T12:20:00+07:00 |
 | Branch aktif | `codex/knowledge-saga-product-v25` dari clone bersih exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `84f0c600b16894c0a6583085581fd5079ca171e7` |
-| Informasi terakhir disinkronkan | SagaTech V25 mobile-only Saga Product funnel, urutan PDF lalu video, frame TRIAL 3 SagaView, production provenance, dan batas runtime kedua produk. |
+| Baseline sebelum pembaruan | `f49934f70e29aa3012b8887264d0781cfda1497c` |
+| Informasi terakhir disinkronkan | SagaTech V25 memakai dashboard admin aktual sebagai thumbnail dan poster SagaBook; runtime, pricing, entitlement, PDF, video, trial, dan SagaView tidak berubah. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
-| Konflik | Worktree baru memakai exact `origin/main`; clone canonical lama yang divergen tidak disentuh. Trial SagaBook DEC-029 tidak diganti oleh sales surface V25. |
+| Konflik | Worktree bersih memakai exact `origin/main`; clone canonical lama yang divergen tidak disentuh. Trial SagaBook DEC-029 tidak diganti oleh revisi visual sales surface. |
 | Error | GAP-010 masih terbuka untuk runbook fulfillment assisted, quota register, dan receipt entitlement. Host SagaBook tetap `NO_GO`; Fonnte residual dan `BUSINESS_READY=false`. |
 
-## File yang berubah pada sinkronisasi ini (SagaTech V25 mobile-only funnel)
+## File yang berubah pada sinkronisasi ini (SagaTech V25 admin thumbnail)
+
+- `products/sagatech/PRODUCT.md`
+- `products/sagatech/DOSSIER.md`
+- `products/sagatech/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
+
+## File yang berubah pada sinkronisasi sebelumnya (SagaTech V25 mobile-only funnel)
 
 - `products/sagabook/PRODUCT.md`
 - `products/sagabook/DOSSIER.md`
@@ -35,7 +45,7 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `CHANGELOG.md`
 - `SYNC_STATUS.md`
 
-## File yang berubah pada sinkronisasi ini (SagaTech V24 Saga Product funnel)
+## File yang berubah pada sinkronisasi sebelumnya (SagaTech V24 Saga Product funnel)
 
 - `products/sagabook/PRODUCT.md`
 - `products/sagabook/DOSSIER.md`

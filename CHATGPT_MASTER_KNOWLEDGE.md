@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 21 Agustus 2026 12:00 WIB
+Evidence cut-off: 21 Agustus 2026 12:20 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -11,8 +11,10 @@ atau SagaView; halaman produk langsung menampilkan viewer/PDF delapan halaman,
 video inline, lalu CTA trial. Bukti SagaView memakai UI aktual dengan data
 dummy dan frame TRIAL 3 enam slot yang konsisten dari katalog kosong ke editor
 penuh, review, dan output settings. Nama frame bukan entitlement atau kontrak
-katalog. Source `6cfab80a9a06b50ec72e139b46ad5e4b3171f87a`, production
-`dpl_5S2BWzukN4Fat1xdpPVsx9kvFbFF`; public visual, accessibility, PDF, video,
+katalog. Thumbnail dan poster SagaBook memakai dashboard admin aktual dengan
+data dummy serta kontak termasking, bukan layar jadwal customer. Source aktif
+`94992fdfb243822c895266bfe90ecc680cbbb576`, production
+`dpl_FYGb1kcSN9rjW2HRC44RghjyQrbu`; public visual, accessibility, PDF, video,
 fullscreen, byte-range, alias, hash, dan security header lulus. Trial 14 hari
 tanpa auto-charge serta early adopter bayar 1 bulan aktif total 2 bulan tetap
 assisted. Runtime, pricing, billing, entitlement, device/output, physical UAT,

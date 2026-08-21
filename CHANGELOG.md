@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-21 - SagaTech V25 admin-thumbnail production sync
+
+- Informasi `CONFIRMED` berasal dari keputusan Andreas, exact source
+  `94992fdfb243822c895266bfe90ecc680cbbb576`, production
+  `dpl_FYGb1kcSN9rjW2HRC44RghjyQrbu`, dan smoke runtime publik.
+- Thumbnail dan poster SagaBook pada Saga Product kini memakai dashboard admin
+  aktual dengan data dummy serta kontak termasking.
+- Runtime, pricing, entitlement, PDF, video, trial, SagaView, dan
+  `BUSINESS_READY` tidak berubah.
+- Dokumen terdampak: SagaTech product/dossier/changelog, portfolio/master,
+  root changelog, dan sync status.
+
 ## 2026-08-21 - SagaTech V25 mobile-only sales-surface sync
 
 - Informasi `CONFIRMED` berasal dari keputusan Andreas dan production release

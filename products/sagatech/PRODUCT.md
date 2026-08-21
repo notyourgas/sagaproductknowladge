@@ -1,6 +1,6 @@
 # SagaTech Product Knowledge
 
-Updated: 17 Agustus 2026
+Updated: 21 Agustus 2026
 Evidence status: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / NOT_BUSINESS_READY`
 
 ## Tujuan dokumen
@@ -10,7 +10,7 @@ serta batas kesiapan bisnis website SagaTech.
 
 ## Konteks dan status bukti
 
-Dokumen ini merangkum keadaan produksi per 17 Agustus 2026. Klaim fitur dan
+Dokumen ini merangkum keadaan produksi per 21 Agustus 2026. Klaim fitur dan
 status ditautkan pada manifest source, deployment Vercel, serta gate QA; klaim
 hasil bisnis tidak dibuat tanpa data operasional yang memadai.
 
@@ -60,6 +60,16 @@ Positioning:
 - Checklist quotation publik membantu calon mitra memeriksa hardware,
   software, payment, garansi, logistik, acceptance test, dan serah terima.
 
+## Saga Product sales surface V25
+
+- `https://sagatech.site/saga-product/` adalah hub mobile-only untuk memilih
+  SagaBook atau SagaView, lalu membaca PDF, menonton video, dan menghubungi
+  SagaTech untuk trial.
+- Thumbnail SagaBook memakai dashboard admin aktual dengan data dummy dan
+  kontak termasking, bukan lagi layar pemilihan jadwal customer.
+- Perubahan thumbnail tidak mengubah runtime, pricing, entitlement, PDF,
+  video, trial, atau status kesiapan bisnis SagaBook dan SagaView.
+
 ## Batas klaim dan privasi
 
 - Website menggunakan istilah `kemitraan`, bukan otomatis `franchise` atau
@@ -73,11 +83,12 @@ Positioning:
 ## Status release
 
 - Public/canonical: `https://sagatech.site`.
-- Production deployment: `dpl_7kSjSQKiYTbq7HvfXqEvfqs7m7Zf`.
-- Preview: `dpl_8HqqzCVM6Mwa1p2KwNw85T3wChcp`.
-- Rollback V22: `dpl_2NMgqG2KkcpPXXuW7stP29gBkMQF`.
-- 49 test, build/export, 110 local page-view, 36 production page-view,
-  dependency/secret scan, dan security-header smoke lulus.
+- Production deployment aktif: `dpl_FYGb1kcSN9rjW2HRC44RghjyQrbu`.
+- Preview: `dpl_8VydicXVxwji1M3Zq6VTXab4UYwV`.
+- Rollback langsung: `dpl_5S2BWzukN4Fat1xdpPVsx9kvFbFF`.
+- Source runtime aktif: `94992fdfb243822c895266bfe90ecc680cbbb576`.
+- 55 test, build/export 37 route, visual QA local/production,
+  PDF/video/fullscreen, accessibility, alias, dan security-header smoke lulus.
 
 ## Residual sebelum business-ready
 
