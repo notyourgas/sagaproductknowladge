@@ -1,35 +1,40 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 22 Agustus 2026 04:21 WIB
+Evidence cut-off: 22 Agustus 2026 04:29 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
 SagaBook Template Booking text inspector S273 exact source
 `1a7f5fb80c422bf759c6092110d35c1606361cc3` berstatus `CONFIRMED / PUSHED /
 UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
-IMPLEMENTED_NOT_DEPLOYED`. Heading halaman, nama studio, nama cabang pada foto,
+PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Heading halaman, nama studio, nama cabang pada foto,
 serta nama cabang pada card/ringkasan memiliki warna independen di Global Brand
 dan Custom. Hover/focus/klik editor menandai target di Preview Live dan klik
 preview memilih kontrol terkait. Snapshot/hash/publish/public renderer menjaga
 nilai tersebut dengan fallback legacy; inspector hanya aktif untuk same-origin
 dan authority preview valid. Full PHP 1.076/1.076 (12.507 assertion), template
 12/12, accessibility/adaptive 21/21, Promotion Center ber-flag 4/4, build,
-formatter, dan audit dependency lulus. Branch belum merge/deploy, profile
-published dan production tidak berubah, serta `BUSINESS_READY=false`.
+formatter, dan audit dependency lulus. Release `20260821212120-1a7f5fb` aktif
+dengan rollback `20260821192026-64c1fc8`; encrypted backup/restore, source
+backup lokal+VPS, verifier 17/17, public/security 3/3 lulus. Profile published
+tidak dimutasi oleh deployment dan `BUSINESS_READY=false`.
 
-SagaBook preset booking `Cinematic Noir` implementation exact source
-`3ffe3b8c612baead82e303242151559fc1b717c0` berstatus `CONFIRMED / PUSHED /
-UIUX_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED / NOT_DEPLOYED`. Preset keenam
+SagaBook preset booking `Cinematic Noir` production implementation source
+`fca0fe510f076243c739a03eff0f5f6f8d585aec`, tercakup pada release source
+`1a7f5fb80c422bf759c6092110d35c1606361cc3`, berstatus `CONFIRMED / PUSHED /
+UIUX_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED`. Preset keenam
 ini khusus storefront booking: dark editorial, photography-first, charcoal dan
 amber, Cormorant/Nexa, CTA solid, serta sembilan recipe yang mempertahankan
 workflow universal dan inherit Global Brand. Wireframe 3x3 serta asset brief
 menetapkan artboard 360/390/430/460, spacing, crop, format, prompt, safe-area,
 dan touch target. Visual direction sembilan halaman hasil built-in ImageGen dan
-manifest usage berada pada exact source
+manifest usage berada pada branch referensi non-production
 `4a40a1b180412c20090e81bfecdda766f6e78987`. Visual 3/3,
 accessibility enam preset 20/20, backend 21/21 (378 assertion), TypeScript/build,
-XML, dan audit dependency lulus. Branch belum merge/deploy; production, asset
-foto final, dan `BUSINESS_READY` tidak berubah.
+XML, dan audit dependency lulus. Release aktif, tetapi tenant tetap perlu
+memilih, menyimpan preview, dan Publish. Asset foto final belum tersedia dan
+`BUSINESS_READY=false`.
 
 SagaBook normalisasi orientasi foto cabang exact source
 `7afdf345cf32427d390c2d636ef1107833136ae8` berstatus `CONFIRMED / PUSHED /

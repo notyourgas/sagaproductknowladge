@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-22 - SagaBook S273 production activation sync
+
+- Informasi `CONFIRMED` berasal dari exact source
+  `1a7f5fb80c422bf759c6092110d35c1606361cc3`, release aktif
+  `20260821212120-1a7f5fb`, dan verifier independen production.
+- Knowledge mengubah status text inspector dan Cinematic Noir ke
+  `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`, serta mengikat rollback,
+  backup/restore, source artifact, smoke, dan security header.
+- Production implementation Cinematic Noir adalah `fca0fe510f...`; branch
+  desain `3ffe3b8c...` dan ImageGen `4a40a1b...` tetap referensi non-production.
+- Tenant publish tidak dimutasi dan `BUSINESS_READY=false`.
+- Dokumen terdampak: SagaBook product/dossier/changelog/coverage, portfolio,
+  master, root changelog, dan sync status.
+
 ## 2026-08-22 - SagaView S263 immutable release-pack sync
 
 - Informasi `CONFIRMED` berasal dari exact source S262

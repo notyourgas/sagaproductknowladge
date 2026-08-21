@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-22 - SagaBook S273 text inspector dan Cinematic Noir production
+
+- Exact release source `1a7f5fb80c422bf759c6092110d35c1606361cc3`
+  aktif sebagai `20260821212120-1a7f5fb`; rollback
+  `20260821192026-64c1fc8` tersedia.
+- Empat warna teks semantic dan inspector dua arah aktif di Template Booking;
+  implementation Cinematic Noir production berasal dari `fca0fe510f...`.
+- Backup terenkripsi, checksum, restore disposable, source backup lokal+VPS,
+  gate exact commit, verifier 17/17, public smoke 3/3, dan security header 3/3
+  lulus tanpa release exception.
+- Deployment tidak memilih atau mem-publish preset tenant secara otomatis;
+  status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`, `BUSINESS_READY=false`.
+
 ## 2026-08-22 - SagaView S263 immutable Owner Pricing release pack
 
 - Exact source S262 `51ceefcbf47a825e6b2df147ab14cd4890fd2d25`

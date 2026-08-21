@@ -12,14 +12,25 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-22T04:21:00+07:00 |
-| Branch aktif | `codex/s263-sagaview-owner-pricing-package` dari worktree bersih exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-22T04:29:00+07:00 |
+| Branch aktif | `codex/s273-production-knowledge` dari worktree bersih exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `e8a4e256afceee880e075d6aea42152683410e16` |
-| Informasi terakhir disinkronkan | SagaView S263 membekukan exact S262 sebagai artifact `20260821211648-51ceefc` pada dua salinan terverifikasi; production tidak berubah. |
+| Baseline sebelum pembaruan | `49d7b22b928e7a12847f262356ec5c3e478f2391` |
+| Informasi terakhir disinkronkan | SagaBook S273 text inspector dan Cinematic Noir aktif pada release `20260821212120-1a7f5fb`; rollback serta verifier 17/17 terverifikasi. |
 | Status sinkronisasi | `UP TO DATE` setelah validator dan fast-forward push. |
-| Konflik | Worktree bersih memakai exact `origin/main`; clone canonical lokal yang tertinggal tidak disentuh. SagaBook dan produk lain tidak diubah. |
-| Error | Tidak ada blocker artifact. Owner UAT dan fresh backup/restore kandidat belum dilakukan; production serta `BUSINESS_READY` tidak berubah. |
+| Konflik | Worktree bersih memakai exact `origin/main`; clone canonical lokal yang kotor/divergen tidak disentuh. Lineage production Cinematic Noir dibedakan dari branch desain referensi. |
+| Error | Tidak ada blocker release. Authenticated Owner UAT tenant dan pilot tetap belum dilakukan; `BUSINESS_READY=false`. |
+
+## File yang berubah pada sinkronisasi ini (SagaBook S273 production)
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaView S263 immutable release pack)
 

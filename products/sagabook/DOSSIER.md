@@ -10,7 +10,7 @@ dalam satu dokumen public-safe.
 - Template Booking text inspector S273 exact source
   `1a7f5fb80c422bf759c6092110d35c1606361cc3`: `CONFIRMED / PUSHED /
   UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED`. Empat semantic text color memisahkan heading
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Empat semantic text color memisahkan heading
   halaman, nama studio, nama cabang pada overlay foto, dan nama cabang pada
   card/ringkasan. Nilai tersedia pada Global Brand serta override per halaman,
   masuk ke canonical hash, draft rehydrate, exact publish, dan public snapshot,
@@ -21,12 +21,17 @@ dalam satu dokumen public-safe.
   raw query preview tanpa authority gagal tertutup. Full PHP 1.076/1.076
   (12.507 assertion), template matrix 12/12, accessibility/adaptive 21/21,
   Promotion Center ber-flag 4/4, build, formatter, dan dependency audit lulus.
-  Tidak ada schema, pricing, payment, atau permission baru. Production dan
-  published customer profile tidak berubah; `BUSINESS_READY=false`.
+  Tidak ada schema, pricing, payment, atau permission baru. Release immutable
+  `20260821212120-1a7f5fb` aktif dengan rollback `20260821192026-64c1fc8`;
+  encrypted backup/checksum/disposable restore, source backup lokal+VPS,
+  verifier 17/17, public smoke 3/3, dan security header 3/3 lulus tanpa
+  exception. Published customer profile tidak dimutasi; `BUSINESS_READY=false`.
 
-- Preset booking `Cinematic Noir` implementation exact source
-  `3ffe3b8c612baead82e303242151559fc1b717c0`: `CONFIRMED / PUSHED /
-  UIUX_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED / NOT_DEPLOYED`. Arah visual
+- Preset booking `Cinematic Noir` production implementation source
+  `fca0fe510f076243c739a03eff0f5f6f8d585aec`, tercakup pada release source
+  `1a7f5fb80c422bf759c6092110d35c1606361cc3`: `CONFIRMED / PUSHED /
+  UIUX_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`. Arah visual
   dark editorial memakai photography-first layout, surface charcoal, satu
   aksen amber, heading Cormorant, body Nexa, radius 12 piksel, dan CTA solid
   tanpa gradient baru. Sembilan layout recipe tetap memakai workflow universal
@@ -37,10 +42,11 @@ dalam satu dokumen public-safe.
   touch target 44 piksel. Visual 3/3, accessibility enam preset 20/20, backend
   21/21 (378 assertion), TypeScript/build, XML, serta audit dependency lulus.
   Paket UI direction sembilan halaman dibangkitkan melalui built-in ImageGen
-  pada exact source `4a40a1b180412c20090e81bfecdda766f6e78987`; manifest
+  pada branch referensi `4a40a1b180412c20090e81bfecdda766f6e78987`; manifest
   membatasi penggunaannya sebagai referensi HTML/CSS, bukan raster UI shipping.
-  Branch sudah pushed tetapi belum merge/deploy; tidak ada perubahan runtime
-  production dan asset fotografi final tetap belum dibuat.
+  Release `20260821212120-1a7f5fb` aktif, tetapi preset baru berlaku untuk
+  tenant hanya setelah dipilih, disimpan sebagai preview, lalu dipublish.
+  Asset fotografi final tetap belum dibuat.
 
 - Normalisasi orientasi foto cabang exact source
   `7afdf345cf32427d390c2d636ef1107833136ae8`: `CONFIRMED / PUSHED /

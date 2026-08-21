@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 22 Agustus 2026 02:42 WIB
-Evidence status: S273 text inspector source-validated dan belum production-deployed; production tetap pada release sebelumnya
+Updated: 22 Agustus 2026 04:29 WIB
+Evidence status: S273 text inspector dan Cinematic Noir production-activated pada exact release terverifikasi
 
 ## Tujuan dokumen
 
@@ -19,7 +19,7 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 - Template Booking text inspector S273 exact source
   `1a7f5fb80c422bf759c6092110d35c1606361cc3` berstatus `CONFIRMED / PUSHED /
   UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED`. Warna `Heading Halaman`, `Nama Studio / Brand`,
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Warna `Heading Halaman`, `Nama Studio / Brand`,
   `Nama Cabang di Foto`, serta `Nama Cabang di Card & Ringkasan` kini dapat
   diatur terpisah pada Global Brand maupun Custom halaman. Hover, fokus, dan
   klik kontrol editor menandai komponen tepat di Preview Live; klik komponen
@@ -28,12 +28,17 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   fallback kompatibel untuk snapshot lama. Full PHP 1.076/1.076 (12.507
   assertion), regresi template 12/12, accessibility/adaptive 21/21, Promotion
   Center ber-flag 4/4, build, formatter, serta audit dependency tanpa advisory
-  lulus. Source belum merge/deploy, draft customer tidak dipublish, production
-  tidak berubah, dan `BUSINESS_READY=false`.
+  lulus. Release immutable `20260821212120-1a7f5fb` aktif dengan rollback
+  `20260821192026-64c1fc8`; backup terenkripsi, checksum, restore disposable,
+  source backup lokal+VPS, verifier independen 17/17, public smoke 3/3, dan
+  security header 3/3 lulus tanpa release exception. Deployment tidak
+  mem-publish draft tenant; `BUSINESS_READY=false`.
 
-- Preset booking `Cinematic Noir` implementation exact source
-  `3ffe3b8c612baead82e303242151559fc1b717c0` berstatus `CONFIRMED / PUSHED /
-  UIUX_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED / NOT_DEPLOYED`. Preset baru
+- Preset booking `Cinematic Noir` production implementation source
+  `fca0fe510f076243c739a03eff0f5f6f8d585aec`, tercakup pada exact release
+  source `1a7f5fb80c422bf759c6092110d35c1606361cc3`, berstatus `CONFIRMED / PUSHED /
+  UIUX_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`. Preset baru
   ini menambah arah dark editorial untuk storefront booking saja: fotografi
   dominan, surface charcoal, aksen amber, typography Cormorant/Nexa, CTA solid,
   dan sembilan layout recipe dari Lokasi sampai Selesai. Seluruh halaman
@@ -44,11 +49,11 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   storefront enam preset 20/20, backend contract 21/21 (378 assertion),
   TypeScript, build, XML wireframe, serta audit npm/Composer nol advisory.
   Paket visual direction sembilan halaman hasil built-in ImageGen berada pada
-  exact source `4a40a1b180412c20090e81bfecdda766f6e78987`; tiap PNG memiliki
+  branch referensi non-production `4a40a1b180412c20090e81bfecdda766f6e78987`; tiap PNG memiliki
   manifest prompt dan usage boundary sebagai referensi implementasi HTML/CSS,
-  bukan raster UI shipping. Source berada di branch
-  `codex/s272-sagabook-cinematic-noir`; belum merge/deploy dan belum mengubah
-  release production. Asset fotografi final tetap belum digenerate.
+  bukan raster UI shipping. Release `20260821212120-1a7f5fb` aktif; tenant
+  tetap perlu memilih, menyimpan preview, dan Publish agar preset berlaku pada
+  storefront-nya. Asset fotografi final tetap belum digenerate.
 
 - Normalisasi orientasi foto cabang exact source
   `7afdf345cf32427d390c2d636ef1107833136ae8` berstatus `CONFIRMED / PUSHED /

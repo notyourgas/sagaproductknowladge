@@ -1,6 +1,6 @@
 # SagaBook Changelog
 
-## 2026-08-22 - Template Booking semantic text inspector S273
+## 2026-08-22 - Template Booking semantic text inspector S273 production
 
 - Klasifikasi: `CONFIRMED`; keputusan pemisahan warna dan inspector berasal
   dari Andreas, dengan exact source
@@ -21,11 +21,15 @@
   accessibility/adaptive 21/21, Promotion Center ber-flag 4/4, build,
   formatter, npm/Composer audit nol, serta OSV nol pada lockfile yang tidak
   berubah lulus. Dua retry OSV setelah rebase mengalami timeout eksternal.
-- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; belum merge,
-  belum deploy, draft customer tidak dipublish, production tidak berubah, dan
+- Exact source aktif sebagai release `20260821212120-1a7f5fb` dengan rollback
+  `20260821192026-64c1fc8`. Encrypted backup/checksum/disposable restore,
+  source backup lokal+VPS, atomic activation, verifier 17/17, public smoke 3/3,
+  dan security header 3/3 lulus tanpa release exception.
+- Status `PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`; draft customer tidak dipublish oleh deployment dan
   `BUSINESS_READY=false`.
 
-## 2026-08-22 - Cinematic Noir booking preset source candidate
+## 2026-08-22 - Cinematic Noir booking preset production
 
 - Klasifikasi: `CONFIRMED`; keputusan arah preset berasal dari Andreas dan
   exact source `3ffe3b8c612baead82e303242151559fc1b717c0` sudah pushed ke
@@ -44,9 +48,13 @@
 - Visual preset 3/3, accessibility enam preset 20/20, backend contract 21/21
   (378 assertion), TypeScript, build, XML wireframe, npm audit nol vulnerability,
   dan Composer audit nol advisory lulus.
-- Status `PUSHED / LOCAL_VALIDATED / NOT_DEPLOYED`; branch belum merge, release
-  production tidak berubah, asset fotografi final belum digenerate, dan
-  `BUSINESS_READY=false`.
+- Production lineage menggunakan implementation source
+  `fca0fe510f076243c739a03eff0f5f6f8d585aec` dalam release source
+  `1a7f5fb80c422bf759c6092110d35c1606361cc3`; branch `3ffe3b8c...` dan paket
+  ImageGen `4a40a1b...` tetap referensi non-production.
+- Status `PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`; tenant harus memilih, Save Preview, dan Publish untuk
+  mengaktifkannya. Asset foto final belum digenerate dan `BUSINESS_READY=false`.
 
 ## 2026-08-21 - Normalisasi orientasi foto cabang production
 

@@ -1,23 +1,27 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 22 Agustus 2026 02:42 WIB
+Evidence cut-off: 22 Agustus 2026 04:29 WIB
 
 Template Booking text inspector S273 exact source
 `1a7f5fb80c422bf759c6092110d35c1606361cc3` telah `CONFIRMED / PUSHED /
 UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
-IMPLEMENTED_NOT_DEPLOYED`. Coverage mengikat empat semantic text color dari UI
+PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Coverage mengikat empat semantic text color dari UI
 editor ke snapshot/hash backend, authoritative Preview Live, publish, public
 renderer, dan fallback legacy. Inspector dua arah mencakup hover, focus, click,
 pin, Escape, aria-live, same-origin plus authority validation, raw-preview
 negative, target 44 piksel, forced-colors, reduced-motion, serta no-overflow
 390x844 dan 1440x900. Full PHP 1.076/1.076 (12.507 assertion), template matrix
 12/12, accessibility/adaptive 21/21, Promotion Center ber-flag 4/4, build,
-formatter, dan dependency audit lulus. Branch sudah pushed tetapi belum
-merge/deploy; production, published profile, dan `BUSINESS_READY` tidak berubah.
+formatter, dan dependency audit lulus. Release `20260821212120-1a7f5fb` aktif
+dengan rollback `20260821192026-64c1fc8`; backup/restore, source backup,
+verifier 17/17, public/security 3/3 lulus tanpa exception. Published profile
+tidak dimutasi oleh deploy dan `BUSINESS_READY=false`.
 
-Preset booking `Cinematic Noir` implementation exact source
-`3ffe3b8c612baead82e303242151559fc1b717c0` telah `CONFIRMED / PUSHED /
-UIUX_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED / NOT_DEPLOYED`. Coverage
+Preset booking `Cinematic Noir` production implementation source
+`fca0fe510f076243c739a03eff0f5f6f8d585aec` pada release source
+`1a7f5fb80c422bf759c6092110d35c1606361cc3` telah `CONFIRMED / PUSHED /
+UIUX_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED`. Coverage
 mengikat sembilan recipe layout ke workflow universal, inheritance Global Brand,
 token semantic dark editorial, CTA solid, title tanpa kotak, safe-area, touch
 target 44 piksel, dan viewport 344/360/390/430/460. Visual khusus preset 3/3
@@ -25,9 +29,9 @@ membuktikan seluruh halaman, responsive/no-overflow, serta select -> save ->
 authoritative preview ACK; accessibility enam preset 20/20 dan backend contract
 21/21 (378 assertion) lulus bersama TypeScript, build, XML, serta audit npm/
 Composer. UI direction untuk sembilan halaman dan manifest prompt/usage boundary
-berada pada exact source `4a40a1b180412c20090e81bfecdda766f6e78987`. Branch
-sudah pushed tetapi belum merge/deploy; runtime production dan asset foto final
-tidak berubah.
+berada pada branch referensi non-production
+`4a40a1b180412c20090e81bfecdda766f6e78987`. Release aktif, namun pemilihan dan
+Publish tenant tetap eksplisit; asset foto final belum tersedia.
 
 Normalisasi orientasi foto cabang exact source
 `7afdf345cf32427d390c2d636ef1107833136ae8` telah `CONFIRMED / PUSHED /
