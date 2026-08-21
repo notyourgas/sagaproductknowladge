@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 21 Agustus 2026 19:59 WIB
-Evidence status: Template Booking semantic component colors production active and nine-page Chrome UAT passed; broader business readiness pending
+Updated: 21 Agustus 2026 22:58 WIB
+Evidence status: Normalisasi orientasi foto cabang local-validated dan pushed; production tetap pada semantic component colors; broader business readiness pending
 
 ## Tujuan dokumen
 
@@ -15,6 +15,20 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- Normalisasi orientasi foto cabang exact source
+  `7afdf345cf32427d390c2d636ef1107833136ae8` berstatus `CONFIRMED / PUSHED /
+  QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Sebelumnya, optimizer gambar dapat membuang
+  metadata orientasi JPEG kamera sebelum piksel diputar sehingga foto portrait
+  tersimpan miring. Pipeline upload sekarang membaca orientasi, memutar piksel
+  canonical sebelum resize, membuang metadata, serta menghitung checksum dan
+  kuota dari byte canonical yang benar-benar disimpan. Upload, simpan cabang,
+  admin read, public booking read, dan asset response memakai file canonical
+  yang sama. PHP 270/270 (2.017 assertion), browser 2/2 pada mobile/desktop,
+  build 5.132 modul, design audit 26/0, dan audit dependency nol lulus.
+  Production tidak berubah; foto lama yang sudah telanjur miring perlu
+  di-upload ulang setelah release diotorisasi.
 
 - Template Booking semantic component colors exact release source
   `9bc208af60b9a9abc08c64ad463313d734cca734` (feature implementation

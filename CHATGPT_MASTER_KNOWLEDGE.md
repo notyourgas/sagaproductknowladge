@@ -1,8 +1,19 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 21 Agustus 2026 22:20 WIB
+Evidence cut-off: 21 Agustus 2026 22:58 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
+
+SagaBook normalisasi orientasi foto cabang exact source
+`7afdf345cf32427d390c2d636ef1107833136ae8` berstatus `CONFIRMED / PUSHED /
+QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`. JPEG kamera sekarang diorientasikan menjadi piksel
+canonical sebelum resize dan metadata dihapus; checksum serta kuota memakai
+byte tersimpan. Upload, branch save, admin/public read, dan asset response telah
+dibuktikan end-to-end dengan data sintetis. PHP 270/270 (2.017 assertion),
+browser 2/2 mobile/desktop, build 5.132, design 26/0, serta audit dependency nol
+lulus. Production tetap `20260821124922-9bc208a`; foto lama yang sudah miring
+perlu di-upload ulang setelah release.
 
 SagaBook Template Booking semantic component colors exact release source
 `9bc208af60b9a9abc08c64ad463313d734cca734`, feature implementation

@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-21 - SagaBook branch photo orientation candidate
+
+- Upload foto cabang kini menormalkan orientasi JPEG kamera menjadi piksel
+  canonical sebelum resize dan menghapus metadata, sehingga foto portrait tidak
+  lagi bergantung pada dukungan EXIF browser atau storage.
+- Checksum dan kuota memakai byte yang benar-benar disimpan; audit tetap
+  public-safe tanpa foto, metadata mentah, atau PII.
+- Exact source `7afdf345cf32427d390c2d636ef1107833136ae8` telah pushed. PHP
+  270/270, browser mobile/desktop 2/2, build 5.132, design 26/0, dan audit
+  dependency nol lulus.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap
+  `20260821124922-9bc208a`. Foto lama yang sudah miring perlu di-upload ulang
+  setelah release diotorisasi.
+
 ## 2026-08-21 - SagaView login production recovery
 
 - Login SagaView sempat merespons 500 karena release backend tidak membawa

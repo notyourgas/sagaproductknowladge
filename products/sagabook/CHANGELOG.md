@@ -1,5 +1,26 @@
 # SagaBook Changelog
 
+## 2026-08-21 - Normalisasi orientasi foto cabang candidate
+
+- Klasifikasi: `CONFIRMED`; exact source
+  `7afdf345cf32427d390c2d636ef1107833136ae8` telah pushed dan tervalidasi
+  lokal, belum di-deploy.
+- Before: optimizer membaca piksel JPEG lalu menghapus metadata tanpa
+  menerapkan orientasi kamera, sehingga sebagian foto portrait tersimpan
+  miring. After: orientasi dibaca saat ingestion, piksel diputar canonical
+  sebelum resize, dan metadata dihapus dari hasil simpan.
+- Checksum serta pemeriksaan kuota memakai byte canonical; audit hanya mencatat
+  boolean aman tanpa gambar, metadata mentah, atau PII.
+- Regresi membuktikan dua arah rotasi, preservasi PNG/WebP, upload -> storage ->
+  branch save -> admin/public read -> asset response, permission-negative,
+  tenant isolation, dan read-after-write.
+- PHP 270/270 (2.017 assertion), browser 2/2 pada 390x844 dan 1440x900, build
+  5.132 modul, design audit 26/0, Pint, Composer validate, dan audit npm/
+  Composer/OSV nol lulus. Tidak ada migration.
+- Status `PUSHED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production dan workflow universal tidak berubah.
+  Foto lama yang sudah miring perlu di-upload ulang setelah release.
+
 ## 2026-08-21 - Semantic component colors S272 production
 
 - Klasifikasi: `CONFIRMED`; keputusan desain berasal dari Andreas dan exact

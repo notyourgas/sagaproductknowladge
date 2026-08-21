@@ -12,16 +12,27 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-21T19:59:00+07:00 |
-| Branch aktif | `codex/sagabook-component-colors-knowledge` dari worktree bersih exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-21T22:58:00+07:00 |
+| Branch aktif | `codex/knowledge-s270-branch-photo-exif` dari worktree bersih exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `7e04531f710d8b5760b2b95f144bde2b08e53301` |
-| Informasi terakhir disinkronkan | SagaBook Template Booking semantic component colors exact release source `9bc208af60b9a9abc08c64ad463313d734cca734` production-activated sebagai `20260821124922-9bc208a`; Chrome production sembilan halaman lulus. |
+| Baseline sebelum pembaruan | `e85cd87f136d0b949b85b2b407a051393f1d26d6` |
+| Informasi terakhir disinkronkan | SagaBook normalisasi orientasi foto cabang exact source `7afdf345cf32427d390c2d636ef1107833136ae8` telah pushed dan local-validated; production tetap `20260821124922-9bc208a`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
 | Konflik | Worktree bersih memakai exact `origin/main`; clone canonical lokal yang divergen tidak disentuh. Produk lain tidak diubah. |
-| Error | Tidak ada blocker release. UAT operator/cohort lebih luas tetap diperlukan sebelum `BUSINESS_READY`; status saat ini `BUSINESS_READY=false`. |
+| Error | Tidak ada blocker implementasi. Deploy tetap memerlukan izin; foto lama yang sudah miring perlu di-upload ulang setelah release. UAT operator/cohort lebih luas tetap diperlukan sebelum `BUSINESS_READY`. |
 
-## File yang berubah pada sinkronisasi ini (SagaBook semantic component colors S272)
+## File yang berubah pada sinkronisasi ini (SagaBook branch photo orientation)
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
+
+## File yang berubah pada sinkronisasi sebelumnya (SagaBook semantic component colors S272)
 
 - `products/sagabook/PRODUCT.md`
 - `products/sagabook/DOSSIER.md`

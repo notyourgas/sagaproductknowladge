@@ -7,6 +7,19 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Normalisasi orientasi foto cabang exact source
+  `7afdf345cf32427d390c2d636ef1107833136ae8`: `CONFIRMED / PUSHED /
+  QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Pipeline upload mengubah orientasi JPEG kamera
+  menjadi piksel canonical sebelum resize dan membuang metadata, lalu memakai
+  byte tersimpan untuk checksum serta kuota. Regresi sintetis membuktikan dua
+  arah rotasi, preservasi PNG/WebP, upload sampai admin/public read, tenant dan
+  permission-negative, serta response asset. PHP 270/270 (2.017 assertion),
+  browser 2/2 mobile/desktop, build 5.132 modul, design audit 26/0, dan audit
+  dependency nol lulus. Tidak ada migration atau perubahan workflow universal.
+  Production tetap release `20260821124922-9bc208a`; foto lama yang sudah
+  tersimpan miring tidak dimutasi otomatis.
+
 - Template Booking semantic component colors exact release source
   `9bc208af60b9a9abc08c64ad463313d734cca734`, feature implementation
   `c8fd2103f7274bdb3d5d0d2a4748ca547f0f418b`: `CONFIRMED / PUSHED /
@@ -96,7 +109,7 @@ dalam satu dokumen public-safe.
   assisted, bukan perubahan runtime SagaBook; lifecycle DEC-029 tetap berlaku
   sampai ada release entitlement terpisah.
 
-- Updated: 21 Agustus 2026 19:59 WIB
+- Updated: 21 Agustus 2026 22:58 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED`; current release
   `20260821124922-9bc208a`, exact release source
