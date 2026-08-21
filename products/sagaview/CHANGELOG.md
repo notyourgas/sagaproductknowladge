@@ -1,5 +1,21 @@
 # SagaView Changelog
 
+## 2026-08-21 - SagaTech V24 bio-ready sales surface
+
+- Klasifikasi: `CONFIRMED` untuk keputusan komersial dan production sales
+  surface; runtime SagaView tidak berubah.
+- `sagatech.site/saga-product/` menyatukan UI aktual SPECIAL 17, video 132,053
+  detik, viewer/PDF delapan halaman, trial 14 hari tanpa auto-charge, dan CTA
+  assisted.
+- Early adopter berlangganan 1 bulan mendapat total masa aktif 2 bulan; kuota
+  dikonfirmasi saat aktivasi. Tidak ada bundle price dan SagaView tetap dapat
+  dipilih sendiri.
+- Source SagaTech `124f55191b2288fc8f2365b83c5472199fa0a310`, production
+  `dpl_D1xLKDsFxrVxn3UC1BjP4ftz892x`; browser, video byte-range, PDF, viewer,
+  accessibility, canonical, sitemap, security header, dan alias lulus.
+- Studio/backend, pricing, entitlement, device/output, physical UAT, dan
+  `BUSINESS_READY` tidak berubah; fulfillment per studio harus dikonfirmasi.
+
 ## 2026-08-18 - S245 backend no-upload production activation
 
 - Klasifikasi: `CONFIRMED` production release.

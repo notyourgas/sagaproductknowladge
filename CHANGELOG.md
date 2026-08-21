@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-21 - SagaTech V24 Saga Product sales-surface sync
+
+- Informasi `CONFIRMED` berasal dari keputusan Andreas dan production release
+  SagaTech V24, source `124f55191b2288fc8f2365b83c5472199fa0a310`, deployment
+  `dpl_D1xLKDsFxrVxn3UC1BjP4ftz892x`.
+- Knowledge mencatat landing bio, UI aktual, video, viewer/PDF penawaran, trial
+  14 hari tanpa auto-charge, early adopter, dan batas fulfillment assisted.
+- Runtime SagaBook/SagaView, lifecycle DEC-029, pricing, entitlement, bundle
+  policy, physical UAT, serta business readiness tidak berubah.
+- Dokumen terdampak: product/dossier/changelog SagaBook dan SagaView,
+  portfolio/master, decisions, gaps, root changelog, serta sync status.
+
 ## 2026-08-20 - SagaBook S267 host-storage recovery sync
 
 - Informasi `CONFIRMED` dari exact source

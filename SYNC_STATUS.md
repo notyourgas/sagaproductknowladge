@@ -12,14 +12,29 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-20T21:04:00+07:00 |
-| Branch aktif | `codex/s267-sagabook-release-host-storage-recovery-knowledge` pada worktree exact baseline `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-21T11:25:00+07:00 |
+| Branch aktif | `main` pada clone bersih exact baseline `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `71ce741` |
-| Informasi terakhir disinkronkan | SagaBook S267 release-host storage recovery runbook, source provenance, validation, dan residual host NO_GO. |
+| Baseline sebelum pembaruan | `30243d06bd5fe13757a804928856baaff76552e9` |
+| Informasi terakhir disinkronkan | SagaTech V24 Saga Product bio funnel, trial/early adopter assisted, production provenance, dan batas entitlement kedua produk. |
 | Status sinkronisasi | `UP TO DATE` setelah validator, push, dan remote verification. |
-| Konflik | Tidak ada. Sinkronisasi dibangun dari exact `origin/main`; perubahan produk lain tetap utuh. |
-| Error | Host release masih `NO_GO` karena volume pipeline belum memenuhi floor existing; jangan memulai release baru. Production S265 tetap aktif. Fonnte masih residual dan `BUSINESS_READY=false`. |
+| Konflik | Clone canonical bersih memakai exact `origin/main`. Working copy lama tetap divergen dan tidak disentuh. Trial SagaBook DEC-029 tidak diganti oleh sales surface V24. |
+| Error | GAP-010 masih terbuka untuk runbook fulfillment assisted, quota register, dan receipt entitlement. Host SagaBook tetap `NO_GO`; Fonnte residual dan `BUSINESS_READY=false`. |
+
+## File yang berubah pada sinkronisasi ini (SagaTech V24 Saga Product funnel)
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/DOSSIER.md`
+- `products/sagaview/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `DECISIONS.md`
+- `GAPS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaBook S267 host-storage recovery)
 

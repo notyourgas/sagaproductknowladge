@@ -1,6 +1,16 @@
 # SagaView Product Knowledge
 
-Updated: 18 Agustus 2026
+Updated: 21 Agustus 2026
+
+SagaTech V24 berstatus `CONFIRMED / SALES_SURFACE_PRODUCTION_ACTIVATED` pada
+`https://sagatech.site/saga-product/`. Owner studio dapat melihat UI aktual
+SagaView termasuk editor SPECIAL 17, video 132,053 detik, viewer penawaran
+delapan halaman, PDF unduhan, dan CTA trial. Penawaran publik menyebut evaluasi
+14 hari tanpa auto-charge serta early adopter: berlangganan 1 bulan mendapat
+total masa aktif 2 bulan. Kuota dikonfirmasi saat aktivasi; produk tetap dapat
+dipilih satuan dan tidak ada bundle price. V24 tidak mengubah Studio/backend
+SagaView, entitlement, pricing, device limit, output, atau `BUSINESS_READY`;
+fulfillment manual per studio harus dikonfirmasi sebelum aktivasi.
 
 Backend SagaView S227 exact `a648c180310e197934ac84eed8519e51ae90f0eb`
 aktif di production sebagai release `20260818110257-a648c18`. Perubahan

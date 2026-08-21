@@ -7,6 +7,15 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- SagaTech V24 sales surface: `CONFIRMED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED` pada `https://sagatech.site/saga-product/`, production
+  deployment `dpl_D1xLKDsFxrVxn3UC1BjP4ftz892x`, runtime source
+  `124f55191b2288fc8f2365b83c5472199fa0a310`. Surface memuat UI aktual,
+  video, viewer/PDF penawaran, trial 14 hari tanpa auto-charge, dan early
+  adopter 1 bulan berlangganan menjadi total 2 bulan aktif. Ini sales promise
+  assisted, bukan perubahan runtime SagaBook; lifecycle DEC-029 tetap berlaku
+  sampai ada release entitlement terpisah.
+
 - Updated: 20 Agustus 2026 21:04 WIB
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED`; current release S265

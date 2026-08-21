@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 20 Agustus 2026 21:04 WIB
-Evidence status: S267 host-storage recovery runbook pushed; S265 production active; business readiness pending
+Updated: 21 Agustus 2026 11:25 WIB
+Evidence status: SagaTech V24 sales surface active; S267 host-storage recovery runbook pushed; S265 production active; business readiness pending
 
 ## Tujuan dokumen
 
@@ -15,6 +15,17 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- `CONFIRMED / SALES_SURFACE_PRODUCTION_ACTIVATED`: SagaTech V24 menambahkan
+  pintu mobile-first `https://sagatech.site/saga-product/` untuk owner Self
+  Photo Studio. Halaman memakai screenshot UI aktual SagaBook, video 120 detik,
+  viewer penawaran delapan halaman, PDF unduhan, dan CTA WhatsApp. Penawaran
+  publik menyebut evaluasi 14 hari tanpa auto-charge serta program early adopter:
+  setelah berlangganan 1 bulan, total masa aktif menjadi 2 bulan. Kuota
+  dikonfirmasi saat aktivasi; tidak ada bundle price. Release hanya mengubah
+  sales surface SagaTech, bukan runtime SagaBook, lifecycle trial kanonik
+  DEC-029, pricing, entitlement, billing, atau `BUSINESS_READY`. Fulfillment
+  manual per studio harus dikonfirmasi sebelum aktivasi.
 
 - S267 exact source `ad1285cf9d02fb700e2b952ba736698580e9e2a5`
   berstatus `CONFIRMED / PUSHED / LOCAL_VALIDATED /

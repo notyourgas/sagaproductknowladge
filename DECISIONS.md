@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-089 - Saga Product menjadi funnel bio dengan penawaran early adopter assisted
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-21 |
+| Topik | Funnel penjualan SagaBook/SagaView, trial, dan early adopter |
+| Keputusan | Aktifkan `sagatech.site/saga-product/` sebagai pintu mobile-first dari bio. SagaBook dan SagaView tetap dapat dipilih satuan; pengunjung dapat melihat UI aktual, video, penawaran, dan CTA trial. Penawaran menyebut trial 14 hari tanpa auto-charge. Early adopter yang berlangganan 1 bulan mendapat total masa aktif 2 bulan; kuota dikonfirmasi saat aktivasi. Tidak ada bundle price. Fulfillment dilakukan assisted per produk dan harus dikonfirmasi sebelum aktivasi. |
+| Alasan | Owner studio membutuhkan satu tautan singkat yang menjelaskan masalah sebelum dan setelah sesi tanpa harus memahami arsitektur produk terlebih dahulu. |
+| Alternatif yang dipertimbangkan | Mengirim PDF langsung pada pesan pembuka; menyatukan kedua produk sebagai bundle wajib; menaruh video/PDF pada Drive; menunda funnel sampai entitlement otomatis tersedia. |
+| Dampak | SagaTech menambah landing, video first-party, viewer/PDF, link bio ber-UTM, WhatsApp, dan analytics allowlist. Runtime, pricing, entitlement, billing, dan business readiness SagaBook/SagaView tidak berubah. Lifecycle SagaBook DEC-029 tetap kanonik sampai release entitlement terpisah; GAP-010 menutup runbook fulfillment. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; SagaTech source `124f55191b2288fc8f2365b83c5472199fa0a310`, production `dpl_D1xLKDsFxrVxn3UC1BjP4ftz892x` |
+| Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaView Product](products/sagaview/PRODUCT.md), [Gaps](GAPS.md), [Portfolio Changelog](changelog/PORTFOLIO_CHANGELOG.md) |
+
 ## DEC-084 - Rail SagaBook memakai satu ikon per modul bisnis
 
 | Field | Isi |

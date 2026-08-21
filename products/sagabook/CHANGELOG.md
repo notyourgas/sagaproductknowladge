@@ -1,5 +1,22 @@
 # SagaBook Changelog
 
+## 2026-08-21 - SagaTech V24 bio-ready sales surface
+
+- Klasifikasi: `CONFIRMED` untuk keputusan komersial dan production sales
+  surface; runtime SagaBook tidak berubah.
+- Before: bukti SagaBook tersebar pada halaman ekosistem, video, dan PDF.
+  After: `sagatech.site/saga-product/` menyatukan UI aktual, video 120 detik,
+  viewer/PDF delapan halaman, trial 14 hari tanpa auto-charge, dan CTA assisted.
+- Early adopter berlangganan 1 bulan mendapat total masa aktif 2 bulan; kuota
+  dikonfirmasi saat aktivasi. Tidak ada bundle price dan SagaBook tetap dapat
+  dipilih sendiri.
+- Source SagaTech `124f55191b2288fc8f2365b83c5472199fa0a310`, production
+  `dpl_D1xLKDsFxrVxn3UC1BjP4ftz892x`; browser, video byte-range, PDF, viewer,
+  accessibility, canonical, sitemap, security header, dan alias lulus.
+- Lifecycle SagaBook DEC-029, pricing, billing, entitlement, dan production
+  S265 tidak berubah; fulfillment per studio tetap assisted dan harus
+  dikonfirmasi sebelum aktivasi.
+
 ## 2026-08-20 - Release host storage recovery runbook S267
 
 - Exact source `ad1285cf9d02fb700e2b952ba736698580e9e2a5` sudah dipush.

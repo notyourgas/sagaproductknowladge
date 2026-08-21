@@ -1,5 +1,16 @@
 # SagaView Dossier
 
+## SagaTech V24 sales surface
+
+`CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` pada
+`https://sagatech.site/saga-product/`, production deployment
+`dpl_D1xLKDsFxrVxn3UC1BjP4ftz892x`, runtime source
+`124f55191b2288fc8f2365b83c5472199fa0a310`. Surface memuat UI aktual
+SagaView termasuk SPECIAL 17, video, viewer/PDF penawaran, trial 14 hari tanpa
+auto-charge, dan early adopter 1 bulan berlangganan menjadi total 2 bulan
+aktif. Ini sales promise assisted dan tidak mengubah Studio/backend,
+entitlement, pricing, device limit, output, atau gate physical UAT.
+
 ## S238 physical receipt single-read binding
 
 Studio exact `2fadbe9d54617307bfd8c84b4250bbbfa28caeca` menutup risiko time-of-check

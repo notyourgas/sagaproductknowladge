@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-21 - SagaTech V24 Saga Product bio funnel
+
+- Mobile-first `https://sagatech.site/saga-product/` aktif sebagai satu pintu
+  SagaBook dan SagaView dari bio, tanpa mengganti halaman produk rinci.
+- UI aktual, video fullscreen, viewer/PDF delapan halaman, trial 14 hari tanpa
+  auto-charge, early adopter, dan handoff WhatsApp tersedia per produk.
+- Source `124f55191b2288fc8f2365b83c5472199fa0a310`, production
+  `dpl_D1xLKDsFxrVxn3UC1BjP4ftz892x`. Tiga alias memiliki hash HTML identik;
+  browser, accessibility, range video, PDF, canonical, sitemap, dan security
+  header lulus.
+- Produk tetap dijual satuan; bundle price, runtime/entitlement kedua produk,
+  dan business readiness tidak berubah.
+
 ## 2026-08-20 - SagaBook S267 release host storage recovery
 
 - Exact source `ad1285cf9d02fb700e2b952ba736698580e9e2a5` menambahkan

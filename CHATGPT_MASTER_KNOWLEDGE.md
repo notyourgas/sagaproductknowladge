@@ -1,8 +1,23 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 20 Agustus 2026 21:04 WIB
+Evidence cut-off: 21 Agustus 2026 11:25 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
+
+SagaTech V24 berstatus `CONFIRMED / PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED`. `https://sagatech.site/saga-product/` menjadi pintu
+mobile-first dari bio menuju SagaBook dan SagaView dengan UI aktual, video,
+viewer/PDF penawaran, dan WhatsApp. Trial komersial disebut 14 hari tanpa
+auto-charge; early adopter yang berlangganan 1 bulan mendapat total masa aktif
+2 bulan, dengan kuota dikonfirmasi saat aktivasi. Produk tetap dapat dipilih
+satuan dan tidak ada bundle price. Source
+`124f55191b2288fc8f2365b83c5472199fa0a310`, production
+`dpl_D1xLKDsFxrVxn3UC1BjP4ftz892x`; public browser, video byte-range, PDF,
+viewer, accessibility, canonical, sitemap, alias, dan security header lulus.
+V24 tidak mengubah runtime, pricing, billing, entitlement, device/output,
+physical UAT, atau `BUSINESS_READY` kedua produk. Untuk SagaBook, lifecycle
+DEC-029 tetap kanonik sampai ada release entitlement terpisah; fulfillment
+program per studio bersifat assisted dan harus dikonfirmasi sebelum aktivasi.
 
 SagaBook S267 exact `ad1285cf9d02fb700e2b952ba736698580e9e2a5`
 berstatus `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Runbook
