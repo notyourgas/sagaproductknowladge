@@ -1,6 +1,21 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 22 Agustus 2026 04:29 WIB
+Evidence cut-off: 22 Agustus 2026 04:48 WIB
+
+Renderer halaman khusus `Cinematic Noir` exact source
+`f6f850df3796e653e5c7c69692ba06ced6befd63` telah `CONFIRMED / PUSHED /
+UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`. Coverage S272 mengikat sembilan renderer native,
+seluruh recipe, token semantic, title transparan, urutan total pembayaran,
+nama cabang di luar media, CTA contextual, responsive/no-overflow
+344/360/390/430/460, target 44 piksel, focus keyboard, safe area, dan guard
+anti-PNG-runtime. Regression mempertahankan preview revision/hash/token ACK,
+exact publish, seluruh token lima preset lama, state slot/conflict, voucher,
+review correction, payment recovery, serta clipboard fallback. Full PHP
+1.076/1.076 (12.507 assertion), focused backend 21/21 (390 assertion), browser
+Cinematic 4/4, editor/publish/parity 8/8, accessibility/recovery 19 skenario,
+TypeScript/build/design 26/0, dan audit npm/Composer/OSV nol lulus. Branch belum
+merge/deploy; production dan `BUSINESS_READY=false` tidak berubah.
 
 Template Booking text inspector S273 exact source
 `1a7f5fb80c422bf759c6092110d35c1606361cc3` telah `CONFIRMED / PUSHED /

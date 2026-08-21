@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 22 Agustus 2026 04:29 WIB
+Updated: 22 Agustus 2026 04:48 WIB
 Evidence status: S273 text inspector dan Cinematic Noir production-activated pada exact release terverifikasi
 
 ## Tujuan dokumen
@@ -13,6 +13,24 @@ belum pasti dicatat di [GAPS](../../GAPS.md#sagabook).
 
 Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
+
+## Kandidat tervalidasi (belum production)
+
+- Renderer halaman khusus `Cinematic Noir` exact source
+  `f6f850df3796e653e5c7c69692ba06ced6befd63` berstatus `CONFIRMED / PUSHED /
+  UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Sembilan langkah kini memakai presentasi native
+  tersendiri: lokasi tanpa nama overlay foto, paket editorial, skeleton dan
+  grid slot, contact sheet background, ledger add-on, form sheet, review
+  berikon, total sebelum metode pembayaran, serta booking card selesai.
+  Workflow, data, error recovery, clipboard/WhatsApp fallback, authoritative
+  preview ACK, dan exact publish tetap memakai kontrak universal. PNG ImageGen
+  hanya referensi dokumentasi dan dilindungi test agar tidak masuk runtime.
+  Full PHP 1.076/1.076 (12.507 assertion), browser Cinematic 4/4,
+  editor/publish/token parity 8/8, accessibility/recovery 19 skenario,
+  TypeScript, build, design audit 26/0, serta audit npm/Composer/OSV nol lulus.
+  Branch belum merge ke `main`, belum deploy, dan production tetap pada
+  renderer `fca0fe510f...` dalam release `20260821212120-1a7f5fb`.
 
 ## Status production terbaru
 

@@ -12,16 +12,27 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-22T04:33:00+07:00 |
-| Branch aktif | `codex/s264-sagaview-owner-pricing-production` dari worktree bersih exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-22T04:48:12+07:00 |
+| Branch aktif | `codex/s272-cinematic-noir-knowledge` dari worktree bersih exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `b1da8f761b8529939b825ea741e687c8df6722f5` |
-| Informasi terakhir disinkronkan | SagaView S264 Owner Pricing aktif pada backend release `20260821211648-51ceefc`; Studio tetap `20260821090659-645dddb`, rollback, backup/restore, smoke, service, journal, manifest, dan header keamanan terverifikasi. |
+| Baseline sebelum pembaruan | `efa4d9041d0ef1eabac62cde5a557a0f412dfd0a` |
+| Informasi terakhir disinkronkan | SagaBook Cinematic Noir dedicated renderer exact `f6f850df...` telah local-validated dan pushed; belum merge/deploy, production tetap pada `20260821212120-1a7f5fb`. |
 | Status sinkronisasi | `UP TO DATE` setelah validator dan fast-forward push. |
-| Konflik | Worktree SagaView terisolasi memakai exact `origin/main`; perubahan SagaBook terbaru dipertahankan dan tidak disentuh. Clone canonical lokal yang kotor/divergen tidak digunakan. |
-| Error | Tidak ada blocker release. Authenticated Owner UAT katalog nyata belum dilakukan; `BUSINESS_READY=false`. |
+| Konflik | Tidak ada. Worktree knowledge terisolasi di-fast-forward ke exact `origin/main` sebelum edit. |
+| Error | Tidak ada blocker sinkronisasi. Source kandidat belum merge/deploy dan `BUSINESS_READY=false`. |
 
-## File yang berubah pada sinkronisasi ini (SagaView S264 production activation)
+## File yang berubah pada sinkronisasi ini (SagaBook Cinematic Noir dedicated renderer)
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
+
+## File yang berubah pada sinkronisasi sebelumnya (SagaView S264 production activation)
 
 - `products/sagaview/PRODUCT.md`
 - `products/sagaview/CHANGELOG.md`

@@ -1,5 +1,28 @@
 # SagaBook Changelog
 
+## 2026-08-22 - Cinematic Noir dedicated renderer candidate
+
+- Klasifikasi: `CONFIRMED`; implementasi exact
+  `f6f850df3796e653e5c7c69692ba06ced6befd63` sudah pushed ke
+  `codex/s272-sagabook-cinematic-noir`.
+- Before: recipe Cinematic tersedia, tetapi banyak langkah masih jatuh ke
+  markup preset default. After: Lokasi sampai Selesai memiliki presentasi
+  native khusus yang mengikuti wireframe dan UI direction tanpa raster UI.
+- Header mempertahankan Back, bantuan, dan progres semantik; lokasi memisahkan
+  nama cabang dari foto; Bayar menaruh total sebelum metode; state loading,
+  kosong, konflik, error, review correction, payment retry, clipboard, dan
+  WhatsApp tetap operasional melalui logic universal.
+- Guard browser menolak import PNG dokumentasi. Viewport 344/360/390/430/460,
+  touch target 44 piksel, no-overflow, focus keyboard, safe area, reduced
+  motion, forced colors, dan token Global/Custom tercakup pengujian.
+- Gate lulus: full PHP 1.076/1.076 (12.507 assertion), focused backend 21/21
+  (390 assertion), Cinematic 4/4, editor/publish/parity 8/8,
+  accessibility/recovery 19 skenario, TypeScript, build, design 26/0, dan
+  audit npm/Composer/OSV nol.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; belum merge ke
+  `main`, production tetap pada `20260821212120-1a7f5fb`, dan
+  `BUSINESS_READY=false`.
+
 ## 2026-08-22 - Template Booking semantic text inspector S273 production
 
 - Klasifikasi: `CONFIRMED`; keputusan pemisahan warna dan inspector berasal

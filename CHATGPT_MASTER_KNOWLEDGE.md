@@ -1,8 +1,22 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 22 Agustus 2026 04:33 WIB
+Evidence cut-off: 22 Agustus 2026 04:48 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
+
+SagaBook `Cinematic Noir` dedicated renderer exact source
+`f6f850df3796e653e5c7c69692ba06ced6befd63` berstatus `CONFIRMED / PUSHED /
+UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`. Sembilan halaman storefront kini memakai layout
+native khusus dari pedoman visual, sementara PNG ImageGen tetap dokumentasi dan
+ditolak oleh runtime guard. Header/action/state bisnis universal, semantic
+Global/Custom tokens, authoritative preview ACK, exact publish, slot/payment/
+clipboard recovery, aksesibilitas, serta preset lama tetap dipertahankan.
+Full PHP 1.076/1.076 (12.507 assertion), browser Cinematic 4/4,
+editor/publish/parity 8/8, accessibility/recovery 19 skenario, build/type-check/
+design, dan dependency audit nol lulus. Branch belum merge atau deploy;
+production tetap pada renderer `fca0fe510f...` di release
+`20260821212120-1a7f5fb`, dan `BUSINESS_READY=false`.
 
 SagaBook Template Booking text inspector S273 exact source
 `1a7f5fb80c422bf759c6092110d35c1606361cc3` berstatus `CONFIRMED / PUSHED /

@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-22 - SagaBook Cinematic Noir dedicated renderer candidate
+
+- Exact source `f6f850df3796e653e5c7c69692ba06ced6befd63` sudah pushed pada
+  `codex/s272-sagabook-cinematic-noir`.
+- Sembilan langkah storefront memiliki layout native khusus sesuai pedoman
+  dark editorial; PNG ImageGen tetap menjadi referensi, bukan UI runtime.
+- Workflow universal, token Global/Custom, preview ACK, exact publish, state
+  recovery, aksesibilitas, dan preset lama tetap terjaga oleh backend 21/21,
+  browser Cinematic 4/4, editor/publish/parity 8/8, serta full PHP 1.076/1.076.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; belum merge/deploy,
+  production dan `BUSINESS_READY=false` tidak berubah.
+
 ## 2026-08-22 - SagaView S264 Owner Pricing production activation
 
 - Exact source `51ceefcbf47a825e6b2df147ab14cd4890fd2d25` aktif sebagai
