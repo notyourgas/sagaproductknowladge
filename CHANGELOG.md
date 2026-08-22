@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-22 - SagaBook Cinematic compact controls sync
+
+- Informasi `CONFIRMED` berasal dari keputusan Andreas dan exact source
+  `b033cdb3bce72f65c055e3b00dad9e4c2c1a5216` yang telah pushed.
+- Knowledge mencatat filter tanpa scrollbar visual, carousel disc 30 piksel di
+  dalam hit target 44 piksel, serta coverage keyboard/forced-colors/overflow.
+- Delivery `PUSHED / UIUX_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production/data tenant tidak berubah dan
+  `BUSINESS_READY=false`.
+- Dokumen terdampak: SagaBook product/dossier/changelog/coverage, portfolio,
+  master, root changelog, dan sync status.
+
 ## 2026-08-22 - SagaBook S274 production activation sync
 
 - Exact release source `77eda54273f3943da0f136245b90429a88a65978`

@@ -1,5 +1,20 @@
 # SagaBook Changelog
 
+## 2026-08-22 - Cinematic Noir compact filter dan carousel controls
+
+- Klasifikasi: `CONFIRMED`; exact source
+  `b033cdb3bce72f65c055e3b00dad9e4c2c1a5216` telah pushed pada branch
+  `codex/s275-sagabook-cinematic-carousel-controls`.
+- Filter paket tetap dapat digeser tanpa scrollbar visual. Hit area tombol
+  carousel tetap 44x44 piksel, sedangkan disc visual menjadi 30x30 dengan ikon
+  14 piksel.
+- Fokus keyboard, aria-label, forced-colors, no-overflow, dan preset lain tetap
+  aman. TypeScript, build, design 26/0, Cinematic 4/4, serta accessibility 3/3
+  lulus.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+  tetap `77eda542...` / `20260822042930-77eda54`, data tenant tidak dimutasi,
+  dan `BUSINESS_READY=false`.
+
 ## 2026-08-22 - Akurasi warna semantic dan lapisan cabang S274 production
 
 - Feature implementation `5cf6d4bd3f09a63cc93f9d177092453bca793f76`

@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 22 Agustus 2026 11:37 WIB
-Evidence status: perbaikan akurasi warna semantic dan lapisan nama cabang S274 production-activated pada exact release terverifikasi
+Updated: 22 Agustus 2026 13:29 WIB
+Evidence status: kontrol filter dan carousel Cinematic Noir local-validated; production tetap S274
 
 ## Tujuan dokumen
 
@@ -13,6 +13,21 @@ belum pasti dicatat di [GAPS](../../GAPS.md#sagabook).
 
 Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
+
+## Kandidat tervalidasi (belum production)
+
+- Perbaikan kontrol storefront `Cinematic Noir` exact source
+  `b033cdb3bce72f65c055e3b00dad9e4c2c1a5216` berstatus `CONFIRMED / PUSHED /
+  UIUX_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Scrollbar native pada filter paket disembunyikan
+  tanpa menghilangkan swipe/scroll. Tombol carousel mempertahankan hit area
+  44x44 piksel, sedangkan lingkaran visual dipadatkan menjadi 30x30 piksel dan
+  ikon 14 piksel; fokus keyboard dan forced-colors tetap terbaca. Gate lulus:
+  TypeScript, production build, design audit 26/0, browser Cinematic 4/4, serta
+  regresi accessibility/compact/forced-colors 3/3. Tidak ada perubahan API,
+  database, permission, pricing, atau profile tenant. Production tetap pada
+  `77eda54273f3943da0f136245b90429a88a65978` / `20260822042930-77eda54` dan
+  `BUSINESS_READY=false`.
 
 ## Status production terbaru
 

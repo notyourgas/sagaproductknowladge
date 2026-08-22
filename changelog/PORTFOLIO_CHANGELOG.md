@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-08-22 - SagaBook Cinematic Noir compact carousel controls
+
+- Exact source `b033cdb3bce72f65c055e3b00dad9e4c2c1a5216` telah pushed.
+- Filter paket tidak lagi menampilkan scrollbar native tetapi tetap dapat
+  digeser; navigasi foto memakai disc 30 piksel di dalam hit area 44 piksel.
+- TypeScript, build, design 26/0, Cinematic 4/4, serta accessibility 3/3 lulus.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production dan profile
+  tenant tidak berubah, `BUSINESS_READY=false`.
+
 ## 2026-08-22 - SagaBook S274 production activation
 
 - Akurasi warna template dan overlay nama cabang implementation
