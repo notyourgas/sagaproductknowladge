@@ -6,8 +6,12 @@
 - Filter paket tidak lagi menampilkan scrollbar native tetapi tetap dapat
   digeser; navigasi foto memakai disc 30 piksel di dalam hit area 44 piksel.
 - TypeScript, build, design 26/0, Cinematic 4/4, serta accessibility 3/3 lulus.
-- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production dan profile
-  tenant tidak berubah, `BUSINESS_READY=false`.
+- Release `20260822064328-b033cdb` aktif dengan rollback
+  `20260821215633-f6f850d`; fresh encrypted backup/restore exact commit,
+  readiness 100/100, verifier 17/17, dan public/security 3/3 lulus tanpa
+  exception.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; profile tenant tidak
+  dimutasi dan `BUSINESS_READY=false`.
 
 ## 2026-08-22 - SagaBook S274 production activation
 

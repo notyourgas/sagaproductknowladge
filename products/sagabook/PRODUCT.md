@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 22 Agustus 2026 13:29 WIB
-Evidence status: kontrol filter dan carousel Cinematic Noir local-validated; production tetap S274
+Updated: 22 Agustus 2026 13:52 WIB
+Evidence status: kontrol filter dan carousel Cinematic Noir production-activated pada exact release terverifikasi
 
 ## Tujuan dokumen
 
@@ -14,22 +14,24 @@ belum pasti dicatat di [GAPS](../../GAPS.md#sagabook).
 Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
-## Kandidat tervalidasi (belum production)
+## Status production terbaru
 
 - Perbaikan kontrol storefront `Cinematic Noir` exact source
   `b033cdb3bce72f65c055e3b00dad9e4c2c1a5216` berstatus `CONFIRMED / PUSHED /
-  UIUX_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED`. Scrollbar native pada filter paket disembunyikan
+  UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Scrollbar native pada filter paket disembunyikan
   tanpa menghilangkan swipe/scroll. Tombol carousel mempertahankan hit area
   44x44 piksel, sedangkan lingkaran visual dipadatkan menjadi 30x30 piksel dan
   ikon 14 piksel; fokus keyboard dan forced-colors tetap terbaca. Gate lulus:
   TypeScript, production build, design audit 26/0, browser Cinematic 4/4, serta
   regresi accessibility/compact/forced-colors 3/3. Tidak ada perubahan API,
-  database, permission, pricing, atau profile tenant. Production tetap pada
-  `77eda54273f3943da0f136245b90429a88a65978` / `20260822042930-77eda54` dan
-  `BUSINESS_READY=false`.
-
-## Status production terbaru
+  database, permission, pricing, atau profile tenant. Exact source aktif sebagai
+  release `20260822064328-b033cdb` dengan rollback
+  `20260821215633-f6f850d`; fresh encrypted backup run `20260822T064216Z`,
+  checksum, offsite round-trip, restore disposable, source backup lokal+VPS,
+  atomic activation, readiness 100/100, verifier independen 17/17, public smoke
+  3/3, dan security header 3/3 lulus tanpa exception. Profile tenant tidak
+  dimutasi dan `BUSINESS_READY=false`.
 
 - Perbaikan S274 exact source
   `5cf6d4bd3f09a63cc93f9d177092453bca793f76`, tercakup pada exact release

@@ -1,14 +1,18 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 22 Agustus 2026 13:29 WIB
+Evidence cut-off: 22 Agustus 2026 13:52 WIB
 
 Kontrol filter/carousel `Cinematic Noir` exact source
 `b033cdb3bce72f65c055e3b00dad9e4c2c1a5216` telah `CONFIRMED / PUSHED /
-UIUX_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
 Coverage membuktikan filter tetap scrollable tanpa scrollbar visual, hit target
 carousel 44x44, disc 30x30, ikon 14, fokus keyboard, forced-colors, dan
 no-overflow. TypeScript/build/design 26/0, Cinematic 4/4, dan accessibility 3/3
-lulus. Production/data/API/database tidak berubah.
+lulus. Release `20260822064328-b033cdb` aktif dengan rollback
+`20260821215633-f6f850d`; backup/restore exact commit, verifier 17/17, readiness
+100/100, serta public/security 3/3 lulus tanpa exception. Data tenant/API/
+database tidak berubah dan `BUSINESS_READY=false`.
 
 Perbaikan akurasi warna semantic dan lapisan nama cabang S274 implementation
 `5cf6d4bd3f09a63cc93f9d177092453bca793f76` pada exact release source

@@ -6,9 +6,13 @@
   `b033cdb3bce72f65c055e3b00dad9e4c2c1a5216` yang telah pushed.
 - Knowledge mencatat filter tanpa scrollbar visual, carousel disc 30 piksel di
   dalam hit target 44 piksel, serta coverage keyboard/forced-colors/overflow.
-- Delivery `PUSHED / UIUX_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED`; production/data tenant tidak berubah dan
-  `BUSINESS_READY=false`.
+- Exact source aktif sebagai release `20260822064328-b033cdb` dengan rollback
+  `20260821215633-f6f850d`; backup/restore exact commit, source backup,
+  readiness 100/100, verifier 17/17, dan public/security 3/3 lulus tanpa
+  exception.
+- Delivery `PUSHED / UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+  LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; data tenant
+  tidak berubah dan `BUSINESS_READY=false`.
 - Dokumen terdampak: SagaBook product/dossier/changelog/coverage, portfolio,
   master, root changelog, dan sync status.
 

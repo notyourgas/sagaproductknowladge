@@ -9,13 +9,17 @@ dalam satu dokumen public-safe.
 
 - Perbaikan kontrol storefront `Cinematic Noir` exact source
   `b033cdb3bce72f65c055e3b00dad9e4c2c1a5216`: `CONFIRMED / PUSHED /
-  UIUX_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED`. Filter paket tetap horizontal-scrollable tetapi
+  UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Filter paket tetap horizontal-scrollable tetapi
   tidak menampilkan scrollbar native. Navigasi foto memakai hit area 44x44
   piksel dengan disc visual 30x30 dan ikon 14 piksel, lengkap dengan
   aria-label, fokus keyboard, forced-colors, dan no-overflow. TypeScript,
-  build, design 26/0, Cinematic 4/4, serta accessibility 3/3 lulus. Production,
-  data tenant, API, dan database tidak berubah.
+  build, design 26/0, Cinematic 4/4, serta accessibility 3/3 lulus. Release
+  `20260822064328-b033cdb` aktif dengan rollback
+  `20260821215633-f6f850d`; encrypted backup/restore, source backup lokal+VPS,
+  readiness 100/100, verifier 17/17, serta public/security 3/3 lulus tanpa
+  exception. Data tenant, API, dan database tidak berubah;
+  `BUSINESS_READY=false`.
 
 - Perbaikan akurasi warna semantic dan lapisan nama cabang S274 implementation
   `5cf6d4bd3f09a63cc93f9d177092453bca793f76`, tercakup pada release source

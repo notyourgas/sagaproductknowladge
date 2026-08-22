@@ -12,14 +12,14 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-22T13:29:19+07:00 |
+| Waktu pembaruan terakhir | 2026-08-22T13:52:00+07:00 |
 | Branch aktif | `codex/s275-cinematic-controls-knowledge` dari worktree bersih exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `fc2a563c80f23c9e74b4d8ec77a4edb98a335a2e` |
-| Informasi terakhir disinkronkan | SagaBook Cinematic compact controls exact `b033cdb3...` local-validated dan pushed; belum deploy, production tetap `77eda542...` / `20260822042930-77eda54`. |
+| Baseline sebelum pembaruan | `9d68b8c1bd682fb1b6495c8fa7bb75a279308db2` |
+| Informasi terakhir disinkronkan | SagaBook Cinematic compact controls exact `b033cdb3...` aktif sebagai `20260822064328-b033cdb`; rollback, backup/restore, readiness 100/100, verifier 17/17, dan public/security 3/3 terverifikasi. |
 | Status sinkronisasi | `UP TO DATE` setelah validator dan fast-forward push. |
 | Konflik | Tidak ada. Worktree knowledge terisolasi di-fast-forward ke exact `origin/main` sebelum edit. |
-| Error | Tidak ada blocker sinkronisasi. Source kandidat belum merge/deploy; published tenant profile tidak dimutasi dan `BUSINESS_READY=false`. |
+| Error | Tidak ada blocker sinkronisasi atau release exception. Published tenant profile tidak dimutasi dan `BUSINESS_READY=false`. |
 
 ## File yang berubah pada sinkronisasi ini (SagaBook Cinematic compact controls)
 

@@ -11,9 +11,14 @@
 - Fokus keyboard, aria-label, forced-colors, no-overflow, dan preset lain tetap
   aman. TypeScript, build, design 26/0, Cinematic 4/4, serta accessibility 3/3
   lulus.
-- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
-  tetap `77eda542...` / `20260822042930-77eda54`, data tenant tidak dimutasi,
-  dan `BUSINESS_READY=false`.
+- Exact source aktif sebagai release `20260822064328-b033cdb` dengan rollback
+  `20260821215633-f6f850d`. Backup terenkripsi baru `20260822T064216Z`,
+  checksum, offsite round-trip, restore disposable, source backup lokal+VPS,
+  atomic activation, readiness 100/100, verifier 17/17, public smoke 3/3, dan
+  security header 3/3 lulus tanpa release exception.
+- Status `PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`; 0 migration pending, service aktif, maintenance off,
+  data tenant tidak dimutasi, dan `BUSINESS_READY=false`.
 
 ## 2026-08-22 - Akurasi warna semantic dan lapisan cabang S274 production
 

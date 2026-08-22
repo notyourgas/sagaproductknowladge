@@ -1,18 +1,21 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 22 Agustus 2026 13:29 WIB
+Evidence cut-off: 22 Agustus 2026 13:52 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
 SagaBook `Cinematic Noir` compact filter/carousel exact source
 `b033cdb3bce72f65c055e3b00dad9e4c2c1a5216` berstatus `CONFIRMED / PUSHED /
-UIUX_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
 Filter paket tetap bisa di-swipe/scroll tanpa scrollbar native. Tombol foto
 mempertahankan hit area 44x44 piksel, dengan disc visual 30x30 dan ikon 14
 piksel; fokus keyboard, forced-colors, dan no-overflow tetap aman. TypeScript,
-build, design 26/0, Cinematic 4/4, dan accessibility 3/3 lulus. Production tetap
-`77eda542...` / `20260822042930-77eda54`; data tenant tidak berubah dan
-`BUSINESS_READY=false`.
+build, design 26/0, Cinematic 4/4, dan accessibility 3/3 lulus. Release
+`20260822064328-b033cdb` aktif dengan rollback `20260821215633-f6f850d`;
+fresh encrypted backup/restore, source backup lokal+VPS, atomic activation,
+readiness 100/100, verifier 17/17, serta public/security 3/3 lulus tanpa
+exception. Data tenant tidak berubah dan `BUSINESS_READY=false`.
 
 SagaBook S274 akurasi warna semantic dan lapisan nama cabang implementation
 `5cf6d4bd3f09a63cc93f9d177092453bca793f76`, tercakup pada exact release
