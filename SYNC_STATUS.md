@@ -14,10 +14,10 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 |---|---|
 | Waktu pembaruan terakhir | 2026-08-22T18:36:00+07:00 |
 | Branch aktif | `codex/s268-sagaview-frame-export-knowledge` dari worktree terisolasi exact `origin/main` |
-| Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
+| Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | `7f48d645cb9144556c6e4a99437adf804987d5f3` |
 | Informasi terakhir disinkronkan | SagaView S268 exact backend/Owner `298336da...` dan Studio `dbaa247c...`: frame preview recovery, auto slot detection, dan safe export repair local-validated; production tetap pada exact pair aktif sebelumnya. |
-| Status sinkronisasi | `PENDING VALIDATION/PUSH` sampai validator dan push branch selesai. |
+| Status sinkronisasi | `VALIDATED / PUSHED` pada branch knowledge terisolasi; integrasi ke `main` tetap proses terpisah. |
 | Konflik | Tidak ada. Clone knowledge terisolasi dibuat dari exact `origin/main`; checkout lokal divergen tidak disentuh. |
 | Error | Product deployment masih diblokir receipt physical UAT yang belum mengikat exact pair S268; ini bukan blocker sinkronisasi knowledge. `BUSINESS_READY=false`. |
 
