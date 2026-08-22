@@ -8,7 +8,7 @@ diubah menjadi klaim publik sebelum ditutup dengan bukti atau keputusan owner.
 
 ## Konteks
 
-Daftar ini berlaku pada evidence cut-off 22 Agustus 2026 18:36 WIB dan harus diperbarui
+Daftar ini berlaku pada evidence cut-off 22 Agustus 2026 23:34 WIB dan harus diperbarui
 ketika keputusan atau release baru menutup gap.
 
 ## Cara memakai
@@ -22,13 +22,13 @@ ketika keputusan atau release baru menutup gap.
 
 ## Prioritas tinggi
 
-SagaView S268 `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: source exact
-backend/Owner `298336da...` dan Studio `dbaa247c...` serta artifact immutable
-sudah tersedia, tetapi receipt physical UAT terakhir mengikat pasangan commit
-sebelumnya. Karena perubahan menyentuh export, kandidat tidak boleh memakai
-receipt lama atau bypass. Tutup gap dengan UAT fisik Windows pada exact pair
-S268: preview/re-upload frame, auto-detection, repair safety bleed, export PNG,
-serta print portrait dan landscape; setelah itu jalankan release gate penuh.
+SagaView S268 `CLOSED / PRODUCTION_ACTIVATED`: source exact backend/Owner
+`298336da...` dan Studio `dbaa247c...` lulus matriks UAT 14 gate, termasuk
+penerimaan operator setelah printer diuji di studio. Backend aktif sebagai
+`20260822112703-298336d` dan Studio sebagai `20260822162437-dbaa247`; backup,
+restore, activation atomic, provenance, smoke, service/journal, dan rollback
+lulus. Residual bukan blocker release: acceptance authenticated pada workspace
+nyata dan Founding Studio Pilot tetap diperlukan sebelum `BUSINESS_READY`.
 
 SagaView physical UAT yang sebelumnya tertahan storage dan printer sudah
 `CLOSED` pada pasangan exact backend

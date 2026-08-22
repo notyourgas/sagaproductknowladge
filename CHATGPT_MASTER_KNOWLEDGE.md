@@ -1,21 +1,24 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 22 Agustus 2026 18:36 WIB
+Evidence cut-off: 22 Agustus 2026 23:34 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
 SagaView S268 frame preview dan export recovery exact backend/Owner
 `298336da09b735638c4ffea9b7e8830b1283452e` serta Studio
-`dbaa247c035c5b15d80f490526a13a4ad5848a4a` berstatus `CONFIRMED /
-COMMITTED_LOCAL / PUSHED / LOCAL_VALIDATED /
-IMPLEMENTED_NOT_DEPLOYED`. Owner mempertahankan metadata/slot ketika preview
+`dbaa247c035c5b15d80f490526a13a4ad5848a4a` berstatus `CONFIRMED / PUSHED /
+LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Owner
+mempertahankan metadata/slot ketika preview
 lama gagal, memverifikasi size/SHA-256 dan melakukan atomic self-heal bila byte
 sah tersedia; file baru langsung menjalankan deteksi slot. Studio dapat
 memperbaiki safety bleed yang dapat dideteksi secara lokal, memvalidasi ulang,
 dan melanjutkan export. Ini bukan bypass: mismatch/undetectable tetap ditolak.
 No-upload, consent, estimate-only, tenant authority, dan payment off-app tidak
-berubah. Production tetap backend `51ceefcb...` dan Studio `645dddb...` karena
-physical UAT export/print Windows belum mengikat exact pair S268.
+berubah. Backend aktif sebagai `20260822112703-298336d`; Studio aktif sebagai
+`20260822162437-dbaa247`. UAT exact-pair 14 gate termasuk penerimaan print
+operator, backup/restore, atomic activation, provenance, smoke, security header,
+service/journal, dan rollback lulus. `BUSINESS_READY=false` sampai acceptance
+authenticated dan pilot operasional.
 
 SagaBook closing operasional S276 exact source
 `7e28a8d6ddb2c114e4cf02aa35e329511cf2c452` berstatus `CONFIRMED / PUSHED /

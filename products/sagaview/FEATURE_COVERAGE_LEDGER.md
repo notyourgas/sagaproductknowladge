@@ -1,41 +1,41 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 22 Agustus 2026 18:36 WIB
+Evidence cut-off: 22 Agustus 2026 23:34 WIB
 
 S268 frame preview/export recovery: backend/Owner exact
 `298336da09b735638c4ffea9b7e8830b1283452e` dan Studio exact
 `dbaa247c035c5b15d80f490526a13a4ad5848a4a` berstatus
-`COMMITTED_LOCAL / PUSHED / LOCAL_VALIDATED /
-IMPLEMENTED_NOT_DEPLOYED`. Preview lama yang hilang/korup kini dapat dipulihkan
+`PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED`. Preview lama yang hilang/korup kini dapat dipulihkan
 secara atomic dari byte frame sah dengan verifikasi ukuran/SHA-256; metadata
 dan slot tetap aman saat retry, dan file baru langsung menjalankan deteksi
 slot. Safety bleed yang dapat dideteksi diperbaiki lokal lalu divalidasi ulang
 sebelum export; mismatch/undetectable tetap diblokir. Backend 43/475, release
 contract 11/219, Owner browser 32/32, Studio 230 unit dan full E2E 147 pass/3
-controlled skip, build/budget, serta audit dependency lulus. No-upload,
-estimate-only, tenant authority, dan consent tetap terjaga. Coverage automation
-lulus; physical UAT Windows untuk export/print exact-pair S268 belum tersedia,
-sehingga production belum berubah dan release gate belum lulus.
+controlled skip, build/budget, serta audit dependency lulus. UAT exact-pair 14
+gate termasuk penerimaan print operator lulus. No-upload, estimate-only, tenant
+authority, dan consent tetap terjaga. Backend aktif sebagai
+`20260822112703-298336d`; Studio aktif sebagai `20260822162437-dbaa247`.
 
 Release cumulative terbaru: backend exact
-`51ceefcbf47a825e6b2df147ab14cd4890fd2d25` aktif sebagai
-`20260821211648-51ceefc` dengan rollback langsung backend
-`16fa73bf4fca8251f074e63bae8141f7af333b51` /
-`20260821151535-16fa73b`; Studio exact
-`645dddb90dc55d36288d4b4cd96b6acd73c009e8` aktif sebagai
+`298336da09b735638c4ffea9b7e8830b1283452e` aktif sebagai
+`20260822112703-298336d` dengan rollback langsung
+`20260821211648-51ceefc`; Studio exact
+`dbaa247c035c5b15d80f490526a13a4ad5848a4a` aktif sebagai
+`20260822162437-dbaa247` dengan rollback langsung
 `20260821090659-645dddb`. Incident login 500 akibat build manifest yang hilang
 sudah dipulihkan; manifest dan tiga entry Vite wajib sekarang menjadi gate
 fail-closed pada artifact dan deployment. Login publik/admin lulus 10/10
 request dan visual production 390x844/1440x900 tanpa overflow atau runtime
 error. Support Hub tetap terbukti estimate-only, pembayaran
 off-app, serta text-only/no-upload tanpa provider/callback/payment status.
-Physical UAT pasangan Studio/backend kumulatif 14 gate lulus tanpa blocker.
+Physical UAT pasangan Studio/backend exact 14 gate lulus tanpa blocker.
 Repair login tetap aktif kumulatif. Owner Pricing S262 lulus SagaView 146/146
 dengan 1.324 assertion, focused API 41/41 dengan 170 assertion, Playwright
 desktop/mobile 4/4, build 5.097 modul, audit dependency nol, artifact dua
 lokasi, encrypted backup/offsite/restore disposable 149 tabel, atomic
 activation, health/provenance, service/journal, public smoke, dan rollback
-lulus. Status
+lulus. Fresh backup/restore terbaru memverifikasi 146/155/149 tabel. Status
 `PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; `BUSINESS_READY` belum.
 
 S262 Owner Pricing active-lineage integration: exact source

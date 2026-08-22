@@ -1,9 +1,8 @@
 # SagaView Changelog
 
-## 2026-08-22 - S268 frame preview recovery dan safe export repair
+## 2026-08-22 - S268 frame preview dan safe export recovery production
 
-- Klasifikasi: `CONFIRMED`; implementasi dan validasi lokal, production tidak
-  diubah.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
 - Before: Owner dapat kehilangan preview frame lama dan hanya diarahkan unggah
   ulang; Studio memblokir export saat safety bleed slot tidak aman tanpa jalur
   pemulihan yang langsung melanjutkan export.
@@ -18,14 +17,18 @@
   perangkat; tidak ada migration, payment/provider, pricing, atau mutasi data
   tenant.
 - Evidence: backend 43/43 dengan 475 assertion; release contract 11/11 dengan
-  219 assertion; Owner Playwright 32/32; Studio check 230 unit, full E2E 147
-  pass/3 controlled skip, build/budget, dan audit dependency nol yang tersedia.
-  Archive dan git bundle exact commit tersedia pada dua salinan ber-hash sama.
-- Delivery: `COMMITTED_LOCAL / PUSHED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED`. Production tetap backend `51ceefcb...` /
-  `20260821211648-51ceefc` dan Studio `645dddb...` /
-  `20260821090659-645dddb`; physical UAT exact-pair export/print wajib
-  diperbarui sebelum deploy.
+  219 assertion; Owner Playwright 32/32; Studio 230 unit dan full E2E 147
+  pass/3 controlled skip; UAT 14 gate termasuk penerimaan print operator;
+  build/budget dan audit dependency lulus. Fresh encrypted backup/offsite dan
+  restore disposable 146/155/149 tabel lulus; artifact exact commit tersedia
+  pada dua salinan ber-hash sama.
+- Delivery: backend exact `298336da...` aktif sebagai
+  `20260822112703-298336d` dan Studio exact `dbaa247c...` aktif sebagai
+  `20260822162437-dbaa247`. Rollback langsung adalah
+  `20260821211648-51ceefc` dan `20260821090659-645dddb`. Provenance, atomic
+  switch, lima route publik dan API health, security header, tiga service,
+  journal, dan rollback lulus. Status `PUSHED / LOCAL_VALIDATED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; `BUSINESS_READY=false`.
 
 ## 2026-08-22 - S264 Owner Pricing production activation
 

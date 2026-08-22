@@ -1,9 +1,9 @@
 # SagaView Dossier
 
-## 2026-08-22 - S268 frame recovery dan export safety repair candidate
+## 2026-08-22 - S268 frame recovery dan export safety repair production
 
-`CONFIRMED / COMMITTED_LOCAL / PUSHED / LOCAL_VALIDATED /
-IMPLEMENTED_NOT_DEPLOYED`. Backend/Owner exact
+`CONFIRMED / PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED`. Backend/Owner exact
 `298336da09b735638c4ffea9b7e8830b1283452e`; Studio exact
 `dbaa247c035c5b15d80f490526a13a4ad5848a4a`.
 
@@ -21,12 +21,15 @@ operasi frame/foto/output customer tetap local-first dan no-upload.
 
 Evidence: backend 43/43 (475 assertion), release contract 11/11 (219), Owner
 browser 32/32, Studio check 230 unit, full E2E 147 pass/3 controlled skip,
-build/budget, dan audit dependency yang tersedia. Artifact exact commit dan git
-bundle memiliki salinan kedua ber-hash sama. Production tetap backend
-`51ceefcb...` / `20260821211648-51ceefc` dan Studio `645dddb...` /
-`20260821090659-645dddb`. Receipt physical UAT sebelumnya tidak mengikat exact
-pair S268; export/print portrait-landscape Windows harus diuji ulang sebelum
-deploy. `BUSINESS_READY` tidak diklaim.
+build/budget, dan audit dependency lulus. UAT exact-pair 14 gate lulus; dua gate
+print ditutup oleh penerimaan operator setelah printer diuji di studio. Artifact
+exact commit dan git bundle memiliki salinan kedua ber-hash sama. Backend aktif
+sebagai `20260822112703-298336d` dan Studio aktif sebagai
+`20260822162437-dbaa247`; rollback langsung masing-masing
+`20260821211648-51ceefc` dan `20260821090659-645dddb`. Fresh encrypted
+backup/offsite/restore disposable 146/155/149 tabel, atomic activation,
+provenance, public smoke, security header, service/journal, dan rollback lulus.
+`BUSINESS_READY=false` sampai acceptance authenticated dan pilot operasional.
 
 ## 2026-08-21 - Support contract dan Studio cumulative production activation
 

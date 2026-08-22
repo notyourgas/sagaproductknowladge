@@ -1,18 +1,20 @@
 # Saga Product Knowledge Changelog
 
-## 2026-08-22 - SagaView S268 frame/export recovery sync
+## 2026-08-22 - SagaView S268 frame/export production sync
 
 - Knowledge mencatat backend/Owner exact `298336da...` dan Studio exact
-  `dbaa247c...` sebagai kandidat local-validated untuk recovery preview frame,
-  deteksi slot otomatis, dan safe export repair.
+  `dbaa247c...` sebagai release production recovery preview frame, deteksi slot
+  otomatis, dan safe export repair.
 - Recovery menjaga metadata/slot dan memverifikasi integritas asset; export
   hanya dilanjutkan setelah safety bleed diperbaiki lokal dan lolos validasi
   ulang. Mismatch/undetectable tetap fail-closed.
-- Production tetap backend `51ceefcb...` dan Studio `645dddb...`; tidak ada
-  migration, payment/provider, pricing, atau upload foto/path/output customer.
-- Delivery `COMMITTED_LOCAL / PUSHED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED`; exact-pair physical UAT export/print Windows
-  masih menjadi gate deployment.
+- Backend aktif sebagai `20260822112703-298336d`; Studio aktif sebagai
+  `20260822162437-dbaa247`. Tidak ada migration, payment/provider, pricing,
+  atau upload foto/path/output customer.
+- UAT exact-pair 14 gate termasuk penerimaan print operator, backup/restore,
+  atomic activation, provenance, public smoke, security header,
+  service/journal, dan rollback lulus. Delivery `PUSHED / LOCAL_VALIDATED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; `BUSINESS_READY=false`.
 - Dokumen terdampak: SagaView product/dossier/changelog/coverage, gaps,
   portfolio, master, root changelog, dan sync status.
 

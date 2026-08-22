@@ -1,6 +1,6 @@
 # Portfolio Changelog
 
-## 2026-08-22 - SagaView frame preview dan export recovery candidate
+## 2026-08-22 - SagaView frame preview dan export recovery production
 
 - Backend/Owner exact `298336da...` memulihkan asset preview secara atomic
   setelah integritas ukuran/SHA-256 terbukti, mempertahankan draft saat retry,
@@ -10,8 +10,12 @@
   diblokir.
 - Backend 43/43, release contract 11/11, Owner browser 32/32, Studio 230 unit
   dan E2E 147 pass/3 skip, build/budget, serta audit dependency lulus.
-- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PUSHED`.
-  Production tidak berubah; UAT fisik exact-pair Windows masih wajib.
+- UAT exact-pair 14 gate termasuk penerimaan print operator, backup/restore,
+  activation atomic, provenance, smoke, security header, service/journal, dan
+  rollback lulus.
+- Status `PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`: backend `20260822112703-298336d` dan Studio
+  `20260822162437-dbaa247`. `BUSINESS_READY=false`.
 
 ## 2026-08-22 - SagaBook closing operasional S276 production
 

@@ -1,49 +1,36 @@
 # SagaView Product Knowledge
 
-Updated: 22 Agustus 2026 18:36 WIB
+Updated: 22 Agustus 2026 23:34 WIB
 
-Kandidat S268 memperbaiki dua jalur operator tanpa mengubah production.
-Backend/Owner exact `298336da09b735638c4ffea9b7e8830b1283452e`
-memulihkan asset preview frame yang hilang atau korup secara atomic saat byte
-frame yang sah tersedia, memverifikasi ukuran dan SHA-256, mempertahankan
+SagaView S268 berstatus `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Backend/Owner exact
+`298336da09b735638c4ffea9b7e8830b1283452e` aktif sebagai release
+`20260822112703-298336d`; Studio exact
+`dbaa247c035c5b15d80f490526a13a4ad5848a4a` aktif sebagai release
+`20260822162437-dbaa247`. Rollback langsung masing-masing adalah
+`20260821211648-51ceefc` dan `20260821090659-645dddb`.
+
+Owner memulihkan asset preview frame yang hilang atau korup secara atomic saat
+byte frame sah tersedia, memverifikasi ukuran dan SHA-256, mempertahankan
 metadata/slot saat retry, serta menjalankan deteksi slot otomatis setelah file
-frame baru dipilih. Studio exact
-`dbaa247c035c5b15d80f490526a13a4ad5848a4a` menyediakan aksi
-`Perbaiki otomatis & export` khusus safety bleed yang dapat dideteksi; slot
-diperbaiki lokal dalam sesi, divalidasi ulang, lalu export dilanjutkan. Jalur
-ini bukan bypass: mismatch dan frame yang tidak dapat dideteksi tetap ditolak.
-Kandidat lulus backend 43 test/475 assertion, release contract 11/219,
-Owner browser 32/32, Studio check 230 unit dan full browser 147 pass/3 skip,
-build, budget, serta dependency audit yang tersedia. Status
-`COMMITTED_LOCAL / PUSHED / LOCAL_VALIDATED /
-IMPLEMENTED_NOT_DEPLOYED`; production tetap backend `51ceefcb...` dan Studio
-`645dddb...`. Exact-pair physical UAT export/print Windows harus diperbarui
-untuk kedua commit S268 sebelum deployment.
+frame baru dipilih. Studio menyediakan aksi `Perbaiki otomatis & export` khusus
+safety bleed yang dapat dideteksi; slot diperbaiki lokal dalam sesi, divalidasi
+ulang, lalu export dilanjutkan. Jalur ini bukan bypass: mismatch dan frame yang
+tidak dapat dideteksi tetap ditolak.
 
-Backend dan Studio SagaView terbaru berstatus `CONFIRMED / PUSHED /
-LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Backend exact
-`51ceefcbf47a825e6b2df147ab14cd4890fd2d25` aktif sebagai release
-`20260821211648-51ceefc`; Studio exact
-`645dddb90dc55d36288d4b4cd96b6acd73c009e8` aktif sebagai release
-`20260821090659-645dddb`. Release backend kumulatif mempertahankan perbaikan
-login 500 dan mengaktifkan progressive disclosure Owner Pricing: ringkasan
-kategori/frame tetap terlihat, tepat satu editor aktif, dan draft gagal tetap
-aman. Artifact dibangun dari exact commit dan ditolak bila manifest atau entry
-login/SagaView wajib hilang. Login publik dan admin lulus 10/10 setelah
-aktivasi. Support Hub tetap konsisten dengan kontrak produk:
-hanya estimasi, pembayaran dilakukan di luar aplikasi, dan bantuan hanya teks
-serta metadata teknis aman tanpa screenshot, file, foto, path, QRIS, rekening,
-provider, callback, checkout subscription, status paid, atau payment hold.
-Physical UAT 14 gate pada pasangan exact commit lulus tanpa blocker; full
-backend product-surface 993/993 pada release kumulatif sebelumnya; repair exact
-commit lulus 201 test SagaView/3.462 assertion, build 5.097 modul, focused
-contract 2/2, dependency audit nol, backup terenkripsi/offsite/restore
-disposable, archive dan git bundle immutable pada dua lokasi, atomic
-activation, health/provenance, service/journal, public smoke, serta visual
-production. Rollback langsung backend adalah `20260821151535-16fa73b` dan
-Studio tetap `20260821090659-645dddb`.
-`BUSINESS_READY` belum diklaim; Founding Studio Pilot dan acceptance operasional
-mass-scale tetap gate terpisah.
+Gate exact-pair lulus: backend 43 test/475 assertion, release contract 11/219,
+Owner browser 32/32, Studio 230 unit dan full browser 147 pass/3 controlled
+skip, build/budget, dependency audit, serta matriks UAT 14 gate. Dua gate print
+ditutup melalui penerimaan operator setelah printer diuji di studio; 12 evidence
+non-print memakai data sintetis dan tidak mengunggah foto/path/output customer.
+Fresh encrypted backup/offsite/disposable restore tiga database lulus dengan
+146/155/149 tabel, plaintext tidak disimpan. Archive/git bundle exact commit
+tersedia pada dua lokasi. Atomic activation, exact provenance, lima route publik
+dan API health, HSTS/CSP/DENY, tiga service, journal error nol, serta rollback
+target terverifikasi. Tidak ada migration, payment/provider, perubahan harga,
+atau perubahan kontrak local-first/no-upload. `BUSINESS_READY=false`; acceptance
+authenticated pada workspace nyata dan Founding Studio Pilot tetap gate
+operasional terpisah.
 
 Audit lineage 22 Agustus 2026 memastikan kontrak estimasi-only S159 dan
 stale-conflict editor S162 sudah menjadi ancestor exact pasangan production
