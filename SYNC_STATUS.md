@@ -17,7 +17,7 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | `7f48d645cb9144556c6e4a99437adf804987d5f3` |
 | Informasi terakhir disinkronkan | SagaView S268 exact backend/Owner `298336da...` aktif sebagai `20260822112703-298336d` dan Studio `dbaa247c...` aktif sebagai `20260822162437-dbaa247`: frame preview recovery, auto slot detection, dan safe export repair. |
-| Status sinkronisasi | Perubahan production sudah `VALIDATED`; push branch dan integrasi `main` dilakukan setelah commit knowledge ini. |
+| Status sinkronisasi | `VALIDATED / PUSHED / INTEGRATED_MAIN`; SHA immutable diselesaikan dari Git/GitHub untuk commit yang memuat snapshot ini. |
 | Konflik | Tidak ada. Clone knowledge terisolasi dibuat dari exact `origin/main`; checkout lokal divergen tidak disentuh. |
 | Error | Tidak ada blocker deployment S268. Acceptance authenticated/pilot tetap gate terpisah sehingga `BUSINESS_READY=false`. |
 
