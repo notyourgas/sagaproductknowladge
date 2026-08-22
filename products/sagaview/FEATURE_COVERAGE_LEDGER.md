@@ -1,6 +1,6 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 22 Agustus 2026 15:10 WIB
+Evidence cut-off: 22 Agustus 2026 16:12 WIB
 
 Release cumulative terbaru: backend exact
 `51ceefcbf47a825e6b2df147ab14cd4890fd2d25` aktif sebagai
@@ -35,6 +35,15 @@ audit cache lokal nol advisory dengan freshness Packagist tertahan timeout.
 Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
 production tetap backend `20260821211648-51ceefc` dan Studio
 `20260821090659-645dddb`, tanpa migration atau perubahan data.
+
+S266 immutable release pack Owner Changelog: exact S265 dibekukan sebagai
+artifact `20260822090501-03b1289`. Archive SHA-256 `d351c7b2...8dbb`, bundle
+SHA-256 `2d8dd10d...9791`, dan manifest mempunyai salinan lintas-volume yang
+byte-identik. Bundle memuat exact HEAD dan complete history; 2.578 entry archive
+memuat tiga entry build wajib tanpa `.env`, `.git`, vendor, atau node_modules.
+Build 5.097 modul dari exact commit lulus dan source tetap clean. Status
+`LOCAL_VALIDATED / ARTIFACT_VERIFIED / IMPLEMENTED_NOT_DEPLOYED`; production,
+schema, data, dan `BUSINESS_READY` tidak berubah.
 
 S262 Owner Pricing active-lineage integration: exact source
 `51ceefcbf47a825e6b2df147ab14cd4890fd2d25` mengintegrasikan progressive

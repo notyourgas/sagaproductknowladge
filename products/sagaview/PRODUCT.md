@@ -1,6 +1,6 @@
 # SagaView Product Knowledge
 
-Updated: 22 Agustus 2026 15:10 WIB
+Updated: 22 Agustus 2026 16:12 WIB
 
 Backend dan Studio SagaView terbaru berstatus `CONFIRMED / PUSHED /
 LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Backend exact
@@ -40,6 +40,18 @@ Playwright Changelog desktop/mobile 2/2, full Owner/device spec 30/30, build
 lokal tidak menemukan advisory, dengan freshness Packagist tertahan timeout. Status
 `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production,
 schema, data, foto/path/output, dan `BUSINESS_READY` tidak berubah.
+
+S266 membekukan exact source S265 menjadi immutable release pack
+`20260822090501-03b1289`. Archive SHA-256
+`d351c7b2016be23229ba113dd6a49b1b552fd889f2d73da3ba6046a179f98dbb`
+dan git bundle SHA-256
+`2d8dd10d9c5ebcdae1e466008ef5e2845bf36bf33e8baa18b3bb3698d0a99791`
+tersedia pada dua volume dengan hash identik. Bundle memuat exact HEAD dan
+complete history; 2.578 entry archive memuat tiga entry build wajib tanpa
+`.env`, `.git`, vendor, atau node_modules. Build 5.097 modul lulus dari exact
+commit dan source tetap clean. Status `LOCAL_VALIDATED / ARTIFACT_VERIFIED /
+IMPLEMENTED_NOT_DEPLOYED`; production, schema, data, dan `BUSINESS_READY`
+tidak berubah.
 
 Audit lineage 22 Agustus 2026 memastikan kontrak estimasi-only S159 dan
 stale-conflict editor S162 sudah menjadi ancestor exact pasangan production
