@@ -1,5 +1,33 @@
 # SagaView Dossier
 
+## 2026-08-22 - S268 frame recovery dan export safety repair candidate
+
+`CONFIRMED / COMMITTED_LOCAL / REMOTE_PUSH_PENDING / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`. Backend/Owner exact
+`298336da09b735638c4ffea9b7e8830b1283452e`; Studio exact
+`dbaa247c035c5b15d80f490526a13a4ad5848a4a`.
+
+Owner sekarang memisahkan pemuatan metadata/slot dari asset preview. Preview
+lama yang hilang, kosong, salah format, atau checksum-nya berbeda menampilkan
+recovery terarah tanpa menghapus draft; upload frame baru otomatis menjalankan
+deteksi slot. Backend hanya menerima asset yang ukuran dan SHA-256-nya cocok,
+memakai atomic replace untuk self-heal, dan tetap fail-closed bila integritas
+tidak dapat dibuktikan.
+
+Studio menambahkan recovery safety bleed yang hanya berjalan untuk transparansi
+yang dapat dideteksi. Hasil repair divalidasi lagi sebelum PNG dibuat; tidak ada
+override bebas yang dapat melewati mismatch atau frame undetectable. Seluruh
+operasi frame/foto/output customer tetap local-first dan no-upload.
+
+Evidence: backend 43/43 (475 assertion), release contract 11/11 (219), Owner
+browser 32/32, Studio check 230 unit, full E2E 147 pass/3 controlled skip,
+build/budget, dan audit dependency yang tersedia. Artifact exact commit dan git
+bundle memiliki salinan kedua ber-hash sama. Production tetap backend
+`51ceefcb...` / `20260821211648-51ceefc` dan Studio `645dddb...` /
+`20260821090659-645dddb`. Receipt physical UAT sebelumnya tidak mengikat exact
+pair S268; export/print portrait-landscape Windows harus diuji ulang sebelum
+deploy. `BUSINESS_READY` tidak diklaim.
+
 ## 2026-08-21 - Support contract dan Studio cumulative production activation
 
 `CONFIRMED / PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /

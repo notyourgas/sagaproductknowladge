@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-22 - SagaView frame preview dan export recovery candidate
+
+- Backend/Owner exact `298336da...` memulihkan asset preview secara atomic
+  setelah integritas ukuran/SHA-256 terbukti, mempertahankan draft saat retry,
+  dan menjalankan deteksi slot otomatis untuk frame baru.
+- Studio exact `dbaa247c...` menawarkan perbaikan safety bleed yang aman:
+  repair lokal, validasi ulang, lalu export; kondisi tidak dapat dideteksi tetap
+  diblokir.
+- Backend 43/43, release contract 11/11, Owner browser 32/32, Studio 230 unit
+  dan E2E 147 pass/3 skip, build/budget, serta audit dependency lulus.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / REMOTE_PUSH_PENDING`.
+  Production tidak berubah; UAT fisik exact-pair Windows masih wajib.
+
 ## 2026-08-22 - SagaBook closing operasional S276 production
 
 - Exact source `7e28a8d6ddb2c114e4cf02aa35e329511cf2c452` telah pushed dan aktif sebagai

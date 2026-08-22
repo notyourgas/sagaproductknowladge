@@ -8,7 +8,7 @@ diubah menjadi klaim publik sebelum ditutup dengan bukti atau keputusan owner.
 
 ## Konteks
 
-Daftar ini berlaku pada evidence cut-off 21 Agustus 2026 19:59 WIB dan harus diperbarui
+Daftar ini berlaku pada evidence cut-off 22 Agustus 2026 18:36 WIB dan harus diperbarui
 ketika keputusan atau release baru menutup gap.
 
 ## Cara memakai
@@ -21,6 +21,14 @@ ketika keputusan atau release baru menutup gap.
   sebagai `CONFIRMED`.
 
 ## Prioritas tinggi
+
+SagaView S268 `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: source exact
+backend/Owner `298336da...` dan Studio `dbaa247c...` serta artifact immutable
+sudah tersedia, tetapi receipt physical UAT terakhir mengikat pasangan commit
+sebelumnya. Karena perubahan menyentuh export, kandidat tidak boleh memakai
+receipt lama atau bypass. Tutup gap dengan UAT fisik Windows pada exact pair
+S268: preview/re-upload frame, auto-detection, repair safety bleed, export PNG,
+serta print portrait dan landscape; setelah itu jalankan release gate penuh.
 
 SagaView physical UAT yang sebelumnya tertahan storage dan printer sudah
 `CLOSED` pada pasangan exact backend

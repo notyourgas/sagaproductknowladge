@@ -1,5 +1,32 @@
 # SagaView Changelog
 
+## 2026-08-22 - S268 frame preview recovery dan safe export repair
+
+- Klasifikasi: `CONFIRMED`; implementasi dan validasi lokal, production tidak
+  diubah.
+- Before: Owner dapat kehilangan preview frame lama dan hanya diarahkan unggah
+  ulang; Studio memblokir export saat safety bleed slot tidak aman tanpa jalur
+  pemulihan yang langsung melanjutkan export.
+- After: backend/Owner exact
+  `298336da09b735638c4ffea9b7e8830b1283452e` memverifikasi ukuran/SHA-256,
+  memulihkan asset secara atomic bila byte sah tersedia, mempertahankan
+  metadata/slot saat retry, dan otomatis mendeteksi slot setelah file baru
+  dipilih. Studio exact `dbaa247c035c5b15d80f490526a13a4ad5848a4a`
+  memperbaiki safety bleed yang dapat dideteksi secara lokal, memvalidasi
+  ulang, lalu mengekspor; mismatch/undetectable tetap fail-closed.
+- Privacy/data: foto, path lokal, editor, consent, dan output customer tetap di
+  perangkat; tidak ada migration, payment/provider, pricing, atau mutasi data
+  tenant.
+- Evidence: backend 43/43 dengan 475 assertion; release contract 11/11 dengan
+  219 assertion; Owner Playwright 32/32; Studio check 230 unit, full E2E 147
+  pass/3 controlled skip, build/budget, dan audit dependency nol yang tersedia.
+  Archive dan git bundle exact commit tersedia pada dua salinan ber-hash sama.
+- Delivery: `COMMITTED_LOCAL / REMOTE_PUSH_PENDING / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Production tetap backend `51ceefcb...` /
+  `20260821211648-51ceefc` dan Studio `645dddb...` /
+  `20260821090659-645dddb`; physical UAT exact-pair export/print wajib
+  diperbarui sebelum deploy.
+
 ## 2026-08-22 - S264 Owner Pricing production activation
 
 - Klasifikasi: `CONFIRMED`; diotorisasi langsung oleh Andreas.

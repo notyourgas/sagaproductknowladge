@@ -1,6 +1,24 @@
 # SagaView Product Knowledge
 
-Updated: 22 Agustus 2026 04:33 WIB
+Updated: 22 Agustus 2026 18:36 WIB
+
+Kandidat S268 memperbaiki dua jalur operator tanpa mengubah production.
+Backend/Owner exact `298336da09b735638c4ffea9b7e8830b1283452e`
+memulihkan asset preview frame yang hilang atau korup secara atomic saat byte
+frame yang sah tersedia, memverifikasi ukuran dan SHA-256, mempertahankan
+metadata/slot saat retry, serta menjalankan deteksi slot otomatis setelah file
+frame baru dipilih. Studio exact
+`dbaa247c035c5b15d80f490526a13a4ad5848a4a` menyediakan aksi
+`Perbaiki otomatis & export` khusus safety bleed yang dapat dideteksi; slot
+diperbaiki lokal dalam sesi, divalidasi ulang, lalu export dilanjutkan. Jalur
+ini bukan bypass: mismatch dan frame yang tidak dapat dideteksi tetap ditolak.
+Kandidat lulus backend 43 test/475 assertion, release contract 11/219,
+Owner browser 32/32, Studio check 230 unit dan full browser 147 pass/3 skip,
+build, budget, serta dependency audit yang tersedia. Status
+`COMMITTED_LOCAL / REMOTE_PUSH_PENDING / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; production tetap backend `51ceefcb...` dan Studio
+`645dddb...`. Exact-pair physical UAT export/print Windows harus diperbarui
+untuk kedua commit S268 sebelum deployment.
 
 Backend dan Studio SagaView terbaru berstatus `CONFIRMED / PUSHED /
 LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Backend exact

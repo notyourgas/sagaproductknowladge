@@ -1,6 +1,21 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 22 Agustus 2026 04:33 WIB
+Evidence cut-off: 22 Agustus 2026 18:36 WIB
+
+S268 frame preview/export recovery: backend/Owner exact
+`298336da09b735638c4ffea9b7e8830b1283452e` dan Studio exact
+`dbaa247c035c5b15d80f490526a13a4ad5848a4a` berstatus
+`COMMITTED_LOCAL / REMOTE_PUSH_PENDING / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`. Preview lama yang hilang/korup kini dapat dipulihkan
+secara atomic dari byte frame sah dengan verifikasi ukuran/SHA-256; metadata
+dan slot tetap aman saat retry, dan file baru langsung menjalankan deteksi
+slot. Safety bleed yang dapat dideteksi diperbaiki lokal lalu divalidasi ulang
+sebelum export; mismatch/undetectable tetap diblokir. Backend 43/475, release
+contract 11/219, Owner browser 32/32, Studio 230 unit dan full E2E 147 pass/3
+controlled skip, build/budget, serta audit dependency lulus. No-upload,
+estimate-only, tenant authority, dan consent tetap terjaga. Coverage automation
+lulus; physical UAT Windows untuk export/print exact-pair S268 belum tersedia,
+sehingga production belum berubah dan release gate belum lulus.
 
 Release cumulative terbaru: backend exact
 `51ceefcbf47a825e6b2df147ab14cd4890fd2d25` aktif sebagai

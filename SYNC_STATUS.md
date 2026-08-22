@@ -12,14 +12,26 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-22T17:41:00+07:00 |
-| Branch aktif | `main` dari clone terisolasi bersih exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-22T18:36:00+07:00 |
+| Branch aktif | `codex/s268-sagaview-frame-export-knowledge` dari worktree terisolasi exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `517e281f85d12f57d83cdbef41ee42f8b608e1a4` |
-| Informasi terakhir disinkronkan | SagaBook closing operasional exact `7e28a8d6...` aktif sebagai `20260822103441-7e28a8d`; rollback, backup/restore, migration, DB audit 100, service/journal, public smoke, dan header terverifikasi. |
-| Status sinkronisasi | `UP TO DATE` setelah validator dan fast-forward push. |
+| Baseline sebelum pembaruan | `7f48d645cb9144556c6e4a99437adf804987d5f3` |
+| Informasi terakhir disinkronkan | SagaView S268 exact backend/Owner `298336da...` dan Studio `dbaa247c...`: frame preview recovery, auto slot detection, dan safe export repair local-validated; production tetap pada exact pair aktif sebelumnya. |
+| Status sinkronisasi | `PENDING VALIDATION/PUSH` sampai validator dan push branch selesai. |
 | Konflik | Tidak ada. Clone knowledge terisolasi dibuat dari exact `origin/main`; checkout lokal divergen tidak disentuh. |
-| Error | Tidak ada blocker sinkronisasi atau release exception. Authenticated Owner/operator UAT dan dua studio pilot masih residual; `BUSINESS_READY=false`. |
+| Error | Product deployment masih diblokir receipt physical UAT yang belum mengikat exact pair S268; ini bukan blocker sinkronisasi knowledge. `BUSINESS_READY=false`. |
+
+## File yang berubah pada sinkronisasi ini (SagaView S268 frame/export recovery)
+
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/DOSSIER.md`
+- `products/sagaview/CHANGELOG.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `GAPS.md`
+- `SYNC_STATUS.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaBook S276 closing production)
 
