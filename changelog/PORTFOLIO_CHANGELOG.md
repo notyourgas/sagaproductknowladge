@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-23 - SagaBook hardening closing operasional S278
+
+- Exact source `a53f21493c19a5b4374f47120348df9c04b41e63` menambah deteksi closing
+  terlambat berbasis aturan cabang, task deterministik, revision history, Owner
+  review, recovery preflight, primary action Task Center, dan export revisi.
+- UI Owner/Staff, API, transaksi database, tenant/cabang, permission, audit,
+  idempotency, concurrency, serta read-after-write diuji sebagai satu alur.
+- Full regression 1.084/1.084, focused 29/29, browser closing/Task Center,
+  visual 26/26, build/typecheck, database audit 100, dan dependency audit nol
+  lulus. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap
+  S276 dan `BUSINESS_READY=false`.
+
 ## 2026-08-22 - SagaView frame preview dan export recovery production
 
 - Backend/Owner exact `298336da...` memulihkan asset preview secara atomic

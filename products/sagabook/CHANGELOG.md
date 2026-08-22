@@ -1,5 +1,25 @@
 # SagaBook Changelog
 
+## 2026-08-23 - Hardening closing operasional S278 candidate
+
+- Klasifikasi: `CONFIRMED`; exact source
+  `a53f21493c19a5b4374f47120348df9c04b41e63` berada pada branch
+  `codex/s277-sagabook-operational-hardening`.
+- Before: closing yang melewati batas waktu belum otomatis menghasilkan task
+  operator yang tenant/cabang/timezone-aware, histori revisi belum lengkap di
+  seluruh surface, dan recovery preflight tidak seragam. After: deteksi overdue
+  terjadwal membuat task deterministik, membuka kembali atau menyelesaikan task
+  sesuai state closing, sementara Owner review, revisi, export, draft/retry,
+  dan primary action Task Center tersambung dari UI sampai database.
+- Full regression 1.084/1.084 (12.581 assertion), focused closing 20/20 (174),
+  database hardening 9/9 (46), closing E2E 7 pass/1 skip terencana, Task Center
+  4/4, visual 26/26, design 26/0, build/typecheck, Pint, database audit 100,
+  serta npm/Composer audit nol lulus.
+- Status `PUSHED / UIUX_VALIDATED / QA_VALIDATED /
+  SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Production tetap release S276; authenticated
+  Owner/operator UAT dan dua studio pilot tetap gate `BUSINESS_READY`.
+
 ## 2026-08-22 - Closing operasional S276 production
 
 - Klasifikasi: `CONFIRMED`; Andreas menyetujui implementasi dan deployment.

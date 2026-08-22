@@ -12,14 +12,25 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-22T23:34:00+07:00 |
-| Branch aktif | `codex/s268-sagaview-frame-export-knowledge` dari worktree terisolasi exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-23T03:27:00+07:00 |
+| Branch aktif | `codex/s278-sagabook-closing-knowledge` dari worktree terisolasi exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `7f48d645cb9144556c6e4a99437adf804987d5f3` |
-| Informasi terakhir disinkronkan | SagaView S268 exact backend/Owner `298336da...` aktif sebagai `20260822112703-298336d` dan Studio `dbaa247c...` aktif sebagai `20260822162437-dbaa247`: frame preview recovery, auto slot detection, dan safe export repair. |
+| Baseline sebelum pembaruan | `89e284cf49f1bc645421439182d46a6838f57a1c` |
+| Informasi terakhir disinkronkan | SagaBook S278 exact source `a53f2149...`: overdue detector, task deterministik, review/revision history, recovery UI, export, dan gate lokal lengkap; production tetap S276. |
 | Status sinkronisasi | `VALIDATED / PUSHED / INTEGRATED_MAIN`; SHA immutable diselesaikan dari Git/GitHub untuk commit yang memuat snapshot ini. |
 | Konflik | Tidak ada. Clone knowledge terisolasi dibuat dari exact `origin/main`; checkout lokal divergen tidak disentuh. |
-| Error | Tidak ada blocker deployment S268. Acceptance authenticated/pilot tetap gate terpisah sehingga `BUSINESS_READY=false`. |
+| Error | Tidak ada blocker source lokal S278. Deployment tidak dilakukan; authenticated UAT/pilot tetap gate terpisah sehingga `BUSINESS_READY=false`. |
+
+## File yang berubah pada sinkronisasi ini (SagaBook S278 closing hardening)
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaView S268 frame/export recovery)
 

@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 22 Agustus 2026 17:41 WIB
-Evidence status: workflow closing operasional S276 production-activated pada exact release terverifikasi
+Updated: 23 Agustus 2026 03:27 WIB
+Evidence status: hardening closing operasional S278 local-validated; production tetap S276
 
 ## Tujuan dokumen
 
@@ -15,6 +15,22 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- Hardening closing operasional S278 exact source
+  `a53f21493c19a5b4374f47120348df9c04b41e63` berstatus `CONFIRMED / PUSHED /
+  UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+  Sistem mendeteksi closing cabang yang terlambat berdasarkan timezone, jam
+  tutup, grace period, dan hari libur; membuat atau membuka kembali task
+  deterministik di Task Center; lalu menyelesaikannya setelah closing selesai.
+  Histori revisi, review Owner, preflight/retry dengan draft preservation,
+  primary action Task Center, dan export histori revisi terhubung dari UI ke
+  database. Full regression 1.084/1.084 (12.581 assertion), focused closing
+  20/20 (174), database hardening 9/9 (46), browser closing 7 pass/1 skip
+  terencana, Task Center 4/4, visual 26/26, design 26/0, build, typecheck,
+  database audit 100, serta audit dependency nol lulus. Production belum
+  berubah dari S276; authenticated Owner/operator UAT dan dua studio pilot
+  tetap diperlukan sehingga `BUSINESS_READY=false`.
 
 - Workflow closing operasional S276 exact source
   `7e28a8d6ddb2c114e4cf02aa35e329511cf2c452` berstatus `CONFIRMED / PUSHED /

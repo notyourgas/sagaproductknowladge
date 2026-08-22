@@ -7,6 +7,21 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Hardening closing operasional S278 exact source
+  `a53f21493c19a5b4374f47120348df9c04b41e63`: `CONFIRMED / PUSHED /
+  UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+  Deteksi overdue menggunakan timezone dan kalender cabang, membentuk task
+  deterministik tanpa duplikasi, membuka kembali task bila closing kembali
+  bermasalah, serta menyelesaikannya setelah closing beres. UI Owner/Staff,
+  preflight, draft/retry, review, revision history, Task Center, export, API,
+  database transaction, permission, audit, dan read-after-write telah diuji
+  sebagai satu alur. Full regression 1.084/1.084 (12.581 assertion), focused
+  closing 20/20 (174), database hardening 9/9 (46), browser closing dan Task
+  Center, visual 26/26, build/typecheck, database audit 100, serta dependency
+  audit nol lulus. Production tetap release S276 dan `BUSINESS_READY=false`
+  sampai authenticated Owner/operator UAT serta dua studio pilot selesai.
+
 - Closing operasional S276 exact source
   `7e28a8d6ddb2c114e4cf02aa35e329511cf2c452`: `CONFIRMED / PUSHED /
   UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /

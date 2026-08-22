@@ -1,8 +1,22 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 22 Agustus 2026 23:34 WIB
+Evidence cut-off: 23 Agustus 2026 03:27 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
+
+SagaBook hardening closing operasional S278 exact source
+`a53f21493c19a5b4374f47120348df9c04b41e63` berstatus `CONFIRMED / PUSHED /
+UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+Overdue detector memakai timezone, jam tutup, grace period, dan hari libur
+cabang; task Task Center bersifat deterministik dan mengikuti penyelesaian atau
+pembukaan kembali closing. Owner review, revision history, preflight/retry,
+draft preservation, export revisi, permission, audit, concurrency, dan
+read-after-write tervalidasi dari UI sampai database. Full regression
+1.084/1.084, focused closing/database 29/29, browser closing/Task Center,
+visual 26/26, build/typecheck, database audit 100, dan dependency audit nol
+lulus. Production tetap S276 dan `BUSINESS_READY=false` sampai authenticated
+Owner/operator UAT serta dua studio pilot selesai.
 
 SagaView S268 frame preview dan export recovery exact backend/Owner
 `298336da09b735638c4ffea9b7e8830b1283452e` serta Studio
