@@ -10,7 +10,8 @@ dalam satu dokumen public-safe.
 - Hardening closing operasional S278 exact source
   `a53f21493c19a5b4374f47120348df9c04b41e63`: `CONFIRMED / PUSHED /
   UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
-  DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+  DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`.
   Deteksi overdue menggunakan timezone dan kalender cabang, membentuk task
   deterministik tanpa duplikasi, membuka kembali task bila closing kembali
   bermasalah, serta menyelesaikannya setelah closing beres. UI Owner/Staff,
@@ -19,7 +20,11 @@ dalam satu dokumen public-safe.
   sebagai satu alur. Full regression 1.084/1.084 (12.581 assertion), focused
   closing 20/20 (174), database hardening 9/9 (46), browser closing dan Task
   Center, visual 26/26, build/typecheck, database audit 100, serta dependency
-  audit nol lulus. Production tetap release S276 dan `BUSINESS_READY=false`
+  audit nol lulus. Release `20260822202624-a53f214` aktif dengan rollback
+  `20260822103441-7e28a8d`; source archive dan recovery bundle ber-SHA-256,
+  encrypted backup/checksum/disposable restore, exact manifest, atomic
+  activation, verifier 17/17, service/journal, migrasi 0 pending, serta
+  public/security smoke 3/3 lulus tanpa exception. `BUSINESS_READY=false`
   sampai authenticated Owner/operator UAT serta dua studio pilot selesai.
 
 - Closing operasional S276 exact source

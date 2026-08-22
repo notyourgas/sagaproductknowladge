@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-23 - SagaBook S278 closing hardening production
+
+- Exact source `a53f21493c19a5b4374f47120348df9c04b41e63` sudah pushed dan aktif
+  sebagai release `20260822202624-a53f214`.
+- Rollback `20260822103441-7e28a8d` tersedia; immutable archive/recovery bundle,
+  encrypted backup/checksum/disposable restore, exact manifest, dan atomic
+  activation lulus.
+- Verifier independen 17/17, service/journal, migrasi 0 pending, public smoke
+  3/3, dan security header 3/3 lulus tanpa exception.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated UAT dan dua
+  studio pilot masih diperlukan sebelum `BUSINESS_READY`.
+
 ## 2026-08-23 - SagaBook hardening closing operasional S278
 
 - Exact source `a53f21493c19a5b4374f47120348df9c04b41e63` menambah deteksi closing

@@ -1,5 +1,21 @@
 # SagaBook Changelog
 
+## 2026-08-23 - Hardening closing operasional S278 production
+
+- Klasifikasi: `CONFIRMED`; Andreas menyetujui penyelesaian blocker dan deploy.
+  Exact source `a53f21493c19a5b4374f47120348df9c04b41e63` sudah berada pada source
+  `main` dan branch `codex/s277-sagabook-operational-hardening`.
+- Release `20260822202624-a53f214` aktif dengan rollback
+  `20260822103441-7e28a8d`. Archive dan recovery bundle immutable memiliki
+  SHA-256; encrypted backup `20260822T202510Z`, checksum, disposable restore,
+  source backup lokal+VPS, exact manifest, dan atomic switch lulus.
+- Verifier independen 17/17 membuktikan exact remote/main, active release dan
+  commit stabil, rollback tersedia, nginx/queue/PHP-FPM aktif, maintenance off,
+  migrasi 0 pending, journal 0 error, public smoke 3/3, dan security header 3/3.
+- Status `PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` tanpa release
+  exception. Authenticated Owner/operator UAT dan dua studio pilot belum
+  selesai, sehingga `BUSINESS_READY=false`.
+
 ## 2026-08-23 - Hardening closing operasional S278 candidate
 
 - Klasifikasi: `CONFIRMED`; exact source
