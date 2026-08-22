@@ -15,7 +15,7 @@ ini bukan bypass: mismatch dan frame yang tidak dapat dideteksi tetap ditolak.
 Kandidat lulus backend 43 test/475 assertion, release contract 11/219,
 Owner browser 32/32, Studio check 230 unit dan full browser 147 pass/3 skip,
 build, budget, serta dependency audit yang tersedia. Status
-`COMMITTED_LOCAL / REMOTE_PUSH_PENDING / LOCAL_VALIDATED /
+`COMMITTED_LOCAL / PUSHED / LOCAL_VALIDATED /
 IMPLEMENTED_NOT_DEPLOYED`; production tetap backend `51ceefcb...` dan Studio
 `645dddb...`. Exact-pair physical UAT export/print Windows harus diperbarui
 untuk kedua commit S268 sebelum deployment.

@@ -21,7 +21,7 @@
   219 assertion; Owner Playwright 32/32; Studio check 230 unit, full E2E 147
   pass/3 controlled skip, build/budget, dan audit dependency nol yang tersedia.
   Archive dan git bundle exact commit tersedia pada dua salinan ber-hash sama.
-- Delivery: `COMMITTED_LOCAL / REMOTE_PUSH_PENDING / LOCAL_VALIDATED /
+- Delivery: `COMMITTED_LOCAL / PUSHED / LOCAL_VALIDATED /
   IMPLEMENTED_NOT_DEPLOYED`. Production tetap backend `51ceefcb...` /
   `20260821211648-51ceefc` dan Studio `645dddb...` /
   `20260821090659-645dddb`; physical UAT exact-pair export/print wajib

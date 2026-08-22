@@ -10,7 +10,7 @@
   diblokir.
 - Backend 43/43, release contract 11/11, Owner browser 32/32, Studio 230 unit
   dan E2E 147 pass/3 skip, build/budget, serta audit dependency lulus.
-- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / REMOTE_PUSH_PENDING`.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PUSHED`.
   Production tidak berubah; UAT fisik exact-pair Windows masih wajib.
 
 ## 2026-08-22 - SagaBook closing operasional S276 production

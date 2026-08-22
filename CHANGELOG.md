@@ -10,7 +10,7 @@
   ulang. Mismatch/undetectable tetap fail-closed.
 - Production tetap backend `51ceefcb...` dan Studio `645dddb...`; tidak ada
   migration, payment/provider, pricing, atau upload foto/path/output customer.
-- Delivery `COMMITTED_LOCAL / REMOTE_PUSH_PENDING / LOCAL_VALIDATED /
+- Delivery `COMMITTED_LOCAL / PUSHED / LOCAL_VALIDATED /
   IMPLEMENTED_NOT_DEPLOYED`; exact-pair physical UAT export/print Windows
   masih menjadi gate deployment.
 - Dokumen terdampak: SagaView product/dossier/changelog/coverage, gaps,

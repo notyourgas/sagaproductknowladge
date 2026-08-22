@@ -5,7 +5,7 @@ Evidence cut-off: 22 Agustus 2026 18:36 WIB
 S268 frame preview/export recovery: backend/Owner exact
 `298336da09b735638c4ffea9b7e8830b1283452e` dan Studio exact
 `dbaa247c035c5b15d80f490526a13a4ad5848a4a` berstatus
-`COMMITTED_LOCAL / REMOTE_PUSH_PENDING / LOCAL_VALIDATED /
+`COMMITTED_LOCAL / PUSHED / LOCAL_VALIDATED /
 IMPLEMENTED_NOT_DEPLOYED`. Preview lama yang hilang/korup kini dapat dipulihkan
 secara atomic dari byte frame sah dengan verifikasi ukuran/SHA-256; metadata
 dan slot tetap aman saat retry, dan file baru langsung menjalankan deteksi

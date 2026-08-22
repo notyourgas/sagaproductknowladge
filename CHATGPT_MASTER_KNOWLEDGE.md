@@ -7,7 +7,7 @@ Visibility: public-safe
 SagaView S268 frame preview dan export recovery exact backend/Owner
 `298336da09b735638c4ffea9b7e8830b1283452e` serta Studio
 `dbaa247c035c5b15d80f490526a13a4ad5848a4a` berstatus `CONFIRMED /
-COMMITTED_LOCAL / REMOTE_PUSH_PENDING / LOCAL_VALIDATED /
+COMMITTED_LOCAL / PUSHED / LOCAL_VALIDATED /
 IMPLEMENTED_NOT_DEPLOYED`. Owner mempertahankan metadata/slot ketika preview
 lama gagal, memverifikasi size/SHA-256 dan melakukan atomic self-heal bila byte
 sah tersedia; file baru langsung menjalankan deteksi slot. Studio dapat
