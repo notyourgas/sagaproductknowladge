@@ -7,6 +7,20 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Perbaikan akurasi warna semantic dan lapisan nama cabang S274 implementation
+  `5cf6d4bd3f09a63cc93f9d177092453bca793f76`, tercakup pada release source
+  `77eda54273f3943da0f136245b90429a88a65978`: `CONFIRMED / PUSHED /
+  UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Warna Studio/Brand dan overlay cabang mengikuti
+  computed token persis; renderer Cinematic menempatkan nama cabang di atas
+  foto dengan scrim dan inspector layer deterministik. Browser 12/12, backend
+  template 9/9 (229 assertion), full PHP 1.076/1.076 (12.507 assertion), build,
+  TypeScript, npm/Composer audit, fresh encrypted backup/restore, verifier
+  17/17, readiness 100/100, dan public/security 3/3 lulus. Release
+  `20260822042930-77eda54` aktif dengan rollback
+  `20260821215633-f6f850d`; tidak ada migration atau mutasi profile tenant dan
+  `BUSINESS_READY=false`.
+
 - Renderer halaman khusus `Cinematic Noir` exact source
   `f6f850df3796e653e5c7c69692ba06ced6befd63`: `CONFIRMED / PUSHED /
   UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /

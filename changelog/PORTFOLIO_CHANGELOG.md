@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-22 - SagaBook S274 production activation
+
+- Akurasi warna template dan overlay nama cabang implementation
+  `5cf6d4bd...` aktif melalui exact release source `77eda542...`.
+- Release `20260822042930-77eda54` memakai fresh encrypted backup/restore exact
+  SHA dan memiliki rollback langsung `20260821215633-f6f850d`.
+- Full PHP 1.076/1.076, browser 12/12, build/audit, readiness 100/100, verifier
+  17/17, serta public/security smoke 3/3 lulus tanpa exception.
+- Percobaan awal berhenti sebelum deploy akibat fixture tanggal Promo; fixture
+  dibuat deterministik dan seluruh gate diulang hijau.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; tidak ada migration atau
+  mutasi profile tenant, dan `BUSINESS_READY=false`.
+
 ## 2026-08-22 - SagaBook akurasi warna template dan layering cabang S274
 
 - Exact source `5cf6d4bd3f09a63cc93f9d177092453bca793f76` sudah pushed pada

@@ -1,5 +1,22 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-22 - SagaBook S274 production activation sync
+
+- Exact release source `77eda54273f3943da0f136245b90429a88a65978`
+  mencakup feature implementation `5cf6d4bd...` dan koreksi fixture waktu
+  deterministik; keduanya sudah pushed ke source `main`.
+- Release `20260822042930-77eda54` aktif dengan rollback
+  `20260821215633-f6f850d`; fresh encrypted backup `20260822T042827Z`,
+  restore, source backup, atomic activation, readiness 100/100, verifier 17/17,
+  dan public/security 3/3 lulus tanpa exception.
+- Percobaan awal berhenti sebelum deploy pada fixture tanggal Promo; full PHP
+  final 1.076/1.076 lulus setelah koreksi test-only dan seluruh evidence exact
+  SHA dibuat ulang.
+- Delivery `PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; tenant
+  profile tidak dimutasi dan `BUSINESS_READY=false`.
+- Dokumen terdampak: SagaBook product/dossier/changelog/coverage, portfolio,
+  master, root changelog, dan sync status.
+
 ## 2026-08-22 - SagaBook S274 template color/layering source sync
 
 - Informasi `CONFIRMED` berasal dari laporan Andreas dan exact source

@@ -1,5 +1,23 @@
 # SagaBook Changelog
 
+## 2026-08-22 - Akurasi warna semantic dan lapisan cabang S274 production
+
+- Feature implementation `5cf6d4bd3f09a63cc93f9d177092453bca793f76`
+  tercakup pada exact release source
+  `77eda54273f3943da0f136245b90429a88a65978`, keduanya sudah pushed.
+- Percobaan release pertama berhenti sebelum deploy karena satu fixture Promo
+  memakai slot kalender yang sudah lewat. Clock test dibekukan deterministik;
+  focused 1/1 dan full PHP final 1.076/1.076 (12.507 assertion) lulus tanpa
+  perubahan runtime.
+- Release `20260822042930-77eda54` aktif dengan rollback
+  `20260821215633-f6f850d`. Backup terenkripsi baru `20260822T042827Z`,
+  checksum, offsite round-trip, restore disposable, source backup lokal+VPS,
+  atomic activation, readiness 100/100, verifier 17/17, public smoke 3/3, dan
+  security header 3/3 lulus tanpa release exception.
+- Status `PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`; 0 migration pending, service aktif, maintenance off,
+  profile tenant tidak dimutasi, dan `BUSINESS_READY=false`.
+
 ## 2026-08-22 - Akurasi warna semantic dan lapisan nama cabang S274
 
 - Klasifikasi: `CONFIRMED`; laporan bug dan expected behavior berasal dari

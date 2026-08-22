@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 22 Agustus 2026 05:09 WIB
-Evidence status: perbaikan akurasi warna semantic dan lapisan nama cabang S274 sudah local-validated, belum production
+Updated: 22 Agustus 2026 11:37 WIB
+Evidence status: perbaikan akurasi warna semantic dan lapisan nama cabang S274 production-activated pada exact release terverifikasi
 
 ## Tujuan dokumen
 
@@ -17,9 +17,10 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 ## Status production terbaru
 
 - Perbaikan S274 exact source
-  `5cf6d4bd3f09a63cc93f9d177092453bca793f76` berstatus `CONFIRMED / PUSHED /
-  UIUX_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED`. Pilihan warna `Nama Studio / Brand` dan `Nama
+  `5cf6d4bd3f09a63cc93f9d177092453bca793f76`, tercakup pada exact release
+  source `77eda54273f3943da0f136245b90429a88a65978`, berstatus `CONFIRMED /
+  PUSHED / UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+  LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Pilihan warna `Nama Studio / Brand` dan `Nama
   Cabang di Foto` sekarang menang terhadap aturan typography/card generik,
   sehingga warna hitam atau putih pada editor sama dengan computed color di
   Preview Live. Renderer lokasi Cinematic kembali menampilkan nama cabang di
@@ -27,10 +28,16 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   target inspector yang tepat. Gate lulus: browser S274 4/4, regresi Cinematic
   4/4, accessibility lintas forced-colors/reduced-motion/viewport 4/4, backend
   template 9/9 (229 assertion), TypeScript, build, npm audit nol vulnerability,
-  dan Composer audit nol advisory. Audit OSV tambahan dua kali tidak selesai
-  karena timeout jaringan eksternal; lockfile tidak berubah. Tidak ada perubahan
-  schema, API, auth, data tenant, atau production. Production tetap pada exact
-  source `f6f850df3796e653e5c7c69692ba06ced6befd63`; `BUSINESS_READY=false`.
+  dan Composer audit nol advisory. Full PHP final lulus 1.076/1.076 (12.507
+  assertion) setelah fixture Promo yang memakai tanggal kalender dibekukan
+  deterministik; runtime tidak berubah oleh koreksi test. Release
+  `20260822042930-77eda54` aktif dengan rollback
+  `20260821215633-f6f850d`; fresh encrypted backup run
+  `20260822T042827Z`, checksum, offsite round-trip, restore disposable, source
+  backup lokal+VPS, atomic activation, readiness 100/100, verifier independen
+  17/17, public smoke 3/3, dan security header 3/3 lulus tanpa exception.
+  Tidak ada migration, perubahan API/auth, atau mutasi profile tenant;
+  `BUSINESS_READY=false`.
 
 - Renderer halaman khusus `Cinematic Noir` exact source
   `f6f850df3796e653e5c7c69692ba06ced6befd63` berstatus `CONFIRMED / PUSHED /

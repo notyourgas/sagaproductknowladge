@@ -1,8 +1,20 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 22 Agustus 2026 05:03 WIB
+Evidence cut-off: 22 Agustus 2026 11:37 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
+
+SagaBook S274 akurasi warna semantic dan lapisan nama cabang implementation
+`5cf6d4bd3f09a63cc93f9d177092453bca793f76`, tercakup pada exact release
+source `77eda54273f3943da0f136245b90429a88a65978`, berstatus `CONFIRMED /
+PUSHED / UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Warna Studio/Brand dan overlay foto kini sama dengan
+pilihan editor; nama cabang Cinematic berada di atas foto dengan scrim dan
+inspector target yang tepat. Release `20260822042930-77eda54` aktif dengan
+rollback `20260821215633-f6f850d`; full PHP 1.076/1.076, browser 12/12,
+backup/restore, readiness 100/100, verifier 17/17, dan public/security 3/3
+lulus tanpa exception. Tidak ada migration atau mutasi profile tenant;
+`BUSINESS_READY=false`.
 
 SagaBook `Cinematic Noir` dedicated renderer exact source
 `f6f850df3796e653e5c7c69692ba06ced6befd63` berstatus `CONFIRMED / PUSHED /

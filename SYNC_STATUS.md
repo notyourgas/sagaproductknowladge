@@ -12,16 +12,27 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-22T05:09:55+07:00 |
+| Waktu pembaruan terakhir | 2026-08-22T11:37:38+07:00 |
 | Branch aktif | `codex/s274-template-color-layering-knowledge` dari worktree bersih exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `cea3a89182822000cb8fc47ff06fa594483d95e5` |
-| Informasi terakhir disinkronkan | SagaBook S274 exact `5cf6d4bd...`: akurasi warna semantic dan lapisan nama cabang local-validated, belum production; production tetap `f6f850df...`. |
+| Baseline sebelum pembaruan | `d2be8dc31b3774b6927e370805966468cc655fcf` |
+| Informasi terakhir disinkronkan | SagaBook S274 feature `5cf6d4bd...` aktif melalui release source `77eda542...` / `20260822042930-77eda54`; rollback `20260821215633-f6f850d`, readiness 100/100 dan verifier 17/17 lulus. |
 | Status sinkronisasi | `UP TO DATE` setelah validator dan fast-forward push. |
 | Konflik | Tidak ada. Worktree knowledge terisolasi di-fast-forward ke exact `origin/main` sebelum edit. |
-| Error | Audit OSV source tambahan timeout jaringan eksternal dua kali; npm/Composer audit lulus. Tidak ada blocker sinkronisasi. Published tenant profile tidak dimutasi; `BUSINESS_READY=false`. |
+| Error | Percobaan deploy awal berhenti sebelum mutasi pada fixture tanggal Promo; fixture dibuat deterministik, full suite dan seluruh evidence exact SHA diulang hijau. Tidak ada blocker aktif; published tenant profile tidak dimutasi dan `BUSINESS_READY=false`. |
 
-## File yang berubah pada sinkronisasi ini (SagaBook S274 template color/layering)
+## File yang berubah pada sinkronisasi ini (SagaBook S274 production)
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
+
+## File yang berubah pada sinkronisasi sebelumnya (SagaBook S274 template color/layering)
 
 - `products/sagabook/PRODUCT.md`
 - `products/sagabook/CHANGELOG.md`
