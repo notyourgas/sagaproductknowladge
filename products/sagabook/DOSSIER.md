@@ -7,6 +7,20 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Closing operasional S276 exact source
+  `7e28a8d6ddb2c114e4cf02aa35e329511cf2c452`: `CONFIRMED / PUSHED /
+  UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Workflow sekarang mencakup
+  preflight ledger server, draft, submit, review approve/reject, koreksi,
+  reopen, revision archive, resubmit, Task Center, audit, dan read-after-reload.
+  Tenant/cabang/actor server-authoritative; capability, selisih wajib catatan,
+  idempotency, optimistic lock stale-tab, dan task review/koreksi fail-closed.
+  Gate backend, full regression, browser, accessibility, build, migration,
+  dependency, backup/restore, database audit 100, service/journal, dan public
+  smoke lulus. Release `20260822103441-7e28a8d` aktif dengan rollback
+  `20260822064328-b033cdb`; authenticated Owner/operator UAT dan dua studio
+  pilot tetap exit gate `BUSINESS_READY`.
+
 - Perbaikan kontrol storefront `Cinematic Noir` exact source
   `b033cdb3bce72f65c055e3b00dad9e4c2c1a5216`: `CONFIRMED / PUSHED /
   UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /

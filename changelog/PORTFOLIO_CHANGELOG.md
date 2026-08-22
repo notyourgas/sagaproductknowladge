@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-22 - SagaBook closing operasional S276 production
+
+- Exact source `7e28a8d6ddb2c114e4cf02aa35e329511cf2c452` telah pushed dan aktif sebagai
+  release `20260822103441-7e28a8d`.
+- Operator memperoleh preflight, draft, submit, koreksi, resubmit, dan recovery;
+  Owner/manager memperoleh approve, reject, serta reopen dengan histori revisi,
+  Task Center, audit, tenant/cabang, dan concurrency guard.
+- Regression 1.079/1.079, focused 16/16, browser closing/staff, build,
+  accessibility, migration, dependency, backup/restore, database audit 100,
+  service/journal, dan public smoke lulus.
+- Rollback `20260822064328-b033cdb` tersedia. Status
+  `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated UAT dan dua studio
+  pilot masih diperlukan sebelum `BUSINESS_READY`.
+
 ## 2026-08-22 - SagaBook Cinematic Noir compact carousel controls
 
 - Exact source `b033cdb3bce72f65c055e3b00dad9e4c2c1a5216` telah pushed.

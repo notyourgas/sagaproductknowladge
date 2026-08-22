@@ -1,5 +1,31 @@
 # SagaBook Changelog
 
+## 2026-08-22 - Closing operasional S276 production
+
+- Klasifikasi: `CONFIRMED`; Andreas menyetujui implementasi dan deployment.
+  Exact source `7e28a8d6ddb2c114e4cf02aa35e329511cf2c452` telah pushed pada branch
+  `codex/s276-sagabook-closing-v2`.
+- Before: closing production hanya memiliki submit idempoten dasar. After:
+  preflight ledger server, draft, submit, approve/reject, koreksi, reopen,
+  revision archive, resubmit, Task Center, audit, dan read-after-reload berjalan
+  sebagai satu workflow tenant/cabang dan capability scoped.
+- Expected cash berasal dari server; selisih wajib dijelaskan; stale tab ditolak
+  optimistic lock; retry, blocker task, review, koreksi, serta histori revisi
+  tidak menggandakan row atau audit.
+- Full regression 1.079/1.079 (12.556 assertion), focused backend 16/16 (153),
+  Playwright closing 9 pass/3 skip terencana, staff UI 2/2, build, design 26/0,
+  migration rehearsal, serta npm/Composer/OSV nol lulus.
+- Dua artifact awal berhenti dan rollback sebelum aktivasi karena newline
+  metadata serta permission executable parser migration. Artifact final dibuat
+  langsung dari objek Git dan diverifikasi executable di VPS.
+- Release `20260822103441-7e28a8d` aktif dengan rollback
+  `20260822064328-b033cdb`; backup terenkripsi `20260822T094835Z`, checksum,
+  disposable restore, migration, database audit 100, service/journal, public
+  smoke, dan header lulus tanpa exception.
+- Status `PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+  `BUSINESS_READY=false` sampai authenticated Owner/operator UAT dan dua studio
+  pilot selesai.
+
 ## 2026-08-22 - Cinematic Noir compact filter dan carousel controls
 
 - Klasifikasi: `CONFIRMED`; exact source

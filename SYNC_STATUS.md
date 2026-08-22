@@ -12,14 +12,25 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-22T13:52:00+07:00 |
-| Branch aktif | `codex/s275-cinematic-controls-knowledge` dari worktree bersih exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-22T17:41:00+07:00 |
+| Branch aktif | `main` dari clone terisolasi bersih exact `origin/main` |
 | Commit SHA terbaru | `main HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `9d68b8c1bd682fb1b6495c8fa7bb75a279308db2` |
-| Informasi terakhir disinkronkan | SagaBook Cinematic compact controls exact `b033cdb3...` aktif sebagai `20260822064328-b033cdb`; rollback, backup/restore, readiness 100/100, verifier 17/17, dan public/security 3/3 terverifikasi. |
+| Baseline sebelum pembaruan | `517e281f85d12f57d83cdbef41ee42f8b608e1a4` |
+| Informasi terakhir disinkronkan | SagaBook closing operasional exact `7e28a8d6...` aktif sebagai `20260822103441-7e28a8d`; rollback, backup/restore, migration, DB audit 100, service/journal, public smoke, dan header terverifikasi. |
 | Status sinkronisasi | `UP TO DATE` setelah validator dan fast-forward push. |
-| Konflik | Tidak ada. Worktree knowledge terisolasi di-fast-forward ke exact `origin/main` sebelum edit. |
-| Error | Tidak ada blocker sinkronisasi atau release exception. Published tenant profile tidak dimutasi dan `BUSINESS_READY=false`. |
+| Konflik | Tidak ada. Clone knowledge terisolasi dibuat dari exact `origin/main`; checkout lokal divergen tidak disentuh. |
+| Error | Tidak ada blocker sinkronisasi atau release exception. Authenticated Owner/operator UAT dan dua studio pilot masih residual; `BUSINESS_READY=false`. |
+
+## File yang berubah pada sinkronisasi ini (SagaBook S276 closing production)
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaBook Cinematic compact controls)
 

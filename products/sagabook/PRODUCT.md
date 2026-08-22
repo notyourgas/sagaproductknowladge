@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 22 Agustus 2026 13:52 WIB
-Evidence status: kontrol filter dan carousel Cinematic Noir production-activated pada exact release terverifikasi
+Updated: 22 Agustus 2026 17:41 WIB
+Evidence status: workflow closing operasional S276 production-activated pada exact release terverifikasi
 
 ## Tujuan dokumen
 
@@ -15,6 +15,26 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- Workflow closing operasional S276 exact source
+  `7e28a8d6ddb2c114e4cf02aa35e329511cf2c452` berstatus `CONFIRMED / PUSHED /
+  UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Operator dapat menjalankan
+  preflight, menyimpan draft, submit, memperbaiki closing yang ditolak, dan
+  resubmit; Owner/manager dapat approve, reject, serta membuka ulang sebagai
+  revisi teraudit. Expected cash dihitung dari ledger server, blocker membuka
+  Task Center, selisih wajib memiliki catatan, dan stale tab ditolak melalui
+  optimistic lock. Revision history, task review/koreksi, tenant/cabang,
+  capability, idempotency, dan read-after-reload dipertahankan dari UI hingga
+  database. Full regression 1.079/1.079 (12.556 assertion), focused backend
+  16/16 (153 assertion), Playwright closing 9 pass/3 skip terencana, staff UI
+  2/2, build, migration rehearsal, design audit 26/0, dan audit dependency nol
+  lulus. Release `20260822103441-7e28a8d` aktif dengan rollback
+  `20260822064328-b033cdb`; encrypted backup `20260822T094835Z`, checksum,
+  disposable restore, manifest, database audit 100, service/journal, public
+  smoke, dan header lulus tanpa release exception. Authenticated Owner/operator
+  UAT nyata serta dua studio pilot belum selesai, sehingga
+  `BUSINESS_READY=false`.
 
 - Perbaikan kontrol storefront `Cinematic Noir` exact source
   `b033cdb3bce72f65c055e3b00dad9e4c2c1a5216` berstatus `CONFIRMED / PUSHED /
