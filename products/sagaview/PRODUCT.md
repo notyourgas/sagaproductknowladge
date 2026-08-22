@@ -1,6 +1,6 @@
 # SagaView Product Knowledge
 
-Updated: 22 Agustus 2026 04:33 WIB
+Updated: 22 Agustus 2026 15:10 WIB
 
 Backend dan Studio SagaView terbaru berstatus `CONFIRMED / PUSHED /
 LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Backend exact
@@ -26,6 +26,20 @@ production. Rollback langsung backend adalah `20260821151535-16fa73b` dan
 Studio tetap `20260821090659-645dddb`.
 `BUSINESS_READY` belum diklaim; Founding Studio Pilot dan acceptance operasional
 mass-scale tetap gate terpisah.
+
+S265 memperbarui registry Changelog Owner agar rilis aktif yang ditampilkan
+tidak lagi tertinggal pada S146. Exact source
+`03b12891cb4820fa9db79c9b98d643b99254d020` menetapkan S262 sebagai rilis
+terkini, mempertahankan S146 sebagai stable, dan menjaga ringkasan publik tetap
+estimate-only, pembayaran off-app, serta Support Hub text-only/no-upload.
+Acceptance harness kini memakai optimistic-lock entitlement yang benar,
+aktivasi lisensi sintetis yang deterministik, navigasi mobile eksplisit, dan
+pointer touch untuk editor frame. Focused API 1/1 dengan 21 assertion,
+Playwright Changelog desktop/mobile 2/2, full Owner/device spec 30/30, build
+5.097 modul dan npm audit nol lulus. Composer lock tidak berubah; audit cache
+lokal tidak menemukan advisory, dengan freshness Packagist tertahan timeout. Status
+`CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production,
+schema, data, foto/path/output, dan `BUSINESS_READY` tidak berubah.
 
 Audit lineage 22 Agustus 2026 memastikan kontrak estimasi-only S159 dan
 stale-conflict editor S162 sudah menjadi ancestor exact pasangan production

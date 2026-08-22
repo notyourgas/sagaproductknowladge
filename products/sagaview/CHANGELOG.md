@@ -1,5 +1,30 @@
 # SagaView Changelog
 
+## 2026-08-22 - S265 Owner Changelog current-release dan acceptance harness
+
+- Klasifikasi: `CONFIRMED`; production read-only.
+- Before: registry Changelog Owner masih menandai S146 sebagai rilis terkini,
+  sedangkan backend production sudah membawa S262 melalui aktivasi S264.
+  Sejumlah fixture browser juga belum konsisten mengirim expected entitlement
+  version, membuka navigasi mobile, atau memakai pointer touch pada editor.
+- After: registry bundled menandai S262 sebagai current dan S146 sebagai stable;
+  sepuluh ID rilis unik serta ringkasan tetap public-safe. Fixture entitlement
+  menjadi deterministik, navigasi mobile dibuka sebelum berpindah halaman, dan
+  rotate/resize/move editor dibuktikan dengan pointer touch.
+- Security/data: tidak ada foto, path lokal, editor, output customer, credential,
+  tenant identifier, payment/provider, atau data production yang dikirim atau
+  diubah. Kontrak estimate-only, off-app payment, dan Support Hub text-only/
+  no-upload tetap dipertahankan.
+- Evidence: exact source `03b12891cb4820fa9db79c9b98d643b99254d020`
+  sudah pushed; focused API 1/1 dengan 21 assertion, Playwright Changelog
+  desktop/mobile 2/2, full Owner/device spec 30/30, build 5.097 modul, JSON
+  public-safe contract, dan npm audit nol lulus. Composer lock tidak berubah;
+  audit cache lokal nol advisory dengan freshness Packagist tertahan timeout.
+- Delivery: `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Production
+  tetap backend `51ceefcb...` / `20260821211648-51ceefc` dan Studio
+  `645dddb...` / `20260821090659-645dddb`; tidak ada deploy, migration,
+  perubahan data, atau perubahan `BUSINESS_READY`.
+
 ## 2026-08-22 - S264 Owner Pricing production activation
 
 - Klasifikasi: `CONFIRMED`; diotorisasi langsung oleh Andreas.
