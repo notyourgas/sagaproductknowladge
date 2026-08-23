@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-24 - SagaBook S284 manual booking draft/schedule sync
+
+- Informasi `CONFIRMED` berasal dari permintaan Andreas dan exact source
+  `f9b1af59726e524e9eee6fe895d19ff76fa94189` yang sudah dipush serta lolos
+  gate lokal yang diklaim.
+- Knowledge mencatat pencegahan reset draft oleh polling/version refresh,
+  penyimpanan draft customer hanya in-memory, dan default jadwal berbasis
+  timezone/waktu klik dengan fallback slot berikutnya.
+- Delivery `PUSHED / UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Tidak ada migration, production
+  tidak berubah, dan `BUSINESS_READY=false`.
+- Dokumen terdampak: SagaBook product/dossier/changelog/coverage, portfolio,
+  master, decisions, root changelog, dan sync status.
+
 ## 2026-08-24 - SagaBook S283 direct manual booking sync
 
 - Informasi `CONFIRMED` berasal dari permintaan Andreas dan exact source

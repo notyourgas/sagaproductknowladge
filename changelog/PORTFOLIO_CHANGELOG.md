@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-24 - SagaBook S284 Manual Booking draft dan jadwal
+
+- Input Manual Booking tidak lagi kembali ke default akibat refresh pasif
+  ketika operator masih mengetik; data customer tetap hanya di memory dialog.
+- Tanggal dan jam awal mengikuti timezone serta waktu dialog dibuka. Sistem
+  mempertahankan interval tepat atau memilih interval/slot berikutnya tanpa
+  melompat ke slot lebih awal.
+- Exact source `f9b1af59726e524e9eee6fe895d19ff76fa94189` sudah dipush;
+  unit, browser desktop/mobile/a11y, full/focused PHP, build, design, serta audit
+  dependency lulus. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED` dan
+  production tidak berubah.
+
 ## 2026-08-24 - SagaBook S283 Direct Manual Booking
 
 - Owner/operator dapat membuat booking dengan mengetik data customer dan

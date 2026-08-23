@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 24 Agustus 2026 04:33 WIB
-Evidence status: S283 direct manual booking tervalidasi dan dipush, belum dideploy; S280+S282 tetap aktif di production
+Updated: 24 Agustus 2026 04:58 WIB
+Evidence status: S284 draft dan default jadwal Manual Booking tervalidasi dan dipush, belum dideploy; S280+S282 tetap aktif di production
 
 ## Tujuan dokumen
 
@@ -15,6 +15,21 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- Proteksi draft dan default jadwal Manual Booking S284 pada exact source
+  `f9b1af59726e524e9eee6fe895d19ff76fa94189` berstatus `CONFIRMED / PUSHED /
+  UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Dialog kini menahan polling serta pemeriksaan versi
+  selama terbuka sehingga nama, WhatsApp, jumlah orang, catatan, dan pilihan
+  operasional tidak kembali ke default ketika operator masih mengetik. Draft
+  customer tetap in-memory dan tidak disimpan ke browser storage. Tanggal/jam
+  awal dihitung saat dialog dibuka menurut timezone studio; interval tepat
+  dipertahankan, waktu di antaranya dibulatkan maju, dan fallback availability
+  hanya memilih slot berikutnya, bukan slot pagi yang lebih awal. Unit 3/3,
+  browser/regression relevan 20 run, full PHP 1.108/1.108 (12.754 assertion),
+  focused backend 5/5 (36), build 5.129 modul, design audit 26/0, serta audit
+  npm/Composer/OSV nol lulus. Tidak ada migration atau deployment; production
+  tidak berubah dan `BUSINESS_READY=false`.
 
 - Direct Manual Booking S283 pada exact source
   `d53c1a550d6b9b2dcf55758c3a30390574b5c689` berstatus `CONFIRMED /

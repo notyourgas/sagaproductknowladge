@@ -1,6 +1,20 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 24 Agustus 2026 04:33 WIB
+Evidence cut-off: 24 Agustus 2026 04:58 WIB
+
+Proteksi draft dan default jadwal Manual Booking S284 exact source
+`f9b1af59726e524e9eee6fe895d19ff76fa94189` telah `CONFIRMED / PUSHED /
+UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`. Coverage membuktikan input yang belum disimpan tidak
+tertimpa polling/version refresh, event open berulang tidak mereset form, dan
+PII/chat mentah tidak dipersist ke browser storage. Tanggal/jam mengikuti
+timezone studio dan waktu pembukaan; interval tepat dipertahankan, waktu di
+antaranya dibulatkan maju, serta slot yang tidak tersedia hanya berpindah ke
+slot berikutnya. Unit 3/3, browser/regression relevan 20 run termasuk
+desktop/mobile/zoom/keyboard/forced-colors/reduced-motion, full PHP 1.108/1.108
+(12.754 assertion), focused 5/5 (36), build 5.129 modul, design 26/0, dan
+dependency audit nol lulus. Tidak ada migration atau deployment; production
+tidak berubah dan authenticated Owner/operator UAT tetap exit gate terpisah.
 
 Direct Manual Booking S283 exact source
 `d53c1a550d6b9b2dcf55758c3a30390574b5c689` telah `CONFIRMED / PUSHED /

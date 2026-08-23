@@ -7,6 +7,19 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Proteksi draft dan default jadwal Manual Booking S284 exact source
+  `f9b1af59726e524e9eee6fe895d19ff76fa94189`: `CONFIRMED / PUSHED /
+  UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Manual Booking didaftarkan sebagai editor aktif
+  agar polling dashboard dan pemeriksaan versi tidak mereset input selama
+  dialog terbuka. Draft customer hanya berada di memory. Jadwal awal mengikuti
+  timezone studio dan waktu pembukaan dialog, dibulatkan maju sesuai interval;
+  availability mempertahankan pilihan yang valid atau memilih slot berikutnya
+  tanpa mundur ke slot awal hari. Unit, browser desktop/mobile, zoom,
+  keyboard/focus, forced-colors, reduced-motion, full/focused PHP, build,
+  design, dan dependency audit lulus. Tidak ada migration dan production tidak
+  berubah.
+
 - Direct Manual Booking S283 exact source
   `d53c1a550d6b9b2dcf55758c3a30390574b5c689`: `CONFIRMED / PUSHED /
   UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /

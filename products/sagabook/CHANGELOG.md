@@ -1,5 +1,24 @@
 # SagaBook Changelog
 
+## 2026-08-24 - Proteksi draft dan default jadwal Manual Booking S284
+
+- Klasifikasi: `CONFIRMED`; exact source
+  `f9b1af59726e524e9eee6fe895d19ff76fa94189` telah dipush pada branch
+  `codex/s283-sagabook-manual-booking-direct-entry`.
+- Before: dialog tidak terdaftar sebagai editor aktif sehingga polling/version
+  refresh dapat mengembalikan input ke default; jam awal juga hardcoded 10.00
+  dan fallback availability dapat melompat ke slot paling awal. After: refresh
+  pasif ditahan selama dialog terbuka, draft tetap in-memory, serta tanggal/jam
+  mengikuti timezone dan waktu klik dengan fallback hanya ke slot berikutnya.
+- Exact interval dipertahankan (10.00 tetap 10.00); waktu di antaranya
+  dibulatkan maju (10.07 menjadi 10.30). Event open berulang tidak mereset form.
+- Unit 3/3, browser/regression relevan 20 run, full PHP 1.108/1.108 (12.754
+  assertion), focused backend 5/5 (36), build 5.129 modul, design audit 26/0,
+  dan audit npm/Composer/OSV nol lulus.
+- Status `PUSHED / UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; tidak ada migration, production
+  tidak berubah, dan `BUSINESS_READY=false`.
+
 ## 2026-08-24 - Direct Manual Booking S283 candidate
 
 - Klasifikasi: `CONFIRMED`; exact source

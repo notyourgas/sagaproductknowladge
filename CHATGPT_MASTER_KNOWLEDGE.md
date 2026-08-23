@@ -1,8 +1,20 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 24 Agustus 2026 04:33 WIB
+Evidence cut-off: 24 Agustus 2026 04:58 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
+
+SagaBook Manual Booking draft/schedule S284 exact source
+`f9b1af59726e524e9eee6fe895d19ff76fa94189` berstatus `CONFIRMED / PUSHED /
+UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`. Selama dialog terbuka, polling dashboard dan
+version refresh ditahan agar input operator tidak direset. Draft customer
+tetap in-memory. Tanggal/jam awal mengikuti timezone studio dan waktu klik:
+interval tepat dipertahankan, waktu di antaranya dibulatkan maju, dan slot tidak
+tersedia hanya berpindah ke slot berikutnya. Unit 3/3, browser/regression
+relevan 20 run, full PHP 1.108/1.108, focused backend 5/5, build, design 26/0,
+serta audit dependency nol lulus. Tidak ada migration atau deployment;
+production tidak berubah dan `BUSINESS_READY=false`.
 
 SagaBook Direct Manual Booking S283 exact source
 `d53c1a550d6b9b2dcf55758c3a30390574b5c689` berstatus `CONFIRMED / PUSHED /
