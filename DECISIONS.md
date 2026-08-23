@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-095 - Tutorial customer membagi lima langkah menjadi tiga halaman
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-24 |
+| Topik | Panduan awal Customer Flow SagaView |
+| Keputusan | Setelah sesi pemilihan dimulai, customer harus melihat tutorial sebelum memilih frame. Lima langkah dibagi menjadi tiga halaman dengan maksimal dua langkah per halaman, satu judul utama, ikon flat besar, teks ringkas, dan warna yang mengikuti display preset; implementasi pertama memakai Bachelor. |
+| Alasan | Admin memerlukan alat bantu penjelasan yang jelas, sedangkan lima langkah dalam satu layar dan judul/deskripsi ganda membuat informasi padat, sulit dibaca, dan menyisakan hierarchy visual yang membingungkan. |
+| Alternatif yang dipertimbangkan | Satu halaman lima langkah; tutorial berupa teks saja; tutorial statis dengan warna yang tidak mengikuti preset. |
+| Dampak | Customer memahami frame/foto, susun/review estimasi, serta consent/panggil admin sebelum masuk picker. Local-first/no-upload dan pembayaran off-app tidak berubah. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; Studio `ab2af26a...` / `20260823185455-ab2af26`; `BUSINESS_READY=false` sampai UAT studio nyata |
+| Dokumen terkait | [SagaView Product](products/sagaview/PRODUCT.md), [SagaView Dossier](products/sagaview/DOSSIER.md), [SagaView Changelog](products/sagaview/CHANGELOG.md), [SagaView Ledger](products/sagaview/FEATURE_COVERAGE_LEDGER.md) |
+
 ## DEC-094 - Add-on sesi SagaBook dibayar terpisah di lokasi
 
 | Field | Isi |

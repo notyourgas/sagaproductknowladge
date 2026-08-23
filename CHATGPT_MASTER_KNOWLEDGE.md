@@ -1,8 +1,23 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 24 Agustus 2026 01:28 WIB
+Evidence cut-off: 24 Agustus 2026 02:07 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
+
+SagaView S270 tutorial Customer Flow exact Studio
+`ab2af26a1fc55f953c90605bc066eaa63937f966` berstatus `CONFIRMED / PUSHED /
+UIUX_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Setelah Customer Flow dimulai,
+customer melihat tutorial tiga halaman: memilih frame/foto, menyusun dan
+memeriksa estimasi, lalu menentukan izin foto dan memanggil admin. Setiap
+halaman maksimal dua langkah, satu heading, ikon besar, target 44 piksel, dan
+warna mengikuti display preset; gaya pertama Bachelor. Studio aktif sebagai
+`20260823185455-ab2af26` dengan rollback `20260823093252-9f81f3d`; backend
+tetap `c828bd9d...` / `20260823091225-c828bd9`. Check 236 test, full E2E 149
+pass/3 controlled skip, desktop/mobile/a11y, build/budget, audit npm, UAT
+Windows 14 gate, backup/restore, atomic activation, provenance, browser/public
+smoke, service/journal, dan security header lulus. Foto/path/output tetap lokal,
+pembayaran tetap off-app, dan `BUSINESS_READY=false` sampai UAT studio nyata.
 
 SagaBook pembayaran add-on di lokasi S282 exact source
 `a4b95345cec11d5275f60a84f8e2be825ac416c1` berstatus `CONFIRMED / PUSHED /

@@ -1,6 +1,29 @@
 # SagaView Product Knowledge
 
-Updated: 23 Agustus 2026 16:40 WIB
+Updated: 24 Agustus 2026 02:07 WIB
+
+SagaView S270 berstatus `CONFIRMED / PUSHED / UIUX_VALIDATED /
+SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED`. Setelah operator memulai Customer Flow, halaman customer
+menampilkan tutorial tiga halaman sebelum pemilihan frame. Halaman pertama
+menjelaskan pemilihan frame dan foto favorit, halaman kedua penyusunan slot dan
+review estimasi, dan halaman ketiga izin foto serta pemanggilan admin. Setiap
+halaman memuat paling banyak dua langkah, satu judul utama, ikon besar, tombol
+minimal 44 piksel, dan warna yang mengikuti display preset aktif; implementasi
+awal memakai gaya Bachelor.
+
+Studio exact `ab2af26a1fc55f953c90605bc066eaa63937f966` aktif sebagai release
+`20260823185455-ab2af26`; backend tetap exact
+`c828bd9d3b38e4d35fca85bb66182b139ecf5a2e` / release
+`20260823091225-c828bd9`. Rollback Studio langsung tersedia ke
+`20260823093252-9f81f3d`. Check 53 file/236 test, full browser 149 pass dengan
+3 controlled skip, build, format/lint/typecheck, bundle 299,9 KiB/450 KiB,
+audit npm nol, UAT Windows 14 gate, backup terenkripsi/offsite dan restore
+disposable 146/155/149 tabel, atomic switch, provenance, public/browser smoke,
+security header, service, journal, serta rollback lulus. Foto, folder, path,
+editor, dan output tetap lokal; review hanya menampilkan estimasi dan pembayaran
+tetap ditangani staf di lokasi. UAT customer/studio nyata belum dilakukan,
+sehingga `BUSINESS_READY=false`.
 
 SagaView S269 berstatus `CONFIRMED / PUSHED / UIUX_VALIDATED /
 SECURITY_VALIDATED / QA_VALIDATED / DATA_INTEGRITY_VALIDATED /

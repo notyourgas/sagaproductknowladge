@@ -1,5 +1,35 @@
 # SagaView Changelog
 
+## 2026-08-24 - S270 tutorial Customer Flow production activation
+
+- Klasifikasi: `CONFIRMED / PUSHED / UIUX_VALIDATED / SECURITY_VALIDATED /
+  QA_VALIDATED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`, berdasarkan keputusan dan otorisasi deploy Andreas.
+- Before: customer langsung masuk ke pemilihan frame tanpa panduan ringkas yang
+  dapat dipakai admin untuk menjelaskan alur; rancangan awal menumpuk lima
+  langkah dan memiliki judul/deskripsi ganda.
+- After: tutorial tampil sebagai dialog tiga halaman setelah `Mulai memilih
+  frame`: langkah 1-2 memilih frame/foto, langkah 3-4 menyusun dan memeriksa
+  estimasi, serta langkah 5 menentukan izin foto lalu memanggil admin. Satu
+  halaman maksimal dua langkah, satu judul utama, ikon lebih besar, navigasi
+  jelas, target minimal 44 piksel, dan warna mengikuti display preset; gaya awal
+  memakai Bachelor.
+- Privacy/workflow: tidak ada API, migration, atau upload media baru. Foto,
+  folder, path, editor, dan output tetap lokal. Teks biaya tetap estimasi dan
+  pembayaran dilakukan staf di luar aplikasi.
+- Provenance: Studio exact `ab2af26a1fc55f953c90605bc066eaa63937f966`
+  aktif sebagai `20260823185455-ab2af26`; backend tetap exact
+  `c828bd9d3b38e4d35fca85bb66182b139ecf5a2e` /
+  `20260823091225-c828bd9`; rollback Studio
+  `20260823093252-9f81f3d`.
+- Evidence: check 53 file/236 test; full E2E 149 pass/3 controlled skip;
+  desktop/mobile tutorial, Axe, forced-colors, reduced-motion, build,
+  format/lint/typecheck, bundle budget, audit npm nol, UAT Windows exact-pair 14
+  gate, encrypted backup/offsite/restore 146/155/149 tabel, atomic switch,
+  provenance, browser/public smoke, header keamanan, service, dan journal lulus.
+- Delivery: exact source sudah pushed dan production aktif. UAT pada customer
+  dan operator studio nyata masih residual, sehingga `BUSINESS_READY=false`.
+
 ## 2026-08-23 - S269 harga cetakan tambahan production activation
 
 - Klasifikasi: `CONFIRMED / PUSHED / PRODUCTION_DEPLOYED /

@@ -1,5 +1,31 @@
 # SagaView Dossier
 
+## 2026-08-24 - S270 tutorial Customer Flow production
+
+`CONFIRMED / PUSHED / UIUX_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED /
+LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Studio exact
+`ab2af26a1fc55f953c90605bc066eaa63937f966` aktif sebagai
+`20260823185455-ab2af26`; backend tidak berubah dan tetap exact
+`c828bd9d3b38e4d35fca85bb66182b139ecf5a2e`.
+
+Dialog muncul setelah customer menekan `Mulai memilih frame`, sebelum route
+pemilihan frame dibuka. Lima langkah dibagi menjadi tiga halaman: (1) frame dan
+foto favorit, (2) susun slot dan periksa estimasi, (3) izin foto dan panggil
+admin. Setiap halaman memiliki satu heading aksesibel, maksimal dua kartu,
+progress halaman, Back/Next/confirm, penutupan Escape yang aman, serta aksi
+akhir eksplisit. Gaya awal Bachelor memakai ikon flat besar dan tiga token warna
+yang diwarisi dari display preset, sehingga preset lain dapat mengganti warna
+tanpa mengganti ilustrasi atau alur.
+
+Acceptance mencakup desktop 1440x900, mobile 390x844, target 44 piksel, Axe
+tanpa violation, forced-colors, reduced-motion, navigasi tiga halaman, Escape,
+dan konfirmasi akhir ke frame picker. Check 53 file/236 test, full E2E 149
+pass/3 controlled skip, build/budget, dependency audit nol, UAT Windows 14
+gate, immutable release, encrypted backup/restore, atomic switch, exact
+provenance, browser/public smoke, service/journal, security header, serta
+rollback `20260823093252-9f81f3d` lulus. Tidak ada migration atau cloud payload
+baru; local-first/no-upload dan estimasi-only tetap berlaku.
+
 ## 2026-08-22 - S268 frame recovery dan export safety repair production
 
 `CONFIRMED / PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /

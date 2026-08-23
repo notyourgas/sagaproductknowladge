@@ -1,6 +1,23 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 23 Agustus 2026 16:40 WIB
+Evidence cut-off: 24 Agustus 2026 02:07 WIB
+
+S270 tutorial Customer Flow: Studio exact
+`ab2af26a1fc55f953c90605bc066eaa63937f966` berstatus `PUSHED /
+UIUX_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` dan aktif sebagai
+`20260823185455-ab2af26`. Dialog tutorial membagi lima langkah nyata SagaView
+menjadi tiga halaman dengan maksimal dua langkah per halaman: frame/foto,
+susun/review estimasi, serta consent/panggil admin. Hierarki hanya memakai satu
+judul utama, ikon besar, label produk kecil, navigasi aksesibel, target minimal
+44 piksel, dan token warna display preset; gaya awal Bachelor. Foto/path/output
+tidak masuk API, backend tetap exact `c828bd9d...`, dan pembayaran tetap
+off-app. Check 53/236, full E2E 149 pass/3 controlled skip, Axe,
+forced-colors/reduced-motion, 1440x900 dan 390x844, build/budget, audit npm nol,
+UAT Windows 14 gate, backup/restore, activation atomic, exact provenance,
+browser/public smoke, header, service, journal, dan rollback lulus. Rollback
+Studio langsung `20260823093252-9f81f3d`; `BUSINESS_READY=false` sampai UAT
+customer/operator nyata.
 
 S269 harga cetakan tambahan setelah jatah paket: backend/Owner exact
 `c828bd9d3b38e4d35fca85bb66182b139ecf5a2e` dan Studio exact
@@ -44,9 +61,9 @@ Release cumulative terbaru: backend exact
 `c828bd9d3b38e4d35fca85bb66182b139ecf5a2e` aktif sebagai
 `20260823091225-c828bd9` dengan rollback langsung
 `20260822112703-298336d`; Studio exact
-`9f81f3d2d22481ff55cda9cceff555dc13ef6b9b` aktif sebagai
-`20260823093252-9f81f3d` dengan rollback langsung
-`20260822162437-dbaa247`. Incident login 500 akibat build manifest yang hilang
+`ab2af26a1fc55f953c90605bc066eaa63937f966` aktif sebagai
+`20260823185455-ab2af26` dengan rollback langsung
+`20260823093252-9f81f3d`. Incident login 500 akibat build manifest yang hilang
 sudah dipulihkan; manifest dan tiga entry Vite wajib sekarang menjadi gate
 fail-closed pada artifact dan deployment. Login publik/admin lulus 10/10
 request dan visual production 390x844/1440x900 tanpa overflow atau runtime

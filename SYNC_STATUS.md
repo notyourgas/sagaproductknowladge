@@ -12,14 +12,26 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-24T01:28:00+07:00 |
-| Branch aktif | `codex/knowledge-s282-onsite-additional` dari worktree terisolasi exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-24T02:07:00+07:00 |
+| Branch aktif | `codex/s270-sagaview-customer-tutorial-production-knowledge` dari worktree terisolasi exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `eceee9628fd0f42956ddb29594de5a01758816fb` |
-| Informasi terakhir disinkronkan | SagaBook S282 exact source `a4b95345...` memisahkan add-on sesi onsite dari gateway awal dan menghubungkannya ke total booking, ledger finance, serta expected cash closing. |
-| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; SHA immutable knowledge diselesaikan dari Git/GitHub untuk commit yang memuat snapshot ini. |
+| Baseline sebelum pembaruan | `572e0daa0c4ea0022a1c20962fb666e78a0e9f9f` |
+| Informasi terakhir disinkronkan | SagaView S270 exact Studio `ab2af26a...` menambahkan tutorial Customer Flow tiga halaman dan aktif sebagai `20260823185455-ab2af26`; backend tidak berubah. |
+| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; SHA immutable knowledge diselesaikan dari Git/GitHub untuk commit yang memuat snapshot ini. |
 | Konflik | Tidak ada. Clone knowledge terisolasi dibuat dari exact `origin/main`; checkout lokal divergen tidak disentuh. |
-| Error | Tidak ada blocker sinkronisasi. Production tidak berubah; integration/release gate dan authenticated UAT masih diperlukan sebelum deployment/business readiness. |
+| Error | Tidak ada blocker sinkronisasi. UAT customer/operator studio nyata masih diperlukan sebelum business readiness. |
+
+## File yang berubah pada sinkronisasi ini (SagaView S270 tutorial Customer Flow)
+
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/DOSSIER.md`
+- `products/sagaview/CHANGELOG.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
+- `DECISIONS.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaBook S282 onsite additional payment)
 

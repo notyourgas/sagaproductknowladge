@@ -1,5 +1,21 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-24 - SagaView S270 tutorial Customer Flow production sync
+
+- Informasi `CONFIRMED` berasal dari keputusan dan otorisasi deploy Andreas,
+  exact Studio `ab2af26a...`, serta runtime production yang diverifikasi setelah
+  atomic activation.
+- Knowledge mencatat tutorial tiga halaman dengan maksimal dua langkah per
+  halaman, hierarchy satu judul, ikon besar, warna display preset, navigasi
+  aksesibel, dan kontrak local-first/estimate-only.
+- Release `20260823185455-ab2af26` aktif dengan rollback Studio
+  `20260823093252-9f81f3d`; backend tetap `20260823091225-c828bd9`.
+- Gate unit/browser/a11y/build/security, UAT Windows, backup/restore,
+  provenance, smoke, service/journal, header, dan rollback lulus;
+  `BUSINESS_READY=false` sampai UAT studio nyata.
+- Dokumen terdampak: SagaView product/dossier/changelog/coverage, portfolio,
+  master, decisions, root changelog, dan sync status.
+
 ## 2026-08-24 - SagaBook S282 onsite additional payment sync
 
 - Informasi `CONFIRMED` berasal dari keputusan Andreas dan exact source

@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-24 - SagaView S270 tutorial Customer Flow production
+
+- Customer mendapat tutorial tiga halaman sebelum memilih frame: frame/foto,
+  susun/review estimasi, lalu consent/panggil admin; setiap halaman maksimal dua
+  langkah dan mengikuti warna display preset.
+- Exact Studio `ab2af26a...` aktif sebagai `20260823185455-ab2af26`; backend
+  tetap `c828bd9d...` / `20260823091225-c828bd9`. Rollback Studio langsung ke
+  `20260823093252-9f81f3d` tersedia.
+- Unit, full browser, desktop/mobile/a11y, build/budget, audit dependency, UAT
+  Windows, backup/restore, atomic switch, provenance, public/browser smoke,
+  header, service, dan journal lulus.
+- Foto/path/output tetap lokal dan pembayaran tetap off-app. SagaBook serta
+  produk lain tidak berubah; `BUSINESS_READY=false` sampai UAT studio nyata.
+
 ## 2026-08-24 - SagaBook S282 pembayaran add-on di lokasi
 
 - Exact source `a4b95345cec11d5275f60a84f8e2be825ac416c1` memisahkan
