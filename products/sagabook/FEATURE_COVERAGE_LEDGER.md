@@ -1,6 +1,18 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 23 Agustus 2026 03:33 WIB
+Evidence cut-off: 24 Agustus 2026 01:28 WIB
+
+Pembayaran add-on di lokasi S282 exact source
+`a4b95345cec11d5275f60a84f8e2be825ac416c1` telah `CONFIRMED / PUSHED /
+UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Coverage membuktikan add-on sesi
+buatan admin memiliki scope onsite dan transaksi finance/ledger terpisah;
+menambah total akhir booking serta expected cash closing tanpa mengubah subtotal
+checkout atau nominal sesi gateway awal. Booking Detail Owner/Staff dan customer
+memisahkan booking awal, fee gateway, onsite, dan total akhir. Full PHP
+1.087/1.087 (12.630 assertion), focused payment/closing, browser desktop/mobile
+4/4, build, serta audit dependency nol lulus. Tidak ada migration; production
+tidak berubah dan `BUSINESS_READY=false`.
 
 Hardening closing operasional S278 exact source
 `a53f21493c19a5b4374f47120348df9c04b41e63` telah `CONFIRMED / PUSHED /

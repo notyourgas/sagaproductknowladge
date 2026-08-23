@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-24 - SagaBook S282 pembayaran add-on di lokasi
+
+- Exact source `a4b95345cec11d5275f60a84f8e2be825ac416c1` memisahkan
+  add-on sesi yang dibuat admin dari payment gateway awal.
+- Add-on onsite menambah total booking dan expected cash closing melalui
+  transaksi finance/ledger sendiri; checkout awal serta nominal provider tidak
+  dihitung ulang. Booking Detail Owner/Staff dan customer menunjukkan alokasi
+  pembayaran secara eksplisit.
+- Full PHP 1.087/1.087, browser desktop/mobile 4/4, focused payment/closing,
+  build, dan audit dependency nol lulus. Status `PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; tidak ada migration dan production tidak berubah.
+
 ## 2026-08-23 - SagaView S269 harga cetakan tambahan production
 
 - Backend/Owner exact `c828bd9d...` aktif sebagai `20260823091225-c828bd9`;

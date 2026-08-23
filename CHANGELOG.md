@@ -1,5 +1,21 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-24 - SagaBook S282 onsite additional payment sync
+
+- Informasi `CONFIRMED` berasal dari keputusan Andreas dan exact source
+  `a4b95345cec11d5275f60a84f8e2be825ac416c1` yang telah pushed dan lolos
+  gate lokal.
+- Knowledge mencatat add-on sesi buatan admin sebagai pembayaran onsite
+  terpisah: total akhir booking dan expected cash bertambah, sedangkan checkout
+  awal serta nominal payment gateway tidak berubah.
+- UI Owner/Staff dan customer, backend allocation, finance ledger, closing,
+  audit, tenant/cabang, serta fallback legacy tercakup. Delivery `PUSHED /
+  UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+  tidak ada migration, production tidak berubah, dan `BUSINESS_READY=false`.
+- Dokumen terdampak: SagaBook product/changelog/coverage, portfolio, master,
+  decisions, root changelog, dan sync status.
+
 ## 2026-08-23 - SagaView S269 production activation sync
 
 - Informasi `CONFIRMED` berasal dari persetujuan deployment Andreas dan runtime

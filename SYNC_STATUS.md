@@ -12,14 +12,25 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-23T16:40:00+07:00 |
-| Branch aktif | `codex/s269-sagaview-extra-print-pricing-knowledge` dari worktree terisolasi exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-24T01:28:00+07:00 |
+| Branch aktif | `codex/knowledge-s282-onsite-additional` dari worktree terisolasi exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `6054c44777f6ba2e117f942b53b10250095049a2` |
-| Informasi terakhir disinkronkan | SagaView S269 exact backend/Owner `c828bd9d...` aktif sebagai `20260823091225-c828bd9` dan Studio `9f81f3d...` aktif sebagai `20260823093252-9f81f3d`; Owner authority harga cetakan tambahan tetap estimate-only, off-app, dan no-upload. |
-| Status sinkronisasi | `VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; SHA immutable diselesaikan dari Git/GitHub untuk commit yang memuat snapshot ini. |
+| Baseline sebelum pembaruan | `eceee9628fd0f42956ddb29594de5a01758816fb` |
+| Informasi terakhir disinkronkan | SagaBook S282 exact source `a4b95345...` memisahkan add-on sesi onsite dari gateway awal dan menghubungkannya ke total booking, ledger finance, serta expected cash closing. |
+| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; SHA immutable knowledge diselesaikan dari Git/GitHub untuk commit yang memuat snapshot ini. |
 | Konflik | Tidak ada. Clone knowledge terisolasi dibuat dari exact `origin/main`; checkout lokal divergen tidak disentuh. |
-| Error | Tidak ada blocker deployment S269. Authenticated Owner UAT belum dilakukan dan `BUSINESS_READY=false`. |
+| Error | Tidak ada blocker sinkronisasi. Production tidak berubah; integration/release gate dan authenticated UAT masih diperlukan sebelum deployment/business readiness. |
+
+## File yang berubah pada sinkronisasi ini (SagaBook S282 onsite additional payment)
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
+- `DECISIONS.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaView S269 extra print pricing)
 

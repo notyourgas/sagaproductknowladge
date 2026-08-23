@@ -1,5 +1,26 @@
 # SagaBook Changelog
 
+## 2026-08-24 - Pembayaran add-on di lokasi S282 candidate
+
+- Klasifikasi: `CONFIRMED`; exact source
+  `a4b95345cec11d5275f60a84f8e2be825ac416c1` telah pushed pada branch
+  `codex/s282-sagabook-onsite-additional-payment`.
+- Before: add-on yang dimasukkan admin saat sesi menambah total booking sehingga
+  dapat terbaca sebagai kekurangan payment gateway. After: add-on tersebut
+  memiliki scope onsite, metode/status terpisah, transaksi finance dan ledger
+  sendiri, serta masuk ke expected cash closing tanpa mengubah checkout awal
+  atau sesi provider.
+- Booking Detail Owner/Staff dan customer menampilkan booking awal, biaya
+  gateway, pembayaran onsite, dan total akhir secara terpisah. Tenant/cabang,
+  permission, audit, idempotency, read-after-write, dan fallback data lama tetap
+  dipertahankan.
+- Full PHP 1.087/1.087 (12.630 assertion), focused backend/payment/closing,
+  browser desktop/mobile 4/4, build 5.128 modul, format file baru, serta audit
+  npm/Composer/OSV nol lulus. Tidak ada migration.
+- Status `PUSHED / UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+  production tidak berubah dan `BUSINESS_READY=false`.
+
 ## 2026-08-23 - Hardening closing operasional S278 production
 
 - Klasifikasi: `CONFIRMED`; Andreas menyetujui penyelesaian blocker dan deploy.

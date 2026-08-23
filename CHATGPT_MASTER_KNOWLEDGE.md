@@ -1,8 +1,21 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 23 Agustus 2026 16:40 WIB
+Evidence cut-off: 24 Agustus 2026 01:28 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
+
+SagaBook pembayaran add-on di lokasi S282 exact source
+`a4b95345cec11d5275f60a84f8e2be825ac416c1` berstatus `CONFIRMED / PUSHED /
+UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+Add-on yang dibuat admin ketika sesi berlangsung adalah pembayaran onsite dengan
+metode/status serta transaksi finance/ledger sendiri. Nilainya menambah total
+akhir booking dan expected cash closing, tetapi tidak mengubah subtotal checkout
+atau nominal sesi gateway yang sudah dibuat. Booking Detail Owner/Staff dan
+customer memisahkan booking awal, biaya gateway, pembayaran onsite, serta total
+akhir. Full PHP 1.087/1.087 (12.630 assertion), focused payment/closing,
+browser desktop/mobile 4/4, build, dan audit dependency nol lulus. Tidak ada
+migration; production tidak berubah dan `BUSINESS_READY=false`.
 
 SagaView S269 harga cetakan tambahan exact backend/Owner
 `c828bd9d3b38e4d35fca85bb66182b139ecf5a2e` dan Studio

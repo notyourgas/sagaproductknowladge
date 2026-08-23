@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-094 - Add-on sesi SagaBook dibayar terpisah di lokasi
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-24 |
+| Topik | Alokasi pembayaran add-on operasional SagaBook |
+| Keputusan | Add-on yang dibuat admin saat sesi berlangsung adalah pembayaran onsite dengan metode dan status sendiri. Nilainya menambah total akhir booking dan expected cash closing, tetapi tidak mengubah subtotal checkout atau nominal sesi payment gateway yang sudah dibuat. |
+| Alasan | Tambahan layanan di studio terjadi setelah checkout awal dan dibayar langsung di lokasi; memasukkannya ke ekspektasi gateway akan membuat status pembayaran, rekonsiliasi, serta closing tidak akurat. |
+| Alternatif yang dipertimbangkan | Mengubah nominal sesi gateway lama; membuat payment gateway kedua otomatis; hanya mengubah tampilan tanpa ledger terpisah. |
+| Dampak | Booking Detail Owner/Staff dan customer memisahkan booking awal, fee gateway, pembayaran onsite, dan total akhir. Backend, finance transaction, ledger, audit, serta closing memakai payment scope eksplisit; tidak ada migration. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; exact source `a4b95345cec11d5275f60a84f8e2be825ac416c1`; production tidak berubah dan `BUSINESS_READY=false` |
+| Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Changelog](products/sagabook/CHANGELOG.md), [SagaBook Ledger](products/sagabook/FEATURE_COVERAGE_LEDGER.md) |
+
 ## DEC-093 - Harga cetakan tambahan menjadi authority Owner setelah jatah paket
 
 | Field | Isi |
