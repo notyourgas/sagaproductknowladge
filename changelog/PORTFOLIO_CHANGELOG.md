@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-23 - SagaView S269 harga cetakan tambahan production
+
+- Backend/Owner exact `c828bd9d...` aktif sebagai `20260823091225-c828bd9`;
+  Studio exact `9f81f3d...` aktif sebagai `20260823093252-9f81f3d`.
+- Rollback langsung menunjuk kedua release S268. Backup terenkripsi/offsite,
+  restore disposable, artifact/source backup, UAT exact-pair 14 gate, atomic
+  switch, provenance, smoke, security header, service, dan journal SagaView
+  lulus.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; tidak ada migration,
+  payment in-app, atau upload foto/path/output. Authenticated Owner UAT belum
+  dilakukan sehingga `BUSINESS_READY=false`.
+
 ## 2026-08-23 - SagaView S269 harga cetakan tambahan
 
 - Owner Dashboard kini mengatur harga cetakan Original setelah jatah gratis

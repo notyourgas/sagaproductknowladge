@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-093 - Harga cetakan tambahan menjadi authority Owner setelah jatah paket
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-23 |
+| Topik | Harga cetakan Original tambahan dan workflow estimasi SagaView |
+| Keputusan | Owner Dashboard harus dapat mengaktifkan dan mengubah harga rupiah cetakan Original tambahan. Jatah cetak gratis dari paket dipakai lebih dahulu; hanya cetakan di atas jatah yang menambah estimasi total. Pembayaran tetap ditangani staf di lokasi di luar aplikasi. |
+| Alasan | Harga tambahan sebelumnya belum memiliki authority eksplisit di Owner Dashboard, sehingga operator tidak mempunyai satu sumber harga yang konsisten setelah jatah paket habis. |
+| Alternatif yang dipertimbangkan | Harga tetap hanya disimpan lokal di Studio; semua cetakan dikenai harga; menambahkan proses pembayaran di aplikasi. |
+| Dampak | Backend mempertahankan permission, version/checksum, stale conflict, idempotency, audit, dan preservasi setting; Studio tersambung memakai authority cloud. Tidak ada provider, QRIS, rekening, callback, status paid, atau upload foto/path/output. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; backend/Owner `c828bd9d...` / `20260823091225-c828bd9`, Studio `9f81f3d...` / `20260823093252-9f81f3d`; authenticated Owner UAT residual dan `BUSINESS_READY=false` |
+| Dokumen terkait | [SagaView Product](products/sagaview/PRODUCT.md), [SagaView Changelog](products/sagaview/CHANGELOG.md), [SagaView Ledger](products/sagaview/FEATURE_COVERAGE_LEDGER.md), [Gaps](GAPS.md) |
+
 ## DEC-092 - Template Booking memakai satu draft server untuk preview dan publish
 
 | Field | Isi |

@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-23 - SagaView S269 production activation sync
+
+- Informasi `CONFIRMED` berasal dari persetujuan deployment Andreas dan runtime
+  exact yang diverifikasi setelah atomic activation.
+- Backend/Owner `c828bd9d...` aktif sebagai `20260823091225-c828bd9`; Studio
+  `9f81f3d...` aktif sebagai `20260823093252-9f81f3d`, dengan rollback langsung
+  ke kedua release S268.
+- Backup terenkripsi/offsite, restore disposable, UAT 14 gate, source backup,
+  atomic switch, provenance, smoke, security header, service, dan journal
+  SagaView lulus. Authenticated Owner UAT belum dilakukan sehingga
+  `BUSINESS_READY=false`.
+- Dokumen terdampak: SagaView product/changelog/coverage, portfolio, master,
+  decisions, root changelog, dan sync status.
+
 ## 2026-08-23 - SagaView S269 extra print pricing sync
 
 - Informasi `CONFIRMED` berasal dari permintaan Andreas dan exact source
@@ -12,7 +26,7 @@
   DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
   production tetap S268 dan `BUSINESS_READY=false`.
 - Dokumen terdampak: SagaView product/changelog/coverage, portfolio, master,
-  root changelog, dan sync status.
+  decisions, root changelog, dan sync status.
 
 ## 2026-08-23 - SagaBook S278 production activation sync
 

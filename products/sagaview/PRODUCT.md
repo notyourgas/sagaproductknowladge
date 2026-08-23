@@ -1,10 +1,10 @@
 # SagaView Product Knowledge
 
-Updated: 23 Agustus 2026 15:52 WIB
+Updated: 23 Agustus 2026 16:40 WIB
 
 SagaView S269 berstatus `CONFIRMED / PUSHED / UIUX_VALIDATED /
 SECURITY_VALIDATED / QA_VALIDATED / DATA_INTEGRITY_VALIDATED /
-LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Owner Dashboard kini menjadi
+LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Owner Dashboard kini menjadi
 authority harga cetakan Original tambahan: jatah cetak gratis dari paket
 dipakai lebih dahulu, lalu cetakan berikutnya masuk ke estimasi total dengan
 harga rupiah yang ditetapkan Owner. Studio yang tersambung ke cloud menerima
@@ -17,10 +17,16 @@ Exact source backend/Owner
 `c828bd9d3b38e4d35fca85bb66182b139ecf5a2e` dan Studio
 `9f81f3d2d22481ff55cda9cceff555dc13ef6b9b` sudah pushed. Gate lulus:
 backend SagaView 207/207 dengan 3.498 assertion, Owner Playwright desktop/mobile
-2/2, Studio 52 file/232 test, build Owner dan Studio, format/lint/typecheck,
-bundle terbesar 299,9 KiB dari batas 450 KiB, Pint, serta audit Composer/npm
-nol. Production tetap S268; belum ada deployment, activation, authenticated
-UAT, atau klaim `BUSINESS_READY`.
+2/2, Studio 52 file/232 test dan full E2E 147 pass/3 controlled skip, build
+Owner dan Studio, format/lint/typecheck, bundle terbesar 299,9 KiB dari batas
+450 KiB, Pint, serta audit Composer/npm nol. Backend/Owner aktif sebagai
+release `20260823091225-c828bd9` dengan rollback
+`20260822112703-298336d`; Studio aktif sebagai release
+`20260823093252-9f81f3d` dengan rollback `20260822162437-dbaa247`. Fresh
+encrypted backup/offsite dan restore disposable 146/155/149 tabel, UAT
+exact-pair 14 gate, atomic switch, provenance, public smoke, security header,
+service, serta journal SagaView lulus. Authenticated Owner UAT pada data nyata
+belum dilakukan, sehingga `BUSINESS_READY=false`.
 
 SagaView S268 berstatus `CONFIRMED / PUSHED / LOCAL_VALIDATED /
 PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Backend/Owner exact

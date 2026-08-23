@@ -1,5 +1,22 @@
 # SagaView Changelog
 
+## 2026-08-23 - S269 harga cetakan tambahan production activation
+
+- Klasifikasi: `CONFIRMED / PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED` berdasarkan persetujuan langsung Andreas.
+- Backend/Owner exact `c828bd9d3b38e4d35fca85bb66182b139ecf5a2e`
+  aktif sebagai `20260823091225-c828bd9`; Studio exact
+  `9f81f3d2d22481ff55cda9cceff555dc13ef6b9b` aktif sebagai
+  `20260823093252-9f81f3d`.
+- Rollback langsung tersedia pada backend `20260822112703-298336d` dan Studio
+  `20260822162437-dbaa247`. Fresh encrypted backup/offsite dan restore
+  disposable 146/155/149 tabel, artifact immutable, source backup lokal+VPS,
+  UAT exact-pair 14 gate, atomic switch, provenance, public smoke, security
+  header, service, serta journal SagaView lulus.
+- Tidak ada migration, provider pembayaran, QRIS, rekening, callback, status
+  paid, atau upload foto/path/output. SagaBook dan Saga Platform tidak berubah.
+- Authenticated Owner UAT belum dilakukan sehingga `BUSINESS_READY=false`.
+
 ## 2026-08-23 - S269 harga cetakan tambahan setelah jatah paket
 
 - Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /

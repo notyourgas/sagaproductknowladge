@@ -1,12 +1,13 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 23 Agustus 2026 15:52 WIB
+Evidence cut-off: 23 Agustus 2026 16:40 WIB
 
 S269 harga cetakan tambahan setelah jatah paket: backend/Owner exact
 `c828bd9d3b38e4d35fca85bb66182b139ecf5a2e` dan Studio exact
 `9f81f3d2d22481ff55cda9cceff555dc13ef6b9b` berstatus `PUSHED /
 UIUX_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED /
-DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED`.
 Owner Dashboard mengatur aktif/nonaktif dan harga rupiah cetakan Original
 tambahan. Kredit cetak gratis paket dikonsumsi lebih dahulu; hanya jumlah di
 atas jatah yang masuk estimasi total. Cloud settings mempertahankan paket sesi,
@@ -14,9 +15,15 @@ harga, setting privacy, dan metadata lain melalui version/checksum; stale write
 ditolak 409 dan save identik idempotent. Studio cloud-connected tidak lagi
 menjadi authority harga. Backend 207/3.498, Owner browser desktop/mobile 2/2,
 Studio 52 file/232 test, build/budget, lint/typecheck/format, Pint, serta audit
-dependency nol lulus. Payload tidak memuat foto/path/output dan pembayaran
-tetap off-app. Production tetap S268; deployment, activation, authenticated
-UAT, dan `BUSINESS_READY` belum dilakukan.
+dependency nol lulus. Full E2E Studio 147 pass/3 controlled skip, repeat
+isolasi sesi 10/10, dan UAT exact-pair 14 gate tanpa blocker juga lulus. Payload
+tidak memuat foto/path/output dan pembayaran tetap off-app. Backend/Owner aktif
+sebagai `20260823091225-c828bd9`, Studio sebagai
+`20260823093252-9f81f3d`, dengan rollback langsung ke kedua release S268.
+Fresh encrypted backup/offsite dan restore disposable 146/155/149 tabel,
+artifact/source backup, atomic switch, provenance, smoke, security header,
+service, dan journal SagaView lulus. Authenticated Owner UAT belum dilakukan;
+`BUSINESS_READY=false`.
 
 S268 frame preview/export recovery: backend/Owner exact
 `298336da09b735638c4ffea9b7e8830b1283452e` dan Studio exact
@@ -34,12 +41,12 @@ authority, dan consent tetap terjaga. Backend aktif sebagai
 `20260822112703-298336d`; Studio aktif sebagai `20260822162437-dbaa247`.
 
 Release cumulative terbaru: backend exact
-`298336da09b735638c4ffea9b7e8830b1283452e` aktif sebagai
-`20260822112703-298336d` dengan rollback langsung
-`20260821211648-51ceefc`; Studio exact
-`dbaa247c035c5b15d80f490526a13a4ad5848a4a` aktif sebagai
-`20260822162437-dbaa247` dengan rollback langsung
-`20260821090659-645dddb`. Incident login 500 akibat build manifest yang hilang
+`c828bd9d3b38e4d35fca85bb66182b139ecf5a2e` aktif sebagai
+`20260823091225-c828bd9` dengan rollback langsung
+`20260822112703-298336d`; Studio exact
+`9f81f3d2d22481ff55cda9cceff555dc13ef6b9b` aktif sebagai
+`20260823093252-9f81f3d` dengan rollback langsung
+`20260822162437-dbaa247`. Incident login 500 akibat build manifest yang hilang
 sudah dipulihkan; manifest dan tiga entry Vite wajib sekarang menjadi gate
 fail-closed pada artifact dan deployment. Login publik/admin lulus 10/10
 request dan visual production 390x844/1440x900 tanpa overflow atau runtime
