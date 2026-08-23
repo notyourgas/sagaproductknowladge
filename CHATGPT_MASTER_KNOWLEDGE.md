@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 24 Agustus 2026 02:07 WIB
+Evidence cut-off: 24 Agustus 2026 02:43 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -20,7 +20,7 @@ smoke, service/journal, dan security header lulus. Foto/path/output tetap lokal,
 pembayaran tetap off-app, dan `BUSINESS_READY=false` sampai UAT studio nyata.
 
 SagaBook pembayaran add-on di lokasi S282 exact source
-`a4b95345cec11d5275f60a84f8e2be825ac416c1` berstatus `CONFIRMED / PUSHED /
+`7df014d9155cc4abe343955c399d19d9f39e08fd` berstatus `CONFIRMED / PUSHED /
 UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
 DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
 Add-on yang dibuat admin ketika sesi berlangsung adalah pembayaran onsite dengan
@@ -28,9 +28,13 @@ metode/status serta transaksi finance/ledger sendiri. Nilainya menambah total
 akhir booking dan expected cash closing, tetapi tidak mengubah subtotal checkout
 atau nominal sesi gateway yang sudah dibuat. Booking Detail Owner/Staff dan
 customer memisahkan booking awal, biaya gateway, pembayaran onsite, serta total
-akhir. Full PHP 1.087/1.087 (12.630 assertion), focused payment/closing,
-browser desktop/mobile 4/4, build, dan audit dependency nol lulus. Tidak ada
-migration; production tidak berubah dan `BUSINESS_READY=false`.
+akhir. Legacy snapshot yang sudah telanjur memasukkan cash onsite ke checkout
+diklem ke nilai checkout awal. Full PHP 1.102/1.102 (12.709 assertion), focused
+payment/database 13/13, browser desktop/mobile 4/4, build, dan audit dependency
+nol lulus. Kandidat gabungan membawa dua migration reporting S280 yang lulus
+rehearsal disposable. Deployment rollback aman setelah dua correction round;
+production tetap exact `55ede99c...` / `20260823062531-55ede99` dan
+`BUSINESS_READY=false`.
 
 SagaView S269 harga cetakan tambahan exact backend/Owner
 `c828bd9d3b38e4d35fca85bb66182b139ecf5a2e` dan Studio

@@ -12,14 +12,14 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-24T02:07:00+07:00 |
-| Branch aktif | `codex/s270-sagaview-customer-tutorial-production-knowledge` dari worktree terisolasi exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-24T02:43:00+07:00 |
+| Branch aktif | `codex/knowledge-s282-deploy-blocked` dari worktree terisolasi exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `572e0daa0c4ea0022a1c20962fb666e78a0e9f9f` |
-| Informasi terakhir disinkronkan | SagaView S270 exact Studio `ab2af26a...` menambahkan tutorial Customer Flow tiga halaman dan aktif sebagai `20260823185455-ab2af26`; backend tidak berubah. |
-| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; SHA immutable knowledge diselesaikan dari Git/GitHub untuk commit yang memuat snapshot ini. |
+| Baseline sebelum pembaruan | `03bdecd36c7d6f4bba803c11d1e9a434cbf87933` |
+| Informasi terakhir disinkronkan | SagaBook S282 terintegrasi dengan kandidat reporting pada exact source `7df014d9...`; legacy onsite snapshot fail-safe tervalidasi, tetapi deployment berhenti aman setelah dua correction round. |
+| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap exact `55ede99c...` / `20260823062531-55ede99`. |
 | Konflik | Tidak ada. Clone knowledge terisolasi dibuat dari exact `origin/main`; checkout lokal divergen tidak disentuh. |
-| Error | Tidak ada blocker sinkronisasi. UAT customer/operator studio nyata masih diperlukan sebelum business readiness. |
+| Error | Atomic deployment belum terminal: percobaan pertama menemukan data legacy onsite yang menuntut hotfix audit/allocation; retry berikutnya tertahan ruang `/tmp`; final retry rollback otomatis sebelum activation final dan remote wrapper belum mempertahankan failure stage. Production sehat dan tidak berubah. |
 
 ## File yang berubah pada sinkronisasi ini (SagaView S270 tutorial Customer Flow)
 

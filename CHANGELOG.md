@@ -19,7 +19,7 @@
 ## 2026-08-24 - SagaBook S282 onsite additional payment sync
 
 - Informasi `CONFIRMED` berasal dari keputusan Andreas dan exact source
-  `a4b95345cec11d5275f60a84f8e2be825ac416c1` yang telah pushed dan lolos
+  `7df014d9155cc4abe343955c399d19d9f39e08fd` yang telah pushed dan lolos
   gate lokal.
 - Knowledge mencatat add-on sesi buatan admin sebagai pembayaran onsite
   terpisah: total akhir booking dan expected cash bertambah, sedangkan checkout
@@ -28,7 +28,9 @@
   audit, tenant/cabang, serta fallback legacy tercakup. Delivery `PUSHED /
   UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
   DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
-  tidak ada migration, production tidak berubah, dan `BUSINESS_READY=false`.
+  legacy snapshot onsite fail-safe dan dua migration reporting terintegrasi.
+  Dua correction round deployment berhenti dengan rollback aman; production
+  tetap `55ede99c...` / `20260823062531-55ede99`, dan `BUSINESS_READY=false`.
 - Dokumen terdampak: SagaBook product/changelog/coverage, portfolio, master,
   decisions, root changelog, dan sync status.
 

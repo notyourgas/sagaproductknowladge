@@ -1,9 +1,9 @@
 # SagaBook Changelog
 
-## 2026-08-24 - Pembayaran add-on di lokasi S282 candidate
+## 2026-08-24 - Pembayaran add-on di lokasi S282 candidate gabungan
 
 - Klasifikasi: `CONFIRMED`; exact source
-  `a4b95345cec11d5275f60a84f8e2be825ac416c1` telah pushed pada branch
+  `7df014d9155cc4abe343955c399d19d9f39e08fd` telah pushed pada branch
   `codex/s282-sagabook-onsite-additional-payment`.
 - Before: add-on yang dimasukkan admin saat sesi menambah total booking sehingga
   dapat terbaca sebagai kekurangan payment gateway. After: add-on tersebut
@@ -14,12 +14,19 @@
   gateway, pembayaran onsite, dan total akhir secara terpisah. Tenant/cabang,
   permission, audit, idempotency, read-after-write, dan fallback data lama tetap
   dipertahankan.
-- Full PHP 1.087/1.087 (12.630 assertion), focused backend/payment/closing,
+- Legacy snapshot yang telah memasukkan cash onsite ke total checkout kini
+  diklem kembali ke nilai checkout awal sehingga payment session Rp5.100 tetap
+  valid untuk booking awal Rp5.000 dengan additional onsite Rp10.000.
+- Full PHP 1.102/1.102 (12.709 assertion), focused backend/payment/database
+  13/13 (86 assertion),
   browser desktop/mobile 4/4, build 5.128 modul, format file baru, serta audit
-  npm/Composer/OSV nol lulus. Tidak ada migration.
+  npm/Composer/OSV nol lulus. Kandidat mengintegrasikan dua migration reporting
+  S280; fresh/rollback/remigrate disposable lulus.
 - Status `PUSHED / UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
   DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
-  production tidak berubah dan `BUSINESS_READY=false`.
+  dua correction round deployment berhenti aman dan rollback otomatis. Active
+  production tetap `55ede99cc2eb3adc467510ef1c0f0d09f271c959` / release
+  `20260823062531-55ede99`; `BUSINESS_READY=false`.
 
 ## 2026-08-23 - Hardening closing operasional S278 production
 
