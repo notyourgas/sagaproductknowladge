@@ -1,6 +1,22 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 22 Agustus 2026 23:34 WIB
+Evidence cut-off: 23 Agustus 2026 15:52 WIB
+
+S269 harga cetakan tambahan setelah jatah paket: backend/Owner exact
+`c828bd9d3b38e4d35fca85bb66182b139ecf5a2e` dan Studio exact
+`9f81f3d2d22481ff55cda9cceff555dc13ef6b9b` berstatus `PUSHED /
+UIUX_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED /
+DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+Owner Dashboard mengatur aktif/nonaktif dan harga rupiah cetakan Original
+tambahan. Kredit cetak gratis paket dikonsumsi lebih dahulu; hanya jumlah di
+atas jatah yang masuk estimasi total. Cloud settings mempertahankan paket sesi,
+harga, setting privacy, dan metadata lain melalui version/checksum; stale write
+ditolak 409 dan save identik idempotent. Studio cloud-connected tidak lagi
+menjadi authority harga. Backend 207/3.498, Owner browser desktop/mobile 2/2,
+Studio 52 file/232 test, build/budget, lint/typecheck/format, Pint, serta audit
+dependency nol lulus. Payload tidak memuat foto/path/output dan pembayaran
+tetap off-app. Production tetap S268; deployment, activation, authenticated
+UAT, dan `BUSINESS_READY` belum dilakukan.
 
 S268 frame preview/export recovery: backend/Owner exact
 `298336da09b735638c4ffea9b7e8830b1283452e` dan Studio exact

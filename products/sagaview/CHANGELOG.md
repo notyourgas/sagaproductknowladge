@@ -1,5 +1,30 @@
 # SagaView Changelog
 
+## 2026-08-23 - S269 harga cetakan tambahan setelah jatah paket
+
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`.
+- Before: Studio sudah menghitung cetakan tambahan setelah jatah paket habis,
+  tetapi Owner Dashboard belum menyediakan kontrol harga eksplisit dan paket
+  sesi belum dipertahankan lengkap oleh normalisasi cloud settings.
+- After: Owner dapat mengaktifkan biaya tambahan dan menetapkan harga rupiah per
+  cetakan Original. Backend menyimpan metadata dengan optimistic concurrency,
+  checksum/idempotency, audit, permission Owner, serta preservasi setting lain.
+  Studio tersambung membaca authority cloud; kredit paket tetap dipakai lebih
+  dahulu dan hanya sisa cetakan yang menambah estimasi total.
+- Privacy/workflow: payload harga menolak field foto/path/output; tidak ada
+  upload media, migration, provider pembayaran, QRIS, rekening, callback, atau
+  status paid. Pembayaran tetap off-app oleh staf di lokasi.
+- Provenance: backend/Owner exact
+  `c828bd9d3b38e4d35fca85bb66182b139ecf5a2e`; Studio exact
+  `9f81f3d2d22481ff55cda9cceff555dc13ef6b9b`; keduanya sudah pushed.
+- Evidence: backend 207/207 dan 3.498 assertion; Owner Playwright 2/2 pada
+  desktop/mobile; Studio 52 file/232 test; build, format/lint/typecheck, Pint,
+  bundle 299,9 KiB/450 KiB, dan audit Composer/npm nol lulus.
+- Delivery: `PUSHED / UIUX_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+  Production tetap S268 dan `BUSINESS_READY=false`.
+
 ## 2026-08-22 - S268 frame preview dan safe export recovery production
 
 - Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.

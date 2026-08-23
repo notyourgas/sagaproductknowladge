@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-23 - SagaView S269 harga cetakan tambahan
+
+- Owner Dashboard kini mengatur harga cetakan Original setelah jatah gratis
+  paket habis; Studio tersambung memakai authority cloud tersebut.
+- Kredit paket selalu dipakai lebih dahulu, lalu hanya cetakan sisanya yang
+  menambah estimasi. Pembayaran tetap dilakukan kepada staf di luar aplikasi.
+- Exact backend/Owner `c828bd9d...` dan Studio `9f81f3d...` sudah pushed;
+  backend 207/207, Studio 232/232, visual desktop/mobile, build/budget,
+  lint/typecheck/format, Pint, dan audit dependency lulus.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S268,
+  tanpa migration atau upload foto/path/output customer.
+
 ## 2026-08-23 - SagaBook S278 closing hardening production
 
 - Exact source `a53f21493c19a5b4374f47120348df9c04b41e63` sudah pushed dan aktif

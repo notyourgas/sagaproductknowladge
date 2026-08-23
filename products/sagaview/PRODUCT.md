@@ -1,6 +1,26 @@
 # SagaView Product Knowledge
 
-Updated: 22 Agustus 2026 23:34 WIB
+Updated: 23 Agustus 2026 15:52 WIB
+
+SagaView S269 berstatus `CONFIRMED / PUSHED / UIUX_VALIDATED /
+SECURITY_VALIDATED / QA_VALIDATED / DATA_INTEGRITY_VALIDATED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Owner Dashboard kini menjadi
+authority harga cetakan Original tambahan: jatah cetak gratis dari paket
+dipakai lebih dahulu, lalu cetakan berikutnya masuk ke estimasi total dengan
+harga rupiah yang ditetapkan Owner. Studio yang tersambung ke cloud menerima
+setting tersebut dan tidak dapat membuat harga lokal yang menimpa authority
+Owner; mode lokal tanpa koneksi tetap dapat memakai fallback lokal. Pembayaran
+tetap ditangani staf di lokasi di luar aplikasi; tidak ada provider, status
+paid, QRIS, rekening, upload foto, path, editor, atau output customer.
+
+Exact source backend/Owner
+`c828bd9d3b38e4d35fca85bb66182b139ecf5a2e` dan Studio
+`9f81f3d2d22481ff55cda9cceff555dc13ef6b9b` sudah pushed. Gate lulus:
+backend SagaView 207/207 dengan 3.498 assertion, Owner Playwright desktop/mobile
+2/2, Studio 52 file/232 test, build Owner dan Studio, format/lint/typecheck,
+bundle terbesar 299,9 KiB dari batas 450 KiB, Pint, serta audit Composer/npm
+nol. Production tetap S268; belum ada deployment, activation, authenticated
+UAT, atau klaim `BUSINESS_READY`.
 
 SagaView S268 berstatus `CONFIRMED / PUSHED / LOCAL_VALIDATED /
 PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Backend/Owner exact

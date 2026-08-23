@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-23 - SagaView S269 extra print pricing sync
+
+- Informasi `CONFIRMED` berasal dari permintaan Andreas dan exact source
+  backend/Owner `c828bd9d...` serta Studio `9f81f3d...` yang telah pushed dan
+  lolos gate lokal.
+- Knowledge mencatat Owner authority untuk harga cetakan Original setelah
+  kredit paket habis, sinkronisasi cloud, estimasi-only, pembayaran off-app,
+  stale conflict, idempotency, audit, dan no-upload.
+- Delivery `PUSHED / UIUX_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+  production tetap S268 dan `BUSINESS_READY=false`.
+- Dokumen terdampak: SagaView product/changelog/coverage, portfolio, master,
+  root changelog, dan sync status.
+
 ## 2026-08-23 - SagaBook S278 production activation sync
 
 - Informasi `CONFIRMED` berasal dari keputusan Andreas, exact source
