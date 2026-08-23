@@ -1,5 +1,30 @@
 # SagaBook Changelog
 
+## 2026-08-24 - Pembayaran add-on di lokasi S282 production
+
+- Klasifikasi: `CONFIRMED`; Andreas mengotorisasi integrasi kandidat terbaru dan
+  deployment. Exact source `0af456c723fbdc6b3b569627b628ff52dd786b56`
+  telah pushed ke source `main` dan branch
+  `codex/s282-sagabook-onsite-additional-payment`.
+- Add-on sesi buatan admin tetap menjadi pembayaran onsite terpisah: menambah
+  total akhir booking dan expected cash closing, tetapi tidak mengubah subtotal
+  checkout atau nominal payment gateway yang telah dibuat.
+- Hotfix release membatasi reporting index MySQL dengan prefix aman dan membuat
+  kedua migration S280 idempoten terhadap partial DDL. Rehearsal database
+  disposable membuktikan restore, recovery partial DDL, migrasi, dan index.
+- Full PHP exact final 1.103/1.103 (12.717 assertion), focused
+  migration/payment 20/20 (228), permission 4/4, browser onsite desktop/mobile
+  4/4, dashboard unit 16/16 dan E2E 4/4, build 5.128 modul, Pint, diff check,
+  serta audit npm/Composer/OSV nol lulus.
+- Release `20260823203109-0af456c` aktif dengan rollback
+  `20260823062531-55ede99`. Backup terenkripsi `20260823T202858Z`, checksum,
+  disposable restore, immutable archive/bundle, source backup lokal+VPS, exact
+  manifest, atomic switch, verifier independen 17/17, service/journal, migrasi
+  0 pending, public smoke 3/3, dan security header 3/3 lulus tanpa exception.
+- Status `PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+  authenticated Owner/operator UAT dan dua studio pilot belum selesai sehingga
+  `BUSINESS_READY=false`.
+
 ## 2026-08-24 - Pembayaran add-on di lokasi S282 candidate gabungan
 
 - Klasifikasi: `CONFIRMED`; exact source

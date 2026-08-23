@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 24 Agustus 2026 02:43 WIB
-Evidence status: kandidat gabungan S280+S282 pushed dan local-validated; deployment tertahan aman, production tetap pada baseline terverifikasi
+Updated: 24 Agustus 2026 03:41 WIB
+Evidence status: S280+S282 aktif di production pada exact release terverifikasi; business readiness tetap menunggu UAT/pilot
 
 ## Tujuan dokumen
 
@@ -16,10 +16,11 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
-- Pemisahan pembayaran add-on di lokasi S282 pada kandidat gabungan exact source
-  `7df014d9155cc4abe343955c399d19d9f39e08fd` berstatus `CONFIRMED / PUSHED /
+- Pemisahan pembayaran add-on di lokasi S282 pada exact source
+  `0af456c723fbdc6b3b569627b628ff52dd786b56` berstatus `CONFIRMED / PUSHED /
   UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
-  DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+  DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`.
   Add-on yang dibuat admin saat sesi dicatat sebagai transaksi onsite terpisah
   dengan metode dan statusnya sendiri. Nilainya menambah total akhir booking dan
   expected cash closing, tetapi tidak mengubah subtotal checkout maupun nominal
@@ -27,14 +28,19 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   memisahkan booking awal, biaya gateway, pembayaran onsite, serta total akhir.
   Snapshot legacy yang sudah telanjur memasukkan additional onsite ke total
   checkout kini dikoreksi fail-safe ke nilai sebelum onsite, tanpa mengubah
-  nominal provider atau data customer. Full regression 1.102/1.102 (12.709
-  assertion), focused payment/database 13/13 (86 assertion),
-  browser desktop/mobile 4/4, production build, dan audit dependency nol lulus.
-  Kandidat juga mengintegrasikan dua migration reporting S280 yang telah lulus
-  fresh/rollback/remigrate pada database disposable. Dua percobaan release
-  terkoreksi berhenti dan rollback otomatis sebelum aktivasi final; production
-  tetap exact `55ede99cc2eb3adc467510ef1c0f0d09f271c959` / release
-  `20260823062531-55ede99`, sehat, dan `BUSINESS_READY=false`.
+  nominal provider atau data customer. Full regression exact final 1.103/1.103
+  (12.717 assertion), focused migration/payment 20/20 (228 assertion), browser
+  onsite desktop/mobile 4/4, dashboard unit 16/16 dan E2E 4/4, production build,
+  Pint, serta audit npm/Composer/OSV nol lulus. Dua migration reporting S280
+  memakai prefix index MySQL yang idempoten; rehearsal disposable membuktikan
+  pemulihan partial DDL, migrasi ulang, dan integritas index. Release
+  `20260823203109-0af456c` aktif dengan rollback
+  `20260823062531-55ede99`; encrypted backup `20260823T202858Z`, checksum,
+  disposable restore, immutable archive/bundle, exact manifest, atomic switch,
+  verifier independen 17/17, service/journal, migrasi 0 pending, serta public
+  smoke dan security header 3/3 lulus tanpa exception. Authenticated
+  Owner/operator UAT dan dua studio pilot belum selesai, sehingga
+  `BUSINESS_READY=false`.
 
 - Hardening closing operasional S278 exact source
   `a53f21493c19a5b4374f47120348df9c04b41e63` berstatus `CONFIRMED / PUSHED /

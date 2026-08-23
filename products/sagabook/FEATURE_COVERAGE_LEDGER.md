@@ -1,22 +1,26 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 24 Agustus 2026 02:43 WIB
+Evidence cut-off: 24 Agustus 2026 03:41 WIB
 
 Pembayaran add-on di lokasi S282 exact source
-`7df014d9155cc4abe343955c399d19d9f39e08fd` telah `CONFIRMED / PUSHED /
+`0af456c723fbdc6b3b569627b628ff52dd786b56` telah `CONFIRMED / PUSHED /
 UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
-LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Coverage membuktikan add-on sesi
+LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Coverage membuktikan add-on sesi
 buatan admin memiliki scope onsite dan transaksi finance/ledger terpisah;
 menambah total akhir booking serta expected cash closing tanpa mengubah subtotal
 checkout atau nominal sesi gateway awal. Booking Detail Owner/Staff dan customer
-memisahkan booking awal, fee gateway, onsite, dan total akhir. Full PHP
-1.102/1.102 (12.709 assertion), focused payment/database 13/13 (86), browser
-desktop/mobile 4/4, build, serta audit dependency nol lulus. Legacy snapshot
+memisahkan booking awal, fee gateway, onsite, dan total akhir. Full PHP exact
+final 1.103/1.103 (12.717 assertion), focused migration/payment 20/20 (228),
+browser onsite desktop/mobile 4/4, dashboard unit 16/16 dan E2E 4/4, build,
+Pint, serta audit dependency nol lulus. Legacy snapshot
 yang ikut menaikkan checkout dengan cash onsite kini diklem ke checkout awal.
-Kandidat gabungan juga membawa dua migration reporting S280 yang lulus
-fresh/rollback/remigrate disposable. Deployment berhenti aman setelah dua
-correction round; production tetap `55ede99c...` / `20260823062531-55ede99`
-dan `BUSINESS_READY=false`.
+Kandidat gabungan juga membawa dua migration reporting S280 dengan prefix index
+MySQL idempoten; recovery partial DDL dan disposable restore lulus. Release
+`20260823203109-0af456c` aktif dengan rollback `20260823062531-55ede99`;
+encrypted backup/checksum/restore, immutable source backup, manifest, atomic
+switch, verifier 17/17, service/journal, migrasi 0 pending, serta public/security
+smoke 3/3 lulus tanpa exception. Authenticated Owner/operator UAT dan dua studio
+pilot belum selesai; `BUSINESS_READY=false`.
 
 Hardening closing operasional S278 exact source
 `a53f21493c19a5b4374f47120348df9c04b41e63` telah `CONFIRMED / PUSHED /

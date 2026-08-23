@@ -46,7 +46,7 @@ keputusan pengganti.
 | Alternatif yang dipertimbangkan | Mengubah nominal sesi gateway lama; membuat payment gateway kedua otomatis; hanya mengubah tampilan tanpa ledger terpisah. |
 | Dampak | Booking Detail Owner/Staff dan customer memisahkan booking awal, fee gateway, pembayaran onsite, dan total akhir. Backend, finance transaction, ledger, audit, serta closing memakai payment scope eksplisit; tidak ada migration. |
 | Pemberi keputusan | Andreas / founder |
-| Status | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; exact kandidat gabungan `7df014d9155cc4abe343955c399d19d9f39e08fd`; deployment rollback aman dan production tetap `55ede99c...` / `20260823062531-55ede99`; `BUSINESS_READY=false` |
+| Status | `CONFIRMED / PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; exact source `0af456c723fbdc6b3b569627b628ff52dd786b56`, release `20260823203109-0af456c`, rollback `20260823062531-55ede99`; authenticated Owner/operator UAT dan dua studio pilot masih residual, sehingga `BUSINESS_READY=false` |
 | Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Changelog](products/sagabook/CHANGELOG.md), [SagaBook Ledger](products/sagabook/FEATURE_COVERAGE_LEDGER.md) |
 
 ## DEC-093 - Harga cetakan tambahan menjadi authority Owner setelah jatah paket

@@ -1,5 +1,21 @@
 # Portfolio Changelog
 
+## 2026-08-24 - SagaBook S282 pembayaran add-on production
+
+- Exact source `0af456c723fbdc6b3b569627b628ff52dd786b56` aktif sebagai
+  release `20260823203109-0af456c`; rollback langsung
+  `20260823062531-55ede99` tersedia.
+- Add-on sesi buatan admin dibukukan sebagai pembayaran onsite tersendiri.
+  Total akhir dan expected cash bertambah tanpa menulis ulang checkout atau
+  nominal sesi payment gateway awal.
+- Prefix index MySQL dan migration idempoten menutup kegagalan key-length serta
+  partial DDL. Full/focused/browser/build/security gate, encrypted backup dan
+  disposable restore, immutable source backup, atomic switch, verifier 17/17,
+  service/journal, migrasi 0 pending, public smoke 3/3, dan header 3/3 lulus.
+- Status `PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` tanpa exception;
+  `BUSINESS_READY=false` sampai authenticated Owner/operator UAT dan dua studio
+  pilot selesai.
+
 ## 2026-08-24 - SagaView S270 tutorial Customer Flow production
 
 - Customer mendapat tutorial tiga halaman sebelum memilih frame: frame/foto,
