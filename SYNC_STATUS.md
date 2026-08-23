@@ -12,16 +12,28 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-24T03:41:00+07:00 |
-| Branch aktif | `codex/knowledge-s282-deploy-blocked` dari worktree terisolasi exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-24T04:33:19+07:00 |
+| Branch aktif | `codex/s283-sagabook-knowledge-sync` dari worktree terisolasi exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `9d2fb1f5cb6b130057a35a95b269505c706b174b` |
-| Informasi terakhir disinkronkan | SagaBook S282 additional onsite dan reporting S280 aktif pada exact source `0af456c...`; prefix index MySQL serta migration idempoten menutup key-length/partial-DDL blocker. |
-| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; release `20260823203109-0af456c`, rollback `20260823062531-55ede99`, `BUSINESS_READY=false`. |
-| Konflik | Tidak ada. Clone knowledge terisolasi dibuat dari exact `origin/main`; checkout lokal divergen tidak disentuh. |
-| Error | Tidak ada error release aktif. Kegagalan migration key-length sebelumnya dikoreksi dengan prefix index MySQL dan retry-safe migration; final atomic activation serta verifier 17/17 lulus tanpa exception. |
+| Baseline sebelum pembaruan | `e744edfc52b127290c42f577ca4abed6b5d9cc9c` |
+| Informasi terakhir disinkronkan | SagaBook S283 membuat Manual Booking direct-first dengan parser chat opsional dan raw chat browser-only pada exact source `d53c1a55...`. |
+| Status sinkronisasi | `CONFIRMED / PUSHED / UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S282 dan `BUSINESS_READY=false`. |
+| Konflik | Checkout knowledge utama lokal divergen dari remote dan tidak disentuh; sinkronisasi memakai worktree terisolasi exact `origin/main`. |
+| Error | Tidak ada error implementasi yang tersisa. Gate release production belum dijalankan karena tidak ada instruksi deployment. |
 
-## File yang berubah pada sinkronisasi ini (SagaView S270 tutorial Customer Flow)
+## File yang berubah pada sinkronisasi ini (SagaBook S283 Direct Manual Booking)
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
+- `DECISIONS.md`
+
+## File dari sinkronisasi sebelumnya (SagaView S270 tutorial Customer Flow)
 
 - `products/sagaview/PRODUCT.md`
 - `products/sagaview/DOSSIER.md`

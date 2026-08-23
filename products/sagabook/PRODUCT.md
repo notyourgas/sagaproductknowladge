@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 24 Agustus 2026 03:41 WIB
-Evidence status: S280+S282 aktif di production pada exact release terverifikasi; business readiness tetap menunggu UAT/pilot
+Updated: 24 Agustus 2026 04:33 WIB
+Evidence status: S283 direct manual booking tervalidasi dan dipush, belum dideploy; S280+S282 tetap aktif di production
 
 ## Tujuan dokumen
 
@@ -15,6 +15,25 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- Direct Manual Booking S283 pada exact source
+  `d53c1a550d6b9b2dcf55758c3a30390574b5c689` berstatus `CONFIRMED /
+  PUSHED / UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+  Owner/operator kini dapat memilih jalur utama `Isi langsung` dan mengetik
+  nama, nomor WhatsApp, jumlah orang, catatan operasional, cabang, studio,
+  paket, background, add-on, jadwal, serta pembayaran tanpa menempel form chat.
+  Parser `Tempel chat WA` tetap tersedia sebagai alat bantu dan mengisi field
+  terstruktur, tetapi chat mentah diproses hanya di browser serta tidak masuk
+  persistence, idempotency hash, atau payload dashboard. Nomor customer tetap
+  dimasking pada surface admin; server menormalisasi telepon dan sumber
+  `manual`, memvalidasi kapasitas paket, serta mempertahankan permission,
+  tenant/cabang, audit, idempotency, dan read-after-write. Full PHP
+  1.108/1.108 (12.754 assertion), focused final 10/10 (68), 13 skenario browser
+  relevan, build 5.128 modul, design audit 26/0, database audit 100, rehearsal
+  migration rollback/reapply, serta audit npm/Composer/OSV nol lulus.
+  Production tidak berubah; deployment dan UAT terautentikasi tetap gate
+  terpisah, sehingga `BUSINESS_READY=false`.
 
 - Pemisahan pembayaran add-on di lokasi S282 pada exact source
   `0af456c723fbdc6b3b569627b628ff52dd786b56` berstatus `CONFIRMED / PUSHED /

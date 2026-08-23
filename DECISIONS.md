@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-096 - Manual Booking SagaBook memakai input langsung sebagai jalur utama
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-24 |
+| Topik | Workflow input booking operasional Owner/operator |
+| Keputusan | Manual Booking harus dapat diisi langsung untuk data customer dan detail operasional tanpa mewajibkan copy-paste form. Parser chat tetap tersedia sebagai opsi bantu, bukan prasyarat. |
+| Alasan | Booking walk-in/OTA perlu dicatat cepat oleh admin, termasuk nama, WhatsApp, jumlah orang, resource, jadwal, dan pembayaran yang tidak selalu tersedia dalam format form customer. |
+| Alternatif yang dipertimbangkan | Mempertahankan parser sebagai satu-satunya jalur; menambah form terpisah di luar dialog; menyimpan chat mentah sebagai sumber booking. |
+| Dampak | Dialog menjadi direct-first; parser mengisi field terstruktur; chat mentah tidak dipersist atau dikirim ke API; validasi, masking PII, tenant/cabang, permission, audit, idempotency, dan read-after-write tetap berlaku. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; exact source `d53c1a55...`; production tidak berubah |
+| Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [SagaBook Changelog](products/sagabook/CHANGELOG.md), [SagaBook Ledger](products/sagabook/FEATURE_COVERAGE_LEDGER.md) |
+
 ## DEC-095 - Tutorial customer membagi lima langkah menjadi tiga halaman
 
 | Field | Isi |

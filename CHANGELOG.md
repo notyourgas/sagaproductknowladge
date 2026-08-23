@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-24 - SagaBook S283 direct manual booking sync
+
+- Informasi `CONFIRMED` berasal dari permintaan Andreas dan exact source
+  `d53c1a550d6b9b2dcf55758c3a30390574b5c689` yang sudah dipush serta lolos
+  seluruh gate lokal yang diklaim.
+- Knowledge mencatat Manual Booking direct-first, parser chat opsional, jumlah
+  orang terpersist, validasi kapasitas, raw chat browser-only, masking PII,
+  permission, tenant/cabang, audit, idempotency, dan read-after-write.
+- Delivery `PUSHED / UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+  Production tidak berubah dan `BUSINESS_READY=false`.
+- Dokumen terdampak: SagaBook product/dossier/changelog/coverage, portfolio,
+  master, decisions, root changelog, dan sync status.
+
 ## 2026-08-24 - SagaBook S282 production activation sync
 
 - Informasi `CONFIRMED` berasal dari keputusan dan otorisasi deploy Andreas,

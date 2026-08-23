@@ -1,5 +1,27 @@
 # SagaBook Changelog
 
+## 2026-08-24 - Direct Manual Booking S283 candidate
+
+- Klasifikasi: `CONFIRMED`; exact source
+  `d53c1a550d6b9b2dcf55758c3a30390574b5c689` telah dipush pada branch
+  `codex/s283-sagabook-manual-booking-direct-entry`.
+- Before: operator praktis bergantung pada parser form/chat untuk data customer,
+  sementara beberapa detail tidak dapat dimasukkan langsung. After: mode
+  `Isi langsung` menjadi default untuk nama, WhatsApp, jumlah orang, catatan,
+  resource booking, jadwal, dan pembayaran; parser chat tetap opsional.
+- Chat mentah hanya diproses di browser dan tidak dikirim ke API, disimpan,
+  dimasukkan ke idempotency hash, atau dikembalikan melalui dashboard. Nomor
+  customer tetap masked; server memaksa source manual dan memvalidasi telepon,
+  kapasitas paket, permission, tenant/cabang, serta idempotency.
+- Migration idempoten menambah `people`; rollback/reapply dan database audit
+  100 lulus. Booking Detail membaca kembali jumlah orang dari persistence.
+- Full PHP 1.108/1.108 (12.754 assertion), focused final 10/10 (68), 13 skenario
+  browser relevan lulus dengan 2 project-target skip terencana, build 5.128
+  modul, design audit 26/0, Pint, serta audit npm/Composer/OSV nol lulus.
+- Status `PUSHED / UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+  Production tidak berubah dan `BUSINESS_READY=false`.
+
 ## 2026-08-24 - Pembayaran add-on di lokasi S282 production
 
 - Klasifikasi: `CONFIRMED`; Andreas mengotorisasi integrasi kandidat terbaru dan

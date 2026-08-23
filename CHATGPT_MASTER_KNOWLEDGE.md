@@ -1,8 +1,23 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 24 Agustus 2026 03:41 WIB
+Evidence cut-off: 24 Agustus 2026 04:33 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
+
+SagaBook Direct Manual Booking S283 exact source
+`d53c1a550d6b9b2dcf55758c3a30390574b5c689` berstatus `CONFIRMED / PUSHED /
+UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+Mode utama Manual Booking adalah input terstruktur langsung untuk customer,
+WhatsApp, jumlah orang, catatan, resource, jadwal, dan pembayaran. Parser chat
+tetap opsional; chat mentah hanya diproses di browser serta tidak dipersist,
+tidak masuk idempotency hash, dan tidak muncul pada payload dashboard. Backend
+memaksa sumber manual, menormalisasi telepon, memvalidasi kapasitas, serta
+menjaga permission, tenant/cabang, audit, idempotency, conflict/retry, dan
+read-after-write. Nomor customer tetap masked. Full PHP 1.108/1.108, focused
+10/10, 13 browser scenario, build, migration rollback/reapply, database audit
+100, design audit 26/0, dan dependency audit nol lulus. Production tidak
+berubah; UAT terautentikasi dan deployment tetap gate terpisah.
 
 SagaView S270 tutorial Customer Flow exact Studio
 `ab2af26a1fc55f953c90605bc066eaa63937f966` berstatus `CONFIRMED / PUSHED /

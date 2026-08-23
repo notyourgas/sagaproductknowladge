@@ -1,6 +1,22 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 24 Agustus 2026 03:41 WIB
+Evidence cut-off: 24 Agustus 2026 04:33 WIB
+
+Direct Manual Booking S283 exact source
+`d53c1a550d6b9b2dcf55758c3a30390574b5c689` telah `CONFIRMED / PUSHED /
+UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+Coverage membuktikan mode direct-first dari UI ke frontend, API, service,
+database, response, dan Booking Detail untuk nama, WhatsApp, jumlah orang,
+catatan, resource, jadwal, serta pembayaran. Parser chat tetap opsional; raw
+chat tidak terkirim, tidak dipersist, tidak memengaruhi idempotency, dan tidak
+muncul pada dashboard. Server menjaga normalisasi, kapasitas paket,
+tenant/cabang, capability, audit, masking PII, idempotency, conflict/retry, dan
+read-after-write. Full PHP 1.108/1.108 (12.754 assertion), focused 10/10 (68),
+13 browser scenario relevan, 2 skip target terencana, build, design 26/0,
+database audit 100, migration rollback/reapply, dan dependency audit nol lulus.
+Production tidak berubah; authenticated Owner/operator UAT serta deployment
+tetap exit gate terpisah.
 
 Pembayaran add-on di lokasi S282 exact source
 `0af456c723fbdc6b3b569627b628ff52dd786b56` telah `CONFIRMED / PUSHED /

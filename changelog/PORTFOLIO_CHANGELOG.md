@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-24 - SagaBook S283 Direct Manual Booking
+
+- Owner/operator dapat membuat booking dengan mengetik data customer dan
+  seluruh detail operasional langsung; copy-paste form tidak lagi wajib.
+- Parser WhatsApp tetap opsional, sedangkan chat mentah tidak keluar dari
+  browser. PII masking, tenant/cabang, permission, audit, idempotency,
+  conflict/retry, serta read-after-write tetap dipertahankan.
+- Exact source `d53c1a550d6b9b2dcf55758c3a30390574b5c689` sudah dipush.
+  Full/focused/backend, 13 browser scenario, build, migration rehearsal,
+  database/design/security/dependency gates lulus. Status `LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
+
 ## 2026-08-24 - SagaBook S282 pembayaran add-on production
 
 - Exact source `0af456c723fbdc6b3b569627b628ff52dd786b56` aktif sebagai

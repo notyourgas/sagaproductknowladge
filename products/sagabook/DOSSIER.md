@@ -7,6 +7,21 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Direct Manual Booking S283 exact source
+  `d53c1a550d6b9b2dcf55758c3a30390574b5c689`: `CONFIRMED / PUSHED /
+  UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+  Dialog admin kini direct-first: customer, WhatsApp, jumlah orang, catatan,
+  resource booking, jadwal, dan pembayaran dapat diisi terstruktur tanpa
+  copy-paste form. Parser chat tetap opsional dan tidak mengirim atau menyimpan
+  isi chat mentah. Frontend dan backend memvalidasi nomor, panjang field,
+  kapasitas paket, sumber manual, serta bentuk resource; jumlah orang tersimpan
+  dan terbaca kembali pada Booking Detail. Masking PII, capability,
+  tenant/cabang, audit, idempotency, conflict/retry, dan read-after-write tetap
+  fail-closed. Full PHP 1.108/1.108, focused final 10/10, 13 browser scenario,
+  build, accessibility/viewport, design audit, database audit 100, migration
+  rollback/reapply, dan dependency audit nol lulus. Production belum berubah.
+
 - Hardening closing operasional S278 exact source
   `a53f21493c19a5b4374f47120348df9c04b41e63`: `CONFIRMED / PUSHED /
   UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
