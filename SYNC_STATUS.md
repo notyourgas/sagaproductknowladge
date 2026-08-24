@@ -12,16 +12,16 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-24T23:04:36+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T00:18:22+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `d95a216` |
-| Informasi terakhir disinkronkan | CoyaBag Bag Finder live-catalog production release. |
+| Baseline sebelum pembaruan | `5b280ea` |
+| Informasi terakhir disinkronkan | CoyaBag Our Product live-catalog production release. |
 | Status sinkronisasi | `PRODUCTION_DEPLOYED`; activation dan business readiness `BLOCKED`. |
 | Konflik | Tidak ada konflik source, release, rollback, atau runtime CoyaBag. |
 | Error | Tidak ada error sinkronisasi; readiness tetap 30/42 dengan 12 blocker. |
 
-## File yang berubah pada sinkronisasi ini (CoyaBag Bag Finder)
+## File yang berubah pada sinkronisasi ini (CoyaBag Our Product)
 
 - `products/coyabag/PRODUCT.md`
 - `products/coyabag/DOSSIER.md`

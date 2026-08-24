@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-25 - CoyaBag Our Product live-catalog integrity
+
+- Exact source `9819148e8ecce8469d7802841007f8cd111c3246` aktif sebagai
+  Hostinger release `20260824-9819148`; rollback `20260824-55674a3` tersedia.
+- Customer melihat seluruh seri published dengan story, media, varian, harga,
+  stok, exact cart, dan detail produk yang konsisten. Video hanya muncul bila
+  produk memiliki video published; loading/error/empty/missing-media states
+  tetap jujur dan dapat dipulihkan.
+- Full frontend/backend, security/dependency, browser desktop/mobile, workers,
+  scheduler, dan public smoke lulus. Status `PRODUCTION_DEPLOYED`; readiness
+  30/42 dan commerce tetap fail-closed.
+
 ## 2026-08-25 - SagaView S273-S279 cumulative safe deployment
 
 - Backend/Owner exact `f956846d803f5af7e2a6c8cf8daa010b2164408a` aktif sebagai

@@ -78,17 +78,24 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260824-55674a3` memakai source
-`55674a3871eef05e68c9eaaf4cc5520698d5a7d2` dan rollback
-`20260824-a947ce3`. Bag Finder kini memakai katalog Laravel live untuk lima
+Release production terbaru `20260824-9819148` memakai source
+`9819148e8ecce8469d7802841007f8cd111c3246` dan rollback
+`20260824-55674a3`. Our Product kini memuat seluruh seri published dari snapshot
+Laravel, mempertahankan ownership story/media/alt text, dan menghubungkan warna,
+harga, stok, exact-variant cart, serta detail produk. Video tidak dibuat sebagai
+placeholder publik; static fallback, loading, error/retry, empty, missing media,
+dan sold-out state lulus browser desktop/mobile. Schema
+`2026-08-24-our-product-v1` aktif dan route assets dimuat lazy.
+
+Release sebelumnya `20260824-55674a3` memakai katalog Laravel live untuk lima
 langkah preferensi dan hanya memberi hasil dari produk/varian yang benar-benar
 published, discoverable, berharga positif, dan tersedia. Ranking bersifat
 deterministik, memberi alasan yang dapat dipahami, membawa exact variant ke
 detail/cart, dapat dibagikan melalui URL, dan hanya menyimpan preferensi tanpa
 PII. Loading, error/retry, empty, no-match, relaxation, dan hasil lulus browser
 desktop/mobile. Build production memaksa API canonical dan menolak fallback
-katalog lokal; Our Product fail-closed ketika data belum siap. Commerce tetap
-tidak aktif karena readiness masih 30/42 dengan 12 blocker.
+katalog lokal. Commerce tetap tidak aktif karena readiness masih 30/42 dengan
+12 blocker.
 
 Release sebelumnya `20260824-a947ce3` memberi customer flow quote snapshot yang divalidasi
 server, payment-to-fulfillment, serta timeline order/pengiriman terpadu.

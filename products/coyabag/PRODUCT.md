@@ -60,17 +60,24 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260824-55674a3` dengan source
-  `55674a3871eef05e68c9eaaf4cc5520698d5a7d2` melayani production;
-  rollback langsung `20260824-a947ce3` dipertahankan.
+- Release aktif `20260824-9819148` dengan source
+  `9819148e8ecce8469d7802841007f8cd111c3246` melayani production;
+  rollback langsung `20260824-55674a3` dipertahankan.
+- Our Product kini merender seluruh seri published tanpa batas arbitrer. Story,
+  media, alt text, varian, harga, stok, cart, dan detail produk mengikuti
+  snapshot Laravel milik seri tersebut. Video hanya tampil jika dipublikasikan
+  untuk produk itu; dua produk live saat ini jujur memakai static media.
+- Loading, retryable error, empty catalog, missing media, exact variant, sold-out,
+  cart, dan product-detail handoff lulus acceptance desktop/mobile. JavaScript
+  dan CSS Our Product menjadi lazy route assets; schema publik
+  `2026-08-24-our-product-v1` aktif tanpa fallback katalog lokal.
 - Bag Finder kini menggunakan katalog Laravel live untuk lima langkah preferensi:
   scene, kapasitas, cara bawa, warna, dan budget. Hasil hanya memuat produk
   published/discoverable dengan varian berharga positif dan tersedia, disertai
   alasan rekomendasi, handoff exact variant ke detail/cart, URL shareable,
   preference recovery tanpa PII, serta loading/error/empty/no-match state.
 - Build production memaksa API canonical dan menolak fallback katalog lokal;
-  halaman Our Product juga fail-closed pada loading, API error, atau katalog
-  kosong. Browser desktop/mobile, unit, Laravel, security/dependency, build,
+  Browser desktop/mobile, unit, Laravel, security/dependency, build,
   backup, workers, scheduler, dan public smoke lulus.
 - Rangkaian release sebelumnya menambahkan destination/quote integrity,
   payment-to-fulfillment, Delivery Order/AWB/pickup/label foundation, tracking

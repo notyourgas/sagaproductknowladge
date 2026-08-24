@@ -3085,16 +3085,22 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release aktif `20260824-55674a3` menjalankan exact source
-`55674a3871eef05e68c9eaaf4cc5520698d5a7d2` dengan rollback
-`20260824-a947ce3`. Bag Finder memakai katalog Laravel live dalam lima langkah,
+Release aktif `20260824-9819148` menjalankan exact source
+`9819148e8ecce8469d7802841007f8cd111c3246` dengan rollback
+`20260824-55674a3`. Our Product memuat seluruh seri published tanpa batas empat
+produk, menjaga ownership story/media/alt text, dan menyambungkan varian, harga,
+stok, exact cart, serta detail produk. Video hanya muncul bila dipublikasikan
+untuk seri tersebut. Loading/error/empty/missing-media dan browser
+desktop-mobile lulus; schema `2026-08-24-our-product-v1` aktif dengan route
+assets lazy dan tanpa fallback katalog lokal.
+
+Release sebelumnya `20260824-55674a3` membuat Bag Finder memakai katalog Laravel live dalam lima langkah,
 menolak produk/varian yang tidak layak jual, memberi ranking/alasan
 deterministik, membawa exact variant ke detail/cart, dan mendukung URL
 shareable serta preference recovery tanpa PII. Loading/error/empty/no-match
 desktop-mobile lulus. Build production memaksa API canonical dan menolak
-fallback katalog lokal; Our Product fail-closed ketika katalog belum siap.
-Readiness tetap `30/42`, 71%, `ready=false`; activation dan business readiness
-tetap `BLOCKED`.
+fallback katalog lokal. Readiness tetap `30/42`, 71%, `ready=false`; activation
+dan business readiness tetap `BLOCKED`.
 
 Release sebelumnya `20260824-a947ce3` membawa destination/quote integrity,
 payment-to-fulfillment, Delivery Order/AWB/pickup/label/tracking foundation,

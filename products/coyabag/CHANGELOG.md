@@ -8,6 +8,21 @@ Mencatat perubahan material COYABAG dengan provenance public-safe.
 
 Surface deployment tidak otomatis berarti commerce activation.
 
+## 2026-08-25 - Our Product live-catalog production release
+
+- Informasi `CONFIRMED` berasal dari exact source
+  `9819148e8ecce8469d7802841007f8cd111c3246`, immutable Hostinger release
+  `20260824-9819148`, rollback `20260824-55674a3`, dan postdeploy verification.
+- Seluruh seri published kini memakai story, media, alt text, varian, harga,
+  stok, cart, dan detail produk dari snapshot Laravel milik seri tersebut;
+  batas empat produk, heading hard-coded, dan video placeholder dihapus.
+- Loading, error/retry, empty, missing-media, sold-out, exact-variant handoff,
+  runtime canonical, keyboard, dan desktop/mobile acceptance tersedia. Schema
+  `2026-08-24-our-product-v1` aktif dan route assets dimuat lazy.
+- Storefront 94/94, Laravel 327 pass/1 MySQL-only skip, security/dependency,
+  build, workers, scheduler, dan public smoke lulus. Readiness tetap 30/42
+  dengan 12 blocker; commerce/provider tetap fail-closed.
+
 ## 2026-08-24 - Bag Finder live-catalog production release
 
 - Informasi `CONFIRMED` berasal dari exact source
