@@ -8,6 +8,24 @@ Mencatat perubahan material COYABAG dengan provenance public-safe.
 
 Surface deployment tidak otomatis berarti commerce activation.
 
+## 2026-08-24 - SagaDev payment monitoring production backport
+
+- Informasi `CONFIRMED` berasal dari exact Saga Platform source
+  `65f9ff4ee42926cabfe0ebd83de3ae1f1fcca7c0`, immutable release
+  `20260824104557-65f9ff4`, dan postdeploy runtime verification.
+- Workspace SagaDev kini memiliki laporan pembayaran order CoyaBag yang
+  product-scoped dan PII-free, beserta tiga API internal signed untuk readiness,
+  create, dan status pembayaran.
+- Backport berasal langsung dari exact baseline production; 818 tracked runtime
+  file cocok sebelum perubahan. Satu migration registrasi produk diterapkan,
+  backup dan rollback diverifikasi, SagaBook/SagaView tidak berubah.
+- Full backend 966 test/11.063 assertion, focused 20/176, Playwright 14/14
+  mobile-desktop, build, dependency audit, public smoke, service, dan log gate
+  lulus. Guzzle dan CommonMark diperbarui untuk menutup advisory baseline.
+- Delivery `PRODUCTION_DEPLOYED_MONITORING`. Installation dan credential tetap
+  nol, checkout storefront tetap fail-closed, payment production activation dan
+  business readiness tetap `BLOCKED`.
+
 ## 2026-08-20 - Shipping/payment operations production deployment
 
 - Exact source `51a29abe211af5e663ba49b9844ef1bbc3fe3c66` aktif sebagai

@@ -2944,6 +2944,15 @@ owner 2FA, legal, backup restore, dan provider UAT selesai.
 
 Delivery: `PRODUCTION_DEPLOYED`. Activation dan business readiness: `BLOCKED`.
 
+SagaDev payment monitoring untuk CoyaBag sudah production-deployed melalui
+Saga Platform release `20260824104557-65f9ff4`, exact source
+`65f9ff4ee42926cabfe0ebd83de3ae1f1fcca7c0`, dengan rollback
+`20260804171621-0ab9d8e`. Workspace laporan bersifat product-scoped dan PII-free;
+tiga API internal signed tersedia untuk readiness/create/status. Installation
+dan credential CoyaBag tetap nol, sehingga checkout publik masih
+`PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
+payment production-activated.
+
 Release terbaru `20260820-51a29ab` menjalankan exact source
 `51a29abe211af5e663ba49b9844ef1bbc3fe3c66` dengan rollback
 `20260820-fd1787a`. Release ini membawa destination/quote integrity,

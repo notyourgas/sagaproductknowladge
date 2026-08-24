@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-24 - CoyaBag payment monitoring di SagaDev
+
+- SagaDev sekarang memiliki workspace laporan pembayaran order CoyaBag dengan
+  agregat status, GMV, fee, net, dan settlement tanpa mengekspos PII customer.
+- Exact source `65f9ff4ee42926cabfe0ebd83de3ae1f1fcca7c0` aktif sebagai
+  immutable Saga Platform release `20260824104557-65f9ff4`; rollback
+  `20260804171621-0ab9d8e` dipertahankan.
+- Satu migration, backup, source manifest, dependency audit, 966 backend test,
+  14 browser scenario mobile-desktop, public smoke, service, dan error journal
+  lulus. SagaBook dan SagaView tidak berubah.
+- Status `PRODUCTION_DEPLOYED_MONITORING`; installation/credential CoyaBag nol,
+  transaksi customer tetap nonaktif, dan commerce readiness masih `BLOCKED`.
+
 ## 2026-08-24 - SagaView S272 Owner Gallery Frame recovery
 
 - Gallery Frame tidak lagi bergantung pada asset URL tanpa konteks; preview

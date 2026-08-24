@@ -1,6 +1,6 @@
 # COYABAG Product Knowledge
 
-Updated: 20 Agustus 2026
+Updated: 24 Agustus 2026
 Evidence status: production surfaces + blocked commerce activation
 
 ## Tujuan dokumen
@@ -107,6 +107,18 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 - Status `LOCAL_VALIDATED / MAINLINE_SYNCED / CI_VERIFIED /
   PRODUCTION_DEPLOYED`. Activation dan business readiness tetap `BLOCKED`.
 - Commerce nyata tetap ditahan oleh blocker provider/operasional.
+
+- Monitoring pembayaran order CoyaBag kini tersedia pada workspace SagaDev
+  yang terlindungi. Saga Platform release `20260824104557-65f9ff4` menjalankan
+  exact source `65f9ff4ee42926cabfe0ebd83de3ae1f1fcca7c0`; rollback langsung
+  `20260804171621-0ab9d8e` dipertahankan.
+- Control plane menyediakan tiga kontrak internal signed untuk readiness,
+  create, dan status pembayaran order. Dashboard menampilkan agregat status,
+  GMV, fee, net, dan settlement tanpa nama, email, telepon, atau alamat customer.
+- Satu migration registrasi produk diterapkan, tetapi installation dan service
+  credential CoyaBag tetap nol. Checkout publik tetap
+  `PRODUCTION_READINESS_BLOCKED`; status ini adalah
+  `PRODUCTION_DEPLOYED_MONITORING`, bukan payment production-activated.
 
 ## Blocker business activation
 
