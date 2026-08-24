@@ -78,14 +78,21 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260824-affb6dd` memakai source
-`affb6dd9bba2bc96349afbb7431e96da9f207faf` dan rollback
-`20260824-94a54b4`. Customer flow kini memiliki quote snapshot yang divalidasi
+Release production terbaru `20260824-f3d75a1` memakai source
+`f3d75a1f904a03276bf1076b5a42f4dab9568a86` dan rollback
+`20260824-affb6dd`. Customer flow kini memiliki quote snapshot yang divalidasi
 server, payment-to-fulfillment, serta timeline order/pengiriman terpadu.
 Operator memiliki shipping command center, packing/weight review, provider
 operation journal, pickup/label/tracking foundation, finance ledger,
 cancellation guard, incident, stock disposition, dan refund review. Seluruh
 provider baru dan COD tetap fail-closed.
+
+Payment action kini berasal dari server untuk state needs-session,
+session-expired, ready, pending, completed, failed, expired, support-required,
+dan unavailable. Terminal/ambiguous state tidak dapat membuat pembayaran baru;
+redirect hanya tersedia ketika session masih boleh dibuka. Fokus/return ke tab
+memicu reconciliation segera. Full acceptance dan public desktop/mobile smoke
+lulus tanpa mengaktifkan provider atau transaksi nyata.
 
 Quote manual/external kini memiliki identitas unik dan immutable untuk setiap
 penerbitan. Waktu terbit/kedaluwarsa ikut tersimpan pada snapshot order;

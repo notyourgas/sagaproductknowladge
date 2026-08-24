@@ -8,6 +8,21 @@ Mencatat perubahan material COYABAG dengan provenance public-safe.
 
 Surface deployment tidak otomatis berarti commerce activation.
 
+## 2026-08-24 - Payment and confirmation integrity production release
+
+- Exact source `f3d75a1f904a03276bf1076b5a42f4dab9568a86` aktif pada
+  immutable Hostinger release `20260824-f3d75a1`; rollback langsung
+  `20260824-affb6dd` tersedia.
+- Server-authoritative payment action menutup session untuk order terminal,
+  payment selesai/gagal, dan unknown attempt; stale redirect tidak dikirim.
+- Order Status me-refresh saat customer kembali dari gateway dan menyediakan
+  state/action accessible untuk ready, pending, completed, expired, failed,
+  unavailable, dan support-required.
+- Storefront 78/78, Laravel 320 pass/1 MySQL-only skip dengan 2.405 assertion,
+  full RC/security/dependency, browser desktop/mobile, backup, workers,
+  scheduler, public smoke, dan monitor lulus. Readiness tetap 30/42 dengan 12
+  blocker; commerce/provider fail-closed.
+
 ## 2026-08-24 - Shipping quote integrity production release
 
 - Exact source `affb6dd9bba2bc96349afbb7431e96da9f207faf` aktif pada

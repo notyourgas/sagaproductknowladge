@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-24 - CoyaBag payment and confirmation integrity
+
+- Exact source `f3d75a1f904a03276bf1076b5a42f4dab9568a86` aktif sebagai
+  Hostinger release `20260824-f3d75a1`; rollback `20260824-affb6dd` tersedia.
+- Customer mendapat state/CTA pembayaran dari server dan reconciliation saat
+  kembali dari gateway. Terminal atau unknown outcome tidak menawarkan retry
+  yang dapat memicu pembayaran ganda; operator review tetap diwajibkan.
+- Full frontend/backend, security/dependency, backup, browser desktop/mobile,
+  workers, scheduler, public smoke, dan monitor lulus. Status
+  `PRODUCTION_DEPLOYED`; readiness 30/42 dan commerce tetap fail-closed.
+
 ## 2026-08-24 - CoyaBag shipping quote integrity
 
 - Exact source `affb6dd9bba2bc96349afbb7431e96da9f207faf` aktif sebagai

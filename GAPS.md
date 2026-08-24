@@ -894,6 +894,13 @@ GAP-004, bukan gap implementasi warna komponen.
 
 ### COYABAG
 
+- `PRODUCTION_DEPLOYED`: release aktif `20260824-f3d75a1`, exact source
+  `f3d75a1f904a03276bf1076b5a42f4dab9568a86`, membuat payment action
+  server-authoritative, menghapus stale redirect, memblokir terminal/ambiguous
+  retry, dan me-refresh status saat kembali dari gateway. Rollback
+  `20260824-affb6dd` tersedia; full gate/public desktop-mobile smoke lulus.
+  Readiness tetap 30/42 dengan 12 blocker dan commerce fail-closed.
+
 - `PRODUCTION_DEPLOYED`: release aktif `20260824-affb6dd`, exact source
   `affb6dd9bba2bc96349afbb7431e96da9f207faf`, membuat quote manual/external
   unik dan immutable, menyimpan issue/expiry pada order, memblokir quote
@@ -989,6 +996,9 @@ GAP-004, bukan gap implementasi warna komponen.
   quote sebelumnya, dan Checkout tidak dapat meneruskan quote kedaluwarsa.
   Release `20260824-affb6dd` menambah unique quote issuance, order expiry
   provenance, pre-expiry refresh, serta admin-safe visibility.
+- `CLOSED`: customer tidak lagi menyimpulkan CTA gateway dari field terpisah.
+  Release `20260824-f3d75a1` memakai payment action server-authoritative dan
+  menahan terminal/unknown attempt dari session/retry baru.
 
 ### AOGTIVITY
 
