@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-24 - SagaView S276 Owner Gallery Frame lebih fokus
+
+- Owner kini melihat satu aksi utama untuk menambah frame; alat import tetap
+  tersedia saat dibutuhkan tanpa memenuhi header operasional.
+- Aksi pilihan frame tetap terlihat ketika galeri panjang digulir, lebih ringkas
+  di mobile, dan statusnya dapat dibaca teknologi bantu.
+- Exact backend/Owner `484e27c6c0eb8dcdd826e402154f1f483e70b5c6`
+  lulus 5 browser scenario, 33 backend test/177 assertion, build, dua viewport,
+  keyboard/no-overflow, serta audit dependency nol.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Production,
+  API/database, pembayaran off-app, foto/path/output, Studio, dan SagaBook tidak
+  berubah.
+
 ## 2026-08-24 - SagaView S275 logo Customer Display local-first
 
 - Logo Studio kini konsisten terlihat pada seluruh preset Customer Display dan

@@ -1,5 +1,20 @@
 # SagaView Changelog
 
+## 2026-08-24 - S276 hierarki aksi Owner Gallery Frame
+
+- Klasifikasi: `CONFIRMED / PUSHED / UIUX_VALIDATED / SECURITY_VALIDATED /
+  QA_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- Before: empat aksi header bersaing dan toolbar pilihan hilang saat daftar
+  frame panjang digulir; readiness visual juga dapat timeout pada redirect `/`.
+- After: `Tambah Frame` dominan, alat import berada di disclosure native,
+  toolbar pilihan sticky/ringkas, status pilihan dan pesan operasi menjadi live
+  region, serta readiness memeriksa `/login`.
+- Exact backend/Owner `484e27c6c0eb8dcdd826e402154f1f483e70b5c6`:
+  browser 5/5, backend 33/33 dan 177 assertion, build 5.097 modul, viewport
+  390x844/1440x900, keyboard/44 px/no-overflow, dan audit dependency nol lulus.
+- Tidak ada API/database/migration, tenant/harga/payment, upload foto/path/output,
+  Studio, SagaBook, atau perubahan production. S276 belum dideploy.
+
 ## 2026-08-24 - S275 integritas logo Customer Display
 
 - Klasifikasi: `CONFIRMED / PUSHED / UIUX_VALIDATED / SECURITY_VALIDATED /

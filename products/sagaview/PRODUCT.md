@@ -1,6 +1,28 @@
 # SagaView Product Knowledge
 
-Updated: 24 Agustus 2026 15:39 WIB
+Updated: 24 Agustus 2026 16:22 WIB
+
+SagaView S276 berstatus `CONFIRMED / PUSHED / UIUX_VALIDATED /
+SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`. Owner Gallery Frame sekarang mempertahankan satu
+aksi utama `Tambah Frame`; alat batch import dan import template tersedia
+melalui `Opsi import` yang tertutup secara default serta dapat dioperasikan
+dengan keyboard. Toolbar pilihan tetap terlihat saat daftar panjang digulir,
+lebih ringkas pada mobile, berada di atas navigasi bawah, dan mengumumkan
+jumlah pilihan kepada pembaca layar. Pesan operasi juga menjadi live status.
+
+Exact backend/Owner
+`484e27c6c0eb8dcdd826e402154f1f483e70b5c6` berada pada branch
+`codex/s276-sagaview-owner-frame-actions` dan sudah pushed. Gate exact commit
+meliputi browser 5/5, backend/data integrity 33/33 dengan 177 assertion, build
+5.097 modul, screenshot/no-overflow 390x844 dan 1440x900, keyboard serta target
+44 px, npm audit nol, dan Composer audit nol advisory/abandoned. Harness visual
+sekarang memakai `/login` sebagai readiness URL sehingga tidak lagi tersangkut
+redirect booking dari `/`. Tidak ada perubahan API, database/migration,
+tenant/entitlement/harga, payment/provider, foto/path/output, Studio, atau
+SagaBook. Production backend/Owner tetap exact
+`fe2dcfc57e8b6592ad0162fabf079fbbd07c1097` /
+`20260824034431-fe2dcfc`; S276 belum dideploy atau diaktifkan.
 
 SagaView S275 berstatus `CONFIRMED / PUSHED / UIUX_VALIDATED /
 SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /

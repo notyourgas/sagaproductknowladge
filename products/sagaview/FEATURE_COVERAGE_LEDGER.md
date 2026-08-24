@@ -1,6 +1,27 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 24 Agustus 2026 15:39 WIB
+Evidence cut-off: 24 Agustus 2026 16:22 WIB
+
+S276 hierarki aksi Owner Gallery Frame: exact backend/Owner
+`484e27c6c0eb8dcdd826e402154f1f483e70b5c6` berstatus `CONFIRMED / PUSHED /
+UIUX_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`. `Tambah Frame` menjadi satu aksi utama; batch import
+dan import template berada dalam disclosure native yang tertutup secara
+default dan dapat dibuka dengan keyboard. Status pilihan serta aksi
+kelola/export sekarang sticky, ringkas di mobile, berada di atas navigasi
+bawah, dan mengumumkan jumlah pilihan melalui live region. Pesan operasi juga
+memakai status aksesibel tanpa menghapus draft atau mengubah API. Readiness
+Playwright kini memeriksa `/login`, bukan redirect `/` yang sebelumnya dapat
+menyebabkan timeout palsu. Exact commit lulus browser 5/5, backend/data
+integrity 33/33 dengan 177 assertion, build 5.097 modul, no-overflow dan
+screenshot 390x844/1440x900, keyboard/target 44 px, npm audit nol, serta
+Composer audit nol advisory/abandoned. Tidak ada migration, perubahan
+tenant/entitlement/harga, upload foto/path/output, payment/provider, atau
+perubahan Studio/SagaBook. Production backend/Owner tetap
+`fe2dcfc57e8b6592ad0162fabf079fbbd07c1097` /
+`20260824034431-fe2dcfc`; deployment S276 belum dilakukan dan
+`BUSINESS_READY=false`. Gap berikutnya: recovery Owner untuk permission,
+quota/disk, offline, dan stale perlu konsistensi lintas layar.
 
 S275 integritas logo Customer Display: exact Studio
 `8eb9d67f6e92df28e91e88a048da017a090aadb0` berstatus `CONFIRMED / PUSHED /
