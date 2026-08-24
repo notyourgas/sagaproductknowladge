@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 24 Agustus 2026 09:03 WIB
+Evidence cut-off: 24 Agustus 2026 10:06 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -16,7 +16,11 @@ pembayaran. Production tetap S270 exact `ab2af26a...` /
 archive SHA-256 `46fe4909...987ab` dan bundle SHA-256 `8a6af01f...eb613` pada
 dua lokasi lokal terpisah, provenance commit/tree tertanam, serta tidak memuat
 `.env`, `.git`, atau `node_modules`. Status tetap `IMPLEMENTED_NOT_DEPLOYED` dan
-`BUSINESS_READY=false`.
+`BUSINESS_READY=false`. Physical preflight exact S271/backend aktif sudah
+`ready_for_manual_uat` tanpa blocker: source/remote/runtime, Windows/Chrome,
+fixed NTFS, kapasitas, dan dua profil terpisah lulus. Dua gate print memakai
+acceptance operator S247, sedangkan 12 gate non-print masih pending. Kandidat
+belum `STAGING_READY` dan production tidak berubah.
 
 SagaBook fondasi operasional S286 exact source
 `9e4b44e5f6698b7284938fa1e4c948dd45c9e5d5` berstatus `CONFIRMED / PUSHED /

@@ -1,6 +1,6 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 24 Agustus 2026 09:03 WIB
+Evidence cut-off: 24 Agustus 2026 10:06 WIB
 
 S271 pemulihan fokus tutorial Customer Flow: Studio exact
 `a5c2d6ae73c7d39079b71b363f9dfad52408adf5` berstatus `PUSHED /
@@ -21,6 +21,13 @@ tetap Studio exact `ab2af26a...` / `20260823185455-ab2af26` dan backend exact
 lokasi lokal terpisah dan byte-identik. Archive 396 entry memiliki provenance
 tertanam, tidak memuat `.env`, `.git`, atau `node_modules`, dan bundle lulus
 verifikasi. Status tetap `IMPLEMENTED_NOT_DEPLOYED`; `BUSINESS_READY=false`.
+Physical preflight exact-pair S271 juga berstatus `ready_for_manual_uat` tanpa
+blocker: commit, worktree, upstream/origin, branch remote, runtime provenance,
+HTTP candidate lokal, Windows 11, Chrome, fixed NTFS, kapasitas disk, serta dua
+profil terpisah lulus. Dua gate print tetap memakai acceptance operator S247;
+12 gate non-print masih `pending`, sehingga physical evidence belum lengkap,
+release decision tetap `hold_manual_evidence`, dan status belum
+`STAGING_READY`.
 
 S270 tutorial Customer Flow: Studio exact
 `ab2af26a1fc55f953c90605bc066eaa63937f966` berstatus `PUSHED /

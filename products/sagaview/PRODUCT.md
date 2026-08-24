@@ -1,6 +1,6 @@
 # SagaView Product Knowledge
 
-Updated: 24 Agustus 2026 09:03 WIB
+Updated: 24 Agustus 2026 10:06 WIB
 
 SagaView S271 berstatus `CONFIRMED / PUSHED / UIUX_VALIDATED /
 SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
@@ -21,6 +21,11 @@ Foto/path/output tetap lokal, pembayaran tetap off-app, dan
 dibekukan dari exact source tree `d702517c...`: archive dan git bundle memiliki
 SHA-256 terverifikasi, tersimpan pada dua lokasi lokal terpisah, serta tidak
 memuat `.env`, `.git`, atau `node_modules`. Ini belum merupakan deployment.
+Preflight fisik exact S271/backend aktif sudah siap untuk UAT manual tanpa
+blocker. Exact source, remote, runtime provenance, Windows/Chrome, fixed NTFS,
+kapasitas, dan isolasi dua profil lulus. Dua gate print mengikuti acceptance
+operator S247; 12 gate non-print masih harus dijalankan dengan data sintetis.
+Karena evidence manual belum lengkap, kandidat belum `STAGING_READY`.
 
 SagaView S270 berstatus `CONFIRMED / PUSHED / UIUX_VALIDATED /
 SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /

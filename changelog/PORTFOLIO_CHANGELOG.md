@@ -12,6 +12,8 @@
   runtime terlarang tidak ditemukan.
 - Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S270.
   Tidak ada perubahan backend, data, no-upload, atau pembayaran off-app.
+- Physical preflight exact-pair sudah siap tanpa blocker, tetapi 12 gate
+  non-print masih menunggu UAT manual sintetis. Kandidat belum `STAGING_READY`.
 
 ## 2026-08-24 - SagaBook S286 fondasi operasional production
 

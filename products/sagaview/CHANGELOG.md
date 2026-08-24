@@ -23,6 +23,11 @@
 - Delivery: production tidak berubah dan tetap S270 exact `ab2af26a...` /
   `20260823185455-ab2af26`; package berstatus `PACKAGED_NOT_DEPLOYED` dan
   `BUSINESS_READY=false`.
+- Physical UAT: preflight exact S271/backend aktif berstatus
+  `ready_for_manual_uat` tanpa blocker. Source/remote/runtime, Windows/Chrome,
+  fixed NTFS, kapasitas, dan profil terpisah lulus. Dua gate print memakai
+  acceptance operator S247; 12 gate non-print masih pending. Release tetap
+  `hold_manual_evidence`, belum `STAGING_READY`, dan production tidak berubah.
 
 ## 2026-08-24 - S270 tutorial Customer Flow production activation
 
