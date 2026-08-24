@@ -894,7 +894,15 @@ GAP-004, bukan gap implementasi warna komponen.
 
 ### COYABAG
 
-- `PRODUCTION_DEPLOYED`: release aktif `20260824-a947ce3`, exact source
+- `PRODUCTION_DEPLOYED`: release aktif `20260824-55674a3`, exact source
+  `55674a3871eef05e68c9eaaf4cc5520698d5a7d2`, membuat Bag Finder memakai
+  katalog Laravel live, ranking/alasan deterministik, exact-variant handoff,
+  URL shareable, dan state recovery yang fail-closed. Build production menolak
+  fallback katalog lokal. Rollback `20260824-a947ce3` tersedia; full gate dan
+  public desktop-mobile smoke lulus. Readiness tetap 30/42 dengan 12 blocker
+  dan commerce fail-closed.
+
+- `PRODUCTION_DEPLOYED`: release sebelumnya `20260824-a947ce3`, exact source
   `a947ce3da21e5720a1a491cfcf8ad19ae2baf638`, membuat return creation
   idempotent/concurrency-safe, cancellation retry-safe, serta menyelaraskan
   public return/refund state customer dan admin tanpa membuka catatan internal.

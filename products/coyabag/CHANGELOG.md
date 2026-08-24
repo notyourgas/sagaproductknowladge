@@ -8,6 +8,23 @@ Mencatat perubahan material COYABAG dengan provenance public-safe.
 
 Surface deployment tidak otomatis berarti commerce activation.
 
+## 2026-08-24 - Bag Finder live-catalog production release
+
+- Informasi `CONFIRMED` berasal dari exact source
+  `55674a3871eef05e68c9eaaf4cc5520698d5a7d2`, immutable Hostinger release
+  `20260824-55674a3`, rollback `20260824-a947ce3`, dan postdeploy verification.
+- Bag Finder kini menyelesaikan lima langkah preferensi terhadap katalog
+  Laravel live, memberi ranking dan alasan deterministik, serta membawa exact
+  variant ke detail/cart melalui URL yang dapat dibagikan.
+- Produk/varian unpublished, tidak tersedia, atau tanpa harga positif ditolak.
+  Loading, error/retry, empty, no-match, relaxation, preference recovery tanpa
+  PII, keyboard, dan desktop/mobile acceptance tersedia.
+- Build production memaksa API canonical, menolak fallback katalog lokal, dan
+  membuat Our Product fail-closed saat data belum siap. Storefront 90/90,
+  Laravel 326 pass/1 MySQL-only skip, security/dependency, build, backup,
+  workers, scheduler, dan public smoke lulus. Readiness tetap 30/42 dengan 12
+  blocker; commerce/provider tetap fail-closed.
+
 ## 2026-08-24 - Customer return integrity production release
 
 - Informasi `CONFIRMED` berasal dari exact source

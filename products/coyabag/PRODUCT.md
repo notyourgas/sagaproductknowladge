@@ -60,10 +60,19 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260824-a947ce3` dengan source
-  `a947ce3da21e5720a1a491cfcf8ad19ae2baf638` melayani production;
-  rollback langsung `20260824-ab859d3` dipertahankan.
-- Rangkaian release ini menambahkan destination/quote integrity,
+- Release aktif `20260824-55674a3` dengan source
+  `55674a3871eef05e68c9eaaf4cc5520698d5a7d2` melayani production;
+  rollback langsung `20260824-a947ce3` dipertahankan.
+- Bag Finder kini menggunakan katalog Laravel live untuk lima langkah preferensi:
+  scene, kapasitas, cara bawa, warna, dan budget. Hasil hanya memuat produk
+  published/discoverable dengan varian berharga positif dan tersedia, disertai
+  alasan rekomendasi, handoff exact variant ke detail/cart, URL shareable,
+  preference recovery tanpa PII, serta loading/error/empty/no-match state.
+- Build production memaksa API canonical dan menolak fallback katalog lokal;
+  halaman Our Product juga fail-closed pada loading, API error, atau katalog
+  kosong. Browser desktop/mobile, unit, Laravel, security/dependency, build,
+  backup, workers, scheduler, dan public smoke lulus.
+- Rangkaian release sebelumnya menambahkan destination/quote integrity,
   payment-to-fulfillment, Delivery Order/AWB/pickup/label foundation, tracking
   webhook inbox, shipping finance ledger, cancellation/incident/refund
   workflow, command center, dan customer timeline.

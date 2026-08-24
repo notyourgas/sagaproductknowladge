@@ -78,9 +78,19 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260824-a947ce3` memakai source
-`a947ce3da21e5720a1a491cfcf8ad19ae2baf638` dan rollback
-`20260824-ab859d3`. Customer flow kini memiliki quote snapshot yang divalidasi
+Release production terbaru `20260824-55674a3` memakai source
+`55674a3871eef05e68c9eaaf4cc5520698d5a7d2` dan rollback
+`20260824-a947ce3`. Bag Finder kini memakai katalog Laravel live untuk lima
+langkah preferensi dan hanya memberi hasil dari produk/varian yang benar-benar
+published, discoverable, berharga positif, dan tersedia. Ranking bersifat
+deterministik, memberi alasan yang dapat dipahami, membawa exact variant ke
+detail/cart, dapat dibagikan melalui URL, dan hanya menyimpan preferensi tanpa
+PII. Loading, error/retry, empty, no-match, relaxation, dan hasil lulus browser
+desktop/mobile. Build production memaksa API canonical dan menolak fallback
+katalog lokal; Our Product fail-closed ketika data belum siap. Commerce tetap
+tidak aktif karena readiness masih 30/42 dengan 12 blocker.
+
+Release sebelumnya `20260824-a947ce3` memberi customer flow quote snapshot yang divalidasi
 server, payment-to-fulfillment, serta timeline order/pengiriman terpadu.
 Operator memiliki shipping command center, packing/weight review, provider
 operation journal, pickup/label/tracking foundation, finance ledger,

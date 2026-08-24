@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-24 - CoyaBag Bag Finder live-catalog integrity
+
+- Exact source `55674a3871eef05e68c9eaaf4cc5520698d5a7d2` aktif sebagai
+  Hostinger release `20260824-55674a3`; rollback `20260824-a947ce3` tersedia.
+- Customer mendapat wizard lima langkah berbasis katalog live dengan ranking,
+  alasan rekomendasi, exact-variant handoff, URL shareable, serta state loading,
+  error, empty, dan no-match yang dapat dipulihkan.
+- Production build menolak fallback katalog lokal. Full frontend/backend,
+  security/dependency, backup, browser desktop/mobile, workers, scheduler, dan
+  public smoke lulus. Status `PRODUCTION_DEPLOYED`; readiness 30/42 dan commerce
+  tetap fail-closed.
+
 ## 2026-08-24 - SagaBook staff override jadwal Manual Booking
 
 - Exact source `194864cc821fd93d3b97c86f5919b54ba4809dad` aktif sebagai

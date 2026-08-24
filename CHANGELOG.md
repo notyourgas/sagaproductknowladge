@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-24 - CoyaBag Bag Finder production sync
+
+- Informasi `CONFIRMED` berasal dari exact source
+  `55674a3871eef05e68c9eaaf4cc5520698d5a7d2`, immutable release
+  `20260824-55674a3`, rollback `20260824-a947ce3`, dan postdeploy verification.
+- Knowledge mencatat wizard lima langkah berbasis katalog live, ranking/alasan
+  deterministik, exact-variant handoff, URL shareable, preference recovery
+  tanpa PII, visual states lengkap, dan production build tanpa fallback lokal.
+- Full test/build/security, dependency audit, backup, public desktop/mobile,
+  workers, scheduler, dan smoke lulus. Readiness 30/42 dengan 12 blocker;
+  commerce dan provider activation tetap fail-closed.
+- Dokumen terdampak: CoyaBag product/dossier/changelog, gaps, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-24 - SagaBook S291 staff availability override production sync
 
 - Informasi `CONFIRMED` berasal dari keputusan Andreas, exact source
