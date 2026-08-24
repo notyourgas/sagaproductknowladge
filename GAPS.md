@@ -894,6 +894,15 @@ GAP-004, bukan gap implementasi warna komponen.
 
 ### COYABAG
 
+- `PRODUCTION_DEPLOYED`: release aktif `20260824-94a54b4`, exact source
+  `94a54b40a03d01ed464a14c62347ae8f3ee515f0`, memindahkan private order
+  access dari raw response dan long-lived browser storage ke cookie HttpOnly,
+  Secure, SameSite Lax yang path-scoped. Legacy token bermigrasi satu kali,
+  mutasi cookie memerlukan Origin yang diizinkan, dan signed recovery link
+  invalid setelah access reissue. Rollback `20260824-7ffb202` tersedia; full
+  gate dan public desktop/mobile smoke lulus. Readiness `30/42`, 71%, dengan
+  12 blocker; commerce tetap fail-closed.
+
 - `PRODUCTION_DEPLOYED`: release aktif `20260824-7ffb202`, exact source
   `7ffb202c642a6d67a8cde1cb48c970ae383cb8f9`, menutup gap rekonsiliasi Cart
   setelah page ready: reconnect refresh, deduplikasi request, perubahan lintas
@@ -964,9 +973,10 @@ GAP-004, bukan gap implementasi warna komponen.
   shipping, return/refund, tax, dan legal copy.
 - `NEEDS CONFIRMATION`: SMTP/notification sender, object storage, owner 2FA
   recovery, privacy-retention approval, launch UAT, dan release sign-off.
-- `BLOCKED`: private order access masih disimpan pada long-lived browser
-  storage. Checkout cycle harus memindahkannya ke mekanisme recovery berumur
-  pendek sebelum commerce activation.
+- `CLOSED`: private order access tidak lagi disimpan pada long-lived browser
+  storage. Release `20260824-94a54b4` memakai secure HttpOnly order session,
+  one-time legacy migration, allowlisted Origin untuk mutasi, dan
+  generation-bound signed recovery link. Blocker commerce lain tetap terpisah.
 
 ### AOGTIVITY
 

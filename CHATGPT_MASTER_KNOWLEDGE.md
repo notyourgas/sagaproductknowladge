@@ -3028,16 +3028,23 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release aktif `20260824-7ffb202` menjalankan exact source
-`7ffb202c642a6d67a8cde1cb48c970ae383cb8f9` dengan rollback
-`20260824-61429f0`. Fondasi yang tersedia membawa destination/quote integrity,
+Release aktif `20260824-94a54b4` menjalankan exact source
+`94a54b40a03d01ed464a14c62347ae8f3ee515f0` dengan rollback
+`20260824-7ffb202`. Fondasi yang tersedia membawa destination/quote integrity,
 payment-to-fulfillment, Delivery Order/AWB/pickup/label/tracking foundation,
 shipping finance ledger, cancellation/incident/refund workflow, operator
 command center, dan customer timeline. Empat migration additive, fresh backup,
 dua worker, operational monitor, dan 39 public checks desktop/mobile lulus.
 Provider Delivery/Payment dan COD tetap eksplisit default-off. Readiness
-production `28/40` atau 70%, `ready=false`; activation dan business readiness
+production `30/42` atau 71%, `ready=false`; activation dan business readiness
 tetap `BLOCKED`.
+
+Checkout/replay tidak lagi mengekspos raw order token atau private URL ke
+JavaScript. Browser memakai cookie order HttpOnly, Secure, SameSite Lax yang
+path-scoped; legacy localStorage token dimigrasikan satu kali lalu dihapus.
+Mutasi berbasis cookie memerlukan Origin storefront yang diizinkan, dan signed
+recovery link invalid setelah access generation di-reissue. Kemampuan ini
+`PRODUCTION_DEPLOYED`, tetapi tidak mengaktifkan checkout atau provider.
 
 Release yang sama memperbaiki tujuan scene Beranda berdasarkan katalog live,
 alias `Campus Fit`, fallback aman, grid adaptif, facet Katalog dari snapshot

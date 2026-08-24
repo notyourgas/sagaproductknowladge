@@ -8,6 +8,24 @@ Mencatat perubahan material COYABAG dengan provenance public-safe.
 
 Surface deployment tidak otomatis berarti commerce activation.
 
+## 2026-08-24 - Secure checkout order access production release
+
+- Informasi `CONFIRMED` berasal dari exact source
+  `94a54b40a03d01ed464a14c62347ae8f3ee515f0`, immutable Hostinger release
+  `20260824-94a54b4`, rollback `20260824-7ffb202`, dan postdeploy runtime
+  verification.
+- Checkout/replay tidak lagi mengirim raw access token atau private URL ke
+  JavaScript. Browser memakai cookie order HttpOnly, Secure, SameSite Lax yang
+  path-scoped; frontend hanya menyimpan order code di sessionStorage.
+- Legacy localStorage token dimigrasikan satu kali lalu dihapus. Mutasi
+  cookie-authenticated memerlukan allowlisted Origin, dan signed recovery link
+  invalid setelah access generation di-reissue.
+- Storefront 73/73, Laravel 314 pass/1 skip dengan 2.341 assertion, full
+  security/build/dependency, browser fixture/public desktop-mobile, backup,
+  CORS, worker, dan monitor lulus.
+- Delivery `PRODUCTION_DEPLOYED`. Readiness `30/42`, 71%, `ready=false`
+  dengan 12 blocker; checkout dan provider activation tetap fail-closed.
+
 ## 2026-08-24 - Cart and catalog reconciliation production release
 
 - Informasi `CONFIRMED` berasal dari exact source

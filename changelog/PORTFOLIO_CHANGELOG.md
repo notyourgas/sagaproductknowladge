@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-24 - CoyaBag secure checkout order access
+
+- Exact source `94a54b40a03d01ed464a14c62347ae8f3ee515f0` aktif sebagai
+  Hostinger release `20260824-94a54b4`; rollback `20260824-7ffb202`
+  tersedia.
+- Raw order token/private URL keluar dari response checkout dan long-lived
+  browser storage. Order status, payment return, cancellation, dan return
+  memakai secure HttpOnly order session dengan one-time legacy migration,
+  allowlisted Origin, serta generation-bound signed recovery.
+- Full frontend/backend, security/dependency, backup, CORS, public browser dua
+  viewport, workers, dan monitor lulus. Status `PRODUCTION_DEPLOYED`;
+  readiness `30/42` dengan 12 blocker dan commerce tetap fail-closed.
+
 ## 2026-08-24 - CoyaBag Cart and catalog reconciliation
 
 - Exact source `7ffb202c642a6d67a8cde1cb48c970ae383cb8f9` aktif sebagai

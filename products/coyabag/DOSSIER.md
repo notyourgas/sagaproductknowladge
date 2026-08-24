@@ -78,9 +78,9 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260824-7ffb202` memakai source
-`7ffb202c642a6d67a8cde1cb48c970ae383cb8f9` dan rollback
-`20260824-61429f0`. Customer flow kini memiliki quote snapshot yang divalidasi
+Release production terbaru `20260824-94a54b4` memakai source
+`94a54b40a03d01ed464a14c62347ae8f3ee515f0` dan rollback
+`20260824-7ffb202`. Customer flow kini memiliki quote snapshot yang divalidasi
 server, payment-to-fulfillment, serta timeline order/pengiriman terpadu.
 Operator memiliki shipping command center, packing/weight review, provider
 operation journal, pickup/label/tracking foundation, finance ledger,
@@ -101,6 +101,13 @@ tanpa menghapus sesi aktif. Handoff ke customer detail melakukan refresh
 authoritative; perubahan harga, stok, atau availability tetap berada pada
 Review Cart dengan feedback live sampai pemeriksaan berikutnya bersih. Checkout
 production tetap disabled.
+
+Checkout dan idempotent replay kini menetapkan cookie order path-scoped
+HttpOnly, Secure, SameSite Lax. Response checkout tidak lagi mengekspos raw
+access token/private URL, dan frontend hanya menyimpan order code di
+sessionStorage. Token legacy dimigrasikan sekali lalu dihapus. Mutasi berbasis
+cookie memerlukan Origin storefront yang diizinkan; signed recovery link
+terikat access generation dan tidak berlaku setelah operator melakukan reissue.
 
 ## Business model
 
@@ -178,11 +185,10 @@ Surface live dapat disalahartikan sebagai checkout aktif; dummy data, provider,
 Residual inheritance security header storefront sudah ditutup; CSP tidak
 diubah dalam hardening ini.
 
-Private order access masih perlu dipindahkan dari long-lived browser storage
-sebelum commerce activation. Ini risiko Checkout yang terbuka, bukan kemampuan
-production yang sudah selesai.
+Risiko private order access pada long-lived browser storage sudah ditutup oleh
+release `20260824-94a54b4`. Ini tidak mengaktifkan checkout atau provider.
 
-Readiness runtime terbaru `28/40` atau 70%, `ready=false`, dengan 12 blocker:
+Readiness runtime terbaru `30/42` atau 71%, `ready=false`, dengan 12 blocker:
 payment key/live mode/provider, owner 2FA, launch UAT/sign-off, mail/notification
 sender, media/object storage, dan privacy-retention approval.
 Status code `PRODUCTION_DEPLOYED` tidak mengubah activation maupun business

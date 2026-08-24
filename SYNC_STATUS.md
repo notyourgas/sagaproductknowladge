@@ -12,16 +12,27 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-24T17:09:23+07:00 |
+| Waktu pembaruan terakhir | 2026-08-24T18:06:58+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `5115d0b9a8ead408e98280688400af0c16b7638e` |
-| Informasi terakhir disinkronkan | CoyaBag Cart and catalog reconciliation production release. |
+| Baseline sebelum pembaruan | `3ebf7b83e0e0079b939a43527293c372444f51ef` |
+| Informasi terakhir disinkronkan | CoyaBag secure checkout order access production release. |
 | Status sinkronisasi | Delivery `PRODUCTION_DEPLOYED`; activation dan business readiness `BLOCKED`. |
 | Konflik | Tidak ada konflik source, release, rollback, atau runtime COYABAG. |
-| Error | Readiness tetap 28/40 dengan 12 blocker; checkout tetap fail-closed. |
+| Error | Readiness 30/42 dengan 12 blocker; checkout tetap fail-closed. |
 
-## File yang berubah pada sinkronisasi ini (CoyaBag Cart reconciliation)
+## File yang berubah pada sinkronisasi ini (CoyaBag secure order access)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `GAPS.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
+
+## File dari sinkronisasi sebelumnya (CoyaBag Cart reconciliation)
 
 - `products/coyabag/PRODUCT.md`
 - `products/coyabag/DOSSIER.md`

@@ -60,16 +60,16 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260824-7ffb202` dengan source
-  `7ffb202c642a6d67a8cde1cb48c970ae383cb8f9` melayani production;
-  rollback langsung `20260824-61429f0` dipertahankan.
+- Release aktif `20260824-94a54b4` dengan source
+  `94a54b40a03d01ed464a14c62347ae8f3ee515f0` melayani production;
+  rollback langsung `20260824-7ffb202` dipertahankan.
 - Release ini menambahkan destination/quote integrity, payment-to-fulfillment,
   Delivery Order/AWB/pickup/label foundation, tracking webhook inbox, shipping
   finance ledger, cancellation/incident/refund workflow, command center, dan
   customer timeline.
 - Empat migration additive, fresh backup/checksum, dua worker, operational
   monitor, serta 39 public smoke check desktop/mobile lulus.
-- Readiness production resmi `28/40` atau 70%, `ready=false`, dengan 12
+- Readiness production resmi `30/42` atau 71%, `ready=false`, dengan 12
   blocker. COD, Delivery API, payment production, dan provider webhook eksplisit
   tidak diaktifkan.
 - Release aktif memperbaiki discovery Beranda dan Katalog: tujuan scene selalu
@@ -110,6 +110,15 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
   recovery notice, serta kontrol keyboard/touch desktop-mobile. Laravel wajib
   memvalidasi varian aktif dan published commercial snapshot sebelum quote atau
   order. Full acceptance lulus; entry production 197,8 KiB dan CSS 149,4 KiB.
+- Checkout tidak lagi mengirim raw order token atau private access URL ke
+  JavaScript. Akses browser memakai cookie order HttpOnly, Secure, SameSite Lax
+  yang dibatasi ke path order; frontend hanya menyimpan order code dalam
+  sessionStorage.
+- Token legacy dimigrasikan satu kali lalu dihapus. Mutasi berbasis cookie
+  memerlukan Origin storefront yang diizinkan, sedangkan signed recovery link
+  terikat access generation dan kedaluwarsa setelah reissue.
+- Full storefront/Laravel/security/build, browser fixture dan public
+  desktop-mobile, backup, CORS, worker, serta operational monitor lulus.
 - Cart juga menyegarkan katalog setelah reconnect, mendeduplikasi refresh, dan
   memverifikasi perubahan dari tab lain tanpa menghapus sesi ketika payload
   eksternal invalid. Handoff ke Checkout melakukan satu pemeriksaan terakhir;
