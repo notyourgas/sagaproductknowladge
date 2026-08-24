@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-24 - CoyaBag shipping quote integrity
+
+- Exact source `affb6dd9bba2bc96349afbb7431e96da9f207faf` aktif sebagai
+  Hostinger release `20260824-affb6dd`; rollback `20260824-94a54b4` tersedia.
+- Customer tidak dapat melanjutkan dengan quote kedaluwarsa dan memperoleh
+  refresh otomatis. Operator mendapat provenance tarif terpilih yang aman pada
+  Order Detail; snapshot lama tidak tertimpa penerbitan quote baru.
+- Full frontend/backend, security/dependency, backup, browser desktop/mobile,
+  workers, scheduler, public smoke, dan monitor lulus. Status
+  `PRODUCTION_DEPLOYED`; readiness 30/42 dengan 12 blocker dan commerce tetap
+  fail-closed.
+
 ## 2026-08-24 - CoyaBag secure checkout order access
 
 - Exact source `94a54b40a03d01ed464a14c62347ae8f3ee515f0` aktif sebagai

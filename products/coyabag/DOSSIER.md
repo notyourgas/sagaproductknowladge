@@ -78,14 +78,23 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260824-94a54b4` memakai source
-`94a54b40a03d01ed464a14c62347ae8f3ee515f0` dan rollback
-`20260824-7ffb202`. Customer flow kini memiliki quote snapshot yang divalidasi
+Release production terbaru `20260824-affb6dd` memakai source
+`affb6dd9bba2bc96349afbb7431e96da9f207faf` dan rollback
+`20260824-94a54b4`. Customer flow kini memiliki quote snapshot yang divalidasi
 server, payment-to-fulfillment, serta timeline order/pengiriman terpadu.
 Operator memiliki shipping command center, packing/weight review, provider
 operation journal, pickup/label/tracking foundation, finance ledger,
 cancellation guard, incident, stock disposition, dan refund review. Seluruh
 provider baru dan COD tetap fail-closed.
+
+Quote manual/external kini memiliki identitas unik dan immutable untuk setiap
+penerbitan. Waktu terbit/kedaluwarsa ikut tersimpan pada snapshot order;
+Checkout menyaring quote usang, memblokir submit ketika kedaluwarsa, dan
+me-refresh sebelum expiry. Admin melihat courier, service, berat aktual/tagih,
+sumber tarif, waktu cek, serta masa berlaku tanpa destination hash atau payload
+provider privat. Release lulus 75 storefront test, 317 Laravel test dengan satu
+MySQL-only skip dan 2.374 assertion, browser desktop/mobile, build, security,
+dependency, backup, worker, scheduler, public smoke, dan operational monitor.
 
 Cart aktif menggunakan exact variant ID, merekonsiliasi harga, stok, media, dan
 jumlah setelah katalog Laravel siap, menggabungkan duplikat legacy, serta

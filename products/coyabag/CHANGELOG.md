@@ -8,6 +8,21 @@ Mencatat perubahan material COYABAG dengan provenance public-safe.
 
 Surface deployment tidak otomatis berarti commerce activation.
 
+## 2026-08-24 - Shipping quote integrity production release
+
+- Exact source `affb6dd9bba2bc96349afbb7431e96da9f207faf` aktif pada
+  immutable Hostinger release `20260824-affb6dd`; rollback langsung
+  `20260824-94a54b4` tersedia.
+- Quote manual/external sekarang unik per penerbitan, tidak menimpa snapshot
+  lama, dan membawa waktu terbit/kedaluwarsa ke order.
+- Checkout menyaring quote kedaluwarsa, menahan submit, dan me-refresh otomatis
+  sebelum expiry. Admin Order Detail menampilkan provenance tarif yang aman
+  tanpa destination hash atau payload provider privat.
+- Storefront 75/75, Laravel 317 pass/1 MySQL-only skip dengan 2.374 assertion,
+  browser desktop/mobile, build/security/dependency, backup, worker, scheduler,
+  public smoke, dan monitor lulus. Readiness tetap 30/42 dengan 12 blocker;
+  commerce/provider tetap fail-closed.
+
 ## 2026-08-24 - Secure checkout order access production release
 
 - Informasi `CONFIRMED` berasal dari exact source

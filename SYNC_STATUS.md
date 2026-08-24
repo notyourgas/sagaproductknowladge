@@ -12,16 +12,27 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-24T18:06:58+07:00 |
+| Waktu pembaruan terakhir | 2026-08-24T19:05:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `3ebf7b83e0e0079b939a43527293c372444f51ef` |
-| Informasi terakhir disinkronkan | CoyaBag secure checkout order access production release. |
+| Baseline sebelum pembaruan | `9d8635566d85b386b140fb4432276111662b4fcd` |
+| Informasi terakhir disinkronkan | CoyaBag shipping quote integrity production release. |
 | Status sinkronisasi | Delivery `PRODUCTION_DEPLOYED`; activation dan business readiness `BLOCKED`. |
 | Konflik | Tidak ada konflik source, release, rollback, atau runtime COYABAG. |
 | Error | Readiness 30/42 dengan 12 blocker; checkout tetap fail-closed. |
 
-## File yang berubah pada sinkronisasi ini (CoyaBag secure order access)
+## File yang berubah pada sinkronisasi ini (CoyaBag shipping quote integrity)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `GAPS.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
+
+## File dari sinkronisasi sebelumnya (CoyaBag secure order access)
 
 - `products/coyabag/PRODUCT.md`
 - `products/coyabag/DOSSIER.md`

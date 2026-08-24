@@ -894,6 +894,14 @@ GAP-004, bukan gap implementasi warna komponen.
 
 ### COYABAG
 
+- `PRODUCTION_DEPLOYED`: release aktif `20260824-affb6dd`, exact source
+  `affb6dd9bba2bc96349afbb7431e96da9f207faf`, membuat quote manual/external
+  unik dan immutable, menyimpan issue/expiry pada order, memblokir quote
+  kedaluwarsa, me-refresh sebelum expiry, serta memberi operator provenance
+  tarif yang aman. Rollback `20260824-94a54b4` tersedia; full gate dan public
+  desktop/mobile smoke lulus. Readiness tetap 30/42 dengan 12 blocker dan
+  commerce fail-closed.
+
 - `PRODUCTION_DEPLOYED`: release aktif `20260824-94a54b4`, exact source
   `94a54b40a03d01ed464a14c62347ae8f3ee515f0`, memindahkan private order
   access dari raw response dan long-lived browser storage ke cookie HttpOnly,
@@ -977,6 +985,10 @@ GAP-004, bukan gap implementasi warna komponen.
   storage. Release `20260824-94a54b4` memakai secure HttpOnly order session,
   one-time legacy migration, allowlisted Origin untuk mutasi, dan
   generation-bound signed recovery link. Blocker commerce lain tetap terpisah.
+- `CLOSED`: penerbitan ulang quote manual/external tidak lagi menimpa snapshot
+  quote sebelumnya, dan Checkout tidak dapat meneruskan quote kedaluwarsa.
+  Release `20260824-affb6dd` menambah unique quote issuance, order expiry
+  provenance, pre-expiry refresh, serta admin-safe visibility.
 
 ### AOGTIVITY
 

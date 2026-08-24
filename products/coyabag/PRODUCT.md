@@ -60,9 +60,9 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260824-94a54b4` dengan source
-  `94a54b40a03d01ed464a14c62347ae8f3ee515f0` melayani production;
-  rollback langsung `20260824-7ffb202` dipertahankan.
+- Release aktif `20260824-affb6dd` dengan source
+  `affb6dd9bba2bc96349afbb7431e96da9f207faf` melayani production;
+  rollback langsung `20260824-94a54b4` dipertahankan.
 - Release ini menambahkan destination/quote integrity, payment-to-fulfillment,
   Delivery Order/AWB/pickup/label foundation, tracking webhook inbox, shipping
   finance ledger, cancellation/incident/refund workflow, command center, dan
@@ -127,6 +127,15 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 - Freshness, checking, changed, retry, offline, dan disabled-commerce states
   lulus desktop/mobile tanpa overflow atau browser error. Entry production
   tetap dalam budget pada 199,0 KiB; commerce tetap fail-closed.
+- Quote pengiriman manual/external sekarang unik per penerbitan dan tidak lagi
+  menimpa snapshot lama. Order menyimpan waktu terbit/kedaluwarsa, sedangkan
+  Checkout menyaring quote kedaluwarsa, menahan submit, dan me-refresh quote
+  otomatis sebelum masa berlaku habis.
+- Admin Order Detail menampilkan provenance tarif yang aman dan operasional
+  tanpa destination hash atau payload provider privat. Storefront 75/75,
+  Laravel 317 pass/1 MySQL-only skip dengan 2.374 assertion, browser
+  desktop/mobile, full build/security/dependency, backup, workers, scheduler,
+  public smoke, dan operational monitor lulus.
 - Scheduler terminal expiry sudah fail-closed dan concurrency-tested.
 - Release candidate source `264c6ac2ebec33c6471a4c49572ddcdc82b51cf2`
   merekonsiliasi

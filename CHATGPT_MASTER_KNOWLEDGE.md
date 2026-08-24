@@ -3028,9 +3028,9 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release aktif `20260824-94a54b4` menjalankan exact source
-`94a54b40a03d01ed464a14c62347ae8f3ee515f0` dengan rollback
-`20260824-7ffb202`. Fondasi yang tersedia membawa destination/quote integrity,
+Release aktif `20260824-affb6dd` menjalankan exact source
+`affb6dd9bba2bc96349afbb7431e96da9f207faf` dengan rollback
+`20260824-94a54b4`. Fondasi yang tersedia membawa destination/quote integrity,
 payment-to-fulfillment, Delivery Order/AWB/pickup/label/tracking foundation,
 shipping finance ledger, cancellation/incident/refund workflow, operator
 command center, dan customer timeline. Empat migration additive, fresh backup,
@@ -3038,6 +3038,14 @@ dua worker, operational monitor, dan 39 public checks desktop/mobile lulus.
 Provider Delivery/Payment dan COD tetap eksplisit default-off. Readiness
 production `30/42` atau 71%, `ready=false`; activation dan business readiness
 tetap `BLOCKED`.
+
+Quote manual/external pada release aktif memiliki ID unik per penerbitan dan
+tidak menimpa snapshot lama. Order menyimpan waktu terbit/kedaluwarsa;
+Checkout menyaring quote usang, menahan submit, serta me-refresh sebelum expiry.
+Admin Order Detail menampilkan provenance tarif yang aman tanpa destination
+hash atau payload provider privat. Full acceptance desktop/mobile dan release
+gate lulus; kemampuan ini tidak mengaktifkan payment, shipping provider, atau
+commerce production.
 
 Checkout/replay tidak lagi mengekspos raw order token atau private URL ke
 JavaScript. Browser memakai cookie order HttpOnly, Secure, SameSite Lax yang
