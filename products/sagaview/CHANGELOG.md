@@ -1,5 +1,27 @@
 # SagaView Changelog
 
+## 2026-08-25 - S280 Support Hub Owner recovery
+
+- Klasifikasi: `CONFIRMED / PUSHED / UIUX_VALIDATED / SECURITY_VALIDATED /
+  QA_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+  `BUSINESS_READY=false`.
+- Before: bootstrap gagal hanya menampilkan error generik dan shared widget
+  dapat mempertahankan identitas produk default, sehingga langkah pemulihan
+  tidak sesuai konteks SagaView.
+- After: SagaView mengunci identitas produk sebelum bootstrap, membedakan
+  401/419, 403, gangguan server, dan offline, mempertahankan draft pertanyaan,
+  serta menyediakan retry atau login ulang di tab baru dengan target minimal
+  44 piksel. Tidak ada kontrol upload screenshot pada semua state SagaView.
+- Provenance: exact source
+  `15efd63cf83ee0aa73c7ee0c9ce8353b22fc4605` sudah pushed pada branch
+  `codex/s280-owner-support-hub-recovery`.
+- Evidence: Support Hub browser 10/10, full Owner browser 46/46, backend/API
+  36/36 dengan 184 assertion, build 5.097 modul, diff check, serta audit
+  Composer/npm nol lulus.
+- Delivery: tidak ada API/database/migration, perubahan payment/provider, atau
+  upload foto/path/output. Production tidak berubah; authenticated UAT dan
+  guarded deployment tetap residual.
+
 ## 2026-08-25 - S273-S279 cumulative production activation
 
 - Klasifikasi: `CONFIRMED / PUSHED / UIUX_VALIDATED / SECURITY_VALIDATED /

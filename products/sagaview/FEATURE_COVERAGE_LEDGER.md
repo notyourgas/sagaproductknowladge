@@ -1,6 +1,19 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 25 Agustus 2026 00:15 WIB
+Evidence cut-off: 25 Agustus 2026 00:44 WIB
+
+S280 Support Hub Owner recovery: exact backend/Owner
+`15efd63cf83ee0aa73c7ee0c9ce8353b22fc4605` berstatus `CONFIRMED / PUSHED /
+UIUX_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`. Jalur UI -> shared frontend widget -> endpoint
+bootstrap/ask -> recovery UI kini terbukti untuk sukses, 401/419, 403, 5xx,
+dan offline. Pertanyaan yang belum terkirim dipertahankan, login ulang memakai
+tab baru, target aksi minimal 44 piksel, dan kontrol screenshot/upload tidak
+pernah muncul untuk SagaView. Support Hub browser 10/10, full Owner 46/46,
+backend/API 36/36 dengan 184 assertion, build 5.097 modul, diff check, serta
+audit dependency nol lulus. Tidak ada migration atau perubahan storage.
+Production tetap S279; gap berikutnya adalah authenticated Owner UAT dan
+guarded deployment S280 sebelum activation atau `BUSINESS_READY`.
 
 S273-S279 cumulative recovery dan production activation: backend/Owner exact
 `f956846d803f5af7e2a6c8cf8daa010b2164408a` dan Studio exact

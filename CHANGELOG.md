@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - SagaView S280 Support Hub recovery sync
+
+- Informasi `CONFIRMED` berasal dari exact source
+  `15efd63cf83ee0aa73c7ee0c9ce8353b22fc4605` dan evidence local gate pada
+  worktree terisolasi.
+- Knowledge mencatat recovery 401/419, 403, 5xx, dan offline, preservasi draft,
+  login tab baru, target aksi minimal 44 piksel, serta no-upload pada seluruh
+  state SagaView.
+- Support Hub browser 10/10, full Owner 46/46, backend/API 36/184, build 5.097
+  modul, diff check, dan audit dependency nol lulus. Status
+  `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
+- Dokumen terdampak: SagaView product/changelog/coverage, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-25 - CoyaBag Our Product production sync
 
 - Informasi `CONFIRMED` berasal dari exact source

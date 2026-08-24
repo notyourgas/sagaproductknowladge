@@ -1,6 +1,23 @@
 # SagaView Product Knowledge
 
-Updated: 25 Agustus 2026 00:15 WIB
+Updated: 25 Agustus 2026 00:44 WIB
+
+SagaView S280 berstatus `CONFIRMED / PUSHED / UIUX_VALIDATED /
+SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; `BUSINESS_READY=false`. Support Hub Owner sekarang
+mengunci identitas SagaView sebelum bootstrap dan membedakan sesi berakhir,
+izin ditolak, gangguan layanan, serta perangkat offline. Setiap recovery
+menjelaskan bahwa pertanyaan dan data halaman tetap aman; retry mempertahankan
+draft, sedangkan login ulang dibuka pada tab baru. Kontrol upload screenshot
+tetap tidak tersedia di SagaView.
+
+Exact source `15efd63cf83ee0aa73c7ee0c9ce8353b22fc4605` sudah pushed.
+Focused Support Hub browser 10/10, full Owner browser 46/46, backend/API 36/36
+dengan 184 assertion, build 5.097 modul, diff check, serta audit Composer/npm
+nol lulus. Tidak ada perubahan API, database, migration, tenant, harga,
+payment/provider, atau upload foto/path/output. Production tetap memakai
+backend/Owner S279 `f956846d...` dan Studio `7ae79ae4...`; authenticated UAT
+dan guarded deployment S280 tetap terpisah.
 
 SagaView S273-S279 berstatus `CONFIRMED / PUSHED / UIUX_VALIDATED /
 SECURITY_VALIDATED / QA_VALIDATED / DATA_INTEGRITY_VALIDATED /

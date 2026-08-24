@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-25 - SagaView S280 Support Hub recovery
+
+- Support Hub Owner sekarang memberi pemulihan yang tepat untuk sesi berakhir,
+  izin ditolak, gangguan layanan, dan offline tanpa menghapus pertanyaan yang
+  sedang ditulis.
+- Identitas SagaView dikunci sebelum bootstrap dan kontrol upload screenshot
+  tidak muncul pada state gagal, sehingga kontrak local-first/no-upload tetap
+  terjaga.
+- Exact source `15efd63cf83ee0aa73c7ee0c9ce8353b22fc4605` sudah pushed;
+  browser Support Hub 10/10, full Owner 46/46, API 36/184, build, dan audit
+  dependency lulus. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+  production belum berubah.
+
 ## 2026-08-25 - CoyaBag Our Product live-catalog integrity
 
 - Exact source `9819148e8ecce8469d7802841007f8cd111c3246` aktif sebagai
