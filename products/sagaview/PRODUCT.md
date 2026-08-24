@@ -1,6 +1,24 @@
 # SagaView Product Knowledge
 
-Updated: 25 Agustus 2026 00:44 WIB
+Updated: 25 Agustus 2026 01:22 WIB
+
+SagaView S281 berstatus `CONFIRMED / PUSHED / UIUX_VALIDATED /
+ACCESSIBILITY_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; `BUSINESS_READY=false`.
+Launcher Owner sekarang memakai label terlihat `Bantuan SagaView`, target
+minimal 48 piksel, safe-area mobile, focus ring, dan posisi di atas navigasi.
+Panel SagaView berperan sebagai dialog: fokus masuk saat dibuka, Escape
+menutupnya, lalu fokus kembali ke launcher. Perilaku default SagaBook tetap
+`Bantuan AI` dan tidak diubah.
+
+Exact source `dd229d97da3e045f7cf74d2847bb766f325920b7` sudah pushed.
+Focused Support Hub desktop/mobile 10/10, focused launcher forced-colors dan
+reduced-motion 2/2, shared SagaBook regression 2/2, full Owner browser 46/46,
+backend/API 36/36 dengan 184 assertion, build 5.097 modul, diff check, serta
+audit Composer/npm nol lulus. Tidak ada perubahan API, database, migration,
+payment/provider, atau upload foto/path/output. Production tetap memakai S279;
+authenticated Owner UAT dan guarded deployment kandidat kumulatif S281 tetap
+terpisah.
 
 SagaView S280 berstatus `CONFIRMED / PUSHED / UIUX_VALIDATED /
 SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /

@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - SagaView S281 Support Hub launcher sync
+
+- Informasi `CONFIRMED` berasal dari exact source
+  `dd229d97da3e045f7cf74d2847bb766f325920b7` dan gate lokal worktree
+  terisolasi.
+- Knowledge mencatat launcher bernama jelas, target 48 piksel, safe-area,
+  focus ring, dialog keyboard, Escape, fokus kembali, forced-colors, dan
+  reduced-motion tanpa mengubah default SagaBook.
+- Focused 10/10 + 2/2, shared regression 2/2, full Owner 46/46, backend/API
+  36/184, build 5.097 modul, diff check, dan audit dependency nol lulus.
+  Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S279.
+- Dokumen terdampak: SagaView product/changelog/coverage, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-25 - SagaView S280 Support Hub recovery sync
 
 - Informasi `CONFIRMED` berasal dari exact source

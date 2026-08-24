@@ -1,5 +1,26 @@
 # SagaView Changelog
 
+## 2026-08-25 - S281 Support Hub launcher discoverability
+
+- Klasifikasi: `CONFIRMED / PUSHED / UIUX_VALIDATED /
+  ACCESSIBILITY_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; `BUSINESS_READY=false`.
+- Before: launcher Owner memakai label generik `Bantuan AI`, berada pada lapisan
+  yang sama dengan navigasi, dan panel tidak memindahkan atau mengembalikan
+  fokus keyboard secara eksplisit.
+- After: launcher SagaView bernama jelas, berukuran minimal 48 piksel,
+  safe-area-aware, memiliki focus ring, dan berada di atas navigasi. Panel
+  SagaView menjadi dialog yang menerima fokus, dapat ditutup dengan Escape,
+  lalu mengembalikan fokus ke launcher. Default SagaBook tetap `Bantuan AI`.
+- Provenance: exact source
+  `dd229d97da3e045f7cf74d2847bb766f325920b7` sudah pushed pada branch
+  `codex/s281-support-hub-launcher`.
+- Evidence: focused Support Hub 10/10, forced-colors/reduced-motion 2/2,
+  shared regression 2/2, full Owner browser 46/46, backend/API 36/36 dengan
+  184 assertion, build 5.097 modul, diff check, dan audit Composer/npm nol.
+- Delivery: frontend/test saja; tidak ada API/database/migration,
+  payment/provider, atau upload foto/path/output. Production tetap S279.
+
 ## 2026-08-25 - S280 Support Hub Owner recovery
 
 - Klasifikasi: `CONFIRMED / PUSHED / UIUX_VALIDATED / SECURITY_VALIDATED /

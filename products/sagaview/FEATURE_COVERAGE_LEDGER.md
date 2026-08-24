@@ -1,6 +1,20 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 25 Agustus 2026 00:44 WIB
+Evidence cut-off: 25 Agustus 2026 01:22 WIB
+
+S281 Support Hub launcher discoverability: exact backend/Owner
+`dd229d97da3e045f7cf74d2847bb766f325920b7` berstatus `CONFIRMED / PUSHED /
+UIUX_VALIDATED / ACCESSIBILITY_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Launcher SagaView kini terlihat
+jelas sebagai `Bantuan SagaView`, target minimal 48 piksel, aman terhadap
+safe-area dan navigasi, serta memiliki focus ring. Dialog menerima fokus saat
+dibuka, Escape menutup, dan fokus kembali ke launcher; default SagaBook tetap
+`Bantuan AI`. Focused Support Hub 10/10, forced-colors/reduced-motion 2/2,
+shared regression 2/2, full Owner browser 46/46, backend/API 36/184, build
+5.097 modul, diff check, dan audit dependency nol lulus. Tidak ada perubahan
+API, database, migration, atau no-upload boundary. Production tetap S279; gap
+berikutnya adalah authenticated Owner UAT dan guarded deployment kandidat
+kumulatif S281.
 
 S280 Support Hub Owner recovery: exact backend/Owner
 `15efd63cf83ee0aa73c7ee0c9ce8353b22fc4605` berstatus `CONFIRMED / PUSHED /

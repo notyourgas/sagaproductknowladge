@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-25 - SagaView S281 Support Hub launcher
+
+- Bantuan Owner sekarang mudah dikenali sebagai `Bantuan SagaView` pada
+  desktop maupun mobile, dengan target besar, safe-area, dan lapisan di atas
+  navigasi.
+- Alur keyboard lengkap: fokus masuk ke dialog, Escape menutup, lalu fokus
+  kembali ke launcher; forced-colors dan reduced-motion ikut diverifikasi.
+- Exact source `dd229d97da3e045f7cf74d2847bb766f325920b7` sudah pushed;
+  focused 10/10 + 2/2, shared regression 2/2, full Owner 46/46, API 36/184,
+  build, dan audit dependency lulus. Status `LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap S279.
+
 ## 2026-08-25 - SagaView S280 Support Hub recovery
 
 - Support Hub Owner sekarang memberi pemulihan yang tepat untuk sesi berakhir,
