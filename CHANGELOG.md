@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - SagaView S285 authenticated synthetic UAT sync
+
+- Informasi `CONFIRMED` berasal dari exact source
+  `8d84c60c86131892a2ae3727670b0468b64fa81b` dan evidence UAT public-safe
+  SHA-256 `ef9b51f614c5705b842feefb44952d8ce66160e221725e9f120609b21a7492d3`.
+- Knowledge mencatat login/session nyata, fixture sintetis, SQLite disposable,
+  46/46 skenario desktop/mobile, 38 screenshot lintas viewport/forced-colors,
+  focused contract 18/194, build, diff, serta audit dependency nol.
+- Status `AUTHENTICATED_SYNTHETIC_UAT / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; sebagian workflow memakai API mock, sehingga
+  guarded deploy dan final authenticated operator smoke tetap gate terpisah.
+- Dokumen terdampak: SagaView product/changelog/coverage, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-25 - SagaView S284 disposable rehearsal sync
 
 - Informasi `CONFIRMED` berasal dari exact source

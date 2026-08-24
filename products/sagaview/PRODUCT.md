@@ -1,6 +1,21 @@
 # SagaView Product Knowledge
 
-Updated: 25 Agustus 2026 04:22 WIB
+Updated: 25 Agustus 2026 04:35 WIB
+
+SagaView S285 menyelesaikan authenticated synthetic Owner UAT pada exact
+backend/Owner `8d84c60c86131892a2ae3727670b0468b64fa81b`. Login dan session nyata
+diuji menggunakan data sintetis serta SQLite disposable; seluruh 46/46 skenario
+desktop/mobile lulus dengan satu worker. Evidence visual mencakup 390x844,
+1280x800, 1440x900, 1920x1080, 2560x1440, dan forced-colors tanpa memakai
+data, foto, path, atau output customer.
+
+Focused/release contract 18/18 dengan 194 assertion, build 5.097 modul,
+diff check, serta audit Composer/npm nol kembali lulus pada commit yang sama.
+Status `AUTHENTICATED_SYNTHETIC_UAT / SECURITY_VALIDATED / QA_VALIDATED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S279 dan
+`BUSINESS_READY=false`. Beberapa workflow browser memakai API mock, sehingga
+final authenticated operator smoke setelah guarded deployment tetap gate
+terpisah dan memerlukan otorisasi eksplisit Andreas.
 
 SagaView S284 menutup blocker dummy-tenant/config-cache pada database
 rehearsal. Exact backend/Owner

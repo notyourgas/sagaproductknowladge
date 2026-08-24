@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-25 - SagaView S285 authenticated synthetic Owner UAT
+
+- Kandidat S284 kini melewati 46/46 skenario Owner terautentikasi pada desktop
+  dan mobile menggunakan fixture sintetis serta database disposable.
+- Exact source `8d84c60c86131892a2ae3727670b0468b64fa81b` tetap bersih dan sama dengan
+  upstream; focused contract 18/194, build 5.097 modul, diff check, dan audit
+  dependency nol lulus.
+- Evidence visual mencakup lima ukuran viewport dan forced-colors. Status
+  `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S279 dan
+  final operator smoke setelah guarded deploy masih diperlukan.
+
 ## 2026-08-25 - SagaView S284 disposable release rehearsal
 
 - Rehearsal SagaView sekarang membuat pilot sintetis hanya di database lokal

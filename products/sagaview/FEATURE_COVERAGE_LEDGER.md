@@ -1,6 +1,20 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 25 Agustus 2026 04:22 WIB
+Evidence cut-off: 25 Agustus 2026 04:35 WIB
+
+S285 authenticated synthetic Owner UAT: exact backend/Owner
+`8d84c60c86131892a2ae3727670b0468b64fa81b` berstatus `CONFIRMED /
+AUTHENTICATED_SYNTHETIC_UAT / SECURITY_VALIDATED / QA_VALIDATED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Login/session nyata dan 46/46
+skenario Owner desktop/mobile lulus serial pada fixture sintetis serta SQLite
+disposable, disertai 38 screenshot untuk viewport 390x844, 1280x800,
+1440x900, 1920x1080, 2560x1440, dan forced-colors. Focused/release contract
+18/194, build 5.097 modul, diff check, serta audit dependency nol lulus pada
+exact commit bersih yang sama dengan upstream. Evidence public-safe tersimpan
+dua lokasi byte-identical; production, data customer, foto, path lokal, dan
+output customer tidak disentuh. Karena beberapa workflow memakai API mock,
+gap berikutnya adalah otorisasi guarded deployment lalu final authenticated
+operator smoke; production tetap S279 dan `BUSINESS_READY=false`.
 
 S284 disposable synthetic-pilot rehearsal: exact backend/Owner
 `8d84c60c86131892a2ae3727670b0468b64fa81b` berstatus `CONFIRMED / PUSHED /

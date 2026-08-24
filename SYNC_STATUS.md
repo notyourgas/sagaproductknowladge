@@ -12,14 +12,24 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T04:22:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T04:35:16+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `03577dd` |
-| Informasi terakhir disinkronkan | SagaView S284 disposable synthetic-pilot rehearsal. |
-| Status sinkronisasi | `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S279. |
+| Baseline sebelum pembaruan | `8e08a4b` |
+| Informasi terakhir disinkronkan | SagaView S285 authenticated synthetic Owner UAT. |
+| Status sinkronisasi | `AUTHENTICATED_SYNTHETIC_UAT / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S279. |
 | Konflik | Tidak ada konflik source atau keputusan baru. |
-| Error | Tidak ada error sinkronisasi; authenticated UAT dan otorisasi guarded deployment tetap pending. |
+| Error | Tidak ada error sinkronisasi; guarded deployment dan final authenticated operator smoke tetap pending. |
+
+## File yang berubah pada sinkronisasi ini (SagaView S285 authenticated synthetic UAT)
+
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/CHANGELOG.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaView S284 rehearsal)
 

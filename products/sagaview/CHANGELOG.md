@@ -1,5 +1,26 @@
 # SagaView Changelog
 
+## 2026-08-25 - S285 authenticated synthetic Owner UAT
+
+- Klasifikasi: `CONFIRMED / AUTHENTICATED_SYNTHETIC_UAT /
+  SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; `BUSINESS_READY=false`.
+- Before: kandidat S284 sudah memiliki rehearsal database dan artifact exact
+  commit, tetapi alur Owner terautentikasi lintas desktop/mobile belum memiliki
+  satu acceptance run lengkap pada kandidat tersebut.
+- After: login/session nyata dan 46 skenario Owner dijalankan serial memakai
+  fixture sintetis serta SQLite disposable; seluruhnya lulus dengan 38
+  screenshot pada viewport 390, 1280, 1440, 1920, dan 2560 serta forced-colors.
+- Provenance: exact backend/Owner
+  `8d84c60c86131892a2ae3727670b0468b64fa81b`, branch bersih dan sama dengan
+  upstream; evidence JSON SHA-256
+  `ef9b51f614c5705b842feefb44952d8ce66160e221725e9f120609b21a7492d3`
+  tersimpan dua salinan byte-identical.
+- Evidence tambahan: focused/release contract 18/18 dengan 194 assertion,
+  build 5.097 modul, diff check, dan audit Composer/npm nol lulus.
+- Batas: beberapa workflow browser memakai API mock. Production tetap S279;
+  guarded deploy dan final authenticated operator smoke belum dijalankan.
+
 ## 2026-08-25 - S284 disposable synthetic-pilot rehearsal
 
 - Klasifikasi: `CONFIRMED / PUSHED / SECURITY_VALIDATED / QA_VALIDATED /
