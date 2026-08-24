@@ -1,5 +1,20 @@
 # Portfolio Changelog
 
+## 2026-08-24 - SagaBook bukti pembayaran OTS
+
+- Exact source `10462ca913530e61834b144ef95c33bf115f59c3` aktif sebagai
+  release `20260824094717-10462ca`; rollback
+  `20260824084125-49e4cef` tersedia.
+- Admin dapat memotret/scan atau memilih bukti QRIS onsite dan transfer manual
+  untuk booking manual. Bukti aktif, replacement, dan late evidence dapat
+  ditinjau di Booking Detail serta riwayat Activity tanpa mengubah status bayar.
+- Private storage/viewer, tenant/cabang/role, file-signature validation, EXIF
+  stripping, idempotency, audit, dan append-only replacement ledger lulus full,
+  focused, browser, security, dependency, backup/restore, migration, database,
+  service/journal, serta public smoke gate.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated UAT dan
+  studio pilot tetap residual sehingga `BUSINESS_READY=false`.
+
 ## 2026-08-24 - SagaBook reschedule transaction integrity
 
 - Exact source `50d9971c43405450f245464942765f85a2845f48` aktif sebagai

@@ -1,5 +1,23 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-24 - SagaBook S289 OTS payment proof production sync
+
+- Informasi `CONFIRMED` berasal dari keputusan Andreas, exact source
+  `10462ca913530e61834b144ef95c33bf115f59c3`, release
+  `20260824094717-10462ca`, rollback `20260824084125-49e4cef`, dan
+  post-activation runtime verification.
+- Knowledge mencatat capture/file picker bukti QRIS onsite atau transfer manual,
+  tampilan Booking Detail/Activity, ledger replacement dan late evidence,
+  private storage/viewer, tenant/cabang/role, file validation, EXIF stripping,
+  idempotency/audit, serta batas no financial mutation.
+- Full/focused/regression, Node/browser, build/security/dependency, encrypted
+  backup/restore, migration, database audit 100, exact verifier 17/17,
+  service/journal, dan public/security smoke lulus. Flag aktif global.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated UAT dan
+  dua studio pilot masih residual sehingga `BUSINESS_READY=false`.
+- Dokumen terdampak: SagaBook product/dossier/changelog/coverage, decisions,
+  gaps, portfolio, master knowledge, root changelog, dan sync status.
+
 ## 2026-08-24 - SagaBook S287 reschedule production sync
 
 - Informasi `CONFIRMED` berasal dari exact source

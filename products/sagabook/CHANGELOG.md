@@ -1,5 +1,29 @@
 # SagaBook Changelog
 
+## 2026-08-24 - Bukti pembayaran OTS Manual Booking S289 production
+
+- Klasifikasi: `CONFIRMED`; Andreas meminta admin dapat memotret/memilih bukti
+  transfer atau QRIS OTS, melihatnya di Booking Detail dan riwayat transaksi,
+  lalu mengotorisasi seluruh sprint serta deployment. Exact source
+  `10462ca913530e61834b144ef95c33bf115f59c3` telah dipush ke source `main`.
+- Booking manual dengan QRIS onsite atau transfer manual menerima JPG, PNG,
+  WEBP, atau PDF maksimal 5 MB melalui kamera/scan maupun file picker. Detail
+  dan Activity menampilkan bukti aktif, pengganti, dan late evidence; record
+  lama dipertahankan saat bukti diganti.
+- File dan viewer privat; tenant/cabang/capability, MIME/extension/signature,
+  pixel cap, sanitasi nama, EXIF stripping, optimistic lock, idempotency, serta
+  audit diterapkan. Upload tidak mengubah nominal, status pembayaran, booking,
+  atau closing; booking website/provider dan terminal state ditolak.
+- Full PHP 1.141/1.141 (13.039 assertion), focused 5/5 (46), release regression
+  28/28 (299), Node 18/18, browser 4/4, typecheck/build/Pint, dan audit
+  dependency nol lulus. Encrypted backup/checksum/disposable restore,
+  migration rehearsal, database audit 100, manifest, 0 pending migration,
+  exact verifier 17/17, service/journal, serta public/security smoke 3/3 lulus.
+- Release `20260824094717-10462ca` aktif dengan rollback
+  `20260824084125-49e4cef`; feature flag aktif untuk seluruh tenant. Status
+  `PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated UAT dan
+  dua studio pilot residual sehingga `BUSINESS_READY=false`.
+
 ## 2026-08-24 - Sinkronisasi reschedule S287 production
 
 - Klasifikasi: `CONFIRMED`; exact source

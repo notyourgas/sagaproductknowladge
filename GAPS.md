@@ -8,7 +8,7 @@ diubah menjadi klaim publik sebelum ditutup dengan bukti atau keputusan owner.
 
 ## Konteks
 
-Daftar ini berlaku pada evidence cut-off 24 Agustus 2026 15:54 WIB dan harus diperbarui
+Daftar ini berlaku pada evidence cut-off 24 Agustus 2026 17:06 WIB dan harus diperbarui
 ketika keputusan atau release baru menutup gap.
 
 ## Cara memakai
@@ -65,7 +65,7 @@ GAP-004, bukan gap implementasi warna komponen.
 | GAP-009 | SagaBooth | TODO | M1 local runtime, native SQLite, journal/outbox, recovery, simulator, dan operator shell sudah tertutup. GitHub Actions tetap tidak memulai job karena billing/spending limit dan branch protection repo private memerlukan GitHub Pro. Customer kiosk, hardware, QRIS, MySQL/control plane, signed installer, deploy, serta pilot belum ada. | Selesaikan billing, ulang CI hingga hijau, aktifkan protection, lalu bangun M2 customer kiosk dan qualification Canon/DNP secara bertahap. |
 | GAP-010 | SagaBook / SagaView | NEEDS CONFIRMATION | SagaTech V24 sudah memublikasikan trial 14 hari dan early adopter 1 bulan berlangganan menjadi total 2 bulan aktif, tetapi runbook fulfillment, eligibility/quota register, serta receipt aktivasi per produk belum ada di knowledge. SagaBook tetap memiliki lifecycle DEC-029 dan V24 tidak mengubah entitlement backend. | Kunci runbook assisted activation per produk, pemilik approval, receipt entitlement, cara menangani hari 8–14 SagaBook, kuota, dan bukti bulan bonus sebelum cohort pertama diaktivasi. |
 | GAP-013 | SagaView | CLOSED | Dua backup fresh S272 direkonsiliasi secara private/no-overwrite dan checksum-valid; metadata service-only, rehearsal, conflict fail-closed, serta candidate gate 6/6 lulus. Atomic activation kemudian berhasil dan seluruh 215 asset frame unik production terbaca tanpa integrity error. | Backend/Owner aktif sebagai `20260824034431-fe2dcfc`, rollback `20260823091225-c828bd9`; evidence activation SHA-256 `e5d2fb5474d5c8d029f2da8987de852d67142fdda35158c06d0a3389e62abf48`. |
-| GAP-014 | SagaBook | TODO | Edit pembayaran Manual Booking sudah production-activated, tetapi authenticated Owner/operator UAT tertahan karena reference credential UAT belum unik atau belum tersedia. | Perbaiki reference vault UAT tanpa mengekspos credential, lalu ulang read-only UAT pada exact source `49e4cefa...` / release `20260824084125-49e4cef`; lanjutkan studio pilot sebelum `BUSINESS_READY`. |
+| GAP-014 | SagaBook | TODO | Edit pembayaran dan upload/histori bukti pembayaran OTS Manual Booking sudah production-activated, tetapi authenticated Owner/operator UAT belum dijalankan pada booking manual nyata. | Siapkan akun referensi UAT tanpa mengekspos credential; uji upload, viewer, replacement, Activity history, late evidence, dan no-financial-mutation pada exact source `10462ca...` / release `20260824094717-10462ca`; lanjutkan dua studio pilot sebelum `BUSINESS_READY`. |
 
 ## Keputusan produk
 

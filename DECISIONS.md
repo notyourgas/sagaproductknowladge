@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-100 - Bukti QRIS dan transfer OTS tersimpan privat pada booking manual
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-24 |
+| Topik | Upload dan histori bukti pembayaran OTS Manual Booking SagaBook |
+| Keputusan | Admin harus dapat mengambil foto/scan atau memilih bukti QRIS onsite dan transfer manual, lalu melihat bukti aktif maupun penggantinya di Booking Detail dan riwayat Activity. Upload bukti tidak boleh otomatis mengubah status bayar, nominal, booking, atau closing. |
+| Alasan | Pembayaran OTS sering dikonfirmasi staf setelah sesi; studio memerlukan rekapan bukti yang dapat diaudit tanpa mengaburkan authority ledger pembayaran. |
+| Alternatif yang dipertimbangkan | Menyimpan foto di perangkat/WhatsApp saja; menghapus file lama saat replacement; otomatis menandai booking paid setelah upload. |
+| Dampak | JPG/PNG/WEBP/PDF maksimal 5 MB disimpan privat dengan viewer terautentikasi, tenant/cabang/role, signature/MIME/pixel validation, EXIF stripping, idempotency, audit, active/superseded ledger, dan late-evidence marker. Booking website/provider dan terminal state fail-closed. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; source `10462ca913530e61834b144ef95c33bf115f59c3`, release `20260824094717-10462ca`, rollback `20260824084125-49e4cef`; authenticated UAT residual dan `BUSINESS_READY=false` |
+| Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [SagaBook Changelog](products/sagabook/CHANGELOG.md), [SagaBook Ledger](products/sagabook/FEATURE_COVERAGE_LEDGER.md), [Gaps](GAPS.md) |
+
 ## DEC-099 - Pembayaran booking OTS/manual dapat dikoreksi tanpa menyentuh provider
 
 | Field | Isi |

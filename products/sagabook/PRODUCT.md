@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 24 Agustus 2026 16:48 WIB
-Evidence status: sinkronisasi reschedule S287 aktif di production; authenticated Owner/operator UAT tetap residual
+Updated: 24 Agustus 2026 17:06 WIB
+Evidence status: bukti pembayaran OTS S289 aktif di production; authenticated Owner/operator UAT tetap residual
 
 ## Tujuan dokumen
 
@@ -15,6 +15,29 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- Bukti pembayaran OTS Manual Booking S289 pada exact source
+  `10462ca913530e61834b144ef95c33bf115f59c3` berstatus `CONFIRMED / PUSHED /
+  UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
+  Owner, manager, admin cabang, staff, dan finance admin dapat mengambil foto
+  atau memilih JPG, PNG, WEBP, maupun PDF maksimum 5 MB untuk booking manual
+  dengan QRIS onsite atau transfer manual. Bukti aktif dan penggantinya dapat
+  dilihat dari Booking Detail serta Riwayat Bukti Pembayaran; bukti pengganti
+  tidak menghapus histori lama. File disimpan privat, gambar dinormalisasi
+  tanpa metadata kamera, akses viewer tetap tenant/cabang dan terautentikasi,
+  sedangkan upload tidak mengubah status bayar, nominal, booking, atau closing.
+  Booking website/provider, state cancelled/no-show/refunded, MIME/signature
+  palsu, dan file terlalu besar ditolak. Bukti yang ditambahkan setelah closing
+  submitted/approved ditandai sebagai bukti terlambat tanpa mutasi finansial.
+  Full PHP 1.141/1.141 (13.039 assertion), focused 5/5 (46), regression release
+  28/28 (299), Node 18/18, browser 4/4, typecheck/build, Pint, audit dependency
+  nol, encrypted backup/checksum/disposable restore, migration rehearsal,
+  database audit 100, verifier independen 17/17, service/journal, dan
+  public/security smoke 3/3 lulus. Release `20260824094717-10462ca` aktif
+  dengan rollback `20260824084125-49e4cef`; feature flag aktif untuk seluruh
+  tenant. Authenticated Owner/operator production UAT dan dua studio pilot
+  belum selesai, sehingga `BUSINESS_READY=false`.
 
 - Sinkronisasi reschedule S287 pada exact source
   `50d9971c43405450f245464942765f85a2845f48` berstatus `CONFIRMED / PUSHED /

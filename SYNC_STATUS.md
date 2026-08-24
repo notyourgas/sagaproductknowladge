@@ -12,14 +12,27 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-24T16:48:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-24T17:06:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `0923a1d658f8b66cc582a63d8d4ee783d750e4d0` |
-| Informasi terakhir disinkronkan | SagaBook S287 reschedule transaction integrity production release. |
+| Baseline sebelum pembaruan | `52470e5acb261234c100942c849f246a5ede82fd` |
+| Informasi terakhir disinkronkan | SagaBook S289 bukti pembayaran OTS Manual Booking production release. |
 | Status sinkronisasi | `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; `BUSINESS_READY=false`. |
-| Konflik | Remote source main sudah maju ke descendant S289; exact release S287 stabil dan ancestry lulus. |
+| Konflik | Tidak ada konflik sumber atau runtime. |
 | Error | Tidak ada error runtime; authenticated Owner/operator UAT dan dua studio pilot tetap residual. |
+
+## File yang berubah pada sinkronisasi ini (SagaBook S289 bukti pembayaran OTS)
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `DECISIONS.md`
+- `GAPS.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaBook S287 reschedule production)
 

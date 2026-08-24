@@ -1,6 +1,25 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 24 Agustus 2026 16:48 WIB
+Evidence cut-off: 24 Agustus 2026 17:06 WIB
+
+Bukti pembayaran OTS Manual Booking S289 exact source
+`10462ca913530e61834b144ef95c33bf115f59c3` telah `CONFIRMED / PUSHED /
+UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+DATA_INTEGRITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
+Coverage membuktikan capture kamera dan file picker, JPG/PNG/WEBP/PDF maksimal
+5 MB, MIME/extension/signature/pixel validation, EXIF stripping, private
+storage/viewer, tenant/cabang/capability, manual-source dan payment-method
+allowlist, provider/terminal guards, optimistic lock, idempotency, audit, serta
+ledger active/superseded/late evidence. Booking Detail dan Activity memuat
+riwayat bukti; replacement tidak menghapus record lama dan upload tidak
+mengubah payment/status/nominal/closing. Full PHP 1.141/1.141 (13.039), focused
+5/5 (46), release regression 28/28 (299), Node 18/18, browser 4/4,
+typecheck/build/Pint dan audit dependency nol lulus. Release
+`20260824094717-10462ca` aktif dengan rollback
+`20260824084125-49e4cef`; encrypted backup/restore, migration, database audit
+100, manifest, 0 pending migration, verifier 17/17, service/journal, dan
+public/security smoke 3/3 lulus. Authenticated Owner/operator UAT dan dua studio
+pilot tetap exit gate; `BUSINESS_READY=false`.
 
 Sinkronisasi reschedule S287 exact source
 `50d9971c43405450f245464942765f85a2845f48` telah `CONFIRMED / PUSHED /

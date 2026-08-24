@@ -1,8 +1,26 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 24 Agustus 2026 16:48 WIB
+Evidence cut-off: 24 Agustus 2026 17:06 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
+
+SagaBook bukti pembayaran OTS Manual Booking S289 exact source
+`10462ca913530e61834b144ef95c33bf115f59c3` berstatus `CONFIRMED / PUSHED /
+UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+DATA_INTEGRITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
+Owner/operator dapat memotret/scan atau memilih JPG, PNG, WEBP, dan PDF maksimal
+5 MB sebagai bukti QRIS onsite atau transfer manual. Booking Detail dan
+Activity menampilkan bukti aktif, replacement, dan late evidence; replacement
+tetap menyimpan histori lama. File/viewer privat dengan tenant/cabang/role,
+signature/MIME/pixel validation, sanitasi nama, EXIF stripping, optimistic lock,
+idempotency, dan audit. Upload tidak mengubah payment/status/nominal/booking/
+closing; website/provider dan terminal state fail-closed. Full PHP 1.141/1.141,
+focused/regression, Node/browser, build/security/dependency, encrypted
+backup/restore, migration, database audit 100, exact verifier 17/17,
+service/journal, dan public/security smoke lulus. Release
+`20260824094717-10462ca` aktif dengan rollback
+`20260824084125-49e4cef`; flag aktif global. Authenticated UAT dan studio pilot
+tetap residual; `BUSINESS_READY=false`.
 
 SagaBook sinkronisasi reschedule S287 exact source
 `50d9971c43405450f245464942765f85a2845f48` berstatus `CONFIRMED / PUSHED /
