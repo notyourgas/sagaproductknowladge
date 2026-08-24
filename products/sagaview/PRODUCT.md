@@ -1,6 +1,27 @@
 # SagaView Product Knowledge
 
-Updated: 24 Agustus 2026 16:22 WIB
+Updated: 24 Agustus 2026 17:23 WIB
+
+SagaView S277 berstatus `CONFIRMED / PUSHED / UIUX_VALIDATED /
+SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`. Owner Gallery Frame sekarang mempertahankan katalog
+dan pilihan yang sudah terlihat ketika refresh gagal, lalu menampilkan recovery
+terstruktur untuk server sementara, akses ditolak, katalog stale, dan koneksi
+terputus. Setiap state menjelaskan apa yang gagal, bahwa data tetap aman, serta
+satu aksi berikutnya. Pada mobile, toolbar pilihan berhenti sticky selama panel
+recovery tampil sehingga tombol retry 44 px tidak tertutup.
+
+Exact backend/Owner
+`e2d316095d1998dba390e5d0099a7940be83533d` berada pada branch
+`codex/s277-sagaview-owner-frame-recovery` dan sudah pushed. Gate exact tree
+meliputi browser serial 10/10, backend/data integrity 38/38 dengan 467
+assertion, build 5.097 modul, screenshot/no-overflow 390x844 dan 1440x900,
+keyboard, preservasi pilihan, serta audit npm/Composer nol vulnerability.
+Retry hanya membaca metadata katalog dan tidak mengirim foto, path lokal, atau
+output. Tidak ada perubahan API, database/migration, tenant/harga,
+payment/provider, Studio, SagaBook, atau production. Production backend/Owner
+tetap exact `fe2dcfc57e8b6592ad0162fabf079fbbd07c1097` /
+`20260824034431-fe2dcfc`; S277 belum dideploy atau diaktifkan.
 
 SagaView S276 berstatus `CONFIRMED / PUSHED / UIUX_VALIDATED /
 SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /

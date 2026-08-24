@@ -1,5 +1,21 @@
 # SagaView Changelog
 
+## 2026-08-24 - S277 recovery katalog Owner Gallery Frame
+
+- Klasifikasi: `CONFIRMED / PUSHED / UIUX_VALIDATED / SECURITY_VALIDATED /
+  QA_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- Before: kegagalan refresh menjadi pesan generik; operator tidak mendapat
+  kepastian data aman atau aksi spesifik, dan toolbar mobile dapat menutupi
+  tombol retry.
+- After: katalog/pilihan lama dipertahankan dengan recovery berbeda untuk 503,
+  permission 403, stale 409, dan offline; satu aksi berikutnya tetap utuh pada
+  mobile dan dapat dipakai dengan keyboard.
+- Exact backend/Owner `e2d316095d1998dba390e5d0099a7940be83533d`:
+  browser 10/10, backend 38/38 dan 467 assertion, build 5.097 modul, viewport
+  390x844/1440x900, 44 px/no-overflow, dan audit dependency nol lulus.
+- Retry hanya membaca metadata. Tidak ada API/database/migration, payment,
+  upload foto/path/output, Studio, SagaBook, atau perubahan production.
+
 ## 2026-08-24 - S276 hierarki aksi Owner Gallery Frame
 
 - Klasifikasi: `CONFIRMED / PUSHED / UIUX_VALIDATED / SECURITY_VALIDATED /

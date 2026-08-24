@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-24 - SagaView S277 recovery Gallery Frame lebih aman
+
+- Katalog dan pilihan Owner tetap terlihat saat refresh gagal; panel kini
+  membedakan server sementara, akses, stale, dan koneksi terputus.
+- Operator selalu melihat apa yang gagal, kepastian data aman, dan satu aksi
+  berikutnya; tombol retry mobile tidak lagi tertutup toolbar pilihan.
+- Exact backend/Owner `e2d316095d1998dba390e5d0099a7940be83533d`
+  lulus 10 browser scenario, 38 backend test/467 assertion, build, dua viewport,
+  keyboard/no-overflow, serta audit dependency nol.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Production,
+  API/database, pembayaran off-app, foto/path/output, Studio, dan SagaBook tidak
+  berubah.
+
 ## 2026-08-24 - SagaView S276 Owner Gallery Frame lebih fokus
 
 - Owner kini melihat satu aksi utama untuk menambah frame; alat import tetap

@@ -1,6 +1,24 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 24 Agustus 2026 16:22 WIB
+Evidence cut-off: 24 Agustus 2026 17:23 WIB
+
+S277 recovery Owner Gallery Frame: exact backend/Owner
+`e2d316095d1998dba390e5d0099a7940be83533d` berstatus `CONFIRMED / PUSHED /
+UIUX_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`. Refresh yang gagal tidak lagi berhenti pada pesan
+generik: katalog dan pilihan yang sudah terlihat dipertahankan, lalu panel
+recovery membedakan server 503, permission 403, stale 409, dan network abort.
+Panel menjelaskan data aman serta memberi satu aksi retry/reload; toolbar
+pilihan tidak menutupi tombol recovery pada 390x844. Browser serial 10/10,
+backend/data integrity 38/38 dengan 467 assertion, build 5.097 modul,
+keyboard/target 44 px/no-overflow, screenshot 390x844/1440x900, diff check,
+npm audit nol, dan Composer audit nol advisory lulus. Retry hanya membaca
+metadata katalog; tidak ada upload foto/path/output, migration, perubahan
+tenant/harga/payment/provider, Studio, atau SagaBook. Production backend/Owner
+tetap `fe2dcfc57e8b6592ad0162fabf079fbbd07c1097` /
+`20260824034431-fe2dcfc`; S277 belum dideploy dan `BUSINESS_READY=false`. Gap
+berikutnya: recovery expiry sesi Owner serta quota/disk pada layar lokal belum
+memiliki evidence visual yang setara.
 
 S276 hierarki aksi Owner Gallery Frame: exact backend/Owner
 `484e27c6c0eb8dcdd826e402154f1f483e70b5c6` berstatus `CONFIRMED / PUSHED /
