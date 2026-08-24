@@ -1,6 +1,6 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 24 Agustus 2026 08:13 WIB
+Evidence cut-off: 24 Agustus 2026 09:03 WIB
 
 S271 pemulihan fokus tutorial Customer Flow: Studio exact
 `a5c2d6ae73c7d39079b71b363f9dfad52408adf5` berstatus `PUSHED /
@@ -14,7 +14,13 @@ mencari posisi keyboard. Focused red-green 2/2, check 53 file/236 test, full E2E
 runtime dan seluruh dependency nol lulus. Perubahan hanya menyentuh UI dan test;
 tidak ada API, database, upload, atau perubahan kontrak pembayaran. Production
 tetap Studio exact `ab2af26a...` / `20260823185455-ab2af26` dan backend exact
-`c828bd9d...` / `20260823091225-c828bd9`; `BUSINESS_READY=false`.
+`c828bd9d...` / `20260823091225-c828bd9`. Package-only release evidence
+`20260824020243-a5c2d6a` sudah dibuat dari source tree
+`d702517c1a067b9bfc03911bdbe67382df601fc3`: archive SHA-256
+`46fe4909...987ab` dan bundle SHA-256 `8a6af01f...eb613` tersimpan pada dua
+lokasi lokal terpisah dan byte-identik. Archive 396 entry memiliki provenance
+tertanam, tidak memuat `.env`, `.git`, atau `node_modules`, dan bundle lulus
+verifikasi. Status tetap `IMPLEMENTED_NOT_DEPLOYED`; `BUSINESS_READY=false`.
 
 S270 tutorial Customer Flow: Studio exact
 `ab2af26a1fc55f953c90605bc066eaa63937f966` berstatus `PUSHED /

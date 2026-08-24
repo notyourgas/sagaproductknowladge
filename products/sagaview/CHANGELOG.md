@@ -16,9 +16,13 @@
   `a5c2d6ae73c7d39079b71b363f9dfad52408adf5` sudah pushed.
 - Evidence: focused red-green 2/2; check 53 file/236 test; full E2E 149 pass/3
   controlled skip; build, format/lint/typecheck, bundle 299,9 KiB/450 KiB, dan
-  audit npm runtime/seluruh dependency nol lulus.
+  audit npm runtime/seluruh dependency nol lulus. Package-only evidence
+  `20260824020243-a5c2d6a` memuat archive SHA-256 `46fe4909...987ab`, bundle
+  SHA-256 `8a6af01f...eb613`, provenance commit/tree tertanam, verifikasi bundle,
+  larangan `.env`/`.git`/`node_modules`, dan dua salinan lokal byte-identik.
 - Delivery: production tidak berubah dan tetap S270 exact `ab2af26a...` /
-  `20260823185455-ab2af26`; `BUSINESS_READY=false`.
+  `20260823185455-ab2af26`; package berstatus `PACKAGED_NOT_DEPLOYED` dan
+  `BUSINESS_READY=false`.
 
 ## 2026-08-24 - S270 tutorial Customer Flow production activation
 

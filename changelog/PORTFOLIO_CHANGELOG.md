@@ -7,6 +7,9 @@
 - Exact Studio `a5c2d6ae...` sudah pushed; focused 2/2, check 236 test, full
   browser 149 pass/3 controlled skip, build/budget, dan audit dependency nol
   lulus.
+- Package-only `20260824020243-a5c2d6a` memiliki archive dan git bundle
+  checksum-valid pada dua lokasi lokal terpisah; provenance tertanam dan konten
+  runtime terlarang tidak ditemukan.
 - Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S270.
   Tidak ada perubahan backend, data, no-upload, atau pembayaran off-app.
 
