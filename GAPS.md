@@ -894,6 +894,14 @@ GAP-004, bukan gap implementasi warna komponen.
 
 ### COYABAG
 
+- `PRODUCTION_DEPLOYED`: release aktif `20260824-61429f0`, exact source
+  `61429f02dc44275492f0c45bc416bbad7acb486c`, menutup gap Cart untuk exact
+  variant identity, duplicate legacy merge, stock/price/media reconciliation,
+  blocked-storage recovery, drawer/page parity, dan server-side published
+  snapshot validation. Rollback `20260824-759e2a5` tersedia; full gate dan
+  public desktop/mobile smoke lulus. Checkout tetap fail-closed pada readiness
+  `28/40`, 70%, dengan 12 blocker.
+
 - `PRODUCTION_DEPLOYED`: release aktif `20260824-759e2a5`, exact source
   `759e2a5c8f6c8497afc0d49d3e3d8da32ae44592`, menutup gap Wishlist untuk
   continuity warna/varian, legacy migration, katalog reconciliation, API-error
@@ -947,8 +955,8 @@ GAP-004, bukan gap implementasi warna komponen.
 
 - `NEEDS CONFIRMATION`: katalog, harga, stok, media, seller identity, payment,
   shipping, return/refund, tax, dan legal copy.
-- `NEEDS CONFIRMATION`: SMTP, object storage, 2FA recovery, backup/restore, dan
-  monitoring production.
+- `NEEDS CONFIRMATION`: SMTP/notification sender, object storage, owner 2FA
+  recovery, privacy-retention approval, launch UAT, dan release sign-off.
 
 ### AOGTIVITY
 

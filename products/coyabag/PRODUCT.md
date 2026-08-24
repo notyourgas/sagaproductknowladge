@@ -60,9 +60,9 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260824-759e2a5` dengan source
-  `759e2a5c8f6c8497afc0d49d3e3d8da32ae44592` melayani production;
-  rollback langsung `20260824-56e1e56` dipertahankan.
+- Release aktif `20260824-61429f0` dengan source
+  `61429f02dc44275492f0c45bc416bbad7acb486c` melayani production;
+  rollback langsung `20260824-759e2a5` dipertahankan.
 - Release ini menambahkan destination/quote integrity, payment-to-fulfillment,
   Delivery Order/AWB/pickup/label foundation, tracking webhook inbox, shipping
   finance ledger, cancellation/incident/refund workflow, command center, dan
@@ -102,6 +102,14 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 - Kartu, Quick View, Detail Produk, Saved Bags, badge header, dan cart handoff
   berbagi state varian yang sama pada desktop/mobile. Product Grid menjadi lazy
   chunk 5,29 kB; entry production lulus budget pada 193,0 KiB.
+- Cart production memakai identitas produk dan varian stabil, menggabungkan item
+  legacy yang sama, membatasi jumlah ke stok live, serta menolak produk, varian,
+  atau harga yang tidak lagi valid. API gagal tidak menghapus cart; storage
+  perangkat yang gagal tetap mempertahankan sesi aktif dengan retry yang jelas.
+- Drawer dan halaman Cart berbagi line item, total, remove/undo, media fallback,
+  recovery notice, serta kontrol keyboard/touch desktop-mobile. Laravel wajib
+  memvalidasi varian aktif dan published commercial snapshot sebelum quote atau
+  order. Full acceptance lulus; entry production 197,8 KiB dan CSS 149,4 KiB.
 - Scheduler terminal expiry sudah fail-closed dan concurrency-tested.
 - Release candidate source `264c6ac2ebec33c6471a4c49572ddcdc82b51cf2`
   merekonsiliasi
@@ -152,14 +160,14 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 
 ## Blocker business activation
 
-- Data produk, harga, stok, copy, dan media final.
-- Nomor WhatsApp, seller identity, legal/tax, policy.
-- Payment dan shipping provider nyata.
-- SMTP/email delivery.
-- Object storage production.
-- Owner 2FA enrollment dan recovery.
-- Backup restore drill.
-- Sandbox/live transaction UAT.
+- Credential, provider, dan controlled-trial mode pembayaran SagaDev.
+- Owner 2FA enrollment serta recovery SOP.
+- Launch UAT dan release sign-off operasional/security.
+- SMTP/email dan notification sender production.
+- Object storage untuk media produk, konten, dan bukti pembayaran.
+- Persetujuan policy privasi dan retensi.
+- Data produk, seller identity, legal/tax, policy, dan transaction UAT final tetap
+  memerlukan keputusan owner sebelum business readiness.
 
 ## Belum boleh diklaim
 

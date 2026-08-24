@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-24 - CoyaBag Cart integrity and recovery
+
+- Exact source `61429f02dc44275492f0c45bc416bbad7acb486c` aktif sebagai
+  Hostinger release `20260824-61429f0`; rollback `20260824-759e2a5` tersedia.
+- Cart menjaga exact variant, menggabungkan duplikat legacy, membatasi quantity
+  ke stok, menyegarkan harga/media, dan mempertahankan sesi saat API/storage
+  gagal. Drawer/full page, recovery, remove/undo, keyboard, dan no-overflow
+  lulus desktop/mobile; Laravel memvalidasi published commercial snapshot.
+- Full frontend/backend, security/dependency, backup, public smoke, workers, dan
+  monitor lulus. Status `PRODUCTION_DEPLOYED`; readiness tetap `28/40` dengan
+  12 blocker dan commerce tetap fail-closed.
+
 ## 2026-08-24 - SagaBook edit pembayaran booking OTS/manual
 
 - Exact source `49e4cefae4bccf83446b17bdedba841c4c74765c` aktif sebagai

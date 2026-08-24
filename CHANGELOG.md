@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-24 - CoyaBag Cart production sync
+
+- Informasi `CONFIRMED` berasal dari exact source
+  `61429f02dc44275492f0c45bc416bbad7acb486c`, immutable release
+  `20260824-61429f0`, rollback `20260824-759e2a5`, dan postdeploy runtime
+  verification.
+- Knowledge mencatat Cart exact-variant, duplicate merge, live catalog recovery,
+  blocked API/storage preservation, drawer/page accessibility parity, serta
+  published commercial snapshot validation yang aktif di production.
+- Full test/build/security, dependency audit, backup, public desktop/mobile,
+  endpoint, worker, dan monitor lulus. Readiness tetap 28/40 dengan 12 blocker;
+  checkout dan commerce activation tidak berubah.
+- Dokumen terdampak: CoyaBag product/dossier/changelog, gaps, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-24 - SagaBook S288 manual payment production sync
 
 - Informasi `CONFIRMED` berasal dari keputusan Andreas, exact source

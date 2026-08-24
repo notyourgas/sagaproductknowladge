@@ -8,6 +8,24 @@ Mencatat perubahan material COYABAG dengan provenance public-safe.
 
 Surface deployment tidak otomatis berarti commerce activation.
 
+## 2026-08-24 - Cart integrity and recovery production release
+
+- Informasi `CONFIRMED` berasal dari exact source
+  `61429f02dc44275492f0c45bc416bbad7acb486c`, immutable Hostinger release
+  `20260824-61429f0`, rollback `20260824-759e2a5`, dan public runtime smoke.
+- Cart kini memakai exact variant ID, menggabungkan duplikat legacy, membatasi
+  jumlah ke stok live, menyegarkan harga/media, dan mengeluarkan item invalid
+  dengan feedback yang dapat ditindaklanjuti. API atau storage gagal tidak
+  menghilangkan sesi aktif.
+- Drawer/full Cart, recovery, remove/undo, focus trap/return, 44 px controls,
+  keyboard, dan no-overflow lulus desktop/mobile. Laravel quote/checkout wajib
+  memvalidasi varian aktif dan published commercial snapshot.
+- Storefront 62/62, Laravel 310 pass/1 skip dengan 2.297 assertion, build,
+  dependency/security audit, backup, public desktop/mobile, workers, dan monitor
+  lulus. Entry production 197,8 KiB dan CSS 149,4 KiB.
+- Delivery `PRODUCTION_DEPLOYED`. Readiness tetap `28/40`, 70%, `ready=false`
+  dengan 12 blocker; checkout dan commerce activation tetap fail-closed.
+
 ## 2026-08-24 - Wishlist variant integrity production release
 
 - Informasi `CONFIRMED` berasal dari exact source

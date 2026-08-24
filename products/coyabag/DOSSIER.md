@@ -7,7 +7,7 @@ content COYABAG tanpa menyamakan surface live dengan commerce aktif.
 
 ## Konteks dan status bukti
 
-- Updated: 20 Agustus 2026
+- Updated: 24 Agustus 2026
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `BLOCKED`
 - Business readiness: `BLOCKED`
@@ -78,14 +78,22 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260820-51a29ab` memakai source
-`51a29abe211af5e663ba49b9844ef1bbc3fe3c66` dan rollback
-`20260820-fd1787a`. Customer flow kini memiliki quote snapshot yang divalidasi
+Release production terbaru `20260824-61429f0` memakai source
+`61429f02dc44275492f0c45bc416bbad7acb486c` dan rollback
+`20260824-759e2a5`. Customer flow kini memiliki quote snapshot yang divalidasi
 server, payment-to-fulfillment, serta timeline order/pengiriman terpadu.
 Operator memiliki shipping command center, packing/weight review, provider
 operation journal, pickup/label/tracking foundation, finance ledger,
 cancellation guard, incident, stock disposition, dan refund review. Seluruh
 provider baru dan COD tetap fail-closed.
+
+Cart aktif menggunakan exact variant ID, merekonsiliasi harga, stok, media, dan
+jumlah setelah katalog Laravel siap, menggabungkan duplikat legacy, serta
+mempertahankan sesi ketika API atau storage perangkat gagal. Drawer dan halaman
+Cart memiliki parity keyboard/touch, recovery, remove/undo, dan no-overflow.
+Checkout/quote server menolak variant ID yang tidak aktif dan memakai published
+commercial snapshot; tidak ada order atau inventory production yang diubah pada
+acceptance release ini.
 
 ## Business model
 
@@ -163,7 +171,9 @@ Surface live dapat disalahartikan sebagai checkout aktif; dummy data, provider,
 Residual inheritance security header storefront sudah ditutup; CSP tidak
 diubah dalam hardening ini.
 
-Readiness runtime terbaru `20/40` atau 50%, `ready=false`, dengan 20 blocker.
+Readiness runtime terbaru `28/40` atau 70%, `ready=false`, dengan 12 blocker:
+payment key/live mode/provider, owner 2FA, launch UAT/sign-off, mail/notification
+sender, media/object storage, dan privacy-retention approval.
 Status code `PRODUCTION_DEPLOYED` tidak mengubah activation maupun business
 readiness yang tetap `BLOCKED`.
 
