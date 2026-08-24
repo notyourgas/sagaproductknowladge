@@ -1,8 +1,24 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 24 Agustus 2026 17:06 WIB
+Evidence cut-off: 24 Agustus 2026 21:24 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
+
+SagaBook override jadwal Manual Booking S290 exact source
+`0dda9350656d4454bfeed3744c35a3b7ff7673fa` berstatus `CONFIRMED / PUSHED /
+UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+DATA_INTEGRITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
+Owner, manager, dan admin cabang dapat membuat sesi OTS pada jam bebas atau di
+luar slot dengan alasan, acknowledgement, dan konfirmasi kapasitas. Jam bebas
+tanpa override tetap mengikuti availability; payment/provider hold selalu hard
+block dan website booking tidak bisa bypass. Audit menyimpan konflik, actor
+HMAC/role, timestamp, dan lock exemption terbatas; badge tampil pada kalender,
+list, detail, reports, dan Activity. Full PHP 1.150/1.150, focused/visual,
+typecheck/build, security/dependency, migration, encrypted backup/restore,
+database audit 100, exact verifier 17/17, service/journal, dan public/security
+smoke 3/3 lulus. Release `20260824141906-0dda935` aktif dengan rollback
+`20260824094717-10462ca`; flag aktif global. Authenticated UAT dan studio pilot
+tetap residual; `BUSINESS_READY=false`.
 
 SagaBook bukti pembayaran OTS Manual Booking S289 exact source
 `10462ca913530e61834b144ef95c33bf115f59c3` berstatus `CONFIRMED / PUSHED /

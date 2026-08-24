@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 24 Agustus 2026 17:06 WIB
-Evidence status: bukti pembayaran OTS S289 aktif di production; authenticated Owner/operator UAT tetap residual
+Updated: 24 Agustus 2026 21:24 WIB
+Evidence status: override jadwal Manual Booking S290 aktif di production; authenticated Owner/operator UAT tetap residual
 
 ## Tujuan dokumen
 
@@ -15,6 +15,28 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- Override jadwal Manual Booking S290 pada exact source
+  `0dda9350656d4454bfeed3744c35a3b7ff7673fa` berstatus `CONFIRMED / PUSHED /
+  UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
+  Admin dapat memakai slot tersedia, memasukkan jam bebas yang tetap mengikuti
+  seluruh availability guard, atau membuat override operasional di luar slot.
+  Override hanya untuk owner, manager, dan admin cabang; alasan, catatan untuk
+  pengecualian lain, konfirmasi tanggung jawab, serta konfirmasi kapasitas saat
+  bentrok wajib diisi. Hold pembayaran/provider yang masih aktif tetap hard
+  block dan jalur website tidak dapat memakai override. Booking override diberi
+  badge pada kalender, daftar, detail, serta laporan dan menyimpan ledger audit
+  tanpa identitas actor mentah. Full PHP 1.150/1.150 (13.102 assertion), focused
+  8/8 (54), visual desktop/mobile, critical typecheck, build, migration fresh,
+  database audit 100, serta audit dependency nol lulus. Encrypted backup,
+  checksum, disposable restore, manifest, atomic activation, verifier 17/17,
+  service/journal, 0 migration pending, dan public/security smoke 3/3 lulus.
+  Release `20260824141906-0dda935` aktif dengan rollback
+  `20260824094717-10462ca`; flag aktif global. Tiga failed job Fonnte historis
+  diverifikasi terbatas pada tiga delivery dan memakai exception release yang
+  dipagari. Authenticated Owner/operator production UAT dan dua studio pilot
+  belum selesai sehingga `BUSINESS_READY=false`.
 
 - Bukti pembayaran OTS Manual Booking S289 pada exact source
   `10462ca913530e61834b144ef95c33bf115f59c3` berstatus `CONFIRMED / PUSHED /

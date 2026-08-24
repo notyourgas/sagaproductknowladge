@@ -1,5 +1,31 @@
 # SagaBook Changelog
 
+## 2026-08-24 - Override jadwal Manual Booking S290 production
+
+- Klasifikasi: `CONFIRMED`; Andreas meminta admin dapat memasukkan sesi OTS
+  sesuai kondisi studio tanpa berpaku pada slot tersedia dan mengotorisasi
+  implementasi sampai production. Exact source
+  `0dda9350656d4454bfeed3744c35a3b7ff7673fa` telah dipush ke source `main`.
+- Dialog Manual Booking menyediakan slot tersedia, jam bebas dengan guard
+  standar, serta override operasional. Override dibatasi owner, manager, dan
+  admin cabang; alasan, acknowledgement, catatan pengecualian, serta konfirmasi
+  kapasitas untuk konflik wajib. Payment/provider hold tetap hard block dan
+  website booking tidak memperoleh jalur bypass.
+- Availability mode, reason, conflict snapshot, actor HMAC/role, timestamp, dan
+  lock exemption tersimpan terstruktur. Kalender, list, detail, laporan, dan
+  Activity menampilkan badge/ledger override; spoofed audit fields ditolak.
+- Full PHP 1.150/1.150 (13.102 assertion), focused 8/8 (54), visual dua
+  viewport, critical typecheck, build, migration fresh, database audit 100,
+  Composer/npm audit nol, encrypted backup/checksum/disposable restore,
+  manifest, 0 pending migration, exact verifier 17/17, service/journal, serta
+  public/security smoke 3/3 lulus.
+- Release `20260824141906-0dda935` aktif dengan rollback
+  `20260824094717-10462ca`; flag aktif global. Tiga failed job Fonnte historis
+  terverifikasi terbatas pada delivery dan ditangani melalui exception release
+  yang dipagari. Status `PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`; authenticated UAT dan dua studio pilot residual
+  sehingga `BUSINESS_READY=false`.
+
 ## 2026-08-24 - Bukti pembayaran OTS Manual Booking S289 production
 
 - Klasifikasi: `CONFIRMED`; Andreas meminta admin dapat memotret/memilih bukti

@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-24 - SagaBook override jadwal Manual Booking
+
+- Exact source `0dda9350656d4454bfeed3744c35a3b7ff7673fa` aktif sebagai
+  release `20260824141906-0dda935`; rollback
+  `20260824094717-10462ca` tersedia.
+- Owner, manager, dan admin cabang dapat memilih jam bebas atau override sesi
+  OTS di luar slot dengan alasan, acknowledgement, dan konfirmasi kapasitas.
+  Payment/provider hold tetap memblokir dan website booking tetap strict.
+- Ledger audit, lock exemption terbatas, badge kalender/list/detail/laporan,
+  full/focused/visual test, security/dependency, backup/restore, migration,
+  database audit, service/journal, serta public/security smoke lulus.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated UAT dan
+  studio pilot tetap residual sehingga `BUSINESS_READY=false`.
+
 ## 2026-08-24 - CoyaBag delivery status and tracking integrity
 
 - Exact source `ab859d3519a84c4cc1647a55671552b53979a473` aktif sebagai

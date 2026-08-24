@@ -1,6 +1,24 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 24 Agustus 2026 17:06 WIB
+Evidence cut-off: 24 Agustus 2026 21:24 WIB
+
+Override jadwal Manual Booking S290 exact source
+`0dda9350656d4454bfeed3744c35a3b7ff7673fa` telah `CONFIRMED / PUSHED /
+UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+DATA_INTEGRITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
+Coverage membuktikan tiga mode jadwal, arbitrary minute dengan guard ketat,
+override role/capability, alasan/catatan/acknowledgement, extra-capacity
+confirmation, hard block payment/provider hold, website isolation, slot-lock
+exemption terbatas, audit HMAC, spoof rejection, badge pada kalender/list/detail/
+reports, serta database-ledger consistency. Full PHP 1.150/1.150 (13.102),
+focused 8/8 (54), visual desktop/mobile, critical typecheck, build, migration
+fresh, database audit 100, dan dependency audit nol lulus. Release
+`20260824141906-0dda935` aktif dengan rollback
+`20260824094717-10462ca`; encrypted backup/checksum/disposable restore,
+manifest, 0 pending migration, verifier 17/17, service/journal, serta
+public/security smoke 3/3 lulus. Flag aktif global untuk owner, manager, dan
+admin cabang. Authenticated production UAT dan dua studio pilot tetap exit gate;
+`BUSINESS_READY=false`.
 
 Bukti pembayaran OTS Manual Booking S289 exact source
 `10462ca913530e61834b144ef95c33bf115f59c3` telah `CONFIRMED / PUSHED /

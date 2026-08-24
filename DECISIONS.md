@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-101 - Manual Booking dapat mengoverride slot dengan guard operasional
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-24 |
+| Topik | Jam bebas dan availability override untuk booking OTS/manual SagaBook |
+| Keputusan | Admin harus dapat memasukkan sesi sesuai kondisi studio tanpa terpaku slot tersedia. Jam bebas biasa tetap mengikuti availability; bypass penuh hanya untuk owner, manager, dan admin cabang dengan alasan, acknowledgement, catatan pengecualian, dan konfirmasi kapasitas saat konflik. Payment/provider hold tidak boleh dioverride dan website booking tetap strict. |
+| Alasan | Sesi OTS dapat dimulai atau dialokasikan berdasarkan kondisi aktual studio yang tidak selalu sama dengan slot publik, tetapi konflik dan tanggung jawab operasional tetap perlu terlacak. |
+| Alternatif yang dipertimbangkan | Membuka semua jam untuk seluruh staff; mengubah slot publik; bypass tanpa alasan/audit; mengizinkan override payment hold. |
+| Dampak | Manual Booking memiliki mode standard, custom time, dan guarded override; lock exemption dibatasi, audit actor di-HMAC, badge/history tersedia pada kalender, list, detail, Activity, dan laporan, sedangkan website serta provider tetap fail-closed. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; source `0dda9350656d4454bfeed3744c35a3b7ff7673fa`, release `20260824141906-0dda935`, rollback `20260824094717-10462ca`; authenticated UAT residual dan `BUSINESS_READY=false` |
+| Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [SagaBook Changelog](products/sagabook/CHANGELOG.md), [SagaBook Ledger](products/sagabook/FEATURE_COVERAGE_LEDGER.md), [Gaps](GAPS.md) |
+
 ## DEC-100 - Bukti QRIS dan transfer OTS tersimpan privat pada booking manual
 
 | Field | Isi |

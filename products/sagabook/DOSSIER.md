@@ -7,6 +7,25 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Override jadwal Manual Booking S290 exact source
+  `0dda9350656d4454bfeed3744c35a3b7ff7673fa`: `CONFIRMED / PUSHED /
+  UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
+  Dialog admin memiliki mode slot tersedia, jam bebas dengan availability
+  ketat, dan override operasional. Mode override dibatasi owner, manager, serta
+  admin cabang dan memerlukan alasan, acknowledgement, catatan untuk operational
+  exception, serta konfirmasi kapasitas bila bertabrakan dengan booking/lock.
+  Payment hold dan sesi provider aktif selalu memblokir; website booking tetap
+  memakai kontrak availability standar. Record menyimpan mode, alasan,
+  konflik, actor HMAC, role, timestamp, serta lock exemption yang terbatas;
+  kalender, daftar, detail, laporan, dan activity menampilkan status override.
+  Full/focused PHP, visual desktop/mobile, typecheck/build, security/dependency,
+  migration fresh, encrypted backup/restore, database audit 100, manifest,
+  exact verifier 17/17, service/journal, dan public/security smoke lulus.
+  Release aktif `20260824141906-0dda935`; rollback
+  `20260824094717-10462ca`; flag aktif global. Authenticated UAT dan studio
+  pilot tetap residual; `BUSINESS_READY=false`.
+
 - Bukti pembayaran OTS Manual Booking S289 exact source
   `10462ca913530e61834b144ef95c33bf115f59c3`: `CONFIRMED / PUSHED /
   UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
