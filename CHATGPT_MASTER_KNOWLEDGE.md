@@ -1,19 +1,27 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 24 Agustus 2026 10:29 WIB
+Evidence cut-off: 24 Agustus 2026 10:59 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
 SagaView S272 Owner Gallery Frame exact backend/Owner
 `fe2dcfc57e8b6592ad0162fabf079fbbd07c1097` berstatus `CONFIRMED /
-UIUX_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
-COMMITTED_LOCAL / IMPLEMENTED_NOT_DEPLOYED`. Preview frame kini membawa konteks
+PUSHED / UIUX_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED_STORAGE_RECONCILIATION`. Preview frame kini membawa konteks
 workspace/tab aktif, melakukan satu retry untuk kegagalan sementara, memakai
-lazy loading, dan menampilkan recovery copy bila tetap gagal. Playwright 2/2,
-backend 17/17 dengan 81 assertion, build 5.097 modul, diff check, dan audit
-dependency nol lulus. Backend tetap memverifikasi tenant dan integritas asset;
-foto/path/output tidak diunggah, pembayaran tetap off-app, Studio dan
-production belum berubah, serta `BUSINESS_READY=false`.
+lazy loading, dan menampilkan recovery copy bila tetap gagal. Playwright 4/4,
+31 focused PHP test dengan 107 assertion, build 5.097 modul, diff check, audit
+dependency nol, immutable artifact, encrypted backup/offsite, dan disposable
+restore 146/160/149 tabel lulus.
+
+Dua atomic activation rollback otomatis. Kandidat memakai shared storage,
+sedangkan production aktif memakai release-local storage; candidate gate tidak
+menemukan manifest backup terbaru dan aktivasi berisiko membuat asset frame
+lama tidak terlihat. Retry ditahan sampai inventory/checksum, salinan
+immutable, permission/ownership, rehearsal, dan gate 6/6 lulus. Backend tetap
+memverifikasi tenant dan integritas asset; foto/path/output tidak diunggah,
+pembayaran tetap off-app, Studio tidak berubah, production backend tetap
+`20260823091225-c828bd9`, dan `BUSINESS_READY=false`.
 
 SagaBook fondasi operasional S286 exact source
 `9e4b44e5f6698b7284938fa1e4c948dd45c9e5d5` berstatus `CONFIRMED / PUSHED /

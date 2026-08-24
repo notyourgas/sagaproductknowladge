@@ -1,10 +1,11 @@
 # SagaView Product Knowledge
 
-Updated: 24 Agustus 2026 10:29 WIB
+Updated: 24 Agustus 2026 10:59 WIB
 
-SagaView S272 berstatus `CONFIRMED / UIUX_VALIDATED / SECURITY_VALIDATED /
-QA_VALIDATED / LOCAL_VALIDATED / COMMITTED_LOCAL /
-IMPLEMENTED_NOT_DEPLOYED`. Owner Gallery Frame sekarang membentuk URL preview
+SagaView S272 berstatus `CONFIRMED / PUSHED / UIUX_VALIDATED /
+SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED_STORAGE_RECONCILIATION`. Owner
+Gallery Frame sekarang membentuk URL preview
 dengan konteks workspace dan tab admin yang sama dengan request dashboard.
 Kegagalan pemuatan sementara dicoba ulang satu kali; bila tetap gagal, kartu
 menjelaskan bahwa data frame aman dan operator dapat membuka kartu untuk
@@ -12,12 +13,22 @@ mencoba kembali. Preview juga memakai lazy loading dan decoding asynchronous.
 
 Exact source backend/Owner
 `fe2dcfc57e8b6592ad0162fabf079fbbd07c1097` berada pada branch terisolasi
-`codex/s272-sagaview-frame-gallery-recovery`. Playwright 2/2, backend frame
-authoring 17/17 dengan 81 assertion, build 5.097 modul, diff check, serta audit
-Composer/npm nol lulus. Tidak ada migration, upload foto/path/output, perubahan
-harga, payment/provider, atau perubahan Studio. Production masih backend
-`20260823091225-c828bd9` dan Studio `20260823185455-ab2af26`;
-`BUSINESS_READY=false`.
+`codex/s272-sagaview-frame-gallery-recovery` dan sudah pushed. Playwright 4/4,
+31 focused PHP test dengan 107 assertion, build 5.097 modul, diff check, serta
+audit Composer/npm nol lulus. Immutable artifact
+`20260824034431-fe2dcfc` memiliki archive SHA-256
+`1e11654e5379c269b5c9d7b30a83edca47d61788e0958934214c7afde23fdce2`;
+backup terenkripsi/offsite dan restore disposable 146/160/149 tabel lulus.
+
+Dua percobaan atomic activation rollback otomatis. Kandidat memakai shared
+storage, sedangkan release production aktif masih memakai release-local
+storage; akibatnya kandidat tidak menemukan manifest backup terbaru dan dapat
+menyembunyikan asset frame lama. Retry production dihentikan fail-closed sampai
+inventory/checksum, salinan immutable, permission/ownership, rehearsal, dan
+candidate gate 6/6 membuktikan rekonsiliasi aman. Tidak ada migration, upload
+foto/path/output, perubahan harga, payment/provider, atau perubahan Studio.
+Production tetap sehat pada backend `20260823091225-c828bd9` dan Studio
+`20260823185455-ab2af26`; `BUSINESS_READY=false`.
 
 SagaView S270 berstatus `CONFIRMED / PUSHED / UIUX_VALIDATED /
 SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /

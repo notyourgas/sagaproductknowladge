@@ -1,19 +1,26 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 24 Agustus 2026 10:29 WIB
+Evidence cut-off: 24 Agustus 2026 10:59 WIB
 
 S272 Owner Gallery Frame preview recovery: exact backend/Owner
-`fe2dcfc57e8b6592ad0162fabf079fbbd07c1097` berstatus `CONFIRMED /
+`fe2dcfc57e8b6592ad0162fabf079fbbd07c1097` berstatus `CONFIRMED / PUSHED /
 UIUX_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
-COMMITTED_LOCAL / IMPLEMENTED_NOT_DEPLOYED`. Preview yang sebelumnya dapat
+IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED_STORAGE_RECONCILIATION`. Preview yang sebelumnya dapat
 kehilangan konteks workspace/tab kini memakai URL tenant/tab yang eksplisit,
 mencoba ulang satu kegagalan sementara, dan menampilkan recovery copy bila
 asset tetap tidak dapat dibaca. Data frame tidak diubah oleh recovery UI.
-Playwright 2/2, backend frame authoring 17/17 dan 81 assertion, build 5.097
-modul, diff check, serta audit Composer/npm nol lulus. No-upload, tenant
-isolation, checksum/integrity backend, dan pembayaran off-app tetap terjaga.
-Production belum berubah; gate release, backup/restore, activation, smoke,
-rollback, dan authenticated Owner UAT tetap terpisah.
+Playwright 4/4, 31 focused PHP test dan 107 assertion, build 5.097 modul, diff
+check, serta audit Composer/npm nol lulus. Artifact immutable dan backup
+terenkripsi/offsite dengan restore disposable 146/160/149 tabel lulus.
+
+Dua activation rollback otomatis karena kandidat shared storage tidak melihat
+manifest backup pada release-local storage production. Ini juga berisiko
+membuat asset frame lama tidak terlihat, sehingga release fail-closed sampai
+inventory/checksum, salinan immutable, permission/ownership, rehearsal, dan
+candidate gate 6/6 lulus. No-upload, tenant isolation, checksum/integrity
+backend, dan pembayaran off-app tetap terjaga. Production tetap backend
+`20260823091225-c828bd9`; Studio tidak berubah dan authenticated Owner UAT
+tetap terpisah.
 
 S270 tutorial Customer Flow: Studio exact
 `ab2af26a1fc55f953c90605bc066eaa63937f966` berstatus `PUSHED /

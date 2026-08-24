@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-24 - SagaView S272 release reconciliation
+
+- Perbaikan Gallery Frame exact
+  `fe2dcfc57e8b6592ad0162fabf079fbbd07c1097` sudah pushed dan lolos gate lokal.
+- Artifact immutable, backup terenkripsi/offsite, restore disposable, serta dua
+  rollback otomatis berhasil menjaga production tetap sehat.
+- Deployment dihentikan karena kandidat shared storage belum terbukti setara
+  dengan release-local storage production; aktivasi dapat membuat asset frame
+  lama tidak terlihat.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  RELEASE_BLOCKED_STORAGE_RECONCILIATION`. Production dan Studio tidak berubah;
+  rekonsiliasi data-integrity menjadi gate berikutnya.
+
 ## 2026-08-24 - CoyaBag payment monitoring di SagaDev
 
 - SagaDev sekarang memiliki workspace laporan pembayaran order CoyaBag dengan

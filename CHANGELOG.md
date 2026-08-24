@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-24 - SagaView S272 storage release blocker sync
+
+- Exact source `fe2dcfc57e8b6592ad0162fabf079fbbd07c1097` sudah pushed dan
+  tetap `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- Immutable artifact, encrypted backup/offsite, disposable restore, dan dua
+  atomic rollback terverifikasi; production tidak berubah serta tetap sehat.
+- Kandidat menggunakan shared storage sementara release aktif masih memakai
+  release-local storage. Gate fail-closed mencegah aktivasi yang dapat
+  menyembunyikan asset frame lama.
+- Status `RELEASE_BLOCKED_STORAGE_RECONCILIATION`; retry menunggu inventory dan
+  checksum, salinan immutable, permission/ownership, rehearsal, serta candidate
+  gate 6/6.
+- Dokumen terdampak: SagaView product/changelog/coverage, portfolio, master,
+  root changelog, dan sync status.
+
 ## 2026-08-24 - CoyaBag SagaDev payment monitoring production sync
 
 - Informasi `CONFIRMED` berasal dari source

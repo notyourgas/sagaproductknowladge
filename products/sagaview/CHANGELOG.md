@@ -1,5 +1,25 @@
 # SagaView Changelog
 
+## 2026-08-24 - S272 deployment dihentikan pada rekonsiliasi storage
+
+- Klasifikasi: `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  RELEASE_BLOCKED_STORAGE_RECONCILIATION`.
+- Before: source S272 sudah lolos gate lokal, tetapi belum ada bukti bahwa
+  layout storage kandidat sama dengan release production aktif.
+- After: artifact immutable `20260824034431-fe2dcfc`, backup
+  terenkripsi/offsite, restore disposable 146/160/149 tabel, dan pemeriksaan
+  production read-only selesai. Dua atomic activation rollback otomatis tanpa
+  meninggalkan kandidat aktif.
+- Blocker: kandidat menunjuk shared storage, sedangkan production aktif masih
+  menunjuk release-local storage. Candidate gate tidak menemukan manifest
+  backup terbaru dan aktivasi dapat membuat asset frame lama tidak terlihat.
+- Tindakan aman berikutnya: inventaris dan checksum kedua storage, buat salinan
+  immutable, verifikasi permission/ownership dan rehearsal, lalu wajibkan gate
+  kandidat 6/6 sebelum retry deployment.
+- Production tetap backend `20260823091225-c828bd9` / exact
+  `c828bd9d3b38e4d35fca85bb66182b139ecf5a2e`; API/login dan service sehat.
+  Studio tidak berubah dan `BUSINESS_READY=false`.
+
 ## 2026-08-24 - S272 Owner Gallery Frame preview recovery
 
 - Klasifikasi: `CONFIRMED / UIUX_VALIDATED / SECURITY_VALIDATED /
