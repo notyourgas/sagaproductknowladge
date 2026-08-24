@@ -1,5 +1,26 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-24 - SagaBook S287 reschedule production sync
+
+- Informasi `CONFIRMED` berasal dari exact source
+  `50d9971c43405450f245464942765f85a2845f48`, release
+  `20260824092913-50d9971`, rollback `20260824084125-49e4cef`, dan
+  post-activation runtime verification.
+- Knowledge mencatat customer request yang tidak mengubah jadwal sebelum
+  approval, resolusi transaksional, sinkronisasi slot/hold/task, fee/payment,
+  riwayat Booking Detail, terminal Task Center, serta recovery
+  expiry/stale/retry/conflict/callback.
+- Full PHP/browser/typecheck/build/security, dependency audit, encrypted
+  backup/restore, MySQL partial-schema rehearsal, migration/index, database
+  audit, service/journal, manifest, dan public/security smoke lulus. Remote main
+  sudah maju ke descendant S289; exact deployed source tetap stabil dan
+  ancestry terverifikasi.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated
+  Owner/operator UAT dan dua studio pilot masih residual sehingga
+  `BUSINESS_READY=false`.
+- Dokumen terdampak: SagaBook product/dossier/changelog/coverage, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-08-24 - CoyaBag Cart production sync
 
 - Informasi `CONFIRMED` berasal dari exact source

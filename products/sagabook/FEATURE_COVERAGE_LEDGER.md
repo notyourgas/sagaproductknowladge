@@ -1,6 +1,27 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 24 Agustus 2026 15:54 WIB
+Evidence cut-off: 24 Agustus 2026 16:48 WIB
+
+Sinkronisasi reschedule S287 exact source
+`50d9971c43405450f245464942765f85a2845f48` telah `CONFIRMED / PUSHED /
+UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+DATA_INTEGRITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
+Coverage membuktikan customer request mempertahankan jadwal lama sampai
+approval; approval memindahkan jadwal, slot/hold, task, payment state, audit,
+dan response UI secara transaksional, row-locked, idempoten, dan replay-safe.
+Booking Detail/Task Center mempertahankan terminal detail beserta jadwal asal,
+tujuan, fee, payment, dan action. Free/paid, expiry, late callback, reject,
+stale, retry, double-submit, availability conflict, permission, tenant/cabang,
+dan read-after-write diuji. Full PHP 1.137/1.137 (12.998 assertion), browser
+desktop/mobile 10 lulus dengan 6 skip viewport terencana, typecheck/build,
+dependency audit nol, encrypted backup/checksum/disposable MySQL restore dan
+migration rehearsal lulus. Release `20260824092913-50d9971` aktif dengan
+rollback `20260824084125-49e4cef`; database audit 100, manifest, index schema,
+0 pending migration, service/journal, serta public/security smoke 3/3 lulus.
+Verifier 16/17 hanya berbeda pada remote main yang sudah source-ahead ke
+descendant S289; active pointer/commit stabil dan ancestry lulus. Tidak ada
+provider canary nyata; authenticated Owner/operator UAT dan dua studio pilot
+tetap exit gate sehingga `BUSINESS_READY=false`.
 
 Edit pembayaran Manual Booking S288 exact source
 `49e4cefae4bccf83446b17bdedba841c4c74765c` telah `CONFIRMED / PUSHED /

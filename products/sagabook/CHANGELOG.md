@@ -1,5 +1,33 @@
 # SagaBook Changelog
 
+## 2026-08-24 - Sinkronisasi reschedule S287 production
+
+- Klasifikasi: `CONFIRMED`; exact source
+  `50d9971c43405450f245464942765f85a2845f48` aktif sebagai release
+  `20260824092913-50d9971` dengan rollback
+  `20260824084125-49e4cef`.
+- Request customer mempertahankan jadwal lama sampai approval. Approval admin
+  mengunci request dan booking, memeriksa availability serta biaya/pembayaran,
+  memindahkan jadwal, memperbarui slot/hold/task, lalu menyimpan audit dan
+  hasil read-after-write secara atomik serta replay-safe.
+- Booking Detail dan Task Center menampilkan riwayat reschedule, jadwal asal
+  dan tujuan, biaya, status pembayaran, serta action yang relevan. Expiry,
+  reject, stale conflict, retry, double-submit, permission, tenant/cabang, dan
+  callback pembayaran terlambat fail-safe tanpa mengosongkan booking.
+- Full PHP 1.137/1.137 (12.998 assertion), focused browser desktop/mobile
+  10 lulus dengan 6 skip viewport terencana, typecheck, build 5.129 modul,
+  dependency audit nol, encrypted backup/checksum/disposable MySQL restore dan
+  migration rehearsal lulus.
+- Migration production sempat ditolak oleh batas panjang index MySQL; source
+  diperbaiki memakai prefix index aman dan diuji ulang terhadap schema partial.
+  Post-activation database audit 100, 0 migration pending, service aktif,
+  journal error 0, manifest valid, serta public/security smoke 3/3 lulus.
+  Verifier runtime lulus 16/17; satu check `remote_main` berbeda karena main
+  sudah maju ke source turunan S289, sedangkan release aktif tetap stabil dan
+  source S287 terbukti ancestor. Status `PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`; authenticated Owner/operator UAT dan dua studio pilot
+  tetap residual sehingga `BUSINESS_READY=false`.
+
 ## 2026-08-24 - Edit pembayaran Manual Booking S288 production
 
 - Klasifikasi: `CONFIRMED`; Andreas meminta booking OTS/manual dapat mengoreksi

@@ -7,6 +7,24 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Sinkronisasi reschedule S287 exact source
+  `50d9971c43405450f245464942765f85a2845f48`: `CONFIRMED / PUSHED /
+  UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
+  Customer request mempertahankan jadwal lama sampai approval; admin approval
+  memvalidasi slot, expiry, fee/payment dan memindahkan booking, lock/hold,
+  task, audit, serta response secara atomik dan idempoten. Booking Detail dan
+  Task Center menunjukkan riwayat, tujuan, biaya, status bayar, dan action,
+  termasuk recovery untuk stale/retry/conflict/expiry/callback terlambat.
+  Full PHP 1.137/1.137, browser desktop/mobile 10 lulus, typecheck/build,
+  dependency audit nol, encrypted backup/restore serta MySQL migration rehearsal
+  lulus. Release aktif `20260824092913-50d9971`; rollback
+  `20260824084125-49e4cef`; database audit 100, 0 migration pending,
+  service/journal dan public/security smoke lulus. Remote main telah maju ke
+  descendant S289 sehingga verifier formal 16/17, namun exact release stabil
+  dan ancestry valid. UAT operator/Owner serta studio pilot tetap residual dan
+  `BUSINESS_READY=false`.
+
 - Edit pembayaran Manual Booking S288 exact source
   `49e4cefae4bccf83446b17bdedba841c4c74765c`: `CONFIRMED / PUSHED /
   UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / PRODUCTION_DEPLOYED /

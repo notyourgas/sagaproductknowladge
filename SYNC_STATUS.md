@@ -12,16 +12,27 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-24T16:11:52+07:00 |
+| Waktu pembaruan terakhir | 2026-08-24T16:48:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `87ecd47fa4c57ac23720a4e342e0b63343089a3c` |
-| Informasi terakhir disinkronkan | CoyaBag Cart integrity and recovery production release. |
-| Status sinkronisasi | Delivery `PRODUCTION_DEPLOYED`; activation dan business readiness `BLOCKED`. |
-| Konflik | Tidak ada konflik source, release, rollback, atau runtime. |
-| Error | Readiness tetap 28/40 dengan 12 blocker; checkout tetap fail-closed. |
+| Baseline sebelum pembaruan | `0923a1d658f8b66cc582a63d8d4ee783d750e4d0` |
+| Informasi terakhir disinkronkan | SagaBook S287 reschedule transaction integrity production release. |
+| Status sinkronisasi | `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; `BUSINESS_READY=false`. |
+| Konflik | Remote source main sudah maju ke descendant S289; exact release S287 stabil dan ancestry lulus. |
+| Error | Tidak ada error runtime; authenticated Owner/operator UAT dan dua studio pilot tetap residual. |
 
-## File yang berubah pada sinkronisasi ini (CoyaBag Cart production)
+## File yang berubah pada sinkronisasi ini (SagaBook S287 reschedule production)
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
+
+## File dari sinkronisasi sebelumnya (CoyaBag Cart production)
 
 - `products/coyabag/PRODUCT.md`
 - `products/coyabag/DOSSIER.md`
@@ -32,7 +43,7 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `CHANGELOG.md`
 - `SYNC_STATUS.md`
 
-## File yang berubah pada sinkronisasi ini (SagaBook S288 manual payment production)
+## File dari sinkronisasi sebelumnya (SagaBook S288 manual payment production)
 
 - `products/sagabook/PRODUCT.md`
 - `products/sagabook/DOSSIER.md`

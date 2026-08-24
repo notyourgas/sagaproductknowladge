@@ -1,5 +1,21 @@
 # Portfolio Changelog
 
+## 2026-08-24 - SagaBook reschedule transaction integrity
+
+- Exact source `50d9971c43405450f245464942765f85a2845f48` aktif sebagai
+  release `20260824092913-50d9971`; rollback
+  `20260824084125-49e4cef` tersedia.
+- Request customer mempertahankan jadwal lama sampai approval. Approval admin
+  memindahkan jadwal, slot/hold, task, fee/payment, audit, dan response UI
+  secara atomik; Booking Detail serta Task Center menunjukkan riwayat dan
+  status terminal tanpa booking kosong.
+- Full test, browser desktop/mobile, typecheck/build, dependency audit,
+  encrypted backup/restore, MySQL migration recovery, database audit,
+  service/journal, manifest, dan public/security smoke lulus. Source production
+  stabil dan merupakan ancestor remote main yang sudah maju ke S289.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated UAT dan
+  studio pilot tetap residual sehingga `BUSINESS_READY=false`.
+
 ## 2026-08-24 - CoyaBag Cart integrity and recovery
 
 - Exact source `61429f02dc44275492f0c45bc416bbad7acb486c` aktif sebagai

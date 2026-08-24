@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 24 Agustus 2026 15:54 WIB
-Evidence status: edit pembayaran Manual Booking S288 aktif di production pada exact release terverifikasi; authenticated Owner/operator UAT tetap residual
+Updated: 24 Agustus 2026 16:48 WIB
+Evidence status: sinkronisasi reschedule S287 aktif di production; authenticated Owner/operator UAT tetap residual
 
 ## Tujuan dokumen
 
@@ -15,6 +15,29 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- Sinkronisasi reschedule S287 pada exact source
+  `50d9971c43405450f245464942765f85a2845f48` berstatus `CONFIRMED / PUSHED /
+  UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
+  Request customer tidak mengubah jadwal booking sebelum approval. Approval
+  admin memvalidasi availability, expiry, biaya dan pembayaran, lalu memindah
+  booking, slot lock/hold, task, dan audit dalam satu transaksi dengan row lock,
+  optimistic version, idempotency, serta read-after-write. Booking Detail dan
+  Task Center mempertahankan hasil terminal, riwayat jadwal, biaya, status
+  pembayaran, dan action terkait. Reject, expiry, stale, retry, double-submit,
+  callback terlambat, permission, tenant, dan cabang fail-safe. Full PHP
+  1.137/1.137 (12.998 assertion), browser desktop/mobile 10 lulus dan 6 skip
+  viewport terencana, typecheck, build 5.129 modul, dependency audit nol,
+  encrypted backup/checksum/disposable MySQL restore serta migration rehearsal
+  lulus. Migration memakai prefix index MySQL/MariaDB aman dan pulih dari
+  partial DDL. Release `20260824092913-50d9971` aktif dengan rollback
+  `20260824084125-49e4cef`; database audit 100, manifest valid, 0 migration
+  pending, service/journal, dan public/security smoke 3/3 lulus. Verifier
+  runtime 16/17 hanya karena remote main sudah maju ke source turunan S289;
+  pointer/commit release stabil dan source S287 terverifikasi sebagai ancestor.
+  Tidak ada payment/WhatsApp customer canary. Authenticated Owner/operator UAT
+  dan dua studio pilot belum selesai sehingga `BUSINESS_READY=false`.
 
 - Edit pembayaran Manual Booking S288 pada exact source
   `49e4cefae4bccf83446b17bdedba841c4c74765c` berstatus `CONFIRMED / PUSHED /
