@@ -1,5 +1,24 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-24 - SagaBook S288 manual payment production sync
+
+- Informasi `CONFIRMED` berasal dari keputusan Andreas, exact source
+  `49e4cefae4bccf83446b17bdedba841c4c74765c`, release
+  `20260824084125-49e4cef`, rollback `20260824001354-9e4b44e`, dan postdeploy
+  runtime verification.
+- Knowledge mencatat edit metode/status pembayaran hanya untuk booking
+  staff/manual, immutable nominal/website/provider, role dan closing guard,
+  optimistic lock, idempotency, audit, serta sinkronisasi slot, task, expected
+  cash, add-on non-onsite, dan laporan.
+- Full test, browser desktop/mobile, build, dependency audit, encrypted
+  backup/restore, atomic switch, exact verifier, migration, service/journal,
+  dan public/security smoke lulus. Feature aktif untuk seluruh tenant.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated UAT
+  Owner/operator belum lulus karena reference credential UAT belum
+  unik/tersedia, sehingga `BUSINESS_READY=false`.
+- Dokumen terdampak: SagaBook product/dossier/changelog/coverage, decisions,
+  gaps, portfolio, master knowledge, root changelog, dan sync status.
+
 ## 2026-08-24 - CoyaBag Wishlist production sync
 
 - Informasi `CONFIRMED` berasal dari exact source

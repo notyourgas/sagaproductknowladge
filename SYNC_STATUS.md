@@ -12,16 +12,29 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-24T14:54:10+07:00 |
+| Waktu pembaruan terakhir | 2026-08-24T15:54:21+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `80ad90018ffa189e533ac156fbdcc1ea86253703` |
-| Informasi terakhir disinkronkan | CoyaBag Wishlist variant integrity production release. |
-| Status sinkronisasi | `PRODUCTION_DEPLOYED`; commerce activation tetap fail-closed. |
+| Baseline sebelum pembaruan | `e7b447829a89b042cb65ba3332c2320610467b52` |
+| Informasi terakhir disinkronkan | SagaBook S288 edit pembayaran Manual Booking production release. |
+| Status sinkronisasi | `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; `BUSINESS_READY=false`. |
 | Konflik | Tidak ada konflik source, release, atau rollback. |
-| Error | Tidak ada error pada test, public smoke, worker, service, log, atau operational monitor. |
+| Error | Authenticated Owner/operator UAT tertahan karena reference credential UAT belum unik/tersedia; automated/runtime gate lainnya lulus. |
 
-## File yang berubah pada sinkronisasi ini (CoyaBag Wishlist production)
+## File yang berubah pada sinkronisasi ini (SagaBook S288 manual payment production)
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `DECISIONS.md`
+- `GAPS.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
+
+## File dari sinkronisasi sebelumnya (CoyaBag Wishlist production)
 
 - `products/coyabag/PRODUCT.md`
 - `products/coyabag/CHANGELOG.md`

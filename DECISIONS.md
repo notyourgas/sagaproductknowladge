@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-099 - Pembayaran booking OTS/manual dapat dikoreksi tanpa menyentuh provider
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-24 |
+| Topik | Koreksi metode dan status pembayaran Manual Booking SagaBook |
+| Keputusan | Booking yang dibuat staff/manual harus dapat mengoreksi metode dan status pembayaran dari Booking Detail. Nominal booking, booking website, payment session/callback provider, state terminal, dan closing submitted/approved tetap immutable. |
+| Alasan | Customer OTS sering mengisi form lebih dulu lalu menyelesaikan pembayaran dengan metode atau status berbeda; operator memerlukan koreksi yang menjaga expected cash, laporan, dan closing. |
+| Alternatif yang dipertimbangkan | Mengedit semua booking termasuk website/provider; membuat transaksi pengganti terpisah; mengubah database langsung tanpa audit. |
+| Dampak | Metode cash, QRIS onsite, EDC, dan transfer manual serta status unpaid/pending/paid dapat dikoreksi sesuai role. Tenant/cabang, optimistic lock, idempotency, hashed audit reason, slot/hold, task transfer, checkout add-on non-onsite, expected cash, dan report change feed disinkronkan atomik; add-on onsite tetap terpisah. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; source `49e4cefae4bccf83446b17bdedba841c4c74765c`, release `20260824084125-49e4cef`, rollback `20260824001354-9e4b44e`; authenticated Owner/operator UAT residual dan `BUSINESS_READY=false` |
+| Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [SagaBook Changelog](products/sagabook/CHANGELOG.md), [SagaBook Ledger](products/sagabook/FEATURE_COVERAGE_LEDGER.md), [Gaps](GAPS.md) |
+
 ## DEC-098 - Kandidat kumulatif SagaView S272 diaktifkan setelah storage gate tertutup
 
 | Field | Isi |

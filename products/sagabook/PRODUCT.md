@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 24 Agustus 2026 07:38 WIB
-Evidence status: fondasi operasional S286 aktif di production pada exact release terverifikasi; authenticated Owner route UAT lulus, Operator/pilot tetap residual
+Updated: 24 Agustus 2026 15:54 WIB
+Evidence status: edit pembayaran Manual Booking S288 aktif di production pada exact release terverifikasi; authenticated Owner/operator UAT tetap residual
 
 ## Tujuan dokumen
 
@@ -15,6 +15,31 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- Edit pembayaran Manual Booking S288 pada exact source
+  `49e4cefae4bccf83446b17bdedba841c4c74765c` berstatus `CONFIRMED / PUSHED /
+  UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`. Owner, manager, admin cabang, dan staff dapat
+  mengoreksi metode serta status pembayaran booking yang dibuat staff/manual
+  melalui Booking Detail. Metode yang didukung adalah cash, QRIS onsite, EDC,
+  dan transfer manual; statusnya unpaid, pending verifikasi, atau paid.
+  Nominal booking, booking website, payment session/callback provider, booking
+  terminal, serta closing submitted/approved tetap immutable. Penurunan status
+  paid dibatasi role elevated dan tidak diizinkan setelah sesi berjalan.
+  Perubahan berlangsung atomik dengan optimistic lock, idempotency receipt,
+  audit alasan berbentuk hash, sinkronisasi slot/hold, task transfer, checkout
+  add-on non-onsite, expected cash, dan change feed laporan; add-on onsite tidak
+  ditimpa. Full PHP 1.131/1.131 (12.915 assertion), focused payment 5/5 (42),
+  related backend 33/33 (263), build, Node persistence 18/18, browser
+  persistence 4/4, browser payment desktop/mobile 2/2, Pint, serta audit
+  npm/Composer/OSV nol lulus. Encrypted backup/checksum/disposable restore,
+  immutable source package, atomic activation, verifier independen 17/17,
+  migrasi 0 pending, service/journal, public smoke, dan security header 3/3
+  lulus. Release `20260824084125-49e4cef` aktif dengan rollback
+  `20260824001354-9e4b44e`; feature kill switch aktif untuk seluruh tenant.
+  Authenticated Owner/operator production UAT belum lulus karena reference
+  credential UAT belum unik/tersedia; tidak ada mutation customer atau canary
+  provider. `BUSINESS_READY=false`.
 
 - Fondasi operasional gabungan S286 pada exact source
   `9e4b44e5f6698b7284938fa1e4c948dd45c9e5d5` berstatus `CONFIRMED / PUSHED /

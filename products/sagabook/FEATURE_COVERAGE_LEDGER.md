@@ -1,6 +1,25 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 24 Agustus 2026 07:38 WIB
+Evidence cut-off: 24 Agustus 2026 15:54 WIB
+
+Edit pembayaran Manual Booking S288 exact source
+`49e4cefae4bccf83446b17bdedba841c4c74765c` telah `CONFIRMED / PUSHED /
+UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED`. Coverage membuktikan UI Booking Detail, typed API,
+feature flag, role dan branch capability, source manual, metode/status
+allowlist, provider/terminal/closing guards, optimistic lock, idempotency,
+hashed audit reason, slot/hold, transfer task, expected cash, checkout add-on
+non-onsite, serta report change feed. Nilai booking dan add-on onsite tidak
+berubah; booking website dan payment session provider fail-closed. Full PHP
+1.131/1.131 (12.915 assertion), focused payment 5/5 (42), related backend
+33/33 (263), Node persistence 18/18, browser persistence 4/4, browser payment
+desktop/mobile 2/2, build, Pint, dan dependency audit nol lulus. Release
+`20260824084125-49e4cef` aktif dengan rollback
+`20260824001354-9e4b44e`; encrypted backup/restore, immutable artifact, atomic
+switch, verifier 17/17, migration 0 pending, service/journal, dan
+public/security smoke 3/3 lulus. Authenticated Owner/operator production UAT
+belum lulus karena reference credential UAT belum unik/tersedia; tidak ada
+mutation customer/provider dan `BUSINESS_READY=false`.
 
 Fondasi operasional gabungan S286 exact source
 `9e4b44e5f6698b7284938fa1e4c948dd45c9e5d5` telah `CONFIRMED / PUSHED /

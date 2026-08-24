@@ -1,5 +1,34 @@
 # SagaBook Changelog
 
+## 2026-08-24 - Edit pembayaran Manual Booking S288 production
+
+- Klasifikasi: `CONFIRMED`; Andreas meminta booking OTS/manual dapat mengoreksi
+  pembayaran dan mengotorisasi sprint serta deployment. Exact source
+  `49e4cefae4bccf83446b17bdedba841c4c74765c` telah pushed ke source `main`.
+- Before: staff dapat membuat Manual Booking tetapi tidak memiliki koreksi
+  pembayaran aman setelah metode/status aktual berubah. After: Booking Detail
+  menyediakan edit metode cash, QRIS onsite, EDC, atau transfer manual dan
+  status unpaid, pending, atau paid, hanya untuk source manual.
+- Nominal booking, booking website, provider session/callback, terminal state,
+  dan closing submitted/approved immutable. Downgrade paid dibatasi role dan
+  sesi; tenant/cabang, optimistic lock, idempotency, hashed audit reason,
+  slot/hold, task transfer, checkout add-on non-onsite, expected cash, dan
+  report change feed dijaga atomik. Add-on onsite tidak ditimpa.
+- Full PHP 1.131/1.131 (12.915 assertion), focused payment 5/5 (42), related
+  backend 33/33 (263), Node 18/18, browser persistence 4/4, browser payment
+  desktop/mobile 2/2, build, Pint, serta audit npm/Composer/OSV nol lulus.
+- Fresh encrypted backup/checksum/disposable restore, immutable source package,
+  atomic switch, exact verifier 17/17, 0 migration pending, service/journal,
+  public smoke, dan security header 3/3 lulus. Deployment memakai exception
+  owner yang hanya menerima tepat tiga failed WhatsApp job lama setelah state
+  delivery diverifikasi read-only; job tidak dihapus atau di-retry.
+- Release `20260824084125-49e4cef` aktif dengan rollback
+  `20260824001354-9e4b44e`; feature flag aktif untuk seluruh tenant. Status
+  `PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Authenticated
+  Owner/operator production UAT tertahan karena reference credential belum
+  unik/tersedia; tidak ada mutation customer/provider dan
+  `BUSINESS_READY=false`.
+
 ## 2026-08-24 - Fondasi operasional gabungan S286 production
 
 - Klasifikasi: `CONFIRMED`; Andreas mengotorisasi perbaikan blocker dan

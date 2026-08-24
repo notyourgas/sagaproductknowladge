@@ -1,5 +1,21 @@
 # Portfolio Changelog
 
+## 2026-08-24 - SagaBook edit pembayaran booking OTS/manual
+
+- Exact source `49e4cefae4bccf83446b17bdedba841c4c74765c` aktif sebagai
+  release `20260824084125-49e4cef`; rollback
+  `20260824001354-9e4b44e` tersedia.
+- Staff/Owner dapat mengoreksi metode dan status pembayaran booking manual dari
+  Booking Detail. Nilai booking, booking website, provider-linked payment,
+  terminal state, closing terkunci, dan add-on onsite tetap dilindungi.
+- Permission, tenant/cabang, stale conflict, idempotency, audit, slot/hold,
+  task transfer, expected cash, serta reporting disinkronkan atomik. Full test,
+  browser desktop/mobile, build, dependency audit, backup/restore, exact
+  verifier, service/journal, migration, dan public/security smoke lulus.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated UAT
+  Owner/operator dan studio pilot tetap residual sehingga
+  `BUSINESS_READY=false`.
+
 ## 2026-08-24 - CoyaBag Wishlist variant integrity
 
 - Exact source `759e2a5c8f6c8497afc0d49d3e3d8da32ae44592` aktif sebagai

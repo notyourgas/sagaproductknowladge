@@ -7,6 +7,26 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Edit pembayaran Manual Booking S288 exact source
+  `49e4cefae4bccf83446b17bdedba841c4c74765c`: `CONFIRMED / PUSHED /
+  UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`. Booking buatan staff/manual dapat mengubah metode
+  cash, QRIS onsite, EDC, atau transfer manual dan status unpaid, pending, atau
+  paid dari Booking Detail. Nilai booking tidak dapat diedit; website booking,
+  provider-linked payment, terminal state, dan closing submitted/approved
+  ditolak. Downgrade paid memerlukan role elevated dan sesi yang belum berjalan.
+  Service mempertahankan tenant/cabang/capability, optimistic concurrency,
+  idempotency, hashed reason audit, serta sinkronisasi status booking,
+  slot/hold, task transfer, checkout add-on non-onsite, expected cash, dan
+  report change feed secara atomik. Add-on onsite tetap terpisah. Full/focused
+  PHP, Node, browser desktop/mobile, build, dependency audit, encrypted
+  backup/restore, atomic activation, exact verifier 17/17, service/journal,
+  migrasi, dan public/security smoke lulus. Release aktif
+  `20260824084125-49e4cef`; rollback `20260824001354-9e4b44e`. Feature flag
+  aktif untuk seluruh tenant. Authenticated Owner/operator UAT dan pilot nyata
+  tetap residual; tidak ada mutation customer atau provider canary dan
+  `BUSINESS_READY=false`.
+
 - Fondasi operasional S286 exact source
   `9e4b44e5f6698b7284938fa1e4c948dd45c9e5d5`: `CONFIRMED / PUSHED /
   UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /

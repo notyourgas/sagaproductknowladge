@@ -1,8 +1,27 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 24 Agustus 2026 11:51 WIB
+Evidence cut-off: 24 Agustus 2026 15:54 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
+
+SagaBook edit pembayaran Manual Booking S288 exact source
+`49e4cefae4bccf83446b17bdedba841c4c74765c` berstatus `CONFIRMED / PUSHED /
+UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED`. Owner/staff dapat mengoreksi metode cash, QRIS onsite,
+EDC, atau transfer manual dan status unpaid, pending, atau paid untuk booking
+yang dibuat staff/manual. Nilai booking tidak dapat diedit; booking website,
+provider-linked payment, terminal state, closing submitted/approved, serta
+add-on onsite tetap immutable. Downgrade paid dibatasi role elevated dan sesi
+yang belum berjalan. Optimistic lock, idempotency receipt, hashed audit reason,
+tenant/cabang, slot/hold, task transfer, checkout add-on non-onsite, expected
+cash, dan report change feed disinkronkan atomik. Full/focused PHP, Node,
+browser desktop/mobile, build, dependency audit nol, encrypted backup/restore,
+atomic switch, exact verifier 17/17, migrasi 0 pending, service/journal, serta
+public/security smoke 3/3 lulus. Release `20260824084125-49e4cef` aktif dengan
+rollback `20260824001354-9e4b44e`; kill switch aktif untuk seluruh tenant.
+Authenticated Owner/operator UAT belum lulus karena reference credential UAT
+belum unik/tersedia; tidak ada mutation customer/provider dan
+`BUSINESS_READY=false`.
 
 SagaView S272 Owner Gallery Frame exact backend/Owner
 `fe2dcfc57e8b6592ad0162fabf079fbbd07c1097` berstatus `CONFIRMED /
