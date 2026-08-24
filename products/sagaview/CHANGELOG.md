@@ -1,5 +1,20 @@
 # SagaView Changelog
 
+## 2026-08-24 - S273 font Customer Display konsisten saat offline
+
+- Klasifikasi: `CONFIRMED / PUSHED / UIUX_VALIDATED / SECURITY_VALIDATED /
+  QA_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- Before: editor menawarkan font yang tidak dibundel, sehingga Windows/browser
+  dapat memakai fallback berbeda ketika Studio offline.
+- After: pilihan font hanya berasal dari bundle lokal; nilai font lama
+  dimigrasikan deterministik dan CSS menormalisasi tema sebelum diterapkan.
+- Exact Studio `14e7272ab5bbc1e8270073a5d2849c941f185cd5`: 54 file/238
+  unit test, browser serial 150 pass/3 controlled skip, build/budget 300,4/450
+  KiB, format/lint/typecheck, dan npm audit 0/716 lulus.
+- Tidak ada font request eksternal, upload foto/path/output, perubahan backend,
+  database, payment/provider, atau SagaBook. Production Studio tetap
+  `20260823185455-ab2af26`; S273 belum dideploy atau diaktifkan.
+
 ## 2026-08-24 - S272 Gallery Frame production activation
 
 - Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /

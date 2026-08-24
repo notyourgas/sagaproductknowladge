@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-24 - SagaView S273 font offline Customer Display
+
+- Editor Tampilan Customer sekarang hanya memakai font yang tersedia lokal;
+  pengaturan font lama dimigrasikan aman agar preview dan layar customer tetap
+  konsisten ketika Studio offline.
+- Exact Studio `14e7272ab5bbc1e8270073a5d2849c941f185cd5` lulus 238 unit
+  test, 150 browser scenario, build/budget, aksesibilitas, no-upload, dan audit
+  dependency nol.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Production,
+  backend/database, pembayaran off-app, foto/path/output, dan SagaBook tidak
+  berubah.
+
 ## 2026-08-24 - CoyaBag product-card integrity
 
 - Exact source `9025d078a75bbad49285ae7b528e66c708a2a7a8` aktif sebagai

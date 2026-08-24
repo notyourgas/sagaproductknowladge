@@ -1,6 +1,26 @@
 # SagaView Product Knowledge
 
-Updated: 24 Agustus 2026 11:51 WIB
+Updated: 24 Agustus 2026 13:41 WIB
+
+SagaView S273 berstatus `CONFIRMED / PUSHED / UIUX_VALIDATED /
+SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`. Editor **Tampilan Customer** kini hanya menawarkan
+font yang benar-benar dibundel di perangkat Studio. Nilai tersimpan dari font
+lama dinormalisasi secara deterministik ke font lokal yang sesuai, sehingga
+preview admin dan Customer Display tidak lagi bergantung pada font sistem atau
+layanan font eksternal ketika offline.
+
+Exact source Studio
+`14e7272ab5bbc1e8270073a5d2849c941f185cd5` berada pada branch
+`codex/s273-sagaview-offline-font-integrity` dan sudah pushed. Gate exact commit
+meliputi format/lint/typecheck, 54 file dan 238 unit test, build client/server,
+bundle terbesar 300,4 KiB dari batas 450 KiB, serta audit npm nol dari 716
+dependency. Full browser serial lulus 150 skenario dengan 3 controlled skip;
+font offline/no-external-request, forced-colors, 390x844, 1440x900, recovery,
+galeri 50/200/500 foto, dan no-upload ikut tercakup. Tidak ada perubahan
+backend, database, payment/provider, foto/path/output, atau SagaBook.
+Production tetap Studio exact `ab2af26a1fc55f953c90605bc066eaa63937f966` /
+`20260823185455-ab2af26`; deployment dan aktivasi S273 belum dilakukan.
 
 SagaView S272 berstatus `CONFIRMED / PUSHED / UIUX_VALIDATED /
 SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /

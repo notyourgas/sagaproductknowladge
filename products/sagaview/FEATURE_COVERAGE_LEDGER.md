@@ -1,6 +1,21 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 24 Agustus 2026 11:51 WIB
+Evidence cut-off: 24 Agustus 2026 13:41 WIB
+
+S273 integritas font offline Customer Display: exact Studio
+`14e7272ab5bbc1e8270073a5d2849c941f185cd5` berstatus `CONFIRMED / PUSHED /
+UIUX_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`. Daftar heading/body kini dibatasi pada font bundle
+lokal; nilai lama Poppins, Roboto, Open Sans, Lato, Source Sans 3, dan Georgia
+bermigrasi deterministik tanpa mengubah warna/layout lain. Browser membuktikan
+font tersedia saat offline dan tidak ada request font eksternal. Format, lint,
+typecheck, 54 file/238 unit test, build client/server, budget 300,4/450 KiB,
+npm audit 0/716, browser fokus/visual, dan full browser serial 150 pass/3
+controlled skip lulus. Viewport 390x844/1440x900, forced-colors, recovery,
+galeri 50/200/500 foto, serta no-upload tetap hijau. Backend/database,
+payment/provider, foto/path/output, dan SagaBook tidak berubah. Production tetap
+Studio `ab2af26a...` / `20260823185455-ab2af26`; deployment S273 belum
+dilakukan dan `BUSINESS_READY=false`.
 
 S272 Owner Gallery Frame preview recovery: exact backend/Owner
 `fe2dcfc57e8b6592ad0162fabf079fbbd07c1097` berstatus `CONFIRMED / PUSHED /
