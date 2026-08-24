@@ -1,5 +1,27 @@
 # SagaView Changelog
 
+## 2026-08-25 - S282 Owner Changelog focus and navigation
+
+- Klasifikasi: `CONFIRMED / PUSHED / UIUX_VALIDATED /
+  ACCESSIBILITY_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; `BUSINESS_READY=false`.
+- Before: detail Changelog Owner tidak dapat ditutup, fokus keyboard tetap pada
+  tombol setelah membuka isi, dan aksi kembali mengarah ke Galeri Frame.
+- After: satu detail dapat dibuka atau ditutup; fokus masuk ke region detail,
+  Escape atau tombol tutup mengembalikan fokus ke pemicu, dan aksi kembali
+  menuju Ringkasan. Search/filter/reset/empty state serta state responsif tetap
+  dipertahankan.
+- Provenance: exact source
+  `cfa60f9fdae95746377e033a6fc64cd38e40ee36` sudah pushed pada branch
+  `codex/s282-owner-changelog-focus`.
+- Evidence: focused red-green desktop/mobile 2/2, full Owner browser 46/46,
+  backend 1/1 dengan 21 assertion, build 5.097 modul, forced-colors,
+  reduced-motion, no-overflow 1440x900/390x844, diff check, dan audit
+  Composer/npm nol.
+- Delivery: frontend/test saja; tidak ada API/database/migration,
+  payment/provider, upload foto/path/output, atau perubahan SagaBook.
+  Production tetap S279.
+
 ## 2026-08-25 - S281 Support Hub launcher discoverability
 
 - Klasifikasi: `CONFIRMED / PUSHED / UIUX_VALIDATED /

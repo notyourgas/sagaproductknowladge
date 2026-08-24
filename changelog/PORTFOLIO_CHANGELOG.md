@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-25 - SagaView S282 Owner Changelog focus flow
+
+- Changelog Owner kini dapat membuka atau menutup satu detail, memindahkan fokus
+  keyboard ke isi, dan mengembalikan fokus setelah Escape atau tombol tutup.
+- Aksi kembali menuju Ringkasan; pencarian, filter, reset, empty state,
+  forced-colors, reduced-motion, serta desktop/mobile no-overflow tetap lulus.
+- Exact source `cfa60f9fdae95746377e033a6fc64cd38e40ee36` sudah pushed;
+  focused 2/2, full Owner 46/46, backend 1/21, build, diff, dan audit dependency
+  lulus. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap
+  S279 dan SagaBook tidak berubah.
+
 ## 2026-08-25 - CoyaBag Gallery managed-content integrity
 
 - Exact source `9abeb533069e476c33a6c099d8975af8df99616e` aktif sebagai

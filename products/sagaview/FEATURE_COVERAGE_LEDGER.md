@@ -1,6 +1,19 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 25 Agustus 2026 01:22 WIB
+Evidence cut-off: 25 Agustus 2026 02:19 WIB
+
+S282 Owner Changelog focus and navigation: exact backend/Owner
+`cfa60f9fdae95746377e033a6fc64cd38e40ee36` berstatus `CONFIRMED / PUSHED /
+UIUX_VALIDATED / ACCESSIBILITY_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Changelog mempertahankan
+search/filter/reset/empty state dan satu detail aktif, menambahkan toggle tutup,
+fokus masuk ke region detail, Escape/fokus-kembali, serta navigasi langsung ke
+Ringkasan dengan target minimal 44 piksel. Focused red-green 2/2, full Owner
+46/46, backend 1/21, build 5.097 modul, forced-colors, reduced-motion,
+no-overflow desktop/mobile, diff check, dan audit dependency nol lulus. Tidak
+ada perubahan API, database, migration, payment, no-upload boundary, atau
+SagaBook. Production tetap S279; gap berikutnya adalah authenticated Owner UAT
+dan guarded deployment kandidat kumulatif S282.
 
 S281 Support Hub launcher discoverability: exact backend/Owner
 `dd229d97da3e045f7cf74d2847bb766f325920b7` berstatus `CONFIRMED / PUSHED /

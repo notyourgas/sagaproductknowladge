@@ -1,6 +1,23 @@
 # SagaView Product Knowledge
 
-Updated: 25 Agustus 2026 01:22 WIB
+Updated: 25 Agustus 2026 02:19 WIB
+
+SagaView S282 berstatus `CONFIRMED / PUSHED / UIUX_VALIDATED /
+ACCESSIBILITY_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; `BUSINESS_READY=false`.
+Changelog Owner kini kembali langsung ke Ringkasan, hanya membuka satu detail,
+dan dapat menutup detail yang aktif. Saat detail dibuka dengan keyboard, fokus
+masuk ke region detail; Escape atau tombol tutup mengembalikan fokus ke pemicu.
+Pencarian, filter jenis, reset, empty state, target aksi minimal 44 piksel,
+forced-colors, reduced-motion, serta no-overflow desktop/mobile tetap terbukti.
+
+Exact source `cfa60f9fdae95746377e033a6fc64cd38e40ee36` sudah pushed pada
+branch `codex/s282-owner-changelog-focus`. Focused red-green desktop/mobile 2/2,
+full Owner browser 46/46, backend 1/1 dengan 21 assertion, build 5.097 modul,
+diff check, serta audit Composer/npm nol lulus. Perubahan hanya pada frontend
+Owner dan test; tidak ada API, database, migration, payment/provider,
+foto/path/output, atau perubahan SagaBook. Production tetap S279; authenticated
+Owner UAT dan guarded deployment kandidat kumulatif S282 tetap terpisah.
 
 SagaView S281 berstatus `CONFIRMED / PUSHED / UIUX_VALIDATED /
 ACCESSIBILITY_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED /

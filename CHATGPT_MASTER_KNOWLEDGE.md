@@ -1,8 +1,20 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 25 Agustus 2026 01:22 WIB
+Evidence cut-off: 25 Agustus 2026 02:19 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
+
+SagaView S282 exact backend/Owner
+`cfa60f9fdae95746377e033a6fc64cd38e40ee36` berstatus `CONFIRMED / PUSHED /
+UIUX_VALIDATED / ACCESSIBILITY_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Changelog Owner mempertahankan
+search/filter/reset/empty state dan satu detail aktif, sekaligus mendukung
+toggle tutup, fokus masuk ke region detail, Escape/fokus-kembali, serta kembali
+ke Ringkasan. Focused red-green 2/2, full Owner 46/46, backend 1/21, build
+5.097 modul, forced-colors/reduced-motion, no-overflow desktop/mobile, diff
+check, dan audit dependency nol lulus. Tidak ada perubahan API/database,
+payment, no-upload boundary, atau SagaBook. Production tetap S279 dan
+`BUSINESS_READY=false`.
 
 SagaView S281 exact backend/Owner
 `dd229d97da3e045f7cf74d2847bb766f325920b7` berstatus `CONFIRMED / PUSHED /
