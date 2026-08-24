@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-24 - CoyaBag delivery status and tracking integrity
+
+- Exact source `ab859d3519a84c4cc1647a55671552b53979a473` aktif sebagai
+  Hostinger release `20260824-ab859d3`; rollback `20260824-f3d75a1` tersedia.
+- Customer dan operator kini melihat state pengiriman publik yang sama dari
+  server. No-shipment, stale, exception, dan terminal state memiliki satu aksi
+  aman tanpa membuat resi, janji kurir, atau membocorkan payload provider.
+- Full frontend/backend, security/dependency, backup, browser desktop/mobile,
+  workers, scheduler, dan public smoke lulus. Status `PRODUCTION_DEPLOYED`;
+  readiness 30/42 dan commerce tetap fail-closed.
+
 ## 2026-08-24 - CoyaBag payment and confirmation integrity
 
 - Exact source `f3d75a1f904a03276bf1076b5a42f4dab9568a86` aktif sebagai

@@ -3028,9 +3028,9 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release aktif `20260824-f3d75a1` menjalankan exact source
-`f3d75a1f904a03276bf1076b5a42f4dab9568a86` dengan rollback
-`20260824-affb6dd`. Fondasi yang tersedia membawa destination/quote integrity,
+Release aktif `20260824-ab859d3` menjalankan exact source
+`ab859d3519a84c4cc1647a55671552b53979a473` dengan rollback
+`20260824-f3d75a1`. Fondasi yang tersedia membawa destination/quote integrity,
 payment-to-fulfillment, Delivery Order/AWB/pickup/label/tracking foundation,
 shipping finance ledger, cancellation/incident/refund workflow, operator
 command center, dan customer timeline. Empat migration additive, fresh backup,
@@ -3044,6 +3044,14 @@ terminal/expired, payment selesai/gagal, dan unknown attempt tidak dapat
 membuat sesi atau mengekspos redirect usang. Return-to-tab memicu status
 reconciliation; ambiguous outcome tetap menunggu operator. Full production
 gate lulus tanpa mengaktifkan provider atau checkout.
+
+Delivery status memakai server-authoritative action contract untuk no-shipment,
+preparing, ready-to-ship, in-transit, stale, exception, delivered, cancelled,
+dan returned. Event tersimpan terbaru menjadi sumber kebenaran; customer dan
+Admin Shipment Detail memakai state publik yang sama, tanpa membuat resi atau
+provider promise. Refresh berhenti pada state terminal/operator-required dan
+pulih setelah focus/visibility recovery. Kemampuan ini
+`PRODUCTION_DEPLOYED`, tetapi Shipping Delivery dan commerce tetap tidak aktif.
 
 Quote manual/external pada release aktif memiliki ID unik per penerbitan dan
 tidak menimpa snapshot lama. Order menyimpan waktu terbit/kedaluwarsa;

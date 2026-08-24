@@ -60,9 +60,9 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260824-f3d75a1` dengan source
-  `f3d75a1f904a03276bf1076b5a42f4dab9568a86` melayani production;
-  rollback langsung `20260824-affb6dd` dipertahankan.
+- Release aktif `20260824-ab859d3` dengan source
+  `ab859d3519a84c4cc1647a55671552b53979a473` melayani production;
+  rollback langsung `20260824-f3d75a1` dipertahankan.
 - Release ini menambahkan destination/quote integrity, payment-to-fulfillment,
   Delivery Order/AWB/pickup/label foundation, tracking webhook inbox, shipping
   finance ledger, cancellation/incident/refund workflow, command center, dan
@@ -143,6 +143,15 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 - Storefront 78/78, Laravel 320 pass/1 MySQL-only skip dengan 2.405 assertion,
   browser desktop/mobile, full RC/security/dependency, backup, workers,
   scheduler, public smoke, dan monitor lulus. Entry production 199,6 KiB.
+- Status pengiriman pelanggan kini berasal dari satu kontrak server-authoritative
+  untuk no-shipment, persiapan, siap dikirim, dalam perjalanan, stale,
+  exception, delivered, cancelled, dan returned. Event terakhir yang tersimpan
+  menjadi sumber kebenaran; storefront tidak membuat resi atau janji kurir.
+- Customer dan Admin Shipment Detail memakai state publik yang sama. Refresh
+  berhenti pada state terminal/operator-required dan pulih setelah fokus atau
+  koneksi kembali. Storefront 80/80, Laravel 322 pass/1 MySQL-only skip dengan
+  2.449 assertion, browser desktop/mobile, full RC/security/dependency, backup,
+  workers, scheduler, dan public smoke lulus. Entry production 199,0 KiB.
 - Scheduler terminal expiry sudah fail-closed dan concurrency-tested.
 - Release candidate source `264c6ac2ebec33c6471a4c49572ddcdc82b51cf2`
   merekonsiliasi

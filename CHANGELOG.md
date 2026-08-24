@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-24 - CoyaBag delivery status integrity production sync
+
+- Informasi `CONFIRMED` berasal dari exact source
+  `ab859d3519a84c4cc1647a55671552b53979a473`, immutable release
+  `20260824-ab859d3`, rollback `20260824-f3d75a1`, dan postdeploy verification.
+- Knowledge mencatat customer delivery action server-authoritative, event
+  timeline truth, customer/admin parity, refresh recovery, terminal polling
+  guard, serta larangan membuat resi/provider promise.
+- Full test/build/security, dependency audit, backup, public desktop/mobile,
+  workers, scheduler, dan smoke lulus. Readiness 30/42 dengan 12 blocker;
+  Shipping Delivery, checkout, dan commerce activation tetap fail-closed.
+- Dokumen terdampak: CoyaBag product/dossier/changelog, gaps, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-24 - CoyaBag payment confirmation production sync
 
 - Informasi `CONFIRMED` berasal dari exact source

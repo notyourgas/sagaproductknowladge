@@ -8,6 +8,22 @@ Mencatat perubahan material COYABAG dengan provenance public-safe.
 
 Surface deployment tidak otomatis berarti commerce activation.
 
+## 2026-08-24 - Delivery status and tracking integrity production release
+
+- Informasi `CONFIRMED` berasal dari exact source
+  `ab859d3519a84c4cc1647a55671552b53979a473`, immutable Hostinger release
+  `20260824-ab859d3`, rollback `20260824-f3d75a1`, dan postdeploy verification.
+- Laravel kini memberi satu customer delivery action untuk no-shipment,
+  preparing, ready-to-ship, in-transit, stale, exception, delivered, cancelled,
+  dan returned; event tersimpan terbaru menjadi sumber kebenaran.
+- Customer dan Admin Shipment Detail memakai state publik yang sama. Storefront
+  tidak membuat resi/provider promise, refresh berhenti pada state terminal atau
+  operator-required, serta pulih setelah focus/visibility recovery.
+- Storefront 80/80, Laravel 322 pass/1 MySQL-only skip dengan 2.449 assertion,
+  full RC/security/dependency, browser desktop/mobile, backup, workers,
+  scheduler, dan public smoke lulus. Readiness tetap 30/42 dengan 12 blocker;
+  commerce/provider fail-closed.
+
 ## 2026-08-24 - Payment and confirmation integrity production release
 
 - Exact source `f3d75a1f904a03276bf1076b5a42f4dab9568a86` aktif pada

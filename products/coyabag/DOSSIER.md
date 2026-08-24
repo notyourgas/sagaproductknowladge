@@ -78,9 +78,9 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260824-f3d75a1` memakai source
-`f3d75a1f904a03276bf1076b5a42f4dab9568a86` dan rollback
-`20260824-affb6dd`. Customer flow kini memiliki quote snapshot yang divalidasi
+Release production terbaru `20260824-ab859d3` memakai source
+`ab859d3519a84c4cc1647a55671552b53979a473` dan rollback
+`20260824-f3d75a1`. Customer flow kini memiliki quote snapshot yang divalidasi
 server, payment-to-fulfillment, serta timeline order/pengiriman terpadu.
 Operator memiliki shipping command center, packing/weight review, provider
 operation journal, pickup/label/tracking foundation, finance ledger,
@@ -93,6 +93,15 @@ dan unavailable. Terminal/ambiguous state tidak dapat membuat pembayaran baru;
 redirect hanya tersedia ketika session masih boleh dibuka. Fokus/return ke tab
 memicu reconciliation segera. Full acceptance dan public desktop/mobile smoke
 lulus tanpa mengaktifkan provider atau transaksi nyata.
+
+Delivery action kini berasal dari server untuk state not-ready, preparing,
+ready-to-ship, in-transit, stale, exception, delivered, cancelled, dan
+returned. Event terakhir yang tersimpan menjadi sumber kebenaran; resi,
+provider promise, dan exception privat tidak dibuat atau dibocorkan. Storefront
+dan panel customer-facing di Admin Shipment Detail menggunakan state yang sama,
+sedangkan refresh interval digabung dengan payment dan berhenti pada state
+terminal/operator-required. Browser desktop/mobile serta full release gate
+lulus tanpa mengaktifkan Shipping Delivery atau mengubah order production.
 
 Quote manual/external kini memiliki identitas unik dan immutable untuk setiap
 penerbitan. Waktu terbit/kedaluwarsa ikut tersimpan pada snapshot order;
