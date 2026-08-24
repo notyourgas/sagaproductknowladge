@@ -1,6 +1,49 @@
 # SagaView Product Knowledge
 
-Updated: 24 Agustus 2026 11:51 WIB
+Updated: 25 Agustus 2026 00:15 WIB
+
+SagaView S273-S279 berstatus `CONFIRMED / PUSHED / UIUX_VALIDATED /
+SECURITY_VALIDATED / QA_VALIDATED / DATA_INTEGRITY_VALIDATED /
+LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+`BUSINESS_READY=false`. Studio sekarang memakai font bundle lokal saat offline,
+membatasi aset Brand ke 1,25 MB dan payload settings aman 1,90 MB, menampilkan
+logo lokal secara konsisten tanpa request aset eksternal, serta memberi
+recovery export khusus permission, quota, disk penuh, dan kegagalan atomic
+write. Sesi/draft tetap aman dengan pilihan retry, pilih ulang lokasi, atau
+download fallback. Foto, folder, path, editor, dan output tetap lokal.
+
+Owner Gallery Frame sekarang memiliki satu aksi dominan `Tambah Frame`, alat
+import dalam disclosure, toolbar pilihan sticky dan aksesibel, recovery katalog
+yang membedakan server, permission, stale, dan offline, serta pemulihan sesi
+tanpa mengganti tab asal. Login dibuka pada tab baru dan metadata dapat dimuat
+ulang tanpa menghapus katalog atau pilihan yang masih tersimpan. Tidak ada
+perubahan API, database, migration, entitlement, harga, atau kontrak pembayaran;
+pembayaran tetap ditangani staf di lokasi di luar aplikasi.
+
+Backend/Owner exact `f956846d803f5af7e2a6c8cf8daa010b2164408a`
+aktif sebagai `20260824163507-f956846` dengan rollback langsung
+`20260824034431-fe2dcfc`. Studio exact
+`7ae79ae45828f3876e3604bb569e0d3c7be3abfb` aktif sebagai
+`20260824170456-7ae79ae` dengan rollback langsung
+`20260823185455-ab2af26`. Exact source keduanya sudah pushed dan memiliki
+archive, manifest SHA-256, serta git bundle pada dua lokasi; salinan source
+recovery pada VPS juga terverifikasi.
+
+Gate backend/Owner lulus: SagaView 207/207 dengan 3.498 assertion, Owner browser
+38/38, build 5.097 modul, dan audit dependency nol. Gate Studio lulus: 57
+file/244 unit test, full browser 155 pass/3 controlled skip, build 2.126 client
+dan 200 SSR, format/lint/typecheck, bundle sekitar 301 KiB dari batas 450 KiB,
+serta audit npm 0/716. Matriks UAT exact-pair menutup 12 gate otomatis dan dua
+gate print berstatus operator-accepted, termasuk 50/200/500 foto, permission,
+crash, read-only output, quota, disk penuh, offline, no-upload, dan isolasi sesi.
+
+Fresh backup terenkripsi/offsite, checksum, serta disposable restore lulus
+dengan 152/161/149 tabel. Atomic activation, rollback, nginx, enam service,
+API/login/session/changelog, deploy/postdeploy gate 6/6, journal, dan exact
+provenance lulus. Audit Gallery Frame production membaca 215 asset unik yang
+dirujuk 427 baris dengan nol missing, size mismatch, checksum mismatch, read
+error, atau request aset eksternal. Authenticated Owner/operator UAT dan pilot
+studio nyata tetap residual sebelum `BUSINESS_READY`.
 
 SagaView S272 berstatus `CONFIRMED / PUSHED / UIUX_VALIDATED /
 SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /

@@ -1,5 +1,22 @@
 # Portfolio Changelog
 
+## 2026-08-25 - SagaView S273-S279 cumulative safe deployment
+
+- Backend/Owner exact `f956846d803f5af7e2a6c8cf8daa010b2164408a` aktif sebagai
+  `20260824163507-f956846`; Studio exact
+  `7ae79ae45828f3876e3604bb569e0d3c7be3abfb` aktif sebagai
+  `20260824170456-7ae79ae`. Rollback langsung keduanya terverifikasi.
+- Customer Display kini konsisten offline dan local-only; payload Brand aman,
+  logo tidak meminta aset eksternal, export menjelaskan permission/quota/disk
+  dan mempertahankan draft. Owner Gallery Frame memperoleh hierarki aksi,
+  recovery katalog, dan pemulihan sesi tanpa menghapus pilihan.
+- Full/focused test, browser desktop/mobile, accessibility, build/budget,
+  dependency audit, exact-pair UAT, immutable recovery artifact, encrypted
+  backup/offsite/restore, atomic switch, health/smoke, service/journal, serta
+  audit integritas 215 asset frame lulus. Status `PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`; authenticated UAT dan pilot studio tetap residual,
+  sehingga `BUSINESS_READY=false`.
+
 ## 2026-08-24 - CoyaBag Bag Finder live-catalog integrity
 
 - Exact source `55674a3871eef05e68c9eaaf4cc5520698d5a7d2` aktif sebagai

@@ -1,5 +1,39 @@
 # SagaView Changelog
 
+## 2026-08-25 - S273-S279 cumulative production activation
+
+- Klasifikasi: `CONFIRMED / PUSHED / UIUX_VALIDATED / SECURITY_VALIDATED /
+  QA_VALIDATED / DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; `BUSINESS_READY=false`.
+- Before: font Customer Display bergantung pada fallback perangkat, payload aset
+  Brand dapat melampaui kontrak backend, logo lokal tidak konsisten pada semua
+  preset, recovery Gallery Frame belum mempertahankan aksi/pilihan secara utuh,
+  dan kegagalan export lokal belum membedakan permission, quota, atau disk penuh.
+- After: Studio memakai font/aset lokal tervalidasi, budget payload aman, zero
+  external asset request, serta recovery export yang mempertahankan sesi/draft
+  dan menawarkan retry, pilih ulang lokasi, atau download fallback. Owner
+  Gallery Frame memiliki satu aksi dominan, disclosure import, toolbar sticky,
+  recovery 503/403/409/offline, dan login tab baru dengan resume metadata.
+- Provenance production: backend/Owner exact
+  `f956846d803f5af7e2a6c8cf8daa010b2164408a` aktif sebagai
+  `20260824163507-f956846`, rollback `20260824034431-fe2dcfc`; Studio exact
+  `7ae79ae45828f3876e3604bb569e0d3c7be3abfb` aktif sebagai
+  `20260824170456-7ae79ae`, rollback `20260823185455-ab2af26`. Kedua source
+  sudah pushed dan recovery artifact exact tersedia pada dua lokasi.
+- Evidence backend/Owner: SagaView 207/207 dengan 3.498 assertion, Owner browser
+  38/38, build 5.097 modul, audit Composer/npm nol. Evidence Studio: 57 file/244
+  unit, 155 browser pass/3 controlled skip, build 2.126 client/200 SSR,
+  format/lint/typecheck, bundle sekitar 301/450 KiB, dan npm audit 0/716.
+- Release safety: UAT exact-pair 12 gate otomatis lulus dan dua gate print
+  operator-accepted; fresh encrypted backup/offsite/checksum dan restore
+  disposable 152/161/149 tabel lulus. Atomic switch, rollback, nginx, enam
+  service, deploy/postdeploy 6/6, public/API smoke, journal, serta exact
+  provenance lulus.
+- Data/privacy: 427 referensi frame/215 asset unik terbaca dengan nol missing,
+  size/checksum mismatch, atau read error. Tidak ada API/database/migration,
+  payment/provider, atau upload foto/path/output customer. Authenticated
+  Owner/operator UAT dan pilot studio nyata tetap residual.
+
 ## 2026-08-24 - S272 Gallery Frame production activation
 
 - Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /

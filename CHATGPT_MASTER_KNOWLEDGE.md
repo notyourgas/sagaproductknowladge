@@ -1,8 +1,34 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 24 Agustus 2026 22:46 WIB
+Evidence cut-off: 25 Agustus 2026 00:15 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
+
+SagaView S273-S279 cumulative production exact backend/Owner
+`f956846d803f5af7e2a6c8cf8daa010b2164408a` dan Studio
+`7ae79ae45828f3876e3604bb569e0d3c7be3abfb` berstatus `CONFIRMED / PUSHED /
+UIUX_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED /
+DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED`. Release aktif masing-masing
+`20260824163507-f956846` dan `20260824170456-7ae79ae`, dengan rollback
+langsung `20260824034431-fe2dcfc` dan `20260823185455-ab2af26`.
+
+Studio kini memakai font bundle lokal, budget aset Brand 1,25 MB dan payload
+aman 1,90 MB, logo lokal konsisten tanpa request eksternal, serta recovery
+export permission/quota/disk/atomic-write yang mempertahankan sesi/draft. Owner
+Gallery Frame memiliki satu aksi dominan, import disclosure, toolbar sticky dan
+aksesibel, recovery 503/403/409/offline, serta login tab baru dengan resume
+metadata tanpa menghapus katalog/pilihan. Foto, folder, path, editor, dan output
+tetap lokal; pembayaran tetap off-app dan harga/katalog tetap authority Owner.
+
+SagaView backend 207/207 dengan 3.498 assertion, Owner browser 38/38, Studio 57
+file/244 unit dan 155 browser pass/3 controlled skip, build/budget,
+format/lint/typecheck, audit dependency nol, UAT exact-pair, artifact exact dua
+lokasi, encrypted backup/offsite dan restore disposable 152/161/149 tabel,
+atomic switch, rollback, health/smoke, enam service, journal, serta audit
+integritas 427 referensi/215 asset unik lulus tanpa error. Authenticated
+Owner/operator UAT dan pilot studio nyata tetap residual;
+`BUSINESS_READY=false`.
 
 SagaBook staff override jadwal Manual Booking S291 exact source
 `194864cc821fd93d3b97c86f5919b54ba4809dad` berstatus `CONFIRMED / PUSHED /

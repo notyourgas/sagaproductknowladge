@@ -1,6 +1,30 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 24 Agustus 2026 11:51 WIB
+Evidence cut-off: 25 Agustus 2026 00:15 WIB
+
+S273-S279 cumulative recovery dan production activation: backend/Owner exact
+`f956846d803f5af7e2a6c8cf8daa010b2164408a` dan Studio exact
+`7ae79ae45828f3876e3604bb569e0d3c7be3abfb` berstatus `CONFIRMED / PUSHED /
+UIUX_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED /
+DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED`; `BUSINESS_READY=false`. Studio menutup integritas font
+offline, budget payload aset Brand 1,25/1,90 MB, render logo lokal tanpa request
+eksternal, serta recovery export permission/quota/disk/atomic-write yang
+mempertahankan sesi dan draft. Owner Gallery Frame menutup hierarki aksi,
+toolbar sticky/live region, recovery server/permission/stale/offline, dan
+expiry sesi dengan login tab baru tanpa menghapus katalog/pilihan.
+
+Gate exact-pair lulus: SagaView 207/207 dan 3.498 assertion, Owner browser
+38/38, Studio 57 file/244 unit dan 155 browser pass/3 controlled skip, dua
+build, format/lint/typecheck, bundle sekitar 301/450 KiB, audit dependency nol,
+UAT 12 gate otomatis dan dua gate print operator-accepted. Fresh encrypted
+backup/offsite/checksum dan restore disposable 152/161/149 tabel, artifact exact
+dua lokasi, atomic switch, rollback, nginx, enam service, gate 6/6, public/API
+smoke, journal, serta exact provenance lulus. Audit production atas 427
+referensi/215 asset frame unik menghasilkan nol missing, size/checksum mismatch,
+dan read error. No-upload, local-first, authority Owner, estimate-only, serta
+pembayaran off-app tetap terjaga. Gap berikutnya: authenticated Owner/operator
+UAT dan pilot studio nyata sebelum `BUSINESS_READY`.
 
 S272 Owner Gallery Frame preview recovery: exact backend/Owner
 `fe2dcfc57e8b6592ad0162fabf079fbbd07c1097` berstatus `CONFIRMED / PUSHED /
