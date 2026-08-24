@@ -1,5 +1,23 @@
 # SagaView Changelog
 
+## 2026-08-24 - S274 anggaran payload aset Brand
+
+- Klasifikasi: `CONFIRMED / PUSHED / UIUX_VALIDATED / SECURITY_VALIDATED /
+  QA_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- Before: Studio menerima logo/background sampai 10 MB, sedangkan backend
+  membatasi payload settings lengkap sampai 2 MB; aset dapat terlihat tersimpan
+  lokal tetapi gagal disinkronkan.
+- After: file sumber dibatasi 1,25 MB, payload UTF-8 diukur terhadap batas aman
+  1,90 MB, halaman menampilkan anggaran, dan Simpan diblokir dengan recovery
+  copy bila data legacy terlalu besar.
+- Exact Studio `59bd55b31a1ebf7964db6cef9b4ad0d7d0d17606`: 55 file/240
+  unit test, focused Brand 6/6, browser serial 152 pass/3 controlled skip,
+  build/budget 301,0/450 KiB, format/lint/typecheck, dan npm audit nol lulus.
+- File ditolak sebelum mutasi draft/cloud; data lama dipertahankan. Tidak ada
+  upload foto/path/output, perubahan backend/database/payment/provider, atau
+  SagaBook. Production Studio tetap `20260823185455-ab2af26`; S274 belum
+  dideploy atau diaktifkan.
+
 ## 2026-08-24 - S273 font Customer Display konsisten saat offline
 
 - Klasifikasi: `CONFIRMED / PUSHED / UIUX_VALIDATED / SECURITY_VALIDATED /

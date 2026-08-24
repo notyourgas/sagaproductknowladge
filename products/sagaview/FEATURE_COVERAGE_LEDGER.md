@@ -1,6 +1,23 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 24 Agustus 2026 13:41 WIB
+Evidence cut-off: 24 Agustus 2026 14:24 WIB
+
+S274 anggaran payload aset Brand: exact Studio
+`59bd55b31a1ebf7964db6cef9b4ad0d7d0d17606` berstatus `CONFIRMED / PUSHED /
+UIUX_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`. Gap client 10 MB versus kontrak backend 2 MB kini
+ditutup melalui cap sumber 1,25 MB, pengukuran UTF-8 payload settings lengkap,
+dan batas aman client 1,90 MB. Panel anggaran memperlihatkan ukuran, memblokir
+Simpan saat tidak aman, mempertahankan aset/data lama, serta menjelaskan aksi
+hapus/ganti. File tidak aman ditolak sebelum draft atau endpoint cloud berubah.
+Format, lint, typecheck, 55 file/240 unit test, build client/server, budget
+301,0/450 KiB, npm audit nol, browser fokus/visual, dan full browser serial 152
+pass/3 controlled skip lulus. Viewport 390x844/1440x900, Axe, forced-colors,
+reduced-motion, recovery, galeri 50/200/500 foto, serta no-upload tetap hijau.
+Backend/database/migration, payment/provider, foto/path/output, dan SagaBook
+tidak berubah. Production Studio tetap `ab2af26a...` /
+`20260823185455-ab2af26`; deployment S274 belum dilakukan dan
+`BUSINESS_READY=false`.
 
 S273 integritas font offline Customer Display: exact Studio
 `14e7272ab5bbc1e8270073a5d2849c941f185cd5` berstatus `CONFIRMED / PUSHED /

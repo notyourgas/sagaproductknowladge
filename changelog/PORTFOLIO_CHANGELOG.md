@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-24 - SagaView S274 anggaran aset Brand
+
+- Logo/background Studio sekarang dicegah melewati kontrak cloud: file sumber
+  maksimal 1,25 MB, payload lengkap diukur, dan anggaran aman terlihat sebelum
+  disimpan.
+- Aset lama yang terlalu besar tidak dihapus; operator mendapat petunjuk
+  pemulihan dan file baru ditolak sebelum draft atau cloud berubah.
+- Exact Studio `59bd55b31a1ebf7964db6cef9b4ad0d7d0d17606` lulus 240 unit
+  test, 152 browser scenario, build/budget, aksesibilitas, no-upload, dan audit
+  dependency nol.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Production,
+  backend/database, pembayaran off-app, foto/path/output, dan SagaBook tidak
+  berubah.
+
 ## 2026-08-24 - SagaView S273 font offline Customer Display
 
 - Editor Tampilan Customer sekarang hanya memakai font yang tersedia lokal;

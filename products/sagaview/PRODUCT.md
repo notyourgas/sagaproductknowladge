@@ -1,6 +1,27 @@
 # SagaView Product Knowledge
 
-Updated: 24 Agustus 2026 13:41 WIB
+Updated: 24 Agustus 2026 14:24 WIB
+
+SagaView S274 berstatus `CONFIRMED / PUSHED / UIUX_VALIDATED /
+SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`. Halaman **Tampilan Customer** sekarang membatasi
+logo/background sumber ke 1,25 MB per file, mengukur payload settings lengkap
+sebagai UTF-8 JSON, dan menampilkan anggaran sinkronisasi aset. Batas aman
+client 1,90 MB menjaga margin di bawah kontrak backend 2 MB. File yang tidak
+aman ditolak sebelum draft lokal atau endpoint sinkronisasi berubah; aset lama
+yang terlalu besar tetap dipertahankan dengan petunjuk hapus/ganti yang jelas.
+
+Exact source Studio `59bd55b31a1ebf7964db6cef9b4ad0d7d0d17606` berada
+pada branch `codex/s274-sagaview-brand-asset-payload` dan sudah pushed. Gate
+exact commit meliputi format/lint/typecheck, 55 file dan 240 unit test, build
+client/server, bundle terbesar 301,0 KiB dari batas 450 KiB, serta audit npm
+nol. Full browser serial lulus 152 skenario dengan 3 controlled skip; focused
+Brand 6/6, recovery data lama, no cloud mutation pada file ditolak, Axe,
+forced-colors, reduced-motion, 390x844/1440x900, galeri 50/200/500 foto, dan
+no-upload tercakup. Tidak ada perubahan backend, database, migration,
+payment/provider, foto/path/output, atau SagaBook. Production tetap Studio
+exact `ab2af26a1fc55f953c90605bc066eaa63937f966` /
+`20260823185455-ab2af26`; S274 belum dideploy atau diaktifkan.
 
 SagaView S273 berstatus `CONFIRMED / PUSHED / UIUX_VALIDATED /
 SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
