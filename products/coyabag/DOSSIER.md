@@ -78,10 +78,22 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260825-2697be4` memakai source
-`2697be48f3bfbc9d4e999c56279533be6a87b17c` dan rollback
-`20260825-dead32e`. About Us hanya memakai cerita, warehouse, process, value,
-media, dan destination dari CMS published. Operator mengelola urutan, draft,
+Release production terbaru `20260825-3520e66` memakai source
+`3520e66e45fda3e396be99439e0d91fdeff3e38d` dan rollback
+`20260825-2697be4`. FAQ hanya merender jawaban CMS published dari enam kategori;
+fallback provider/marketplace dari source tidak lagi menjadi panduan publik.
+Privacy, terms, dan return policy memerlukan owner publication, version,
+effective date, dan section lengkap. Lifecycle policy owner-only tersedia untuk
+draft, preview, schedule, publish, retract, serta immutable rollback. Production
+belum memiliki FAQ approved atau policy lengkap, sehingga empty/incomplete
+state jujur tampil tanpa legal promise. Loading, partial, unavailable/retry,
+withdrawn, deep link, SEO runtime, lazy route, font, dan browser production
+desktop/mobile lulus.
+
+Release sebelumnya `20260825-2697be4` memakai source
+`2697be48f3bfbc9d4e999c56279533be6a87b17c`. About Us hanya memakai cerita,
+warehouse, process, value, media, dan destination dari CMS published. Operator
+mengelola urutan, draft,
 preview, schedule, publish, retract, serta immutable rollback. Publish menolak
 cerita utama yang belum lengkap, ketiadaan story/warehouse, template marker,
 dan tujuan eksternal non-HTTPS. Loading, partial, unavailable/retry,
@@ -231,8 +243,14 @@ Tas streetwear dengan visual hitam-putih/editorial product focus.
 
 ## FAQ
 
-Shipping, payment, return, warranty, material, size, dan care belum boleh
-dipublikasikan sebelum data owner final.
+Enam kategori publik adalah cara order, pengiriman, pembayaran, retur/refund,
+produk, dan perawatan. Jawaban hanya tampil setelah diterbitkan melalui CMS;
+shipping, payment, return, warranty, material, size, dan care yang belum
+disetujui owner tetap tidak boleh dipublikasikan sebagai fakta.
+
+Privacy, terms, dan return policy memiliki lifecycle terpisah dan owner-only.
+Dokumen tanpa version, effective date, atau section lengkap tampil sebagai
+incomplete, bukan salinan resmi.
 
 ## Technical overview
 

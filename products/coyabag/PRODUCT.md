@@ -38,7 +38,8 @@ Surface live tidak sama dengan transaksi commerce sudah aktif penuh.
 
 ## Fitur storefront
 
-- Homepage, shop, product detail, gallery, testimonial, lookbook, about, FAQ.
+- Homepage, shop, product detail, gallery, testimonial, lookbook, about, FAQ,
+  privacy, terms, dan return policy.
 - Variant/color, gallery, product specification, review, related products.
 - Search, cart, wishlist, checkout UI.
 - Responsive desktop/mobile.
@@ -60,9 +61,19 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260825-2697be4` dengan source
-  `2697be48f3bfbc9d4e999c56279533be6a87b17c` melayani production;
-  rollback langsung `20260825-dead32e` dipertahankan.
+- Release aktif `20260825-3520e66` dengan source
+  `3520e66e45fda3e396be99439e0d91fdeff3e38d` melayani production;
+  rollback langsung `20260825-2697be4` dipertahankan.
+- FAQ hanya menampilkan jawaban CMS published dari enam kategori stabil.
+  Production belum memiliki jawaban approved, sehingga preparation state jujur
+  menggantikan fallback provider atau marketplace dari source.
+- Privacy, terms, dan return policy hanya tampil sebagai dokumen resmi setelah
+  owner menerbitkan version, effective date, dan section lengkap. Admin
+  menyediakan draft, preview, schedule, publish, retract, dan immutable
+  rollback; operasi lifecycle policy dibatasi owner pada HTTP dan service.
+- Loading, empty, partial, unavailable/retry, withdrawn, incomplete, ready,
+  deep link, SEO runtime, dan responsive desktop/mobile lulus acceptance.
+- Release sebelumnya `20260825-2697be4` menjalankan About Us managed content.
 - About Us hanya merender cerita, warehouse, process, value, media, dan tujuan
   yang diterbitkan melalui CMS. Source-owned claim atau media tidak lagi mengisi
   konten yang belum lengkap.

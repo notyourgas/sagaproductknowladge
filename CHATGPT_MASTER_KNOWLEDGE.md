@@ -3163,10 +3163,21 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release aktif `20260825-2697be4` menjalankan exact source
-`2697be48f3bfbc9d4e999c56279533be6a87b17c` dengan rollback
-`20260825-dead32e`. About Us hanya menampilkan story, warehouse, process, value,
-media, dan destination dari CMS published. Admin mengelola urutan, draft,
+Release aktif `20260825-3520e66` menjalankan exact source
+`3520e66e45fda3e396be99439e0d91fdeff3e38d` dengan rollback
+`20260825-2697be4`. FAQ hanya menampilkan jawaban CMS published dari enam
+kategori. Privacy, terms, dan return policy membutuhkan owner publication,
+version, effective date, dan section lengkap; lifecycle policy owner-only
+tersedia melalui draft, preview, schedule, publish, retract, serta immutable
+rollback. Production belum memiliki FAQ approved atau policy lengkap, sehingga
+customer melihat empty/incomplete state jujur tanpa fallback provider,
+marketplace, atau legal promise dari source. Desktop/mobile, deep link, loading/
+error, font, lazy route, security/dependency, dan public smoke lulus.
+
+Release sebelumnya `20260825-2697be4` menjalankan exact source
+`2697be48f3bfbc9d4e999c56279533be6a87b17c`. About Us hanya menampilkan story,
+warehouse, process, value, media, dan destination dari CMS published. Admin
+mengelola urutan, draft,
 preview, schedule, publish, retract, serta immutable rollback; publish menolak
 cerita utama atau story/warehouse yang belum lengkap dan link eksternal
 non-HTTPS. Production belum memiliki cerita About lengkap, sehingga preparation

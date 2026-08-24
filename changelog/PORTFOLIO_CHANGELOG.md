@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-25 - CoyaBag FAQ and policy publishing integrity
+
+- Exact source `3520e66e45fda3e396be99439e0d91fdeff3e38d` aktif sebagai
+  Hostinger release `20260825-3520e66`; rollback `20260825-2697be4` tersedia.
+- Customer hanya melihat FAQ CMS published serta policy yang memiliki owner
+  publication, version, effective date, dan section lengkap. Empty/incomplete
+  production state menggantikan fallback provider atau legal promise source.
+- Operator mengelola structured content dan lifecycle; policy owner-only,
+  scheduled provenance, historical-media integrity, full frontend/backend,
+  security/dependency, public desktop/mobile, workers, scheduler, dan smoke
+  lulus. Status `PRODUCTION_DEPLOYED`; readiness 30/42, activation dan business
+  readiness tetap `BLOCKED`.
+
 ## 2026-08-25 - SagaView S286 guarded deployment go/no-go
 
 - Exact candidate `8d84c60c86131892a2ae3727670b0468b64fa81b` dan rollback production S279

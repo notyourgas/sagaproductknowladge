@@ -12,14 +12,24 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T04:59:37+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T05:38:25+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `06f6f40` |
-| Informasi terakhir disinkronkan | SagaView S286 guarded deployment go/no-go pack. |
-| Status sinkronisasi | `GO_NO_GO_PACK_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S279. |
+| Baseline sebelum pembaruan | `4d770e5` |
+| Informasi terakhir disinkronkan | CoyaBag FAQ and policy publishing integrity production release. |
+| Status sinkronisasi | `PRODUCTION_DEPLOYED`; activation dan business readiness tetap `BLOCKED`. |
 | Konflik | Tidak ada konflik source atau keputusan baru. |
-| Error | Tidak ada error sinkronisasi; persetujuan production, deploy-time backup/restore, runtime verification, dan final authenticated operator smoke tetap pending. |
+| Error | Tidak ada error sinkronisasi; payment, owner 2FA, launch UAT/sign-off, mail, object storage, dan privacy-retention approval tetap blocker. |
+
+## File yang berubah pada sinkronisasi ini (CoyaBag FAQ and policy)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaView S286 guarded deployment readiness)
 

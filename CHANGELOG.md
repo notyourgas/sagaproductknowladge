@@ -1,5 +1,28 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - CoyaBag FAQ and policy production sync
+
+- Produk/area: COYABAG storefront support/legal guidance, Admin content
+  lifecycle, media rollback integrity, dan production release status.
+- Alasan: menghapus panduan fallback yang tidak owner-approved dan memastikan
+  policy yang belum lengkap tidak terlihat sebagai dokumen resmi.
+- Informasi `CONFIRMED` berasal dari exact source
+  `3520e66e45fda3e396be99439e0d91fdeff3e38d`, immutable release
+  `20260825-3520e66`, rollback `20260825-2697be4`, dan runtime verification.
+- Knowledge mencatat enam kategori FAQ, CMS-only public content, policy metadata
+  wajib, lifecycle policy owner-only, scheduled owner provenance, historical
+  media protection, honest empty/incomplete states, dan responsive lazy route.
+- Full test/build/security, dependency audit, public desktop/mobile, workers,
+  scheduler, dan smoke lulus. Readiness 30/42 dengan 12 blocker; delivery
+  `PRODUCTION_DEPLOYED`, activation dan business readiness `BLOCKED`.
+- Production berubah: ya, storefront/API/Admin melayani release baru; checkout,
+  provider, credential, dan commerce activation tidak diaktifkan.
+- Blocker dan next action: payment, owner 2FA, UAT/sign-off, mail, object
+  storage, dan privacy-retention approval tetap terbuka; sprint produk berikutnya
+  adalah audit responsive storefront global.
+- Dokumen terdampak: CoyaBag product/dossier/changelog, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-25 - SagaView S286 guarded deployment readiness sync
 
 - Informasi `CONFIRMED` berasal dari exact source
