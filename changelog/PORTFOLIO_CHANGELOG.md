@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-25 - CoyaBag Lookbook managed-content integrity
+
+- Exact source `8382f7ad3eab33045eadeb79e63c4f4119b30411` aktif sebagai
+  Hostinger release `20260825-8382f7a`; rollback `20260825-9abeb53` tersedia.
+- Customer melihat scene dari CMS published atau satu fallback jujur per produk
+  live, dengan exact product/color, keyboard/reduced motion, cart/detail, dan
+  loading/error/empty states. Operator mengatur story, media, urutan, tujuan,
+  dan lifecycle publish melalui Admin.
+- Frontend/backend, security/dependency, public desktop/mobile, backup, workers,
+  scheduler, dan smoke lulus. Status `PRODUCTION_DEPLOYED`; readiness 30/42,
+  activation dan business readiness tetap `BLOCKED`.
+
 ## 2026-08-25 - SagaView S282 Owner Changelog focus flow
 
 - Changelog Owner kini dapat membuka atau menutup satu detail, memindahkan fokus

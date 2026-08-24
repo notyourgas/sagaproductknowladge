@@ -78,15 +78,23 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260825-9abeb53` memakai source
-`9abeb533069e476c33a6c099d8975af8df99616e` dan rollback
-`20260824-9819148`. Gallery memakai CMS published sebagai authority dan hanya
-turun ke media katalog published milik produk ketika CMS kosong atau unavailable.
-Operator dapat mengatur kategori, urutan, alt text, image/video, tujuan,
-draft/schedule/publish/rollback melalui Admin. Filter, touch/pointer/keyboard,
-reduced motion, focus return, broken/loading/partial/empty state, exact product
-handoff, dan photos-only homepage lulus browser production desktop/mobile.
-Route JavaScript dan CSS Gallery dimuat lazy; commerce tetap fail-closed.
+Release production terbaru `20260825-8382f7a` memakai source
+`8382f7ad3eab33045eadeb79e63c4f4119b30411` dan rollback
+`20260825-9abeb53`. Lookbook memakai CMS published sebagai authority dan turun
+ke satu scene dari media milik setiap produk live ketika belum ada scene
+published. Operator dapat mengatur judul, story, media, urutan, dan tujuan exact
+product/color melalui Admin. Missing product tidak dipetakan ke produk lain;
+stale color dikanonisasi dengan penjelasan. Loading, media failure,
+partial-content, empty/error/retry, keyboard, reduced motion, cart/detail, serta
+browser production desktop/mobile lulus. Route JavaScript dan CSS Lookbook
+dimuat lazy; commerce tetap fail-closed.
+
+Release sebelumnya `20260825-9abeb53` memakai source
+`9abeb533069e476c33a6c099d8975af8df99616e`. Gallery memakai CMS published
+sebagai authority dan hanya turun ke media katalog published milik produk
+ketika CMS kosong atau unavailable. Category, order, media, destination,
+filter, swipe/keyboard, preview, visual failure states, exact product handoff,
+dan photos-only homepage tetap aktif.
 
 Release sebelumnya `20260824-9819148` memakai source
 `9819148e8ecce8469d7802841007f8cd111c3246`. Our Product memuat seluruh seri

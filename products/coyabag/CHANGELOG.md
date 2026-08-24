@@ -8,6 +8,21 @@ Mencatat perubahan material COYABAG dengan provenance public-safe.
 
 Surface deployment tidak otomatis berarti commerce activation.
 
+## 2026-08-25 - Lookbook managed-content production release
+
+- Informasi `CONFIRMED` berasal dari exact source
+  `8382f7ad3eab33045eadeb79e63c4f4119b30411`, immutable Hostinger release
+  `20260825-8382f7a`, rollback `20260825-9abeb53`, dan runtime verification.
+- Lookbook memakai scene CMS published sebagai authority dan fallback hanya ke
+  satu scene dari media milik setiap produk live. Missing product tidak pernah
+  dipetakan ke produk lain; destination menjaga exact product/color.
+- Operator dapat mengatur title, story, media, order, destination, serta
+  lifecycle publish dari Admin. Loading, media failure, partial, empty/error,
+  keyboard, reduced motion, exact cart/detail, dan responsive production lulus.
+- Storefront 105/105, Laravel 327 pass/1 MySQL-only skip, full release/security,
+  dependency audit, backup, workers, scheduler, dan public smoke lulus.
+  Readiness tetap 30/42 dengan 12 blocker; activation/business tetap `BLOCKED`.
+
 ## 2026-08-25 - Gallery managed-content production release
 
 - Informasi `CONFIRMED` berasal dari exact source

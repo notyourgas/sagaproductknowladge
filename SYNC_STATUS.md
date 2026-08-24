@@ -12,14 +12,24 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T02:19:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T02:38:39+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `0eaf046` |
-| Informasi terakhir disinkronkan | SagaView S282 Owner Changelog focus and navigation. |
-| Status sinkronisasi | `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S279. |
-| Konflik | Tidak ada konflik source; perubahan hanya frontend/test SagaView. |
-| Error | Tidak ada error sinkronisasi; authenticated Owner UAT dan guarded deployment belum dijalankan. |
+| Baseline sebelum pembaruan | `d603486` |
+| Informasi terakhir disinkronkan | CoyaBag Lookbook managed-content production release. |
+| Status sinkronisasi | Delivery `PRODUCTION_DEPLOYED`; activation dan business readiness `BLOCKED`. |
+| Konflik | Tidak ada konflik source atau fakta kanonik. |
+| Error | Tidak ada error sinkronisasi; 12 blocker commerce tetap terbuka dan fail-closed. |
+
+## File yang berubah pada sinkronisasi ini (CoyaBag Lookbook)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaView S282 Owner Changelog)
 

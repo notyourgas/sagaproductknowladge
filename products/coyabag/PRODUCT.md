@@ -60,9 +60,16 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260825-9abeb53` dengan source
-  `9abeb533069e476c33a6c099d8975af8df99616e` melayani production;
-  rollback langsung `20260824-9819148` dipertahankan.
+- Release aktif `20260825-8382f7a` dengan source
+  `8382f7ad3eab33045eadeb79e63c4f4119b30411` melayani production;
+  rollback langsung `20260825-9abeb53` dipertahankan.
+- Lookbook kini memakai scene CMS published sebagai sumber utama. Jika tidak
+  ada scene published, storefront hanya membuat satu scene dari media milik
+  setiap produk live; scene tidak pernah diarahkan diam-diam ke produk lain.
+- Judul, story, media, urutan, dan tujuan produk/warna Lookbook dapat dikelola
+  dari Admin. Exact variant, sold-out, missing product/media, loading,
+  partial-content, empty/error/retry, keyboard, reduced motion, serta responsive
+  desktop/mobile lulus acceptance production. Lookbook JS/CSS dimuat lazy.
 - Gallery kini memakai media CMS published sebagai sumber utama. Jika CMS kosong
   atau sementara gagal, storefront hanya memakai media katalog published milik
   produk dengan tujuan produk/warna yang tepat; placeholder source dihapus.
