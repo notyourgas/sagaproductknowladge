@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-25 - SagaView S286 guarded deployment go/no-go
+
+- Exact candidate `8d84c60c86131892a2ae3727670b0468b64fa81b` dan rollback production S279
+  diuji dari artefak immutable pada lingkungan lokal/disposable.
+- Candidate serta rollback masing-masing lulus lima route HTTP, atomic switch
+  equivalent, dependency/manifest, migration-delta, dan fatal-log gate.
+- Focused release safety 18/254, build 5.097 modul, diff check, serta audit
+  dependency nol lulus. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+  production tidak berubah dan guarded deploy tetap menunggu persetujuan
+  eksplisit Andreas.
+
 ## 2026-08-25 - SagaView S285 authenticated synthetic Owner UAT
 
 - Kandidat S284 kini melewati 46/46 skenario Owner terautentikasi pada desktop

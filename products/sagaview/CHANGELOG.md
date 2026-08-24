@@ -1,5 +1,29 @@
 # SagaView Changelog
 
+## 2026-08-25 - S286 guarded deployment go/no-go pack
+
+- Klasifikasi: `CONFIRMED / GO_NO_GO_PACK_VALIDATED / SECURITY_VALIDATED /
+  QA_VALIDATED / DEVOPS_VALIDATED / PRODUCTION_AUDIT_CONDITIONAL_GO /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; `BUSINESS_READY=false`.
+- Before: kandidat S284/S285 memiliki provenance, rehearsal database, dan UAT
+  sintetis, tetapi belum mempunyai satu simulasi deploy–rollback yang memakai
+  artefak kandidat dan rollback production yang immutable.
+- After: archive kandidat serta rollback S279 diekstrak lokal/disposable,
+  dependency dan manifest diverifikasi, atomic pointer equivalent dijalankan,
+  lalu kandidat dan rollback masing-masing lulus lima HTTP smoke dengan nol
+  fatal log.
+- Integrity: migration delta terhadap S279 nol; deploy contract menjaga backup
+  sebelum migration, migration sebelum activation, serta atomic switch dan
+  rollback. S284 tetap membuktikan restore 149 tabel dan gate 6/6 dua arah.
+- Evidence: focused release safety 18/18 dengan 254 assertion, build 5.097
+  modul, diff check, audit Composer/npm nol, serta go/no-go JSON SHA-256
+  `160fd2667d12d75b9905193bb44ea6c80ebea622def9bddb3a4bc9c1c5bb3d84`
+  pada dua salinan byte-identical.
+- Delivery: production tetap backend/Owner `20260824163507-f956846` dan Studio
+  `20260824170456-7ae79ae`. Guarded deployment hanya boleh dimulai setelah
+  persetujuan eksplisit Andreas dan tetap fail-closed pada backup/restore,
+  service, smoke, journal, rollback, atau operator UAT.
+
 ## 2026-08-25 - S285 authenticated synthetic Owner UAT
 
 - Klasifikasi: `CONFIRMED / AUTHENTICATED_SYNTHETIC_UAT /

@@ -1,6 +1,25 @@
 # SagaView Product Knowledge
 
-Updated: 25 Agustus 2026 04:35 WIB
+Updated: 25 Agustus 2026 04:59 WIB
+
+SagaView S286 menyelesaikan paket go/no-go guarded deployment pada exact
+backend/Owner `8d84c60c86131892a2ae3727670b0468b64fa81b`. Archive kandidat dan artefak
+rollback production S279 diekstrak secara lokal/disposable, kemudian diuji
+melalui switch kandidat dan rollback. Keduanya mengembalikan HTTP 200 pada
+health, login, admin login, Changelog, dan pricing dengan nol fatal log.
+
+Tidak ada migration delta terhadap production S279. Kontrak deploy tetap
+menempatkan backup sebelum migration, migration sebelum activation, serta
+memakai switch dan rollback atomik. Focused release safety 18/18 dengan 254
+assertion, build 5.097 modul, diff check, dan audit Composer/npm nol lulus.
+Evidence go/no-go SHA-256
+`160fd2667d12d75b9905193bb44ea6c80ebea622def9bddb3a4bc9c1c5bb3d84`
+tersedia dua salinan byte-identical. Status `GO_NO_GO_PACK_VALIDATED /
+SECURITY_VALIDATED / QA_VALIDATED / DEVOPS_VALIDATED / PRODUCTION_AUDIT_CONDITIONAL_GO /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S279. Deployment
+masih memerlukan persetujuan eksplisit Andreas, fresh backup/checksum/restore
+deploy-time, health/public smoke, journal, rollback runtime, dan authenticated
+operator smoke sebelum activation atau `BUSINESS_READY`.
 
 SagaView S285 menyelesaikan authenticated synthetic Owner UAT pada exact
 backend/Owner `8d84c60c86131892a2ae3727670b0468b64fa81b`. Login dan session nyata
