@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-24 - CoyaBag home discovery candidate sync
+
+- Informasi `CONFIRMED` berasal dari source
+  `5dd225c6b6cfebf34235321d0bd160a8e7f0dfd0`, artifact immutable
+  `20260824-5dd225c`, acceptance desktop/mobile, dan rollback production.
+- Knowledge mencatat perbaikan tujuan scene, fallback katalog yang aman,
+  normalisasi alias, dan grid produk adaptif tanpa mengklaim kandidat sudah
+  aktif.
+- Production tetap pada release `20260824-51dfa7c`; readiness `28/40`, 70%,
+  12 blocker, dan checkout fail-closed tidak berubah.
+- Dokumen terdampak: CoyaBag product/changelog, gaps, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-24 - SagaView S272 storage root-cause evidence sync
 
 - Audit production read-only membuktikan 215 asset Gallery Frame unik tidak

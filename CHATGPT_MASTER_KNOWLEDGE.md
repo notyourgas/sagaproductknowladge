@@ -2966,16 +2966,24 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release terbaru `20260820-51a29ab` menjalankan exact source
-`51a29abe211af5e663ba49b9844ef1bbc3fe3c66` dengan rollback
-`20260820-fd1787a`. Release ini membawa destination/quote integrity,
+Release aktif `20260824-51dfa7c` menjalankan exact source
+`51dfa7c65d39554677c8a8b2e8712ac87faa2abc`. Fondasi yang tersedia membawa destination/quote integrity,
 payment-to-fulfillment, Delivery Order/AWB/pickup/label/tracking foundation,
 shipping finance ledger, cancellation/incident/refund workflow, operator
 command center, dan customer timeline. Empat migration additive, fresh backup,
 dua worker, operational monitor, dan 39 public checks desktop/mobile lulus.
 Provider Delivery/Payment dan COD tetap eksplisit default-off. Readiness
-production `20/40` atau 50%, `ready=false`; activation dan business readiness
+production `28/40` atau 70%, `ready=false`; activation dan business readiness
 tetap `BLOCKED`.
+
+Kandidat home discovery source
+`5dd225c6b6cfebf34235321d0bd160a8e7f0dfd0` memperbaiki tujuan scene
+berdasarkan katalog live, alias `Campus Fit`, fallback aman ke katalog, dan
+grid etalase adaptif. Artifact `20260824-5dd225c` lulus unit, browser
+desktop/mobile, build, backend, dan audit dependency, tetapi tidak aktif.
+Production dikembalikan ke `20260824-51dfa7c` ketika operational monitor belum
+hijau setelah kesalahan perintah operator. Status `LOCAL_VALIDATED /
+COMMITTED_LOCAL / IMPLEMENTED_NOT_DEPLOYED`; commerce tetap fail-closed.
 
 Release candidate source `264c6ac2ebec33c6471a4c49572ddcdc82b51cf2`
 memperbaiki

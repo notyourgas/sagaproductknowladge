@@ -60,18 +60,27 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release `20260820-51a29ab` dengan source
-  `51a29abe211af5e663ba49b9844ef1bbc3fe3c66` aktif di Hostinger; rollback
-  langsung `20260820-fd1787a` dipertahankan.
+- Release aktif `20260824-51dfa7c` dengan source
+  `51dfa7c65d39554677c8a8b2e8712ac87faa2abc` tetap melayani production.
 - Release ini menambahkan destination/quote integrity, payment-to-fulfillment,
   Delivery Order/AWB/pickup/label foundation, tracking webhook inbox, shipping
   finance ledger, cancellation/incident/refund workflow, command center, dan
   customer timeline.
 - Empat migration additive, fresh backup/checksum, dua worker, operational
   monitor, serta 39 public smoke check desktop/mobile lulus.
-- Readiness production resmi `20/40` atau 50%, `ready=false`, dengan 20
-  blocker. COD, Delivery API, Komerce Payment, dan provider webhook eksplisit
+- Readiness production resmi `28/40` atau 70%, `ready=false`, dengan 12
+  blocker. COD, Delivery API, payment production, dan provider webhook eksplisit
   tidak diaktifkan.
+- Kandidat source `5dd225c6b6cfebf34235321d0bd160a8e7f0dfd0` memperbaiki
+  integritas discovery Beranda: kartu scene hanya membuka produk live yang
+  sesuai, fallback aman kembali ke katalog, alias `Campus Fit` mengikuti
+  taksonomi `Campus`, dan grid etalase menyesuaikan jumlah produk live.
+- Unit, browser desktop/mobile, build, security/dependency, Laravel, serta
+  release artifact kandidat `20260824-5dd225c` lulus. Kandidat tidak aktif:
+  cutover dibatalkan dan production dikembalikan ke release sebelumnya karena
+  operational monitor belum hijau setelah satu kesalahan perintah operator.
+  Status perubahan ini `LOCAL_VALIDATED / COMMITTED_LOCAL /
+  IMPLEMENTED_NOT_DEPLOYED`.
 - Scheduler terminal expiry sudah fail-closed dan concurrency-tested.
 - Release candidate source `264c6ac2ebec33c6471a4c49572ddcdc82b51cf2`
   merekonsiliasi

@@ -8,6 +8,24 @@ Mencatat perubahan material COYABAG dengan provenance public-safe.
 
 Surface deployment tidak otomatis berarti commerce activation.
 
+## 2026-08-24 - Home discovery integrity candidate
+
+- Source `5dd225c6b6cfebf34235321d0bd160a8e7f0dfd0` merekonsiliasi
+  `Shop by Scene` dengan katalog live, menormalisasi alias `Campus Fit`,
+  mencegah fallback ke produk yang salah, dan menyeimbangkan grid berdasarkan
+  jumlah produk yang tersedia.
+- Unit storefront 32/32, browser desktop/mobile, release-candidate verifier,
+  Laravel 302 pass/1 skip dengan 2.249 assertion, build admin, serta audit
+  dependency lulus.
+- Artifact immutable `20260824-5dd225c` sudah diverifikasi, tetapi tidak aktif.
+  Setelah cutover percobaan, production dikembalikan ke release
+  `20260824-51dfa7c` karena operational monitor belum hijau setelah kesalahan
+  perintah operator. Tidak ada katalog, order, payment, atau shipping yang
+  diubah.
+- Status `LOCAL_VALIDATED / COMMITTED_LOCAL / IMPLEMENTED_NOT_DEPLOYED`.
+  Readiness production tetap `28/40`, 70%, `ready=false`; 12 blocker dan
+  checkout fail-closed tetap berlaku.
+
 ## 2026-08-24 - SagaDev payment monitoring production backport
 
 - Informasi `CONFIRMED` berasal dari exact Saga Platform source

@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-24 - CoyaBag home discovery integrity candidate
+
+- Beranda kandidat kini memilih tujuan scene dari katalog live, menormalisasi
+  alias `Campus Fit`, kembali aman ke katalog ketika tidak ada produk cocok,
+  dan menyesuaikan grid etalase terhadap jumlah produk tersedia.
+- Source `5dd225c6b6cfebf34235321d0bd160a8e7f0dfd0` serta artifact
+  `20260824-5dd225c` lulus unit, browser desktop/mobile, build, backend, dan
+  audit dependency.
+- Kandidat tidak aktif karena operational monitor belum hijau; production
+  sudah dikembalikan ke `20260824-51dfa7c`. Checkout tetap fail-closed pada
+  readiness `28/40` dengan 12 blocker.
+- Status `LOCAL_VALIDATED / COMMITTED_LOCAL / IMPLEMENTED_NOT_DEPLOYED`.
+
 ## 2026-08-24 - SagaView S272 bukti akar Gallery Frame
 
 - Release aktif tidak dapat membaca 215 asset frame unik yang dirujuk database
