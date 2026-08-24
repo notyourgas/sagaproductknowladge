@@ -1,6 +1,21 @@
 # SagaView Product Knowledge
 
-Updated: 25 Agustus 2026 03:08 WIB
+Updated: 25 Agustus 2026 04:22 WIB
+
+SagaView S284 menutup blocker dummy-tenant/config-cache pada database
+rehearsal. Exact backend/Owner
+`8d84c60c86131892a2ae3727670b0468b64fa81b` sudah pushed dan berstatus
+`CONFIRMED / SECURITY_VALIDATED / QA_VALIDATED / DATA_INTEGRITY_VALIDATED /
+REHEARSAL_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+
+Rehearsal kini dapat membuat tenant dan subscription SagaView sintetis hanya
+di database disposable, menghapus config/cache kandidat dan rollback, serta
+meredaksi identifier dari evidence. Restore backup terenkripsi menghasilkan
+149 tabel; candidate dan rollback gate sama-sama 6/6, plaintext/temp dihapus,
+dan production database tidak dimutasi. Focused/release contract 18/194,
+build 5.097 modul, parser/diff/Pint, audit dependency nol, dan artifact exact
+commit dua lokasi lulus. Production tetap S279; authenticated UAT dan
+otorisasi guarded deployment masih terpisah.
 
 SagaView S283 membekukan kandidat kumulatif S282 sebagai immutable release
 provenance `20260824200259-cfa60f9`. Exact backend/Owner source

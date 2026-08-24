@@ -1,5 +1,23 @@
 # SagaView Changelog
 
+## 2026-08-25 - S284 disposable synthetic-pilot rehearsal
+
+- Klasifikasi: `CONFIRMED / PUSHED / SECURITY_VALIDATED / QA_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / REHEARSAL_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; `BUSINESS_READY=false`.
+- Before: rehearsal database memerlukan tenant pilot dari backup sehingga gate
+  dapat bergantung pada identifier dan cache konfigurasi production.
+- After: harness membuat tenant/subscription sintetis hanya di database
+  disposable, membersihkan config/cache kandidat dan rollback, lalu menulis
+  evidence tanpa identifier tenant.
+- Provenance: exact backend/Owner
+  `8d84c60c86131892a2ae3727670b0468b64fa81b` sudah pushed; immutable release
+  pack `20260824211838-8d84c60` tersedia dua salinan byte-identical.
+- Evidence: focused/release contract 18/18 dan 194 assertion, build 5.097
+  modul, parser/diff/Pint, audit Composer/npm nol, restore 149 tabel,
+  synthetic pilot 2/2, candidate gate 6/6, rollback gate 6/6, serta cleanup
+  plaintext/temp lulus. Production tidak berubah dan pembayaran tetap off-app.
+
 ## 2026-08-25 - S283 immutable release provenance for S282
 
 - Klasifikasi: `CONFIRMED / PUSHED / SECURITY_VALIDATED / QA_VALIDATED /

@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - SagaView S284 disposable rehearsal sync
+
+- Informasi `CONFIRMED` berasal dari exact source
+  `8d84c60c86131892a2ae3727670b0468b64fa81b`, immutable release pack
+  `20260824211838-8d84c60`, dan evidence restore disposable.
+- Knowledge mencatat tenant/subscription sintetis yang hanya hidup di database
+  disposable, cache hygiene candidate/rollback, redaksi identifier, restore
+  149 tabel, serta gate 6/6 untuk kedua arah.
+- Focused/release contract 18/194, build 5.097 modul, parser/diff/Pint, audit
+  dependency nol, dan artifact dua lokasi lulus. Status `LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap S279.
+- Dokumen terdampak: SagaView product/changelog/coverage, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-25 - CoyaBag About Us production sync
 
 - Informasi `CONFIRMED` berasal dari exact source

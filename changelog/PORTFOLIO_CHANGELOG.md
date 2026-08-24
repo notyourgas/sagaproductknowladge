@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-25 - SagaView S284 disposable release rehearsal
+
+- Rehearsal SagaView sekarang membuat pilot sintetis hanya di database lokal
+  disposable dan tidak memerlukan identifier tenant production.
+- Exact source `8d84c60c86131892a2ae3727670b0468b64fa81b` sudah pushed; restore 149 tabel,
+  cache hygiene, candidate/rollback gate 6/6, cleanup plaintext, build, test,
+  dan audit dependency lulus.
+- Immutable archive dan bundle tersedia dua lokasi. Status `LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap S279.
+
 ## 2026-08-25 - CoyaBag About Us managed-content integrity
 
 - Exact source `2697be48f3bfbc9d4e999c56279533be6a87b17c` aktif sebagai

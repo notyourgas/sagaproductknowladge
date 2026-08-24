@@ -1,6 +1,21 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 25 Agustus 2026 03:08 WIB
+Evidence cut-off: 25 Agustus 2026 04:22 WIB
+
+S284 disposable synthetic-pilot rehearsal: exact backend/Owner
+`8d84c60c86131892a2ae3727670b0468b64fa81b` berstatus `CONFIRMED / PUSHED /
+SECURITY_VALIDATED / QA_VALIDATED / DATA_INTEGRITY_VALIDATED /
+REHEARSAL_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+Harness tidak lagi perlu memakai identitas tenant production untuk gate
+disposable: tenant dan subscription SagaView sintetis dibuat hanya setelah
+restore lokal, config/cache kandidat serta rollback dibersihkan, dan evidence
+tidak menyimpan identifier. Backup terenkripsi terverifikasi dipulihkan menjadi
+149 tabel; candidate gate dan rollback gate sama-sama 6/6, plaintext/temp nol,
+dan production database tidak berubah. Focused/release contract 18/18 dengan
+194 assertion, build 5.097 modul, parser/diff/Pint, audit Composer/npm nol,
+serta archive+bundle exact commit dua lokasi lulus. Production tetap S279;
+gate berikutnya adalah authenticated Owner/operator UAT dan otorisasi guarded
+deployment.
 
 S283 immutable release provenance: kandidat kumulatif S282 exact backend/Owner
 `cfa60f9fdae95746377e033a6fc64cd38e40ee36` dibekukan sebagai release
