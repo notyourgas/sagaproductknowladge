@@ -1,6 +1,23 @@
 # SagaView Product Knowledge
 
-Updated: 24 Agustus 2026 02:07 WIB
+Updated: 24 Agustus 2026 08:13 WIB
+
+SagaView S271 berstatus `CONFIRMED / PUSHED / UIUX_VALIDATED /
+SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`. Ketika tutorial Customer Flow ditutup dengan Escape
+atau aksi tutup, fokus keyboard kini kembali ke tombol `Mulai memilih frame`.
+Perbaikan ini menjaga kelanjutan navigasi keyboard tanpa mengubah isi tutorial,
+workflow customer, API, database, metadata cloud, atau batas local-first.
+
+Exact Studio `a5c2d6ae73c7d39079b71b363f9dfad52408adf5` sudah pushed. Focused
+red-green 2/2, check 53 file/236 test, full browser 149 pass/3 controlled skip,
+build, format/lint/typecheck, bundle 299,9 KiB/450 KiB, serta audit npm nol
+lulus. Kandidat belum dideploy; production tetap S270 exact
+`ab2af26a1fc55f953c90605bc066eaa63937f966` / release
+`20260823185455-ab2af26`. Backend tetap exact
+`c828bd9d3b38e4d35fca85bb66182b139ecf5a2e` / `20260823091225-c828bd9`.
+Foto/path/output tetap lokal, pembayaran tetap off-app, dan
+`BUSINESS_READY=false`.
 
 SagaView S270 berstatus `CONFIRMED / PUSHED / UIUX_VALIDATED /
 SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /

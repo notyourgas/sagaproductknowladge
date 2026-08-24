@@ -1,5 +1,25 @@
 # SagaView Changelog
 
+## 2026-08-24 - S271 pemulihan fokus tutorial Customer Flow
+
+- Klasifikasi: `CONFIRMED / PUSHED / UIUX_VALIDATED / SECURITY_VALIDATED /
+  QA_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- Before: setelah tutorial ditutup dengan Escape, fokus keyboard hilang dari
+  tombol pemicu sehingga pengguna keyboard harus mencari ulang posisi lanjut.
+- After: tombol `Mulai memilih frame` menyimpan referensi fokus dan menerima
+  fokus kembali sesudah dialog ditutup; aksi lanjut terakhir tetap membawa
+  customer langsung ke pemilihan frame.
+- Privacy/workflow: perubahan hanya pada UI dan regression test. Tidak ada API,
+  database, migration, upload foto/path/output, provider pembayaran, atau
+  perubahan bahasa estimasi.
+- Provenance: Studio exact
+  `a5c2d6ae73c7d39079b71b363f9dfad52408adf5` sudah pushed.
+- Evidence: focused red-green 2/2; check 53 file/236 test; full E2E 149 pass/3
+  controlled skip; build, format/lint/typecheck, bundle 299,9 KiB/450 KiB, dan
+  audit npm runtime/seluruh dependency nol lulus.
+- Delivery: production tidak berubah dan tetap S270 exact `ab2af26a...` /
+  `20260823185455-ab2af26`; `BUSINESS_READY=false`.
+
 ## 2026-08-24 - S270 tutorial Customer Flow production activation
 
 - Klasifikasi: `CONFIRMED / PUSHED / UIUX_VALIDATED / SECURITY_VALIDATED /

@@ -1,6 +1,20 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 24 Agustus 2026 02:07 WIB
+Evidence cut-off: 24 Agustus 2026 08:13 WIB
+
+S271 pemulihan fokus tutorial Customer Flow: Studio exact
+`a5c2d6ae73c7d39079b71b363f9dfad52408adf5` berstatus `PUSHED /
+UIUX_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`. Sebelum perbaikan, menutup dialog tutorial dengan
+Escape tidak mengembalikan fokus keyboard ke tombol `Mulai memilih frame`.
+Sekarang tombol pemicu disimpan secara eksplisit dan menerima fokus kembali
+setelah dialog ditutup, sehingga operator/customer dapat meneruskan alur tanpa
+mencari posisi keyboard. Focused red-green 2/2, check 53 file/236 test, full E2E
+149 pass/3 controlled skip, build/budget 299,9 KiB/450 KiB, serta audit npm
+runtime dan seluruh dependency nol lulus. Perubahan hanya menyentuh UI dan test;
+tidak ada API, database, upload, atau perubahan kontrak pembayaran. Production
+tetap Studio exact `ab2af26a...` / `20260823185455-ab2af26` dan backend exact
+`c828bd9d...` / `20260823091225-c828bd9`; `BUSINESS_READY=false`.
 
 S270 tutorial Customer Flow: Studio exact
 `ab2af26a1fc55f953c90605bc066eaa63937f966` berstatus `PUSHED /

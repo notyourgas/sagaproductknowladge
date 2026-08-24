@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-24 - SagaView S271 pemulihan fokus tutorial
+
+- Menutup tutorial Customer Flow kini mengembalikan fokus keyboard ke tombol
+  `Mulai memilih frame`, sehingga alur dapat dilanjutkan tanpa kehilangan posisi.
+- Exact Studio `a5c2d6ae...` sudah pushed; focused 2/2, check 236 test, full
+  browser 149 pass/3 controlled skip, build/budget, dan audit dependency nol
+  lulus.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S270.
+  Tidak ada perubahan backend, data, no-upload, atau pembayaran off-app.
+
 ## 2026-08-24 - SagaBook S286 fondasi operasional production
 
 - Exact source `9e4b44e5f6698b7284938fa1e4c948dd45c9e5d5` aktif sebagai release
