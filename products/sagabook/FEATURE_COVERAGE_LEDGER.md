@@ -1,6 +1,23 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 24 Agustus 2026 04:58 WIB
+Evidence cut-off: 24 Agustus 2026 07:38 WIB
+
+Fondasi operasional gabungan S286 exact source
+`9e4b44e5f6698b7284938fa1e4c948dd45c9e5d5` telah `CONFIRMED / PUSHED /
+UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+DATA_INTEGRITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
+Coverage mencakup Manual Booking direct-first beserta proteksi draft,
+default slot/timezone dan channel; promo visual opsional-voucher; edit Booking
+Detail dan reschedule berbiaya/gratis; branch-ID scope; filter/export channel;
+onsite payment; dashboard recovery; closing dan laporan. Lima migration
+operasional lulus rehearsal gabungan dan production memiliki 0 pending.
+Full PHP 1.123/1.123 (12.851 assertion), focused 18/18 (202), Node 9/9,
+browser desktop/mobile, build, dependency audit nol, encrypted backup/restore,
+immutable artifact, atomic activation, verifier 17/17, public/security smoke,
+dan Owner UAT route read-only 12/12 lulus. Release
+`20260824001354-9e4b44e` aktif dengan rollback
+`20260823203109-0af456c`. Provider canary nyata tidak dijalankan; Operator UAT
+dan dua studio pilot tetap exit gate sehingga `BUSINESS_READY=false`.
 
 Proteksi draft dan default jadwal Manual Booking S284 exact source
 `f9b1af59726e524e9eee6fe895d19ff76fa94189` telah `CONFIRMED / PUSHED /

@@ -12,14 +12,26 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-24T04:58:37+07:00 |
-| Branch aktif | `codex/s283-sagabook-knowledge-sync` dari worktree terisolasi exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-24T07:38:39+07:00 |
+| Branch aktif | `codex/knowledge-s286-production` dari worktree terisolasi exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `46e6e1cfb0e0d65094007e4b7450d640e96d0b8e` |
-| Informasi terakhir disinkronkan | SagaBook S284 mencegah reset draft Manual Booking dan memakai default jadwal berbasis timezone/waktu klik pada exact source `f9b1af59...`. |
-| Status sinkronisasi | `CONFIRMED / PUSHED / UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S282 dan `BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `3faf59342ac4f9020f52a474c7e16ddcc7b3d6e6` |
+| Informasi terakhir disinkronkan | SagaBook S286 mengaktifkan fondasi operasional kumulatif pada exact source `9e4b44e5...` / release `20260824001354-9e4b44e`. |
+| Status sinkronisasi | `CONFIRMED / PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; Owner UAT route lulus, Operator/pilot residual, dan `BUSINESS_READY=false`. |
 | Konflik | Checkout knowledge utama lokal divergen dari remote dan tidak disentuh; sinkronisasi memakai worktree terisolasi exact `origin/main`. |
-| Error | Tidak ada error implementasi yang tersisa. Satu assertion mobile lama yang mencari tabel desktop dikoreksi untuk surface responsif dan lulus ulang 7/7; gate release production belum dijalankan karena tidak ada instruksi deployment. |
+| Error | Tidak ada error release tersisa. Blocker migration rehearsal lama diperbaiki dengan profile operasional gabungan; canary provider customer nyata sengaja tidak dijalankan. |
+
+## File yang berubah pada sinkronisasi ini (SagaBook S286 production)
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
+- `DECISIONS.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaBook S284 Manual Booking draft/schedule)
 

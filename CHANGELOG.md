@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-24 - SagaBook S286 production activation sync
+
+- Informasi `CONFIRMED` berasal dari keputusan deployment Andreas, exact source
+  `9e4b44e5f6698b7284938fa1e4c948dd45c9e5d5`, dan runtime production yang
+  diverifikasi setelah atomic activation.
+- Knowledge menyatukan status production untuk Manual Booking, promo opsional
+  voucher, safe edit/reschedule, channel reporting, scope cabang, onsite
+  payment, dashboard recovery, closing, dan reports.
+- Release `20260824001354-9e4b44e` aktif dengan rollback
+  `20260823203109-0af456c`; full/focused/browser/build/security/data-integrity,
+  lima migration, backup/restore, verifier 17/17, smoke, dan Owner UAT route
+  12/12 lulus. Operator UAT dan pilot masih residual; `BUSINESS_READY=false`.
+- Dokumen terdampak: SagaBook product/dossier/changelog/coverage, portfolio,
+  master, decisions, root changelog, dan sync status.
+
 ## 2026-08-24 - SagaBook S284 manual booking draft/schedule sync
 
 - Informasi `CONFIRMED` berasal dari permintaan Andreas dan exact source

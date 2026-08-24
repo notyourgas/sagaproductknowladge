@@ -1,5 +1,33 @@
 # SagaBook Changelog
 
+## 2026-08-24 - Fondasi operasional gabungan S286 production
+
+- Klasifikasi: `CONFIRMED`; Andreas mengotorisasi perbaikan blocker dan
+  deployment seluruh kandidat. Exact source
+  `9e4b44e5f6698b7284938fa1e4c948dd45c9e5d5` telah pushed ke source `main`.
+- Before: Direct Manual Booking dan proteksi draft/jadwal masih kandidat;
+  promo visual bergantung pada kontrak voucher; edit/reschedule dan pelaporan
+  channel belum mempunyai satu release production kumulatif. After: input
+  manual/OTA/walk-in, promo tanpa voucher, edit field aman, reschedule
+  gratis/berbiaya, filter/export channel, scope cabang ID-kanonik, pemisahan
+  pembayaran onsite, dashboard recovery, closing, dan laporan aktif bersama.
+- Lima migration operasional diterapkan sebagai satu kontrak: jumlah orang,
+  jenis promo, capability edit/reschedule, receipt mutation admin, dan channel
+  booking. Rehearsal gabungan, index, nullable promo code, legacy key hashing,
+  tenant/cabang, idempotency, audit, dan 0 pending migration terverifikasi.
+- Full PHP 1.123/1.123 (12.851 assertion), focused 18/18 (202), Node 9/9,
+  browser desktop/mobile, production build, dependency audit nol,
+  encrypted backup/checksum/disposable restore, immutable source package,
+  atomic switch, verifier independen 17/17, service/journal, dan public smoke
+  lulus. Authenticated Owner read-only UAT lulus 12/12 route tanpa HTTP,
+  console, page, overflow, recovery fallback, atau mutation bisnis; state
+  subscription sementara telah direstore.
+- Release `20260824001354-9e4b44e` aktif dengan rollback
+  `20260823203109-0af456c`. Tidak ada canary payment/QRIS/WhatsApp customer
+  nyata. Status `PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+  Operator UAT dan dua studio pilot belum selesai sehingga
+  `BUSINESS_READY=false`.
+
 ## 2026-08-24 - Proteksi draft dan default jadwal Manual Booking S284
 
 - Klasifikasi: `CONFIRMED`; exact source

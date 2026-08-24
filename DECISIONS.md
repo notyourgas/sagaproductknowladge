@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-097 - Fondasi operasional SagaBook dipromosikan sebagai satu release kumulatif
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-24 |
+| Topik | Aktivasi production Manual Booking, promo, edit/reschedule, dan laporan |
+| Keputusan | Seluruh kandidat operasional yang sudah lolos gate harus digabung pada exact source terbaru, blocker release diperbaiki, lalu dipromosikan melalui backup/restore dan atomic activation. Canary payment/QRIS/WhatsApp customer nyata tidak termasuk otorisasi ini. |
+| Alasan | Owner/operator perlu segera mencoba alur operasional yang sinkron dari UI, API, backend, database, dan response tanpa membawa source parsial atau migration terpisah. |
+| Alternatif yang dipertimbangkan | Deploy per fitur; menunda sampai operator/pilot tersedia; menjalankan canary provider customer bersamaan. |
+| Dampak | Manual Booking direct-first/draft/jadwal/channel, promo visual opsional-voucher, safe edit/reschedule, channel reporting, branch scope, onsite payment, dashboard recovery, closing, dan reports aktif dalam satu release. Lima migration diterapkan dan rollback immutable tersedia. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; source `9e4b44e5...`, release `20260824001354-9e4b44e`, rollback `20260823203109-0af456c`; Operator UAT/pilot residual dan `BUSINESS_READY=false` |
+| Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [SagaBook Changelog](products/sagabook/CHANGELOG.md), [SagaBook Ledger](products/sagabook/FEATURE_COVERAGE_LEDGER.md) |
+
 ## DEC-096 - Manual Booking SagaBook memakai input langsung sebagai jalur utama
 
 | Field | Isi |
@@ -32,7 +46,7 @@ keputusan pengganti.
 | Alternatif yang dipertimbangkan | Mempertahankan parser sebagai satu-satunya jalur; menambah form terpisah di luar dialog; menyimpan chat mentah sebagai sumber booking. |
 | Dampak | Dialog menjadi direct-first; parser mengisi field terstruktur; chat mentah tidak dipersist atau dikirim ke API; polling/version refresh ditahan selama dialog terbuka; jadwal awal mengikuti timezone dan waktu klik; validasi, masking PII, tenant/cabang, permission, audit, idempotency, dan read-after-write tetap berlaku. |
 | Pemberi keputusan | Andreas / founder |
-| Status | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; direct-entry source `d53c1a55...`, draft/schedule source `f9b1af59...`; production tidak berubah |
+| Status | `CONFIRMED / PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; direct-entry dan draft/schedule tercakup pada cumulative source `9e4b44e5...` / release `20260824001354-9e4b44e`; Operator UAT/pilot residual |
 | Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [SagaBook Changelog](products/sagabook/CHANGELOG.md), [SagaBook Ledger](products/sagabook/FEATURE_COVERAGE_LEDGER.md) |
 
 ## DEC-095 - Tutorial customer membagi lima langkah menjadi tiga halaman

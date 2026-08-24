@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 24 Agustus 2026 04:58 WIB
-Evidence status: S284 draft dan default jadwal Manual Booking tervalidasi dan dipush, belum dideploy; S280+S282 tetap aktif di production
+Updated: 24 Agustus 2026 07:38 WIB
+Evidence status: fondasi operasional S286 aktif di production pada exact release terverifikasi; authenticated Owner route UAT lulus, Operator/pilot tetap residual
 
 ## Tujuan dokumen
 
@@ -15,6 +15,29 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- Fondasi operasional gabungan S286 pada exact source
+  `9e4b44e5f6698b7284938fa1e4c948dd45c9e5d5` berstatus `CONFIRMED / PUSHED /
+  UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
+  Manual Booking kini direct-first untuk data customer/resource/pembayaran,
+  menjaga draft saat dialog aktif, memakai jadwal terdekat dari waktu yang
+  diklik, serta mencatat channel manual/OTA/walk-in. Promo visual dapat
+  dipublikasikan tanpa kode voucher; jalur voucher tetap tersedia. Booking
+  Detail mendukung edit field aman dan reschedule dengan permission,
+  availability/conflict, peringatan biaya gratis/berbayar, idempotency, audit,
+  serta read-after-write. Laporan dapat memfilter/export channel booking,
+  sedangkan scope cabang memakai ID kanonik. Lima migration operasional telah
+  diterapkan sebagai satu kontrak dan production memiliki 0 migration pending.
+  Full PHP 1.123/1.123 (12.851 assertion), focused 18/18 (202), Node 9/9,
+  browser desktop/mobile, build, audit npm/Composer nol, database rehearsal,
+  backup terenkripsi/checksum/restore, atomic switch, verifier independen
+  17/17, service/journal, public/security smoke, serta Owner UAT read-only
+  12/12 route lulus. Release `20260824001354-9e4b44e` aktif dengan rollback
+  `20260823203109-0af456c`. Subscription Owner UAT yang diaktifkan sementara
+  telah dikembalikan ke state awal. Tidak ada canary payment/QRIS/WhatsApp
+  customer nyata. Operator UAT dan dua studio pilot belum selesai, sehingga
+  `BUSINESS_READY=false`.
 
 - Proteksi draft dan default jadwal Manual Booking S284 pada exact source
   `f9b1af59726e524e9eee6fe895d19ff76fa94189` berstatus `CONFIRMED / PUSHED /

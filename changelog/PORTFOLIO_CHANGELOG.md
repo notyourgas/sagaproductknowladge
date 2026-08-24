@@ -1,5 +1,20 @@
 # Portfolio Changelog
 
+## 2026-08-24 - SagaBook S286 fondasi operasional production
+
+- Exact source `9e4b44e5f6698b7284938fa1e4c948dd45c9e5d5` aktif sebagai release
+  `20260824001354-9e4b44e`; rollback langsung
+  `20260823203109-0af456c` tersedia.
+- Manual Booking direct-first/draft/jadwal/channel, promo visual tanpa voucher,
+  edit/reschedule aman, laporan channel, scope cabang, onsite payment,
+  dashboard recovery, closing, dan reports kini berada dalam satu release.
+- Full/focused/backend/browser/build/security/data-integrity gate, lima
+  migration, backup/restore, immutable artifact, atomic switch, verifier 17/17,
+  smoke, serta Owner UAT read-only 12/12 route lulus. Tidak ada canary provider
+  customer nyata.
+- Status `PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+  `BUSINESS_READY=false` sampai Operator UAT dan dua studio pilot selesai.
+
 ## 2026-08-24 - SagaBook S284 Manual Booking draft dan jadwal
 
 - Input Manual Booking tidak lagi kembali ke default akibat refresh pasif

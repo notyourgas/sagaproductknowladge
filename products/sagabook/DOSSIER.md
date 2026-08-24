@@ -7,6 +7,24 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Fondasi operasional S286 exact source
+  `9e4b44e5f6698b7284938fa1e4c948dd45c9e5d5`: `CONFIRMED / PUSHED /
+  UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
+  Satu release menggabungkan Direct Manual Booking dan proteksi draft/jadwal,
+  promo visual tanpa kewajiban voucher, edit Booking Detail yang dibatasi field
+  aman, reschedule gratis/berbiaya, channel booking pada laporan/export, scope
+  cabang ID-kanonik, pemisahan pembayaran onsite, serta hardening dashboard,
+  laporan, dan closing. Backend mempertahankan permission, tenant/cabang,
+  availability, concurrency, idempotency, audit, dan read-after-write; lima
+  migration operasional sudah diterapkan dengan 0 pending. Full/focused PHP,
+  Node, browser desktop/mobile, build, dependency audit, migration rehearsal,
+  encrypted backup/restore, atomic activation, verifier 17/17, public smoke,
+  dan Owner UAT read-only 12/12 route lulus. Release aktif
+  `20260824001354-9e4b44e`; rollback `20260823203109-0af456c`. Operator UAT,
+  provider canary nyata, dan dua studio pilot belum dilakukan;
+  `BUSINESS_READY=false`.
+
 - Proteksi draft dan default jadwal Manual Booking S284 exact source
   `f9b1af59726e524e9eee6fe895d19ff76fa94189`: `CONFIRMED / PUSHED /
   UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
