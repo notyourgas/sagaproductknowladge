@@ -1,6 +1,29 @@
 # SagaView Product Knowledge
 
-Updated: 25 Agustus 2026 04:59 WIB
+Updated: 25 Agustus 2026 05:52 WIB
+
+SagaView S287 mengganti jalur preflight/deploy lama yang masih bergantung pada
+kontrak pembayaran dengan tooling release estimate-only. Exact tooling
+`c62776c4a27c8fb2cff52ebba13e679f42c86f6f` sudah pushed; 146 test dengan
+1.427 assertion, build 5.097 modul, parser, serta audit Composer/npm nol lulus.
+Preflight production read-only memverifikasi backend/Owner aktif
+`20260824163507-f956846`, Studio `20260824170456-7ae79ae`, service, dan public
+smoke, lalu berhenti `HOLD` karena target rollback pasif
+`20260822112703-298336d` tidak tersedia. Production tidak berubah.
+
+SagaView S288 menyiapkan recovery atomik khusus untuk memulihkan target rollback
+pasif tersebut tanpa mengganti `current`, menjalankan migration, atau mengubah
+database, Studio, platform, dan SagaBook. Exact tooling
+`1a18fec0b0c73cb3874f83fedc5feda7370b5c46` sudah pushed. Artifact rollback
+exact commit `298336da09b735638c4ffea9b7e8830b1283452e` tervalidasi; 150 test dengan
+1.490 assertion, build 5.097 modul, audit dependency nol, rehearsal disposable
+5/5, dan preflight production read-only lulus. Status kumulatif `CONFIRMED /
+PUSHED / SECURITY_VALIDATED / QA_VALIDATED / DEVOPS_VALIDATED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+RELEASE_BLOCKED_ROLLBACK_TARGET / HOLD_FOR_EXPLICIT_APPROVAL`;
+`BUSINESS_READY=false`. Andreas harus memberi persetujuan eksplisit terpisah
+untuk recovery S288. Setelah recovery diverifikasi, S287 harus dijalankan ulang
+dan deployment kandidat tetap memerlukan persetujuan kedua.
 
 SagaView S286 menyelesaikan paket go/no-go guarded deployment pada exact
 backend/Owner `8d84c60c86131892a2ae3727670b0468b64fa81b`. Archive kandidat dan artefak

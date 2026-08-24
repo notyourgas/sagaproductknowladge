@@ -1,8 +1,24 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 25 Agustus 2026 04:59 WIB
+Evidence cut-off: 25 Agustus 2026 05:52 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
+
+SagaView S287/S288 menutup blocker tooling menuju deploy aman tanpa mengubah
+production. S287 exact `c62776c4a27c8fb2cff52ebba13e679f42c86f6f` mengganti
+jalur release lama yang masih payment-bound dengan gate estimate-only. S288
+exact `1a18fec0b0c73cb3874f83fedc5feda7370b5c46` memverifikasi artifact exact
+rollback `20260822112703-298336d` dan menyediakan recovery atomik khusus release
+pasif: `current` tidak diganti, migration tidak dijalankan, database hanya
+dibaca melalui sentinel, dan kegagalan dibersihkan otomatis. Gate lulus 150
+test/1.490 assertion, build 5.097 modul, audit dependency nol, rehearsal
+disposable 5/5, dan preflight production read-only. Production tetap
+backend/Owner `20260824163507-f956846` serta Studio
+`20260824170456-7ae79ae`; target rollback pasif masih hilang. Status
+`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+RELEASE_BLOCKED_ROLLBACK_TARGET / HOLD_FOR_EXPLICIT_APPROVAL`,
+`BUSINESS_READY=false`. Recovery S288 dan deployment kandidat memerlukan dua
+persetujuan Andreas yang terpisah.
 
 SagaView S286 exact backend/Owner
 `8d84c60c86131892a2ae3727670b0468b64fa81b` telah memiliki guarded deployment

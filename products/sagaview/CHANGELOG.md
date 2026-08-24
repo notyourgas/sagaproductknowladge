@@ -1,5 +1,47 @@
 # SagaView Changelog
 
+## 2026-08-25 - S288 inactive rollback recovery readiness
+
+- Klasifikasi: `CONFIRMED / PUSHED / SECURITY_VALIDATED / QA_VALIDATED /
+  DEVOPS_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  RELEASE_BLOCKED_ROLLBACK_TARGET / HOLD_FOR_EXPLICIT_APPROVAL`;
+  `BUSINESS_READY=false`.
+- Before: pointer rollback production mengarah ke release pasif
+  `20260822112703-298336d`, tetapi direktori targetnya hilang sehingga kandidat
+  tidak boleh dipromosikan walaupun service dan public smoke sehat.
+- After: exact rollback commit
+  `298336da09b735638c4ffea9b7e8830b1283452e`, archive, bundle, lock dependency,
+  dan migration set sudah diverifikasi. Tooling recovery atomik hanya memasang
+  release pasif, menjaga `current`, memakai sentinel database read-only, serta
+  cleanup otomatis bila gate gagal.
+- Provenance: exact tooling
+  `1a18fec0b0c73cb3874f83fedc5feda7370b5c46` sudah pushed; archive rollback
+  SHA-256 `32c803392189440d227a66510d3237bdd4f7866f275977292a1b9a4abea1f766`
+  dan bundle SHA-256
+  `afea1aa23f2224a51b413c97027688b5770a1f79df23b9d7c504474f31dfef11`
+  memiliki dua salinan byte-identical.
+- Evidence: 150 test dengan 1.490 assertion, build 5.097 modul, parser/diff,
+  audit Composer/npm nol, rehearsal disposable 5/5, dan preflight production
+  read-only lulus.
+- Delivery: production tidak berubah. Recovery S288 memerlukan persetujuan
+  eksplisit Andreas; deploy kandidat sesudahnya merupakan approval terpisah.
+
+## 2026-08-25 - S287 estimate-only deployment gate
+
+- Klasifikasi: `CONFIRMED / PUSHED / SECURITY_VALIDATED / QA_VALIDATED /
+  DEVOPS_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- Before: preflight/deploy lama masih membawa prasyarat dan parameter pembayaran
+  yang bertentangan dengan kontrak SagaView estimate-only.
+- After: jalur lama fail-closed sebelum network atau mutasi; tooling baru hanya
+  memverifikasi kontrak estimasi, exact commit, backup/restore, migration,
+  service, smoke, journal, dan rollback.
+- Provenance: exact tooling
+  `c62776c4a27c8fb2cff52ebba13e679f42c86f6f` sudah pushed; exact runtime
+  candidate tetap `8d84c60c86131892a2ae3727670b0468b64fa81b`.
+- Evidence: 146 test dengan 1.427 assertion, build 5.097 modul, parser, serta
+  audit Composer/npm nol lulus. Read-only preflight berhenti `HOLD` pada target
+  rollback pasif yang hilang; production tidak berubah.
+
 ## 2026-08-25 - S286 guarded deployment go/no-go pack
 
 - Klasifikasi: `CONFIRMED / GO_NO_GO_PACK_VALIDATED / SECURITY_VALIDATED /

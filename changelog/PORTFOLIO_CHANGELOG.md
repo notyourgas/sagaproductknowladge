@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-25 - SagaView S287-S288 safe deploy recovery gate
+
+- Jalur release SagaView kini estimate-only dan menolak tooling lama yang masih
+  membawa kontrak pembayaran sebelum network atau mutasi.
+- Exact tooling S287 `c62776c4a27c8fb2cff52ebba13e679f42c86f6f` dan S288
+  `1a18fec0b0c73cb3874f83fedc5feda7370b5c46` sudah pushed. Recovery exact
+  rollback diuji 150 test/1.490 assertion, build 5.097 modul, audit dependency
+  nol, dan rehearsal disposable 5/5.
+- Production tetap sehat dan tidak berubah, tetapi target rollback pasif masih
+  hilang. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  RELEASE_BLOCKED_ROLLBACK_TARGET`; recovery dan deploy kandidat menunggu dua
+  persetujuan eksplisit yang terpisah.
+
 ## 2026-08-25 - CoyaBag FAQ and policy publishing integrity
 
 - Exact source `3520e66e45fda3e396be99439e0d91fdeff3e38d` aktif sebagai
