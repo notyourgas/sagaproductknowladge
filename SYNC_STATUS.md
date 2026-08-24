@@ -12,14 +12,24 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-24T11:51:12+07:00 |
+| Waktu pembaruan terakhir | 2026-08-24T12:11:25+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `616a7aa24aa49bc4c9974bdcc262528380b1bfb8` |
-| Informasi terakhir disinkronkan | SagaView S272 Gallery Frame production activation dan exact runtime pair. |
-| Status sinkronisasi | `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated UAT residual dan `BUSINESS_READY=false`. |
-| Konflik | Tidak ada konflik source, storage, release, atau rollback. |
-| Error | Tidak ada error pada activation, smoke, service, journal, atau integrity audit. |
+| Baseline sebelum pembaruan | `90a685404fcdcff73d17f8d6213d30e1092ba75a` |
+| Informasi terakhir disinkronkan | CoyaBag home and live catalog discovery production release. |
+| Status sinkronisasi | `PRODUCTION_DEPLOYED`; commerce activation tetap fail-closed. |
+| Konflik | Tidak ada konflik source, release, atau rollback. |
+| Error | Tidak ada error pada public smoke, worker, header, atau operational monitor. |
+
+## File yang berubah pada sinkronisasi ini (CoyaBag home and catalog production)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/CHANGELOG.md`
+- `GAPS.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaView S272 production activation)
 

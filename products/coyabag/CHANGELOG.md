@@ -8,6 +8,22 @@ Mencatat perubahan material COYABAG dengan provenance public-safe.
 
 Surface deployment tidak otomatis berarti commerce activation.
 
+## 2026-08-24 - Home and live catalog discovery production release
+
+- Exact source `b9782ad9861fdb971c55591a16d1392fd5827e98` aktif sebagai
+  immutable Hostinger release `20260824-b9782ad`; rollback langsung
+  `20260824-51dfa7c` dipertahankan.
+- Beranda tidak lagi membuka produk yang salah ketika scene editorial tidak
+  tersedia. Katalog memakai facet live, alias scene yang konsisten, angka stok,
+  URL yang dapat dibagikan, browser history, serta adaptive product grid.
+- Loading skeleton, fail-closed API error/retry, empty/wishlist recovery, dan
+  drawer keyboard tersedia pada desktop/mobile. Unit 37/37, browser fixture dan
+  public production, Laravel 302 pass/1 skip dengan 2.249 assertion, builds,
+  dependency/security, backup, workers, headers, endpoint, dan monitor lulus.
+- Delivery `PRODUCTION_DEPLOYED`. Readiness tetap `28/40`, 70%, `ready=false`
+  dengan 12 blocker; checkout, provider, dan commerce activation tetap
+  fail-closed.
+
 ## 2026-08-24 - Home discovery integrity candidate
 
 - Source `5dd225c6b6cfebf34235321d0bd160a8e7f0dfd0` merekonsiliasi

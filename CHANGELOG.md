@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-24 - CoyaBag home and catalog production sync
+
+- Informasi `CONFIRMED` berasal dari exact source
+  `b9782ad9861fdb971c55591a16d1392fd5827e98`, immutable release
+  `20260824-b9782ad`, rollback `20260824-51dfa7c`, dan postdeploy verification.
+- Knowledge mencatat home scene integrity serta live catalog facets, numeric
+  stock, shareable URL/history, adaptive grid, dan complete visual states yang
+  sudah aktif di production.
+- Full test/build/security, backup, public desktop/mobile browser, endpoint,
+  worker, header, dan monitor lulus. Readiness tetap 28/40 dengan 12 blocker;
+  checkout dan commerce activation tidak berubah.
+- Dokumen terdampak: CoyaBag product/changelog, gaps, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-24 - SagaView S272 production activation sync
 
 - Otorisasi founder untuk deploy seluruh kandidat SagaView yang siap diterima

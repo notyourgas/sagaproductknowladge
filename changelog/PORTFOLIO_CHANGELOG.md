@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-24 - CoyaBag Beranda dan Katalog live discovery
+
+- Source `b9782ad9861fdb971c55591a16d1392fd5827e98` aktif sebagai
+  Hostinger release `20260824-b9782ad`; rollback `20260824-51dfa7c` tersedia.
+- Scene Beranda kini aman terhadap katalog live. Katalog menyediakan facet
+  live, stok numerik, URL shareable, history recovery, adaptive grid, loading,
+  API error/retry, empty/wishlist recovery, dan drawer keyboard.
+- Full frontend/backend, build, security/dependency, backup, public browser dua
+  viewport, endpoints, workers, headers, dan monitor lulus.
+- Status `PRODUCTION_DEPLOYED`; checkout tetap fail-closed pada readiness
+  `28/40` dengan 12 blocker.
+
 ## 2026-08-24 - SagaView S272 Gallery Frame aktif di production
 
 - Backend/Owner exact `fe2dcfc57...` aktif sebagai

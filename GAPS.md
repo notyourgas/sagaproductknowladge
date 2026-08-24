@@ -893,16 +893,11 @@ GAP-004, bukan gap implementasi warna komponen.
 
 ### COYABAG
 
-- `IMPLEMENTED_NOT_DEPLOYED`: source
-  `5dd225c6b6cfebf34235321d0bd160a8e7f0dfd0` dan artifact
-  `20260824-5dd225c` menutup salah tujuan pada home discovery serta membuat
-  grid etalase adaptif. Acceptance desktop/mobile dan full gate lulus, tetapi
-  kandidat belum dipromosikan karena operational monitor belum hijau.
-  Production tetap `20260824-51dfa7c` dan checkout tetap fail-closed.
-
-- `PRODUCTION_DEPLOYED`: release aktif `20260824-51dfa7c`, exact source
-  `51dfa7c65d39554677c8a8b2e8712ac87faa2abc`, melayani storefront, API, dan
-  admin. Readiness tetap `28/40`, 70%, `ready=false`, dengan 12 blocker.
+- `PRODUCTION_DEPLOYED`: release aktif `20260824-b9782ad`, exact source
+  `b9782ad9861fdb971c55591a16d1392fd5827e98`, menutup gap home discovery
+  dan live catalog filtering. Rollback `20260824-51dfa7c` tersedia; full gate,
+  public desktop/mobile smoke, workers, dan monitor lulus. Checkout tetap
+  fail-closed pada readiness `28/40`, 70%, dengan 12 blocker.
 
 - `PRODUCTION_DEPLOYED`: exact source
   `51a29abe211af5e663ba49b9844ef1bbc3fe3c66` aktif sebagai release

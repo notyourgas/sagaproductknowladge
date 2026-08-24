@@ -60,8 +60,9 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260824-51dfa7c` dengan source
-  `51dfa7c65d39554677c8a8b2e8712ac87faa2abc` tetap melayani production.
+- Release aktif `20260824-b9782ad` dengan source
+  `b9782ad9861fdb971c55591a16d1392fd5827e98` melayani production;
+  rollback langsung `20260824-51dfa7c` dipertahankan.
 - Release ini menambahkan destination/quote integrity, payment-to-fulfillment,
   Delivery Order/AWB/pickup/label foundation, tracking webhook inbox, shipping
   finance ledger, cancellation/incident/refund workflow, command center, dan
@@ -71,16 +72,14 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 - Readiness production resmi `28/40` atau 70%, `ready=false`, dengan 12
   blocker. COD, Delivery API, payment production, dan provider webhook eksplisit
   tidak diaktifkan.
-- Kandidat source `5dd225c6b6cfebf34235321d0bd160a8e7f0dfd0` memperbaiki
-  integritas discovery Beranda: kartu scene hanya membuka produk live yang
-  sesuai, fallback aman kembali ke katalog, alias `Campus Fit` mengikuti
-  taksonomi `Campus`, dan grid etalase menyesuaikan jumlah produk live.
-- Unit, browser desktop/mobile, build, security/dependency, Laravel, serta
-  release artifact kandidat `20260824-5dd225c` lulus. Kandidat tidak aktif:
-  cutover dibatalkan dan production dikembalikan ke release sebelumnya karena
-  operational monitor belum hijau setelah satu kesalahan perintah operator.
-  Status perubahan ini `LOCAL_VALIDATED / COMMITTED_LOCAL /
-  IMPLEMENTED_NOT_DEPLOYED`.
+- Release aktif memperbaiki discovery Beranda dan Katalog: tujuan scene selalu
+  mengikuti produk live, alias `Campus Fit` selaras dengan `Campus/Kampus`,
+  fallback aman kembali ke katalog, grid adaptif, facet berasal dari snapshot
+  Laravel, stok memakai angka inventory, dan filter dapat dibagikan lewat URL.
+- Loading, API error/retry, empty result, wishlist recovery, browser history,
+  serta drawer keyboard lulus acceptance desktop/mobile. Full unit, build,
+  backend, security/dependency, public smoke, worker, dan operational monitor
+  juga lulus.
 - Scheduler terminal expiry sudah fail-closed dan concurrency-tested.
 - Release candidate source `264c6ac2ebec33c6471a4c49572ddcdc82b51cf2`
   merekonsiliasi
