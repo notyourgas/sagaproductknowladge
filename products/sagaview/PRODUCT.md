@@ -1,6 +1,23 @@
 # SagaView Product Knowledge
 
-Updated: 24 Agustus 2026 02:07 WIB
+Updated: 24 Agustus 2026 10:29 WIB
+
+SagaView S272 berstatus `CONFIRMED / UIUX_VALIDATED / SECURITY_VALIDATED /
+QA_VALIDATED / LOCAL_VALIDATED / COMMITTED_LOCAL /
+IMPLEMENTED_NOT_DEPLOYED`. Owner Gallery Frame sekarang membentuk URL preview
+dengan konteks workspace dan tab admin yang sama dengan request dashboard.
+Kegagalan pemuatan sementara dicoba ulang satu kali; bila tetap gagal, kartu
+menjelaskan bahwa data frame aman dan operator dapat membuka kartu untuk
+mencoba kembali. Preview juga memakai lazy loading dan decoding asynchronous.
+
+Exact source backend/Owner
+`fe2dcfc57e8b6592ad0162fabf079fbbd07c1097` berada pada branch terisolasi
+`codex/s272-sagaview-frame-gallery-recovery`. Playwright 2/2, backend frame
+authoring 17/17 dengan 81 assertion, build 5.097 modul, diff check, serta audit
+Composer/npm nol lulus. Tidak ada migration, upload foto/path/output, perubahan
+harga, payment/provider, atau perubahan Studio. Production masih backend
+`20260823091225-c828bd9` dan Studio `20260823185455-ab2af26`;
+`BUSINESS_READY=false`.
 
 SagaView S270 berstatus `CONFIRMED / PUSHED / UIUX_VALIDATED /
 SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /

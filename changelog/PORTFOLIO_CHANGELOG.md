@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-24 - SagaView S272 Owner Gallery Frame recovery
+
+- Gallery Frame tidak lagi bergantung pada asset URL tanpa konteks; preview
+  membawa workspace/tab aktif, mencoba ulang satu kegagalan sementara, dan
+  memberi penjelasan recovery tanpa mengubah data frame.
+- Exact backend/Owner `fe2dcfc57e8b6592ad0162fabf079fbbd07c1097`
+  lolos Playwright 2/2, backend 17/17 dan 81 assertion, build, diff check, serta
+  audit dependency nol.
+- Status `LOCAL_VALIDATED / COMMITTED_LOCAL /
+  IMPLEMENTED_NOT_DEPLOYED`. Production, Studio, produk lain, schema, harga,
+  payment, serta data customer tidak berubah.
+
 ## 2026-08-24 - SagaBook S286 fondasi operasional production
 
 - Exact source `9e4b44e5f6698b7284938fa1e4c948dd45c9e5d5` aktif sebagai release

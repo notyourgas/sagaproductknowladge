@@ -12,16 +12,26 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-24T07:38:39+07:00 |
-| Branch aktif | `codex/knowledge-s286-production` dari worktree terisolasi exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-24T10:29:42+07:00 |
+| Branch aktif | `codex/knowledge-s272-frame-gallery` dari worktree terisolasi exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `3faf59342ac4f9020f52a474c7e16ddcc7b3d6e6` |
-| Informasi terakhir disinkronkan | SagaBook S286 mengaktifkan fondasi operasional kumulatif pada exact source `9e4b44e5...` / release `20260824001354-9e4b44e`. |
-| Status sinkronisasi | `CONFIRMED / PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; Owner UAT route lulus, Operator/pilot residual, dan `BUSINESS_READY=false`. |
-| Konflik | Checkout knowledge utama lokal divergen dari remote dan tidak disentuh; sinkronisasi memakai worktree terisolasi exact `origin/main`. |
-| Error | Tidak ada error release tersisa. Blocker migration rehearsal lama diperbaiki dengan profile operasional gabungan; canary provider customer nyata sengaja tidak dijalankan. |
+| Baseline sebelum pembaruan | `c29f50d20ed218fc573218373b98c7b428ff8d2e` |
+| Informasi terakhir disinkronkan | SagaView S272 memulihkan preview Owner Gallery Frame pada exact source `fe2dcfc5...`. |
+| Status sinkronisasi | `CONFIRMED / COMMITTED_LOCAL / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production dan Studio belum berubah. |
+| Konflik | Commit lokal lama `127ae7d...` terbukti sudah tercakup di remote; pointer cadangan dipertahankan dan main berhasil disejajarkan ke `origin/main`. |
+| Error | Tidak ada error source. Gate release, backup/restore, deployment, smoke, rollback, dan authenticated Owner UAT masih menunggu. |
 
-## File yang berubah pada sinkronisasi ini (SagaBook S286 production)
+## File yang berubah pada sinkronisasi ini (SagaView S272 Gallery Frame)
+
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/CHANGELOG.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
+
+## File dari sinkronisasi sebelumnya (SagaBook S286 production)
 
 - `products/sagabook/PRODUCT.md`
 - `products/sagabook/DOSSIER.md`

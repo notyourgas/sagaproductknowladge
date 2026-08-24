@@ -1,5 +1,27 @@
 # SagaView Changelog
 
+## 2026-08-24 - S272 Owner Gallery Frame preview recovery
+
+- Klasifikasi: `CONFIRMED / UIUX_VALIDATED / SECURITY_VALIDATED /
+  QA_VALIDATED / LOCAL_VALIDATED / COMMITTED_LOCAL /
+  IMPLEMENTED_NOT_DEPLOYED` berdasarkan laporan bug dan persetujuan Andreas.
+- Before: kartu Gallery Frame memuat `assetReadPath` mentah melalui elemen
+  gambar, sehingga request tidak melewati interceptor dashboard dan dapat
+  kehilangan konteks workspace/tab; kegagalan tampil tidak memiliki retry atau
+  penjelasan recovery.
+- After: preview memakai URL kontekstual tenant/tab, lazy loading, decoding
+  asynchronous, satu retry dengan cache-busting, dan fallback yang menyatakan
+  data frame aman serta aksi berikutnya.
+- Provenance: exact backend/Owner
+  `fe2dcfc57e8b6592ad0162fabf079fbbd07c1097`; branch
+  `codex/s272-sagaview-frame-gallery-recovery`.
+- Evidence: red test membuktikan tenant sebelumnya `null`; Playwright 2/2,
+  backend 17/17 dengan 81 assertion, build 5.097 modul, audit dependency nol,
+  dan diff check lulus.
+- Privacy/release: request tetap same-origin dan metadata-only; tidak ada
+  migration, foto/path/output customer, payment/provider, atau perubahan
+  Studio. Production tidak berubah dan `BUSINESS_READY=false`.
+
 ## 2026-08-24 - S270 tutorial Customer Flow production activation
 
 - Klasifikasi: `CONFIRMED / PUSHED / UIUX_VALIDATED / SECURITY_VALIDATED /

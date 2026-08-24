@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-24 - SagaView S272 Gallery Frame local validation sync
+
+- Informasi `CONFIRMED` berasal dari laporan bug dan persetujuan Andreas serta
+  exact source `fe2dcfc57e8b6592ad0162fabf079fbbd07c1097`.
+- Knowledge mencatat pemulihan preview Owner Gallery Frame melalui URL
+  workspace/tab kontekstual, satu retry, lazy loading, dan fallback yang
+  menjelaskan bahwa data frame aman.
+- Playwright 2/2, backend 17/17 dengan 81 assertion, build, diff check, serta
+  audit Composer/npm nol lulus. Delivery `COMMITTED_LOCAL / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production dan Studio tidak berubah.
+- Dokumen terdampak: SagaView product/changelog/coverage, portfolio, master,
+  root changelog, dan sync status.
+
 ## 2026-08-24 - SagaBook S286 production activation sync
 
 - Informasi `CONFIRMED` berasal dari keputusan deployment Andreas, exact source
