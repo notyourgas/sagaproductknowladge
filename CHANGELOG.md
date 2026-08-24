@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - CoyaBag Testimonials production sync
+
+- Informasi `CONFIRMED` berasal dari exact source
+  `dead32ed0cc30110d8b9b3b2b7d68b10b09cac8e`, immutable release
+  `20260825-dead32e`, rollback `20260825-8382f7a`, dan runtime verification.
+- Knowledge mencatat approved CMS-only reviews, consent dan attribution wajib,
+  derived-only rating/statistics, safe media, exact product/color fail-closed,
+  Admin lifecycle, visual failure states, dan lazy responsive route.
+- Full test/build/security, dependency audit, backup, public desktop/mobile,
+  workers, scheduler, dan smoke lulus. Readiness 30/42 dengan 12 blocker;
+  delivery `PRODUCTION_DEPLOYED`, activation dan business readiness `BLOCKED`.
+- Dokumen terdampak: CoyaBag product/dossier/changelog, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-25 - SagaView S283 immutable release provenance sync
 
 - Informasi `CONFIRMED` berasal dari exact source

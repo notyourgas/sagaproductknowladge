@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-25 - CoyaBag Testimonials consent and provenance
+
+- Exact source `dead32ed0cc30110d8b9b3b2b7d68b10b09cac8e` aktif sebagai
+  Hostinger release `20260825-dead32e`; rollback `20260825-8382f7a` tersedia.
+- Customer hanya melihat review CMS published yang berizin dan memiliki
+  attribution, source, media aman, serta exact product destination. Review,
+  rating, atau statistik tidak dibuat sebagai placeholder social proof.
+- Operator mengelola order, source, rating opsional, media, destination,
+  consent, dan lifecycle publish melalui Admin. Full frontend/backend,
+  security/dependency, public desktop/mobile, backup, workers, scheduler, dan
+  smoke lulus. Status `PRODUCTION_DEPLOYED`; readiness 30/42, activation dan
+  business readiness tetap `BLOCKED`.
+
 ## 2026-08-25 - SagaView S283 immutable release provenance
 
 - Kandidat S282 kini memiliki release pack exact commit berisi archive, SHA-256

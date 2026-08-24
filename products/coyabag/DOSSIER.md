@@ -78,16 +78,25 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260825-8382f7a` memakai source
-`8382f7ad3eab33045eadeb79e63c4f4119b30411` dan rollback
-`20260825-9abeb53`. Lookbook memakai CMS published sebagai authority dan turun
-ke satu scene dari media milik setiap produk live ketika belum ada scene
-published. Operator dapat mengatur judul, story, media, urutan, dan tujuan exact
-product/color melalui Admin. Missing product tidak dipetakan ke produk lain;
-stale color dikanonisasi dengan penjelasan. Loading, media failure,
-partial-content, empty/error/retry, keyboard, reduced motion, cart/detail, serta
-browser production desktop/mobile lulus. Route JavaScript dan CSS Lookbook
-dimuat lazy; commerce tetap fail-closed.
+Release production terbaru `20260825-dead32e` memakai source
+`dead32ed0cc30110d8b9b3b2b7d68b10b09cac8e` dan rollback
+`20260825-8382f7a`. Testimonials hanya mempublikasikan entri CMS dengan reviewer,
+quote, supported type, source label, dan izin eksplisit. Statistik hanya berasal
+dari entri approved; missing exact product/color menghapus CTA dan tidak
+memetakan review ke produk lain. Operator mengelola urutan, attribution, sumber
+HTTPS, rating opsional, media, destination, consent, serta lifecycle publish
+melalui Admin. Loading, partial, empty/error/retry, broken-media, native video,
+withdrawn content, lazy route assets, dan browser production desktop/mobile
+lulus. Production belum memiliki review approved published, sehingga empty
+state tetap jujur dan homepage preview disembunyikan. Commerce tetap
+fail-closed.
+
+Release sebelumnya `20260825-8382f7a` memakai source
+`8382f7ad3eab33045eadeb79e63c4f4119b30411`. Lookbook memakai CMS published
+sebagai authority dan turun ke satu scene dari media milik setiap produk live
+ketika belum ada scene published. Operator mengatur judul, story, media, urutan,
+serta tujuan exact product/color melalui Admin; visual failure states,
+keyboard/reduced motion, cart/detail, dan lazy route assets tetap aktif.
 
 Release sebelumnya `20260825-9abeb53` memakai source
 `9abeb533069e476c33a6c099d8975af8df99616e`. Gallery memakai CMS published

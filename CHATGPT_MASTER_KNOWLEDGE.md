@@ -3130,14 +3130,22 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release aktif `20260825-8382f7a` menjalankan exact source
-`8382f7ad3eab33045eadeb79e63c4f4119b30411` dengan rollback
-`20260825-9abeb53`. Lookbook memakai scene CMS published sebagai authority dan
-fallback satu scene per produk live dari media milik produk. Operator mengelola
-judul, story, media, urutan, serta destination exact product/color dari Admin.
-Missing product tidak dipetakan ke produk lain; visual failure states,
-keyboard/reduced motion, exact cart/detail, dan production desktop/mobile lulus;
-route assets dimuat lazy.
+Release aktif `20260825-dead32e` menjalankan exact source
+`dead32ed0cc30110d8b9b3b2b7d68b10b09cac8e` dengan rollback
+`20260825-8382f7a`. Testimonials hanya menampilkan CMS published review dengan
+reviewer, quote, supported type, source, dan izin eksplisit. Rating/statistik
+hanya berasal dari approved entries; missing exact destination fail-closed dan
+source-owned social proof tidak ditampilkan. Operator mengelola urutan,
+attribution, HTTPS source, rating opsional, media, exact product/color, consent,
+serta publish/schedule/retract melalui Admin. Empty/partial/error/media states,
+lazy route, dan production desktop/mobile lulus. Saat ini belum ada review
+approved published, sehingga empty state jujur dan homepage preview tersembunyi.
+
+Release sebelumnya `20260825-8382f7a` menjalankan exact source
+`8382f7ad3eab33045eadeb79e63c4f4119b30411`. Lookbook memakai scene CMS
+published atau satu scene product-owned per produk live. Admin story/media/order/
+destination, exact product/color, visual states, keyboard/reduced motion,
+cart/detail, dan lazy route assets tetap aktif.
 
 Release sebelumnya `20260825-9abeb53` menjalankan exact source
 `9abeb533069e476c33a6c099d8975af8df99616e`. Gallery tetap memakai CMS published

@@ -8,6 +8,23 @@ Mencatat perubahan material COYABAG dengan provenance public-safe.
 
 Surface deployment tidak otomatis berarti commerce activation.
 
+## 2026-08-25 - Testimonials consent and provenance production release
+
+- Informasi `CONFIRMED` berasal dari exact source
+  `dead32ed0cc30110d8b9b3b2b7d68b10b09cac8e`, immutable Hostinger release
+  `20260825-dead32e`, rollback `20260825-8382f7a`, dan runtime verification.
+- Storefront hanya menampilkan review CMS published dengan reviewer, quote,
+  supported type, source label, dan izin eksplisit. Rating/statistik hanya
+  berasal dari approved entries; source-owned social proof dihapus.
+- Admin mengelola order, attribution, HTTPS source, optional rating, media,
+  exact product/color, consent, serta publish/schedule/retract. Missing
+  destination fail-closed; empty, partial, error/retry, media failure, dan
+  responsive production lulus.
+- Storefront 111/111 dan Laravel 331 pass/1 MySQL-only skip dengan 2.535
+  assertions; full release/security/dependency, backup, workers, scheduler, dan
+  public smoke lulus. Readiness tetap 30/42 dengan 12 blocker;
+  activation/business tetap `BLOCKED`.
+
 ## 2026-08-25 - Lookbook managed-content production release
 
 - Informasi `CONFIRMED` berasal dari exact source

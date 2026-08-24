@@ -60,9 +60,19 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260825-8382f7a` dengan source
-  `8382f7ad3eab33045eadeb79e63c4f4119b30411` melayani production;
-  rollback langsung `20260825-9abeb53` dipertahankan.
+- Release aktif `20260825-dead32e` dengan source
+  `dead32ed0cc30110d8b9b3b2b7d68b10b09cac8e` melayani production;
+  rollback langsung `20260825-8382f7a` dipertahankan.
+- Testimonials hanya menampilkan review CMS published yang memiliki reviewer,
+  quote, tipe, sumber, dan konfirmasi izin eksplisit. Rating serta statistik
+  hanya dihitung dari entri approved; source-owned social proof dan placeholder
+  review tidak ditampilkan.
+- Operator dapat mengatur urutan, reviewer, quote, tipe, sumber HTTPS, rating
+  opsional, media, tujuan exact product/color, izin, dan lifecycle publish dari
+  Admin. Empty, partial, error/retry, broken-media, native video, withdrawn
+  content, dan responsive desktop/mobile lulus acceptance production.
+- Production saat ini belum memiliki review approved published, sehingga route
+  menampilkan empty state jujur dan preview homepage disembunyikan.
 - Lookbook kini memakai scene CMS published sebagai sumber utama. Jika tidak
   ada scene published, storefront hanya membuat satu scene dari media milik
   setiap produk live; scene tidak pernah diarahkan diam-diam ke produk lain.
