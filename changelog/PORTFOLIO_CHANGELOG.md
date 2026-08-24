@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-25 - CoyaBag responsive storefront integrity
+
+- Exact source `9541b86869b9a4d1790722bb0f0907b499b768e6` aktif sebagai
+  Hostinger release `20260825-9541b86`; rollback `20260825-3520e66` tersedia.
+- Overflow product card pada mobile 320 piksel ditutup, target sentuh utama
+  menjadi minimal 44 piksel, dan scroll-progress mobile tetap di viewport.
+- Matrix browser 15 route, lima viewport, mobile menu, serta 79 kombinasi
+  fixture dan API production lulus bersama full test/build/security dan public
+  smoke. Status `PRODUCTION_DEPLOYED`; readiness 30/42, activation dan business
+  readiness tetap `BLOCKED`.
+
 ## 2026-08-25 - SagaView S287-S288 safe deploy recovery gate
 
 - Jalur release SagaView kini estimate-only dan menolak tooling lama yang masih

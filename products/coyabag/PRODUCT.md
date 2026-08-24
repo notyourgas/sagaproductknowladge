@@ -61,9 +61,13 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260825-3520e66` dengan source
-  `3520e66e45fda3e396be99439e0d91fdeff3e38d` melayani production;
-  rollback langsung `20260825-2697be4` dipertahankan.
+- Release aktif `20260825-9541b86` dengan source
+  `9541b86869b9a4d1790722bb0f0907b499b768e6` melayani production;
+  rollback langsung `20260825-3520e66` dipertahankan.
+- Integritas responsif storefront telah divalidasi pada 15 route, lima profil
+  viewport dari mobile 320 piksel sampai desktop, dan mobile menu. Product card
+  tidak lagi melampaui viewport kecil; target sentuh navigasi/CTA minimal 44
+  piksel dan scroll-progress mobile tidak keluar dari layar.
 - FAQ hanya menampilkan jawaban CMS published dari enam kategori stabil.
   Production belum memiliki jawaban approved, sehingga preparation state jujur
   menggantikan fallback provider atau marketplace dari source.

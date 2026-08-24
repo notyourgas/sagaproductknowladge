@@ -8,6 +8,22 @@ Mencatat perubahan material COYABAG dengan provenance public-safe.
 
 Surface deployment tidak otomatis berarti commerce activation.
 
+## 2026-08-25 - Responsive storefront integrity production release
+
+- Informasi `CONFIRMED` berasal dari exact source
+  `9541b86869b9a4d1790722bb0f0907b499b768e6`, immutable Hostinger release
+  `20260825-9541b86`, rollback `20260825-3520e66`, dan runtime verification.
+- Overflow product card pada mobile 320 piksel ditutup. Header, mobile menu,
+  dan sticky CTA memakai target sentuh minimal 44 piksel; scroll-progress
+  mobile tetap berada di dalam viewport.
+- Regression browser mencakup 15 route, lima profil viewport, mobile menu, dan
+  79 kombinasi terhadap fixture deterministik maupun API production. Full
+  test/build/security, dependency audit, backup, workers, scheduler, dan public
+  smoke lulus.
+- Delivery `PRODUCTION_DEPLOYED`; readiness tetap 30/42 dengan 12 blocker.
+  Activation dan business readiness tetap `BLOCKED`, sehingga checkout dan
+  provider commerce tetap fail-closed.
+
 ## 2026-08-25 - FAQ and policy publishing integrity production release
 
 - Informasi `CONFIRMED` berasal dari exact source

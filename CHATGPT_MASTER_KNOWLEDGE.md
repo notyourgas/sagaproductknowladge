@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 25 Agustus 2026 05:52 WIB
+Evidence cut-off: 25 Agustus 2026 06:25 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -3179,10 +3179,14 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release aktif `20260825-3520e66` menjalankan exact source
-`3520e66e45fda3e396be99439e0d91fdeff3e38d` dengan rollback
-`20260825-2697be4`. FAQ hanya menampilkan jawaban CMS published dari enam
-kategori. Privacy, terms, dan return policy membutuhkan owner publication,
+Release aktif `20260825-9541b86` menjalankan exact source
+`9541b86869b9a4d1790722bb0f0907b499b768e6` dengan rollback
+`20260825-3520e66`. Integritas responsif storefront telah divalidasi pada 15
+route, lima profil viewport dari mobile 320 piksel sampai desktop, mobile menu,
+dan 79 kombinasi fixture maupun API production. Overflow product card pada
+mobile kecil ditutup, target sentuh utama minimal 44 piksel, dan
+scroll-progress mobile tetap di viewport. FAQ hanya menampilkan jawaban CMS
+published dari enam kategori. Privacy, terms, dan return policy membutuhkan owner publication,
 version, effective date, dan section lengkap; lifecycle policy owner-only
 tersedia melalui draft, preview, schedule, publish, retract, serta immutable
 rollback. Production belum memiliki FAQ approved atau policy lengkap, sehingga

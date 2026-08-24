@@ -12,14 +12,24 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T05:52:27+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T06:25:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `4c53f390` |
-| Informasi terakhir disinkronkan | SagaView S287 estimate-only release gate dan S288 inactive rollback recovery readiness. |
-| Status sinkronisasi | `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED_ROLLBACK_TARGET / HOLD_FOR_EXPLICIT_APPROVAL`; production tidak berubah. |
+| Baseline sebelum pembaruan | `1490c454` |
+| Informasi terakhir disinkronkan | CoyaBag responsive storefront integrity pada release `20260825-9541b86`. |
+| Status sinkronisasi | Delivery `PRODUCTION_DEPLOYED`; activation dan business readiness `BLOCKED`; readiness 30/42 dengan 12 blocker. |
 | Konflik | Tidak ada konflik source atau keputusan baru. |
-| Error | Target rollback pasif SagaView masih hilang; recovery S288 dan deployment kandidat memerlukan persetujuan eksplisit terpisah. |
+| Error | Tidak ada error sinkronisasi; blocker commerce CoyaBag tetap terbuka dan fail-closed. |
+
+## File yang berubah pada sinkronisasi ini (CoyaBag responsive storefront)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaView S287-S288 safe deploy recovery)
 

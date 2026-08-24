@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - CoyaBag responsive storefront production sync
+
+- Produk/area: COYABAG global responsive storefront dan production release.
+- Informasi `CONFIRMED` berasal dari exact source
+  `9541b86869b9a4d1790722bb0f0907b499b768e6`, immutable release
+  `20260825-9541b86`, rollback `20260825-3520e66`, dan runtime verification.
+- Knowledge mencatat perbaikan overflow mobile 320 piksel, target sentuh minimal
+  44 piksel, scroll-progress mobile yang tetap di viewport, serta matrix 15
+  route/lima viewport/79 kombinasi yang lulus pada fixture dan API production.
+- Delivery `PRODUCTION_DEPLOYED`; readiness tetap 30/42 dengan 12 blocker.
+  Activation dan business readiness tetap `BLOCKED`; commerce tidak diaktifkan.
+- Dokumen terdampak: CoyaBag product/dossier/changelog, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-25 - SagaView S287-S288 safe deploy recovery sync
 
 - Informasi `CONFIRMED` berasal dari exact tooling S287

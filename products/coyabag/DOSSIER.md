@@ -78,9 +78,13 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260825-3520e66` memakai source
-`3520e66e45fda3e396be99439e0d91fdeff3e38d` dan rollback
-`20260825-2697be4`. FAQ hanya merender jawaban CMS published dari enam kategori;
+Release production terbaru `20260825-9541b86` memakai source
+`9541b86869b9a4d1790722bb0f0907b499b768e6` dan rollback
+`20260825-3520e66`. Matrix responsif storefront mencakup 15 route dan lima
+profil viewport dari mobile 320 piksel sampai desktop, termasuk mobile menu.
+Product card tidak lagi menyebabkan overflow intrinsik, navigasi/CTA penting
+memiliki target sentuh minimal 44 piksel, dan scroll-progress mobile tetap di
+dalam viewport. FAQ hanya merender jawaban CMS published dari enam kategori;
 fallback provider/marketplace dari source tidak lagi menjadi panduan publik.
 Privacy, terms, dan return policy memerlukan owner publication, version,
 effective date, dan section lengkap. Lifecycle policy owner-only tersedia untuk
