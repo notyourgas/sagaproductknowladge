@@ -1,6 +1,6 @@
 # SagaView Product Knowledge
 
-Updated: 24 Agustus 2026 10:59 WIB
+Updated: 24 Agustus 2026 11:08 WIB
 
 SagaView S272 berstatus `CONFIRMED / PUSHED / UIUX_VALIDATED /
 SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
@@ -20,12 +20,19 @@ audit Composer/npm nol lulus. Immutable artifact
 `1e11654e5379c269b5c9d7b30a83edca47d61788e0958934214c7afde23fdce2`;
 backup terenkripsi/offsite dan restore disposable 146/160/149 tabel lulus.
 
-Dua percobaan atomic activation rollback otomatis. Kandidat memakai shared
-storage, sedangkan release production aktif masih memakai release-local
-storage; akibatnya kandidat tidak menemukan manifest backup terbaru dan dapat
-menyembunyikan asset frame lama. Retry production dihentikan fail-closed sampai
-inventory/checksum, salinan immutable, permission/ownership, rehearsal, dan
-candidate gate 6/6 membuktikan rekonsiliasi aman. Tidak ada migration, upload
+Dua percobaan atomic activation rollback otomatis. Audit read-only berikutnya
+membuktikan release aktif memakai release-local storage dan tidak dapat membaca
+seluruh 215 asset unik yang dirujuk 427 baris database. Shared storage kandidat
+memiliki 247 file frame/476.552.911 byte; kandidat membaca seluruh 215 asset
+unik dengan nol missing, size mismatch, checksum mismatch, atau read error.
+Jadi shared storage memperbaiki sumber asset Gallery Frame, bukan
+menyembunyikannya.
+
+Blocker kini dipersempit: dua file backup fresh/300.547 byte masih hanya berada
+di release-local storage dan belum ada di shared storage yang sudah memiliki 64
+file backup lama. Retry production dihentikan fail-closed sampai kedua file
+disalin secara private, no-overwrite, checksum-verified, dan atomic; candidate
+gate wajib 6/6. Tidak ada migration, upload
 foto/path/output, perubahan harga, payment/provider, atau perubahan Studio.
 Production tetap sehat pada backend `20260823091225-c828bd9` dan Studio
 `20260823185455-ab2af26`; `BUSINESS_READY=false`.

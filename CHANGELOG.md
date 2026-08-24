@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-24 - SagaView S272 storage root-cause evidence sync
+
+- Audit production read-only membuktikan 215 asset Gallery Frame unik tidak
+  terbaca oleh release aktif, tetapi lengkap dan checksum-valid melalui shared
+  storage kandidat.
+- Blocker release kini bukan asset frame: hanya dua file backup fresh yang
+  belum tersedia di shared storage. Production tetap tidak berubah.
+- Syarat lanjut adalah private no-overwrite copy, verifikasi checksum, atomic
+  publish, candidate gate 6/6, lalu guarded activation dan rollback checks.
+- Evidence agregat disimpan dua salinan dengan SHA-256
+  `6f28455f4bee144a2f46f9d65dda3d358d579e5dfe3a68ff70ec5d208fbd3e4d`.
+- Dokumen terdampak: SagaView product/changelog/coverage, gaps, portfolio,
+  master, root changelog, dan sync status.
+
 ## 2026-08-24 - SagaView S272 storage release blocker sync
 
 - Exact source `fe2dcfc57e8b6592ad0162fabf079fbbd07c1097` sudah pushed dan
@@ -7,8 +21,8 @@
 - Immutable artifact, encrypted backup/offsite, disposable restore, dan dua
   atomic rollback terverifikasi; production tidak berubah serta tetap sehat.
 - Kandidat menggunakan shared storage sementara release aktif masih memakai
-  release-local storage. Gate fail-closed mencegah aktivasi yang dapat
-  menyembunyikan asset frame lama.
+  release-local storage. Audit lanjutan membuktikan shared storage justru
+  memiliki seluruh asset frame; gate fail-closed tertahan oleh backup fresh.
 - Status `RELEASE_BLOCKED_STORAGE_RECONCILIATION`; retry menunggu inventory dan
   checksum, salinan immutable, permission/ownership, rehearsal, serta candidate
   gate 6/6.

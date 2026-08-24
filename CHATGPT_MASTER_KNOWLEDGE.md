@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 24 Agustus 2026 10:59 WIB
+Evidence cut-off: 24 Agustus 2026 11:08 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -14,11 +14,16 @@ lazy loading, dan menampilkan recovery copy bila tetap gagal. Playwright 4/4,
 dependency nol, immutable artifact, encrypted backup/offsite, dan disposable
 restore 146/160/149 tabel lulus.
 
-Dua atomic activation rollback otomatis. Kandidat memakai shared storage,
-sedangkan production aktif memakai release-local storage; candidate gate tidak
-menemukan manifest backup terbaru dan aktivasi berisiko membuat asset frame
-lama tidak terlihat. Retry ditahan sampai inventory/checksum, salinan
-immutable, permission/ownership, rehearsal, dan gate 6/6 lulus. Backend tetap
+Dua atomic activation rollback otomatis. Audit production read-only kemudian
+membuktikan release aktif tidak dapat membaca 215 asset unik yang dirujuk 427
+baris database karena memakai release-local storage. Shared storage kandidat
+memiliki 247 file frame/476.552.911 byte dan membaca seluruh 215 asset unik
+dengan nol missing, size mismatch, checksum mismatch, atau read error.
+
+Candidate gate tertahan hanya karena dua file backup fresh/300.547 byte belum
+ada di shared storage, bukan karena asset frame. Retry menunggu private
+no-overwrite copy, verifikasi SHA-256, atomic publish, rehearsal, dan gate 6/6.
+Backend tetap
 memverifikasi tenant dan integritas asset; foto/path/output tidak diunggah,
 pembayaran tetap off-app, Studio tidak berubah, production backend tetap
 `20260823091225-c828bd9`, dan `BUSINESS_READY=false`.

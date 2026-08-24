@@ -1,5 +1,22 @@
 # SagaView Changelog
 
+## 2026-08-24 - S272 akar Gallery Frame dan blocker storage terukur
+
+- Audit production read-only membuktikan release aktif tidak dapat membaca 215
+  asset unik yang dirujuk 427 baris database karena masih memakai
+  release-local storage.
+- Shared storage kandidat memiliki 247 file frame/476.552.911 byte. Kandidat
+  membaca seluruh 215 asset unik dengan nol missing, size mismatch, checksum
+  mismatch, dan read error.
+- Blocker release dipersempit menjadi dua file backup fresh/300.547 byte yang
+  belum berada di shared storage. Shared storage sudah memiliki 64 file backup
+  lama; tidak ada collision nama dengan dua file fresh tersebut.
+- Syarat retry: private no-overwrite copy, verifikasi ukuran/SHA-256, atomic
+  publish, candidate gate 6/6, lalu health/smoke/service/journal dan rollback.
+- Evidence agregat public-safe tersimpan dua salinan dengan SHA-256
+  `6f28455f4bee144a2f46f9d65dda3d358d579e5dfe3a68ff70ec5d208fbd3e4d`.
+  Production tidak berubah.
+
 ## 2026-08-24 - S272 deployment dihentikan pada rekonsiliasi storage
 
 - Klasifikasi: `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
@@ -10,9 +27,11 @@
   terenkripsi/offsite, restore disposable 146/160/149 tabel, dan pemeriksaan
   production read-only selesai. Dua atomic activation rollback otomatis tanpa
   meninggalkan kandidat aktif.
-- Blocker: kandidat menunjuk shared storage, sedangkan production aktif masih
-  menunjuk release-local storage. Candidate gate tidak menemukan manifest
-  backup terbaru dan aktivasi dapat membuat asset frame lama tidak terlihat.
+- Blocker saat percobaan: kandidat menunjuk shared storage, sedangkan
+  production aktif menunjuk release-local storage. Candidate gate tidak
+  menemukan manifest backup terbaru. Audit lanjutan di entri atas membuktikan
+  asset frame lengkap berada di shared storage dan hanya backup fresh yang
+  perlu direkonsiliasi.
 - Tindakan aman berikutnya: inventaris dan checksum kedua storage, buat salinan
   immutable, verifikasi permission/ownership dan rehearsal, lalu wajibkan gate
   kandidat 6/6 sebelum retry deployment.

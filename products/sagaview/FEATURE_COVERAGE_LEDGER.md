@@ -1,6 +1,6 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 24 Agustus 2026 10:59 WIB
+Evidence cut-off: 24 Agustus 2026 11:08 WIB
 
 S272 Owner Gallery Frame preview recovery: exact backend/Owner
 `fe2dcfc57e8b6592ad0162fabf079fbbd07c1097` berstatus `CONFIRMED / PUSHED /
@@ -14,11 +14,13 @@ check, serta audit Composer/npm nol lulus. Artifact immutable dan backup
 terenkripsi/offsite dengan restore disposable 146/160/149 tabel lulus.
 
 Dua activation rollback otomatis karena kandidat shared storage tidak melihat
-manifest backup pada release-local storage production. Ini juga berisiko
-membuat asset frame lama tidak terlihat, sehingga release fail-closed sampai
-inventory/checksum, salinan immutable, permission/ownership, rehearsal, dan
-candidate gate 6/6 lulus. No-upload, tenant isolation, checksum/integrity
-backend, dan pembayaran off-app tetap terjaga. Production tetap backend
+manifest backup pada release-local storage production. Audit read-only
+membuktikan release aktif kehilangan akses ke 215 asset unik yang dirujuk 427
+baris database, sedangkan kandidat shared storage membaca seluruhnya dengan nol
+missing, size/checksum mismatch, atau read error. Blocker tersisa hanya dua file
+backup fresh yang belum ada di shared storage. Release tetap fail-closed sampai
+private no-overwrite copy, SHA-256, atomic publish, rehearsal, dan candidate
+gate 6/6 lulus. No-upload, tenant isolation, checksum/integrity backend, dan pembayaran off-app tetap terjaga. Production tetap backend
 `20260823091225-c828bd9`; Studio tidak berubah dan authenticated Owner UAT
 tetap terpisah.
 

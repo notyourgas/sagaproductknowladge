@@ -12,16 +12,27 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-24T10:59:42+07:00 |
+| Waktu pembaruan terakhir | 2026-08-24T11:08:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `a434fb5b1f0c5bd0ae8de771d94a92712b6c2a78` |
-| Informasi terakhir disinkronkan | SagaView S272 Gallery Frame deployment reconciliation. |
+| Baseline sebelum pembaruan | `0ab144c7096a8dad71df767eabcbcb2204469717` |
+| Informasi terakhir disinkronkan | SagaView S272 Gallery Frame storage root-cause evidence. |
 | Status sinkronisasi | `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED_STORAGE_RECONCILIATION`; production tetap sehat. |
-| Konflik | Kandidat memakai shared storage, sedangkan release production aktif memakai release-local storage. |
-| Error | Candidate gate tidak melihat manifest backup terbaru; dua activation rollback otomatis dan retry dihentikan fail-closed. |
+| Konflik | Asset frame lengkap berada di shared storage kandidat, tetapi dua backup fresh masih berada di release-local storage aktif. |
+| Error | Candidate gate belum 6/6 karena dua file backup fresh belum direkonsiliasi; production retry tetap dihentikan. |
 
-## File yang berubah pada sinkronisasi ini (SagaView S272 release blocker)
+## File yang berubah pada sinkronisasi ini (SagaView S272 storage root cause)
+
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/CHANGELOG.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `GAPS.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
+
+## File dari sinkronisasi sebelumnya (SagaView S272 release blocker)
 
 - `products/sagaview/PRODUCT.md`
 - `products/sagaview/CHANGELOG.md`

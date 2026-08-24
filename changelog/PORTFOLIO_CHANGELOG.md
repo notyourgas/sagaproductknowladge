@@ -1,14 +1,24 @@
 # Portfolio Changelog
 
+## 2026-08-24 - SagaView S272 bukti akar Gallery Frame
+
+- Release aktif tidak dapat membaca 215 asset frame unik yang dirujuk database
+  karena memakai storage release-local.
+- Kandidat shared storage membaca seluruh asset tersebut dengan nol missing,
+  size mismatch, checksum mismatch, atau read error.
+- Deployment tetap fail-closed karena dua file backup fresh belum berada di
+  shared storage. Production tidak berubah; rekonsiliasi backup private dan
+  candidate gate 6/6 menjadi syarat retry.
+
 ## 2026-08-24 - SagaView S272 release reconciliation
 
 - Perbaikan Gallery Frame exact
   `fe2dcfc57e8b6592ad0162fabf079fbbd07c1097` sudah pushed dan lolos gate lokal.
 - Artifact immutable, backup terenkripsi/offsite, restore disposable, serta dua
   rollback otomatis berhasil menjaga production tetap sehat.
-- Deployment dihentikan karena kandidat shared storage belum terbukti setara
-  dengan release-local storage production; aktivasi dapat membuat asset frame
-  lama tidak terlihat.
+- Deployment dihentikan karena layout storage belum terverifikasi. Audit
+  lanjutan membuktikan asset frame lengkap berada di shared storage; residual
+  kini hanya backup fresh yang masih berada di release-local storage.
 - Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
   RELEASE_BLOCKED_STORAGE_RECONCILIATION`. Production dan Studio tidak berubah;
   rekonsiliasi data-integrity menjadi gate berikutnya.
