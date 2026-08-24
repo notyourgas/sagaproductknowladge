@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-102 - Staff lapangan mendapat guarded override Manual Booking
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-24 |
+| Topik | Role operasional untuk availability override booking OTS/manual SagaBook |
+| Keputusan | Staff lapangan harus dapat memakai guarded availability override bersama owner, manager, dan admin cabang karena staff adalah pelaksana sesi OTS. Finance admin tetap tidak mendapat capability. Seluruh guard konflik, alasan, acknowledgement, payment/provider hold, dan isolasi booking website tetap berlaku. |
+| Alasan | Kondisi studio dan keputusan penempatan sesi ditangani langsung oleh staff lapangan; membatasi override hanya pada role elevated menghambat operasi OTS nyata. |
+| Alternatif yang dipertimbangkan | Mempertahankan akses hanya untuk role elevated; memberi override kepada seluruh role termasuk finance; menghapus capability guard. |
+| Dampak | Database existing, seeder, dan fallback permission memberi capability khusus kepada staff tanpa memperluas akses finance atau melemahkan safety S290. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; source `194864cc821fd93d3b97c86f5919b54ba4809dad`, release `20260824153350-194864c`, rollback `20260824141906-0dda935`; authenticated staff UAT residual dan `BUSINESS_READY=false` |
+| Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [SagaBook Changelog](products/sagabook/CHANGELOG.md), [SagaBook Ledger](products/sagabook/FEATURE_COVERAGE_LEDGER.md), [Gaps](GAPS.md) |
+
 ## DEC-101 - Manual Booking dapat mengoverride slot dengan guard operasional
 
 | Field | Isi |
@@ -32,7 +46,7 @@ keputusan pengganti.
 | Alternatif yang dipertimbangkan | Membuka semua jam untuk seluruh staff; mengubah slot publik; bypass tanpa alasan/audit; mengizinkan override payment hold. |
 | Dampak | Manual Booking memiliki mode standard, custom time, dan guarded override; lock exemption dibatasi, audit actor di-HMAC, badge/history tersedia pada kalender, list, detail, Activity, dan laporan, sedangkan website serta provider tetap fail-closed. |
 | Pemberi keputusan | Andreas / founder |
-| Status | `CONFIRMED / PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; source `0dda9350656d4454bfeed3744c35a3b7ff7673fa`, release `20260824141906-0dda935`, rollback `20260824094717-10462ca`; authenticated UAT residual dan `BUSINESS_READY=false` |
+| Status | `DEPRECATED / SUPERSEDED_BY_DEC-102`; source `0dda9350656d4454bfeed3744c35a3b7ff7673fa`, release `20260824141906-0dda935`, rollback `20260824094717-10462ca`; guard tetap berlaku tetapi pembatasan role diganti DEC-102 |
 | Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [SagaBook Changelog](products/sagabook/CHANGELOG.md), [SagaBook Ledger](products/sagabook/FEATURE_COVERAGE_LEDGER.md), [Gaps](GAPS.md) |
 
 ## DEC-100 - Bukti QRIS dan transfer OTS tersimpan privat pada booking manual

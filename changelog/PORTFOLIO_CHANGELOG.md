@@ -1,5 +1,20 @@
 # Portfolio Changelog
 
+## 2026-08-24 - SagaBook staff override jadwal Manual Booking
+
+- Exact source `194864cc821fd93d3b97c86f5919b54ba4809dad` aktif sebagai
+  release `20260824153350-194864c`; rollback
+  `20260824141906-0dda935` tersedia.
+- Staff lapangan kini dapat memakai guarded availability override bersama
+  owner, manager, dan admin cabang. Finance admin tetap ditolak; reason,
+  acknowledgement, capacity confirmation, payment/provider hard block,
+  website isolation, audit, dan badge/history tetap berlaku.
+- Full/focused/visual test, typecheck/build, security/dependency,
+  backup/restore, migration rehearsal, database audit, verifier 17/17,
+  service/journal, serta public/security smoke lulus.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated staff UAT
+  dan studio pilot tetap residual sehingga `BUSINESS_READY=false`.
+
 ## 2026-08-24 - CoyaBag customer return integrity
 
 - Exact source `a947ce3da21e5720a1a491cfcf8ad19ae2baf638` aktif sebagai

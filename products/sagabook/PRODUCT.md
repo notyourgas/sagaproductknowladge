@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 24 Agustus 2026 21:24 WIB
-Evidence status: override jadwal Manual Booking S290 aktif di production; authenticated Owner/operator UAT tetap residual
+Updated: 24 Agustus 2026 22:46 WIB
+Evidence status: override jadwal Manual Booking S291 untuk staff lapangan aktif di production; authenticated operator UAT tetap residual
 
 ## Tujuan dokumen
 
@@ -15,6 +15,24 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- Perluasan role override Manual Booking S291 pada exact source
+  `194864cc821fd93d3b97c86f5919b54ba4809dad` berstatus `CONFIRMED / PUSHED /
+  UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
+  Capability `override_manual_booking_availability` kini tersedia bagi owner,
+  manager, admin cabang, dan staff lapangan; finance admin tetap tidak
+  mendapatkannya. Seluruh guard S290 tetap berlaku: alasan dan acknowledgement
+  wajib, konflik kapasitas memerlukan konfirmasi tambahan, payment/provider
+  hold tidak dapat dioverride, dan booking website tetap strict. Full PHP
+  1.150/1.150 (13.103 assertion), focused 25/25 (258), visual desktop/mobile,
+  critical typecheck, build, migration apply/rollback/reapply, database audit
+  100, dan audit dependency nol lulus. Encrypted backup/checksum/disposable
+  restore, exact verifier 17/17, 0 migration pending, service/journal, serta
+  public/security smoke 3/3 lulus. Release `20260824153350-194864c` aktif
+  dengan rollback `20260824141906-0dda935`; flag tetap aktif. Authenticated
+  staff production UAT dan dua studio pilot belum selesai sehingga
+  `BUSINESS_READY=false`.
 
 - Override jadwal Manual Booking S290 pada exact source
   `0dda9350656d4454bfeed3744c35a3b7ff7673fa` berstatus `CONFIRMED / PUSHED /

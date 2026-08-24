@@ -1,6 +1,23 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 24 Agustus 2026 21:24 WIB
+Evidence cut-off: 24 Agustus 2026 22:46 WIB
+
+Perluasan role override Manual Booking S291 exact source
+`194864cc821fd93d3b97c86f5919b54ba4809dad` telah `CONFIRMED / PUSHED /
+UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+DATA_INTEGRITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
+Coverage membuktikan staff lapangan memiliki capability override yang sama
+dengan owner, manager, dan admin cabang, sementara finance admin tetap ditolak.
+Migration database existing, seeder, dan fallback permission konsisten; seluruh
+reason/acknowledgement/conflict confirmation, payment/provider hard block,
+website isolation, audit, dan badge/history S290 tetap berlaku. Full PHP
+1.150/1.150 (13.103), focused 25/25 (258), visual desktop/mobile,
+typecheck/build, migration apply/rollback/reapply, database audit 100, dan
+dependency audit nol lulus. Release `20260824153350-194864c` aktif dengan
+rollback `20260824141906-0dda935`; encrypted backup/restore, verifier 17/17,
+0 pending migration, service/journal, dan public/security smoke 3/3 lulus.
+Authenticated staff UAT dan dua studio pilot tetap exit gate;
+`BUSINESS_READY=false`.
 
 Override jadwal Manual Booking S290 exact source
 `0dda9350656d4454bfeed3744c35a3b7ff7673fa` telah `CONFIRMED / PUSHED /

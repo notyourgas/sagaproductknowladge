@@ -7,6 +7,23 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Perluasan role override Manual Booking S291 exact source
+  `194864cc821fd93d3b97c86f5919b54ba4809dad`: `CONFIRMED / PUSHED /
+  UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
+  Staff lapangan kini memakai capability yang sama dengan owner, manager, dan
+  admin cabang untuk membuat sesi manual di luar slot. Finance admin tetap
+  tidak memiliki capability. Perubahan additive diterapkan pada database
+  existing dan seeder/fallback permission, sedangkan reason, acknowledgement,
+  extra-capacity confirmation, payment/provider hard block, website isolation,
+  audit, serta badge/history S290 tetap utuh. Full/focused PHP, visual dua
+  viewport, typecheck/build, dependency audit, migration rehearsal, encrypted
+  backup/restore, database audit 100, exact verifier 17/17, service/journal,
+  dan public/security smoke 3/3 lulus. Release aktif
+  `20260824153350-194864c`; rollback `20260824141906-0dda935`.
+  Authenticated staff UAT dan studio pilot tetap residual;
+  `BUSINESS_READY=false`.
+
 - Override jadwal Manual Booking S290 exact source
   `0dda9350656d4454bfeed3744c35a3b7ff7673fa`: `CONFIRMED / PUSHED /
   UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /

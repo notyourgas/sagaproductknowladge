@@ -12,14 +12,27 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-24T21:44:02+07:00 |
+| Waktu pembaruan terakhir | 2026-08-24T22:46:26+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `badd6855388a3cde8474f775f35cacf4d76ae9c5` |
-| Informasi terakhir disinkronkan | CoyaBag Customer Return Integrity production release. |
-| Status sinkronisasi | Delivery `PRODUCTION_DEPLOYED`; activation dan business readiness `BLOCKED`. |
-| Konflik | Tidak ada konflik source, release, rollback, atau runtime CoyaBag. |
-| Error | Tidak ada error sinkronisasi; readiness tetap 30/42 dan commerce fail-closed. |
+| Baseline sebelum pembaruan | `76e7beecc4c5fdf2cd713faf023994a2d3f3a142` |
+| Informasi terakhir disinkronkan | SagaBook S291 staff availability override production release. |
+| Status sinkronisasi | `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; `BUSINESS_READY=false`. |
+| Konflik | DEC-101 role scope disupersede secara eksplisit oleh DEC-102; tidak ada konflik source, release, rollback, atau runtime. |
+| Error | Tidak ada error sinkronisasi; authenticated staff UAT dan dua studio pilot tetap residual. |
+
+## File yang berubah pada sinkronisasi ini (SagaBook S291 staff override)
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `DECISIONS.md`
+- `GAPS.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## File yang berubah pada sinkronisasi ini (CoyaBag Customer Return Integrity)
 

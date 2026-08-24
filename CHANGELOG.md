@@ -1,5 +1,22 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-24 - SagaBook S291 staff availability override production sync
+
+- Informasi `CONFIRMED` berasal dari keputusan Andreas, exact source
+  `194864cc821fd93d3b97c86f5919b54ba4809dad`, release
+  `20260824153350-194864c`, rollback `20260824141906-0dda935`, dan
+  post-activation runtime verification.
+- Knowledge mencatat staff lapangan sebagai pemegang capability override
+  bersama owner, manager, dan admin cabang; finance admin tetap ditolak dan
+  seluruh conflict/payment/provider/website/audit guard S290 dipertahankan.
+- Full/focused/visual, typecheck/build, security/dependency, encrypted
+  backup/restore, migration apply/rollback/reapply, database audit 100, exact
+  verifier 17/17, service/journal, dan public/security smoke 3/3 lulus.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated staff UAT
+  dan dua studio pilot masih residual sehingga `BUSINESS_READY=false`.
+- Dokumen terdampak: SagaBook product/dossier/changelog/coverage, decisions,
+  gaps, portfolio, master knowledge, root changelog, dan sync status.
+
 ## 2026-08-24 - CoyaBag customer return integrity production sync
 
 - Informasi `CONFIRMED` berasal dari exact source
