@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - CoyaBag Gallery production sync
+
+- Informasi `CONFIRMED` berasal dari exact source
+  `9abeb533069e476c33a6c099d8975af8df99616e`, immutable release
+  `20260825-9abeb53`, rollback `20260824-9819148`, dan runtime verification.
+- Knowledge mencatat CMS-first/product-owned fallback, Admin category/order/media/
+  destination lifecycle, responsive filters/carousel/archive, focus-safe preview,
+  visual failure states, exact product handoff, dan lazy route assets.
+- Full test/build/security, dependency audit, backup, public desktop/mobile,
+  workers, monitor, dan smoke lulus. Readiness 30/42 dengan 12 blocker;
+  activation dan business readiness tetap `BLOCKED`.
+- Dokumen terdampak: CoyaBag product/dossier/changelog/gaps, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-25 - SagaView S281 Support Hub launcher sync
 
 - Informasi `CONFIRMED` berasal dari exact source

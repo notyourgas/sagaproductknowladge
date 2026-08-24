@@ -8,6 +8,21 @@ Mencatat perubahan material COYABAG dengan provenance public-safe.
 
 Surface deployment tidak otomatis berarti commerce activation.
 
+## 2026-08-25 - Gallery managed-content production release
+
+- Informasi `CONFIRMED` berasal dari exact source
+  `9abeb533069e476c33a6c099d8975af8df99616e`, immutable Hostinger release
+  `20260825-9abeb53`, rollback `20260824-9819148`, dan postdeploy verification.
+- Gallery memakai CMS published sebagai authority dan fallback hanya ke media
+  katalog published milik produk. Placeholder source dihapus; kategori, urutan,
+  alt text, image/video, destination, dan lifecycle konten dikelola dari Admin.
+- Dynamic filter, swipe/pointer/keyboard, reduced motion, focus-safe preview,
+  broken/loading/partial/empty state, exact product handoff, dan photos-only
+  homepage lulus production desktop/mobile.
+- Storefront 99/99, Laravel full regression 328 pass/1 skip, full release gate,
+  dependency audit, backup, workers, monitor, dan public smoke lulus. Readiness
+  tetap 30/42 dengan 12 blocker; commerce/provider tetap fail-closed.
+
 ## 2026-08-25 - Our Product live-catalog production release
 
 - Informasi `CONFIRMED` berasal dari exact source

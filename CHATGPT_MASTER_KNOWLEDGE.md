@@ -3107,10 +3107,19 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release aktif `20260824-9819148` menjalankan exact source
-`9819148e8ecce8469d7802841007f8cd111c3246` dengan rollback
-`20260824-55674a3`. Our Product memuat seluruh seri published tanpa batas empat
-produk, menjaga ownership story/media/alt text, dan menyambungkan varian, harga,
+Release aktif `20260825-9abeb53` menjalankan exact source
+`9abeb533069e476c33a6c099d8975af8df99616e` dengan rollback
+`20260824-9819148`. Gallery memakai CMS published sebagai authority dan fallback
+hanya ke media katalog published milik produk. Operator mengelola kategori,
+urutan, alt text, image/video, destination, dan lifecycle publish dari Admin.
+Filter, touch/pointer/keyboard, reduced motion, focus-safe preview, visual failure
+states, exact product handoff, dan photos-only homepage lulus production
+desktop/mobile; route assets dimuat lazy.
+
+Release sebelumnya `20260824-9819148` menjalankan exact source
+`9819148e8ecce8469d7802841007f8cd111c3246`. Our Product memuat seluruh seri
+published tanpa batas empat produk, menjaga ownership story/media/alt text, dan
+menyambungkan varian, harga,
 stok, exact cart, serta detail produk. Video hanya muncul bila dipublikasikan
 untuk seri tersebut. Loading/error/empty/missing-media dan browser
 desktop-mobile lulus; schema `2026-08-24-our-product-v1` aktif dengan route

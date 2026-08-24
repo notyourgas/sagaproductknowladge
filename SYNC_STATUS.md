@@ -12,14 +12,25 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T01:22:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T01:39:02+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `5c62886` |
-| Informasi terakhir disinkronkan | SagaView S281 Support Hub launcher discoverability. |
-| Status sinkronisasi | `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah. |
-| Konflik | Tidak ada konflik source; S281 berada di atas backend/Owner production S279. |
-| Error | Tidak ada error sinkronisasi; authenticated UAT dan guarded deployment kandidat S281 tetap residual. |
+| Baseline sebelum pembaruan | `d5b547d` |
+| Informasi terakhir disinkronkan | CoyaBag Gallery managed-content production release. |
+| Status sinkronisasi | `PRODUCTION_DEPLOYED`; activation dan business readiness tetap `BLOCKED`. |
+| Konflik | Tidak ada konflik source atau runtime. |
+| Error | Tidak ada error sinkronisasi; 12 blocker commerce tetap terbuka. |
+
+## File yang berubah pada sinkronisasi ini (CoyaBag Gallery)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `GAPS.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaView S281 Support Hub launcher)
 

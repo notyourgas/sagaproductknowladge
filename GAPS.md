@@ -894,13 +894,20 @@ GAP-004, bukan gap implementasi warna komponen.
 
 ### COYABAG
 
-- `PRODUCTION_DEPLOYED`: release aktif `20260824-9819148`, exact source
+- `PRODUCTION_DEPLOYED`: release aktif `20260825-9abeb53`, exact source
+  `9abeb533069e476c33a6c099d8975af8df99616e`, membuat Gallery memakai CMS
+  published atau fallback media katalog published milik produk. Admin mengelola
+  kategori, urutan, media, destination, dan lifecycle publish; visual states,
+  keyboard/touch, exact product handoff, serta homepage photos-only lulus.
+  Rollback `20260824-9819148` tersedia; readiness tetap 30/42 dengan 12 blocker
+  dan commerce fail-closed.
+
+- `PRODUCTION_DEPLOYED`: release sebelumnya `20260824-9819148`, exact source
   `9819148e8ecce8469d7802841007f8cd111c3246`, membuat Our Product memakai
   seluruh seri published, product-owned story/media/alt text, exact variant,
   harga, stok, cart, dan product-detail handoff. Video placeholder tidak
   diperlakukan sebagai konten published. Rollback `20260824-55674a3` tersedia;
-  full gate dan public desktop-mobile smoke lulus. Readiness tetap 30/42 dengan
-  12 blocker dan commerce fail-closed.
+  full gate dan public desktop-mobile smoke lulus.
 
 - `PRODUCTION_DEPLOYED`: release sebelumnya `20260824-55674a3`, exact source
   `55674a3871eef05e68c9eaaf4cc5520698d5a7d2`, membuat Bag Finder memakai

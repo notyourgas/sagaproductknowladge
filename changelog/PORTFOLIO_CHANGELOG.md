@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-25 - CoyaBag Gallery managed-content integrity
+
+- Exact source `9abeb533069e476c33a6c099d8975af8df99616e` aktif sebagai
+  Hostinger release `20260825-9abeb53`; rollback `20260824-9819148` tersedia.
+- Customer melihat Gallery dari CMS published atau media katalog published milik
+  produk, dengan filter, swipe/keyboard, preview, exact product handoff, dan
+  photos-only homepage. Operator dapat mengatur kategori, urutan, media, tujuan,
+  dan lifecycle publish melalui Admin.
+- Full frontend/backend, security/dependency, browser desktop/mobile, backup,
+  workers, monitor, dan public smoke lulus. Status `PRODUCTION_DEPLOYED`;
+  readiness 30/42 dan commerce tetap fail-closed.
+
 ## 2026-08-25 - SagaView S281 Support Hub launcher
 
 - Bantuan Owner sekarang mudah dikenali sebagai `Bantuan SagaView` pada

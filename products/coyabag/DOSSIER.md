@@ -7,7 +7,7 @@ content COYABAG tanpa menyamakan surface live dengan commerce aktif.
 
 ## Konteks dan status bukti
 
-- Updated: 24 Agustus 2026
+- Updated: 25 Agustus 2026
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `BLOCKED`
 - Business readiness: `BLOCKED`
@@ -78,10 +78,20 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260824-9819148` memakai source
-`9819148e8ecce8469d7802841007f8cd111c3246` dan rollback
-`20260824-55674a3`. Our Product kini memuat seluruh seri published dari snapshot
-Laravel, mempertahankan ownership story/media/alt text, dan menghubungkan warna,
+Release production terbaru `20260825-9abeb53` memakai source
+`9abeb533069e476c33a6c099d8975af8df99616e` dan rollback
+`20260824-9819148`. Gallery memakai CMS published sebagai authority dan hanya
+turun ke media katalog published milik produk ketika CMS kosong atau unavailable.
+Operator dapat mengatur kategori, urutan, alt text, image/video, tujuan,
+draft/schedule/publish/rollback melalui Admin. Filter, touch/pointer/keyboard,
+reduced motion, focus return, broken/loading/partial/empty state, exact product
+handoff, dan photos-only homepage lulus browser production desktop/mobile.
+Route JavaScript dan CSS Gallery dimuat lazy; commerce tetap fail-closed.
+
+Release sebelumnya `20260824-9819148` memakai source
+`9819148e8ecce8469d7802841007f8cd111c3246`. Our Product memuat seluruh seri
+published dari snapshot Laravel, mempertahankan ownership story/media/alt text,
+dan menghubungkan warna,
 harga, stok, exact-variant cart, serta detail produk. Video tidak dibuat sebagai
 placeholder publik; static fallback, loading, error/retry, empty, missing media,
 dan sold-out state lulus browser desktop/mobile. Schema

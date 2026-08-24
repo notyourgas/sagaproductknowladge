@@ -1,6 +1,6 @@
 # COYABAG Product Knowledge
 
-Updated: 24 Agustus 2026
+Updated: 25 Agustus 2026
 Evidence status: production surfaces + blocked commerce activation
 
 ## Tujuan dokumen
@@ -60,9 +60,17 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260824-9819148` dengan source
-  `9819148e8ecce8469d7802841007f8cd111c3246` melayani production;
-  rollback langsung `20260824-55674a3` dipertahankan.
+- Release aktif `20260825-9abeb53` dengan source
+  `9abeb533069e476c33a6c099d8975af8df99616e` melayani production;
+  rollback langsung `20260824-9819148` dipertahankan.
+- Gallery kini memakai media CMS published sebagai sumber utama. Jika CMS kosong
+  atau sementara gagal, storefront hanya memakai media katalog published milik
+  produk dengan tujuan produk/warna yang tepat; placeholder source dihapus.
+- Kategori, urutan, alt text, image/video, dan tujuan Gallery dapat dikelola dari
+  Admin. Filter, swipe/pointer/keyboard, reduced motion, focus-safe preview,
+  loading/partial/empty/broken state, serta photos-only homepage handoff lulus
+  acceptance production desktop/mobile. Gallery JS/CSS dimuat sebagai route
+  assets lazy.
 - Our Product kini merender seluruh seri published tanpa batas arbitrer. Story,
   media, alt text, varian, harga, stok, cart, dan detail produk mengikuti
   snapshot Laravel milik seri tersebut. Video hanya tampil jika dipublikasikan
