@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-24 - CoyaBag Wishlist production sync
+
+- Informasi `CONFIRMED` berasal dari exact source
+  `759e2a5c8f6c8497afc0d49d3e3d8da32ae44592`, immutable release
+  `20260824-759e2a5`, rollback `20260824-56e1e56`, dan postdeploy runtime
+  verification.
+- Knowledge mencatat Wishlist exact-variant, migrasi format lama, live-catalog
+  reconciliation, API-failure preservation, cart handoff, recovery/empty state,
+  serta lazy Product Grid yang sudah aktif di production.
+- Full test/build/security, dependency audit, backup, public desktop/mobile,
+  endpoint, worker, log, dan monitor lulus. Readiness tetap 28/40 dengan 12
+  blocker; checkout dan commerce activation tidak berubah.
+- Dokumen terdampak: CoyaBag product/changelog, gaps, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-24 - CoyaBag product-detail production sync
 
 - Informasi `CONFIRMED` berasal dari exact source

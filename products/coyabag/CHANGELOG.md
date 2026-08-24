@@ -8,6 +8,23 @@ Mencatat perubahan material COYABAG dengan provenance public-safe.
 
 Surface deployment tidak otomatis berarti commerce activation.
 
+## 2026-08-24 - Wishlist variant integrity production release
+
+- Informasi `CONFIRMED` berasal dari exact source
+  `759e2a5c8f6c8497afc0d49d3e3d8da32ae44592`, immutable Hostinger release
+  `20260824-759e2a5`, rollback `20260824-56e1e56`, dan public runtime smoke.
+- Wishlist kini menyimpan satu warna/varian per produk, memigrasikan data ID
+  lama, merekonsiliasi produk/warna terhadap katalog live, mempertahankan data
+  saat API gagal, dan memindahkan exact saved variant ke cart.
+- Kartu, Quick View, Detail Produk, Saved Bags, header count, recovery notice,
+  empty state, keyboard, dan no-overflow lulus desktop/mobile. Product Grid
+  menjadi lazy chunk 5,29 kB; entry production 193,0 KiB.
+- Storefront unit 54/54, Laravel 302 pass/1 skip dengan 2.249 assertion, build,
+  dependency/security audit, backup, endpoint, worker, monitor, dan public
+  smoke lulus.
+- Delivery `PRODUCTION_DEPLOYED`. Readiness tetap `28/40`, 70%, `ready=false`
+  dengan 12 blocker; checkout dan commerce activation tetap fail-closed.
+
 ## 2026-08-24 - Product detail variant integrity production release
 
 - Informasi `CONFIRMED` berasal dari exact source

@@ -12,14 +12,24 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-24T14:20:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-24T14:54:10+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `e91d780cc8f52e1086c7ece61d87d5a917ff6f97` |
-| Informasi terakhir disinkronkan | CoyaBag product-detail variant integrity production release. |
+| Baseline sebelum pembaruan | `80ad90018ffa189e533ac156fbdcc1ea86253703` |
+| Informasi terakhir disinkronkan | CoyaBag Wishlist variant integrity production release. |
 | Status sinkronisasi | `PRODUCTION_DEPLOYED`; commerce activation tetap fail-closed. |
 | Konflik | Tidak ada konflik source, release, atau rollback. |
 | Error | Tidak ada error pada test, public smoke, worker, service, log, atau operational monitor. |
+
+## File yang berubah pada sinkronisasi ini (CoyaBag Wishlist production)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/CHANGELOG.md`
+- `GAPS.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## File yang berubah pada sinkronisasi ini (CoyaBag product-detail production)
 

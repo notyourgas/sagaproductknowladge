@@ -60,9 +60,9 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260824-56e1e56` dengan source
-  `56e1e56c6ba8e494691410fab54e6910cdd0da36` melayani production;
-  rollback langsung `20260824-9025d07` dipertahankan.
+- Release aktif `20260824-759e2a5` dengan source
+  `759e2a5c8f6c8497afc0d49d3e3d8da32ae44592` melayani production;
+  rollback langsung `20260824-56e1e56` dipertahankan.
 - Release ini menambahkan destination/quote integrity, payment-to-fulfillment,
   Delivery Order/AWB/pickup/label foundation, tracking webhook inbox, shipping
   finance ledger, cancellation/incident/refund workflow, command center, dan
@@ -94,7 +94,14 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 - Galeri menangani nol, satu, atau banyak gambar tanpa kontrol palsu. Loading,
   API error/retry, invalid color, disclosure spesifikasi, sticky mobile action,
   serta related product lulus acceptance desktop/mobile. Product Detail dimuat
-  sebagai lazy chunk 12,24 KiB dan entry production tetap di bawah 200 KiB.
+  sebagai lazy chunk 12,72 kB dan entry production tetap di bawah 200 KiB.
+- Wishlist menyimpan satu warna/varian authoritative per produk, memigrasikan
+  format ID lama setelah katalog live siap, dan mempertahankan data lokal saat
+  API loading/gagal. Produk yang tidak lagi diterbitkan dihapus, warna yang
+  hilang dipulihkan, dan varian sold-out tetap dapat dihapus.
+- Kartu, Quick View, Detail Produk, Saved Bags, badge header, dan cart handoff
+  berbagi state varian yang sama pada desktop/mobile. Product Grid menjadi lazy
+  chunk 5,29 kB; entry production lulus budget pada 193,0 KiB.
 - Scheduler terminal expiry sudah fail-closed dan concurrency-tested.
 - Release candidate source `264c6ac2ebec33c6471a4c49572ddcdc82b51cf2`
   merekonsiliasi

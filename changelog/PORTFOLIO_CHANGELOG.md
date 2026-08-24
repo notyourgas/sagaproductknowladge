@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-24 - CoyaBag Wishlist variant integrity
+
+- Exact source `759e2a5c8f6c8497afc0d49d3e3d8da32ae44592` aktif sebagai
+  Hostinger release `20260824-759e2a5`; rollback `20260824-56e1e56` tersedia.
+- Wishlist menjaga satu warna/varian authoritative, memigrasikan format lama,
+  merekonsiliasi perubahan katalog, mempertahankan data saat API gagal, dan
+  membawa exact saved variant ke cart.
+- Desktop/mobile recovery, empty, card, Quick View, Detail, keyboard, dan
+  no-overflow lulus. Product Grid lazy 5,29 kB menjaga entry pada 193,0 KiB.
+- Full frontend/backend, security/dependency, backup, public smoke, worker,
+  log, dan monitor lulus. Status `PRODUCTION_DEPLOYED`; readiness tetap
+  `28/40` dengan 12 blocker dan commerce tetap fail-closed.
+
 ## 2026-08-24 - CoyaBag product-detail variant integrity
 
 - Exact source `56e1e56c6ba8e494691410fab54e6910cdd0da36` aktif sebagai
