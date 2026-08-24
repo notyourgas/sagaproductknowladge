@@ -60,9 +60,9 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260824-9025d07` dengan source
-  `9025d078a75bbad49285ae7b528e66c708a2a7a8` melayani production;
-  rollback langsung `20260824-b9782ad` dipertahankan.
+- Release aktif `20260824-56e1e56` dengan source
+  `56e1e56c6ba8e494691410fab54e6910cdd0da36` melayani production;
+  rollback langsung `20260824-9025d07` dipertahankan.
 - Release ini menambahkan destination/quote integrity, payment-to-fulfillment,
   Delivery Order/AWB/pickup/label foundation, tracking webhook inbox, shipping
   finance ledger, cancellation/incident/refund workflow, command center, dan
@@ -87,6 +87,14 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 - Quick View dan Video Tile dimuat per fitur; Media Chrome hanya membawa kontrol
   yang dipakai. Build production lulus budget entry 198,8 KiB dan total JS
   653,3 KiB.
+- Detail produk kini mempertahankan warna terpilih dari kartu produk, Quick
+  View, pencarian, editorial link, Bag Finder, dan cart melalui URL yang dapat
+  dibagikan. Harga, stok, media, quantity, dan identitas cart mengikuti varian
+  yang sama; varian sold-out atau batas stok tetap fail-closed.
+- Galeri menangani nol, satu, atau banyak gambar tanpa kontrol palsu. Loading,
+  API error/retry, invalid color, disclosure spesifikasi, sticky mobile action,
+  serta related product lulus acceptance desktop/mobile. Product Detail dimuat
+  sebagai lazy chunk 12,24 KiB dan entry production tetap di bawah 200 KiB.
 - Scheduler terminal expiry sudah fail-closed dan concurrency-tested.
 - Release candidate source `264c6ac2ebec33c6471a4c49572ddcdc82b51cf2`
   merekonsiliasi

@@ -2972,9 +2972,9 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release aktif `20260824-9025d07` menjalankan exact source
-`9025d078a75bbad49285ae7b528e66c708a2a7a8` dengan rollback
-`20260824-b9782ad`. Fondasi yang tersedia membawa destination/quote integrity,
+Release aktif `20260824-56e1e56` menjalankan exact source
+`56e1e56c6ba8e494691410fab54e6910cdd0da36` dengan rollback
+`20260824-9025d07`. Fondasi yang tersedia membawa destination/quote integrity,
 payment-to-fulfillment, Delivery Order/AWB/pickup/label/tracking foundation,
 shipping finance ledger, cancellation/incident/refund workflow, operator
 command center, dan customer timeline. Empat migration additive, fresh backup,
@@ -2989,6 +2989,13 @@ Laravel, stok numerik, URL shareable, browser history, serta loading/error/
 empty/wishlist recovery. Unit, build, Laravel, security/dependency, backup,
 public browser desktop/mobile, endpoints, workers, headers, dan operational
 monitor lulus. Status `PRODUCTION_DEPLOYED`; commerce tetap fail-closed.
+
+Release aktif juga membuat Product Detail variant-safe: warna terpilih bertahan
+melalui URL dan seluruh discovery path; media, harga, stok, quantity, serta cart
+identity memakai varian yang sama. Galeri adaptif, sold-out/stock-limit
+fail-closed, loading/error/retry, invalid-color recovery, disclosure, sticky
+mobile action, keyboard, dan no-overflow lulus desktop/mobile. Product Detail
+menjadi lazy chunk 12,24 KiB dan entry production tetap di bawah 200 KiB.
 
 Kartu produk pada release aktif memakai kontrak varian fail-closed untuk media,
 harga, stok, warna, dan cart. Sold-out tidak dapat ditambahkan; Quick View

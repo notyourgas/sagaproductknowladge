@@ -893,6 +893,13 @@ GAP-004, bukan gap implementasi warna komponen.
 
 ### COYABAG
 
+- `PRODUCTION_DEPLOYED`: release aktif `20260824-56e1e56`, exact source
+  `56e1e56c6ba8e494691410fab54e6910cdd0da36`, menutup gap Product Detail untuk
+  continuity warna/varian, gallery adaptif, exact cart identity, stock limit,
+  loading/error/retry, keyboard, dan responsive no-overflow. Rollback
+  `20260824-9025d07` tersedia; full gate dan public desktop/mobile smoke lulus.
+  Checkout tetap fail-closed pada readiness `28/40`, 70%, dengan 12 blocker.
+
 - `PRODUCTION_DEPLOYED`: release aktif `20260824-9025d07`, exact source
   `9025d078a75bbad49285ae7b528e66c708a2a7a8`, menutup gap product-card
   variant/media/stock integrity, touch-keyboard parity, Quick View, focus

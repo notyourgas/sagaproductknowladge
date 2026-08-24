@@ -8,6 +8,24 @@ Mencatat perubahan material COYABAG dengan provenance public-safe.
 
 Surface deployment tidak otomatis berarti commerce activation.
 
+## 2026-08-24 - Product detail variant integrity production release
+
+- Informasi `CONFIRMED` berasal dari exact source
+  `56e1e56c6ba8e494691410fab54e6910cdd0da36`, immutable Hostinger release
+  `20260824-56e1e56`, rollback `20260824-9025d07`, dan public runtime smoke.
+- Detail produk mempertahankan warna terpilih melalui URL dan seluruh jalur
+  discovery. Harga, stok, media, quantity, serta identitas cart mengikuti
+  varian yang sama; sold-out dan batas stok fail-closed.
+- Galeri nol/satu/banyak gambar, loading, error/retry, invalid color,
+  disclosure spesifikasi, sticky mobile action, related product, keyboard,
+  dan no-overflow lulus desktop/mobile. Product Detail menjadi lazy chunk
+  12,24 KiB dan entry production tetap di bawah 200 KiB.
+- Storefront unit 48/48, Laravel 302 pass/1 skip dengan 2.249 assertion, build,
+  dependency/security audit, backup, endpoint, worker, monitor, dan public
+  smoke lulus.
+- Delivery `PRODUCTION_DEPLOYED`. Readiness tetap `28/40`, 70%, `ready=false`
+  dengan 12 blocker; checkout dan commerce activation tetap fail-closed.
+
 ## 2026-08-24 - Product card integrity production release
 
 - Informasi `CONFIRMED` berasal dari exact source

@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-24 - CoyaBag product-detail variant integrity
+
+- Exact source `56e1e56c6ba8e494691410fab54e6910cdd0da36` aktif sebagai
+  Hostinger release `20260824-56e1e56`; rollback `20260824-9025d07` tersedia.
+- Detail produk menjaga warna, media, harga, stok, quantity, dan cart identity
+  yang sama dari discovery sampai cart; sold-out dan stock limit fail-closed.
+- Galeri adaptif, loading/error/retry, invalid-color recovery, disclosure,
+  sticky mobile CTA, related product, keyboard, dan no-overflow lulus dua
+  viewport. Product Detail dipisahkan menjadi lazy chunk 12,24 KiB.
+- Full frontend/backend, security/dependency, backup, public smoke, worker,
+  log, dan monitor lulus. Status `PRODUCTION_DEPLOYED`; readiness tetap
+  `28/40` dengan 12 blocker dan commerce tetap fail-closed.
+
 ## 2026-08-24 - CoyaBag product-card integrity
 
 - Exact source `9025d078a75bbad49285ae7b528e66c708a2a7a8` aktif sebagai
