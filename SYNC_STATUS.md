@@ -12,14 +12,25 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-24T17:06:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-24T17:09:23+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `52470e5acb261234c100942c849f246a5ede82fd` |
-| Informasi terakhir disinkronkan | SagaBook S289 bukti pembayaran OTS Manual Booking production release. |
-| Status sinkronisasi | `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; `BUSINESS_READY=false`. |
-| Konflik | Tidak ada konflik sumber atau runtime. |
-| Error | Tidak ada error runtime; authenticated Owner/operator UAT dan dua studio pilot tetap residual. |
+| Baseline sebelum pembaruan | `5115d0b9a8ead408e98280688400af0c16b7638e` |
+| Informasi terakhir disinkronkan | CoyaBag Cart and catalog reconciliation production release. |
+| Status sinkronisasi | Delivery `PRODUCTION_DEPLOYED`; activation dan business readiness `BLOCKED`. |
+| Konflik | Tidak ada konflik source, release, rollback, atau runtime COYABAG. |
+| Error | Readiness tetap 28/40 dengan 12 blocker; checkout tetap fail-closed. |
+
+## File yang berubah pada sinkronisasi ini (CoyaBag Cart reconciliation)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `GAPS.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaBook S289 bukti pembayaran OTS)
 

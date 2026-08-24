@@ -78,9 +78,9 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260824-61429f0` memakai source
-`61429f02dc44275492f0c45bc416bbad7acb486c` dan rollback
-`20260824-759e2a5`. Customer flow kini memiliki quote snapshot yang divalidasi
+Release production terbaru `20260824-7ffb202` memakai source
+`7ffb202c642a6d67a8cde1cb48c970ae383cb8f9` dan rollback
+`20260824-61429f0`. Customer flow kini memiliki quote snapshot yang divalidasi
 server, payment-to-fulfillment, serta timeline order/pengiriman terpadu.
 Operator memiliki shipping command center, packing/weight review, provider
 operation journal, pickup/label/tracking foundation, finance ledger,
@@ -94,6 +94,13 @@ Cart memiliki parity keyboard/touch, recovery, remove/undo, dan no-overflow.
 Checkout/quote server menolak variant ID yang tidak aktif dan memakai published
 commercial snapshot; tidak ada order atau inventory production yang diubah pada
 acceptance release ini.
+
+Cart menyegarkan katalog setelah reconnect, mendeduplikasi refresh paralel, dan
+memverifikasi perubahan lintas tab. Payload lintas tab yang malformed ditolak
+tanpa menghapus sesi aktif. Handoff ke customer detail melakukan refresh
+authoritative; perubahan harga, stok, atau availability tetap berada pada
+Review Cart dengan feedback live sampai pemeriksaan berikutnya bersih. Checkout
+production tetap disabled.
 
 ## Business model
 
@@ -170,6 +177,10 @@ Surface live dapat disalahartikan sebagai checkout aktif; dummy data, provider,
 2FA recovery, restore drill, monitoring, dan legal policy adalah blocker.
 Residual inheritance security header storefront sudah ditutup; CSP tidak
 diubah dalam hardening ini.
+
+Private order access masih perlu dipindahkan dari long-lived browser storage
+sebelum commerce activation. Ini risiko Checkout yang terbuka, bukan kemampuan
+production yang sudah selesai.
 
 Readiness runtime terbaru `28/40` atau 70%, `ready=false`, dengan 12 blocker:
 payment key/live mode/provider, owner 2FA, launch UAT/sign-off, mail/notification

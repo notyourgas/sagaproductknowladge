@@ -3028,9 +3028,9 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release aktif `20260824-61429f0` menjalankan exact source
-`61429f02dc44275492f0c45bc416bbad7acb486c` dengan rollback
-`20260824-759e2a5`. Fondasi yang tersedia membawa destination/quote integrity,
+Release aktif `20260824-7ffb202` menjalankan exact source
+`7ffb202c642a6d67a8cde1cb48c970ae383cb8f9` dengan rollback
+`20260824-61429f0`. Fondasi yang tersedia membawa destination/quote integrity,
 payment-to-fulfillment, Delivery Order/AWB/pickup/label/tracking foundation,
 shipping finance ledger, cancellation/incident/refund workflow, operator
 command center, dan customer timeline. Empat migration additive, fresh backup,
@@ -3068,6 +3068,14 @@ Drawer dan halaman Cart berbagi recovery, line total, remove/undo, focus trap/
 return, kontrol 44 px, serta no-overflow desktop/mobile. Laravel quote/checkout
 memvalidasi varian aktif dan published commercial snapshot. Full gate dan live
 UAT lulus; checkout tetap disabled pada readiness 28/40 dengan 12 blocker.
+
+Cart juga menyegarkan katalog setelah reconnect, mendeduplikasi refresh, dan
+memverifikasi perubahan lintas tab tanpa menerima payload malformed. Handoff ke
+customer detail melakukan authoritative refresh; perubahan harga, stok, atau
+availability tetap di Review Cart sampai pemeriksaan berikutnya bersih.
+Desktop/mobile, full gate, workers, dan monitor lulus. Private order access di
+long-lived browser storage tetap risiko Checkout yang harus ditutup sebelum
+commerce activation.
 
 Kartu produk pada release aktif memakai kontrak varian fail-closed untuk media,
 harga, stok, warna, dan cart. Sold-out tidak dapat ditambahkan; Quick View

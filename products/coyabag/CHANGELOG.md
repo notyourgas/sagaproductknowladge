@@ -8,6 +8,23 @@ Mencatat perubahan material COYABAG dengan provenance public-safe.
 
 Surface deployment tidak otomatis berarti commerce activation.
 
+## 2026-08-24 - Cart and catalog reconciliation production release
+
+- Informasi `CONFIRMED` berasal dari exact source
+  `7ffb202c642a6d67a8cde1cb48c970ae383cb8f9`, immutable Hostinger release
+  `20260824-7ffb202`, rollback `20260824-61429f0`, dan public runtime smoke.
+- Cart sekarang menyegarkan katalog setelah reconnect, mendeduplikasi refresh,
+  memverifikasi perubahan lintas tab, dan menolak payload eksternal invalid
+  tanpa menghapus sesi aktif.
+- Handoff ke Checkout melakukan pemeriksaan authoritative terakhir. Perubahan
+  harga, stok, atau availability menahan customer pada Review Cart dengan
+  feedback yang dapat ditindaklanjuti sampai pemeriksaan berikutnya bersih.
+- Storefront 68/68, Laravel 310 pass/1 skip dengan 2.297 assertion, full build,
+  security/dependency, backup, worker, monitor, serta public desktop/mobile
+  lulus. Entry production 199,0 KiB.
+- Delivery `PRODUCTION_DEPLOYED`. Readiness tetap `28/40`, 70%, `ready=false`
+  dengan 12 blocker; checkout dan commerce activation tetap fail-closed.
+
 ## 2026-08-24 - Cart integrity and recovery production release
 
 - Informasi `CONFIRMED` berasal dari exact source
