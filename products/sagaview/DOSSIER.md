@@ -1,5 +1,27 @@
 # SagaView Dossier
 
+## 2026-08-24 - S272 Gallery Frame production recovery
+
+`CONFIRMED / PUSHED / UIUX_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED /
+LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Backend/Owner
+exact `fe2dcfc57e8b6592ad0162fabf079fbbd07c1097` aktif sebagai
+`20260824034431-fe2dcfc`; rollback langsung `20260823091225-c828bd9`.
+
+Preview Gallery Frame kini selalu membawa konteks workspace/tab, mencoba ulang
+satu kegagalan sementara, dan memberi recovery copy tanpa mengubah data.
+Production memakai shared storage dengan 247 file frame; seluruh 215 asset unik
+yang dirujuk 427 baris database terbaca dengan nol missing, size mismatch,
+checksum mismatch, atau read error. Dua backup fresh direkonsiliasi secara
+private/no-overwrite/checksum-verified sebelum activation.
+
+Focused backend 44/44 dan 188 assertion, browser desktop/mobile 4/4, full PHP
+1.003/1.003 dan 12.928 assertion, build 5.097 modul, audit Composer/npm nol,
+backup terenkripsi, restore disposable, deploy/post gate 6/6, atomic switch,
+API/login/session/admin asset, service, journal, serta rollback lulus. Studio
+tetap exact `ab2af26a...` / `20260823185455-ab2af26`. Tidak ada migration,
+payment/provider, atau upload foto/path/output. Authenticated Owner/operator UAT
+masih residual sehingga `BUSINESS_READY=false`.
+
 ## 2026-08-24 - S270 tutorial Customer Flow production
 
 `CONFIRMED / PUSHED / UIUX_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED /

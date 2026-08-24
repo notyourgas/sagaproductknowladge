@@ -1,5 +1,25 @@
 # SagaView Changelog
 
+## 2026-08-24 - S272 Gallery Frame production activation
+
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; `BUSINESS_READY=false`.
+- Backend/Owner exact `fe2dcfc57e8b6592ad0162fabf079fbbd07c1097`
+  aktif sebagai `20260824034431-fe2dcfc`; rollback langsung
+  `20260823091225-c828bd9`.
+- Gate ulang exact commit: focused backend 44/44 dan 188 assertion, browser
+  desktop/mobile 4/4, full PHP 1.003/1.003 dan 12.928 assertion, build 5.097
+  modul, serta audit Composer/npm nol.
+- Backup terenkripsi/source backup/restore disposable, deploy dan postdeploy
+  gate 6/6, atomic switch, API/login/session/admin asset, service, journal, dan
+  rollback lulus.
+- Current storage sekarang shared; seluruh 215 asset frame unik yang dirujuk
+  427 baris database terbaca dengan nol missing, size/checksum mismatch, atau
+  read error. Studio tetap `20260823185455-ab2af26`; tidak ada migration,
+  payment/provider, atau upload foto/path/output.
+- Evidence activation disimpan dua salinan dengan SHA-256
+  `e5d2fb5474d5c8d029f2da8987de852d67142fdda35158c06d0a3389e62abf48`.
+
 ## 2026-08-24 - S272 storage reconciled dan candidate gate 6/6
 
 - Klasifikasi: `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /

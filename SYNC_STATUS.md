@@ -12,16 +12,29 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-24T11:35:10+07:00 |
+| Waktu pembaruan terakhir | 2026-08-24T11:51:12+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `a0d47b9cb2b01083198d66b66590a5fbc308fde9` |
-| Informasi terakhir disinkronkan | SagaView S272 storage reconciliation, integritas Gallery Frame, dan candidate gate 6/6. |
-| Status sinkronisasi | `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / STAGING_READY`; production tetap pada release sebelumnya. |
-| Konflik | Tidak ada konflik storage tersisa; activation dan authenticated UAT tetap gate terpisah. |
-| Error | Tidak ada error pada rehearsal, rekonsiliasi, integritas asset, atau candidate gate. |
+| Baseline sebelum pembaruan | `616a7aa24aa49bc4c9974bdcc262528380b1bfb8` |
+| Informasi terakhir disinkronkan | SagaView S272 Gallery Frame production activation dan exact runtime pair. |
+| Status sinkronisasi | `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated UAT residual dan `BUSINESS_READY=false`. |
+| Konflik | Tidak ada konflik source, storage, release, atau rollback. |
+| Error | Tidak ada error pada activation, smoke, service, journal, atau integrity audit. |
 
-## File yang berubah pada sinkronisasi ini (SagaView S272 storage reconciliation)
+## File yang berubah pada sinkronisasi ini (SagaView S272 production activation)
+
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/DOSSIER.md`
+- `products/sagaview/CHANGELOG.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `DECISIONS.md`
+- `GAPS.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
+
+## File dari sinkronisasi sebelumnya (SagaView S272 storage reconciliation)
 
 - `products/sagaview/PRODUCT.md`
 - `products/sagaview/CHANGELOG.md`

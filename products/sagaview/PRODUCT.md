@@ -1,10 +1,10 @@
 # SagaView Product Knowledge
 
-Updated: 24 Agustus 2026 11:35 WIB
+Updated: 24 Agustus 2026 11:51 WIB
 
 SagaView S272 berstatus `CONFIRMED / PUSHED / UIUX_VALIDATED /
 SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
-IMPLEMENTED_NOT_DEPLOYED / STAGING_READY`. Owner
+PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Owner
 Gallery Frame sekarang membentuk URL preview
 dengan konteks workspace dan tab admin yang sama dengan request dashboard.
 Kegagalan pemuatan sementara dicoba ulang satu kali; bila tetap gagal, kartu
@@ -38,10 +38,15 @@ release aktif. Evidence repair disimpan dua salinan dengan SHA-256
 `823b19b70cb30c893e611f938d043ed683f856f279e741b7fbe50b90088da3e2`.
 
 Tidak ada migration, upload foto/path/output, perubahan harga,
-payment/provider, atau perubahan Studio. Release kandidat belum diaktifkan;
-production tetap sehat pada backend `20260823091225-c828bd9` dan Studio
-`20260823185455-ab2af26`. Guarded activation, smoke, service/journal, dan
-rollback tetap gate terpisah; `BUSINESS_READY=false`.
+payment/provider, atau perubahan Studio. Atomic activation berikutnya lulus:
+backend/Owner exact S272 aktif sebagai `20260824034431-fe2dcfc` dengan rollback
+langsung `20260823091225-c828bd9`. Predeploy dan postdeploy gate 6/6,
+API/login/session/admin asset, service, journal, serta shared storage lulus.
+Production kini membaca seluruh 215 asset frame unik dengan nol missing,
+size/checksum mismatch, atau read error. Studio tetap exact
+`ab2af26a1fc55f953c90605bc066eaa63937f966` / `20260823185455-ab2af26` dan
+sehat. Authenticated Owner/operator UAT tetap residual;
+`BUSINESS_READY=false`.
 
 SagaView S270 berstatus `CONFIRMED / PUSHED / UIUX_VALIDATED /
 SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /

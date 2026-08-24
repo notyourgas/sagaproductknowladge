@@ -1,13 +1,13 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 24 Agustus 2026 11:35 WIB
+Evidence cut-off: 24 Agustus 2026 11:51 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
 SagaView S272 Owner Gallery Frame exact backend/Owner
 `fe2dcfc57e8b6592ad0162fabf079fbbd07c1097` berstatus `CONFIRMED /
 PUSHED / UIUX_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
-IMPLEMENTED_NOT_DEPLOYED / STAGING_READY`. Preview frame kini membawa konteks
+PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Preview frame kini membawa konteks
 workspace/tab aktif, melakukan satu retry untuk kegagalan sementara, memakai
 lazy loading, dan menampilkan recovery copy bila tetap gagal. Playwright 4/4,
 31 focused PHP test dengan 107 assertion, build 5.097 modul, diff check, audit
@@ -26,9 +26,13 @@ idempotensi, serta konflik fail-closed lulus; metadata service-only benar,
 manifest aplikasi valid, dan candidate gate kini 6/6 tanpa critical atau
 warning. Backend tetap
 memverifikasi tenant dan integritas asset; foto/path/output tidak diunggah,
-pembayaran tetap off-app, Studio tidak berubah, production backend tetap
-`20260823091225-c828bd9`, release kandidat belum diaktifkan, dan
-`BUSINESS_READY=false`.
+pembayaran tetap off-app, dan Studio tidak berubah. Atomic activation lulus;
+backend/Owner exact S272 aktif sebagai `20260824034431-fe2dcfc` dengan rollback
+`20260823091225-c828bd9`. Current storage shared membaca seluruh 215 asset unik
+dengan nol missing, size/checksum mismatch, atau read error; predeploy dan
+postdeploy gate 6/6, API/login/session/admin asset, service, journal, serta
+rollback lulus. Studio tetap `20260823185455-ab2af26` dan
+`BUSINESS_READY=false` sampai UAT operator nyata.
 
 SagaBook fondasi operasional S286 exact source
 `9e4b44e5f6698b7284938fa1e4c948dd45c9e5d5` berstatus `CONFIRMED / PUSHED /

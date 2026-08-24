@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-24 - SagaView S272 Gallery Frame aktif di production
+
+- Backend/Owner exact `fe2dcfc57...` aktif sebagai
+  `20260824034431-fe2dcfc`; rollback langsung tersedia ke release sebelumnya.
+- Gallery Frame production sekarang memakai shared storage dan seluruh 215
+  asset unik terbaca tanpa missing atau integrity mismatch.
+- Exact-commit tests, build, dependency audit, backup/restore, atomic switch,
+  gate 6/6, public smoke, service, journal, dan rollback lulus. Studio tutorial
+  tetap aktif dan tidak berubah.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; UAT operator nyata masih
+  residual sehingga `BUSINESS_READY=false`.
+
 ## 2026-08-24 - SagaView S272 storage reconciliation selesai
 
 - Dua backup fresh yang dibutuhkan kandidat kini tersedia di shared storage

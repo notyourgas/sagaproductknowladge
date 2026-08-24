@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-098 - Kandidat kumulatif SagaView S272 diaktifkan setelah storage gate tertutup
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-24 |
+| Topik | Guarded production deployment Gallery Frame SagaView |
+| Keputusan | Seluruh kandidat SagaView yang sudah siap harus disinkronkan, direkonsiliasi, lalu dideploy dengan backup/restore, exact provenance, atomic switch, health/smoke, service/journal, dan rollback. Otorisasi tidak mencakup SagaBook atau produk lain. |
+| Alasan | Gallery Frame Owner perlu kembali menampilkan preview yang dirujuk database secara konsisten, sementara activation sebelumnya wajib tetap fail-closed sampai shared storage dan backup gate benar-benar valid. |
+| Alternatif yang dipertimbangkan | Menahan deployment; mengaktifkan tanpa rekonsiliasi backup; memindahkan kembali asset ke release-local storage. |
+| Dampak | Backend/Owner S272 aktif dengan shared storage; seluruh 215 asset unik terbaca tanpa integrity error. Studio tutorial tetap pada release aktif sebelumnya. Tidak ada migration, payment/provider, atau upload foto/path/output customer. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; backend/Owner `fe2dcfc57...` / `20260824034431-fe2dcfc`, rollback `20260823091225-c828bd9`; authenticated Owner/operator UAT residual dan `BUSINESS_READY=false` |
+| Dokumen terkait | [SagaView Product](products/sagaview/PRODUCT.md), [SagaView Dossier](products/sagaview/DOSSIER.md), [SagaView Changelog](products/sagaview/CHANGELOG.md), [SagaView Ledger](products/sagaview/FEATURE_COVERAGE_LEDGER.md), [Gaps](GAPS.md) |
+
 ## DEC-097 - Fondasi operasional SagaBook dipromosikan sebagai satu release kumulatif
 
 | Field | Isi |

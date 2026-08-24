@@ -1,11 +1,11 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 24 Agustus 2026 11:35 WIB
+Evidence cut-off: 24 Agustus 2026 11:51 WIB
 
 S272 Owner Gallery Frame preview recovery: exact backend/Owner
 `fe2dcfc57e8b6592ad0162fabf079fbbd07c1097` berstatus `CONFIRMED / PUSHED /
 UIUX_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
-IMPLEMENTED_NOT_DEPLOYED / STAGING_READY`. Preview yang sebelumnya dapat
+PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Preview yang sebelumnya dapat
 kehilangan konteks workspace/tab kini memakai URL tenant/tab yang eksplisit,
 mencoba ulang satu kegagalan sementara, dan menampilkan recovery copy bila
 asset tetap tidak dapat dibaca. Data frame tidak diubah oleh recovery UI.
@@ -21,8 +21,12 @@ no-overwrite, checksum-verified, dan atomic; metadata service-only dikoreksi.
 Rehearsal sukses/idempotent/conflict fail-closed lulus, manifest aplikasi valid,
 dan candidate gate kini 6/6 tanpa critical atau warning. No-upload, tenant
 isolation, checksum/integrity backend, dan pembayaran off-app tetap terjaga.
-Production tetap backend `20260823091225-c828bd9`; release kandidat belum
-diaktifkan, Studio tidak berubah, dan authenticated Owner UAT tetap terpisah.
+Atomic activation dan post-gate 6/6 lulus. Backend/Owner S272 kini aktif sebagai
+`20260824034431-fe2dcfc` dengan rollback `20260823091225-c828bd9`; current
+storage adalah shared dan seluruh 215 asset unik production terbaca dengan nol
+integrity error. Studio tetap exact `ab2af26a...` /
+`20260823185455-ab2af26`; authenticated Owner UAT tetap terpisah dan
+`BUSINESS_READY=false`.
 
 S270 tutorial Customer Flow: Studio exact
 `ab2af26a1fc55f953c90605bc066eaa63937f966` berstatus `PUSHED /
