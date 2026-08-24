@@ -3044,13 +3044,13 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release aktif `20260824-ab859d3` menjalankan exact source
-`ab859d3519a84c4cc1647a55671552b53979a473` dengan rollback
-`20260824-f3d75a1`. Fondasi yang tersedia membawa destination/quote integrity,
+Release aktif `20260824-a947ce3` menjalankan exact source
+`a947ce3da21e5720a1a491cfcf8ad19ae2baf638` dengan rollback
+`20260824-ab859d3`. Fondasi yang tersedia membawa destination/quote integrity,
 payment-to-fulfillment, Delivery Order/AWB/pickup/label/tracking foundation,
 shipping finance ledger, cancellation/incident/refund workflow, operator
-command center, dan customer timeline. Empat migration additive, fresh backup,
-dua worker, operational monitor, dan 39 public checks desktop/mobile lulus.
+command center, dan customer timeline. Migration additive terbaru, fresh
+backup, dua worker, operational monitor, dan public checks desktop/mobile lulus.
 Provider Delivery/Payment dan COD tetap eksplisit default-off. Readiness
 production `30/42` atau 71%, `ready=false`; activation dan business readiness
 tetap `BLOCKED`.
@@ -3068,6 +3068,14 @@ Admin Shipment Detail memakai state publik yang sama, tanpa membuat resi atau
 provider promise. Refresh berhenti pada state terminal/operator-required dan
 pulih setelah focus/visibility recovery. Kemampuan ini
 `PRODUCTION_DEPLOYED`, tetapi Shipping Delivery dan commerce tetap tidak aktif.
+
+Customer Returns memakai idempotency key order-bound dan payload hash untuk
+mencegah duplicate request/item/notifikasi saat retry atau concurrency.
+Customer hanya dapat membatalkan state `requested`; repeat cancel aman dan
+quantity kembali eligible. Storefront/Admin memakai public return/refund state
+dari server dengan instruksi customer terpisah dari catatan internal. Full gate
+dan browser desktop/mobile lulus; fitur ini `PRODUCTION_DEPLOYED`, tetapi tidak
+mengaktifkan payment, refund provider, atau commerce.
 
 Quote manual/external pada release aktif memiliki ID unik per penerbitan dan
 tidak menimpa snapshot lama. Order menyimpan waktu terbit/kedaluwarsa;
@@ -3119,8 +3127,8 @@ memverifikasi perubahan lintas tab tanpa menerima payload malformed. Handoff ke
 customer detail melakukan authoritative refresh; perubahan harga, stok, atau
 availability tetap di Review Cart sampai pemeriksaan berikutnya bersih.
 Desktop/mobile, full gate, workers, dan monitor lulus. Private order access di
-long-lived browser storage tetap risiko Checkout yang harus ditutup sebelum
-commerce activation.
+long-lived browser storage sudah ditutup oleh secure path-scoped HttpOnly order
+session; commerce activation tetap terpisah.
 
 Kartu produk pada release aktif memakai kontrak varian fail-closed untuk media,
 harga, stok, warna, dan cart. Sold-out tidak dapat ditambahkan; Quick View

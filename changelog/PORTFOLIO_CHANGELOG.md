@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-24 - CoyaBag customer return integrity
+
+- Exact source `a947ce3da21e5720a1a491cfcf8ad19ae2baf638` aktif sebagai
+  Hostinger release `20260824-a947ce3`; rollback `20260824-ab859d3` tersedia.
+- Customer return kini idempotent, concurrency-safe, dan hanya dapat dibatalkan
+  pada state yang aman. Customer/Admin berbagi state publik dari server tanpa
+  membuka catatan internal atau provider reference.
+- Full frontend/backend, security/dependency, backup, browser desktop/mobile,
+  workers, scheduler, dan public smoke lulus. Status `PRODUCTION_DEPLOYED`;
+  readiness 30/42 dan commerce tetap fail-closed.
+
 ## 2026-08-24 - SagaBook override jadwal Manual Booking
 
 - Exact source `0dda9350656d4454bfeed3744c35a3b7ff7673fa` aktif sebagai

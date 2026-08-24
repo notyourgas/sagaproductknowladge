@@ -60,14 +60,14 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260824-ab859d3` dengan source
-  `ab859d3519a84c4cc1647a55671552b53979a473` melayani production;
-  rollback langsung `20260824-f3d75a1` dipertahankan.
-- Release ini menambahkan destination/quote integrity, payment-to-fulfillment,
-  Delivery Order/AWB/pickup/label foundation, tracking webhook inbox, shipping
-  finance ledger, cancellation/incident/refund workflow, command center, dan
-  customer timeline.
-- Empat migration additive, fresh backup/checksum, dua worker, operational
+- Release aktif `20260824-a947ce3` dengan source
+  `a947ce3da21e5720a1a491cfcf8ad19ae2baf638` melayani production;
+  rollback langsung `20260824-ab859d3` dipertahankan.
+- Rangkaian release ini menambahkan destination/quote integrity,
+  payment-to-fulfillment, Delivery Order/AWB/pickup/label foundation, tracking
+  webhook inbox, shipping finance ledger, cancellation/incident/refund
+  workflow, command center, dan customer timeline.
+- Migration additive terbaru, fresh backup/checksum, dua worker, operational
   monitor, serta 39 public smoke check desktop/mobile lulus.
 - Readiness production resmi `30/42` atau 71%, `ready=false`, dengan 12
   blocker. COD, Delivery API, payment production, dan provider webhook eksplisit
@@ -152,6 +152,15 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
   koneksi kembali. Storefront 80/80, Laravel 322 pass/1 MySQL-only skip dengan
   2.449 assertion, browser desktop/mobile, full RC/security/dependency, backup,
   workers, scheduler, dan public smoke lulus. Entry production 199,0 KiB.
+- Customer Returns kini memakai idempotency key yang terikat order dan payload,
+  sehingga retry atau pengiriman concurrent tidak menggandakan permintaan,
+  item, maupun notifikasi. Customer hanya dapat membatalkan state `requested`;
+  pembatalan berulang aman dan quantity kembali eligible.
+- Storefront dan Admin memakai return/refund state dari server. Instruksi publik
+  dipisahkan dari catatan internal, dan customer tidak menerima provider
+  reference atau detail review privat. Storefront 84/84, Laravel 326 pass/1
+  MySQL-only skip dengan 2.494 assertion, browser desktop/mobile, full release
+  gate, backup, worker, scheduler, dan public smoke lulus.
 - Scheduler terminal expiry sudah fail-closed dan concurrency-tested.
 - Release candidate source `264c6ac2ebec33c6471a4c49572ddcdc82b51cf2`
   merekonsiliasi

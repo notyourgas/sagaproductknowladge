@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-24 - CoyaBag customer return integrity production sync
+
+- Informasi `CONFIRMED` berasal dari exact source
+  `a947ce3da21e5720a1a491cfcf8ad19ae2baf638`, immutable release
+  `20260824-a947ce3`, rollback `20260824-ab859d3`, dan postdeploy verification.
+- Knowledge mencatat idempotent/concurrency-safe return creation, retry-safe
+  cancellation, restored returnable quantity, server-authoritative public
+  action/refund state, serta pemisahan instruksi customer dari catatan internal.
+- Full test/build/security, dependency audit, backup, public desktop/mobile,
+  workers, scheduler, dan smoke lulus. Readiness 30/42 dengan 12 blocker;
+  commerce dan provider activation tetap fail-closed.
+- Dokumen terdampak: CoyaBag product/dossier/changelog, gaps, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-24 - SagaBook S290 manual availability override production sync
 
 - Informasi `CONFIRMED` berasal dari keputusan Andreas, exact source

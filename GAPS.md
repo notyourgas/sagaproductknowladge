@@ -894,7 +894,15 @@ GAP-004, bukan gap implementasi warna komponen.
 
 ### COYABAG
 
-- `PRODUCTION_DEPLOYED`: release aktif `20260824-ab859d3`, exact source
+- `PRODUCTION_DEPLOYED`: release aktif `20260824-a947ce3`, exact source
+  `a947ce3da21e5720a1a491cfcf8ad19ae2baf638`, membuat return creation
+  idempotent/concurrency-safe, cancellation retry-safe, serta menyelaraskan
+  public return/refund state customer dan admin tanpa membuka catatan internal.
+  Rollback `20260824-ab859d3` tersedia; full gate dan public desktop-mobile
+  smoke lulus. Readiness tetap 30/42 dengan 12 blocker dan commerce
+  fail-closed.
+
+- `PRODUCTION_DEPLOYED`: release sebelumnya `20260824-ab859d3`, exact source
   `ab859d3519a84c4cc1647a55671552b53979a473`, membuat delivery action
   server-authoritative, menyelaraskan customer/Admin Shipment Detail, serta
   menangani no-shipment, stale, exception, dan terminal state tanpa resi atau

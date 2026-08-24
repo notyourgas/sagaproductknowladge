@@ -8,6 +8,22 @@ Mencatat perubahan material COYABAG dengan provenance public-safe.
 
 Surface deployment tidak otomatis berarti commerce activation.
 
+## 2026-08-24 - Customer return integrity production release
+
+- Informasi `CONFIRMED` berasal dari exact source
+  `a947ce3da21e5720a1a491cfcf8ad19ae2baf638`, immutable Hostinger release
+  `20260824-a947ce3`, rollback `20260824-ab859d3`, dan postdeploy verification.
+- Return creation kini idempotent dan concurrency-safe; replay tidak
+  menggandakan request/item/notifikasi, sedangkan key yang dipakai untuk
+  payload berbeda ditolak.
+- Customer hanya dapat membatalkan state `requested`; repeat cancel aman dan
+  quantity kembali eligible. Storefront/Admin memakai public return/refund
+  state yang sama dengan pemisahan instruksi customer dan catatan internal.
+- Storefront 84/84, Laravel 326 pass/1 MySQL-only skip dengan 2.494 assertion,
+  full release/security/dependency, browser desktop/mobile, backup, workers,
+  scheduler, dan public smoke lulus. Readiness tetap 30/42 dengan 12 blocker;
+  commerce/provider fail-closed.
+
 ## 2026-08-24 - Delivery status and tracking integrity production release
 
 - Informasi `CONFIRMED` berasal dari exact source

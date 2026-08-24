@@ -78,9 +78,9 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260824-ab859d3` memakai source
-`ab859d3519a84c4cc1647a55671552b53979a473` dan rollback
-`20260824-f3d75a1`. Customer flow kini memiliki quote snapshot yang divalidasi
+Release production terbaru `20260824-a947ce3` memakai source
+`a947ce3da21e5720a1a491cfcf8ad19ae2baf638` dan rollback
+`20260824-ab859d3`. Customer flow kini memiliki quote snapshot yang divalidasi
 server, payment-to-fulfillment, serta timeline order/pengiriman terpadu.
 Operator memiliki shipping command center, packing/weight review, provider
 operation journal, pickup/label/tracking foundation, finance ledger,
@@ -102,6 +102,17 @@ dan panel customer-facing di Admin Shipment Detail menggunakan state yang sama,
 sedangkan refresh interval digabung dengan payment dan berhenti pada state
 terminal/operator-required. Browser desktop/mobile serta full release gate
 lulus tanpa mengaktifkan Shipping Delivery atau mengubah order production.
+
+Customer return creation memakai UUID client yang terikat order dan hash
+payload server. Replay yang sama mengembalikan request lama, sedangkan payload
+berbeda dengan key yang sama ditolak; order lock, unique constraint, dan outbox
+transactional mencegah duplikasi akibat retry atau concurrency. Customer hanya
+dapat membatalkan state `requested`, repeat cancel idempotent, dan quantity yang
+dibatalkan kembali eligible. Storefront/Admin memakai public return action dan
+safe refund state yang sama, tetapi instruksi customer tetap dipisahkan dari
+catatan internal dan provider reference. Full release gate, browser dua
+viewport, backup, worker, scheduler, dan smoke lulus tanpa memutasi return
+production atau mengaktifkan payment/refund provider.
 
 Quote manual/external kini memiliki identitas unik dan immutable untuk setiap
 penerbitan. Waktu terbit/kedaluwarsa ikut tersimpan pada snapshot order;

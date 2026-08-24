@@ -12,16 +12,27 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-24T21:24:10+07:00 |
+| Waktu pembaruan terakhir | 2026-08-24T21:44:02+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `a95a9c002d5dfeb30249ade32416042ad1f2ce5a` |
-| Informasi terakhir disinkronkan | SagaBook S290 Manual Booking availability override production release. |
-| Status sinkronisasi | Delivery `PRODUCTION_DEPLOYED`; activation `PRODUCTION_ACTIVATED`; business readiness `NOT_BUSINESS_READY`. |
-| Konflik | Tidak ada konflik source, release, rollback, atau runtime SagaBook. |
-| Error | GitHub Actions tertahan billing; kontrak local VPS resmi berhasil. Authenticated UAT dan dua studio pilot residual. |
+| Baseline sebelum pembaruan | `badd6855388a3cde8474f775f35cacf4d76ae9c5` |
+| Informasi terakhir disinkronkan | CoyaBag Customer Return Integrity production release. |
+| Status sinkronisasi | Delivery `PRODUCTION_DEPLOYED`; activation dan business readiness `BLOCKED`. |
+| Konflik | Tidak ada konflik source, release, rollback, atau runtime CoyaBag. |
+| Error | Tidak ada error sinkronisasi; readiness tetap 30/42 dan commerce fail-closed. |
 
-## File yang berubah pada sinkronisasi ini (SagaBook S290 override jadwal manual)
+## File yang berubah pada sinkronisasi ini (CoyaBag Customer Return Integrity)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `GAPS.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
+
+## File dari sinkronisasi sebelumnya (SagaBook S290 override jadwal manual)
 
 - `products/sagabook/PRODUCT.md`
 - `products/sagabook/DOSSIER.md`
