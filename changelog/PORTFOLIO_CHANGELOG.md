@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-24 - CoyaBag product-card integrity
+
+- Exact source `9025d078a75bbad49285ae7b528e66c708a2a7a8` aktif sebagai
+  Hostinger release `20260824-9025d07`; rollback `20260824-b9782ad` tersedia.
+- Kartu produk sekarang menjaga varian, media, harga, stok, dan cart identity;
+  sold-out fail-closed, Quick View konsisten, serta aksi touch/keyboard dan
+  feedback live lulus desktop/mobile.
+- Lazy chunk Quick View/Video Tile dan import Media Chrome yang lebih kecil
+  menurunkan production build ke entry 198,8 KiB dan total JS 653,3 KiB.
+- Full frontend/backend, security/dependency, backup, public smoke, worker, log,
+  dan monitor lulus. Status `PRODUCTION_DEPLOYED`; readiness tetap `28/40`
+  dengan 12 blocker dan commerce tetap fail-closed.
+
 ## 2026-08-24 - CoyaBag Beranda dan Katalog live discovery
 
 - Source `b9782ad9861fdb971c55591a16d1392fd5827e98` aktif sebagai

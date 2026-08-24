@@ -12,16 +12,26 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-24T12:11:25+07:00 |
+| Waktu pembaruan terakhir | 2026-08-24T13:05:20+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `90a685404fcdcff73d17f8d6213d30e1092ba75a` |
-| Informasi terakhir disinkronkan | CoyaBag home and live catalog discovery production release. |
+| Baseline sebelum pembaruan | `4ffd3f920bd002851c6ecfb2ea36d5586941f24d` |
+| Informasi terakhir disinkronkan | CoyaBag product-card integrity production release. |
 | Status sinkronisasi | `PRODUCTION_DEPLOYED`; commerce activation tetap fail-closed. |
 | Konflik | Tidak ada konflik source, release, atau rollback. |
-| Error | Tidak ada error pada public smoke, worker, header, atau operational monitor. |
+| Error | Tidak ada error pada test, public smoke, worker, service, log, atau operational monitor. |
 
-## File yang berubah pada sinkronisasi ini (CoyaBag home and catalog production)
+## File yang berubah pada sinkronisasi ini (CoyaBag product-card production)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/CHANGELOG.md`
+- `GAPS.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
+
+## File dari sinkronisasi sebelumnya (CoyaBag home and catalog production)
 
 - `products/coyabag/PRODUCT.md`
 - `products/coyabag/CHANGELOG.md`

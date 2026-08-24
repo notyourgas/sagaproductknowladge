@@ -8,6 +8,23 @@ Mencatat perubahan material COYABAG dengan provenance public-safe.
 
 Surface deployment tidak otomatis berarti commerce activation.
 
+## 2026-08-24 - Product card integrity production release
+
+- Informasi `CONFIRMED` berasal dari exact source
+  `9025d078a75bbad49285ae7b528e66c708a2a7a8`, immutable Hostinger release
+  `20260824-9025d07`, rollback `20260824-b9782ad`, dan public runtime smoke.
+- Kartu produk kini mempertahankan varian, media, harga, stok, dan identitas cart
+  yang sama. Sold-out fail-closed; galeri, wishlist, Quick View, aksi touch,
+  keyboard, focus return, dan feedback live tersedia pada desktop/mobile.
+- Quick View dan Video Tile dipisah ke lazy chunk; import Media Chrome dikurangi
+  ke kontrol yang dipakai. Performance production lulus pada entry 198,8 KiB,
+  total JS 653,3 KiB, dan CSS 141,5 KiB.
+- Unit 42/42, browser dua viewport, Laravel 302 pass/1 skip dengan 2.249
+  assertion, build, dependency audit, backup, worker, monitor, endpoint, log,
+  dan public smoke lulus.
+- Delivery `PRODUCTION_DEPLOYED`. Readiness tetap `28/40`, 70%, `ready=false`
+  dengan 12 blocker; checkout dan commerce activation tetap fail-closed.
+
 ## 2026-08-24 - Home and live catalog discovery production release
 
 - Exact source `b9782ad9861fdb971c55591a16d1392fd5827e98` aktif sebagai

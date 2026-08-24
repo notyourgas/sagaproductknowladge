@@ -2972,9 +2972,9 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release aktif `20260824-b9782ad` menjalankan exact source
-`b9782ad9861fdb971c55591a16d1392fd5827e98` dengan rollback
-`20260824-51dfa7c`. Fondasi yang tersedia membawa destination/quote integrity,
+Release aktif `20260824-9025d07` menjalankan exact source
+`9025d078a75bbad49285ae7b528e66c708a2a7a8` dengan rollback
+`20260824-b9782ad`. Fondasi yang tersedia membawa destination/quote integrity,
 payment-to-fulfillment, Delivery Order/AWB/pickup/label/tracking foundation,
 shipping finance ledger, cancellation/incident/refund workflow, operator
 command center, dan customer timeline. Empat migration additive, fresh backup,
@@ -2989,6 +2989,13 @@ Laravel, stok numerik, URL shareable, browser history, serta loading/error/
 empty/wishlist recovery. Unit, build, Laravel, security/dependency, backup,
 public browser desktop/mobile, endpoints, workers, headers, dan operational
 monitor lulus. Status `PRODUCTION_DEPLOYED`; commerce tetap fail-closed.
+
+Kartu produk pada release aktif memakai kontrak varian fail-closed untuk media,
+harga, stok, warna, dan cart. Sold-out tidak dapat ditambahkan; Quick View
+mempertahankan varian terpilih; galeri, wishlist, touch, keyboard, focus return,
+dan feedback live lulus desktop/mobile. Quick View dan Video Tile memakai lazy
+chunk, sementara Media Chrome hanya mengimpor kontrol yang dipakai. Budget
+production lulus pada entry 198,8 KiB dan total JS 653,3 KiB.
 
 Release candidate source `264c6ac2ebec33c6471a4c49572ddcdc82b51cf2`
 memperbaiki
