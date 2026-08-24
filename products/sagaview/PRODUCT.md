@@ -1,6 +1,25 @@
 # SagaView Product Knowledge
 
-Updated: 24 Agustus 2026 17:23 WIB
+Updated: 24 Agustus 2026 18:14 WIB
+
+SagaView S278 berstatus `CONFIRMED / PUSHED / UIUX_VALIDATED /
+SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`. Ketika sesi Owner kedaluwarsa di Gallery Frame,
+login sekarang dibuka pada tab baru sehingga katalog dan pilihan frame di tab
+asal tetap terlihat. Setelah login selesai, operator kembali ke tab asal dan
+memakai satu aksi `Saya sudah masuk, muat ulang`; metadata lalu dimuat ulang
+tanpa menghapus pilihan yang sudah dibuat.
+
+Exact backend/Owner `494d1734f7a29fc4c14f2d0364bbe11bac002a68`
+berada pada branch `codex/s278-owner-frame-session-recovery` dan sudah pushed.
+Gate meliputi focused red-green, browser serial 10/10, backend/data integrity
+38/38 dengan 467 assertion, build 5.097 modul, screenshot dan no-overflow
+390x844, preservasi pilihan, keyboard/target 44 px, serta audit npm/Composer
+nol vulnerability. Recovery hanya membaca metadata setelah autentikasi; tidak
+ada upload foto/path/output, perubahan API/database/migration, harga/payment,
+Studio, SagaBook, atau production. Production backend/Owner tetap exact
+`fe2dcfc57e8b6592ad0162fabf079fbbd07c1097` /
+`20260824034431-fe2dcfc`; S278 belum dideploy atau diaktifkan.
 
 SagaView S277 berstatus `CONFIRMED / PUSHED / UIUX_VALIDATED /
 SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /

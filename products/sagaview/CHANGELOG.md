@@ -1,5 +1,21 @@
 # SagaView Changelog
 
+## 2026-08-24 - S278 recovery sesi Owner Gallery Frame
+
+- Klasifikasi: `CONFIRMED / PUSHED / UIUX_VALIDATED / SECURITY_VALIDATED /
+  QA_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- Before: aksi login pada sesi 401/419 mengganti halaman di tab yang sama dan
+  berisiko menghilangkan katalog serta pilihan frame yang masih tersimpan di
+  memori halaman.
+- After: login dibuka aman pada tab baru; tab Gallery Frame tetap utuh dan
+  menyediakan satu aksi resume untuk refresh metadata setelah login.
+- Exact backend/Owner `494d1734f7a29fc4c14f2d0364bbe11bac002a68`:
+  focused red-green, browser 10/10, backend 38/38 dengan 467 assertion, build
+  5.097 modul, screenshot/no-overflow 390x844, keyboard/44 px, dan audit
+  dependency nol lulus.
+- Tidak ada API/database/migration, payment, upload foto/path/output, Studio,
+  SagaBook, atau perubahan production.
+
 ## 2026-08-24 - S277 recovery katalog Owner Gallery Frame
 
 - Klasifikasi: `CONFIRMED / PUSHED / UIUX_VALIDATED / SECURITY_VALIDATED /

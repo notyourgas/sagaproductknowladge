@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-24 - SagaView S278 login ulang tanpa kehilangan pilihan frame
+
+- Saat sesi Owner habis, login kini terbuka pada tab baru sehingga katalog dan
+  frame terpilih di Gallery Frame tetap aman di tab asal.
+- Sesudah login, operator cukup kembali dan menekan satu aksi untuk melanjutkan
+  refresh metadata tanpa mengulang pilihan.
+- Exact backend/Owner `494d1734f7a29fc4c14f2d0364bbe11bac002a68`
+  lulus 10 browser scenario, 38 backend test/467 assertion, build, bukti visual
+  mobile/no-overflow, keyboard, dan audit dependency nol.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Production,
+  API/database, pembayaran off-app, foto/path/output, Studio, dan SagaBook tidak
+  berubah.
+
 ## 2026-08-24 - SagaView S277 recovery Gallery Frame lebih aman
 
 - Katalog dan pilihan Owner tetap terlihat saat refresh gagal; panel kini
