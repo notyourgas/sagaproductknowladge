@@ -12,14 +12,24 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T03:28:11+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T04:20:26+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `6326f9d` |
-| Informasi terakhir disinkronkan | CoyaBag Testimonials consent dan provenance production release. |
+| Baseline sebelum pembaruan | `9e96464` |
+| Informasi terakhir disinkronkan | CoyaBag About Us managed-content production release. |
 | Status sinkronisasi | `PRODUCTION_DEPLOYED`; activation dan business readiness `BLOCKED`. |
 | Konflik | Tidak ada konflik source atau keputusan baru. |
 | Error | Tidak ada error sinkronisasi; commerce tetap fail-closed pada 12 readiness blocker. |
+
+## File yang berubah pada sinkronisasi ini (CoyaBag About Us)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## File yang berubah pada sinkronisasi ini (CoyaBag Testimonials)
 

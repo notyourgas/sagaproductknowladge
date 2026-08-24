@@ -8,6 +8,21 @@ Mencatat perubahan material COYABAG dengan provenance public-safe.
 
 Surface deployment tidak otomatis berarti commerce activation.
 
+## 2026-08-25 - About Us managed-content production release
+
+- Informasi `CONFIRMED` berasal dari exact source
+  `2697be48f3bfbc9d4e999c56279533be6a87b17c`, immutable Hostinger release
+  `20260825-2697be4`, rollback `20260825-dead32e`, dan runtime verification.
+- About hanya merender cerita, warehouse, process, value, media, dan destination
+  CMS published; source-owned factual claim dan media fallback dihapus.
+- Admin mengelola order, draft, preview, schedule, publish, retract, dan rollback.
+  Publish membutuhkan main story, story/warehouse, serta link internal aman atau
+  HTTPS. Production yang belum lengkap menampilkan preparation state jujur.
+- Storefront 117/117 dan Laravel 332 pass/1 MySQL-only skip dengan 2.548
+  assertions; full release/security/dependency, browser desktop/mobile, backup,
+  workers, scheduler, dan public smoke lulus. Readiness tetap 30/42 dengan 12
+  blocker; activation/business tetap `BLOCKED`.
+
 ## 2026-08-25 - Testimonials consent and provenance production release
 
 - Informasi `CONFIRMED` berasal dari exact source

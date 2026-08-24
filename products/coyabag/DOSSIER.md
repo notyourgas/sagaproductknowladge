@@ -78,9 +78,19 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260825-dead32e` memakai source
-`dead32ed0cc30110d8b9b3b2b7d68b10b09cac8e` dan rollback
-`20260825-8382f7a`. Testimonials hanya mempublikasikan entri CMS dengan reviewer,
+Release production terbaru `20260825-2697be4` memakai source
+`2697be48f3bfbc9d4e999c56279533be6a87b17c` dan rollback
+`20260825-dead32e`. About Us hanya memakai cerita, warehouse, process, value,
+media, dan destination dari CMS published. Operator mengelola urutan, draft,
+preview, schedule, publish, retract, serta immutable rollback. Publish menolak
+cerita utama yang belum lengkap, ketiadaan story/warehouse, template marker,
+dan tujuan eksternal non-HTTPS. Loading, partial, unavailable/retry,
+broken/no-media, lazy route, Helvetica/Instrument Serif, dan browser production
+desktop/mobile lulus. Production belum memiliki cerita About lengkap, sehingga
+preparation state jujur tampil tanpa source-owned claim atau media.
+
+Release sebelumnya `20260825-dead32e` memakai source
+`dead32ed0cc30110d8b9b3b2b7d68b10b09cac8e`. Testimonials hanya mempublikasikan entri CMS dengan reviewer,
 quote, supported type, source label, dan izin eksplisit. Statistik hanya berasal
 dari entri approved; missing exact product/color menghapus CTA dan tidak
 memetakan review ke produk lain. Operator mengelola urutan, attribution, sumber

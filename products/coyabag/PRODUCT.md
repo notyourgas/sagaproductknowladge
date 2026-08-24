@@ -60,9 +60,18 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260825-dead32e` dengan source
-  `dead32ed0cc30110d8b9b3b2b7d68b10b09cac8e` melayani production;
-  rollback langsung `20260825-8382f7a` dipertahankan.
+- Release aktif `20260825-2697be4` dengan source
+  `2697be48f3bfbc9d4e999c56279533be6a87b17c` melayani production;
+  rollback langsung `20260825-dead32e` dipertahankan.
+- About Us hanya merender cerita, warehouse, process, value, media, dan tujuan
+  yang diterbitkan melalui CMS. Source-owned claim atau media tidak lagi mengisi
+  konten yang belum lengkap.
+- Admin menyediakan order, draft, preview, schedule, publish, retract, dan
+  immutable rollback untuk bagian About. Publish membutuhkan cerita utama,
+  minimal satu story dan warehouse, serta tujuan internal aman atau HTTPS.
+- Production belum memiliki cerita About lengkap, sehingga customer melihat
+  preparation state yang jujur. Loading, partial, unavailable/retry,
+  broken/no-media, lazy route, dan responsive desktop/mobile lulus acceptance.
 - Testimonials hanya menampilkan review CMS published yang memiliki reviewer,
   quote, tipe, sumber, dan konfirmasi izin eksplisit. Rating serta statistik
   hanya dihitung dari entri approved; source-owned social proof dan placeholder

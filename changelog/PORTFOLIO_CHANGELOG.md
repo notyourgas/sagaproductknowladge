@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-25 - CoyaBag About Us managed-content integrity
+
+- Exact source `2697be48f3bfbc9d4e999c56279533be6a87b17c` aktif sebagai
+  Hostinger release `20260825-2697be4`; rollback `20260825-dead32e` tersedia.
+- Customer hanya melihat cerita About yang diterbitkan operator. Konten belum
+  lengkap tampil sebagai preparation state, bukan brand/warehouse claim atau
+  media placeholder yang berasal dari source.
+- Operator mengelola bagian, urutan, media, destination, dan lifecycle publish
+  melalui Admin. Full frontend/backend, security/dependency, public
+  desktop/mobile, backup, workers, scheduler, dan smoke lulus. Status
+  `PRODUCTION_DEPLOYED`; readiness 30/42, activation dan business readiness
+  tetap `BLOCKED`.
+
 ## 2026-08-25 - CoyaBag Testimonials consent and provenance
 
 - Exact source `dead32ed0cc30110d8b9b3b2b7d68b10b09cac8e` aktif sebagai

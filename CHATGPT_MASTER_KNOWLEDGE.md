@@ -3130,9 +3130,18 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release aktif `20260825-dead32e` menjalankan exact source
-`dead32ed0cc30110d8b9b3b2b7d68b10b09cac8e` dengan rollback
-`20260825-8382f7a`. Testimonials hanya menampilkan CMS published review dengan
+Release aktif `20260825-2697be4` menjalankan exact source
+`2697be48f3bfbc9d4e999c56279533be6a87b17c` dengan rollback
+`20260825-dead32e`. About Us hanya menampilkan story, warehouse, process, value,
+media, dan destination dari CMS published. Admin mengelola urutan, draft,
+preview, schedule, publish, retract, serta immutable rollback; publish menolak
+cerita utama atau story/warehouse yang belum lengkap dan link eksternal
+non-HTTPS. Production belum memiliki cerita About lengkap, sehingga preparation
+state jujur tampil tanpa source-owned claim atau media. Loading/partial/error,
+broken/no-media, lazy route, serta desktop/mobile lulus.
+
+Release sebelumnya `20260825-dead32e` menjalankan exact source
+`dead32ed0cc30110d8b9b3b2b7d68b10b09cac8e`. Testimonials hanya menampilkan CMS published review dengan
 reviewer, quote, supported type, source, dan izin eksplisit. Rating/statistik
 hanya berasal dari approved entries; missing exact destination fail-closed dan
 source-owned social proof tidak ditampilkan. Operator mengelola urutan,

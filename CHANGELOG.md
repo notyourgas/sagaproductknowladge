@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - CoyaBag About Us production sync
+
+- Informasi `CONFIRMED` berasal dari exact source
+  `2697be48f3bfbc9d4e999c56279533be6a87b17c`, immutable release
+  `20260825-2697be4`, rollback `20260825-dead32e`, dan runtime verification.
+- Knowledge mencatat CMS-only About story/warehouse/process/value, lifecycle
+  Admin, publish validation, safe destination, honest incomplete state, visual
+  failure states, lazy responsive route, dan penghapusan source-owned claim.
+- Full test/build/security, dependency audit, backup, public desktop/mobile,
+  workers, scheduler, dan smoke lulus. Readiness 30/42 dengan 12 blocker;
+  delivery `PRODUCTION_DEPLOYED`, activation dan business readiness `BLOCKED`.
+- Dokumen terdampak: CoyaBag product/dossier/changelog, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-25 - CoyaBag Testimonials production sync
 
 - Informasi `CONFIRMED` berasal dari exact source
