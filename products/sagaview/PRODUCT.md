@@ -1,6 +1,28 @@
 # SagaView Product Knowledge
 
-Updated: 24 Agustus 2026 14:24 WIB
+Updated: 24 Agustus 2026 15:39 WIB
+
+SagaView S275 berstatus `CONFIRMED / PUSHED / UIUX_VALIDATED /
+SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`. Logo unggahan Studio sekarang tampil konsisten pada
+Customer Display untuk seluruh lima preset dan toolbar pemilihan foto. Renderer
+logo/background hanya menerima data URI base64 dengan tipe gambar lokal yang
+diizinkan; URL eksternal, blob, SVG/HTML, dan payload malformed tidak mencapai
+elemen gambar. Brand Admin mempertahankan data lama yang tidak aman, memblokir
+Simpan, dan memberi aksi hapus/ganti tanpa menghilangkan pengaturan lain.
+
+Exact source Studio `8eb9d67f6e92df28e91e88a048da017a090aadb0` berada pada
+branch `codex/s275-sagaview-customer-logo-integrity` dan sudah pushed. Gate
+exact candidate meliputi format/lint/typecheck, 56 file dan 242 unit test,
+build client/server, bundle terbesar 301,0 KiB dari batas 450 KiB, audit npm
+nol, focused browser 4/4, dan full browser serial 155 pass/3 controlled skip.
+Browser membuktikan lima preset, zero request ke host aset eksternal sintetis,
+recovery Admin, Axe nol, no-overflow 390x844/1440x900, forced-colors,
+reduced-motion, galeri 50/200/500 foto, serta no-upload. Tidak ada perubahan
+backend, API, database/migration, dependency, payment/provider,
+foto/path/output, atau SagaBook. Production tetap Studio exact
+`ab2af26a1fc55f953c90605bc066eaa63937f966` /
+`20260823185455-ab2af26`; S275 belum dideploy atau diaktifkan.
 
 SagaView S274 berstatus `CONFIRMED / PUSHED / UIUX_VALIDATED /
 SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /

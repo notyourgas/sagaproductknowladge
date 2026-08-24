@@ -1,6 +1,24 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 24 Agustus 2026 14:24 WIB
+Evidence cut-off: 24 Agustus 2026 15:39 WIB
+
+S275 integritas logo Customer Display: exact Studio
+`8eb9d67f6e92df28e91e88a048da017a090aadb0` berstatus `CONFIRMED / PUSHED /
+UIUX_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`. Logo unggahan kini mencapai Customer Display pada
+lima preset dan toolbar pemilihan foto melalui satu komponen reusable. Sumber
+logo/background dibatasi pada data URI base64 dengan tipe gambar lokal yang
+diizinkan; URL eksternal, blob, SVG/HTML, dan malformed ditolak sebelum render.
+Data lama tidak dihapus: Admin memblokir Simpan dan menjelaskan aksi hapus atau
+ganti sambil mempertahankan pengaturan lain. Format, lint, typecheck, 56
+file/242 unit test, build client/server, budget 301,0/450 KiB, npm audit nol,
+focused browser 4/4, dan full browser serial 155 pass/3 controlled skip lulus.
+Lima preset, zero external request, Axe, recovery, 390x844/1440x900,
+forced-colors/reduced-motion, galeri 50/200/500 foto, serta no-upload terbukti.
+Backend/API/database/migration, dependency, payment/provider,
+foto/path/output, dan SagaBook tidak berubah. Production Studio tetap
+`ab2af26a...` / `20260823185455-ab2af26`; deployment S275 belum dilakukan dan
+`BUSINESS_READY=false`.
 
 S274 anggaran payload aset Brand: exact Studio
 `59bd55b31a1ebf7964db6cef9b4ad0d7d0d17606` berstatus `CONFIRMED / PUSHED /

@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-24 - SagaView S275 logo Customer Display local-first
+
+- Logo Studio kini konsisten terlihat pada seluruh preset Customer Display dan
+  toolbar pemilihan foto, bukan hanya pada preview admin.
+- Renderer menolak URL eksternal dan sumber aset tidak aman; data lama tetap
+  dipertahankan dengan petunjuk hapus/ganti yang jelas bagi operator.
+- Exact Studio `8eb9d67f6e92df28e91e88a048da017a090aadb0` lulus 242 unit
+  test, 155 browser scenario, build/budget, aksesibilitas, zero external
+  request, no-upload, dan audit dependency nol.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Production,
+  backend/API/database, pembayaran off-app, foto/path/output, dan SagaBook tidak
+  berubah.
+
 ## 2026-08-24 - SagaView S274 anggaran aset Brand
 
 - Logo/background Studio sekarang dicegah melewati kontrak cloud: file sumber

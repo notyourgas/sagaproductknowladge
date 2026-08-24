@@ -1,5 +1,23 @@
 # SagaView Changelog
 
+## 2026-08-24 - S275 integritas logo Customer Display
+
+- Klasifikasi: `CONFIRMED / PUSHED / UIUX_VALIDATED / SECURITY_VALIDATED /
+  QA_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- Before: logo unggahan hanya konsisten pada preview Brand Admin, sedangkan
+  Customer Display masih memakai fallback; URL aset legacy juga berpotensi
+  diminta browser ke jaringan eksternal.
+- After: satu brand mark reusable dipakai seluruh lima preset dan toolbar foto;
+  logo/background dirender hanya dari data URI base64 bertipe lokal yang
+  diizinkan. Aset legacy tidak aman dipertahankan dengan recovery hapus/ganti
+  dan Simpan diblokir sampai aman.
+- Exact Studio `8eb9d67f6e92df28e91e88a048da017a090aadb0`: 56 file/242
+  unit test, focused browser 4/4, browser serial 155 pass/3 controlled skip,
+  build/budget 301,0/450 KiB, format/lint/typecheck, dan npm audit nol lulus.
+- Browser membuktikan zero request eksternal, lima preset, recovery Admin, Axe,
+  no-overflow 390x844/1440x900, serta no-upload. Backend/API/database,
+  payment/provider, foto/path/output, SagaBook, dan production tidak berubah.
+
 ## 2026-08-24 - S274 anggaran payload aset Brand
 
 - Klasifikasi: `CONFIRMED / PUSHED / UIUX_VALIDATED / SECURITY_VALIDATED /
