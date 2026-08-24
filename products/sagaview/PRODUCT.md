@@ -1,6 +1,23 @@
 # SagaView Product Knowledge
 
-Updated: 25 Agustus 2026 02:19 WIB
+Updated: 25 Agustus 2026 03:08 WIB
+
+SagaView S283 membekukan kandidat kumulatif S282 sebagai immutable release
+provenance `20260824200259-cfa60f9`. Exact backend/Owner source
+`cfa60f9fdae95746377e033a6fc64cd38e40ee36` tetap `CONFIRMED / PUSHED /
+SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; `BUSINESS_READY=false`.
+
+Release dibangun dari `git archive` exact commit, bukan dirty worktree. Archive
+SHA-256 `8c8c502d049f9a22cb2fe55d7cf90338228014aab8c2c846f1db96b7e22976b6`
+dan git bundle SHA-256
+`04b91e4a0c503f791c50c4c98d8ff511afaa359c3d291ac6d8d079f1fee12577`
+tersedia pada dua salinan byte-identical. Bundle memuat exact commit; archive
+2.579 entri memiliki manifest build dan SagaView Admin, tanpa `.env`, `.git`,
+`vendor`, atau `node_modules`. Build 5.097 modul, release/deploy contract 18/18
+dengan 196 assertion, diff check, serta audit Composer/npm nol lulus. Production
+tetap S279; authenticated Owner UAT, fresh encrypted backup/restore rehearsal,
+guarded deployment, dan activation belum dijalankan.
 
 SagaView S282 berstatus `CONFIRMED / PUSHED / UIUX_VALIDATED /
 ACCESSIBILITY_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED /

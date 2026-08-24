@@ -1,5 +1,24 @@
 # SagaView Changelog
 
+## 2026-08-25 - S283 immutable release provenance for S282
+
+- Klasifikasi: `CONFIRMED / PUSHED / SECURITY_VALIDATED / QA_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; `BUSINESS_READY=false`.
+- Before: source S282 sudah tervalidasi dan pushed, tetapi belum memiliki
+  archive exact-commit, checksum manifest, git bundle, dan salinan terpisah
+  untuk guarded deployment tanpa GitHub Actions.
+- After: release `20260824200259-cfa60f9` dibangun dari exact commit
+  `cfa60f9fdae95746377e033a6fc64cd38e40ee36`; archive dan bundle mempunyai
+  dua salinan byte-identical dengan SHA-256 terverifikasi.
+- Integrity: bundle memuat exact commit dan complete history; archive memiliki
+  2.579 entri, build manifest, serta SagaView Admin, tanpa `.env`, `.git`,
+  `vendor`, atau `node_modules`.
+- Evidence: exact-archive build 5.097 modul, release/deploy contract 18/18
+  dengan 196 assertion, diff check, serta audit Composer/npm nol lulus.
+- Delivery: production dan database tetap read-only. Authenticated Owner UAT,
+  fresh encrypted backup/restore rehearsal, guarded deploy, dan activation
+  masih gate terpisah.
+
 ## 2026-08-25 - S282 Owner Changelog focus and navigation
 
 - Klasifikasi: `CONFIRMED / PUSHED / UIUX_VALIDATED /
