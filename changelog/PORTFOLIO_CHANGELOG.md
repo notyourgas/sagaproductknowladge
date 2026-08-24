@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-24 - SagaView S272 storage reconciliation selesai
+
+- Dua backup fresh yang dibutuhkan kandidat kini tersedia di shared storage
+  secara private, no-overwrite, checksum-verified, dan atomic; metadata file
+  diperbaiki agar aplikasi dapat membacanya tanpa membuka akses publik.
+- Kandidat membaca seluruh 215 asset frame unik dan lulus candidate gate 6/6;
+  rehearsal sukses, idempotensi, serta konflik fail-closed juga lulus.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / STAGING_READY`.
+  Production masih memakai release lama yang sehat; activation dan UAT nyata
+  belum dilakukan.
+
 ## 2026-08-24 - CoyaBag home discovery integrity candidate
 
 - Beranda kandidat kini memilih tujuan scene dari katalog live, menormalisasi

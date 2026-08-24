@@ -12,16 +12,27 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-24T11:35:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-24T11:35:10+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `f35af5552ba812005cfd64759aaffe0132821ba7` |
-| Informasi terakhir disinkronkan | CoyaBag home discovery integrity candidate dan status production aktual. |
-| Status sinkronisasi | `LOCAL_VALIDATED / COMMITTED_LOCAL / IMPLEMENTED_NOT_DEPLOYED`; production tetap pada release sebelumnya dan commerce fail-closed. |
-| Konflik | Kandidat storefront belum aktif karena operational monitor belum hijau. |
-| Error | Satu kesalahan perintah operator masih berada dalam jendela monitor; retry deployment wajib menunggu monitor bersih. |
+| Baseline sebelum pembaruan | `a0d47b9cb2b01083198d66b66590a5fbc308fde9` |
+| Informasi terakhir disinkronkan | SagaView S272 storage reconciliation, integritas Gallery Frame, dan candidate gate 6/6. |
+| Status sinkronisasi | `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / STAGING_READY`; production tetap pada release sebelumnya. |
+| Konflik | Tidak ada konflik storage tersisa; activation dan authenticated UAT tetap gate terpisah. |
+| Error | Tidak ada error pada rehearsal, rekonsiliasi, integritas asset, atau candidate gate. |
 
-## File yang berubah pada sinkronisasi ini (CoyaBag home discovery candidate)
+## File yang berubah pada sinkronisasi ini (SagaView S272 storage reconciliation)
+
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/CHANGELOG.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `GAPS.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
+
+## File dari sinkronisasi sebelumnya (CoyaBag home discovery candidate)
 
 - `products/coyabag/PRODUCT.md`
 - `products/coyabag/CHANGELOG.md`
@@ -31,7 +42,7 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `CHANGELOG.md`
 - `SYNC_STATUS.md`
 
-## File yang berubah pada sinkronisasi ini (SagaView S272 storage root cause)
+## File dari sinkronisasi sebelumnya (SagaView S272 storage root cause)
 
 - `products/sagaview/PRODUCT.md`
 - `products/sagaview/CHANGELOG.md`

@@ -1,10 +1,10 @@
 # SagaView Product Knowledge
 
-Updated: 24 Agustus 2026 11:08 WIB
+Updated: 24 Agustus 2026 11:35 WIB
 
 SagaView S272 berstatus `CONFIRMED / PUSHED / UIUX_VALIDATED /
 SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
-IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED_STORAGE_RECONCILIATION`. Owner
+IMPLEMENTED_NOT_DEPLOYED / STAGING_READY`. Owner
 Gallery Frame sekarang membentuk URL preview
 dengan konteks workspace dan tab admin yang sama dengan request dashboard.
 Kegagalan pemuatan sementara dicoba ulang satu kali; bila tetap gagal, kartu
@@ -28,14 +28,20 @@ unik dengan nol missing, size mismatch, checksum mismatch, atau read error.
 Jadi shared storage memperbaiki sumber asset Gallery Frame, bukan
 menyembunyikannya.
 
-Blocker kini dipersempit: dua file backup fresh/300.547 byte masih hanya berada
-di release-local storage dan belum ada di shared storage yang sudah memiliki 64
-file backup lama. Retry production dihentikan fail-closed sampai kedua file
-disalin secara private, no-overwrite, checksum-verified, dan atomic; candidate
-gate wajib 6/6. Tidak ada migration, upload
-foto/path/output, perubahan harga, payment/provider, atau perubahan Studio.
-Production tetap sehat pada backend `20260823091225-c828bd9` dan Studio
-`20260823185455-ab2af26`; `BUSINESS_READY=false`.
+Rekonsiliasi storage berikutnya menyalin tepat dua file backup fresh/300.547
+byte ke shared storage secara private, no-overwrite, checksum-verified, dan
+atomic. Metadata dua file dikoreksi agar hanya service account yang dapat
+membacanya. Rehearsal sukses, idempotensi, dan konflik fail-closed lulus;
+manifest aplikasi valid dan candidate gate kini 6/6 tanpa critical atau
+warning. Shared storage berisi 66 file backup dan dua file fresh identik dengan
+release aktif. Evidence repair disimpan dua salinan dengan SHA-256
+`823b19b70cb30c893e611f938d043ed683f856f279e741b7fbe50b90088da3e2`.
+
+Tidak ada migration, upload foto/path/output, perubahan harga,
+payment/provider, atau perubahan Studio. Release kandidat belum diaktifkan;
+production tetap sehat pada backend `20260823091225-c828bd9` dan Studio
+`20260823185455-ab2af26`. Guarded activation, smoke, service/journal, dan
+rollback tetap gate terpisah; `BUSINESS_READY=false`.
 
 SagaView S270 berstatus `CONFIRMED / PUSHED / UIUX_VALIDATED /
 SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /

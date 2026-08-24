@@ -1,11 +1,11 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 24 Agustus 2026 11:08 WIB
+Evidence cut-off: 24 Agustus 2026 11:35 WIB
 
 S272 Owner Gallery Frame preview recovery: exact backend/Owner
 `fe2dcfc57e8b6592ad0162fabf079fbbd07c1097` berstatus `CONFIRMED / PUSHED /
 UIUX_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
-IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED_STORAGE_RECONCILIATION`. Preview yang sebelumnya dapat
+IMPLEMENTED_NOT_DEPLOYED / STAGING_READY`. Preview yang sebelumnya dapat
 kehilangan konteks workspace/tab kini memakai URL tenant/tab yang eksplisit,
 mencoba ulang satu kegagalan sementara, dan menampilkan recovery copy bila
 asset tetap tidak dapat dibaca. Data frame tidak diubah oleh recovery UI.
@@ -13,16 +13,16 @@ Playwright 4/4, 31 focused PHP test dan 107 assertion, build 5.097 modul, diff
 check, serta audit Composer/npm nol lulus. Artifact immutable dan backup
 terenkripsi/offsite dengan restore disposable 146/160/149 tabel lulus.
 
-Dua activation rollback otomatis karena kandidat shared storage tidak melihat
-manifest backup pada release-local storage production. Audit read-only
-membuktikan release aktif kehilangan akses ke 215 asset unik yang dirujuk 427
-baris database, sedangkan kandidat shared storage membaca seluruhnya dengan nol
-missing, size/checksum mismatch, atau read error. Blocker tersisa hanya dua file
-backup fresh yang belum ada di shared storage. Release tetap fail-closed sampai
-private no-overwrite copy, SHA-256, atomic publish, rehearsal, dan candidate
-gate 6/6 lulus. No-upload, tenant isolation, checksum/integrity backend, dan pembayaran off-app tetap terjaga. Production tetap backend
-`20260823091225-c828bd9`; Studio tidak berubah dan authenticated Owner UAT
-tetap terpisah.
+Dua activation sebelumnya rollback otomatis karena kandidat shared storage
+belum melihat manifest backup release aktif. Audit membuktikan kandidat membaca
+seluruh 215 asset unik dengan nol missing, size/checksum mismatch, atau read
+error. Dua backup fresh/300.547 byte kemudian direkonsiliasi secara private,
+no-overwrite, checksum-verified, dan atomic; metadata service-only dikoreksi.
+Rehearsal sukses/idempotent/conflict fail-closed lulus, manifest aplikasi valid,
+dan candidate gate kini 6/6 tanpa critical atau warning. No-upload, tenant
+isolation, checksum/integrity backend, dan pembayaran off-app tetap terjaga.
+Production tetap backend `20260823091225-c828bd9`; release kandidat belum
+diaktifkan, Studio tidak berubah, dan authenticated Owner UAT tetap terpisah.
 
 S270 tutorial Customer Flow: Studio exact
 `ab2af26a1fc55f953c90605bc066eaa63937f966` berstatus `PUSHED /

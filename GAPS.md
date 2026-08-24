@@ -8,7 +8,7 @@ diubah menjadi klaim publik sebelum ditutup dengan bukti atau keputusan owner.
 
 ## Konteks
 
-Daftar ini berlaku pada evidence cut-off 24 Agustus 2026 11:08 WIB dan harus diperbarui
+Daftar ini berlaku pada evidence cut-off 24 Agustus 2026 11:35 WIB dan harus diperbarui
 ketika keputusan atau release baru menutup gap.
 
 ## Cara memakai
@@ -64,7 +64,7 @@ GAP-004, bukan gap implementasi warna komponen.
 | GAP-008 | SagaTech | NEEDS CONFIRMATION | V23 aktif di branded domain, tetapi business readiness belum tercapai karena seller of record, exact BOM/condition/warranty, renewal software/DNP, Linktree/PDF lama, persistensi analytics, UAT perangkat nyata, dan repository source kanonik belum ditutup. | Quotation final terverifikasi, Linktree owner UAT, dashboard/network evidence analytics, iPhone/Android dan booth UAT, serta Git remote/source push SagaTech. |
 | GAP-009 | SagaBooth | TODO | M1 local runtime, native SQLite, journal/outbox, recovery, simulator, dan operator shell sudah tertutup. GitHub Actions tetap tidak memulai job karena billing/spending limit dan branch protection repo private memerlukan GitHub Pro. Customer kiosk, hardware, QRIS, MySQL/control plane, signed installer, deploy, serta pilot belum ada. | Selesaikan billing, ulang CI hingga hijau, aktifkan protection, lalu bangun M2 customer kiosk dan qualification Canon/DNP secara bertahap. |
 | GAP-010 | SagaBook / SagaView | NEEDS CONFIRMATION | SagaTech V24 sudah memublikasikan trial 14 hari dan early adopter 1 bulan berlangganan menjadi total 2 bulan aktif, tetapi runbook fulfillment, eligibility/quota register, serta receipt aktivasi per produk belum ada di knowledge. SagaBook tetap memiliki lifecycle DEC-029 dan V24 tidak mengubah entitlement backend. | Kunci runbook assisted activation per produk, pemilik approval, receipt entitlement, cara menangani hari 8–14 SagaBook, kuota, dan bukti bulan bonus sebelum cohort pertama diaktivasi. |
-| GAP-013 | SagaView | TODO | S272 belum dapat diaktifkan karena dua file backup fresh masih berada di storage release aktif dan belum ada di shared storage kandidat. Asset frame bukan blocker: seluruh 215 asset unik terbaca dan checksum-valid di kandidat. | Salin dua file secara private/no-overwrite, verifikasi ukuran dan SHA-256, publish atomic, lalu luluskan candidate gate 6/6 sebelum guarded activation. |
+| GAP-013 | SagaView | CLOSED | Dua backup fresh S272 sudah direkonsiliasi ke shared storage secara private/no-overwrite dan checksum-valid; metadata service-only, rehearsal, idempotensi, conflict fail-closed, serta candidate gate 6/6 lulus. Seluruh 215 asset frame unik tetap terbaca dan checksum-valid. | Evidence repair dua salinan SHA-256 `823b19b70cb30c893e611f938d043ed683f856f279e741b7fbe50b90088da3e2`; guarded activation tetap gate release terpisah. |
 
 ## Keputusan produk
 

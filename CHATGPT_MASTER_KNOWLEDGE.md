@@ -1,13 +1,13 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 24 Agustus 2026 11:08 WIB
+Evidence cut-off: 24 Agustus 2026 11:35 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
 SagaView S272 Owner Gallery Frame exact backend/Owner
 `fe2dcfc57e8b6592ad0162fabf079fbbd07c1097` berstatus `CONFIRMED /
 PUSHED / UIUX_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
-IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED_STORAGE_RECONCILIATION`. Preview frame kini membawa konteks
+IMPLEMENTED_NOT_DEPLOYED / STAGING_READY`. Preview frame kini membawa konteks
 workspace/tab aktif, melakukan satu retry untuk kegagalan sementara, memakai
 lazy loading, dan menampilkan recovery copy bila tetap gagal. Playwright 4/4,
 31 focused PHP test dengan 107 assertion, build 5.097 modul, diff check, audit
@@ -20,13 +20,15 @@ baris database karena memakai release-local storage. Shared storage kandidat
 memiliki 247 file frame/476.552.911 byte dan membaca seluruh 215 asset unik
 dengan nol missing, size mismatch, checksum mismatch, atau read error.
 
-Candidate gate tertahan hanya karena dua file backup fresh/300.547 byte belum
-ada di shared storage, bukan karena asset frame. Retry menunggu private
-no-overwrite copy, verifikasi SHA-256, atomic publish, rehearsal, dan gate 6/6.
-Backend tetap
+Kedua file backup fresh/300.547 byte sudah direkonsiliasi ke shared storage
+secara private, no-overwrite, checksum-verified, dan atomic. Rehearsal sukses,
+idempotensi, serta konflik fail-closed lulus; metadata service-only benar,
+manifest aplikasi valid, dan candidate gate kini 6/6 tanpa critical atau
+warning. Backend tetap
 memverifikasi tenant dan integritas asset; foto/path/output tidak diunggah,
 pembayaran tetap off-app, Studio tidak berubah, production backend tetap
-`20260823091225-c828bd9`, dan `BUSINESS_READY=false`.
+`20260823091225-c828bd9`, release kandidat belum diaktifkan, dan
+`BUSINESS_READY=false`.
 
 SagaBook fondasi operasional S286 exact source
 `9e4b44e5f6698b7284938fa1e4c948dd45c9e5d5` berstatus `CONFIRMED / PUSHED /

@@ -1,5 +1,23 @@
 # SagaView Changelog
 
+## 2026-08-24 - S272 storage reconciled dan candidate gate 6/6
+
+- Klasifikasi: `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  STAGING_READY`; release kandidat belum diaktifkan.
+- Before: dua backup fresh/300.547 byte belum tersedia di shared storage;
+  salinan awal cocok checksum tetapi belum dapat dibaca service karena metadata
+  file terlalu ketat untuk service account.
+- After: tepat dua file direkonsiliasi secara private, no-overwrite,
+  checksum-verified, dan atomic. Ownership/mode dua file dikoreksi tanpa
+  mengubah isi; shared storage kini memiliki 66 file backup.
+- Evidence: rehearsal sukses, idempotensi, dan conflict fail-closed lulus;
+  manifest aplikasi valid/identik, seluruh 215 asset frame kandidat tetap
+  checksum-valid, dan candidate gate lulus 6/6 tanpa critical atau warning.
+- Evidence repair public-safe disimpan dua salinan dengan SHA-256
+  `823b19b70cb30c893e611f938d043ed683f856f279e741b7fbe50b90088da3e2`.
+  Production aktif tetap `20260823091225-c828bd9`, API/login 200, service
+  sehat, Studio tidak berubah, dan `BUSINESS_READY=false`.
+
 ## 2026-08-24 - S272 akar Gallery Frame dan blocker storage terukur
 
 - Audit production read-only membuktikan release aktif tidak dapat membaca 215
