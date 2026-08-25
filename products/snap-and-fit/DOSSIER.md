@@ -12,8 +12,9 @@ credential, PII, identifier tenant/perangkat, atau detail provider sensitif.
 - Delivery: `LOCAL_VALIDATED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED`
-- Provenance: exact private source head `6209d37`, runtime-artifact hardening
-  `e64b002`, protected-preview evidence refresh `eec6269`, full-validation
+- Provenance: exact private source head `4ecef5e`, fail-closed staging-host
+  preflight `fc383e1`, runtime-artifact hardening `e64b002`,
+  protected-preview evidence refresh `eec6269`, full-validation
   recovery gate `e6e27d0`, staging restore
   hardening `076f76b`, MySQL 8.4 clean-room
   compatibility fix `4384948`, digest-only application
@@ -34,8 +35,8 @@ credential, PII, identifier tenant/perangkat, atau detail provider sensitif.
   durable notification worker `d964fea`, lifecycle/retention worker `4d602d9`,
   protected Vercel preview `dpl_3PW4rbAek9FijQy9vU3Dfb1UMTUw` dari exact
   source `e6e27d0`.
-- Hosted CI evidence: exact current-head run `32865834682` berhenti sebelum
-  assignment runner dengan steps kosong dan anotasi account payment/spending
+- Hosted CI evidence: exact feature-head run `32873937441` berhenti sebelum
+  assignment runner dengan runner ID `0`, nama runner kosong, steps kosong, dan anotasi account payment/spending
   limit. Run sebelumnya pada protected-preview docs, MySQL implementation, dan
   digest-only feature head menunjukkan pola yang sama. Local/static gates tetap
   lulus, tetapi hosted run tidak;
@@ -123,6 +124,11 @@ fotografer desktop-optimized.
   reference, memverifikasi semua link tetap di dalam artifact, dan berjalan
   non-root. Tiga probe artifact aktual lulus containment/import; Linux image
   execution, scan, serta SBOM/provenance emission masih gate staging.
+- Deployment staging menjalankan preflight sebelum Compose: Linux, marker
+  approval isolasi/enkripsi root-owned `0600`, minimum 4 vCPU, 16 GB RAM,
+  200 GB disk dengan 100 GB tersedia, Docker Engine, dan Compose v2 wajib lulus.
+  Shared Hostinger target yang tersedia ditolak exit `66` melalui probe
+  read-only dan tidak dimodifikasi.
 - Vercel tidak terhubung langsung ke MySQL/Redis dan long-running image work
   tidak berjalan pada Vercel Functions.
 - API memakai rate limiter memory pada local/test dan mewajibkan atomic Redis
@@ -204,7 +210,7 @@ fotografer desktop-optimized.
 - Official liveness package menyatakan React 19 support; exact transitive peer
   metadata ditutup dengan narrow package/peer rule. Frozen install, fresh web
   build, full validation, browser suite, audit, dan peer check lulus.
-- Lima shell script lulus Git Bash `bash -n`; staging Compose lulus static
+- Enam shell script operasional lulus Git Bash `bash -n`; staging Compose lulus static
   interpolation memakai official checksum-verified Docker Compose v5.5.0 dan
   synthetic-only values. Tidak ada image/container yang dijalankan.
 - Detached clean checkout exact remote `fbf01b6` pada Windows dengan
@@ -214,7 +220,7 @@ fotografer desktop-optimized.
   memaksa LF lintas repository agar checkout Windows tidak mengubah format.
   Service-dependent integration skip tetap terbuka sampai isolated staging.
 - Official Windows ShellCheck v0.11.0 archive cocok dengan release-asset
-  SHA-256; lima skrip operasi lulus hingga severity `style`. Portable verifier
+  SHA-256; enam skrip operasional lulus hingga severity `style`. Portable verifier
   dibersihkan setelah run. Tidak ada image/container atau runtime staging yang
   dieksekusi dari evidence ini.
 - Fixture k6 300-VU melakukan authoritative seeded-BIB search, exact-session

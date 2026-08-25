@@ -47,8 +47,9 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 - Delivery: `LOCAL_VALIDATED`.
 - Activation: `NOT_PRODUCTION_ACTIVATED`.
 - Business readiness: `BLOCKED`.
-- Exact private source head `6209d37`; runtime-artifact hardening berasal dari
-  `e64b002`, protected-preview evidence refresh berasal dari `eec6269`,
+- Exact private source head `4ecef5e`; fail-closed staging-host preflight berasal
+  dari `fc383e1`, runtime-artifact hardening berasal dari `e64b002`,
+  protected-preview evidence refresh berasal dari `eec6269`,
   full-validation recovery gate berasal dari `e6e27d0`,
   staging restore hardening berasal dari `076f76b`, MySQL 8.4
   clean-room compatibility fix berasal dari `4384948`, dan
@@ -87,7 +88,7 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   Redis/BullMQ-only skip. Enam face-provider test, delapan media test, lima
   observability test, 53 browser test
   dengan tiga project-specific skip, seluruh build, dan audit dependency produksi
-  nol vulnerability lulus. Lima shell script juga lulus Git Bash `bash -n`, dan
+  nol vulnerability lulus. Enam shell script operasional juga lulus Git Bash `bash -n`, dan
   staging Compose lulus static interpolation dengan official checksum-verified
   Docker Compose v5.5.0 tanpa menjalankan image/container. Frozen install,
   fresh web build, dan targeted liveness peer check juga lulus.
@@ -98,7 +99,7 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   mencegah format drift pada Windows; integration-service skip tetap tidak
   dianggap sebagai runtime staging evidence.
 - Official Windows ShellCheck v0.11.0 archive cocok dengan SHA-256 release asset;
-  seluruh lima skrip operasi lulus sampai severity `style`. Verifier portable
+  seluruh enam skrip operasional lulus sampai severity `style`. Verifier portable
   sudah dibersihkan setelah run. Ini menutup static shell lint, bukan image,
   container, migration, load, atau recovery runtime gate.
 - Fixture 300-VU kini memakai seeded BIB, memastikan asset kandidat,
@@ -114,14 +115,20 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   dependency produksi nol vulnerability lulus. Container workflow dikonfigurasi
   menghasilkan BuildKit SBOM/provenance dan manifest digest; image belum
   dibangun/dijalankan sehingga emission/runtime evidence tetap gate.
-- Hosted GitHub Actions run `32865834682` pada exact current head `6209d37`
-  gagal sebelum satu pun step berjalan: runner belum ditetapkan dan steps kosong;
+- Hosted GitHub Actions run `32873937441` pada exact feature head `fc383e1`
+  gagal sebelum satu pun step berjalan: runner ID `0`, nama runner kosong, dan steps kosong;
   anotasi menyatakan account payment/spending-limit gate. Run sebelumnya pada
   `176cf15`, `4384948`, dan `d0f3b7d` memiliki pola yang sama.
   Ini adalah bukti blocker hosted-runner/account, bukan kegagalan source gate.
-  Current-head run menjadi evidence hosted terbaru. Branch protection private
+  Feature-head run menjadi evidence hosted terbaru. Branch protection private
   repository juga tetap plan-gated (API mengembalikan 403), sehingga
   required-check enforcement belum dapat diklaim.
+- Deploy staging kini menolak sebelum membaca konfigurasi Compose atau menarik
+  image bila host bukan Linux, marker approval isolasi/enkripsi tidak root-owned
+  mode `0600`, kapasitas di bawah 4 vCPU/16 GB/200 GB dengan 100 GB tersedia,
+  atau Docker Compose v2 tidak aktif. Behavioral fixture menolak tiap kondisi
+  secara independen; read-only probe pada shared Hostinger target berhenti exit
+  `66` tanpa menulis file atau memasuki release path.
 - Runtime release kini memiliki tiga artifact digest-addressed terpisah untuk
   API, worker, dan one-shot migration/seed. Semua package first-party memakai
   file allowlist; artifact deploy menghapus development script dan host-path

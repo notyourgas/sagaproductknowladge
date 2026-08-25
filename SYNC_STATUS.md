@@ -12,12 +12,34 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T23:49:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T23:50:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `449c6729849f39012eacb5969f362a7a5191351f` |
-| Informasi terakhir disinkronkan | COYABAG Checkout customer details integrity. |
-| Status sinkronisasi | `PRODUCTION_DEPLOYED / BLOCKED / BLOCKED`; commerce tetap fail-closed. |
+| Baseline sebelum pembaruan | `477655387a77756ac55152f5ef3e81f33a57d37d` |
+| Informasi terakhir disinkronkan | Snap and Fit isolated-host release refusal. |
+| Status sinkronisasi | `LOCAL_VALIDATED / NOT_PRODUCTION_ACTIVATED / BLOCKED`; isolated staging belum tersedia. |
+
+## Snap and Fit isolated-host release refusal
+
+- Exact private feature source `fc383e1`; documentation/evidence head `4ecef5e`.
+- Deploy fail-closed sebelum Compose/config/pull tanpa Linux, root-owned `0600`
+  isolation/encryption marker, minimum 4 vCPU/16 GB/200 GB dengan 100 GB
+  tersedia, Docker Engine, dan Compose v2.
+- Behavioral fixture, full validation, 53 browser pass, Bash syntax,
+  checksum-verified ShellCheck, zero-vulnerability production audit, dan peer
+  check lulus. Shared Hostinger target ditolak read-only exit `66` tanpa write.
+- Hosted run `32873937441` tetap berhenti sebelum runner/step karena account
+  billing/spending gate. Delivery, production, dan activation tidak berubah.
+
+## File yang berubah pada sinkronisasi ini (Snap and Fit host preflight)
+
+- `products/snap-and-fit/PRODUCT.md`
+- `products/snap-and-fit/DOSSIER.md`
+- `products/snap-and-fit/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG Checkout customer details integrity
 

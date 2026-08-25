@@ -1,5 +1,24 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - Snap and Fit isolated-host release refusal sync
+
+- Ringkasan: sinkronisasi fail-closed staging-host preflight, explicit isolation/
+  encryption marker, capacity/disk/Docker gate, behavioral rejection, dan 10-role
+  gate register.
+- Alasan: release script sebelumnya belum otomatis menolak shared/undersized
+  target sebelum Compose; guard sekarang mencegah accidental deployment.
+- Produk/area: Snap and Fit DevOps, security, staging release, infrastructure,
+  CI, runbook, acceptance, dan readiness.
+- Klasifikasi: `CONFIRMED`; private feature source `fc383e1`, documentation head
+  `4ecef5e`, local validation, read-only host rejection, hosted run `32873937441`.
+- Production berubah: tidak. Delivery tetap `LOCAL_VALIDATED`; activation
+  `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED`.
+- Dokumen terdampak: Snap and Fit product/dossier/changelog, portfolio, master
+  knowledge, root changelog, dan sync status.
+- Blocker/next action: approved isolated VPS, DNS/TLS, AWS/Tokopay/email/
+  monitoring credentials, legal/privacy, consented benchmark, real devices,
+  serta GitHub account gate sebelum `STAGING_READY`.
+
 ## 2026-08-25 - COYABAG Checkout customer details integrity sync
 
 - Ringkasan: sinkronisasi validasi Checkout Detail, error focus, safe server

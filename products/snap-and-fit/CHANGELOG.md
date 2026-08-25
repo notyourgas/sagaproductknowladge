@@ -10,6 +10,20 @@ production, activation, dan business readiness.
 Mock, fixture, preview frontend, dan test lokal bukan bukti provider atau
 production activation.
 
+## 2026-08-25 - Fail-closed isolated staging-host preflight
+
+- Exact private feature source `fc383e1`; documentation/evidence head `4ecef5e`.
+- Deploy menolak sebelum Compose/config/pull bila Linux, root-owned mode `0600`
+  isolation/encryption marker, 4 vCPU, 16 GB RAM, 200 GB disk, 100 GB available,
+  Docker Engine, atau Compose v2 tidak memenuhi gate.
+- Behavioral fixture meliputi missing/non-root/permissive/incomplete marker dan
+  setiap capacity/runtime failure. Full validation, 53 browser pass, Bash syntax,
+  checksum-verified ShellCheck, audit dependency nol, dan peer check lulus.
+- Read-only probe menolak shared Hostinger target exit `66` tanpa menulis file.
+  Hosted run `32873937441` tetap account-gated sebelum runner/step.
+- Delivery tetap `LOCAL_VALIDATED`; staging, production, activation, dan
+  business readiness tidak berubah.
+
 ## 2026-08-25 - Self-contained runtime artifact hardening
 
 - Exact private source head `6209d37`; implementation provenance `e64b002`.

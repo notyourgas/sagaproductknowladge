@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-08-25 - Snap and Fit isolated-host release refusal
+
+- Exact private feature `fc383e1` dan documentation head `4ecef5e` menambahkan
+  fail-closed preflight sebelum Compose/config/pull.
+- Release memerlukan Linux, approval marker isolasi/enkripsi root-owned `0600`,
+  4 vCPU, 16 GB RAM, 200 GB disk dengan 100 GB tersedia, serta Docker Compose v2.
+- Shared Hostinger target ditolak read-only exit `66`; production tidak berubah.
+  Delivery tetap `LOCAL_VALIDATED` dan `STAGING_READY` masih external-gated.
+
 ## 2026-08-25 - COYABAG Checkout customer details integrity
 
 - Exact source `e684ae38f19a4e7f17ead395903c3457946ed011` aktif pada immutable
