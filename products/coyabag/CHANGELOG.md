@@ -4,6 +4,20 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-25 - Storefront Wishlist persistence integrity production release
+
+- Klasifikasi: `CONFIRMED` dari exact source
+  `68119d2b9cbcc4b50bfceb284b0365d047c2c2ab`, immutable Hostinger release
+  `20260825-68119d2`, rollback `20260825-838006c`, dan runtime verification.
+- Kegagalan penyimpanan kini fail-visible dan session-safe; retry memastikan
+  write berhasil sebelum memberi konfirmasi permanen.
+- Update valid antartab diterapkan sekali dan direkonsiliasi saat katalog siap.
+  Payload rusak ditolak tanpa menghapus Wishlist aktif.
+- TDD, regression, desktop/mobile/two-tab acceptance, security/build,
+  backup/rollback, dan public smoke lulus tanpa mutasi data commerce.
+- Delivery `PRODUCTION_DEPLOYED`; readiness tetap 30/42 dengan 12 blocker.
+  Activation dan business readiness `BLOCKED`; commerce tidak diaktifkan.
+
 ## 2026-08-25 - Storefront Product Detail verified reviews production release
 
 - Klasifikasi: `CONFIRMED` dari exact source

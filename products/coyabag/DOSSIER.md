@@ -78,9 +78,14 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260825-838006c` memakai source
-`838006c7cff1c391858e7eed97e5e78bae351a36` dan rollback
-`20260825-7875667`. Product Detail hanya menampilkan review berizin yang
+Release production terbaru `20260825-68119d2` memakai source
+`68119d2b9cbcc4b50bfceb284b0365d047c2c2ab` dan rollback
+`20260825-838006c`. Wishlist persistence sekarang fail-visible: kegagalan
+penyimpanan tidak menghapus pilihan sesi, retry memverifikasi write, update
+valid antartab diterapkan sekali, dan payload rusak tidak mengosongkan
+Wishlist aktif. Rekonsiliasi varian tetap menunggu katalog authoritative siap.
+
+Release sebelumnya `20260825-838006c` hanya menampilkan review berizin yang
 ditautkan ke produk exact. Atribusi, sumber HTTPS aman, rating opsional, dan
 warna yang direview mengikuti CMS; review lintas produk dan testimonial brand
 umum tidak bocor ke Product Detail. Published-empty dan outage state tidak

@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - COYABAG Wishlist persistence integrity sync
+
+- Ringkasan: sinkronisasi Wishlist fail-visible untuk persistence failure,
+  verified retry, serta valid/invalid cross-tab handling.
+- Produk/area: COYABAG Wishlist, exact variant, responsive UI, accessibility,
+  release, dan recovery.
+- Klasifikasi: `CONFIRMED`; source
+  `68119d2b9cbcc4b50bfceb284b0365d047c2c2ab`, release
+  `20260825-68119d2`, rollback `20260825-838006c`, runtime verification.
+- Delivery `PRODUCTION_DEPLOYED`; activation dan business readiness `BLOCKED`.
+  Readiness 30/42 dengan 12 blocker; commerce tetap fail-closed.
+- Dokumen terdampak: COYABAG product/dossier/changelog, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-25 - Snap and Fit runtime artifact hardening sync
 
 - Ringkasan: menyinkronkan runtime API, worker, dan one-shot migration/seed yang

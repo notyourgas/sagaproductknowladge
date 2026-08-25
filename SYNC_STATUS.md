@@ -12,12 +12,33 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T22:27:52+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T22:31:53+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `f2a8a5025a35bb6362f4f5064ac03f071f1823b5` |
-| Informasi terakhir disinkronkan | Snap and Fit self-contained runtime artifacts pada source head `6209d37` dan implementation `e64b002`. |
-| Status sinkronisasi | `LOCAL_VALIDATED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READINESS_BLOCKED`. |
+| Baseline sebelum pembaruan | `da13158a00dcc88032e96a82c21945990d869278` |
+| Informasi terakhir disinkronkan | COYABAG Wishlist persistence integrity pada source `68119d2b9cbcc4b50bfceb284b0365d047c2c2ab`. |
+| Status sinkronisasi | `PRODUCTION_DEPLOYED / ACTIVATION_BLOCKED / BUSINESS_READINESS_BLOCKED`. |
+
+## COYABAG Wishlist persistence integrity
+
+- Immutable release `20260825-68119d2`; rollback `20260825-838006c`.
+- Persistence failure menjaga pilihan sesi dan menyediakan retry terverifikasi.
+  Update valid antartab diterapkan sekali; payload rusak ditolak tanpa
+  kehilangan Wishlist aktif.
+- Public desktop/mobile dan two-tab acceptance, full regression,
+  security/build, backup/rollback, dan smoke lulus.
+- Readiness tetap 30/42 dengan 12 blocker. Surface production live; commerce,
+  activation, dan business readiness tetap blocked.
+
+## File yang berubah pada sinkronisasi ini (COYABAG Wishlist persistence)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## Snap and Fit self-contained runtime artifacts
 

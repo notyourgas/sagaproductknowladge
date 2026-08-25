@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-25 - COYABAG Wishlist persistence integrity
+
+- Exact source `68119d2b9cbcc4b50bfceb284b0365d047c2c2ab` aktif pada immutable
+  Hostinger release `20260825-68119d2` dengan rollback `20260825-838006c`.
+- Wishlist membedakan state sesi dari penyimpanan permanen, menyediakan retry
+  terverifikasi, menerapkan update valid antartab sekali, dan menolak payload
+  rusak tanpa kehilangan pilihan aktif.
+- Desktop/mobile, two-tab, regression, accessibility, security/build,
+  backup/rollback, dan public smoke lulus. Delivery `PRODUCTION_DEPLOYED`;
+  activation/business readiness `BLOCKED`; commerce tetap fail-closed.
+
 ## 2026-08-25 - Snap and Fit self-contained runtime artifacts
 
 - Exact private source head `6209d37`; implementation `e64b002` memisahkan API,

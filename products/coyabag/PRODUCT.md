@@ -61,9 +61,14 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260825-838006c` dengan source
-  `838006c7cff1c391858e7eed97e5e78bae351a36` melayani production;
-  rollback langsung `20260825-7875667` dipertahankan.
+- Release aktif `20260825-68119d2` dengan source
+  `68119d2b9cbcc4b50bfceb284b0365d047c2c2ab` melayani production;
+  rollback langsung `20260825-838006c` dipertahankan.
+- Wishlist menjelaskan ketika browser gagal menyimpan data: pilihan exact
+  produk/varian tetap tersedia pada sesi aktif dan retry hanya mengonfirmasi
+  setelah write berhasil. Update valid antartab diterapkan sekali lalu
+  direkonsiliasi saat katalog siap; payload rusak diabaikan tanpa
+  mengosongkan Wishlist aktif.
 - Product Detail hanya menampilkan testimonial berizin yang ditautkan ke
   produk exact. Atribusi, sumber HTTPS aman, rating opsional, dan warna yang
   direview mengikuti CMS; review produk lain tidak bocor. Empty dan outage
