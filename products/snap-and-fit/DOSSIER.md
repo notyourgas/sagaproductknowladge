@@ -12,9 +12,9 @@ credential, PII, identifier tenant/perangkat, atau detail provider sensitif.
 - Delivery: `LOCAL_VALIDATED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED`
-- Provenance: source private `dbbb814`, operations feature `b09f279`,
-  deletion/recovery hardening `dbbb814`, protected Vercel preview
-  `dpl_Dtr9Uigz6263nj7V69s62RMD3Pfz` dari baseline frontend sebelumnya.
+- Provenance: source private `09a55bd`, operations feature `b09f279`,
+  deletion/recovery hardening `dbbb814`, candidate/cart authority `09a55bd`,
+  protected Vercel preview `dpl_FFDKoeT7Nj51FNxHgdKuEVogBYJJ`.
 
 ## Overview produk
 
@@ -37,9 +37,10 @@ perangkat fotografer sampai ada permintaan HiRes dari transaksi terverifikasi.
 2. Fotografer membuat derivative JPEG 1.800 px, menyimpan manifest lokal, lalu
    mengunggah preview privat dengan checksum.
 3. Peserta membuka event, menyetujui notice, lalu mencari melalui BIB atau
-   selfie feature-flagged.
+   selfie feature-flagged. Confirm/reject terikat exact anonymous search session.
 4. Server membentuk candidate, quote, bundle, dan checkout; client tidak menjadi
-   source of truth harga.
+   source of truth harga. Verified checkout mengubah server-priced cart menjadi
+   order dengan provenance satu-ke-satu.
 5. Payment terverifikasi mengaktifkan social copy. Fotografer menerima request
    HiRes, mengunggah original, dan QA mengaktifkan final download.
 6. Ledger membagi hasil 75/15/10 dan menahan payout sampai provider-cleared dan
@@ -110,7 +111,7 @@ fotografer desktop-optimized.
 ## Evidence lokal
 
 - Full format/lint/typecheck/test/build lulus.
-- 37 API test lulus; enam MySQL/external integration test terkontrol skip tanpa
+- 38 API test lulus; enam MySQL/external integration test terkontrol skip tanpa
   service project-safe.
 - 14 worker test lulus; dua integrasi MySQL/Redis sengaja skip tanpa service
   project-safe. Restore verifier kini memeriksa core schema dan orphan deletion

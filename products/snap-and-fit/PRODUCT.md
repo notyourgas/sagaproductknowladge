@@ -47,11 +47,12 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 - Delivery: `LOCAL_VALIDATED`.
 - Activation: `NOT_PRODUCTION_ACTIVATED`.
 - Business readiness: `BLOCKED`.
-- Exact source `dbbb814` berada di private `main`; fitur operator berasal dari
-  `b09f279` dan deletion/recovery hardening berasal dari `dbbb814`.
-- Protected Vercel preview `dpl_Dtr9Uigz6263nj7V69s62RMD3Pfz` berstatus
+- Exact source `09a55bd` berada di private `main`; fitur operator berasal dari
+  `b09f279`, deletion/recovery hardening dari `dbbb814`, serta candidate/cart
+  authority dari `09a55bd`.
+- Protected Vercel preview `dpl_FFDKoeT7Nj51FNxHgdKuEVogBYJJ` berstatus
   `READY`; frontend dapat dirender tetapi backend staging sengaja fail-closed.
-- Full local validation, 37 API test dengan enam integrasi eksternal terkontrol
+- Full local validation, 38 API test dengan enam integrasi eksternal terkontrol
   skip, 14 worker test dengan dua integrasi service-dependent skip, audit
   dependency nol vulnerability, serta 38 browser test dengan dua viewport skip
   lulus.
@@ -65,6 +66,8 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   pembayaran, atau PII peserta.
 - Shared Hostinger VPS yang diperiksa tidak dipakai karena isolation dan
   kapasitasnya tidak memenuhi gate Snap and Fit.
+- Candidate confirm/reject terikat exact anonymous search session; authoritative
+  checkout menyimpan server-priced cart dan menghubungkannya ke order.
 
 ## Next gate
 

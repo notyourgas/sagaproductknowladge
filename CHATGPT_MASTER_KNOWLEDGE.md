@@ -4,10 +4,11 @@ Evidence cut-off: 25 Agustus 2026 06:25 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
-Snap and Fit exact private source `dbbb814` berstatus `CONFIRMED /
+Snap and Fit exact private source `09a55bd` berstatus `CONFIRMED /
 LOCAL_VALIDATED`; privileged operations feature berasal dari `b09f279`,
-deletion/recovery hardening dari `dbbb814`, dan
-protected Vercel preview `dpl_Dtr9Uigz6263nj7V69s62RMD3Pfz` berstatus `READY`.
+deletion/recovery hardening dari `dbbb814`, candidate/cart authority dari
+`09a55bd`, dan protected Vercel preview `dpl_FFDKoeT7Nj51FNxHgdKuEVogBYJJ`
+berstatus `READY`.
 Marketplace foto olahraga ini mencakup event, uploader preview 500 JPEG,
 BIB/selfie mock ber-consent, catalog Rp25k/Rp60k/Rp99k, Tokopay mock/contract,
 social dan HiRes entitlement, signed download, ledger bersih 75/15/10, serta
@@ -17,8 +18,10 @@ operator-assisted tanpa klaim uang bergerak, provider-cleared payout
 maker-checker, support grant 60 menit, dan deletion fan-out. Worker deletion
 sekarang memiliki idempotent partial retry, stale reclaim, DLQ, 30-second
 deadline sweep, safe evidence, controlled terminal-only outbox replay, dan
-restore schema-integrity check. Full local gate, 37 API test, 14 worker test,
-dependency audit nol, dan 38 browser test lulus; integration service-dependent
+restore schema-integrity check. Candidate confirm/reject terikat exact anonymous
+search session; verified checkout menyimpan server-priced cart dan order
+provenance. Full local gate, 38 API test, 14 worker test, dependency audit nol,
+dan browser suite lulus; integration service-dependent
 tetap skip terkontrol. Backend staging, isolated VPS, MySQL/Redis/S3 worker
 evidence, real-provider deletion, external provider/legal gate,
 load/recovery/device UAT, production activation, dan business readiness belum

@@ -10,6 +10,19 @@ production, activation, dan business readiness.
 Mock, fixture, preview frontend, dan test lokal bukan bukti provider atau
 production activation.
 
+## 2026-08-25 - Candidate feedback dan cart authority
+
+- `LOCAL_VALIDATED` dari exact source private `09a55bd`; protected preview
+  `dpl_FFDKoeT7Nj51FNxHgdKuEVogBYJJ` berstatus `READY` dan route BIB smoke 200.
+- Candidate confirm/reject kini terikat exact event, search session,
+  anonymous-session hash, dan asset. Duplicate decision replay-safe dan sesi
+  berbeda ditolak.
+- Verified checkout mempersistenkan exact server-priced cart, mengonversinya
+  atomically, lalu menghubungkannya satu-ke-satu ke order.
+- Full local gate, 38 API test, targeted browser 4/4, dan dependency audit lulus.
+  Migration serta optional MySQL assertion masih harus dieksekusi di isolated
+  staging; status activation dan business readiness tidak berubah.
+
 ## 2026-08-25 - Deletion worker dan recovery control
 
 - `LOCAL_VALIDATED` dari exact source private `dbbb814` di `main`.

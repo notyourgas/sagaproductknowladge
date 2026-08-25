@@ -1,5 +1,15 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - Snap and Fit candidate and cart authority sync
+
+- Produk/area: event-scoped candidate feedback dan server-authoritative cart.
+- Informasi `CONFIRMED` berasal dari exact private source `09a55bd`, protected
+  preview `dpl_FFDKoeT7Nj51FNxHgdKuEVogBYJJ`, local test, dan preview smoke.
+- Knowledge mencatat cross-session denial, replay-safe decisions, converted cart,
+  dan one-to-one order provenance.
+- Delivery tetap `LOCAL_VALIDATED`; activation `NOT_PRODUCTION_ACTIVATED` dan
+  business readiness `BLOCKED`.
+
 ## 2026-08-25 - Snap and Fit deletion and recovery sync
 
 - Produk/area: privacy deletion worker, outbox replay, dan restore verification.

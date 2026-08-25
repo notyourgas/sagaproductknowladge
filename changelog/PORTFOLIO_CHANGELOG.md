@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-25 - Snap and Fit candidate and cart authority
+
+- Exact private source `09a55bd` mempersistenkan candidate confirm/reject yang
+  anonymous-session-bound serta server-priced cart yang terhubung satu-ke-satu
+  dengan order.
+- Protected preview `dpl_FFDKoeT7Nj51FNxHgdKuEVogBYJJ` `READY`; full local gate,
+  38 API test, dan browser confirm/reject 4/4 lulus.
+- Delivery tetap `LOCAL_VALIDATED`; isolated MySQL migration, backend staging,
+  activation, dan business readiness belum lulus.
+
 ## 2026-08-25 - CoyaBag storefront SEO integrity
 
 - Exact source `949a57be913245d58013554ab36d9a678c448d0f` aktif sebagai
