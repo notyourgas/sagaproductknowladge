@@ -12,14 +12,24 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T18:28:08+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T18:33:23+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `37e2c27` |
-| Informasi terakhir disinkronkan | Snap and Fit checksum-verified ShellCheck acceptance exact `162cc29`. |
+| Baseline sebelum pembaruan | `c50def1` |
+| Informasi terakhir disinkronkan | Snap and Fit authoritative load fixture exact `4f9d8d3`. |
 | Status sinkronisasi | `LOCAL_VALIDATED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=BLOCKED`. |
-| Konflik | Tidak ada konflik; static shell lint tidak disamakan dengan runtime staging. |
-| Error | Tidak ada error knowledge; isolated staging dan provider/runtime evidence tetap external gate. |
+| Konflik | Tidak ada konflik; k6 inspect tidak disamakan dengan real load evidence. |
+| Error | Tidak ada error knowledge; isolated staging dan real load/provider/runtime evidence tetap external gate. |
+
+## File yang berubah pada sinkronisasi ini (Snap and Fit authoritative load fixture)
+
+- `products/snap-and-fit/PRODUCT.md`
+- `products/snap-and-fit/DOSSIER.md`
+- `products/snap-and-fit/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## File yang berubah pada sinkronisasi ini (Snap and Fit ShellCheck acceptance)
 

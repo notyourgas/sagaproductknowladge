@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-25 - Snap and Fit authoritative load fixture
+
+- Exact source `4f9d8d3` memperbaiki 300-VU fixture agar sampled quote mengikuti
+  seeded-BIB search, exact-session candidate confirmation, dan same-session
+  authority.
+- Full validation dan checksum-verified k6 v2.2.0 `inspect` lulus tanpa
+  mengirim load traffic.
+- Delivery tetap `LOCAL_VALIDATED`; real load/soak/429, isolated staging, dan
+  production gates tidak berubah.
+
 ## 2026-08-25 - Snap and Fit ShellCheck acceptance
 
 - Exact docs head `162cc29` menutup static shell lint dengan official Windows

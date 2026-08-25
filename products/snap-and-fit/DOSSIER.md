@@ -12,8 +12,9 @@ credential, PII, identifier tenant/perangkat, atau detail provider sensitif.
 - Delivery: `LOCAL_VALIDATED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED`
-- Provenance: exact private head `162cc29`, ShellCheck acceptance `162cc29`,
-  clean-checkout setup fix `fbf01b6`, liveness peer acceptance `7b44101`,
+- Provenance: exact private head `4f9d8d3`, authoritative load fixture `4f9d8d3`,
+  ShellCheck acceptance `162cc29`, clean-checkout setup fix `fbf01b6`, liveness
+  peer acceptance `7b44101`,
   encrypted event-scoped face search
   `96df668`, resumable multipart feature `3fc397f`,
   staging-control/preview baseline `d2b0c5c`, organizer safe metrics `46d7a4b`,
@@ -193,6 +194,10 @@ fotografer desktop-optimized.
   SHA-256; lima skrip operasi lulus hingga severity `style`. Portable verifier
   dibersihkan setelah run. Tidak ada image/container atau runtime staging yang
   dieksekusi dari evidence ini.
+- Fixture k6 300-VU melakukan authoritative seeded-BIB search, exact-session
+  candidate confirmation, dan same-session sampled quote. Official
+  checksum-verified k6 v2.2.0 `inspect` lulus; full validation lulus dan tidak ada
+  traffic load yang dikirim tanpa isolated staging.
 - Preview protected `dpl_E749gUQc7iVtGCauGvVLa1swk59j` dari baseline `7b44101`
   berstatus `READY`; manifest, service worker, offline, BIB, selfie-capture, dan
   photographer jobs route 200 serta
