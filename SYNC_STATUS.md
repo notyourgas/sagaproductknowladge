@@ -79,15 +79,15 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `CHANGELOG.md`
 - `SYNC_STATUS.md`
 
-## SagaWork account-security acceptance
+## SagaWork security-governance and exact-release acceptance
 
-- Exact implementation/runtime: `80cf623b5e3eb01d53355ff62578eca325b295a0`; documentation acceptance: `35c048a`.
-- Protected Preview `dpl_CYKzNDVtmoKvtEV2Eb8MGHJRj8BR` READY; Hostinger tetap isolated synthetic staging tanpa public route/real data.
-- Self-service password change, context/top-3.000 hash-only blocklist, 5/3 session cap, own-session inventory/termination, dan revoke-others tervalidasi.
-- 31/102 tests, 41-page build, 19-area smoke, abuse 8/8, browser/Axe 12/4, load 720/720, manifest 949 file, MySQL 56/22, encrypted restore zero-resurrection, dan guarded rollback PASS.
-- ASVS internal: 148 PASS, 79 N/A, 7 pending internal, 18 pending external, dan 1 Staff no-OTP risk acceptance; ini bukan certification/full-Level-2 claim.
+- Exact implementation/runtime: `17427f564b87cd18d03de7764a319a14e3d99fd4`; documentation acceptance: `22174f1`.
+- Protected Preview `dpl_FoFe3hCFgnJuXvTBbVxdY2rRnjh1` READY; Hostinger tetap isolated synthetic staging tanpa public route/real data.
+- Strict per-response nonce CSP, crypto lifecycle+MFA/backup re-encryption, remediation SLA, exact-release CycloneDX SBOM 699 komponen, dan logging inventory tervalidasi.
+- 32/106 tests, 41-page build, 19-area smoke, abuse 9/9, browser/Axe 12/4, load 720/720, manifest 928 file, MySQL 56/22, encrypted restore zero-resurrection, dan rollback `17427f5 → 80cf623 → 17427f5` PASS.
+- ASVS internal: 155 PASS, 79 N/A, 0 pending internal, 18 pending external, dan 1 Staff no-OTP risk acceptance; ini bukan certification/full-Level-2 claim.
 
-## File yang berubah pada sinkronisasi ini (SagaWork account security)
+## File yang berubah pada sinkronisasi ini (SagaWork Sprint 28)
 
 - `products/sagawork/PRODUCT.md`
 - `products/sagawork/DOSSIER.md`

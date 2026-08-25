@@ -1,5 +1,14 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - SagaWork Sprint 28 security-governance sync
+
+- Informasi `CONFIRMED` berasal dari exact implementation/runtime `17427f564b87cd18d03de7764a319a14e3d99fd4`, documentation acceptance `22174f1`, protected Preview `dpl_FoFe3hCFgnJuXvTBbVxdY2rRnjh1`, dan synthetic Hostinger acceptance.
+- Produk/area: strict nonce CSP, cryptographic lifecycle/re-encryption, vulnerability SLA, exact-release CycloneDX SBOM, logging inventory, ASVS, recovery, release, dan handoff.
+- Knowledge mencatat 32/106 test, 19-area smoke, abuse 9/9, browser/Axe 12/4, load 720/720, manifest 928 file, restore/rollback, serta ASVS 155/79/0/18/1.
+- Restricted source/SBOM artifact tetap tidak dipublikasikan; repository knowledge hanya memuat checksum, ukuran, jumlah komponen, dan provenance publik-aman.
+- Delivery `STAGING_DEPLOYED`; activation `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED_EXTERNAL`.
+- Blocker: private remote+hosted CI, 19 external/risk-acceptance ASVS disposition, independent review, provider/DPA, offsite key custody, legal/device/human UAT, named pilot/public route, 16 evidence, signed receipt, canary, dan final Andreas Go.
+
 ## 2026-08-25 - Snap and Fit full-validation recovery gate sync
 
 - Klasifikasi: `CONFIRMED`.

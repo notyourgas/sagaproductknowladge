@@ -1,5 +1,13 @@
 # Portfolio Changelog
 
+## 2026-08-25 - SagaWork security-governance acceptance
+
+- `CONFIRMED`: exact Hostinger synthetic runtime `17427f564b87cd18d03de7764a319a14e3d99fd4` dan protected Preview `dpl_FoFe3hCFgnJuXvTBbVxdY2rRnjh1` tervalidasi tanpa real data/public activation.
+- Per-response nonce CSP, crypto lifecycle+re-encryption, remediation SLA, 699-component exact-release SBOM, dan logging inventory menutup seluruh pending-internal ASVS.
+- Evidence: 32/106 unit test, 19-area smoke, abuse 9/9, browser/Axe 12/4, load 720/720, MySQL 56/22, manifest 928 file, encrypted restore zero-resurrection, dan guarded rollback PASS.
+- Internal ASVS 5.0 menjadi 155 PASS/79 N/A/0 pending internal/18 pending external/1 Staff no-OTP risk acceptance. Ini bukan certification/full-Level-2 claim.
+- Delivery tetap `STAGING_DEPLOYED`; activation `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED_EXTERNAL`.
+
 ## 2026-08-25 - Snap and Fit recovery gate in full validation
 
 - Exact private source `e6e27d0` membuat `pnpm validate` selalu menjalankan

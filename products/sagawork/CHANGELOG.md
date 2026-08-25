@@ -8,6 +8,15 @@ Mencatat perubahan material SagaWork dengan status delivery dan activation yang 
 
 Synthetic fixture, preview, dan staging bukan bukti real pilot atau production activation.
 
+## 2026-08-25 - Security governance dan exact-release SBOM
+
+- `CONFIRMED` dari exact implementation/runtime `17427f564b87cd18d03de7764a319a14e3d99fd4`, documentation acceptance `22174f1`, protected Preview `dpl_FoFe3hCFgnJuXvTBbVxdY2rRnjh1`, dan exact Hostinger synthetic staging evidence.
+- Strict nonce CSP per response, crypto lifecycle/inventory, transactional MFA re-encryption, streaming backup re-encryption, vulnerability remediation SLA, exact-release CycloneDX SBOM, dan logging inventory menutup tujuh pending-internal ASVS.
+- 32/106 test, 41-page build, 19-area smoke, abuse 9/9, browser/Axe 12/4, load 720/720, schema-2 manifest 928 file, encrypted restore 56/22/26/22 tombstone zero-resurrection, dan rollback `17427f5 → 80cf623 → 17427f5` lulus.
+- ASVS internal menjadi 155 PASS, 79 N/A, 0 pending internal, 18 pending external, dan 1 Staff no-OTP risk acceptance. Ini bukan certification/full-Level-2 claim.
+- Restricted source archive 1.406.575 byte serta 699-component SBOM memiliki checksum/provenance PASS dan tidak dipublikasikan.
+- Delivery `STAGING_DEPLOYED`; activation `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED_EXTERNAL`. Tidak ada real data, public route, provider production, custom domain, atau closed-beta activation.
+
 ## 2026-08-25 - Self-service password dan session security
 
 - `CONFIRMED` dari exact implementation/runtime `80cf623b5e3eb01d53355ff62578eca325b295a0`, documentation acceptance `35c048a`, protected Preview `dpl_CYKzNDVtmoKvtEV2Eb8MGHJRj8BR`, dan exact Hostinger synthetic staging evidence.
