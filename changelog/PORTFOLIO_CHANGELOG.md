@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-26 - SagaView S293 Support Hub boundary acceptance
+
+- Exact test source `cdc49b51c816fadda9298d924164e0a87c048000` membuktikan
+  404 tanpa sesi adalah guard konteks, sementara fresh-tab Owner authenticated
+  memperoleh bootstrap 200 dengan privacy local-first.
+- Focused/regression 37 test dan 176 assertion, build, audit dependency,
+  route live, smoke, service, rollback, security header, serta journal lulus.
+- Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S292.
+  Authenticated production UAT masih menunggu izin terpisah.
+
 ## 2026-08-26 - SagaView S292 cumulative production release
 
 - Backend/Owner exact `1237ef2df06ca53f10b6230adc9350b179462ade`

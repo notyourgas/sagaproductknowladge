@@ -1,5 +1,25 @@
 # SagaView Changelog
 
+## 2026-08-26 - S293 Support Hub bootstrap boundary acceptance
+
+- Klasifikasi: `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+  production tetap pada release S292 dan tidak diaktifkan.
+- Before: smoke tanpa sesi mengembalikan 404 pada
+  `/api/admin/support/bootstrap`, sehingga keberadaan route dan perilaku
+  fresh-tab authenticated belum dibedakan dengan jelas.
+- After: exact `cdc49b51c816fadda9298d924164e0a87c048000` membuktikan route
+  tersedia, request tanpa konteks ditolak fail-closed, sedangkan sesi Owner
+  dengan konteks tenant mendapat bootstrap 200 dan kontrak local-first.
+- Privacy/data: response fresh tab tidak membuat conversation atau attachment;
+  tidak ada foto, path, output customer, migration, atau perubahan runtime.
+- Evidence: focused 1/7; gabungan Support Hub, UAT safety, estimasi, dan
+  provenance 37/176; build 5.097 modul; Pint/diff, Composer audit, dan npm
+  production audit nol advisory/vulnerability lulus. Smoke publik 4/4,
+  security header, route live, service, rollback, dan journal production sehat.
+- Residual: authenticated production UAT tetap memerlukan izin eksplisit dan
+  akun referensi non-customer sebelum `PRODUCTION_ACTIVATED` atau
+  `BUSINESS_READY` dinilai.
+
 ## 2026-08-26 - S292 cumulative S291 production release
 
 - Klasifikasi: `PUSHED / PRODUCTION_DEPLOYED /

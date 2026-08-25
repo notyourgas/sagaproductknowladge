@@ -1,6 +1,18 @@
 # SagaView Product Knowledge
 
-Updated: 26 Agustus 2026 04:23 WIB
+Updated: 26 Agustus 2026 05:00 WIB
+
+SagaView S293 exact `cdc49b51c816fadda9298d924164e0a87c048000` sudah
+`PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Acceptance baru
+membedakan guard konteks dari kerusakan endpoint Support Hub: request tanpa
+sesi/konteks ditolak fail-closed, sedangkan fresh-tab Owner authenticated
+mendapat bootstrap 200 dengan `productCode=sagaview` dan privacy local-first.
+Tidak ada conversation atau attachment yang dibuat, dan tidak ada foto, path,
+output customer, migration, atau runtime yang berubah. Focused/regression
+37/176, build 5.097 modul, Pint/diff, audit dependency nol, serta route,
+rollback, service, journal, security header, dan smoke production lulus.
+Production tetap S292; authenticated production UAT tetap memerlukan izin
+eksplisit sebelum activation atau business readiness.
 
 SagaView backend/Owner exact
 `1237ef2df06ca53f10b6230adc9350b179462ade` sekarang
