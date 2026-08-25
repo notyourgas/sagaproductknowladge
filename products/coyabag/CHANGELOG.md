@@ -4,6 +4,21 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-26 - Lookbook variant, Cart, destination, and swipe integrity production release
+
+- Klasifikasi: `CONFIRMED` dari exact source
+  `1e88e9efcac19dcac00ff3302c5c3a3e5dde7323`, immutable Hostinger release
+  `20260826-1e88e9e`, rollback `20260826-0bffe6e`, dan runtime verification.
+- Setiap varian aktif menjadi scene exact dengan media, stock, price, URL,
+  Cart, dan handoff produk/warna yang konsisten; swipe nyata tersedia.
+- Destination stale/credentialed/non-HTTPS, media tidak aman, atau varian
+  nonaktif gagal tertutup. Admin memakai live picker dan publish/schedule guard.
+- 164 storefront test, 404 Laravel test dengan 403 pass dan satu intentional
+  skip, full RC, backup/rollback, desktop/mobile acceptance, dan public smoke
+  lulus.
+- Delivery `PRODUCTION_DEPLOYED`; readiness tetap 30/42 dengan 12 blocker.
+  Activation dan business readiness `BLOCKED`; commerce tidak diaktifkan.
+
 ## 2026-08-26 - Gallery variant and destination integrity production release
 
 - Klasifikasi: `CONFIRMED` dari exact source

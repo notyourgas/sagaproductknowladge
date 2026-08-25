@@ -61,9 +61,18 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260826-0bffe6e` dengan source
-  `0bffe6e6362b44fcce64c5e7c8c5829334b54b5a` melayani production;
-  rollback langsung `20260826-8937547` dipertahankan.
+- Release aktif `20260826-1e88e9e` dengan source
+  `1e88e9efcac19dcac00ff3302c5c3a3e5dde7323` melayani production;
+  rollback langsung `20260826-0bffe6e` dipertahankan.
+- Lookbook fallback menampilkan setiap varian aktif sebagai scene exact,
+  termasuk YONA Black, YONA Cream, dan KIARA Black. Swipe, arrow, keyboard,
+  reload, dan share URL mempertahankan scene produk/warna yang sama.
+- CTA Lookbook memakai quantity Cart exact dan gagal tertutup pada sold-out,
+  batas maksimum, destination stale, media tidak aman, atau varian nonaktif.
+  Admin memakai live product/variant picker dan publish/schedule guard.
+- 164 storefront test, 404 Laravel test dengan 403 pass dan satu intentional
+  skip, full RC, dependency audit, desktop/mobile acceptance, immutable deploy,
+  serta public smoke lulus. Readiness tetap 30/42 dengan 12 blocker.
 - Gallery fallback mencakup media setiap varian aktif dengan handoff exact ke
   produk dan warna. CMS tetap menjadi authority; media editorial didahulukan
   dan visual duplikat dihapus secara deterministik.
@@ -71,9 +80,8 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
   menyesatkan. Preview mendukung swipe, arrow, Escape, focus trap, dan focus
   return. Admin menyediakan pemilih tujuan live dan menolak publish/schedule
   Gallery yang tidak valid.
-- 162 storefront test, 402 Laravel test dengan 401 pass dan satu intentional
-  skip, full RC, dependency audit, desktop/mobile acceptance, immutable deploy,
-  serta public smoke lulus. Readiness tetap 30/42 dengan 12 blocker.
+- Release Gallery sebelumnya memakai source exact dan tetap tersedia sebagai
+  rollback `20260826-0bffe6e`.
 - Our Product memprioritaskan media varian yang dipilih untuk hero dan poster
   video, kemudian mempertahankan media editorial seri sebagai cerita produk.
 - CTA memakai jumlah varian exact di Cart. Initial, partial, stock-limit, dan

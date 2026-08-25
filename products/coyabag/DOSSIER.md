@@ -78,7 +78,18 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260826-0bffe6e` memakai source
+Release production terbaru `20260826-1e88e9e` memakai source
+`1e88e9efcac19dcac00ff3302c5c3a3e5dde7323` dan rollback
+`20260826-0bffe6e`. Lookbook fallback mencakup setiap varian aktif dengan media,
+stock, price, Cart, URL scene, dan tujuan produk/warna exact. Pointer/touch
+swipe, arrow, keyboard, reload, serta share URL memakai state yang sama.
+Destination stale, credentialed/non-HTTPS, media tidak aman, dan varian nonaktif
+kehilangan CTA; admin memakai live destination picker dan publish/schedule
+guard. Desktop/mobile acceptance, 164 storefront test, 404 Laravel test dengan
+403 pass dan satu intentional skip, full RC, backup/rollback, serta public
+smoke lulus. Readiness tetap 30/42 dengan 12 blocker.
+
+Release sebelumnya `20260826-0bffe6e` memakai source
 `0bffe6e6362b44fcce64c5e7c8c5829334b54b5a` dan rollback
 `20260826-8937547`. Gallery fallback mencakup media semua varian aktif dengan
 tujuan produk/warna exact, urutan editorial-first, dan deduplikasi. CMS stale
@@ -86,7 +97,7 @@ atau destination non-HTTPS mempertahankan konteks visual tetapi kehilangan CTA;
 admin menyediakan pemilih destination live dan publish guard. Preview swipe,
 keyboard/focus, desktop/mobile acceptance, 162 storefront test, 402 Laravel
 test dengan 401 pass dan satu intentional skip, full RC, backup/rollback, serta
-public smoke lulus. Readiness tetap 30/42 dengan 12 blocker.
+public smoke lulus.
 
 Release sebelumnya `20260826-8937547` memakai source
 `89375473d56ba10c42adf4d6d1a4f30d661a0431` dan rollback

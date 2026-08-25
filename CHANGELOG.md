@@ -1,5 +1,24 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-26 - COYABAG Lookbook integrity sync
+
+- Ringkasan: sinkronisasi scene per varian aktif, exact product/color/Cart
+  handoff, swipe dan share URL, stale destination fail-closed, serta admin live
+  picker dan publish guard.
+- Alasan: pelanggan harus dapat menemukan semua warna dan tidak diarahkan ke
+  varian stale atau melebihi stock; operator perlu mencegah publish invalid.
+- Produk/area: COYABAG Lookbook, catalog/variant, Cart, CMS admin, UI/UX,
+  accessibility, security, QA, dan release provenance.
+- Klasifikasi: `CONFIRMED`; source exact
+  `1e88e9efcac19dcac00ff3302c5c3a3e5dde7323`, release `20260826-1e88e9e`.
+- Production berubah: ya, surface storefront dan admin. Delivery
+  `PRODUCTION_DEPLOYED`; activation/business readiness `BLOCKED`; commerce
+  tetap fail-closed.
+- Dokumen terdampak: Product, Dossier, changelog COYABAG, portfolio, master
+  knowledge, root changelog, dan sync status.
+- Next action: Cycle 2 Testimonials Integrity; 12 blocker activation tetap
+  ditutup melalui gate owner/provider/operasional terpisah.
+
 ## 2026-08-26 - COYABAG Gallery variant and destination integrity sync
 
 - Ringkasan: sinkronisasi seluruh media varian aktif, exact product/color

@@ -3496,15 +3496,25 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release aktif `20260826-0bffe6e` menjalankan exact source
+Release aktif `20260826-1e88e9e` menjalankan exact source
+`1e88e9efcac19dcac00ff3302c5c3a3e5dde7323` dengan rollback
+`20260826-0bffe6e`. Lookbook menampilkan setiap varian aktif sebagai scene exact
+dengan media, stock, price, Cart, URL, dan tujuan produk/warna konsisten.
+Swipe, arrow, keyboard, reload, dan share URL memakai state yang sama. Stale
+destination, unsafe media, inactive variant, sold-out, dan batas Cart gagal
+tertutup; admin memakai live picker dan publish/schedule guard. Desktop/mobile
+acceptance, 164 storefront test, 404 Laravel test dengan 403 pass dan satu
+intentional skip, full RC, backup/rollback, dependency audit, dan public smoke
+lulus. Readiness tetap 30/42 dengan 12 blocker.
+
+Release sebelumnya `20260826-0bffe6e` menjalankan exact source
 `0bffe6e6362b44fcce64c5e7c8c5829334b54b5a` dengan rollback
 `20260826-8937547`. Gallery fallback mencakup media semua varian aktif dengan
 exact product/color handoff. Destination stale atau non-HTTPS kehilangan CTA,
 admin memakai live destination picker dan publish guard, serta preview mendukung
 swipe, arrow, Escape, focus trap/return. Desktop/mobile acceptance, 162
 storefront test, 402 Laravel test dengan 401 pass dan satu intentional skip,
-full RC, backup/rollback, dependency audit, dan public smoke lulus. Readiness
-tetap 30/42 dengan 12 blocker.
+full RC, backup/rollback, dependency audit, dan public smoke lulus.
 
 Release sebelumnya `20260826-8937547` menjalankan exact source
 `89375473d56ba10c42adf4d6d1a4f30d661a0431` dengan rollback

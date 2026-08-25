@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-26 - COYABAG Lookbook variant, Cart, destination, and swipe integrity
+
+- Exact source `1e88e9efcac19dcac00ff3302c5c3a3e5dde7323` aktif pada immutable
+  Hostinger release `20260826-1e88e9e` dengan rollback `20260826-0bffe6e`.
+- Semua varian aktif menjadi scene exact; swipe dan share URL mempertahankan
+  produk/warna, sedangkan CTA mengikuti quantity Cart serta stock live.
+- Destination/media/variant stale gagal tertutup; admin live picker,
+  publish guard, desktop/mobile acceptance, full RC, dan public smoke lulus.
+- Delivery `PRODUCTION_DEPLOYED`; activation/business readiness `BLOCKED`;
+  readiness 30/42 dan commerce tetap fail-closed.
+
 ## 2026-08-26 - COYABAG Gallery variant and destination integrity
 
 - Exact source `0bffe6e6362b44fcce64c5e7c8c5829334b54b5a` aktif pada immutable

@@ -12,12 +12,33 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-26T03:28:33+07:00 |
+| Waktu pembaruan terakhir | 2026-08-26T04:30:59+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | exact `origin/main` `a19654e` sebelum sinkronisasi COYABAG Gallery |
-| Informasi terakhir disinkronkan | COYABAG Gallery variant and destination integrity. |
+| Baseline sebelum pembaruan | exact `origin/main` `fd3ef16` sebelum sinkronisasi COYABAG Lookbook |
+| Informasi terakhir disinkronkan | COYABAG Lookbook variant, Cart, destination, and swipe integrity. |
 | Status sinkronisasi | `PRODUCTION_DEPLOYED`; activation dan business readiness `BLOCKED`; commerce tetap fail-closed. |
+
+## COYABAG Lookbook variant, Cart, destination, and swipe integrity
+
+- Exact source `1e88e9efcac19dcac00ff3302c5c3a3e5dde7323` aktif pada immutable
+  release `20260826-1e88e9e`; rollback `20260826-0bffe6e`.
+- Seluruh varian aktif menjadi scene exact dengan Cart, stock, URL, media, dan
+  tujuan produk/warna konsisten. Swipe nyata tersedia pada desktop/mobile.
+- Destination/media/variant stale gagal tertutup; admin live picker dan
+  publish/schedule guard, full RC, backup/rollback, dan public smoke lulus.
+- Readiness tetap 30/42 dengan 12 blocker; commerce, activation, dan business
+  readiness tetap blocked.
+
+## File yang berubah pada sinkronisasi ini (COYABAG Lookbook)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG Gallery variant and destination integrity
 
