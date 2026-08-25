@@ -8,6 +8,13 @@ Mencatat perubahan material SagaWork dengan status delivery dan activation yang 
 
 Synthetic fixture, preview, dan staging bukan bukti real pilot atau production activation.
 
+## 2026-08-25 - Safe PWA install/update dan CI baseline
+
+- `CONFIRMED` dari feature source `e9c2c6c`, exact active isolated Hostinger staging `e003a3d`, documentation head `6964dd5`, serta synthetic build/test/runtime evidence.
+- Account Staff mempunyai install guidance dan explicit update prompt. Service worker exact-allowlist hanya menyimpan manifest/icon publik; `/sw.js` no-store dan tidak meng-cache HTML/API/authenticated route/foto/export.
+- Workflow CI SHA-pinned tersedia; full local equivalent lulus 27/89 unit test, 39-page build, dependency audit, manifest guard, 18-area smoke, security 7/7, load 720/0, browser+Axe 12/4, encrypted backup checksum, manifest 26 file, serta rollback `e003a3d → 9d49565 → e003a3d`.
+- Delivery `STAGING_DEPLOYED`; activation `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED_EXTERNAL`. Hosted CI belum dijalankan karena source belum mempunyai private remote; real-device install/update/offline UAT dan external/human gates tetap pending.
+
 ## 2026-08-25 - Per-Staff reporting dan Summary/Detail CSV
 
 - `CONFIRMED` dari feature source `763fa37`, exact active isolated Hostinger staging `9d49565`, documentation head `9eeef49`, serta synthetic build/test/runtime evidence.

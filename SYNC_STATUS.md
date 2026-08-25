@@ -12,14 +12,25 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T17:08:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T17:10:17+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `b52f2e7` |
-| Informasi terakhir disinkronkan | COYABAG Admin Media Produk exact production release `20260825-2000e78`. |
-| Status sinkronisasi | `PRODUCTION_DEPLOYED / BLOCKED / BLOCKED`; commerce tetap fail-closed. |
-| Konflik | Tidak ada; surface production dibedakan dari commerce activation. |
-| Error | Tidak ada error sinkronisasi; 12 blocker readiness tetap terbuka. |
+| Baseline sebelum pembaruan | `28369ad` |
+| Informasi terakhir disinkronkan | SagaWork safe PWA/CI baseline active synthetic staging `e003a3d`. |
+| Status sinkronisasi | `STAGING_DEPLOYED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`. |
+| Konflik | Tidak ada; local CI-equivalent evidence dibedakan dari hosted CI run, dan synthetic staging dibedakan dari production activation. |
+| Error | Tidak ada error sinkronisasi; source remote/hosted CI, real-device PWA UAT, provider/offsite/legal/human Gate A-C/E tetap pending. |
+
+## File yang berubah pada sinkronisasi ini (SagaWork safe PWA dan CI baseline)
+
+- `products/sagawork/PRODUCT.md`
+- `products/sagawork/DOSSIER.md`
+- `products/sagawork/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## File yang berubah pada sinkronisasi ini (COYABAG Admin Media Produk integrity)
 
