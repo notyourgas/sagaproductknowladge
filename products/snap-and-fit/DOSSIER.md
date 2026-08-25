@@ -12,11 +12,12 @@ credential, PII, identifier tenant/perangkat, atau detail provider sensitif.
 - Delivery: `LOCAL_VALIDATED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED`
-- Provenance: source private `d21d9a2`, connected HiRes fulfillment `370278a`,
+- Provenance: source private `150fea6`, notification inbox `88c8dc9`,
+  connected HiRes fulfillment `370278a`,
   operations feature `b09f279`,
   deletion/recovery hardening `dbbb814`, candidate/cart authority `09a55bd`,
   durable notification worker `d964fea`, lifecycle/retention worker `4d602d9`,
-  protected Vercel preview `dpl_HU61vd6GY3eNWfeBCBVHYxNJRXHQ`.
+  protected Vercel preview `dpl_6kwtVdRvFZ9ZsWANXiAB3PWhVqtP`.
 
 ## Overview produk
 
@@ -106,6 +107,10 @@ fotografer desktop-optimized.
 - Payment receipt, photographer HiRes request, dan customer delivery memakai
   durable in-app notification. Worker melakukan claim, stale reclaim, retry,
   sent evidence, dan DLQ; email provider tetap external gate.
+- Checkout customer dan photographer jobs membaca notifikasi melalui exact-user
+  authorization. API hanya mengirim bounded title/message/event/time, bukan raw
+  payload; unread, single read, dan read-all idempoten. User read timestamp
+  terpisah dari worker delivery status agar retry tidak mengubah acknowledgement.
 - Lifecycle worker setiap 60 detik menjalankan bounded sweep untuk sales close,
   expiry search/cart/payment, fulfillment overdue, serta deterministic
   system-owned deletion request bagi search/face/preview. Finance records dan
@@ -128,7 +133,7 @@ fotografer desktop-optimized.
 ## Evidence lokal
 
 - Full format/lint/typecheck/test/build lulus.
-- 41 API test lulus; tujuh MySQL/external integration test terkontrol skip tanpa
+- 45 API test lulus; delapan MySQL/external integration test terkontrol skip tanpa
   service project-safe.
 - 20 worker test lulus; empat integrasi MySQL/Redis sengaja skip tanpa service
   project-safe. Restore verifier kini memeriksa core schema dan orphan deletion
@@ -137,8 +142,9 @@ fotografer desktop-optimized.
   operator controlled demo, checkout, role workflow, upload, accessibility, dan
   no-overflow tercakup.
 - Production dependency audit: nol vulnerability yang diketahui.
-- Preview protected berstatus `READY`; smoke terlindungi merender photographer
-  HiRes queue dan empty fail-closed state. Backend authoritative belum terhubung.
+- Preview protected berstatus `READY`; smoke terlindungi merender inbox customer,
+  inbox fotografer, HiRes queue, dan empty fail-closed state. Backend
+  authoritative belum terhubung.
 
 ## Risiko dan gate terbuka
 
@@ -147,6 +153,8 @@ fotografer desktop-optimized.
 - MySQL/Redis optional suite, protected synthetic deletion/replay,
   backup/restore, rollback, 300 VU load, soak, security staging, dan device UAT
   belum dieksekusi.
+- Migration read state inbox belum diaplikasikan pada isolated MySQL karena host
+  staging belum tersedia; real email delivery juga tetap external gate.
 - Real direct S3/KMS HiRes upload/replacement dan CloudFront delivery belum
   dieksekusi; multipart di atas batas single PUT 50 MB belum diimplementasikan.
 - Real MySQL/S3/Rekognition deletion adapter dan evidence provider belum ada;

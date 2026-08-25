@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-25 - Snap and Fit exact-recipient notification inbox
+
+- Exact private feature source `88c8dc9` menghubungkan durable notification ke
+  inbox checkout customer dan photographer jobs dengan exact-user authorization.
+- UI/API menyediakan bounded copy, unread count, replay-safe single read dan
+  read-all tanpa mengekspos raw payload; user acknowledgement terpisah dari
+  worker delivery/retry/DLQ state.
+- Full local validation, 45 API test, 20 worker test, 38 browser test, dan audit
+  dependency lulus. Protected preview `dpl_6kwtVdRvFZ9ZsWANXiAB3PWhVqtP`
+  `READY`; customer dan photographer smoke lulus.
+- Delivery tetap `LOCAL_VALIDATED`; production tidak berubah. Inbox migration,
+  real email, isolated staging, dan provider gates masih blocker.
+
 ## 2026-08-25 - SagaWork staff import dan protected workspace hardening
 
 - Exact feature source `e0cbaa5` menambahkan CSV preview dan atomic draft import; active isolated staging `f4c4387` menutup risiko protected workspace ter-render statis.

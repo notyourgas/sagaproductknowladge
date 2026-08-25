@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - Snap and Fit notification inbox sync
+
+- Produk/area: customer checkout inbox, photographer jobs inbox, unread/read
+  state, exact-recipient authorization, dan protected preview.
+- Informasi `CONFIRMED` berasal dari exact private feature source `88c8dc9`,
+  documentation head `150fea6`, full local validation, browser acceptance,
+  dependency audit, dan protected preview smoke.
+- Knowledge mencatat bounded copy tanpa raw payload, unread count, idempotent
+  read/read-all, serta pemisahan user acknowledgement dari worker delivery.
+- Delivery tetap `LOCAL_VALIDATED`; production tidak berubah. Inbox migration,
+  real email, isolated staging, dan provider gates tetap blocker.
+- Dokumen terdampak: Snap and Fit product/dossier/changelog, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-25 - SagaWork staff import and protected-route sync
 
 - Produk/area: bulk onboarding staff dan runtime boundary Staff/HR.

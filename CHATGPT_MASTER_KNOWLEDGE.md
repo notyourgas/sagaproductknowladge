@@ -1,18 +1,19 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 25 Agustus 2026 13:28 WIB
+Evidence cut-off: 25 Agustus 2026 13:38 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
 SagaWork active staging source `f4c4387` berstatus `CONFIRMED / STAGING_DEPLOYED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`. Isolated Hostinger staging memakai synthetic data dan MySQL 8.4; protected Vercel preview `dpl_GXFfbMY9RVGyLuCCCyyy9HqzKPe6` `READY`. Scope tervalidasi mencakup staff no-OTP dan privileged TOTP, people termasuk atomic CSV draft import tanpa account/password, scheduling/notes/swap, attendance foto+GPS/break, correction/request, partial overtime approval, work-hours/score, period lock/reopen, retention/recovery, protected-route hardening, security/load/accessibility, manifest, serta rollback. XLSX/error export, real provider/photo bytes, public route, offsite key escrow, human/legal/pilot evidence, dan activation masih blocker; payroll compliance tidak diklaim.
 
-Snap and Fit exact private source `d21d9a2` berstatus `CONFIRMED /
-LOCAL_VALIDATED`; connected HiRes fulfillment berasal dari `370278a`,
+Snap and Fit exact private source `150fea6` berstatus `CONFIRMED /
+LOCAL_VALIDATED`; user-facing notification inbox berasal dari `88c8dc9`,
+connected HiRes fulfillment berasal dari `370278a`,
 privileged operations feature berasal dari `b09f279`,
 deletion/recovery hardening dari `dbbb814`, candidate/cart authority dari
 `09a55bd`, durable notification worker dari `d964fea`, lifecycle/retention
 worker dari `4d602d9`, dan protected Vercel
-preview `dpl_HU61vd6GY3eNWfeBCBVHYxNJRXHQ`
+preview `dpl_6kwtVdRvFZ9ZsWANXiAB3PWhVqtP`
 berstatus `READY`.
 Marketplace foto olahraga ini mencakup event, uploader preview 500 JPEG,
 BIB/selfie mock ber-consent, catalog Rp25k/Rp60k/Rp99k, Tokopay mock/contract,
@@ -27,13 +28,16 @@ restore schema-integrity check. Candidate confirm/reject terikat exact anonymous
 search session; verified checkout menyimpan server-priced cart dan order
 provenance. Payment/fulfillment membuat durable in-app notification dengan
 retry, stale reclaim, sent evidence, dan DLQ tanpa mengklaim email terkirim.
+Checkout customer dan photographer jobs sekarang menampilkan exact-recipient
+inbox dengan bounded copy, unread count, single read/read-all idempoten, dan
+user read timestamp yang terpisah dari worker delivery state.
 Lifecycle sweep mempersistenkan timed sales close, expiry search/cart/payment,
 fulfillment overdue, dan system-owned search/face/preview deletion request tanpa
 hard-delete finance record. Photographer-owned queue kini menampilkan exact
 purchased filename/SLA, memakai acknowledgement serta checksum-bound signed
 direct HiRes PUT 15 menit, lalu server memeriksa JPEG, bytes, SHA-256, actual
 dimension, dan preview similarity. Pass mengaktifkan exact HiRes entitlement;
-failure meminta replacement maksimal lima kali. Full local gate, 41 API test,
+failure meminta replacement maksimal lima kali. Full local gate, 45 API test,
 20 worker test,
 dependency audit nol,
 dan browser suite lulus; integration service-dependent

@@ -10,6 +10,21 @@ production, activation, dan business readiness.
 Mock, fixture, preview frontend, dan test lokal bukan bukti provider atau
 production activation.
 
+## 2026-08-25 - Exact-recipient notification inbox
+
+- Exact private feature source `88c8dc9` dan documentation head `150fea6`
+  berstatus `LOCAL_VALIDATED`.
+- Checkout customer dan photographer jobs kini memiliki inbox untuk durable
+  receipt, HiRes request/replacement/overdue, dan delivery notification.
+- Authorization memakai exact recipient; response memakai bounded copy tanpa
+  raw payload. Unread count, single read, dan read-all replay-safe, sedangkan
+  worker delivery/retry/DLQ tetap terpisah dari user read timestamp.
+- Full local validation, 45 API test, 20 worker test, 38 browser test, dan audit
+  dependency lulus. Protected preview
+  `dpl_6kwtVdRvFZ9ZsWANXiAB3PWhVqtP` `READY`; customer/photographer smoke lulus.
+- Production tidak berubah. Inbox migration, real email, isolated staging, dan
+  provider gates tetap belum dieksekusi.
+
 ## 2026-08-25 - Connected photographer HiRes fulfillment
 
 - Exact private feature source `370278a` dan documentation head `d21d9a2`

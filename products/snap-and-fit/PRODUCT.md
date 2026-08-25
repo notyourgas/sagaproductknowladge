@@ -47,15 +47,16 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 - Delivery: `LOCAL_VALIDATED`.
 - Activation: `NOT_PRODUCTION_ACTIVATED`.
 - Business readiness: `BLOCKED`.
-- Exact source `d21d9a2` berada di private `main`; fulfillment HiRes terhubung
+- Exact source `150fea6` berada di private `main`; user-facing notification
+  inbox berasal dari `88c8dc9`, fulfillment HiRes terhubung
   berasal dari `370278a`, fitur operator berasal dari
   `b09f279`, deletion/recovery hardening dari `dbbb814`, serta candidate/cart
   authority dari `09a55bd`, durable notification worker dari `d964fea`, dan
   lifecycle/retention worker dari `4d602d9`.
-- Protected Vercel preview `dpl_HU61vd6GY3eNWfeBCBVHYxNJRXHQ` berstatus
-  `READY`; antrean fotografer dapat dirender tetapi backend staging sengaja
-  fail-closed.
-- Full local validation, 41 API test dengan tujuh integrasi eksternal terkontrol
+- Protected Vercel preview `dpl_6kwtVdRvFZ9ZsWANXiAB3PWhVqtP` berstatus
+  `READY`; inbox customer/fotografer dan antrean HiRes dapat dirender tetapi
+  backend staging sengaja fail-closed.
+- Full local validation, 45 API test dengan delapan integrasi eksternal terkontrol
   skip, 20 worker test dengan empat integrasi service-dependent skip, audit
   dependency nol vulnerability, serta 38 browser test dengan dua viewport skip
   lulus.
@@ -72,7 +73,9 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 - Candidate confirm/reject terikat exact anonymous search session; authoritative
   checkout menyimpan server-priced cart dan menghubungkannya ke order.
 - Payment dan fulfillment membuat durable in-app notification dengan retry,
-  stale reclaim, dan DLQ. Transactional email nyata belum diaktifkan.
+  stale reclaim, dan DLQ. Checkout customer dan jobs fotografer memiliki inbox
+  exact-recipient, unread/read-all idempoten, dan bounded copy tanpa raw payload.
+  Transactional email nyata belum diaktifkan.
 - Lifecycle worker menutup sales window, session/cart/payment yang kedaluwarsa,
   fulfillment overdue, dan menjadwalkan retensi search/face/preview tanpa
   menghapus finance record. Eksekusi provider nyata tetap belum tervalidasi.
