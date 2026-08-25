@@ -1,5 +1,12 @@
 # Portfolio Changelog
 
+## 2026-08-25 - SagaWork staff import dan protected workspace hardening
+
+- Exact feature source `e0cbaa5` menambahkan CSV preview dan atomic draft import; active isolated staging `f4c4387` menutup risiko protected workspace ter-render statis.
+- Import tervalidasi tenant/lokasi/duplikat, dibatasi 500 baris/1 MB, tidak membuat account/password, dan menghasilkan audit batch/per employee.
+- Full synthetic smoke, security abuse, browser+Axe, guarded rollback, manifest, dan protected Vercel preview `dpl_GXFfbMY9RVGyLuCCCyyy9HqzKPe6` lulus.
+- Delivery tetap `STAGING_DEPLOYED`; real data, public activation, provider/legal/human pilot, XLSX, dan safe error export belum dilakukan.
+
 ## 2026-08-25 - Snap and Fit connected photographer HiRes fulfillment
 
 - Exact private feature source `370278a` menghubungkan photographer-owned

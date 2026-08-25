@@ -1,10 +1,10 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 25 Agustus 2026 13:25 WIB
+Evidence cut-off: 25 Agustus 2026 13:28 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
-SagaWork exact feature source `7ba3010` berstatus `CONFIRMED / STAGING_DEPLOYED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`. Isolated Hostinger staging memakai synthetic data dan MySQL 8.4; protected Vercel preview `dpl_AN91Lq2eo92eG7KsA9NDk8nW2R6w` `READY`. Scope tervalidasi mencakup staff no-OTP dan privileged TOTP, people, scheduling/notes/swap, attendance foto+GPS/break, correction/request, partial overtime approval, work-hours/score, period lock/reopen, retention/recovery, security/load/accessibility, manifest, serta rollback. Real provider/photo bytes, public route, offsite key escrow, human/legal/pilot evidence, dan activation masih blocker; payroll compliance tidak diklaim.
+SagaWork active staging source `f4c4387` berstatus `CONFIRMED / STAGING_DEPLOYED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`. Isolated Hostinger staging memakai synthetic data dan MySQL 8.4; protected Vercel preview `dpl_GXFfbMY9RVGyLuCCCyyy9HqzKPe6` `READY`. Scope tervalidasi mencakup staff no-OTP dan privileged TOTP, people termasuk atomic CSV draft import tanpa account/password, scheduling/notes/swap, attendance foto+GPS/break, correction/request, partial overtime approval, work-hours/score, period lock/reopen, retention/recovery, protected-route hardening, security/load/accessibility, manifest, serta rollback. XLSX/error export, real provider/photo bytes, public route, offsite key escrow, human/legal/pilot evidence, dan activation masih blocker; payroll compliance tidak diklaim.
 
 Snap and Fit exact private source `d21d9a2` berstatus `CONFIRMED /
 LOCAL_VALIDATED`; connected HiRes fulfillment berasal dari `370278a`,

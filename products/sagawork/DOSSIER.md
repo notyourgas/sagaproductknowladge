@@ -21,8 +21,10 @@ Staff memperoleh action-first home, jadwal/note, swap, request, serta attendance
 
 ## Technical overview dan validasi
 
-Next.js 16 PWA, React 19, TypeScript, Drizzle, MySQL 8.4, Node 22, systemd, isolated Hostinger staging, dan protected Vercel preview. Feature revision `7ba3010` memiliki 18 migration, 56 application table, 26 append-only trigger, dan manifest 23 artifact. 21 test file/63 unit test, smoke 13 area, security abuse 7/7, browser+Axe 8 pass/2 intentional skip, load, recovery, timer, dan rollback lulus pada synthetic staging.
+Next.js 16 PWA, React 19, TypeScript, Drizzle, MySQL 8.4, Node 22, systemd, isolated Hostinger staging, dan protected Vercel preview. Active revision `f4c4387` memiliki 18 migration, 56 application table, 26 append-only trigger, dan manifest 23 artifact. 22 test file/68 unit test, smoke 13 area, security abuse 7/7, browser+Axe 10 pass/2 intentional mobile privileged skip, load, recovery, timer, dan rollback lulus pada synthetic staging. Protected Staff/HR layouts dipaksa dynamic sehingga build tanpa database environment tidak dapat memublikasikan workspace statis.
+
+Bulk onboarding CSV tervalidasi untuk maksimal 500 baris/1 MB: template tetap, parser quoted UTF-8, normalisasi, tenant/location/duplicate checks, preview hash, commit atomik, hasil per baris, serta audit batch/per-employee. Hasil selalu draft tanpa account/password; HR tetap mengundang staff satu per satu. XLSX dan downloadable safe error export belum tersedia.
 
 ## Positioning, pricing, risiko
 
-Positioning sementara: workforce operations action-first dan evidence-based untuk tim shift Indonesia, bukan HRIS enterprise lengkap. Pricing/SLA `NEEDS CONFIRMATION`. Provider, legal/privacy, device behavior, incident alert, import/advanced payroll, real pilot, dan willingness-to-pay tetap blocker. Produk tidak boleh diklaim payroll compliant atau production-ready.
+Positioning sementara: workforce operations action-first dan evidence-based untuk tim shift Indonesia, bukan HRIS enterprise lengkap. Pricing/SLA `NEEDS CONFIRMATION`. Provider, legal/privacy, device behavior, incident alert, XLSX/error export, advanced payroll, real pilot, dan willingness-to-pay tetap blocker. Produk tidak boleh diklaim payroll compliant atau production-ready.

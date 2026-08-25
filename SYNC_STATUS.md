@@ -12,16 +12,27 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T13:25:46+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T13:28:47+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `9048592` |
-| Informasi terakhir disinkronkan | Snap and Fit connected photographer HiRes fulfillment dari exact feature source `370278a`, documentation head `d21d9a2`, dan protected preview `dpl_HU61vd6GY3eNWfeBCBVHYxNJRXHQ`. |
-| Status sinkronisasi | `LOCAL_VALIDATED / PROTECTED_PREVIEW_READY / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=BLOCKED`; production tidak berubah. |
-| Konflik | Tidak ada konflik; frontend preview tidak dianggap backend staging atau production activation. |
-| Error | Tidak ada error sinkronisasi; isolated MySQL/S3/KMS, multipart/CloudFront, provider, dan production gates tetap terbuka. |
+| Baseline sebelum pembaruan | `8a50ddd` |
+| Informasi terakhir disinkronkan | SagaWork atomic CSV staff import dari `e0cbaa5`, active synthetic staging `f4c4387`, browser harness `b34d07a`, dan protected preview `dpl_GXFfbMY9RVGyLuCCCyyy9HqzKPe6`. |
+| Status sinkronisasi | `STAGING_DEPLOYED / PROTECTED_PREVIEW_READY / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=BLOCKED`; production tidak berubah. |
+| Konflik | Tidak ada konflik; CSV selesai tetapi XLSX/error export tetap gap dan synthetic staging tidak dianggap real pilot. |
+| Error | Tidak ada error sinkronisasi; provider, legal, human/device UAT, real data, dan production gates tetap terbuka. |
 
-## File yang berubah pada sinkronisasi ini (Snap and Fit connected HiRes fulfillment)
+## File yang berubah pada sinkronisasi ini (SagaWork staff import dan protected-route hardening)
+
+- `products/sagawork/PRODUCT.md`
+- `products/sagawork/DOSSIER.md`
+- `products/sagawork/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
+
+## File yang berubah pada sinkronisasi sebelumnya (Snap and Fit connected HiRes fulfillment)
 
 - `products/snap-and-fit/PRODUCT.md`
 - `products/snap-and-fit/DOSSIER.md`

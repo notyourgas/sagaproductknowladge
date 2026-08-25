@@ -1,5 +1,13 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - SagaWork staff import and protected-route sync
+
+- Produk/area: bulk onboarding staff dan runtime boundary Staff/HR.
+- Informasi `CONFIRMED` berasal dari exact feature source `e0cbaa5`, active isolated staging `f4c4387`, protected preview `dpl_GXFfbMY9RVGyLuCCCyyy9HqzKPe6`, serta synthetic API/browser/security evidence.
+- Knowledge mencatat bounded CSV preview, tenant/location/duplicate validation, preview hash, atomic draft commit tanpa account/password, per-row/batch audit, dan forced-dynamic protected layouts.
+- Delivery tetap `STAGING_DEPLOYED`; activation `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED`. XLSX/error export, provider/legal/human pilot, real data, dan public activation tetap terbuka.
+- Dokumen terdampak: SagaWork product/dossier/changelog, portfolio, master knowledge, gaps, root changelog, dan sync status.
+
 ## 2026-08-25 - Snap and Fit connected HiRes fulfillment sync
 
 - Produk/area: photographer purchase queue, original upload, QA, replacement,
