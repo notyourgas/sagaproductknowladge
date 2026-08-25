@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-25 - COYABAG Admin Detail Pesanan integrity
+
+- Exact source `412d3518275d4139d13530587c398d7efd86d61a` aktif sebagai
+  Hostinger release `20260825-412d351`; rollback `20260825-e25987e` tersedia.
+- Detail Pesanan memisahkan workspace Owner/Admin dan Finance, memasking PII,
+  menyaring timeline internal, serta memakai action contract dan stale-page
+  row-lock guard untuk mutasi sensitif.
+- Authenticated desktop/mobile, full test/build/security, backup/rollback, dan
+  public smoke lulus. Status `PRODUCTION_DEPLOYED`; readiness tetap 30/42,
+  activation serta business readiness `BLOCKED`, dan commerce tidak diaktifkan.
+
 ## 2026-08-25 - Snap and Fit secure multi-photo event checkout
 
 - Exact private feature source `c314024` dan documentation head `a8bd49f`

@@ -78,15 +78,22 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260825-e25987e` memakai source
-`e25987eef9676fbe3cc2927ca10c71a55d2c3324` dan rollback
-`20260825-fcedf86`. Dashboard Pesanan kini menjadi workspace triage role-aware
-untuk antrean attention, payment review, expiring, ready, active, dan
-completed. Server memvalidasi queue/status/payment/sort/search; daftar hanya
-mencari kode, nama, produk, dan SKU, sedangkan kontak tetap dimasking. Setiap
-next action membuka detail berizin yang tepat tanpa memutasi order. Loading,
-filtered-empty, composition error, success, pagination, tabel desktop, dan
-kartu mobile lulus authenticated serta public acceptance.
+Release production terbaru `20260825-412d351` memakai source
+`412d3518275d4139d13530587c398d7efd86d61a` dan rollback
+`20260825-e25987e`. Detail Pesanan menggunakan composition service role-aware:
+Owner/Admin menerima data operasional, sedangkan Finance menerima kontak
+termasking, timeline pembayaran terbatas, serta bukti yang lolos permission dan
+security gate. Timeline publik-admin tidak membawa actor ID atau correlation
+ID. Eligibility tindakan berasal dari server; cancellation, reservation,
+address correction, serta customer-access rotation membandingkan versi status
+atau generation dari layar di dalam row lock sehingga tab stale gagal tanpa
+mutasi. Command workspace, status rail, loading/error/blocked/processing,
+dialog Escape dan focus return, serta layout desktop/mobile lulus acceptance.
+
+Release sebelumnya `20260825-e25987e` memakai source
+`e25987eef9676fbe3cc2927ca10c71a55d2c3324` untuk Dashboard Pesanan sebagai
+workspace triage role-aware dengan antrean, filter/search tervalidasi, kontak
+termasking, dan exact detail action.
 
 Release sebelumnya `20260825-fcedf86` memakai source
 `fcedf86c07e6a8b5e27afc5435fa7da7e76961a8` untuk Dashboard Beranda role-aware:

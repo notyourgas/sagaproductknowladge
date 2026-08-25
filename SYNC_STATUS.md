@@ -12,14 +12,24 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T14:30:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T14:50:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `66b499b` |
-| Informasi terakhir disinkronkan | SagaWork default-off unscheduled attendance, active synthetic staging `e7f4622`, protected preview, dan handoff/audit `PILOT_READY_CANDIDATE`. |
-| Status sinkronisasi | `STAGING_DEPLOYED / PILOT_READY_CANDIDATE / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`; tidak ada real-data/public activation. |
-| Konflik | Tidak ada konflik; internal readiness tidak menggantikan Gate A/B/C/E manusia/provider. |
-| Error | Tidak ada error sinkronisasi; blocker eksternal tetap dicatat di GAP-015. |
+| Baseline sebelum pembaruan | `16e6234` |
+| Informasi terakhir disinkronkan | COYABAG Admin Detail Pesanan role-safe, stale-page mutation guard, dan immutable Hostinger release `20260825-412d351`. |
+| Status sinkronisasi | `PRODUCTION_DEPLOYED / ACTIVATION_BLOCKED / BUSINESS_READY=false`; storefront/API/admin live, commerce belum diaktifkan. |
+| Konflik | Tidak ada konflik; surface production tidak disamakan dengan commerce production-activated. |
+| Error | Tidak ada error sinkronisasi; 12 blocker readiness COYABAG tetap terbuka. |
+
+## File yang berubah pada sinkronisasi ini (COYABAG Admin Detail Pesanan integrity)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaWork unscheduled attendance dan pilot handoff)
 

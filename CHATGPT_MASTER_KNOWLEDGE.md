@@ -3258,14 +3258,19 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release aktif `20260825-e25987e` menjalankan exact source
-`e25987eef9676fbe3cc2927ca10c71a55d2c3324` dengan rollback
-`20260825-fcedf86`. Dashboard Pesanan menyediakan workspace triage role-aware,
-antrean attention/payment/expiry/fulfillment yang otoritatif, filter/search
-tervalidasi server, kontak termasking, exact detail action, serta loading,
-empty, error, success, pagination, tabel desktop, dan kartu mobile. Full
-regression, authenticated fixture, security/build, rollback, dan public smoke
-lulus. Readiness tetap 30/42 dengan 12 blocker; commerce tidak diaktifkan.
+Release aktif `20260825-412d351` menjalankan exact source
+`412d3518275d4139d13530587c398d7efd86d61a` dengan rollback
+`20260825-e25987e`. Detail Pesanan memisahkan workspace Owner/Admin dan Finance:
+PII Finance termasking, timeline internal tersaring, bukti payment mengikuti
+permission/security, dan action eligibility berasal dari server. Mutasi
+cancellation/reservation/address/customer-access memakai row lock serta
+stale-page guard. Command workspace, status rail, loading/error/blocked/
+processing, dialog keyboard, dan desktop/mobile lulus acceptance. Readiness
+tetap 30/42 dengan 12 blocker; commerce tidak diaktifkan.
+
+Release sebelumnya `20260825-e25987e` membawa Dashboard Pesanan sebagai
+workspace triage role-aware dengan antrean otoritatif, filter/search
+tervalidasi, kontak termasking, exact detail action, dan state desktop/mobile.
 
 Release sebelumnya `20260825-fcedf86` membawa Dashboard Beranda role-aware
 untuk KPI, tren tujuh hari, prioritas, recent order, integration health, dan

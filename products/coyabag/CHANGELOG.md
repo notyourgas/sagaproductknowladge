@@ -8,6 +8,21 @@ Mencatat perubahan material COYABAG dengan provenance public-safe.
 
 Surface deployment tidak otomatis berarti commerce activation.
 
+## 2026-08-25 - Admin Detail Pesanan integrity production release
+
+- Informasi `CONFIRMED` berasal dari exact source
+  `412d3518275d4139d13530587c398d7efd86d61a`, immutable Hostinger release
+  `20260825-412d351`, rollback `20260825-e25987e`, dan runtime verification.
+- Detail Pesanan kini role-aware: Finance menerima PII termasking dan timeline
+  pembayaran terbatas, sedangkan Owner/Admin menerima data operasional. Raw
+  actor/correlation timeline tidak dikirim ke UI.
+- Action contract server menjelaskan availability dan blocked reason. Mutasi
+  pembatalan, reservasi, alamat, serta akses pelanggan memakai row lock dan
+  stale-page guard; dialog, loading/error/processing, desktop, dan mobile lulus.
+- Full test/build/security, authenticated acceptance, backup/rollback, dan
+  public smoke lulus. Delivery `PRODUCTION_DEPLOYED`; readiness tetap 30/42
+  dengan 12 blocker. Activation dan business readiness tetap `BLOCKED`.
+
 ## 2026-08-25 - Admin Pesanan integrity production release
 
 - Informasi `CONFIRMED` berasal dari exact source

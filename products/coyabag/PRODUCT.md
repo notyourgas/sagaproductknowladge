@@ -61,9 +61,17 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260825-e25987e` dengan source
-  `e25987eef9676fbe3cc2927ca10c71a55d2c3324` melayani production;
-  rollback langsung `20260825-fcedf86` dipertahankan.
+- Release aktif `20260825-412d351` dengan source
+  `412d3518275d4139d13530587c398d7efd86d61a` melayani production;
+  rollback langsung `20260825-e25987e` dipertahankan.
+- Detail Pesanan kini memisahkan workspace Owner/Admin dan Finance. Finance
+  menerima kontak termasking, riwayat pembayaran terbatas, serta hanya bukti
+  yang lolos permission dan security gate; timeline tidak mengekspos actor ID
+  atau correlation ID.
+- Eligibility pembatalan, reservasi, alamat, invoice, payment review, refund,
+  dan akses pelanggan berasal dari server. Mutasi sensitif menolak tab stale di
+  dalam row lock; dialog keyboard, processing, blocked, retry, error, desktop,
+  dan mobile lulus acceptance.
 - Dashboard Pesanan membentuk antrean role-aware untuk attention, payment
   review, expiring, ready, active, dan completed. Filter/pencarian divalidasi
   server, kontak dimasking, dan setiap next action membuka detail pesanan yang
