@@ -1,17 +1,18 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 25 Agustus 2026 13:21 WIB
+Evidence cut-off: 25 Agustus 2026 13:25 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
 SagaWork exact feature source `7ba3010` berstatus `CONFIRMED / STAGING_DEPLOYED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`. Isolated Hostinger staging memakai synthetic data dan MySQL 8.4; protected Vercel preview `dpl_AN91Lq2eo92eG7KsA9NDk8nW2R6w` `READY`. Scope tervalidasi mencakup staff no-OTP dan privileged TOTP, people, scheduling/notes/swap, attendance foto+GPS/break, correction/request, partial overtime approval, work-hours/score, period lock/reopen, retention/recovery, security/load/accessibility, manifest, serta rollback. Real provider/photo bytes, public route, offsite key escrow, human/legal/pilot evidence, dan activation masih blocker; payroll compliance tidak diklaim.
 
-Snap and Fit exact private source `4d602d9` berstatus `CONFIRMED /
-LOCAL_VALIDATED`; privileged operations feature berasal dari `b09f279`,
+Snap and Fit exact private source `d21d9a2` berstatus `CONFIRMED /
+LOCAL_VALIDATED`; connected HiRes fulfillment berasal dari `370278a`,
+privileged operations feature berasal dari `b09f279`,
 deletion/recovery hardening dari `dbbb814`, candidate/cart authority dari
 `09a55bd`, durable notification worker dari `d964fea`, lifecycle/retention
 worker dari `4d602d9`, dan protected Vercel
-preview `dpl_FFDKoeT7Nj51FNxHgdKuEVogBYJJ`
+preview `dpl_HU61vd6GY3eNWfeBCBVHYxNJRXHQ`
 berstatus `READY`.
 Marketplace foto olahraga ini mencakup event, uploader preview 500 JPEG,
 BIB/selfie mock ber-consent, catalog Rp25k/Rp60k/Rp99k, Tokopay mock/contract,
@@ -28,11 +29,16 @@ provenance. Payment/fulfillment membuat durable in-app notification dengan
 retry, stale reclaim, sent evidence, dan DLQ tanpa mengklaim email terkirim.
 Lifecycle sweep mempersistenkan timed sales close, expiry search/cart/payment,
 fulfillment overdue, dan system-owned search/face/preview deletion request tanpa
-hard-delete finance record. Full local gate, 38 API test, 20 worker test,
+hard-delete finance record. Photographer-owned queue kini menampilkan exact
+purchased filename/SLA, memakai acknowledgement serta checksum-bound signed
+direct HiRes PUT 15 menit, lalu server memeriksa JPEG, bytes, SHA-256, actual
+dimension, dan preview similarity. Pass mengaktifkan exact HiRes entitlement;
+failure meminta replacement maksimal lima kali. Full local gate, 41 API test,
+20 worker test,
 dependency audit nol,
 dan browser suite lulus; integration service-dependent
-tetap skip terkontrol. Backend staging, isolated VPS, MySQL/Redis/S3 worker
-evidence, real-provider deletion, external provider/legal gate,
+tetap skip terkontrol. Backend staging, isolated VPS, MySQL/Redis/S3/KMS worker
+evidence, multipart/CloudFront, real-provider deletion, external provider/legal gate,
 load/recovery/device UAT, production activation, dan business readiness belum
 lulus; status activation `NOT_PRODUCTION_ACTIVATED`, business readiness
 `BLOCKED`.

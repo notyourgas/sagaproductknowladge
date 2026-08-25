@@ -10,6 +10,24 @@ production, activation, dan business readiness.
 Mock, fixture, preview frontend, dan test lokal bukan bukti provider atau
 production activation.
 
+## 2026-08-25 - Connected photographer HiRes fulfillment
+
+- Exact private feature source `370278a` dan documentation head `d21d9a2`
+  berstatus `LOCAL_VALIDATED`.
+- Photographer-owned queue menampilkan exact purchased filename, order, event,
+  dan SLA; acknowledgement serta completion replay-safe.
+- Original JPEG maksimal 50 MB diunggah memakai checksum-bound signed PUT 15
+  menit. Server membaca ulang object untuk memeriksa format, bytes, SHA-256,
+  dimensi aktual minimal 3.000 px, dan preview similarity.
+- QA pass mengaktifkan exact HiRes entitlement dan final customer notification;
+  QA fail meminta replacement hingga batas lima tanpa menghukum dependency
+  outage sebagai mismatch.
+- Full local validation, 41 API test, 20 worker test, 38 browser test, dan
+  dependency audit lulus. Protected preview
+  `dpl_HU61vd6GY3eNWfeBCBVHYxNJRXHQ` `READY` dan smoke queue lulus.
+- Production tidak berubah. Isolated MySQL/S3/KMS execution, multipart,
+  CloudFront delivery, real provider, dan production activation tetap blocker.
+
 ## 2026-08-25 - Lifecycle dan retention deadlines
 
 - Exact private source `4d602d9` berstatus `LOCAL_VALIDATED`.

@@ -1,5 +1,21 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - Snap and Fit connected HiRes fulfillment sync
+
+- Produk/area: photographer purchase queue, original upload, QA, replacement,
+  HiRes entitlement, dan protected web preview.
+- Informasi `CONFIRMED` berasal dari exact private feature source `370278a`,
+  documentation head `d21d9a2`, full local validation, browser acceptance,
+  dependency audit, dan protected preview smoke.
+- Knowledge mencatat exact filename/SLA, acknowledgement, checksum-bound signed
+  PUT 15 menit, server-side JPEG/byte/SHA-256/dimension/similarity verification,
+  replacement cap lima, serta final entitlement/notification.
+- Delivery tetap `LOCAL_VALIDATED`; production tidak berubah. Isolated
+  MySQL/S3/KMS execution, multipart, CloudFront, provider, dan activation tetap
+  blocker.
+- Dokumen terdampak: Snap and Fit product/dossier/changelog, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-25 - COYABAG Admin dashboard Beranda integrity sync
 
 - Produk/area: Dashboard Beranda Owner, Admin, dan Finance.

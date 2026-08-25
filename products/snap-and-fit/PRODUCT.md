@@ -47,13 +47,15 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 - Delivery: `LOCAL_VALIDATED`.
 - Activation: `NOT_PRODUCTION_ACTIVATED`.
 - Business readiness: `BLOCKED`.
-- Exact source `4d602d9` berada di private `main`; fitur operator berasal dari
+- Exact source `d21d9a2` berada di private `main`; fulfillment HiRes terhubung
+  berasal dari `370278a`, fitur operator berasal dari
   `b09f279`, deletion/recovery hardening dari `dbbb814`, serta candidate/cart
   authority dari `09a55bd`, durable notification worker dari `d964fea`, dan
   lifecycle/retention worker dari `4d602d9`.
-- Protected Vercel preview `dpl_FFDKoeT7Nj51FNxHgdKuEVogBYJJ` berstatus
-  `READY`; frontend dapat dirender tetapi backend staging sengaja fail-closed.
-- Full local validation, 38 API test dengan enam integrasi eksternal terkontrol
+- Protected Vercel preview `dpl_HU61vd6GY3eNWfeBCBVHYxNJRXHQ` berstatus
+  `READY`; antrean fotografer dapat dirender tetapi backend staging sengaja
+  fail-closed.
+- Full local validation, 41 API test dengan tujuh integrasi eksternal terkontrol
   skip, 20 worker test dengan empat integrasi service-dependent skip, audit
   dependency nol vulnerability, serta 38 browser test dengan dua viewport skip
   lulus.
@@ -74,6 +76,10 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 - Lifecycle worker menutup sales window, session/cart/payment yang kedaluwarsa,
   fulfillment overdue, dan menjadwalkan retensi search/face/preview tanpa
   menghapus finance record. Eksekusi provider nyata tetap belum tervalidasi.
+- Fotografer memiliki antrean exact purchased filename/SLA, acknowledgement,
+  signed direct HiRes PUT maksimal 50 MB, dan server-side JPEG/dimension/
+  checksum/preview-similarity QA. Pass mengaktifkan entitlement; failure meminta
+  replacement hingga batas lima. Real S3/KMS dan multipart belum tervalidasi.
 
 ## Next gate
 

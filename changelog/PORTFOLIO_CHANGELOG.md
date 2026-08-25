@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-25 - Snap and Fit connected photographer HiRes fulfillment
+
+- Exact private feature source `370278a` menghubungkan photographer-owned
+  purchase queue, exact filename/SLA acknowledgement, signed direct original
+  upload, server QA, replacement, entitlement, dan customer notification.
+- JPEG maksimal 50 MB diikat checksum dan 15-minute intent; QA membaca ulang
+  private object untuk format, bytes, SHA-256, actual dimension minimal 3.000 px,
+  dan preview similarity. Failure dapat meminta replacement maksimal lima kali.
+- Full local validation, 41 API test, 20 worker test, 38 browser test, dan audit
+  dependency lulus. Protected preview `dpl_HU61vd6GY3eNWfeBCBVHYxNJRXHQ`
+  `READY` dan photographer queue smoke lulus.
+- Delivery tetap `LOCAL_VALIDATED`; production tidak berubah. Isolated
+  MySQL/S3/KMS, multipart/CloudFront, provider, dan activation masih blocker.
+
 ## 2026-08-25 - CoyaBag Admin dashboard Beranda integrity
 
 - Exact source `fcedf86c07e6a8b5e27afc5435fa7da7e76961a8` aktif sebagai

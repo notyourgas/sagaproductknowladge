@@ -12,10 +12,11 @@ credential, PII, identifier tenant/perangkat, atau detail provider sensitif.
 - Delivery: `LOCAL_VALIDATED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED`
-- Provenance: source private `4d602d9`, operations feature `b09f279`,
+- Provenance: source private `d21d9a2`, connected HiRes fulfillment `370278a`,
+  operations feature `b09f279`,
   deletion/recovery hardening `dbbb814`, candidate/cart authority `09a55bd`,
   durable notification worker `d964fea`, lifecycle/retention worker `4d602d9`,
-  protected Vercel preview `dpl_FFDKoeT7Nj51FNxHgdKuEVogBYJJ`.
+  protected Vercel preview `dpl_HU61vd6GY3eNWfeBCBVHYxNJRXHQ`.
 
 ## Overview produk
 
@@ -42,8 +43,10 @@ perangkat fotografer sampai ada permintaan HiRes dari transaksi terverifikasi.
 4. Server membentuk candidate, quote, bundle, dan checkout; client tidak menjadi
    source of truth harga. Verified checkout mengubah server-priced cart menjadi
    order dengan provenance satu-ke-satu.
-5. Payment terverifikasi mengaktifkan social copy. Fotografer menerima request
-   HiRes, mengunggah original, dan QA mengaktifkan final download.
+5. Payment terverifikasi mengaktifkan social copy. Antrean fotografer memuat
+   exact filename/SLA; fotografer mengakui request lalu mengunggah original
+   melalui signed direct PUT. Server memeriksa JPEG, byte/checksum, dimensi, dan
+   kecocokan preview sebelum QA mengaktifkan final download atau replacement.
 6. Ledger membagi hasil 75/15/10 dan menahan payout sampai provider-cleared dan
    fulfillment diterima.
 7. Operator menangani wrong-match, deletion, refund, support grant, dan payout
@@ -107,6 +110,12 @@ fotografer desktop-optimized.
   expiry search/cart/payment, fulfillment overdue, serta deterministic
   system-owned deletion request bagi search/face/preview. Finance records dan
   purchased social/HiRes entitlement tidak menjadi target hard delete.
+- Fulfillment queue hanya dapat dibaca/dimutasi fotografer pemilik. Upload
+  intent berlaku 15 menit, terikat SHA-256 dan byte count, JPEG maksimal 50 MB,
+  serta memakai bucket HiRes terpisah dari preview pada S3. QA membaca kembali
+  object private, mengukur dimensi aktual dan average-hash similarity, lalu
+  membuat entitlement exact asset version atau meminta replacement maksimal
+  lima kali. Dependency outage menghasilkan retryable error, bukan QA failure.
 
 ## Business model dan pricing
 
@@ -119,7 +128,7 @@ fotografer desktop-optimized.
 ## Evidence lokal
 
 - Full format/lint/typecheck/test/build lulus.
-- 38 API test lulus; enam MySQL/external integration test terkontrol skip tanpa
+- 41 API test lulus; tujuh MySQL/external integration test terkontrol skip tanpa
   service project-safe.
 - 20 worker test lulus; empat integrasi MySQL/Redis sengaja skip tanpa service
   project-safe. Restore verifier kini memeriksa core schema dan orphan deletion
@@ -128,8 +137,8 @@ fotografer desktop-optimized.
   operator controlled demo, checkout, role workflow, upload, accessibility, dan
   no-overflow tercakup.
 - Production dependency audit: nol vulnerability yang diketahui.
-- Preview protected berstatus `READY` serta mengembalikan CSP, HSTS, deny-frame,
-  noindex, dan operator production bundle.
+- Preview protected berstatus `READY`; smoke terlindungi merender photographer
+  HiRes queue dan empty fail-closed state. Backend authoritative belum terhubung.
 
 ## Risiko dan gate terbuka
 
@@ -138,6 +147,8 @@ fotografer desktop-optimized.
 - MySQL/Redis optional suite, protected synthetic deletion/replay,
   backup/restore, rollback, 300 VU load, soak, security staging, dan device UAT
   belum dieksekusi.
+- Real direct S3/KMS HiRes upload/replacement dan CloudFront delivery belum
+  dieksekusi; multipart di atas batas single PUT 50 MB belum diimplementasikan.
 - Real MySQL/S3/Rekognition deletion adapter dan evidence provider belum ada;
   synthetic orchestration bukan bukti penghapusan provider.
 - Test merchant Tokopay dan AWS test provider/legal biometric gate belum
