@@ -10,6 +10,24 @@ production, activation, dan business readiness.
 Mock, fixture, preview frontend, dan test lokal bukan bukti provider atau
 production activation.
 
+## 2026-08-25 - Encrypted event-scoped face search orchestration
+
+- Exact private feature `96df668` dan documentation head `822933f` berstatus
+  `LOCAL_VALIDATED`.
+- Worker mengindeks exact-event collection; collection/face/selfie/similarity
+  reference dienkripsi per event dan lookup face memakai HMAC. API mengambil
+  liveness result dan mencari collection di server tanpa mengekspos provider ID,
+  similarity score, atau identity claim ke client.
+- Official Amplify liveness client memakai single-use session, bounded attempt
+  lockout, legal notice version/hash, no-store response, dan provider-degraded
+  fallback ke BIB. AWS execution tetap default-off dan belum pernah dipanggil.
+- Full gate lulus: 63 API, 21 worker, 6 face-provider, 7 media, 5 observability,
+  53 browser, seluruh build, dan audit dependency produksi nol vulnerability.
+- Protected preview `dpl_BRsjcFnYQV6NVTCyJqcP19te4HsS` dari baseline `96df668`
+  `READY`; UI/PWA route 200 dan backend 503 fail-closed. Isolated staging,
+  provider/legal/device/deletion benchmark, dependency compatibility, dan
+  production tetap belum diaktifkan.
+
 ## 2026-08-25 - Resumable multipart HiRes sampai 200 MB
 
 - Exact private feature `3fc397f`, staging-control baseline `d2b0c5c`, dan docs

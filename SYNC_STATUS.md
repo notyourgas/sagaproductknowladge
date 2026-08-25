@@ -12,16 +12,27 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T17:16:34+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T17:19:07+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `0f4757b` |
-| Informasi terakhir disinkronkan | SagaWork protected Vercel Preview `dpl_CxS7HN4JT7SQaKASqcfegtTsxAZF` untuk source PWA terbaru. |
-| Status sinkronisasi | `STAGING_DEPLOYED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`. |
-| Konflik | Tidak ada; Vercel protected synthetic preview dibedakan dari Hostinger full-stack staging dan production activation. |
-| Error | Tidak ada error sinkronisasi; source remote/hosted CI, real-device PWA UAT, provider/offsite/legal/human Gate A-C/E tetap pending. |
+| Baseline sebelum pembaruan | `6195ad0` |
+| Informasi terakhir disinkronkan | Snap and Fit encrypted event-scoped face search `96df668`; docs head `822933f`. |
+| Status sinkronisasi | `LOCAL_VALIDATED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`. |
+| Konflik | Tidak ada; local fake-provider evidence dibedakan dari isolated AWS runtime dan production activation. |
+| Error | Tidak ada error sinkronisasi; isolated staging, AWS/legal/device/deletion/benchmark, dan dependency compatibility tetap pending. |
 
-## File yang berubah pada sinkronisasi ini (SagaWork safe PWA dan CI baseline)
+## File yang berubah pada sinkronisasi ini (Snap and Fit encrypted face search)
+
+- `products/snap-and-fit/PRODUCT.md`
+- `products/snap-and-fit/DOSSIER.md`
+- `products/snap-and-fit/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
+
+## File yang berubah pada sinkronisasi sebelumnya (SagaWork safe PWA dan CI baseline)
 
 - `products/sagawork/PRODUCT.md`
 - `products/sagawork/DOSSIER.md`

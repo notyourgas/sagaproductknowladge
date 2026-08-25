@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - Snap and Fit encrypted face search sync
+
+- Produk/area: event-scoped face index, selfie liveness, privacy, fallback, dan
+  provider activation gate.
+- Informasi `CONFIRMED` berasal dari exact private feature `96df668`, main head
+  `822933f`, full local gates, dan protected preview
+  `dpl_BRsjcFnYQV6NVTCyJqcP19te4HsS` `READY`.
+- Knowledge mencatat encrypted provider references, HMAC lookup, server-side
+  liveness/search, no-score client response, lockout, legal binding, dan BIB
+  fallback; AWS tetap default-off dan belum pernah dipanggil.
+- Delivery `LOCAL_VALIDATED`; activation `NOT_PRODUCTION_ACTIVATED`; business
+  readiness `BLOCKED`. Production tidak berubah.
+- Dokumen terdampak: Snap and Fit product/dossier/changelog, portfolio, master
+  knowledge, gaps, root changelog, dan sync status.
+
 ## 2026-08-25 - SagaWork safe PWA dan CI baseline sync
 
 - Produk/area: Staff PWA install/update, cache safety, source CI, release, recovery, dan pilot gate.

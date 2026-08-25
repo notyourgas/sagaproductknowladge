@@ -47,7 +47,8 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 - Delivery: `LOCAL_VALIDATED`.
 - Activation: `NOT_PRODUCTION_ACTIVATED`.
 - Business readiness: `BLOCKED`.
-- Exact private `main` head `f38ffdc`; resumable multipart HiRes berasal dari
+- Exact private `main` head `822933f`; encrypted event-scoped face search berasal dari
+  `96df668`, resumable multipart HiRes berasal dari
   `3fc397f`, staging controls dan preview baseline dari `d2b0c5c`, CloudFront private
   delivery signer berasal dari `5fe6ab5`, AWS event-scoped face provider
   contract dari `037d2b4`, private bounded API
@@ -63,13 +64,15 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   `b09f279`, deletion/recovery hardening dari `dbbb814`, serta candidate/cart
   authority dari `09a55bd`, durable notification worker dari `d964fea`, dan
   lifecycle/retention worker dari `4d602d9`.
-- Protected Vercel preview `dpl_HMJX9CJitQX8Qqf9bN6X9AmQNRbP` berstatus
-  `READY`; manifest, service worker, offline, BIB, dan photographer jobs route 200 tetapi
+- Protected Vercel preview `dpl_BRsjcFnYQV6NVTCyJqcP19te4HsS` dari baseline
+  `96df668` berstatus `READY`; manifest, service worker, offline, BIB,
+  selfie-capture, dan photographer jobs route 200 tetapi
   backend staging sengaja fail-closed.
-- Full local validation, 61 API test dengan sembilan integrasi eksternal terkontrol
-  skip, 20 worker test dengan empat integrasi service-dependent skip, tujuh media
-  test, lima observability test, 53 browser test dengan tiga project-specific skip,
-  seluruh build, dan audit dependency produksi nol vulnerability lulus.
+- Full local validation, 63 API test dengan sembilan integrasi eksternal terkontrol
+  skip, 21 worker test dengan empat integrasi service-dependent skip, enam
+  face-provider test, tujuh media test, lima observability test, 53 browser test
+  dengan tiga project-specific skip, seluruh build, dan audit dependency produksi
+  nol vulnerability lulus.
 
 ## Batas klaim
 
@@ -105,10 +108,12 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 - S3 staging/production sekarang fail-closed tanpa private CloudFront domain,
   trusted key-pair ID, KMS, dan API-only signing key. Signed URL lima menit tidak
   mengekspos private bucket; trusted-key/origin runtime proof tetap gate staging.
-- AWS face provider contract kini mencakup deterministic event collection,
-  S3-reference indexing/search, zero-audit-image Face Liveness, threshold
-  configuration, dan safe collection-deletion evidence. Adapter belum tersambung
-  ke client/persistence dan tidak pernah dipanggil; mock/BIB tetap jalur aktif.
+- AWS face provider contract kini terhubung default-off dari worker, API, dan
+  official Amplify Face Liveness client. Collection dan face reference dienkripsi
+  per event, lookup memakai HMAC, hasil similarity tidak diekspos ke client,
+  liveness dibatasi attempt/lockout, dan provider degraded mengarahkan ke BIB.
+  AWS belum pernah dipanggil; activation tetap menunggu legal, credential,
+  dependency compatibility, benchmark, deletion, dan real-device gate.
 - Customer memiliki library 20 order terbaru yang exact-owner, menampilkan
   status payment/fulfillment dan entitlement, serta dapat menerbitkan ulang link
   social/HiRes lima menit tanpa mengekspos order customer lain.

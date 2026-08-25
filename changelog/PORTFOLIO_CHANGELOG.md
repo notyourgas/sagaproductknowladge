@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-25 - Snap and Fit encrypted event-scoped face search
+
+- Exact private feature `96df668` dan docs head `822933f` menghubungkan worker,
+  API, encrypted provider-reference persistence, HMAC lookup, serta official
+  Amplify Face Liveness client secara default-off.
+- Client hanya menerima pass/fail dan kandidat kasar; provider ID, similarity
+  score, dan identity claim tidak diekspos. Attempt lockout, legal notice binding,
+  no-store, serta BIB fallback diterapkan.
+- Local gate lulus 63 API, 21 worker, 6 face-provider, 7 media, 5 observability,
+  53 browser, seluruh build, dan audit produksi nol vulnerability.
+- Protected preview `dpl_BRsjcFnYQV6NVTCyJqcP19te4HsS` `READY`; backend 503
+  fail-closed. Delivery tetap `LOCAL_VALIDATED`; AWS/provider/legal/device/
+  deletion/dependency gates, isolated staging, dan production tidak berubah.
+
 ## 2026-08-25 - SagaWork safe PWA dan CI baseline
 
 - Feature `e9c2c6c`, exact active isolated staging `e003a3d`, dan docs head `6964dd5` memuat evidence public-safe.

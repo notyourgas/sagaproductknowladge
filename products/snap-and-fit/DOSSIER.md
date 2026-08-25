@@ -12,7 +12,8 @@ credential, PII, identifier tenant/perangkat, atau detail provider sensitif.
 - Delivery: `LOCAL_VALIDATED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED`
-- Provenance: exact private head `f38ffdc`, resumable multipart feature `3fc397f`,
+- Provenance: exact private head `822933f`, encrypted event-scoped face search
+  `96df668`, resumable multipart feature `3fc397f`,
   staging-control/preview baseline `d2b0c5c`, organizer safe metrics `46d7a4b`,
   photographer earning view `0385317`,
   customer order library `5e7e3c4`,
@@ -22,7 +23,7 @@ credential, PII, identifier tenant/perangkat, atau detail provider sensitif.
   operations feature `b09f279`,
   deletion/recovery hardening `dbbb814`, candidate/cart authority `09a55bd`,
   durable notification worker `d964fea`, lifecycle/retention worker `4d602d9`,
-  protected Vercel preview `dpl_HMJX9CJitQX8Qqf9bN6X9AmQNRbP`.
+  protected Vercel preview `dpl_BRsjcFnYQV6NVTCyJqcP19te4HsS`.
 
 ## Overview produk
 
@@ -93,9 +94,10 @@ fotografer desktop-optimized.
   API startup fail-closed bila signer private tidak lengkap.
 - HiRes sampai 50 MB memakai single PUT; 50–200 MB memakai part 10 MiB dengan
   per-part SHA-256, signed resume capability, dan final full-object SHA-256 QA.
-- AWS face provider contract tersedia default-off untuk create/index/search/
-  liveness/delete pada exact event collection, tetapi client orchestration dan
-  encrypted provider-reference persistence belum diaktifkan.
+- AWS face provider tersedia default-off untuk create/index/search/liveness/
+  delete pada exact event collection. Worker, API, encrypted provider-reference
+  persistence, HMAC lookup, attempt lockout, dan official Amplify client sudah
+  terhubung secara lokal; tidak ada AWS call yang diaktifkan.
 - Tokopay Advanced Order, callback verification, dan Check Order sebagai kontrak
   payment; live flag default-off.
 - Vercel tidak terhubung langsung ke MySQL/Redis dan long-running image work
@@ -163,18 +165,19 @@ fotografer desktop-optimized.
 ## Evidence lokal
 
 - Full format/lint/typecheck/test/build lulus.
-- 61 API test lulus; sembilan MySQL/Redis/external integration test terkontrol skip tanpa
+- 63 API test lulus; sembilan MySQL/Redis/external integration test terkontrol skip tanpa
   service project-safe.
-- 20 worker test lulus; empat integrasi MySQL/Redis sengaja skip tanpa service
+- 21 worker test lulus; empat integrasi MySQL/Redis sengaja skip tanpa service
   project-safe. Restore verifier kini memeriksa core schema dan orphan deletion
   task, bukan hanya jumlah tabel.
-- Tujuh media test dan lima observability test lulus.
+- Enam face-provider test, tujuh media test, dan lima observability test lulus.
 - 53 Playwright mobile/desktop lulus dan tiga project-specific skip disengaja;
   operator controlled demo, checkout/order library, role workflow, preview upload,
   multipart interruption/resume, accessibility, dan no-overflow tercakup.
 - Production dependency audit: nol vulnerability yang diketahui.
-- Preview protected `dpl_HMJX9CJitQX8Qqf9bN6X9AmQNRbP` berstatus `READY`;
-  manifest, service worker, offline, BIB, dan photographer jobs route 200 serta
+- Preview protected `dpl_BRsjcFnYQV6NVTCyJqcP19te4HsS` dari baseline `96df668`
+  berstatus `READY`; manifest, service worker, offline, BIB, selfie-capture, dan
+  photographer jobs route 200 serta
   backend fail-closed 503. Connected metrics panel
   hanya browser-validated lokal karena backend preview tidak terhubung. Backend
   authoritative belum terhubung.
@@ -197,10 +200,12 @@ fotografer desktop-optimized.
 - Real direct/multipart S3/KMS HiRes interruption/resume/replacement, ETag CORS,
   one-day incomplete-upload lifecycle, dan CloudFront trusted-key/origin proof
   belum dieksekusi; seluruh contract dan browser resume baru teruji sintetis lokal.
-- Rekognition provider contract sudah teruji fake-transport tetapi belum
-  terhubung ke worker/API/client dan belum pernah memanggil AWS. Real MySQL/S3/
-  Rekognition deletion orchestration dan evidence provider belum ada;
-  synthetic orchestration bukan bukti penghapusan provider.
+- Rekognition orchestration sudah terhubung lokal dan teruji fake-provider,
+  tetapi belum pernah memanggil AWS. Real MySQL/S3/Rekognition indexing,
+  liveness, search, deletion, dan evidence provider belum ada; synthetic
+  orchestration bukan bukti penghapusan provider. Transitive React peer range
+  pada liveness client juga wajib ditutup melalui review kompatibilitas resmi
+  atau dependency update sebelum activation.
 - Test merchant Tokopay dan AWS test provider/legal biometric gate belum
   tersedia; real-money dan production biometric tetap off.
 - GitHub hosted CI/protected-main enforcement masih tertahan account-plan gate;
