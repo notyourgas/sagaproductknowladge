@@ -12,9 +12,9 @@ credential, PII, identifier tenant/perangkat, atau detail provider sensitif.
 - Delivery: `LOCAL_VALIDATED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED`
-- Provenance: source private `d964fea`, operations feature `b09f279`,
+- Provenance: source private `4d602d9`, operations feature `b09f279`,
   deletion/recovery hardening `dbbb814`, candidate/cart authority `09a55bd`,
-  durable notification worker `d964fea`,
+  durable notification worker `d964fea`, lifecycle/retention worker `4d602d9`,
   protected Vercel preview `dpl_FFDKoeT7Nj51FNxHgdKuEVogBYJJ`.
 
 ## Overview produk
@@ -103,6 +103,10 @@ fotografer desktop-optimized.
 - Payment receipt, photographer HiRes request, dan customer delivery memakai
   durable in-app notification. Worker melakukan claim, stale reclaim, retry,
   sent evidence, dan DLQ; email provider tetap external gate.
+- Lifecycle worker setiap 60 detik menjalankan bounded sweep untuk sales close,
+  expiry search/cart/payment, fulfillment overdue, serta deterministic
+  system-owned deletion request bagi search/face/preview. Finance records dan
+  purchased social/HiRes entitlement tidak menjadi target hard delete.
 
 ## Business model dan pricing
 
@@ -117,7 +121,7 @@ fotografer desktop-optimized.
 - Full format/lint/typecheck/test/build lulus.
 - 38 API test lulus; enam MySQL/external integration test terkontrol skip tanpa
   service project-safe.
-- 18 worker test lulus; tiga integrasi MySQL/Redis sengaja skip tanpa service
+- 20 worker test lulus; empat integrasi MySQL/Redis sengaja skip tanpa service
   project-safe. Restore verifier kini memeriksa core schema dan orphan deletion
   task, bukan hanya jumlah tabel.
 - 38 Playwright mobile/desktop lulus dan dua viewport-specific skip disengaja;

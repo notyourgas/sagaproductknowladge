@@ -1,13 +1,14 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 25 Agustus 2026 06:25 WIB
+Evidence cut-off: 25 Agustus 2026 12:54 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
-Snap and Fit exact private source `d964fea` berstatus `CONFIRMED /
+Snap and Fit exact private source `4d602d9` berstatus `CONFIRMED /
 LOCAL_VALIDATED`; privileged operations feature berasal dari `b09f279`,
 deletion/recovery hardening dari `dbbb814`, candidate/cart authority dari
-`09a55bd`, durable notification worker dari `d964fea`, dan protected Vercel
+`09a55bd`, durable notification worker dari `d964fea`, lifecycle/retention
+worker dari `4d602d9`, dan protected Vercel
 preview `dpl_FFDKoeT7Nj51FNxHgdKuEVogBYJJ`
 berstatus `READY`.
 Marketplace foto olahraga ini mencakup event, uploader preview 500 JPEG,
@@ -23,7 +24,10 @@ restore schema-integrity check. Candidate confirm/reject terikat exact anonymous
 search session; verified checkout menyimpan server-priced cart dan order
 provenance. Payment/fulfillment membuat durable in-app notification dengan
 retry, stale reclaim, sent evidence, dan DLQ tanpa mengklaim email terkirim.
-Full local gate, 38 API test, 18 worker test, dependency audit nol,
+Lifecycle sweep mempersistenkan timed sales close, expiry search/cart/payment,
+fulfillment overdue, dan system-owned search/face/preview deletion request tanpa
+hard-delete finance record. Full local gate, 38 API test, 20 worker test,
+dependency audit nol,
 dan browser suite lulus; integration service-dependent
 tetap skip terkontrol. Backend staging, isolated VPS, MySQL/Redis/S3 worker
 evidence, real-provider deletion, external provider/legal gate,

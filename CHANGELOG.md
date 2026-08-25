@@ -1,5 +1,14 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - Snap and Fit lifecycle and retention sync
+
+- Menyinkronkan exact private source `4d602d9` dengan scheduled sales close,
+  expiry transient commerce/search state, fulfillment overdue, serta
+  deterministic search/face/preview retention request.
+- Full local validation dan 20 worker test lulus; empat integration test tetap
+  skip terkontrol tanpa isolated MySQL/Redis.
+- Status tetap `LOCAL_VALIDATED / NOT_PRODUCTION_ACTIVATED / BLOCKED`.
+
 ## 2026-08-25 - Snap and Fit durable notification sync
 
 - Produk/area: payment receipt, photographer HiRes request, customer delivery,

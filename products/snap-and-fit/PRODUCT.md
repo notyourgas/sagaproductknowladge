@@ -47,13 +47,14 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 - Delivery: `LOCAL_VALIDATED`.
 - Activation: `NOT_PRODUCTION_ACTIVATED`.
 - Business readiness: `BLOCKED`.
-- Exact source `d964fea` berada di private `main`; fitur operator berasal dari
+- Exact source `4d602d9` berada di private `main`; fitur operator berasal dari
   `b09f279`, deletion/recovery hardening dari `dbbb814`, serta candidate/cart
-  authority dari `09a55bd`. Durable notification worker berasal dari `d964fea`.
+  authority dari `09a55bd`, durable notification worker dari `d964fea`, dan
+  lifecycle/retention worker dari `4d602d9`.
 - Protected Vercel preview `dpl_FFDKoeT7Nj51FNxHgdKuEVogBYJJ` berstatus
   `READY`; frontend dapat dirender tetapi backend staging sengaja fail-closed.
 - Full local validation, 38 API test dengan enam integrasi eksternal terkontrol
-  skip, 18 worker test dengan tiga integrasi service-dependent skip, audit
+  skip, 20 worker test dengan empat integrasi service-dependent skip, audit
   dependency nol vulnerability, serta 38 browser test dengan dua viewport skip
   lulus.
 
@@ -70,10 +71,14 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   checkout menyimpan server-priced cart dan menghubungkannya ke order.
 - Payment dan fulfillment membuat durable in-app notification dengan retry,
   stale reclaim, dan DLQ. Transactional email nyata belum diaktifkan.
+- Lifecycle worker menutup sales window, session/cart/payment yang kedaluwarsa,
+  fulfillment overdue, dan menjadwalkan retensi search/face/preview tanpa
+  menghapus finance record. Eksekusi provider nyata tetap belum tervalidasi.
 
 ## Next gate
 
 Sediakan isolated VPS minimal 4 vCPU/16 GB, project-only MySQL/Redis/private
 storage, lalu jalankan migration, optional integration suite, synthetic
-deletion/replay drill, 300-concurrent load, backup/restore, rollback, security,
-dan real-device UAT. Real-provider deletion tetap gate aktivasi terpisah.
+lifecycle/deletion/replay drill, 300-concurrent load, backup/restore, rollback,
+security, dan real-device UAT. Real-provider deletion tetap gate aktivasi
+terpisah.

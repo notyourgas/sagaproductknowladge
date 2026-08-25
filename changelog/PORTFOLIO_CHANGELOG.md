@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-25 - Snap and Fit lifecycle and retention deadlines
+
+- Exact private source `4d602d9` menambahkan scheduled sales close, expiry
+  search/cart/payment, fulfillment overdue, dan system-owned
+  search/face/preview retention fan-out.
+- Full local gate dan 20 worker test lulus; empat integration test
+  service-dependent skip terkontrol.
+- Delivery tetap `LOCAL_VALIDATED`; migration dan provider execution belum
+  dibuktikan pada isolated staging.
+
 ## 2026-08-25 - Snap and Fit durable notifications
 
 - Exact private source `d964fea` menambahkan durable in-app receipt,

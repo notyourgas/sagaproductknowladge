@@ -12,16 +12,16 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T12:43:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T12:54:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `54683b05` |
-| Informasi terakhir disinkronkan | Snap and Fit durable in-app notification worker dari exact source `d964fea`. |
+| Baseline sebelum pembaruan | `87ea83d` |
+| Informasi terakhir disinkronkan | Snap and Fit lifecycle dan retention deadlines dari exact source `4d602d9`. |
 | Status sinkronisasi | Delivery `LOCAL_VALIDATED`; activation `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED`. |
 | Konflik | Tidak ada konflik source atau keputusan baru; status tidak dinaikkan menjadi staging. |
 | Error | Tidak ada error sinkronisasi; isolated staging dan provider/legal gate tetap terbuka. |
 
-## File yang berubah pada sinkronisasi ini (Snap and Fit durable notifications)
+## File yang berubah pada sinkronisasi ini (Snap and Fit lifecycle and retention)
 
 - `products/snap-and-fit/PRODUCT.md`
 - `products/snap-and-fit/DOSSIER.md`

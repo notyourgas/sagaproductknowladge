@@ -10,6 +10,17 @@ production, activation, dan business readiness.
 Mock, fixture, preview frontend, dan test lokal bukan bukti provider atau
 production activation.
 
+## 2026-08-25 - Lifecycle dan retention deadlines
+
+- Exact private source `4d602d9` berstatus `LOCAL_VALIDATED`.
+- Worker setiap 60 detik menutup sales window, search session, cart, dan pending
+  payment yang kedaluwarsa serta menandai fulfillment SLA overdue.
+- Search/face/preview retention membentuk system-owned deletion request yang
+  deterministic, idempotent, dan tidak menghapus immutable finance record.
+- Full local gate lulus; 20 worker test lulus dan empat integration test
+  service-dependent skip terkontrol. Migration/MySQL/Redis/provider execution
+  tetap menunggu isolated staging.
+
 ## 2026-08-25 - Durable in-app notification worker
 
 - Exact private source `d964fea` berstatus `LOCAL_VALIDATED`.
