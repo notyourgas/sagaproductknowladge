@@ -12,12 +12,34 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T23:34:09+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T23:49:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `2a0cf6306bad3f393f36378af346b59826c35d82` |
-| Informasi terakhir disinkronkan | SagaWork Pilot Canary 01 owner scope freeze. |
-| Status sinkronisasi | `STAGING_DEPLOYED / PRE_ADMISSION_NO_GO / NOT_PRODUCTION_ACTIVATED / BUSINESS_READINESS_BLOCKED_EXTERNAL`. |
+| Baseline sebelum pembaruan | `449c6729849f39012eacb5969f362a7a5191351f` |
+| Informasi terakhir disinkronkan | COYABAG Checkout customer details integrity. |
+| Status sinkronisasi | `PRODUCTION_DEPLOYED / BLOCKED / BLOCKED`; commerce tetap fail-closed. |
+
+## COYABAG Checkout customer details integrity
+
+- Exact source `e684ae38f19a4e7f17ead395903c3457946ed011` aktif pada immutable
+  release `20260825-e684ae3`; rollback `20260825-5cc10ec`.
+- Customer/contact, destination/quote, alamat, kode pos, dan catatan divalidasi
+  sebelum payment. Error focus, server-422 recovery, lazy skeleton, dan CTA
+  readiness gate menjaga Cart dan mencegah dead end.
+- Full regression, empat viewport, slow-network, responsive/accessibility,
+  performance, backup/rollback, dan public smoke lulus tanpa order production.
+- Readiness tetap 30/42 dengan 12 blocker; commerce, activation, dan business
+  readiness tetap blocked.
+
+## File yang berubah pada sinkronisasi ini (COYABAG Checkout details)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaWork Pilot Canary 01 scope freeze
 

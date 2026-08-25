@@ -61,9 +61,17 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260825-0c4104b` dengan source
-  `0c4104b080e5575010b0fa545fe5e05aaf6f7daa` melayani production;
-  rollback langsung `20260825-68119d2` dipertahankan.
+- Release aktif `20260825-e684ae3` dengan source
+  `e684ae38f19a4e7f17ead395903c3457946ed011` melayani production;
+  rollback langsung `20260825-5cc10ec` dipertahankan.
+- Checkout Detail memvalidasi nama, penerima, WhatsApp, email, destination
+  exact, alamat, kode pos, catatan, dan quote sebelum payment selection. Error
+  summary serta error inline memindahkan fokus ke field yang perlu diperbaiki;
+  penolakan server kembali ke Detail tanpa menghapus Cart.
+- Form customer/destination dimuat sebagai lazy feature dengan skeleton dan CTA
+  terkunci sampai field siap. Performance budget lulus pada entry 193,5 KiB,
+  initial JavaScript 146,3 KiB gzip, initial CSS 157,3 KiB, dan worst-route CSS
+  31 KiB gzip.
 - Cart page dan drawer menyediakan bulk clear dengan konfirmasi inline yang
   memfokuskan `Batal` lebih dulu. Undo memulihkan identitas produk/varian exact
   dalam urutan semula dan tidak menduplikasi item yang sudah ditambahkan lagi.

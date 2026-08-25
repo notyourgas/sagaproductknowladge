@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - COYABAG Checkout customer details integrity sync
+
+- Ringkasan: sinkronisasi validasi Checkout Detail, error focus, safe server
+  rejection recovery, lazy loading gate, dan performance-budget recovery.
+- Produk/area: COYABAG Checkout, customer/contact, destination/quote, responsive
+  UI, accessibility, performance, backend validation, release, dan rollback.
+- Klasifikasi: `CONFIRMED`; source
+  `e684ae38f19a4e7f17ead395903c3457946ed011`, release
+  `20260825-e684ae3`, rollback `20260825-5cc10ec`, runtime verification.
+- Production berubah: ya. Delivery `PRODUCTION_DEPLOYED`; activation dan
+  business readiness `BLOCKED`. Readiness 30/42 dengan 12 blocker; commerce
+  tetap fail-closed.
+- Dokumen terdampak: COYABAG product/dossier/changelog, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-25 - SagaWork Pilot Canary 01 scope sync
 
 - Ringkasan: menyinkronkan owner-approved canary code, lokasi, cohort range, tanggal, support default, performance-off, parallel-run, exact target, dan fail-closed admission status.

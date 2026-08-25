@@ -78,9 +78,19 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260825-0c4104b` memakai source
+Release production terbaru `20260825-e684ae3` memakai source
+`e684ae38f19a4e7f17ead395903c3457946ed011` dan rollback
+`20260825-5cc10ec`. Checkout Detail sekarang memvalidasi nama, penerima,
+WhatsApp 8-15 digit, email, destination exact, alamat, kode pos, batas catatan,
+dan quote aktif sebelum payment selection. Ringkasan/error inline mengarahkan
+fokus; server 422 kembali ke Detail dan mempertahankan Cart. Lazy form memiliki
+skeleton serta CTA readiness gate. Empat viewport, slow-network, public browser,
+full regression, accessibility, security, performance, backup/rollback, dan
+smoke lulus tanpa order production. Readiness tetap 30/42 dengan 12 blocker.
+
+Release sebelumnya `20260825-0c4104b` memakai source
 `0c4104b080e5575010b0fa545fe5e05aaf6f7daa` dan rollback
-`20260825-68119d2`. Cart page dan drawer kini menyediakan bulk clear dengan
+`20260825-68119d2`. Cart page dan drawer menyediakan bulk clear dengan
 safe-first confirmation, exact product-variant snapshot, original-order Undo,
 dan duplicate protection. Sesi tetap tersedia saat katalog atau persistence
 gagal; checkout tetap fail-closed. Full TDD/regression, desktop/mobile,

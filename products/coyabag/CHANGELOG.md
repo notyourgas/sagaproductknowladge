@@ -4,6 +4,22 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-25 - Checkout customer details integrity production release
+
+- Klasifikasi: `CONFIRMED` dari exact source
+  `e684ae38f19a4e7f17ead395903c3457946ed011`, immutable Hostinger release
+  `20260825-e684ae3`, rollback `20260825-5cc10ec`, dan runtime verification.
+- Checkout memvalidasi customer/contact, destination exact, alamat, kode pos,
+  catatan, serta quote aktif sebelum payment selection. Error summary, fokus,
+  inline guidance, autocomplete, dan safe server-422 mapping menjaga Cart.
+- Lazy form mempunyai skeleton dan menahan CTA sampai field siap. Performance
+  budget kembali lulus tanpa melonggarkan threshold.
+- TDD, full Laravel/storefront regression, empat viewport, slow-network,
+  responsive/accessibility, security/build, backup/rollback, dan public smoke
+  lulus tanpa membuat order production.
+- Delivery `PRODUCTION_DEPLOYED`; readiness tetap 30/42 dengan 12 blocker.
+  Activation dan business readiness `BLOCKED`; commerce tidak diaktifkan.
+
 ## 2026-08-25 - Storefront Cart bulk clear and Undo production release
 
 - Klasifikasi: `CONFIRMED` dari exact source

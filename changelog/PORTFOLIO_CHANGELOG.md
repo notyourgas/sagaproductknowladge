@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-25 - COYABAG Checkout customer details integrity
+
+- Exact source `e684ae38f19a4e7f17ead395903c3457946ed011` aktif pada immutable
+  Hostinger release `20260825-e684ae3` dengan rollback `20260825-5cc10ec`.
+- Checkout Detail memvalidasi contact, destination, alamat, kode pos, catatan,
+  dan quote; error focus serta server-422 recovery menjaga Cart tetap utuh.
+- Lazy form, slow-network gate, empat viewport, full regression,
+  accessibility, performance, backup/rollback, dan public smoke lulus tanpa
+  order production.
+- Delivery `PRODUCTION_DEPLOYED`; activation/business readiness `BLOCKED`;
+  readiness 30/42 dan commerce tetap fail-closed.
+
 ## 2026-08-25 - SagaWork Pilot Canary 01 scope freeze
 
 - Andreas mengunci pilot public-safe `KANANTA-MADIUN-CANARY-01`: satu lokasi Madiun, 5–10 Staff, mulai 26 Agustus, tiga hari, support enabled, performance OFF, dan manual parallel run.
