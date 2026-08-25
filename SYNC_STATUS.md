@@ -12,12 +12,37 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-26T02:02:49+07:00 |
+| Waktu pembaruan terakhir | 2026-08-26T02:14:31+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | exact `origin/main` `2934c86` sebelum sinkronisasi Snap and Fit staging blocker revalidation |
-| Informasi terakhir disinkronkan | Snap and Fit read-only staging blocker revalidation. |
-| Status sinkronisasi | `LOCAL_VALIDATED`; staging, production, activation, dan business readiness tetap blocked. |
+| Baseline sebelum pembaruan | exact `origin/main` `590c0c7` sebelum sinkronisasi SagaView S290 |
+| Informasi terakhir disinkronkan | SagaView S290 Support Hub keyboard focus containment. |
+| Status sinkronisasi | `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production, activation, dan business readiness tidak berubah. |
+
+## SagaView S290 Support Hub keyboard focus containment
+
+- Exact pushed source `f34eff0720e8e43841617534377ef4db382ce245`.
+- Tab/Shift+Tab berputar di dalam dialog; tombol Tutup berlabel minimal 44
+  piksel dan penutupan mengembalikan fokus ke launcher.
+- Perubahan hanya aktif pada SagaView; perilaku SagaBook, backend, database,
+  data customer, dan production tidak berubah.
+- Focused 2/10, Support Hub 30/126, full SagaView 210/3.520, Playwright
+  desktop/mobile 2/2, build 5.097 modul, Pint/diff, dan audit dependency nol
+  lulus.
+- Authenticated operator UAT tetap memerlukan izin eksplisit dan akun referensi
+  non-customer sebelum activation/business readiness dinilai.
+
+## File yang berubah pada sinkronisasi ini (SagaView S290)
+
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/DOSSIER.md`
+- `products/sagaview/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## Snap and Fit staging blocker revalidation
 

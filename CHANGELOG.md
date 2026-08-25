@@ -1,5 +1,22 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-26 - SagaView S290 Support Hub focus containment sync
+
+- Ringkasan: sinkronisasi loop Tab/Shift+Tab dalam dialog, tombol Tutup 44
+  piksel berlabel, dan pemulihan fokus ke launcher untuk Support Hub Owner.
+- Alasan: pengguna keyboard tidak boleh tersesat ke layar belakang ketika
+  dialog bantuan masih terbuka.
+- Produk/area: SagaView Owner, Support Hub, UI/UX, accessibility, frontend,
+  security/privacy, QA, dan release provenance.
+- Klasifikasi: `CONFIRMED`; source exact
+  `f34eff0720e8e43841617534377ef4db382ce245`.
+- Production berubah: tidak. Delivery `PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; activation dan business readiness belum berubah.
+- Dokumen terdampak: ledger, Product, Dossier, changelog SagaView, portfolio,
+  master knowledge, gaps, root changelog, dan sync status.
+- Next gate: authenticated operator UAT dengan izin eksplisit dan akun
+  referensi non-customer.
+
 ## 2026-08-26 - Snap and Fit staging blocker revalidation sync
 
 - Ringkasan: sinkronisasi read-only Hostinger capacity, Vercel backend-env,

@@ -1,5 +1,25 @@
 # SagaView Changelog
 
+## 2026-08-26 - S290 Support Hub keyboard focus containment
+
+- Klasifikasi: `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+  production tidak berubah.
+- Before: modal Support Hub SagaView dapat melepas fokus Tab ke layar belakang
+  dan hanya menyediakan satu kontrol fokus, sehingga pengguna keyboard sulit
+  menutup atau menavigasi panel secara konsisten.
+- After: exact `f34eff0720e8e43841617534377ef4db382ce245` menambahkan
+  tombol Tutup berlabel dengan target minimal 44 piksel, loop Tab/Shift+Tab,
+  serta pemulihan fokus ke launcher setelah Escape atau tombol Tutup.
+- Scope/privacy: perilaku baru hanya aktif saat `productCode=sagaview`; tidak
+  ada perubahan upload, foto/path customer, backend, database, atau perilaku
+  SagaBook.
+- Evidence: focused 2/2 dengan 10 assertion; regresi Support Hub 30/30 dengan
+  126 assertion; full SagaView 210/210 dengan 3.520 assertion; Playwright 2/2
+  pada 1440x900 dan 390x844; build 5.097 modul; Pint, diff check, Composer
+  audit, dan npm production audit nol vulnerability lulus.
+- Next gate: authenticated operator UAT terotorisasi dengan akun referensi
+  non-customer sebelum `PRODUCTION_ACTIVATED` dan `BUSINESS_READY` dinilai.
+
 ## 2026-08-26 - S289 authenticated read-only operator UAT harness
 
 - Klasifikasi: `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;

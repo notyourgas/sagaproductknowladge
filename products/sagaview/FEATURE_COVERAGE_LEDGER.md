@@ -1,6 +1,19 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 26 Agustus 2026 01:24 WIB
+Evidence cut-off: 26 Agustus 2026 02:14 WIB
+
+S290 Support Hub keyboard focus containment: exact pushed source
+`f34eff0720e8e43841617534377ef4db382ce245` menutup gap fokus modal
+SagaView tanpa mengubah perilaku SagaBook. Sebelumnya fokus Tab dapat keluar
+ke layar belakang dan panel hanya memiliki satu kontrol fokus. Sekarang panel
+memiliki tombol Tutup berlabel dengan target minimal 44 piksel, Tab/Shift+Tab
+berputar di dalam dialog, serta Escape menutup dan mengembalikan fokus ke
+launcher. Focused 2/10, regresi Support Hub 30/126, full SagaView 210/3.520,
+Playwright desktop 1440x900 dan mobile 390x844 2/2, build 5.097 modul, Pint,
+diff check, dan audit Composer/npm nol lulus. Status `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah. Gap
+berikutnya tetap authenticated operator UAT terotorisasi dengan akun referensi
+non-customer sebelum activation dan business readiness dinilai.
 
 S289 authenticated read-only operator UAT harness: exact pushed source
 `701d008329b5e2fe482226d45cc7ba8750fa6fcc` menyediakan jalur UAT khusus

@@ -1,5 +1,21 @@
 # SagaView Dossier
 
+## S290 Support Hub keyboard focus containment
+
+Exact pushed source `f34eff0720e8e43841617534377ef4db382ce245`
+memperbaiki fokus modal Support Hub Owner khusus SagaView. Tab dan Shift+Tab
+sekarang berputar di dalam dialog, tombol Tutup memiliki label aksesibel dan
+target minimal 44 piksel, serta Escape maupun tombol Tutup mengembalikan fokus
+ke launcher. Implementasi dipagari `isSagaView`, sehingga perilaku SagaBook
+tidak berubah.
+
+Focused 2/10, regresi Support Hub 30/126, full SagaView 210/3.520, Playwright
+desktop 1440x900 dan mobile 390x844 2/2 dengan forced-colors/reduced-motion,
+build 5.097 modul, Pint, diff check, serta audit Composer/npm nol lulus.
+Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production,
+backend, database, dan data customer tidak berubah. Authenticated operator UAT
+tetap memerlukan izin eksplisit dan akun referensi non-customer.
+
 ## S289 authenticated read-only operator UAT harness
 
 Exact pushed source `701d008329b5e2fe482226d45cc7ba8750fa6fcc`

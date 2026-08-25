@@ -54,6 +54,17 @@
   `READY`; uploader 200 dan backend fail-closed 503. Delivery tetap
   `LOCAL_VALIDATED`; real S3/worker 500-object proof masih external gate.
 
+## 2026-08-26 - SagaView S290 Support Hub keyboard focus containment
+
+- Exact pushed source `f34eff0720e8e43841617534377ef4db382ce245` menahan
+  Tab/Shift+Tab di dalam dialog Support Hub Owner, menambah tombol Tutup
+  berlabel 44 piksel, dan memulihkan fokus ke launcher setelah penutupan.
+- Perubahan hanya berlaku untuk SagaView; backend, database, foto/path customer,
+  perilaku SagaBook, dan production tidak berubah.
+- Focused 2/10, Support Hub 30/126, full SagaView 210/3.520, Playwright dua
+  viewport 2/2, build 5.097 modul, format/diff, serta audit dependency nol
+  lulus. Delivery `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+
 ## 2026-08-26 - SagaView S289 authenticated UAT safety harness
 
 - Exact source `701d008329b5e2fe482226d45cc7ba8750fa6fcc` membuat

@@ -1,6 +1,17 @@
 # SagaView Product Knowledge
 
-Updated: 26 Agustus 2026 01:24 WIB
+Updated: 26 Agustus 2026 02:14 WIB
+
+SagaView S290 exact `f34eff0720e8e43841617534377ef4db382ce245`
+sudah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Support Hub Owner
+sekarang menahan fokus Tab dan Shift+Tab di dalam dialog, menyediakan tombol
+Tutup berlabel dengan target minimal 44 piksel, serta mengembalikan fokus ke
+launcher setelah Escape atau tombol Tutup. Perubahan hanya aktif untuk
+`productCode=sagaview`; perilaku SagaBook tetap seperti baseline. Focused
+2/10, regresi Support Hub 30/126, full SagaView 210/3.520, browser desktop
+1440x900 dan mobile 390x844 2/2 termasuk forced-colors/reduced-motion, build
+5.097 modul, Pint, diff check, serta audit Composer/npm nol lulus. Production
+tidak berubah; authenticated operator UAT tetap gate terpisah.
 
 SagaView S289 exact `701d008329b5e2fe482226d45cc7ba8750fa6fcc`
 sudah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Harness baru

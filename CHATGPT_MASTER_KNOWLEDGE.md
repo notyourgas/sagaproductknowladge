@@ -4,6 +4,16 @@ Evidence cut-off: 26 Agustus 2026 01:25 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
+SagaView S290 exact `f34eff0720e8e43841617534377ef4db382ce245`
+sudah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Support Hub Owner
+khusus SagaView sekarang menahan Tab/Shift+Tab di dalam dialog, menyediakan
+tombol Tutup berlabel minimal 44 piksel, serta mengembalikan fokus ke launcher
+setelah Escape atau tombol Tutup. Scope `isSagaView` menjaga perilaku SagaBook
+tetap seperti baseline. Focused 2/10, Support Hub 30/126, full SagaView
+210/3.520, Playwright desktop/mobile 2/2, build 5.097 modul, Pint/diff, dan
+audit Composer/npm nol lulus. Production tidak berubah; authenticated UAT dan
+activation tetap gate terpisah.
+
 SagaView S289 exact `701d008329b5e2fe482226d45cc7ba8750fa6fcc`
 berstatus `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Harness
 authenticated operator UAT sekarang SagaView-only, memerlukan approval
