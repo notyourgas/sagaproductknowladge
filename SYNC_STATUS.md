@@ -12,16 +12,27 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T17:52:59+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T17:55:47+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `5398fcf` |
-| Informasi terakhir disinkronkan | COYABAG Admin Inventory integrity pada exact source `2880881e654f06414e8155300f16cd0f2517b17f` dan Hostinger release `20260825-2880881`. |
-| Status sinkronisasi | `PRODUCTION_DEPLOYED / activation BLOCKED / business readiness BLOCKED`. |
-| Konflik | Tidak ada; surface Inventory live dibedakan dari commerce production activation. |
-| Error | Tidak ada error sinkronisasi; 12 blocker readiness tetap terbuka. |
+| Baseline sebelum pembaruan | `c0e96df` |
+| Informasi terakhir disinkronkan | SagaWork validated OpenAPI 3.1.1 source `133b936`, acceptance `85bbbfb`, docs head `366b1cd`; exact active staging tetap `e003a3d`. |
+| Status sinkronisasi | `STAGING_DEPLOYED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`. |
+| Konflik | Tidak ada; OpenAPI protected same-origin dan metadata artifact public-safe dibedakan dari public API/SDK serta file source restricted. |
+| Error | Tidak ada error sinkronisasi; provider/offsite/legal/independent/device/pilot gates tetap pending. |
 
-## File yang berubah pada sinkronisasi ini (COYABAG Admin Inventory integrity)
+## File yang berubah pada sinkronisasi ini (SagaWork validated OpenAPI 3.1.1)
+
+- `products/sagawork/PRODUCT.md`
+- `products/sagawork/DOSSIER.md`
+- `products/sagawork/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
+
+## File yang berubah pada sinkronisasi sebelumnya (COYABAG Admin Inventory integrity)
 
 - `products/coyabag/PRODUCT.md`
 - `products/coyabag/DOSSIER.md`

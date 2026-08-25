@@ -1,5 +1,12 @@
 # Portfolio Changelog
 
+## 2026-08-25 - SagaWork validated OpenAPI 3.1.1
+
+- Exact OpenAPI source `133b936`, acceptance `85bbbfb`, docs head `366b1cd`, dan active synthetic staging `e003a3d` menjadi provenance public-safe.
+- Contract exact-set mencakup 56 path/69 operasi, 39 request components, auth/parameter/idempotency/envelope/error/CSV, source-drift verifier, serta pinned independent lint tanpa warning.
+- Restricted OpenAPI handoff artifact checksum/provenance PASS; hanya metadata public-safe yang dicatat. Runtime/preview tidak berubah.
+- Gate C-04 `PASS_INTERNAL`; delivery tetap `STAGING_DEPLOYED`, activation `NOT_PRODUCTION_ACTIVATED`, dan business readiness `BLOCKED_EXTERNAL`.
+
 ## 2026-08-25 - COYABAG Admin Inventory integrity
 
 - Exact source `2880881e654f06414e8155300f16cd0f2517b17f` aktif sebagai

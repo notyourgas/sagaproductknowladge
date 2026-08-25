@@ -8,6 +8,14 @@ Mencatat perubahan material SagaWork dengan status delivery dan activation yang 
 
 Synthetic fixture, preview, dan staging bukan bukti real pilot atau production activation.
 
+## 2026-08-25 - Validated OpenAPI 3.1.1 dan exact handoff
+
+- `CONFIRMED` dari OpenAPI source `133b936`, acceptance `85bbbfb`, documentation head `366b1cd`, exact active isolated staging `e003a3d`, serta local QA/artifact evidence.
+- Machine-readable contract mencakup exact 56 path/69 operasi dan 39 request components, cookie/public auth boundary, path/query/header/idempotency, stable envelope/error/CSV, unique operation IDs, generated artifact freshness, serta source drift verifier.
+- Pinned Redocly CLI `2.47.0` lint PASS tanpa warning; 27/89 unit test, 39-page build, production dependency audit nol vulnerability, release manifest, dan restricted bundle acceptance PASS.
+- Restricted OpenAPI implementation/acceptance artifact exact `85bbbfb`: 1.213.154 byte/444 tracked entries, SHA-256 `9deb21651fb89dca6dbeee25e3f5626d88937f0bc0d38c8055adaf31120c61f9`; metadata public-safe dicatat tanpa memublikasikan file restricted.
+- Runtime Hostinger dan protected Vercel Preview tidak berubah. Delivery `STAGING_DEPLOYED`; activation `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED_EXTERNAL`. Gate C-04 `PASS_INTERNAL`, tetapi provider/DPA/cost, offsite custody, DPIA/legal, independent review, Gate A/B/E, dan Andreas Go tetap pending.
+
 ## 2026-08-25 - Verifiable restricted release artifact dan implemented contracts
 
 - `CONFIRMED` dari release tooling `209eec2`, implemented-contract source `b3ab90f`, completion audit `1ad6bf1`, exact active isolated Hostinger staging `e003a3d`, serta artifact/runtime verification.
