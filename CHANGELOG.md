@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - SagaView S288 recovery mutex sync
+
+- Produk/area: SagaView inactive rollback recovery, concurrency, atomic pointer,
+  cleanup, QA, security, dan release readiness.
+- Informasi `CONFIRMED` berasal dari exact pushed source
+  `10cb9cf7454f7c89f3892c4439b1d35938be5168` serta local/disposable evidence.
+- Knowledge mencatat mutex fail-closed, pointer sementara unik, focused 6/135,
+  full SagaVIEW 219/3.720, build 5.097 modul, audit nol, behavioral mutex, dan
+  dua salinan artifact immutable.
+- Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  RELEASE_BLOCKED_GLOBAL_TEST`; production tidak berubah dan approval lama
+  deprecated.
+- Dokumen terdampak: SagaView product/dossier/changelog/ledger, portfolio,
+  master knowledge, gaps, root changelog, dan sync status.
+
 ## 2026-08-25 - Snap and Fit liveness peer acceptance sync
 
 - Produk/area: liveness client dependency metadata, validation, dan protected preview.

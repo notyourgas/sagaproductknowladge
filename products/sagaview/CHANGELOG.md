@@ -1,5 +1,27 @@
 # SagaView Changelog
 
+## 2026-08-25 - S288 serialized inactive rollback recovery
+
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED_GLOBAL_TEST`;
+  `BUSINESS_READY=false`.
+- Before: dua recovery S288 dapat berjalan bersamaan dan memakai nama pointer
+  sementara yang sama, sehingga publish dan cleanup berpotensi berlomba.
+- After: exact `10cb9cf7454f7c89f3892c4439b1d35938be5168` memakai mutex
+  non-blocking dan pointer sementara unik per proses; recovery kedua berhenti
+  fail-closed dengan diagnostik `recovery_already_running`.
+- Evidence: focused 6/6 dengan 135 assertion; full SagaVIEW 219/219 dengan
+  3.720 assertion; build 5.097 modul; parser/Pint/diff; audit Composer/npm nol;
+  behavioral mutex membuktikan second lock ditolak dan tersedia lagi setelah
+  unlock. Archive SHA-256 `3ea979ea19e818562232c01f723a0184f29d3a39c846034eb808fd6ed8b0b959`
+  dan bundle SHA-256 `f6b0481f87847519308ebcf16e1663154fb1b876802ddd50dc519c42cbba8b1a`
+  tersimpan dua salinan checksum-identical.
+- Blocker: full monorepo 1.014/1.015; satu fixture SagaBook memakai slot tetap
+  25 Agustus 2026 pukul 16.00 WIB dan sekarang benar ditolak 409. SagaBook tidak
+  diubah dari slice ini. Approval pack `51250078...` deprecated.
+- Delivery: production, database, active release, target rollback, Studio,
+  Platform, dan SagaBook tidak berubah; recovery/deploy tidak dijalankan.
+
 ## 2026-08-25 - S288 safe rollback pointer publication
 
 - Klasifikasi: `CONFIRMED / PUSHED / SECURITY_VALIDATED / QA_VALIDATED /

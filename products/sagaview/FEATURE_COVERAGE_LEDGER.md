@@ -1,6 +1,19 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 25 Agustus 2026 15:16 WIB
+Evidence cut-off: 25 Agustus 2026 18:05 WIB
+
+S288 serialized inactive rollback recovery: exact pushed source
+`10cb9cf7454f7c89f3892c4439b1d35938be5168` menutup P1 recovery paralel.
+Runner sekarang memakai mutex non-blocking dan pointer sementara unik per
+proses, sehingga recovery kedua berhenti fail-closed dan tidak dapat berlomba
+dengan publish/cleanup pertama. Focused 6/135, full SagaVIEW 219/3.720, build
+5.097 modul, parser/format/diff, audit dependency nol, serta behavioral mutex
+lulus. Archive dan incremental bundle mempunyai dua salinan checksum-identical.
+Production, database, active release, rollback target, dan produk lain tidak
+berubah. Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+RELEASE_BLOCKED_GLOBAL_TEST`; full monorepo masih merah pada satu fixture
+SagaBook berbasis waktu di luar scope. Approval pack `51250078...` deprecated;
+recovery dan deploy tetap dilarang sampai global gate hijau dan pack baru dibuat.
 
 S288 safe rollback pointer publication: exact pushed source
 `51250078fda049fb8960372ef310440979203f9f` menutup concurrency window pada

@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-25 - SagaView S288 recovery mutex hardening
+
+- Exact pushed source `10cb9cf7454f7c89f3892c4439b1d35938be5168`
+  membuat inactive rollback recovery serial dengan mutex fail-closed dan
+  pointer sementara unik per proses.
+- Focused 6/135, full SagaVIEW 219/3.720, build 5.097 modul, parser/format/diff,
+  audit dependency nol, behavioral mutex, dan dua salinan artifact immutable
+  lulus.
+- Production tidak berubah. Delivery `LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED_GLOBAL_TEST`; recovery/deploy
+  menunggu full global gate dan approval pack baru.
+
 ## 2026-08-25 - Snap and Fit liveness peer acceptance
 
 - Exact feature `7b44101` dan docs head `a9518e0` mencatat narrow PNPM rule untuk

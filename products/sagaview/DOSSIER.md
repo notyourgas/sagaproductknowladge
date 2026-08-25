@@ -1,5 +1,20 @@
 # SagaView Dossier
 
+## 2026-08-25 - S288 recovery concurrency serialized
+
+Exact pushed hardening `10cb9cf7454f7c89f3892c4439b1d35938be5168`
+menutup P1 recovery paralel yang tersisa setelah pointer publication diperbaiki.
+File lock non-blocking dipegang sepanjang recovery; invocation kedua berhenti
+fail-closed. Nama symlink sementara publish dan cleanup membawa process ID agar
+tidak saling menimpa, dan cleanup menghapus sisa pointer sementaranya.
+
+Focused 6/135, full SagaVIEW 219/3.720, build 5.097 modul, parser/Pint/diff,
+audit dependency nol, dan behavioral mutex read-only lulus. Archive/bundle
+immutable memiliki dua salinan checksum-identical. Global monorepo masih
+diblokir satu fixture SagaBook berbasis waktu; karena scope eksklusif SagaVIEW,
+fixture itu tidak diubah. Production dan database tidak berubah, approval lama
+deprecated, serta recovery/deploy belum diizinkan.
+
 ## 2026-08-25 - S288 rollback pointer publication hardened
 
 Exact pushed repair `51250078fda049fb8960372ef310440979203f9f` menutup P1

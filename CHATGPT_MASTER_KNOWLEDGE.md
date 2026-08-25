@@ -1,8 +1,18 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 25 Agustus 2026 17:55 WIB
+Evidence cut-off: 25 Agustus 2026 18:05 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
+
+SagaView S288 exact `10cb9cf7454f7c89f3892c4439b1d35938be5168`
+berstatus `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+RELEASE_BLOCKED_GLOBAL_TEST / BUSINESS_READY=false`. Inactive rollback recovery
+kini serial dengan mutex non-blocking dan pointer sementara unik per proses;
+focused 6/135, full SagaVIEW 219/3.720, build 5.097 modul, parser/format/diff,
+audit dependency nol, behavioral mutex, serta dua salinan artifact immutable
+lulus. Production, database, active release, dan rollback target tidak berubah.
+Full monorepo masih diblokir satu fixture SagaBook berbasis waktu di luar scope;
+approval lama deprecated dan recovery/deploy belum diizinkan.
 
 SagaWork active staging runtime `e003a3d` berstatus `CONFIRMED / STAGING_DEPLOYED / NOT_PRODUCTION_ACTIVATED / PILOT_READY_CANDIDATE / BUSINESS_READY=false`. Isolated Hostinger staging memakai synthetic data, MySQL 8.4 dengan 21 migration, dan same-VPS loopback object store khusus acceptance non-PII; protected Vercel Preview `dpl_CxS7HN4JT7SQaKASqcfegtTsxAZF` `READY`, 39-page build, authenticated prototype health/manifest/safe-worker PASS tanpa MySQL/custom domain. Scope tervalidasi mencakup staff no-OTP dan privileged TOTP; people dengan atomic CSV draft import serta guarded Staff lifecycle; scheduling/notes/swap; attendance foto+GPS/private non-PII byte pipeline; paid/unpaid break; default-off unscheduled; supervisor-assisted attendance tanpa fake evidence dengan independent review; serta Staff PWA install guidance dan explicit update dengan exact public-only manifest/icon cache. Reporting HR mempunyai canonical searchable per-staff summary dan shift drill-down untuk net/payable, jumlah/menit telat mentah, early leave, break, overtime candidate/approved, serta blocker. CSV `summary`/`detail` memakai live projection atau locked snapshot yang sama, preview/final metadata, timezone, formula sanitation, checksum, no-store, audit, dan deterministic superseded re-export. Correction/request, partial overtime approval, Reliability 50/30/20, period lock/reopen, retention/recovery, 27/89 unit test, 18-area smoke, security/load/accessibility, manifest 26 file, checksum backup, serta guarded rollback `e003a3d → 9d49565 → e003a3d` lulus. Restricted tracked-source artifact exact runtime `e003a3d` dan OpenAPI implementation/acceptance `85bbbfb` mempunyai provenance/checksum/content-exclusion PASS. Implemented data drift gate mencakup 56 tabel/21 migration; validated OpenAPI 3.1.1 exact-set mencakup 56 path/69 operasi, 39 request components, auth/parameter/idempotency/envelope/error/CSV, source drift verifier, dan pinned independent lint tanpa warning. External SDK/response DTO tidak dipublikasikan karena API protected same-origin. Workflow CI SHA-pinned tersedia dan full local equivalent PASS, tetapi hosted run menunggu private source remote. Loopback store bukan external provider/DPA/offsite/HA dan real employee/photo data dilarang; XLSX/async private export, dedicated coverage/leave/exception report, rehire/offboarding authority, scheduled/backdated termination, training/test isolation, multi-session policy, public route, offsite key escrow, human/device/legal/pilot evidence, named champion/company, serta activation masih blocker. Payroll compliance tidak diklaim.
 
