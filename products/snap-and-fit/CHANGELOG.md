@@ -10,6 +10,24 @@ production, activation, dan business readiness.
 Mock, fixture, preview frontend, dan test lokal bukan bukti provider atau
 production activation.
 
+## 2026-08-25 - Private CloudFront delivery dan AWS face provider contract
+
+- Exact private CloudFront feature `5fe6ab5`, AWS face-provider contract
+  `037d2b4`, dan docs/preview head `dd55663` berstatus `LOCAL_VALIDATED`.
+- S3 staging/production fail-closed tanpa KMS serta private CloudFront domain,
+  key-pair ID, dan API-only signing key. Signed URL dibatasi lima menit dan tidak
+  mengekspos private bucket.
+- AWS adapter mencakup exact event collection, S3 reference index/search,
+  zero-audit-image Liveness, benchmark thresholds, dan safe idempotent collection
+  deletion evidence. Adapter tetap disconnected/default-off dan belum memanggil AWS.
+- Full lint/typecheck/test/build, 59 API, 20 worker, 5 face-provider, 6 media,
+  5 observability, 52 browser dengan dua intentional viewport skip, dan
+  dependency audit nol vulnerability lulus.
+- Protected preview `dpl_8agG8ianbziAht6cbKRRWVwF5DBv` `READY`; PWA/BIB routes
+  200 dan backend 503 fail-closed. Production tidak berubah. Isolated staging,
+  real CloudFront/AWS evidence, encrypted provider mapping/client orchestration,
+  legal/benchmark/device gates, dan multipart >50 MB tetap terbuka.
+
 ## 2026-08-25 - Safe trace propagation dan private API metrics
 
 - Exact private trace feature `3fa3be4`, metrics feature `1c1a81e`, dan

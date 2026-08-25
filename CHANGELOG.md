@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - Snap and Fit CloudFront dan face-provider contract sync
+
+- Produk/area: private media delivery, biometric provider boundary, preview,
+  dan release gating.
+- Informasi `CONFIRMED` berasal dari exact private source `dd55663`, feature
+  `5fe6ab5`/`037d2b4`, local test/build/security evidence, dan protected preview
+  `dpl_8agG8ianbziAht6cbKRRWVwF5DBv` `READY`.
+- Knowledge mencatat CloudFront signer fail-closed serta AWS event-scoped face
+  adapter sebagai contract lokal yang default-off/disconnected, bukan provider
+  activation atau staging evidence.
+- Delivery tetap `LOCAL_VALIDATED`; production tidak berubah dan activation/
+  business readiness `BLOCKED`.
+- Dokumen terdampak: Snap and Fit product/dossier/changelog, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-25 - COYABAG Admin Produk integrity sync
 
 - Produk/area: Dashboard Produk, variant inventory truth, permission, dan

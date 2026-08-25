@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-25 - Snap and Fit private CloudFront dan AWS face contracts
+
+- Exact private source `dd55663` menambahkan five-minute SHA-256 CloudFront
+  signer yang fail-closed untuk S3 staging/production serta AWS Rekognition/
+  Liveness adapter yang dibatasi exact event dan tetap disconnected/default-off.
+- Local contract evidence mencakup 59 API, 20 worker, 5 face-provider, 6 media,
+  5 observability, 52 browser dengan dua intentional skip, full build, dan
+  dependency audit nol vulnerability.
+- Protected preview `dpl_8agG8ianbziAht6cbKRRWVwF5DBv` `READY`; backend tetap
+  503 fail-closed. Isolated staging, AWS/provider/legal/device evidence,
+  client/provider orchestration, dan multipart >50 MB belum lulus. Production
+  tidak berubah.
+
 ## 2026-08-25 - COYABAG Admin Produk integrity
 
 - Exact source `0043c7bfb85698b9894ce01214642ffe59825750` aktif sebagai

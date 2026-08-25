@@ -6,8 +6,9 @@ Visibility: public-safe
 
 SagaWork active staging runtime `7d5ada9` berstatus `CONFIRMED / STAGING_DEPLOYED / NOT_PRODUCTION_ACTIVATED / PILOT_READY_CANDIDATE / BUSINESS_READY=false`. Isolated Hostinger staging memakai synthetic data, MySQL 8.4, dan same-VPS loopback object store khusus acceptance non-PII; Vercel Preview `dpl_AJNsByPfcxvbFEmtk8KvRB92YL6m` `READY`. Scope tervalidasi mencakup staff no-OTP dan privileged TOTP, people termasuk atomic CSV draft import tanpa account/password, scheduling/notes/swap, attendance foto+GPS, private quarantine→ClamAV→metadata-stripped photo bytes, owner status, scoped HR signed view, Staff denial, legal hold/purge certificate, paid/unpaid break dengan payable-vs-net dan missing/long human review, default-off unscheduled draft→HR publish/resolve, correction/request, partial overtime approval, work-hours/score, period lock/reopen, retention/recovery, security/load/accessibility, manifest, backup, serta guarded rollback dua arah. Loopback store bukan external provider/DPA/offsite/HA dan real employee/photo data dilarang; public route, offsite key escrow, human/device/legal/pilot evidence, named champion/company, serta activation masih blocker. Payroll compliance tidak diklaim.
 
-Snap and Fit exact private source head `ae0b8e7` berstatus `CONFIRMED /
-LOCAL_VALIDATED`; private bounded API metrics berasal dari `1c1a81e`, safe
+Snap and Fit exact private source head `dd55663` berstatus `CONFIRMED /
+LOCAL_VALIDATED`; private CloudFront delivery signer berasal dari `5fe6ab5`,
+AWS event-scoped face provider contract dari `037d2b4`, private bounded API metrics berasal dari `1c1a81e`, safe
 trace/outbox propagation dari `3fa3be4`, privacy-safe installable PWA shell berasal dari `141bbb5`,
 private candidate confirmation preview berasal dari `c17d56d`, secure
 multi-photo event checkout berasal dari `c314024`,
@@ -21,7 +22,7 @@ privileged operations feature berasal dari `b09f279`,
 deletion/recovery hardening dari `dbbb814`, candidate/cart authority dari
 `09a55bd`, durable notification worker dari `d964fea`, lifecycle/retention
 worker dari `4d602d9`, dan protected Vercel
-preview `dpl_9HVaRkahXkayYALkmsRxU515teaR`
+preview `dpl_8agG8ianbziAht6cbKRRWVwF5DBv`
 berstatus `READY`.
 Marketplace foto olahraga ini mencakup event, uploader preview 500 JPEG,
 BIB/selfie mock ber-consent, dynamic event landing, event-scoped multi-photo
@@ -55,6 +56,10 @@ Prometheus endpoint default-off membutuhkan secret 32+ karakter, memberikan
 404 identik untuk missing/wrong secret, no-store, dan label route-template tanpa
 raw URL/body/BIB/email/token/PII/media. Live OTLP export, scrape, dan alert
 fire/recovery tetap isolated-staging gate.
+S3 staging/production fail-closed tanpa KMS dan private CloudFront signer;
+five-minute URL tidak mengekspos bucket. AWS face adapter menyediakan exact
+event collection/index/search, zero-audit-image Liveness, threshold, dan safe
+deletion evidence, tetapi tetap disconnected/default-off dan belum memanggil AWS.
 Worker deletion
 sekarang memiliki idempotent partial retry, stale reclaim, DLQ, 30-second
 deadline sweep, safe evidence, controlled terminal-only outbox replay, dan
@@ -81,7 +86,8 @@ mewajibkan atomic Redis shared-window dengan hashed client key dan fail-closed
 dependency audit nol,
 dan 52 browser test lulus; integration service-dependent
 tetap skip terkontrol. Backend staging, isolated VPS, MySQL/Redis/S3/KMS worker
-evidence termasuk cross-instance limiter, multipart/CloudFront, real-provider deletion, external provider/legal gate,
+evidence termasuk cross-instance limiter, real CloudFront trusted-key/origin,
+multipart >50 MB, connected encrypted face orchestration, real-provider deletion, external provider/legal gate,
 load/recovery/device UAT, production activation, dan business readiness belum
 lulus; status activation `NOT_PRODUCTION_ACTIVATED`, business readiness
 `BLOCKED`.

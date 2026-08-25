@@ -12,14 +12,24 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T15:35:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T15:52:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `62f5b05` |
-| Informasi terakhir disinkronkan | COYABAG Admin Produk exact `0043c7b...` pada release `20260825-0043c7b`. |
-| Status sinkronisasi | `PUSHED / PRODUCTION_DEPLOYED / ACTIVATION_BLOCKED / BUSINESS_BLOCKED`. |
-| Konflik | Tidak ada konflik; surface live tetap dibedakan dari commerce activation. |
-| Error | Tidak ada error sinkronisasi; 12 readiness blocker tetap terbuka. |
+| Baseline sebelum pembaruan | `e016f5b` |
+| Informasi terakhir disinkronkan | Snap and Fit private CloudFront signer, disconnected AWS face-provider contract, dan protected preview terbaru. |
+| Status sinkronisasi | `PUSH_PENDING / LOCAL_VALIDATED / NOT_PRODUCTION_ACTIVATED / BUSINESS_BLOCKED`. |
+| Konflik | Tidak ada; adapter contract lokal dibedakan dari provider/staging activation. |
+| Error | Tidak ada error sinkronisasi; external staging/legal/provider/device gates tetap terbuka. |
+
+## File yang berubah pada sinkronisasi ini (Snap and Fit provider contracts)
+
+- `products/snap-and-fit/PRODUCT.md`
+- `products/snap-and-fit/DOSSIER.md`
+- `products/snap-and-fit/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## File yang berubah pada sinkronisasi ini (COYABAG Admin Produk integrity)
 

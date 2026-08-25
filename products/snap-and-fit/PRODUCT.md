@@ -47,7 +47,9 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 - Delivery: `LOCAL_VALIDATED`.
 - Activation: `NOT_PRODUCTION_ACTIVATED`.
 - Business readiness: `BLOCKED`.
-- Exact source head `ae0b8e7` berada di private `main`; private bounded API
+- Exact source head `dd55663` berada di private `main`; CloudFront private
+  delivery signer berasal dari `5fe6ab5`, AWS event-scoped face provider
+  contract dari `037d2b4`, private bounded API
   metrics berasal dari `1c1a81e`, safe trace/outbox propagation dari `3fa3be4`,
   privacy-safe installable PWA shell berasal dari `141bbb5`, private candidate confirmation preview
   berasal dari `c17d56d`, secure multi-photo event
@@ -60,7 +62,7 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   `b09f279`, deletion/recovery hardening dari `dbbb814`, serta candidate/cart
   authority dari `09a55bd`, durable notification worker dari `d964fea`, dan
   lifecycle/retention worker dari `4d602d9`.
-- Protected Vercel preview `dpl_9HVaRkahXkayYALkmsRxU515teaR` berstatus
+- Protected Vercel preview `dpl_8agG8ianbziAht6cbKRRWVwF5DBv` berstatus
   `READY`; manifest, service worker, offline route, dan BIB route 200 tetapi
   backend staging sengaja fail-closed.
 - Full local validation, 59 API test dengan sembilan integrasi eksternal terkontrol
@@ -99,6 +101,13 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   melanjutkan consumer span. OTLP export live tetap gate staging. Private
   Prometheus endpoint default-off memakai secret 32+ karakter, 404 untuk
   missing/wrong secret, no-store, dan label route-template tanpa payload/PII.
+- S3 staging/production sekarang fail-closed tanpa private CloudFront domain,
+  trusted key-pair ID, KMS, dan API-only signing key. Signed URL lima menit tidak
+  mengekspos private bucket; trusted-key/origin runtime proof tetap gate staging.
+- AWS face provider contract kini mencakup deterministic event collection,
+  S3-reference indexing/search, zero-audit-image Face Liveness, threshold
+  configuration, dan safe collection-deletion evidence. Adapter belum tersambung
+  ke client/persistence dan tidak pernah dipanggil; mock/BIB tetap jalur aktif.
 - Customer memiliki library 20 order terbaru yang exact-owner, menampilkan
   status payment/fulfillment dan entitlement, serta dapat menerbitkan ulang link
   social/HiRes lima menit tanpa mengekspos order customer lain.
@@ -112,7 +121,8 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 - Fotografer memiliki antrean exact purchased filename/SLA, acknowledgement,
   signed direct HiRes PUT maksimal 50 MB, dan server-side JPEG/dimension/
   checksum/preview-similarity QA. Pass mengaktifkan entitlement; failure meminta
-  replacement hingga batas lima. Real S3/KMS dan multipart belum tervalidasi.
+  replacement hingga batas lima. Real S3/KMS/CloudFront belum dieksekusi dan
+  multipart di atas 50 MB belum diimplementasikan.
 - Earning view fotografer membaca exact-owner ledger dan membedakan held,
   available, processing, paid, attention, serta reversed. Ringkasan mencakup
   seluruh ledger; daftar dibatasi 200 transaksi. Payout approval tidak diklaim paid.

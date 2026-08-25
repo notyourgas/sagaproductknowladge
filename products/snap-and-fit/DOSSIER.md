@@ -88,6 +88,11 @@ fotografer desktop-optimized.
   untuk worker.
 - Private S3/KMS untuk media dan Rekognition/Liveness Malaysia sebagai target
   biometric provider; mock/degraded adapter menjaga UAT tanpa data nyata.
+- S3 staging/production mewajibkan CloudFront trusted-key signed delivery;
+  API startup fail-closed bila signer private tidak lengkap.
+- AWS face provider contract tersedia default-off untuk create/index/search/
+  liveness/delete pada exact event collection, tetapi client orchestration dan
+  encrypted provider-reference persistence belum diaktifkan.
 - Tokopay Advanced Order, callback verification, dan Check Order sebagai kontrak
   payment; live flag default-off.
 - Vercel tidak terhubung langsung ke MySQL/Redis dan long-running image work
@@ -182,9 +187,12 @@ fotografer desktop-optimized.
   Redis staging belum tersedia; implementasi lokal bukan bukti distributed runtime.
 - Migration read state inbox belum diaplikasikan pada isolated MySQL karena host
   staging belum tersedia; real email delivery juga tetap external gate.
-- Real direct S3/KMS HiRes upload/replacement dan CloudFront delivery belum
-  dieksekusi; multipart di atas batas single PUT 50 MB belum diimplementasikan.
-- Real MySQL/S3/Rekognition deletion adapter dan evidence provider belum ada;
+- Real direct S3/KMS HiRes upload/replacement dan CloudFront trusted-key/origin
+  proof belum dieksekusi; signer contract sudah teruji lokal, sedangkan multipart
+  di atas batas single PUT 50 MB belum diimplementasikan.
+- Rekognition provider contract sudah teruji fake-transport tetapi belum
+  terhubung ke worker/API/client dan belum pernah memanggil AWS. Real MySQL/S3/
+  Rekognition deletion orchestration dan evidence provider belum ada;
   synthetic orchestration bukan bukti penghapusan provider.
 - Test merchant Tokopay dan AWS test provider/legal biometric gate belum
   tersedia; real-money dan production biometric tetap off.
