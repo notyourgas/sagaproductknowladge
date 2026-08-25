@@ -12,16 +12,29 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T15:14:31+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T15:16:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `570df55` |
-| Informasi terakhir disinkronkan | SagaWork private attendance-photo byte pipeline dan active isolated staging `7d5ada9`. |
-| Status sinkronisasi | `STAGING_DEPLOYED / NOT_PRODUCTION_ACTIVATED / PILOT_READY_CANDIDATE / BUSINESS_READY=false`. |
-| Konflik | Tidak ada konflik; loopback same-VPS acceptance tidak disamakan dengan external provider, offsite, real pilot, atau production. |
-| Error | Tidak ada error sinkronisasi; provider/DPA, offsite, device/legal/human UAT, named pilot, public route, dan final Go/No-Go tetap terbuka. |
+| Baseline sebelum pembaruan | `bfdb9b0` |
+| Informasi terakhir disinkronkan | SagaView S288 safe rollback pointer publication exact `51250078...`. |
+| Status sinkronisasi | `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / RECOVERY_APPROVAL_REQUIRED`; production tidak berubah. |
+| Konflik | Tidak ada konflik; recovery inactive dan deployment kandidat tetap approval terpisah. |
+| Error | Tidak ada error sinkronisasi; target rollback masih hilang dan production recovery belum diulang. |
 
-## File yang berubah pada sinkronisasi ini (SagaWork private evidence bytes)
+## File yang berubah pada sinkronisasi ini (SagaView S288 safe pointer publication)
+
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/DOSSIER.md`
+- `products/sagaview/CHANGELOG.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `DECISIONS.md`
+- `GAPS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
+
+## File yang berubah pada sinkronisasi sebelumnya (SagaWork private evidence bytes)
 
 - `products/sagawork/PRODUCT.md`
 - `products/sagawork/DOSSIER.md`

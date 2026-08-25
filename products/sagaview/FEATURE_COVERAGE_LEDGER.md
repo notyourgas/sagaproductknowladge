@@ -1,6 +1,17 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 25 Agustus 2026 14:22 WIB
+Evidence cut-off: 25 Agustus 2026 15:16 WIB
+
+S288 safe rollback pointer publication: exact pushed source
+`51250078fda049fb8960372ef310440979203f9f` menutup concurrency window pada
+runner recovery. Cache final dan production shared storage kini siap sebelum
+pointer rollback inactive dipublikasikan atomik. Focused 6/129, full PHP
+1.015/13.144, build 5.097 modul, audit dependency nol, parser/format/diff,
+release-order security scan, serta Linux exact-runner dan relocation rehearsal
+lulus. Production, database, active release, dan pointer tidak berubah. Status
+`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / RECOVERY_APPROVAL_REQUIRED`;
+target rollback masih hilang. Gap berikutnya hanya approval baru untuk recovery
+inactive dan runtime acceptance; deploy kandidat tetap approval terpisah.
 
 S288 cached-path relocation repair: exact source
 `04e3b2183ad7d7f3c42bebbb4ad99d37e3249354` sudah pushed. Reproduksi Linux

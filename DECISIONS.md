@@ -30,7 +30,7 @@ keputusan pengganti.
 | Keputusan | Andreas menyetujui S288 untuk memulihkan exact release rollback inactive tanpa mengganti active release, menjalankan migration, mengubah database, atau mendeploy kandidat. Deployment kandidat memerlukan persetujuan terpisah. |
 | Alasan | Kandidat tidak aman dipromosikan ketika rollback target hilang, sementara recovery harus memiliki blast radius minimum dan fail-closed. |
 | Alternatif yang dipertimbangkan | Deploy kandidat langsung; membiarkan target hilang; menggabungkan recovery dan deployment dalam satu approval. |
-| Dampak | Recovery dijalankan dua kali sesuai correction cap dan berhenti fail-closed pada deploy gate release pasif. Cleanup menjaga production tetap utuh. Akar cached absolute staging path kemudian ditutup secara disposable pada exact repair `04e3b218...`; retry production tetap memerlukan approval baru karena otorisasi awal sudah habis. |
+| Dampak | Recovery dijalankan dua kali sesuai correction cap dan berhenti fail-closed. Cleanup menjaga production utuh. Akar cached staging path dan pointer-publication concurrency window kemudian ditutup secara disposable pada exact `51250078...`; retry production tetap memerlukan approval baru karena otorisasi awal sudah habis. |
 | Pemberi keputusan | Andreas / founder |
 | Status | `CONFIRMED / EXECUTED_FAIL_CLOSED / ROOT_CAUSE_CLOSED_DISPOSABLE / RECOVERY_APPROVAL_REQUIRED`; kandidat tidak dideploy dan `BUSINESS_READY=false` |
 | Dokumen terkait | [SagaView Product](products/sagaview/PRODUCT.md), [SagaView Dossier](products/sagaview/DOSSIER.md), [SagaView Changelog](products/sagaview/CHANGELOG.md), [Gaps](GAPS.md) |

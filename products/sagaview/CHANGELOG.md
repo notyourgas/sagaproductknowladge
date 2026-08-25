@@ -1,5 +1,30 @@
 # SagaView Changelog
 
+## 2026-08-25 - S288 safe rollback pointer publication
+
+- Klasifikasi: `CONFIRMED / PUSHED / SECURITY_VALIDATED / QA_VALIDATED /
+  DEVOPS_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  RECOVERY_APPROVAL_REQUIRED`; `BUSINESS_READY=false`.
+- Before: pointer rollback inactive dipublikasikan sebelum post-install cache
+  rewarm selesai, sehingga proses rollback paralel berpotensi membaca release
+  saat storage masih sementara.
+- After: exact `51250078fda049fb8960372ef310440979203f9f` menyelesaikan
+  cache final dan production shared-storage restoration terlebih dahulu, baru
+  mempublikasikan pointer atomik pada diagnostic stage terpisah.
+- Evidence: focused red-green 6/6 dan 129 assertion; full PHP 1.015/1.015 dan
+  13.144 assertion; build 5.097 modul; audit Composer/npm nol; parser, focused
+  format, diff, release-order security scan, exact-runner checksum/parser
+  Linux, dan disposable relocation lulus. Active release, database, serta
+  pointer tidak berubah.
+- Provenance: archive SHA-256
+  `1723c5d151f775e0ab9b2568d8115b7dee08283bf142ddd66c96b2129cef495e`
+  dan incremental bundle SHA-256
+  `59187199c07b9239c1868a82c4d8680d4f7881cbb20d6adf8491b437e4f1fb30`
+  tersimpan sebagai dua salinan checksum-identical.
+- Delivery: production recovery dan deploy kandidat tidak dijalankan. Target
+  rollback masih hilang; recovery memerlukan approval eksplisit baru dan
+  deployment kandidat tetap keputusan terpisah.
+
 ## 2026-08-25 - S288 cached-path relocation repair local validated
 
 - Klasifikasi: `CONFIRMED / PUSHED / SECURITY_VALIDATED / QA_VALIDATED /

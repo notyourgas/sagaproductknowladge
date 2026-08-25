@@ -1,5 +1,24 @@
 # SagaView Dossier
 
+## 2026-08-25 - S288 rollback pointer publication hardened
+
+Exact pushed repair `51250078fda049fb8960372ef310440979203f9f` menutup P1
+concurrency window yang ditemukan saat Production Audit. Runner sebelumnya
+memublikasikan pointer inactive sebelum post-install cache rewarm selesai.
+Urutan baru adalah atomic install, cache rewarm pada path final, production
+shared-storage restore, kemudian atomic pointer publication pada stage
+diagnostik terpisah.
+
+Focused red-green 6/6 dengan 129 assertion, full PHP 1.015/1.015 dengan 13.144
+assertion, build 5.097 modul, parser/format/diff, release-order security scan,
+audit Composer/npm nol, exact runner checksum/parser Linux, dan disposable
+relocation rehearsal lulus. Archive source serta incremental bundle mempunyai
+dua salinan checksum-identical. Tidak ada migration, switch active release,
+perubahan database, recovery production, atau deploy kandidat. Status
+`SECURITY_VALIDATED / QA_VALIDATED / DEVOPS_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED / RECOVERY_APPROVAL_REQUIRED`;
+`BUSINESS_READY=false`.
+
 ## 2026-08-25 - S288 cache relocation root cause closed disposable
 
 `CONFIRMED / PUSHED / SECURITY_VALIDATED / QA_VALIDATED / DEVOPS_VALIDATED /

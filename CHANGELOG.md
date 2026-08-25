@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - SagaView S288 safe pointer publication sync
+
+- Produk/area: SagaView inactive rollback recovery dan concurrency safety.
+- Informasi `CONFIRMED` berasal dari exact pushed source
+  `51250078fda049fb8960372ef310440979203f9f`, red-green/full/build/security,
+  dan Linux exact-runner serta relocation evidence.
+- Knowledge mencatat cache/shared-storage finalization harus selesai sebelum
+  atomic inactive rollback pointer publication.
+- Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  RECOVERY_APPROVAL_REQUIRED`; production tidak berubah dan
+  `BUSINESS_READY=false`.
+- Dokumen terdampak: SagaView product/dossier/changelog/ledger, portfolio,
+  master knowledge, decisions, gaps, root changelog, dan sync status.
+
 ## 2026-08-25 - SagaWork private evidence byte pipeline sync
 
 - Produk/area: attendance-photo upload, storage, scanner, viewer, retention, dan release evidence.

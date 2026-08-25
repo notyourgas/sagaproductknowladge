@@ -302,6 +302,16 @@
   smoke. Status `PRODUCTION_DEPLOYED`; readiness 30/42, activation dan business
   readiness tetap `BLOCKED`.
 
+## 2026-08-25 - SagaView S288 rollback pointer concurrency hardening
+
+- Exact `51250078fda049fb8960372ef310440979203f9f` sudah pushed.
+- Pointer rollback inactive sekarang baru dipublikasikan setelah cache final
+  dan shared storage siap, menutup jendela pembacaan release setengah siap.
+- Full PHP 1.015/1.015, focused 6/6, build 5.097 modul, audit dependency nol,
+  parser/format/diff/security order, serta Linux exact-runner/relocation lulus.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  RECOVERY_APPROVAL_REQUIRED`; production tidak berubah.
+
 ## 2026-08-25 - SagaView S288 cache relocation repair
 
 - Exact repair `04e3b2183ad7d7f3c42bebbb4ad99d37e3249354` sudah pushed.
