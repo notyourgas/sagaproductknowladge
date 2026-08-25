@@ -4,6 +4,23 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-26 - Order status and tracking privacy production release
+
+- Klasifikasi: `CONFIRMED` dari exact source
+  `aa6be850e4466cf0ade63250eb1d2ea7ab7e29fb`, immutable Hostinger release
+  `20260826-aa6be85`, rollback `20260826-0a57b75`, dan runtime verification.
+- Timeline customer sekarang hanya mengirim status Indonesia allowlisted;
+  internal reason, actor/correlation identifier, manual shipment note, dan
+  unknown state tidak melewati public API.
+- Satu refresh global memakai order aktif terverifikasi, mendeduplikasi
+  request paralel, mempertahankan order saat gagal, dan melaporkan clipboard
+  denial tanpa sukses palsu.
+- 154 storefront unit, 398 Laravel test dengan satu intentional skip, lima
+  tracking dan sembilan payment browser scenario, responsive/accessibility,
+  security/build/performance, backup/rollback, serta public smoke lulus.
+- Delivery `PRODUCTION_DEPLOYED`; readiness tetap 30/42 dengan 12 blocker.
+  Activation dan business readiness `BLOCKED`; commerce tidak diaktifkan.
+
 ## 2026-08-26 - Payment handoff and safe reconciliation production release
 
 - Klasifikasi: `CONFIRMED` dari exact source

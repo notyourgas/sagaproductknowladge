@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-26 - COYABAG order status and tracking privacy
+
+- Exact source `aa6be850e4466cf0ade63250eb1d2ea7ab7e29fb` aktif pada immutable
+  Hostinger release `20260826-aa6be85` dengan rollback `20260826-0a57b75`.
+- Customer timeline sekarang public-safe dan berbahasa Indonesia; catatan
+  operator serta identifier internal tidak melewati API customer.
+- Satu refresh global mendeduplikasi payment/delivery/order request,
+  mempertahankan detail saat jaringan gagal, dan tidak memberi sukses clipboard
+  palsu. Full regression dan public smoke lulus.
+- Delivery `PRODUCTION_DEPLOYED`; activation/business readiness `BLOCKED`;
+  readiness 30/42 dan commerce tetap fail-closed.
+
 ## 2026-08-26 - Snap and Fit fail-closed repository security scan
 
 - Exact private feature `db4e709` dan documentation head `3a37ae8` menambahkan

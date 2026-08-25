@@ -7,7 +7,7 @@ content COYABAG tanpa menyamakan surface live dengan commerce aktif.
 
 ## Konteks dan status bukti
 
-- Updated: 25 Agustus 2026
+- Updated: 26 Agustus 2026
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `BLOCKED`
 - Business readiness: `BLOCKED`
@@ -78,16 +78,23 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260826-0a57b75` memakai source
+Release production terbaru `20260826-aa6be85` memakai source
+`aa6be850e4466cf0ade63250eb1d2ea7ab7e29fb` dan rollback
+`20260826-0a57b75`. Order Status menyatukan refresh payment, delivery, dan order
+state pada satu kontrol yang memakai order aktif terverifikasi. Request focus/
+click paralel dideduplicasi dan network error mempertahankan detail terakhir.
+Timeline public hanya mengirim copy Indonesia allowlisted; alasan internal,
+actor/correlation identifier, dan manual shipment note tidak melewati customer
+API. Clipboard denial bersifat fail-visible. Full regression, lima tracking dan
+sembilan payment scenario, responsive/accessibility, security, performance,
+backup/rollback, serta public smoke lulus tanpa order atau provider production.
+Readiness tetap 30/42 dengan 12 blocker.
+
+Release sebelumnya `20260826-0a57b75` memakai source
 `0a57b75839808af865f9272027ed5a02fde8de9d` dan rollback
 `20260825-e684ae3`. Checkout selesai dan Order Status memakai action pembayaran
-server-authoritative yang sama. Customer mendapat handoff tab baru, waktu
-status terakhir diperiksa, manual refresh, return-to-tab refresh, dan recovery
-error tanpa sukses palsu. Request refresh/create-session paralel dideduplicasi;
-outcome ambigu tetap membutuhkan review dan redirect wajib HTTPS. Sembilan
-payment acceptance scenario, full regression, responsive/accessibility live,
-security, performance, backup/rollback, dan smoke lulus tanpa order atau
-provider production. Readiness tetap 30/42 dengan 12 blocker.
+server-authoritative, handoff tab baru, status refresh, outcome ambigu
+fail-closed, dan HTTPS-only redirect.
 
 Release sebelumnya `20260825-e684ae3` memakai source
 `e684ae38f19a4e7f17ead395903c3457946ed011` dan rollback

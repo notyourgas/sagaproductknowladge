@@ -12,12 +12,36 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-26T00:51:16+07:00 |
+| Waktu pembaruan terakhir | 2026-08-26T00:59:41+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `90d469e6f87c56ac0eba64e973b4ece5e87cded2` |
-| Informasi terakhir disinkronkan | Snap and Fit fail-closed repository security scan. |
-| Status sinkronisasi | `LOCAL_VALIDATED / NOT_PRODUCTION_ACTIVATED / business readiness BLOCKED`; isolated staging belum tersedia. |
+| Baseline sebelum pembaruan | `bac5b8d74b5c87341d1219b1b002bba11f8cada9` |
+| Informasi terakhir disinkronkan | COYABAG order status dan tracking privacy release. |
+| Status sinkronisasi | `PRODUCTION_DEPLOYED / activation BLOCKED / business readiness BLOCKED`; commerce tetap fail-closed. |
+
+## COYABAG order status and tracking privacy
+
+- Exact source `aa6be850e4466cf0ade63250eb1d2ea7ab7e29fb` aktif pada immutable
+  release `20260826-aa6be85`; rollback `20260826-0a57b75`.
+- Timeline customer hanya memakai status Indonesia public-safe. Catatan
+  operator dan identifier internal tidak melewati customer API.
+- Satu global refresh memakai order aktif terverifikasi, mendeduplikasi
+  request paralel, mempertahankan detail ketika network error, dan memberi
+  feedback clipboard yang jujur.
+- Full regression, browser desktop/mobile, performance, security/build,
+  backup/rollback, serta public smoke lulus tanpa order/provider production.
+- Readiness tetap 30/42 dengan 12 blocker; commerce, activation, dan business
+  readiness tetap blocked.
+
+## File yang berubah pada sinkronisasi ini (COYABAG Order Status)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## Snap and Fit fail-closed repository security scan
 

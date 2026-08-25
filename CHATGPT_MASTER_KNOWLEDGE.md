@@ -3445,16 +3445,23 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release aktif `20260826-0a57b75` menjalankan exact source
+Release aktif `20260826-aa6be85` menjalankan exact source
+`aa6be850e4466cf0ade63250eb1d2ea7ab7e29fb` dengan rollback
+`20260826-0a57b75`. Order Status memiliki satu refresh payment/delivery/order
+yang memakai order aktif terverifikasi, mendeduplikasi request paralel, dan
+mempertahankan detail terakhir saat network error. Timeline customer hanya
+memakai copy Indonesia allowlisted; internal reason, actor/correlation
+identifier, manual shipment note, dan unknown state tidak melewati public API.
+Clipboard denial tidak memberi sukses palsu. Full regression, lima tracking dan
+sembilan payment scenario, responsive/accessibility, security, performance,
+backup/rollback, dan public smoke lulus tanpa order atau provider production;
+readiness tetap 30/42 dengan 12 blocker.
+
+Release sebelumnya `20260826-0a57b75` menjalankan exact source
 `0a57b75839808af865f9272027ed5a02fde8de9d` dengan rollback
-`20260825-e684ae3`. Checkout selesai dan Order Status memakai satu payment
-action server-authoritative. Customer mendapat tab handoff, manual/return-tab
-status refresh, timestamp, dan explicit network recovery tanpa client-side paid
-confirmation. Request paralel dideduplicasi, outcome ambigu fail-closed,
-redirect wajib HTTPS, dan support payload hanya membawa order code. Full
-regression, sembilan payment scenario, responsive/accessibility live,
-security/build, backup/rollback, dan public smoke lulus tanpa order atau
-provider production; readiness tetap 30/42 dengan 12 blocker.
+`20260825-e684ae3`. Checkout selesai dan Order Status memakai payment action
+server-authoritative, tab handoff, status refresh, outcome ambigu fail-closed,
+dan redirect HTTPS-only.
 
 Release sebelumnya `20260825-e684ae3` menjalankan exact source
 `e684ae38f19a4e7f17ead395903c3457946ed011` dengan rollback

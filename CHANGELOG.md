@@ -1,5 +1,25 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-26 - COYABAG order status tracking privacy sync
+
+- Ringkasan: sinkronisasi public-safe timeline, satu global status refresh,
+  active-order credential binding, request deduplication, retained last-known
+  order, dan truthful clipboard failure.
+- Alasan: status customer tidak boleh mengekspos catatan operator atau memakai
+  draft lookup input pada refresh/mutation order aktif.
+- Produk/area: COYABAG Order Status, payment/delivery tracking, privacy,
+  accessibility, reliability, release, dan rollback.
+- Klasifikasi: `CONFIRMED`; source
+  `aa6be850e4466cf0ade63250eb1d2ea7ab7e29fb`, release
+  `20260826-aa6be85`, rollback `20260826-0a57b75`, runtime verification.
+- Production berubah: ya. Delivery `PRODUCTION_DEPLOYED`; activation dan
+  business readiness `BLOCKED`. Readiness 30/42 dengan 12 blocker; commerce
+  tetap fail-closed.
+- Dokumen terdampak: COYABAG product/dossier/changelog, portfolio, master
+  knowledge, root changelog, dan sync status.
+- Blocker/next action: credential/UAT payment, governance/privacy, object
+  storage/media, email/notification, dan owner 2FA tetap terbuka.
+
 ## 2026-08-26 - Snap and Fit repository security scan sync
 
 - Ringkasan: sinkronisasi exact-commit Trivy CI job, verifier-bound scan policy,

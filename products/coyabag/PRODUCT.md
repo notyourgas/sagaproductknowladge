@@ -61,14 +61,16 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260826-0a57b75` dengan source
-  `0a57b75839808af865f9272027ed5a02fde8de9d` melayani production;
-  rollback langsung `20260825-e684ae3` dipertahankan.
-- Checkout selesai dan Order Status memakai satu action pembayaran dari server.
-  Customer dapat membuka gateway pada tab baru, melihat waktu status terakhir
-  diperiksa, dan meminta pemeriksaan ulang tanpa menandai order lunas dari
-  client. Error mempertahankan order, outcome ambigu tidak di-retry otomatis,
-  request paralel dideduplicasi, dan hanya redirect HTTPS yang dapat dibuka.
+- Release aktif `20260826-aa6be85` dengan source
+  `aa6be850e4466cf0ade63250eb1d2ea7ab7e29fb` melayani production;
+  rollback langsung `20260826-0a57b75` dipertahankan.
+- Order Status memiliki satu kontrol refresh untuk payment, delivery, dan order
+  state. Kontrol selalu memakai order aktif yang sudah diverifikasi, request
+  paralel dideduplicasi, dan network error mempertahankan detail terakhir.
+- Timeline customer hanya memakai copy Indonesia yang diizinkan. Catatan
+  operator, actor/correlation identifier, dan manual shipment note tidak
+  melewati public API; unknown state dihilangkan fail-closed. Clipboard denial
+  juga tidak lagi diklaim sebagai berhasil.
 - Checkout Detail memvalidasi nama, penerima, WhatsApp, email, destination
   exact, alamat, kode pos, catatan, dan quote sebelum payment selection. Error
   summary serta error inline memindahkan fokus ke field yang perlu diperbaiki;
