@@ -12,8 +12,9 @@ credential, PII, identifier tenant/perangkat, atau detail provider sensitif.
 - Delivery: `LOCAL_VALIDATED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED`
-- Provenance: exact private source head `3a37ae8`, fail-closed repository
-  security-scan feature `db4e709`, deterministic Nginx staging host-policy
+- Provenance: exact private source/docs head `47e4dce`, 500-file uploader
+  recovery feature `6f57416`, fail-closed repository security-scan feature
+  `db4e709`, deterministic Nginx staging host-policy
   feature `7fdd49a`, encrypted-recovery feature `a6857d1`,
   fail-closed staging-host preflight `fc383e1`, runtime-artifact
   hardening `e64b002`,
@@ -36,10 +37,10 @@ credential, PII, identifier tenant/perangkat, atau detail provider sensitif.
   operations feature `b09f279`,
   deletion/recovery hardening `dbbb814`, candidate/cart authority `09a55bd`,
   durable notification worker `d964fea`, lifecycle/retention worker `4d602d9`,
-  protected Vercel preview `dpl_3PW4rbAek9FijQy9vU3Dfb1UMTUw` dari exact
-  source `e6e27d0`.
-- Hosted CI evidence: exact repository-security feature-head run `32879945400`
-  membuat security job `97906722493` dan validate job `97906722770`. Keduanya
+  protected Vercel preview `dpl_HfF3ksVNy65qhyX36qX4V4RmFQix` dari exact
+  source `8dec486`.
+- Hosted CI evidence: exact uploader-recovery feature-head run `32882305982`
+  membuat validate job `97914495514` dan security job `97914495733`. Keduanya
   berhenti sebelum assignment runner, tanpa runner/nama, steps kosong, dan
   anotasi account payment/spending limit. Run sebelumnya pada host preflight,
   protected-preview docs, MySQL implementation, dan digest-only feature head
@@ -66,8 +67,11 @@ perangkat fotografer sampai ada permintaan HiRes dari transaksi terverifikasi.
 ## User journey utama
 
 1. Organizer membuat event, harga, privacy/retention, station, dan assignment.
-2. Fotografer membuat derivative JPEG 1.800 px, menyimpan manifest lokal, lalu
-   mengunggah preview privat dengan checksum.
+2. Fotografer membuat derivative JPEG 1.800 px. IndexedDB menyimpan exact total
+   manifest dan derivative selesai; setelah reload fotografer memilih ulang
+   folder yang sama untuk memproses hanya file tersisa tanpa duplikasi, lalu
+   mengunggah preview privat dengan checksum. Reset lokal memerlukan konfirmasi
+   dan dikunci setelah server batch terdaftar.
 3. Peserta membuka event, menyetujui notice, lalu mencari melalui BIB atau
    selfie feature-flagged. Confirm/reject terikat exact anonymous search session.
 4. Server membentuk candidate, quote, bundle, dan checkout; client tidak menjadi
@@ -229,9 +233,10 @@ fotografer desktop-optimized.
   migration row, nol orphan deletion task, dan ledger Rp25.000/Rp25.000 seimbang.
   Ini evidence lokal, bukan encrypted off-host restore atau deployed staging.
 - Enam face-provider test, delapan media test, dan lima observability test lulus.
-- 53 Playwright mobile/desktop lulus dan tiga project-specific skip disengaja;
+- 55 Playwright mobile/desktop lulus dan tiga project-specific skip disengaja;
   operator controlled demo, checkout/order library, role workflow, preview upload,
-  multipart interruption/resume, accessibility, dan no-overflow tercakup.
+  exact 500-file partial reload/reselection recovery, multipart interruption/resume,
+  accessibility, dan no-overflow tercakup.
 - Production dependency audit: nol vulnerability yang diketahui.
 - Official liveness package menyatakan React 19 support; exact transitive peer
   metadata ditutup dengan narrow package/peer rule. Frozen install, fresh web
@@ -290,8 +295,8 @@ fotografer desktop-optimized.
 - Cross-platform Node launcher kini menjalankan behavioral recovery preflight di
   dalam setiap `pnpm validate`; standard Git Bash/PATH dideteksi tanpa shell
   interpolation. Full local validation membuktikan launcher dan preflight aktif.
-- Protected remote Linux preview dari clean exact source `e6e27d0` berstatus
-  `READY`. Authenticated smoke membuktikan tujuh web/PWA route 200, header
+- Protected remote Linux preview dari clean exact source `8dec486` berstatus
+  `READY`. Authenticated smoke membuktikan photographer uploader 200, header
   CSP/HSTS/no-sniff/frame-deny/noindex, dan BFF health 503 fail-closed tanpa VPS.
 
 ## Risiko dan gate terbuka
@@ -318,6 +323,9 @@ fotografer desktop-optimized.
 - Real direct/multipart S3/KMS HiRes interruption/resume/replacement, ETag CORS,
   one-day incomplete-upload lifecycle, dan CloudFront trusted-key/origin proof
   belum dieksekusi; seluruh contract dan browser resume baru teruji sintetis lokal.
+- Browser/IndexedDB recovery 500 JPEG sudah tervalidasi mobile dan desktop,
+  tetapi transfer 500 object ke S3, worker processing, quarantine/DLQ, serta
+  watermark publication saat interruption masih gate isolated staging.
 - Rekognition orchestration sudah terhubung lokal dan teruji fake-provider,
   tetapi belum pernah memanggil AWS. Real MySQL/S3/Rekognition indexing,
   liveness, search, deletion, dan evidence provider belum ada; synthetic

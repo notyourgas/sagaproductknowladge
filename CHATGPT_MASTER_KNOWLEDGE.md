@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 26 Agustus 2026 01:24 WIB
+Evidence cut-off: 26 Agustus 2026 01:25 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -56,8 +56,9 @@ observasi minimal dua siklus timer memerlukan approval baru Andreas.
 
 SagaWork exact source/handoff runtime `d36a59fb456106eafa3d8b3e797d42a4aac67a68` berstatus `CONFIRMED / STAGING_DEPLOYED / NOT_PRODUCTION_ACTIVATED / PILOT_READY_CANDIDATE / BUSINESS_READY=false`; identical role-performance application evidence `05e2b1a`. Isolated Hostinger staging memakai synthetic data, MySQL 8.4 dengan 65 application table/23 migration/32 trigger, dan same-VPS loopback object store acceptance non-PII; protected Vercel Preview `dpl_9zvZTjgQBRhHJm5pVXH4rmtqQaBg` `READY`, 44-page build, Deployment Protection, authenticated health/strict nonce CSP/security-header/safe-worker PASS tanpa MySQL/custom domain. Scope tervalidasi mencakup Staff no-OTP dan privileged TOTP; password/session controls; people/CSV/lifecycle; scheduling/notes/swap; attendance foto+GPS/private non-PII byte pipeline; break; default-off unscheduled; assisted attendance; PWA; per-staff/CSV reporting; correction/request; overtime partial approval; Reliability; period lock/reopen; retention/recovery; serta default-off role-performance dengan versioned scorecard, attendance cap 15%, evidence/confidence, second review, own acknowledgement/seven-day appeal, fairness schedule, Payroll denial, dan no automatic employment action. Acceptance meluluskan 33/111 unit test, 20-area smoke, security abuse 9/9, workstation-to-loopback browser/Axe 12/4, isolated load 720/720 dengan p95 `165,5/438,4/331,2 ms`, schema-2 manifest 1.049 file, encrypted restore 65/23/32/24 tombstone/zero resurrection, dan rollback `05e2b1a → 17427f5 → 05e2b1a`. Direct shared-VPS Chromium crash dicatat sebagai runner limitation. Restricted exact archive 1.455.320 byte serta 699-component CycloneDX SBOM mempunyai checksum/provenance PASS dan tidak dipublikasikan. Pilot admission control tetap memakai Andreas-only Ed25519 signing dan exact-set 16 evidence. Andreas sudah mengunci `KANANTA-MADIUN-CANARY-01`: satu lokasi Madiun, 5–10 Staff, 26–28 Agustus 2026, support enabled/default 09.00–18.00 WIB, manual parallel run, dan performance OFF. Restricted charter tersedia tetapi draft admission tetap NO_GO; exact roster, individual champion, 15 evidence lain, real signed receipt, dan activation belum ada. Validated OpenAPI 3.1.1 mencakup 68 path/83 operasi/46 request components. Internal ASVS 5.0 profile tetap 155 pass internal, 79 not applicable, 0 pending internal, 18 pending external, dan 1 risk acceptance; ini bukan sertifikasi/full-Level-2 claim. Private source remote/hosted CI, legal/privacy, independent review, external provider/DPA/offsite key custody, public route, capacity monitoring, human/device evidence, incident/parallel-plan approvals, receipt, dan activation masih blocker. Loopback store tidak menerima real employee/photo/performance data; payroll compliance dan real-staff performance validity tidak diklaim.
 
-Snap and Fit exact private source head `3a37ae8` berstatus `CONFIRMED /
-LOCAL_VALIDATED`; fail-closed repository security-scan feature berasal dari
+Snap and Fit exact private source/docs head `47e4dce` berstatus `CONFIRMED /
+LOCAL_VALIDATED`; deterministic 500-file uploader recovery feature berasal
+dari `6f57416`, fail-closed repository security-scan feature berasal dari
 `db4e709`, deterministic Nginx staging host-policy feature berasal dari
 `7fdd49a`, encrypted-recovery feature berasal dari `a6857d1`,
 fail-closed staging-host preflight berasal dari `fc383e1`,
@@ -89,7 +90,7 @@ privileged operations feature berasal dari `b09f279`,
 deletion/recovery hardening dari `dbbb814`, candidate/cart authority dari
 `09a55bd`, durable notification worker dari `d964fea`, lifecycle/retention
 worker dari `4d602d9`, dan protected Vercel
-preview `dpl_3PW4rbAek9FijQy9vU3Dfb1UMTUw` dari exact source `e6e27d0`
+preview `dpl_HfF3ksVNy65qhyX36qX4V4RmFQix` dari exact source `8dec486`
 berstatus `READY`.
 Delapan shell script operasional lulus Git Bash `bash -n`; staging Compose lulus static
 interpolation dengan official checksum-verified Docker Compose v5.5.0 dan
@@ -114,11 +115,11 @@ Runtime release kini dipisah menjadi API, worker, dan one-shot migration/seed
 image. First-party package file allowlist, clean output, modern injected-workspace
 deploy, manifest sanitization, non-root user, dan link-containment hardener
 lulus; tiga artifact aktual juga lulus runtime import. Forced-uncached test graph
-menutup race Prisma build/test, full validation dan 53 browser pass lulus, peer
+menutup race Prisma build/test, full validation dan 55 browser pass lulus, peer
 check bersih, serta production audit nol vulnerability. Bukti ini belum sama
 dengan Linux image build/run/scan atau emitted SBOM/provenance.
-Exact repository-security feature-head GitHub Actions run `32879945400`
-membuat security job `97906722493` dan validate job `97906722770`; keduanya
+Exact uploader-recovery feature-head GitHub Actions run `32882305982`
+membuat validate job `97914495514` dan security job `97914495733`; keduanya
 berhenti tanpa runner/nama dan tanpa satu pun step karena account payment/spending-
 limit gate; run sebelumnya pada host preflight, protected-preview docs, MySQL
 implementation, dan digest-only feature head menunjukkan pola yang sama. Ini
@@ -160,8 +161,8 @@ serta 24 active worker test; skip tersisa hanya Redis/BullMQ. Dump sintetis
 pulih ke database kedua dengan 51 tabel, recovery schema lengkap, nol orphan
 deletion task, dan ledger seimbang. Ini menutup kompatibilitas MySQL lokal,
 bukan Redis/Linux container/isolated staging/off-host recovery.
-Vercel remote Linux build untuk `e6e27d0` lulus dan authenticated protected
-smoke membuktikan tujuh web/PWA route 200, security headers, serta BFF health
+Vercel remote Linux build untuk `8dec486` lulus dan authenticated protected
+smoke membuktikan photographer uploader 200, security headers, serta BFF health
 fail-closed 503. Vercel CLI
 58.4.4 local Windows prebuilt packaging belum menjadi release path karena gagal
 memetakan static `/account/orders` setelah Next build sukses.
@@ -174,7 +175,7 @@ dan audit dependency. Ini bukan encrypted off-host staging restore evidence.
 Node launcher lintas-platform tanpa shell interpolation; Windows standard Git
 Bash/PATH terdeteksi dan full local gate lulus. Hosted CI tetap bukan evidence.
 Official liveness React peer metadata ditutup dengan narrow exact-edge rule;
-frozen install, fresh web build, full validation, 53 browser tests, audit, dan
+frozen install, fresh web build, full validation, 55 browser tests, audit, dan
 peer check lulus. Ini bukan real-device camera evidence.
 Detached clean checkout exact remote pada Windows `core.autocrlf=true` juga
 lulus instruksi README memakai non-admin `corepack pnpm`, frozen install, copy
@@ -191,6 +192,14 @@ operator-assisted tanpa klaim uang bergerak, provider-cleared payout
 maker-checker, support grant 60 menit, dan deletion fan-out. Organizer memiliki
 exact-organization aggregate inventory/order/fulfillment/reconciliation/finance
 metrics tanpa customer PII dan dengan gross/cleared/posted state terpisah.
+Uploader 500 JPEG kini menyimpan exact intended total di IndexedDB v2. Partial
+reload menampilkan kembali `N/500`; same-folder reselection memproses source
+yang belum selesai tanpa menggandakan derivative, dan local reset memerlukan
+konfirmasi serta dikunci setelah authoritative server batch aktif. Acceptance
+500 synthetic JPEG lulus mobile/desktop dan full suite menjadi 55 pass dengan
+tiga intentional skip. Bukti ini hanya menutup browser-local recovery; real
+500-object S3/worker interruption, quarantine/DLQ, dan watermark publication
+tetap isolated-staging gate.
 Photographer
 memiliki exact-owner earning view dengan full-ledger held/available/processing/
 paid/attention/reversed summary dan bounded history; approval tidak diklaim paid.

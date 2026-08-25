@@ -1,5 +1,24 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-26 - Snap and Fit 500-file uploader recovery sync
+
+- Ringkasan: sinkronisasi exact-total IndexedDB recovery, same-folder resume,
+  duplicate skipping, guarded local reset, 500-file browser acceptance, dan
+  protected preview terbaru.
+- Alasan: klaim recovery 500 foto sebelumnya belum mempunyai direct browser
+  proof dan partial reload kehilangan intended total.
+- Produk/area: Snap and Fit photographer uploader, UX, frontend, QA,
+  deployment preview, traceability, dan readiness.
+- Klasifikasi: `CONFIRMED`; private feature `6f57416`, source/docs head
+  `47e4dce`, protected preview `dpl_HfF3ksVNy65qhyX36qX4V4RmFQix`, 55 browser
+  pass dengan tiga intentional skip, dan hosted run `32882305982` account-gated.
+- Production berubah: tidak. Delivery tetap `LOCAL_VALIDATED`; activation
+  `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED`.
+- Dokumen terdampak: Snap and Fit product/dossier/changelog, portfolio, master
+  knowledge, root changelog, dan sync status.
+- Blocker/next action: isolated VPS, real 500-object S3/worker recovery,
+  functioning hosted runner, provider/recovery/load/security/device gates.
+
 ## 2026-08-26 - SagaView S289 authenticated read-only UAT harness sync
 
 - Ringkasan: sinkronisasi harness authenticated operator UAT SagaView-only

@@ -10,6 +10,24 @@ production, activation, dan business readiness.
 Mock, fixture, preview frontend, dan test lokal bukan bukti provider atau
 production activation.
 
+## 2026-08-26 - Deterministic 500-file uploader recovery
+
+- Exact private feature `6f57416`; evidence/docs head `47e4dce`.
+- IndexedDB v2 mempertahankan exact target total setelah partial reload.
+  Reselect folder yang sama melanjutkan hanya derivative yang hilang dan
+  melewati source yang sudah selesai tanpa duplikasi; reset lokal memerlukan
+  konfirmasi dan dikunci setelah server batch aktif.
+- Acceptance membuat 500 synthetic JPEG, melakukan pause/reload/reselection,
+  mencapai tepat 500/500, reload ulang, deduplication, dan reset pada mobile
+  serta desktop. Full suite lulus 55 browser test dengan tiga intentional skip;
+  audit dependency produksi dan peer check bersih.
+- Protected preview `dpl_HfF3ksVNy65qhyX36qX4V4RmFQix` dari exact source
+  `8dec486` `READY`; uploader 200 dan backend fail-closed 503. Hosted run
+  `32882305982` tetap account-gated sebelum runner/step.
+- Klasifikasi `CONFIRMED`; delivery tetap `LOCAL_VALIDATED`, production dan
+  activation tidak berubah, business readiness tetap `BLOCKED`. Real 500-object
+  S3/worker interruption recovery masih gate isolated staging.
+
 ## 2026-08-26 - Fail-closed repository security scan
 
 - Exact private feature `db4e709`; documentation/evidence head `3a37ae8`.

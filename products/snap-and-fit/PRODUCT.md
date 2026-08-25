@@ -30,7 +30,8 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 
 - Event draft, readiness, publish, dan tutup penjualan.
 - Assignment fotografer dan uploader desktop hingga 500 JPEG dengan manifest,
-  checksum, derivative mobile, pause/resume, dan private upload intent.
+  checksum, derivative mobile, pause/resume, exact-total recovery setelah reload,
+  same-folder resume tanpa duplikasi, guarded local reset, dan private upload intent.
 - Landing event dinamis per slug, pencarian BIB, selfie mock ber-consent,
   candidate gallery, multi-photo cart, quote server-side, dan checkout.
 - Harga event pilot Rp25.000 satu foto, Rp60.000 tiga foto, dan Rp99.000 semua
@@ -47,8 +48,9 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 - Delivery: `LOCAL_VALIDATED`.
 - Activation: `NOT_PRODUCTION_ACTIVATED`.
 - Business readiness: `BLOCKED`.
-- Exact private source head `3a37ae8`; fail-closed repository security-scan
-  feature berasal dari `db4e709`, deterministic Nginx staging host-policy
+- Exact private source/docs head `47e4dce`; 500-file uploader recovery feature
+  berasal dari `6f57416`, fail-closed repository security-scan feature berasal
+  dari `db4e709`, deterministic Nginx staging host-policy
   feature berasal dari `7fdd49a`, streaming encrypted-recovery feature
   berasal dari `a6857d1`, fail-closed staging-host preflight berasal dari
   `fc383e1`, runtime-artifact hardening berasal dari `e64b002`,
@@ -79,17 +81,16 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   `b09f279`, deletion/recovery hardening dari `dbbb814`, serta candidate/cart
   authority dari `09a55bd`, durable notification worker dari `d964fea`, dan
   lifecycle/retention worker dari `4d602d9`.
-- Protected Vercel preview `dpl_3PW4rbAek9FijQy9vU3Dfb1UMTUw` dari exact
-  source `e6e27d0` berstatus `READY`; web shell, manifest, service worker,
-  offline, BIB, selfie-capture, dan photographer jobs route 200 tetapi
-  backend staging sengaja fail-closed.
+- Protected Vercel preview `dpl_HfF3ksVNy65qhyX36qX4V4RmFQix` dari exact
+  source `8dec486` berstatus `READY`; updated photographer uploader route 200
+  dengan defensive headers, tetapi backend staging sengaja fail-closed 503.
 - Full no-service validation, 63 API test dengan sembilan integrasi eksternal
   terkontrol skip dan 21 worker test dengan empat integrasi service-dependent
   skip lulus. Disposable loopback MySQL 8.4.9 dari database kosong mengaplikasikan
   18/18 migration dan menaikkan evidence authoritative menjadi 2 database test,
   71 API pass dengan satu Redis-only skip, serta 24 worker pass dengan satu
   Redis/BullMQ-only skip. Enam face-provider test, delapan media test, lima
-  observability test, 53 browser test
+  observability test, 55 browser test
   dengan tiga project-specific skip, seluruh build, dan audit dependency produksi
   nol vulnerability lulus. Delapan shell script operasional juga lulus Git Bash `bash -n`, dan
   staging Compose lulus static interpolation dengan official checksum-verified
@@ -118,14 +119,14 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   dependency produksi nol vulnerability lulus. Container workflow dikonfigurasi
   menghasilkan BuildKit SBOM/provenance dan manifest digest; image belum
   dibangun/dijalankan sehingga emission/runtime evidence tetap gate.
-- Hosted GitHub Actions run `32879945400` pada exact repository-security
-  feature head `db4e709` membuat security job `97906722493` dan validate job
-  `97906722770`; keduanya gagal sebelum satu pun step berjalan, tanpa runner/
+- Hosted GitHub Actions run `32882305982` pada exact uploader-recovery feature
+  `6f57416` membuat validate job `97914495514` dan security job
+  `97914495733`; keduanya gagal sebelum satu pun step berjalan, tanpa runner/
   nama runner dan dengan steps kosong;
   anotasi menyatakan account payment/spending-limit gate. Run sebelumnya pada
   `fc383e1`, `176cf15`, `4384948`, dan `d0f3b7d` memiliki pola yang sama.
   Ini adalah bukti blocker hosted-runner/account, bukan kegagalan source gate.
-  Security feature-head run menjadi evidence hosted terbaru. Branch protection private
+  Uploader feature-head run menjadi evidence hosted terbaru. Branch protection private
   repository juga tetap plan-gated (API mengembalikan 403), sehingga
   required-check enforcement belum dapat diklaim.
 - Deploy staging kini menolak sebelum membaca konfigurasi Compose atau menarik
@@ -190,8 +191,8 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   no-store, noindex/noimageindex/noarchive, dan tidak mengekspos bucket/key.
   Local/test memakai JPEG sintetis yang dilabel jelas, bukan foto peserta nyata.
 - Preview terbaru dibangun ulang melalui Vercel remote Linux build dari exact
-  source `e6e27d0`. Web/PWA route dan security headers lulus
-  smoke terproteksi; BFF health sengaja 503 sampai isolated backend tersedia.
+  source `8dec486`. Photographer uploader dan security headers lulus smoke
+  terproteksi; BFF health sengaja 503 sampai isolated backend tersedia.
   Local Windows prebuilt packaging belum menjadi release path karena CLI 58.4.4
   gagal memetakan static `/account/orders` setelah Next build sukses.
 - Recovery verifier kini memakai tabel authoritative `auth_user`, bukan nama

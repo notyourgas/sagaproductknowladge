@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-26 - Snap and Fit 500-file uploader recovery
+
+- Exact private feature `6f57416` mempertahankan exact manifest total di
+  IndexedDB, melanjutkan missing derivatives setelah same-folder reselection,
+  mencegah duplikasi, dan mengunci reset lokal setelah server batch aktif.
+- Acceptance 500 synthetic JPEG lulus mobile/desktop; full browser suite 55
+  pass dengan tiga intentional skip, build/validation dan dependency/peer audit
+  lulus.
+- Protected preview `dpl_HfF3ksVNy65qhyX36qX4V4RmFQix` dari source `8dec486`
+  `READY`; uploader 200 dan backend fail-closed 503. Delivery tetap
+  `LOCAL_VALIDATED`; real S3/worker 500-object proof masih external gate.
+
 ## 2026-08-26 - SagaView S289 authenticated UAT safety harness
 
 - Exact source `701d008329b5e2fe482226d45cc7ba8750fa6fcc` membuat

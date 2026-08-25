@@ -12,12 +12,36 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-26T01:24:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-26T01:25:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `070d3a62ef9b846139e30c5fb28494bd4c090037` |
-| Informasi terakhir disinkronkan | SagaView S289 authenticated read-only operator UAT harness. |
-| Status sinkronisasi | `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production dan activation tidak berubah. |
+| Baseline sebelum pembaruan | `012763824177100b6adea7d5a5d596b4f7924517` |
+| Informasi terakhir disinkronkan | Snap and Fit deterministic 500-file uploader recovery dan protected preview. |
+| Status sinkronisasi | `PUSHED / LOCAL_VALIDATED / protected preview deployed`; production dan activation tidak berubah. |
+
+## Snap and Fit deterministic 500-file uploader recovery
+
+- Exact private feature `6f57416`; source/docs head `47e4dce`.
+- IndexedDB v2 mempertahankan exact total, same-folder reselection melanjutkan
+  hanya source yang hilang tanpa duplikasi, dan local reset confirmation-gated
+  serta dikunci setelah server batch aktif.
+- Acceptance 500 synthetic JPEG lulus mobile/desktop; full browser suite 55
+  pass dengan tiga intentional skip, full validation, production dependency
+  audit nol vulnerability, dan peer check lulus.
+- Protected preview `dpl_HfF3ksVNy65qhyX36qX4V4RmFQix` dari source `8dec486`
+  `READY`; uploader 200 dengan defensive headers, backend health fail-closed 503.
+- Hosted run `32882305982` tidak mendapat runner/step karena account payment/
+  spending-limit gate. Real S3/worker 500-object recovery tetap external gate.
+
+## File yang berubah pada sinkronisasi ini (Snap and Fit uploader recovery)
+
+- `products/snap-and-fit/PRODUCT.md`
+- `products/snap-and-fit/DOSSIER.md`
+- `products/snap-and-fit/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaView S289 authenticated read-only operator UAT harness
 
