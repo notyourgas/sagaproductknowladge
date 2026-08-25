@@ -12,7 +12,7 @@ credential, PII, identifier tenant/perangkat, atau detail provider sensitif.
 - Delivery: `LOCAL_VALIDATED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED`
-- Provenance: exact private source head `4384948`, MySQL 8.4 clean-room
+- Provenance: exact private documentation head `176cf15`, MySQL 8.4 clean-room
   compatibility fix `4384948`, digest-only application
   release feature `d0f3b7d`, immutable supply-chain hardening `ee45e56`, authoritative load
   fixture `4f9d8d3`, ShellCheck acceptance
@@ -29,11 +29,13 @@ credential, PII, identifier tenant/perangkat, atau detail provider sensitif.
   operations feature `b09f279`,
   deletion/recovery hardening `dbbb814`, candidate/cart authority `09a55bd`,
   durable notification worker `d964fea`, lifecycle/retention worker `4d602d9`,
-  protected Vercel preview `dpl_E749gUQc7iVtGCauGvVLa1swk59j`.
-- Hosted CI evidence: exact current-head run `32847799797` berhenti sebelum
+  protected Vercel preview `dpl_CeGgE8rxJX58qQpTGzdqUoPc6iQn` dari implementation
+  source `4384948`.
+- Hosted CI evidence: exact documentation-head run `32848538160` berhenti sebelum
   assignment runner dengan steps kosong dan anotasi account payment/spending
-  limit. Run `32844518323` pada digest-only feature head menunjukkan pola yang
-  sama. Local/static gates tetap lulus, tetapi hosted run tidak;
+  limit. Run `32847799797` pada MySQL implementation head dan `32844518323` pada
+  digest-only feature head menunjukkan pola yang sama. Local/static gates tetap
+  lulus, tetapi hosted run tidak;
   protected-main enforcement juga belum
   tersedia karena branch-protection API private repository plan-gated (403).
 
@@ -219,12 +221,15 @@ fotografer desktop-optimized.
   regression, full validation, dan production dependency audit lulus. Build,
   scan, emitted BuildKit SBOM/provenance verification, pull, dan runtime image
   tetap staging gate.
-- Preview protected `dpl_E749gUQc7iVtGCauGvVLa1swk59j` dari baseline `7b44101`
+- Preview protected `dpl_CeGgE8rxJX58qQpTGzdqUoPc6iQn` dari exact implementation source `4384948`
   berstatus `READY`; manifest, service worker, offline, BIB, selfie-capture, dan
   photographer jobs route 200 serta
   backend fail-closed 503. Connected metrics panel
   hanya browser-validated lokal karena backend preview tidak terhubung. Backend
   authoritative belum terhubung.
+- Remote Linux build menjadi deployment path preview yang terbukti. Vercel CLI
+  58.4.4 local Windows `--prebuilt` selesai membangun Next tetapi gagal memetakan
+  static `/account/orders`; artefak prebuilt Windows belum boleh dipromosikan.
 
 ## Risiko dan gate terbuka
 

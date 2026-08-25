@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 25 Agustus 2026 19:29 WIB
+Evidence cut-off: 25 Agustus 2026 19:37 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -16,7 +16,7 @@ approval lama deprecated dan recovery/deploy belum diizinkan.
 
 SagaWork active staging runtime `e003a3d` berstatus `CONFIRMED / STAGING_DEPLOYED / NOT_PRODUCTION_ACTIVATED / PILOT_READY_CANDIDATE / BUSINESS_READY=false`. Isolated Hostinger staging memakai synthetic data, MySQL 8.4 dengan 21 migration, dan same-VPS loopback object store khusus acceptance non-PII; protected Vercel Preview `dpl_CxS7HN4JT7SQaKASqcfegtTsxAZF` `READY`, 39-page build, authenticated prototype health/manifest/safe-worker PASS tanpa MySQL/custom domain. Scope tervalidasi mencakup staff no-OTP dan privileged TOTP; people dengan atomic CSV draft import serta guarded Staff lifecycle; scheduling/notes/swap; attendance foto+GPS/private non-PII byte pipeline; paid/unpaid break; default-off unscheduled; supervisor-assisted attendance tanpa fake evidence dengan independent review; serta Staff PWA install guidance dan explicit update dengan exact public-only manifest/icon cache. Reporting HR mempunyai canonical searchable per-staff summary dan shift drill-down untuk net/payable, jumlah/menit telat mentah, early leave, break, overtime candidate/approved, serta blocker. CSV `summary`/`detail` memakai live projection atau locked snapshot yang sama, preview/final metadata, timezone, formula sanitation, checksum, no-store, audit, dan deterministic superseded re-export. Correction/request, partial overtime approval, Reliability 50/30/20, period lock/reopen, retention/recovery, 27/89 unit test, 18-area smoke, security/load/accessibility, manifest 26 file, checksum backup, serta guarded rollback `e003a3d → 9d49565 → e003a3d` lulus. Restricted tracked-source artifact exact runtime `e003a3d`, OpenAPI implementation/acceptance `85bbbfb`, dan signed-admission acceptance `a36ac8e` mempunyai provenance/checksum/content-exclusion PASS; artifact admission belum terdeploy. Pilot admission control exact `3bcdf06`/`a36ac8e` memakai Andreas-only Ed25519 signing dan public-key verifier, exact source/runtime/preview binding, maksimum tujuh hari, serta exact-set 16 evidence Gate A/B/C/E. Dua belas synthetic security/contract cases lulus, tetapi real receipt/evidence belum ada dan Gate E tetap `NOT_STARTED_EXTERNAL`. Implemented data drift gate mencakup 56 tabel/21 migration; validated OpenAPI 3.1.1 exact-set mencakup 56 path/69 operasi, 39 request components, auth/parameter/idempotency/envelope/error/CSV, source drift verifier, dan pinned independent lint tanpa warning. External SDK/response DTO tidak dipublikasikan karena API protected same-origin. Workflow CI SHA-pinned tersedia dan full local equivalent PASS, tetapi hosted run menunggu private source remote. Loopback store bukan external provider/DPA/offsite/HA dan real employee/photo data dilarang; XLSX/async private export, dedicated coverage/leave/exception report, rehire/offboarding authority, scheduled/backdated termination, training/test isolation, multi-session policy, public route, offsite key escrow, human/device/legal/pilot evidence, named champion/company, real signed admission receipt, serta activation masih blocker. Payroll compliance tidak diklaim.
 
-Snap and Fit exact private source head `4384948` berstatus `CONFIRMED /
+Snap and Fit exact private documentation head `176cf15` berstatus `CONFIRMED /
 LOCAL_VALIDATED`; MySQL 8.4 clean-room compatibility fix berasal dari `4384948`,
 sedangkan digest-only application release feature berasal dari `d0f3b7d`,
 immutable supply-chain hardening berasal dari `ee45e56`,
@@ -41,7 +41,7 @@ privileged operations feature berasal dari `b09f279`,
 deletion/recovery hardening dari `dbbb814`, candidate/cart authority dari
 `09a55bd`, durable notification worker dari `d964fea`, lifecycle/retention
 worker dari `4d602d9`, dan protected Vercel
-preview `dpl_E749gUQc7iVtGCauGvVLa1swk59j`
+preview `dpl_CeGgE8rxJX58qQpTGzdqUoPc6iQn` dari implementation source `4384948`
 berstatus `READY`.
 Lima shell script lulus Git Bash `bash -n`; staging Compose lulus static
 interpolation dengan official checksum-verified Docker Compose v5.5.0 dan
@@ -62,9 +62,10 @@ reference verifier. Actionlint, enam-file ShellCheck, Compose immutable set,
 release preflight, full validation, serta production dependency audit nol lulus;
 workflow BuildKit SBOM/provenance/digest tersedia, tetapi hosted image build,
 emission verification, scan, pull, dan runtime tetap staging gate.
-Exact current-head GitHub Actions run `32847799797` berhenti sebelum runner
+Exact documentation-head GitHub Actions run `32848538160` berhenti sebelum runner
 ditetapkan dan tanpa satu pun step karena account payment/spending-limit gate;
-run `32844518323` pada digest-only feature head menunjukkan pola yang sama. Ini
+run `32847799797` pada MySQL implementation head dan `32844518323` pada digest-only
+feature head menunjukkan pola yang sama. Ini
 hosted-runner/account blocker, bukan source regression. Required-check
 enforcement juga belum tersedia karena branch-protection API untuk private
 repository masih plan-gated (403).
@@ -74,6 +75,10 @@ serta 24 active worker test; skip tersisa hanya Redis/BullMQ. Dump sintetis
 pulih ke database kedua dengan 51 tabel, recovery schema lengkap, nol orphan
 deletion task, dan ledger seimbang. Ini menutup kompatibilitas MySQL lokal,
 bukan Redis/Linux container/isolated staging/off-host recovery.
+Vercel remote Linux build untuk `4384948` lulus dan protected smoke membuktikan
+web shell/PWA 200, security headers, serta BFF health fail-closed 503. Vercel CLI
+58.4.4 local Windows prebuilt packaging belum menjadi release path karena gagal
+memetakan static `/account/orders` setelah Next build sukses.
 Official liveness React peer metadata ditutup dengan narrow exact-edge rule;
 frozen install, fresh web build, full validation, 53 browser tests, audit, dan
 peer check lulus. Ini bukan real-device camera evidence.

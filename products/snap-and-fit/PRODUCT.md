@@ -47,7 +47,7 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 - Delivery: `LOCAL_VALIDATED`.
 - Activation: `NOT_PRODUCTION_ACTIVATED`.
 - Business readiness: `BLOCKED`.
-- Exact private `main` head `4384948`; MySQL 8.4 clean-room compatibility fix
+- Exact private documentation head `176cf15`; MySQL 8.4 clean-room compatibility fix
   berasal dari `4384948`, sedangkan digest-only application release feature
   berasal dari `d0f3b7d`, immutable supply-chain hardening berasal dari `ee45e56`,
   authoritative load fixture berasal dari `4f9d8d3`, ShellCheck
@@ -71,8 +71,8 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   `b09f279`, deletion/recovery hardening dari `dbbb814`, serta candidate/cart
   authority dari `09a55bd`, durable notification worker dari `d964fea`, dan
   lifecycle/retention worker dari `4d602d9`.
-- Protected Vercel preview `dpl_E749gUQc7iVtGCauGvVLa1swk59j` dari baseline
-  `7b44101` berstatus `READY`; manifest, service worker, offline, BIB,
+- Protected Vercel preview `dpl_CeGgE8rxJX58qQpTGzdqUoPc6iQn` dari exact
+  implementation source `4384948` berstatus `READY`; manifest, service worker, offline, BIB,
   selfie-capture, dan photographer jobs route 200 tetapi
   backend staging sengaja fail-closed.
 - Full no-service validation, 63 API test dengan sembilan integrasi eksternal
@@ -110,10 +110,11 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   dependency produksi nol vulnerability lulus. Container workflow dikonfigurasi
   menghasilkan BuildKit SBOM/provenance dan manifest digest; image belum
   dibangun/dijalankan sehingga emission/runtime evidence tetap gate.
-- Hosted GitHub Actions run `32847799797` pada exact current head `4384948`
+- Hosted GitHub Actions run `32848538160` pada exact documentation head `176cf15`
   gagal sebelum satu pun step berjalan: runner belum ditetapkan dan steps kosong;
-  anotasi menyatakan account payment/spending-limit gate. Run sebelumnya
-  `32844518323` pada feature head `d0f3b7d` memiliki pola yang sama.
+  anotasi menyatakan account payment/spending-limit gate. Run implementation
+  `32847799797` pada `4384948` dan run `32844518323` pada feature head `d0f3b7d`
+  memiliki pola yang sama.
   Ini adalah bukti blocker hosted-runner/account, bukan kegagalan source gate.
   Current-head run menjadi evidence hosted terbaru. Branch protection private
   repository juga tetap plan-gated (API mengembalikan 403), sehingga
@@ -140,6 +141,11 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   published dengan approved watermarked preview; response bersifat private,
   no-store, noindex/noimageindex/noarchive, dan tidak mengekspos bucket/key.
   Local/test memakai JPEG sintetis yang dilabel jelas, bukan foto peserta nyata.
+- Preview terbaru dibangun ulang melalui Vercel remote Linux build dari exact
+  implementation source `4384948`. Web/PWA route dan security headers lulus
+  smoke terproteksi; BFF health sengaja 503 sampai isolated backend tersedia.
+  Local Windows prebuilt packaging belum menjadi release path karena CLI 58.4.4
+  gagal memetakan static `/account/orders` setelah Next build sukses.
 - Installable PWA memakai navigation network-first dan offline fallback yang
   menyatakan tidak ada aksi terkirim. Cache Storage hanya mengizinkan offline
   shell, public icon, serta same-origin static asset non-private; API, auth,

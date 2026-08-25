@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - Snap and Fit protected preview refresh sync
+
+- Produk/area: exact source provenance, Vercel preview, PWA smoke, security
+  headers, backend fail-closed boundary, dan deploy-path limitation.
+- Informasi `CONFIRMED` berasal dari documentation head `176cf15`, implementation
+  source `4384948`, deployment `dpl_CeGgE8rxJX58qQpTGzdqUoPc6iQn`, serta hosted
+  run `32848538160`.
+- Remote Linux preview `READY`; web/PWA smoke 200 dan backend health 503 sesuai
+  boundary. Windows local prebuilt route mapping belum tervalidasi sebagai release path.
+- Production tidak berubah. Delivery tetap `LOCAL_VALIDATED`; isolated staging,
+  activation, dan business readiness tetap blocked.
+- Dokumen terdampak: Snap and Fit product/dossier/changelog, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-25 - Snap and Fit MySQL 8.4 clean-room sync
 
 - Produk/area: MySQL migration, seed, authoritative persistence, HiRes fixture,

@@ -10,6 +10,19 @@ production, activation, dan business readiness.
 Mock, fixture, preview frontend, dan test lokal bukan bukti provider atau
 production activation.
 
+## 2026-08-25 - Exact-head protected preview refresh
+
+- Exact private documentation head `176cf15`; preview implementation source
+  tetap exact `4384948`.
+- Protected Vercel deployment `dpl_CeGgE8rxJX58qQpTGzdqUoPc6iQn` berstatus
+  `READY`; web shell, manifest, service worker, offline, BIB, selfie capture, dan
+  photographer jobs route 200 dengan CSP/HSTS/no-sniff/frame-deny/noindex.
+- Backend health sengaja fail-closed 503 sampai isolated VPS tersedia. Local
+  Windows prebuilt packaging bukan release path karena route-mapping gagal setelah
+  Next build sukses; remote Linux build lulus.
+- Hosted run `32848538160` juga berhenti sebelum runner/step karena account
+  payment/spending-limit gate. Delivery tetap `LOCAL_VALIDATED`.
+
 ## 2026-08-25 - MySQL 8.4 clean-room compatibility
 
 - Exact private source `4384948` berstatus `LOCAL_VALIDATED`.

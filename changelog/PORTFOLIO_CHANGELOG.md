@@ -1,5 +1,13 @@
 # Portfolio Changelog
 
+## 2026-08-25 - Snap and Fit exact-head protected preview
+
+- Protected Vercel deployment `dpl_CeGgE8rxJX58qQpTGzdqUoPc6iQn` dari exact
+  implementation source `4384948` berstatus `READY` dan lulus protected web/PWA
+  serta security-header smoke; backend tetap fail-closed 503.
+- Exact private docs head kini `176cf15`; hosted run `32848538160` tetap tidak
+  memperoleh runner karena account billing gate. Delivery bukan `STAGING_READY`.
+
 ## 2026-08-25 - Snap and Fit MySQL 8.4 clean-room acceptance
 
 - Exact private source `4384948` clean-applies 18/18 migration pada disposable

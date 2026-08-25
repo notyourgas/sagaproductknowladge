@@ -12,12 +12,30 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T19:29:34+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T19:37:15+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `5ee88c9` |
-| Informasi terakhir disinkronkan | Snap and Fit MySQL 8.4 clean-room evidence pada source head `4384948`. |
+| Baseline sebelum pembaruan | `31d1ee9` |
+| Informasi terakhir disinkronkan | Snap and Fit protected preview pada docs head `176cf15`. |
 | Status sinkronisasi | `LOCAL_VALIDATED / STAGING_READY=BLOCKED / ACTIVATION_BLOCKED`. |
+
+## Snap and Fit protected preview refresh
+
+- Exact documentation head: `176cf15`; implementation source: `4384948`.
+- Protected preview: `dpl_CeGgE8rxJX58qQpTGzdqUoPc6iQn`, `READY`.
+- Web/PWA dan security-header smoke lulus; backend health sengaja 503.
+- Hosted run `32848538160` tidak memperoleh runner/step karena account
+  payment/spending-limit gate.
+
+## File yang berubah pada sinkronisasi ini (Snap and Fit protected preview)
+
+- `products/snap-and-fit/PRODUCT.md`
+- `products/snap-and-fit/DOSSIER.md`
+- `products/snap-and-fit/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## Snap and Fit MySQL 8.4 clean-room evidence
 
