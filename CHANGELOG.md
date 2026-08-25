@@ -1,5 +1,21 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - COYABAG Home campaign CTA integrity sync
+
+- Klasifikasi: `CONFIRMED`.
+- Produk/area: Storefront Home, Homepage CMS, campaign destination, navigation,
+  validation, responsive UI, security, dan immutable Hostinger release.
+- Provenance public-safe: source
+  `92655c2c86f21bde92b3a08f19947269ef2747e6`, release
+  `20260825-92655c2`, rollback `20260825-43a7d6b`, dan runtime verification.
+- CTA per-banner/global, safe fallback, Admin reorder/preview, serta
+  publish/schedule validation sudah aktif; konten homepage production tidak
+  diubah saat deploy.
+- Delivery `PRODUCTION_DEPLOYED`; activation dan business readiness `BLOCKED`.
+  Readiness tetap 30/42 dengan 12 blocker; commerce tetap fail-closed.
+- Dokumen terdampak: COYABAG product/dossier/changelog, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-25 - SagaWork cross-platform release acceptance sync
 
 - Produk/area: exact Hostinger runtime, protected Vercel Preview, release artifact, runtime manifest, rollback, cross-platform verifier, ASVS disposition, dan load residual risk.

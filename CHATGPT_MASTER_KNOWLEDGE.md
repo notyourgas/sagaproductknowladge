@@ -3362,7 +3362,17 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release aktif `20260825-43a7d6b` menjalankan exact source
+Release aktif `20260825-92655c2` menjalankan exact source
+`92655c2c86f21bde92b3a08f19947269ef2747e6` dengan rollback
+`20260825-43a7d6b`. Homepage campaign CTA mengikuti destination banner aktif,
+global CMS, lalu fallback aman ke katalog. Internal path memakai SPA dan
+external destination wajib HTTPS. Admin Homepage mendukung reorder, preview
+tujuan efektif, serta publish/schedule validation yang fail-closed. Full
+regression, desktop/mobile acceptance, backup/rollback, dan public smoke lulus
+tanpa memutasi konten homepage aktif. Readiness tetap 30/42 dengan 12 blocker;
+commerce tidak diaktifkan.
+
+Release sebelumnya `20260825-43a7d6b` menjalankan exact source
 `43a7d6be6bc2bdde92d7b2c4c554c9d00c3196cd` dengan rollback
 `20260825-2880881`. Dashboard Stock Opname menyediakan scope all/attention,
 blind count, autosave/resume, operator assignment, stale-tab revision guard,

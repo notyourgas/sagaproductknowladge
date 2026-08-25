@@ -12,12 +12,32 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T19:48:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T20:05:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `aa6ec590410bf88efd8ab076e9d52ce219ad0d8f` |
-| Informasi terakhir disinkronkan | SagaWork cross-platform release acceptance pada runtime `6ea328f` dan docs head `d005cfd`. |
-| Status sinkronisasi | `STAGING_DEPLOYED / PILOT_READY_CANDIDATE / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `bc31fdcadce55eaa2573f6b495163fb4881b3220` |
+| Informasi terakhir disinkronkan | COYABAG Home campaign CTA integrity pada source `92655c2` dan release `20260825-92655c2`. |
+| Status sinkronisasi | `PRODUCTION_DEPLOYED / BLOCKED activation / BLOCKED business readiness`; readiness 30/42 dan commerce fail-closed. |
+
+## COYABAG Home campaign CTA integrity
+
+- Exact source: `92655c2c86f21bde92b3a08f19947269ef2747e6`.
+- Immutable release: `20260825-92655c2`; rollback: `20260825-43a7d6b`.
+- CTA banner/global, fallback aman, Admin reorder/preview, dan publish/schedule
+  validation aktif. Konten homepage production tidak dimutasi saat deploy.
+- Full regression, desktop/mobile acceptance, security/build, backup/rollback,
+  dan public smoke lulus.
+- Readiness tetap 30/42 dengan 12 blocker; commerce/provider tidak diaktifkan.
+
+## File yang berubah pada sinkronisasi ini (COYABAG Home campaign CTA integrity)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaWork cross-platform release acceptance
 

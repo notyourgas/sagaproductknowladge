@@ -4,6 +4,22 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-25 - Storefront Home campaign CTA integrity production release
+
+- Klasifikasi: `CONFIRMED` dari exact source
+  `92655c2c86f21bde92b3a08f19947269ef2747e6`, immutable Hostinger release
+  `20260825-92655c2`, rollback `20260825-43a7d6b`, dan runtime verification.
+- CTA hero sekarang mengikuti tujuan banner aktif, global CMS, lalu fallback
+  aman ke katalog. Internal path memakai SPA; external destination wajib HTTPS
+  dan memakai safe new-tab attributes.
+- Admin Homepage mendukung reorder, effective-destination preview, serta
+  publish/schedule validation untuk konfigurasi unsafe atau tidak lengkap.
+- Full regression, focused Admin/Storefront acceptance, responsive,
+  accessibility, motion, security/build, backup/rollback, dan public browser
+  smoke desktop/mobile lulus. Konten homepage aktif tidak dimutasi saat deploy.
+- Delivery `PRODUCTION_DEPLOYED`; readiness tetap 30/42 dengan 12 blocker.
+  Activation dan business readiness tetap `BLOCKED`; commerce tidak diaktifkan.
+
 ## Konteks
 
 Surface deployment tidak otomatis berarti commerce activation.

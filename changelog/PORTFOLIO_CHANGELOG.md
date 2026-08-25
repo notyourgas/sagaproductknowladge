@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-25 - COYABAG Home campaign CTA integrity
+
+- Exact source `92655c2c86f21bde92b3a08f19947269ef2747e6` aktif pada immutable
+  Hostinger release `20260825-92655c2` dengan rollback `20260825-43a7d6b`.
+- CTA banner sekarang memakai destination per-banner/global secara nyata,
+  sedangkan Admin Homepage mendukung reorder, preview tujuan efektif, dan
+  publish/schedule validation yang fail-closed.
+- Full regression, desktop/mobile acceptance, security/build, backup/rollback,
+  dan public smoke lulus. Delivery `PRODUCTION_DEPLOYED`; readiness tetap 30/42
+  dan commerce tetap fail-closed.
+
 ## 2026-08-25 - SagaWork exact release dan ASVS internal disposition
 
 - Exact implementation/runtime `6ea328f6fbaf7052616c100abe1cacd79cadcfa2`, documentation acceptance `d005cfde68d95da5d9a21cd1695b10aa645c9785`, dan protected Vercel Preview `dpl_2zNRzrc9TpAWmPFBGP9aMyX88H7b` tervalidasi pada synthetic-only boundary.

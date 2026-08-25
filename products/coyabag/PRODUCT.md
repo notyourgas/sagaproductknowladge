@@ -61,9 +61,15 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260825-43a7d6b` dengan source
-  `43a7d6be6bc2bdde92d7b2c4c554c9d00c3196cd` melayani production;
-  rollback langsung `20260825-2880881` dipertahankan.
+- Release aktif `20260825-92655c2` dengan source
+  `92655c2c86f21bde92b3a08f19947269ef2747e6` melayani production;
+  rollback langsung `20260825-43a7d6b` dipertahankan.
+- Homepage campaign CTA mengikuti tujuan banner aktif, lalu tujuan global CMS,
+  dan akhirnya fallback aman ke katalog. Tujuan internal memakai navigasi SPA;
+  tujuan eksternal wajib HTTPS dan dibuka dengan isolasi tab aman.
+- Admin Homepage dapat mengurutkan banner, melihat tujuan efektif pada preview,
+  serta menolak tujuan unsafe atau konfigurasi CTA yang tidak lengkap saat
+  publish/schedule. Deployment tidak mengubah konten homepage aktif.
 - Dashboard Stock Opname menyediakan scope seluruh stok atau item perlu
   perhatian, blind count, autosave/resume, operator assignment, dan revision
   guard agar dua tab tidak menimpa hitungan terbaru.

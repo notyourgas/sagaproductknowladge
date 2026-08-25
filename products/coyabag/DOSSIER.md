@@ -78,7 +78,17 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260825-43a7d6b` memakai source
+Release production terbaru `20260825-92655c2` memakai source
+`92655c2c86f21bde92b3a08f19947269ef2747e6` dan rollback
+`20260825-43a7d6b`. Homepage campaign CTA kini memakai tujuan banner aktif,
+kemudian tujuan global CMS, lalu fallback aman ke katalog. Internal path memakai
+navigasi SPA; tujuan eksternal wajib HTTPS. Admin Homepage mendukung reorder,
+effective-destination preview, dan publish/schedule validation. Full regression,
+desktop/mobile acceptance, backup/rollback, serta public smoke lulus tanpa
+mengubah konten homepage aktif. Readiness tetap 30/42 dan commerce tetap
+fail-closed.
+
+Release sebelumnya `20260825-43a7d6b` memakai source
 `43a7d6be6bc2bdde92d7b2c4c554c9d00c3196cd` dan rollback
 `20260825-2880881`. Dashboard Stock Opname menyediakan scope all/attention,
 blind count, autosave/resume, operator assignment, monotonic session revision,
