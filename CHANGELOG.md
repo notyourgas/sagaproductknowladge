@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - Snap and Fit organizer safe metrics sync
+
+- Produk/area: organizer event operations dan safe reconciliation snapshot.
+- Informasi `CONFIRMED` berasal dari exact private feature source `46d7a4b`,
+  docs `3337651`, full local validation, cross-role/browser acceptance,
+  dependency audit, serta protected-route smoke.
+- Knowledge mencatat exact-organization aggregate metrics tanpa customer PII
+  dan memisahkan gross, provider-cleared net, serta organizer earning posted.
+- Delivery tetap `LOCAL_VALIDATED`; production tidak berubah. Exact MySQL
+  aggregate comparison, isolated staging/provider/device, dan activation gate terbuka.
+- Dokumen terdampak: Snap and Fit product/dossier/changelog, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-25 - Snap and Fit photographer earning view sync
 
 - Produk/area: transparency ledger dan payout state bagi fotografer.

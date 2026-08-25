@@ -10,6 +10,20 @@ production, activation, dan business readiness.
 Mock, fixture, preview frontend, dan test lokal bukan bukti provider atau
 production activation.
 
+## 2026-08-25 - Organizer safe event metrics
+
+- Exact private feature source `46d7a4b` dan documentation head `3337651`
+  berstatus `LOCAL_VALIDATED`.
+- Organizer memperoleh exact-organization aggregate inventory, order,
+  fulfillment, payment reconciliation, gross/cleared, posted earning, dan
+  active-refund metrics tanpa customer PII atau raw payment reference.
+- Cross-role metrics ditolak. Full validation, 47 API test, 20 worker test,
+  40 browser test, build, dan dependency audit lulus; exact MySQL aggregate
+  comparison tetap external-service skip.
+- Protected preview `dpl_EwPGuj6qxNJzcf59ahcabW3SGvGx` `READY`; organizer
+  route 200, backend 503 fail-closed, sehingga populated metrics tidak diklaim
+  pada preview. Production tidak berubah.
+
 ## 2026-08-25 - Exact-photographer earning view
 
 - Exact private feature source `0385317` dan documentation head `8313991`

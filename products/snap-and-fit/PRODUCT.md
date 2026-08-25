@@ -47,16 +47,17 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 - Delivery: `LOCAL_VALIDATED`.
 - Activation: `NOT_PRODUCTION_ACTIVATED`.
 - Business readiness: `BLOCKED`.
-- Exact source `8313991` berada di private `main`; photographer earning view
-  berasal dari `0385317`, customer order library berasal dari `5e7e3c4`,
+- Exact source `3337651` berada di private `main`; organizer safe event metrics
+  berasal dari `46d7a4b`, photographer earning view berasal dari `0385317`,
+  customer order library berasal dari `5e7e3c4`,
   distributed rate limiter berasal dari `2c4af04`, user-facing notification
   inbox berasal dari `88c8dc9`, fulfillment HiRes terhubung
   berasal dari `370278a`, fitur operator berasal dari
   `b09f279`, deletion/recovery hardening dari `dbbb814`, serta candidate/cart
   authority dari `09a55bd`, durable notification worker dari `d964fea`, dan
   lifecycle/retention worker dari `4d602d9`.
-- Protected Vercel preview `dpl_3179SPoYt6n8YW26Txn4YGcNvYKo` berstatus
-  `READY`; photographer jobs/earnings dapat dirender tetapi
+- Protected Vercel preview `dpl_EwPGuj6qxNJzcf59ahcabW3SGvGx` berstatus
+  `READY`; organizer event route dapat dirender tetapi
   backend staging sengaja fail-closed.
 - Full local validation, 47 API test dengan sembilan integrasi eksternal terkontrol
   skip, 20 worker test dengan empat integrasi service-dependent skip, audit
@@ -94,6 +95,9 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 - Earning view fotografer membaca exact-owner ledger dan membedakan held,
   available, processing, paid, attention, serta reversed. Ringkasan mencakup
   seluruh ledger; daftar dibatasi 200 transaksi. Payout approval tidak diklaim paid.
+- Organizer memiliki exact-organization aggregate metrics untuk inventory,
+  verified/fulfilled order, fulfillment, payment quarantine/clearing, verified
+  gross, organizer earning posted, dan refund aktif tanpa customer PII.
 
 ## Next gate
 

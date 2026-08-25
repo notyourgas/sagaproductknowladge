@@ -12,7 +12,8 @@ credential, PII, identifier tenant/perangkat, atau detail provider sensitif.
 - Delivery: `LOCAL_VALIDATED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED`
-- Provenance: source private `8313991`, photographer earning view `0385317`,
+- Provenance: source private `3337651`, organizer safe metrics `46d7a4b`,
+  photographer earning view `0385317`,
   customer order library `5e7e3c4`,
   distributed rate limiter `2c4af04`,
   notification inbox `88c8dc9`,
@@ -20,7 +21,7 @@ credential, PII, identifier tenant/perangkat, atau detail provider sensitif.
   operations feature `b09f279`,
   deletion/recovery hardening `dbbb814`, candidate/cart authority `09a55bd`,
   durable notification worker `d964fea`, lifecycle/retention worker `4d602d9`,
-  protected Vercel preview `dpl_3179SPoYt6n8YW26Txn4YGcNvYKo`.
+  protected Vercel preview `dpl_EwPGuj6qxNJzcf59ahcabW3SGvGx`.
 
 ## Overview produk
 
@@ -108,6 +109,10 @@ fotografer desktop-optimized.
   seluruh ledger membedakan held, available, processing, paid, attention, dan
   reversed; daftar dibatasi 200. Paid hanya berasal dari payout item `PAID`,
   sedangkan payout gagal/dibatalkan masuk attention.
+- Organizer event metrics memakai exact organization scope dan hanya mengirim
+  aggregate inventory, order, fulfillment, reconciliation, gross/cleared,
+  organizer earning posted, dan active refund. Nama, email, telepon, BIB, serta
+  payment reference customer tidak menjadi response.
 - Connected operator UI menyediakan loading, empty, error, queue, dan controlled
   synthetic demo tanpa PII.
 - Deletion worker mempertahankan task yang sudah selesai saat retry, mengirim
@@ -157,8 +162,9 @@ fotografer desktop-optimized.
   operator controlled demo, checkout/order library, role workflow, upload, accessibility, dan
   no-overflow tercakup.
 - Production dependency audit: nol vulnerability yang diketahui.
-- Preview protected berstatus `READY`; smoke terlindungi merender photographer
-  jobs/earnings 200 dan mempertahankan backend fail-closed 503. Backend
+- Preview protected berstatus `READY`; smoke terlindungi merender organizer
+  route 200 dan mempertahankan backend fail-closed 503. Connected metrics panel
+  hanya browser-validated lokal karena backend preview tidak terhubung. Backend
   authoritative belum terhubung.
 
 ## Risiko dan gate terbuka
@@ -170,6 +176,8 @@ fotografer desktop-optimized.
   belum dieksekusi.
 - Exact MySQL ledger/payout-state earning assertion masih integration skip karena
   isolated MySQL belum tersedia; local empty-state/cross-role evidence bukan bukti saldo nyata.
+- Exact MySQL aggregate metrics/reconciliation comparison masih integration gate;
+  local zero-state/cross-role test bukan evidence angka event nyata.
 - Optional cross-instance Redis limiter test belum dieksekusi karena isolated
   Redis staging belum tersedia; implementasi lokal bukan bukti distributed runtime.
 - Migration read state inbox belum diaplikasikan pada isolated MySQL karena host

@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-25 - Snap and Fit organizer safe metrics
+
+- Exact private source `46d7a4b` menambahkan exact-organization aggregate
+  inventory, sales, fulfillment, reconciliation, organizer earning, dan refund
+  metrics tanpa customer PII.
+- Cross-role denial, full validation, 47 API test, 20 worker test, 40 browser
+  test, dan dependency audit lulus.
+- Protected preview `dpl_EwPGuj6qxNJzcf59ahcabW3SGvGx` `READY`; route 200 dan
+  backend 503 fail-closed. Populated metrics hanya tervalidasi lokal.
+- Delivery tetap `LOCAL_VALIDATED`; production tidak berubah.
+
 ## 2026-08-25 - Snap and Fit photographer earning view
 
 - Exact private source `0385317` menambahkan read-only exact-photographer ledger
