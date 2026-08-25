@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - Snap and Fit photographer earning view sync
+
+- Produk/area: transparency ledger dan payout state bagi fotografer.
+- Informasi `CONFIRMED` berasal dari exact private source `0385317`, docs
+  `8313991`, full local validation, role/browser acceptance, dependency audit,
+  dan protected-preview smoke.
+- Knowledge mencatat exact-owner full-ledger summary, bounded history, serta
+  pemisahan tegas antara held/available/processing/paid/attention/reversed.
+- Delivery tetap `LOCAL_VALIDATED`; production tidak berubah. Exact MySQL payout
+  transitions, provider settlement, isolated staging, dan activation tetap gate.
+- Dokumen terdampak: Snap and Fit product/dossier/changelog, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-25 - Snap and Fit customer order library sync
 
 - Produk/area: riwayat order dan recovery entitlement customer.

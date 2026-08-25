@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-25 - Snap and Fit photographer earning view
+
+- Exact private source `0385317` menambahkan read-only exact-photographer ledger
+  view dengan held/available/processing/paid/attention/reversed yang tidak
+  menyamakan approval payout dengan uang diterima.
+- Ringkasan aggregate seluruh ledger dan histori bounded 200; cross-role ditolak.
+- Full local validation, 47 API test, 20 worker test, 40 browser test, targeted
+  photographer UAT, dan audit dependency lulus.
+- Protected preview `dpl_3179SPoYt6n8YW26Txn4YGcNvYKo` `READY`; production tidak berubah.
+
 ## 2026-08-25 - Snap and Fit customer order library
 
 - Exact private feature source `5e7e3c4` menambahkan library exact-owner untuk

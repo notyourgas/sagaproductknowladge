@@ -10,6 +10,21 @@ production, activation, dan business readiness.
 Mock, fixture, preview frontend, dan test lokal bukan bukti provider atau
 production activation.
 
+## 2026-08-25 - Exact-photographer earning view
+
+- Exact private feature source `0385317` dan documentation head `8313991`
+  berstatus `LOCAL_VALIDATED`.
+- Fotografer memperoleh read-only earning view exact-owner dengan ringkasan
+  seluruh ledger untuk held, available, processing, paid, attention, dan
+  reversed; histori layar dibatasi 200 transaksi terbaru.
+- Payout approval/selection tidak dilabel paid. Hanya payout item `PAID` menjadi
+  paid; failure/cancellation masuk attention. Cross-role access ditolak.
+- Full validation, 47 API test dengan sembilan external-service skip terkontrol,
+  20 worker test, 40 browser test, targeted photographer UAT, build, dan audit
+  dependency lulus.
+- Protected preview `dpl_3179SPoYt6n8YW26Txn4YGcNvYKo` `READY`; earnings panel
+  200 dan backend tetap 503 fail-closed. Production tidak berubah.
+
 ## 2026-08-25 - Exact-owner customer order library
 
 - Exact private feature source `5e7e3c4` dan documentation head `3cbf230`

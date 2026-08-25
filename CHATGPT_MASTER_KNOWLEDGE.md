@@ -1,13 +1,14 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 25 Agustus 2026 14:03 WIB
+Evidence cut-off: 25 Agustus 2026 14:13 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
 SagaWork active staging source `74cc833` berstatus `CONFIRMED / STAGING_DEPLOYED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`. Isolated Hostinger staging memakai synthetic data dan MySQL 8.4; protected Vercel preview `dpl_pgZhC64nNfe6HHnVp5bnthcWXUHs` `READY`. Scope tervalidasi mencakup staff no-OTP dan privileged TOTP, people termasuk atomic CSV draft import tanpa account/password, scheduling/notes/swap, attendance foto+GPS, paid/unpaid break dengan payable-vs-net dan missing/long human review, correction/request, partial overtime approval, work-hours/score, period lock/reopen, retention/recovery, protected-route hardening, security/load/accessibility, manifest, serta rollback. XLSX/error export, employer-ordered overtime/holiday-rest, real provider/photo bytes, public route, offsite key escrow, human/legal/pilot evidence, dan activation masih blocker; payroll compliance tidak diklaim.
 
-Snap and Fit exact private source `3cbf230` berstatus `CONFIRMED /
-LOCAL_VALIDATED`; customer order library berasal dari `5e7e3c4`,
+Snap and Fit exact private source `8313991` berstatus `CONFIRMED /
+LOCAL_VALIDATED`; photographer earning view berasal dari `0385317`,
+customer order library berasal dari `5e7e3c4`,
 distributed rate limiter berasal dari `2c4af04`,
 user-facing notification inbox berasal dari `88c8dc9`,
 connected HiRes fulfillment berasal dari `370278a`,
@@ -15,7 +16,7 @@ privileged operations feature berasal dari `b09f279`,
 deletion/recovery hardening dari `dbbb814`, candidate/cart authority dari
 `09a55bd`, durable notification worker dari `d964fea`, lifecycle/retention
 worker dari `4d602d9`, dan protected Vercel
-preview `dpl_5ffP4gGh39rdupJNTNdkRr5osMah`
+preview `dpl_3179SPoYt6n8YW26Txn4YGcNvYKo`
 berstatus `READY`.
 Marketplace foto olahraga ini mencakup event, uploader preview 500 JPEG,
 BIB/selfie mock ber-consent, catalog Rp25k/Rp60k/Rp99k, Tokopay mock/contract,
@@ -23,7 +24,10 @@ social dan HiRes entitlement, signed download, ledger bersih 75/15/10, serta
 customer/photographer/organizer/operator UI. Operator workbench memakai
 password+TOTP, idempotency, audit/outbox, immediate-hide wrong-match, refund
 operator-assisted tanpa klaim uang bergerak, provider-cleared payout
-maker-checker, support grant 60 menit, dan deletion fan-out. Worker deletion
+maker-checker, support grant 60 menit, dan deletion fan-out. Photographer
+memiliki exact-owner earning view dengan full-ledger held/available/processing/
+paid/attention/reversed summary dan bounded history; approval tidak diklaim paid.
+Worker deletion
 sekarang memiliki idempotent partial retry, stale reclaim, DLQ, 30-second
 deadline sweep, safe evidence, controlled terminal-only outbox replay, dan
 restore schema-integrity check. Candidate confirm/reject terikat exact anonymous

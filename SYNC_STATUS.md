@@ -12,16 +12,26 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T14:03:05+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T14:13:34+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `6ccdecd` |
-| Informasi terakhir disinkronkan | Snap and Fit exact-owner customer order library dari `5e7e3c4`, docs `3cbf230`, dan protected preview `dpl_5ffP4gGh39rdupJNTNdkRr5osMah`. |
+| Baseline sebelum pembaruan | `a3deb9a` |
+| Informasi terakhir disinkronkan | Snap and Fit exact-photographer earning view dari `0385317`, docs `8313991`, dan protected preview `dpl_3179SPoYt6n8YW26Txn4YGcNvYKo`. |
 | Status sinkronisasi | `LOCAL_VALIDATED / PROTECTED_PREVIEW_READY / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=BLOCKED`; production tidak berubah. |
-| Konflik | Tidak ada konflik; protected frontend preview bukan backend staging. |
-| Error | Tidak ada error sinkronisasi; isolated VPS/MySQL/Redis/provider/device dan activation gates tetap terbuka. |
+| Konflik | Tidak ada konflik; payout selected/approved bukan payout paid dan protected frontend preview bukan backend staging. |
+| Error | Tidak ada error sinkronisasi; exact MySQL payout transitions, isolated VPS/provider/device, dan activation gates tetap terbuka. |
 
-## File yang berubah pada sinkronisasi ini (Snap and Fit customer order library)
+## File yang berubah pada sinkronisasi ini (Snap and Fit photographer earning view)
+
+- `products/snap-and-fit/PRODUCT.md`
+- `products/snap-and-fit/DOSSIER.md`
+- `products/snap-and-fit/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
+
+## File yang berubah pada sinkronisasi sebelumnya (Snap and Fit customer order library)
 
 - `products/snap-and-fit/PRODUCT.md`
 - `products/snap-and-fit/DOSSIER.md`

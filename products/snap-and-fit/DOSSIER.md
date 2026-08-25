@@ -12,14 +12,15 @@ credential, PII, identifier tenant/perangkat, atau detail provider sensitif.
 - Delivery: `LOCAL_VALIDATED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED`
-- Provenance: source private `3cbf230`, customer order library `5e7e3c4`,
+- Provenance: source private `8313991`, photographer earning view `0385317`,
+  customer order library `5e7e3c4`,
   distributed rate limiter `2c4af04`,
   notification inbox `88c8dc9`,
   connected HiRes fulfillment `370278a`,
   operations feature `b09f279`,
   deletion/recovery hardening `dbbb814`, candidate/cart authority `09a55bd`,
   durable notification worker `d964fea`, lifecycle/retention worker `4d602d9`,
-  protected Vercel preview `dpl_5ffP4gGh39rdupJNTNdkRr5osMah`.
+  protected Vercel preview `dpl_3179SPoYt6n8YW26Txn4YGcNvYKo`.
 
 ## Overview produk
 
@@ -103,6 +104,10 @@ fotografer desktop-optimized.
 - Payout draft hanya memilih posted photographer earning dari fulfilled order
   dengan payment provider-cleared. Satu ledger credit tidak dapat masuk dua
   payout run dan approver wajib berbeda dari maker.
+- Read-only earning view memakai exact photographer ID. Ringkasan aggregate
+  seluruh ledger membedakan held, available, processing, paid, attention, dan
+  reversed; daftar dibatasi 200. Paid hanya berasal dari payout item `PAID`,
+  sedangkan payout gagal/dibatalkan masuk attention.
 - Connected operator UI menyediakan loading, empty, error, queue, dan controlled
   synthetic demo tanpa PII.
 - Deletion worker mempertahankan task yang sudah selesai saat retry, mengirim
@@ -152,8 +157,8 @@ fotografer desktop-optimized.
   operator controlled demo, checkout/order library, role workflow, upload, accessibility, dan
   no-overflow tercakup.
 - Production dependency audit: nol vulnerability yang diketahui.
-- Preview protected berstatus `READY`; smoke terlindungi merender customer order
-  library 200 dan mempertahankan backend fail-closed 503. Backend
+- Preview protected berstatus `READY`; smoke terlindungi merender photographer
+  jobs/earnings 200 dan mempertahankan backend fail-closed 503. Backend
   authoritative belum terhubung.
 
 ## Risiko dan gate terbuka
@@ -163,6 +168,8 @@ fotografer desktop-optimized.
 - MySQL/Redis optional suite, protected synthetic deletion/replay,
   backup/restore, rollback, 300 VU load, soak, security staging, dan device UAT
   belum dieksekusi.
+- Exact MySQL ledger/payout-state earning assertion masih integration skip karena
+  isolated MySQL belum tersedia; local empty-state/cross-role evidence bukan bukti saldo nyata.
 - Optional cross-instance Redis limiter test belum dieksekusi karena isolated
   Redis staging belum tersedia; implementasi lokal bukan bukti distributed runtime.
 - Migration read state inbox belum diaplikasikan pada isolated MySQL karena host
