@@ -47,19 +47,19 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 - Delivery: `LOCAL_VALIDATED`.
 - Activation: `NOT_PRODUCTION_ACTIVATED`.
 - Business readiness: `BLOCKED`.
-- Exact source `2c4af04` berada di private `main`; distributed rate limiter
-  berasal dari `2c4af04`, user-facing notification
+- Exact source `3cbf230` berada di private `main`; customer order library
+  berasal dari `5e7e3c4`, distributed rate limiter berasal dari `2c4af04`, user-facing notification
   inbox berasal dari `88c8dc9`, fulfillment HiRes terhubung
   berasal dari `370278a`, fitur operator berasal dari
   `b09f279`, deletion/recovery hardening dari `dbbb814`, serta candidate/cart
   authority dari `09a55bd`, durable notification worker dari `d964fea`, dan
   lifecycle/retention worker dari `4d602d9`.
-- Protected Vercel preview `dpl_6kwtVdRvFZ9ZsWANXiAB3PWhVqtP` berstatus
-  `READY`; inbox customer/fotografer dan antrean HiRes dapat dirender tetapi
+- Protected Vercel preview `dpl_5ffP4gGh39rdupJNTNdkRr5osMah` berstatus
+  `READY`; customer order library dapat dirender tetapi
   backend staging sengaja fail-closed.
-- Full local validation, 46 API test dengan sembilan integrasi eksternal terkontrol
+- Full local validation, 47 API test dengan sembilan integrasi eksternal terkontrol
   skip, 20 worker test dengan empat integrasi service-dependent skip, audit
-  dependency nol vulnerability, serta 38 browser test dengan dua viewport skip
+  dependency nol vulnerability, serta 40 browser test dengan dua viewport skip
   lulus.
 
 ## Batas klaim
@@ -76,6 +76,9 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   saat control plane limiter tidak tersedia. Bukti dua instance nyata masih gate staging.
 - Candidate confirm/reject terikat exact anonymous search session; authoritative
   checkout menyimpan server-priced cart dan menghubungkannya ke order.
+- Customer memiliki library 20 order terbaru yang exact-owner, menampilkan
+  status payment/fulfillment dan entitlement, serta dapat menerbitkan ulang link
+  social/HiRes lima menit tanpa mengekspos order customer lain.
 - Payment dan fulfillment membuat durable in-app notification dengan retry,
   stale reclaim, dan DLQ. Checkout customer dan jobs fotografer memiliki inbox
   exact-recipient, unread/read-all idempoten, dan bounded copy tanpa raw payload.

@@ -10,6 +10,19 @@ production, activation, dan business readiness.
 Mock, fixture, preview frontend, dan test lokal bukan bukti provider atau
 production activation.
 
+## 2026-08-25 - Exact-owner customer order library
+
+- Exact private feature source `5e7e3c4` dan documentation head `3cbf230`
+  berstatus `LOCAL_VALIDATED`.
+- Customer dapat membuka 20 order terbaru, melihat status payment/fulfillment
+  dan entitlement, lalu menerbitkan ulang link social/HiRes lima menit. Batas
+  maksimum 50 dan query exact-owner mencegah order lintas customer tampil.
+- Full validation, 47 API test dengan sembilan external-service skip terkontrol,
+  20 worker test dengan empat skip, 40 browser test dengan dua viewport skip,
+  build, dan dependency audit lulus.
+- Protected preview `dpl_5ffP4gGh39rdupJNTNdkRr5osMah` `READY`; route library
+  200 dan backend tetap fail-closed 503. Production tidak berubah.
+
 ## 2026-08-25 - Distributed API rate-limit contract
 
 - Exact private source `2c4af04` berstatus `LOCAL_VALIDATED`.

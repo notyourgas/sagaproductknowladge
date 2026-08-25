@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - Snap and Fit customer order library sync
+
+- Produk/area: riwayat order dan recovery entitlement customer.
+- Informasi `CONFIRMED` berasal dari exact private feature source `5e7e3c4`,
+  documentation head `3cbf230`, full local validation, browser acceptance,
+  dependency audit, dan protected-preview smoke.
+- Knowledge mencatat exact-owner bounded library, status payment/fulfillment,
+  entitlement, serta link social/HiRes lima menit.
+- Delivery tetap `LOCAL_VALIDATED`; production tidak berubah. Backend staging,
+  MySQL/provider/device, dan activation gate tetap terbuka.
+- Dokumen terdampak: Snap and Fit product/dossier/changelog, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-25 - COYABAG Admin Pesanan integrity sync
 
 - Produk/area: Dashboard Pesanan Owner, Admin, dan Finance.

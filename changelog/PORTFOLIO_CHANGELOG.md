@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-25 - Snap and Fit customer order library
+
+- Exact private feature source `5e7e3c4` menambahkan library exact-owner untuk
+  status order, entitlement, dan penerbitan ulang link download lima menit.
+- Full local validation, 47 API test, 20 worker test, 40 browser test, dan audit
+  dependency lulus dengan external-service skip terkontrol.
+- Protected preview `dpl_5ffP4gGh39rdupJNTNdkRr5osMah` `READY`; route library
+  200 dan backend sengaja 503 fail-closed.
+- Delivery tetap `LOCAL_VALIDATED`; isolated staging dan production tidak berubah.
+
 ## 2026-08-25 - COYABAG Admin Pesanan integrity
 
 - Exact source `e25987eef9676fbe3cc2927ca10c71a55d2c3324` aktif sebagai

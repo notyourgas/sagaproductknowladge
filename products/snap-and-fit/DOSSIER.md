@@ -12,13 +12,14 @@ credential, PII, identifier tenant/perangkat, atau detail provider sensitif.
 - Delivery: `LOCAL_VALIDATED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED`
-- Provenance: source private `2c4af04`, distributed rate limiter `2c4af04`,
+- Provenance: source private `3cbf230`, customer order library `5e7e3c4`,
+  distributed rate limiter `2c4af04`,
   notification inbox `88c8dc9`,
   connected HiRes fulfillment `370278a`,
   operations feature `b09f279`,
   deletion/recovery hardening `dbbb814`, candidate/cart authority `09a55bd`,
   durable notification worker `d964fea`, lifecycle/retention worker `4d602d9`,
-  protected Vercel preview `dpl_6kwtVdRvFZ9ZsWANXiAB3PWhVqtP`.
+  protected Vercel preview `dpl_5ffP4gGh39rdupJNTNdkRr5osMah`.
 
 ## Overview produk
 
@@ -45,6 +46,8 @@ perangkat fotografer sampai ada permintaan HiRes dari transaksi terverifikasi.
 4. Server membentuk candidate, quote, bundle, dan checkout; client tidak menjadi
    source of truth harga. Verified checkout mengubah server-priced cart menjadi
    order dengan provenance satu-ke-satu.
+   Customer dapat membuka library exact-owner untuk memulihkan status dan link
+   entitlement tanpa bergantung pada tab checkout sebelumnya.
 5. Payment terverifikasi mengaktifkan social copy. Antrean fotografer memuat
    exact filename/SLA; fotografer mengakui request lalu mengunggah original
    melalui signed direct PUT. Server memeriksa JPEG, byte/checksum, dimensi, dan
@@ -115,6 +118,9 @@ fotografer desktop-optimized.
   authorization. API hanya mengirim bounded title/message/event/time, bukan raw
   payload; unread, single read, dan read-all idempoten. User read timestamp
   terpisah dari worker delivery status agar retry tidak mengubah acknowledgement.
+- Customer order library dibatasi 20 item terbaru secara default dan maksimal 50,
+  memakai exact customer identity, serta menerbitkan link social/HiRes lima menit
+  hanya ketika entitlement order tersebut aktif.
 - Lifecycle worker setiap 60 detik menjalankan bounded sweep untuk sales close,
   expiry search/cart/payment, fulfillment overdue, serta deterministic
   system-owned deletion request bagi search/face/preview. Finance records dan
@@ -137,17 +143,17 @@ fotografer desktop-optimized.
 ## Evidence lokal
 
 - Full format/lint/typecheck/test/build lulus.
-- 46 API test lulus; sembilan MySQL/Redis/external integration test terkontrol skip tanpa
+- 47 API test lulus; sembilan MySQL/Redis/external integration test terkontrol skip tanpa
   service project-safe.
 - 20 worker test lulus; empat integrasi MySQL/Redis sengaja skip tanpa service
   project-safe. Restore verifier kini memeriksa core schema dan orphan deletion
   task, bukan hanya jumlah tabel.
-- 38 Playwright mobile/desktop lulus dan dua viewport-specific skip disengaja;
-  operator controlled demo, checkout, role workflow, upload, accessibility, dan
+- 40 Playwright mobile/desktop lulus dan dua viewport-specific skip disengaja;
+  operator controlled demo, checkout/order library, role workflow, upload, accessibility, dan
   no-overflow tercakup.
 - Production dependency audit: nol vulnerability yang diketahui.
-- Preview protected berstatus `READY`; smoke terlindungi merender inbox customer,
-  inbox fotografer, HiRes queue, dan empty fail-closed state. Backend
+- Preview protected berstatus `READY`; smoke terlindungi merender customer order
+  library 200 dan mempertahankan backend fail-closed 503. Backend
   authoritative belum terhubung.
 
 ## Risiko dan gate terbuka
