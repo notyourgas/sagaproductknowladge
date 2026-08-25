@@ -1,5 +1,22 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-26 - COYABAG Our Product variant and Cart integrity sync
+
+- Ringkasan: sinkronisasi media varian terpilih, quantity Cart exact, state
+  sold-out/stock-limit fail-closed, fokus navigasi, dan reduced motion.
+- Alasan: pelanggan harus melihat warna yang benar dan hanya menerima tindakan
+  pembelian yang valid terhadap stok serta Cart saat ini.
+- Produk/area: COYABAG storefront, Our Product, Cart, media, accessibility,
+  QA, security, dan release provenance.
+- Klasifikasi: `CONFIRMED`; source exact
+  `89375473d56ba10c42adf4d6d1a4f30d661a0431`, release `20260826-8937547`.
+- Production berubah: ya, surface storefront. Delivery `PRODUCTION_DEPLOYED`;
+  activation/business readiness `BLOCKED`; commerce tetap fail-closed.
+- Dokumen terdampak: Product, Dossier, changelog COYABAG, portfolio, master
+  knowledge, root changelog, dan sync status.
+- Next action: Cycle 2 Gallery Integrity; 12 blocker activation tetap ditutup
+  melalui gate owner/provider/operasional terpisah.
+
 ## 2026-08-26 - COYABAG Bag Finder decision integrity sync
 
 - Ringkasan: sinkronisasi rekomendasi live/cart-aware, state stok dan stale

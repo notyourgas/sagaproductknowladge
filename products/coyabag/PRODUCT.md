@@ -61,15 +61,17 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260826-56aabbc` dengan source
-  `56aabbcb49257d545ed81243e2079074dc5f7af4` melayani production;
-  rollback langsung `20260826-0dd7b21` dipertahankan.
-- Bag Finder merekonsiliasi rekomendasi dengan varian live dan jumlah Cart
-  exact. CTA menampilkan tambah, tambah lagi, batas maksimum, atau stale secara
-  fail-closed; pengurangan quantity langsung memulihkan aksi.
-- Navigasi radio Arrow/Home/End, fokus antar-langkah, progress semantik, dan
-  retry penyimpanan terverifikasi lulus pada desktop/mobile. CSS Bag Finder
-  sekarang lazy-loaded sehingga entry CSS turun menjadi 147,6 KiB.
+- Release aktif `20260826-8937547` dengan source
+  `89375473d56ba10c42adf4d6d1a4f30d661a0431` melayani production;
+  rollback langsung `20260826-56aabbc` dipertahankan.
+- Our Product memprioritaskan media varian yang dipilih untuk hero dan poster
+  video, kemudian mempertahankan media editorial seri sebagai cerita produk.
+- CTA memakai jumlah varian exact di Cart. Initial, partial, stock-limit, dan
+  sold-out tampil jujur serta fail-closed; pengurangan quantity langsung
+  memulihkan aksi yang valid.
+- Pergantian media memakai reveal ringan yang menghormati reduced motion.
+  Navigasi seri memindahkan fokus ke judul tujuan dan seluruh acceptance
+  desktop/mobile, loading/error/retry/empty, full RC, serta public smoke lulus.
 - Customer Returns memakai flow `Isi detail -> Tinjau dan kirim`. Review
   dibangun dari item dan quantity yang diizinkan server, menampilkan varian,
   alasan, penjelasan, serta tenggat, dan menjelaskan bahwa pengajuan belum

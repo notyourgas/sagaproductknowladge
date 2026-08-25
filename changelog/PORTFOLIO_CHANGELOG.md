@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-26 - COYABAG Our Product variant and Cart integrity
+
+- Exact source `89375473d56ba10c42adf4d6d1a4f30d661a0431` aktif pada immutable
+  Hostinger release `20260826-8937547` dengan rollback `20260826-56aabbc`.
+- Media utama mengikuti varian terpilih; CTA memakai quantity Cart exact dan
+  menutup sold-out/stock-limit sebelum tindakan invalid.
+- Desktop/mobile, visual states, accessibility/reduced motion, full RC,
+  backup/rollback, dan public smoke lulus.
+- Delivery `PRODUCTION_DEPLOYED`; activation/business readiness `BLOCKED`;
+  readiness 30/42 dan commerce tetap fail-closed.
+
 ## 2026-08-26 - COYABAG Bag Finder decision integrity
 
 - Exact source `56aabbcb49257d545ed81243e2079074dc5f7af4` aktif pada immutable

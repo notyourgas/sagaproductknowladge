@@ -12,12 +12,33 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-26T02:24:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-26T02:43:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | exact `origin/main` `bba5e59` sebelum sinkronisasi COYABAG Bag Finder. |
-| Informasi terakhir disinkronkan | COYABAG Bag Finder decision integrity production release. |
+| Baseline sebelum pembaruan | exact `origin/main` `1ffee53` sebelum sinkronisasi COYABAG Our Product. |
+| Informasi terakhir disinkronkan | COYABAG Our Product variant and Cart integrity production release. |
 | Status sinkronisasi | `PUSHED / PRODUCTION_DEPLOYED`; activation dan business readiness tetap `BLOCKED`. |
+
+## COYABAG Our Product variant and Cart integrity
+
+- Exact source `89375473d56ba10c42adf4d6d1a4f30d661a0431` aktif pada immutable
+  release `20260826-8937547`; rollback `20260826-56aabbc`.
+- Media hero dan poster video mengikuti varian terpilih sebelum media editorial
+  seri. CTA mengikuti quantity Cart exact dan menutup sold-out/stock-limit.
+- Fokus navigasi, reduced motion, visual states, desktop/mobile acceptance,
+  full RC, backup/rollback, dan public smoke lulus.
+- Readiness tetap 30/42 dengan 12 blocker; commerce, activation, dan business
+  readiness tetap blocked.
+
+## File yang berubah pada sinkronisasi ini (COYABAG Our Product)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG Bag Finder decision integrity
 

@@ -4,6 +4,21 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-26 - Our Product variant and Cart integrity production release
+
+- Klasifikasi: `CONFIRMED` dari exact source
+  `89375473d56ba10c42adf4d6d1a4f30d661a0431`, immutable Hostinger release
+  `20260826-8937547`, rollback `20260826-56aabbc`, dan runtime verification.
+- Media hero dan poster video mengikuti varian terpilih, sementara media
+  editorial seri tetap tersedia setelah media varian.
+- CTA memakai quantity Cart exact; initial, partial, sold-out, stock-limit, dan
+  recovery setelah decrement bersifat eksplisit serta fail-closed.
+- Reveal reduced-motion-aware, fokus navigasi seri, loading/error/retry/empty,
+  161 storefront unit, 398 Laravel test dengan satu intentional skip, full RC,
+  backup/rollback, desktop/mobile acceptance, dan public smoke lulus.
+- Delivery `PRODUCTION_DEPLOYED`; readiness tetap 30/42 dengan 12 blocker.
+  Activation dan business readiness `BLOCKED`; commerce tidak diaktifkan.
+
 ## 2026-08-26 - Bag Finder decision integrity production release
 
 - Klasifikasi: `CONFIRMED` dari exact source
