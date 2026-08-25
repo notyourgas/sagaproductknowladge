@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - Snap and Fit product baseline and operations sync
+
+- Produk/area: Snap and Fit marketplace foto olahraga dan privileged operations.
+- Informasi `CONFIRMED` berasal dari exact private source `a83b43a`, feature
+  `b09f279`, protected preview `dpl_Dtr9Uigz6263nj7V69s62RMD3Pfz`, local test,
+  dependency audit, dan protected preview smoke.
+- Knowledge baru mencatat MVP, pricing Rp25k/Rp60k/Rp99k, 75/15/10 ledger,
+  role/permission, immediate-hide, refund, payout maker-checker, support grant,
+  deletion, architecture, privacy boundary, dan external gates.
+- Delivery `LOCAL_VALIDATED`; activation `NOT_PRODUCTION_ACTIVATED`; business
+  readiness `BLOCKED`. Production tidak berubah.
+- Dokumen terdampak: Snap and Fit product/dossier/changelog, index, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-08-25 - CoyaBag storefront performance production sync
 
 - Produk/area: COYABAG Home media loading, product hover, performance, dan

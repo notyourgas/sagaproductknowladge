@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-25 - Snap and Fit local product baseline and operations workbench
+
+- Exact private source `a83b43a`, feature `b09f279`, dan protected preview
+  `dpl_Dtr9Uigz6263nj7V69s62RMD3Pfz` menyediakan MVP marketplace foto olahraga
+  serta role UI customer, photographer, organizer, dan operator.
+- Privileged workbench menghubungkan immediate-hide wrong-match, refund
+  operator-assisted, provider-cleared payout dual-control, support grant 60
+  menit, deletion fan-out, idempotency, audit, dan outbox tanpa PII atau provider
+  money movement.
+- Full local validation, 37 API test, dependency audit nol, serta 38 browser
+  test lulus. Delivery `LOCAL_VALIDATED`; activation
+  `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED`. Isolated staging,
+  provider/legal, load, recovery, dan device UAT masih menjadi gate.
+
 ## 2026-08-25 - CoyaBag storefront performance integrity
 
 - Exact source `b7bf0061cf54b77eafeb9297280649e27bc99135` aktif sebagai

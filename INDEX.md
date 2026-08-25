@@ -62,6 +62,7 @@ Indeks mencakup knowledge publik pada evidence cut-off 16 Agustus 2026 08:39 WIB
 | Saga Platform | [PRODUCT](products/saga-platform/PRODUCT.md) | [DOSSIER](products/saga-platform/DOSSIER.md) | [CHANGELOG](products/saga-platform/CHANGELOG.md) |
 | SagaOPS | [PRODUCT](products/sagaops/PRODUCT.md) | [DOSSIER](products/sagaops/DOSSIER.md) | [CHANGELOG](products/sagaops/CHANGELOG.md) |
 | Saga AI | [PRODUCT](products/saga-ai/PRODUCT.md) | [DOSSIER](products/saga-ai/DOSSIER.md) | [CHANGELOG](products/saga-ai/CHANGELOG.md) |
+| Snap and Fit | [PRODUCT](products/snap-and-fit/PRODUCT.md) | [DOSSIER](products/snap-and-fit/DOSSIER.md) | [CHANGELOG](products/snap-and-fit/CHANGELOG.md) |
 
 ## Strategi dan brand lintas produk
 

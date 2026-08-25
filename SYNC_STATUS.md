@@ -12,14 +12,25 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T11:44:32+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T12:06:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `c3d76ac6` |
-| Informasi terakhir disinkronkan | CoyaBag storefront performance integrity pada release `20260825-b7bf006`. |
-| Status sinkronisasi | Delivery `PRODUCTION_DEPLOYED`; activation dan business readiness `BLOCKED`; readiness 30/42 dengan 12 blocker. |
-| Konflik | Tidak ada konflik source atau keputusan baru. |
-| Error | Tidak ada error sinkronisasi; blocker commerce CoyaBag tetap terbuka dan fail-closed. |
+| Baseline sebelum pembaruan | `7ce0dc46` |
+| Informasi terakhir disinkronkan | Snap and Fit baseline produk dan privileged operations workbench dari exact source `a83b43a`. |
+| Status sinkronisasi | Delivery `LOCAL_VALIDATED`; activation `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED`. |
+| Konflik | Tidak ada konflik source atau keputusan baru; status tidak dinaikkan menjadi staging. |
+| Error | Tidak ada error sinkronisasi; isolated staging dan provider/legal gate tetap terbuka. |
+
+## File yang berubah pada sinkronisasi ini (Snap and Fit baseline dan operations)
+
+- `products/snap-and-fit/PRODUCT.md`
+- `products/snap-and-fit/DOSSIER.md`
+- `products/snap-and-fit/CHANGELOG.md`
+- `INDEX.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## File yang berubah pada sinkronisasi ini (CoyaBag storefront performance integrity)
 
