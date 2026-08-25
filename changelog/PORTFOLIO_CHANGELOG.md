@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-25 - Snap and Fit private candidate confirmation preview
+
+- Exact private feature source `c17d56d` dan documentation head `603c82a`
+  menambahkan preview kandidat JPEG melalui capability HMAC lima menit dan
+  same-origin BFF sebelum user melakukan confirm/reject.
+- Authoritative result dibatasi pada published asset dengan approved
+  watermarked preview; response private/no-store, noimageindex, dan tanpa raw
+  storage reference. Token tampered/expired ditolak.
+- Full validation, 53 API test, 20 worker test, 46 browser test, build, serta
+  dependency audit lulus dengan external-service skip terkontrol.
+- Protected preview `dpl_t5yNcUkUbVBUBtApcoBJwQCS1W3x` `READY`; BIB route 200
+  dan backend 503 fail-closed. Delivery tetap `LOCAL_VALIDATED`; production tidak berubah.
+
 ## 2026-08-25 - COYABAG Admin Detail Pesanan integrity
 
 - Exact source `412d3518275d4139d13530587c398d7efd86d61a` aktif sebagai

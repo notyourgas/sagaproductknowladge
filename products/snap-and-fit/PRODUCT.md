@@ -47,7 +47,8 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 - Delivery: `LOCAL_VALIDATED`.
 - Activation: `NOT_PRODUCTION_ACTIVATED`.
 - Business readiness: `BLOCKED`.
-- Exact source head `a8bd49f` berada di private `main`; secure multi-photo event
+- Exact source head `603c82a` berada di private `main`; private candidate
+  confirmation preview berasal dari `c17d56d`, secure multi-photo event
   checkout berasal dari `c314024`, organizer safe event metrics
   berasal dari `46d7a4b`, photographer earning view berasal dari `0385317`,
   customer order library berasal dari `5e7e3c4`,
@@ -57,10 +58,10 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   `b09f279`, deletion/recovery hardening dari `dbbb814`, serta candidate/cart
   authority dari `09a55bd`, durable notification worker dari `d964fea`, dan
   lifecycle/retention worker dari `4d602d9`.
-- Protected Vercel preview `dpl_3Wcde9LyKZrJjdV3HYHfZRUTtHSH` berstatus
-  `READY`; dynamic event route dapat dirender tetapi
+- Protected Vercel preview `dpl_t5yNcUkUbVBUBtApcoBJwQCS1W3x` berstatus
+  `READY`; BIB candidate route dapat dirender tetapi
   backend staging sengaja fail-closed.
-- Full local validation, 50 API test dengan sembilan integrasi eksternal terkontrol
+- Full local validation, 53 API test dengan sembilan integrasi eksternal terkontrol
   skip, 20 worker test dengan empat integrasi service-dependent skip, audit
   dependency nol vulnerability, serta 46 browser test dengan dua viewport skip
   lulus.
@@ -81,6 +82,11 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   menerima candidate aktif yang dikonfirmasi browser yang sama dan menolak
   candidate unconfirmed/rejected. Authoritative checkout mendukung single,
   exact-three, dan all-confirmed dengan server-priced cart yang terhubung ke order.
+- Candidate gallery sekarang menerima preview JPEG melalui capability HMAC
+  lima menit dan same-origin BFF. Authoritative search hanya menerbitkan asset
+  published dengan approved watermarked preview; response bersifat private,
+  no-store, noindex/noimageindex/noarchive, dan tidak mengekspos bucket/key.
+  Local/test memakai JPEG sintetis yang dilabel jelas, bukan foto peserta nyata.
 - Customer memiliki library 20 order terbaru yang exact-owner, menampilkan
   status payment/fulfillment dan entitlement, serta dapat menerbitkan ulang link
   social/HiRes lima menit tanpa mengekspos order customer lain.

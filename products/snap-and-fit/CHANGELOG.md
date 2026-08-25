@@ -10,6 +10,23 @@ production, activation, dan business readiness.
 Mock, fixture, preview frontend, dan test lokal bukan bukti provider atau
 production activation.
 
+## 2026-08-25 - Private candidate confirmation preview
+
+- Exact private feature source `c17d56d` dan documentation head `603c82a`
+  berstatus `LOCAL_VALIDATED`.
+- Candidate BIB/selfie sekarang dapat dilihat sebelum confirm/reject melalui
+  signed HMAC capability lima menit dan same-origin BFF. Token terikat event,
+  search session, asset, source, dan expiry; token tampered/expired ditolak.
+- Authoritative search hanya menerbitkan asset published dengan approved
+  watermarked preview. Response memakai private/no-store dan
+  noindex/noimageindex/noarchive, tidak mengekspos raw private bucket/key, serta
+  fixture lokal dilabel sebagai JPEG sintetis tanpa foto peserta nyata.
+- Full validation, 53 API test dengan sembilan external-service skip terkontrol,
+  20 worker test dengan empat skip, 46 browser test dengan dua intentional skip,
+  build, dan dependency audit nol vulnerability lulus.
+- Protected preview `dpl_t5yNcUkUbVBUBtApcoBJwQCS1W3x` `READY`; BIB route 200
+  dan backend 503 fail-closed. Production tidak berubah.
+
 ## 2026-08-25 - Dynamic event landing dan secure multi-photo checkout
 
 - Exact private feature source `c314024` dan documentation head `a8bd49f`
