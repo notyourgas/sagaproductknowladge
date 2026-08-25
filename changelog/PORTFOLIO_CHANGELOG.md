@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-08-25 - Snap and Fit MySQL 8.4 clean-room acceptance
+
+- Exact private source `4384948` clean-applies 18/18 migration pada disposable
+  MySQL 8.4.9 dan meluluskan authoritative database/API/worker persistence path.
+- Synthetic dump/restore membuktikan 51 tabel, recovery schema lengkap, nol
+  orphan deletion task, dan ledger seimbang tanpa data customer nyata.
+- Hosted run `32847799797` tidak memperoleh runner karena account billing gate.
+  Delivery tetap `LOCAL_VALIDATED`; isolated staging dan production tidak berubah.
+
 ## 2026-08-25 - Snap and Fit hosted release gate evidence
 
 - Exact docs source `f41bbb8` mengikat digest-only feature `d0f3b7d` ke hosted

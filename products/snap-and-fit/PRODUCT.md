@@ -47,7 +47,8 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 - Delivery: `LOCAL_VALIDATED`.
 - Activation: `NOT_PRODUCTION_ACTIVATED`.
 - Business readiness: `BLOCKED`.
-- Exact private `main` head `f41bbb8`; digest-only application release feature
+- Exact private `main` head `4384948`; MySQL 8.4 clean-room compatibility fix
+  berasal dari `4384948`, sedangkan digest-only application release feature
   berasal dari `d0f3b7d`, immutable supply-chain hardening berasal dari `ee45e56`,
   authoritative load fixture berasal dari `4f9d8d3`, ShellCheck
   acceptance berasal dari `162cc29`, clean-checkout setup
@@ -74,9 +75,13 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   `7b44101` berstatus `READY`; manifest, service worker, offline, BIB,
   selfie-capture, dan photographer jobs route 200 tetapi
   backend staging sengaja fail-closed.
-- Full local validation, 63 API test dengan sembilan integrasi eksternal terkontrol
-  skip, 21 worker test dengan empat integrasi service-dependent skip, enam
-  face-provider test, tujuh media test, lima observability test, 53 browser test
+- Full no-service validation, 63 API test dengan sembilan integrasi eksternal
+  terkontrol skip dan 21 worker test dengan empat integrasi service-dependent
+  skip lulus. Disposable loopback MySQL 8.4.9 dari database kosong mengaplikasikan
+  18/18 migration dan menaikkan evidence authoritative menjadi 2 database test,
+  71 API pass dengan satu Redis-only skip, serta 24 worker pass dengan satu
+  Redis/BullMQ-only skip. Enam face-provider test, delapan media test, lima
+  observability test, 53 browser test
   dengan tiga project-specific skip, seluruh build, dan audit dependency produksi
   nol vulnerability lulus. Lima shell script juga lulus Git Bash `bash -n`, dan
   staging Compose lulus static interpolation dengan official checksum-verified
@@ -105,12 +110,14 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   dependency produksi nol vulnerability lulus. Container workflow dikonfigurasi
   menghasilkan BuildKit SBOM/provenance dan manifest digest; image belum
   dibangun/dijalankan sehingga emission/runtime evidence tetap gate.
-- Hosted GitHub Actions run `32844518323` pada exact feature head `d0f3b7d`
-  gagal sebelum satu pun step berjalan: `runner_name` kosong dan steps kosong.
+- Hosted GitHub Actions run `32847799797` pada exact current head `4384948`
+  gagal sebelum satu pun step berjalan: runner belum ditetapkan dan steps kosong;
+  anotasi menyatakan account payment/spending-limit gate. Run sebelumnya
+  `32844518323` pada feature head `d0f3b7d` memiliki pola yang sama.
   Ini adalah bukti blocker hosted-runner/account, bukan kegagalan source gate.
-  Commit dokumentasi setelah feature head tidak menggantikan evidence run
-  tersebut. Branch protection private repository juga tetap plan-gated (API
-  mengembalikan 403), sehingga required-check enforcement belum dapat diklaim.
+  Current-head run menjadi evidence hosted terbaru. Branch protection private
+  repository juga tetap plan-gated (API mengembalikan 403), sehingga
+  required-check enforcement belum dapat diklaim.
 
 ## Batas klaim
 
@@ -180,7 +187,7 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 ## Next gate
 
 Sediakan isolated VPS minimal 4 vCPU/16 GB, project-only MySQL/Redis/private
-storage, lalu jalankan migration, optional integration suite, synthetic
+storage, lalu ulangi migration/MySQL suite, jalankan Redis suite, synthetic
 lifecycle/deletion/replay drill, 300-concurrent load, backup/restore, rollback,
 security, dan real-device UAT. Real-provider deletion tetap gate aktivasi
 terpisah.

@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - Snap and Fit MySQL 8.4 clean-room sync
+
+- Produk/area: MySQL migration, seed, authoritative persistence, HiRes fixture,
+  storage identity, backup/restore, dan hosted CI provenance.
+- Informasi `CONFIRMED` berasal dari exact private source `4384948`, disposable
+  MySQL 8.4.9 evidence, full local validation, serta hosted run `32847799797`.
+- Knowledge mencatat 18/18 migration, 2 database pass, 71 active API pass, 24
+  active worker pass, synthetic restore 51 tabel, recovery schema lengkap, nol
+  orphan deletion task, dan ledger seimbang.
+- Production tidak berubah. Delivery tetap `LOCAL_VALIDATED`; Redis, Linux
+  containers, isolated staging, providers, load, encrypted off-host recovery,
+  canary, activation, dan business readiness tetap blocked.
+- Dokumen terdampak: Snap and Fit product/dossier/changelog, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-25 - Snap and Fit hosted blocker evidence sync
 
 - Produk/area: hosted CI, source provenance, dan protected-main enforcement.

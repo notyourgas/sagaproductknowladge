@@ -12,7 +12,8 @@ credential, PII, identifier tenant/perangkat, atau detail provider sensitif.
 - Delivery: `LOCAL_VALIDATED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED`
-- Provenance: exact private documentation head `f41bbb8`, digest-only application
+- Provenance: exact private source head `4384948`, MySQL 8.4 clean-room
+  compatibility fix `4384948`, digest-only application
   release feature `d0f3b7d`, immutable supply-chain hardening `ee45e56`, authoritative load
   fixture `4f9d8d3`, ShellCheck acceptance
   `162cc29`, clean-checkout setup fix `fbf01b6`, liveness
@@ -29,10 +30,11 @@ credential, PII, identifier tenant/perangkat, atau detail provider sensitif.
   deletion/recovery hardening `dbbb814`, candidate/cart authority `09a55bd`,
   durable notification worker `d964fea`, lifecycle/retention worker `4d602d9`,
   protected Vercel preview `dpl_E749gUQc7iVtGCauGvVLa1swk59j`.
-- Hosted CI evidence: exact feature-head run `32844518323` berhenti sebelum
-  assignment runner (`runner_name` kosong, steps kosong). Local/static gates
-  tetap lulus, tetapi hosted run tidak. Commit dokumentasi sesudahnya tidak
-  menggantikan feature-head evidence; protected-main enforcement juga belum
+- Hosted CI evidence: exact current-head run `32847799797` berhenti sebelum
+  assignment runner dengan steps kosong dan anotasi account payment/spending
+  limit. Run `32844518323` pada digest-only feature head menunjukkan pola yang
+  sama. Local/static gates tetap lulus, tetapi hosted run tidak;
+  protected-main enforcement juga belum
   tersedia karena branch-protection API private repository plan-gated (403).
 
 ## Overview produk
@@ -175,12 +177,15 @@ fotografer desktop-optimized.
 ## Evidence lokal
 
 - Full format/lint/typecheck/test/build lulus.
-- 63 API test lulus; sembilan MySQL/Redis/external integration test terkontrol skip tanpa
-  service project-safe.
-- 21 worker test lulus; empat integrasi MySQL/Redis sengaja skip tanpa service
-  project-safe. Restore verifier kini memeriksa core schema dan orphan deletion
-  task, bukan hanya jumlah tabel.
-- Enam face-provider test, tujuh media test, dan lima observability test lulus.
+- No-service suite: 63 API test lulus dengan sembilan service-dependent skip dan
+  21 worker test lulus dengan empat service-dependent skip.
+- Disposable loopback MySQL 8.4.9 menerapkan 18/18 migration dari database kosong,
+  seed sintetis, 2 database test, 71 active API pass dengan satu Redis-only skip,
+  serta 24 active worker pass dengan satu Redis/BullMQ-only skip. Clean dump juga
+  pulih ke database kedua dengan 51 tabel, delapan recovery table wajib, 18
+  migration row, nol orphan deletion task, dan ledger Rp25.000/Rp25.000 seimbang.
+  Ini evidence lokal, bukan encrypted off-host restore atau deployed staging.
+- Enam face-provider test, delapan media test, dan lima observability test lulus.
 - 53 Playwright mobile/desktop lulus dan tiga project-specific skip disengaja;
   operator controlled demo, checkout/order library, role workflow, preview upload,
   multipart interruption/resume, accessibility, dan no-overflow tercakup.
@@ -227,17 +232,17 @@ fotografer desktop-optimized.
   belum deployed.
 - Satu-satunya SSH target yang tersedia tetap shared 2 vCPU/sekitar 8 GB/100 GB,
   tanpa Docker, sehingga tidak dipakai sebagai target Snap and Fit.
-- MySQL/Redis optional suite, protected synthetic deletion/replay,
+- MySQL compatibility lokal sudah ditutup, tetapi pengulangan MySQL dan runtime
+  Redis pada isolated Linux staging, protected synthetic deletion/replay,
   backup/restore, rollback, 300 VU load, soak, security staging, dan device UAT
   belum dieksekusi.
-- Exact MySQL ledger/payout-state earning assertion masih integration skip karena
-  isolated MySQL belum tersedia; local empty-state/cross-role evidence bukan bukti saldo nyata.
-- Exact MySQL aggregate metrics/reconciliation comparison masih integration gate;
-  local zero-state/cross-role test bukan evidence angka event nyata.
+- Exact MySQL ledger/payout, aggregate metrics, reconciliation, HiRes, deletion,
+  dan lifecycle assertions lulus pada disposable local MySQL; semuanya masih
+  wajib diulang terhadap isolated staging dan bukan evidence provider nyata.
 - Optional cross-instance Redis limiter test belum dieksekusi karena isolated
   Redis staging belum tersedia; implementasi lokal bukan bukti distributed runtime.
-- Migration read state inbox belum diaplikasikan pada isolated MySQL karena host
-  staging belum tersedia; real email delivery juga tetap external gate.
+- Seluruh 18 migration termasuk inbox sudah clean-applied lokal, tetapi belum
+  diaplikasikan pada isolated staging; real email delivery juga tetap external gate.
 - Real direct/multipart S3/KMS HiRes interruption/resume/replacement, ETag CORS,
   one-day incomplete-upload lifecycle, dan CloudFront trusted-key/origin proof
   belum dieksekusi; seluruh contract dan browser resume baru teruji sintetis lokal.

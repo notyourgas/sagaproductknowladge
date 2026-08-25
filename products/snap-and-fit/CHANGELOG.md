@@ -10,6 +10,20 @@ production, activation, dan business readiness.
 Mock, fixture, preview frontend, dan test lokal bukan bukti provider atau
 production activation.
 
+## 2026-08-25 - MySQL 8.4 clean-room compatibility
+
+- Exact private source `4384948` berstatus `LOCAL_VALIDATED`.
+- Disposable loopback MySQL 8.4.9 mengaplikasikan 18/18 migration dari kosong,
+  menjalankan seed, 2 database test, 71 active API pass, dan 24 active worker
+  pass; skip tersisa hanya Redis/BullMQ.
+- Dump sintetis pulih ke database kedua dengan 51 tabel, recovery schema lengkap,
+  18 migration row, nol orphan deletion task, dan ledger seimbang.
+- Migration memperbaiki batas index storage ASCII, CHECK/FK update action,
+  urutan replacement index, pending HiRes dimension, serta fixture authority.
+- Hosted run `32847799797` berhenti sebelum runner/step karena account
+  payment/spending-limit gate. Delivery tetap `LOCAL_VALIDATED`, bukan
+  `STAGING_READY`; production tidak berubah.
+
 ## 2026-08-25 - Exact hosted blocker evidence
 
 - Exact private documentation head `f41bbb8` mencatat feature head

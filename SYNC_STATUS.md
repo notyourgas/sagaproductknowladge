@@ -12,12 +12,32 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T18:55:18+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T19:29:34+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `c636ea9` |
-| Informasi terakhir disinkronkan | Snap and Fit exact hosted blocker evidence pada docs head `f41bbb8`. |
+| Baseline sebelum pembaruan | `5ee88c9` |
+| Informasi terakhir disinkronkan | Snap and Fit MySQL 8.4 clean-room evidence pada source head `4384948`. |
 | Status sinkronisasi | `LOCAL_VALIDATED / STAGING_READY=BLOCKED / ACTIVATION_BLOCKED`. |
+
+## Snap and Fit MySQL 8.4 clean-room evidence
+
+- Exact source head: `4384948`.
+- MySQL 8.4.9: 18/18 migration, 2 database pass, 71 active API pass, dan 24
+  active worker pass; skip tersisa hanya Redis/BullMQ.
+- Synthetic restore: 51 tabel, recovery schema lengkap, nol orphan deletion
+  task, 18 migration row, dan ledger seimbang.
+- Hosted run `32847799797` tidak memperoleh runner/step karena account
+  payment/spending-limit gate. Delivery tetap `LOCAL_VALIDATED`.
+
+## File yang berubah pada sinkronisasi ini (Snap and Fit MySQL 8.4)
+
+- `products/snap-and-fit/PRODUCT.md`
+- `products/snap-and-fit/DOSSIER.md`
+- `products/snap-and-fit/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## Snap and Fit hosted blocker evidence
 
