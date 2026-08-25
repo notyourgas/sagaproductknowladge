@@ -10,6 +10,19 @@ production, activation, dan business readiness.
 Mock, fixture, preview frontend, dan test lokal bukan bukti provider atau
 production activation.
 
+## 2026-08-25 - Distributed API rate-limit contract
+
+- Exact private source `2c4af04` berstatus `LOCAL_VALIDATED`.
+- Local/test mempertahankan limiter memory deterministik, sedangkan staging dan
+  production menolak startup tanpa Redis bersama. Atomic fixed window berlaku
+  lintas replica, key client/band disimpan sebagai hash, dan runtime outage
+  menghasilkan 503 fail-closed sementara health probe tetap tersedia.
+- Full validation, 46 API test dengan sembilan external-service skip terkontrol,
+  20 worker test dengan empat skip, 38 browser test dengan dua viewport skip,
+  typecheck, build, dan production dependency audit lulus.
+- Production dan protected frontend preview tidak berubah. Bukti dua instance
+  Redis, edge 429, load/soak, dan isolated staging tetap belum dieksekusi.
+
 ## 2026-08-25 - Exact-recipient notification inbox
 
 - Exact private feature source `88c8dc9` dan documentation head `150fea6`

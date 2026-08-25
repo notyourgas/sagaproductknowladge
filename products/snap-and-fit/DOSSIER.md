@@ -12,7 +12,8 @@ credential, PII, identifier tenant/perangkat, atau detail provider sensitif.
 - Delivery: `LOCAL_VALIDATED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED`
-- Provenance: source private `150fea6`, notification inbox `88c8dc9`,
+- Provenance: source private `2c4af04`, distributed rate limiter `2c4af04`,
+  notification inbox `88c8dc9`,
   connected HiRes fulfillment `370278a`,
   operations feature `b09f279`,
   deletion/recovery hardening `dbbb814`, candidate/cart authority `09a55bd`,
@@ -86,6 +87,9 @@ fotografer desktop-optimized.
   payment; live flag default-off.
 - Vercel tidak terhubung langsung ke MySQL/Redis dan long-running image work
   tidak berjalan pada Vercel Functions.
+- API memakai rate limiter memory pada local/test dan mewajibkan atomic Redis
+  shared-window pada staging/production. Key client/band di-hash, runtime outage
+  fail-closed 503, sedangkan health probe tetap tersedia untuk recovery.
 
 ## Operator controls terbaru
 
@@ -133,7 +137,7 @@ fotografer desktop-optimized.
 ## Evidence lokal
 
 - Full format/lint/typecheck/test/build lulus.
-- 45 API test lulus; delapan MySQL/external integration test terkontrol skip tanpa
+- 46 API test lulus; sembilan MySQL/Redis/external integration test terkontrol skip tanpa
   service project-safe.
 - 20 worker test lulus; empat integrasi MySQL/Redis sengaja skip tanpa service
   project-safe. Restore verifier kini memeriksa core schema dan orphan deletion
@@ -153,6 +157,8 @@ fotografer desktop-optimized.
 - MySQL/Redis optional suite, protected synthetic deletion/replay,
   backup/restore, rollback, 300 VU load, soak, security staging, dan device UAT
   belum dieksekusi.
+- Optional cross-instance Redis limiter test belum dieksekusi karena isolated
+  Redis staging belum tersedia; implementasi lokal bukan bukti distributed runtime.
 - Migration read state inbox belum diaplikasikan pada isolated MySQL karena host
   staging belum tersedia; real email delivery juga tetap external gate.
 - Real direct S3/KMS HiRes upload/replacement dan CloudFront delivery belum

@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - Snap and Fit distributed rate-limit sync
+
+- Produk/area: API abuse control dan multi-replica staging/production contract.
+- Informasi `CONFIRMED` berasal dari exact private source `2c4af04`, full local
+  validation, API/browser acceptance, serta production dependency audit.
+- Knowledge mencatat Redis atomic shared-window wajib di staging/production,
+  hashed client key, fail-closed 503, dan memory adapter khusus local/test.
+- Delivery tetap `LOCAL_VALIDATED`; production tidak berubah. Redis dua instance,
+  edge/load/soak, isolated staging, dan provider gate tetap terbuka.
+- Dokumen terdampak: Snap and Fit product/dossier/changelog, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-25 - SagaWork paid/unpaid break sync
 
 - Produk/area: attendance break policy dan payroll-ready quantities.

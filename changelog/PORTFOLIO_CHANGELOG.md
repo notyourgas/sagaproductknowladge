@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-25 - Snap and Fit distributed rate-limit contract
+
+- Exact private source `2c4af04` mewajibkan atomic Redis shared-window untuk API
+  staging/production serta mempertahankan memory adapter hanya bagi local/test.
+- Client/band key di-hash, startup dan runtime failure bersifat fail-closed, dan
+  health probe tetap tersedia untuk recovery.
+- Full local validation, 46 API test, 20 worker test, 38 browser test, dan audit
+  dependency lulus dengan external-service skip terkontrol.
+- Delivery tetap `LOCAL_VALIDATED`; production tidak berubah. Cross-instance
+  Redis, edge/load/soak, dan isolated staging evidence masih blocker.
+
 ## 2026-08-25 - SagaWork paid/unpaid break policy
 
 - Exact feature source `3603430` dan active staging fix `74cc833` menambahkan paid/unpaid break, payable-vs-net projection, toleransi, serta human-review missing/long exception.

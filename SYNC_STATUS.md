@@ -12,16 +12,26 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T13:47:48+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T13:52:14+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `98f388c` |
-| Informasi terakhir disinkronkan | SagaWork paid/unpaid break dari `3603430`, active synthetic staging fix `74cc833`, dan protected preview `dpl_pgZhC64nNfe6HHnVp5bnthcWXUHs`. |
-| Status sinkronisasi | `STAGING_DEPLOYED / PROTECTED_PREVIEW_READY / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=BLOCKED`; production tidak berubah. |
-| Konflik | Tidak ada konflik; payable quantity bukan nominal/compliance payroll dan synthetic staging bukan real pilot. |
-| Error | Tidak ada error sinkronisasi; employer overtime, legal/device/provider/human pilot, real data, dan production gates tetap terbuka. |
+| Baseline sebelum pembaruan | `2c59202` |
+| Informasi terakhir disinkronkan | Snap and Fit distributed rate-limit contract dari exact private source `2c4af04`. |
+| Status sinkronisasi | `LOCAL_VALIDATED / PROTECTED_PREVIEW_READY / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=BLOCKED`; production tidak berubah. |
+| Konflik | Tidak ada konflik; local implementation bukan bukti cross-instance Redis staging. |
+| Error | Tidak ada error sinkronisasi; isolated Redis/VPS, edge/load/soak, provider, legal/device, dan production gates tetap terbuka. |
 
-## File yang berubah pada sinkronisasi ini (SagaWork paid/unpaid break)
+## File yang berubah pada sinkronisasi ini (Snap and Fit distributed rate limit)
+
+- `products/snap-and-fit/PRODUCT.md`
+- `products/snap-and-fit/DOSSIER.md`
+- `products/snap-and-fit/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
+
+## File yang berubah pada sinkronisasi sebelumnya (SagaWork paid/unpaid break)
 
 - `products/sagawork/PRODUCT.md`
 - `products/sagawork/DOSSIER.md`

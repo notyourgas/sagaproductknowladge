@@ -1,13 +1,14 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 25 Agustus 2026 13:47 WIB
+Evidence cut-off: 25 Agustus 2026 13:52 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
 SagaWork active staging source `74cc833` berstatus `CONFIRMED / STAGING_DEPLOYED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`. Isolated Hostinger staging memakai synthetic data dan MySQL 8.4; protected Vercel preview `dpl_pgZhC64nNfe6HHnVp5bnthcWXUHs` `READY`. Scope tervalidasi mencakup staff no-OTP dan privileged TOTP, people termasuk atomic CSV draft import tanpa account/password, scheduling/notes/swap, attendance foto+GPS, paid/unpaid break dengan payable-vs-net dan missing/long human review, correction/request, partial overtime approval, work-hours/score, period lock/reopen, retention/recovery, protected-route hardening, security/load/accessibility, manifest, serta rollback. XLSX/error export, employer-ordered overtime/holiday-rest, real provider/photo bytes, public route, offsite key escrow, human/legal/pilot evidence, dan activation masih blocker; payroll compliance tidak diklaim.
 
-Snap and Fit exact private source `150fea6` berstatus `CONFIRMED /
-LOCAL_VALIDATED`; user-facing notification inbox berasal dari `88c8dc9`,
+Snap and Fit exact private source `2c4af04` berstatus `CONFIRMED /
+LOCAL_VALIDATED`; distributed rate limiter berasal dari `2c4af04`,
+user-facing notification inbox berasal dari `88c8dc9`,
 connected HiRes fulfillment berasal dari `370278a`,
 privileged operations feature berasal dari `b09f279`,
 deletion/recovery hardening dari `dbbb814`, candidate/cart authority dari
@@ -37,12 +38,14 @@ hard-delete finance record. Photographer-owned queue kini menampilkan exact
 purchased filename/SLA, memakai acknowledgement serta checksum-bound signed
 direct HiRes PUT 15 menit, lalu server memeriksa JPEG, bytes, SHA-256, actual
 dimension, dan preview similarity. Pass mengaktifkan exact HiRes entitlement;
-failure meminta replacement maksimal lima kali. Full local gate, 45 API test,
+failure meminta replacement maksimal lima kali. API staging/production kini
+mewajibkan atomic Redis shared-window dengan hashed client key dan fail-closed
+503; memory mode hanya local/test. Full local gate, 46 API test,
 20 worker test,
 dependency audit nol,
 dan browser suite lulus; integration service-dependent
 tetap skip terkontrol. Backend staging, isolated VPS, MySQL/Redis/S3/KMS worker
-evidence, multipart/CloudFront, real-provider deletion, external provider/legal gate,
+evidence termasuk cross-instance limiter, multipart/CloudFront, real-provider deletion, external provider/legal gate,
 load/recovery/device UAT, production activation, dan business readiness belum
 lulus; status activation `NOT_PRODUCTION_ACTIVATED`, business readiness
 `BLOCKED`.
