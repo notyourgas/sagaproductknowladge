@@ -1,5 +1,11 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - SagaWork product baseline sync
+
+- Menambahkan knowledge public-safe SagaWork dari exact feature source `7ba3010`, synthetic Hostinger staging, protected Vercel preview, dan acceptance evidence.
+- Dokumen terdampak: product/dossier/changelog SagaWork, index, README, master knowledge, decisions, gaps, portfolio changelog, dan sync status.
+- Status `STAGING_DEPLOYED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`; real data/provider/public activation tidak berubah.
+
 ## 2026-08-25 - Snap and Fit lifecycle and retention sync
 
 - Menyinkronkan exact private source `4d602d9` dengan scheduled sales close,

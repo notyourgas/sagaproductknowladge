@@ -54,6 +54,7 @@ status berbeda; repository harus terus disinkronkan setelah perubahan material.
 | Saga Platform | Control plane Saga | Fondasi `PRODUCTION_DEPLOYED` | [Product](products/saga-platform/PRODUCT.md) · [Dossier](products/saga-platform/DOSSIER.md) |
 | SagaOPS | POS dan back office coffeeshop | `PROTOTYPE` | [Product](products/sagaops/PRODUCT.md) · [Dossier](products/sagaops/DOSSIER.md) |
 | Saga AI | Grounded knowledge/intelligence layer | `PLANNED` | [Product](products/saga-ai/PRODUCT.md) · [Dossier](products/saga-ai/DOSSIER.md) |
+| SagaWork | Workforce attendance, scheduling, dan payroll-ready operations | `STAGING_DEPLOYED`, synthetic-only | [Product](products/sagawork/PRODUCT.md) · [Dossier](products/sagawork/DOSSIER.md) |
 
 Status di tabel adalah ringkasan, bukan pengganti detail release/activation
 pada dokumen produk.

@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-103 - SagaWork memakai no-OTP staff auth dan phased synthetic deployment
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-25 |
+| Topik | Authentication dan deployment SagaWork |
+| Keputusan | HR membuat akun staff; staff login dengan nomor HP+password tanpa OTP. HR/Owner memakai email+password+TOTP. Prototype memakai protected Vercel synthetic preview tanpa custom domain; isolated Hostinger/MySQL staging boleh synthetic, sedangkan real data/provider/DNS/closed beta memerlukan final Go/No-Go Andreas. |
+| Alasan | Onboarding staff perlu sederhana, tetapi privileged access dan aktivasi real-data membutuhkan kontrol lebih kuat. |
+| Alternatif yang dipertimbangkan | OTP staff; public prototype; langsung production; custom domain sejak prototype. |
+| Dampak | Source dan acceptance memisahkan staff/privileged auth, synthetic preview, isolated staging, serta activation gate. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / STAGING_DEPLOYED / NOT_PRODUCTION_ACTIVATED`; business readiness blocked |
+| Dokumen terkait | [SagaWork Product](products/sagawork/PRODUCT.md), [SagaWork Dossier](products/sagawork/DOSSIER.md), [Gaps](GAPS.md) |
+
 ## DEC-102 - Staff lapangan mendapat guarded override Manual Booking
 
 | Field | Isi |

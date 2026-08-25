@@ -12,14 +12,28 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T12:54:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T13:00:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | `87ea83d` |
-| Informasi terakhir disinkronkan | Snap and Fit lifecycle dan retention deadlines dari exact source `4d602d9`. |
-| Status sinkronisasi | Delivery `LOCAL_VALIDATED`; activation `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED`. |
-| Konflik | Tidak ada konflik source atau keputusan baru; status tidak dinaikkan menjadi staging. |
-| Error | Tidak ada error sinkronisasi; isolated staging dan provider/legal gate tetap terbuka. |
+| Informasi terakhir disinkronkan | SagaWork synthetic staging baseline dari exact feature source `7ba3010`. |
+| Status sinkronisasi | Delivery `STAGING_DEPLOYED`; activation `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED`. |
+| Konflik | Tidak ada konflik; synthetic staging tidak dianggap real pilot atau production. |
+| Error | Tidak ada error sinkronisasi; provider/legal/human UAT/pilot gate tetap terbuka. |
+
+## File yang berubah pada sinkronisasi ini (SagaWork synthetic staging baseline)
+
+- `products/sagawork/PRODUCT.md`
+- `products/sagawork/DOSSIER.md`
+- `products/sagawork/CHANGELOG.md`
+- `INDEX.md`
+- `README.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `DECISIONS.md`
+- `GAPS.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## File yang berubah pada sinkronisasi ini (Snap and Fit lifecycle and retention)
 

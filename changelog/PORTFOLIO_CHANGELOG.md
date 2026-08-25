@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-08-25 - SagaWork synthetic staging baseline
+
+- Exact feature source `7ba3010` aktif pada isolated synthetic Hostinger staging; protected Vercel preview `dpl_AN91Lq2eo92eG7KsA9NDk8nW2R6w` `READY`.
+- Workforce PWA memvalidasi staff/HR, attendance foto+GPS/break, scheduling/swap/request, overtime partial approval, report/score, period lock/reopen, recovery, security, dan rollback.
+- Delivery `STAGING_DEPLOYED`; activation belum dilakukan dan business readiness `BLOCKED` oleh provider, legal, human UAT, serta pilot evidence.
+
 ## 2026-08-25 - Snap and Fit lifecycle and retention deadlines
 
 - Exact private source `4d602d9` menambahkan scheduled sales close, expiry

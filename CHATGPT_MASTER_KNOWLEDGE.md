@@ -4,6 +4,8 @@ Evidence cut-off: 25 Agustus 2026 12:54 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
+SagaWork exact feature source `7ba3010` berstatus `CONFIRMED / STAGING_DEPLOYED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`. Isolated Hostinger staging memakai synthetic data dan MySQL 8.4; protected Vercel preview `dpl_AN91Lq2eo92eG7KsA9NDk8nW2R6w` `READY`. Scope tervalidasi mencakup staff no-OTP dan privileged TOTP, people, scheduling/notes/swap, attendance foto+GPS/break, correction/request, partial overtime approval, work-hours/score, period lock/reopen, retention/recovery, security/load/accessibility, manifest, serta rollback. Real provider/photo bytes, public route, offsite key escrow, human/legal/pilot evidence, dan activation masih blocker; payroll compliance tidak diklaim.
+
 Snap and Fit exact private source `4d602d9` berstatus `CONFIRMED /
 LOCAL_VALIDATED`; privileged operations feature berasal dari `b09f279`,
 deletion/recovery hardening dari `dbbb814`, candidate/cart authority dari
