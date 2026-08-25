@@ -12,14 +12,24 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T18:46:54+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T18:52:12+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `0282079` |
-| Informasi terakhir disinkronkan | Snap and Fit immutable supply-chain hardening exact `ee45e56`. |
+| Baseline sebelum pembaruan | `6da97b5` |
+| Informasi terakhir disinkronkan | Snap and Fit digest-only application release exact `d0f3b7d`. |
 | Status sinkronisasi | `LOCAL_VALIDATED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=BLOCKED`. |
-| Konflik | Tidak ada konflik; immutable pinning tidak disamakan dengan image runtime evidence. |
-| Error | Tidak ada error knowledge; image runtime, isolated staging, dan provider evidence tetap external gate. |
+| Konflik | Tidak ada konflik; commit-shaped registry tag tidak lagi dianggap immutable release authority. |
+| Error | Tidak ada error knowledge; hosted image emission/runtime, isolated staging, dan provider evidence tetap external gate. |
+
+## File yang berubah pada sinkronisasi ini (Snap and Fit digest-only release)
+
+- `products/snap-and-fit/PRODUCT.md`
+- `products/snap-and-fit/DOSSIER.md`
+- `products/snap-and-fit/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## File yang berubah pada sinkronisasi ini (Snap and Fit immutable supply chain)
 

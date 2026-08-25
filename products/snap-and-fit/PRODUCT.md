@@ -47,8 +47,9 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 - Delivery: `LOCAL_VALIDATED`.
 - Activation: `NOT_PRODUCTION_ACTIVATED`.
 - Business readiness: `BLOCKED`.
-- Exact private `main` head `ee45e56`; immutable supply-chain hardening berasal
-  dari `ee45e56`, authoritative load fixture berasal dari `4f9d8d3`, ShellCheck
+- Exact private `main` head `d0f3b7d`; digest-only application release berasal
+  dari `d0f3b7d`, immutable supply-chain hardening berasal dari `ee45e56`,
+  authoritative load fixture berasal dari `4f9d8d3`, ShellCheck
   acceptance berasal dari `162cc29`, clean-checkout setup
   fix berasal dari `fbf01b6`, liveness peer
   acceptance berasal dari
@@ -97,10 +98,13 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   lulus; tidak ada load traffic yang dikirim tanpa isolated staging.
 - GitHub Actions memakai exact upstream commit; Node build/runtime dan
   MySQL/Redis service memakai OCI manifest digest. Deploy/rollback menolak image
-  mutable, restore menolak override MySQL non-digest, dan validation memulai
+  tanpa digest termasuk commit-shaped registry tag, restore menolak override
+  MySQL non-digest, dan validation memulai
   immutable-reference verifier. Actionlint, ShellCheck enam file, Compose static
   immutable set, release preflight regression, full validation, dan audit
-  dependency produksi nol vulnerability lulus. Image belum dibangun/dijalankan.
+  dependency produksi nol vulnerability lulus. Container workflow dikonfigurasi
+  menghasilkan BuildKit SBOM/provenance dan manifest digest; image belum
+  dibangun/dijalankan sehingga emission/runtime evidence tetap gate.
 
 ## Batas klaim
 

@@ -12,8 +12,9 @@ credential, PII, identifier tenant/perangkat, atau detail provider sensitif.
 - Delivery: `LOCAL_VALIDATED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED`
-- Provenance: exact private head `ee45e56`, immutable supply-chain hardening
-  `ee45e56`, authoritative load fixture `4f9d8d3`, ShellCheck acceptance
+- Provenance: exact private head `d0f3b7d`, digest-only application release
+  `d0f3b7d`, immutable supply-chain hardening `ee45e56`, authoritative load
+  fixture `4f9d8d3`, ShellCheck acceptance
   `162cc29`, clean-checkout setup fix `fbf01b6`, liveness
   peer acceptance `7b44101`,
   encrypted event-scoped face search
@@ -200,11 +201,14 @@ fotografer desktop-optimized.
   checksum-verified k6 v2.2.0 `inspect` lulus; full validation lulus dan tidak ada
   traffic load yang dikirim tanpa isolated staging.
 - Actions di-pin exact commit; Node, MySQL, dan Redis base/service image di-pin
-  OCI manifest digest. Deploy/rollback fail-closed atas mutable image, restore
-  menolak non-digest override, dan local validation memverifikasi referensi.
+  OCI manifest digest. Application release juga wajib memakai resulting manifest
+  digest; commit-shaped registry tag hanya provenance dan ditolak oleh deploy/
+  rollback. Restore menolak non-digest override dan local validation
+  memverifikasi referensi.
   Actionlint, enam-file ShellCheck, Compose immutable image set, release-script
   regression, full validation, dan production dependency audit lulus. Build,
-  scan, SBOM/provenance attestation, pull, dan runtime image tetap staging gate.
+  scan, emitted BuildKit SBOM/provenance verification, pull, dan runtime image
+  tetap staging gate.
 - Preview protected `dpl_E749gUQc7iVtGCauGvVLa1swk59j` dari baseline `7b44101`
   berstatus `READY`; manifest, service worker, offline, BIB, selfie-capture, dan
   photographer jobs route 200 serta

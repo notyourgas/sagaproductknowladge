@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-08-25 - Snap and Fit digest-only application release
+
+- Exact source `d0f3b7d` memperketat app release dari commit-shaped tag menjadi
+  required OCI manifest digest; tag/label commit hanya provenance.
+- BuildKit workflow dikonfigurasi memancarkan SBOM/provenance dan resulting
+  digest, sedangkan deploy/rollback fail-closed sebelum pull atas non-digest.
+- Static/release gates lulus; hosted build, emission verification, image scan,
+  pull, runtime, dan isolated staging tetap pending. Delivery `LOCAL_VALIDATED`.
+
 ## 2026-08-25 - Snap and Fit immutable release supply chain
 
 - Exact source `ee45e56` mengunci GitHub Actions ke commit penuh dan Node,

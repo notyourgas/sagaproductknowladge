@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - Snap and Fit digest-only release sync
+
+- Produk/area: application image identity, SBOM/provenance, deploy, rollback,
+  dan release evidence.
+- Informasi `CONFIRMED` berasal dari exact private source `d0f3b7d` serta static
+  supply-chain/release gates.
+- Knowledge mengoreksi batas: commit-shaped registry tag bukan immutable release
+  authority. Compose wajib resulting manifest digest; BuildKit dikonfigurasi
+  memancarkan SBOM/provenance dan mencatat digest.
+- Static gates lulus. Delivery tetap `LOCAL_VALIDATED`; hosted build/emission,
+  image scan/pull/runtime, isolated staging, activation, dan production tidak berubah.
+- Dokumen terdampak: Snap and Fit product/dossier/changelog, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-25 - Snap and Fit immutable supply-chain sync
 
 - Produk/area: CI actions, container bases/services, deploy, rollback, restore,

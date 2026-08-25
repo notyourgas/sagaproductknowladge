@@ -10,6 +10,18 @@ production, activation, dan business readiness.
 Mock, fixture, preview frontend, dan test lokal bukan bukti provider atau
 production activation.
 
+## 2026-08-25 - Digest-only application release
+
+- Exact private source `d0f3b7d` berstatus `LOCAL_VALIDATED`.
+- Commit SHA tetap menjadi tag/label provenance, tetapi deploy/rollback sekarang
+  menolak seluruh app image tanpa exact OCI manifest digest karena registry tag
+  tetap dapat dipindahkan.
+- Container workflow dikonfigurasi menghasilkan BuildKit SBOM/provenance,
+  mem-push image, memvalidasi resulting digest, dan mencatat digest untuk release.
+- Release preflight, full validation, actionlint dengan ShellCheck, enam-file
+  ShellCheck, Compose digest-only image set, serta production audit lulus. Hosted
+  build/emission, image scan, pull, dan runtime tetap belum dieksekusi.
+
 ## 2026-08-25 - Immutable release supply chain
 
 - Exact private source `ee45e56` berstatus `LOCAL_VALIDATED`.
