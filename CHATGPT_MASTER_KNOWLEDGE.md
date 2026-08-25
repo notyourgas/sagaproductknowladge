@@ -1,13 +1,14 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 25 Agustus 2026 15:14 WIB
+Evidence cut-off: 25 Agustus 2026 15:34 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
 SagaWork active staging runtime `7d5ada9` berstatus `CONFIRMED / STAGING_DEPLOYED / NOT_PRODUCTION_ACTIVATED / PILOT_READY_CANDIDATE / BUSINESS_READY=false`. Isolated Hostinger staging memakai synthetic data, MySQL 8.4, dan same-VPS loopback object store khusus acceptance non-PII; Vercel Preview `dpl_AJNsByPfcxvbFEmtk8KvRB92YL6m` `READY`. Scope tervalidasi mencakup staff no-OTP dan privileged TOTP, people termasuk atomic CSV draft import tanpa account/password, scheduling/notes/swap, attendance foto+GPS, private quarantine→ClamAV→metadata-stripped photo bytes, owner status, scoped HR signed view, Staff denial, legal hold/purge certificate, paid/unpaid break dengan payable-vs-net dan missing/long human review, default-off unscheduled draft→HR publish/resolve, correction/request, partial overtime approval, work-hours/score, period lock/reopen, retention/recovery, security/load/accessibility, manifest, backup, serta guarded rollback dua arah. Loopback store bukan external provider/DPA/offsite/HA dan real employee/photo data dilarang; public route, offsite key escrow, human/device/legal/pilot evidence, named champion/company, serta activation masih blocker. Payroll compliance tidak diklaim.
 
-Snap and Fit exact private source head `7507672` berstatus `CONFIRMED /
-LOCAL_VALIDATED`; privacy-safe installable PWA shell berasal dari `141bbb5`,
+Snap and Fit exact private source head `ae0b8e7` berstatus `CONFIRMED /
+LOCAL_VALIDATED`; private bounded API metrics berasal dari `1c1a81e`, safe
+trace/outbox propagation dari `3fa3be4`, privacy-safe installable PWA shell berasal dari `141bbb5`,
 private candidate confirmation preview berasal dari `c17d56d`, secure
 multi-photo event checkout berasal dari `c314024`,
 organizer safe metrics berasal dari `46d7a4b`,
@@ -48,6 +49,12 @@ menyatakan tidak ada aksi terkirim. Cache hanya mengizinkan offline shell,
 public icon, dan same-origin static asset non-private; API/BFF, auth, search,
 checkout, account, role page, private media, signed download, cross-origin
 response, dan mutation tidak disimpan.
+API request memakai W3C server span dengan bounded safe attributes. Critical
+outbox membawa traceparent ke relay producer dan worker consumer span. Private
+Prometheus endpoint default-off membutuhkan secret 32+ karakter, memberikan
+404 identik untuk missing/wrong secret, no-store, dan label route-template tanpa
+raw URL/body/BIB/email/token/PII/media. Live OTLP export, scrape, dan alert
+fire/recovery tetap isolated-staging gate.
 Worker deletion
 sekarang memiliki idempotent partial retry, stale reclaim, DLQ, 30-second
 deadline sweep, safe evidence, controlled terminal-only outbox replay, dan
@@ -68,8 +75,9 @@ direct HiRes PUT 15 menit, lalu server memeriksa JPEG, bytes, SHA-256, actual
 dimension, dan preview similarity. Pass mengaktifkan exact HiRes entitlement;
 failure meminta replacement maksimal lima kali. API staging/production kini
 mewajibkan atomic Redis shared-window dengan hashed client key dan fail-closed
-503; memory mode hanya local/test. Full local gate, 53 API test,
+503; memory mode hanya local/test. Full local gate, 59 API test,
 20 worker test,
+5 observability test,
 dependency audit nol,
 dan 52 browser test lulus; integration service-dependent
 tetap skip terkontrol. Backend staging, isolated VPS, MySQL/Redis/S3/KMS worker

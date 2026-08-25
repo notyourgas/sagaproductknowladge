@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-25 - Snap and Fit safe observability contract
+
+- Exact private trace source `3fa3be4`, metrics source `1c1a81e`, dan docs head
+  `ae0b8e7` menambahkan W3C API→outbox producer→worker consumer trace contract
+  serta private bounded Prometheus API metrics.
+- Trace/metrics tidak memakai raw URL/body/BIB/email/token/PII/media reference.
+  Scrape endpoint default-off, secret-protected, 404 fail-closed, dan no-store.
+- Full validation, 59 API test, 20 worker test, lima observability test,
+  52 browser test, build, serta dependency audit lulus dengan skip terkontrol.
+- Live OTLP/Prometheus/Alertmanager dan migration evidence tetap staging gate.
+  Delivery `LOCAL_VALIDATED`; web preview dan production tidak berubah.
+
 ## 2026-08-25 - SagaWork private non-PII evidence bytes
 
 - Exact feature source `76ff2cb` aktif pada isolated Hostinger staging `7d5ada9`; Vercel Preview `dpl_AJNsByPfcxvbFEmtk8KvRB92YL6m` berstatus `READY`.

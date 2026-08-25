@@ -10,6 +10,22 @@ production, activation, dan business readiness.
 Mock, fixture, preview frontend, dan test lokal bukan bukti provider atau
 production activation.
 
+## 2026-08-25 - Safe trace propagation dan private API metrics
+
+- Exact private trace feature `3fa3be4`, metrics feature `1c1a81e`, dan
+  documentation head `ae0b8e7` berstatus `LOCAL_VALIDATED`.
+- API request span memvalidasi W3C context dan hanya merekam method, route
+  template, status, duration, environment, serta safe error type. Critical
+  outbox membawa traceparent menuju relay producer dan worker consumer span.
+- Private Prometheus endpoint default-off membutuhkan secret 32+ karakter,
+  memberi 404 identik untuk missing/wrong secret, no-store, dan bounded labels
+  tanpa raw URL, body, BIB, email, token, user/event/order ID, atau media ref.
+- Full validation, 59 API test dengan sembilan external-service skip terkontrol,
+  20 worker test dengan empat skip, lima observability test, 52 browser test
+  dengan dua intentional skip, build, dan dependency audit nol vulnerability lulus.
+- Migration trace, OTLP export lintas proses, Prometheus scrape, dan alert fire/
+  recovery masih isolated-staging gate. Production dan protected web preview tidak berubah.
+
 ## 2026-08-25 - Privacy-safe installable PWA shell
 
 - Exact private feature source `141bbb5` dan documentation head `7507672`

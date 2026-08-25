@@ -47,8 +47,9 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 - Delivery: `LOCAL_VALIDATED`.
 - Activation: `NOT_PRODUCTION_ACTIVATED`.
 - Business readiness: `BLOCKED`.
-- Exact source head `7507672` berada di private `main`; privacy-safe installable
-  PWA shell berasal dari `141bbb5`, private candidate confirmation preview
+- Exact source head `ae0b8e7` berada di private `main`; private bounded API
+  metrics berasal dari `1c1a81e`, safe trace/outbox propagation dari `3fa3be4`,
+  privacy-safe installable PWA shell berasal dari `141bbb5`, private candidate confirmation preview
   berasal dari `c17d56d`, secure multi-photo event
   checkout berasal dari `c314024`, organizer safe event metrics
   berasal dari `46d7a4b`, photographer earning view berasal dari `0385317`,
@@ -62,9 +63,9 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 - Protected Vercel preview `dpl_9HVaRkahXkayYALkmsRxU515teaR` berstatus
   `READY`; manifest, service worker, offline route, dan BIB route 200 tetapi
   backend staging sengaja fail-closed.
-- Full local validation, 53 API test dengan sembilan integrasi eksternal terkontrol
+- Full local validation, 59 API test dengan sembilan integrasi eksternal terkontrol
   skip, 20 worker test dengan empat integrasi service-dependent skip, audit
-  dependency nol vulnerability, serta 52 browser test dengan dua viewport skip
+  dependency nol vulnerability, lima observability test, serta 52 browser test dengan dua viewport skip
   lulus.
 
 ## Batas klaim
@@ -93,6 +94,11 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   shell, public icon, serta same-origin static asset non-private; API, auth,
   search, checkout, account, role page, private media, signed download, dan
   mutasi tidak pernah disimpan.
+- API menghasilkan W3C server span dengan bounded safe attributes; critical
+  outbox menyimpan traceparent, relay membuat producer span, dan worker
+  melanjutkan consumer span. OTLP export live tetap gate staging. Private
+  Prometheus endpoint default-off memakai secret 32+ karakter, 404 untuk
+  missing/wrong secret, no-store, dan label route-template tanpa payload/PII.
 - Customer memiliki library 20 order terbaru yang exact-owner, menampilkan
   status payment/fulfillment dan entitlement, serta dapat menerbitkan ulang link
   social/HiRes lima menit tanpa mengekspos order customer lain.
