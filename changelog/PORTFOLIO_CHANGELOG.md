@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-25 - Snap and Fit local Bash dan Compose gates
+
+- Exact private docs head `f03e8bd` menutup local shell-syntax dan Compose static
+  interpolation gate tanpa menjalankan image/container.
+- Lima shell script lulus Git Bash `bash -n`; official checksum-verified Docker
+  Compose v5.5.0 meluluskan staging `config --quiet` dengan synthetic-only values.
+- Hosted Actions masih gagal sebelum runner/step, branch protection tetap
+  plan-gated, dan shared VPS tetap tidak layak. Delivery `LOCAL_VALIDATED`;
+  staging, activation, production, dan business readiness tidak berubah.
+
 ## 2026-08-25 - SagaWork release artifact dan implemented-contract audit
 
 - Release tooling `209eec2`, contract source `b3ab90f`, audit `1ad6bf1`, dan exact active synthetic staging `e003a3d` menjadi provenance public-safe.

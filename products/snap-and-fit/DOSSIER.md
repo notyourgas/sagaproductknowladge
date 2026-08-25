@@ -12,7 +12,7 @@ credential, PII, identifier tenant/perangkat, atau detail provider sensitif.
 - Delivery: `LOCAL_VALIDATED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED`
-- Provenance: exact private head `822933f`, encrypted event-scoped face search
+- Provenance: exact private head `f03e8bd`, encrypted event-scoped face search
   `96df668`, resumable multipart feature `3fc397f`,
   staging-control/preview baseline `d2b0c5c`, organizer safe metrics `46d7a4b`,
   photographer earning view `0385317`,
@@ -175,6 +175,9 @@ fotografer desktop-optimized.
   operator controlled demo, checkout/order library, role workflow, preview upload,
   multipart interruption/resume, accessibility, dan no-overflow tercakup.
 - Production dependency audit: nol vulnerability yang diketahui.
+- Lima shell script lulus Git Bash `bash -n`; staging Compose lulus static
+  interpolation memakai official checksum-verified Docker Compose v5.5.0 dan
+  synthetic-only values. Tidak ada image/container yang dijalankan.
 - Preview protected `dpl_BRsjcFnYQV6NVTCyJqcP19te4HsS` dari baseline `96df668`
   berstatus `READY`; manifest, service worker, offline, BIB, selfie-capture, dan
   photographer jobs route 200 serta
@@ -186,6 +189,8 @@ fotografer desktop-optimized.
 
 - Isolated staging VPS, MySQL, Redis, private storage, migration, worker, dan API
   belum deployed.
+- Satu-satunya SSH target yang tersedia tetap shared 2 vCPU/sekitar 8 GB/100 GB,
+  tanpa Docker, sehingga tidak dipakai sebagai target Snap and Fit.
 - MySQL/Redis optional suite, protected synthetic deletion/replay,
   backup/restore, rollback, 300 VU load, soak, security staging, dan device UAT
   belum dieksekusi.

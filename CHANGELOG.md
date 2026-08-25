@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - Snap and Fit Bash dan Compose gate sync
+
+- Produk/area: release tooling, staging topology, dan external delivery gate.
+- Informasi `CONFIRMED` berasal dari exact private docs head `f03e8bd`, local
+  Git Bash syntax evidence, dan checksum-verified Docker Compose v5.5.0 config.
+- Knowledge mencatat lima shell script dan static Compose interpolation lulus
+  tanpa image/container execution; hosted Actions dan isolated runtime tetap gate.
+- Delivery `LOCAL_VALIDATED`; activation `NOT_PRODUCTION_ACTIVATED`; business
+  readiness `BLOCKED`. Production tidak berubah.
+- Dokumen terdampak: Snap and Fit product/dossier/changelog, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-25 - SagaWork release artifact dan implemented-contract sync
 
 - Produk/area: source handoff, checksum/provenance, data model, API inventory, dan completion audit.

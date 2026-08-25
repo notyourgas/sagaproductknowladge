@@ -10,6 +10,18 @@ production, activation, dan business readiness.
 Mock, fixture, preview frontend, dan test lokal bukan bukti provider atau
 production activation.
 
+## 2026-08-25 - Local Bash dan Compose static gates
+
+- Exact private documentation head `f03e8bd` berstatus `LOCAL_VALIDATED`.
+- Lima shell script operasional lulus Git Bash `bash -n`; staging Compose lulus
+  `config --quiet` menggunakan official checksum-verified Docker Compose v5.5.0
+  dan synthetic-only interpolation values. Tidak ada image/container dijalankan.
+- Latest GitHub Actions run untuk prior exact docs head tetap gagal sebelum
+  runner dan step dimulai; private branch protection juga tetap plan-gated.
+- Shared VPS tetap ditolak. Delivery, activation, production, dan business
+  readiness tidak berubah; image/container, migration, load, backup/restore,
+  dan canary masih menunggu isolated staging.
+
 ## 2026-08-25 - Encrypted event-scoped face search orchestration
 
 - Exact private feature `96df668` dan documentation head `822933f` berstatus

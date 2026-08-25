@@ -47,7 +47,7 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 - Delivery: `LOCAL_VALIDATED`.
 - Activation: `NOT_PRODUCTION_ACTIVATED`.
 - Business readiness: `BLOCKED`.
-- Exact private `main` head `822933f`; encrypted event-scoped face search berasal dari
+- Exact private `main` head `f03e8bd`; encrypted event-scoped face search berasal dari
   `96df668`, resumable multipart HiRes berasal dari
   `3fc397f`, staging controls dan preview baseline dari `d2b0c5c`, CloudFront private
   delivery signer berasal dari `5fe6ab5`, AWS event-scoped face provider
@@ -72,7 +72,9 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   skip, 21 worker test dengan empat integrasi service-dependent skip, enam
   face-provider test, tujuh media test, lima observability test, 53 browser test
   dengan tiga project-specific skip, seluruh build, dan audit dependency produksi
-  nol vulnerability lulus.
+  nol vulnerability lulus. Lima shell script juga lulus Git Bash `bash -n`, dan
+  staging Compose lulus static interpolation dengan official checksum-verified
+  Docker Compose v5.5.0 tanpa menjalankan image/container.
 
 ## Batas klaim
 
