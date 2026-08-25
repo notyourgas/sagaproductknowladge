@@ -8,6 +8,13 @@ Mencatat perubahan material SagaWork dengan status delivery dan activation yang 
 
 Synthetic fixture, preview, dan staging bukan bukti real pilot atau production activation.
 
+## 2026-08-25 - Verifiable restricted release artifact dan implemented contracts
+
+- `CONFIRMED` dari release tooling `209eec2`, implemented-contract source `b3ab90f`, completion audit `1ad6bf1`, exact active isolated Hostinger staging `e003a3d`, serta artifact/runtime verification.
+- Tracked-source handoff archive exact `e003a3d` berukuran 1.176.243 byte dengan provenance dan SHA-256 `461efe3105ebfbebb743ade95f59ad0cb70fbcb89ebd2655d00845dd3cd7db34`; exclusion check memastikan secret, runtime env, database dump, PII, dependency, dan build cache tidak ikut. Artifact tetap restricted dan tidak dipublikasikan di knowledge repo.
+- Implemented data/API inventory mencakup seluruh 56 tabel, 21 migration, 56 route file, dan 69 operasi; source-drift verifier PASS. Formal OpenAPI 3.1 component schemas/generated client masih pending.
+- Runtime Hostinger dan protected Vercel Preview tidak berubah. Delivery `STAGING_DEPLOYED`; activation `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED_EXTERNAL`; Gate A/B/C masih membutuhkan evidence eksternal/human dan Gate E belum dimulai.
+
 ## 2026-08-25 - Safe PWA install/update dan CI baseline
 
 - `CONFIRMED` dari feature source `e9c2c6c`, exact active isolated Hostinger staging `e003a3d`, documentation head `6964dd5`, serta synthetic build/test/runtime evidence.

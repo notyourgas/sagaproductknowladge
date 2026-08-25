@@ -1,5 +1,12 @@
 # Portfolio Changelog
 
+## 2026-08-25 - SagaWork release artifact dan implemented-contract audit
+
+- Release tooling `209eec2`, contract source `b3ab90f`, audit `1ad6bf1`, dan exact active synthetic staging `e003a3d` menjadi provenance public-safe.
+- Restricted tracked-source artifact exact runtime memiliki immutable provenance dan checksum PASS; knowledge hanya mencatat metadata public-safe, bukan file source restricted.
+- Drift gate memverifikasi 56 tabel/21 migration serta 56 route file/69 operasi. Formal OpenAPI 3.1 schema/generated client masih pending.
+- Runtime/preview tidak berubah; delivery tetap `STAGING_DEPLOYED`, activation `NOT_PRODUCTION_ACTIVATED`, dan business readiness `BLOCKED_EXTERNAL`.
+
 ## 2026-08-25 - Snap and Fit encrypted event-scoped face search
 
 - Exact private feature `96df668` dan docs head `822933f` menghubungkan worker,
