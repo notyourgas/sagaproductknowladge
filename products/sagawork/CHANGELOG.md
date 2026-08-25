@@ -8,6 +8,13 @@ Mencatat perubahan material SagaWork dengan status delivery dan activation yang 
 
 Synthetic fixture, preview, dan staging bukan bukti real pilot atau production activation.
 
+## 2026-08-25 - Guarded Staff lifecycle dan access revocation
+
+- `CONFIRMED` dari exact source/active isolated Hostinger staging `da2e662`, documentation head `5a9515c`, serta synthetic build/test/runtime evidence.
+- People workspace memisahkan status kerja dan akses. HR dapat suspend/restore membership Staff dengan immediate session revoke, terminate setelah future schedule/request/swap blocker bersih, lalu archive tanpa hard delete; PATCH profil tidak dapat mengubah lifecycle terminal.
+- Aktivasi ikut mempromosikan employment menjadi active. 25/84 unit test, 17-area smoke, security 7/7, 720 request/0 error, browser+Axe 12/4, backup checksum, manifest 26 file, dan rollback `da2e662 → b3c36cf → da2e662` lulus.
+- Delivery `STAGING_DEPLOYED`; activation `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED_EXTERNAL`. Rehire, scheduled/backdated termination, real offboarding SOP/authority, external provider/offsite/legal/device/pilot/public route, dan Andreas Go tetap pending.
+
 ## 2026-08-25 - Supervisor-assisted attendance
 
 - `CONFIRMED` dari feature source `fe222e1`, exact accepted Hostinger staging `b3c36cf`, documentation head `1dee547`, serta synthetic test/runtime evidence.

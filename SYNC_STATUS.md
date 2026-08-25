@@ -12,14 +12,25 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T16:22:32+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T16:25:37+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `ca0930b` |
-| Informasi terakhir disinkronkan | COYABAG Admin Varian integrity release `20260825-eeffc48`. |
-| Status sinkronisasi | `PRODUCTION_DEPLOYED / COMMERCE_NOT_ACTIVATED / BUSINESS_BLOCKED`. |
-| Konflik | Tidak ada; surface production dibedakan dari commerce production-activated. |
-| Error | Tidak ada error sinkronisasi; readiness tetap 30/42 dengan 12 blocker. |
+| Baseline sebelum pembaruan | `6e50a80` |
+| Informasi terakhir disinkronkan | SagaWork guarded Staff lifecycle active synthetic staging `da2e662`. |
+| Status sinkronisasi | `STAGING_DEPLOYED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`. |
+| Konflik | Tidak ada; synthetic staging dibedakan dari real pilot/production activation. |
+| Error | Tidak ada error sinkronisasi; rehire dan external/human Gate A-C/E tetap pending. |
+
+## File yang berubah pada sinkronisasi ini (SagaWork Staff lifecycle)
+
+- `products/sagawork/PRODUCT.md`
+- `products/sagawork/DOSSIER.md`
+- `products/sagawork/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## File yang berubah pada sinkronisasi ini (COYABAG Admin Varian integrity)
 

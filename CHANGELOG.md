@@ -1,5 +1,13 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - SagaWork Staff lifecycle sync
+
+- Produk/area: people CRUD, access management, employment lifecycle, session revocation, dan offboarding guard.
+- Informasi `CONFIRMED` berasal dari exact source/active isolated staging `da2e662`, documentation head `5a9515c`, dan synthetic build/test/runtime evidence.
+- Knowledge mencatat separate work/access status, employment activation, tenant-scoped suspend/restore, immediate session revoke, future-obligation termination blocker, terminate-today, archive/history preservation, serta audit reason.
+- Delivery `STAGING_DEPLOYED`; activation `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED_EXTERNAL`. Production tidak berubah. Rehire, real offboarding SOP/authority, provider/offsite/legal/device/pilot/public route, dan final Go Andreas tetap pending.
+- Dokumen terdampak: SagaWork product/dossier/changelog, portfolio, master knowledge, gaps, root changelog, dan sync status.
+
 ## 2026-08-25 - COYABAG Admin Varian integrity sync
 
 - Produk/area: Dashboard Varian, inventory truth, concurrency, permission, dan

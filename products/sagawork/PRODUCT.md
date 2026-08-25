@@ -18,6 +18,7 @@ SagaWork adalah PWA operasi tenaga kerja multi-lokasi untuk jadwal, absensi foto
 ## Scope tervalidasi
 
 - HR CRUD staff, invite/reset tanpa mengetahui password staff, role/scope, dan tenant isolation.
+- Status kerja dan akses dipisahkan. HR dapat suspend/restore akses Staff dengan pencabutan sesi, melakukan terminasi hanya setelah kewajiban jadwal/request/swap selesai, lalu archive tanpa menghapus histori; rehire belum termasuk pilot.
 - HR bulk import CSV memakai preview per baris, validasi tenant/lokasi/duplikat, commit atomik sebagai draft, dan audit; impor tidak membuat akun atau password staff.
 - Staff Home, jadwal, notes, konfirmasi shift, swap, request, dan check-in/break/check-out dengan paid/unpaid break policy.
 - Absensi darurat tanpa jadwal bersifat default-off; bila policy mengizinkan, staff memilih lokasi aktif, sistem membuat draft yang selalu direview, dan HR harus publish sebelum hasil dapat direkonsiliasi.
@@ -29,10 +30,10 @@ SagaWork adalah PWA operasi tenaga kerja multi-lokasi untuk jadwal, absensi foto
 
 ## Status saat ini
 
-- Exact active staging runtime `b3c36cf`; isolated Hostinger staging memakai MySQL 8.4 dengan 21 migration, data sintetis, serta same-VPS loopback object store khusus acceptance non-PII. Store ini bukan provider production/offsite/HA dan tidak menerima real employee/photo data.
+- Exact active staging runtime `da2e662`; isolated Hostinger staging memakai MySQL 8.4 dengan 21 migration, data sintetis, serta same-VPS loopback object store khusus acceptance non-PII. Store ini bukan provider production/offsite/HA dan tidak menerima real employee/photo data.
 - Vercel Preview `dpl_AJNsByPfcxvbFEmtk8KvRB92YL6m` `READY`, synthetic-only, tanpa MySQL atau custom domain.
 - Delivery `STAGING_DEPLOYED`; activation `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED_EXTERNAL`.
 
 ## Batas dan next gate
 
-Belum ada real employee/photo data, public DNS, external provider storage/DPA, offsite key escrow, human device UAT, legal/privacy approval, named pilot, atau closed beta. Training/test shift isolation dan multi-session policy juga masih terbuka. Payroll nominal/compliance tidak diklaim. Next gate: moderated synthetic UAT, external provider/recovery, GPS-camera field UAT, incident rehearsal, pilot/DPA, lalu final Go/No-Go Andreas.
+Belum ada real employee/photo data, public DNS, external provider storage/DPA, offsite key escrow, human device UAT, legal/privacy approval, named pilot, atau closed beta. Rehire, scheduled/backdated termination, real offboarding authority/SOP, training/test shift isolation, dan multi-session policy juga masih terbuka. Payroll nominal/compliance tidak diklaim. Next gate: moderated synthetic UAT, external provider/recovery, GPS-camera field UAT, incident rehearsal, pilot/DPA, lalu final Go/No-Go Andreas.

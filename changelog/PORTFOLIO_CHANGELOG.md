@@ -13,6 +13,13 @@
   lulus. Status `PRODUCTION_DEPLOYED`; readiness tetap 30/42, activation dan
   business readiness `BLOCKED`, dan commerce tetap fail-closed.
 
+## 2026-08-25 - SagaWork guarded Staff lifecycle
+
+- Exact source dan active isolated Hostinger staging `da2e662`; docs head `5a9515c` mencatat acceptance public-safe.
+- HR dapat membedakan status kerja/akses, suspend/restore Staff dengan session revoke, terminate hanya setelah future obligations bersih, serta archive tanpa menghapus histori. Aktivasi employee/employment kini konsisten.
+- 25/84 unit test, 17-area smoke, security 7/7, 720 request/0 error, browser+Axe 12/4, encrypted backup checksum, manifest 26 file, dan rollback dua arah lulus.
+- Delivery `STAGING_DEPLOYED`; production/real pilot tidak berubah. Rehire, offboarding authority/SOP, external provider/offsite/legal/device/named pilot/public route, dan final Go Andreas tetap pending.
+
 ## 2026-08-25 - SagaWork supervisor-assisted attendance
 
 - Exact feature source `fe222e1` aktif pada isolated Hostinger staging `b3c36cf`; docs head `1dee547` mencatat acceptance public-safe.
