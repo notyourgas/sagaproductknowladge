@@ -12,12 +12,31 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T20:36:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T21:01:53+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `9e4c9801b4a9986413ab3963aacc025a76303593` |
-| Informasi terakhir disinkronkan | COYABAG Catalog variant integrity pada exact source `0f09404c7af59d00d9f7134ba4f04387028216a2`. |
-| Status sinkronisasi | `PRODUCTION_DEPLOYED / ACTIVATION_BLOCKED / BUSINESS_READY=false`; commerce tetap fail-closed. |
+| Baseline sebelum pembaruan | `3263b79ae2d559e19f42fa7d6422e13dc34754b2` |
+| Informasi terakhir disinkronkan | SagaWork account-security acceptance pada exact implementation/runtime `80cf623b5e3eb01d53355ff62578eca325b295a0`. |
+| Status sinkronisasi | `STAGING_DEPLOYED / NOT_PRODUCTION_ACTIVATED / PILOT_READY_CANDIDATE / BUSINESS_READY=false`. |
+
+## SagaWork account-security acceptance
+
+- Exact implementation/runtime: `80cf623b5e3eb01d53355ff62578eca325b295a0`; documentation acceptance: `35c048a`.
+- Protected Preview `dpl_CYKzNDVtmoKvtEV2Eb8MGHJRj8BR` READY; Hostinger tetap isolated synthetic staging tanpa public route/real data.
+- Self-service password change, context/top-3.000 hash-only blocklist, 5/3 session cap, own-session inventory/termination, dan revoke-others tervalidasi.
+- 31/102 tests, 41-page build, 19-area smoke, abuse 8/8, browser/Axe 12/4, load 720/720, manifest 949 file, MySQL 56/22, encrypted restore zero-resurrection, dan guarded rollback PASS.
+- ASVS internal: 148 PASS, 79 N/A, 7 pending internal, 18 pending external, dan 1 Staff no-OTP risk acceptance; ini bukan certification/full-Level-2 claim.
+
+## File yang berubah pada sinkronisasi ini (SagaWork account security)
+
+- `products/sagawork/PRODUCT.md`
+- `products/sagawork/DOSSIER.md`
+- `products/sagawork/CHANGELOG.md`
+- `GAPS.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG Catalog variant integrity
 

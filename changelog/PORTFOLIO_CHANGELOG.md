@@ -1,5 +1,13 @@
 # Portfolio Changelog
 
+## 2026-08-25 - SagaWork account-security acceptance
+
+- `CONFIRMED`: exact Hostinger synthetic runtime `80cf623b5e3eb01d53355ff62578eca325b295a0` dan protected Preview `dpl_CYKzNDVtmoKvtEV2Eb8MGHJRj8BR` tervalidasi tanpa real data/public activation.
+- Self-service password change, contextual/top-3.000 hash-only password controls, lima Staff/tiga privileged session cap, own-session inventory/termination, dan revoke-other-session tersedia untuk Staff serta privileged user.
+- Evidence: 31/102 unit test, 19-area smoke, abuse 8/8, browser/Axe 12/4, load 720/720, MySQL 56 tables/22 migration, manifest 949 file, encrypted restore zero-resurrection, dan guarded rollback PASS.
+- Internal ASVS 5.0 disposition meningkat menjadi 148 PASS; 7 pending internal, 18 pending external, dan 1 Staff no-OTP risk acceptance tetap eksplisit. Ini bukan certification/full-Level-2 claim.
+- Delivery tetap `STAGING_DEPLOYED`; activation `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED_EXTERNAL`.
+
 ## 2026-08-25 - COYABAG Catalog variant integrity
 
 - Exact source `0f09404c7af59d00d9f7134ba4f04387028216a2` aktif pada immutable

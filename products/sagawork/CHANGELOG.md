@@ -8,6 +8,16 @@ Mencatat perubahan material SagaWork dengan status delivery dan activation yang 
 
 Synthetic fixture, preview, dan staging bukan bukti real pilot atau production activation.
 
+## 2026-08-25 - Self-service password dan session security
+
+- `CONFIRMED` dari exact implementation/runtime `80cf623b5e3eb01d53355ff62578eca325b295a0`, documentation acceptance `35c048a`, protected Preview `dpl_CYKzNDVtmoKvtEV2Eb8MGHJRj8BR`, dan exact Hostinger synthetic staging evidence.
+- Staff dan Owner/HR mendapat self-service password change dengan current-password verification, context/common-password rejection, dan revoke seluruh sesi lain. Pengguna dapat melihat/mengakhiri sesi sendiri; batas akun lima Staff atau tiga privileged.
+- Blocklist menyimpan 3.000 hash SHA-256 dari corpus checksum-pinned yang memenuhi policy; plaintext corpus, raw user agent, credential, dan PII tidak masuk knowledge/repository.
+- 31/102 test, 41-page build, 19-area smoke, abuse 8/8, browser/Axe 12/4, isolated load 720/720, schema-2 manifest 949 file, encrypted restore 56/22/26 dengan zero resurrection, dan rollback `80cf623 → 517bd6c → 80cf623` lulus.
+- OpenAPI sekarang 59 path/72 operasi/40 request components; MySQL tetap 56 application tables dengan 22 migration. ASVS internal menjadi 148 PASS, 79 N/A, 7 pending internal, 18 pending external, dan 1 risk acceptance.
+- Restricted artifact exact runtime 1.393.686 byte mempunyai SHA-256 `0e9acc4f5866a8e4bf18cddb0036236754faafaddc41969940c0b18fbdf4f390`; artifact tidak dipublikasikan.
+- Delivery `STAGING_DEPLOYED`; activation `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED_EXTERNAL`. Tidak ada real data, public route, provider production, atau closed-beta activation.
+
 ## 2026-08-25 - Exact ASVS disposition dan cross-platform release acceptance
 
 - `CONFIRMED` dari exact implementation/runtime `6ea328f6fbaf7052616c100abe1cacd79cadcfa2`, documentation acceptance `d005cfde68d95da5d9a21cd1695b10aa645c9785`, protected Preview `dpl_2zNRzrc9TpAWmPFBGP9aMyX88H7b`, dan exact Hostinger synthetic staging evidence.

@@ -1,5 +1,15 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - SagaWork account-security acceptance sync
+
+- Informasi `CONFIRMED` berasal dari exact implementation/runtime `80cf623b5e3eb01d53355ff62578eca325b295a0`, documentation acceptance `35c048a`, protected Preview `dpl_CYKzNDVtmoKvtEV2Eb8MGHJRj8BR`, dan synthetic Hostinger acceptance.
+- Produk/area: SagaWork authentication, password policy, session management, Staff/HR account UI, OpenAPI/MySQL, recovery, ASVS, release, dan handoff.
+- Knowledge mencatat self-service password change, context/top-3.000 hash-only blocklist, 5/3 session cap, own-session inventory/termination, 31/102 tests, 19-area smoke, abuse 8/8, browser/Axe 12/4, 720/720 load, manifest 949 file, restore/rollback, dan ASVS 148/79/7/18/1.
+- Klasifikasi: `CONFIRMED`; pemberi keputusan produk: Andreas; provenance: source/runtime/Preview/evidence tanggal 25 Agustus 2026.
+- Dokumen terdampak: SagaWork product/dossier/changelog, gaps, portfolio, master knowledge, root changelog, dan sync status.
+- Delivery `STAGING_DEPLOYED`; activation/production tidak berubah (`NOT_PRODUCTION_ACTIVATED`); business readiness tetap `BLOCKED_EXTERNAL`.
+- Blocker/next action: private remote+hosted CI, 26 ASVS non-pass dispositions, independent review, provider/DPA, offsite/key custody, legal/device/human UAT, named pilot/public route, 16 evidence, signed receipt, canary, dan final Andreas Go.
+
 ## 2026-08-25 - COYABAG Catalog variant integrity sync
 
 - Klasifikasi: `CONFIRMED`.
