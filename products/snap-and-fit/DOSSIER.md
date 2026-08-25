@@ -12,7 +12,8 @@ credential, PII, identifier tenant/perangkat, atau detail provider sensitif.
 - Delivery: `LOCAL_VALIDATED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED`
-- Provenance: exact private documentation head `176cf15`, MySQL 8.4 clean-room
+- Provenance: exact private source head `076f76b`, staging restore hardening
+  `076f76b`, MySQL 8.4 clean-room
   compatibility fix `4384948`, digest-only application
   release feature `d0f3b7d`, immutable supply-chain hardening `ee45e56`, authoritative load
   fixture `4f9d8d3`, ShellCheck acceptance
@@ -31,9 +32,9 @@ credential, PII, identifier tenant/perangkat, atau detail provider sensitif.
   durable notification worker `d964fea`, lifecycle/retention worker `4d602d9`,
   protected Vercel preview `dpl_CeGgE8rxJX58qQpTGzdqUoPc6iQn` dari implementation
   source `4384948`.
-- Hosted CI evidence: exact documentation-head run `32848538160` berhenti sebelum
+- Hosted CI evidence: exact current-head run `32859199601` berhenti sebelum
   assignment runner dengan steps kosong dan anotasi account payment/spending
-  limit. Run `32847799797` pada MySQL implementation head dan `32844518323` pada
+  limit. Run sebelumnya pada protected-preview docs, MySQL implementation, dan
   digest-only feature head menunjukkan pola yang sama. Local/static gates tetap
   lulus, tetapi hosted run tidak;
   protected-main enforcement juga belum
@@ -230,6 +231,11 @@ fotografer desktop-optimized.
 - Remote Linux build menjadi deployment path preview yang terbukti. Vercel CLI
   58.4.4 local Windows `--prebuilt` selesai membangun Next tetapi gagal memetakan
   static `/account/orders`; artefak prebuilt Windows belum boleh dipromosikan.
+- Restore verifier mengoreksi exact identity table menjadi `auth_user` dan
+  menolak schema inti tidak lengkap, migration unfinished/rolled-back, orphan
+  deletion task, atau ledger yang tidak seimbang per currency. Healthy plus
+  empat failure mode lulus behavioral shell gate; changed script dan test juga
+  lulus checksum-verified ShellCheck v0.11.0 severity `style`.
 
 ## Risiko dan gate terbuka
 

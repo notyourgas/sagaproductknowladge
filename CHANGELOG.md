@@ -1,5 +1,21 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - Snap and Fit restore-verifier hardening sync
+
+- Klasifikasi: `CONFIRMED`.
+- Produk/area: staging recovery, schema identity, migration history, privacy
+  relation, ledger integrity, release preflight, dan hosted CI provenance.
+- Informasi berasal dari exact private source `076f76b`, behavioral recovery
+  tests, checksum-verified ShellCheck, full validation, audit dependency, serta
+  hosted run `32859199601`.
+- Knowledge mencatat koreksi `auth_user`, healthy migration requirement, orphan
+  deletion rejection, dan ledger balance per currency.
+- Production tidak berubah. Delivery tetap `LOCAL_VALIDATED`; encrypted
+  off-host restore, isolated staging, activation, dan business readiness tetap
+  blocked.
+- Dokumen terdampak: Snap and Fit product/dossier/changelog, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-25 - COYABAG Product Card cart-aware integrity sync
 
 - Klasifikasi: `CONFIRMED`.

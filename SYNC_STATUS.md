@@ -12,12 +12,32 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T21:11:13+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T21:24:01+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `3947f70914fe0c44e35e6ca3966e2cd6acfabe40` |
-| Informasi terakhir disinkronkan | COYABAG Product Card cart-aware integrity pada exact source `7875667fc29fb54e522c102e891548e82e351c25`. |
-| Status sinkronisasi | `PRODUCTION_DEPLOYED / ACTIVATION_BLOCKED / BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `ef73c4e35e85af33dc82e28c4ea93bbdd7588552` |
+| Informasi terakhir disinkronkan | Snap and Fit fail-closed restore hardening pada exact source `076f76b`. |
+| Status sinkronisasi | `LOCAL_VALIDATED / STAGING_READY=BLOCKED / ACTIVATION_BLOCKED`. |
+
+## Snap and Fit fail-closed restore hardening
+
+- Exact source head: `076f76b`.
+- Recovery gate memeriksa exact schema, healthy migration history, deletion-task
+  referential integrity, dan per-currency ledger balance.
+- Healthy plus empat corrupt/incomplete fixtures, ShellCheck, full validation,
+  dan audit dependency lulus.
+- Hosted run `32859199601` tidak memperoleh runner/step karena account billing
+  gate; isolated encrypted restore belum dijalankan.
+
+## File yang berubah pada sinkronisasi ini (Snap and Fit restore hardening)
+
+- `products/snap-and-fit/PRODUCT.md`
+- `products/snap-and-fit/DOSSIER.md`
+- `products/snap-and-fit/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG Product Card cart-aware integrity
 

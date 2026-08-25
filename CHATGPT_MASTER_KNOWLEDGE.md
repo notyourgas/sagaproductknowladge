@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 25 Agustus 2026 21:23 WIB
+Evidence cut-off: 25 Agustus 2026 21:24 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -19,8 +19,9 @@ activation, authenticated UAT, atau business-ready claim.
 
 SagaWork exact implementation/runtime `80cf623b5e3eb01d53355ff62578eca325b295a0` berstatus `CONFIRMED / STAGING_DEPLOYED / NOT_PRODUCTION_ACTIVATED / PILOT_READY_CANDIDATE / BUSINESS_READY=false`; documentation acceptance head `35c048a`. Isolated Hostinger staging memakai synthetic data, MySQL 8.4 dengan 22 migration, dan same-VPS loopback object store acceptance non-PII; protected Vercel Preview `dpl_CYKzNDVtmoKvtEV2Eb8MGHJRj8BR` `READY`, 41-page build, authenticated health/security-header/safe-worker PASS tanpa MySQL/custom domain. Scope tervalidasi mencakup staff no-OTP dan privileged TOTP; self-service password change; context/top-3.000 hash-only blocklist; lima Staff/tiga privileged session cap, own-session inventory/termination/revoke-others; people/CSV/lifecycle; scheduling/notes/swap; attendance foto+GPS/private non-PII byte pipeline; break; default-off unscheduled; assisted attendance; PWA; per-staff/CSV reporting; correction/request, overtime partial approval, Reliability 50/30/20, period lock/reopen, retention, dan recovery. Acceptance meluluskan 31/102 unit test, 19-area smoke, security abuse 8/8, browser/Axe 12/4, isolated load 720/720 dengan p95 `125,7/396,5/331,9 ms`, schema-2 manifest 949 file, encrypted restore 56 tables/22 migration/26 trigger/zero resurrection, dan rollback `80cf623 → 517bd6c → 80cf623`. Restricted exact-runtime artifact 1.393.686 byte dengan checksum/provenance/content-exclusion PASS serta tidak dipublikasikan. Pilot admission control `3bcdf06`/`a36ac8e` tetap memakai Andreas-only Ed25519 signing dan exact-set 16 evidence; real receipt belum ada. Validated OpenAPI 3.1.1 mencakup 59 path/72 operasi/40 request components. Internal ASVS 5.0 profile: 148 pass internal, 79 not applicable, 7 pending internal, 18 pending external, dan 1 risk acceptance; ini bukan sertifikasi/full-Level-2 claim. Private source remote/hosted CI, 26 ASVS non-pass disposition, independent security verification, external provider/DPA/offsite/key custody, public route, legal/privacy, capacity monitoring, human/device/pilot evidence, named champion/company, real signed admission receipt, canary, dan activation masih blocker. Loopback store tidak menerima real employee/photo data; payroll compliance tidak diklaim.
 
-Snap and Fit exact private documentation head `176cf15` berstatus `CONFIRMED /
-LOCAL_VALIDATED`; MySQL 8.4 clean-room compatibility fix berasal dari `4384948`,
+Snap and Fit exact private source head `076f76b` berstatus `CONFIRMED /
+LOCAL_VALIDATED`; staging restore hardening berasal dari `076f76b`, MySQL 8.4
+clean-room compatibility fix berasal dari `4384948`,
 sedangkan digest-only application release feature berasal dari `d0f3b7d`,
 immutable supply-chain hardening berasal dari `ee45e56`,
 authoritative load fixture berasal dari `4f9d8d3`, ShellCheck
@@ -65,9 +66,9 @@ reference verifier. Actionlint, enam-file ShellCheck, Compose immutable set,
 release preflight, full validation, serta production dependency audit nol lulus;
 workflow BuildKit SBOM/provenance/digest tersedia, tetapi hosted image build,
 emission verification, scan, pull, dan runtime tetap staging gate.
-Exact documentation-head GitHub Actions run `32848538160` berhenti sebelum runner
+Exact current-head GitHub Actions run `32859199601` berhenti sebelum runner
 ditetapkan dan tanpa satu pun step karena account payment/spending-limit gate;
-run `32847799797` pada MySQL implementation head dan `32844518323` pada digest-only
+run sebelumnya pada protected-preview docs, MySQL implementation, dan digest-only
 feature head menunjukkan pola yang sama. Ini
 hosted-runner/account blocker, bukan source regression. Required-check
 enforcement juga belum tersedia karena branch-protection API untuk private
@@ -82,6 +83,11 @@ Vercel remote Linux build untuk `4384948` lulus dan protected smoke membuktikan
 web shell/PWA 200, security headers, serta BFF health fail-closed 503. Vercel CLI
 58.4.4 local Windows prebuilt packaging belum menjadi release path karena gagal
 memetakan static `/account/orders` setelah Next build sukses.
+Restore verifier kini memeriksa exact `auth_user`, schema inti, migration
+finished/non-rolled-back, orphan deletion task, dan per-currency ledger balance.
+Healthy serta empat corrupt/incomplete behavioral fixture lulus fail-closed;
+changed script/test lulus checksum-verified ShellCheck v0.11.0, full validation,
+dan audit dependency. Ini bukan encrypted off-host staging restore evidence.
 Official liveness React peer metadata ditutup dengan narrow exact-edge rule;
 frozen install, fresh web build, full validation, 53 browser tests, audit, dan
 peer check lulus. Ini bukan real-device camera evidence.

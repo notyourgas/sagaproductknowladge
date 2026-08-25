@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-25 - Snap and Fit fail-closed restore hardening
+
+- Exact private source `076f76b` memperbaiki recovery schema identity dan
+  menambah fail-closed migration, deletion-relation, serta per-currency ledger
+  checks.
+- Healthy dan empat corrupt/incomplete fixture, syntax, ShellCheck, full
+  validation, serta audit dependency lulus. Hosted run tetap account-gated.
+- Delivery `LOCAL_VALIDATED`; encrypted off-host staging restore dan production
+  tidak berubah.
+
 ## 2026-08-25 - SagaView S288 inactive rollback restored
 
 - Exact tooling `94675a5f1b432182de0f3cd22a4982c654c11c69` memulihkan

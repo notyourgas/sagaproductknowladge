@@ -47,8 +47,9 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 - Delivery: `LOCAL_VALIDATED`.
 - Activation: `NOT_PRODUCTION_ACTIVATED`.
 - Business readiness: `BLOCKED`.
-- Exact private documentation head `176cf15`; MySQL 8.4 clean-room compatibility fix
-  berasal dari `4384948`, sedangkan digest-only application release feature
+- Exact private source head `076f76b`; staging restore hardening berasal dari
+  `076f76b`, MySQL 8.4 clean-room compatibility fix berasal dari `4384948`, dan
+  digest-only application release feature
   berasal dari `d0f3b7d`, immutable supply-chain hardening berasal dari `ee45e56`,
   authoritative load fixture berasal dari `4f9d8d3`, ShellCheck
   acceptance berasal dari `162cc29`, clean-checkout setup
@@ -110,11 +111,10 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   dependency produksi nol vulnerability lulus. Container workflow dikonfigurasi
   menghasilkan BuildKit SBOM/provenance dan manifest digest; image belum
   dibangun/dijalankan sehingga emission/runtime evidence tetap gate.
-- Hosted GitHub Actions run `32848538160` pada exact documentation head `176cf15`
+- Hosted GitHub Actions run `32859199601` pada exact current head `076f76b`
   gagal sebelum satu pun step berjalan: runner belum ditetapkan dan steps kosong;
-  anotasi menyatakan account payment/spending-limit gate. Run implementation
-  `32847799797` pada `4384948` dan run `32844518323` pada feature head `d0f3b7d`
-  memiliki pola yang sama.
+  anotasi menyatakan account payment/spending-limit gate. Run sebelumnya pada
+  `176cf15`, `4384948`, dan `d0f3b7d` memiliki pola yang sama.
   Ini adalah bukti blocker hosted-runner/account, bukan kegagalan source gate.
   Current-head run menjadi evidence hosted terbaru. Branch protection private
   repository juga tetap plan-gated (API mengembalikan 403), sehingga
@@ -146,6 +146,11 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   smoke terproteksi; BFF health sengaja 503 sampai isolated backend tersedia.
   Local Windows prebuilt packaging belum menjadi release path karena CLI 58.4.4
   gagal memetakan static `/account/orders` setelah Next build sukses.
+- Recovery verifier kini memakai tabel authoritative `auth_user`, bukan nama
+  plural yang tidak ada. Restore hanya lulus bila schema inti lengkap, migration
+  history sehat, tidak ada orphan deletion task, dan ledger seimbang per mata
+  uang. Behavioral shell gate menerima healthy fixture dan menolak missing
+  schema, orphan, migration tidak sehat, serta ledger tidak seimbang.
 - Installable PWA memakai navigation network-first dan offline fallback yang
   menyatakan tidak ada aksi terkirim. Cache Storage hanya mengizinkan offline
   shell, public icon, serta same-origin static asset non-private; API, auth,

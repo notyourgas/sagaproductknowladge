@@ -10,6 +10,20 @@ production, activation, dan business readiness.
 Mock, fixture, preview frontend, dan test lokal bukan bukti provider atau
 production activation.
 
+## 2026-08-25 - Fail-closed staging restore verification
+
+- Exact private source `076f76b` berstatus `LOCAL_VALIDATED`.
+- Recovery verifier mengoreksi `auth_users` menjadi authoritative `auth_user`;
+  mismatch lama membuat restore sehat ditolak sebelum drill dapat berjalan.
+- Gate sekarang juga mewajibkan migration history sehat, nol orphan deletion
+  task, dan ledger seimbang per currency. Behavioral test menerima healthy
+  fixture dan menolak empat state corrupt/incomplete.
+- Git Bash syntax, checksum-verified ShellCheck v0.11.0, full validation, serta
+  production dependency audit nol vulnerability lulus.
+- Hosted run `32859199601` tetap tidak memperoleh runner/step karena account
+  billing gate. Production dan delivery tidak berubah; encrypted off-host
+  staging restore tetap belum dieksekusi.
+
 ## 2026-08-25 - Exact-head protected preview refresh
 
 - Exact private documentation head `176cf15`; preview implementation source
