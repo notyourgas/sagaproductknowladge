@@ -3363,14 +3363,16 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release aktif `20260825-0f09404` menjalankan exact source
-`0f09404c7af59d00d9f7134ba4f04387028216a2` dengan rollback
-`20260825-92655c2`. Filter warna katalog mengendalikan varian kartu untuk media,
-harga, stok, detail, Quick View, dan cart. Filter ketersediaan serta sorting
-harga memakai varian yang sama; warna habis dapat diperiksa tetapi pembelian
-tetap fail-closed. Full regression, desktop/mobile acceptance,
-backup/rollback, dan public smoke lulus tanpa mutasi data commerce. Readiness
-tetap 30/42 dengan 12 blocker; commerce tidak diaktifkan.
+Release aktif `20260825-7875667` menjalankan exact source
+`7875667fc29fb54e522c102e891548e82e351c25` dengan rollback
+`20260825-0f09404`. Product Card dan Quick View memakai identitas varian exact
+serta jumlah Cart yang sama. State parsial menunjukkan jumlah, sisa stok, dan
+`Tambah Lagi`; batas live menampilkan `Sudah Maks.` serta menonaktifkan
+pembelian sebelum klik invalid. Pengurangan jumlah memulihkan aksi langsung;
+warna habis tetap inspectable tetapi tidak buyable. Full regression,
+desktop/mobile fixture dan production acceptance, backup/rollback, serta public
+smoke lulus tanpa membuat order atau mengubah data commerce. Readiness tetap
+30/42 dengan 12 blocker; commerce tidak diaktifkan.
 
 Release sebelumnya `20260825-43a7d6b` menjalankan exact source
 `43a7d6be6bc2bdde92d7b2c4c554c9d00c3196cd` dengan rollback

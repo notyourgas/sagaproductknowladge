@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-25 - COYABAG Product Card cart-aware integrity
+
+- Exact source `7875667fc29fb54e522c102e891548e82e351c25` aktif pada immutable
+  Hostinger release `20260825-7875667` dengan rollback `20260825-0f09404`.
+- Product Card dan Quick View kini menunjukkan jumlah varian exact di Cart,
+  sisa stok, aksi tambah ulang, batas maksimum fail-closed, dan recovery setelah
+  pengurangan jumlah pada desktop/mobile.
+- Full regression, security/build, backup/rollback, dan public smoke lulus tanpa
+  membuat order atau mengubah data commerce. Delivery `PRODUCTION_DEPLOYED`;
+  readiness tetap 30/42 dan commerce tetap fail-closed.
+
 ## 2026-08-25 - SagaWork account-security acceptance
 
 - `CONFIRMED`: exact Hostinger synthetic runtime `80cf623b5e3eb01d53355ff62578eca325b295a0` dan protected Preview `dpl_CYKzNDVtmoKvtEV2Eb8MGHJRj8BR` tervalidasi tanpa real data/public activation.

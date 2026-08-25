@@ -12,12 +12,33 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T21:01:53+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T21:11:13+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `3263b79ae2d559e19f42fa7d6422e13dc34754b2` |
-| Informasi terakhir disinkronkan | SagaWork account-security acceptance pada exact implementation/runtime `80cf623b5e3eb01d53355ff62578eca325b295a0`. |
-| Status sinkronisasi | `STAGING_DEPLOYED / NOT_PRODUCTION_ACTIVATED / PILOT_READY_CANDIDATE / BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `3947f70914fe0c44e35e6ca3966e2cd6acfabe40` |
+| Informasi terakhir disinkronkan | COYABAG Product Card cart-aware integrity pada exact source `7875667fc29fb54e522c102e891548e82e351c25`. |
+| Status sinkronisasi | `PRODUCTION_DEPLOYED / ACTIVATION_BLOCKED / BUSINESS_READY=false`. |
+
+## COYABAG Product Card cart-aware integrity
+
+- Exact source: `7875667fc29fb54e522c102e891548e82e351c25`.
+- Immutable release: `20260825-7875667`; rollback: `20260825-0f09404`.
+- Product Card dan Quick View menampilkan jumlah varian exact di Cart, sisa
+  stok, add-again, maximum fail-closed, serta recovery setelah quantity turun.
+- Full regression, desktop/mobile fixture dan public acceptance,
+  security/build, backup/rollback, dan public smoke lulus tanpa mutasi data
+  commerce.
+- Readiness tetap 30/42 dengan 12 blocker; commerce/provider tidak diaktifkan.
+
+## File yang berubah pada sinkronisasi ini (COYABAG Product Card integrity)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaWork account-security acceptance
 

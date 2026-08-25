@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - COYABAG Product Card cart-aware integrity sync
+
+- Klasifikasi: `CONFIRMED`.
+- Produk/area: Storefront Product Card, Quick View, cart quantity, stock limit,
+  responsive UI, accessibility, security, dan immutable Hostinger release.
+- Provenance public-safe: source
+  `7875667fc29fb54e522c102e891548e82e351c25`, release
+  `20260825-7875667`, rollback `20260825-0f09404`, dan runtime verification.
+- Jumlah varian exact, sisa stok, add-again, maximum fail-closed, serta recovery
+  setelah quantity turun kini konsisten pada card dan Quick View.
+- Delivery `PRODUCTION_DEPLOYED`; activation dan business readiness `BLOCKED`.
+  Readiness tetap 30/42 dengan 12 blocker; commerce tetap fail-closed.
+- Dokumen terdampak: COYABAG product/dossier/changelog, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-25 - SagaWork account-security acceptance sync
 
 - Informasi `CONFIRMED` berasal dari exact implementation/runtime `80cf623b5e3eb01d53355ff62578eca325b295a0`, documentation acceptance `35c048a`, protected Preview `dpl_CYKzNDVtmoKvtEV2Eb8MGHJRj8BR`, dan synthetic Hostinger acceptance.

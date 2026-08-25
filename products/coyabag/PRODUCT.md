@@ -61,9 +61,13 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260825-0f09404` dengan source
-  `0f09404c7af59d00d9f7134ba4f04387028216a2` melayani production;
-  rollback langsung `20260825-92655c2` dipertahankan.
+- Release aktif `20260825-7875667` dengan source
+  `7875667fc29fb54e522c102e891548e82e351c25` melayani production;
+  rollback langsung `20260825-0f09404` dipertahankan.
+- Product Card dan Quick View mengikuti jumlah varian exact di Cart. State
+  parsial menampilkan jumlah di keranjang, sisa stok, dan `Tambah Lagi`; batas
+  stok menonaktifkan pembelian sebagai `Sudah Maks.` dan pengurangan jumlah
+  langsung memulihkan aksi.
 - Filter warna katalog memilih varian kartu yang sama untuk media, harga, stok,
   detail, Quick View, dan cart. Filter tersedia serta urutan harga memakai
   varian tersebut. Warna habis dapat diperiksa, tetapi pembelian tetap

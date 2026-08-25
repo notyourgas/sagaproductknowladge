@@ -4,6 +4,20 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-25 - Storefront Product Card cart-aware production release
+
+- Klasifikasi: `CONFIRMED` dari exact source
+  `7875667fc29fb54e522c102e891548e82e351c25`, immutable Hostinger release
+  `20260825-7875667`, rollback `20260825-0f09404`, dan runtime verification.
+- Product Card dan Quick View memakai identitas varian exact serta jumlah Cart
+  yang sama. UI menampilkan jumlah, sisa stok, `Tambah Lagi`, state
+  `Sudah Maks.`, dan recovery langsung setelah pengurangan jumlah.
+- TDD, full regression, desktop/mobile fixture serta public acceptance,
+  security/build, backup/rollback, dan public smoke lulus tanpa membuat order
+  atau mengubah data commerce.
+- Delivery `PRODUCTION_DEPLOYED`; readiness tetap 30/42 dengan 12 blocker.
+  Activation dan business readiness tetap `BLOCKED`; commerce tidak diaktifkan.
+
 ## 2026-08-25 - Storefront Catalog variant integrity production release
 
 - Klasifikasi: `CONFIRMED` dari exact source

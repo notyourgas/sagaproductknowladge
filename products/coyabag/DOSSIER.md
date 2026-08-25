@@ -78,14 +78,22 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260825-0f09404` memakai source
+Release production terbaru `20260825-7875667` memakai source
+`7875667fc29fb54e522c102e891548e82e351c25` dan rollback
+`20260825-0f09404`. Product Card serta Quick View menghitung jumlah Cart dari
+identitas varian exact. State parsial menampilkan jumlah di Cart, sisa stok,
+dan `Tambah Lagi`; batas live menonaktifkan purchase sebagai `Sudah Maks.`
+sebelum klik invalid. Pengurangan satu unit memulihkan aksi langsung, sedangkan
+warna habis tetap inspectable tetapi tidak buyable. Full regression,
+desktop/mobile fixture dan production acceptance, backup/rollback, serta public
+smoke lulus tanpa membuat order atau mengubah data commerce. Readiness tetap
+30/42 dan commerce tetap fail-closed.
+
+Release sebelumnya `20260825-0f09404` memakai source
 `0f09404c7af59d00d9f7134ba4f04387028216a2` dan rollback
-`20260825-92655c2`. Filter warna katalog kini memilih varian yang sama untuk
-media, harga, stok, detail, Quick View, dan cart. Filter ketersediaan serta
-urutan harga memakai varian terpilih; warna habis tetap dapat diperiksa tetapi
-purchase action fail-closed. Full regression, desktop/mobile acceptance,
-backup/rollback, dan public smoke lulus. Readiness tetap 30/42 dan commerce
-tetap fail-closed.
+`20260825-92655c2`. Filter warna katalog memilih varian yang sama untuk media,
+harga, stok, detail, Quick View, dan cart. Filter ketersediaan serta urutan
+harga memakai varian terpilih; warna habis dapat diperiksa tetapi tidak dibeli.
 
 Release sebelumnya `20260825-43a7d6b` memakai source
 `43a7d6be6bc2bdde92d7b2c4c554c9d00c3196cd` dan rollback
