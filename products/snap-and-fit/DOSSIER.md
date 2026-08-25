@@ -12,7 +12,8 @@ credential, PII, identifier tenant/perangkat, atau detail provider sensitif.
 - Delivery: `LOCAL_VALIDATED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED`
-- Provenance: exact private source/docs head `5035602`, fail-closed 300-VU load
+- Provenance: exact private source/docs head `4b6c08b`, native age recovery
+  evidence `4b6c08b`, fail-closed 300-VU load
   feature `f06d538`, 500-file uploader recovery feature `6f57416`, fail-closed
   repository security-scan feature `db4e709`, deterministic Nginx staging host-policy
   feature `7fdd49a`, encrypted-recovery feature `a6857d1`,
@@ -232,6 +233,11 @@ fotografer desktop-optimized.
   pulih ke database kedua dengan 51 tabel, delapan recovery table wajib, 18
   migration row, nol orphan deletion task, dan ledger Rp25.000/Rp25.000 seimbang.
   Ini evidence lokal, bukan encrypted off-host restore atau deployed staging.
+- Actual native age v1.3.1 local drill mengalirkan dump sintetis melalui gzip dan
+  encryption tanpa plaintext artifact, menjaga checksum setelah simulated
+  off-host move, menolak modified ciphertext, dan memulihkan 51 tabel ke MySQL
+  kedua. Delapan recovery table, 18 migration sehat, deletion integrity, dan
+  ledger balance lulus dalam 26,23 detik; kedua port disposable ditutup.
 - Enam face-provider test, delapan media test, dan lima observability test lulus.
 - 55 Playwright mobile/desktop lulus dan tiga project-specific skip disengaja;
   operator controlled demo, checkout/order library, role workflow, preview upload,

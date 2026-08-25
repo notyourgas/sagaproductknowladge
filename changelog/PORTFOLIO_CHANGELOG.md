@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-26 - Snap and Fit native age recovery preflight
+
+- Exact private evidence source `4b6c08b` menjalankan actual MySQL 8.4.9 dump →
+  gzip → native age v1.3.1 → decrypt → second-MySQL restore tanpa plaintext dump.
+- Modified ciphertext ditolak; 51 tabel, delapan recovery table, 18 migration
+  sehat, deletion integrity, dan per-currency ledger balance lulus dalam 26,23 detik.
+- Full validation dan dependency/peer audit lulus. Delivery tetap
+  `LOCAL_VALIDATED`; real encrypted off-host transfer, key custody, Linux
+  permission, RPO/RTO, dan staging rollback masih external gate.
+
 ## 2026-08-26 - Snap and Fit fail-closed 300-VU local preflight
 
 - Exact private feature `f06d538` membatasi load target ke loopback preflight

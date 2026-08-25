@@ -10,6 +10,21 @@ production, activation, dan business readiness.
 Mock, fixture, preview frontend, dan test lokal bukan bukti provider atau
 production activation.
 
+## 2026-08-26 - Native age encrypted recovery preflight
+
+- Exact private evidence/docs source `4b6c08b`.
+- MySQL 8.4.9 source menerapkan 18/18 migration dan synthetic seed. Dump dialirkan
+  langsung melalui gzip dan official age v1.3.1 tanpa plaintext artifact.
+- Encrypted checksum stabil setelah simulated off-host move; modified ciphertext
+  ditolak. Restore ke MySQL kedua menghasilkan 51 tabel, delapan recovery table,
+  18 migration sehat, nol orphan deletion task, dan ledger seimbang dalam 26,23 detik.
+- Full validation, production dependency audit, peer check, dan diff check lulus;
+  kedua disposable MySQL port ditutup dan service existing tidak disentuh.
+- Klasifikasi `CONFIRMED`; delivery tetap `LOCAL_VALIDATED`, production dan
+  activation tidak berubah, business readiness tetap `BLOCKED`. Real off-host
+  custody/retention, Linux permission, isolated-staging RPO/RTO, dan rollback
+  masih exit gate.
+
 ## 2026-08-26 - Fail-closed 300-VU local preflight
 
 - Exact private load feature `f06d538`; source/docs head `5035602`.

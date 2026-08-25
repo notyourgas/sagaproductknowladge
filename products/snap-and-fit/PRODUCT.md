@@ -48,7 +48,8 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 - Delivery: `LOCAL_VALIDATED`.
 - Activation: `NOT_PRODUCTION_ACTIVATED`.
 - Business readiness: `BLOCKED`.
-- Exact private source/docs head `5035602`; fail-closed 300-VU load feature
+- Exact private source/docs head `4b6c08b`; native age recovery evidence berasal
+  dari `4b6c08b`, fail-closed 300-VU load feature
   berasal dari `f06d538`, 500-file uploader recovery feature berasal dari
   `6f57416`, fail-closed repository security-scan feature berasal
   dari `db4e709`, deterministic Nginx staging host-policy
@@ -151,10 +152,12 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 - MySQL backup kini mengalirkan dump melalui gzip langsung ke native `age` dan
   hanya menulis `.sql.gz.age` plus checksum. Restore menolak plaintext,
   mewajibkan identity root-owned mode `0600`, memeriksa checksum/dekripsi, dan
-  menyalurkan plaintext hanya ke disposable import. Fixture lokal membuktikan
-  penolakan permission longgar, plaintext, dan ciphertext rusak serta checksum
-  tetap portabel setelah artifact dipindah; real binary, off-host transfer,
-  retention, key custody, serta RPO/RTO restore masih gate isolated staging.
+  menyalurkan plaintext hanya ke disposable import. Actual local native age
+  v1.3.1 drill menerapkan 18 migration, streaming dump/gzip/encrypt tanpa
+  plaintext artifact, menolak ciphertext yang diubah, dan memulihkan 51 tabel
+  dengan schema recovery lengkap, nol orphan deletion task, serta ledger
+  seimbang dalam 26,23 detik. Real off-host transfer, Linux permission,
+  retention, separate key custody, dan RPO/RTO tetap gate isolated staging.
 - Runtime release kini memiliki tiga artifact digest-addressed terpisah untuk
   API, worker, dan one-shot migration/seed. Semua package first-party memakai
   file allowlist; artifact deploy menghapus development script dan host-path

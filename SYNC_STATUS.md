@@ -12,12 +12,36 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-26T01:43:14+07:00 |
+| Waktu pembaruan terakhir | 2026-08-26T01:55:47+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | exact `origin/main` `36be16c` sebelum sinkronisasi Snap and Fit load preflight |
-| Informasi terakhir disinkronkan | Snap and Fit fail-closed 300-VU local synthetic preflight. |
+| Baseline sebelum pembaruan | exact `origin/main` `c0f92ea` sebelum sinkronisasi Snap and Fit native age recovery preflight |
+| Informasi terakhir disinkronkan | Snap and Fit native age v1.3.1 encrypted recovery preflight. |
 | Status sinkronisasi | `LOCAL_VALIDATED`; staging, production, activation, dan business readiness tetap blocked. |
+
+## Snap and Fit native age encrypted recovery preflight
+
+- Exact private source/docs `4b6c08b`.
+- Dua disposable MySQL 8.4.9 process menjalankan 18 migration, synthetic seed,
+  direct dump → gzip → native age v1.3.1 encryption, decrypt, dan second-database restore.
+- Tidak ada plaintext dump artifact. Checksum stabil setelah simulated off-host
+  move dan modified ciphertext ditolak.
+- Restore menghasilkan 51 tabel, delapan recovery table, 18 migration sehat,
+  nol orphan deletion task, dan ledger seimbang dalam 26,23 detik.
+- Full validation, production dependency audit, peer check, dan diff check lulus;
+  kedua disposable port ditutup dan existing MySQL tidak disentuh.
+- Real encrypted off-host transfer, separate key custody, Linux permission,
+  retention, isolated-staging RPO/RTO, dan rollback tetap external gate.
+
+## File yang berubah pada sinkronisasi ini (Snap and Fit native recovery)
+
+- `products/snap-and-fit/PRODUCT.md`
+- `products/snap-and-fit/DOSSIER.md`
+- `products/snap-and-fit/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## Snap and Fit fail-closed 300-VU local preflight
 

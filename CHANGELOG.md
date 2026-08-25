@@ -1,5 +1,23 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-26 - Snap and Fit native age recovery preflight sync
+
+- Ringkasan: sinkronisasi actual native age v1.3.1 encrypted recovery drill pada
+  dua disposable MySQL 8.4.9 instance dengan zero plaintext dump artifact.
+- Alasan: recovery sebelumnya membuktikan behavioral contract dan plaintext
+  clean-room restore, tetapi belum menjalankan cryptographic runtime end-to-end.
+- Produk/area: Snap and Fit backup, restore, privacy integrity, DevOps, release
+  readiness, dan disaster recovery.
+- Klasifikasi: `CONFIRMED`; private source/docs `4b6c08b`, 18 migration, 51 tabel,
+  delapan recovery table, tamper rejection, nol orphan deletion task, dan ledger
+  balance dalam 26,23 detik.
+- Production berubah: tidak. Delivery tetap `LOCAL_VALIDATED`; activation
+  `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED`.
+- Dokumen terdampak: Snap and Fit product/dossier/changelog, portfolio, master
+  knowledge, root changelog, dan sync status.
+- Blocker/next action: approved isolated VPS, real encrypted off-host target,
+  separate key custody, Linux permission, recurring retention, RPO/RTO, dan rollback.
+
 ## 2026-08-26 - Snap and Fit fail-closed 300-VU load preflight sync
 
 - Ringkasan: sinkronisasi fail-closed load-target guard dan actual local
