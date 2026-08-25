@@ -12,8 +12,9 @@ credential, PII, identifier tenant/perangkat, atau detail provider sensitif.
 - Delivery: `LOCAL_VALIDATED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED`
-- Provenance: exact private source head `ef1b7e9`, deterministic Nginx staging
-  host-policy feature `7fdd49a`, encrypted-recovery feature `a6857d1`,
+- Provenance: exact private source head `3a37ae8`, fail-closed repository
+  security-scan feature `db4e709`, deterministic Nginx staging host-policy
+  feature `7fdd49a`, encrypted-recovery feature `a6857d1`,
   fail-closed staging-host preflight `fc383e1`, runtime-artifact
   hardening `e64b002`,
   protected-preview evidence refresh `eec6269`, full-validation
@@ -37,9 +38,9 @@ credential, PII, identifier tenant/perangkat, atau detail provider sensitif.
   durable notification worker `d964fea`, lifecycle/retention worker `4d602d9`,
   protected Vercel preview `dpl_3PW4rbAek9FijQy9vU3Dfb1UMTUw` dari exact
   source `e6e27d0`.
-- Hosted CI evidence: exact Nginx host-policy feature-head run `32878033015`
-  (job `97900626530`) berhenti sebelum
-  assignment runner dengan runner ID `0`, nama runner kosong, steps kosong, dan
+- Hosted CI evidence: exact repository-security feature-head run `32879945400`
+  membuat security job `97906722493` dan validate job `97906722770`. Keduanya
+  berhenti sebelum assignment runner, tanpa runner/nama, steps kosong, dan
   anotasi account payment/spending limit. Run sebelumnya pada host preflight,
   protected-preview docs, MySQL implementation, dan digest-only feature head
   menunjukkan pola yang sama. Local/static gates tetap
@@ -128,6 +129,10 @@ fotografer desktop-optimized.
   reference, memverifikasi semua link tetap di dalam artifact, dan berjalan
   non-root. Tiga probe artifact aktual lulus containment/import; Linux image
   execution, scan, serta SBOM/provenance emission masih gate staging.
+- CI memiliki security job terpisah dengan exact-commit Trivy action dan exact
+  Trivy v0.74.0 policy untuk fixed High/Critical production-package
+  vulnerability, secret, dan IaC. Supply-chain verifier menolak perubahan action,
+  scanner class, severity, exclusion, atau exit policy yang melemahkan gate.
 - Deployment staging menjalankan preflight sebelum Compose: Linux, marker
   approval isolasi/enkripsi root-owned `0600`, minimum 4 vCPU, 16 GB RAM,
   200 GB disk dengan 100 GB tersedia, Docker Engine, Compose v2, dan executable
@@ -231,7 +236,7 @@ fotografer desktop-optimized.
 - Official liveness package menyatakan React 19 support; exact transitive peer
   metadata ditutup dengan narrow package/peer rule. Frozen install, fresh web
   build, full validation, browser suite, audit, dan peer check lulus.
-- Enam shell script operasional lulus Git Bash `bash -n`; staging Compose lulus static
+- Delapan shell script operasional lulus Git Bash `bash -n`; staging Compose lulus static
   interpolation memakai official checksum-verified Docker Compose v5.5.0 dan
   synthetic-only values. Tidak ada image/container yang dijalankan.
 - Detached clean checkout exact remote `fbf01b6` pada Windows dengan
@@ -241,7 +246,7 @@ fotografer desktop-optimized.
   memaksa LF lintas repository agar checkout Windows tidak mengubah format.
   Service-dependent integration skip tetap terbuka sampai isolated staging.
 - Official Windows ShellCheck v0.11.0 archive cocok dengan release-asset
-  SHA-256; enam skrip operasional lulus hingga severity `style`. Portable verifier
+  SHA-256; delapan skrip operasional lulus hingga severity `style`. Portable verifier
   dibersihkan setelah run. Tidak ada image/container atau runtime staging yang
   dieksekusi dari evidence ini.
 - Official signed Windows Nginx 1.31.3 archive diverifikasi terhadap signer
@@ -250,6 +255,11 @@ fotografer desktop-optimized.
   ShellCheck, full validation, 53 browser pass, audit produksi nol vulnerability,
   dan peer check lulus. Linux validator memakai default image exact OCI digest,
   tetapi belum dieksekusi karena hosted run tidak pernah mendapat runner.
+- Official Trivy v0.74.0 Windows archive dan checksum list cocok dengan SHA-256
+  release. Full worktree scan dengan fail-closed exit menghasilkan nol fixed
+  High/Critical production-package vulnerability, secret, atau IaC finding.
+  Full validation, 53 browser pass dengan tiga intentional skip, actionlint,
+  production dependency audit, dan peer check juga lulus pada exact feature.
 - Fixture k6 300-VU melakukan authoritative seeded-BIB search, exact-session
   candidate confirmation, dan same-session sampled quote. Official
   checksum-verified k6 v2.2.0 `inspect` lulus; full validation lulus dan tidak ada
@@ -290,6 +300,8 @@ fotografer desktop-optimized.
   belum deployed.
 - DNS/TLS certificate, firewall, exact Linux Nginx fixture, external header/TLS
   scan, live edge 429, dan loaded-config proof pada isolated host belum ada.
+- Hosted Trivy job, final digest-addressed Linux image scan, dan runtime-host
+  scan belum berjalan; local repository scan tidak menggantikannya.
 - Satu-satunya SSH target yang tersedia tetap shared 2 vCPU/sekitar 8 GB/100 GB,
   tanpa Docker, sehingga tidak dipakai sebagai target Snap and Fit.
 - MySQL compatibility lokal sudah ditutup, tetapi pengulangan MySQL dan runtime

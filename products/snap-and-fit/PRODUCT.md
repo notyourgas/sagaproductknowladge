@@ -47,7 +47,8 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 - Delivery: `LOCAL_VALIDATED`.
 - Activation: `NOT_PRODUCTION_ACTIVATED`.
 - Business readiness: `BLOCKED`.
-- Exact private source head `ef1b7e9`; deterministic Nginx staging host-policy
+- Exact private source head `3a37ae8`; fail-closed repository security-scan
+  feature berasal dari `db4e709`, deterministic Nginx staging host-policy
   feature berasal dari `7fdd49a`, streaming encrypted-recovery feature
   berasal dari `a6857d1`, fail-closed staging-host preflight berasal dari
   `fc383e1`, runtime-artifact hardening berasal dari `e64b002`,
@@ -90,7 +91,7 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   Redis/BullMQ-only skip. Enam face-provider test, delapan media test, lima
   observability test, 53 browser test
   dengan tiga project-specific skip, seluruh build, dan audit dependency produksi
-  nol vulnerability lulus. Enam shell script operasional juga lulus Git Bash `bash -n`, dan
+  nol vulnerability lulus. Delapan shell script operasional juga lulus Git Bash `bash -n`, dan
   staging Compose lulus static interpolation dengan official checksum-verified
   Docker Compose v5.5.0 tanpa menjalankan image/container. Frozen install,
   fresh web build, dan targeted liveness peer check juga lulus.
@@ -101,7 +102,7 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   mencegah format drift pada Windows; integration-service skip tetap tidak
   dianggap sebagai runtime staging evidence.
 - Official Windows ShellCheck v0.11.0 archive cocok dengan SHA-256 release asset;
-  seluruh enam skrip operasional lulus sampai severity `style`. Verifier portable
+  seluruh delapan skrip operasional lulus sampai severity `style`. Verifier portable
   sudah dibersihkan setelah run. Ini menutup static shell lint, bukan image,
   container, migration, load, atau recovery runtime gate.
 - Fixture 300-VU kini memakai seeded BIB, memastikan asset kandidat,
@@ -112,18 +113,19 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   MySQL/Redis service memakai OCI manifest digest. Deploy/rollback menolak image
   tanpa digest termasuk commit-shaped registry tag, restore menolak override
   MySQL non-digest, dan validation memulai
-  immutable-reference verifier. Actionlint, ShellCheck enam file, Compose static
+  immutable-reference verifier. Actionlint, ShellCheck delapan file, Compose static
   immutable set, release preflight regression, full validation, dan audit
   dependency produksi nol vulnerability lulus. Container workflow dikonfigurasi
   menghasilkan BuildKit SBOM/provenance dan manifest digest; image belum
   dibangun/dijalankan sehingga emission/runtime evidence tetap gate.
-- Hosted GitHub Actions run `32878033015` (job `97900626530`) pada exact
-  Nginx host-policy feature head `7fdd49a`
-  gagal sebelum satu pun step berjalan: runner ID `0`, nama runner kosong, dan steps kosong;
+- Hosted GitHub Actions run `32879945400` pada exact repository-security
+  feature head `db4e709` membuat security job `97906722493` dan validate job
+  `97906722770`; keduanya gagal sebelum satu pun step berjalan, tanpa runner/
+  nama runner dan dengan steps kosong;
   anotasi menyatakan account payment/spending-limit gate. Run sebelumnya pada
   `fc383e1`, `176cf15`, `4384948`, dan `d0f3b7d` memiliki pola yang sama.
   Ini adalah bukti blocker hosted-runner/account, bukan kegagalan source gate.
-  Nginx feature-head run menjadi evidence hosted terbaru. Branch protection private
+  Security feature-head run menjadi evidence hosted terbaru. Branch protection private
   repository juga tetap plan-gated (API mengembalikan 403), sehingga
   required-check enforcement belum dapat diklaim.
 - Deploy staging kini menolak sebelum membaca konfigurasi Compose atau menarik
@@ -157,6 +159,13 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   ketiganya; forced-uncached task graph, full validation, 53 browser pass, peer
   check, dan production audit nol vulnerability lulus. Linux image build/run/
   scan dan SBOM/provenance emission tetap belum terbukti tanpa hosted runner atau
+  isolated staging.
+- Official checksum-verified Trivy v0.74.0 memindai production-package
+  vulnerability, secret pattern, dan IaC/misconfiguration pada repository.
+  Fail-closed High/Critical scan menghasilkan nol temuan. CI memakai exact
+  `aquasecurity/trivy-action` commit dan verifier lokal mengikat version,
+  scanner class, severity, exclusions, serta exit policy agar gate tidak dapat
+  dilemahkan diam-diam. Final Linux image dan runtime-host scan tetap gate
   isolated staging.
 
 ## Batas klaim

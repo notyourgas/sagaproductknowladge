@@ -10,6 +10,23 @@ production, activation, dan business readiness.
 Mock, fixture, preview frontend, dan test lokal bukan bukti provider atau
 production activation.
 
+## 2026-08-26 - Fail-closed repository security scan
+
+- Exact private feature `db4e709`; documentation/evidence head `3a37ae8`.
+- CI menambahkan security job exact-commit yang menjalankan Trivy v0.74.0 pada
+  production-package vulnerability, secret, dan IaC dengan fail-closed
+  High/Critical policy. Supply-chain verifier mengikat exact scan block.
+- Official Windows archive dan checksum-list SHA-256 terverifikasi. Final
+  worktree scan menghasilkan nol vulnerability, secret, atau misconfiguration
+  finding pada severity High/Critical.
+- Full validation, 53 browser pass dengan tiga intentional skip, actionlint,
+  production dependency audit nol, dan peer check lulus.
+- Hosted run `32879945400` membuat security job `97906722493` dan validate job
+  `97906722770`; keduanya tidak mendapat runner dan memiliki nol step karena
+  account billing/spending gate. Final-image/runtime scan tetap external gate.
+- Klasifikasi `CONFIRMED`; delivery tetap `LOCAL_VALIDATED`, production dan
+  activation tidak berubah, business readiness tetap `BLOCKED`.
+
 ## 2026-08-26 - Deterministic Nginx staging host policy
 
 - Exact private feature `7fdd49a`; documentation/evidence head `ef1b7e9`.

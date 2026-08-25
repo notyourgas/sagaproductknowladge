@@ -12,12 +12,36 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-26T00:31:58+07:00 |
+| Waktu pembaruan terakhir | 2026-08-26T00:51:16+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `b0c238be1d2c715a677197c0bda73afe05cbe575` |
-| Informasi terakhir disinkronkan | Snap and Fit deterministic Nginx staging host policy. |
+| Baseline sebelum pembaruan | `90d469e6f87c56ac0eba64e973b4ece5e87cded2` |
+| Informasi terakhir disinkronkan | Snap and Fit fail-closed repository security scan. |
 | Status sinkronisasi | `LOCAL_VALIDATED / NOT_PRODUCTION_ACTIVATED / business readiness BLOCKED`; isolated staging belum tersedia. |
+
+## Snap and Fit fail-closed repository security scan
+
+- Exact private feature source `db4e709`; documentation/evidence head `3a37ae8`.
+- Exact-commit Trivy CI job dan supply-chain verifier mengikat Trivy v0.74.0,
+  filesystem scanner classes, High/Critical severity, exclusions, serta
+  fail-closed exit policy.
+- Official archive/checksum terverifikasi; final local worktree scan menghasilkan
+  nol fixed High/Critical production-package vulnerability, secret, atau IaC
+  finding. Full validation, 53 browser pass, actionlint, dependency audit, dan
+  peer check lulus.
+- Hosted run `32879945400` membuat security job `97906722493` dan validate job
+  `97906722770`; keduanya berhenti sebelum runner/step karena account billing/
+  spending gate. Final-image/runtime scan dan isolated staging tetap external.
+
+## File yang berubah pada sinkronisasi ini (Snap and Fit security scan)
+
+- `products/snap-and-fit/PRODUCT.md`
+- `products/snap-and-fit/DOSSIER.md`
+- `products/snap-and-fit/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## Snap and Fit deterministic Nginx staging host policy
 

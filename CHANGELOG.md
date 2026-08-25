@@ -1,5 +1,24 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-26 - Snap and Fit repository security scan sync
+
+- Ringkasan: sinkronisasi exact-commit Trivy CI job, verifier-bound scan policy,
+  dan checksum-verified local High/Critical repository scan.
+- Alasan: release security sebelumnya belum mempunyai standardized filesystem,
+  secret, dan IaC scan yang fail-closed serta terlindung dari workflow drift.
+- Produk/area: Snap and Fit security, CI, supply chain, acceptance, release
+  evidence, external gates, dan readiness.
+- Klasifikasi: `CONFIRMED`; private feature `db4e709`, documentation head
+  `3a37ae8`, zero-finding Trivy v0.74.0 local scan, full local gates, dan hosted
+  run `32879945400`.
+- Production berubah: tidak. Delivery tetap `LOCAL_VALIDATED`; activation
+  `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED`.
+- Dokumen terdampak: Snap and Fit product/dossier/changelog, portfolio, master
+  knowledge, root changelog, dan sync status.
+- Blocker/next action: functioning hosted runner, final Linux image/runtime
+  scan, approved isolated VPS, DNS/TLS, provider/recovery/load/security/device
+  gates sebelum `STAGING_READY`.
+
 ## 2026-08-26 - Snap and Fit Nginx staging host policy sync
 
 - Ringkasan: sinkronisasi deterministic API-only Nginx renderer, exact host/

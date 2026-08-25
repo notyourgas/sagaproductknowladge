@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-26 - Snap and Fit fail-closed repository security scan
+
+- Exact private feature `db4e709` dan documentation head `3a37ae8` menambahkan
+  exact-commit Trivy CI job serta verifier-bound High/Critical policy untuk
+  production-package vulnerability, secret, dan IaC.
+- Checksum-verified Trivy v0.74.0 worktree scan menghasilkan nol temuan; full
+  validation, 53 browser pass, actionlint, dependency audit, dan peer check
+  lulus.
+- Hosted run `32879945400` tetap account-gated sebelum security/validate runner
+  atau step. Delivery tetap `LOCAL_VALIDATED`; final Linux image/runtime scan
+  dan isolated staging tetap external gate.
+
 ## 2026-08-26 - Snap and Fit Nginx staging host policy
 
 - Exact private feature `7fdd49a` dan documentation head `ef1b7e9` menambahkan
