@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - COYABAG Admin dashboard Beranda integrity sync
+
+- Produk/area: Dashboard Beranda Owner, Admin, dan Finance.
+- Informasi `CONFIRMED` berasal dari exact source
+  `fcedf86c07e6a8b5e27afc5435fa7da7e76961a8`, immutable Hostinger release
+  `20260825-fcedf86`, rollback `20260825-949a57b`, dan runtime verification.
+- Knowledge mencatat KPI/tren/antrean role-aware, link workflow berizin,
+  integration health dan stok varian jujur, serta state desktop/mobile.
+- Delivery `PRODUCTION_DEPLOYED`; readiness 30/42 dengan 12 blocker. Activation
+  dan business readiness tetap `BLOCKED`; commerce/provider tidak diaktifkan.
+- Dokumen terdampak: COYABAG product/dossier/changelog, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-25 - SagaWork product baseline sync
 
 - Menambahkan knowledge public-safe SagaWork dari exact feature source `7ba3010`, synthetic Hostinger staging, protected Vercel preview, dan acceptance evidence.

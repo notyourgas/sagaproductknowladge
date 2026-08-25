@@ -8,6 +8,21 @@ Mencatat perubahan material COYABAG dengan provenance public-safe.
 
 Surface deployment tidak otomatis berarti commerce activation.
 
+## 2026-08-25 - Admin dashboard Beranda integrity production release
+
+- Informasi `CONFIRMED` berasal dari exact source
+  `fcedf86c07e6a8b5e27afc5435fa7da7e76961a8`, immutable Hostinger release
+  `20260825-fcedf86`, rollback `20260825-949a57b`, dan runtime verification.
+- KPI, tren tujuh hari, prioritas, dan recent order kini role-aware untuk Owner,
+  Admin, serta Finance. Link menuju workflow berizin yang tepat; integration
+  health, stok varian rendah, refresh/loading, section error, desktop table,
+  dan mobile cards memakai state yang jujur.
+- TDD, full Storefront/Laravel regression, authenticated desktop/mobile fixture,
+  dependency/security/build, backup/rollback, dan public smoke lulus.
+- Delivery `PRODUCTION_DEPLOYED`; readiness tetap 30/42 dengan 12 blocker.
+  Activation dan business readiness tetap `BLOCKED`; checkout/provider tidak
+  diaktifkan.
+
 ## 2026-08-25 - Storefront SEO integrity production release
 
 - Informasi `CONFIRMED` berasal dari exact source

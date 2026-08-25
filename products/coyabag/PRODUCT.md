@@ -61,9 +61,18 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260825-949a57b` dengan source
-  `949a57be913245d58013554ab36d9a678c448d0f` melayani production;
-  rollback langsung `20260825-b7bf006` dipertahankan.
+- Release aktif `20260825-fcedf86` dengan source
+  `fcedf86c07e6a8b5e27afc5435fa7da7e76961a8` melayani production;
+  rollback langsung `20260825-949a57b` dipertahankan.
+- Dashboard Beranda menyajikan KPI, tren tujuh hari, prioritas, dan deskripsi
+  berbeda untuk Owner, Admin, serta Finance. Antrean dan pesanan terbaru menuju
+  workflow berizin yang tepat; kesehatan integrasi mengikuti status aktual,
+  sedangkan stok rendah memakai availability dan threshold varian.
+- Dashboard memiliki refresh/loading live-region, section error public-safe,
+  tabel desktop, kartu pesanan mobile, serta grid KPI 2-by-2 tanpa horizontal
+  overflow. Authenticated fixture dan public Login desktop/mobile lulus.
+- Release sebelumnya `20260825-949a57b` menjalankan metadata server-side,
+  Product schema dari varian aktif, utility/404 `noindex`, dan sitemap dinamis.
 - HTML awal route publik kini dirender melalui metadata server-side yang
   otoritatif. Shop dan detail produk memiliki canonical, OpenGraph, Twitter,
   serta structured data yang mengikuti katalog aktif; route utilitas dan 404

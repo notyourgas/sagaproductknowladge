@@ -78,9 +78,21 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260825-b7bf006` memakai source
-`b7bf0061cf54b77eafeb9297280649e27bc99135` dan rollback
-`20260825-a6fbc90`. Home memprioritaskan hero, menunda media lifestyle kartu
+Release production terbaru `20260825-fcedf86` memakai source
+`fcedf86c07e6a8b5e27afc5435fa7da7e76961a8` dan rollback
+`20260825-949a57b`. Dashboard Beranda memakai komposisi server role-aware untuk
+KPI, tren tujuh hari, antrean prioritas, serta recent order Owner, Admin, dan
+Finance. Setiap baris actionable menuju workflow yang sesuai permission;
+integration health mengikuti event provider terakhir dan stok rendah memakai
+availability/threshold varian. Loading refresh, section error aman, tabel
+desktop, kartu mobile, dan grid KPI 2-by-2 lulus acceptance tanpa overflow.
+
+Release sebelumnya `20260825-949a57b` memakai source
+`949a57be913245d58013554ab36d9a678c448d0f` untuk metadata server-side,
+Product schema dari varian aktif, utility/404 `noindex`, dan sitemap production
+dinamis dari katalog serta konten published.
+
+Release sebelumnya `20260825-b7bf006` memprioritaskan hero, menunda media lifestyle kartu
 sampai pointer/keyboard intent, dan lazy-load media scene/capacity. Dalam
 clean-context lab publik, image transfer turun 34,9% pada mobile dan 20,3% pada
 desktop; 12 state runtime-performance, 79 kombinasi responsif, 20 accessibility

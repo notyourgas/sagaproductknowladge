@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-25 - CoyaBag Admin dashboard Beranda integrity
+
+- Exact source `fcedf86c07e6a8b5e27afc5435fa7da7e76961a8` aktif sebagai
+  Hostinger release `20260825-fcedf86`; rollback `20260825-949a57b` tersedia.
+- Dashboard Beranda sekarang role-aware untuk Owner, Admin, dan Finance dengan
+  KPI, tren, antrean actionable, recent order, integration health, serta
+  desktop/mobile state yang jujur dan aksesibel.
+- Full regression, security/build, backup/rollback, authenticated fixture, dan
+  public smoke lulus. Status `PRODUCTION_DEPLOYED`; readiness tetap 30/42,
+  activation dan business readiness `BLOCKED`, dan commerce tidak diaktifkan.
+
 ## 2026-08-25 - SagaWork synthetic staging baseline
 
 - Exact feature source `7ba3010` aktif pada isolated synthetic Hostinger staging; protected Vercel preview `dpl_AN91Lq2eo92eG7KsA9NDk8nW2R6w` `READY`.

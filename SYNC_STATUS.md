@@ -12,16 +12,26 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T13:00:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T13:06:33+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `87ea83d` |
-| Informasi terakhir disinkronkan | SagaWork synthetic staging baseline dari exact feature source `7ba3010`. |
-| Status sinkronisasi | Delivery `STAGING_DEPLOYED`; activation `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED`. |
-| Konflik | Tidak ada konflik; synthetic staging tidak dianggap real pilot atau production. |
-| Error | Tidak ada error sinkronisasi; provider/legal/human UAT/pilot gate tetap terbuka. |
+| Baseline sebelum pembaruan | `b8be4fd` |
+| Informasi terakhir disinkronkan | COYABAG Admin Dashboard Beranda Integrity dari exact source `fcedf86c07e6a8b5e27afc5435fa7da7e76961a8` dan release `20260825-fcedf86`. |
+| Status sinkronisasi | Delivery `PRODUCTION_DEPLOYED`; activation dan business readiness `BLOCKED`; readiness 30/42 dengan 12 blocker. |
+| Konflik | Tidak ada konflik; surface dashboard live tidak dianggap commerce production-activated. |
+| Error | Tidak ada error sinkronisasi; provider, data final, legal, dan owner UAT tetap terbuka. |
 
-## File yang berubah pada sinkronisasi ini (SagaWork synthetic staging baseline)
+## File yang berubah pada sinkronisasi ini (COYABAG Admin dashboard Beranda integrity)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
+
+## File yang berubah pada sinkronisasi sebelumnya (SagaWork synthetic staging baseline)
 
 - `products/sagawork/PRODUCT.md`
 - `products/sagawork/DOSSIER.md`
