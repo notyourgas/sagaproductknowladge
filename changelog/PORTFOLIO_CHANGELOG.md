@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-25 - SagaView S288 rollback retention hardening
+
+- Recovery rollback 21:23 WIB diregresikan satu menit kemudian ketika service
+  retensi menghapus target pasif yang belum dilindungi; runtime aktif tetap
+  sehat, tetapi rollback backend/Owner kembali blocked.
+- Exact pushed source `e4d313566cb39fa6c147adf1f95ff0e2fbc7947a` sekarang
+  melindungi active+rollback, memvalidasi seluruh pointer sebelum deletion,
+  dan mengikat recovery ke SHA-256 exact retention guard serta rehearsal 3/3.
+- Focused 10/178, full 1.160/13.281, typecheck, build 5.129 modul, audit
+  dependency nol, dan immutable provenance dua salinan lulus.
+- Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; status production
+  `ROLLBACK_BLOCKED / DEPLOYMENT_HOLD`. Guard production dan recovery ulang
+  memerlukan approval baru Andreas.
+
 ## 2026-08-25 - COYABAG Cart bulk clear and Undo integrity
 
 - Exact source `0c4104b080e5575010b0fa545fe5e05aaf6f7daa` aktif pada immutable
@@ -94,6 +108,9 @@
   tidak berubah.
 
 ## 2026-08-25 - SagaView S288 inactive rollback restored
+
+Catatan koreksi: target ini kemudian dihapus retention pada 21:24 WIB. Lihat
+entri hardening terbaru; rollback saat ini blocked.
 
 - Exact tooling `94675a5f1b432182de0f3cd22a4982c654c11c69` memulihkan
   target rollback pasif `20260822112703-298336d` setelah approval exact.

@@ -1,21 +1,27 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 25 Agustus 2026 21:37 WIB
+Evidence cut-off: 25 Agustus 2026 23:00 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
-SagaView S288 exact `94675a5f1b432182de0f3cd22a4982c654c11c69`
-berstatus `PRODUCTION_ROLLBACK_RESTORED / RECOVERY_COMPLETED /
-PRODUCTION_DEPLOYED=false / PRODUCTION_ACTIVATED=false /
-BUSINESS_READY=false`. Setelah approval exact Andreas, target rollback pasif
-`20260822112703-298336d` / commit
-`298336da09b735638c4ffea9b7e8830b1283452e` direkonstruksi dari artefak exact
-dan pointer rollback dipublikasikan atomik. Backend/Owner aktif tetap
-`20260824163507-f956846`, Studio tetap `20260824170456-7ae79ae`, database,
-platform, dan SagaBook tidak berubah. Empat service aktif, journal error nol,
-rollback gate ready, public smoke, serta header keamanan lulus. Perubahan host
-hanya pada target dan pointer rollback inactive; recovery ini bukan deploy,
-activation, authenticated UAT, atau business-ready claim.
+SagaView S288 saat ini `ROLLBACK_BLOCKED / DEPLOYMENT_HOLD /
+BUSINESS_READY=false`. Recovery exact `94675a5f1b432182de0f3cd22a4982c654c11c69`
+sempat merekonstruksi rollback `20260822112703-298336d` pada 21:23 WIB, tetapi
+service retensi menghapus target tersebut pada 21:24 WIB karena pointer
+`current.rollback` belum dilindungi. Pointer kembali dangling. Backend/Owner
+aktif tetap `20260824163507-f956846`, Studio tetap
+`20260824170456-7ae79ae`, empat service aktif, journal error nol, public smoke
+HTTP 200, dan tidak ada deploy/activation/migrasi/data change.
+
+Exact pushed hardening `e4d313566cb39fa6c147adf1f95ff0e2fbc7947a` berstatus
+`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Retention contract sekarang
+melindungi active+rollback exact, preflight seluruh pointer sebelum deletion,
+fail-closed pada dangling/out-of-family pointer, dan recovery memerlukan
+SHA-256 exact installed guard plus rehearsal 3/3. Focused 10/178, full
+1.160/13.281, typecheck, build 5.129 modul, audit Composer/npm/OSV nol, serta
+immutable provenance dua salinan lulus. Production retention belum berubah.
+Approval lama sudah terpakai; pemasangan guard exact, recovery ulang, dan
+observasi minimal dua siklus timer memerlukan approval baru Andreas.
 
 SagaWork exact source/handoff runtime `d36a59fb456106eafa3d8b3e797d42a4aac67a68` berstatus `CONFIRMED / STAGING_DEPLOYED / NOT_PRODUCTION_ACTIVATED / PILOT_READY_CANDIDATE / BUSINESS_READY=false`; identical role-performance application evidence `05e2b1a`. Isolated Hostinger staging memakai synthetic data, MySQL 8.4 dengan 65 application table/23 migration/32 trigger, dan same-VPS loopback object store acceptance non-PII; protected Vercel Preview `dpl_9zvZTjgQBRhHJm5pVXH4rmtqQaBg` `READY`, 44-page build, Deployment Protection, authenticated health/strict nonce CSP/security-header/safe-worker PASS tanpa MySQL/custom domain. Scope tervalidasi mencakup Staff no-OTP dan privileged TOTP; password/session controls; people/CSV/lifecycle; scheduling/notes/swap; attendance foto+GPS/private non-PII byte pipeline; break; default-off unscheduled; assisted attendance; PWA; per-staff/CSV reporting; correction/request; overtime partial approval; Reliability; period lock/reopen; retention/recovery; serta default-off role-performance dengan versioned scorecard, attendance cap 15%, evidence/confidence, second review, own acknowledgement/seven-day appeal, fairness schedule, Payroll denial, dan no automatic employment action. Acceptance meluluskan 33/111 unit test, 20-area smoke, security abuse 9/9, workstation-to-loopback browser/Axe 12/4, isolated load 720/720 dengan p95 `165,5/438,4/331,2 ms`, schema-2 manifest 1.049 file, encrypted restore 65/23/32/24 tombstone/zero resurrection, dan rollback `05e2b1a → 17427f5 → 05e2b1a`. Direct shared-VPS Chromium crash dicatat sebagai runner limitation. Restricted exact archive 1.455.320 byte serta 699-component CycloneDX SBOM mempunyai checksum/provenance PASS dan tidak dipublikasikan. Pilot admission control tetap memakai Andreas-only Ed25519 signing dan exact-set 16 evidence; real receipt belum ada. External-evidence runbook memetakan recommended canary, seluruh 16 evidence, no-PII UAT/provider/legal/recovery/performance workflow, dan receipt assembly tetapi bukan actual approval. Validated OpenAPI 3.1.1 mencakup 68 path/83 operasi/46 request components. Internal ASVS 5.0 profile tetap 155 pass internal, 79 not applicable, 0 pending internal, 18 pending external, dan 1 risk acceptance; ini bukan sertifikasi/full-Level-2 claim. Private source remote/hosted CI, company KPI/source adapters, legal/transparency/calibration/fairness, independent security verification, external provider/DPA/offsite key custody, public route, capacity monitoring, human/device/pilot evidence, named champion/company, real signed admission receipt, canary, dan activation masih blocker. Loopback store tidak menerima real employee/photo/performance data; payroll compliance dan real-staff performance validity tidak diklaim.
 

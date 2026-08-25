@@ -1,20 +1,27 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 25 Agustus 2026 21:23 WIB
+Evidence cut-off: 25 Agustus 2026 23:00 WIB
 
-S288 inactive rollback recovery completed: exact tooling
-`94675a5f1b432182de0f3cd22a4982c654c11c69` memulihkan release rollback
-pasif `20260822112703-298336d` / commit
-`298336da09b735638c4ffea9b7e8830b1283452e` setelah approval exact Andreas.
-Pointer rollback sekarang kembali memiliki target valid, sedangkan backend/Owner
-aktif tetap `20260824163507-f956846`, Studio tetap
-`20260824170456-7ae79ae`, database sentinel tidak berubah, dan kandidat tidak
-dideploy atau diaktifkan. Gate rollback, empat service, journal error nol,
-empat public smoke, dan header keamanan lulus. Status
-`PRODUCTION_ROLLBACK_RESTORED / RECOVERY_COMPLETED /
-PRODUCTION_DEPLOYED=false / PRODUCTION_ACTIVATED=false /
-BUSINESS_READY=false`. Gap berikutnya kembali ke keputusan deploy kandidat
-yang terpisah; recovery ini tidak memberi otorisasi deploy.
+S288 rollback retention hardening: pemulihan rollback pada 21:23 WIB tidak
+bertahan. Service retensi otomatis menghapus target pasif
+`20260822112703-298336d` pada 21:24 WIB karena pointer `current.rollback`
+belum termasuk target yang dilindungi. Pointer kembali dangling, sehingga
+status terkini adalah `ROLLBACK_BLOCKED / DEPLOYMENT_HOLD /
+BUSINESS_READY=false`. Backend/Owner aktif tetap
+`20260824163507-f956846`, Studio tetap `20260824170456-7ae79ae`, empat
+service aktif, public smoke HTTP 200, dan runtime aktif tidak berubah.
+
+Exact source `e4d313566cb39fa6c147adf1f95ff0e2fbc7947a` sekarang melindungi
+release aktif dan target rollback exact, memvalidasi seluruh pointer sebelum
+penghapusan apa pun, serta menolak pointer dangling atau di luar family.
+Recovery S288 juga diikat ke SHA-256 exact script retensi terpasang dan
+rehearsal 3/3. Focused 10/178, full 1.160/13.281, typecheck, build 5.129
+modul, parser/syntax/Pint/diff, audit Composer/npm/OSV nol, archive, manifest,
+bundle, dan dua salinan terpisah lulus. Status `PUSHED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; tooling production belum berubah. Gap tunggal:
+approval baru Andreas untuk memasang guard retensi exact, lalu recovery
+rollback exact dan observasi minimal dua siklus timer. Approval recovery lama
+`94675a5f` sudah terpakai dan tidak boleh digunakan ulang.
 
 S288 exact recovery preflight and approval pack: source
 `94675a5f1b432182de0f3cd22a4982c654c11c69` memperbaiki kompatibilitas

@@ -1,6 +1,29 @@
 # SagaView Changelog
 
+## 2026-08-25 - S288 rollback retention hardening local validated
+
+- Klasifikasi: `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  ROLLBACK_BLOCKED / DEPLOYMENT_HOLD`; `BUSINESS_READY=false`.
+- Before: target rollback yang dipulihkan pada 21:23 WIB dihapus service
+  retensi pada 21:24 WIB karena `current.rollback` tidak termasuk target yang
+  dilindungi; pointer kembali dangling walau runtime aktif tetap sehat.
+- After: exact `e4d313566cb39fa6c147adf1f95ff0e2fbc7947a` melindungi release
+  aktif dan rollback exact, memvalidasi seluruh family sebelum deletion, dan
+  fail-closed pada pointer dangling atau keluar family. Recovery juga wajib
+  membuktikan SHA-256 exact script retensi terpasang dan rehearsal 3/3.
+- Evidence: focused 10/10 dengan 178 assertion; full 1.160/1.160 dengan
+  13.281 assertion; typecheck; build 5.129 modul; parser/syntax/Pint/diff;
+  audit Composer, npm production, dan OSV nol; archive, manifest, git bundle,
+  serta dua salinan checksum-identical lulus.
+- Delivery: source sudah pushed, tetapi production retention tidak diubah.
+  Approval recovery lama tidak boleh digunakan ulang. Pemasangan guard,
+  recovery target, dan observasi dua siklus timer adalah gate terpisah.
+
 ## 2026-08-25 - S288 inactive rollback recovery restored
+
+Catatan koreksi: status pada entri ini hanya benar sampai 21:24 WIB. Service
+retensi kemudian menghapus target pasif; status terkini mengikuti entri
+hardening di atas.
 
 - Klasifikasi: `PRODUCTION_ROLLBACK_RESTORED / RECOVERY_COMPLETED`;
   `PRODUCTION_DEPLOYED=false`, `PRODUCTION_ACTIVATED=false`, dan

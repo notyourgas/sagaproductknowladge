@@ -1,19 +1,27 @@
 # SagaView Product Knowledge
 
-Updated: 25 Agustus 2026 21:23 WIB
+Updated: 25 Agustus 2026 23:00 WIB
 
-Recovery rollback inactive S288 telah selesai memakai exact tooling
-`94675a5f1b432182de0f3cd22a4982c654c11c69`. Target rollback
-`20260822112703-298336d` / commit
-`298336da09b735638c4ffea9b7e8830b1283452e` direkonstruksi dari artefak exact
-dan tervalidasi sebagai release pasif. Backend/Owner aktif tetap
-`20260824163507-f956846`, Studio tetap `20260824170456-7ae79ae`, database
-sentinel tidak berubah, serta platform dan SagaBook tidak berubah. Empat
-service aktif, journal error nol pada jendela acceptance, gate rollback ready,
-public smoke dan security headers lulus. Status
-`PRODUCTION_ROLLBACK_RESTORED / RECOVERY_COMPLETED`;
-`PRODUCTION_DEPLOYED=false`, `PRODUCTION_ACTIVATED=false`, dan
-`BUSINESS_READY=false`. Recovery ini tidak mengizinkan deploy kandidat.
+Status rollback backend/Owner SagaView saat ini `ROLLBACK_BLOCKED /
+DEPLOYMENT_HOLD / BUSINESS_READY=false`. Target pasif
+`20260822112703-298336d`, yang sempat direkonstruksi pada 21:23 WIB memakai
+tooling exact `94675a5f1b432182de0f3cd22a4982c654c11c69`, dihapus otomatis oleh
+service retensi pada 21:24 WIB karena pointer `current.rollback` belum
+dilindungi. Pointer rollback kembali dangling. Runtime aktif tetap sehat:
+backend/Owner `20260824163507-f956846`, Studio
+`20260824170456-7ae79ae`, empat service aktif, journal error nol, dan public
+smoke HTTP 200. Tidak ada deploy, activation, migrasi, atau perubahan data.
+
+Hardening retensi exact
+`e4d313566cb39fa6c147adf1f95ff0e2fbc7947a` sudah pushed dan
+`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Kontrak baru melindungi active
+dan rollback exact, melakukan preflight seluruh family sebelum deletion,
+fail-closed pada pointer dangling/di luar family, dan mengikat recovery ke
+SHA-256 exact script retensi terpasang serta rehearsal 3/3. Focused 10/178,
+full 1.160/13.281, typecheck, build 5.129 modul, audit Composer/npm/OSV nol,
+dan provenance dua salinan lulus. Production retention belum diubah. Langkah
+berikutnya memerlukan approval baru Andreas untuk pemasangan guard exact,
+recovery rollback terpisah, dan observasi minimal dua siklus timer.
 
 Kandidat S288 terkini exact
 `94675a5f1b432182de0f3cd22a4982c654c11c69` sudah pushed. Harness recovery
@@ -31,7 +39,8 @@ tersedia dua salinan identik. Status `PUSHED / SECURITY_VALIDATED /
 QA_VALIDATED / DEVOPS_VALIDATED / PRODUCTION_AUDIT_CONDITIONAL_GO /
 LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / RECOVERY_APPROVAL_REQUIRED`;
 approval lama deprecated, recovery belum dimulai, dan `BUSINESS_READY=false`.
-Status approval ini ditutup oleh recovery completion pada 21:22 WIB.
+Status approval ini sempat ditutup oleh recovery pada 21:23 WIB, tetapi hasil
+tersebut kemudian diregresikan oleh retensi otomatis pada 21:24 WIB.
 
 Kandidat mainline S288 exact
 `a830cf40e1c4fcb53d0e0d63d2e443d71a89b05e` sudah pushed sebagai tujuh file
