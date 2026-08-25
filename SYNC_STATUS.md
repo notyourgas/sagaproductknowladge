@@ -12,16 +12,26 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T08:03:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T11:08:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `6f46bf7f` |
-| Informasi terakhir disinkronkan | CoyaBag storefront accessibility integrity pada release `20260825-d6fe071`. |
+| Baseline sebelum pembaruan | `2b15ff05` |
+| Informasi terakhir disinkronkan | CoyaBag storefront motion and interaction integrity pada release `20260825-a6fbc90`. |
 | Status sinkronisasi | Delivery `PRODUCTION_DEPLOYED`; activation dan business readiness `BLOCKED`; readiness 30/42 dengan 12 blocker. |
 | Konflik | Tidak ada konflik source atau keputusan baru. |
 | Error | Tidak ada error sinkronisasi; blocker commerce CoyaBag tetap terbuka dan fail-closed. |
 
-## File yang berubah pada sinkronisasi ini (CoyaBag storefront accessibility integrity)
+## File yang berubah pada sinkronisasi ini (CoyaBag storefront motion and interaction integrity)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
+
+## File yang berubah pada sinkronisasi sebelumnya (CoyaBag storefront accessibility integrity)
 
 - `products/coyabag/PRODUCT.md`
 - `products/coyabag/DOSSIER.md`

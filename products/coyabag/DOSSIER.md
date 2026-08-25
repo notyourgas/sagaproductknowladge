@@ -78,9 +78,20 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260825-d6fe071` memakai source
+Release production terbaru `20260825-a6fbc90` memakai source
+`a6fbc9041684b530607bdf133e5863743a6f6aeb` dan rollback
+`20260825-d6fe071`. Hero memiliki kontrol pause/play 44 piksel, berhenti selama
+pointer/focus interaction, tab tersembunyi, atau reduced-motion, tetapi tetap
+mendukung navigasi manual dan live announcement. Video teaser hanya berjalan
+saat terlihat dan berhenti offscreen atau pada reduced-motion. Scroll progress,
+Gallery, Video Popover, dan reveal memakai transform/opacity tanpa layout-height,
+clip-path, atau blur animation. Fixture dan public live-API lulus 14 state
+motion desktop/mobile; matrix responsif production tetap lulus 79 kombinasi dan
+accessibility lulus 20 pemeriksaan.
+
+Release sebelumnya `20260825-d6fe071` memakai source
 `d6fe071d8ab27949b5fe5fd330dacb0f9a437821` dan rollback
-`20260825-521d8a3`. Storefront kini memiliki skip navigation, satu main
+`20260825-521d8a3`. Storefront memiliki skip navigation, satu main
 landmark, focus dan announcement untuk perpindahan route SPA, serta Search
 modal yang mengunci fokus, membuat background inert, menutup lewat Escape, dan
 mengembalikan fokus secara deterministik. Feedback ID kartu produk tetap unik

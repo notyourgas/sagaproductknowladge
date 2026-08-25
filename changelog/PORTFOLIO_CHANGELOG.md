@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-25 - CoyaBag storefront motion and interaction integrity
+
+- Exact source `a6fbc9041684b530607bdf133e5863743a6f6aeb` aktif sebagai
+  Hostinger release `20260825-a6fbc90`; rollback `20260825-d6fe071` tersedia.
+- Hero memiliki pause/play dan berhenti saat interaction, hidden tab, atau
+  reduced-motion. Video teaser berhenti offscreen; progress dan transitions
+  utama memakai transform/opacity tanpa layout-height, clip-path, atau blur.
+- Fixture dan production live-API lulus 14 state motion desktop/mobile bersama
+  20 accessibility checks, 79 kombinasi responsif, full test/build/security,
+  backup, assets, workers, dan public smoke.
+- Status `PRODUCTION_DEPLOYED`; readiness tetap 30/42, activation dan business
+  readiness `BLOCKED`, dan commerce tidak diaktifkan.
+
 ## 2026-08-25 - CoyaBag storefront accessibility integrity
 
 - Exact source `d6fe071d8ab27949b5fe5fd330dacb0f9a437821` aktif sebagai

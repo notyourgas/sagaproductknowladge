@@ -61,9 +61,18 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260825-d6fe071` dengan source
-  `d6fe071d8ab27949b5fe5fd330dacb0f9a437821` melayani production;
-  rollback langsung `20260825-521d8a3` dipertahankan.
+- Release aktif `20260825-a6fbc90` dengan source
+  `a6fbc9041684b530607bdf133e5863743a6f6aeb` melayani production;
+  rollback langsung `20260825-d6fe071` dipertahankan.
+- Hero dapat dijeda dan berhenti otomatis saat hover/focus, tab tersembunyi,
+  atau reduced-motion. Navigasi manual tetap tersedia dan perubahan manual
+  diumumkan melalui live region.
+- Video teaser hanya berjalan ketika terlihat dan berhenti offscreen atau pada
+  reduced-motion. Scroll progress, Gallery, Video Popover, dan reveal memakai
+  transform/opacity tanpa animasi layout height, clip-path, atau blur.
+- Fixture dan public live-API sama-sama lulus 14 state motion desktop/mobile;
+  20 pemeriksaan accessibility dan 79 kombinasi responsif production tetap
+  lulus.
 - Storefront kini memiliki skip navigation, satu main landmark, focus dan
   announcement untuk route SPA, Search modal dengan focus trap/background
   inert/Escape/focus restoration, serta feedback ID unik untuk kartu produk.

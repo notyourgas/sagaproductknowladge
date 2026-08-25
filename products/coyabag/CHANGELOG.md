@@ -8,6 +8,22 @@ Mencatat perubahan material COYABAG dengan provenance public-safe.
 
 Surface deployment tidak otomatis berarti commerce activation.
 
+## 2026-08-25 - Storefront motion and interaction integrity production release
+
+- Informasi `CONFIRMED` berasal dari exact source
+  `a6fbc9041684b530607bdf133e5863743a6f6aeb`, immutable Hostinger release
+  `20260825-a6fbc90`, rollback `20260825-d6fe071`, dan runtime verification.
+- Hero sekarang pauseable dan berhenti untuk hover/focus, tab tersembunyi, dan
+  reduced-motion. Video teaser berhenti offscreen; scroll progress dan
+  transitions utama memakai transform/opacity tanpa layout-height, clip-path,
+  atau blur animation.
+- Fixture dan public live-API lulus 14 state motion desktop/mobile. Full
+  storefront/Laravel, 20 accessibility checks, 79 kombinasi responsif,
+  security, dependency, backup, workers, exact asset, dan public smoke lulus.
+- Delivery `PRODUCTION_DEPLOYED`; readiness tetap 30/42 dengan 12 blocker.
+  Activation dan business readiness tetap `BLOCKED`; checkout/provider tidak
+  diaktifkan.
+
 ## 2026-08-25 - Storefront accessibility integrity production release
 
 - Informasi `CONFIRMED` berasal dari exact source

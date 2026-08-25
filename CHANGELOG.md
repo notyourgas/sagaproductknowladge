@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - CoyaBag storefront motion production sync
+
+- Produk/area: COYABAG hero, video teaser, scroll, Gallery, Video Popover,
+  reduced-motion, dan production release.
+- Informasi `CONFIRMED` berasal dari exact source
+  `a6fbc9041684b530607bdf133e5863743a6f6aeb`, immutable release
+  `20260825-a6fbc90`, rollback `20260825-d6fe071`, dan runtime verification.
+- Knowledge mencatat pause/play hero, auto-pause interaction/hidden tab,
+  reduced-motion, visible-only teaser video, compositor-friendly transitions,
+  14 state motion, 20 accessibility checks, dan 79 responsive combinations.
+- Delivery `PRODUCTION_DEPLOYED`; readiness tetap 30/42 dengan 12 blocker.
+  Activation dan business readiness tetap `BLOCKED`; commerce tidak diaktifkan.
+- Dokumen terdampak: CoyaBag product/dossier/changelog, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-25 - CoyaBag storefront accessibility production sync
 
 - Produk/area: COYABAG keyboard navigation, SPA focus, Search modal, landmark,

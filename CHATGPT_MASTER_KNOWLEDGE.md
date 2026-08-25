@@ -3179,7 +3179,17 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release aktif `20260825-d6fe071` menjalankan exact source
+Release aktif `20260825-a6fbc90` menjalankan exact source
+`a6fbc9041684b530607bdf133e5863743a6f6aeb` dengan rollback
+`20260825-d6fe071`. Hero dapat dijeda dan berhenti untuk hover/focus, tab
+tersembunyi, atau reduced-motion; manual navigation dan live announcement tetap
+tersedia. Video teaser hanya berjalan ketika terlihat. Scroll progress,
+Gallery, Video Popover, dan reveal memakai transform/opacity tanpa
+layout-height, clip-path, atau blur animation. Fixture dan production live-API
+lulus 14 state motion desktop/mobile, 20 accessibility checks, dan 79 kombinasi
+responsif.
+
+Release sebelumnya `20260825-d6fe071` menjalankan exact source
 `d6fe071d8ab27949b5fe5fd330dacb0f9a437821` dengan rollback
 `20260825-521d8a3`. Storefront memiliki skip navigation, satu main landmark,
 focus dan announcement untuk route SPA, Search modal dengan focus trap,
