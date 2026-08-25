@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-25 - Snap and Fit secure multi-photo event checkout
+
+- Exact private feature source `c314024` dan documentation head `a8bd49f`
+  menambahkan dynamic event landing serta event-scoped multi-photo cart untuk
+  single, exact-three, dan all-confirmed package.
+- Quote terikat exact anonymous session dan active confirmed candidate;
+  unconfirmed, rejected, direct asset ID, dan cross-session selection ditolak.
+- Full validation, 50 API test, 20 worker test, 46 browser test, build, dan
+  dependency audit lulus dengan external-service skip terkontrol.
+- Protected preview `dpl_3Wcde9LyKZrJjdV3HYHfZRUTtHSH` `READY`; event route 200,
+  backend 503 fail-closed. Delivery tetap `LOCAL_VALIDATED`; production tidak berubah.
+
 ## 2026-08-25 - SagaWork unscheduled attendance dan pilot handoff
 
 - Exact feature source `0a2805e` dan active isolated staging `e7f4622` menambahkan absensi darurat default-off dengan lokasi aktif, draft aktual, human review, report blocker, serta HR publish/resolve.

@@ -31,8 +31,8 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 - Event draft, readiness, publish, dan tutup penjualan.
 - Assignment fotografer dan uploader desktop hingga 500 JPEG dengan manifest,
   checksum, derivative mobile, pause/resume, dan private upload intent.
-- Landing event mobile, pencarian BIB, selfie mock ber-consent, candidate
-  gallery, pemilihan, quote server-side, dan checkout.
+- Landing event dinamis per slug, pencarian BIB, selfie mock ber-consent,
+  candidate gallery, multi-photo cart, quote server-side, dan checkout.
 - Harga event pilot Rp25.000 satu foto, Rp60.000 tiga foto, dan Rp99.000 semua
   match.
 - QRIS Tokopay mock/test contract, entitlement social langsung setelah payment
@@ -47,7 +47,8 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 - Delivery: `LOCAL_VALIDATED`.
 - Activation: `NOT_PRODUCTION_ACTIVATED`.
 - Business readiness: `BLOCKED`.
-- Exact source `3337651` berada di private `main`; organizer safe event metrics
+- Exact source head `a8bd49f` berada di private `main`; secure multi-photo event
+  checkout berasal dari `c314024`, organizer safe event metrics
   berasal dari `46d7a4b`, photographer earning view berasal dari `0385317`,
   customer order library berasal dari `5e7e3c4`,
   distributed rate limiter berasal dari `2c4af04`, user-facing notification
@@ -56,12 +57,12 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   `b09f279`, deletion/recovery hardening dari `dbbb814`, serta candidate/cart
   authority dari `09a55bd`, durable notification worker dari `d964fea`, dan
   lifecycle/retention worker dari `4d602d9`.
-- Protected Vercel preview `dpl_EwPGuj6qxNJzcf59ahcabW3SGvGx` berstatus
-  `READY`; organizer event route dapat dirender tetapi
+- Protected Vercel preview `dpl_3Wcde9LyKZrJjdV3HYHfZRUTtHSH` berstatus
+  `READY`; dynamic event route dapat dirender tetapi
   backend staging sengaja fail-closed.
-- Full local validation, 47 API test dengan sembilan integrasi eksternal terkontrol
+- Full local validation, 50 API test dengan sembilan integrasi eksternal terkontrol
   skip, 20 worker test dengan empat integrasi service-dependent skip, audit
-  dependency nol vulnerability, serta 40 browser test dengan dua viewport skip
+  dependency nol vulnerability, serta 46 browser test dengan dua viewport skip
   lulus.
 
 ## Batas klaim
@@ -76,8 +77,10 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 - Rate limit memakai memory hanya untuk local/test. Staging/production menolak
   startup tanpa Redis bersama, memakai key client yang di-hash, serta fail-closed
   saat control plane limiter tidak tersedia. Bukti dua instance nyata masih gate staging.
-- Candidate confirm/reject terikat exact anonymous search session; authoritative
-  checkout menyimpan server-priced cart dan menghubungkannya ke order.
+- Candidate confirm/reject terikat exact anonymous search session; quote hanya
+  menerima candidate aktif yang dikonfirmasi browser yang sama dan menolak
+  candidate unconfirmed/rejected. Authoritative checkout mendukung single,
+  exact-three, dan all-confirmed dengan server-priced cart yang terhubung ke order.
 - Customer memiliki library 20 order terbaru yang exact-owner, menampilkan
   status payment/fulfillment dan entitlement, serta dapat menerbitkan ulang link
   social/HiRes lima menit tanpa mengekspos order customer lain.

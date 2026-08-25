@@ -1,13 +1,14 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 25 Agustus 2026 14:30 WIB
+Evidence cut-off: 25 Agustus 2026 14:40 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
 SagaWork active staging runtime `e7f4622` berstatus `CONFIRMED / STAGING_DEPLOYED / NOT_PRODUCTION_ACTIVATED / PILOT_READY_CANDIDATE / BUSINESS_READY=false`. Isolated Hostinger staging memakai synthetic data dan MySQL 8.4; protected Vercel preview `dpl_3nx9EfTeh5VYSTP1ta3Q7ByTpebs` `READY`; handoff/audit public-safe berada pada source `d2025e4`. Scope tervalidasi mencakup staff no-OTP dan privileged TOTP, people termasuk atomic CSV draft import tanpa account/password, scheduling/notes/swap, attendance foto+GPS, paid/unpaid break dengan payable-vs-net dan missing/long human review, default-off unscheduled draft→HR publish/resolve, correction/request, partial overtime approval, work-hours/score, period lock/reopen, retention/recovery, protected-route hardening, security/load/accessibility, manifest, backup, serta guarded rollback dua arah. Real provider/photo bytes, public route, offsite key escrow, human/device/legal/pilot evidence, named champion/company, dan activation masih blocker; payroll compliance tidak diklaim.
 
-Snap and Fit exact private source `3337651` berstatus `CONFIRMED /
-LOCAL_VALIDATED`; organizer safe metrics berasal dari `46d7a4b`,
+Snap and Fit exact private source head `a8bd49f` berstatus `CONFIRMED /
+LOCAL_VALIDATED`; secure multi-photo event checkout berasal dari `c314024`,
+organizer safe metrics berasal dari `46d7a4b`,
 photographer earning view berasal dari `0385317`,
 customer order library berasal dari `5e7e3c4`,
 distributed rate limiter berasal dari `2c4af04`,
@@ -17,10 +18,11 @@ privileged operations feature berasal dari `b09f279`,
 deletion/recovery hardening dari `dbbb814`, candidate/cart authority dari
 `09a55bd`, durable notification worker dari `d964fea`, lifecycle/retention
 worker dari `4d602d9`, dan protected Vercel
-preview `dpl_EwPGuj6qxNJzcf59ahcabW3SGvGx`
+preview `dpl_3Wcde9LyKZrJjdV3HYHfZRUTtHSH`
 berstatus `READY`.
 Marketplace foto olahraga ini mencakup event, uploader preview 500 JPEG,
-BIB/selfie mock ber-consent, catalog Rp25k/Rp60k/Rp99k, Tokopay mock/contract,
+BIB/selfie mock ber-consent, dynamic event landing, event-scoped multi-photo
+cart, catalog Rp25k/Rp60k/Rp99k, Tokopay mock/contract,
 social dan HiRes entitlement, signed download, ledger bersih 75/15/10, serta
 customer/photographer/organizer/operator UI. Operator workbench memakai
 password+TOTP, idempotency, audit/outbox, immediate-hide wrong-match, refund
@@ -31,6 +33,8 @@ metrics tanpa customer PII dan dengan gross/cleared/posted state terpisah.
 Photographer
 memiliki exact-owner earning view dengan full-ledger held/available/processing/
 paid/attention/reversed summary dan bounded history; approval tidak diklaim paid.
+Quote terikat exact anonymous session dan active confirmed candidate; direct
+asset ID, unconfirmed/rejected candidate, serta cross-session selection ditolak.
 Worker deletion
 sekarang memiliki idempotent partial retry, stale reclaim, DLQ, 30-second
 deadline sweep, safe evidence, controlled terminal-only outbox replay, dan

@@ -10,6 +10,22 @@ production, activation, dan business readiness.
 Mock, fixture, preview frontend, dan test lokal bukan bukti provider atau
 production activation.
 
+## 2026-08-25 - Dynamic event landing dan secure multi-photo checkout
+
+- Exact private feature source `c314024` dan documentation head `a8bd49f`
+  berstatus `LOCAL_VALIDATED`.
+- Public event route membaca name, date, location, sales state, search methods,
+  fulfillment SLA, dan catalog dari API. BIB/selfie membentuk event-scoped
+  multi-photo cart untuk single, exact-three, dan all-confirmed package.
+- Quote kini wajib membawa exact anonymous session dan setiap asset harus
+  memiliki candidate confirmation aktif pada session tersebut. Direct asset ID,
+  unconfirmed candidate, rejected candidate, dan session lain ditolak.
+- Full validation, 50 API test dengan sembilan external-service skip terkontrol,
+  20 worker test dengan empat skip, 46 browser test dengan dua intentional skip,
+  build, dan dependency audit nol vulnerability lulus.
+- Protected preview `dpl_3Wcde9LyKZrJjdV3HYHfZRUTtHSH` `READY`; dynamic event
+  route 200 dan backend 503 fail-closed. Production tidak berubah.
+
 ## 2026-08-25 - Organizer safe event metrics
 
 - Exact private feature source `46d7a4b` dan documentation head `3337651`
