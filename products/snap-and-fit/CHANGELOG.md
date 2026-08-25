@@ -10,6 +10,22 @@ production, activation, dan business readiness.
 Mock, fixture, preview frontend, dan test lokal bukan bukti provider atau
 production activation.
 
+## 2026-08-26 - Fail-closed 300-VU local preflight
+
+- Exact private load feature `f06d538`; source/docs head `5035602`.
+- Fixture hanya menerima loopback memory preflight atau exact HTTPS
+  isolated-staging origin dengan acknowledgement eksplisit. Repository gate
+  mengikat 300 VU, dua menit, readiness abort, threshold, dan p99 summary.
+- Local synthetic run menyelesaikan 36.000 iterasi dan 79.145 request; seluruh
+  threshold lulus dengan 0,0708% HTTP failure, 99,9293% checks, p95 4,58 ms,
+  serta p99 33,12 ms. Sebanyak 56 initial Windows loopback refusal tetap dicatat.
+- Full validation, 55 browser pass dengan tiga intentional skip, audit dependency
+  produksi, peer check, dan diff check lulus. Hosted run `32885224444` tidak
+  mendapat runner karena account payment/spending-limit gate.
+- Klasifikasi `CONFIRMED`; delivery tetap `LOCAL_VALIDATED`, production dan
+  activation tidak berubah, business readiness tetap `BLOCKED`. Exact run pada
+  isolated MySQL/Redis/Nginx/container staging masih exit gate.
+
 ## 2026-08-26 - Deterministic 500-file uploader recovery
 
 - Exact private feature `6f57416`; evidence/docs head `47e4dce`.

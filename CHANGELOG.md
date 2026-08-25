@@ -1,5 +1,24 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-26 - Snap and Fit fail-closed 300-VU load preflight sync
+
+- Ringkasan: sinkronisasi fail-closed load-target guard dan actual local
+  synthetic 300-VU/two-minute preflight pada authoritative event-search-confirm-
+  quote fixture.
+- Alasan: fixture sebelumnya baru di-inspect; business path belum pernah menerima
+  traffic dan target safety belum fail-closed terhadap hostname yang salah.
+- Produk/area: Snap and Fit performance, QA, security, release readiness,
+  traceability, dan hosted CI provenance.
+- Klasifikasi: `CONFIRMED`; private load feature `f06d538`, source/docs head
+  `5035602`, 36.000 iterasi, 79.145 request, semua threshold lulus, dan hosted
+  run `32885224444` account-gated sebelum runner/step.
+- Production berubah: tidak. Delivery tetap `LOCAL_VALIDATED`; activation
+  `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED`.
+- Dokumen terdampak: Snap and Fit product/dossier/changelog, portfolio, master
+  knowledge, root changelog, dan sync status.
+- Blocker/next action: isolated VPS dan exact MySQL/Redis/Nginx/container load,
+  soak, live 429, host metrics, recovery, serta functioning hosted runner.
+
 ## 2026-08-26 - COYABAG customer return review integrity sync
 
 - Ringkasan: sinkronisasi two-step return review, item/quantity

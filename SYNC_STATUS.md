@@ -12,12 +12,36 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-26T04:02:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-26T01:43:14+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `origin/main` sebelum sinkronisasi COYABAG Return Integrity |
-| Informasi terakhir disinkronkan | COYABAG customer return review integrity pada immutable production release. |
-| Status sinkronisasi | `PUSHED / PRODUCTION_DEPLOYED`; commerce activation tetap `BLOCKED`. |
+| Baseline sebelum pembaruan | exact `origin/main` `36be16c` sebelum sinkronisasi Snap and Fit load preflight |
+| Informasi terakhir disinkronkan | Snap and Fit fail-closed 300-VU local synthetic preflight. |
+| Status sinkronisasi | `LOCAL_VALIDATED`; staging, production, activation, dan business readiness tetap blocked. |
+
+## Snap and Fit fail-closed 300-VU local preflight
+
+- Exact private load feature `f06d538`; source/docs head `5035602`.
+- Guard hanya menerima loopback memory preflight atau exact HTTPS
+  isolated-staging origin dengan acknowledgement eksplisit.
+- Local synthetic run dua menit menyelesaikan 36.000 iterasi dan 79.145 request;
+  seluruh threshold lulus dengan 0,0708% HTTP failure, 99,9293% checks, p95
+  4,58 ms, dan p99 33,12 ms. Initial 56 Windows loopback refusal tetap dicatat.
+- Full validation, 55 browser pass dengan tiga intentional skip, production
+  dependency audit, peer check, dan diff check lulus.
+- Hosted run `32885224444` berhenti sebelum runner/step karena account payment/
+  spending-limit gate. Exact MySQL/Redis/Nginx/container staging load tetap
+  external gate; status tidak naik dari `LOCAL_VALIDATED`.
+
+## File yang berubah pada sinkronisasi ini (Snap and Fit load preflight)
+
+- `products/snap-and-fit/PRODUCT.md`
+- `products/snap-and-fit/DOSSIER.md`
+- `products/snap-and-fit/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG customer return review integrity
 

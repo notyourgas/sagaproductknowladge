@@ -48,8 +48,9 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 - Delivery: `LOCAL_VALIDATED`.
 - Activation: `NOT_PRODUCTION_ACTIVATED`.
 - Business readiness: `BLOCKED`.
-- Exact private source/docs head `47e4dce`; 500-file uploader recovery feature
-  berasal dari `6f57416`, fail-closed repository security-scan feature berasal
+- Exact private source/docs head `5035602`; fail-closed 300-VU load feature
+  berasal dari `f06d538`, 500-file uploader recovery feature berasal dari
+  `6f57416`, fail-closed repository security-scan feature berasal
   dari `db4e709`, deterministic Nginx staging host-policy
   feature berasal dari `7fdd49a`, streaming encrypted-recovery feature
   berasal dari `a6857d1`, fail-closed staging-host preflight berasal dari
@@ -106,10 +107,12 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   seluruh delapan skrip operasional lulus sampai severity `style`. Verifier portable
   sudah dibersihkan setelah run. Ini menutup static shell lint, bukan image,
   container, migration, load, atau recovery runtime gate.
-- Fixture 300-VU kini memakai seeded BIB, memastikan asset kandidat,
-  mengonfirmasi kandidat pada exact search session, lalu meminta quote dengan
-  anonymous session yang sama. Official checksum-verified k6 v2.2.0 `inspect`
-  lulus; tidak ada load traffic yang dikirim tanpa isolated staging.
+- Fixture 300-VU kini fail-closed ke loopback memory preflight atau exact HTTPS
+  isolated-staging origin yang diakui eksplisit. Local synthetic run dua menit
+  menyelesaikan 36.000 iterasi dan 79.145 request; semua threshold lulus dengan
+  0,0708% HTTP failure, 99,9293% checks, p95 4,58 ms, dan p99 33,12 ms. Sebanyak
+  56 refusal pada initial simultaneous Windows loopback burst tetap dicatat.
+  Ini bukan evidence MySQL/Redis/Nginx/container atau kapasitas staging.
 - GitHub Actions memakai exact upstream commit; Node build/runtime dan
   MySQL/Redis service memakai OCI manifest digest. Deploy/rollback menolak image
   tanpa digest termasuk commit-shaped registry tag, restore menolak override
@@ -119,14 +122,14 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   dependency produksi nol vulnerability lulus. Container workflow dikonfigurasi
   menghasilkan BuildKit SBOM/provenance dan manifest digest; image belum
   dibangun/dijalankan sehingga emission/runtime evidence tetap gate.
-- Hosted GitHub Actions run `32882305982` pada exact uploader-recovery feature
-  `6f57416` membuat validate job `97914495514` dan security job
-  `97914495733`; keduanya gagal sebelum satu pun step berjalan, tanpa runner/
-  nama runner dan dengan steps kosong;
+- Hosted GitHub Actions run `32885224444` pada exact load-fixture feature
+  `f06d538` membuat security job `97923987439` dan validate job
+  `97923987813`; keduanya gagal sebelum satu pun step berjalan, dengan runner
+  ID `0`, tanpa nama runner, dan steps kosong;
   anotasi menyatakan account payment/spending-limit gate. Run sebelumnya pada
   `fc383e1`, `176cf15`, `4384948`, dan `d0f3b7d` memiliki pola yang sama.
   Ini adalah bukti blocker hosted-runner/account, bukan kegagalan source gate.
-  Uploader feature-head run menjadi evidence hosted terbaru. Branch protection private
+  Load-fixture feature-head run menjadi evidence hosted terbaru. Branch protection private
   repository juga tetap plan-gated (API mengembalikan 403), sehingga
   required-check enforcement belum dapat diklaim.
 - Deploy staging kini menolak sebelum membaca konfigurasi Compose atau menarik

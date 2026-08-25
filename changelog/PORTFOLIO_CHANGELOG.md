@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-26 - Snap and Fit fail-closed 300-VU local preflight
+
+- Exact private feature `f06d538` membatasi load target ke loopback preflight
+  atau exact HTTPS isolated-staging origin dengan acknowledgement eksplisit.
+- Local synthetic run dua menit menyelesaikan 36.000 iterasi dan 79.145 request;
+  seluruh threshold lulus dengan 0,0708% HTTP failure, 99,9293% checks, p95
+  4,58 ms, dan p99 33,12 ms. Initial 56 Windows loopback refusal tetap dicatat.
+- Full validation, 55 browser pass dengan tiga intentional skip, dependency/
+  peer audit, dan diff check lulus. Delivery tetap `LOCAL_VALIDATED`; real
+  MySQL/Redis/Nginx/container staging load masih external gate.
+
 ## 2026-08-26 - COYABAG customer return review integrity
 
 - Exact source `0dd7b21b5cd088e4b9f81e5cf0ef21bd08430818` aktif pada immutable

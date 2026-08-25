@@ -12,9 +12,9 @@ credential, PII, identifier tenant/perangkat, atau detail provider sensitif.
 - Delivery: `LOCAL_VALIDATED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED`
-- Provenance: exact private source/docs head `47e4dce`, 500-file uploader
-  recovery feature `6f57416`, fail-closed repository security-scan feature
-  `db4e709`, deterministic Nginx staging host-policy
+- Provenance: exact private source/docs head `5035602`, fail-closed 300-VU load
+  feature `f06d538`, 500-file uploader recovery feature `6f57416`, fail-closed
+  repository security-scan feature `db4e709`, deterministic Nginx staging host-policy
   feature `7fdd49a`, encrypted-recovery feature `a6857d1`,
   fail-closed staging-host preflight `fc383e1`, runtime-artifact
   hardening `e64b002`,
@@ -39,9 +39,9 @@ credential, PII, identifier tenant/perangkat, atau detail provider sensitif.
   durable notification worker `d964fea`, lifecycle/retention worker `4d602d9`,
   protected Vercel preview `dpl_HfF3ksVNy65qhyX36qX4V4RmFQix` dari exact
   source `8dec486`.
-- Hosted CI evidence: exact uploader-recovery feature-head run `32882305982`
-  membuat validate job `97914495514` dan security job `97914495733`. Keduanya
-  berhenti sebelum assignment runner, tanpa runner/nama, steps kosong, dan
+- Hosted CI evidence: exact load-fixture feature-head run `32885224444`
+  membuat security job `97923987439` dan validate job `97923987813`. Keduanya
+  berhenti sebelum assignment runner, dengan runner ID `0`, tanpa nama, steps kosong, dan
   anotasi account payment/spending limit. Run sebelumnya pada host preflight,
   protected-preview docs, MySQL implementation, dan digest-only feature head
   menunjukkan pola yang sama. Local/static gates tetap
@@ -266,9 +266,13 @@ fotografer desktop-optimized.
   Full validation, 53 browser pass dengan tiga intentional skip, actionlint,
   production dependency audit, dan peer check juga lulus pada exact feature.
 - Fixture k6 300-VU melakukan authoritative seeded-BIB search, exact-session
-  candidate confirmation, dan same-session sampled quote. Official
-  checksum-verified k6 v2.2.0 `inspect` lulus; full validation lulus dan tidak ada
-  traffic load yang dikirim tanpa isolated staging.
+  candidate confirmation, dan same-session sampled quote. Guard menolak target
+  selain loopback memory preflight atau exact HTTPS isolated-staging origin yang
+  diakui eksplisit. Local synthetic run dua menit menyelesaikan 36.000 iterasi
+  dan 79.145 request; semua threshold lulus dengan 0,0708% HTTP failure,
+  99,9293% checks, p95 4,58 ms, dan p99 33,12 ms. Sebanyak 56 refusal pada
+  initial Windows loopback burst dipertahankan; hasil ini bukan evidence runtime
+  MySQL/Redis/Nginx/container atau kapasitas staging.
 - Actions di-pin exact commit; Node, MySQL, dan Redis base/service image di-pin
   OCI manifest digest. Application release juga wajib memakai resulting manifest
   digest; commit-shaped registry tag hanya provenance dan ditolak oleh deploy/
@@ -311,8 +315,8 @@ fotografer desktop-optimized.
   tanpa Docker, sehingga tidak dipakai sebagai target Snap and Fit.
 - MySQL compatibility lokal sudah ditutup, tetapi pengulangan MySQL dan runtime
   Redis pada isolated Linux staging, protected synthetic deletion/replay,
-  encrypted off-host backup/restore, rollback, 300 VU load, soak, security
-  staging, dan device UAT belum dieksekusi.
+  encrypted off-host backup/restore, rollback, 300 VU isolated-staging load,
+  soak, security staging, dan device UAT belum dieksekusi.
 - Exact MySQL ledger/payout, aggregate metrics, reconciliation, HiRes, deletion,
   dan lifecycle assertions lulus pada disposable local MySQL; semuanya masih
   wajib diulang terhadap isolated staging dan bukan evidence provider nyata.
