@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-25 - COYABAG Admin Stock Opname integrity
+
+- Exact source `43a7d6be6bc2bdde92d7b2c4c554c9d00c3196cd` aktif pada immutable
+  Hostinger release `20260825-43a7d6b` dengan rollback `20260825-2880881`.
+- Stock Opname kini mendukung blind count, autosave/resume, assignee ownership,
+  review/recount, stale-tab guard, four-eyes approval, dan ledger exact-once.
+- Full regression, desktop/mobile acceptance, security/build, migration,
+  backup/rollback, dan public smoke lulus. Delivery `PRODUCTION_DEPLOYED`;
+  readiness tetap 30/42 dan commerce tetap fail-closed.
+
 ## 2026-08-25 - Snap and Fit digest-only application release
 
 - Exact source `d0f3b7d` memperketat app release dari commit-shaped tag menjadi

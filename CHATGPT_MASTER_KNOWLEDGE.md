@@ -3344,7 +3344,18 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release aktif `20260825-2880881` menjalankan exact source
+Release aktif `20260825-43a7d6b` menjalankan exact source
+`43a7d6be6bc2bdde92d7b2c4c554c9d00c3196cd` dengan rollback
+`20260825-2880881`. Dashboard Stock Opname menyediakan scope all/attention,
+blind count, autosave/resume, operator assignment, stale-tab revision guard,
+review variance setelah hitungan lengkap, dan recount tanpa kehilangan progres.
+Approval Owner/Admin memvalidasi ulang semua inventory revision sebelum ledger
+exact-once; cancel/reject tidak mengubah stok dan Finance tetap ditolak. Seluruh
+visual state, desktop/mobile, full tests/build/security, migration,
+backup/rollback, dan public smoke lulus. Readiness tetap 30/42 dengan 12
+blocker; commerce tidak diaktifkan.
+
+Release sebelumnya `20260825-2880881` menjalankan exact source
 `2880881e654f06414e8155300f16cd0f2517b17f` dengan rollback
 `20260825-2000e78`. Dashboard Inventory menyediakan saldo reservation-aware,
 enam antrean stok, alert aktif, literal search, pagination, dan immutable

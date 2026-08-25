@@ -12,14 +12,24 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T18:52:12+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T18:53:32+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `6da97b5` |
-| Informasi terakhir disinkronkan | Snap and Fit digest-only application release exact `d0f3b7d`. |
-| Status sinkronisasi | `LOCAL_VALIDATED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=BLOCKED`. |
-| Konflik | Tidak ada konflik; commit-shaped registry tag tidak lagi dianggap immutable release authority. |
-| Error | Tidak ada error knowledge; hosted image emission/runtime, isolated staging, dan provider evidence tetap external gate. |
+| Baseline sebelum pembaruan | `db7ef29` |
+| Informasi terakhir disinkronkan | COYABAG Admin Stock Opname integrity release `20260825-43a7d6b`. |
+| Status sinkronisasi | `PRODUCTION_DEPLOYED / ACTIVATION_BLOCKED / BUSINESS_READY=BLOCKED`. |
+| Konflik | Tidak ada konflik; commerce tetap fail-closed dan source project tidak dipush sesuai penundaan owner. |
+| Error | Tidak ada error knowledge; 12 blocker readiness COYABAG tetap terbuka. |
+
+## File yang berubah pada sinkronisasi ini (COYABAG Admin Stock Opname integrity)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## File yang berubah pada sinkronisasi ini (Snap and Fit digest-only release)
 

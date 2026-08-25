@@ -78,7 +78,18 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260825-2880881` memakai source
+Release production terbaru `20260825-43a7d6b` memakai source
+`43a7d6be6bc2bdde92d7b2c4c554c9d00c3196cd` dan rollback
+`20260825-2880881`. Dashboard Stock Opname menyediakan scope all/attention,
+blind count, autosave/resume, operator assignment, monotonic session revision,
+review setelah seluruh hitungan lengkap, dan recount tanpa kehilangan progres.
+Approval Owner/Admin memvalidasi ulang semua inventory revision sebelum ledger
+exact-once dibuat; cancel/reject menutup sesi tanpa movement dan Finance tetap
+ditolak. Loading/error/empty/autosave/review/blocked/success, desktop/mobile,
+full tests, migration, backup/rollback, dan public smoke lulus; readiness tetap
+30/42 dan commerce tetap fail-closed.
+
+Release sebelumnya `20260825-2880881` memakai source
 `2880881e654f06414e8155300f16cd0f2517b17f` dan rollback
 `20260825-2000e78`. Dashboard Inventory menyediakan saldo on-hand, reserved,
 quarantined, dan available; enam antrean stok; alert aktif; pencarian literal;

@@ -61,9 +61,20 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260825-2880881` dengan source
-  `2880881e654f06414e8155300f16cd0f2517b17f` melayani production;
-  rollback langsung `20260825-2000e78` dipertahankan.
+- Release aktif `20260825-43a7d6b` dengan source
+  `43a7d6be6bc2bdde92d7b2c4c554c9d00c3196cd` melayani production;
+  rollback langsung `20260825-2880881` dipertahankan.
+- Dashboard Stock Opname menyediakan scope seluruh stok atau item perlu
+  perhatian, blind count, autosave/resume, operator assignment, dan revision
+  guard agar dua tab tidak menimpa hitungan terbaru.
+- Review baru membuka stok sistem dan variance setelah seluruh hitungan lengkap.
+  Sesi dapat dikembalikan ke recount tanpa kehilangan progres; approval
+  Owner/Admin memvalidasi ulang revision inventory sebelum membuat ledger
+  exact-once. Cancel/reject menutup sesi tanpa mengubah stok dan Finance tetap
+  tidak memiliki mutation entry point.
+- Loading, empty, error, autosave, review, recount, blocked, approval pending,
+  success, desktop, dan mobile lulus acceptance. Full regression, build,
+  security, migration, backup/rollback, serta public smoke lulus.
 - Dashboard Inventory menyediakan saldo reservation-aware, enam antrean stok,
   alert aktif, pencarian literal, pagination, dan ledger immutable pada desktop
   serta mobile.

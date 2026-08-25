@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - COYABAG Admin Stock Opname integrity sync
+
+- Produk/area: Stock Opname, blind count, autosave, assignment, review,
+  approval, inventory ledger, permission, concurrency, dan release integrity.
+- Informasi `CONFIRMED` berasal dari exact source
+  `43a7d6be6bc2bdde92d7b2c4c554c9d00c3196cd`, immutable Hostinger release
+  `20260825-43a7d6b`, rollback `20260825-2880881`, dan runtime verification.
+- Knowledge mencatat global active-session mutex, stale revision guard,
+  four-eyes approval, inventory revision validation, exact-once ledger, serta
+  cancel/reject tanpa movement.
+- Delivery `PRODUCTION_DEPLOYED`; activation dan business readiness `BLOCKED`.
+  Production berubah pada Stock Opname, tetapi commerce tetap fail-closed.
+- Dokumen terdampak: COYABAG product/dossier/changelog, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-25 - Snap and Fit digest-only release sync
 
 - Produk/area: application image identity, SBOM/provenance, deploy, rollback,

@@ -8,6 +8,21 @@ Mencatat perubahan material COYABAG dengan provenance public-safe.
 
 Surface deployment tidak otomatis berarti commerce activation.
 
+## 2026-08-25 - Admin Stock Opname integrity production release
+
+- Informasi `CONFIRMED` berasal dari exact source
+  `43a7d6be6bc2bdde92d7b2c4c554c9d00c3196cd`, immutable Hostinger release
+  `20260825-43a7d6b`, rollback `20260825-2880881`, dan runtime verification.
+- Workspace Stock Opname menyediakan scope all/attention, blind count,
+  autosave/resume, operator assignment, monotonic revision, review variance,
+  recount, serta state desktop/mobile yang setara.
+- Global mutex, stale-tab guard, inventory revision validation, four-eyes
+  approval, dan deterministic idempotency key menjaga satu sesi aktif serta
+  ledger exact-once. Cancel/reject menutup sesi tanpa movement; Finance ditolak.
+- Full tests/build/security, migration, backup/rollback, dan public smoke lulus.
+  Delivery `PRODUCTION_DEPLOYED`; readiness tetap 30/42 dengan 12 blocker.
+  Activation dan business readiness tetap `BLOCKED`.
+
 ## 2026-08-25 - Admin Inventory integrity production release
 
 - Informasi `CONFIRMED` berasal dari exact source
