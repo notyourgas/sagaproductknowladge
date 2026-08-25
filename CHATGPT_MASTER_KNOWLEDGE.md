@@ -3295,16 +3295,24 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release aktif `20260825-0043c7b` menjalankan exact source
-`0043c7bfb85698b9894ce01214642ffe59825750` dengan rollback
-`20260825-412d351`. Dashboard Produk menyediakan antrean Semua/Perlu tindakan/
+Release aktif `20260825-eeffc48` menjalankan exact source
+`eeffc48da8aa4633715480d8ff8007aed3f19a4c` dengan rollback
+`20260825-0043c7b`. Dashboard Varian menyediakan antrean role-aware, harga dan
+berat efektif, jumlah media, stok live, exact ledger, mutation Owner/Admin, dan
+view-only state tanpa mutation entry point. SKU/slug uniqueness, revision
+guard, product-level row lock, active-reservation guard, dan last-active guard
+melindungi integritas mutation. Semua visual state, desktop/mobile, full tests,
+build, security, migration, backup/rollback, dan public smoke lulus. Readiness
+tetap 30/42 dengan 12 blocker; commerce tidak diaktifkan.
+
+Release sebelumnya `20260825-0043c7b` menjalankan exact source
+`0043c7bfb85698b9894ce01214642ffe59825750`. Dashboard Produk menyediakan antrean Semua/Perlu tindakan/
 Draft/Tayang/Arsip, stok live dari inventory varian aktif, publication
 readiness, literal search, deterministic sort, pagination, dan exact action
 berdasarkan permission. Loading/error/retry/empty/filter reset, desktop/mobile,
 serta public smoke lulus. Active dan rollback release memakai shared storage;
 persistent data yang sempat release-local direkonsiliasi tanpa overwrite dan
-recovery copy dipertahankan. Readiness tetap 30/42 dengan 12 blocker; commerce
-tidak diaktifkan.
+recovery copy dipertahankan.
 
 Release sebelumnya `20260825-412d351` menjalankan exact source
 `412d3518275d4139d13530587c398d7efd86d61a`. Detail Pesanan memisahkan workspace Owner/Admin dan Finance:

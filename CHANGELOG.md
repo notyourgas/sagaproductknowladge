@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - COYABAG Admin Varian integrity sync
+
+- Produk/area: Dashboard Varian, inventory truth, concurrency, permission, dan
+  release integrity.
+- Informasi `CONFIRMED` berasal dari exact source
+  `eeffc48da8aa4633715480d8ff8007aed3f19a4c`, immutable Hostinger release
+  `20260825-eeffc48`, rollback `20260825-0043c7b`, dan runtime verification.
+- Knowledge mencatat role-aware queue, effective price/weight, media count,
+  exact ledger, SKU/slug uniqueness, revision guard, row lock, reservation
+  guard, last-active guard, serta state lengkap desktop/mobile.
+- Delivery `PRODUCTION_DEPLOYED`; readiness tetap 30/42 dan activation/business
+  readiness `BLOCKED`. Dokumen terdampak: COYABAG product/dossier/changelog,
+  portfolio, master knowledge, root changelog, dan sync status.
+
 ## 2026-08-25 - SagaWork supervisor-assisted attendance sync
 
 - Produk/area: fallback attendance staf tanpa smartphone, exception, report blocker, permission, dan maker-checker.

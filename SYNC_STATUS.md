@@ -12,16 +12,26 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T16:02:08+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T16:22:32+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `1797a76` |
-| Informasi terakhir disinkronkan | SagaWork supervisor-assisted attendance dan exact synthetic staging `b3c36cf`. |
-| Status sinkronisasi | `STAGING_DEPLOYED / SYNTHETIC_VALIDATED / NOT_PRODUCTION_ACTIVATED / BUSINESS_BLOCKED_EXTERNAL`. |
-| Konflik | Tidak ada; assisted attendance dibedakan dari login staf dan dari bukti foto/GPS. |
-| Error | Tidak ada error sinkronisasi; external provider/offsite/legal/device/pilot gates tetap terbuka. |
+| Baseline sebelum pembaruan | `ca0930b` |
+| Informasi terakhir disinkronkan | COYABAG Admin Varian integrity release `20260825-eeffc48`. |
+| Status sinkronisasi | `PRODUCTION_DEPLOYED / COMMERCE_NOT_ACTIVATED / BUSINESS_BLOCKED`. |
+| Konflik | Tidak ada; surface production dibedakan dari commerce production-activated. |
+| Error | Tidak ada error sinkronisasi; readiness tetap 30/42 dengan 12 blocker. |
 
-## File yang berubah pada sinkronisasi ini (SagaWork assisted attendance)
+## File yang berubah pada sinkronisasi ini (COYABAG Admin Varian integrity)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
+
+## File yang berubah pada sinkronisasi sebelumnya (SagaWork assisted attendance)
 
 - `products/sagawork/PRODUCT.md`
 - `products/sagawork/DOSSIER.md`

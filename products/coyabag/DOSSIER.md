@@ -78,16 +78,26 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260825-0043c7b` memakai source
-`0043c7bfb85698b9894ce01214642ffe59825750` dan rollback
-`20260825-412d351`. Dashboard Produk menggunakan composition service
+Release production terbaru `20260825-eeffc48` memakai source
+`eeffc48da8aa4633715480d8ff8007aed3f19a4c` dan rollback
+`20260825-0043c7b`. Dashboard Varian menyediakan antrean role-aware, harga dan
+berat efektif, media count, stok live, serta exact inventory ledger. Owner/Admin
+dapat membuat, memperbarui, dan mengubah status; role view-only tidak menerima
+mutation entry point. Normalisasi SKU/slug dan uniqueness case-insensitive,
+revision guard, serta product-level row lock menjaga retry dan tab stale.
+Deaktivasi ditolak ketika ada reservasi aktif atau varian tersebut merupakan
+varian aktif terakhir pada produk tayang. Semua visual state dan acceptance
+desktop/mobile lulus; readiness tetap 30/42 dan commerce tetap fail-closed.
+
+Release sebelumnya `20260825-0043c7b` memakai source
+`0043c7bfb85698b9894ce01214642ffe59825750`. Dashboard Produk menggunakan composition service
 role-aware dengan antrean Semua/Perlu tindakan/Draft/Tayang/Arsip, stok live
 dari inventory varian aktif, publication readiness, literal search,
 deterministic sorting, pagination, dan exact next action. Mutation entry point
 hanya dikirim kepada role dengan products.manage. Loading, composition error,
 empty/filter reset, desktop table, dan mobile card lulus acceptance. Gate
 release juga merekonsiliasi persistent release-local storage tanpa overwrite;
-active dan rollback release kini sama-sama menunjuk shared storage dengan
+active dan rollback release saat itu sama-sama menunjuk shared storage dengan
 recovery archive privat dipertahankan.
 
 Release sebelumnya `20260825-412d351` memakai source

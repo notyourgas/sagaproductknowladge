@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-25 - COYABAG Admin Varian integrity
+
+- Exact source `eeffc48da8aa4633715480d8ff8007aed3f19a4c` aktif sebagai
+  Hostinger release `20260825-eeffc48`; rollback `20260825-0043c7b` tersedia.
+- Workspace Varian menyediakan antrean role-aware, effective price/weight,
+  media count, live stock, exact ledger, mutation Owner/Admin, dan view-only
+  state tanpa mutation entry point.
+- SKU/slug uniqueness, revision guard, product-level row lock, reservation
+  guard, dan last-active guard melindungi integritas varian. Full tests/build/
+  security, desktop/mobile acceptance, backup/rollback, serta public smoke
+  lulus. Status `PRODUCTION_DEPLOYED`; readiness tetap 30/42, activation dan
+  business readiness `BLOCKED`, dan commerce tetap fail-closed.
+
 ## 2026-08-25 - SagaWork supervisor-assisted attendance
 
 - Exact feature source `fe222e1` aktif pada isolated Hostinger staging `b3c36cf`; docs head `1dee547` mencatat acceptance public-safe.

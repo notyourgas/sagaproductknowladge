@@ -61,9 +61,19 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260825-0043c7b` dengan source
-  `0043c7bfb85698b9894ce01214642ffe59825750` melayani production;
-  rollback langsung `20260825-412d351` dipertahankan.
+- Release aktif `20260825-eeffc48` dengan source
+  `eeffc48da8aa4633715480d8ff8007aed3f19a4c` melayani production;
+  rollback langsung `20260825-0043c7b` dipertahankan.
+- Dashboard Varian menyediakan antrean Semua, Perlu tindakan, Aktif, dan
+  Nonaktif. Owner/Admin dapat membuat, memperbarui, serta mengubah status
+  varian; role view-only tidak menerima mutation entry point.
+- SKU dan slug dinormalisasi serta dicegah duplikat tanpa membedakan kapital.
+  Revision guard menolak tab stale, row lock menserialkan mutasi per produk,
+  sedangkan varian dengan reservasi aktif dan varian aktif terakhir pada produk
+  tayang tidak dapat dinonaktifkan.
+- Harga/berat efektif, jumlah media, stok live, dan tautan ledger tampil pada
+  workspace yang sama. Loading, error/retry, empty/filter, confirmation,
+  processing, blocked, success, desktop, dan mobile lulus acceptance.
 - Dashboard Produk kini memiliki antrean Semua, Perlu tindakan, Draft, Tayang,
   dan Arsip. Stok berasal dari inventory varian aktif, readiness publikasi dan
   exact next action berasal dari server, sedangkan role view-only tidak

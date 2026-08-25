@@ -8,6 +8,21 @@ Mencatat perubahan material COYABAG dengan provenance public-safe.
 
 Surface deployment tidak otomatis berarti commerce activation.
 
+## 2026-08-25 - Admin Varian integrity production release
+
+- Informasi `CONFIRMED` berasal dari exact source
+  `eeffc48da8aa4633715480d8ff8007aed3f19a4c`, immutable Hostinger release
+  `20260825-eeffc48`, rollback `20260825-0043c7b`, dan runtime verification.
+- Workspace Varian kini role-aware dengan antrean operasional, harga/berat
+  efektif, media count, stok live, serta tautan exact inventory ledger.
+- Normalisasi dan uniqueness SKU/slug, revision guard, row lock per produk,
+  active-reservation guard, serta last-active-on-published guard melindungi
+  mutation dari duplikasi, retry, concurrency, dan tab stale.
+- Loading/error/retry/empty/filter/confirmation/processing/blocked/success,
+  desktop/mobile, full tests, build, security, migration, backup/rollback, dan
+  public smoke lulus. Delivery `PRODUCTION_DEPLOYED`; readiness tetap 30/42
+  dengan 12 blocker. Activation dan business readiness tetap `BLOCKED`.
+
 ## 2026-08-25 - Admin Produk integrity production release
 
 - Informasi `CONFIRMED` berasal dari exact source
