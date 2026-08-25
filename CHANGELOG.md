@@ -5,6 +5,7 @@
 - Produk/area: Staff PWA install/update, cache safety, source CI, release, recovery, dan pilot gate.
 - Informasi `CONFIRMED` berasal dari feature source `e9c2c6c`, exact active isolated staging `e003a3d`, documentation head `6964dd5`, dan synthetic build/test/runtime evidence.
 - Knowledge mencatat explicit Staff update, exact public-only manifest/icon cache, full local CI-equivalent gate, 27/89 unit test, 18-area smoke, security/load/browser/recovery PASS, serta hosted CI yang masih pending private source remote.
+- Protected Vercel Preview `dpl_CxS7HN4JT7SQaKASqcfegtTsxAZF` `READY`; authenticated synthetic health, standalone manifest, dan safe-worker contract PASS tanpa production promotion.
 - Delivery `STAGING_DEPLOYED`; activation `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED_EXTERNAL`. Production tidak berubah.
 - Dokumen terdampak: SagaWork product/dossier/changelog, portfolio, master knowledge, gaps, root changelog, dan sync status.
 

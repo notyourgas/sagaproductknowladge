@@ -33,7 +33,7 @@ SagaWork adalah PWA operasi tenaga kerja multi-lokasi untuk jadwal, absensi foto
 ## Status saat ini
 
 - Exact active staging runtime `e003a3d`; isolated Hostinger staging memakai MySQL 8.4 dengan 21 migration, data sintetis, serta same-VPS loopback object store khusus acceptance non-PII. Store ini bukan provider production/offsite/HA dan tidak menerima real employee/photo data.
-- Vercel Preview `dpl_AJNsByPfcxvbFEmtk8KvRB92YL6m` `READY`, synthetic-only, tanpa MySQL atau custom domain.
+- Protected Vercel Preview `dpl_CxS7HN4JT7SQaKASqcfegtTsxAZF` `READY`, synthetic-only; authenticated health, standalone manifest, dan public-only service-worker contract PASS, tanpa MySQL atau custom domain.
 - Delivery `STAGING_DEPLOYED`; activation `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED_EXTERNAL`.
 
 ## Batas dan next gate

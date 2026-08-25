@@ -4,7 +4,7 @@
 
 - Feature `e9c2c6c`, exact active isolated staging `e003a3d`, dan docs head `6964dd5` memuat evidence public-safe.
 - Staff mendapat install guidance dan explicit update; service worker hanya meng-cache public manifest/icon dan tidak mengintersep HTML/API/authenticated route/foto/export.
-- Full local gate, 27/89 unit test, 18-area smoke, security 7/7, load 720/0, browser+Axe 12/4, encrypted backup, manifest, serta rollback dua arah lulus. Workflow CI SHA-pinned tersedia tetapi hosted run menunggu private source remote.
+- Full local gate, 27/89 unit test, 18-area smoke, security 7/7, load 720/0, browser+Axe 12/4, encrypted backup, manifest, serta rollback dua arah lulus. Protected Vercel Preview `dpl_CxS7HN4JT7SQaKASqcfegtTsxAZF` `READY`; workflow CI SHA-pinned tersedia tetapi hosted run menunggu private source remote.
 - Delivery `STAGING_DEPLOYED`; production/real pilot tidak berubah. Device UAT, provider/offsite/legal/human gates, public route, dan final Go Andreas tetap pending.
 
 ## 2026-08-25 - COYABAG Admin Media Produk integrity

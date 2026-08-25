@@ -12,13 +12,13 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T17:10:17+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T17:16:34+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `28369ad` |
-| Informasi terakhir disinkronkan | SagaWork safe PWA/CI baseline active synthetic staging `e003a3d`. |
+| Baseline sebelum pembaruan | `0f4757b` |
+| Informasi terakhir disinkronkan | SagaWork protected Vercel Preview `dpl_CxS7HN4JT7SQaKASqcfegtTsxAZF` untuk source PWA terbaru. |
 | Status sinkronisasi | `STAGING_DEPLOYED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`. |
-| Konflik | Tidak ada; local CI-equivalent evidence dibedakan dari hosted CI run, dan synthetic staging dibedakan dari production activation. |
+| Konflik | Tidak ada; Vercel protected synthetic preview dibedakan dari Hostinger full-stack staging dan production activation. |
 | Error | Tidak ada error sinkronisasi; source remote/hosted CI, real-device PWA UAT, provider/offsite/legal/human Gate A-C/E tetap pending. |
 
 ## File yang berubah pada sinkronisasi ini (SagaWork safe PWA dan CI baseline)
