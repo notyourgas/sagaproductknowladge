@@ -10,6 +10,16 @@ production, activation, dan business readiness.
 Mock, fixture, preview frontend, dan test lokal bukan bukti provider atau
 production activation.
 
+## 2026-08-25 - Recovery preflight masuk full validation
+
+- Exact private source `e6e27d0` berstatus `LOCAL_VALIDATED`.
+- `pnpm validate` kini selalu menjalankan behavioral release/recovery preflight
+  melalui Node launcher lintas-platform sebelum quality gate lain.
+- Launcher mencari standard Git Bash atau `PATH` di Windows tanpa command
+  interpolation; full validation dan audit dependency lulus.
+- Hosted run `32859786213` tetap berhenti sebelum runner/step karena account
+  billing gate. Production, preview, dan staging status tidak berubah.
+
 ## 2026-08-25 - Fail-closed staging restore verification
 
 - Exact private source `076f76b` berstatus `LOCAL_VALIDATED`.

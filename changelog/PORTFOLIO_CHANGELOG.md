@@ -1,5 +1,12 @@
 # Portfolio Changelog
 
+## 2026-08-25 - Snap and Fit recovery gate in full validation
+
+- Exact private source `e6e27d0` membuat `pnpm validate` selalu menjalankan
+  behavioral release/recovery preflight melalui safe cross-platform launcher.
+- Full local validation dan audit dependency lulus; hosted run tetap account-
+  gated sebelum runner. Delivery `LOCAL_VALIDATED`, production tidak berubah.
+
 ## 2026-08-25 - Snap and Fit fail-closed restore hardening
 
 - Exact private source `076f76b` memperbaiki recovery schema identity dan

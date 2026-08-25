@@ -47,8 +47,9 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 - Delivery: `LOCAL_VALIDATED`.
 - Activation: `NOT_PRODUCTION_ACTIVATED`.
 - Business readiness: `BLOCKED`.
-- Exact private source head `076f76b`; staging restore hardening berasal dari
-  `076f76b`, MySQL 8.4 clean-room compatibility fix berasal dari `4384948`, dan
+- Exact private source head `e6e27d0`; full-validation recovery gate berasal
+  dari `e6e27d0`, staging restore hardening berasal dari `076f76b`, MySQL 8.4
+  clean-room compatibility fix berasal dari `4384948`, dan
   digest-only application release feature
   berasal dari `d0f3b7d`, immutable supply-chain hardening berasal dari `ee45e56`,
   authoritative load fixture berasal dari `4f9d8d3`, ShellCheck
@@ -111,7 +112,7 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   dependency produksi nol vulnerability lulus. Container workflow dikonfigurasi
   menghasilkan BuildKit SBOM/provenance dan manifest digest; image belum
   dibangun/dijalankan sehingga emission/runtime evidence tetap gate.
-- Hosted GitHub Actions run `32859199601` pada exact current head `076f76b`
+- Hosted GitHub Actions run `32859786213` pada exact current head `e6e27d0`
   gagal sebelum satu pun step berjalan: runner belum ditetapkan dan steps kosong;
   anotasi menyatakan account payment/spending-limit gate. Run sebelumnya pada
   `176cf15`, `4384948`, dan `d0f3b7d` memiliki pola yang sama.
@@ -151,6 +152,10 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   history sehat, tidak ada orphan deletion task, dan ledger seimbang per mata
   uang. Behavioral shell gate menerima healthy fixture dan menolak missing
   schema, orphan, migration tidak sehat, serta ledger tidak seimbang.
+- `pnpm validate` sekarang selalu menjalankan behavioral release/recovery
+  preflight sebelum format/lint/typecheck/test/build. Node launcher tidak memakai
+  shell interpolation dan menemukan Git Bash standard/PATH pada Windows, sehingga
+  local full gate tidak lagi bergantung pada hosted runner untuk coverage ini.
 - Installable PWA memakai navigation network-first dan offline fallback yang
   menyatakan tidak ada aksi terkirim. Cache Storage hanya mengizinkan offline
   shell, public icon, serta same-origin static asset non-private; API, auth,

@@ -12,8 +12,8 @@ credential, PII, identifier tenant/perangkat, atau detail provider sensitif.
 - Delivery: `LOCAL_VALIDATED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED`
-- Provenance: exact private source head `076f76b`, staging restore hardening
-  `076f76b`, MySQL 8.4 clean-room
+- Provenance: exact private source head `e6e27d0`, full-validation recovery gate
+  `e6e27d0`, staging restore hardening `076f76b`, MySQL 8.4 clean-room
   compatibility fix `4384948`, digest-only application
   release feature `d0f3b7d`, immutable supply-chain hardening `ee45e56`, authoritative load
   fixture `4f9d8d3`, ShellCheck acceptance
@@ -32,7 +32,7 @@ credential, PII, identifier tenant/perangkat, atau detail provider sensitif.
   durable notification worker `d964fea`, lifecycle/retention worker `4d602d9`,
   protected Vercel preview `dpl_CeGgE8rxJX58qQpTGzdqUoPc6iQn` dari implementation
   source `4384948`.
-- Hosted CI evidence: exact current-head run `32859199601` berhenti sebelum
+- Hosted CI evidence: exact current-head run `32859786213` berhenti sebelum
   assignment runner dengan steps kosong dan anotasi account payment/spending
   limit. Run sebelumnya pada protected-preview docs, MySQL implementation, dan
   digest-only feature head menunjukkan pola yang sama. Local/static gates tetap
@@ -236,6 +236,9 @@ fotografer desktop-optimized.
   deletion task, atau ledger yang tidak seimbang per currency. Healthy plus
   empat failure mode lulus behavioral shell gate; changed script dan test juga
   lulus checksum-verified ShellCheck v0.11.0 severity `style`.
+- Cross-platform Node launcher kini menjalankan behavioral recovery preflight di
+  dalam setiap `pnpm validate`; standard Git Bash/PATH dideteksi tanpa shell
+  interpolation. Full local validation membuktikan launcher dan preflight aktif.
 
 ## Risiko dan gate terbuka
 

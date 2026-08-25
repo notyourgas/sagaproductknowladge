@@ -12,12 +12,31 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T21:24:01+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T21:29:36+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `ef73c4e35e85af33dc82e28c4ea93bbdd7588552` |
-| Informasi terakhir disinkronkan | Snap and Fit fail-closed restore hardening pada exact source `076f76b`. |
+| Baseline sebelum pembaruan | `97e6e1a59a4df3c3100171a19e56f1e2e82f19d0` |
+| Informasi terakhir disinkronkan | Snap and Fit full-validation recovery gate pada exact source `e6e27d0`. |
 | Status sinkronisasi | `LOCAL_VALIDATED / STAGING_READY=BLOCKED / ACTIVATION_BLOCKED`. |
+
+## Snap and Fit full-validation recovery gate
+
+- Exact source head: `e6e27d0`.
+- `pnpm validate` menjalankan behavioral release/recovery preflight melalui
+  safe cross-platform Node launcher.
+- Full local validation dan audit dependency lulus.
+- Hosted run `32859786213` tidak memperoleh runner/step karena account billing
+  gate; status delivery tidak berubah.
+
+## File yang berubah pada sinkronisasi ini (Snap and Fit full validation)
+
+- `products/snap-and-fit/PRODUCT.md`
+- `products/snap-and-fit/DOSSIER.md`
+- `products/snap-and-fit/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## Snap and Fit fail-closed restore hardening
 

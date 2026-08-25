@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - Snap and Fit full-validation recovery gate sync
+
+- Klasifikasi: `CONFIRMED`.
+- Produk/area: local/hosted validation, release/recovery preflight, Windows Bash
+  resolution, dan CI provenance.
+- Informasi berasal dari exact private source `e6e27d0`, passing full local
+  validation, audit dependency, dan hosted run `32859786213`.
+- Production tidak berubah. Delivery tetap `LOCAL_VALIDATED`; hosted CI,
+  isolated staging, activation, dan business readiness tetap blocked.
+- Dokumen terdampak: Snap and Fit product/dossier/changelog, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-25 - Snap and Fit restore-verifier hardening sync
 
 - Klasifikasi: `CONFIRMED`.
