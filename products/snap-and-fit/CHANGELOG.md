@@ -10,6 +10,18 @@ production, activation, dan business readiness.
 Mock, fixture, preview frontend, dan test lokal bukan bukti provider atau
 production activation.
 
+## 2026-08-25 - Durable in-app notification worker
+
+- Exact private source `d964fea` berstatus `LOCAL_VALIDATED`.
+- Verified payment membuat receipt untuk customer dan HiRes request untuk
+  fotografer; fulfillment membuat delivery notification untuk customer.
+- Worker memproses durable notification melalui outbox, stale reclaim, bounded
+  retry, sent evidence, dan DLQ. Payload aman tidak memuat email, telepon, BIB,
+  URL media, atau payment detail.
+- Full local gate, 38 API test, 18 worker test, dan dependency audit lulus;
+  optional service integration tetap skip terkontrol. Transactional email dan
+  isolated staging execution masih gate eksternal.
+
 ## 2026-08-25 - Candidate feedback dan cart authority
 
 - `LOCAL_VALIDATED` dari exact source private `09a55bd`; protected preview

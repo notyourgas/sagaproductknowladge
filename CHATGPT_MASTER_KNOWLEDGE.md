@@ -4,10 +4,11 @@ Evidence cut-off: 25 Agustus 2026 06:25 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
-Snap and Fit exact private source `09a55bd` berstatus `CONFIRMED /
+Snap and Fit exact private source `d964fea` berstatus `CONFIRMED /
 LOCAL_VALIDATED`; privileged operations feature berasal dari `b09f279`,
 deletion/recovery hardening dari `dbbb814`, candidate/cart authority dari
-`09a55bd`, dan protected Vercel preview `dpl_FFDKoeT7Nj51FNxHgdKuEVogBYJJ`
+`09a55bd`, durable notification worker dari `d964fea`, dan protected Vercel
+preview `dpl_FFDKoeT7Nj51FNxHgdKuEVogBYJJ`
 berstatus `READY`.
 Marketplace foto olahraga ini mencakup event, uploader preview 500 JPEG,
 BIB/selfie mock ber-consent, catalog Rp25k/Rp60k/Rp99k, Tokopay mock/contract,
@@ -20,7 +21,9 @@ sekarang memiliki idempotent partial retry, stale reclaim, DLQ, 30-second
 deadline sweep, safe evidence, controlled terminal-only outbox replay, dan
 restore schema-integrity check. Candidate confirm/reject terikat exact anonymous
 search session; verified checkout menyimpan server-priced cart dan order
-provenance. Full local gate, 38 API test, 14 worker test, dependency audit nol,
+provenance. Payment/fulfillment membuat durable in-app notification dengan
+retry, stale reclaim, sent evidence, dan DLQ tanpa mengklaim email terkirim.
+Full local gate, 38 API test, 18 worker test, dependency audit nol,
 dan browser suite lulus; integration service-dependent
 tetap skip terkontrol. Backend staging, isolated VPS, MySQL/Redis/S3 worker
 evidence, real-provider deletion, external provider/legal gate,

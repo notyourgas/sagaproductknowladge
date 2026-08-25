@@ -1,5 +1,14 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - Snap and Fit durable notification sync
+
+- Produk/area: payment receipt, photographer HiRes request, customer delivery,
+  worker retry, dan DLQ.
+- Informasi `CONFIRMED` berasal dari exact private source `d964fea`, full local
+  gate, worker test, dan dependency audit.
+- Delivery tetap `LOCAL_VALIDATED`; email provider dan isolated staging belum
+  tervalidasi, sehingga activation dan business readiness tidak berubah.
+
 ## 2026-08-25 - Snap and Fit candidate and cart authority sync
 
 - Produk/area: event-scoped candidate feedback dan server-authoritative cart.

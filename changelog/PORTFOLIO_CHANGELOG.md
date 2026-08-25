@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-08-25 - Snap and Fit durable notifications
+
+- Exact private source `d964fea` menambahkan durable in-app receipt,
+  photographer HiRes request, customer delivery, retry/stale reclaim, sent
+  evidence, dan DLQ melalui worker/outbox.
+- Full local gate, 38 API test, 18 worker test, dan dependency audit lulus.
+- Delivery tetap `LOCAL_VALIDATED`; transactional email dan isolated staging
+  belum tervalidasi.
+
 ## 2026-08-25 - Snap and Fit candidate and cart authority
 
 - Exact private source `09a55bd` mempersistenkan candidate confirm/reject yang

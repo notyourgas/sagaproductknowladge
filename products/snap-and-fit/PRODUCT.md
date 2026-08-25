@@ -47,13 +47,13 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 - Delivery: `LOCAL_VALIDATED`.
 - Activation: `NOT_PRODUCTION_ACTIVATED`.
 - Business readiness: `BLOCKED`.
-- Exact source `09a55bd` berada di private `main`; fitur operator berasal dari
+- Exact source `d964fea` berada di private `main`; fitur operator berasal dari
   `b09f279`, deletion/recovery hardening dari `dbbb814`, serta candidate/cart
-  authority dari `09a55bd`.
+  authority dari `09a55bd`. Durable notification worker berasal dari `d964fea`.
 - Protected Vercel preview `dpl_FFDKoeT7Nj51FNxHgdKuEVogBYJJ` berstatus
   `READY`; frontend dapat dirender tetapi backend staging sengaja fail-closed.
 - Full local validation, 38 API test dengan enam integrasi eksternal terkontrol
-  skip, 14 worker test dengan dua integrasi service-dependent skip, audit
+  skip, 18 worker test dengan tiga integrasi service-dependent skip, audit
   dependency nol vulnerability, serta 38 browser test dengan dua viewport skip
   lulus.
 
@@ -68,6 +68,8 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   kapasitasnya tidak memenuhi gate Snap and Fit.
 - Candidate confirm/reject terikat exact anonymous search session; authoritative
   checkout menyimpan server-priced cart dan menghubungkannya ke order.
+- Payment dan fulfillment membuat durable in-app notification dengan retry,
+  stale reclaim, dan DLQ. Transactional email nyata belum diaktifkan.
 
 ## Next gate
 
