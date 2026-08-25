@@ -1,5 +1,24 @@
 # SagaView Changelog
 
+## 2026-08-25 - S288 inactive rollback recovery restored
+
+- Klasifikasi: `PRODUCTION_ROLLBACK_RESTORED / RECOVERY_COMPLETED`;
+  `PRODUCTION_DEPLOYED=false`, `PRODUCTION_ACTIVATED=false`, dan
+  `BUSINESS_READY=false`.
+- Before: pointer rollback menunjuk release `20260822112703-298336d`, tetapi
+  target fisiknya tidak ada sehingga jalur rollback backend/Owner terblokir.
+- After: setelah approval exact Andreas, tooling
+  `94675a5f1b432182de0f3cd22a4982c654c11c69` memvalidasi dan merekonstruksi
+  target exact commit `298336da09b735638c4ffea9b7e8830b1283452e`, lalu
+  mempublikasikan pointer rollback secara atomik.
+- Acceptance: backend/Owner aktif tetap `20260824163507-f956846`, Studio tetap
+  `20260824170456-7ae79ae`, database sentinel tidak berubah, empat service
+  aktif, journal error nol, rollback gate ready, empat public smoke HTTP 200,
+  dan HSTS/X-Frame-Options/CSP lulus.
+- Delivery: perubahan host terbatas pada target dan pointer rollback inactive.
+  Kandidat baru tidak dideploy, runtime aktif tidak dipindahkan, dan recovery
+  ini bukan otorisasi deploy atau activation.
+
 ## 2026-08-25 - S288 exact preflight compatibility and approval pack
 
 - Klasifikasi: `CONFIRMED / PUSHED / SECURITY_VALIDATED / QA_VALIDATED /

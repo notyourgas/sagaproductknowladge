@@ -1,6 +1,20 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 25 Agustus 2026 21:24 WIB
+Evidence cut-off: 25 Agustus 2026 21:23 WIB
+
+S288 inactive rollback recovery completed: exact tooling
+`94675a5f1b432182de0f3cd22a4982c654c11c69` memulihkan release rollback
+pasif `20260822112703-298336d` / commit
+`298336da09b735638c4ffea9b7e8830b1283452e` setelah approval exact Andreas.
+Pointer rollback sekarang kembali memiliki target valid, sedangkan backend/Owner
+aktif tetap `20260824163507-f956846`, Studio tetap
+`20260824170456-7ae79ae`, database sentinel tidak berubah, dan kandidat tidak
+dideploy atau diaktifkan. Gate rollback, empat service, journal error nol,
+empat public smoke, dan header keamanan lulus. Status
+`PRODUCTION_ROLLBACK_RESTORED / RECOVERY_COMPLETED /
+PRODUCTION_DEPLOYED=false / PRODUCTION_ACTIVATED=false /
+BUSINESS_READY=false`. Gap berikutnya kembali ke keputusan deploy kandidat
+yang terpisah; recovery ini tidak memberi otorisasi deploy.
 
 S288 exact recovery preflight and approval pack: source
 `94675a5f1b432182de0f3cd22a4982c654c11c69` memperbaiki kompatibilitas
@@ -16,6 +30,7 @@ PRODUCTION_AUDIT_CONDITIONAL_GO / LOCAL_VALIDATED /
 IMPLEMENTED_NOT_DEPLOYED / RECOVERY_APPROVAL_REQUIRED`; approval kandidat
 lama tidak berlaku. Gap tunggal berikutnya adalah approval exact baru, lalu
 runtime inactive recovery acceptance. Deploy/activation tetap keputusan lain.
+Status historis ini ditutup oleh recovery completion pada 21:22 WIB.
 
 S288 mainline recovery candidate: exact pushed source
 `a830cf40e1c4fcb53d0e0d63d2e443d71a89b05e` membawa chain recovery lengkap

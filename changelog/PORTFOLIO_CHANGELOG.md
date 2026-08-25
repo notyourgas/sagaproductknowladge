@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-08-25 - SagaView S288 inactive rollback restored
+
+- Exact tooling `94675a5f1b432182de0f3cd22a4982c654c11c69` memulihkan
+  target rollback pasif `20260822112703-298336d` setelah approval exact.
+- Release aktif, Studio, platform, SagaBook, dan database tetap sama; empat
+  service, journal, rollback gate, public smoke, serta security headers lulus.
+- Delivery `PRODUCTION_ROLLBACK_RESTORED / RECOVERY_COMPLETED`, bukan deploy
+  atau activation kandidat dan belum `BUSINESS_READY`.
+
 ## 2026-08-25 - SagaView S288 exact recovery approval readiness
 
 - Exact pushed source `94675a5f1b432182de0f3cd22a4982c654c11c69`
