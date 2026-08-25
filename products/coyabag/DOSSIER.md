@@ -78,9 +78,15 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260825-a6fbc90` memakai source
-`a6fbc9041684b530607bdf133e5863743a6f6aeb` dan rollback
-`20260825-d6fe071`. Hero memiliki kontrol pause/play 44 piksel, berhenti selama
+Release production terbaru `20260825-b7bf006` memakai source
+`b7bf0061cf54b77eafeb9297280649e27bc99135` dan rollback
+`20260825-a6fbc90`. Home memprioritaskan hero, menunda media lifestyle kartu
+sampai pointer/keyboard intent, dan lazy-load media scene/capacity. Dalam
+clean-context lab publik, image transfer turun 34,9% pada mobile dan 20,3% pada
+desktop; 12 state runtime-performance, 79 kombinasi responsif, 20 accessibility
+check, dan 14 motion state lulus di production.
+
+Hero memiliki kontrol pause/play 44 piksel, berhenti selama
 pointer/focus interaction, tab tersembunyi, atau reduced-motion, tetapi tetap
 mendukung navigasi manual dan live announcement. Video teaser hanya berjalan
 saat terlihat dan berhenti offscreen atau pada reduced-motion. Scroll progress,

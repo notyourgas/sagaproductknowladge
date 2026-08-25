@@ -61,9 +61,15 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260825-a6fbc90` dengan source
-  `a6fbc9041684b530607bdf133e5863743a6f6aeb` melayani production;
-  rollback langsung `20260825-d6fe071` dipertahankan.
+- Release aktif `20260825-b7bf006` dengan source
+  `b7bf0061cf54b77eafeb9297280649e27bc99135` melayani production;
+  rollback langsung `20260825-a6fbc90` dipertahankan.
+- Home memprioritaskan hero dan memuat foto lifestyle kartu hanya setelah
+  pointer atau keyboard intent. Media scene/capacity nonkritis dimuat lazy;
+  clean-context lab publik menurunkan image transfer 34,9% pada mobile dan
+  20,3% pada desktop tanpa menghapus hover produk.
+- Public acceptance lulus 12 runtime-performance state, 79 kombinasi
+  responsif, 20 accessibility check, dan 14 motion state desktop/mobile.
 - Hero dapat dijeda dan berhenti otomatis saat hover/focus, tab tersembunyi,
   atau reduced-motion. Navigasi manual tetap tersedia dan perubahan manual
   diumumkan melalui live region.

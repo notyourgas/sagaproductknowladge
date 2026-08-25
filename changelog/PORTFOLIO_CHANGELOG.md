@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-25 - CoyaBag storefront performance integrity
+
+- Exact source `b7bf0061cf54b77eafeb9297280649e27bc99135` aktif sebagai
+  Hostinger release `20260825-b7bf006`; rollback `20260825-a6fbc90` tersedia.
+- Hero diprioritaskan, media lifestyle kartu dimuat berdasarkan intent, dan
+  media scene/capacity nonkritis menjadi lazy tanpa menghapus hover produk.
+- Clean-context lab publik menurunkan image transfer 34,9% mobile dan 20,3%
+  desktop; 12 performance state, 79 responsive combinations, 20 accessibility
+  check, dan 14 motion state lulus.
+- Status `PRODUCTION_DEPLOYED`; readiness tetap 30/42, activation dan business
+  readiness `BLOCKED`, dan commerce tidak diaktifkan.
+
 ## 2026-08-25 - CoyaBag storefront motion and interaction integrity
 
 - Exact source `a6fbc9041684b530607bdf133e5863743a6f6aeb` aktif sebagai

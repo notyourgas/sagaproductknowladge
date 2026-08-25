@@ -3179,9 +3179,15 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release aktif `20260825-a6fbc90` menjalankan exact source
-`a6fbc9041684b530607bdf133e5863743a6f6aeb` dengan rollback
-`20260825-d6fe071`. Hero dapat dijeda dan berhenti untuk hover/focus, tab
+Release aktif `20260825-b7bf006` menjalankan exact source
+`b7bf0061cf54b77eafeb9297280649e27bc99135` dengan rollback
+`20260825-a6fbc90`. Hero diprioritaskan; foto lifestyle kartu dimuat hanya
+setelah pointer/keyboard intent; media scene/capacity nonkritis menjadi lazy.
+Clean-context lab publik menurunkan image transfer 34,9% pada mobile dan 20,3%
+pada desktop tanpa menghapus hover. Public acceptance lulus 12 state performa,
+79 kombinasi responsif, 20 accessibility check, dan 14 motion state.
+
+Hero dapat dijeda dan berhenti untuk hover/focus, tab
 tersembunyi, atau reduced-motion; manual navigation dan live announcement tetap
 tersedia. Video teaser hanya berjalan ketika terlihat. Scroll progress,
 Gallery, Video Popover, dan reveal memakai transform/opacity tanpa

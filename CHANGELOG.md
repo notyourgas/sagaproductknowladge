@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - CoyaBag storefront performance production sync
+
+- Produk/area: COYABAG Home media loading, product hover, performance, dan
+  production release.
+- Informasi `CONFIRMED` berasal dari exact source
+  `b7bf0061cf54b77eafeb9297280649e27bc99135`, immutable release
+  `20260825-b7bf006`, rollback `20260825-a6fbc90`, dan runtime verification.
+- Knowledge mencatat hero priority, secondary product media on intent,
+  noncritical media lazy loading, penurunan image transfer clean-context lab,
+  serta public performance/responsive/accessibility/motion acceptance.
+- Delivery `PRODUCTION_DEPLOYED`; readiness tetap 30/42 dengan 12 blocker.
+  Activation dan business readiness tetap `BLOCKED`; commerce tidak diaktifkan.
+- Dokumen terdampak: CoyaBag product/dossier/changelog, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-25 - CoyaBag storefront motion production sync
 
 - Produk/area: COYABAG hero, video teaser, scroll, Gallery, Video Popover,

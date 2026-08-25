@@ -8,6 +8,20 @@ Mencatat perubahan material COYABAG dengan provenance public-safe.
 
 Surface deployment tidak otomatis berarti commerce activation.
 
+## 2026-08-25 - Storefront performance integrity production release
+
+- Informasi `CONFIRMED` berasal dari exact source
+  `b7bf0061cf54b77eafeb9297280649e27bc99135`, immutable Hostinger release
+  `20260825-b7bf006`, rollback `20260825-a6fbc90`, dan runtime verification.
+- Hero mendapat prioritas eksplisit; foto lifestyle kartu baru dimuat setelah
+  pointer/keyboard intent; media scene/capacity nonkritis menjadi lazy.
+- Clean-context lab publik menurunkan image transfer 34,9% mobile dan 20,3%
+  desktop. Public acceptance lulus 12 runtime-performance state, 79 kombinasi
+  responsif, 20 accessibility check, dan 14 motion state.
+- Delivery `PRODUCTION_DEPLOYED`; readiness tetap 30/42 dengan 12 blocker.
+  Activation dan business readiness tetap `BLOCKED`; checkout/provider tidak
+  diaktifkan.
+
 ## 2026-08-25 - Storefront motion and interaction integrity production release
 
 - Informasi `CONFIRMED` berasal dari exact source
