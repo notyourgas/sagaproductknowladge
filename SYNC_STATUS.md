@@ -12,14 +12,24 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T18:23:16+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T18:28:08+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `e91cc00` |
-| Informasi terakhir disinkronkan | SagaWork signed pilot admission implementation `3bcdf06`, acceptance `a36ac8e`, docs head `7ec66ff`; active staging tetap `e003a3d`. |
-| Status sinkronisasi | `STAGING_DEPLOYED / NOT_PRODUCTION_ACTIVATED / PILOT_READY_CANDIDATE / GATE_E_NOT_STARTED_EXTERNAL / BUSINESS_READY=false`. |
-| Konflik | Tidak ada konflik; admission control internal tidak disamakan dengan real admission receipt atau activation. |
-| Error | Tidak ada error knowledge; external/human/provider/legal/device/public-route evidence dan final Andreas Go masih pending. |
+| Baseline sebelum pembaruan | `37e2c27` |
+| Informasi terakhir disinkronkan | Snap and Fit checksum-verified ShellCheck acceptance exact `162cc29`. |
+| Status sinkronisasi | `LOCAL_VALIDATED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=BLOCKED`. |
+| Konflik | Tidak ada konflik; static shell lint tidak disamakan dengan runtime staging. |
+| Error | Tidak ada error knowledge; isolated staging dan provider/runtime evidence tetap external gate. |
+
+## File yang berubah pada sinkronisasi ini (Snap and Fit ShellCheck acceptance)
+
+- `products/snap-and-fit/PRODUCT.md`
+- `products/snap-and-fit/DOSSIER.md`
+- `products/snap-and-fit/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaWork signed pilot admission)
 

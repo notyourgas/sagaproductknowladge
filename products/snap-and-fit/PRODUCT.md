@@ -47,8 +47,9 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 - Delivery: `LOCAL_VALIDATED`.
 - Activation: `NOT_PRODUCTION_ACTIVATED`.
 - Business readiness: `BLOCKED`.
-- Exact private `main` head `b17712d`; clean-checkout setup fix berasal dari
-  `fbf01b6`, liveness peer acceptance berasal dari
+- Exact private `main` head `162cc29`; ShellCheck acceptance berasal dari
+  `162cc29`, clean-checkout setup fix berasal dari `fbf01b6`, liveness peer
+  acceptance berasal dari
   `7b44101`, encrypted event-scoped face search berasal dari
   `96df668`, resumable multipart HiRes berasal dari
   `3fc397f`, staging controls dan preview baseline dari `d2b0c5c`, CloudFront private
@@ -84,6 +85,10 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   serta 53 browser test dengan tiga intentional skip. Repository-wide LF policy
   mencegah format drift pada Windows; integration-service skip tetap tidak
   dianggap sebagai runtime staging evidence.
+- Official Windows ShellCheck v0.11.0 archive cocok dengan SHA-256 release asset;
+  seluruh lima skrip operasi lulus sampai severity `style`. Verifier portable
+  sudah dibersihkan setelah run. Ini menutup static shell lint, bukan image,
+  container, migration, load, atau recovery runtime gate.
 
 ## Batas klaim
 

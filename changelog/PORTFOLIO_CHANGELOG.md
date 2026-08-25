@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-08-25 - Snap and Fit ShellCheck acceptance
+
+- Exact docs head `162cc29` menutup static shell lint dengan official Windows
+  ShellCheck v0.11.0 yang checksum-verifiable.
+- Lima skrip operasi lulus hingga severity `style`; portable verifier dibersihkan
+  setelah run.
+- Delivery tetap `LOCAL_VALIDATED`. Runtime Linux/container, migration, load,
+  recovery, isolated staging, dan production gates tidak berubah.
+
 ## 2026-08-25 - SagaWork signed pilot admission gate
 
 - Exact implementation `3bcdf06`, acceptance `a36ac8e`, docs head `7ec66ff`, dan active synthetic staging `e003a3d` menjadi provenance public-safe.

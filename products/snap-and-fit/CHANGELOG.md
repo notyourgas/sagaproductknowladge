@@ -10,6 +10,15 @@ production, activation, dan business readiness.
 Mock, fixture, preview frontend, dan test lokal bukan bukti provider atau
 production activation.
 
+## 2026-08-25 - Checksum-verified ShellCheck acceptance
+
+- Exact private docs head `162cc29` berstatus `LOCAL_VALIDATED`.
+- Official Windows ShellCheck v0.11.0 archive cocok dengan SHA-256 release asset;
+  seluruh lima skrip operasi lulus sampai severity `style`.
+- Portable verifier sudah dibersihkan setelah run. Static shell lint tertutup,
+  tetapi image/container, migration, load, backup/restore, dan canary masih
+  menunggu isolated staging. Production dan activation tidak berubah.
+
 ## 2026-08-25 - Reproducible Windows clean-checkout acceptance
 
 - Exact private setup fix `fbf01b6` dan evidence head `b17712d` berstatus

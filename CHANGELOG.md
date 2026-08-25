@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - Snap and Fit ShellCheck acceptance sync
+
+- Produk/area: release tooling, static shell lint, dan staging readiness.
+- Informasi `CONFIRMED` berasal dari exact private docs head `162cc29`, official
+  Windows ShellCheck v0.11.0 release asset, dan checksum-verified local run.
+- Knowledge mencatat lima skrip operasi lulus hingga severity `style`; portable
+  verifier dibersihkan setelah run.
+- Delivery tetap `LOCAL_VALIDATED`; Linux/container, migration, load, recovery,
+  isolated staging, activation, dan production tidak berubah.
+- Dokumen terdampak: Snap and Fit product/dossier/changelog, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-25 - SagaWork signed pilot admission sync
 
 - Produk/area: Gate E admission control, authority custody, exact-target release binding, restricted evidence, QA, handoff, dan readiness.

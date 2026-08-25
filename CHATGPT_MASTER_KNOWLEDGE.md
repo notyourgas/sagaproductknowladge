@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 25 Agustus 2026 18:23 WIB
+Evidence cut-off: 25 Agustus 2026 18:28 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -16,8 +16,9 @@ approval lama deprecated dan recovery/deploy belum diizinkan.
 
 SagaWork active staging runtime `e003a3d` berstatus `CONFIRMED / STAGING_DEPLOYED / NOT_PRODUCTION_ACTIVATED / PILOT_READY_CANDIDATE / BUSINESS_READY=false`. Isolated Hostinger staging memakai synthetic data, MySQL 8.4 dengan 21 migration, dan same-VPS loopback object store khusus acceptance non-PII; protected Vercel Preview `dpl_CxS7HN4JT7SQaKASqcfegtTsxAZF` `READY`, 39-page build, authenticated prototype health/manifest/safe-worker PASS tanpa MySQL/custom domain. Scope tervalidasi mencakup staff no-OTP dan privileged TOTP; people dengan atomic CSV draft import serta guarded Staff lifecycle; scheduling/notes/swap; attendance foto+GPS/private non-PII byte pipeline; paid/unpaid break; default-off unscheduled; supervisor-assisted attendance tanpa fake evidence dengan independent review; serta Staff PWA install guidance dan explicit update dengan exact public-only manifest/icon cache. Reporting HR mempunyai canonical searchable per-staff summary dan shift drill-down untuk net/payable, jumlah/menit telat mentah, early leave, break, overtime candidate/approved, serta blocker. CSV `summary`/`detail` memakai live projection atau locked snapshot yang sama, preview/final metadata, timezone, formula sanitation, checksum, no-store, audit, dan deterministic superseded re-export. Correction/request, partial overtime approval, Reliability 50/30/20, period lock/reopen, retention/recovery, 27/89 unit test, 18-area smoke, security/load/accessibility, manifest 26 file, checksum backup, serta guarded rollback `e003a3d → 9d49565 → e003a3d` lulus. Restricted tracked-source artifact exact runtime `e003a3d`, OpenAPI implementation/acceptance `85bbbfb`, dan signed-admission acceptance `a36ac8e` mempunyai provenance/checksum/content-exclusion PASS; artifact admission belum terdeploy. Pilot admission control exact `3bcdf06`/`a36ac8e` memakai Andreas-only Ed25519 signing dan public-key verifier, exact source/runtime/preview binding, maksimum tujuh hari, serta exact-set 16 evidence Gate A/B/C/E. Dua belas synthetic security/contract cases lulus, tetapi real receipt/evidence belum ada dan Gate E tetap `NOT_STARTED_EXTERNAL`. Implemented data drift gate mencakup 56 tabel/21 migration; validated OpenAPI 3.1.1 exact-set mencakup 56 path/69 operasi, 39 request components, auth/parameter/idempotency/envelope/error/CSV, source drift verifier, dan pinned independent lint tanpa warning. External SDK/response DTO tidak dipublikasikan karena API protected same-origin. Workflow CI SHA-pinned tersedia dan full local equivalent PASS, tetapi hosted run menunggu private source remote. Loopback store bukan external provider/DPA/offsite/HA dan real employee/photo data dilarang; XLSX/async private export, dedicated coverage/leave/exception report, rehire/offboarding authority, scheduled/backdated termination, training/test isolation, multi-session policy, public route, offsite key escrow, human/device/legal/pilot evidence, named champion/company, real signed admission receipt, serta activation masih blocker. Payroll compliance tidak diklaim.
 
-Snap and Fit exact private source head `b17712d` berstatus `CONFIRMED /
-LOCAL_VALIDATED`; clean-checkout setup fix berasal dari `fbf01b6`, liveness peer
+Snap and Fit exact private source head `162cc29` berstatus `CONFIRMED /
+LOCAL_VALIDATED`; ShellCheck acceptance berasal dari `162cc29`, clean-checkout
+setup fix berasal dari `fbf01b6`, liveness peer
 acceptance berasal dari `7b44101`, encrypted
 event-scoped face search berasal dari `96df668`,
 private CloudFront delivery signer berasal dari `5fe6ab5`,
@@ -42,6 +43,9 @@ Lima shell script lulus Git Bash `bash -n`; staging Compose lulus static
 interpolation dengan official checksum-verified Docker Compose v5.5.0 dan
 synthetic-only values tanpa image/container execution. Hosted Actions, isolated
 container runtime, migration, load, backup/restore, dan canary tetap gate.
+Official Windows ShellCheck v0.11.0 archive juga cocok dengan release-asset
+SHA-256 dan lima skrip operasi lulus sampai severity `style`; portable verifier
+sudah dibersihkan. Bukti ini tidak menggantikan eksekusi Linux/container.
 Official liveness React peer metadata ditutup dengan narrow exact-edge rule;
 frozen install, fresh web build, full validation, 53 browser tests, audit, dan
 peer check lulus. Ini bukan real-device camera evidence.
