@@ -1,6 +1,6 @@
 # Snap and Fit Product Knowledge
 
-Updated: 25 Agustus 2026
+Updated: 26 Agustus 2026
 Evidence status: `CONFIRMED / LOCAL_VALIDATED / protected preview deployed`
 
 ## Tujuan dokumen
@@ -47,8 +47,9 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 - Delivery: `LOCAL_VALIDATED`.
 - Activation: `NOT_PRODUCTION_ACTIVATED`.
 - Business readiness: `BLOCKED`.
-- Exact private source head `4ecef5e`; fail-closed staging-host preflight berasal
-  dari `fc383e1`, runtime-artifact hardening berasal dari `e64b002`,
+- Exact private source head `7887af9`; streaming encrypted-recovery feature
+  berasal dari `a6857d1`, fail-closed staging-host preflight berasal dari
+  `fc383e1`, runtime-artifact hardening berasal dari `e64b002`,
   protected-preview evidence refresh berasal dari `eec6269`,
   full-validation recovery gate berasal dari `e6e27d0`,
   staging restore hardening berasal dari `076f76b`, MySQL 8.4
@@ -115,10 +116,11 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   dependency produksi nol vulnerability lulus. Container workflow dikonfigurasi
   menghasilkan BuildKit SBOM/provenance dan manifest digest; image belum
   dibangun/dijalankan sehingga emission/runtime evidence tetap gate.
-- Hosted GitHub Actions run `32873937441` pada exact feature head `fc383e1`
+- Hosted GitHub Actions run `32875673050` (job `97892868155`) pada exact
+  encrypted-recovery feature head `a6857d1`
   gagal sebelum satu pun step berjalan: runner ID `0`, nama runner kosong, dan steps kosong;
   anotasi menyatakan account payment/spending-limit gate. Run sebelumnya pada
-  `176cf15`, `4384948`, dan `d0f3b7d` memiliki pola yang sama.
+  `fc383e1`, `176cf15`, `4384948`, dan `d0f3b7d` memiliki pola yang sama.
   Ini adalah bukti blocker hosted-runner/account, bukan kegagalan source gate.
   Feature-head run menjadi evidence hosted terbaru. Branch protection private
   repository juga tetap plan-gated (API mengembalikan 403), sehingga
@@ -126,9 +128,17 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 - Deploy staging kini menolak sebelum membaca konfigurasi Compose atau menarik
   image bila host bukan Linux, marker approval isolasi/enkripsi tidak root-owned
   mode `0600`, kapasitas di bawah 4 vCPU/16 GB/200 GB dengan 100 GB tersedia,
-  atau Docker Compose v2 tidak aktif. Behavioral fixture menolak tiap kondisi
+  atau Docker Compose v2 tidak aktif, atau native `age` tidak dapat dieksekusi.
+  Behavioral fixture menolak tiap kondisi
   secara independen; read-only probe pada shared Hostinger target berhenti exit
   `66` tanpa menulis file atau memasuki release path.
+- MySQL backup kini mengalirkan dump melalui gzip langsung ke native `age` dan
+  hanya menulis `.sql.gz.age` plus checksum. Restore menolak plaintext,
+  mewajibkan identity root-owned mode `0600`, memeriksa checksum/dekripsi, dan
+  menyalurkan plaintext hanya ke disposable import. Fixture lokal membuktikan
+  penolakan permission longgar, plaintext, dan ciphertext rusak serta checksum
+  tetap portabel setelah artifact dipindah; real binary, off-host transfer,
+  retention, key custody, serta RPO/RTO restore masih gate isolated staging.
 - Runtime release kini memiliki tiga artifact digest-addressed terpisah untuk
   API, worker, dan one-shot migration/seed. Semua package first-party memakai
   file allowlist; artifact deploy menghapus development script dan host-path

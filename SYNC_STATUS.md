@@ -12,12 +12,34 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T23:50:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-26T00:05:23+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `477655387a77756ac55152f5ef3e81f33a57d37d` |
-| Informasi terakhir disinkronkan | Snap and Fit isolated-host release refusal. |
+| Baseline sebelum pembaruan | `0d70ad94d7def5213f03fa94d051a9c1a917a447` |
+| Informasi terakhir disinkronkan | Snap and Fit encrypted recovery artifacts. |
 | Status sinkronisasi | `LOCAL_VALIDATED / NOT_PRODUCTION_ACTIVATED / BLOCKED`; isolated staging belum tersedia. |
+
+## Snap and Fit encrypted recovery artifacts
+
+- Exact private feature source `a6857d1`; documentation/evidence head `7887af9`.
+- Backup MySQL streaming gzip-to-age hanya menulis encrypted object plus
+  portable checksum; restore menolak plaintext dan tamper serta mewajibkan
+  root-owned recovery identity.
+- Full validation, 53 browser pass dengan tiga intentional skip, Bash syntax,
+  ShellCheck, production audit nol vulnerability, dan peer check lulus.
+- Hosted run `32875673050` (job `97892868155`) tetap berhenti sebelum runner/
+  step karena account billing/spending gate. Delivery dan production tidak
+  berubah; real off-host encrypted restore tetap external gate.
+
+## File yang berubah pada sinkronisasi ini (Snap and Fit encrypted recovery)
+
+- `products/snap-and-fit/PRODUCT.md`
+- `products/snap-and-fit/DOSSIER.md`
+- `products/snap-and-fit/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## Snap and Fit isolated-host release refusal
 

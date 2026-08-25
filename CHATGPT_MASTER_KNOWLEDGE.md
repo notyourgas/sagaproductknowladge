@@ -25,8 +25,9 @@ observasi minimal dua siklus timer memerlukan approval baru Andreas.
 
 SagaWork exact source/handoff runtime `d36a59fb456106eafa3d8b3e797d42a4aac67a68` berstatus `CONFIRMED / STAGING_DEPLOYED / NOT_PRODUCTION_ACTIVATED / PILOT_READY_CANDIDATE / BUSINESS_READY=false`; identical role-performance application evidence `05e2b1a`. Isolated Hostinger staging memakai synthetic data, MySQL 8.4 dengan 65 application table/23 migration/32 trigger, dan same-VPS loopback object store acceptance non-PII; protected Vercel Preview `dpl_9zvZTjgQBRhHJm5pVXH4rmtqQaBg` `READY`, 44-page build, Deployment Protection, authenticated health/strict nonce CSP/security-header/safe-worker PASS tanpa MySQL/custom domain. Scope tervalidasi mencakup Staff no-OTP dan privileged TOTP; password/session controls; people/CSV/lifecycle; scheduling/notes/swap; attendance foto+GPS/private non-PII byte pipeline; break; default-off unscheduled; assisted attendance; PWA; per-staff/CSV reporting; correction/request; overtime partial approval; Reliability; period lock/reopen; retention/recovery; serta default-off role-performance dengan versioned scorecard, attendance cap 15%, evidence/confidence, second review, own acknowledgement/seven-day appeal, fairness schedule, Payroll denial, dan no automatic employment action. Acceptance meluluskan 33/111 unit test, 20-area smoke, security abuse 9/9, workstation-to-loopback browser/Axe 12/4, isolated load 720/720 dengan p95 `165,5/438,4/331,2 ms`, schema-2 manifest 1.049 file, encrypted restore 65/23/32/24 tombstone/zero resurrection, dan rollback `05e2b1a → 17427f5 → 05e2b1a`. Direct shared-VPS Chromium crash dicatat sebagai runner limitation. Restricted exact archive 1.455.320 byte serta 699-component CycloneDX SBOM mempunyai checksum/provenance PASS dan tidak dipublikasikan. Pilot admission control tetap memakai Andreas-only Ed25519 signing dan exact-set 16 evidence. Andreas sudah mengunci `KANANTA-MADIUN-CANARY-01`: satu lokasi Madiun, 5–10 Staff, 26–28 Agustus 2026, support enabled/default 09.00–18.00 WIB, manual parallel run, dan performance OFF. Restricted charter tersedia tetapi draft admission tetap NO_GO; exact roster, individual champion, 15 evidence lain, real signed receipt, dan activation belum ada. Validated OpenAPI 3.1.1 mencakup 68 path/83 operasi/46 request components. Internal ASVS 5.0 profile tetap 155 pass internal, 79 not applicable, 0 pending internal, 18 pending external, dan 1 risk acceptance; ini bukan sertifikasi/full-Level-2 claim. Private source remote/hosted CI, legal/privacy, independent review, external provider/DPA/offsite key custody, public route, capacity monitoring, human/device evidence, incident/parallel-plan approvals, receipt, dan activation masih blocker. Loopback store tidak menerima real employee/photo/performance data; payroll compliance dan real-staff performance validity tidak diklaim.
 
-Snap and Fit exact private source head `4ecef5e` berstatus `CONFIRMED /
-LOCAL_VALIDATED`; fail-closed staging-host preflight berasal dari `fc383e1`,
+Snap and Fit exact private source head `7887af9` berstatus `CONFIRMED /
+LOCAL_VALIDATED`; encrypted-recovery feature berasal dari `a6857d1`,
+fail-closed staging-host preflight berasal dari `fc383e1`,
 runtime-artifact hardening berasal dari `e64b002`,
 protected-preview evidence refresh berasal dari `eec6269`,
 full-validation recovery gate berasal dari `e6e27d0`, staging
@@ -83,19 +84,28 @@ lulus; tiga artifact aktual juga lulus runtime import. Forced-uncached test grap
 menutup race Prisma build/test, full validation dan 53 browser pass lulus, peer
 check bersih, serta production audit nol vulnerability. Bukti ini belum sama
 dengan Linux image build/run/scan atau emitted SBOM/provenance.
-Exact feature-head GitHub Actions run `32873937441` berhenti dengan runner ID
-`0`, nama runner kosong, dan tanpa satu pun step karena account payment/spending-limit gate;
-run sebelumnya pada protected-preview docs, MySQL implementation, dan digest-only
-feature head menunjukkan pola yang sama. Ini
+Exact encrypted-recovery feature-head GitHub Actions run `32875673050` (job
+`97892868155`) berhenti dengan runner ID
+`0`, nama runner kosong, dan tanpa satu pun step karena account payment/spending-
+limit gate; run sebelumnya pada host preflight, protected-preview docs, MySQL
+implementation, dan digest-only feature head menunjukkan pola yang sama. Ini
 hosted-runner/account blocker, bukan source regression. Required-check
 enforcement juga belum tersedia karena branch-protection API untuk private
 repository masih plan-gated (403).
 Deploy staging sekarang menjalankan fail-closed host preflight sebelum Compose:
 Linux, marker approval isolasi/enkripsi root-owned `0600`, minimum 4 vCPU,
-16 GB RAM, 200 GB disk dengan 100 GB tersedia, Docker Engine, dan Compose v2.
+16 GB RAM, 200 GB disk dengan 100 GB tersedia, Docker Engine, Compose v2, dan
+executable native `age`.
 Behavioral fixture menolak tiap kondisi; shared Hostinger target ditolak exit
 `66` melalui probe read-only tanpa remote write. Ini menutup accidental shared-
 host deployment, bukan bukti isolated staging tersedia.
+MySQL backup sekarang streaming `mysqldump` melalui gzip langsung ke native
+`age` dan hanya menulis `.sql.gz.age` plus portable checksum. Restore menolak
+plaintext, mewajibkan identity root-owned mode `0600`, memverifikasi ciphertext
+dan dekripsi, lalu menyalurkan plaintext hanya ke disposable import. Behavioral
+fixture menolak key-file permission longgar, plaintext, dan tampered ciphertext
+sebelum container start. Ini bukti kontrak lokal, bukan real cryptographic
+runtime, off-host transfer, retention/key custody, atau RPO/RTO restore.
 Disposable loopback MySQL 8.4.9 mengaplikasikan 18/18 migration dari kosong,
 menjalankan seed sintetis, dan meluluskan 2 database test, 71 active API test,
 serta 24 active worker test; skip tersisa hanya Redis/BullMQ. Dump sintetis

@@ -7,13 +7,14 @@ credential, PII, identifier tenant/perangkat, atau detail provider sensitif.
 
 ## Konteks dan status bukti
 
-- Updated: 25 Agustus 2026
+- Updated: 26 Agustus 2026
 - Klasifikasi: `CONFIRMED`
 - Delivery: `LOCAL_VALIDATED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED`
-- Provenance: exact private source head `4ecef5e`, fail-closed staging-host
-  preflight `fc383e1`, runtime-artifact hardening `e64b002`,
+- Provenance: exact private source head `7887af9`, encrypted-recovery feature
+  `a6857d1`, fail-closed staging-host preflight `fc383e1`, runtime-artifact
+  hardening `e64b002`,
   protected-preview evidence refresh `eec6269`, full-validation
   recovery gate `e6e27d0`, staging restore
   hardening `076f76b`, MySQL 8.4 clean-room
@@ -35,10 +36,12 @@ credential, PII, identifier tenant/perangkat, atau detail provider sensitif.
   durable notification worker `d964fea`, lifecycle/retention worker `4d602d9`,
   protected Vercel preview `dpl_3PW4rbAek9FijQy9vU3Dfb1UMTUw` dari exact
   source `e6e27d0`.
-- Hosted CI evidence: exact feature-head run `32873937441` berhenti sebelum
-  assignment runner dengan runner ID `0`, nama runner kosong, steps kosong, dan anotasi account payment/spending
-  limit. Run sebelumnya pada protected-preview docs, MySQL implementation, dan
-  digest-only feature head menunjukkan pola yang sama. Local/static gates tetap
+- Hosted CI evidence: exact encrypted-recovery feature-head run `32875673050`
+  (job `97892868155`) berhenti sebelum
+  assignment runner dengan runner ID `0`, nama runner kosong, steps kosong, dan
+  anotasi account payment/spending limit. Run sebelumnya pada host preflight,
+  protected-preview docs, MySQL implementation, dan digest-only feature head
+  menunjukkan pola yang sama. Local/static gates tetap
   lulus, tetapi hosted run tidak;
   protected-main enforcement juga belum
   tersedia karena branch-protection API private repository plan-gated (403).
@@ -126,9 +129,17 @@ fotografer desktop-optimized.
   execution, scan, serta SBOM/provenance emission masih gate staging.
 - Deployment staging menjalankan preflight sebelum Compose: Linux, marker
   approval isolasi/enkripsi root-owned `0600`, minimum 4 vCPU, 16 GB RAM,
-  200 GB disk dengan 100 GB tersedia, Docker Engine, dan Compose v2 wajib lulus.
+  200 GB disk dengan 100 GB tersedia, Docker Engine, Compose v2, dan executable
+  native `age` wajib lulus.
   Shared Hostinger target yang tersedia ditolak exit `66` melalui probe
   read-only dan tidak dimodifikasi.
+- Backup MySQL mengalirkan dump melalui gzip langsung ke native `age`, menulis
+  hanya encrypted object `.sql.gz.age` dan checksum portabel. Restore menolak
+  plaintext, mewajibkan identity root-owned mode `0600`, memverifikasi checksum
+  dan dekripsi, lalu menyalurkan plaintext hanya ke disposable MySQL import.
+  Behavioral fixture menolak permission longgar, plaintext, dan ciphertext
+  rusak sebelum container start. Eksekusi real `age`, transfer off-host,
+  retention/key custody, serta pengukuran RPO/RTO masih gate isolated staging.
 - Vercel tidak terhubung langsung ke MySQL/Redis dan long-running image work
   tidak berjalan pada Vercel Functions.
 - API memakai rate limiter memory pada local/test dan mewajibkan atomic Redis
@@ -265,8 +276,8 @@ fotografer desktop-optimized.
   tanpa Docker, sehingga tidak dipakai sebagai target Snap and Fit.
 - MySQL compatibility lokal sudah ditutup, tetapi pengulangan MySQL dan runtime
   Redis pada isolated Linux staging, protected synthetic deletion/replay,
-  backup/restore, rollback, 300 VU load, soak, security staging, dan device UAT
-  belum dieksekusi.
+  encrypted off-host backup/restore, rollback, 300 VU load, soak, security
+  staging, dan device UAT belum dieksekusi.
 - Exact MySQL ledger/payout, aggregate metrics, reconciliation, HiRes, deletion,
   dan lifecycle assertions lulus pada disposable local MySQL; semuanya masih
   wajib diulang terhadap isolated staging dan bukan evidence provider nyata.

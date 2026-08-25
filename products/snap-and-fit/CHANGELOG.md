@@ -10,6 +10,24 @@ production, activation, dan business readiness.
 Mock, fixture, preview frontend, dan test lokal bukan bukti provider atau
 production activation.
 
+## 2026-08-26 - Streaming encrypted MySQL recovery artifacts
+
+- Exact private encrypted-recovery feature `a6857d1`; documentation/evidence
+  head `7887af9`.
+- Backup mengalirkan `mysqldump` melalui gzip langsung ke native `age`, hanya
+  menulis `.sql.gz.age` plus checksum portabel, dan tidak membuat archive
+  plaintext. Restore hanya menerima encrypted artifact, mewajibkan identity
+  root-owned mode `0600`, dan menyalurkan hasil dekripsi ke disposable import.
+- Behavioral fixture menolak recipient/identity permission longgar, plaintext,
+  dan ciphertext rusak sebelum container start. Full validation, 53 browser
+  pass dengan tiga intentional skip, Bash syntax, ShellCheck, audit dependency
+  nol, serta peer check lulus.
+- Hosted run `32875673050` (job `97892868155`) tidak memperoleh runner/step
+  karena account billing/spending gate. Real `age`, off-host transfer, retention,
+  key custody, RPO/RTO restore, dan isolated staging tetap belum dieksekusi.
+- Klasifikasi `CONFIRMED`; delivery tetap `LOCAL_VALIDATED`, production dan
+  activation tidak berubah, business readiness tetap `BLOCKED`.
+
 ## 2026-08-25 - Fail-closed isolated staging-host preflight
 
 - Exact private feature source `fc383e1`; documentation/evidence head `4ecef5e`.

@@ -1,5 +1,25 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-26 - Snap and Fit encrypted recovery artifacts sync
+
+- Ringkasan: sinkronisasi streaming gzip-to-age MySQL backup, encrypted-only
+  restore, portable checksum, root-owned key-file controls, serta fail-closed
+  plaintext/tamper rejection.
+- Alasan: recovery sebelumnya masih menghasilkan plaintext `.sql.gz` sebelum
+  off-host encryption sehingga belum memenuhi encrypted-backup contract.
+- Produk/area: Snap and Fit DevOps, security, recovery, staging preflight,
+  supply chain, acceptance, external gates, dan readiness.
+- Klasifikasi: `CONFIRMED`; private feature source `a6857d1`, documentation head
+  `7887af9`, full local gates, 53 browser pass, dan hosted run `32875673050`.
+- Production berubah: tidak. Delivery tetap `LOCAL_VALIDATED`; activation
+  `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED`.
+- Dokumen terdampak: Snap and Fit product/dossier/changelog, portfolio, master
+  knowledge, root changelog, dan sync status.
+- Blocker/next action: approved isolated VPS dan native `age`, encrypted off-host
+  destination/retention/key custody, measured restore/RPO/RTO, DNS/TLS,
+  AWS/Tokopay/email/monitoring, legal/privacy, device UAT, dan hosted CI sebelum
+  `STAGING_READY`.
+
 ## 2026-08-25 - Snap and Fit isolated-host release refusal sync
 
 - Ringkasan: sinkronisasi fail-closed staging-host preflight, explicit isolation/

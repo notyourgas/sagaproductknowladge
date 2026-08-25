@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-26 - Snap and Fit encrypted recovery artifact hardening
+
+- Exact private feature `a6857d1` dan documentation head `7887af9` mengganti
+  plaintext logical backup dengan streaming gzip-to-age `.sql.gz.age`.
+- Restore encrypted-only memeriksa portable checksum, root-owned recovery
+  identity, decryption stream, schema/migration/privacy/ledger integrity, serta
+  menolak plaintext dan ciphertext rusak sebelum container start.
+- Full local gates dan 53 browser pass lulus; hosted run `32875673050` tetap
+  account-gated sebelum runner/step. Production tidak berubah, delivery tetap
+  `LOCAL_VALIDATED`, dan real off-host restore masih external gate.
+
 ## 2026-08-25 - Snap and Fit isolated-host release refusal
 
 - Exact private feature `fc383e1` dan documentation head `4ecef5e` menambahkan
