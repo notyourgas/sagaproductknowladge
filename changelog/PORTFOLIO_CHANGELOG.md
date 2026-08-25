@@ -1,5 +1,12 @@
 # Portfolio Changelog
 
+## 2026-08-25 - SagaWork supervisor-assisted attendance
+
+- Exact feature source `fe222e1` aktif pada isolated Hostinger staging `b3c36cf`; docs head `1dee547` mencatat acceptance public-safe.
+- Fallback staf tanpa smartphone memakai actor supervisor, published schedule, reason/attestation, no fake photo/GPS, pending-review blocker, idempotency, serta independent maker-checker; Staff menerima 403.
+- 24/79 unit test, 16-area smoke, security 7/7, final load 720 request/0 error, browser+Axe 12/4, backup checksum, manifest 26 file, dan rollback dua arah lulus.
+- Delivery `STAGING_DEPLOYED`; real data/provider/offsite/legal/device/human/pilot/public route dan activation tetap `BLOCKED_EXTERNAL`.
+
 ## 2026-08-25 - Snap and Fit private CloudFront dan AWS face contracts
 
 - Exact private source `b067d01` menambahkan five-minute SHA-256 CloudFront

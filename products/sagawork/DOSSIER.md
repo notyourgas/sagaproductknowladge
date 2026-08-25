@@ -21,7 +21,7 @@ Staff memperoleh action-first home, jadwal/note, swap, request, serta attendance
 
 ## Technical overview dan validasi
 
-Next.js 16 PWA, React 19, TypeScript, Drizzle, MySQL 8.4, Node 22, systemd, isolated Hostinger staging, dan Vercel Preview. Active runtime `7d5ada9` memiliki 20 migration, 56 application table, 26 append-only trigger, dan manifest 25 artifact. 23 test file/76 unit test, smoke 15 area, security abuse 7/7, browser+Axe 12 pass/4 intentional scope skip, 720-request load, recovery, timer, dan guarded rollback dua arah lulus pada synthetic staging. Protected Staff/HR layouts dipaksa dynamic sehingga build tanpa database environment tidak dapat memublikasikan workspace statis.
+Next.js 16 PWA, React 19, TypeScript, Drizzle, MySQL 8.4, Node 22, systemd, isolated Hostinger staging, dan Vercel Preview. Active runtime `b3c36cf` memiliki 21 migration, 56 application table, 26 append-only trigger, dan manifest 26 artifact. 24 test file/79 unit test, smoke 16 area, security abuse 7/7, browser+Axe 12 pass/4 intentional scope skip, 720-request load, recovery, timer, dan guarded rollback `b3c36cf → 7d5ada9 → b3c36cf` lulus pada synthetic staging. Protected Staff/HR layouts dipaksa dynamic sehingga build tanpa database environment tidak dapat memublikasikan workspace statis.
 
 Attendance evidence bytes kini lulus acceptance internal dengan gambar sintetis non-PII: random private key, presigned PUT, size/type/magic/decode, ClamAV service-user EICAR, Sharp auto-rotate dan JPEG re-encode tanpa EXIF/XMP/ICC, quarantine-to-clean status, Staff denial, scoped five-minute HR signed view + audit, legal hold, byte purge, serta `bytesDeleted` certificate. Object store hanya listen di loopback pada VPS yang sama; signed URL acceptance tidak ditujukan ke browser eksternal. Topologi ini bukan external provider, DPA, offsite backup, HA, atau izin real photo data.
 
@@ -30,6 +30,8 @@ Bulk onboarding CSV tervalidasi untuk maksimal 500 baris/1 MB: template tetap, p
 Attendance policy versioned mengatur paid/unpaid break, toleransi long break, serta human review untuk missing/long break. Report, CSV, snapshot, dan component line memisahkan net produktif dari payable. Anomali membuat risk/exception evidence tanpa penalti disipliner otomatis; snapshot locked lama tetap dapat diekspor tanpa dimutasi.
 
 Absensi darurat tanpa jadwal memakai opt-in policy default-off. Satu draft per staff/tanggal mengikat lokasi aktif, photo+GPS evidence, check-in/out aktual, human-review exception, dan payroll blocker. Draft tidak dapat dipublish sebelum checkout; HR publish lalu resolve membuka rekonsiliasi. Dismiss membatalkan draft. Tidak ada konsekuensi otomatis.
+
+Supervisor-assisted attendance menutup fallback bagi staf tanpa smartphone tanpa credential sharing. Supervisor/HR memilih jadwal published yang belum mempunyai event, mengisi waktu/reason/attestation, lalu sistem menyimpan raw `admin_amendment` tanpa foto/GPS dan membuat blocker `pending_review`. Staff ditolak, idempotent replay aman, dan pembuat record tidak dapat melakukan self-review. Training/test shift isolation serta multi-session policy tetap belum lengkap.
 
 ## Positioning, pricing, risiko
 

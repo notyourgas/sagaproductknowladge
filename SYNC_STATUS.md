@@ -12,14 +12,25 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T15:52:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T16:02:08+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `3696bac` |
-| Informasi terakhir disinkronkan | Snap and Fit private CloudFront signer, disconnected AWS face-provider contract, dan protected preview terbaru. |
-| Status sinkronisasi | `PUSHED / LOCAL_VALIDATED / NOT_PRODUCTION_ACTIVATED / BUSINESS_BLOCKED`. |
-| Konflik | Tidak ada; adapter contract lokal dibedakan dari provider/staging activation. |
-| Error | Tidak ada error sinkronisasi; external staging/legal/provider/device gates tetap terbuka. |
+| Baseline sebelum pembaruan | `1797a76` |
+| Informasi terakhir disinkronkan | SagaWork supervisor-assisted attendance dan exact synthetic staging `b3c36cf`. |
+| Status sinkronisasi | `STAGING_DEPLOYED / SYNTHETIC_VALIDATED / NOT_PRODUCTION_ACTIVATED / BUSINESS_BLOCKED_EXTERNAL`. |
+| Konflik | Tidak ada; assisted attendance dibedakan dari login staf dan dari bukti foto/GPS. |
+| Error | Tidak ada error sinkronisasi; external provider/offsite/legal/device/pilot gates tetap terbuka. |
+
+## File yang berubah pada sinkronisasi ini (SagaWork assisted attendance)
+
+- `products/sagawork/PRODUCT.md`
+- `products/sagawork/DOSSIER.md`
+- `products/sagawork/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## File yang berubah pada sinkronisasi ini (Snap and Fit provider contracts)
 

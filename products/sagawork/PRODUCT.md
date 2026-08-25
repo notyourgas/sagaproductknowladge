@@ -21,6 +21,7 @@ SagaWork adalah PWA operasi tenaga kerja multi-lokasi untuk jadwal, absensi foto
 - HR bulk import CSV memakai preview per baris, validasi tenant/lokasi/duplikat, commit atomik sebagai draft, dan audit; impor tidak membuat akun atau password staff.
 - Staff Home, jadwal, notes, konfirmasi shift, swap, request, dan check-in/break/check-out dengan paid/unpaid break policy.
 - Absensi darurat tanpa jadwal bersifat default-off; bila policy mengizinkan, staff memilih lokasi aktif, sistem membuat draft yang selalu direview, dan HR harus publish sebelum hasil dapat direkonsiliasi.
+- Supervisor-assisted attendance tersedia untuk staf tanpa smartphone: hanya jadwal published tiga hari terakhir, reason + attestation wajib, Staff tidak dapat membuatnya, tidak ada foto/GPS palsu, dan pembuat record wajib berbeda dari reviewer.
 - Correction maker-checker, leave ledger, staff-requested overtime candidate→Supervisor→partial HR final.
 - Work-hours memisahkan net produktif dan payable, missing/long break masuk human review, serta telat, overtime candidate/approved, Reliability 50/30/20, period lock, CSV, dan maker-checker reopen.
 - Attendance-photo byte pipeline tervalidasi internal memakai gambar non-PII: private presigned upload, magic/decode, ClamAV, metadata-stripped re-encode, quarantine status, scoped HR signed view, Staff denial, legal hold, real-byte purge, dan deletion certificate.
@@ -28,10 +29,10 @@ SagaWork adalah PWA operasi tenaga kerja multi-lokasi untuk jadwal, absensi foto
 
 ## Status saat ini
 
-- Exact active staging runtime `7d5ada9`; isolated Hostinger staging memakai MySQL 8.4, data sintetis, serta same-VPS loopback object store khusus acceptance non-PII. Store ini bukan provider production/offsite/HA dan tidak menerima real employee/photo data.
+- Exact active staging runtime `b3c36cf`; isolated Hostinger staging memakai MySQL 8.4 dengan 21 migration, data sintetis, serta same-VPS loopback object store khusus acceptance non-PII. Store ini bukan provider production/offsite/HA dan tidak menerima real employee/photo data.
 - Vercel Preview `dpl_AJNsByPfcxvbFEmtk8KvRB92YL6m` `READY`, synthetic-only, tanpa MySQL atau custom domain.
 - Delivery `STAGING_DEPLOYED`; activation `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED_EXTERNAL`.
 
 ## Batas dan next gate
 
-Belum ada real employee/photo data, public DNS, external provider storage/DPA, offsite key escrow, human device UAT, legal/privacy approval, named pilot, atau closed beta. Payroll nominal/compliance tidak diklaim. Next gate: moderated synthetic UAT, external provider/recovery, GPS-camera field UAT, incident rehearsal, pilot/DPA, lalu final Go/No-Go Andreas.
+Belum ada real employee/photo data, public DNS, external provider storage/DPA, offsite key escrow, human device UAT, legal/privacy approval, named pilot, atau closed beta. Training/test shift isolation dan multi-session policy juga masih terbuka. Payroll nominal/compliance tidak diklaim. Next gate: moderated synthetic UAT, external provider/recovery, GPS-camera field UAT, incident rehearsal, pilot/DPA, lalu final Go/No-Go Andreas.

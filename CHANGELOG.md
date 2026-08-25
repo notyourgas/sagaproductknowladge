@@ -1,5 +1,13 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - SagaWork supervisor-assisted attendance sync
+
+- Produk/area: fallback attendance staf tanpa smartphone, exception, report blocker, permission, dan maker-checker.
+- Informasi `CONFIRMED` berasal dari feature source `fe222e1`, exact active isolated staging `b3c36cf`, documentation head `1dee547`, dan synthetic build/test/runtime evidence.
+- Knowledge mencatat published-schedule/time guard, reason + attestation, Staff 403, no credential sharing, no fake photo/GPS, append-only admin events, idempotency, pending review, dan independent reviewer.
+- Delivery `STAGING_DEPLOYED`; activation `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED_EXTERNAL`. Production tidak berubah dan real data/pilot belum diaktifkan.
+- Dokumen terdampak: SagaWork product/dossier/changelog, portfolio, master knowledge, gaps, root changelog, dan sync status.
+
 ## 2026-08-25 - Snap and Fit CloudFront dan face-provider contract sync
 
 - Produk/area: private media delivery, biometric provider boundary, preview,
