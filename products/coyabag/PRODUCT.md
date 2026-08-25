@@ -61,9 +61,19 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260826-347beec` dengan source
-  `347beecbb18383796c8a1e55b16feee2b6c6578a` melayani production;
-  rollback langsung `20260826-1e88e9e` dipertahankan.
+- Release aktif `20260826-4be4f28` dengan source
+  `4be4f282f18c56603ef0f8fdb75246de6e641727` melayani production;
+  rollback langsung `20260826-347beec` dipertahankan.
+- About Us memakai verifikasi fakta pada halaman dan setiap section story,
+  warehouse, serta process. Draft belum lengkap tetap dapat disimpan, tetapi
+  publish/schedule gagal tertutup sampai catatan dan seluruh konfirmasi lengkap.
+- Perubahan fakta otomatis membatalkan verifikasi terkait. API publik menghapus
+  catatan internal dan hanya menampilkan section terverifikasi. Production masih
+  memakai empty state jujur karena belum ada fakta About yang disetujui owner.
+- 168 storefront test, 408 full Laravel test dengan 407 pass dan satu
+  intentional skip, full RC, dependency audit, desktop/mobile acceptance,
+  immutable deploy, dan public smoke lulus. Readiness tetap 30/42 dengan 12
+  blocker.
 - Testimonials hanya menayangkan review berizin. Review creator/marketplace
   wajib memiliki sumber HTTPS aman dan dapat ditelusuri; review pelanggan
   langsung boleh tanpa URL publik.

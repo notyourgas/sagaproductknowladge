@@ -78,7 +78,18 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260826-347beec` memakai source
+Release production terbaru `20260826-4be4f28` memakai source
+`4be4f282f18c56603ef0f8fdb75246de6e641727` dan rollback
+`20260826-347beec`. About Us membutuhkan verifikasi halaman, catatan internal,
+dan konfirmasi setiap section story, warehouse, serta process sebelum publish
+atau schedule. Perubahan fakta otomatis membatalkan konfirmasi terkait. API
+publik menghapus metadata internal dan hanya mengirim section terverifikasi;
+payload belum terverifikasi menjadi empty state jujur. Desktop/mobile,
+168 storefront test, 408 full Laravel test dengan 407 pass dan satu intentional
+skip, full RC, dependency audit, backup/rollback, serta public smoke lulus.
+Readiness tetap 30/42 dengan 12 blocker.
+
+Release sebelumnya `20260826-347beec` memakai source
 `347beecbb18383796c8a1e55b16feee2b6c6578a` dan rollback
 `20260826-1e88e9e`. Testimonials mewajibkan sumber HTTPS aman tanpa credential
 untuk review creator/marketplace, sedangkan review pelanggan langsung boleh

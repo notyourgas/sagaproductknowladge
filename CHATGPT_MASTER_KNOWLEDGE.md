@@ -3496,7 +3496,18 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release aktif `20260826-347beec` menjalankan exact source
+Release aktif `20260826-4be4f28` menjalankan exact source
+`4be4f282f18c56603ef0f8fdb75246de6e641727` dengan rollback
+`20260826-347beec`. About Us membutuhkan verifikasi halaman, catatan internal,
+dan konfirmasi setiap section sebelum publish/schedule. Perubahan fakta
+membatalkan verifikasi terkait; API publik menghapus metadata internal dan
+hanya mengirim section terverifikasi. Production masih memakai empty state
+jujur tanpa membuat sejarah brand atau informasi warehouse pengganti.
+Desktop/mobile acceptance, 168 storefront test, 408 full Laravel test dengan
+407 pass dan satu intentional skip, full RC, dependency audit, backup/rollback,
+serta public smoke lulus. Readiness tetap 30/42 dengan 12 blocker.
+
+Release sebelumnya `20260826-347beec` menjalankan exact source
 `347beecbb18383796c8a1e55b16feee2b6c6578a` dengan rollback
 `20260826-1e88e9e`. Testimonials hanya menayangkan review berizin. Review
 creator/marketplace memerlukan sumber HTTPS aman tanpa credential; review

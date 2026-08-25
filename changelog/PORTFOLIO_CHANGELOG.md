@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-26 - COYABAG About Us fact verification integrity
+
+- Exact source `4be4f282f18c56603ef0f8fdb75246de6e641727` aktif pada immutable
+  Hostinger release `20260826-4be4f28` dengan rollback `20260826-347beec`.
+- Publish/schedule About memerlukan verifikasi halaman dan semua section;
+  perubahan fakta membatalkan konfirmasi terkait.
+- API publik meredaksi metadata internal dan hanya mengirim fakta terverifikasi.
+  Desktop/mobile acceptance, full RC, dan public smoke lulus.
+- Delivery `PRODUCTION_DEPLOYED`; activation/business readiness `BLOCKED`;
+  readiness 30/42 dan commerce tetap fail-closed.
+
 ## 2026-08-26 - COYABAG Testimonials provenance and live destination integrity
 
 - Exact source `347beecbb18383796c8a1e55b16feee2b6c6578a` aktif pada immutable

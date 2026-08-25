@@ -12,12 +12,33 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-26T05:00:20+07:00 |
+| Waktu pembaruan terakhir | 2026-08-26T05:45:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | exact `origin/main` `5b183fe` sebelum sinkronisasi COYABAG Testimonials |
-| Informasi terakhir disinkronkan | COYABAG Testimonials provenance and live destination integrity. |
+| Baseline sebelum pembaruan | exact `origin/main` `0bb61d2` sebelum sinkronisasi COYABAG About Us |
+| Informasi terakhir disinkronkan | COYABAG About Us fact verification integrity. |
 | Status sinkronisasi | `PRODUCTION_DEPLOYED`; activation dan business readiness `BLOCKED`; commerce tetap fail-closed. |
+
+## COYABAG About Us fact verification integrity
+
+- Exact source `4be4f282f18c56603ef0f8fdb75246de6e641727` aktif pada immutable
+  release `20260826-4be4f28`; rollback `20260826-347beec`.
+- About memerlukan verifikasi halaman dan seluruh section sebelum publish atau
+  schedule. Edit fakta membatalkan konfirmasi terkait.
+- API publik meredaksi metadata internal dan hanya mengirim fakta terverifikasi;
+  production tetap empty tanpa cerita brand buatan.
+- Full RC, backup/rollback, serta public desktop/mobile smoke lulus. Readiness
+  tetap 30/42 dengan 12 blocker; commerce dan activation tetap blocked.
+
+## File yang berubah pada sinkronisasi ini (COYABAG About Us)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG Testimonials provenance and live destination integrity
 
