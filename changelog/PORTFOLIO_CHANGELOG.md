@@ -2,7 +2,7 @@
 
 ## 2026-08-25 - Snap and Fit private CloudFront dan AWS face contracts
 
-- Exact private source `dd55663` menambahkan five-minute SHA-256 CloudFront
+- Exact private source `b067d01` menambahkan five-minute SHA-256 CloudFront
   signer yang fail-closed untuk S3 staging/production serta AWS Rekognition/
   Liveness adapter yang dibatasi exact event dan tetap disconnected/default-off.
 - Local contract evidence mencakup 59 API, 20 worker, 5 face-provider, 6 media,

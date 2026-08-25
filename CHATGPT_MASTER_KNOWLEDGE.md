@@ -6,7 +6,7 @@ Visibility: public-safe
 
 SagaWork active staging runtime `7d5ada9` berstatus `CONFIRMED / STAGING_DEPLOYED / NOT_PRODUCTION_ACTIVATED / PILOT_READY_CANDIDATE / BUSINESS_READY=false`. Isolated Hostinger staging memakai synthetic data, MySQL 8.4, dan same-VPS loopback object store khusus acceptance non-PII; Vercel Preview `dpl_AJNsByPfcxvbFEmtk8KvRB92YL6m` `READY`. Scope tervalidasi mencakup staff no-OTP dan privileged TOTP, people termasuk atomic CSV draft import tanpa account/password, scheduling/notes/swap, attendance foto+GPS, private quarantine→ClamAV→metadata-stripped photo bytes, owner status, scoped HR signed view, Staff denial, legal hold/purge certificate, paid/unpaid break dengan payable-vs-net dan missing/long human review, default-off unscheduled draft→HR publish/resolve, correction/request, partial overtime approval, work-hours/score, period lock/reopen, retention/recovery, security/load/accessibility, manifest, backup, serta guarded rollback dua arah. Loopback store bukan external provider/DPA/offsite/HA dan real employee/photo data dilarang; public route, offsite key escrow, human/device/legal/pilot evidence, named champion/company, serta activation masih blocker. Payroll compliance tidak diklaim.
 
-Snap and Fit exact private source head `dd55663` berstatus `CONFIRMED /
+Snap and Fit exact private source head `b067d01` berstatus `CONFIRMED /
 LOCAL_VALIDATED`; private CloudFront delivery signer berasal dari `5fe6ab5`,
 AWS event-scoped face provider contract dari `037d2b4`, private bounded API metrics berasal dari `1c1a81e`, safe
 trace/outbox propagation dari `3fa3be4`, privacy-safe installable PWA shell berasal dari `141bbb5`,

@@ -13,7 +13,7 @@ production activation.
 ## 2026-08-25 - Private CloudFront delivery dan AWS face provider contract
 
 - Exact private CloudFront feature `5fe6ab5`, AWS face-provider contract
-  `037d2b4`, dan docs/preview head `dd55663` berstatus `LOCAL_VALIDATED`.
+  `037d2b4`, dan docs/resource-request head `b067d01` berstatus `LOCAL_VALIDATED`.
 - S3 staging/production fail-closed tanpa KMS serta private CloudFront domain,
   key-pair ID, dan API-only signing key. Signed URL dibatasi lima menit dan tidak
   mengekspos private bucket.

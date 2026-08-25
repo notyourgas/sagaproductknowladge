@@ -15,9 +15,9 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-08-25T15:52:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `e016f5b` |
+| Baseline sebelum pembaruan | `3696bac` |
 | Informasi terakhir disinkronkan | Snap and Fit private CloudFront signer, disconnected AWS face-provider contract, dan protected preview terbaru. |
-| Status sinkronisasi | `PUSH_PENDING / LOCAL_VALIDATED / NOT_PRODUCTION_ACTIVATED / BUSINESS_BLOCKED`. |
+| Status sinkronisasi | `PUSHED / LOCAL_VALIDATED / NOT_PRODUCTION_ACTIVATED / BUSINESS_BLOCKED`. |
 | Konflik | Tidak ada; adapter contract lokal dibedakan dari provider/staging activation. |
 | Error | Tidak ada error sinkronisasi; external staging/legal/provider/device gates tetap terbuka. |
 

@@ -47,7 +47,7 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 - Delivery: `LOCAL_VALIDATED`.
 - Activation: `NOT_PRODUCTION_ACTIVATED`.
 - Business readiness: `BLOCKED`.
-- Exact source head `dd55663` berada di private `main`; CloudFront private
+- Exact source head `b067d01` berada di private `main`; CloudFront private
   delivery signer berasal dari `5fe6ab5`, AWS event-scoped face provider
   contract dari `037d2b4`, private bounded API
   metrics berasal dari `1c1a81e`, safe trace/outbox propagation dari `3fa3be4`,

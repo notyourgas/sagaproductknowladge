@@ -4,7 +4,7 @@
 
 - Produk/area: private media delivery, biometric provider boundary, preview,
   dan release gating.
-- Informasi `CONFIRMED` berasal dari exact private source `dd55663`, feature
+- Informasi `CONFIRMED` berasal dari exact private source `b067d01`, feature
   `5fe6ab5`/`037d2b4`, local test/build/security evidence, dan protected preview
   `dpl_8agG8ianbziAht6cbKRRWVwF5DBv` `READY`.
 - Knowledge mencatat CloudFront signer fail-closed serta AWS event-scoped face
