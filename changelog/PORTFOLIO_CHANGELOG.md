@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-08-26 - SagaView S294 Support Hub path privacy
+
+- Exact `be0d730758c8678c263a8ea12ed09924db89e23a` meredaksi path lokal
+  dan membatasi metadata sebelum pertanyaan SagaView dikirim ke Support Hub.
+- Full SagaView 193/1.588, focused 46/253, build, format, audit dependency,
+  serta dua salinan artifact checksum-identical lulus.
+- Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S292
+  dan authenticated production UAT belum dijalankan.
+
 ## 2026-08-26 - SagaView S293 Support Hub boundary acceptance
 
 - Exact test source `cdc49b51c816fadda9298d924164e0a87c048000` membuktikan

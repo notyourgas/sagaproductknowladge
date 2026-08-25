@@ -1,6 +1,17 @@
 # SagaView Product Knowledge
 
-Updated: 26 Agustus 2026 05:00 WIB
+Updated: 26 Agustus 2026 06:00 WIB
+
+SagaView S294 exact `be0d730758c8678c263a8ea12ed09924db89e23a` sudah
+`PUSHED / SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`. Pertanyaan Owner kini meredaksi path lokal menjadi
+`[LOCAL_PATH]` dan membatasi metadata ke allowlist sebelum request Support Hub
+pusat khusus SagaView. Ini menutup celah no-upload ketika operator tanpa sengaja
+mengetik path Windows; tidak ada conversation/attachment lokal, migration,
+foto, output, atau perubahan payment. Red-green 1/9, focused 46/253, full
+SagaView 193/1.588, build 5.097 modul, Pint/diff, audit dependency nol, dan dua
+salinan artifact checksum-identical lulus. Production tetap S292; guarded
+deploy dan authenticated production UAT masih gate terpisah.
 
 SagaView S293 exact `cdc49b51c816fadda9298d924164e0a87c048000` sudah
 `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Acceptance baru

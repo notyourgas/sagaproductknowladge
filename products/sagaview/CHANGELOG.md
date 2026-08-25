@@ -1,5 +1,26 @@
 # SagaView Changelog
 
+## 2026-08-26 - S294 redaksi path lokal sebelum Support Hub
+
+- Klasifikasi: `PUSHED / SECURITY_VALIDATED / QA_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S292.
+- Before: pertanyaan Owner SagaView ditandatangani dan diteruskan ke Support
+  Hub pusat sebelum sanitasi lokal, sehingga path Windows yang diketik dapat
+  ikut keluar bersama pertanyaan.
+- After: exact `be0d730758c8678c263a8ea12ed09924db89e23a` meredaksi path
+  lokal menjadi `[LOCAL_PATH]` dan membatasi metadata ke allowlist sebelum
+  request jaringan khusus `productCode=sagaview`.
+- Privacy/data: nama key folder/foto di luar allowlist dibuang; request
+  sintetis tidak membuat conversation atau attachment lokal. Tidak ada
+  migration, upload foto, perubahan payment, atau perubahan produk lain.
+- Evidence: red-green 1/9; regresi Support Hub lintas Owner/device/focus/UAT
+  46/253; full SagaView 193/1.588; build 5.097 modul; Pint/diff dan audit
+  Composer/npm nol advisory/vulnerability lulus.
+- Provenance: archive SHA-256 `844542a2...23dcf96` dan bundle SHA-256
+  `d37b4305...97ae168` tersedia dua salinan checksum-identical.
+- Residual: guarded deploy terpisah dan authenticated production UAT tetap
+  wajib sebelum activation atau business readiness.
+
 ## 2026-08-26 - S293 Support Hub bootstrap boundary acceptance
 
 - Klasifikasi: `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
