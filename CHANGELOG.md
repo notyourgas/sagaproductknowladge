@@ -1,5 +1,22 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-26 - Snap and Fit staging blocker revalidation sync
+
+- Ringkasan: sinkronisasi read-only Hostinger capacity, Vercel backend-env,
+  hosted CI, dan private branch-protection blocker terbaru.
+- Alasan: target minimum `STAGING_READY` memerlukan evidence deployment aktual;
+  snapshot sebelumnya memakai disk/capacity dan CI provenance yang sudah stale.
+- Produk/area: Snap and Fit infrastructure, deployment, release governance,
+  security, CI, dan UAT readiness.
+- Klasifikasi: `CONFIRMED`; private source/docs `b946581`, latest hosted run
+  `32886597014`, dan protected preview inspection.
+- Production berubah: tidak. Delivery tetap `LOCAL_VALIDATED`; activation
+  `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED`.
+- Dokumen terdampak: Snap and Fit product/dossier/changelog, portfolio, master
+  knowledge, root changelog, dan sync status.
+- Blocker/next action: approve/provide grouped isolated VPS, DNS/TLS, provider,
+  off-host recovery, CI/manual gate, governance, dan real-device resources.
+
 ## 2026-08-26 - Snap and Fit native age recovery preflight sync
 
 - Ringkasan: sinkronisasi actual native age v1.3.1 encrypted recovery drill pada

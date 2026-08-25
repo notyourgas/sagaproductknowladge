@@ -10,6 +10,20 @@ production, activation, dan business readiness.
 Mock, fixture, preview frontend, dan test lokal bukan bukti provider atau
 production activation.
 
+## 2026-08-26 - Staging blocker revalidation
+
+- Exact private source/docs `b946581`; read-only inspection tidak melakukan remote write.
+- Satu-satunya configured SSH target tetap shared 2 vCPU/8,32 GB/102,92 GB,
+  disk 86% dengan 15,24 GB tersedia, swap praktis habis, active shared services,
+  dan tanpa Docker. Target ditolak oleh isolation/capacity policy.
+- Protected Vercel uploader tetap 200 dengan defensive headers, tetapi project
+  tidak memiliki environment variable dan BFF health tetap fail-closed 503.
+- Latest hosted run `32886597014` tidak memperoleh runner/step karena account
+  payment/spending gate; private branch protection tetap plan-gated 403.
+- Klasifikasi `CONFIRMED`; delivery tetap `LOCAL_VALIDATED`, production dan
+  activation tidak berubah, business readiness tetap `BLOCKED`. Owner perlu
+  menyediakan grouped isolated-staging resource/approval request.
+
 ## 2026-08-26 - Native age encrypted recovery preflight
 
 - Exact private evidence/docs source `4b6c08b`.

@@ -12,12 +12,34 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-26T01:55:47+07:00 |
+| Waktu pembaruan terakhir | 2026-08-26T02:02:49+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | exact `origin/main` `c0f92ea` sebelum sinkronisasi Snap and Fit native age recovery preflight |
-| Informasi terakhir disinkronkan | Snap and Fit native age v1.3.1 encrypted recovery preflight. |
+| Baseline sebelum pembaruan | exact `origin/main` `2934c86` sebelum sinkronisasi Snap and Fit staging blocker revalidation |
+| Informasi terakhir disinkronkan | Snap and Fit read-only staging blocker revalidation. |
 | Status sinkronisasi | `LOCAL_VALIDATED`; staging, production, activation, dan business readiness tetap blocked. |
+
+## Snap and Fit staging blocker revalidation
+
+- Exact private source/docs `b946581`; inspection read-only dan tidak memutasi host.
+- Satu-satunya configured target tetap shared 2 vCPU/8,32 GB/102,92 GB, disk 86%
+  dengan 15,24 GB tersedia, swap praktis habis, active shared services, dan tanpa Docker.
+- Protected Vercel uploader tetap 200 dengan defensive headers, tetapi project
+  tidak memiliki environment variable dan BFF health tetap fail-closed 503.
+- Latest run `32886597014` berhenti sebelum runner/step karena payment/spending
+  gate; private branch protection masih plan-gated 403.
+- Full local validation tetap lulus. Status tidak naik dari `LOCAL_VALIDATED`;
+  grouped isolated-staging resource and approval request masih owner gate.
+
+## File yang berubah pada sinkronisasi ini (Snap and Fit staging blockers)
+
+- `products/snap-and-fit/PRODUCT.md`
+- `products/snap-and-fit/DOSSIER.md`
+- `products/snap-and-fit/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## Snap and Fit native age encrypted recovery preflight
 

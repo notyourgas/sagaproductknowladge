@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-26 - Snap and Fit staging blocker revalidation
+
+- Exact private source/docs `b946581` memperbarui read-only capacity, Vercel,
+  CI, dan branch-protection evidence tanpa memutasi shared host.
+- Satu-satunya target tetap shared 2 vCPU/8,32 GB/102,92 GB, disk 86%, swap
+  praktis habis, active shared services, dan tanpa Docker; target ditolak.
+- Vercel uploader tetap 200 tetapi belum memiliki backend env; BFF 503. Hosted
+  CI tidak memperoleh runner/step dan branch protection tetap plan-gated.
+- Delivery tetap `LOCAL_VALIDATED`; isolated staging provisioning tetap owner gate.
+
 ## 2026-08-26 - Snap and Fit native age recovery preflight
 
 - Exact private evidence source `4b6c08b` menjalankan actual MySQL 8.4.9 dump →

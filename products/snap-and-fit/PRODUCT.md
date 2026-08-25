@@ -48,7 +48,7 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 - Delivery: `LOCAL_VALIDATED`.
 - Activation: `NOT_PRODUCTION_ACTIVATED`.
 - Business readiness: `BLOCKED`.
-- Exact private source/docs head `4b6c08b`; native age recovery evidence berasal
+- Exact private source/docs head `b946581`; native age recovery evidence berasal
   dari `4b6c08b`, fail-closed 300-VU load feature
   berasal dari `f06d538`, 500-file uploader recovery feature berasal dari
   `6f57416`, fail-closed repository security-scan feature berasal
@@ -85,7 +85,8 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   lifecycle/retention worker dari `4d602d9`.
 - Protected Vercel preview `dpl_HfF3ksVNy65qhyX36qX4V4RmFQix` dari exact
   source `8dec486` berstatus `READY`; updated photographer uploader route 200
-  dengan defensive headers, tetapi backend staging sengaja fail-closed 503.
+  dengan defensive headers, tetapi project belum memiliki environment variable
+  dan backend staging sengaja fail-closed 503.
 - Full no-service validation, 63 API test dengan sembilan integrasi eksternal
   terkontrol skip dan 21 worker test dengan empat integrasi service-dependent
   skip lulus. Disposable loopback MySQL 8.4.9 dari database kosong mengaplikasikan
@@ -123,9 +124,9 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   dependency produksi nol vulnerability lulus. Container workflow dikonfigurasi
   menghasilkan BuildKit SBOM/provenance dan manifest digest; image belum
   dibangun/dijalankan sehingga emission/runtime evidence tetap gate.
-- Hosted GitHub Actions run `32885224444` pada exact load-fixture feature
-  `f06d538` membuat security job `97923987439` dan validate job
-  `97923987813`; keduanya gagal sebelum satu pun step berjalan, dengan runner
+- Hosted GitHub Actions run `32886597014` pada exact source/docs `4b6c08b`
+  membuat security job `97928387722` dan validate job `97928388016`; keduanya
+  gagal sebelum satu pun step berjalan, dengan runner
   ID `0`, tanpa nama runner, dan steps kosong;
   anotasi menyatakan account payment/spending-limit gate. Run sebelumnya pada
   `fc383e1`, `176cf15`, `4384948`, dan `d0f3b7d` memiliki pola yang sama.
@@ -138,8 +139,10 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   mode `0600`, kapasitas di bawah 4 vCPU/16 GB/200 GB dengan 100 GB tersedia,
   atau Docker Compose v2 tidak aktif, atau native `age` tidak dapat dieksekusi.
   Behavioral fixture menolak tiap kondisi
-  secara independen; read-only probe pada shared Hostinger target berhenti exit
-  `66` tanpa menulis file atau memasuki release path.
+  secara independen. Read-only revalidation 26 Agustus menemukan hanya shared
+  target 2 vCPU/8,32 GB/102,92 GB, root disk 86% dengan 15,24 GB tersedia,
+  swap praktis habis, active shared services, dan tanpa Docker. Target ditolak
+  tanpa menulis file atau memasuki release path.
 - Host policy Nginx API-only sekarang dirender deterministik untuk topologi
   hybrid Vercel ke authoritative VPS. Deploy dan rollback sama-sama mewajibkan
   hostname serta SHA-256 konfigurasi yang exact, root-owned, tidak writable,

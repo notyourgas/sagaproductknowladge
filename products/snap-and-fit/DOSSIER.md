@@ -12,7 +12,7 @@ credential, PII, identifier tenant/perangkat, atau detail provider sensitif.
 - Delivery: `LOCAL_VALIDATED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED`
-- Provenance: exact private source/docs head `4b6c08b`, native age recovery
+- Provenance: exact private source/docs head `b946581`, native age recovery
   evidence `4b6c08b`, fail-closed 300-VU load
   feature `f06d538`, 500-file uploader recovery feature `6f57416`, fail-closed
   repository security-scan feature `db4e709`, deterministic Nginx staging host-policy
@@ -308,6 +308,7 @@ fotografer desktop-optimized.
 - Protected remote Linux preview dari clean exact source `8dec486` berstatus
   `READY`. Authenticated smoke membuktikan photographer uploader 200, header
   CSP/HSTS/no-sniff/frame-deny/noindex, dan BFF health 503 fail-closed tanpa VPS.
+  Vercel project belum memiliki environment variable untuk koneksi backend.
 
 ## Risiko dan gate terbuka
 
@@ -317,8 +318,10 @@ fotografer desktop-optimized.
   scan, live edge 429, dan loaded-config proof pada isolated host belum ada.
 - Hosted Trivy job, final digest-addressed Linux image scan, dan runtime-host
   scan belum berjalan; local repository scan tidak menggantikannya.
-- Satu-satunya SSH target yang tersedia tetap shared 2 vCPU/sekitar 8 GB/100 GB,
-  tanpa Docker, sehingga tidak dipakai sebagai target Snap and Fit.
+- Revalidasi read-only 26 Agustus membuktikan satu-satunya SSH target tetap
+  shared 2 vCPU/8,32 GB/102,92 GB, disk 86% dengan 15,24 GB tersedia, swap
+  praktis habis, active shared services, dan tanpa Docker. Target tidak dimutasi
+  atau dipakai untuk Snap and Fit.
 - MySQL compatibility lokal sudah ditutup, tetapi pengulangan MySQL dan runtime
   Redis pada isolated Linux staging, protected synthetic deletion/replay,
   encrypted off-host backup/restore, rollback, 300 VU isolated-staging load,
