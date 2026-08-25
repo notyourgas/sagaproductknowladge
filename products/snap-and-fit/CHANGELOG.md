@@ -10,6 +10,19 @@ production, activation, dan business readiness.
 Mock, fixture, preview frontend, dan test lokal bukan bukti provider atau
 production activation.
 
+## 2026-08-25 - Immutable release supply chain
+
+- Exact private source `ee45e56` berstatus `LOCAL_VALIDATED`.
+- GitHub Actions di-pin exact upstream commit; Node build/runtime serta CI dan
+  staging MySQL/Redis memakai OCI manifest digest. App image tetap exact
+  40-character source tag atau digest.
+- Deploy/rollback menolak mutable resolved image sebelum pull; restore menolak
+  MySQL override tanpa digest. Immutable-reference verifier berjalan di awal
+  validation dan release-preflight regression mencakup accept/reject path.
+- Actionlint, ShellCheck enam file, Compose static immutable image set, full
+  validation, dan audit dependency produksi nol vulnerability lulus. Image belum
+  dibangun, dipindai, atau dijalankan; production dan activation tidak berubah.
+
 ## 2026-08-25 - Authoritative load quote fixture
 
 - Exact private source `4f9d8d3` berstatus `LOCAL_VALIDATED`.

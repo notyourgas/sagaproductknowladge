@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-25 - Snap and Fit immutable release supply chain
+
+- Exact source `ee45e56` mengunci GitHub Actions ke commit penuh dan Node,
+  MySQL, serta Redis ke OCI manifest digest.
+- Deploy/rollback/restore fail-closed terhadap mutable image; verifier dan
+  release-preflight regression menjaga policy tetap aktif.
+- Actionlint, enam-file ShellCheck, Compose immutable set, full validation, dan
+  production dependency audit lulus. Delivery tetap `LOCAL_VALIDATED`; image
+  build/scan/attestation/runtime dan isolated staging tetap pending.
+
 ## 2026-08-25 - Snap and Fit authoritative load fixture
 
 - Exact source `4f9d8d3` memperbaiki 300-VU fixture agar sampled quote mengikuti

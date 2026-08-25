@@ -47,8 +47,9 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 - Delivery: `LOCAL_VALIDATED`.
 - Activation: `NOT_PRODUCTION_ACTIVATED`.
 - Business readiness: `BLOCKED`.
-- Exact private `main` head `4f9d8d3`; authoritative load fixture berasal dari
-  `4f9d8d3`, ShellCheck acceptance berasal dari `162cc29`, clean-checkout setup
+- Exact private `main` head `ee45e56`; immutable supply-chain hardening berasal
+  dari `ee45e56`, authoritative load fixture berasal dari `4f9d8d3`, ShellCheck
+  acceptance berasal dari `162cc29`, clean-checkout setup
   fix berasal dari `fbf01b6`, liveness peer
   acceptance berasal dari
   `7b44101`, encrypted event-scoped face search berasal dari
@@ -94,6 +95,12 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   mengonfirmasi kandidat pada exact search session, lalu meminta quote dengan
   anonymous session yang sama. Official checksum-verified k6 v2.2.0 `inspect`
   lulus; tidak ada load traffic yang dikirim tanpa isolated staging.
+- GitHub Actions memakai exact upstream commit; Node build/runtime dan
+  MySQL/Redis service memakai OCI manifest digest. Deploy/rollback menolak image
+  mutable, restore menolak override MySQL non-digest, dan validation memulai
+  immutable-reference verifier. Actionlint, ShellCheck enam file, Compose static
+  immutable set, release preflight regression, full validation, dan audit
+  dependency produksi nol vulnerability lulus. Image belum dibangun/dijalankan.
 
 ## Batas klaim
 

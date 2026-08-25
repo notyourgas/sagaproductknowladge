@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - Snap and Fit immutable supply-chain sync
+
+- Produk/area: CI actions, container bases/services, deploy, rollback, restore,
+  dan release provenance.
+- Informasi `CONFIRMED` berasal dari exact private source `ee45e56`, registry/
+  upstream immutable references, serta local security/release evidence.
+- Knowledge mencatat exact-commit Actions, OCI-digest Node/MySQL/Redis,
+  mutable-image refusal, immutable-reference verifier, dan release preflight.
+- Actionlint, enam-file ShellCheck, Compose static immutable set, full validation,
+  dan production dependency audit lulus. Delivery tetap `LOCAL_VALIDATED`;
+  image runtime, isolated staging, activation, dan production tidak berubah.
+- Dokumen terdampak: Snap and Fit product/dossier/changelog, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-25 - Snap and Fit authoritative load fixture sync
 
 - Produk/area: 300-VU load contract, search authority, candidate confirmation,
