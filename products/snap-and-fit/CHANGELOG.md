@@ -10,6 +10,21 @@ production, activation, dan business readiness.
 Mock, fixture, preview frontend, dan test lokal bukan bukti provider atau
 production activation.
 
+## 2026-08-25 - Self-contained runtime artifact hardening
+
+- Exact private source head `6209d37`; implementation provenance `e64b002`.
+- Runtime dipisah menjadi API, worker, dan one-shot migration/seed image dengan
+  first-party file allowlist, clean build, non-root user, host-path sanitization,
+  dan fail-closed package-link containment.
+- Tiga deployment artifact aktual lulus containment dan runtime import. Forced-
+  uncached task graph, full validation, 53 browser pass, peer check, dan audit
+  dependency produksi nol vulnerability lulus.
+- Hosted run `32865834682` tetap berhenti sebelum runner/step karena account
+  billing/spending-limit gate. Linux image build/run/scan dan emitted SBOM/
+  provenance masih menunggu isolated staging atau hosted runner.
+- Delivery tetap `LOCAL_VALIDATED`; staging, activation, business readiness,
+  dan production tidak berubah.
+
 ## 2026-08-25 - Exact-head protected preview refresh
 
 - Exact private documentation head `eec6269`; deployed clean source `e6e27d0`.

@@ -1,5 +1,26 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - Snap and Fit runtime artifact hardening sync
+
+- Ringkasan: menyinkronkan runtime API, worker, dan one-shot migration/seed yang
+  self-contained, package allowlist, clean build, non-root execution, serta
+  fail-closed link containment.
+- Alasan: runtime lama membawa seluruh monorepo dan jalur deploy legacy dapat
+  mempertahankan link ke build-stage; release harus mempunyai artifact mandiri
+  yang dapat diverifikasi sebelum isolated staging.
+- Produk/area terdampak: Snap and Fit build, container, migration, seed,
+  supply-chain, release, recovery, CI, dan readiness.
+- File terdampak: product contract, dossier, product/portfolio changelog, master
+  knowledge, root changelog, dan sync status.
+- Klasifikasi: `CONFIRMED`; exact private source head `6209d37`, implementation
+  `e64b002`, full local gates, dan hosted run `32865834682`.
+- Commit knowledge: `main HEAD`; SHA immutable dilaporkan setelah push.
+- Production berubah: tidak. Delivery tetap `LOCAL_VALIDATED`; activation
+  `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED`.
+- Blocker/next action: pulihkan hosted runner atau sediakan isolated Linux VPS,
+  lalu build/run/scan tiga image, verifikasi SBOM/provenance, migration, Redis,
+  provider, recovery, load, dan UAT sebelum `STAGING_READY`.
+
 ## 2026-08-25 - COYABAG Product Detail verified reviews sync
 
 - Klasifikasi: `CONFIRMED`.

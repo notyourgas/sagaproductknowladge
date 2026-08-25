@@ -12,8 +12,9 @@ credential, PII, identifier tenant/perangkat, atau detail provider sensitif.
 - Delivery: `LOCAL_VALIDATED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED`
-- Provenance: exact private source head `eec6269`, protected-preview evidence
-  refresh `eec6269`, full-validation recovery gate `e6e27d0`, staging restore
+- Provenance: exact private source head `6209d37`, runtime-artifact hardening
+  `e64b002`, protected-preview evidence refresh `eec6269`, full-validation
+  recovery gate `e6e27d0`, staging restore
   hardening `076f76b`, MySQL 8.4 clean-room
   compatibility fix `4384948`, digest-only application
   release feature `d0f3b7d`, immutable supply-chain hardening `ee45e56`, authoritative load
@@ -33,7 +34,7 @@ credential, PII, identifier tenant/perangkat, atau detail provider sensitif.
   durable notification worker `d964fea`, lifecycle/retention worker `4d602d9`,
   protected Vercel preview `dpl_3PW4rbAek9FijQy9vU3Dfb1UMTUw` dari exact
   source `e6e27d0`.
-- Hosted CI evidence: exact current-head run `32860613475` berhenti sebelum
+- Hosted CI evidence: exact current-head run `32865834682` berhenti sebelum
   assignment runner dengan steps kosong dan anotasi account payment/spending
   limit. Run sebelumnya pada protected-preview docs, MySQL implementation, dan
   digest-only feature head menunjukkan pola yang sama. Local/static gates tetap
@@ -116,6 +117,12 @@ fotografer desktop-optimized.
   terhubung secara lokal; tidak ada AWS call yang diaktifkan.
 - Tokopay Advanced Order, callback verification, dan Check Order sebagai kontrak
   payment; live flag default-off.
+- Runtime container dipisah menjadi API, worker, dan one-shot migration/seed.
+  First-party package memakai file allowlist dan clean build; deploy artifact
+  menginjeksi workspace package, menghapus development script/host-path
+  reference, memverifikasi semua link tetap di dalam artifact, dan berjalan
+  non-root. Tiga probe artifact aktual lulus containment/import; Linux image
+  execution, scan, serta SBOM/provenance emission masih gate staging.
 - Vercel tidak terhubung langsung ke MySQL/Redis dan long-running image work
   tidak berjalan pada Vercel Functions.
 - API memakai rate limiter memory pada local/test dan mewajibkan atomic Redis

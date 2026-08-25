@@ -12,12 +12,34 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T22:04:46+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T22:27:52+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `ae0672ecf85f995f772d55714a710222a306343b` |
-| Informasi terakhir disinkronkan | COYABAG Product Detail verified reviews pada source `838006c7cff1c391858e7eed97e5e78bae351a36`. |
-| Status sinkronisasi | `PRODUCTION_DEPLOYED / ACTIVATION_BLOCKED / BUSINESS_READINESS_BLOCKED`. |
+| Baseline sebelum pembaruan | `f2a8a5025a35bb6362f4f5064ac03f071f1823b5` |
+| Informasi terakhir disinkronkan | Snap and Fit self-contained runtime artifacts pada source head `6209d37` dan implementation `e64b002`. |
+| Status sinkronisasi | `LOCAL_VALIDATED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READINESS_BLOCKED`. |
+
+## Snap and Fit self-contained runtime artifacts
+
+- Exact private source head `6209d37`; implementation `e64b002`.
+- API, worker, dan one-shot migration/seed kini memakai image terpisah,
+  first-party file allowlist, clean build, non-root runtime, manifest sanitization,
+  dan fail-closed link containment.
+- Tiga deployment artifact aktual, forced-uncached task graph, full validation,
+  53 browser pass, peer check, serta production audit nol vulnerability lulus.
+- Hosted run `32865834682` berhenti sebelum runner/step karena account billing/
+  spending-limit gate. Linux image runtime, isolated staging, activation, dan
+  production tidak berubah.
+
+## File yang berubah pada sinkronisasi ini (Snap and Fit runtime artifacts)
+
+- `products/snap-and-fit/PRODUCT.md`
+- `products/snap-and-fit/DOSSIER.md`
+- `products/snap-and-fit/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG Product Detail verified reviews
 

@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-25 - Snap and Fit self-contained runtime artifacts
+
+- Exact private source head `6209d37`; implementation `e64b002` memisahkan API,
+  worker, dan migration/seed image.
+- First-party file allowlist, clean build, non-root runtime, manifest sanitization,
+  dan link-containment gate lulus pada tiga artifact aktual; forced-uncached
+  tests, full validation, 53 browser pass, peer check, dan production audit juga
+  lulus.
+- Hosted CI tetap account-gated sebelum runner. Delivery `LOCAL_VALIDATED`;
+  isolated Linux runtime, staging, activation, dan production tidak berubah.
+
 ## 2026-08-25 - COYABAG Product Detail verified reviews
 
 - Exact source `838006c7cff1c391858e7eed97e5e78bae351a36` aktif pada immutable

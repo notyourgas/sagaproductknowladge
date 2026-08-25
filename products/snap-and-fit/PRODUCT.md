@@ -47,8 +47,9 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 - Delivery: `LOCAL_VALIDATED`.
 - Activation: `NOT_PRODUCTION_ACTIVATED`.
 - Business readiness: `BLOCKED`.
-- Exact private source head `eec6269`; protected-preview evidence refresh
-  berasal dari `eec6269`, full-validation recovery gate berasal dari `e6e27d0`,
+- Exact private source head `6209d37`; runtime-artifact hardening berasal dari
+  `e64b002`, protected-preview evidence refresh berasal dari `eec6269`,
+  full-validation recovery gate berasal dari `e6e27d0`,
   staging restore hardening berasal dari `076f76b`, MySQL 8.4
   clean-room compatibility fix berasal dari `4384948`, dan
   digest-only application release feature
@@ -113,7 +114,7 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   dependency produksi nol vulnerability lulus. Container workflow dikonfigurasi
   menghasilkan BuildKit SBOM/provenance dan manifest digest; image belum
   dibangun/dijalankan sehingga emission/runtime evidence tetap gate.
-- Hosted GitHub Actions run `32860613475` pada exact current head `eec6269`
+- Hosted GitHub Actions run `32865834682` pada exact current head `6209d37`
   gagal sebelum satu pun step berjalan: runner belum ditetapkan dan steps kosong;
   anotasi menyatakan account payment/spending-limit gate. Run sebelumnya pada
   `176cf15`, `4384948`, dan `d0f3b7d` memiliki pola yang sama.
@@ -121,6 +122,15 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   Current-head run menjadi evidence hosted terbaru. Branch protection private
   repository juga tetap plan-gated (API mengembalikan 403), sehingga
   required-check enforcement belum dapat diklaim.
+- Runtime release kini memiliki tiga artifact digest-addressed terpisah untuk
+  API, worker, dan one-shot migration/seed. Semua package first-party memakai
+  file allowlist; artifact deploy menghapus development script dan host-path
+  reference, memakai user non-root, serta gagal bila link package keluar dari
+  artifact. Probe lokal aktual membuktikan containment dan runtime import untuk
+  ketiganya; forced-uncached task graph, full validation, 53 browser pass, peer
+  check, dan production audit nol vulnerability lulus. Linux image build/run/
+  scan dan SBOM/provenance emission tetap belum terbukti tanpa hosted runner atau
+  isolated staging.
 
 ## Batas klaim
 
