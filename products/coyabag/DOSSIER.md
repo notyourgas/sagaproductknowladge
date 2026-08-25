@@ -78,15 +78,14 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260825-92655c2` memakai source
-`92655c2c86f21bde92b3a08f19947269ef2747e6` dan rollback
-`20260825-43a7d6b`. Homepage campaign CTA kini memakai tujuan banner aktif,
-kemudian tujuan global CMS, lalu fallback aman ke katalog. Internal path memakai
-navigasi SPA; tujuan eksternal wajib HTTPS. Admin Homepage mendukung reorder,
-effective-destination preview, dan publish/schedule validation. Full regression,
-desktop/mobile acceptance, backup/rollback, serta public smoke lulus tanpa
-mengubah konten homepage aktif. Readiness tetap 30/42 dan commerce tetap
-fail-closed.
+Release production terbaru `20260825-0f09404` memakai source
+`0f09404c7af59d00d9f7134ba4f04387028216a2` dan rollback
+`20260825-92655c2`. Filter warna katalog kini memilih varian yang sama untuk
+media, harga, stok, detail, Quick View, dan cart. Filter ketersediaan serta
+urutan harga memakai varian terpilih; warna habis tetap dapat diperiksa tetapi
+purchase action fail-closed. Full regression, desktop/mobile acceptance,
+backup/rollback, dan public smoke lulus. Readiness tetap 30/42 dan commerce
+tetap fail-closed.
 
 Release sebelumnya `20260825-43a7d6b` memakai source
 `43a7d6be6bc2bdde92d7b2c4c554c9d00c3196cd` dan rollback

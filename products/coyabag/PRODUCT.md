@@ -61,9 +61,13 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260825-92655c2` dengan source
-  `92655c2c86f21bde92b3a08f19947269ef2747e6` melayani production;
-  rollback langsung `20260825-43a7d6b` dipertahankan.
+- Release aktif `20260825-0f09404` dengan source
+  `0f09404c7af59d00d9f7134ba4f04387028216a2` melayani production;
+  rollback langsung `20260825-92655c2` dipertahankan.
+- Filter warna katalog memilih varian kartu yang sama untuk media, harga, stok,
+  detail, Quick View, dan cart. Filter tersedia serta urutan harga memakai
+  varian tersebut. Warna habis dapat diperiksa, tetapi pembelian tetap
+  fail-closed.
 - Homepage campaign CTA mengikuti tujuan banner aktif, lalu tujuan global CMS,
   dan akhirnya fallback aman ke katalog. Tujuan internal memakai navigasi SPA;
   tujuan eksternal wajib HTTPS dan dibuka dengan isolasi tab aman.

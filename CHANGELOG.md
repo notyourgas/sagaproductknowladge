@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - COYABAG Catalog variant integrity sync
+
+- Klasifikasi: `CONFIRMED`.
+- Produk/area: Storefront Catalog, filter warna/stok/harga, Product Card,
+  Quick View, cart, responsive UI, security, dan immutable Hostinger release.
+- Provenance public-safe: source
+  `0f09404c7af59d00d9f7134ba4f04387028216a2`, release
+  `20260825-0f09404`, rollback `20260825-92655c2`, dan runtime verification.
+- Varian terpilih kini menjadi sumber yang sama untuk discovery sampai cart;
+  sold-out tetap inspectable tetapi purchase fail-closed.
+- Delivery `PRODUCTION_DEPLOYED`; activation dan business readiness `BLOCKED`.
+  Readiness tetap 30/42 dengan 12 blocker; commerce tetap fail-closed.
+- Dokumen terdampak: COYABAG product/dossier/changelog, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-25 - SagaView S288 mainline global acceptance sync
 
 - Produk/area: rollback recovery inactive, mutex, atomic pointer publication,

@@ -4,6 +4,19 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-25 - Storefront Catalog variant integrity production release
+
+- Klasifikasi: `CONFIRMED` dari exact source
+  `0f09404c7af59d00d9f7134ba4f04387028216a2`, immutable Hostinger release
+  `20260825-0f09404`, rollback `20260825-92655c2`, dan runtime verification.
+- Filter warna sekarang mengendalikan varian kartu untuk media, harga, stok,
+  detail, Quick View, dan cart. Ketersediaan serta sorting harga memakai varian
+  yang sama; warna habis dapat diperiksa tetapi tidak dapat dibeli.
+- TDD, full regression, desktop/mobile acceptance, security/build,
+  backup/rollback, dan public browser smoke lulus tanpa mutasi data commerce.
+- Delivery `PRODUCTION_DEPLOYED`; readiness tetap 30/42 dengan 12 blocker.
+  Activation dan business readiness tetap `BLOCKED`; commerce tidak diaktifkan.
+
 ## 2026-08-25 - Storefront Home campaign CTA integrity production release
 
 - Klasifikasi: `CONFIRMED` dari exact source

@@ -12,12 +12,22 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T20:18:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T20:36:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `5ee88c9c63ccde9fba4cae70708b006a8ad82565` |
-| Informasi terakhir disinkronkan | SagaView S288 mainline global acceptance pada exact source `a830cf40e1c4fcb53d0e0d63d2e443d71a89b05e`. |
-| Status sinkronisasi | `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / RECOVERY_APPROVAL_REQUIRED`; production tidak berubah. |
+| Baseline sebelum pembaruan | `9e4c9801b4a9986413ab3963aacc025a76303593` |
+| Informasi terakhir disinkronkan | COYABAG Catalog variant integrity pada exact source `0f09404c7af59d00d9f7134ba4f04387028216a2`. |
+| Status sinkronisasi | `PRODUCTION_DEPLOYED / ACTIVATION_BLOCKED / BUSINESS_READY=false`; commerce tetap fail-closed. |
+
+## COYABAG Catalog variant integrity
+
+- Exact source: `0f09404c7af59d00d9f7134ba4f04387028216a2`.
+- Immutable release: `20260825-0f09404`; rollback: `20260825-92655c2`.
+- Filter warna, ketersediaan, sorting harga, media, detail, Quick View, dan cart
+  memakai varian yang sama. Warna habis inspectable tetapi tidak buyable.
+- Full regression, desktop/mobile acceptance, security/build, backup/rollback,
+  dan public smoke lulus tanpa mutasi data commerce.
+- Readiness tetap 30/42 dengan 12 blocker; commerce/provider tidak diaktifkan.
 
 ## SagaView S288 mainline global acceptance
 

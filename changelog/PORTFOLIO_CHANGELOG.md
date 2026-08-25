@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-25 - COYABAG Catalog variant integrity
+
+- Exact source `0f09404c7af59d00d9f7134ba4f04387028216a2` aktif pada immutable
+  Hostinger release `20260825-0f09404` dengan rollback `20260825-92655c2`.
+- Filter warna, ketersediaan, harga, media, detail, Quick View, dan cart sekarang
+  konsisten pada varian yang sama; warna habis inspectable tetapi tidak buyable.
+- Full regression, desktop/mobile acceptance, security/build, backup/rollback,
+  dan public smoke lulus. Delivery `PRODUCTION_DEPLOYED`; readiness tetap 30/42
+  dan commerce tetap fail-closed.
+
 ## 2026-08-25 - SagaView S288 mainline global gate
 
 - Exact pushed candidate `a830cf40e1c4fcb53d0e0d63d2e443d71a89b05e`
