@@ -12,14 +12,24 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T13:52:14+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T13:57:57+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `2c59202` |
-| Informasi terakhir disinkronkan | Snap and Fit distributed rate-limit contract dari exact private source `2c4af04`. |
-| Status sinkronisasi | `LOCAL_VALIDATED / PROTECTED_PREVIEW_READY / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=BLOCKED`; production tidak berubah. |
-| Konflik | Tidak ada konflik; local implementation bukan bukti cross-instance Redis staging. |
-| Error | Tidak ada error sinkronisasi; isolated Redis/VPS, edge/load/soak, provider, legal/device, dan production gates tetap terbuka. |
+| Baseline sebelum pembaruan | `f599299` |
+| Informasi terakhir disinkronkan | COYABAG Admin Pesanan integrity dari exact source `e25987e` dan immutable release `20260825-e25987e`. |
+| Status sinkronisasi | `PRODUCTION_DEPLOYED / ACTIVATION=BLOCKED / BUSINESS_READY=BLOCKED`; readiness 30/42 dan commerce tetap fail-closed. |
+| Konflik | Tidak ada konflik; deployment surface tidak diklaim sebagai commerce production-activated. |
+| Error | Tidak ada error sinkronisasi; 12 blocker readiness tetap terbuka. |
+
+## File yang berubah pada sinkronisasi ini (COYABAG Admin Pesanan integrity)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## File yang berubah pada sinkronisasi ini (Snap and Fit distributed rate limit)
 

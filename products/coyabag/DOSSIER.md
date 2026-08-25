@@ -78,14 +78,20 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260825-fcedf86` memakai source
-`fcedf86c07e6a8b5e27afc5435fa7da7e76961a8` dan rollback
-`20260825-949a57b`. Dashboard Beranda memakai komposisi server role-aware untuk
-KPI, tren tujuh hari, antrean prioritas, serta recent order Owner, Admin, dan
-Finance. Setiap baris actionable menuju workflow yang sesuai permission;
-integration health mengikuti event provider terakhir dan stok rendah memakai
-availability/threshold varian. Loading refresh, section error aman, tabel
-desktop, kartu mobile, dan grid KPI 2-by-2 lulus acceptance tanpa overflow.
+Release production terbaru `20260825-e25987e` memakai source
+`e25987eef9676fbe3cc2927ca10c71a55d2c3324` dan rollback
+`20260825-fcedf86`. Dashboard Pesanan kini menjadi workspace triage role-aware
+untuk antrean attention, payment review, expiring, ready, active, dan
+completed. Server memvalidasi queue/status/payment/sort/search; daftar hanya
+mencari kode, nama, produk, dan SKU, sedangkan kontak tetap dimasking. Setiap
+next action membuka detail berizin yang tepat tanpa memutasi order. Loading,
+filtered-empty, composition error, success, pagination, tabel desktop, dan
+kartu mobile lulus authenticated serta public acceptance.
+
+Release sebelumnya `20260825-fcedf86` memakai source
+`fcedf86c07e6a8b5e27afc5435fa7da7e76961a8` untuk Dashboard Beranda role-aware:
+KPI, tren tujuh hari, prioritas, recent order, integration health, dan stok
+varian rendah menuju workflow berizin dengan state desktop/mobile yang jujur.
 
 Release sebelumnya `20260825-949a57b` memakai source
 `949a57be913245d58013554ab36d9a678c448d0f` untuk metadata server-side,

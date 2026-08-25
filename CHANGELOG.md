@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - COYABAG Admin Pesanan integrity sync
+
+- Produk/area: Dashboard Pesanan Owner, Admin, dan Finance.
+- Informasi `CONFIRMED` berasal dari exact source
+  `e25987eef9676fbe3cc2927ca10c71a55d2c3324`, immutable Hostinger release
+  `20260825-e25987e`, rollback `20260825-fcedf86`, dan runtime verification.
+- Knowledge mencatat triage role-aware, antrean otoritatif, filter/search
+  tervalidasi server, kontak termasking, exact detail action, dan state
+  desktop/mobile lengkap.
+- Delivery `PRODUCTION_DEPLOYED`; readiness 30/42 dengan 12 blocker. Activation
+  dan business readiness tetap `BLOCKED`; commerce/provider tidak diaktifkan.
+- Dokumen terdampak: COYABAG product/dossier/changelog, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-25 - Snap and Fit distributed rate-limit sync
 
 - Produk/area: API abuse control dan multi-replica staging/production contract.

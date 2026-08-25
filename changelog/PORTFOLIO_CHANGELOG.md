@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-25 - COYABAG Admin Pesanan integrity
+
+- Exact source `e25987eef9676fbe3cc2927ca10c71a55d2c3324` aktif sebagai
+  Hostinger release `20260825-e25987e`; rollback `20260825-fcedf86` tersedia.
+- Dashboard Pesanan sekarang menyediakan triage role-aware, antrean operasional
+  otoritatif, filter/search tervalidasi server, kontak termasking, exact detail
+  action, dan state desktop/mobile yang lengkap.
+- Full test/build/security, authenticated acceptance, backup/rollback, dan
+  public smoke lulus. Status `PRODUCTION_DEPLOYED`; readiness tetap 30/42,
+  activation serta business readiness `BLOCKED`, dan commerce tidak diaktifkan.
+
 ## 2026-08-25 - Snap and Fit distributed rate-limit contract
 
 - Exact private source `2c4af04` mewajibkan atomic Redis shared-window untuk API
