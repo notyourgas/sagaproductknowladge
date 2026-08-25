@@ -3289,15 +3289,24 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release aktif `20260825-412d351` menjalankan exact source
-`412d3518275d4139d13530587c398d7efd86d61a` dengan rollback
-`20260825-e25987e`. Detail Pesanan memisahkan workspace Owner/Admin dan Finance:
+Release aktif `20260825-0043c7b` menjalankan exact source
+`0043c7bfb85698b9894ce01214642ffe59825750` dengan rollback
+`20260825-412d351`. Dashboard Produk menyediakan antrean Semua/Perlu tindakan/
+Draft/Tayang/Arsip, stok live dari inventory varian aktif, publication
+readiness, literal search, deterministic sort, pagination, dan exact action
+berdasarkan permission. Loading/error/retry/empty/filter reset, desktop/mobile,
+serta public smoke lulus. Active dan rollback release memakai shared storage;
+persistent data yang sempat release-local direkonsiliasi tanpa overwrite dan
+recovery copy dipertahankan. Readiness tetap 30/42 dengan 12 blocker; commerce
+tidak diaktifkan.
+
+Release sebelumnya `20260825-412d351` menjalankan exact source
+`412d3518275d4139d13530587c398d7efd86d61a`. Detail Pesanan memisahkan workspace Owner/Admin dan Finance:
 PII Finance termasking, timeline internal tersaring, bukti payment mengikuti
 permission/security, dan action eligibility berasal dari server. Mutasi
 cancellation/reservation/address/customer-access memakai row lock serta
 stale-page guard. Command workspace, status rail, loading/error/blocked/
-processing, dialog keyboard, dan desktop/mobile lulus acceptance. Readiness
-tetap 30/42 dengan 12 blocker; commerce tidak diaktifkan.
+processing, dialog keyboard, dan desktop/mobile lulus acceptance.
 
 Release sebelumnya `20260825-e25987e` membawa Dashboard Pesanan sebagai
 workspace triage role-aware dengan antrean otoritatif, filter/search

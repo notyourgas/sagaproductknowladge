@@ -78,9 +78,20 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260825-412d351` memakai source
-`412d3518275d4139d13530587c398d7efd86d61a` dan rollback
-`20260825-e25987e`. Detail Pesanan menggunakan composition service role-aware:
+Release production terbaru `20260825-0043c7b` memakai source
+`0043c7bfb85698b9894ce01214642ffe59825750` dan rollback
+`20260825-412d351`. Dashboard Produk menggunakan composition service
+role-aware dengan antrean Semua/Perlu tindakan/Draft/Tayang/Arsip, stok live
+dari inventory varian aktif, publication readiness, literal search,
+deterministic sorting, pagination, dan exact next action. Mutation entry point
+hanya dikirim kepada role dengan products.manage. Loading, composition error,
+empty/filter reset, desktop table, dan mobile card lulus acceptance. Gate
+release juga merekonsiliasi persistent release-local storage tanpa overwrite;
+active dan rollback release kini sama-sama menunjuk shared storage dengan
+recovery archive privat dipertahankan.
+
+Release sebelumnya `20260825-412d351` memakai source
+`412d3518275d4139d13530587c398d7efd86d61a`. Detail Pesanan menggunakan composition service role-aware:
 Owner/Admin menerima data operasional, sedangkan Finance menerima kontak
 termasking, timeline pembayaran terbatas, serta bukti yang lolos permission dan
 security gate. Timeline publik-admin tidak membawa actor ID atau correlation
@@ -90,7 +101,7 @@ atau generation dari layar di dalam row lock sehingga tab stale gagal tanpa
 mutasi. Command workspace, status rail, loading/error/blocked/processing,
 dialog Escape dan focus return, serta layout desktop/mobile lulus acceptance.
 
-Release sebelumnya `20260825-e25987e` memakai source
+Release `20260825-e25987e` memakai source
 `e25987eef9676fbe3cc2927ca10c71a55d2c3324` untuk Dashboard Pesanan sebagai
 workspace triage role-aware dengan antrean, filter/search tervalidasi, kontak
 termasking, dan exact detail action.

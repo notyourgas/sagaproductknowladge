@@ -12,14 +12,24 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T15:16:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T15:35:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `bfdb9b0` |
-| Informasi terakhir disinkronkan | SagaView S288 safe rollback pointer publication exact `51250078...`. |
-| Status sinkronisasi | `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / RECOVERY_APPROVAL_REQUIRED`; production tidak berubah. |
-| Konflik | Tidak ada konflik; recovery inactive dan deployment kandidat tetap approval terpisah. |
-| Error | Tidak ada error sinkronisasi; target rollback masih hilang dan production recovery belum diulang. |
+| Baseline sebelum pembaruan | `62f5b05` |
+| Informasi terakhir disinkronkan | COYABAG Admin Produk exact `0043c7b...` pada release `20260825-0043c7b`. |
+| Status sinkronisasi | `PUSHED / PRODUCTION_DEPLOYED / ACTIVATION_BLOCKED / BUSINESS_BLOCKED`. |
+| Konflik | Tidak ada konflik; surface live tetap dibedakan dari commerce activation. |
+| Error | Tidak ada error sinkronisasi; 12 readiness blocker tetap terbuka. |
+
+## File yang berubah pada sinkronisasi ini (COYABAG Admin Produk integrity)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaView S288 safe pointer publication)
 

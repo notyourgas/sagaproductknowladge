@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-25 - COYABAG Admin Produk integrity
+
+- Exact source `0043c7bfb85698b9894ce01214642ffe59825750` aktif sebagai
+  Hostinger release `20260825-0043c7b`; rollback `20260825-412d351` tersedia.
+- Dashboard Produk menyediakan lima antrean operasional, live variant stock,
+  publication readiness, role-safe exact action, dan state lengkap pada tabel
+  desktop serta kartu mobile.
+- Full test/build/security, backup/rollback, shared-storage reconciliation, dan
+  public smoke lulus. Status `PRODUCTION_DEPLOYED`; readiness tetap 30/42,
+  activation serta business readiness `BLOCKED`, dan commerce tidak diaktifkan.
+
 ## 2026-08-25 - Snap and Fit safe observability contract
 
 - Exact private trace source `3fa3be4`, metrics source `1c1a81e`, dan docs head

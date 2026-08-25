@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - COYABAG Admin Produk integrity sync
+
+- Produk/area: Dashboard Produk, variant inventory truth, permission, dan
+  release shared-storage boundary.
+- Informasi `CONFIRMED` berasal dari exact source
+  `0043c7bfb85698b9894ce01214642ffe59825750`, immutable Hostinger release
+  `20260825-0043c7b`, rollback `20260825-412d351`, dan runtime verification.
+- Knowledge mencatat lima action queue, live stock/readiness, literal search,
+  exact role-safe action, responsive states, serta storage reconciliation tanpa
+  overwrite dengan recovery copy.
+- Delivery `PRODUCTION_DEPLOYED`; readiness tetap 30/42 dan
+  activation/business readiness `BLOCKED`. Dokumen terdampak: COYABAG product/
+  dossier/changelog, portfolio, master knowledge, root changelog, dan sync
+  status.
+
 ## 2026-08-25 - SagaView S288 safe pointer publication sync
 
 - Produk/area: SagaView inactive rollback recovery dan concurrency safety.
