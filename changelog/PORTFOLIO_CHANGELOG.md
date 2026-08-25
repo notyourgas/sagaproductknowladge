@@ -1,5 +1,12 @@
 # Portfolio Changelog
 
+## 2026-08-25 - SagaWork signed pilot admission gate
+
+- Exact implementation `3bcdf06`, acceptance `a36ac8e`, docs head `7ec66ff`, dan active synthetic staging `e003a3d` menjadi provenance public-safe.
+- Ed25519 receipt fail-closed mengikat exact source/runtime/protected preview, maksimum tujuh hari, dan 16 evidence Gate A/B/C/E; private key tetap dalam custody Andreas dan verifier tidak mengaktifkan deployment.
+- Dua belas security/contract cases serta full regression lulus. Restricted `a36ac8e` artifact checksum/provenance/content exclusion PASS dan belum terdeploy.
+- Delivery tetap `STAGING_DEPLOYED`, activation `NOT_PRODUCTION_ACTIVATED`, business readiness `BLOCKED_EXTERNAL`, dan Gate E `NOT_STARTED_EXTERNAL` sampai real receipt/evidence serta Andreas Go tersedia.
+
 ## 2026-08-25 - Snap and Fit reproducible clean-checkout acceptance
 
 - Exact setup fix `fbf01b6` dan evidence head `b17712d` membuktikan README dari

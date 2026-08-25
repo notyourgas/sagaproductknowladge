@@ -8,6 +8,14 @@ Mencatat perubahan material SagaWork dengan status delivery dan activation yang 
 
 Synthetic fixture, preview, dan staging bukan bukti real pilot atau production activation.
 
+## 2026-08-25 - Fail-closed signed pilot admission
+
+- `CONFIRMED` dari implementation `3bcdf06`, acceptance `a36ac8e`, documentation head `7ec66ff`, exact active isolated staging `e003a3d`, serta local full-regression/artifact evidence.
+- Admission receipt memakai Ed25519 dengan private key hanya dalam custody Andreas dan public-key verifier; exact source/runtime/protected-preview binding, maksimum tujuh hari, 16 required evidence Gate A/B/C/E, PII-like field guard, residual-risk disposition, dan no-overwrite berlaku fail-closed.
+- Dua belas admission security/contract cases, OpenAPI/contract drift, 27/89 unit test, 39-page build, release tests, dan production dependency audit lulus.
+- Restricted acceptance artifact exact `a36ac8e`: 1.223.662 byte/452 tracked entries, SHA-256 `51c764f3464c02fc023a322007154c4b8735f75ebb363d8700744f2057fe84fb`; content exclusion PASS dan artifact belum terdeploy.
+- Runtime/preview tidak berubah. Gate E tetap `NOT_STARTED_EXTERNAL`; real receipt, named pilot, legal/provider/offsite/device/public-route evidence, canary, dan Andreas Go masih pending.
+
 ## 2026-08-25 - Validated OpenAPI 3.1.1 dan exact handoff
 
 - `CONFIRMED` dari OpenAPI source `133b936`, acceptance `85bbbfb`, documentation head `366b1cd`, exact active isolated staging `e003a3d`, serta local QA/artifact evidence.

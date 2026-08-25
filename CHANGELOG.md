@@ -1,5 +1,13 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - SagaWork signed pilot admission sync
+
+- Produk/area: Gate E admission control, authority custody, exact-target release binding, restricted evidence, QA, handoff, dan readiness.
+- Informasi `CONFIRMED` berasal dari implementation `3bcdf06`, acceptance `a36ac8e`, documentation head `7ec66ff`, exact active isolated staging `e003a3d`, serta full local regression/artifact evidence.
+- Knowledge mencatat Ed25519 Andreas-only signing, public-key verifier/fingerprint, exact source/runtime/preview binding, maksimum tujuh hari, 16 evidence Gate A/B/C/E, 12 synthetic cases PASS, dan restricted artifact checksum/provenance/content exclusion tanpa memublikasikan key/receipt/source restricted.
+- Runtime Hostinger dan Vercel Preview tidak berubah. Delivery `STAGING_DEPLOYED`; activation `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED_EXTERNAL`; Gate E `NOT_STARTED_EXTERNAL` sampai real evidence/receipt dan Andreas Go.
+- Dokumen terdampak: SagaWork product/dossier/changelog, portfolio, master knowledge, gaps, root changelog, dan sync status.
+
 ## 2026-08-25 - Snap and Fit clean-checkout acceptance sync
 
 - Produk/area: reproducible setup, Windows line endings, local validation, dan
