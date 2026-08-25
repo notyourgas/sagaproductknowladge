@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-26 - SagaView S289 authenticated UAT safety harness
+
+- Exact source `701d008329b5e2fe482226d45cc7ba8750fa6fcc` membuat
+  authenticated operator UAT SagaView menjadi approval-bound dan read-only
+  setelah login.
+- Lima layar Owner dan dua API read-only dapat diverifikasi tanpa response
+  body, secret, identifier tenant/device, foto, atau path customer pada
+  evidence.
+- Focused 3/31, full SagaView 211/3.541, parser, diff, dan audit dependency nol
+  lulus. Delivery `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+  production dan activation tidak berubah.
+
 ## 2026-08-26 - COYABAG order status and tracking privacy
 
 - Exact source `aa6be850e4466cf0ade63250eb1d2ea7ab7e29fb` aktif pada immutable

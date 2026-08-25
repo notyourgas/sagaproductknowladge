@@ -1,6 +1,18 @@
 # SagaView Product Knowledge
 
-Updated: 26 Agustus 2026 00:12 WIB
+Updated: 26 Agustus 2026 01:24 WIB
+
+SagaView S289 exact `701d008329b5e2fe482226d45cc7ba8750fa6fcc`
+sudah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Harness baru
+menjadikan authenticated operator UAT terukur dan khusus SagaView: approval
+eksplisit serta akun referensi non-customer wajib tersedia, credential hanya
+diambil melalui loopback vault, login menjadi satu-satunya POST, dan semua
+probe sesudahnya hanya GET/HEAD/OPTIONS. Cakupan mencakup lima layar Owner dan
+dua API read-only tanpa mencetak response body, secret, identifier
+tenant/device, foto, atau path customer. Focused 3/31, full SagaView
+211/3.541, parser Node/PowerShell, diff check, dan audit dependency nol lulus.
+Production tidak berubah; authenticated UAT belum dijalankan, sehingga status
+tetap belum `PRODUCTION_ACTIVATED` dan belum `BUSINESS_READY`.
 
 SagaView backend/Owner exact
 `8d84c60c86131892a2ae3727670b0468b64fa81b` sudah

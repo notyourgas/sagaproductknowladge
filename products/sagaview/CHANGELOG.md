@@ -1,5 +1,26 @@
 # SagaView Changelog
 
+## 2026-08-26 - S289 authenticated read-only operator UAT harness
+
+- Klasifikasi: `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+  production tidak berubah dan belum `PRODUCTION_ACTIVATED` atau
+  `BUSINESS_READY`.
+- Before: authenticated operator UAT masih berupa langkah manual yang belum
+  mengikat scope produk, metode request, approval, dan keluaran evidence secara
+  fail-closed.
+- After: exact `701d008329b5e2fe482226d45cc7ba8750fa6fcc`
+  menyediakan harness SagaView-only dengan approval eksplisit, loopback vault,
+  login-only POST, lalu GET/HEAD/OPTIONS pada lima layar Owner dan dua API
+  read-only.
+- Privacy/security: harness menolak mutation tak terduga dan tidak mencetak
+  response body, secret, identifier tenant/device, foto, atau path customer.
+- Evidence: focused 3/3 dengan 31 assertion; full SagaView 211/211 dengan
+  3.541 assertion; parser Node/PowerShell, diff check, Composer audit, dan npm
+  production audit nol vulnerability lulus.
+- Next gate: Andreas mengizinkan authenticated UAT dan membuka akses akun
+  referensi non-customer; hasilnya baru dipakai untuk menilai activation dan
+  business readiness.
+
 ## 2026-08-26 - S286/S287 production deployed and S288 rollback protected
 
 - Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED=false /

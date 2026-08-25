@@ -1,5 +1,19 @@
 # SagaView Dossier
 
+## S289 authenticated read-only operator UAT harness
+
+Exact pushed source `701d008329b5e2fe482226d45cc7ba8750fa6fcc`
+menutup gap tooling untuk authenticated operator UAT tanpa menjalankan UAT
+production. Runner khusus SagaView memerlukan approval eksplisit dan akun
+referensi non-customer melalui loopback vault; hanya login yang boleh memakai
+POST, sedangkan lima layar Owner dan dua API sesudahnya hanya diprobe dengan
+GET/HEAD/OPTIONS. Output evidence tidak membawa response body, credential,
+identifier tenant/device, foto, atau path customer. Focused 3/31, full
+SagaView 211/3.541, parser Node/PowerShell, diff check, serta audit Composer/npm
+nol lulus. Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+production tetap pada release terverifikasi sebelumnya dan activation masih
+menunggu eksekusi UAT terotorisasi.
+
 ## 2026-08-25 - S288 mainline global acceptance
 
 Exact pushed candidate `a830cf40e1c4fcb53d0e0d63d2e443d71a89b05e`
