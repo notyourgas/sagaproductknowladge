@@ -61,9 +61,16 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260825-b7bf006` dengan source
-  `b7bf0061cf54b77eafeb9297280649e27bc99135` melayani production;
-  rollback langsung `20260825-a6fbc90` dipertahankan.
+- Release aktif `20260825-949a57b` dengan source
+  `949a57be913245d58013554ab36d9a678c448d0f` melayani production;
+  rollback langsung `20260825-b7bf006` dipertahankan.
+- HTML awal route publik kini dirender melalui metadata server-side yang
+  otoritatif. Shop dan detail produk memiliki canonical, OpenGraph, Twitter,
+  serta structured data yang mengikuti katalog aktif; route utilitas dan 404
+  mengirim `noindex`.
+- Sitemap production dibentuk dinamis hanya dari katalog aktif dan konten yang
+  telah dipublikasikan. Fallback sitemap internal tetap tersedia secara
+  fail-closed jika renderer atau backend sitemap gagal.
 - Home memprioritaskan hero dan memuat foto lifestyle kartu hanya setelah
   pointer atau keyboard intent. Media scene/capacity nonkritis dimuat lazy;
   clean-context lab publik menurunkan image transfer 34,9% pada mobile dan

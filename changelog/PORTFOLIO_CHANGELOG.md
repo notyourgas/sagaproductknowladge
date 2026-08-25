@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-25 - CoyaBag storefront SEO integrity
+
+- Exact source `949a57be913245d58013554ab36d9a678c448d0f` aktif sebagai
+  Hostinger release `20260825-949a57b`; rollback `20260825-b7bf006` tersedia.
+- HTML awal route publik membawa metadata otoritatif, detail produk memiliki
+  schema sesuai varian aktif, utility/404 bersifat `noindex`, dan sitemap
+  production hanya memuat katalog aktif serta konten published.
+- Acceptance metadata desktop/mobile, full test/build/security, backup,
+  rollback, dan public smoke lulus. Status `PRODUCTION_DEPLOYED`; readiness
+  tetap 30/42, activation dan business readiness `BLOCKED`, dan commerce tidak
+  diaktifkan.
+
 ## 2026-08-25 - Snap and Fit deletion and recovery hardening
 
 - Exact private source `dbbb814` menambahkan deletion consumer idempoten,

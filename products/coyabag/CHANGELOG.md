@@ -8,6 +8,22 @@ Mencatat perubahan material COYABAG dengan provenance public-safe.
 
 Surface deployment tidak otomatis berarti commerce activation.
 
+## 2026-08-25 - Storefront SEO integrity production release
+
+- Informasi `CONFIRMED` berasal dari exact source
+  `949a57be913245d58013554ab36d9a678c448d0f`, immutable Hostinger release
+  `20260825-949a57b`, rollback `20260825-b7bf006`, dan runtime verification.
+- HTML awal route publik sekarang membawa canonical, robots, OpenGraph,
+  Twitter, dan structured data yang otoritatif. Product schema mengikuti harga,
+  stok, serta media varian aktif; route utilitas dan 404 bersifat `noindex`.
+- Sitemap production bersumber dari katalog aktif dan konten published, dengan
+  fallback internal fail-closed. Acceptance metadata desktop/mobile, full
+  storefront/Laravel, accessibility, responsif, security, build, dan public
+  smoke lulus.
+- Delivery `PRODUCTION_DEPLOYED`; readiness tetap 30/42 dengan 12 blocker.
+  Activation dan business readiness tetap `BLOCKED`; checkout/provider tidak
+  diaktifkan.
+
 ## 2026-08-25 - Storefront performance integrity production release
 
 - Informasi `CONFIRMED` berasal dari exact source
