@@ -1,10 +1,10 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 25 Agustus 2026 13:38 WIB
+Evidence cut-off: 25 Agustus 2026 13:47 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
-SagaWork active staging source `f4c4387` berstatus `CONFIRMED / STAGING_DEPLOYED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`. Isolated Hostinger staging memakai synthetic data dan MySQL 8.4; protected Vercel preview `dpl_GXFfbMY9RVGyLuCCCyyy9HqzKPe6` `READY`. Scope tervalidasi mencakup staff no-OTP dan privileged TOTP, people termasuk atomic CSV draft import tanpa account/password, scheduling/notes/swap, attendance foto+GPS/break, correction/request, partial overtime approval, work-hours/score, period lock/reopen, retention/recovery, protected-route hardening, security/load/accessibility, manifest, serta rollback. XLSX/error export, real provider/photo bytes, public route, offsite key escrow, human/legal/pilot evidence, dan activation masih blocker; payroll compliance tidak diklaim.
+SagaWork active staging source `74cc833` berstatus `CONFIRMED / STAGING_DEPLOYED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`. Isolated Hostinger staging memakai synthetic data dan MySQL 8.4; protected Vercel preview `dpl_pgZhC64nNfe6HHnVp5bnthcWXUHs` `READY`. Scope tervalidasi mencakup staff no-OTP dan privileged TOTP, people termasuk atomic CSV draft import tanpa account/password, scheduling/notes/swap, attendance foto+GPS, paid/unpaid break dengan payable-vs-net dan missing/long human review, correction/request, partial overtime approval, work-hours/score, period lock/reopen, retention/recovery, protected-route hardening, security/load/accessibility, manifest, serta rollback. XLSX/error export, employer-ordered overtime/holiday-rest, real provider/photo bytes, public route, offsite key escrow, human/legal/pilot evidence, dan activation masih blocker; payroll compliance tidak diklaim.
 
 Snap and Fit exact private source `150fea6` berstatus `CONFIRMED /
 LOCAL_VALIDATED`; user-facing notification inbox berasal dari `88c8dc9`,

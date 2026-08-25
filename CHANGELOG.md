@@ -1,5 +1,13 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - SagaWork paid/unpaid break sync
+
+- Produk/area: attendance break policy dan payroll-ready quantities.
+- Informasi `CONFIRMED` berasal dari exact feature source `3603430`, active isolated staging `74cc833`, protected preview `dpl_pgZhC64nNfe6HHnVp5bnthcWXUHs`, serta synthetic migration/API/browser/security evidence.
+- Knowledge mencatat paid/unpaid, payable-vs-net, missing/long human review, append-only evidence, dan legacy locked CSV compatibility.
+- Delivery tetap `STAGING_DEPLOYED`; activation `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED`. Nominal/compliance payroll, real data, legal/human pilot, dan public activation tidak diklaim.
+- Dokumen terdampak: SagaWork product/dossier/changelog, portfolio, master knowledge, gaps, root changelog, dan sync status.
+
 ## 2026-08-25 - Snap and Fit notification inbox sync
 
 - Produk/area: customer checkout inbox, photographer jobs inbox, unread/read

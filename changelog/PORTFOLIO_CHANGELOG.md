@@ -1,5 +1,12 @@
 # Portfolio Changelog
 
+## 2026-08-25 - SagaWork paid/unpaid break policy
+
+- Exact feature source `3603430` dan active staging fix `74cc833` menambahkan paid/unpaid break, payable-vs-net projection, toleransi, serta human-review missing/long exception.
+- Report, CSV, locked snapshot compatibility, dan payroll component quantities tervalidasi tanpa nominal payroll atau hukuman otomatis.
+- Migration, full smoke, security/DB controls, browser+Axe, manifest, rollback, dan protected Vercel preview `dpl_pgZhC64nNfe6HHnVp5bnthcWXUHs` lulus.
+- Delivery tetap synthetic `STAGING_DEPLOYED`; real data, legal/payroll compliance, device/human pilot, dan activation belum dilakukan.
+
 ## 2026-08-25 - Snap and Fit exact-recipient notification inbox
 
 - Exact private feature source `88c8dc9` menghubungkan durable notification ke
