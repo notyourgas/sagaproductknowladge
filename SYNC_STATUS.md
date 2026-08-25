@@ -12,12 +12,33 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T22:50:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T23:03:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `f72c169f61e12cb11d20ecb63a519fb1ebeaf108` |
-| Informasi terakhir disinkronkan | SagaWork external evidence runbook dan exact handoff/runtime `d36a59fb456106eafa3d8b3e797d42a4aac67a68`. |
-| Status sinkronisasi | `STAGING_DEPLOYED / NOT_PRODUCTION_ACTIVATED / REAL_PERFORMANCE_NOT_AUTHORIZED / BUSINESS_READINESS_BLOCKED_EXTERNAL`. |
+| Baseline sebelum pembaruan | `ee3b3b65cf02845065aae0a96637fb25ea608e4a` |
+| Informasi terakhir disinkronkan | COYABAG Cart bulk clear and Undo immutable release `20260825-0c4104b`. |
+| Status sinkronisasi | `PRODUCTION_DEPLOYED / COMMERCE_ACTIVATION_BLOCKED / BUSINESS_READINESS_BLOCKED`. |
+
+## COYABAG Cart bulk clear and Undo integrity
+
+- Exact source `0c4104b080e5575010b0fa545fe5e05aaf6f7daa` aktif pada immutable
+  release `20260825-0c4104b`; rollback `20260825-68119d2`.
+- Cart page/drawer menyediakan safe-first bulk clear dan exact-variant Undo
+  dengan original order, duplicate guard, serta session-safe recovery.
+- Full regression, empat viewport fixture, public desktop/mobile,
+  accessibility, backup/rollback, dan smoke lulus tanpa mutasi commerce.
+- Readiness tetap 30/42 dengan 12 blocker; commerce, activation, dan business
+  readiness tetap blocked.
+
+## File yang berubah pada sinkronisasi ini (COYABAG Cart bulk clear)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaWork transparent role-performance acceptance
 

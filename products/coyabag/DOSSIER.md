@@ -78,12 +78,22 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260825-68119d2` memakai source
-`68119d2b9cbcc4b50bfceb284b0365d047c2c2ab` dan rollback
-`20260825-838006c`. Wishlist persistence sekarang fail-visible: kegagalan
-penyimpanan tidak menghapus pilihan sesi, retry memverifikasi write, update
-valid antartab diterapkan sekali, dan payload rusak tidak mengosongkan
-Wishlist aktif. Rekonsiliasi varian tetap menunggu katalog authoritative siap.
+Release production terbaru `20260825-0c4104b` memakai source
+`0c4104b080e5575010b0fa545fe5e05aaf6f7daa` dan rollback
+`20260825-68119d2`. Cart page dan drawer kini menyediakan bulk clear dengan
+safe-first confirmation, exact product-variant snapshot, original-order Undo,
+dan duplicate protection. Sesi tetap tersedia saat katalog atau persistence
+gagal; checkout tetap fail-closed. Full TDD/regression, desktop/mobile,
+small-mobile/landscape fixture acceptance, public Cart acceptance, responsive,
+accessibility, backup/rollback, serta public smoke lulus tanpa mutasi order,
+stock, payment, atau customer. Readiness tetap 30/42.
+
+Release sebelumnya `20260825-68119d2` memakai source
+`68119d2b9cbcc4b50bfceb284b0365d047c2c2ab`. Wishlist persistence sekarang
+fail-visible: kegagalan penyimpanan tidak menghapus pilihan sesi, retry
+memverifikasi write, update valid antartab diterapkan sekali, dan payload rusak
+tidak mengosongkan Wishlist aktif. Rekonsiliasi varian tetap menunggu katalog
+authoritative siap.
 
 Release sebelumnya `20260825-838006c` hanya menampilkan review berizin yang
 ditautkan ke produk exact. Atribusi, sumber HTTPS aman, rating opsional, dan

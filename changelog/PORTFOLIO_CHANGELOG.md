@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-25 - COYABAG Cart bulk clear and Undo integrity
+
+- Exact source `0c4104b080e5575010b0fa545fe5e05aaf6f7daa` aktif pada immutable
+  Hostinger release `20260825-0c4104b` dengan rollback `20260825-68119d2`.
+- Cart page/drawer kini memiliki bulk clear dengan safe-first confirmation,
+  exact-variant Undo, urutan asli, duplicate guard, dan session-safe recovery.
+- TDD, full regression, empat viewport fixture, public desktop/mobile,
+  accessibility, backup/rollback, dan smoke lulus tanpa mutasi commerce.
+- Delivery `PRODUCTION_DEPLOYED`; activation/business readiness `BLOCKED`;
+  commerce tetap fail-closed.
+
 ## 2026-08-25 - SagaWork external pilot evidence pack
 
 - Exact synthetic handoff runtime `d36a59fb456106eafa3d8b3e797d42a4aac67a68` dan protected Preview `dpl_9zvZTjgQBRhHJm5pVXH4rmtqQaBg` READY.

@@ -61,9 +61,14 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260825-68119d2` dengan source
-  `68119d2b9cbcc4b50bfceb284b0365d047c2c2ab` melayani production;
-  rollback langsung `20260825-838006c` dipertahankan.
+- Release aktif `20260825-0c4104b` dengan source
+  `0c4104b080e5575010b0fa545fe5e05aaf6f7daa` melayani production;
+  rollback langsung `20260825-68119d2` dipertahankan.
+- Cart page dan drawer menyediakan bulk clear dengan konfirmasi inline yang
+  memfokuskan `Batal` lebih dulu. Undo memulihkan identitas produk/varian exact
+  dalam urutan semula dan tidak menduplikasi item yang sudah ditambahkan lagi.
+  API failure dan blocked storage mempertahankan sesi; checkout tetap
+  fail-closed sampai Cart authoritative.
 - Wishlist menjelaskan ketika browser gagal menyimpan data: pilihan exact
   produk/varian tetap tersedia pada sesi aktif dan retry hanya mengonfirmasi
   setelah write berhasil. Update valid antartab diterapkan sekali lalu

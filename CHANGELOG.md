@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - COYABAG Cart bulk clear and Undo integrity sync
+
+- Ringkasan: sinkronisasi bulk clear Cart dengan safe-first confirmation,
+  exact-variant Undo, original order, duplicate guard, dan session-safe retry.
+- Produk/area: COYABAG Cart page/drawer, responsive UI, accessibility,
+  persistence recovery, release, dan rollback.
+- Klasifikasi: `CONFIRMED`; source
+  `0c4104b080e5575010b0fa545fe5e05aaf6f7daa`, release
+  `20260825-0c4104b`, rollback `20260825-68119d2`, runtime verification.
+- Delivery `PRODUCTION_DEPLOYED`; activation dan business readiness `BLOCKED`.
+  Readiness 30/42 dengan 12 blocker; commerce tetap fail-closed.
+- Dokumen terdampak: COYABAG product/dossier/changelog, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-25 - SagaWork external evidence runbook sync
 
 - Ringkasan: menyinkronkan exact handoff `d36a59f`, protected Preview, restricted artifact provenance, dan public-safe runbook untuk seluruh 16 external admission evidence.

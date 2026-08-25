@@ -3385,12 +3385,20 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release aktif `20260825-68119d2` menjalankan exact source
-`68119d2b9cbcc4b50bfceb284b0365d047c2c2ab` dengan rollback
-`20260825-838006c`. Wishlist production membedakan pilihan sesi dari
-persistence permanen. Write failure bersifat fail-visible dan dapat di-retry;
-update valid antartab diterapkan sekali, sedangkan payload rusak tidak
-menghapus Wishlist aktif. Rekonsiliasi exact variant menunggu katalog siap.
+Release aktif `20260825-0c4104b` menjalankan exact source
+`0c4104b080e5575010b0fa545fe5e05aaf6f7daa` dengan rollback
+`20260825-68119d2`. Cart page dan drawer memiliki bulk clear dengan safe-first
+confirmation serta Undo yang memulihkan produk/varian exact dalam urutan asli
+tanpa duplikasi. API atau storage failure mempertahankan sesi dan checkout
+tetap fail-closed. Full fixture/public acceptance serta release gate lulus
+tanpa mutasi data commerce; readiness tetap 30/42 dengan 12 blocker.
+
+Release sebelumnya `20260825-68119d2` menjalankan exact source
+`68119d2b9cbcc4b50bfceb284b0365d047c2c2ab`. Wishlist production membedakan
+pilihan sesi dari persistence permanen. Write failure bersifat fail-visible dan
+dapat di-retry; update valid antartab diterapkan sekali, sedangkan payload
+rusak tidak menghapus Wishlist aktif. Rekonsiliasi exact variant menunggu
+katalog siap.
 
 Release sebelumnya `20260825-838006c` hanya memakai testimonial CMS berizin yang
 ditautkan ke produk exact. Atribusi, sumber HTTPS aman, rating opsional, dan

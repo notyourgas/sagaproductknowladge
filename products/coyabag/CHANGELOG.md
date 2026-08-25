@@ -4,6 +4,20 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-25 - Storefront Cart bulk clear and Undo production release
+
+- Klasifikasi: `CONFIRMED` dari exact source
+  `0c4104b080e5575010b0fa545fe5e05aaf6f7daa`, immutable Hostinger release
+  `20260825-0c4104b`, rollback `20260825-68119d2`, dan runtime verification.
+- Cart page/drawer menyediakan bulk clear, safe-first inline confirmation,
+  exact product-variant snapshot, original-order Undo, dan duplicate guard.
+- API outage serta storage failure mempertahankan sesi dan retry; checkout
+  tetap fail-closed sampai Cart tervalidasi terhadap katalog authoritative.
+- TDD, full regression, desktop/mobile/compact acceptance, security/build,
+  backup/rollback, dan public smoke lulus tanpa mutasi data commerce.
+- Delivery `PRODUCTION_DEPLOYED`; readiness tetap 30/42 dengan 12 blocker.
+  Activation dan business readiness `BLOCKED`; commerce tidak diaktifkan.
+
 ## 2026-08-25 - Storefront Wishlist persistence integrity production release
 
 - Klasifikasi: `CONFIRMED` dari exact source
