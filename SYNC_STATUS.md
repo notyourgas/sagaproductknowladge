@@ -12,14 +12,25 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T16:30:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T16:44:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `ee837c6` |
-| Informasi terakhir disinkronkan | Snap and Fit resumable multipart HiRes feature `3fc397f`, private head `f38ffdc`, protected preview `dpl_HMJX9CJitQX8Qqf9bN6X9AmQNRbP`. |
-| Status sinkronisasi | `LOCAL_VALIDATED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`. |
-| Konflik | Tidak ada; contract lokal/protected frontend dibedakan dari real S3 isolated staging dan production. |
-| Error | Tidak ada error sinkronisasi; external staging/provider/legal/device gates tetap pending. |
+| Baseline sebelum pembaruan | `f38b8d2` |
+| Informasi terakhir disinkronkan | SagaWork per-Staff reporting active synthetic staging `9d49565`. |
+| Status sinkronisasi | `STAGING_DEPLOYED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`. |
+| Konflik | Tidak ada; synthetic reporting/export evidence dibedakan dari real payroll reconciliation dan production activation. |
+| Error | Tidak ada error sinkronisasi; XLSX/async private export dan external/human Gate A-C/E tetap pending. |
+
+## File yang berubah pada sinkronisasi ini (SagaWork per-Staff reporting)
+
+- `products/sagawork/PRODUCT.md`
+- `products/sagawork/DOSSIER.md`
+- `products/sagawork/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## File yang berubah pada sinkronisasi ini (Snap and Fit multipart HiRes)
 

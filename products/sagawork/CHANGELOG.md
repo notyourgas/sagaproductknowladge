@@ -8,6 +8,13 @@ Mencatat perubahan material SagaWork dengan status delivery dan activation yang 
 
 Synthetic fixture, preview, dan staging bukan bukti real pilot atau production activation.
 
+## 2026-08-25 - Per-Staff reporting dan Summary/Detail CSV
+
+- `CONFIRMED` dari feature source `763fa37`, exact active isolated Hostinger staging `9d49565`, documentation head `9eeef49`, serta synthetic build/test/runtime evidence.
+- HR mendapat searchable per-staff summary dan shift drill-down untuk net/payable hours, lateness count/raw minutes, early leave, break, overtime candidate/approved, dan blocker; UI menyatakan no-ranking/no-automatic-consequence.
+- Summary/detail CSV memakai canonical rows/locked snapshot, preview/final metadata, timezone, formula sanitation, view-specific checksum/audit, dan deterministic checksum setelah reopen. 26/87 unit test, 17-area smoke, security 7/7, load 720/0, browser+Axe 12/4, backup checksum, manifest 26 file, dan rollback `9d49565 → da2e662 → 9d49565` lulus.
+- Delivery `STAGING_DEPLOYED`; activation `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED_EXTERNAL`. XLSX/async private export, dedicated coverage/leave/exception export, real reconciliation/provider/offsite/legal/device/pilot/public route, dan Andreas Go tetap pending.
+
 ## 2026-08-25 - Guarded Staff lifecycle dan access revocation
 
 - `CONFIRMED` dari exact source/active isolated Hostinger staging `da2e662`, documentation head `5a9515c`, serta synthetic build/test/runtime evidence.

@@ -13,6 +13,14 @@
 - Dokumen terdampak: Snap and Fit product/dossier/changelog, portfolio, master
   knowledge, root changelog, dan sync status.
 
+## 2026-08-25 - SagaWork per-Staff reporting sync
+
+- Produk/area: work-hours report, per-staff lateness, shift drill-down, payroll-ready summary/detail export, dan reconciliation evidence.
+- Informasi `CONFIRMED` berasal dari feature source `763fa37`, exact active isolated staging `9d49565`, documentation head `9eeef49`, dan synthetic build/test/runtime evidence.
+- Knowledge mencatat canonical per-staff summary, no-ranking guardrail, shift detail, preview/final metadata, locked snapshot, sanitized Summary/Detail CSV, checksum/audit, dan deterministic superseded export.
+- Delivery `STAGING_DEPLOYED`; activation `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED_EXTERNAL`. Production tidak berubah. XLSX/async private export, dedicated report lain, external/human gates, dan final Go Andreas tetap pending.
+- Dokumen terdampak: SagaWork product/dossier/changelog, portfolio, master knowledge, gaps, root changelog, dan sync status.
+
 ## 2026-08-25 - SagaWork Staff lifecycle sync
 
 - Produk/area: people CRUD, access management, employment lifecycle, session revocation, dan offboarding guard.

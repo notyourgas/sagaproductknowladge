@@ -25,6 +25,13 @@
   lulus. Status `PRODUCTION_DEPLOYED`; readiness tetap 30/42, activation dan
   business readiness `BLOCKED`, dan commerce tetap fail-closed.
 
+## 2026-08-25 - SagaWork per-Staff reporting dan Summary/Detail CSV
+
+- Feature source `763fa37`, exact active isolated staging `9d49565`, dan docs head `9eeef49` memuat evidence public-safe.
+- HR dapat mencari staf, melihat shift/net/payable/lateness/break/overtime/blocker summary, membuka drill-down shift, serta mengunduh sanitized Summary atau Detail CSV dari canonical projection/locked snapshot.
+- 26/87 unit test, 17-area smoke, security 7/7, 720 request/0 error, browser+Axe 12/4, encrypted backup checksum, manifest 26 file, dan rollback dua arah lulus.
+- Delivery `STAGING_DEPLOYED`; production/real pilot tidak berubah. XLSX/async private export, dedicated report lain, external/human gates, dan final Go Andreas tetap pending.
+
 ## 2026-08-25 - SagaWork guarded Staff lifecycle
 
 - Exact source dan active isolated Hostinger staging `da2e662`; docs head `5a9515c` mencatat acceptance public-safe.
