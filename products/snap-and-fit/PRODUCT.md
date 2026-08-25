@@ -47,7 +47,8 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 - Delivery: `LOCAL_VALIDATED`.
 - Activation: `NOT_PRODUCTION_ACTIVATED`.
 - Business readiness: `BLOCKED`.
-- Exact source head `b067d01` berada di private `main`; CloudFront private
+- Exact private `main` head `f38ffdc`; resumable multipart HiRes berasal dari
+  `3fc397f`, staging controls dan preview baseline dari `d2b0c5c`, CloudFront private
   delivery signer berasal dari `5fe6ab5`, AWS event-scoped face provider
   contract dari `037d2b4`, private bounded API
   metrics berasal dari `1c1a81e`, safe trace/outbox propagation dari `3fa3be4`,
@@ -62,13 +63,13 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   `b09f279`, deletion/recovery hardening dari `dbbb814`, serta candidate/cart
   authority dari `09a55bd`, durable notification worker dari `d964fea`, dan
   lifecycle/retention worker dari `4d602d9`.
-- Protected Vercel preview `dpl_8agG8ianbziAht6cbKRRWVwF5DBv` berstatus
-  `READY`; manifest, service worker, offline route, dan BIB route 200 tetapi
+- Protected Vercel preview `dpl_HMJX9CJitQX8Qqf9bN6X9AmQNRbP` berstatus
+  `READY`; manifest, service worker, offline, BIB, dan photographer jobs route 200 tetapi
   backend staging sengaja fail-closed.
-- Full local validation, 59 API test dengan sembilan integrasi eksternal terkontrol
-  skip, 20 worker test dengan empat integrasi service-dependent skip, audit
-  dependency nol vulnerability, lima observability test, serta 52 browser test dengan dua viewport skip
-  lulus.
+- Full local validation, 61 API test dengan sembilan integrasi eksternal terkontrol
+  skip, 20 worker test dengan empat integrasi service-dependent skip, tujuh media
+  test, lima observability test, 53 browser test dengan tiga project-specific skip,
+  seluruh build, dan audit dependency produksi nol vulnerability lulus.
 
 ## Batas klaim
 
@@ -119,10 +120,12 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   fulfillment overdue, dan menjadwalkan retensi search/face/preview tanpa
   menghapus finance record. Eksekusi provider nyata tetap belum tervalidasi.
 - Fotografer memiliki antrean exact purchased filename/SLA, acknowledgement,
-  signed direct HiRes PUT maksimal 50 MB, dan server-side JPEG/dimension/
-  checksum/preview-similarity QA. Pass mengaktifkan entitlement; failure meminta
-  replacement hingga batas lima. Real S3/KMS/CloudFront belum dieksekusi dan
-  multipart di atas 50 MB belum diimplementasikan.
+  signed direct HiRes PUT sampai 50 MB, checksum-bound multipart 10 MiB sampai
+  200 MB, same-tab resume 24 jam, URL part 15 menit, refresh/abort, dan server-side
+  JPEG/dimension/full-SHA/preview-similarity QA. Capability dicocokkan dengan
+  exact job sebelum storage mutation dan provider upload ID tidak diekspos.
+  Pass mengaktifkan entitlement; failure meminta replacement hingga batas lima.
+  Real S3/KMS/CloudFront, lifecycle satu hari, dan ETag CORS belum dieksekusi.
 - Earning view fotografer membaca exact-owner ledger dan membedakan held,
   available, processing, paid, attention, serta reversed. Ringkasan mencakup
   seluruh ledger; daftar dibatasi 200 transaksi. Payout approval tidak diklaim paid.

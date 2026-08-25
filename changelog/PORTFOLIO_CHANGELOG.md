@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-25 - Snap and Fit resumable multipart HiRes
+
+- Exact private feature `3fc397f`, staging-control baseline `d2b0c5c`, dan docs
+  head `f38ffdc` menaikkan batas HiRes dari single PUT 50 MB menjadi multipart 200 MB.
+- Part 10 MiB memakai checksum SHA-256, URL 15 menit, resume 24 jam, exact-target
+  capability, refresh/abort, ordered completion, serta final full-object/visual QA.
+- Local gate lulus 61 API, 20 worker, 7 media, 5 observability, 53 browser, semua
+  build, dan audit produksi nol vulnerability dengan skip terkontrol.
+- Protected preview `dpl_HMJX9CJitQX8Qqf9bN6X9AmQNRbP` `READY`; backend 503
+  fail-closed. Real S3/KMS/CloudFront/lifecycle, isolated staging, dan production
+  tidak berubah.
+
 ## 2026-08-25 - COYABAG Admin Varian integrity
 
 - Exact source `eeffc48da8aa4633715480d8ff8007aed3f19a4c` aktif sebagai

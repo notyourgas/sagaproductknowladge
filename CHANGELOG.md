@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - Snap and Fit multipart HiRes sync
+
+- Produk/area: photographer fulfillment, private media upload, resume, QA, dan staging controls.
+- Informasi `CONFIRMED` berasal dari exact private feature `3fc397f`, main head
+  `f38ffdc`, full local gates, dan protected preview
+  `dpl_HMJX9CJitQX8Qqf9bN6X9AmQNRbP` `READY`.
+- Knowledge mencatat single PUT sampai 50 MB, multipart 10 MiB sampai 200 MB,
+  checksum/resume/exact-target capability, serta real S3/KMS runtime yang tetap gate staging.
+- Delivery tetap `LOCAL_VALIDATED`; activation `NOT_PRODUCTION_ACTIVATED` dan
+  business readiness `BLOCKED`. Production tidak berubah.
+- Dokumen terdampak: Snap and Fit product/dossier/changelog, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-25 - SagaWork Staff lifecycle sync
 
 - Produk/area: people CRUD, access management, employment lifecycle, session revocation, dan offboarding guard.

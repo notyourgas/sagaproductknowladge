@@ -12,7 +12,8 @@ credential, PII, identifier tenant/perangkat, atau detail provider sensitif.
 - Delivery: `LOCAL_VALIDATED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED`
-- Provenance: source private `3337651`, organizer safe metrics `46d7a4b`,
+- Provenance: exact private head `f38ffdc`, resumable multipart feature `3fc397f`,
+  staging-control/preview baseline `d2b0c5c`, organizer safe metrics `46d7a4b`,
   photographer earning view `0385317`,
   customer order library `5e7e3c4`,
   distributed rate limiter `2c4af04`,
@@ -21,7 +22,7 @@ credential, PII, identifier tenant/perangkat, atau detail provider sensitif.
   operations feature `b09f279`,
   deletion/recovery hardening `dbbb814`, candidate/cart authority `09a55bd`,
   durable notification worker `d964fea`, lifecycle/retention worker `4d602d9`,
-  protected Vercel preview `dpl_EwPGuj6qxNJzcf59ahcabW3SGvGx`.
+  protected Vercel preview `dpl_HMJX9CJitQX8Qqf9bN6X9AmQNRbP`.
 
 ## Overview produk
 
@@ -52,7 +53,7 @@ perangkat fotografer sampai ada permintaan HiRes dari transaksi terverifikasi.
    entitlement tanpa bergantung pada tab checkout sebelumnya.
 5. Payment terverifikasi mengaktifkan social copy. Antrean fotografer memuat
    exact filename/SLA; fotografer mengakui request lalu mengunggah original
-   melalui signed direct PUT. Server memeriksa JPEG, byte/checksum, dimensi, dan
+   melalui signed direct PUT atau multipart. Server memeriksa JPEG, byte/checksum, dimensi, dan
    kecocokan preview sebelum QA mengaktifkan final download atau replacement.
 6. Ledger membagi hasil 75/15/10 dan menahan payout sampai provider-cleared dan
    fulfillment diterima.
@@ -90,6 +91,8 @@ fotografer desktop-optimized.
   biometric provider; mock/degraded adapter menjaga UAT tanpa data nyata.
 - S3 staging/production mewajibkan CloudFront trusted-key signed delivery;
   API startup fail-closed bila signer private tidak lengkap.
+- HiRes sampai 50 MB memakai single PUT; 50–200 MB memakai part 10 MiB dengan
+  per-part SHA-256, signed resume capability, dan final full-object SHA-256 QA.
 - AWS face provider contract tersedia default-off untuk create/index/search/
   liveness/delete pada exact event collection, tetapi client orchestration dan
   encrypted provider-reference persistence belum diaktifkan.
@@ -140,9 +143,11 @@ fotografer desktop-optimized.
   expiry search/cart/payment, fulfillment overdue, serta deterministic
   system-owned deletion request bagi search/face/preview. Finance records dan
   purchased social/HiRes entitlement tidak menjadi target hard delete.
-- Fulfillment queue hanya dapat dibaca/dimutasi fotografer pemilik. Upload
-  intent berlaku 15 menit, terikat SHA-256 dan byte count, JPEG maksimal 50 MB,
-  serta memakai bucket HiRes terpisah dari preview pada S3. QA membaca kembali
+- Fulfillment queue hanya dapat dibaca/dimutasi fotografer pemilik. Single PUT
+  dan URL multipart berlaku 15 menit, terikat SHA-256 dan byte count; multipart
+  memakai part 10 MiB, batas 200 MB, same-tab resume 24 jam, refresh/abort, dan
+  capability exact-job sebelum storage mutation. Provider upload ID tetap hanya
+  di capability bertanda tangan. Bucket HiRes terpisah dari preview pada S3. QA membaca kembali
   object private, mengukur dimensi aktual dan average-hash similarity, lalu
   membuat entitlement exact asset version atau meminta replacement maksimal
   lima kali. Dependency outage menghasilkan retryable error, bukan QA failure.
@@ -158,17 +163,19 @@ fotografer desktop-optimized.
 ## Evidence lokal
 
 - Full format/lint/typecheck/test/build lulus.
-- 47 API test lulus; sembilan MySQL/Redis/external integration test terkontrol skip tanpa
+- 61 API test lulus; sembilan MySQL/Redis/external integration test terkontrol skip tanpa
   service project-safe.
 - 20 worker test lulus; empat integrasi MySQL/Redis sengaja skip tanpa service
   project-safe. Restore verifier kini memeriksa core schema dan orphan deletion
   task, bukan hanya jumlah tabel.
-- 40 Playwright mobile/desktop lulus dan dua viewport-specific skip disengaja;
-  operator controlled demo, checkout/order library, role workflow, upload, accessibility, dan
-  no-overflow tercakup.
+- Tujuh media test dan lima observability test lulus.
+- 53 Playwright mobile/desktop lulus dan tiga project-specific skip disengaja;
+  operator controlled demo, checkout/order library, role workflow, preview upload,
+  multipart interruption/resume, accessibility, dan no-overflow tercakup.
 - Production dependency audit: nol vulnerability yang diketahui.
-- Preview protected berstatus `READY`; smoke terlindungi merender organizer
-  route 200 dan mempertahankan backend fail-closed 503. Connected metrics panel
+- Preview protected `dpl_HMJX9CJitQX8Qqf9bN6X9AmQNRbP` berstatus `READY`;
+  manifest, service worker, offline, BIB, dan photographer jobs route 200 serta
+  backend fail-closed 503. Connected metrics panel
   hanya browser-validated lokal karena backend preview tidak terhubung. Backend
   authoritative belum terhubung.
 
@@ -187,9 +194,9 @@ fotografer desktop-optimized.
   Redis staging belum tersedia; implementasi lokal bukan bukti distributed runtime.
 - Migration read state inbox belum diaplikasikan pada isolated MySQL karena host
   staging belum tersedia; real email delivery juga tetap external gate.
-- Real direct S3/KMS HiRes upload/replacement dan CloudFront trusted-key/origin
-  proof belum dieksekusi; signer contract sudah teruji lokal, sedangkan multipart
-  di atas batas single PUT 50 MB belum diimplementasikan.
+- Real direct/multipart S3/KMS HiRes interruption/resume/replacement, ETag CORS,
+  one-day incomplete-upload lifecycle, dan CloudFront trusted-key/origin proof
+  belum dieksekusi; seluruh contract dan browser resume baru teruji sintetis lokal.
 - Rekognition provider contract sudah teruji fake-transport tetapi belum
   terhubung ke worker/API/client dan belum pernah memanggil AWS. Real MySQL/S3/
   Rekognition deletion orchestration dan evidence provider belum ada;

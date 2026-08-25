@@ -1,13 +1,14 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 25 Agustus 2026 16:02 WIB
+Evidence cut-off: 25 Agustus 2026 16:30 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
 SagaWork active staging runtime `da2e662` berstatus `CONFIRMED / STAGING_DEPLOYED / NOT_PRODUCTION_ACTIVATED / PILOT_READY_CANDIDATE / BUSINESS_READY=false`. Isolated Hostinger staging memakai synthetic data, MySQL 8.4 dengan 21 migration, dan same-VPS loopback object store khusus acceptance non-PII; Vercel Preview `dpl_AJNsByPfcxvbFEmtk8KvRB92YL6m` `READY`. Scope tervalidasi mencakup staff no-OTP dan privileged TOTP; people dengan atomic CSV draft import tanpa account/password serta guarded Staff lifecycle: separate work/access status, employment activation, tenant-scoped suspend/restore, immediate session revoke, future schedule/request/swap termination blocker, terminate-today, dan archive/history preservation. Scheduling/notes/swap, attendance foto+GPS, private quarantine→ClamAV→metadata-stripped photo bytes, owner status, scoped HR signed view, Staff denial, legal hold/purge certificate, paid/unpaid break dengan payable-vs-net dan missing/long human review, default-off unscheduled draft→HR publish/resolve, serta supervisor-assisted attendance dengan published schedule, reason/attestation, no credential sharing, no fake photo/GPS, pending-review blocker, idempotency, dan independent maker-checker juga tervalidasi. Correction/request, partial overtime approval, work-hours/score, period lock/reopen, retention/recovery, security/load/accessibility, manifest 26 file, checksum backup, serta guarded rollback `da2e662 → b3c36cf → da2e662` lulus. Loopback store bukan external provider/DPA/offsite/HA dan real employee/photo data dilarang; rehire/offboarding authority, scheduled/backdated termination, training/test isolation, multi-session policy, public route, offsite key escrow, human/device/legal/pilot evidence, named champion/company, serta activation masih blocker. Payroll compliance tidak diklaim.
 
-Snap and Fit exact private source head `b067d01` berstatus `CONFIRMED /
+Snap and Fit exact private source head `f38ffdc` berstatus `CONFIRMED /
 LOCAL_VALIDATED`; private CloudFront delivery signer berasal dari `5fe6ab5`,
+resumable multipart HiRes berasal dari `3fc397f`, staging-control/preview baseline dari `d2b0c5c`,
 AWS event-scoped face provider contract dari `037d2b4`, private bounded API metrics berasal dari `1c1a81e`, safe
 trace/outbox propagation dari `3fa3be4`, privacy-safe installable PWA shell berasal dari `141bbb5`,
 private candidate confirmation preview berasal dari `c17d56d`, secure
@@ -22,7 +23,7 @@ privileged operations feature berasal dari `b09f279`,
 deletion/recovery hardening dari `dbbb814`, candidate/cart authority dari
 `09a55bd`, durable notification worker dari `d964fea`, lifecycle/retention
 worker dari `4d602d9`, dan protected Vercel
-preview `dpl_8agG8ianbziAht6cbKRRWVwF5DBv`
+preview `dpl_HMJX9CJitQX8Qqf9bN6X9AmQNRbP`
 berstatus `READY`.
 Marketplace foto olahraga ini mencakup event, uploader preview 500 JPEG,
 BIB/selfie mock ber-consent, dynamic event landing, event-scoped multi-photo
@@ -75,19 +76,21 @@ user read timestamp yang terpisah dari worker delivery state.
 Lifecycle sweep mempersistenkan timed sales close, expiry search/cart/payment,
 fulfillment overdue, dan system-owned search/face/preview deletion request tanpa
 hard-delete finance record. Photographer-owned queue kini menampilkan exact
-purchased filename/SLA, memakai acknowledgement serta checksum-bound signed
-direct HiRes PUT 15 menit, lalu server memeriksa JPEG, bytes, SHA-256, actual
+purchased filename/SLA dan acknowledgement. HiRes sampai 50 MB memakai
+checksum-bound PUT; 50–200 MB memakai part 10 MiB, per-part SHA-256, URL 15 menit,
+resume 24 jam, refresh/abort, ordered completion, dan capability exact-job sebelum
+storage mutation. Server kemudian memeriksa JPEG, bytes, full SHA-256, actual
 dimension, dan preview similarity. Pass mengaktifkan exact HiRes entitlement;
 failure meminta replacement maksimal lima kali. API staging/production kini
 mewajibkan atomic Redis shared-window dengan hashed client key dan fail-closed
-503; memory mode hanya local/test. Full local gate, 59 API test,
+503; memory mode hanya local/test. Full local gate, 61 API test,
 20 worker test,
-5 observability test,
+7 media test, 5 observability test,
 dependency audit nol,
-dan 52 browser test lulus; integration service-dependent
+dan 53 browser test lulus; integration service/project-dependent
 tetap skip terkontrol. Backend staging, isolated VPS, MySQL/Redis/S3/KMS worker
 evidence termasuk cross-instance limiter, real CloudFront trusted-key/origin,
-multipart >50 MB, connected encrypted face orchestration, real-provider deletion, external provider/legal gate,
+real multipart interruption/lifecycle/ETag CORS, connected encrypted face orchestration, real-provider deletion, external provider/legal gate,
 load/recovery/device UAT, production activation, dan business readiness belum
 lulus; status activation `NOT_PRODUCTION_ACTIVATED`, business readiness
 `BLOCKED`.

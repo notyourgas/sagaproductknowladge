@@ -10,6 +10,23 @@ production, activation, dan business readiness.
 Mock, fixture, preview frontend, dan test lokal bukan bukti provider atau
 production activation.
 
+## 2026-08-25 - Resumable multipart HiRes sampai 200 MB
+
+- Exact private feature `3fc397f`, staging-control baseline `d2b0c5c`, dan docs
+  head `f38ffdc` berstatus `LOCAL_VALIDATED`.
+- HiRes sampai 50 MB tetap memakai checksum-bound PUT; file 50–200 MB memakai
+  part 10 MiB, SHA-256 per part, URL 15 menit, capability resume 24 jam,
+  refresh/abort, ordered completion, serta final full-object SHA-256 dan visual QA.
+- Capability diverifikasi dan dicocokkan ke exact photographer-owned target
+  sebelum storage mutation. Provider upload ID tidak masuk database atau public payload.
+- Browser sintetis memutus part ketiga, mempertahankan dua ETag, mengunggah ulang
+  hanya part pending, lalu menyelesaikan 1–5. Full gate lulus: 61 API, 20 worker,
+  7 media, 5 observability, 53 browser, semua build, dan audit produksi nol vulnerability;
+  skip service/project-specific tetap terkontrol.
+- Protected preview `dpl_HMJX9CJitQX8Qqf9bN6X9AmQNRbP` `READY`; shell route 200
+  dan backend 503 fail-closed. Real S3/KMS multipart, lifecycle, ETag CORS,
+  CloudFront runtime, isolated staging, dan production tetap belum diaktifkan.
+
 ## 2026-08-25 - Private CloudFront delivery dan AWS face provider contract
 
 - Exact private CloudFront feature `5fe6ab5`, AWS face-provider contract
