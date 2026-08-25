@@ -12,12 +12,33 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-26T03:09:21+07:00 |
+| Waktu pembaruan terakhir | 2026-08-26T03:28:33+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | exact `origin/main` `ccd5040` sebelum sinkronisasi SagaView S291 |
-| Informasi terakhir disinkronkan | SagaView S291 cumulative release candidate. |
-| Status sinkronisasi | `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production, activation, dan business readiness tidak berubah. |
+| Baseline sebelum pembaruan | exact `origin/main` `a19654e` sebelum sinkronisasi COYABAG Gallery |
+| Informasi terakhir disinkronkan | COYABAG Gallery variant and destination integrity. |
+| Status sinkronisasi | `PRODUCTION_DEPLOYED`; activation dan business readiness `BLOCKED`; commerce tetap fail-closed. |
+
+## COYABAG Gallery variant and destination integrity
+
+- Exact source `0bffe6e6362b44fcce64c5e7c8c5829334b54b5a` aktif pada immutable
+  release `20260826-0bffe6e`; rollback `20260826-8937547`.
+- Fallback Gallery mencakup seluruh varian aktif dengan tujuan produk/warna
+  exact. Destination stale atau non-HTTPS kehilangan CTA.
+- Preview swipe/focus, admin destination picker/publish guard, full RC,
+  desktop/mobile acceptance, backup/rollback, dan public smoke lulus.
+- Readiness tetap 30/42 dengan 12 blocker; commerce, activation, dan business
+  readiness tetap blocked.
+
+## File yang berubah pada sinkronisasi ini (COYABAG Gallery)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaView S291 cumulative release candidate
 

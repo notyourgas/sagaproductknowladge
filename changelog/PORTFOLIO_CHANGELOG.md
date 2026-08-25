@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-26 - COYABAG Gallery variant and destination integrity
+
+- Exact source `0bffe6e6362b44fcce64c5e7c8c5829334b54b5a` aktif pada immutable
+  Hostinger release `20260826-0bffe6e` dengan rollback `20260826-8937547`.
+- Semua varian aktif masuk fallback Gallery dengan tujuan produk/warna exact;
+  destination stale/non-HTTPS kehilangan CTA dan publik dapat swipe preview.
+- Admin live destination picker, publish guard, desktop/mobile acceptance,
+  full RC, backup/rollback, security audit, dan public smoke lulus.
+- Delivery `PRODUCTION_DEPLOYED`; activation/business readiness `BLOCKED`;
+  readiness 30/42 dan commerce tetap fail-closed.
+
 ## 2026-08-26 - COYABAG Our Product variant and Cart integrity
 
 - Exact source `89375473d56ba10c42adf4d6d1a4f30d661a0431` aktif pada immutable

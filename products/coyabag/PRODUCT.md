@@ -61,9 +61,19 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260826-8937547` dengan source
-  `89375473d56ba10c42adf4d6d1a4f30d661a0431` melayani production;
-  rollback langsung `20260826-56aabbc` dipertahankan.
+- Release aktif `20260826-0bffe6e` dengan source
+  `0bffe6e6362b44fcce64c5e7c8c5829334b54b5a` melayani production;
+  rollback langsung `20260826-8937547` dipertahankan.
+- Gallery fallback mencakup media setiap varian aktif dengan handoff exact ke
+  produk dan warna. CMS tetap menjadi authority; media editorial didahulukan
+  dan visual duplikat dihapus secara deterministik.
+- Tujuan produk/warna stale atau link eksternal non-HTTPS tidak membuka CTA
+  menyesatkan. Preview mendukung swipe, arrow, Escape, focus trap, dan focus
+  return. Admin menyediakan pemilih tujuan live dan menolak publish/schedule
+  Gallery yang tidak valid.
+- 162 storefront test, 402 Laravel test dengan 401 pass dan satu intentional
+  skip, full RC, dependency audit, desktop/mobile acceptance, immutable deploy,
+  serta public smoke lulus. Readiness tetap 30/42 dengan 12 blocker.
 - Our Product memprioritaskan media varian yang dipilih untuk hero dan poster
   video, kemudian mempertahankan media editorial seri sebagai cerita produk.
 - CTA memakai jumlah varian exact di Cart. Initial, partial, stock-limit, dan

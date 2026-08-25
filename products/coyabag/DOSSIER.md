@@ -78,15 +78,22 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260826-8937547` memakai source
+Release production terbaru `20260826-0bffe6e` memakai source
+`0bffe6e6362b44fcce64c5e7c8c5829334b54b5a` dan rollback
+`20260826-8937547`. Gallery fallback mencakup media semua varian aktif dengan
+tujuan produk/warna exact, urutan editorial-first, dan deduplikasi. CMS stale
+atau destination non-HTTPS mempertahankan konteks visual tetapi kehilangan CTA;
+admin menyediakan pemilih destination live dan publish guard. Preview swipe,
+keyboard/focus, desktop/mobile acceptance, 162 storefront test, 402 Laravel
+test dengan 401 pass dan satu intentional skip, full RC, backup/rollback, serta
+public smoke lulus. Readiness tetap 30/42 dengan 12 blocker.
+
+Release sebelumnya `20260826-8937547` memakai source
 `89375473d56ba10c42adf4d6d1a4f30d661a0431` dan rollback
 `20260826-56aabbc`. Our Product menempatkan media varian terpilih sebelum media
-editorial seri, sehingga hero dan poster video mengikuti warna exact. CTA
-memakai quantity Cart exact, menutup sold-out dan stock-limit sebelum klik, dan
-pulih setelah quantity berkurang. Reveal reduced-motion-aware, fokus navigasi
-seri, loading/error/retry/empty, desktop/mobile acceptance, 161 storefront unit,
-398 Laravel test dengan satu intentional skip, full RC, backup/rollback, serta
-public smoke lulus. Readiness tetap 30/42 dengan 12 blocker.
+editorial seri dan CTA memakai quantity Cart exact. Desktop/mobile acceptance,
+full RC, backup/rollback, serta public smoke lulus. Readiness tetap 30/42 dengan
+12 blocker.
 
 Release sebelumnya `20260826-56aabbc` memakai source
 `56aabbcb49257d545ed81243e2079074dc5f7af4` dan rollback
