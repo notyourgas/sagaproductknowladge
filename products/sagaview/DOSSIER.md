@@ -1,5 +1,24 @@
 # SagaView Dossier
 
+## S292 guarded production release
+
+Exact pushed backend/Owner source
+`1237ef2df06ca53f10b6230adc9350b179462ade` aktif sebagai release
+`20260825210645-1237ef2`. Studio tetap exact `7ae79ae...` / release
+`20260824170456-7ae79ae`; rollback immediate kini exact `8d84c60...` / release
+`20260824211838-8d84c60`. Scope runtime adalah cumulative S289 authenticated
+read-only UAT harness dan S290 Support Hub focus containment; migration delta
+nol dan SagaBook tidak berubah.
+
+Artifact production archive SHA-256 `be5f299b...817ee5` dan bundle SHA-256
+`56575b36...2e935f` mempunyai dua salinan checksum-identical. Fresh encrypted
+backup `20260825T211147Z`, checksum/offsite round-trip, disposable restore 149
+tabel SagaView, candidate+rollback gate 6/6, atomic switch, public smoke 4/4,
+security headers, service/journal, failed job nol, dan retention current+
+rollback lulus. Tidak ada payment intent atau QRIS dibuat. Delivery
+`PRODUCTION_DEPLOYED`; activation dan business readiness tetap false sampai
+authenticated operator UAT terotorisasi selesai.
+
 ## S291 cumulative release candidate
 
 Exact pushed source `1237ef2df06ca53f10b6230adc9350b179462ade`

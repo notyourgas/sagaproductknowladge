@@ -1,5 +1,24 @@
 # SagaView Changelog
 
+## 2026-08-26 - S292 cumulative S291 production release
+
+- Klasifikasi: `PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+- Before: cumulative S291 exact `1237ef2...` sudah local-validated tetapi
+  backend/Owner production masih `20260824211838-8d84c60`.
+- After: exact `1237ef2df06ca53f10b6230adc9350b179462ade` aktif sebagai
+  immutable release `20260825210645-1237ef2`; rollback menunjuk exact release
+  sebelumnya dan Studio tetap `20260824170456-7ae79ae`.
+- Safety: artifact archive+bundle memiliki dua salinan checksum-identical;
+  fresh encrypted backup `20260825T211147Z`, offsite round-trip, disposable
+  restore 149 tabel, candidate+rollback gate 6/6, migration nol, dan atomic
+  switch lulus. Tidak ada payment intent, QRIS, atau perubahan SagaBook.
+- Acceptance: shared storage valid, public smoke 4/4, security headers lulus,
+  service aktif, journal error nol, deploy gate 5 pass/0 critical/1 warning,
+  failed job SagaView nol, serta retention melindungi current+rollback.
+- Residual: authenticated operator UAT memerlukan izin terpisah dan akun
+  referensi non-customer sebelum activation dan business readiness dinilai.
+
 ## 2026-08-26 - S291 cumulative S289/S290 release candidate
 
 - Klasifikasi: `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;

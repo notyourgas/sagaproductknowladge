@@ -12,12 +12,36 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-26T03:28:33+07:00 |
-| Branch aktif | `main` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-26T04:23:00+07:00 |
+| Branch aktif | `codex/knowledge-s292-sagaview-production` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | exact `origin/main` `a19654e` sebelum sinkronisasi COYABAG Gallery |
-| Informasi terakhir disinkronkan | COYABAG Gallery variant and destination integrity. |
-| Status sinkronisasi | `PRODUCTION_DEPLOYED`; activation dan business readiness `BLOCKED`; commerce tetap fail-closed. |
+| Baseline sebelum pembaruan | exact `origin/main` `fd3ef16` sebelum sinkronisasi SagaView S292 |
+| Informasi terakhir disinkronkan | SagaView S292 cumulative production release. |
+| Status sinkronisasi | `PUSHED / PRODUCTION_DEPLOYED`; belum `PRODUCTION_ACTIVATED`; `BUSINESS_READY=false`. |
+
+## SagaView S292 cumulative production release
+
+- Exact source `1237ef2df06ca53f10b6230adc9350b179462ade` aktif pada
+  release `20260825210645-1237ef2`; rollback `20260824211838-8d84c60`.
+- Studio tetap `20260824170456-7ae79ae`; migration nol dan SagaBook tidak
+  berubah.
+- Artifact ganda, backup terenkripsi/offsite, restore disposable 149 tabel,
+  candidate+rollback gate 6/6, atomic switch, smoke 4/4, security headers,
+  service/journal, failed job nol, serta retention current+rollback lulus.
+- Authenticated operator UAT tetap membutuhkan izin serta akun referensi
+  non-customer sebelum activation dan business readiness.
+
+## File yang berubah pada sinkronisasi ini (SagaView S292)
+
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/DOSSIER.md`
+- `products/sagaview/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG Gallery variant and destination integrity
 

@@ -1,6 +1,30 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 26 Agustus 2026 03:09 WIB
+Evidence cut-off: 26 Agustus 2026 04:23 WIB
+
+S292 guarded production release: exact pushed backend/Owner source
+`1237ef2df06ca53f10b6230adc9350b179462ade` aktif sebagai immutable release
+`20260825210645-1237ef2`. Release ini membawa cumulative S289 authenticated
+read-only UAT harness dan S290 Support Hub focus containment. Studio tetap
+exact `7ae79ae45828f3876e3604bb569e0d3c7be3abfb` / release
+`20260824170456-7ae79ae`; rollback immediate backend/Owner sekarang exact
+`8d84c60c86131892a2ae3727670b0468b64fa81b` / release
+`20260824211838-8d84c60`.
+
+Exact artifact archive SHA-256
+`be5f299b2e333a3563709fc76fdf968b8f524b9bb67181e65dd6ebb647817ee5`
+dan bundle SHA-256
+`56575b3643030ff104058b8ccfdd88a13c307d234cedfe225ffb93c73b2e935f`
+tersedia dalam dua salinan checksum-identical. Fresh encrypted backup run
+`20260825T211147Z` lulus checksum, offsite round-trip, dan disposable restore
+tiga database; SagaView memulihkan 149 tabel tanpa plaintext tersisa.
+Candidate dan rollback gate 6/6, migration delta nol, atomic switch, shared
+storage, empat public smoke HTTP 200, security headers, service/journal, deploy
+gate 5 pass/0 critical/1 warning, failed job SagaView nol, serta retention guard
+melindungi current+rollback. Tidak ada payment intent atau QRIS yang dibuat.
+Status `PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED=false /
+BUSINESS_READY=false`; authenticated operator UAT tetap menunggu izin terpisah
+dan akun referensi non-customer.
 
 S291 cumulative release candidate: exact pushed source
 `1237ef2df06ca53f10b6230adc9350b179462ade` menyatukan harness authenticated

@@ -1,6 +1,26 @@
 # SagaView Product Knowledge
 
-Updated: 26 Agustus 2026 03:09 WIB
+Updated: 26 Agustus 2026 04:23 WIB
+
+SagaView backend/Owner exact
+`1237ef2df06ca53f10b6230adc9350b179462ade` sekarang
+`PUSHED / PRODUCTION_DEPLOYED` sebagai release
+`20260825210645-1237ef2`. Cumulative S289+S290 membuat authenticated UAT
+harness tersedia dan menjaga fokus keyboard tetap di dalam Support Hub. Studio
+tidak berubah: exact `7ae79ae45828f3876e3604bb569e0d3c7be3abfb` / release
+`20260824170456-7ae79ae`. Rollback immediate backend/Owner adalah exact
+`8d84c60c86131892a2ae3727670b0468b64fa81b` / release
+`20260824211838-8d84c60`.
+
+Release memakai exact archive dan bundle dalam dua salinan checksum-identical,
+fresh encrypted backup `20260825T211147Z`, offsite round-trip, serta disposable
+restore tiga database dengan 149 tabel SagaView. Candidate dan rollback gate
+6/6, migration delta nol, atomic switch, shared storage, public smoke 4/4,
+security headers, seluruh service aktif, journal error nol, deploy gate 5 pass
+dengan satu warning UAT, failed job SagaView nol, dan retention melindungi
+current+rollback. Tidak ada mutasi payment/QRIS dan tidak ada perubahan
+SagaBook. Status belum `PRODUCTION_ACTIVATED` dan `BUSINESS_READY=false` sampai
+authenticated operator UAT diizinkan dengan akun referensi non-customer.
 
 SagaView S291 exact `1237ef2df06ca53f10b6230adc9350b179462ade`
 sudah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Kandidat ini

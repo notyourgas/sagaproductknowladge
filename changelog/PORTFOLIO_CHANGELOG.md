@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-26 - SagaView S292 cumulative production release
+
+- Backend/Owner exact `1237ef2df06ca53f10b6230adc9350b179462ade`
+  aktif sebagai `20260825210645-1237ef2`; rollback immediate adalah
+  `20260824211838-8d84c60` dan Studio tetap `20260824170456-7ae79ae`.
+- Support Hub kini membawa focus containment S290 dan harness UAT read-only
+  S289 tersedia untuk acceptance berikutnya.
+- Backup terenkripsi/offsite, restore disposable 149 tabel, artifact ganda,
+  gate kandidat+rollback, migration nol, atomic switch, smoke, security,
+  service/journal, dan retention lulus.
+- Delivery `PRODUCTION_DEPLOYED`; activation dan business readiness belum
+  diberikan sampai authenticated operator UAT terotorisasi selesai.
+
 ## 2026-08-26 - COYABAG Gallery variant and destination integrity
 
 - Exact source `0bffe6e6362b44fcce64c5e7c8c5829334b54b5a` aktif pada immutable
