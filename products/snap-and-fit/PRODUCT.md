@@ -47,8 +47,8 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 - Delivery: `LOCAL_VALIDATED`.
 - Activation: `NOT_PRODUCTION_ACTIVATED`.
 - Business readiness: `BLOCKED`.
-- Exact private `main` head `d0f3b7d`; digest-only application release berasal
-  dari `d0f3b7d`, immutable supply-chain hardening berasal dari `ee45e56`,
+- Exact private `main` head `f41bbb8`; digest-only application release feature
+  berasal dari `d0f3b7d`, immutable supply-chain hardening berasal dari `ee45e56`,
   authoritative load fixture berasal dari `4f9d8d3`, ShellCheck
   acceptance berasal dari `162cc29`, clean-checkout setup
   fix berasal dari `fbf01b6`, liveness peer
@@ -105,6 +105,12 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   dependency produksi nol vulnerability lulus. Container workflow dikonfigurasi
   menghasilkan BuildKit SBOM/provenance dan manifest digest; image belum
   dibangun/dijalankan sehingga emission/runtime evidence tetap gate.
+- Hosted GitHub Actions run `32844518323` pada exact feature head `d0f3b7d`
+  gagal sebelum satu pun step berjalan: `runner_name` kosong dan steps kosong.
+  Ini adalah bukti blocker hosted-runner/account, bukan kegagalan source gate.
+  Commit dokumentasi setelah feature head tidak menggantikan evidence run
+  tersebut. Branch protection private repository juga tetap plan-gated (API
+  mengembalikan 403), sehingga required-check enforcement belum dapat diklaim.
 
 ## Batas klaim
 

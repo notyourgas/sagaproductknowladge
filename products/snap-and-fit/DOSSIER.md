@@ -12,8 +12,8 @@ credential, PII, identifier tenant/perangkat, atau detail provider sensitif.
 - Delivery: `LOCAL_VALIDATED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED`
-- Provenance: exact private head `d0f3b7d`, digest-only application release
-  `d0f3b7d`, immutable supply-chain hardening `ee45e56`, authoritative load
+- Provenance: exact private documentation head `f41bbb8`, digest-only application
+  release feature `d0f3b7d`, immutable supply-chain hardening `ee45e56`, authoritative load
   fixture `4f9d8d3`, ShellCheck acceptance
   `162cc29`, clean-checkout setup fix `fbf01b6`, liveness
   peer acceptance `7b44101`,
@@ -29,6 +29,11 @@ credential, PII, identifier tenant/perangkat, atau detail provider sensitif.
   deletion/recovery hardening `dbbb814`, candidate/cart authority `09a55bd`,
   durable notification worker `d964fea`, lifecycle/retention worker `4d602d9`,
   protected Vercel preview `dpl_E749gUQc7iVtGCauGvVLa1swk59j`.
+- Hosted CI evidence: exact feature-head run `32844518323` berhenti sebelum
+  assignment runner (`runner_name` kosong, steps kosong). Local/static gates
+  tetap lulus, tetapi hosted run tidak. Commit dokumentasi sesudahnya tidak
+  menggantikan feature-head evidence; protected-main enforcement juga belum
+  tersedia karena branch-protection API private repository plan-gated (403).
 
 ## Overview produk
 

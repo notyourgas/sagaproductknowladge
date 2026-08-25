@@ -1,5 +1,12 @@
 # Portfolio Changelog
 
+## 2026-08-25 - Snap and Fit hosted release gate evidence
+
+- Exact docs source `f41bbb8` mengikat digest-only feature `d0f3b7d` ke hosted
+  GitHub Actions run `32844518323`.
+- Run berhenti sebelum runner/step; branch protection private repo plan-gated.
+  Karena itu delivery tetap `LOCAL_VALIDATED`, bukan `STAGING_READY`.
+
 ## 2026-08-25 - COYABAG Admin Stock Opname integrity
 
 - Exact source `43a7d6be6bc2bdde92d7b2c4c554c9d00c3196cd` aktif pada immutable

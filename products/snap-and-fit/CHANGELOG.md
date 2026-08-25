@@ -10,6 +10,16 @@ production, activation, dan business readiness.
 Mock, fixture, preview frontend, dan test lokal bukan bukti provider atau
 production activation.
 
+## 2026-08-25 - Exact hosted blocker evidence
+
+- Exact private documentation head `f41bbb8` mencatat feature head
+  `d0f3b7d` sebagai authority perubahan digest-only release.
+- GitHub Actions run `32844518323` untuk feature head gagal sebelum assignment
+  runner: nama runner kosong dan tidak ada step yang berjalan. Ini blocker
+  hosted-runner/account, bukan evidence source regression.
+- Branch protection private repository tetap plan-gated (API 403). Local/static
+  gates lulus, tetapi hosted CI dan required-check enforcement belum lulus.
+
 ## 2026-08-25 - Digest-only application release
 
 - Exact private source `d0f3b7d` berstatus `LOCAL_VALIDATED`.

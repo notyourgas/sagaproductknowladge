@@ -12,12 +12,31 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T18:53:32+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T18:55:18+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `db7ef29` |
-| Informasi terakhir disinkronkan | COYABAG Admin Stock Opname integrity release `20260825-43a7d6b`. |
-| Status sinkronisasi | `PRODUCTION_DEPLOYED / ACTIVATION_BLOCKED / BUSINESS_READY=BLOCKED`. |
+| Baseline sebelum pembaruan | `c636ea9` |
+| Informasi terakhir disinkronkan | Snap and Fit exact hosted blocker evidence pada docs head `f41bbb8`. |
+| Status sinkronisasi | `LOCAL_VALIDATED / STAGING_READY=BLOCKED / ACTIVATION_BLOCKED`. |
+
+## Snap and Fit hosted blocker evidence
+
+- Exact documentation head: `f41bbb8`.
+- Digest-only feature head: `d0f3b7d`.
+- Hosted GitHub Actions run: `32844518323`; tidak memperoleh runner dan tidak
+  menjalankan step.
+- Branch protection private repo masih plan-gated; delivery tetap
+  `LOCAL_VALIDATED`.
+
+## File yang berubah pada sinkronisasi ini (Snap and Fit hosted blocker)
+
+- `products/snap-and-fit/PRODUCT.md`
+- `products/snap-and-fit/DOSSIER.md`
+- `products/snap-and-fit/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 | Konflik | Tidak ada konflik; commerce tetap fail-closed dan source project tidak dipush sesuai penundaan owner. |
 | Error | Tidak ada error knowledge; 12 blocker readiness COYABAG tetap terbuka. |
 

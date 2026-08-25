@@ -1,5 +1,13 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - Snap and Fit hosted blocker evidence sync
+
+- Produk/area: hosted CI, source provenance, dan protected-main enforcement.
+- Knowledge mengikat documentation head `f41bbb8`, feature head `d0f3b7d`, dan
+  GitHub Actions run `32844518323` yang berhenti sebelum runner/step.
+- Branch protection private repo masih plan-gated. Delivery tetap
+  `LOCAL_VALIDATED`; isolated staging dan activation tidak berubah.
+
 ## 2026-08-25 - COYABAG Admin Stock Opname integrity sync
 
 - Produk/area: Stock Opname, blind count, autosave, assignment, review,
