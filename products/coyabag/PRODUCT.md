@@ -61,9 +61,15 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260826-0dd7b21` dengan source
-  `0dd7b21b5cd088e4b9f81e5cf0ef21bd08430818` melayani production;
-  rollback langsung `20260826-aa6be85` dipertahankan.
+- Release aktif `20260826-56aabbc` dengan source
+  `56aabbcb49257d545ed81243e2079074dc5f7af4` melayani production;
+  rollback langsung `20260826-0dd7b21` dipertahankan.
+- Bag Finder merekonsiliasi rekomendasi dengan varian live dan jumlah Cart
+  exact. CTA menampilkan tambah, tambah lagi, batas maksimum, atau stale secara
+  fail-closed; pengurangan quantity langsung memulihkan aksi.
+- Navigasi radio Arrow/Home/End, fokus antar-langkah, progress semantik, dan
+  retry penyimpanan terverifikasi lulus pada desktop/mobile. CSS Bag Finder
+  sekarang lazy-loaded sehingga entry CSS turun menjadi 147,6 KiB.
 - Customer Returns memakai flow `Isi detail -> Tinjau dan kirim`. Review
   dibangun dari item dan quantity yang diizinkan server, menampilkan varian,
   alasan, penjelasan, serta tenggat, dan menjelaskan bahwa pengajuan belum

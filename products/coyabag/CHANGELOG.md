@@ -4,6 +4,20 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-26 - Bag Finder decision integrity production release
+
+- Klasifikasi: `CONFIRMED` dari exact source
+  `56aabbcb49257d545ed81243e2079074dc5f7af4`, immutable Hostinger release
+  `20260826-56aabbc`, rollback `20260826-0dd7b21`, dan runtime verification.
+- Rekomendasi memakai varian live serta quantity Cart exact. Initial, partial,
+  stock-limit, dan stale state bersifat eksplisit serta fail-closed.
+- Radio Arrow/Home/End, perpindahan fokus, progress semantik, dan retry storage
+  terverifikasi lulus pada desktop/mobile; entry CSS turun menjadi 147,6 KiB.
+- 160 storefront unit, 398 Laravel test dengan satu intentional skip, 10 Bag
+  Finder browser scenario, full RC, backup/rollback, dan public smoke lulus.
+- Delivery `PRODUCTION_DEPLOYED`; readiness tetap 30/42 dengan 12 blocker.
+  Activation dan business readiness `BLOCKED`; commerce tidak diaktifkan.
+
 ## 2026-08-26 - Customer return review integrity production release
 
 - Klasifikasi: `CONFIRMED` dari exact source

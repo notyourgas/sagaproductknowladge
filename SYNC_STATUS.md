@@ -12,12 +12,33 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-26T02:14:31+07:00 |
+| Waktu pembaruan terakhir | 2026-08-26T02:24:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | exact `origin/main` `590c0c7` sebelum sinkronisasi SagaView S290 |
-| Informasi terakhir disinkronkan | SagaView S290 Support Hub keyboard focus containment. |
-| Status sinkronisasi | `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production, activation, dan business readiness tidak berubah. |
+| Baseline sebelum pembaruan | exact `origin/main` `bba5e59` sebelum sinkronisasi COYABAG Bag Finder. |
+| Informasi terakhir disinkronkan | COYABAG Bag Finder decision integrity production release. |
+| Status sinkronisasi | `PUSHED / PRODUCTION_DEPLOYED`; activation dan business readiness tetap `BLOCKED`. |
+
+## COYABAG Bag Finder decision integrity
+
+- Exact source `56aabbcb49257d545ed81243e2079074dc5f7af4` aktif pada immutable
+  release `20260826-56aabbc`; rollback `20260826-0dd7b21`.
+- Rekomendasi mengikuti varian live dan quantity Cart exact. CTA initial,
+  partial, stock-limit, dan stale state bersifat fail-closed.
+- Radio Arrow/Home/End, fokus antar-langkah, progress semantik, retry storage,
+  desktop/mobile acceptance, full RC, backup/rollback, dan public smoke lulus.
+- Readiness tetap 30/42 dengan 12 blocker; commerce, activation, dan business
+  readiness tetap blocked.
+
+## File yang berubah pada sinkronisasi ini (COYABAG Bag Finder)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaView S290 Support Hub keyboard focus containment
 

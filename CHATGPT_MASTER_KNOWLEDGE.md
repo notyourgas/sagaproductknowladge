@@ -3486,7 +3486,15 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release aktif `20260826-0dd7b21` menjalankan exact source
+Release aktif `20260826-56aabbc` menjalankan exact source
+`56aabbcb49257d545ed81243e2079074dc5f7af4` dengan rollback
+`20260826-0dd7b21`. Bag Finder memakai varian live dan quantity Cart exact;
+initial, partial, stock-limit, dan stale state tampil jujur serta fail-closed.
+Keyboard/focus, persistence retry, desktop/mobile acceptance, full RC,
+backup/rollback, performance, dan public smoke lulus. Entry CSS 147,6 KiB;
+readiness tetap 30/42 dengan 12 blocker.
+
+Release sebelumnya `20260826-0dd7b21` menjalankan exact source
 `0dd7b21b5cd088e4b9f81e5cf0ef21bd08430818` dengan rollback
 `20260826-aa6be85`. Customer Returns memakai tahap isi lalu review yang dibangun
 dari item/quantity server-authoritative. Retry mempertahankan idempotency key;

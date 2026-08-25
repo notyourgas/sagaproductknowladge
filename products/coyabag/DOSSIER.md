@@ -78,7 +78,16 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260826-0dd7b21` memakai source
+Release production terbaru `20260826-56aabbc` memakai source
+`56aabbcb49257d545ed81243e2079074dc5f7af4` dan rollback
+`20260826-0dd7b21`. Bag Finder menyatukan rekomendasi dengan varian live dan
+jumlah Cart exact; CTA menutup stale/batas stok sebelum klik invalid dan pulih
+ketika quantity turun. Radiogroup Arrow/Home/End, fokus antar-langkah, progress
+semantik, persistence retry terverifikasi, desktop/mobile acceptance, full RC,
+backup/rollback, serta public smoke lulus. Entry CSS turun dari 156,9 KiB ke
+147,6 KiB. Readiness tetap 30/42 dengan 12 blocker.
+
+Release sebelumnya `20260826-0dd7b21` memakai source
 `0dd7b21b5cd088e4b9f81e5cf0ef21bd08430818` dan rollback
 `20260826-aa6be85`. Customer Returns memisahkan pengisian dan review, memakai
 item/quantity server-authoritative, mempertahankan idempotency pada retry, dan

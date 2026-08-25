@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-26 - COYABAG Bag Finder decision integrity
+
+- Exact source `56aabbcb49257d545ed81243e2079074dc5f7af4` aktif pada immutable
+  Hostinger release `20260826-56aabbc` dengan rollback `20260826-0dd7b21`.
+- Rekomendasi kini mengikuti varian live dan quantity Cart exact; batas stok
+  serta stale state gagal tertutup sebelum klik invalid.
+- Keyboard/focus, persistence recovery, desktop/mobile acceptance, full RC,
+  performance, backup/rollback, dan public smoke lulus.
+- Delivery `PRODUCTION_DEPLOYED`; activation/business readiness `BLOCKED`;
+  readiness 30/42 dan commerce tetap fail-closed.
+
 ## 2026-08-26 - Snap and Fit staging blocker revalidation
 
 - Exact private source/docs `b946581` memperbarui read-only capacity, Vercel,
