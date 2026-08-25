@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - COYABAG Product Detail verified reviews sync
+
+- Klasifikasi: `CONFIRMED`.
+- Produk/area: Storefront Product Detail, testimonial CMS, consent, exact
+  product destination, responsive UI, accessibility, dan immutable release.
+- Provenance public-safe: source
+  `838006c7cff1c391858e7eed97e5e78bae351a36`, release
+  `20260825-838006c`, rollback `20260825-7875667`, dan runtime verification.
+- Product Detail tidak lagi memakai kutipan/rating fallback; review berizin
+  scoped ke produk exact dengan empty dan outage state jujur.
+- Delivery `PRODUCTION_DEPLOYED`; activation dan business readiness `BLOCKED`.
+  Readiness tetap 30/42 dengan 12 blocker; commerce tetap fail-closed.
+- Dokumen terdampak: COYABAG product/dossier/changelog, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-25 - Snap and Fit exact-head protected preview sync
 
 - Klasifikasi: `CONFIRMED`.

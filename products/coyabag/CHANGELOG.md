@@ -4,6 +4,20 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-25 - Storefront Product Detail verified reviews production release
+
+- Klasifikasi: `CONFIRMED` dari exact source
+  `838006c7cff1c391858e7eed97e5e78bae351a36`, immutable Hostinger release
+  `20260825-838006c`, rollback `20260825-7875667`, dan runtime verification.
+- Product Detail hanya menampilkan testimonial berizin yang terhubung ke
+  produk exact, mempertahankan atribusi, sumber aman, rating opsional, serta
+  warna. Review lintas produk dan testimonial umum tidak ikut tampil.
+- Published-empty dan outage state eksplisit tanpa kutipan atau rating buatan.
+  TDD, full regression, desktop/mobile fixture serta public acceptance,
+  security/build, backup/rollback, dan public smoke lulus tanpa mutasi commerce.
+- Delivery `PRODUCTION_DEPLOYED`; readiness tetap 30/42 dengan 12 blocker.
+  Activation dan business readiness tetap `BLOCKED`; commerce tidak diaktifkan.
+
 ## 2026-08-25 - Storefront Product Card cart-aware production release
 
 - Klasifikasi: `CONFIRMED` dari exact source

@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-25 - COYABAG Product Detail verified reviews
+
+- Exact source `838006c7cff1c391858e7eed97e5e78bae351a36` aktif pada immutable
+  Hostinger release `20260825-838006c` dengan rollback `20260825-7875667`.
+- Product Detail kini memakai review CMS berizin untuk produk exact, menjaga
+  atribusi/sumber/rating/warna, memisahkan review lintas produk, dan memiliki
+  empty serta outage state jujur tanpa social proof buatan.
+- Full regression, fixture dan public browser acceptance desktop/mobile,
+  security/build, backup/rollback, dan public smoke lulus tanpa mutasi order.
+- Delivery `PRODUCTION_DEPLOYED`; activation dan business readiness `BLOCKED`;
+  readiness tetap 30/42 dan commerce tetap fail-closed.
+
 ## 2026-08-25 - SagaWork security-governance acceptance
 
 - `CONFIRMED`: exact Hostinger synthetic runtime `17427f564b87cd18d03de7764a319a14e3d99fd4` dan protected Preview `dpl_FoFe3hCFgnJuXvTBbVxdY2rRnjh1` tervalidasi tanpa real data/public activation.

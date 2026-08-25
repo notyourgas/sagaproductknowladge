@@ -61,9 +61,13 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260825-7875667` dengan source
-  `7875667fc29fb54e522c102e891548e82e351c25` melayani production;
-  rollback langsung `20260825-0f09404` dipertahankan.
+- Release aktif `20260825-838006c` dengan source
+  `838006c7cff1c391858e7eed97e5e78bae351a36` melayani production;
+  rollback langsung `20260825-7875667` dipertahankan.
+- Product Detail hanya menampilkan testimonial berizin yang ditautkan ke
+  produk exact. Atribusi, sumber HTTPS aman, rating opsional, dan warna yang
+  direview mengikuti CMS; review produk lain tidak bocor. Empty dan outage
+  state tidak membuat kutipan atau rating pengganti.
 - Product Card dan Quick View mengikuti jumlah varian exact di Cart. State
   parsial menampilkan jumlah di keranjang, sisa stok, dan `Tambah Lagi`; batas
   stok menonaktifkan pembelian sebagai `Sudah Maks.` dan pengurangan jumlah

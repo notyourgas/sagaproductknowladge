@@ -12,12 +12,33 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T21:37:30+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T22:04:46+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `0785f64280449a66cc1096f2ca8ea6dfac530120` |
-| Informasi terakhir disinkronkan | Snap and Fit exact-head protected preview pada source head `eec6269`. |
-| Status sinkronisasi | `LOCAL_VALIDATED / STAGING_READY=BLOCKED / ACTIVATION_BLOCKED`. |
+| Baseline sebelum pembaruan | `ae0672ecf85f995f772d55714a710222a306343b` |
+| Informasi terakhir disinkronkan | COYABAG Product Detail verified reviews pada source `838006c7cff1c391858e7eed97e5e78bae351a36`. |
+| Status sinkronisasi | `PRODUCTION_DEPLOYED / ACTIVATION_BLOCKED / BUSINESS_READINESS_BLOCKED`. |
+
+## COYABAG Product Detail verified reviews
+
+- Exact source: `838006c7cff1c391858e7eed97e5e78bae351a36`.
+- Immutable release: `20260825-838006c`; rollback: `20260825-7875667`.
+- Product Detail hanya menampilkan review CMS berizin yang terhubung ke produk
+  exact, dengan atribusi/sumber/rating/warna yang tetap terjaga.
+- Empty dan outage state tidak membuat social proof pengganti. Full regression,
+  desktop/mobile fixture dan public acceptance, backup/rollback, security/build,
+  serta public smoke lulus tanpa mutasi order atau data commerce.
+- Readiness tetap 30/42 dengan 12 blocker; commerce/provider tidak diaktifkan.
+
+## File yang berubah pada sinkronisasi ini (COYABAG Product Detail reviews)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## Snap and Fit exact-head protected preview
 

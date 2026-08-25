@@ -78,7 +78,18 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260825-7875667` memakai source
+Release production terbaru `20260825-838006c` memakai source
+`838006c7cff1c391858e7eed97e5e78bae351a36` dan rollback
+`20260825-7875667`. Product Detail hanya menampilkan review berizin yang
+ditautkan ke produk exact. Atribusi, sumber HTTPS aman, rating opsional, dan
+warna yang direview mengikuti CMS; review lintas produk dan testimonial brand
+umum tidak bocor ke Product Detail. Published-empty dan outage state tidak
+membuat kutipan atau rating pengganti. Full regression, desktop/mobile fixture
+dan public acceptance, backup/rollback, serta public smoke lulus tanpa membuat
+order atau mengubah data commerce. Readiness tetap 30/42 dan commerce tetap
+fail-closed.
+
+Release sebelumnya `20260825-7875667` memakai source
 `7875667fc29fb54e522c102e891548e82e351c25` dan rollback
 `20260825-0f09404`. Product Card serta Quick View menghitung jumlah Cart dari
 identitas varian exact. State parsial menampilkan jumlah di Cart, sisa stok,

@@ -3377,7 +3377,17 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release aktif `20260825-7875667` menjalankan exact source
+Release aktif `20260825-838006c` menjalankan exact source
+`838006c7cff1c391858e7eed97e5e78bae351a36` dengan rollback
+`20260825-7875667`. Product Detail hanya memakai testimonial CMS berizin yang
+ditautkan ke produk exact. Atribusi, sumber HTTPS aman, rating opsional, dan
+warna tetap terhubung; review produk lain serta testimonial umum tidak bocor.
+Published-empty dan outage state tidak membuat social proof pengganti. Full
+regression, desktop/mobile fixture dan public acceptance, backup/rollback, serta
+public smoke lulus tanpa mutasi commerce. Readiness tetap 30/42 dengan 12
+blocker; commerce tidak diaktifkan.
+
+Release sebelumnya `20260825-7875667` menjalankan exact source
 `7875667fc29fb54e522c102e891548e82e351c25` dengan rollback
 `20260825-0f09404`. Product Card dan Quick View memakai identitas varian exact
 serta jumlah Cart yang sama. State parsial menunjukkan jumlah, sisa stok, dan
