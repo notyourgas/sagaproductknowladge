@@ -78,10 +78,23 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260825-eeffc48` memakai source
-`eeffc48da8aa4633715480d8ff8007aed3f19a4c` dan rollback
-`20260825-0043c7b`. Dashboard Varian menyediakan antrean role-aware, harga dan
-berat efektif, media count, stok live, serta exact inventory ledger. Owner/Admin
+Release production terbaru `20260825-2000e78` memakai source
+`2000e784275d044b38d34d41fbb06ec4263fab8f` dan rollback
+`20260825-eeffc48`. Dashboard Media Produk menyediakan enam antrean role-aware,
+storage readiness, cover galeri, dan coverage foto varian aktif. Owner/Admin
+dapat mengunggah, memperbarui metadata/placement, mengurutkan, mengarsipkan,
+serta menghapus media aman; role view-only tidak memperoleh mutation entry
+point. Alt text gambar wajib pada boundary server. Revision guard, exact-set
+reorder, dan product-level row lock melindungi retry/concurrency. Media
+published pada produk aktif diarsipkan lebih dulu dan file tidak dapat dihapus
+selama snapshot storefront aktif masih mereferensikannya. Seluruh visual state,
+desktop/mobile acceptance, migration, backup/rollback, dan public smoke lulus;
+readiness tetap 30/42 dan commerce tetap fail-closed.
+
+Release sebelumnya `20260825-eeffc48` memakai source
+`eeffc48da8aa4633715480d8ff8007aed3f19a4c`. Dashboard Varian menyediakan
+antrean role-aware, harga dan berat efektif, media count, stok live, serta exact
+inventory ledger. Owner/Admin
 dapat membuat, memperbarui, dan mengubah status; role view-only tidak menerima
 mutation entry point. Normalisasi SKU/slug dan uniqueness case-insensitive,
 revision guard, serta product-level row lock menjaga retry dan tab stale.

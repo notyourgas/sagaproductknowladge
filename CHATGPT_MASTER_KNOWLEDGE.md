@@ -3298,15 +3298,25 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release aktif `20260825-eeffc48` menjalankan exact source
-`eeffc48da8aa4633715480d8ff8007aed3f19a4c` dengan rollback
-`20260825-0043c7b`. Dashboard Varian menyediakan antrean role-aware, harga dan
-berat efektif, jumlah media, stok live, exact ledger, mutation Owner/Admin, dan
+Release aktif `20260825-2000e78` menjalankan exact source
+`2000e784275d044b38d34d41fbb06ec4263fab8f` dengan rollback
+`20260825-eeffc48`. Dashboard Media Produk menyediakan enam antrean role-aware,
+storage readiness, galeri utama, coverage varian aktif, mutation Owner/Admin,
+dan state view-only tanpa mutation entry point. Alt text server-side, revision
+guard, exact-set reorder, product-level row lock, snapshot-safe retire/delete,
+serta storage confirmation menjaga metadata, urutan, dan file storefront aktif.
+Semua visual state, desktop/mobile, full tests, build, security, migration,
+backup/rollback, dan public smoke lulus. Readiness tetap 30/42 dengan 12
+blocker; commerce tidak diaktifkan.
+
+Release sebelumnya `20260825-eeffc48` menjalankan exact source
+`eeffc48da8aa4633715480d8ff8007aed3f19a4c`. Dashboard Varian menyediakan
+antrean role-aware, harga dan berat efektif, jumlah media, stok live, exact
+ledger, mutation Owner/Admin, dan
 view-only state tanpa mutation entry point. SKU/slug uniqueness, revision
 guard, product-level row lock, active-reservation guard, dan last-active guard
 melindungi integritas mutation. Semua visual state, desktop/mobile, full tests,
-build, security, migration, backup/rollback, dan public smoke lulus. Readiness
-tetap 30/42 dengan 12 blocker; commerce tidak diaktifkan.
+build, security, migration, backup/rollback, dan public smoke lulus.
 
 Release sebelumnya `20260825-0043c7b` menjalankan exact source
 `0043c7bfb85698b9894ce01214642ffe59825750`. Dashboard Produk menyediakan antrean Semua/Perlu tindakan/

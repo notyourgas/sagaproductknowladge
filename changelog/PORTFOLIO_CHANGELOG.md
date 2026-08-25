@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-25 - COYABAG Admin Media Produk integrity
+
+- Exact source `2000e784275d044b38d34d41fbb06ec4263fab8f` aktif sebagai
+  Hostinger release `20260825-2000e78`; rollback `20260825-eeffc48` tersedia.
+- Workspace Media Produk menyediakan enam antrean role-aware, storage
+  readiness, galeri dan coverage varian aktif, mutation Owner/Admin, serta
+  state view-only tanpa mutation entry point.
+- Alt text server-side, revision guard, exact-set reorder, row lock,
+  snapshot-safe retire/delete, dan storage confirmation menjaga media aktif.
+  Full tests/build/security, desktop/mobile acceptance, backup/rollback, serta
+  public smoke lulus. Status `PRODUCTION_DEPLOYED`; readiness tetap 30/42,
+  activation dan business readiness `BLOCKED`, dan commerce fail-closed.
+
 ## 2026-08-25 - Snap and Fit resumable multipart HiRes
 
 - Exact private feature `3fc397f`, staging-control baseline `d2b0c5c`, dan docs

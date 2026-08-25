@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - COYABAG Admin Media Produk integrity sync
+
+- Produk/area: Dashboard Media Produk, storage integrity, snapshot safety,
+  concurrency, permission, dan release integrity.
+- Informasi `CONFIRMED` berasal dari exact source
+  `2000e784275d044b38d34d41fbb06ec4263fab8f`, immutable Hostinger release
+  `20260825-2000e78`, rollback `20260825-eeffc48`, dan runtime verification.
+- Knowledge mencatat enam antrean role-aware, coverage galeri/varian, alt text
+  server-side, revision guard, exact-set reorder, row lock, snapshot-safe
+  retire/delete, storage confirmation, serta state lengkap desktop/mobile.
+- Delivery `PRODUCTION_DEPLOYED`; readiness tetap 30/42 dan activation/business
+  readiness `BLOCKED`. Dokumen terdampak: COYABAG product/dossier/changelog,
+  portfolio, master knowledge, root changelog, dan sync status.
+
 ## 2026-08-25 - Snap and Fit multipart HiRes sync
 
 - Produk/area: photographer fulfillment, private media upload, resume, QA, dan staging controls.

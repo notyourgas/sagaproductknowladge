@@ -8,6 +8,22 @@ Mencatat perubahan material COYABAG dengan provenance public-safe.
 
 Surface deployment tidak otomatis berarti commerce activation.
 
+## 2026-08-25 - Admin Media Produk integrity production release
+
+- Informasi `CONFIRMED` berasal dari exact source
+  `2000e784275d044b38d34d41fbb06ec4263fab8f`, immutable Hostinger release
+  `20260825-2000e78`, rollback `20260825-eeffc48`, dan runtime verification.
+- Workspace Media Produk menyediakan enam antrean role-aware, storage
+  readiness, galeri utama, coverage varian aktif, serta mutation Owner/Admin
+  dan state read-only tanpa mutation entry point.
+- Alt text server-side, revision guard, exact-set reorder, row lock per produk,
+  snapshot-safe retire/delete, dan storage confirmation melindungi metadata,
+  urutan, serta file storefront aktif.
+- Loading/error/retry/empty/filter/confirmation/processing/blocked/success,
+  desktop/mobile, full tests, build, security, migration, backup/rollback, dan
+  public smoke lulus. Delivery `PRODUCTION_DEPLOYED`; readiness tetap 30/42
+  dengan 12 blocker. Activation dan business readiness tetap `BLOCKED`.
+
 ## 2026-08-25 - Admin Varian integrity production release
 
 - Informasi `CONFIRMED` berasal dari exact source

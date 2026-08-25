@@ -12,14 +12,24 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T16:44:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T17:08:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `f38b8d2` |
-| Informasi terakhir disinkronkan | SagaWork per-Staff reporting active synthetic staging `9d49565`. |
-| Status sinkronisasi | `STAGING_DEPLOYED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`. |
-| Konflik | Tidak ada; synthetic reporting/export evidence dibedakan dari real payroll reconciliation dan production activation. |
-| Error | Tidak ada error sinkronisasi; XLSX/async private export dan external/human Gate A-C/E tetap pending. |
+| Baseline sebelum pembaruan | `b52f2e7` |
+| Informasi terakhir disinkronkan | COYABAG Admin Media Produk exact production release `20260825-2000e78`. |
+| Status sinkronisasi | `PRODUCTION_DEPLOYED / BLOCKED / BLOCKED`; commerce tetap fail-closed. |
+| Konflik | Tidak ada; surface production dibedakan dari commerce activation. |
+| Error | Tidak ada error sinkronisasi; 12 blocker readiness tetap terbuka. |
+
+## File yang berubah pada sinkronisasi ini (COYABAG Admin Media Produk integrity)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaWork per-Staff reporting)
 

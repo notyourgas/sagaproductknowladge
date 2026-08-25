@@ -61,9 +61,19 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260825-eeffc48` dengan source
-  `eeffc48da8aa4633715480d8ff8007aed3f19a4c` melayani production;
-  rollback langsung `20260825-0043c7b` dipertahankan.
+- Release aktif `20260825-2000e78` dengan source
+  `2000e784275d044b38d34d41fbb06ec4263fab8f` melayani production;
+  rollback langsung `20260825-eeffc48` dipertahankan.
+- Dashboard Media Produk menyediakan antrean Semua, Perlu tindakan, Galeri,
+  Varian, Video, dan Arsip. Workspace menampilkan storage readiness, cover
+  galeri, serta coverage foto untuk varian aktif pada desktop dan mobile.
+- Owner/Admin dapat mengunggah, mengedit placement/alt text, mengurutkan,
+  mengarsipkan, dan menghapus media yang aman. Role view-only tidak menerima
+  mutation entry point. Revision guard dan row lock menolak tab stale,
+  duplikasi, serta urutan parsial.
+- Media published pada produk aktif diarsipkan lebih dulu. File tetap
+  dilindungi selama snapshot storefront aktif mereferensikannya; penghapusan
+  fisik mempertahankan row database bila storage tidak mengonfirmasi hasil.
 - Dashboard Varian menyediakan antrean Semua, Perlu tindakan, Aktif, dan
   Nonaktif. Owner/Admin dapat membuat, memperbarui, serta mengubah status
   varian; role view-only tidak menerima mutation entry point.
