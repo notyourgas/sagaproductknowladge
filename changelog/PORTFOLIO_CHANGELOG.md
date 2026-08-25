@@ -1,5 +1,12 @@
 # Portfolio Changelog
 
+## 2026-08-25 - SagaWork private non-PII evidence bytes
+
+- Exact feature source `76ff2cb` aktif pada isolated Hostinger staging `7d5ada9`; Vercel Preview `dpl_AJNsByPfcxvbFEmtk8KvRB92YL6m` berstatus `READY`.
+- Private upload, quarantine, ClamAV/EICAR, metadata-stripped re-encode, owner status, scoped HR signed view, Staff denial, legal hold, real-byte purge, dan deletion certificate tervalidasi memakai gambar sintetis non-PII.
+- 23/76 unit test, 15-area smoke, security 7/7, 720 request/0 error, browser+Axe 12/4, manifest, backup, serta rollback dua arah lulus.
+- Delivery tetap `STAGING_DEPLOYED`; loopback same-VPS store bukan provider/offsite/HA. Real data, external provider/DPA, public route, device/legal/human UAT, named pilot, dan Andreas Go/No-Go tetap pending.
+
 ## 2026-08-25 - Snap and Fit privacy-safe installable PWA
 
 - Exact private feature source `141bbb5` dan documentation head `7507672`

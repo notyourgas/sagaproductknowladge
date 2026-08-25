@@ -1,5 +1,13 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - SagaWork private evidence byte pipeline sync
+
+- Produk/area: attendance-photo upload, storage, scanner, viewer, retention, dan release evidence.
+- Informasi `CONFIRMED` berasal dari feature source `76ff2cb`, active isolated staging `7d5ada9`, Vercel Preview `dpl_AJNsByPfcxvbFEmtk8KvRB92YL6m`, serta synthetic non-PII build/test/runtime evidence.
+- Knowledge mencatat quarantine→ClamAV→clean, metadata stripping, owner status polling, scoped HR signed view, Staff denial, legal hold, byte purge/certificate, dan batas same-VPS loopback.
+- Delivery `STAGING_DEPLOYED`; activation `NOT_PRODUCTION_ACTIVATED`; business readiness false. External provider/DPA, offsite, real data/device/legal/pilot/public route, dan final Go/No-Go tetap terbuka.
+- Dokumen terdampak: SagaWork product/dossier/changelog, portfolio, master knowledge, gaps, root changelog, dan sync status.
+
 ## 2026-08-25 - COYABAG Admin Detail Pesanan integrity sync
 
 - Produk/area: Dashboard Detail Pesanan Owner, Admin, dan Finance.
