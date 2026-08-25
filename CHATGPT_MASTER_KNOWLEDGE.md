@@ -3179,9 +3179,15 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release aktif `20260825-521d8a3` menjalankan exact source
-`521d8a3e752544abd14caabdbeae02831cead9e2` dengan rollback
-`20260825-9541b86`. Production tidak lagi menampilkan source fallback product
+Release aktif `20260825-d6fe071` menjalankan exact source
+`d6fe071d8ab27949b5fe5fd330dacb0f9a437821` dengan rollback
+`20260825-521d8a3`. Storefront memiliki skip navigation, satu main landmark,
+focus dan announcement untuk route SPA, Search modal dengan focus trap,
+background inert, Escape, focus restoration, serta feedback ID unik. Fixture
+dan public live-API sama-sama lulus 20 pemeriksaan accessibility pada 10 route
+desktop/mobile; matrix responsif production tetap lulus 79 kombinasi.
+
+Production tidak lagi menampilkan source fallback product
 sebelum Laravel catalog siap. Home dan Search membedakan loading, ready,
 refreshing, stale, empty, error, disabled, retry, dan recovery; stale catalog
 yang sudah terverifikasi dipertahankan saat background refresh gagal. State

@@ -8,6 +8,21 @@ Mencatat perubahan material COYABAG dengan provenance public-safe.
 
 Surface deployment tidak otomatis berarti commerce activation.
 
+## 2026-08-25 - Storefront accessibility integrity production release
+
+- Informasi `CONFIRMED` berasal dari exact source
+  `d6fe071d8ab27949b5fe5fd330dacb0f9a437821`, immutable Hostinger release
+  `20260825-d6fe071`, rollback `20260825-521d8a3`, dan runtime verification.
+- Storefront menambahkan skip navigation, satu main landmark, focus dan polite
+  announcement untuk route SPA, Search modal dengan focus trap/background
+  inert/Escape/focus restoration, serta feedback ID unik pada kartu produk.
+- Fixture dan public live-API sama-sama lulus 20 pemeriksaan accessibility pada
+  10 route desktop/mobile. Full storefront/Laravel, 79 kombinasi responsif,
+  security, dependency, backup, workers, scheduler, asset, dan smoke gate lulus.
+- Delivery `PRODUCTION_DEPLOYED`; readiness tetap 30/42 dengan 12 blocker.
+  Activation dan business readiness tetap `BLOCKED`; checkout/provider tidak
+  diaktifkan.
+
 ## 2026-08-25 - Storefront state integrity production release
 
 - Informasi `CONFIRMED` berasal dari exact source

@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-25 - CoyaBag storefront accessibility integrity
+
+- Exact source `d6fe071d8ab27949b5fe5fd330dacb0f9a437821` aktif sebagai
+  Hostinger release `20260825-d6fe071`; rollback `20260825-521d8a3` tersedia.
+- Storefront kini memiliki skip navigation, satu main landmark, focus dan
+  announcement untuk route SPA, Search focus trap dengan background inert serta
+  focus restoration, dan ID feedback kartu produk yang unik.
+- Fixture dan public live-API lulus 20 pemeriksaan accessibility pada 10 route
+  desktop/mobile; 79 kombinasi responsif, full test/build/security, backup,
+  workers, scheduler, assets, dan public smoke tetap hijau.
+- Status `PRODUCTION_DEPLOYED`; readiness tetap 30/42, activation dan business
+  readiness `BLOCKED`, dan commerce tidak diaktifkan.
+
 ## 2026-08-25 - CoyaBag storefront state integrity
 
 - Exact source `521d8a3e752544abd14caabdbeae02831cead9e2` aktif sebagai

@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - CoyaBag storefront accessibility production sync
+
+- Produk/area: COYABAG keyboard navigation, SPA focus, Search modal, landmark,
+  dan production release.
+- Informasi `CONFIRMED` berasal dari exact source
+  `d6fe071d8ab27949b5fe5fd330dacb0f9a437821`, immutable release
+  `20260825-d6fe071`, rollback `20260825-521d8a3`, dan runtime verification.
+- Knowledge mencatat skip navigation, satu main landmark, route focus/live
+  announcement, Search focus containment/restoration, background inert, unique
+  product feedback IDs, 20 accessibility checks, dan 79 responsive combinations.
+- Delivery `PRODUCTION_DEPLOYED`; readiness tetap 30/42 dengan 12 blocker.
+  Activation dan business readiness tetap `BLOCKED`; commerce tidak diaktifkan.
+- Dokumen terdampak: CoyaBag product/dossier/changelog, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-25 - CoyaBag storefront state integrity production sync
 
 - Produk/area: COYABAG storefront loading, failure, recovery, dan production

@@ -78,9 +78,17 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260825-521d8a3` memakai source
-`521d8a3e752544abd14caabdbeae02831cead9e2` dan rollback
-`20260825-9541b86`. Production tidak lagi menampilkan source fallback product
+Release production terbaru `20260825-d6fe071` memakai source
+`d6fe071d8ab27949b5fe5fd330dacb0f9a437821` dan rollback
+`20260825-521d8a3`. Storefront kini memiliki skip navigation, satu main
+landmark, focus dan announcement untuk perpindahan route SPA, serta Search
+modal yang mengunci fokus, membuat background inert, menutup lewat Escape, dan
+mengembalikan fokus secara deterministik. Feedback ID kartu produk tetap unik
+meskipun produk yang sama muncul di beberapa bagian. Fixture dan public
+live-API accessibility sama-sama lulus 20 pemeriksaan pada 10 route
+desktop/mobile, sedangkan matrix responsif production lulus 79 kombinasi.
+
+Production tidak lagi menampilkan source fallback product
 sebelum katalog Laravel siap. Home dan Search memakai satu kontrak untuk
 loading, ready, refreshing, stale, empty, error, disabled, retry, dan recovery;
 failed background refresh mempertahankan katalog terakhir yang terverifikasi.

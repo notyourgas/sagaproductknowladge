@@ -61,9 +61,14 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260825-521d8a3` dengan source
-  `521d8a3e752544abd14caabdbeae02831cead9e2` melayani production;
-  rollback langsung `20260825-9541b86` dipertahankan.
+- Release aktif `20260825-d6fe071` dengan source
+  `d6fe071d8ab27949b5fe5fd330dacb0f9a437821` melayani production;
+  rollback langsung `20260825-521d8a3` dipertahankan.
+- Storefront kini memiliki skip navigation, satu main landmark, focus dan
+  announcement untuk route SPA, Search modal dengan focus trap/background
+  inert/Escape/focus restoration, serta feedback ID unik untuk kartu produk.
+  Fixture dan public live-API sama-sama lulus 20 pemeriksaan accessibility pada
+  10 route desktop/mobile; 79 kombinasi responsif production tetap lulus.
 - Storefront production tidak lagi menampilkan source fallback product ketika
   Laravel API sedang loading atau gagal. Home dan Search membedakan loading,
   ready, refreshing, stale, empty, error, disabled, retry, dan recovery;
