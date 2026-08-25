@@ -4,6 +4,23 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-26 - Testimonials provenance and live destination integrity production release
+
+- Klasifikasi: `CONFIRMED` dari exact source
+  `347beecbb18383796c8a1e55b16feee2b6c6578a`, immutable Hostinger release
+  `20260826-347beec`, rollback `20260826-1e88e9e`, dan runtime verification.
+- Creator/marketplace memerlukan sumber HTTPS aman tanpa credential; review
+  pelanggan langsung boleh tanpa URL publik. Semua review tetap memerlukan
+  izin, atribusi, kutipan, dan kanal sumber.
+- Tujuan produk opsional, tetapi produk dan warna yang dipilih harus aktif dan
+  exact. Target stale kehilangan CTA; admin memakai live picker dan publish/
+  schedule guard sambil tetap mengizinkan draft belum lengkap.
+- 166 storefront test, 406 Laravel test dengan 405 pass dan satu intentional
+  skip, full RC, dependency audit, backup/rollback, desktop/mobile acceptance,
+  dan public smoke lulus. Production tetap empty tanpa review dummy.
+- Delivery `PRODUCTION_DEPLOYED`; readiness tetap 30/42 dengan 12 blocker.
+  Activation dan business readiness `BLOCKED`; commerce tidak diaktifkan.
+
 ## 2026-08-26 - Lookbook variant, Cart, destination, and swipe integrity production release
 
 - Klasifikasi: `CONFIRMED` dari exact source

@@ -12,12 +12,34 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-26T04:30:59+07:00 |
+| Waktu pembaruan terakhir | 2026-08-26T05:00:20+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | exact `origin/main` `fd3ef16` sebelum sinkronisasi COYABAG Lookbook |
-| Informasi terakhir disinkronkan | COYABAG Lookbook variant, Cart, destination, and swipe integrity. |
+| Baseline sebelum pembaruan | exact `origin/main` `5b183fe` sebelum sinkronisasi COYABAG Testimonials |
+| Informasi terakhir disinkronkan | COYABAG Testimonials provenance and live destination integrity. |
 | Status sinkronisasi | `PRODUCTION_DEPLOYED`; activation dan business readiness `BLOCKED`; commerce tetap fail-closed. |
+
+## COYABAG Testimonials provenance and live destination integrity
+
+- Exact source `347beecbb18383796c8a1e55b16feee2b6c6578a` aktif pada immutable
+  release `20260826-347beec`; rollback `20260826-1e88e9e`.
+- Creator/marketplace memerlukan sumber HTTPS aman; pelanggan langsung boleh
+  tanpa URL publik. Tujuan produk opsional wajib memakai produk/warna aktif
+  exact dan target stale tidak membuka CTA.
+- Admin live picker dan publish/schedule guard, full RC, backup/rollback, serta
+  public desktop/mobile smoke lulus. Production tetap empty tanpa review dummy.
+- Readiness tetap 30/42 dengan 12 blocker; commerce, activation, dan business
+  readiness tetap blocked.
+
+## File yang berubah pada sinkronisasi ini (COYABAG Testimonials)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG Lookbook variant, Cart, destination, and swipe integrity
 

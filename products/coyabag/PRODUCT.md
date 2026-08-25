@@ -61,9 +61,21 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260826-1e88e9e` dengan source
-  `1e88e9efcac19dcac00ff3302c5c3a3e5dde7323` melayani production;
-  rollback langsung `20260826-0bffe6e` dipertahankan.
+- Release aktif `20260826-347beec` dengan source
+  `347beecbb18383796c8a1e55b16feee2b6c6578a` melayani production;
+  rollback langsung `20260826-1e88e9e` dipertahankan.
+- Testimonials hanya menayangkan review berizin. Review creator/marketplace
+  wajib memiliki sumber HTTPS aman dan dapat ditelusuri; review pelanggan
+  langsung boleh tanpa URL publik.
+- Tujuan produk testimonial bersifat opsional. Jika dipilih, produk dan warna
+  harus aktif serta exact; target stale tidak membuka CTA. Admin memakai live
+  product/variant picker dan publish/schedule guard, sedangkan draft belum
+  lengkap tetap dapat disimpan.
+- Production belum memiliki review berizin yang dipublikasikan, sehingga empty
+  state tetap jujur dan homepage tidak membuat social proof pengganti.
+- 166 storefront test, 406 Laravel test dengan 405 pass dan satu intentional
+  skip, full RC, dependency audit, desktop/mobile acceptance, immutable deploy,
+  serta public smoke lulus. Readiness tetap 30/42 dengan 12 blocker.
 - Lookbook fallback menampilkan setiap varian aktif sebagai scene exact,
   termasuk YONA Black, YONA Cream, dan KIARA Black. Swipe, arrow, keyboard,
   reload, dan share URL mempertahankan scene produk/warna yang sama.

@@ -3496,7 +3496,19 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release aktif `20260826-1e88e9e` menjalankan exact source
+Release aktif `20260826-347beec` menjalankan exact source
+`347beecbb18383796c8a1e55b16feee2b6c6578a` dengan rollback
+`20260826-1e88e9e`. Testimonials hanya menayangkan review berizin. Review
+creator/marketplace memerlukan sumber HTTPS aman tanpa credential; review
+pelanggan langsung boleh tanpa URL publik. Tujuan produk opsional, tetapi jika
+dipilih harus produk dan warna aktif yang exact; target stale kehilangan CTA.
+Admin memakai live product/variant picker dan publish/schedule guard. Production
+tetap memakai empty state jujur karena belum ada review berizin yang published.
+Desktop/mobile acceptance, 166 storefront test, 406 Laravel test dengan 405
+pass dan satu intentional skip, full RC, dependency audit, backup/rollback,
+serta public smoke lulus. Readiness tetap 30/42 dengan 12 blocker.
+
+Release sebelumnya `20260826-1e88e9e` menjalankan exact source
 `1e88e9efcac19dcac00ff3302c5c3a3e5dde7323` dengan rollback
 `20260826-0bffe6e`. Lookbook menampilkan setiap varian aktif sebagai scene exact
 dengan media, stock, price, Cart, URL, dan tujuan produk/warna konsisten.

@@ -1,5 +1,25 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-26 - COYABAG Testimonials provenance sync
+
+- Ringkasan: sinkronisasi sumber review sesuai tipe, consent, destination
+  produk/warna exact, stale target fail-closed, serta admin live picker dan
+  publish/schedule guard.
+- Alasan: pelanggan tidak boleh melihat social proof yang tidak dapat
+  dipertanggungjawabkan atau diarahkan ke varian lain; operator membutuhkan
+  pilihan katalog hidup tanpa kehilangan fleksibilitas draft.
+- Produk/area: COYABAG Testimonials, product/variant, CMS admin, UI/UX,
+  accessibility, security, QA, dan release provenance.
+- Klasifikasi: `CONFIRMED`; source exact
+  `347beecbb18383796c8a1e55b16feee2b6c6578a`, release `20260826-347beec`.
+- Production berubah: ya, surface storefront dan admin. Delivery
+  `PRODUCTION_DEPLOYED`; activation/business readiness `BLOCKED`; commerce
+  tetap fail-closed dan production tidak menerima review dummy.
+- Dokumen terdampak: Product, Dossier, changelog COYABAG, portfolio, master
+  knowledge, root changelog, dan sync status.
+- Next action: Cycle 2 About Us Integrity; 12 blocker activation tetap ditutup
+  melalui gate owner/provider/operasional terpisah.
+
 ## 2026-08-26 - COYABAG Lookbook integrity sync
 
 - Ringkasan: sinkronisasi scene per varian aktif, exact product/color/Cart

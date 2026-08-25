@@ -78,7 +78,20 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260826-1e88e9e` memakai source
+Release production terbaru `20260826-347beec` memakai source
+`347beecbb18383796c8a1e55b16feee2b6c6578a` dan rollback
+`20260826-1e88e9e`. Testimonials mewajibkan sumber HTTPS aman tanpa credential
+untuk review creator/marketplace, sedangkan review pelanggan langsung boleh
+tanpa URL publik. Tujuan produk opsional; jika dipilih, produk dan warna harus
+aktif serta exact. Target stale mempertahankan konteks review tanpa CTA. Admin
+memakai live product/variant picker; draft belum lengkap tetap dapat disimpan,
+sedangkan publish/schedule fail-closed. Production tetap memakai empty state
+jujur karena belum ada review berizin yang dipublikasikan. Desktop/mobile,
+166 storefront test, 406 Laravel test dengan 405 pass dan satu intentional skip,
+full RC, dependency audit, backup/rollback, serta public smoke lulus. Readiness
+tetap 30/42 dengan 12 blocker.
+
+Release sebelumnya `20260826-1e88e9e` memakai source
 `1e88e9efcac19dcac00ff3302c5c3a3e5dde7323` dan rollback
 `20260826-0bffe6e`. Lookbook fallback mencakup setiap varian aktif dengan media,
 stock, price, Cart, URL scene, dan tujuan produk/warna exact. Pointer/touch
