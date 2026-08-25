@@ -8,6 +8,21 @@ Mencatat perubahan material COYABAG dengan provenance public-safe.
 
 Surface deployment tidak otomatis berarti commerce activation.
 
+## 2026-08-25 - Admin Inventory integrity production release
+
+- Informasi `CONFIRMED` berasal dari exact source
+  `2880881e654f06414e8155300f16cd0f2517b17f`, immutable Hostinger release
+  `20260825-2880881`, rollback `20260825-2000e78`, dan runtime verification.
+- Workspace Inventory menyediakan saldo reservation-aware, enam antrean,
+  active alert, literal search, pagination, immutable ledger, serta state
+  desktop/mobile yang setara.
+- Revision guard, row lock, exact idempotency binding, stale approval guard,
+  projected-balance validation, dan compensating reversal menjaga integritas
+  mutation serta histori.
+- Full tests/build/security, migration, backup/rollback, dan public smoke lulus.
+  Delivery `PRODUCTION_DEPLOYED`; readiness tetap 30/42 dengan 12 blocker.
+  Activation dan business readiness tetap `BLOCKED`.
+
 ## 2026-08-25 - Admin Media Produk integrity production release
 
 - Informasi `CONFIRMED` berasal dari exact source

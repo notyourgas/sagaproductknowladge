@@ -61,9 +61,19 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260825-2000e78` dengan source
-  `2000e784275d044b38d34d41fbb06ec4263fab8f` melayani production;
-  rollback langsung `20260825-eeffc48` dipertahankan.
+- Release aktif `20260825-2880881` dengan source
+  `2880881e654f06414e8155300f16cd0f2517b17f` melayani production;
+  rollback langsung `20260825-2000e78` dipertahankan.
+- Dashboard Inventory menyediakan saldo reservation-aware, enam antrean stok,
+  alert aktif, pencarian literal, pagination, dan ledger immutable pada desktop
+  serta mobile.
+- Adjustment memerlukan revisi saldo yang dilihat operator, exact idempotency
+  binding, dan stale guard yang tetap berlaku melalui approval perubahan besar.
+  Reversal membuat movement lawan tanpa menghapus histori. Owner/Admin memiliki
+  mutation entry point; role tanpa `inventory.manage` tetap ditolak.
+- Loading, composition error/retry, honest empty, filtered empty/reset,
+  projection before-after, blocked, success, tabel desktop, dan kartu mobile
+  lulus acceptance.
 - Dashboard Media Produk menyediakan antrean Semua, Perlu tindakan, Galeri,
   Varian, Video, dan Arsip. Workspace menampilkan storage readiness, cover
   galeri, serta coverage foto untuk varian aktif pada desktop dan mobile.

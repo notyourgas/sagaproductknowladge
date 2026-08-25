@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - COYABAG Admin Inventory integrity sync
+
+- Produk/area: Dashboard Inventory, stock adjustment, approval, ledger,
+  permission, concurrency, dan release integrity.
+- Informasi `CONFIRMED` berasal dari exact source
+  `2880881e654f06414e8155300f16cd0f2517b17f`, immutable Hostinger release
+  `20260825-2880881`, rollback `20260825-2000e78`, dan runtime verification.
+- Knowledge mencatat saldo reservation-aware, enam antrean, alert aktif,
+  literal search, pagination, revision/idempotency/stale-approval guards, dan
+  compensating reversal tanpa menghapus histori.
+- Delivery `PRODUCTION_DEPLOYED`; activation dan business readiness `BLOCKED`.
+  Production berubah pada Inventory, tetapi commerce tetap fail-closed.
+- Dokumen terdampak: COYABAG product/dossier/changelog, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-25 - Snap and Fit Bash dan Compose gate sync
 
 - Produk/area: release tooling, staging topology, dan external delivery gate.

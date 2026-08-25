@@ -78,9 +78,20 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260825-2000e78` memakai source
-`2000e784275d044b38d34d41fbb06ec4263fab8f` dan rollback
-`20260825-eeffc48`. Dashboard Media Produk menyediakan enam antrean role-aware,
+Release production terbaru `20260825-2880881` memakai source
+`2880881e654f06414e8155300f16cd0f2517b17f` dan rollback
+`20260825-2000e78`. Dashboard Inventory menyediakan saldo on-hand, reserved,
+quarantined, dan available; enam antrean stok; alert aktif; pencarian literal;
+pagination; serta ledger immutable. Adjustment memerlukan observed revision,
+row lock, dan exact idempotency binding. Approval perubahan besar membawa
+revision yang sama dan gagal aman bila saldo berubah. Reversal mempertahankan
+movement asli serta membuat movement lawan yang divalidasi terhadap saldo
+terbaru. Loading/error/empty/success, tabel desktop, kartu mobile, full tests,
+backup/rollback, dan public smoke lulus; readiness tetap 30/42 dan commerce
+tetap fail-closed.
+
+Release sebelumnya `20260825-2000e78` memakai source
+`2000e784275d044b38d34d41fbb06ec4263fab8f`. Dashboard Media Produk menyediakan enam antrean role-aware,
 storage readiness, cover galeri, dan coverage foto varian aktif. Owner/Admin
 dapat mengunggah, memperbarui metadata/placement, mengurutkan, mengarsipkan,
 serta menghapus media aman; role view-only tidak memperoleh mutation entry

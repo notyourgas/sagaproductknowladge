@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-25 - COYABAG Admin Inventory integrity
+
+- Exact source `2880881e654f06414e8155300f16cd0f2517b17f` aktif sebagai
+  Hostinger release `20260825-2880881`; rollback `20260825-2000e78` tersedia.
+- Workspace Inventory memberi Owner/Admin saldo reservation-aware, enam action
+  queue, active alert, literal search, pagination, adjustment projection,
+  immutable ledger, serta controlled reversal pada desktop/mobile.
+- Revision/idempotency/approval guards, full tests/build/security,
+  backup/rollback, dan public smoke lulus. Status `PRODUCTION_DEPLOYED`;
+  readiness tetap 30/42, activation dan business readiness `BLOCKED`.
+
 ## 2026-08-25 - Snap and Fit local Bash dan Compose gates
 
 - Exact private docs head `f03e8bd` menutup local shell-syntax dan Compose static

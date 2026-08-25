@@ -3305,9 +3305,18 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release aktif `20260825-2000e78` menjalankan exact source
-`2000e784275d044b38d34d41fbb06ec4263fab8f` dengan rollback
-`20260825-eeffc48`. Dashboard Media Produk menyediakan enam antrean role-aware,
+Release aktif `20260825-2880881` menjalankan exact source
+`2880881e654f06414e8155300f16cd0f2517b17f` dengan rollback
+`20260825-2000e78`. Dashboard Inventory menyediakan saldo reservation-aware,
+enam antrean stok, alert aktif, literal search, pagination, dan immutable
+ledger. Adjustment memakai revision guard, row lock, exact idempotency binding,
+stale approval guard, serta before-after validation. Reversal mempertahankan
+movement asli dan menambah compensating movement. Full tests/build/security,
+desktop/mobile acceptance, migration, backup/rollback, dan public smoke lulus.
+Readiness tetap 30/42 dengan 12 blocker; commerce tidak diaktifkan.
+
+Release sebelumnya `20260825-2000e78` menjalankan exact source
+`2000e784275d044b38d34d41fbb06ec4263fab8f`. Dashboard Media Produk menyediakan enam antrean role-aware,
 storage readiness, galeri utama, coverage varian aktif, mutation Owner/Admin,
 dan state view-only tanpa mutation entry point. Alt text server-side, revision
 guard, exact-set reorder, product-level row lock, snapshot-safe retire/delete,

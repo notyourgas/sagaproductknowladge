@@ -12,14 +12,24 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T17:51:17+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T17:52:59+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `d52b12b` |
-| Informasi terakhir disinkronkan | Snap and Fit local Bash/Compose static gates pada exact docs head `f03e8bd`. |
-| Status sinkronisasi | `LOCAL_VALIDATED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`. |
-| Konflik | Tidak ada; static Compose validation dibedakan dari image/container runtime evidence. |
-| Error | Tidak ada error sinkronisasi; hosted CI, isolated runtime/provider, legal, device, dan pilot gates tetap pending. |
+| Baseline sebelum pembaruan | `5398fcf` |
+| Informasi terakhir disinkronkan | COYABAG Admin Inventory integrity pada exact source `2880881e654f06414e8155300f16cd0f2517b17f` dan Hostinger release `20260825-2880881`. |
+| Status sinkronisasi | `PRODUCTION_DEPLOYED / activation BLOCKED / business readiness BLOCKED`. |
+| Konflik | Tidak ada; surface Inventory live dibedakan dari commerce production activation. |
+| Error | Tidak ada error sinkronisasi; 12 blocker readiness tetap terbuka. |
+
+## File yang berubah pada sinkronisasi ini (COYABAG Admin Inventory integrity)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## File yang berubah pada sinkronisasi ini (Snap and Fit Bash dan Compose gates)
 
