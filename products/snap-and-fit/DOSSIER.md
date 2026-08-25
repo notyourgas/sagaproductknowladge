@@ -12,8 +12,9 @@ credential, PII, identifier tenant/perangkat, atau detail provider sensitif.
 - Delivery: `LOCAL_VALIDATED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED`
-- Provenance: exact private source head `e6e27d0`, full-validation recovery gate
-  `e6e27d0`, staging restore hardening `076f76b`, MySQL 8.4 clean-room
+- Provenance: exact private source head `eec6269`, protected-preview evidence
+  refresh `eec6269`, full-validation recovery gate `e6e27d0`, staging restore
+  hardening `076f76b`, MySQL 8.4 clean-room
   compatibility fix `4384948`, digest-only application
   release feature `d0f3b7d`, immutable supply-chain hardening `ee45e56`, authoritative load
   fixture `4f9d8d3`, ShellCheck acceptance
@@ -30,9 +31,9 @@ credential, PII, identifier tenant/perangkat, atau detail provider sensitif.
   operations feature `b09f279`,
   deletion/recovery hardening `dbbb814`, candidate/cart authority `09a55bd`,
   durable notification worker `d964fea`, lifecycle/retention worker `4d602d9`,
-  protected Vercel preview `dpl_CeGgE8rxJX58qQpTGzdqUoPc6iQn` dari implementation
-  source `4384948`.
-- Hosted CI evidence: exact current-head run `32859786213` berhenti sebelum
+  protected Vercel preview `dpl_3PW4rbAek9FijQy9vU3Dfb1UMTUw` dari exact
+  source `e6e27d0`.
+- Hosted CI evidence: exact current-head run `32860613475` berhenti sebelum
   assignment runner dengan steps kosong dan anotasi account payment/spending
   limit. Run sebelumnya pada protected-preview docs, MySQL implementation, dan
   digest-only feature head menunjukkan pola yang sama. Local/static gates tetap
@@ -239,6 +240,9 @@ fotografer desktop-optimized.
 - Cross-platform Node launcher kini menjalankan behavioral recovery preflight di
   dalam setiap `pnpm validate`; standard Git Bash/PATH dideteksi tanpa shell
   interpolation. Full local validation membuktikan launcher dan preflight aktif.
+- Protected remote Linux preview dari clean exact source `e6e27d0` berstatus
+  `READY`. Authenticated smoke membuktikan tujuh web/PWA route 200, header
+  CSP/HSTS/no-sniff/frame-deny/noindex, dan BFF health 503 fail-closed tanpa VPS.
 
 ## Risiko dan gate terbuka
 

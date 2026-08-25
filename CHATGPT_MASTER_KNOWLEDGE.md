@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 25 Agustus 2026 21:29 WIB
+Evidence cut-off: 25 Agustus 2026 21:37 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -19,8 +19,9 @@ activation, authenticated UAT, atau business-ready claim.
 
 SagaWork exact implementation/runtime `17427f564b87cd18d03de7764a319a14e3d99fd4` berstatus `CONFIRMED / STAGING_DEPLOYED / NOT_PRODUCTION_ACTIVATED / PILOT_READY_CANDIDATE / BUSINESS_READY=false`; documentation acceptance head `22174f1`. Isolated Hostinger staging memakai synthetic data, MySQL 8.4 dengan 22 migration, dan same-VPS loopback object store acceptance non-PII; protected Vercel Preview `dpl_FoFe3hCFgnJuXvTBbVxdY2rRnjh1` `READY`, 41-page build, authenticated health/strict nonce CSP/security-header/safe-worker PASS tanpa MySQL/custom domain. Scope tervalidasi mencakup Staff no-OTP dan privileged TOTP; password/session controls; people/CSV/lifecycle; scheduling/notes/swap; attendance foto+GPS/private non-PII byte pipeline; break; default-off unscheduled; assisted attendance; PWA; per-staff/CSV reporting; correction/request, overtime partial approval, Reliability 50/30/20, period lock/reopen, retention, dan recovery. Acceptance meluluskan 32/106 unit test, 19-area smoke, security abuse 9/9, browser/Axe 12/4, isolated load 720/720 dengan p95 `157,1/388,6/286,5 ms`, schema-2 manifest 928 file, encrypted restore 56 tables/22 migration/26 trigger/22 tombstone/zero resurrection, dan rollback `17427f5 → 80cf623 → 17427f5`. Restricted exact-runtime archive 1.406.575 byte serta 699-component CycloneDX SBOM mempunyai checksum/provenance PASS dan tidak dipublikasikan. Pilot admission control `3bcdf06`/`a36ac8e` tetap memakai Andreas-only Ed25519 signing dan exact-set 16 evidence; real receipt belum ada. Validated OpenAPI 3.1.1 mencakup 59 path/72 operasi/40 request components. Internal ASVS 5.0 profile: 155 pass internal, 79 not applicable, 0 pending internal, 18 pending external, dan 1 risk acceptance; strict CSP, crypto lifecycle/re-encryption, remediation SLA/SBOM, serta logging inventory menutup seluruh gap internal, tetapi ini bukan sertifikasi/full-Level-2 claim. Private source remote/hosted CI, 19 external/risk-acceptance disposition, independent security verification, external provider/DPA/offsite key custody, public route, legal/privacy, capacity monitoring, human/device/pilot evidence, named champion/company, real signed admission receipt, canary, dan activation masih blocker. Loopback store tidak menerima real employee/photo data; payroll compliance tidak diklaim.
 
-Snap and Fit exact private source head `e6e27d0` berstatus `CONFIRMED /
-LOCAL_VALIDATED`; full-validation recovery gate berasal dari `e6e27d0`, staging
+Snap and Fit exact private source head `eec6269` berstatus `CONFIRMED /
+LOCAL_VALIDATED`; protected-preview evidence refresh berasal dari `eec6269`,
+full-validation recovery gate berasal dari `e6e27d0`, staging
 restore hardening berasal dari `076f76b`, MySQL 8.4
 clean-room compatibility fix berasal dari `4384948`,
 sedangkan digest-only application release feature berasal dari `d0f3b7d`,
@@ -46,7 +47,7 @@ privileged operations feature berasal dari `b09f279`,
 deletion/recovery hardening dari `dbbb814`, candidate/cart authority dari
 `09a55bd`, durable notification worker dari `d964fea`, lifecycle/retention
 worker dari `4d602d9`, dan protected Vercel
-preview `dpl_CeGgE8rxJX58qQpTGzdqUoPc6iQn` dari implementation source `4384948`
+preview `dpl_3PW4rbAek9FijQy9vU3Dfb1UMTUw` dari exact source `e6e27d0`
 berstatus `READY`.
 Lima shell script lulus Git Bash `bash -n`; staging Compose lulus static
 interpolation dengan official checksum-verified Docker Compose v5.5.0 dan
@@ -67,7 +68,7 @@ reference verifier. Actionlint, enam-file ShellCheck, Compose immutable set,
 release preflight, full validation, serta production dependency audit nol lulus;
 workflow BuildKit SBOM/provenance/digest tersedia, tetapi hosted image build,
 emission verification, scan, pull, dan runtime tetap staging gate.
-Exact current-head GitHub Actions run `32859786213` berhenti sebelum runner
+Exact current-head GitHub Actions run `32860613475` berhenti sebelum runner
 ditetapkan dan tanpa satu pun step karena account payment/spending-limit gate;
 run sebelumnya pada protected-preview docs, MySQL implementation, dan digest-only
 feature head menunjukkan pola yang sama. Ini
@@ -80,8 +81,9 @@ serta 24 active worker test; skip tersisa hanya Redis/BullMQ. Dump sintetis
 pulih ke database kedua dengan 51 tabel, recovery schema lengkap, nol orphan
 deletion task, dan ledger seimbang. Ini menutup kompatibilitas MySQL lokal,
 bukan Redis/Linux container/isolated staging/off-host recovery.
-Vercel remote Linux build untuk `4384948` lulus dan protected smoke membuktikan
-web shell/PWA 200, security headers, serta BFF health fail-closed 503. Vercel CLI
+Vercel remote Linux build untuk `e6e27d0` lulus dan authenticated protected
+smoke membuktikan tujuh web/PWA route 200, security headers, serta BFF health
+fail-closed 503. Vercel CLI
 58.4.4 local Windows prebuilt packaging belum menjadi release path karena gagal
 memetakan static `/account/orders` setelah Next build sukses.
 Restore verifier kini memeriksa exact `auth_user`, schema inti, migration

@@ -1,5 +1,15 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - Snap and Fit exact-head protected preview sync
+
+- Klasifikasi: `CONFIRMED`.
+- Exact source head `eec6269`; protected Vercel deployment
+  `dpl_3PW4rbAek9FijQy9vU3Dfb1UMTUw` dibangun dari clean source `e6e27d0`.
+- Authenticated smoke: tujuh web/PWA route 200, security header release, dan
+  BFF health fail-closed 503 tanpa isolated VPS.
+- Hosted run `32860613475` account-gated sebelum runner/step. Delivery tetap
+  `LOCAL_VALIDATED`; staging, activation, dan production tidak berubah.
+
 ## 2026-08-25 - SagaWork Sprint 28 security-governance sync
 
 - Informasi `CONFIRMED` berasal dari exact implementation/runtime `17427f564b87cd18d03de7764a319a14e3d99fd4`, documentation acceptance `22174f1`, protected Preview `dpl_FoFe3hCFgnJuXvTBbVxdY2rRnjh1`, dan synthetic Hostinger acceptance.

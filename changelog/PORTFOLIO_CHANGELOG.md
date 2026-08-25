@@ -8,6 +8,15 @@
 - Internal ASVS 5.0 menjadi 155 PASS/79 N/A/0 pending internal/18 pending external/1 Staff no-OTP risk acceptance. Ini bukan certification/full-Level-2 claim.
 - Delivery tetap `STAGING_DEPLOYED`; activation `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED_EXTERNAL`.
 
+## 2026-08-25 - Snap and Fit exact-head protected preview
+
+- Exact private documentation head `eec6269`; protected deployment
+  `dpl_3PW4rbAek9FijQy9vU3Dfb1UMTUw` dibangun dari clean source `e6e27d0`.
+- Tujuh web/PWA route dan security header lulus authenticated smoke; BFF health
+  tetap fail-closed 503 tanpa isolated VPS.
+- Delivery `LOCAL_VALIDATED`; hosted CI, staging, activation, dan production
+  tetap blocked.
+
 ## 2026-08-25 - Snap and Fit recovery gate in full validation
 
 - Exact private source `e6e27d0` membuat `pnpm validate` selalu menjalankan

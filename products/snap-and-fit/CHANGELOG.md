@@ -10,6 +10,15 @@ production, activation, dan business readiness.
 Mock, fixture, preview frontend, dan test lokal bukan bukti provider atau
 production activation.
 
+## 2026-08-25 - Exact-head protected preview refresh
+
+- Exact private documentation head `eec6269`; deployed clean source `e6e27d0`.
+- Protected Vercel deployment `dpl_3PW4rbAek9FijQy9vU3Dfb1UMTUw` berstatus
+  `READY`; tujuh web/PWA route 200 dengan security header release.
+- BFF health sengaja 503 tanpa isolated VPS. Hosted run `32860613475` kembali
+  berhenti sebelum runner/step karena billing gate.
+- Delivery tetap `LOCAL_VALIDATED`; staging dan production tidak berubah.
+
 ## 2026-08-25 - Recovery preflight masuk full validation
 
 - Exact private source `e6e27d0` berstatus `LOCAL_VALIDATED`.

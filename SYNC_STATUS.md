@@ -12,12 +12,31 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T21:29:36+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T21:37:30+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `97e6e1a59a4df3c3100171a19e56f1e2e82f19d0` |
-| Informasi terakhir disinkronkan | Snap and Fit full-validation recovery gate pada exact source `e6e27d0`. |
+| Baseline sebelum pembaruan | `0785f64280449a66cc1096f2ca8ea6dfac530120` |
+| Informasi terakhir disinkronkan | Snap and Fit exact-head protected preview pada source head `eec6269`. |
 | Status sinkronisasi | `LOCAL_VALIDATED / STAGING_READY=BLOCKED / ACTIVATION_BLOCKED`. |
+
+## Snap and Fit exact-head protected preview
+
+- Exact source head: `eec6269`; deployed clean source: `e6e27d0`.
+- Protected deployment: `dpl_3PW4rbAek9FijQy9vU3Dfb1UMTUw`, `READY`.
+- Tujuh web/PWA route dan security header lulus authenticated smoke; BFF health
+  tetap 503 fail-closed tanpa isolated VPS.
+- Hosted run `32860613475` tidak memperoleh runner/step karena account billing
+  gate; status delivery tidak berubah.
+
+## File yang berubah pada sinkronisasi ini (Snap and Fit protected preview)
+
+- `products/snap-and-fit/PRODUCT.md`
+- `products/snap-and-fit/DOSSIER.md`
+- `products/snap-and-fit/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## Snap and Fit full-validation recovery gate
 

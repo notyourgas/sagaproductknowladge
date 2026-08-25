@@ -47,8 +47,9 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 - Delivery: `LOCAL_VALIDATED`.
 - Activation: `NOT_PRODUCTION_ACTIVATED`.
 - Business readiness: `BLOCKED`.
-- Exact private source head `e6e27d0`; full-validation recovery gate berasal
-  dari `e6e27d0`, staging restore hardening berasal dari `076f76b`, MySQL 8.4
+- Exact private source head `eec6269`; protected-preview evidence refresh
+  berasal dari `eec6269`, full-validation recovery gate berasal dari `e6e27d0`,
+  staging restore hardening berasal dari `076f76b`, MySQL 8.4
   clean-room compatibility fix berasal dari `4384948`, dan
   digest-only application release feature
   berasal dari `d0f3b7d`, immutable supply-chain hardening berasal dari `ee45e56`,
@@ -73,9 +74,9 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   `b09f279`, deletion/recovery hardening dari `dbbb814`, serta candidate/cart
   authority dari `09a55bd`, durable notification worker dari `d964fea`, dan
   lifecycle/retention worker dari `4d602d9`.
-- Protected Vercel preview `dpl_CeGgE8rxJX58qQpTGzdqUoPc6iQn` dari exact
-  implementation source `4384948` berstatus `READY`; manifest, service worker, offline, BIB,
-  selfie-capture, dan photographer jobs route 200 tetapi
+- Protected Vercel preview `dpl_3PW4rbAek9FijQy9vU3Dfb1UMTUw` dari exact
+  source `e6e27d0` berstatus `READY`; web shell, manifest, service worker,
+  offline, BIB, selfie-capture, dan photographer jobs route 200 tetapi
   backend staging sengaja fail-closed.
 - Full no-service validation, 63 API test dengan sembilan integrasi eksternal
   terkontrol skip dan 21 worker test dengan empat integrasi service-dependent
@@ -112,7 +113,7 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   dependency produksi nol vulnerability lulus. Container workflow dikonfigurasi
   menghasilkan BuildKit SBOM/provenance dan manifest digest; image belum
   dibangun/dijalankan sehingga emission/runtime evidence tetap gate.
-- Hosted GitHub Actions run `32859786213` pada exact current head `e6e27d0`
+- Hosted GitHub Actions run `32860613475` pada exact current head `eec6269`
   gagal sebelum satu pun step berjalan: runner belum ditetapkan dan steps kosong;
   anotasi menyatakan account payment/spending-limit gate. Run sebelumnya pada
   `176cf15`, `4384948`, dan `d0f3b7d` memiliki pola yang sama.
@@ -143,7 +144,7 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   no-store, noindex/noimageindex/noarchive, dan tidak mengekspos bucket/key.
   Local/test memakai JPEG sintetis yang dilabel jelas, bukan foto peserta nyata.
 - Preview terbaru dibangun ulang melalui Vercel remote Linux build dari exact
-  implementation source `4384948`. Web/PWA route dan security headers lulus
+  source `e6e27d0`. Web/PWA route dan security headers lulus
   smoke terproteksi; BFF health sengaja 503 sampai isolated backend tersedia.
   Local Windows prebuilt packaging belum menjadi release path karena CLI 58.4.4
   gagal memetakan static `/account/orders` setelah Next build sukses.
