@@ -1,5 +1,28 @@
 # SagaView Changelog
 
+## 2026-08-26 - S291 cumulative S289/S290 release candidate
+
+- Klasifikasi: `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+  production tidak berubah.
+- Before: harness authenticated UAT S289 dan perbaikan fokus Support Hub S290
+  berada pada branch terpisah, sehingga belum ada satu exact candidate untuk
+  release berikutnya.
+- After: exact `1237ef2df06ca53f10b6230adc9350b179462ade` menyatukan
+  keduanya di atas production `8d84c60c...` dengan delta enam file SagaView,
+  migration delta nol, dan tanpa perubahan perilaku SagaBook.
+- Correction: formatter menemukan satu gaya kutip pada test S289; correction
+  round pertama memperbaikinya tanpa mengubah runtime atau kontrak UAT, lalu
+  seluruh gate exact commit diulang hijau.
+- Evidence: focused 5/5 dengan 41 assertion; Support Hub 30/30 dengan 126
+  assertion; full SagaView 213/213 dengan 3.551 assertion; Playwright 2/2 pada
+  1440x900 dan 390x844; build 5.097 modul; parser, Pint, diff check, audit
+  Composer/npm nol; UAT tanpa approval berhenti fail-closed.
+- Provenance: archive SHA-256 `37e9e482...82e253` dan bundle SHA-256
+  `22f83656...cc724` tersedia dua salinan checksum-identical.
+- Next gate: release preflight, backup/restore, rollback, dan smoke sebelum
+  deploy; authenticated UAT tetap memerlukan izin dan akun referensi
+  non-customer.
+
 ## 2026-08-26 - S290 Support Hub keyboard focus containment
 
 - Klasifikasi: `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;

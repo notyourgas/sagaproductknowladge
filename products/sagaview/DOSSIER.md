@@ -1,5 +1,21 @@
 # SagaView Dossier
 
+## S291 cumulative release candidate
+
+Exact pushed source `1237ef2df06ca53f10b6230adc9350b179462ade`
+menyatukan S289 dan S290 di atas backend/Owner production exact
+`8d84c60c86131892a2ae3727670b0468b64fa81b`. Delta kumulatif enam file hanya
+mencakup harness UAT SagaView, focus containment Support Hub, serta testnya;
+migration delta nol dan tidak ada perubahan perilaku SagaBook.
+
+Focused 5/41, Support Hub 30/126, full SagaView 213/3.551, Playwright desktop
+1440x900 dan mobile 390x844 2/2, build 5.097 modul, parser, Pint, diff check,
+dan audit dependency nol lulus. Harness menolak eksekusi tanpa approval.
+Archive SHA-256 `37e9e482...82e253` dan bundle SHA-256
+`22f83656...cc724` mempunyai dua salinan checksum-identical. Status `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
+Release preflight/backup/restore dan authenticated UAT tetap gate terpisah.
+
 ## S290 Support Hub keyboard focus containment
 
 Exact pushed source `f34eff0720e8e43841617534377ef4db382ce245`

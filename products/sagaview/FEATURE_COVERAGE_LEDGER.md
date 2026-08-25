@@ -1,6 +1,24 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 26 Agustus 2026 02:14 WIB
+Evidence cut-off: 26 Agustus 2026 03:09 WIB
+
+S291 cumulative release candidate: exact pushed source
+`1237ef2df06ca53f10b6230adc9350b179462ade` menyatukan harness authenticated
+read-only UAT S289 dan focus containment Support Hub S290 di atas exact
+production `8d84c60c86131892a2ae3727670b0468b64fa81b`. Sebelumnya dua hasil itu
+berada pada branch terpisah; sekarang satu kandidat kumulatif mempunyai delta
+enam file SagaView, migration delta nol, dan tidak membawa perubahan SagaBook.
+Focused 5/41, Support Hub 30/126, full SagaView 213/3.551, Playwright desktop
+1440x900 dan mobile 390x844 2/2, build 5.097 modul, parser, Pint, diff check,
+serta audit Composer/npm nol lulus. Harness juga terbukti fail-closed tanpa
+approval. Source archive SHA-256
+`37e9e482d98f9f2e0ab6f96aabcbded1128490b8c76b5b90dc69b6140982e253`
+dan git bundle SHA-256
+`22f836564fa4d4db005c1c3da097e53673b48970b76ac93cfa86c0ec3b0cc724`
+tersedia dalam dua salinan checksum-identical. Status `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah. Gate
+berikutnya adalah release preflight/backup/restore terpisah sebelum deploy,
+serta approval dan akun referensi non-customer sebelum authenticated UAT.
 
 S290 Support Hub keyboard focus containment: exact pushed source
 `f34eff0720e8e43841617534377ef4db382ce245` menutup gap fokus modal

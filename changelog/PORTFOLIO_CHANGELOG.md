@@ -76,6 +76,18 @@
   `READY`; uploader 200 dan backend fail-closed 503. Delivery tetap
   `LOCAL_VALIDATED`; real S3/worker 500-object proof masih external gate.
 
+## 2026-08-26 - SagaView S291 cumulative release candidate
+
+- Exact `1237ef2df06ca53f10b6230adc9350b179462ade` menyatukan S289
+  authenticated read-only UAT harness dan S290 Support Hub focus containment di
+  atas exact production `8d84c60c...`.
+- Delta hanya enam file SagaView, migration nol, perilaku SagaBook tidak
+  berubah, dan production tetap read-only.
+- Focused 5/41, Support Hub 30/126, full SagaView 213/3.551, Playwright 2/2,
+  build 5.097 modul, parser/format/diff, audit nol, serta dua salinan immutable
+  provenance lulus. Delivery `PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`.
+
 ## 2026-08-26 - SagaView S290 Support Hub keyboard focus containment
 
 - Exact pushed source `f34eff0720e8e43841617534377ef4db382ce245` menahan

@@ -1,6 +1,17 @@
 # SagaView Product Knowledge
 
-Updated: 26 Agustus 2026 02:14 WIB
+Updated: 26 Agustus 2026 03:09 WIB
+
+SagaView S291 exact `1237ef2df06ca53f10b6230adc9350b179462ade`
+sudah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Kandidat ini
+menyatukan harness authenticated read-only UAT S289 dan perbaikan fokus Support
+Hub S290 di atas exact production `8d84c60c...`, sehingga tidak lagi perlu
+merakit dua branch terpisah. Delta kumulatif hanya enam file SagaView,
+migration delta nol, dan perilaku SagaBook tidak berubah. Focused 5/41,
+Support Hub 30/126, full SagaView 213/3.551, Playwright dua viewport 2/2,
+build 5.097 modul, parser/Pint/diff, audit dependency nol, serta dua salinan
+archive/manifest/bundle checksum-identical lulus. Production belum berubah;
+release preflight dan authenticated UAT tetap gate terpisah.
 
 SagaView S290 exact `f34eff0720e8e43841617534377ef4db382ce245`
 sudah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Support Hub Owner

@@ -12,12 +12,37 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-26T02:43:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-26T03:09:21+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | exact `origin/main` `1ffee53` sebelum sinkronisasi COYABAG Our Product. |
-| Informasi terakhir disinkronkan | COYABAG Our Product variant and Cart integrity production release. |
-| Status sinkronisasi | `PUSHED / PRODUCTION_DEPLOYED`; activation dan business readiness tetap `BLOCKED`. |
+| Baseline sebelum pembaruan | exact `origin/main` `ccd5040` sebelum sinkronisasi SagaView S291 |
+| Informasi terakhir disinkronkan | SagaView S291 cumulative release candidate. |
+| Status sinkronisasi | `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production, activation, dan business readiness tidak berubah. |
+
+## SagaView S291 cumulative release candidate
+
+- Exact pushed source `1237ef2df06ca53f10b6230adc9350b179462ade`.
+- Menggabungkan S289 dan S290 di atas exact production `8d84c60c...`; delta
+  enam file SagaView, migration nol, perilaku SagaBook tidak berubah.
+- Focused 5/41, Support Hub 30/126, full SagaView 213/3.551, Playwright dua
+  viewport 2/2, build 5.097 modul, parser/Pint/diff, dan audit dependency nol
+  lulus. Eksekusi UAT tanpa approval berhenti fail-closed.
+- Archive dan bundle mempunyai SHA-256 manifest serta dua salinan
+  checksum-identical. Production tidak berubah.
+- Release preflight/backup/restore/rollback/smoke dan authenticated UAT tetap
+  gate terpisah sebelum activation/business readiness.
+
+## File yang berubah pada sinkronisasi ini (SagaView S291)
+
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/DOSSIER.md`
+- `products/sagaview/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG Our Product variant and Cart integrity
 
