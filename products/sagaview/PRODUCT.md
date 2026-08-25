@@ -1,6 +1,23 @@
 # SagaView Product Knowledge
 
-Updated: 25 Agustus 2026 20:18 WIB
+Updated: 25 Agustus 2026 21:24 WIB
+
+Kandidat S288 terkini exact
+`94675a5f1b432182de0f3cd22a4982c654c11c69` sudah pushed. Harness recovery
+sekarang menerima stderr sukses native `git bundle verify` pada Windows
+PowerShell 5 sambil tetap memeriksa exit code exact dan gagal tertutup pada
+error. Focused safety 6/143, full monorepo 1.156/13.246, typecheck, build 5.129
+modul, parser/Pint/diff, dan audit Composer/npm nol lulus. Preflight production
+read-only membuktikan `recovery_preflight=pass`, `recovery_decision=hold`,
+target rollback masih missing, dan release aktif tidak berubah. Source
+archive SHA-256
+`6c83c635e2a6239cd80f445d6ff56a27d30c0775c013cd6f965e0fb97cc72816`
+serta bundle SHA-256
+`8c015790ddc13d0c270b27fb754bb147d6e7978a3d0fcc1c5cd46eecf70ff8e7`
+tersedia dua salinan identik. Status `PUSHED / SECURITY_VALIDATED /
+QA_VALIDATED / DEVOPS_VALIDATED / PRODUCTION_AUDIT_CONDITIONAL_GO /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / RECOVERY_APPROVAL_REQUIRED`;
+approval lama deprecated, recovery belum dimulai, dan `BUSINESS_READY=false`.
 
 Kandidat mainline S288 exact
 `a830cf40e1c4fcb53d0e0d63d2e443d71a89b05e` sudah pushed sebagai tujuh file
@@ -17,6 +34,7 @@ QA_VALIDATED / DEVOPS_VALIDATED / LOCAL_VALIDATED /
 IMPLEMENTED_NOT_DEPLOYED / RECOVERY_APPROVAL_REQUIRED`; production, database,
 active release, dan pointer rollback tidak berubah. Approval pack lama tetap
 deprecated dan `BUSINESS_READY=false`.
+Kandidat ini superseded oleh exact `94675a5f1b432182de0f3cd22a4982c654c11c69`.
 
 Hardening S288 exact `10cb9cf7454f7c89f3892c4439b1d35938be5168`
 sudah pushed dan membuat recovery rollback inactive serial: mutex non-blocking

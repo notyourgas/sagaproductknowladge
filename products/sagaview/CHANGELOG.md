@@ -1,5 +1,32 @@
 # SagaView Changelog
 
+## 2026-08-25 - S288 exact preflight compatibility and approval pack
+
+- Klasifikasi: `CONFIRMED / PUSHED / SECURITY_VALIDATED / QA_VALIDATED /
+  DEVOPS_VALIDATED / PRODUCTION_AUDIT_CONDITIONAL_GO / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / RECOVERY_APPROVAL_REQUIRED`;
+  `BUSINESS_READY=false`.
+- Before: Windows PowerShell 5 mengubah pesan sukses stderr dari native
+  `git bundle verify` menjadi terminating `ErrorRecord`, sehingga preflight
+  lokal berhenti sebelum pemeriksaan host walau bundle valid.
+- After: exact `94675a5f1b432182de0f3cd22a4982c654c11c69` menangkap exit code
+  native secara eksplisit dan memulihkan error policy sesudah verifikasi;
+  perilaku fail-closed untuk checksum, bundle, source commit, dan baseline
+  tetap dipertahankan.
+- Evidence: focused 6/6 dengan 143 assertion; full monorepo 1.156/1.156 dengan
+  13.246 assertion; typecheck, build 5.129 modul, parser/Pint/diff, audit
+  Composer/npm nol; preflight production read-only `pass/hold`, target missing,
+  dan `production_changed=false`.
+- Provenance: source archive SHA-256
+  `6c83c635e2a6239cd80f445d6ff56a27d30c0775c013cd6f965e0fb97cc72816`
+  dan bundle SHA-256
+  `8c015790ddc13d0c270b27fb754bb147d6e7978a3d0fcc1c5cd46eecf70ff8e7`
+  tersimpan dua salinan checksum-identical; approval pack exact juga memiliki
+  dua salinan identik.
+- Delivery: recovery belum dimulai; production, database, active release,
+  pointer rollback, Studio, platform, dan SagaBook tidak berubah. Approval
+  kandidat lama tidak berlaku; deploy/activation bukan bagian approval ini.
+
 ## 2026-08-25 - S288 mainline global gate closed
 
 - Klasifikasi: `CONFIRMED / PUSHED / SECURITY_VALIDATED / QA_VALIDATED /

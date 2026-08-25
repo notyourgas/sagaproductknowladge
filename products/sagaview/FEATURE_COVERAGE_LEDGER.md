@@ -1,6 +1,21 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 25 Agustus 2026 20:18 WIB
+Evidence cut-off: 25 Agustus 2026 21:24 WIB
+
+S288 exact recovery preflight and approval pack: source
+`94675a5f1b432182de0f3cd22a4982c654c11c69` memperbaiki kompatibilitas
+Windows PowerShell 5 saat `git bundle verify` menulis pesan sukses ke stderr,
+tanpa melemahkan pemeriksaan exit code. Focused 6/143, full monorepo
+1.156/13.246, typecheck, build 5.129 modul, parser/Pint/diff, serta audit
+Composer/npm nol lulus pada exact commit. Preflight production read-only
+menghasilkan `pass/hold`: target rollback `20260822112703-298336d` tetap
+missing dan release aktif tidak berubah. Archive dan bundle source baru serta
+artefak rollback mempunyai dua salinan checksum-identical. Status `PUSHED /
+SECURITY_VALIDATED / QA_VALIDATED / DEVOPS_VALIDATED /
+PRODUCTION_AUDIT_CONDITIONAL_GO / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED / RECOVERY_APPROVAL_REQUIRED`; approval kandidat
+lama tidak berlaku. Gap tunggal berikutnya adalah approval exact baru, lalu
+runtime inactive recovery acceptance. Deploy/activation tetap keputusan lain.
 
 S288 mainline recovery candidate: exact pushed source
 `a830cf40e1c4fcb53d0e0d63d2e443d71a89b05e` membawa chain recovery lengkap
@@ -13,6 +28,7 @@ DEVOPS_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
 RECOVERY_APPROVAL_REQUIRED`; production dan pointer rollback tidak berubah.
 Gap berikutnya adalah final release review, approval recovery baru, kemudian
 runtime recovery acceptance; deployment kandidat tetap keputusan terpisah.
+Kandidat ini superseded oleh exact `94675a5f1b432182de0f3cd22a4982c654c11c69`.
 
 S288 serialized inactive rollback recovery: exact pushed source
 `10cb9cf7454f7c89f3892c4439b1d35938be5168` menutup P1 recovery paralel.
