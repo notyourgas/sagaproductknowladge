@@ -1,10 +1,10 @@
 # SagaView Changelog
 
-## 2026-08-25 - S288 inactive rollback recovery readiness
+## 2026-08-25 - S288 inactive rollback recovery fail-closed
 
 - Klasifikasi: `CONFIRMED / PUSHED / SECURITY_VALIDATED / QA_VALIDATED /
   DEVOPS_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
-  RELEASE_BLOCKED_ROLLBACK_TARGET / HOLD_FOR_EXPLICIT_APPROVAL`;
+  RELEASE_BLOCKED_ROLLBACK_TARGET / RECOVERY_BLOCKED_DEPLOY_GATE_COMMAND`;
   `BUSINESS_READY=false`.
 - Before: pointer rollback production mengarah ke release pasif
   `20260822112703-298336d`, tetapi direktori targetnya hilang sehingga kandidat
@@ -13,18 +13,24 @@
   `298336da09b735638c4ffea9b7e8830b1283452e`, archive, bundle, lock dependency,
   dan migration set sudah diverifikasi. Tooling recovery atomik hanya memasang
   release pasif, menjaga `current`, memakai sentinel database read-only, serta
-  cleanup otomatis bila gate gagal.
+  cleanup otomatis bila gate gagal. Approval Andreas diterapkan hanya untuk
+  recovery inactive, bukan deploy kandidat; percobaan kedua/final berhenti
+  fail-closed pada `deploy_gate_command_failed`.
 - Provenance: exact tooling
-  `1a18fec0b0c73cb3874f83fedc5feda7370b5c46` sudah pushed; archive rollback
+  `0efd11297f972cab33f09c56774a016f29347302` sudah pushed; archive rollback
   SHA-256 `32c803392189440d227a66510d3237bdd4f7866f275977292a1b9a4abea1f766`
   dan bundle SHA-256
   `afea1aa23f2224a51b413c97027688b5770a1f79df23b9d7c504474f31dfef11`
   memiliki dua salinan byte-identical.
-- Evidence: 150 test dengan 1.490 assertion, build 5.097 modul, parser/diff,
-  audit Composer/npm nol, rehearsal disposable 5/5, dan preflight production
-  read-only lulus.
-- Delivery: production tidak berubah. Recovery S288 memerlukan persetujuan
-  eksplisit Andreas; deploy kandidat sesudahnya merupakan approval terpisah.
+- Evidence: 218 test dengan 3.692 assertion, build 5.097 modul, parser/diff,
+  audit Composer/npm nol, rehearsal disposable 5/5, validator artifact Linux,
+  dan preflight production read-only lulus. Post-failure check membuktikan
+  active release, Studio, platform, SagaBook, database, service, public smoke,
+  header keamanan, dan cleanup tetap aman.
+- Delivery: production dan activation tidak berubah; target rollback tetap
+  hilang. Recovery tidak boleh diulang sebelum deploy-gate release pasif
+  direproduksi dan diperbaiki pada disposable environment. Deploy kandidat
+  tetap memerlukan approval terpisah.
 
 ## 2026-08-25 - S287 estimate-only deployment gate
 

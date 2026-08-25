@@ -1,5 +1,28 @@
 # SagaView Dossier
 
+## 2026-08-25 - S288 inactive rollback recovery fail-closed
+
+`CONFIRMED / PUSHED / SECURITY_VALIDATED / QA_VALIDATED / DEVOPS_VALIDATED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+RECOVERY_BLOCKED_DEPLOY_GATE_COMMAND`. Exact tooling final
+`0efd11297f972cab33f09c56774a016f29347302` memperjelas setiap final acceptance
+gate agar kegagalan recovery tidak lagi tersamar sebagai cleanup generik.
+
+Artifact exact rollback `20260822112703-298336d` lulus checksum, bundle,
+dependency/migration parity, rehearsal Linux disposable 5/5, dan validator
+artifact tanpa mengubah active release atau database. Full SagaView regression
+218/218 dengan 3.692 assertion, build 5.097 modul, parser/format, dan audit
+Composer/npm nol advisory juga lulus.
+
+Andreas menyetujui recovery inactive saja. Percobaan kedua/final berhenti
+fail-closed pada `deploy_gate_command_failed`; tidak ada kandidat yang dideploy.
+Cleanup independen membuktikan backend/Owner aktif tetap
+`20260824163507-f956846`, Studio tetap `20260824170456-7ae79ae`, platform dan
+SagaBook tidak berubah, database migration sentinel stabil, seluruh service dan
+empat public smoke HTTP 200, header keamanan lulus, serta nol residue. Target
+rollback masih hilang. Retry dilarang sampai command gate release pasif dapat
+direproduksi dan ditutup di disposable environment; `BUSINESS_READY=false`.
+
 ## 2026-08-24 - S272 Gallery Frame production recovery
 
 `CONFIRMED / PUSHED / UIUX_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED /

@@ -150,13 +150,14 @@
 - Jalur release SagaView kini estimate-only dan menolak tooling lama yang masih
   membawa kontrak pembayaran sebelum network atau mutasi.
 - Exact tooling S287 `c62776c4a27c8fb2cff52ebba13e679f42c86f6f` dan S288
-  `1a18fec0b0c73cb3874f83fedc5feda7370b5c46` sudah pushed. Recovery exact
-  rollback diuji 150 test/1.490 assertion, build 5.097 modul, audit dependency
-  nol, dan rehearsal disposable 5/5.
+  final `0efd11297f972cab33f09c56774a016f29347302` sudah pushed. Recovery exact
+  rollback diuji 218 test/3.692 assertion, build 5.097 modul, audit dependency
+  nol, rehearsal disposable 5/5, dan validator artifact Linux.
 - Production tetap sehat dan tidak berubah, tetapi target rollback pasif masih
   hilang. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
-  RELEASE_BLOCKED_ROLLBACK_TARGET`; recovery dan deploy kandidat menunggu dua
-  persetujuan eksplisit yang terpisah.
+  RELEASE_BLOCKED_ROLLBACK_TARGET / RECOVERY_BLOCKED_DEPLOY_GATE_COMMAND`.
+  Approval recovery inactive sudah digunakan; percobaan kedua/final berhenti
+  fail-closed dan cleanup lulus. Deploy kandidat tetap belum diotorisasi.
 
 ## 2026-08-25 - CoyaBag FAQ and policy publishing integrity
 

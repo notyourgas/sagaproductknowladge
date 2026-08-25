@@ -8,7 +8,7 @@ diubah menjadi klaim publik sebelum ditutup dengan bukti atau keputusan owner.
 
 ## Konteks
 
-Daftar ini berlaku pada evidence cut-off 24 Agustus 2026 22:46 WIB dan harus diperbarui
+Daftar ini berlaku pada evidence cut-off 25 Agustus 2026 13:21 WIB dan harus diperbarui
 ketika keputusan atau release baru menutup gap.
 
 ## Cara memakai
@@ -67,6 +67,7 @@ GAP-004, bukan gap implementasi warna komponen.
 | GAP-013 | SagaView | CLOSED | Dua backup fresh S272 direkonsiliasi secara private/no-overwrite dan checksum-valid; metadata service-only, rehearsal, conflict fail-closed, serta candidate gate 6/6 lulus. Atomic activation kemudian berhasil dan seluruh 215 asset frame unik production terbaca tanpa integrity error. | Backend/Owner aktif sebagai `20260824034431-fe2dcfc`, rollback `20260823091225-c828bd9`; evidence activation SHA-256 `e5d2fb5474d5c8d029f2da8987de852d67142fdda35158c06d0a3389e62abf48`. |
 | GAP-014 | SagaBook | TODO | Edit pembayaran, upload/histori bukti pembayaran, serta override jadwal OTS Manual Booking untuk staff sudah production-activated, tetapi authenticated staff/Owner UAT belum dijalankan pada booking manual nyata. | Siapkan akun referensi UAT tanpa mengekspos credential; uji staff custom time, conflict override, finance denial, payment-hold hard block, badge/history/report, upload, viewer, replacement, late evidence, dan no-financial-mutation pada exact source `194864c...` / release `20260824153350-194864c`; lanjutkan dua studio pilot sebelum `BUSINESS_READY`. |
 | GAP-015 | SagaWork | NEEDS CONFIRMATION | Synthetic staging tervalidasi, tetapi real storage/scanner, offsite key escrow, legal/DPA, real-device GPS/camera UAT, alert/incident rehearsal, pricing/WTP, named pilot, dan final activation belum lulus. | Provider non-PII spike, recovery/key approval, legal sign-off, device/human UAT, pilot evidence, lalu final Go/No-Go Andreas. |
+| GAP-016 | SagaView | BLOCKED | S288 recovery inactive sudah disetujui, tetapi percobaan kedua/final fail-closed karena command deploy gate pada release pasif gagal. Cleanup lulus dan production tetap utuh; target rollback masih hilang. | Reproduksi command gate pada exact artifact di disposable environment, tangkap output aman, tutup akar masalah, ulang seluruh gate exact commit, lalu minta approval recovery baru sebelum retry. |
 
 ## Keputusan produk
 

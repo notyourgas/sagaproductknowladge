@@ -12,14 +12,27 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T13:06:33+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T13:21:46+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `b8be4fd` |
-| Informasi terakhir disinkronkan | COYABAG Admin Dashboard Beranda Integrity dari exact source `fcedf86c07e6a8b5e27afc5435fa7da7e76961a8` dan release `20260825-fcedf86`. |
-| Status sinkronisasi | Delivery `PRODUCTION_DEPLOYED`; activation dan business readiness `BLOCKED`; readiness 30/42 dengan 12 blocker. |
-| Konflik | Tidak ada konflik; surface dashboard live tidak dianggap commerce production-activated. |
-| Error | Tidak ada error sinkronisasi; provider, data final, legal, dan owner UAT tetap terbuka. |
+| Baseline sebelum pembaruan | `71f4569` |
+| Informasi terakhir disinkronkan | SagaView S288 inactive rollback recovery fail-closed dari exact tooling `0efd11297f972cab33f09c56774a016f29347302`. |
+| Status sinkronisasi | `IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED_ROLLBACK_TARGET / RECOVERY_BLOCKED_DEPLOY_GATE_COMMAND`; production dan activation tidak berubah. |
+| Konflik | Tidak ada konflik; approval recovery inactive tidak dianggap approval deploy kandidat. |
+| Error | Recovery final berhenti fail-closed pada command deploy gate release pasif; cleanup terverifikasi dan target rollback tetap hilang. |
+
+## File yang berubah pada sinkronisasi ini (SagaView S288 recovery fail-closed)
+
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/DOSSIER.md`
+- `products/sagaview/CHANGELOG.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `DECISIONS.md`
+- `GAPS.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## File yang berubah pada sinkronisasi ini (COYABAG Admin dashboard Beranda integrity)
 

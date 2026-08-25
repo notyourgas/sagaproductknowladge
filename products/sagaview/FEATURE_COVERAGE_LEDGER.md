@@ -1,13 +1,13 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 25 Agustus 2026 05:52 WIB
+Evidence cut-off: 25 Agustus 2026 13:21 WIB
 
 S287/S288 estimate-only release gate dan rollback recovery readiness: exact
-tooling S287 `c62776c4a27c8fb2cff52ebba13e679f42c86f6f` serta S288
-`1a18fec0b0c73cb3874f83fedc5feda7370b5c46` sudah pushed dan berstatus
+tooling S287 `c62776c4a27c8fb2cff52ebba13e679f42c86f6f` serta S288 final
+`0efd11297f972cab33f09c56774a016f29347302` sudah pushed dan berstatus
 `CONFIRMED / SECURITY_VALIDATED / QA_VALIDATED / DEVOPS_VALIDATED /
 LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
-RELEASE_BLOCKED_ROLLBACK_TARGET / HOLD_FOR_EXPLICIT_APPROVAL`.
+RELEASE_BLOCKED_ROLLBACK_TARGET / RECOVERY_BLOCKED_DEPLOY_GATE_COMMAND`.
 Jalur deploy lama yang masih membawa kontrak pembayaran sudah dipensiunkan
 sebelum network/mutasi; S287 hanya menerima workflow estimate-only. Preflight
 production read-only membuktikan backend/Owner aktif `20260824163507-f956846`,
@@ -18,12 +18,15 @@ S288 memverifikasi archive dan bundle exact rollback commit
 `298336da09b735638c4ffea9b7e8830b1283452e`, tanpa delta Composer atau
 migration terhadap production aktif. Recovery dirancang hanya menambahkan
 release pasif dari artifact exact, menjaga `current`, memakai sentinel database
-read-only, atomic install, dan cleanup otomatis. Exact-commit gate lulus 150
-test/1.490 assertion, build 5.097 modul, parser/diff, audit Composer/npm nol,
-serta rehearsal disposable 5/5. Production, database, Studio, platform,
-SagaBook, foto/path/output customer, dan pembayaran tidak berubah. Gap tunggal:
-persetujuan eksplisit recovery S288; setelah target rollback pulih, S287 harus
-diulang dan deploy kandidat tetap membutuhkan approval terpisah.
+read-only, atomic install, dan cleanup otomatis. Exact-commit gate lulus 218
+test/3.692 assertion, build 5.097 modul, parser/diff, audit Composer/npm nol,
+rehearsal disposable 5/5, dan validator artifact Linux. Andreas menyetujui
+recovery inactive S288, tetapi percobaan kedua/final berhenti fail-closed pada
+`deploy_gate_command_failed`; cleanup mengembalikan target menjadi missing
+tanpa mengubah production, database, Studio, platform, SagaBook,
+foto/path/output customer, atau pembayaran. Gap berikutnya adalah reproduksi
+deploy-gate release pasif di disposable environment. S287 baru boleh diulang
+setelah gap tertutup; deploy kandidat tetap membutuhkan approval terpisah.
 
 S286 guarded deployment go/no-go: exact backend/Owner
 `8d84c60c86131892a2ae3727670b0468b64fa81b` berstatus `CONFIRMED /

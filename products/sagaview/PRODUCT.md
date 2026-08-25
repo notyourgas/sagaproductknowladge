@@ -1,6 +1,6 @@
 # SagaView Product Knowledge
 
-Updated: 25 Agustus 2026 05:52 WIB
+Updated: 25 Agustus 2026 13:21 WIB
 
 SagaView S287 mengganti jalur preflight/deploy lama yang masih bergantung pada
 kontrak pembayaran dengan tooling release estimate-only. Exact tooling
@@ -13,17 +13,22 @@ smoke, lalu berhenti `HOLD` karena target rollback pasif
 
 SagaView S288 menyiapkan recovery atomik khusus untuk memulihkan target rollback
 pasif tersebut tanpa mengganti `current`, menjalankan migration, atau mengubah
-database, Studio, platform, dan SagaBook. Exact tooling
-`1a18fec0b0c73cb3874f83fedc5feda7370b5c46` sudah pushed. Artifact rollback
-exact commit `298336da09b735638c4ffea9b7e8830b1283452e` tervalidasi; 150 test dengan
-1.490 assertion, build 5.097 modul, audit dependency nol, rehearsal disposable
-5/5, dan preflight production read-only lulus. Status kumulatif `CONFIRMED /
+database, Studio, platform, dan SagaBook. Exact tooling final
+`0efd11297f972cab33f09c56774a016f29347302` sudah pushed. Artifact rollback
+exact commit `298336da09b735638c4ffea9b7e8830b1283452e` tervalidasi; 218 test dengan
+3.692 assertion, build 5.097 modul, audit dependency nol, rehearsal disposable
+5/5, validator artifact Linux, dan preflight production read-only lulus.
+Andreas menyetujui recovery inactive S288, tetapi percobaan kedua/final
+berhenti fail-closed pada `deploy_gate_command_failed`. Cleanup terverifikasi:
+active backend/Owner tetap `20260824163507-f956846`, Studio tetap
+`20260824170456-7ae79ae`, database dan service sehat, sedangkan target rollback
+tetap hilang. Status kumulatif `CONFIRMED /
 PUSHED / SECURITY_VALIDATED / QA_VALIDATED / DEVOPS_VALIDATED /
 LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
-RELEASE_BLOCKED_ROLLBACK_TARGET / HOLD_FOR_EXPLICIT_APPROVAL`;
-`BUSINESS_READY=false`. Andreas harus memberi persetujuan eksplisit terpisah
-untuk recovery S288. Setelah recovery diverifikasi, S287 harus dijalankan ulang
-dan deployment kandidat tetap memerlukan persetujuan kedua.
+RELEASE_BLOCKED_ROLLBACK_TARGET / RECOVERY_BLOCKED_DEPLOY_GATE_COMMAND`;
+`BUSINESS_READY=false`. Recovery tidak boleh diulang sebelum kegagalan gate
+direproduksi dan ditutup di lingkungan disposable. Deployment kandidat tetap
+memerlukan persetujuan terpisah.
 
 SagaView S286 menyelesaikan paket go/no-go guarded deployment pada exact
 backend/Owner `8d84c60c86131892a2ae3727670b0468b64fa81b`. Archive kandidat dan artefak

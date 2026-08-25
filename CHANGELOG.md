@@ -154,16 +154,18 @@
 
 - Informasi `CONFIRMED` berasal dari exact tooling S287
   `c62776c4a27c8fb2cff52ebba13e679f42c86f6f`, S288
-  `1a18fec0b0c73cb3874f83fedc5feda7370b5c46`, artifact exact rollback, dan
+  final `0efd11297f972cab33f09c56774a016f29347302`, artifact exact rollback, dan
   preflight production read-only.
 - Knowledge mencatat deprecation fail-closed jalur payment-bound, gate baru
   estimate-only, recovery release pasif yang tidak mengganti `current` atau
   menjalankan migration, serta pemisahan approval recovery dan approval deploy.
-- Evidence 150 test/1.490 assertion, build 5.097 modul, parser/diff, audit
-  dependency nol, rehearsal disposable 5/5, dan service/public smoke lulus.
+- Evidence 218 test/3.692 assertion, build 5.097 modul, parser/diff, audit
+  dependency nol, rehearsal disposable 5/5, validator artifact Linux, dan
+  service/public smoke lulus. Approval recovery inactive sudah digunakan,
+  tetapi percobaan kedua/final berhenti fail-closed dan cleanup lulus.
   Production tidak berubah; target rollback pasif masih hilang.
 - Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
-  RELEASE_BLOCKED_ROLLBACK_TARGET / HOLD_FOR_EXPLICIT_APPROVAL`;
+  RELEASE_BLOCKED_ROLLBACK_TARGET / RECOVERY_BLOCKED_DEPLOY_GATE_COMMAND`;
   `BUSINESS_READY=false`.
 - Dokumen terdampak: SagaView product/changelog/coverage, portfolio, master
   knowledge, root changelog, dan sync status.
