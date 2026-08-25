@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-25 - CoyaBag storefront state integrity
+
+- Exact source `521d8a3e752544abd14caabdbeae02831cead9e2` aktif sebagai
+  Hostinger release `20260825-521d8a3`; rollback `20260825-9541b86` tersedia.
+- Production tidak menampilkan source fallback product sebelum API siap. Home
+  dan Search sekarang memiliki loading, empty, error, refreshing, stale,
+  disabled, retry, recovery, dan success state yang jujur serta focus/live
+  region recovery.
+- State matrix 12 flow dan public live-API 79 kombinasi lulus bersama full
+  test/build/security dan public smoke. Status `PRODUCTION_DEPLOYED`; readiness
+  30/42, activation dan business readiness tetap `BLOCKED`.
+
 ## 2026-08-25 - CoyaBag responsive storefront integrity
 
 - Exact source `9541b86869b9a4d1790722bb0f0907b499b768e6` aktif sebagai

@@ -3179,11 +3179,16 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release aktif `20260825-9541b86` menjalankan exact source
-`9541b86869b9a4d1790722bb0f0907b499b768e6` dengan rollback
-`20260825-3520e66`. Integritas responsif storefront telah divalidasi pada 15
-route, lima profil viewport dari mobile 320 piksel sampai desktop, mobile menu,
-dan 79 kombinasi fixture maupun API production. Overflow product card pada
+Release aktif `20260825-521d8a3` menjalankan exact source
+`521d8a3e752544abd14caabdbeae02831cead9e2` dengan rollback
+`20260825-9541b86`. Production tidak lagi menampilkan source fallback product
+sebelum Laravel catalog siap. Home dan Search membedakan loading, ready,
+refreshing, stale, empty, error, disabled, retry, dan recovery; stale catalog
+yang sudah terverifikasi dipertahankan saat background refresh gagal. State
+matrix 12 flow lulus pada mobile/desktop dan public live-API tetap lulus 79
+kombinasi route/viewport. Integritas responsif storefront telah divalidasi pada
+15 route dan lima profil viewport dari mobile 320 piksel sampai desktop,
+termasuk mobile menu. Overflow product card pada
 mobile kecil ditutup, target sentuh utama minimal 44 piksel, dan
 scroll-progress mobile tetap di viewport. FAQ hanya menampilkan jawaban CMS
 published dari enam kategori. Privacy, terms, dan return policy membutuhkan owner publication,

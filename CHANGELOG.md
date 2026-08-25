@@ -1,5 +1,21 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - CoyaBag storefront state integrity production sync
+
+- Produk/area: COYABAG storefront loading, failure, recovery, dan production
+  release.
+- Informasi `CONFIRMED` berasal dari exact source
+  `521d8a3e752544abd14caabdbeae02831cead9e2`, immutable release
+  `20260825-521d8a3`, rollback `20260825-9541b86`, dan runtime verification.
+- Knowledge mencatat source fallback mock-only, state loading/empty/error/
+  refreshing/stale/disabled/retry/recovery yang jujur, preservation katalog
+  terverifikasi, focus recovery, live region, 12 state flow, dan 79 kombinasi
+  live-API yang lulus.
+- Delivery `PRODUCTION_DEPLOYED`; readiness tetap 30/42 dengan 12 blocker.
+  Activation dan business readiness tetap `BLOCKED`; commerce tidak diaktifkan.
+- Dokumen terdampak: CoyaBag product/dossier/changelog, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-25 - CoyaBag responsive storefront production sync
 
 - Produk/area: COYABAG global responsive storefront dan production release.

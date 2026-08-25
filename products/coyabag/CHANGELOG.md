@@ -8,6 +8,22 @@ Mencatat perubahan material COYABAG dengan provenance public-safe.
 
 Surface deployment tidak otomatis berarti commerce activation.
 
+## 2026-08-25 - Storefront state integrity production release
+
+- Informasi `CONFIRMED` berasal dari exact source
+  `521d8a3e752544abd14caabdbeae02831cead9e2`, immutable Hostinger release
+  `20260825-521d8a3`, rollback `20260825-9541b86`, dan runtime verification.
+- Source fallback catalog kini mock-only. Production menunggu Laravel catalog
+  sebelum menampilkan produk; Home dan Search mempunyai loading, skeleton,
+  empty, error, refreshing, stale, disabled, retry, recovery, dan success state
+  yang jujur.
+- Browser state acceptance lulus 12 flow pada 320/390/1440 piksel dan public
+  live-API lulus 79 kombinasi. Full storefront/Laravel, security, dependency,
+  backup, worker, scheduler, asset, dan smoke gate lulus.
+- Delivery `PRODUCTION_DEPLOYED`; readiness tetap 30/42 dengan 12 blocker.
+  Activation dan business readiness tetap `BLOCKED`; checkout/provider tidak
+  diaktifkan.
+
 ## 2026-08-25 - Responsive storefront integrity production release
 
 - Informasi `CONFIRMED` berasal dari exact source

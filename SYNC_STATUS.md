@@ -12,16 +12,16 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T06:25:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T07:11:05+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `1490c454` |
-| Informasi terakhir disinkronkan | CoyaBag responsive storefront integrity pada release `20260825-9541b86`. |
+| Baseline sebelum pembaruan | `d4b0a244` |
+| Informasi terakhir disinkronkan | CoyaBag storefront state integrity pada release `20260825-521d8a3`. |
 | Status sinkronisasi | Delivery `PRODUCTION_DEPLOYED`; activation dan business readiness `BLOCKED`; readiness 30/42 dengan 12 blocker. |
 | Konflik | Tidak ada konflik source atau keputusan baru. |
 | Error | Tidak ada error sinkronisasi; blocker commerce CoyaBag tetap terbuka dan fail-closed. |
 
-## File yang berubah pada sinkronisasi ini (CoyaBag responsive storefront)
+## File yang berubah pada sinkronisasi ini (CoyaBag storefront state integrity)
 
 - `products/coyabag/PRODUCT.md`
 - `products/coyabag/DOSSIER.md`

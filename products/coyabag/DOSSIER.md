@@ -78,10 +78,16 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260825-9541b86` memakai source
-`9541b86869b9a4d1790722bb0f0907b499b768e6` dan rollback
-`20260825-3520e66`. Matrix responsif storefront mencakup 15 route dan lima
-profil viewport dari mobile 320 piksel sampai desktop, termasuk mobile menu.
+Release production terbaru `20260825-521d8a3` memakai source
+`521d8a3e752544abd14caabdbeae02831cead9e2` dan rollback
+`20260825-9541b86`. Production tidak lagi menampilkan source fallback product
+sebelum katalog Laravel siap. Home dan Search memakai satu kontrak untuk
+loading, ready, refreshing, stale, empty, error, disabled, retry, dan recovery;
+failed background refresh mempertahankan katalog terakhir yang terverifikasi.
+State acceptance lulus 12 flow pada 320, 390, dan 1440 piksel, sedangkan matrix
+live-API postdeploy tetap lulus 79 kombinasi route/viewport. Matrix responsif
+storefront mencakup 15 route dan lima profil viewport dari mobile 320 piksel
+sampai desktop, termasuk mobile menu.
 Product card tidak lagi menyebabkan overflow intrinsik, navigasi/CTA penting
 memiliki target sentuh minimal 44 piksel, dan scroll-progress mobile tetap di
 dalam viewport. FAQ hanya merender jawaban CMS published dari enam kategori;
