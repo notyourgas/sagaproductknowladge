@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 25 Agustus 2026 15:12 WIB
+Evidence cut-off: 25 Agustus 2026 15:14 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 

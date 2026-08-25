@@ -12,10 +12,10 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T15:12:24+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T15:14:31+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `6969c6a` |
+| Baseline sebelum pembaruan | `570df55` |
 | Informasi terakhir disinkronkan | SagaWork private attendance-photo byte pipeline dan active isolated staging `7d5ada9`. |
 | Status sinkronisasi | `STAGING_DEPLOYED / NOT_PRODUCTION_ACTIVATED / PILOT_READY_CANDIDATE / BUSINESS_READY=false`. |
 | Konflik | Tidak ada konflik; loopback same-VPS acceptance tidak disamakan dengan external provider, offsite, real pilot, atau production. |
