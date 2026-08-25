@@ -3496,7 +3496,19 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release aktif `20260826-4be4f28` menjalankan exact source
+Release aktif `20260826-44edf06` menjalankan exact source
+`44edf06ddf2cb05013cdb7806892271c8113e40f` dengan rollback
+`20260826-4be4f28`. FAQ dan tiga policy membutuhkan konfirmasi halaman, catatan
+pemeriksaan internal, serta konfirmasi setiap jawaban atau bagian sebelum
+publish/schedule. Perubahan fakta, kategori, tautan, versi, atau tanggal
+berlaku membatalkan konfirmasi terkait. API publik meredaksi metadata internal
+dan menyembunyikan payload legacy yang belum diperiksa. Production memakai
+state FAQ sedang disiapkan dan dokumen belum diterbitkan. Desktop/mobile
+acceptance, 170 storefront test, 410 Laravel test dengan 409 pass dan satu
+intentional skip, full RC, dependency audit, backup/rollback, serta public
+smoke lulus. Readiness tetap 30/42 dengan 12 blocker.
+
+Release sebelumnya `20260826-4be4f28` menjalankan exact source
 `4be4f282f18c56603ef0f8fdb75246de6e641727` dengan rollback
 `20260826-347beec`. About Us membutuhkan verifikasi halaman, catatan internal,
 dan konfirmasi setiap section sebelum publish/schedule. Perubahan fakta

@@ -78,7 +78,19 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260826-4be4f28` memakai source
+Release production terbaru `20260826-44edf06` memakai source
+`44edf06ddf2cb05013cdb7806892271c8113e40f` dan rollback
+`20260826-4be4f28`. FAQ dan tiga policy membutuhkan konfirmasi halaman, catatan
+pemeriksaan internal, serta konfirmasi setiap jawaban atau bagian sebelum
+publish/schedule. Perubahan fakta, kategori, tautan, versi, atau tanggal
+berlaku membatalkan konfirmasi terkait. API publik meredaksi metadata internal
+dan menyembunyikan payload legacy yang belum diperiksa; production menampilkan
+FAQ sedang disiapkan dan dokumen belum diterbitkan. Desktop/mobile, 170
+storefront test, 410 full Laravel test dengan 409 pass dan satu intentional
+skip, full RC, dependency audit, backup/rollback, serta public smoke lulus.
+Readiness tetap 30/42 dengan 12 blocker.
+
+Release sebelumnya `20260826-4be4f28` memakai source
 `4be4f282f18c56603ef0f8fdb75246de6e641727` dan rollback
 `20260826-347beec`. About Us membutuhkan verifikasi halaman, catatan internal,
 dan konfirmasi setiap section story, warehouse, serta process sebelum publish

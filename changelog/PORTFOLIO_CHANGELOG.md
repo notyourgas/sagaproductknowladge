@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-26 - COYABAG FAQ and policy verification integrity
+
+- Exact source `44edf06ddf2cb05013cdb7806892271c8113e40f` aktif pada immutable
+  Hostinger release `20260826-44edf06` dengan rollback `20260826-4be4f28`.
+- Publish/schedule FAQ dan policy memerlukan pemeriksaan halaman dan setiap
+  item; perubahan material membatalkan konfirmasi terkait.
+- API publik meredaksi metadata internal dan gagal tertutup untuk payload lama.
+  Desktop/mobile acceptance, full RC, dan public smoke lulus.
+- Delivery `PRODUCTION_DEPLOYED`; activation/business readiness `BLOCKED`;
+  readiness 30/42 dan commerce tetap fail-closed.
+
 ## 2026-08-26 - COYABAG About Us fact verification integrity
 
 - Exact source `4be4f282f18c56603ef0f8fdb75246de6e641727` aktif pada immutable

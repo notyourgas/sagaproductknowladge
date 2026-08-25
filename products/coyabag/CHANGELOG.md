@@ -4,6 +4,21 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-26 - FAQ and policy verification integrity production release
+
+- Klasifikasi: `CONFIRMED` dari exact source
+  `44edf06ddf2cb05013cdb7806892271c8113e40f`, immutable Hostinger release
+  `20260826-44edf06`, rollback `20260826-4be4f28`, dan runtime verification.
+- FAQ dan policy memerlukan pemeriksaan halaman dan setiap item; edit fakta,
+  kategori, tautan, versi, atau tanggal berlaku membatalkan konfirmasi.
+- API publik meredaksi metadata internal dan menyembunyikan payload legacy
+  yang belum diperiksa. Production memakai state jujur tanpa copy pengganti.
+- 170 storefront test, 410 full Laravel test dengan 409 pass dan satu
+  intentional skip, full RC, dependency audit, backup/rollback,
+  desktop/mobile acceptance, dan public smoke lulus.
+- Delivery `PRODUCTION_DEPLOYED`; readiness tetap 30/42 dengan 12 blocker.
+  Activation dan business readiness `BLOCKED`; commerce tidak diaktifkan.
+
 ## 2026-08-26 - About Us fact verification integrity production release
 
 - Klasifikasi: `CONFIRMED` dari exact source

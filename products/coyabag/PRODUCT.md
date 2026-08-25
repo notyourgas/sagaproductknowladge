@@ -61,9 +61,21 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260826-4be4f28` dengan source
-  `4be4f282f18c56603ef0f8fdb75246de6e641727` melayani production;
-  rollback langsung `20260826-347beec` dipertahankan.
+- Release aktif `20260826-44edf06` dengan source
+  `44edf06ddf2cb05013cdb7806892271c8113e40f` melayani production;
+  rollback langsung `20260826-4be4f28` dipertahankan.
+- FAQ dan tiga policy memerlukan konfirmasi halaman, catatan pemeriksaan
+  internal, serta konfirmasi setiap jawaban/bagian sebelum publish atau
+  schedule. Perubahan fakta, kategori, tautan, versi, atau tanggal berlaku
+  membatalkan konfirmasi terkait.
+- API publik meredaksi metadata pemeriksaan dan hanya mengirim konten yang
+  dikonfirmasi. Payload legacy yang belum diperiksa sekarang tampil sebagai
+  FAQ sedang disiapkan atau dokumen belum diterbitkan.
+- 170 storefront test, 410 full Laravel test dengan 409 pass dan satu
+  intentional skip, full RC, dependency audit, desktop/mobile acceptance,
+  immutable deploy, dan public smoke lulus. Readiness tetap 30/42 dengan 12
+  blocker.
+- Release sebelumnya `20260826-4be4f28` menjalankan verifikasi fakta About Us.
 - About Us memakai verifikasi fakta pada halaman dan setiap section story,
   warehouse, serta process. Draft belum lengkap tetap dapat disimpan, tetapi
   publish/schedule gagal tertutup sampai catatan dan seluruh konfirmasi lengkap.

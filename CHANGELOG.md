@@ -1,5 +1,23 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-26 - COYABAG FAQ and policy verification sync
+
+- Ringkasan: sinkronisasi pemeriksaan halaman/item, invalidasi otomatis setelah
+  edit material, public redaction, dan state jujur untuk FAQ serta policy.
+- Alasan: pelanggan tidak boleh menerima jawaban operasional atau dokumen
+  kebijakan yang belum diperiksa sebagai informasi resmi.
+- Produk/area: COYABAG FAQ/policy, CMS admin, public API, UI/UX,
+  accessibility, security, QA, dan release provenance.
+- Klasifikasi: `CONFIRMED`; source exact
+  `44edf06ddf2cb05013cdb7806892271c8113e40f`, release `20260826-44edf06`.
+- Production berubah: ya, surface storefront dan admin. Delivery
+  `PRODUCTION_DEPLOYED`; activation/business readiness `BLOCKED`; commerce
+  tetap fail-closed.
+- Dokumen terdampak: Product, Dossier, changelog COYABAG, portfolio, master
+  knowledge, root changelog, dan sync status.
+- Next action: Cycle 2 Responsive Integrity; 12 blocker activation tetap
+  ditutup melalui gate owner/provider/operasional terpisah.
+
 ## 2026-08-26 - COYABAG About Us fact verification sync
 
 - Ringkasan: sinkronisasi verifikasi halaman dan section About, invalidasi
