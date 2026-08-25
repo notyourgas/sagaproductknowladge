@@ -12,7 +12,8 @@ credential, PII, identifier tenant/perangkat, atau detail provider sensitif.
 - Delivery: `LOCAL_VALIDATED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED`
-- Provenance: exact private head `a9518e0`, liveness peer acceptance `7b44101`,
+- Provenance: exact private head `b17712d`, clean-checkout setup fix `fbf01b6`,
+  liveness peer acceptance `7b44101`,
   encrypted event-scoped face search
   `96df668`, resumable multipart feature `3fc397f`,
   staging-control/preview baseline `d2b0c5c`, organizer safe metrics `46d7a4b`,
@@ -182,6 +183,12 @@ fotografer desktop-optimized.
 - Lima shell script lulus Git Bash `bash -n`; staging Compose lulus static
   interpolation memakai official checksum-verified Docker Compose v5.5.0 dan
   synthetic-only values. Tidak ada image/container yang dijalankan.
+- Detached clean checkout exact remote `fbf01b6` pada Windows dengan
+  `core.autocrlf=true` lulus instruksi README tanpa hak admin: `corepack pnpm`
+  frozen install, copy `.env.example`, forced uncached lint/typecheck/test/build,
+  dan 53 browser test dengan tiga intentional skip. `.gitattributes` kini
+  memaksa LF lintas repository agar checkout Windows tidak mengubah format.
+  Service-dependent integration skip tetap terbuka sampai isolated staging.
 - Preview protected `dpl_E749gUQc7iVtGCauGvVLa1swk59j` dari baseline `7b44101`
   berstatus `READY`; manifest, service worker, offline, BIB, selfie-capture, dan
   photographer jobs route 200 serta

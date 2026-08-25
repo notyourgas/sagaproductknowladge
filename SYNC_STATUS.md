@@ -12,14 +12,24 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T18:05:37+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T18:23:18+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `531b013` |
-| Informasi terakhir disinkronkan | SagaView S288 recovery mutex exact `10cb9cf7454f7c89f3892c4439b1d35938be5168`. |
-| Status sinkronisasi | `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED_GLOBAL_TEST / BUSINESS_READY=false`. |
-| Konflik | Tidak ada konflik kontrak SagaView; satu fixture SagaBook tetap blocker global dan tidak diubah dari scope ini. |
-| Error | Full monorepo 1.014/1.015 karena fixture SagaBook berbasis waktu; recovery/deploy tetap dilarang. |
+| Baseline sebelum pembaruan | `2e52490` |
+| Informasi terakhir disinkronkan | Snap and Fit clean-checkout setup fix `fbf01b6` dan evidence head `b17712d`. |
+| Status sinkronisasi | `LOCAL_VALIDATED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=BLOCKED`. |
+| Konflik | Tidak ada konflik kontrak; perubahan hanya menambah evidence setup dan tidak mengubah runtime. |
+| Error | Tidak ada error knowledge; integration service, hosted CI, dan isolated staging tetap external gate. |
+
+## File yang berubah pada sinkronisasi ini (Snap and Fit clean checkout)
+
+- `products/snap-and-fit/PRODUCT.md`
+- `products/snap-and-fit/DOSSIER.md`
+- `products/snap-and-fit/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaView S288 recovery mutex)
 

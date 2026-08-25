@@ -47,7 +47,8 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 - Delivery: `LOCAL_VALIDATED`.
 - Activation: `NOT_PRODUCTION_ACTIVATED`.
 - Business readiness: `BLOCKED`.
-- Exact private `main` head `a9518e0`; liveness peer acceptance berasal dari
+- Exact private `main` head `b17712d`; clean-checkout setup fix berasal dari
+  `fbf01b6`, liveness peer acceptance berasal dari
   `7b44101`, encrypted event-scoped face search berasal dari
   `96df668`, resumable multipart HiRes berasal dari
   `3fc397f`, staging controls dan preview baseline dari `d2b0c5c`, CloudFront private
@@ -77,6 +78,12 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   staging Compose lulus static interpolation dengan official checksum-verified
   Docker Compose v5.5.0 tanpa menjalankan image/container. Frozen install,
   fresh web build, dan targeted liveness peer check juga lulus.
+- Detached clean checkout dari exact remote `fbf01b6` pada Windows dengan
+  `core.autocrlf=true` lulus setup README memakai non-admin `corepack pnpm`,
+  frozen install, copy `.env.example`, forced uncached lint/typecheck/test/build,
+  serta 53 browser test dengan tiga intentional skip. Repository-wide LF policy
+  mencegah format drift pada Windows; integration-service skip tetap tidak
+  dianggap sebagai runtime staging evidence.
 
 ## Batas klaim
 

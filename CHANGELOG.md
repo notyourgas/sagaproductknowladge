@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - Snap and Fit clean-checkout acceptance sync
+
+- Produk/area: reproducible setup, Windows line endings, local validation, dan
+  source handoff.
+- Informasi `CONFIRMED` berasal dari exact setup fix `fbf01b6`, evidence head
+  `b17712d`, dan detached clean-checkout acceptance.
+- Knowledge mencatat non-admin `corepack pnpm`, frozen install, copy
+  `.env.example`, forced uncached lint/typecheck/test/build, 53 browser test
+  dengan tiga intentional skip, dan repository-wide LF policy.
+- Delivery tetap `LOCAL_VALIDATED`; service-dependent integration, hosted CI,
+  isolated staging, provider runtime, activation, dan production tidak berubah.
+- Dokumen terdampak: Snap and Fit product/dossier/changelog, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-25 - SagaView S288 recovery mutex sync
 
 - Produk/area: SagaView inactive rollback recovery, concurrency, atomic pointer,

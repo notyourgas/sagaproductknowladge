@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-25 - Snap and Fit reproducible clean-checkout acceptance
+
+- Exact setup fix `fbf01b6` dan evidence head `b17712d` membuktikan README dari
+  detached remote checkout baru pada Windows dengan `core.autocrlf=true`.
+- Non-admin `corepack pnpm`, frozen install, copy `.env.example`, forced uncached
+  lint/typecheck/test/build, dan 53 browser test dengan tiga intentional skip
+  lulus; repository-wide LF policy menutup format drift Windows.
+- Delivery tetap `LOCAL_VALIDATED`. Integration service, hosted CI, isolated
+  staging, provider, dan production gates tidak berubah.
+
 ## 2026-08-25 - SagaView S288 recovery mutex hardening
 
 - Exact pushed source `10cb9cf7454f7c89f3892c4439b1d35938be5168`

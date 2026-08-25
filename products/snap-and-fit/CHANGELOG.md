@@ -10,6 +10,19 @@ production, activation, dan business readiness.
 Mock, fixture, preview frontend, dan test lokal bukan bukti provider atau
 production activation.
 
+## 2026-08-25 - Reproducible Windows clean-checkout acceptance
+
+- Exact private setup fix `fbf01b6` dan evidence head `b17712d` berstatus
+  `LOCAL_VALIDATED`.
+- Detached checkout dari exact remote pada Windows `core.autocrlf=true` lulus
+  instruksi README memakai non-admin `corepack pnpm`, frozen install, copy
+  `.env.example`, dan forced uncached lint/typecheck/test/build.
+- Browser acceptance dari checkout bersih lulus 53 test dengan tiga intentional
+  skip. Repository-wide LF policy mencegah CRLF format drift.
+- Service-dependent integration skip, hosted CI, isolated runtime, migration,
+  load, backup/restore, dan provider canary tetap gate. Production, activation,
+  dan business readiness tidak berubah.
+
 ## 2026-08-25 - Liveness React peer acceptance dan protected preview
 
 - Exact private feature `7b44101` dan documentation head `a9518e0` berstatus
