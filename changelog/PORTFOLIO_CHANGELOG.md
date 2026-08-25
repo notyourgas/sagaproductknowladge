@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-26 - COYABAG payment handoff and safe reconciliation
+
+- Exact source `0a57b75839808af865f9272027ed5a02fde8de9d` aktif pada immutable
+  Hostinger release `20260826-0a57b75` dengan rollback `20260825-e684ae3`.
+- Checkout selesai dan Order Status berbagi satu server-authoritative payment
+  action dengan tab handoff, manual/automatic status refresh, timestamp,
+  network recovery, concurrency lock, dan HTTPS-only redirect.
+- Full regression, sembilan payment scenario, responsive/accessibility live,
+  security/build, backup/rollback, dan public smoke lulus tanpa order atau
+  provider production.
+- Delivery `PRODUCTION_DEPLOYED`; activation/business readiness `BLOCKED`;
+  readiness 30/42 dan commerce tetap fail-closed.
+
 ## 2026-08-26 - SagaView guarded backend/Owner production release
 
 - Backend/Owner exact `8d84c60c86131892a2ae3727670b0468b64fa81b` aktif sebagai

@@ -1,6 +1,6 @@
 # COYABAG Product Knowledge
 
-Updated: 25 Agustus 2026
+Updated: 26 Agustus 2026
 Evidence status: production surfaces + blocked commerce activation
 
 ## Tujuan dokumen
@@ -61,17 +61,22 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260825-e684ae3` dengan source
-  `e684ae38f19a4e7f17ead395903c3457946ed011` melayani production;
-  rollback langsung `20260825-5cc10ec` dipertahankan.
+- Release aktif `20260826-0a57b75` dengan source
+  `0a57b75839808af865f9272027ed5a02fde8de9d` melayani production;
+  rollback langsung `20260825-e684ae3` dipertahankan.
+- Checkout selesai dan Order Status memakai satu action pembayaran dari server.
+  Customer dapat membuka gateway pada tab baru, melihat waktu status terakhir
+  diperiksa, dan meminta pemeriksaan ulang tanpa menandai order lunas dari
+  client. Error mempertahankan order, outcome ambigu tidak di-retry otomatis,
+  request paralel dideduplicasi, dan hanya redirect HTTPS yang dapat dibuka.
 - Checkout Detail memvalidasi nama, penerima, WhatsApp, email, destination
   exact, alamat, kode pos, catatan, dan quote sebelum payment selection. Error
   summary serta error inline memindahkan fokus ke field yang perlu diperbaiki;
   penolakan server kembali ke Detail tanpa menghapus Cart.
 - Form customer/destination dimuat sebagai lazy feature dengan skeleton dan CTA
-  terkunci sampai field siap. Performance budget lulus pada entry 193,5 KiB,
-  initial JavaScript 146,3 KiB gzip, initial CSS 157,3 KiB, dan worst-route CSS
-  31 KiB gzip.
+  terkunci sampai field siap. Performance budget terbaru lulus pada entry 195,2
+  KiB, initial JavaScript 146,8 KiB gzip, initial CSS 159 KiB, dan worst-route
+  CSS 31,4 KiB gzip.
 - Cart page dan drawer menyediakan bulk clear dengan konfirmasi inline yang
   memfokuskan `Batal` lebih dulu. Undo memulihkan identitas produk/varian exact
   dalam urutan semula dan tidak menduplikasi item yang sudah ditambahkan lagi.

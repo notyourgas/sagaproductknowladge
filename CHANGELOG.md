@@ -1,5 +1,25 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-26 - COYABAG payment handoff reconciliation sync
+
+- Ringkasan: sinkronisasi payment tab handoff, manual/automatic server status
+  reconciliation, timestamp, network recovery, request deduplication,
+  HTTPS-only redirect, dan minimal support payload.
+- Alasan: customer membutuhkan jalur kembali dari gateway yang jelas tanpa CTA
+  ganda, sukses palsu, atau retry otomatis pada outcome ambigu.
+- Produk/area: COYABAG Checkout, Order Status, payment UX, accessibility,
+  privacy, security, reliability, release, dan rollback.
+- Klasifikasi: `CONFIRMED`; source
+  `0a57b75839808af865f9272027ed5a02fde8de9d`, release
+  `20260826-0a57b75`, rollback `20260825-e684ae3`, runtime verification.
+- Production berubah: ya. Delivery `PRODUCTION_DEPLOYED`; activation dan
+  business readiness `BLOCKED`. Readiness 30/42 dengan 12 blocker; commerce
+  tetap fail-closed.
+- Dokumen terdampak: COYABAG product/dossier/changelog, portfolio, master
+  knowledge, root changelog, dan sync status.
+- Blocker/next action: credential/UAT payment, governance/privacy, object
+  storage/media, email/notification, dan owner 2FA tetap terbuka.
+
 ## 2026-08-26 - SagaView S286/S287 deploy dan S288 recovery sync
 
 - Ringkasan: sinkronisasi retention guard exact, recovery rollback, perbaikan

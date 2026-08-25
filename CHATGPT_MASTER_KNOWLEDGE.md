@@ -3428,13 +3428,23 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release aktif `20260825-e684ae3` menjalankan exact source
+Release aktif `20260826-0a57b75` menjalankan exact source
+`0a57b75839808af865f9272027ed5a02fde8de9d` dengan rollback
+`20260825-e684ae3`. Checkout selesai dan Order Status memakai satu payment
+action server-authoritative. Customer mendapat tab handoff, manual/return-tab
+status refresh, timestamp, dan explicit network recovery tanpa client-side paid
+confirmation. Request paralel dideduplicasi, outcome ambigu fail-closed,
+redirect wajib HTTPS, dan support payload hanya membawa order code. Full
+regression, sembilan payment scenario, responsive/accessibility live,
+security/build, backup/rollback, dan public smoke lulus tanpa order atau
+provider production; readiness tetap 30/42 dengan 12 blocker.
+
+Release sebelumnya `20260825-e684ae3` menjalankan exact source
 `e684ae38f19a4e7f17ead395903c3457946ed011` dengan rollback
 `20260825-5cc10ec`. Checkout Detail memvalidasi customer/contact, destination
 exact, alamat, kode pos, catatan, dan quote aktif sebelum payment selection.
 Error summary/focus, safe server-422 mapping, lazy form, skeleton, serta CTA
-loading gate lulus empat viewport dan public acceptance. Performance gate lulus
-tanpa order production; readiness tetap 30/42 dengan 12 blocker.
+loading gate lulus empat viewport tanpa order production.
 
 Release sebelumnya `20260825-0c4104b` menjalankan exact source
 `0c4104b080e5575010b0fa545fe5e05aaf6f7daa` dengan rollback

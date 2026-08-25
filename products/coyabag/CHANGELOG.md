@@ -4,6 +4,23 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-26 - Payment handoff and safe reconciliation production release
+
+- Klasifikasi: `CONFIRMED` dari exact source
+  `0a57b75839808af865f9272027ed5a02fde8de9d`, immutable Hostinger release
+  `20260826-0a57b75`, rollback `20260825-e684ae3`, dan runtime verification.
+- Checkout selesai dan Order Status memakai satu action card; customer dapat
+  membuka gateway, kembali, dan memeriksa status server secara manual maupun
+  otomatis tanpa konfirmasi lunas dari client.
+- Network error mempertahankan order, outcome ambigu fail-closed, request
+  paralel dideduplicasi, redirect non-HTTPS ditolak, dan support gateway hanya
+  membawa kode order minimum.
+- 153 storefront unit, 398 Laravel test, sembilan payment browser scenario,
+  Checkout regression, responsive/accessibility fixture dan live, security,
+  build, backup/rollback, serta public smoke lulus tanpa order production.
+- Delivery `PRODUCTION_DEPLOYED`; readiness tetap 30/42 dengan 12 blocker.
+  Activation dan business readiness `BLOCKED`; commerce tidak diaktifkan.
+
 ## 2026-08-25 - Checkout customer details integrity production release
 
 - Klasifikasi: `CONFIRMED` dari exact source

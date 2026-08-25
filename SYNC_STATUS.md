@@ -12,12 +12,35 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-26T00:12:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-26T00:13:32+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | `c78592d5688f96eb636e983985eaa0d2a710ae96` |
-| Informasi terakhir disinkronkan | SagaView S286/S287 production deploy dan S288 guarded recovery. |
-| Status sinkronisasi | `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`; authenticated operator UAT masih terbuka. |
+| Informasi terakhir disinkronkan | COYABAG payment handoff and safe reconciliation. |
+| Status sinkronisasi | `PRODUCTION_DEPLOYED / activation BLOCKED / business readiness BLOCKED`; commerce fail-closed. |
+
+## COYABAG payment handoff and safe reconciliation
+
+- Exact source `0a57b75839808af865f9272027ed5a02fde8de9d` aktif pada immutable
+  release `20260826-0a57b75`; rollback `20260825-e684ae3`.
+- Checkout selesai dan Order Status berbagi satu payment action dengan tab
+  handoff, manual/automatic server refresh, timestamp, network recovery,
+  request deduplication, HTTPS-only redirect, dan minimal support payload.
+- Full regression, sembilan payment scenario, responsive/accessibility live,
+  security/build, backup/rollback, serta public smoke lulus tanpa order atau
+  provider production.
+- Readiness tetap 30/42 dengan 12 blocker; commerce, activation, dan business
+  readiness tetap blocked.
+
+## File yang berubah pada sinkronisasi ini (COYABAG Payment handoff)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaView guarded deploy and recovery
 
