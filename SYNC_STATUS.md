@@ -12,12 +12,30 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T23:03:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T23:34:09+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `ee3b3b65cf02845065aae0a96637fb25ea608e4a` |
-| Informasi terakhir disinkronkan | COYABAG Cart bulk clear and Undo immutable release `20260825-0c4104b`. |
-| Status sinkronisasi | `PRODUCTION_DEPLOYED / COMMERCE_ACTIVATION_BLOCKED / BUSINESS_READINESS_BLOCKED`. |
+| Baseline sebelum pembaruan | `2a0cf6306bad3f393f36378af346b59826c35d82` |
+| Informasi terakhir disinkronkan | SagaWork Pilot Canary 01 owner scope freeze. |
+| Status sinkronisasi | `STAGING_DEPLOYED / PRE_ADMISSION_NO_GO / NOT_PRODUCTION_ACTIVATED / BUSINESS_READINESS_BLOCKED_EXTERNAL`. |
+
+## SagaWork Pilot Canary 01 scope freeze
+
+- Public-safe code `KANANTA-MADIUN-CANARY-01`: satu lokasi Madiun, 5–10 Staff, 26–28 Agustus 2026, support enabled/default 09.00–18.00 WIB, manual parallel run, performance OFF.
+- Exact target source/runtime `d36a59f` dan protected Preview `dpl_9zvZTjgQBRhHJm5pVXH4rmtqQaBg`; restricted draft admission tetap fail-closed `NO_GO`.
+- Production/activation tidak berubah. Exact roster/champion, policy/privacy, UAT, hosted CI/provider/offsite/independent review, public route/incident/parallel approval, 16 PASS evidence, signed receipt, dan Andreas Go masih pending.
+
+## File yang berubah pada sinkronisasi ini (SagaWork Pilot Canary 01)
+
+- `products/sagawork/PRODUCT.md`
+- `products/sagawork/DOSSIER.md`
+- `products/sagawork/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `DECISIONS.md`
+- `GAPS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG Cart bulk clear and Undo integrity
 

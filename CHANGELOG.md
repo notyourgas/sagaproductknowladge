@@ -1,5 +1,13 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - SagaWork Pilot Canary 01 scope sync
+
+- Ringkasan: menyinkronkan owner-approved canary code, lokasi, cohort range, tanggal, support default, performance-off, parallel-run, exact target, dan fail-closed admission status.
+- Produk/area: SagaWork pilot operations, product gate, support, performance boundary, release binding, dan readiness.
+- Klasifikasi: `CONFIRMED` untuk scope owner; support 09.00–18.00 WIB adalah default rekomendasi sampai direvisi. Source/runtime `d36a59fb456106eafa3d8b3e797d42a4aac67a68`; Preview `dpl_9zvZTjgQBRhHJm5pVXH4rmtqQaBg`.
+- Production berubah: tidak. Delivery `STAGING_DEPLOYED`; activation `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED_EXTERNAL`.
+- Blocker: exact roster, individual champion, policy/privacy/DPIA, UAT, hosted CI/provider/offsite/independent review, public route/monitoring, incident rehearsal, signed parallel plan, receipt, dan Andreas Go.
+
 ## 2026-08-25 - COYABAG Cart bulk clear and Undo integrity sync
 
 - Ringkasan: sinkronisasi bulk clear Cart dengan safe-first confirmation,

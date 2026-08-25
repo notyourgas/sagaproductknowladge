@@ -8,6 +8,14 @@ Mencatat perubahan material SagaWork dengan status delivery dan activation yang 
 
 Synthetic fixture, preview, dan staging bukan bukti real pilot atau production activation.
 
+## 2026-08-25 - Pilot Canary 01 scope freeze
+
+- `CONFIRMED` oleh Andreas: pilot pertama memakai kode public-safe `KANANTA-MADIUN-CANARY-01`, satu company/satu lokasi Kota Madiun, 5–10 Staff, mulai 26 Agustus 2026, default tiga hari, support enabled, dan performance OFF.
+- Default support adalah 09.00–18.00 WIB dengan update SEV-1 setiap 60 menit; exact jam dapat direvisi owner tanpa mengubah scope lain.
+- Manual attendance tetap comparison source dan SagaWork bukan statutory payroll engine. Target dibind pada source/runtime `d36a59f` serta protected Preview `dpl_9zvZTjgQBRhHJm5pVXH4rmtqQaBg`.
+- Restricted charter tersedia; admission draft tetap `NO_GO` dan fail-closed verifier menolaknya. Exact roster/count, individual HR champion, signed policy/privacy, 15 evidence lain, receipt, dan activation masih pending.
+- Production berubah: tidak. Delivery `STAGING_DEPLOYED`; activation `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED_EXTERNAL`.
+
 ## 2026-08-25 - External evidence execution pack and exact handoff refresh
 
 - `CONFIRMED` dari exact handoff/runtime `d36a59fb456106eafa3d8b3e797d42a4aac67a68` dan protected Preview `dpl_9zvZTjgQBRhHJm5pVXH4rmtqQaBg`.

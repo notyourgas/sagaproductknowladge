@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-08-25 - SagaWork Pilot Canary 01 scope freeze
+
+- Andreas mengunci pilot public-safe `KANANTA-MADIUN-CANARY-01`: satu lokasi Madiun, 5–10 Staff, mulai 26 Agustus, tiga hari, support enabled, performance OFF, dan manual parallel run.
+- Exact target tetap source/runtime `d36a59f` plus protected Preview `dpl_9zvZTjgQBRhHJm5pVXH4rmtqQaBg`; restricted admission masih `NO_GO` karena evidence eksternal belum lengkap.
+- Tidak ada customer identity, roster, credential, foto/GPS, atau raw evidence yang dipublikasikan. Production dan activation tidak berubah; business readiness tetap blocked external.
+
 ## 2026-08-25 - SagaView S288 rollback retention hardening
 
 - Recovery rollback 21:23 WIB diregresikan satu menit kemudian ketika service

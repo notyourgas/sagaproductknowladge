@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-105 - SagaWork Pilot Canary 01 memakai scope Madiun dan performance OFF
+
+| Field | Value |
+|---|---|
+| Tanggal | 2026-08-25 |
+| Topik | Scope dan admission pilot pertama SagaWork |
+| Keputusan | Pilot public-safe `KANANTA-MADIUN-CANARY-01` adalah satu company/satu lokasi Kota Madiun, 5–10 Staff, mulai 26 Agustus 2026, default tiga hari, support enabled dengan default 09.00–18.00 WIB, manual attendance parallel run, dan performance OFF. |
+| Alasan | Canary kecil membatasi blast radius, menjaga pembanding operasional, dan menghindari aktivasi performance sebelum KPI/legal/fairness evidence. |
+| Alternatif | Cohort lebih besar, multi-location, performance ON, atau activation tanpa seluruh evidence ditolak untuk pilot pertama. |
+| Dampak | Scope dapat disiapkan, tetapi real-data activation tetap NO_GO sampai exact roster/champion, seluruh 16 evidence, signed receipt, dan change window disetujui. |
+| Pemberi keputusan | Andreas |
+| Status | `CONFIRMED / PRE_ADMISSION / NO_GO` |
+| Dokumen terkait | [SagaWork Product](products/sagawork/PRODUCT.md), [SagaWork Dossier](products/sagawork/DOSSIER.md), [SagaWork Changelog](products/sagawork/CHANGELOG.md), [Gaps](GAPS.md) |
+
 ## DEC-104 - S288 hanya boleh memulihkan rollback inactive
 
 | Field | Isi |
