@@ -10,6 +10,23 @@ production, activation, dan business readiness.
 Mock, fixture, preview frontend, dan test lokal bukan bukti provider atau
 production activation.
 
+## 2026-08-25 - Privacy-safe installable PWA shell
+
+- Exact private feature source `141bbb5` dan documentation head `7507672`
+  berstatus `LOCAL_VALIDATED`.
+- Manifest, public icon, scoped service worker, dan safe offline page sekarang
+  membentuk installable shell. Navigation bersifat network-first; offline tidak
+  mengantre atau mengklaim mutasi berhasil.
+- Cache Storage dibatasi pada offline shell dan safe same-origin static assets.
+  API/BFF, auth, search, checkout, account, role page, private candidate media,
+  signed download, cross-origin response, dan mutation tidak disimpan.
+- Full validation, 53 API test dengan sembilan external-service skip terkontrol,
+  20 worker test dengan empat skip, 52 browser test dengan dua intentional skip,
+  build, dan dependency audit nol vulnerability lulus.
+- Protected preview `dpl_9HVaRkahXkayYALkmsRxU515teaR` `READY`; manifest,
+  service worker, offline, dan BIB route 200, sementara backend 503 fail-closed.
+  Production tidak berubah.
+
 ## 2026-08-25 - Private candidate confirmation preview
 
 - Exact private feature source `c17d56d` dan documentation head `603c82a`

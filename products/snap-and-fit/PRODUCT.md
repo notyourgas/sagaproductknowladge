@@ -47,8 +47,9 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 - Delivery: `LOCAL_VALIDATED`.
 - Activation: `NOT_PRODUCTION_ACTIVATED`.
 - Business readiness: `BLOCKED`.
-- Exact source head `603c82a` berada di private `main`; private candidate
-  confirmation preview berasal dari `c17d56d`, secure multi-photo event
+- Exact source head `7507672` berada di private `main`; privacy-safe installable
+  PWA shell berasal dari `141bbb5`, private candidate confirmation preview
+  berasal dari `c17d56d`, secure multi-photo event
   checkout berasal dari `c314024`, organizer safe event metrics
   berasal dari `46d7a4b`, photographer earning view berasal dari `0385317`,
   customer order library berasal dari `5e7e3c4`,
@@ -58,12 +59,12 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   `b09f279`, deletion/recovery hardening dari `dbbb814`, serta candidate/cart
   authority dari `09a55bd`, durable notification worker dari `d964fea`, dan
   lifecycle/retention worker dari `4d602d9`.
-- Protected Vercel preview `dpl_t5yNcUkUbVBUBtApcoBJwQCS1W3x` berstatus
-  `READY`; BIB candidate route dapat dirender tetapi
+- Protected Vercel preview `dpl_9HVaRkahXkayYALkmsRxU515teaR` berstatus
+  `READY`; manifest, service worker, offline route, dan BIB route 200 tetapi
   backend staging sengaja fail-closed.
 - Full local validation, 53 API test dengan sembilan integrasi eksternal terkontrol
   skip, 20 worker test dengan empat integrasi service-dependent skip, audit
-  dependency nol vulnerability, serta 46 browser test dengan dua viewport skip
+  dependency nol vulnerability, serta 52 browser test dengan dua viewport skip
   lulus.
 
 ## Batas klaim
@@ -87,6 +88,11 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   published dengan approved watermarked preview; response bersifat private,
   no-store, noindex/noimageindex/noarchive, dan tidak mengekspos bucket/key.
   Local/test memakai JPEG sintetis yang dilabel jelas, bukan foto peserta nyata.
+- Installable PWA memakai navigation network-first dan offline fallback yang
+  menyatakan tidak ada aksi terkirim. Cache Storage hanya mengizinkan offline
+  shell, public icon, serta same-origin static asset non-private; API, auth,
+  search, checkout, account, role page, private media, signed download, dan
+  mutasi tidak pernah disimpan.
 - Customer memiliki library 20 order terbaru yang exact-owner, menampilkan
   status payment/fulfillment dan entitlement, serta dapat menerbitkan ulang link
   social/HiRes lima menit tanpa mengekspos order customer lain.

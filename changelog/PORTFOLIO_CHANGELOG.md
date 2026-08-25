@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-25 - Snap and Fit privacy-safe installable PWA
+
+- Exact private feature source `141bbb5` dan documentation head `7507672`
+  menambahkan manifest, scoped service worker, safe offline page, dan public
+  icon untuk installable PWA shell.
+- Navigation tetap network-first. Cache audit membuktikan API, auth, search,
+  checkout, account, role page, private candidate media, signed download, dan
+  mutation tidak disimpan; offline tidak mengklaim aksi berhasil.
+- Full validation, 53 API test, 20 worker test, 52 browser test, build, serta
+  dependency audit lulus dengan external-service skip terkontrol.
+- Protected preview `dpl_9HVaRkahXkayYALkmsRxU515teaR` `READY`; PWA routes 200
+  dan backend 503 fail-closed. Delivery tetap `LOCAL_VALIDATED`; production tidak berubah.
+
 ## 2026-08-25 - Snap and Fit private candidate confirmation preview
 
 - Exact private feature source `c17d56d` dan documentation head `603c82a`

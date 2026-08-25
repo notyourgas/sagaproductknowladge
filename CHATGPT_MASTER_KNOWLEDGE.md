@@ -1,14 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 25 Agustus 2026 14:55 WIB
+Evidence cut-off: 25 Agustus 2026 15:12 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
 SagaWork active staging runtime `e7f4622` berstatus `CONFIRMED / STAGING_DEPLOYED / NOT_PRODUCTION_ACTIVATED / PILOT_READY_CANDIDATE / BUSINESS_READY=false`. Isolated Hostinger staging memakai synthetic data dan MySQL 8.4; protected Vercel preview `dpl_3nx9EfTeh5VYSTP1ta3Q7ByTpebs` `READY`; handoff/audit public-safe berada pada source `d2025e4`. Scope tervalidasi mencakup staff no-OTP dan privileged TOTP, people termasuk atomic CSV draft import tanpa account/password, scheduling/notes/swap, attendance foto+GPS, paid/unpaid break dengan payable-vs-net dan missing/long human review, default-off unscheduled draft→HR publish/resolve, correction/request, partial overtime approval, work-hours/score, period lock/reopen, retention/recovery, protected-route hardening, security/load/accessibility, manifest, backup, serta guarded rollback dua arah. Real provider/photo bytes, public route, offsite key escrow, human/device/legal/pilot evidence, named champion/company, dan activation masih blocker; payroll compliance tidak diklaim.
 
-Snap and Fit exact private source head `603c82a` berstatus `CONFIRMED /
-LOCAL_VALIDATED`; private candidate confirmation preview berasal dari
-`c17d56d`, secure multi-photo event checkout berasal dari `c314024`,
+Snap and Fit exact private source head `7507672` berstatus `CONFIRMED /
+LOCAL_VALIDATED`; privacy-safe installable PWA shell berasal dari `141bbb5`,
+private candidate confirmation preview berasal dari `c17d56d`, secure
+multi-photo event checkout berasal dari `c314024`,
 organizer safe metrics berasal dari `46d7a4b`,
 photographer earning view berasal dari `0385317`,
 customer order library berasal dari `5e7e3c4`,
@@ -19,7 +20,7 @@ privileged operations feature berasal dari `b09f279`,
 deletion/recovery hardening dari `dbbb814`, candidate/cart authority dari
 `09a55bd`, durable notification worker dari `d964fea`, lifecycle/retention
 worker dari `4d602d9`, dan protected Vercel
-preview `dpl_t5yNcUkUbVBUBtApcoBJwQCS1W3x`
+preview `dpl_9HVaRkahXkayYALkmsRxU515teaR`
 berstatus `READY`.
 Marketplace foto olahraga ini mencakup event, uploader preview 500 JPEG,
 BIB/selfie mock ber-consent, dynamic event landing, event-scoped multi-photo
@@ -42,6 +43,11 @@ same-origin BFF. Authoritative search hanya menerbitkan published asset dengan
 approved watermarked preview; response private/no-store dan
 noindex/noimageindex/noarchive, tanpa bucket/key internal. Local/test memakai
 JPEG sintetis berlabel, bukan foto peserta nyata.
+Installable PWA memakai navigation network-first dan offline fallback yang
+menyatakan tidak ada aksi terkirim. Cache hanya mengizinkan offline shell,
+public icon, dan same-origin static asset non-private; API/BFF, auth, search,
+checkout, account, role page, private media, signed download, cross-origin
+response, dan mutation tidak disimpan.
 Worker deletion
 sekarang memiliki idempotent partial retry, stale reclaim, DLQ, 30-second
 deadline sweep, safe evidence, controlled terminal-only outbox replay, dan
@@ -65,7 +71,7 @@ mewajibkan atomic Redis shared-window dengan hashed client key dan fail-closed
 503; memory mode hanya local/test. Full local gate, 53 API test,
 20 worker test,
 dependency audit nol,
-dan 46 browser test lulus; integration service-dependent
+dan 52 browser test lulus; integration service-dependent
 tetap skip terkontrol. Backend staging, isolated VPS, MySQL/Redis/S3/KMS worker
 evidence termasuk cross-instance limiter, multipart/CloudFront, real-provider deletion, external provider/legal gate,
 load/recovery/device UAT, production activation, dan business readiness belum
