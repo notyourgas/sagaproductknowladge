@@ -12,12 +12,30 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T22:31:53+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T22:40:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `da13158a00dcc88032e96a82c21945990d869278` |
-| Informasi terakhir disinkronkan | COYABAG Wishlist persistence integrity pada source `68119d2b9cbcc4b50bfceb284b0365d047c2c2ab`. |
-| Status sinkronisasi | `PRODUCTION_DEPLOYED / ACTIVATION_BLOCKED / BUSINESS_READINESS_BLOCKED`. |
+| Baseline sebelum pembaruan | `c748927d366042b21da32e36fdde19c13c91f927` |
+| Informasi terakhir disinkronkan | SagaWork transparent role-performance pada exact handoff/runtime `8f503f9aae6e5b25572a117bc0a74c6b34272d0d`. |
+| Status sinkronisasi | `STAGING_DEPLOYED / NOT_PRODUCTION_ACTIVATED / REAL_PERFORMANCE_NOT_AUTHORIZED / BUSINESS_READINESS_BLOCKED_EXTERNAL`. |
+
+## SagaWork transparent role-performance acceptance
+
+- Feature evidence `05e2b1a`; exact source/handoff Hostinger runtime `8f503f9`; protected Vercel Preview `dpl_HoQQLSG3nTMJAPnK17Ut1v9eMjm6` READY.
+- Default-off scorecard/review/appeal includes attendance cap, evidence/confidence, second reviewer, fairness schedule, Payroll denial, and no automatic employment action.
+- MySQL 65 table/23 migration/32 trigger; OpenAPI 68 path/83 operation/46 request components; 33/111 tests, 20-area smoke, security 9/9, browser/Axe 12/4, load 720/720, restore/rollback PASS.
+- Delivery `STAGING_DEPLOYED`; activation and real performance remain unauthorized. KPI/source, legal/transparency, calibration/fairness, device/human/provider/offsite/public-route/admission gates remain pending.
+
+## File yang berubah pada sinkronisasi ini (SagaWork Sprint 29)
+
+- `products/sagawork/PRODUCT.md`
+- `products/sagawork/DOSSIER.md`
+- `products/sagawork/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG Wishlist persistence integrity
 

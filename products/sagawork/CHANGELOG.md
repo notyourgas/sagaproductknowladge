@@ -8,6 +8,14 @@ Mencatat perubahan material SagaWork dengan status delivery dan activation yang 
 
 Synthetic fixture, preview, dan staging bukan bukti real pilot atau production activation.
 
+## 2026-08-25 - Transparent role-performance synthetic acceptance
+
+- `CONFIRMED` dari feature evidence `05e2b1a0d06274196912c4ea05391509e9516cd1`, exact handoff/runtime `8f503f9aae6e5b25572a117bc0a74c6b34272d0d`, protected Preview `dpl_HoQQLSG3nTMJAPnK17Ut1v9eMjm6`, dan Hostinger synthetic staging evidence.
+- Default-off role-performance menambah versioned/prospective position scorecard, attendance cap 15%, source/rubric/missing rules, evidence coverage/confidence, independent second review, Staff acknowledgement/seven-day appeal, fairness-audit schedule, separate permissions, Payroll denial, dan no-automatic-employment-action boundary.
+- 33/111 tests, 44-page build, OpenAPI 68 path/83 operasi/46 request components, smoke 20 area, abuse 9/9, workstation-to-loopback browser/Axe 12/4, load 720/720, MySQL 65 table/23 migration/32 trigger, encrypted restore zero-resurrection, serta rollback `05e2b1a → 17427f5 → 05e2b1a` lulus. Direct shared-VPS Chromium crash disimpan sebagai runner limitation.
+- Exact restricted archive 1.453.091 byte/SHA-256 `48135a5d6a46eb783f9291175ab514fd58557e8ee57c98918cd7e6f94d9902e7` dan 699-component SBOM SHA-256 `f560ad5b4c37643d3cca67dba41666ff18711296845e1cbd0bd1152addc7839d` mempunyai provenance/checksum PASS; artifact tidak dipublikasikan.
+- Delivery `STAGING_DEPLOYED`; activation `NOT_PRODUCTION_ACTIVATED`; real performance/pilot `NOT_AUTHORIZED`; business readiness `BLOCKED_EXTERNAL`. Company KPI/source/adapters, DPIA/legal/transparency, calibration/fairness, human/device UAT, provider/offsite/public route, hosted CI, signed receipt, dan Andreas Go tetap pending.
+
 ## 2026-08-25 - Security governance dan exact-release SBOM
 
 - `CONFIRMED` dari exact implementation/runtime `17427f564b87cd18d03de7764a319a14e3d99fd4`, documentation acceptance `22174f1`, protected Preview `dpl_FoFe3hCFgnJuXvTBbVxdY2rRnjh1`, dan exact Hostinger synthetic staging evidence.

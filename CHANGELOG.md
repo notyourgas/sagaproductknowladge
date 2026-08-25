@@ -1,5 +1,15 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - SagaWork Sprint 29 role-performance sync
+
+- Ringkasan: sinkronisasi default-off transparent role-performance, final exact Hostinger handoff, protected Vercel Preview, MySQL/OpenAPI expansion, recovery, dan restricted release provenance.
+- Alasan: mekanisme scorecard/review/appeal sudah lulus synthetic staging dan perlu dibedakan tegas dari validasi KPI serta aktivasi performance pada staf nyata.
+- Produk/area terdampak: SagaWork Staff/HR performance UI, authorization, API, MySQL, evidence, security, recovery, Preview, release, readiness, dan positioning.
+- Klasifikasi: `CONFIRMED`; feature evidence `05e2b1a0d06274196912c4ea05391509e9516cd1`, exact handoff/runtime `8f503f9aae6e5b25572a117bc0a74c6b34272d0d`, Preview `dpl_HoQQLSG3nTMJAPnK17Ut1v9eMjm6`.
+- File terdampak: SagaWork product/dossier/changelog, gaps, portfolio, master knowledge, root changelog, dan sync status.
+- Production berubah: tidak. Delivery `STAGING_DEPLOYED`; activation `NOT_PRODUCTION_ACTIVATED`; real performance/pilot `NOT_AUTHORIZED`; business readiness `BLOCKED_EXTERNAL`.
+- Blocker/next action: named pilot, KPI/source adapters, DPIA/legal/transparency, calibration/fairness/human oversight, real-device UAT, provider/offsite/public route, private hosted CI, independent review, 16 evidence, signed receipt, dan Andreas Go.
+
 ## 2026-08-25 - COYABAG Wishlist persistence integrity sync
 
 - Ringkasan: sinkronisasi Wishlist fail-visible untuk persistence failure,

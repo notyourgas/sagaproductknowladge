@@ -1,5 +1,12 @@
 # Portfolio Changelog
 
+## 2026-08-25 - SagaWork transparent role-performance acceptance
+
+- `CONFIRMED`: exact Hostinger synthetic handoff runtime `8f503f9aae6e5b25572a117bc0a74c6b34272d0d`, feature evidence `05e2b1a`, dan protected Preview `dpl_HoQQLSG3nTMJAPnK17Ut1v9eMjm6` tervalidasi tanpa real data/public activation.
+- Default-off role scorecard memakai versioning, attendance cap, evidence/confidence, second review, acknowledgement/appeal, fairness schedule, Payroll denial, dan no-automatic-employment-action guardrail.
+- Evidence: 33/111 tests, 44-page build, smoke 20 area, abuse 9/9, browser/Axe 12/4, load 720/720, MySQL 65/23/32, encrypted restore zero-resurrection, exact manifest 1.049 file, dan guarded rollback PASS.
+- Delivery `STAGING_DEPLOYED`; activation `NOT_PRODUCTION_ACTIVATED`; real performance/pilot `NOT_AUTHORIZED`; business readiness `BLOCKED_EXTERNAL` sampai KPI/legal/fairness/human/provider/offsite/public-route/admission gates selesai.
+
 ## 2026-08-25 - COYABAG Wishlist persistence integrity
 
 - Exact source `68119d2b9cbcc4b50bfceb284b0365d047c2c2ab` aktif pada immutable
