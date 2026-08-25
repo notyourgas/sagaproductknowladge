@@ -12,12 +12,31 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T19:37:15+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T19:48:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `31d1ee9` |
-| Informasi terakhir disinkronkan | Snap and Fit protected preview pada docs head `176cf15`. |
-| Status sinkronisasi | `LOCAL_VALIDATED / STAGING_READY=BLOCKED / ACTIVATION_BLOCKED`. |
+| Baseline sebelum pembaruan | `aa6ec590410bf88efd8ab076e9d52ce219ad0d8f` |
+| Informasi terakhir disinkronkan | SagaWork cross-platform release acceptance pada runtime `6ea328f` dan docs head `d005cfd`. |
+| Status sinkronisasi | `STAGING_DEPLOYED / PILOT_READY_CANDIDATE / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`. |
+
+## SagaWork cross-platform release acceptance
+
+- Exact implementation/runtime: `6ea328f6fbaf7052616c100abe1cacd79cadcfa2`; documentation acceptance: `d005cfde68d95da5d9a21cd1695b10aa645c9785`.
+- Protected Vercel Preview: `dpl_2zNRzrc9TpAWmPFBGP9aMyX88H7b`, `READY`; Hostinger remains isolated synthetic staging.
+- 30/95 unit test, 39-page build, 18-area smoke, 7/7 abuse, browser/Axe 12/4, isolated load 720/720, schema-2 manifest 906 file, recovery, dan exact rollback lulus.
+- ASVS dipakai sebagai 253-ID internal requirement profile, bukan certification: 140 pass internal, 79 not applicable, dan 34 pending/risk-acceptance. Mixed post-abuse latency tetap residual risk.
+- Tidak ada real data, public DNS, provider production, signed admission receipt, canary, atau pilot activation.
+
+## File yang berubah pada sinkronisasi ini (SagaWork cross-platform release)
+
+- `products/sagawork/PRODUCT.md`
+- `products/sagawork/DOSSIER.md`
+- `products/sagawork/CHANGELOG.md`
+- `GAPS.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## Snap and Fit protected preview refresh
 

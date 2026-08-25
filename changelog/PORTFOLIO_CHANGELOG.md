@@ -1,5 +1,12 @@
 # Portfolio Changelog
 
+## 2026-08-25 - SagaWork exact release dan ASVS internal disposition
+
+- Exact implementation/runtime `6ea328f6fbaf7052616c100abe1cacd79cadcfa2`, documentation acceptance `d005cfde68d95da5d9a21cd1695b10aa645c9785`, dan protected Vercel Preview `dpl_2zNRzrc9TpAWmPFBGP9aMyX88H7b` tervalidasi pada synthetic-only boundary.
+- 30/95 test, 39-page build, 18-area smoke, abuse 7/7, browser/Axe 12/4, isolated load 720/720, schema-2 manifest 906 file, encrypted recovery, dan rollback exact runtime lulus. Mixed post-abuse latency tetap residual risk.
+- ASVS 5.0 dipakai sebagai 253-ID internal requirement profile, bukan sertifikasi: 140 pass internal, 79 not applicable, dan 34 masih pending/risk-acceptance.
+- Delivery tetap `STAGING_DEPLOYED`, activation `NOT_PRODUCTION_ACTIVATED`, dan business readiness `BLOCKED_EXTERNAL`; real data, public route, legal/provider/device/human/independent evidence, signed admission, canary, serta Andreas Go masih pending.
+
 ## 2026-08-25 - Snap and Fit exact-head protected preview
 
 - Protected Vercel deployment `dpl_CeGgE8rxJX58qQpTGzdqUoPc6iQn` dari exact

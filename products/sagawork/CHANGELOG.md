@@ -8,6 +8,15 @@ Mencatat perubahan material SagaWork dengan status delivery dan activation yang 
 
 Synthetic fixture, preview, dan staging bukan bukti real pilot atau production activation.
 
+## 2026-08-25 - Exact ASVS disposition dan cross-platform release acceptance
+
+- `CONFIRMED` dari exact implementation/runtime `6ea328f6fbaf7052616c100abe1cacd79cadcfa2`, documentation acceptance `d005cfde68d95da5d9a21cd1695b10aa645c9785`, protected Preview `dpl_2zNRzrc9TpAWmPFBGP9aMyX88H7b`, dan exact Hostinger synthetic staging evidence.
+- LF/CRLF-safe OpenAPI/ASVS verifiers, exact session-cookie harness, platform-aware standalone finalizer, dan schema-2 manifest memverifikasi 906 runtime/server/static/public file. Tracked-source artifact restricted 1.247.818 byte/468 tar entries mempunyai SHA-256 `5db56f0e022f8ff5bc840a9788bbcf2ad8563c2dcef271ac5da3b94f4972620f` dan tidak dipublikasikan di knowledge repo.
+- 30/95 unit test, 39-page build, 18-area smoke, security abuse 7/7, browser/Axe 12/4, isolated load 720/720 tanpa error, encrypted recovery, dan rollback `6ea328f → 62d5bf2 → 6ea328f` lulus.
+- Internal ASVS 5.0 profile mempunyai 253 ID: 140 `PASS_INTERNAL`, 79 `NOT_APPLICABLE`, 15 `PENDING_INTERNAL`, 18 `PENDING_EXTERNAL`, dan 1 `RISK_ACCEPTANCE_REQUIRED`. Ini bukan sertifikasi/full-Level-2 claim; 34 non-pass disposition dan independent verification tetap pending.
+- Mixed auth-abuse→load sequence mencatat transient readiness p95 691,6 ms versus target 500 ms walaupun 300/300 response HTTP 200; isolated rerun p95 158,0 ms. Shared-VPS/noisy-neighbor risk dipertahankan.
+- Delivery tetap `STAGING_DEPLOYED`; activation `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED_EXTERNAL`. Tidak ada real data, public DNS, provider production, signed real admission receipt, atau closed-beta activation.
+
 ## 2026-08-25 - Fail-closed signed pilot admission
 
 - `CONFIRMED` dari implementation `3bcdf06`, acceptance `a36ac8e`, documentation head `7ec66ff`, exact active isolated staging `e003a3d`, serta local full-regression/artifact evidence.
