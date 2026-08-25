@@ -9,7 +9,7 @@ Menjadi detail public-safe produk, workflow, teknologi, bukti, risiko, dan gate 
 - Updated: `25 Agustus 2026`
 - Delivery: `STAGING_DEPLOYED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
-- Business readiness: `BLOCKED`
+- Business readiness: `BLOCKED_EXTERNAL`; internal disposition `PILOT_READY_CANDIDATE`
 
 ## Overview dan pengguna
 
@@ -21,12 +21,14 @@ Staff memperoleh action-first home, jadwal/note, swap, request, serta attendance
 
 ## Technical overview dan validasi
 
-Next.js 16 PWA, React 19, TypeScript, Drizzle, MySQL 8.4, Node 22, systemd, isolated Hostinger staging, dan protected Vercel preview. Active revision `74cc833` memiliki 19 migration, 56 application table, 26 append-only trigger, dan manifest 24 artifact. 23 test file/71 unit test, smoke 14 area, security abuse 7/7, browser+Axe 10 pass/2 intentional mobile privileged skip, load, recovery, timer, dan rollback lulus pada synthetic staging. Protected Staff/HR layouts dipaksa dynamic sehingga build tanpa database environment tidak dapat memublikasikan workspace statis.
+Next.js 16 PWA, React 19, TypeScript, Drizzle, MySQL 8.4, Node 22, systemd, isolated Hostinger staging, dan protected Vercel preview. Active runtime `e7f4622` memiliki 20 migration, 56 application table, 26 append-only trigger, dan manifest 25 artifact. 23 test file/72 unit test, smoke 15 area, security abuse 7/7, browser+Axe 12 pass/4 intentional scope skip, 720-request load, recovery, timer, dan guarded rollback dua arah lulus pada synthetic staging. Protected Staff/HR layouts dipaksa dynamic sehingga build tanpa database environment tidak dapat memublikasikan workspace statis.
 
 Bulk onboarding CSV tervalidasi untuk maksimal 500 baris/1 MB: template tetap, parser quoted UTF-8, normalisasi, tenant/location/duplicate checks, preview hash, commit atomik, hasil per baris, serta audit batch/per-employee. Hasil selalu draft tanpa account/password; HR tetap mengundang staff satu per satu. XLSX dan downloadable safe error export belum tersedia.
 
 Attendance policy versioned mengatur paid/unpaid break, toleransi long break, serta human review untuk missing/long break. Report, CSV, snapshot, dan component line memisahkan net produktif dari payable. Anomali membuat risk/exception evidence tanpa penalti disipliner otomatis; snapshot locked lama tetap dapat diekspor tanpa dimutasi.
 
+Absensi darurat tanpa jadwal memakai opt-in policy default-off. Satu draft per staff/tanggal mengikat lokasi aktif, photo+GPS evidence, check-in/out aktual, human-review exception, dan payroll blocker. Draft tidak dapat dipublish sebelum checkout; HR publish lalu resolve membuka rekonsiliasi. Dismiss membatalkan draft. Tidak ada konsekuensi otomatis.
+
 ## Positioning, pricing, risiko
 
-Positioning sementara: workforce operations action-first dan evidence-based untuk tim shift Indonesia, bukan HRIS enterprise lengkap. Pricing/SLA `NEEDS CONFIRMATION`. Provider, legal/privacy, device behavior, incident alert, XLSX/error export, employer-ordered overtime/holiday-rest compliance, real pilot, dan willingness-to-pay tetap blocker. Produk tidak boleh diklaim payroll compliant atau production-ready.
+Positioning sementara: workforce operations action-first dan evidence-based untuk tim shift Indonesia, bukan HRIS enterprise lengkap. Pricing/SLA `NEEDS CONFIRMATION`. Source `d2025e4` menyediakan public-safe handoff dan audit `PILOT_READY_CANDIDATE`, tetapi provider, offsite/key custody, legal/privacy, device behavior, incident alert, employer-ordered overtime/holiday-rest scope, named pilot, dan willingness-to-pay tetap blocker eksternal. Produk tidak boleh diklaim payroll compliant, closed-beta active, atau production-ready.

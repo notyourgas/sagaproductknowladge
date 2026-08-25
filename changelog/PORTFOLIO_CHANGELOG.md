@@ -1,5 +1,12 @@
 # Portfolio Changelog
 
+## 2026-08-25 - SagaWork unscheduled attendance dan pilot handoff
+
+- Exact feature source `0a2805e` dan active isolated staging `e7f4622` menambahkan absensi darurat default-off dengan lokasi aktif, draft aktual, human review, report blocker, serta HR publish/resolve.
+- Exact handoff/audit source `d2025e4` mengklasifikasikan status `PILOT_READY_CANDIDATE`, bukan beta aktif atau production-ready.
+- Build, 23/72 unit test, 15-area smoke, security 7/7, 720-request load, browser+Axe, manifest, backup, dan guarded rollback dua arah lulus. Protected preview `dpl_3nx9EfTeh5VYSTP1ta3Q7ByTpebs` `READY`.
+- Delivery tetap synthetic `STAGING_DEPLOYED`; provider, offsite key custody, legal/device/human UAT, named pilot, public route, dan final Andreas Go/No-Go masih blocker eksternal.
+
 ## 2026-08-25 - Snap and Fit organizer safe metrics
 
 - Exact private source `46d7a4b` menambahkan exact-organization aggregate

@@ -12,14 +12,25 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T14:22:12+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T14:30:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `c2686f4` |
-| Informasi terakhir disinkronkan | SagaView S288 cached-path relocation repair exact `04e3b218...` dan disposable Linux reproduction. |
-| Status sinkronisasi | `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / ROOT_CAUSE_CLOSED_DISPOSABLE / RECOVERY_APPROVAL_REQUIRED`; production tidak berubah. |
-| Konflik | Tidak ada konflik; approval recovery sebelumnya sudah habis dan deploy kandidat tetap keputusan terpisah. |
-| Error | Tidak ada error sinkronisasi; target rollback masih hilang dan recovery production belum diulang. |
+| Baseline sebelum pembaruan | `66b499b` |
+| Informasi terakhir disinkronkan | SagaWork default-off unscheduled attendance, active synthetic staging `e7f4622`, protected preview, dan handoff/audit `PILOT_READY_CANDIDATE`. |
+| Status sinkronisasi | `STAGING_DEPLOYED / PILOT_READY_CANDIDATE / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`; tidak ada real-data/public activation. |
+| Konflik | Tidak ada konflik; internal readiness tidak menggantikan Gate A/B/C/E manusia/provider. |
+| Error | Tidak ada error sinkronisasi; blocker eksternal tetap dicatat di GAP-015. |
+
+## File yang berubah pada sinkronisasi ini (SagaWork unscheduled attendance dan pilot handoff)
+
+- `products/sagawork/PRODUCT.md`
+- `products/sagawork/DOSSIER.md`
+- `products/sagawork/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaView S288 cache relocation repair)
 

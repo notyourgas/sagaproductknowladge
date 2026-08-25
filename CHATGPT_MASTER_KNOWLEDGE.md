@@ -1,10 +1,10 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 25 Agustus 2026 14:20 WIB
+Evidence cut-off: 25 Agustus 2026 14:30 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
-SagaWork active staging source `74cc833` berstatus `CONFIRMED / STAGING_DEPLOYED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`. Isolated Hostinger staging memakai synthetic data dan MySQL 8.4; protected Vercel preview `dpl_pgZhC64nNfe6HHnVp5bnthcWXUHs` `READY`. Scope tervalidasi mencakup staff no-OTP dan privileged TOTP, people termasuk atomic CSV draft import tanpa account/password, scheduling/notes/swap, attendance foto+GPS, paid/unpaid break dengan payable-vs-net dan missing/long human review, correction/request, partial overtime approval, work-hours/score, period lock/reopen, retention/recovery, protected-route hardening, security/load/accessibility, manifest, serta rollback. XLSX/error export, employer-ordered overtime/holiday-rest, real provider/photo bytes, public route, offsite key escrow, human/legal/pilot evidence, dan activation masih blocker; payroll compliance tidak diklaim.
+SagaWork active staging runtime `e7f4622` berstatus `CONFIRMED / STAGING_DEPLOYED / NOT_PRODUCTION_ACTIVATED / PILOT_READY_CANDIDATE / BUSINESS_READY=false`. Isolated Hostinger staging memakai synthetic data dan MySQL 8.4; protected Vercel preview `dpl_3nx9EfTeh5VYSTP1ta3Q7ByTpebs` `READY`; handoff/audit public-safe berada pada source `d2025e4`. Scope tervalidasi mencakup staff no-OTP dan privileged TOTP, people termasuk atomic CSV draft import tanpa account/password, scheduling/notes/swap, attendance foto+GPS, paid/unpaid break dengan payable-vs-net dan missing/long human review, default-off unscheduled draft→HR publish/resolve, correction/request, partial overtime approval, work-hours/score, period lock/reopen, retention/recovery, protected-route hardening, security/load/accessibility, manifest, backup, serta guarded rollback dua arah. Real provider/photo bytes, public route, offsite key escrow, human/device/legal/pilot evidence, named champion/company, dan activation masih blocker; payroll compliance tidak diklaim.
 
 Snap and Fit exact private source `3337651` berstatus `CONFIRMED /
 LOCAL_VALIDATED`; organizer safe metrics berasal dari `46d7a4b`,

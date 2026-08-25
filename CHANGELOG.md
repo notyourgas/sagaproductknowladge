@@ -1,5 +1,13 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - SagaWork unscheduled attendance dan pilot handoff sync
+
+- Produk/area: SagaWork attendance exception, reconciliation, dan pilot readiness.
+- Informasi `CONFIRMED` berasal dari exact feature source `0a2805e`, active isolated staging `e7f4622`, exact handoff/audit source `d2025e4`, protected preview `dpl_3nx9EfTeh5VYSTP1ta3Q7ByTpebs`, serta synthetic build/test/runtime evidence.
+- Knowledge mencatat opt-in unscheduled flow default-off, HR publish/resolve, report blocker, 20 migration/23-72 tests, backup/rollback, dan status internal `PILOT_READY_CANDIDATE`.
+- Delivery `STAGING_DEPLOYED`; activation `NOT_PRODUCTION_ACTIVATED`; business readiness false. Real provider, offsite/key custody, legal/device/human UAT, named pilot, public route, dan final Andreas Go/No-Go tetap blocker.
+- Dokumen terdampak: SagaWork product/dossier/changelog, portfolio, master knowledge, gaps, root changelog, dan sync status.
+
 ## 2026-08-25 - SagaView S288 cache relocation repair sync
 
 - Produk/area: SagaView inactive rollback recovery dan guarded release.
