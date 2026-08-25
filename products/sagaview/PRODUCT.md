@@ -1,6 +1,22 @@
 # SagaView Product Knowledge
 
-Updated: 25 Agustus 2026 13:21 WIB
+Updated: 25 Agustus 2026 14:22 WIB
+
+SagaView S288 cache-relocation repair exact
+`04e3b2183ad7d7f3c42bebbb4ad99d37e3249354` sudah pushed dan menutup akar
+`deploy_gate_command_failed` secara lokal/disposable. Reproduksi Linux
+menemukan 15 referensi absolut folder staging pada cache Laravel: gate lulus
+sebelum release dipindah, gagal setelah dipindah, lalu lulus setelah cache
+dibangun ulang pada path final. Runner recovery sekarang memakai storage
+sementara saat cache warm, membangun ulang cache setelah atomic install, dan
+baru menghubungkan shared storage sebelum final read-only gate. Full PHP
+1.015/1.015 dengan 13.142 assertion, focused 6/6 dengan 127 assertion, build
+5.097 modul, parser/format/diff, dan audit Composer/npm nol lulus. Production,
+database, active release, dan pointer release tidak berubah; target rollback
+masih hilang. Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+ROOT_CAUSE_CLOSED_DISPOSABLE / RECOVERY_APPROVAL_REQUIRED`;
+`BUSINESS_READY=false`. Recovery production tidak boleh diulang tanpa
+persetujuan eksplisit baru; deployment kandidat tetap persetujuan terpisah.
 
 SagaView S287 mengganti jalur preflight/deploy lama yang masih bergantung pada
 kontrak pembayaran dengan tooling release estimate-only. Exact tooling

@@ -239,6 +239,20 @@
   smoke. Status `PRODUCTION_DEPLOYED`; readiness 30/42, activation dan business
   readiness tetap `BLOCKED`.
 
+## 2026-08-25 - SagaView S288 cache relocation repair
+
+- Exact repair `04e3b2183ad7d7f3c42bebbb4ad99d37e3249354` sudah pushed.
+- Reproduksi disposable menemukan 15 referensi absolut staging pada cache
+  Laravel; gate gagal setelah release dipindah dan kembali lulus setelah cache
+  dibangun ulang di path final.
+- Runner menjaga cache warm pada storage sementara, post-install rewarm, dan
+  final shared-storage gate tanpa migration, active switch, atau deploy
+  kandidat. Full PHP 1.015/1.015, focused 6/6, build 5.097 modul, parser,
+  format/diff, dan audit dependency nol lulus.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  ROOT_CAUSE_CLOSED_DISPOSABLE / RECOVERY_APPROVAL_REQUIRED`; production tidak
+  berubah, target rollback masih hilang, dan recovery memerlukan approval baru.
+
 ## 2026-08-25 - SagaView S287-S288 safe deploy recovery gate
 
 - Jalur release SagaView kini estimate-only dan menolak tooling lama yang masih

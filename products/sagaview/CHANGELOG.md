@@ -1,5 +1,35 @@
 # SagaView Changelog
 
+## 2026-08-25 - S288 cached-path relocation repair local validated
+
+- Klasifikasi: `CONFIRMED / PUSHED / SECURITY_VALIDATED / QA_VALIDATED /
+  DEVOPS_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  ROOT_CAUSE_CLOSED_DISPOSABLE / RECOVERY_APPROVAL_REQUIRED`;
+  `BUSINESS_READY=false`.
+- Before: cache Laravel yang dibangun di folder staging menyimpan referensi
+  absolut; deploy gate release pasif gagal setelah direktori dipindahkan ke
+  path final dan recovery berhenti fail-closed.
+- After: exact repair `04e3b2183ad7d7f3c42bebbb4ad99d37e3249354`
+  membatasi cache warm pada storage sementara, membersihkan cache setelah
+  atomic install, membangunnya ulang di path final, lalu memasang shared
+  storage sebelum final read-only gate. Tidak ada migration, switch `current`,
+  deploy kandidat, atau activation.
+- Evidence: reproduksi Linux menemukan 15 referensi path staging; gate lulus
+  sebelum move, gagal sesudah move, dan lulus setelah rewarm. Focused 6/6
+  dengan 127 assertion, full PHP 1.015/1.015 dengan 13.142 assertion, build
+  5.097 modul, shell parser, focused format, diff check, serta audit
+  Composer/npm nol lulus. Active release, database, dan release pointer tidak
+  berubah.
+- Provenance: exact source sudah pushed. Archive source SHA-256
+  `66d9787fffeb96c8fcc51bb291e4e52b1fe02ae68458f75d859961f4ba222f16`
+  dan incremental bundle SHA-256
+  `f95a07eacc141af97a1af90c5f6ddf55f873b7f451c18b706629b58fed6dd472`
+  memiliki dua salinan checksum-identical.
+- Delivery: production tetap sama dan target rollback masih hilang. Otorisasi
+  recovery sebelumnya sudah habis; recovery production memerlukan approval
+  eksplisit baru setelah readiness review. Deploy kandidat tetap approval
+  terpisah.
+
 ## 2026-08-25 - S288 inactive rollback recovery fail-closed
 
 - Klasifikasi: `CONFIRMED / PUSHED / SECURITY_VALIDATED / QA_VALIDATED /

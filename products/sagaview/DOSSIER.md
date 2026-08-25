@@ -1,5 +1,28 @@
 # SagaView Dossier
 
+## 2026-08-25 - S288 cache relocation root cause closed disposable
+
+`CONFIRMED / PUSHED / SECURITY_VALIDATED / QA_VALIDATED / DEVOPS_VALIDATED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / ROOT_CAUSE_CLOSED_DISPOSABLE /
+RECOVERY_APPROVAL_REQUIRED`. Exact repair
+`04e3b2183ad7d7f3c42bebbb4ad99d37e3249354` sudah pushed.
+
+Disposable Linux reproduction membuktikan Laravel cache memiliki 15 referensi
+absolut ke direktori staging. Gate exact artifact lulus sebelum `move`, gagal
+setelah release dipindah, kemudian lulus setelah cache dibangun ulang di path
+final. Runner sekarang memakai storage sementara untuk cache warm, melakukan
+post-install cache rewarm di release pasif final, dan baru memasang production
+shared storage sebelum final acceptance gate.
+
+Focused S288 6/6 dengan 127 assertion, full PHP 1.015/1.015 dengan 13.142
+assertion, build 5.097 modul, parser shell, focused format, diff check, dan audit
+Composer/npm nol lulus. Archive source dan incremental bundle mempunyai dua
+salinan checksum-identical. Reproduksi tidak mengubah active release, database,
+atau release pointer. Production tetap sama; target rollback masih hilang,
+approval recovery sebelumnya sudah habis, dan retry production memerlukan
+approval eksplisit baru. Deploy kandidat tetap belum diotorisasi dan
+`BUSINESS_READY=false`.
+
 ## 2026-08-25 - S288 inactive rollback recovery fail-closed
 
 `CONFIRMED / PUSHED / SECURITY_VALIDATED / QA_VALIDATED / DEVOPS_VALIDATED /

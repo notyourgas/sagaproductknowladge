@@ -12,16 +12,29 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T14:20:32+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T14:22:12+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `7657030` |
-| Informasi terakhir disinkronkan | Snap and Fit organizer safe event metrics dari `46d7a4b`, docs `3337651`, dan protected preview `dpl_EwPGuj6qxNJzcf59ahcabW3SGvGx`. |
-| Status sinkronisasi | `LOCAL_VALIDATED / PROTECTED_PREVIEW_READY / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=BLOCKED`; production tidak berubah. |
-| Konflik | Tidak ada konflik; protected route 200 bukan populated backend metrics atau backend staging. |
-| Error | Tidak ada error sinkronisasi; exact MySQL aggregate comparison, isolated VPS/provider/device, dan activation gates tetap terbuka. |
+| Baseline sebelum pembaruan | `c2686f4` |
+| Informasi terakhir disinkronkan | SagaView S288 cached-path relocation repair exact `04e3b218...` dan disposable Linux reproduction. |
+| Status sinkronisasi | `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / ROOT_CAUSE_CLOSED_DISPOSABLE / RECOVERY_APPROVAL_REQUIRED`; production tidak berubah. |
+| Konflik | Tidak ada konflik; approval recovery sebelumnya sudah habis dan deploy kandidat tetap keputusan terpisah. |
+| Error | Tidak ada error sinkronisasi; target rollback masih hilang dan recovery production belum diulang. |
 
-## File yang berubah pada sinkronisasi ini (Snap and Fit organizer safe metrics)
+## File yang berubah pada sinkronisasi ini (SagaView S288 cache relocation repair)
+
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/DOSSIER.md`
+- `products/sagaview/CHANGELOG.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `DECISIONS.md`
+- `GAPS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
+
+## File yang berubah pada sinkronisasi sebelumnya (Snap and Fit organizer safe metrics)
 
 - `products/snap-and-fit/PRODUCT.md`
 - `products/snap-and-fit/DOSSIER.md`

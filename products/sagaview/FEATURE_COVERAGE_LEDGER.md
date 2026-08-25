@@ -1,8 +1,23 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 25 Agustus 2026 13:21 WIB
+Evidence cut-off: 25 Agustus 2026 14:22 WIB
 
-S287/S288 estimate-only release gate dan rollback recovery readiness: exact
+S288 cached-path relocation repair: exact source
+`04e3b2183ad7d7f3c42bebbb4ad99d37e3249354` sudah pushed. Reproduksi Linux
+disposable membuktikan 15 referensi absolut staging tersimpan di cache Laravel;
+gate lulus sebelum move, gagal setelah move, dan lulus setelah cache dibangun
+ulang di path final. Repair menjaga cache warm pada storage sementara,
+melakukan post-install rewarm, lalu memasang shared storage sebelum final gate.
+Focused 6/6 dengan 127 assertion, full PHP 1.015/1.015 dengan 13.142 assertion,
+build 5.097 modul, parser/format/diff, dan audit dependency nol lulus. Active
+release, database, dan pointer release tidak berubah. Slice berstatus
+`ROOT_CAUSE_CLOSED_DISPOSABLE / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED / RECOVERY_APPROVAL_REQUIRED`; target rollback masih
+hilang dan recovery production tidak boleh diulang tanpa approval baru. Gap
+berikutnya adalah readiness review serta approval khusus recovery; deploy
+kandidat dan activation tetap gate terpisah.
+
+Riwayat S287/S288 estimate-only release gate dan rollback recovery readiness: exact
 tooling S287 `c62776c4a27c8fb2cff52ebba13e679f42c86f6f` serta S288 final
 `0efd11297f972cab33f09c56774a016f29347302` sudah pushed dan berstatus
 `CONFIRMED / SECURITY_VALIDATED / QA_VALIDATED / DEVOPS_VALIDATED /

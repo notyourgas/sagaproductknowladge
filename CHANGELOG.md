@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - SagaView S288 cache relocation repair sync
+
+- Produk/area: SagaView inactive rollback recovery dan guarded release.
+- Informasi `CONFIRMED` berasal dari exact pushed source
+  `04e3b2183ad7d7f3c42bebbb4ad99d37e3249354`, full/focused/build/security
+  gate, serta disposable Linux relocation reproduction.
+- Knowledge mencatat akar 15 cached absolute staging references, post-install
+  cache rewarm, dan storage boundary tanpa migration atau active switch.
+- Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  ROOT_CAUSE_CLOSED_DISPOSABLE / RECOVERY_APPROVAL_REQUIRED`; production tidak
+  berubah, target rollback masih hilang, dan `BUSINESS_READY=false`.
+- Dokumen terdampak: SagaView product/dossier/changelog/ledger, portfolio,
+  master knowledge, decisions, gaps, root changelog, dan sync status.
+
 ## 2026-08-25 - Snap and Fit organizer safe metrics sync
 
 - Produk/area: organizer event operations dan safe reconciliation snapshot.
