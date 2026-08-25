@@ -8,6 +8,14 @@ Mencatat perubahan material SagaWork dengan status delivery dan activation yang 
 
 Synthetic fixture, preview, dan staging bukan bukti real pilot atau production activation.
 
+## 2026-08-25 - External evidence execution pack and exact handoff refresh
+
+- `CONFIRMED` dari exact handoff/runtime `d36a59fb456106eafa3d8b3e797d42a4aac67a68` dan protected Preview `dpl_9zvZTjgQBRhHJm5pVXH4rmtqQaBg`.
+- Handoff tidak lagi menganggap hardcoded deployment ID sebagai current truth; active manifest, exact Preview, dan 16 evidence wajib dibind pada restricted signed receipt.
+- Public-safe runbook menyediakan recommended 5–10 Staff/three-day canary, product-policy, moderated HR/Staff/Android/iOS/accessibility UAT, provider/DPA-DPIA/offsite/independent review, public-route/incident/parallel-run, performance activation, dan receipt assembly steps.
+- Restricted archive exact `d36a59f` 1.455.320 byte/SHA-256 `427a81c40f7d0ba8eee3909ad8131887732f0092fe525395639ba6774278c576`; 699-component SBOM SHA-256 `5bf5c8976c8242ccc418722c7d1ff9d898582e3a0a89be743e6ac6a00b9a90a0`; verification PASS.
+- Delivery `STAGING_DEPLOYED`; activation `NOT_PRODUCTION_ACTIVATED`; external evidence dan Andreas Go tetap pending.
+
 ## 2026-08-25 - Transparent role-performance synthetic acceptance
 
 - `CONFIRMED` dari feature evidence `05e2b1a0d06274196912c4ea05391509e9516cd1`, exact handoff/runtime `8f503f9aae6e5b25572a117bc0a74c6b34272d0d`, protected Preview `dpl_HoQQLSG3nTMJAPnK17Ut1v9eMjm6`, dan Hostinger synthetic staging evidence.

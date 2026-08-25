@@ -12,11 +12,11 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T22:40:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T22:50:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `c748927d366042b21da32e36fdde19c13c91f927` |
-| Informasi terakhir disinkronkan | SagaWork transparent role-performance pada exact handoff/runtime `8f503f9aae6e5b25572a117bc0a74c6b34272d0d`. |
+| Baseline sebelum pembaruan | `f72c169f61e12cb11d20ecb63a519fb1ebeaf108` |
+| Informasi terakhir disinkronkan | SagaWork external evidence runbook dan exact handoff/runtime `d36a59fb456106eafa3d8b3e797d42a4aac67a68`. |
 | Status sinkronisasi | `STAGING_DEPLOYED / NOT_PRODUCTION_ACTIVATED / REAL_PERFORMANCE_NOT_AUTHORIZED / BUSINESS_READINESS_BLOCKED_EXTERNAL`. |
 
 ## SagaWork transparent role-performance acceptance
@@ -25,6 +25,24 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - Default-off scorecard/review/appeal includes attendance cap, evidence/confidence, second reviewer, fairness schedule, Payroll denial, and no automatic employment action.
 - MySQL 65 table/23 migration/32 trigger; OpenAPI 68 path/83 operation/46 request components; 33/111 tests, 20-area smoke, security 9/9, browser/Axe 12/4, load 720/720, restore/rollback PASS.
 - Delivery `STAGING_DEPLOYED`; activation and real performance remain unauthorized. KPI/source, legal/transparency, calibration/fairness, device/human/provider/offsite/public-route/admission gates remain pending.
+
+## SagaWork external evidence execution pack
+
+- Exact Hostinger handoff runtime `d36a59f`; protected Vercel Preview `dpl_9zvZTjgQBRhHJm5pVXH4rmtqQaBg` READY.
+- Public-safe runbook maps recommended canary, 16 signed-admission evidence, moderated HR/Staff/Android/iOS/accessibility UAT, hosted CI/provider/DPA-DPIA/offsite/independent review, public route/incident/parallel run, performance appendix, and receipt assembly.
+- Restricted archive SHA-256 `427a81c40f7d0ba8eee3909ad8131887732f0092fe525395639ba6774278c576`; SBOM SHA-256 `5bf5c8976c8242ccc418722c7d1ff9d898582e3a0a89be743e6ac6a00b9a90a0`; verifier PASS.
+- Production and real pilot remain unchanged and unauthorized.
+
+## File yang berubah pada sinkronisasi ini (SagaWork external evidence pack)
+
+- `products/sagawork/PRODUCT.md`
+- `products/sagawork/DOSSIER.md`
+- `products/sagawork/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## File yang berubah pada sinkronisasi ini (SagaWork Sprint 29)
 

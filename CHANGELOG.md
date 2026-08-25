@@ -1,5 +1,14 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - SagaWork external evidence runbook sync
+
+- Ringkasan: menyinkronkan exact handoff `d36a59f`, protected Preview, restricted artifact provenance, dan public-safe runbook untuk seluruh 16 external admission evidence.
+- Alasan: active runtime/Preview harus dibind pada restricted signed receipt, bukan dipercaya dari hardcoded deployment lama; actual external work perlu handoff yang dapat dijalankan tanpa PII di Git.
+- Produk/area: SagaWork pilot admission, UAT, provider, legal/DPIA, offsite recovery, hosted CI, public route, incident, parallel run, performance activation, release, dan readiness.
+- Klasifikasi: `CONFIRMED`; exact runtime/source `d36a59fb456106eafa3d8b3e797d42a4aac67a68`, Preview `dpl_9zvZTjgQBRhHJm5pVXH4rmtqQaBg`.
+- Production berubah: tidak. Delivery `STAGING_DEPLOYED`; activation `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED_EXTERNAL`.
+- File terdampak: SagaWork product/dossier/changelog, portfolio, gaps, master knowledge, root changelog, dan sync status.
+
 ## 2026-08-25 - SagaWork Sprint 29 role-performance sync
 
 - Ringkasan: sinkronisasi default-off transparent role-performance, final exact Hostinger handoff, protected Vercel Preview, MySQL/OpenAPI expansion, recovery, dan restricted release provenance.

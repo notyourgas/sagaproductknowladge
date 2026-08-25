@@ -1,5 +1,12 @@
 # Portfolio Changelog
 
+## 2026-08-25 - SagaWork external pilot evidence pack
+
+- Exact synthetic handoff runtime `d36a59fb456106eafa3d8b3e797d42a4aac67a68` dan protected Preview `dpl_9zvZTjgQBRhHJm5pVXH4rmtqQaBg` READY.
+- Public-safe runbook sekarang memetakan seluruh 16 signed-admission evidence, recommended canary/UAT, provider/legal/recovery, performance activation, dan no-PII receipt assembly.
+- Immutable feature evidence dipisahkan dari mutable deployment receipt agar current runtime/Preview tidak dipercaya dari hardcoded dokumen lama.
+- Delivery tetap `STAGING_DEPLOYED`; real data, public route, signed receipt, activation, dan business readiness tetap blocked external.
+
 ## 2026-08-25 - SagaWork transparent role-performance acceptance
 
 - `CONFIRMED`: exact Hostinger synthetic handoff runtime `8f503f9aae6e5b25572a117bc0a74c6b34272d0d`, feature evidence `05e2b1a`, dan protected Preview `dpl_HoQQLSG3nTMJAPnK17Ut1v9eMjm6` tervalidasi tanpa real data/public activation.
