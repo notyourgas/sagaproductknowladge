@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-25 - Snap and Fit deletion and recovery hardening
+
+- Exact private source `dbbb814` menambahkan deletion consumer idempoten,
+  retry/DLQ, deadline sweep, safe evidence, controlled outbox replay, dan restore
+  schema-integrity checks.
+- Full local gate, dependency audit, dan 14 worker test lulus; dua integrasi
+  service-dependent sengaja skip. Tidak ada real participant data atau provider
+  deletion yang dijalankan.
+- Delivery tetap `LOCAL_VALIDATED`; activation `NOT_PRODUCTION_ACTIVATED` dan
+  business readiness `BLOCKED` sampai isolated staging dan real-provider gate
+  lulus.
+
 ## 2026-08-25 - Snap and Fit local product baseline and operations workbench
 
 - Exact private source `a83b43a`, feature `b09f279`, dan protected preview

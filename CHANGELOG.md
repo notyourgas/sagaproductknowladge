@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - Snap and Fit deletion and recovery sync
+
+- Produk/area: privacy deletion worker, outbox replay, dan restore verification.
+- Informasi `CONFIRMED` berasal dari exact private source `dbbb814`, full local
+  gate, worker test, dan dependency audit.
+- Knowledge mencatat partial retry idempoten, stale reclaim, DLQ, deadline
+  sweep, safe evidence, terminal-only outbox replay, dan core-schema restore
+  check.
+- Delivery tetap `LOCAL_VALIDATED`; activation `NOT_PRODUCTION_ACTIVATED` dan
+  business readiness `BLOCKED`. Isolated staging serta real-provider deletion
+  belum dieksekusi.
+- Dokumen terdampak: Snap and Fit product/dossier/changelog, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-25 - Snap and Fit product baseline and operations sync
 
 - Produk/area: Snap and Fit marketplace foto olahraga dan privileged operations.

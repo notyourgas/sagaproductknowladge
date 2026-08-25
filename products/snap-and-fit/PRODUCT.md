@@ -47,13 +47,14 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 - Delivery: `LOCAL_VALIDATED`.
 - Activation: `NOT_PRODUCTION_ACTIVATED`.
 - Business readiness: `BLOCKED`.
-- Exact source `a83b43a` berada di private `main`; fitur operator berasal dari
-  `b09f279`.
+- Exact source `dbbb814` berada di private `main`; fitur operator berasal dari
+  `b09f279` dan deletion/recovery hardening berasal dari `dbbb814`.
 - Protected Vercel preview `dpl_Dtr9Uigz6263nj7V69s62RMD3Pfz` berstatus
   `READY`; frontend dapat dirender tetapi backend staging sengaja fail-closed.
 - Full local validation, 37 API test dengan enam integrasi eksternal terkontrol
-  skip, audit dependency nol vulnerability, serta 38 browser test dengan dua
-  viewport skip lulus.
+  skip, 14 worker test dengan dua integrasi service-dependent skip, audit
+  dependency nol vulnerability, serta 38 browser test dengan dua viewport skip
+  lulus.
 
 ## Batas klaim
 
@@ -68,5 +69,6 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 ## Next gate
 
 Sediakan isolated VPS minimal 4 vCPU/16 GB, project-only MySQL/Redis/private
-storage, lalu jalankan migration, optional integration suite, deletion worker,
-300-concurrent load, backup/restore, rollback, security, dan real-device UAT.
+storage, lalu jalankan migration, optional integration suite, synthetic
+deletion/replay drill, 300-concurrent load, backup/restore, rollback, security,
+dan real-device UAT. Real-provider deletion tetap gate aktivasi terpisah.

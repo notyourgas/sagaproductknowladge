@@ -12,8 +12,9 @@ credential, PII, identifier tenant/perangkat, atau detail provider sensitif.
 - Delivery: `LOCAL_VALIDATED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED`
-- Provenance: source private `a83b43a`, feature `b09f279`, protected Vercel
-  preview `dpl_Dtr9Uigz6263nj7V69s62RMD3Pfz`.
+- Provenance: source private `dbbb814`, operations feature `b09f279`,
+  deletion/recovery hardening `dbbb814`, protected Vercel preview
+  `dpl_Dtr9Uigz6263nj7V69s62RMD3Pfz` dari baseline frontend sebelumnya.
 
 ## Overview produk
 
@@ -91,6 +92,12 @@ fotografer desktop-optimized.
   payout run dan approver wajib berbeda dari maker.
 - Connected operator UI menyediakan loading, empty, error, queue, dan controlled
   synthetic demo tanpa PII.
+- Deletion worker mempertahankan task yang sudah selesai saat retry, mengirim
+  exhausted work ke DLQ, menyapu deadline setiap 30 detik, dan menutup request
+  hanya setelah seluruh fan-out memiliki evidence code aman.
+- Outbox replay menolak job aktif/menunggu, menghapus hanya job terminal,
+  mengantrekan ulang exact persisted event, dan menulis audit tanpa mencetak
+  payload.
 
 ## Business model dan pricing
 
@@ -105,6 +112,9 @@ fotografer desktop-optimized.
 - Full format/lint/typecheck/test/build lulus.
 - 37 API test lulus; enam MySQL/external integration test terkontrol skip tanpa
   service project-safe.
+- 14 worker test lulus; dua integrasi MySQL/Redis sengaja skip tanpa service
+  project-safe. Restore verifier kini memeriksa core schema dan orphan deletion
+  task, bukan hanya jumlah tabel.
 - 38 Playwright mobile/desktop lulus dan dua viewport-specific skip disengaja;
   operator controlled demo, checkout, role workflow, upload, accessibility, dan
   no-overflow tercakup.
@@ -116,8 +126,11 @@ fotografer desktop-optimized.
 
 - Isolated staging VPS, MySQL, Redis, private storage, migration, worker, dan API
   belum deployed.
-- MySQL/Redis optional suite, deletion retry/DLQ, outbox replay, backup/restore,
-  rollback, 300 VU load, soak, security staging, dan device UAT belum dieksekusi.
+- MySQL/Redis optional suite, protected synthetic deletion/replay,
+  backup/restore, rollback, 300 VU load, soak, security staging, dan device UAT
+  belum dieksekusi.
+- Real MySQL/S3/Rekognition deletion adapter dan evidence provider belum ada;
+  synthetic orchestration bukan bukti penghapusan provider.
 - Test merchant Tokopay dan AWS test provider/legal biometric gate belum
   tersedia; real-money dan production biometric tetap off.
 - GitHub hosted CI/protected-main enforcement masih tertahan account-plan gate;
