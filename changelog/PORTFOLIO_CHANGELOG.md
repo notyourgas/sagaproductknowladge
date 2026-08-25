@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-26 - Snap and Fit Nginx staging host policy
+
+- Exact private feature `7fdd49a` dan documentation head `ef1b7e9` menambahkan
+  deterministic API-only Nginx template, safe renderer, serta exact hostname/
+  config-digest binding bagi deploy dan rollback.
+- Route-class throttling, TLS/security header/body limits, safe logs, public
+  metrics/local-media denial, config syntax/load/service/reload checks, dan
+  forwarded-chain reset tervalidasi secara lokal.
+- Official signed Windows Nginx real syntax test dan full local gates lulus;
+  hosted run `32878033015` tetap account-gated sebelum runner/step. Delivery
+  tetap `LOCAL_VALIDATED`; isolated Linux host, DNS/TLS, dan live edge proof
+  masih external gate.
+
 ## 2026-08-26 - COYABAG payment handoff and safe reconciliation
 
 - Exact source `0a57b75839808af865f9272027ed5a02fde8de9d` aktif pada immutable

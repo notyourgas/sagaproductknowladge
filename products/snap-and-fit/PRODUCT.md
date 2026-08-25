@@ -47,7 +47,8 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 - Delivery: `LOCAL_VALIDATED`.
 - Activation: `NOT_PRODUCTION_ACTIVATED`.
 - Business readiness: `BLOCKED`.
-- Exact private source head `7887af9`; streaming encrypted-recovery feature
+- Exact private source head `ef1b7e9`; deterministic Nginx staging host-policy
+  feature berasal dari `7fdd49a`, streaming encrypted-recovery feature
   berasal dari `a6857d1`, fail-closed staging-host preflight berasal dari
   `fc383e1`, runtime-artifact hardening berasal dari `e64b002`,
   protected-preview evidence refresh berasal dari `eec6269`,
@@ -116,13 +117,13 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   dependency produksi nol vulnerability lulus. Container workflow dikonfigurasi
   menghasilkan BuildKit SBOM/provenance dan manifest digest; image belum
   dibangun/dijalankan sehingga emission/runtime evidence tetap gate.
-- Hosted GitHub Actions run `32875673050` (job `97892868155`) pada exact
-  encrypted-recovery feature head `a6857d1`
+- Hosted GitHub Actions run `32878033015` (job `97900626530`) pada exact
+  Nginx host-policy feature head `7fdd49a`
   gagal sebelum satu pun step berjalan: runner ID `0`, nama runner kosong, dan steps kosong;
   anotasi menyatakan account payment/spending-limit gate. Run sebelumnya pada
   `fc383e1`, `176cf15`, `4384948`, dan `d0f3b7d` memiliki pola yang sama.
   Ini adalah bukti blocker hosted-runner/account, bukan kegagalan source gate.
-  Feature-head run menjadi evidence hosted terbaru. Branch protection private
+  Nginx feature-head run menjadi evidence hosted terbaru. Branch protection private
   repository juga tetap plan-gated (API mengembalikan 403), sehingga
   required-check enforcement belum dapat diklaim.
 - Deploy staging kini menolak sebelum membaca konfigurasi Compose atau menarik
@@ -132,6 +133,15 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   Behavioral fixture menolak tiap kondisi
   secara independen; read-only probe pada shared Hostinger target berhenti exit
   `66` tanpa menulis file atau memasuki release path.
+- Host policy Nginx API-only sekarang dirender deterministik untuk topologi
+  hybrid Vercel ke authoritative VPS. Deploy dan rollback sama-sama mewajibkan
+  hostname serta SHA-256 konfigurasi yang exact, root-owned, tidak writable,
+  lolos `nginx -t`, benar-benar termuat, dan tetap aktif setelah reload.
+  Kebijakan edge memberi TLS/security header/body limit, route-class rate limit,
+  log tanpa query/identifier, menutup metrics dan local-media dari publik, serta
+  mereset forwarded chain direct-origin. Official signed Windows Nginx 1.31.3
+  meluluskan real syntax test; digest-pinned Linux fixture sudah dikonfigurasi
+  tetapi belum berjalan karena hosted job tidak memperoleh runner.
 - MySQL backup kini mengalirkan dump melalui gzip langsung ke native `age` dan
   hanya menulis `.sql.gz.age` plus checksum. Restore menolak plaintext,
   mewajibkan identity root-owned mode `0600`, memeriksa checksum/dekripsi, dan
@@ -231,7 +241,8 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 ## Next gate
 
 Sediakan isolated VPS minimal 4 vCPU/16 GB, project-only MySQL/Redis/private
-storage, lalu ulangi migration/MySQL suite, jalankan Redis suite, synthetic
+storage dan DNS/TLS API staging, lalu ulangi Nginx Linux fixture/live edge,
+migration/MySQL suite, jalankan Redis suite, synthetic
 lifecycle/deletion/replay drill, 300-concurrent load, backup/restore, rollback,
 security, dan real-device UAT. Real-provider deletion tetap gate aktivasi
 terpisah.

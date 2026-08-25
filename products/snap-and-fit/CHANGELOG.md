@@ -10,6 +10,26 @@ production, activation, dan business readiness.
 Mock, fixture, preview frontend, dan test lokal bukan bukti provider atau
 production activation.
 
+## 2026-08-26 - Deterministic Nginx staging host policy
+
+- Exact private feature `7fdd49a`; documentation/evidence head `ef1b7e9`.
+- API-only Nginx template dan renderer mengikat hybrid Vercel-to-VPS topology,
+  fixed hostname, loopback API upstream, TLS/security header/body limit,
+  route-class rate limit, safe query-free log, serta public deny untuk metrics
+  dan local-media.
+- Deploy dan rollback mewajibkan marker hostname/SHA-256 exact, root-owned
+  config, real syntax/dump/loaded-host proof, active service, dan successful
+  reload. Behavioral fixture meliputi renderer, tamper/permission/load/service,
+  serta deploy/rollback equivalence.
+- Official signed Windows Nginx 1.31.3 meluluskan real syntax test. Full local
+  validation, 53 browser pass dengan tiga intentional skip, Bash syntax,
+  ShellCheck, production audit nol vulnerability, dan peer check lulus.
+- Hosted run `32878033015` (job `97900626530`) tidak mendapat runner/step karena
+  account billing/spending gate; digest-pinned Linux fixture, DNS/TLS/firewall,
+  external scan, dan live edge 429 masih belum dieksekusi.
+- Klasifikasi `CONFIRMED`; delivery tetap `LOCAL_VALIDATED`, production dan
+  activation tidak berubah, business readiness tetap `BLOCKED`.
+
 ## 2026-08-26 - Streaming encrypted MySQL recovery artifacts
 
 - Exact private encrypted-recovery feature `a6857d1`; documentation/evidence

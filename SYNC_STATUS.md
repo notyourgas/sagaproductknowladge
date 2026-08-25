@@ -12,12 +12,35 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-26T00:13:32+07:00 |
+| Waktu pembaruan terakhir | 2026-08-26T00:31:58+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `c78592d5688f96eb636e983985eaa0d2a710ae96` |
-| Informasi terakhir disinkronkan | COYABAG payment handoff and safe reconciliation. |
-| Status sinkronisasi | `PRODUCTION_DEPLOYED / activation BLOCKED / business readiness BLOCKED`; commerce fail-closed. |
+| Baseline sebelum pembaruan | `b0c238be1d2c715a677197c0bda73afe05cbe575` |
+| Informasi terakhir disinkronkan | Snap and Fit deterministic Nginx staging host policy. |
+| Status sinkronisasi | `LOCAL_VALIDATED / NOT_PRODUCTION_ACTIVATED / business readiness BLOCKED`; isolated staging belum tersedia. |
+
+## Snap and Fit deterministic Nginx staging host policy
+
+- Exact private feature source `7fdd49a`; documentation/evidence head `ef1b7e9`.
+- API-only renderer, exact hostname/config SHA-256 binding, syntax/load/service/
+  reload checks, deploy/rollback equivalence, route-class throttling, safe logs,
+  security headers, dan public endpoint denial tervalidasi secara lokal.
+- Official signed Windows Nginx 1.31.3 meluluskan real syntax test. Full local
+  validation, 53 browser pass dengan tiga intentional skip, Bash syntax,
+  ShellCheck, production audit nol vulnerability, dan peer check lulus.
+- Hosted run `32878033015` (job `97900626530`) tidak memperoleh runner/step
+  karena account billing/spending gate. Linux fixture, isolated host, DNS/TLS,
+  firewall, external scan, dan live edge proof tetap external gate.
+
+## File yang berubah pada sinkronisasi ini (Snap and Fit Nginx host policy)
+
+- `products/snap-and-fit/PRODUCT.md`
+- `products/snap-and-fit/DOSSIER.md`
+- `products/snap-and-fit/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG payment handoff and safe reconciliation
 

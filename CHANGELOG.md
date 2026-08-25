@@ -1,5 +1,25 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-26 - Snap and Fit Nginx staging host policy sync
+
+- Ringkasan: sinkronisasi deterministic API-only Nginx renderer, exact host/
+  config-digest binding, deploy/rollback preflight, safe logging, rate limit,
+  security headers, public endpoint denial, dan service reload proof.
+- Alasan: canonical hybrid topology sebelumnya belum mempunyai host-level Nginx
+  artifact dan fail-closed loaded-config gate yang dapat diaudit.
+- Produk/area: Snap and Fit DevOps, security, observability, release/rollback,
+  supply chain, acceptance, external gates, dan readiness.
+- Klasifikasi: `CONFIRMED`; private feature source `7fdd49a`, documentation head
+  `ef1b7e9`, full local gates, signed real Nginx syntax test, 53 browser pass,
+  dan hosted run `32878033015`.
+- Production berubah: tidak. Delivery tetap `LOCAL_VALIDATED`; activation
+  `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED`.
+- Dokumen terdampak: Snap and Fit product/dossier/changelog, portfolio, master
+  knowledge, root changelog, dan sync status.
+- Blocker/next action: approved isolated VPS, exact Linux fixture, DNS/TLS/
+  firewall/external scan/live edge proof, serta provider, recovery, load,
+  security, dan real-device gates sebelum `STAGING_READY`.
+
 ## 2026-08-26 - COYABAG payment handoff reconciliation sync
 
 - Ringkasan: sinkronisasi payment tab handoff, manual/automatic server status

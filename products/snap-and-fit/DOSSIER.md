@@ -12,8 +12,9 @@ credential, PII, identifier tenant/perangkat, atau detail provider sensitif.
 - Delivery: `LOCAL_VALIDATED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED`
-- Provenance: exact private source head `7887af9`, encrypted-recovery feature
-  `a6857d1`, fail-closed staging-host preflight `fc383e1`, runtime-artifact
+- Provenance: exact private source head `ef1b7e9`, deterministic Nginx staging
+  host-policy feature `7fdd49a`, encrypted-recovery feature `a6857d1`,
+  fail-closed staging-host preflight `fc383e1`, runtime-artifact
   hardening `e64b002`,
   protected-preview evidence refresh `eec6269`, full-validation
   recovery gate `e6e27d0`, staging restore
@@ -36,8 +37,8 @@ credential, PII, identifier tenant/perangkat, atau detail provider sensitif.
   durable notification worker `d964fea`, lifecycle/retention worker `4d602d9`,
   protected Vercel preview `dpl_3PW4rbAek9FijQy9vU3Dfb1UMTUw` dari exact
   source `e6e27d0`.
-- Hosted CI evidence: exact encrypted-recovery feature-head run `32875673050`
-  (job `97892868155`) berhenti sebelum
+- Hosted CI evidence: exact Nginx host-policy feature-head run `32878033015`
+  (job `97900626530`) berhenti sebelum
   assignment runner dengan runner ID `0`, nama runner kosong, steps kosong, dan
   anotasi account payment/spending limit. Run sebelumnya pada host preflight,
   protected-preview docs, MySQL implementation, dan digest-only feature head
@@ -133,6 +134,15 @@ fotografer desktop-optimized.
   native `age` wajib lulus.
   Shared Hostinger target yang tersedia ditolak exit `66` melalui probe
   read-only dan tidak dimodifikasi.
+- Nginx authoritative API staging memakai template API-only untuk topologi
+  hybrid Vercel ke VPS. Renderer menolak hostname/path/port tidak aman dan
+  menghasilkan konfigurasi baru secara atomik. Marker host mengikat exact
+  hostname dan SHA-256; deploy serta rollback menolak config yang hilang,
+  symlink, writable, berubah, tidak termuat, salah hostname, gagal syntax,
+  service tidak aktif, atau gagal reload. Edge policy meliputi TLS 1.2/1.3,
+  security header, body/time limit, rate limit per kelas route, public deny bagi
+  metrics/local-media, query-free safe log, dan reset direct-origin forwarded
+  chain.
 - Backup MySQL mengalirkan dump melalui gzip langsung ke native `age`, menulis
   hanya encrypted object `.sql.gz.age` dan checksum portabel. Restore menolak
   plaintext, mewajibkan identity root-owned mode `0600`, memverifikasi checksum
@@ -234,6 +244,12 @@ fotografer desktop-optimized.
   SHA-256; enam skrip operasional lulus hingga severity `style`. Portable verifier
   dibersihkan setelah run. Tidak ada image/container atau runtime staging yang
   dieksekusi dari evidence ini.
+- Official signed Windows Nginx 1.31.3 archive diverifikasi terhadap signer
+  fingerprint dan SHA-256 yang didokumentasikan; full rendered config lulus
+  real `nginx -t`. Renderer/preflight/rollback behavioral fixture, Bash syntax,
+  ShellCheck, full validation, 53 browser pass, audit produksi nol vulnerability,
+  dan peer check lulus. Linux validator memakai default image exact OCI digest,
+  tetapi belum dieksekusi karena hosted run tidak pernah mendapat runner.
 - Fixture k6 300-VU melakukan authoritative seeded-BIB search, exact-session
   candidate confirmation, dan same-session sampled quote. Official
   checksum-verified k6 v2.2.0 `inspect` lulus; full validation lulus dan tidak ada
@@ -272,6 +288,8 @@ fotografer desktop-optimized.
 
 - Isolated staging VPS, MySQL, Redis, private storage, migration, worker, dan API
   belum deployed.
+- DNS/TLS certificate, firewall, exact Linux Nginx fixture, external header/TLS
+  scan, live edge 429, dan loaded-config proof pada isolated host belum ada.
 - Satu-satunya SSH target yang tersedia tetap shared 2 vCPU/sekitar 8 GB/100 GB,
   tanpa Docker, sehingga tidak dipakai sebagai target Snap and Fit.
 - MySQL compatibility lokal sudah ditutup, tetapi pengulangan MySQL dan runtime
