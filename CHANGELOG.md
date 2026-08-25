@@ -1,5 +1,25 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-26 - COYABAG customer return review integrity sync
+
+- Ringkasan: sinkronisasi two-step return review, item/quantity
+  server-authoritative, stable retry idempotency, cancellation fail-closed, dan
+  keyboard focus recovery.
+- Alasan: pelanggan perlu memverifikasi request exact sebelum dikirim dan
+  unknown/refund state tidak boleh membuka tindakan pembatalan.
+- Produk/area: COYABAG Order Status, Customer Returns, accessibility,
+  reliability, release, dan rollback.
+- Klasifikasi: `CONFIRMED`; source
+  `0dd7b21b5cd088e4b9f81e5cf0ef21bd08430818`, release
+  `20260826-0dd7b21`, rollback `20260826-aa6be85`, runtime verification.
+- Production berubah: ya. Delivery `PRODUCTION_DEPLOYED`; activation dan
+  business readiness `BLOCKED`. Readiness 30/42 dengan 12 blocker; commerce
+  tetap fail-closed.
+- Dokumen terdampak: COYABAG product/dossier/changelog, portfolio, master
+  knowledge, root changelog, dan sync status.
+- Blocker/next action: credential/UAT payment, governance/privacy, object
+  storage/media, email/notification, dan owner 2FA tetap terbuka.
+
 ## 2026-08-26 - Snap and Fit 500-file uploader recovery sync
 
 - Ringkasan: sinkronisasi exact-total IndexedDB recovery, same-folder resume,

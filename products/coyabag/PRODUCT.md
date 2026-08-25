@@ -61,9 +61,17 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260826-aa6be85` dengan source
-  `aa6be850e4466cf0ade63250eb1d2ea7ab7e29fb` melayani production;
-  rollback langsung `20260826-0a57b75` dipertahankan.
+- Release aktif `20260826-0dd7b21` dengan source
+  `0dd7b21b5cd088e4b9f81e5cf0ef21bd08430818` melayani production;
+  rollback langsung `20260826-aa6be85` dipertahankan.
+- Customer Returns memakai flow `Isi detail -> Tinjau dan kirim`. Review
+  dibangun dari item dan quantity yang diizinkan server, menampilkan varian,
+  alasan, penjelasan, serta tenggat, dan menjelaskan bahwa pengajuan belum
+  berarti persetujuan.
+- Quantity stale/berlebih dan state internal gagal tertutup. Retry setelah
+  network error mempertahankan idempotency key; pembatalan hanya tersedia pada
+  state `requested` tanpa refund serta memiliki safe-first focus, Escape, dan
+  focus restoration.
 - Order Status memiliki satu kontrol refresh untuk payment, delivery, dan order
   state. Kontrol selalu memakai order aktif yang sudah diverifikasi, request
   paralel dideduplicasi, dan network error mempertahankan detail terakhir.

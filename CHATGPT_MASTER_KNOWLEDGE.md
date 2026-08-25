@@ -3465,7 +3465,15 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release aktif `20260826-aa6be85` menjalankan exact source
+Release aktif `20260826-0dd7b21` menjalankan exact source
+`0dd7b21b5cd088e4b9f81e5cf0ef21bd08430818` dengan rollback
+`20260826-aa6be85`. Customer Returns memakai tahap isi lalu review yang dibangun
+dari item/quantity server-authoritative. Retry mempertahankan idempotency key;
+unknown, terminal, dan refund state tidak membuka cancellation. Safe-first
+focus, Escape, desktop/mobile acceptance, full regression, backup/rollback,
+serta public smoke lulus. Readiness tetap 30/42 dengan 12 blocker.
+
+Release sebelumnya `20260826-aa6be85` menjalankan exact source
 `aa6be850e4466cf0ade63250eb1d2ea7ab7e29fb` dengan rollback
 `20260826-0a57b75`. Order Status memiliki satu refresh payment/delivery/order
 yang memakai order aktif terverifikasi, mendeduplikasi request paralel, dan

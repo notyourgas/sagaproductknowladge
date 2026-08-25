@@ -12,12 +12,36 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-26T01:25:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-26T04:02:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `012763824177100b6adea7d5a5d596b4f7924517` |
-| Informasi terakhir disinkronkan | Snap and Fit deterministic 500-file uploader recovery dan protected preview. |
-| Status sinkronisasi | `PUSHED / LOCAL_VALIDATED / protected preview deployed`; production dan activation tidak berubah. |
+| Baseline sebelum pembaruan | `origin/main` sebelum sinkronisasi COYABAG Return Integrity |
+| Informasi terakhir disinkronkan | COYABAG customer return review integrity pada immutable production release. |
+| Status sinkronisasi | `PUSHED / PRODUCTION_DEPLOYED`; commerce activation tetap `BLOCKED`. |
+
+## COYABAG customer return review integrity
+
+- Exact source `0dd7b21b5cd088e4b9f81e5cf0ef21bd08430818` aktif pada immutable
+  release `20260826-0dd7b21`; rollback `20260826-aa6be85`.
+- Flow `Isi detail -> Tinjau dan kirim` menampilkan exact item, varian,
+  quantity, alasan, tenggat, dan penjelasan dari batas server-authoritative.
+- Retry mempertahankan idempotency key. Unknown, terminal, dan refund state
+  tidak membuka cancellation; confirmation mendukung safe-first focus, Escape,
+  dan focus restoration.
+- Full regression, desktop/mobile, accessibility, security/build/performance,
+  backup/rollback, serta public smoke lulus tanpa order/provider production.
+- Readiness tetap 30/42 dengan 12 blocker; commerce, activation, dan business
+  readiness tetap blocked.
+
+## File yang berubah pada sinkronisasi ini (COYABAG Customer Returns)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## Snap and Fit deterministic 500-file uploader recovery
 

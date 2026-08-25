@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-26 - COYABAG customer return review integrity
+
+- Exact source `0dd7b21b5cd088e4b9f81e5cf0ef21bd08430818` aktif pada immutable
+  Hostinger release `20260826-0dd7b21` dengan rollback `20260826-aa6be85`.
+- Customer dapat mengisi lalu meninjau item, varian, quantity, alasan, tenggat,
+  dan penjelasan server-authoritative sebelum pengajuan retur dikirim.
+- Retry idempotent, unknown/refund cancellation fail-closed, safe-first focus,
+  Escape, desktop/mobile acceptance, full regression, dan public smoke lulus.
+- Delivery `PRODUCTION_DEPLOYED`; activation/business readiness `BLOCKED`;
+  readiness 30/42 dan commerce tetap fail-closed.
+
 ## 2026-08-26 - Snap and Fit 500-file uploader recovery
 
 - Exact private feature `6f57416` mempertahankan exact manifest total di

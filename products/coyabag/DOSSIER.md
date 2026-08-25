@@ -78,7 +78,15 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260826-aa6be85` memakai source
+Release production terbaru `20260826-0dd7b21` memakai source
+`0dd7b21b5cd088e4b9f81e5cf0ef21bd08430818` dan rollback
+`20260826-aa6be85`. Customer Returns memisahkan pengisian dan review, memakai
+item/quantity server-authoritative, mempertahankan idempotency pada retry, dan
+menutup cancellation untuk unknown, terminal, atau refund state. Desktop/
+mobile, accessibility, full regression, backup/rollback, serta public smoke
+lulus. Readiness tetap 30/42 dengan 12 blocker.
+
+Release sebelumnya `20260826-aa6be85` memakai source
 `aa6be850e4466cf0ade63250eb1d2ea7ab7e29fb` dan rollback
 `20260826-0a57b75`. Order Status menyatukan refresh payment, delivery, dan order
 state pada satu kontrol yang memakai order aktif terverifikasi. Request focus/

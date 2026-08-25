@@ -4,6 +4,23 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-26 - Customer return review integrity production release
+
+- Klasifikasi: `CONFIRMED` dari exact source
+  `0dd7b21b5cd088e4b9f81e5cf0ef21bd08430818`, immutable Hostinger release
+  `20260826-0dd7b21`, rollback `20260826-aa6be85`, dan runtime verification.
+- Customer Returns sekarang memakai tahap isi dan review. Ringkasan final
+  bersumber dari item/quantity server-authoritative dan menampilkan kategori,
+  varian, jumlah, tenggat, serta penjelasan sebelum dikirim.
+- Stale/invalid quantity dan unknown/internal state fail-closed. Retry memakai
+  idempotency key yang sama; cancellation hanya tersedia pada request aktif
+  tanpa refund serta mendukung safe-first focus, Escape, dan focus restoration.
+- 158 storefront unit, 397 Laravel test dengan satu intentional skip, dedicated
+  desktop/mobile return acceptance, responsive/accessibility, security/build/
+  performance, backup/rollback, serta public smoke lulus.
+- Delivery `PRODUCTION_DEPLOYED`; readiness tetap 30/42 dengan 12 blocker.
+  Activation dan business readiness `BLOCKED`; commerce tidak diaktifkan.
+
 ## 2026-08-26 - Order status and tracking privacy production release
 
 - Klasifikasi: `CONFIRMED` dari exact source
