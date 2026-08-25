@@ -10,6 +10,21 @@ production, activation, dan business readiness.
 Mock, fixture, preview frontend, dan test lokal bukan bukti provider atau
 production activation.
 
+## 2026-08-25 - Liveness React peer acceptance dan protected preview
+
+- Exact private feature `7b44101` dan documentation head `a9518e0` berstatus
+  `LOCAL_VALIDATED`.
+- Official liveness package menyatakan React 19 support, sedangkan fixed
+  transitive peer metadata berhenti di React 18. Narrow PNPM rule dicatat hanya
+  untuk exact package/peer edge; tidak ada global warning suppression.
+- Frozen install, fresh production web build, full validation, 53 browser tests,
+  production audit, dan peer check lulus.
+- Protected preview `dpl_E749gUQc7iVtGCauGvVLa1swk59j` dari baseline `7b44101`
+  `READY`; UI/PWA routes 200 dan backend 503 fail-closed.
+- Metadata gate tertutup, tetapi upstream recheck, AWS provider runtime,
+  benchmark, legal, deletion, dan real-device camera evidence tetap wajib.
+  Production dan activation tidak berubah.
+
 ## 2026-08-25 - Local Bash dan Compose static gates
 
 - Exact private documentation head `f03e8bd` berstatus `LOCAL_VALIDATED`.

@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-25 - Snap and Fit liveness peer acceptance
+
+- Exact feature `7b44101` dan docs head `a9518e0` mencatat narrow PNPM rule untuk
+  exact transitive liveness React peer edge; tidak ada global suppression.
+- Frozen install, fresh build, full validation, 53 browser tests, audit, dan peer
+  check lulus. Protected preview `dpl_E749gUQc7iVtGCauGvVLa1swk59j` `READY`;
+  UI/PWA 200 dan backend 503 fail-closed.
+- Package metadata gate tertutup, tetapi real-device camera, AWS/provider,
+  benchmark, legal, deletion, isolated staging, dan production tetap pending.
+  Delivery tetap `LOCAL_VALIDATED`.
+
 ## 2026-08-25 - SagaWork validated OpenAPI 3.1.1
 
 - Exact OpenAPI source `133b936`, acceptance `85bbbfb`, docs head `366b1cd`, dan active synthetic staging `e003a3d` menjadi provenance public-safe.

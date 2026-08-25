@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-25 - Snap and Fit liveness peer acceptance sync
+
+- Produk/area: liveness client dependency metadata, validation, dan protected preview.
+- Informasi `CONFIRMED` berasal dari exact feature `7b44101`, docs head `a9518e0`,
+  full local gates, dan protected preview `dpl_E749gUQc7iVtGCauGvVLa1swk59j`.
+- Knowledge mencatat narrow exact-edge peer rule, frozen install, fresh build,
+  full validation, 53 browser tests, audit, clean peer check, dan preview smoke.
+- Delivery `LOCAL_VALIDATED`; activation `NOT_PRODUCTION_ACTIVATED`; business
+  readiness `BLOCKED`. Real-device/AWS/legal/provider gates tetap pending dan
+  production tidak berubah.
+- Dokumen terdampak: Snap and Fit product/dossier/changelog, portfolio, master
+  knowledge, gaps, root changelog, dan sync status.
+
 ## 2026-08-25 - SagaWork validated OpenAPI 3.1.1 sync
 
 - Produk/area: protected API contract, source drift, CI, independent specification lint, dan restricted handoff.

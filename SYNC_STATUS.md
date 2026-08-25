@@ -12,16 +12,27 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-25T17:55:47+07:00 |
+| Waktu pembaruan terakhir | 2026-08-25T18:00:11+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `c0e96df` |
-| Informasi terakhir disinkronkan | SagaWork validated OpenAPI 3.1.1 source `133b936`, acceptance `85bbbfb`, docs head `366b1cd`; exact active staging tetap `e003a3d`. |
-| Status sinkronisasi | `STAGING_DEPLOYED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`. |
-| Konflik | Tidak ada; OpenAPI protected same-origin dan metadata artifact public-safe dibedakan dari public API/SDK serta file source restricted. |
-| Error | Tidak ada error sinkronisasi; provider/offsite/legal/independent/device/pilot gates tetap pending. |
+| Baseline sebelum pembaruan | `ea79727` |
+| Informasi terakhir disinkronkan | Snap and Fit liveness peer acceptance `7b44101`, docs head `a9518e0`, protected preview `dpl_E749gUQc7iVtGCauGvVLa1swk59j`. |
+| Status sinkronisasi | `LOCAL_VALIDATED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`. |
+| Konflik | Tidak ada; peer metadata acceptance dibedakan dari real-device camera/provider evidence. |
+| Error | Tidak ada error sinkronisasi; isolated staging, AWS/legal/device/deletion/benchmark, hosted CI, dan pilot gates tetap pending. |
 
-## File yang berubah pada sinkronisasi ini (SagaWork validated OpenAPI 3.1.1)
+## File yang berubah pada sinkronisasi ini (Snap and Fit liveness peer acceptance)
+
+- `products/snap-and-fit/PRODUCT.md`
+- `products/snap-and-fit/DOSSIER.md`
+- `products/snap-and-fit/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
+
+## File yang berubah pada sinkronisasi sebelumnya (SagaWork validated OpenAPI 3.1.1)
 
 - `products/sagawork/PRODUCT.md`
 - `products/sagawork/DOSSIER.md`

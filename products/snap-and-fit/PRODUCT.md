@@ -47,7 +47,8 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 - Delivery: `LOCAL_VALIDATED`.
 - Activation: `NOT_PRODUCTION_ACTIVATED`.
 - Business readiness: `BLOCKED`.
-- Exact private `main` head `f03e8bd`; encrypted event-scoped face search berasal dari
+- Exact private `main` head `a9518e0`; liveness peer acceptance berasal dari
+  `7b44101`, encrypted event-scoped face search berasal dari
   `96df668`, resumable multipart HiRes berasal dari
   `3fc397f`, staging controls dan preview baseline dari `d2b0c5c`, CloudFront private
   delivery signer berasal dari `5fe6ab5`, AWS event-scoped face provider
@@ -64,8 +65,8 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   `b09f279`, deletion/recovery hardening dari `dbbb814`, serta candidate/cart
   authority dari `09a55bd`, durable notification worker dari `d964fea`, dan
   lifecycle/retention worker dari `4d602d9`.
-- Protected Vercel preview `dpl_BRsjcFnYQV6NVTCyJqcP19te4HsS` dari baseline
-  `96df668` berstatus `READY`; manifest, service worker, offline, BIB,
+- Protected Vercel preview `dpl_E749gUQc7iVtGCauGvVLa1swk59j` dari baseline
+  `7b44101` berstatus `READY`; manifest, service worker, offline, BIB,
   selfie-capture, dan photographer jobs route 200 tetapi
   backend staging sengaja fail-closed.
 - Full local validation, 63 API test dengan sembilan integrasi eksternal terkontrol
@@ -74,7 +75,8 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   dengan tiga project-specific skip, seluruh build, dan audit dependency produksi
   nol vulnerability lulus. Lima shell script juga lulus Git Bash `bash -n`, dan
   staging Compose lulus static interpolation dengan official checksum-verified
-  Docker Compose v5.5.0 tanpa menjalankan image/container.
+  Docker Compose v5.5.0 tanpa menjalankan image/container. Frozen install,
+  fresh web build, dan targeted liveness peer check juga lulus.
 
 ## Batas klaim
 
@@ -114,8 +116,9 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   official Amplify Face Liveness client. Collection dan face reference dienkripsi
   per event, lookup memakai HMAC, hasil similarity tidak diekspos ke client,
   liveness dibatasi attempt/lockout, dan provider degraded mengarahkan ke BIB.
-  AWS belum pernah dipanggil; activation tetap menunggu legal, credential,
-  dependency compatibility, benchmark, deletion, dan real-device gate.
+  AWS belum pernah dipanggil; package-manager peer metadata sudah ditutup dengan
+  rule exact-edge yang terdokumentasi, tetapi activation tetap menunggu legal,
+  credential, upstream recheck, benchmark, deletion, dan real-device gate.
 - Customer memiliki library 20 order terbaru yang exact-owner, menampilkan
   status payment/fulfillment dan entitlement, serta dapat menerbitkan ulang link
   social/HiRes lima menit tanpa mengekspos order customer lain.

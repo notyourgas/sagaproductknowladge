@@ -6,8 +6,9 @@ Visibility: public-safe
 
 SagaWork active staging runtime `e003a3d` berstatus `CONFIRMED / STAGING_DEPLOYED / NOT_PRODUCTION_ACTIVATED / PILOT_READY_CANDIDATE / BUSINESS_READY=false`. Isolated Hostinger staging memakai synthetic data, MySQL 8.4 dengan 21 migration, dan same-VPS loopback object store khusus acceptance non-PII; protected Vercel Preview `dpl_CxS7HN4JT7SQaKASqcfegtTsxAZF` `READY`, 39-page build, authenticated prototype health/manifest/safe-worker PASS tanpa MySQL/custom domain. Scope tervalidasi mencakup staff no-OTP dan privileged TOTP; people dengan atomic CSV draft import serta guarded Staff lifecycle; scheduling/notes/swap; attendance foto+GPS/private non-PII byte pipeline; paid/unpaid break; default-off unscheduled; supervisor-assisted attendance tanpa fake evidence dengan independent review; serta Staff PWA install guidance dan explicit update dengan exact public-only manifest/icon cache. Reporting HR mempunyai canonical searchable per-staff summary dan shift drill-down untuk net/payable, jumlah/menit telat mentah, early leave, break, overtime candidate/approved, serta blocker. CSV `summary`/`detail` memakai live projection atau locked snapshot yang sama, preview/final metadata, timezone, formula sanitation, checksum, no-store, audit, dan deterministic superseded re-export. Correction/request, partial overtime approval, Reliability 50/30/20, period lock/reopen, retention/recovery, 27/89 unit test, 18-area smoke, security/load/accessibility, manifest 26 file, checksum backup, serta guarded rollback `e003a3d → 9d49565 → e003a3d` lulus. Restricted tracked-source artifact exact runtime `e003a3d` dan OpenAPI implementation/acceptance `85bbbfb` mempunyai provenance/checksum/content-exclusion PASS. Implemented data drift gate mencakup 56 tabel/21 migration; validated OpenAPI 3.1.1 exact-set mencakup 56 path/69 operasi, 39 request components, auth/parameter/idempotency/envelope/error/CSV, source drift verifier, dan pinned independent lint tanpa warning. External SDK/response DTO tidak dipublikasikan karena API protected same-origin. Workflow CI SHA-pinned tersedia dan full local equivalent PASS, tetapi hosted run menunggu private source remote. Loopback store bukan external provider/DPA/offsite/HA dan real employee/photo data dilarang; XLSX/async private export, dedicated coverage/leave/exception report, rehire/offboarding authority, scheduled/backdated termination, training/test isolation, multi-session policy, public route, offsite key escrow, human/device/legal/pilot evidence, named champion/company, serta activation masih blocker. Payroll compliance tidak diklaim.
 
-Snap and Fit exact private source head `f03e8bd` berstatus `CONFIRMED /
-LOCAL_VALIDATED`; encrypted event-scoped face search berasal dari `96df668`,
+Snap and Fit exact private source head `a9518e0` berstatus `CONFIRMED /
+LOCAL_VALIDATED`; liveness peer acceptance berasal dari `7b44101`, encrypted
+event-scoped face search berasal dari `96df668`,
 private CloudFront delivery signer berasal dari `5fe6ab5`,
 resumable multipart HiRes berasal dari `3fc397f`, staging-control/preview baseline dari `d2b0c5c`,
 AWS event-scoped face provider contract dari `037d2b4`, private bounded API metrics berasal dari `1c1a81e`, safe
@@ -24,12 +25,15 @@ privileged operations feature berasal dari `b09f279`,
 deletion/recovery hardening dari `dbbb814`, candidate/cart authority dari
 `09a55bd`, durable notification worker dari `d964fea`, lifecycle/retention
 worker dari `4d602d9`, dan protected Vercel
-preview `dpl_BRsjcFnYQV6NVTCyJqcP19te4HsS`
+preview `dpl_E749gUQc7iVtGCauGvVLa1swk59j`
 berstatus `READY`.
 Lima shell script lulus Git Bash `bash -n`; staging Compose lulus static
 interpolation dengan official checksum-verified Docker Compose v5.5.0 dan
 synthetic-only values tanpa image/container execution. Hosted Actions, isolated
 container runtime, migration, load, backup/restore, dan canary tetap gate.
+Official liveness React peer metadata ditutup dengan narrow exact-edge rule;
+frozen install, fresh web build, full validation, 53 browser tests, audit, dan
+peer check lulus. Ini bukan real-device camera evidence.
 Marketplace foto olahraga ini mencakup event, uploader preview 500 JPEG,
 BIB/selfie mock ber-consent, dynamic event landing, event-scoped multi-photo
 cart, catalog Rp25k/Rp60k/Rp99k, Tokopay mock/contract,

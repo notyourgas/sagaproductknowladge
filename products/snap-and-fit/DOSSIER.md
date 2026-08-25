@@ -12,7 +12,8 @@ credential, PII, identifier tenant/perangkat, atau detail provider sensitif.
 - Delivery: `LOCAL_VALIDATED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED`
-- Provenance: exact private head `f03e8bd`, encrypted event-scoped face search
+- Provenance: exact private head `a9518e0`, liveness peer acceptance `7b44101`,
+  encrypted event-scoped face search
   `96df668`, resumable multipart feature `3fc397f`,
   staging-control/preview baseline `d2b0c5c`, organizer safe metrics `46d7a4b`,
   photographer earning view `0385317`,
@@ -23,7 +24,7 @@ credential, PII, identifier tenant/perangkat, atau detail provider sensitif.
   operations feature `b09f279`,
   deletion/recovery hardening `dbbb814`, candidate/cart authority `09a55bd`,
   durable notification worker `d964fea`, lifecycle/retention worker `4d602d9`,
-  protected Vercel preview `dpl_BRsjcFnYQV6NVTCyJqcP19te4HsS`.
+  protected Vercel preview `dpl_E749gUQc7iVtGCauGvVLa1swk59j`.
 
 ## Overview produk
 
@@ -175,10 +176,13 @@ fotografer desktop-optimized.
   operator controlled demo, checkout/order library, role workflow, preview upload,
   multipart interruption/resume, accessibility, dan no-overflow tercakup.
 - Production dependency audit: nol vulnerability yang diketahui.
+- Official liveness package menyatakan React 19 support; exact transitive peer
+  metadata ditutup dengan narrow package/peer rule. Frozen install, fresh web
+  build, full validation, browser suite, audit, dan peer check lulus.
 - Lima shell script lulus Git Bash `bash -n`; staging Compose lulus static
   interpolation memakai official checksum-verified Docker Compose v5.5.0 dan
   synthetic-only values. Tidak ada image/container yang dijalankan.
-- Preview protected `dpl_BRsjcFnYQV6NVTCyJqcP19te4HsS` dari baseline `96df668`
+- Preview protected `dpl_E749gUQc7iVtGCauGvVLa1swk59j` dari baseline `7b44101`
   berstatus `READY`; manifest, service worker, offline, BIB, selfie-capture, dan
   photographer jobs route 200 serta
   backend fail-closed 503. Connected metrics panel
@@ -208,9 +212,9 @@ fotografer desktop-optimized.
 - Rekognition orchestration sudah terhubung lokal dan teruji fake-provider,
   tetapi belum pernah memanggil AWS. Real MySQL/S3/Rekognition indexing,
   liveness, search, deletion, dan evidence provider belum ada; synthetic
-  orchestration bukan bukti penghapusan provider. Transitive React peer range
-  pada liveness client juga wajib ditutup melalui review kompatibilitas resmi
-  atau dependency update sebelum activation.
+  orchestration bukan bukti penghapusan provider. Transitive React peer metadata
+  sudah ditutup secara exact-edge, tetapi upstream-version recheck dan real-device
+  camera compatibility tetap wajib sebelum activation.
 - Test merchant Tokopay dan AWS test provider/legal biometric gate belum
   tersedia; real-money dan production biometric tetap off.
 - GitHub hosted CI/protected-main enforcement masih tertahan account-plan gate;
