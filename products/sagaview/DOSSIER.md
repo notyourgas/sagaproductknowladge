@@ -1,5 +1,20 @@
 # SagaView Dossier
 
+## 2026-08-25 - S288 mainline global acceptance
+
+Exact pushed candidate `a830cf40e1c4fcb53d0e0d63d2e443d71a89b05e`
+menempatkan chain recovery S288 lengkap di atas mainline kanonik tanpa edit
+SagaBook dari slice ini. Diff terhadap base hanya tujuh file recovery/test
+SagaView. Fixture berbasis waktu yang sebelumnya memblokir global runner sudah
+ditutup oleh scope pemiliknya pada mainline.
+
+Focused 6/135, reproduksi blocker lama 1/3, full monorepo 1.156/13.238,
+typecheck, build 5.129 modul, parser/Pint/diff, dan audit Composer/npm nol
+lulus. Archive dan bundle exact commit tersedia sebagai dua salinan
+checksum-identical. Production tidak dimutasi. Delivery `LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; recovery tetap membutuhkan persetujuan baru dan
+approval pack lama tidak berlaku.
+
 ## 2026-08-25 - S288 recovery concurrency serialized
 
 Exact pushed hardening `10cb9cf7454f7c89f3892c4439b1d35938be5168`

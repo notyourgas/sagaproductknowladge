@@ -22,13 +22,13 @@ ketika keputusan atau release baru menutup gap.
 
 ## Prioritas tinggi
 
-SagaView S288 `RELEASE_BLOCKED_GLOBAL_TEST`: exact hardening
-`10cb9cf7454f7c89f3892c4439b1d35938be5168` menutup concurrency recovery
-paralel dan seluruh gate SagaVIEW lulus, tetapi full monorepo berhenti pada satu
-fixture SagaBook yang memakai slot tetap 25 Agustus 2026 pukul 16.00 WIB.
-SagaBook tidak boleh diubah dari scope SagaVIEW. Pack approval lama deprecated;
-recovery tetap dilarang sampai fixture ditutup oleh scope pemiliknya, full gate
-hijau, dan approval pack exact baru tersedia.
+SagaView S288 `RECOVERY_APPROVAL_REQUIRED`: blocker global test sudah ditutup
+pada exact mainline candidate
+`a830cf40e1c4fcb53d0e0d63d2e443d71a89b05e`; full monorepo 1.156/1.156 dan
+seluruh gate lokal lulus. Production rollback target masih hilang. Pack approval
+lama deprecated; gap tersisa adalah final release review, approval recovery
+exact baru, dan runtime recovery acceptance. Deployment kandidat tetap
+keputusan terpisah.
 
 SagaView S268 `CLOSED / PRODUCTION_ACTIVATED`: source exact backend/Owner
 `298336da...` dan Studio `dbaa247c...` lulus matriks UAT 14 gate, termasuk

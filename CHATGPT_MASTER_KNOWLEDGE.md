@@ -4,15 +4,16 @@ Evidence cut-off: 25 Agustus 2026 19:48 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
-SagaView S288 exact `10cb9cf7454f7c89f3892c4439b1d35938be5168`
-berstatus `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
-RELEASE_BLOCKED_GLOBAL_TEST / BUSINESS_READY=false`. Inactive rollback recovery
-kini serial dengan mutex non-blocking dan pointer sementara unik per proses;
-focused 6/135, full SagaVIEW 219/3.720, build 5.097 modul, parser/format/diff,
-audit dependency nol, behavioral mutex, serta dua salinan artifact immutable
-lulus. Production, database, active release, dan rollback target tidak berubah.
-Full monorepo masih diblokir satu fixture SagaBook berbasis waktu di luar scope;
-approval lama deprecated dan recovery/deploy belum diizinkan.
+SagaView S288 exact `a830cf40e1c4fcb53d0e0d63d2e443d71a89b05e`
+berstatus `CONFIRMED / PUSHED / SECURITY_VALIDATED / QA_VALIDATED /
+DEVOPS_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+RECOVERY_APPROVAL_REQUIRED / BUSINESS_READY=false`. Chain recovery rollback
+inactive lengkap kini berada di atas mainline kanonik sebagai diff tujuh file
+SagaView. Focused 6/135, blocker lama 1/3, full monorepo 1.156/13.238,
+typecheck, build 5.129 modul, parser/Pint/diff, audit dependency nol, dan dua
+salinan artifact immutable lulus. Production, database, active release, dan
+rollback target tidak berubah. Approval lama deprecated; recovery/deploy belum
+diizinkan tanpa approval baru.
 
 SagaWork exact implementation/runtime `6ea328f6fbaf7052616c100abe1cacd79cadcfa2` berstatus `CONFIRMED / STAGING_DEPLOYED / NOT_PRODUCTION_ACTIVATED / PILOT_READY_CANDIDATE / BUSINESS_READY=false`; documentation acceptance head `d005cfde68d95da5d9a21cd1695b10aa645c9785`. Isolated Hostinger staging memakai synthetic data, MySQL 8.4 dengan 21 migration, dan same-VPS loopback object store acceptance non-PII; protected Vercel Preview `dpl_2zNRzrc9TpAWmPFBGP9aMyX88H7b` `READY`, 39-page build, authenticated health/security-header/safe-worker PASS tanpa MySQL/custom domain. Scope tervalidasi mencakup staff no-OTP dan privileged TOTP; people/CSV/lifecycle; scheduling/notes/swap; attendance foto+GPS/private non-PII byte pipeline; paid/unpaid break; default-off unscheduled; supervisor-assisted attendance; Staff PWA; reporting per-staff dan deterministic Summary/Detail CSV; correction/request, overtime partial approval, Reliability 50/30/20, period lock/reopen, retention, dan recovery. Cross-platform acceptance meluluskan 30/95 unit test, 18-area smoke, security abuse 7/7, browser/Axe 12/4, isolated load 720/720, schema-2 manifest 906 file, dan rollback `6ea328f → 62d5bf2 → 6ea328f`. Mixed post-abuse readiness p95 691,6 ms versus target 500 ms tetap residual shared-VPS risk walaupun isolated rerun 158,0 ms. Restricted exact-runtime artifact 1.247.818 byte/468 tar entries, OpenAPI acceptance `85bbbfb`, dan signed-admission acceptance `a36ac8e` mempunyai provenance/checksum/content-exclusion PASS serta tidak dipublikasikan. Pilot admission control `3bcdf06`/`a36ac8e` memakai Andreas-only Ed25519 signing, exact target binding, maksimum tujuh hari, dan exact-set 16 evidence Gate A/B/C/E; real receipt/evidence belum ada. Validated OpenAPI 3.1.1 mencakup exact 56 path/69 operasi dan 39 request components. Internal ASVS 5.0 profile mendisposisikan 253 ID: 140 pass internal, 79 not applicable, 15 pending internal, 18 pending external, dan 1 risk acceptance; ini bukan sertifikasi/full-Level-2 claim. Private source remote/hosted CI, 34 ASVS non-pass disposition, independent security verification, external provider/DPA/offsite/key custody, public route, legal/privacy, capacity mitigation, human/device/pilot evidence, named champion/company, real signed admission receipt, canary, dan activation masih blocker. Loopback store tidak menerima real employee/photo data; payroll compliance tidak diklaim.
 
