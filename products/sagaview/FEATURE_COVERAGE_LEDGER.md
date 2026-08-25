@@ -1,6 +1,32 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 25 Agustus 2026 23:00 WIB
+Evidence cut-off: 26 Agustus 2026 00:12 WIB
+
+S286/S287/S288 guarded production release: backend/Owner exact
+`8d84c60c86131892a2ae3727670b0468b64fa81b` sekarang aktif sebagai release
+`20260824211838-8d84c60`; Studio tetap pada exact
+`7ae79ae45828f3876e3604bb569e0d3c7be3abfb` / release
+`20260824170456-7ae79ae` karena tidak ada kandidat Studio baru. Rollback
+immediate backend/Owner sekarang exact
+`f956846d803f5af7e2a6c8cf8daa010b2164408a` / release
+`20260824163507-f956846`. Guard retensi production exact SHA-256
+`eee800011fed48180e29b939e52c5a7dd6ae9482733ac49c5a3da53e21bf3381`
+melindungi current+rollback; dry-run pascadeploy lulus tanpa deletion.
+
+Fresh encrypted backup/checksum/offsite round-trip/disposable restore tiga
+database lulus; SagaView memulihkan 149 tabel. Candidate dan rollback gate
+masing-masing 6/6, migration delta nol, atomic switch, empat public smoke HTTP
+200, security headers, service/journal, deploy gate 5 pass/0 critical fail/1
+warning, dan failed job SagaView nol. Blocker packaging `storage` pada upaya
+pertama berhenti sebelum activation; tooling exact
+`752837d76937069e1a72bec6b731cce651daf9ed` memperbaiki shared-storage link,
+focused 5/5 dengan 78 assertion dan Bash syntax lulus, lalu upaya kedua
+berhasil. Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED=false /
+BUSINESS_READY=false`; gap tunggal berikutnya adalah authenticated operator UAT
+dengan akun referensi non-customer sebelum activation/business readiness.
+
+Status rollback blocked dan deployment hold di bawah adalah histori yang sudah
+ditutup oleh guard, recovery, dan deploy ini.
 
 S288 rollback retention hardening: pemulihan rollback pada 21:23 WIB tidak
 bertahan. Service retensi otomatis menghapus target pasif

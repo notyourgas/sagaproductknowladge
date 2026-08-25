@@ -1,8 +1,28 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 25 Agustus 2026 23:00 WIB
+Evidence cut-off: 26 Agustus 2026 00:12 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
+
+SagaView backend/Owner exact
+`8d84c60c86131892a2ae3727670b0468b64fa81b` saat ini
+`PRODUCTION_DEPLOYED` sebagai release `20260824211838-8d84c60`. Studio tetap
+exact `7ae79ae45828f3876e3604bb569e0d3c7be3abfb` / release
+`20260824170456-7ae79ae`; rollback immediate backend/Owner adalah
+`20260824163507-f956846`. Retention guard exact SHA-256
+`eee800011fed48180e29b939e52c5a7dd6ae9482733ac49c5a3da53e21bf3381`
+melindungi current+rollback. Fresh encrypted backup/checksum/offsite
+round-trip, disposable restore 149 tabel SagaView, candidate+rollback gate
+6/6, migration delta nol, atomic switch, empat public smoke 200, security
+headers, service/journal, deploy gate 5 pass/0 critical fail/1 warning, failed
+job SagaView nol, dan retention dry-run lulus. Blocker archive storage pada
+upaya pertama fail-closed ditutup oleh tooling exact
+`752837d76937069e1a72bec6b731cce651daf9ed`; upaya kedua berhasil. Status
+tetap dipisah: `PRODUCTION_DEPLOYED`, belum `PRODUCTION_ACTIVATED`, dan
+`BUSINESS_READY=false` sampai authenticated operator UAT non-customer selesai.
+
+Status rollback blocked/deployment hold berikut adalah histori yang sudah
+superseded.
 
 SagaView S288 saat ini `ROLLBACK_BLOCKED / DEPLOYMENT_HOLD /
 BUSINESS_READY=false`. Recovery exact `94675a5f1b432182de0f3cd22a4982c654c11c69`

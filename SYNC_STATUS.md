@@ -12,12 +12,23 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-26T00:05:23+07:00 |
+| Waktu pembaruan terakhir | 2026-08-26T00:12:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `0d70ad94d7def5213f03fa94d051a9c1a917a447` |
-| Informasi terakhir disinkronkan | Snap and Fit encrypted recovery artifacts. |
-| Status sinkronisasi | `LOCAL_VALIDATED / NOT_PRODUCTION_ACTIVATED / BLOCKED`; isolated staging belum tersedia. |
+| Baseline sebelum pembaruan | `c78592d5688f96eb636e983985eaa0d2a710ae96` |
+| Informasi terakhir disinkronkan | SagaView S286/S287 production deploy dan S288 guarded recovery. |
+| Status sinkronisasi | `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`; authenticated operator UAT masih terbuka. |
+
+## SagaView guarded deploy and recovery
+
+- Backend/Owner exact `8d84c60...` aktif sebagai
+  `20260824211838-8d84c60`; Studio tetap exact release aktif dan rollback
+  immediate backend/Owner menjadi `20260824163507-f956846`.
+- Retention guard, fresh encrypted backup/restore, candidate+rollback gate,
+  atomic switch, public smoke, security/service/journal, failed jobs, dan
+  retention dry-run lulus.
+- Production sudah berubah pada backend/Owner. Authenticated operator UAT,
+  activation, dan business readiness belum diklaim.
 
 ## Snap and Fit encrypted recovery artifacts
 

@@ -1,5 +1,31 @@
 # SagaView Changelog
 
+## 2026-08-26 - S286/S287 production deployed and S288 rollback protected
+
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED=false /
+  BUSINESS_READY=false`.
+- Before: backend/Owner masih release `20260824163507-f956846`; rollback pasif
+  sempat hilang akibat retensi dan kandidat S286 belum dideploy.
+- After: guard retensi exact SHA-256
+  `eee800011fed48180e29b939e52c5a7dd6ae9482733ac49c5a3da53e21bf3381`
+  terpasang, recovery target exact bertahan melewati dua siklus terkontrol, dan
+  backend/Owner exact `8d84c60c86131892a2ae3727670b0468b64fa81b` aktif sebagai
+  `20260824211838-8d84c60`. Rollback immediate kini
+  `20260824163507-f956846`; Studio tetap `20260824170456-7ae79ae`.
+- Evidence: fresh encrypted backup/checksum/offsite round-trip; disposable
+  restore tiga database dan 149 tabel SagaView; candidate+rollback gate 6/6;
+  migration delta nol; atomic switch; empat public smoke HTTP 200; security
+  headers; service/journal; deploy gate 5 pass/0 critical fail/1 warning;
+  failed job SagaView nol; retention dry-run melindungi current+rollback.
+- Correction: upaya pertama fail-closed pada stage extract karena folder
+  `storage` archive menutupi shared-storage link. Tooling exact
+  `752837d76937069e1a72bec6b731cce651daf9ed` mengganti folder hasil ekstraksi
+  secara scoped dengan symlink shared storage; focused 5/5, 78 assertion, Bash
+  syntax, diff, commit, dan push lulus. Upaya kedua berhasil.
+- Delivery: production menerima backend/Owner baru tanpa migration atau
+  perubahan Studio, platform, dan SagaBook. Authenticated operator UAT belum
+  dijalankan; activation dan business readiness belum diklaim.
+
 ## 2026-08-25 - S288 rollback retention hardening local validated
 
 - Klasifikasi: `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /

@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-106 - Deploy seluruh kandidat SagaView yang aman setelah blocker ditutup
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-25/26 |
+| Topik | Otorisasi guarded deploy SagaView S286/S287 dan recovery S288 |
+| Keputusan | Andreas mengizinkan perbaikan blocker secara aman dan deployment seluruh kandidat SagaView yang telah memenuhi gate. Deployment wajib fail-closed, exact-source, backup/restore, rollback, smoke, dan tanpa menyentuh SagaBook atau produk lain. |
+| Alasan | Kandidat estimate-only sudah siap, tetapi rollback retention dan packaging shared-storage harus ditutup sebelum traffic dipindahkan. |
+| Alternatif yang dipertimbangkan | Menahan seluruh deploy; melewati gate; atau menggabungkan perubahan produk lain ditolak. |
+| Dampak | Guard retensi dan rollback dipulihkan; backend/Owner exact `8d84c60...` dideploy sebagai `20260824211838-8d84c60`; Studio tetap pada exact release aktif karena tidak ada kandidat baru. Authenticated operator UAT tetap gate terpisah sebelum activation/business readiness. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false` |
+| Dokumen terkait | [SagaView Product](products/sagaview/PRODUCT.md), [SagaView Ledger](products/sagaview/FEATURE_COVERAGE_LEDGER.md), [SagaView Changelog](products/sagaview/CHANGELOG.md), [Gaps](GAPS.md) |
+
 ## DEC-105 - SagaWork Pilot Canary 01 memakai scope Madiun dan performance OFF
 
 | Field | Value |

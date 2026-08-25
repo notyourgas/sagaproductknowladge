@@ -1,5 +1,21 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-26 - SagaView S286/S287 deploy dan S288 recovery sync
+
+- Ringkasan: sinkronisasi retention guard exact, recovery rollback, perbaikan
+  shared-storage release runner, serta production deploy backend/Owner exact
+  `8d84c60...` sebagai `20260824211838-8d84c60`.
+- Produk/area: SagaView backend/Owner, release/rollback, backup/restore,
+  security, QA, data integrity, dan operational readiness.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+- Production berubah: ya, backend/Owner dipindahkan atomik; Studio tetap exact
+  release aktif, migration delta nol, dan produk lain tidak berubah.
+- Evidence: fresh encrypted backup/restore, candidate+rollback 6/6, smoke 4/4,
+  service/header/journal, deploy gate, failed jobs, dan retention dry-run lulus.
+- Blocker/next action: authenticated operator UAT non-customer sebelum
+  activation dan business readiness.
+
 ## 2026-08-26 - Snap and Fit encrypted recovery artifacts sync
 
 - Ringkasan: sinkronisasi streaming gzip-to-age MySQL backup, encrypted-only

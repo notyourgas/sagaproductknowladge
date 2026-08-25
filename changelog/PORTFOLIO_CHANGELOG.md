@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-26 - SagaView guarded backend/Owner production release
+
+- Backend/Owner exact `8d84c60c86131892a2ae3727670b0468b64fa81b` aktif sebagai
+  `20260824211838-8d84c60`; Studio tetap exact `7ae79ae...` dan rollback
+  immediate menjadi `20260824163507-f956846`.
+- Retention guard exact melindungi current+rollback. Fresh encrypted
+  backup/restore, candidate+rollback 6/6, zero migration, atomic switch, public
+  smoke, security/service/journal, failed-job, dan retention dry-run lulus.
+- Blocker shared-storage pada upaya pertama berhenti fail-closed dan ditutup
+  oleh tooling exact `752837d7...`; upaya kedua berhasil.
+- Delivery `PRODUCTION_DEPLOYED`; authenticated operator UAT belum selesai,
+  sehingga `PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
+
 ## 2026-08-26 - Snap and Fit encrypted recovery artifact hardening
 
 - Exact private feature `a6857d1` dan documentation head `7887af9` mengganti
