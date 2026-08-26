@@ -1,5 +1,14 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-26 - SagaWork Workspace/Cabang and finalization program sync
+
+- Ringkasan: menyinkronkan keputusan founder bahwa Workspace adalah cabang operasional dalam Company, multi-workspace HR scope, primary/secondary Staff assignment, per-workspace shift/policy/geofence, seluruh request Staff, dan master program F01-F60.
+- Alasan: finalisasi SagaWork membutuhkan boundary cabang yang jelas sebelum HR CRUD, schedule, attendance, request, report, dan pilot dijalankan.
+- Produk/area: SagaWork product model, HR/Staff UX, permission, data model, scheduling, attendance, requests, reporting, pilot roadmap, dan post-pilot scope.
+- Klasifikasi: `CONFIRMED / PLANNED_NOT_IMPLEMENTED`; exact planning source `79179d9`.
+- Production berubah: tidak. Runtime tetap `e59efcd`; F01-F52 belum dieksekusi, K0/K1 tetap NO-GO, dan performance pilot tetap OFF.
+- Dokumen terdampak: Decisions, Product, Dossier, SagaWork changelog, portfolio changelog, master knowledge, gaps, root changelog, dan sync status.
+
 ## 2026-08-26 - SagaWork public synthetic trial domain sync
 
 - Ringkasan: menyinkronkan custom domain `app.sagawork.site`, DNS/TLS/Nginx, canonical redirect, public synthetic HR login, cookie scope, security headers, manifest, dan rollback rehearsal.

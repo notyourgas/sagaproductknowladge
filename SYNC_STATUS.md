@@ -12,12 +12,31 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-26T17:20:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-26T18:05:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | exact `origin/main` `f4bde5b203f3753cd82f02b07029f135f0b2b89c` |
-| Informasi terakhir disinkronkan | SagaWork public synthetic trial domain. |
-| Status sinkronisasi | `CONFIRMED / PUBLIC_SYNTHETIC_TRIAL / NOT_REAL_PILOT / NOT_PRODUCTION_READY`; production tidak berubah. |
+| Baseline sebelum pembaruan | exact `origin/main` `06a2de0d2a5d285d514aa41d135955196372246e` |
+| Informasi terakhir disinkronkan | SagaWork Workspace/Cabang model and F01-F60 finalization program. |
+| Status sinkronisasi | `CONFIRMED / PLANNED_NOT_IMPLEMENTED / PUBLIC_SYNTHETIC_TRIAL_UNCHANGED`; production tidak berubah. |
+
+## SagaWork Workspace/Cabang finalization program
+
+- Founder decision DEC-108: Workspace adalah cabang/unit operasional dalam Company dan memakai existing `location` domain pada MVP. HR dapat diberi satu, beberapa, atau seluruh Workspace; Staff mempunyai assignment primer/sekunder/temporer yang berbeda dari permission scope.
+- Setiap Workspace dapat mempunyai Staff, shift, policy, timezone, dan GPS/geofence berbeda. Request Hub target meliputi izin, cuti, sakit, ganti hari libur, swap/replacement, lembur, dan correction.
+- Exact planning source `79179d9` menyediakan 15 batch/Sprint F01-F60. F01-F52 adalah pilot critical path; F53-F60 closed-beta/post-pilot.
+- Status `PLANNED_NOT_IMPLEMENTED`: runtime tetap `e59efcd`, K0/K1 NO-GO, performance OFF, dan tidak ada schema/API/UI/deploy/production/business activation.
+
+## File yang berubah pada sinkronisasi ini (SagaWork Workspace/Cabang plan)
+
+- `DECISIONS.md`
+- `products/sagawork/PRODUCT.md`
+- `products/sagawork/DOSSIER.md`
+- `products/sagawork/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaWork public synthetic trial domain
 

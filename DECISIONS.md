@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-108 - Workspace SagaWork adalah cabang operasional dalam Company
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-26 |
+| Topik | Hierarki Company, Workspace/Cabang, Staff assignment, shift, policy, dan geofence SagaWork |
+| Keputusan | Andreas menetapkan `Workspace` sebagai istilah user-facing untuk cabang/unit operasional di dalam satu Company. Satu HR dapat menangani satu, beberapa, atau seluruh Workspace sesuai scope. Staff mempunyai Workspace primer serta assignment sekunder/temporer; setiap Workspace dapat mempunyai Staff, shift, policy, timezone, dan GPS/geofence berbeda. Untuk MVP, Workspace menggunakan entity `location` yang sudah ada agar tidak membuat domain duplikat. |
+| Alasan | Operasi multi-cabang memerlukan batas staf, jadwal, aturan jam kerja, dan titik attendance yang jelas, sementara schema SagaWork sudah menjadikan location sebagai tenant-safe operational scope. |
+| Alternatif yang dipertimbangkan | Membuat entity Workspace baru yang menduplikasi location ditolak untuk MVP; menyamakan assignment tempat kerja dengan permission scope juga ditolak. Multi-zone dan multi-Company HR ditunda sampai ada evidence kebutuhan setelah pilot. |
+| Dampak | Program finalisasi memakai 15 batch/Sprint F01-F60. F01-F52 menutup Workspace, Staff, schedule, request, attendance, reporting, privacy/security, owner rehearsal, dan five-Staff canary; F53-F60 hanya closed-beta/post-pilot. Source planning exact `79179d9`; belum ada migration, runtime, production, atau business activation. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / PLANNED_NOT_IMPLEMENTED / REAL_PILOT_NO-GO` |
+| Dokumen terkait | [SagaWork Product](products/sagawork/PRODUCT.md), [SagaWork Dossier](products/sagawork/DOSSIER.md), [SagaWork Changelog](products/sagawork/CHANGELOG.md), [Gaps](GAPS.md) |
+
 ## DEC-106 - Deploy seluruh kandidat SagaView yang aman setelah blocker ditutup
 
 | Field | Isi |

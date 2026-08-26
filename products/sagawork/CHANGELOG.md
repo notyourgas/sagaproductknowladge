@@ -8,6 +8,13 @@ Mencatat perubahan material SagaWork dengan status delivery dan activation yang 
 
 Synthetic fixture, preview, dan staging bukan bukti real pilot atau production activation.
 
+## 2026-08-26 - Workspace/Cabang model and F01-F60 finalization program
+
+- `CONFIRMED / PLANNED_NOT_IMPLEMENTED`: Workspace adalah cabang/unit operasional dalam Company dan memakai existing `location` domain untuk MVP. HR dapat diberi satu, beberapa, atau seluruh Workspace; Staff memiliki primary dan effective-dated secondary/temporary assignment yang berbeda dari permission scope.
+- Setiap Workspace dapat mempunyai Staff, shift, policy, timezone, dan GPS/geofence berbeda. Request Hub target meliputi izin, cuti, sakit, ganti hari libur, swap/replacement, lembur, dan correction.
+- Exact planning source `79179d9` menyediakan 15 batch/Sprint F01-F60. Critical path pilot berhenti di F52; F53-F60 adalah closed-beta/post-pilot dan tidak boleh menahan canary.
+- Runtime tetap `e59efcd`; tidak ada schema/API/UI/deploy/production/business activation. K0/K1 tetap NO-GO dan performance pilot tetap OFF.
+
 ## 2026-08-26 - Public synthetic trial domain
 
 - `CONFIRMED / PUBLIC_SYNTHETIC_TRIAL_PASS`: domain feature `5921f43`, canonical proxy-host cookie fix/runtime `e59efcd`, dan acceptance `c3c5e5f` membuat HR feature-review tersedia pada `https://app.sagawork.site`; apex/`www` redirect ke `app`.

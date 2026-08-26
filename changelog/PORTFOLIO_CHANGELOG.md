@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-08-26 - SagaWork Workspace/Cabang finalization program
+
+- Andreas mengunci Workspace sebagai cabang operasional di dalam Company: HR dapat menangani satu/beberapa/semua Workspace, Staff mempunyai assignment primer/sekunder/temporer, dan tiap Workspace dapat memakai shift/policy/geofence berbeda.
+- Exact planning source `79179d9` memecah finalisasi menjadi 15 batch/Sprint F01-F60; F01-F52 sampai five-Staff canary, F53-F60 closed-beta/post-pilot.
+- Status `CONFIRMED / PLANNED_NOT_IMPLEMENTED`; public synthetic runtime tetap `e59efcd`, K0/K1 NO-GO, performance OFF, dan tidak ada production/business activation.
+
 ## 2026-08-26 - SagaWork public synthetic trial domain
 
 - SagaWork HR feature-review kini tersedia pada `https://app.sagawork.site` melalui Hostinger Nginx/TLS dan loopback application runtime exact `e59efcd`; apex/`www` redirect ke `app`.
