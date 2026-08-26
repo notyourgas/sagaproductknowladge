@@ -1,5 +1,15 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-26 - SagaView S296 shared-storage guard sync
+
+- Ringkasan: exact `654b44a45e3a35894236921888b52bbc74989c54` menutup akar
+  packaging S295 secara lokal/disposable dengan validasi symlink shared sebelum
+  dan sesudah atomic switch.
+- Evidence: regression 196/1.615, build 5.097 modul, parser/syntax, audit
+  dependency nol, artifact/bundle/manifest ganda, dan rehearsal sentinel lulus.
+- Production berubah: tidak. Delivery `PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap S292.
+
 ## 2026-08-26 - SagaView S295 fail-closed rollback sync
 
 - Ringkasan: deploy kandidat path-privacy S294 dibatalkan setelah audit

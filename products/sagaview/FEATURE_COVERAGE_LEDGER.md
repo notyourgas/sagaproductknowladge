@@ -1,6 +1,19 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 26 Agustus 2026 07:24 WIB
+Evidence cut-off: 26 Agustus 2026 08:15 WIB
+
+S296 shared-storage release guard: exact pushed source
+`654b44a45e3a35894236921888b52bbc74989c54` menutup akar packaging S295
+secara lokal dan disposable. Guard menghapus release-local `storage`, membuat
+symlink shared, memvalidasi target/nesting/read-write sebelum atomic switch,
+dan memvalidasi ulang setelah switch. Red-green 2 gagal lalu focused 3/27,
+regresi SagaView/Support Hub 196/1.615, build 5.097 modul, Bash Linux, parser
+PowerShell, Pint/diff, dan audit dependency nol lulus. Artifact S295 yang sama
+berhasil direhearsal dari direktori lokal menjadi symlink shared dengan sentinel
+round-trip, checksum tetap, dan production current unchanged. Status `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S292. Satu gap
+berikutnya adalah guarded deploy terpisah dengan exact artifact, backup/restore
+baru, rollback, service, health, dan public smoke.
 
 S295 guarded deployment S294 berhenti fail-closed dan sudah rollback. Candidate
 exact `be0d730758c8678c263a8ea12ed09924db89e23a` sempat dipasang sebagai

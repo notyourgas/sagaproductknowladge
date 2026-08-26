@@ -1,6 +1,17 @@
 # SagaView Product Knowledge
 
-Updated: 26 Agustus 2026 07:24 WIB
+Updated: 26 Agustus 2026 08:15 WIB
+
+SagaView S296 exact `654b44a45e3a35894236921888b52bbc74989c54` sudah
+`PUSHED / SECURITY_VALIDATED / QA_VALIDATED / DEVOPS_VALIDATED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Release guard kini menghapus
+folder `storage` bawaan archive, membuat symlink ke shared storage, lalu
+memvalidasi target, larangan nesting, serta read/write sebelum dan sesudah
+atomic switch. Rehearsal Linux memakai artifact S295 yang sebelumnya gagal:
+before berupa direktori lokal, after menjadi symlink shared, sentinel
+read/write dan checksum archive lulus, serta pointer production tidak berubah.
+Production tetap S292; retry deploy memerlukan run terpisah dengan artifact
+exact, backup/restore baru, rollback, health, dan smoke.
 
 SagaView S295 guarded deploy exact
 `be0d730758c8678c263a8ea12ed09924db89e23a` berhenti fail-closed dan sudah

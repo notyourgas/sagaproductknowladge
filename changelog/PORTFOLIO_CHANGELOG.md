@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-26 - SagaView S296 release storage guard
+
+- Exact source `654b44a45e3a35894236921888b52bbc74989c54` membuat release
+  fail-closed bila shared storage salah target, bertingkat, atau tidak dapat
+  dibaca/ditulis.
+- Artifact kegagalan S295 berhasil direhearsal secara disposable: direktori
+  lokal diganti symlink shared, sentinel round-trip dan checksum lulus, serta
+  pointer production tidak berubah.
+- Delivery `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+  tetap S292 dan guarded deploy berikutnya masih memerlukan gate release penuh.
+
 ## 2026-08-26 - SagaView S295 fail-closed dan rollback
 
 - Kandidat privacy S294 sempat dipasang sebagai release inactive

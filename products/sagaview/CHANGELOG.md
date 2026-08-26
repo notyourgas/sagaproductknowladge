@@ -1,5 +1,25 @@
 # SagaView Changelog
 
+## 2026-08-26 - S296 shared-storage release guard
+
+- Klasifikasi: `PUSHED / SECURITY_VALIDATED / QA_VALIDATED /
+  DEVOPS_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+  tetap S292.
+- Before: archive Laravel membawa direktori `storage`, sehingga pembuatan link
+  tidak mengganti state lokal dan S295 harus rollback.
+- After: exact `654b44a45e3a35894236921888b52bbc74989c54` menghapus hanya
+  direktori `storage` pada candidate release tervalidasi, membuat symlink shared,
+  lalu memeriksa target, nesting, read/write, dan ulangi validasi sesudah switch.
+- Dampak: blocker packaging S295 tertutup secara lokal dan disposable; release
+  tidak lagi boleh aktif bila shared storage salah bentuk atau tidak writable.
+- Evidence: red-green 2 gagal lalu 3/27 hijau; regresi SagaView/Support Hub
+  196/1.615; build 5.097 modul; Bash syntax Linux, parser PowerShell, Pint/diff,
+  audit Composer/npm nol, dan rehearsal artifact gagal S295 lulus sentinel serta
+  production-current unchanged.
+- Provenance: source archive SHA-256 `5bbd61c7...ab6ea56`, bundle SHA-256
+  `0f5c6b28...01219c`, manifest identik pada dua salinan. Retry production tetap
+  gate terpisah dengan backup/restore baru dan rollback.
+
 ## 2026-08-26 - S295 deploy fail-closed pada shared storage
 
 - Klasifikasi: `DEPLOY_ATTEMPTED / RELEASE_BLOCKED / ROLLED_BACK`;

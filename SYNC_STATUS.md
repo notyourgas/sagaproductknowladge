@@ -12,12 +12,25 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-26T07:24:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-26T08:15:00+07:00 |
 | Branch aktif | `codex/knowledge-s292-sagaview-production` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | branch exact `a7095e0` sebelum sinkronisasi S295 |
-| Informasi terakhir disinkronkan | SagaView S295 release blocked dan rollback ke S292. |
-| Status sinkronisasi | `RELEASE_BLOCKED / ROLLED_BACK`; S294 tetap `IMPLEMENTED_NOT_DEPLOYED`; `BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | branch exact `b09eef5` sebelum sinkronisasi S296 |
+| Informasi terakhir disinkronkan | SagaView S296 shared-storage guard local/disposable validated. |
+| Status sinkronisasi | `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S292; `BUSINESS_READY=false`. |
+
+## SagaView S296 shared-storage release guard
+
+- Exact source `654b44a45e3a35894236921888b52bbc74989c54` mengikat deploy ke
+  source bersih dan approval eksplisit, lalu memvalidasi shared storage sebelum
+  serta sesudah atomic switch.
+- Rehearsal Linux memakai artifact S295 yang sama dan lulus perubahan direktori
+  lokal menjadi symlink shared, sentinel round-trip, checksum archive, serta
+  production-current unchanged.
+- Regression 196/1.615, build 5.097 modul, parser/syntax, Pint/diff, audit
+  dependency nol, dan provenance archive/bundle/manifest ganda lulus.
+- Production tetap S292; retry deploy ditahan untuk run terpisah dengan backup,
+  restore, rollback, service, health, dan smoke baru.
 
 ## SagaView S295 fail-closed rollback
 
