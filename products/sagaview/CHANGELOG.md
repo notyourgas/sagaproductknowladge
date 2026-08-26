@@ -1,5 +1,31 @@
 # SagaView Changelog
 
+## 2026-08-27 - S311 exact S310 artifact custody blocked by capacity
+
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED`; production tidak berubah dan
+  kandidat belum `STAGING_READY`.
+- Before: exact S310 belum mempunyai immutable archive, manifest, git bundle,
+  ukuran aktual, atau bukti custody terpisah.
+- After: release `20260826210546-cd7288d` dari exact
+  `cd7288d3bb4da9542fbfa20f97780fa5639759bf` mempunyai archive 2.591 entry,
+  SHA-256 manifest, fresh build 5.097 modul, dan complete git bundle exact HEAD.
+- Integrity: archive SHA-256
+  `09b12312fd82cb3cbaf1027cfa1579ca0867f7449b9bd3b40ddba7e192ba9bc7`;
+  bundle SHA-256
+  `f7bbf9a0686a8403278a72c53b93c63f81b679100fe9538480d27d190ee5a3d7`.
+  File `.env`, `.git`, `vendor`, dan `node_modules` tidak masuk archive;
+  migration delta nol dan kontrak artifact lulus 4/35.
+- Blocker: archive 77,732 MB dan bundle 112,920 MB membutuhkan total 190,652 MB
+  pada storage terpisah. Kapasitas terpisah hanya 71,04 MB; salinan identik pada
+  volume yang sama tidak memenuhi kontrak custody.
+- Delivery: rehearsal VPS, backup/restore, deploy, activation, business
+  readiness, dan notifikasi completion tidak dilakukan. Production tetap pada
+  backend/Owner `20260826050812-7bf0e0d` dan Studio
+  `20260824170456-7ae79ae` dengan layanan utama aktif.
+- Next gate: sediakan minimal 190,652 MB storage terpisah tanpa menghapus bukti
+  lain, salin dan verifikasi checksum, lalu jalankan rehearsal disposable.
+
 ## 2026-08-27 - S310 Owner overview progressive disclosure and link recovery
 
 - Klasifikasi: `CONFIRMED / PUSHED / UIUX_VALIDATED / QA_VALIDATED /

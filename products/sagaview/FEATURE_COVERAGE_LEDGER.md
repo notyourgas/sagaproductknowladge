@@ -1,6 +1,23 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 27 Agustus 2026 03:24 WIB
+Evidence cut-off: 27 Agustus 2026 04:07 WIB
+
+S311 exact S310 artifact custody preflight: exact pushed source
+`cd7288d3bb4da9542fbfa20f97780fa5639759bf` sudah menghasilkan immutable
+release `20260826210546-cd7288d`. Archive 2.591 entry, SHA-256 manifest, fresh
+build 5.097 modul, dan git bundle lengkap terikat tepat pada HEAD S310.
+Archive tidak memuat `.env`, `.git`, `vendor`, atau `node_modules`; migration
+delta dari backend production aktif adalah nol dan kontrak artifact lulus 4/35.
+
+Archive berukuran 77,732 MB dan bundle 112,920 MB, total 190,652 MB per
+salinan. Salinan checksum-identik kedua berhasil dibuat pada volume yang sama,
+tetapi tidak dihitung sebagai custody terpisah. Volume terpisah yang tersedia
+hanya memiliki 71,04 MB bebas, sehingga bahkan archive tidak dapat disalin
+utuh. Status tetap `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+RELEASE_BLOCKED`; bukan `STAGING_READY`. Rehearsal VPS, backup/restore, cutover,
+dan notifikasi completion tidak dijalankan. Gap tunggal S311 adalah menyediakan
+minimal 190,652 MB pada storage terpisah tanpa menghapus bukti lain, lalu salin,
+verifikasi checksum, dan jalankan rehearsal disposable.
 
 S310 Owner overview progressive disclosure and link recovery: exact pushed
 source `cd7288d3bb4da9542fbfa20f97780fa5639759bf` menyederhanakan Ringkasan

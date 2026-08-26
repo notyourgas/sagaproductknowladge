@@ -1,5 +1,22 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-27 - SagaView S311 artifact custody capacity sync
+
+- Ringkasan: menyinkronkan immutable release exact S310, checksum, bundle,
+  ukuran paket aktual, dan blocker custody storage terpisah.
+- Alasan: kandidat tidak boleh dinaikkan ke `STAGING_READY` bila dua salinan
+  immutable belum berada pada storage terpisah.
+- Produk/area: SagaView release artifact, provenance, integrity, security, QA,
+  DevOps, production guard, dan capacity planning.
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED`; exact source
+  `cd7288d3bb4da9542fbfa20f97780fa5639759bf`, release
+  `20260826210546-cd7288d`.
+- Production berubah: tidak. Rehearsal VPS, backup/restore, deployment,
+  activation, business readiness, dan notifikasi completion tidak dilakukan.
+- Dokumen terdampak: Product/changelog/ledger SagaView, portfolio, root
+  changelog, dan sync status.
+
 ## 2026-08-27 - COYABAG simulator journey integrity sync
 
 - Ringkasan: menyinkronkan presentasi simulator khusus, pemulihan discovery
