@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-08-26 - Snap and Fit AWS and VPS prototype backend
+
+- Reviewed AWS plan diterapkan 40 add/0 change/0 destroy dan refresh nol drift tanpa runtime access
+  key. Exact VPS runtime source `8ed1787`; evidence/source head `15166d2`.
+- Isolated loopback API/worker aktif, 19 migration serta synthetic seed lulus, dan HTTP Nginx gate
+  menolak plaintext API sampai DNS/TLS tersedia.
+- Status `LOCAL_VALIDATED / VPS_PROTOTYPE_BACKEND_DEPLOYED`; belum `STAGING_READY`, production, atau
+  business-ready. DNS/TLS, protected BFF, connected UAT, recovery, dan provider credentials masih gate.
+
 ## 2026-08-26 - SagaBook staff schedule action busy state
 
 - Kandidat kumulatif exact source `4e2267c98f68b5be6e4a7f794b2c7431581fe98b`

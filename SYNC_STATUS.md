@@ -12,12 +12,21 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-26T19:12:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-26T19:24:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | exact `a1718ccf636541ab9f1306d301ad3170fdfe284e` |
-| Informasi terakhir disinkronkan | SagaBook staff schedule action busy state exact source `4e2267c98f68b5be6e4a7f794b2c7431581fe98b`. |
-| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production SagaBook tidak berubah. |
+| Baseline sebelum pembaruan | exact `76bdfcdc363d66199e948e58d3515af8d7b2118a` |
+| Informasi terakhir disinkronkan | Snap and Fit AWS apply dan isolated VPS prototype backend exact runtime source `8ed1787`, source/docs evidence `15166d2`. |
+| Status sinkronisasi | `CONFIRMED / LOCAL_VALIDATED / VPS_PROTOTYPE_BACKEND_DEPLOYED`; production Snap and Fit tidak berubah. |
+
+## Snap and Fit AWS and VPS prototype backend
+
+- Reviewed AWS apply selesai 40 add/0 change/0 destroy dan refresh nol drift tanpa runtime access key.
+- API/worker bounded dan loopback-only aktif pada isolasi proyek; 19 migration serta synthetic seed
+  lulus, sementara Nginx HTTP gate fail-closed sampai DNS/TLS tersedia.
+- Belum `STAGING_READY`: protected Vercel BFF, connected UAT, backup/restore, rollback, Google OAuth,
+  Tokopay test, dan AWS runtime credential/signing tetap gate. Production dan business readiness
+  tidak berubah.
 
 ## SagaBook staff schedule action busy state
 

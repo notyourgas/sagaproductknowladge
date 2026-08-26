@@ -10,6 +10,18 @@ production, activation, dan business readiness.
 Mock, fixture, preview frontend, dan test lokal bukan bukti provider atau
 production activation.
 
+## 2026-08-26 - AWS apply and isolated VPS prototype backend
+
+- Reviewed AWS plan diterapkan tepat 40 add/0 change/0 destroy; refresh nol drift, public-access
+  blocking aktif, dan runtime IAM user tetap tanpa access key.
+- Exact VPS runtime source `8ed1787`; source/docs evidence `15166d2`. API/worker systemd terisolasi
+  dan loopback-only, 19 migration plus synthetic seed lulus, serta Nginx HTTP gate fail-closed.
+- Delivery tetap `LOCAL_VALIDATED / VPS_PROTOTYPE_BACKEND_DEPLOYED`, bukan `STAGING_READY` atau
+  production. Manual API DNS/TLS, protected BFF connection, connected UAT, backup/restore, rollback,
+  Google OAuth, Tokopay test, dan AWS runtime signing/credential masih gate.
+- Klasifikasi `CONFIRMED`; production, real money, real participant media, biometric activation, dan
+  business readiness tidak berubah.
+
 ## 2026-08-26 - Protected biometric-profile web preview
 
 - Protected Vercel deployment `dpl_FTPTFFb7Q4WWh6jcp7Bt42151d87` dari exact

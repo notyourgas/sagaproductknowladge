@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-26 - Snap and Fit AWS and VPS prototype backend sync
+
+- Ringkasan: menyinkronkan zero-drift AWS apply dan isolated loopback VPS prototype backend dengan
+  19 migration, synthetic seed, bounded services, serta fail-closed HTTP edge.
+- Alasan: status deployment harus membedakan backend prototype yang aktif dari connected staging,
+  production activation, dan business readiness.
+- Produk/area: Snap and Fit infrastructure, database, worker, security edge, release, dan evidence.
+- Klasifikasi: `CONFIRMED / LOCAL_VALIDATED / VPS_PROTOTYPE_BACKEND_DEPLOYED`; exact runtime source
+  `8ed1787`, source/docs evidence `15166d2`.
+- Production berubah: tidak. DNS/TLS, protected BFF, connected UAT/recovery, Google OAuth, Tokopay
+  test, AWS runtime credential/signing, real data, dan activation masih gate.
+
 ## 2026-08-26 - SagaBook staff schedule action busy state sync
 
 - Ringkasan: menyinkronkan lock sinkron per booking, indikator proses yang

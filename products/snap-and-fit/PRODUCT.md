@@ -1,7 +1,7 @@
 # Snap and Fit Product Knowledge
 
 Updated: 26 Agustus 2026
-Evidence status: `CONFIRMED / LOCAL_VALIDATED / protected preview deployed`
+Evidence status: `CONFIRMED / LOCAL_VALIDATED / VPS_PROTOTYPE_BACKEND_DEPLOYED`
 
 ## Tujuan dokumen
 
@@ -49,10 +49,12 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 ## Status saat ini
 
 - Delivery: `LOCAL_VALIDATED`.
+- Runtime: isolated loopback-only VPS prototype backend deployed; protected web preview remains
+  disconnected until manual API DNS and TLS pass.
 - Activation: `NOT_PRODUCTION_ACTIVATED`.
 - Business readiness: `BLOCKED`.
-- Exact private implementation source `2aef57a`, preview source `167896b`, dan
-  source/docs head `3bb8466`; persistent biometric-profile, Google OAuth, AWS plan,
+- Exact private implementation source `2aef57a`, VPS runtime source `8ed1787`, preview source
+  `167896b`, dan source/docs head `15166d2`; persistent biometric-profile, Google OAuth, AWS plan,
   dan prototype-topology slice berasal dari implementation source tersebut;
   provider-chaos acceptance feature
   berasal dari `6d3d955`, native age recovery evidence berasal

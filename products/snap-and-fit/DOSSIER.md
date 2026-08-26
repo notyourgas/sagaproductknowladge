@@ -9,11 +9,11 @@ credential, PII, identifier tenant/perangkat, atau detail provider sensitif.
 
 - Updated: 26 Agustus 2026
 - Klasifikasi: `CONFIRMED`
-- Delivery: `LOCAL_VALIDATED`
+- Delivery: `LOCAL_VALIDATED / VPS_PROTOTYPE_BACKEND_DEPLOYED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED`
-- Provenance: exact private implementation source `2aef57a`, preview source
-  `167896b`, source/docs head `3bb8466`, persistent biometric-profile, Google OAuth,
+- Provenance: exact private implementation source `2aef57a`, VPS runtime source `8ed1787`, preview
+  source `167896b`, source/docs head `15166d2`, persistent biometric-profile, Google OAuth,
   AWS plan, dan prototype-topology slice dari implementation source tersebut; provider-chaos acceptance
   feature `6d3d955`, native age recovery
   evidence `4b6c08b`, fail-closed 300-VU load
@@ -59,6 +59,13 @@ notification, dan deletion worker dengan fault injection sintetis. Payment
 truth tidak dipromosikan saat timeout, BIB tetap tersedia saat face provider
 degraded, media gagal tidak dipublish, dan retry/DLQ tetap redacted. Bukti ini
 lokal; real provider, Redis/MySQL/S3 soak, dan alert firing tetap gate staging.
+
+Reviewed AWS infrastructure telah di-apply 40 add/0 change/0 destroy dan refresh sesudahnya nol
+drift tanpa runtime access key. VPS prototype memakai identity/database/Redis prefix/service/release
+terisolasi; API dan worker aktif loopback, 19 migration serta seed sintetis lulus, dan HTTP edge
+fail-closed sampai DNS/TLS tersedia. Status belum `STAGING_READY`: protected Vercel BFF, connected
+UAT, backup/restore, rollback, Google OAuth, Tokopay test, serta AWS runtime credential/signing gate
+belum selesai.
 
 ## Overview produk
 

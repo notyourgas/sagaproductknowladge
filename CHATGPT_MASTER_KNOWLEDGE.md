@@ -103,6 +103,16 @@ SagaWork active public synthetic staging runtime sekarang exact `e2a0391`; domai
 
 SagaWork Workspace/Cabang operating model sekarang `CONFIRMED / LOCAL_VALIDATED / PUBLIC_SYNTHETIC_TRIAL_DEPLOYED / FEATURE_REVIEW_READY` pada exact source/runtime `e2a0391`, meneruskan planning `79179d9`; acceptance docs `0dd224f`. Workspace tetap compatibility layer dari `locations`; effective-dated primary/secondary/temporary Staff assignment, Organization/Workspace HR scope, safe selector/filter, assignment history, GPS setup preview, versioned Workspace shift template, serta target-Workspace schedule eligibility aktif di `https://app.sagawork.site`. Gate lulus 67 tabel/26 migration/32 trigger, OpenAPI 76 path/95 operasi/52 request component, 41 file/150 test, 49-page build, 1.141-file manifest, encrypted pre/post backup, isolated restore, authenticated/public smoke, dan rollback `e2a0391 → e59efcd → e2a0391`. Owner UAT, privacy/legal/provider/device/offsite/admission, serta real canary belum dijalankan. K0/K1 dan real pilot tetap NO-GO, performance OFF, F19 serta beberapa automation/notification/XLSX masih residual, dan F53-F60 tetap gated sesudah canary.
 
+Snap and Fit telah mencapai `CONFIRMED / LOCAL_VALIDATED /
+VPS_PROTOTYPE_BACKEND_DEPLOYED`: reviewed AWS apply selesai 40 add/0 change/0
+destroy dan refresh nol drift tanpa runtime access key. Exact VPS runtime source
+`8ed1787`; source/docs evidence `15166d2`. API dan worker bounded aktif hanya di
+loopback pada isolasi project, 19 migration serta synthetic seed lulus, dan
+Nginx HTTP edge fail-closed sampai manual DNS/TLS selesai. Ini belum
+`STAGING_READY`, production, atau business-ready; protected Vercel BFF,
+connected UAT/recovery, Google OAuth, Tokopay test, AWS runtime signing/
+credential, real data, dan activation tetap gate.
+
 Snap and Fit exact private implementation source `2aef57a`, preview source
 `167896b`, dan source/docs head `3bb8466` berstatus `CONFIRMED /
 LOCAL_VALIDATED`; provider-chaos acceptance feature berasal dari `6d3d955`,
