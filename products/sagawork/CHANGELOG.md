@@ -8,6 +8,13 @@ Mencatat perubahan material SagaWork dengan status delivery dan activation yang 
 
 Synthetic fixture, preview, dan staging bukan bukti real pilot atau production activation.
 
+## 2026-08-26 - Synthetic trial HR direct login
+
+- Feature `eb3b372`, active loopback fix `c14f5c2`, dan acceptance `0cd3516` memberi satu identity HR trial allowlisted akses langsung tanpa TOTP hanya pada exact staging sintetis; credential/identity tetap restricted.
+- Full gate 38/137, 47-page build, 66/24/32 database contract, OpenAPI 70/85/48, encrypted pre-provision backup, manifest 1.084 file, dan rollback `c14f5c2 → eb3b372 → c14f5c2` PASS.
+- Overview, people, scheduling, requests, exceptions, reports, settings, dan account HTTP 200; password salah 401. Standard privileged MFA/Secure cookie tidak berubah; loopback HTTP cookie hanya aktif pada boundary trial yang sama.
+- Akun trial bukan akun pilot. K0/K1 tetap NO-GO; pilot wajib memakai account/password/TOTP baru, protected TLS, dedicated database, provider/offsite recovery, dan signed admission.
+
 ## 2026-08-26 - Synthetic staging HR demo account
 
 - Exact feature/runtime `4eb01c3` menambah fail-closed synthetic-demo HR provisioner; acceptance `517338b` merekam deployment, MySQL migration ke 66 tabel/24 migration, encrypted backup/restore, serta guarded rollback. Local follow-up `a847c0a` memperbaiki lifecycle command dan belum terdeploy.

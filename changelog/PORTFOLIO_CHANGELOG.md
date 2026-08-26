@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-08-26 - SagaWork synthetic trial HR login ready
+
+- `CONFIRMED / SYNTHETIC_TRIAL_LOGIN_PASS`: feature `eb3b372`, active runtime `c14f5c2`, acceptance `0cd3516`; satu restricted allowlisted HR identity dapat masuk tanpa TOTP hanya pada loopback staging sintetis.
+- 38/137 tests, 47-page build, eight HR areas HTTP 200, wrong-password 401, encrypted backup, 1.084-file manifest, dan rollback dua arah PASS.
+- Owner feature review siap, tetapi K0/K1 tetap NO-GO. Akun pilot wajib baru, MFA-protected, dan terpisah; tidak ada real Staff/photo/GPS atau production activation.
+
 ## 2026-08-26 - COYABAG Admin Varian storefront activation integrity
 
 - Exact source `4abf96fca4215033d44a85a2ffa4db46066f6ecf` aktif pada immutable

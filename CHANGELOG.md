@@ -1,5 +1,12 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-26 - SagaWork synthetic trial HR direct-login sync
+
+- Ringkasan: feature `eb3b372`, active runtime `c14f5c2`, acceptance `0cd3516`; satu allowlisted HR trial identity dapat login langsung pada staging sintetis tanpa TOTP.
+- Bukti: 38 test file/137 test, 47-page build, eight HR pages HTTP 200, wrong password 401, encrypted backup, 1.084-file manifest, health, serta rollback dua arah PASS.
+- Batas: credential/identity restricted, akun regular/pilot tetap MFA, K0/K1 NO-GO, dan tidak ada real Staff/photo/GPS, Vercel change, atau production activation.
+- Dokumen terdampak: Product, Dossier, SagaWork changelog, portfolio changelog, master knowledge, gaps, root changelog, dan sync status.
+
 ## 2026-08-26 - COYABAG Admin Varian storefront activation sync
 
 - Ringkasan: menyinkronkan safe variant creation, activation readiness,

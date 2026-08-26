@@ -12,12 +12,30 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-26T15:57:54+07:00 |
+| Waktu pembaruan terakhir | 2026-08-26T16:35:27+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | exact `origin/main` `933f0eff27472506199e977fe67f3c254020735a` |
-| Informasi terakhir disinkronkan | COYABAG Admin Varian storefront activation integrity. |
-| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED`; commerce activation `BLOCKED`. |
+| Baseline sebelum pembaruan | exact `origin/main` `5f1d53cd1ae0655ba446c1386974bd09ae075eca` |
+| Informasi terakhir disinkronkan | SagaWork synthetic trial HR direct login. |
+| Status sinkronisasi | `CONFIRMED / SYNTHETIC_TRIAL_LOGIN_PASS / OWNER_FEATURE_REVIEW_READY`; K0/K1 `NO_GO`. |
+
+## SagaWork synthetic trial HR direct login
+
+- Feature `eb3b372`, active runtime `c14f5c2`, acceptance `0cd3516`; one restricted allowlisted HR trial identity logs in without TOTP only on loopback synthetic staging.
+- 38 test file/137 test, 47-page build, 66/24/32 database contract, OpenAPI 70/85/48, eight HR pages HTTP 200, wrong password 401, encrypted backup, 1.084-file manifest, and two-way rollback PASS.
+- Credentials and identity remain restricted. Regular/pilot privileged accounts keep mandatory TOTP and Secure cookies; no real Staff/photo/GPS, Vercel change, or production activation.
+- Owner feature review is ready, but K0/K1 remain NO-GO. The pilot requires a new MFA-protected identity, dedicated environment, protected TLS, provider/offsite recovery, and signed admission.
+
+## File yang berubah pada sinkronisasi ini (SagaWork synthetic trial HR login)
+
+- `products/sagawork/PRODUCT.md`
+- `products/sagawork/DOSSIER.md`
+- `products/sagawork/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG Admin Varian storefront activation integrity
 
