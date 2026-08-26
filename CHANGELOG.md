@@ -1,5 +1,22 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-26 - COYABAG Storefront Catalog availability integrity sync
+
+- Ringkasan: menyinkronkan Catalog availability state, stock-filter recovery,
+  lazy full-filter UI, dan immutable production release terbaru.
+- Alasan: discovery harus tetap berguna ketika checkout atau stok belum siap,
+  tanpa klaim transaksi, URL buntu, atau blocker internal pada customer UI.
+- Produk/area: COYABAG Catalog, variant stock, responsive UI/UX,
+  accessibility, performance, QA, security, release, dan rollback.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED`; exact source
+  `77ed9295b654848fb855c599721855b992487b35`, release
+  `20260826-77ed929`, rollback `20260826-0fd20c3`.
+- Production berubah: ya, storefront/API/admin runtime. Tidak ada migration,
+  data commerce, provider, atau activation; readiness tetap 30/42 dengan 12
+  blocker.
+- Dokumen terdampak: Product, Dossier, changelog COYABAG, portfolio, master,
+  root changelog, dan sync status.
+
 ## 2026-08-26 - COYABAG Storefront Home commerce truth sync
 
 - Ringkasan: menyinkronkan homepage commerce truth, wishlist recovery,

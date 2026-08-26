@@ -3556,9 +3556,19 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release aktif `20260826-0fd20c3` menjalankan exact source
-`0fd20c3f0e5b50780735963f680d87f2fca9b53e` dengan rollback
-`20260826-a575c3b`. Homepage membedakan checkout terblokir, restock, dan ready
+Release aktif `20260826-77ed929` menjalankan exact source
+`77ed9295b654848fb855c599721855b992487b35` dengan rollback
+`20260826-0fd20c3`. Catalog menyatukan status preview, restock, dan ready dengan
+kontrak checkout serta stok varian live. Jumlah warna, stock filter, full
+filter drawer, dan recovery URL stale memakai state authoritative yang sama.
+Recovery menghapus kondisi stok yang invalid tanpa membuang filter valid;
+browsing tetap tersedia dan checkout tetap fail-closed. Desktop/mobile, 192
+storefront test, 441 Laravel test, full release gate, public smoke, workers,
+scheduler, dan log checks lulus. Readiness tetap 30/42 dengan 12 blocker;
+commerce tidak production-activated.
+
+Release sebelumnya `20260826-0fd20c3` menjalankan exact source
+`0fd20c3f0e5b50780735963f680d87f2fca9b53e`. Homepage membedakan checkout terblokir, restock, dan ready
 dari kontrak server serta stok varian live. Hero fallback dan etalase tidak
 lagi memakai klaim transaksi saat checkout nonaktif; customer dapat membuka
 katalog atau wishlist. Managed campaign CMS tetap berlaku. Entry JS turun ke

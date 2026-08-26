@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-26 - COYABAG Storefront Catalog availability integrity
+
+- Exact source `77ed9295b654848fb855c599721855b992487b35` aktif pada immutable
+  release `20260826-77ed929`; rollback `20260826-0fd20c3` tersedia.
+- Catalog memakai checkout dan stok varian live untuk status, jumlah warna,
+  stock filter, filter drawer, dan recovery URL stale tanpa membuang filter
+  valid atau mengekspos blocker internal.
+- Desktop/mobile, 192 storefront test, 441 Laravel test, full release gate,
+  public smoke, workers, scheduler, dan log checks lulus.
+- Status `PRODUCTION_DEPLOYED`; commerce/business readiness tetap `BLOCKED`
+  pada 30/42 checks dengan 12 blocker.
+
 ## 2026-08-26 - COYABAG Storefront Home commerce truth
 
 - Exact source `0fd20c3f0e5b50780735963f680d87f2fca9b53e` aktif pada immutable

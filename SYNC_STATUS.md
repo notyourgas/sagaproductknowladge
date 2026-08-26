@@ -12,12 +12,33 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-26T21:13:18+07:00 |
+| Waktu pembaruan terakhir | 2026-08-26T22:09:06+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | exact `bff575269351d6c8600e1a120340f610f14a5f62` |
-| Informasi terakhir disinkronkan | COYABAG Storefront Home commerce truth exact source `0fd20c3f0e5b50780735963f680d87f2fca9b53e`, immutable release `20260826-0fd20c3`, rollback `20260826-a575c3b`. |
+| Baseline sebelum pembaruan | exact `77f854ec38279d91dcd817c149b0659c0e77b6b0` |
+| Informasi terakhir disinkronkan | COYABAG Storefront Catalog availability integrity exact source `77ed9295b654848fb855c599721855b992487b35`, immutable release `20260826-77ed929`, rollback `20260826-0fd20c3`. |
 | Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED`; commerce activation dan business readiness tetap `BLOCKED`. |
+
+## COYABAG Storefront Catalog availability integrity
+
+- Exact source `77ed9295b654848fb855c599721855b992487b35` aktif pada immutable
+  release `20260826-77ed929`; rollback `20260826-0fd20c3` tersedia.
+- Catalog menyatukan state checkout dan stok varian untuk status, jumlah warna,
+  stock filter, full filter drawer, dan recovery URL stale. Filter warna,
+  pencarian, dan scene yang valid tetap dipertahankan.
+- Desktop/mobile, 192 storefront test, 441 Laravel test, full release gate,
+  public smoke, workers, scheduler, dan log checks lulus. Commerce tetap
+  fail-closed pada 30/42 checks dengan 12 blocker.
+
+## File yang berubah pada sinkronisasi ini (COYABAG Storefront Catalog)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG Storefront Home commerce truth
 

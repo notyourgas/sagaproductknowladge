@@ -78,9 +78,20 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260826-0fd20c3` memakai exact source
-`0fd20c3f0e5b50780735963f680d87f2fca9b53e` dan rollback
-`20260826-a575c3b`. Homepage sekarang membedakan `Katalog Preview`, `Menunggu
+Release production terbaru `20260826-77ed929` memakai exact source
+`77ed9295b654848fb855c599721855b992487b35` dan rollback
+`20260826-0fd20c3`. Catalog sekarang membedakan preview, restock, dan ready dari
+kontrak checkout serta stok varian live. Jumlah warna, stock filter, full
+filter drawer, dan empty-state recovery memakai state yang sama. URL stale
+dengan `stock=available` dapat dipulihkan tanpa membuang filter warna,
+pencarian, atau scene yang masih valid. Browsing tetap tersedia, sedangkan
+intent transaksi yang tidak valid tetap ditahan. Desktop/mobile public
+acceptance, 192 storefront test, 441 Laravel test, full release gate, backup,
+immutable deploy, workers, scheduler, dan log smoke lulus. Readiness tetap
+30/42 dengan 12 blocker; checkout/provider fail-closed.
+
+Release sebelumnya `20260826-0fd20c3` memakai exact source
+`0fd20c3f0e5b50780735963f680d87f2fca9b53e`. Homepage membedakan `Katalog Preview`, `Menunggu
 Restock`, dan state penjualan siap dari kontrak checkout serta stok varian live.
 Fallback hero tidak lagi memakai klaim `Shop New Drop` saat commerce terblokir;
 customer dapat membuka katalog atau wishlist tanpa mengekspos blocker internal.

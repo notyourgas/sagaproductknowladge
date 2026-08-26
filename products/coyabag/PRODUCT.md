@@ -61,9 +61,20 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260826-0fd20c3` dengan exact source
-  `0fd20c3f0e5b50780735963f680d87f2fca9b53e` melayani production;
-  rollback langsung `20260826-a575c3b` dipertahankan.
+- Release aktif `20260826-77ed929` dengan exact source
+  `77ed9295b654848fb855c599721855b992487b35` melayani production;
+  rollback langsung `20260826-0fd20c3` dipertahankan.
+- Catalog menyatukan status preview, restock, dan ready dengan kontrak checkout
+  serta stok varian live. Jumlah warna, stock filter, full filter drawer, dan
+  empty-state recovery sekarang memakai state yang sama.
+- URL lama dengan `stock=available` dapat dipulihkan tanpa membuang filter
+  warna, pencarian, atau scene yang masih valid. Browsing tetap tersedia,
+  sedangkan intent transaksi yang tidak valid tetap diblokir.
+- Desktop/mobile public acceptance, 192 storefront test, 441 Laravel test,
+  full release gate, dan performance budget lulus. Readiness tetap 30/42 dengan
+  12 blocker; checkout/provider tetap fail-closed.
+- Release sebelumnya `20260826-0fd20c3` menjalankan Homepage commerce truth dan
+  wishlist recovery.
 - Homepage menyelaraskan hero, status katalog, dan label etalase dengan kontrak
   checkout serta stok varian live. Commerce terblokir menampilkan `Katalog
   Preview` dan `Lihat Koleksi`; customer dengan produk tersimpan mendapat

@@ -4,6 +4,21 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-26 - Storefront Catalog availability integrity production release
+
+- Klasifikasi: `CONFIRMED` dari exact source
+  `77ed9295b654848fb855c599721855b992487b35`, immutable Hostinger release
+  `20260826-77ed929`, rollback `20260826-0fd20c3`, dan public runtime smoke.
+- Catalog menyatukan status checkout dan stok varian live untuk label preview,
+  restock, ready, jumlah warna, stock filter, serta full filter drawer.
+- URL stale `stock=available` mendapat recovery yang mempertahankan filter
+  warna, pencarian, dan scene yang masih valid. Browsing tetap tersedia tanpa
+  mengekspos blocker internal atau membuka checkout yang belum siap.
+- Desktop/mobile, 192 storefront test, 441 Laravel test, full RC,
+  security/dependency/build, backup, workers, scheduler, dan log smoke lulus.
+- Delivery `PRODUCTION_DEPLOYED`; activation/business readiness `BLOCKED`;
+  readiness 30/42, 12 blocker, checkout/provider fail-closed.
+
 ## 2026-08-26 - Storefront Home commerce truth production release
 
 - Klasifikasi: `CONFIRMED` dari exact source
