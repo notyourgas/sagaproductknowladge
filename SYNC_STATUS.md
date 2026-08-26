@@ -12,12 +12,35 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-26T19:39:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-26T19:51:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | exact `7c62ab210bb5757c7dd2239d3e7aad5e069069e3` |
-| Informasi terakhir disinkronkan | Snap and Fit AWS apply dan isolated VPS prototype backend exact runtime source `54ff4ea`, source/docs evidence `b668381`, termasuk worker recovery dan 30-second stability gate. |
-| Status sinkronisasi | `CONFIRMED / LOCAL_VALIDATED / VPS_PROTOTYPE_BACKEND_DEPLOYED`; production Snap and Fit tidak berubah. |
+| Baseline sebelum pembaruan | exact `71de43fc1b17682aefde0f5e985280aae01812fa` |
+| Informasi terakhir disinkronkan | COYABAG Admin Payment workflow integrity exact source `a575c3bfbfd58124cbe361a279ebc4e02bc36d61`, immutable release `20260826-a575c3b`, rollback `20260826-b6f1c55`. |
+| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED`; commerce activation dan business readiness tetap `BLOCKED`. |
+
+## COYABAG Admin Payment workflow integrity
+
+- Exact source `a575c3bfbfd58124cbe361a279ebc4e02bc36d61` aktif pada immutable
+  release `20260826-a575c3b`; rollback `20260826-b6f1c55` tersedia.
+- Finance mendapat identitas termasking dan tidak dapat mencari nama customer.
+  Rekonsiliasi manual hanya menyentuh provider aktif yang siap.
+- Daily close menolak review, exception, atau settled gateway funds yang belum
+  matched dan tetap idempotent saat retry. Control Desk melengkapi blocker,
+  konfirmasi, dan state operasional pada desktop/mobile.
+- 183 storefront test, 441 Laravel test, dependency/security/build gate,
+  public smoke, workers, dan scheduler observation lulus. Commerce tetap
+  fail-closed pada 30/42 checks dengan 12 blocker.
+
+## File yang berubah pada sinkronisasi ini (COYABAG Admin Payment)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## Snap and Fit AWS and VPS prototype backend
 

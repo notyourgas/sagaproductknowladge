@@ -4,6 +4,22 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-26 - Admin Payment workflow integrity production release
+
+- Klasifikasi: `CONFIRMED` dari exact source
+  `a575c3bfbfd58124cbe361a279ebc4e02bc36d61`, immutable Hostinger release
+  `20260826-a575c3b`, rollback `20260826-b6f1c55`, dan public runtime smoke.
+- Finance menerima identitas customer termasking dan tidak dapat mencari nama;
+  Owner mempertahankan akses sesuai permission.
+- Rekonsiliasi manual hanya berjalan untuk provider aktif yang siap. Daily
+  close menolak review, exception, atau dana gateway settled yang belum
+  matched; retry dan close yang sudah ada tetap idempotent.
+- Desktop/mobile Control Desk, 183 storefront test, 441 Laravel test,
+  dependency/security/build gate, no-migration deploy, workers, public smoke,
+  dan scheduler observation lulus.
+- Delivery `PRODUCTION_DEPLOYED`; activation/business readiness `BLOCKED`;
+  readiness 30/42, 12 blocker, checkout/provider fail-closed.
+
 ## 2026-08-26 - Admin Stock Opname recovery production release
 
 - Klasifikasi: `CONFIRMED` dari exact source

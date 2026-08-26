@@ -1,5 +1,22 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-26 - COYABAG Admin Payment workflow integrity sync
+
+- Ringkasan: menyinkronkan masking identitas Finance, rekonsiliasi provider-
+  scoped, daily-close readiness transaksional, Control Desk responsive, dan
+  immutable production release terbaru.
+- Alasan: operator pembayaran memerlukan antrean dan penutupan harian yang
+  tidak dapat melewati review, exception, atau settled funds yang belum matched.
+- Produk/area: COYABAG Admin Payments, privacy/RBAC, reconciliation, finance
+  close, responsive UI/UX, accessibility, QA, security, release, dan rollback.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED`; exact source
+  `a575c3bfbfd58124cbe361a279ebc4e02bc36d61`, release
+  `20260826-a575c3b`, rollback `20260826-b6f1c55`.
+- Production berubah: ya, Admin/API/storefront runtime. Tidak ada migration atau
+  commerce activation; readiness tetap 30/42 dengan 12 blocker.
+- Dokumen terdampak: Product, Dossier, changelog COYABAG, portfolio, master,
+  root changelog, dan sync status.
+
 ## 2026-08-26 - Snap and Fit AWS and VPS prototype backend sync
 
 - Ringkasan: menyinkronkan zero-drift AWS apply dan isolated loopback VPS prototype backend dengan

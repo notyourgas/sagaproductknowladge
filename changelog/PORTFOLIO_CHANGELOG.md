@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-26 - COYABAG Admin Payment workflow integrity
+
+- Exact source `a575c3bfbfd58124cbe361a279ebc4e02bc36d61` aktif pada immutable
+  release `20260826-a575c3b`; rollback `20260826-b6f1c55` tersedia.
+- Finance mendapat identitas termasking; rekonsiliasi manual kini provider-
+  scoped dan fail-closed; daily close menolak review, exception, serta settled
+  gateway funds yang belum matched dan tetap idempotent saat retry.
+- Control Desk desktop/mobile, 183 storefront test, 441 Laravel test,
+  security/dependency/build gate, public smoke, workers, dan scheduler lulus.
+- Status `PRODUCTION_DEPLOYED`; commerce/business readiness tetap `BLOCKED`
+  pada 30/42 checks dengan 12 blocker.
+
 ## 2026-08-26 - Snap and Fit AWS and VPS prototype backend
 
 - Reviewed AWS plan diterapkan 40 add/0 change/0 destroy dan refresh nol drift tanpa runtime access

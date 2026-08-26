@@ -61,9 +61,20 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260826-b6f1c55` dengan exact source
-  `b6f1c5540a395323d13966b83b377fea16802f9f` melayani production;
-  rollback langsung `20260826-d1950e6` dipertahankan.
+- Release aktif `20260826-a575c3b` dengan exact source
+  `a575c3bfbfd58124cbe361a279ebc4e02bc36d61` melayani production;
+  rollback langsung `20260826-b6f1c55` dipertahankan.
+- Admin Payments memasking identitas customer dan menonaktifkan pencarian nama
+  untuk Finance, sementara Owner mempertahankan akses sesuai permission.
+  Rekonsiliasi manual terikat provider aktif dan gagal tertutup sampai provider
+  siap. Daily close ditolak bila review, exception, atau dana gateway settled
+  yang belum matched masih terbuka; retry tetap idempotent.
+- Control Desk pembayaran menyediakan status provider dan daily close,
+  blocker actionable, konfirmasi, serta state loading/empty/error/success pada
+  desktop dan mobile. 183 storefront test, 441 Laravel test, public smoke, dua
+  worker, dan scheduler observation lulus. Readiness tetap 30/42 dengan 12
+  blocker; checkout dan provider tetap fail-closed.
+- Release sebelumnya `20260826-b6f1c55` menjalankan Admin Stock Opname recovery.
 - Admin Stock Opname menyimpan edit sebelum dialog ditutup, mengizinkan angka
   dikosongkan kembali sebagai belum dihitung, dan membawa hitungan lengkap
   langsung ke review selisih. Approval kedaluwarsa memulihkan sesi ke review

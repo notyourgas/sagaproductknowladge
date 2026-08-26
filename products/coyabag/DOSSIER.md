@@ -78,18 +78,29 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260826-b6f1c55` memakai exact source
-`b6f1c5540a395323d13966b83b377fea16802f9f` dan rollback
-`20260826-d1950e6`. Admin Stock Opname menyimpan dirty count sebelum dialog
-ditutup, mempertahankan null sebagai belum dihitung, dan memindahkan hitungan
-lengkap langsung ke variance review. Approval kedaluwarsa atomically
+Release production terbaru `20260826-a575c3b` memakai exact source
+`a575c3bfbfd58124cbe361a279ebc4e02bc36d61` dan rollback
+`20260826-b6f1c55`. Admin Payments memasking identitas customer dan memblokir
+pencarian nama bagi Finance, sementara Owner mempertahankan akses sesuai
+permission. Rekonsiliasi manual memakai kontrak readiness server dan hanya
+menyentuh provider aktif. Daily close memakai row lock dan ditolak bila review,
+exception, atau dana gateway settled yang belum matched masih terbuka; retry
+tetap idempotent. Control Desk menyediakan blocker actionable, konfirmasi, dan
+state operasional lengkap pada desktop/mobile. 183 storefront test, 441
+Laravel test, dependency/security/build gate, immutable deploy, public smoke,
+serta scheduler observation lulus. Readiness tetap 30/42 dengan 12 blocker;
+checkout dan provider fail-closed.
+
+Release sebelumnya `20260826-b6f1c55` memakai exact source
+`b6f1c5540a395323d13966b83b377fea16802f9f`. Admin Stock Opname menyimpan dirty
+count sebelum dialog ditutup, mempertahankan null sebagai belum dihitung, dan
+memindahkan hitungan lengkap langsung ke variance review. Approval kedaluwarsa atomically
 memulihkan sesi submitted ke review tanpa ledger mutation atau count loss.
 Resubmission memakai revision-bound approval baru; Admin pengaju dan Owner
 approver terpisah, dan idempotency guard memastikan variance hanya diposting
 sekali. Desktop/mobile, 183 storefront test, 436 Laravel test,
 security/dependency gate, no-migration immutable deploy, public smoke, dan
-scheduler observation lulus. Readiness tetap 30/42 dengan 12 blocker;
-checkout dan provider fail-closed.
+scheduler observation lulus.
 
 Release sebelumnya `20260826-d1950e6` memakai exact source
 `d1950e693ff3055f1cfe02cf10ff6a2fe432c31e`. Admin Inventory menghitung customer visibility dari status

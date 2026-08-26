@@ -3556,16 +3556,24 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release aktif `20260826-b6f1c55` menjalankan exact source
-`b6f1c5540a395323d13966b83b377fea16802f9f` dengan rollback
-`20260826-d1950e6`. Admin Stock Opname menyimpan dirty count saat ditutup,
-mendukung clear-to-unfinished, dan masuk langsung ke variance review setelah
-lengkap. Approval kedaluwarsa memulihkan sesi ke review tanpa ledger mutation;
+Release aktif `20260826-a575c3b` menjalankan exact source
+`a575c3bfbfd58124cbe361a279ebc4e02bc36d61` dengan rollback
+`20260826-b6f1c55`. Admin Payments memasking identitas customer dan memblokir
+pencarian nama bagi Finance. Rekonsiliasi manual hanya berjalan untuk provider
+aktif yang siap; daily close menolak review, exception, dan settled gateway
+funds yang belum matched serta tetap idempotent saat retry. Control Desk
+desktop/mobile, 183 storefront test, 441 Laravel test, security/build gate,
+public smoke, workers, dan scheduler observation lulus. Readiness tetap 30/42
+dengan 12 blocker; commerce tidak production-activated.
+
+Release sebelumnya `20260826-b6f1c55` menjalankan exact source
+`b6f1c5540a395323d13966b83b377fea16802f9f`. Admin Stock Opname menyimpan dirty
+count saat ditutup, mendukung clear-to-unfinished, dan masuk langsung ke
+variance review setelah lengkap. Approval kedaluwarsa memulihkan sesi ke review tanpa ledger mutation;
 resubmission memakai approval revision-bound baru. Admin dan Owner terpisah
 menyelesaikan four-eyes approval tepat sekali. Desktop/mobile, 183 storefront
 test, 436 Laravel test, no-migration deploy, workers, cron, public smoke, dan
-scheduler observation lulus. Readiness tetap 30/42 dengan 12 blocker; commerce
-tidak production-activated.
+scheduler observation lulus.
 
 Release sebelumnya `20260826-d1950e6` menjalankan exact source
 `d1950e693ff3055f1cfe02cf10ff6a2fe432c31e`. Admin Inventory memisahkan stok operasional dari stok yang
