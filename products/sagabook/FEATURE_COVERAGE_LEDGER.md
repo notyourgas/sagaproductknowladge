@@ -1,6 +1,18 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 26 Agustus 2026 18:00 WIB
+Evidence cut-off: 26 Agustus 2026 19:12 WIB
+
+Busy state aksi jadwal staff S293 exact source
+`4e2267c98f68b5be6e4a7f794b2c7431581fe98b` telah `CONFIRMED / PUSHED /
+UIUX_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`. Coverage membuktikan lock sinkron per booking,
+indikator `aria-busy` dan `Memproses…`, satu request untuk klik ganda, booking
+lain tetap interaktif, serta lock pulih setelah error 503 sintetis. Kandidat
+mencakup S292 sebagai ancestor. Matriks mobile/tablet/desktop 3/3, staff visual
+4/4, focused PHP 13/13 (190 assertion), typecheck/build, design audit 26/26,
+dan npm audit nol lulus. Lockfile Composer tidak berubah dari S292 yang audit
+nol; refresh Packagist run ini timeout. Merge/release, authenticated staff UAT,
+dan dua studio pilot tetap menjadi gate; `BUSINESS_READY=false`.
 
 Aksesibilitas aksi jadwal staff S292 exact source
 `d254d131a5239bcfc0673bcc571abdef5e9feaa5` telah `CONFIRMED / PUSHED /

@@ -1,5 +1,22 @@
 # SagaBook Changelog
 
+## 2026-08-26 - Busy state dan double-submit guard aksi jadwal staff
+
+- Exact source kumulatif `4e2267c98f68b5be6e4a7f794b2c7431581fe98b` mengunci primary action
+  per booking secara sinkron sebelum request, menampilkan `Memproses…` dengan
+  `aria-busy`, dan menolak klik kedua pada event loop yang sama.
+- Booking lain dan tombol Detail tetap dapat digunakan. Lock dilepas setelah
+  sukses maupun error 503 sehingga operator dapat retry tanpa reload. Backend
+  tetap memakai transition guard dan idempotent replay yang sudah ada; tidak
+  ada migration, perubahan payment, permission, atau PII.
+- Matriks mobile/tablet/desktop 3/3, full staff visual 4/4, focused PHP 13/13
+  (190 assertion), critical typecheck, build 5.129 modul, design audit 26/26,
+  dan npm audit nol lulus. Lockfile Composer tidak berubah dari S292 yang audit
+  nol; refresh Packagist run ini timeout.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+  tetap source `936499e60d2a3aac8a32906ec444ef6f1cacf48c` pada release
+  `20260826104241-936499e`.
+
 ## 2026-08-26 - Aksesibilitas aksi jadwal staff
 
 - Klasifikasi: `CONFIRMED`; aksi berulang pada jadwal staff sebelumnya memakai

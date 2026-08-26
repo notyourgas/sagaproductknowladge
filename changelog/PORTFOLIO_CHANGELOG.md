@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-26 - SagaBook staff schedule action busy state
+
+- Kandidat kumulatif exact source `4e2267c98f68b5be6e4a7f794b2c7431581fe98b`
+  mengunci primary action per booking sejak klik pertama, menampilkan status
+  `Memproses...`, dan melepas lock setelah sukses maupun gagal agar retry aman.
+- Klik ganda sinkron menghasilkan satu request; booking lain dan aksi Detail
+  tetap dapat dipakai selama satu perubahan status berjalan.
+- Gate lokal: browser mobile/tablet/desktop 3/3, visual staff 4/4, focused
+  backend 13/13 dengan 190 assertion, production build, critical typecheck,
+  design audit 26/26, dan npm audit 0 vulnerability.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+  SagaBook tetap pada exact source `936499e60d2a3aac8a32906ec444ef6f1cacf48c`.
+
 ## 2026-08-26 - COYABAG Admin Stock Opname recovery
 
 - Exact source `b6f1c5540a395323d13966b83b377fea16802f9f` aktif pada immutable

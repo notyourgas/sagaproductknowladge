@@ -12,12 +12,27 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-26T19:02:47+07:00 |
+| Waktu pembaruan terakhir | 2026-08-26T19:12:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | exact `48f30887f4812289dceb34eb25e33a0afeb4c233` |
-| Informasi terakhir disinkronkan | COYABAG Admin Stock Opname recovery exact source `b6f1c5540a395323d13966b83b377fea16802f9f`. |
-| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED`; commerce activation dan business readiness tetap `BLOCKED`. |
+| Baseline sebelum pembaruan | exact `a1718ccf636541ab9f1306d301ad3170fdfe284e` |
+| Informasi terakhir disinkronkan | SagaBook staff schedule action busy state exact source `4e2267c98f68b5be6e4a7f794b2c7431581fe98b`. |
+| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production SagaBook tidak berubah. |
+
+## SagaBook staff schedule action busy state
+
+- Kandidat kumulatif exact source `4e2267c98f68b5be6e4a7f794b2c7431581fe98b`
+  mengunci primary action per booking secara sinkron, sehingga dua klik cepat
+  tetap menghasilkan tepat satu request.
+- UI menampilkan `Memproses...` dan `aria-busy`; booking lain serta Detail
+  tetap interaktif, dan lock selalu dilepas agar retry setelah error tidak
+  memerlukan refresh halaman.
+- Browser mobile/tablet/desktop 3/3, visual staff 4/4, focused backend 13/13
+  dengan 190 assertion, production build, critical typecheck, design audit
+  26/26, dan npm audit 0 vulnerability lulus.
+- Source sudah push tetapi belum merge/deploy. Production SagaBook tetap exact
+  `936499e60d2a3aac8a32906ec444ef6f1cacf48c` pada release
+  `20260826104241-936499e`.
 
 ## COYABAG Admin Stock Opname recovery
 

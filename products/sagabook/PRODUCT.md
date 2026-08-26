@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 26 Agustus 2026 18:00 WIB
-Evidence status: aksesibilitas aksi jadwal staff local-validated dan belum dideploy
+Updated: 26 Agustus 2026 19:12 WIB
+Evidence status: busy state aksi jadwal staff local-validated dan belum dideploy
 
 ## Tujuan dokumen
 
@@ -15,6 +15,20 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- Kandidat kumulatif busy state aksi `Jadwal Sesi Hari Ini` pada exact source
+  `4e2267c98f68b5be6e4a7f794b2c7431581fe98b` berstatus `CONFIRMED / PUSHED /
+  UIUX_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Primary action sekarang dikunci sinkron per
+  booking sebelum request, disabled dengan `aria-busy`, dan menampilkan
+  `Memproses…`; klik ganda hanya membuat satu mutation, booking lain dan tombol
+  Detail tetap aktif, serta lock dilepas setelah sukses maupun gagal agar retry
+  aman. Kandidat mencakup aksesibilitas S292 sebagai ancestor. Matriks
+  mobile/tablet/desktop 3/3, seluruh staff visual 4/4, focused PHP 13/13 (190
+  assertion), critical typecheck, build 5.129 modul, design audit 26/26, dan
+  npm audit nol lulus. `composer.lock` tidak berubah dari S292 yang audit
+  Composer-nya nol; refresh Packagist saat run ini timeout dan dicatat sebagai
+  limitation. Production tetap pada source dan release di bawah.
 
 - Kandidat aksesibilitas aksi `Jadwal Sesi Hari Ini` pada exact source
   `d254d131a5239bcfc0673bcc571abdef5e9feaa5` berstatus `CONFIRMED / PUSHED /

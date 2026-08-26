@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-26 - SagaBook staff schedule action busy state sync
+
+- Ringkasan: menyinkronkan lock sinkron per booking, indikator proses yang
+  aksesibel, pencegahan double-submit, dan recovery retry pada jadwal staff.
+- Alasan: staff harus mendapat feedback langsung tanpa risiko mengirim dua
+  transisi status ketika tombol ditekan berulang.
+- Produk/area: SagaBook Staff Operasional, frontend state, accessibility,
+  recovery, QA, dan data-integrity.
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; exact source
+  `4e2267c98f68b5be6e4a7f794b2c7431581fe98b`.
+
 ## 2026-08-26 - COYABAG Admin Stock Opname recovery sync
 
 - Ringkasan: menyinkronkan save-on-close, clear-to-unfinished, direct variance
