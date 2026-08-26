@@ -4,6 +4,19 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-26 - Storefront accessibility integrity production release
+
+- Klasifikasi: `CONFIRMED` dari exact source
+  `7547c4e9a441258508ff53ecbe5788b2e2012095`, immutable Hostinger release
+  `20260826-7547c4e`, rollback `20260826-0c920d7`, dan runtime verification.
+- Harga promo, judul Gallery, serta metadata Lookbook/Testimonials memakai
+  neutral token WCAG AA; visual hierarchy dan direction streetwear tetap.
+- Acceptance `axe-core` lulus 32 route-viewport dan public live-API responsive
+  lulus 110 kombinasi. Storefront 173/173, Laravel 409 pass/1 skip dari 410
+  test, build, dependency audit, workers, storage, dan public smoke hijau.
+- Delivery `PRODUCTION_DEPLOYED`; activation/business readiness `BLOCKED`;
+  readiness 30/42, 12 blocker, dan checkout tetap disabled.
+
 ## 2026-08-26 - Route recovery integrity production release
 
 - Klasifikasi: `CONFIRMED` dari exact source

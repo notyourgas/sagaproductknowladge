@@ -61,9 +61,19 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260826-f98e51f` dengan source
-  `f98e51f0f214165f8e3318cb7552fc393334bc43` melayani production;
-  rollback langsung `20260826-7d6e0e7` dipertahankan.
+- Release aktif `20260826-7547c4e` dengan source
+  `7547c4e9a441258508ff53ecbe5788b2e2012095` melayani production;
+  rollback langsung `20260826-0c920d7` dipertahankan.
+- Kontras harga promo, judul Gallery, dan metadata Lookbook/Testimonials kini
+  memakai neutral token yang memenuhi WCAG AA. Acceptance `axe-core` lulus 32
+  kombinasi route-viewport dan matriks responsive public live-API lulus 110
+  kombinasi.
+- Gate login Admin memvalidasi payload Inertia terstruktur, sehingga tetap
+  memeriksa komponen exact tanpa false failure akibat JSON escaping.
+- Storefront 173/173 dan Laravel 410 test dengan 409 pass serta satu
+  intentional skip lulus. Dependency audit tidak menemukan advisory.
+- Readiness tetap 30/42 dengan 12 blocker; checkout tetap disabled.
+- Release sebelumnya `20260826-f98e51f` menjalankan route recovery integrity.
 - Area route kini memiliki recovery state eager untuk kegagalan lazy asset atau
   render. Header, navigasi, Cart, dan Footer tetap tersedia; pengguna dapat
   memuat ulang route atau kembali ke Beranda tanpa menghapus Cart tersimpan.

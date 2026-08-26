@@ -1,5 +1,23 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-26 - COYABAG storefront accessibility integrity sync
+
+- Ringkasan: sinkronisasi neutral contrast WCAG AA, 32 route-viewport
+  accessibility checks, 110 responsive combinations, dan structured Admin
+  login smoke.
+- Alasan: metadata dan harga harus terbaca pada surface produksi, termasuk
+  konten animasi yang baru terlihat setelah transition selesai.
+- Produk/area: COYABAG storefront accessibility, responsive UI/UX, QA,
+  security, dan release provenance.
+- Klasifikasi: `CONFIRMED`; source exact
+  `7547c4e9a441258508ff53ecbe5788b2e2012095`, release `20260826-7547c4e`.
+- Production berubah: ya, surface storefront. Delivery
+  `PRODUCTION_DEPLOYED`; activation/business readiness `BLOCKED`; commerce
+  tetap fail-closed pada 30/42 readiness dan 12 blocker.
+- Dokumen terdampak: Product, Dossier, changelog COYABAG, portfolio, master
+  knowledge, root changelog, dan sync status.
+- Next action: Cycle 2 Motion, Hover, Scroll, and Interaction Integrity.
+
 ## 2026-08-26 - COYABAG route recovery integrity sync
 
 - Ringkasan: sinkronisasi recovery UI untuk lazy route asset/render failure,

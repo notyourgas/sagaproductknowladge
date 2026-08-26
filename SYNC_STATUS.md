@@ -12,12 +12,34 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-26T08:05:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-26T09:30:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | exact `origin/main` `117efbd` sebelum sinkronisasi COYABAG route recovery integrity |
-| Informasi terakhir disinkronkan | COYABAG route recovery integrity. |
+| Baseline sebelum pembaruan | exact `origin/main` `dd1775c` sebelum sinkronisasi COYABAG storefront accessibility integrity |
+| Informasi terakhir disinkronkan | COYABAG storefront accessibility integrity. |
 | Status sinkronisasi | `PRODUCTION_DEPLOYED`; activation dan business readiness `BLOCKED`; commerce tetap fail-closed. |
+
+## COYABAG storefront accessibility integrity
+
+- Exact source `7547c4e9a441258508ff53ecbe5788b2e2012095` aktif pada immutable
+  release `20260826-7547c4e`; rollback `20260826-0c920d7`.
+- Neutral contrast WCAG AA diterapkan pada harga promo, judul Gallery, dan
+  metadata Lookbook/Testimonials. Acceptance lulus 32 route-viewport dan 110
+  public live-API responsive combinations.
+- Storefront 173/173 dan Laravel 409 pass/1 skip dari 410 test lulus;
+  dependency audit serta public/API/Admin smoke hijau.
+- Readiness tetap 30/42 dengan 12 blocker; checkout, activation, dan business
+  readiness tetap blocked.
+
+## File yang berubah pada sinkronisasi ini (COYABAG accessibility)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG route recovery integrity
 

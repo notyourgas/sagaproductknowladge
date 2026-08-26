@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-26 - COYABAG storefront accessibility integrity
+
+- Exact source `7547c4e9a441258508ff53ecbe5788b2e2012095` aktif pada immutable
+  Hostinger release `20260826-7547c4e` dengan rollback `20260826-0c920d7`.
+- Harga promo, judul Gallery, dan metadata editorial memenuhi WCAG AA.
+  Acceptance public live-API lulus 32 route-viewport accessibility checks dan
+  110 responsive combinations.
+- Storefront 173/173 dan Laravel 409 pass/1 skip dari 410 test lulus; dependency
+  audit, workers, shared storage, serta public/API/Admin smoke hijau.
+- Delivery `PRODUCTION_DEPLOYED`; activation/business readiness `BLOCKED`;
+  readiness 30/42 dan commerce tetap fail-closed.
+
 ## 2026-08-26 - COYABAG route recovery integrity
 
 - Exact source `f98e51f0f214165f8e3318cb7552fc393334bc43` aktif pada immutable

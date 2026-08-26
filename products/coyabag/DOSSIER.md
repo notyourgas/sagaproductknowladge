@@ -78,7 +78,18 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260826-f98e51f` memakai source
+Release production terbaru `20260826-7547c4e` memakai source
+`7547c4e9a441258508ff53ecbe5788b2e2012095` dan rollback
+`20260826-0c920d7`. Kontras harga promo, judul Gallery, dan metadata
+Lookbook/Testimonials sekarang memakai neutral token WCAG AA. Acceptance
+`axe-core` menguji WCAG 2.0/2.1/2.2 A/AA dan lulus pada 16 route untuk desktop
+serta mobile; matriks responsive public live-API lulus 110 kombinasi. Storefront
+173/173 dan Laravel 410 test dengan 409 pass serta satu intentional skip lulus;
+dependency audit tidak menemukan advisory. Admin release smoke memvalidasi
+payload Inertia terstruktur. Readiness tetap 30/42 dengan 12 blocker dan
+checkout disabled.
+
+Release sebelumnya `20260826-f98e51f` memakai source
 `f98e51f0f214165f8e3318cb7552fc393334bc43` dan rollback
 `20260826-7d6e0e7`. Area route memakai recovery state eager ketika lazy asset
 atau render gagal. Header, navigasi, Cart, dan Footer tetap tersedia; reload
