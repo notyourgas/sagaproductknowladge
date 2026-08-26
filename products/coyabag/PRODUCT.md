@@ -61,9 +61,24 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260826-4abf96f` dengan source
-  `4abf96fca4215033d44a85a2ffa4db46066f6ecf` melayani production;
-  rollback langsung `20260826-3c2b8a7` dipertahankan.
+- Release aktif `20260826-313aa8f` dengan exact source
+  `313aa8fa7f570147d176729b5d78c876d74af4ef` melayani production;
+  rollback langsung `20260826-4abf96f` dipertahankan.
+- Katalog studio V2 memiliki 11 tipe, 31 warna, dan 372 file WebP fisik.
+  Tujuh produk terverifikasi dipublikasikan dengan 21 varian dan 12 foto per
+  varian: YONA, KIARA, GHEA, OLLA, XENA, KIMORA, dan ORLENA.
+- Tipe C, D, E, dan I beserta medianya tetap tersimpan sebagai draft karena
+  nama publik, harga, dan dimensi belum terverifikasi. Seluruh 31 foto interior
+  memakai label landscape. Stok seluruh varian tetap nol sehingga checkout
+  fail-closed.
+- Sinkronisasi katalog memakai dry-run default, manifest SHA-256 terkonfirmasi,
+  transaksi database, conflict/reservation guard, publication snapshot, serta
+  preservasi order dan rollback data.
+- Storefront 183/183 dan Laravel full 430 test dengan 429 pass serta satu
+  intentional skip lulus. Browser public desktop/mobile membuktikan 7 produk,
+  21 varian, 372 asset, 12 foto detail, tanpa gambar rusak atau `/api/api/`.
+  Readiness tetap 30/42 dengan 12 blocker; provider dan commerce tetap
+  fail-closed.
 - Varian baru selalu dimulai nonaktif. Aktivasi memerlukan identitas, harga,
   berat, foto siap, dan alt text yang lengkap; aktivasi pada produk live masuk
   status menunggu publish dan belum tersedia di storefront.

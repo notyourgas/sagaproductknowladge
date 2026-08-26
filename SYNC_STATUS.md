@@ -12,12 +12,36 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-26T16:35:27+07:00 |
+| Waktu pembaruan terakhir | 2026-08-26T16:48:45+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | exact `origin/main` `5f1d53cd1ae0655ba446c1386974bd09ae075eca` |
-| Informasi terakhir disinkronkan | SagaWork synthetic trial HR direct login. |
-| Status sinkronisasi | `CONFIRMED / SYNTHETIC_TRIAL_LOGIN_PASS / OWNER_FEATURE_REVIEW_READY`; K0/K1 `NO_GO`. |
+| Baseline sebelum pembaruan | exact `origin/main` `16f2a4b478172a84ec9dfd5a8c40259bd0244e9b` |
+| Informasi terakhir disinkronkan | COYABAG Catalog V2 studio media production release. |
+| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED`; catalog `PRODUCTION_ACTIVATED`, commerce/business readiness `BLOCKED`. |
+
+## COYABAG Catalog V2 studio media production
+
+- Exact source `313aa8fa7f570147d176729b5d78c876d74af4ef` aktif pada immutable
+  release `20260826-313aa8f`; rollback `20260826-4abf96f` tersedia.
+- Sebelas tipe, 31 warna, dan 372 WebP fisik tersimpan. Tujuh produk
+  terverifikasi live sebagai 21 varian dengan 12 foto per varian; Tipe C, D,
+  E, dan I tetap draft menunggu nama, harga, serta dimensi final.
+- Label interior 31/31 landscape. Storefront 183/183, Laravel 430 test dengan
+  satu intentional skip, builds/audits, immutable deploy, serta public browser
+  desktop/mobile lulus tanpa gambar rusak atau `/api/api/`.
+- Stok nol, readiness 30/42 dengan 12 blocker, serta checkout/provider tetap
+  fail-closed. Katalog aktif tidak berarti commerce/business ready.
+
+## File yang berubah pada sinkronisasi ini (COYABAG Catalog V2)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaWork synthetic trial HR direct login
 

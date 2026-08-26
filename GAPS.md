@@ -905,7 +905,21 @@ GAP-004, bukan gap implementasi warna komponen.
 
 ### COYABAG
 
-- `PRODUCTION_DEPLOYED`: release aktif `20260825-9abeb53`, exact source
+- `NEEDS CONFIRMATION`: Tipe C, D, E, dan I beserta medianya sudah tersimpan
+  sebagai draft pada release `20260826-313aa8f`, tetapi nama publik, harga, dan
+  dimensi belum memiliki evidence final. Tetapkan tiga field tersebut dan stok
+  per warna sebelum publication snapshot berikutnya; jangan menerbitkan data
+  tebakan. Checkout/provider tetap fail-closed sampai 12 readiness blocker
+  commerce ditutup.
+
+- `PRODUCTION_DEPLOYED / CATALOG PRODUCTION_ACTIVATED`: exact source
+  `313aa8fa7f570147d176729b5d78c876d74af4ef`, release
+  `20260826-313aa8f`, rollback `20260826-4abf96f`. Sebelas tipe, 31 warna, dan
+  372 WebP tersimpan; tujuh produk/21 varian live dengan 12 foto per varian,
+  empat tipe draft, 31/31 label interior landscape, dan stok nol. Readiness
+  tetap 30/42 dengan 12 blocker; commerce/business readiness `BLOCKED`.
+
+- `DEPRECATED / PRODUCTION_DEPLOYED`: release lama `20260825-9abeb53`, exact source
   `9abeb533069e476c33a6c099d8975af8df99616e`, membuat Gallery memakai CMS
   published atau fallback media katalog published milik produk. Admin mengelola
   kategori, urutan, media, destination, dan lifecycle publish; visual states,

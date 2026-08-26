@@ -4,6 +4,22 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-26 - Catalog V2 studio media production release
+
+- Klasifikasi: `CONFIRMED` dari exact source
+  `313aa8fa7f570147d176729b5d78c876d74af4ef`, immutable Hostinger release
+  `20260826-313aa8f`, rollback `20260826-4abf96f`, dan public runtime UAT.
+- 11 tipe, 31 warna, dan 372 file WebP fisik tersimpan. Tujuh produk
+  terverifikasi dipublikasikan sebagai 21 varian dengan 12 foto per varian;
+  Tipe C, D, E, dan I tetap draft menunggu nama, harga, dan dimensi final.
+- Seluruh 31 foto interior memiliki label landscape. Stok tetap nol dan
+  checkout/provider tidak diaktifkan.
+- Storefront 183/183, Laravel 430 test dengan 429 pass dan satu intentional
+  skip, build/audit, immutable deploy, serta public browser desktop/mobile
+  lulus tanpa gambar rusak atau `/api/api/`.
+- Delivery dan katalog `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; commerce
+  activation/business readiness `BLOCKED`. Readiness 30/42, 12 blocker.
+
 ## 2026-08-26 - Admin Varian storefront activation integrity production release
 
 - Klasifikasi: `CONFIRMED` dari exact source

@@ -1,5 +1,22 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-26 - COYABAG Catalog V2 studio media production sync
+
+- Ringkasan: menyinkronkan 11 tipe, 31 warna, 372 WebP fisik, tujuh produk
+  terpublikasi, 21 varian aktif, 12 foto per varian, dan empat tipe draft.
+- Alasan: foto katalog studio perlu aktif tanpa menerbitkan nama, harga,
+  dimensi, atau stok yang belum terverifikasi.
+- Produk/area: COYABAG catalog, variant/media, publication snapshot,
+  storefront, responsive UI, accessibility, database, QA, security, release,
+  dan rollback.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED`; katalog
+  `PRODUCTION_ACTIVATED`, commerce `BLOCKED`. Exact source
+  `313aa8fa7f570147d176729b5d78c876d74af4ef`, release `20260826-313aa8f`.
+- Production berubah: ya. Tujuh produk/21 varian live, empat tipe draft, stok
+  nol, readiness 30/42 dengan 12 blocker, checkout/provider fail-closed.
+- Dokumen terdampak: Product, Dossier, changelog COYABAG, portfolio, master,
+  GAPS, root changelog, dan sync status.
+
 ## 2026-08-26 - SagaWork synthetic trial HR direct-login sync
 
 - Ringkasan: feature `eb3b372`, active runtime `c14f5c2`, acceptance `0cd3516`; satu allowlisted HR trial identity dapat login langsung pada staging sintetis tanpa TOTP.

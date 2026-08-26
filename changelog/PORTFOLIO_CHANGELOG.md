@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-26 - COYABAG Catalog V2 studio media production
+
+- Exact source `313aa8fa7f570147d176729b5d78c876d74af4ef` aktif pada immutable
+  release `20260826-313aa8f`; rollback `20260826-4abf96f` tersedia.
+- Production menyimpan 11 tipe, 31 warna, dan 372 WebP; tujuh produk
+  terverifikasi tampil sebagai 21 varian dengan 12 foto per varian. Empat tipe
+  belum terverifikasi tetap draft.
+- Storefront/backend gates dan public browser desktop/mobile lulus. Label
+  interior 31/31 landscape, gambar rusak nol, stok nol, dan checkout tetap
+  fail-closed.
+- Status katalog `PRODUCTION_ACTIVATED`; commerce/business readiness tetap
+  `BLOCKED` pada 30/42 dengan 12 blocker.
+
 ## 2026-08-26 - SagaWork synthetic trial HR login ready
 
 - `CONFIRMED / SYNTHETIC_TRIAL_LOGIN_PASS`: feature `eb3b372`, active runtime `c14f5c2`, acceptance `0cd3516`; satu restricted allowlisted HR identity dapat masuk tanpa TOTP hanya pada loopback staging sintetis.
