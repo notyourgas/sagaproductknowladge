@@ -12,12 +12,30 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-26T15:12:50+07:00 |
+| Waktu pembaruan terakhir | 2026-08-26T15:55:50+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | exact `origin/main` `b129707830052092783163483fb4c2b8c1ffa02c` |
-| Informasi terakhir disinkronkan | SagaWork Sprint 31 secure organization and HR bootstrap. |
-| Status sinkronisasi | `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; K0/K1 `NO_GO`. |
+| Baseline sebelum pembaruan | exact `origin/main` `48ef1df19b621dfa6aff9bb97d5f52fb2ea052a3` |
+| Informasi terakhir disinkronkan | SagaWork synthetic staging HR demo deployment. |
+| Status sinkronisasi | `CONFIRMED / SYNTHETIC_STAGING_DEPLOYED / OWNER_ACTIVATION_PENDING`; K0/K1 `NO_GO`. |
+
+## SagaWork synthetic staging HR demo deployment
+
+- Exact runtime `4eb01c3`, local follow-up `a847c0a`, acceptance `517338b`; 37 test file/133 test, 47-page build, 66 application table/24 migration/32 trigger, dan OpenAPI 70/85/48 PASS.
+- Encrypted backup/restore, zero-resurrection tombstone check, readiness, serta guarded rollback dua arah lulus. Artifact lintas OS awal gagal dan otomatis rollback; corrected Linux build aktif.
+- Satu akun HR dummy non-deliverable berstatus `pending_activation`; identitas, bootstrap secret, TOTP, dan handoff tidak dipublikasikan. Tidak ada real Staff/photo/GPS data, Vercel change, atau production activation.
+- Akun demo bukan akun pilot. K0/K1 tetap NO-GO menunggu protected pilot access, dedicated database, external provider/offsite recovery, signed admission, Owner activation/login/session UAT, dan mitigasi shared-host `/tmp`.
+
+## File yang berubah pada sinkronisasi ini (SagaWork synthetic HR demo)
+
+- `products/sagawork/PRODUCT.md`
+- `products/sagawork/DOSSIER.md`
+- `products/sagawork/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaWork Sprint 31 secure organization and HR bootstrap
 

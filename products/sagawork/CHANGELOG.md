@@ -8,6 +8,13 @@ Mencatat perubahan material SagaWork dengan status delivery dan activation yang 
 
 Synthetic fixture, preview, dan staging bukan bukti real pilot atau production activation.
 
+## 2026-08-26 - Synthetic staging HR demo account
+
+- Exact feature/runtime `4eb01c3` menambah fail-closed synthetic-demo HR provisioner; acceptance `517338b` merekam deployment, MySQL migration ke 66 tabel/24 migration, encrypted backup/restore, serta guarded rollback. Local follow-up `a847c0a` memperbaiki lifecycle command dan belum terdeploy.
+- Full gate lulus 37 test file/133 test, 47-page build, OpenAPI 70 path/85 operasi/48 request components. Artifact awal lintas OS gagal dan otomatis rollback; build Linux yang dikoreksi aktif serta healthy.
+- Satu akun HR dummy non-deliverable dibuat `pending_activation` dengan bootstrap hash-only dan handoff root-only. Identitas/secret tidak dipublikasikan; belum ada login UAT, Staff nyata, foto, GPS, atau production activation.
+- Akun demo tidak boleh dipromosikan menjadi akun pilot. K0/K1 tetap `NO_GO`; dedicated pilot environment, external provider/offsite recovery, protected access, signed admission, Owner activation/login/session UAT, dan risiko `/tmp` shared host masih terbuka.
+
 ## 2026-08-26 - Sprint 31 secure organization and HR bootstrap
 
 - Exact feature `6d3fc98` dan acceptance `666fbef` menambah guarded/idempotent first-organization + HR provisioning, one-time activation, HR-owned password, mandatory TOTP, policy acknowledgement, dan root-only recovery yang merotasi MFA serta mencabut sesi/challenge lama.

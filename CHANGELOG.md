@@ -1,5 +1,12 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-26 - SagaWork synthetic HR demo deployment sync
+
+- Ringkasan: exact `4eb01c3` aktif pada synthetic staging; `a847c0a` adalah follow-up lokal dan `517338b` acceptance. Satu akun HR dummy berstatus `pending_activation` dengan secret restricted.
+- Bukti: 37 test file/133 test, 47-page build, 66 application table/24 migration/32 trigger, OpenAPI 70/85/48, encrypted backup/restore, health, dan guarded rollback PASS.
+- Batas: tidak ada identitas/credential pada knowledge publik, real Staff/photo/GPS, Vercel change, atau production activation. Akun pilot wajib dibuat baru dan terpisah; K0/K1 masih NO-GO.
+- Dokumen terdampak: Product, Dossier, SagaWork changelog, portfolio changelog, master knowledge, gaps, root changelog, dan sync status.
+
 ## 2026-08-26 - SagaWork Sprint 31 secure HR bootstrap sync
 
 - Ringkasan: menyinkronkan guarded/idempotent first-organization + HR provisioning, one-time bootstrap, mandatory TOTP, policy acknowledgement, dan operator recovery/session revocation.

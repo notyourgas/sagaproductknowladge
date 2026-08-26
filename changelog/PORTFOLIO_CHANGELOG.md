@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-08-26 - SagaWork synthetic HR demo deployed
+
+- `CONFIRMED / SYNTHETIC_STAGING_DEPLOYED`: exact runtime `4eb01c3`, local follow-up `a847c0a`, dan acceptance `517338b` menyediakan guarded akun HR demo dengan one-time bootstrap, HR-owned password, serta mandatory TOTP.
+- 37/133 tests, 47-page build, 66 tables/24 migrations, OpenAPI 70/85/48, encrypted backup/restore, dan rollback dua arah PASS. Satu akun sintetis menunggu aktivasi Owner; tidak ada real Staff data atau production activation.
+- K0/K1 tetap NO-GO. Akun pilot harus baru dan terpisah; protected pilot access, provider/offsite recovery, signed admission, human login UAT, serta shared-host `/tmp` risk masih pending.
+
 ## 2026-08-26 - SagaWork Sprint 31 secure HR bootstrap
 
 - `CONFIRMED / LOCAL_VALIDATED`: feature `6d3fc98`, acceptance `666fbef` menambah guarded/idempotent first-organization + HR provisioning, one-time secret, HR-owned password, mandatory TOTP, policy acknowledgement, dan operator recovery dengan session/MFA revocation.
