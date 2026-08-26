@@ -6,7 +6,7 @@ Menjadi detail public-safe produk, workflow, teknologi, bukti, risiko, dan gate 
 
 ## Konteks dan status bukti
 
-- Updated: `25 Agustus 2026`
+- Updated: `26 Agustus 2026`
 - Delivery: `STAGING_DEPLOYED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED_EXTERNAL`; internal disposition `PILOT_READY_CANDIDATE`
@@ -58,3 +58,5 @@ Reporting HR memakai satu canonical work-hours projection untuk searchable per-s
 ## Positioning, pricing, risiko
 
 Positioning sementara: workforce operations action-first dan evidence-based untuk tim shift Indonesia, bukan HRIS enterprise lengkap. Pricing/SLA `NEEDS CONFIRMATION`. Internal disposition tetap `PILOT_READY_CANDIDATE`; private source remote/hosted CI, external provider/DPA, offsite/key custody, legal/privacy, real-device install/update/GPS/camera behavior, company performance governance, incident alert, capacity mitigation, independent security verification, offboarding authority/rehire, employer-ordered overtime/holiday-rest scope, named pilot, willingness-to-pay, dan real signed admission receipt tetap blocker eksternal. Produk tidak boleh diklaim ASVS-certified, payroll compliant, performance-validated on real staff, closed-beta active, atau production-ready.
+
+`PROPOSAL` execution bridge menuju UAT Andreas terdiri dari Sprint 30–40 dengan 11 fail-closed gate. Rehearsal pertama memakai Andreas sebagai HR dan dua akun Staff uji; tepat 5 Staff internal baru masuk setelah HR bootstrap, location/policy, lifecycle, schedule, Android+iOS attendance, serta report reconciliation PASS. Temuan UAT dibekukan sebagai P0–P3, P0/P1 diperbaiki dan full-regression sebelum three-day canary. Gap implementasi pertama adalah provisioner pilot: command saat ini hanya seed synthetic dan sengaja menolak non-synthetic mode.

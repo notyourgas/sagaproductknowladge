@@ -1,6 +1,6 @@
 # SagaWork Product Knowledge
 
-Updated: 25 Agustus 2026
+Updated: 26 Agustus 2026
 Evidence status: `CONFIRMED / STAGING_DEPLOYED / SYNTHETIC_STAGING_VALIDATED`
 
 ## Tujuan dokumen
@@ -50,3 +50,7 @@ SagaWork adalah PWA operasi tenaga kerja multi-lokasi untuk jadwal, absensi foto
 ## Batas dan next gate
 
 Belum ada real employee/photo/performance data, public DNS, external provider storage/DPA, offsite key escrow, human device/PWA-install UAT, legal/privacy approval, exact roster/named individual champion/signed charter, private source remote/hosted CI run, independent security verification, real signed admission receipt, atau closed beta. Real performance activation juga menunggu authoritative KPI adapters/sources, company rubric, staff transparency, DPIA/legal basis, trained calibration/fairness review, dan appeal owner; pilot pertama sengaja mempertahankannya OFF. Shared-VPS capacity monitoring, XLSX/async private export, dedicated coverage/leave/exception export, rehire, scheduled/backdated termination, real offboarding authority/SOP, serta training/test shift isolation juga masih terbuka. Payroll nominal/compliance tidak diklaim. External-evidence runbook public-safe sudah memetakan 16 admission records, canary, UAT, provider/legal/recovery, performance appendix, dan receipt assembly; owner scope baru memenuhi definisi awal, bukan seluruh evidence admission.
+
+## Proposed Kananta internal execution bridge
+
+`PROPOSAL`: jalankan Sprint 30–40 secara berurutan: isolated `pilot_restricted` environment, secure organization/HR bootstrap, Kananta configuration, Staff lifecycle, schedule/note/swap, Android+iOS owner attendance rehearsal, HR report reconciliation, uncoached Andreas UAT, revision/regression, five-Staff three-day canary, lalu final Go/No-Go. Current seed scripts tetap synthetic-only dan tidak boleh dipakai untuk akun pilot. Performance tetap OFF dan payroll tetap payroll-ready only. Detail baru menjadi kontrak eksekusi setelah Andreas menerima urutan sprint.

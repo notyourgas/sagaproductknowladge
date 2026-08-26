@@ -8,6 +8,14 @@ Mencatat perubahan material SagaWork dengan status delivery dan activation yang 
 
 Synthetic fixture, preview, dan staging bukan bukti real pilot atau production activation.
 
+## 2026-08-26 - Proposed Sprint 30–40 Kananta internal MVP bridge
+
+- `PROPOSAL` dari permintaan Andreas: setelah preparation sprint selesai, Andreas mencoba login HR, menambah Staff, mengatur shift, menjalankan attendance foto+GPS, memeriksa report, dan memberikan revisi MVP.
+- Strategy memakai owner rehearsal dua akun uji sebelum tepat 5 Staff internal, lalu revision/regression dan three-day canary.
+- Sprint menutup isolated `pilot_restricted` environment, secure HR bootstrap, policy/location, Staff lifecycle, schedule/note/swap, Android+iOS attendance, reconciliation, owner UAT, revision, canary, dan Go/No-Go.
+- Current HR/owner seed tetap synthetic-only; pilot provisioner belum diimplementasikan. Performance tetap OFF; payroll tetap payroll-ready only.
+- Production berubah: tidak. Delivery tetap `STAGING_DEPLOYED`; activation `NOT_PRODUCTION_ACTIVATED`; business readiness `BLOCKED_EXTERNAL`.
+
 ## 2026-08-25 - Pilot Canary 01 scope freeze
 
 - `CONFIRMED` oleh Andreas: pilot pertama memakai kode public-safe `KANANTA-MADIUN-CANARY-01`, satu company/satu lokasi Kota Madiun, 5–10 Staff, mulai 26 Agustus 2026, default tiga hari, support enabled, dan performance OFF.

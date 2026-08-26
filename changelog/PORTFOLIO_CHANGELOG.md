@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-08-26 - SagaWork proposed Kananta internal MVP sprint bridge
+
+- `PROPOSAL`: Sprint 30–40 membawa exact synthetic-validated source menuju isolated pilot environment, secure HR bootstrap, owner rehearsal, revision/regression, five-Staff internal canary, dan final Go/No-Go.
+- Current seed scripts tetap synthetic-only; akun pilot tidak akan dibuat dengan mengganti fixture. Performance OFF dan payroll-ready-only boundary dipertahankan.
+- Tidak ada runtime, production, customer data, credential, foto/GPS, atau activation yang berubah.
+
 ## 2026-08-26 - SagaView S300 deployment inventory reconciliation
 
 - Audit ancestry dan patch-equivalence membuktikan seluruh runtime SagaView
