@@ -1,6 +1,23 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 26 Agustus 2026 12:21 WIB
+Evidence cut-off: 26 Agustus 2026 13:20 WIB
+
+S299 Support Hub monitor/zoom acceptance: exact pushed source
+`2a155a9ff0b6d21c98011d76a79212d751260edd` menutup residual layar besar dan
+zoom untuk launcher/dialog Owner. Sebelumnya acceptance Support Hub hanya
+mengikat 390x844 dan 1440x900; sekarang fixture sintetis meliputi monitor
+1280/1512/1920/2560/3840 serta ekuivalen zoom browser 100/125/150/200 persen.
+Launcher dan panel wajib tetap penuh di viewport, target launcher minimal 44
+pixel, Enter/Escape dan focus restore berfungsi, forced-colors/reduced-motion
+aktif, tidak ada overflow horizontal, dan tidak ada input upload.
+
+Regresi browser menghasilkan 11 pass/1 intentional skip, focused PHP 37/37
+dengan 185 assertion, build 5.097 modul, node/diff check, Composer audit nol
+advisory, dan npm production audit nol vulnerability. Status `PUSHED /
+QA_VALIDATED / UIUX_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; test-only dan production S298 tidak berubah. Gap
+berikutnya tetap authenticated Owner Support Hub UAT terotorisasi dengan akun
+referensi non-customer sebelum `PRODUCTION_ACTIVATED` atau `BUSINESS_READY`.
 
 S298 guarded production deployment: exact pushed source
 `7bf0e0d6966ebe7d2d6f2a72a42b59b4df4f6470` aktif sebagai backend/Owner

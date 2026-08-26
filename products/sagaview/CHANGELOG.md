@@ -1,5 +1,22 @@
 # SagaView Changelog
 
+## 2026-08-26 - S299 Support Hub monitor and zoom acceptance
+
+- Klasifikasi: `PUSHED / QA_VALIDATED / UIUX_VALIDATED / SECURITY_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
+- Before: acceptance Support Hub Owner hanya mengikat viewport 390x844 dan
+  1440x900, sehingga layar besar dan zoom desktop belum menjadi gate otomatis.
+- After: exact `2a155a9ff0b6d21c98011d76a79212d751260edd`
+  menambahkan matriks 1280/1512/1920/2560/3840 dengan ekuivalen zoom browser
+  100/125/150/200 persen, keyboard/focus restore, target 44 piksel,
+  forced-colors/reduced-motion, no-overflow, dan no-upload.
+- Evidence: browser 11 pass/1 intentional skip; focused PHP 37/37 dengan 185
+  assertion; build 5.097 modul; node/diff check dan audit Composer/npm nol.
+- Delivery: test-only; backend/Owner production tetap release
+  `20260826050812-7bf0e0d` dan Studio tetap `20260824170456-7ae79ae`.
+- Next gate: authenticated Owner Support Hub UAT terotorisasi memakai akun
+  referensi non-customer sebelum activation atau business readiness dinilai.
+
 ## 2026-08-26 - S298 guarded production deployment
 
 - Klasifikasi: `CONFIRMED / PUSHED / PRODUCTION_DEPLOYED /

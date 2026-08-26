@@ -1,6 +1,18 @@
 # SagaView Product Knowledge
 
-Updated: 26 Agustus 2026 12:21 WIB
+Updated: 26 Agustus 2026 13:20 WIB
+
+SagaView S299 exact `2a155a9ff0b6d21c98011d76a79212d751260edd`
+sudah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Acceptance
+Support Hub Owner kini mencakup monitor 1280, 1512, 1920, 2560, dan 3840
+pixel dengan ekuivalen zoom browser 100, 125, 150, dan 200 persen. Matriks
+membuktikan launcher dan dialog tetap di viewport, target minimal 44 piksel,
+keyboard/focus restore, forced-colors, reduced-motion, no-overflow, serta
+ketiadaan input upload. Regresi browser 11 pass/1 intentional skip, focused PHP
+37/37 dengan 185 assertion, build 5.097 modul, dan audit Composer/npm nol
+advisory lulus. Slice ini hanya menambah acceptance; runtime dan production
+S298 tidak berubah. Authenticated Owner UAT dengan akun referensi non-customer
+tetap gap sebelum activation atau business readiness.
 
 SagaView S298 exact `7bf0e0d6966ebe7d2d6f2a72a42b59b4df4f6470`
 sudah `PUSHED / PRODUCTION_DEPLOYED` sebagai backend/Owner release

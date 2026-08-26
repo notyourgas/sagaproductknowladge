@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-26 - SagaView S299 Support Hub monitor/zoom acceptance sync
+
+- Ringkasan: sinkronisasi gate Support Hub Owner untuk lima kelas monitor,
+  empat tingkat zoom, keyboard/focus, accessibility, no-overflow, dan no-upload.
+- Produk/area: SagaView Owner, Support Hub, UI/UX, privacy/security, QA,
+  performance acceptance, dan knowledge.
+- Klasifikasi: `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; source
+  exact `2a155a9ff0b6d21c98011d76a79212d751260edd`.
+- Production berubah: tidak; backend/Owner tetap S298 dan Studio tetap release
+  aktif sebelumnya.
+- Next action: authenticated Owner UAT terotorisasi dengan akun referensi
+  non-customer sebelum activation/business readiness.
+
 ## 2026-08-26 - COYABAG Admin Pesanan payment triage and privacy sync
 
 - Ringkasan: sinkronisasi antrean pembayaran actionable versus tertahan,
