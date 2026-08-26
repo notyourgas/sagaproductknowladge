@@ -4,6 +4,18 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-26 - Storefront performance integrity production release
+
+- Klasifikasi: `CONFIRMED` dari exact source
+  `5acbda312a08d195b6cf8d235440786570c92fd4`, immutable Hostinger release
+  `20260826-5acbda3`, rollback `20260826-ed81263`, dan runtime verification.
+- Framer Motion keluar dari initial graph; video runtime dimuat saat section
+  mendekati viewport dengan stable loading state dan reduced-motion contract.
+- Initial JavaScript turun 23.4% raw dan 26.6% gzip. Public live acceptance
+  lulus 16 performance state, 24 motion state, serta 110 responsive combinations.
+- Delivery `PRODUCTION_DEPLOYED`; activation/business readiness `BLOCKED`;
+  readiness 30/42, 12 blocker, dan checkout tetap disabled.
+
 ## 2026-08-26 - Motion and interaction integrity production release
 
 - Klasifikasi: `CONFIRMED` dari exact source

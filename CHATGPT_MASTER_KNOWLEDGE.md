@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 26 Agustus 2026 01:25 WIB
+Evidence cut-off: 26 Agustus 2026 11:17 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -3504,7 +3504,17 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release aktif `20260826-ed81263` menjalankan exact source
+Release aktif `20260826-5acbda3` menjalankan exact source
+`5acbda312a08d195b6cf8d235440786570c92fd4` dengan rollback
+`20260826-ed81263`. Framer Motion tidak lagi berada pada initial static graph;
+video runtime dimuat saat section mendekati viewport dengan stable loading dan
+reduced-motion contract. Initial JavaScript turun 23.4% raw dan 26.6% gzip.
+Public live acceptance lulus 16 performance state, 24 motion state, dan 110
+responsive combinations. Delivery `PRODUCTION_DEPLOYED`; readiness tetap
+30/42 dengan 12 blocker, checkout disabled, dan activation/business readiness
+`BLOCKED`.
+
+Release sebelumnya `20260826-ed81263` menjalankan exact source
 `ed81263eeb8202946a3791cdfebe7cb86867d6b1` dengan rollback
 `20260826-7547c4e`. Product rail sekarang context-aware, edge-safe, bergerak
 satu kartu, memiliki live announcement, dan tetap terhubung setelah lazy grid

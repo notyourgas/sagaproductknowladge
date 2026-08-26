@@ -61,9 +61,18 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260826-ed81263` dengan source
-  `ed81263eeb8202946a3791cdfebe7cb86867d6b1` melayani production;
-  rollback langsung `20260826-7547c4e` dipertahankan.
+- Release aktif `20260826-5acbda3` dengan source
+  `5acbda312a08d195b6cf8d235440786570c92fd4` melayani production;
+  rollback langsung `20260826-ed81263` dipertahankan.
+- Runtime Framer Motion tidak lagi masuk initial static graph dan dimuat ketika
+  section video mendekati viewport. Initial JavaScript turun dari 526.4 KiB ke
+  403.0 KiB raw dan dari 149.5 KiB ke 109.7 KiB gzip tanpa menghapus video,
+  hover product, keyboard control, atau reduced-motion.
+- Public acceptance lulus 16 performance state, 24 motion state, dan 110
+  responsive combinations desktop/mobile. HTML/API tetap no-cache sedangkan
+  hashed assets memakai cache immutable satu tahun.
+- Release sebelumnya `20260826-ed81263` menjalankan motion and interaction
+  integrity berikut.
 - Product rail hanya menampilkan kontrol ketika benar-benar overflow, menutup
   aksi di batas, bergerak satu kartu, dan mengumumkan produk aktif. Listener
   tetap benar setelah skeleton diganti lazy ProductGrid.

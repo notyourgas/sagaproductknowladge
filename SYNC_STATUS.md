@@ -12,12 +12,33 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-26T10:34:30+07:00 |
+| Waktu pembaruan terakhir | 2026-08-26T11:17:52+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | exact `origin/main` `76f81ff` sebelum sinkronisasi COYABAG motion and interaction integrity |
-| Informasi terakhir disinkronkan | COYABAG motion and interaction integrity immutable production release. |
+| Baseline sebelum pembaruan | exact `origin/main` `b9460b6` sebelum sinkronisasi COYABAG storefront performance integrity |
+| Informasi terakhir disinkronkan | COYABAG storefront performance integrity immutable production release. |
 | Status sinkronisasi | `PRODUCTION_DEPLOYED`; commerce activation dan business readiness tetap `BLOCKED`. |
+
+## COYABAG storefront performance integrity
+
+- Exact source `5acbda312a08d195b6cf8d235440786570c92fd4` aktif pada immutable
+  release `20260826-5acbda3`; rollback `20260826-ed81263`.
+- Motion/video runtime keluar dari initial graph. Initial JavaScript turun 23.4%
+  raw dan 26.6% gzip tanpa menghapus visual atau interaction capability.
+- Public live acceptance lulus 16 performance state, 24 motion state, dan 110
+  responsive combinations. Cache, security, workers, dan smoke hijau.
+- Readiness tetap 30/42 dengan 12 blocker; checkout, activation, dan business
+  readiness tetap blocked.
+
+## File yang berubah pada sinkronisasi ini (COYABAG performance)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG motion and interaction integrity
 

@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-26 - COYABAG storefront performance integrity
+
+- Exact source `5acbda312a08d195b6cf8d235440786570c92fd4` aktif pada immutable
+  Hostinger release `20260826-5acbda3` dengan rollback `20260826-ed81263`.
+- Motion/video runtime dipindahkan keluar initial graph; initial JavaScript turun
+  23.4% raw dan 26.6% gzip tanpa menghapus visual atau interaction capability.
+- Public live acceptance lulus 16 performance state, 24 motion state, dan 110
+  responsive combinations; cache, workers, security, dan smoke hijau.
+- Delivery `PRODUCTION_DEPLOYED`; activation/business readiness `BLOCKED`;
+  readiness 30/42 dan commerce tetap fail-closed.
+
 ## 2026-08-26 - COYABAG motion and interaction integrity
 
 - Exact source `ed81263eeb8202946a3791cdfebe7cb86867d6b1` aktif pada immutable

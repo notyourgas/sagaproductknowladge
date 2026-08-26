@@ -78,7 +78,19 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260826-ed81263` memakai source
+Release production terbaru `20260826-5acbda3` memakai source
+`5acbda312a08d195b6cf8d235440786570c92fd4` dan rollback
+`20260826-ed81263`. Framer Motion dikeluarkan dari initial static dependency
+graph dan video tile memakai stable loading poster sebelum feature runtime
+dimuat saat section mendekati viewport. Initial JavaScript turun 23.4% raw dan
+26.6% gzip; total capability tetap dipertahankan sebagai deferred feature.
+Public live acceptance lulus 16 performance state, 24 motion state, dan 110
+responsive combinations. HTML dan API config tetap no-cache/private; hashed
+asset memakai cache satu tahun immutable. Full regression, security audit,
+backup, rollback, workers, dan smoke hijau. Readiness tetap 30/42 dengan 12
+blocker dan checkout disabled.
+
+Release sebelumnya `20260826-ed81263` memakai source
 `ed81263eeb8202946a3791cdfebe7cb86867d6b1` dan rollback
 `20260826-7547c4e`. Product rail hanya menampilkan panah untuk overflow nyata,
 menonaktifkan batas, bergerak satu kartu, dan mengumumkan produk aktif melalui

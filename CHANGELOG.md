@@ -1,5 +1,22 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-26 - COYABAG storefront performance integrity sync
+
+- Ringkasan: sinkronisasi deferred motion/video runtime, stable loading state,
+  stricter initial-load budget, dan public live performance acceptance.
+- Alasan: homepage harus memuat lebih sedikit JavaScript sebelum interaktif
+  tanpa menghapus visual, keyboard, atau reduced-motion capability.
+- Produk/area: COYABAG storefront performance, UI/UX, accessibility, QA,
+  security, DevOps, dan release provenance.
+- Klasifikasi: `CONFIRMED`; source exact
+  `5acbda312a08d195b6cf8d235440786570c92fd4`, release `20260826-5acbda3`.
+- Production berubah: ya, surface storefront. Delivery
+  `PRODUCTION_DEPLOYED`; activation/business readiness `BLOCKED`; commerce
+  tetap fail-closed pada 30/42 readiness dan 12 blocker.
+- Dokumen terdampak: Product, Dossier, changelog COYABAG, portfolio, master
+  knowledge, root changelog, dan sync status.
+- Next action: Cycle 2 Storefront SEO Integrity.
+
 ## 2026-08-26 - COYABAG motion and interaction integrity sync
 
 - Ringkasan: sinkronisasi product rail context-aware, reduced-motion-safe
