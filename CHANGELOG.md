@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-26 - AOGTIVITY archive and runtime retirement sync
+
+- Ringkasan: menyinkronkan keputusan founder untuk mengarsipkan AOGTIVITY dan
+  runtime legacy Olimpiade setelah event serta memensiunkan backend Hostinger.
+- Alasan: mengurangi penggunaan VPS tanpa kehilangan jalur recovery atau
+  mengganggu produk/database aktif lain.
+- Produk/area: AOGTIVITY delivery, backend, worker/timer, recovery, readiness,
+  public status, dan portfolio positioning.
+- Klasifikasi: `CONFIRMED / ARCHIVED / HOSTINGER_RUNTIME_RETIRED` melalui
+  `DEC-107`; provenance operasi memakai manifest retirement restricted.
+- Production berubah: ya. Backend AOGTIVITY tidak lagi operational; database
+  historis dipertahankan cold. Edge/domain yang masih resolve bukan activation.
+- Dokumen terdampak: Product, Dossier, changelog AOGTIVITY, README, portfolio,
+  master knowledge, gaps, decisions, root/portfolio changelog, dan sync status.
+
 ## 2026-08-26 - SagaWork Sprint 30 restricted pilot boundary sync
 
 - Ringkasan: menyinkronkan implementasi lokal fail-closed pilot runtime dan topology operational terpisah.

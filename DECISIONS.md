@@ -1504,3 +1504,17 @@ keputusan pengganti.
 | Pemberi keputusan | Andreas / founder |
 | Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; source `6cfab80a9a06b50ec72e139b46ad5e4b3171f87a`, production `dpl_5S2BWzukN4Fat1xdpPVsx9kvFbFF`, rollback V24 `dpl_D1xLKDsFxrVxn3UC1BjP4ftz892x` |
 | Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaView Product](products/sagaview/PRODUCT.md), [Portfolio Changelog](changelog/PORTFOLIO_CHANGELOG.md), [Master Knowledge](CHATGPT_MASTER_KNOWLEDGE.md) |
+
+## DEC-107 - AOGTIVITY diarsipkan dan runtime Hostinger dipensiunkan
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-26 |
+| Topik | Penutupan operasi AOGTIVITY setelah event dan pengurangan kapasitas VPS |
+| Keputusan | Arsipkan AOGTIVITY/AOGTVT beserta runtime legacy Olimpiade, verifikasi arsip restricted di luar VPS, lalu pensiunkan backend, worker, timer, credential config, dan release Hostinger. Pertahankan database historis dalam keadaan cold karena ukurannya kecil dan berguna sebagai recovery layer. |
+| Alasan | Event sudah selesai dan runtime tidak lagi dipakai, sedangkan VPS membutuhkan ruang. Arsip dan database cold menjaga recovery tanpa membiarkan service lama terus mengonsumsi kapasitas dan proses. |
+| Alternatif yang dipertimbangkan | Membiarkan seluruh runtime aktif; menghapus tanpa arsip; menghapus juga database cold; hanya memangkas release lama tanpa memensiunkan service. |
+| Dampak | Backend dan port origin AOGTIVITY/legacy tidak lagi aktif. Public edge/domain yang masih resolve bukan layanan operational. Reaktivasi memerlukan restore terkontrol, rotasi credential, deploy baru, smoke test, dan UAT. Produk serta database aktif lain tidak diubah. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / IMPLEMENTED / ARCHIVED / HOSTINGER_RUNTIME_RETIRED`; provenance detail berada pada evidence restricted dan tidak dipublikasikan |
+| Dokumen terkait | [AOGTIVITY Product](products/aogticvity/PRODUCT.md), [AOGTIVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTIVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |

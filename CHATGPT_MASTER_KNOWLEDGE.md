@@ -4035,8 +4035,14 @@ Registration historis tetap tersimpan/audited di MySQL, tetapi submission
 publik dan participant login ditutup melalui `DEC-081`. Public hub membuka
 agenda, tim, lomba, standing, pengumuman, dan info tanpa akun peserta; panel
 admin/operator/leader tetap terautentikasi.
+Status current per 26 Agustus 2026 adalah `ARCHIVED /
+HOSTINGER_RUNTIME_RETIRED / NOT_OPERATIONAL` melalui `DEC-107`. Backend,
+worker, timer, credential config, dan runtime release telah dipensiunkan setelah
+arsip restricted terverifikasi di luar VPS. Database historis dipertahankan
+cold untuk recovery. Domain/edge yang masih resolve bukan bukti activation;
+reaktivasi memerlukan restore, rotasi credential, release baru, smoke, dan UAT.
 Nama kanonik produk berubah dari AOGTICVITY menjadi AOGTIVITY pada 6 Agustus
-2026. Runtime terbaru aktif melalui source
+2026. Runtime historis terakhir aktif melalui source
 `a74221c4720b0afc59cadbf3f115e4934c4745e1`, Hostinger
 `20260816T185201Z`, dan Vercel `dpl_F2nGXwrWRSNerhKybbWUUikwz94G`.
 Domain `aogticvities.fun` serta slug infrastruktur `aogticvity` tetap dipakai

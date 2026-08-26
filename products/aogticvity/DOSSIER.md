@@ -7,12 +7,20 @@ content AOGTIVITY tetap jelas.
 
 ## Konteks dan status bukti
 
-- Updated: 17 Agustus 2026
-- Delivery: `PRODUCTION_DEPLOYED`
-- Public event hub: `PRODUCTION_ACTIVATED`
+- Updated: 26 Agustus 2026
+- Delivery current: `ARCHIVED / HOSTINGER_RUNTIME_RETIRED`
+- Public event hub current: `NOT_OPERATIONAL`; edge/domain yang masih resolve
+  bukan activation evidence
 - Public registration dan participant login: `DEPRECATED / CLOSED`
-- Business readiness: `BLOCKED`
-- Taxonomy VOLTAGE: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
+- Business readiness: `NOT_APPLICABLE_WHILE_ARCHIVED`
+- Taxonomy VOLTAGE: capability historis; runtime current retired
+
+`CONFIRMED` melalui `DEC-107`: runtime AOGTIVITY dan legacy Olimpiade telah
+diarsipkan setelah event. Backend, worker, timer, credential config, dan release
+Hostinger dipensiunkan; database historis dipertahankan cold untuk recovery.
+Restore kembali ke layanan aktif membutuhkan keputusan baru, rotasi credential,
+release terkontrol, smoke test, dan UAT. Rincian arsip restricted tidak masuk
+repository publik.
 
 ## Overview produk
 

@@ -8,6 +8,20 @@ Mencatat perubahan material AOGTIVITY/AOGTICVITY/17an/Olimpiade.
 
 Nama lama dipertahankan sebagai provenance; status runtime harus eksplisit.
 
+## 2026-08-26 - Runtime diarsipkan dan dipensiunkan
+
+- `CONFIRMED` melalui `DEC-107`: Andreas meminta AOGTIVITY/AOGTVT dan project
+  legacy Olimpiade diarsipkan untuk membebaskan kapasitas VPS setelah event.
+- Arsip restricted lengkap diverifikasi di luar VPS sebelum runtime, rollback
+  releases, worker, timer, dan credential config dipensiunkan. Detail sensitif
+  tidak dipublikasikan.
+- Database historis tetap cold sebagai recovery material; seluruh schema lolos
+  integrity check dan tidak ada database aktif produk lain yang dihapus.
+- Backend Hostinger dan port origin sudah tidak aktif. Public edge/domain yang
+  masih resolve tidak boleh dipakai sebagai bukti activation.
+- Status current berubah dari `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
+  menjadi `ARCHIVED / HOSTINGER_RUNTIME_RETIRED / NOT_OPERATIONAL`.
+
 ## 2026-08-17 - Public event hub tanpa login peserta
 
 - `CONFIRMED` melalui `DEC-081`: pendaftaran ditutup; `/register` dan jalur VIP

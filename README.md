@@ -50,7 +50,7 @@ status berbeda; repository harus terus disinkronkan setelah perubahan material.
 | SagaMenu | E-menu/e-katalog preview-first | `LOCAL_VALIDATED` | [Product](products/sagamenu/PRODUCT.md) · [Dossier](products/sagamenu/DOSSIER.md) |
 | SagaFin | Finance tracker personal | Runtime `UNVERIFIED` | [Product](products/sagafin/PRODUCT.md) · [Dossier](products/sagafin/DOSSIER.md) |
 | COYABAG | Ecommerce tas streetwear | `PRODUCTION_DEPLOYED`, activation blocked | [Product](products/coyabag/PRODUCT.md) · [Dossier](products/coyabag/DOSSIER.md) |
-| AOGTIVITY | Operasi event/matchday | `PRODUCTION_DEPLOYED`; activation keseluruhan blocked | [Product](products/aogticvity/PRODUCT.md) · [Dossier](products/aogticvity/DOSSIER.md) |
+| AOGTIVITY | Operasi event/matchday | `ARCHIVED`; backend Hostinger retired | [Product](products/aogticvity/PRODUCT.md) · [Dossier](products/aogticvity/DOSSIER.md) |
 | Saga Platform | Control plane Saga | Fondasi `PRODUCTION_DEPLOYED` | [Product](products/saga-platform/PRODUCT.md) · [Dossier](products/saga-platform/DOSSIER.md) |
 | SagaOPS | POS dan back office coffeeshop | `PROTOTYPE` | [Product](products/sagaops/PRODUCT.md) · [Dossier](products/sagaops/DOSSIER.md) |
 | Saga AI | Grounded knowledge/intelligence layer | `PLANNED` | [Product](products/saga-ai/PRODUCT.md) · [Dossier](products/saga-ai/DOSSIER.md) |

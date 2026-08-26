@@ -1,7 +1,7 @@
 # AOGTIVITY Product Knowledge
 
-Updated: 17 Agustus 2026
-Evidence status: public event hub Hostinger/Vercel production-activated
+Updated: 26 Agustus 2026
+Evidence status: `ARCHIVED / HOSTINGER_RUNTIME_RETIRED`
 
 ## Tujuan dokumen
 
@@ -11,9 +11,23 @@ Keputusan terbuka berada di [GAPS](../../GAPS.md#aogtivity).
 
 ## Konteks
 
-Dokumen membedakan public Vercel delivery, operasi yang sudah server-authoritative,
-surface pendukung yang masih memakai local state, dan UAT fisik multi-device
-yang masih tertunda.
+Dokumen membedakan kemampuan historis produk dari status operasional terbaru.
+Detail capability di bawah tetap menjadi provenance, tetapi tidak boleh dibaca
+sebagai klaim bahwa backend masih aktif.
+
+## Status operasi saat ini
+
+- `CONFIRMED` melalui `DEC-107`: AOGTIVITY dan runtime legacy Olimpiade
+  diarsipkan pada 26 Agustus 2026 setelah event selesai.
+- Backend Hostinger, worker, health timer, credential config, dan runtime release
+  sudah dipensiunkan. Port origin terkait ditutup.
+- Database historis dipertahankan cold sebagai recovery material; tidak ada
+  database aktif produk lain yang dihapus.
+- Arsip restricted di luar VPS sudah diverifikasi sebelum penghapusan runtime.
+  Detail arsip, checksum, credential, dump, dan data peserta tidak dipublikasikan.
+- Public edge/domain dapat masih resolve, tetapi bukan bukti layanan aktif.
+  Status current adalah `ARCHIVED / NOT_OPERATIONAL`; reaktivasi memerlukan
+  restore terkontrol, rotasi credential, deploy baru, dan UAT.
 
 ## Ringkasan
 
@@ -57,15 +71,15 @@ Nama ini menggantikan **AOGTICVITY** serta penyebutan project `17an` atau
 | Player lama | `app.aogticvities.fun` mengalihkan permanen ke public hub |
 | Leader | `appl.aogticvities.fun` |
 
-Domain telah dibeli dan kelima hostname, termasuk `www`, aktif melalui Vercel.
-DNS Hostinger, sertifikat, runtime origin, role routing, serta public smoke
-telah lulus. Domain technically production-activated; business readiness tetap
-menunggu human UAT.
+Secara historis, kelima hostname termasuk `www` aktif melalui Vercel dan gate
+DNS/sertifikat/origin pernah lulus. Sejak `DEC-107`, backend origin sudah
+dipensiunkan; domain yang masih resolve tidak boleh diklaim operational atau
+production-activated.
 
 Public delivery kanonik: `https://aogticvities.fun`.
 
-Rebrand AOGTIVITY pertama kali aktif pada source `e4c217b`; runtime terbaru
-adalah `a74221c4720b0afc59cadbf3f115e4934c4745e1`, Hostinger
+Rebrand AOGTIVITY pertama kali aktif pada source `e4c217b`; runtime historis
+terakhir adalah `a74221c4720b0afc59cadbf3f115e4934c4745e1`, Hostinger
 `20260816T185201Z`, dan Vercel `dpl_F2nGXwrWRSNerhKybbWUUikwz94G`. UI,
 metadata, PWA, aset merek, pesan
 WhatsApp baru, serta issuer TOTP baru memakai AOGTIVITY. Domain, repository,

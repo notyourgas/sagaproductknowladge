@@ -1052,6 +1052,10 @@ GAP-004, bukan gap implementasi warna komponen.
 
 ### AOGTIVITY
 
+- `CONFIRMED / CLOSED` melalui `DEC-107`: runtime Hostinger AOGTIVITY dan
+  legacy Olimpiade telah diarsipkan dan dipensiunkan. Database historis tetap
+  cold untuk recovery. Edge/domain yang masih resolve bukan layanan aktif;
+  status current `ARCHIVED / NOT_OPERATIONAL`.
 - `CONFIRMED`: nama kanonik saat ini AOGTIVITY. AOGTICVITY adalah nama lama;
   folder, slug teknis, dan domain `aogticvities.fun` tetap dipertahankan untuk
   kompatibilitas dan bukan gap rebrand.
@@ -1076,7 +1080,7 @@ GAP-004, bukan gap implementasi warna komponen.
   `dpl_4txuxGraGsfaT9BSWzWvT24uZ8wg`. Flow tidak lagi menjadi entry point
   peserta atau blocker public hub; backend dipertahankan untuk audit/rollback.
 
-- `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: runtime
+- `HISTORICAL / SUPERSEDED_BY_DEC-091`: runtime
   `c9a6702094ea36088c44040656f638d3db28da57` memuat theme poster-aligned,
   hadir/mulai 14.30 (`DEC-063`), dan durasi akhir (`DEC-059`) melalui
   Hostinger `20260809T075137Z`, Vercel `dpl_D1ubBCWkFs6ENp9CqPz5Fv25zwYE`,

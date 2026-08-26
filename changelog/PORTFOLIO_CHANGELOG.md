@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-26 - AOGTIVITY archived and Hostinger runtime retired
+
+- `CONFIRMED` melalui `DEC-107`: AOGTIVITY dan runtime legacy Olimpiade
+  diarsipkan setelah event untuk mengurangi beban VPS.
+- Arsip restricted diverifikasi di luar VPS sebelum backend, releases, worker,
+  timer, dan credential config dipensiunkan. Database historis dipertahankan
+  cold untuk recovery; produk dan database aktif lain tidak diubah.
+- Status current `ARCHIVED / HOSTINGER_RUNTIME_RETIRED / NOT_OPERATIONAL`.
+  Public edge/domain yang masih resolve bukan activation evidence.
+
 ## 2026-08-26 - SagaWork Sprint 30 restricted pilot boundary
 
 - Exact local source `a500a52` menambah fail-closed `pilot_restricted` startup/readiness guard, dedicated database/user/bucket binding, performance/signup OFF, MFA scope, ClamAV, serta separate service/backup/rollback topology.

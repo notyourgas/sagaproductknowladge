@@ -1,6 +1,6 @@
 # Saga Product Portfolio
 
-Evidence cut-off: 31 Juli 2026
+Evidence cut-off: 26 Agustus 2026
 Owner: Andreas / SagaDev
 
 ## Tujuan
@@ -67,7 +67,7 @@ session, cancellation, dan data masing-masing produk tetap terpisah.
 | SagaMenu | Core SaaS | LOCAL_VALIDATED | Pilot closure lokal; environment production belum tersedia |
 | SagaFin | Core SaaS | UNVERIFIED | Controlled public trial pernah dilaporkan; runtime/provider perlu verifikasi ulang |
 | COYABAG | Client commerce | PRODUCTION_DEPLOYED; activation BLOCKED | Surface live; transaksi nyata tetap fail-closed |
-| AOGTICVITY | Event product | PRODUCTION_DEPLOYED | Public Vercel prototype aktif; MySQL/auth multi-device tetap belum production-activated |
+| AOGTIVITY | Event product | ARCHIVED / HOSTINGER_RUNTIME_RETIRED | Backend origin dipensiunkan setelah event; database historis cold untuk recovery; edge yang masih resolve bukan layanan aktif |
 | SagaOPS | Core SaaS | PROTOTYPE | Workflow terbukti pada prototype; backend production belum terhubung |
 | Saga Platform | Internal platform | PRODUCTION_DEPLOYED (fondasi) | Control plane hidup bersama fondasi SagaBook; pemisahan bertahap |
 | Saga AI | Internal/future SaaS | PLANNED | Knowledge contract ada; runtime penuh belum menjadi produk publik |

@@ -12,12 +12,37 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-26T14:24:20+07:00 |
+| Waktu pembaruan terakhir | 2026-08-26T14:55:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | exact `origin/main` `c0fa3bece71f4b453520dc36c6656897fc3d483f` |
-| Informasi terakhir disinkronkan | SagaWork Sprint 30 restricted pilot runtime boundary. |
-| Status sinkronisasi | `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / K0_NO_GO`. |
+| Baseline sebelum pembaruan | exact `origin/main` `b5cb1834085d4d63670771b36c3b26472ceba87e` |
+| Informasi terakhir disinkronkan | AOGTIVITY archive dan Hostinger runtime retirement. |
+| Status sinkronisasi | `CONFIRMED / IMPLEMENTED / ARCHIVED / HOSTINGER_RUNTIME_RETIRED`. |
+
+## AOGTIVITY archive dan Hostinger runtime retirement
+
+- `DEC-107` mencatat keputusan Andreas untuk mengarsipkan AOGTIVITY dan runtime
+  legacy Olimpiade setelah event.
+- Arsip restricted diverifikasi di luar VPS sebelum backend, release, worker,
+  timer, dan credential config dipensiunkan. Detail arsip, credential, dump,
+  data peserta, dan checksum restricted tidak masuk repository publik.
+- Database historis dipertahankan cold untuk recovery; produk dan database
+  aktif lain tidak diubah.
+- Status current `ARCHIVED / HOSTINGER_RUNTIME_RETIRED / NOT_OPERATIONAL`.
+
+## File yang berubah pada sinkronisasi ini (AOGTIVITY archive)
+
+- `products/aogticvity/PRODUCT.md`
+- `products/aogticvity/DOSSIER.md`
+- `products/aogticvity/CHANGELOG.md`
+- `README.md`
+- `docs/SAGA_PRODUCT_PORTFOLIO.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
+- `DECISIONS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaWork Sprint 30 restricted pilot runtime boundary
 
