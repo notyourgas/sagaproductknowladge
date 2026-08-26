@@ -1,6 +1,21 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 27 Agustus 2026 04:07 WIB
+Evidence cut-off: 27 Agustus 2026 05:08 WIB
+
+S311 custody capacity guard follow-up: gate read-only
+`sagaview-separate-custody-capacity-v1` sekarang memverifikasi hash artifact,
+menolak tujuan pada volume sumber yang sama, dan menolak kapasitas yang tidak
+mencukupi sebelum satu byte disalin. Acceptance negatif lulus untuk dua kasus:
+tujuan C dengan kapasitas cukup tetapi volume sama, serta tujuan D yang berbeda
+volume tetapi hanya memiliki 69,621 MB bebas.
+
+Artifact exact tetap utuh 199.912.920 byte dan kedua hash manifest cocok. Dengan
+cadangan operasi 64 MB, tujuan terpisah harus menyediakan 267.021.784 byte
+(254,652 MB); shortfall D saat verifikasi 194.018.776 byte (185,031 MB). Script
+read-only terikat SHA-256
+`18d8d8bfd8c2099cabbe0d2ffc69252d3378756ca4df3f9219d9575808a1f877`.
+Status tetap `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+RELEASE_BLOCKED`; production dan kandidat exact tidak berubah.
 
 S311 exact S310 artifact custody preflight: exact pushed source
 `cd7288d3bb4da9542fbfa20f97780fa5639759bf` sudah menghasilkan immutable

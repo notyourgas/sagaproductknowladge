@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-27 - SagaView S311 custody capacity guard
+
+- Guard release read-only kini menolak salinan pada volume sumber yang sama,
+  memverifikasi manifest, dan menghitung kapasitas plus cadangan 64 MB.
+- Dua acceptance negatif lulus; artifact exact 199.912.920 byte tetap utuh dan
+  hash valid.
+- Target terpisah membutuhkan 254,652 MB, sementara D hanya memiliki 69,621 MB;
+  status tetap `RELEASE_BLOCKED / IMPLEMENTED_NOT_DEPLOYED`.
+- Production SagaView, database, foto/path/output customer, dan produk lain
+  tidak berubah.
+
 ## 2026-08-27 - COYABAG product specification integrity
 
 - Exact source `4cf4ce628eaad2bd77c63513487068737819d809` aktif pada immutable

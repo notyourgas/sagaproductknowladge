@@ -1,6 +1,18 @@
 # SagaView Product Knowledge
 
-Updated: 27 Agustus 2026 04:07 WIB
+Updated: 27 Agustus 2026 05:08 WIB
+
+Follow-up S311 menambahkan guard custody read-only yang memverifikasi SHA-256,
+memastikan target berada pada volume berbeda, serta menghitung kebutuhan ruang
+sebelum copy. Guard SHA-256
+`18d8d8bfd8c2099cabbe0d2ffc69252d3378756ca4df3f9219d9575808a1f877`
+lulus dua acceptance fail-closed: target volume sama ditolak dan volume D yang
+kapasitasnya kurang juga ditolak.
+
+Paket exact tetap 199.912.920 byte dengan hash valid. Setelah cadangan operasi
+64 MB, kebutuhan tujuan terpisah menjadi 267.021.784 byte (254,652 MB), sedangkan
+D hanya memiliki 69,621 MB bebas saat verifikasi. Tidak ada file yang disalin
+atau dihapus, production tidak berubah, dan status tetap `RELEASE_BLOCKED`.
 
 SagaView S311 membentuk immutable release
 `20260826210546-cd7288d` dari exact S310

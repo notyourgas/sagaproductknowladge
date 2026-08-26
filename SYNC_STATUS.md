@@ -12,12 +12,23 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-27T04:20:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-27T05:08:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
-| Informasi terakhir disinkronkan | COYABAG product specification integrity pada exact source `4cf4ce628eaad2bd77c63513487068737819d809`, release `20260827-4cf4ce6`. |
-| Status sinkronisasi | `CONFIRMED / PUSHED / PRODUCTION_DEPLOYED`; commerce activation dan `BUSINESS_READY` tetap `BLOCKED`. |
+| Informasi terakhir disinkronkan | SagaView S311 custody capacity guard pada exact source S310 `cd7288d3bb4da9542fbfa20f97780fa5639759bf`. |
+| Status sinkronisasi | `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED`; production tidak berubah. |
+
+## SagaView S311 custody capacity guard
+
+- Guard read-only memverifikasi manifest, menolak tujuan pada volume sumber,
+  dan menolak kapasitas kurang sebelum copy.
+- Artifact 199.912.920 byte dengan cadangan 64 MB memerlukan 267.021.784 byte
+  pada volume terpisah. D hanya memiliki 73.003.008 byte saat verifikasi.
+- Syntax, read-only contract, same-volume rejection, insufficient-capacity
+  rejection, dan kedua hash artifact lulus.
+- Source S310 dan production SagaView tidak berubah; rehearsal/deploy belum
+  dijalankan.
 
 ## COYABAG product specification integrity
 
