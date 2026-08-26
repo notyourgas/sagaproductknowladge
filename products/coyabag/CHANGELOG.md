@@ -4,6 +4,21 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-26 - Admin Detail Pesanan payment review context production release
+
+- Klasifikasi: `CONFIRMED` dari exact source
+  `312caf4a6051d341f8ee29c3ea90af7d4f07f89c`, immutable Hostinger release
+  `20260826-312caf4`, rollback `20260826-c43e337`, dan runtime verification.
+- Antrean dan detail memakai eligibility pembayaran yang sama. Review mengikat
+  sesi, bukti, serta status pesanan yang diamati; stale context ditolak di bawah
+  lock tanpa mengubah order atau pembayaran.
+- Operator mendapat ready/blocked state dan alasan aman. Finance tetap menerima
+  PII termasking; dialog mendukung focus trap, Escape, focus return, serta live
+  announcement. Desktop/mobile, 418 Laravel test, full RC, dependency audit,
+  workers, dan public smoke lulus.
+- Delivery `PRODUCTION_DEPLOYED`; activation/business readiness `BLOCKED`;
+  readiness 30/42, 12 blocker, dan checkout tetap disabled.
+
 ## 2026-08-26 - Admin Pesanan payment triage and privacy production release
 
 - Klasifikasi: `CONFIRMED` dari exact source

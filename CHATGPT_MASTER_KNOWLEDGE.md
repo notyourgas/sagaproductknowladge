@@ -3517,14 +3517,20 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release aktif `20260826-c43e337` menjalankan exact source
-`c43e337e18178588748c9f154e9f3c5791554ff6` dengan rollback
-`20260826-b45eb8d`. Admin Pesanan memisahkan pembayaran siap diperiksa dari
+Release aktif `20260826-312caf4` menjalankan exact source
+`312caf4a6051d341f8ee29c3ea90af7d4f07f89c` dengan rollback
+`20260826-c43e337`. Detail Pesanan dan antrean memakai satu eligibility
+pembayaran. Review mengikat sesi, bukti, dan status order yang diamati; stale
+context ditolak di bawah lock tanpa mutasi. Operator melihat ready/blocked state
+dan alasan aman, Finance tetap menerima PII termasking, serta dialog memenuhi
+keyboard/focus/live-announcement acceptance. Readiness tetap 30/42 dengan 12
+blocker dan checkout disabled; jangan sebut commerce production-activated.
+
+Release sebelumnya `20260826-c43e337` menjalankan exact source
+`c43e337e18178588748c9f154e9f3c5791554ff6`. Admin Pesanan memisahkan pembayaran siap diperiksa dari
 pembayaran tertahan karena sesi, bukti, atau prasyarat keamanan belum lengkap.
 Finance menerima nama pelanggan termasking dan tidak dapat mencari berdasarkan
-nama; owner/admin mempertahankan akses sesuai permission. Readiness tetap 30/42
-dengan 12 blocker dan checkout disabled; jangan sebut commerce
-production-activated.
+nama; owner/admin mempertahankan akses sesuai permission.
 
 Release sebelumnya `20260826-b45eb8d` menjalankan exact source
 `b45eb8dc41eb04263442afd544e329f0391de060` dan menambahkan launch readiness

@@ -15,9 +15,32 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-08-26T14:10:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | exact `origin/main` `084f4d45ed1aec57e5841512faac050f74d3f957` |
-| Informasi terakhir disinkronkan | SagaWork proposed Sprint 30–40 Kananta internal MVP bridge. |
-| Status sinkronisasi | `PROPOSAL / STAGING_DEPLOYED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READINESS_BLOCKED_EXTERNAL`. |
+| Baseline sebelum pembaruan | exact `origin/main` `f5d911c24e0f825a4f1e4d067ef738531d34bcee` |
+| Informasi terakhir disinkronkan | COYABAG Admin Detail Pesanan payment review context integrity. |
+| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED / COMMERCE_NOT_PRODUCTION_ACTIVATED / BUSINESS_READINESS_BLOCKED`. |
+
+## COYABAG Admin Detail Pesanan payment review context integrity
+
+- Exact source `312caf4a6051d341f8ee29c3ea90af7d4f07f89c` aktif pada immutable
+  release `20260826-312caf4`; rollback `20260826-c43e337`.
+- Antrean dan detail memakai eligibility yang sama. Review mengikat sesi, bukti,
+  dan status order yang diamati; stale context ditolak di bawah lock tanpa
+  mutasi. Operator mendapat ready/blocked state dan alasan aman.
+- Finance tetap menerima PII termasking. Dialog, refresh, focus trap, Escape,
+  focus return, dan live announcement tervalidasi pada desktop/mobile.
+- 418 Laravel test, full RC, dependency audit, workers, rollback, dan public
+  smoke lulus. Readiness tetap 30/42 dengan 12 blocker; checkout, activation,
+  dan business readiness tetap blocked.
+
+## File yang berubah pada sinkronisasi ini (COYABAG Admin Detail Pesanan)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaWork proposed Sprint 30–40 execution bridge
 

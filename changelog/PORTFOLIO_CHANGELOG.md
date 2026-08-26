@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-26 - COYABAG Admin Detail Pesanan payment review context integrity
+
+- Exact source `312caf4a6051d341f8ee29c3ea90af7d4f07f89c` aktif pada immutable
+  release `20260826-312caf4`; rollback `20260826-c43e337`.
+- Antrean dan detail memakai eligibility yang sama. Review mengikat konteks
+  sesi, bukti, dan status order; stale context ditolak di bawah lock tanpa
+  mutasi, sedangkan operator mendapat state dan alasan blocker yang aman.
+- Finance tetap menerima PII termasking; dialog dan refresh diperbaiki untuk
+  keyboard, fokus, dan live announcement. Acceptance desktop/mobile, 418 test
+  Laravel, full RC, dependency audit, dan public smoke lulus.
+- Status `PRODUCTION_DEPLOYED`; readiness tetap 30/42 dengan 12 blocker dan
+  commerce tetap fail-closed.
+
 ## 2026-08-26 - SagaWork proposed Kananta internal MVP sprint bridge
 
 - `PROPOSAL`: Sprint 30–40 membawa exact synthetic-validated source menuju isolated pilot environment, secure HR bootstrap, owner rehearsal, revision/regression, five-Staff internal canary, dan final Go/No-Go.

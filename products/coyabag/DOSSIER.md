@@ -78,15 +78,24 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260826-c43e337` memakai source
-`c43e337e18178588748c9f154e9f3c5791554ff6` dan rollback
-`20260826-b45eb8d`. Admin Pesanan hanya memasukkan sesi dengan bukti yang
+Release production terbaru `20260826-312caf4` memakai source
+`312caf4a6051d341f8ee29c3ea90af7d4f07f89c` dan rollback
+`20260826-c43e337`. Detail Pesanan dan antrean pembayaran memakai satu aturan
+eligibility server. Operator melihat state siap atau tertahan dengan alasan
+aman; keputusan mengikat sesi pembayaran, bukti, dan status order yang diamati,
+kemudian menolak konteks tab lama di bawah lock tanpa mutasi. Dialog mendukung
+focus trap, Escape, pengembalian fokus, dan announcement yang sesuai state;
+Finance tetap menerima PII termasking. Acceptance owner/finance desktop-mobile,
+418 Laravel test, full RC, audit dependency, backup, rollback, workers, dan
+public smoke hijau. Readiness tetap 30/42 dengan 12 blocker dan checkout
+disabled.
+
+Release sebelumnya `20260826-c43e337` memakai source
+`c43e337e18178588748c9f154e9f3c5791554ff6`. Admin Pesanan hanya memasukkan sesi dengan bukti yang
 memenuhi prasyarat ke antrean pemeriksaan dan menempatkan sesi belum lengkap
 pada antrean pembayaran tertahan dengan alasan aman. Finance menerima nama
 termasking dan pencarian nama dinonaktifkan; owner/admin mempertahankan akses
-sesuai permission. Acceptance owner/finance desktop-mobile, 413 Laravel test,
-full RC, audit dependency, backup, rollback, workers, dan public smoke hijau.
-Readiness tetap 30/42 dengan 12 blocker dan checkout disabled.
+sesuai permission.
 
 Release sebelumnya `20260826-b45eb8d` memakai source
 `b45eb8dc41eb04263442afd544e329f0391de060`. Beranda Admin memberi owner

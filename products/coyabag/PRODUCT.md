@@ -61,9 +61,15 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260826-c43e337` dengan source
-  `c43e337e18178588748c9f154e9f3c5791554ff6` melayani production;
-  rollback langsung `20260826-b45eb8d` dipertahankan.
+- Release aktif `20260826-312caf4` dengan source
+  `312caf4a6051d341f8ee29c3ea90af7d4f07f89c` melayani production;
+  rollback langsung `20260826-c43e337` dipertahankan.
+- Detail Pesanan menggunakan satu aturan eligibility yang sama dengan antrean
+  pembayaran. Operator melihat status siap atau tertahan beserta alasan aman;
+  keputusan mengikat sesi pembayaran, bukti, dan status pesanan yang diamati
+  sehingga tab lama ditolak tanpa mutasi data.
+- Dialog pemeriksaan mendukung focus trap, Escape, pengembalian fokus, dan
+  pengumuman refresh yang sesuai state. PII Finance tetap termasking.
 - Admin Pesanan memisahkan pembayaran siap diperiksa dari pembayaran tertahan
   karena sesi, bukti, atau prasyarat keamanan belum lengkap. Blocker tetap
   terlihat dengan alasan aman dan tujuan detail yang dapat ditindaklanjuti.
@@ -72,9 +78,11 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 - Beranda Admin kini menampilkan launch readiness authoritative khusus owner,
   memasking nama pelanggan untuk role tanpa permission manajemen pesanan, dan
   memisahkan heartbeat operasional dari riwayat aktivitas integrasi.
-- Acceptance owner/finance desktop-mobile, 413 Laravel test, full RC, audit
+- Acceptance owner/finance desktop-mobile, 418 Laravel test, full RC, audit
   dependency, immutable deploy, dan public smoke lulus. Readiness tetap 30/42
   dengan 12 blocker; checkout dan provider tetap fail-closed.
+- Release sebelumnya `20260826-c43e337` menjalankan Admin Pesanan payment triage
+  and privacy integrity.
 - Release sebelumnya `20260826-b45eb8d` menjalankan Admin Beranda role and
   readiness integrity.
 - Release sebelumnya `20260826-ed5814f` menjalankan SEO truthfulness integrity.

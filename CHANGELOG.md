@@ -1,5 +1,21 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-26 - COYABAG Admin Detail Pesanan payment review context sync
+
+- Ringkasan: menyinkronkan eligibility antrean/detail, stale-context guard,
+  state operator, masking Finance, dan aksesibilitas dialog pemeriksaan.
+- Alasan: operator tidak boleh memproses sesi atau bukti pengganti dari tab lama,
+  dan hambatan harus dapat dipahami tanpa membuka PII atau detail sensitif.
+- Produk/area: COYABAG Admin Detail Pesanan, payment review, concurrency,
+  RBAC/privacy, responsive UI/UX, accessibility, QA, security, dan release.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED`; source exact
+  `312caf4a6051d341f8ee29c3ea90af7d4f07f89c`, release `20260826-312caf4`.
+- Production berubah: ya, Admin runtime. Commerce tidak production-activated;
+  readiness 30/42, 12 blocker, dan checkout disabled.
+- Dokumen terdampak: Product, Dossier, changelog COYABAG, portfolio, master
+  knowledge, root changelog, dan sync status.
+- Next action: Cycle 2 Dashboard Admin Produk Integrity.
+
 ## 2026-08-26 - SagaWork proposed Sprint 30–40 execution strategy sync
 
 - Ringkasan: menyinkronkan proposal jalan dari synthetic staging menuju sesi UAT Andreas, revision batch, dan five-Staff internal canary.
