@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-26 - Snap and Fit connected synthetic prototype UAT
+
+- Exact source/docs `a4f634763d9544cbc320f8d7fce90319f7e44c9e`; active VPS runtime
+  `fa6465fc9edab6619ea13daa8177d0067092ade4`; protected Vercel deployment
+  `dpl_FRkZKA2o56WmvjVZsdBcVKzPmFQK`.
+- DNS/TLS API, protected BFF, all-role synthetic UAT, encrypted 53-table/19-migration restore,
+  rollback-forward rehearsal, live limiter/ACL isolation, renewal, dan external port scan lulus.
+- Delivery formal tetap `LOCAL_VALIDATED`; milestone internal `PROTOTYPE_UAT_READY` tidak berarti
+  `STAGING_READY`, production activation, real-money/biometric approval, atau business readiness.
+- Google OAuth nyata, S3/CloudFront/Rekognition runtime, Tokopay, legal/benchmark, real-device/data,
+  durable off-host custody, dan public frontend activation tetap gate.
+
 ## 2026-08-26 - SagaBook Closing Operasional Studio V1
 
 - Exact source `89e440138536eba7ad0e1042ffb4a031e07fd3e4` pada PR #14

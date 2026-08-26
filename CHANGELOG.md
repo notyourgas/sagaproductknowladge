@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-26 - Snap and Fit connected prototype UAT sync
+
+- Ringkasan: menyinkronkan HTTPS API, protected Vercel BFF, synthetic all-role UAT, encrypted
+  backup/restore, live limiter/ACL, certificate renewal, port scan, dan rollback round trip.
+- Produk/area: Snap and Fit frontend, API, worker, MySQL, Redis, Nginx/TLS, recovery, QA, dan release.
+- Klasifikasi: `CONFIRMED / LOCAL_VALIDATED / PROTOTYPE_UAT_READY`; bukan `STAGING_READY`,
+  production activation, atau business readiness.
+- Provenance: source/docs `a4f634763d9544cbc320f8d7fce90319f7e44c9e`; runtime VPS
+  `fa6465fc9edab6619ea13daa8177d0067092ade4`; Vercel
+  `dpl_FRkZKA2o56WmvjVZsdBcVKzPmFQK`.
+- Production berubah: tidak. Real Google OAuth, AWS media/Rekognition, Tokopay, participant data,
+  biometric production, dan public frontend activation tetap gate.
+
 ## 2026-08-26 - SagaBook Closing Operasional Studio V1 sync
 
 - Ringkasan: menyinkronkan rule cetak/packaging, stok consumables, note admin,

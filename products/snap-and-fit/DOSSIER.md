@@ -9,11 +9,12 @@ credential, PII, identifier tenant/perangkat, atau detail provider sensitif.
 
 - Updated: 26 Agustus 2026
 - Klasifikasi: `CONFIRMED`
-- Delivery: `LOCAL_VALIDATED / VPS_PROTOTYPE_BACKEND_DEPLOYED`
+- Delivery: `LOCAL_VALIDATED / PROTOTYPE_UAT_READY` untuk synthetic/mock UAT
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED`
-- Provenance: exact private implementation source `2aef57a`, VPS runtime source `54ff4ea`, preview
-  source `167896b`, source/docs head `b668381`, persistent biometric-profile, Google OAuth,
+- Provenance: exact private implementation source `2aef57a`, VPS runtime source
+  `fa6465fc9edab6619ea13daa8177d0067092ade4`, source/docs head
+  `a4f634763d9544cbc320f8d7fce90319f7e44c9e`, persistent biometric-profile, Google OAuth,
   AWS plan, dan prototype-topology slice dari implementation source tersebut; provider-chaos acceptance
   feature `6d3d955`, native age recovery
   evidence `4b6c08b`, fail-closed 300-VU load
@@ -41,8 +42,7 @@ credential, PII, identifier tenant/perangkat, atau detail provider sensitif.
   operations feature `b09f279`,
   deletion/recovery hardening `dbbb814`, candidate/cart authority `09a55bd`,
   durable notification worker `d964fea`, lifecycle/retention worker `4d602d9`,
-  protected Vercel preview `dpl_FTPTFFb7Q4WWh6jcp7Bt42151d87` dari exact
-  source `167896b`.
+  protected Vercel preview `dpl_FRkZKA2o56WmvjVZsdBcVKzPmFQK`.
 - Hosted CI evidence: exact source/docs run `32925596466`
   membuat security job `98047751773` dan validate job `98047751894`. Keduanya
   berhenti sebelum assignment runner, dengan runner ID `0`, tanpa nama, steps kosong, dan
@@ -62,10 +62,12 @@ lokal; real provider, Redis/MySQL/S3 soak, dan alert firing tetap gate staging.
 
 Reviewed AWS infrastructure telah di-apply 40 add/0 change/0 destroy dan refresh sesudahnya nol
 drift tanpa runtime access key. VPS prototype memakai identity/database/Redis prefix/service/release
-terisolasi; API dan worker aktif loopback, 19 migration serta seed sintetis lulus, dan HTTP edge
-fail-closed sampai DNS/TLS tersedia. Status belum `STAGING_READY`: protected Vercel BFF, connected
-UAT, backup/restore, rollback, Google OAuth, Tokopay test, serta AWS runtime credential/signing gate
-belum selesai.
+terisolasi; API dan worker aktif loopback di belakang HTTPS, 19 migration serta seed sintetis lulus,
+dan protected Vercel BFF terhubung. Synthetic connected UAT, encrypted restore 53 tabel, rollback
+round trip, TLS renewal, external port scan, serta live Redis limiter lulus. Status formal tetap
+`LOCAL_VALIDATED`, bukan `STAGING_READY`: Google OAuth nyata, S3/CloudFront/Rekognition runtime,
+Tokopay test/live, legal/benchmark biometric, real-device UAT, dan public frontend activation belum
+selesai.
 
 Worker sempat mendeteksi transient Prisma `P2039`/MariaDB `45028` saat satu synthetic outbox item
 dipublikasikan. Clean restart menyelesaikannya tepat satu kali; API/worker kini aktif dengan nol

@@ -12,12 +12,22 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-26T23:10:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-26T23:55:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | exact `e26427b9156fc289ff21bc78fd4e6e29df437ec8` |
-| Informasi terakhir disinkronkan | SagaBook Closing Operasional Studio V1 exact source `89e440138536eba7ad0e1042ffb4a031e07fd3e4`, PR #14. |
-| Status sinkronisasi | `CONFIRMED / PUSHED / PR_OPEN / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production dan business readiness tidak berubah. |
+| Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
+| Informasi terakhir disinkronkan | Snap and Fit connected synthetic prototype UAT exact source/docs `a4f634763d9544cbc320f8d7fce90319f7e44c9e`. |
+| Status sinkronisasi | `CONFIRMED / LOCAL_VALIDATED / PROTOTYPE_UAT_READY`; production dan business readiness tidak berubah. |
+
+## Snap and Fit connected synthetic prototype UAT
+
+- Active VPS runtime `fa6465fc9edab6619ea13daa8177d0067092ade4` dan protected Vercel deployment
+  `dpl_FRkZKA2o56WmvjVZsdBcVKzPmFQK` terhubung melalui API HTTPS.
+- Synthetic all-role UAT, encrypted restore 53 tabel/19 migration, rollback-forward rehearsal,
+  Redis limiter/ACL isolation, TLS renewal, external port scan, dan full validation lulus.
+- Status formal tetap `LOCAL_VALIDATED`; `PROTOTYPE_UAT_READY` adalah milestone internal untuk mock
+  provider. Google OAuth nyata, AWS media/Rekognition runtime, Tokopay, real device/data, dan public
+  activation belum dilakukan.
 
 ## SagaBook Closing Operasional Studio V1
 

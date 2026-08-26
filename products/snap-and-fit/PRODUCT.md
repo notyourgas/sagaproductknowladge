@@ -1,7 +1,7 @@
 # Snap and Fit Product Knowledge
 
 Updated: 26 Agustus 2026
-Evidence status: `CONFIRMED / LOCAL_VALIDATED / VPS_PROTOTYPE_BACKEND_DEPLOYED`
+Evidence status: `CONFIRMED / LOCAL_VALIDATED / PROTOTYPE_UAT_READY`
 
 ## Tujuan dokumen
 
@@ -49,12 +49,13 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 ## Status saat ini
 
 - Delivery: `LOCAL_VALIDATED`.
-- Runtime: isolated loopback-only VPS prototype backend deployed; protected web preview remains
-  disconnected until manual API DNS and TLS pass.
+- Runtime: bounded project-isolated VPS API/worker and protected Vercel preview are connected over
+  HTTPS for synthetic/mock UAT.
 - Activation: `NOT_PRODUCTION_ACTIVATED`.
 - Business readiness: `BLOCKED`.
-- Exact private implementation source `2aef57a`, VPS runtime source `54ff4ea`, preview source
-  `167896b`, dan source/docs head `b668381`; persistent biometric-profile, Google OAuth, AWS plan,
+- Exact private implementation source `2aef57a`, VPS runtime source
+  `fa6465fc9edab6619ea13daa8177d0067092ade4`, dan source/docs head
+  `a4f634763d9544cbc320f8d7fce90319f7e44c9e`; persistent biometric-profile, Google OAuth, AWS plan,
   dan prototype-topology slice berasal dari implementation source tersebut;
   provider-chaos acceptance feature
   berasal dari `6d3d955`, native age recovery evidence berasal
@@ -92,10 +93,16 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   `b09f279`, deletion/recovery hardening dari `dbbb814`, serta candidate/cart
   authority dari `09a55bd`, durable notification worker dari `d964fea`, dan
   lifecycle/retention worker dari `4d602d9`.
-- Protected Vercel preview `dpl_FTPTFFb7Q4WWh6jcp7Bt42151d87` dari exact
-  source `167896b` berstatus `READY`; landing, Google sign-in, profil biometrik,
-  dan event-scoped profile search merespons HTTP 200. Backend health tetap
-  fail-closed HTTP 503 sampai API VPS terisolasi terhubung.
+- Protected Vercel preview `dpl_FRkZKA2o56WmvjVZsdBcVKzPmFQK` berstatus
+  `READY`; same-origin BFF mencapai API TLS dan data BIB authoritative. Preview tetap
+  Deployment-Protected dan custom frontend domain belum diaktifkan.
+- Connected synthetic UAT meluluskan customer search/checkout/mock payment, mock biometric consent
+  dan search, organizer publish/close, photographer invitation dan replay batch 500-file, operator
+  wrong-match/deletion, refund maker-checker, serta cross-role denial. Payout maker-checker tidak
+  diklaim pada run ini karena sistem menolak periode yang overlap secara fail-closed.
+- Encrypted backup/restore meluluskan 53 tabel dan 19 migration; rollback ke runtime sebelumnya lalu
+  forward deploy kembali lulus joint service gate 30 detik. TLS renewal, external port scan, live
+  Redis rate-limit 120 allowed lalu lima HTTP 429, serta zero recent preview 5xx juga lulus.
 - Full no-service validation, 69 API test dengan sembilan integrasi eksternal
   terkontrol skip dan 24 worker test dengan empat integrasi service-dependent
   skip lulus. Disposable loopback MySQL 8.4.9 dari database kosong mengaplikasikan
@@ -199,14 +206,16 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 
 ## Batas klaim
 
-- Belum `STAGING_READY`; API/worker/MySQL/Redis prototype sudah deployed secara project-isolated dan
-  loopback-only, tetapi belum terhubung ke protected web preview melalui DNS/TLS/BFF.
+- Milestone internal `PROTOTYPE_UAT_READY` hanya untuk synthetic/mock UAT. Status formal tetap
+  `LOCAL_VALIDATED`, belum `STAGING_READY`, karena dedicated topology dan real-provider gate belum
+  selesai.
 - Tokopay real-money, AWS biometric production, foto peserta nyata, production
   DNS, dan public activation belum diaktifkan.
 - OpenAI tidak menerima foto, selfie, face vector, signed URL, raw BIB, detail
   pembayaran, atau PII peserta.
-- Shared Hostinger VPS sudah dipakai hanya untuk topology prototype project-isolated yang disetujui;
-  service/data produk lain tidak diubah dan public API tetap fail-closed sampai DNS/TLS lulus.
+- Shared Hostinger VPS dipakai hanya untuk topology prototype project-isolated yang disetujui;
+  service/data produk lain tidak diubah. API HTTPS aktif, tetapi frontend publik dan real-data flow
+  tetap tidak diaktifkan.
 - Rate limit memakai memory hanya untuk local/test. Staging/production menolak
   startup tanpa Redis bersama, memakai key client yang di-hash, serta fail-closed
   saat control plane limiter tidak tersedia. Bukti dua instance nyata masih gate staging.

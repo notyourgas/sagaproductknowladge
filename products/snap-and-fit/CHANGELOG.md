@@ -10,6 +10,22 @@ production, activation, dan business readiness.
 Mock, fixture, preview frontend, dan test lokal bukan bukti provider atau
 production activation.
 
+## 2026-08-26 - Connected synthetic prototype UAT and recovery
+
+- Exact source/docs `a4f634763d9544cbc320f8d7fce90319f7e44c9e`; active VPS runtime
+  `fa6465fc9edab6619ea13daa8177d0067092ade4`; protected Vercel deployment
+  `dpl_FRkZKA2o56WmvjVZsdBcVKzPmFQK`.
+- API DNS/TLS, protected BFF, connected synthetic all-role UAT, Redis limiter/ACL isolation,
+  encrypted backup/restore 53 tabel dan 19 migration, certificate renewal dry-run, external port
+  scan, serta rollback-forward round trip lulus.
+- Redis rate-limit namespace, restart service ketika deployment, dan synthetic reseed recovery
+  diperbaiki. Full validation lulus setelah perubahan.
+- Status formal tetap `LOCAL_VALIDATED`; milestone internal `PROTOTYPE_UAT_READY` hanya untuk
+  synthetic/mock data. Google OAuth nyata, AWS media/Rekognition, Tokopay, legal/benchmark, real
+  device/data, custom frontend domain, dan public activation tetap gate.
+- Payout maker-checker tidak diklaim pada run ini karena overlapping synthetic period ditolak
+  fail-closed; refund maker-checker connected lulus.
+
 ## 2026-08-26 - AWS apply and isolated VPS prototype backend
 
 - Reviewed AWS plan diterapkan tepat 40 add/0 change/0 destroy; refresh nol drift, public-access
