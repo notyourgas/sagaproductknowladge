@@ -35,6 +35,12 @@
   `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production/business activation
   tidak berubah.
 
+## 2026-08-26 - SagaWork Workspace core local implementation
+
+- Exact source `e2a0391` mengimplementasikan Workspace compatibility, effective-dated Staff assignment, scoped HR context, Staff assignment history, GPS setup preview, versioned Workspace shift template, dan target-Workspace schedule eligibility.
+- Local gate PASS: 67 tabel/26 migration, OpenAPI 76 path/95 operasi/52 request component, 41 file/150 test, dan 49-page build.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; public synthetic runtime tetap `e59efcd`, real pilot NO-GO, performance OFF, dan external/privacy/device/admission gates belum berubah.
+
 ## 2026-08-26 - SagaWork Workspace/Cabang finalization program
 
 - Andreas mengunci Workspace sebagai cabang operasional di dalam Company: HR dapat menangani satu/beberapa/semua Workspace, Staff mempunyai assignment primer/sekunder/temporer, dan tiap Workspace dapat memakai shift/policy/geofence berbeda.

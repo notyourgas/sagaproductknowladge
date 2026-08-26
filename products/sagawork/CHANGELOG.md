@@ -8,6 +8,13 @@ Mencatat perubahan material SagaWork dengan status delivery dan activation yang 
 
 Synthetic fixture, preview, dan staging bukan bukti real pilot atau production activation.
 
+## 2026-08-26 - Workspace core, Staff assignment, dan shift-template implementation
+
+- `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: exact source `e2a0391` mengimplementasikan Workspace sebagai compatibility layer dari `locations`, effective-dated primary/secondary/temporary Staff assignment, Organization/Workspace HR scope, safe selector/filter, assignment history, GPS setup preview, dan Workspace-aware dashboard.
+- HR dapat membuat draft Staff dengan Workspace primer/sekunder, menambah atau mengakhiri assignment tanpa menghapus histori, serta membuat/publish/retire template shift versioned dengan overnight, paid/unpaid break, role label, effective dates, dan dependency guard. Schedule menolak Staff yang tidak eligible pada Workspace/tanggal target.
+- Additive migrations `0024`/`0025`, OpenAPI 76 path/95 operasi/52 request component, 41 file/150 test, 49-page build, schema/contract/lint PASS.
+- Public synthetic runtime tetap `e59efcd`; migration/deploy/owner UAT/real pilot belum dilakukan. F19 rest-day exchange khusus, roster automation, general notification outbox, XLSX, privacy/legal/provider/device/admission evidence, dan F45-F60 tetap residual/gated. Performance pilot tetap OFF.
+
 ## 2026-08-26 - Workspace/Cabang model and F01-F60 finalization program
 
 - `CONFIRMED / PLANNED_NOT_IMPLEMENTED`: Workspace adalah cabang/unit operasional dalam Company dan memakai existing `location` domain untuk MVP. HR dapat diberi satu, beberapa, atau seluruh Workspace; Staff memiliki primary dan effective-dated secondary/temporary assignment yang berbeda dari permission scope.

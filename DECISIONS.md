@@ -30,9 +30,9 @@ keputusan pengganti.
 | Keputusan | Andreas menetapkan `Workspace` sebagai istilah user-facing untuk cabang/unit operasional di dalam satu Company. Satu HR dapat menangani satu, beberapa, atau seluruh Workspace sesuai scope. Staff mempunyai Workspace primer serta assignment sekunder/temporer; setiap Workspace dapat mempunyai Staff, shift, policy, timezone, dan GPS/geofence berbeda. Untuk MVP, Workspace menggunakan entity `location` yang sudah ada agar tidak membuat domain duplikat. |
 | Alasan | Operasi multi-cabang memerlukan batas staf, jadwal, aturan jam kerja, dan titik attendance yang jelas, sementara schema SagaWork sudah menjadikan location sebagai tenant-safe operational scope. |
 | Alternatif yang dipertimbangkan | Membuat entity Workspace baru yang menduplikasi location ditolak untuk MVP; menyamakan assignment tempat kerja dengan permission scope juga ditolak. Multi-zone dan multi-Company HR ditunda sampai ada evidence kebutuhan setelah pilot. |
-| Dampak | Program finalisasi memakai 15 batch/Sprint F01-F60. F01-F52 menutup Workspace, Staff, schedule, request, attendance, reporting, privacy/security, owner rehearsal, dan five-Staff canary; F53-F60 hanya closed-beta/post-pilot. Source planning exact `79179d9`; belum ada migration, runtime, production, atau business activation. |
+| Dampak | Program finalisasi memakai 15 batch/Sprint F01-F60. Exact source `e2a0391` sudah mengimplementasikan Workspace core, Staff assignment, scoped HR context, GPS setup preview, shift template dan schedule eligibility secara lokal dengan migrations `0024`/`0025`; deployment/runtime/real-pilot activation belum berubah. F01-F52 tetap critical path dan F53-F60 closed-beta/post-pilot. |
 | Pemberi keputusan | Andreas / founder |
-| Status | `CONFIRMED / PLANNED_NOT_IMPLEMENTED / REAL_PILOT_NO-GO` |
+| Status | `CONFIRMED / PARTIALLY_IMPLEMENTED_LOCAL / IMPLEMENTED_NOT_DEPLOYED / REAL_PILOT_NO-GO` |
 | Dokumen terkait | [SagaWork Product](products/sagawork/PRODUCT.md), [SagaWork Dossier](products/sagawork/DOSSIER.md), [SagaWork Changelog](products/sagawork/CHANGELOG.md), [Gaps](GAPS.md) |
 
 ## DEC-106 - Deploy seluruh kandidat SagaView yang aman setelah blocker ditutup

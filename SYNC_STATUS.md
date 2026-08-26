@@ -12,12 +12,34 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-26T17:53:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-26T18:11:41+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | exact `d5cb1a66c0212f2fad7bb4d58c6e55de80cef773` |
-| Informasi terakhir disinkronkan | Snap and Fit protected biometric-profile web preview. |
-| Status sinkronisasi | `CONFIRMED / LOCAL_VALIDATED / PROTECTED_PREVIEW_DEPLOYED`; production dan business readiness tidak berubah. |
+| Baseline sebelum pembaruan | exact `df805ed5e7e19df0250e6ffa43d4424fea02f7ac` |
+| Informasi terakhir disinkronkan | SagaWork Workspace core exact source `e2a0391`. |
+| Status sinkronisasi | `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; public synthetic runtime dan real-pilot readiness tidak berubah. |
+
+## SagaWork Workspace core local implementation
+
+- Exact source `e2a0391` mengimplementasikan Workspace compatibility,
+  effective-dated Staff assignment, scoped HR context, GPS setup preview,
+  versioned shift template, dan target-Workspace schedule eligibility.
+- Local gate PASS: 67 tabel/26 migration, OpenAPI 76 path/95 operasi/52 request
+  component, 41 file/150 test, dan 49-page build.
+- Public synthetic runtime tetap `e59efcd`; migrations `0024`/`0025`, deploy,
+  owner UAT, privacy/legal/provider/device/admission dan real canary belum
+  dijalankan. Performance pilot tetap OFF.
+
+## File yang berubah pada sinkronisasi ini (SagaWork Workspace core)
+
+- `products/sagawork/PRODUCT.md`
+- `products/sagawork/CHANGELOG.md`
+- `DECISIONS.md`
+- `GAPS.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG Admin Media publication integrity
 

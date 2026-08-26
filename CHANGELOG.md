@@ -1,5 +1,14 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-26 - SagaWork Workspace core implementation sync
+
+- Ringkasan: menyinkronkan Workspace compatibility, effective-dated Staff assignment, scoped HR context, GPS setup preview, versioned shift template, dan Workspace eligibility pada schedule.
+- Alasan: HR multi-cabang memerlukan boundary operasional yang dapat dipakai, bukan hanya roadmap.
+- Produk/area: SagaWork Company/Workspace, People, scheduling, GPS setup, authorization, MySQL, OpenAPI, QA, dan release readiness.
+- Klasifikasi: `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; exact source `e2a0391`.
+- Production berubah: tidak. Public synthetic runtime tetap `e59efcd`; migrations `0024`/`0025`, owner UAT, dedicated pilot dan real canary belum dijalankan.
+- Dokumen terdampak: Decisions, Product, SagaWork changelog, portfolio changelog, master knowledge, gaps, root changelog, dan sync status.
+
 ## 2026-08-26 - Snap and Fit protected biometric preview sync
 
 - Ringkasan: menyinkronkan protected Vercel preview untuk Google sign-in, profil
