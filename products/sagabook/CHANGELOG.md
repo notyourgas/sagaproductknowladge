@@ -1,5 +1,22 @@
 # SagaBook Changelog
 
+## 2026-08-26 - Closing Operasional Studio V1 local validated
+
+- Exact source `89e440138536eba7ad0e1042ffb4a031e07fd3e4` pada PR SagaBook #14
+  menambahkan rule cetak/packaging per paket dan add-on, snapshot historis,
+  ledger stok append-only, physical count/variance, serta empat note admin yang
+  mengurangi stok kertas. Satu pack dikunci 20 lembar.
+- Admin cabang/staff berizin dapat membuat draft, submit snapshot, menyalin
+  teks atau mengunduh PNG privat, dan mencatat share manual. Owner/manager
+  mengatur stok/target, review, serta reopen revision. Satu target grup per
+  cabang dan direct delivery optional bersifat default-off.
+- Full PHP 1.162/1.162 (13.159 assertion), focused 12/12 (56), Playwright
+  lifecycle, contract, critical typecheck, build, design/dependency audit,
+  migration rehearsal, dan security/code review tanpa High/Medium lulus.
+- Status `CONFIRMED / PUSHED / PR_OPEN / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Production, flag tenant, target nyata, pesan
+  WhatsApp, authenticated UAT, dan business readiness tidak berubah.
+
 ## 2026-08-26 - Busy state dan double-submit guard aksi jadwal staff
 
 - Exact source kumulatif `4e2267c98f68b5be6e4a7f794b2c7431581fe98b` mengunci primary action

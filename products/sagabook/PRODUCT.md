@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 26 Agustus 2026 19:12 WIB
-Evidence status: busy state aksi jadwal staff local-validated dan belum dideploy
+Updated: 26 Agustus 2026 23:10 WIB
+Evidence status: closing operasional studio local-validated dan belum dideploy
 
 ## Tujuan dokumen
 
@@ -15,6 +15,20 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- Closing Operasional Studio V1 pada exact source
+  `89e440138536eba7ad0e1042ffb4a031e07fd3e4` berstatus `CONFIRMED / PUSHED /
+  PR_OPEN / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Admin dapat memakai
+  hitungan sesi completed dan add-on terkonfirmasi, jumlah cetak serta
+  packaging per paket, stok fisik, empat note pengurang kertas, preview teks,
+  PNG privat, review/revision, dan audit share untuk satu grup per cabang.
+  Satu pack dikunci 20 lembar; ledger append-only dan snapshot rule menjaga
+  replay, koreksi, serta histori. Full PHP 1.162/1.162 (13.159 assertion),
+  focused 12/12 (56), Playwright lifecycle, build/typecheck, dependency audit,
+  migration rehearsal, dan security review lulus. Semua flag default-off;
+  production tetap pada release aktif di bawah. Mapping cabang, opening stock,
+  target grup/provider, authenticated UAT, deploy, activation, dan pilot masih
+  gate terpisah; `BUSINESS_READY=false`.
 
 - Kandidat kumulatif busy state aksi `Jadwal Sesi Hari Ini` pada exact source
   `4e2267c98f68b5be6e4a7f794b2c7431581fe98b` berstatus `CONFIRMED / PUSHED /

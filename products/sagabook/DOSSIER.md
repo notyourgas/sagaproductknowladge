@@ -7,6 +7,19 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Closing Operasional Studio V1 exact source
+  `89e440138536eba7ad0e1042ffb4a031e07fd3e4`: `CONFIRMED / PUSHED / PR_OPEN /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Fitur memperluas closing
+  existing dengan rule jumlah cetak dan packaging per paket/add-on, snapshot
+  historis pada booking, stok kertas/packaging append-only, count fisik dan
+  variance, empat note pengurang kertas, artifact teks/PNG privat, serta
+  review/revision dan delivery audit. Target dibatasi satu grup per cabang dan
+  direct delivery tetap optional/default-off; timeout ambigu masuk
+  `needs_review`, bukan blind retry. Full PHP 1.162/1.162, focused 12/12,
+  browser lifecycle, typecheck/build, migration, dependency, dan security gate
+  lulus. Tidak ada deployment, flag tenant, group ID nyata, pesan WhatsApp
+  nyata, atau human UAT; `BUSINESS_READY=false`.
+
 - Perluasan role override Manual Booking S291 exact source
   `194864cc821fd93d3b97c86f5919b54ba4809dad`: `CONFIRMED / PUSHED /
   UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /

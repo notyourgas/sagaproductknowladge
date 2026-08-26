@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-26 - SagaBook Closing Operasional Studio V1
+
+- Exact source `89e440138536eba7ad0e1042ffb4a031e07fd3e4` pada PR #14
+  menggabungkan hitungan sesi/add-on, konsumsi kertas/packaging, physical stock,
+  note admin, teks, dan PNG privat ke satu snapshot closing cabang.
+- Ledger append-only, versioned rule snapshot, tenant/branch permission,
+  idempotency, PII guard, serta status delivery jujur telah tervalidasi lokal.
+- Status `PUSHED / PR_OPEN / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+  semua flag default-off dan production/business readiness tidak berubah.
+
 ## 2026-08-26 - COYABAG Storefront Catalog availability integrity
 
 - Exact source `77ed9295b654848fb855c599721855b992487b35` aktif pada immutable

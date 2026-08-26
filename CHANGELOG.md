@@ -1,5 +1,22 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-26 - SagaBook Closing Operasional Studio V1 sync
+
+- Ringkasan: menyinkronkan rule cetak/packaging, stok consumables, note admin,
+  artifact teks/PNG, review/revision, dan delivery audit closing cabang.
+- Alasan: laporan grup setelah closing harus memakai angka authoritative yang
+  sama dengan stok dan tidak bergantung pada hitung/copy manual.
+- Produk/area: SagaBook closing, katalog paket/add-on, inventory ledger,
+  artifact privat, permission, WhatsApp group adapter, QA, dan security.
+- Klasifikasi: `CONFIRMED / PUSHED / PR_OPEN / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; exact source
+  `89e440138536eba7ad0e1042ffb4a031e07fd3e4`, PR #14.
+- Production berubah: tidak. Semua flag default-off; mapping cabang, opening
+  stock, target/provider, authenticated UAT, deployment, activation, dan pilot
+  masih gate.
+- Dokumen terdampak: Product, Dossier, changelog SagaBook, portfolio, master,
+  Decisions, root changelog, dan sync status.
+
 ## 2026-08-26 - COYABAG Storefront Catalog availability integrity sync
 
 - Ringkasan: menyinkronkan Catalog availability state, stock-filter recovery,
