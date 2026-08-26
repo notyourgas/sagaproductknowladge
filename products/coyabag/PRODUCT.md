@@ -61,18 +61,20 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260826-7547c4e` dengan source
-  `7547c4e9a441258508ff53ecbe5788b2e2012095` melayani production;
-  rollback langsung `20260826-0c920d7` dipertahankan.
-- Kontras harga promo, judul Gallery, dan metadata Lookbook/Testimonials kini
-  memakai neutral token yang memenuhi WCAG AA. Acceptance `axe-core` lulus 32
-  kombinasi route-viewport dan matriks responsive public live-API lulus 110
-  kombinasi.
-- Gate login Admin memvalidasi payload Inertia terstruktur, sehingga tetap
-  memeriksa komponen exact tanpa false failure akibat JSON escaping.
-- Storefront 173/173 dan Laravel 410 test dengan 409 pass serta satu
-  intentional skip lulus. Dependency audit tidak menemukan advisory.
+- Release aktif `20260826-ed81263` dengan source
+  `ed81263eeb8202946a3791cdfebe7cb86867d6b1` melayani production;
+  rollback langsung `20260826-7547c4e` dipertahankan.
+- Product rail hanya menampilkan kontrol ketika benar-benar overflow, menutup
+  aksi di batas, bergerak satu kartu, dan mengumumkan produk aktif. Listener
+  tetap benar setelah skeleton diganti lazy ProductGrid.
+- Reduced-motion memakai perpindahan instan. Aksi review pada Product Detail
+  memindahkan fokus keyboard ke heading review, bukan hanya viewport.
+- Motion acceptance lulus 24 state desktop/mobile dan matriks responsive
+  public live-API lulus 110 kombinasi. Storefront 177/177 dan Laravel 410 test
+  dengan 409 pass serta satu intentional skip lulus; dependency audit bersih.
 - Readiness tetap 30/42 dengan 12 blocker; checkout tetap disabled.
+- Release sebelumnya `20260826-7547c4e` menjalankan accessibility integrity,
+  termasuk neutral contrast WCAG AA dan Admin Inertia login smoke terstruktur.
 - Release sebelumnya `20260826-f98e51f` menjalankan route recovery integrity.
 - Area route kini memiliki recovery state eager untuk kegagalan lazy asset atau
   render. Header, navigasi, Cart, dan Footer tetap tersedia; pengguna dapat

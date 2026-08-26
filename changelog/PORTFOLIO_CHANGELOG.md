@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-26 - COYABAG motion and interaction integrity
+
+- Exact source `ed81263eeb8202946a3791cdfebe7cb86867d6b1` aktif pada immutable
+  Hostinger release `20260826-ed81263` dengan rollback `20260826-7547c4e`.
+- Product rail kini hanya aktif saat overflow, menutup boundary action,
+  bergerak satu kartu, mengumumkan produk aktif, dan tetap benar setelah lazy
+  render. Product Detail review memindahkan fokus secara reduced-motion-safe.
+- Motion public live-API lulus 24 state desktop/mobile dan responsive lulus 110
+  kombinasi; full regression, dependency audit, workers, dan smoke hijau.
+- Delivery `PRODUCTION_DEPLOYED`; activation/business readiness `BLOCKED`;
+  readiness 30/42 dan commerce tetap fail-closed.
+
 ## 2026-08-26 - Snap and Fit provider-chaos acceptance
 
 - Exact private source/docs `d9285fc`; fail-closed chaos feature `6d3d955`.

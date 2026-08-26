@@ -12,12 +12,34 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-26T10:20:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-26T10:34:30+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | exact `origin/main` `12e5606` sebelum sinkronisasi Snap and Fit provider-chaos acceptance |
-| Informasi terakhir disinkronkan | Snap and Fit provider-chaos acceptance dan protected preview refresh. |
-| Status sinkronisasi | `LOCAL_VALIDATED`; production tidak berubah; staging dan business readiness `BLOCKED`. |
+| Baseline sebelum pembaruan | exact `origin/main` `76f81ff` sebelum sinkronisasi COYABAG motion and interaction integrity |
+| Informasi terakhir disinkronkan | COYABAG motion and interaction integrity immutable production release. |
+| Status sinkronisasi | `PRODUCTION_DEPLOYED`; commerce activation dan business readiness tetap `BLOCKED`. |
+
+## COYABAG motion and interaction integrity
+
+- Exact source `ed81263eeb8202946a3791cdfebe7cb86867d6b1` aktif pada immutable
+  release `20260826-ed81263`; rollback `20260826-7547c4e`.
+- Product rail hanya aktif saat overflow, menutup boundary action, bergerak
+  satu kartu, mengumumkan produk aktif, dan tetap terhubung setelah lazy render.
+  Review handoff memindahkan fokus secara reduced-motion-safe.
+- Motion public live-API lulus 24 state desktop/mobile dan responsive lulus 110
+  kombinasi. Full regression, dependency audit, workers, dan smoke hijau.
+- Readiness tetap 30/42 dengan 12 blocker; checkout, activation, dan business
+  readiness tetap blocked.
+
+## File yang berubah pada sinkronisasi ini (COYABAG motion)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## Snap and Fit provider-chaos acceptance
 

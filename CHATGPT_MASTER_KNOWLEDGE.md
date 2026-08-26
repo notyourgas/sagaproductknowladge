@@ -3504,14 +3504,20 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release aktif `20260826-7547c4e` menjalankan exact source
-`7547c4e9a441258508ff53ecbe5788b2e2012095` dengan rollback
-`20260826-0c920d7`. Kontras harga promo, judul Gallery, serta metadata
-Lookbook/Testimonials memenuhi WCAG AA. Acceptance `axe-core` public live-API
-lulus 32 route-viewport dan matriks responsive lulus 110 kombinasi. Storefront
-173/173 serta Laravel 409 pass/1 skip dari 410 test lulus; dependency audit dan
+Release aktif `20260826-ed81263` menjalankan exact source
+`ed81263eeb8202946a3791cdfebe7cb86867d6b1` dengan rollback
+`20260826-7547c4e`. Product rail sekarang context-aware, edge-safe, bergerak
+satu kartu, memiliki live announcement, dan tetap terhubung setelah lazy grid
+menggantikan skeleton. Reduced-motion memakai perpindahan instan; tindakan
+review memindahkan fokus keyboard ke heading review. Motion acceptance public
+lulus 24 state desktop/mobile dan responsive lulus 110 kombinasi. Storefront
+177/177 serta Laravel 409 pass/1 skip dari 410 test lulus; dependency audit dan
 public/API/Admin smoke hijau. Readiness tetap 30/42 dengan 12 blocker dan
 checkout disabled.
+
+Release sebelumnya `20260826-7547c4e` menjalankan exact source
+`7547c4e9a441258508ff53ecbe5788b2e2012095` dengan rollback
+`20260826-0c920d7` dan menutup storefront accessibility integrity.
 
 Release sebelumnya `20260826-f98e51f` menjalankan exact source
 `f98e51f0f214165f8e3318cb7552fc393334bc43` dengan rollback

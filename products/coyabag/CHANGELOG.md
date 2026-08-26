@@ -4,6 +4,20 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-26 - Motion and interaction integrity production release
+
+- Klasifikasi: `CONFIRMED` dari exact source
+  `ed81263eeb8202946a3791cdfebe7cb86867d6b1`, immutable Hostinger release
+  `20260826-ed81263`, rollback `20260826-7547c4e`, dan runtime verification.
+- Product rail kini context-aware, edge-safe, satu-kartu-per-aksi, memiliki
+  live announcement, serta tetap terhubung setelah lazy ProductGrid mengganti
+  skeleton. Review handoff memindahkan fokus ke heading tujuan.
+- Reduced-motion memakai perpindahan instan. Motion 24 state desktop/mobile,
+  public responsive 110 kombinasi, storefront 177/177, Laravel 409 pass/1 skip
+  dari 410 test, build, dependency audit, workers, dan public smoke lulus.
+- Delivery `PRODUCTION_DEPLOYED`; activation/business readiness `BLOCKED`;
+  readiness 30/42, 12 blocker, dan checkout tetap disabled.
+
 ## 2026-08-26 - Storefront accessibility integrity production release
 
 - Klasifikasi: `CONFIRMED` dari exact source

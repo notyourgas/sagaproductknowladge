@@ -1,5 +1,22 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-26 - COYABAG motion and interaction integrity sync
+
+- Ringkasan: sinkronisasi product rail context-aware, reduced-motion-safe
+  interaction, review focus handoff, dan live-catalog acceptance.
+- Alasan: kontrol storefront harus selalu menghasilkan outcome nyata dan tetap
+  dapat dipahami pengguna touch, keyboard, serta screen reader.
+- Produk/area: COYABAG storefront UI/UX, accessibility, performance,
+  reliability, QA, DevOps, dan release provenance.
+- Klasifikasi: `CONFIRMED`; source exact
+  `ed81263eeb8202946a3791cdfebe7cb86867d6b1`, release `20260826-ed81263`.
+- Production berubah: ya, surface storefront. Delivery
+  `PRODUCTION_DEPLOYED`; activation/business readiness `BLOCKED`; commerce
+  tetap fail-closed pada 30/42 readiness dan 12 blocker.
+- Dokumen terdampak: Product, Dossier, changelog COYABAG, portfolio, master
+  knowledge, root changelog, dan sync status.
+- Next action: Cycle 2 Storefront Performance Integrity.
+
 ## 2026-08-26 - Snap and Fit provider-chaos acceptance sync
 
 - Ringkasan: sinkronisasi 32-test/8-file fail-closed provider-chaos gate, full
