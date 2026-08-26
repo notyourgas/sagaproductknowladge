@@ -78,9 +78,19 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260826-a575c3b` memakai exact source
-`a575c3bfbfd58124cbe361a279ebc4e02bc36d61` dan rollback
-`20260826-b6f1c55`. Admin Payments memasking identitas customer dan memblokir
+Release production terbaru `20260826-0fd20c3` memakai exact source
+`0fd20c3f0e5b50780735963f680d87f2fca9b53e` dan rollback
+`20260826-a575c3b`. Homepage sekarang membedakan `Katalog Preview`, `Menunggu
+Restock`, dan state penjualan siap dari kontrak checkout serta stok varian live.
+Fallback hero tidak lagi memakai klaim `Shop New Drop` saat commerce terblokir;
+customer dapat membuka katalog atau wishlist tanpa mengekspos blocker internal.
+Managed campaign CMS tetap dipertahankan. Entry JS turun dari 201.4 KiB ke
+194.8 KiB. Desktop/mobile public acceptance, 188 storefront test, 441 Laravel
+test, full release gate, backup, immutable deploy, workers, dan log smoke lulus.
+Readiness tetap 30/42 dengan 12 blocker; checkout/provider fail-closed.
+
+Release sebelumnya `20260826-a575c3b` memakai exact source
+`a575c3bfbfd58124cbe361a279ebc4e02bc36d61`. Admin Payments memasking identitas customer dan memblokir
 pencarian nama bagi Finance, sementara Owner mempertahankan akses sesuai
 permission. Rekonsiliasi manual memakai kontrak readiness server dan hanya
 menyentuh provider aktif. Daily close memakai row lock dan ditolak bila review,

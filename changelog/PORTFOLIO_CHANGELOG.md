@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-26 - COYABAG Storefront Home commerce truth
+
+- Exact source `0fd20c3f0e5b50780735963f680d87f2fca9b53e` aktif pada immutable
+  release `20260826-0fd20c3`; rollback `20260826-a575c3b` tersedia.
+- Homepage memakai checkout dan stok varian live untuk menampilkan `Katalog
+  Preview`, restock, atau state ready. Hero fallback dan etalase jujur, serta
+  customer dengan item tersimpan mendapat recovery wishlist.
+- Entry JS 194.8 KiB; desktop/mobile, 188 storefront test, 441 Laravel test,
+  full release gate, public smoke, workers, dan log checks lulus.
+- Status `PRODUCTION_DEPLOYED`; commerce/business readiness tetap `BLOCKED`
+  pada 30/42 checks dengan 12 blocker.
+
 ## 2026-08-26 - COYABAG Admin Payment workflow integrity
 
 - Exact source `a575c3bfbfd58124cbe361a279ebc4e02bc36d61` aktif pada immutable

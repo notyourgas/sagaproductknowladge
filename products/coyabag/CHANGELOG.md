@@ -4,6 +4,19 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-26 - Storefront Home commerce truth production release
+
+- Klasifikasi: `CONFIRMED` dari exact source
+  `0fd20c3f0e5b50780735963f680d87f2fca9b53e`, immutable Hostinger release
+  `20260826-0fd20c3`, rollback `20260826-a575c3b`, dan public runtime smoke.
+- Homepage membedakan checkout terblokir, restock, dan ready dari kontrak
+  server serta stok varian live. Hero fallback, etalase, katalog, dan wishlist
+  recovery tidak lagi mengesankan transaksi sudah tersedia.
+- Entry JS turun dari 201.4 KiB ke 194.8 KiB; desktop/mobile, 188 storefront
+  test, 441 Laravel test, full RC, backup, workers, dan log smoke lulus.
+- Delivery `PRODUCTION_DEPLOYED`; activation/business readiness `BLOCKED`;
+  readiness 30/42, 12 blocker, checkout/provider fail-closed.
+
 ## 2026-08-26 - Admin Payment workflow integrity production release
 
 - Klasifikasi: `CONFIRMED` dari exact source

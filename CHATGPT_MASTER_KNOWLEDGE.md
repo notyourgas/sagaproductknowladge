@@ -3556,9 +3556,18 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release aktif `20260826-a575c3b` menjalankan exact source
-`a575c3bfbfd58124cbe361a279ebc4e02bc36d61` dengan rollback
-`20260826-b6f1c55`. Admin Payments memasking identitas customer dan memblokir
+Release aktif `20260826-0fd20c3` menjalankan exact source
+`0fd20c3f0e5b50780735963f680d87f2fca9b53e` dengan rollback
+`20260826-a575c3b`. Homepage membedakan checkout terblokir, restock, dan ready
+dari kontrak server serta stok varian live. Hero fallback dan etalase tidak
+lagi memakai klaim transaksi saat checkout nonaktif; customer dapat membuka
+katalog atau wishlist. Managed campaign CMS tetap berlaku. Entry JS turun ke
+194.8 KiB. Desktop/mobile, 188 storefront test, 441 Laravel test, full release
+gate, public smoke, workers, dan log checks lulus. Readiness tetap 30/42 dengan
+12 blocker; commerce tidak production-activated.
+
+Release sebelumnya `20260826-a575c3b` menjalankan exact source
+`a575c3bfbfd58124cbe361a279ebc4e02bc36d61`. Admin Payments memasking identitas customer dan memblokir
 pencarian nama bagi Finance. Rekonsiliasi manual hanya berjalan untuk provider
 aktif yang siap; daily close menolak review, exception, dan settled gateway
 funds yang belum matched serta tetap idempotent saat retry. Control Desk

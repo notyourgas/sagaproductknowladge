@@ -1,5 +1,22 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-26 - COYABAG Storefront Home commerce truth sync
+
+- Ringkasan: menyinkronkan homepage commerce truth, wishlist recovery,
+  performance split, dan immutable production release terbaru.
+- Alasan: hero dan etalase tidak boleh mengesankan pembelian tersedia ketika
+  checkout belum production-activated dan stok varian live nol.
+- Produk/area: COYABAG Homepage, catalog discovery, wishlist, responsive UI/UX,
+  accessibility, performance, QA, security, release, dan rollback.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED`; exact source
+  `0fd20c3f0e5b50780735963f680d87f2fca9b53e`, release
+  `20260826-0fd20c3`, rollback `20260826-a575c3b`.
+- Production berubah: ya, storefront/API/admin runtime. Tidak ada migration,
+  data commerce, provider, atau activation; readiness tetap 30/42 dengan 12
+  blocker.
+- Dokumen terdampak: Product, Dossier, changelog COYABAG, portfolio, master,
+  root changelog, dan sync status.
+
 ## 2026-08-26 - COYABAG Admin Payment workflow integrity sync
 
 - Ringkasan: menyinkronkan masking identitas Finance, rekonsiliasi provider-

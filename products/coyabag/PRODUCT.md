@@ -61,9 +61,19 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260826-a575c3b` dengan exact source
-  `a575c3bfbfd58124cbe361a279ebc4e02bc36d61` melayani production;
-  rollback langsung `20260826-b6f1c55` dipertahankan.
+- Release aktif `20260826-0fd20c3` dengan exact source
+  `0fd20c3f0e5b50780735963f680d87f2fca9b53e` melayani production;
+  rollback langsung `20260826-a575c3b` dipertahankan.
+- Homepage menyelaraskan hero, status katalog, dan label etalase dengan kontrak
+  checkout serta stok varian live. Commerce terblokir menampilkan `Katalog
+  Preview` dan `Lihat Koleksi`; customer dengan produk tersimpan mendapat
+  recovery wishlist. Managed campaign CMS tetap berlaku.
+- Desktop/mobile public acceptance, 188 storefront test, 441 Laravel test,
+  full release gate, serta initial-performance budget lulus. Entry JS turun
+  dari 201.4 KiB ke 194.8 KiB. Readiness tetap 30/42 dengan 12 blocker;
+  checkout/provider tetap fail-closed.
+- Release sebelumnya `20260826-a575c3b` menjalankan Admin Payment workflow
+  integrity.
 - Admin Payments memasking identitas customer dan menonaktifkan pencarian nama
   untuk Finance, sementara Owner mempertahankan akses sesuai permission.
   Rekonsiliasi manual terikat provider aktif dan gagal tertutup sampai provider

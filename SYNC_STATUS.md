@@ -12,12 +12,33 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-26T19:51:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-26T21:13:18+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | exact `71de43fc1b17682aefde0f5e985280aae01812fa` |
-| Informasi terakhir disinkronkan | COYABAG Admin Payment workflow integrity exact source `a575c3bfbfd58124cbe361a279ebc4e02bc36d61`, immutable release `20260826-a575c3b`, rollback `20260826-b6f1c55`. |
+| Baseline sebelum pembaruan | exact `bff575269351d6c8600e1a120340f610f14a5f62` |
+| Informasi terakhir disinkronkan | COYABAG Storefront Home commerce truth exact source `0fd20c3f0e5b50780735963f680d87f2fca9b53e`, immutable release `20260826-0fd20c3`, rollback `20260826-a575c3b`. |
 | Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED`; commerce activation dan business readiness tetap `BLOCKED`. |
+
+## COYABAG Storefront Home commerce truth
+
+- Exact source `0fd20c3f0e5b50780735963f680d87f2fca9b53e` aktif pada immutable
+  release `20260826-0fd20c3`; rollback `20260826-a575c3b` tersedia.
+- Homepage memakai checkout dan stok varian live untuk menampilkan preview,
+  restock, atau state ready. Hero fallback, etalase, dan recovery wishlist tidak
+  mengesankan transaksi sudah tersedia.
+- Entry JS 194.8 KiB; desktop/mobile, 188 storefront test, 441 Laravel test,
+  full release gate, public smoke, workers, dan log checks lulus. Commerce tetap
+  fail-closed pada 30/42 checks dengan 12 blocker.
+
+## File yang berubah pada sinkronisasi ini (COYABAG Storefront Home)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG Admin Payment workflow integrity
 
