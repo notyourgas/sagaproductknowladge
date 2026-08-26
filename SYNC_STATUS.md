@@ -12,12 +12,34 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-26T12:21:01+07:00 |
-| Branch aktif | `codex/knowledge-s298-production` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-26T12:23:48+07:00 |
+| Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | exact `origin/main` `d084996` sebelum sinkronisasi SagaView S298 |
-| Informasi terakhir disinkronkan | SagaView S298 guarded backend/Owner production release. |
-| Status sinkronisasi | `PRODUCTION_DEPLOYED`; activation dan business readiness tetap menunggu authenticated Owner UAT. |
+| Baseline sebelum pembaruan | exact `origin/main` `e45a95b` sebelum sinkronisasi COYABAG Admin Beranda |
+| Informasi terakhir disinkronkan | COYABAG Admin Beranda role and readiness integrity. |
+| Status sinkronisasi | `PRODUCTION_DEPLOYED`; commerce activation dan business readiness tetap `BLOCKED`. |
+
+## COYABAG Admin Beranda role and readiness integrity
+
+- Exact source `b45eb8dc41eb04263442afd544e329f0391de060` aktif pada immutable
+  release `20260826-b45eb8d`; rollback `20260826-ed5814f`.
+- Owner mendapat launch readiness authoritative dan blocker actionable;
+  Finance menerima nama pelanggan termasking tanpa owner-only control.
+- Monitor freshness dipisahkan dari aktivitas integrasi terakhir. Acceptance
+  owner/finance desktop-mobile, 413 Laravel test, full RC, dependency audit,
+  workers, backup, rollback, dan public smoke hijau.
+- Readiness tetap 30/42 dengan 12 blocker; checkout, activation, dan business
+  readiness tetap blocked.
+
+## File yang berubah pada sinkronisasi ini (COYABAG Admin Beranda)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaView S298 guarded production deployment
 

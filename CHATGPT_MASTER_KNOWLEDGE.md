@@ -3517,7 +3517,15 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release aktif `20260826-ed5814f` menjalankan exact source
+Release aktif `20260826-b45eb8d` menjalankan exact source
+`b45eb8dc41eb04263442afd544e329f0391de060` dengan rollback
+`20260826-ed5814f`. Beranda Admin memberi owner launch readiness authoritative
+dan blocker actionable; Finance menerima identitas pelanggan termasking serta
+tidak menerima kontrol owner. Heartbeat operasional dipisahkan dari aktivitas
+integrasi terakhir. Readiness tetap 30/42 dengan 12 blocker dan checkout
+disabled; jangan sebut commerce production-activated.
+
+Release sebelumnya `20260826-ed5814f` menjalankan exact source
 `ed5814f23078f625a2e83f3c66ad476f2f327b91` dengan rollback
 `20260826-5acbda3`. Lima route CMS yang belum terverifikasi sekarang
 404/noindex dan tidak masuk sitemap. Verified content memakai metadata non-kosong

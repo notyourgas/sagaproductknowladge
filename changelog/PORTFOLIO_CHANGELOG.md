@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-26 - COYABAG Admin Beranda role and readiness integrity
+
+- Exact source `b45eb8dc41eb04263442afd544e329f0391de060` aktif pada immutable
+  Hostinger release `20260826-b45eb8d` dengan rollback `20260826-ed5814f`.
+- Owner melihat launch readiness dan blocker actionable; Finance menerima nama
+  pelanggan termasking tanpa owner-only control. Heartbeat operasional tidak
+  lagi disamakan dengan aktivitas integrasi.
+- Owner/Finance desktop-mobile, 413 Laravel test, full RC, security/dependency,
+  workers, backup, rollback, dan public smoke hijau.
+- Delivery `PRODUCTION_DEPLOYED`; activation/business readiness `BLOCKED`;
+  readiness 30/42 dan commerce tetap fail-closed.
+
 ## 2026-08-26 - SagaView S298 guarded production deployment
 
 - Exact source `7bf0e0d6966ebe7d2d6f2a72a42b59b4df4f6470` aktif pada

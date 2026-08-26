@@ -4,6 +4,19 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-26 - Admin Beranda role and readiness integrity production release
+
+- Klasifikasi: `CONFIRMED` dari exact source
+  `b45eb8dc41eb04263442afd544e329f0391de060`, immutable Hostinger release
+  `20260826-b45eb8d`, rollback `20260826-ed5814f`, dan runtime verification.
+- Owner mendapat launch readiness authoritative dan blocker actionable;
+  Finance menerima nama pelanggan termasking dan tidak menerima kontrol owner.
+- Heartbeat operasional dipisahkan dari aktivitas integrasi; refresh mengikuti
+  data state. Owner/Finance desktop-mobile, 413 Laravel test, full RC, audit
+  dependency, workers, backup, rollback, dan public smoke lulus.
+- Delivery `PRODUCTION_DEPLOYED`; activation/business readiness `BLOCKED`;
+  readiness 30/42, 12 blocker, dan checkout tetap disabled.
+
 ## 2026-08-26 - Storefront SEO truthfulness production release
 
 - Klasifikasi: `CONFIRMED` dari exact source

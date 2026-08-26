@@ -78,7 +78,17 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260826-ed5814f` memakai source
+Release production terbaru `20260826-b45eb8d` memakai source
+`b45eb8dc41eb04263442afd544e329f0391de060` dan rollback
+`20260826-ed5814f`. Beranda Admin memberi owner ringkasan launch readiness dari
+gate 42 pemeriksaan dan blocker actionable. Nama pelanggan dimasking untuk role
+tanpa permission manajemen pesanan; monitor heartbeat dengan freshness nyata
+dipisahkan dari riwayat aktivitas integrasi. Acceptance owner/finance
+desktop-mobile, 413 Laravel test, full RC, audit dependency, backup, rollback,
+workers, dan public smoke hijau. Readiness tetap 30/42 dengan 12 blocker dan
+checkout disabled.
+
+Release sebelumnya `20260826-ed5814f` memakai source
 `ed5814f23078f625a2e83f3c66ad476f2f327b91` dan rollback
 `20260826-5acbda3`. Lima route CMS dengan payload publik `verified=false`
 sekarang 404/noindex, memiliki title aman yang tidak kosong, dan dikeluarkan
