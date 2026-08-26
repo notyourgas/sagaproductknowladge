@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 27 Agustus 2026 05:08 WIB
-Evidence status: stock administration production-activated; restore-capacity hardening pushed
+Updated: 27 Agustus 2026 06:04 WIB
+Evidence status: stock administration production-activated; restore-capacity hardening merged, not deployed
 
 ## Tujuan dokumen
 
@@ -16,18 +16,22 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
-- Kandidat hardening kapasitas disposable restore S297 pada exact source
-  `5a721c2d2da513caa3a133cf34e68be43016d32c` berstatus `CONFIRMED /
-  PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Release evidence kini
+- Hardening kapasitas disposable restore S297 dari exact feature source
+  `5a721c2d2da513caa3a133cf34e68be43016d32c` sudah terintegrasi melalui PR #18
+  ke exact main `7877afc0a8887829fa3cf26b53c431b8a5ec7f56` dengan status `CONFIRMED /
+  MERGED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Release evidence kini
   gagal tertutup sebelum akses jaringan, decrypt, plaintext, atau disposable
   MySQL ketika volume kerja tidak memenuhi minimum 4 GiB. Setelah tiga backup
   terenkripsi diunduh, kapasitas diperiksa ulang memakai allowance pertumbuhan
   data sebelum restore. Focused 26/26 (290 assertion), full PHP 1.175/1.175
   (13.277 assertion), build, critical typecheck, Pint, PowerShell parse, dan
-  audit dependency nol lulus. Production tetap exact source
+  audit dependency nol lulus. Quality Gate GitHub gagal sebelum satu step pun
+  berjalan; gate lokal ekuivalen menjadi bukti pengganti. Production tetap exact source
   `2b22b835f7c72b96d569fd7c31e4aacdb56d4f49`, release
-  `20260826201936-2b22b83`; verifier read-only 17/17 lulus dan
-  `BUSINESS_READY=false`.
+  `20260826201936-2b22b83`. Verifier read-only pra-merge 17/17 lulus; setelah
+  main maju, runtime tetap sehat dengan service aktif, 0 migrasi pending,
+  0 queue error, dan public/security smoke 3/3. Paritas remote-main menunggu
+  deployment terotorisasi dan `BUSINESS_READY=false`.
 
 - Integritas aksi status pada `Jadwal Sesi Hari Ini` aktif melalui exact source
   `0fcca39f82f58769dad472f6632f2923e7fac18c`, immutable release

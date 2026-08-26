@@ -31,8 +31,9 @@
   disposable restore gagal tertutup sebelum side effect ketika volume kerja
   tidak cukup, lalu memeriksa kebutuhan dinamis kembali setelah download.
 - Full PHP 1.175/1.175, focused 26/26, build/typecheck, syntax/format, dan audit
-  dependency nol lulus. Status `PUSHED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED`; production SagaBook tidak berubah.
+  dependency nol lulus. PR #18 sudah merge ke exact main
+  `7877afc0a8887829fa3cf26b53c431b8a5ec7f56`. Status `MERGED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production SagaBook tidak berubah.
 
 ## 2026-08-27 - COYABAG product specification integrity
 

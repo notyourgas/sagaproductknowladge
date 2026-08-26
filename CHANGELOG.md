@@ -37,11 +37,13 @@
   inisialisasi MySQL setelah pekerjaan sensitif sudah dimulai.
 - Produk/area: SagaBook DevOps, backup/restore, security, data integrity, QA,
   dan release evidence.
-- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED`; exact source
-  `5a721c2d2da513caa3a133cf34e68be43016d32c`.
+- Klasifikasi: `CONFIRMED / MERGED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; exact feature source
+  `5a721c2d2da513caa3a133cf34e68be43016d32c`, PR #18, exact main
+  `7877afc0a8887829fa3cf26b53c431b8a5ec7f56`.
 - Production berubah: tidak; production tetap exact source `2b22b835`, release
-  `20260826201936-2b22b83`, verifier read-only 17/17.
+  `20260826201936-2b22b83`; verifier pra-merge 17/17 dan runtime pasca-merge
+  tetap sehat, sedangkan paritas remote-main menunggu deployment terotorisasi.
 - Dokumen terdampak: Product/Dossier/changelog SagaBook, portfolio, root
   changelog, dan sync status.
 

@@ -60,9 +60,11 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
   download backup terenkripsi.
 - Focused 26/26, full PHP 1.175/1.175, build/typecheck, Pint, PowerShell parse,
   dan dependency audit nol lulus.
-- Source `5a721c2d2da513caa3a133cf34e68be43016d32c` sudah push tetapi belum
-  dideploy. Production tetap `2b22b835` / `20260826201936-2b22b83` dan
-  verifier read-only 17/17 lulus.
+- Feature source `5a721c2d2da513caa3a133cf34e68be43016d32c` sudah merge melalui PR #18 ke
+  exact main `7877afc0a8887829fa3cf26b53c431b8a5ec7f56`, tetapi belum dideploy.
+  Production tetap `2b22b835` / `20260826201936-2b22b83`; verifier pra-merge
+  17/17 lulus dan runtime pasca-merge tetap sehat. Paritas remote-main menunggu
+  deployment terotorisasi.
 
 ## File yang berubah pada sinkronisasi SagaBook S297
 

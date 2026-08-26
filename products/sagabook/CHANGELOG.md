@@ -2,7 +2,7 @@
 
 ## 2026-08-27 - Disposable restore capacity fail-closed S297
 
-- Exact source `5a721c2d2da513caa3a133cf34e68be43016d32c` menambahkan
+- Exact feature source `5a721c2d2da513caa3a133cf34e68be43016d32c` menambahkan
   preflight minimum 4 GiB sebelum jaringan/decrypt/plaintext/MySQL dan
   pemeriksaan dinamis kedua setelah backup terenkripsi diunduh.
 - Capacity-only mode membuktikan volume sempit gagal tertutup dan volume yang
@@ -11,9 +11,15 @@
 - Focused 26/26 (290 assertion), full PHP 1.175/1.175 (13.277 assertion),
   production build, critical typecheck, Pint, PowerShell parse, Composer/npm
   audit nol, dan diff check lulus.
-- Status `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- PR #18 sudah merge ke exact main
+  `7877afc0a8887829fa3cf26b53c431b8a5ec7f56`; tree merge sama dengan tree
+  yang diuji. Quality Gate GitHub gagal sebelum menjalankan step sehingga gate
+  lokal ekuivalen dipakai sebagai bukti pengganti.
+- Status `CONFIRMED / MERGED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
   Production tetap exact source `2b22b835f7c72b96d569fd7c31e4aacdb56d4f49`,
-  release `20260826201936-2b22b83`; verifier read-only 17/17 lulus.
+  release `20260826201936-2b22b83`; verifier pra-merge 17/17 lulus dan
+  pemeriksaan runtime pasca-merge tetap sehat. Paritas remote-main menunggu
+  deployment terotorisasi.
 
 ## 2026-08-27 - Integritas aksi status jadwal staff production activated
 
