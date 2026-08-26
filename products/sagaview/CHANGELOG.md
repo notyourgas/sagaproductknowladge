@@ -1,5 +1,27 @@
 # SagaView Changelog
 
+## 2026-08-26 - S304 Support Hub read-after-write retry recovery
+
+- Klasifikasi: `PUSHED / QA_VALIDATED / UIUX_VALIDATED /
+  SECURITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+  production, activation, dan business readiness tidak berubah.
+- Before: kegagalan jaringan atau respons 5xx setelah POST dapat membuat UI
+  langsung menawarkan retry, walaupun server mungkin sudah menyimpan
+  pertanyaan, sehingga operator berisiko membuat duplikat.
+- After: exact `74dfa84d772abc0db7ed224bdadd6e1ddc65b20b`
+  memeriksa ulang percakapan lewat GET bootstrap. Pertanyaan yang ditemukan
+  tidak dikirim ulang; aksi `Kirim ulang sekarang` hanya muncul setelah hasil
+  read-after-write tidak menemukan pertanyaan.
+- Evidence: acceptance RED membuktikan baseline tidak mempunyai status
+  pengiriman ambigu. GREEN desktop 1440x900 dan mobile 390x844 lulus 4/4,
+  target 44 pixel, no-overflow, satu POST awal dan satu GET verifikasi per
+  skenario. Focused backend/privacy 52/4.873; exact scoped gate 209/1.735 dari
+  31 file; build 5.097 modul; Composer/npm audit nol.
+- Delivery: source exact sudah pushed. Tidak ada perubahan API, migration,
+  database write, foto/path/output customer, payment, SagaBook, atau production.
+- Next gate: buat immutable artifact S304 dan rehearsal terikat exact commit,
+  lalu authenticated Owner UAT serta approval deployment tetap terpisah.
+
 ## 2026-08-26 - S303 immutable release artifact and disposable rehearsal
 
 - Klasifikasi: `PUSHED / DEVOPS_VALIDATED / SECURITY_VALIDATED /

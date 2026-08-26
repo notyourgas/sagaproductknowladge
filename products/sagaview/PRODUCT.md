@@ -1,6 +1,26 @@
 # SagaView Product Knowledge
 
-Updated: 26 Agustus 2026 16:11 WIB
+Updated: 26 Agustus 2026 18:24 WIB
+
+SagaView S304 exact `74dfa84d772abc0db7ed224bdadd6e1ddc65b20b`
+sudah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Saat pengiriman
+pertanyaan Support Hub berakhir tanpa respons pasti atau HTTP 5xx, Owner tidak
+lagi langsung ditawari retry yang dapat menggandakan pertanyaan yang sebenarnya
+sudah diterima server. UI sekarang lebih dulu menjalankan read-after-write lewat
+bootstrap percakapan. Jika pertanyaan ditemukan, tidak ada POST kedua; jika
+belum ditemukan, tombol `Kirim ulang sekarang` baru ditampilkan sebagai aksi
+eksplisit.
+
+Acceptance desktop 1440x900 dan mobile 390x844 lulus 4/4 dengan target 44
+pixel, no-overflow, satu POST awal, satu GET verifikasi, serta jalur ditemukan
+dan tidak ditemukan. Focused backend/privacy lulus 52 test dengan 4.873
+assertion; exact scoped gate lulus 209 test dengan 1.735 assertion dari 31 file,
+build 5.097 modul, serta audit Composer/npm nol temuan. Tidak ada perubahan API,
+database, migration, upload foto/path/output customer, payment, atau SagaBook.
+Production tetap backend/Owner `20260826050812-7bf0e0d`, Studio
+`20260824170456-7ae79ae`, dan rollback `20260825210645-1237ef2`; artifact S303
+masih terikat ke source S302, sehingga S304 belum `STAGING_READY` dan belum
+dideploy.
 
 SagaView S303 menutup release preflight untuk exact source S302
 `94df8c227df1db31a847e4669c3a17771dcec8b7`. Immutable candidate release

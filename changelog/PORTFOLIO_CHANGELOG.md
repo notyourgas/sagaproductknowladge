@@ -210,6 +210,18 @@
 - `CONFIRMED / LOCAL_VALIDATED`: feature `6d3fc98`, acceptance `666fbef` menambah guarded/idempotent first-organization + HR provisioning, one-time secret, HR-owned password, mandatory TOTP, policy acknowledgement, dan operator recovery dengan session/MFA revocation.
 - 36/130 tests, 47-page build, 66 tables/24 migrations, OpenAPI 70 paths/85 operations/48 request components, dan disposable Hostinger MySQL integration PASS.
 - Disk-capacity blocker lama tertutup, tetapi K0/K1 tetap NO-GO karena external provider/access/recovery dan actual Owner HR UAT belum selesai. Tidak ada real account/data, staging deployment, Preview change, atau production activation.
+## 2026-08-26 - SagaView S304 Support Hub verified retry recovery
+
+- Exact source `74dfa84d772abc0db7ed224bdadd6e1ddc65b20b` menambahkan
+  read-after-write sebelum retry pertanyaan Support Hub yang status
+  pengirimannya tidak pasti.
+- Pertanyaan yang sudah muncul di percakapan tidak dikirim ulang; tombol resend
+  baru tersedia bila GET verifikasi tidak menemukannya. Desktop/mobile 4/4,
+  backend/privacy 52/4.873, scoped gate 209/1.735, build, dan audit dependency
+  lulus.
+- Delivery `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; tidak ada
+  perubahan API, data customer, payment, SagaBook, atau production SagaView.
+
 ## 2026-08-26 - SagaView S303 immutable release readiness
 
 - Exact S302 menjadi candidate release `20260826090428-94df8c2` dengan
