@@ -1574,3 +1574,17 @@ keputusan pengganti.
 | Pemberi keputusan | Andreas / founder |
 | Status | `CONFIRMED / MERGED / PRODUCTION_DEPLOYED / FEATURE_OFF / NOT_PILOT_ACTIVATED`; feature commit `89e440138536eba7ad0e1042ffb4a031e07fd3e4`, PR #14, exact release source `69cb91370aacfdfe9c8c6db3799bd422f2079f0a`, release `20260826164130-69cb913` |
 | Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [SagaBook Changelog](products/sagabook/CHANGELOG.md) |
+
+## DEC-112 - Demo checkout COYABAG memakai simulator terisolasi lebih dahulu
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-27 |
+| Topik | Batas payment demo dan payment production COYABAG |
+| Keputusan | Gunakan simulator privat bertanda tangan dan berbatas waktu untuk demonstrasi client. TokoPay tetap terlihat tetapi locked sampai credential dan UAT transaksi nyata lulus. |
+| Alasan | Client perlu mencoba alur checkout end-to-end tanpa membuka pembayaran nyata, membuat klaim provider palsu, atau mengotori data commerce production. |
+| Alternatif yang dipertimbangkan | Membuka TokoPay tanpa credential/UAT; memakai manual transfer sebagai bukti gateway; menunda seluruh demonstrasi sampai commerce production-ready. |
+| Dampak | Simulator dipisahkan dari uang, omzet, stok, customer, pengiriman, fulfillment, invoice, notifikasi, settlement, dan reporting production. Evidence simulator tidak boleh dipakai sebagai bukti payment provider atau commerce aktif. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / PRODUCTION_DEPLOYED / NOT_PRODUCTION_ACTIVATED`; exact source `2dad82c3e1cb41db2149915eb1977512e5fc6069`, release `20260827-2dad82c` |
+| Dokumen terkait | [COYABAG Product](products/coyabag/PRODUCT.md), [COYABAG Dossier](products/coyabag/DOSSIER.md), [COYABAG Changelog](products/coyabag/CHANGELOG.md) |

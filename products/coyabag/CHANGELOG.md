@@ -4,6 +4,23 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-27 - Isolated client payment simulator production release
+
+- Klasifikasi: `CONFIRMED` dari exact source
+  `2dad82c3e1cb41db2149915eb1977512e5fc6069`, immutable Hostinger release
+  `20260827-2dad82c`, rollback `20260827-f2a238c`, dan public runtime smoke.
+- Checkout menyediakan simulator privat bertanda tangan dan berbatas waktu;
+  TokoPay tetap terlihat tetapi locked sampai credential serta UAT nyata.
+- Simulasi tidak mengubah uang, omzet, stok, customer, shipment, fulfillment,
+  invoice, notifikasi, settlement, atau laporan produksi. Form pengiriman manual
+  kini melengkapi provinsi, kecamatan, dan kode pos.
+- Known content route tetap HTTP 200 `noindex` bila belum diterbitkan; unknown
+  route tetap 404. Storefront 196/196, Laravel 448 pass dan satu skip dari 449,
+  110 responsive combinations, 32 accessibility checks, security/build,
+  workers, public smoke, dan log checks lulus.
+- Delivery `PRODUCTION_DEPLOYED`; activation/business readiness `BLOCKED`;
+  readiness 30/42 dengan 12 blocker. Simulator bukan payment-provider proof.
+
 ## 2026-08-26 - Storefront Catalog availability integrity production release
 
 - Klasifikasi: `CONFIRMED` dari exact source

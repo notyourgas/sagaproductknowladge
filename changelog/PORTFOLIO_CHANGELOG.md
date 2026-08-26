@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-27 - COYABAG isolated client payment simulator
+
+- Exact source `2dad82c3e1cb41db2149915eb1977512e5fc6069` aktif pada immutable
+  release `20260827-2dad82c`; rollback `20260827-f2a238c` tersedia.
+- Checkout menyediakan simulator privat bertanda tangan dan berbatas waktu
+  tanpa money movement atau side effect pada omzet, stok, customer, pengiriman,
+  fulfillment, invoice, notifikasi, dan settlement production. TokoPay tetap
+  terlihat tetapi locked sampai credential serta UAT transaksi nyata lulus.
+- Manual address fallback, route konten noindex, unknown 404, 196 storefront
+  test, 449 Laravel test, 110 responsive combinations, 32 accessibility checks,
+  security/build, workers, public smoke, dan log checks lulus.
+- Status `PRODUCTION_DEPLOYED`; activation/business readiness tetap `BLOCKED`
+  pada 30/42 checks dengan 12 blocker. Simulator bukan provider activation.
+
 ## 2026-08-27 - SagaView S308 Owner Support Hub non-overlap
 
 - Exact source `55ff2870af6e3b0ef09e5aaa347e765ce33f0099` memindahkan

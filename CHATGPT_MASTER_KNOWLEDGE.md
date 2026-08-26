@@ -3627,7 +3627,21 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release aktif `20260826-77ed929` menjalankan exact source
+Release aktif `20260827-2dad82c` menjalankan exact source
+`2dad82c3e1cb41db2149915eb1977512e5fc6069` dengan rollback
+`20260827-f2a238c`. Checkout menyediakan simulator privat bertanda tangan dan
+berbatas waktu untuk demo client. Simulator terisolasi dari uang, omzet, stok,
+customer, shipment, fulfillment, invoice, notification, settlement, dan
+reporting production. TokoPay tetap locked sampai credential dan UAT transaksi
+nyata lulus. Manual shipping fallback melengkapi provinsi, kecamatan, dan kode
+pos. Known content route yang belum dipublikasikan merespons HTTP 200 `noindex`,
+sedangkan unknown route tetap 404. Storefront 196/196, Laravel 448 pass dan
+satu intentional skip dari 449, 110 responsive combinations, 32 accessibility
+checks, security/build, immutable deploy, public smoke, workers, dan log checks
+lulus. Readiness tetap 30/42 dengan 12 blocker; simulator bukan bukti payment
+atau commerce production-activated.
+
+Release sebelumnya `20260826-77ed929` menjalankan exact source
 `77ed9295b654848fb855c599721855b992487b35` dengan rollback
 `20260826-0fd20c3`. Catalog menyatukan status preview, restock, dan ready dengan
 kontrak checkout serta stok varian live. Jumlah warna, stock filter, full

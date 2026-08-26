@@ -12,12 +12,36 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-27T00:50:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-27T02:05:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
-| Informasi terakhir disinkronkan | SagaBook Consumable Stock Administration exact source `c21d9378e0ea0bd0352cd59ffb63b4499154093a`, PR #15. |
-| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan `BUSINESS_READY=false`. |
+| Informasi terakhir disinkronkan | COYABAG isolated client payment simulator exact source `2dad82c3e1cb41db2149915eb1977512e5fc6069`, release `20260827-2dad82c`. |
+| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED`; activation dan business readiness tetap `BLOCKED`. |
+
+## COYABAG isolated client payment simulator
+
+- Exact source `2dad82c3e1cb41db2149915eb1977512e5fc6069` aktif pada immutable
+  release `20260827-2dad82c`; rollback `20260827-f2a238c` tersedia.
+- Simulator privat bertanda tangan dan berbatas waktu mendukung demo checkout
+  tanpa uang atau side effect pada data/operasi commerce production. TokoPay
+  tetap locked sampai credential dan real-transaction UAT lulus.
+- Manual address fallback, known content route 200 `noindex`, unknown 404,
+  storefront 196/196, Laravel 448 pass dan satu skip dari 449, 110 responsive
+  combinations, 32 accessibility checks, public smoke, workers, dan logs lulus.
+- Readiness tetap 30/42 dengan 12 blocker. Delivery `PRODUCTION_DEPLOYED`;
+  activation dan business readiness `BLOCKED`.
+
+## File yang berubah pada sinkronisasi ini (COYABAG Payment Simulator)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `DECISIONS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook Consumable Stock Administration S13–S24
 

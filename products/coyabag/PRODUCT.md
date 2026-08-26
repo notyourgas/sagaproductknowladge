@@ -1,6 +1,6 @@
 # COYABAG Product Knowledge
 
-Updated: 26 Agustus 2026
+Updated: 27 Agustus 2026
 Evidence status: production surfaces + blocked commerce activation
 
 ## Tujuan dokumen
@@ -61,7 +61,24 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260826-77ed929` dengan exact source
+- Release aktif `20260827-2dad82c` dengan exact source
+  `2dad82c3e1cb41db2149915eb1977512e5fc6069` melayani production;
+  rollback langsung `20260827-f2a238c` dipertahankan.
+- Checkout memiliki simulator pembayaran privat melalui capability bertanda
+  tangan dan berbatas waktu untuk demo client. Simulator tidak membuat
+  pergerakan uang, omzet, reservasi stok, customer, pengiriman, fulfillment,
+  invoice, atau notifikasi produksi.
+- TokoPay tetap terlihat tetapi terkunci sampai credential dan UAT transaksi
+  nyata lulus. Form pengiriman manual melengkapi provinsi, kecamatan, dan kode
+  pos bila provider tidak menyediakannya.
+- Route konten yang dikenal tetap dapat dibuka sebagai HTTP 200 `noindex` saat
+  belum diterbitkan; route tidak dikenal tetap 404. Desktop/mobile, 196
+  storefront test, 449 Laravel test dengan 448 pass dan satu intentional skip,
+  110 kombinasi responsive, 32 pemeriksaan accessibility, full release gate,
+  public smoke, workers, dan log checks lulus.
+- Readiness tetap 30/42 dengan 12 blocker; simulator bukan bukti payment atau
+  commerce sudah production-activated.
+- Release sebelumnya `20260826-77ed929` dengan exact source
   `77ed9295b654848fb855c599721855b992487b35` melayani production;
   rollback langsung `20260826-0fd20c3` dipertahankan.
 - Catalog menyatukan status preview, restock, dan ready dengan kontrak checkout

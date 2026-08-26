@@ -1,5 +1,23 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-27 - COYABAG isolated client payment simulator sync
+
+- Ringkasan: menyinkronkan simulator pembayaran privat, manual address
+  fallback, route konten noindex, dan immutable production release terbaru.
+- Alasan: client perlu mendemonstrasikan alur checkout end-to-end tanpa membuka
+  payment provider atau mengotori data commerce production.
+- Produk/area: COYABAG checkout, payment boundary, shipping address,
+  storefront routes, responsive UI/UX, accessibility, backend, QA, security,
+  release, dan rollback.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED`; exact source
+  `2dad82c3e1cb41db2149915eb1977512e5fc6069`, release
+  `20260827-2dad82c`, rollback `20260827-f2a238c`.
+- Production berubah: ya, surface simulator privat tersedia. TokoPay, commerce
+  activation, dan business readiness tidak berubah; readiness tetap 30/42
+  dengan 12 blocker.
+- Dokumen terdampak: Product, Dossier, changelog COYABAG, portfolio, master,
+  Decisions, root changelog, dan sync status.
+
 ## 2026-08-27 - SagaBook Consumable Stock Administration sync
 
 - Ringkasan: menyinkronkan opening stock, restock, maker-checker correction,

@@ -7,7 +7,7 @@ content COYABAG tanpa menyamakan surface live dengan commerce aktif.
 
 ## Konteks dan status bukti
 
-- Updated: 26 Agustus 2026
+- Updated: 27 Agustus 2026
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `BLOCKED`
 - Business readiness: `BLOCKED`
@@ -78,7 +78,21 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260826-77ed929` memakai exact source
+Release production terbaru `20260827-2dad82c` memakai exact source
+`2dad82c3e1cb41db2149915eb1977512e5fc6069` dan rollback
+`20260827-f2a238c`. Checkout menyediakan simulator privat bertanda tangan dan
+berbatas waktu untuk demonstrasi client. Semua record simulator terisolasi dan
+tidak masuk omzet, stok, customer, pengiriman, fulfillment, invoice,
+notifikasi, atau settlement produksi. TokoPay tetap locked sampai credential
+serta UAT transaksi nyata lulus. Form manual melengkapi provinsi, kecamatan,
+dan kode pos saat data provider tidak tersedia. Known content route tetap HTTP
+200 `noindex` saat belum dipublikasikan, sedangkan unknown route tetap 404.
+Storefront 196/196, Laravel 449 total dengan 448 pass dan satu intentional
+skip, 110 kombinasi responsive, 32 pemeriksaan accessibility, security/build,
+immutable deploy, workers, public smoke, dan log checks lulus. Readiness tetap
+30/42 dengan 12 blocker; simulator tidak mengaktifkan commerce production.
+
+Release sebelumnya `20260826-77ed929` memakai exact source
 `77ed9295b654848fb855c599721855b992487b35` dan rollback
 `20260826-0fd20c3`. Catalog sekarang membedakan preview, restock, dan ready dari
 kontrak checkout serta stok varian live. Jumlah warna, stock filter, full
