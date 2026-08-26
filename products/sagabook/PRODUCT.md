@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 27 Agustus 2026 02:30 WIB
-Evidence status: stock administration production-activated; source main parity pending
+Updated: 27 Agustus 2026 05:08 WIB
+Evidence status: stock administration production-activated; restore-capacity hardening pushed
 
 ## Tujuan dokumen
 
@@ -15,6 +15,19 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- Kandidat hardening kapasitas disposable restore S297 pada exact source
+  `5a721c2d2da513caa3a133cf34e68be43016d32c` berstatus `CONFIRMED /
+  PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Release evidence kini
+  gagal tertutup sebelum akses jaringan, decrypt, plaintext, atau disposable
+  MySQL ketika volume kerja tidak memenuhi minimum 4 GiB. Setelah tiga backup
+  terenkripsi diunduh, kapasitas diperiksa ulang memakai allowance pertumbuhan
+  data sebelum restore. Focused 26/26 (290 assertion), full PHP 1.175/1.175
+  (13.277 assertion), build, critical typecheck, Pint, PowerShell parse, dan
+  audit dependency nol lulus. Production tetap exact source
+  `2b22b835f7c72b96d569fd7c31e4aacdb56d4f49`, release
+  `20260826201936-2b22b83`; verifier read-only 17/17 lulus dan
+  `BUSINESS_READY=false`.
 
 - Integritas aksi status pada `Jadwal Sesi Hari Ini` aktif melalui exact source
   `0fcca39f82f58769dad472f6632f2923e7fac18c`, immutable release

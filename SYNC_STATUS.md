@@ -12,12 +12,32 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-27T04:20:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-27T05:08:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
-| Informasi terakhir disinkronkan | COYABAG product specification integrity pada exact source `4cf4ce628eaad2bd77c63513487068737819d809`, release `20260827-4cf4ce6`. |
-| Status sinkronisasi | `CONFIRMED / PUSHED / PRODUCTION_DEPLOYED`; commerce activation dan `BUSINESS_READY` tetap `BLOCKED`. |
+| Informasi terakhir disinkronkan | SagaBook S297 restore-capacity hardening pada exact source `5a721c2d2da513caa3a133cf34e68be43016d32c`. |
+| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah. |
+
+## SagaBook S297 disposable restore capacity
+
+- Preflight awal minimum 4 GiB berjalan sebelum jaringan, decrypt, plaintext,
+  atau disposable MySQL; pemeriksaan kedua menghitung kebutuhan dinamis setelah
+  download backup terenkripsi.
+- Focused 26/26, full PHP 1.175/1.175, build/typecheck, Pint, PowerShell parse,
+  dan dependency audit nol lulus.
+- Source `5a721c2d2da513caa3a133cf34e68be43016d32c` sudah push tetapi belum
+  dideploy. Production tetap `2b22b835` / `20260826201936-2b22b83` dan
+  verifier read-only 17/17 lulus.
+
+## File yang berubah pada sinkronisasi ini (SagaBook S297)
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG product specification integrity
 

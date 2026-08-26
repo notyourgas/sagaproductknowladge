@@ -1,5 +1,20 @@
 # SagaBook Changelog
 
+## 2026-08-27 - Disposable restore capacity fail-closed S297
+
+- Exact source `5a721c2d2da513caa3a133cf34e68be43016d32c` menambahkan
+  preflight minimum 4 GiB sebelum jaringan/decrypt/plaintext/MySQL dan
+  pemeriksaan dinamis kedua setelah backup terenkripsi diunduh.
+- Capacity-only mode membuktikan volume sempit gagal tertutup dan volume yang
+  memadai lolos tanpa side effect. Receipt release kini wajib mengikat status
+  kapasitas restore.
+- Focused 26/26 (290 assertion), full PHP 1.175/1.175 (13.277 assertion),
+  production build, critical typecheck, Pint, PowerShell parse, Composer/npm
+  audit nol, dan diff check lulus.
+- Status `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+  Production tetap exact source `2b22b835f7c72b96d569fd7c31e4aacdb56d4f49`,
+  release `20260826201936-2b22b83`; verifier read-only 17/17 lulus.
+
 ## 2026-08-27 - Integritas aksi status jadwal staff production activated
 
 - Exact source `0fcca39f82f58769dad472f6632f2923e7fac18c` menggabungkan

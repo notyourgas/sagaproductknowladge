@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-08-27 - SagaBook S297 restore capacity guard
+
+- Exact source `5a721c2d2da513caa3a133cf34e68be43016d32c` membuat
+  disposable restore gagal tertutup sebelum side effect ketika volume kerja
+  tidak cukup, lalu memeriksa kebutuhan dinamis kembali setelah download.
+- Full PHP 1.175/1.175, focused 26/26, build/typecheck, syntax/format, dan audit
+  dependency nol lulus. Status `PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production SagaBook tidak berubah.
+
 ## 2026-08-27 - COYABAG product specification integrity
 
 - Exact source `4cf4ce628eaad2bd77c63513487068737819d809` aktif pada immutable

@@ -7,6 +7,16 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Hardening release S297 pada exact source
+  `5a721c2d2da513caa3a133cf34e68be43016d32c` menambahkan preflight kapasitas
+  dua tahap pada disposable backup/restore. Minimum awal 4 GiB harus tersedia
+  sebelum jaringan atau plaintext disentuh; setelah download, kebutuhan
+  dihitung ulang dari ukuran backup terenkripsi dengan allowance pertumbuhan
+  dan 1 GiB overhead. Receipt release wajib membawa status preflight yang
+  lulus. Capacity-only mode membuktikan tidak ada jaringan, download,
+  plaintext, atau MySQL. Status `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production dan database tidak berubah.
+
 - Administrasi stok consumable S13–S24 aktif pada exact source
   `2b22b835f7c72b96d569fd7c31e4aacdb56d4f49`, immutable release
   `20260826201936-2b22b83`, rollback `20260826192333-a916e1b`:

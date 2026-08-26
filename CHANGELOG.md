@@ -1,5 +1,21 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-27 - SagaBook S297 restore capacity sync
+
+- Ringkasan: menyinkronkan preflight kapasitas dua tahap untuk disposable
+  backup/restore dan receipt release fail-closed.
+- Alasan: release stok membuktikan volume kerja sempit dapat menggagalkan
+  inisialisasi MySQL setelah pekerjaan sensitif sudah dimulai.
+- Produk/area: SagaBook DevOps, backup/restore, security, data integrity, QA,
+  dan release evidence.
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; exact source
+  `5a721c2d2da513caa3a133cf34e68be43016d32c`.
+- Production berubah: tidak; production tetap exact source `2b22b835`, release
+  `20260826201936-2b22b83`, verifier read-only 17/17.
+- Dokumen terdampak: Product/Dossier/changelog SagaBook, portfolio, root
+  changelog, dan sync status.
+
 ## 2026-08-27 - COYABAG product specification integrity sync
 
 - Ringkasan: menyinkronkan empat field spesifikasi Admin/API, state data belum
