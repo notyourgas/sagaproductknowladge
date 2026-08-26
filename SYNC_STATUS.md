@@ -12,12 +12,34 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-27T05:08:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-27T04:45:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
-| Informasi terakhir disinkronkan | SagaView S311 custody capacity guard pada exact source S310 `cd7288d3bb4da9542fbfa20f97780fa5639759bf`. |
-| Status sinkronisasi | `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED`; production tidak berubah. |
+| Informasi terakhir disinkronkan | COYABAG cart variant switch dan release hold pada exact source `843c5628a2a8842aa84be5220744ab8593c13612`. |
+| Status sinkronisasi | `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`; production tetap `20260827-4cf4ce6` setelah rollback aman. |
+
+## COYABAG cart variant switch and release hold
+
+- Cart page/drawer mengganti exact warna, price, media, stock, route, dan
+  variant identity; merge destination satu kali, stock cap, sold-out disabled,
+  serta invalid selection fail-closed tervalidasi.
+- Storefront 205/205, Laravel 450, focused cart 10+19 skenario, full RC,
+  dependency audit, performance, dan 110 responsive live combinations lulus.
+- Candidate `20260827-843c562` di-rollback ke `20260827-4cf4ce6` karena tujuh
+  region horizontal `/our-product` tidak keyboard-focusable pada mobile live.
+- Readiness tetap 30/42 dengan 12 blocker; commerce/TokoPay fail-closed dan
+  tidak ada mutasi production database/order/payment/stock/provider.
+
+## File yang berubah pada sinkronisasi ini (COYABAG Cart Variant)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaView S311 custody capacity guard
 

@@ -68,10 +68,20 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
   urutan stabil dari kontrak Admin/API. Field kosong diberi status sedang
   diverifikasi dan internal key tidak diekspos. Katalog live baru menerbitkan
   perawatan; tiga field lain tetap gap konten operator.
-- Storefront 201/201 dan Laravel 450 test dengan 449 pass serta satu
-  intentional skip lulus. Acceptance production lulus untuk 110 kombinasi
-  responsive, 32 route accessibility desktop/mobile, 16 state runtime
-  performance, crawler SEO 14 URL indexable dan sembilan noindex, serta
+- Cart variant switch sudah `IMPLEMENTED_NOT_DEPLOYED` pada exact source
+  `843c5628a2a8842aa84be5220744ab8593c13612`. Cart page/drawer dapat mengganti
+  warna exact, menyegarkan harga/media/stok, menggabungkan baris duplikat, dan
+  membatasi quantity ke stok live; pilihan sold-out tetap terlihat tetapi
+  disabled.
+- Candidate `20260827-843c562` dikembalikan atomik ke release aktif
+  `20260827-4cf4ce6` setelah live gate menemukan tujuh region detail horizontal
+  `/our-product` yang tidak keyboard-focusable di mobile. Production tidak
+  berubah dan full accessibility pass tidak diklaim sampai gap tersebut ditutup.
+- Storefront 205/205 dan Laravel 450 test dengan 449 pass serta satu
+  intentional skip lulus. Acceptance lokal lulus untuk 32 route accessibility
+  desktop/mobile dan 16 state runtime performance; acceptance production lulus
+  untuk 110 kombinasi responsive, crawler SEO 14 URL indexable dan sembilan
+  noindex, serta
   Product Detail desktop/mobile.
 - Readiness tetap 30/42 dengan 12 blocker; `commerceActivated=false`, TokoPay
   tetap terkunci, dan business readiness tetap blocked.

@@ -4,6 +4,25 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-27 - Cart variant switch implemented, promotion rolled back
+
+- Klasifikasi: `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED` dari exact source
+  `843c5628a2a8842aa84be5220744ab8593c13612`, candidate
+  `20260827-843c562`, rollback terverifikasi ke `20260827-4cf4ce6`, dan live
+  browser/runtime evidence.
+- Cart page/drawer dapat mengganti exact warna, price, media, stock, route, dan
+  variant identity. Baris destination digabung sekali dan quantity dibatasi ke
+  stok; sold-out tetap terlihat namun disabled, sedangkan pilihan tidak valid
+  gagal tertutup.
+- Storefront 205/205, Laravel 449 pass dan satu skip dari 450, focused cart
+  acceptance 10+19 skenario, full RC, dependency audit, performance, dan 110
+  kombinasi responsive live lulus.
+- Promosi dibatalkan karena tujuh region horizontal `/our-product` tidak
+  keyboard-focusable pada mobile live. Production tetap release
+  `20260827-4cf4ce6`; accessibility production penuh belum dapat diklaim.
+- Readiness tetap 30/42 dengan 12 blocker, `commerceActivated=false`, TokoPay
+  terkunci, dan tidak ada mutasi order/payment/stock/database/provider.
+
 ## 2026-08-27 - Product specification integrity
 
 - Klasifikasi: `CONFIRMED` dari exact source

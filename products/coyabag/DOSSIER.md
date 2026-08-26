@@ -86,10 +86,25 @@ key, serta menandai field kosong sebagai sedang diverifikasi tanpa mengarang
 fakta. Katalog live baru menerbitkan perawatan; ukuran, material, dan kapasitas
 masih menunggu kelengkapan operator.
 
-Storefront 201/201, Laravel 450 total dengan 449 pass dan satu intentional
-skip, 110 kombinasi responsive, 32 route accessibility desktop/mobile, 16
-state runtime performance, crawler SEO 14 URL indexable dan sembilan noindex,
-serta Product Detail live desktop/mobile lulus. Readiness tetap 30/42 dengan
+Cart variant switch telah diimplementasikan pada exact source
+`843c5628a2a8842aa84be5220744ab8593c13612`, tetapi belum aktif di production.
+Cart page dan drawer memakai variant live untuk mengganti warna, harga, media,
+stok, route, serta identity; merge destination bersifat satu kali dan quantity
+dibatasi ke stok. Sold-out/unknown/invalid-price gagal tertutup.
+
+Candidate immutable `20260827-843c562` sempat dipromosikan setelah local dan
+server preflight lulus, lalu dikembalikan atomik ke `20260827-4cf4ce6` karena
+live accessibility gate menemukan tujuh region horizontal `/our-product` yang
+tidak keyboard-focusable pada mobile. Responsive live 110 kombinasi lulus,
+tetapi full accessibility production tidak diklaim hingga blocker ini ditutup.
+API, Admin, Nginx, PHP 8.5 FPM, Supervisor, dan dua worker sehat setelah
+rollback; tidak ada migration atau mutasi commerce/database.
+
+Storefront 205/205, Laravel 450 total dengan 449 pass dan satu intentional
+skip, 32 route accessibility desktop/mobile lokal, serta 16 state runtime
+performance lokal lulus. Di production, 110 kombinasi responsive, crawler SEO
+14 URL indexable dan sembilan noindex, serta Product Detail live desktop/mobile
+lulus. Readiness tetap 30/42 dengan
 12 blocker; TokoPay dan commerce production tetap fail-closed.
 
 Release sebelumnya `20260827-832a5f3` memakai exact source

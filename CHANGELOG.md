@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-27 - COYABAG cart variant switch and release hold sync
+
+- Ringkasan: menyinkronkan exact cart variant switching, deterministic cart
+  recovery, candidate release, live accessibility blocker, dan rollback aman.
+- Alasan: status fitur harus membedakan source yang sudah siap dari kemampuan
+  yang benar-benar aktif di production.
+- Produk/area: COYABAG Cart, responsive UI, accessibility, QA, DevOps,
+  provenance, rollback, dan commerce guard.
+- Klasifikasi: `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`; exact source
+  `843c5628a2a8842aa84be5220744ab8593c13612`.
+- Production berubah: tidak; candidate `20260827-843c562` di-rollback ke
+  `20260827-4cf4ce6`. Readiness 30/42, 12 blocker, commerce/TokoPay fail-closed.
+- Dokumen terdampak: Product/Dossier/changelog COYABAG, portfolio, master,
+  root changelog, dan sync status.
+
 ## 2026-08-27 - SagaView S311 custody guard sync
 
 - Ringkasan: menyinkronkan guard read-only untuk integritas manifest, pemisahan

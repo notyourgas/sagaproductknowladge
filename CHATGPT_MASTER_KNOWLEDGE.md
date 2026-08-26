@@ -3661,10 +3661,21 @@ perawatan dari Admin/API; internal key tidak diekspos dan field kosong
 ditandai sedang diverifikasi. Katalog live baru menerbitkan perawatan, sehingga
 tiga field lain tetap gap konten operator.
 
-Storefront 201/201, Laravel 449 pass dan satu intentional skip dari 450, 110
-kombinasi responsive, 32 route accessibility desktop/mobile, 16 state runtime
-performance, crawler SEO 14 URL indexable dan sembilan noindex, Product Detail
-live, public smoke, workers, scheduler, backup, dan log gate lulus. Readiness
+Cart variant switch exact source
+`843c5628a2a8842aa84be5220744ab8593c13612` berstatus
+`IMPLEMENTED_NOT_DEPLOYED`. Cart page/drawer dapat mengganti exact warna,
+harga, media, stok, route, dan identity; destination merge satu kali dan
+quantity dibatasi ke stok, sedangkan sold-out/invalid fail-closed. Candidate
+`20260827-843c562` dikembalikan atomik ke release aktif setelah live audit
+menemukan tujuh region horizontal `/our-product` tidak keyboard-focusable pada
+mobile. Karena itu full accessibility production tidak diklaim sampai blocker
+tersebut diperbaiki dan diuji ulang.
+
+Storefront 205/205, Laravel 449 pass dan satu intentional skip dari 450, 32
+route accessibility desktop/mobile lokal, dan 16 state runtime performance
+lokal lulus. Di production, 110 kombinasi responsive, crawler SEO 14 URL
+indexable dan sembilan noindex, Product Detail live, public smoke, workers,
+scheduler, backup, dan log gate lulus. Readiness
 tetap 30/42 dengan 12 blocker; `commerceActivated=false`, TokoPay terkunci,
 dan business readiness blocked.
 

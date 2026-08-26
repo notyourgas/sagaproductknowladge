@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-27 - COYABAG cart variant switch release held
+
+- Exact source `843c5628a2a8842aa84be5220744ab8593c13612` menambahkan perubahan
+  warna exact pada cart page/drawer dengan refresh harga/media/stok, merge
+  idempotent, stock cap, sold-out guard, dan live-region feedback.
+- Storefront 205/205, Laravel 450, full RC, audit dependency, performance, 10+19
+  focused cart scenarios, dan 110 responsive live combinations lulus.
+- Candidate `20260827-843c562` di-rollback atomik setelah live accessibility
+  menemukan tujuh region `/our-product` non-focusable pada mobile. Status
+  `IMPLEMENTED_NOT_DEPLOYED`; production tetap `20260827-4cf4ce6`, readiness
+  30/42, commerce dan TokoPay fail-closed.
+
 ## 2026-08-27 - SagaView S311 custody capacity guard
 
 - Guard release read-only kini menolak salinan pada volume sumber yang sama,
