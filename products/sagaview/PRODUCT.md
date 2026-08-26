@@ -1,6 +1,24 @@
 # SagaView Product Knowledge
 
-Updated: 26 Agustus 2026 13:30 WIB
+Updated: 26 Agustus 2026 14:17 WIB
+
+SagaView S301 exact `e6b2bf51ed8f4f22dd585aefc7611931bc85fe25`
+sudah `PUSHED / IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED`. Harness Owner UAT
+kini hanya menerima vault entry berklasifikasi `non_customer` yang approval
+ID-nya sama dengan approval run, membuka layar Frames dan Changelog saja,
+menguji Support Hub melalui launcher, serta fail-closed atas API di luar
+allowlist, request data sensitif, media lintas origin, dan mutasi selain login.
+Laporan hanya membawa hitungan aman tanpa response body atau detail request.
+Focused SagaView 43/43 dengan 250 assertion, build 5.097 modul, parser dan dua
+negative guard, serta audit Composer/npm nol advisory lulus.
+
+Authenticated production UAT belum dijalankan karena akun referensi
+non-customer dan approval terikat belum tersedia. Full shared-repository suite
+1019/1021; dua test SagaBook dengan tanggal tetap 26 Agustus menerima 409 saat
+slotnya sudah lewat. Temuan lintas produk itu tidak disentuh pada slice
+SagaView ini, tetapi tetap menahan klaim release penuh. Production SagaView
+tetap backend/Owner `20260826050812-7bf0e0d` dan Studio
+`20260824170456-7ae79ae`; activation dan business readiness tetap false.
 
 Audit rekonsiliasi S300 membuktikan tidak ada runtime SagaView yang masih
 menunggu deploy. Backend/Owner tetap exact

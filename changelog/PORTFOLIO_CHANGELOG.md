@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-26 - SagaView S301 authenticated UAT data boundary
+
+- Exact source `e6b2bf51ed8f4f22dd585aefc7611931bc85fe25` mengikat akun UAT
+  non-customer ke approval run dan mengganti klaim no-data statis dengan gate
+  request yang fail-closed.
+- UAT dibatasi ke Frames/Changelog dan launcher Support Hub; API di luar
+  allowlist, request sensitif, media eksternal, dan mutasi non-login menggagalkan
+  run tanpa mencetak detail data.
+- Focused SagaView 43/250, build, parser/negative guard, serta audit dependency
+  nol lulus. Full shared suite 1019/1021 karena dua fixture tanggal produk lain;
+  produk lain tidak diubah.
+- Delivery `PUSHED / IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED`; production
+  SagaView tidak berubah dan authenticated UAT belum dijalankan.
+
 ## 2026-08-26 - COYABAG Admin Detail Pesanan payment review context integrity
 
 - Exact source `312caf4a6051d341f8ee29c3ea90af7d4f07f89c` aktif pada immutable

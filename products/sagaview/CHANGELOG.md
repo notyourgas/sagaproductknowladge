@@ -1,5 +1,28 @@
 # SagaView Changelog
 
+## 2026-08-26 - S301 authenticated UAT data boundary
+
+- Klasifikasi: `PUSHED / IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED`;
+  production, activation, dan business readiness tidak berubah.
+- Before: harness S289 membuka layar sessions/devices yang dapat memuat data
+  operasional, tetapi menulis `customerDataRead=false` dan
+  `photoOrLocalPathRead=false` sebagai konstanta; vault entry juga belum
+  terikat ke klasifikasi non-customer dan approval ID run.
+- After: exact `e6b2bf51ed8f4f22dd585aefc7611931bc85fe25` mengikat kedua
+  syarat vault, membatasi navigasi ke Frames/Changelog, membuka Support Hub
+  melalui launcher, serta menghitung mutasi, request sensitif, media eksternal,
+  dan API di luar allowlist tanpa mencetak detailnya.
+- Evidence: focused SagaView 43/43 dengan 250 assertion; Node/PowerShell syntax;
+  dua negative guard fail-closed sebelum vault/network; build 5.097 modul;
+  Composer/npm audit nol advisory. Full shared suite 1019/1021; dua test
+  SagaBook bertanggal tetap 26 Agustus gagal 409 setelah slot lewat dan tidak
+  diubah karena berada di luar scope SagaView.
+- Delivery: authenticated UAT belum dijalankan; tidak ada credential customer,
+  foto/path/output customer, database write, deploy, atau perubahan production.
+- Next gate: sediakan akun referensi non-customer dan approval ID terikat, lalu
+  jalankan UAT. Release penuh tetap fail-closed sampai dua failure shared suite
+  ditutup oleh scope pemiliknya.
+
 ## 2026-08-26 - S300 deployment inventory reconciliation
 
 - Klasifikasi: `AUDIT_COMPLETE / PRODUCTION_DEPLOYED / PRODUCTION_UNCHANGED /
