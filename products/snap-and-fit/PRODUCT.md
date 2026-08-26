@@ -34,6 +34,9 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   same-folder resume tanpa duplikasi, guarded local reset, dan private upload intent.
 - Landing event dinamis per slug, pencarian BIB, selfie mock ber-consent,
   candidate gallery, multi-photo cart, quote server-side, dan checkout.
+- Customer dan fotografer memakai Google OAuth. Customer dapat membuat profil
+  biometrik opsional sekali melalui liveness plus referensi depan/kiri/kanan,
+  lalu memakainya hanya untuk mencari pada event yang dipilih; BIB tetap fallback.
 - Harga event pilot Rp25.000 satu foto, Rp60.000 tiga foto, dan Rp99.000 semua
   match.
 - QRIS Tokopay mock/test contract, entitlement social langsung setelah payment
@@ -48,7 +51,9 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 - Delivery: `LOCAL_VALIDATED`.
 - Activation: `NOT_PRODUCTION_ACTIVATED`.
 - Business readiness: `BLOCKED`.
-- Exact private source/docs head `d9285fc`; provider-chaos acceptance feature
+- Exact private source/docs head `2aef57a`; persistent biometric-profile, Google
+  OAuth, AWS plan, dan prototype-topology slice berasal dari exact source tersebut;
+  provider-chaos acceptance feature
   berasal dari `6d3d955`, native age recovery evidence berasal
   dari `4b6c08b`, fail-closed 300-VU load feature
   berasal dari `f06d538`, 500-file uploader recovery feature berasal dari
@@ -88,13 +93,12 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   source `d24fc31` berstatus `READY`; remote Linux web build dan protected
   uploader smoke lulus tanpa error log, tetapi project belum memiliki environment
   variable dan backend staging sengaja fail-closed.
-- Full no-service validation, 64 API test dengan sembilan integrasi eksternal
-  terkontrol skip dan 23 worker test dengan empat integrasi service-dependent
+- Full no-service validation, 69 API test dengan sembilan integrasi eksternal
+  terkontrol skip dan 24 worker test dengan empat integrasi service-dependent
   skip lulus. Disposable loopback MySQL 8.4.9 dari database kosong mengaplikasikan
-  18/18 migration dan menaikkan evidence authoritative menjadi 2 database test,
-  71 API pass dengan satu Redis-only skip, serta 24 worker pass dengan satu
-  Redis/BullMQ-only skip. Enam face-provider test, delapan media test, lima
-  observability test, 55 browser test
+  19/19 migration dan menaikkan evidence authoritative menjadi 2 database test,
+  77 API pass dengan satu Redis-only skip, serta 27 worker pass dengan satu
+  Redis/BullMQ-only skip. Sebelas media test dan 59 browser test
   dengan tiga project-specific skip, seluruh build, dan audit dependency produksi
   nol vulnerability lulus. Delapan shell script operasional juga lulus Git Bash `bash -n`, dan
   staging Compose lulus static interpolation dengan official checksum-verified
@@ -141,15 +145,20 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   Load-fixture feature-head run menjadi evidence hosted terbaru. Branch protection private
   repository juga tetap plan-gated (API mengembalikan 403), sehingga
   required-check enforcement belum dapat diklaim.
-- Deploy staging kini menolak sebelum membaca konfigurasi Compose atau menarik
+- Dedicated deploy staging tetap menolak sebelum membaca konfigurasi Compose atau menarik
   image bila host bukan Linux, marker approval isolasi/enkripsi tidak root-owned
   mode `0600`, kapasitas di bawah 4 vCPU/16 GB/200 GB dengan 100 GB tersedia,
   atau Docker Compose v2 tidak aktif, atau native `age` tidak dapat dieksekusi.
-  Behavioral fixture menolak tiap kondisi
-  secara independen. Read-only revalidation 26 Agustus menemukan hanya shared
-  target 2 vCPU/8,32 GB/102,92 GB, root disk 86% dengan 15,24 GB tersedia,
-  swap praktis habis, active shared services, dan tanpa Docker. Target ditolak
-  tanpa menulis file atau memasuki release path.
+  Behavioral fixture menolak tiap kondisi secara independen. Read-only revalidation
+  terbaru menemukan shared target 2 vCPU/~8 GB dengan sekitar 63 GB disk tersedia,
+  swap praktis habis, active shared services, dan tanpa Docker. Target tidak dimutasi.
+  Founder mengizinkan topology prototype low-footprint: web tetap di Vercel,
+  sedangkan satu API dan worker boleh memakai systemd hanya setelah database/user,
+  Redis ACL/namespace, path, port, Nginx, resource-limit, backup, dan rollback
+  project-only terbukti. Ini bukan `STAGING_READY` atau izin mengubah produk lain.
+- AWS SSO dan Malaysia region terverifikasi. Terraform valid dan plan terbaru
+  `40 add / 0 change / 0 destroy`; apply ditahan karena satu KMS key dan penggunaan
+  Rekognition/S3/CloudFront dapat menimbulkan biaya.
 - Host policy Nginx API-only sekarang dirender deterministik untuk topologi
   hybrid Vercel ke authoritative VPS. Deploy dan rollback sama-sama mewajibkan
   hostname serta SHA-256 konfigurasi yang exact, root-owned, tidak writable,
@@ -187,13 +196,13 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 
 ## Batas klaim
 
-- Belum `STAGING_READY`; isolated VPS API/worker/MySQL/Redis belum tersedia.
+- Belum `STAGING_READY`; API/worker/MySQL/Redis prototype belum deployed atau terhubung.
 - Tokopay real-money, AWS biometric production, foto peserta nyata, production
   DNS, dan public activation belum diaktifkan.
 - OpenAI tidak menerima foto, selfie, face vector, signed URL, raw BIB, detail
   pembayaran, atau PII peserta.
-- Shared Hostinger VPS yang diperiksa tidak dipakai karena isolation dan
-  kapasitasnya tidak memenuhi gate Snap and Fit.
+- Shared Hostinger VPS belum dipakai. Hanya topology prototype project-isolated
+  yang boleh dilanjutkan setelah owner menyetujui exact mutation/DNS/cost gate.
 - Rate limit memakai memory hanya untuk local/test. Staging/production menolak
   startup tanpa Redis bersama, memakai key client yang di-hash, serta fail-closed
   saat control plane limiter tidak tersedia. Bukti dua instance nyata masih gate staging.

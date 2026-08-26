@@ -10,6 +10,26 @@ production, activation, dan business readiness.
 Mock, fixture, preview frontend, dan test lokal bukan bukti provider atau
 production activation.
 
+## 2026-08-26 - Google OAuth, persistent biometric profile, and prototype infrastructure plan
+
+- Exact private source `2aef57a` menambahkan Google OAuth untuk customer/fotografer,
+  profil biometrik opsional sekali-daftar dengan liveness plus depan/kiri/kanan,
+  pencarian exact-selected-event, 12-month refresh, consent withdrawal, lifecycle,
+  dan S3-first deletion adapter. Biometric tidak menjadi faktor login/payment dan
+  BIB tetap fallback.
+- MySQL 8.4.9 clean-applies 19/19 migration; 2 database, 77 API, 27 worker, dan
+  59 browser test lulus. Full validation, dependency audit, Terraform validation,
+  diff check, dan secret scan lulus.
+- AWS SSO/region Malaysia terverifikasi. Terraform plan adalah 40 add/0 change/
+  0 destroy; tidak ada resource di-apply atau provider call/data nyata diproses.
+- Read-only VPS audit menemukan sekitar 63 GB disk tersedia, tetapi host tetap
+  shared 2 vCPU/~8 GB, swap hampir habis, active service/data lain, dan tanpa
+  Docker. Founder menerima bounded Vercel+systemd prototype setelah exact project
+  isolation/cost/DNS approval; dedicated topology tetap target scale-up.
+- Klasifikasi `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+  production tidak berubah. Google credential, AWS apply, DNS/TLS, Tokopay test,
+  legal/device/benchmark/deletion/connected UAT tetap gate.
+
 ## 2026-08-26 - Fail-closed provider-chaos acceptance and preview refresh
 
 - Exact private provider-chaos feature `6d3d955`; source/docs head `d9285fc`.

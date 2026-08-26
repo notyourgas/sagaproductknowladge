@@ -1,5 +1,21 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-26 - Snap and Fit biometric profile and prototype topology sync
+
+- Ringkasan: menyinkronkan Google OAuth, optional persistent three-pose biometric
+  profile, selected-event search, lifecycle/deletion, AWS Terraform plan, dan
+  bounded Vercel+systemd prototype topology.
+- Alasan: founder ingin prototype Madiun 1–2 event/bulan segera dapat diuji
+  dengan biometrik sekali-daftar tanpa mengklaim staging/production readiness.
+- Produk/area: Snap and Fit identity, biometric privacy, MySQL, media, AWS,
+  Hostinger VPS, deployment, QA, security, dan release gates.
+- Klasifikasi: `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; exact
+  source `2aef57a`.
+- Production berubah: tidak. AWS plan belum di-apply, DNS/provider/real data
+  belum aktif, dan shared VPS belum dimutasi.
+- Dokumen terdampak: Decisions, Product, Dossier, Snap and Fit changelog,
+  portfolio changelog, master knowledge, gaps, root changelog, dan sync status.
+
 ## 2026-08-26 - SagaWork Workspace/Cabang and finalization program sync
 
 - Ringkasan: menyinkronkan keputusan founder bahwa Workspace adalah cabang operasional dalam Company, multi-workspace HR scope, primary/secondary Staff assignment, per-workspace shift/policy/geofence, seluruh request Staff, dan master program F01-F60.

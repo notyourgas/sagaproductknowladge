@@ -103,7 +103,7 @@ SagaWork active public synthetic staging runtime sekarang exact `e59efcd`; domai
 
 SagaWork Workspace/Cabang operating model sekarang `CONFIRMED / PLANNED_NOT_IMPLEMENTED` dari exact planning source `79179d9`. Workspace berarti cabang/unit operasional dalam satu Company dan memakai existing `location` domain pada MVP; Organization HR dapat menangani seluruh Workspace, Workspace HR satu atau beberapa scope, sedangkan Staff mempunyai primary serta effective-dated secondary/temporary assignment yang berbeda dari permission scope. Setiap Workspace dapat mempunyai Staff, shift, policy, timezone, dan GPS/geofence berbeda. Request Hub target meliputi izin, cuti, sakit, ganti hari libur, swap/replacement, lembur, dan correction. Finalisasi dipecah menjadi 15 batch/Sprint F01-F60: F01-F52 sampai owner rehearsal dan five-Staff canary; F53-F60 closed-beta/post-pilot. Runtime tetap `e59efcd`, K0/K1 NO-GO, performance OFF, dan tidak ada schema/API/UI/deploy/production activation dari planning ini.
 
-Snap and Fit exact private source/docs head `d9285fc` berstatus `CONFIRMED /
+Snap and Fit exact private source/docs head `2aef57a` berstatus `CONFIRMED /
 LOCAL_VALIDATED`; provider-chaos acceptance feature berasal dari `6d3d955`,
 native age recovery evidence berasal dari `4b6c08b`,
 fail-closed 300-VU load feature berasal dari `f06d538`,
@@ -186,15 +186,25 @@ implementation, dan digest-only feature head menunjukkan pola yang sama. Ini
 hosted-runner/account blocker, bukan source regression. Required-check
 enforcement juga belum tersedia karena branch-protection API untuk private
 repository masih plan-gated (403).
-Deploy staging sekarang menjalankan fail-closed host preflight sebelum Compose:
+Persistent Google-owned account biometric profile sekarang `LOCAL_VALIDATED`:
+customer dapat menyelesaikan satu liveness plus referensi depan/kiri/kanan,
+kemudian menjalankan search hanya pada event yang dipilih; BIB tetap fallback,
+biometric bukan faktor login/payment, retention maksimal 12 bulan, dan withdrawal
+memicu S3-first deletion fan-out. Google OAuth customer/fotografer, MySQL
+migration ke-19, UI mobile, lifecycle/deletion worker, serta 59 browser pass
+tercakup. AWS SSO/region Malaysia sudah terverifikasi; Terraform valid dan plan
+40 add/0 change/0 destroy, tetapi apply/real call ditahan pada cost/legal/device gate.
+Dedicated deploy staging sekarang menjalankan fail-closed host preflight sebelum Compose:
 Linux, marker approval isolasi/enkripsi root-owned `0600`, minimum 4 vCPU,
 16 GB RAM, 200 GB disk dengan 100 GB tersedia, Docker Engine, Compose v2, dan
 executable native `age`.
 Behavioral fixture menolak tiap kondisi. Revalidasi read-only 26 Agustus
-menemukan hanya shared target 2 vCPU/8,32 GB/102,92 GB, disk 86% dengan 15,24 GB
-tersedia, swap praktis habis, active shared services, dan tanpa Docker. Target
-tidak dimutasi. Ini menutup accidental shared-host deployment, bukan bukti
-isolated staging tersedia.
+menemukan shared target 2 vCPU/~8 GB dengan sekitar 63 GB disk tersedia, swap
+praktis habis, active shared services/data, dan tanpa Docker. Target tidak
+dimutasi. Founder menerima prototype low-footprint Vercel web plus satu API/worker
+systemd hanya setelah project-only database/user, Redis ACL/namespace,
+path/port/Nginx/resource-limit/backup/rollback disetujui. Dedicated topology tetap
+scale-up target; belum ada staging deployment.
 API staging Nginx kini dirender deterministik untuk hybrid Vercel-to-VPS dan
 hanya meneruskan `/v1` ke loopback API. Deploy dan rollback sama-sama mengikat
 exact hostname/config SHA-256, root ownership, syntax/dump/loaded-host proof,
@@ -221,9 +231,9 @@ artifact, mempertahankan checksum setelah simulated move, menolak modified
 ciphertext, dan memulihkan 51 tabel ke MySQL kedua. Recovery schema, migration
 health, deletion integrity, dan ledger balance lulus dalam 26,23 detik. Real
 off-host transfer, Linux permission, retention/key custody, dan RPO/RTO tetap gate.
-Disposable loopback MySQL 8.4.9 mengaplikasikan 18/18 migration dari kosong,
-menjalankan seed sintetis, dan meluluskan 2 database test, 71 active API test,
-serta 24 active worker test; skip tersisa hanya Redis/BullMQ. Dump sintetis
+Disposable loopback MySQL 8.4.9 mengaplikasikan 19/19 migration dari kosong,
+menjalankan seed sintetis, dan meluluskan 2 database test, 77 active API test,
+serta 27 active worker test; skip tersisa hanya Redis/BullMQ. Dump sintetis sebelumnya
 pulih ke database kedua dengan 51 tabel, recovery schema lengkap, nol orphan
 deletion task, dan ledger seimbang. Ini menutup kompatibilitas MySQL lokal,
 bukan Redis/Linux container/isolated staging/off-host recovery.

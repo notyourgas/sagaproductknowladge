@@ -357,6 +357,20 @@ keputusan pengganti.
 | Status | `CONFIRMED`; production-deployed, human UAT pending |
 | Dokumen terkait | [AOGTIVITY Product](products/aogticvity/PRODUCT.md), [AOGTIVITY Dossier](products/aogticvity/DOSSIER.md), [AOGTIVITY Changelog](products/aogticvity/CHANGELOG.md), [Gaps](GAPS.md) |
 
+## DEC-109 - Snap and Fit memakai profil biometrik akun dan topology prototype low-footprint
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-26 |
+| Topik | Identity, biometric enrollment, dan deployment awal Snap and Fit |
+| Keputusan | Customer dan fotografer login Google. Customer dapat membuat profil biometrik opsional sekali melalui liveness plus referensi depan/kiri/kanan, lalu menjalankan face search hanya pada event yang dipilih; BIB tetap fallback dan biometric bukan faktor login/payment. Untuk prototype Madiun 1–2 event/bulan, web tetap di Vercel dan satu API/worker boleh memakai systemd pada VPS shared hanya dengan project-only database/user, Redis ACL/namespace, path, port, Nginx, resource limit, backup, dan rollback. AWS Malaysia tetap provider target. |
+| Alasan | Enrollment berulang memperberat pengalaman customer, sedangkan volume prototype belum membenarkan VPS baru. Event scoping, consent/deletion, dan logical isolation menjaga risiko tetap terbatas. |
+| Alternatif yang dipertimbangkan | Selfie baru pada setiap pencarian; BIB-only; all-on-VPS; dedicated 4 vCPU/16 GB Docker sejak awal; OpenAI untuk face recognition. |
+| Dampak | Source `2aef57a` mengimplementasikan Google OAuth/profile/lifecycle/deletion dan AWS plan. Real biometric, AWS apply, DNS, Tokopay test/live, dan public activation tetap memerlukan gate terpisah; produk tetap `LOCAL_VALIDATED`. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED` |
+| Dokumen terkait | [Snap and Fit Product](products/snap-and-fit/PRODUCT.md), [Snap and Fit Dossier](products/snap-and-fit/DOSSIER.md), [Snap and Fit Changelog](products/snap-and-fit/CHANGELOG.md), [Gaps](GAPS.md) |
+
 ## DEC-001 — Repository sebagai single source of truth
 
 | Field | Isi |

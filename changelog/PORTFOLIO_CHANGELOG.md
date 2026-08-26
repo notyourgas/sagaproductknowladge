@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-26 - Snap and Fit persistent biometric prototype slice
+
+- Exact private source `2aef57a` menambahkan Google OAuth, optional one-time
+  three-pose biometric profile, exact-selected-event search, lifecycle, dan
+  S3-first consent withdrawal/deletion; BIB tetap fallback dan biometric bukan
+  faktor login/payment.
+- MySQL 19/19, 77 API, 27 worker, 59 browser, full validation, dependency audit,
+  dan secret scan lulus. AWS Terraform valid dengan plan 40 add/0 change/0
+  destroy tetapi belum di-apply.
+- Founder menerima topology prototype Vercel web + bounded systemd API/worker
+  pada shared VPS hanya setelah project isolation/cost/DNS gate. Status tetap
+  `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production/business activation
+  tidak berubah.
+
 ## 2026-08-26 - SagaWork Workspace/Cabang finalization program
 
 - Andreas mengunci Workspace sebagai cabang operasional di dalam Company: HR dapat menangani satu/beberapa/semua Workspace, Staff mempunyai assignment primer/sekunder/temporer, dan tiap Workspace dapat memakai shift/policy/geofence berbeda.

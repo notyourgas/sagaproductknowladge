@@ -12,7 +12,8 @@ credential, PII, identifier tenant/perangkat, atau detail provider sensitif.
 - Delivery: `LOCAL_VALIDATED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED`
-- Provenance: exact private source/docs head `d9285fc`, provider-chaos acceptance
+- Provenance: exact private source/docs head `2aef57a`, persistent biometric-profile,
+  Google OAuth, AWS plan, dan prototype-topology slice dari head tersebut; provider-chaos acceptance
   feature `6d3d955`, native age recovery
   evidence `4b6c08b`, fail-closed 300-VU load
   feature `f06d538`, 500-file uploader recovery feature `6f57416`, fail-closed
@@ -81,8 +82,10 @@ perangkat fotografer sampai ada permintaan HiRes dari transaksi terverifikasi.
    folder yang sama untuk memproses hanya file tersisa tanpa duplikasi, lalu
    mengunggah preview privat dengan checksum. Reset lokal memerlukan konfirmasi
    dan dikunci setelah server batch terdaftar.
-3. Peserta membuka event, menyetujui notice, lalu mencari melalui BIB atau
-   selfie feature-flagged. Confirm/reject terikat exact anonymous search session.
+3. Peserta login Google dan dapat membuat profil biometrik opsional satu kali
+   melalui liveness plus referensi depan/kiri/kanan. Pencarian profil hanya
+   berjalan setelah peserta memilih event; BIB tetap tersedia. Confirm/reject
+   terikat exact anonymous search session.
 4. Server membentuk candidate, quote, bundle, dan checkout; client tidak menjadi
    source of truth harga. Verified checkout mengubah server-priced cart menjadi
    order dengan provenance satu-ke-satu.
@@ -99,17 +102,19 @@ perangkat fotografer sampai ada permintaan HiRes dari transaksi terverifikasi.
 
 ## Permission dan privacy
 
-- Customer memakai continuation/email OTP; role privileged memakai password dan
-  TOTP fresh yang terikat exact session.
+- Customer dan fotografer memakai Google OAuth; organizer/admin privileged tetap
+  memakai password dan TOTP fresh yang terikat exact session.
 - Authorization default-deny memakai exact organization/event/owner predicate.
 - Support grant terikat user, event, case, permission allowlist, dan maksimal
   60 menit.
 - Wrong-match menyembunyikan asset sebelum review. Deletion membuat task
   target-hashed untuk sistem yang relevan dan tidak menganggap partial fan-out
   sebagai sukses.
-- Raw selfie maksimal 24 jam; face collection maksimal 24 jam setelah sales
-  close; preview publik maksimal 30 hari setelah sales close. Execution
-  staging/production masih gate terpisah.
+- Raw liveness/session selfie maksimal 24 jam; profil biometrik akun opsional
+  menyimpan tiga referensi privat maksimal 12 bulan atau sampai consent ditarik.
+  Referensi itu bukan faktor login/payment dan hanya dicari pada event terpilih.
+  Face collection event maksimal 24 jam setelah sales close; preview publik
+  maksimal 30 hari. Execution staging/production masih gate terpisah.
 
 ## UI/UX
 
@@ -134,6 +139,10 @@ fotografer desktop-optimized.
   delete pada exact event collection. Worker, API, encrypted provider-reference
   persistence, HMAC lookup, attempt lockout, dan official Amplify client sudah
   terhubung secara lokal; tidak ada AWS call yang diaktifkan.
+- Account profile service, migration, three-reference storage, versioned consent,
+  event-selected search, lifecycle, dan S3-first deletion adapter sudah
+  `LOCAL_VALIDATED`. AWS Malaysia Terraform valid dan plan `40 add / 0 change /
+  0 destroy`; belum di-apply karena cost/activation gate.
 - Tokopay Advanced Order, callback verification, dan Check Order sebagai kontrak
   payment; live flag default-off.
 - Runtime container dipisah menjadi API, worker, dan one-shot migration/seed.
@@ -170,6 +179,10 @@ fotografer desktop-optimized.
   retention/key custody, serta pengukuran RPO/RTO masih gate isolated staging.
 - Vercel tidak terhubung langsung ke MySQL/Redis dan long-running image work
   tidak berjalan pada Vercel Functions.
+- Untuk prototype 1–2 event per bulan, founder menerima Vercel web plus satu API
+  dan worker systemd pada VPS shared hanya dengan project-only DB/user, Redis
+  ACL/namespace, path/port/Nginx/resource-limit/backup/rollback. Dedicated Docker
+  topology tetap target scale-up dan shared workload lain tidak boleh diubah.
 - API memakai rate limiter memory pada local/test dan mewajibkan atomic Redis
   shared-window pada staging/production. Key client/band di-hash, runtime outage
   fail-closed 503, sedangkan health probe tetap tersedia untuk recovery.
@@ -233,11 +246,11 @@ fotografer desktop-optimized.
 ## Evidence lokal
 
 - Full format/lint/typecheck/test/build lulus.
-- No-service suite: 63 API test lulus dengan sembilan service-dependent skip dan
-  21 worker test lulus dengan empat service-dependent skip.
-- Disposable loopback MySQL 8.4.9 menerapkan 18/18 migration dari database kosong,
-  seed sintetis, 2 database test, 71 active API pass dengan satu Redis-only skip,
-  serta 24 active worker pass dengan satu Redis/BullMQ-only skip. Clean dump juga
+- No-service suite: 69 API test lulus dengan sembilan service-dependent skip dan
+  24 worker test lulus dengan empat service-dependent skip.
+- Disposable loopback MySQL 8.4.9 menerapkan 19/19 migration dari database kosong,
+  seed sintetis, 2 database test, 77 active API pass dengan satu Redis-only skip,
+  serta 27 active worker pass dengan satu Redis/BullMQ-only skip. Clean dump sebelumnya
   pulih ke database kedua dengan 51 tabel, delapan recovery table wajib, 18
   migration row, nol orphan deletion task, dan ledger Rp25.000/Rp25.000 seimbang.
   Ini evidence lokal, bukan encrypted off-host restore atau deployed staging.
@@ -246,8 +259,8 @@ fotografer desktop-optimized.
   off-host move, menolak modified ciphertext, dan memulihkan 51 tabel ke MySQL
   kedua. Delapan recovery table, 18 migration sehat, deletion integrity, dan
   ledger balance lulus dalam 26,23 detik; kedua port disposable ditutup.
-- Enam face-provider test, delapan media test, dan lima observability test lulus.
-- 55 Playwright mobile/desktop lulus dan tiga project-specific skip disengaja;
+- Enam face-provider test, sebelas media test, dan lima observability test lulus.
+- 59 Playwright mobile/desktop lulus dan tiga environment-specific skip disengaja;
   operator controlled demo, checkout/order library, role workflow, preview upload,
   exact 500-file partial reload/reselection recovery, multipart interruption/resume,
   accessibility, dan no-overflow tercakup.
@@ -320,16 +333,16 @@ fotografer desktop-optimized.
 
 ## Risiko dan gate terbuka
 
-- Isolated staging VPS, MySQL, Redis, private storage, migration, worker, dan API
-  belum deployed.
+- Prototype VPS API/worker, project-only MySQL/Redis isolation, private storage,
+  migration, dan Vercel BFF belum deployed.
 - DNS/TLS certificate, firewall, exact Linux Nginx fixture, external header/TLS
   scan, live edge 429, dan loaded-config proof pada isolated host belum ada.
 - Hosted Trivy job, final digest-addressed Linux image scan, dan runtime-host
   scan belum berjalan; local repository scan tidak menggantikannya.
-- Revalidasi read-only 26 Agustus membuktikan satu-satunya SSH target tetap
-  shared 2 vCPU/8,32 GB/102,92 GB, disk 86% dengan 15,24 GB tersedia, swap
-  praktis habis, active shared services, dan tanpa Docker. Target tidak dimutasi
-  atau dipakai untuk Snap and Fit.
+- Revalidasi read-only 26 Agustus membuktikan target shared 2 vCPU/~8 GB sekarang
+  memiliki sekitar 63 GB disk tersedia, tetapi swap praktis habis, active shared
+  services/data masih ada, dan Docker tidak tersedia. Target tidak dimutasi.
+  Prototype systemd tetap menunggu exact owner approval dan stop-condition proof.
 - MySQL compatibility lokal sudah ditutup, tetapi pengulangan MySQL dan runtime
   Redis pada isolated Linux staging, protected synthetic deletion/replay,
   encrypted off-host backup/restore, rollback, 300 VU isolated-staging load,
@@ -339,7 +352,7 @@ fotografer desktop-optimized.
   wajib diulang terhadap isolated staging dan bukan evidence provider nyata.
 - Optional cross-instance Redis limiter test belum dieksekusi karena isolated
   Redis staging belum tersedia; implementasi lokal bukan bukti distributed runtime.
-- Seluruh 18 migration termasuk inbox sudah clean-applied lokal, tetapi belum
+- Seluruh 19 migration termasuk persistent biometric profile sudah clean-applied lokal, tetapi belum
   diaplikasikan pada isolated staging; real email delivery juga tetap external gate.
 - Real direct/multipart S3/KMS HiRes interruption/resume/replacement, ETag CORS,
   one-day incomplete-upload lifecycle, dan CloudFront trusted-key/origin proof
@@ -347,7 +360,7 @@ fotografer desktop-optimized.
 - Browser/IndexedDB recovery 500 JPEG sudah tervalidasi mobile dan desktop,
   tetapi transfer 500 object ke S3, worker processing, quarantine/DLQ, serta
   watermark publication saat interruption masih gate isolated staging.
-- Rekognition orchestration sudah terhubung lokal dan teruji fake-provider,
+- Rekognition orchestration dan persistent account-profile flow sudah terhubung lokal dan teruji fake-provider,
   tetapi belum pernah memanggil AWS. Real MySQL/S3/Rekognition indexing,
   liveness, search, deletion, dan evidence provider belum ada; synthetic
   orchestration bukan bukti penghapusan provider. Transitive React peer metadata

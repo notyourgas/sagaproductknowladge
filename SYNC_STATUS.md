@@ -12,12 +12,36 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-26T18:05:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-26T18:20:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | exact `origin/main` `06a2de0d2a5d285d514aa41d135955196372246e` |
-| Informasi terakhir disinkronkan | SagaWork Workspace/Cabang model and F01-F60 finalization program. |
-| Status sinkronisasi | `CONFIRMED / PLANNED_NOT_IMPLEMENTED / PUBLIC_SYNTHETIC_TRIAL_UNCHANGED`; production tidak berubah. |
+| Baseline sebelum pembaruan | exact `origin/main` sebelum Snap and Fit sync |
+| Informasi terakhir disinkronkan | Snap and Fit Google OAuth, persistent biometric profile, AWS plan, dan low-footprint prototype topology. |
+| Status sinkronisasi | `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah. |
+
+## Snap and Fit persistent biometric prototype slice
+
+- Exact source `2aef57a` mengimplementasikan Google OAuth, optional liveness plus
+  three-pose account profile, selected-event search, retention/lifecycle, dan
+  S3-first consent withdrawal/deletion; BIB tetap fallback.
+- MySQL 19/19, 77 API, 27 worker, 59 browser, full validation, dependency audit,
+  Terraform validation, diff check, dan secret scan lulus.
+- AWS SSO/region Malaysia terverifikasi dan plan 40 add/0 change/0 destroy;
+  belum ada apply/provider call. Shared VPS belum dimutasi dan hanya boleh
+  menerima bounded project-isolated systemd prototype setelah approval.
+- Production, real money, real biometric data, DNS, dan business readiness tidak berubah.
+
+## File yang berubah pada sinkronisasi ini (Snap and Fit biometric prototype)
+
+- `DECISIONS.md`
+- `products/snap-and-fit/PRODUCT.md`
+- `products/snap-and-fit/DOSSIER.md`
+- `products/snap-and-fit/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaWork Workspace/Cabang finalization program
 
