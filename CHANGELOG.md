@@ -1,5 +1,21 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-26 - COYABAG Admin Media publication integrity sync
+
+- Ringkasan: menyinkronkan status live/draft/arsip/pending media, queue menunggu
+  publish, publication-checklist handoff, dan immutable release terbaru.
+- Alasan: operator harus dapat membedakan media yang tersimpan di dashboard
+  dari media yang sudah masuk snapshot pelanggan.
+- Produk/area: COYABAG Admin Media, product publication, storefront snapshot,
+  responsive UI/UX, accessibility, QA, security, release, dan rollback.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED`; exact source
+  `5184bfe5a41a1fc0f650720c2d0f6b0eaa9d9069`, release
+  `20260826-5184bfe`, rollback `20260826-313aa8f`.
+- Production berubah: ya, Admin/API/storefront runtime. Tidak ada migration atau
+  commerce activation; readiness tetap 30/42 dengan 12 blocker.
+- Dokumen terdampak: Product, Dossier, changelog COYABAG, portfolio, master,
+  root changelog, dan sync status.
+
 ## 2026-08-26 - Snap and Fit biometric profile and prototype topology sync
 
 - Ringkasan: menyinkronkan Google OAuth, optional persistent three-pose biometric

@@ -78,9 +78,18 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260826-313aa8f` memakai exact source
-`313aa8fa7f570147d176729b5d78c876d74af4ef` dan rollback
-`20260826-4abf96f`. Katalog studio V2 menyimpan 11 tipe, 31 warna, dan 372
+Release production terbaru `20260826-5184bfe` memakai exact source
+`5184bfe5a41a1fc0f650720c2d0f6b0eaa9d9069` dan rollback
+`20260826-313aa8f`. Admin Media membandingkan media mutable dengan snapshot
+produk immutable terakhir dan memisahkan state live, draft, arsip, baru,
+diubah, serta akan dihapus. Queue menunggu publish, ringkasan perubahan, dan
+action ke checklist publikasi membuat status customer-visible eksplisit;
+perubahan media tetap tidak masuk katalog sampai publish produk. Acceptance
+desktop/mobile, 183 storefront test, 432 Laravel test, security/dependency
+gate, no-migration immutable deploy, dan public smoke lulus.
+
+Release sebelumnya `20260826-313aa8f` mengaktifkan Katalog studio V2 dengan
+11 tipe, 31 warna, dan 372
 file WebP fisik. Tujuh produk terverifikasi—YONA, KIARA, GHEA, OLLA, XENA,
 KIMORA, dan ORLENA—dipublikasikan dengan 21 varian dan 12 foto per varian.
 Tipe C, D, E, dan I tetap draft karena nama publik, harga, serta dimensi belum

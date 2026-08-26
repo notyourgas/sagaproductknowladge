@@ -4,6 +4,20 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-26 - Admin Media publication integrity production release
+
+- Klasifikasi: `CONFIRMED` dari exact source
+  `5184bfe5a41a1fc0f650720c2d0f6b0eaa9d9069`, immutable Hostinger release
+  `20260826-5184bfe`, rollback `20260826-313aa8f`, dan public runtime smoke.
+- Admin Media membedakan media live, draft, arsip, baru, diubah, dan akan
+  dihapus terhadap snapshot publik terakhir. Queue menunggu publish dan action
+  ke checklist publikasi membuat perubahan customer-visible eksplisit.
+- Storefront tetap memakai snapshot lama sampai publish produk. Desktop/mobile,
+  183 storefront test, 432 Laravel test, security/dependency gate,
+  no-migration immutable deploy, Catalog V2, workers, dan public smoke lulus.
+- Delivery `PRODUCTION_DEPLOYED`; commerce activation/business readiness
+  `BLOCKED`; readiness 30/42, 12 blocker, checkout/provider fail-closed.
+
 ## 2026-08-26 - Catalog V2 studio media production release
 
 - Klasifikasi: `CONFIRMED` dari exact source

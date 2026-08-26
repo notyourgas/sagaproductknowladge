@@ -12,12 +12,34 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-26T18:20:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-26T17:50:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | exact `origin/main` sebelum Snap and Fit sync |
-| Informasi terakhir disinkronkan | Snap and Fit Google OAuth, persistent biometric profile, AWS plan, dan low-footprint prototype topology. |
-| Status sinkronisasi | `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah. |
+| Baseline sebelum pembaruan | exact `e085e7664ba08d6a824a20b9d2228f20b70b1990` |
+| Informasi terakhir disinkronkan | COYABAG Admin Media publication integrity dan immutable production release. |
+| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED`; commerce tetap `BLOCKED`. |
+
+## COYABAG Admin Media publication integrity
+
+- Exact source `5184bfe5a41a1fc0f650720c2d0f6b0eaa9d9069` aktif pada immutable
+  release `20260826-5184bfe`; rollback `20260826-313aa8f` tersedia.
+- Dashboard membedakan live, draft, arsip, baru, diubah, dan akan dihapus,
+  menyediakan queue menunggu publish, serta handoff ke checklist publikasi.
+- Storefront tetap memakai snapshot immutable sampai publish produk. Catalog V2,
+  desktop/mobile, 183 storefront test, 432 Laravel test, security/dependency
+  gate, no-migration deploy, workers, dan public smoke lulus.
+- Surface production berubah. Commerce tetap fail-closed pada 30/42 checks,
+  12 blocker; checkout dan provider tidak diaktifkan.
+
+## File yang berubah pada sinkronisasi ini (COYABAG Admin Media publication)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## Snap and Fit persistent biometric prototype slice
 

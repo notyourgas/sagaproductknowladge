@@ -61,9 +61,16 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260826-313aa8f` dengan exact source
-  `313aa8fa7f570147d176729b5d78c876d74af4ef` melayani production;
-  rollback langsung `20260826-4abf96f` dipertahankan.
+- Release aktif `20260826-5184bfe` dengan exact source
+  `5184bfe5a41a1fc0f650720c2d0f6b0eaa9d9069` melayani production;
+  rollback langsung `20260826-313aa8f` dipertahankan.
+- Admin Media membandingkan media mutable dengan snapshot produk immutable
+  terakhir. Operator melihat state live, draft, arsip, baru, diubah, dan akan
+  dihapus, beserta queue menunggu publish dan action ke checklist publikasi.
+- Perubahan media tidak masuk katalog pelanggan sampai publish produk eksplisit.
+  Desktop/mobile acceptance, 183 storefront test, 432 Laravel test, release
+  gate, immutable deploy, dan public smoke lulus tanpa migration baru.
+- Release sebelumnya `20260826-313aa8f` mengaktifkan Catalog V2 studio media.
 - Katalog studio V2 memiliki 11 tipe, 31 warna, dan 372 file WebP fisik.
   Tujuh produk terverifikasi dipublikasikan dengan 21 varian dan 12 foto per
   varian: YONA, KIARA, GHEA, OLLA, XENA, KIMORA, dan ORLENA.

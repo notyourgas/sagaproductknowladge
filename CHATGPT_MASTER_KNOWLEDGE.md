@@ -3541,9 +3541,18 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release aktif `20260826-313aa8f` menjalankan exact source
-`313aa8fa7f570147d176729b5d78c876d74af4ef` dengan rollback
-`20260826-4abf96f`. Katalog studio V2 menyimpan 11 tipe, 31 warna, dan 372 WebP
+Release aktif `20260826-5184bfe` menjalankan exact source
+`5184bfe5a41a1fc0f650720c2d0f6b0eaa9d9069` dengan rollback
+`20260826-313aa8f`. Admin Media membandingkan media mutable dengan snapshot
+produk immutable terakhir dan menampilkan live, draft, arsip, baru, diubah,
+akan dihapus, queue menunggu publish, serta action ke checklist publikasi.
+Perubahan media tidak masuk katalog sebelum publish produk eksplisit.
+Desktop/mobile, 183 storefront test, 432 Laravel test, release gate,
+no-migration immutable deploy, dan public smoke lulus. Readiness tetap 30/42
+dengan 12 blocker; commerce tidak production-activated.
+
+Release sebelumnya `20260826-313aa8f` mengaktifkan Katalog studio V2 dengan
+11 tipe, 31 warna, dan 372 WebP
 fisik. Tujuh produk terverifikasi—YONA, KIARA, GHEA, OLLA, XENA, KIMORA, dan
 ORLENA—live sebagai 21 varian dengan 12 foto per varian. Tipe C, D, E, dan I
 tetap draft karena nama publik, harga, dan dimensi belum terverifikasi. Semua

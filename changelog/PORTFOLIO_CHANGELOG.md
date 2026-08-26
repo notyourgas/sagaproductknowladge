@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-26 - COYABAG Admin Media publication integrity
+
+- Exact source `5184bfe5a41a1fc0f650720c2d0f6b0eaa9d9069` aktif pada immutable
+  release `20260826-5184bfe`; rollback `20260826-313aa8f` tersedia.
+- Operator kini membedakan media live, draft, arsip, baru, diubah, dan akan
+  dihapus, melihat queue menunggu publish, lalu menuju checklist publikasi.
+- Katalog pelanggan tetap memakai snapshot immutable sampai publish produk.
+  Desktop/mobile, 183 storefront test, 432 Laravel test, no-migration deploy,
+  Catalog V2, workers, dan public smoke lulus.
+- Status `PRODUCTION_DEPLOYED`; commerce/business readiness tetap `BLOCKED`
+  pada 30/42 checks dengan 12 blocker.
+
 ## 2026-08-26 - Snap and Fit persistent biometric prototype slice
 
 - Exact private source `2aef57a` menambahkan Google OAuth, optional one-time
