@@ -1,5 +1,15 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-26 - SagaWork Sprint 31 secure HR bootstrap sync
+
+- Ringkasan: menyinkronkan guarded/idempotent first-organization + HR provisioning, one-time bootstrap, mandatory TOTP, policy acknowledgement, dan operator recovery/session revocation.
+- Alasan: Owner harus dapat memiliki password/MFA sendiri tanpa credential berada di stdout, Git, screenshot, atau dokumen publik; recovery harus mencabut akses lama.
+- Produk/area: SagaWork identity, organization provisioning, MySQL schema, HR activation UI, API/OpenAPI, recovery, security, QA, dan pilot gates.
+- Klasifikasi: `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; feature `6d3fc98`, acceptance `666fbef`.
+- Production berubah: tidak. Active synthetic staging/Preview tetap sama; tidak ada akun/data nyata. K0/K1 tetap NO-GO menunggu external environment gates dan actual Owner UAT.
+- Dokumen terdampak: Product, Dossier, SagaWork changelog, portfolio changelog, master knowledge, gaps, root changelog, dan sync status.
+- Next action: tutup K0, deploy exact release ke pilot runtime terpisah, lalu jalankan restricted Andreas bootstrap/TOTP/session/recovery UAT untuk K1.
+
 ## 2026-08-26 - COYABAG Admin Produk publication context sync
 
 - Ringkasan: menyinkronkan revision guard, publication-context guard, operator

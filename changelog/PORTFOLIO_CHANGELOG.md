@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-08-26 - SagaWork Sprint 31 secure HR bootstrap
+
+- `CONFIRMED / LOCAL_VALIDATED`: feature `6d3fc98`, acceptance `666fbef` menambah guarded/idempotent first-organization + HR provisioning, one-time secret, HR-owned password, mandatory TOTP, policy acknowledgement, dan operator recovery dengan session/MFA revocation.
+- 36/130 tests, 47-page build, 66 tables/24 migrations, OpenAPI 70 paths/85 operations/48 request components, dan disposable Hostinger MySQL integration PASS.
+- Disk-capacity blocker lama tertutup, tetapi K0/K1 tetap NO-GO karena external provider/access/recovery dan actual Owner HR UAT belum selesai. Tidak ada real account/data, staging deployment, Preview change, atau production activation.
+
 ## 2026-08-26 - COYABAG Admin Produk publication context integrity
 
 - Exact source `3c2b8a73898798e825dcf71786bfc04200c75ad8` aktif pada immutable

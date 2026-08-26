@@ -8,6 +8,12 @@ Mencatat perubahan material SagaWork dengan status delivery dan activation yang 
 
 Synthetic fixture, preview, dan staging bukan bukti real pilot atau production activation.
 
+## 2026-08-26 - Sprint 31 secure organization and HR bootstrap
+
+- Exact feature `6d3fc98` dan acceptance `666fbef` menambah guarded/idempotent first-organization + HR provisioning, one-time activation, HR-owned password, mandatory TOTP, policy acknowledgement, dan root-only recovery yang merotasi MFA serta mencabut sesi/challenge lama.
+- Local gate lulus 36 test file/130 test, 47-page build, 66 tabel/24 migration, OpenAPI 70 path/85 operasi/48 request components, serta disposable Hostinger MySQL integration termasuk replay rejection, recovery, dan cleanup.
+- Operator cleanup menutup blocker disk lama, tetapi external private evidence, protected access, dedicated pilot database, restore/rollback, dan actual Andreas login UAT belum selesai. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / K0_NO_GO / K1_NO_GO`; synthetic staging/Preview tidak berubah dan tidak ada akun/data nyata dibuat.
+
 ## 2026-08-26 - Sprint 30 restricted pilot runtime boundary
 
 - `CONFIRMED / LOCAL_VALIDATED` dari exact source `a500a52`: runtime pilot sekarang fail-closed pada `pilot_restricted`, dedicated database name/user dan private bucket scope, performance/signup OFF, dedicated MFA scope, private evidence + ClamAV, dan protected-access declaration.
