@@ -43,12 +43,14 @@
 - Operasional Sesi staff kini memprioritaskan jadwal hari ini, lalu rekap
   pengeluaran, status sesi, dan action kas agar operator melihat antrean kerja
   sebelum ringkasan lainnya.
-- Exact source `2f52483c3c70ecb9a3a42516401b09c960060fc3` berstatus `PUSHED /
-  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; backend, database, permission,
-  dan perhitungan keuangan tidak berubah.
-- Desktop/mobile, accessibility state, typecheck, build, payload contract, dan
-  dependency audit lulus. Production tetap release `20260824153350-194864c`;
-  tidak ada activation atau perubahan business readiness.
+- Exact source `936499e60d2a3aac8a32906ec444ef6f1cacf48c` aktif pada immutable
+  release `20260826104241-936499e`; rollback `20260824153350-194864c` tersedia.
+  Backend, database, permission, dan perhitungan keuangan tidak berubah.
+- Visual staff desktop/mobile 4/4, full PHP 1.150/1.150, accessibility,
+  typecheck, build, payload contract, dependency audit, backup/restore, dan
+  verifier 17/17 lulus. Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+  authenticated staff UAT belum selesai sehingga business readiness tidak
+  berubah.
 
 ## 2026-08-26 - COYABAG Catalog V2 studio media production
 

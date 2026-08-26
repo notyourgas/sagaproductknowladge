@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 26 Agustus 2026 16:55 WIB
-Evidence status: prioritas layout operasional staff local-validated dan pushed; production tetap pada release sebelumnya
+Updated: 26 Agustus 2026 17:51 WIB
+Evidence status: prioritas layout operasional staff production-deployed dan production-activated
 
 ## Tujuan dokumen
 
@@ -17,20 +17,23 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 ## Status production terbaru
 
 - Prioritas layout Operasional Sesi staff pada exact source
-  `2f52483c3c70ecb9a3a42516401b09c960060fc3` berstatus `CONFIRMED /
+  `936499e60d2a3aac8a32906ec444ef6f1cacf48c` berstatus `CONFIRMED /
   PUSHED / UIUX_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED`. Urutan DOM dan pembacaan layar kini menempatkan
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Urutan DOM dan pembacaan layar kini menempatkan
   `Jadwal Sesi Hari Ini`, lalu `Rekap Pengeluaran`, `Status Sesi`, kemudian
   ringkasan kas dan action operasional. Data booking, perhitungan keuangan,
-  permission, API, dan database tidak berubah. Focused browser desktop/mobile
-  2/2, critical typecheck, production build 5.129 modul, kontrak payload staff
-  5/5 (74 assertion), keyboard/focus, target 44 px, forced-colors,
-  reduced-motion, no-overflow, serta audit npm/Composer nol lulus. Snapshot
-  kalender staff lama masih drift pada dua viewport dan tidak diperbarui karena
-  berada di luar scope halaman ini. Production tetap exact source
-  `194864cc821fd93d3b97c86f5919b54ba4809dad`, release
-  `20260824153350-194864c`, rollback `20260824141906-0dda935`, dengan verifier
-  read-only 17/17; perubahan layout belum dideploy dan `BUSINESS_READY=false`.
+  permission, API, dan database tidak berubah. Visual staff desktop/mobile 4/4,
+  full PHP 1.150/1.150 (13.103 assertion), critical typecheck, production build
+  5.129 modul, kontrak payload staff 5/5 (74 assertion), keyboard/focus, target
+  44 px, forced-colors, reduced-motion, no-overflow, serta audit npm/Composer
+  nol lulus. Bootstrap test worktree dikunci ke source/seeder exact commit dan
+  fixture kalender relatif agar release gate tidak mencampur checkout atau
+  kedaluwarsa. Production aktif pada release `20260826104241-936499e` dengan
+  rollback `20260824153350-194864c`; backup terenkripsi, disposable restore,
+  manifest, atomic activation, dan verifier read-only 17/17 lulus. Satu failed
+  job Fonnte 24 jam memakai exception sempit yang telah disetujui Andreas;
+  authenticated staff production UAT belum selesai sehingga
+  `BUSINESS_READY=false`.
 
 - Perluasan role override Manual Booking S291 pada exact source
   `194864cc821fd93d3b97c86f5919b54ba4809dad` berstatus `CONFIRMED / PUSHED /

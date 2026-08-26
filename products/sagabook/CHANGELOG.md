@@ -4,22 +4,24 @@
 
 - Klasifikasi: `CONFIRMED`; Andreas meminta `Jadwal Sesi Hari Ini` menjadi
   informasi pertama pada akun staff, disusul `Rekap Pengeluaran`, `Status
-  Sesi`, dan action lain. Exact source
-  `2f52483c3c70ecb9a3a42516401b09c960060fc3` telah dipush ke branch source
-  terisolasi.
+  Sesi`, dan action lain. Exact source final
+  `936499e60d2a3aac8a32906ec444ef6f1cacf48c` telah dipush ke `main`.
 - Urutan yang sama diterapkan pada DOM desktop/mobile dan hierarchy heading,
   bukan hanya melalui CSS. Perhitungan booking, kas, pengeluaran, permission,
   API, dan database tidak berubah.
-- Focused browser desktop/mobile 2/2, critical typecheck, production build
-  5.129 modul, kontrak payload staff 5/5 (74 assertion), keyboard/focus, target
-  44 px, forced-colors, reduced-motion, no-overflow, serta audit npm/Composer
-  nol lulus. Dua snapshot kalender staff existing masih drift dan dipertahankan
-  sebagai residual terpisah karena halaman kalender tidak diubah.
-- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Production
-  tidak berubah: source aktif `194864cc821fd93d3b97c86f5919b54ba4809dad`,
-  release `20260824153350-194864c`, rollback `20260824141906-0dda935`, dan
-  verifier read-only 17/17 lulus. Deployment serta authenticated staff UAT
-  tetap gate berikutnya; `BUSINESS_READY=false`.
+- Visual staff desktop/mobile 4/4, full PHP 1.150/1.150 (13.103 assertion),
+  critical typecheck, production build 5.129 modul, kontrak payload staff 5/5
+  (74 assertion), keyboard/focus, target 44 px, forced-colors, reduced-motion,
+  no-overflow, serta audit npm/Composer nol lulus. Fixture cabang dan snapshot
+  kalender sekarang deterministik; bootstrap test juga menolak pemakaian
+  source/seeder dari checkout donor lama.
+- Status `PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`. Release `20260826104241-936499e` aktif dengan rollback
+  `20260824153350-194864c`; backup terenkripsi/checksum/disposable restore,
+  manifest, migration 0 pending, service/journal, public/security smoke 3/3,
+  dan verifier independen 17/17 lulus. Satu failed job Fonnte 24 jam memakai
+  exception sempit yang disetujui Andreas. Authenticated staff UAT tetap
+  residual; `BUSINESS_READY=false`.
 
 ## 2026-08-24 - Staff lapangan mendapat override jadwal Manual Booking S291
 

@@ -12,12 +12,12 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-26T17:50:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-26T17:51:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | exact `e085e7664ba08d6a824a20b9d2228f20b70b1990` |
-| Informasi terakhir disinkronkan | COYABAG Admin Media publication integrity dan immutable production release. |
-| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED`; commerce tetap `BLOCKED`. |
+| Baseline sebelum pembaruan | exact `9c0746577422ed904c9b9bb7b6718a1274db8587` |
+| Informasi terakhir disinkronkan | SagaBook staff operations schedule-first layout production activation. |
+| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; `BUSINESS_READY=false`. |
 
 ## COYABAG Admin Media publication integrity
 
@@ -104,16 +104,18 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 ## SagaBook staff operations schedule-first layout
 
-- Exact source `2f52483c3c70ecb9a3a42516401b09c960060fc3` memindahkan jadwal sesi hari
+- Exact source `936499e60d2a3aac8a32906ec444ef6f1cacf48c` memindahkan jadwal sesi hari
   ini menjadi konten pertama pada dashboard staff, disusul rekap pengeluaran,
   status sesi, lalu action kas.
-- Focused browser desktop/mobile, keyboard/focus, target 44 px, forced-colors,
-  reduced-motion, no-overflow, critical typecheck, build, kontrak payload staff,
-  dan dependency audit lulus. Backend/database/permission tidak berubah.
-- Production tetap exact source `194864cc821fd93d3b97c86f5919b54ba4809dad`,
-  release `20260824153350-194864c`, rollback `20260824141906-0dda935`, dengan
-  verifier read-only 17/17. Perubahan layout belum dideploy dan business readiness tidak
-  berubah.
+- Visual staff desktop/mobile 4/4, full PHP 1.150/1.150 (13.103 assertion),
+  keyboard/focus, target 44 px, forced-colors, reduced-motion, no-overflow,
+  critical typecheck, build, kontrak payload staff, dan dependency audit lulus.
+  Backend/database/permission tidak berubah.
+- Production aktif pada release `20260826104241-936499e` dengan rollback
+  `20260824153350-194864c`; backup/restore, manifest, service, migration,
+  journal, public/security smoke, dan verifier independen 17/17 lulus. Status
+  `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated staff UAT belum
+  selesai sehingga `BUSINESS_READY=false`.
 
 ## File yang berubah pada sinkronisasi ini (SagaBook staff operations layout)
 

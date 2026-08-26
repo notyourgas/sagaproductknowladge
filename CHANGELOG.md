@@ -59,11 +59,12 @@
 - Produk/area: SagaBook staff dashboard, responsive UI/UX, accessibility, QA,
   dan release provenance.
 - Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED`; exact source
-  `2f52483c3c70ecb9a3a42516401b09c960060fc3`.
-- Production berubah: tidak. Runtime tetap exact source
-  `194864cc821fd93d3b97c86f5919b54ba4809dad` pada release
-  `20260824153350-194864c`; verifier read-only 17/17 lulus.
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; exact source
+  `936499e60d2a3aac8a32906ec444ef6f1cacf48c`.
+- Production berubah: ya. Runtime aktif pada release
+  `20260826104241-936499e`, rollback `20260824153350-194864c`, dan verifier
+  independen 17/17 lulus. Authenticated staff UAT tetap residual sehingga
+  `BUSINESS_READY=false`.
 - Dokumen terdampak: SagaBook Product, SagaBook changelog, portfolio changelog,
   root changelog, dan sync status.
 
