@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 26 Agustus 2026 17:51 WIB
-Evidence status: prioritas layout operasional staff production-deployed dan production-activated
+Updated: 26 Agustus 2026 18:00 WIB
+Evidence status: aksesibilitas aksi jadwal staff local-validated dan belum dideploy
 
 ## Tujuan dokumen
 
@@ -15,6 +15,17 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- Kandidat aksesibilitas aksi `Jadwal Sesi Hari Ini` pada exact source
+  `d254d131a5239bcfc0673bcc571abdef5e9feaa5` berstatus `CONFIRMED / PUSHED /
+  UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Label aksi kini berbahasa Indonesia dan mempunyai
+  nama aksesibel unik berbasis kode booking; kartu ringkasan mobile dibedakan
+  dari tombol detail agar pengguna keyboard dan screen reader tidak salah
+  memilih booking. Workflow, permission, masking PII, API, dan database tidak
+  berubah. Visual desktop/mobile 4/4, focused PHP 7/7 (141 assertion), critical
+  typecheck, production build 5.129 modul, design audit 26/26, serta audit
+  dependency nol lulus. Production tetap pada source dan release di bawah.
 
 - Prioritas layout Operasional Sesi staff pada exact source
   `936499e60d2a3aac8a32906ec444ef6f1cacf48c` berstatus `CONFIRMED /

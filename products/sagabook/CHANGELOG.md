@@ -1,5 +1,21 @@
 # SagaBook Changelog
 
+## 2026-08-26 - Aksesibilitas aksi jadwal staff
+
+- Klasifikasi: `CONFIRMED`; aksi berulang pada jadwal staff sebelumnya memakai
+  nama aksesibel generik sehingga pengguna keyboard atau screen reader sulit
+  membedakan booking yang akan diproses.
+- Exact source `d254d131a5239bcfc0673bcc571abdef5e9feaa5` memberi setiap aksi nama
+  aksesibel unik berbasis kode booking, mengganti label `Verify` menjadi
+  `Verifikasi`, serta membedakan kartu ringkasan mobile dari tombol detail.
+- Workflow, permission, masking PII, API, database, dan production tidak
+  berubah. Visual desktop/mobile 4/4, focused PHP 7/7 (141 assertion), critical
+  typecheck, build 5.129 modul, design audit 26/26, dan audit dependency nol
+  lulus.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+  tetap source `936499e60d2a3aac8a32906ec444ef6f1cacf48c` pada release
+  `20260826104241-936499e`.
+
 ## 2026-08-26 - Prioritas layout Operasional Sesi staff
 
 - Klasifikasi: `CONFIRMED`; Andreas meminta `Jadwal Sesi Hari Ini` menjadi

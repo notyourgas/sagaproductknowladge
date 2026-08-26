@@ -12,12 +12,24 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-26T18:11:41+07:00 |
+| Waktu pembaruan terakhir | 2026-08-26T18:00:55+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | exact `df805ed5e7e19df0250e6ffa43d4424fea02f7ac` |
-| Informasi terakhir disinkronkan | SagaWork Workspace core exact source `e2a0391`. |
-| Status sinkronisasi | `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; public synthetic runtime dan real-pilot readiness tidak berubah. |
+| Baseline sebelum pembaruan | exact `256843a3c89ce9998b920f0f93b046f398f680d4` |
+| Informasi terakhir disinkronkan | SagaBook aksesibilitas aksi jadwal staff exact source `d254d131a5239bcfc0673bcc571abdef5e9feaa5`. |
+| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production SagaBook tidak berubah. |
+
+## SagaBook staff schedule action accessibility
+
+- Exact candidate `d254d131a5239bcfc0673bcc571abdef5e9feaa5` memberi setiap aksi jadwal
+  staff nama aksesibel unik berbasis kode booking, memakai label bahasa
+  Indonesia, dan membedakan ringkasan mobile dari tombol detail.
+- Visual desktop/mobile 4/4, focused PHP 7/7 (141 assertion), critical
+  typecheck, build 5.129 modul, design audit 26/26, dan dependency audit nol
+  lulus.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+  tetap source `936499e60d2a3aac8a32906ec444ef6f1cacf48c` pada release
+  `20260826104241-936499e`.
 
 ## SagaWork Workspace core local implementation
 

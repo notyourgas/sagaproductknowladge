@@ -1,6 +1,18 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 24 Agustus 2026 22:46 WIB
+Evidence cut-off: 26 Agustus 2026 18:00 WIB
+
+Aksesibilitas aksi jadwal staff S292 exact source
+`d254d131a5239bcfc0673bcc571abdef5e9feaa5` telah `CONFIRMED / PUSHED /
+UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`. Coverage membuktikan setiap aksi berulang memiliki
+nama aksesibel unik berbasis kode booking, label `Verifikasi` konsisten dalam
+bahasa Indonesia, serta kartu ringkasan dan tombol detail mobile tidak lagi
+bernama sama. Visual desktop/mobile 4/4, focused PHP 7/7 (141 assertion),
+critical typecheck, build 5.129 modul, design audit 26/26, dan dependency audit
+nol lulus. Workflow, permission, masking PII, API, database, dan production
+tidak berubah. Merge/release serta authenticated staff production UAT masih
+menjadi gate; `BUSINESS_READY=false`.
 
 Perluasan role override Manual Booking S291 exact source
 `194864cc821fd93d3b97c86f5919b54ba4809dad` telah `CONFIRMED / PUSHED /

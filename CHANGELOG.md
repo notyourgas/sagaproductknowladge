@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-26 - SagaBook staff schedule accessibility sync
+
+- Ringkasan: menyinkronkan nama aksesibel unik per booking, label aksi bahasa
+  Indonesia, dan pembedaan ringkasan/detail pada jadwal staff mobile.
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; exact source
+  `d254d131a5239bcfc0673bcc571abdef5e9feaa5`.
+- Production berubah: tidak. Runtime tetap source `936499e60d2a3aac8a32906ec444ef6f1cacf48c`
+  pada release `20260826104241-936499e`.
+- Dokumen terdampak: SagaBook Product, SagaBook changelog, portfolio changelog,
+  root changelog, dan status sinkronisasi.
+
 ## 2026-08-26 - SagaWork Workspace core implementation sync
 
 - Ringkasan: menyinkronkan Workspace compatibility, effective-dated Staff assignment, scoped HR context, GPS setup preview, versioned shift template, dan Workspace eligibility pada schedule.

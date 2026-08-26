@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-26 - SagaBook staff schedule action accessibility
+
+- Exact candidate `d254d131a5239bcfc0673bcc571abdef5e9feaa5` memberi aksi jadwal staff
+  nama aksesibel unik per booking dan menyelaraskan label aksi ke bahasa
+  Indonesia.
+- Visual desktop/mobile 4/4, focused PHP 7/7, critical typecheck, build, design
+  audit, dan dependency audit lulus; workflow, API, database, dan PII tidak
+  berubah.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+  tetap release `20260826104241-936499e`.
+
 ## 2026-08-26 - Snap and Fit protected biometric web preview
 
 - Exact source `167896b` berhasil dibangun sebagai protected Vercel deployment
