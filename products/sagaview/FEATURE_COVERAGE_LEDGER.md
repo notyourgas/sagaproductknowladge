@@ -1,6 +1,28 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 26 Agustus 2026 18:24 WIB
+Evidence cut-off: 26 Agustus 2026 20:20 WIB
+
+S306 Composer audit transport recovery and immutable readiness: exact pushed
+source `23dc1a75cd2aef76d94169d3604814aa56ef5bdd` menutup blocker gate S305.
+Sebelumnya timeout Packagist langsung menghentikan security audit walau scoped
+regression hijau. Sekarang gate hanya mengulang error transport yang dikenali
+hingga tiga percobaan; advisory dependency tetap gagal langsung dan timeout
+menetap tetap fail-closed. Tidak ada `ignore-unreachable` atau mode offline.
+
+Contract RED/GREEN lulus 4 test/40 assertion dan simulasi membuktikan transient
+recovery tiga percobaan, advisory gagal pada percobaan pertama, serta timeout
+menetap gagal setelah batas. Exact gate lulus 210 test/1.742 assertion dari 31
+file, Composer/npm audit nol, dan build 5.097 modul. Candidate release
+`20260826130809-23dc1a7` mempunyai archive SHA-256
+`046e4e94bfb55bd6a3283d3e8b854c1ae3354c46e6da6141182a993aa8978052`
+serta bundle SHA-256
+`f7652166655f0fecd5650045fe6d83998707b2e045382cc3daf6927498610e0a` pada
+dua salinan checksum-identical. Archive 2.591 entry bebas konten runtime
+terlarang, migration delta nol, disposable storage rehearsal dan cleanup lulus.
+Status `PUSHED / DEVOPS_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED /
+LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`; production tetap
+S298 dan gap berikutnya authenticated Owner UAT, fresh backup/restore, serta
+approval deployment terpisah.
 
 S304 Support Hub read-after-write retry recovery: exact pushed source
 `74dfa84d772abc0db7ed224bdadd6e1ddc65b20b` menutup risiko pertanyaan ganda
