@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 26 Agustus 2026 23:10 WIB
-Evidence status: closing operasional studio local-validated dan belum dideploy
+Updated: 26 Agustus 2026 23:59 WIB
+Evidence status: closing operasional studio production-deployed, feature off
 
 ## Tujuan dokumen
 
@@ -16,19 +16,26 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
-- Closing Operasional Studio V1 pada exact source
-  `89e440138536eba7ad0e1042ffb4a031e07fd3e4` berstatus `CONFIRMED / PUSHED /
-  PR_OPEN / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Admin dapat memakai
+- Closing Operasional Studio V1 feature commit
+  `89e440138536eba7ad0e1042ffb4a031e07fd3e4` sudah merge melalui PR #14 dan
+  aktif dalam exact release source
+  `69cb91370aacfdfe9c8c6db3799bd422f2079f0a`, immutable release
+  `20260826164130-69cb913`, dengan rollback
+  `20260826104241-936499e`. Statusnya `CONFIRMED / MERGED /
+  PRODUCTION_DEPLOYED / FEATURE_OFF / NOT_PILOT_ACTIVATED`. Admin dapat memakai
   hitungan sesi completed dan add-on terkonfirmasi, jumlah cetak serta
   packaging per paket, stok fisik, empat note pengurang kertas, preview teks,
   PNG privat, review/revision, dan audit share untuk satu grup per cabang.
   Satu pack dikunci 20 lembar; ledger append-only dan snapshot rule menjaga
   replay, koreksi, serta histori. Full PHP 1.162/1.162 (13.159 assertion),
   focused 12/12 (56), Playwright lifecycle, build/typecheck, dependency audit,
-  migration rehearsal, dan security review lulus. Semua flag default-off;
-  production tetap pada release aktif di bawah. Mapping cabang, opening stock,
-  target grup/provider, authenticated UAT, deploy, activation, dan pilot masih
-  gate terpisah; `BUSINESS_READY=false`.
+  migration rehearsal, dan security review lulus. Fresh encrypted backup,
+  disposable restore, exact manifest, verifier independen, migration nol
+  pending, serta public/security smoke 3/3 lulus. Core flag dan direct-delivery
+  flag tetap false; jumlah cabang opt-in, snapshot, dan delivery masih nol.
+  Mapping nyata, opening stock, target grup/provider, authenticated UAT,
+  activation, dan pilot masih gate terpisah. Release memakai narrow exception
+  untuk satu failed job existing dalam 24 jam; `BUSINESS_READY=false`.
 
 - Kandidat kumulatif busy state aksi `Jadwal Sesi Hari Ini` pada exact source
   `4e2267c98f68b5be6e4a7f794b2c7431581fe98b` berstatus `CONFIRMED / PUSHED /

@@ -1,8 +1,8 @@
 # SagaBook Changelog
 
-## 2026-08-26 - Closing Operasional Studio V1 local validated
+## 2026-08-26 - Closing Operasional Studio V1 production deployed, feature off
 
-- Exact source `89e440138536eba7ad0e1042ffb4a031e07fd3e4` pada PR SagaBook #14
+- Feature commit `89e440138536eba7ad0e1042ffb4a031e07fd3e4` pada PR SagaBook #14
   menambahkan rule cetak/packaging per paket dan add-on, snapshot historis,
   ledger stok append-only, physical count/variance, serta empat note admin yang
   mengurangi stok kertas. Satu pack dikunci 20 lembar.
@@ -13,9 +13,17 @@
 - Full PHP 1.162/1.162 (13.159 assertion), focused 12/12 (56), Playwright
   lifecycle, contract, critical typecheck, build, design/dependency audit,
   migration rehearsal, dan security/code review tanpa High/Medium lulus.
-- Status `CONFIRMED / PUSHED / PR_OPEN / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED`. Production, flag tenant, target nyata, pesan
-  WhatsApp, authenticated UAT, dan business readiness tidak berubah.
+- PR #14 sudah merge. Exact release source
+  `69cb91370aacfdfe9c8c6db3799bd422f2079f0a` aktif sebagai immutable release
+  `20260826164130-69cb913`; rollback `20260826104241-936499e` tersedia.
+- Fresh encrypted backup/disposable restore, exact manifest, verifier
+  independen, service/journal, nol migration pending, dan public/security smoke
+  3/3 lulus. Release memakai narrow exception untuk satu failed job existing
+  dalam 24 jam.
+- Status `CONFIRMED / MERGED / PRODUCTION_DEPLOYED / FEATURE_OFF /
+  NOT_PILOT_ACTIVATED`. Core/direct-delivery flag false; cabang opt-in,
+  snapshot, dan delivery nol. Opening stock, target nyata, pesan WhatsApp,
+  authenticated UAT, dan pilot belum dilakukan; `BUSINESS_READY=false`.
 
 ## 2026-08-26 - Busy state dan double-submit guard aksi jadwal staff
 

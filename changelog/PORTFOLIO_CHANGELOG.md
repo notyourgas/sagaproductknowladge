@@ -14,13 +14,20 @@
 
 ## 2026-08-26 - SagaBook Closing Operasional Studio V1
 
-- Exact source `89e440138536eba7ad0e1042ffb4a031e07fd3e4` pada PR #14
+- Feature commit `89e440138536eba7ad0e1042ffb4a031e07fd3e4` sudah merge melalui PR #14;
+  exact release source `69cb91370aacfdfe9c8c6db3799bd422f2079f0a`
+  aktif pada immutable release `20260826164130-69cb913` dengan rollback
+  `20260826104241-936499e`. Perubahan
   menggabungkan hitungan sesi/add-on, konsumsi kertas/packaging, physical stock,
   note admin, teks, dan PNG privat ke satu snapshot closing cabang.
 - Ledger append-only, versioned rule snapshot, tenant/branch permission,
-  idempotency, PII guard, serta status delivery jujur telah tervalidasi lokal.
-- Status `PUSHED / PR_OPEN / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
-  semua flag default-off dan production/business readiness tidak berubah.
+  idempotency, PII guard, serta status delivery jujur telah tervalidasi. Fresh
+  encrypted backup/restore, verifier independen, migration, dan public/security
+  smoke lulus; satu failed job existing memakai narrow release exception.
+- Status `PRODUCTION_DEPLOYED / FEATURE_OFF / NOT_PILOT_ACTIVATED`;
+  core/direct-delivery flag false dan jumlah cabang opt-in, snapshot, serta
+  delivery nol. Opening stock, grup nyata, human UAT, pilot, dan
+  `BUSINESS_READY` belum terpenuhi.
 
 ## 2026-08-26 - COYABAG Storefront Catalog availability integrity
 

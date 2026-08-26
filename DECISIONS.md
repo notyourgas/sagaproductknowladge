@@ -1556,7 +1556,7 @@ keputusan pengganti.
 | Keputusan | Satu pack berisi 20 kertas foto. Jumlah cetak dan packaging disimpan pada rule paket/add-on. Rusak/gagal, invitation, Google Review, dan sampel frame diisi admin serta mengurangi stok kertas. Laporan boleh dibagikan saat submit dengan status menunggu review, dan setiap cabang memiliki satu target grup. |
 | Alasan | Operator memerlukan laporan closing konsisten yang berasal dari data dan stok authoritative, tanpa hitung ulang atau copy manual. |
 | Alternatif yang dipertimbangkan | Template teks manual; stok tanpa ledger; angka global untuk semua paket; multi-group atau auto-send pada V1. |
-| Dampak | SagaBook menambah snapshot rule historis, ledger append-only, physical count/variance, artifact teks/PNG privat, review/revision, dan delivery audit. Mapping nyata, opening stock, target/provider, human UAT, deploy, dan activation tetap gate terpisah. |
+| Dampak | SagaBook menambah snapshot rule historis, ledger append-only, physical count/variance, artifact teks/PNG privat, review/revision, dan delivery audit. Source dan additive migration sudah production-deployed, sementara mapping nyata, opening stock, target/provider, human UAT, feature activation, dan pilot tetap gate terpisah. |
 | Pemberi keputusan | Andreas / founder |
-| Status | `CONFIRMED / IMPLEMENTED_LOCAL / PUSHED / PR_OPEN / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; exact source `89e440138536eba7ad0e1042ffb4a031e07fd3e4`, PR #14 |
+| Status | `CONFIRMED / MERGED / PRODUCTION_DEPLOYED / FEATURE_OFF / NOT_PILOT_ACTIVATED`; feature commit `89e440138536eba7ad0e1042ffb4a031e07fd3e4`, PR #14, exact release source `69cb91370aacfdfe9c8c6db3799bd422f2079f0a`, release `20260826164130-69cb913` |
 | Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [SagaBook Changelog](products/sagabook/CHANGELOG.md) |

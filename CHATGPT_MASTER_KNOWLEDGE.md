@@ -1,20 +1,26 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 26 Agustus 2026 23:10 WIB
+Evidence cut-off: 26 Agustus 2026 23:59 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
-SagaBook Closing Operasional Studio V1 exact source
-`89e440138536eba7ad0e1042ffb4a031e07fd3e4` sudah `PUSHED / PR_OPEN /
-LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Satu pack berisi 20 kertas;
+SagaBook Closing Operasional Studio V1 feature commit
+`89e440138536eba7ad0e1042ffb4a031e07fd3e4` sudah merge melalui PR #14 dan
+masuk exact release source `69cb91370aacfdfe9c8c6db3799bd422f2079f0a`,
+immutable release `20260826164130-69cb913`, rollback
+`20260826104241-936499e`. Status `PRODUCTION_DEPLOYED / FEATURE_OFF /
+NOT_PILOT_ACTIVATED`. Satu pack berisi 20 kertas;
 jumlah cetak dan packaging diatur pada paket/add-on dan disnapshot untuk
 histori. Sesi completed, add-on terkonfirmasi, empat note admin, stok fisik,
 variance, teks, serta PNG privat berasal dari satu snapshot closing. Ledger
 append-only dan delivery audit menjaga exactly-once, revision, tenant/cabang,
 serta status provider yang jujur. Satu target grup per cabang tersedia sebagai
-konfigurasi encrypted, tetapi semua flag default-off. Tidak ada deploy,
-activation, target/pesan WhatsApp nyata, authenticated UAT, atau pilot;
-`BUSINESS_READY=false`.
+konfigurasi encrypted, tetapi core dan direct-delivery flag tetap false. Fresh
+encrypted backup/disposable restore, exact verifier, migration, service, dan
+public/security smoke lulus. Cabang opt-in, snapshot, dan delivery masih nol;
+tidak ada opening stock, target/pesan WhatsApp nyata, authenticated UAT, atau
+pilot. Satu failed job existing dalam 24 jam diterima melalui narrow release
+exception; `BUSINESS_READY=false`.
 
 SagaView S307 exact `17362d6430abb54745d126c24d5ad926adc372ca` sudah
 `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Changelog Owner

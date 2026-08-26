@@ -21,12 +21,17 @@
   sama dengan stok dan tidak bergantung pada hitung/copy manual.
 - Produk/area: SagaBook closing, katalog paket/add-on, inventory ledger,
   artifact privat, permission, WhatsApp group adapter, QA, dan security.
-- Klasifikasi: `CONFIRMED / PUSHED / PR_OPEN / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED`; exact source
-  `89e440138536eba7ad0e1042ffb4a031e07fd3e4`, PR #14.
-- Production berubah: tidak. Semua flag default-off; mapping cabang, opening
-  stock, target/provider, authenticated UAT, deployment, activation, dan pilot
-  masih gate.
+- Klasifikasi: `CONFIRMED / MERGED / PRODUCTION_DEPLOYED / FEATURE_OFF /
+  NOT_PILOT_ACTIVATED`; feature commit
+  `89e440138536eba7ad0e1042ffb4a031e07fd3e4`, PR #14, exact release source
+  `69cb91370aacfdfe9c8c6db3799bd422f2079f0a`, immutable release
+  `20260826164130-69cb913`, rollback `20260826104241-936499e`.
+- Production berubah: ya, source dan additive migration sudah aktif. Fresh
+  encrypted backup/restore, exact verifier, service/journal, migration, serta
+  public/security smoke lulus dengan narrow exception untuk satu failed job
+  existing. Semua flag tetap off; cabang opt-in, snapshot, dan delivery nol.
+  Opening stock, target/provider, authenticated UAT, activation, dan pilot
+  masih gate; `BUSINESS_READY=false`.
 - Dokumen terdampak: Product, Dossier, changelog SagaBook, portfolio, master,
   Decisions, root changelog, dan sync status.
 

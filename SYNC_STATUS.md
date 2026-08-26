@@ -16,8 +16,8 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
-| Informasi terakhir disinkronkan | Snap and Fit connected synthetic prototype UAT exact source/docs `a4f634763d9544cbc320f8d7fce90319f7e44c9e`. |
-| Status sinkronisasi | `CONFIRMED / LOCAL_VALIDATED / PROTOTYPE_UAT_READY`; production dan business readiness tidak berubah. |
+| Informasi terakhir disinkronkan | SagaBook Closing Operasional Studio V1 exact release source `69cb91370aacfdfe9c8c6db3799bd422f2079f0a`, release `20260826164130-69cb913`. |
+| Status sinkronisasi | `CONFIRMED / MERGED / PRODUCTION_DEPLOYED / FEATURE_OFF / NOT_PILOT_ACTIVATED`; `BUSINESS_READY=false`. |
 
 ## Snap and Fit connected synthetic prototype UAT
 
@@ -31,13 +31,21 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 ## SagaBook Closing Operasional Studio V1
 
+- Feature commit `89e440138536eba7ad0e1042ffb4a031e07fd3e4` sudah merge melalui PR #14.
+  Exact release source `69cb91370aacfdfe9c8c6db3799bd422f2079f0a`
+  aktif pada release `20260826164130-69cb913`; rollback
+  `20260826104241-936499e` tersedia.
 - Jumlah cetak/packaging per rule paket/add-on, satu pack 20 kertas, empat note
   pengurang kertas, ledger append-only, physical count/variance, teks, dan PNG
-  privat telah diimplementasikan pada source feature branch.
+  privat sudah berada di production source.
 - Full PHP 1.162/1.162, focused 12/12, browser lifecycle, typecheck/build,
   migration, dependency, dan security gate lulus.
-- Semua flag default-off. Tidak ada target grup/pesan nyata, deployment,
-  activation, authenticated UAT, atau studio pilot.
+- Fresh encrypted backup/disposable restore, exact manifest, verifier
+  independen, service/journal, nol migration pending, dan public/security smoke
+  3/3 lulus. Satu failed job existing memakai narrow release exception.
+- Core/direct-delivery flag false; cabang opt-in, snapshot, dan delivery nol.
+  Tidak ada opening stock, target grup/pesan nyata, feature activation,
+  authenticated UAT, atau studio pilot; `BUSINESS_READY=false`.
 
 ## File yang berubah pada sinkronisasi ini (SagaBook Closing Operasional)
 

@@ -7,9 +7,13 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Closing Operasional Studio V1 exact source
-  `89e440138536eba7ad0e1042ffb4a031e07fd3e4`: `CONFIRMED / PUSHED / PR_OPEN /
-  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Fitur memperluas closing
+- Closing Operasional Studio V1 feature commit
+  `89e440138536eba7ad0e1042ffb4a031e07fd3e4` sudah merge melalui PR #14 dan
+  masuk exact release source `69cb91370aacfdfe9c8c6db3799bd422f2079f0a`:
+  `CONFIRMED / MERGED / PRODUCTION_DEPLOYED / FEATURE_OFF /
+  NOT_PILOT_ACTIVATED`. Immutable release aktif
+  `20260826164130-69cb913`; rollback `20260826104241-936499e`. Fitur
+  memperluas closing
   existing dengan rule jumlah cetak dan packaging per paket/add-on, snapshot
   historis pada booking, stok kertas/packaging append-only, count fisik dan
   variance, empat note pengurang kertas, artifact teks/PNG privat, serta
@@ -17,8 +21,12 @@ dalam satu dokumen public-safe.
   direct delivery tetap optional/default-off; timeout ambigu masuk
   `needs_review`, bukan blind retry. Full PHP 1.162/1.162, focused 12/12,
   browser lifecycle, typecheck/build, migration, dependency, dan security gate
-  lulus. Tidak ada deployment, flag tenant, group ID nyata, pesan WhatsApp
-  nyata, atau human UAT; `BUSINESS_READY=false`.
+  lulus. Fresh encrypted backup/disposable restore, exact manifest, verifier
+  independen, service/journal, nol migration pending, dan public/security smoke
+  3/3 lulus. Core/direct-delivery flag tetap false; cabang opt-in, snapshot, dan
+  delivery masih nol. Tidak ada group ID nyata, opening stock, pesan WhatsApp
+  nyata, atau human UAT. Satu failed job existing dalam 24 jam diterima hanya
+  dengan narrow release exception; `BUSINESS_READY=false`.
 
 - Perluasan role override Manual Booking S291 exact source
   `194864cc821fd93d3b97c86f5919b54ba4809dad`: `CONFIRMED / PUSHED /
