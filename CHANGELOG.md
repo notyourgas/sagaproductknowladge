@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-27 - SagaView S311 custody guard sync
+
+- Ringkasan: menyinkronkan guard read-only untuk integritas manifest, pemisahan
+  volume custody, kapasitas, cadangan 64 MB, dan shortfall.
+- Alasan: release harus berhenti sebelum copy jika target bukan storage terpisah
+  atau ruang tidak cukup.
+- Produk/area: SagaView release evidence, security, QA, DevOps, dan production
+  audit.
+- Klasifikasi: `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  RELEASE_BLOCKED`; exact source S310 dan runtime production tidak berubah.
+- Dokumen terdampak: Product, changelog dan ledger SagaView, portfolio, root
+  changelog, serta sync status.
+
 ## 2026-08-27 - SagaBook S297 restore capacity sync
 
 - Ringkasan: menyinkronkan preflight kapasitas dua tahap untuk disposable

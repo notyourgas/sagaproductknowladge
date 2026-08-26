@@ -1,5 +1,24 @@
 # SagaView Changelog
 
+## 2026-08-27 - S311 custody capacity guard follow-up
+
+- Klasifikasi: `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  RELEASE_BLOCKED`; ini adalah hardening gate release, bukan perubahan runtime.
+- Before: pengecekan kapasitas belum mempunyai guard otomatis yang sekaligus
+  menolak volume sama, memverifikasi manifest, dan menyisakan cadangan operasi.
+- After: guard read-only `sagaview-separate-custody-capacity-v1` memverifikasi
+  hash, volume, ukuran artifact, ruang bebas, cadangan, dan shortfall sebelum
+  copy; SHA-256 script
+  `18d8d8bfd8c2099cabbe0d2ffc69252d3378756ca4df3f9219d9575808a1f877`.
+- Acceptance: syntax/read-only gate lulus; tujuan volume C yang sama ditolak,
+  dan volume D berbeda dengan kapasitas kurang juga ditolak. Dua hash artifact
+  tetap cocok dengan manifest.
+- Capacity: artifact 199.912.920 byte + cadangan 67.108.864 byte membutuhkan
+  267.021.784 byte (254,652 MB). D memiliki 73.003.008 byte (69,621 MB), sehingga
+  shortfall 194.018.776 byte (185,031 MB).
+- Delivery: tidak ada copy, delete, rehearsal VPS, backup/restore, deploy,
+  aktivasi, atau perubahan production. S311 tetap belum `STAGING_READY`.
+
 ## 2026-08-27 - S311 exact S310 artifact custody blocked by capacity
 
 - Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /

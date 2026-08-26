@@ -16,8 +16,19 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
-| Informasi terakhir disinkronkan | SagaBook S297 restore-capacity hardening pada exact source `5a721c2d2da513caa3a133cf34e68be43016d32c`. |
-| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah. |
+| Informasi terakhir disinkronkan | SagaView S311 custody capacity guard pada exact source S310 `cd7288d3bb4da9542fbfa20f97780fa5639759bf`. |
+| Status sinkronisasi | `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED`; production tidak berubah. |
+
+## SagaView S311 custody capacity guard
+
+- Guard read-only memverifikasi manifest, menolak tujuan pada volume sumber,
+  dan menolak kapasitas kurang sebelum copy.
+- Artifact 199.912.920 byte dengan cadangan 64 MB memerlukan 267.021.784 byte
+  pada volume terpisah. D hanya memiliki 73.003.008 byte saat verifikasi.
+- Syntax, read-only contract, same-volume rejection, insufficient-capacity
+  rejection, dan kedua hash artifact lulus.
+- Source S310 dan production SagaView tidak berubah; rehearsal/deploy belum
+  dijalankan.
 
 ## SagaBook S297 disposable restore capacity
 
@@ -30,7 +41,7 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
   dideploy. Production tetap `2b22b835` / `20260826201936-2b22b83` dan
   verifier read-only 17/17 lulus.
 
-## File yang berubah pada sinkronisasi ini (SagaBook S297)
+## File yang berubah pada sinkronisasi SagaBook S297
 
 - `products/sagabook/PRODUCT.md`
 - `products/sagabook/DOSSIER.md`
