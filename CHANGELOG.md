@@ -1,5 +1,22 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-27 - SagaBook Consumable Stock Administration sync
+
+- Ringkasan: menyinkronkan opening stock, restock, maker-checker correction,
+  append-only reversal, histori per cabang, dan UI Stok & Closing.
+- Alasan: admin memerlukan cara aman merevisi stok tanpa menimpa histori atau
+  menggandakan saldo saat retry.
+- Produk/area: SagaBook inventory ledger, permission, database, admin UI,
+  closing lifecycle, QA, security, dan release governance.
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; source
+  `c21d9378e0ea0bd0352cd59ffb63b4499154093a`, PR #15.
+- Production berubah: tidak. Merge/deploy, migration production, opening stock
+  nyata, authenticated UAT, activation, dan pilot masih gate;
+  `BUSINESS_READY=false`.
+- Dokumen terdampak: Product, Dossier, SagaBook changelog/ledger, portfolio,
+  master, Decisions, root changelog, dan sync status.
+
 ## 2026-08-26 - Snap and Fit connected prototype UAT sync
 
 - Ringkasan: menyinkronkan HTTPS API, protected Vercel BFF, synthetic all-role UAT, encrypted

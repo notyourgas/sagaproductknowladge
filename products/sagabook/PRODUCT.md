@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 26 Agustus 2026 23:59 WIB
-Evidence status: closing operasional studio production-deployed, feature off
+Updated: 27 Agustus 2026 00:50 WIB
+Evidence status: stock administration local-validated/pushed, closing production feature off
 
 ## Tujuan dokumen
 
@@ -15,6 +15,22 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- Administrasi stok consumable S13–S24 exact source
+  `c21d9378e0ea0bd0352cd59ffb63b4499154093a` pada PR #15 berstatus
+  `CONFIRMED / PUSHED / UIUX_VALIDATED / QA_VALIDATED /
+  SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Owner/Manager dapat mengatur stok awal per cabang,
+  Admin Cabang dapat restock dan mengajukan koreksi hitung fisik, sedangkan
+  approval wajib dilakukan actor berbeda. Reversal membuat mutasi lawan tanpa
+  menghapus histori; movement closing tidak dapat dibatalkan dari halaman stok.
+  Input kertas memakai 1 pack = 20 pcs. Optimistic lock, idempotency, no-negative,
+  capability, tenant/cabang isolation, audit, dan PII guard tervalidasi. Full PHP
+  1.172/1.172 (13.236 assertion), focused 10/10 (70), Playwright mobile/desktop
+  4/4, typecheck/build/design/Pint, serta audit dependency nol lulus. Production
+  tetap exact release `69cb913...`; migration, opening stock nyata, authenticated
+  UAT, merge/release, activation, dan pilot belum dilakukan sehingga
+  `BUSINESS_READY=false`.
 
 - Closing Operasional Studio V1 feature commit
   `89e440138536eba7ad0e1042ffb4a031e07fd3e4` sudah merge melalui PR #14 dan

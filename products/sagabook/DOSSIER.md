@@ -7,6 +7,21 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Administrasi stok consumable S13–S24 exact source
+  `c21d9378e0ea0bd0352cd59ffb63b4499154093a`, PR #15: `CONFIRMED / PUSHED /
+  UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+  Halaman Pengaturan → Stok & Closing menyediakan branch selector, opening stock,
+  restock, correction queue, approval/rejection, reversal append-only, dan
+  histori. Admin Cabang menjadi maker; Owner/Manager berbeda menjadi checker.
+  Optimistic lock menolak request basi, idempotency menjaga retry, saldo tidak
+  dapat negatif, catatan menolak identifier customer, dan movement closing tetap
+  tunduk pada lifecycle closing. Full PHP 1.172/1.172, focused 10/10,
+  Playwright mobile/desktop 4/4, build/typecheck/design, migration database
+  disposable, dan audit dependency nol lulus. Production tidak berubah;
+  authenticated UAT, merge/release, migration production, opening stock nyata,
+  activation, dan pilot tetap gate terpisah.
+
 - Closing Operasional Studio V1 feature commit
   `89e440138536eba7ad0e1042ffb4a031e07fd3e4` sudah merge melalui PR #14 dan
   masuk exact release source `69cb91370aacfdfe9c8c6db3799bd422f2079f0a`:

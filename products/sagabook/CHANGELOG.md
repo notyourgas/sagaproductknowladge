@@ -1,5 +1,23 @@
 # SagaBook Changelog
 
+## 2026-08-27 - Administrasi stok consumable S13–S24 local validated
+
+- Exact source `c21d9378e0ea0bd0352cd59ffb63b4499154093a` pada PR #15 menambah
+  Pengaturan → Stok & Closing serta shortcut dari laporan closing.
+- Owner/Manager mengatur opening stock; Admin Cabang melakukan restock dan
+  mengajukan koreksi fisik; actor berbeda wajib review. Reversal append-only
+  tidak menghapus mutasi asli dan konsumsi closing tidak dapat dibalik dari
+  halaman stok. Satu pack kertas selalu 20 pcs.
+- Tenant/cabang capability, optimistic lock, idempotency, no-negative, audit,
+  stale rejection, dan catatan public-safe tervalidasi.
+- Full PHP 1.172/1.172 (13.236 assertion), focused 10/10 (70), Playwright
+  mobile/desktop 4/4, build/typecheck/design/Pint, migration disposable, npm
+  production audit dan Composer OSV nol lulus.
+- Status `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+  Production tetap release `20260826164130-69cb913` dengan fitur closing off;
+  merge/deploy, opening stock nyata, authenticated UAT, activation, dan pilot
+  belum dilakukan. `BUSINESS_READY=false`.
+
 ## 2026-08-26 - Closing Operasional Studio V1 production deployed, feature off
 
 - Feature commit `89e440138536eba7ad0e1042ffb4a031e07fd3e4` pada PR SagaBook #14

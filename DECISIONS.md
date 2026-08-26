@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-111 - Koreksi stok SagaBook memakai maker-checker dan reversal append-only
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-27 |
+| Topik | Governance opening stock, restock, koreksi fisik, dan reversal consumable SagaBook |
+| Keputusan | Owner/Manager mengatur stok awal per cabang. Admin Cabang dapat restock dan mengajukan koreksi berdasarkan hitung fisik, tetapi pengaju tidak boleh menyetujui request sendiri. Reversal harus membuat mutasi lawan tanpa menghapus histori; konsumsi/reconciliation closing tidak dibatalkan dari halaman stok. Satu pack kertas tetap 20 pcs. |
+| Alasan | Revisi stok harus bisa dilakukan operator tanpa kehilangan audit trail, menimpa saldo yang lebih baru, atau menggandakan mutasi saat retry. |
+| Alternatif yang dipertimbangkan | Edit saldo langsung tanpa histori; mengizinkan self-approval; menghapus movement lama; membalik movement closing dari halaman stok. |
+| Dampak | SagaBook menambah capability per role, optimistic lock, idempotency, correction request, approval/rejection, reversal append-only, PII-safe note, dan halaman Stok & Closing per cabang. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; source `c21d9378e0ea0bd0352cd59ffb63b4499154093a`, PR #15; production dan business readiness tidak berubah |
+| Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [SagaBook Changelog](products/sagabook/CHANGELOG.md), [SagaBook Ledger](products/sagabook/FEATURE_COVERAGE_LEDGER.md), [Gaps](GAPS.md) |
+
 ## DEC-108 - Workspace SagaWork adalah cabang operasional dalam Company
 
 | Field | Isi |

@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-27 - SagaBook governed consumable stock administration
+
+- Exact source `c21d9378e0ea0bd0352cd59ffb63b4499154093a`, PR #15, menambah
+  opening stock, restock, maker-checker correction, append-only reversal, dan
+  histori stok per cabang dengan 1 pack kertas = 20 pcs.
+- Capability, tenant/cabang isolation, optimistic lock, idempotency,
+  no-negative, audit, stale rejection, PII guard, dan lifecycle closing
+  tervalidasi melalui full PHP 1.172/1.172 serta Playwright mobile/desktop 4/4.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production,
+  opening stock nyata, activation, pilot, dan business readiness tidak berubah.
+
 ## 2026-08-26 - Snap and Fit connected synthetic prototype UAT
 
 - Exact source/docs `a4f634763d9544cbc320f8d7fce90319f7e44c9e`; active VPS runtime

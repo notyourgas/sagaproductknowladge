@@ -12,12 +12,39 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-26T23:55:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-27T00:50:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
-| Informasi terakhir disinkronkan | SagaBook Closing Operasional Studio V1 exact release source `69cb91370aacfdfe9c8c6db3799bd422f2079f0a`, release `20260826164130-69cb913`. |
-| Status sinkronisasi | `CONFIRMED / MERGED / PRODUCTION_DEPLOYED / FEATURE_OFF / NOT_PILOT_ACTIVATED`; `BUSINESS_READY=false`. |
+| Informasi terakhir disinkronkan | SagaBook Consumable Stock Administration exact source `c21d9378e0ea0bd0352cd59ffb63b4499154093a`, PR #15. |
+| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan `BUSINESS_READY=false`. |
+
+## SagaBook Consumable Stock Administration S13–S24
+
+- Exact source `c21d9378e0ea0bd0352cd59ffb63b4499154093a`, PR #15, menyediakan
+  opening stock, restock, maker-checker correction, approval/rejection,
+  append-only reversal, dan histori stok per cabang.
+- Satu pack kertas = 20 pcs. Capability, tenant/cabang isolation, optimistic
+  lock, idempotency, no-negative, audit, stale protection, PII-safe note, dan
+  proteksi movement closing tervalidasi.
+- Full PHP 1.172/1.172, focused 10/10, Playwright mobile/desktop 4/4,
+  build/typecheck/design/Pint, migration database disposable, serta audit
+  dependency nol lulus.
+- Source sudah push dan PR terbuka, tetapi belum merge/deploy. Opening stock
+  nyata, authenticated UAT, activation, pilot, dan business readiness tetap
+  gate terpisah.
+
+## File yang berubah pada sinkronisasi ini (SagaBook Stock Administration)
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `DECISIONS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## Snap and Fit connected synthetic prototype UAT
 
