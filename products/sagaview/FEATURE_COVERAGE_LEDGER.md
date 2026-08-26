@@ -1,6 +1,25 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 26 Agustus 2026 21:18 WIB
+Evidence cut-off: 27 Agustus 2026 01:07 WIB
+
+S308 Owner Support Hub non-overlap and label-in-name accessibility: exact
+pushed source `55ff2870af6e3b0ef09e5aaa347e765ce33f0099` memindahkan
+launcher Support Hub dari floating overlay ke action header sticky pada semua
+layar Owner non-editor. Frame Editor mempertahankan launcher floating karena
+tidak mempunyai header. Pada mobile 390x844, launcher tidak lagi memotong kartu
+`Tentang Cloud vN`; target tetap minimal 44 pixel, visible, keyboard-reachable,
+dan fokus kembali ke launcher setelah panel ditutup.
+
+RED Playwright membuktikan collision nyata. GREEN mobile/desktop 4/4 mencakup
+Changelog, endpoint bootstrap 200, no-upload/local-first, focus trap/restore,
+forced-colors, reduced-motion, dan no-overflow. AccessLint 94 aturan pada
+390x844 berakhir 0 violation setelah accessible name tombol detail memuat teks
+terlihat sesuai WCAG 2.5.3. Exact scoped gate lulus 210/1.744 dari 31 file,
+Composer/npm audit nol, build 5.097 modul, dan delta bundle utama +580 byte.
+Status `PUSHED / UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S298. Gap
+berikutnya adalah immutable artifact/rehearsal exact S308, authenticated Owner
+UAT non-customer, fresh backup/restore, dan approval deploy terpisah.
 
 S307 Owner Changelog context recovery: exact pushed source
 `17362d6430abb54745d126c24d5ad926adc372ca` menutup kehilangan konteks

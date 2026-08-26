@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-27 - SagaView S308 Owner Support Hub non-overlap
+
+- Exact source `55ff2870af6e3b0ef09e5aaa347e765ce33f0099` memindahkan
+  launcher bantuan ke header sticky Owner agar tidak menutupi isi layar mobile,
+  sekaligus menyelaraskan label tombol detail dengan teks terlihat.
+- Playwright mobile/desktop 4/4, AccessLint 94 aturan/0 violation, exact gate
+  210/1.744, build 5.097 modul, dan audit dependency nol lulus; local-first dan
+  no-upload tetap utuh.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; immutable
+  artifact/rehearsal dan UAT belum dibuat, sehingga belum `STAGING_READY`.
+  Production SagaView maupun SagaBook tidak berubah oleh slice ini.
+
 ## 2026-08-27 - SagaBook governed consumable stock administration
 
 - Exact source `c21d9378e0ea0bd0352cd59ffb63b4499154093a`, PR #15, menambah

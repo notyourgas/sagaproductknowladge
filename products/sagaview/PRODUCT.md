@@ -1,6 +1,30 @@
 # SagaView Product Knowledge
 
-Updated: 26 Agustus 2026 21:18 WIB
+Updated: 27 Agustus 2026 01:07 WIB
+
+SagaView S308 exact `55ff2870af6e3b0ef09e5aaa347e765ce33f0099` sudah
+`PUSHED / UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Launcher Support Hub pada Owner
+Console non-editor kini berada di header sticky, bukan mengambang di atas isi
+layar. Pada mobile 390x844, kartu `Tentang Cloud vN` tidak lagi tertutup;
+target bantuan tetap minimal 44 pixel, mudah dijangkau keyboard, dan panel
+tetap memulihkan fokus ke launcher. Frame Editor tetap memakai launcher
+floating karena tidak mempunyai header Owner.
+
+Acceptance RED membuktikan collision launcher/kartu. GREEN Playwright mobile
+dan desktop lulus 4/4 untuk Changelog dan Support Hub, forced-colors,
+reduced-motion, focus containment/restore, no-overflow, dan kontrak local-first.
+AccessLint memindai 94 aturan pada 390x844 dan berakhir 0 violation setelah
+label tombol detail diselaraskan dengan teks terlihat sesuai WCAG 2.5.3. Exact
+scoped gate lulus 210 test/1.744 assertion dari 31 file, Composer/npm audit nol,
+dan build 5.097 modul. Delta bundle utama sekitar +580 byte.
+
+Tidak ada perubahan API, database, migration, payment, foto/path/output
+customer, atau SagaBook. Production tetap backend/Owner
+`20260826050812-7bf0e0d`, Studio `20260824170456-7ae79ae`, dan rollback
+`20260825210645-1237ef2`. Exact S308 belum mempunyai immutable artifact dan
+rehearsal, sehingga belum `STAGING_READY`; authenticated UAT, backup/restore,
+deploy, activation, dan business readiness tetap gate terpisah.
 
 SagaView S307 exact `17362d6430abb54745d126c24d5ad926adc372ca` sudah
 `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Owner Changelog kini

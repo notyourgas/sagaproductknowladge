@@ -1,5 +1,31 @@
 # SagaView Changelog
 
+## 2026-08-27 - S308 Owner Support Hub non-overlap and accessible labels
+
+- Klasifikasi: `PUSHED / UIUX_VALIDATED / QA_VALIDATED /
+  SECURITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+  production tidak berubah.
+- Before: launcher Support Hub floating menutupi isi kartu `Tentang Cloud vN`
+  pada viewport mobile/forced-colors, dan accessible name tombol detail tidak
+  memuat teks terlihat `Lihat detail`.
+- After: exact `55ff2870af6e3b0ef09e5aaa347e765ce33f0099` menempatkan
+  launcher pada header sticky Owner non-editor, mempertahankan launcher
+  floating di Frame Editor, serta menyelaraskan label tombol detail dengan
+  teks yang terlihat sesuai WCAG 2.5.3.
+- Evidence: RED membuktikan collision. GREEN Playwright mobile/desktop 4/4
+  mencakup Changelog dan Support Hub, bootstrap 200, target 44 pixel,
+  keyboard/focus containment dan restore, forced-colors, reduced-motion,
+  no-overflow, serta local-first/no-upload. AccessLint 94 aturan berakhir 0
+  violation.
+- Gate: exact scoped regression 210 test/1.744 assertion dari 31 file,
+  Composer/npm audit nol, build 5.097 modul, dan delta bundle utama sekitar
+  +580 byte.
+- Delivery: source exact sudah pushed; tidak ada API, database, migration,
+  payment, foto/path/output customer, perubahan SagaBook, atau mutasi
+  production.
+- Next gate: immutable artifact/rehearsal exact S308, authenticated Owner UAT
+  non-customer, fresh backup/restore, dan approval deployment terpisah.
+
 ## 2026-08-26 - S307 Owner Changelog context recovery
 
 - Klasifikasi: `PUSHED / UIUX_VALIDATED / QA_VALIDATED /
