@@ -1,5 +1,26 @@
 # SagaBook Changelog
 
+## 2026-08-26 - Prioritas layout Operasional Sesi staff
+
+- Klasifikasi: `CONFIRMED`; Andreas meminta `Jadwal Sesi Hari Ini` menjadi
+  informasi pertama pada akun staff, disusul `Rekap Pengeluaran`, `Status
+  Sesi`, dan action lain. Exact source
+  `2f52483c3c70ecb9a3a42516401b09c960060fc3` telah dipush ke branch source
+  terisolasi.
+- Urutan yang sama diterapkan pada DOM desktop/mobile dan hierarchy heading,
+  bukan hanya melalui CSS. Perhitungan booking, kas, pengeluaran, permission,
+  API, dan database tidak berubah.
+- Focused browser desktop/mobile 2/2, critical typecheck, production build
+  5.129 modul, kontrak payload staff 5/5 (74 assertion), keyboard/focus, target
+  44 px, forced-colors, reduced-motion, no-overflow, serta audit npm/Composer
+  nol lulus. Dua snapshot kalender staff existing masih drift dan dipertahankan
+  sebagai residual terpisah karena halaman kalender tidak diubah.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Production
+  tidak berubah: source aktif `194864cc821fd93d3b97c86f5919b54ba4809dad`,
+  release `20260824153350-194864c`, rollback `20260824141906-0dda935`, dan
+  verifier read-only 17/17 lulus. Deployment serta authenticated staff UAT
+  tetap gate berikutnya; `BUSINESS_READY=false`.
+
 ## 2026-08-24 - Staff lapangan mendapat override jadwal Manual Booking S291
 
 - Klasifikasi: `CONFIRMED`; Andreas menetapkan staff lapangan sebagai pengguna

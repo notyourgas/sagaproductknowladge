@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-26 - SagaBook staff operations schedule-first layout
+
+- Operasional Sesi staff kini memprioritaskan jadwal hari ini, lalu rekap
+  pengeluaran, status sesi, dan action kas agar operator melihat antrean kerja
+  sebelum ringkasan lainnya.
+- Exact source `2f52483c3c70ecb9a3a42516401b09c960060fc3` berstatus `PUSHED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; backend, database, permission,
+  dan perhitungan keuangan tidak berubah.
+- Desktop/mobile, accessibility state, typecheck, build, payload contract, dan
+  dependency audit lulus. Production tetap release `20260824153350-194864c`;
+  tidak ada activation atau perubahan business readiness.
+
 ## 2026-08-26 - COYABAG Catalog V2 studio media production
 
 - Exact source `313aa8fa7f570147d176729b5d78c876d74af4ef` aktif pada immutable

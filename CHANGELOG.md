@@ -1,5 +1,22 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-26 - SagaBook staff operations layout order sync
+
+- Ringkasan: menyinkronkan layout schedule-first pada Operasional Sesi staff:
+  jadwal hari ini, rekap pengeluaran, status sesi, lalu action kas.
+- Alasan: operator perlu melihat antrean sesi sebagai prioritas pertama tanpa
+  mengubah workflow, permission, atau data finansial.
+- Produk/area: SagaBook staff dashboard, responsive UI/UX, accessibility, QA,
+  dan release provenance.
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; exact source
+  `2f52483c3c70ecb9a3a42516401b09c960060fc3`.
+- Production berubah: tidak. Runtime tetap exact source
+  `194864cc821fd93d3b97c86f5919b54ba4809dad` pada release
+  `20260824153350-194864c`; verifier read-only 17/17 lulus.
+- Dokumen terdampak: SagaBook Product, SagaBook changelog, portfolio changelog,
+  root changelog, dan sync status.
+
 ## 2026-08-26 - COYABAG Catalog V2 studio media production sync
 
 - Ringkasan: menyinkronkan 11 tipe, 31 warna, 372 WebP fisik, tujuh produk

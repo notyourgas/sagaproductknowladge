@@ -12,12 +12,33 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-26T16:48:45+07:00 |
+| Waktu pembaruan terakhir | 2026-08-26T16:55:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | exact `origin/main` `16f2a4b478172a84ec9dfd5a8c40259bd0244e9b` |
-| Informasi terakhir disinkronkan | COYABAG Catalog V2 studio media production release. |
-| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED`; catalog `PRODUCTION_ACTIVATED`, commerce/business readiness `BLOCKED`. |
+| Baseline sebelum pembaruan | exact `origin/main` `4b7b9a1a2ceb709a5a3c275081cba1c1eaf7469a` |
+| Informasi terakhir disinkronkan | SagaBook staff operations schedule-first layout. |
+| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah. |
+
+## SagaBook staff operations schedule-first layout
+
+- Exact source `2f52483c3c70ecb9a3a42516401b09c960060fc3` memindahkan jadwal sesi hari
+  ini menjadi konten pertama pada dashboard staff, disusul rekap pengeluaran,
+  status sesi, lalu action kas.
+- Focused browser desktop/mobile, keyboard/focus, target 44 px, forced-colors,
+  reduced-motion, no-overflow, critical typecheck, build, kontrak payload staff,
+  dan dependency audit lulus. Backend/database/permission tidak berubah.
+- Production tetap exact source `194864cc821fd93d3b97c86f5919b54ba4809dad`,
+  release `20260824153350-194864c`, rollback `20260824141906-0dda935`, dengan
+  verifier read-only 17/17. Perubahan layout belum dideploy dan business readiness tidak
+  berubah.
+
+## File yang berubah pada sinkronisasi ini (SagaBook staff operations layout)
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG Catalog V2 studio media production
 
