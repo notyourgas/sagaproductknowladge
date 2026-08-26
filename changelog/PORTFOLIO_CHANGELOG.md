@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-26 - SagaView S302 Support Hub double-submit protection
+
+- Exact source `94df8c227df1db31a847e4669c3a17771dcec8b7` menambahkan
+  kunci request sinkron khusus SagaView agar dua aktivasi Kirim cepat hanya
+  menghasilkan satu pertanyaan Support Hub.
+- Acceptance RED dua POST berubah menjadi GREEN satu POST pada desktop
+  1440x900 dan mobile 390x844; backend/privacy 40/210, scoped gate 209/1.735,
+  build 5.097 modul, dan audit dependency nol lulus.
+- Delivery `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; tidak ada
+  migration, data customer, perubahan payment, perubahan SagaBook, atau mutasi
+  production.
+
 ## 2026-08-26 - COYABAG Admin Produk publication context integrity
 
 - Exact source `3c2b8a73898798e825dcf71786bfc04200c75ad8` aktif pada immutable
