@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-27 - COYABAG product specification integrity
+
+- Exact source `4cf4ce628eaad2bd77c63513487068737819d809` aktif pada immutable
+  release `20260827-4cf4ce6`; rollback `20260827-832a5f3` tersedia.
+- Product Detail menyajikan empat field produk dari Admin/API, menolak internal
+  key, dan menandai data belum lengkap tanpa mengarang fakta.
+- Katalog live baru menerbitkan perawatan; ukuran, material, dan kapasitas
+  masih merupakan gap konten operator.
+- Storefront 201/201, Laravel 450, responsive, accessibility, performance, SEO,
+  Product Detail live, public smoke, worker, scheduler, backup, dan log gate
+  lulus.
+- Status `PRODUCTION_DEPLOYED`; readiness 30/42, 12 blocker,
+  `commerceActivated=false`, TokoPay terkunci, dan `BUSINESS_READY=false`.
+
 ## 2026-08-27 - SagaView S311 artifact custody capacity blocker
 
 - Exact S310 `cd7288d3bb4da9542fbfa20f97780fa5639759bf` sudah menghasilkan

@@ -4,6 +4,24 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-27 - Product specification integrity
+
+- Klasifikasi: `CONFIRMED` dari exact source
+  `4cf4ce628eaad2bd77c63513487068737819d809`, immutable Hostinger release
+  `20260827-4cf4ce6`, rollback `20260827-832a5f3`, dan public browser/runtime
+  evidence.
+- Product Detail menampilkan ukuran, material, kapasitas, dan perawatan dari
+  kontrak Admin/API. Urutan stabil, internal key diabaikan, dan field kosong
+  diberi status sedang diverifikasi tanpa fallback karangan.
+- Katalog live saat ini baru menerbitkan perawatan; ukuran, material, dan
+  kapasitas menjadi gap konten operator, bukan klaim produk.
+- Storefront 201/201, Laravel 449 pass dan satu skip dari 450, 110 kombinasi
+  responsive, 32 route accessibility desktop/mobile, 16 state runtime
+  performance, crawler SEO 14 URL indexable dan sembilan noindex, Product
+  Detail live, public smoke, workers, scheduler, backup, dan log gate lulus.
+- Delivery `PRODUCTION_DEPLOYED`; readiness tetap 30/42 dengan 12 blocker,
+  `commerceActivated=false`, dan TokoPay tetap locked.
+
 ## 2026-08-27 - Simulator journey integrity and discovery recovery
 
 - Klasifikasi: `CONFIRMED` dari exact source

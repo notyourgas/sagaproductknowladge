@@ -1,5 +1,21 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-27 - COYABAG product specification integrity sync
+
+- Ringkasan: menyinkronkan empat field spesifikasi Admin/API, state data belum
+  lengkap, acceptance production, dan immutable release terbaru.
+- Alasan: pelanggan perlu fakta produk yang konsisten tanpa fallback yang tidak
+  diterbitkan operator.
+- Produk/area: COYABAG Product Detail, catalog content, responsive UI,
+  accessibility, performance, SEO, QA, release, rollback, dan commerce guard.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED`; exact source
+  `4cf4ce628eaad2bd77c63513487068737819d809`, release
+  `20260827-4cf4ce6`, rollback `20260827-832a5f3`.
+- Production berubah: ya. Commerce activation dan business readiness tidak
+  berubah; readiness tetap 30/42 dengan 12 blocker dan TokoPay terkunci.
+- Dokumen terdampak: Product/Dossier/changelog COYABAG, portfolio, master,
+  root changelog, dan sync status.
+
 ## 2026-08-27 - SagaView S311 artifact custody capacity sync
 
 - Ringkasan: menyinkronkan immutable release exact S310, checksum, bundle,

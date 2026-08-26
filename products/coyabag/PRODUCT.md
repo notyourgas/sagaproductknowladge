@@ -61,9 +61,22 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260827-832a5f3` dengan exact source
-  `832a5f3fe9dae05693972f730ec7bda8993e4d5e` melayani production;
-  rollback langsung `20260827-1d5912c` dipertahankan.
+- Release aktif `20260827-4cf4ce6` dengan exact source
+  `4cf4ce628eaad2bd77c63513487068737819d809` melayani production;
+  rollback langsung `20260827-832a5f3` dipertahankan.
+- Product Detail menampilkan ukuran, material, kapasitas, dan perawatan dalam
+  urutan stabil dari kontrak Admin/API. Field kosong diberi status sedang
+  diverifikasi dan internal key tidak diekspos. Katalog live baru menerbitkan
+  perawatan; tiga field lain tetap gap konten operator.
+- Storefront 201/201 dan Laravel 450 test dengan 449 pass serta satu
+  intentional skip lulus. Acceptance production lulus untuk 110 kombinasi
+  responsive, 32 route accessibility desktop/mobile, 16 state runtime
+  performance, crawler SEO 14 URL indexable dan sembilan noindex, serta
+  Product Detail desktop/mobile.
+- Readiness tetap 30/42 dengan 12 blocker; `commerceActivated=false`, TokoPay
+  tetap terkunci, dan business readiness tetap blocked.
+- Release sebelumnya `20260827-832a5f3` menjalankan simulator journey integrity
+  dan discovery recovery.
 - Alur simulator privat sekarang memakai presentasi khusus dari checkout,
   halaman simulator, konfirmasi demo, hingga timeline status. Seluruh layar
   menegaskan bahwa simulasi tidak masuk operasi order nyata.

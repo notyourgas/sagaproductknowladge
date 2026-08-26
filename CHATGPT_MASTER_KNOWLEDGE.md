@@ -3654,7 +3654,21 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release aktif `20260827-832a5f3` menjalankan exact source
+Release aktif `20260827-4cf4ce6` menjalankan exact source
+`4cf4ce628eaad2bd77c63513487068737819d809` dengan rollback
+`20260827-832a5f3`. Product Detail menyajikan ukuran, material, kapasitas, dan
+perawatan dari Admin/API; internal key tidak diekspos dan field kosong
+ditandai sedang diverifikasi. Katalog live baru menerbitkan perawatan, sehingga
+tiga field lain tetap gap konten operator.
+
+Storefront 201/201, Laravel 449 pass dan satu intentional skip dari 450, 110
+kombinasi responsive, 32 route accessibility desktop/mobile, 16 state runtime
+performance, crawler SEO 14 URL indexable dan sembilan noindex, Product Detail
+live, public smoke, workers, scheduler, backup, dan log gate lulus. Readiness
+tetap 30/42 dengan 12 blocker; `commerceActivated=false`, TokoPay terkunci,
+dan business readiness blocked.
+
+Release sebelumnya `20260827-832a5f3` menjalankan exact source
 `832a5f3fe9dae05693972f730ec7bda8993e4d5e` dengan rollback
 `20260827-1d5912c`. Simulator privat memakai presentasi demo khusus dari
 checkout, simulator, konfirmasi, hingga timeline; tidak ada money movement,

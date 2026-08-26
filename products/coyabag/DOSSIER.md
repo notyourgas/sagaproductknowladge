@@ -78,7 +78,21 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260827-832a5f3` memakai exact source
+Release production terbaru `20260827-4cf4ce6` memakai exact source
+`4cf4ce628eaad2bd77c63513487068737819d809` dan rollback
+`20260827-832a5f3`. Product Detail sekarang mengambil ukuran, material,
+kapasitas, dan perawatan dari source of truth Admin/API, mengabaikan internal
+key, serta menandai field kosong sebagai sedang diverifikasi tanpa mengarang
+fakta. Katalog live baru menerbitkan perawatan; ukuran, material, dan kapasitas
+masih menunggu kelengkapan operator.
+
+Storefront 201/201, Laravel 450 total dengan 449 pass dan satu intentional
+skip, 110 kombinasi responsive, 32 route accessibility desktop/mobile, 16
+state runtime performance, crawler SEO 14 URL indexable dan sembilan noindex,
+serta Product Detail live desktop/mobile lulus. Readiness tetap 30/42 dengan
+12 blocker; TokoPay dan commerce production tetap fail-closed.
+
+Release sebelumnya `20260827-832a5f3` memakai exact source
 `832a5f3fe9dae05693972f730ec7bda8993e4d5e` dan rollback
 `20260827-1d5912c`. Checkout, simulator, konfirmasi, dan timeline memakai
 presentasi demo khusus yang tidak dapat disalahartikan sebagai order
