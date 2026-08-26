@@ -1,6 +1,27 @@
 # SagaView Product Knowledge
 
-Updated: 26 Agustus 2026 03:09 WIB
+Updated: 26 Agustus 2026 12:21 WIB
+
+SagaView S298 exact `7bf0e0d6966ebe7d2d6f2a72a42b59b4df4f6470`
+sudah `PUSHED / PRODUCTION_DEPLOYED` sebagai backend/Owner release
+`20260826050812-7bf0e0d`. Release ini membawa kandidat kumulatif S291 beserta
+verifikasi route/middleware Support Hub, context guard yang menolak request
+tanpa konteks secara aman, dan perbaikan builder agar cache release tetap
+berada di volume kerja terkontrol. Studio tidak berubah dan tetap exact
+`7ae79ae45828f3876e3604bb569e0d3c7be3abfb` / release
+`20260824170456-7ae79ae`. Rollback immediate tersedia pada release
+`20260825210645-1237ef2`; protected rollback tetap
+`20260824211838-8d84c60`.
+
+Gate exact commit meluluskan 206 test dengan 1.701 assertion, audit dependency
+Composer/npm nol advisory, build 5.097 modul, immutable archive/manifest/git
+bundle dua salinan, disposable shared-storage rehearsal, fresh encrypted
+backup/checksum/offsite round-trip/disposable restore, migration pending nol,
+lima smoke HTTP 200, service aktif, journal error nol, dan Support Hub unauth
+fail-closed HTTP 404 dengan request ID. Kontrak local-first/no-upload dan
+pembayaran off-app tidak berubah. Status tetap dipisah:
+`PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false` sampai authenticated
+Owner Support Hub UAT dengan akun referensi non-customer selesai.
 
 SagaView S291 exact `1237ef2df06ca53f10b6230adc9350b179462ade`
 sudah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Kandidat ini

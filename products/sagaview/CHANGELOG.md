@@ -1,5 +1,29 @@
 # SagaView Changelog
 
+## 2026-08-26 - S298 guarded production deployment
+
+- Klasifikasi: `CONFIRMED / PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+- Before: production backend/Owner masih memakai release
+  `20260825210645-1237ef2`; kandidat kumulatif belum mempunyai pembuktian exact
+  artifact bahwa Support Hub benar-benar terdaftar dan request tanpa konteks
+  ditolak oleh guard yang benar.
+- After: exact `7bf0e0d6966ebe7d2d6f2a72a42b59b4df4f6470` aktif sebagai
+  `20260826050812-7bf0e0d`; route/middleware Support Hub dan context guard
+  tervalidasi, sedangkan builder menempatkan temp/npm cache pada volume kerja
+  terkontrol agar release tidak bergantung pada ruang drive sistem.
+- Delivery: Studio tetap exact `7ae79ae45828f3876e3604bb569e0d3c7be3abfb` /
+  `20260824170456-7ae79ae`; rollback immediate backend/Owner adalah
+  `20260825210645-1237ef2` dan protected rollback tetap
+  `20260824211838-8d84c60`. Tidak ada migration, perubahan payment, upload
+  foto/path customer, atau perubahan SagaBook.
+- Evidence: 206 test/1.701 assertion; Composer/npm audit nol advisory; build
+  5.097 modul; archive/manifest/bundle dua salinan; storage rehearsal; fresh
+  encrypted backup dan disposable restore; lima smoke 200; service, migration,
+  journal, rollback, dan Support Hub fail-closed boundary lulus.
+- Next gate: authenticated Owner Support Hub UAT terotorisasi dengan akun
+  referensi non-customer sebelum activation dan business readiness dinilai.
+
 ## 2026-08-26 - S291 cumulative S289/S290 release candidate
 
 - Klasifikasi: `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;

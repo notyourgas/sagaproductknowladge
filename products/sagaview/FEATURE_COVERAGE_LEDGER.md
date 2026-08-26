@@ -1,6 +1,28 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 26 Agustus 2026 03:09 WIB
+Evidence cut-off: 26 Agustus 2026 12:21 WIB
+
+S298 guarded production deployment: exact pushed source
+`7bf0e0d6966ebe7d2d6f2a72a42b59b4df4f6470` aktif sebagai backend/Owner
+release `20260826050812-7bf0e0d`. Sebelumnya production masih pada
+`20260825210645-1237ef2` dan kandidat kumulatif belum mempunyai pembuktian
+artifact exact atas route/middleware Support Hub serta context guard. Sekarang
+kontrak tersebut terbukti pada exact artifact; request tanpa konteks ditolak
+aman HTTP 404 `not_found` dengan request ID, sedangkan request publik dan API
+utama tetap HTTP 200. Builder juga mengisolasi temp/npm cache pada volume kerja
+terkontrol.
+
+Gate meluluskan 206 test/1.701 assertion, audit Composer/npm nol advisory,
+build 5.097 modul, archive/manifest/bundle dua salinan, shared-storage
+rehearsal, fresh encrypted backup/checksum/offsite round-trip/disposable
+restore, migration pending nol, lima smoke 200, service aktif, journal error
+nol, dan rollback tersedia. Studio tetap exact
+`7ae79ae45828f3876e3604bb569e0d3c7be3abfb` / release
+`20260824170456-7ae79ae`; tidak ada perubahan payment, upload foto/path
+customer, atau SagaBook. Status `PUSHED / PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`. Gap tunggal release ini
+adalah authenticated Owner Support Hub UAT terotorisasi memakai akun referensi
+non-customer.
 
 S291 cumulative release candidate: exact pushed source
 `1237ef2df06ca53f10b6230adc9350b179462ade` menyatukan harness authenticated
