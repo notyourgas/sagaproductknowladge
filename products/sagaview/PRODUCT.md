@@ -1,6 +1,30 @@
 # SagaView Product Knowledge
 
-Updated: 26 Agustus 2026 18:24 WIB
+Updated: 26 Agustus 2026 20:20 WIB
+
+SagaView S306 exact `23dc1a75cd2aef76d94169d3604814aa56ef5bdd` sudah
+`PUSHED / LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
+Release gate sekarang dapat pulih dari timeout transport Composer yang sifatnya
+sementara dengan maksimal tiga percobaan, tetapi tetap langsung berhenti pada
+advisory dependency dan tetap fail-closed bila koneksi tidak pulih. Gate tidak
+memakai `ignore-unreachable` atau audit offline.
+
+Contract RED/GREEN lulus 4/40; simulasi transient, advisory, dan persistent
+transport lulus. Exact scoped gate lulus 210 test/1.742 assertion dari 31 file,
+Composer/npm audit nol, dan build 5.097 modul. Immutable release
+`20260826130809-23dc1a7` mempunyai archive SHA-256
+`046e4e94bfb55bd6a3283d3e8b854c1ae3354c46e6da6141182a993aa8978052` dan git
+bundle SHA-256
+`f7652166655f0fecd5650045fe6d83998707b2e045382cc3daf6927498610e0a` pada dua
+salinan identik. Archive 2.591 entry tidak membawa `.env`, `.git`, `vendor`,
+atau `node_modules`; migration delta nol dan disposable storage/sentinel
+rehearsal lulus dengan temp remote kembali bersih.
+
+Production tetap backend/Owner `20260826050812-7bf0e0d`, Studio
+`20260824170456-7ae79ae`, dan rollback `20260825210645-1237ef2`; manifest,
+storage symlink, service, journal, lima smoke, dan Support Hub anonim tetap
+sehat. Authenticated UAT, fresh backup/restore, deployment, activation, dan
+business readiness tetap gate terpisah.
 
 SagaView S304 exact `74dfa84d772abc0db7ed224bdadd6e1ddc65b20b`
 sudah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Saat pengiriman
