@@ -3543,9 +3543,19 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release aktif `20260826-5184bfe` menjalankan exact source
-`5184bfe5a41a1fc0f650720c2d0f6b0eaa9d9069` dengan rollback
-`20260826-313aa8f`. Admin Media membandingkan media mutable dengan snapshot
+Release aktif `20260826-d1950e6` menjalankan exact source
+`d1950e693ff3055f1cfe02cf10ff6a2fe432c31e` dengan rollback
+`20260826-5184bfe`. Admin Inventory memisahkan stok operasional dari stok yang
+benar-benar tayang pada snapshot storefront terakhir. Tujuh queue, status
+dampak storefront, dan alert stok tayang memperjelas prioritas operator.
+Adjustment memakai arah Stock Masuk/Stok Keluar, alasan kompatibel, preview
+saldo serta dampak storefront, dan validasi server terhadap kombinasi yang
+salah. Desktop/mobile, 183 storefront test, 434 Laravel test, no-migration
+immutable deploy, workers, cron, dan public smoke lulus. Readiness tetap 30/42
+dengan 12 blocker; commerce tidak production-activated.
+
+Release sebelumnya `20260826-5184bfe` menjalankan exact source
+`5184bfe5a41a1fc0f650720c2d0f6b0eaa9d9069`. Admin Media membandingkan media mutable dengan snapshot
 produk immutable terakhir dan menampilkan live, draft, arsip, baru, diubah,
 akan dihapus, queue menunggu publish, serta action ke checklist publikasi.
 Perubahan media tidak masuk katalog sebelum publish produk eksplisit.

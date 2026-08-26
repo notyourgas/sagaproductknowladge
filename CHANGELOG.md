@@ -1,5 +1,22 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-26 - COYABAG Admin Inventory storefront truth sync
+
+- Ringkasan: menyinkronkan pembedaan stok operasional dan storefront, tujuh
+  queue inventory, alert stok tayang, guided adjustment, serta immutable
+  production release terbaru.
+- Alasan: operator memerlukan status stok yang sesuai snapshot pelanggan dan
+  tidak boleh membuat adjustment dengan alasan yang bertentangan.
+- Produk/area: COYABAG Admin Inventory, storefront snapshot, inventory ledger,
+  responsive UI/UX, accessibility, QA, security, release, dan rollback.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED`; exact source
+  `d1950e693ff3055f1cfe02cf10ff6a2fe432c31e`, release
+  `20260826-d1950e6`, rollback `20260826-5184bfe`.
+- Production berubah: ya, Admin/API/storefront runtime. Tidak ada migration atau
+  commerce activation; readiness tetap 30/42 dengan 12 blocker.
+- Dokumen terdampak: Product, Dossier, changelog COYABAG, portfolio, master,
+  root changelog, dan sync status.
+
 ## 2026-08-26 - SagaWork Workspace synthetic release sync
 
 - Ringkasan: menyinkronkan promosi exact source `e2a0391` ke public synthetic trial setelah additive migration, authenticated/public smoke, backup/restore, dan rollback dua arah lulus.

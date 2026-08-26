@@ -4,6 +4,21 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-26 - Admin Inventory storefront truth production release
+
+- Klasifikasi: `CONFIRMED` dari exact source
+  `d1950e693ff3055f1cfe02cf10ff6a2fe432c31e`, immutable Hostinger release
+  `20260826-d1950e6`, rollback `20260826-5184bfe`, dan public runtime smoke.
+- Admin Inventory membedakan stok operasional dari stok yang tayang dalam
+  snapshot storefront terakhir melalui tujuh queue, status dampak storefront,
+  dan alert stok tayang.
+- Adjustment memakai arah Stock Masuk/Stok Keluar, alasan kompatibel, preview
+  saldo, dampak storefront, dan validasi server terhadap kombinasi yang salah.
+- Desktop/mobile, 183 storefront test, 434 Laravel test, security/dependency
+  gate, no-migration immutable deploy, workers, cron, dan public smoke lulus.
+- Delivery `PRODUCTION_DEPLOYED`; commerce activation/business readiness
+  `BLOCKED`; readiness 30/42, 12 blocker, checkout/provider fail-closed.
+
 ## 2026-08-26 - Admin Media publication integrity production release
 
 - Klasifikasi: `CONFIRMED` dari exact source

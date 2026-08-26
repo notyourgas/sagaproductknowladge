@@ -78,9 +78,20 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260826-5184bfe` memakai exact source
-`5184bfe5a41a1fc0f650720c2d0f6b0eaa9d9069` dan rollback
-`20260826-313aa8f`. Admin Media membandingkan media mutable dengan snapshot
+Release production terbaru `20260826-d1950e6` memakai exact source
+`d1950e693ff3055f1cfe02cf10ff6a2fe432c31e` dan rollback
+`20260826-5184bfe`. Admin Inventory menghitung customer visibility dari status
+produk, publication, activation varian, dan snapshot produk immutable terakhir.
+Tujuh queue memisahkan perhatian operasional dari perhatian storefront; alert
+stok tayang hanya menghitung varian live. Adjustment dipandu oleh arah Stock
+Masuk/Stok Keluar, alasan yang kompatibel, saldo sebelum/sesudah, dan dampak
+storefront, dengan validasi semantik yang sama pada server. Desktop/mobile,
+183 storefront test, 434 Laravel test, security/dependency gate, no-migration
+immutable deploy, dan public smoke lulus. Readiness tetap 30/42 dengan 12
+blocker; checkout dan provider fail-closed.
+
+Release sebelumnya `20260826-5184bfe` memakai exact source
+`5184bfe5a41a1fc0f650720c2d0f6b0eaa9d9069`. Admin Media membandingkan media mutable dengan snapshot
 produk immutable terakhir dan memisahkan state live, draft, arsip, baru,
 diubah, serta akan dihapus. Queue menunggu publish, ringkasan perubahan, dan
 action ke checklist publikasi membuat status customer-visible eksplisit;

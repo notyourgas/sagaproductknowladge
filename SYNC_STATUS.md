@@ -12,12 +12,35 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-26T18:25:22+07:00 |
+| Waktu pembaruan terakhir | 2026-08-26T18:26:10+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | exact `e6de705` |
-| Informasi terakhir disinkronkan | SagaWork Workspace public synthetic trial exact source/runtime `e2a0391`, release-evidence docs `0dd224f`. |
-| Status sinkronisasi | `CONFIRMED / PUBLIC_SYNTHETIC_TRIAL_DEPLOYED / FEATURE_REVIEW_READY / REAL_PILOT_NO-GO`; production tidak berubah. |
+| Baseline sebelum pembaruan | exact `8f56b861c65dde5fa332824b8de1fc3d499f0523` |
+| Informasi terakhir disinkronkan | COYABAG Admin Inventory storefront truth exact source `d1950e693ff3055f1cfe02cf10ff6a2fe432c31e`. |
+| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED`; commerce activation dan business readiness tetap `BLOCKED`. |
+
+## COYABAG Admin Inventory storefront truth
+
+- Exact source `d1950e693ff3055f1cfe02cf10ff6a2fe432c31e` aktif pada immutable
+  release `20260826-d1950e6`; rollback `20260826-5184bfe` tersedia.
+- Dashboard membedakan stok operasional dan stok storefront melalui tujuh
+  queue, status dampak storefront, serta alert stok tayang.
+- Guided adjustment memakai arah Stock Masuk/Stok Keluar, alasan kompatibel,
+  preview saldo, dampak customer, dan validasi semantik server.
+- Desktop/mobile, 183 storefront test, 434 Laravel test, security/dependency
+  gate, no-migration deploy, workers, cron, dan public smoke lulus.
+- Surface production berubah. Commerce tetap fail-closed pada 30/42 checks,
+  12 blocker; checkout dan provider tidak diaktifkan.
+
+## File yang berubah pada sinkronisasi ini (COYABAG Admin Inventory)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaWork Workspace synthetic trial release
 

@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-26 - COYABAG Admin Inventory storefront truth
+
+- Exact source `d1950e693ff3055f1cfe02cf10ff6a2fe432c31e` aktif pada immutable
+  release `20260826-d1950e6`; rollback `20260826-5184bfe` tersedia.
+- Operator kini membedakan stok operasional dan stok storefront, memakai tujuh
+  queue, alert stok tayang, serta adjustment Stock Masuk/Stok Keluar dengan
+  alasan, preview saldo, dampak customer, dan validasi server yang konsisten.
+- Desktop/mobile, 183 storefront test, 434 Laravel test, no-migration deploy,
+  workers, cron, dan public smoke lulus.
+- Status `PRODUCTION_DEPLOYED`; commerce/business readiness tetap `BLOCKED`
+  pada 30/42 checks dengan 12 blocker.
+
 ## 2026-08-26 - SagaWork Workspace synthetic trial release
 
 - Exact source/runtime `e2a0391` mengaktifkan Workspace compatibility, effective-dated Staff assignment, scoped HR context, GPS setup preview, shift template, dan schedule eligibility pada `https://app.sagawork.site`.
