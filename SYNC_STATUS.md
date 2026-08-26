@@ -12,12 +12,30 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-26T14:10:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-26T14:24:20+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | exact `origin/main` `f5d911c24e0f825a4f1e4d067ef738531d34bcee` |
-| Informasi terakhir disinkronkan | COYABAG Admin Detail Pesanan payment review context integrity. |
-| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED / COMMERCE_NOT_PRODUCTION_ACTIVATED / BUSINESS_READINESS_BLOCKED`. |
+| Baseline sebelum pembaruan | exact `origin/main` `c0fa3bece71f4b453520dc36c6656897fc3d483f` |
+| Informasi terakhir disinkronkan | SagaWork Sprint 30 restricted pilot runtime boundary. |
+| Status sinkronisasi | `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / K0_NO_GO`. |
+
+## SagaWork Sprint 30 restricted pilot runtime boundary
+
+- Exact local source `a500a52` menambah fail-closed `pilot_restricted` startup/readiness guard, dedicated database name/user dan bucket binding, performance/signup OFF, dedicated MFA scope, ClamAV, dan separate operational topology.
+- Full local check lulus 33 test file/123 test dan 44-page build.
+- Pilot units belum dipasang. Shared-host capacity dan external private-evidence/protected-access/restore/rollback gate masih gagal; `K0_ENVIRONMENT_READY=NO_GO`.
+- Synthetic staging/Preview dan production tidak berubah. Tidak ada real account/data/evidence atau credential yang dibuat.
+
+## File yang berubah pada sinkronisasi ini (SagaWork Sprint 30)
+
+- `products/sagawork/PRODUCT.md`
+- `products/sagawork/DOSSIER.md`
+- `products/sagawork/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG Admin Detail Pesanan payment review context integrity
 

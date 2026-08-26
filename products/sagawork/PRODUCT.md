@@ -1,7 +1,7 @@
 # SagaWork Product Knowledge
 
 Updated: 26 Agustus 2026
-Evidence status: `CONFIRMED / STAGING_DEPLOYED / SYNTHETIC_STAGING_VALIDATED`
+Evidence status: `CONFIRMED / SPRINT_30_LOCAL_VALIDATED / STAGING_UNCHANGED`
 
 ## Tujuan dokumen
 
@@ -36,6 +36,8 @@ SagaWork adalah PWA operasi tenaga kerja multi-lokasi untuk jadwal, absensi foto
 ## Status saat ini
 
 - Andreas telah mengunci scope pilot pertama dengan kode public-safe `KANANTA-MADIUN-CANARY-01`: satu company/satu lokasi di Kota Madiun, 5–10 Staff, mulai 26 Agustus 2026, default tiga hari, support enabled dengan default 09.00–18.00 WIB, manual attendance parallel run, dan performance `OFF`. Statusnya `OWNER_SCOPE_CONFIRMED / PRE_ADMISSION / NO_GO`; nama customer, roster, serta identitas champion individual tidak dipublikasikan.
+- Sprint 30 exact local source `a500a52` menambah startup/readiness guard untuk `pilot` + `pilot_restricted`, binding dedicated database name/user serta private evidence bucket, kill switch performance/signup, dedicated MFA scope, ClamAV requirement, dan topology service/health/evidence/retention/encrypted-backup/rollback terpisah. Full local check lulus 33 test file/123 test dan 44-page production build.
+- Pilot topology belum dipasang. Shared-host capacity gate tidak lulus dan external private-evidence, protected-access, backup/restore, serta rollback evidence belum lengkap; `K0_ENVIRONMENT_READY=NO_GO`. Tidak ada akun, credential, real Staff data, foto, GPS, runtime staging, atau production yang berubah.
 - Exact source/handoff runtime `d36a59fb456106eafa3d8b3e797d42a4aac67a68`; application feature evidence `05e2b1a`. Isolated Hostinger staging memakai MySQL 8.4 dengan 23 migration/65 application table/32 trigger, data sintetis, serta same-VPS loopback object store khusus acceptance non-PII. Store ini bukan provider production/offsite/HA dan tidak menerima real employee/photo data.
 - Protected Vercel Preview `dpl_9zvZTjgQBRhHJm5pVXH4rmtqQaBg` `READY`, synthetic-only; authenticated health, 44-page build, strict nonce CSP, security headers, dan public-only service-worker contract PASS, tanpa MySQL atau custom domain. Direct public access diarahkan ke Deployment Protection.
 - Restricted tracked-source handoff artifact untuk exact `d36a59f` tersedia dengan provenance, sidecar SHA-256, dan exact-release CycloneDX 1.6 SBOM 699 komponen. Archive 1.455.320 byte/checksum `427a81c40f7d0ba8eee3909ad8131887732f0092fe525395639ba6774278c576`; SBOM checksum `5bf5c8976c8242ccc418722c7d1ff9d898582e3a0a89be743e6ac6a00b9a90a0`. Artifact tidak dipublikasikan ke repository knowledge.
@@ -51,6 +53,6 @@ SagaWork adalah PWA operasi tenaga kerja multi-lokasi untuk jadwal, absensi foto
 
 Belum ada real employee/photo/performance data, public DNS, external provider storage/DPA, offsite key escrow, human device/PWA-install UAT, legal/privacy approval, exact roster/named individual champion/signed charter, private source remote/hosted CI run, independent security verification, real signed admission receipt, atau closed beta. Real performance activation juga menunggu authoritative KPI adapters/sources, company rubric, staff transparency, DPIA/legal basis, trained calibration/fairness review, dan appeal owner; pilot pertama sengaja mempertahankannya OFF. Shared-VPS capacity monitoring, XLSX/async private export, dedicated coverage/leave/exception export, rehire, scheduled/backdated termination, real offboarding authority/SOP, serta training/test shift isolation juga masih terbuka. Payroll nominal/compliance tidak diklaim. External-evidence runbook public-safe sudah memetakan 16 admission records, canary, UAT, provider/legal/recovery, performance appendix, dan receipt assembly; owner scope baru memenuhi definisi awal, bukan seluruh evidence admission.
 
-## Proposed Kananta internal execution bridge
+## Internal pilot execution bridge
 
-`PROPOSAL`: jalankan Sprint 30–40 secara berurutan: isolated `pilot_restricted` environment, secure organization/HR bootstrap, Kananta configuration, Staff lifecycle, schedule/note/swap, Android+iOS owner attendance rehearsal, HR report reconciliation, uncoached Andreas UAT, revision/regression, five-Staff three-day canary, lalu final Go/No-Go. Current seed scripts tetap synthetic-only dan tidak boleh dipakai untuk akun pilot. Performance tetap OFF dan payroll tetap payroll-ready only. Detail baru menjadi kontrak eksekusi setelah Andreas menerima urutan sprint.
+`CONFIRMED`: Andreas menerima Sprint 30–40 secara berurutan: isolated `pilot_restricted` environment, secure organization/HR bootstrap, pilot configuration, Staff lifecycle, schedule/note/swap, Android+iOS owner attendance rehearsal, HR report reconciliation, uncoached Andreas UAT, revision/regression, five-Staff three-day canary, lalu final Go/No-Go. Sprint 30 source sudah local-validated tetapi K0 belum PASS. Current seed scripts tetap synthetic-only dan tidak boleh dipakai untuk akun pilot. Performance tetap OFF dan payroll tetap payroll-ready only.

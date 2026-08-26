@@ -1,5 +1,14 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-26 - SagaWork Sprint 30 restricted pilot boundary sync
+
+- Ringkasan: menyinkronkan implementasi lokal fail-closed pilot runtime dan topology operational terpisah.
+- Alasan: real account/data tidak boleh masuk sebelum environment, database, evidence, access, backup, dan rollback benar-benar terisolasi.
+- Produk/area: SagaWork pilot runtime, database scope, private evidence, MFA, health, retention, backup, rollback, QA, security, dan release.
+- Klasifikasi: `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; source exact `a500a52`.
+- Production berubah: tidak. Synthetic staging/Preview tetap aktif; `K0_ENVIRONMENT_READY=NO_GO` dan business readiness blocked.
+- Blocker: shared-host capacity, external private-evidence, protected access, restore/rollback evidence, lalu secure organization/HR bootstrap.
+
 ## 2026-08-26 - COYABAG Admin Detail Pesanan payment review context sync
 
 - Ringkasan: menyinkronkan eligibility antrean/detail, stale-context guard,

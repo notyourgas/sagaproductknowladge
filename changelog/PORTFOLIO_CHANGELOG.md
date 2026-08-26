@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-08-26 - SagaWork Sprint 30 restricted pilot boundary
+
+- Exact local source `a500a52` menambah fail-closed `pilot_restricted` startup/readiness guard, dedicated database/user/bucket binding, performance/signup OFF, MFA scope, ClamAV, serta separate service/backup/rollback topology.
+- Full local check lulus 33 file/123 test dan 44-page build; runtime staging/Preview tidak berubah dan pilot units belum dipasang.
+- Shared-host capacity dan external private-evidence/protected-access/restore/rollback gate masih gagal. Status `IMPLEMENTED_NOT_DEPLOYED / K0_NO_GO`; tidak ada akun atau real data dibuat.
+
 ## 2026-08-26 - SagaView S301 authenticated UAT data boundary
 
 - Exact source `e6b2bf51ed8f4f22dd585aefc7611931bc85fe25` mengikat akun UAT
@@ -28,7 +34,7 @@
 - Status `PRODUCTION_DEPLOYED`; readiness tetap 30/42 dengan 12 blocker dan
   commerce tetap fail-closed.
 
-## 2026-08-26 - SagaWork proposed Kananta internal MVP sprint bridge
+## 2026-08-26 - SagaWork proposed internal MVP sprint bridge
 
 - `PROPOSAL`: Sprint 30–40 membawa exact synthetic-validated source menuju isolated pilot environment, secure HR bootstrap, owner rehearsal, revision/regression, five-Staff internal canary, dan final Go/No-Go.
 - Current seed scripts tetap synthetic-only; akun pilot tidak akan dibuat dengan mengganti fixture. Performance OFF dan payroll-ready-only boundary dipertahankan.

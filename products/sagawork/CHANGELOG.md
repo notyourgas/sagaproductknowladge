@@ -8,7 +8,15 @@ Mencatat perubahan material SagaWork dengan status delivery dan activation yang 
 
 Synthetic fixture, preview, dan staging bukan bukti real pilot atau production activation.
 
-## 2026-08-26 - Proposed Sprint 30–40 Kananta internal MVP bridge
+## 2026-08-26 - Sprint 30 restricted pilot runtime boundary
+
+- `CONFIRMED / LOCAL_VALIDATED` dari exact source `a500a52`: runtime pilot sekarang fail-closed pada `pilot_restricted`, dedicated database name/user dan private bucket scope, performance/signup OFF, dedicated MFA scope, private evidence + ClamAV, dan protected-access declaration.
+- Separate pilot systemd topology tersedia untuk web, health, evidence, retention, encrypted backup, dan guarded rollback; template belum diinstal atau diaktifkan.
+- Full local check lulus 33 test file/123 test serta 44-page production build. Synthetic staging dan protected Preview tidak berubah.
+- Shared-host capacity gate belum lulus; external private-evidence, protected access, restore, dan rollback evidence masih blocker. `K0_ENVIRONMENT_READY=NO_GO`; Sprint 31 belum memprovision organization/HR.
+- Tidak ada production, real account/data, credential, foto, GPS, atau business activation yang berubah.
+
+## 2026-08-26 - Proposed Sprint 30–40 internal MVP bridge
 
 - `PROPOSAL` dari permintaan Andreas: setelah preparation sprint selesai, Andreas mencoba login HR, menambah Staff, mengatur shift, menjalankan attendance foto+GPS, memeriksa report, dan memberikan revisi MVP.
 - Strategy memakai owner rehearsal dua akun uji sebelum tepat 5 Staff internal, lalu revision/regression dan three-day canary.
