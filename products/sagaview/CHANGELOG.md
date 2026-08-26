@@ -1,5 +1,26 @@
 # SagaView Changelog
 
+## 2026-08-26 - S295 deploy fail-closed pada shared storage
+
+- Klasifikasi: `DEPLOY_ATTEMPTED / RELEASE_BLOCKED / ROLLED_BACK`;
+  production aktif kembali S292 dan S294 tetap `IMPLEMENTED_NOT_DEPLOYED`.
+- Before: kandidat S294 sudah lulus privacy regression, build, lint, audit
+  dependency, artifact exact, backup terenkripsi, checksum, offsite round-trip,
+  dan disposable restore.
+- After: release inactive `20260826001410-be0d730` sempat dipasang, lalu audit
+  independen menemukan folder `storage` tidak menunjuk shared storage. Atomic
+  rollback mengembalikan S292 `20260825210645-1237ef2` dan pointer rollback aman
+  S288 `20260824211838-8d84c60`.
+- Dampak: tidak ada klaim production deployment untuk redaksi path S294;
+  migration tetap nol, Studio/SagaBook/platform tidak berubah, dan authenticated
+  UAT tidak dijalankan.
+- Evidence: backup restore tiga database 152/161/149 tabel; smoke 4/4 HTTP 200,
+  service aktif, route Support Hub 11, OPTIONS 204, pending migration/failed job
+  nol, header keamanan lulus, dan journal error nol setelah rollback.
+- Blocker: perbaiki release packaging agar `storage` shared dibuat atomik dan
+  divalidasi sebelum switch; ulangi rehearsal serta guarded deploy pada run
+  berikutnya, bukan pada correction round yang sama.
+
 ## 2026-08-26 - S294 redaksi path lokal sebelum Support Hub
 
 - Klasifikasi: `PUSHED / SECURITY_VALIDATED / QA_VALIDATED /

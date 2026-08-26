@@ -1,6 +1,18 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 26 Agustus 2026 04:23 WIB
+Evidence cut-off: 26 Agustus 2026 07:24 WIB
+
+S295 guarded deployment S294 berhenti fail-closed dan sudah rollback. Candidate
+exact `be0d730758c8678c263a8ea12ed09924db89e23a` sempat dipasang sebagai
+release inactive `20260826001410-be0d730`, namun production audit menemukan
+`storage` bukan symlink shared. Smoke, service, route Support Hub, header,
+migration, queue, dan journal memang hijau, tetapi kontrak data-integrity tidak
+lulus. Active production dikembalikan ke S292 exact
+`1237ef2df06ca53f10b6230adc9350b179462ade` / `20260825210645-1237ef2`;
+rollback kembali S288 exact `8d84c60c86131892a2ae3727670b0468b64fa81b` /
+`20260824211838-8d84c60`. S294 tetap `IMPLEMENTED_NOT_DEPLOYED`; satu gap
+berikutnya adalah memperbaiki dan merehearsal shared-storage packaging sebelum
+retry deploy.
 
 S292 guarded production release: exact pushed backend/Owner source
 `1237ef2df06ca53f10b6230adc9350b179462ade` aktif sebagai immutable release

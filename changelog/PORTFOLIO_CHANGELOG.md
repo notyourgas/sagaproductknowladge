@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-26 - SagaView S295 fail-closed dan rollback
+
+- Kandidat privacy S294 sempat dipasang sebagai release inactive
+  `20260826001410-be0d730`, lalu production audit menemukan shared-storage link
+  tidak terbentuk sesuai kontrak.
+- Atomic rollback berhasil: backend/Owner aktif kembali
+  `20260825210645-1237ef2`, rollback aman `20260824211838-8d84c60`, sedangkan
+  Studio dan produk lain tidak berubah.
+- Delivery S294 tetap `IMPLEMENTED_NOT_DEPLOYED`; perbaikan packaging dan
+  rehearsal shared storage menjadi blocker sebelum retry.
+
 ## 2026-08-26 - SagaView S294 Support Hub path privacy
 
 - Exact `be0d730758c8678c263a8ea12ed09924db89e23a` meredaksi path lokal

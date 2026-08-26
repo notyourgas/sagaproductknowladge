@@ -8,7 +8,7 @@ diubah menjadi klaim publik sebelum ditutup dengan bukti atau keputusan owner.
 
 ## Konteks
 
-Daftar ini berlaku pada evidence cut-off 26 Agustus 2026 04:23 WIB dan harus diperbarui
+Daftar ini berlaku pada evidence cut-off 26 Agustus 2026 07:24 WIB dan harus diperbarui
 ketika keputusan atau release baru menutup gap.
 
 ## Cara memakai
@@ -21,6 +21,13 @@ ketika keputusan atau release baru menutup gap.
   sebagai `CONFIRMED`.
 
 ## Prioritas tinggi
+
+SagaView S295 `RELEASE_BLOCKED / ROLLED_BACK`: guarded deploy exact S294
+`be0d730758c8678c263a8ea12ed09924db89e23a` menemukan release `storage` bukan
+symlink shared pada audit pascaswitch. Production sudah aman kembali ke S292,
+dan S294 tetap `IMPLEMENTED_NOT_DEPLOYED`. Retry hanya boleh dilakukan setelah
+packaging shared storage diperbaiki, diuji disposable, dan divalidasi sebelum
+atomic switch.
 
 SagaView S288 `RECOVERY_APPROVAL_REQUIRED`: blocker global test sudah ditutup
 pada exact mainline candidate

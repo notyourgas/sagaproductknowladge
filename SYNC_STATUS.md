@@ -12,12 +12,22 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-26T04:23:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-26T07:24:00+07:00 |
 | Branch aktif | `codex/knowledge-s292-sagaview-production` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | exact `origin/main` `fd3ef16` sebelum sinkronisasi SagaView S292 |
-| Informasi terakhir disinkronkan | SagaView S292 cumulative production release. |
-| Status sinkronisasi | `PUSHED / PRODUCTION_DEPLOYED`; belum `PRODUCTION_ACTIVATED`; `BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | branch exact `a7095e0` sebelum sinkronisasi S295 |
+| Informasi terakhir disinkronkan | SagaView S295 release blocked dan rollback ke S292. |
+| Status sinkronisasi | `RELEASE_BLOCKED / ROLLED_BACK`; S294 tetap `IMPLEMENTED_NOT_DEPLOYED`; `BUSINESS_READY=false`. |
+
+## SagaView S295 fail-closed rollback
+
+- Candidate exact `be0d730758c8678c263a8ea12ed09924db89e23a` sempat dipasang
+  sebagai release inactive `20260826001410-be0d730`.
+- Audit pascaswitch menemukan `storage` bukan symlink shared, sehingga atomic
+  rollback mengembalikan S292 dan pointer rollback S288.
+- Backup/restore, smoke, service, route, queue, migration, header, dan journal
+  lulus; authenticated UAT tidak dijalankan.
+- Retry menunggu perbaikan dan rehearsal packaging shared storage.
 
 ## SagaView S292 cumulative production release
 

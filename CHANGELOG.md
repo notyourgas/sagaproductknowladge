@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-26 - SagaView S295 fail-closed rollback sync
+
+- Ringkasan: deploy kandidat path-privacy S294 dibatalkan setelah audit
+  pascaswitch menemukan shared-storage link tidak terbentuk.
+- Klasifikasi: `CONFIRMED / RELEASE_BLOCKED / ROLLED_BACK`.
+- Production: backend/Owner aktif kembali exact S292
+  `1237ef2df06ca53f10b6230adc9350b179462ade` / `20260825210645-1237ef2`;
+  rollback aman S288 `20260824211838-8d84c60`; Studio dan produk lain tetap.
+- Evidence: backup terenkripsi/offsite dan restore 152/161/149 tabel lulus;
+  rollback, smoke 4/4, service, route, queue, migration, header, dan journal
+  lulus.
+- Residual: S294 tetap `IMPLEMENTED_NOT_DEPLOYED`; perbaiki packaging shared
+  storage dan rehearsal sebelum retry deploy.
+
 ## 2026-08-26 - SagaView S292 cumulative production release sync
 
 - Ringkasan: sinkronisasi production backend/Owner exact S291 cumulative S289

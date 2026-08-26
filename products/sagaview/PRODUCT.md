@@ -1,6 +1,18 @@
 # SagaView Product Knowledge
 
-Updated: 26 Agustus 2026 06:00 WIB
+Updated: 26 Agustus 2026 07:24 WIB
+
+SagaView S295 guarded deploy exact
+`be0d730758c8678c263a8ea12ed09924db89e23a` berhenti fail-closed dan sudah
+di-rollback. Candidate sempat dipasang sebagai release inactive
+`20260826001410-be0d730`, tetapi audit independen menemukan folder runtime
+`storage` bukan symlink ke shared storage. Walaupun smoke publik, service,
+route, header keamanan, migration, queue, dan journal hijau, release tidak
+diterima sebagai production aman. Production kembali exact S292
+`1237ef2df06ca53f10b6230adc9350b179462ade` / `20260825210645-1237ef2` dengan
+rollback aman S288 `8d84c60c86131892a2ae3727670b0468b64fa81b` /
+`20260824211838-8d84c60`. Status S294 tetap `IMPLEMENTED_NOT_DEPLOYED`;
+authenticated UAT tidak dijalankan.
 
 SagaView S294 exact `be0d730758c8678c263a8ea12ed09924db89e23a` sudah
 `PUSHED / SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
