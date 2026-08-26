@@ -1,6 +1,21 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 27 Agustus 2026 01:07 WIB
+Evidence cut-off: 27 Agustus 2026 02:12 WIB
+
+S309 exact S308 artifact and disposable release rehearsal: exact source
+`55ff2870af6e3b0ef09e5aaa347e765ce33f0099` sudah dibungkus sebagai immutable
+release `20260826190421-55ff287`. Archive 2.591 entry, SHA-256 manifest, dan git
+bundle exact mempunyai salinan kedua dengan checksum identik. Archive tidak
+memuat `.env`, `.git`, `vendor`, atau `node_modules`; bundle lengkap dan
+migration delta terhadap backend production aktif adalah nol.
+
+Disposable storage rehearsal lulus untuk kontrak symlink, sentinel roundtrip,
+archive unchanged, production pointer unchanged, dan cleanup. Status
+`PUSHED / UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+DEVOPS_VALIDATED / LOCAL_VALIDATED / STAGING_READY /
+IMPLEMENTED_NOT_DEPLOYED`; production tetap S298. Gap berikutnya adalah
+authenticated Owner UAT non-customer, fresh encrypted backup/checksum/
+disposable restore, approval Andreas, atomic deploy, smoke, dan rollback.
 
 S308 Owner Support Hub non-overlap and label-in-name accessibility: exact
 pushed source `55ff2870af6e3b0ef09e5aaa347e765ce33f0099` memindahkan
@@ -18,8 +33,8 @@ terlihat sesuai WCAG 2.5.3. Exact scoped gate lulus 210/1.744 dari 31 file,
 Composer/npm audit nol, build 5.097 modul, dan delta bundle utama +580 byte.
 Status `PUSHED / UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
 LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S298. Gap
-berikutnya adalah immutable artifact/rehearsal exact S308, authenticated Owner
-UAT non-customer, fresh backup/restore, dan approval deploy terpisah.
+artifact/rehearsal exact S308 kemudian ditutup oleh S309; authenticated Owner
+UAT non-customer, fresh backup/restore, dan approval deploy tetap terpisah.
 
 S307 Owner Changelog context recovery: exact pushed source
 `17362d6430abb54745d126c24d5ad926adc372ca` menutup kehilangan konteks

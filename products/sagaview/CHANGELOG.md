@@ -1,5 +1,28 @@
 # SagaView Changelog
 
+## 2026-08-27 - S309 exact S308 artifact and disposable rehearsal
+
+- Klasifikasi: `PUSHED / DEVOPS_VALIDATED / QA_VALIDATED /
+  SECURITY_VALIDATED / LOCAL_VALIDATED / STAGING_READY /
+  IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
+- Before: exact S308 sudah lolos source gate tetapi belum memiliki archive
+  immutable, manifest checksum, git bundle, salinan terpisah, dan rehearsal
+  release-storage.
+- After: release `20260826190421-55ff287` untuk exact
+  `55ff2870af6e3b0ef09e5aaa347e765ce33f0099` memiliki archive 2.591 entry,
+  SHA-256 manifest, git bundle exact, dan salinan kedua dengan checksum identik.
+- Integrity: archive tidak memuat `.env`, `.git`, `vendor`, atau `node_modules`;
+  bundle lengkap dan memuat exact HEAD; migration delta dari backend production
+  aktif ke kandidat adalah nol.
+- Rehearsal: disposable release-storage lulus untuk symlink, sentinel
+  roundtrip, archive unchanged, production pointer unchanged, serta cleanup
+  resource sementara.
+- Delivery: tidak ada cutover, database write, payment, foto/path/output
+  customer, perubahan SagaBook, atau mutasi production.
+- Next gate: authenticated Owner UAT non-customer, fresh encrypted
+  backup/checksum/disposable restore, approval Andreas, atomic deploy, smoke,
+  dan rollback verification.
+
 ## 2026-08-27 - S308 Owner Support Hub non-overlap and accessible labels
 
 - Klasifikasi: `PUSHED / UIUX_VALIDATED / QA_VALIDATED /
@@ -23,8 +46,9 @@
 - Delivery: source exact sudah pushed; tidak ada API, database, migration,
   payment, foto/path/output customer, perubahan SagaBook, atau mutasi
   production.
-- Next gate: immutable artifact/rehearsal exact S308, authenticated Owner UAT
-  non-customer, fresh backup/restore, dan approval deployment terpisah.
+- Next gate: immutable artifact/rehearsal exact S308 ditutup oleh S309;
+  authenticated Owner UAT non-customer, fresh backup/restore, dan approval
+  deployment tetap terpisah.
 
 ## 2026-08-26 - S307 Owner Changelog context recovery
 

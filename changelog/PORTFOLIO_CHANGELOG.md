@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-27 - SagaView S309 exact release evidence
+
+- Exact S308 `55ff2870af6e3b0ef09e5aaa347e765ce33f0099` kini memiliki
+  immutable release `20260826190421-55ff287`, SHA-256 manifest, git bundle,
+  dan dua salinan artifact dengan checksum identik.
+- Archive 2.591 entry lulus pemeriksaan file runtime terlarang; migration delta
+  nol dan disposable storage rehearsal lulus untuk symlink, sentinel,
+  immutability, production-pointer guard, serta cleanup.
+- Status `PUSHED / LOCAL_VALIDATED / STAGING_READY /
+  IMPLEMENTED_NOT_DEPLOYED`. Production SagaView tidak berubah; UAT, fresh
+  backup/restore, approval deploy, activation, dan business readiness tetap
+  terpisah.
+
 ## 2026-08-27 - COYABAG editorial storefront and curated gallery
 
 - Exact source `1e9dcddb454be6857687f522a90d4a29f81ef341` aktif pada immutable
@@ -50,9 +63,9 @@
 - Playwright mobile/desktop 4/4, AccessLint 94 aturan/0 violation, exact gate
   210/1.744, build 5.097 modul, dan audit dependency nol lulus; local-first dan
   no-upload tetap utuh.
-- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; immutable
-  artifact/rehearsal dan UAT belum dibuat, sehingga belum `STAGING_READY`.
-  Production SagaView maupun SagaBook tidak berubah oleh slice ini.
+- Status source S308 `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+  artifact/rehearsal kemudian ditutup oleh S309. Production SagaView maupun
+  SagaBook tidak berubah oleh slice ini.
 
 ## 2026-08-27 - SagaBook governed consumable stock administration
 
