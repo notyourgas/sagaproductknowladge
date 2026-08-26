@@ -280,6 +280,24 @@
 - Production berubah: tidak. Active synthetic staging/Preview tetap sama; tidak ada akun/data nyata. K0/K1 tetap NO-GO menunggu external environment gates dan actual Owner UAT.
 - Dokumen terdampak: Product, Dossier, SagaWork changelog, portfolio changelog, master knowledge, gaps, root changelog, dan sync status.
 - Next action: tutup K0, deploy exact release ke pilot runtime terpisah, lalu jalankan restricted Andreas bootstrap/TOTP/session/recovery UAT untuk K1.
+## 2026-08-26 - SagaView S307 Owner Changelog recovery sync
+
+- Ringkasan: menyinkronkan persistensi pencarian, filter, dan detail rilis
+  Changelog Owner serta koreksi native stderr pada Composer audit.
+- Alasan: reload atau kembali dari Ringkasan tidak boleh menghapus konteks
+  operator, dan pesan aman Composer tidak boleh salah menjadi kegagalan gate.
+- Produk/area: SagaView Owner, UI/UX, accessibility, QA, security, DevOps, dan
+  release readiness.
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; source exact
+  `17362d6430abb54745d126c24d5ad926adc372ca`.
+- Production berubah: tidak. API, database, payment, local-first, no-upload,
+  SagaBook, activation, dan business readiness tidak berubah.
+- Dokumen terdampak: Product, feature ledger, changelog SagaView, portfolio,
+  master knowledge, dan root changelog.
+- Next action: immutable artifact/rehearsal exact S307, authenticated Owner UAT,
+  fresh backup/restore, lalu approval deployment terpisah.
+
 ## 2026-08-26 - SagaView S306 Composer audit recovery sync
 
 - Ringkasan: menyinkronkan retry transport terbatas pada Composer audit dan

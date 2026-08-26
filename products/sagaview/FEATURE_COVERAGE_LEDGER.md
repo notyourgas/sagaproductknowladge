@@ -1,6 +1,23 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 26 Agustus 2026 20:20 WIB
+Evidence cut-off: 26 Agustus 2026 21:18 WIB
+
+S307 Owner Changelog context recovery: exact pushed source
+`17362d6430abb54745d126c24d5ad926adc372ca` menutup kehilangan konteks
+ketika Owner reload atau kembali dari Ringkasan. Query, filter jenis, dan satu
+detail rilis kini tersimpan di parameter URL khusus Changelog tanpa menghapus
+konteks workspace/session. Nilai URL tidak valid kembali ke default aman dan
+tidak memicu API ataupun penyimpanan cloud.
+
+RED membuktikan state belum dipersistenkan; GREEN Playwright desktop/mobile
+2/2 mencakup reload, kembali, keyboard/focus, target 44 pixel, forced-colors,
+reduced-motion, dan no-overflow. Exact scoped gate lulus 210/1.744 dari 31 file,
+Composer/npm audit nol, dan build 5.097 modul. Native stderr aman Composer kini
+dinilai lewat exit code aktual, sementara advisory dan kegagalan transport
+menetap tetap fail-closed. Status `PUSHED / UIUX_VALIDATED / QA_VALIDATED /
+SECURITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+tetap S298. Gap berikutnya adalah artifact/rehearsal exact S307, authenticated
+Owner UAT non-customer, dan approval deploy terpisah.
 
 S306 Composer audit transport recovery and immutable readiness: exact pushed
 source `23dc1a75cd2aef76d94169d3604814aa56ef5bdd` menutup blocker gate S305.

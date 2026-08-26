@@ -1,6 +1,27 @@
 # SagaView Product Knowledge
 
-Updated: 26 Agustus 2026 20:20 WIB
+Updated: 26 Agustus 2026 21:18 WIB
+
+SagaView S307 exact `17362d6430abb54745d126c24d5ad926adc372ca` sudah
+`PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Owner Changelog kini
+mempertahankan kata pencarian, filter jenis perubahan, dan satu detail rilis
+ketika halaman dimuat ulang atau operator kembali dari Ringkasan. State memakai
+parameter URL khusus Changelog tanpa menghapus konteks workspace/session yang
+sudah ada; input URL yang tidak dikenal kembali ke default aman.
+
+Acceptance RED/GREEN desktop dan mobile lulus 2/2 untuk reload, kembali,
+keyboard/focus, target 44 pixel, forced-colors, reduced-motion, dan no-overflow.
+Exact scoped gate lulus 210 test/1.744 assertion dari 31 file, Composer/npm audit
+nol, dan build 5.097 modul. Wrapper Composer juga diperbaiki agar pesan aman di
+native stderr dinilai dari exit code aktual; advisory dan kegagalan transport
+menetap tetap fail-closed. Tidak ada perubahan API, database, migration,
+payment, foto/path/output customer, atau SagaBook.
+
+Production tetap backend/Owner `20260826050812-7bf0e0d`, Studio
+`20260824170456-7ae79ae`, dan rollback `20260825210645-1237ef2`. Artifact S306
+tidak mewakili exact S307, sehingga kandidat ini belum `STAGING_READY` dan
+belum dideploy. Authenticated UAT, artifact/rehearsal, fresh backup/restore,
+deployment, activation, dan business readiness tetap gate terpisah.
 
 SagaView S306 exact `23dc1a75cd2aef76d94169d3604814aa56ef5bdd` sudah
 `PUSHED / LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.

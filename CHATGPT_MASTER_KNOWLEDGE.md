@@ -1,8 +1,17 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 26 Agustus 2026 20:20 WIB
+Evidence cut-off: 26 Agustus 2026 21:18 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
+
+SagaView S307 exact `17362d6430abb54745d126c24d5ad926adc372ca` sudah
+`PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Changelog Owner
+mempertahankan pencarian, filter, dan detail rilis setelah reload atau kembali
+dari Ringkasan melalui parameter URL khusus yang tidak menghapus konteks
+workspace/session. Exact gate 210/1.744, Playwright desktop/mobile 2/2,
+Composer/npm audit nol, dan build 5.097 modul lulus. Production tidak berubah;
+artifact exact S307, authenticated UAT, backup/restore, dan approval deploy
+masih terpisah.
 
 SagaView S306 exact `23dc1a75cd2aef76d94169d3604814aa56ef5bdd` mengikat
 retry terbatas untuk kegagalan transport Composer audit tanpa melewati advisory

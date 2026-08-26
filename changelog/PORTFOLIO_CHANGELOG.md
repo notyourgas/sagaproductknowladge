@@ -210,6 +210,16 @@
 - `CONFIRMED / LOCAL_VALIDATED`: feature `6d3fc98`, acceptance `666fbef` menambah guarded/idempotent first-organization + HR provisioning, one-time secret, HR-owned password, mandatory TOTP, policy acknowledgement, dan operator recovery dengan session/MFA revocation.
 - 36/130 tests, 47-page build, 66 tables/24 migrations, OpenAPI 70 paths/85 operations/48 request components, dan disposable Hostinger MySQL integration PASS.
 - Disk-capacity blocker lama tertutup, tetapi K0/K1 tetap NO-GO karena external provider/access/recovery dan actual Owner HR UAT belum selesai. Tidak ada real account/data, staging deployment, Preview change, atau production activation.
+## 2026-08-26 - SagaView S307 Owner Changelog context recovery
+
+- Exact source `17362d6430abb54745d126c24d5ad926adc372ca` menjaga
+  pencarian, filter, dan detail rilis ketika Owner reload atau kembali dari
+  Ringkasan tanpa mengubah boundary local-first.
+- RED/GREEN desktop/mobile 2/2, exact gate 210/1.744, audit dependency nol,
+  build 5.097 modul, keyboard/focus, forced-colors, dan no-overflow lulus.
+- Delivery `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; belum ada
+  artifact exact S307 dan production SagaView maupun SagaBook tidak berubah.
+
 ## 2026-08-26 - SagaView S306 Composer audit recovery readiness
 
 - Exact source `23dc1a75cd2aef76d94169d3604814aa56ef5bdd` membuat

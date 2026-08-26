@@ -1,5 +1,30 @@
 # SagaView Changelog
 
+## 2026-08-26 - S307 Owner Changelog context recovery
+
+- Klasifikasi: `PUSHED / UIUX_VALIDATED / QA_VALIDATED /
+  SECURITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+  production tidak berubah.
+- Before: pencarian, filter jenis, dan detail rilis Changelog hilang ketika
+  Owner memuat ulang halaman atau kembali dari Ringkasan.
+- After: exact `17362d6430abb54745d126c24d5ad926adc372ca` menyimpan
+  konteks Changelog pada parameter URL terpisah sambil mempertahankan konteks
+  workspace/session yang sudah ada. Nilai tidak dikenal kembali ke default
+  aman dan halaman tetap hanya membuka satu detail.
+- Evidence: RED membuktikan parameter belum tersedia; GREEN Playwright desktop
+  dan mobile 2/2 mencakup reload, kembali, keyboard/focus, target 44 pixel,
+  forced-colors, reduced-motion, dan no-overflow. Exact gate lulus 210 test
+  dengan 1.744 assertion dari 31 file, Composer/npm audit nol, dan build 5.097
+  modul.
+- Release harness: output aman Composer pada native stderr kini dinilai lewat
+  exit code aktual; advisory tetap gagal langsung dan transport menetap tetap
+  fail-closed tanpa mode ignore/offline.
+- Delivery: source exact sudah pushed; tidak ada API, migration, database write,
+  upload foto/path/output customer, payment, perubahan SagaBook, atau mutasi
+  production.
+- Next gate: immutable artifact/rehearsal exact S307, authenticated Owner UAT
+  non-customer, fresh backup/restore, dan approval deployment terpisah.
+
 ## 2026-08-26 - S306 Composer audit transport recovery and release readiness
 
 - Klasifikasi: `PUSHED / DEVOPS_VALIDATED / SECURITY_VALIDATED /
