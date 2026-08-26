@@ -1,5 +1,23 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-26 - SagaView S304 verified retry recovery sync
+
+- Ringkasan: menyinkronkan read-after-write Support Hub sebelum menawarkan
+  kirim ulang pada status POST yang tidak pasti.
+- Alasan: retry langsung dapat menggandakan pertanyaan yang sebenarnya sudah
+  diterima server tetapi responsnya hilang.
+- Produk/area: SagaView Owner, Support Hub, UI/UX, accessibility, privacy,
+  security, QA, dan release readiness.
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; source exact
+  `74dfa84d772abc0db7ed224bdadd6e1ddc65b20b`.
+- Production berubah: tidak. Backend/Owner, Studio, rollback, API, database,
+  payment, local-first, no-upload, dan SagaBook tidak berubah.
+- Dokumen terdampak: Product, feature ledger, changelog SagaView, portfolio,
+  dan root changelog.
+- Next action: immutable artifact/rehearsal exact S304, authenticated Owner UAT,
+  lalu approval deployment terpisah.
+
 ## 2026-08-26 - COYABAG Admin Produk publication context sync
 
 - Ringkasan: menyinkronkan revision guard, publication-context guard, operator

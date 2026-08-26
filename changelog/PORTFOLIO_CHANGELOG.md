@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-26 - SagaView S304 Support Hub verified retry recovery
+
+- Exact source `74dfa84d772abc0db7ed224bdadd6e1ddc65b20b` menambahkan
+  read-after-write sebelum retry pertanyaan Support Hub yang status
+  pengirimannya tidak pasti.
+- Pertanyaan yang sudah muncul di percakapan tidak dikirim ulang; tombol resend
+  baru tersedia bila GET verifikasi tidak menemukannya. Desktop/mobile 4/4,
+  backend/privacy 52/4.873, scoped gate 209/1.735, build, dan audit dependency
+  lulus.
+- Delivery `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; tidak ada
+  perubahan API, data customer, payment, SagaBook, atau production SagaView.
+
 ## 2026-08-26 - SagaView S303 immutable release readiness
 
 - Exact S302 menjadi candidate release `20260826090428-94df8c2` dengan

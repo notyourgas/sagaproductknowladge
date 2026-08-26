@@ -1,6 +1,24 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 26 Agustus 2026 16:11 WIB
+Evidence cut-off: 26 Agustus 2026 18:24 WIB
+
+S304 Support Hub read-after-write retry recovery: exact pushed source
+`74dfa84d772abc0db7ed224bdadd6e1ddc65b20b` menutup risiko pertanyaan ganda
+saat respons POST hilang atau server memberi 5xx. Sebelumnya retry dapat
+ditawarkan sebelum UI tahu apakah server sudah menerima pertanyaan. Sekarang
+GET bootstrap menjadi verifikasi read-after-write; pertanyaan yang ditemukan
+tidak dikirim ulang, sedangkan tombol resend eksplisit hanya muncul setelah
+hasil verifikasi tidak menemukan pertanyaan.
+
+Desktop 1440x900 dan mobile 390x844 lulus 4/4 dengan target 44 pixel,
+no-overflow, satu POST awal, satu GET verifikasi, serta kedua hasil verifikasi.
+Focused backend/privacy 52 test/4.873 assertion; exact scoped gate 209/1.735
+dari 31 file; build 5.097 modul; Composer/npm audit nol. Kontrak local-first dan
+no-upload tetap utuh; tidak ada API, database, migration, payment, atau
+perubahan SagaBook. Status `PUSHED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; production tetap S298. Artifact S303 masih menunjuk
+S302, jadi gap berikutnya adalah immutable artifact/rehearsal S304 sebelum
+authenticated Owner UAT dan keputusan deploy.
 
 S303 immutable release artifact and disposable rehearsal: exact source S302
 `94df8c227df1db31a847e4669c3a17771dcec8b7` sekarang terikat ke candidate
