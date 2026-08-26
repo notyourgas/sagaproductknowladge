@@ -1,19 +1,21 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 27 Agustus 2026 05:08 WIB
+Evidence cut-off: 27 Agustus 2026 06:08 WIB
 
 S311 custody capacity guard follow-up: gate read-only
-`sagaview-separate-custody-capacity-v1` sekarang memverifikasi hash artifact,
-menolak tujuan pada volume sumber yang sama, dan menolak kapasitas yang tidak
-mencukupi sebelum satu byte disalin. Acceptance negatif lulus untuk dua kasus:
-tujuan C dengan kapasitas cukup tetapi volume sama, serta tujuan D yang berbeda
-volume tetapi hanya memiliki 69,621 MB bebas.
+`sagaview-separate-custody-capacity-v2` sekarang memverifikasi hash artifact,
+memakai identitas volume filesystem aktual, menolak tujuan pada volume sumber
+yang sama, dan menolak kapasitas yang tidak mencukupi sebelum satu byte disalin.
+Ini mencegah mount point pada drive yang sama salah diklasifikasikan hanya dari
+huruf drive. Inventaris juga membuktikan tidak ada removable/network storage;
+dua volume sistem tanpa drive letter masing-masing hanya sekitar 81 dan 61 MB.
 
 Artifact exact tetap utuh 199.912.920 byte dan kedua hash manifest cocok. Dengan
 cadangan operasi 64 MB, tujuan terpisah harus menyediakan 267.021.784 byte
-(254,652 MB); shortfall D saat verifikasi 194.018.776 byte (185,031 MB). Script
+(254,652 MB); D memiliki 69.492.736 byte (66,274 MB) dan shortfall
+197.529.048 byte (188,378 MB). Script
 read-only terikat SHA-256
-`18d8d8bfd8c2099cabbe0d2ffc69252d3378756ca4df3f9219d9575808a1f877`.
+`e90dcaf38a383c4b3e7db48c4884a0ba60906c3f8289b143529456721b497eed`.
 Status tetap `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
 RELEASE_BLOCKED`; production dan kandidat exact tidak berubah.
 

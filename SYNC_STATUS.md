@@ -12,12 +12,24 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-27T04:45:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-27T06:08:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
-| Informasi terakhir disinkronkan | COYABAG cart variant switch dan release hold pada exact source `843c5628a2a8842aa84be5220744ab8593c13612`. |
-| Status sinkronisasi | `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`; production tetap `20260827-4cf4ce6` setelah rollback aman. |
+| Informasi terakhir disinkronkan | SagaView S311 custody guard v2 pada exact source S310 `cd7288d3bb4da9542fbfa20f97780fa5639759bf`. |
+| Status sinkronisasi | `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED`; production tidak berubah. |
+
+## SagaView S311 custody capacity guard v2
+
+- Guard memakai identitas volume filesystem aktual, bukan hanya huruf drive,
+  lalu memverifikasi manifest, kapasitas, cadangan, dan shortfall sebelum copy.
+- Artifact 199.912.920 byte dengan cadangan 64 MB memerlukan 267.021.784 byte.
+  D hanya memiliki 69.492.736 byte; tidak ada removable/network target yang
+  tersedia dan volume sistem tanpa drive letter terlalu kecil.
+- Syntax, read-only contract, same-volume rejection, insufficient-capacity
+  rejection, serta dua hash artifact lulus.
+- Source S310 dan production SagaView tidak berubah; rehearsal/deploy belum
+  dijalankan.
 
 ## COYABAG cart variant switch and release hold
 
@@ -40,17 +52,6 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `CHANGELOG.md`
 - `SYNC_STATUS.md`
-
-## SagaView S311 custody capacity guard
-
-- Guard read-only memverifikasi manifest, menolak tujuan pada volume sumber,
-  dan menolak kapasitas kurang sebelum copy.
-- Artifact 199.912.920 byte dengan cadangan 64 MB memerlukan 267.021.784 byte
-  pada volume terpisah. D hanya memiliki 73.003.008 byte saat verifikasi.
-- Syntax, read-only contract, same-volume rejection, insufficient-capacity
-  rejection, dan kedua hash artifact lulus.
-- Source S310 dan production SagaView tidak berubah; rehearsal/deploy belum
-  dijalankan.
 
 ## SagaBook S297 disposable restore capacity
 
