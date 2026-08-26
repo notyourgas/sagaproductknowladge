@@ -1,5 +1,21 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-27 - SagaBook staff booking action integrity sync
+
+- Ringkasan: menyinkronkan busy state jadwal staff, optimistic concurrency,
+  stale recovery authoritative, dan immutable production release terbaru.
+- Alasan: perubahan status dari dua tab/perangkat tidak boleh saling menimpa
+  atau membuat operator melihat status lama setelah server berhasil menyimpan.
+- Produk/area: SagaBook dashboard staff, booking status API, database lock
+  version, accessibility, QA, security, release, dan rollback.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+  source `0fcca39f82f58769dad472f6632f2923e7fac18c`, release
+  `20260826182900-0fcca39`, rollback `20260826164130-69cb913`.
+- Production berubah: ya. Business readiness tetap belum karena authenticated
+  staff UAT dan dua studio pilot belum dilakukan.
+- Dokumen terdampak: Product, changelog/ledger SagaBook, portfolio, master,
+  root changelog, dan sync status.
+
 ## 2026-08-27 - COYABAG isolated client payment simulator sync
 
 - Ringkasan: menyinkronkan simulator pembayaran privat, manual address

@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-27 - SagaBook staff booking action integrity
+
+- Exact source `0fcca39f82f58769dad472f6632f2923e7fac18c` aktif pada immutable
+  release `20260826182900-0fcca39`; rollback
+  `20260826164130-69cb913` tersedia.
+- Jadwal staff kini mempunyai nama aksi aksesibel, busy state per booking,
+  conditional status write berbasis lock version, stale recovery dari booking
+  authoritative, dan fail-safe ketika refresh lanjutan tertunda.
+- Full PHP 1.163/1.163, focused 17/17, browser tiga viewport 3/3, build,
+  security/dependency, database rehearsal/audit, encrypted backup/restore,
+  verifier 17/17, service/journal, dan public/security smoke 3/3 lulus.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated staff UAT,
+  dua studio pilot, dan `BUSINESS_READY` tetap terpisah.
+
 ## 2026-08-27 - COYABAG isolated client payment simulator
 
 - Exact source `2dad82c3e1cb41db2149915eb1977512e5fc6069` aktif pada immutable

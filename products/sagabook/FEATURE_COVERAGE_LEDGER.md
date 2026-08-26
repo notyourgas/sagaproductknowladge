@@ -1,6 +1,21 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 27 Agustus 2026 00:50 WIB
+Evidence cut-off: 27 Agustus 2026 01:45 WIB
+
+Integritas aksi status jadwal staff S292-S295 exact source
+`0fcca39f82f58769dad472f6632f2923e7fac18c` telah `CONFIRMED / PUSHED /
+UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+DATA_INTEGRITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
+Coverage membuktikan nama aksesibel unik, target 44 px, busy state per booking,
+single mutation saat klik ganda, retry setelah error, optimistic lock, stale
+409 dengan booking authoritative, idempotent replay, audit tepat sekali, dan
+hasil server yang bertahan saat refresh gagal. Full PHP 1.163/1.163 (13.173),
+focused 17/17 (221), browser mobile/tablet/desktop 3/3, typecheck/build/design/
+Pint, dependency audit nol, migration rehearsal, DB audit 100, encrypted
+backup/restore, verifier 17/17, service/journal, migrasi 0 pending, serta
+public/security smoke 3/3 lulus. Release `20260826182900-0fcca39` aktif dengan
+rollback `20260826164130-69cb913`; authenticated staff UAT dan dua studio pilot
+tetap exit gate `BUSINESS_READY`.
 
 Administrasi stok consumable S13–S24 exact source
 `c21d9378e0ea0bd0352cd59ffb63b4499154093a` telah `CONFIRMED / PUSHED /

@@ -1,8 +1,20 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 27 Agustus 2026 01:07 WIB
+Evidence cut-off: 27 Agustus 2026 01:45 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
+
+SagaBook staff booking action integrity exact source
+`0fcca39f82f58769dad472f6632f2923e7fac18c` aktif pada immutable release
+`20260826182900-0fcca39`, rollback `20260826164130-69cb913`. Aksi berulang pada
+jadwal staff mempunyai nama aksesibel per booking dan busy state per row.
+Mutation status memakai `expectedLockVersion`; stale writer menerima booking
+authoritative tanpa overwrite atau audit palsu, sedangkan hasil simpan server
+tetap dipakai jika refresh lanjutan gagal. Full regression, browser tiga
+viewport, database audit 100, dependency/security gate, encrypted backup/
+restore, verifier 17/17, service/journal, dan public/security smoke lulus.
+Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated staff UAT,
+dua studio pilot, dan business readiness masih gate terpisah.
 
 SagaView S308 exact `55ff2870af6e3b0ef09e5aaa347e765ce33f0099` sudah
 `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Launcher Support Hub

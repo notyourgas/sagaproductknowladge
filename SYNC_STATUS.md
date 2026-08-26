@@ -16,8 +16,34 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
-| Informasi terakhir disinkronkan | COYABAG isolated client payment simulator exact source `2dad82c3e1cb41db2149915eb1977512e5fc6069`, release `20260827-2dad82c`. |
-| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED`; activation dan business readiness tetap `BLOCKED`. |
+| Informasi terakhir disinkronkan | SagaBook staff booking action integrity exact source `0fcca39f82f58769dad472f6632f2923e7fac18c`, release `20260826182900-0fcca39`. |
+| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; `BUSINESS_READY=false`. |
+
+## SagaBook staff booking action integrity
+
+- Exact source `0fcca39f82f58769dad472f6632f2923e7fac18c` aktif pada immutable
+  release `20260826182900-0fcca39`; rollback
+  `20260826164130-69cb913` tersedia.
+- Aksi jadwal staff sekarang mempunyai label aksesibel per booking, busy state
+  per row, optimistic lock, stale recovery authoritative, serta state simpan
+  yang tidak dibalik ketika refresh lanjutan gagal.
+- Full PHP 1.163/1.163, focused 17/17, browser tiga viewport 3/3, build,
+  dependency/security audit, database rehearsal/audit 100, encrypted backup/
+  restore, verifier 17/17, service/journal, migrasi 0 pending, dan
+  public/security smoke 3/3 lulus.
+- Delivery dan activation `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
+  Authenticated staff UAT dan dua studio pilot belum dilakukan;
+  `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi ini (SagaBook Staff Action Integrity)
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG isolated client payment simulator
 

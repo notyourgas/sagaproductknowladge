@@ -1,5 +1,27 @@
 # SagaBook Changelog
 
+## 2026-08-27 - Integritas aksi status jadwal staff production activated
+
+- Exact source `0fcca39f82f58769dad472f6632f2923e7fac18c` menggabungkan
+  aksesibilitas aksi, busy state per booking, dan optimistic concurrency untuk
+  perubahan status pada `Jadwal Sesi Hari Ini`.
+- Mutation mengirim `expectedLockVersion`. Hanya writer dengan versi terbaru
+  yang boleh mengubah row; stale writer menerima 409 dengan booking
+  authoritative dan primary action terbaru. Hasil simpan server tidak dibalik
+  ketika refresh lanjutan gagal.
+- Full PHP 1.163/1.163 (13.173 assertion), focused 17/17 (221), browser
+  mobile/tablet/desktop 3/3, typecheck, build, design audit, Pint, dependency
+  audit nol, migration rehearsal, dan database audit 100 lulus.
+- Fresh encrypted backup/checksum/disposable restore, immutable artifact dan
+  Git bundle, verifier independen 17/17, migrasi 0 pending, service/journal,
+  public smoke 3/3, dan security header 3/3 lulus. Release aktif
+  `20260826182900-0fcca39`; rollback `20260826164130-69cb913` tersedia.
+- Satu failed job `SendWhatsAppMessage` existing memakai exception sempit yang
+  telah disetujui Andreas; tidak ada pesan customer atau canary baru.
+- Status `CONFIRMED / PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
+  Authenticated staff UAT dan dua studio pilot tetap residual;
+  `BUSINESS_READY=false`.
+
 ## 2026-08-27 - Administrasi stok consumable S13–S24 local validated
 
 - Exact source `c21d9378e0ea0bd0352cd59ffb63b4499154093a` pada PR #15 menambah

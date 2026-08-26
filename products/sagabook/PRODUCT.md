@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 27 Agustus 2026 00:50 WIB
-Evidence status: stock administration local-validated/pushed, closing production feature off
+Updated: 27 Agustus 2026 01:45 WIB
+Evidence status: staff action integrity production-activated; stock administration belum dideploy
 
 ## Tujuan dokumen
 
@@ -16,6 +16,24 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
+- Integritas aksi status pada `Jadwal Sesi Hari Ini` aktif melalui exact source
+  `0fcca39f82f58769dad472f6632f2923e7fac18c`, immutable release
+  `20260826182900-0fcca39`, dengan rollback
+  `20260826164130-69cb913`. Primary action mempunyai nama aksesibel per booking,
+  busy state sinkron per row, dan tidak menggandakan mutation. Setiap mutation
+  mengirim `expectedLockVersion`; stale writer mendapat 409 beserta booking
+  authoritative dan transisi terbaru, sedangkan hasil simpan server tetap
+  dipertahankan ketika refresh lanjutan gagal. Full PHP 1.163/1.163 (13.173
+  assertion), focused 17/17 (221), browser mobile/tablet/desktop 3/3,
+  typecheck/build/design/Pint, dependency audit nol, migration rehearsal dan
+  database audit 100 lulus. Fresh encrypted backup/checksum/disposable restore,
+  immutable archive dan Git bundle, verifier independen 17/17, migrasi 0
+  pending, service/journal, serta public/security smoke 3/3 lulus. Release
+  memakai exception sempit untuk satu failed job `SendWhatsAppMessage` yang
+  sudah disetujui; tidak ada pesan customer/canary baru. Status `CONFIRMED /
+  PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated staff UAT
+  dan dua studio pilot tetap diperlukan sehingga `BUSINESS_READY=false`.
+
 - Administrasi stok consumable S13–S24 exact source
   `c21d9378e0ea0bd0352cd59ffb63b4499154093a` pada PR #15 berstatus
   `CONFIRMED / PUSHED / UIUX_VALIDATED / QA_VALIDATED /
@@ -28,7 +46,7 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   capability, tenant/cabang isolation, audit, dan PII guard tervalidasi. Full PHP
   1.172/1.172 (13.236 assertion), focused 10/10 (70), Playwright mobile/desktop
   4/4, typecheck/build/design/Pint, serta audit dependency nol lulus. Production
-  tetap exact release `69cb913...`; migration, opening stock nyata, authenticated
+  kini exact release `0fcca39...`; migration stok, opening stock nyata, authenticated
   UAT, merge/release, activation, dan pilot belum dilakukan sehingga
   `BUSINESS_READY=false`.
 
