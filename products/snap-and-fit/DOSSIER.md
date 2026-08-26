@@ -12,8 +12,8 @@ credential, PII, identifier tenant/perangkat, atau detail provider sensitif.
 - Delivery: `LOCAL_VALIDATED / VPS_PROTOTYPE_BACKEND_DEPLOYED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED`
-- Provenance: exact private implementation source `2aef57a`, VPS runtime source `8ed1787`, preview
-  source `167896b`, source/docs head `15166d2`, persistent biometric-profile, Google OAuth,
+- Provenance: exact private implementation source `2aef57a`, VPS runtime source `54ff4ea`, preview
+  source `167896b`, source/docs head `b668381`, persistent biometric-profile, Google OAuth,
   AWS plan, dan prototype-topology slice dari implementation source tersebut; provider-chaos acceptance
   feature `6d3d955`, native age recovery
   evidence `4b6c08b`, fail-closed 300-VU load
@@ -66,6 +66,11 @@ terisolasi; API dan worker aktif loopback, 19 migration serta seed sintetis lulu
 fail-closed sampai DNS/TLS tersedia. Status belum `STAGING_READY`: protected Vercel BFF, connected
 UAT, backup/restore, rollback, Google OAuth, Tokopay test, serta AWS runtime credential/signing gate
 belum selesai.
+
+Worker sempat mendeteksi transient Prisma `P2039`/MariaDB `45028` saat satu synthetic outbox item
+dipublikasikan. Clean restart menyelesaikannya tepat satu kali; API/worker kini aktif dengan nol
+restart, queue tidak memiliki waiting/active/delayed/failed job, dan tidak ada pending outbox row.
+Deploy/rollback sekarang mewajibkan stabilitas API dan worker selama 30 detik.
 
 ## Overview produk
 

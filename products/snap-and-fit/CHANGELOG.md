@@ -14,8 +14,11 @@ production activation.
 
 - Reviewed AWS plan diterapkan tepat 40 add/0 change/0 destroy; refresh nol drift, public-access
   blocking aktif, dan runtime IAM user tetap tanpa access key.
-- Exact VPS runtime source `8ed1787`; source/docs evidence `15166d2`. API/worker systemd terisolasi
+- Exact VPS runtime source `54ff4ea`; source/docs evidence `b668381`. API/worker systemd terisolasi
   dan loopback-only, 19 migration plus synthetic seed lulus, serta Nginx HTTP gate fail-closed.
+- Transient worker pool timeout terdeteksi pada satu synthetic outbox item dan dipulihkan tepat satu
+  kali melalui clean restart. API/worker kini restart nol; queue/outbox bersih dan deploy/rollback
+  mewajibkan joint stability selama 30 detik.
 - Delivery tetap `LOCAL_VALIDATED / VPS_PROTOTYPE_BACKEND_DEPLOYED`, bukan `STAGING_READY` atau
   production. Manual API DNS/TLS, protected BFF connection, connected UAT, backup/restore, rollback,
   Google OAuth, Tokopay test, dan AWS runtime signing/credential masih gate.

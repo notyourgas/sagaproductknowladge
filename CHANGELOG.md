@@ -8,7 +8,9 @@
   production activation, dan business readiness.
 - Produk/area: Snap and Fit infrastructure, database, worker, security edge, release, dan evidence.
 - Klasifikasi: `CONFIRMED / LOCAL_VALIDATED / VPS_PROTOTYPE_BACKEND_DEPLOYED`; exact runtime source
-  `8ed1787`, source/docs evidence `15166d2`.
+  `54ff4ea`, source/docs evidence `b668381`.
+- Recovery: satu transient synthetic outbox pool timeout dipulihkan tepat satu kali; service restart
+  nol, queue/outbox bersih, dan release gate menunggu joint API/worker stability selama 30 detik.
 - Production berubah: tidak. DNS/TLS, protected BFF, connected UAT/recovery, Google OAuth, Tokopay
   test, AWS runtime credential/signing, real data, dan activation masih gate.
 

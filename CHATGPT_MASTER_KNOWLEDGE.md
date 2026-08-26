@@ -106,9 +106,12 @@ SagaWork Workspace/Cabang operating model sekarang `CONFIRMED / LOCAL_VALIDATED 
 Snap and Fit telah mencapai `CONFIRMED / LOCAL_VALIDATED /
 VPS_PROTOTYPE_BACKEND_DEPLOYED`: reviewed AWS apply selesai 40 add/0 change/0
 destroy dan refresh nol drift tanpa runtime access key. Exact VPS runtime source
-`8ed1787`; source/docs evidence `15166d2`. API dan worker bounded aktif hanya di
+`54ff4ea`; source/docs evidence `b668381`. API dan worker bounded aktif hanya di
 loopback pada isolasi project, 19 migration serta synthetic seed lulus, dan
-Nginx HTTP edge fail-closed sampai manual DNS/TLS selesai. Ini belum
+Nginx HTTP edge fail-closed sampai manual DNS/TLS selesai. Satu transient
+synthetic outbox pool timeout sudah dipulihkan tepat satu kali; API/worker
+restart nol, queue/outbox bersih, dan deploy/rollback mewajibkan joint stability
+30 detik. Ini belum
 `STAGING_READY`, production, atau business-ready; protected Vercel BFF,
 connected UAT/recovery, Google OAuth, Tokopay test, AWS runtime signing/
 credential, real data, dan activation tetap gate.

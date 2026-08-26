@@ -53,8 +53,8 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   disconnected until manual API DNS and TLS pass.
 - Activation: `NOT_PRODUCTION_ACTIVATED`.
 - Business readiness: `BLOCKED`.
-- Exact private implementation source `2aef57a`, VPS runtime source `8ed1787`, preview source
-  `167896b`, dan source/docs head `15166d2`; persistent biometric-profile, Google OAuth, AWS plan,
+- Exact private implementation source `2aef57a`, VPS runtime source `54ff4ea`, preview source
+  `167896b`, dan source/docs head `b668381`; persistent biometric-profile, Google OAuth, AWS plan,
   dan prototype-topology slice berasal dari implementation source tersebut;
   provider-chaos acceptance feature
   berasal dari `6d3d955`, native age recovery evidence berasal
@@ -199,13 +199,14 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 
 ## Batas klaim
 
-- Belum `STAGING_READY`; API/worker/MySQL/Redis prototype belum deployed atau terhubung.
+- Belum `STAGING_READY`; API/worker/MySQL/Redis prototype sudah deployed secara project-isolated dan
+  loopback-only, tetapi belum terhubung ke protected web preview melalui DNS/TLS/BFF.
 - Tokopay real-money, AWS biometric production, foto peserta nyata, production
   DNS, dan public activation belum diaktifkan.
 - OpenAI tidak menerima foto, selfie, face vector, signed URL, raw BIB, detail
   pembayaran, atau PII peserta.
-- Shared Hostinger VPS belum dipakai. Hanya topology prototype project-isolated
-  yang boleh dilanjutkan setelah owner menyetujui exact mutation/DNS/cost gate.
+- Shared Hostinger VPS sudah dipakai hanya untuk topology prototype project-isolated yang disetujui;
+  service/data produk lain tidak diubah dan public API tetap fail-closed sampai DNS/TLS lulus.
 - Rate limit memakai memory hanya untuk local/test. Staging/production menolak
   startup tanpa Redis bersama, memakai key client yang di-hash, serta fail-closed
   saat control plane limiter tidak tersedia. Bukti dua instance nyata masih gate staging.
