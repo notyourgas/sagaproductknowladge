@@ -1,5 +1,20 @@
 # Portfolio Changelog
 
+## 2026-08-26 - SagaView S297 artifact recovery dan rollback
+
+- Exact source `60452e60b93b32cc52a30bf237e25bbadf36578a` membuat build
+  release tetap berjalan saat drive sistem penuh dengan menempatkan temp pada
+  drive output; artifact dan mirror tervalidasi checksum-identik.
+- Backup terenkripsi/offsite, restore tiga database, rehearsal shared storage,
+  build, test SagaView, audit dependency, service, dan smoke lulus. Full lint
+  repository masih memiliki baseline lintas produk dan tidak diklaim hijau.
+- Candidate sempat di-switch lalu di-rollback aman saat probe Support Hub tanpa
+  konteks mengembalikan 404. Bukti route/S293 menunjukkan itu guard sesi, tetapi
+  retry ditahan setelah correction limit dan authenticated UAT belum diizinkan.
+- Delivery `PUSHED / LOCAL_VALIDATED / DEPLOY_ATTEMPTED / ROLLED_BACK /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap S292, rollback S288, dan Studio
+  tidak berubah.
+
 ## 2026-08-26 - SagaView S296 release storage guard
 
 - Exact source `654b44a45e3a35894236921888b52bbc74989c54` membuat release

@@ -1,6 +1,27 @@
 # SagaView Product Knowledge
 
-Updated: 26 Agustus 2026 08:15 WIB
+Updated: 26 Agustus 2026 09:28 WIB
+
+SagaView S297 exact `60452e60b93b32cc52a30bf237e25bbadf36578a`
+berstatus `PUSHED / LOCAL_VALIDATED / DEPLOY_ATTEMPTED / ROLLED_BACK /
+IMPLEMENTED_NOT_DEPLOYED`. Builder artifact kini menaruh temp release pada
+drive output, sehingga build tidak lagi bergantung pada drive sistem yang
+penuh. Artifact immutable `20260826021350-60452e6`, dua salinan checksum-identik,
+backup terenkripsi `20260826T021640Z`, offsite round-trip, restore disposable
+152/161/149 tabel, rehearsal shared-storage, migration nol, service, header,
+dan lima smoke publik lulus.
+
+Candidate sempat menjadi current lalu dikembalikan secara atomik karena audit
+independen memperlakukan respons 404 tanpa tenant/sesi pada Support Hub sebagai
+kegagalan. Bukti S293 dan route live menunjukkan 404 tersebut adalah guard
+konteks yang memang diharapkan; 11 route Support Hub tersedia dan failed job
+SagaView nol. Correction limit sudah tercapai dan authenticated UAT tidak
+dijalankan tanpa izin serta akun referensi non-customer, sehingga tidak ada
+retry pada run yang sama. Production aktif tetap S292
+`1237ef2df06ca53f10b6230adc9350b179462ade` /
+`20260825210645-1237ef2`, rollback S288, dan Studio tidak berubah. Focused Pint
+lulus; full-repository Pint masih merah pada baseline lintas produk dan tidak
+diklaim sebagai gate hijau.
 
 SagaView S296 exact `654b44a45e3a35894236921888b52bbc74989c54` sudah
 `PUSHED / SECURITY_VALIDATED / QA_VALIDATED / DEVOPS_VALIDATED /

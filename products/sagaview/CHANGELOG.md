@@ -1,5 +1,27 @@
 # SagaView Changelog
 
+## 2026-08-26 - S297 artifact temp recovery dan rollback terjaga
+
+- Klasifikasi: `PUSHED / LOCAL_VALIDATED / DEPLOY_ATTEMPTED / ROLLED_BACK /
+  IMPLEMENTED_NOT_DEPLOYED`; production aktif tetap S292.
+- Before: builder artifact memakai temp drive sistem yang penuh sehingga
+  `git archive` gagal sebelum artifact terbentuk.
+- After: exact `60452e60b93b32cc52a30bf237e25bbadf36578a` mengikat temp ke
+  drive output; artifact `20260826021350-60452e6` dan mirror mempunyai archive
+  SHA-256 `b6dbee1a...19de0` serta bundle SHA-256 `5b601557...8f47` yang sama.
+- Evidence: SagaView 27/307, focused lint/parser/diff, audit Composer/npm nol,
+  build 5.097 modul, backup terenkripsi `20260826T021640Z`, offsite round-trip,
+  restore 152/161/149 tabel, dan rehearsal shared-storage lulus. Full-repository
+  Pint tetap merah pada baseline lintas produk dan tidak diklaim lulus.
+- Delivery: candidate sempat di-switch lalu rollback atomik ke S292 setelah
+  probe Support Hub tanpa konteks mengembalikan 404. Route live berjumlah 11 dan
+  S293 membuktikan 404 tanpa tenant/sesi adalah guard yang diharapkan; karena
+  correction limit tercapai serta authenticated UAT belum diizinkan, retry
+  ditahan ke run terpisah.
+- Kondisi akhir: backend S292 `20260825210645-1237ef2`, rollback S288, Studio
+  `20260824170456-7ae79ae`, lima smoke 200, seluruh service aktif, migration nol,
+  failed job SagaView nol, dan journal error nol.
+
 ## 2026-08-26 - S296 shared-storage release guard
 
 - Klasifikasi: `PUSHED / SECURITY_VALIDATED / QA_VALIDATED /

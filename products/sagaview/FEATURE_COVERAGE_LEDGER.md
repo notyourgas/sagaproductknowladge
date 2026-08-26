@@ -1,6 +1,26 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 26 Agustus 2026 08:15 WIB
+Evidence cut-off: 26 Agustus 2026 09:28 WIB
+
+S297 artifact temp recovery dan guarded deploy: exact pushed source
+`60452e60b93b32cc52a30bf237e25bbadf36578a` memindahkan temp artifact ke
+drive output dan menghasilkan immutable release `20260826021350-60452e6`
+dengan archive/bundle dua salinan checksum-identik. SagaView 27/307, focused
+Pint/parser/diff, audit dependency nol, build 5.097 modul, fresh backup
+terenkripsi/offsite, restore disposable 152/161/149 tabel, dan rehearsal
+shared-storage lulus. Full-repository Pint masih merah pada baseline lintas
+produk dan tidak dihitung lulus.
+
+Candidate sempat menjadi current, lalu rollback atomik ke S292 karena probe
+tanpa tenant/sesi mendapat 404 pada Support Hub. Route live berjumlah 11; bukti
+S293 menetapkan 404 tanpa konteks sebagai guard yang diharapkan, sedangkan
+authenticated 200 memerlukan izin dan akun referensi non-customer. Correction
+limit menahan retry pada run yang sama. Status akhir `PUSHED / LOCAL_VALIDATED /
+DEPLOY_ATTEMPTED / ROLLED_BACK / IMPLEMENTED_NOT_DEPLOYED`; production S292,
+rollback S288, Studio tetap, migration nol, failed job SagaView nol, service,
+lima smoke, header, dan journal hijau. Satu gap berikutnya adalah acceptance
+release yang membedakan guard 404 tanpa konteks dari authenticated bootstrap,
+lalu guarded deploy run baru; activation tetap menunggu authenticated UAT.
 
 S296 shared-storage release guard: exact pushed source
 `654b44a45e3a35894236921888b52bbc74989c54` menutup akar packaging S295
