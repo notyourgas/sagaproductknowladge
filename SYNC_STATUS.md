@@ -12,12 +12,36 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-27T06:08:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-27T06:25:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
-| Informasi terakhir disinkronkan | SagaView S311 custody guard v2 pada exact source S310 `cd7288d3bb4da9542fbfa20f97780fa5639759bf`. |
-| Status sinkronisasi | `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED`; production tidak berubah. |
+| Informasi terakhir disinkronkan | COYABAG Cart exact-variant dan accessible product rails pada exact source `81428fa54d7adee3f3e2d06e582125e12baf46e2`. |
+| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED`; commerce activation dan business readiness tetap `BLOCKED`. |
+
+## COYABAG Cart variant switch and accessible product rails
+
+- Exact source `81428fa54d7adee3f3e2d06e582125e12baf46e2` aktif pada immutable
+  release `20260827-81428fa`; rollback `20260827-4cf4ce6` tersedia.
+- Cart page/drawer menjaga exact variant identity, warna, harga, media, stok,
+  route, destination merge satu kali, stock cap, dan fail-closed invalid state.
+- Tujuh rail horizontal `/our-product` kini keyboard-focusable, memiliki nama
+  aksesibel dan focus indicator terlihat, serta mendukung ArrowRight mobile.
+- Storefront 205/205, Laravel 450, dependency/security audit nol, full RC, 32
+  route accessibility dan 110 kombinasi responsive production, public smoke,
+  workers, checksum, backup, serta postdeploy log gate lulus.
+- Readiness tetap 30/42 dengan 12 blocker; `commerceActivated=false`, TokoPay
+  terkunci, dan tidak ada migration atau mutasi order/payment/stock/provider.
+
+## File yang berubah pada sinkronisasi ini (COYABAG Cart Accessibility)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaView S311 custody capacity guard v2
 

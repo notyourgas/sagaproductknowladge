@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-27 - COYABAG Cart variant switch and accessible rails deployed
+
+- Exact source `81428fa54d7adee3f3e2d06e582125e12baf46e2` aktif pada immutable
+  release `20260827-81428fa`; rollback `20260827-4cf4ce6` tersedia.
+- Cart page/drawer sekarang menjaga exact variant identity, harga, media, stok,
+  route, merge idempotent, stock cap, dan fail-closed invalid selection.
+- Tujuh rail `/our-product` yang sebelumnya memblokir release kini focusable,
+  bernama aksesibel, memiliki focus indicator, dan mendukung ArrowRight mobile.
+- Full RC, storefront 205/205, Laravel 450, dependency audits, 32 route
+  accessibility dan 110 kombinasi responsive production, public smoke,
+  workers, backup, checksum, serta log gate lulus.
+- Status `PRODUCTION_DEPLOYED`; readiness tetap 30/42, 12 blocker,
+  `commerceActivated=false`, TokoPay terkunci, dan business readiness blocked.
+
 ## 2026-08-27 - COYABAG cart variant switch release held
 
 - Exact source `843c5628a2a8842aa84be5220744ab8593c13612` menambahkan perubahan

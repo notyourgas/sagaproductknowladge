@@ -3654,28 +3654,24 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release aktif `20260827-4cf4ce6` menjalankan exact source
-`4cf4ce628eaad2bd77c63513487068737819d809` dengan rollback
-`20260827-832a5f3`. Product Detail menyajikan ukuran, material, kapasitas, dan
+Release aktif `20260827-81428fa` menjalankan exact source
+`81428fa54d7adee3f3e2d06e582125e12baf46e2` dengan rollback
+`20260827-4cf4ce6`. Product Detail menyajikan ukuran, material, kapasitas, dan
 perawatan dari Admin/API; internal key tidak diekspos dan field kosong
 ditandai sedang diverifikasi. Katalog live baru menerbitkan perawatan, sehingga
 tiga field lain tetap gap konten operator.
 
-Cart variant switch exact source
-`843c5628a2a8842aa84be5220744ab8593c13612` berstatus
-`IMPLEMENTED_NOT_DEPLOYED`. Cart page/drawer dapat mengganti exact warna,
-harga, media, stok, route, dan identity; destination merge satu kali dan
-quantity dibatasi ke stok, sedangkan sold-out/invalid fail-closed. Candidate
-`20260827-843c562` dikembalikan atomik ke release aktif setelah live audit
-menemukan tujuh region horizontal `/our-product` tidak keyboard-focusable pada
-mobile. Karena itu full accessibility production tidak diklaim sampai blocker
-tersebut diperbaiki dan diuji ulang.
+Cart variant switch berstatus `PRODUCTION_DEPLOYED`. Cart page/drawer dapat
+mengganti exact warna, harga, media, stok, route, dan identity; destination
+merge satu kali dan quantity dibatasi ke stok, sedangkan sold-out/invalid
+fail-closed. Tujuh region horizontal `/our-product` yang sebelumnya memblokir
+release kini keyboard-focusable, bernama aksesibel, memiliki focus indicator
+terlihat, dan mendukung ArrowRight pada mobile.
 
-Storefront 205/205, Laravel 449 pass dan satu intentional skip dari 450, 32
-route accessibility desktop/mobile lokal, dan 16 state runtime performance
-lokal lulus. Di production, 110 kombinasi responsive, crawler SEO 14 URL
-indexable dan sembilan noindex, Product Detail live, public smoke, workers,
-scheduler, backup, dan log gate lulus. Readiness
+Storefront 205/205, Laravel 449 pass dan satu intentional skip dari 450,
+dependency/security audit nol, full release gate, 32 route accessibility dan
+110 kombinasi responsive production, public smoke, workers, checksum, backup,
+dan postdeploy log gate lulus. Readiness
 tetap 30/42 dengan 12 blocker; `commerceActivated=false`, TokoPay terkunci,
 dan business readiness blocked.
 

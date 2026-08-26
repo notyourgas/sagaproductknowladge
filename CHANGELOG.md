@@ -1,5 +1,21 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-27 - COYABAG Cart accessibility production release sync
+
+- Ringkasan: menyinkronkan Cart exact-variant yang kini aktif dan penutupan
+  tujuh blocker keyboard accessibility pada rail `/our-product`.
+- Alasan: pelanggan perlu dapat mengganti warna Cart secara konsisten dan
+  menavigasi rail produk dengan keyboard pada mobile maupun desktop.
+- Produk/area: COYABAG Cart, Our Product, responsive UI, accessibility, QA,
+  DevOps, provenance, rollback, dan commerce guard.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED`; exact source
+  `81428fa54d7adee3f3e2d06e582125e12baf46e2`, release
+  `20260827-81428fa`, rollback `20260827-4cf4ce6`.
+- Production berubah: ya; tidak ada migration atau mutasi transaksi/provider.
+  Readiness tetap 30/42, 12 blocker, commerce/TokoPay fail-closed.
+- Dokumen terdampak: Product/Dossier/changelog COYABAG, portfolio, master,
+  root changelog, dan sync status.
+
 ## 2026-08-27 - COYABAG cart variant switch and release hold sync
 
 - Ringkasan: menyinkronkan exact cart variant switching, deterministic cart

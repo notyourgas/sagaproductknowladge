@@ -61,28 +61,25 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260827-4cf4ce6` dengan exact source
-  `4cf4ce628eaad2bd77c63513487068737819d809` melayani production;
-  rollback langsung `20260827-832a5f3` dipertahankan.
+- Release aktif `20260827-81428fa` dengan exact source
+  `81428fa54d7adee3f3e2d06e582125e12baf46e2` melayani production;
+  rollback langsung `20260827-4cf4ce6` dipertahankan.
 - Product Detail menampilkan ukuran, material, kapasitas, dan perawatan dalam
   urutan stabil dari kontrak Admin/API. Field kosong diberi status sedang
   diverifikasi dan internal key tidak diekspos. Katalog live baru menerbitkan
   perawatan; tiga field lain tetap gap konten operator.
-- Cart variant switch sudah `IMPLEMENTED_NOT_DEPLOYED` pada exact source
-  `843c5628a2a8842aa84be5220744ab8593c13612`. Cart page/drawer dapat mengganti
-  warna exact, menyegarkan harga/media/stok, menggabungkan baris duplikat, dan
-  membatasi quantity ke stok live; pilihan sold-out tetap terlihat tetapi
-  disabled.
-- Candidate `20260827-843c562` dikembalikan atomik ke release aktif
-  `20260827-4cf4ce6` setelah live gate menemukan tujuh region detail horizontal
-  `/our-product` yang tidak keyboard-focusable di mobile. Production tidak
-  berubah dan full accessibility pass tidak diklaim sampai gap tersebut ditutup.
+- Cart variant switch sekarang `PRODUCTION_DEPLOYED`. Cart page/drawer dapat
+  mengganti warna exact, menyegarkan harga/media/stok/route/variant identity,
+  menggabungkan destination satu kali, dan membatasi quantity ke stok live;
+  pilihan sold-out atau tidak valid tetap gagal tertutup.
+- Tujuh region detail horizontal `/our-product` sekarang keyboard-focusable,
+  memiliki nama aksesibel dan focus indicator yang terlihat, serta dapat
+  digeser dengan ArrowRight pada mobile. Ini menutup blocker accessibility yang
+  sebelumnya memicu rollback candidate Cart.
 - Storefront 205/205 dan Laravel 450 test dengan 449 pass serta satu
-  intentional skip lulus. Acceptance lokal lulus untuk 32 route accessibility
-  desktop/mobile dan 16 state runtime performance; acceptance production lulus
-  untuk 110 kombinasi responsive, crawler SEO 14 URL indexable dan sembilan
-  noindex, serta
-  Product Detail desktop/mobile.
+  intentional skip lulus. Acceptance production lulus untuk 32 route
+  accessibility desktop/mobile, 110 kombinasi responsive, public smoke
+  storefront/API/admin, worker, checksum, backup, dan postdeploy log gate.
 - Readiness tetap 30/42 dengan 12 blocker; `commerceActivated=false`, TokoPay
   tetap terkunci, dan business readiness tetap blocked.
 - Release sebelumnya `20260827-832a5f3` menjalankan simulator journey integrity
