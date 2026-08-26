@@ -78,19 +78,27 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260827-2dad82c` memakai exact source
-`2dad82c3e1cb41db2149915eb1977512e5fc6069` dan rollback
-`20260827-f2a238c`. Checkout menyediakan simulator privat bertanda tangan dan
-berbatas waktu untuk demonstrasi client. Semua record simulator terisolasi dan
-tidak masuk omzet, stok, customer, pengiriman, fulfillment, invoice,
-notifikasi, atau settlement produksi. TokoPay tetap locked sampai credential
-serta UAT transaksi nyata lulus. Form manual melengkapi provinsi, kecamatan,
-dan kode pos saat data provider tidak tersedia. Known content route tetap HTTP
-200 `noindex` saat belum dipublikasikan, sedangkan unknown route tetap 404.
-Storefront 196/196, Laravel 449 total dengan 448 pass dan satu intentional
-skip, 110 kombinasi responsive, 32 pemeriksaan accessibility, security/build,
-immutable deploy, workers, public smoke, dan log checks lulus. Readiness tetap
-30/42 dengan 12 blocker; simulator tidak mengaktifkan commerce production.
+Release production terbaru `20260827-832a5f3` memakai exact source
+`832a5f3fe9dae05693972f730ec7bda8993e4d5e` dan rollback
+`20260827-1d5912c`. Checkout, simulator, konfirmasi, dan timeline memakai
+presentasi demo khusus yang tidak dapat disalahartikan sebagai order
+operasional. Simulator tetap privat, bertanda tangan, berbatas waktu, dan
+terisolasi dari uang, omzet, stok, customer, pengiriman, fulfillment, invoice,
+notifikasi, settlement, serta laporan produksi.
+
+Browse-only discovery kembali menyediakan cart recovery, availability varian,
+quick view, review/support, Bag Finder, Our Product, dan About berbasis CMS.
+Featured card fix tetap dipertahankan, sedangkan CSS ProductGrid dipindah ke
+lazy route agar entry CSS kembali pada budget 160 KiB. Storefront 199/199,
+Laravel 450 total dengan 449 pass dan satu intentional skip, 110 kombinasi
+responsive, 32 route accessibility desktop/mobile, 16 state runtime
+performance, serta crawler SEO 14 URL indexable dan empat route noindex lulus.
+Readiness tetap 30/42 dengan 12 blocker; TokoPay dan commerce production tetap
+fail-closed.
+
+Release sebelumnya `20260827-1d5912c` memakai exact source
+`1d5912cd93d819d940612597edfe7e2095eba2e1` dan rollback
+`20260827-1e9dcdd`.
 
 Release sebelumnya `20260826-77ed929` memakai exact source
 `77ed9295b654848fb855c599721855b992487b35` dan rollback

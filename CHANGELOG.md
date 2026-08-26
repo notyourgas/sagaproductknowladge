@@ -1,5 +1,21 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-27 - COYABAG simulator journey integrity sync
+
+- Ringkasan: menyinkronkan presentasi simulator khusus, pemulihan discovery
+  browse-only, About berbasis CMS, lazy ProductGrid CSS, dan immutable release.
+- Alasan: demo client harus dapat menuntaskan alur tanpa terlihat sebagai
+  order operasional atau membuka payment provider yang belum siap.
+- Produk/area: COYABAG checkout demo, product discovery, CMS, responsive UI,
+  accessibility, performance, SEO, QA, release, rollback, dan commerce guard.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED`; exact source
+  `832a5f3fe9dae05693972f730ec7bda8993e4d5e`, release
+  `20260827-832a5f3`, rollback `20260827-1d5912c`.
+- Production berubah: ya. Commerce activation dan business readiness tidak
+  berubah; readiness tetap 30/42 dengan 12 blocker dan TokoPay terkunci.
+- Dokumen terdampak: Product/Dossier/changelog COYABAG, portfolio, master,
+  root changelog, dan sync status.
+
 ## 2026-08-27 - SagaView S310 Owner overview recovery sync
 
 - Ringkasan: menyinkronkan satu aksi utama Ringkasan Owner, panel status/aksi

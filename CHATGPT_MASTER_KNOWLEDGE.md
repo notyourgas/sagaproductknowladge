@@ -3654,7 +3654,24 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release aktif `20260827-1d5912c` menjalankan exact source
+Release aktif `20260827-832a5f3` menjalankan exact source
+`832a5f3fe9dae05693972f730ec7bda8993e4d5e` dengan rollback
+`20260827-1d5912c`. Simulator privat memakai presentasi demo khusus dari
+checkout, simulator, konfirmasi, hingga timeline; tidak ada money movement,
+omzet, stok, customer, pengiriman, fulfillment, invoice, notifikasi,
+settlement, atau laporan produksi. Browse-only discovery, cart recovery,
+availability varian, quick view, review/support, Bag Finder, Our Product, dan
+About berbasis CMS tersedia tanpa membuka transaksi. Featured card fix tetap
+aktif dan CSS ProductGrid dimuat per route agar entry CSS memenuhi budget.
+
+Storefront 199/199, Laravel 449 pass dan satu intentional skip dari 450, 110
+kombinasi responsive, 32 route accessibility desktop/mobile, 16 state runtime
+performance, crawler SEO 14 URL indexable dan empat route noindex, public
+smoke, workers, scheduler, backup, dan log gate lulus. Readiness tetap 30/42
+dengan 12 blocker; `commerceActivated=false`, TokoPay terkunci, dan business
+readiness blocked.
+
+Release sebelumnya `20260827-1d5912c` menjalankan exact source
 `1d5912cd93d819d940612597edfe7e2095eba2e1` dengan rollback
 `20260827-1e9dcdd`. Homepage memakai struktur editorial ringkas: navigasi
 Koleksi/Galeri/Tentang, hero deterministik, empat model unggulan, dan blok

@@ -4,6 +4,28 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-27 - Simulator journey integrity and discovery recovery
+
+- Klasifikasi: `CONFIRMED` dari exact source
+  `832a5f3fe9dae05693972f730ec7bda8993e4d5e`, immutable Hostinger release
+  `20260827-832a5f3`, rollback `20260827-1d5912c`, dan public browser/runtime
+  evidence.
+- Checkout demo, simulator, konfirmasi, dan timeline sekarang memakai
+  presentasi khusus yang menegaskan tidak ada order operasional, money
+  movement, omzet, stok, customer, pengiriman, fulfillment, invoice,
+  notifikasi, settlement, atau laporan produksi.
+- Browse-only discovery memulihkan cart recovery, availability varian, quick
+  view, review/support, Bag Finder, Our Product, dan About berbasis CMS tanpa
+  membuka commerce.
+- Featured card clipping fix tetap aktif. CSS ProductGrid dipindah ke lazy
+  route sehingga entry CSS memenuhi budget 160 KiB.
+- Storefront 199/199, Laravel 449 pass dan satu skip dari 450, 110 kombinasi
+  responsive produksi, 32 route accessibility desktop/mobile, 16 state runtime
+  performance, crawler SEO 14 URL indexable dan empat noindex, public smoke,
+  workers, scheduler, backup, dan log gate lulus.
+- Delivery `PRODUCTION_DEPLOYED`; readiness tetap 30/42 dengan 12 blocker,
+  `commerceActivated=false`, dan TokoPay tetap locked.
+
 ## 2026-08-27 - Featured product card clipping production fix
 
 - Klasifikasi: `CONFIRMED` dari exact source

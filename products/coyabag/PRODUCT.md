@@ -61,9 +61,23 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260827-1d5912c` dengan exact source
-  `1d5912cd93d819d940612597edfe7e2095eba2e1` melayani production;
-  rollback langsung `20260827-1e9dcdd` dipertahankan.
+- Release aktif `20260827-832a5f3` dengan exact source
+  `832a5f3fe9dae05693972f730ec7bda8993e4d5e` melayani production;
+  rollback langsung `20260827-1d5912c` dipertahankan.
+- Alur simulator privat sekarang memakai presentasi khusus dari checkout,
+  halaman simulator, konfirmasi demo, hingga timeline status. Seluruh layar
+  menegaskan bahwa simulasi tidak masuk operasi order nyata.
+- Browse-only discovery memulihkan cart recovery, availability varian,
+  quick view, review/support, Bag Finder, Our Product, dan About berbasis CMS
+  tanpa membuka transaksi yang belum siap.
+- Perbaikan featured card tetap aktif, sedangkan override ProductGrid dipindah
+  ke CSS lazy route. Entry CSS kembali memenuhi budget 160 KiB.
+- Storefront 199/199 dan Laravel 450 test dengan 449 pass serta satu
+  intentional skip lulus. Acceptance produksi juga lulus untuk 110 kombinasi
+  responsive, 32 route accessibility desktop/mobile, 16 state runtime
+  performance, dan crawler SEO 14 URL indexable serta empat route noindex.
+- Readiness tetap 30/42 dengan 12 blocker; `commerceActivated=false`, TokoPay
+  tetap terkunci, dan simulator bukan bukti payment production-activated.
 - Storefront memakai arah editorial yang lebih ringkas: navigasi utama
   Koleksi/Galeri/Tentang, hero deterministik, empat model unggulan, dan satu
   blok lifestyle dengan foto client nyata. Copy publik memakai bahasa

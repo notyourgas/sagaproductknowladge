@@ -12,12 +12,35 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-27T03:33:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-27T04:55:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
-| Informasi terakhir disinkronkan | SagaBook administrasi stok consumable S13–S24 pada exact source `2b22b835f7c72b96d569fd7c31e4aacdb56d4f49`, release `20260826201936-2b22b83`. |
-| Status sinkronisasi | `CONFIRMED / PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; `BUSINESS_READY=false`. |
+| Informasi terakhir disinkronkan | COYABAG simulator journey integrity pada exact source `832a5f3fe9dae05693972f730ec7bda8993e4d5e`, release `20260827-832a5f3`. |
+| Status sinkronisasi | `CONFIRMED / PUSHED / PRODUCTION_DEPLOYED`; commerce activation dan `BUSINESS_READY` tetap `BLOCKED`. |
+
+## COYABAG simulator journey integrity
+
+- Exact source `832a5f3fe9dae05693972f730ec7bda8993e4d5e` aktif pada immutable
+  release `20260827-832a5f3`; rollback `20260827-1d5912c` tersedia.
+- Simulator privat memakai presentasi demo khusus dari checkout sampai
+  timeline dan tetap tanpa side effect commerce. TokoPay tetap terkunci.
+- Browse-only discovery, About berbasis CMS, featured card fix, serta lazy
+  ProductGrid CSS aktif. Storefront 199/199, Laravel 450, 110 kombinasi
+  responsive, 32 route accessibility, runtime performance, crawler SEO,
+  backup, public smoke, worker, scheduler, dan log gate lulus.
+- Readiness 30/42 dengan 12 blocker. Delivery `PRODUCTION_DEPLOYED`;
+  `commerceActivated=false` dan `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi ini (COYABAG Simulator Integrity)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaView S310 Owner overview progressive disclosure
 

@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-27 - COYABAG simulator journey and discovery recovery
+
+- Exact source `832a5f3fe9dae05693972f730ec7bda8993e4d5e` aktif pada immutable
+  release `20260827-832a5f3`; rollback `20260827-1d5912c` tersedia.
+- Simulator privat memakai presentasi demo khusus dari checkout sampai
+  timeline sehingga tidak menyerupai order operasional; semua side effect
+  commerce tetap nol.
+- Browse-only discovery, About berbasis CMS, featured card fix, dan lazy
+  ProductGrid CSS tersedia pada production. Storefront 199/199, Laravel 450,
+  110 kombinasi responsive, 32 route accessibility, runtime performance,
+  crawler SEO, public smoke, worker, scheduler, backup, dan log gate lulus.
+- Status `PRODUCTION_DEPLOYED`; readiness 30/42, 12 blocker,
+  `commerceActivated=false`, TokoPay terkunci, dan `BUSINESS_READY=false`.
+
 ## 2026-08-27 - SagaView S310 Owner overview action clarity
 
 - Exact source `cd7288d3bb4da9542fbfa20f97780fa5639759bf` membuat Ringkasan
