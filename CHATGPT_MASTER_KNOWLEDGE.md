@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 26 Agustus 2026 12:21 WIB
+Evidence cut-off: 26 Agustus 2026 19:02 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -3543,16 +3543,25 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release aktif `20260826-d1950e6` menjalankan exact source
-`d1950e693ff3055f1cfe02cf10ff6a2fe432c31e` dengan rollback
-`20260826-5184bfe`. Admin Inventory memisahkan stok operasional dari stok yang
+Release aktif `20260826-b6f1c55` menjalankan exact source
+`b6f1c5540a395323d13966b83b377fea16802f9f` dengan rollback
+`20260826-d1950e6`. Admin Stock Opname menyimpan dirty count saat ditutup,
+mendukung clear-to-unfinished, dan masuk langsung ke variance review setelah
+lengkap. Approval kedaluwarsa memulihkan sesi ke review tanpa ledger mutation;
+resubmission memakai approval revision-bound baru. Admin dan Owner terpisah
+menyelesaikan four-eyes approval tepat sekali. Desktop/mobile, 183 storefront
+test, 436 Laravel test, no-migration deploy, workers, cron, public smoke, dan
+scheduler observation lulus. Readiness tetap 30/42 dengan 12 blocker; commerce
+tidak production-activated.
+
+Release sebelumnya `20260826-d1950e6` menjalankan exact source
+`d1950e693ff3055f1cfe02cf10ff6a2fe432c31e`. Admin Inventory memisahkan stok operasional dari stok yang
 benar-benar tayang pada snapshot storefront terakhir. Tujuh queue, status
 dampak storefront, dan alert stok tayang memperjelas prioritas operator.
 Adjustment memakai arah Stock Masuk/Stok Keluar, alasan kompatibel, preview
 saldo serta dampak storefront, dan validasi server terhadap kombinasi yang
 salah. Desktop/mobile, 183 storefront test, 434 Laravel test, no-migration
-immutable deploy, workers, cron, dan public smoke lulus. Readiness tetap 30/42
-dengan 12 blocker; commerce tidak production-activated.
+immutable deploy, workers, cron, dan public smoke lulus.
 
 Release sebelumnya `20260826-5184bfe` menjalankan exact source
 `5184bfe5a41a1fc0f650720c2d0f6b0eaa9d9069`. Admin Media membandingkan media mutable dengan snapshot

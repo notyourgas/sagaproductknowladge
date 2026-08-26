@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-26 - COYABAG Admin Stock Opname recovery
+
+- Exact source `b6f1c5540a395323d13966b83b377fea16802f9f` aktif pada immutable
+  release `20260826-b6f1c55`; rollback `20260826-d1950e6` tersedia.
+- Operator dapat menutup count tanpa kehilangan edit, mengosongkan count ke
+  unfinished, masuk langsung ke review, serta memulihkan approval kedaluwarsa
+  untuk diajukan ulang. Admin dan Owner menyelesaikan approval empat mata dan
+  ledger hanya diposting sekali.
+- Desktop/mobile, 183 storefront test, 436 Laravel test, no-migration deploy,
+  workers, cron, public smoke, dan scheduler observation lulus.
+- Status `PRODUCTION_DEPLOYED`; commerce/business readiness tetap `BLOCKED`
+  pada 30/42 checks dengan 12 blocker.
+
 ## 2026-08-26 - COYABAG Admin Inventory storefront truth
 
 - Exact source `d1950e693ff3055f1cfe02cf10ff6a2fe432c31e` aktif pada immutable

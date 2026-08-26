@@ -12,27 +12,28 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-26T18:26:10+07:00 |
+| Waktu pembaruan terakhir | 2026-08-26T19:02:47+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | exact `8f56b861c65dde5fa332824b8de1fc3d499f0523` |
-| Informasi terakhir disinkronkan | COYABAG Admin Inventory storefront truth exact source `d1950e693ff3055f1cfe02cf10ff6a2fe432c31e`. |
+| Baseline sebelum pembaruan | exact `48f30887f4812289dceb34eb25e33a0afeb4c233` |
+| Informasi terakhir disinkronkan | COYABAG Admin Stock Opname recovery exact source `b6f1c5540a395323d13966b83b377fea16802f9f`. |
 | Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED`; commerce activation dan business readiness tetap `BLOCKED`. |
 
-## COYABAG Admin Inventory storefront truth
+## COYABAG Admin Stock Opname recovery
 
-- Exact source `d1950e693ff3055f1cfe02cf10ff6a2fe432c31e` aktif pada immutable
-  release `20260826-d1950e6`; rollback `20260826-5184bfe` tersedia.
-- Dashboard membedakan stok operasional dan stok storefront melalui tujuh
-  queue, status dampak storefront, serta alert stok tayang.
-- Guided adjustment memakai arah Stock Masuk/Stok Keluar, alasan kompatibel,
-  preview saldo, dampak customer, dan validasi semantik server.
-- Desktop/mobile, 183 storefront test, 434 Laravel test, security/dependency
-  gate, no-migration deploy, workers, cron, dan public smoke lulus.
+- Exact source `b6f1c5540a395323d13966b83b377fea16802f9f` aktif pada immutable
+  release `20260826-b6f1c55`; rollback `20260826-d1950e6` tersedia.
+- Dirty close menyimpan count, blank tetap unfinished, dan count lengkap masuk
+  langsung ke review. Approval kedaluwarsa dipulihkan tanpa ledger mutation,
+  lalu resubmission membuat approval revision-bound baru.
+- Admin dan Owner menyelesaikan four-eyes approval; ledger diposting tepat
+  sekali. Desktop/mobile, 183 storefront test, 436 Laravel test,
+  security/dependency gate, no-migration deploy, workers, cron, public smoke,
+  dan scheduler observation lulus.
 - Surface production berubah. Commerce tetap fail-closed pada 30/42 checks,
   12 blocker; checkout dan provider tidak diaktifkan.
 
-## File yang berubah pada sinkronisasi ini (COYABAG Admin Inventory)
+## File yang berubah pada sinkronisasi ini (COYABAG Admin Stock Opname)
 
 - `products/coyabag/PRODUCT.md`
 - `products/coyabag/DOSSIER.md`

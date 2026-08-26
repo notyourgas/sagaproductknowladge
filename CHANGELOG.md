@@ -1,5 +1,22 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-26 - COYABAG Admin Stock Opname recovery sync
+
+- Ringkasan: menyinkronkan save-on-close, clear-to-unfinished, direct variance
+  review, recovery approval kedaluwarsa, four-eyes handoff, dan exactly-once
+  ledger posting pada immutable production release terbaru.
+- Alasan: operator tidak boleh kehilangan physical count atau terjebak pada
+  sesi submitted setelah approval kedaluwarsa.
+- Produk/area: COYABAG Admin Inventory, approval governance, immutable ledger,
+  responsive UI/UX, accessibility, QA, security, release, dan rollback.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED`; exact source
+  `b6f1c5540a395323d13966b83b377fea16802f9f`, release
+  `20260826-b6f1c55`, rollback `20260826-d1950e6`.
+- Production berubah: ya, Admin/API/storefront runtime. Tidak ada migration atau
+  commerce activation; readiness tetap 30/42 dengan 12 blocker.
+- Dokumen terdampak: Product, Dossier, changelog COYABAG, portfolio, master,
+  root changelog, dan sync status.
+
 ## 2026-08-26 - COYABAG Admin Inventory storefront truth sync
 
 - Ringkasan: menyinkronkan pembedaan stok operasional dan storefront, tujuh

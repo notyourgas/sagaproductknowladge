@@ -61,9 +61,19 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260826-d1950e6` dengan exact source
-  `d1950e693ff3055f1cfe02cf10ff6a2fe432c31e` melayani production;
-  rollback langsung `20260826-5184bfe` dipertahankan.
+- Release aktif `20260826-b6f1c55` dengan exact source
+  `b6f1c5540a395323d13966b83b377fea16802f9f` melayani production;
+  rollback langsung `20260826-d1950e6` dipertahankan.
+- Admin Stock Opname menyimpan edit sebelum dialog ditutup, mengizinkan angka
+  dikosongkan kembali sebagai belum dihitung, dan membawa hitungan lengkap
+  langsung ke review selisih. Approval kedaluwarsa memulihkan sesi ke review
+  tanpa posting ledger; pengajuan ulang membuat approval revision-bound baru.
+- Admin dan Owner terpisah menyelesaikan approval empat mata, dan variance hanya
+  diposting sekali. Desktop/mobile acceptance, 183 storefront test, 436
+  Laravel test, no-migration immutable deploy, public smoke, serta scheduler
+  observation lulus. Readiness tetap 30/42 dengan 12 blocker.
+- Release sebelumnya `20260826-d1950e6` menjalankan Admin Inventory storefront
+  truth dan guided adjustment integrity.
 - Admin Inventory memisahkan stok operasional dari stok yang benar-benar tayang
   pada snapshot storefront terakhir. Tujuh queue, status dampak storefront,
   dan alert stok tayang membantu operator memprioritaskan stok customer-visible.

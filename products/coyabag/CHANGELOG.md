@@ -4,6 +4,21 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-26 - Admin Stock Opname recovery production release
+
+- Klasifikasi: `CONFIRMED` dari exact source
+  `b6f1c5540a395323d13966b83b377fea16802f9f`, immutable Hostinger release
+  `20260826-b6f1c55`, rollback `20260826-d1950e6`, dan public runtime smoke.
+- Dirty close kini menyimpan hitungan; count dapat dikosongkan kembali sebagai
+  unfinished; count lengkap masuk langsung ke variance review.
+- Approval kedaluwarsa memulihkan sesi submitted ke review tanpa count loss
+  atau ledger mutation. Resubmission membuat approval revision-bound baru;
+  Admin dan Owner terpisah menyelesaikan four-eyes approval tepat sekali.
+- Desktop/mobile, 183 storefront test, 436 Laravel test, dependency/security
+  gate, no-migration deploy, workers, cron, public smoke, dan scheduler pass.
+- Delivery `PRODUCTION_DEPLOYED`; activation/business readiness `BLOCKED`;
+  readiness 30/42, 12 blocker, checkout/provider fail-closed.
+
 ## 2026-08-26 - Admin Inventory storefront truth production release
 
 - Klasifikasi: `CONFIRMED` dari exact source
