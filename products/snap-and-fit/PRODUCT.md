@@ -51,8 +51,9 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 - Delivery: `LOCAL_VALIDATED`.
 - Activation: `NOT_PRODUCTION_ACTIVATED`.
 - Business readiness: `BLOCKED`.
-- Exact private source/docs head `2aef57a`; persistent biometric-profile, Google
-  OAuth, AWS plan, dan prototype-topology slice berasal dari exact source tersebut;
+- Exact private implementation source `2aef57a`, preview source `167896b`, dan
+  source/docs head `3bb8466`; persistent biometric-profile, Google OAuth, AWS plan,
+  dan prototype-topology slice berasal dari implementation source tersebut;
   provider-chaos acceptance feature
   berasal dari `6d3d955`, native age recovery evidence berasal
   dari `4b6c08b`, fail-closed 300-VU load feature
@@ -89,10 +90,10 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   `b09f279`, deletion/recovery hardening dari `dbbb814`, serta candidate/cart
   authority dari `09a55bd`, durable notification worker dari `d964fea`, dan
   lifecycle/retention worker dari `4d602d9`.
-- Protected Vercel preview `dpl_HwMrwup2NgAGTREFkABND5mVHEtB` dari exact
-  source `d24fc31` berstatus `READY`; remote Linux web build dan protected
-  uploader smoke lulus tanpa error log, tetapi project belum memiliki environment
-  variable dan backend staging sengaja fail-closed.
+- Protected Vercel preview `dpl_FTPTFFb7Q4WWh6jcp7Bt42151d87` dari exact
+  source `167896b` berstatus `READY`; landing, Google sign-in, profil biometrik,
+  dan event-scoped profile search merespons HTTP 200. Backend health tetap
+  fail-closed HTTP 503 sampai API VPS terisolasi terhubung.
 - Full no-service validation, 69 API test dengan sembilan integrasi eksternal
   terkontrol skip dan 24 worker test dengan empat integrasi service-dependent
   skip lulus. Disposable loopback MySQL 8.4.9 dari database kosong mengaplikasikan

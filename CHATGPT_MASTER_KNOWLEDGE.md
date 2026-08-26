@@ -103,7 +103,8 @@ SagaWork active public synthetic staging runtime sekarang exact `e59efcd`; domai
 
 SagaWork Workspace/Cabang operating model sekarang `CONFIRMED / PLANNED_NOT_IMPLEMENTED` dari exact planning source `79179d9`. Workspace berarti cabang/unit operasional dalam satu Company dan memakai existing `location` domain pada MVP; Organization HR dapat menangani seluruh Workspace, Workspace HR satu atau beberapa scope, sedangkan Staff mempunyai primary serta effective-dated secondary/temporary assignment yang berbeda dari permission scope. Setiap Workspace dapat mempunyai Staff, shift, policy, timezone, dan GPS/geofence berbeda. Request Hub target meliputi izin, cuti, sakit, ganti hari libur, swap/replacement, lembur, dan correction. Finalisasi dipecah menjadi 15 batch/Sprint F01-F60: F01-F52 sampai owner rehearsal dan five-Staff canary; F53-F60 closed-beta/post-pilot. Runtime tetap `e59efcd`, K0/K1 NO-GO, performance OFF, dan tidak ada schema/API/UI/deploy/production activation dari planning ini.
 
-Snap and Fit exact private source/docs head `2aef57a` berstatus `CONFIRMED /
+Snap and Fit exact private implementation source `2aef57a`, preview source
+`167896b`, dan source/docs head `3bb8466` berstatus `CONFIRMED /
 LOCAL_VALIDATED`; provider-chaos acceptance feature berasal dari `6d3d955`,
 native age recovery evidence berasal dari `4b6c08b`,
 fail-closed 300-VU load feature berasal dari `f06d538`,
@@ -139,9 +140,10 @@ connected HiRes fulfillment berasal dari `370278a`,
 privileged operations feature berasal dari `b09f279`,
 deletion/recovery hardening dari `dbbb814`, candidate/cart authority dari
 `09a55bd`, durable notification worker dari `d964fea`, lifecycle/retention
-worker dari `4d602d9`, dan protected Vercel
-preview `dpl_HwMrwup2NgAGTREFkABND5mVHEtB` dari exact source `d24fc31`
-berstatus `READY`.
+worker dari `4d602d9`, dan protected Vercel preview
+`dpl_FTPTFFb7Q4WWh6jcp7Bt42151d87` dari exact source `167896b` berstatus
+`READY`. Landing, Google sign-in, profil biometrik, dan selected-event profile
+search merespons HTTP 200; backend tetap fail-closed HTTP 503 sampai VPS terhubung.
 Delapan shell script operasional lulus Git Bash `bash -n`; staging Compose lulus static
 interpolation dengan official checksum-verified Docker Compose v5.5.0 dan
 synthetic-only values tanpa image/container execution. Hosted Actions, isolated

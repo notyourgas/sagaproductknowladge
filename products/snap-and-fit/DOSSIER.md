@@ -12,8 +12,9 @@ credential, PII, identifier tenant/perangkat, atau detail provider sensitif.
 - Delivery: `LOCAL_VALIDATED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED`
-- Provenance: exact private source/docs head `2aef57a`, persistent biometric-profile,
-  Google OAuth, AWS plan, dan prototype-topology slice dari head tersebut; provider-chaos acceptance
+- Provenance: exact private implementation source `2aef57a`, preview source
+  `167896b`, source/docs head `3bb8466`, persistent biometric-profile, Google OAuth,
+  AWS plan, dan prototype-topology slice dari implementation source tersebut; provider-chaos acceptance
   feature `6d3d955`, native age recovery
   evidence `4b6c08b`, fail-closed 300-VU load
   feature `f06d538`, 500-file uploader recovery feature `6f57416`, fail-closed
@@ -40,8 +41,8 @@ credential, PII, identifier tenant/perangkat, atau detail provider sensitif.
   operations feature `b09f279`,
   deletion/recovery hardening `dbbb814`, candidate/cart authority `09a55bd`,
   durable notification worker `d964fea`, lifecycle/retention worker `4d602d9`,
-  protected Vercel preview `dpl_HwMrwup2NgAGTREFkABND5mVHEtB` dari exact
-  source `d24fc31`.
+  protected Vercel preview `dpl_FTPTFFb7Q4WWh6jcp7Bt42151d87` dari exact
+  source `167896b`.
 - Hosted CI evidence: exact source/docs run `32925596466`
   membuat security job `98047751773` dan validate job `98047751894`. Keduanya
   berhenti sebelum assignment runner, dengan runner ID `0`, tanpa nama, steps kosong, dan

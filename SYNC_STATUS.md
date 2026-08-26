@@ -12,12 +12,12 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-26T17:51:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-26T17:53:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | exact `9c0746577422ed904c9b9bb7b6718a1274db8587` |
-| Informasi terakhir disinkronkan | SagaBook staff operations schedule-first layout production activation. |
-| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; `BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | exact `d5cb1a66c0212f2fad7bb4d58c6e55de80cef773` |
+| Informasi terakhir disinkronkan | Snap and Fit protected biometric-profile web preview. |
+| Status sinkronisasi | `CONFIRMED / LOCAL_VALIDATED / PROTECTED_PREVIEW_DEPLOYED`; production dan business readiness tidak berubah. |
 
 ## COYABAG Admin Media publication integrity
 
@@ -42,6 +42,11 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `SYNC_STATUS.md`
 
 ## Snap and Fit persistent biometric prototype slice
+
+- Latest protected preview source `167896b`/deployment
+  `dpl_FTPTFFb7Q4WWh6jcp7Bt42151d87` berstatus `READY`; landing, Google sign-in,
+  profil biometrik, dan selected-event profile search HTTP 200.
+- Backend health tetap fail-closed HTTP 503; source/docs evidence head `3bb8466`.
 
 - Exact source `2aef57a` mengimplementasikan Google OAuth, optional liveness plus
   three-pose account profile, selected-event search, retention/lifecycle, dan

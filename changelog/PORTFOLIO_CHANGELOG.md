@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-08-26 - Snap and Fit protected biometric web preview
+
+- Exact source `167896b` berhasil dibangun sebagai protected Vercel deployment
+  `dpl_FTPTFFb7Q4WWh6jcp7Bt42151d87`; evidence docs berada pada `3bb8466`.
+- Landing, Google sign-in, profil biometrik, dan selected-event profile search
+  merespons HTTP 200; backend tetap fail-closed HTTP 503 sampai VPS terhubung.
+- Status tetap `LOCAL_VALIDATED / PROTECTED_PREVIEW_DEPLOYED`; AWS apply,
+  VPS/DNS, provider test, production activation, dan business readiness tidak berubah.
+
 ## 2026-08-26 - COYABAG Admin Media publication integrity
 
 - Exact source `5184bfe5a41a1fc0f650720c2d0f6b0eaa9d9069` aktif pada immutable

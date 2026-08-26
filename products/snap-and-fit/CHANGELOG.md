@@ -10,6 +10,16 @@ production, activation, dan business readiness.
 Mock, fixture, preview frontend, dan test lokal bukan bukti provider atau
 production activation.
 
+## 2026-08-26 - Protected biometric-profile web preview
+
+- Protected Vercel deployment `dpl_FTPTFFb7Q4WWh6jcp7Bt42151d87` dari exact
+  source `167896b` berstatus `READY`; evidence docs berada pada `3bb8466`.
+- Authenticated smoke mengembalikan HTTP 200 untuk landing, Google sign-in,
+  profil biometrik akun, dan pencarian profil pada event terpilih.
+- Backend health sengaja fail-closed HTTP 503 `BACKEND_NOT_CONFIGURED`; AWS belum
+  di-apply, VPS/DNS/provider belum dimutasi, sehingga delivery tetap
+  `LOCAL_VALIDATED`, bukan connected staging atau production.
+
 ## 2026-08-26 - Google OAuth, persistent biometric profile, and prototype infrastructure plan
 
 - Exact private source `2aef57a` menambahkan Google OAuth untuk customer/fotografer,

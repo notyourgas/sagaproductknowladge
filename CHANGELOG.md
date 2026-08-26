@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-26 - Snap and Fit protected biometric preview sync
+
+- Ringkasan: menyinkronkan protected Vercel preview untuk Google sign-in, profil
+  biometrik akun, dan selected-event profile search.
+- Klasifikasi: `CONFIRMED / LOCAL_VALIDATED / PROTECTED_PREVIEW_DEPLOYED`;
+  exact preview source `167896b`, deployment `dpl_FTPTFFb7Q4WWh6jcp7Bt42151d87`,
+  source/docs evidence `3bb8466`.
+- Smoke: empat web route HTTP 200; backend health fail-closed HTTP 503
+  `BACKEND_NOT_CONFIGURED` sampai API VPS terhubung.
+- Production berubah: tidak. AWS apply, VPS/DNS, Google/Tokopay secret, real
+  biometrik, production activation, dan business readiness tetap gate terpisah.
+- Dokumen terdampak: Decisions, Product, Dossier, Snap and Fit changelog,
+  portfolio changelog, master knowledge, gaps, root changelog, dan sync status.
+
 ## 2026-08-26 - COYABAG Admin Media publication integrity sync
 
 - Ringkasan: menyinkronkan status live/draft/arsip/pending media, queue menunggu
