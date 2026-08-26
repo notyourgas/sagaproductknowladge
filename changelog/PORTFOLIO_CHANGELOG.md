@@ -210,7 +210,17 @@
 - `CONFIRMED / LOCAL_VALIDATED`: feature `6d3fc98`, acceptance `666fbef` menambah guarded/idempotent first-organization + HR provisioning, one-time secret, HR-owned password, mandatory TOTP, policy acknowledgement, dan operator recovery dengan session/MFA revocation.
 - 36/130 tests, 47-page build, 66 tables/24 migrations, OpenAPI 70 paths/85 operations/48 request components, dan disposable Hostinger MySQL integration PASS.
 - Disk-capacity blocker lama tertutup, tetapi K0/K1 tetap NO-GO karena external provider/access/recovery dan actual Owner HR UAT belum selesai. Tidak ada real account/data, staging deployment, Preview change, atau production activation.
+## 2026-08-26 - SagaView S302 Support Hub double-submit protection
 
+- Exact source `94df8c227df1db31a847e4669c3a17771dcec8b7` menambahkan
+  kunci request sinkron khusus SagaView agar dua aktivasi Kirim cepat hanya
+  menghasilkan satu pertanyaan Support Hub.
+- Acceptance RED dua POST berubah menjadi GREEN satu POST pada desktop
+  1440x900 dan mobile 390x844; backend/privacy 40/210, scoped gate 209/1.735,
+  build 5.097 modul, dan audit dependency nol lulus.
+- Delivery `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; tidak ada
+  migration, data customer, perubahan payment, perubahan SagaBook, atau mutasi
+  production.
 ## 2026-08-26 - COYABAG Admin Produk publication context integrity
 
 - Exact source `3c2b8a73898798e825dcf71786bfc04200c75ad8` aktif pada immutable

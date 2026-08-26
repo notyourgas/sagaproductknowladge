@@ -1,5 +1,29 @@
 # SagaView Changelog
 
+## 2026-08-26 - S302 Support Hub ask double-submit protection
+
+- Klasifikasi: `PUSHED / QA_VALIDATED / UIUX_VALIDATED /
+  SECURITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+  production, activation, dan business readiness tidak berubah.
+- Before: state React `sending` baru aktif setelah render berikutnya, sehingga
+  dua aktivasi sinkron pada tombol Kirim dapat membuat dua
+  `POST /api/admin/support/ask` dan menggandakan percakapan serta pemakaian
+  kuota bantuan.
+- After: exact `94df8c227df1db31a847e4669c3a17771dcec8b7` menambahkan
+  in-flight ref sinkron khusus SagaView sebelum request dimulai dan
+  membersihkannya pada `finally`; perilaku SagaBook tetap baseline.
+- Evidence: acceptance RED membuktikan dua POST; GREEN desktop 1440x900 dan
+  mobile 390x844 masing-masing 1/1 dengan POST tepat satu, forced-colors,
+  reduced-motion, dan no-overflow. Backend/privacy 40 test/210 assertion;
+  exact scoped gate 209 test/1.735 assertion dari 31 file; build 5.097 modul;
+  Composer/npm audit nol.
+- Delivery: source exact sudah pushed; tidak ada migration, database write,
+  deploy, credential customer, foto/path/output customer, payment, atau
+  perubahan SagaBook.
+- Next gate: authenticated Owner Support Hub UAT terotorisasi dengan akun
+  referensi non-customer, lalu release preflight/backup/rollback sebelum
+  deployment kandidat diputuskan.
+
 ## 2026-08-26 - S301 authenticated UAT data boundary
 
 - Klasifikasi: `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;

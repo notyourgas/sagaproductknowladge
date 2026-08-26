@@ -1,6 +1,25 @@
 # SagaView Product Knowledge
 
-Updated: 26 Agustus 2026 14:17 WIB
+Updated: 26 Agustus 2026 15:15 WIB
+
+SagaView S302 exact `94df8c227df1db31a847e4669c3a17771dcec8b7`
+sudah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Support Hub Owner
+sekarang memakai kunci request sinkron khusus `productCode=sagaview`, sehingga
+dua klik atau aktivasi Enter yang terjadi sebelum render React berikutnya hanya
+menghasilkan satu `POST /api/admin/support/ask`. Perilaku SagaBook tidak
+diubah. Acceptance desktop 1440x900 dan mobile 390x844 masing-masing lulus 1/1
+termasuk forced-colors, reduced-motion, no-overflow, dan hitungan POST tepat
+satu. Regresi backend/privacy lulus 40 test dengan 210 assertion; exact scoped
+release gate lulus 209 test dengan 1.735 assertion dari 31 file, build 5.097
+modul, Composer audit nol advisory, dan npm audit nol vulnerability.
+
+Perubahan hanya pada widget dan acceptance SagaView; tidak ada migration,
+database write, upload foto/path/output customer, atau perubahan payment.
+Production tetap backend/Owner `20260826050812-7bf0e0d` dan Studio
+`20260824170456-7ae79ae`; activation serta business readiness tetap false.
+Gap berikutnya tetap authenticated Owner Support Hub UAT terotorisasi dengan
+akun referensi non-customer sebelum deployment kandidat atau penilaian
+`PRODUCTION_ACTIVATED`/`BUSINESS_READY`.
 
 SagaView S301 exact `e6b2bf51ed8f4f22dd585aefc7611931bc85fe25`
 sudah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Harness Owner UAT
