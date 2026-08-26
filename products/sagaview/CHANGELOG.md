@@ -1,5 +1,30 @@
 # SagaView Changelog
 
+## 2026-08-26 - S303 immutable release artifact and disposable rehearsal
+
+- Klasifikasi: `PUSHED / DEVOPS_VALIDATED / SECURITY_VALIDATED /
+  QA_VALIDATED / LOCAL_VALIDATED / STAGING_READY /
+  IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
+- Before: S302 sudah hijau dan pushed, tetapi exact candidate belum mempunyai
+  immutable archive, SHA-256 manifest, git bundle, salinan kedua, serta
+  disposable VPS storage rehearsal untuk release tersebut.
+- After: source S302 exact menghasilkan release
+  `20260826090428-94df8c2`, archive SHA-256
+  `19873327876b927913b3bd99226a26c65f7f900392aa49399a3c2d020523b5cc`,
+  dan bundle SHA-256
+  `6b64ae3a9df5de2070a532b709bfd5314f1021c10d8ac3182ad44704b822e4ee`.
+  Dua salinan checksum-identical tersedia dan archive bebas konten runtime
+  terlarang.
+- Evidence: migration delta nol; satu build manifest dari 2.591 entry;
+  focused release contract 6/67; build 5.097 modul; Composer/npm audit nol;
+  shared-storage/sentinel/checksum rehearsal lulus; remote temp bersih; lima
+  smoke 200, Support Hub anonim 404, dan empat service aktif.
+- Delivery: tidak ada cutover, migration, database write, credential customer,
+  foto/path/output customer, payment, perubahan SagaBook, atau mutasi
+  production.
+- Next gate: authenticated Owner UAT terotorisasi, fresh encrypted
+  backup/checksum/disposable restore, lalu approval deployment exact release.
+
 ## 2026-08-26 - S302 Support Hub ask double-submit protection
 
 - Klasifikasi: `PUSHED / QA_VALIDATED / UIUX_VALIDATED /

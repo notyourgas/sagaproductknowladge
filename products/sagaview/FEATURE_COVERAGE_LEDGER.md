@@ -1,6 +1,27 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 26 Agustus 2026 15:15 WIB
+Evidence cut-off: 26 Agustus 2026 16:11 WIB
+
+S303 immutable release artifact and disposable rehearsal: exact source S302
+`94df8c227df1db31a847e4669c3a17771dcec8b7` sekarang terikat ke candidate
+release `20260826090428-94df8c2`. Sebelumnya code/test sudah hijau, tetapi
+release exact belum memiliki archive, manifest, bundle, salinan kedua, dan
+rehearsal storage yang immutable. Sekarang archive SHA-256
+`19873327876b927913b3bd99226a26c65f7f900392aa49399a3c2d020523b5cc`
+serta bundle SHA-256
+`6b64ae3a9df5de2070a532b709bfd5314f1021c10d8ac3182ad44704b822e4ee`
+tersedia pada dua drive dengan checksum identik.
+
+Archive berisi 2.591 entry dan tepat satu build manifest, tanpa `.env`, `.git`,
+`vendor`, atau `node_modules`; migration delta terhadap production nol.
+Focused release contract 6/67, build 5.097 modul, Composer/npm audit nol, dan
+disposable VPS storage rehearsal lulus untuk symlink, sentinel, checksum, serta
+production-current unchanged. Temp remote kembali nol, lima smoke HTTP 200,
+Support Hub anonim 404 fail-closed, dan empat service tetap aktif. Status
+`PUSHED / DEVOPS_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED /
+LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`. Gap berikutnya:
+authenticated Owner UAT non-customer, fresh backup/restore, dan approval
+deployment; activation/business readiness tetap terpisah.
 
 S302 Support Hub ask double-submit protection: exact pushed source
 `94df8c227df1db31a847e4669c3a17771dcec8b7` menutup race pada composer Owner.

@@ -1,6 +1,27 @@
 # SagaView Product Knowledge
 
-Updated: 26 Agustus 2026 15:15 WIB
+Updated: 26 Agustus 2026 16:11 WIB
+
+SagaView S303 menutup release preflight untuk exact source S302
+`94df8c227df1db31a847e4669c3a17771dcec8b7`. Immutable candidate release
+`20260826090428-94df8c2` mempunyai archive SHA-256
+`19873327876b927913b3bd99226a26c65f7f900392aa49399a3c2d020523b5cc`
+dan git bundle SHA-256
+`6b64ae3a9df5de2070a532b709bfd5314f1021c10d8ac3182ad44704b822e4ee`.
+Archive, bundle, dan manifest tersedia pada dua drive dengan checksum identik;
+archive memuat satu build manifest, tidak membawa `.env`, `.git`, `vendor`,
+atau `node_modules`, serta migration delta dari production bernilai nol.
+
+Disposable VPS storage rehearsal lulus: shared-storage symlink dan sentinel
+round-trip benar, checksum archive tidak berubah, temp remote bersih, dan
+symlink production tetap sama. Focused release contract 6 test/67 assertion,
+build 5.097 modul, Composer/npm audit nol, lima public smoke HTTP 200, Support
+Hub anonim 404 fail-closed, dan empat service aktif. Status kandidat sekarang
+`PUSHED / LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`.
+Production tetap backend/Owner `20260826050812-7bf0e0d`, Studio
+`20260824170456-7ae79ae`, dan rollback `20260825210645-1237ef2`; authenticated
+UAT, fresh backup/restore, deployment, activation, dan business readiness
+tetap gate terpisah.
 
 SagaView S302 exact `94df8c227df1db31a847e4669c3a17771dcec8b7`
 sudah `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Support Hub Owner
