@@ -3529,15 +3529,24 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release aktif `20260826-3c2b8a7` menjalankan exact source
+Release aktif `20260826-4abf96f` menjalankan exact source
+`4abf96fca4215033d44a85a2ffa4db46066f6ecf` dengan rollback
+`20260826-3c2b8a7`. Varian baru dimulai nonaktif; aktivasi memvalidasi kesiapan
+jual dan pada produk live menunggu publish sebelum masuk snapshot katalog.
+Pending activation tidak menggantikan varian live terakhir. State operator,
+stale-edit recovery, keyboard dialog, desktop/mobile, 427 Laravel test, full
+RC, dependency audit, additive migration, backup, workers, dan public smoke
+lulus. Readiness tetap 30/42 dengan 12 blocker; checkout dan provider tetap
+fail-closed.
+
+Release sebelumnya `20260826-3c2b8a7` menjalankan exact source
 `3c2b8a73898798e825dcf71786bfc04200c75ad8` dengan rollback
 `20260826-312caf4`. Save, publish, dan archive Produk membawa server revision;
 publish juga mengikat product, variant, dan media context di bawah row lock.
 Stale tab ditolak tanpa mutasi, draft lokal tetap terlihat, dan operator dapat
 membuka atau memuat versi terbaru. Desktop/mobile, 424 Laravel test, full RC,
 dependency audit, additive migration, backup, workers, dan public smoke lulus.
-Readiness tetap 30/42 dengan 12 blocker; checkout dan provider tetap
-fail-closed.
+Readiness tetap 30/42 dengan 12 blocker pada release tersebut.
 
 Release sebelumnya `20260826-312caf4` menjalankan exact source
 `312caf4a6051d341f8ee29c3ea90af7d4f07f89c`. Detail Pesanan dan antrean memakai satu eligibility

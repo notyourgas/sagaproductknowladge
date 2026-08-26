@@ -78,16 +78,28 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260826-3c2b8a7` memakai source
+Release production terbaru `20260826-4abf96f` memakai source
+`4abf96fca4215033d44a85a2ffa4db46066f6ecf` dan rollback
+`20260826-3c2b8a7`. Varian baru selalu nonaktif. Aktivasi memvalidasi identitas,
+effective price/weight, foto siap, dan alt text di bawah row lock. Pada produk
+live, varian siap masuk status menunggu publish dan tetap dikeluarkan dari
+katalog hingga publish atomik membuat snapshot baru. Varian pending tidak dapat
+menggantikan varian live terakhir. State operator, remediation, stale-edit
+recovery, focus trap/return, desktop/mobile acceptance, 427 Laravel test, full
+RC, dependency audit, additive migration, backup, workers, dan public smoke
+hijau. Readiness tetap 30/42 dengan 12 blocker dan checkout disabled.
+
+Release sebelumnya `20260826-3c2b8a7` memakai source
 `3c2b8a73898798e825dcf71786bfc04200c75ad8` dan rollback
-`20260826-312caf4`. Save, publish, dan archive Produk sekarang memakai revision
+`20260826-312caf4`. Save, publish, dan archive Produk memakai revision
 server serta row lock. Publish juga memverifikasi satu context hash untuk
 produk, varian, dan media yang dilihat operator. Tab stale ditolak tanpa mutasi,
 draft lokal dipertahankan, dan operator mendapat tindakan aman untuk membuka
 atau memuat versi terbaru. Media staging tetap tersedia ketika transaksi
 publish rollback. Acceptance desktop/mobile, 424 Laravel test, full RC, audit
 dependency, migrasi aditif, backup, rollback, workers, dan public smoke hijau.
-Readiness tetap 30/42 dengan 12 blocker dan checkout disabled.
+Readiness tetap 30/42 dengan 12 blocker dan checkout disabled pada release
+tersebut.
 
 Release sebelumnya `20260826-312caf4` memakai source
 `312caf4a6051d341f8ee29c3ea90af7d4f07f89c`. Detail Pesanan dan antrean

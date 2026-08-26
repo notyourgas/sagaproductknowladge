@@ -4,6 +4,19 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-26 - Admin Varian storefront activation integrity production release
+
+- Klasifikasi: `CONFIRMED` dari exact source
+  `4abf96fca4215033d44a85a2ffa4db46066f6ecf`, immutable Hostinger release
+  `20260826-4abf96f`, rollback `20260826-3c2b8a7`, dan runtime verification.
+- Varian baru dimulai nonaktif; aktivasi memerlukan kesiapan jual dan pada
+  produk live menunggu publish sebelum tersedia di katalog.
+- Pending activation tidak menggantikan varian live terakhir. State operator,
+  stale-edit recovery, keyboard dialog, desktop/mobile, 427 Laravel test, full
+  RC, dependency audit, additive migration, workers, dan public smoke lulus.
+- Delivery `PRODUCTION_DEPLOYED`; activation/business readiness `BLOCKED`;
+  readiness 30/42, 12 blocker, dan checkout tetap disabled.
+
 ## 2026-08-26 - Admin Produk publication context production release
 
 - Klasifikasi: `CONFIRMED` dari exact source

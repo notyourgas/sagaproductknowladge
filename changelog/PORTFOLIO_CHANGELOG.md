@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-26 - COYABAG Admin Varian storefront activation integrity
+
+- Exact source `4abf96fca4215033d44a85a2ffa4db46066f6ecf` aktif pada immutable
+  release `20260826-4abf96f`; rollback `20260826-3c2b8a7`.
+- Varian baru nonaktif, activation readiness fail-closed, dan aktivasi produk
+  live menunggu publish sebelum masuk snapshot katalog.
+- Desktop/mobile, stale recovery, keyboard dialog, 427 Laravel test, full RC,
+  dependency audit, additive migration, workers, dan public smoke lulus.
+- Status `PRODUCTION_DEPLOYED`; readiness tetap 30/42 dengan 12 blocker dan
+  commerce tetap fail-closed.
+
 ## 2026-08-26 - SagaWork synthetic HR demo deployed
 
 - `CONFIRMED / SYNTHETIC_STAGING_DEPLOYED`: exact runtime `4eb01c3`, local follow-up `a847c0a`, dan acceptance `517338b` menyediakan guarded akun HR demo dengan one-time bootstrap, HR-owned password, serta mandatory TOTP.

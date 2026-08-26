@@ -61,9 +61,21 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260826-3c2b8a7` dengan source
-  `3c2b8a73898798e825dcf71786bfc04200c75ad8` melayani production;
-  rollback langsung `20260826-312caf4` dipertahankan.
+- Release aktif `20260826-4abf96f` dengan source
+  `4abf96fca4215033d44a85a2ffa4db46066f6ecf` melayani production;
+  rollback langsung `20260826-3c2b8a7` dipertahankan.
+- Varian baru selalu dimulai nonaktif. Aktivasi memerlukan identitas, harga,
+  berat, foto siap, dan alt text yang lengkap; aktivasi pada produk live masuk
+  status menunggu publish dan belum tersedia di storefront.
+- Publish produk mengikat varian pending ke snapshot baru secara atomik.
+  Varian pending tidak dihitung sebagai pengganti varian live terakhir. State,
+  remediation, stale-edit recovery, dan keyboard dialog telah lulus acceptance
+  desktop/mobile.
+- 427 Laravel test, focused variant regression, full RC, audit dependency,
+  immutable deploy, dan public smoke lulus. Readiness tetap 30/42 dengan 12
+  blocker; checkout dan provider tetap fail-closed.
+- Release sebelumnya `20260826-3c2b8a7` menjalankan Admin Produk publication
+  context integrity.
 - Editor Produk memakai revision guard pada save, publish, dan archive. Publish
   juga mengikat konteks produk, varian, dan media yang diamati operator; tab
   lama ditolak tanpa mutasi dan draft lokal tetap tersedia untuk dipulihkan.

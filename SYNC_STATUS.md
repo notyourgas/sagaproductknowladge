@@ -12,12 +12,35 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-26T15:55:50+07:00 |
+| Waktu pembaruan terakhir | 2026-08-26T15:57:54+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | exact `origin/main` `48ef1df19b621dfa6aff9bb97d5f52fb2ea052a3` |
-| Informasi terakhir disinkronkan | SagaWork synthetic staging HR demo deployment. |
-| Status sinkronisasi | `CONFIRMED / SYNTHETIC_STAGING_DEPLOYED / OWNER_ACTIVATION_PENDING`; K0/K1 `NO_GO`. |
+| Baseline sebelum pembaruan | exact `origin/main` `933f0eff27472506199e977fe67f3c254020735a` |
+| Informasi terakhir disinkronkan | COYABAG Admin Varian storefront activation integrity. |
+| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED`; commerce activation `BLOCKED`. |
+
+## COYABAG Admin Varian storefront activation integrity
+
+- Exact source `4abf96fca4215033d44a85a2ffa4db46066f6ecf` aktif pada immutable
+  release `20260826-4abf96f`; rollback `20260826-3c2b8a7`.
+- Varian baru dimulai nonaktif. Aktivasi memerlukan kesiapan jual dan menunggu
+  publish pada produk live; varian pending tidak masuk katalog atau menggantikan
+  varian live terakhir.
+- Desktop/mobile, state operator, stale-edit recovery, keyboard dialog, 427
+  Laravel test, full RC, dependency audit, additive migration, backup, workers,
+  dan public smoke lulus.
+- Readiness tetap 30/42 dengan 12 blocker; checkout, activation, dan business
+  readiness tetap blocked.
+
+## File yang berubah pada sinkronisasi ini (COYABAG Admin Varian)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaWork synthetic staging HR demo deployment
 

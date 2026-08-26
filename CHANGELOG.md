@@ -1,5 +1,23 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-26 - COYABAG Admin Varian storefront activation sync
+
+- Ringkasan: menyinkronkan safe variant creation, activation readiness,
+  pending-publication state, last-live protection, operator recovery, dan
+  release terbaru.
+- Alasan: varian belum siap atau belum masuk snapshot publik tidak boleh
+  disajikan sebagai pilihan pelanggan.
+- Produk/area: COYABAG Admin Varian, katalog, publication, responsive UI/UX,
+  accessibility, database, QA, security, dan release.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED`; source exact
+  `4abf96fca4215033d44a85a2ffa4db46066f6ecf`, release `20260826-4abf96f`.
+- Production berubah: ya, Admin/API/storefront runtime dan migrasi aditif.
+  Commerce tidak production-activated; readiness 30/42, 12 blocker, checkout
+  disabled.
+- Dokumen terdampak: Product, Dossier, changelog COYABAG, portfolio, master
+  knowledge, root changelog, dan sync status.
+- Next action: Cycle 2 Dashboard Admin Media Produk Integrity.
+
 ## 2026-08-26 - SagaWork synthetic HR demo deployment sync
 
 - Ringkasan: exact `4eb01c3` aktif pada synthetic staging; `a847c0a` adalah follow-up lokal dan `517338b` acceptance. Satu akun HR dummy berstatus `pending_activation` dengan secret restricted.
