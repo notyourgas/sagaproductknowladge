@@ -1,5 +1,27 @@
 # SagaView Changelog
 
+## 2026-08-26 - S300 deployment inventory reconciliation
+
+- Klasifikasi: `AUDIT_COMPLETE / PRODUCTION_DEPLOYED / PRODUCTION_UNCHANGED /
+  NO_RUNTIME_DEPLOY_PENDING`; activation dan business readiness tetap terpisah.
+- Before: ledger masih menandai S186 `556c2818c7629907717e245863a3ed2d86649fbe`
+  sebagai kandidat Review kontras yang bukan ancestor production, sehingga
+  terlihat seolah ada runtime Studio yang belum dideploy.
+- After: patch yang sama terbukti berada pada commit ekuivalen
+  `9973967b1c0ea821175d5b35bc2a435ee0bcae5a`, ancestor exact Studio production
+  `7ae79ae45828f3876e3604bb569e0d3c7be3abfb`. Kandidat runtime backend/Owner
+  dan Studio yang disetujui telah terwakili pada exact production; S299 tetap
+  test-only dan tidak memerlukan deployment.
+- Evidence: focused Review/Axe 1/1; backend artifact contract 1/8; live
+  read-only audit menemukan exact marker backend/Studio cocok, storage symlink
+  dan manifest tersedia, worker/FPM/nginx aktif, login/session/API HTTP 200,
+  Support Hub anonim HTTP 404 fail-closed, rollback tersedia, dan journal
+  error 0 selama 30 menit.
+- Delivery: tidak ada cutover, migration, database write, credential customer,
+  foto/path/output customer, payment, atau perubahan SagaBook.
+- Next gate: authenticated Owner Support Hub UAT terotorisasi memakai akun
+  referensi non-customer sebelum activation atau business readiness dinilai.
+
 ## 2026-08-26 - S299 Support Hub monitor and zoom acceptance
 
 - Klasifikasi: `PUSHED / QA_VALIDATED / UIUX_VALIDATED / SECURITY_VALIDATED /
