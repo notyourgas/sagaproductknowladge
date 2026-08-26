@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-27 - COYABAG editorial storefront and curated gallery
+
+- Exact source `1e9dcddb454be6857687f522a90d4a29f81ef341` aktif pada immutable
+  release `20260827-1e9dcdd`; rollback `20260827-2dad82c` tersedia.
+- Homepage sekarang lebih ringkas dan editorial. Gallery memakai 20 foto client
+  terkurasi, Lookbook delapan scene, copy publik lebih natural, dan mode
+  browse-only menutup Cart/add-to-cart tanpa menghilangkan detail produk atau
+  marketplace Tokopedia/Shopee yang terverifikasi.
+- Storefront 198/198, build/metadata/security/navigation, 110 live responsive
+  combinations, checksum/backup, public smoke, workers, scheduler, dan log gate
+  lulus. CI exact SHA tidak diklaim.
+- Status `PRODUCTION_DEPLOYED`; readiness 30/42, 12 blocker,
+  `commerceActivated=false`, dan `BUSINESS_READY=false`.
+
 ## 2026-08-27 - SagaBook staff booking action integrity
 
 - Exact source `0fcca39f82f58769dad472f6632f2923e7fac18c` aktif pada immutable

@@ -4,6 +4,27 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-27 - Editorial storefront and curated gallery production release
+
+- Klasifikasi: `CONFIRMED` dari exact source
+  `1e9dcddb454be6857687f522a90d4a29f81ef341`, immutable Hostinger release
+  `20260827-1e9dcdd`, rollback `20260827-2dad82c`, dan public browser/runtime
+  evidence.
+- Homepage dipadatkan menjadi hero deterministik, empat model unggulan, dan
+  blok lifestyle; navigasi utama dipusatkan pada Koleksi, Galeri, dan Tentang.
+  Copy publik dibuat lebih natural serta label proses internal disaring.
+- Gallery memakai 20 foto client terkurasi dan Lookbook delapan scene; CMS
+  parsial di-merge/dedupe tanpa menerima media atau destination tidak aman.
+- Browse-only mode menyembunyikan Cart dan memblokir add-to-cart terpusat saat
+  commerce belum siap. PDP tetap informatif dan CTA marketplace hanya menerima
+  HTTPS Tokopedia/Shopee.
+- Storefront 198/198, build/metadata/security/navigation, 110 kombinasi live
+  responsive, checksum, backup, public smoke, worker/scheduler, dan log gate
+  lulus. CI exact SHA tidak diklaim.
+- Delivery `PRODUCTION_DEPLOYED`; commerce activation/business readiness
+  `BLOCKED`; readiness 30/42 dengan 12 blocker dan
+  `commerceActivated=false`.
+
 ## 2026-08-27 - Isolated client payment simulator production release
 
 - Klasifikasi: `CONFIRMED` dari exact source

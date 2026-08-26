@@ -12,12 +12,36 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-27T02:05:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-27T02:00:42+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
-| Informasi terakhir disinkronkan | SagaBook staff booking action integrity exact source `0fcca39f82f58769dad472f6632f2923e7fac18c`, release `20260826182900-0fcca39`. |
-| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; `BUSINESS_READY=false`. |
+| Informasi terakhir disinkronkan | COYABAG editorial storefront exact source `1e9dcddb454be6857687f522a90d4a29f81ef341`, release `20260827-1e9dcdd`. |
+| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED`; `commerceActivated=false`; `BUSINESS_READY=false`. |
+
+## COYABAG editorial storefront and curated gallery
+
+- Exact source `1e9dcddb454be6857687f522a90d4a29f81ef341` aktif pada immutable
+  release `20260827-1e9dcdd`; rollback `20260827-2dad82c` tersedia.
+- Homepage dipadatkan, copy publik dibuat lebih natural, Gallery memakai 20
+  foto client terkurasi, dan Lookbook memakai delapan scene. CMS parsial tetap
+  dapat dilengkapi secara aman tanpa menerima URL media/destination berbahaya.
+- Browse-only mode menyembunyikan Cart dan memblokir add-to-cart terpusat;
+  detail produk dan marketplace Tokopedia/Shopee terverifikasi tetap tersedia.
+- Storefront 198/198, build/metadata/security/navigation, 110 live responsive
+  combinations, checksum/backup, public smoke, workers, scheduler, dan log gate
+  lulus. CI exact SHA tidak diklaim.
+- Readiness 30/42 dengan 12 blocker. Delivery `PRODUCTION_DEPLOYED`;
+  `commerceActivated=false` dan `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi ini (COYABAG Editorial Storefront)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook staff booking action integrity
 

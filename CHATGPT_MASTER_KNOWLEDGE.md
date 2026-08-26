@@ -3639,7 +3639,24 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release aktif `20260827-2dad82c` menjalankan exact source
+Release aktif `20260827-1e9dcdd` menjalankan exact source
+`1e9dcddb454be6857687f522a90d4a29f81ef341` dengan rollback
+`20260827-2dad82c`. Homepage memakai struktur editorial ringkas: navigasi
+Koleksi/Galeri/Tentang, hero deterministik, empat model unggulan, dan blok
+lifestyle dari foto client nyata. Gallery memuat 20 foto terkurasi dengan 16
+foto awal dan empat tambahan; Lookbook memuat delapan scene. Payload CMS parsial
+digabung/dideduplikasi, sementara media dan destination tidak aman ditolak.
+Copy publik dan SEO disederhanakan serta label proses internal disaring.
+
+Saat commerce belum siap, Cart dan add-to-cart gagal tertutup melalui kontrak
+`commerceEnabled`. Product Detail tetap dapat dibaca dan hanya mengekspos CTA
+marketplace HTTPS Tokopedia/Shopee yang lolos allowlist. Storefront 198/198,
+build, metadata, security, navigation empat viewport, 110 kombinasi live
+responsive, checksum, backup, API/admin smoke, workers, scheduler, dan log gate
+lulus. CI exact SHA tidak diklaim. Readiness tetap 30/42 dengan 12 blocker;
+`commerceActivated=false` dan business readiness tetap blocked.
+
+Release sebelumnya `20260827-2dad82c` menjalankan exact source
 `2dad82c3e1cb41db2149915eb1977512e5fc6069` dengan rollback
 `20260827-f2a238c`. Checkout menyediakan simulator privat bertanda tangan dan
 berbatas waktu untuk demo client. Simulator terisolasi dari uang, omzet, stok,

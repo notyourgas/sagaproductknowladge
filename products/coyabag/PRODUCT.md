@@ -61,6 +61,26 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
+- Release aktif `20260827-1e9dcdd` dengan exact source
+  `1e9dcddb454be6857687f522a90d4a29f81ef341` melayani production;
+  rollback langsung `20260827-2dad82c` dipertahankan.
+- Storefront memakai arah editorial yang lebih ringkas: navigasi utama
+  Koleksi/Galeri/Tentang, hero deterministik, empat model unggulan, dan satu
+  blok lifestyle dengan foto client nyata. Copy publik memakai bahasa
+  Indonesia yang lebih langsung dan tidak menampilkan label proses internal.
+- Gallery memuat 20 foto client terkurasi dengan 16 foto awal dan empat foto
+  tambahan; Lookbook memuat delapan scene lifestyle. Payload CMS parsial
+  digabung dan dideduplikasi dengan koleksi terkurasi, sedangkan URL media dan
+  destination yang tidak aman tetap ditolak.
+- Saat commerce belum siap, Cart dan add-to-cart gagal tertutup pada satu
+  kontrak `commerceEnabled`. Product Detail tetap dapat dibaca dan hanya
+  menampilkan CTA marketplace HTTPS yang lolos allowlist Tokopedia/Shopee.
+- Acceptance live lulus 110 kombinasi route/viewport, termasuk 390, 768, 1440,
+  dan 1920 px, tanpa overflow atau gambar rusak. Storefront unit 198/198,
+  build, metadata, navigation, security, API/admin smoke, worker, scheduler,
+  checksum, backup, dan postdeploy log gate lulus.
+- Readiness tetap 30/42 dengan 12 blocker; `commerceActivated=false`, CI exact
+  SHA tidak diklaim, dan business readiness tetap blocked.
 - Release aktif `20260827-2dad82c` dengan exact source
   `2dad82c3e1cb41db2149915eb1977512e5fc6069` melayani production;
   rollback langsung `20260827-f2a238c` dipertahankan.

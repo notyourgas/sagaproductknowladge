@@ -1,5 +1,23 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-27 - COYABAG editorial storefront and gallery sync
+
+- Ringkasan: menyinkronkan homepage editorial, copy publik, Gallery 20 foto,
+  Lookbook delapan scene, browse-only commerce guard, dan immutable production
+  release terbaru.
+- Alasan: storefront perlu terasa lebih manusiawi, responsif, beragam secara
+  visual, dan tetap jujur ketika checkout belum siap.
+- Produk/area: COYABAG homepage, navigation, catalog, Product Detail, Gallery,
+  Lookbook, copy/SEO, responsive UI, security, QA, release, dan rollback.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED`; exact source
+  `1e9dcddb454be6857687f522a90d4a29f81ef341`, release
+  `20260827-1e9dcdd`, rollback `20260827-2dad82c`.
+- Production berubah: ya. Commerce activation dan business readiness tidak
+  berubah; readiness tetap 30/42 dengan 12 blocker. CI exact SHA tidak
+  diklaim.
+- Dokumen terdampak: Product/changelog COYABAG, portfolio, master, root
+  changelog, dan sync status.
+
 ## 2026-08-27 - SagaBook staff booking action integrity sync
 
 - Ringkasan: menyinkronkan busy state jadwal staff, optimistic concurrency,
