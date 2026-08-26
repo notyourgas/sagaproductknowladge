@@ -4,6 +4,21 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-26 - Route recovery integrity production release
+
+- Klasifikasi: `CONFIRMED` dari exact source
+  `f98e51f0f214165f8e3318cb7552fc393334bc43`, immutable Hostinger release
+  `20260826-f98e51f`, rollback `20260826-7d6e0e7`, dan runtime verification.
+- Kegagalan lazy route asset atau render menghasilkan recovery state
+  tersanitasi tanpa menjatuhkan Header, navigasi, Cart, atau Footer.
+- Reload mempertahankan URL dan Cart lokal; kembali ke Beranda mereset route
+  boundary. Fokus, touch target, responsive layout, reduced motion, dan query
+  state Bag Finder terverifikasi.
+- TDD 173 storefront test, 410 Laravel test, full RC, dependency/security audit,
+  exact assets, dan public live-API 110 kombinasi pada tujuh viewport lulus.
+- Delivery `PRODUCTION_DEPLOYED`; readiness tetap 30/42 dengan 12 blocker.
+  Activation dan business readiness `BLOCKED`; commerce tidak diaktifkan.
+
 ## 2026-08-26 - Responsive navigation integrity production release
 
 - Klasifikasi: `CONFIRMED` dari exact source

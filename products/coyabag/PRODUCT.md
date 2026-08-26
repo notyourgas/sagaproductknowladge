@@ -61,9 +61,18 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260826-7d6e0e7` dengan source
-  `7d6e0e7ae6724bc1709b08465a3a7e26a636efdc` melayani production;
-  rollback langsung `20260826-44edf06` dipertahankan.
+- Release aktif `20260826-f98e51f` dengan source
+  `f98e51f0f214165f8e3318cb7552fc393334bc43` melayani production;
+  rollback langsung `20260826-7d6e0e7` dipertahankan.
+- Area route kini memiliki recovery state eager untuk kegagalan lazy asset atau
+  render. Header, navigasi, Cart, dan Footer tetap tersedia; pengguna dapat
+  memuat ulang route atau kembali ke Beranda tanpa menghapus Cart tersimpan.
+- Pesan error publik disanitasi, fokus diarahkan ke judul status, dan perubahan
+  query tidak me-remount Bag Finder. Acceptance public live-API lulus 110
+  kombinasi pada tujuh viewport.
+- Current gate lulus 173 storefront test dan 410 Laravel test dengan 409 pass
+  serta satu intentional skip.
+- Release sebelumnya `20260826-7d6e0e7` menjalankan responsive navigation.
 - Compact navigation sekarang berupa dialog lazy-loaded: full-width pada
   mobile kecil dan right sheet pada viewport compact yang lebih lebar. Scroll
   background dikunci, background inert, fokus terjaga, dan Escape, backdrop,

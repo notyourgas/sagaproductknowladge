@@ -78,7 +78,18 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260826-7d6e0e7` memakai source
+Release production terbaru `20260826-f98e51f` memakai source
+`f98e51f0f214165f8e3318cb7552fc393334bc43` dan rollback
+`20260826-7d6e0e7`. Area route memakai recovery state eager ketika lazy asset
+atau render gagal. Header, navigasi, Cart, dan Footer tetap tersedia; reload
+mempertahankan URL dan Cart tersimpan, sedangkan kembali ke Beranda mereset
+boundary route. Error publik disanitasi, heading menerima fokus, dan perubahan
+query tidak me-remount Bag Finder. TDD 173 storefront test, 410 Laravel test,
+full RC, dependency/security audit, exact asset smoke, serta public live-API
+acceptance 110 kombinasi pada tujuh viewport lulus. Readiness tetap 30/42
+dengan 12 blocker.
+
+Release sebelumnya `20260826-7d6e0e7` memakai source
 `7d6e0e7ae6724bc1709b08465a3a7e26a636efdc` dan rollback
 `20260826-44edf06`. Compact navigation sekarang lazy-loaded, menguasai viewport
 compact, mengunci background scroll, membuat konten belakang inert, menjebak

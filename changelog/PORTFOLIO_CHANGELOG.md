@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-26 - COYABAG route recovery integrity
+
+- Exact source `f98e51f0f214165f8e3318cb7552fc393334bc43` aktif pada immutable
+  Hostinger release `20260826-f98e51f` dengan rollback `20260826-7d6e0e7`.
+- Route asset/render failure kini memiliki recovery UI tersanitasi; shell
+  storefront dan Cart tetap tersedia, serta reload atau kembali ke Beranda
+  memberi jalur pemulihan yang jelas.
+- TDD, full RC, security/dependency audit, exact asset smoke, dan public
+  live-API acceptance 110 kombinasi pada tujuh viewport lulus.
+- Delivery `PRODUCTION_DEPLOYED`; activation/business readiness `BLOCKED`;
+  readiness 30/42 dan commerce tetap fail-closed.
+
 ## 2026-08-26 - COYABAG responsive navigation integrity
 
 - Exact source `7d6e0e7ae6724bc1709b08465a3a7e26a636efdc` aktif pada immutable

@@ -1,5 +1,23 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-26 - COYABAG route recovery integrity sync
+
+- Ringkasan: sinkronisasi recovery UI untuk lazy route asset/render failure,
+  Cart persistence, sanitized public error, focus, dan query-state continuity.
+- Alasan: pelanggan membutuhkan jalur pemulihan yang jelas saat browser gagal
+  memuat route terbaru tanpa kehilangan shell storefront atau pilihan lokal.
+- Produk/area: COYABAG storefront reliability, responsive UI/UX,
+  accessibility, performance, security, QA, dan release provenance.
+- Klasifikasi: `CONFIRMED`; source exact
+  `f98e51f0f214165f8e3318cb7552fc393334bc43`, release `20260826-f98e51f`.
+- Production berubah: ya, surface storefront. Delivery
+  `PRODUCTION_DEPLOYED`; activation/business readiness `BLOCKED`; commerce
+  tetap fail-closed.
+- Dokumen terdampak: Product, Dossier, changelog COYABAG, portfolio, master
+  knowledge, root changelog, dan sync status.
+- Next action: Cycle 2 Storefront Accessibility Integrity; 12 blocker activation
+  tetap ditutup melalui gate owner/provider/operasional terpisah.
+
 ## 2026-08-26 - COYABAG responsive navigation integrity sync
 
 - Ringkasan: sinkronisasi compact navigation lazy-loaded, scroll lock, inert

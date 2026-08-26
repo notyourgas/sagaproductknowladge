@@ -12,12 +12,34 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-26T07:17:09+07:00 |
+| Waktu pembaruan terakhir | 2026-08-26T08:05:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | exact `origin/main` `e0bf46a` sebelum sinkronisasi COYABAG responsive navigation |
-| Informasi terakhir disinkronkan | COYABAG responsive navigation integrity. |
+| Baseline sebelum pembaruan | exact `origin/main` `117efbd` sebelum sinkronisasi COYABAG route recovery integrity |
+| Informasi terakhir disinkronkan | COYABAG route recovery integrity. |
 | Status sinkronisasi | `PRODUCTION_DEPLOYED`; activation dan business readiness `BLOCKED`; commerce tetap fail-closed. |
+
+## COYABAG route recovery integrity
+
+- Exact source `f98e51f0f214165f8e3318cb7552fc393334bc43` aktif pada immutable
+  release `20260826-f98e51f`; rollback `20260826-7d6e0e7`.
+- Route asset/render failure kini memiliki recovery UI tersanitasi. Shell
+  storefront dan Cart tetap tersedia; reload dan kembali ke Beranda memberi
+  jalur pemulihan tanpa membuat transaksi.
+- TDD, full RC, security/dependency audit, exact asset smoke, dan public
+  live-API acceptance 110 kombinasi pada tujuh viewport lulus.
+- Readiness tetap 30/42 dengan 12 blocker; commerce, activation, dan business
+  readiness tetap blocked.
+
+## File yang berubah pada sinkronisasi ini (COYABAG route recovery)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG responsive navigation integrity
 
