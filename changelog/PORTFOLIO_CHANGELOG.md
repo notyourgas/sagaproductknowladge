@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-27 - SagaView S310 Owner overview action clarity
+
+- Exact source `cd7288d3bb4da9542fbfa20f97780fa5639759bf` membuat Ringkasan
+  Owner mempunyai satu aksi utama kontekstual, panel status Studio sticky, dan
+  detail akun/aktivasi berbasis progressive disclosure.
+- Kegagalan pembaruan link kini tampil dekat aksi tanpa menghapus link lama.
+  Playwright Owner 3/3, exact gate 210/1.744, build 5.097 modul, serta audit
+  dependency nol temuan lulus.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Production
+  SagaView maupun SagaBook tidak berubah; artifact/rehearsal exact S310 dan
+  authenticated Owner UAT tetap gate terpisah.
+
 ## 2026-08-27 - COYABAG featured product card clipping fix
 
 - Exact source `1d5912cd93d819d940612597edfe7e2095eba2e1` aktif pada immutable

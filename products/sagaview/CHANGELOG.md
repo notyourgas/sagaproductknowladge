@@ -1,5 +1,29 @@
 # SagaView Changelog
 
+## 2026-08-27 - S310 Owner overview progressive disclosure and link recovery
+
+- Klasifikasi: `CONFIRMED / PUSHED / UIUX_VALIDATED / QA_VALIDATED /
+  SECURITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+  production tidak berubah.
+- Before: Ringkasan Owner mempunyai beberapa aksi setara, detail akun/aktivasi
+  selalu terbuka, dan kegagalan memperbarui link tidak terlihat pada halaman
+  Ringkasan walaupun state pesan sudah dibuat.
+- After: exact `cd7288d3bb4da9542fbfa20f97780fa5639759bf` menjaga satu aksi
+  utama kontekstual, menyediakan panel status/aksi Studio sticky, serta
+  memindahkan detail akun dan kontrol link ke progressive disclosure.
+- Recovery: kegagalan pembaruan tampil dekat aksi, disclosure tetap terbuka,
+  dan href link sebelumnya tidak hilang; operator diberi tahu bahwa link lama
+  aman dipakai sampai masa berlakunya selesai.
+- Evidence: RED membuktikan panel operasional belum ada. GREEN Playwright dan
+  regresi Owner 3/3 mencakup keyboard, desktop 1440x900, mobile 390x844,
+  forced-colors, reduced-motion, no-overflow, satu aksi utama, dan failure
+  preservation. Exact scoped gate lulus 210/1.744 dari 31 file, build 5.097
+  modul, Composer/npm audit nol.
+- Delivery: source exact sudah pushed; tidak ada API, database, migration,
+  payment, foto/path/output customer, SagaBook, atau mutasi production.
+- Next gate: buat artifact/rehearsal exact S310, lalu authenticated Owner UAT
+  non-customer, fresh backup/restore, dan approval deployment terpisah.
+
 ## 2026-08-27 - S309 exact S308 artifact and disposable rehearsal
 
 - Klasifikasi: `PUSHED / DEVOPS_VALIDATED / QA_VALIDATED /

@@ -1,5 +1,23 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-27 - SagaView S310 Owner overview recovery sync
+
+- Ringkasan: menyinkronkan satu aksi utama Ringkasan Owner, panel status/aksi
+  Studio sticky, progressive disclosure akun/aktivasi, dan preservasi link lama
+  saat pembaruan gagal.
+- Alasan: operator perlu melihat prioritas kerja dan kegagalan dekat aksi tanpa
+  kehilangan akses Studio yang masih berlaku.
+- Produk/area: SagaView Owner UI/UX, activation-link recovery, accessibility,
+  QA, security/privacy, dan release status.
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; exact source
+  `cd7288d3bb4da9542fbfa20f97780fa5639759bf`.
+- Production berubah: tidak. Artifact/rehearsal exact S310, authenticated Owner
+  UAT, backup/restore, deployment, activation, dan business readiness belum
+  dilakukan.
+- Dokumen terdampak: Product/changelog/ledger SagaView, portfolio, root
+  changelog, dan sync status.
+
 ## 2026-08-27 - COYABAG featured product card clipping sync
 
 - Ringkasan: menyinkronkan perbaikan kartu model unggulan yang sebelumnya

@@ -1,6 +1,30 @@
 # SagaView Product Knowledge
 
-Updated: 27 Agustus 2026 02:12 WIB
+Updated: 27 Agustus 2026 03:24 WIB
+
+SagaView S310 exact `cd7288d3bb4da9542fbfa20f97780fa5639759bf` sudah
+`PUSHED / UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Ringkasan Owner kini mempunyai
+satu aksi utama yang mengikuti pekerjaan terdekat: meninjau draft bila ada,
+atau menambah frame bila tidak ada draft. Status dan aksi Studio berada pada
+panel operasional sticky, sementara rincian akun, masa berlaku link, jumlah
+perangkat, dan kontrol pembaruan disimpan dalam progressive disclosure.
+
+Kegagalan memperbarui link sekarang tampil dekat aksi dan tidak menghapus link
+lama; UI menjelaskan bahwa link sebelumnya tetap dapat dipakai sampai masa
+berlakunya selesai. RED/GREEN Playwright dan regresi Owner 3/3 mencakup
+keyboard, satu aksi utama, failure preservation, 1440x900, 390x844,
+forced-colors, reduced-motion, dan no-overflow. Exact scoped gate lulus 210
+test/1.744 assertion dari 31 file, build 5.097 modul, serta audit Composer/npm
+nol temuan. Tidak ada perubahan API, database, migration, payment,
+foto/path/output customer, atau SagaBook.
+
+Production tetap backend/Owner `20260826050812-7bf0e0d`, Studio
+`20260824170456-7ae79ae`, dan rollback `20260825210645-1237ef2`. Artifact S309
+masih terikat pada exact S308 sehingga S310 belum `STAGING_READY`. Immutable
+artifact/rehearsal exact S310, authenticated Owner UAT non-customer, fresh
+backup/restore, approval deployment, activation, dan business readiness tetap
+gate terpisah.
 
 SagaView S309 menutup release-readiness untuk exact S308
 `55ff2870af6e3b0ef09e5aaa347e765ce33f0099`. Immutable release

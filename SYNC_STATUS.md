@@ -12,12 +12,37 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-27T02:28:36+07:00 |
+| Waktu pembaruan terakhir | 2026-08-27T03:24:37+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
-| Informasi terakhir disinkronkan | COYABAG featured product card clipping fix untuk exact source `1d5912cd93d819d940612597edfe7e2095eba2e1`, release `20260827-1d5912c`. |
-| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED`; commerce activation dan business readiness tetap blocked. |
+| Informasi terakhir disinkronkan | SagaView S310 Owner overview progressive disclosure dan link recovery untuk exact source `cd7288d3bb4da9542fbfa20f97780fa5639759bf`. |
+| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah. |
+
+## SagaView S310 Owner overview progressive disclosure
+
+- Ringkasan Owner sekarang memakai satu aksi utama kontekstual, panel
+  status/aksi Studio sticky, dan progressive disclosure untuk detail
+  akun/aktivasi.
+- Kegagalan memperbarui link tampil dekat aksi dan mempertahankan link lama
+  sampai masa berlakunya selesai.
+- Playwright Owner 3/3, exact scoped gate 210/1.744 dari 31 file, build 5.097
+  modul, serta Composer/npm audit nol temuan lulus.
+- Delivery `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+  tetap backend/Owner `20260826050812-7bf0e0d`, Studio
+  `20260824170456-7ae79ae`, dan rollback `20260825210645-1237ef2`.
+- Artifact/rehearsal exact S310, authenticated Owner UAT non-customer, fresh
+  backup/restore, approval deploy, activation, dan business readiness tetap
+  gate terpisah.
+
+## File yang berubah pada sinkronisasi ini (SagaView S310)
+
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/CHANGELOG.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG featured product card clipping fix
 

@@ -1,6 +1,23 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 27 Agustus 2026 02:12 WIB
+Evidence cut-off: 27 Agustus 2026 03:24 WIB
+
+S310 Owner overview progressive disclosure and link recovery: exact pushed
+source `cd7288d3bb4da9542fbfa20f97780fa5639759bf` menyederhanakan Ringkasan
+menjadi satu aksi utama kontekstual, panel status/aksi Studio sticky, dan detail
+akun/aktivasi yang tertutup secara default. Jika ada draft, aksi utama mengarah
+ke peninjauan draft; jika tidak ada, aksi utama tetap `Tambah frame`.
+
+Kegagalan memperbarui link sekarang terlihat dekat aksi, disclosure tidak
+menutup, dan link sebelumnya dipertahankan sampai masa berlakunya selesai.
+RED/GREEN Playwright dan regresi Owner 3/3 mencakup keyboard, 1440x900,
+390x844, forced-colors, reduced-motion, no-overflow, satu aksi utama, dan
+failure preservation. Exact scoped gate lulus 210/1.744 dari 31 file, build
+5.097 modul, Composer/npm audit nol. Status `PUSHED / UIUX_VALIDATED /
+QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; production tetap S298. Artifact S309 hanya mewakili
+S308, sehingga gap berikutnya adalah artifact/rehearsal exact S310,
+authenticated Owner UAT, fresh backup/restore, dan approval deploy.
 
 S309 exact S308 artifact and disposable release rehearsal: exact source
 `55ff2870af6e3b0ef09e5aaa347e765ce33f0099` sudah dibungkus sebagai immutable
