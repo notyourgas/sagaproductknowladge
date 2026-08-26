@@ -8,6 +8,13 @@ Mencatat perubahan material SagaWork dengan status delivery dan activation yang 
 
 Synthetic fixture, preview, dan staging bukan bukti real pilot atau production activation.
 
+## 2026-08-26 - Public synthetic trial domain
+
+- `CONFIRMED / PUBLIC_SYNTHETIC_TRIAL_PASS`: domain feature `5921f43`, canonical proxy-host cookie fix/runtime `e59efcd`, dan acceptance `c3c5e5f` membuat HR feature-review tersedia pada `https://app.sagawork.site`; apex/`www` redirect ke `app`.
+- Let's Encrypt TLS tiga SAN, Nginx loopback proxy, HSTS/CSP/frame denial/noindex, renewal timer, 38/138 tests, 47-page build, 1.084-file Linux manifest, eight HR pages, wrong-password 401, serta rollback `e59efcd → 5921f43 → e59efcd` PASS.
+- Browser publik hanya mempertahankan `__Host-sagawork_session` Secure+HttpOnly. Initial duplicate fallback-cookie defect diperbaiki sebelum handoff; credentials/identity tidak dipublikasikan.
+- Ini public synthetic trial, bukan real pilot/production/business-ready. Password trial wajib dirotasi/dihapus, real data dilarang, photo object workflow belum diterima, dan K0/K1 tetap NO-GO.
+
 ## 2026-08-26 - Synthetic trial HR direct login
 
 - Feature `eb3b372`, active loopback fix `c14f5c2`, dan acceptance `0cd3516` memberi satu identity HR trial allowlisted akses langsung tanpa TOTP hanya pada exact staging sintetis; credential/identity tetap restricted.

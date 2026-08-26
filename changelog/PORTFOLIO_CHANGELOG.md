@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-08-26 - SagaWork public synthetic trial domain
+
+- SagaWork HR feature-review kini tersedia pada `https://app.sagawork.site` melalui Hostinger Nginx/TLS dan loopback application runtime exact `e59efcd`; apex/`www` redirect ke `app`.
+- 38/138 tests, 47-page build, TLS/security headers, Secure public cookie, eight HR pages, wrong-password rejection, 1.084-file manifest, dan rollback dua arah PASS.
+- Status `PUBLIC_SYNTHETIC_TRIAL`; real data dilarang, password trial harus diganti/dihapus sebelum pilot, photo workflow belum public-ready, K0/K1 tetap NO-GO, dan tidak ada production/business activation.
+
 ## 2026-08-26 - SagaBook staff operations schedule-first layout
 
 - Operasional Sesi staff kini memprioritaskan jadwal hari ini, lalu rekap

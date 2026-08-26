@@ -1,5 +1,14 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-26 - SagaWork public synthetic trial domain sync
+
+- Ringkasan: menyinkronkan custom domain `app.sagawork.site`, DNS/TLS/Nginx, canonical redirect, public synthetic HR login, cookie scope, security headers, manifest, dan rollback rehearsal.
+- Alasan: Andreas telah mengimpor DNS dan meminta trial dapat diakses melalui domain yang dibeli untuk pemeriksaan fitur HR.
+- Produk/area: SagaWork staging, authentication/session, PWA, Hostinger VPS, Nginx, TLS, DNS, QA, security, release, dan recovery.
+- Klasifikasi: `CONFIRMED / PUBLIC_SYNTHETIC_TRIAL / NOT_REAL_PILOT / NOT_PRODUCTION_READY`; source `5921f43`, active fix/runtime `e59efcd`, acceptance `c3c5e5f`.
+- Production berubah: tidak. Public synthetic staging berubah; real-data/pilot/closed-beta/business activation tidak berubah dan K0/K1 tetap NO-GO.
+- Dokumen terdampak: Product, Dossier, SagaWork changelog, portfolio changelog, master knowledge, gaps, root changelog, dan sync status.
+
 ## 2026-08-26 - SagaBook staff operations layout order sync
 
 - Ringkasan: menyinkronkan layout schedule-first pada Operasional Sesi staff:

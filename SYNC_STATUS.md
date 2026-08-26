@@ -12,12 +12,30 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-26T16:55:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-26T17:20:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | exact `origin/main` `4b7b9a1a2ceb709a5a3c275081cba1c1eaf7469a` |
-| Informasi terakhir disinkronkan | SagaBook staff operations schedule-first layout. |
-| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah. |
+| Baseline sebelum pembaruan | exact `origin/main` `f4bde5b203f3753cd82f02b07029f135f0b2b89c` |
+| Informasi terakhir disinkronkan | SagaWork public synthetic trial domain. |
+| Status sinkronisasi | `CONFIRMED / PUBLIC_SYNTHETIC_TRIAL / NOT_REAL_PILOT / NOT_PRODUCTION_READY`; production tidak berubah. |
+
+## SagaWork public synthetic trial domain
+
+- Domain feature `5921f43`, active canonical proxy-cookie fix/runtime `e59efcd`, dan acceptance `c3c5e5f`; HR feature-review tersedia pada `https://app.sagawork.site`, sedangkan apex/`www` redirect ke `app`.
+- Let's Encrypt TLS tiga SAN, Nginx loopback proxy, security/noindex headers, renewal timer, 38/138 tests, 47-page build, 1.084-file manifest, eight HR pages, wrong-password 401, dan guarded rollback dua arah PASS.
+- Browser publik hanya mempertahankan Secure+HttpOnly host cookie. Credential/identity tetap restricted; real Staff/photo/GPS dilarang, password trial wajib dirotasi/dihapus, dan photo object workflow belum public-ready.
+- Status hanya public synthetic trial. K0/K1, protected pilot access, dedicated pilot database, provider/offsite recovery, human UAT, signed admission, production activation, dan business readiness tetap terbuka.
+
+## File yang berubah pada sinkronisasi ini (SagaWork public synthetic trial domain)
+
+- `products/sagawork/PRODUCT.md`
+- `products/sagawork/DOSSIER.md`
+- `products/sagawork/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook staff operations schedule-first layout
 
