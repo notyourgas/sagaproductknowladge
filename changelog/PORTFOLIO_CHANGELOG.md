@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-26 - COYABAG Admin Pesanan payment triage and privacy integrity
+
+- Exact source `c43e337e18178588748c9f154e9f3c5791554ff6` aktif pada immutable
+  Hostinger release `20260826-c43e337` dengan rollback `20260826-b45eb8d`.
+- Antrean pembayaran siap ditinjau kini terpisah dari pembayaran tertahan;
+  operator mendapat alasan aman dan tujuan detail yang dapat ditindaklanjuti.
+- Finance menerima identitas termasking dan pencarian nama dinonaktifkan;
+  owner/admin mempertahankan akses sesuai permission. Desktop/mobile, full RC,
+  security/dependency, workers, rollback, dan public smoke hijau.
+- Delivery `PRODUCTION_DEPLOYED`; activation/business readiness `BLOCKED`;
+  readiness 30/42 dan commerce tetap fail-closed.
+
 ## 2026-08-26 - COYABAG Admin Beranda role and readiness integrity
 
 - Exact source `b45eb8dc41eb04263442afd544e329f0391de060` aktif pada immutable

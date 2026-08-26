@@ -12,12 +12,34 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-26T12:23:48+07:00 |
+| Waktu pembaruan terakhir | 2026-08-26T13:04:38+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | exact `origin/main` `e45a95b` sebelum sinkronisasi COYABAG Admin Beranda |
-| Informasi terakhir disinkronkan | COYABAG Admin Beranda role and readiness integrity. |
+| Baseline sebelum pembaruan | exact `origin/main` `557a2fe` sebelum sinkronisasi COYABAG Admin Pesanan |
+| Informasi terakhir disinkronkan | COYABAG Admin Pesanan payment triage and privacy integrity. |
 | Status sinkronisasi | `PRODUCTION_DEPLOYED`; commerce activation dan business readiness tetap `BLOCKED`. |
+
+## COYABAG Admin Pesanan payment triage and privacy integrity
+
+- Exact source `c43e337e18178588748c9f154e9f3c5791554ff6` aktif pada immutable
+  release `20260826-c43e337`; rollback `20260826-b45eb8d`.
+- Pembayaran siap ditinjau dipisahkan dari pembayaran tertahan dengan alasan
+  aman. Finance menerima nama termasking dan tidak dapat mencari dengan nama;
+  owner/admin mempertahankan akses sesuai permission.
+- Acceptance owner/finance desktop-mobile, 413 Laravel test, full RC,
+  dependency audit, workers, rollback, dan public smoke hijau.
+- Readiness tetap 30/42 dengan 12 blocker; checkout, activation, dan business
+  readiness tetap blocked.
+
+## File yang berubah pada sinkronisasi ini (COYABAG Admin Pesanan)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG Admin Beranda role and readiness integrity
 

@@ -4,6 +4,19 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-26 - Admin Pesanan payment triage and privacy production release
+
+- Klasifikasi: `CONFIRMED` dari exact source
+  `c43e337e18178588748c9f154e9f3c5791554ff6`, immutable Hostinger release
+  `20260826-c43e337`, rollback `20260826-b45eb8d`, dan runtime verification.
+- Pembayaran siap diperiksa dipisahkan dari pembayaran tertahan karena sesi,
+  bukti, atau prasyarat keamanan belum lengkap; alasan blocker tetap public-safe.
+- Finance menerima nama termasking dan tidak dapat mencari berdasarkan nama;
+  owner/admin mempertahankan akses sesuai permission. Desktop/mobile, 413
+  Laravel test, full RC, audit dependency, workers, dan public smoke lulus.
+- Delivery `PRODUCTION_DEPLOYED`; activation/business readiness `BLOCKED`;
+  readiness 30/42, 12 blocker, dan checkout tetap disabled.
+
 ## 2026-08-26 - Admin Beranda role and readiness integrity production release
 
 - Klasifikasi: `CONFIRMED` dari exact source

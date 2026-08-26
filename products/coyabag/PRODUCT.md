@@ -61,15 +61,22 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260826-b45eb8d` dengan source
-  `b45eb8dc41eb04263442afd544e329f0391de060` melayani production;
-  rollback langsung `20260826-ed5814f` dipertahankan.
+- Release aktif `20260826-c43e337` dengan source
+  `c43e337e18178588748c9f154e9f3c5791554ff6` melayani production;
+  rollback langsung `20260826-b45eb8d` dipertahankan.
+- Admin Pesanan memisahkan pembayaran siap diperiksa dari pembayaran tertahan
+  karena sesi, bukti, atau prasyarat keamanan belum lengkap. Blocker tetap
+  terlihat dengan alasan aman dan tujuan detail yang dapat ditindaklanjuti.
+- Finance menerima nama pelanggan termasking dan tidak dapat mencari dengan
+  nama; owner/admin mempertahankan pencarian sesuai permission.
 - Beranda Admin kini menampilkan launch readiness authoritative khusus owner,
   memasking nama pelanggan untuk role tanpa permission manajemen pesanan, dan
   memisahkan heartbeat operasional dari riwayat aktivitas integrasi.
 - Acceptance owner/finance desktop-mobile, 413 Laravel test, full RC, audit
   dependency, immutable deploy, dan public smoke lulus. Readiness tetap 30/42
   dengan 12 blocker; checkout dan provider tetap fail-closed.
+- Release sebelumnya `20260826-b45eb8d` menjalankan Admin Beranda role and
+  readiness integrity.
 - Release sebelumnya `20260826-ed5814f` menjalankan SEO truthfulness integrity.
 - Route CMS dengan payload publik `verified=false` sekarang 404/noindex,
   memiliki title aman yang tidak kosong, dan tidak masuk sitemap. Konten

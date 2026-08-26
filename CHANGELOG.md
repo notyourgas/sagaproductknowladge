@@ -1,5 +1,21 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-26 - COYABAG Admin Pesanan payment triage and privacy sync
+
+- Ringkasan: sinkronisasi antrean pembayaran actionable versus tertahan,
+  alasan blocker aman, masking Finance, dan pencarian berbasis permission.
+- Alasan: operator tidak boleh diarahkan ke pemeriksaan tanpa bukti siap, dan
+  role Finance tidak memerlukan identitas mentah pada daftar pesanan.
+- Produk/area: COYABAG Admin Pesanan, pembayaran, RBAC/privacy, UI/UX
+  responsive, QA, security, dan release.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED`; source exact
+  `c43e337e18178588748c9f154e9f3c5791554ff6`, release `20260826-c43e337`.
+- Production berubah: ya, Admin runtime. Commerce tidak production-activated;
+  readiness 30/42, 12 blocker, dan checkout disabled.
+- Dokumen terdampak: Product, Dossier, changelog COYABAG, portfolio, master
+  knowledge, root changelog, dan sync status.
+- Next action: Cycle 2 Dashboard Admin Detail Pesanan Integrity.
+
 ## 2026-08-26 - COYABAG Admin Beranda role and readiness integrity sync
 
 - Ringkasan: sinkronisasi launch readiness owner, masking identitas berdasarkan
