@@ -3496,7 +3496,17 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release aktif `20260826-44edf06` menjalankan exact source
+Release aktif `20260826-7d6e0e7` menjalankan exact source
+`7d6e0e7ae6724bc1709b08465a3a7e26a636efdc` dengan rollback
+`20260826-44edf06`. Compact navigation sekarang lazy-loaded, full-width pada
+mobile kecil dan right sheet pada viewport compact lebih lebar. Scroll lock,
+inert background, focus trap/restore, Escape, backdrop, explicit close, active
+destination, serta route focus handoff terverifikasi. Deterministic dan public
+live-API acceptance lulus 110 kombinasi pada tujuh viewport; full RC,
+performance/accessibility/security, immutable deploy, metadata/asset smoke,
+dan operational health hijau. Readiness tetap 30/42 dengan 12 blocker.
+
+Release sebelumnya `20260826-44edf06` menjalankan exact source
 `44edf06ddf2cb05013cdb7806892271c8113e40f` dengan rollback
 `20260826-4be4f28`. FAQ dan tiga policy membutuhkan konfirmasi halaman, catatan
 pemeriksaan internal, serta konfirmasi setiap jawaban atau bagian sebelum

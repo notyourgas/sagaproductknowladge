@@ -78,7 +78,17 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260826-44edf06` memakai source
+Release production terbaru `20260826-7d6e0e7` memakai source
+`7d6e0e7ae6724bc1709b08465a3a7e26a636efdc` dan rollback
+`20260826-44edf06`. Compact navigation sekarang lazy-loaded, menguasai viewport
+compact, mengunci background scroll, membuat konten belakang inert, menjebak
+fokus, dan mendukung Escape, backdrop, explicit close, active destination,
+serta route focus handoff. Deterministic dan public live-API acceptance lulus
+110 kombinasi pada tujuh viewport; full RC, performance, accessibility,
+security, immutable deploy, metadata/asset smoke, dan zero error delta lulus.
+Readiness tetap 30/42 dengan 12 blocker.
+
+Release sebelumnya `20260826-44edf06` memakai source
 `44edf06ddf2cb05013cdb7806892271c8113e40f` dan rollback
 `20260826-4be4f28`. FAQ dan tiga policy membutuhkan konfirmasi halaman, catatan
 pemeriksaan internal, serta konfirmasi setiap jawaban atau bagian sebelum

@@ -61,9 +61,17 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260826-44edf06` dengan source
-  `44edf06ddf2cb05013cdb7806892271c8113e40f` melayani production;
-  rollback langsung `20260826-4be4f28` dipertahankan.
+- Release aktif `20260826-7d6e0e7` dengan source
+  `7d6e0e7ae6724bc1709b08465a3a7e26a636efdc` melayani production;
+  rollback langsung `20260826-44edf06` dipertahankan.
+- Compact navigation sekarang berupa dialog lazy-loaded: full-width pada
+  mobile kecil dan right sheet pada viewport compact yang lebih lebar. Scroll
+  background dikunci, background inert, fokus terjaga, dan Escape, backdrop,
+  explicit close, active destination, serta route focus handoff didukung.
+- Deterministic dan public live-API acceptance lulus 110 kombinasi pada tujuh
+  viewport 320x568 sampai 1920x1080. Performance budget, full RC, immutable
+  deploy, metadata/asset smoke, dan zero server error delta lulus.
+- Release sebelumnya `20260826-44edf06` menjalankan FAQ dan policy verification.
 - FAQ dan tiga policy memerlukan konfirmasi halaman, catatan pemeriksaan
   internal, serta konfirmasi setiap jawaban/bagian sebelum publish atau
   schedule. Perubahan fakta, kategori, tautan, versi, atau tanggal berlaku

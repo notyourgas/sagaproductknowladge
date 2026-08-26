@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-26 - COYABAG responsive navigation integrity
+
+- Exact source `7d6e0e7ae6724bc1709b08465a3a7e26a636efdc` aktif pada immutable
+  Hostinger release `20260826-7d6e0e7` dengan rollback `20260826-44edf06`.
+- Compact navigation lazy-loaded menjaga scroll dan fokus, membuat background
+  inert, serta mendukung keyboard, backdrop, explicit close, destination aktif,
+  dan route focus handoff.
+- Acceptance public live-API lulus 110 kombinasi pada tujuh viewport; full RC,
+  performance/accessibility/security, metadata/asset smoke, dan operational
+  health hijau.
+- Delivery `PRODUCTION_DEPLOYED`; activation/business readiness `BLOCKED`;
+  readiness 30/42 dan commerce tetap fail-closed.
+
 ## 2026-08-26 - COYABAG FAQ and policy verification integrity
 
 - Exact source `44edf06ddf2cb05013cdb7806892271c8113e40f` aktif pada immutable

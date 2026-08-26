@@ -12,12 +12,35 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-26T06:17:25+07:00 |
+| Waktu pembaruan terakhir | 2026-08-26T07:17:09+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | exact `origin/main` `309fca1` sebelum sinkronisasi COYABAG FAQ dan policy |
-| Informasi terakhir disinkronkan | COYABAG FAQ and policy verification integrity. |
+| Baseline sebelum pembaruan | exact `origin/main` `e0bf46a` sebelum sinkronisasi COYABAG responsive navigation |
+| Informasi terakhir disinkronkan | COYABAG responsive navigation integrity. |
 | Status sinkronisasi | `PRODUCTION_DEPLOYED`; activation dan business readiness `BLOCKED`; commerce tetap fail-closed. |
+
+## COYABAG responsive navigation integrity
+
+- Exact source `7d6e0e7ae6724bc1709b08465a3a7e26a636efdc` aktif pada immutable
+  release `20260826-7d6e0e7`; rollback `20260826-44edf06`.
+- Compact navigation lazy-loaded mengunci scroll, membuat background inert,
+  menjaga fokus, dan mendukung keyboard, backdrop, explicit close, active
+  destination, serta route focus handoff.
+- Full RC dan public live-API acceptance 110 kombinasi pada tujuh viewport,
+  performance/accessibility/security, metadata/asset smoke, dan operational
+  health lulus.
+- Readiness tetap 30/42 dengan 12 blocker; commerce, activation, dan business
+  readiness tetap blocked.
+
+## File yang berubah pada sinkronisasi ini (COYABAG responsive navigation)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG FAQ and policy verification integrity
 

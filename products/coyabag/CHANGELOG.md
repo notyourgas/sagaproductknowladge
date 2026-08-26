@@ -4,6 +4,20 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-26 - Responsive navigation integrity production release
+
+- Klasifikasi: `CONFIRMED` dari exact source
+  `7d6e0e7ae6724bc1709b08465a3a7e26a636efdc`, immutable Hostinger release
+  `20260826-7d6e0e7`, rollback `20260826-44edf06`, dan runtime verification.
+- Compact navigation menjadi dialog lazy-loaded dengan scroll lock, inert
+  background, focus trap/restore, Escape, backdrop, explicit close, active
+  destination, dan route focus handoff.
+- Deterministic serta public live-API acceptance lulus 110 kombinasi pada tujuh
+  viewport. Full RC, performance, accessibility, security, metadata/asset
+  smoke, two workers, dan zero server error delta lulus.
+- Delivery `PRODUCTION_DEPLOYED`; readiness tetap 30/42 dengan 12 blocker.
+  Activation dan business readiness `BLOCKED`; commerce tidak diaktifkan.
+
 ## 2026-08-26 - FAQ and policy verification integrity production release
 
 - Klasifikasi: `CONFIRMED` dari exact source

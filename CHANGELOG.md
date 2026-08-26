@@ -1,5 +1,23 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-26 - COYABAG responsive navigation integrity sync
+
+- Ringkasan: sinkronisasi compact navigation lazy-loaded, scroll lock, inert
+  background, keyboard/focus contract, route handoff, dan responsive matrix.
+- Alasan: pelanggan harus dapat menjangkau semua destination tanpa clipped
+  menu, background movement, atau kehilangan fokus pada seluruh viewport.
+- Produk/area: COYABAG storefront navigation, responsive UI/UX,
+  accessibility, performance, security, QA, dan release provenance.
+- Klasifikasi: `CONFIRMED`; source exact
+  `7d6e0e7ae6724bc1709b08465a3a7e26a636efdc`, release `20260826-7d6e0e7`.
+- Production berubah: ya, surface storefront. Delivery
+  `PRODUCTION_DEPLOYED`; activation/business readiness `BLOCKED`; commerce
+  tetap fail-closed.
+- Dokumen terdampak: Product, Dossier, changelog COYABAG, portfolio, master
+  knowledge, root changelog, dan sync status.
+- Next action: Cycle 2 Storefront State Integrity; 12 blocker activation tetap
+  ditutup melalui gate owner/provider/operasional terpisah.
+
 ## 2026-08-26 - COYABAG FAQ and policy verification sync
 
 - Ringkasan: sinkronisasi pemeriksaan halaman/item, invalidasi otomatis setelah
