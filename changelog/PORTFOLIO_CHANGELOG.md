@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-08-26 - SagaWork Workspace synthetic trial release
+
+- Exact source/runtime `e2a0391` mengaktifkan Workspace compatibility, effective-dated Staff assignment, scoped HR context, GPS setup preview, shift template, dan schedule eligibility pada `https://app.sagawork.site`.
+- 41/150 tests, 49-page build, OpenAPI 76/95/52, 67 table/26 migration/32 trigger, manifest 1.141 file, encrypted backup/restore, authenticated feature smoke, public HTTPS smoke, dan rollback dua arah PASS.
+- Status `PUBLIC_SYNTHETIC_TRIAL_DEPLOYED / FEATURE_REVIEW_READY`; real data dilarang, K0/K1 dan Kananta pilot tetap NO-GO, performance OFF, serta production/business readiness tidak berubah.
+
 ## 2026-08-26 - SagaBook staff schedule action accessibility
 
 - Exact candidate `d254d131a5239bcfc0673bcc571abdef5e9feaa5` memberi aksi jadwal staff

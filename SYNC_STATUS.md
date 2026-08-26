@@ -12,12 +12,35 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-26T18:00:55+07:00 |
+| Waktu pembaruan terakhir | 2026-08-26T18:25:22+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | exact `256843a3c89ce9998b920f0f93b046f398f680d4` |
-| Informasi terakhir disinkronkan | SagaBook aksesibilitas aksi jadwal staff exact source `d254d131a5239bcfc0673bcc571abdef5e9feaa5`. |
-| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production SagaBook tidak berubah. |
+| Baseline sebelum pembaruan | exact `e6de705` |
+| Informasi terakhir disinkronkan | SagaWork Workspace public synthetic trial exact source/runtime `e2a0391`, release-evidence docs `0dd224f`. |
+| Status sinkronisasi | `CONFIRMED / PUBLIC_SYNTHETIC_TRIAL_DEPLOYED / FEATURE_REVIEW_READY / REAL_PILOT_NO-GO`; production tidak berubah. |
+
+## SagaWork Workspace synthetic trial release
+
+- Exact source/runtime `e2a0391` aktif pada public synthetic trial; migrations
+  `0024`/`0025` menaikkan runtime ke 67 table/26 migration/32 trigger.
+- Local 41/150, 49-page build, OpenAPI 76/95/52, Linux manifest 1.141 file,
+  encrypted pre/post backup, isolated restore, authenticated Workspace/People/
+  assignment/template smoke, public HTTPS smoke, dan rollback dua arah PASS.
+- Release-evidence docs berada pada source commit `0dd224f`. Owner UAT,
+  privacy/provider/device/offsite/admission, K0/K1, real Kananta canary,
+  performance, production activation, dan business readiness tetap terbuka.
+
+## File yang berubah pada sinkronisasi ini (SagaWork synthetic release)
+
+- `products/sagawork/PRODUCT.md`
+- `products/sagawork/DOSSIER.md`
+- `products/sagawork/CHANGELOG.md`
+- `DECISIONS.md`
+- `GAPS.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook staff schedule action accessibility
 

@@ -1,5 +1,13 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-26 - SagaWork Workspace synthetic release sync
+
+- Ringkasan: menyinkronkan promosi exact source `e2a0391` ke public synthetic trial setelah additive migration, authenticated/public smoke, backup/restore, dan rollback dua arah lulus.
+- Produk/area: SagaWork Workspace, People, assignment, GPS setup, shift template, scheduling, MySQL, Hostinger release, recovery, dan QA.
+- Klasifikasi: `CONFIRMED / PUBLIC_SYNTHETIC_TRIAL_DEPLOYED / FEATURE_REVIEW_READY`; source/runtime `e2a0391`, release-evidence docs `0dd224f`.
+- Production berubah: tidak. Real Kananta pilot, K0/K1, privacy/provider/device/offsite/admission, performance, dan business readiness tetap belum aktif.
+- Dokumen terdampak: SagaWork Product/Dossier/Changelog, Decisions, Gaps, portfolio changelog, master knowledge, root changelog, dan sync status.
+
 ## 2026-08-26 - SagaBook staff schedule accessibility sync
 
 - Ringkasan: menyinkronkan nama aksesibel unik per booking, label aksi bahasa

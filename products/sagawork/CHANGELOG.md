@@ -8,6 +8,13 @@ Mencatat perubahan material SagaWork dengan status delivery dan activation yang 
 
 Synthetic fixture, preview, dan staging bukan bukti real pilot atau production activation.
 
+## 2026-08-26 - Workspace finalization synthetic trial release
+
+- `CONFIRMED / PUBLIC_SYNTHETIC_TRIAL_DEPLOYED / FEATURE_REVIEW_READY`: exact source/runtime `e2a0391`; acceptance documentation `0dd224f`.
+- Additive migrations `0024`/`0025` aktif. Kontrak runtime menjadi 67 table/26 migration/32 trigger; Workspace, assignment history, shift template, People, Overview, dan Scheduling authenticated smoke PASS.
+- Local 41/150, 49-page build, OpenAPI 76/95/52, Linux manifest 1.141 file, encrypted pre/post backup, isolated restore, public HTTPS smoke, dan rollback `e2a0391 → e59efcd → e2a0391` PASS.
+- Real Kananta data tetap dilarang; owner/device/privacy/provider/offsite/signed-admission evidence belum lengkap, K0/K1 tetap NO-GO, performance pilot OFF, dan ini bukan production/business activation.
+
 ## 2026-08-26 - Workspace core, Staff assignment, dan shift-template implementation
 
 - `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: exact source `e2a0391` mengimplementasikan Workspace sebagai compatibility layer dari `locations`, effective-dated primary/secondary/temporary Staff assignment, Organization/Workspace HR scope, safe selector/filter, assignment history, GPS setup preview, dan Workspace-aware dashboard.
