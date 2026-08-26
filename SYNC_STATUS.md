@@ -12,12 +12,33 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-26T09:30:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-26T10:20:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | exact `origin/main` `dd1775c` sebelum sinkronisasi COYABAG storefront accessibility integrity |
-| Informasi terakhir disinkronkan | COYABAG storefront accessibility integrity. |
-| Status sinkronisasi | `PRODUCTION_DEPLOYED`; activation dan business readiness `BLOCKED`; commerce tetap fail-closed. |
+| Baseline sebelum pembaruan | exact `origin/main` `12e5606` sebelum sinkronisasi Snap and Fit provider-chaos acceptance |
+| Informasi terakhir disinkronkan | Snap and Fit provider-chaos acceptance dan protected preview refresh. |
+| Status sinkronisasi | `LOCAL_VALIDATED`; production tidak berubah; staging dan business readiness `BLOCKED`. |
+
+## Snap and Fit provider-chaos acceptance
+
+- Exact private source/docs `d9285fc`; feature `6d3d955` menambahkan reproducible
+  32-test/8-file fail-closed provider-chaos gate ke full validation.
+- Payment truth, BIB fallback, media quarantine, notification retry, dan deletion
+  fan-out tetap aman pada injected failures; tidak ada provider live yang dipanggil.
+- Protected Vercel preview exact source `d24fc31` `READY`; backend belum terhubung.
+  Hosted CI exact head tetap berhenti sebelum runner/step pada billing gate.
+- Delivery tetap `LOCAL_VALIDATED`; production, activation, dan business readiness
+  tidak berubah. Real provider/Redis/MySQL/S3 chaos dan real-device UAT masih gate.
+
+## File yang berubah pada sinkronisasi ini (Snap and Fit provider chaos)
+
+- `products/snap-and-fit/PRODUCT.md`
+- `products/snap-and-fit/DOSSIER.md`
+- `products/snap-and-fit/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG storefront accessibility integrity
 

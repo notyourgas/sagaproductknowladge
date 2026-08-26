@@ -12,7 +12,8 @@ credential, PII, identifier tenant/perangkat, atau detail provider sensitif.
 - Delivery: `LOCAL_VALIDATED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED`
-- Provenance: exact private source/docs head `b946581`, native age recovery
+- Provenance: exact private source/docs head `d9285fc`, provider-chaos acceptance
+  feature `6d3d955`, native age recovery
   evidence `4b6c08b`, fail-closed 300-VU load
   feature `f06d538`, 500-file uploader recovery feature `6f57416`, fail-closed
   repository security-scan feature `db4e709`, deterministic Nginx staging host-policy
@@ -38,10 +39,10 @@ credential, PII, identifier tenant/perangkat, atau detail provider sensitif.
   operations feature `b09f279`,
   deletion/recovery hardening `dbbb814`, candidate/cart authority `09a55bd`,
   durable notification worker `d964fea`, lifecycle/retention worker `4d602d9`,
-  protected Vercel preview `dpl_HfF3ksVNy65qhyX36qX4V4RmFQix` dari exact
-  source `8dec486`.
-- Hosted CI evidence: exact load-fixture feature-head run `32885224444`
-  membuat security job `97923987439` dan validate job `97923987813`. Keduanya
+  protected Vercel preview `dpl_HwMrwup2NgAGTREFkABND5mVHEtB` dari exact
+  source `d24fc31`.
+- Hosted CI evidence: exact source/docs run `32925596466`
+  membuat security job `98047751773` dan validate job `98047751894`. Keduanya
   berhenti sebelum assignment runner, dengan runner ID `0`, tanpa nama, steps kosong, dan
   anotasi account payment/spending limit. Run sebelumnya pada host preflight,
   protected-preview docs, MySQL implementation, dan digest-only feature head
@@ -49,6 +50,13 @@ credential, PII, identifier tenant/perangkat, atau detail provider sensitif.
   lulus, tetapi hosted run tidak;
   protected-main enforcement juga belum
   tersedia karena branch-protection API private repository plan-gated (403).
+
+Provider-chaos acceptance menjalankan 32 test pada delapan file terhadap actual
+payment reconciliation, face/liveness orchestration, media processor,
+notification, dan deletion worker dengan fault injection sintetis. Payment
+truth tidak dipromosikan saat timeout, BIB tetap tersedia saat face provider
+degraded, media gagal tidak dipublish, dan retry/DLQ tetap redacted. Bukti ini
+lokal; real provider, Redis/MySQL/S3 soak, dan alert firing tetap gate staging.
 
 ## Overview produk
 

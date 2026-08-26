@@ -76,8 +76,9 @@ observasi minimal dua siklus timer memerlukan approval baru Andreas.
 
 SagaWork exact source/handoff runtime `d36a59fb456106eafa3d8b3e797d42a4aac67a68` berstatus `CONFIRMED / STAGING_DEPLOYED / NOT_PRODUCTION_ACTIVATED / PILOT_READY_CANDIDATE / BUSINESS_READY=false`; identical role-performance application evidence `05e2b1a`. Isolated Hostinger staging memakai synthetic data, MySQL 8.4 dengan 65 application table/23 migration/32 trigger, dan same-VPS loopback object store acceptance non-PII; protected Vercel Preview `dpl_9zvZTjgQBRhHJm5pVXH4rmtqQaBg` `READY`, 44-page build, Deployment Protection, authenticated health/strict nonce CSP/security-header/safe-worker PASS tanpa MySQL/custom domain. Scope tervalidasi mencakup Staff no-OTP dan privileged TOTP; password/session controls; people/CSV/lifecycle; scheduling/notes/swap; attendance foto+GPS/private non-PII byte pipeline; break; default-off unscheduled; assisted attendance; PWA; per-staff/CSV reporting; correction/request; overtime partial approval; Reliability; period lock/reopen; retention/recovery; serta default-off role-performance dengan versioned scorecard, attendance cap 15%, evidence/confidence, second review, own acknowledgement/seven-day appeal, fairness schedule, Payroll denial, dan no automatic employment action. Acceptance meluluskan 33/111 unit test, 20-area smoke, security abuse 9/9, workstation-to-loopback browser/Axe 12/4, isolated load 720/720 dengan p95 `165,5/438,4/331,2 ms`, schema-2 manifest 1.049 file, encrypted restore 65/23/32/24 tombstone/zero resurrection, dan rollback `05e2b1a → 17427f5 → 05e2b1a`. Direct shared-VPS Chromium crash dicatat sebagai runner limitation. Restricted exact archive 1.455.320 byte serta 699-component CycloneDX SBOM mempunyai checksum/provenance PASS dan tidak dipublikasikan. Pilot admission control tetap memakai Andreas-only Ed25519 signing dan exact-set 16 evidence. Andreas sudah mengunci `KANANTA-MADIUN-CANARY-01`: satu lokasi Madiun, 5–10 Staff, 26–28 Agustus 2026, support enabled/default 09.00–18.00 WIB, manual parallel run, dan performance OFF. Restricted charter tersedia tetapi draft admission tetap NO_GO; exact roster, individual champion, 15 evidence lain, real signed receipt, dan activation belum ada. Validated OpenAPI 3.1.1 mencakup 68 path/83 operasi/46 request components. Internal ASVS 5.0 profile tetap 155 pass internal, 79 not applicable, 0 pending internal, 18 pending external, dan 1 risk acceptance; ini bukan sertifikasi/full-Level-2 claim. Private source remote/hosted CI, legal/privacy, independent review, external provider/DPA/offsite key custody, public route, capacity monitoring, human/device evidence, incident/parallel-plan approvals, receipt, dan activation masih blocker. Loopback store tidak menerima real employee/photo/performance data; payroll compliance dan real-staff performance validity tidak diklaim.
 
-Snap and Fit exact private source/docs head `b946581` berstatus `CONFIRMED /
-LOCAL_VALIDATED`; native age recovery evidence berasal dari `4b6c08b`,
+Snap and Fit exact private source/docs head `d9285fc` berstatus `CONFIRMED /
+LOCAL_VALIDATED`; provider-chaos acceptance feature berasal dari `6d3d955`,
+native age recovery evidence berasal dari `4b6c08b`,
 fail-closed 300-VU load feature berasal dari `f06d538`,
 deterministic 500-file uploader recovery feature berasal dari `6f57416`,
 fail-closed repository security-scan feature berasal dari
@@ -112,7 +113,7 @@ privileged operations feature berasal dari `b09f279`,
 deletion/recovery hardening dari `dbbb814`, candidate/cart authority dari
 `09a55bd`, durable notification worker dari `d964fea`, lifecycle/retention
 worker dari `4d602d9`, dan protected Vercel
-preview `dpl_HfF3ksVNy65qhyX36qX4V4RmFQix` dari exact source `8dec486`
+preview `dpl_HwMrwup2NgAGTREFkABND5mVHEtB` dari exact source `d24fc31`
 berstatus `READY`.
 Delapan shell script operasional lulus Git Bash `bash -n`; staging Compose lulus static
 interpolation dengan official checksum-verified Docker Compose v5.5.0 dan
@@ -143,8 +144,15 @@ lulus; tiga artifact aktual juga lulus runtime import. Forced-uncached test grap
 menutup race Prisma build/test, full validation dan 55 browser pass lulus, peer
 check bersih, serta production audit nol vulnerability. Bukti ini belum sama
 dengan Linux image build/run/scan atau emitted SBOM/provenance.
-Latest exact source/docs GitHub Actions run `32886597014`
-membuat security job `97928387722` dan validate job `97928388016`; keduanya
+Dedicated provider-chaos command meluluskan 32 test di delapan file terhadap
+actual payment reconciliation, face/liveness orchestration, private-media
+processing, notification, dan deletion worker dengan deterministic synthetic
+fault injection. Tokopay timeout tidak mempromosikan payment/order, face outage
+mempertahankan BIB fallback, storage timeout tidak menerbitkan derivative, dan
+retry/quarantine/DLQ tetap redacted. Ini bukan real-provider atau
+isolated-staging chaos evidence.
+Latest exact source/docs GitHub Actions run `32925596466`
+membuat security job `98047751773` dan validate job `98047751894`; keduanya
 berhenti dengan runner ID `0`, tanpa nama runner, dan tanpa satu pun step karena
 account payment/spending-limit gate; run sebelumnya pada host preflight, protected-preview docs, MySQL
 implementation, dan digest-only feature head menunjukkan pola yang sama. Ini
@@ -192,9 +200,9 @@ serta 24 active worker test; skip tersisa hanya Redis/BullMQ. Dump sintetis
 pulih ke database kedua dengan 51 tabel, recovery schema lengkap, nol orphan
 deletion task, dan ledger seimbang. Ini menutup kompatibilitas MySQL lokal,
 bukan Redis/Linux container/isolated staging/off-host recovery.
-Vercel remote Linux build untuk `8dec486` lulus dan authenticated protected
-smoke membuktikan photographer uploader 200 dan security headers. Project belum
-memiliki environment variable sehingga BFF health tetap fail-closed 503. Vercel CLI
+Vercel remote Linux build untuk `d24fc31` lulus dan authenticated protected
+smoke membuktikan photographer uploader tersedia; query error log kosong. Project
+belum memiliki environment variable sehingga BFF health tetap fail-closed. Vercel CLI
 58.4.4 local Windows prebuilt packaging belum menjadi release path karena gagal
 memetakan static `/account/orders` setelah Next build sukses.
 Restore verifier kini memeriksa exact `auth_user`, schema inti, migration

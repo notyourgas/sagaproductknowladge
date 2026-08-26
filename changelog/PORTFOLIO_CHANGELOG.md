@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-26 - Snap and Fit provider-chaos acceptance
+
+- Exact private source/docs `d9285fc`; fail-closed chaos feature `6d3d955`.
+- 32 test di delapan file membuktikan payment, face/BIB fallback, private media,
+  notification, dan deletion tetap aman pada deterministic provider failure.
+- Protected Vercel preview exact source `d24fc31` `READY`; backend staging masih
+  fail-closed dan hosted CI masih billing-gated sebelum runner/step.
+- Delivery tetap `LOCAL_VALIDATED`; production tidak berubah; `STAGING_READY`
+  dan business readiness tetap `BLOCKED` menunggu isolated resources dan UAT.
+
 ## 2026-08-26 - COYABAG storefront accessibility integrity
 
 - Exact source `7547c4e9a441258508ff53ecbe5788b2e2012095` aktif pada immutable

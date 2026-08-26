@@ -10,6 +10,23 @@ production, activation, dan business readiness.
 Mock, fixture, preview frontend, dan test lokal bukan bukti provider atau
 production activation.
 
+## 2026-08-26 - Fail-closed provider-chaos acceptance and preview refresh
+
+- Exact private provider-chaos feature `6d3d955`; source/docs head `d9285fc`.
+- Satu command reproducible menjalankan 32 test di delapan file terhadap payment,
+  face/liveness, private media, notification, dan deletion service. Timeout tidak
+  membuat payment paid atau derivative terbit; BIB fallback, retry, quarantine,
+  DLQ, idempotency, dan redaction tetap berlaku.
+- Full validation lulus dengan 64 active API test/9 controlled skip, 23 active
+  worker test/4 controlled skip, seluruh package build, runtime packaging,
+  55 Playwright pass/3 intentional skip, dependency audit nol, dan peer check bersih.
+- Protected Vercel preview `dpl_HwMrwup2NgAGTREFkABND5mVHEtB` untuk exact
+  source `d24fc31` `READY`; remote Linux build/uploader smoke lulus dan error-log
+  query kosong. Backend tetap fail-closed karena belum ada isolated staging env.
+- Hosted CI run `32925596466` tetap berhenti sebelum runner/step pada billing
+  gate. Klasifikasi `CONFIRMED`; delivery tetap `LOCAL_VALIDATED`, production
+  tidak berubah, dan business readiness tetap `BLOCKED`.
+
 ## 2026-08-26 - Staging blocker revalidation
 
 - Exact private source/docs `b946581`; read-only inspection tidak melakukan remote write.

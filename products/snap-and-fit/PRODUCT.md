@@ -48,7 +48,8 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
 - Delivery: `LOCAL_VALIDATED`.
 - Activation: `NOT_PRODUCTION_ACTIVATED`.
 - Business readiness: `BLOCKED`.
-- Exact private source/docs head `b946581`; native age recovery evidence berasal
+- Exact private source/docs head `d9285fc`; provider-chaos acceptance feature
+  berasal dari `6d3d955`, native age recovery evidence berasal
   dari `4b6c08b`, fail-closed 300-VU load feature
   berasal dari `f06d538`, 500-file uploader recovery feature berasal dari
   `6f57416`, fail-closed repository security-scan feature berasal
@@ -83,12 +84,12 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   `b09f279`, deletion/recovery hardening dari `dbbb814`, serta candidate/cart
   authority dari `09a55bd`, durable notification worker dari `d964fea`, dan
   lifecycle/retention worker dari `4d602d9`.
-- Protected Vercel preview `dpl_HfF3ksVNy65qhyX36qX4V4RmFQix` dari exact
-  source `8dec486` berstatus `READY`; updated photographer uploader route 200
-  dengan defensive headers, tetapi project belum memiliki environment variable
-  dan backend staging sengaja fail-closed 503.
-- Full no-service validation, 63 API test dengan sembilan integrasi eksternal
-  terkontrol skip dan 21 worker test dengan empat integrasi service-dependent
+- Protected Vercel preview `dpl_HwMrwup2NgAGTREFkABND5mVHEtB` dari exact
+  source `d24fc31` berstatus `READY`; remote Linux web build dan protected
+  uploader smoke lulus tanpa error log, tetapi project belum memiliki environment
+  variable dan backend staging sengaja fail-closed.
+- Full no-service validation, 64 API test dengan sembilan integrasi eksternal
+  terkontrol skip dan 23 worker test dengan empat integrasi service-dependent
   skip lulus. Disposable loopback MySQL 8.4.9 dari database kosong mengaplikasikan
   18/18 migration dan menaikkan evidence authoritative menjadi 2 database test,
   71 API pass dengan satu Redis-only skip, serta 24 worker pass dengan satu
@@ -99,6 +100,12 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   staging Compose lulus static interpolation dengan official checksum-verified
   Docker Compose v5.5.0 tanpa menjalankan image/container. Frozen install,
   fresh web build, dan targeted liveness peer check juga lulus.
+- Dedicated provider-chaos command meluluskan 32 test di delapan file terhadap
+  service payment, face/liveness, private media, notification, dan deletion.
+  Tokopay timeout tidak mengubah payment/order, Rekognition outage mempertahankan
+  BIB fallback, storage timeout tidak menerbitkan derivative dan berakhir pada
+  retry/quarantine/DLQ, serta payload error tetap redacted. Ini deterministic
+  local fault injection, bukan real-provider atau isolated-staging chaos.
 - Detached clean checkout dari exact remote `fbf01b6` pada Windows dengan
   `core.autocrlf=true` lulus setup README memakai non-admin `corepack pnpm`,
   frozen install, copy `.env.example`, forced uncached lint/typecheck/test/build,
@@ -124,8 +131,8 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   dependency produksi nol vulnerability lulus. Container workflow dikonfigurasi
   menghasilkan BuildKit SBOM/provenance dan manifest digest; image belum
   dibangun/dijalankan sehingga emission/runtime evidence tetap gate.
-- Hosted GitHub Actions run `32886597014` pada exact source/docs `4b6c08b`
-  membuat security job `97928387722` dan validate job `97928388016`; keduanya
+- Hosted GitHub Actions run `32925596466` pada exact source/docs `d24fc31`
+  membuat security job `98047751773` dan validate job `98047751894`; keduanya
   gagal sebelum satu pun step berjalan, dengan runner
   ID `0`, tanpa nama runner, dan steps kosong;
   anotasi menyatakan account payment/spending-limit gate. Run sebelumnya pada
@@ -200,8 +207,8 @@ alur selfie berizin, lalu membeli foto sebelum fotografer menyerahkan HiRes.
   no-store, noindex/noimageindex/noarchive, dan tidak mengekspos bucket/key.
   Local/test memakai JPEG sintetis yang dilabel jelas, bukan foto peserta nyata.
 - Preview terbaru dibangun ulang melalui Vercel remote Linux build dari exact
-  source `8dec486`. Photographer uploader dan security headers lulus smoke
-  terproteksi; BFF health sengaja 503 sampai isolated backend tersedia.
+  source `d24fc31`. Photographer uploader lulus smoke terproteksi dan error-log
+  query kosong; BFF health sengaja fail-closed sampai isolated backend tersedia.
   Local Windows prebuilt packaging belum menjadi release path karena CLI 58.4.4
   gagal memetakan static `/account/orders` setelah Next build sukses.
 - Recovery verifier kini memakai tabel authoritative `auth_user`, bukan nama
