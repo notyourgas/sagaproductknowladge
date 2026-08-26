@@ -12,12 +12,12 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-27T03:24:37+07:00 |
+| Waktu pembaruan terakhir | 2026-08-27T03:33:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
-| Informasi terakhir disinkronkan | SagaView S310 Owner overview progressive disclosure dan link recovery untuk exact source `cd7288d3bb4da9542fbfa20f97780fa5639759bf`. |
-| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah. |
+| Informasi terakhir disinkronkan | SagaBook administrasi stok consumable S13–S24 pada exact source `2b22b835f7c72b96d569fd7c31e4aacdb56d4f49`, release `20260826201936-2b22b83`. |
+| Status sinkronisasi | `CONFIRMED / PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; `BUSINESS_READY=false`. |
 
 ## SagaView S310 Owner overview progressive disclosure
 
@@ -169,20 +169,19 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 ## SagaBook Consumable Stock Administration S13–S24
 
-- Exact source `a916e1b8980ca1c0dfbb6274b6cfd59af27850de` aktif pada immutable
-  release `20260826192333-a916e1b`; rollback `20260826182900-0fcca39`
+- Exact source `2b22b835f7c72b96d569fd7c31e4aacdb56d4f49` aktif pada immutable
+  release `20260826201936-2b22b83`; rollback `20260826192333-a916e1b`
   tersedia. Fitur menyediakan
   opening stock, restock, maker-checker correction, approval/rejection,
   append-only reversal, dan histori stok per cabang.
 - Satu pack kertas = 20 pcs. Capability, tenant/cabang isolation, optimistic
   lock, idempotency, no-negative, audit, stale protection, PII-safe note, dan
   proteksi movement closing tervalidasi.
-- Full PHP 1.173/1.173, focused stock 42/42, Playwright mobile/desktop 4/4,
+- Full PHP 1.174/1.174, focused release 25/25, Playwright mobile/desktop 4/4,
   build/typecheck, migration MySQL disposable, DB audit 100, encrypted
   backup/restore, dependency, service/journal, dan public/security smoke lulus.
-- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
-  SOURCE_MAIN_PARITY_PENDING`. Runtime exact SHA dan tabel/index/capability
-  terverifikasi; origin main masih `0fcca39f...`. Opening stock nyata,
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Runtime exact SHA,
+  origin main, manifest, dan tabel/index/capability terverifikasi 17/17. Opening stock nyata,
   authenticated UAT, pilot, dan business readiness tetap gate terpisah.
 
 ## File yang berubah pada sinkronisasi ini (SagaBook Stock Administration)

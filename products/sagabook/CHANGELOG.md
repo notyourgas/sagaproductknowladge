@@ -24,8 +24,8 @@
 
 ## 2026-08-27 - Administrasi stok consumable S13–S24 production activation
 
-- Exact source `a916e1b8980ca1c0dfbb6274b6cfd59af27850de` aktif pada immutable
-  release `20260826192333-a916e1b`; rollback `20260826182900-0fcca39`
+- Exact source `2b22b835f7c72b96d569fd7c31e4aacdb56d4f49` aktif pada immutable
+  release `20260826201936-2b22b83`; rollback `20260826192333-a916e1b`
   tersedia. Slice asal `c21d9378e0ea0bd0352cd59ffb63b4499154093a` menambah
   Pengaturan → Stok & Closing serta shortcut dari laporan closing.
 - Owner/Manager mengatur opening stock; Admin Cabang melakukan restock dan
@@ -34,15 +34,14 @@
   halaman stok. Satu pack kertas selalu 20 pcs.
 - Tenant/cabang capability, optimistic lock, idempotency, no-negative, audit,
   stale rejection, dan catatan public-safe tervalidasi.
-- Full PHP 1.173/1.173 (13.249 assertion), focused stock 42/42 (458), Playwright
+- Full PHP 1.174/1.174 (13.257 assertion), focused release 25/25 (270), Playwright
   mobile/desktop 4/4, build/typecheck, migration MySQL disposable, database
   audit 100, npm/Composer audit nol, encrypted backup/restore, service/journal,
   0 migration pending, dan public/security smoke 3/3 lulus.
-- Status `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
-  SOURCE_MAIN_PARITY_PENDING`. Narrow release exception yang disetujui Owner
+- Status `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Narrow release exception yang disetujui Owner
   hanya mencakup satu failed job WhatsApp existing. Runtime dan kontrak stok
-  lulus; verifier 16/17 hanya gagal pada remote-main parity karena origin main
-  masih `0fcca39f...`. Opening stock nyata, authenticated Owner/Admin Cabang UAT,
+  lulus; verifier 17/17 membuktikan origin main, manifest, dan runtime sinkron.
+  Opening stock nyata, authenticated Owner/Admin Cabang UAT,
   dan pilot belum dilakukan. `BUSINESS_READY=false`.
 
 ## 2026-08-26 - Closing Operasional Studio V1 production deployed, feature off

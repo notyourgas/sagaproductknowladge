@@ -35,24 +35,23 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   dan dua studio pilot tetap diperlukan sehingga `BUSINESS_READY=false`.
 
 - Administrasi stok consumable S13–S24 aktif pada exact source
-  `a916e1b8980ca1c0dfbb6274b6cfd59af27850de`, immutable release
-  `20260826192333-a916e1b`, dengan rollback `20260826182900-0fcca39`.
+  `2b22b835f7c72b96d569fd7c31e4aacdb56d4f49`, immutable release
+  `20260826201936-2b22b83`, dengan rollback `20260826192333-a916e1b`.
   Status `CONFIRMED / UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
-  DATA_INTEGRITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
-  SOURCE_MAIN_PARITY_PENDING`. Owner/Manager dapat mengatur stok awal per cabang,
+  DATA_INTEGRITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
+  Owner/Manager dapat mengatur stok awal per cabang,
   Admin Cabang dapat restock dan mengajukan koreksi hitung fisik, sedangkan
   approval wajib dilakukan actor berbeda. Reversal membuat mutasi lawan tanpa
   menghapus histori; movement closing tidak dapat dibatalkan dari halaman stok.
   Input kertas memakai 1 pack = 20 pcs. Optimistic lock, idempotency, no-negative,
   capability, tenant/cabang isolation, audit, dan PII guard tervalidasi. Full PHP
-  1.173/1.173 (13.249 assertion), focused stock 42/42 (458), Playwright
+  1.174/1.174 (13.257 assertion), focused release 25/25 (270), Playwright
   mobile/desktop 4/4, typecheck/build, migration rehearsal MySQL, database audit
   100, audit dependency nol, encrypted backup/checksum/disposable restore,
   service/journal, 0 migration pending, serta public/security smoke 3/3 lulus.
   Deploy memakai exception sempit yang disetujui Owner untuk satu failed job
   WhatsApp existing; tidak ada pesan customer/canary baru. Verifier read-only
-  lulus 16/17: satu-satunya mismatch adalah origin main masih
-  `0fcca39f82f58769dad472f6632f2923e7fac18c`, bukan runtime exact SHA. Opening
+  lulus 17/17 dengan origin main, manifest, dan runtime exact SHA sinkron. Opening
   stock nyata, authenticated Owner/Admin Cabang UAT, dan pilot belum dilakukan;
   `BUSINESS_READY=false`.
 

@@ -8,23 +8,21 @@ dalam satu dokumen public-safe.
 ## Konteks dan status bukti
 
 - Administrasi stok consumable S13–S24 aktif pada exact source
-  `a916e1b8980ca1c0dfbb6274b6cfd59af27850de`, immutable release
-  `20260826192333-a916e1b`, rollback `20260826182900-0fcca39`:
+  `2b22b835f7c72b96d569fd7c31e4aacdb56d4f49`, immutable release
+  `20260826201936-2b22b83`, rollback `20260826192333-a916e1b`:
   `CONFIRMED / UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
-  DATA_INTEGRITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
-  SOURCE_MAIN_PARITY_PENDING`.
+  DATA_INTEGRITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
   Halaman Pengaturan → Stok & Closing menyediakan branch selector, opening stock,
   restock, correction queue, approval/rejection, reversal append-only, dan
   histori. Admin Cabang menjadi maker; Owner/Manager berbeda menjadi checker.
   Optimistic lock menolak request basi, idempotency menjaga retry, saldo tidak
   dapat negatif, catatan menolak identifier customer, dan movement closing tetap
-  tunduk pada lifecycle closing. Full PHP 1.173/1.173, focused stock 42/42,
+  tunduk pada lifecycle closing. Full PHP 1.174/1.174, focused release 25/25,
   Playwright mobile/desktop 4/4, build/typecheck, migration MySQL disposable,
   database audit 100, dependency audit nol, encrypted backup/restore, service,
   migration, dan public/security smoke lulus. Narrow Owner-approved exception
-  hanya mencakup satu failed job WhatsApp existing. Verifier 16/17 menahan klaim
-  exact GitHub provenance karena origin main masih `0fcca39f...`; runtime aktif,
-  tabel/index/capability stok terverifikasi, tetapi opening stock nyata,
+  hanya mencakup satu failed job WhatsApp existing. Verifier 17/17 membuktikan
+  origin main, manifest, runtime, tabel/index/capability stok sinkron; opening stock nyata,
   authenticated UAT, dan pilot tetap gate terpisah.
 
 - Closing Operasional Studio V1 feature commit

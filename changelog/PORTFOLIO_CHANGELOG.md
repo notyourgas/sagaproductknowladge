@@ -95,17 +95,17 @@
 
 ## 2026-08-27 - SagaBook governed consumable stock administration
 
-- Exact source `a916e1b8980ca1c0dfbb6274b6cfd59af27850de` aktif pada release
-  `20260826192333-a916e1b`, rollback `20260826182900-0fcca39`, dan menambah
+- Exact source `2b22b835f7c72b96d569fd7c31e4aacdb56d4f49` aktif pada release
+  `20260826201936-2b22b83`, rollback `20260826192333-a916e1b`, dan menambah
   opening stock, restock, maker-checker correction, append-only reversal, dan
   histori stok per cabang dengan 1 pack kertas = 20 pcs.
 - Capability, tenant/cabang isolation, optimistic lock, idempotency,
   no-negative, audit, stale rejection, PII guard, dan lifecycle closing
-  tervalidasi melalui full PHP 1.173/1.173, focused stock 42/42, Playwright
+  tervalidasi melalui full PHP 1.174/1.174, focused release 25/25, Playwright
   mobile/desktop 4/4, MySQL rehearsal, encrypted restore, dan public smoke.
-- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
-  SOURCE_MAIN_PARITY_PENDING`. Runtime lulus; origin main masih pada source
-  sebelumnya. Opening stock nyata, authenticated UAT, pilot, dan business
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Verifier 17/17
+  membuktikan origin main, manifest, dan runtime sinkron. Opening stock nyata,
+  authenticated UAT, pilot, dan business
   readiness tetap belum dilakukan.
 
 ## 2026-08-26 - Snap and Fit connected synthetic prototype UAT
