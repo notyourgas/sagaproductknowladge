@@ -3504,7 +3504,15 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release aktif `20260826-5acbda3` menjalankan exact source
+Release aktif `20260826-ed5814f` menjalankan exact source
+`ed5814f23078f625a2e83f3c66ad476f2f327b91` dengan rollback
+`20260826-5acbda3`. Lima route CMS yang belum terverifikasi sekarang
+404/noindex dan tidak masuk sitemap. Verified content memakai metadata non-kosong
+pertama secara konsisten. Sitemap berisi 9 URL indexable; raw-HTML acceptance
+lulus 9 URL indexable dan 9 state noindex/missing. Readiness tetap 30/42 dengan
+12 blocker dan checkout disabled.
+
+Release sebelumnya `20260826-5acbda3` menjalankan exact source
 `5acbda312a08d195b6cf8d235440786570c92fd4` dengan rollback
 `20260826-ed81263`. Framer Motion tidak lagi berada pada initial static graph;
 video runtime dimuat saat section mendekati viewport dengan stable loading dan

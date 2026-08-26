@@ -78,7 +78,18 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260826-5acbda3` memakai source
+Release production terbaru `20260826-ed5814f` memakai source
+`ed5814f23078f625a2e83f3c66ad476f2f327b91` dan rollback
+`20260826-5acbda3`. Lima route CMS dengan payload publik `verified=false`
+sekarang 404/noindex, memiliki title aman yang tidak kosong, dan dikeluarkan
+dari sitemap. Konten terverifikasi memakai kandidat metadata non-kosong pertama
+secara konsisten pada renderer Laravel dan runtime React. Sitemap production
+berisi 9 URL indexable; raw-HTML acceptance lulus untuk 9 URL indexable dan 9
+state noindex/missing. Full regression, dependency audit, backup, rollback,
+workers, dan public smoke hijau. Readiness tetap 30/42 dengan 12 blocker dan
+checkout disabled.
+
+Release sebelumnya `20260826-5acbda3` memakai source
 `5acbda312a08d195b6cf8d235440786570c92fd4` dan rollback
 `20260826-ed81263`. Framer Motion dikeluarkan dari initial static dependency
 graph dan video tile memakai stable loading poster sebelum feature runtime

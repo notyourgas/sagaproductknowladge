@@ -12,12 +12,33 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-26T11:17:52+07:00 |
+| Waktu pembaruan terakhir | 2026-08-26T11:47:14+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | exact `origin/main` `b9460b6` sebelum sinkronisasi COYABAG storefront performance integrity |
-| Informasi terakhir disinkronkan | COYABAG storefront performance integrity immutable production release. |
+| Baseline sebelum pembaruan | exact `origin/main` `5702861` sebelum sinkronisasi COYABAG storefront SEO truthfulness integrity |
+| Informasi terakhir disinkronkan | COYABAG storefront SEO truthfulness immutable production release. |
 | Status sinkronisasi | `PRODUCTION_DEPLOYED`; commerce activation dan business readiness tetap `BLOCKED`. |
+
+## COYABAG storefront SEO truthfulness integrity
+
+- Exact source `ed5814f23078f625a2e83f3c66ad476f2f327b91` aktif pada immutable
+  release `20260826-ed5814f`; rollback `20260826-5acbda3`.
+- Lima route CMS unverified menjadi 404/noindex dan dikeluarkan dari sitemap;
+  verified content tetap mendapat metadata/schema yang route-correct.
+- Public raw-HTML acceptance lulus 9 URL indexable dan 9 state noindex/missing.
+  Full regression, dependency audit, workers, backup, rollback, dan smoke hijau.
+- Readiness tetap 30/42 dengan 12 blocker; checkout, activation, dan business
+  readiness tetap blocked.
+
+## File yang berubah pada sinkronisasi ini (COYABAG SEO truthfulness)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG storefront performance integrity
 

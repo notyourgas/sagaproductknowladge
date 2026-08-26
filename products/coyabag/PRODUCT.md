@@ -61,9 +61,15 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260826-5acbda3` dengan source
-  `5acbda312a08d195b6cf8d235440786570c92fd4` melayani production;
-  rollback langsung `20260826-ed81263` dipertahankan.
+- Release aktif `20260826-ed5814f` dengan source
+  `ed5814f23078f625a2e83f3c66ad476f2f327b91` melayani production;
+  rollback langsung `20260826-5acbda3` dipertahankan.
+- Route CMS dengan payload publik `verified=false` sekarang 404/noindex,
+  memiliki title aman yang tidak kosong, dan tidak masuk sitemap. Konten
+  terverifikasi tetap mendapat metadata dan structured data sesuai route.
+- Sitemap production berisi 9 URL indexable; raw-HTML acceptance lulus 9 URL
+  indexable serta 9 state noindex/missing tanpa URL preview lama.
+- Release sebelumnya `20260826-5acbda3` menjalankan performance integrity.
 - Runtime Framer Motion tidak lagi masuk initial static graph dan dimuat ketika
   section video mendekati viewport. Initial JavaScript turun dari 526.4 KiB ke
   403.0 KiB raw dan dari 149.5 KiB ke 109.7 KiB gzip tanpa menghapus video,

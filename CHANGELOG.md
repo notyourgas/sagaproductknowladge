@@ -1,5 +1,22 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-26 - COYABAG storefront SEO truthfulness sync
+
+- Ringkasan: sinkronisasi fail-closed SEO untuk CMS unverified, metadata
+  non-kosong, sitemap intentional, dan public raw-HTML acceptance.
+- Alasan: crawler tidak boleh mengindeks halaman atau klaim yang API publiknya
+  sudah dinyatakan belum terverifikasi.
+- Produk/area: COYABAG storefront SEO, CMS public contract, accessibility, QA,
+  security, DevOps, dan release provenance.
+- Klasifikasi: `CONFIRMED`; source exact
+  `ed5814f23078f625a2e83f3c66ad476f2f327b91`, release `20260826-ed5814f`.
+- Production berubah: ya, surface storefront. Delivery
+  `PRODUCTION_DEPLOYED`; activation/business readiness `BLOCKED`; commerce
+  tetap fail-closed pada 30/42 readiness dan 12 blocker.
+- Dokumen terdampak: Product, Dossier, changelog COYABAG, portfolio, master
+  knowledge, root changelog, dan sync status.
+- Next action: Cycle 2 Dashboard Admin Beranda Integrity.
+
 ## 2026-08-26 - COYABAG storefront performance integrity sync
 
 - Ringkasan: sinkronisasi deferred motion/video runtime, stable loading state,

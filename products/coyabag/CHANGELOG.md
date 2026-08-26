@@ -4,6 +4,18 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-26 - Storefront SEO truthfulness production release
+
+- Klasifikasi: `CONFIRMED` dari exact source
+  `ed5814f23078f625a2e83f3c66ad476f2f327b91`, immutable Hostinger release
+  `20260826-ed5814f`, rollback `20260826-5acbda3`, dan runtime verification.
+- Lima route CMS `verified=false` menjadi 404/noindex dengan fallback title aman
+  dan dikeluarkan dari sitemap; konten terverifikasi tetap indexable.
+- Public raw-HTML acceptance lulus 9 URL indexable dan 9 state noindex/missing.
+  Storefront 179/179 dan Laravel 410 pass/1 intentional skip dari 411 test lulus.
+- Delivery `PRODUCTION_DEPLOYED`; activation/business readiness `BLOCKED`;
+  readiness 30/42, 12 blocker, dan checkout tetap disabled.
+
 ## 2026-08-26 - Storefront performance integrity production release
 
 - Klasifikasi: `CONFIRMED` dari exact source

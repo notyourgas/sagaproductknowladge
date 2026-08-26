@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-26 - COYABAG storefront SEO truthfulness integrity
+
+- Exact source `ed5814f23078f625a2e83f3c66ad476f2f327b91` aktif pada immutable
+  Hostinger release `20260826-ed5814f` dengan rollback `20260826-5acbda3`.
+- Lima route CMS belum terverifikasi menjadi 404/noindex dan tidak lagi masuk
+  sitemap; verified content mempertahankan route-correct metadata/schema.
+- Raw-HTML acceptance lulus 9 URL indexable dan 9 state noindex/missing; full
+  regression, security audit, workers, backup, rollback, dan public smoke hijau.
+- Delivery `PRODUCTION_DEPLOYED`; activation/business readiness `BLOCKED`;
+  readiness 30/42 dan commerce tetap fail-closed.
+
 ## 2026-08-26 - COYABAG storefront performance integrity
 
 - Exact source `5acbda312a08d195b6cf8d235440786570c92fd4` aktif pada immutable
