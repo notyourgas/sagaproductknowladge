@@ -4,6 +4,23 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-27 - Featured product card clipping production fix
+
+- Klasifikasi: `CONFIRMED` dari exact source
+  `1d5912cd93d819d940612597edfe7e2095eba2e1`, immutable Hostinger release
+  `20260827-1d5912c`, rollback `20260827-1e9dcdd`, dan DOM/browser production
+  evidence.
+- Kartu pilihan utama sebelumnya dipaksa setinggi 218 piksel sehingga packshot,
+  metadata, dan swatch dapat terpotong. Layout sekarang vertikal dan
+  content-sized; frame media 4:3 memakai `object-fit: contain`.
+- Regression gate membuktikan empat kartu tidak mempunyai card/body clipping,
+  seluruh foto termuat, dan media berada di atas body pada 390, 768, 1440, dan
+  1920 piksel. Unit storefront 198/198, 110 kombinasi responsive produksi, dan
+  32 route accessibility juga lulus.
+- GitHub Actions exact SHA tidak memulai langkah karena account billing/spending
+  gate. Delivery `PRODUCTION_DEPLOYED`; readiness tetap 30/42 dengan 12
+  blocker, `commerceActivated=false`, dan business readiness `BLOCKED`.
+
 ## 2026-08-27 - Editorial storefront and curated gallery production release
 
 - Klasifikasi: `CONFIRMED` dari exact source

@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-27 - COYABAG featured product card clipping fix
+
+- Exact source `1d5912cd93d819d940612597edfe7e2095eba2e1` aktif pada immutable
+  release `20260827-1d5912c`; rollback `20260827-1e9dcdd` tersedia.
+- Kartu pilihan utama berubah dari layout horizontal setinggi tetap 218 piksel
+  menjadi kartu vertikal content-sized dengan packshot 4:3 `contain`, sehingga
+  foto, nama, harga, metadata, dan swatch tidak terpotong.
+- DOM production empat viewport, 198/198 unit storefront, 110 kombinasi
+  responsive live, 32 route accessibility, checksum/backup, public smoke,
+  worker, scheduler, dan log gate lulus. GitHub Actions exact SHA tidak memulai
+  langkah karena account runner gate.
+- Status `PRODUCTION_DEPLOYED`; readiness 30/42, 12 blocker,
+  `commerceActivated=false`, dan `BUSINESS_READY=false`.
+
 ## 2026-08-27 - SagaView S309 exact release evidence
 
 - Exact S308 `55ff2870af6e3b0ef09e5aaa347e765ce33f0099` kini memiliki

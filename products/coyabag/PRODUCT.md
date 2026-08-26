@@ -61,13 +61,16 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260827-1e9dcdd` dengan exact source
-  `1e9dcddb454be6857687f522a90d4a29f81ef341` melayani production;
-  rollback langsung `20260827-2dad82c` dipertahankan.
+- Release aktif `20260827-1d5912c` dengan exact source
+  `1d5912cd93d819d940612597edfe7e2095eba2e1` melayani production;
+  rollback langsung `20260827-1e9dcdd` dipertahankan.
 - Storefront memakai arah editorial yang lebih ringkas: navigasi utama
   Koleksi/Galeri/Tentang, hero deterministik, empat model unggulan, dan satu
   blok lifestyle dengan foto client nyata. Copy publik memakai bahasa
   Indonesia yang lebih langsung dan tidak menampilkan label proses internal.
+- Empat kartu model unggulan tidak lagi memakai tinggi tetap 218 piksel.
+  Packshot memakai frame 4:3 dengan `contain`, sedangkan nama, copy, harga,
+  metadata, dan swatch berada pada body vertikal yang tumbuh sesuai isi.
 - Gallery memuat 20 foto client terkurasi dengan 16 foto awal dan empat foto
   tambahan; Lookbook memuat delapan scene lifestyle. Payload CMS parsial
   digabung dan dideduplikasi dengan koleksi terkurasi, sedangkan URL media dan
@@ -81,7 +84,10 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
   checksum, backup, dan postdeploy log gate lulus.
 - Readiness tetap 30/42 dengan 12 blocker; `commerceActivated=false`, CI exact
   SHA tidak diklaim, dan business readiness tetap blocked.
-- Release aktif `20260827-2dad82c` dengan exact source
+- Release sebelumnya `20260827-1e9dcdd` menjalankan exact source
+  `1e9dcddb454be6857687f522a90d4a29f81ef341` dengan rollback
+  `20260827-2dad82c`.
+- Release sebelumnya `20260827-2dad82c` dengan exact source
   `2dad82c3e1cb41db2149915eb1977512e5fc6069` melayani production;
   rollback langsung `20260827-f2a238c` dipertahankan.
 - Checkout memiliki simulator pembayaran privat melalui capability bertanda

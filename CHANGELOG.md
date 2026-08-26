@@ -1,5 +1,22 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-27 - COYABAG featured product card clipping sync
+
+- Ringkasan: menyinkronkan perbaikan kartu model unggulan yang sebelumnya
+  terpotong oleh tinggi tetap 218 piksel dan immutable production release baru.
+- Alasan: foto, copy, harga, metadata, dan swatch harus tetap utuh pada mobile,
+  tablet, desktop, dan wide desktop.
+- Produk/area: COYABAG homepage product rail, responsive UI, accessibility,
+  QA, release, rollback, dan commerce boundary.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED`; exact source
+  `1d5912cd93d819d940612597edfe7e2095eba2e1`, release
+  `20260827-1d5912c`, rollback `20260827-1e9dcdd`.
+- Production berubah: ya. Commerce activation dan business readiness tidak
+  berubah; readiness tetap 30/42 dengan 12 blocker. GitHub Actions exact SHA
+  tidak memulai langkah karena account runner gate.
+- Dokumen terdampak: Product/changelog COYABAG, portfolio, master, root
+  changelog, dan sync status.
+
 ## 2026-08-27 - SagaView S309 release evidence sync
 
 - Ringkasan: menyinkronkan archive immutable, SHA-256 manifest, git bundle,

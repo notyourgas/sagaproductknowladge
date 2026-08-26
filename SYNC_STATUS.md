@@ -12,12 +12,36 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-27T02:12:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-27T02:28:36+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
-| Informasi terakhir disinkronkan | SagaView S309 release evidence untuk exact source `55ff2870af6e3b0ef09e5aaa347e765ce33f0099`, release `20260826190421-55ff287`. |
-| Status sinkronisasi | `PUSHED / LOCAL_VALIDATED / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah. |
+| Informasi terakhir disinkronkan | COYABAG featured product card clipping fix untuk exact source `1d5912cd93d819d940612597edfe7e2095eba2e1`, release `20260827-1d5912c`. |
+| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED`; commerce activation dan business readiness tetap blocked. |
+
+## COYABAG featured product card clipping fix
+
+- Exact source `1d5912cd93d819d940612597edfe7e2095eba2e1` aktif pada immutable
+  release `20260827-1d5912c`; rollback `20260827-1e9dcdd` tersedia.
+- Featured rail tidak lagi memakai kartu horizontal setinggi tetap 218 piksel.
+  Kartu vertikal content-sized memakai frame packshot 4:3 `contain` dan body
+  terpisah untuk nama, copy, harga, metadata, serta swatch.
+- DOM production membuktikan empat kartu tidak terpotong dan seluruh foto
+  termuat pada 390, 768, 1440, dan 1920 piksel. Unit 198/198, 110 kombinasi
+  responsive live, 32 route accessibility, checksum/backup, runtime, dan log
+  gate lulus. GitHub Actions exact SHA tidak memulai langkah karena account
+  runner gate.
+- Readiness 30/42 dengan 12 blocker. Delivery `PRODUCTION_DEPLOYED`;
+  `commerceActivated=false` dan `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi ini (COYABAG Featured Cards)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaView S309 exact release evidence
 
