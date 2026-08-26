@@ -4,6 +4,20 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-26 - Admin Produk publication context production release
+
+- Klasifikasi: `CONFIRMED` dari exact source
+  `3c2b8a73898798e825dcf71786bfc04200c75ad8`, immutable Hostinger release
+  `20260826-3c2b8a7`, rollback `20260826-312caf4`, dan runtime verification.
+- Save, publish, dan archive memakai product revision; publish juga mengikat
+  product, variant, dan media context di bawah row lock. Stale tab ditolak tanpa
+  mutasi dan draft lokal tetap tersedia untuk recovery.
+- Desktop/mobile memuat state revision, loaded, dirty, saving, conflict,
+  success, serta recovery. Focused regression, 424 Laravel test, full RC,
+  dependency audit, additive migration, workers, dan public smoke lulus.
+- Delivery `PRODUCTION_DEPLOYED`; activation/business readiness `BLOCKED`;
+  readiness 30/42, 12 blocker, dan checkout tetap disabled.
+
 ## 2026-08-26 - Admin Detail Pesanan payment review context production release
 
 - Klasifikasi: `CONFIRMED` dari exact source

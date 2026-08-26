@@ -61,9 +61,20 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260826-312caf4` dengan source
-  `312caf4a6051d341f8ee29c3ea90af7d4f07f89c` melayani production;
-  rollback langsung `20260826-c43e337` dipertahankan.
+- Release aktif `20260826-3c2b8a7` dengan source
+  `3c2b8a73898798e825dcf71786bfc04200c75ad8` melayani production;
+  rollback langsung `20260826-312caf4` dipertahankan.
+- Editor Produk memakai revision guard pada save, publish, dan archive. Publish
+  juga mengikat konteks produk, varian, dan media yang diamati operator; tab
+  lama ditolak tanpa mutasi dan draft lokal tetap tersedia untuk dipulihkan.
+- State revision, loaded time, dirty, saving, conflict, success, dan pemulihan
+  versi terbaru tervalidasi pada desktop/mobile. Migrasi revision bersifat
+  aditif dan media staging dipertahankan bila transaksi publish gagal.
+- 424 Laravel test, focused product regression, browser acceptance, full RC,
+  audit dependency, immutable deploy, dan public smoke lulus. Readiness tetap
+  30/42 dengan 12 blocker; checkout dan provider tetap fail-closed.
+- Release sebelumnya `20260826-312caf4` menjalankan Admin Detail Pesanan payment
+  review context integrity.
 - Detail Pesanan menggunakan satu aturan eligibility yang sama dengan antrean
   pembayaran. Operator melihat status siap atau tertahan beserta alasan aman;
   keputusan mengikat sesi pembayaran, bukti, dan status pesanan yang diamati
@@ -79,8 +90,7 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
   memasking nama pelanggan untuk role tanpa permission manajemen pesanan, dan
   memisahkan heartbeat operasional dari riwayat aktivitas integrasi.
 - Acceptance owner/finance desktop-mobile, 418 Laravel test, full RC, audit
-  dependency, immutable deploy, dan public smoke lulus. Readiness tetap 30/42
-  dengan 12 blocker; checkout dan provider tetap fail-closed.
+  dependency, immutable deploy, dan public smoke lulus pada release tersebut.
 - Release sebelumnya `20260826-c43e337` menjalankan Admin Pesanan payment triage
   and privacy integrity.
 - Release sebelumnya `20260826-b45eb8d` menjalankan Admin Beranda role and

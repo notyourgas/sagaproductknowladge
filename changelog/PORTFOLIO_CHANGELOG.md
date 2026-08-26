@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-26 - COYABAG Admin Produk publication context integrity
+
+- Exact source `3c2b8a73898798e825dcf71786bfc04200c75ad8` aktif pada immutable
+  release `20260826-3c2b8a7`; rollback `20260826-312caf4`.
+- Save, publish, dan archive Produk membawa revision yang dilihat operator.
+  Publish juga mengikat product, variant, dan media context; stale tab ditolak
+  tanpa mutasi dan menyediakan pemulihan versi terbaru.
+- Acceptance desktop/mobile, 424 Laravel test, full RC, dependency audit,
+  additive migration, backup, workers, dan public smoke lulus.
+- Status `PRODUCTION_DEPLOYED`; readiness tetap 30/42 dengan 12 blocker dan
+  commerce tetap fail-closed.
+
 ## 2026-08-26 - AOGTIVITY archived and Hostinger runtime retired
 
 - `CONFIRMED` melalui `DEC-107`: AOGTIVITY dan runtime legacy Olimpiade

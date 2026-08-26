@@ -1,5 +1,21 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-26 - COYABAG Admin Produk publication context sync
+
+- Ringkasan: menyinkronkan revision guard, publication-context guard, operator
+  conflict recovery, transactional media safety, dan release terbaru.
+- Alasan: tab lama tidak boleh menimpa detail atau mempublikasikan produk
+  berdasarkan varian/media yang sudah berubah.
+- Produk/area: COYABAG Admin Produk, publication workflow, concurrency,
+  responsive UI/UX, accessibility, database, QA, security, dan release.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED`; source exact
+  `3c2b8a73898798e825dcf71786bfc04200c75ad8`, release `20260826-3c2b8a7`.
+- Production berubah: ya, Admin runtime dan migrasi revision aditif. Commerce
+  tidak production-activated; readiness 30/42, 12 blocker, checkout disabled.
+- Dokumen terdampak: Product, Dossier, changelog COYABAG, portfolio, master
+  knowledge, root changelog, dan sync status.
+- Next action: Cycle 2 Dashboard Admin Varian Integrity.
+
 ## 2026-08-26 - AOGTIVITY archive and runtime retirement sync
 
 - Ringkasan: menyinkronkan keputusan founder untuk mengarsipkan AOGTIVITY dan

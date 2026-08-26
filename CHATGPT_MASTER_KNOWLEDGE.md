@@ -3529,9 +3529,18 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release aktif `20260826-312caf4` menjalankan exact source
-`312caf4a6051d341f8ee29c3ea90af7d4f07f89c` dengan rollback
-`20260826-c43e337`. Detail Pesanan dan antrean memakai satu eligibility
+Release aktif `20260826-3c2b8a7` menjalankan exact source
+`3c2b8a73898798e825dcf71786bfc04200c75ad8` dengan rollback
+`20260826-312caf4`. Save, publish, dan archive Produk membawa server revision;
+publish juga mengikat product, variant, dan media context di bawah row lock.
+Stale tab ditolak tanpa mutasi, draft lokal tetap terlihat, dan operator dapat
+membuka atau memuat versi terbaru. Desktop/mobile, 424 Laravel test, full RC,
+dependency audit, additive migration, backup, workers, dan public smoke lulus.
+Readiness tetap 30/42 dengan 12 blocker; checkout dan provider tetap
+fail-closed.
+
+Release sebelumnya `20260826-312caf4` menjalankan exact source
+`312caf4a6051d341f8ee29c3ea90af7d4f07f89c`. Detail Pesanan dan antrean memakai satu eligibility
 pembayaran. Review mengikat sesi, bukti, dan status order yang diamati; stale
 context ditolak di bawah lock tanpa mutasi. Operator melihat ready/blocked state
 dan alasan aman, Finance tetap menerima PII termasking, serta dialog memenuhi

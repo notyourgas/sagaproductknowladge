@@ -12,12 +12,34 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-26T14:55:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-26T15:09:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | exact `origin/main` `b5cb1834085d4d63670771b36c3b26472ceba87e` |
-| Informasi terakhir disinkronkan | AOGTIVITY archive dan Hostinger runtime retirement. |
-| Status sinkronisasi | `CONFIRMED / IMPLEMENTED / ARCHIVED / HOSTINGER_RUNTIME_RETIRED`. |
+| Baseline sebelum pembaruan | exact `origin/main` `a09065fc1d9a580063967ab92621ef8717b02b51` |
+| Informasi terakhir disinkronkan | COYABAG Admin Produk publication context integrity. |
+| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED`; activation dan business readiness `BLOCKED`. |
+
+## COYABAG Admin Produk publication context integrity
+
+- Exact source `3c2b8a73898798e825dcf71786bfc04200c75ad8` aktif pada immutable
+  release `20260826-3c2b8a7`; rollback `20260826-312caf4`.
+- Save, publish, dan archive membawa revision yang diamati operator. Publish
+  juga mengikat context produk, varian, dan media di bawah row lock; stale tab
+  ditolak tanpa mutasi dan draft lokal tetap tersedia untuk recovery.
+- State desktop/mobile, focused regression, 424 Laravel test, full RC,
+  dependency audit, additive migration, backup, workers, dan public smoke
+  lulus. Readiness tetap 30/42 dengan 12 blocker; checkout, activation, dan
+  business readiness tetap blocked.
+
+## File yang berubah pada sinkronisasi ini (COYABAG Admin Produk)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## AOGTIVITY archive dan Hostinger runtime retirement
 

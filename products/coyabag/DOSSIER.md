@@ -78,17 +78,27 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260826-312caf4` memakai source
-`312caf4a6051d341f8ee29c3ea90af7d4f07f89c` dan rollback
-`20260826-c43e337`. Detail Pesanan dan antrean pembayaran memakai satu aturan
+Release production terbaru `20260826-3c2b8a7` memakai source
+`3c2b8a73898798e825dcf71786bfc04200c75ad8` dan rollback
+`20260826-312caf4`. Save, publish, dan archive Produk sekarang memakai revision
+server serta row lock. Publish juga memverifikasi satu context hash untuk
+produk, varian, dan media yang dilihat operator. Tab stale ditolak tanpa mutasi,
+draft lokal dipertahankan, dan operator mendapat tindakan aman untuk membuka
+atau memuat versi terbaru. Media staging tetap tersedia ketika transaksi
+publish rollback. Acceptance desktop/mobile, 424 Laravel test, full RC, audit
+dependency, migrasi aditif, backup, rollback, workers, dan public smoke hijau.
+Readiness tetap 30/42 dengan 12 blocker dan checkout disabled.
+
+Release sebelumnya `20260826-312caf4` memakai source
+`312caf4a6051d341f8ee29c3ea90af7d4f07f89c`. Detail Pesanan dan antrean
+pembayaran memakai satu aturan
 eligibility server. Operator melihat state siap atau tertahan dengan alasan
 aman; keputusan mengikat sesi pembayaran, bukti, dan status order yang diamati,
 kemudian menolak konteks tab lama di bawah lock tanpa mutasi. Dialog mendukung
 focus trap, Escape, pengembalian fokus, dan announcement yang sesuai state;
 Finance tetap menerima PII termasking. Acceptance owner/finance desktop-mobile,
 418 Laravel test, full RC, audit dependency, backup, rollback, workers, dan
-public smoke hijau. Readiness tetap 30/42 dengan 12 blocker dan checkout
-disabled.
+public smoke hijau pada release tersebut.
 
 Release sebelumnya `20260826-c43e337` memakai source
 `c43e337e18178588748c9f154e9f3c5791554ff6`. Admin Pesanan hanya memasukkan sesi dengan bukti yang
