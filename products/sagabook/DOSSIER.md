@@ -7,20 +7,25 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Administrasi stok consumable S13–S24 exact source
-  `c21d9378e0ea0bd0352cd59ffb63b4499154093a`, PR #15: `CONFIRMED / PUSHED /
-  UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
-  DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- Administrasi stok consumable S13–S24 aktif pada exact source
+  `a916e1b8980ca1c0dfbb6274b6cfd59af27850de`, immutable release
+  `20260826192333-a916e1b`, rollback `20260826182900-0fcca39`:
+  `CONFIRMED / UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+  SOURCE_MAIN_PARITY_PENDING`.
   Halaman Pengaturan → Stok & Closing menyediakan branch selector, opening stock,
   restock, correction queue, approval/rejection, reversal append-only, dan
   histori. Admin Cabang menjadi maker; Owner/Manager berbeda menjadi checker.
   Optimistic lock menolak request basi, idempotency menjaga retry, saldo tidak
   dapat negatif, catatan menolak identifier customer, dan movement closing tetap
-  tunduk pada lifecycle closing. Full PHP 1.172/1.172, focused 10/10,
-  Playwright mobile/desktop 4/4, build/typecheck/design, migration database
-  disposable, dan audit dependency nol lulus. Production tidak berubah;
-  authenticated UAT, merge/release, migration production, opening stock nyata,
-  activation, dan pilot tetap gate terpisah.
+  tunduk pada lifecycle closing. Full PHP 1.173/1.173, focused stock 42/42,
+  Playwright mobile/desktop 4/4, build/typecheck, migration MySQL disposable,
+  database audit 100, dependency audit nol, encrypted backup/restore, service,
+  migration, dan public/security smoke lulus. Narrow Owner-approved exception
+  hanya mencakup satu failed job WhatsApp existing. Verifier 16/17 menahan klaim
+  exact GitHub provenance karena origin main masih `0fcca39f...`; runtime aktif,
+  tabel/index/capability stok terverifikasi, tetapi opening stock nyata,
+  authenticated UAT, dan pilot tetap gate terpisah.
 
 - Closing Operasional Studio V1 feature commit
   `89e440138536eba7ad0e1042ffb4a031e07fd3e4` sudah merge melalui PR #14 dan

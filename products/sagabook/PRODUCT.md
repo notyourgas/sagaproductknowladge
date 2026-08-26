@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 27 Agustus 2026 01:45 WIB
-Evidence status: staff action integrity production-activated; stock administration belum dideploy
+Updated: 27 Agustus 2026 02:30 WIB
+Evidence status: stock administration production-activated; source main parity pending
 
 ## Tujuan dokumen
 
@@ -34,20 +34,26 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated staff UAT
   dan dua studio pilot tetap diperlukan sehingga `BUSINESS_READY=false`.
 
-- Administrasi stok consumable S13–S24 exact source
-  `c21d9378e0ea0bd0352cd59ffb63b4499154093a` pada PR #15 berstatus
-  `CONFIRMED / PUSHED / UIUX_VALIDATED / QA_VALIDATED /
-  SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED`. Owner/Manager dapat mengatur stok awal per cabang,
+- Administrasi stok consumable S13–S24 aktif pada exact source
+  `a916e1b8980ca1c0dfbb6274b6cfd59af27850de`, immutable release
+  `20260826192333-a916e1b`, dengan rollback `20260826182900-0fcca39`.
+  Status `CONFIRMED / UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+  SOURCE_MAIN_PARITY_PENDING`. Owner/Manager dapat mengatur stok awal per cabang,
   Admin Cabang dapat restock dan mengajukan koreksi hitung fisik, sedangkan
   approval wajib dilakukan actor berbeda. Reversal membuat mutasi lawan tanpa
   menghapus histori; movement closing tidak dapat dibatalkan dari halaman stok.
   Input kertas memakai 1 pack = 20 pcs. Optimistic lock, idempotency, no-negative,
   capability, tenant/cabang isolation, audit, dan PII guard tervalidasi. Full PHP
-  1.172/1.172 (13.236 assertion), focused 10/10 (70), Playwright mobile/desktop
-  4/4, typecheck/build/design/Pint, serta audit dependency nol lulus. Production
-  kini exact release `0fcca39...`; migration stok, opening stock nyata, authenticated
-  UAT, merge/release, activation, dan pilot belum dilakukan sehingga
+  1.173/1.173 (13.249 assertion), focused stock 42/42 (458), Playwright
+  mobile/desktop 4/4, typecheck/build, migration rehearsal MySQL, database audit
+  100, audit dependency nol, encrypted backup/checksum/disposable restore,
+  service/journal, 0 migration pending, serta public/security smoke 3/3 lulus.
+  Deploy memakai exception sempit yang disetujui Owner untuk satu failed job
+  WhatsApp existing; tidak ada pesan customer/canary baru. Verifier read-only
+  lulus 16/17: satu-satunya mismatch adalah origin main masih
+  `0fcca39f82f58769dad472f6632f2923e7fac18c`, bukan runtime exact SHA. Opening
+  stock nyata, authenticated Owner/Admin Cabang UAT, dan pilot belum dilakukan;
   `BUSINESS_READY=false`.
 
 - Closing Operasional Studio V1 feature commit

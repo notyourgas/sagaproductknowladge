@@ -18,17 +18,21 @@ rollback `20260826164130-69cb913`; authenticated staff UAT dan dua studio pilot
 tetap exit gate `BUSINESS_READY`.
 
 Administrasi stok consumable S13–S24 exact source
-`c21d9378e0ea0bd0352cd59ffb63b4499154093a` telah `CONFIRMED / PUSHED /
+`a916e1b8980ca1c0dfbb6274b6cfd59af27850de` telah `CONFIRMED /
 UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
-DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+DATA_INTEGRITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+SOURCE_MAIN_PARITY_PENDING`.
 Coverage membuktikan opening stock satu kali, konversi 1 pack/20 pcs, restock,
 maker-checker correction, rejection tanpa mutasi, stale protection, reversal
 append-only, no-negative, permission/tenant/cabang, idempotency retry, audit,
-PII-safe note, dan proteksi movement closing. Full PHP 1.172/1.172 (13.236),
-focused stock 10/10 (70), focused stock+closing+release 39/39 (332), Playwright
-mobile/desktop 4/4, typecheck/build/design/Pint, migration disposable, serta
-audit dependency nol lulus. Merge/release, authenticated Owner/Admin Cabang UAT,
-opening stock nyata, activation, dan pilot tetap gate; `BUSINESS_READY=false`.
+PII-safe note, dan proteksi movement closing. Full PHP 1.173/1.173 (13.249),
+focused stock 42/42 (458), Playwright mobile/desktop 4/4, typecheck/build,
+migration MySQL disposable, DB audit 100, encrypted backup/restore, dependency,
+service/journal, dan public/security smoke lulus. Release
+`20260826192333-a916e1b` aktif dengan rollback `20260826182900-0fcca39`.
+Verifier 16/17 hanya menahan remote-main parity; authenticated Owner/Admin
+Cabang UAT, opening stock nyata, dan pilot tetap exit gate
+`BUSINESS_READY=false`.
 
 Busy state aksi jadwal staff S293 exact source
 `4e2267c98f68b5be6e4a7f794b2c7431581fe98b` telah `CONFIRMED / PUSHED /

@@ -39,16 +39,19 @@ atau perubahan production. Artifact/rehearsal exact S308 kemudian ditutup oleh
 S309; authenticated UAT, backup/restore, dan approval deploy masih terpisah.
 
 SagaBook administrasi stok consumable S13–S24 exact source
-`c21d9378e0ea0bd0352cd59ffb63b4499154093a`, PR #15, sudah `PUSHED /
-LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Owner/Manager mengatur opening
+`a916e1b8980ca1c0dfbb6274b6cfd59af27850de` aktif pada immutable release
+`20260826192333-a916e1b` dengan rollback `20260826182900-0fcca39`; status
+`PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / SOURCE_MAIN_PARITY_PENDING`.
+Owner/Manager mengatur opening
 stock per cabang; Admin Cabang restock dan mengajukan koreksi fisik untuk
 direview actor berbeda. Reversal append-only tidak menghapus histori dan
 movement closing tidak dapat dibatalkan dari layar stok. Satu pack kertas
 selalu 20 pcs. Permission, tenant/cabang, optimistic lock, idempotency,
-no-negative, audit, stale rejection, dan PII guard tervalidasi. Production
-tetap release `20260826164130-69cb913` dengan closing feature off; merge/deploy,
-opening stock nyata, authenticated UAT, activation, pilot, dan business
-readiness masih gate.
+no-negative, audit, stale rejection, dan PII guard tervalidasi. Full test,
+browser, MySQL rehearsal, backup/restore, migration, service, dan public smoke
+lulus. Narrow Owner-approved exception hanya untuk satu failed job WhatsApp
+existing. Runtime exact SHA aktif, tetapi origin main masih `0fcca39f...`;
+opening stock nyata, authenticated UAT, pilot, dan business readiness masih gate.
 
 SagaBook Closing Operasional Studio V1 feature commit
 `89e440138536eba7ad0e1042ffb4a031e07fd3e4` sudah merge melalui PR #14 dan

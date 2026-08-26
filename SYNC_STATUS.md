@@ -144,18 +144,21 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 ## SagaBook Consumable Stock Administration S13–S24
 
-- Exact source `c21d9378e0ea0bd0352cd59ffb63b4499154093a`, PR #15, menyediakan
+- Exact source `a916e1b8980ca1c0dfbb6274b6cfd59af27850de` aktif pada immutable
+  release `20260826192333-a916e1b`; rollback `20260826182900-0fcca39`
+  tersedia. Fitur menyediakan
   opening stock, restock, maker-checker correction, approval/rejection,
   append-only reversal, dan histori stok per cabang.
 - Satu pack kertas = 20 pcs. Capability, tenant/cabang isolation, optimistic
   lock, idempotency, no-negative, audit, stale protection, PII-safe note, dan
   proteksi movement closing tervalidasi.
-- Full PHP 1.172/1.172, focused 10/10, Playwright mobile/desktop 4/4,
-  build/typecheck/design/Pint, migration database disposable, serta audit
-  dependency nol lulus.
-- Source sudah push dan PR terbuka, tetapi belum merge/deploy. Opening stock
-  nyata, authenticated UAT, activation, pilot, dan business readiness tetap
-  gate terpisah.
+- Full PHP 1.173/1.173, focused stock 42/42, Playwright mobile/desktop 4/4,
+  build/typecheck, migration MySQL disposable, DB audit 100, encrypted
+  backup/restore, dependency, service/journal, dan public/security smoke lulus.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+  SOURCE_MAIN_PARITY_PENDING`. Runtime exact SHA dan tabel/index/capability
+  terverifikasi; origin main masih `0fcca39f...`. Opening stock nyata,
+  authenticated UAT, pilot, dan business readiness tetap gate terpisah.
 
 ## File yang berubah pada sinkronisasi ini (SagaBook Stock Administration)
 

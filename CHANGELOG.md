@@ -94,12 +94,14 @@
   menggandakan saldo saat retry.
 - Produk/area: SagaBook inventory ledger, permission, database, admin UI,
   closing lifecycle, QA, security, dan release governance.
-- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED`; source
-  `c21d9378e0ea0bd0352cd59ffb63b4499154093a`, PR #15.
-- Production berubah: tidak. Merge/deploy, migration production, opening stock
-  nyata, authenticated UAT, activation, dan pilot masih gate;
-  `BUSINESS_READY=false`.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+  SOURCE_MAIN_PARITY_PENDING`; exact source
+  `a916e1b8980ca1c0dfbb6274b6cfd59af27850de`, release
+  `20260826192333-a916e1b`, rollback `20260826182900-0fcca39`.
+- Production berubah: ya. Runtime, migration, backup/restore, dan public smoke
+  lulus dengan narrow Owner-approved exception untuk satu failed job WhatsApp
+  existing. Origin main masih pada `0fcca39f...`; opening stock nyata,
+  authenticated UAT, dan pilot masih gate; `BUSINESS_READY=false`.
 - Dokumen terdampak: Product, Dossier, SagaBook changelog/ledger, portfolio,
   master, Decisions, root changelog, dan sync status.
 
