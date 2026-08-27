@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-08-27 - SagaBook S299 stale stock recovery
+
+- Exact source `a235261f446ebbdbd066fbafabd04e17cbece07d` memperluas PR #19.
+- Refresh stok yang gagal kini menandai saldo terakhir sebagai data lama,
+  menampilkan waktu sinkronisasi, dan mengunci seluruh mutasi sampai retry sukses.
+- PHP 10/10, browser desktop/mobile/tablet 15/15, TypeScript/build/design dan
+  audit dependency lulus. Status `PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production SagaBook tidak berubah.
+
 ## 2026-08-27 - COYABAG last order recovery deployed
 
 - Exact source `773362fc4d10c871503adcc35427061158be043a` aktif pada immutable

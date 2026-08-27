@@ -1,6 +1,19 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 27 Agustus 2026 07:20 WIB
+Evidence cut-off: 27 Agustus 2026 09:20 WIB
+
+Recovery snapshot stok basi S299 exact source
+`a235261f446ebbdbd066fbafabd04e17cbece07d` telah `CONFIRMED / PUSHED /
+UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+Coverage membuktikan refresh gagal mempertahankan saldo terakhir hanya sebagai
+referensi berlabel stale, seluruh mutasi stok terkunci, dan retry sukses
+mengganti saldo authoritative serta membuka kembali aksi. Focused PHP 10/10
+(70 assertion), browser desktop/mobile/tablet 15/15 tanpa overflow, focused
+TypeScript, production build, design audit 26 artefak, dependency audit nol,
+syntax, dan diff check lulus. Merge/release, authenticated UAT, opening stock
+nyata, kapasitas host development, dan pilot masih menjadi gate; production
+tetap `2b22b835` / `20260826201936-2b22b83` dan `BUSINESS_READY=false`.
 
 Isolasi snapshot stok antarcabang S298 exact source
 `3c355f5ab279ec889369c2e87bbf7e30d89c0d60` telah `CONFIRMED / PUSHED /

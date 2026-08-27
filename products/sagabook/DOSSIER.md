@@ -7,6 +7,17 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Recovery snapshot stok basi S299 exact source
+  `a235261f446ebbdbd066fbafabd04e17cbece07d` memperluas PR #19 dengan state
+  stale eksplisit. Saldo lama tetap tersedia sebagai referensi saat refresh
+  cabang aktif gagal, tetapi opening stock, restock, correction, approval,
+  rejection, dan reversal dikunci sampai pembacaan authoritative berhasil.
+  Waktu sinkronisasi terakhir dan live status membantu operator memahami
+  provenance data. Browser desktop/mobile/tablet 15/15, focused PHP 10/10,
+  TypeScript/build/design/dependency/diff gate lulus. Status `CONFIRMED /
+  PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak
+  berubah dan maintenance Git lanjutan menunggu pemulihan kapasitas host.
+
 - Hardening isolasi snapshot stok antarcabang S298 exact source
   `3c355f5ab279ec889369c2e87bbf7e30d89c0d60` mencegah saldo cabang sebelumnya
   tetap tampil ketika load cabang baru gagal dan mencegah respons request lama

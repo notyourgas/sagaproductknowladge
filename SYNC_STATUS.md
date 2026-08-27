@@ -12,12 +12,35 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-27T09:15:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-27T09:20:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
-| Informasi terakhir disinkronkan | COYABAG last order recovery pada exact source `773362fc4d10c871503adcc35427061158be043a`. |
-| Status sinkronisasi | `CONFIRMED / PUSHED / PRODUCTION_DEPLOYED`; surface production berubah, commerce production tetap blocked. |
+| Informasi terakhir disinkronkan | SagaBook S299 stale stock recovery pada exact source `a235261f446ebbdbd066fbafabd04e17cbece07d`. |
+| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production SagaBook tidak berubah. |
+
+## SagaBook S299 stale stock recovery
+
+- Kegagalan refresh cabang aktif mempertahankan saldo terakhir hanya sebagai
+  referensi berlabel stale dengan waktu sinkronisasi terakhir.
+- Opening stock, restock, correction, approval, rejection, dan reversal
+  terkunci sampai retry authoritative berhasil.
+- Focused PHP 10/10, browser desktop/mobile/tablet 15/15, TypeScript, build,
+  design audit, npm/Composer audit, syntax, dan diff check lulus.
+- Exact source `a235261f446ebbdbd066fbafabd04e17cbece07d` sudah push pada PR #19;
+  belum merge dan belum deploy. Production tetap `2b22b835` /
+  `20260826201936-2b22b83`. Maintenance Git lanjutan menunggu pemulihan ruang
+  host development secara aman.
+
+## File yang berubah pada sinkronisasi SagaBook S299
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG last order recovery
 

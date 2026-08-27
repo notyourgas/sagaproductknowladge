@@ -1,5 +1,21 @@
 # SagaBook Changelog
 
+## 2026-08-27 - Recovery snapshot stok basi S299
+
+- Exact source `a235261f446ebbdbd066fbafabd04e17cbece07d` pada PR #19
+  menandai snapshot sebagai stale ketika refresh cabang aktif gagal, menjaga
+  saldo terakhir sebagai referensi, dan menampilkan waktu sinkronisasi terakhir.
+- Seluruh aksi mutasi stok dikunci selama loading atau stale dan baru dibuka
+  setelah retry authoritative berhasil; ini mencegah keputusan berdasarkan
+  saldo lama tanpa menghilangkan konteks operasional.
+- Focused PHP 10/10 (70 assertion), Playwright desktop 5/5 dan mobile/tablet
+  10/10, focused TypeScript, build 5.151 modul, design audit 26 artefak,
+  npm/Composer audit nol, node syntax, dan diff check lulus.
+- Status `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+  Production tetap exact source `2b22b835f7c72b96d569fd7c31e4aacdb56d4f49`,
+  release `20260826201936-2b22b83`. Host development kehabisan ruang; inventaris
+  dan pembersihan aman diperlukan sebelum maintenance Git atau release lanjutan.
+
 ## 2026-08-27 - Isolasi snapshot stok antarcabang S298
 
 - Exact source `3c355f5ab279ec889369c2e87bbf7e30d89c0d60` pada PR #19

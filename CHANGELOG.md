@@ -1,5 +1,22 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-27 - SagaBook S299 stale stock recovery sync
+
+- Ringkasan: menyinkronkan state stale, waktu sinkronisasi terakhir, dan lock
+  seluruh aksi stok sampai retry authoritative berhasil.
+- Alasan: saldo lama masih berguna sebagai konteks, tetapi tidak boleh menjadi
+  dasar mutasi tanpa label dan recovery yang jelas.
+- Produk/area: SagaBook stock administration, frontend recovery, accessibility,
+  QA, security, dan data integrity.
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; exact source
+  `a235261f446ebbdbd066fbafabd04e17cbece07d`, PR #19.
+- Production berubah: tidak; tetap exact source `2b22b835` dan release
+  `20260826201936-2b22b83`. Kapasitas host development harus dipulihkan aman
+  sebelum maintenance Git atau release lanjutan.
+- Dokumen terdampak: Product, Dossier, changelog dan ledger SagaBook,
+  portfolio, root changelog, serta sync status.
+
 ## 2026-08-27 - COYABAG last order recovery production sync
 
 - Ringkasan: menyinkronkan akses kembali ke pembayaran/status terakhir setelah

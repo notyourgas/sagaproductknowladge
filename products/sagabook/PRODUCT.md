@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 27 Agustus 2026 07:20 WIB
-Evidence status: stock administration production-activated; S297 merged; S298 branch-isolation candidate, not deployed
+Updated: 27 Agustus 2026 09:20 WIB
+Evidence status: stock administration production-activated; S297 merged; S298-S299 stock recovery candidate, not deployed
 
 ## Tujuan dokumen
 
@@ -15,6 +15,18 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- Recovery snapshot stok basi S299 pada exact source
+  `a235261f446ebbdbd066fbafabd04e17cbece07d` memperluas PR #19 di atas S298.
+  Jika refresh cabang aktif gagal, saldo terakhir tetap terlihat hanya sebagai
+  referensi berlabel `Data lama`, waktu sinkronisasi terakhir ditampilkan, dan
+  seluruh aksi mutasi stok dikunci sampai retry berhasil. Focused PHP 10/10
+  (70 assertion), browser desktop/mobile/tablet 15/15, focused TypeScript,
+  build, design audit 26 artefak, npm/Composer audit nol, syntax, dan diff check
+  lulus. Status `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah. Host development sedang
+  kehabisan ruang sehingga maintenance Git lanjutan dan release harus menunggu
+  inventaris serta pembersihan aman.
 
 - Hardening isolasi snapshot stok antarcabang S298 pada exact source
   `3c355f5ab279ec889369c2e87bbf7e30d89c0d60` tersedia di PR #19 dengan
