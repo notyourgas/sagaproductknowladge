@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-28 - SagaBook S309 post-payment return release held
+
+- Exact main `bd16dbe5ae7399c934e0252c66a4736ce2e6b618` mempertahankan public
+  booking slug tenant pada detail, transfer, QRIS, reschedule, dan callback
+  provider sehingga pembayaran sukses tidak lagi diarahkan ke path 404 tanpa
+  tenant.
+- Full PHP 1.190/1.190, focused contracts, browser mobile/desktop,
+  accessibility, build/typecheck/format, dan audit dependency lulus. Archive,
+  bundle, encrypted backup, checksum, dan disposable restore juga lulus.
+- Deploy berhenti fail-closed sebelum aktivasi karena audit menemukan agregat
+  2 delivery WhatsApp yatim atau lintas tenant. Production lama tetap sehat;
+  status `PUSHED / LOCAL_VALIDATED / RELEASE_BLOCKED /
+  IMPLEMENTED_NOT_DEPLOYED`, `BUSINESS_READY=false`.
+
 ## 2026-08-27 - SagaView S320 archive media identity guard
 
 - Exact pushed source `387e0d52771403b49a13b67893096135c247e3e2`
