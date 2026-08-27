@@ -61,9 +61,13 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260827-beecd6f` dengan exact source
-  `beecd6f76584557defd6822d36d2efd39473e18f` melayani production;
-  rollback langsung `20260827-7213892` dipertahankan.
+- Release aktif `20260827-be8fc09` dengan exact source
+  `be8fc09710e26e49512f181904dff576f93a23dd` melayani production;
+  rollback langsung `20260827-beecd6f` dipertahankan.
+- Admin Beranda memperbarui seluruh ringkasan melalui snapshot terautentikasi,
+  permission-gated, rate-limited, dan private/no-store. Kegagalan refresh
+  mempertahankan snapshot valid terakhir dan memberi recovery state aksesibel,
+  sehingga operator tidak menerima angka kosong akibat gangguan sementara.
 - Kontrak metadata tunggal lima route inti sudah `PRODUCTION_DEPLOYED`.
   Laravel dan React memakai kontrak title/description/schema yang sama,
   kontrak tidak lengkap gagal tertutup ke `noindex`, dan initial JavaScript

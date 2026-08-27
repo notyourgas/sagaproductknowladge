@@ -4,6 +4,21 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-27 - Admin dashboard safe refresh deployed
+
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED`; exact source
+  `be8fc09710e26e49512f181904dff576f93a23dd`, immutable release
+  `20260827-be8fc09`, dan rollback `20260827-beecd6f`.
+- Admin Beranda memakai snapshot refresh terautentikasi, permission-gated,
+  rate-limited, serta private/no-store. Layar hanya diganti oleh payload lengkap
+  berstatus siap; kegagalan mempertahankan snapshot terakhir.
+- Loading, success, error, keyboard focus, dan reduced-motion tersedia pada
+  desktop/mobile. Owner dan Finance tetap menerima data sesuai permission.
+- Storefront 215/215, Laravel 451 total dengan 450 pass, satu skip, 4.268
+  assertion, browser acceptance, security/dependency, build, checksum, backup,
+  atomic switch, dan public smoke lulus. Commerce tetap fail-closed pada 30/42
+  checks dengan 12 blocker.
+
 ## 2026-08-27 - Core storefront SEO contract production release
 
 - Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED`; exact source

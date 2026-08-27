@@ -78,14 +78,20 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260827-beecd6f` memakai exact source
-`beecd6f76584557defd6822d36d2efd39473e18f` dan rollback
-`20260827-7213892`. Hero homepage tetap memakai campaign full-bleed monokrom
+Release production terbaru `20260827-be8fc09` memakai exact source
+`be8fc09710e26e49512f181904dff576f93a23dd` dan rollback
+`20260827-beecd6f`. Admin Beranda kini menyegarkan ringkasan melalui endpoint
+snapshot terautentikasi yang memiliki permission gate, rate limit, dan cache
+private/no-store. Payload baru hanya mengganti layar setelah lengkap dan siap;
+kegagalan mempertahankan metrik, readiness, dan pesanan terakhir dengan status
+pemulihan aksesibel. Hero homepage tetap memakai campaign full-bleed monokrom
 versi sebelumnya dengan headline `BAGS FOR THE SCENE`, crop `cover`, gradient
 teks, dan proporsi desktop 461–521 piksel. Carousel, CTA, featured card, serta
 Gallery share navigation dari release sebelumnya tetap dipertahankan.
-Storefront 215/215, navigation 16 skenario, 110 kombinasi responsive, 32 route
-accessibility desktop/mobile, dan hero live 390/768/1440/1920 piksel lulus.
+Storefront 215/215 dan Laravel 451 total dengan 450 pass, satu skip, 4.268
+assertion lulus. Navigation 16 skenario, 110 kombinasi responsive, 32 route
+accessibility desktop/mobile, Admin Beranda owner/finance desktop/mobile, dan
+simulasi refresh gagal yang mempertahankan snapshot juga lulus.
 GitHub Actions exact SHA tidak memulai job akibat billing/spending limit, jadi
 CI tidak diklaim hijau. Filter serta preview Gallery kini disinkronkan ke URL yang
 dapat dibagikan. Browser Back menutup dialog dan memulihkan fokus, deep link

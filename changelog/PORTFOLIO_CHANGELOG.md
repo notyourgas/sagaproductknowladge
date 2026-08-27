@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-27 - COYABAG Admin dashboard safe refresh deployed
+
+- Exact source `be8fc09710e26e49512f181904dff576f93a23dd` aktif pada immutable
+  release `20260827-be8fc09`; rollback `20260827-beecd6f` tersedia.
+- Admin Beranda sekarang memperbarui snapshot operasional secara atomik.
+  Refresh gagal mempertahankan data terakhir dan memberi status pemulihan
+  aksesibel pada desktop/mobile.
+- Permission, rate limit, private/no-store cache, error sanitization, 451 test
+  Laravel, 215 test storefront, full browser/security/build gate, backup, dan
+  public smoke lulus. Readiness commerce tetap 30/42 dengan 12 blocker.
+
 ## 2026-08-27 - SagaBook S302 release backup-binding preflight
 
 - Exact source `9a35240428ef9a7087bf9a9a535d5cb73e277f3f` pada PR #21

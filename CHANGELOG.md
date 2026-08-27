@@ -1,5 +1,21 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-27 - COYABAG Admin dashboard safe refresh sync
+
+- Ringkasan: menyinkronkan snapshot refresh atomik yang mempertahankan data
+  terakhir saat dashboard Admin mengalami kegagalan sementara.
+- Alasan: partial reload sebelumnya dapat kehilangan bagian kontrak dashboard
+  atau mengganti snapshot valid dengan fallback error.
+- Produk/area: COYABAG Admin Beranda, permission, privacy cache, recovery UI,
+  accessibility, QA, security, dan release operations.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED`; exact source
+  `be8fc09710e26e49512f181904dff576f93a23dd`, immutable release
+  `20260827-be8fc09`, rollback `20260827-beecd6f`.
+- Production berubah melalui atomic switch tanpa mutasi commerce. Readiness
+  tetap 30/42 dengan 12 blocker; payment/provider dan checkout tetap terkunci.
+- Dokumen terdampak: Product/Dossier/changelog COYABAG, portfolio, master,
+  root changelog, dan sync status.
+
 ## 2026-08-27 - SagaBook S302 release preflight sync
 
 - Ringkasan: menyinkronkan validasi pointer backup, restore receipt, dan exact

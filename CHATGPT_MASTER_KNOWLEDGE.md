@@ -3678,9 +3678,11 @@ owner 2FA, legal, backup restore, dan provider UAT selesai.
 
 Delivery: `PRODUCTION_DEPLOYED`. Activation dan business readiness: `BLOCKED`.
 
-Kontrak metadata tunggal lima route inti sudah `PRODUCTION_DEPLOYED` pada exact
-source `beecd6f76584557defd6822d36d2efd39473e18f`, immutable release
-`20260827-beecd6f`, dan rollback `20260827-7213892`. Initial HTML Laravel dan
+Admin Beranda safe refresh sudah `PRODUCTION_DEPLOYED` pada exact source
+`be8fc09710e26e49512f181904dff576f93a23dd`, immutable release
+`20260827-be8fc09`, dan rollback `20260827-beecd6f`. Refresh memakai snapshot
+terautentikasi dan permission-gated; payload gagal tidak mengganti data valid
+terakhir. Kontrak metadata tunggal lima route inti tetap aktif. Initial HTML Laravel dan
 hydration React kini konsisten, kontrak tidak lengkap gagal tertutup ke
 `noindex`, dan CSS hero tetap mempertahankan visual campaign sambil kembali
 lulus budget. Public smoke desktop/mobile lulus. Commerce tetap fail-closed
@@ -3695,9 +3697,9 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release aktif `20260827-beecd6f` menjalankan exact source
-`beecd6f76584557defd6822d36d2efd39473e18f` dengan rollback
-`20260827-7213892`. Hero homepage memakai komposisi campaign full-bleed
+Release aktif `20260827-be8fc09` menjalankan exact source
+`be8fc09710e26e49512f181904dff576f93a23dd` dengan rollback
+`20260827-beecd6f`. Hero homepage memakai komposisi campaign full-bleed
 hitam-putih versi sebelumnya dengan headline `BAGS FOR THE SCENE`, crop
 `cover`, gradient keterbacaan, dan proporsi desktop 461–521 piksel. Storefront
 215/215, navigation 16 skenario, 110 responsive combinations, 32 route
