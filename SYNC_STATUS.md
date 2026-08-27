@@ -12,12 +12,33 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-27T10:20:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-27T10:28:12+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
-| Informasi terakhir disinkronkan | SagaBook S300 stale stock dialog recovery pada exact source `d4dbae8e851c26a03c677cfee188f15fac630991`. |
-| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah. |
+| Informasi terakhir disinkronkan | COYABAG Gallery share navigation pada exact source `324a2506694c42c9ae82ccd9f7041f314640e84c`. |
+| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED`; commerce tetap fail-closed. |
+
+## COYABAG Gallery share navigation
+
+- Exact source `324a2506694c42c9ae82ccd9f7041f314640e84c` aktif pada immutable
+  release `20260827-324a250`; rollback `20260827-160e423` tersedia.
+- URL menyimpan filter dan preview Gallery. Browser Back memulihkan konteks dan
+  fokus, valid hidden-item deep link terbuka, dan stale link gagal tertutup.
+- Storefront 213/213, Laravel 447, Gallery desktop/mobile, accessibility,
+  responsive, security, backup, workers, dan public smoke lulus.
+- Readiness tetap 30/42 dengan 12 blocker; commerce/provider production tetap
+  fail-closed dan tidak ada mutasi CMS atau data commerce saat acceptance.
+
+## File yang berubah pada sinkronisasi ini (COYABAG Gallery Navigation)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook S300 stale stock dialog recovery
 

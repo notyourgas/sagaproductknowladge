@@ -4,6 +4,21 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-27 - Gallery share navigation deployed
+
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED` dari exact source
+  `324a2506694c42c9ae82ccd9f7041f314640e84c`, immutable release
+  `20260827-324a250`, dan rollback `20260827-160e423`.
+- Filter dan preview Gallery kini memiliki URL kanonik yang dapat dibagikan.
+  Browser Back menutup dialog dan mengembalikan fokus; deep link valid membuka
+  foto di luar batas awal, sedangkan tautan usang gagal tertutup dengan status
+  pemulihan yang jelas.
+- Storefront 213/213, Laravel 447, acceptance Gallery desktop/mobile, full RC,
+  security audit, 32 accessibility checks, 110 responsive combinations,
+  backup, worker, dan public smoke lulus.
+- Readiness tetap 30/42 dengan 12 blocker. Commerce/provider tetap fail-closed
+  dan acceptance tidak mengubah CMS, order, payment, shipping, atau stock.
+
 ## 2026-08-27 - Order access privacy recovery deployed
 
 - Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED` dari exact source

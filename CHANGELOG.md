@@ -1,5 +1,21 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-27 - COYABAG Gallery share navigation production sync
+
+- Ringkasan: menyinkronkan URL filter/preview Gallery, browser Back dan focus
+  recovery, valid hidden-item deep link, serta stale-link fail-closed recovery.
+- Alasan: customer perlu dapat membagikan dan kembali ke konteks Gallery tanpa
+  kehilangan state atau diarahkan ke konten pengganti yang tidak pasti.
+- Produk/area: COYABAG Gallery, navigation, responsive UI, accessibility,
+  performance, QA, DevOps, dan provenance.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED`; exact source
+  `324a2506694c42c9ae82ccd9f7041f314640e84c`, release
+  `20260827-324a250`, rollback `20260827-160e423`.
+- Production berubah: ya pada UI storefront; commerce tetap 30/42 dengan 12
+  blocker dan acceptance tidak mengubah CMS atau data commerce produksi.
+- Dokumen terdampak: Product/Dossier/changelog COYABAG, portfolio, master, root
+  changelog, dan sync status.
+
 ## 2026-08-27 - SagaBook S300 stale stock dialog recovery sync
 
 - Ringkasan: menyinkronkan recovery mutation stok yang mempertahankan draft,

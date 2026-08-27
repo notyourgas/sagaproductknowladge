@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-27 - COYABAG Gallery share navigation deployed
+
+- Exact source `324a2506694c42c9ae82ccd9f7041f314640e84c` aktif pada immutable
+  release `20260827-324a250`; rollback `20260827-160e423` tersedia.
+- Filter dan preview Gallery dapat dibagikan melalui URL; Back memulihkan
+  konteks/fokus, deep link membuka foto valid yang tersembunyi dari batas awal,
+  dan tautan usang gagal tertutup tanpa menebak konten.
+- Storefront 213/213, Laravel 447, desktop/mobile, accessibility, responsive,
+  security, backup, workers, dan public smoke lulus.
+- Status `PRODUCTION_DEPLOYED`; readiness tetap 30/42, 12 blocker, dan commerce
+  nyata tetap fail-closed.
+
 ## 2026-08-27 - SagaBook S300 stale stock dialog recovery
 
 - Exact source `d4dbae8e851c26a03c677cfee188f15fac630991` memperbarui PR #19.

@@ -61,9 +61,13 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260827-160e423` dengan exact source
-  `160e423948d4587a6895c73d84dd2acf49311b20` melayani production;
-  rollback langsung `20260827-773362f` dipertahankan.
+- Release aktif `20260827-324a250` dengan exact source
+  `324a2506694c42c9ae82ccd9f7041f314640e84c` melayani production;
+  rollback langsung `20260827-160e423` dipertahankan.
+- Filter dan preview Gallery kini tersimpan pada URL yang dapat dibagikan.
+  Browser Back menutup preview dan mengembalikan fokus, deep link membuka foto
+  valid di luar batas awal, dan tautan item usang dipulihkan tanpa menebak foto
+  pengganti. Flow publik desktop/mobile lulus tanpa mutasi CMS atau commerce.
 - Order Status kini menyediakan kontrol untuk menghapus akses pesanan dari tab
   aktif setelah detail terbuka atau saat kode tersimpan tidak valid. Hanya kode
   sesi yang cocok dan query URL yang dibersihkan; pesanan server tidak
