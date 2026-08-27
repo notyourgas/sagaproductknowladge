@@ -34,6 +34,17 @@
   sebelum step akibat billing akun dan production tetap `1a69dce2` /
   `20260827050516-1a69dce`.
 
+## 2026-08-27 - SagaView S317 output-volume eligibility recovery
+
+- Exact Studio `ab985bbcb6168f142bdd4806d0d3549c96f00c25` membuat
+  ringkasan UAT membedakan fixed NTFS yang layak dari removable custody secara
+  agregat tanpa drive atau path.
+- Actual preflight menemukan dua fixed NTFS, nol yang memenuhi minimum, dan
+  kapasitas terbesar 6,60 GiB; 247 unit, build/type/lint, budget, privacy scan,
+  serta dependency audit nol lulus.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+  tidak berubah dan `BUSINESS_READY=false`.
+
 ## 2026-08-27 - SagaView S316 physical UAT runtime closure
 
 - Exact production backend `cd7288d3` dan Studio `7ae79ae4` terbukti clean,

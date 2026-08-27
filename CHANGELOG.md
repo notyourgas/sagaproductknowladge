@@ -19,6 +19,22 @@
 - Dokumen terdampak: Product, Dossier, ledger/changelog SagaBook, portfolio,
   master knowledge, root changelog, dan sync status.
 
+## 2026-08-27 - SagaView S317 volume eligibility sync
+
+- Ringkasan: menyinkronkan inventori agregat fixed NTFS/removable pada recovery
+  physical UAT.
+- Alasan: operator tidak boleh memakai media custody sebagai output hanya
+  karena kapasitasnya lebih besar.
+- Produk/area: SagaView Studio, Windows physical UAT, storage recovery,
+  privacy, security, QA, dan release operations.
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; exact source
+  `ab985bbcb6168f142bdd4806d0d3549c96f00c25`.
+- Production, API, database, payment, foto/path/output customer, dan produk
+  lain tidak berubah; `BUSINESS_READY=false`.
+- Dokumen terdampak: Product, changelog, ledger SagaView, portfolio, root
+  changelog, dan sync status.
+
 ## 2026-08-27 - SagaView S316 runtime evidence closure sync
 
 - Ringkasan: menyinkronkan penutupan delapan blocker checkout,

@@ -12,12 +12,12 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-27T19:14:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-27T19:16:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
-| Informasi terakhir disinkronkan | SagaBook S308 production activation untuk integrated stock/release hardening S302-S307. |
-| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; `BUSINESS_READY=false` menunggu authenticated UAT dan pilot. |
+| Informasi terakhir disinkronkan | SagaBook S308 production activation serta SagaView S317 output-volume eligibility. |
+| Status sinkronisasi | SagaBook `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; SagaView `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; keduanya `BUSINESS_READY=false`. |
 
 ## SagaBook S308 production activation
 
@@ -39,6 +39,27 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `products/sagabook/CHANGELOG.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
+
+## SagaView S317 physical UAT output-volume eligibility
+
+- Exact Studio `ab985bbcb6168f142bdd4806d0d3549c96f00c25` menambahkan
+  jumlah fixed NTFS, jumlah yang memenuhi 10 GiB, kapasitas fixed terbesar,
+  serta jumlah removable secara agregat ke ringkasan operator.
+- Actual physical preflight mencatat dua fixed NTFS, nol yang memenuhi minimum,
+  kapasitas terbesar 6,60 GiB, dan satu removable. Receipt tetap tanpa drive,
+  path, credential, foto, identifier, atau data customer.
+- Focused 21/21, full unit 247/247, format/lint/typecheck/build/budget,
+  PowerShell syntax, privacy scan, dan npm audit nol lulus.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Production
+  tetap backend/Owner `20260826210546-cd7288d` dan Studio
+  `20260824170456-7ae79ae`; `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi ini (SagaView S317)
+
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHANGELOG.md`
 - `SYNC_STATUS.md`
 
