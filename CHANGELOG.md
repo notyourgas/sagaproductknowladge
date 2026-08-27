@@ -1,5 +1,22 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-28 - SagaView S324 cumulative candidate sync
+
+- Ringkasan: menyinkronkan satu exact cumulative candidate yang menggabungkan
+  perbaikan keterlihatan Console/Bantuan dengan custody release tooling.
+- Alasan: status belum deploy sebelumnya terpecah pada dua source candidate;
+  S324 memberi provenance tunggal untuk gate rilis berikutnya.
+- Produk/area: SagaView Owner Console, accessibility, release operations,
+  privacy/security, QA, dan provenance.
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED / PRODUCTION_UNCHANGED`; exact
+  source `21058a0de1d4a0f2742c45d2c706b8d43bd6df0c`.
+- Backend 226/226, Playwright Owner 26/26 plus focused 2/2, custody 20/20,
+  build, dan dependency audit nol lulus. Tidak ada deploy, data customer,
+  payment, atau perubahan produk lain.
+- Dokumen terdampak: Product, feature ledger, changelog SagaView, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-08-28 - SagaView S323 mobile Support Hub label sync
 
 - Ringkasan: menyinkronkan label launcher Support Hub yang kini terlihat jelas

@@ -1,5 +1,26 @@
 # SagaView Changelog
 
+## 2026-08-28 - S324 cumulative release candidate
+
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED / PRODUCTION_UNCHANGED`.
+- Before: perbaikan keterlihatan Console/Bantuan S323 dan custody tooling S321
+  berada pada source candidate terpisah, sehingga belum ada satu exact commit
+  kumulatif untuk gate rilis berikutnya.
+- After: exact merge source `21058a0de1d4a0f2742c45d2c706b8d43bd6df0c`
+  menggabungkan parent `32eea103eee5fba88d70c6ed5f8eb493b19988eb`
+  dan `6e11c9168a95b1176c715fa9779341f5ca823f00` tanpa konflik atau source dirty.
+- Acceptance: backend 226/226 (3.678 assertion), Playwright Owner 26/26 plus
+  focused desktop/mobile 2/2, custody S320 10/10, enrollment S321 10/10,
+  build 5.097 modul, Composer audit nol advisory, dan npm audit nol
+  vulnerability lulus pada exact commit.
+- Boundary: tidak ada API, migration, database, foto/path/output customer,
+  payment, deploy, activation, atau perubahan produk lain. Production tetap
+  pada S311 dan `BUSINESS_READY=false`.
+- Next gate: hadirkan media custody yang terotorisasi, buat immutable archive,
+  manifest, dan bundle dengan salinan terpisah, lalu jalankan backup/restore,
+  rehearsal, UAT, dan approval deploy terpisah.
+
 ## 2026-08-28 - S323 mobile Support Hub launcher label
 
 - Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /

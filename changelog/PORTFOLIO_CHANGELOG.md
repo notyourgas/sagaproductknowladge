@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-28 - SagaView S324 cumulative release candidate
+
+- Exact pushed merge `21058a0de1d4a0f2742c45d2c706b8d43bd6df0c`
+  menyatukan perbaikan keterlihatan tombol Console/Bantuan dengan custody
+  release tooling pada satu worktree bersih.
+- Backend 226/226, Playwright Owner 26/26 plus focused 2/2, custody 20/20,
+  build 5.097 modul, dan Composer/npm audit nol lulus.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  RELEASE_BLOCKED / PRODUCTION_UNCHANGED`; media custody, artifact terpisah,
+  backup/restore, rehearsal, UAT, dan approval deploy masih pending.
+
 ## 2026-08-28 - SagaView S323 mobile Support Hub label
 
 - Exact pushed source `32eea103eee5fba88d70c6ed5f8eb493b19988eb`
