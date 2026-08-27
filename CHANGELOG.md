@@ -1,5 +1,24 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-27 - SagaBook S308 production release sync
+
+- Ringkasan: menyinkronkan production activation integrated stock/release
+  hardening S302-S307 melalui exact merged main
+  `7e190cefbec7d3ee60b825bf61741ba81415f2e6`.
+- Alasan: kandidat yang sebelumnya hanya local-validated kini memiliki fresh
+  backup/restore, immutable artifact, atomic switch, rollback, dan runtime
+  verification lengkap.
+- Produk/area: SagaBook Stok & Closing, release operations, backup/restore,
+  migration safety, security, QA, dan data integrity.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+  release `20260827120312-7e190ce`, rollback
+  `20260827050516-1a69dce`.
+- Verifier 17/17, DB audit 100, 0 migration pending, 0 queue error, dan
+  public/security smoke 3/3 lulus tanpa release exception. Authenticated UAT,
+  opening stock nyata, pilot, dan `BUSINESS_READY` tetap pending.
+- Dokumen terdampak: Product, Dossier, ledger/changelog SagaBook, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-08-27 - SagaView S317 volume eligibility sync
 
 - Ringkasan: menyinkronkan inventori agregat fixed NTFS/removable pada recovery

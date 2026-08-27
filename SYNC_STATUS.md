@@ -16,8 +16,29 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
-| Informasi terakhir disinkronkan | SagaView S317 output-volume eligibility exact source `ab985bbcb6168f142bdd4806d0d3549c96f00c25`. |
-| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production SagaView tidak berubah dan `BUSINESS_READY=false`. |
+| Informasi terakhir disinkronkan | SagaBook S308 production activation serta SagaView S317 output-volume eligibility. |
+| Status sinkronisasi | SagaBook `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; SagaView `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; keduanya `BUSINESS_READY=false`. |
+
+## SagaBook S308 production activation
+
+- Exact main `7e190cefbec7d3ee60b825bf61741ba81415f2e6` aktif pada immutable
+  release `20260827120312-7e190ce`; rollback
+  `20260827050516-1a69dce` tersedia.
+- Fresh encrypted backup/offsite/disposable restore, exact receipt,
+  archive/manifest/bundle, full release gate, DB audit 100, verifier 17/17,
+  dan public/security smoke 3/3 lulus tanpa release exception.
+- S302-S307 kini `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
+  Authenticated Owner/Admin Cabang UAT, opening stock nyata, dan pilot belum
+  selesai; `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi ini (SagaBook S308)
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
 
 ## SagaView S317 physical UAT output-volume eligibility
 

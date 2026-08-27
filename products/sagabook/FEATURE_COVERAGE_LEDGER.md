@@ -1,18 +1,98 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 27 Agustus 2026 13:08 WIB
+Evidence cut-off: 27 Agustus 2026 19:14 WIB
+
+Release production S308 exact source
+`7e190cefbec7d3ee60b825bf61741ba81415f2e6` telah `CONFIRMED / PUSHED /
+QA_VALIDATED / SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
+LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Immutable
+release `20260827120312-7e190ce` aktif dengan rollback
+`20260827050516-1a69dce`. Fresh encrypted backup `20260827T115701Z`, offsite
+checksum round-trip, disposable restore, exact-commit receipt, archive,
+manifest, SHA256SUMS, dan verified git bundle lulus. Release gate mengulang
+full PHP, build, recovery, browser persistence, dan dependency audit sebelum
+atomic switch. Verifier independen 17/17, snapshot stabil, DB audit 100,
+0 migration pending, 0 queue error, serta public/security smoke 3/3 lulus
+tanpa release exception. Authenticated Owner/Admin Cabang UAT, opening stock
+nyata, dan pilot belum dilakukan; `BUSINESS_READY=false`.
+
+Kandidat integrasi release/stock S307 exact source
+`86211797e51a9201401158c7c35ea1985505a931` pada PR #30 telah
+`CONFIRMED / PUSHED / QA_VALIDATED / SECURITY_VALIDATED /
+DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED`.
+Empat exact head `40caa45a`, `87a9dd93`, `578305c7`, dan `bd5806e0` menjadi
+ancestor kandidat di atas exact main `1a69dce2`; merge deterministik tidak
+memiliki konflik file. Fresh focused release+stock 26/26 (152 assertion),
+MySQL 8.4.9 disposable 10/10 (70), full PHP 1.179/1.179 (13.305), clean
+Composer/npm install, build 5.132 modul, typecheck, design 26/0, dependency
+audit nol, stock browser mobile+desktop 4/4 pada database disposable terpisah,
+visual smoke 26/26, syntax, ancestry, dan diff check lulus. PR mergeable;
+GitHub Actions gagal sebelum step akibat billing akun; exact main `7e190cef`
+aktif melalui S308. Authenticated UAT dan pilot belum dilakukan;
+`BUSINESS_READY=false`.
+
+Acceptance MySQL stok consumable S306 exact source
+`bd5806e0137c1be95296314b4b8134912430f20d` pada PR #28 telah
+`CONFIRMED / PUSHED / QA_VALIDATED / SECURITY_VALIDATED /
+DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED`.
+Disposable MySQL 8.4.9 menjalankan `migrate:fresh`, kontrak stok 10/10
+(70 assertion), dan cleanup aman; probe menolak driver, versi, atau nama
+database yang tidak sesuai. Full PHP 1.175/1.175 (13.279), visual smoke
+desktop/mobile 26/26, dua clean install/build 5.132 modul, typecheck, design
+26/0, npm/Composer audit nol, dan syntax lulus. Dependency `react-is` dikunci
+ke React 18 untuk menutup clean-build failure Recharts; snapshot QRIS mobile
+dikoreksi dari baseline lama ke assertion fee Rp236 yang sudah berlaku.
+GitHub Actions gagal sebelum satu pun step berjalan karena billing akun;
+exact main `7e190cef` aktif melalui S308. Authenticated pilot UAT belum
+dilakukan; `BUSINESS_READY=false`.
+
+Real-API conflict recovery UAT stok consumable S305 exact source
+`578305c7127503f9ceffc3baf0fd60380ff4e775` pada PR #25 telah
+`CONFIRMED / PUSHED / QA_VALIDATED / SECURITY_VALIDATED /
+DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED`.
+Coverage browser tanpa interception membuktikan konflik optimistic lock nyata
+dari Laravel: Admin Cabang mempertahankan draft satu pack dan alasan setelah
+HTTP 409, membaca ulang saldo authoritative 120, merebase proyeksi 140, lalu
+retry dengan idempotency key yang sama dan lock version terbaru. Read-after-write
+serta reload berakhir pada 140 pcs dan tepat tiga mutasi append-only tanpa
+duplikasi. Cabang Dimas tetap hanya Kemang. Desktop 1440x900 dan mobile 390x844
+lulus keyboard, dialog semantics, target 44px, forced-colors, reduced-motion,
+dan no-overflow. Focused PHP 10/10 (70 assertion), full PHP 1.175/1.175
+(13.279 assertion), build 5.132 modul, typecheck, design 26/0, npm/Composer
+audit nol, syntax, dan diff check lulus. Exact main `7e190cef` aktif melalui
+S308; authenticated pilot UAT belum dilakukan dan `BUSINESS_READY=false`.
+
+Synthetic UAT stok consumable S304 exact source
+`87a9dd93488d3f63171bbe8137c78dc9a117fd2c` pada PR #23 telah
+`CONFIRMED / PUSHED / QA_VALIDATED / SECURITY_VALIDATED /
+DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED`.
+Coverage browser tanpa mock membuktikan alur React -> API Laravel -> capability
+role/cabang -> SQLite disposable -> read-after-write untuk Owner dan Admin
+Cabang. Opening 40 kertas + 30 packaging, restock satu pack menjadi 60,
+request koreksi 57 yang tidak langsung mengubah saldo, penolakan akses review
+dan cabang lain, approval Owner menjadi 57, reload persistence, movement
+append-only, serta replay idempotent tanpa mutasi ganda lulus pada 1440x900 dan
+390x844 tanpa overflow. Focused PHP 10/10 (70 assertion), full PHP 1.175/1.175
+(13.279 assertion), build, typecheck, design 26/0, npm audit nol, Composer audit
+nol, syntax, dan diff check lulus. Exact main `7e190cef` aktif melalui S308;
+authenticated UAT dengan akun pilot dan opening stock nyata belum dilakukan;
+`BUSINESS_READY=false`.
 
 Preflight binding backup release dua tahap S302-S303 exact source
 `40caa45a98ef9f3269368f10983572fb6c897659` telah `CONFIRMED / PUSHED /
-QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
-IMPLEMENTED_NOT_DEPLOYED`. Coverage membuktikan binding yang valid lulus;
+QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED`. Coverage membuktikan binding yang valid lulus;
 pointer drift, checksum receipt salah, dan candidate commit berbeda gagal
 tertutup dengan reason aman; pemeriksaan berjalan sebelum packaging dan
 diulang setelah gate lokal tepat sebelum upload pertama. Full PHP 1.179/1.179
 (13.305 assertion), focused release 13/13 (112 assertion), PowerShell syntax/runtime, build,
 typecheck, design 26/0, Pint, npm audit nol, Composer audit nol, ancestry, dan
-diff check lulus. Tidak ada runtime/schema/data/flag yang berubah; production
-tetap `1a69dce2` / `20260827050516-1a69dce` dan `BUSINESS_READY=false`.
+diff check lulus. Kontrak ini aktif melalui S308 exact `7e190cef` /
+`20260827120312-7e190ce`; `BUSINESS_READY=false`.
 
 Kontrak restore receipt S301 dan kandidat gabungan S297-S300 exact main
 `1a69dce2e3fec4aa9b0b0f84d3249256a788b848` telah `CONFIRMED / PUSHED /
@@ -43,7 +123,7 @@ atau hilang gagal tertutup. Focused PHP 10/10 (70 assertion), browser
 mobile/tablet/desktop 18/18 tanpa overflow, focused TypeScript, production
 build, design audit 26 artefak, npm/Composer audit nol, syntax, dan diff check
 lulus. Authenticated Owner/Admin Cabang UAT, opening stock nyata, dan pilot
-  masih gate; release aktif `20260827050516-1a69dce` dan
+  masih gate; release aktif `20260827120312-7e190ce` dan
   `BUSINESS_READY=false`.
 
 Recovery snapshot stok basi S299 exact source

@@ -1,5 +1,91 @@
 # SagaBook Changelog
 
+## 2026-08-27 - S302-S307 production activation melalui S308
+
+- PR #30 merged sebagai exact main
+  `7e190cefbec7d3ee60b825bf61741ba81415f2e6`; semua exact head S302-S307
+  menjadi ancestor dan migration delta dari runtime sebelumnya nol.
+- Fresh encrypted backup `20260827T115701Z`, offsite checksum round-trip,
+  disposable MySQL restore, receipt exact-commit, immutable archive,
+  SHA-256 manifest, dan verified git bundle lulus.
+- Release gate exact commit mengulang full PHP, build, recovery/browser
+  persistence, serta dependency audit sebelum atomic switch. Immutable release
+  `20260827120312-7e190ce` aktif dengan rollback
+  `20260827050516-1a69dce`.
+- Verifier independen 17/17, DB audit 100, 0 migration pending, 0 queue error,
+  service aktif, serta public/security smoke 3/3 lulus tanpa release exception.
+  Status `CONFIRMED / PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`; authenticated Owner/Admin Cabang UAT, opening stock
+  nyata, dan pilot masih membuat `BUSINESS_READY=false`.
+
+## 2026-08-27 - Kandidat integrasi release dan stok S307
+
+- Exact source `86211797e51a9201401158c7c35ea1985505a931` pada PR #30
+  menggabungkan PR #21, #23, #25, dan #28 dalam urutan deterministik di atas
+  exact main `1a69dce2`; semua head menjadi ancestor dan tidak ada konflik file.
+- Fresh gate gabungan lulus: focused 26/26 (152 assertion), disposable MySQL
+  8.4.9 10/10 (70), full PHP 1.179/1.179 (13.305), clean install, build 5.132
+  modul, typecheck, design 26/0, dependency audit nol, stock UAT mobile+desktop
+  4/4 pada database terisolasi, dan visual smoke 26/26.
+- Satu percobaan yang memakai satu database untuk dua spec stateful menemukan
+  collision fixture; gate final memisahkan setiap spec/project ke database
+  disposable sesuai kontrak runner dan seluruh 4/4 lulus.
+- PR #30 kemudian merged dan diaktifkan melalui S308 pada exact source
+  `7e190cef` / release `20260827120312-7e190ce`. Actions tetap gagal sebelum
+  step karena billing, tetapi local/VPS equivalent gates lulus.
+
+## 2026-08-27 - Acceptance MySQL stok dan clean-build recovery S306
+
+- Exact source `bd5806e0137c1be95296314b4b8134912430f20d` pada PR #28 menambahkan
+  harness disposable MySQL 8.4 untuk migration, kontrak stok, probe lingkungan,
+  serta cleanup fail-closed; job MySQL CI kini memanggil kontrak stok langsung.
+- MySQL 8.4.9 lulus 10/10 test (70 assertion), full PHP lulus 1.175/1.175
+  (13.279), visual desktop/mobile 26/26, dan dua clean install/build memproses
+  5.132 modul. Typecheck, design 26/0, syntax, npm serta Composer audit nol.
+- Clean build Recharts dipulihkan dengan dependency `react-is` yang kompatibel
+  React 18. Snapshot QRIS mobile yang tertinggal diselaraskan dengan assertion
+  aktif: fee Rp236 dan total Rp100.236; tidak ada perubahan UI runtime.
+- Status `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. GitHub Actions gagal sebelum step berjalan karena
+  billing akun. Production tetap exact `1a69dce2` / release
+  `20260827050516-1a69dce`.
+
+## 2026-08-27 - Real-API conflict recovery UAT stok S305
+
+- Exact source `578305c7127503f9ceffc3baf0fd60380ff4e775` pada PR #25 menambah
+  acceptance browser tanpa API interception untuk optimistic-lock conflict
+  stok consumable antara Owner dan Admin Cabang pada SQLite disposable.
+- HTTP 409 nyata mempertahankan draft satu pack dan alasan, refresh
+  authoritative memperbarui saldo menjadi 120 dan proyeksi 140, lalu retry
+  memakai idempotency key yang sama serta lock version terbaru. Read-after-write
+  dan reload membuktikan 140 pcs, tepat tiga mutasi append-only, dan nol
+  duplikasi; scope Admin Cabang tetap hanya Kemang.
+- Desktop 1/1 dan mobile 1/1 lulus dengan keyboard, dialog semantics, target
+  44px, forced-colors, reduced-motion, dan no-overflow. Focused PHP 10/10 (70
+  assertion), full PHP 1.175/1.175 (13.279 assertion), build 5.132 modul,
+  critical typecheck, design 26/0, npm/Composer audit nol, syntax, dan diff
+  check lulus.
+- Status `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+  Production tetap exact `1a69dce2` pada release
+  `20260827050516-1a69dce`; authenticated pilot UAT dan `BUSINESS_READY` masih
+  menjadi gate terpisah.
+
+## 2026-08-27 - Synthetic Owner/Admin Cabang stock UAT S304
+
+- Exact source `87a9dd93488d3f63171bbe8137c78dc9a117fd2c` pada PR #23 menambahkan
+  acceptance browser tanpa API mock yang menghubungkan React, API Laravel,
+  capability role/cabang, dan SQLite disposable.
+- Opening 40 kertas + 30 packaging, restock satu pack menjadi 60, request
+  koreksi 57 yang tetap menahan saldo, denial review/cabang lain, approval
+  Owner, reload persistence, movement append-only, dan replay idempotent lulus
+  pada desktop 1440x900 serta mobile 390x844 tanpa overflow.
+- Focused PHP 10/10 (70 assertion), full PHP 1.175/1.175 (13.279 assertion),
+  build, critical typecheck, design 26/0, npm audit nol, Composer audit nol,
+  syntax, dan diff check lulus.
+- Status `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+  Harness tidak mengubah runtime; production tetap exact `1a69dce2` pada
+  release `20260827050516-1a69dce` dan `BUSINESS_READY=false`.
+
 ## 2026-08-27 - Preflight backup dua tahap sebelum upload gate S303
 
 - Exact source `40caa45a98ef9f3269368f10983572fb6c897659` memperbarui PR #21 dengan

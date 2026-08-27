@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 27 Agustus 2026 13:08 WIB
-Evidence status: S302-S303 two-phase release preflight pushed but not deployed; stock administration and S297-S301 remain production-activated; business readiness still pending authenticated UAT and pilot
+Updated: 27 Agustus 2026 19:14 WIB
+Evidence status: S302-S307 stock and release hardening is production-deployed and production-activated through S308; business readiness still pending authenticated pilot UAT
 
 ## Tujuan dokumen
 
@@ -16,6 +16,69 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
+- Release production S308 exact merged source
+  `7e190cefbec7d3ee60b825bf61741ba81415f2e6` aktif pada immutable release
+  `20260827120312-7e190ce`, dengan rollback
+  `20260827050516-1a69dce`. PR #30 telah merged dan semua exact head
+  S302-S307 menjadi ancestor main. Fresh encrypted backup
+  `20260827T115701Z`, offsite checksum round-trip, disposable MySQL restore,
+  receipt exact-commit, archive/manifest/SHA-256, dan verified git bundle
+  lulus. Release gate exact commit mengulang full PHP, build, recovery,
+  browser persistence, dan dependency audit sebelum atomic switch. Verifier
+  independen 17/17, DB audit 100, 0 migration pending, 0 queue error,
+  service aktif, serta public/security smoke 3/3 lulus tanpa release
+  exception. Status `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated Owner/Admin
+  Cabang UAT, opening stock nyata, dan pilot tetap membuat
+  `BUSINESS_READY=false`.
+
+- Integrasi S307 exact source
+  `86211797e51a9201401158c7c35ea1985505a931` pada PR #30 menggabungkan
+  exact head S302-S303, S304, S305, dan S306 di atas exact main `1a69dce2`
+  tanpa konflik file atau commit yang hilang. Fresh combined gate lulus:
+  focused 26/26 (152 assertion), disposable MySQL 8.4.9 10/10 (70), full PHP
+  1.179/1.179 (13.305), clean install, build 5.132 modul, typecheck, design
+  26/0, dependency audit nol, stock browser 4/4 pada database terisolasi, dan
+  visual smoke 26/26. PR #30 telah merged ke exact main `7e190cef`; GitHub
+  Actions gagal sebelum step berjalan karena billing akun, sehingga gate
+  lokal/VPS ekuivalen dipakai. Status `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` melalui S308.
+
+- Acceptance MySQL stok S306 exact source
+  `bd5806e0137c1be95296314b4b8134912430f20d` pada PR #28 menambahkan
+  harness disposable MySQL 8.4 yang memverifikasi migration dari kosong,
+  kontrak stok, versi server/database yang benar, dan cleanup fail-closed.
+  Kontrak stok lulus 10/10 (70 assertion), full PHP 1.175/1.175 (13.279),
+  visual desktop/mobile 26/26, dua clean build 5.132 modul, typecheck, design,
+  serta npm/Composer audit nol. Dependency `react-is` kini dikunci kompatibel
+  dengan React 18/Recharts; snapshot QRIS mobile diselaraskan dengan assertion
+  fee Rp236 yang sudah kanonik. Status `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` melalui S308; GitHub Actions
+  tetap tidak menjalankan step karena billing akun.
+
+- Real-API conflict recovery UAT stok S305 exact source
+  `578305c7127503f9ceffc3baf0fd60380ff4e775` pada PR #25 membuktikan
+  optimistic-lock conflict dari Laravel tanpa route interception. Draft restock
+  Admin Cabang tetap utuh setelah HTTP 409, saldo authoritative diperbarui dari
+  100 ke 120, proyeksi direbase menjadi 140, lalu retry menggunakan
+  idempotency key yang sama dan lock version terbaru. Read-after-write serta
+  reload membuktikan 140 pcs dan tepat tiga mutasi append-only. Desktop/mobile,
+  keyboard, 44px, forced-colors, reduced-motion, no-overflow, focused/full PHP,
+  build, typecheck, design, dan dependency audit lulus. Status `CONFIRMED /
+  PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
+  melalui S308.
+
+- Synthetic UAT stok S304 exact source
+  `87a9dd93488d3f63171bbe8137c78dc9a117fd2c` pada PR #23 menguji browser
+  React, API Laravel, role/cabang, serta database SQLite disposable dalam satu
+  alur nyata tanpa API mock. Owner dan Admin Cabang berhasil melewati opening,
+  restock idempotent, request koreksi approval-gated, permission-negative,
+  read-after-write, reload persistence, dan histori append-only pada desktop
+  serta mobile tanpa overflow. Full PHP 1.175/1.175 (13.279 assertion),
+  focused 10/10 (70), build, typecheck, design, dan dependency audit nol lulus.
+  Status `CONFIRMED / PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED` melalui S308; authenticated pilot UAT tetap terpisah.
+
 - Hardening release dua tahap S302-S303 exact source
   `40caa45a98ef9f3269368f10983572fb6c897659` pada PR #21 memeriksa pointer
   backup, SHA-256 restore receipt, dan exact candidate commit sebelum packaging,
@@ -23,12 +86,11 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   sebelum upload pertama. Output preflight dibatasi ke marker aman; gate remote
   tetap diulang dan tetap otoritatif. Full PHP 1.179/1.179 (13.305 assertion),
   focused 13/13 (112), production-like negative binding, build, typecheck,
-  design, Pint, serta npm/Composer audit nol lulus. Status `CONFIRMED / PUSHED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED`; production tetap exact `1a69dce2` pada release
-  `20260827050516-1a69dce`.
+  design, Pint, serta npm/Composer audit nol lulus. Status `CONFIRMED / PUSHED /
+  LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` melalui S308.
 
 - Kandidat gabungan stok S297-S300 dan hotfix kontrak restore receipt S301
-  aktif pada exact main
+  diteruskan ke release S308 dari exact main sebelumnya
   `1a69dce2e3fec4aa9b0b0f84d3249256a788b848`. Verifier kini menerima tepat
   delapan field receipt dan mewajibkan `restore_capacity_preflight=passed`.
   Full PHP 1.175/1.175, focused release+stok 48/48, build 5.151 modul, browser
@@ -40,7 +102,8 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   `20260826201936-2b22b83`. Verifier independen 17/17 membuktikan remote main,
   active pointer/commit, manifest, service, migration, queue journal, public
   smoke, dan security header stabil. Status `CONFIRMED / PUSHED /
-  LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+  LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; release
+  `20260827050516-1a69dce` kini menjadi rollback langsung S308;
   authenticated Owner/Admin Cabang UAT, opening stock nyata, dan pilot tetap
   exit gate `BUSINESS_READY=false`.
 
