@@ -12,12 +12,32 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-27T20:13:38+07:00 |
+| Waktu pembaruan terakhir | 2026-08-27T21:10:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
-| Informasi terakhir disinkronkan | SagaBook Closing Staff consumable stock sync production activation. |
-| Status sinkronisasi | SagaBook `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`; authenticated Owner/Staff UAT dan closing bisnis pertama masih pending. |
+| Informasi terakhir disinkronkan | SagaBook Closing Staff production activation serta SagaView S319 fixed NTFS recovery plan. |
+| Status sinkronisasi | SagaBook `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; SagaView `CONFIRMED / RECOVERY_PLAN_VALIDATED / RELEASE_BLOCKED / PRODUCTION_UNCHANGED`; keduanya `BUSINESS_READY=false`. |
+
+## SagaView S319 fixed NTFS recovery plan
+
+- Audit read-only menemukan 81 worktree SagaView inaktif yang clean dan
+  remote-recoverable, total 12,809 GiB.
+- Subset 42 terbesar diproyeksikan memulihkan 10,241 GiB dan menaikkan ruang
+  kosong D dari 1,779 menjadi 12,020 GiB; dependency cache saja tidak cukup.
+- Production/runtime, harness/evidence aktif, dirty/unreachable worktree,
+  custody/backup, dan produk lain dikecualikan. Tidak ada move/delete/deploy.
+- Relokasi/arsip menunggu otorisasi; physical UAT/finalize dan
+  `BUSINESS_READY` tetap tertahan.
+
+## File yang berubah pada sinkronisasi ini (SagaView S319)
+
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook Closing Staff consumable stock sync
 

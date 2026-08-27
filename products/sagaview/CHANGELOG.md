@@ -1,5 +1,20 @@
 # SagaView Changelog
 
+## 2026-08-27 - S319 fixed NTFS recovery plan
+
+- Klasifikasi: `CONFIRMED / RECOVERY_PLAN_VALIDATED / RELEASE_BLOCKED /
+  PRODUCTION_UNCHANGED`; audit read-only tanpa move/delete/deploy.
+- Before: satu blocker kapasitas physical UAT belum memiliki recovery set
+  SagaView yang terukur dan dapat direkonstruksi.
+- After: 81 worktree inaktif yang clean serta remote-reachable terukur 12,809
+  GiB. Subset 42 terbesar dapat memulihkan 10,241 GiB dan diproyeksikan
+  menaikkan ruang kosong D dari 1,779 menjadi 12,020 GiB.
+- Guardrail: dependency cache 6,666 GiB tidak cukup. Production/runtime,
+  harness/evidence aktif, dirty/unreachable worktree, custody/backup, dan
+  produk lain dikecualikan.
+- Boundary: relokasi/arsip worktree penuh menunggu otorisasi. Gate 10 GiB,
+  physical UAT 14 gate/finalize, dan `BUSINESS_READY` tetap belum lulus.
+
 ## 2026-08-27 - S318 print operator acceptance closure
 
 - Klasifikasi: `CONFIRMED / EVIDENCE_COMPLETED /

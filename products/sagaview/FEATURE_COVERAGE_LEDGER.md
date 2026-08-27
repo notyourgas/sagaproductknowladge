@@ -1,6 +1,18 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 27 Agustus 2026 20:04 WIB
+Evidence cut-off: 27 Agustus 2026 21:10 WIB
+
+S319 fixed NTFS recovery plan: audit read-only menutup ketidakjelasan cara
+memenuhi kapasitas physical UAT. Volume D mempunyai 1,779 GiB kosong dan perlu
+8,221 GiB untuk minimum 10 GiB atau 10,221 GiB untuk target aman 12 GiB.
+
+Sebanyak 81 worktree SagaView inaktif terbukti clean dan exact HEAD-nya masih
+remote-reachable, total 12,809 GiB. Subset 42 terbesar memberi recovery 10,241
+GiB dengan proyeksi ruang kosong 12,020 GiB. Cache dependency saja 6,666 GiB
+dan tidak cukup. Production/current runtime, harness/evidence aktif, dirty atau
+unreachable worktree, custody, backup, serta produk lain dikecualikan. Status
+`RECOVERY_PLAN_VALIDATED / RELEASE_BLOCKED / PRODUCTION_UNCHANGED`;
+relokasi/arsip belum diotorisasi dan `BUSINESS_READY=false`.
 
 S318 print operator acceptance closure: receipt S247 checksum-bound
 tervalidasi ulang dengan scope tepat dua gate `printer_portrait` dan

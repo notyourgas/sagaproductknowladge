@@ -1,6 +1,19 @@
 # SagaView Product Knowledge
 
-Updated: 27 Agustus 2026 20:04 WIB
+Updated: 27 Agustus 2026 21:10 WIB
+
+SagaView S319 menghasilkan rencana recovery kapasitas fixed NTFS secara
+read-only. Audit menemukan 81 worktree SagaView inaktif yang clean dan exact
+commit-nya masih dapat dipulihkan dari remote, dengan total 12,809 GiB. Subset
+42 worktree terbesar berukuran 10,241 GiB dan diproyeksikan menaikkan ruang
+kosong volume D dari 1,779 GiB menjadi 12,020 GiB.
+
+Dependency cache saja hanya 6,666 GiB sehingga tidak cukup menutup minimum 10
+GiB. Relokasi/arsip worktree penuh memerlukan otorisasi sebelum eksekusi;
+production, custody, evidence aktif, current harness, worktree dirty, commit
+yang belum remote-reachable, serta produk lain dikecualikan. Status
+`RECOVERY_PLAN_VALIDATED / RELEASE_BLOCKED / PRODUCTION_UNCHANGED` dan
+`BUSINESS_READY=false`.
 
 SagaView S318 memvalidasi ulang receipt operator S247 yang terikat SHA-256
 untuk tepat dua gate cetak portrait dan landscape. Physical preflight exact

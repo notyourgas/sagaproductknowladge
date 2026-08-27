@@ -1,5 +1,21 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-27 - SagaView S319 fixed NTFS recovery plan sync
+
+- Ringkasan: menyinkronkan recovery set terukur untuk menutup blocker kapasitas
+  physical UAT tanpa menghapus data secara spekulatif.
+- Alasan: dependency cache saja tidak cukup; relokasi worktree penuh harus
+  dibatasi ke source yang clean, remote-recoverable, dan tidak aktif.
+- Produk/area: SagaView local release operations, Windows storage, QA,
+  recovery, dan production audit.
+- Klasifikasi: `CONFIRMED / RECOVERY_PLAN_VALIDATED / RELEASE_BLOCKED /
+  PRODUCTION_UNCHANGED`.
+- Audit mengukur 81 worktree sebesar 12,809 GiB; subset 42 diproyeksikan
+  memulihkan 10,241 GiB dan menghasilkan 12,020 GiB ruang kosong. Tidak ada
+  move, delete, deploy, customer data, payment, atau perubahan produk lain.
+- Dokumen terdampak: Product, changelog, ledger SagaView, portfolio, root
+  changelog, dan sync status.
+
 ## 2026-08-27 - SagaBook Closing Staff stock sync activation sync
 
 - Ringkasan: menyinkronkan perbaikan ledger-to-closing Staff dan aktivasi

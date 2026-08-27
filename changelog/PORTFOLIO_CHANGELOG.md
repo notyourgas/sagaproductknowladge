@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-27 - SagaView S319 fixed NTFS recovery plan
+
+- Audit read-only mengidentifikasi 81 worktree inaktif, clean, dan
+  remote-recoverable dengan total 12,809 GiB.
+- Subset 42 worktree memberi proyeksi recovery 10,241 GiB sehingga ruang
+  kosong D dapat naik dari 1,779 menjadi 12,020 GiB; cache saja tidak cukup.
+- Status `RECOVERY_PLAN_VALIDATED / RELEASE_BLOCKED /
+  PRODUCTION_UNCHANGED`; relokasi/arsip menunggu otorisasi dan
+  `BUSINESS_READY=false`.
+
 ## 2026-08-27 - SagaBook Closing Staff stock sync production activation
 
 - Exact main `24a6bab6d57aa3da2e1202a40ecf87210593832a` aktif pada immutable
