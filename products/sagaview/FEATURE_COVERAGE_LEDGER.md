@@ -1,6 +1,22 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 27 Agustus 2026 17:12 WIB
+Evidence cut-off: 27 Agustus 2026 18:13 WIB
+
+S316 exact local runtime closure: evidence-only terhadap exact production
+backend `cd7288d3bb4da9542fbfa20f97780fa5639759bf` dan Studio
+`7ae79ae45828f3876e3604bb569e0d3c7be3abfb`. Checkout kandidat clean,
+upstream `origin` exact, remote exact, health HTTP 200, serta provenance runtime
+loopback dengan product dan commit exact semuanya lulus. Delapan dari sebelas
+blocker physical preflight S315 tertutup tanpa mengubah source atau production.
+
+Preflight tetap fail-closed pada tiga gap fisik: EPSON L8050 belum terdeteksi,
+driver printer belum tersedia, dan volume output fixed NTFS memiliki 7,08 GiB
+kosong atau kurang 2,92 GiB dari minimum 10 GiB. Runtime disposable telah
+dihentikan, port loopback ditutup, checkout kembali clean, dan receipt privacy
+tidak memuat customer data, credential, raw path, maupun provider message ID.
+Status `EVIDENCE_COMPLETED / UAT_PARTIALLY_UNBLOCKED`; production tetap aktif
+pada baseline sama dan `BUSINESS_READY=false`. Gap berikutnya adalah menutup
+tiga prasyarat lalu menjalankan UAT manual 14 gate/finalize.
 
 S315 measured physical UAT storage recovery: exact pushed Studio source
 `82e9371faa76c79f269661dbb34721c5ea2fcf31` menambahkan kapasitas snapshot,

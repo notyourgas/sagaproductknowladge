@@ -12,12 +12,33 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-27T17:12:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-27T18:13:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
-| Informasi terakhir disinkronkan | SagaView S315 measured physical UAT capacity exact source `82e9371faa76c79f269661dbb34721c5ea2fcf31`. |
-| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production SagaView tidak berubah dan `BUSINESS_READY=false`. |
+| Informasi terakhir disinkronkan | SagaView S316 exact local runtime closure untuk physical UAT; tidak ada source baru. |
+| Status sinkronisasi | `CONFIRMED / EVIDENCE_COMPLETED / UAT_PARTIALLY_UNBLOCKED`; production SagaView tidak berubah dan `BUSINESS_READY=false`. |
+
+## SagaView S316 exact local runtime closure
+
+- Exact production backend `cd7288d3bb4da9542fbfa20f97780fa5639759bf`
+  dan Studio `7ae79ae45828f3876e3604bb569e0d3c7be3abfb` terbukti clean,
+  upstream/remote exact, health HTTP 200, dan provenance runtime loopback exact.
+- Delapan blocker checkout/runtime/provenance tertutup. Preflight tetap
+  fail-closed pada EPSON L8050, driver, dan kapasitas fixed NTFS 7,08 GiB atau
+  shortfall 2,92 GiB menuju minimum 10 GiB.
+- Runtime disposable dihentikan dan checkout kembali clean. Production tetap
+  backend/Owner `20260826210546-cd7288d` dan Studio
+  `20260824170456-7ae79ae`; `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi ini (SagaView S316)
+
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaView S315 measured physical UAT storage recovery
 

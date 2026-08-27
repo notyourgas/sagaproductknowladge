@@ -1,5 +1,24 @@
 # SagaView Changelog
 
+## 2026-08-27 - S316 exact local runtime closure for physical UAT
+
+- Klasifikasi: `CONFIRMED / EVIDENCE_COMPLETED / UAT_PARTIALLY_UNBLOCKED`;
+  tidak ada source baru, deploy, aktivasi, atau authenticated UAT.
+- Before: preflight S315 mempunyai 11 blocker, termasuk delapan kegagalan
+  checkout/runtime/provenance yang mencegah UAT manual dimulai.
+- After: exact production backend
+  `cd7288d3bb4da9542fbfa20f97780fa5639759bf` dan Studio
+  `7ae79ae45828f3876e3604bb569e0d3c7be3abfb` terbukti clean, upstream serta
+  remote exact, lalu runtime loopback keduanya memberi HTTP 200 dan provenance
+  exact. Delapan blocker tersebut tertutup.
+- Acceptance: physical preflight tetap fail-closed dengan tepat tiga blocker:
+  printer EPSON L8050, driver printer, dan kapasitas fixed NTFS. Ruang tersedia
+  7,08 GiB dengan kekurangan 2,92 GiB menuju minimum 10 GiB. Privacy receipt
+  tidak memuat customer data, credential, raw path, atau provider message ID.
+- Cleanup: runtime disposable dihentikan, port lokal ditutup, marker sementara
+  dihapus, dan checkout kembali clean. Public smoke production serta provenance
+  exact tetap hijau; production tidak berubah dan `BUSINESS_READY=false`.
+
 ## 2026-08-27 - S315 measured physical UAT storage recovery
 
 - Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
