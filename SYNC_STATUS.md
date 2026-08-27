@@ -12,12 +12,35 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-27T18:13:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-27T19:16:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
-| Informasi terakhir disinkronkan | SagaView S316 exact local runtime closure untuk physical UAT; tidak ada source baru. |
-| Status sinkronisasi | `CONFIRMED / EVIDENCE_COMPLETED / UAT_PARTIALLY_UNBLOCKED`; production SagaView tidak berubah dan `BUSINESS_READY=false`. |
+| Informasi terakhir disinkronkan | SagaView S317 output-volume eligibility exact source `ab985bbcb6168f142bdd4806d0d3549c96f00c25`. |
+| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production SagaView tidak berubah dan `BUSINESS_READY=false`. |
+
+## SagaView S317 physical UAT output-volume eligibility
+
+- Exact Studio `ab985bbcb6168f142bdd4806d0d3549c96f00c25` menambahkan
+  jumlah fixed NTFS, jumlah yang memenuhi 10 GiB, kapasitas fixed terbesar,
+  serta jumlah removable secara agregat ke ringkasan operator.
+- Actual physical preflight mencatat dua fixed NTFS, nol yang memenuhi minimum,
+  kapasitas terbesar 6,60 GiB, dan satu removable. Receipt tetap tanpa drive,
+  path, credential, foto, identifier, atau data customer.
+- Focused 21/21, full unit 247/247, format/lint/typecheck/build/budget,
+  PowerShell syntax, privacy scan, dan npm audit nol lulus.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Production
+  tetap backend/Owner `20260826210546-cd7288d` dan Studio
+  `20260824170456-7ae79ae`; `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi ini (SagaView S317)
+
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaView S316 exact local runtime closure
 

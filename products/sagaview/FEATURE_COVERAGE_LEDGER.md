@@ -1,6 +1,22 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 27 Agustus 2026 18:13 WIB
+Evidence cut-off: 27 Agustus 2026 19:16 WIB
+
+S317 physical UAT output-volume eligibility: exact pushed Studio source
+`ab985bbcb6168f142bdd4806d0d3549c96f00c25` menambahkan inventori volume
+public-safe ke receipt preflight. Operator kini melihat jumlah fixed NTFS,
+berapa yang memenuhi 10 GiB, kapasitas fixed terbesar, serta keberadaan media
+removable tanpa huruf drive, path, serial, atau identifier perangkat.
+
+RED 1/21 lalu GREEN 21/21, full unit 247/247, format, lint, typecheck,
+production build, bundle budget 301,0 KiB dari batas 450 KiB, PowerShell
+syntax, redaction, dan npm audit nol lulus. Actual physical preflight mencatat
+dua volume fixed NTFS, nol yang memenuhi minimum, kapasitas terbesar 6,60 GiB,
+serta satu removable yang tidak dihitung sebagai output operasional. Status
+`PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap aktif
+pada baseline yang sama dan `BUSINESS_READY=false`. Gap berikutnya tetap
+menambah minimal 3,40 GiB hingga fixed NTFS mencapai 10 GiB, memasang printer
+serta driver, lalu menjalankan UAT manual 14 gate/finalize.
 
 S316 exact local runtime closure: evidence-only terhadap exact production
 backend `cd7288d3bb4da9542fbfa20f97780fa5639759bf` dan Studio

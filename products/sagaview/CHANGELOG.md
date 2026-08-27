@@ -1,5 +1,24 @@
 # SagaView Changelog
 
+## 2026-08-27 - S317 physical UAT output-volume eligibility
+
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production dan business readiness tidak berubah.
+- Before: ringkasan kapasitas hanya menjelaskan volume output yang dipilih,
+  sehingga media removable berkapasitas besar dapat disangka memenuhi kontrak
+  fixed NTFS.
+- After: exact Studio `ab985bbcb6168f142bdd4806d0d3549c96f00c25`
+  mencatat jumlah fixed NTFS, jumlah yang memenuhi 10 GiB, kapasitas fixed
+  terbesar, dan jumlah media removable secara agregat tanpa drive/path. Copy
+  operator menegaskan removable hanya untuk custody/backup.
+- Acceptance: RED 1/21 lalu GREEN 21/21, full unit 247/247,
+  format/lint/typecheck/build/budget, PowerShell syntax, privacy redaction, dan
+  npm audit nol lulus. Actual physical preflight membaca dua fixed NTFS, nol
+  yang memenuhi minimum, kapasitas terbesar 6,60 GiB, serta satu removable.
+- Boundary: tidak ada perubahan API, database, payment, foto/path/output
+  customer, deploy, atau produk lain. Tiga blocker tetap printer EPSON L8050,
+  driver, dan kapasitas fixed NTFS; `BUSINESS_READY=false`.
+
 ## 2026-08-27 - S316 exact local runtime closure for physical UAT
 
 - Klasifikasi: `CONFIRMED / EVIDENCE_COMPLETED / UAT_PARTIALLY_UNBLOCKED`;

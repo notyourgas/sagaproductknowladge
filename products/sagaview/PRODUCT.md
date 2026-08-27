@@ -1,6 +1,21 @@
 # SagaView Product Knowledge
 
-Updated: 27 Agustus 2026 18:13 WIB
+Updated: 27 Agustus 2026 19:16 WIB
+
+SagaView S317 exact Studio source
+`ab985bbcb6168f142bdd4806d0d3549c96f00c25` sudah `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Physical UAT preflight kini
+menjelaskan kelayakan volume output secara agregat: jumlah fixed NTFS, jumlah
+yang memenuhi minimum 10 GiB, kapasitas fixed terbesar, serta keberadaan media
+removable tanpa huruf drive atau path. Media removable tetap dipisahkan untuk
+custody/backup dan tidak dapat menggantikan output operasional fixed NTFS.
+
+Acceptance aktual menemukan dua volume fixed NTFS, tidak ada yang memenuhi
+minimum, kapasitas terbesar 6,60 GiB, dan satu media removable. Runtime exact,
+privacy receipt, 247 unit test, build/type/lint/format/budget, serta dependency
+audit nol lulus. Production tetap backend/Owner `20260826210546-cd7288d` dan
+Studio `20260824170456-7ae79ae`; `BUSINESS_READY=false` sampai kapasitas,
+printer, driver, dan UAT manual 14 gate lulus.
 
 SagaView S316 menyelesaikan evidence runtime physical UAT tanpa perubahan
 source atau production. Exact production Studio
