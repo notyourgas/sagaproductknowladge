@@ -1,5 +1,21 @@
 # SagaBook Changelog
 
+## 2026-08-27 - Isolasi snapshot stok antarcabang S298
+
+- Exact source `3c355f5ab279ec889369c2e87bbf7e30d89c0d60` pada PR #19
+  menghapus snapshot cabang lama ketika cabang aktif berubah, mengabaikan
+  respons request lama, dan menolak payload yang cabangnya tidak sesuai.
+- Bug sebelum perbaikan dapat menampilkan saldo cabang lama dengan label cabang
+  baru saat request gagal atau datang terlambat; setelah perbaikan UI gagal
+  tertutup tanpa data antarcabang yang salah label.
+- Focused PHP 10/10 (70 assertion), Playwright desktop 4/4 dan mobile/tablet
+  8/8, focused TypeScript, build 5.151 modul, design audit 26 artefak,
+  npm/Composer audit nol, node syntax, dan diff check lulus.
+- Status `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+  Production tetap exact source `2b22b835f7c72b96d569fd7c31e4aacdb56d4f49`,
+  release `20260826201936-2b22b83`; merge/release dan authenticated UAT masih
+  menjadi gate.
+
 ## 2026-08-27 - Disposable restore capacity fail-closed S297
 
 - Exact feature source `5a721c2d2da513caa3a133cf34e68be43016d32c` menambahkan

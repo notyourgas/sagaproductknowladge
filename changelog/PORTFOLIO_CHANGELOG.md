@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-27 - SagaBook S298 stock branch isolation
+
+- Exact source `3c355f5ab279ec889369c2e87bbf7e30d89c0d60` pada PR #19
+  mengikat snapshot dan lifecycle request stok ke cabang aktif.
+- Saldo cabang lama tidak lagi dapat tampil dengan label cabang baru ketika
+  load gagal atau respons lama selesai terlambat; mismatch cabang ditolak.
+- PHP 10/10, browser desktop/mobile/tablet 12/12, TypeScript/build/design dan
+  audit dependency lulus. Status `PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production SagaBook tidak berubah.
+
 ## 2026-08-27 - COYABAG Cart variant switch and accessible rails deployed
 
 - Exact source `81428fa54d7adee3f3e2d06e582125e12baf46e2` aktif pada immutable

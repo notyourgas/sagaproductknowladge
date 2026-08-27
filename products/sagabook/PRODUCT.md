@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 27 Agustus 2026 06:04 WIB
-Evidence status: stock administration production-activated; restore-capacity hardening merged, not deployed
+Updated: 27 Agustus 2026 07:20 WIB
+Evidence status: stock administration production-activated; S297 merged; S298 branch-isolation candidate, not deployed
 
 ## Tujuan dokumen
 
@@ -15,6 +15,15 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- Hardening isolasi snapshot stok antarcabang S298 pada exact source
+  `3c355f5ab279ec889369c2e87bbf7e30d89c0d60` tersedia di PR #19 dengan
+  status `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+  Saat operator berpindah cabang, saldo lama langsung dilepas; respons request
+  lama tidak dapat menimpa cabang aktif; payload dengan `branchId` yang tidak
+  cocok ditolak fail-closed. Focused PHP 10/10 (70 assertion), Playwright
+  desktop/mobile/tablet 12/12, focused TypeScript, build, design audit,
+  npm/Composer audit, syntax, dan diff check lulus. Production tidak berubah.
 
 - Hardening kapasitas disposable restore S297 dari exact feature source
   `5a721c2d2da513caa3a133cf34e68be43016d32c` sudah terintegrasi melalui PR #18

@@ -1,5 +1,21 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-27 - SagaBook S298 stock branch-isolation sync
+
+- Ringkasan: menyinkronkan hardening snapshot stok agar data cabang lama tidak
+  salah label atau menimpa cabang aktif pada failure/race request.
+- Alasan: operator harus selalu melihat saldo yang terikat ke cabang aktif dan
+  UI wajib gagal tertutup ketika provenance payload tidak cocok.
+- Produk/area: SagaBook stock administration, frontend recovery, branch
+  isolation, QA, security, dan data integrity.
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; exact source
+  `3c355f5ab279ec889369c2e87bbf7e30d89c0d60`, PR #19.
+- Production berubah: tidak; tetap exact source `2b22b835` dan release
+  `20260826201936-2b22b83`. Merge/release dan authenticated UAT masih menunggu.
+- Dokumen terdampak: Product, Dossier, changelog dan ledger SagaBook,
+  portfolio, root changelog, serta sync status.
+
 ## 2026-08-27 - COYABAG Cart accessibility production release sync
 
 - Ringkasan: menyinkronkan Cart exact-variant yang kini aktif dan penutupan

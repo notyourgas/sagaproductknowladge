@@ -12,12 +12,32 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-27T07:08:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-27T07:20:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
-| Informasi terakhir disinkronkan | SagaView S311 physical-media custody guard v3 pada exact source S310 `cd7288d3bb4da9542fbfa20f97780fa5639759bf`. |
-| Status sinkronisasi | `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED`; production tidak berubah. |
+| Informasi terakhir disinkronkan | SagaBook S298 stock branch isolation pada exact source `3c355f5ab279ec889369c2e87bbf7e30d89c0d60`. |
+| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah. |
+
+## SagaBook S298 stock branch isolation
+
+- Snapshot lama dilepas saat cabang aktif berubah; respons request lama tidak
+  dapat menimpa cabang aktif dan mismatch `branchId` ditolak fail-closed.
+- Focused PHP 10/10, browser desktop/mobile/tablet 12/12, focused TypeScript,
+  build, design audit, npm/Composer audit, syntax, dan diff check lulus.
+- Exact source `3c355f5ab279ec889369c2e87bbf7e30d89c0d60` sudah push pada PR #19,
+  belum merge dan belum deploy. Production tetap `2b22b835` /
+  `20260826201936-2b22b83`.
+
+## File yang berubah pada sinkronisasi SagaBook S298
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaView S311 physical-media custody guard v3
 

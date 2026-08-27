@@ -7,6 +7,16 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Hardening isolasi snapshot stok antarcabang S298 exact source
+  `3c355f5ab279ec889369c2e87bbf7e30d89c0d60` mencegah saldo cabang sebelumnya
+  tetap tampil ketika load cabang baru gagal dan mencegah respons request lama
+  menimpa snapshot cabang aktif. Frontend mengikat snapshot serta urutan request
+  ke cabang yang diminta dan menolak payload cabang yang tidak cocok. PR #19
+  sudah push; focused PHP 10/10, browser desktop/mobile/tablet 12/12,
+  TypeScript/build/design/dependency/diff gate lulus. Status `CONFIRMED /
+  PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; API, database, dan
+  production tidak berubah.
+
 - Hardening release S297 dari exact feature source
   `5a721c2d2da513caa3a133cf34e68be43016d32c`, terintegrasi melalui PR #18 ke
   exact main `7877afc0a8887829fa3cf26b53c431b8a5ec7f56`, menambahkan preflight kapasitas
