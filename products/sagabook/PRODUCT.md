@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 28 Agustus 2026 03:27 WIB
-Evidence status: post-payment tenant-safe return is merged and locally validated; production activation is fail-closed on an existing WhatsApp delivery integrity gap
+Updated: 28 Agustus 2026 04:16 WIB
+Evidence status: post-payment tenant-safe return is production-activated; operational WhatsApp is temporarily suspended for provider transition
 
 ## Tujuan dokumen
 
@@ -16,23 +16,25 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
-- Perbaikan return pascapembayaran S309 sudah merge melalui PR #35 ke exact
-  main `bd16dbe5ae7399c934e0252c66a4736ce2e6b618`. URL detail, transfer manual,
-  QRIS, reschedule, serta callback provider kini mempertahankan public booking
-  slug tenant sehingga pelanggan tidak diarahkan ke path tanpa tenant yang
-  dapat menghasilkan 404 setelah pembayaran sukses. Full PHP 1.190/1.190
-  (13.408 assertion), contract pembayaran/tenant, browser mobile 390x844 dan
-  desktop 1440x900, build, typecheck, format, serta audit dependency lulus.
-  Fresh encrypted backup, checksum, dan disposable restore juga lulus. Dua
-  correction round deployment berhenti sebelum aktivasi karena database audit
-  menemukan agregat 2 delivery WhatsApp yatim atau lintas tenant; release lama
-  tetap aktif dan sehat pada exact source
-  `24a6bab6d57aa3da2e1202a40ecf87210593832a`, release
-  `20260827125239-24a6bab`, dengan rollback `20260827050516-1a69dce`, service
-  aktif, 0 migration pending, 0 queue error, serta public/security smoke 3/3.
-  Status `CONFIRMED / PUSHED / LOCAL_VALIDATED / RELEASE_BLOCKED /
-  IMPLEMENTED_NOT_DEPLOYED`; perbaikan/otorisasi data integrity terpisah
-  diperlukan dan `BUSINESS_READY=false`.
+- Perbaikan return pascapembayaran S309 dan hardening release transisi provider
+  aktif pada exact source `a9127dc4595f2d8d7e60094ac330cac76448b255`,
+  immutable release `20260827210830-a9127dc`, dengan rollback
+  `20260827125239-24a6bab`. URL detail, transfer manual, QRIS, reschedule, serta
+  callback provider mempertahankan public booking slug tenant sehingga layar
+  pascapembayaran tidak lagi diarahkan ke path tanpa tenant. WhatsApp
+  operasional customer dan owner disuspensi sementara selama penggantian
+  provider; OTP tetap dikendalikan secara terpisah dan tidak ikut dimatikan.
+  Dua delivery lama yang gagal audit tetap dipertahankan, tidak dihapus atau
+  diubah, dan hanya diterima oleh exception release yang memverifikasi persis
+  dua record, satu-satunya failure audit, serta dispatch yang benar-benar
+  tersuspensi. Full PHP 1.196/1.196 (13.450 assertion), focused release 18/18
+  (224), browser 390x844 dan 1440x900, build/typecheck/format, audit dependency
+  nol, fresh encrypted backup/checksum/disposable restore, immutable
+  archive/bundle/manifest, verifier independen 17/17, 0 migration pending,
+  0 queue error, dan public/security smoke 3/3 lulus. Status `CONFIRMED /
+  PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+  authenticated Owner/operator UAT, provider pengganti, dan pilot tetap
+  membuat `BUSINESS_READY=false`.
 
 - Closing Staff consumable stock sync exact merged source
   `24a6bab6d57aa3da2e1202a40ecf87210593832a` aktif pada immutable release

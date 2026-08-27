@@ -1,18 +1,19 @@
 # Portfolio Changelog
 
-## 2026-08-28 - SagaBook S309 post-payment return release held
+## 2026-08-28 - SagaBook S309-S311 post-payment return production activation
 
-- Exact main `bd16dbe5ae7399c934e0252c66a4736ce2e6b618` mempertahankan public
-  booking slug tenant pada detail, transfer, QRIS, reschedule, dan callback
-  provider sehingga pembayaran sukses tidak lagi diarahkan ke path 404 tanpa
-  tenant.
-- Full PHP 1.190/1.190, focused contracts, browser mobile/desktop,
-  accessibility, build/typecheck/format, dan audit dependency lulus. Archive,
-  bundle, encrypted backup, checksum, dan disposable restore juga lulus.
-- Deploy berhenti fail-closed sebelum aktivasi karena audit menemukan agregat
-  2 delivery WhatsApp yatim atau lintas tenant. Production lama tetap sehat;
-  status `PUSHED / LOCAL_VALIDATED / RELEASE_BLOCKED /
-  IMPLEMENTED_NOT_DEPLOYED`, `BUSINESS_READY=false`.
+- Exact main `a9127dc4595f2d8d7e60094ac330cac76448b255` aktif pada release
+  `20260827210830-a9127dc` dengan rollback `20260827125239-24a6bab`.
+  Return detail, transfer, QRIS, reschedule, dan callback mempertahankan slug
+  tenant sehingga pembayaran sukses tidak masuk path 404 tanpa tenant.
+- WhatsApp operasional customer/owner disuspensi sementara selama transisi
+  provider; OTP tetap terpisah. Dua delivery lama dipertahankan dan narrow
+  exception hanya menerima exact count 2 serta satu failure audit.
+- Full/focused/browser/build/security/dependency gates, fresh encrypted
+  backup/disposable restore, verifier 17/17, migration/journal, dan
+  public/security smoke 3/3 lulus. Status `PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`; provider pengganti, authenticated UAT, pilot, dan
+  `BUSINESS_READY` tetap pending.
 
 ## 2026-08-27 - SagaView S320 archive media identity guard
 

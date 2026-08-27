@@ -107,6 +107,15 @@ GAP-004, bukan gap implementasi warna komponen.
 
 ### SagaBook
 
+- `NEEDS CONFIRMATION / PROVIDER TRANSITION`: WhatsApp operasional customer dan
+  owner disuspensi pada release `20260827210830-a9127dc`; OTP tetap terpisah.
+  Dua delivery lama tetap utuh dan diterima hanya oleh narrow release exception
+  exact-count. Andreas perlu memilih provider pengganti, kontrak biaya/status/
+  retry/callback, migration plan, credential channel restricted, serta UAT dan
+  canary berizin sebelum dispatch operasional diaktifkan kembali. Rekonsiliasi
+  dua delivery lama harus memiliki provenance dan tidak boleh dilakukan hanya
+  untuk membuat audit hijau.
+
 - `TODO / HOST STORAGE NO_GO`: S267 exact
   `ad1285cf9d02fb700e2b952ba736698580e9e2a5` menyediakan runbook pemulihan
   public-safe setelah kapasitas host mengganggu disposable restore. Volume

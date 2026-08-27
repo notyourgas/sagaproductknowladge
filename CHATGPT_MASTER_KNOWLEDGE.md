@@ -1,8 +1,23 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 27 Agustus 2026 23:20 WIB
+Evidence cut-off: 28 Agustus 2026 04:16 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
+
+SagaBook S309-S311 exact source
+`a9127dc4595f2d8d7e60094ac330cac76448b255` aktif pada immutable release
+`20260827210830-a9127dc`, rollback `20260827125239-24a6bab`. URL return detail,
+transfer, QRIS, reschedule, dan callback kini selalu mempertahankan slug tenant
+sehingga pembayaran sukses tidak berakhir pada path 404 tanpa tenant.
+WhatsApp operasional customer dan owner disuspensi sementara selama penggantian
+provider; OTP tetap dikendalikan terpisah. Dua delivery lama tetap utuh dan
+hanya diterima narrow release exception jika exact count 2, satu failure audit,
+serta suspend terverifikasi. Exact full/browser/build/security/dependency gate,
+backup terenkripsi/disposable restore, verifier 17/17, 0 migration pending,
+0 queue error, dan smoke 3/3 lulus. Status `PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED`; tidak ada live payment/WhatsApp canary, provider
+pengganti dan authenticated UAT/pilot belum selesai, sehingga
+`BUSINESS_READY=false`.
 
 SagaView S320 exact pushed source
 `387e0d52771403b49a13b67893096135c247e3e2` menambahkan guard read-only

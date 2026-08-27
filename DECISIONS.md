@@ -1588,3 +1588,17 @@ keputusan pengganti.
 | Pemberi keputusan | Andreas / founder |
 | Status | `CONFIRMED / PRODUCTION_DEPLOYED / NOT_PRODUCTION_ACTIVATED`; exact source `2dad82c3e1cb41db2149915eb1977512e5fc6069`, release `20260827-2dad82c` |
 | Dokumen terkait | [COYABAG Product](products/coyabag/PRODUCT.md), [COYABAG Dossier](products/coyabag/DOSSIER.md), [COYABAG Changelog](products/coyabag/CHANGELOG.md) |
+
+## DEC-113 - WhatsApp operasional SagaBook disuspensi selama transisi provider
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-28 |
+| Topik | Batas runtime WhatsApp SagaBook selama rencana penggantian provider |
+| Keputusan | Suspensi sementara seluruh dispatch WhatsApp operasional customer dan owner, termasuk routing tenant, retry, queue baru, dan closing delivery. OTP tetap dikendalikan secara terpisah dan tidak ikut dimatikan. Pertahankan dua delivery lama tanpa mutasi; release exception hanya boleh menerima exact count 2 bila itu satu-satunya failure audit dan suspend terverifikasi. |
+| Alasan | Perbaikan 404 pascapembayaran perlu dapat dirilis tanpa mengirim melalui provider yang akan diganti, tetapi data integrity, provenance, dan batas OTP tidak boleh dilonggarkan. |
+| Alternatif yang dipertimbangkan | Tetap mengirim melalui provider lama; mematikan OTP sekaligus; menghapus dua delivery agar audit hijau; menunda seluruh perbaikan pembayaran. |
+| Dampak | Perbaikan payment return dapat aktif secara aman. WhatsApp operasional tidak boleh diklaim aktif atau sehat sampai provider pengganti, credential restricted, migration, UAT, dan canary berizin lulus. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; exact source `a9127dc4595f2d8d7e60094ac330cac76448b255`, release `20260827210830-a9127dc`, `BUSINESS_READY=false` |
+| Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [SagaBook Changelog](products/sagabook/CHANGELOG.md), [Gaps](GAPS.md) |

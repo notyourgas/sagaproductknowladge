@@ -1,29 +1,31 @@
 # SagaBook Changelog
 
-## 2026-08-28 - Tenant-safe post-payment return S309 merged, release blocked
+## 2026-08-28 - Tenant-safe post-payment return S309-S311 production activation
 
-- PR #35 merge ke exact main `bd16dbe5ae7399c934e0252c66a4736ce2e6b618`.
-  Pembentukan URL detail, pembayaran transfer/QRIS, reschedule, dan callback
-  provider dipusatkan agar selalu mempertahankan public booking slug tenant.
-- Before: sebagian return path memakai `/b/{code}` atau `/pay/{code}` tanpa
-  tenant sehingga pembayaran dapat sukses tetapi layar berikutnya 404. After:
-  seluruh return path customer tetap berada pada storefront tenant dan token
-  akses tetap dipertahankan.
-- Full PHP 1.190/1.190 (13.408 assertion), focused contract/API/backend,
-  browser 390x844 dan 1440x900, keyboard/screen-reader/44 px/forced-colors/
-  reduced-motion/no-overflow, build, typecheck, Pint, npm audit, dan Composer
-  OSV audit lulus. Quality Gate GitHub tidak memulai step karena billing akun;
-  bukti lokal exact-commit dipakai sebagai pengganti sesuai kontrak release.
-- Immutable archive, manifest, Git bundle, fresh encrypted backup, checksum,
-  dan disposable restore lulus. Dua correction round deployment berhenti
-  fail-closed sebelum activation pada audit data production: agregat 2 delivery
-  WhatsApp yatim atau lintas tenant. Tidak ada record customer yang diubah atau
-  dihapus untuk melewati gate.
-- Production tetap exact source `24a6bab6d57aa3da2e1202a40ecf87210593832a`,
-  release `20260827125239-24a6bab`, rollback `20260827050516-1a69dce`;
-  service, migration, queue journal, public smoke, dan security headers sehat.
-  Status `CONFIRMED / PUSHED / LOCAL_VALIDATED / RELEASE_BLOCKED /
-  IMPLEMENTED_NOT_DEPLOYED`; `BUSINESS_READY=false`.
+- PR #35 menutup URL return tanpa tenant; PR #36 menambahkan suspend WhatsApp
+  operasional dan narrow release exception; PR #37 memperbaiki urutan gate agar
+  `reconcile-data` hanya dapat dilanjutkan setelah verifier exception yang sama
+  lulus. Exact main `a9127dc4595f2d8d7e60094ac330cac76448b255`
+  aktif pada immutable release `20260827210830-a9127dc`, rollback
+  `20260827125239-24a6bab` tersedia.
+- Before: pembayaran dapat sukses tetapi layar berikutnya kehilangan slug
+  tenant dan 404. After: return detail, transfer, QRIS, reschedule, dan callback
+  tetap berada pada storefront tenant serta mempertahankan token akses.
+- WhatsApp customer dan owner disuspensi sementara untuk transisi provider;
+  routing tenant, retry, queue baru, dan closing delivery berhenti fail-closed.
+  OTP tetap terpisah dan aktif. Dua delivery lama tidak dihapus atau diubah;
+  exception hanya menerima exact count 2 sebagai satu-satunya failure audit.
+- Full PHP 1.196/1.196 (13.450 assertion), focused release 18/18 (224), browser
+  390x844 dan 1440x900, accessibility, build/typecheck/Pint, npm/Composer/OSV
+  nol, immutable archive/bundle/manifest, encrypted backup `20260827T210640Z`,
+  checksum, dan disposable restore lulus. GitHub Actions tidak memulai step
+  karena billing; exact local/VPS gates dipakai sesuai kontrak.
+- Verifier independen 17/17, snapshot stabil, 0 migration pending, 0 queue
+  error, service aktif, serta public/security smoke 3/3 lulus. Tidak ada live
+  WhatsApp/payment canary. Status `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; provider pengganti,
+  authenticated Owner/operator UAT, dan pilot tetap membuat
+  `BUSINESS_READY=false`.
 
 ## 2026-08-27 - Closing Staff consumable stock sync production activation
 

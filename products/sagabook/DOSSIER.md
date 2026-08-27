@@ -7,6 +7,23 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- S309 plus hardening release transisi provider aktif pada exact source
+  `a9127dc4595f2d8d7e60094ac330cac76448b255`, immutable release
+  `20260827210830-a9127dc`, rollback `20260827125239-24a6bab`:
+  `CONFIRMED / PUSHED / QA_VALIDATED / SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
+  Seluruh URL return detail, transfer, QRIS, reschedule, dan callback menjaga
+  slug tenant sehingga pembayaran sukses tidak berakhir pada path 404 tanpa
+  tenant. Selama provider WhatsApp diganti, dispatch operasional customer dan
+  owner disuspensi, retry/queue baru ditahan, dan OTP tetap terpisah. Dua
+  delivery lama tetap utuh; exception release hanya berlaku jika verifier
+  membuktikan persis dua record tersebut, tidak ada failure audit lain, dan
+  suspend aktif. Fresh backup terenkripsi, checksum, disposable restore,
+  artifact exact source, full/focused/browser/build/security/dependency gate,
+  verifier 17/17, 0 migration pending, 0 queue error, dan smoke 3/3 lulus.
+  Tidak ada canary WhatsApp atau pembayaran nyata; authenticated UAT, provider
+  pengganti, dan pilot tetap menahan `BUSINESS_READY=false`.
+
 - Closing Staff consumable stock sync exact source
   `24a6bab6d57aa3da2e1202a40ecf87210593832a`, immutable release
   `20260827125239-24a6bab`, rollback `20260827050516-1a69dce`:
