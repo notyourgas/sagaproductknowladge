@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-27 - SagaView S318 print acceptance closure
+
+- Receipt operator S247 tervalidasi ulang dengan checksum exact dan scope hanya
+  dua gate cetak; blocker printer dan driver tertutup tanpa hardware test baru.
+- Physical preflight exact production berubah dari tiga blocker menjadi satu:
+  fixed NTFS terbesar 6,51 GiB, masih kurang sekitar 3,49 GiB dari minimum.
+- Status `EVIDENCE_COMPLETED / UAT_PARTIALLY_UNBLOCKED /
+  PRODUCTION_UNCHANGED`; UAT manual 14 gate/finalize belum dimulai dan
+  `BUSINESS_READY=false`.
+
 ## 2026-08-27 - SagaBook S308 integrated stock hardening production release
 
 - Exact main `7e190cefbec7d3ee60b825bf61741ba81415f2e6` aktif pada immutable

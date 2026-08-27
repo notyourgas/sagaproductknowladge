@@ -1,5 +1,23 @@
 # SagaView Changelog
 
+## 2026-08-27 - S318 print operator acceptance closure
+
+- Klasifikasi: `CONFIRMED / EVIDENCE_COMPLETED /
+  UAT_PARTIALLY_UNBLOCKED / PRODUCTION_UNCHANGED`; tidak ada source, deploy,
+  aktivasi, atau authenticated UAT baru.
+- Before: physical preflight exact production tertahan pada tiga blocker:
+  printer, driver, dan kapasitas output fixed NTFS.
+- After: receipt operator S247 tervalidasi dengan SHA-256 exact dan scope tepat
+  `printer_portrait` serta `printer_landscape`. Dua blocker print ditutup tanpa
+  mengklaim pengujian hardware baru atau memberi waiver gate lain.
+- Acceptance: backend/Studio clean dan remote exact; runtime provenance,
+  health, serta public smoke HTTP 200. Preflight exit 2 tetap fail-closed pada
+  satu blocker kapasitas, dengan dua fixed NTFS, nol memenuhi 10 GiB, maksimum
+  6,51 GiB, dan satu removable khusus custody/backup.
+- Boundary: receipt privacy tidak memuat customer data, credential, raw path,
+  atau metadata pengiriman eksternal. Runtime disposable dihentikan dan checkout kembali
+  clean; `BUSINESS_READY=false` sampai kapasitas dan UAT manual/finalize lulus.
+
 ## 2026-08-27 - S317 physical UAT output-volume eligibility
 
 - Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /

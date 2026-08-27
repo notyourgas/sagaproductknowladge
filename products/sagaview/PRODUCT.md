@@ -1,6 +1,20 @@
 # SagaView Product Knowledge
 
-Updated: 27 Agustus 2026 19:16 WIB
+Updated: 27 Agustus 2026 20:04 WIB
+
+SagaView S318 memvalidasi ulang receipt operator S247 yang terikat SHA-256
+untuk tepat dua gate cetak portrait dan landscape. Physical preflight exact
+production kini menutup blocker printer serta driver melalui keputusan
+operator yang sudah dikonfirmasi; ini bukan pengujian hardware baru dan tidak
+memberi pengecualian pada gate lain.
+
+Satu blocker tetap fail-closed: volume output fixed NTFS terbesar memiliki
+6,51 GiB kosong, sementara minimum adalah 10 GiB. Dua volume fixed NTFS
+terdeteksi, tidak ada yang memenuhi minimum, dan satu removable tetap hanya
+untuk custody/backup. Production tetap backend/Owner
+`20260826210546-cd7288d` dan Studio `20260824170456-7ae79ae`;
+`BUSINESS_READY=false` sampai kapasitas serta UAT manual 14 gate/finalize
+lulus.
 
 SagaView S317 exact Studio source
 `ab985bbcb6168f142bdd4806d0d3549c96f00c25` sudah `PUSHED /

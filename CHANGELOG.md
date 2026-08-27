@@ -1,5 +1,23 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-27 - SagaView S318 print acceptance closure sync
+
+- Ringkasan: menyinkronkan validasi ulang receipt operator S247 yang menutup
+  dua blocker print physical UAT pada scope tepat portrait dan landscape.
+- Alasan: gate UAT harus membedakan penerimaan operator yang sudah sah dari
+  hardware test baru serta mempertahankan blocker lain secara fail-closed.
+- Produk/area: SagaView Studio, Windows physical UAT, operator acceptance,
+  privacy, QA, dan release operations.
+- Klasifikasi: `CONFIRMED / EVIDENCE_COMPLETED /
+  UAT_PARTIALLY_UNBLOCKED / PRODUCTION_UNCHANGED`; exact runtime backend
+  `cd7288d3bb4da9542fbfa20f97780fa5639759bf` dan Studio
+  `7ae79ae45828f3876e3604bb569e0d3c7be3abfb`.
+- Satu blocker kapasitas fixed NTFS tetap aktif; UAT manual/finalize dan
+  `BUSINESS_READY` belum selesai. Tidak ada payment, customer data, upload,
+  deploy, atau perubahan produk lain.
+- Dokumen terdampak: Product, changelog, ledger SagaView, portfolio, root
+  changelog, dan sync status.
+
 ## 2026-08-27 - SagaBook S308 production release sync
 
 - Ringkasan: menyinkronkan production activation integrated stock/release

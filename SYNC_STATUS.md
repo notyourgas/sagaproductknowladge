@@ -12,12 +12,32 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-27T19:16:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-27T20:04:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
-| Informasi terakhir disinkronkan | SagaBook S308 production activation serta SagaView S317 output-volume eligibility. |
-| Status sinkronisasi | SagaBook `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; SagaView `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; keduanya `BUSINESS_READY=false`. |
+| Informasi terakhir disinkronkan | SagaBook S308 production activation serta SagaView S318 print acceptance closure. |
+| Status sinkronisasi | SagaBook `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; SagaView `CONFIRMED / EVIDENCE_COMPLETED / UAT_PARTIALLY_UNBLOCKED / PRODUCTION_UNCHANGED`; keduanya `BUSINESS_READY=false`. |
+
+## SagaView S318 print operator acceptance closure
+
+- Receipt operator S247 tervalidasi ulang dengan checksum exact dan scope
+  tepat dua gate cetak portrait/landscape. Ini bukan hardware test baru dan
+  tidak memberi waiver pada gate lain.
+- Exact production runtime backend/Studio clean, remote exact, health dan
+  provenance HTTP 200. Physical preflight berubah dari tiga blocker menjadi
+  satu blocker kapasitas fixed NTFS.
+- Kapasitas terbesar 6,51 GiB; minimum 10 GiB. Production tidak berubah,
+  UAT manual 14 gate/finalize belum dimulai, dan `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi ini (SagaView S318)
+
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook S308 production activation
 

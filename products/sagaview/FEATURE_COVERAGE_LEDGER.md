@@ -1,6 +1,23 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 27 Agustus 2026 19:16 WIB
+Evidence cut-off: 27 Agustus 2026 20:04 WIB
+
+S318 print operator acceptance closure: receipt S247 checksum-bound
+tervalidasi ulang dengan scope tepat dua gate `printer_portrait` dan
+`printer_landscape`. Exact production backend
+`cd7288d3bb4da9542fbfa20f97780fa5639759bf` serta Studio
+`7ae79ae45828f3876e3604bb569e0d3c7be3abfb` clean, remote exact, health dan
+runtime provenance HTTP 200.
+
+Before tiga blocker fisik; after tepat satu blocker
+`output_disk_below_10gb`. Printer dan driver ditutup melalui keputusan
+operator yang sudah dikonfirmasi, bukan hardware test baru atau waiver gate
+lain. Inventori aktual: dua fixed NTFS, nol memenuhi 10 GiB, maksimum 6,51
+GiB, serta satu removable yang tidak dihitung sebagai output operasional.
+Status `EVIDENCE_COMPLETED / UAT_PARTIALLY_UNBLOCKED /
+PRODUCTION_UNCHANGED`; `BUSINESS_READY=false`. Gap berikutnya menambah sekitar
+3,49 GiB pada fixed NTFS, lalu menjalankan preflight, UAT manual 14 gate, dan
+finalize.
 
 S317 physical UAT output-volume eligibility: exact pushed Studio source
 `ab985bbcb6168f142bdd4806d0d3549c96f00c25` menambahkan inventori volume
