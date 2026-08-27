@@ -6,18 +6,18 @@
   RELEASE_BLOCKED`; ini adalah hardening gate release, bukan perubahan runtime.
 - Before: pengecekan kapasitas belum mempunyai guard otomatis yang sekaligus
   menolak volume sama, memverifikasi manifest, dan menyisakan cadangan operasi.
-- After: guard read-only `sagaview-separate-custody-capacity-v2` memverifikasi
-  hash, identitas volume filesystem aktual, ukuran artifact, ruang bebas,
-  cadangan, dan shortfall sebelum copy. Mount point tidak lagi dinilai hanya
-  dari huruf drive; SHA-256 script
-  `e90dcaf38a383c4b3e7db48c4884a0ba60906c3f8289b143529456721b497eed`.
+- After: guard read-only `sagaview-separate-custody-capacity-v3` memverifikasi
+  hash, identitas volume, media fisik, ukuran artifact, ruang bebas, cadangan,
+  dan shortfall sebelum copy. Partisi atau mount point pada disk yang sama tidak
+  dihitung sebagai custody terpisah; SHA-256 script
+  `56d28fd0bad14d4cc3ca3fe07b2da4b5556f5e3d9a3e92d99039e45d7d1c090b`.
 - Acceptance: syntax/read-only gate lulus; tujuan volume C yang sama ditolak,
   dan volume D berbeda dengan kapasitas kurang juga ditolak. Dua hash artifact
   tetap cocok dengan manifest.
 - Capacity: artifact 199.912.920 byte + cadangan 67.108.864 byte membutuhkan
-  267.021.784 byte (254,652 MB). D memiliki 69.492.736 byte (66,274 MB), sehingga
-  shortfall 197.529.048 byte (188,378 MB). Tidak ada removable/network target;
-  dua volume sistem tanpa drive letter juga terlalu kecil dan tidak digunakan.
+  267.021.784 byte (254,652 MB). D memiliki 67.547.136 byte (64,418 MB), sehingga
+  shortfall 199.474.648 byte (190,234 MB). C dan D adalah partisi dari media
+  fisik yang sama; tidak ada removable/network target yang tersedia.
 - Delivery: tidak ada copy, delete, rehearsal VPS, backup/restore, deploy,
   aktivasi, atau perubahan production. S311 tetap belum `STAGING_READY`.
 

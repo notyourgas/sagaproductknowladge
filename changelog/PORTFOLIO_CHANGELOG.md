@@ -28,13 +28,13 @@
 
 ## 2026-08-27 - SagaView S311 custody capacity guard
 
-- Guard release read-only v2 kini memakai identitas volume filesystem aktual,
-  menolak salinan pada volume sumber yang sama, memverifikasi manifest, dan
+- Guard release read-only v3 kini memverifikasi volume dan media fisik aktual,
+  menolak partisi pada disk sumber yang sama, memverifikasi manifest, dan
   menghitung kapasitas plus cadangan 64 MB.
 - Dua acceptance negatif lulus; artifact exact 199.912.920 byte tetap utuh dan
   hash valid.
-- Target terpisah membutuhkan 254,652 MB, sementara D hanya memiliki 66,274 MB;
-  tidak ada removable/network target dan status tetap
+- C dan D terbukti satu media fisik; D juga hanya memiliki 64,418 MB dari
+  kebutuhan 254,652 MB. Tidak ada removable/network target dan status tetap
   `RELEASE_BLOCKED / IMPLEMENTED_NOT_DEPLOYED`.
 - Production SagaView, database, foto/path/output customer, dan produk lain
   tidak berubah.

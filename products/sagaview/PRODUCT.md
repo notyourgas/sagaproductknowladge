@@ -1,20 +1,20 @@
 # SagaView Product Knowledge
 
-Updated: 27 Agustus 2026 06:08 WIB
+Updated: 27 Agustus 2026 07:08 WIB
 
 Follow-up S311 menambahkan guard custody read-only yang memverifikasi SHA-256,
-memastikan target berada pada volume filesystem berbeda, serta menghitung
-kebutuhan ruang sebelum copy. Versi 2 tidak lagi mengandalkan huruf drive,
-sehingga mount point ikut diklasifikasikan berdasarkan volume aktual. Guard
-SHA-256 `e90dcaf38a383c4b3e7db48c4884a0ba60906c3f8289b143529456721b497eed`
-lulus dua acceptance fail-closed: target volume sama ditolak dan volume D yang
-kapasitasnya kurang juga ditolak.
+memastikan target berada pada volume dan media fisik berbeda, serta menghitung
+kebutuhan ruang sebelum copy. Versi 3 tidak lagi mengandalkan huruf drive atau
+pemisahan partisi. Guard SHA-256
+`56d28fd0bad14d4cc3ca3fe07b2da4b5556f5e3d9a3e92d99039e45d7d1c090b`
+lulus acceptance fail-closed untuk volume sama, media fisik sama, dan kapasitas
+yang kurang.
 
 Paket exact tetap 199.912.920 byte dengan hash valid. Setelah cadangan operasi
 64 MB, kebutuhan tujuan terpisah menjadi 267.021.784 byte (254,652 MB), sedangkan
-D hanya memiliki 66,274 MB bebas saat verifikasi. Inventaris tidak menemukan
-removable atau network storage; volume sistem tanpa drive letter juga terlalu
-kecil. Tidak ada file yang disalin
+D hanya memiliki 64,418 MB bebas saat verifikasi. C dan D terbukti berada pada
+satu media NVMe fisik, sehingga membebaskan D saja tidak mencukupi custody.
+Inventaris tidak menemukan removable atau network storage. Tidak ada file yang disalin
 atau dihapus, production tidak berubah, dan status tetap `RELEASE_BLOCKED`.
 
 SagaView S311 membentuk immutable release

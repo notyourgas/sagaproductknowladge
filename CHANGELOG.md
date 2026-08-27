@@ -33,11 +33,12 @@
 
 ## 2026-08-27 - SagaView S311 custody guard sync
 
-- Ringkasan: menyinkronkan guard read-only v2 untuk integritas manifest,
-  identitas volume filesystem aktual, kapasitas, cadangan 64 MB, dan shortfall.
-- Alasan: release harus berhenti sebelum copy jika target bukan storage terpisah
-  atau ruang tidak cukup; mount point tidak boleh lolos hanya karena bentuk
-  path-nya berbeda.
+- Ringkasan: menyinkronkan guard read-only v3 untuk integritas manifest,
+  identitas volume, pemisahan media fisik, kapasitas, cadangan 64 MB, dan
+  shortfall.
+- Alasan: release harus berhenti sebelum copy jika target bukan failure domain
+  terpisah atau ruang tidak cukup; partisi/mount point pada satu disk tidak boleh
+  dianggap sebagai custody kedua.
 - Produk/area: SagaView release evidence, security, QA, DevOps, dan production
   audit.
 - Klasifikasi: `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
