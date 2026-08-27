@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-28 - SagaView S321 restricted archive media enrollment
+
+- Exact pushed source `6e11c9168a95b1176c715fa9779341f5ca823f00`
+  memberi jalur enrollment fingerprint ter-redact dan approval-bound untuk
+  guard custody S320.
+- Receipt lokal ditulis atomik, idempoten, tanpa raw device identifier, dan
+  tidak boleh diunggah. Media aktual yang salah ditolak exit 2 tanpa write;
+  acceptance enrollment/regresi 20/20 serta dependency audit nol lulus.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  RELEASE_BLOCKED / PRODUCTION_UNCHANGED`; `BUSINESS_READY=false`.
+
 ## 2026-08-27 - SagaView S320 archive media identity guard
 
 - Exact pushed source `387e0d52771403b49a13b67893096135c247e3e2`

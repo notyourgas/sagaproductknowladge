@@ -1,6 +1,25 @@
 # SagaView Product Knowledge
 
-Updated: 27 Agustus 2026 23:20 WIB
+Updated: 28 Agustus 2026 02:25 WIB
+
+SagaView S321 exact source
+`6e11c9168a95b1176c715fa9779341f5ca823f00` sudah `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Enrollment media custody kini
+berjalan dua tahap: eligibility probe selalu read-only dan tidak membuka
+fingerprint, sedangkan receipt berklasifikasi `RESTRICTED_LOCAL` hanya dapat
+dibuat setelah media cocok serta operator memberi persetujuan eksplisit.
+Receipt ditulis atomik pada fixed storage lokal, idempoten untuk enrollment
+yang sama, menolak overwrite/tamper, tidak memuat serial/unique ID mentah, dan
+tidak boleh diunggah.
+
+Media E: aktual tetap perangkat 32 GB FAT32 yang bukan Lexar custody S311.
+Acceptance nyata berhenti exit 2 dengan `WroteFiles=false`, tanpa membuat
+receipt atau direktori SagaView. Synthetic enrollment 10/10, regresi S320
+10/10, syntax 3/3, privacy/security scan nol, npm dan Composer audit nol, serta
+public health 200 lulus. Production tetap backend/Owner
+`20260826210546-cd7288d` dan Studio `20260824170456-7ae79ae`;
+`BUSINESS_READY=false` sampai media yang benar kembali, enrollment disetujui,
+recovery kapasitas selesai, dan physical UAT lulus.
 
 SagaView S320 exact source
 `387e0d52771403b49a13b67893096135c247e3e2` sudah `PUSHED /

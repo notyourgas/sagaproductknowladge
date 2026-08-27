@@ -1,5 +1,24 @@
 # SagaView Changelog
 
+## 2026-08-28 - S321 restricted archive media enrollment
+
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED / PRODUCTION_UNCHANGED`.
+- Before: S320 membutuhkan fingerprint terotorisasi, tetapi belum menyediakan
+  jalur enrollment yang ter-redact, approval-bound, dan dapat diulang aman.
+- After: exact source `6e11c9168a95b1176c715fa9779341f5ca823f00`
+  menambahkan probe eligibility tanpa membuka fingerprint dan atomic receipt
+  `RESTRICTED_LOCAL` hanya setelah persetujuan operator. Receipt idempoten,
+  fail-closed pada tamper/overwrite, tanpa serial/unique ID mentah, dan
+  `UploadAllowed=false`.
+- Acceptance: synthetic enrollment 10/10, regresi S320 10/10, actual media
+  exit 2 dengan `WroteFiles=false`, syntax 3/3, mutation/network/raw-output scan
+  nol, npm audit nol, Composer audit nol, serta public health 200 lulus.
+- Boundary: media E: aktual tetap 32 GB FAT32 dan bukan Lexar custody; tidak ada
+  receipt/folder yang dibuat pada run aktual, tidak ada archive/move/delete,
+  deploy, foto/path/output customer, payment, atau perubahan produk lain.
+  `BUSINESS_READY=false`.
+
 ## 2026-08-27 - S320 worktree archive media identity guard
 
 - Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /

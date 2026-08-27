@@ -1,5 +1,22 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-28 - SagaView S321 archive media enrollment sync
+
+- Ringkasan: menyinkronkan enrollment fingerprint media custody yang ter-redact,
+  approval-bound, atomic, idempoten, dan local-only.
+- Alasan: S320 sudah menolak media yang salah, tetapi operator belum mempunyai
+  jalur aman untuk membuat receipt fingerprint media yang benar.
+- Produk/area: SagaView local release operations, storage recovery, privacy,
+  security, QA, dan production audit.
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED / PRODUCTION_UNCHANGED`; exact
+  source `6e11c9168a95b1176c715fa9779341f5ca823f00`.
+- Enrollment/regresi 20/20, actual-media exit 2 tanpa write, syntax 3/3,
+  security/privacy scan nol, serta npm/Composer audit nol. Production dan data
+  restricted tidak berubah.
+- Dokumen terdampak: Product, changelog, ledger SagaView, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-27 - SagaView S320 archive media identity guard sync
 
 - Ringkasan: menyinkronkan guard destination recovery yang menolak media

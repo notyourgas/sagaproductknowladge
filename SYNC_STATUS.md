@@ -12,12 +12,34 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-27T23:20:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-28T02:25:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
-| Informasi terakhir disinkronkan | SagaView S320 archive media identity guard. |
+| Informasi terakhir disinkronkan | SagaView S321 restricted archive media enrollment. |
 | Status sinkronisasi | SagaView `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED / PRODUCTION_UNCHANGED`; `BUSINESS_READY=false`. |
+
+## SagaView S321 restricted archive media enrollment
+
+- Exact pushed source `6e11c9168a95b1176c715fa9779341f5ca823f00`
+  menambahkan eligibility probe ter-redact dan receipt lokal yang hanya dapat
+  dibuat setelah media cocok serta operator menyetujui.
+- Receipt atomic, idempoten, fail-closed pada tamper/overwrite, tanpa raw device
+  identifier, dan tidak boleh diunggah. Media aktual yang salah tetap ditolak
+  exit 2 tanpa membuat file atau direktori SagaView.
+- Synthetic enrollment 10/10, regresi S320 10/10, syntax 3/3, security/privacy
+  scan nol, npm dan Composer audit nol, serta public health 200 lulus.
+  Production, recovery kapasitas, dan `BUSINESS_READY` tidak berubah.
+
+## File yang berubah pada sinkronisasi ini (SagaView S321)
+
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaView S320 archive media identity guard
 

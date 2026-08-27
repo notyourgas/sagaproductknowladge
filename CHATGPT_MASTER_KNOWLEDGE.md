@@ -1,8 +1,20 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 27 Agustus 2026 23:20 WIB
+Evidence cut-off: 28 Agustus 2026 02:25 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
+
+SagaView S321 exact pushed source
+`6e11c9168a95b1176c715fa9779341f5ca823f00` menambahkan enrollment media
+custody dua tahap: probe eligibility tidak membuka fingerprint; receipt
+`RESTRICTED_LOCAL` hanya dibuat setelah media cocok dan persetujuan operator.
+Receipt atomic, idempoten, tidak dapat overwrite data berbeda, tanpa raw
+serial/unique ID, dan tidak boleh diunggah. Media E: aktual tetap 32 GB FAT32
+yang bukan Lexar custody sehingga gate exit 2 tanpa write. Status `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED /
+PRODUCTION_UNCHANGED`; production tetap backend/Owner
+`20260826210546-cd7288d` dan Studio `20260824170456-7ae79ae`, sedangkan
+recovery kapasitas, physical UAT, dan `BUSINESS_READY` belum selesai.
 
 SagaView S320 exact pushed source
 `387e0d52771403b49a13b67893096135c247e3e2` menambahkan guard read-only

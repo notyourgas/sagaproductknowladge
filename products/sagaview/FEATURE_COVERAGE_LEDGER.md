@@ -1,6 +1,22 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 27 Agustus 2026 23:20 WIB
+Evidence cut-off: 28 Agustus 2026 02:25 WIB
+
+S321 restricted archive media enrollment: exact pushed source
+`6e11c9168a95b1176c715fa9779341f5ca823f00` menutup gap enrollment fingerprint
+S320 melalui dua tahap. Eligibility probe bersifat read-only dan selalu
+ter-redact; receipt `RESTRICTED_LOCAL` hanya dibuat pada fixed storage lokal
+setelah media sesuai kontrak serta operator menyetujui. Atomic write,
+read-after-write checksum, idempotency, no-overwrite, tamper rejection, tanpa
+raw serial/unique ID, dan `UploadAllowed=false` dibuktikan.
+
+Media E: aktual tetap perangkat 32 GB FAT32 yang bukan Lexar custody S311;
+actual gate exit 2, `WroteFiles=false`, tanpa receipt atau direktori SagaView.
+Synthetic enrollment 10/10, regresi S320 10/10, syntax 3/3,
+mutation/network/raw-output scan nol, npm dan Composer audit nol, serta public
+health 200 lulus. Status `PUSHED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED / PRODUCTION_UNCHANGED`;
+`BUSINESS_READY=false` dan recovery kapasitas belum dijalankan.
 
 S320 worktree archive media identity guard: exact pushed source
 `387e0d52771403b49a13b67893096135c247e3e2` menutup risiko huruf drive
