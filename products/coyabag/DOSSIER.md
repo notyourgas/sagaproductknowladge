@@ -78,9 +78,16 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260827-324a250` memakai exact source
-`324a2506694c42c9ae82ccd9f7041f314640e84c` dan rollback
-`20260827-160e423`. Filter serta preview Gallery kini disinkronkan ke URL yang
+Release production terbaru `20260827-7213892` memakai exact source
+`7213892ba0b5db3ba0d51742e17e379c278ee191` dan rollback
+`20260827-324a250`. Hero homepage kembali ke campaign full-bleed monokrom
+versi sebelumnya dengan headline `BAGS FOR THE SCENE`, crop `cover`, gradient
+teks, dan proporsi desktop 461–521 piksel. Carousel, CTA, featured card, serta
+Gallery share navigation dari release sebelumnya tetap dipertahankan.
+Storefront 214/214, navigation 16 skenario, 110 kombinasi responsive, 32 route
+accessibility desktop/mobile, dan hero live 390/768/1440/1920 piksel lulus.
+GitHub Actions exact SHA tidak memulai job akibat billing/spending limit, jadi
+CI tidak diklaim hijau. Filter serta preview Gallery kini disinkronkan ke URL yang
 dapat dibagikan. Browser Back menutup dialog dan memulihkan fokus, deep link
 valid memperluas daftar awal agar foto tujuan tersedia, sedangkan tautan item
 usang atau tidak cocok gagal tertutup dengan pemberitahuan tanpa menebak foto

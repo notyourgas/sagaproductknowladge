@@ -12,12 +12,34 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-27T10:28:12+07:00 |
+| Waktu pembaruan terakhir | 2026-08-27T11:01:41+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
-| Informasi terakhir disinkronkan | COYABAG Gallery share navigation pada exact source `324a2506694c42c9ae82ccd9f7041f314640e84c`. |
+| Informasi terakhir disinkronkan | COYABAG previous full-bleed campaign hero pada exact source `7213892ba0b5db3ba0d51742e17e379c278ee191`. |
 | Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED`; commerce tetap fail-closed. |
+
+## COYABAG previous full-bleed campaign hero
+
+- Exact source `7213892ba0b5db3ba0d51742e17e379c278ee191` aktif pada immutable
+  release `20260827-7213892`; rollback `20260827-324a250` tersedia.
+- Hero homepage kembali ke komposisi full-bleed monokrom `BAGS FOR THE SCENE`
+  versi sebelumnya. Carousel, CTA, featured card, dan Gallery share navigation
+  tetap dipertahankan.
+- Storefront 214/214, navigation 16 skenario, 110 responsive combinations, 32
+  route accessibility desktop/mobile, dan empat viewport live lulus.
+- GitHub Actions tidak memulai job akibat billing/spending limit. Readiness
+  tetap 30/42 dengan 12 blocker dan commerce production tetap fail-closed.
+
+## File yang berubah pada sinkronisasi ini (COYABAG Hero)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG Gallery share navigation
 

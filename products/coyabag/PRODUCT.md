@@ -61,9 +61,20 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260827-324a250` dengan exact source
-  `324a2506694c42c9ae82ccd9f7041f314640e84c` melayani production;
-  rollback langsung `20260827-160e423` dipertahankan.
+- Release aktif `20260827-7213892` dengan exact source
+  `7213892ba0b5db3ba0d51742e17e379c278ee191` melayani production;
+  rollback langsung `20260827-324a250` dipertahankan.
+- Hero homepage kembali ke komposisi campaign full-bleed hitam-putih versi
+  sebelumnya dengan headline `BAGS FOR THE SCENE`. Foto memakai crop `cover`,
+  gradient menjaga keterbacaan, dan tinggi desktop dibatasi 461–521 piksel.
+  Carousel, CTA, Gallery share navigation, dan perbaikan featured card tetap
+  aktif.
+- Storefront 214/214, 16 skenario navigasi, 110 kombinasi responsive, 32 route
+  accessibility pada desktop/mobile, serta pemeriksaan hero live pada 390,
+  768, 1440, dan 1920 piksel lulus. GitHub Actions exact SHA tidak berjalan
+  karena billing/spending limit akun, sehingga tidak diklaim hijau.
+- Release sebelumnya `20260827-324a250` menjalankan exact source
+  `324a2506694c42c9ae82ccd9f7041f314640e84c`.
 - Filter dan preview Gallery kini tersimpan pada URL yang dapat dibagikan.
   Browser Back menutup preview dan mengembalikan fokus, deep link membuka foto
   valid di luar batas awal, dan tautan item usang dipulihkan tanpa menebak foto

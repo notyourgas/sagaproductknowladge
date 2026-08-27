@@ -1,5 +1,22 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-27 - COYABAG previous campaign hero production sync
+
+- Ringkasan: menyinkronkan kembalinya hero full-bleed monokrom
+  `BAGS FOR THE SCENE` dengan crop, gradient, dan proporsi responsif versi
+  sebelumnya tanpa menghapus feature live terbaru.
+- Alasan: owner meminta hero seperti versi sebelumnya dan hasil harus konsisten
+  pada mobile, tablet, desktop, serta ultra-wide.
+- Produk/area: COYABAG homepage, responsive UI, accessibility, QA, DevOps, dan
+  release provenance.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED`; exact source
+  `7213892ba0b5db3ba0d51742e17e379c278ee191`, release
+  `20260827-7213892`, rollback `20260827-324a250`.
+- Production berubah: ya pada UI storefront; commerce tetap 30/42 dengan 12
+  blocker dan `commerceActivated=false`. GitHub Actions diblokir billing akun.
+- Dokumen terdampak: Product/Dossier/changelog COYABAG, portfolio, master, root
+  changelog, dan sync status.
+
 ## 2026-08-27 - COYABAG Gallery share navigation production sync
 
 - Ringkasan: menyinkronkan URL filter/preview Gallery, browser Back dan focus

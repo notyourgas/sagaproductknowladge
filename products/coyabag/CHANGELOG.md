@@ -4,6 +4,22 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-27 - Previous full-bleed campaign hero restored
+
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED` dari exact source
+  `7213892ba0b5db3ba0d51742e17e379c278ee191`, immutable release
+  `20260827-7213892`, dan rollback `20260827-324a250`.
+- Homepage kembali memakai hero campaign full-bleed hitam-putih, headline
+  `BAGS FOR THE SCENE`, crop `cover`, gradient keterbacaan, dan tinggi desktop
+  461–521 piksel. Carousel, CTA, featured card, serta Gallery share navigation
+  tetap aktif.
+- Storefront 214/214, navigation 16 skenario, 110 responsive combinations, 32
+  route accessibility desktop/mobile, dan pemeriksaan hero live pada empat
+  viewport lulus. GitHub Actions tidak memulai job karena billing/spending
+  limit dan tidak diklaim hijau.
+- Readiness tetap 30/42 dengan 12 blocker; `commerceActivated=false`, provider
+  tetap terkunci, dan perubahan visual tidak mengaktifkan transaksi.
+
 ## 2026-08-27 - Gallery share navigation deployed
 
 - Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED` dari exact source

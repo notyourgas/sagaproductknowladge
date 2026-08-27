@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-27 - COYABAG previous campaign hero restored
+
+- Exact source `7213892ba0b5db3ba0d51742e17e379c278ee191` aktif pada immutable
+  release `20260827-7213892`; rollback `20260827-324a250` tersedia.
+- Homepage kembali ke hero full-bleed monokrom `BAGS FOR THE SCENE` dengan
+  crop dan proporsi responsif versi sebelumnya, sambil mempertahankan Gallery
+  share navigation serta featured card fix.
+- Storefront 214/214, 16 navigation scenarios, 110 responsive combinations,
+  32 route accessibility desktop/mobile, dan empat viewport live lulus.
+- Status `PRODUCTION_DEPLOYED`; readiness tetap 30/42, 12 blocker, dan commerce
+  nyata tetap fail-closed. GitHub Actions tidak dimulai akibat billing akun.
+
 ## 2026-08-27 - COYABAG Gallery share navigation deployed
 
 - Exact source `324a2506694c42c9ae82ccd9f7041f314640e84c` aktif pada immutable

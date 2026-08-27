@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 27 Agustus 2026 10:28 WIB
+Evidence cut-off: 27 Agustus 2026 11:01 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -3654,9 +3654,15 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release aktif `20260827-324a250` menjalankan exact source
-`324a2506694c42c9ae82ccd9f7041f314640e84c` dengan rollback
-`20260827-160e423`. Filter dan preview Gallery tersimpan pada URL yang dapat
+Release aktif `20260827-7213892` menjalankan exact source
+`7213892ba0b5db3ba0d51742e17e379c278ee191` dengan rollback
+`20260827-324a250`. Hero homepage kembali ke komposisi campaign full-bleed
+hitam-putih versi sebelumnya dengan headline `BAGS FOR THE SCENE`, crop
+`cover`, gradient keterbacaan, dan proporsi desktop 461–521 piksel. Storefront
+214/214, navigation 16 skenario, 110 responsive combinations, 32 route
+accessibility desktop/mobile, serta hero live 390/768/1440/1920 piksel lulus.
+GitHub Actions exact SHA tidak memulai job karena billing/spending limit dan
+tidak diklaim hijau. Filter dan preview Gallery tersimpan pada URL yang dapat
 dibagikan. Browser Back menutup preview dan mengembalikan fokus, deep link
 valid membuka foto di luar 16 item awal, sedangkan tautan item usang gagal
 tertutup dengan pemberitahuan tanpa menebak konten. Acceptance publik
