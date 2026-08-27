@@ -1,6 +1,21 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 28 Agustus 2026 02:55 WIB
+Evidence cut-off: 28 Agustus 2026 03:08 WIB
+
+S323 mobile Support Hub launcher label: exact pushed source
+`32eea103eee5fba88d70c6ed5f8eb493b19988eb` mengganti launcher mobile/tablet
+yang sebelumnya hanya memperlihatkan ikon `?` menjadi ikon plus label
+`Bantuan`; desktop tetap memakai label lengkap `Bantuan SagaView`. Nama
+aksesibel lengkap, target minimal 44 piksel, focus-visible, forced-colors,
+reduced-motion, dan no-overflow dipertahankan.
+
+Focused Playwright 390x844 dan 1440x900 membuktikan label terlihat, launcher
+berada di viewport, keyboard membuka/menutup dialog, bootstrap 200, focus
+containment, privacy no-upload, serta visual normal dan forced-colors. Dua
+suite backend lulus 8 test/68 assertion; TypeScript no-emit, build 5.097 modul,
+npm/Composer audit nol, dan diff check lulus. Status `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; API,
+database, data customer, payment, dan produk lain tidak berubah.
 
 S322 Owner Console action contrast: exact pushed source
 `5cba37504f35bac0b83e800cd4e503ab46a56d97` memperbaiki secondary action

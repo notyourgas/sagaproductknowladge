@@ -1,6 +1,23 @@
 # SagaView Product Knowledge
 
-Updated: 28 Agustus 2026 02:55 WIB
+Updated: 28 Agustus 2026 03:08 WIB
+
+SagaView S323 exact source
+`32eea103eee5fba88d70c6ed5f8eb493b19988eb` sudah `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`. Launcher
+Support Hub pada header Owner Console kini menampilkan label ringkas
+`Bantuan` di mobile dan tablet, bukan ikon tanda tanya tanpa teks. Desktop
+tetap menampilkan `Bantuan SagaView`, sementara nama aksesibel lengkap,
+focus-visible, target minimal 44 piksel, forced-colors, reduced-motion, dan
+layout tanpa overflow tetap dipertahankan.
+
+Focused Playwright lulus pada 390x844 dan 1440x900 serta membuktikan bootstrap
+Support Hub 200, privacy `automaticPhotoUpload=false`, focus containment,
+keyboard open/close, dan tidak ada kontrol upload. TypeScript no-emit, dua
+suite backend 8 test/68 assertion, build 5.097 modul, npm audit nol
+vulnerability, Composer audit nol advisory, dan diff check lulus. Tidak ada
+perubahan API, database, foto/path/output customer, payment, atau production;
+`BUSINESS_READY` tidak berubah.
 
 SagaView S322 exact source
 `5cba37504f35bac0b83e800cd4e503ab46a56d97` sudah `PUSHED /

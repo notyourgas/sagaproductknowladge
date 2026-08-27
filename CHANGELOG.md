@@ -1,5 +1,22 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-28 - SagaView S323 mobile Support Hub label sync
+
+- Ringkasan: menyinkronkan label launcher Support Hub yang kini terlihat jelas
+  pada mobile/tablet tanpa mengganggu header Owner Console.
+- Alasan: ikon tanda tanya tanpa teks membuat operator sulit mengenali tombol
+  untuk membuka bantuan.
+- Produk/area: SagaView Owner Console, Support Hub, UI/UX, accessibility, QA,
+  privacy, dan release provenance.
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; exact source
+  `32eea103eee5fba88d70c6ed5f8eb493b19988eb`.
+- Playwright desktop/mobile, keyboard/focus, forced-colors, reduced-motion,
+  no-overflow, bootstrap/no-upload, backend contract, TypeScript, build, dan
+  dependency audit nol lulus. Tidak ada deploy atau perubahan produk lain.
+- Dokumen terdampak: Product, feature ledger, changelog SagaView, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-08-28 - SagaView S322 Owner Console contrast sync
 
 - Ringkasan: menyinkronkan perbaikan kontras aksi aktivasi dan buka Studio

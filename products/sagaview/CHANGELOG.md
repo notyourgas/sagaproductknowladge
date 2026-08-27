@@ -1,5 +1,23 @@
 # SagaView Changelog
 
+## 2026-08-28 - S323 mobile Support Hub launcher label
+
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`.
+- Before: launcher Support Hub pada mobile/tablet hanya memperlihatkan ikon
+  tanda tanya, sehingga fungsi tombol bantuan sulit dikenali operator.
+- After: exact source `32eea103eee5fba88d70c6ed5f8eb493b19988eb`
+  menampilkan label `Bantuan` pada mobile/tablet dan mempertahankan label
+  `Bantuan SagaView` di desktop, nama aksesibel lengkap, target 44 piksel,
+  focus-visible, serta state `Tutup` ketika panel aktif.
+- Acceptance: focused Playwright lulus pada 390x844 dan 1440x900 untuk label,
+  no-overflow, keyboard/focus, forced-colors, reduced-motion, bootstrap 200,
+  serta no-upload. TypeScript no-emit, backend 8 test/68 assertion, build 5.097
+  modul, npm/Composer audit nol, dan diff check lulus.
+- Boundary: tidak ada perubahan API, database, permission, foto/path/output
+  customer, upload, payment, deploy production, atau produk lain;
+  `BUSINESS_READY` tidak berubah.
+
 ## 2026-08-28 - S322 Owner Console action contrast
 
 - Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /

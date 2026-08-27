@@ -12,12 +12,34 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-28T02:55:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-28T03:08:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
-| Informasi terakhir disinkronkan | SagaView S322 Owner Console action contrast. |
+| Informasi terakhir disinkronkan | SagaView S323 mobile Support Hub launcher label. |
 | Status sinkronisasi | SagaView `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; sinkronisasi canonical `main` menunggu worktree main kembali bersih. |
+
+## SagaView S323 mobile Support Hub launcher label
+
+- Exact pushed source `32eea103eee5fba88d70c6ed5f8eb493b19988eb`
+  menambahkan label ringkas `Bantuan` pada launcher mobile/tablet dan
+  mempertahankan `Bantuan SagaView` pada desktop.
+- Playwright 390x844 dan 1440x900 memverifikasi label, target 44 piksel,
+  no-overflow, keyboard/focus, forced-colors, reduced-motion, bootstrap 200,
+  dan privacy no-upload. TypeScript, backend 8 test/68 assertion, build 5.097
+  modul, serta npm/Composer audit nol lulus.
+- Tidak ada perubahan API, database, permission, data customer, upload,
+  payment, deploy, atau produk lain. Production dan `BUSINESS_READY` tetap.
+
+## File yang berubah pada sinkronisasi ini (SagaView S323)
+
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaView S322 Owner Console action contrast
 

@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-28 - SagaView S323 mobile Support Hub label
+
+- Exact pushed source `32eea103eee5fba88d70c6ed5f8eb493b19988eb`
+  membuat launcher bantuan mudah dikenali di mobile/tablet melalui label
+  `Bantuan`, sambil mempertahankan label lengkap di desktop.
+- Playwright 390x844 dan 1440x900, keyboard/focus, forced-colors,
+  reduced-motion, no-overflow, bootstrap/no-upload, backend 8 test/68
+  assertion, TypeScript, build 5.097 modul, serta dependency audit nol lulus.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED`; API, data, privacy boundary, payment, dan produk lain
+  tidak berubah.
+
 ## 2026-08-28 - SagaView S322 Owner Console action contrast
 
 - Exact pushed source `5cba37504f35bac0b83e800cd4e503ab46a56d97`
