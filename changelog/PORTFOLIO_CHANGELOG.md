@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-27 - SagaBook S297-S301 release candidate validated, VPS outage blocked activation
+
+- Exact main `1a69dce2e3fec4aa9b0b0f84d3249256a788b848` menggabungkan recovery
+  stok antarcabang/stale/dialog dan kontrak restore capacity receipt.
+- Backend 1.175/1.175, focused 48/48, browser mobile/tablet/desktop 18/18,
+  persistence 18/18 + 4/4, build/type/design, dan dependency audit nol lulus.
+- Backup terenkripsi, checksum, salinan terpisah, disposable restore, immutable
+  archive, serta Git bundle tersedia. Upload terputus sebelum perintah deploy
+  remote; VPS lalu tidak dapat dijangkau pada port 22/443 secara global.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+  terakhir terverifikasi tetap release `20260826201936-2b22b83` dan health
+  live pasca-outage belum terverifikasi.
+
 ## 2026-08-27 - COYABAG previous campaign hero restored
 
 - Exact source `7213892ba0b5db3ba0d51742e17e379c278ee191` aktif pada immutable

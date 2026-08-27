@@ -1,6 +1,22 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 27 Agustus 2026 10:20 WIB
+Evidence cut-off: 27 Agustus 2026 11:35 WIB
+
+Kontrak restore receipt S301 dan kandidat gabungan S297-S300 exact main
+`1a69dce2e3fec4aa9b0b0f84d3249256a788b848` telah `CONFIRMED / PUSHED /
+QA_VALIDATED / SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Hotfix S301 menyelaraskan verifier
+restore dengan receipt delapan field S297 dan mewajibkan
+`restore_capacity_preflight=passed`. Full PHP 1.175/1.175 (13.279 assertion),
+focused release+stok 48/48 (418 assertion), build 5.151 modul, browser stok
+mobile/tablet/desktop 18/18, persistence unit 18/18 dan E2E 4/4, typecheck,
+design 26/0, Pint, Bash/PowerShell parse, npm audit dan Composer OSV nol lulus.
+Fresh encrypted backup, checksum, salinan terpisah, dan disposable restore juga
+lulus. Atomic activation belum dijalankan karena transport SSH putus saat
+upload lalu endpoint VPS port 22/443 tidak dapat dijangkau secara global;
+remote deploy command belum dieksekusi. Production terakhir terverifikasi tetap
+`2b22b835` / `20260826201936-2b22b83`, tetapi health live setelah outage belum
+dapat diverifikasi. `BUSINESS_READY=false`.
 
 Recovery dialog mutasi stok basi S300 exact source
 `d4dbae8e851c26a03c677cfee188f15fac630991` telah `CONFIRMED / PUSHED /

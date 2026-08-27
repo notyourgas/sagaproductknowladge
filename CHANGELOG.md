@@ -1,5 +1,24 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-27 - SagaBook S297-S301 candidate and VPS outage sync
+
+- Ringkasan: menyinkronkan exact main SagaBook `1a69dce2…`, gate lengkap,
+  backup/restore baru, dan kegagalan transport yang terjadi sebelum atomic
+  activation.
+- Alasan: receipt kapasitas restore S297 membutuhkan verifier delapan-field;
+  setelah diperbaiki, release harus tetap gagal tertutup ketika VPS tidak dapat
+  dijangkau.
+- Produk/area: SagaBook stock administration, recovery state, release safety,
+  backup/restore, DevOps, dan production audit.
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production terakhir terverifikasi tetap
+  `2b22b835` / `20260826201936-2b22b83`.
+- Production berubah: tidak melalui proses deploy ini; remote deploy command,
+  migration, dan symlink switch belum dijalankan. Health live pasca-outage
+  belum terverifikasi.
+- Dokumen terdampak: Product/changelog/ledger SagaBook, portfolio, root
+  changelog, dan sync status.
+
 ## 2026-08-27 - COYABAG previous campaign hero production sync
 
 - Ringkasan: menyinkronkan kembalinya hero full-bleed monokrom

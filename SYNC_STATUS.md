@@ -12,12 +12,25 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-27T11:01:41+07:00 |
+| Waktu pembaruan terakhir | 2026-08-27T11:35:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
-| Informasi terakhir disinkronkan | COYABAG previous full-bleed campaign hero pada exact source `7213892ba0b5db3ba0d51742e17e379c278ee191`. |
-| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED`; commerce tetap fail-closed. |
+| Informasi terakhir disinkronkan | SagaBook S297-S301 exact-main candidate `1a69dce2e3fec4aa9b0b0f84d3249256a788b848` dan deploy blocker outage VPS. |
+| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production live health pasca-outage belum terverifikasi. |
+
+## SagaBook S297-S301 release candidate dan outage VPS
+
+- Exact main `1a69dce2e3fec4aa9b0b0f84d3249256a788b848` lulus full backend,
+  focused release+stok, build, browser mobile/tablet/desktop, persistence,
+  typecheck, design, formatting/syntax, dan dependency audit.
+- Fresh encrypted backup, checksum, salinan terpisah, disposable restore,
+  immutable archive, dan Git bundle lulus.
+- Koneksi SSH putus saat upload sebelum remote deploy command. Port 22/443
+  kemudian timeout dari lokal dan node eksternal; tidak ada migration atau
+  symlink switch melalui attempt ini.
+- Production terakhir terverifikasi tetap exact source `2b22b835`, release
+  `20260826201936-2b22b83`; health live sesudah outage belum terverifikasi.
 
 ## COYABAG previous full-bleed campaign hero
 

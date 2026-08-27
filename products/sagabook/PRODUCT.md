@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 27 Agustus 2026 10:20 WIB
-Evidence status: stock administration production-activated; S297 merged; S298-S300 stock recovery candidate, not deployed
+Updated: 27 Agustus 2026 11:35 WIB
+Evidence status: stock administration production-activated; S297-S301 exact-main candidate local-validated; deploy blocked by VPS outage
 
 ## Tujuan dokumen
 
@@ -15,6 +15,21 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- Kandidat gabungan stok S297-S300 dan hotfix kontrak restore receipt S301
+  tersedia pada exact main
+  `1a69dce2e3fec4aa9b0b0f84d3249256a788b848`. Verifier kini menerima tepat
+  delapan field receipt dan mewajibkan `restore_capacity_preflight=passed`.
+  Full PHP 1.175/1.175, focused release+stok 48/48, build 5.151 modul, browser
+  mobile/tablet/desktop 18/18, persistence 18/18 + 4/4, typecheck, design,
+  formatting/syntax, dan dependency audit nol lulus. Fresh encrypted backup,
+  checksum, offsite round-trip, serta disposable restore lulus. Upload artifact
+  berhenti sebelum remote deploy command akibat koneksi SSH putus; endpoint VPS
+  kemudian timeout pada port 22/443 dari pemeriksaan lokal dan beberapa node
+  eksternal. Status kandidat `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production terakhir terverifikasi tetap
+  `2b22b835` / `20260826201936-2b22b83`, sedangkan health live setelah outage
+  belum dapat diklaim.
 
 - Recovery dialog mutasi stok basi S300 pada exact source
   `d4dbae8e851c26a03c677cfee188f15fac630991` memperbarui PR #19. Ketika

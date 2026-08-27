@@ -1,5 +1,25 @@
 # SagaBook Changelog
 
+## 2026-08-27 - Kandidat stok S297-S300 dan kontrak receipt S301 siap, deploy tertahan outage VPS
+
+- Exact main `1a69dce2e3fec4aa9b0b0f84d3249256a788b848` menggabungkan kapasitas
+  disposable restore S297, isolasi cabang S298, stale lock S299, recovery draft
+  S300, dan verifier receipt delapan-field S301.
+- Full PHP 1.175/1.175 (13.279 assertion), focused release+stok 48/48 (418),
+  build 5.151 modul, browser stok mobile/tablet/desktop 18/18, persistence
+  18/18 + 4/4, typecheck/design/Pint/syntax, serta npm dan Composer OSV audit
+  nol lulus.
+- Fresh encrypted backup run `20260827T041612Z`, checksum, salinan terpisah,
+  dan disposable restore lulus. Artifact immutable lokal
+  `20260827041737-1a69dce` serta Git bundle tervalidasi.
+- Upload berhenti sebelum remote deploy command karena koneksi SSH putus;
+  sesudahnya port 22 dan 443 pada VPS timeout dari pemeriksaan lokal dan node
+  eksternal. Tidak ada symlink switch atau migration baru yang dijalankan.
+- Status `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+  Production terakhir terverifikasi tetap `2b22b835` / release
+  `20260826201936-2b22b83`; health live pasca-outage belum terverifikasi dan
+  `BUSINESS_READY=false`.
+
 ## 2026-08-27 - Recovery dialog mutasi stok basi S300
 
 - Exact source `d4dbae8e851c26a03c677cfee188f15fac630991` memperbarui PR #19 agar
