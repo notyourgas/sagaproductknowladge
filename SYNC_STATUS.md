@@ -12,12 +12,36 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-27T23:20:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-28T03:27:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
-| Informasi terakhir disinkronkan | SagaView S320 archive media identity guard. |
-| Status sinkronisasi | SagaView `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED / PRODUCTION_UNCHANGED`; `BUSINESS_READY=false`. |
+| Informasi terakhir disinkronkan | SagaBook S309 tenant-safe post-payment return. |
+| Status sinkronisasi | SagaBook `CONFIRMED / PUSHED / LOCAL_VALIDATED / RELEASE_BLOCKED / IMPLEMENTED_NOT_DEPLOYED`; production lama sehat dan `BUSINESS_READY=false`. |
+
+## SagaBook S309 tenant-safe post-payment return
+
+- Exact main `bd16dbe5ae7399c934e0252c66a4736ce2e6b618` menjaga public booking
+  slug tenant pada return detail, transfer, QRIS, reschedule, serta callback
+  provider agar alur pascapembayaran tidak masuk path 404 tanpa tenant.
+- Full PHP 1.190/1.190 (13.408 assertion), focused contract/API/backend,
+  browser mobile/desktop, accessibility, build/typecheck/format, dan audit
+  dependency lulus. Immutable archive, manifest, Git bundle, encrypted backup,
+  checksum, dan disposable restore juga lulus.
+- Dua correction round deployment berhenti sebelum activation karena audit
+  data production menemukan agregat 2 delivery WhatsApp yatim atau lintas
+  tenant. Tidak ada data customer yang diubah atau dihapus untuk melewati
+  gate. Production tetap source `24a6bab6d57aa3da2e1202a40ecf87210593832a`,
+  release `20260827125239-24a6bab`, rollback
+  `20260827050516-1a69dce`, dengan service/migration/journal/smoke sehat.
+
+## File yang berubah pada sinkronisasi ini (SagaBook S309)
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaView S320 archive media identity guard
 

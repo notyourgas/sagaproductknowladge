@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 27 Agustus 2026 20:13 WIB
-Evidence status: Closing Staff consumable stock sync is production-deployed and active for the single ledger-ready branch; authenticated Staff acceptance remains pending
+Updated: 28 Agustus 2026 03:27 WIB
+Evidence status: post-payment tenant-safe return is merged and locally validated; production activation is fail-closed on an existing WhatsApp delivery integrity gap
 
 ## Tujuan dokumen
 
@@ -15,6 +15,24 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- Perbaikan return pascapembayaran S309 sudah merge melalui PR #35 ke exact
+  main `bd16dbe5ae7399c934e0252c66a4736ce2e6b618`. URL detail, transfer manual,
+  QRIS, reschedule, serta callback provider kini mempertahankan public booking
+  slug tenant sehingga pelanggan tidak diarahkan ke path tanpa tenant yang
+  dapat menghasilkan 404 setelah pembayaran sukses. Full PHP 1.190/1.190
+  (13.408 assertion), contract pembayaran/tenant, browser mobile 390x844 dan
+  desktop 1440x900, build, typecheck, format, serta audit dependency lulus.
+  Fresh encrypted backup, checksum, dan disposable restore juga lulus. Dua
+  correction round deployment berhenti sebelum aktivasi karena database audit
+  menemukan agregat 2 delivery WhatsApp yatim atau lintas tenant; release lama
+  tetap aktif dan sehat pada exact source
+  `24a6bab6d57aa3da2e1202a40ecf87210593832a`, release
+  `20260827125239-24a6bab`, dengan rollback `20260827050516-1a69dce`, service
+  aktif, 0 migration pending, 0 queue error, serta public/security smoke 3/3.
+  Status `CONFIRMED / PUSHED / LOCAL_VALIDATED / RELEASE_BLOCKED /
+  IMPLEMENTED_NOT_DEPLOYED`; perbaikan/otorisasi data integrity terpisah
+  diperlukan dan `BUSINESS_READY=false`.
 
 - Closing Staff consumable stock sync exact merged source
   `24a6bab6d57aa3da2e1202a40ecf87210593832a` aktif pada immutable release
