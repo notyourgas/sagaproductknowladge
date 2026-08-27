@@ -1,5 +1,23 @@
 # SagaView Changelog
 
+## 2026-08-28 - S322 Owner Console action contrast
+
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`.
+- Before: teks putih dan border transparan pada aksi `Aktifkan perangkat` serta
+  `Buka Studio Console` menyatu dengan kartu Owner Console yang terang,
+  sehingga operator sulit menemukan tombol.
+- After: exact source `5cba37504f35bac0b83e800cd4e503ab46a56d97`
+  memakai teks ink, latar krem, border oranye, shadow tipis, dan hover kontras
+  tanpa mengubah target 44 piksel atau focus-visible.
+- Acceptance: focused Playwright lulus pada 1440x900 dan 390x844, termasuk
+  retry 503 yang mempertahankan link lama, no-overflow, forced-colors, dan
+  reduced-motion. Build 5.097 modul, npm audit nol vulnerability, Composer
+  audit nol advisory, dan diff check lulus.
+- Boundary: tidak ada perubahan API, database, permission, foto/path/output
+  customer, upload, payment, atau produk lain. Tidak ada deploy production dan
+  `BUSINESS_READY` tidak berubah.
+
 ## 2026-08-28 - S321 restricted archive media enrollment
 
 - Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /

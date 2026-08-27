@@ -1,5 +1,23 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-28 - SagaView S322 Owner Console contrast sync
+
+- Ringkasan: menyinkronkan perbaikan kontras aksi aktivasi dan buka Studio
+  Console pada surface Owner yang terang.
+- Alasan: teks putih dan border transparan sebelumnya menyatu dengan halaman
+  sehingga operator sulit menemukan jalur masuk Console.
+- Produk/area: SagaView Owner Console, UI/UX, accessibility, QA, dan release
+  provenance.
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; exact source
+  `5cba37504f35bac0b83e800cd4e503ab46a56d97`.
+- Focused Playwright desktop/mobile, failure preservation, forced-colors,
+  reduced-motion, no-overflow, build, dan dependency audit nol lulus. Tidak
+  ada API, database, data customer, upload, payment, deploy, atau perubahan
+  produk lain.
+- Dokumen terdampak: Product, feature ledger, changelog SagaView, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-08-28 - SagaView S321 archive media enrollment sync
 
 - Ringkasan: menyinkronkan enrollment fingerprint media custody yang ter-redact,
