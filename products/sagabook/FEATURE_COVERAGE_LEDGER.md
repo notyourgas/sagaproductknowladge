@@ -1,6 +1,39 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 27 Agustus 2026 13:08 WIB
+Evidence cut-off: 27 Agustus 2026 15:09 WIB
+
+Real-API conflict recovery UAT stok consumable S305 exact source
+`578305c7127503f9ceffc3baf0fd60380ff4e775` pada PR #25 telah
+`CONFIRMED / PUSHED / QA_VALIDATED / SECURITY_VALIDATED /
+DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+Coverage browser tanpa interception membuktikan konflik optimistic lock nyata
+dari Laravel: Admin Cabang mempertahankan draft satu pack dan alasan setelah
+HTTP 409, membaca ulang saldo authoritative 120, merebase proyeksi 140, lalu
+retry dengan idempotency key yang sama dan lock version terbaru. Read-after-write
+serta reload berakhir pada 140 pcs dan tepat tiga mutasi append-only tanpa
+duplikasi. Cabang Dimas tetap hanya Kemang. Desktop 1440x900 dan mobile 390x844
+lulus keyboard, dialog semantics, target 44px, forced-colors, reduced-motion,
+dan no-overflow. Focused PHP 10/10 (70 assertion), full PHP 1.175/1.175
+(13.279 assertion), build 5.132 modul, typecheck, design 26/0, npm/Composer
+audit nol, syntax, dan diff check lulus. Harness saja; production tetap
+`1a69dce2` / `20260827050516-1a69dce`. Merge/release dan authenticated pilot
+UAT belum dilakukan; `BUSINESS_READY=false`.
+
+Synthetic UAT stok consumable S304 exact source
+`87a9dd93488d3f63171bbe8137c78dc9a117fd2c` pada PR #23 telah
+`CONFIRMED / PUSHED / QA_VALIDATED / SECURITY_VALIDATED /
+DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+Coverage browser tanpa mock membuktikan alur React -> API Laravel -> capability
+role/cabang -> SQLite disposable -> read-after-write untuk Owner dan Admin
+Cabang. Opening 40 kertas + 30 packaging, restock satu pack menjadi 60,
+request koreksi 57 yang tidak langsung mengubah saldo, penolakan akses review
+dan cabang lain, approval Owner menjadi 57, reload persistence, movement
+append-only, serta replay idempotent tanpa mutasi ganda lulus pada 1440x900 dan
+390x844 tanpa overflow. Focused PHP 10/10 (70 assertion), full PHP 1.175/1.175
+(13.279 assertion), build, typecheck, design 26/0, npm audit nol, Composer audit
+nol, syntax, dan diff check lulus. Harness saja; production tetap
+`1a69dce2` / `20260827050516-1a69dce`. Authenticated UAT dengan akun pilot dan
+opening stock nyata belum dilakukan; `BUSINESS_READY=false`.
 
 Preflight binding backup release dua tahap S302-S303 exact source
 `40caa45a98ef9f3269368f10983572fb6c897659` telah `CONFIRMED / PUSHED /

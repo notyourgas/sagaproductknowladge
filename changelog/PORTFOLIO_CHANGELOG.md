@@ -22,6 +22,28 @@
 - Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
   SagaView tidak berubah dan `BUSINESS_READY=false` sampai prasyarat mesin serta
   UAT manual 14 gate lulus.
+## 2026-08-27 - SagaBook S305 real stock conflict recovery UAT
+
+- Exact source `578305c7127503f9ceffc3baf0fd60380ff4e775` pada PR #25 membuktikan
+  konflik optimistic lock stok melalui browser, React, Laravel, dan SQLite
+  disposable tanpa interception atau data customer.
+- Admin Cabang mempertahankan draft setelah HTTP 409, menerima saldo terbaru,
+  dan retry idempotent sampai 140 pcs dengan tepat tiga mutasi append-only.
+  Desktop/mobile, permission cabang, accessibility, full/focused regression,
+  build/type/design, serta dependency audit lulus.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+  SagaBook tetap `1a69dce2` / `20260827050516-1a69dce`.
+
+## 2026-08-27 - SagaBook S304 real synthetic stock UAT
+
+- Exact source `87a9dd93488d3f63171bbe8137c78dc9a117fd2c` pada PR #23 menutup gap
+  antara browser mock dan backend test dengan alur React -> Laravel ->
+  role/cabang -> SQLite disposable tanpa data atau credential customer.
+- Opening, restock replay idempotent, approval-gated correction,
+  permission-negative, append-only movement, reload, desktop/mobile, build,
+  full/focused regression, type/design, serta dependency audit lulus.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+  SagaBook tetap `1a69dce2` / `20260827050516-1a69dce`.
 
 ## 2026-08-27 - SagaBook S303 two-phase backup-binding preflight
 

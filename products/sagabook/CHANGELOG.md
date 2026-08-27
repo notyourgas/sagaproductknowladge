@@ -1,5 +1,41 @@
 # SagaBook Changelog
 
+## 2026-08-27 - Real-API conflict recovery UAT stok S305
+
+- Exact source `578305c7127503f9ceffc3baf0fd60380ff4e775` pada PR #25 menambah
+  acceptance browser tanpa API interception untuk optimistic-lock conflict
+  stok consumable antara Owner dan Admin Cabang pada SQLite disposable.
+- HTTP 409 nyata mempertahankan draft satu pack dan alasan, refresh
+  authoritative memperbarui saldo menjadi 120 dan proyeksi 140, lalu retry
+  memakai idempotency key yang sama serta lock version terbaru. Read-after-write
+  dan reload membuktikan 140 pcs, tepat tiga mutasi append-only, dan nol
+  duplikasi; scope Admin Cabang tetap hanya Kemang.
+- Desktop 1/1 dan mobile 1/1 lulus dengan keyboard, dialog semantics, target
+  44px, forced-colors, reduced-motion, dan no-overflow. Focused PHP 10/10 (70
+  assertion), full PHP 1.175/1.175 (13.279 assertion), build 5.132 modul,
+  critical typecheck, design 26/0, npm/Composer audit nol, syntax, dan diff
+  check lulus.
+- Status `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+  Production tetap exact `1a69dce2` pada release
+  `20260827050516-1a69dce`; authenticated pilot UAT dan `BUSINESS_READY` masih
+  menjadi gate terpisah.
+
+## 2026-08-27 - Synthetic Owner/Admin Cabang stock UAT S304
+
+- Exact source `87a9dd93488d3f63171bbe8137c78dc9a117fd2c` pada PR #23 menambahkan
+  acceptance browser tanpa API mock yang menghubungkan React, API Laravel,
+  capability role/cabang, dan SQLite disposable.
+- Opening 40 kertas + 30 packaging, restock satu pack menjadi 60, request
+  koreksi 57 yang tetap menahan saldo, denial review/cabang lain, approval
+  Owner, reload persistence, movement append-only, dan replay idempotent lulus
+  pada desktop 1440x900 serta mobile 390x844 tanpa overflow.
+- Focused PHP 10/10 (70 assertion), full PHP 1.175/1.175 (13.279 assertion),
+  build, critical typecheck, design 26/0, npm audit nol, Composer audit nol,
+  syntax, dan diff check lulus.
+- Status `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+  Harness tidak mengubah runtime; production tetap exact `1a69dce2` pada
+  release `20260827050516-1a69dce` dan `BUSINESS_READY=false`.
+
 ## 2026-08-27 - Preflight backup dua tahap sebelum upload gate S303
 
 - Exact source `40caa45a98ef9f3269368f10983572fb6c897659` memperbarui PR #21 dengan
