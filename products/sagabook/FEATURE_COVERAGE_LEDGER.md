@@ -1,6 +1,21 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 27 Agustus 2026 15:09 WIB
+Evidence cut-off: 27 Agustus 2026 17:18 WIB
+
+Acceptance MySQL stok consumable S306 exact source
+`bd5806e0137c1be95296314b4b8134912430f20d` pada PR #28 telah
+`CONFIRMED / PUSHED / QA_VALIDATED / SECURITY_VALIDATED /
+DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+Disposable MySQL 8.4.9 menjalankan `migrate:fresh`, kontrak stok 10/10
+(70 assertion), dan cleanup aman; probe menolak driver, versi, atau nama
+database yang tidak sesuai. Full PHP 1.175/1.175 (13.279), visual smoke
+desktop/mobile 26/26, dua clean install/build 5.132 modul, typecheck, design
+26/0, npm/Composer audit nol, dan syntax lulus. Dependency `react-is` dikunci
+ke React 18 untuk menutup clean-build failure Recharts; snapshot QRIS mobile
+dikoreksi dari baseline lama ke assertion fee Rp236 yang sudah berlaku.
+GitHub Actions gagal sebelum satu pun step berjalan karena billing akun;
+production tetap `1a69dce2` / `20260827050516-1a69dce`, merge/release dan
+authenticated pilot UAT belum dilakukan; `BUSINESS_READY=false`.
 
 Real-API conflict recovery UAT stok consumable S305 exact source
 `578305c7127503f9ceffc3baf0fd60380ff4e775` pada PR #25 telah

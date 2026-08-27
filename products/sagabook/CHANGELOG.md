@@ -1,5 +1,21 @@
 # SagaBook Changelog
 
+## 2026-08-27 - Acceptance MySQL stok dan clean-build recovery S306
+
+- Exact source `bd5806e0137c1be95296314b4b8134912430f20d` pada PR #28 menambahkan
+  harness disposable MySQL 8.4 untuk migration, kontrak stok, probe lingkungan,
+  serta cleanup fail-closed; job MySQL CI kini memanggil kontrak stok langsung.
+- MySQL 8.4.9 lulus 10/10 test (70 assertion), full PHP lulus 1.175/1.175
+  (13.279), visual desktop/mobile 26/26, dan dua clean install/build memproses
+  5.132 modul. Typecheck, design 26/0, syntax, npm serta Composer audit nol.
+- Clean build Recharts dipulihkan dengan dependency `react-is` yang kompatibel
+  React 18. Snapshot QRIS mobile yang tertinggal diselaraskan dengan assertion
+  aktif: fee Rp236 dan total Rp100.236; tidak ada perubahan UI runtime.
+- Status `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. GitHub Actions gagal sebelum step berjalan karena
+  billing akun. Production tetap exact `1a69dce2` / release
+  `20260827050516-1a69dce`.
+
 ## 2026-08-27 - Real-API conflict recovery UAT stok S305
 
 - Exact source `578305c7127503f9ceffc3baf0fd60380ff4e775` pada PR #25 menambah

@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 27 Agustus 2026 15:09 WIB
-Evidence status: S304-S305 stock UAT and S302-S303 release preflight are pushed but not deployed; stock administration and S297-S301 remain production-activated; business readiness still pending authenticated pilot UAT
+Updated: 27 Agustus 2026 17:18 WIB
+Evidence status: S302-S306 release and stock acceptance hardening are pushed but not deployed; stock administration and S297-S301 remain production-activated; business readiness still pending authenticated pilot UAT
 
 ## Tujuan dokumen
 
@@ -15,6 +15,18 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- Acceptance MySQL stok S306 exact source
+  `bd5806e0137c1be95296314b4b8134912430f20d` pada PR #28 menambahkan
+  harness disposable MySQL 8.4 yang memverifikasi migration dari kosong,
+  kontrak stok, versi server/database yang benar, dan cleanup fail-closed.
+  Kontrak stok lulus 10/10 (70 assertion), full PHP 1.175/1.175 (13.279),
+  visual desktop/mobile 26/26, dua clean build 5.132 modul, typecheck, design,
+  serta npm/Composer audit nol. Dependency `react-is` kini dikunci kompatibel
+  dengan React 18/Recharts; snapshot QRIS mobile diselaraskan dengan assertion
+  fee Rp236 yang sudah kanonik. Status `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; GitHub Actions gagal sebelum step berjalan karena
+  billing akun dan production tidak berubah.
 
 - Real-API conflict recovery UAT stok S305 exact source
   `578305c7127503f9ceffc3baf0fd60380ff4e775` pada PR #25 membuktikan
