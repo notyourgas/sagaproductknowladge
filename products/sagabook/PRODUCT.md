@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 27 Agustus 2026 13:08 WIB
-Evidence status: S302-S303 two-phase release preflight pushed but not deployed; stock administration and S297-S301 remain production-activated; business readiness still pending authenticated UAT and pilot
+Updated: 27 Agustus 2026 14:16 WIB
+Evidence status: S304 synthetic stock UAT and S302-S303 release preflight are pushed but not deployed; stock administration and S297-S301 remain production-activated; business readiness still pending authenticated pilot UAT
 
 ## Tujuan dokumen
 
@@ -15,6 +15,18 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- Synthetic UAT stok S304 exact source
+  `87a9dd93488d3f63171bbe8137c78dc9a117fd2c` pada PR #23 menguji browser
+  React, API Laravel, role/cabang, serta database SQLite disposable dalam satu
+  alur nyata tanpa API mock. Owner dan Admin Cabang berhasil melewati opening,
+  restock idempotent, request koreksi approval-gated, permission-negative,
+  read-after-write, reload persistence, dan histori append-only pada desktop
+  serta mobile tanpa overflow. Full PHP 1.175/1.175 (13.279 assertion),
+  focused 10/10 (70), build, typecheck, design, dan dependency audit nol lulus.
+  Status `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; ini harness acceptance saja dan tidak mengubah
+  runtime production.
 
 - Hardening release dua tahap S302-S303 exact source
   `40caa45a98ef9f3269368f10983572fb6c897659` pada PR #21 memeriksa pointer

@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-27 - SagaBook S304 real synthetic stock UAT
+
+- Exact source `87a9dd93488d3f63171bbe8137c78dc9a117fd2c` pada PR #23 menutup gap
+  antara browser mock dan backend test dengan alur React -> Laravel ->
+  role/cabang -> SQLite disposable tanpa data atau credential customer.
+- Opening, restock replay idempotent, approval-gated correction,
+  permission-negative, append-only movement, reload, desktop/mobile, build,
+  full/focused regression, type/design, serta dependency audit lulus.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+  SagaBook tetap `1a69dce2` / `20260827050516-1a69dce`.
+
 ## 2026-08-27 - SagaBook S303 two-phase backup-binding preflight
 
 - Exact source `40caa45a98ef9f3269368f10983572fb6c897659` pada PR #21 mengulang

@@ -1,5 +1,21 @@
 # SagaBook Changelog
 
+## 2026-08-27 - Synthetic Owner/Admin Cabang stock UAT S304
+
+- Exact source `87a9dd93488d3f63171bbe8137c78dc9a117fd2c` pada PR #23 menambahkan
+  acceptance browser tanpa API mock yang menghubungkan React, API Laravel,
+  capability role/cabang, dan SQLite disposable.
+- Opening 40 kertas + 30 packaging, restock satu pack menjadi 60, request
+  koreksi 57 yang tetap menahan saldo, denial review/cabang lain, approval
+  Owner, reload persistence, movement append-only, dan replay idempotent lulus
+  pada desktop 1440x900 serta mobile 390x844 tanpa overflow.
+- Focused PHP 10/10 (70 assertion), full PHP 1.175/1.175 (13.279 assertion),
+  build, critical typecheck, design 26/0, npm audit nol, Composer audit nol,
+  syntax, dan diff check lulus.
+- Status `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+  Harness tidak mengubah runtime; production tetap exact `1a69dce2` pada
+  release `20260827050516-1a69dce` dan `BUSINESS_READY=false`.
+
 ## 2026-08-27 - Preflight backup dua tahap sebelum upload gate S303
 
 - Exact source `40caa45a98ef9f3269368f10983572fb6c897659` memperbarui PR #21 dengan
