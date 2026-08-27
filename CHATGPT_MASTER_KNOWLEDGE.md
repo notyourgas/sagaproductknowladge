@@ -1,8 +1,19 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 27 Agustus 2026 17:18 WIB
+Evidence cut-off: 27 Agustus 2026 18:19 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
+
+SagaBook kandidat integrasi S307 exact source
+`86211797e51a9201401158c7c35ea1985505a931` pada PR #30 menggabungkan
+release backup-binding preflight, synthetic stock UAT, real HTTP 409 recovery,
+serta MySQL/clean-build acceptance. Semua exact head menjadi ancestor kandidat
+tanpa konflik file. Fresh combined gate lulus: focused 26/26, MySQL 10/10,
+full PHP 1.179/1.179, clean build 5.132 modul, type/design/dependency audit,
+stock browser 4/4, dan visual smoke 26/26. Status `PUSHED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; PR mergeable, Actions billing gagal tanpa step,
+production tetap `1a69dce2` / `20260827050516-1a69dce`, dan merge/release
+memerlukan human gate serta fresh exact-SHA evidence.
 
 SagaBook acceptance MySQL stok S306 exact source
 `bd5806e0137c1be95296314b4b8134912430f20d` pada PR #28 memverifikasi

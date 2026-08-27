@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 27 Agustus 2026 17:18 WIB
-Evidence status: S302-S306 release and stock acceptance hardening are pushed but not deployed; stock administration and S297-S301 remain production-activated; business readiness still pending authenticated pilot UAT
+Updated: 27 Agustus 2026 18:19 WIB
+Evidence status: S307 integrated release/stock candidate is pushed but not deployed; stock administration and S297-S301 remain production-activated; business readiness still pending authenticated pilot UAT
 
 ## Tujuan dokumen
 
@@ -15,6 +15,18 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- Kandidat integrasi S307 exact source
+  `86211797e51a9201401158c7c35ea1985505a931` pada PR #30 menggabungkan
+  exact head S302-S303, S304, S305, dan S306 di atas exact main `1a69dce2`
+  tanpa konflik file atau commit yang hilang. Fresh combined gate lulus:
+  focused 26/26 (152 assertion), disposable MySQL 8.4.9 10/10 (70), full PHP
+  1.179/1.179 (13.305), clean install, build 5.132 modul, typecheck, design
+  26/0, dependency audit nol, stock browser 4/4 pada database terisolasi, dan
+  visual smoke 26/26. PR mergeable; GitHub Actions gagal sebelum step berjalan
+  karena billing akun. Status `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; merge dan production release tetap memerlukan
+  human gate serta fresh exact-SHA release evidence.
 
 - Acceptance MySQL stok S306 exact source
   `bd5806e0137c1be95296314b4b8134912430f20d` pada PR #28 menambahkan

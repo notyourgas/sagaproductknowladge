@@ -1,5 +1,21 @@
 # SagaBook Changelog
 
+## 2026-08-27 - Kandidat integrasi release dan stok S307
+
+- Exact source `86211797e51a9201401158c7c35ea1985505a931` pada PR #30
+  menggabungkan PR #21, #23, #25, dan #28 dalam urutan deterministik di atas
+  exact main `1a69dce2`; semua head menjadi ancestor dan tidak ada konflik file.
+- Fresh gate gabungan lulus: focused 26/26 (152 assertion), disposable MySQL
+  8.4.9 10/10 (70), full PHP 1.179/1.179 (13.305), clean install, build 5.132
+  modul, typecheck, design 26/0, dependency audit nol, stock UAT mobile+desktop
+  4/4 pada database terisolasi, dan visual smoke 26/26.
+- Satu percobaan yang memakai satu database untuk dua spec stateful menemukan
+  collision fixture; gate final memisahkan setiap spec/project ke database
+  disposable sesuai kontrak runner dan seluruh 4/4 lulus.
+- Status `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+  PR mergeable; Actions gagal sebelum step karena billing. Production tetap
+  exact `1a69dce2` pada release `20260827050516-1a69dce`.
+
 ## 2026-08-27 - Acceptance MySQL stok dan clean-build recovery S306
 
 - Exact source `bd5806e0137c1be95296314b4b8134912430f20d` pada PR #28 menambahkan
