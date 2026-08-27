@@ -78,13 +78,13 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260827-7213892` memakai exact source
-`7213892ba0b5db3ba0d51742e17e379c278ee191` dan rollback
-`20260827-324a250`. Hero homepage kembali ke campaign full-bleed monokrom
+Release production terbaru `20260827-beecd6f` memakai exact source
+`beecd6f76584557defd6822d36d2efd39473e18f` dan rollback
+`20260827-7213892`. Hero homepage tetap memakai campaign full-bleed monokrom
 versi sebelumnya dengan headline `BAGS FOR THE SCENE`, crop `cover`, gradient
 teks, dan proporsi desktop 461–521 piksel. Carousel, CTA, featured card, serta
 Gallery share navigation dari release sebelumnya tetap dipertahankan.
-Storefront 214/214, navigation 16 skenario, 110 kombinasi responsive, 32 route
+Storefront 215/215, navigation 16 skenario, 110 kombinasi responsive, 32 route
 accessibility desktop/mobile, dan hero live 390/768/1440/1920 piksel lulus.
 GitHub Actions exact SHA tidak memulai job akibat billing/spending limit, jadi
 CI tidak diklaim hijau. Filter serta preview Gallery kini disinkronkan ke URL yang
@@ -94,16 +94,14 @@ usang atau tidak cocok gagal tertutup dengan pemberitahuan tanpa menebak foto
 lain. Acceptance publik desktop/mobile lulus tanpa mutasi CMS atau commerce.
 
 Kontrak metadata versi satu untuk Home, Shop, Our Product, Bag Finder, dan
-Gallery sudah `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED` pada feature commit
-`75170b5334c69611dc2f9cebcaaee1353f981c3a`. Laravel memuat kontrak ke config
+Gallery sudah `PRODUCTION_DEPLOYED` pada exact source
+`beecd6f76584557defd6822d36d2efd39473e18f`. Laravel memuat kontrak ke config
 cache dan React memakai sumber yang sama; kontrak tidak lengkap gagal tertutup
-ke `noindex`. Storefront 214/214, Laravel 448 total dengan 447 pass, satu skip,
+ke `noindex`. Storefront 215/215, Laravel 448 total dengan 447 pass, satu skip,
 4.251 assertion, metadata desktop/mobile, responsive, accessibility, audit
-dependency, dan initial JS 110,6 KiB lulus. Candidate `20260827-75170b5`
-dibatalkan untuk deploy karena masih berbasis `324a250` dan akan menimpa hero
-release `7213892`; endpoint Hostinger juga timeout pada SSH dan HTTPS. Source
-harus diterapkan ulang di atas exact production terbaru dan seluruh release
-gate diulang setelah host pulih.
+dependency, initial JS 110,5 KiB, dan entry CSS 160 KiB lulus. Public smoke
+lima route inti, API, Admin, robots, sitemap, asset, dan redirect apex lulus.
+Readiness commerce tetap fail-closed pada 30/42 checks dengan 12 blocker.
 
 Order Status sekarang dapat menghapus akses lokal dari tab
 aktif setelah detail berhasil dibuka maupun ketika kode tersimpan tidak valid.

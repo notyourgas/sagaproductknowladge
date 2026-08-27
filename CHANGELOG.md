@@ -1,6 +1,6 @@
 # Saga Product Knowledge Changelog
 
-## 2026-08-27 - COYABAG core SEO contract parity validation sync
+## 2026-08-27 - COYABAG core SEO contract production release sync
 
 - Ringkasan: menyinkronkan kontrak metadata tunggal lima route inti untuk
   Laravel dan React, fail-closed `noindex`, serta lazy client enhancement.
@@ -8,11 +8,11 @@
   berbeda, sementara perbaikan tidak boleh menambah initial-load budget.
 - Produk/area: COYABAG SEO, storefront/backend contract, performance, QA,
   release provenance, dan production safety.
-- Klasifikasi: `CONFIRMED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED`; feature commit `75170b5`, candidate
-  `20260827-75170b5` stale terhadap production `20260827-7213892`.
-- Production berubah: tidak; SSH/HTTPS Hostinger timeout dan tidak ada atomic
-  switch atau mutasi commerce. Readiness tetap 30/42 dengan 12 blocker.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED`; exact source `beecd6f`,
+  immutable release `20260827-beecd6f`, rollback `20260827-7213892`.
+- Production berubah pada metadata dan CSS storefront melalui atomic switch;
+  public smoke lulus. Tidak ada mutasi commerce. Readiness tetap 30/42 dengan
+  12 blocker.
 - Dokumen terdampak: Product/Dossier/changelog COYABAG, portfolio, master,
   root changelog, dan sync status.
 

@@ -4,21 +4,21 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
-## 2026-08-27 - Core storefront SEO contract parity validated, deploy held
+## 2026-08-27 - Core storefront SEO contract production release
 
-- Klasifikasi: `CONFIRMED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED`; feature commit
-  `75170b5334c69611dc2f9cebcaaee1353f981c3a`.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED`; exact source
+  `beecd6f76584557defd6822d36d2efd39473e18f`, immutable release
+  `20260827-beecd6f`, dan rollback `20260827-7213892`.
 - Lima route inti memakai satu kontrak metadata untuk initial HTML Laravel dan
   hydration React. Kontrak tidak lengkap gagal tertutup ke `noindex` dan model
   client dipisahkan dari initial bundle.
-- Storefront 214/214, Laravel 448 total dengan 447 pass, satu skip, 4.251
+- Storefront 215/215, Laravel 448 total dengan 447 pass, satu skip, 4.251
   assertion, metadata desktop/mobile, responsive 110 kombinasi, accessibility
-  32 route pada dua viewport, audit dependency, dan initial JS 110,6 KiB lulus.
-- Candidate `20260827-75170b5` tidak dideploy karena berbasis release lama
-  `324a250`, sedangkan production terakhir terverifikasi sudah
-  `20260827-7213892`; SSH dan HTTPS Hostinger juga timeout. Commerce tetap
-  fail-closed dan production tidak dimutasi oleh batch ini.
+  32 route pada dua viewport, audit dependency, initial JS 110,5 KiB, dan entry
+  CSS 160 KiB lulus.
+- Checksum, backup, readiness, switch atomik, API/Admin/assets, metadata lima
+  route desktop/mobile, robots, sitemap, dan redirect apex lulus. Commerce
+  tetap fail-closed pada 30/42 checks dengan 12 blocker.
 
 ## 2026-08-27 - Previous full-bleed campaign hero restored
 

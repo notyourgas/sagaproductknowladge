@@ -12,30 +12,27 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-27T11:55:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-27T12:10:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
-| Informasi terakhir disinkronkan | COYABAG core storefront SEO contract feature `75170b5334c69611dc2f9cebcaaee1353f981c3a` dan stale-base/host outage release hold. |
-| Status sinkronisasi | `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production terakhir terverifikasi `20260827-7213892`, current health belum dapat diverifikasi ulang. |
+| Informasi terakhir disinkronkan | COYABAG core storefront SEO contract exact source `beecd6f76584557defd6822d36d2efd39473e18f` dan immutable release `20260827-beecd6f`. |
+| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED`; commerce tetap `BLOCKED` dan fail-closed pada 30/42 checks dengan 12 blocker. |
 
 ## COYABAG core storefront SEO contract parity
 
 - Lima route inti memakai satu kontrak metadata untuk initial HTML Laravel dan
   hydration React. Kontrak tidak lengkap gagal tertutup ke `noindex`; client
   enhancement menjadi lazy chunk.
-- Storefront 214/214, Laravel 448 total dengan 447 pass, satu skip, 4.251
+- Storefront 215/215, Laravel 448 total dengan 447 pass, satu skip, 4.251
   assertion, metadata desktop/mobile, 110 responsive combinations, 32 route
-  accessibility pada dua viewport, dependency audit, dan 110,6 KiB initial JS
-  lulus.
-- Feature commit `75170b5334c69611dc2f9cebcaaee1353f981c3a` berstatus
-  `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Candidate
-  `20260827-75170b5` tidak layak deploy karena berbasis `324a250`, sementara
-  production terakhir terverifikasi `20260827-7213892`.
-- Hostinger timeout pada SSH dan HTTPS; tidak ada backup, switch, atau mutasi
-  production dari batch ini. Next action: apply feature di atas exact source
-  production terbaru, ulang full gate, lalu buat candidate baru setelah host
-  pulih.
+  accessibility pada dua viewport, dependency audit, 110,5 KiB initial JS, dan
+  entry CSS 160 KiB lulus.
+- Exact source `beecd6f76584557defd6822d36d2efd39473e18f` aktif pada immutable
+  release `20260827-beecd6f`; rollback `20260827-7213892` tersedia.
+- Checksum, backup, readiness, switch atomik, metadata desktop/mobile, API,
+  Admin, assets, robots, sitemap, dan redirect apex lulus. Commerce tidak
+  diaktifkan; 12 blocker readiness tetap berlaku.
 
 ## File yang berubah pada sinkronisasi ini (COYABAG SEO Contract)
 

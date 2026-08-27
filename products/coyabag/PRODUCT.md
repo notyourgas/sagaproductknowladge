@@ -61,21 +61,20 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260827-7213892` dengan exact source
-  `7213892ba0b5db3ba0d51742e17e379c278ee191` melayani production;
-  rollback langsung `20260827-324a250` dipertahankan.
-- Kontrak metadata tunggal lima route inti sudah `LOCAL_VALIDATED` pada feature
-  commit `75170b5334c69611dc2f9cebcaaee1353f981c3a`, tetapi belum dideploy.
-  Laravel dan React memakai kontrak title/description/schema yang sama, dan
-  initial JavaScript lulus pada 110,6 KiB gzip. Candidate
-  `20260827-75170b5` tidak boleh dipakai karena masih berbasis release sebelum
-  hero terbaru; host juga tidak dapat dijangkau saat preflight.
+- Release aktif `20260827-beecd6f` dengan exact source
+  `beecd6f76584557defd6822d36d2efd39473e18f` melayani production;
+  rollback langsung `20260827-7213892` dipertahankan.
+- Kontrak metadata tunggal lima route inti sudah `PRODUCTION_DEPLOYED`.
+  Laravel dan React memakai kontrak title/description/schema yang sama,
+  kontrak tidak lengkap gagal tertutup ke `noindex`, dan initial JavaScript
+  lulus pada 110,5 KiB gzip. Duplikasi CSS hero dikonsolidasikan tanpa mengubah
+  visual sehingga entry CSS kembali lulus gate 160 KiB.
 - Hero homepage kembali ke komposisi campaign full-bleed hitam-putih versi
   sebelumnya dengan headline `BAGS FOR THE SCENE`. Foto memakai crop `cover`,
   gradient menjaga keterbacaan, dan tinggi desktop dibatasi 461–521 piksel.
   Carousel, CTA, Gallery share navigation, dan perbaikan featured card tetap
   aktif.
-- Storefront 214/214, 16 skenario navigasi, 110 kombinasi responsive, 32 route
+- Storefront 215/215, 16 skenario navigasi, 110 kombinasi responsive, 32 route
   accessibility pada desktop/mobile, serta pemeriksaan hero live pada 390,
   768, 1440, dan 1920 piksel lulus. GitHub Actions exact SHA tidak berjalan
   karena billing/spending limit akun, sehingga tidak diklaim hijau.

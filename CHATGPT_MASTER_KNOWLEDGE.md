@@ -3645,13 +3645,13 @@ owner 2FA, legal, backup restore, dan provider UAT selesai.
 
 Delivery: `PRODUCTION_DEPLOYED`. Activation dan business readiness: `BLOCKED`.
 
-Kontrak metadata tunggal lima route inti sudah `LOCAL_VALIDATED /
-IMPLEMENTED_NOT_DEPLOYED` pada feature commit
-`75170b5334c69611dc2f9cebcaaee1353f981c3a`. Initial HTML Laravel dan hydration
-React kini konsisten, tetapi candidate `20260827-75170b5` tidak boleh dideploy
-karena berbasis release sebelum hero production terbaru. Hostinger juga timeout
-pada SSH/HTTPS saat preflight. Production terakhir terverifikasi tetap
-`20260827-7213892`; apply ulang feature di atas source itu sebelum release.
+Kontrak metadata tunggal lima route inti sudah `PRODUCTION_DEPLOYED` pada exact
+source `beecd6f76584557defd6822d36d2efd39473e18f`, immutable release
+`20260827-beecd6f`, dan rollback `20260827-7213892`. Initial HTML Laravel dan
+hydration React kini konsisten, kontrak tidak lengkap gagal tertutup ke
+`noindex`, dan CSS hero tetap mempertahankan visual campaign sambil kembali
+lulus budget. Public smoke desktop/mobile lulus. Commerce tetap fail-closed
+pada 30/42 checks dengan 12 blocker.
 
 SagaDev payment monitoring untuk CoyaBag sudah production-deployed melalui
 Saga Platform release `20260824104557-65f9ff4`, exact source
@@ -3662,12 +3662,12 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release aktif `20260827-7213892` menjalankan exact source
-`7213892ba0b5db3ba0d51742e17e379c278ee191` dengan rollback
-`20260827-324a250`. Hero homepage kembali ke komposisi campaign full-bleed
+Release aktif `20260827-beecd6f` menjalankan exact source
+`beecd6f76584557defd6822d36d2efd39473e18f` dengan rollback
+`20260827-7213892`. Hero homepage memakai komposisi campaign full-bleed
 hitam-putih versi sebelumnya dengan headline `BAGS FOR THE SCENE`, crop
 `cover`, gradient keterbacaan, dan proporsi desktop 461–521 piksel. Storefront
-214/214, navigation 16 skenario, 110 responsive combinations, 32 route
+215/215, navigation 16 skenario, 110 responsive combinations, 32 route
 accessibility desktop/mobile, serta hero live 390/768/1440/1920 piksel lulus.
 GitHub Actions exact SHA tidak memulai job karena billing/spending limit dan
 tidak diklaim hijau. Filter dan preview Gallery tersimpan pada URL yang dapat
