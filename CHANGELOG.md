@@ -1,5 +1,26 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-27 - SagaView S311 production activation sync
+
+- Ringkasan: menyinkronkan custody fisik terpisah, release gates, dan atomic
+  activation Owner Overview SagaView yang lebih sederhana serta menjaga link
+  sebelumnya saat recovery gagal.
+- Alasan: knowledge terakhir masih mencatat custody terblokir kapasitas,
+  sedangkan media terpisah sudah disediakan dan exact candidate telah melewati
+  seluruh gate deployment.
+- Produk/area: SagaView Owner UI/UX, artifact custody, privacy/no-upload,
+  backup/restore, QA, security, DevOps, dan production audit.
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED / STAGING_READY /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; exact source
+  `cd7288d3bb4da9542fbfa20f97780fa5639759bf`, release
+  `20260826210546-cd7288d`, rollback `20260826050812-7bf0e0d`.
+- Production berubah melalui atomic switch backend/Owner; Studio, database
+  schema/data, SagaBook, pembayaran off-app, serta no-upload boundary tidak
+  berubah. Authenticated Owner/operator UAT masih pending sehingga
+  `BUSINESS_READY=false`.
+- Dokumen terdampak: Product/Dossier/changelog/ledger SagaView, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-08-27 - SagaBook S297-S301 production activation sync
 
 - Ringkasan: menyinkronkan recovery stok per cabang/stale/conflict dan kontrak

@@ -1,6 +1,28 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 27 Agustus 2026 07:08 WIB
+Evidence cut-off: 27 Agustus 2026 12:36 WIB
+
+S311 separate custody and production activation: exact pushed source
+`cd7288d3bb4da9542fbfa20f97780fa5639759bf` aktif pada immutable backend/Owner
+release `20260826210546-cd7288d`. Artifact archive 2.591 entry, manifest
+SHA-256, dan complete git bundle disalin atomik ke USB fisik terpisah; source,
+custody, receipt, checksum, exact HEAD, exclusion, traversal, serta retry
+idempotent semuanya lulus. Direktori lain pada media tidak disentuh.
+
+Exact release gate lulus 210/1.744, build 5.097 modul, Composer audit tanpa
+vulnerability, npm audit nol, dan Playwright Owner/device responsive 51 pass
+dengan satu intentional skip. Fresh encrypted backup, offsite checksum
+round-trip, disposable restore 149 tabel SagaView, schema 7/7, candidate dan
+rollback gate masing-masing 6/6, serta migration delta nol lulus. Plaintext
+backup tidak dipertahankan dan no-upload/privacy boundary tetap utuh.
+
+Atomic deploy dan audit independen membuktikan current pointer exact, rollback
+`20260826050812-7bf0e0d`, shared storage, nginx/PHP-FPM/worker aktif, journal
+bersih, dan smoke login/admin/session/changelog/API HTTP 200. Studio tetap
+`20260824170456-7ae79ae`; SagaBook dan produk lain tidak berubah. Status
+`PUSHED / LOCAL_VALIDATED / STAGING_READY / PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED`; `BUSINESS_READY=false` sampai authenticated
+Owner/operator UAT mendapat otorisasi dan lulus.
 
 S311 custody capacity guard follow-up: gate read-only
 `sagaview-separate-custody-capacity-v3` sekarang memverifikasi hash artifact,

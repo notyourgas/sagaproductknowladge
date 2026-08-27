@@ -1,5 +1,25 @@
 # SagaView Dossier
 
+## S311 separate custody and production activation
+
+Exact pushed source `cd7288d3bb4da9542fbfa20f97780fa5639759bf` aktif pada
+immutable backend/Owner release `20260826210546-cd7288d`; rollback exact
+`20260826050812-7bf0e0d` tersedia. Studio tetap pada
+`20260824170456-7ae79ae`. Archive 2.591 entry, manifest SHA-256, dan complete
+git bundle mempunyai custody checksum-identik pada USB fisik terpisah melalui
+copy atomik, receipt, exact-HEAD verification, exclusion/traversal check, dan
+retry idempotent.
+
+Exact gate 210/1.744, build 5.097 modul, Composer/npm audit nol, Playwright
+Owner/device responsive 51 pass dengan satu intentional skip, fresh encrypted
+backup, offsite round-trip, disposable restore 149 tabel, schema 7/7,
+candidate/rollback 6/6, serta migration delta nol lulus. Atomic switch, current
+dan rollback pointer, shared storage, nginx/PHP-FPM/worker, journal, dan smoke
+login/admin/session/changelog/API terverifikasi. No-upload dan pembayaran
+off-app tetap berlaku. Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+authenticated Owner/operator UAT masih diperlukan sehingga
+`BUSINESS_READY=false`.
+
 ## S291 cumulative release candidate
 
 Exact pushed source `1237ef2df06ca53f10b6230adc9350b179462ade`

@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-27 - SagaView S311 production activation
+
+- Exact source `cd7288d3bb4da9542fbfa20f97780fa5639759bf` aktif pada immutable
+  backend/Owner release `20260826210546-cd7288d`, dengan rollback
+  `20260826050812-7bf0e0d`; Studio tidak berubah.
+- Owner Overview yang lebih sederhana, satu aksi utama, status sticky, dan
+  link recovery yang menjaga link lama kini aktif di production. Artifact exact
+  mempunyai custody checksum-identik pada USB fisik terpisah.
+- Test/build/dependency, Playwright desktop/mobile, encrypted backup/restore,
+  disposable rehearsal, service/journal, public smoke, no-upload, dan rollback
+  lulus. Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+  authenticated operator UAT masih pending sehingga `BUSINESS_READY=false`.
+
 ## 2026-08-27 - SagaBook S297-S301 stock recovery production activation
 
 - Exact source `1a69dce2e3fec4aa9b0b0f84d3249256a788b848` aktif pada immutable

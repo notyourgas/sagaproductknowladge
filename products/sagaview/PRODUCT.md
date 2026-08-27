@@ -1,6 +1,24 @@
 # SagaView Product Knowledge
 
-Updated: 27 Agustus 2026 07:08 WIB
+Updated: 27 Agustus 2026 12:36 WIB
+
+SagaView S311 exact source
+`cd7288d3bb4da9542fbfa20f97780fa5639759bf` kini aktif pada immutable
+backend/Owner release `20260826210546-cd7288d`, dengan rollback
+`20260826050812-7bf0e0d`. S310 Owner Overview progressive disclosure, satu
+aksi utama kontekstual, panel operasional sticky, dan link recovery yang
+mempertahankan link lama kini tersedia di production. Studio tidak berubah
+pada `20260824170456-7ae79ae`.
+
+Artifact exact mempunyai custody checksum-identik pada USB fisik terpisah.
+Fresh encrypted backup, offsite round-trip, disposable restore, rehearsal
+candidate/rollback, 210/1.744 test, build 5.097 modul, audit dependency nol,
+Playwright desktop/mobile, atomic switch, service/journal, public smoke, dan
+rollback pointer semuanya lulus. Tidak ada migration atau upload foto, path
+lokal, editor, maupun output customer. Status `PUSHED / LOCAL_VALIDATED /
+STAGING_READY / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+`BUSINESS_READY=false` sampai authenticated Owner/operator UAT diotorisasi dan
+lulus.
 
 Follow-up S311 menambahkan guard custody read-only yang memverifikasi SHA-256,
 memastikan target berada pada volume dan media fisik berbeda, serta menghitung

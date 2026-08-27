@@ -1,5 +1,29 @@
 # SagaView Changelog
 
+## 2026-08-27 - S311 separate custody and production activation
+
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED / STAGING_READY /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; `BUSINESS_READY=false`.
+- Before: exact S310 sudah memiliki immutable artifact, tetapi custody fisik
+  terpisah, backup/restore, rehearsal, deploy, dan activation masih
+  fail-closed.
+- After: archive 2.591 entry, SHA-256 manifest, dan complete git bundle exact
+  `cd7288d3bb4da9542fbfa20f97780fa5639759bf` disalin atomik dan diverifikasi
+  pada USB fisik terpisah. Immutable release
+  `20260826210546-cd7288d` kemudian diaktifkan dengan rollback
+  `20260826050812-7bf0e0d`.
+- Acceptance: exact gate 210/1.744, build 5.097 modul, dependency audit nol,
+  Playwright 51 pass/1 intentional skip, fresh encrypted backup dan offsite
+  restore, disposable rehearsal schema 7/7 serta candidate/rollback 6/6,
+  service/journal, public smoke, checksum, current pointer, dan rollback
+  pointer lulus.
+- Boundary: migration delta nol; Studio tetap
+  `20260824170456-7ae79ae`; SagaBook dan produk lain tidak berubah. Foto, path
+  lokal, editor, dan output customer tidak diunggah; pembayaran tetap ditangani
+  staf di luar aplikasi.
+- Next gate: authenticated Owner/operator UAT memerlukan otorisasi terpisah
+  sebelum klaim `BUSINESS_READY`.
+
 ## 2026-08-27 - S311 custody capacity guard follow-up
 
 - Klasifikasi: `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
