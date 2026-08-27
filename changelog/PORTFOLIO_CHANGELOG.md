@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-27 - COYABAG order access privacy recovery deployed
+
+- Exact source `160e423948d4587a6895c73d84dd2acf49311b20` aktif pada immutable
+  release `20260827-160e423`; rollback `20260827-773362f` tersedia.
+- Customer dapat menghapus akses Order Status dari tab aktif tanpa
+  membatalkan atau mengubah order server. Invalid saved code juga memiliki
+  recovery eksplisit.
+- Storefront 211/211, Laravel 447, desktop/mobile, accessibility, responsive,
+  security, backup, worker, dan public smoke lulus.
+- Status `PRODUCTION_DEPLOYED`; readiness tetap 30/42, 12 blocker, dan commerce
+  nyata tetap fail-closed.
+
 ## 2026-08-27 - SagaBook S299 stale stock recovery
 
 - Exact source `a235261f446ebbdbd066fbafabd04e17cbece07d` memperluas PR #19.

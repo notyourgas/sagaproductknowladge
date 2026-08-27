@@ -4,6 +4,20 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-27 - Order access privacy recovery deployed
+
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED` dari exact source
+  `160e423948d4587a6895c73d84dd2acf49311b20`, immutable release
+  `20260827-160e423`, dan rollback `20260827-773362f`.
+- Order Status kini dapat menghapus akses pesanan dari tab aktif setelah detail
+  berhasil dibuka maupun saat kode tersimpan tidak valid. Hanya kode sesi yang
+  cocok dan query URL yang dibersihkan; order server tidak dibatalkan.
+- Storefront 211/211, Laravel 447, enam skenario delivery status, full RC,
+  security audit, 32 accessibility checks, 110 responsive combinations,
+  backup, worker, dan public smoke lulus.
+- Readiness tetap 30/42 dengan 12 blocker. Commerce tetap fail-closed dan
+  acceptance produksi tidak membuat atau mengubah order nyata.
+
 ## 2026-08-27 - Last order recovery deployed
 
 - Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED` dari exact source

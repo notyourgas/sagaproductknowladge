@@ -61,9 +61,13 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260827-773362f` dengan exact source
-  `773362fc4d10c871503adcc35427061158be043a` melayani production;
-  rollback langsung `20260827-0c703b7` dipertahankan.
+- Release aktif `20260827-160e423` dengan exact source
+  `160e423948d4587a6895c73d84dd2acf49311b20` melayani production;
+  rollback langsung `20260827-773362f` dipertahankan.
+- Order Status kini menyediakan kontrol untuk menghapus akses pesanan dari tab
+  aktif setelah detail terbuka atau saat kode tersimpan tidak valid. Hanya kode
+  sesi yang cocok dan query URL yang dibersihkan; pesanan server tidak
+  dibatalkan atau diubah.
 - Setelah checkout berhasil, reload Cart kini menawarkan akses kembali ke
   pembayaran atau status demo terakhir. Hanya kode order yang disimpan pada
   sesi tab dan detail pembayaran tetap diverifikasi server. Checkout nyata
@@ -87,7 +91,7 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
   memiliki nama aksesibel dan focus indicator yang terlihat, serta dapat
   digeser dengan ArrowRight pada mobile. Ini menutup blocker accessibility yang
   sebelumnya memicu rollback candidate Cart.
-- Storefront 210/210 dan Laravel 447 test dengan 446 pass serta satu
+- Storefront 211/211 dan Laravel 447 test dengan 446 pass serta satu
   intentional skip (4.236 assertions) lulus. Acceptance production lulus untuk
   32 route accessibility desktop/mobile, 110 kombinasi responsive, public smoke
   storefront/API/admin, worker, checksum, backup, dan postdeploy log gate.

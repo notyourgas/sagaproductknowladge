@@ -1,5 +1,21 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-27 - COYABAG order access privacy recovery production sync
+
+- Ringkasan: menyinkronkan penghapusan akses Order Status dari tab aktif untuk
+  detail yang terbuka maupun kode tersimpan yang tidak valid.
+- Alasan: pengguna perangkat bersama perlu dapat membersihkan akses lokal
+  tanpa membatalkan atau mengubah order server.
+- Produk/area: COYABAG Order Status, browser privacy, recovery, responsive UI,
+  accessibility, performance, QA, DevOps, dan provenance.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED`; exact source
+  `160e423948d4587a6895c73d84dd2acf49311b20`, release
+  `20260827-160e423`, rollback `20260827-773362f`.
+- Production berubah: ya pada UI storefront; commerce tetap 30/42 dengan 12
+  blocker dan acceptance tidak membuat atau mengubah order produksi.
+- Dokumen terdampak: Product/Dossier/changelog COYABAG, portfolio, master, root
+  changelog, dan sync status.
+
 ## 2026-08-27 - SagaBook S299 stale stock recovery sync
 
 - Ringkasan: menyinkronkan state stale, waktu sinkronisasi terakhir, dan lock

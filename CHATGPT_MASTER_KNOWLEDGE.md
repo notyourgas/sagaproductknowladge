@@ -3654,12 +3654,15 @@ dan credential CoyaBag tetap nol, sehingga checkout publik masih
 `PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
 payment production-activated.
 
-Release aktif `20260827-773362f` menjalankan exact source
-`773362fc4d10c871503adcc35427061158be043a` dengan rollback
-`20260827-0c703b7`. Reload Cart setelah checkout menawarkan akses kembali ke
-pembayaran atau status demo terakhir. Hanya kode order disimpan pada sesi tab;
-detail pembayaran tetap diverifikasi server dan checkout nyata tetap mengikuti
-readiness gate.
+Release aktif `20260827-160e423` menjalankan exact source
+`160e423948d4587a6895c73d84dd2acf49311b20` dengan rollback
+`20260827-773362f`. Order Status menyediakan kontrol untuk menghapus akses
+lokal dari tab aktif setelah detail terbuka maupun ketika kode tersimpan tidak
+valid. Penghapusan hanya membersihkan kode sesi yang cocok dan query URL; order
+server tidak dibatalkan atau diubah. Reload Cart setelah checkout menawarkan
+akses kembali ke pembayaran atau status demo terakhir. Hanya kode order
+disimpan pada sesi tab; detail pembayaran tetap diverifikasi server dan
+checkout nyata tetap mengikuti readiness gate.
 
 Detail checkout dipulihkan per tab selama maksimal 30
 menit, tanpa menyimpan token tujuan atau ID quote pengiriman; tujuan dan ongkir
@@ -3679,7 +3682,7 @@ fail-closed. Tujuh region horizontal `/our-product` yang sebelumnya memblokir
 release kini keyboard-focusable, bernama aksesibel, memiliki focus indicator
 terlihat, dan mendukung ArrowRight pada mobile.
 
-Storefront 210/210, Laravel 446 pass dan satu intentional skip dari 447 dengan
+Storefront 211/211, Laravel 446 pass dan satu intentional skip dari 447 dengan
 4.236 assertions,
 dependency/security audit nol, full release gate, 32 route accessibility dan
 110 kombinasi responsive production, public smoke, workers, checksum, backup,

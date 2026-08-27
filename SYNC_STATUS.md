@@ -12,12 +12,33 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-27T09:20:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-27T09:27:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
-| Informasi terakhir disinkronkan | SagaBook S299 stale stock recovery pada exact source `a235261f446ebbdbd066fbafabd04e17cbece07d`. |
-| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production SagaBook tidak berubah. |
+| Informasi terakhir disinkronkan | COYABAG order access privacy recovery pada exact source `160e423948d4587a6895c73d84dd2acf49311b20`. |
+| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED`; commerce tetap fail-closed. |
+
+## COYABAG order access privacy recovery
+
+- Exact source `160e423948d4587a6895c73d84dd2acf49311b20` aktif pada immutable
+  release `20260827-160e423`; rollback `20260827-773362f` tersedia.
+- Order Status dapat menghapus akses dari tab aktif tanpa membatalkan atau
+  mengubah order server. Invalid saved code memiliki recovery eksplisit.
+- Storefront 211/211, Laravel 447, desktop/mobile, accessibility, responsive,
+  security, backup, worker, dan public smoke lulus.
+- Readiness tetap 30/42 dengan 12 blocker; commerce dan provider production
+  tetap fail-closed.
+
+## File yang berubah pada sinkronisasi ini (COYABAG Order Access Privacy)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook S299 stale stock recovery
 
