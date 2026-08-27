@@ -1,5 +1,25 @@
 # SagaView Changelog
 
+## 2026-08-27 - S314 physical UAT operator recovery summary
+
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production dan business readiness tidak berubah.
+- Before: preflight menghasilkan JSON dan kode blocker teknis, tetapi operator
+  belum mendapat ringkasan langsung tentang kegagalan, keamanan data, dan aksi
+  berikutnya; blocker runtime berulang membuat tindak lanjut lebih bising.
+- After: exact Studio `1e0023dde47e318ab64dcfd94ff22137f2606b5c`
+  membuat `operator-preflight-summary.md` ter-redact, mengelompokkan blocker
+  dengan akar serta aksi sama, dan mempertahankan kode gate pada setiap grup.
+  `preflight.json` dan exit code fail-closed tidak berubah.
+- Acceptance: RED/GREEN contract 20/20, full unit 246/246, lint, typecheck,
+  format, build, bundle budget 301,0 KiB dari batas 450 KiB, dan npm audit nol
+  vulnerability. Actual physical preflight tetap exit 2/blocked; 11 kode gate
+  menjadi empat kelompok tindakan dan scan path/URL/base64 menghasilkan nol.
+- Boundary: tidak ada perubahan API, database, migration, payment, upload,
+  production, foto/path/output customer, atau produk lain. Next action tetap
+  fixed NTFS minimal 10 GiB, EPSON L8050 + driver, runtime exact, lalu UAT
+  manual 14 gate.
+
 ## 2026-08-27 - S311 separate custody and production activation
 
 - Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED / STAGING_READY /

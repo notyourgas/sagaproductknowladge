@@ -1,6 +1,22 @@
 # SagaView Product Knowledge
 
-Updated: 27 Agustus 2026 12:36 WIB
+Updated: 27 Agustus 2026 16:12 WIB
+
+SagaView S314 exact Studio source
+`1e0023dde47e318ab64dcfd94ff22137f2606b5c` sudah `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Preflight physical UAT kini
+membuat ringkasan operator ter-redact yang menjelaskan status, kegagalan,
+keamanan data, dan aksi berikutnya. Beberapa kode gate dengan akar masalah dan
+aksi sama dikelompokkan agar operator tidak menerima instruksi berulang;
+`preflight.json` tetap receipt mesin kanonik dan exit code tetap fail-closed.
+
+Acceptance aktual terhadap exact production menghasilkan 11 kode blocker yang
+diringkas menjadi empat kelompok tindakan, tanpa path/URL mentah, foto,
+identifier perangkat, credential, atau data customer. Contract 20/20, full
+unit 246/246, lint, typecheck, format, build, bundle budget, dan dependency
+audit nol lulus. Production tetap backend/Owner
+`20260826210546-cd7288d` dan Studio `20260824170456-7ae79ae`;
+`BUSINESS_READY=false` sampai prasyarat mesin dan UAT manual 14 gate lulus.
 
 SagaView S311 exact source
 `cd7288d3bb4da9542fbfa20f97780fa5639759bf` kini aktif pada immutable

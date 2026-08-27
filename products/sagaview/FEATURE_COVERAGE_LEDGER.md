@@ -1,6 +1,23 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 27 Agustus 2026 12:36 WIB
+Evidence cut-off: 27 Agustus 2026 16:12 WIB
+
+S314 physical UAT operator recovery summary: exact pushed Studio source
+`1e0023dde47e318ab64dcfd94ff22137f2606b5c` menambahkan receipt Markdown
+public-safe di samping `preflight.json`. Saat preflight tertahan, operator kini
+melihat status, apa yang gagal, apakah data aman, dan tindakan berikutnya;
+blocker teknis yang mempunyai akar dan aksi sama digabung tanpa menghilangkan
+kode gate kanonik. JSON dan exit code fail-closed tidak berubah.
+
+RED/GREEN contract 20/20, full unit 246/246, lint, typecheck, format, build,
+bundle budget 301,0 KiB dari batas 450 KiB, serta npm audit nol vulnerability
+lulus. Actual physical preflight exact production tetap tertahan dengan 11
+kode gate yang diringkas menjadi empat kelompok tindakan; output ter-redact
+tidak memuat path/URL mentah, foto, identifier perangkat, credential, atau data
+customer. Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+production dan `BUSINESS_READY=false` tidak berubah. Gap berikutnya tetap
+menyediakan fixed NTFS dengan minimal 10 GiB, EPSON L8050 beserta driver, dan
+runtime exact sebelum UAT manual 14 gate.
 
 S311 separate custody and production activation: exact pushed source
 `cd7288d3bb4da9542fbfa20f97780fa5639759bf` aktif pada immutable backend/Owner

@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-27 - SagaView S314 operator-readable physical UAT preflight
+
+- Exact Studio `1e0023dde47e318ab64dcfd94ff22137f2606b5c` menambahkan
+  ringkasan preflight ter-redact: status, kegagalan, keamanan data, dan aksi
+  berikutnya, tanpa mengganti receipt JSON atau perilaku fail-closed.
+- Actual physical preflight mengubah 11 kode blocker menjadi empat kelompok
+  tindakan yang bisa ditindaklanjuti; 246 unit test, build/type/lint/format,
+  bundle budget, dan dependency audit nol lulus.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+  SagaView tidak berubah dan `BUSINESS_READY=false` sampai prasyarat mesin serta
+  UAT manual 14 gate lulus.
+
 ## 2026-08-27 - SagaBook S303 two-phase backup-binding preflight
 
 - Exact source `40caa45a98ef9f3269368f10983572fb6c897659` pada PR #21 mengulang

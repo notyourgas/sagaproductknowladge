@@ -1,5 +1,22 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-27 - SagaView S314 operator UAT summary sync
+
+- Ringkasan: menyinkronkan ringkasan operator ter-redact untuk physical UAT
+  preflight, termasuk pengelompokan blocker tanpa melemahkan receipt JSON atau
+  exit code fail-closed.
+- Alasan: operator memerlukan penjelasan langsung tentang apa yang gagal,
+  apakah data aman, dan tindakan berikutnya sebelum mengulang UAT.
+- Produk/area: SagaView Studio, Windows physical UAT, recovery, privacy,
+  security, QA, dan release operations.
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; exact source
+  `1e0023dde47e318ab64dcfd94ff22137f2606b5c`.
+- Production, API, database, payment, foto/path/output customer, dan produk lain
+  tidak berubah; `BUSINESS_READY=false`.
+- Dokumen terdampak: Product, changelog, ledger SagaView, portfolio, root
+  changelog, dan sync status.
+
 ## 2026-08-27 - SagaBook S303 two-phase release preflight sync
 
 - Ringkasan: menyinkronkan pemeriksaan ulang binding backup setelah seluruh
