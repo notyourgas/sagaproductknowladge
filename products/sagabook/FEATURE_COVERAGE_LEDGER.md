@@ -1,6 +1,24 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 27 Agustus 2026 20:13 WIB
+Evidence cut-off: 28 Agustus 2026 04:16 WIB
+
+Tenant-safe post-payment return dan provider-transition release hardening S309-S311
+exact source `a9127dc4595f2d8d7e60094ac330cac76448b255` telah `CONFIRMED /
+PUSHED / QA_VALIDATED / SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
+LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Immutable
+release `20260827210830-a9127dc` aktif dengan rollback
+`20260827125239-24a6bab`. Coverage UI -> frontend -> API -> backend mencakup
+return detail, transfer, QRIS, reschedule, dan callback yang mempertahankan
+slug tenant; Playwright memverifikasi mobile 390x844 dan desktop 1440x900.
+Dispatch WhatsApp customer/owner, routing tenant, retry, dan closing delivery
+disuspensi sementara; OTP tetap terpisah. Dua delivery lama tidak dimutasi dan
+exception release memverifikasi exact count 2, satu failure audit, suspend,
+serta failed-job scope sebelum switch. Full PHP 1.196/1.196 (13.450), focused
+release 18/18 (224), build/typecheck/Pint, npm/Composer/OSV nol, encrypted
+backup/disposable restore, artifact/bundle/manifest exact, verifier 17/17,
+0 migration pending, 0 queue error, dan public/security smoke 3/3 lulus.
+Authenticated Owner/operator UAT, pemilihan provider pengganti, canary berizin,
+dan pilot masih terbuka; `BUSINESS_READY=false`.
 
 Closing Staff consumable stock sync exact source
 `24a6bab6d57aa3da2e1202a40ecf87210593832a` telah `CONFIRMED / PUSHED /

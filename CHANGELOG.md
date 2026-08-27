@@ -1,23 +1,24 @@
 # Saga Product Knowledge Changelog
 
-## 2026-08-28 - SagaBook S309 post-payment return sync
+## 2026-08-28 - SagaBook S309-S311 post-payment activation sync
 
-- Ringkasan: menyinkronkan perbaikan URL return pembayaran tenant-safe yang
-  sudah merge ke exact main `bd16dbe5ae7399c934e0252c66a4736ce2e6b618`.
+- Ringkasan: menyinkronkan aktivasi production perbaikan URL return pembayaran
+  tenant-safe dan suspend WhatsApp operasional pada exact main
+  `a9127dc4595f2d8d7e60094ac330cac76448b255`, release
+  `20260827210830-a9127dc`.
 - Alasan: pembayaran dapat berhasil tetapi path detail berikutnya kehilangan
   public booking slug tenant dan menghasilkan 404.
 - Produk/area: SagaBook storefront, payment return, callback provider,
   middleware tenant, release safety, dan data integrity.
-- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED / RELEASE_BLOCKED /
-  IMPLEMENTED_NOT_DEPLOYED`; production tetap source
-  `24a6bab6d57aa3da2e1202a40ecf87210593832a`, release
-  `20260827125239-24a6bab`.
-- Full test/build/browser/accessibility/audit, immutable artifact, encrypted
-  backup, checksum, dan disposable restore lulus. Activation ditolak oleh
-  audit agregat 2 delivery WhatsApp yatim atau lintas tenant; tidak ada data
-  customer yang diubah untuk melewati gate.
-- Dokumen terdampak: Product dan changelog SagaBook, portfolio, root changelog,
-  serta sync status.
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; rollback
+  `20260827125239-24a6bab` tersedia dan `BUSINESS_READY=false`.
+- WhatsApp customer/owner disuspensi selama transisi provider; OTP terpisah.
+  Dua delivery lama tidak dimutasi dan exact-count exception tetap auditable.
+  Full/focused/browser/build/security/dependency, immutable artifact, encrypted
+  backup, checksum, disposable restore, verifier 17/17, serta smoke 3/3 lulus.
+- Dokumen terdampak: Product, Dossier, ledger/changelog SagaBook, portfolio,
+  master knowledge, decisions, gaps, root changelog, dan sync status.
 
 ## 2026-08-27 - SagaView S320 archive media identity guard sync
 
