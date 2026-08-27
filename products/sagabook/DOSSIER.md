@@ -7,6 +7,29 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Closing Staff consumable stock sync exact source
+  `24a6bab6d57aa3da2e1202a40ecf87210593832a`, immutable release
+  `20260827125239-24a6bab`, rollback `20260827050516-1a69dce`:
+  `CONFIRMED / PUSHED / QA_VALIDATED / SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
+  Read model setting per cabang memisahkan global gate, branch opt-in,
+  readiness ledger dua material, permission aktivasi, serta optimistic lock.
+  Owner/Manager dapat mengaktifkan cabang siap; Admin Cabang hanya membaca dan
+  Staff tidak memanggil endpoint pengaturan. Dialog Closing Staff sekarang
+  memuat expected stock dari ledger backend, menjaga actual stock sebagai
+  hitungan fisik, menyimpan draft lintas perangkat, dan mengirim ID plus
+  lockVersion saat submit agar konsumsi tidak ganda. Production mempunyai
+  tepat satu cabang ledger-ready dan cabang itu efektif aktif; aktivasi dicatat
+  atomik melalui channel release yang disetujui Owner. Full PHP 1.188/1.188
+  (13.391 assertion), focused/contract/browser/build/type/security/audit,
+  fresh encrypted backup `20260827T125131Z`, disposable restore, exact release
+  verifier 17/17, 0 migration pending, 0 queue error, dan public/security smoke
+  3/3 lulus. GitHub Actions tidak memulai job karena billing akun, sehingga
+  exact local/VPS gates menjadi release evidence. Authenticated Owner/Staff UAT
+  dan closing bisnis pertama belum selesai; `BUSINESS_READY=false`. Tidak ada
+  customer closing yang dimutasi untuk aktivasi, actual stock tetap manual,
+  dan direct WhatsApp group delivery tetap default-off/non-scope.
+
 - Release production S308 exact source
   `7e190cefbec7d3ee60b825bf61741ba81415f2e6` aktif pada immutable release
   `20260827120312-7e190ce`, rollback `20260827050516-1a69dce`:

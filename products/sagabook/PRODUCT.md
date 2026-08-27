@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 27 Agustus 2026 19:14 WIB
-Evidence status: S302-S307 stock and release hardening is production-deployed and production-activated through S308; business readiness still pending authenticated pilot UAT
+Updated: 27 Agustus 2026 20:13 WIB
+Evidence status: Closing Staff consumable stock sync is production-deployed and active for the single ledger-ready branch; authenticated Staff acceptance remains pending
 
 ## Tujuan dokumen
 
@@ -15,6 +15,26 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- Closing Staff consumable stock sync exact merged source
+  `24a6bab6d57aa3da2e1202a40ecf87210593832a` aktif pada immutable release
+  `20260827125239-24a6bab`, dengan rollback
+  `20260827050516-1a69dce`. Before: ledger kertas foto dan packaging sudah
+  berisi saldo, tetapi global gate dan branch opt-in masih false sehingga
+  akun Staff menerima closing cash-only. After: Owner/Manager memperoleh
+  kontrol aktivasi fail-closed, sedangkan Staff menerima current, usage,
+  expected stock, hitungan fisik, exception, draft server, dan submit
+  idempoten dari backend. Global gate aktif dan tepat satu cabang yang memiliki
+  movement kedua material telah diaktifkan melalui transaksi serta audit
+  Owner-approved; tidak ada snapshot closing produksi yang dibuat saat
+  aktivasi. Full PHP 1.188/1.188 (13.391 assertion), contract 6/6, empat
+  acceptance browser, build/typecheck, security review, dependency audit nol,
+  encrypted backup/disposable restore, verifier 17/17, dan public/security
+  smoke 3/3 lulus. Status `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated Owner/Staff UAT
+  dan closing bisnis pertama tetap gate `BUSINESS_READY=false`. Actual stock
+  tetap diisi manual oleh Staff; direct WhatsApp group delivery tetap non-scope
+  dan default-off.
 
 - Release production S308 exact merged source
   `7e190cefbec7d3ee60b825bf61741ba81415f2e6` aktif pada immutable release

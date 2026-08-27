@@ -12,12 +12,39 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-27T20:04:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-27T20:13:38+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
-| Informasi terakhir disinkronkan | SagaBook S308 production activation serta SagaView S318 print acceptance closure. |
-| Status sinkronisasi | SagaBook `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; SagaView `CONFIRMED / EVIDENCE_COMPLETED / UAT_PARTIALLY_UNBLOCKED / PRODUCTION_UNCHANGED`; keduanya `BUSINESS_READY=false`. |
+| Informasi terakhir disinkronkan | SagaBook Closing Staff consumable stock sync production activation. |
+| Status sinkronisasi | SagaBook `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`; authenticated Owner/Staff UAT dan closing bisnis pertama masih pending. |
+
+## SagaBook Closing Staff consumable stock sync
+
+- Exact main `24a6bab6d57aa3da2e1202a40ecf87210593832a` aktif pada immutable
+  release `20260827125239-24a6bab`; rollback
+  `20260827050516-1a69dce` tersedia.
+- Global gate dan tepat satu cabang dengan movement ledger kertas foto serta
+  packaging efektif aktif. Aktivasi dilakukan atomik melalui service backend
+  dan audit Owner-approved tanpa membuat closing customer.
+- Closing Staff sekarang memuat expected stock dari backend, menjaga actual
+  sebagai hitung fisik manual, menyimpan draft server, serta submit dengan
+  optimistic lock dan konsumsi idempoten.
+- Full PHP 1.188/1.188, contract 6/6, browser 4/4, build/type/security/audit,
+  encrypted backup/disposable restore, verifier 17/17, dan smoke 3/3 lulus.
+  Authenticated Owner/Staff UAT serta first-business-closing acceptance belum
+  selesai; `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi ini (SagaBook Closing Staff stock sync)
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaView S318 print operator acceptance closure
 

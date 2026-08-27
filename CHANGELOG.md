@@ -1,5 +1,27 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-27 - SagaBook Closing Staff stock sync activation sync
+
+- Ringkasan: menyinkronkan perbaikan ledger-to-closing Staff dan aktivasi
+  production exact source
+  `24a6bab6d57aa3da2e1202a40ecf87210593832a`.
+- Alasan: saldo ledger yang sudah ada sebelumnya tidak tampil pada akun Staff
+  karena global gate dan branch opt-in belum aktif serta UI Staff belum
+  membawa read model/payload stok operasional.
+- Produk/area: SagaBook Stok & Closing, role/permission, backend read model,
+  Staff dashboard, data integrity, release operations, QA, dan security.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+  release `20260827125239-24a6bab`, rollback
+  `20260827050516-1a69dce`. Global gate dan tepat satu cabang ledger-ready aktif
+  melalui transaksi serta audit Owner-approved.
+- Full PHP 1.188/1.188, browser 4/4, contract 6/6, build/type/security/audit,
+  fresh backup/restore, verifier 17/17, dan smoke 3/3 lulus. GitHub Actions
+  diblokir billing sebelum step; local/VPS exact gates lulus. Authenticated
+  Owner/Staff UAT serta closing bisnis pertama tetap pending;
+  `BUSINESS_READY=false`.
+- Dokumen terdampak: Product, Dossier, feature ledger/changelog SagaBook,
+  portfolio, master knowledge, root changelog, dan sync status.
+
 ## 2026-08-27 - SagaView S318 print acceptance closure sync
 
 - Ringkasan: menyinkronkan validasi ulang receipt operator S247 yang menutup

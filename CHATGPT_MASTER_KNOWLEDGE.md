@@ -1,8 +1,25 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 27 Agustus 2026 19:14 WIB
+Evidence cut-off: 27 Agustus 2026 20:13 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
+
+SagaBook Closing Staff consumable stock sync exact source
+`24a6bab6d57aa3da2e1202a40ecf87210593832a` aktif pada immutable release
+`20260827125239-24a6bab`, rollback `20260827050516-1a69dce`. Ledger kertas
+foto dan packaging kini menjadi expected stock authoritative pada Closing
+Staff. Owner/Manager mengaktifkan cabang hanya ketika kedua material mempunyai
+movement; Admin Cabang bersifat read-only dan Staff tidak membaca endpoint
+aktivasi. Staff tetap memasukkan actual hasil hitung fisik, dapat menyimpan
+draft server lintas perangkat, dan submit memakai ID plus lockVersion agar
+konsumsi idempoten serta tidak negatif. Global gate dan tepat satu cabang
+ledger-ready efektif aktif melalui transaksi serta audit Owner-approved tanpa
+membuat closing customer. Full PHP 1.188/1.188, contract 6/6, empat browser
+acceptance, build/type/security/dependency, fresh encrypted backup/disposable
+restore, verifier 17/17, serta public/security smoke 3/3 lulus. Status
+`PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated Owner/Staff UAT,
+closing bisnis pertama, dan `BUSINESS_READY` tetap terpisah. Direct WhatsApp
+group delivery bukan bagian perubahan ini dan tetap default-off.
 
 SagaBook S308 exact merged source
 `7e190cefbec7d3ee60b825bf61741ba81415f2e6` aktif pada immutable release

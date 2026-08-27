@@ -1,6 +1,25 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 27 Agustus 2026 19:14 WIB
+Evidence cut-off: 27 Agustus 2026 20:13 WIB
+
+Closing Staff consumable stock sync exact source
+`24a6bab6d57aa3da2e1202a40ecf87210593832a` telah `CONFIRMED / PUSHED /
+QA_VALIDATED / SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
+LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Immutable
+release `20260827125239-24a6bab` aktif dengan rollback
+`20260827050516-1a69dce`. Coverage mencakup read/write setting per cabang,
+Owner/Manager-only activation, Admin Cabang read-only, Staff tanpa akses
+setting, readiness kedua movement ledger, optimistic lock, audit atomik,
+closing preview authoritative, draft cross-device, submit ID+lockVersion,
+idempotent consumption, no-negative, dan tenant/branch isolation. Full PHP
+1.188/1.188 (13.391 assertion), contract 6/6, empat browser acceptance,
+build/typecheck, security/production audit, dependency audit nol, fresh
+encrypted backup/disposable restore, exact release verifier 17/17, dan smoke
+3/3 lulus. Global gate serta tepat satu cabang ledger-ready efektif aktif;
+snapshot customer tidak dibuat oleh aktivasi. Authenticated Owner/Staff UAT
+dan first-business-closing acceptance belum selesai; `BUSINESS_READY=false`.
+Actual stock tetap input fisik manual dan direct WhatsApp group delivery tetap
+default-off/non-scope.
 
 Release production S308 exact source
 `7e190cefbec7d3ee60b825bf61741ba81415f2e6` telah `CONFIRMED / PUSHED /

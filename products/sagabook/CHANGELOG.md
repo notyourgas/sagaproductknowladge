@@ -1,5 +1,31 @@
 # SagaBook Changelog
 
+## 2026-08-27 - Closing Staff consumable stock sync production activation
+
+- PR #33 merged sebagai exact main
+  `24a6bab6d57aa3da2e1202a40ecf87210593832a`; immutable release
+  `20260827125239-24a6bab` aktif dan rollback
+  `20260827050516-1a69dce` tersedia.
+- Before: saldo ledger kertas foto dan packaging sudah ada, tetapi global gate
+  dan cabang masih nonaktif sehingga Closing Staff kosong. After: Owner/Manager
+  dapat mengaktifkan cabang siap dan Staff menerima expected stock backend,
+  mengisi stok fisik, menyimpan draft server, lalu submit dengan optimistic
+  lock dan konsumsi idempoten.
+- Production mempunyai tepat satu cabang dengan movement kedua material;
+  global gate dan cabang tersebut telah aktif. Aktivasi branch dilakukan
+  atomik melalui service backend serta audit Owner-approved, tanpa membuat
+  atau submit closing customer.
+- Full PHP 1.188/1.188 (13.391 assertion), contract 6/6, empat browser
+  acceptance, build/typecheck/Pint, security dan production audit, npm/Composer
+  audit nol lulus. Fresh encrypted backup `20260827T125131Z`, offsite
+  round-trip, disposable restore, verifier 17/17, 0 migration pending, 0 queue
+  error, serta public/security smoke 3/3 lulus.
+- GitHub Actions tidak memulai job karena billing akun; exact local/VPS gates
+  menjadi release evidence. Status `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated Owner/Staff UAT
+  dan closing bisnis pertama masih membuat `BUSINESS_READY=false`. Actual stok
+  tetap manual dan pengiriman otomatis grup WhatsApp tidak termasuk scope.
+
 ## 2026-08-27 - S302-S307 production activation melalui S308
 
 - PR #30 merged sebagai exact main

@@ -1,5 +1,20 @@
 # Portfolio Changelog
 
+## 2026-08-27 - SagaBook Closing Staff stock sync production activation
+
+- Exact main `24a6bab6d57aa3da2e1202a40ecf87210593832a` aktif pada immutable
+  release `20260827125239-24a6bab`; rollback
+  `20260827050516-1a69dce` tersedia.
+- Ledger kertas foto dan packaging kini menjadi expected stock pada Closing
+  Staff. Owner/Manager mengaktifkan cabang ledger-ready; Staff menghitung
+  actual fisik, dapat menyimpan draft lintas perangkat, dan submit dengan
+  optimistic lock serta konsumsi idempoten.
+- Global gate dan tepat satu cabang siap telah aktif dengan audit Owner-approved.
+  Exact full/browser/build/security/dependency gates, fresh encrypted backup,
+  disposable restore, verifier 17/17, serta smoke 3/3 lulus. Authenticated
+  Owner/Staff UAT dan closing bisnis pertama tetap pending;
+  `BUSINESS_READY=false`.
+
 ## 2026-08-27 - SagaView S318 print acceptance closure
 
 - Receipt operator S247 tervalidasi ulang dengan checksum exact dan scope hanya
