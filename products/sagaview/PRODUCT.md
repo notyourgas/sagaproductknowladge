@@ -1,6 +1,22 @@
 # SagaView Product Knowledge
 
-Updated: 28 Agustus 2026 05:00 WIB
+Updated: 28 Agustus 2026 06:00 WIB
+
+SagaView S325 membentuk immutable artifact exact S324 release
+`20260827230221-21058a0` dari source
+`21058a0de1d4a0f2742c45d2c706b8d43bd6df0c`. Archive berisi 2.597 entry,
+berukuran 81.516.564 byte, dan mempunyai SHA-256
+`643e85ce4b19edd1fe9a719fe612e1502098b64d3ea24dee744dd5534b1795e2`.
+Git bundle complete-history berukuran 118.417.183 byte, memuat exact HEAD, dan
+mempunyai SHA-256
+`27589395c84050f9c1267227f00a44f645727bac5390e75adedd011a5314891a`.
+
+Fresh exact-lock build 5.097 modul lulus; manifest frontend tervalidasi;
+`.env`, `.git`, `vendor`, dan `node_modules` tidak masuk archive. Primary dan
+mirror lokal mempunyai checksum identik, tetapi keduanya masih berada pada
+volume C yang sama sehingga mirror belum memenuhi custody terpisah. Status
+`ARTIFACT_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+RELEASE_BLOCKED / PRODUCTION_UNCHANGED`; production tetap S311.
 
 SagaView S324 cumulative release candidate exact source
 `21058a0de1d4a0f2742c45d2c706b8d43bd6df0c` sudah `PUSHED /

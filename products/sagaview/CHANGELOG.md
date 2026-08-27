@@ -1,5 +1,26 @@
 # SagaView Changelog
 
+## 2026-08-28 - S325 exact S324 immutable artifact
+
+- Klasifikasi: `CONFIRMED / ARTIFACT_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED / PRODUCTION_UNCHANGED`.
+- Before: exact S324 mempunyai source, test, build, dan audit provenance, tetapi
+  belum mempunyai immutable release archive, SHA-256 manifest, serta git
+  bundle yang dibuat ulang dari clean commit.
+- After: release `20260827230221-21058a0` menghasilkan archive 81.516.564 byte
+  dengan SHA-256 `643e85ce4b19edd1fe9a719fe612e1502098b64d3ea24dee744dd5534b1795e2`
+  dan complete git bundle 118.417.183 byte dengan SHA-256
+  `27589395c84050f9c1267227f00a44f645727bac5390e75adedd011a5314891a`.
+- Acceptance: install exact lock dan build 5.097 modul lulus; manifest wajib
+  tersedia; bundle memuat exact HEAD; 2.597 entry bebas `.env`, `.git`,
+  `vendor`, dan `node_modules`; artifact/storage contract 4/35 lulus.
+- Blocker: primary dan mirror checksum-identik masih berada pada volume C yang
+  sama, sehingga belum menjadi salinan custody terpisah. Tidak ada write ke
+  removable media yang tidak terotorisasi.
+- Delivery: tidak ada rehearsal VPS, backup/restore production, deploy,
+  activation, data customer, payment, atau perubahan produk lain. Production
+  tetap S311 dan `BUSINESS_READY=false`.
+
 ## 2026-08-28 - S324 cumulative release candidate
 
 - Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /

@@ -1,5 +1,21 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-28 - SagaView S325 exact artifact sync
+
+- Ringkasan: menyinkronkan immutable archive, SHA-256 manifest, dan complete
+  git bundle untuk exact cumulative candidate S324.
+- Alasan: kandidat source belum boleh masuk release workflow tanpa artifact
+  yang dapat diverifikasi dan dipulihkan.
+- Produk/area: SagaView release operations, reproducibility, security, QA,
+  dan provenance.
+- Klasifikasi: `CONFIRMED / ARTIFACT_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED / PRODUCTION_UNCHANGED`.
+- Fresh build 5.097 modul, manifest, bundle exact HEAD, 2.597-entry exclusion
+  scan, mirror checksum, dan contract 4/35 lulus. Mirror masih satu volume,
+  sehingga custody terpisah dan deployment belum diizinkan.
+- Dokumen terdampak: Product, feature ledger, changelog SagaView, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-08-28 - SagaView S324 cumulative candidate sync
 
 - Ringkasan: menyinkronkan satu exact cumulative candidate yang menggabungkan

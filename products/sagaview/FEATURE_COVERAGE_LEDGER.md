@@ -1,6 +1,21 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 28 Agustus 2026 05:00 WIB
+Evidence cut-off: 28 Agustus 2026 06:00 WIB
+
+S325 exact S324 immutable artifact: release `20260827230221-21058a0` dibuat
+dari clean source `21058a0de1d4a0f2742c45d2c706b8d43bd6df0c`. Archive 2.597
+entry berukuran 81.516.564 byte mempunyai SHA-256
+`643e85ce4b19edd1fe9a719fe612e1502098b64d3ea24dee744dd5534b1795e2`;
+complete git bundle 118.417.183 byte mempunyai SHA-256
+`27589395c84050f9c1267227f00a44f645727bac5390e75adedd011a5314891a`.
+
+Exact-lock install, build 5.097 modul, manifest wajib, bundle exact HEAD,
+forbidden-content scan nol, mirror checksum, dan artifact/storage contract
+4/35 lulus. Primary dan mirror berada pada volume C yang sama, sehingga status
+tetap `ARTIFACT_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+RELEASE_BLOCKED / PRODUCTION_UNCHANGED`. Gap berikutnya: salinan pada media
+custody terotorisasi yang benar, checksum ulang, backup/restore, rehearsal,
+UAT, dan approval deploy; `BUSINESS_READY=false`.
 
 S324 cumulative release candidate: exact pushed merge
 `21058a0de1d4a0f2742c45d2c706b8d43bd6df0c` menyatukan Owner S323

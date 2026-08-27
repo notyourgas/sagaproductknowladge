@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-28 - SagaView S325 immutable S324 artifact
+
+- Release `20260827230221-21058a0` menghasilkan archive 81.516.564 byte dan
+  complete git bundle 118.417.183 byte untuk exact S324; keduanya mempunyai
+  SHA-256 manifest dan mirror checksum identik.
+- Fresh build 5.097 modul, manifest frontend, exact bundle HEAD,
+  forbidden-content scan nol, dan artifact/storage contract 4/35 lulus.
+- Status `ARTIFACT_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  RELEASE_BLOCKED / PRODUCTION_UNCHANGED`; kedua salinan masih satu volume,
+  sehingga media custody terpisah tetap menjadi blocker.
+
 ## 2026-08-28 - SagaView S324 cumulative release candidate
 
 - Exact pushed merge `21058a0de1d4a0f2742c45d2c706b8d43bd6df0c`
