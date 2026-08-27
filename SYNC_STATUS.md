@@ -12,12 +12,40 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-27T11:35:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-27T11:55:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
-| Informasi terakhir disinkronkan | SagaBook S297-S301 exact-main candidate `1a69dce2e3fec4aa9b0b0f84d3249256a788b848` dan deploy blocker outage VPS. |
-| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production live health pasca-outage belum terverifikasi. |
+| Informasi terakhir disinkronkan | COYABAG core storefront SEO contract feature `75170b5334c69611dc2f9cebcaaee1353f981c3a` dan stale-base/host outage release hold. |
+| Status sinkronisasi | `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production terakhir terverifikasi `20260827-7213892`, current health belum dapat diverifikasi ulang. |
+
+## COYABAG core storefront SEO contract parity
+
+- Lima route inti memakai satu kontrak metadata untuk initial HTML Laravel dan
+  hydration React. Kontrak tidak lengkap gagal tertutup ke `noindex`; client
+  enhancement menjadi lazy chunk.
+- Storefront 214/214, Laravel 448 total dengan 447 pass, satu skip, 4.251
+  assertion, metadata desktop/mobile, 110 responsive combinations, 32 route
+  accessibility pada dua viewport, dependency audit, dan 110,6 KiB initial JS
+  lulus.
+- Feature commit `75170b5334c69611dc2f9cebcaaee1353f981c3a` berstatus
+  `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Candidate
+  `20260827-75170b5` tidak layak deploy karena berbasis `324a250`, sementara
+  production terakhir terverifikasi `20260827-7213892`.
+- Hostinger timeout pada SSH dan HTTPS; tidak ada backup, switch, atau mutasi
+  production dari batch ini. Next action: apply feature di atas exact source
+  production terbaru, ulang full gate, lalu buat candidate baru setelah host
+  pulih.
+
+## File yang berubah pada sinkronisasi ini (COYABAG SEO Contract)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook S297-S301 release candidate dan outage VPS
 

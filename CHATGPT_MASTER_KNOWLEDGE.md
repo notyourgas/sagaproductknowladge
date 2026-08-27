@@ -3645,6 +3645,14 @@ owner 2FA, legal, backup restore, dan provider UAT selesai.
 
 Delivery: `PRODUCTION_DEPLOYED`. Activation dan business readiness: `BLOCKED`.
 
+Kontrak metadata tunggal lima route inti sudah `LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED` pada feature commit
+`75170b5334c69611dc2f9cebcaaee1353f981c3a`. Initial HTML Laravel dan hydration
+React kini konsisten, tetapi candidate `20260827-75170b5` tidak boleh dideploy
+karena berbasis release sebelum hero production terbaru. Hostinger juga timeout
+pada SSH/HTTPS saat preflight. Production terakhir terverifikasi tetap
+`20260827-7213892`; apply ulang feature di atas source itu sebelum release.
+
 SagaDev payment monitoring untuk CoyaBag sudah production-deployed melalui
 Saga Platform release `20260824104557-65f9ff4`, exact source
 `65f9ff4ee42926cabfe0ebd83de3ae1f1fcca7c0`, dengan rollback

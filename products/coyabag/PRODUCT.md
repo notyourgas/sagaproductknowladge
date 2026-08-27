@@ -64,6 +64,12 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 - Release aktif `20260827-7213892` dengan exact source
   `7213892ba0b5db3ba0d51742e17e379c278ee191` melayani production;
   rollback langsung `20260827-324a250` dipertahankan.
+- Kontrak metadata tunggal lima route inti sudah `LOCAL_VALIDATED` pada feature
+  commit `75170b5334c69611dc2f9cebcaaee1353f981c3a`, tetapi belum dideploy.
+  Laravel dan React memakai kontrak title/description/schema yang sama, dan
+  initial JavaScript lulus pada 110,6 KiB gzip. Candidate
+  `20260827-75170b5` tidak boleh dipakai karena masih berbasis release sebelum
+  hero terbaru; host juga tidak dapat dijangkau saat preflight.
 - Hero homepage kembali ke komposisi campaign full-bleed hitam-putih versi
   sebelumnya dengan headline `BAGS FOR THE SCENE`. Foto memakai crop `cover`,
   gradient menjaga keterbacaan, dan tinggi desktop dibatasi 461–521 piksel.

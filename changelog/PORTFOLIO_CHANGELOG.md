@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-27 - COYABAG core SEO contract validated, release held
+
+- Feature commit `75170b5334c69611dc2f9cebcaaee1353f981c3a` menyatukan metadata lima
+  route inti antara initial HTML Laravel dan hydration React, dengan fallback
+  `noindex` serta lazy client enhancement.
+- Storefront 214/214, Laravel 448 total, desktop/mobile metadata, responsive,
+  accessibility, dependency audit, dan initial JS 110,6 KiB lulus.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Candidate
+  `20260827-75170b5` stale terhadap production terakhir terverifikasi
+  `20260827-7213892`, dan Hostinger timeout pada SSH/HTTPS. Tidak ada switch
+  atau mutasi commerce.
+
 ## 2026-08-27 - SagaBook S297-S301 release candidate validated, VPS outage blocked activation
 
 - Exact main `1a69dce2e3fec4aa9b0b0f84d3249256a788b848` menggabungkan recovery

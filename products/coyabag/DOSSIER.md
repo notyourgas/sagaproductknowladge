@@ -93,6 +93,18 @@ valid memperluas daftar awal agar foto tujuan tersedia, sedangkan tautan item
 usang atau tidak cocok gagal tertutup dengan pemberitahuan tanpa menebak foto
 lain. Acceptance publik desktop/mobile lulus tanpa mutasi CMS atau commerce.
 
+Kontrak metadata versi satu untuk Home, Shop, Our Product, Bag Finder, dan
+Gallery sudah `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED` pada feature commit
+`75170b5334c69611dc2f9cebcaaee1353f981c3a`. Laravel memuat kontrak ke config
+cache dan React memakai sumber yang sama; kontrak tidak lengkap gagal tertutup
+ke `noindex`. Storefront 214/214, Laravel 448 total dengan 447 pass, satu skip,
+4.251 assertion, metadata desktop/mobile, responsive, accessibility, audit
+dependency, dan initial JS 110,6 KiB lulus. Candidate `20260827-75170b5`
+dibatalkan untuk deploy karena masih berbasis `324a250` dan akan menimpa hero
+release `7213892`; endpoint Hostinger juga timeout pada SSH dan HTTPS. Source
+harus diterapkan ulang di atas exact production terbaru dan seluruh release
+gate diulang setelah host pulih.
+
 Order Status sekarang dapat menghapus akses lokal dari tab
 aktif setelah detail berhasil dibuka maupun ketika kode tersimpan tidak valid.
 Penghapusan dibatasi pada kode sesi yang cocok, membersihkan query URL, dan
