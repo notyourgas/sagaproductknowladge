@@ -1,8 +1,19 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 27 Agustus 2026 11:01 WIB
+Evidence cut-off: 27 Agustus 2026 12:16 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
+
+SagaBook recovery stok dan release hardening S297-S301 exact source
+`1a69dce2e3fec4aa9b0b0f84d3249256a788b848` aktif pada immutable release
+`20260827050516-1a69dce`, rollback `20260826201936-2b22b83`. Snapshot stok
+terisolasi per cabang; data stale mengunci mutation; conflict merefresh saldo
+authoritative tanpa menghapus draft; release receipt mewajibkan capacity
+preflight dua tahap dan delapan field exact. Backup terenkripsi terbaru,
+offsite round-trip, disposable restore, DB audit 100, verifier independen
+17/17, service/journal, serta public/security smoke lulus. Status
+`PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated Owner/Admin Cabang
+UAT, opening stock nyata, pilot, dan `BUSINESS_READY` tetap terpisah.
 
 SagaView S309 menutup release-readiness exact S308
 `55ff2870af6e3b0ef09e5aaa347e765ce33f0099` melalui immutable release

@@ -1,5 +1,23 @@
 # SagaBook Changelog
 
+## 2026-08-27 - Recovery stok S297-S301 production-activated setelah VPS pulih
+
+- Exact main `1a69dce2e3fec4aa9b0b0f84d3249256a788b848` aktif pada immutable
+  release `20260827050516-1a69dce`; rollback
+  `20260826201936-2b22b83` tersedia.
+- Release membawa capacity preflight dua tahap, isolasi snapshot cabang,
+  stale lock, recovery conflict yang mempertahankan draft, dan verifier
+  receipt delapan-field.
+- Backup terenkripsi `20260827T050937Z`, checksum, offsite round-trip,
+  disposable restore, receipt exact candidate, DB reconcile/audit 100, atomic
+  switch, dan smoke lulus tanpa release exception.
+- Verifier independen 17/17 membuktikan remote main dan active pointer stabil,
+  manifest valid, Nginx/queue/PHP aktif, maintenance off, 0 migration pending,
+  0 queue error, public smoke 3/3, dan security header 3/3.
+- Status `CONFIRMED / PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`. Authenticated Owner/Admin Cabang UAT, opening stock
+  nyata, dan pilot belum dilakukan; `BUSINESS_READY=false`.
+
 ## 2026-08-27 - Kandidat stok S297-S300 dan kontrak receipt S301 siap, deploy tertahan outage VPS
 
 - Exact main `1a69dce2e3fec4aa9b0b0f84d3249256a788b848` menggabungkan kapasitas

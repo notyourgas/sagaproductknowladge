@@ -1,5 +1,22 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-27 - SagaBook S297-S301 production activation sync
+
+- Ringkasan: menyinkronkan recovery stok per cabang/stale/conflict dan kontrak
+  backup/restore capacity receipt setelah atomic production activation.
+- Alasan: status knowledge sebelumnya masih mencatat outage dan belum deploy,
+  sedangkan VPS telah pulih dan runtime exact candidate sudah terverifikasi.
+- Produk/area: SagaBook stock administration, frontend recovery, release
+  safety, backup/restore, database integrity, DevOps, dan production audit.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+  exact source `1a69dce2e3fec4aa9b0b0f84d3249256a788b848`, release
+  `20260827050516-1a69dce`, rollback `20260826201936-2b22b83`.
+- Production berubah melalui atomic switch; verifier 17/17 dan DB audit 100
+  lulus. Authenticated UAT, opening stock nyata, pilot, dan business readiness
+  belum diklaim.
+- Dokumen terdampak: Product/Dossier/changelog/ledger SagaBook, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-08-27 - COYABAG core SEO contract production release sync
 
 - Ringkasan: menyinkronkan kontrak metadata tunggal lima route inti untuk

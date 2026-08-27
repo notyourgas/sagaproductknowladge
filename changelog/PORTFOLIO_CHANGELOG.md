@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-27 - SagaBook S297-S301 stock recovery production activation
+
+- Exact source `1a69dce2e3fec4aa9b0b0f84d3249256a788b848` aktif pada immutable
+  release `20260827050516-1a69dce`, dengan rollback
+  `20260826201936-2b22b83`.
+- Recovery stok kini mengisolasi snapshot per cabang, mengunci mutation ketika
+  data stale, dan mempertahankan draft setelah conflict sambil membaca ulang
+  saldo authoritative. Release safety mewajibkan capacity preflight dan
+  receipt restore delapan-field.
+- Fresh encrypted backup/disposable restore, DB audit 100, verifier 17/17,
+  service/journal, dan public/security smoke lulus. Status
+  `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated UAT dan pilot
+  tetap diperlukan sehingga `BUSINESS_READY=false`.
+
 ## 2026-08-27 - COYABAG core SEO contract production release
 
 - Exact source `beecd6f76584557defd6822d36d2efd39473e18f` menyatukan metadata lima

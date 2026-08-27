@@ -7,6 +7,17 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Recovery hardening stok dan release S297-S301 aktif pada exact source
+  `1a69dce2e3fec4aa9b0b0f84d3249256a788b848`, immutable release
+  `20260827050516-1a69dce`, rollback `20260826201936-2b22b83`:
+  `CONFIRMED / PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`. Scope mencakup capacity preflight dua tahap,
+  isolasi snapshot cabang, stale lock, draft-preserving conflict recovery,
+  dan receipt delapan-field. Backup terenkripsi terbaru, offsite round-trip,
+  disposable restore, DB audit 100, serta verifier independen 17/17 lulus.
+  Authenticated Owner/Admin Cabang UAT, opening stock nyata, dan pilot tetap
+  gate terpisah; `BUSINESS_READY=false`.
+
 - Recovery dialog mutasi stok basi S300 exact source
   `d4dbae8e851c26a03c677cfee188f15fac630991` memperbarui PR #19. Dialog
   opening/restock/correction/review/reversal kini merekonsiliasi snapshot
@@ -15,8 +26,8 @@ dalam satu dokumen public-safe.
   idempotency key yang sama. Action yang hilang atau berubah status terkunci
   fail-closed dengan recovery eksplisit. Browser mobile/tablet/desktop 18/18,
   focused PHP 10/10, TypeScript/build/design/dependency/diff gate lulus.
-  Status `CONFIRMED / PUSHED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED`; API, database, dan production tidak berubah.
+  Status `CONFIRMED / PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED` melalui release `20260827050516-1a69dce`.
 
 - Recovery snapshot stok basi S299 exact source
   `a235261f446ebbdbd066fbafabd04e17cbece07d` memperluas PR #19 dengan state
@@ -26,8 +37,7 @@ dalam satu dokumen public-safe.
   Waktu sinkronisasi terakhir dan live status membantu operator memahami
   provenance data. Browser desktop/mobile/tablet 15/15, focused PHP 10/10,
   TypeScript/build/design/dependency/diff gate lulus. Status `CONFIRMED /
-  PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak
-  berubah dan maintenance Git lanjutan menunggu pemulihan kapasitas host.
+  PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
 
 - Hardening isolasi snapshot stok antarcabang S298 exact source
   `3c355f5ab279ec889369c2e87bbf7e30d89c0d60` mencegah saldo cabang sebelumnya
@@ -36,8 +46,7 @@ dalam satu dokumen public-safe.
   ke cabang yang diminta dan menolak payload cabang yang tidak cocok. PR #19
   sudah push; focused PHP 10/10, browser desktop/mobile/tablet 12/12,
   TypeScript/build/design/dependency/diff gate lulus. Status `CONFIRMED /
-  PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; API, database, dan
-  production tidak berubah.
+  PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
 
 - Hardening release S297 dari exact feature source
   `5a721c2d2da513caa3a133cf34e68be43016d32c`, terintegrasi melalui PR #18 ke
@@ -48,7 +57,8 @@ dalam satu dokumen public-safe.
   dan 1 GiB overhead. Receipt release wajib membawa status preflight yang
   lulus. Capacity-only mode membuktikan tidak ada jaringan, download,
   plaintext, atau MySQL. Status `CONFIRMED / MERGED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED`; production dan database tidak berubah.
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; migration delta release terbaru
+  nol.
 
 - Administrasi stok consumable S13–S24 aktif pada exact source
   `2b22b835f7c72b96d569fd7c31e4aacdb56d4f49`, immutable release

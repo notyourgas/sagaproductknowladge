@@ -1,62 +1,66 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 27 Agustus 2026 11:35 WIB
+Evidence cut-off: 27 Agustus 2026 12:16 WIB
 
 Kontrak restore receipt S301 dan kandidat gabungan S297-S300 exact main
 `1a69dce2e3fec4aa9b0b0f84d3249256a788b848` telah `CONFIRMED / PUSHED /
 QA_VALIDATED / SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
-LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Hotfix S301 menyelaraskan verifier
+LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Hotfix S301 menyelaraskan verifier
 restore dengan receipt delapan field S297 dan mewajibkan
 `restore_capacity_preflight=passed`. Full PHP 1.175/1.175 (13.279 assertion),
 focused release+stok 48/48 (418 assertion), build 5.151 modul, browser stok
 mobile/tablet/desktop 18/18, persistence unit 18/18 dan E2E 4/4, typecheck,
 design 26/0, Pint, Bash/PowerShell parse, npm audit dan Composer OSV nol lulus.
-Fresh encrypted backup, checksum, salinan terpisah, dan disposable restore juga
-lulus. Atomic activation belum dijalankan karena transport SSH putus saat
-upload lalu endpoint VPS port 22/443 tidak dapat dijangkau secara global;
-remote deploy command belum dieksekusi. Production terakhir terverifikasi tetap
-`2b22b835` / `20260826201936-2b22b83`, tetapi health live setelah outage belum
-dapat diverifikasi. `BUSINESS_READY=false`.
+Fresh encrypted backup `20260827T050937Z`, checksum, salinan terpisah,
+disposable restore, dan receipt exact candidate juga lulus. Setelah outage
+pulih, atomic activation selesai pada release `20260827050516-1a69dce` dengan
+rollback `20260826201936-2b22b83`. Verifier independen 17/17, snapshot stabil,
+DB audit 100, service aktif, 0 migration pending, 0 queue error, serta
+public/security smoke 3/3 lulus. Authenticated UAT, opening stock nyata, dan
+pilot belum dilakukan; `BUSINESS_READY=false`.
 
 Recovery dialog mutasi stok basi S300 exact source
 `d4dbae8e851c26a03c677cfee188f15fac630991` telah `CONFIRMED / PUSHED /
 UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
-DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED`.
 Coverage membuktikan conflict mutation memicu refresh authoritative tanpa
 menghapus draft, saldo sistem dan proyeksi direbase, retry memakai
 `lockVersion` terbaru dan idempotency key yang sama, serta action yang berubah
 atau hilang gagal tertutup. Focused PHP 10/10 (70 assertion), browser
 mobile/tablet/desktop 18/18 tanpa overflow, focused TypeScript, production
 build, design audit 26 artefak, npm/Composer audit nol, syntax, dan diff check
-lulus. Merge/release, authenticated Owner/Admin Cabang UAT, opening stock
-nyata, kapasitas host development, dan pilot masih gate; production tetap
-`2b22b835` / `20260826201936-2b22b83` dan `BUSINESS_READY=false`.
+lulus. Authenticated Owner/Admin Cabang UAT, opening stock nyata, dan pilot
+  masih gate; release aktif `20260827050516-1a69dce` dan
+  `BUSINESS_READY=false`.
 
 Recovery snapshot stok basi S299 exact source
 `a235261f446ebbdbd066fbafabd04e17cbece07d` telah `CONFIRMED / PUSHED /
 UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
-DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED`.
 Coverage membuktikan refresh gagal mempertahankan saldo terakhir hanya sebagai
 referensi berlabel stale, seluruh mutasi stok terkunci, dan retry sukses
 mengganti saldo authoritative serta membuka kembali aksi. Focused PHP 10/10
 (70 assertion), browser desktop/mobile/tablet 15/15 tanpa overflow, focused
 TypeScript, production build, design audit 26 artefak, dependency audit nol,
-syntax, dan diff check lulus. Merge/release, authenticated UAT, opening stock
-nyata, kapasitas host development, dan pilot masih menjadi gate; production
-tetap `2b22b835` / `20260826201936-2b22b83` dan `BUSINESS_READY=false`.
+syntax, dan diff check lulus. Authenticated UAT, opening stock nyata, dan
+  pilot masih menjadi gate; release aktif `20260827050516-1a69dce` dan
+  `BUSINESS_READY=false`.
 
 Isolasi snapshot stok antarcabang S298 exact source
 `3c355f5ab279ec889369c2e87bbf7e30d89c0d60` telah `CONFIRMED / PUSHED /
 UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
-DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED`.
 Coverage membuktikan saldo cabang lama tidak tampil ketika load cabang baru
 gagal, respons terlambat tidak menimpa cabang aktif, dan mismatch `branchId`
 ditolak fail-closed. Focused PHP 10/10 (70 assertion), browser
 desktop/mobile/tablet 12/12 tanpa overflow, focused TypeScript, production
 build, design audit 26 artefak, npm/Composer audit nol, syntax, dan diff check
-lulus. Merge/release, authenticated Owner/Admin Cabang UAT, opening stock nyata,
-dan pilot masih menjadi gate; production tetap `2b22b835` /
-`20260826201936-2b22b83` dan `BUSINESS_READY=false`.
+lulus. Authenticated Owner/Admin Cabang UAT, opening stock nyata, dan pilot
+  masih menjadi gate; release aktif `20260827050516-1a69dce` dan
+  `BUSINESS_READY=false`.
 
 Integritas aksi status jadwal staff S292-S295 exact source
 `0fcca39f82f58769dad472f6632f2923e7fac18c` telah `CONFIRMED / PUSHED /

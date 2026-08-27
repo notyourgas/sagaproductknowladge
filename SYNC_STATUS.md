@@ -12,12 +12,36 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-27T12:10:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-27T12:16:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
-| Informasi terakhir disinkronkan | COYABAG core storefront SEO contract exact source `beecd6f76584557defd6822d36d2efd39473e18f` dan immutable release `20260827-beecd6f`. |
-| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED`; commerce tetap `BLOCKED` dan fail-closed pada 30/42 checks dengan 12 blocker. |
+| Informasi terakhir disinkronkan | SagaBook S297-S301 exact source `1a69dce2e3fec4aa9b0b0f84d3249256a788b848` dan immutable release `20260827050516-1a69dce`. |
+| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; `BUSINESS_READY=false` menunggu authenticated UAT dan pilot. |
+
+## SagaBook S297-S301 production activation
+
+- Exact source `1a69dce2e3fec4aa9b0b0f84d3249256a788b848` aktif pada release
+  `20260827050516-1a69dce`; rollback `20260826201936-2b22b83` tersedia.
+- Backup terenkripsi `20260827T050937Z`, checksum, offsite round-trip,
+  disposable restore, receipt exact candidate, DB reconcile/audit, dan atomic
+  switch lulus.
+- Verifier independen 17/17 membuktikan remote main/active snapshot stabil,
+  manifest valid, services aktif, maintenance off, 0 migration pending,
+  0 queue error, serta public/security smoke 3/3.
+- Authenticated Owner/Admin Cabang UAT, opening stock nyata, dan pilot belum
+  dilakukan. Activation tidak sama dengan `BUSINESS_READY`.
+
+## File yang berubah pada sinkronisasi ini (SagaBook S297-S301)
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG core storefront SEO contract parity
 

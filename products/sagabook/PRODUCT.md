@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 27 Agustus 2026 11:35 WIB
-Evidence status: stock administration production-activated; S297-S301 exact-main candidate local-validated; deploy blocked by VPS outage
+Updated: 27 Agustus 2026 12:16 WIB
+Evidence status: stock administration and S297-S301 recovery hardening production-activated; business readiness still pending authenticated UAT and pilot
 
 ## Tujuan dokumen
 
@@ -17,19 +17,21 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 ## Status production terbaru
 
 - Kandidat gabungan stok S297-S300 dan hotfix kontrak restore receipt S301
-  tersedia pada exact main
+  aktif pada exact main
   `1a69dce2e3fec4aa9b0b0f84d3249256a788b848`. Verifier kini menerima tepat
   delapan field receipt dan mewajibkan `restore_capacity_preflight=passed`.
   Full PHP 1.175/1.175, focused release+stok 48/48, build 5.151 modul, browser
   mobile/tablet/desktop 18/18, persistence 18/18 + 4/4, typecheck, design,
-  formatting/syntax, dan dependency audit nol lulus. Fresh encrypted backup,
-  checksum, offsite round-trip, serta disposable restore lulus. Upload artifact
-  berhenti sebelum remote deploy command akibat koneksi SSH putus; endpoint VPS
-  kemudian timeout pada port 22/443 dari pemeriksaan lokal dan beberapa node
-  eksternal. Status kandidat `CONFIRMED / PUSHED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED`; production terakhir terverifikasi tetap
-  `2b22b835` / `20260826201936-2b22b83`, sedangkan health live setelah outage
-  belum dapat diklaim.
+  formatting/syntax, dan dependency audit nol lulus. Fresh encrypted backup
+  `20260827T050937Z`, checksum, offsite round-trip, disposable restore, serta
+  receipt exact candidate lulus. Setelah outage VPS pulih, atomic activation
+  selesai pada immutable release `20260827050516-1a69dce` dengan rollback
+  `20260826201936-2b22b83`. Verifier independen 17/17 membuktikan remote main,
+  active pointer/commit, manifest, service, migration, queue journal, public
+  smoke, dan security header stabil. Status `CONFIRMED / PUSHED /
+  LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+  authenticated Owner/Admin Cabang UAT, opening stock nyata, dan pilot tetap
+  exit gate `BUSINESS_READY=false`.
 
 - Recovery dialog mutasi stok basi S300 pada exact source
   `d4dbae8e851c26a03c677cfee188f15fac630991` memperbarui PR #19. Ketika
@@ -41,7 +43,8 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   assertion), browser mobile/tablet/desktop 18/18 tanpa overflow, focused
   TypeScript, build 5.151 modul, design audit 26 artefak, npm/Composer audit
   nol, syntax, dan diff check lulus. Status `CONFIRMED / PUSHED /
-  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
+  LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` melalui
+  release `20260827050516-1a69dce`.
 
 - Recovery snapshot stok basi S299 pada exact source
   `a235261f446ebbdbd066fbafabd04e17cbece07d` memperluas PR #19 di atas S298.
@@ -51,13 +54,13 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   (70 assertion), browser desktop/mobile/tablet 15/15, focused TypeScript,
   build, design audit 26 artefak, npm/Composer audit nol, syntax, dan diff check
   lulus. Status `CONFIRMED / PUSHED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah. Host development sedang
-  kehabisan ruang sehingga maintenance Git lanjutan dan release harus menunggu
-  inventaris serta pembersihan aman.
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` melalui release
+  `20260827050516-1a69dce`.
 
 - Hardening isolasi snapshot stok antarcabang S298 pada exact source
   `3c355f5ab279ec889369c2e87bbf7e30d89c0d60` tersedia di PR #19 dengan
-  status `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+  status `CONFIRMED / PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`.
   Saat operator berpindah cabang, saldo lama langsung dilepas; respons request
   lama tidak dapat menimpa cabang aktif; payload dengan `branchId` yang tidak
   cocok ditolak fail-closed. Focused PHP 10/10 (70 assertion), Playwright
@@ -67,19 +70,20 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 - Hardening kapasitas disposable restore S297 dari exact feature source
   `5a721c2d2da513caa3a133cf34e68be43016d32c` sudah terintegrasi melalui PR #18
   ke exact main `7877afc0a8887829fa3cf26b53c431b8a5ec7f56` dengan status `CONFIRMED /
-  MERGED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Release evidence kini
+  MERGED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
+  Release evidence kini
   gagal tertutup sebelum akses jaringan, decrypt, plaintext, atau disposable
   MySQL ketika volume kerja tidak memenuhi minimum 4 GiB. Setelah tiga backup
   terenkripsi diunduh, kapasitas diperiksa ulang memakai allowance pertumbuhan
   data sebelum restore. Focused 26/26 (290 assertion), full PHP 1.175/1.175
   (13.277 assertion), build, critical typecheck, Pint, PowerShell parse, dan
   audit dependency nol lulus. Quality Gate GitHub gagal sebelum satu step pun
-  berjalan; gate lokal ekuivalen menjadi bukti pengganti. Production tetap exact source
-  `2b22b835f7c72b96d569fd7c31e4aacdb56d4f49`, release
-  `20260826201936-2b22b83`. Verifier read-only pra-merge 17/17 lulus; setelah
-  main maju, runtime tetap sehat dengan service aktif, 0 migrasi pending,
-  0 queue error, dan public/security smoke 3/3. Paritas remote-main menunggu
-  deployment terotorisasi dan `BUSINESS_READY=false`.
+  berjalan; gate lokal ekuivalen menjadi bukti pengganti. Production kini exact
+  source `1a69dce2e3fec4aa9b0b0f84d3249256a788b848`, release
+  `20260827050516-1a69dce`. Verifier read-only 17/17 lulus dengan service
+  aktif, 0 migrasi pending,
+  0 queue error, dan public/security smoke 3/3. Paritas remote-main kini
+  terverifikasi pada release `20260827050516-1a69dce`; `BUSINESS_READY=false`.
 
 - Integritas aksi status pada `Jadwal Sesi Hari Ini` aktif melalui exact source
   `0fcca39f82f58769dad472f6632f2923e7fac18c`, immutable release
