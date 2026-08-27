@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 27 Agustus 2026 12:39 WIB
-Evidence status: S302 release preflight pushed but not deployed; stock administration and S297-S301 remain production-activated; business readiness still pending authenticated UAT and pilot
+Updated: 27 Agustus 2026 13:08 WIB
+Evidence status: S302-S303 two-phase release preflight pushed but not deployed; stock administration and S297-S301 remain production-activated; business readiness still pending authenticated UAT and pilot
 
 ## Tujuan dokumen
 
@@ -16,14 +16,14 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
-- Hardening release S302 exact source
-  `9a35240428ef9a7087bf9a9a535d5cb73e277f3f` pada PR #21 memeriksa pointer
+- Hardening release dua tahap S302-S303 exact source
+  `40caa45a98ef9f3269368f10983572fb6c897659` pada PR #21 memeriksa pointer
   backup, SHA-256 restore receipt, dan exact candidate commit sebelum packaging,
-  full gate, build, atau upload artefak besar. Output preflight dibatasi ke
-  marker aman; gate remote tetap diulang dan tetap otoritatif. Full PHP
-  1.178/1.178 (13.299 assertion), focused 12/12 (106), production read-only
-  positive/negative binding, build, typecheck, design, Pint, serta npm/Composer
-  audit nol lulus. Status `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  lalu mengulang pemeriksaan yang sama setelah seluruh gate lokal dan tepat
+  sebelum upload pertama. Output preflight dibatasi ke marker aman; gate remote
+  tetap diulang dan tetap otoritatif. Full PHP 1.179/1.179 (13.305 assertion),
+  focused 13/13 (112), production-like negative binding, build, typecheck,
+  design, Pint, serta npm/Composer audit nol lulus. Status `CONFIRMED / PUSHED / LOCAL_VALIDATED /
   IMPLEMENTED_NOT_DEPLOYED`; production tetap exact `1a69dce2` pada release
   `20260827050516-1a69dce`.
 

@@ -7,13 +7,14 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Hardening release S302 exact source
-  `9a35240428ef9a7087bf9a9a535d5cb73e277f3f` pada PR #21 menambahkan
-  preflight read-only sebelum pekerjaan release mahal. Pointer backup terakhir,
-  checksum restore receipt, dan candidate commit harus masih cocok; drift
-  berhenti sebelum evidence directory, packaging, full test, atau upload.
-  Output hanya marker allowlisted dan `ops/deploy-sagabook` tetap mengulang
-  gate otoritatif pada VPS. Full/focused test, tiga negative case, build,
+- Hardening release dua tahap S302-S303 exact source
+  `40caa45a98ef9f3269368f10983572fb6c897659` pada PR #21 menambahkan
+  preflight read-only sebelum pekerjaan release mahal dan pemeriksaan ulang
+  tepat sebelum upload pertama. Pointer backup terakhir, checksum restore
+  receipt, dan candidate commit harus masih cocok pada kedua tahap; drift
+  berhenti sebelum evidence/packaging atau sebelum transfer artefak. Output
+  hanya marker allowlisted dan `ops/deploy-sagabook` tetap mengulang gate
+  otoritatif pada VPS. Full/focused test, negative case, build,
   typecheck, formatting, design, dan dependency audit lulus. Status
   `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
   production tidak berubah.

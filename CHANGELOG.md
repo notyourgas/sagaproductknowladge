@@ -1,5 +1,21 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-27 - SagaBook S303 two-phase release preflight sync
+
+- Ringkasan: menyinkronkan pemeriksaan ulang binding backup setelah seluruh
+  gate lokal dan tepat sebelum upload release pertama.
+- Alasan: pointer scheduled backup masih dapat berubah selama full test/build
+  setelah pemeriksaan awal S302 selesai.
+- Produk/area: SagaBook DevOps, backup/restore, provenance, security, QA, dan
+  efisiensi operator release.
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; exact source
+  `40caa45a98ef9f3269368f10983572fb6c897659` pada PR #21.
+- Production, schema, data, feature flag, payment/provider, dan customer flow
+  tidak berubah; `BUSINESS_READY=false`.
+- Dokumen terdampak: Product/Dossier/changelog/ledger SagaBook, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-08-27 - COYABAG Admin dashboard safe refresh sync
 
 - Ringkasan: menyinkronkan snapshot refresh atomik yang mempertahankan data

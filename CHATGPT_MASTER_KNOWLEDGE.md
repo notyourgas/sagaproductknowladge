@@ -1,14 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 27 Agustus 2026 12:39 WIB
+Evidence cut-off: 27 Agustus 2026 13:08 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
-SagaBook release preflight S302 exact source
-`9a35240428ef9a7087bf9a9a535d5cb73e277f3f` pada PR #21 memeriksa pointer
+SagaBook release preflight dua tahap S302-S303 exact source
+`40caa45a98ef9f3269368f10983572fb6c897659` pada PR #21 memeriksa pointer
 backup, checksum restore receipt, dan exact candidate commit sebelum packaging,
-full gate, atau upload. Drift gagal tertutup dan output dibatasi ke marker aman;
-remote deploy contract tetap otoritatif. Full/focused test, build, typecheck,
+lalu mengulangnya setelah gate lokal tepat sebelum upload pertama. Drift gagal
+tertutup dan output dibatasi ke marker aman; remote deploy contract tetap
+otoritatif. Full/focused test, build, typecheck,
 design, format, dan dependency audit lulus. Status `PUSHED / LOCAL_VALIDATED /
 IMPLEMENTED_NOT_DEPLOYED`; production SagaBook tetap `1a69dce2` /
 `20260827050516-1a69dce`.

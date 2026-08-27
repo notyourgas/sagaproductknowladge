@@ -1,15 +1,15 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 27 Agustus 2026 12:39 WIB
+Evidence cut-off: 27 Agustus 2026 13:08 WIB
 
-Preflight binding backup release S302 exact source
-`9a35240428ef9a7087bf9a9a535d5cb73e277f3f` telah `CONFIRMED / PUSHED /
+Preflight binding backup release dua tahap S302-S303 exact source
+`40caa45a98ef9f3269368f10983572fb6c897659` telah `CONFIRMED / PUSHED /
 QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
 IMPLEMENTED_NOT_DEPLOYED`. Coverage membuktikan binding yang valid lulus;
 pointer drift, checksum receipt salah, dan candidate commit berbeda gagal
-tertutup dengan reason aman; serta script berhenti sebelum evidence directory,
-packaging, full gate, atau upload. Full PHP 1.178/1.178 (13.299 assertion),
-focused release 12/12 (106 assertion), PowerShell syntax/runtime, build,
+tertutup dengan reason aman; pemeriksaan berjalan sebelum packaging dan
+diulang setelah gate lokal tepat sebelum upload pertama. Full PHP 1.179/1.179
+(13.305 assertion), focused release 13/13 (112 assertion), PowerShell syntax/runtime, build,
 typecheck, design 26/0, Pint, npm audit nol, Composer audit nol, ancestry, dan
 diff check lulus. Tidak ada runtime/schema/data/flag yang berubah; production
 tetap `1a69dce2` / `20260827050516-1a69dce` dan `BUSINESS_READY=false`.
