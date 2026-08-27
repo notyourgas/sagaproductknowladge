@@ -1,5 +1,22 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-27 - SagaBook S302 release preflight sync
+
+- Ringkasan: menyinkronkan validasi pointer backup, restore receipt, dan exact
+  candidate commit sebelum pekerjaan release mahal.
+- Alasan: scheduled backup dapat memindahkan pointer setelah restore rehearsal,
+  sehingga release sebelumnya baru gagal setelah full gate dan upload besar.
+- Produk/area: SagaBook DevOps, backup/restore, provenance, security, QA, dan
+  operator release recovery.
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; exact source
+  `9a35240428ef9a7087bf9a9a535d5cb73e277f3f` pada PR #21.
+- Production, schema, data, feature flag, payment/provider, dan customer flow
+  tidak berubah. Deploy memerlukan fresh receipt exact merge commit dan
+  otorisasi terpisah; `BUSINESS_READY=false`.
+- Dokumen terdampak: Product/Dossier/changelog/ledger SagaBook, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-08-27 - SagaView S311 production activation sync
 
 - Ringkasan: menyinkronkan custody fisik terpisah, release gates, dan atomic

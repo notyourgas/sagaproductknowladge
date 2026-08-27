@@ -7,6 +7,17 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Hardening release S302 exact source
+  `9a35240428ef9a7087bf9a9a535d5cb73e277f3f` pada PR #21 menambahkan
+  preflight read-only sebelum pekerjaan release mahal. Pointer backup terakhir,
+  checksum restore receipt, dan candidate commit harus masih cocok; drift
+  berhenti sebelum evidence directory, packaging, full test, atau upload.
+  Output hanya marker allowlisted dan `ops/deploy-sagabook` tetap mengulang
+  gate otoritatif pada VPS. Full/focused test, tiga negative case, build,
+  typecheck, formatting, design, dan dependency audit lulus. Status
+  `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+  production tidak berubah.
+
 - Recovery hardening stok dan release S297-S301 aktif pada exact source
   `1a69dce2e3fec4aa9b0b0f84d3249256a788b848`, immutable release
   `20260827050516-1a69dce`, rollback `20260826201936-2b22b83`:

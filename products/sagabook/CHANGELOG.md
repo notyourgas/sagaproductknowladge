@@ -1,5 +1,21 @@
 # SagaBook Changelog
 
+## 2026-08-27 - Preflight binding backup sebelum release gate S302
+
+- Exact source `9a35240428ef9a7087bf9a9a535d5cb73e277f3f` pada PR #21 memeriksa
+  pointer backup terakhir, checksum restore receipt, dan exact candidate commit
+  sebelum evidence, packaging, full regression, build, atau upload besar.
+- Binding valid lulus pada production read-only; pointer drift, checksum salah,
+  dan candidate mismatch berhenti fail-closed. Output receipt mentah tidak
+  ditampilkan dan gate remote tetap menjadi otoritas terakhir.
+- Full PHP 1.178/1.178 (13.299 assertion), focused 12/12 (106), build,
+  typecheck, design, Pint, PowerShell syntax/runtime, npm audit nol, Composer
+  audit nol, dan diff check lulus.
+- Status `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+  Production tidak berubah dari exact `1a69dce2` / release
+  `20260827050516-1a69dce`; deploy S302 memerlukan fresh receipt untuk exact
+  merge commit dan otorisasi terpisah.
+
 ## 2026-08-27 - Recovery stok S297-S301 production-activated setelah VPS pulih
 
 - Exact main `1a69dce2e3fec4aa9b0b0f84d3249256a788b848` aktif pada immutable
