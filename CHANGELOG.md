@@ -1,5 +1,22 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-27 - SagaBook S300 stale stock dialog recovery sync
+
+- Ringkasan: menyinkronkan recovery mutation stok yang mempertahankan draft,
+  membaca ulang saldo authoritative, dan merebase optimistic lock sebelum retry.
+- Alasan: operator tidak boleh kehilangan input atau mengulang mutation memakai
+  saldo dan versi lama setelah conflict atau kegagalan sementara.
+- Produk/area: SagaBook stock administration, frontend recovery,
+  accessibility, QA, security, idempotency, dan data integrity.
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; exact source
+  `d4dbae8e851c26a03c677cfee188f15fac630991`, PR #19.
+- Production berubah: tidak; tetap exact source `2b22b835` dan release
+  `20260826201936-2b22b83`. Kapasitas host development tetap perlu dipulihkan
+  aman sebelum maintenance Git atau release lanjutan.
+- Dokumen terdampak: Product, Dossier, changelog dan ledger SagaBook,
+  portfolio, root changelog, serta sync status.
+
 ## 2026-08-27 - COYABAG order access privacy recovery production sync
 
 - Ringkasan: menyinkronkan penghapusan akses Order Status dari tab aktif untuk

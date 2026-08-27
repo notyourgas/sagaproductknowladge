@@ -1,5 +1,21 @@
 # SagaBook Changelog
 
+## 2026-08-27 - Recovery dialog mutasi stok basi S300
+
+- Exact source `d4dbae8e851c26a03c677cfee188f15fac630991` memperbarui PR #19 agar
+  conflict atau kegagalan mutation otomatis diikuti pembacaan ulang saldo
+  authoritative tanpa menghapus draft dialog.
+- Saldo sistem, proyeksi, dan optimistic `lockVersion` direbase sebelum retry;
+  idempotency key tetap stabil. Aksi yang tidak lagi valid gagal tertutup dan
+  harus dipilih ulang dari snapshot terbaru.
+- Focused PHP 10/10 (70 assertion), Playwright mobile/tablet/desktop 18/18
+  tanpa overflow, focused TypeScript, build 5.151 modul, design audit 26
+  artefak, npm/Composer audit nol, syntax, dan diff check lulus.
+- Status `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Production tetap exact source
+  `2b22b835f7c72b96d569fd7c31e4aacdb56d4f49`, release
+  `20260826201936-2b22b83`; merge/release dan authenticated UAT masih gate.
+
 ## 2026-08-27 - Recovery snapshot stok basi S299
 
 - Exact source `a235261f446ebbdbd066fbafabd04e17cbece07d` pada PR #19

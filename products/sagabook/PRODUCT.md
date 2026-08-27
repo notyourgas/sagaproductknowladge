@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 27 Agustus 2026 09:20 WIB
-Evidence status: stock administration production-activated; S297 merged; S298-S299 stock recovery candidate, not deployed
+Updated: 27 Agustus 2026 10:20 WIB
+Evidence status: stock administration production-activated; S297 merged; S298-S300 stock recovery candidate, not deployed
 
 ## Tujuan dokumen
 
@@ -15,6 +15,18 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- Recovery dialog mutasi stok basi S300 pada exact source
+  `d4dbae8e851c26a03c677cfee188f15fac630991` memperbarui PR #19. Ketika
+  mutation menerima conflict atau kegagalan sementara, UI membaca ulang saldo
+  authoritative tanpa menghapus pack, jumlah, maupun alasan yang sedang
+  diketik. Saldo sistem, proyeksi, dan `lockVersion` diperbarui sebelum retry;
+  idempotency key tetap sama. Jika aksi sudah tidak berlaku, konfirmasi gagal
+  tertutup dan operator diminta memilih aksi terbaru. Focused PHP 10/10 (70
+  assertion), browser mobile/tablet/desktop 18/18 tanpa overflow, focused
+  TypeScript, build 5.151 modul, design audit 26 artefak, npm/Composer audit
+  nol, syntax, dan diff check lulus. Status `CONFIRMED / PUSHED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
 
 - Recovery snapshot stok basi S299 pada exact source
   `a235261f446ebbdbd066fbafabd04e17cbece07d` memperluas PR #19 di atas S298.

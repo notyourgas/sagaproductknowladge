@@ -7,6 +7,17 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Recovery dialog mutasi stok basi S300 exact source
+  `d4dbae8e851c26a03c677cfee188f15fac630991` memperbarui PR #19. Dialog
+  opening/restock/correction/review/reversal kini merekonsiliasi snapshot
+  authoritative setelah mutation gagal, mempertahankan draft operator, dan
+  menghitung ulang saldo proyeksi memakai `lockVersion` terbaru. Retry memakai
+  idempotency key yang sama. Action yang hilang atau berubah status terkunci
+  fail-closed dengan recovery eksplisit. Browser mobile/tablet/desktop 18/18,
+  focused PHP 10/10, TypeScript/build/design/dependency/diff gate lulus.
+  Status `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; API, database, dan production tidak berubah.
+
 - Recovery snapshot stok basi S299 exact source
   `a235261f446ebbdbd066fbafabd04e17cbece07d` memperluas PR #19 dengan state
   stale eksplisit. Saldo lama tetap tersedia sebagai referensi saat refresh

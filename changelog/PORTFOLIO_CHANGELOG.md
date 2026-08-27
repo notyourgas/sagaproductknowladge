@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-27 - SagaBook S300 stale stock dialog recovery
+
+- Exact source `d4dbae8e851c26a03c677cfee188f15fac630991` memperbarui PR #19.
+- Mutation gagal kini merefresh saldo authoritative sambil menjaga draft,
+  merebase proyeksi dan optimistic lock, serta mempertahankan idempotency key;
+  action yang tidak lagi valid terkunci fail-closed.
+- PHP 10/10, browser mobile/tablet/desktop 18/18, TypeScript/build/design dan
+  audit dependency lulus. Status `PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production SagaBook tidak berubah.
+
 ## 2026-08-27 - COYABAG order access privacy recovery deployed
 
 - Exact source `160e423948d4587a6895c73d84dd2acf49311b20` aktif pada immutable

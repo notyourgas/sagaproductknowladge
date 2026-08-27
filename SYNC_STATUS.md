@@ -12,12 +12,35 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-27T09:27:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-27T10:20:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
-| Informasi terakhir disinkronkan | COYABAG order access privacy recovery pada exact source `160e423948d4587a6895c73d84dd2acf49311b20`. |
-| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED`; commerce tetap fail-closed. |
+| Informasi terakhir disinkronkan | SagaBook S300 stale stock dialog recovery pada exact source `d4dbae8e851c26a03c677cfee188f15fac630991`. |
+| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah. |
+
+## SagaBook S300 stale stock dialog recovery
+
+- Conflict atau kegagalan mutation memicu refresh authoritative tanpa
+  menghapus draft operator; saldo sistem, proyeksi, dan optimistic lock
+  diperbarui sebelum retry.
+- Retry mempertahankan idempotency key. Action yang tidak lagi valid terkunci
+  fail-closed dan harus dipilih ulang dari snapshot terbaru.
+- Focused PHP 10/10, browser mobile/tablet/desktop 18/18, TypeScript, build,
+  design audit, npm/Composer audit, syntax, dan diff check lulus.
+- Exact source `d4dbae8e851c26a03c677cfee188f15fac630991` sudah push pada PR #19;
+  belum merge dan belum deploy. Production tetap `2b22b835` /
+  `20260826201936-2b22b83`.
+
+## File yang berubah pada sinkronisasi SagaBook S300
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG order access privacy recovery
 

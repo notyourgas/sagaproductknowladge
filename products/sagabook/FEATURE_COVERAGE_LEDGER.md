@@ -1,6 +1,20 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 27 Agustus 2026 09:20 WIB
+Evidence cut-off: 27 Agustus 2026 10:20 WIB
+
+Recovery dialog mutasi stok basi S300 exact source
+`d4dbae8e851c26a03c677cfee188f15fac630991` telah `CONFIRMED / PUSHED /
+UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+DATA_INTEGRITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+Coverage membuktikan conflict mutation memicu refresh authoritative tanpa
+menghapus draft, saldo sistem dan proyeksi direbase, retry memakai
+`lockVersion` terbaru dan idempotency key yang sama, serta action yang berubah
+atau hilang gagal tertutup. Focused PHP 10/10 (70 assertion), browser
+mobile/tablet/desktop 18/18 tanpa overflow, focused TypeScript, production
+build, design audit 26 artefak, npm/Composer audit nol, syntax, dan diff check
+lulus. Merge/release, authenticated Owner/Admin Cabang UAT, opening stock
+nyata, kapasitas host development, dan pilot masih gate; production tetap
+`2b22b835` / `20260826201936-2b22b83` dan `BUSINESS_READY=false`.
 
 Recovery snapshot stok basi S299 exact source
 `a235261f446ebbdbd066fbafabd04e17cbece07d` telah `CONFIRMED / PUSHED /
