@@ -12,12 +12,37 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-27T07:20:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-27T07:45:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
-| Informasi terakhir disinkronkan | SagaBook S298 stock branch isolation pada exact source `3c355f5ab279ec889369c2e87bbf7e30d89c0d60`. |
-| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah. |
+| Informasi terakhir disinkronkan | COYABAG checkout draft recovery pada exact source `0c703b73cecdf0ab97d4bf95c8c9fd3db55f3dd4`. |
+| Status sinkronisasi | `CONFIRMED / PUSHED / PRODUCTION_DEPLOYED`; surface production berubah, commerce production tetap blocked. |
+
+## COYABAG checkout draft recovery and deferred checkout runtime
+
+- Exact source `0c703b73cecdf0ab97d4bf95c8c9fd3db55f3dd4` aktif pada immutable
+  release `20260827-0c703b7`; rollback `20260827-81428fa` tersedia.
+- Detail checkout dapat dipulihkan dari penyimpanan per tab selama 30 menit,
+  tetapi token tujuan dan ID quote pengiriman tidak disimpan. Restore wajib
+  memverifikasi ulang tujuan dan ongkir; draft dihapus setelah order berhasil.
+- Status loading, restored, saved, cleared, dan error tersedia. Kegagalan
+  browser storage tidak memblokir form, dan runtime draft/API dimuat lazy.
+- Storefront 209/209; Laravel 446 pass, satu intentional skip, 4.236 assertions;
+  dependency audit nol; 32 route accessibility; 110 kombinasi responsive;
+  backup, worker, exact asset, dan public smoke lulus.
+- Readiness tetap 30/42 dengan 12 blocker; `commerceActivated=false` dan
+  provider production tetap fail-closed.
+
+## File yang berubah pada sinkronisasi ini (COYABAG Checkout Recovery)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook S298 stock branch isolation
 

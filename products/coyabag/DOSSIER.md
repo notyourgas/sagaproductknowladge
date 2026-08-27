@@ -78,9 +78,18 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260827-81428fa` memakai exact source
-`81428fa54d7adee3f3e2d06e582125e12baf46e2` dan rollback
-`20260827-4cf4ce6`. Product Detail sekarang mengambil ukuran, material,
+Release production terbaru `20260827-0c703b7` memakai exact source
+`0c703b73cecdf0ab97d4bf95c8c9fd3db55f3dd4` dan rollback
+`20260827-81428fa`. Checkout kini memulihkan detail pelanggan dari penyimpanan
+per tab yang berumur maksimal 30 menit, tanpa menyimpan token pilihan tujuan
+atau ID quote pengiriman. Restore selalu mewajibkan verifikasi ulang tujuan dan
+ongkir. UI menyediakan status loading, dipulihkan, tersimpan, dihapus, dan
+gagal; draft dihapus setelah order berhasil, sedangkan kegagalan browser
+storage tidak memblokir form.
+
+Modul draft dan API checkout dimuat secara dinamis. Entry JavaScript awal
+404,9 KiB dengan gzip 111,5 KiB, tetap di bawah budget 112 KiB. Product Detail
+sekarang mengambil ukuran, material,
 kapasitas, dan perawatan dari source of truth Admin/API, mengabaikan internal
 key, serta menandai field kosong sebagai sedang diverifikasi tanpa mengarang
 fakta. Katalog live baru menerbitkan perawatan; ukuran, material, dan kapasitas
@@ -93,9 +102,10 @@ Tujuh region horizontal `/our-product` juga sudah keyboard-focusable, bernama
 aksesibel, memiliki focus indicator yang terlihat, dan mendukung ArrowRight
 pada mobile. Ini menutup blocker accessibility candidate Cart sebelumnya.
 
-Storefront 205/205, Laravel 450 total dengan 449 pass dan satu intentional
-skip, dependency/security audit nol, full release gate, 32 route accessibility
-production desktop/mobile, serta 110 kombinasi responsive production lulus.
+Storefront 209/209, Laravel 447 total dengan 446 pass, satu intentional skip,
+dan 4.236 assertions, dependency/security audit nol, full release gate, 32
+route accessibility production desktop/mobile, serta 110 kombinasi responsive
+production lulus.
 Public smoke storefront/API/admin, Nginx, PHP 8.5 FPM, Supervisor, dua worker,
 checksum, backup, dan postdeploy log gate juga lulus. Deploy tidak membawa
 migration atau mutasi order/payment/stock/provider. Readiness tetap 30/42

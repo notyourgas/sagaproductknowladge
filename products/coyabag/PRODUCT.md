@@ -61,9 +61,16 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Release aktif `20260827-81428fa` dengan exact source
-  `81428fa54d7adee3f3e2d06e582125e12baf46e2` melayani production;
-  rollback langsung `20260827-4cf4ce6` dipertahankan.
+- Release aktif `20260827-0c703b7` dengan exact source
+  `0c703b73cecdf0ab97d4bf95c8c9fd3db55f3dd4` melayani production;
+  rollback langsung `20260827-81428fa` dipertahankan.
+- Detail checkout kini dipulihkan dari penyimpanan per tab selama maksimum 30
+  menit. Draft tidak menyimpan token pilihan tujuan atau ID quote pengiriman,
+  sehingga tujuan dan ongkir wajib diverifikasi ulang setelah restore. Status
+  loading, tersimpan, dipulihkan, dihapus, dan gagal tersedia; draft dihapus
+  setelah order berhasil.
+- Modul draft dan API checkout dimuat saat dibutuhkan. Entry JavaScript awal
+  404,9 KiB dengan gzip 111,5 KiB dan tetap di bawah budget 112 KiB.
 - Product Detail menampilkan ukuran, material, kapasitas, dan perawatan dalam
   urutan stabil dari kontrak Admin/API. Field kosong diberi status sedang
   diverifikasi dan internal key tidak diekspos. Katalog live baru menerbitkan
@@ -76,9 +83,9 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
   memiliki nama aksesibel dan focus indicator yang terlihat, serta dapat
   digeser dengan ArrowRight pada mobile. Ini menutup blocker accessibility yang
   sebelumnya memicu rollback candidate Cart.
-- Storefront 205/205 dan Laravel 450 test dengan 449 pass serta satu
-  intentional skip lulus. Acceptance production lulus untuk 32 route
-  accessibility desktop/mobile, 110 kombinasi responsive, public smoke
+- Storefront 209/209 dan Laravel 447 test dengan 446 pass serta satu
+  intentional skip (4.236 assertions) lulus. Acceptance production lulus untuk
+  32 route accessibility desktop/mobile, 110 kombinasi responsive, public smoke
   storefront/API/admin, worker, checksum, backup, dan postdeploy log gate.
 - Readiness tetap 30/42 dengan 12 blocker; `commerceActivated=false`, TokoPay
   tetap terkunci, dan business readiness tetap blocked.

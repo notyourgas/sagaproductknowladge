@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-27 - COYABAG checkout draft recovery deployed
+
+- Exact source `0c703b73cecdf0ab97d4bf95c8c9fd3db55f3dd4` aktif pada immutable
+  release `20260827-0c703b7`; rollback `20260827-81428fa` tersedia.
+- Detail checkout dapat dipulihkan per tab selama 30 menit, tetapi token tujuan
+  dan ID quote pengiriman tidak disimpan dan wajib diverifikasi ulang. Draft
+  dihapus setelah order berhasil.
+- Loading/restored/saved/cleared/error, failure recovery browser storage,
+  desktop/mobile, aksesibilitas, dan lazy runtime checkout tervalidasi.
+- Storefront 209/209, Laravel 447, full RC, dependency audits, 32 route
+  accessibility, 110 kombinasi responsive, backup, worker, dan public smoke
+  lulus. Status `PRODUCTION_DEPLOYED`; readiness 30/42, 12 blocker, dan commerce
+  tetap fail-closed.
+
 ## 2026-08-27 - SagaBook S298 stock branch isolation
 
 - Exact source `3c355f5ab279ec889369c2e87bbf7e30d89c0d60` pada PR #19

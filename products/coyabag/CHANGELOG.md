@@ -4,6 +4,24 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-27 - Checkout draft recovery deployed
+
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED` dari exact source
+  `0c703b73cecdf0ab97d4bf95c8c9fd3db55f3dd4`, immutable release
+  `20260827-0c703b7`, dan rollback `20260827-81428fa`.
+- Detail pelanggan disimpan per tab maksimal 30 menit dan dapat dipulihkan
+  tanpa menyimpan token tujuan atau ID quote pengiriman. Tujuan dan ongkir
+  selalu diverifikasi ulang; draft dihapus setelah order berhasil.
+- Checkout memiliki status loading, restored, saved, cleared, dan error;
+  kegagalan browser storage tidak memblokir form. Modul draft serta API
+  checkout kini lazy-loaded.
+- Storefront 209/209, Laravel 446 pass dan satu intentional skip dari 447
+  dengan 4.236 assertions, dependency audit nol, full release gate, 32 route
+  accessibility, 110 kombinasi responsive, dan public smoke lulus.
+- Readiness tetap 30/42 dengan 12 blocker; `commerceActivated=false`, provider
+  production tetap terkunci, dan tidak ada order produksi yang dibuat saat
+  acceptance.
+
 ## 2026-08-27 - Cart variant switch and product rail accessibility deployed
 
 - Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED` dari exact source

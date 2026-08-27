@@ -1,5 +1,21 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-27 - COYABAG checkout draft recovery production sync
+
+- Ringkasan: menyinkronkan pemulihan detail checkout per tab, verifikasi ulang
+  tujuan/ongkir, lifecycle draft, visual states, dan lazy runtime checkout.
+- Alasan: pelanggan tidak perlu mengulang data setelah reload, sementara data
+  pengiriman yang mudah kedaluwarsa tetap gagal tertutup.
+- Produk/area: COYABAG Checkout, browser recovery, responsive UI,
+  accessibility, privacy, performance, QA, DevOps, dan provenance.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED`; exact source
+  `0c703b73cecdf0ab97d4bf95c8c9fd3db55f3dd4`, release
+  `20260827-0c703b7`, rollback `20260827-81428fa`.
+- Production berubah: ya; tidak ada order production atau mutasi provider saat
+  acceptance. Readiness tetap 30/42, 12 blocker, dan commerce fail-closed.
+- Dokumen terdampak: Product/Dossier/changelog COYABAG, portfolio, master,
+  root changelog, dan sync status.
+
 ## 2026-08-27 - SagaBook S298 stock branch-isolation sync
 
 - Ringkasan: menyinkronkan hardening snapshot stok agar data cabang lama tidak
