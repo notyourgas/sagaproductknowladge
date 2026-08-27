@@ -12,6 +12,15 @@
   sebelum step akibat billing akun dan production tetap `1a69dce2` /
   `20260827050516-1a69dce`.
 
+## 2026-08-27 - SagaView S316 physical UAT runtime closure
+
+- Exact production backend `cd7288d3` dan Studio `7ae79ae4` terbukti clean,
+  remote exact, sehat, serta menjalankan runtime provenance exact pada loopback.
+- Delapan dari 11 blocker preflight tertutup. Tiga blocker tersisa adalah
+  printer EPSON L8050, driver, dan shortfall kapasitas fixed NTFS 2,92 GiB.
+- Status `EVIDENCE_COMPLETED / UAT_PARTIALLY_UNBLOCKED`; runtime disposable
+  dihentikan, production tidak berubah, dan `BUSINESS_READY=false`.
+
 ## 2026-08-27 - SagaView S315 measured UAT storage shortfall
 
 - Exact Studio `82e9371faa76c79f269661dbb34721c5ea2fcf31` membuat

@@ -1,5 +1,21 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-27 - SagaView S316 runtime evidence closure sync
+
+- Ringkasan: menyinkronkan penutupan delapan blocker checkout,
+  runtime, dan provenance physical UAT melalui loopback sintetis exact
+  production.
+- Alasan: UAT manual harus membedakan blocker runtime yang sudah tertutup dari
+  prasyarat fisik yang masih tertahan.
+- Produk/area: SagaView Studio, backend, privacy, security, QA, runtime
+  provenance, dan release operations.
+- Klasifikasi: `CONFIRMED / EVIDENCE_COMPLETED / UAT_PARTIALLY_UNBLOCKED`;
+  tidak ada source baru atau deploy.
+- Tiga blocker tersisa: EPSON L8050, driver, dan kekurangan kapasitas fixed NTFS
+  2,92 GiB. Production tidak berubah dan `BUSINESS_READY=false`.
+- Dokumen terdampak: Product, changelog, ledger SagaView, portfolio, root
+  changelog, dan sync status.
+
 ## 2026-08-27 - SagaView S315 measured UAT capacity sync
 
 - Ringkasan: menyinkronkan kapasitas snapshot, shortfall, dan target fixed NTFS
