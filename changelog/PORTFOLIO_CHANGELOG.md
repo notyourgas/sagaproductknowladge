@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-27 - COYABAG last order recovery deployed
+
+- Exact source `773362fc4d10c871503adcc35427061158be043a` aktif pada immutable
+  release `20260827-773362f`; rollback `20260827-0c703b7` tersedia.
+- Reload Cart kini dapat melanjutkan pembayaran atau status demo terakhir dari
+  kode order pada sesi tab, sementara detail pembayaran tetap server-verified.
+- Desktop/mobile, lazy assets, 44 px actions, Helvetica, no-overflow, tests,
+  security, backup, worker, dan public smoke lulus.
+- Status `PRODUCTION_DEPLOYED`; readiness tetap 30/42, 12 blocker, dan commerce
+  nyata tetap fail-closed.
+
 ## 2026-08-27 - COYABAG checkout draft recovery deployed
 
 - Exact source `0c703b73cecdf0ab97d4bf95c8c9fd3db55f3dd4` aktif pada immutable

@@ -12,12 +12,33 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-27T07:45:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-27T09:15:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
-| Informasi terakhir disinkronkan | COYABAG checkout draft recovery pada exact source `0c703b73cecdf0ab97d4bf95c8c9fd3db55f3dd4`. |
+| Informasi terakhir disinkronkan | COYABAG last order recovery pada exact source `773362fc4d10c871503adcc35427061158be043a`. |
 | Status sinkronisasi | `CONFIRMED / PUSHED / PRODUCTION_DEPLOYED`; surface production berubah, commerce production tetap blocked. |
+
+## COYABAG last order recovery
+
+- Exact source `773362fc4d10c871503adcc35427061158be043a` aktif pada immutable
+  release `20260827-773362f`; rollback `20260827-0c703b7` tersedia.
+- Reload Cart dapat melanjutkan pembayaran atau status demo terakhir melalui
+  kode order pada sesi tab. Detail pembayaran tetap server-verified.
+- Recovery desktop/mobile, lazy assets, target aksi 44 px, Helvetica,
+  no-overflow, tests, security audit, backup, worker, dan public smoke lulus.
+- Readiness tetap 30/42 dengan 12 blocker; commerce nyata tetap fail-closed dan
+  acceptance tidak membuat order produksi.
+
+## File yang berubah pada sinkronisasi ini (COYABAG Last Order Recovery)
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG checkout draft recovery and deferred checkout runtime
 

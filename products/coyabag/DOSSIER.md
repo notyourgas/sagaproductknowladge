@@ -78,9 +78,14 @@ warna mengikuti katalog server. Source sudah berada di `main`, dikunci sebagai
 focus/Escape, no-overflow, API-failure preservation, dan checkout fail-closed.
 Commerce activation tetap ditahan.
 
-Release production terbaru `20260827-0c703b7` memakai exact source
-`0c703b73cecdf0ab97d4bf95c8c9fd3db55f3dd4` dan rollback
-`20260827-81428fa`. Checkout kini memulihkan detail pelanggan dari penyimpanan
+Release production terbaru `20260827-773362f` memakai exact source
+`773362fc4d10c871503adcc35427061158be043a` dan rollback
+`20260827-0c703b7`. Jika Cart direload setelah checkout berhasil, pelanggan
+dapat kembali ke pembayaran atau status demo terakhir dari sesi tab. Hanya
+kode order yang disimpan; detail pembayaran tetap diverifikasi server dan
+checkout nyata tetap ditutup saat readiness blocked.
+
+Checkout juga memulihkan detail pelanggan dari penyimpanan
 per tab yang berumur maksimal 30 menit, tanpa menyimpan token pilihan tujuan
 atau ID quote pengiriman. Restore selalu mewajibkan verifikasi ulang tujuan dan
 ongkir. UI menyediakan status loading, dipulihkan, tersimpan, dihapus, dan
@@ -102,7 +107,7 @@ Tujuh region horizontal `/our-product` juga sudah keyboard-focusable, bernama
 aksesibel, memiliki focus indicator yang terlihat, dan mendukung ArrowRight
 pada mobile. Ini menutup blocker accessibility candidate Cart sebelumnya.
 
-Storefront 209/209, Laravel 447 total dengan 446 pass, satu intentional skip,
+Storefront 210/210, Laravel 447 total dengan 446 pass, satu intentional skip,
 dan 4.236 assertions, dependency/security audit nol, full release gate, 32
 route accessibility production desktop/mobile, serta 110 kombinasi responsive
 production lulus.

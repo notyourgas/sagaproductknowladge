@@ -4,6 +4,21 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-27 - Last order recovery deployed
+
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED` dari exact source
+  `773362fc4d10c871503adcc35427061158be043a`, immutable release
+  `20260827-773362f`, dan rollback `20260827-0c703b7`.
+- Reload Cart setelah checkout kini menampilkan akses pembayaran atau status
+  demo terakhir. Hanya kode order tersimpan di sesi tab; otorisasi dan detail
+  pembayaran tetap diverifikasi server.
+- Recovery responsif, keyboard-operable, memakai target 44 px, dan dimuat
+  sebagai lazy JS/CSS tanpa melewati budget initial load.
+- Storefront 210/210, Laravel 447, full RC, security audit, 32 accessibility
+  checks, 110 responsive combinations, backup, worker, dan public smoke lulus.
+- Readiness tetap 30/42 dengan 12 blocker. Checkout nyata tetap fail-closed dan
+  acceptance produksi tidak membuat order nyata.
+
 ## 2026-08-27 - Checkout draft recovery deployed
 
 - Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED` dari exact source

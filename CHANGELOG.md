@@ -1,5 +1,21 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-27 - COYABAG last order recovery production sync
+
+- Ringkasan: menyinkronkan akses kembali ke pembayaran/status terakhir setelah
+  reload Cart, dengan penyimpanan kode order per tab dan verifikasi server.
+- Alasan: pelanggan dan presenter demo tidak kehilangan jalur konfirmasi setelah
+  reload, tanpa memperlebar akses transaksi atau menyimpan detail pembayaran.
+- Produk/area: COYABAG Cart, Checkout, Payment Confirmation, responsive UI,
+  accessibility, privacy, performance, QA, DevOps, dan provenance.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED`; exact source
+  `773362fc4d10c871503adcc35427061158be043a`, release
+  `20260827-773362f`, rollback `20260827-0c703b7`.
+- Production berubah: ya; commerce tetap 30/42 dengan 12 blocker dan tidak ada
+  order produksi yang dibuat saat acceptance.
+- Dokumen terdampak: Product/Dossier/changelog COYABAG, portfolio, master, root
+  changelog, dan sync status.
+
 ## 2026-08-27 - COYABAG checkout draft recovery production sync
 
 - Ringkasan: menyinkronkan pemulihan detail checkout per tab, verifikasi ulang
