@@ -1,5 +1,25 @@
 # SagaView Changelog
 
+## 2026-08-27 - S320 worktree archive media identity guard
+
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED / PRODUCTION_UNCHANGED`.
+- Before: rencana S319 menyebut removable storage berdasarkan drive letter;
+  pergantian perangkat dapat mengarahkan archive ke media yang salah.
+- After: exact source `387e0d52771403b49a13b67893096135c247e3e2`
+  mewajibkan fingerprint terotorisasi, nama media, bus USB, filesystem
+  NTFS/exFAT, ukuran, kapasitas, dan direktori khusus SagaView. Root volume,
+  reparse point, FAT32, media kecil, dan tujuan non-SagaView ditolak read-only.
+- Acceptance: media removable aktual tidak cocok dengan media custody S311;
+  guard exit 2 dengan `WroteFiles=false`. Synthetic 10/10, custody regression
+  8/8, syntax 3/3, mutation scan nol, npm audit nol, serta production
+  provenance HTTP 200 lulus. Composer refresh terkena timeout transport,
+  sedangkan lock identik dengan exact-base S311 yang diaudit nol hari ini.
+- Boundary: tidak ada archive, move/delete, deploy, foto/path/output customer,
+  identifier perangkat publik, payment, atau perubahan produk lain.
+  `BUSINESS_READY=false` sampai media yang benar tersedia, relokasi
+  terotorisasi selesai, dan UAT manual 14 gate/finalize lulus.
+
 ## 2026-08-27 - S319 fixed NTFS recovery plan
 
 - Klasifikasi: `CONFIRMED / RECOVERY_PLAN_VALIDATED / RELEASE_BLOCKED /

@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-27 - SagaView S320 archive media identity guard
+
+- Exact pushed source `387e0d52771403b49a13b67893096135c247e3e2`
+  mengikat archive recovery ke identitas media yang disetujui, bukan huruf
+  drive yang dapat berubah.
+- Removable media aktual tidak cocok dengan custody S311 dan ditolak sebelum
+  write; acceptance 10/10 serta custody regression 8/8 lulus tanpa membuat,
+  memindahkan, atau menghapus data.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  RELEASE_BLOCKED / PRODUCTION_UNCHANGED`; `BUSINESS_READY=false`.
+
 ## 2026-08-27 - SagaView S319 fixed NTFS recovery plan
 
 - Audit read-only mengidentifikasi 81 worktree inaktif, clean, dan

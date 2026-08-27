@@ -1,6 +1,25 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 27 Agustus 2026 21:10 WIB
+Evidence cut-off: 27 Agustus 2026 23:20 WIB
+
+S320 worktree archive media identity guard: exact pushed source
+`387e0d52771403b49a13b67893096135c247e3e2` menutup risiko huruf drive
+removable berubah dan menunjuk media yang salah. Guard read-only mengikat
+destination ke fingerprint terotorisasi, nama media, bus USB, filesystem
+NTFS/exFAT, ukuran, kapasitas bebas, serta direktori khusus SagaView; volume
+root, reparse point, FAT32, media terlalu kecil, dan direktori non-SagaView
+ditolak sebelum ada write.
+
+Media removable yang terpasang saat acceptance tidak sama dengan media
+custody terverifikasi S311 dan berformat FAT32. Guard keluar fail-closed
+dengan `WroteFiles=false`; direktori archive tidak dibuat dan data existing
+tidak dibaca atau disentuh. Synthetic identity 10/10, atomic custody regression
+8/8, syntax 3/3, mutation-primitive scan nol, npm audit nol, dan public
+production provenance HTTP 200 lulus. Composer advisory refresh terkena
+timeout transport; `composer.lock` identik dengan exact-base S311 yang sudah
+diaudit nol pada hari yang sama. Status `PUSHED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED / PRODUCTION_UNCHANGED`;
+`BUSINESS_READY=false`.
 
 S319 fixed NTFS recovery plan: audit read-only menutup ketidakjelasan cara
 memenuhi kapasitas physical UAT. Volume D mempunyai 1,779 GiB kosong dan perlu

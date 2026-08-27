@@ -1,5 +1,22 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-27 - SagaView S320 archive media identity guard sync
+
+- Ringkasan: menyinkronkan guard destination recovery yang menolak media
+  tertukar sebelum archive worktree S319 dijalankan.
+- Alasan: drive letter removable tidak cukup sebagai identitas media dan dapat
+  menunjuk perangkat berbeda pada run berikutnya.
+- Produk/area: SagaView local release operations, storage recovery, privacy,
+  security, QA, dan production audit.
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED / PRODUCTION_UNCHANGED`; exact
+  source `387e0d52771403b49a13b67893096135c247e3e2`.
+- Acceptance 10/10, custody regression 8/8, syntax 3/3, mutation scan nol,
+  npm audit nol, dan production provenance HTTP 200 lulus. Tidak ada write,
+  move/delete, deploy, atau data restricted.
+- Dokumen terdampak: Product, changelog, ledger SagaView, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-27 - SagaView S319 fixed NTFS recovery plan sync
 
 - Ringkasan: menyinkronkan recovery set terukur untuk menutup blocker kapasitas

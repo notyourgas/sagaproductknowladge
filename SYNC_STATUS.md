@@ -12,12 +12,35 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-27T21:10:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-27T23:20:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
-| Informasi terakhir disinkronkan | SagaBook Closing Staff production activation serta SagaView S319 fixed NTFS recovery plan. |
-| Status sinkronisasi | SagaBook `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; SagaView `CONFIRMED / RECOVERY_PLAN_VALIDATED / RELEASE_BLOCKED / PRODUCTION_UNCHANGED`; keduanya `BUSINESS_READY=false`. |
+| Informasi terakhir disinkronkan | SagaView S320 archive media identity guard. |
+| Status sinkronisasi | SagaView `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED / PRODUCTION_UNCHANGED`; `BUSINESS_READY=false`. |
+
+## SagaView S320 archive media identity guard
+
+- Exact pushed source `387e0d52771403b49a13b67893096135c247e3e2`
+  mengikat destination recovery ke fingerprint media yang disetujui, nama,
+  bus USB, filesystem, ukuran, kapasitas, dan direktori khusus SagaView.
+- Removable media aktual tidak cocok dengan custody S311; guard exit
+  fail-closed dan `WroteFiles=false`. Data existing, source, evidence,
+  custody, dan produk lain tidak disentuh.
+- Acceptance synthetic 10/10, custody regression 8/8, syntax 3/3, mutation
+  scan nol, npm audit nol, dan production provenance HTTP 200 lulus.
+  Production tidak berubah; relokasi, UAT manual 14 gate, dan
+  `BUSINESS_READY` masih tertahan.
+
+## File yang berubah pada sinkronisasi ini (SagaView S320)
+
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaView S319 fixed NTFS recovery plan
 

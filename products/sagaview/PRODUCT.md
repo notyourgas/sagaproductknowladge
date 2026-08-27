@@ -1,6 +1,21 @@
 # SagaView Product Knowledge
 
-Updated: 27 Agustus 2026 21:10 WIB
+Updated: 27 Agustus 2026 23:20 WIB
+
+SagaView S320 exact source
+`387e0d52771403b49a13b67893096135c247e3e2` sudah `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Recovery S319 kini mempunyai
+guard identitas media read-only: destination archive harus cocok dengan
+fingerprint yang disetujui, nama media, bus USB, filesystem NTFS/exFAT,
+ukuran, kapasitas, dan direktori khusus SagaView. Volume root, reparse point,
+FAT32, media terlalu kecil, serta tujuan non-SagaView ditolak sebelum write.
+
+Acceptance aktual menemukan removable media yang terpasang tidak sama dengan
+media custody S311. Guard menolak dengan exit fail-closed dan
+`WroteFiles=false`; tidak ada archive, move, delete, deploy, atau akses ke data
+existing. Production tetap backend/Owner `20260826210546-cd7288d` dan Studio
+`20260824170456-7ae79ae`; relokasi S319 serta physical UAT masih tertahan dan
+`BUSINESS_READY=false`.
 
 SagaView S319 menghasilkan rencana recovery kapasitas fixed NTFS secara
 read-only. Audit menemukan 81 worktree SagaView inaktif yang clean dan exact
