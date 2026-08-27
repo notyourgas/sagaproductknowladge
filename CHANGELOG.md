@@ -1,5 +1,21 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-27 - SagaView S315 measured UAT capacity sync
+
+- Ringkasan: menyinkronkan kapasitas snapshot, shortfall, dan target fixed NTFS
+  pada ringkasan operator physical UAT.
+- Alasan: operator memerlukan angka tindakan yang terukur tanpa menghitung
+  sendiri atau melihat path lokal.
+- Produk/area: SagaView Studio, Windows physical UAT, storage recovery,
+  privacy, security, QA, dan release operations.
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; exact source
+  `82e9371faa76c79f269661dbb34721c5ea2fcf31`.
+- Production, API, database, payment, foto/path/output customer, dan produk lain
+  tidak berubah; `BUSINESS_READY=false`.
+- Dokumen terdampak: Product, changelog, ledger SagaView, portfolio, root
+  changelog, dan sync status.
+
 ## 2026-08-27 - SagaView S314 operator UAT summary sync
 
 - Ringkasan: menyinkronkan ringkasan operator ter-redact untuk physical UAT

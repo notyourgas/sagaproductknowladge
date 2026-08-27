@@ -1,5 +1,24 @@
 # SagaView Changelog
 
+## 2026-08-27 - S315 measured physical UAT storage recovery
+
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production dan business readiness tidak berubah.
+- Before: ringkasan S314 menyebut kapasitas di bawah 10 GiB, tetapi operator
+  masih harus menghitung sendiri berapa ruang yang perlu dibebaskan.
+- After: exact Studio `82e9371faa76c79f269661dbb34721c5ea2fcf31`
+  menampilkan kapasitas snapshot, shortfall, dan target fixed NTFS 10 GiB hanya
+  ketika blocker kapasitas aktif. Receipt JSON, volume identity, revalidasi
+  finalize, dan exit fail-closed tidak berubah.
+- Acceptance: RED/GREEN contract 21/21, full unit 247/247, lint, typecheck,
+  format, build, bundle budget 301,0 KiB dari batas 450 KiB, dan npm audit nol.
+  Actual physical preflight tetap exit 2/blocked dan membaca 8,41 GiB tersedia,
+  kekurangan 1,59 GiB; redaction scan nol temuan.
+- Boundary: tidak ada perubahan API, database, migration, payment, upload,
+  production, foto/path/output customer, atau produk lain. Next action tetap
+  memenuhi fixed NTFS 10 GiB, EPSON L8050 + driver, runtime exact, lalu UAT
+  manual 14 gate.
+
 ## 2026-08-27 - S314 physical UAT operator recovery summary
 
 - Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /

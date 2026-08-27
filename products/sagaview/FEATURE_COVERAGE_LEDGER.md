@@ -1,6 +1,22 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 27 Agustus 2026 16:12 WIB
+Evidence cut-off: 27 Agustus 2026 17:12 WIB
+
+S315 measured physical UAT storage recovery: exact pushed Studio source
+`82e9371faa76c79f269661dbb34721c5ea2fcf31` menambahkan kapasitas snapshot,
+kekurangan menuju minimum, dan target fixed NTFS 10 GiB ke ringkasan operator
+S314. Nilai hanya ditampilkan saat blocker kapasitas aktif; raw path, huruf
+drive, URL, credential, foto, identifier perangkat, dan data customer tetap
+tidak masuk ringkasan. Revalidasi storage pada finalize tidak berubah.
+
+RED/GREEN contract 21/21, full unit 247/247, lint, typecheck, format, build,
+bundle budget 301,0 KiB dari batas 450 KiB, serta npm audit nol vulnerability
+lulus. Actual physical preflight exact production tetap fail-closed pada exit 2
+dan mengukur 8,41 GiB tersedia dengan shortfall 1,59 GiB. Status `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production dan
+`BUSINESS_READY=false` tidak berubah. Gap berikutnya tetap membebaskan minimal
+1,59 GiB pada fixed NTFS, memasang EPSON L8050 + driver, dan menjalankan runtime
+exact sebelum UAT manual 14 gate.
 
 S314 physical UAT operator recovery summary: exact pushed Studio source
 `1e0023dde47e318ab64dcfd94ff22137f2606b5c` menambahkan receipt Markdown

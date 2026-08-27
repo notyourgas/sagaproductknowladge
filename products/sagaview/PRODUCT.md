@@ -1,6 +1,21 @@
 # SagaView Product Knowledge
 
-Updated: 27 Agustus 2026 16:12 WIB
+Updated: 27 Agustus 2026 17:12 WIB
+
+SagaView S315 exact Studio source
+`82e9371faa76c79f269661dbb34721c5ea2fcf31` sudah `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Ringkasan physical UAT sekarang
+menampilkan kapasitas fixed NTFS yang diukur saat preflight, kekurangan menuju
+minimum, dan target 10 GiB ketika gate disk tertahan. Ini adalah snapshot
+prasyarat; finalize tetap mengukur ulang volume yang sama dan tetap fail-closed.
+
+Acceptance aktual exact production mengukur 8,41 GiB tersedia dan shortfall
+1,59 GiB, tanpa raw path, huruf drive, URL, credential, foto, identifier
+perangkat, atau data customer. Contract 21/21, full unit 247/247,
+lint/typecheck/format/build/budget, dan dependency audit nol lulus. Production
+tetap backend/Owner `20260826210546-cd7288d` dan Studio
+`20260824170456-7ae79ae`; `BUSINESS_READY=false` sampai kapasitas, printer,
+runtime exact, dan UAT manual 14 gate lulus.
 
 SagaView S314 exact Studio source
 `1e0023dde47e318ab64dcfd94ff22137f2606b5c` sudah `PUSHED /

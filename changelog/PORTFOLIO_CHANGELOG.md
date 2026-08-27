@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-27 - SagaView S315 measured UAT storage shortfall
+
+- Exact Studio `82e9371faa76c79f269661dbb34721c5ea2fcf31` membuat
+  blocker storage physical UAT terukur: kapasitas snapshot, shortfall, dan
+  target fixed NTFS 10 GiB tampil tanpa raw path atau huruf drive.
+- Actual preflight membaca 8,41 GiB tersedia dan kekurangan 1,59 GiB; 247 unit
+  test, build/type/lint/format, budget, privacy scan, dan dependency audit nol
+  lulus. Exit 2/blocked tetap dipertahankan.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+  SagaView tidak berubah dan `BUSINESS_READY=false`.
+
 ## 2026-08-27 - SagaView S314 operator-readable physical UAT preflight
 
 - Exact Studio `1e0023dde47e318ab64dcfd94ff22137f2606b5c` menambahkan

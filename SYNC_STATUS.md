@@ -12,12 +12,32 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-27T16:12:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-27T17:12:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
-| Informasi terakhir disinkronkan | SagaView S314 operator-readable physical UAT preflight exact source `1e0023dde47e318ab64dcfd94ff22137f2606b5c`. |
+| Informasi terakhir disinkronkan | SagaView S315 measured physical UAT capacity exact source `82e9371faa76c79f269661dbb34721c5ea2fcf31`. |
 | Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production SagaView tidak berubah dan `BUSINESS_READY=false`. |
+
+## SagaView S315 measured physical UAT storage recovery
+
+- Exact Studio `82e9371faa76c79f269661dbb34721c5ea2fcf31` menambahkan
+  kapasitas snapshot, shortfall, dan target fixed NTFS pada ringkasan operator.
+- Actual physical preflight tetap fail-closed dan membaca 8,41 GiB tersedia
+  dengan kekurangan 1,59 GiB. Contract 21/21, full unit 247/247,
+  lint/typecheck/format/build/budget, redaction scan, dan npm audit nol lulus.
+- Status `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+  Production tetap backend/Owner `20260826210546-cd7288d` dan Studio
+  `20260824170456-7ae79ae`; `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi ini (SagaView S315)
+
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaView S314 physical UAT operator recovery summary
 
