@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 28 Agustus 2026 04:16 WIB
-Evidence status: post-payment tenant-safe return is production-activated; operational WhatsApp is temporarily suspended for provider transition
+Updated: 28 Agustus 2026 06:12 WIB
+Evidence status: post-payment tenant-safe return is production-activated; observability guard S312 is implemented but not deployed; operational WhatsApp is temporarily suspended for provider transition
 
 ## Tujuan dokumen
 
@@ -15,6 +15,19 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
+
+- Guard observability return pembayaran S312 tersedia pada exact pushed source
+  `bc03fa2202e5f08d767d3d19f3b014a6b960026f`. Verifier read-only mengubah
+  access log menjadi hitungan public-safe dan memblokir request tenantless,
+  404 route tenant-scoped, 5xx relevan, input tidak terbaca, serta format yang
+  tidak dikenali. Window tanpa request relevan tidak diklaim sebagai UAT.
+  Focused 22/22 (303 assertion), full PHP 1.200/1.200 (13.529), build 5.133
+  modul, critical typecheck, Pint, parser, dan dependency audit nol lulus.
+  Scan ephemeral terhadap log production sejak release aktif membaca 14.211
+  baris tanpa menemukan request tenantless, scoped 404, atau 5xx relevan.
+  Status `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap exact `a9127dc` / release
+  `20260827210830-a9127dc` dan `BUSINESS_READY=false`.
 
 - Perbaikan return pascapembayaran S309 dan hardening release transisi provider
   aktif pada exact source `a9127dc4595f2d8d7e60094ac330cac76448b255`,

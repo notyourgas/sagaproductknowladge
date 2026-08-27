@@ -1,5 +1,22 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-28 - SagaBook S312 post-payment log guard sync
+
+- Ringkasan: menyinkronkan verifier read-only agregat untuk regresi return
+  detail, transfer, dan QRIS setelah pembayaran pada exact pushed source
+  `bc03fa2202e5f08d767d3d19f3b014a6b960026f`.
+- Alasan: fix S309 sudah aktif, tetapi inspeksi access log sebelumnya manual
+  dan raw log dapat membawa data restricted. Guard baru gagal tertutup tanpa
+  mencetak URL, booking code, token, IP, referer, atau baris log mentah.
+- Produk/area: SagaBook release verification, payment return observability,
+  security, QA, dan production audit.
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; production tetap
+  `a9127dc` / `20260827210830-a9127dc` dan `BUSINESS_READY=false`.
+- Dokumen terdampak: Product, feature ledger/changelog SagaBook, portfolio,
+  root changelog, dan sync status. Master knowledge serta positioning tidak
+  berubah.
+
 ## 2026-08-28 - SagaBook S309-S311 post-payment activation sync
 
 - Ringkasan: menyinkronkan aktivasi production perbaikan URL return pembayaran
