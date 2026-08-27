@@ -7,6 +7,17 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Release production S308 exact source
+  `7e190cefbec7d3ee60b825bf61741ba81415f2e6` aktif pada immutable release
+  `20260827120312-7e190ce`, rollback `20260827050516-1a69dce`:
+  `CONFIRMED / PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`. S302-S307 terintegrasi tanpa migration delta. Fresh
+  encrypted backup/offsite/disposable restore, exact receipt,
+  archive/manifest/bundle, full release gate, DB audit 100, verifier 17/17,
+  dan public/security smoke 3/3 lulus tanpa release exception. Authenticated
+  Owner/Admin Cabang UAT, opening stock nyata, dan pilot tetap gate terpisah;
+  `BUSINESS_READY=false`.
+
 - Hardening release dua tahap S302-S303 exact source
   `40caa45a98ef9f3269368f10983572fb6c897659` pada PR #21 menambahkan
   preflight read-only sebelum pekerjaan release mahal dan pemeriksaan ulang
@@ -16,8 +27,8 @@ dalam satu dokumen public-safe.
   hanya marker allowlisted dan `ops/deploy-sagabook` tetap mengulang gate
   otoritatif pada VPS. Full/focused test, negative case, build,
   typecheck, formatting, design, dan dependency audit lulus. Status
-  `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
-  production tidak berubah.
+  `CONFIRMED / PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED` melalui S308.
 
 - Recovery hardening stok dan release S297-S301 aktif pada exact source
   `1a69dce2e3fec4aa9b0b0f84d3249256a788b848`, immutable release

@@ -1,14 +1,26 @@
 # Portfolio Changelog
 
+## 2026-08-27 - SagaBook S308 integrated stock hardening production release
+
+- Exact main `7e190cefbec7d3ee60b825bf61741ba81415f2e6` aktif pada immutable
+  release `20260827120312-7e190ce`; rollback
+  `20260827050516-1a69dce` tersedia.
+- Fresh encrypted backup/offsite/disposable restore, exact receipt,
+  archive/manifest/bundle, full release gate, DB audit 100, verifier 17/17,
+  dan public/security smoke 3/3 lulus tanpa release exception.
+- S302-S307 kini `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
+  Authenticated Owner/Admin Cabang UAT, opening stock nyata, dan pilot tetap
+  pending; `BUSINESS_READY=false`.
+
 ## 2026-08-27 - SagaBook S307 integrated stock/release candidate
 
 - Exact source `86211797e51a9201401158c7c35ea1985505a931` pada PR #30
   menggabungkan empat PR release-safety dan stock acceptance tanpa konflik.
 - Focused 26/26, MySQL 10/10, full PHP 1.179/1.179, clean build 5.132 modul,
   type/design/audit, stock browser 4/4, dan visual smoke 26/26 lulus.
-- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; PR mergeable,
-  Actions billing gagal tanpa step, dan production tetap `1a69dce2` /
-  `20260827050516-1a69dce`.
+- PR #30 telah merged dan kandidat diaktifkan melalui S308 pada exact main
+  `7e190cef` / release `20260827120312-7e190ce`. Actions billing tetap gagal
+  tanpa step; local/VPS equivalent gates lulus.
 
 ## 2026-08-27 - SagaBook S306 MySQL stock acceptance
 

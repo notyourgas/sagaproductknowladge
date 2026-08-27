@@ -1,8 +1,19 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 27 Agustus 2026 18:19 WIB
+Evidence cut-off: 27 Agustus 2026 19:14 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
+
+SagaBook S308 exact merged source
+`7e190cefbec7d3ee60b825bf61741ba81415f2e6` aktif pada immutable release
+`20260827120312-7e190ce`, rollback `20260827050516-1a69dce`. S302-S307
+sekarang production-deployed dan production-activated. Fresh encrypted backup
+`20260827T115701Z`, offsite checksum round-trip, disposable MySQL restore,
+exact-commit receipt, immutable archive/manifest/bundle, full release gate,
+DB audit 100, verifier independen 17/17, service/journal, serta public/security
+smoke 3/3 lulus tanpa release exception. Status `PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED`; authenticated Owner/Admin Cabang UAT, opening stock
+nyata, pilot, dan `BUSINESS_READY` tetap terpisah.
 
 SagaBook kandidat integrasi S307 exact source
 `86211797e51a9201401158c7c35ea1985505a931` pada PR #30 menggabungkan
@@ -10,10 +21,9 @@ release backup-binding preflight, synthetic stock UAT, real HTTP 409 recovery,
 serta MySQL/clean-build acceptance. Semua exact head menjadi ancestor kandidat
 tanpa konflik file. Fresh combined gate lulus: focused 26/26, MySQL 10/10,
 full PHP 1.179/1.179, clean build 5.132 modul, type/design/dependency audit,
-stock browser 4/4, dan visual smoke 26/26. Status `PUSHED / LOCAL_VALIDATED /
-IMPLEMENTED_NOT_DEPLOYED`; PR mergeable, Actions billing gagal tanpa step,
-production tetap `1a69dce2` / `20260827050516-1a69dce`, dan merge/release
-memerlukan human gate serta fresh exact-SHA evidence.
+stock browser 4/4, dan visual smoke 26/26. PR #30 telah merged ke exact main
+`7e190cef` dan diaktifkan melalui S308. Actions billing tetap gagal tanpa step;
+local/VPS equivalent gates lulus.
 
 SagaBook acceptance MySQL stok S306 exact source
 `bd5806e0137c1be95296314b4b8134912430f20d` pada PR #28 memverifikasi
@@ -22,9 +32,9 @@ lingkungan serta cleanup fail-closed. MySQL 10/10, full PHP 1.175/1.175,
 visual desktop/mobile 26/26, dua clean build, typecheck, design, syntax, serta
 dependency audit nol lulus. `react-is` dikunci kompatibel React 18 agar Recharts
 dapat dibangun dari clean install; snapshot QRIS diselaraskan ke assertion fee
-Rp236. Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; Actions
-tidak menjalankan step karena billing akun dan production SagaBook tetap
-`1a69dce2` / `20260827050516-1a69dce`.
+Rp236. Status `PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED` melalui S308. Actions tidak menjalankan step karena
+billing akun; local/VPS equivalent gates lulus.
 
 SagaBook release preflight dua tahap S302-S303 exact source
 `40caa45a98ef9f3269368f10983572fb6c897659` pada PR #21 memeriksa pointer
@@ -33,8 +43,7 @@ lalu mengulangnya setelah gate lokal tepat sebelum upload pertama. Drift gagal
 tertutup dan output dibatasi ke marker aman; remote deploy contract tetap
 otoritatif. Full/focused test, build, typecheck,
 design, format, dan dependency audit lulus. Status `PUSHED / LOCAL_VALIDATED /
-IMPLEMENTED_NOT_DEPLOYED`; production SagaBook tetap `1a69dce2` /
-`20260827050516-1a69dce`.
+PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` melalui S308.
 
 SagaView S311 exact source
 `cd7288d3bb4da9542fbfa20f97780fa5639759bf` aktif pada immutable
@@ -50,8 +59,8 @@ Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated
 Owner/operator UAT masih pending sehingga `BUSINESS_READY=false`.
 
 SagaBook recovery stok dan release hardening S297-S301 exact source
-`1a69dce2e3fec4aa9b0b0f84d3249256a788b848` aktif pada immutable release
-`20260827050516-1a69dce`, rollback `20260826201936-2b22b83`. Snapshot stok
+`1a69dce2e3fec4aa9b0b0f84d3249256a788b848` diteruskan ke S308; immutable
+release `20260827050516-1a69dce` kini menjadi rollback langsung. Snapshot stok
 terisolasi per cabang; data stale mengunci mutation; conflict merefresh saldo
 authoritative tanpa menghapus draft; release receipt mewajibkan capacity
 preflight dua tahap dan delapan field exact. Backup terenkripsi terbaru,

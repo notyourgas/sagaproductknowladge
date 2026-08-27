@@ -1,5 +1,23 @@
 # SagaBook Changelog
 
+## 2026-08-27 - S302-S307 production activation melalui S308
+
+- PR #30 merged sebagai exact main
+  `7e190cefbec7d3ee60b825bf61741ba81415f2e6`; semua exact head S302-S307
+  menjadi ancestor dan migration delta dari runtime sebelumnya nol.
+- Fresh encrypted backup `20260827T115701Z`, offsite checksum round-trip,
+  disposable MySQL restore, receipt exact-commit, immutable archive,
+  SHA-256 manifest, dan verified git bundle lulus.
+- Release gate exact commit mengulang full PHP, build, recovery/browser
+  persistence, serta dependency audit sebelum atomic switch. Immutable release
+  `20260827120312-7e190ce` aktif dengan rollback
+  `20260827050516-1a69dce`.
+- Verifier independen 17/17, DB audit 100, 0 migration pending, 0 queue error,
+  service aktif, serta public/security smoke 3/3 lulus tanpa release exception.
+  Status `CONFIRMED / PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`; authenticated Owner/Admin Cabang UAT, opening stock
+  nyata, dan pilot masih membuat `BUSINESS_READY=false`.
+
 ## 2026-08-27 - Kandidat integrasi release dan stok S307
 
 - Exact source `86211797e51a9201401158c7c35ea1985505a931` pada PR #30
@@ -12,9 +30,9 @@
 - Satu percobaan yang memakai satu database untuk dua spec stateful menemukan
   collision fixture; gate final memisahkan setiap spec/project ke database
   disposable sesuai kontrak runner dan seluruh 4/4 lulus.
-- Status `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
-  PR mergeable; Actions gagal sebelum step karena billing. Production tetap
-  exact `1a69dce2` pada release `20260827050516-1a69dce`.
+- PR #30 kemudian merged dan diaktifkan melalui S308 pada exact source
+  `7e190cef` / release `20260827120312-7e190ce`. Actions tetap gagal sebelum
+  step karena billing, tetapi local/VPS equivalent gates lulus.
 
 ## 2026-08-27 - Acceptance MySQL stok dan clean-build recovery S306
 
