@@ -1,6 +1,21 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 28 Agustus 2026 04:16 WIB
+Evidence cut-off: 28 Agustus 2026 06:12 WIB
+
+Guard log return pascapembayaran S312 exact source
+`bc03fa2202e5f08d767d3d19f3b014a6b960026f` telah `CONFIRMED / PUSHED /
+QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`. Verifier read-only memindai Nginx combined log dari
+timestamp immutable release dan hanya mengeluarkan agregat public-safe. Request
+tenantless, 404 route detail/transfer/QRIS tenant-scoped, 5xx relevan, input
+tidak terbaca, dan format log tidak dikenali gagal tertutup; window tenang
+dilaporkan tanpa mengklaim UAT pembayaran. Focused 22/22 (303 assertion), full
+PHP 1.200/1.200 (13.529), production build 5.133 modul, critical typecheck,
+Pint, PowerShell/PHP parse, npm/Composer audit nol, serta scan ephemeral log
+production 14.211 baris lulus dengan 0 request tenantless, 0 scoped 404, dan 0
+5xx relevan. Production tetap exact `a9127dc4595f2d8d7e60094ac330cac76448b255`
+/ release `20260827210830-a9127dc`; merge, release, authenticated UAT, dan pilot
+masih terbuka, sehingga `BUSINESS_READY=false`.
 
 Tenant-safe post-payment return dan provider-transition release hardening S309-S311
 exact source `a9127dc4595f2d8d7e60094ac330cac76448b255` telah `CONFIRMED /

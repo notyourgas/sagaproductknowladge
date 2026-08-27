@@ -1,5 +1,24 @@
 # SagaBook Changelog
 
+## 2026-08-28 - Guard log return pascapembayaran S312
+
+- Exact pushed source `bc03fa2202e5f08d767d3d19f3b014a6b960026f`
+  menambahkan verifier read-only untuk regresi URL return detail, transfer,
+  dan QRIS setelah pembayaran.
+- Output hanya berupa agregat; URL, slug, booking code, token, IP, user-agent,
+  referer, dan baris log mentah tidak dicetak. Request tenantless, scoped 404,
+  relevant 5xx, log tidak terbaca, serta format tidak dikenali gagal tertutup.
+- Focused 22/22 (303 assertion), full PHP 1.200/1.200 (13.529), production
+  build 5.133 modul, critical typecheck, Pint, parser, npm/Composer audit nol,
+  dan scan ephemeral production 14.211 baris lulus. Window tersebut mempunyai
+  0 request tenantless, 0 scoped 404, dan 0 relevant 5xx; tidak ada customer,
+  payment, provider, atau WhatsApp mutation.
+- Status `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Production tidak berubah dari exact
+  `a9127dc4595f2d8d7e60094ac330cac76448b255` / release
+  `20260827210830-a9127dc`; merge/release, authenticated UAT, pilot, dan
+  `BUSINESS_READY` tetap pending.
+
 ## 2026-08-28 - Tenant-safe post-payment return S309-S311 production activation
 
 - PR #35 menutup URL return tanpa tenant; PR #36 menambahkan suspend WhatsApp

@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-28 - SagaBook S312 post-payment return log guard
+
+- Exact pushed source `bc03fa2202e5f08d767d3d19f3b014a6b960026f`
+  menambahkan gate agregat public-safe untuk request tenantless, scoped 404,
+  dan 5xx pada return detail/transfer/QRIS.
+- Focused 22/22, full PHP 1.200/1.200, build/type/format/parser, dependency
+  audit nol, dan scan ephemeral log production lulus tanpa mengeluarkan data
+  booking. Window tanpa traffic relevan tidak dianggap UAT.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+  production tetap `a9127dc` / `20260827210830-a9127dc` dan
+  `BUSINESS_READY=false`.
+
 ## 2026-08-28 - SagaBook S309-S311 post-payment return production activation
 
 - Exact main `a9127dc4595f2d8d7e60094ac330cac76448b255` aktif pada release
