@@ -1,5 +1,25 @@
 # SagaBook Changelog
 
+## 2026-08-28 - Dashboard Changelog 1.16.0 production
+
+- Registry dashboard naik dari `1.15.1` tertanggal 21 Agustus menjadi
+  `1.16.0` tertanggal 28 Agustus dan merangkum dampak user-facing yang sudah
+  aktif: Promotion Center, Booking Manual, koreksi pembayaran terjaga, Closing
+  & Stok, recovery dashboard, return pembayaran tenant-scoped, serta suspend
+  WhatsApp selama transisi provider.
+- Exact changelog source `deb9d0c6d61b09fb91ec61ad0caa201ec5983263`
+  aktif secara kumulatif pada source/release
+  `4aae315ce71933bf2d283a690fb060a95a29aa49` /
+  `20260828062330-4aae315`; rollback `20260828054737-88b8ea9` tersedia.
+- Gate changelog 3/3 (578 assertion), production build 5.133 modul, browser
+  mobile/desktop 2/2, critical typecheck, dan npm/Composer audit nol lulus.
+  Live registry menunjukkan `1.16.0`; active commit, manifest, service,
+  migrasi, journal, post-payment guard, smoke, dan security headers lulus.
+- Audit independen pascadeploy 18/19 hanya gagal pada remote-main parity karena
+  `main` maju setelah release untuk kandidat copy-template WA yang belum aktif.
+  Status `CONFIRMED / PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+  runtime email dan WhatsApp tetap terpisah, `BUSINESS_READY=false`.
+
 ## 2026-08-28 - Resend customer email code release
 
 - Exact source `4aae315ce71933bf2d283a690fb060a95a29aa49` aktif pada

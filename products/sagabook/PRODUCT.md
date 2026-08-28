@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 28 Agustus 2026 13:34 WIB
+Updated: 28 Agustus 2026 13:39 WIB
 Evidence status: resilient Resend customer email code is production-deployed but runtime delivery remains disabled pending restricted secrets and authenticated synthetic UAT; operational WhatsApp stays suspended
 
 ## Tujuan dokumen
@@ -33,6 +33,19 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   tetap tersuspensi.
 
 ## Status production terbaru
+
+- Dashboard Changelog kini menampilkan registry `1.16.0` tertanggal
+  28 Agustus 2026 dengan ringkasan kumulatif fitur production setelah
+  21 Agustus: Promotion Center, Booking Manual, proteksi koreksi pembayaran,
+  Closing & Stok, stabilitas dashboard, return pascapembayaran tenant-scoped,
+  dan suspend WhatsApp selama transisi provider. Exact changelog source
+  `deb9d0c6d61b09fb91ec61ad0caa201ec5983263` aktif secara kumulatif pada
+  release `20260828062330-4aae315`. Live registry, active commit, manifest,
+  rollback, service, migrasi, journal, post-payment guard, serta public smoke
+  dan security headers terverifikasi; audit pascadeploy 18/19 hanya merah pada
+  remote-main parity karena `main` kemudian maju membawa kandidat copy-template
+  WA yang belum dideploy. Status Changelog `CONFIRMED / PUSHED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; `BUSINESS_READY=false`.
 
 - Email customer Resend exact source
   `4aae315ce71933bf2d283a690fb060a95a29aa49` aktif pada immutable release

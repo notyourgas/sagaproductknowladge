@@ -1,5 +1,24 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-28 - SagaBook Dashboard Changelog 1.16.0 sync
+
+- Ringkasan: menyinkronkan registry Changelog production dari `1.15.1` /
+  21 Agustus ke `1.16.0` / 28 Agustus dengan ringkasan kumulatif perubahan
+  user-facing yang sudah aktif.
+- Provenance: exact changelog source
+  `deb9d0c6d61b09fb91ec61ad0caa201ec5983263` termasuk pada source/release
+  `4aae315ce71933bf2d283a690fb060a95a29aa49` /
+  `20260828062330-4aae315`; rollback `20260828054737-88b8ea9`.
+- Evidence: focused 3/3 (578 assertion), build 5.133 modul, browser 2/2,
+  typecheck dan audit dependency nol; live registry, runtime, manifest,
+  service, migrasi, journal, smoke, dan security header lulus. Audit 18/19
+  hanya mencatat remote-main drift setelah kandidat lain dipush.
+- Klasifikasi: `CONFIRMED / PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`; email runtime dan WhatsApp tetap dibatasi terpisah,
+  `BUSINESS_READY=false`.
+- Dokumen terdampak: Product/Changelog SagaBook, portfolio, master knowledge,
+  root changelog, dan sync status.
+
 ## 2026-08-28 - SagaBook Resend email production code sync
 
 - Ringkasan: menyinkronkan release code email confirmation pembayaran,

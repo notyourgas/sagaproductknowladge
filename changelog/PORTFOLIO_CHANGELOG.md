@@ -1,5 +1,20 @@
 # Portfolio Changelog
 
+## 2026-08-28 - SagaBook Dashboard Changelog 1.16.0 production
+
+- Dashboard Changelog aktif kini memakai versi `1.16.0` / 28 Agustus 2026,
+  menggantikan registry `1.15.1` / 21 Agustus dan merangkum perubahan
+  production booking, pembayaran, closing, stok, promosi, dashboard, serta
+  status transisi WhatsApp.
+- Exact changelog source `deb9d0c6d61b09fb91ec61ad0caa201ec5983263`
+  termasuk dalam release aktif `20260828062330-4aae315`; rollback
+  `20260828054737-88b8ea9` tersedia. Test registry/build/browser/typecheck dan
+  dependency audit lulus; live registry serta seluruh runtime/smoke/security
+  check lulus.
+- Audit pascadeploy mencatat 18/19 karena remote `main` maju setelah release ke
+  kandidat copy-template WA yang belum dideploy. Runtime Changelog tetap
+  `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; `BUSINESS_READY=false`.
+
 ## 2026-08-28 - SagaBook Resend customer email code release
 
 - SagaBook kini membawa jalur confirmation pembayaran dan reminder H-1/H-3

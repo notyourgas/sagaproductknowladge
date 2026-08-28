@@ -1,8 +1,21 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 28 Agustus 2026 13:34 WIB
+Evidence cut-off: 28 Agustus 2026 13:39 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
+
+SagaBook Dashboard Changelog `1.16.0` tertanggal 28 Agustus 2026 aktif secara
+kumulatif melalui exact changelog source
+`deb9d0c6d61b09fb91ec61ad0caa201ec5983263` pada release
+`20260828062330-4aae315`. Registry merangkum fitur production setelah
+21 Agustus pada area promosi, Booking Manual, pembayaran, Closing & Stok,
+recovery dashboard, return pascapembayaran tenant-scoped, dan suspend WhatsApp
+selama transisi provider. Live registry, active release/commit, manifest,
+rollback, service, migrasi, journal, post-payment guard, public smoke, serta
+security headers lulus. Audit independen pascadeploy 18/19 hanya merah pada
+remote-main parity karena `main` kemudian maju membawa kandidat copy-template
+WA yang belum dideploy. Changelog `PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED`; `BUSINESS_READY=false`.
 
 SagaBook Resend customer email exact source
 `4aae315ce71933bf2d283a690fb060a95a29aa49` aktif pada immutable release
