@@ -12,12 +12,12 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-28T18:50:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-28T19:12:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
-| Informasi terakhir disinkronkan | SagaBook email basic default-on untuk seluruh tenant. |
-| Status sinkronisasi | Source `1af16b13` aktif pada release `20260828112935-1af16b1`; 15/15 tenant aktif, Owner opt-out tersedia, operational WhatsApp tetap off, dan `BUSINESS_READY=false`. |
+| Informasi terakhir disinkronkan | SagaView S336 draft non-blocking dan recovery kapasitas aktif di production. |
+| Status sinkronisasi | Source `98f13a8d` aktif pada release `20260828111443-98f13a8`; rollback `20260828071047-8063569`, Studio tetap, dan `BUSINESS_READY=false`. |
 
 ## SagaBook email basic default-on seluruh tenant
 
@@ -54,11 +54,18 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
   archive/restore frame tanpa kehilangan aset, versi, draft, profile item,
   revision/checksum, atau audit.
 - Full SagaView 236/3.761, focused 28/108, Playwright desktop/mobile 4/4,
-  build 5.097 modul, Pint, route contract, diff, dan audit dependency nol
+  gate release exact commit 220/1.822, build 5.097 modul, Pint, route
+  contract, diff, dan audit dependency nol lulus.
+- Exact source aktif pada backend/Owner release `20260828111443-98f13a8`,
+  rollback `20260828071047-8063569`; Studio tetap
+  `20260824170456-7ae79ae`.
+- Artifact dua disk, backup terenkripsi `20260828T115448Z`, offsite round-trip,
+  restore disposable 152/174/149 tabel, candidate/rollback 6/6, 0 migration
+  pending, service, lima smoke 200, header, Support Hub boundary, dan journal
   lulus.
-- Status `CONFIRMED / PUSHED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; production tetap S333 dan
-  `BUSINESS_READY=false`.
+- Status `CONFIRMED / PUSHED / LOCAL_VALIDATED / DEVOPS_VALIDATED /
+  SECURITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+  authenticated Owner/Studio UAT belum dan `BUSINESS_READY=false`.
 
 ## File yang berubah pada sinkronisasi SagaView S336
 

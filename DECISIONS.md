@@ -46,7 +46,7 @@ keputusan pengganti.
 | Alternatif yang dipertimbangkan | Memaksa semua draft dipublish; memaksa draft/frame dihapus; membiarkan pesan 422 generik tanpa kapasitas dan recovery. |
 | Dampak | Owner Console menjadikan Studio sebagai aksi utama, menampilkan kapasitas, dan menyediakan archive/restore tenant-scoped, idempoten, revisioned, audited, serta aman terhadap concurrency. Aset, versi, draft, dan profile item dipertahankan. |
 | Pemberi keputusan | Andreas / founder |
-| Status | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; source `98f13a8d50f4ae0b97d787f1ab5e0896296007ec` |
+| Status | `CONFIRMED / PUSHED / LOCAL_VALIDATED / DEVOPS_VALIDATED / SECURITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`; source/release `98f13a8d50f4ae0b97d787f1ab5e0896296007ec` / `20260828111443-98f13a8`, rollback `20260828071047-8063569` |
 | Dokumen terkait | [SagaView Product](products/sagaview/PRODUCT.md), [SagaView Dossier](products/sagaview/DOSSIER.md), [SagaView Changelog](products/sagaview/CHANGELOG.md), [SagaView Ledger](products/sagaview/FEATURE_COVERAGE_LEDGER.md) |
 
 ## DEC-116 - Email customer SagaBook ramah, informatif, dan recoverable

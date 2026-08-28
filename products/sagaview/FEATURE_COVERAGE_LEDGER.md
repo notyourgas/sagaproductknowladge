@@ -1,6 +1,6 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 28 Agustus 2026 17:51 WIB
+Evidence cut-off: 28 Agustus 2026 19:12 WIB
 
 S336 draft non-blocking dan frame-capacity recovery: exact pushed source
 `98f13a8d50f4ae0b97d787f1ab5e0896296007ec` memisahkan akses operasional
@@ -13,11 +13,19 @@ slot. Aset, versi, draft, profile item, revision/checksum, audit, tenant scope,
 idempotency, dan catalog concurrency dipertahankan; hanya frame aktif yang
 masuk konfigurasi Studio. Full SagaView 236/3.761, focused 28/108,
 Playwright desktop/mobile 4/4, build 5.097 modul, Pint, route contract,
-Composer/npm audit nol, diff, clean commit, push, dan remote exact lulus.
-Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
-PRODUCTION_UNCHANGED`. Gap berikutnya adalah authenticated Owner UAT pada
-workspace referensi lalu release pack, backup/restore, rollback, dan approval
-deploy; production tetap S333 dan `BUSINESS_READY=false`.
+Composer/npm audit nol, diff, clean commit, push, dan remote exact lulus. Gate
+release exact commit mengulang 220 test dengan 1.822 assertion.
+
+Exact source aktif pada backend/Owner release `20260828111443-98f13a8`,
+rollback `20260828071047-8063569`, dan Studio tetap
+`20260824170456-7ae79ae`. Artifact archive/bundle tervalidasi pada disk fisik
+terpisah; fresh encrypted backup `20260828T115448Z` lulus offsite round-trip
+dan disposable restore 152/174/149 tabel. Candidate/rollback rehearsal 6/6,
+0 migration pending, shared storage, tiga service, lima smoke 200, header,
+Support Hub unauthenticated 404, dan journal warning 0 lulus. Status `PUSHED /
+LOCAL_VALIDATED / DEVOPS_VALIDATED / SECURITY_VALIDATED /
+PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Gap berikutnya adalah
+authenticated Owner/Studio UAT pada workspace referensi; `BUSINESS_READY=false`.
 
 S333 Changelog production deployment: exact pushed source
 `80635694d7db1df45ade256ecd7e67cc34fe76c3` aktif pada immutable release

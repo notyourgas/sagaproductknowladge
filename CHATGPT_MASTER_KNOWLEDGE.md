@@ -9,7 +9,7 @@ idempotent 0 perubahan, outbox queued/retry kosong, dan reminder dry-run tidak
 menemukan booking eligible. Provider/webhook aktif; operational WhatsApp
 customer/owner tetap off. Owner/customer UAT dan `BUSINESS_READY` belum.
 
-Evidence cut-off: 28 Agustus 2026 18:50 WIB
+Evidence cut-off: 28 Agustus 2026 19:12 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -22,8 +22,14 @@ audit. Archive/restore tenant-scoped, idempoten, memakai catalog lock dan
 revision/checksum; Studio hanya menerima frame aktif. Full SagaView 236/3.761,
 focused 28/108, Playwright desktop/mobile 4/4, build, format, route contract,
 diff, serta audit dependency nol lulus. Status `PUSHED / LOCAL_VALIDATED /
-IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; production tetap S333 dan
-`BUSINESS_READY=false`.
+DEVOPS_VALIDATED / SECURITY_VALIDATED / PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED`. Backend/Owner aktif pada immutable release
+`20260828111443-98f13a8`, rollback `20260828071047-8063569`, dan Studio tetap
+`20260824170456-7ae79ae`. Gate release exact commit 220/1.822, artifact dua
+disk, fresh encrypted backup `20260828T115448Z`, restore 152/174/149 tabel,
+candidate/rollback 6/6, 0 migration pending, tiga service, lima smoke 200,
+security header, Support Hub boundary, dan journal lulus. Authenticated
+Owner/Studio UAT belum dan `BUSINESS_READY=false`.
 
 SagaBook Dashboard Changelog `1.16.0` tertanggal 28 Agustus 2026 aktif secara
 kumulatif melalui exact changelog source

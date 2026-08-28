@@ -2,8 +2,9 @@
 
 ## 2026-08-28 - S336 draft non-blocking dan recovery kapasitas frame
 
-- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`.
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED / DEVOPS_VALIDATED /
+  SECURITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+  `BUSINESS_READY=false`.
 - Before: draft diarahkan sebagai pekerjaan yang harus diselesaikan sebelum
   operasional, publish yang tertahan limit hanya memberi kegagalan kurang jelas,
   dan Owner tidak mempunyai aksi aman untuk membebaskan slot selain menghapus.
@@ -18,10 +19,20 @@
   `98f13a8d50f4ae0b97d787f1ab5e0896296007ec` pada branch
   `codex/s336-sagaview-draft-console-recovery` sudah dipush.
 - Evidence: full SagaView 236/236 (3.761 assertion), focused 28/28 (108),
-  Playwright desktop/mobile 4/4, build 5.097 modul, Pint, route contract, diff,
-  dan audit dependency nol.
-- Boundary: tidak ada migration, foto/path/output customer, payment, deploy,
-  activation, atau perubahan SagaBook. Production tetap S333 dan
+  Playwright desktop/mobile 4/4; gate release exact commit 220/220 (1.822),
+  build 5.097 modul, Pint, route contract, diff, dan audit dependency nol.
+- Release: backend/Owner immutable `20260828111443-98f13a8`, rollback
+  `20260828071047-8063569`, dan Studio tetap
+  `20260824170456-7ae79ae`. Artifact archive dan bundle tervalidasi pada dua
+  disk fisik terpisah.
+- Safety: fresh encrypted backup `20260828T115448Z`, checksum/offsite
+  round-trip, disposable restore 152/174/149 tabel, serta rehearsal kandidat
+  dan rollback 6/6 lulus tanpa migration baru.
+- Production verifier: exact pointer/commit, shared storage, 0 migration
+  pending, tiga service aktif, lima public smoke HTTP 200, security header,
+  Support Hub unauthenticated 404, dan journal warning 0 lulus.
+- Boundary: tidak ada foto/path/output customer, payment, atau perubahan
+  Studio/SagaBook. Authenticated Owner/Studio UAT belum dijalankan dan
   `BUSINESS_READY=false`.
 
 ## 2026-08-28 - S333 current Changelog production activation

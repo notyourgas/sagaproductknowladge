@@ -1,5 +1,21 @@
 # Portfolio Changelog
 
+## 2026-08-28 - SagaView S336 production activation
+
+- Draft frame tidak lagi memblokir akses Studio Console; Owner dapat menyimpan
+  draft, melihat kapasitas, serta archive/restore frame tanpa kehilangan aset,
+  versi, draft, profile item, atau audit.
+- Exact source/release `98f13a8d50f4ae0b97d787f1ab5e0896296007ec` /
+  `20260828111443-98f13a8`, rollback `20260828071047-8063569`; Studio tetap
+  `20260824170456-7ae79ae`.
+- Full/focused/Playwright, exact release gate 220/1.822, build/audit, artifact
+  dua disk, fresh backup `20260828T115448Z`, restore 152/174/149 tabel,
+  candidate/rollback rehearsal 6/6, service, lima smoke 200, header, dan
+  journal lulus.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated
+  Owner/Studio UAT belum dan `BUSINESS_READY=false`. SagaBook tidak berubah
+  oleh release SagaView ini.
+
 ## 2026-08-28 - SagaBook email basic aktif untuk semua tenant
 
 - Confirmation pembayaran, reminder H-1, dan reminder H-3 kini default-on

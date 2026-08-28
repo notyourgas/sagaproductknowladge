@@ -1,5 +1,26 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-28 - SagaView S336 production activation sync
+
+- Ringkasan: menyinkronkan aktivasi draft non-blocking, capacity preflight,
+  serta archive/restore frame recoverable pada production SagaView.
+- Provenance: exact source/release
+  `98f13a8d50f4ae0b97d787f1ab5e0896296007ec` /
+  `20260828111443-98f13a8`, rollback `20260828071047-8063569`, Studio tetap
+  `20260824170456-7ae79ae`, backup `20260828T115448Z`.
+- Evidence: full 236/3.761, focused 28/108, Playwright 4/4, exact release gate
+  220/1.822, build/audit, immutable artifact dua disk, restore disposable
+  152/174/149 tabel, candidate/rollback 6/6, service, lima smoke HTTP 200,
+  header, Support Hub boundary, dan journal lulus.
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED / DEVOPS_VALIDATED /
+  SECURITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+  BUSINESS_READY=false`.
+- Production berubah: ya, hanya backend/Owner SagaView. Studio, SagaBook,
+  payment, dan data customer tidak diubah. Authenticated Owner/Studio UAT
+  tetap gate terpisah.
+- Dokumen terdampak: Product, Dossier, feature ledger/changelog SagaView,
+  portfolio, master knowledge, decisions, root changelog, dan sync status.
+
 ## 2026-08-28 - SagaBook email basic all-tenant activation sync
 
 - Ringkasan: menyinkronkan keputusan founder bahwa confirmation pembayaran,
