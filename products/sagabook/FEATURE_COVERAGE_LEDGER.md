@@ -1,6 +1,19 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 28 Agustus 2026 23:58 WIB
+Evidence cut-off: 29 Agustus 2026 00:52 WIB
+
+S319-S322 telah `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` pada
+exact source `806adbe44b5d5ee2a2437fb3f066effd73c49b67`, immutable release
+`20260828174039-806adbe`, rollback `20260828153427-21d87e9`. Gate final:
+PHPUnit 1.273/1.273 (14.307 assertion), focused blocker 17/17 (89), full
+TypeScript/build, changed-file Pint, dependency audit nol, encrypted
+backup/disposable restore, migration pending 0, report canary 32/32, DB audit
+100/100, service/journal, dan public/security smoke 3/3. Satu relasi payment
+session terminal yatim diperbaiki preserve-first tanpa menghapus session atau
+provenance provider; audit akhir orphan 0. Backfill legacy tidak diterapkan:
+scanned 47, mapped 0, unmapped 47, planned/changed 0, `applied=false`. Coverage
+fitur baru lulus, tetapi mapping add-on legacy serta authenticated Owner/Staff
+UAT masih menjadi gap; `BUSINESS_READY=false`.
 
 Batch konsumsi stok add-on S319-S322 exact source
 `8203f0131a366b81b8922127d6cd6bda06357b2d` telah `CONFIRMED / PUSHED /

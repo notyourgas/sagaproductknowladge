@@ -1,5 +1,18 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+SagaBook S319-S322 aktif pada exact source
+`806adbe44b5d5ee2a2437fb3f066effd73c49b67`, immutable release
+`20260828174039-806adbe`, dengan rollback `20260828153427-21d87e9`. Wizard
+consumable add-on, snapshot booking immutable, paid-only closing math, dan
+rekap closing harian kini production-activated. Full PHP 1.273/1.273, focused
+17/17, TypeScript/build, dependency audit, encrypted backup/restore, migrasi,
+canary 32/32, DB audit 100/100, service/journal, dan smoke 3/3 lulus. Satu
+relasi payment session terminal yatim diperbaiki preserve-first tanpa
+menghapus session atau provenance provider. Backfill 47 add-on legacy tidak
+diterapkan karena seluruhnya belum dipetakan (`applied=false`). Status
+`PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`;
+authenticated Owner/Staff UAT dan mapping legacy masih pending.
+
 COYABAG release `20260829-2f4dbf2` menjalankan exact source
 `2f4dbf24c4dee057f94e6ae245881d59da4fd870`; rollback
 `20260828-10e516b` tersedia. Live UAT aman desktop/mobile untuk katalog,

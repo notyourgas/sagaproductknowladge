@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-29 - SagaBook S319-S322 production activation
+
+- Exact source `806adbe44b5d5ee2a2437fb3f066effd73c49b67` aktif pada release
+  `20260828174039-806adbe`; rollback `20260828153427-21d87e9` tersedia.
+- Consumable add-on dan rekap closing harian kini aktif. Release pertama
+  berhenti aman pada audit orphan; repair preserve-first mempertahankan
+  payment session/provenance dan audit akhir lulus 100/100.
+- Full test/build/audit, encrypted backup/restore, migrasi, canary, service,
+  dan smoke lulus. Backfill 47 add-on legacy tetap preview-only dengan 0
+  perubahan; authenticated UAT belum dan `BUSINESS_READY=false`.
+
 ## 2026-08-29 - COYABAG safe live UAT and destination integrity
 
 - Exact source `2f4dbf24c4dee057f94e6ae245881d59da4fd870` aktif pada immutable

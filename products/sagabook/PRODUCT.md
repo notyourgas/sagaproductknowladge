@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 28 Agustus 2026 23:58 WIB
-Evidence status: batch S319-S322 konsumsi stok add-on sudah pushed dan tervalidasi lokal di atas exact main, menunggu deploy kumulatif terkoordinasi; task ini tidak mengubah production, operational WhatsApp tetap tersuspensi, authenticated Owner/Staff UAT belum, dan business readiness tetap terpisah
+Updated: 29 Agustus 2026 00:52 WIB
+Evidence status: batch kumulatif yang membawa S319-S322 konsumsi stok add-on sudah production-deployed dan production-activated pada exact source `806adbe44b5d5ee2a2437fb3f066effd73c49b67`; 47 add-on legacy masih belum dipetakan dan backfill tidak dijalankan, operational WhatsApp tetap tersuspensi, authenticated Owner/Staff UAT belum, dan business readiness tetap terpisah
 
 ## Tujuan dokumen
 
@@ -15,6 +15,24 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
+
+- Release kumulatif S319-S322 aktif pada exact source
+  `806adbe44b5d5ee2a2437fb3f066effd73c49b67`, immutable release
+  `20260828174039-806adbe`, dengan rollback kompatibel
+  `20260828153427-21d87e9`. Wizard consumable add-on, snapshot booking
+  immutable, paid-only closing math, dan rekap closing harian kini aktif di
+  production. Full PHP 1.273/1.273 (14.307 assertion), focused blocker 17/17
+  (89), TypeScript, build, Pint changed-file, dependency audit nol, backup
+  terenkripsi/disposable restore, migrasi pending 0, report canary 32/32,
+  database audit 100/100, service/journal, dan public smoke 3/3 lulus. Release
+  pertama berhenti aman ketika audit menemukan satu relasi payment session
+  terminal yatim; perbaikan preserve-first hanya melepas relasi booking dan
+  mempertahankan session serta provenance provider, lalu audit akhir menjadi
+  100/100 dengan orphan 0. Preview backfill memindai 47 add-on legacy, mapped
+  0, unmapped 47, plannedChanges 0, changed 0, dan `applied=false`; tidak ada
+  mutasi historis otomatis. Status `CONFIRMED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / BUSINESS_READY=false`; mapping legacy dan
+  authenticated Owner/Staff UAT masih pending.
 
 - Batch S319-S322 konsumsi stok add-on pada exact source
   `8203f0131a366b81b8922127d6cd6bda06357b2d` menambahkan pengaturan pemakaian

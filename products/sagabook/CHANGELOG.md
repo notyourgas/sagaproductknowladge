@@ -1,5 +1,27 @@
 # SagaBook Changelog
 
+## 2026-08-29 - S319-S322 production activation
+
+- Kandidat kumulatif exact source
+  `806adbe44b5d5ee2a2437fb3f066effd73c49b67` aktif pada immutable release
+  `20260828174039-806adbe`; rollback kompatibel
+  `20260828153427-21d87e9` tersedia.
+- Wizard consumable add-on, snapshot booking immutable, paid-only closing
+  consumption, dan rekap closing harian sekarang aktif di production.
+- Percobaan release pertama berhenti aman saat audit menemukan satu relasi
+  payment session terminal yatim. Reconciler preserve-first hanya melepas
+  relasi booking, mempertahankan session dan provenance provider, kemudian
+  audit akhir lulus 100/100 dengan orphan 0.
+- Full PHP 1.273/1.273 (14.307 assertion), focused blocker 17/17 (89),
+  TypeScript/build, changed-file Pint, dependency audit nol, encrypted
+  backup/disposable restore, migration pending 0, canary 32/32,
+  service/journal, dan public/security smoke 3/3 lulus.
+- Backfill add-on legacy hanya preview: scanned 47, mapped 0, unmapped 47,
+  plannedChanges 0, changed 0, `applied=false`. Tidak ada mutasi historis
+  otomatis. Status `CONFIRMED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / BUSINESS_READY=false`; mapping legacy dan
+  authenticated Owner/Staff UAT masih pending.
+
 ## 2026-08-28 - S319-S322 konsumsi kertas dan packaging dari add-on
 
 - Editor add-on kini mempunyai wizard pemakaian stok untuk kertas foto dan
