@@ -12,12 +12,37 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-29 |
-| Branch aktif | `codex/knowledge-s344-production-sync` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-29 05:15 WIB |
+| Branch aktif | `codex/knowledge-s345-sagabook-xlsx-production` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `a0e0bb40495039fd4fd0e07ebde3b42149aead41` |
-| Informasi terakhir disinkronkan | SagaBook S341-S344 production activation. |
-| Status sinkronisasi | Release `20260828210027-91545d1`; `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `dd5b9554fe54c51b737c8bfcd1f2a0c79b134690` |
+| Informasi terakhir disinkronkan | SagaBook styled XLSX production activation. |
+| Status sinkronisasi | Release `20260828220429-9a38252`; `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`. |
+
+## SagaBook styled XLSX production activation
+
+- Exact cumulative source `9a382520ccbfe8d3a8ebea0d64e7dfffc5be9e09`
+  aktif pada release `20260828220429-9a38252`; rollback
+  `20260828210027-91545d1` tersedia dan kompatibel.
+- Workbook laporan/closing kini multi-sheet, typed, mudah difilter/dicetak,
+  mempunyai ringkasan dan kamus status, serta aman dari formula injection.
+- PHP 1.282/1.282 (14.404), focused workbook 3/3 (31), browser closing/report
+  12/12, TypeScript/build, audit dependency nol, openpyxl, fresh encrypted
+  backup/disposable restore, verifier 23/23, canary 32/32 scope, migration
+  pending 0, journal 0 error, dan smoke/security 3/3 lulus.
+- Authenticated Owner/operator UAT berhenti aman sebelum login karena bridge
+  credential lokal tidak aktif; `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi SagaBook styled XLSX
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook S341-S344 production activation
 

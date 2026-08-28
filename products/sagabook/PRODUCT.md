@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 29 Agustus 2026
-Evidence status: closing manual-share, rekap sesi/keuangan harian, dan perbaikan Task Manager integritas laporan aktif pada exact cumulative source `91545d1f974b5e992cc661637c9e234ef504dbec`, release `20260828210027-91545d1`; production-deployed dan production-activated, authenticated Owner/operator UAT belum karena credential bridge lokal tidak aktif, dan `BUSINESS_READY=false`
+Updated: 29 Agustus 2026 05:15 WIB
+Evidence status: styled XLSX multi-sheet, closing manual-share, rekap sesi/keuangan harian, dan perbaikan Task Manager aktif pada exact cumulative source `9a382520ccbfe8d3a8ebea0d64e7dfffc5be9e09`, release `20260828220429-9a38252`; production-deployed dan production-activated, authenticated Owner/operator UAT belum karena credential bridge lokal tidak aktif, dan `BUSINESS_READY=false`
 
 ## Tujuan dokumen
 
@@ -15,6 +15,23 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
+
+- Export XLSX rapi aktif pada exact cumulative source
+  `9a382520ccbfe8d3a8ebea0d64e7dfffc5be9e09`, immutable release
+  `20260828220429-9a38252`, dengan rollback kompatibel
+  `20260828210027-91545d1`. Laporan umum mempunyai sheet `Ringkasan`, data
+  utama, dan `Kamus Status`; closing menambahkan sheet khusus keuangan,
+  sesi/stok, serta audit/revisi. Workbook memakai label manusiawi, typed
+  Rupiah/tanggal/jam, filter, freeze pane, lebar kolom, warna status, dan
+  layout cetak, sekaligus menetralkan formula injection. CSV tidak berubah dan
+  export memakai satu jalur server-authoritative. Exact-main lulus PHP
+  1.282/1.282 (14.404 assertion), focused workbook 3/3 (31), closing/report
+  browser 12/12, TypeScript/build, audit dependency nol, compatibility
+  openpyxl, encrypted backup/disposable restore, verifier 23/23, report canary
+  32/32 scope, 0 migration pending, journal 0 error, serta public/security
+  smoke 3/3. Status `CONFIRMED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / BUSINESS_READY=false`; authenticated Owner/operator
+  UAT berhenti aman sebelum login karena credential bridge lokal tidak aktif.
 
 - S341-S344 aktif pada exact cumulative source
   `91545d1f974b5e992cc661637c9e234ef504dbec`, immutable release

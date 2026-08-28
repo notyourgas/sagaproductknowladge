@@ -1,5 +1,22 @@
 # SagaBook Changelog
 
+## 2026-08-29 - Styled XLSX report export production activation
+
+- Exact cumulative source `9a382520ccbfe8d3a8ebea0d64e7dfffc5be9e09`
+  aktif pada immutable release `20260828220429-9a38252`; rollback
+  `20260828210027-91545d1` tersedia dan kompatibel.
+- Export XLSX laporan umum kini berisi ringkasan, data utama, dan kamus status.
+  Closing menambahkan sheet keuangan, sesi/stok, dan audit/revisi. Workbook
+  memakai typed value, filter/freeze pane, style dan layout cetak, serta
+  formula injection defense; CSV lama tidak berubah.
+- Exact-main lulus PHP 1.282/1.282 (14.404), focused workbook 3/3 (31),
+  closing/report browser 12/12, TypeScript/build, audit dependency nol,
+  openpyxl, fresh encrypted backup/disposable restore, verifier 23/23, canary
+  32/32 scope, 0 migration pending, journal 0 error, dan smoke/security 3/3.
+- Status `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+  BUSINESS_READY=false`. Authenticated Owner/operator UAT berhenti aman
+  sebelum login karena credential bridge lokal tidak aktif.
+
 ## 2026-08-29 - S341-S344 closing dan Task Manager production activation
 
 - Menghapus konfigurasi grup WhatsApp dari syarat preflight Closing

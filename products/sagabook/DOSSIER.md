@@ -7,6 +7,22 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Styled XLSX aktif pada exact cumulative source
+  `9a382520ccbfe8d3a8ebea0d64e7dfffc5be9e09`, immutable release
+  `20260828220429-9a38252`; rollback `20260828210027-91545d1` kompatibel.
+  Laporan umum mempunyai ringkasan, data utama, dan kamus status, sedangkan
+  closing memisahkan ringkasan, keuangan, sesi/stok, audit/revisi, serta kamus
+  status. Nilai Rupiah/tanggal/jam tetap typed; freeze pane, filter, width,
+  wrap, warna status, dan print layout memudahkan review manusia. Formula
+  injection dinetralisasi, CSV tetap kompatibel, dan hanya jalur export server
+  yang authoritative. Exact-main lulus PHP 1.282/1.282 (14.404), focused
+  workbook 3/3 (31), closing/report browser 12/12, TypeScript/build,
+  dependency audit nol, openpyxl, encrypted backup/disposable restore,
+  verifier 23/23, canary 32/32 scope, migration pending 0, journal 0 error,
+  serta public/security smoke 3/3. Status `PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / BUSINESS_READY=false`; authenticated Owner/operator
+  UAT belum berjalan karena credential bridge lokal tidak aktif.
+
 - Closing dan Task Manager S341-S344 aktif pada exact cumulative source
   `91545d1f974b5e992cc661637c9e234ef504dbec`, immutable release
   `20260828210027-91545d1`; rollback `20260828180149-7d82f30` kompatibel.

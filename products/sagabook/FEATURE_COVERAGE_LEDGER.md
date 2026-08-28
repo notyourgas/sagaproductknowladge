@@ -2,6 +2,21 @@
 
 Evidence cut-off: 29 Agustus 2026
 
+Styled XLSX telah `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
+pada exact cumulative source
+`9a382520ccbfe8d3a8ebea0d64e7dfffc5be9e09`, immutable release
+`20260828220429-9a38252`, rollback `20260828210027-91545d1`. Coverage
+controller/job/service -> server-authoritative workbook mencakup ringkasan,
+data utama, kamus status, serta sheet closing keuangan, sesi/stok, dan
+audit/revisi; typed Rupiah/tanggal/jam, filter/freeze pane, style/print layout,
+empty state, dan formula injection defense terverifikasi tanpa mengubah CSV.
+Exact-main lulus PHP 1.282/1.282 (14.404), focused workbook 3/3 (31), browser
+closing/report 12/12, TypeScript/build, dependency audit nol, openpyxl,
+encrypted backup/disposable restore, verifier 23/23, report canary 32/32 scope,
+0 migration pending, journal 0 error, serta public/security smoke 3/3.
+Authenticated Owner/operator UAT belum karena credential bridge lokal tidak
+aktif; `BUSINESS_READY=false`.
+
 S341-S344 exact cumulative source
 `91545d1f974b5e992cc661637c9e234ef504dbec` telah `CONFIRMED /
 PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` pada immutable release

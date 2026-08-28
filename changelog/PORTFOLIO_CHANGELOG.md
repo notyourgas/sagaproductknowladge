@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-29 - SagaBook styled XLSX production activation
+
+- Exact cumulative source `9a382520ccbfe8d3a8ebea0d64e7dfffc5be9e09`
+  aktif pada release `20260828220429-9a38252`, dengan rollback kompatibel
+  `20260828210027-91545d1`.
+- Export laporan dan closing kini menghasilkan workbook multi-sheet yang rapi,
+  typed, mudah difilter/dicetak, mempunyai ringkasan dan kamus status, serta
+  aman dari formula injection tanpa mengubah CSV.
+- Full exact-main test/build/audit, encrypted backup/restore, verifier 23/23,
+  report canary 32/32 scope, service/journal, dan smoke/security 3/3 lulus.
+  Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`;
+  authenticated Owner/operator UAT masih tertahan oleh credential bridge
+  lokal yang tidak aktif. Produk SagaDev lain tidak berubah.
+
 ## 2026-08-29 - SagaBook S341-S344 production activation
 
 - Exact cumulative source `91545d1f974b5e992cc661637c9e234ef504dbec`

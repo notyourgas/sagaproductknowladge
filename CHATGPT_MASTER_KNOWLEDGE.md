@@ -1,5 +1,20 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+SagaBook styled XLSX aktif pada exact cumulative source
+`9a382520ccbfe8d3a8ebea0d64e7dfffc5be9e09`, immutable release
+`20260828220429-9a38252`, dengan rollback `20260828210027-91545d1`.
+Laporan umum mempunyai ringkasan, data utama, dan kamus status; closing
+menambahkan sheet keuangan, sesi/stok, serta audit/revisi. Workbook memakai
+typed Rupiah/tanggal/jam, filter/freeze pane, style/print layout, dan formula
+injection defense; CSV tetap kompatibel dan server menjadi satu-satunya jalur
+export authoritative. Exact-main PHP 1.282/1.282, focused workbook 3/3,
+browser closing/report 12/12, TypeScript/build, audit dependency nol, openpyxl,
+encrypted backup/restore, verifier 23/23, canary 32/32 scope, 0 pending
+migration, journal 0 error, serta smoke/security 3/3 lulus. Status
+`PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`;
+authenticated Owner/operator UAT masih pending karena credential bridge lokal
+tidak aktif.
+
 SagaBook S341-S344 exact cumulative source
 `91545d1f974b5e992cc661637c9e234ef504dbec` aktif pada immutable release
 `20260828210027-91545d1`, dengan rollback `20260828180149-7d82f30`. Closing
