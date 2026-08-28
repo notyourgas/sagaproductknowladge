@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 28 Agustus 2026 19:32 WIB
-Evidence status: task report-integrity kini selalu memiliki target aksi eksplisit atau ditutup aman; default email basic tetap aktif untuk seluruh tenant, operational WhatsApp tetap tersuspensi, dan authenticated operator UAT belum
+Updated: 28 Agustus 2026 20:22 WIB
+Evidence status: laporan pendapatan dan closing detail Owner aktif di production; operational WhatsApp tetap tersuspensi, authenticated Owner UAT belum, dan business readiness tetap terpisah
 
 ## Tujuan dokumen
 
@@ -15,6 +15,28 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
+
+- S317 memperluas `/admin/reports` menjadi workspace Owner untuk membaca
+  pendapatan dan closing secara operasional. Grafik pendapatan memakai bucket
+  server 7 hari, 30 hari, bulan berjalan, atau periode terpilih; titik dan bar
+  dapat difokuskan/diklik untuk drill-down tanggal, dan filter tanggal bertahan
+  di URL. Kalender closing, filter status, pagination, serta dialog
+  `Lihat isi closing` menampilkan cash, notes/review/correction, revision,
+  session, add-on, expected/actual/variance stok, catatan admin/selisih, dan
+  status artifact/delivery. Endpoint history/detail bersifat no-store,
+  throttled, capability-scoped, tenant-scoped, dan branch-scoped. Closing cash
+  tidak lagi salah diblokir pada cabang yang modul stok operasionalnya tidak
+  aktif; actual stock tetap input manual ketika modul aktif. Exact source
+  `14652bb9f6f5715aad33936a4adc3a98f5bfc26c` aktif pada immutable release
+  `20260828130503-14652bb`, rollback `20260828121721-cde8dd5`. Full PHP
+  1.228/1.228 (13.892 assertion), focused 38/38 (237), browser desktop/mobile
+  3 pass/1 intentional skip, persistence 18/18, build/typecheck, dependency
+  audit, fresh encrypted backup, disposable restore, verifier 19/19, dan
+  smoke/security 3/3 lulus. Release memakai exception sempit yang hanya
+  menerima tepat dua delivery WhatsApp legacy saat dispatch tersuspensi.
+  Status `CONFIRMED / PUSHED / QA_VALIDATED / SECURITY_VALIDATED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated Owner UAT belum
+  dan `BUSINESS_READY=false`.
 
 - S316 memperbaiki task urgent `report integrity review` yang sebelumnya dapat
   muncul tanpa booking atau tujuan operasional. Task kini berasal dari issue
@@ -54,8 +76,8 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 - Email confirmation, reminder H-1, dan reminder H-3 kini menjadi fitur basic
   default-on untuk semua paket dan tenant. Feature source
   `1af16b1331e8bb11af2d026317c93201b64816b9` tetap aktif di combined source
-  `cde8dd53bb70541a88907e1e83774deaf9610bf6`, immutable release
-  `20260828121721-cde8dd5`, rollback `20260828112935-1af16b1`. Aktivasi
+  `14652bb9f6f5715aad33936a4adc3a98f5bfc26c`, immutable release
+  `20260828130503-14652bb`, rollback `20260828121721-cde8dd5`. Aktivasi
   idempotent mengubah 15/15 tenant, menulis 15 audit event, mempertahankan
   setting lain, dan replay menghasilkan 0 perubahan. Tenant baru juga memakai
   default aktif; Owner tetap dapat opt-out dari Settings. Pada snapshot

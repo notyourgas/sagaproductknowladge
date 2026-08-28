@@ -1,6 +1,22 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 28 Agustus 2026 19:32 WIB
+Evidence cut-off: 28 Agustus 2026 20:22 WIB
+
+Reporting pendapatan dan closing detail S317 exact source
+`14652bb9f6f5715aad33936a4adc3a98f5bfc26c` telah `CONFIRMED / PUSHED /
+QA_VALIDATED / SECURITY_VALIDATED / PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED` pada immutable release `20260828130503-14652bb`, rollback
+`20260828121721-cde8dd5`. Coverage UI -> typed API -> read service -> ledger
+mencakup trend 7/30 hari, bulan/periode, URL-persisted date, keyboard/click
+drill-down, kalender/history/status/pagination closing, serta dialog detail
+cash, notes, review/correction, revisions, sessions, add-ons, stock variance,
+artifact, dan delivery. Endpoint no-store/throttled tetap capability,
+tenant, dan branch scoped. Branch tanpa modul stok tidak diblokir dari cash
+closing; branch aktif tetap memakai expected ledger dan actual manual. Full PHP
+1.228/1.228 (13.892), focused 38/38 (237), browser 3 pass/1 skip terencana,
+persistence 18/18, build/typecheck, dependency audit nol, backup/restore,
+verifier 19/19, serta smoke/security 3/3 lulus. Authenticated Owner UAT belum;
+`BUSINESS_READY=false`.
 
 Report-integrity task action contract S316 exact source
 `cde8dd53bb70541a88907e1e83774deaf9610bf6` telah `CONFIRMED / PUSHED /

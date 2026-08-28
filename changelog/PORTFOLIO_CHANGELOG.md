@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-28 - SagaBook S317 laporan pendapatan dan closing detail
+
+- Owner memperoleh grafik pendapatan yang berfungsi untuk 7/30 hari,
+  bulan/periode, drill-down tanggal, dan filter URL yang persisten.
+- Kalender/history closing dapat difilter dan dipaginasi; detail cash, notes,
+  review/correction, session, add-on, stock variance, artifact, dan delivery
+  dapat dibaca dalam satu dialog tenant/cabang-scoped.
+- Exact source/release `14652bb9f6f5715aad33936a4adc3a98f5bfc26c` /
+  `20260828130503-14652bb`, rollback `20260828121721-cde8dd5`. Full/focused,
+  browser, persistence, build/audit, backup/restore, verifier 19/19, dan
+  smoke/security 3/3 lulus.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; operational WhatsApp
+  tetap suspended, authenticated Owner UAT belum, dan `BUSINESS_READY=false`.
+
 ## 2026-08-28 - SagaBook S316 report task action production
 
 - Task urgent report integrity kini selalu menuju issue/target operasional yang

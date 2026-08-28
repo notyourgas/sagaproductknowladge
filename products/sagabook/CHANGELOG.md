@@ -1,5 +1,25 @@
 # SagaBook Changelog
 
+## 2026-08-28 - S317 laporan pendapatan dan closing detail production
+
+- Owner sekarang dapat memilih rentang grafik pendapatan 7 hari, 30 hari,
+  bulan berjalan, atau periode terpilih; titik/bar dapat diakses keyboard dan
+  membuka drill-down tanggal, sementara filter tanggal bertahan di URL.
+- Kalender dan history closing mendukung filter status serta pagination.
+  Dialog detail memuat cash, notes/review/correction, revision, session,
+  add-on, expected/actual/variance stok, catatan, artifact, dan delivery.
+- API history/detail menggunakan capability, tenant, branch, throttle, dan
+  no-store. Cash closing cabang tanpa modul stok tidak lagi salah diblokir;
+  actual stock tetap manual saat modul aktif.
+- Exact source/release `14652bb9f6f5715aad33936a4adc3a98f5bfc26c` /
+  `20260828130503-14652bb`; rollback `20260828121721-cde8dd5`. Full PHP
+  1.228/1.228, focused 38/38, browser 3 pass/1 skip, persistence 18/18,
+  build/typecheck/audit, backup/restore, verifier 19/19, dan smoke/security 3/3
+  lulus.
+- Release exception hanya menerima tepat dua delivery WhatsApp legacy ketika
+  dispatch tersuspensi. Authenticated Owner UAT belum dan
+  `BUSINESS_READY=false`.
+
 ## 2026-08-28 - S316 report-integrity task action contract production
 
 - Task urgent hasil report reconciliation kini memiliki issue kanonik dan

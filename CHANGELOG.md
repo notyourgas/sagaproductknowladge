@@ -1,5 +1,24 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-28 - SagaBook S317 reporting dan closing detail production sync
+
+- Ringkasan: menyinkronkan grafik pendapatan multi-range, drill-down tanggal,
+  kalender/history closing, serta dialog isi closing lengkap untuk Owner.
+- Provenance: exact source/release
+  `14652bb9f6f5715aad33936a4adc3a98f5bfc26c` /
+  `20260828130503-14652bb`, rollback `20260828121721-cde8dd5`, encrypted
+  backup/restore `20260828T130052Z`.
+- Evidence: full PHP 1.228/1.228 (13.892 assertion), focused 38/38 (237),
+  browser 3 pass/1 intentional skip, persistence 18/18, build/typecheck/audit,
+  verifier 19/19, 0 migration pending, 0 queue error, dan smoke/security 3/3.
+- Klasifikasi: `CONFIRMED / PUSHED / QA_VALIDATED / SECURITY_VALIDATED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+- Production berubah: ya. Operational WhatsApp tetap suspended; release
+  exception hanya menerima dua delivery legacy yang terverifikasi dan tidak
+  mengaktifkan dispatch. Authenticated Owner UAT masih menunggu bridge lokal.
+- Dokumen terdampak: Product, Dossier, feature ledger/changelog SagaBook,
+  portfolio, master knowledge, root changelog, dan sync status.
+
 ## 2026-08-28 - SagaBook S316 report task action production sync
 
 - Ringkasan: menyinkronkan perbaikan task urgent report integrity agar selalu

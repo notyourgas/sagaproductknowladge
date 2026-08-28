@@ -12,12 +12,37 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-28T19:32:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-28T20:22:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
-| Informasi terakhir disinkronkan | SagaBook S316 report-integrity task action contract aktif di production. |
-| Status sinkronisasi | Source `cde8dd53` aktif pada release `20260828121721-cde8dd5`; rollback `20260828112935-1af16b1`, verifier 19/19, dan `BUSINESS_READY=false`. |
+| Informasi terakhir disinkronkan | SagaBook S317 laporan pendapatan dan closing detail aktif di production. |
+| Status sinkronisasi | Source `14652bb9` aktif pada release `20260828130503-14652bb`; rollback `20260828121721-cde8dd5`, verifier 19/19, dan `BUSINESS_READY=false`. |
+
+## SagaBook S317 laporan pendapatan dan closing detail
+
+- Owner dapat memakai grafik pendapatan 7/30 hari, bulan/periode, drill-down
+  tanggal, serta filter tanggal yang persisten di URL.
+- Kalender/history closing mendukung status dan pagination; detail cash,
+  notes/review/correction, revisions, sessions, add-ons, stock variance,
+  artifact, dan delivery tersedia dalam dialog yang scoped.
+- Exact source/release `14652bb9f6f5715aad33936a4adc3a98f5bfc26c` /
+  `20260828130503-14652bb`, rollback `20260828121721-cde8dd5`; verifier 19/19,
+  0 migration pending, 0 queue error, dan smoke/security 3/3 lulus.
+- Status `CONFIRMED / PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`; authenticated Owner UAT belum dan
+  `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi SagaBook S317
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook S316 report-integrity task action contract
 
