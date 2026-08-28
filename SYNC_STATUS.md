@@ -12,28 +12,34 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-28T16:46:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-28T17:50:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
-| Informasi terakhir disinkronkan | SagaBook friendly customer email copy dan recovery link candidate. |
-| Status sinkronisasi | Candidate `2159ccd2` pushed/local-validated dan belum dideploy; production tetap `68b978e5` / `20260828063524-68b978e`. |
+| Informasi terakhir disinkronkan | SagaBook friendly customer email copy dan recovery link production activation. |
+| Status sinkronisasi | Source `92765aa9` aktif pada release `20260828103607-92765aa`; tenant-linked UAT residual dan `BUSINESS_READY=false`. |
 
 ## SagaBook friendly customer email copy dan recovery link
 
-- Exact source `2159ccd26d67811e6e3f4f54ebcbdfa7df101f34` pada branch
-  `codex/sagabook-friendly-email-copy` membedakan copy confirmation, H-1, dan
-  H-3 serta mempertahankan ringkasan booking yang informatif.
+- Exact source `92765aa96537573859de1562e3029616b380ea3a` aktif pada immutable
+  release `20260828103607-92765aa`, rollback `20260828101352-90172ed`, dan
+  membedakan copy confirmation, H-1, serta H-3 dengan ringkasan booking yang
+  informatif.
 - HTML dan plain text membawa CTA, tenant-scoped booking-detail link, dan URL
   cadangan untuk recovery setelah tab tertutup. Dynamic HTML serta subject
   injection dipagari fail-closed.
-- Focused email 9/9 (90 assertion), public-route 1/1 (15), post-payment guard
-  4/4 (70), Pint, PHP syntax, diff, dan Composer audit nol advisory lulus.
-- Status `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
-  PRODUCTION_UNCHANGED`; seluruh tenant toggle tetap opt-in mati dan
-  `BUSINESS_READY=false`.
+- Focused pascarebase 23/23 (288 assertion), full PHP exact-commit,
+  persistence 18/18, Playwright 4/4, build/audit, fresh encrypted backup
+  `20260828T102722Z`, disposable restore, verifier 19/19, serta smoke/security
+  3/3 lulus. First attempt berhenti fail-closed karena ENOSPC lokal; correction
+  round kedua lulus setelah artefak duplikat dipindahkan secara recoverable.
+- Outbox final kosong dan seluruh tenant toggle opt-in mati. Trial tanpa
+  booking milik alamat UAT ditahan agar tidak membuat data sintetis atau
+  recovery link 404. Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+  tenant-linked UAT belum dan `BUSINESS_READY=false`. Operational WhatsApp
+  tetap tersuspensi.
 
-## File yang berubah pada sinkronisasi friendly customer email SagaBook
+## File yang berubah pada sinkronisasi production friendly customer email SagaBook
 
 - `products/sagabook/PRODUCT.md`
 - `products/sagabook/DOSSIER.md`

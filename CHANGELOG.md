@@ -1,18 +1,21 @@
 # Saga Product Knowledge Changelog
 
-## 2026-08-28 - SagaBook friendly customer email sync
+## 2026-08-28 - SagaBook friendly customer email production sync
 
 - Ringkasan: menyinkronkan copy kontekstual confirmation/H-1/H-3 dan recovery
   link tenant-scoped untuk membuka kembali detail booking setelah tab tertutup.
-- Provenance: source `2159ccd26d67811e6e3f4f54ebcbdfa7df101f34`, branch
-  `codex/sagabook-friendly-email-copy`.
-- Evidence: focused email 9/9 (90 assertion), public-route 1/1 (15),
-  post-payment guard 4/4 (70), Pint, syntax, diff, dan Composer audit nol
-  advisory.
-- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`.
-- Production berubah: tidak. Tenant toggle, provider activation,
-  `BUSINESS_READY`, dan operational WhatsApp tidak berubah.
+- Provenance: source `92765aa96537573859de1562e3029616b380ea3a`, release
+  `20260828103607-92765aa`, rollback `20260828101352-90172ed`.
+- Evidence: focused pascarebase 23/23 (288 assertion), full PHP exact-commit,
+  persistence 18/18, Playwright 4/4, build/audit, fresh encrypted backup
+  `20260828T102722Z`, disposable restore, verifier 19/19, dan smoke/security
+  3/3. First attempt berhenti fail-closed karena ENOSPC; correction round kedua
+  lulus setelah artefak duplikat dipindahkan secara recoverable.
+- Klasifikasi: `CONFIRMED / PUSHED / QA_VALIDATED / SECURITY_VALIDATED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+- Production berubah: ya, hanya renderer email. Outbox final kosong dan seluruh
+  tenant toggle kembali opt-in mati; trial tanpa booking milik alamat UAT tidak
+  dikirim. Operational WhatsApp tetap tersuspensi.
 - Dokumen terdampak: Product, Dossier, feature ledger/changelog SagaBook,
   portfolio, master knowledge, decisions, root changelog, dan sync status.
 

@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 28 Agustus 2026 16:46 WIB
+Evidence cut-off: 28 Agustus 2026 17:50 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -32,15 +32,22 @@ seluruh tenant toggle tetap mati, sehingga tenant-linked UAT, pilot, dan
 `BUSINESS_READY` masih pending. Operational WhatsApp tetap tersuspensi sebagai
 channel terpisah.
 
-SagaBook friendly customer email copy exact candidate
-`2159ccd26d67811e6e3f4f54ebcbdfa7df101f34` telah dipush pada branch
-`codex/sagabook-friendly-email-copy`. Confirmation, H-1, dan H-3 mempunyai
-copy/CTA kontekstual serta ringkasan studio, lokasi, kode booking, jadwal,
-paket, dan total. HTML/plain text selalu menyertakan recovery link
-tenant-scoped dan fallback URL untuk membuka kembali detail booking. Dynamic
-content di-escape dan subject dibersihkan dari control/bidi injection. Status
-`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; provider,
-toggle tenant, activation, dan `BUSINESS_READY` tidak berubah.
+SagaBook friendly customer email copy exact source
+`92765aa96537573859de1562e3029616b380ea3a` aktif pada immutable release
+`20260828103607-92765aa`, rollback `20260828101352-90172ed`. Confirmation,
+H-1, dan H-3 mempunyai copy/CTA kontekstual serta ringkasan studio, lokasi,
+kode booking, jadwal, paket, dan total. HTML/plain text selalu menyertakan
+recovery link tenant-scoped dan fallback URL untuk membuka kembali detail
+booking. Dynamic content di-escape dan subject dibersihkan dari control/bidi
+injection. Full PHP exact-commit, focused 23/23 (288 assertion), persistence
+18/18, Playwright 4/4, build/audit, fresh encrypted backup
+`20260828T102722Z`, disposable restore, verifier 19/19, serta smoke/security
+3/3 lulus. First attempt berhenti fail-closed karena ENOSPC lokal; correction
+round kedua lulus setelah artefak duplikat dipindahkan secara recoverable.
+Outbox final kosong dan seluruh tenant toggle opt-in mati. Trial tanpa booking
+milik alamat UAT ditahan agar tidak membuat record sintetis atau recovery link
+404. Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; tenant-linked UAT
+belum dan `BUSINESS_READY=false`. Operational WhatsApp tetap tersuspensi.
 
 SagaBook S313 exact source
 `68b978e533d2fcc23dd7be23ddf23b2328f51a6b` aktif pada immutable release

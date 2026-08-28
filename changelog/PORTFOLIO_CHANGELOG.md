@@ -1,17 +1,23 @@
 # Portfolio Changelog
 
-## 2026-08-28 - SagaBook friendly customer email candidate
+## 2026-08-28 - SagaBook friendly customer email production activation
 
 - Email confirmation, H-1, dan H-3 memakai copy ramah yang tetap memuat
   ringkasan booking serta CTA berbeda sesuai konteks.
 - Setiap HTML/plain-text email membawa tenant-scoped booking-detail link dan
   fallback URL agar customer dapat kembali setelah tab tertutup; dynamic
   content dan subject dipagari terhadap injection.
-- Exact source `2159ccd26d67811e6e3f4f54ebcbdfa7df101f34` telah dipush;
-  focused email 9/9 (90 assertion), public-route 1/1 (15), post-payment guard
-  4/4 (70), format/syntax/diff, dan dependency audit lulus.
-- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`;
-  tenant opt-in, activation, dan `BUSINESS_READY` tidak berubah.
+- Exact source `92765aa96537573859de1562e3029616b380ea3a` aktif pada release
+  `20260828103607-92765aa`; rollback `20260828101352-90172ed`. Full PHP,
+  focused 23/23 (288 assertion), persistence 18/18, Playwright 4/4,
+  build/audit, encrypted backup dan disposable restore, verifier 19/19, serta
+  smoke/security 3/3 lulus.
+- Percobaan pertama berhenti fail-closed karena ruang disk lokal. Correction
+  round kedua lulus setelah artefak duplikat dipindahkan secara recoverable.
+  Outbox final kosong dan seluruh tenant toggle opt-in mati; trial tanpa
+  booking milik alamat UAT tidak dikirim agar recovery link tidak 404.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; tenant-linked UAT dan
+  `BUSINESS_READY` belum, operational WhatsApp tetap tersuspensi.
 
 ## 2026-08-28 - SagaBook Resend provider dan webhook production activation
 

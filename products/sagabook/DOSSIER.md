@@ -31,18 +31,25 @@ dalam satu dokumen public-safe.
   authenticated operator UAT, dan pilot belum dilakukan.
   `BUSINESS_READY=false`.
 
-- Friendly customer email copy candidate
-  `2159ccd26d67811e6e3f4f54ebcbdfa7df101f34` (`codex/sagabook-friendly-email-copy`):
+- Friendly customer email copy
+  `92765aa96537573859de1562e3029616b380ea3a`, immutable release
+  `20260828103607-92765aa`, rollback `20260828101352-90172ed`:
   confirmation, reminder H-1, dan reminder H-3 memiliki subject, heading,
   intro, serta CTA yang sesuai konteks. Ringkasan studio, lokasi, kode booking,
   jadwal, paket, dan total tetap tersedia. HTML dan plain text membawa recovery
   link tenant-scoped beserta URL cadangan sehingga detail booking dapat dibuka
   kembali setelah tab tertutup. Dynamic HTML di-escape, header text dibersihkan
   dari control/bidi characters, dan route tenantless tidak dipakai. Focused
-  email 9/9 (90 assertion), public-route 1/1 (15), post-payment guard 4/4 (70),
-  format/syntax/diff, serta Composer audit nol advisory lulus. Status
-  `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
-  PRODUCTION_UNCHANGED`; tenant toggle dan `BUSINESS_READY` tidak berubah.
+  email 9/9 (90 assertion), pascarebase 23/23 (288), full PHP exact-commit,
+  persistence 18/18, Playwright 4/4, format/build, dependency audit nol,
+  encrypted backup `20260828T102722Z`, disposable restore, verifier 19/19,
+  serta public/security smoke 3/3 lulus. First attempt berhenti sebelum VPS
+  karena ENOSPC lokal; correction round kedua lulus setelah artefak duplikat
+  dipindahkan secara recoverable. Outbox final kosong dan seluruh tenant toggle
+  opt-in mati. Trial email ditahan karena alamat UAT belum mempunyai booking,
+  sehingga tidak dibuat record sintetis atau recovery link 404. Status
+  `CONFIRMED / PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+  tenant-linked UAT residual dan `BUSINESS_READY=false`.
 
 - Salin template WhatsApp Booking Detail S313 exact source
   `68b978e533d2fcc23dd7be23ddf23b2328f51a6b`, immutable release

@@ -1,6 +1,6 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 28 Agustus 2026 16:46 WIB
+Evidence cut-off: 28 Agustus 2026 17:48 WIB
 
 Resilient Resend customer email exact source
 `4aae315ce71933bf2d283a690fb060a95a29aa49` telah `CONFIRMED / PUSHED /
@@ -24,17 +24,24 @@ warning queue nol pada window verifikasi. Seluruh tenant toggle masih opt-in
 mati. Provider/webhook activation lulus; tenant-linked confirmation/reminder,
 authenticated UAT, pilot, dan `BUSINESS_READY` tetap belum.
 
-Friendly customer email copy candidate exact source
-`2159ccd26d67811e6e3f4f54ebcbdfa7df101f34` telah `CONFIRMED / PUSHED /
-LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`. Coverage
+Friendly customer email copy exact source
+`92765aa96537573859de1562e3029616b380ea3a` telah `CONFIRMED / PUSHED /
+QA_VALIDATED / SECURITY_VALIDATED / PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED` pada immutable release `20260828103607-92765aa`, rollback
+`20260828101352-90172ed`. Coverage
 renderer confirmation/H-1/H-3 mencakup context-specific subject/heading/CTA,
 studio, lokasi, kode booking, jadwal, paket, total, HTML/plain-text parity,
 fallback URL, escaping dynamic HTML, subject control/bidi sanitization, dan
 tenant-scoped `/{slug}/b/{code}` yang dibuktikan membuka tenant authoritative.
-Focused email 9/9 (90 assertion), public-route 1/1 (15), post-payment guard 4/4
-(70), Pint, PHP syntax, diff check, dan Composer audit nol advisory lulus.
-Database, provider, toggle tenant, production, activation, dan
-`BUSINESS_READY` tidak berubah.
+Focused email 9/9 (90 assertion), pascarebase 23/23 (288), full PHP exact-commit,
+persistence 18/18, Playwright 4/4, Pint/build, Composer/npm audit nol, fresh
+encrypted backup `20260828T102722Z`, checksum, disposable restore, manifest,
+migration, service, rollback, verifier 19/19, dan public/security smoke 3/3
+lulus. Percobaan pertama berhenti sebelum VPS karena ENOSPC lokal; correction
+round kedua lulus setelah artefak duplikat dipindahkan secara recoverable.
+Outbox final kosong dan seluruh tenant toggle opt-in mati. Trial email tanpa
+booking milik alamat UAT ditahan agar tidak membuat data sintetis atau recovery
+link 404. Tenant-linked operational UAT dan `BUSINESS_READY` tetap belum.
 
 Salin template WhatsApp Booking Detail S313 exact source
 `68b978e533d2fcc23dd7be23ddf23b2328f51a6b` telah `CONFIRMED / PUSHED /

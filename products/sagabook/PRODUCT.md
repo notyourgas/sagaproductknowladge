@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 28 Agustus 2026 16:46 WIB
-Evidence status: Resend provider dan signed webhook production aktif; friendly email copy dengan recovery link tenant-scoped sudah pushed tetapi belum dideploy; seluruh tenant tetap opt-in mati, tenant-linked operational UAT belum, dan operational WhatsApp tetap tersuspensi
+Updated: 28 Agustus 2026 17:48 WIB
+Evidence status: Resend provider, signed webhook, dan friendly email copy dengan recovery link tenant-scoped aktif di production; seluruh tenant terverifikasi opt-in mati, tenant-linked operational UAT belum, dan operational WhatsApp tetap tersuspensi
 
 ## Tujuan dokumen
 
@@ -65,18 +65,27 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   tenant-linked outbox/reminder UAT dan pilot masih residual,
   `BUSINESS_READY=false`.
 
-- Friendly customer email copy candidate exact source
-  `2159ccd26d67811e6e3f4f54ebcbdfa7df101f34` pada branch
-  `codex/sagabook-friendly-email-copy` membedakan nada confirmation, H-1, dan
+- Friendly customer email copy exact source
+  `92765aa96537573859de1562e3029616b380ea3a` aktif pada immutable release
+  `20260828103607-92765aa`, rollback `20260828101352-90172ed`, dan membedakan nada confirmation, H-1, serta
   H-3 tanpa mengurangi studio, lokasi, kode booking, jadwal, paket, serta total.
   HTML dan plain text sama-sama membawa CTA dan URL cadangan tenant-scoped
   `/{slug}/b/{code}` agar customer dapat membuka kembali detail setelah tab
   tertutup. Konten dinamis di-escape, subject menolak control/bidi injection,
   route tenantless tidak digunakan, dan tidak ada perubahan provider,
-  booking/payment, database, atau tenant toggle. Focused email 9/9 (90
-  assertion), public-route 1/1 (15), post-payment guard 4/4 (70), Pint,
-  syntax, diff, dan Composer audit nol advisory lulus. Status `CONFIRMED /
-  PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`.
+  booking/payment atau database. Focused pascarebase 23/23 (288 assertion),
+  full PHP exact-commit, persistence 18/18, Playwright 4/4, build, Pint,
+  Composer/npm audit nol advisory, fresh encrypted backup
+  `20260828T102722Z`, checksum, disposable restore, manifest, migration,
+  service, rollback, verifier 19/19, serta public/security smoke 3/3 lulus.
+  Percobaan pertama berhenti fail-closed karena ruang disk lokal; setelah
+  artefak duplikat dipindahkan secara recoverable, tes yang sama dan pipeline
+  penuh lulus. Final audit menunjukkan outbox kosong dan seluruh tenant toggle
+  kembali opt-in mati; trial email tidak dikirim tanpa booking milik alamat UAT
+  agar recovery link tidak menjadi 404. Status `CONFIRMED / PUSHED /
+  QA_VALIDATED / SECURITY_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`; tenant-linked UAT residual dan
+  `BUSINESS_READY=false`.
 
 - Guard observability return pembayaran S312 exact source
   `88b8ea9ad9ce03f91d3d9099cffcb71e9f06caaf` aktif pada immutable release

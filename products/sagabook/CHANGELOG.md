@@ -1,6 +1,6 @@
 # SagaBook Changelog
 
-## 2026-08-28 - Friendly customer email copy dan recovery link
+## 2026-08-28 - Friendly customer email copy production activation
 
 - Konfirmasi pembayaran, reminder H-1, dan reminder H-3 kini mempunyai subject,
   heading, intro, dan CTA berbeda yang lebih ramah tetapi tetap informatif.
@@ -9,13 +9,18 @@
   agar detail booking dapat dibuka kembali setelah tab tertutup.
 - Dynamic HTML di-escape, subject membersihkan control/bidi characters, dan
   kontrak tes menolak fallback tenantless `/b/{code}`.
-- Exact source `2159ccd26d67811e6e3f4f54ebcbdfa7df101f34` pada branch
-  `codex/sagabook-friendly-email-copy`; focused email 9/9 (90 assertion),
-  public-route 1/1 (15), post-payment guard 4/4 (70), Pint, syntax, diff, dan
-  Composer audit nol advisory lulus.
-- Status `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
-  PRODUCTION_UNCHANGED`; provider aktif tetapi seluruh tenant toggle tetap
-  opt-in mati, tenant-linked UAT dan `BUSINESS_READY` belum.
+- Exact source `92765aa96537573859de1562e3029616b380ea3a`, immutable release
+  `20260828103607-92765aa`, rollback `20260828101352-90172ed`; focused
+  pascarebase 23/23 (288 assertion), full PHP exact-commit, persistence 18/18,
+  Playwright 4/4, build, Pint, Composer/npm audit nol, fresh encrypted backup
+  `20260828T102722Z`, disposable restore, verifier 19/19, dan smoke/security
+  3/3 lulus.
+- First attempt berhenti fail-closed karena ENOSPC lokal. Setelah artefak
+  duplikat dipindahkan secara recoverable, correction round kedua lulus penuh.
+  Outbox final kosong dan seluruh tenant toggle opt-in mati; trial tanpa booking
+  milik alamat UAT tidak dikirim agar link detail tidak 404.
+- Status `CONFIRMED / PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+  tenant-linked UAT dan `BUSINESS_READY` belum.
 
 ## 2026-08-28 - Resend provider dan signed webhook production activation
 
