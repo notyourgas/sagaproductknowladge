@@ -12,12 +12,33 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-28T09:00:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-28T10:00:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
-| Informasi terakhir disinkronkan | SagaView S328 unverifiable network storage fail-closed. |
+| Informasi terakhir disinkronkan | SagaView S329 reparse-point custody guard. |
 | Status sinkronisasi | SagaView `CONFIRMED / PUSHED / DEVOPS_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED / PRODUCTION_UNCHANGED`; sinkronisasi canonical `main` menunggu worktree main kembali bersih. |
+
+## SagaView S329 reparse-point custody guard
+
+- Exact pushed source `1da3a7d5e24f0fd2f234b52d6531ece8fa2eee92`
+  menolak junction/reparse point pada output, mirror, temp, atau ancestor yang
+  sudah ada sebelum build/write.
+- RED–GREEN, focused 5/29, regresi release/custody 12/98, syntax,
+  npm/Composer audit nol, clean commit, serta remote exact lulus.
+- Probe sintetis exit 1, mirror tidak dibuat, target kosong, dan fixture
+  dibersihkan. Media lokal terpisah terotorisasi, artifact exact S329,
+  backup/restore, rehearsal, UAT, dan approval deploy masih pending.
+
+## File yang berubah pada sinkronisasi ini (SagaView S329)
+
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaView S328 unverifiable network storage fail-closed
 

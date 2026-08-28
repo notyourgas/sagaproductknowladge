@@ -1,5 +1,24 @@
 # SagaView Changelog
 
+## 2026-08-28 - S329 reparse-point custody guard
+
+- Klasifikasi: `CONFIRMED / PUSHED / DEVOPS_VALIDATED /
+  SECURITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  RELEASE_BLOCKED / PRODUCTION_UNCHANGED`.
+- Before: path lokal dapat melewati junction atau reparse point sehingga huruf
+  drive tidak membuktikan lokasi fisik artifact yang sebenarnya.
+- After: exact source `1da3a7d5e24f0fd2f234b52d6531ece8fa2eee92`
+  memeriksa output, mirror, temp, dan ancestor yang sudah ada lalu menolak
+  reparse point sebelum build atau write.
+- Acceptance: RED 1 test gagal; GREEN focused 5/29 dan regresi
+  release/custody 12/98 assertion lulus. Probe junction sintetis exit 1, guard
+  cocok, mirror tidak dibuat, target kosong, dan fixture dibersihkan. Syntax,
+  npm audit, Composer audit, diff, clean commit, push, dan remote exact lulus.
+- Boundary: tidak ada API, database, migration, customer data, payment,
+  artifact baru, deploy, activation, atau perubahan produk lain. Media lokal
+  terpisah terotorisasi dan artifact exact S329 masih pending; production tetap
+  S311.
+
 ## 2026-08-28 - S328 unverifiable network storage fail-closed
 
 - Klasifikasi: `CONFIRMED / PUSHED / DEVOPS_VALIDATED /

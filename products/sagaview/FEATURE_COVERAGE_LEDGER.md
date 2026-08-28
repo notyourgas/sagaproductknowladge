@@ -1,6 +1,20 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 28 Agustus 2026 09:00 WIB
+Evidence cut-off: 28 Agustus 2026 10:00 WIB
+
+S329 reparse-point custody guard: exact pushed source
+`1da3a7d5e24f0fd2f234b52d6531ece8fa2eee92` menolak output, mirror, atau temp
+path yang memakai reparse point termasuk junction pada path atau ancestor yang
+sudah ada. Gate ini mencegah identitas drive tekstual menutupi pengalihan ke
+penyimpanan fisik lain sebelum build atau write.
+
+RED 1 test gagal lalu GREEN 5/29 assertion lulus; regresi release/custody
+12/98 assertion, syntax PowerShell, npm/Composer audit nol, diff, clean commit,
+push, dan remote exact lulus. Probe junction sintetis exact commit exit 1,
+guard terdeteksi, mirror tidak dibuat, target kosong, dan fixture dibersihkan.
+Status `PUSHED / DEVOPS_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED / PRODUCTION_UNCHANGED`. Gap
+berikutnya: media lokal terpisah terotorisasi dan artifact exact S329.
 
 S328 unverifiable network storage fail-closed: exact pushed source
 `7ab33b352050a76486327830ed0cfeefd0a025ce` menolak network share sebagai

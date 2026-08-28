@@ -1,8 +1,22 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 28 Agustus 2026 09:00 WIB
+Evidence cut-off: 28 Agustus 2026 10:00 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
+
+SagaView S329 exact pushed source
+`1da3a7d5e24f0fd2f234b52d6531ece8fa2eee92` menolak output, mirror, atau temp
+path yang memakai reparse point termasuk junction pada path/ancestor yang
+sudah ada. Gate custody tidak lagi mempercayai identitas drive tekstual bila
+path dapat dialihkan ke penyimpanan fisik lain. Probe sintetis berhenti exit 1
+tanpa membuat mirror atau menulis target.
+
+Focused 5/29, regresi release/custody 12/98, syntax, serta npm/Composer audit
+nol lulus. Status `PUSHED / DEVOPS_VALIDATED / SECURITY_VALIDATED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED /
+PRODUCTION_UNCHANGED`. Artifact exact S329 pada media lokal terpisah
+terotorisasi, backup/restore, rehearsal, UAT, dan approval deploy masih wajib;
+production tetap S311 dan `BUSINESS_READY=false`.
 
 SagaView S328 exact pushed source
 `7ab33b352050a76486327830ed0cfeefd0a025ce` menolak network share sebagai

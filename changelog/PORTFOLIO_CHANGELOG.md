@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-28 - SagaView S329 reparse-point custody guard
+
+- Exact pushed source `1da3a7d5e24f0fd2f234b52d6531ece8fa2eee92`
+  membuat artifact builder menolak junction/reparse point pada output, mirror,
+  temp, atau ancestor sebelum build dan write.
+- RED–GREEN, focused 5/29, regresi release/custody 12/98, probe tanpa write,
+  syntax, dan dependency audit nol lulus.
+- Status `PUSHED / DEVOPS_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED / PRODUCTION_UNCHANGED`; media
+  lokal terpisah terotorisasi dan artifact exact S329 masih wajib.
+
 ## 2026-08-28 - SagaView S328 network storage fail-closed
 
 - Exact pushed source `7ab33b352050a76486327830ed0cfeefd0a025ce`

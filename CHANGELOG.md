@@ -1,5 +1,22 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-28 - SagaView S329 reparse-point custody guard sync
+
+- Ringkasan: menyinkronkan guard builder yang menolak junction/reparse point
+  pada output, mirror, temp, dan ancestor sebelum build/write.
+- Alasan: huruf drive tidak cukup membuktikan custody fisik ketika path dapat
+  dialihkan melalui reparse point.
+- Produk/area: SagaView release operations, storage identity, security, QA,
+  dan provenance.
+- Klasifikasi: `CONFIRMED / PUSHED / DEVOPS_VALIDATED /
+  SECURITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  RELEASE_BLOCKED / PRODUCTION_UNCHANGED`; exact source
+  `1da3a7d5e24f0fd2f234b52d6531ece8fa2eee92`.
+- RED–GREEN, focused 5/29, regresi 12/98 assertion, negative probe tanpa write,
+  syntax, npm/Composer audit nol, clean commit, dan remote exact lulus.
+- Dokumen terdampak: Product, feature ledger, changelog SagaView, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-08-28 - SagaView S328 network storage guard sync
 
 - Ringkasan: menyinkronkan guard builder yang menolak network share tanpa bukti

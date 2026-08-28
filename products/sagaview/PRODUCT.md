@@ -1,6 +1,22 @@
 # SagaView Product Knowledge
 
-Updated: 28 Agustus 2026 09:00 WIB
+Updated: 28 Agustus 2026 10:00 WIB
+
+SagaView S329 exact source
+`1da3a7d5e24f0fd2f234b52d6531ece8fa2eee92` sudah `PUSHED /
+DEVOPS_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED / PRODUCTION_UNCHANGED`. Artifact
+builder kini menolak output, mirror, atau temp path yang memakai reparse point
+termasuk junction pada path yang sudah ada. Identitas drive tekstual tidak lagi
+dipercaya bila ancestor dapat mengalihkan penyimpanan ke lokasi fisik lain.
+
+RED membuktikan kontrak baru gagal 1 test; GREEN lulus 5/29 assertion dan
+regresi release/custody lulus 12/98 assertion. Probe junction sintetis pada
+exact commit berhenti exit 1, guard cocok, mirror tidak dibuat, target tetap
+kosong, dan fixture dibersihkan. Syntax PowerShell, npm audit nol vulnerability,
+Composer audit nol advisory, clean commit, push, dan remote exact lulus. Media
+lokal terpisah terotorisasi serta artifact exact S329 masih wajib; production
+tetap S311.
 
 SagaView S328 exact source
 `7ab33b352050a76486327830ed0cfeefd0a025ce` sudah `PUSHED /
