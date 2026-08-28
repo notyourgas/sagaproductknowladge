@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-28 - SagaBook S312 guard availability correction
+
+- Latest pushed source `88b8ea9ad9ce03f91d3d9099cffcb71e9f06caaf`
+  membuat verifier tetap menghasilkan laporan JSON public-safe ketika helper
+  S312 belum ada pada active release, serta fail-closed pada output/schema yang
+  invalid tanpa menyalin raw output.
+- Focused 5/5, full PHP 1.200/1.200, build/type/parser/design, touched-file
+  format, dan dependency audit nol lulus. Rehearsal current production
+  menyelesaikan 19 check: 17 hijau dan dua merah karena helper kandidat memang
+  belum dideploy.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; PR #38 tetap
+  terbuka. Production tetap `a9127dc` / `20260827210830-a9127dc` dan active
+  release S311 tetap `PRODUCTION_ACTIVATED`; `BUSINESS_READY=false`.
+
 ## 2026-08-28 - SagaBook S312 post-payment return log guard
 
 - Exact pushed source `bc03fa2202e5f08d767d3d19f3b014a6b960026f`

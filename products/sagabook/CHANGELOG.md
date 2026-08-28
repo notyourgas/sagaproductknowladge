@@ -1,5 +1,25 @@
 # SagaBook Changelog
 
+## 2026-08-28 - S312 fail-closed saat helper belum tersedia
+
+- Latest exact pushed source `88b8ea9ad9ce03f91d3d9099cffcb71e9f06caaf`
+  memperbaiki release verifier yang sebelumnya berhenti pada exception JSON
+  ketika active release belum membawa helper log S312.
+- Verifier sekarang mengeluarkan failed check public-safe
+  `post_payment_return_guard=unavailable` dan `guard_unavailable`. Output
+  non-JSON, schema/kontrak invalid, atau helper yang tidak public-safe juga
+  ditolak tanpa mencetak raw output.
+- Focused correction 5/5 (133 assertion), full PHP 1.200/1.200 (13.535), build
+  5.133 modul, critical typecheck, touched-file Pint, PowerShell parser, design
+  audit 26/0, dan npm/Composer/OSV nol advisory lulus. Rehearsal read-only
+  menyelesaikan 19 check: 17 gate active release hijau dan dua gate helper
+  kandidat gagal sesuai keadaan belum dideploy.
+- Status `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. PR #38 tetap terbuka; production tidak berubah
+  dari `a9127dc4595f2d8d7e60094ac330cac76448b255` / release
+  `20260827210830-a9127dc`. Active release tetap production-activated menurut
+  exact release gate S311; merge/deploy S312 dan `BUSINESS_READY` masih pending.
+
 ## 2026-08-28 - Guard log return pascapembayaran S312
 
 - Exact pushed source `bc03fa2202e5f08d767d3d19f3b014a6b960026f`
