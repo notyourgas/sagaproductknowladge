@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-28 - SagaBook S319 closing daily recap
+
+- Closing kini merangkum total sesi, jumlah per paket, add-on, pemasukan,
+  pengeluaran, net, metode pembayaran, cash fisik, dan variance dalam UI,
+  teks/PNG salinan, serta export yang sama.
+- Source `31e78b8f225d06ceb4f9823c2bdb0ff552ef7d37` sudah merged dan lulus full
+  1.261/1.261, contract 7/7, Playwright 3/3, build/typecheck, security, serta
+  data-integrity gate. Angka server-side anti-double-counting, scoped per
+  tenant/cabang/tanggal, bebas PII, dan tetap copy/manual share saja.
+- Status `IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; deploy menunggu
+  kandidat kumulatif task koordinasi, authenticated UAT dan
+  `BUSINESS_READY=false`.
+
 ## 2026-08-28 - COYABAG privacy/retention baseline
 
 - Baseline produksi versi `2026.08-v1` sudah mengisi enam pengaturan retensi dan

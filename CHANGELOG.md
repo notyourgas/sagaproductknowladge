@@ -1,5 +1,22 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-28 - SagaBook S319 closing daily recap sync
+
+- Ringkasan: menyinkronkan rekap sesi/paket/add-on dan keuangan lengkap pada
+  closing harian, termasuk satu proyeksi anti-double-counting untuk laporan
+  serta expected cash.
+- Provenance: exact merged source
+  `31e78b8f225d06ceb4f9823c2bdb0ff552ef7d37`, PR SagaBook #51.
+- Evidence: full PHP 1.261/1.261 (14.210 assertion), contract 7/7, Playwright
+  closing 3/3, typecheck, build, Pint, dan dependency audit nol.
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED / QA_VALIDATED /
+  SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
+- Production berubah: tidak. Deploy diserahkan ke task koordinasi agar satu
+  kandidat kumulatif SagaBook/SagaVIEW dirilis tanpa race.
+- Dokumen terdampak: Product, Dossier, feature ledger/changelog SagaBook,
+  portfolio, master knowledge, root changelog, dan sync status.
+
 ## 2026-08-28 - COYABAG privacy/retention baseline sync
 
 - Ringkasan: menyinkronkan enam pengaturan retensi, draft kebijakan delapan

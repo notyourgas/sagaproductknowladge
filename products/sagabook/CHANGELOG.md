@@ -1,5 +1,24 @@
 # SagaBook Changelog
 
+## 2026-08-28 - S319 rekap sesi dan keuangan closing harian
+
+- Closing menampilkan total sesi, jumlah sesi per paket, add-on beserta
+  kuantitas, total pemasukan, pengeluaran, net, breakdown metode pembayaran,
+  cash fisik, dan selisih cash; teks salinan, PNG, read model, dan export
+  memakai snapshot authoritative yang sama.
+- Backend memakai nama paket snapshot historis, scope tenant/cabang/tanggal,
+  serta proyeksi finance anti-double-counting yang juga menjadi sumber
+  expected cash. Report bebas PII customer dan delivery tetap copy/manual
+  share tanpa membuka WhatsApp.
+- Exact merged source `31e78b8f225d06ceb4f9823c2bdb0ff552ef7d37`.
+  Full PHP 1.261/1.261 (14.210 assertion), contract 7/7, Playwright closing
+  3/3, typecheck, build, Pint, Composer OSV/composer audit/npm audit nol lulus.
+- Status `CONFIRMED / PUSHED / LOCAL_VALIDATED / QA_VALIDATED /
+  SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; deploy production
+  dihentikan di task ini agar task koordinasi membentuk satu kandidat
+  kumulatif tanpa race. Authenticated UAT belum dan `BUSINESS_READY=false`.
+
 ## 2026-08-28 - Combined exact-main S316-S318 production closure
 
 - Exact source/release `21d87e9aa7fdb921e3877f5fd448ff7117128fc6` /

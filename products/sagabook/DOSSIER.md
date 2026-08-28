@@ -7,6 +7,20 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Rekap closing harian S319 exact merged source
+  `31e78b8f225d06ceb4f9823c2bdb0ff552ef7d37`: operator dapat membaca total
+  sesi, jumlah per paket, kuantitas add-on, total pemasukan, pengeluaran, net,
+  breakdown pembayaran, cash fisik, dan variance pada workspace serta artefak
+  salinan yang sama. Agregasi berasal dari booking completed, snapshot katalog,
+  normalized add-on, dan proyeksi finance server-side anti-double-counting
+  dalam scope tenant/cabang/tanggal; PII customer tidak masuk report. Copy dan
+  share tetap manual tanpa API pembuka WhatsApp. Full PHP 1.261/1.261 (14.210),
+  contract 7/7, Playwright closing 3/3, typecheck/build/Pint, serta dependency
+  audit nol lulus. Status `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  QA_VALIDATED / SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; deploy dikonsolidasikan
+  oleh task koordinasi dan authenticated UAT tetap pending.
+
 - Combined exact-main S316-S318 source
   `21d87e9aa7fdb921e3877f5fd448ff7117128fc6`, immutable release
   `20260828153427-21d87e9`, rollback `20260828141625-9440c16`: task urgent

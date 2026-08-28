@@ -1,6 +1,21 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 28 Agustus 2026 22:45 WIB
+Evidence cut-off: 28 Agustus 2026 23:50 WIB
+
+Rekap closing harian S319 exact merged source
+`31e78b8f225d06ceb4f9823c2bdb0ff552ef7d37` telah `CONFIRMED / PUSHED /
+LOCAL_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+DATA_INTEGRITY_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`.
+Coverage UI -> typed preflight/read model -> snapshot/artifact -> ledger
+mencakup total sesi, agregasi paket berdasarkan snapshot historis, kuantitas
+add-on, pemasukan/pengeluaran/net, breakdown gateway/transfer/QRIS/cash/EDC,
+cash fisik/variance, dan export closing. Expected cash dan finance recap memakai
+proyeksi anti-double-counting yang sama; tenant/cabang/tanggal fail-closed dan
+artefak tidak membawa PII customer. Full PHP 1.261/1.261 (14.210), contract
+7/7, Playwright closing 3/3, typecheck, build, Pint, dan audit dependency nol
+lulus. Copy/manual share tetap tanpa WhatsApp API. Deploy menunggu kandidat
+kumulatif task koordinasi; authenticated Owner/operator UAT dan
+`BUSINESS_READY` belum.
 
 Combined exact-main S316-S318 source
 `21d87e9aa7fdb921e3877f5fd448ff7117128fc6` telah `CONFIRMED / PUSHED /
