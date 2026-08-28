@@ -7,7 +7,7 @@
   kamus status tanpa mengubah CSV.
 - Typed value dipertahankan, formula injection dinetralisasi, dan closing
   memisahkan keuangan, sesi/stok, serta audit/revisi agar lebih mudah dibaca.
-- Exact candidate `7edc7b9842f7d794187632dcf6a711d38e14f605` lulus full
+- Exact candidate `e00520201b947fcbae8cc790486ae5510e7f11a5` lulus full
   test/build/visual/security/data-integrity gate. Status `PUSHED /
   IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; Owner UAT dan guarded
   release masih pending. Produk SagaDev lain tidak berubah.

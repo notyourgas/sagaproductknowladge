@@ -12,16 +12,16 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-29T02:20:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-29T02:40:00+07:00 |
 | Branch aktif | `codex/knowledge-s343-sagabook-xlsx` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | `72ba3dc5d947ddff7ac14c3720bc8650c72629c1` |
 | Informasi terakhir disinkronkan | SagaBook S343 styled XLSX report export candidate. |
-| Status sinkronisasi | Source `7edc7b9842f7d794187632dcf6a711d38e14f605`; `PUSHED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`. |
+| Status sinkronisasi | Source `e00520201b947fcbae8cc790486ae5510e7f11a5`; `PUSHED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`. |
 
 ## SagaBook S343 styled XLSX report export
 
-- Exact candidate `7edc7b9842f7d794187632dcf6a711d38e14f605` menghasilkan
+- Exact candidate `e00520201b947fcbae8cc790486ae5510e7f11a5` menghasilkan
   workbook multi-sheet dengan ringkasan, label manusiawi, format Rupiah/
   tanggal/jam, filter/freeze pane, status berwarna, print layout, kamus status,
   dan formula injection defense; CSV tetap kompatibel.

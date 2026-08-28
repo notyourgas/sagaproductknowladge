@@ -6,7 +6,7 @@
   formula-safe, mudah difilter/dicetak, serta closing yang dipisah berdasarkan
   kebutuhan operasional.
 - Provenance: exact source
-  `7edc7b9842f7d794187632dcf6a711d38e14f605`, branch
+  `e00520201b947fcbae8cc790486ae5510e7f11a5`, branch
   `codex/s343-sagabook-styled-xlsx`.
 - Evidence: full PHP 1.282/1.282 (14.403), focused workbook 3/3 (31), visual
   mobile/desktop 10/10, TypeScript/build, Pint/diff, dependency audit nol, dan

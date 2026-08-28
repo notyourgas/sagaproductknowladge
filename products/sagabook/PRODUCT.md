@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 29 Agustus 2026 02:20 WIB
-Evidence status: kandidat export XLSX rapi sudah pushed dan local-validated pada exact source `7edc7b9842f7d794187632dcf6a711d38e14f605`; production tetap exact source `7d82f308da02357fd4de3677b96e81fd53be0424`, authenticated Owner UAT belum, dan business readiness tetap terpisah
+Updated: 29 Agustus 2026 02:40 WIB
+Evidence status: kandidat export XLSX rapi sudah pushed dan local-validated pada exact source `e00520201b947fcbae8cc790486ae5510e7f11a5`; production tetap exact source `7d82f308da02357fd4de3677b96e81fd53be0424`, authenticated Owner UAT belum, dan business readiness tetap terpisah
 
 ## Tujuan dokumen
 
@@ -17,7 +17,7 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 ## Fitur terbaru
 
 - Export laporan XLSX S343 pada exact candidate
-  `7edc7b9842f7d794187632dcf6a711d38e14f605` kini menghasilkan workbook yang
+  `e00520201b947fcbae8cc790486ae5510e7f11a5` kini menghasilkan workbook yang
   langsung terbaca oleh orang awam: judul dan konteks periode/cabang,
   ringkasan metrik, nama kolom manusiawi, freeze header, filter, lebar kolom,
   wrap, zebra row, format Rupiah/tanggal/jam, warna status, serta pengaturan

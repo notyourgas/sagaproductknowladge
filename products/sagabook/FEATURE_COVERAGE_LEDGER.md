@@ -1,9 +1,9 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 29 Agustus 2026 02:20 WIB
+Evidence cut-off: 29 Agustus 2026 02:40 WIB
 
 Export XLSX rapi S343 exact candidate
-`7edc7b9842f7d794187632dcf6a711d38e14f605` telah `CONFIRMED / PUSHED /
+`e00520201b947fcbae8cc790486ae5510e7f11a5` telah `CONFIRMED / PUSHED /
 LOCAL_VALIDATED / UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
 DATA_INTEGRITY_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`.
 Coverage UI -> controller/job -> report export service -> XLSX builder -> file

@@ -8,7 +8,7 @@ dalam satu dokumen public-safe.
 ## Konteks dan status bukti
 
 - Kandidat export XLSX S343 exact source
-  `7edc7b9842f7d794187632dcf6a711d38e14f605` mengubah export mentah menjadi
+  `e00520201b947fcbae8cc790486ae5510e7f11a5` mengubah export mentah menjadi
   workbook operasional multi-sheet. Setiap workbook membawa konteks
   tenant/cabang/periode/timezone, ringkasan, label manusiawi, filter, freeze
   pane, format Rupiah/tanggal/jam, status berwarna, layout cetak, kamus status,
