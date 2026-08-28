@@ -7,6 +7,27 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Reporting dan closing audit S318 exact source
+  `933d523834dff668067e2296fce8cdb0db67e61e`, immutable release
+  `20260828151033-933d523`, rollback `20260828141625-9440c16`: Owner dapat
+  membaca revision history closing melampaui halaman awal, notes dan isi
+  operasional lengkap, export yang aman, grafik pendapatan aksesibel, serta
+  status integritas yang langsung dapat ditindaklanjuti. Backend membatch read
+  model, membatasi export sebelum snapshot hydration, men-stream hash artifact,
+  menjaga capability/tenant/cabang, dan menambah index baca dengan online DDL.
+  Immutable runner lulus full test/build/E2E/audit, backup terenkripsi,
+  disposable restore, migration contract, atomic switch, manifest, service,
+  serta smoke publik. Pascarelease: 0 pending migration, report-read canary
+  32/32, DB audit 100, dua delivery WhatsApp legacy dilepas dari reference
+  booking dengan backup privat/audit dan tanpa penghapusan, serta rekonsiliasi
+  tujuh hari memproses 15 scope tanpa failure dan membuat 6 temuan review-only
+  tanpa koreksi data otomatis. Independent verifier mengonfirmasi seluruh gate
+  runtime; remote `main` kemudian maju ke hotfix tooling-only sehingga exact
+  main pointer dicatat terpisah dari active runtime. Status `CONFIRMED / PUSHED
+  / QA_VALIDATED / SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated Owner/operator
+  UAT dan `BUSINESS_READY` masih pending.
+
 - Reporting dan closing detail S317 exact source
   `14652bb9f6f5715aad33936a4adc3a98f5bfc26c`, immutable release
   `20260828130503-14652bb`, rollback `20260828121721-cde8dd5`: dashboard Owner

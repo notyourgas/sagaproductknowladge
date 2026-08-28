@@ -1,5 +1,20 @@
 # Portfolio Changelog
 
+## 2026-08-28 - SagaBook S318 report dan closing audit hardening
+
+- Workspace Owner sekarang memiliki histori closing bertahap, detail dan export
+  operasional lengkap, grafik pendapatan aksesibel, URL state, serta label
+  integritas yang dapat ditindaklanjuti.
+- Read model, export, artifact verification, isolation, dan index laporan
+  diperkeras untuk performa dan keamanan produksi.
+- Exact source/release `933d523834dff668067e2296fce8cdb0db67e61e` /
+  `20260828151033-933d523`, rollback `20260828141625-9440c16`; release gate,
+  backup/restore, migration, build/E2E/audit, service, dan smoke lulus.
+- Pascarelease DB audit 100; dua delivery legacy dikarantina tanpa penghapusan,
+  dan rekonsiliasi 15 scope membuat 6 review issue tanpa koreksi otomatis.
+  Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+  `BUSINESS_READY=false` sampai authenticated Owner/operator UAT.
+
 ## 2026-08-28 - SagaView S338-S341 editor resilience
 
 - Reset editor kini membersihkan seluruh transform secara konsisten dan

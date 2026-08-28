@@ -1,6 +1,23 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 28 Agustus 2026 20:22 WIB
+Evidence cut-off: 28 Agustus 2026 22:25 WIB
+
+Reporting dan closing audit S318 exact source
+`933d523834dff668067e2296fce8cdb0db67e61e` telah `CONFIRMED / PUSHED /
+QA_VALIDATED / SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
+PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` pada immutable release
+`20260828151033-933d523`, rollback `20260828141625-9440c16`. Coverage mencakup
+histori revisi closing load-more, detail notes/session/add-on/inventory/
+variance/artifact/delivery, export lengkap dengan row-limit dan formula
+neutralization, grafik dan tabel aksesibel, URL state, label integritas Owner,
+batched operational reads, tenant/cabang isolation, streaming artifact hash,
+serta online report indexes. Full release gate, backup/restore, migration
+contract, build, persistence/browser checks, dependency audit, atomic switch,
+manifest, service, dan public/security smoke lulus. Pascarelease: 0 pending
+migration, canary 32/32, DB audit 100, dua orphan delivery dikarantina dengan
+0 penghapusan, dan rekonsiliasi 15 scope menghasilkan 6 review issue serta 0
+automatic correction. Authenticated Owner/operator UAT belum;
+`BUSINESS_READY=false`.
 
 Reporting pendapatan dan closing detail S317 exact source
 `14652bb9f6f5715aad33936a4adc3a98f5bfc26c` telah `CONFIRMED / PUSHED /
