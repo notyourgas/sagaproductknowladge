@@ -12,12 +12,43 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-28T22:25:00+07:00 |
-| Branch aktif | `codex/sagabook-report-closing-release-sync` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-28T22:45:00+07:00 |
+| Branch aktif | `codex/s316-sagabook-task-knowledge` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `9fc76dec199912cbb1a9dd4a19e8a2383cf03ce3` |
-| Informasi terakhir disinkronkan | SagaBook S318 report dan closing audit production hardening. |
-| Status sinkronisasi | Source `933d5238` production-activated; DB audit 100 dan rekonsiliasi review-only aktif; authenticated UAT pending, `BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `4e12a02cfb03337f124c82122b32f9f0c02df8e6` |
+| Informasi terakhir disinkronkan | SagaBook combined exact-main S316-S318 production closure. |
+| Status sinkronisasi | Source `21d87e9a` production-activated; verifier 23/23, canary 32/32, DB audit 100; authenticated UAT pending, `BUSINESS_READY=false`. |
+
+## SagaBook combined exact-main S316-S318 production closure
+
+- Exact source/release
+  `21d87e9aa7fdb921e3877f5fd448ff7117128fc6` /
+  `20260828153427-21d87e9`, rollback `20260828141625-9440c16`.
+- Typed task action, fail-closed routing, report/closing S318, database guard,
+  repair idempotent, retention, dan canary aktif dalam satu exact-main.
+- Release wrapper melakukan backup-binding preflight sebelum packaging,
+  sebelum upload, dan sesudah upload; verifier rollback memakai path eksplisit
+  dan gate lokal menyimpan diagnostic tail tersanitasi.
+- Full 1.259/1.259 (14.188 assertion), focused 24/24 (288), build/browser,
+  dependency audit nol, encrypted backup/disposable restore, verifier 23/23,
+  canary 32/32, DB audit 100, repair residual 0, retention preview 0, migrasi
+  pending 0, service, dan public smoke lulus.
+- Operational WhatsApp customer/owner tetap off, OTP tetap aktif, template WA
+  tetap copy-only/manual, dan audit akhir mencatat 0 invalid delivery.
+- Status `CONFIRMED / PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`; authenticated Owner/operator UAT masih pending dan
+  `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi combined exact-main SagaBook
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook S318 report dan closing audit production hardening
 

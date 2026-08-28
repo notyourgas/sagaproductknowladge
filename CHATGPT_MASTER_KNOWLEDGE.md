@@ -1,5 +1,17 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+SagaBook combined exact-main S316-S318 source
+`21d87e9aa7fdb921e3877f5fd448ff7117128fc6` aktif pada immutable release
+`20260828153427-21d87e9`, rollback `20260828141625-9440c16`. Typed Task
+Manager action, fail-closed routing, report/closing S318, database guard,
+repair idempotent, retention, dan canary aktif bersama. Release wrapper
+memeriksa backup binding sebelum packaging, sebelum upload, dan sesudah upload
+untuk menutup race rotasi backup. Full suite 1.259/1.259, verifier 23/23,
+canary 32/32, DB audit 100, 0 pending migration, 0 residual repair, service,
+dan public smoke lulus. Operational WhatsApp customer/owner tetap off, OTP
+tetap aktif, dan template WA tetap copy-only/manual. Authenticated
+Owner/operator UAT belum dan `BUSINESS_READY=false`.
+
 SagaBook S318 exact source `933d523834dff668067e2296fce8cdb0db67e61e`
 aktif pada immutable release `20260828151033-933d523`, rollback
 `20260828141625-9440c16`. Owner memperoleh histori revisi closing load-more,
@@ -48,7 +60,7 @@ idempotent 0 perubahan, outbox queued/retry kosong, dan reminder dry-run tidak
 menemukan booking eligible. Provider/webhook aktif; operational WhatsApp
 customer/owner tetap off. Owner/customer UAT dan `BUSINESS_READY` belum.
 
-Evidence cut-off: 28 Agustus 2026 22:25 WIB
+Evidence cut-off: 28 Agustus 2026 22:45 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 

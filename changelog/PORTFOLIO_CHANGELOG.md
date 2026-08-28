@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-28 - SagaBook combined exact-main S316-S318 closure
+
+- Exact source/release `21d87e9aa7fdb921e3877f5fd448ff7117128fc6` /
+  `20260828153427-21d87e9`, rollback `20260828141625-9440c16`.
+- Task urgent tetap memiliki target operasional eksplisit; report/closing S318,
+  database guard, repair, retention, dan canary aktif dalam source exact-main.
+- Release guard kini recheck binding backup sesudah upload untuk menutup race
+  rotasi backup. Full 1.259/1.259, verifier 23/23, canary 32/32, DB audit 100,
+  repair residual 0, migrasi pending 0, service, dan public smoke lulus.
+- Operational WhatsApp customer/owner tetap off, template WA tetap copy-only,
+  dan `BUSINESS_READY=false` sampai authenticated Owner/operator UAT.
+
 ## 2026-08-28 - SagaBook S318 report dan closing audit hardening
 
 - Workspace Owner sekarang memiliki histori closing bertahap, detail dan export

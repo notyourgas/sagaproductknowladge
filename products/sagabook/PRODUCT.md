@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 28 Agustus 2026 22:25 WIB
-Evidence status: hardening laporan pendapatan dan closing audit aktif di production; rekonsiliasi review-only berjalan, operational WhatsApp tetap tersuspensi, authenticated Owner UAT belum, dan business readiness tetap terpisah
+Updated: 28 Agustus 2026 22:45 WIB
+Evidence status: combined exact-main S316-S318 aktif di production; Task Manager, laporan, closing, dan release guard tervalidasi, operational WhatsApp tetap tersuspensi, authenticated Owner UAT belum, dan business readiness tetap terpisah
 
 ## Tujuan dokumen
 
@@ -15,6 +15,22 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
+
+- Combined exact-main menutup S316-S318 pada source
+  `21d87e9aa7fdb921e3877f5fd448ff7117128fc6`, immutable release
+  `20260828153427-21d87e9`, rollback `20260828141625-9440c16`. Perbaikan task
+  action, laporan/closing, dan database guard tetap aktif; release wrapper kini
+  memeriksa binding backup sebelum packaging, sebelum upload, dan sesudah
+  upload agar rotasi backup terjadwal tidak membuat receipt stale saat
+  aktivasi. Full suite 1.259/1.259 (14.188 assertion), build/browser flow,
+  dependency audit, encrypted backup/disposable restore, verifier 23/23,
+  report-read canary 32/32, DB audit score 100, 0 pending migration, dan
+  public smoke lulus. Preview repair menunjukkan 0 residual task unsafe dan
+  audit WhatsApp menunjukkan 0 invalid delivery; customer/owner messaging
+  tetap off, OTP tetap aktif, dan template WA tetap copy-only/manual.
+  Status `CONFIRMED / PUSHED / QA_VALIDATED / SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+  authenticated Owner/operator UAT belum dan `BUSINESS_READY=false`.
 
 - S318 memperdalam workspace `/admin/reports` untuk Owner dengan histori revisi
   closing yang dapat dimuat bertahap, detail notes/session/add-on/inventory/

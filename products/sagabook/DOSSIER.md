@@ -7,6 +7,22 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Combined exact-main S316-S318 source
+  `21d87e9aa7fdb921e3877f5fd448ff7117128fc6`, immutable release
+  `20260828153427-21d87e9`, rollback `20260828141625-9440c16`: task urgent
+  tetap membawa target typed/server-authored dan gagal tertutup, sementara
+  workspace report/closing S318 serta database guard aktif dalam release yang
+  sama. Release wrapper memverifikasi binding backup tiga kali termasuk
+  sesudah upload, sehingga pergantian backup terjadwal tidak dapat lolos dengan
+  receipt stale. Full suite 1.259/1.259 (14.188 assertion), build/browser,
+  audit dependency nol, encrypted backup/disposable restore, verifier 23/23,
+  canary 32/32, DB audit 100, 0 pending migration, preview repair residual 0,
+  service, dan public smoke lulus. Operational WhatsApp customer/owner tetap
+  off, OTP tetap aktif, dan template WA tetap copy-only/manual. Status
+  `CONFIRMED / PUSHED / QA_VALIDATED / SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+  authenticated Owner/operator UAT dan `BUSINESS_READY` masih pending.
+
 - Reporting dan closing audit S318 exact source
   `933d523834dff668067e2296fce8cdb0db67e61e`, immutable release
   `20260828151033-933d523`, rollback `20260828141625-9440c16`: Owner dapat

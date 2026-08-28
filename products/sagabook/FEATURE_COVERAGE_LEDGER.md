@@ -1,6 +1,20 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 28 Agustus 2026 22:25 WIB
+Evidence cut-off: 28 Agustus 2026 22:45 WIB
+
+Combined exact-main S316-S318 source
+`21d87e9aa7fdb921e3877f5fd448ff7117128fc6` telah `CONFIRMED / PUSHED /
+QA_VALIDATED / SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
+PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` pada immutable release
+`20260828153427-21d87e9`, rollback `20260828141625-9440c16`. Coverage
+mempertahankan typed task action, server-authored URL, fail-closed permission,
+report/closing read model, database constraint, repair idempotent, retention,
+dan canary. Release safety menambah post-upload backup-binding preflight serta
+diagnostic tail tersanitasi. Full suite 1.259/1.259 (14.188), focused 24/24
+(288), build/browser, audit dependency nol, backup/restore, verifier 23/23,
+canary 32/32, DB audit 100, 0 residual repair, dan 0 pending migration lulus.
+Operational WhatsApp tetap suspended dan template WA tetap manual copy-only;
+authenticated UAT belum dan `BUSINESS_READY=false`.
 
 Reporting dan closing audit S318 exact source
 `933d523834dff668067e2296fce8cdb0db67e61e` telah `CONFIRMED / PUSHED /
