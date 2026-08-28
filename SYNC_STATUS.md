@@ -13,11 +13,37 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Field | Nilai |
 |---|---|
 | Waktu pembaruan terakhir | 2026-08-28T23:55:00+07:00 |
-| Branch aktif | `codex/coyabag-privacy-retention-knowledge-20260828` dari exact `origin/main` |
+| Branch aktif | `codex/s319-sagabook-closing-recap-knowledge` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `18291df` |
-| Informasi terakhir disinkronkan | COYABAG privacy/retention baseline dan batas 2FA demo. |
-| Status sinkronisasi | `PRODUCTION_CONFIGURED / APPROVAL_BLOCKED`; commerce tetap fail-closed dan `BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `d54d5e6a37b986d20cd04c710dcf7095894b210d` |
+| Informasi terakhir disinkronkan | SagaBook S319 closing daily recap merged dan local-validated. |
+| Status sinkronisasi | Source `31e78b8f` merged; deploy kumulatif belum dijalankan, production masih S316-S318, authenticated UAT pending, `BUSINESS_READY=false`. |
+
+## SagaBook S319 closing daily recap
+
+- Exact merged source
+  `31e78b8f225d06ceb4f9823c2bdb0ff552ef7d37` menambahkan total sesi, paket,
+  add-on, pemasukan, pengeluaran, net, breakdown pembayaran, cash fisik, dan
+  variance ke UI, snapshot, teks/PNG, dan export closing.
+- Perhitungan server-side memakai scope tenant/cabang/tanggal dan proyeksi
+  anti-double-counting; report tidak memuat PII dan tetap copy/manual share.
+- Full PHP 1.261/1.261 (14.210), contract 7/7, Playwright 3/3,
+  typecheck/build/Pint, serta dependency audit nol lulus.
+- Status `CONFIRMED / PUSHED / LOCAL_VALIDATED / QA_VALIDATED /
+  SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; deploy diserahkan ke task
+  koordinasi agar tidak race dengan kandidat kumulatif SagaBook/SagaVIEW.
+
+## File yang berubah pada sinkronisasi SagaBook S319
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG privacy/retention baseline
 
