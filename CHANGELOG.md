@@ -1,5 +1,22 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-28 - SagaBook S312 release artifact blocker sync
+
+- Ringkasan: menyinkronkan rehearsal capacity/independence untuk immutable
+  artifact exact source `88b8ea9ad9ce03f91d3d9099cffcb71e9f06caaf`.
+- Alasan: GitHub Actions tidak memulai step karena billing, sehingga bukti
+  lokal ekuivalen perlu dipersiapkan tanpa melemahkan gate dua salinan fisik.
+- Hasil: preflight berhenti sebelum write karena volume internal tidak
+  independen, headroom kurang, dan media fisik kedua tidak sehat/kompatibel.
+  Tidak ada cleanup, repair/format, credential/customer access, atau deploy.
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / RELEASE_ARTIFACT_BLOCKED /
+  PRODUCTION_UNCHANGED`; production S311 tetap `PRODUCTION_ACTIVATED` dan
+  `BUSINESS_READY=false`.
+- Dokumen terdampak: Product, feature ledger/changelog SagaBook, portfolio,
+  root changelog, dan sync status. Master knowledge serta positioning tidak
+  berubah.
+
 ## 2026-08-28 - SagaBook S312 guard availability correction sync
 
 - Ringkasan: menyinkronkan koreksi fail-closed release verifier pada latest

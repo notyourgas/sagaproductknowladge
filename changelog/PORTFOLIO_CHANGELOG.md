@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-28 - SagaBook S312 release artifact rehearsal
+
+- Capacity/independence preflight exact source `88b8ea9a` berhenti aman sebelum
+  artifact ditulis: volume internal tidak independen secara fisik, headroom
+  staging+salinan kurang, dan media fisik kedua yang tersedia tidak sehat atau
+  kompatibel untuk evidence immutable.
+- Tidak ada ambang yang diturunkan, cleanup lintas proyek, repair/format media,
+  credential/customer access, merge, atau deploy. GitHub Actions tetap gagal
+  sebelum step karena billing/spending limit.
+- Production S311 tetap sehat 17/17 pada `a9127dc` /
+  `20260827210830-a9127dc`; S312 berstatus `RELEASE_ARTIFACT_BLOCKED /
+  IMPLEMENTED_NOT_DEPLOYED` dan `BUSINESS_READY=false`.
+
 ## 2026-08-28 - SagaBook S312 guard availability correction
 
 - Latest pushed source `88b8ea9ad9ce03f91d3d9099cffcb71e9f06caaf`

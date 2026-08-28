@@ -1,6 +1,6 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 28 Agustus 2026 07:09 WIB
+Evidence cut-off: 28 Agustus 2026 08:05 WIB
 
 Guard log return pascapembayaran S312 latest exact source
 `88b8ea9ad9ce03f91d3d9099cffcb71e9f06caaf` (base `bc03fa22`) telah `CONFIRMED / PUSHED /
@@ -23,6 +23,16 @@ dependency nol lulus. Rehearsal current production menyelesaikan 19 check:
 belum dideploy. Production tetap exact `a9127dc4595f2d8d7e60094ac330cac76448b255`
 / release `20260827210830-a9127dc`; merge, release, authenticated UAT, dan pilot
 masih terbuka, sehingga `BUSINESS_READY=false`.
+
+Release artifact rehearsal untuk exact S312 berhenti fail-closed sebelum file
+ditulis. Dua volume internal tidak memenuhi independensi disk fisik, headroom
+staging+salinan tidak memenuhi kontrak default, dan media fisik kedua yang
+tersedia tidak sehat/kompatibel untuk evidence immutable. Ambang tidak
+diturunkan dan tidak ada cleanup, repair/format media, credential/customer
+access, merge, atau deploy. GitHub Actions terverifikasi tidak memulai step
+karena billing/spending limit. Status tambahan S312
+`RELEASE_ARTIFACT_BLOCKED / IMPLEMENTED_NOT_DEPLOYED`; production S311 tetap
+17/17 hijau pada exact `a9127dc` / `20260827210830-a9127dc`.
 
 Tenant-safe post-payment return dan provider-transition release hardening S309-S311
 exact source `a9127dc4595f2d8d7e60094ac330cac76448b255` telah `CONFIRMED /

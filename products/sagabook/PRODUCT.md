@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 28 Agustus 2026 07:09 WIB
+Updated: 28 Agustus 2026 08:05 WIB
 Evidence status: post-payment tenant-safe return is production-activated; observability guard S312 is implemented but not deployed; operational WhatsApp is temporarily suspended for provider transition
 
 ## Tujuan dokumen
@@ -35,7 +35,12 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   design audit, dan dependency audit nol lulus. Rehearsal current production
   menyelesaikan 19 check: 17 gate active release tetap hijau dan 2 gate helper
   kandidat merah sesuai keadaan belum dideploy. Status `CONFIRMED / PUSHED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED`; production tetap exact `a9127dc` / release
+  IMPLEMENTED_NOT_DEPLOYED / RELEASE_ARTIFACT_BLOCKED`. Rehearsal immutable
+  artifact berhenti sebelum menulis file: dua volume internal berada pada disk
+  fisik yang sama, headroom staging+salinan tidak memenuhi kontrak default,
+  dan media fisik kedua yang tersedia tidak sehat/kompatibel untuk evidence.
+  Ambang tidak diturunkan dan tidak ada media yang diperbaiki atau diformat.
+  Production tetap exact `a9127dc` / release
   `20260827210830-a9127dc` dan `BUSINESS_READY=false`.
 
 - Perbaikan return pascapembayaran S309 dan hardening release transisi provider
