@@ -74,14 +74,16 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 - Checkout publik tetap `PRODUCTION_READINESS_BLOCKED` hanya karena UAT 15
   langkah masih 0/15 dan release sign-off belum lengkap. Nol payment intent
   dibuat saat deployment acceptance.
-- Release aktif `20260829-e97da17` dengan exact source
-  `e97da17473e2f232de183954a5c292953548c34f` melayani production;
-  rollback langsung `20260829-b6265cb` dipertahankan. Hotfix menutup crash
-  keranjang saat peringatan batas total UAT tampil. Owner memiliki jalur UAT
-  pembayaran nyata yang privat, signed, recent-auth, satu-link-satu-order,
-  gateway-only, maksimal Rp100.000 termasuk ongkir, dan maksimal tiga link per
-  hari. Capability tidak membuka checkout publik dan belum digunakan untuk
-  membuat order atau payment intent pada acceptance release.
+- Release aktif `20260829-e1c8b65` dengan exact source
+  `e1c8b65f09d0ed3b07d479a2137797cfb9f39cd4` melayani production;
+  rollback langsung `20260829-e97da17` dipertahankan. Payment gateway sekarang
+  memakai URL kembali HTTPS kanonik storefront dan menolak redirect internal
+  yang tidak sesuai kontrak, sehingga kegagalan validasi tidak lagi terbaca
+  sebagai sesi pembayaran ambigu. Owner tetap memiliki jalur UAT pembayaran
+  nyata yang privat, signed, recent-auth, satu-link-satu-order, gateway-only,
+  maksimal Rp100.000 termasuk ongkir, dan maksimal tiga link per hari.
+  Capability tidak membuka checkout publik dan belum digunakan untuk membuat
+  order atau payment intent pada acceptance release.
 - Pencarian tujuan manual hanya memakai kota/provinsi tujuan. Teks kota asal
   pada label tarif tidak lagi dapat memunculkan tujuan palsu.
 - Admin Beranda memperbarui seluruh ringkasan melalui snapshot terautentikasi,

@@ -12,12 +12,12 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-29 03:43 WIB |
-| Branch aktif | `codex/s343-sagaview-production-knowledge` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-29 |
+| Branch aktif | Detached worktree dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `c5a9b42` |
-| Informasi terakhir disinkronkan | SagaView S343 cumulative Studio production activation. |
-| Status sinkronisasi | Release `20260828203620-47d68e7`; `PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `a083bc3` |
+| Informasi terakhir disinkronkan | COYABAG payment return URL contract fix. |
+| Status sinkronisasi | Release `20260829-e1c8b65`; `PRODUCTION_DEPLOYED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`. |
 
 ## SagaView S343 production activation
 
@@ -59,15 +59,15 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 ## COYABAG controlled real payment UAT
 
-- Exact source `e97da17473e2f232de183954a5c292953548c34f` aktif pada release
-  `20260829-e97da17`, dengan rollback `20260829-b6265cb`.
-- Recovery screen keranjang pada kondisi total UAT over-limit sudah diperbaiki;
-  peringatan, promo, dan flow Detail lulus browser production desktop/mobile.
+- Exact source `e1c8b65f09d0ed3b07d479a2137797cfb9f39cd4` aktif pada release
+  `20260829-e1c8b65`, dengan rollback `20260829-e97da17`.
+- URL kembali payment gateway memakai HTTPS kanonik storefront dan redirect
+  internal yang tidak sesuai kontrak sekarang ditolak secara fail-closed.
 - Owner-only capability UAT nyata, one-link-one-order, gateway-only, Rp100.000,
   dan tiga link per hari sudah production-deployed. Public checkout tetap
   fail-closed.
-- Full test/build/audit, backup, migration, workers, scheduler, dan smoke lulus
-  tanpa membuat sesi UAT, order, atau payment intent nyata.
+- Browser desktop/mobile, full test/build/audit, backup, migration, workers,
+  scheduler, dan smoke lulus tanpa membuat order atau payment intent nyata.
 - Status `CONFIRMED / PRODUCTION_DEPLOYED / NOT_PRODUCTION_ACTIVATED`;
   readiness 40/42 hingga UAT operator serta release sign-off selesai.
 

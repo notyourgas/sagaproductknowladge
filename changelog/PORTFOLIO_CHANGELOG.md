@@ -13,6 +13,16 @@
 - Status `PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
   `BUSINESS_READY=false` menunggu penilaian operasional terpisah.
 
+## 2026-08-29 - COYABAG payment return URL production fix
+
+- Exact source `e1c8b65f09d0ed3b07d479a2137797cfb9f39cd4` aktif pada immutable
+  release `20260829-e1c8b65`; rollback `20260829-e97da17` tersedia.
+- Payment gateway memakai URL kembali HTTPS kanonik dan tidak lagi mengikuti
+  redirect internal yang dapat menyamarkan kegagalan validasi sebagai HTML 200.
+- Full test/build/audit, backup, readiness, dan public smoke lulus tanpa
+  membuat order atau payment intent nyata. Commerce publik tetap fail-closed
+  pada readiness 40/42 sampai UAT transaksi dan sign-off selesai.
+
 ## 2026-08-29 - COYABAG controlled UAT cart hotfix
 
 - Exact source `e97da17473e2f232de183954a5c292953548c34f` aktif pada immutable

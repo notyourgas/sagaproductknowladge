@@ -15,6 +15,19 @@
 - Dokumen terdampak: Product, feature ledger/changelog SagaView, portfolio,
   master knowledge, root changelog, dan sync status.
 
+## 2026-08-29 - COYABAG payment return URL fix sync
+
+- Ringkasan: menyinkronkan perbaikan kontrak URL kembali pembayaran SagaDev
+  dan Tokopay agar selalu memakai HTTPS kanonik storefront.
+- Provenance: exact source `e1c8b65f09d0ed3b07d479a2137797cfb9f39cd4`,
+  immutable release `20260829-e1c8b65`, rollback `20260829-e97da17`.
+- Evidence: browser UAT desktop/mobile, 216 storefront test, 472 Laravel test,
+  build/audit, backup, readiness, workers, log gate, dan public smoke.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /
+  NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+- Production berubah: ya untuk request gateway; public commerce tetap
+  fail-closed dan acceptance tidak membuat order atau payment intent.
+
 ## 2026-08-29 - COYABAG controlled UAT cart hotfix sync
 
 - Ringkasan: menyinkronkan hotfix recovery screen keranjang ketika total awal

@@ -4,6 +4,21 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-29 - Payment return URL contract fixed in production
+
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /
+  NOT_PRODUCTION_ACTIVATED`; exact source
+  `e1c8b65f09d0ed3b07d479a2137797cfb9f39cd4`, immutable release
+  `20260829-e1c8b65`, dan rollback `20260829-e97da17`.
+- SagaDev dan jalur Tokopay langsung sekarang memakai URL kembali HTTPS
+  kanonik storefront. Client internal tidak mengikuti redirect sehingga
+  kegagalan kontrak provider tetap terlihat sebagai kegagalan, bukan HTML 200.
+- Browser UAT desktop/mobile, 216 storefront test, 472 Laravel test, build,
+  dependency audit, backup, readiness, workers, log gate, dan public smoke
+  lulus. Acceptance tidak membuat order atau payment intent nyata.
+- Checkout publik tetap fail-closed; `launch_uat` dan `release_signoff` tetap
+  blocker sampai UAT pembayaran nyata serta persetujuan owner selesai.
+
 ## 2026-08-29 - Controlled UAT cart recovery hotfix deployed
 
 - Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /
