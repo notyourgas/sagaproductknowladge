@@ -1,6 +1,20 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 29 Agustus 2026 00:52 WIB
+Evidence cut-off: 29 Agustus 2026 01:22 WIB
+
+Wave B analitik booking per paket telah `CONFIRMED / PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED` pada exact source
+`7d82f308da02357fd4de3677b96e81fd53be0424`, immutable release
+`20260828180149-7d82f30`, rollback `20260828174039-806adbe`. Coverage UI ->
+controller -> read service -> database mencakup bulan berjalan/custom,
+eligible/mapped/unmapped, reconciliation, drilldown, CSV, ETag, serta scope
+tenant/cabang/resource. Exact tree lulus PHP 1.274/1.274 (14.344), focused
+17/17 (174), TypeScript/build, Playwright desktop 3/3 dan mobile 2/2 dengan
+satu skip terkontrol, changed-file Pint, dependency audit nol, fresh encrypted
+backup/disposable restore, 0 pending migration, service/journal, dan smoke 3/3.
+Production canary 32/32 lulus tanpa mutasi dan membuktikan invariant agregat
+seluruh scope. Authenticated Owner/Staff UAT HTTP/UI belum karena credential
+bridge lokal tidak aktif; `BUSINESS_READY=false`.
 
 S319-S322 telah `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` pada
 exact source `806adbe44b5d5ee2a2437fb3f066effd73c49b67`, immutable release

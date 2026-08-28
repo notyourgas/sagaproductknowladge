@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 29 Agustus 2026 00:52 WIB
-Evidence status: batch kumulatif yang membawa S319-S322 konsumsi stok add-on sudah production-deployed dan production-activated pada exact source `806adbe44b5d5ee2a2437fb3f066effd73c49b67`; 47 add-on legacy masih belum dipetakan dan backfill tidak dijalankan, operational WhatsApp tetap tersuspensi, authenticated Owner/Staff UAT belum, dan business readiness tetap terpisah
+Updated: 29 Agustus 2026 01:22 WIB
+Evidence status: analitik booking per paket Wave B sudah production-deployed dan production-activated pada exact source `7d82f308da02357fd4de3677b96e81fd53be0424`; canary read-only 32/32 lulus tanpa mutasi, authenticated Owner/Staff UAT belum karena credential bridge lokal tidak aktif, dan business readiness tetap terpisah
 
 ## Tujuan dokumen
 
@@ -15,6 +15,24 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
+
+- Analitik booking per paket Wave B aktif pada exact source
+  `7d82f308da02357fd4de3677b96e81fd53be0424`, immutable release
+  `20260828180149-7d82f30`, dengan rollback kompatibel
+  `20260828174039-806adbe`. Owner kini memperoleh periode bulan berjalan dan
+  custom, metrik eligible/mapped/unmapped yang direkonsiliasi, breakdown serta
+  drilldown paket, export CSV, scope tenant/cabang/resource, dan cache ETag.
+  Exact tree lulus PHP 1.274/1.274 (14.344 assertion), focused 17/17 (174),
+  TypeScript, build, Playwright desktop 3/3 dan mobile 2/2 dengan satu skip
+  terkontrol, changed-file Pint, serta audit dependency nol. Fresh encrypted
+  backup, checksum, disposable restore, 0 pending migration, service/journal,
+  public/security smoke 3/3, dan production read canary 32/32 juga lulus.
+  Canary memverifikasi `eligible = mapped + unmapped`, reconciliation, serta
+  isolation seluruh scope tanpa mutasi. Status `CONFIRMED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`;
+  authenticated Owner/Staff UAT untuk ETag HTTP, month/custom, CSV, drilldown,
+  dan rekonsiliasi nyata masih pending karena credential bridge lokal belum
+  aktif.
 
 - Release kumulatif S319-S322 aktif pada exact source
   `806adbe44b5d5ee2a2437fb3f066effd73c49b67`, immutable release
