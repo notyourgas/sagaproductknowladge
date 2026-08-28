@@ -74,9 +74,10 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 - Checkout publik tetap `PRODUCTION_READINESS_BLOCKED` hanya karena UAT 15
   langkah masih 0/15 dan release sign-off belum lengkap. Nol payment intent
   dibuat saat deployment acceptance.
-- Release aktif `20260829-b6265cb` dengan exact source
-  `b6265cbfc4a69be6b7850897205fd6d105ba8081` melayani production;
-  rollback langsung `20260829-2f4dbf2` dipertahankan. Owner memiliki jalur UAT
+- Release aktif `20260829-e97da17` dengan exact source
+  `e97da17473e2f232de183954a5c292953548c34f` melayani production;
+  rollback langsung `20260829-b6265cb` dipertahankan. Hotfix menutup crash
+  keranjang saat peringatan batas total UAT tampil. Owner memiliki jalur UAT
   pembayaran nyata yang privat, signed, recent-auth, satu-link-satu-order,
   gateway-only, maksimal Rp100.000 termasuk ongkir, dan maksimal tiga link per
   hari. Capability tidak membuka checkout publik dan belum digunakan untuk

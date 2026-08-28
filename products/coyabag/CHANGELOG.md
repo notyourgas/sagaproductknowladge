@@ -4,6 +4,21 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-29 - Controlled UAT cart recovery hotfix deployed
+
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /
+  NOT_PRODUCTION_ACTIVATED`; exact source
+  `e97da17473e2f232de183954a5c292953548c34f`, immutable release
+  `20260829-e97da17`, dan rollback `20260829-b6265cb`.
+- Keranjang controlled UAT tidak lagi masuk recovery screen ketika total awal
+  melewati Rp100.000. Peringatan batas tampil, promo terverifikasi dapat
+  menurunkan total, dan flow Detail dapat dilanjutkan.
+- Browser production desktop/mobile, 216 storefront test, 472 Laravel test,
+  build, dependency audit, backup, readiness, workers, log gate, dan public
+  smoke lulus. Tidak ada order atau payment intent dibuat saat acceptance.
+- Checkout publik tetap fail-closed; `launch_uat` dan `release_signoff` tetap
+  blocker sampai UAT transaksi nyata serta persetujuan owner selesai.
+
 ## 2026-08-29 - Controlled real payment UAT access deployed
 
 - Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /

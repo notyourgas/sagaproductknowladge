@@ -12,12 +12,12 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-29T01:55:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-29 |
 | Branch aktif | `codex/coyabag-uat-20260829` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | `a10eaeb` |
-| Informasi terakhir disinkronkan | COYABAG controlled real payment UAT access. |
-| Status sinkronisasi | Release `20260829-b6265cb`; `PRODUCTION_DEPLOYED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`. |
+| Informasi terakhir disinkronkan | COYABAG controlled UAT cart recovery hotfix. |
+| Status sinkronisasi | Release `20260829-e97da17`; `PRODUCTION_DEPLOYED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`. |
 
 ## SagaBook Wave B package analytics
 
@@ -47,8 +47,10 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 ## COYABAG controlled real payment UAT
 
-- Exact source `b6265cbfc4a69be6b7850897205fd6d105ba8081` aktif pada release
-  `20260829-b6265cb`, dengan rollback `20260829-2f4dbf2`.
+- Exact source `e97da17473e2f232de183954a5c292953548c34f` aktif pada release
+  `20260829-e97da17`, dengan rollback `20260829-b6265cb`.
+- Recovery screen keranjang pada kondisi total UAT over-limit sudah diperbaiki;
+  peringatan, promo, dan flow Detail lulus browser production desktop/mobile.
 - Owner-only capability UAT nyata, one-link-one-order, gateway-only, Rp100.000,
   dan tiga link per hari sudah production-deployed. Public checkout tetap
   fail-closed.

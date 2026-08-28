@@ -25,9 +25,10 @@ diterapkan karena seluruhnya belum dipetakan (`applied=false`). Status
 `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`;
 authenticated Owner/Staff UAT dan mapping legacy masih pending.
 
-COYABAG release `20260829-b6265cb` menjalankan exact source
-`b6265cbfc4a69be6b7850897205fd6d105ba8081`; rollback
-`20260829-2f4dbf2` tersedia. Launch Control menyediakan capability owner-only
+COYABAG release `20260829-e97da17` menjalankan exact source
+`e97da17473e2f232de183954a5c292953548c34f`; rollback
+`20260829-b6265cb` tersedia. Hotfix menutup recovery screen keranjang saat
+peringatan total UAT melebihi batas muncul. Launch Control menyediakan capability owner-only
 untuk satu transaksi UAT SagaDev nyata: recent-auth, signed, 5-30 menit,
 satu-link-satu-order, gateway-only, maksimal Rp100.000 termasuk ongkir, dan
 maksimal tiga link per hari. Public checkout tetap

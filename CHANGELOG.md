@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-29 - COYABAG controlled UAT cart hotfix sync
+
+- Ringkasan: menyinkronkan hotfix recovery screen keranjang ketika total awal
+  controlled UAT melewati batas Rp100.000.
+- Provenance: exact source `e97da17473e2f232de183954a5c292953548c34f`,
+  immutable release `20260829-e97da17`, rollback `20260829-b6265cb`.
+- Evidence: browser production desktop/mobile, 216 storefront test, 472
+  Laravel test, build/audit, backup, readiness, worker, log, dan public smoke.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /
+  NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+- Production berubah: ya untuk render checkout UAT; public commerce tetap
+  fail-closed dan acceptance tidak membuat order atau payment intent.
+- Dokumen terdampak: Product/changelog COYABAG, portfolio, master knowledge,
+  root changelog, dan sync status.
+
 ## 2026-08-29 - SagaBook Wave B production activation sync
 
 - Ringkasan: menyinkronkan aktivasi production analitik booking per paket,

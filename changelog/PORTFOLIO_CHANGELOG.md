@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-08-29 - COYABAG controlled UAT cart hotfix
+
+- Exact source `e97da17473e2f232de183954a5c292953548c34f` aktif pada immutable
+  release `20260829-e97da17`; rollback `20260829-b6265cb` tersedia.
+- Recovery screen pada keranjang UAT over-limit ditutup. Peringatan batas,
+  promo, dan handoff ke Detail kini lulus desktop/mobile dengan katalog live.
+- Checkout publik tetap fail-closed dan tidak ada order/payment intent dibuat
+  saat acceptance. Readiness tetap 40/42 sampai UAT nyata dan sign-off.
+
 ## 2026-08-29 - SagaBook Wave B package analytics production activation
 
 - Exact source `7d82f308da02357fd4de3677b96e81fd53be0424` aktif pada release
