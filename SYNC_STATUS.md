@@ -12,12 +12,32 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-28T07:00:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-28T08:00:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
-| Informasi terakhir disinkronkan | SagaView S326 separate physical mirror guard. |
+| Informasi terakhir disinkronkan | SagaView S327 immutable release directory guard. |
 | Status sinkronisasi | SagaView `CONFIRMED / PUSHED / DEVOPS_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED / PRODUCTION_UNCHANGED`; sinkronisasi canonical `main` menunggu worktree main kembali bersih. |
+
+## SagaView S327 immutable release directory guard
+
+- Exact pushed source `fd554fa47c669a8c62dde1e13d63d166ea71dced`
+  menolak output atau mirror nonempty sebelum temp, build, dan write.
+- RED–GREEN, focused 3/19, regresi release/custody 10/88, syntax,
+  npm/Composer audit nol, clean commit, serta remote exact lulus.
+- Probe S325 exit 1, mirror tidak dibuat, dan tiga file primary tetap
+  checksum-identik. Media terpisah terotorisasi, artifact exact S327,
+  backup/restore, rehearsal, UAT, dan approval deploy masih pending.
+
+## File yang berubah pada sinkronisasi ini (SagaView S327)
+
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaView S326 separate physical mirror guard
 

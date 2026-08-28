@@ -1,6 +1,21 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 28 Agustus 2026 07:00 WIB
+Evidence cut-off: 28 Agustus 2026 08:00 WIB
+
+S327 immutable release directory guard: exact pushed source
+`fd554fa47c669a8c62dde1e13d63d166ea71dced` menutup celah builder yang
+sebelumnya dapat memakai ulang direktori output atau mirror berisi artifact
+lama dan menimpa manifest/salinan historis. Output dan mirror kini harus belum
+ada atau kosong; kondisi nonempty ditolak sebelum temp, build, archive, bundle,
+manifest, atau copy.
+
+RED 1 test gagal lalu GREEN 3/19 assertion lulus; regresi release/custody
+10/88 assertion, syntax PowerShell, npm/Composer audit nol, diff, clean commit,
+push, dan remote exact lulus. Probe exact commit terhadap S325 exit 1, guard
+terdeteksi, mirror tidak dibuat, dan tiga file primary tetap checksum-identik.
+Status `PUSHED / DEVOPS_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED / PRODUCTION_UNCHANGED`. Gap
+berikutnya: media terpisah terotorisasi dan artifact exact S327.
 
 S326 separate physical mirror guard: exact pushed source
 `843ad42cf6db4e558dd4f464c524b4781b625e34` memperbaiki artifact builder yang

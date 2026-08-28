@@ -1,5 +1,22 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-28 - SagaView S327 immutable directory guard sync
+
+- Ringkasan: menyinkronkan guard builder yang menolak output atau mirror
+  nonempty sebelum build/write agar artifact historis tidak tertimpa.
+- Alasan: direktori release lama dan manifest checksum harus immutable serta
+  tidak boleh menjadi target build berikutnya.
+- Produk/area: SagaView release operations, artifact integrity, security, QA,
+  dan provenance.
+- Klasifikasi: `CONFIRMED / PUSHED / DEVOPS_VALIDATED /
+  SECURITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  RELEASE_BLOCKED / PRODUCTION_UNCHANGED`; exact source
+  `fd554fa47c669a8c62dde1e13d63d166ea71dced`.
+- RED–GREEN, focused 3/19, regresi 10/88 assertion, negative probe checksum,
+  syntax, npm/Composer audit nol, clean commit, dan remote exact lulus.
+- Dokumen terdampak: Product, feature ledger, changelog SagaView, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-08-28 - SagaView S326 physical mirror guard sync
 
 - Ringkasan: menyinkronkan guard builder yang menolak primary dan mirror pada

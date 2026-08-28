@@ -1,6 +1,23 @@
 # SagaView Product Knowledge
 
-Updated: 28 Agustus 2026 07:00 WIB
+Updated: 28 Agustus 2026 08:00 WIB
+
+SagaView S327 exact source
+`fd554fa47c669a8c62dde1e13d63d166ea71dced` sudah `PUSHED /
+DEVOPS_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED / PRODUCTION_UNCHANGED`. Artifact
+builder sekarang menolak output atau mirror yang sudah berisi file sebelum
+membuat temp directory, menjalankan build, atau menulis artifact. Direktori
+release lama tidak lagi dapat dipakai ulang sehingga manifest dan salinan
+historis tidak tertimpa.
+
+RED membuktikan kontrak baru gagal 1 test; GREEN lulus 3/19 assertion dan
+regresi release/custody lulus 10/88 assertion. Probe exact commit terhadap
+primary S325 menghasilkan exit 1 dengan guard aktif, tidak membuat path mirror,
+dan mempertahankan tiga file beserta SHA-256-nya. Syntax PowerShell, npm audit
+nol vulnerability, Composer audit nol advisory, clean commit, push, dan remote
+exact lulus. Artifact exact S327 pada media terpisah terotorisasi masih wajib;
+production tetap S311.
 
 SagaView S326 exact source
 `843ad42cf6db4e558dd4f464c524b4781b625e34` sudah `PUSHED /

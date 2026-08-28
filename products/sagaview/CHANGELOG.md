@@ -1,5 +1,23 @@
 # SagaView Changelog
 
+## 2026-08-28 - S327 immutable release directory guard
+
+- Klasifikasi: `CONFIRMED / PUSHED / DEVOPS_VALIDATED /
+  SECURITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  RELEASE_BLOCKED / PRODUCTION_UNCHANGED`.
+- Before: builder dapat diarahkan ke output atau mirror nonempty sehingga
+  `SHA256SUMS` dan salinan artifact historis berisiko tertimpa.
+- After: exact source `fd554fa47c669a8c62dde1e13d63d166ea71dced`
+  mewajibkan kedua direktori belum ada atau kosong dan menolak reuse sebelum
+  temp directory, build, archive, bundle, manifest, atau copy dibuat.
+- Acceptance: RED 1 test gagal; GREEN focused 3/19 dan regresi
+  release/custody 10/88 assertion lulus. Probe S325 exit 1, guard cocok,
+  mirror tidak dibuat, dan tiga file primary tetap checksum-identik. Syntax,
+  npm audit, Composer audit, diff, clean commit, push, dan remote exact lulus.
+- Boundary: tidak ada API, database, migration, customer data, payment,
+  artifact baru, deploy, activation, atau perubahan produk lain. Media custody
+  terpisah dan artifact exact S327 masih pending; production tetap S311.
+
 ## 2026-08-28 - S326 separate physical mirror guard
 
 - Klasifikasi: `CONFIRMED / PUSHED / DEVOPS_VALIDATED /

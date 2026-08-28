@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-28 - SagaView S327 immutable release directory guard
+
+- Exact pushed source `fd554fa47c669a8c62dde1e13d63d166ea71dced`
+  membuat artifact builder menolak output atau mirror nonempty sebelum build
+  dan write, sehingga release lama tidak tertimpa.
+- RED–GREEN, focused 3/19, regresi release/custody 10/88, probe checksum tiga
+  file tetap identik, syntax, dan dependency audit nol lulus.
+- Status `PUSHED / DEVOPS_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED / PRODUCTION_UNCHANGED`; media
+  custody terpisah dan artifact exact S327 masih wajib.
+
 ## 2026-08-28 - SagaView S326 separate physical mirror guard
 
 - Exact pushed source `843ad42cf6db4e558dd4f464c524b4781b625e34`
