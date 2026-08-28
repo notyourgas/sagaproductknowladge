@@ -1,5 +1,23 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-29 - SagaBook styled XLSX production activation sync
+
+- Ringkasan: mengaktifkan workbook export multi-sheet yang rapi, typed,
+  formula-safe, mudah difilter/dicetak, serta memisahkan closing berdasarkan
+  ringkasan, keuangan, sesi/stok, audit/revisi, dan kamus status.
+- Provenance: exact cumulative source
+  `9a382520ccbfe8d3a8ebea0d64e7dfffc5be9e09`, immutable release
+  `20260828220429-9a38252`, rollback `20260828210027-91545d1`.
+- Evidence: PHP 1.282/1.282 (14.404), focused workbook 3/3 (31), browser
+  closing/report 12/12, TypeScript/build, dependency audit nol, openpyxl,
+  encrypted backup/disposable restore, verifier 23/23, canary 32/32 scope,
+  migration pending 0, journal 0 error, serta smoke/security 3/3.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+  BUSINESS_READY=false`; authenticated UAT belum karena bridge lokal tidak
+  aktif dan percobaan preflight tidak membaca credential atau memutasi data.
+- Dokumen terdampak: Product, Dossier, feature ledger/changelog SagaBook,
+  portfolio, master knowledge, root changelog, dan sync status.
+
 ## 2026-08-29 - SagaBook S341-S344 production activation sync
 
 - Ringkasan: mengaktifkan closing manual-share, rekap sesi/keuangan harian,
