@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-28 - SagaView S328 network storage fail-closed
+
+- Exact pushed source `7ab33b352050a76486327830ed0cfeefd0a025ce`
+  membuat artifact builder menolak network share yang identitas disk fisiknya
+  tidak dapat dibuktikan sebelum build atau write.
+- RED–GREEN, focused 4/22, regresi release/custody 11/91, probe tanpa direktori
+  baru, syntax, dan dependency audit nol lulus.
+- Status `PUSHED / DEVOPS_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED / PRODUCTION_UNCHANGED`; media
+  lokal terpisah terotorisasi dan artifact exact S328 masih wajib.
+
 ## 2026-08-28 - SagaView S327 immutable release directory guard
 
 - Exact pushed source `fd554fa47c669a8c62dde1e13d63d166ea71dced`

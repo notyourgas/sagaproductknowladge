@@ -1,5 +1,22 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-28 - SagaView S328 network storage guard sync
+
+- Ringkasan: menyinkronkan guard builder yang menolak network share tanpa bukti
+  identitas disk fisik sebelum build/write.
+- Alasan: label root jaringan tidak cukup untuk membuktikan bahwa primary dan
+  mirror berada pada media custody fisik yang terpisah.
+- Produk/area: SagaView release operations, storage identity, security, QA,
+  dan provenance.
+- Klasifikasi: `CONFIRMED / PUSHED / DEVOPS_VALIDATED /
+  SECURITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  RELEASE_BLOCKED / PRODUCTION_UNCHANGED`; exact source
+  `7ab33b352050a76486327830ed0cfeefd0a025ce`.
+- RED–GREEN, focused 4/22, regresi 11/91 assertion, negative probe tanpa write,
+  syntax, npm/Composer audit nol, clean commit, dan remote exact lulus.
+- Dokumen terdampak: Product, feature ledger, changelog SagaView, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-08-28 - SagaView S327 immutable directory guard sync
 
 - Ringkasan: menyinkronkan guard builder yang menolak output atau mirror

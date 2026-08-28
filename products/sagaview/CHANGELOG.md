@@ -1,5 +1,24 @@
 # SagaView Changelog
 
+## 2026-08-28 - S328 unverifiable network storage fail-closed
+
+- Klasifikasi: `CONFIRMED / PUSHED / DEVOPS_VALIDATED /
+  SECURITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  RELEASE_BLOCKED / PRODUCTION_UNCHANGED`.
+- Before: network share dapat diberi identitas root tersendiri tanpa bukti disk
+  fisik yang menyimpan artifact.
+- After: exact source `7ab33b352050a76486327830ed0cfeefd0a025ce`
+  menolak network share sebelum pemeriksaan direktori, temp, build, atau write;
+  volume lokal harus terpetakan tepat ke satu disk fisik.
+- Acceptance: RED 1 test gagal; GREEN focused 4/22 dan regresi
+  release/custody 11/91 assertion lulus. Probe exact commit exit 1, guard cocok,
+  serta output/mirror tidak dibuat. Syntax, npm audit, Composer audit, diff,
+  clean commit, push, dan remote exact lulus.
+- Boundary: tidak ada API, database, migration, customer data, payment,
+  artifact baru, deploy, activation, atau perubahan produk lain. Media lokal
+  terpisah terotorisasi dan artifact exact S328 masih pending; production tetap
+  S311.
+
 ## 2026-08-28 - S327 immutable release directory guard
 
 - Klasifikasi: `CONFIRMED / PUSHED / DEVOPS_VALIDATED /

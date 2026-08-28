@@ -1,6 +1,20 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 28 Agustus 2026 08:00 WIB
+Evidence cut-off: 28 Agustus 2026 09:00 WIB
+
+S328 unverifiable network storage fail-closed: exact pushed source
+`7ab33b352050a76486327830ed0cfeefd0a025ce` menolak network share sebagai
+lokasi primary atau mirror karena disk fisiknya tidak dapat dibuktikan oleh
+builder lokal. Gate custody sekarang hanya menerima volume lokal yang berhasil
+dipetakan tepat ke satu disk fisik.
+
+RED 1 test gagal lalu GREEN 4/22 assertion lulus; regresi release/custody
+11/91 assertion, syntax PowerShell, npm/Composer audit nol, diff, clean commit,
+push, dan remote exact lulus. Probe exact commit exit 1 dengan guard terdeteksi
+serta tanpa membuat output atau mirror. Status `PUSHED / DEVOPS_VALIDATED /
+SECURITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+RELEASE_BLOCKED / PRODUCTION_UNCHANGED`. Gap berikutnya: media lokal terpisah
+yang terotorisasi dan artifact exact S328.
 
 S327 immutable release directory guard: exact pushed source
 `fd554fa47c669a8c62dde1e13d63d166ea71dced` menutup celah builder yang
