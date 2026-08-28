@@ -1,5 +1,25 @@
 # SagaBook Changelog
 
+## 2026-08-28 - S312 production deployment and activation
+
+- Exact source `88b8ea9ad9ce03f91d3d9099cffcb71e9f06caaf` di-fast-forward
+  ke `main` dan aktif pada immutable release `20260828054737-88b8ea9`;
+  rollback `20260827210830-a9127dc` tersedia.
+- Jalur GitHub Actions dicoba ulang tetapi tetap berhenti sebelum step. Release
+  dilanjutkan melalui pipeline local-VPS resmi setelah fresh encrypted backup
+  `20260828T053727Z`, offsite checksum round-trip, disposable restore tiga
+  database, serta candidate contract exact lulus.
+- Archive, complete git bundle, manifest, dan recovery copy lokal/VPS
+  tervalidasi. Full PHPUnit, production build, dashboard persistence unit dan
+  browser, serta npm/Composer audit nol lulus sebelum upload.
+- Verifier independen 19/19 lulus: exact main/release/commit stabil, rollback,
+  manifest, nginx/queue/PHP aktif, maintenance off, 0 migration pending, 0
+  queue error, post-payment guard tersedia, serta public smoke/security 3/3.
+- Operational WhatsApp tetap tersuspensi; narrow provider-transition exception
+  hanya menerima dua delivery lama dan satu failed job 24 jam. Status
+  `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated payment UAT,
+  provider pengganti, dan `BUSINESS_READY` masih pending.
+
 ## 2026-08-28 - S312 immutable artifact rehearsal blocked safely
 
 - Rehearsal exact source `88b8ea9ad9ce03f91d3d9099cffcb71e9f06caaf`

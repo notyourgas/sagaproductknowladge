@@ -1,38 +1,24 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 28 Agustus 2026 08:05 WIB
+Evidence cut-off: 28 Agustus 2026 12:59 WIB
 
-Guard log return pascapembayaran S312 latest exact source
-`88b8ea9ad9ce03f91d3d9099cffcb71e9f06caaf` (base `bc03fa22`) telah `CONFIRMED / PUSHED /
-QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
-IMPLEMENTED_NOT_DEPLOYED`. Verifier read-only memindai Nginx combined log dari
-timestamp immutable release dan hanya mengeluarkan agregat public-safe. Request
-tenantless, 404 route detail/transfer/QRIS tenant-scoped, 5xx relevan, input
-tidak terbaca, dan format log tidak dikenali gagal tertutup; window tenang
-dilaporkan tanpa mengklaim UAT pembayaran. Focused 22/22 (303 assertion), full
-PHP 1.200/1.200 (13.529), production build 5.133 modul, critical typecheck,
-Pint, PowerShell/PHP parse, npm/Composer audit nol, serta scan ephemeral log
-production 14.211 baris lulus dengan 0 request tenantless, 0 scoped 404, dan 0
-5xx relevan. Correction fail-closed memeriksa helper sebelum parsing dan
-mengubah helper unavailable, output non-JSON, schema salah, atau kontrak tidak
-public-safe menjadi failed check terstruktur tanpa raw output. Focused
-correction 5/5 (133), full PHP 1.200/1.200 (13.535), build 5.133 modul,
-critical typecheck, touched-file Pint, parser, design audit 26/0, serta audit
-dependency nol lulus. Rehearsal current production menyelesaikan 19 check:
-17 gate active release hijau dan 2 gate helper kandidat merah sesuai status
-belum dideploy. Production tetap exact `a9127dc4595f2d8d7e60094ac330cac76448b255`
-/ release `20260827210830-a9127dc`; merge, release, authenticated UAT, dan pilot
-masih terbuka, sehingga `BUSINESS_READY=false`.
+Guard log return pascapembayaran S312 exact source
+`88b8ea9ad9ce03f91d3d9099cffcb71e9f06caaf` telah `CONFIRMED / PUSHED /
+QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED`. Immutable release `20260828054737-88b8ea9` aktif dengan
+rollback `20260827210830-a9127dc`. Verifier hanya mengeluarkan agregat
+public-safe dan gagal tertutup pada request tenantless, scoped 404, 5xx,
+helper/output/schema/kontrak invalid, serta log tidak terbaca.
 
-Release artifact rehearsal untuk exact S312 berhenti fail-closed sebelum file
-ditulis. Dua volume internal tidak memenuhi independensi disk fisik, headroom
-staging+salinan tidak memenuhi kontrak default, dan media fisik kedua yang
-tersedia tidak sehat/kompatibel untuk evidence immutable. Ambang tidak
-diturunkan dan tidak ada cleanup, repair/format media, credential/customer
-access, merge, atau deploy. GitHub Actions terverifikasi tidak memulai step
-karena billing/spending limit. Status tambahan S312
-`RELEASE_ARTIFACT_BLOCKED / IMPLEMENTED_NOT_DEPLOYED`; production S311 tetap
-17/17 hijau pada exact `a9127dc` / `20260827210830-a9127dc`.
+Fresh encrypted backup `20260828T053727Z`, checksum offsite, disposable restore
+tiga database, candidate contract, archive + git bundle exact, recovery copy
+lokal/VPS, full test/build/browser/dependency gate, dan atomic release lulus.
+Verifier independen 19/19 mengonfirmasi remote main dan active release stabil,
+manifest, rollback, tiga service, maintenance off, 0 migration pending, 0 queue
+error, guard tersedia, post-payment window public-safe, serta smoke/security
+headers 3/3. Window setelah release mempunyai 0 request relevan dan tidak
+dianggap authenticated payment UAT. WhatsApp operasional tetap tersuspensi
+melalui narrow provider-transition exception; `BUSINESS_READY=false`.
 
 Tenant-safe post-payment return dan provider-transition release hardening S309-S311
 exact source `a9127dc4595f2d8d7e60094ac330cac76448b255` telah `CONFIRMED /

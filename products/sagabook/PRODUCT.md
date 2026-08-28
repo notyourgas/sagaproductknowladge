@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 28 Agustus 2026 08:05 WIB
-Evidence status: post-payment tenant-safe return is production-activated; observability guard S312 is implemented but not deployed; operational WhatsApp is temporarily suspended for provider transition
+Updated: 28 Agustus 2026 12:59 WIB
+Evidence status: post-payment tenant-safe return and observability guard S312 are production-activated; operational WhatsApp is temporarily suspended for provider transition
 
 ## Tujuan dokumen
 
@@ -16,32 +16,24 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
-- Guard observability return pembayaran S312 tersedia pada latest exact pushed
-  source `88b8ea9ad9ce03f91d3d9099cffcb71e9f06caaf` (base
-  `bc03fa2202e5f08d767d3d19f3b014a6b960026f`). Verifier read-only mengubah
-  access log menjadi hitungan public-safe dan memblokir request tenantless,
-  404 route tenant-scoped, 5xx relevan, input tidak terbaca, serta format yang
-  tidak dikenali. Window tanpa request relevan tidak diklaim sebagai UAT.
-  Focused 22/22 (303 assertion), full PHP 1.200/1.200 (13.529), build 5.133
-  modul, critical typecheck, Pint, parser, dan dependency audit nol lulus.
-  Scan ephemeral terhadap log production sejak release aktif membaca 14.211
-  baris tanpa menemukan request tenantless, scoped 404, atau 5xx relevan.
-  Correction terbaru memeriksa ketersediaan helper sebelum parsing. Active
-  release lama yang belum membawa helper sekarang menghasilkan laporan JSON
-  public-safe dengan `guard_unavailable`, bukan exception parser; output
-  non-JSON atau kontrak helper invalid juga gagal tertutup tanpa menyalin raw
-  output. Focused correction 5/5 (133 assertion), full PHP 1.200/1.200
-  (13.535), build 5.133 modul, critical typecheck, touched-file Pint, parser,
-  design audit, dan dependency audit nol lulus. Rehearsal current production
-  menyelesaikan 19 check: 17 gate active release tetap hijau dan 2 gate helper
-  kandidat merah sesuai keadaan belum dideploy. Status `CONFIRMED / PUSHED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED / RELEASE_ARTIFACT_BLOCKED`. Rehearsal immutable
-  artifact berhenti sebelum menulis file: dua volume internal berada pada disk
-  fisik yang sama, headroom staging+salinan tidak memenuhi kontrak default,
-  dan media fisik kedua yang tersedia tidak sehat/kompatibel untuk evidence.
-  Ambang tidak diturunkan dan tidak ada media yang diperbaiki atau diformat.
-  Production tetap exact `a9127dc` / release
-  `20260827210830-a9127dc` dan `BUSINESS_READY=false`.
+- Guard observability return pembayaran S312 exact source
+  `88b8ea9ad9ce03f91d3d9099cffcb71e9f06caaf` aktif pada immutable release
+  `20260828054737-88b8ea9`, dengan rollback
+  `20260827210830-a9127dc`. Verifier read-only mengubah access log menjadi
+  hitungan public-safe serta gagal tertutup pada request tenantless, 404 route
+  tenant-scoped, 5xx relevan, input tidak terbaca, helper tidak tersedia, dan
+  format/kontrak invalid tanpa menyalin raw output.
+  Fresh encrypted backup `20260828T053727Z`, Google Drive checksum round-trip,
+  disposable restore tiga database, candidate contract, immutable archive,
+  complete git bundle, local/VPS source recovery, full release gates, dan
+  atomic activation lulus. Verifier independen 19/19 mengonfirmasi exact main,
+  release/commit stabil, manifest, rollback, service, maintenance off, 0
+  migration pending, 0 queue error, guard tersedia, serta public smoke dan
+  security headers 3/3. Window setelah deploy belum memiliki request return
+  pembayaran relevan, sehingga tidak diklaim sebagai authenticated payment
+  UAT. Status `CONFIRMED / PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`; operational WhatsApp tetap tersuspensi melalui narrow
+  provider-transition exception dan `BUSINESS_READY=false`.
 
 - Perbaikan return pascapembayaran S309 dan hardening release transisi provider
   aktif pada exact source `a9127dc4595f2d8d7e60094ac330cac76448b255`,

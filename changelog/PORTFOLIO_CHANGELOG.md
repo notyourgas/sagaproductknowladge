@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-28 - SagaBook S312 production deployment
+
+- Exact main `88b8ea9ad9ce03f91d3d9099cffcb71e9f06caaf` aktif pada
+  immutable release `20260828054737-88b8ea9`, rollback
+  `20260827210830-a9127dc` tersedia.
+- Fresh encrypted backup `20260828T053727Z`, offsite checksum, disposable
+  restore, candidate contract, archive/bundle exact, recovery lokal/VPS, full
+  release gate, dan atomic activation lulus.
+- Verifier independen 19/19, public smoke 3/3, dan security headers 3/3 lulus.
+  Operational WhatsApp tetap tersuspensi; authenticated payment UAT dan
+  `BUSINESS_READY` masih pending.
+
 ## 2026-08-28 - SagaView S331 production deployment
 
 - Exact source `0966bbd7fedaaa51bf67332139f07f7d2690553d` aktif pada
