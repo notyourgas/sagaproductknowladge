@@ -1,5 +1,27 @@
 # SagaView Changelog
 
+## 2026-08-28 - S342 bounded UAT storage probe
+
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; `BUSINESS_READY=false`.
+- Before: query WMI logical-disk pada preflight UAT dapat tidak selesai dan
+  menahan pemeriksaan kapasitas tanpa hasil yang dapat ditindaklanjuti.
+- After: tipe drive, filesystem, dan kapasitas dibaca melalui .NET
+  `DriveInfo`; identitas volume memakai probe maksimal lima detik, disimpan
+  hash-only, dan gagal secara fail-closed sebagai
+  `volume_identity_probe_failed`.
+- Security/privacy: drive letter divalidasi sebelum proses dijalankan; label
+  serta serial volume tidak ditulis ke evidence. Tidak ada foto, path folder,
+  output customer, credential, atau identifier tenant/device.
+- Provenance: exact Studio source
+  `55530d0a21529f05aaf8d1658801db0d26fb33e1` pada branch
+  `codex/s342-sagaview-uat-storage-probe` sudah dipush.
+- Evidence: red 1/19, green focused 20/20, full unit 258/258,
+  format/lint/typecheck, client/SSR build, bundle 312,7 KiB dari 450 KiB, npm
+  audit nol, diff check bersih, dan probe volume nyata selesai 92 ms.
+- Boundary: ruang C: 0,41 GiB dan D: 1,18 GiB tetap di bawah gate 10 GiB.
+  UAT fisik, deployment, activation, dan `BUSINESS_READY` tidak berubah.
+
 ## 2026-08-28 - S338-S341 editor resilience dan gallery accessibility
 
 - Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /

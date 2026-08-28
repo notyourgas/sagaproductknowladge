@@ -1,6 +1,23 @@
 # SagaView Product Knowledge
 
-Updated: 28 Agustus 2026 21:24 WIB
+Updated: 28 Agustus 2026 23:11 WIB
+
+SagaView Studio S342 exact pushed source
+`55530d0a21529f05aaf8d1658801db0d26fb33e1` berstatus `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`. UAT storage
+preflight tidak lagi bergantung pada query WMI logical-disk yang pada host
+Windows ini dua kali tidak selesai dalam batas 30 detik. Fixed-volume,
+filesystem, dan ruang bebas sekarang dibaca melalui .NET `DriveInfo`, sedangkan
+identitas volume diperoleh dengan probe maksimal lima detik dan hanya disimpan
+sebagai SHA-256. Kegagalan identitas volume menjadi blocker fail-closed.
+
+Focused contract 20/20 dan full unit 258/258 lulus; format, lint, typecheck,
+client/SSR build, bundle maksimum 312,7 KiB dari batas 450 KiB, serta npm audit
+nol vulnerability juga lulus. Probe volume nyata selesai 92 ms tanpa menyimpan
+label atau serial mentah. Gate kapasitas tetap jujur: C: 0,41 GiB dan D: 1,18
+GiB masih di bawah minimum 10 GiB, sehingga UAT fisik dan deployment kandidat
+Studio tetap ditahan. Tidak ada perubahan UI, foto/path/output customer,
+backend/API/database/payment, atau production.
 
 SagaView Studio S338-S341 exact pushed source
 `495dda492ea68f5e943a69aa5e6a1f4dbd474af2` berstatus `PUSHED /

@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-28 - SagaView S342 UAT storage probe reliability
+
+- Preflight UAT tidak lagi dapat tertahan tanpa batas pada query WMI disk;
+  pemeriksaan fixed NTFS dan kapasitas memakai .NET, sedangkan identitas volume
+  memakai probe lima detik dan hash-only.
+- Exact pushed source `55530d0a21529f05aaf8d1658801db0d26fb33e1`
+  lulus focused 20/20, full unit 258/258, build/budget, lint/typecheck, audit
+  dependency nol, dan probe volume nyata 92 ms.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED`; deploy tetap ditahan karena ruang maksimum 1,18 GiB
+  masih di bawah gate 10 GiB.
+
 ## 2026-08-28 - SagaView S338-S341 editor resilience
 
 - Reset editor kini membersihkan seluruh transform secara konsisten dan

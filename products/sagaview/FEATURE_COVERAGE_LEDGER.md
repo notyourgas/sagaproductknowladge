@@ -1,6 +1,22 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 28 Agustus 2026 21:24 WIB
+Evidence cut-off: 28 Agustus 2026 23:11 WIB
+
+S342 bounded UAT storage probe: exact pushed Studio source
+`55530d0a21529f05aaf8d1658801db0d26fb33e1` mengganti query WMI
+logical-disk yang dapat menggantung dengan .NET `DriveInfo` dan probe identitas
+volume maksimal lima detik. Identitas volume tetap hash-only; probe gagal
+menjadi blocker fail-closed dan tidak dapat lolos hanya karena drive letter
+sama.
+
+Red 1/19 membuktikan kontrak lama, lalu focused 20/20 dan full unit 258/258
+lulus bersama format, lint, typecheck, build client/SSR, bundle budget, npm
+audit nol, serta diff check. Probe volume nyata selesai 92 ms. Ledger lulus:
+storage probe bounded, fixed NTFS, kapasitas, volume revalidation, dan
+public-safe evidence. Belum lulus: kapasitas fisik; C: 0,41 GiB dan D: 1,18
+GiB masih di bawah minimum 10 GiB. Status `PUSHED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; satu gap berikutnya tetap
+menyediakan fixed NTFS minimal 10 GiB sebelum UAT kandidat dan deploy.
 
 S338-S341 editor resilience dan gallery accessibility: exact pushed Studio
 source `495dda492ea68f5e943a69aa5e6a1f4dbd474af2` menutup residual reset,

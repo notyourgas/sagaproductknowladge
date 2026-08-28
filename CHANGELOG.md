@@ -1,5 +1,24 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-28 - SagaView S342 UAT storage probe sync
+
+- Ringkasan: menyinkronkan probe fixed-volume UAT yang bounded, hash-only, dan
+  fail-closed sebagai penutup blocker tooling release.
+- Alasan: query WMI logical-disk dua kali tidak selesai dalam batas 30 detik,
+  sehingga preflight kapasitas tidak menghasilkan keputusan operasional.
+- Produk: SagaView Studio release harness saja; fitur baru tetap `HOLD`.
+- Provenance: exact pushed source
+  `55530d0a21529f05aaf8d1658801db0d26fb33e1`, branch
+  `codex/s342-sagaview-uat-storage-probe`.
+- Evidence: focused 20/20, full unit 258/258, format/lint/typecheck,
+  client/SSR build, bundle budget, npm audit nol, dan probe nyata 92 ms.
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
+- Production berubah: tidak. Blocker tersisa adalah fixed NTFS minimal 10 GiB;
+  ruang maksimum saat verifikasi 1,18 GiB.
+- Dokumen terdampak: Product, feature ledger/changelog SagaView, portfolio,
+  root changelog, dan sync status.
+
 ## 2026-08-28 - SagaView S338-S341 editor resilience sync
 
 - Ringkasan: menyinkronkan reset editor utuh, checkpoint draft lokal atomik,
