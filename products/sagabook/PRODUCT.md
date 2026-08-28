@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 28 Agustus 2026 06:12 WIB
+Updated: 28 Agustus 2026 07:09 WIB
 Evidence status: post-payment tenant-safe return is production-activated; observability guard S312 is implemented but not deployed; operational WhatsApp is temporarily suspended for provider transition
 
 ## Tujuan dokumen
@@ -16,8 +16,9 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Status production terbaru
 
-- Guard observability return pembayaran S312 tersedia pada exact pushed source
-  `bc03fa2202e5f08d767d3d19f3b014a6b960026f`. Verifier read-only mengubah
+- Guard observability return pembayaran S312 tersedia pada latest exact pushed
+  source `88b8ea9ad9ce03f91d3d9099cffcb71e9f06caaf` (base
+  `bc03fa2202e5f08d767d3d19f3b014a6b960026f`). Verifier read-only mengubah
   access log menjadi hitungan public-safe dan memblokir request tenantless,
   404 route tenant-scoped, 5xx relevan, input tidak terbaca, serta format yang
   tidak dikenali. Window tanpa request relevan tidak diklaim sebagai UAT.
@@ -25,7 +26,15 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   modul, critical typecheck, Pint, parser, dan dependency audit nol lulus.
   Scan ephemeral terhadap log production sejak release aktif membaca 14.211
   baris tanpa menemukan request tenantless, scoped 404, atau 5xx relevan.
-  Status `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  Correction terbaru memeriksa ketersediaan helper sebelum parsing. Active
+  release lama yang belum membawa helper sekarang menghasilkan laporan JSON
+  public-safe dengan `guard_unavailable`, bukan exception parser; output
+  non-JSON atau kontrak helper invalid juga gagal tertutup tanpa menyalin raw
+  output. Focused correction 5/5 (133 assertion), full PHP 1.200/1.200
+  (13.535), build 5.133 modul, critical typecheck, touched-file Pint, parser,
+  design audit, dan dependency audit nol lulus. Rehearsal current production
+  menyelesaikan 19 check: 17 gate active release tetap hijau dan 2 gate helper
+  kandidat merah sesuai keadaan belum dideploy. Status `CONFIRMED / PUSHED / LOCAL_VALIDATED /
   IMPLEMENTED_NOT_DEPLOYED`; production tetap exact `a9127dc` / release
   `20260827210830-a9127dc` dan `BUSINESS_READY=false`.
 

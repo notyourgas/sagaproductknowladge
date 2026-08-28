@@ -12,12 +12,38 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-28T06:12:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-28T07:09:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
-| Informasi terakhir disinkronkan | SagaBook S312 public-safe post-payment return log guard. |
-| Status sinkronisasi | SagaBook S312 `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; WhatsApp operasional tetap tersuspensi dan `BUSINESS_READY=false`. |
+| Informasi terakhir disinkronkan | SagaBook S312 fail-closed helper availability correction. |
+| Status sinkronisasi | SagaBook S312 latest source `88b8ea9a` `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; WhatsApp operasional tetap tersuspensi dan `BUSINESS_READY=false`. |
+
+## SagaBook S312 fail-closed helper availability correction
+
+- Latest exact pushed source `88b8ea9ad9ce03f91d3d9099cffcb71e9f06caaf`
+  mengganti exception parser saat helper belum tersedia menjadi failed check
+  JSON public-safe `guard_unavailable`. Output/schema/kontrak helper invalid
+  juga gagal tertutup tanpa menyalin raw output.
+- Focused correction 5/5 (133), full PHP 1.200/1.200 (13.535), build 5.133
+  modul, critical typecheck, touched-file Pint, parser, design audit 26/0, dan
+  audit dependency nol lulus.
+- Rehearsal read-only current production menyelesaikan 19 check: 17 gate active
+  release hijau dan dua gate helper kandidat merah karena helper S312 belum
+  dideploy. Active release S311 tetap production-activated menurut exact gate
+  rilisnya sendiri.
+- Status `IMPLEMENTED_NOT_DEPLOYED`; PR #38 terbuka dan production tetap exact
+  `a9127dc` / release `20260827210830-a9127dc`. Merge/deploy, authenticated UAT,
+  pilot, provider pengganti, dan `BUSINESS_READY` masih pending.
+
+## File yang berubah pada sinkronisasi correction S312
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook S312 post-payment return log guard
 

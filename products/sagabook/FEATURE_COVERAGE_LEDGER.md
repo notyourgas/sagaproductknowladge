@@ -1,9 +1,9 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 28 Agustus 2026 06:12 WIB
+Evidence cut-off: 28 Agustus 2026 07:09 WIB
 
-Guard log return pascapembayaran S312 exact source
-`bc03fa2202e5f08d767d3d19f3b014a6b960026f` telah `CONFIRMED / PUSHED /
+Guard log return pascapembayaran S312 latest exact source
+`88b8ea9ad9ce03f91d3d9099cffcb71e9f06caaf` (base `bc03fa22`) telah `CONFIRMED / PUSHED /
 QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
 IMPLEMENTED_NOT_DEPLOYED`. Verifier read-only memindai Nginx combined log dari
 timestamp immutable release dan hanya mengeluarkan agregat public-safe. Request
@@ -13,7 +13,14 @@ dilaporkan tanpa mengklaim UAT pembayaran. Focused 22/22 (303 assertion), full
 PHP 1.200/1.200 (13.529), production build 5.133 modul, critical typecheck,
 Pint, PowerShell/PHP parse, npm/Composer audit nol, serta scan ephemeral log
 production 14.211 baris lulus dengan 0 request tenantless, 0 scoped 404, dan 0
-5xx relevan. Production tetap exact `a9127dc4595f2d8d7e60094ac330cac76448b255`
+5xx relevan. Correction fail-closed memeriksa helper sebelum parsing dan
+mengubah helper unavailable, output non-JSON, schema salah, atau kontrak tidak
+public-safe menjadi failed check terstruktur tanpa raw output. Focused
+correction 5/5 (133), full PHP 1.200/1.200 (13.535), build 5.133 modul,
+critical typecheck, touched-file Pint, parser, design audit 26/0, serta audit
+dependency nol lulus. Rehearsal current production menyelesaikan 19 check:
+17 gate active release hijau dan 2 gate helper kandidat merah sesuai status
+belum dideploy. Production tetap exact `a9127dc4595f2d8d7e60094ac330cac76448b255`
 / release `20260827210830-a9127dc`; merge, release, authenticated UAT, dan pilot
 masih terbuka, sehingga `BUSINESS_READY=false`.
 

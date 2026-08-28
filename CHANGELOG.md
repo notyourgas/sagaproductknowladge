@@ -1,5 +1,23 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-28 - SagaBook S312 guard availability correction sync
+
+- Ringkasan: menyinkronkan koreksi fail-closed release verifier pada latest
+  exact pushed source `88b8ea9ad9ce03f91d3d9099cffcb71e9f06caaf`.
+- Alasan: active release lama yang belum membawa helper S312 sebelumnya
+  menghasilkan exception parser dan memutus laporan gate lain. Sekarang status
+  helper unavailable/output invalid menjadi failed check JSON public-safe.
+- Produk/area: SagaBook release verification, post-payment observability,
+  security, QA, dan production audit; tidak ada UI, API, database, provider,
+  WhatsApp, atau customer mutation.
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`. Production tetap
+  `a9127dc` / `20260827210830-a9127dc`; active release S311 tetap
+  `PRODUCTION_ACTIVATED` dan `BUSINESS_READY=false`.
+- Dokumen terdampak: Product, feature ledger/changelog SagaBook, portfolio,
+  root changelog, dan sync status. Master knowledge serta positioning tidak
+  berubah.
+
 ## 2026-08-28 - SagaBook S312 post-payment log guard sync
 
 - Ringkasan: menyinkronkan verifier read-only agregat untuk regresi return
