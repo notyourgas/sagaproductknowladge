@@ -1,5 +1,22 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-29 - SagaBook Wave B production activation sync
+
+- Ringkasan: menyinkronkan aktivasi production analitik booking per paket,
+  filter month/custom, reconciliation, drilldown, CSV, scope, dan ETag.
+- Provenance: exact source
+  `7d82f308da02357fd4de3677b96e81fd53be0424`, immutable release
+  `20260828180149-7d82f30`, rollback `20260828174039-806adbe`.
+- Evidence: PHP 1.274/1.274 (14.344), focused 17/17 (174), TypeScript/build,
+  browser desktop/mobile, dependency audit nol, fresh encrypted backup/restore,
+  migration pending 0, canary 32/32, service/journal, dan smoke/security 3/3.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+- Production berubah: ya. Authenticated Owner/Staff UAT masih pending karena
+  credential bridge lokal tidak aktif; tidak ada backfill atau mutasi data.
+- Dokumen terdampak: Product, Dossier, feature ledger/changelog SagaBook,
+  portfolio, master knowledge, root changelog, dan sync status.
+
 ## 2026-08-29 - SagaBook S319-S322 production activation sync
 
 - Ringkasan: menyinkronkan aktivasi production consumable add-on, rekap

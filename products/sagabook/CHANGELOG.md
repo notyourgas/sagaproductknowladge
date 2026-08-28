@@ -1,5 +1,23 @@
 # SagaBook Changelog
 
+## 2026-08-29 - Wave B analitik booking per paket production activation
+
+- Exact source `7d82f308da02357fd4de3677b96e81fd53be0424` aktif pada immutable
+  release `20260828180149-7d82f30`; rollback kompatibel
+  `20260828174039-806adbe` tersedia.
+- Owner mendapat filter bulan berjalan/custom, ringkasan
+  eligible/mapped/unmapped, reconciliation, drilldown paket, export CSV,
+  scope cabang/resource, dan cache ETag.
+- PHP 1.274/1.274 (14.344 assertion), focused 17/17 (174), TypeScript/build,
+  Playwright desktop 3/3 dan mobile 2/2 dengan satu skip terkontrol,
+  changed-file Pint, audit dependency nol, fresh encrypted backup/disposable
+  restore, 0 pending migration, service/journal, dan smoke/security 3/3 lulus.
+- Production read canary 32/32 memverifikasi seluruh scope, invariant
+  `eligible = mapped + unmapped`, serta reconciliation tanpa mutasi.
+  Authenticated Owner/Staff UAT belum dapat dijalankan karena credential bridge
+  lokal tidak aktif. Status `CONFIRMED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+
 ## 2026-08-29 - S319-S322 production activation
 
 - Kandidat kumulatif exact source

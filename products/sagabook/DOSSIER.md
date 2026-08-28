@@ -7,6 +7,21 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Wave B analitik booking per paket exact source
+  `7d82f308da02357fd4de3677b96e81fd53be0424` aktif pada immutable release
+  `20260828180149-7d82f30`; rollback `20260828174039-806adbe` kompatibel.
+  Surface Owner menyediakan filter bulan/custom, ringkasan
+  eligible/mapped/unmapped, reconciliation, drilldown per paket, CSV, scope
+  cabang/resource, dan ETag. Gate exact tree: PHP 1.274/1.274 (14.344),
+  focused 17/17 (174), TypeScript/build, browser desktop 3/3 dan mobile 2/2
+  dengan satu skip terkontrol, changed-file Pint, dependency audit nol, fresh
+  encrypted backup/disposable restore, 0 pending migration, service/journal,
+  public/security smoke 3/3, serta read canary 32/32 tanpa mutasi. Invariant
+  `eligible = mapped + unmapped` dan reconciliation seluruh scope lulus.
+  Status `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+  BUSINESS_READY=false`; authenticated Owner/Staff UAT nyata belum dijalankan
+  karena credential bridge lokal tidak aktif.
+
 - Release kumulatif S319-S322 exact source
   `806adbe44b5d5ee2a2437fb3f066effd73c49b67` aktif pada immutable release
   `20260828174039-806adbe`; rollback `20260828153427-21d87e9` kompatibel.

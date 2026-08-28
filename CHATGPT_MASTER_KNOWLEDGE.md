@@ -1,5 +1,17 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+SagaBook Wave B analitik booking per paket aktif pada exact source
+`7d82f308da02357fd4de3677b96e81fd53be0424`, immutable release
+`20260828180149-7d82f30`, dengan rollback `20260828174039-806adbe`.
+Month/custom, eligible/mapped/unmapped reconciliation, drilldown, CSV,
+branch/resource scope, dan ETag kini aktif. PHP 1.274/1.274 (14.344), focused
+17/17 (174), TypeScript/build, browser desktop/mobile, audit dependency nol,
+fresh encrypted backup/disposable restore, 0 pending migration,
+service/journal, public/security smoke 3/3, serta production canary 32/32
+lulus tanpa mutasi. Status `CONFIRMED / PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED / BUSINESS_READY=false`; authenticated Owner/Staff UAT
+masih pending karena credential bridge lokal tidak aktif.
+
 SagaBook S319-S322 aktif pada exact source
 `806adbe44b5d5ee2a2437fb3f066effd73c49b67`, immutable release
 `20260828174039-806adbe`, dengan rollback `20260828153427-21d87e9`. Wizard

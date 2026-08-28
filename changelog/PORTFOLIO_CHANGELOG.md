@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-29 - SagaBook Wave B package analytics production activation
+
+- Exact source `7d82f308da02357fd4de3677b96e81fd53be0424` aktif pada release
+  `20260828180149-7d82f30`; rollback `20260828174039-806adbe` tersedia.
+- Analitik booking per paket kini mendukung month/custom, reconciliation
+  eligible/mapped/unmapped, drilldown, CSV, branch/resource scope, dan ETag.
+- Full test/build/audit, fresh encrypted backup/restore, 0 migration pending,
+  service/journal, smoke/security 3/3, dan read canary 32/32 lulus tanpa
+  mutasi. Authenticated Owner/Staff UAT belum karena credential bridge lokal
+  tidak aktif; `BUSINESS_READY=false`. Produk lain tidak berubah.
+
 ## 2026-08-29 - SagaBook S319-S322 production activation
 
 - Exact source `806adbe44b5d5ee2a2437fb3f066effd73c49b67` aktif pada release

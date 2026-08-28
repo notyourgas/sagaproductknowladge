@@ -12,12 +12,24 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-29T01:01:00+07:00 |
-| Branch aktif | `codex/s319-s322-production-knowledge-final` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-29T01:22:00+07:00 |
+| Branch aktif | `codex/s340-sagabook-wave-b-production-knowledge` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `da4eb91` |
-| Informasi terakhir disinkronkan | SagaBook S319-S322 production activation dan residual mapping legacy. |
-| Status sinkronisasi | Release `20260828174039-806adbe`; `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `febd51c` |
+| Informasi terakhir disinkronkan | SagaBook Wave B analitik booking per paket production activation. |
+| Status sinkronisasi | Release `20260828180149-7d82f30`; `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`. |
+
+## SagaBook Wave B package analytics
+
+- Exact source `7d82f308da02357fd4de3677b96e81fd53be0424` aktif pada release
+  `20260828180149-7d82f30`; rollback `20260828174039-806adbe` kompatibel.
+- Full PHP 1.274/1.274 (14.344), focused 17/17 (174), TypeScript/build,
+  desktop/mobile browser gate, dependency audit nol, fresh encrypted
+  backup/disposable restore, 0 pending migration, service/journal, serta
+  public/security smoke 3/3 lulus.
+- Read canary 32/32 memverifikasi seluruh scope dan invariant
+  eligible/mapped/unmapped tanpa mutasi. Authenticated Owner/Staff UAT belum
+  karena credential bridge lokal tidak aktif; `BUSINESS_READY=false`.
 
 ## SagaBook S319-S322 production activation
 
