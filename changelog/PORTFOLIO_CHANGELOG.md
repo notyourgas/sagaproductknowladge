@@ -8,7 +8,7 @@
 - Permission editor dan copy dipisahkan. Staff hanya dapat merender booking
   cabang delegasinya; template/data invalid gagal tertutup dan audit tidak
   menyimpan isi pesan, PII, token, atau Link Drive.
-- Exact source `9f031c073cc9de3e2cba8a4ba2e22be2a701176c` telah dipush dan lulus
+- Exact source `a32b242d464b5149b812fe03b77204443513d08c` telah dipush dan lulus
   backend/UI contract, workflow regression, typecheck, build, format, syntax,
   serta diff check.
 - Status `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /

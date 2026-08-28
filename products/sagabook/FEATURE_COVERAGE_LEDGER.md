@@ -3,7 +3,7 @@
 Evidence cut-off: 28 Agustus 2026 13:07 WIB
 
 Salin template WhatsApp Booking Detail S313 exact source
-`9f031c073cc9de3e2cba8a4ba2e22be2a701176c` telah `CONFIRMED / PUSHED /
+`a32b242d464b5149b812fe03b77204443513d08c` telah `CONFIRMED / PUSHED /
 QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
 IMPLEMENTED_NOT_DEPLOYED`. Coverage UI -> typed API -> tenant/branch-scoped
 renderer -> template aktif mencakup Konfirmasi Sesi Foto, Pengingat Sesi Foto,

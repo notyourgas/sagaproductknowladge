@@ -1614,5 +1614,5 @@ keputusan pengganti.
 | Alternatif yang dipertimbangkan | Mempertahankan satu template hard-coded; menyalin template mentah dari halaman editor; langsung mengirim otomatis melalui provider. |
 | Dampak | Renderer server-side, template default, placeholder allowlist, capability copy terpisah, tenant/cabang guard, serta audit public-safe ditambahkan. Copy tetap manual, tidak mengubah status atau delivery ledger, dan tidak melewati suspend provider. |
 | Pemberi keputusan | Andreas / founder |
-| Status | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; exact source `9f031c073cc9de3e2cba8a4ba2e22be2a701176c` |
+| Status | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; exact source `a32b242d464b5149b812fe03b77204443513d08c` |
 | Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [SagaBook Changelog](products/sagabook/CHANGELOG.md), [SagaBook Ledger](products/sagabook/FEATURE_COVERAGE_LEDGER.md) |

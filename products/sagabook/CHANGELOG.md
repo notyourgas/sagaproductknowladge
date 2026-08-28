@@ -10,7 +10,7 @@
 - Eligibility status/jadwal/Link Drive, placeholder allowlist, tenant/cabang,
   response no-store, audit tanpa message/PII/token, dan kegagalan clipboard
   dipagari fail-closed. Copy tidak membuat delivery atau mengubah state.
-- Exact source `9f031c073cc9de3e2cba8a4ba2e22be2a701176c` pada branch
+- Exact source `a32b242d464b5149b812fe03b77204443513d08c` pada branch
   `codex/s313-sagabook-wa-copy-templates`; 49 test terkait (228 assertion),
   tiga regresi workflow (25), critical typecheck, build 5.133 modul, format,
   syntax, dan diff check lulus.

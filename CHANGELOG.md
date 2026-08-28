@@ -8,7 +8,7 @@
   backend renderer, audit/privacy, dan operator workflow.
 - Klasifikasi: `CONFIRMED / PUSHED / QA_VALIDATED / SECURITY_VALIDATED /
   LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; exact
-  source `9f031c073cc9de3e2cba8a4ba2e22be2a701176c`.
+  source `a32b242d464b5149b812fe03b77204443513d08c`.
 - Copy bersifat manual dan bukan bukti delivery; production S312, suspend
   provider, payment, dan `BUSINESS_READY=false` tidak berubah.
 - Dokumen terdampak: Product, Dossier, feature ledger/changelog SagaBook,

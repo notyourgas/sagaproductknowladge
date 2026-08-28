@@ -17,11 +17,11 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
 | Informasi terakhir disinkronkan | SagaBook S313 booking-detail WhatsApp copy templates. |
-| Status sinkronisasi | SagaBook S313 source `9f031c07` `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; production S312 dan suspend WhatsApp operasional tidak berubah. |
+| Status sinkronisasi | SagaBook S313 source `a32b242d` `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; production S312 dan suspend WhatsApp operasional tidak berubah. |
 
 ## SagaBook S313 booking-detail WhatsApp copy templates
 
-- Exact source `9f031c073cc9de3e2cba8a4ba2e22be2a701176c` pada branch
+- Exact source `a32b242d464b5149b812fe03b77204443513d08c` pada branch
   `codex/s313-sagabook-wa-copy-templates` menyediakan tiga aksi salin dari
   Booking Detail, dengan render server-side dari template aktif tenant dan
   data booking terbaru.

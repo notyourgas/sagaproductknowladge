@@ -24,7 +24,7 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   ketersediaan Link Drive dipagari fail-closed. Copy hanya menulis clipboard
   manual, tidak membuat delivery, tidak mengubah status booking/hasil/reminder,
   dan tidak memanggil provider. Exact source
-  `9f031c073cc9de3e2cba8a4ba2e22be2a701176c` pada branch
+  `a32b242d464b5149b812fe03b77204443513d08c` pada branch
   `codex/s313-sagabook-wa-copy-templates` telah lulus 49 test terkait (228
   assertion), tiga regresi workflow (25 assertion), critical typecheck, build
   5.133 modul, format, syntax, dan diff check. Status `CONFIRMED / PUSHED /
