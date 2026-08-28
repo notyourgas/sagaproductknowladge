@@ -1,6 +1,21 @@
 # SagaView Product Knowledge
 
-Updated: 28 Agustus 2026 06:00 WIB
+Updated: 28 Agustus 2026 07:00 WIB
+
+SagaView S326 exact source
+`843ad42cf6db4e558dd4f464c524b4781b625e34` sudah `PUSHED /
+DEVOPS_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED / PRODUCTION_UNCHANGED`. Artifact
+builder sekarang menentukan identitas disk fisik output dan mirror sebelum
+membuat direktori atau menjalankan build, lalu menolak bila keduanya berada
+pada disk yang sama.
+
+Acceptance membuktikan C ke C dan C ke D sama-sama ditolak sebelum write;
+huruf drive berbeda tidak lagi dapat disalahartikan sebagai custody terpisah.
+RED gagal 1/2 lalu GREEN lulus; regresi release/custody 9/83 assertion,
+focused 2/14 assertion, syntax PowerShell, npm audit nol vulnerability, dan
+Composer audit nol advisory lulus. Artifact S325 tetap valid sebagai primary,
+tetapi mirror satu-disknya tidak boleh dipromosikan; production tetap S311.
 
 SagaView S325 membentuk immutable artifact exact S324 release
 `20260827230221-21058a0` dari source

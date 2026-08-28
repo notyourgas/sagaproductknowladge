@@ -1,5 +1,25 @@
 # SagaView Changelog
 
+## 2026-08-28 - S326 separate physical mirror guard
+
+- Klasifikasi: `CONFIRMED / PUSHED / DEVOPS_VALIDATED /
+  SECURITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  RELEASE_BLOCKED / PRODUCTION_UNCHANGED`.
+- Before: artifact builder dapat menerima output dan mirror pada disk fisik
+  yang sama, termasuk C dan D, lalu melabeli artifact siap walaupun custody
+  terpisah belum terpenuhi.
+- After: exact source `843ad42cf6db4e558dd4f464c524b4781b625e34`
+  memetakan drive lokal ke disk fisik dan menolak identitas yang sama sebelum
+  direktori, temp build, archive, bundle, atau mirror dibuat.
+- Acceptance: RED 1/2 gagal; GREEN focused 2/14 dan regresi release/custody
+  9/83 assertion lulus. Probe C→C serta C→D sama-sama exit 1 dengan pesan guard
+  dan `OutputCreated=false / MirrorCreated=false`. Syntax, npm audit, Composer
+  audit, diff, clean commit, push, dan remote exact lulus.
+- Boundary: tidak ada API, database, migration, customer data, payment,
+  artifact baru, deploy, activation, atau perubahan produk lain. Artifact S325
+  primary tetap valid, mirror satu disk tetap noncompliant, dan production
+  tetap S311.
+
 ## 2026-08-28 - S325 exact S324 immutable artifact
 
 - Klasifikasi: `CONFIRMED / ARTIFACT_VALIDATED / LOCAL_VALIDATED /

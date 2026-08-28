@@ -1,5 +1,22 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-28 - SagaView S326 physical mirror guard sync
+
+- Ringkasan: menyinkronkan guard builder yang menolak primary dan mirror pada
+  disk fisik sama sebelum ada build atau write.
+- Alasan: huruf drive berbeda tidak selalu berarti media custody berbeda;
+  artifact satu-disk tidak boleh dipromosikan sebagai release-safe.
+- Produk/area: SagaView release operations, storage identity, security, QA,
+  dan provenance.
+- Klasifikasi: `CONFIRMED / PUSHED / DEVOPS_VALIDATED /
+  SECURITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  RELEASE_BLOCKED / PRODUCTION_UNCHANGED`; exact source
+  `843ad42cf6db4e558dd4f464c524b4781b625e34`.
+- RED–GREEN, regresi 9/83 assertion, dua functional negative probe, syntax,
+  npm/Composer audit nol, clean commit, dan remote exact lulus.
+- Dokumen terdampak: Product, feature ledger, changelog SagaView, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-08-28 - SagaView S325 exact artifact sync
 
 - Ringkasan: menyinkronkan immutable archive, SHA-256 manifest, dan complete

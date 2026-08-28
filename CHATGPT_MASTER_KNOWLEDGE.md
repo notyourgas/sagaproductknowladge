@@ -1,8 +1,21 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 28 Agustus 2026 06:00 WIB
+Evidence cut-off: 28 Agustus 2026 07:00 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
+
+SagaView S326 exact pushed source
+`843ad42cf6db4e558dd4f464c524b4781b625e34` menutup risiko mirror artifact
+palsu pada disk fisik yang sama. Builder sekarang memetakan drive ke disk
+fisik dan menolak C→C maupun C→D sebelum membuat direktori atau menjalankan
+build. Regresi release/custody 9/83 assertion, functional probe dua kasus,
+syntax, dan dependency audit nol lulus.
+
+Status `PUSHED / DEVOPS_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED / PRODUCTION_UNCHANGED`. Artifact
+S325 primary tetap valid, tetapi mirror satu disk bukan custody terpisah dan
+tidak boleh dipakai untuk deploy. Production tetap S311 dan
+`BUSINESS_READY=false`.
 
 SagaView S325 membentuk immutable release artifact exact S324
 `20260827230221-21058a0`. Archive 81.516.564 byte berisi 2.597 entry dengan

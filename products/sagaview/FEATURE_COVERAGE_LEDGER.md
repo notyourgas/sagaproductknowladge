@@ -1,6 +1,20 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 28 Agustus 2026 06:00 WIB
+Evidence cut-off: 28 Agustus 2026 07:00 WIB
+
+S326 separate physical mirror guard: exact pushed source
+`843ad42cf6db4e558dd4f464c524b4781b625e34` memperbaiki artifact builder yang
+sebelumnya dapat menganggap dua direktori pada disk fisik sama sebagai primary
+dan mirror. Guard kini memakai identitas disk sebelum write/build serta
+fail-closed bila identitas sama atau tidak dapat diverifikasi.
+
+RED 1/2 gagal lalu GREEN 2/14 lulus; regresi release/custody 9/83 assertion,
+probe C→C dan C→D dengan exit 1 tanpa folder, syntax PowerShell, npm/Composer
+audit nol, diff, clean commit, push, dan remote exact lulus. Status `PUSHED /
+DEVOPS_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED / PRODUCTION_UNCHANGED`.
+Artifact S325 primary tetap valid, mirror satu disk tidak memenuhi custody;
+gap berikutnya tetap media terpisah terotorisasi dan artifact exact S326.
 
 S325 exact S324 immutable artifact: release `20260827230221-21058a0` dibuat
 dari clean source `21058a0de1d4a0f2742c45d2c706b8d43bd6df0c`. Archive 2.597

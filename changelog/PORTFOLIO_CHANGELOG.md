@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-28 - SagaView S326 separate physical mirror guard
+
+- Exact pushed source `843ad42cf6db4e558dd4f464c524b4781b625e34`
+  membuat artifact builder menolak output dan mirror pada disk fisik sama
+  sebelum build atau write.
+- Probe C→C serta C→D sama-sama exit 1 tanpa membuat folder; RED–GREEN,
+  regresi release/custody 9/83 assertion, syntax, dan dependency audit nol
+  lulus.
+- Status `PUSHED / DEVOPS_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED / PRODUCTION_UNCHANGED`; media
+  custody terpisah yang terotorisasi masih wajib.
+
 ## 2026-08-28 - SagaView S325 immutable S324 artifact
 
 - Release `20260827230221-21058a0` menghasilkan archive 81.516.564 byte dan
