@@ -1,5 +1,23 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-28 - SagaBook S319-S322 add-on consumable sync
+
+- Ringkasan: menyinkronkan wizard kertas/packaging per add-on, rule versioned,
+  snapshot booking immutable, perhitungan closing paid-only, dan rekonsiliasi
+  data lama yang fail-closed.
+- Provenance: exact source
+  `8203f0131a366b81b8922127d6cd6bda06357b2d` di atas exact main
+  `31e78b8f225d06ceb4f9823c2bdb0ff552ef7d37`.
+- Evidence: focused 28/28 (208), full PHP 1.266/1.266 (14.250), full
+  TypeScript, build, Playwright 3/3, Composer/npm/OSV audit nol, dan diff check.
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED / UIUX_VALIDATED /
+  QA_VALIDATED / SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
+- Production berubah: tidak. Tidak ada migration atau backfill apply; release
+  dilakukan task koordinasi setelah manifest, pilot, dan authenticated UAT.
+- Dokumen terdampak: Product, Dossier, feature ledger/changelog SagaBook,
+  portfolio, master knowledge, Decisions, root changelog, dan sync status.
+
 ## 2026-08-28 - SagaBook S319 closing daily recap sync
 
 - Ringkasan: menyinkronkan rekap sesi/paket/add-on dan keuangan lengkap pada

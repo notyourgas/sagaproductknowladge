@@ -12,12 +12,36 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-28T23:55:00+07:00 |
-| Branch aktif | `codex/s319-sagabook-closing-recap-knowledge` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-28T23:58:00+07:00 |
+| Branch aktif | `codex/knowledge-s319-s322-addon-consumable` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `d54d5e6a37b986d20cd04c710dcf7095894b210d` |
-| Informasi terakhir disinkronkan | SagaBook S319 closing daily recap merged dan local-validated. |
-| Status sinkronisasi | Source `31e78b8f` merged; deploy kumulatif belum dijalankan, production masih S316-S318, authenticated UAT pending, `BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `a957ec6b4c5ae6d84e1fdc82a16eaa34dea89189` |
+| Informasi terakhir disinkronkan | SagaBook S319-S322 add-on consumable pushed dan local-validated. |
+| Status sinkronisasi | Source `8203f013` pushed; task ini tidak deploy atau apply backfill, release kumulatif dan authenticated UAT pending, `BUSINESS_READY=false`. |
+
+## SagaBook S319-S322 add-on consumable
+
+- Exact source `8203f0131a366b81b8922127d6cd6bda06357b2d` menambahkan
+  wizard kertas/packaging pada add-on, rule versioned, snapshot booking
+  immutable, paid-only closing math, delete cleanup, dan safe reconciliation.
+- Full PHP 1.266/1.266 (14.250), focused 28/28 (208), typecheck/build,
+  Playwright 3/3, serta Composer/npm/OSV audit nol lulus.
+- Status `CONFIRMED / PUSHED / LOCAL_VALIDATED / UIUX_VALIDATED /
+  QA_VALIDATED / SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; tidak ada migration atau
+  backfill apply. Release, pilot, dan authenticated UAT masih pending.
+
+## File yang berubah pada sinkronisasi SagaBook S319-S322
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `DECISIONS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook S319 closing daily recap
 

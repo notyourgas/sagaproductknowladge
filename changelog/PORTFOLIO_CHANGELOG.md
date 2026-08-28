@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-28 - SagaBook S319-S322 add-on consumable
+
+- Editor add-on memetakan kertas foto dan packaging per unit; rule versioned
+  disnapshot ke booking sehingga closing memakai fakta saat transaksi, bukan
+  konfigurasi katalog terbaru.
+- Add Person dan Cetak 4R yang sudah dibayar kini masuk pemakaian stok closing;
+  unpaid dikecualikan, histori tidak berubah, dan submit ulang tetap
+  exactly-once. Rekonsiliasi data lama bersifat read-only kecuali diberi
+  manifest exact yang lengkap.
+- Exact source `8203f0131a366b81b8922127d6cd6bda06357b2d` lulus full PHP
+  1.266/1.266, typecheck/build, Playwright 3/3, serta dependency audit nol.
+  Status `PUSHED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; rollout
+  dilakukan task koordinasi setelah pilot dan authenticated UAT.
+
 ## 2026-08-28 - SagaBook S319 closing daily recap
 
 - Closing kini merangkum total sesi, jumlah per paket, add-on, pemasukan,
