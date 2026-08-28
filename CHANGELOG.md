@@ -35,6 +35,22 @@
   portfolio, master knowledge, Decisions, Gaps, root changelog, dan sync
   status.
 
+## 2026-08-29 - COYABAG controlled real payment UAT sync
+
+- Ringkasan: menyinkronkan capability owner-only untuk satu transaksi UAT
+  SagaDev nyata tanpa membuka checkout publik.
+- Provenance: exact source `b6265cbfc4a69be6b7850897205fd6d105ba8081`,
+  immutable release `20260829-b6265cb`, rollback `20260829-2f4dbf2`.
+- Evidence: test backend/frontend, browser desktop/mobile, build, dependency dan
+  security audit, database/runtime backup, migration, queue, scheduler, public
+  fail-closed config, dan smoke lulus tanpa membuat order/payment intent.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /
+  NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+- Production berubah: jalur UAT privat tersedia; readiness tetap 40/42 dan
+  `launch_uat` serta `release_signoff` tetap blocker.
+- Dokumen terdampak: Product, changelog COYABAG, portfolio, master knowledge,
+  root changelog, dan sync status.
+
 ## 2026-08-29 - COYABAG safe live UAT release sync
 
 - Ringkasan: menyinkronkan runner UAT production aman dan perbaikan integritas

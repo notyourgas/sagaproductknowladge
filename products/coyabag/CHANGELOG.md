@@ -4,6 +4,24 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-29 - Controlled real payment UAT access deployed
+
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /
+  NOT_PRODUCTION_ACTIVATED`; exact source
+  `b6265cbfc4a69be6b7850897205fd6d105ba8081`, immutable release
+  `20260829-b6265cb`, dan rollback `20260829-2f4dbf2`.
+- Launch Control memberi owner jalur UAT transaksi nyata recent-auth yang
+  signed, berbatas 5-30 menit, satu-link-satu-order, gateway-only, maksimal
+  Rp100.000 termasuk ongkir, dan maksimal tiga link per hari.
+- Token disimpan sebagai hash dan terikat release/environment. Public
+  storefront tanpa capability tetap `PRODUCTION_READINESS_BLOCKED`.
+- Laravel 472 total dengan 471 pass, satu intentional skip, storefront 216/216,
+  browser desktop/mobile, build, dependency/security audit, backup, migration,
+  workers, scheduler, dan public smoke lulus.
+- Readiness tetap 40/42. Tidak ada sesi UAT, order, atau payment intent nyata
+  yang dibuat selama automated acceptance; UAT operator dan release sign-off
+  tetap wajib.
+
 ## 2026-08-29 - Safe live UAT runner and destination search fix deployed
 
 - Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /

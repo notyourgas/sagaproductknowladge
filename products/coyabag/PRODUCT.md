@@ -74,11 +74,13 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 - Checkout publik tetap `PRODUCTION_READINESS_BLOCKED` hanya karena UAT 15
   langkah masih 0/15 dan release sign-off belum lengkap. Nol payment intent
   dibuat saat deployment acceptance.
-- Release aktif `20260829-2f4dbf2` dengan exact source
-  `2f4dbf24c4dee057f94e6ae245881d59da4fd870` melayani production;
-  rollback langsung `20260828-10e516b` dipertahankan. Live UAT aman untuk
-  katalog, detail/varian, cart reconciliation, email outbox, dan quote manual
-  JNE/J&T lulus tanpa membuat order atau payment intent.
+- Release aktif `20260829-b6265cb` dengan exact source
+  `b6265cbfc4a69be6b7850897205fd6d105ba8081` melayani production;
+  rollback langsung `20260829-2f4dbf2` dipertahankan. Owner memiliki jalur UAT
+  pembayaran nyata yang privat, signed, recent-auth, satu-link-satu-order,
+  gateway-only, maksimal Rp100.000 termasuk ongkir, dan maksimal tiga link per
+  hari. Capability tidak membuka checkout publik dan belum digunakan untuk
+  membuat order atau payment intent pada acceptance release.
 - Pencarian tujuan manual hanya memakai kota/provinsi tujuan. Teks kota asal
   pada label tarif tidak lagi dapat memunculkan tujuan palsu.
 - Admin Beranda memperbarui seluruh ringkasan melalui snapshot terautentikasi,

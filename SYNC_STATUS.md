@@ -12,12 +12,12 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-29T01:22:00+07:00 |
-| Branch aktif | `codex/s340-sagabook-wave-b-production-knowledge` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-29T01:55:00+07:00 |
+| Branch aktif | `codex/coyabag-uat-20260829` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `febd51c` |
-| Informasi terakhir disinkronkan | SagaBook Wave B analitik booking per paket production activation. |
-| Status sinkronisasi | Release `20260828180149-7d82f30`; `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `a10eaeb` |
+| Informasi terakhir disinkronkan | COYABAG controlled real payment UAT access. |
+| Status sinkronisasi | Release `20260829-b6265cb`; `PRODUCTION_DEPLOYED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`. |
 
 ## SagaBook Wave B package analytics
 
@@ -45,16 +45,26 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
   planned/changed 0, `applied=false`. Authenticated UAT dan mapping legacy
   masih pending; `BUSINESS_READY=false`.
 
-## COYABAG safe live UAT
+## COYABAG controlled real payment UAT
 
-- Exact source `2f4dbf24c4dee057f94e6ae245881d59da4fd870` aktif pada release
-  `20260829-2f4dbf2`, dengan rollback `20260828-10e516b`.
-- UAT aman desktop/mobile, email outbox, quote manual, full test/build/audit,
-  backup, rollback, dan public smoke lulus tanpa membuat order/payment intent.
-- Destination search tidak lagi mencocokkan kota asal dalam label tarif.
+- Exact source `b6265cbfc4a69be6b7850897205fd6d105ba8081` aktif pada release
+  `20260829-b6265cb`, dengan rollback `20260829-2f4dbf2`.
+- Owner-only capability UAT nyata, one-link-one-order, gateway-only, Rp100.000,
+  dan tiga link per hari sudah production-deployed. Public checkout tetap
+  fail-closed.
+- Full test/build/audit, backup, migration, workers, scheduler, dan smoke lulus
+  tanpa membuat sesi UAT, order, atau payment intent nyata.
 - Status `CONFIRMED / PRODUCTION_DEPLOYED / NOT_PRODUCTION_ACTIVATED`;
-  readiness 40/42 dan commerce tetap fail-closed hingga UAT transaksi serta
-  release sign-off selesai.
+  readiness 40/42 hingga UAT operator serta release sign-off selesai.
+
+## File yang berubah pada sinkronisasi COYABAG controlled UAT
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG owner/privacy approval
 

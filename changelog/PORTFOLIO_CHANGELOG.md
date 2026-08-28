@@ -22,6 +22,16 @@
   dan smoke lulus. Backfill 47 add-on legacy tetap preview-only dengan 0
   perubahan; authenticated UAT belum dan `BUSINESS_READY=false`.
 
+## 2026-08-29 - COYABAG controlled real payment UAT access
+
+- Exact source `b6265cbfc4a69be6b7850897205fd6d105ba8081` aktif pada immutable
+  release `20260829-b6265cb`; rollback `20260829-2f4dbf2` tersedia.
+- Owner dapat membuat capability UAT real-payment privat dengan recent-auth,
+  satu-link-satu-order, gateway-only, batas Rp100.000, dan kuota tiga link per
+  hari tanpa membuka checkout publik.
+- Readiness tetap 40/42 dan public commerce belum diaktifkan. Automated
+  acceptance tidak membuat sesi UAT, order, atau payment intent nyata.
+
 ## 2026-08-29 - COYABAG safe live UAT and destination integrity
 
 - Exact source `2f4dbf24c4dee057f94e6ae245881d59da4fd870` aktif pada immutable

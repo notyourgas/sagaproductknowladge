@@ -25,15 +25,16 @@ diterapkan karena seluruhnya belum dipetakan (`applied=false`). Status
 `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`;
 authenticated Owner/Staff UAT dan mapping legacy masih pending.
 
-COYABAG release `20260829-2f4dbf2` menjalankan exact source
-`2f4dbf24c4dee057f94e6ae245881d59da4fd870`; rollback
-`20260828-10e516b` tersedia. Live UAT aman desktop/mobile untuk katalog,
-detail/varian, cart reconciliation, fail-closed checkout, email outbox, dan
-quote manual JNE/J&T lulus tanpa membuat order atau payment intent. Pencarian
-tujuan manual tidak lagi mencocokkan kota asal dalam label tarif. Owner 2FA dan
-privacy/retention policy `2026.08-v1` tetap approved. Readiness 40/42 (95%);
-commerce tetap `NOT_PRODUCTION_ACTIVATED` sampai UAT transaksi dan release
-sign-off selesai.
+COYABAG release `20260829-b6265cb` menjalankan exact source
+`b6265cbfc4a69be6b7850897205fd6d105ba8081`; rollback
+`20260829-2f4dbf2` tersedia. Launch Control menyediakan capability owner-only
+untuk satu transaksi UAT SagaDev nyata: recent-auth, signed, 5-30 menit,
+satu-link-satu-order, gateway-only, maksimal Rp100.000 termasuk ongkir, dan
+maksimal tiga link per hari. Public checkout tetap
+`PRODUCTION_READINESS_BLOCKED`; automated acceptance tidak membuat sesi UAT,
+order, atau payment intent. Owner 2FA dan privacy policy tetap approved;
+readiness 40/42 dan commerce `NOT_PRODUCTION_ACTIVATED` sampai UAT operator
+serta release sign-off selesai.
 
 SagaBook batch S319-S322 add-on consumable exact pushed source
 `8203f0131a366b81b8922127d6cd6bda06357b2d` memungkinkan Owner memetakan
