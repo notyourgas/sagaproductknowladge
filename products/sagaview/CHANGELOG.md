@@ -1,5 +1,25 @@
 # SagaView Changelog
 
+## 2026-08-28 - S331 release mirror integrity verification
+
+- Klasifikasi: `CONFIRMED / PUSHED / DEVOPS_VALIDATED /
+  SECURITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  RELEASE_BLOCKED / PRODUCTION_UNCHANGED`.
+- Before: builder menyalin artifact ke mirror tetapi tidak menghitung ulang
+  checksum salinan sebelum menyatakan artifact siap.
+- After: exact source `0966bbd7fedaaa51bf67332139f07f7d2690553d`
+  memverifikasi archive, bundle, dan manifest pada primary/mirror; status siap
+  hanya keluar setelah keduanya identik.
+- Acceptance: RED 1 test gagal; GREEN focused 7/44 dan regresi
+  release/custody 14/113 assertion lulus. Probe sintetis menerima salinan baik,
+  menolak salinan yang diubah, memakai nol data customer, dan menyisakan nol
+  fixture. Syntax, npm audit, Composer audit, diff, clean commit, push, dan
+  remote exact lulus.
+- Boundary: tidak ada API, database, migration, customer data, payment,
+  artifact baru, deploy, activation, atau perubahan produk lain. Media lokal
+  terpisah terotorisasi dan artifact exact S331 masih pending; production tetap
+  S311.
+
 ## 2026-08-28 - S330 artifact capacity preflight
 
 - Klasifikasi: `CONFIRMED / PUSHED / DEVOPS_VALIDATED /

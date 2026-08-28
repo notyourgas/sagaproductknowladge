@@ -1,6 +1,21 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 28 Agustus 2026 11:00 WIB
+Evidence cut-off: 28 Agustus 2026 12:00 WIB
+
+S331 release mirror integrity verification: exact pushed source
+`0966bbd7fedaaa51bf67332139f07f7d2690553d` menghitung ulang SHA-256 archive,
+git bundle, dan manifest pada primary serta mirror setelah copy. Builder hanya
+mengeluarkan status artifact-ready setelah kedua salinan lengkap dan identik
+dengan hash/manifest yang diharapkan.
+
+RED 1 test gagal lalu GREEN 7/44 assertion lulus; regresi release/custody
+14/113 assertion, syntax tiga script, npm/Composer audit nol, diff, clean
+commit, push, dan remote exact lulus. Probe sintetis menerima salinan identik,
+menolak mirror yang diubah, tidak memakai data customer, dan menyisakan nol
+fixture. Status `PUSHED / DEVOPS_VALIDATED / SECURITY_VALIDATED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED /
+PRODUCTION_UNCHANGED`. Gap berikutnya: media lokal terpisah terotorisasi dan
+artifact exact S331.
 
 S330 artifact capacity preflight: exact pushed source
 `f2c946aa6bdbeb2a34b91692320e4f6f55ba4c37` memeriksa ruang bebas output dan

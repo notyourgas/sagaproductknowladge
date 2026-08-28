@@ -1,5 +1,22 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-28 - SagaView S331 mirror integrity verification sync
+
+- Ringkasan: menyinkronkan verifikasi checksum dan manifest primary/mirror
+  setelah copy dan sebelum status artifact-ready.
+- Alasan: keberhasilan operasi copy belum membuktikan bahwa salinan pada media
+  tujuan byte-identik dan dapat dipakai untuk recovery.
+- Produk/area: SagaView release operations, artifact integrity, security, QA,
+  dan provenance.
+- Klasifikasi: `CONFIRMED / PUSHED / DEVOPS_VALIDATED /
+  SECURITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  RELEASE_BLOCKED / PRODUCTION_UNCHANGED`; exact source
+  `0966bbd7fedaaa51bf67332139f07f7d2690553d`.
+- RED–GREEN, focused 7/44, regresi 14/113 assertion, positive/corruption probe,
+  syntax, npm/Composer audit nol, clean commit, dan remote exact lulus.
+- Dokumen terdampak: Product, feature ledger, changelog SagaView, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-08-28 - SagaView S330 artifact capacity preflight sync
 
 - Ringkasan: menyinkronkan preflight kapasitas output dan mirror sebelum
