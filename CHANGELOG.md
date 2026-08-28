@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-29 - COYABAG owner/privacy approval sync
+
+- Ringkasan: menyinkronkan owner 2FA aktif, policy publik terverifikasi, dan
+  approval fingerprint privacy/retention versi `2026.08-v1`.
+- Provenance: report source `febf539`; runtime aplikasi tetap release immutable
+  `20260828-10e516b`.
+- Evidence: readiness 40/42 (95%), privacy dan identity pass, audit report-only,
+  nol kandidat, serta nol deletion.
+- Klasifikasi: `CONFIRMED / PRODUCTION_CONFIGURED / APPROVED /
+  NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+- Production berubah: status owner dan approval policy berubah; source aplikasi
+  dan symlink release tidak berubah. UAT dan sign-off tetap fail-closed.
+
 ## 2026-08-28 - SagaBook S319-S322 add-on consumable sync
 
 - Ringkasan: menyinkronkan wizard kertas/packaging per add-on, rule versioned,

@@ -4,6 +4,17 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-29 - Owner 2FA and privacy approval verified
+
+- Klasifikasi: `CONFIRMED / PRODUCTION_CONFIGURED / APPROVED`; provenance
+  report `febf539`, aplikasi tetap release `20260828-10e516b`.
+- Owner 2FA aktif. Privacy policy `2026.08-v1` terverifikasi, dipublikasikan,
+  dan approval fingerprint cocok dengan seluruh nilai retensi aktif.
+- Readiness naik dari 38/42 menjadi 40/42 (95%). Audit tetap report-only,
+  menemukan nol kandidat, dan tidak menghapus data.
+- Commerce belum production-activated; blocker tersisa adalah UAT 0/15 dan
+  release sign-off.
+
 ## 2026-08-28 - Privacy and retention baseline prepared
 
 - Klasifikasi: `CONFIRMED / PRODUCTION_CONFIGURED / APPROVAL_BLOCKED`;

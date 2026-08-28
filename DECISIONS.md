@@ -60,7 +60,7 @@ keputusan pengganti.
 | Alternatif yang dipertimbangkan | Memalsukan approval owner; menghapus gate 2FA dari production readiness; memaksa 2FA pada seluruh demo; membuka checkout nyata sebelum approval. |
 | Dampak | Simulator demo tetap dapat dipakai sesuai DEC-112. Privacy policy dapat disiapkan sebagai draft, tetapi tidak dipublikasikan atau disetujui atas nama owner; checkout publik tetap fail-closed. |
 | Pemberi keputusan | Andreas / founder |
-| Status | `CONFIRMED / DEMO_ALLOWED / PRODUCTION_ACTIVATION_BLOCKED`; baseline report source `8903a1a`, aplikasi tetap release `20260828-10e516b` |
+| Status | `CONFIRMED / CONDITION_FULFILLED`; owner 2FA dan policy approval aktif, provenance report `febf539`, aplikasi tetap release `20260828-10e516b`; commerce masih blocked oleh UAT dan sign-off |
 | Dokumen terkait | [COYABAG Product](products/coyabag/PRODUCT.md), [COYABAG Dossier](products/coyabag/DOSSIER.md), [COYABAG Changelog](products/coyabag/CHANGELOG.md), [Gaps](GAPS.md) |
 
 ## DEC-117 - Draft frame SagaView tidak menghalangi Studio Console

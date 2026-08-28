@@ -67,16 +67,13 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
   `20260824104557-65f9ff4`. Satu instalasi dan satu service account scope minimum
   aktif; signed readiness serta callback fail-closed lulus. Batas trial adalah
   Rp100.000 per transaksi dan lima payment intent baru per hari.
-- Readiness COYABAG naik menjadi 38/42 (90%). Checkout publik tetap
-  `PRODUCTION_READINESS_BLOCKED` karena owner 2FA, persetujuan privacy/retention,
-  UAT 15 langkah, dan release sign-off belum selesai. Nol payment intent dibuat
-  saat deployment acceptance.
-- Baseline privacy/retention production sudah lengkap: versi final
-  `2026.08-v1`, empat jendela retensi tersimpan, audit berjalan `report_only`,
-  dan draft kebijakan delapan bagian siap direview. Tidak ada record yang
-  dihapus. Approval dan publikasi tetap `BLOCKED` sampai owner mengaktifkan
-  2FA, memverifikasi isi, dan memberi sign-off; keputusan menunda 2FA untuk demo
-  tidak mengaktifkan commerce production.
+- Readiness COYABAG naik menjadi 40/42 (95%). Owner 2FA dan
+  privacy/retention policy versi `2026.08-v1` sudah aktif, terverifikasi, dan
+  disetujui dengan fingerprint yang cocok. Kebijakan publik memuat delapan
+  bagian; audit tetap `report_only` dan tidak menghapus record.
+- Checkout publik tetap `PRODUCTION_READINESS_BLOCKED` hanya karena UAT 15
+  langkah masih 0/15 dan release sign-off belum lengkap. Nol payment intent
+  dibuat saat deployment acceptance.
 - Release aktif `20260827-be8fc09` dengan exact source
   `be8fc09710e26e49512f181904dff576f93a23dd` melayani production;
   rollback langsung `20260827-beecd6f` dipertahankan.

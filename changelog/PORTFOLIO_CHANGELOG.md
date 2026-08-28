@@ -1,5 +1,13 @@
 # Portfolio Changelog
 
+## 2026-08-29 - COYABAG owner/privacy gate closed
+
+- Owner 2FA dan privacy policy `2026.08-v1` sudah terverifikasi serta disetujui
+  dengan fingerprint yang cocok; kebijakan publik memuat delapan bagian.
+- Readiness kini 40/42 (95%). Aplikasi tetap release `20260828-10e516b` dan
+  provenance report `febf539`.
+- Commerce tetap fail-closed sampai UAT 15 langkah dan release sign-off.
+
 ## 2026-08-28 - SagaBook S319-S322 add-on consumable
 
 - Editor add-on memetakan kertas foto dan packaging per unit; rule versioned

@@ -12,12 +12,21 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-28T23:58:00+07:00 |
-| Branch aktif | `codex/knowledge-s319-s322-addon-consumable` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-29T00:05:00+07:00 |
+| Branch aktif | `codex/coyabag-privacy-retention-knowledge-20260828` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `a957ec6b4c5ae6d84e1fdc82a16eaa34dea89189` |
-| Informasi terakhir disinkronkan | SagaBook S319-S322 add-on consumable pushed dan local-validated. |
-| Status sinkronisasi | Source `8203f013` pushed; task ini tidak deploy atau apply backfill, release kumulatif dan authenticated UAT pending, `BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `4bdacd82cdc8ee5b615474c6a919657221a6ad88` |
+| Informasi terakhir disinkronkan | COYABAG owner 2FA dan privacy approval terverifikasi. |
+| Status sinkronisasi | Readiness 40/42; privacy/identity pass, UAT dan sign-off blocked, `BUSINESS_READY=false`. |
+
+## COYABAG owner/privacy approval
+
+- Owner 2FA aktif dan policy versi `2026.08-v1` terverifikasi, dipublikasikan,
+  serta disetujui dengan fingerprint yang cocok.
+- Readiness 40/42 (95%); audit retention tetap report-only dengan nol deletion.
+- Provenance report `febf539`; aplikasi tetap release `20260828-10e516b`.
+- Status `CONFIRMED / PRODUCTION_CONFIGURED / APPROVED /
+  NOT_PRODUCTION_ACTIVATED`; blocker tersisa UAT dan sign-off.
 
 ## SagaBook S319-S322 add-on consumable
 
