@@ -1,5 +1,24 @@
 # SagaBook Changelog
 
+## 2026-08-28 - S316 report-integrity task action contract production
+
+- Task urgent hasil report reconciliation kini memiliki issue kanonik dan
+  target aksi eksplisit; tombol `Buka` menuju detail report/closing/finance
+  yang benar, bukan mencoba menebak booking.
+- Backend membuat identity/fingerprint stabil, lifecycle open-resolve-reopen
+  idempotent, API detail permission-scoped, dan frontend hanya menerima URL
+  relatif `/admin/...`. Legacy orphan ditutup tanpa booking inference.
+- Migration menambah relasi/target/unique key dan database CHECK yang enforced
+  setelah repair. Deploy berjalan dalam maintenance, mewajibkan dua repair
+  idempotent, reconciliation, post-repair nol perubahan, dan rollback otomatis.
+- Exact source/release `cde8dd53bb70541a88907e1e83774deaf9610bf6` /
+  `20260828121721-cde8dd5`; rollback `20260828112935-1af16b1`. Verifier 19/19,
+  preview production `legacyTaskCount=0`, `rollbackGuard=enforced`, 0 pending
+  migration, queue journal nol, serta smoke/security 3/3 lulus.
+- Narrow release exception hanya menerima dua delivery WhatsApp lama yang
+  sudah diketahui dan tetap mempertahankan provider customer/owner off.
+  Authenticated operator UAT dan `BUSINESS_READY=false`.
+
 ## 2026-08-28 - Email basic default-on untuk seluruh tenant
 
 - Andreas menetapkan confirmation pembayaran, reminder H-1, dan reminder H-3

@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 28 Agustus 2026 18:50 WIB
-Evidence status: Resend provider, signed webhook, friendly email copy, dan default email basic aktif untuk seluruh tenant; Owner tetap dapat opt-out, tenant-linked operational UAT belum, dan operational WhatsApp tetap tersuspensi
+Updated: 28 Agustus 2026 19:32 WIB
+Evidence status: task report-integrity kini selalu memiliki target aksi eksplisit atau ditutup aman; default email basic tetap aktif untuk seluruh tenant, operational WhatsApp tetap tersuspensi, dan authenticated operator UAT belum
 
 ## Tujuan dokumen
 
@@ -15,6 +15,22 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
+
+- S316 memperbaiki task urgent `report integrity review` yang sebelumnya dapat
+  muncul tanpa booking atau tujuan operasional. Task kini berasal dari issue
+  reconciliation kanonik, membawa target bertipe `report_reconciliation`,
+  `daily_closing`, `finance_transaction`, atau booking yang terbukti, dan UI
+  hanya membuka URL relatif `/admin/...` yang dikirim server. Detail issue
+  tetap tenant/cabang/permission-scoped; target tidak valid gagal tertutup.
+  Legacy task tanpa relasi ditutup tanpa menebak booking, lifecycle issue/task
+  idempotent, dan database guard mencegah scheduler lama membuat orphan baru.
+  Exact source `cde8dd53bb70541a88907e1e83774deaf9610bf6` aktif pada release
+  `20260828121721-cde8dd5`, rollback `20260828112935-1af16b1`. Verifier
+  independen 19/19, preview production `legacyTaskCount=0` dan
+  `rollbackGuard=enforced`, 0 migration pending, serta smoke/security 3/3
+  lulus. Status `CONFIRMED / PUSHED / QA_VALIDATED / SECURITY_VALIDATED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated operator UAT dan
+  `BUSINESS_READY=false`.
 
 - S313 menambahkan menu `Salin template WA` pada setiap Booking Detail untuk
   Konfirmasi Sesi Foto, Pengingat Sesi Foto, dan Pengiriman Link Drive Foto.
@@ -36,9 +52,10 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 ## Status production terbaru
 
 - Email confirmation, reminder H-1, dan reminder H-3 kini menjadi fitur basic
-  default-on untuk semua paket dan tenant. Exact source
-  `1af16b1331e8bb11af2d026317c93201b64816b9` aktif pada immutable release
-  `20260828112935-1af16b1`, rollback `20260828103607-92765aa`. Aktivasi
+  default-on untuk semua paket dan tenant. Feature source
+  `1af16b1331e8bb11af2d026317c93201b64816b9` tetap aktif di combined source
+  `cde8dd53bb70541a88907e1e83774deaf9610bf6`, immutable release
+  `20260828121721-cde8dd5`, rollback `20260828112935-1af16b1`. Aktivasi
   idempotent mengubah 15/15 tenant, menulis 15 audit event, mempertahankan
   setting lain, dan replay menghasilkan 0 perubahan. Tenant baru juga memakai
   default aktif; Owner tetap dapat opt-out dari Settings. Pada snapshot
@@ -48,10 +65,9 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   1.219/1.219 (13.780 assertion), focused/release 30/30 (375), Node 18/18,
   Playwright 4/4, build/typecheck, dependency audit, encrypted backup,
   disposable restore, migration, service, rollback, serta public/security
-  smoke 3/3 lulus. Auditor release lulus 18/19; satu gate provenance mencatat
-  `origin/main` telah maju ke `cde8dd53bb70541a88907e1e83774deaf9610bf6`
-  yang tetap mencakup source email ini dan sedang ditangani release gabungan
-  S316. Status fitur `CONFIRMED / PUSHED / PRODUCTION_DEPLOYED /
+  smoke 3/3 lulus. Preview pascarelease kembali membuktikan 15/15 tenant
+  unchanged dan 0 perubahan. Verifier combined release lulus 19/19. Status
+  fitur `CONFIRMED / PUSHED / PRODUCTION_DEPLOYED /
   TENANT_DEFAULT_ACTIVATED`; authenticated customer/Owner UAT dan
   `BUSINESS_READY` tetap belum.
 

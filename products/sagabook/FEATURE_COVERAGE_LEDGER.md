@@ -1,6 +1,22 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 28 Agustus 2026 18:50 WIB
+Evidence cut-off: 28 Agustus 2026 19:32 WIB
+
+Report-integrity task action contract S316 exact source
+`cde8dd53bb70541a88907e1e83774deaf9610bf6` telah `CONFIRMED / PUSHED /
+QA_VALIDATED / SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
+PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` pada immutable release
+`20260828121721-cde8dd5`, rollback `20260828112935-1af16b1`. Coverage
+reconciliation issue -> canonical fingerprint -> typed task action ->
+permission-scoped API -> server-authored relative URL -> exact report detail
+mencakup dedupe, resolve/reopen, audit transition-only, legacy cleanup tanpa
+booking inference, unsafe URL fail-closed, serta database unique/CHECK guard.
+Full PHP 1.222/1.222 (13.822 assertion), focused 33/33 (415), combined 26/26
+(359), browser S316 4/4, persistence 18/18, build/typecheck, focused Pint,
+dependency audit nol, encrypted backup/restore, release canary, verifier 19/19,
+0 pending migration, dan public/security smoke 3/3 lulus. Production preview
+`legacyTaskCount=0`, `updatedTaskCount=0`, `rollbackGuard=enforced`.
+Authenticated operator UAT dan `BUSINESS_READY` tetap belum.
 
 Default email basic seluruh tenant exact source
 `1af16b1331e8bb11af2d026317c93201b64816b9` telah `CONFIRMED / PUSHED /

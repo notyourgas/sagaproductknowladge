@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-28 - SagaBook S316 report task action production
+
+- Task urgent report integrity kini selalu menuju issue/target operasional yang
+  eksplisit; legacy task tanpa relasi ditutup aman tanpa menebak booking.
+- Canonical fingerprint, typed action, permission scope, lifecycle idempotent,
+  unique key, dan enforced database guard mencegah orphan/duplikasi berulang.
+- Exact source/release `cde8dd53bb70541a88907e1e83774deaf9610bf6` /
+  `20260828121721-cde8dd5`, rollback `20260828112935-1af16b1`. Verifier 19/19,
+  production preview bersih, 0 migration pending, dan smoke/security 3/3.
+- Email basic tetap 15/15 tenant unchanged; operational WhatsApp tetap off.
+  Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+  `BUSINESS_READY=false` sampai authenticated operator UAT.
+
 ## 2026-08-28 - SagaView S336 production activation
 
 - Draft frame tidak lagi memblokir akses Studio Console; Owner dapat menyimpan

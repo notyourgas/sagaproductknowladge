@@ -12,12 +12,38 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-28T19:12:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-28T19:32:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
-| Informasi terakhir disinkronkan | SagaView S336 draft non-blocking dan recovery kapasitas aktif di production. |
-| Status sinkronisasi | Source `98f13a8d` aktif pada release `20260828111443-98f13a8`; rollback `20260828071047-8063569`, Studio tetap, dan `BUSINESS_READY=false`. |
+| Informasi terakhir disinkronkan | SagaBook S316 report-integrity task action contract aktif di production. |
+| Status sinkronisasi | Source `cde8dd53` aktif pada release `20260828121721-cde8dd5`; rollback `20260828112935-1af16b1`, verifier 19/19, dan `BUSINESS_READY=false`. |
+
+## SagaBook S316 report-integrity task action contract
+
+- Task urgent report integrity kini membawa issue kanonik dan target aksi
+  bertipe; frontend hanya mengikuti relative `/admin/...` URL dari server.
+- Legacy task tanpa relasi ditutup tanpa booking inference. Unique key,
+  lifecycle idempotent, dan enforced CHECK mencegah orphan/duplikasi berulang.
+- Exact source/release `cde8dd53bb70541a88907e1e83774deaf9610bf6` /
+  `20260828121721-cde8dd5`, rollback `20260828112935-1af16b1`.
+- Verifier 19/19, production preview `legacyTaskCount=0` dan
+  `rollbackGuard=enforced`, 0 pending migration, smoke/security 3/3. Email
+  basic tetap 15/15 tenant unchanged; operational WhatsApp tetap off.
+- Status `CONFIRMED / PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`; authenticated operator UAT belum dan
+  `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi SagaBook S316
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook email basic default-on seluruh tenant
 

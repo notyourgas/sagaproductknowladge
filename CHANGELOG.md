@@ -1,5 +1,26 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-28 - SagaBook S316 report task action production sync
+
+- Ringkasan: menyinkronkan perbaikan task urgent report integrity agar selalu
+  mempunyai issue/target aksi eksplisit dan tidak lagi diasumsikan booking.
+- Provenance: exact source/release
+  `cde8dd53bb70541a88907e1e83774deaf9610bf6` /
+  `20260828121721-cde8dd5`, rollback `20260828112935-1af16b1`, encrypted
+  backup/restore `20260828T115448Z`.
+- Evidence: full PHP 1.222/1.222, focused 33/33, combined 26/26, browser 4/4,
+  build/typecheck/audit, release canary, verifier 19/19, production preview
+  `legacyTaskCount=0` dan `rollbackGuard=enforced`, 0 migration pending, serta
+  smoke/security 3/3 lulus.
+- Klasifikasi: `CONFIRMED / PUSHED / QA_VALIDATED / SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+  BUSINESS_READY=false`.
+- Production berubah: ya. Email basic tetap 15/15 tenant unchanged;
+  operational WhatsApp customer/owner tetap off. Dua delivery lama hanya
+  diterima melalui narrow verified release exception.
+- Dokumen terdampak: Product, Dossier, feature ledger/changelog SagaBook,
+  portfolio, master knowledge, root changelog, dan sync status.
+
 ## 2026-08-28 - SagaView S336 production activation sync
 
 - Ringkasan: menyinkronkan aktivasi draft non-blocking, capacity preflight,

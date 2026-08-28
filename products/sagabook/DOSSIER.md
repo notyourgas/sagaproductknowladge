@@ -7,6 +7,24 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Report-integrity task action contract S316 exact source
+  `cde8dd53bb70541a88907e1e83774deaf9610bf6`, immutable release
+  `20260828121721-cde8dd5`, rollback `20260828112935-1af16b1`: issue report
+  mempunyai identity/fingerprint kanonik, task/notification lifecycle
+  idempotent, dan action target bertipe dengan URL server-authored relatif
+  `/admin/...`. UI report membuka issue tepat sesuai cabang/tanggal dan API
+  tetap tenant/cabang/permission-scoped. Legacy task tanpa issue ditutup tanpa
+  booking inference. Unique key serta CHECK database mencegah duplikasi/orphan
+  aktif, termasuk bila rollback scheduler lama berjalan. Full PHP 1.222/1.222
+  (13.822 assertion), focused combined 26/26 (359), focused final 33/33 (415),
+  browser S316 4/4, persistence 18/18, build/typecheck, dependency audit nol,
+  encrypted backup `20260828T115448Z`, disposable restore, verifier 19/19,
+  0 migration pending, serta public/security smoke 3/3 lulus. Production
+  preview menunjukkan `legacyTaskCount=0` dan `rollbackGuard=enforced`.
+  Status `CONFIRMED / PUSHED / QA_VALIDATED / SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+  authenticated operator UAT dan `BUSINESS_READY=false`.
+
 - Default email basic seluruh tenant exact source
   `1af16b1331e8bb11af2d026317c93201b64816b9`, immutable release
   `20260828112935-1af16b1`, rollback `20260828103607-92765aa`:
