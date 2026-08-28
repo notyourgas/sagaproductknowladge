@@ -7,6 +7,23 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Kandidat export XLSX S343 exact source
+  `7edc7b9842f7d794187632dcf6a711d38e14f605` mengubah export mentah menjadi
+  workbook operasional multi-sheet. Setiap workbook membawa konteks
+  tenant/cabang/periode/timezone, ringkasan, label manusiawi, filter, freeze
+  pane, format Rupiah/tanggal/jam, status berwarna, layout cetak, kamus status,
+  dan empty state. Closing memisahkan keuangan, sesi/stok, serta audit/revisi
+  supaya data operasional tidak bercampur dengan metadata teknis. Typed cell
+  dipertahankan, string berawalan formula dinetralisasi, CSV tetap kompatibel,
+  dan UI menggunakan satu endpoint export authoritative. Full PHP 1.282/1.282
+  (14.403 assertion), focused workbook 3/3 (31), browser mobile/desktop 10/10,
+  TypeScript/build, Pint/diff, dependency audit nol, serta compatibility check
+  lima sheet tanpa formula/error cell lulus. Status `CONFIRMED / PUSHED /
+  LOCAL_VALIDATED / UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED / BUSINESS_READY=false`; production dan UAT Owner nyata
+  belum berubah.
+
 - Wave B analitik booking per paket exact source
   `7d82f308da02357fd4de3677b96e81fd53be0424` aktif pada immutable release
   `20260828180149-7d82f30`; rollback `20260828174039-806adbe` kompatibel.

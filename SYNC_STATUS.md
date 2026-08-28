@@ -12,12 +12,36 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-29T01:55:00+07:00 |
-| Branch aktif | `codex/coyabag-uat-20260829` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-29T02:20:00+07:00 |
+| Branch aktif | `codex/knowledge-s343-sagabook-xlsx` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `a10eaeb` |
-| Informasi terakhir disinkronkan | COYABAG controlled real payment UAT access. |
-| Status sinkronisasi | Release `20260829-b6265cb`; `PRODUCTION_DEPLOYED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `72ba3dc5d947ddff7ac14c3720bc8650c72629c1` |
+| Informasi terakhir disinkronkan | SagaBook S343 styled XLSX report export candidate. |
+| Status sinkronisasi | Source `7edc7b9842f7d794187632dcf6a711d38e14f605`; `PUSHED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`. |
+
+## SagaBook S343 styled XLSX report export
+
+- Exact candidate `7edc7b9842f7d794187632dcf6a711d38e14f605` menghasilkan
+  workbook multi-sheet dengan ringkasan, label manusiawi, format Rupiah/
+  tanggal/jam, filter/freeze pane, status berwarna, print layout, kamus status,
+  dan formula injection defense; CSV tetap kompatibel.
+- Full PHP 1.282/1.282 (14.403), focused workbook 3/3 (31), visual
+  mobile/desktop 10/10, TypeScript/build, Pint/diff, npm/Composer/OSV audit
+  nol, serta pembacaan lima sheet tanpa formula/error cell lulus.
+- Status `CONFIRMED / PUSHED / LOCAL_VALIDATED / UIUX_VALIDATED /
+  QA_VALIDATED / SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; guarded release,
+  authenticated Owner spreadsheet UAT, dan `BUSINESS_READY` masih pending.
+
+## File yang berubah pada sinkronisasi SagaBook S343
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook Wave B package analytics
 

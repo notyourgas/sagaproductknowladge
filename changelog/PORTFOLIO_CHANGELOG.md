@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-29 - SagaBook styled XLSX report export candidate
+
+- Export laporan dan closing SagaBook kini mempunyai workbook multi-sheet
+  yang rapi, berformat, terfilter, mudah dicetak, dan dilengkapi ringkasan serta
+  kamus status tanpa mengubah CSV.
+- Typed value dipertahankan, formula injection dinetralisasi, dan closing
+  memisahkan keuangan, sesi/stok, serta audit/revisi agar lebih mudah dibaca.
+- Exact candidate `7edc7b9842f7d794187632dcf6a711d38e14f605` lulus full
+  test/build/visual/security/data-integrity gate. Status `PUSHED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; Owner UAT dan guarded
+  release masih pending. Produk SagaDev lain tidak berubah.
+
 ## 2026-08-29 - SagaBook Wave B package analytics production activation
 
 - Exact source `7d82f308da02357fd4de3677b96e81fd53be0424` aktif pada release

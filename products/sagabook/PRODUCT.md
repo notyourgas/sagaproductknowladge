@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 29 Agustus 2026 01:22 WIB
-Evidence status: analitik booking per paket Wave B sudah production-deployed dan production-activated pada exact source `7d82f308da02357fd4de3677b96e81fd53be0424`; canary read-only 32/32 lulus tanpa mutasi, authenticated Owner/Staff UAT belum karena credential bridge lokal tidak aktif, dan business readiness tetap terpisah
+Updated: 29 Agustus 2026 02:20 WIB
+Evidence status: kandidat export XLSX rapi sudah pushed dan local-validated pada exact source `7edc7b9842f7d794187632dcf6a711d38e14f605`; production tetap exact source `7d82f308da02357fd4de3677b96e81fd53be0424`, authenticated Owner UAT belum, dan business readiness tetap terpisah
 
 ## Tujuan dokumen
 
@@ -15,6 +15,25 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
+
+- Export laporan XLSX S343 pada exact candidate
+  `7edc7b9842f7d794187632dcf6a711d38e14f605` kini menghasilkan workbook yang
+  langsung terbaca oleh orang awam: judul dan konteks periode/cabang,
+  ringkasan metrik, nama kolom manusiawi, freeze header, filter, lebar kolom,
+  wrap, zebra row, format Rupiah/tanggal/jam, warna status, serta pengaturan
+  cetak landscape. Export closing dipisah menjadi ringkasan, keuangan,
+  sesi/stok, audit/revisi, dan kamus status; export lain memakai ringkasan,
+  data utama, dan kamus status. Nilai tetap typed, formula injection
+  dinetralisasi, empty state eksplisit, CSV lama tidak berubah, dan frontend
+  memakai satu jalur export server-authoritative. Gate exact candidate lulus
+  PHP 1.282/1.282 (14.403 assertion), focused workbook 3/3 (31), visual
+  Task Manager mobile/desktop 10/10, TypeScript, build, Pint/diff check,
+  npm/Composer/OSV audit nol, serta validasi pembacaan workbook lima sheet
+  tanpa formula atau error cell. Status `CONFIRMED / PUSHED /
+  LOCAL_VALIDATED / UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED / BUSINESS_READY=false`; Owner UAT dengan Excel atau
+  aplikasi spreadsheet nyata dan guarded production release masih pending.
 
 - Analitik booking per paket Wave B aktif pada exact source
   `7d82f308da02357fd4de3677b96e81fd53be0424`, immutable release

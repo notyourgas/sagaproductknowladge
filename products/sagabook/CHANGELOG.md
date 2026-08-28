@@ -1,5 +1,25 @@
 # SagaBook Changelog
 
+## 2026-08-29 - S343 styled XLSX report export candidate
+
+- Export laporan XLSX sekarang memakai workbook multi-sheet dengan metadata
+  periode/cabang/timezone, ringkasan, label manusiawi, freeze header, filter,
+  width/wrap, zebra row, format Rupiah/tanggal/jam, status berwarna, kamus
+  status, dan layout cetak landscape.
+- Closing dipisah menjadi `Ringkasan`, `Closing Keuangan`, `Sesi & Stok`,
+  `Audit & Revisi`, dan `Kamus Status`; laporan lain memakai ringkasan, data
+  utama, dan kamus status. Empty state tetap jelas dan CSV tidak berubah.
+- Nilai angka/tanggal tetap typed, string pemicu formula dinetralisasi, dan UI
+  lama yang tidak terjangkau dihapus agar hanya ada satu jalur export server.
+- Exact candidate `7edc7b9842f7d794187632dcf6a711d38e14f605` lulus full PHP
+  1.282/1.282 (14.403 assertion), focused 3/3 (31), visual 10/10,
+  TypeScript/build, Pint/diff, tiga audit dependency nol, serta compatibility
+  check lima sheet dengan 0 formula/error cell.
+- Status `CONFIRMED / PUSHED / LOCAL_VALIDATED / UIUX_VALIDATED /
+  QA_VALIDATED / SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
+  Guarded release dan authenticated Owner UAT masih pending.
+
 ## 2026-08-29 - Wave B analitik booking per paket production activation
 
 - Exact source `7d82f308da02357fd4de3677b96e81fd53be0424` aktif pada immutable

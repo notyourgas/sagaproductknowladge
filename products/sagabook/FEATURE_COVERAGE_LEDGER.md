@@ -1,6 +1,24 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 29 Agustus 2026 01:22 WIB
+Evidence cut-off: 29 Agustus 2026 02:20 WIB
+
+Export XLSX rapi S343 exact candidate
+`7edc7b9842f7d794187632dcf6a711d38e14f605` telah `CONFIRMED / PUSHED /
+LOCAL_VALIDATED / UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+DATA_INTEGRITY_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`.
+Coverage UI -> controller/job -> report export service -> XLSX builder -> file
+download membuktikan satu jalur server-authoritative, konteks tenant/cabang/
+periode/timezone, ringkasan, label manusiawi, typed cell, format Rupiah/
+tanggal/jam, warna status, filter, freeze pane, lebar/wrap, print layout,
+kamus status, serta empty state. Closing dipisah menjadi lima sheet: Ringkasan,
+Closing Keuangan, Sesi & Stok, Audit & Revisi, dan Kamus Status. Formula
+injection dinetralisasi, CSV lama tidak berubah, dan workbook sintetis terbaca
+dengan 0 formula serta 0 error cell. Gate exact candidate: full PHP
+1.282/1.282 (14.403 assertion), focused workbook 3/3 (31), visual
+mobile/desktop 10/10, TypeScript/build, Pint/diff check, dan audit
+npm/Composer/OSV nol. Gap tersisa: review kandidat, guarded production release,
+download/open authenticated Owner UAT pada spreadsheet nyata, dan
+`BUSINESS_READY=false`.
 
 Wave B analitik booking per paket telah `CONFIRMED / PRODUCTION_DEPLOYED /
 PRODUCTION_ACTIVATED` pada exact source
