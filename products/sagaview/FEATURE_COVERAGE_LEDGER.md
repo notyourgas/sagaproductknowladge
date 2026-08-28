@@ -1,6 +1,21 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 28 Agustus 2026 12:00 WIB
+Evidence cut-off: 28 Agustus 2026 13:00 WIB
+
+S332 exclusive artifact build lock: exact pushed source
+`ac8a8df10f47160bb0c78f8caf860a9c8cfc66c9` membuat artifact builder memegang
+named process lock eksklusif untuk seluruh run dan melepasnya melalui
+`finally`. Proses kedua ditolak sebelum storage check atau write, sehingga
+release dengan nama sama tidak dapat dibangun bersamaan.
+
+RED 1 test gagal lalu GREEN 8/55 assertion lulus; regresi release/custody
+15/124 assertion, syntax PowerShell, npm/Composer audit nol, diff, clean
+commit, push, dan remote exact lulus. Probe concurrency sintetis membuktikan
+proses kedua ditolak, lock dapat dipakai ulang, tidak menulis artifact, dan
+tidak memakai data customer. Status `PUSHED / DEVOPS_VALIDATED /
+SECURITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+RELEASE_BLOCKED / PRODUCTION_UNCHANGED`. Gap berikutnya: media lokal terpisah
+terotorisasi dan artifact exact S332.
 
 S331 release mirror integrity verification: exact pushed source
 `0966bbd7fedaaa51bf67332139f07f7d2690553d` menghitung ulang SHA-256 archive,

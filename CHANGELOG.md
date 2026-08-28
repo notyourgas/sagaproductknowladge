@@ -1,5 +1,23 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-28 - SagaView S332 exclusive artifact build lock sync
+
+- Ringkasan: menyinkronkan lock eksklusif yang mencegah dua artifact builder
+  berjalan bersamaan pada host/session lokal yang sama.
+- Alasan: dua proses bersamaan dapat memakai nama release yang sama dan
+  mencampur output sebelum pemeriksaan integritas akhir.
+- Produk/area: SagaView release operations, concurrency, security, QA, dan
+  provenance.
+- Klasifikasi: `CONFIRMED / PUSHED / DEVOPS_VALIDATED /
+  SECURITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  RELEASE_BLOCKED / PRODUCTION_UNCHANGED`; exact source
+  `ac8a8df10f47160bb0c78f8caf860a9c8cfc66c9`.
+- RED-GREEN, focused 8/55, regresi 15/124 assertion, concurrency probe tanpa
+  write/customer data, syntax, npm/Composer audit nol, clean commit, dan remote
+  exact lulus.
+- Dokumen terdampak: Product, feature ledger, changelog SagaView, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-08-28 - SagaView S331 mirror integrity verification sync
 
 - Ringkasan: menyinkronkan verifikasi checksum dan manifest primary/mirror

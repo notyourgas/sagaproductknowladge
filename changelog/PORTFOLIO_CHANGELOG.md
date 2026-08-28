@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-28 - SagaView S332 exclusive artifact build lock
+
+- Exact pushed source `ac8a8df10f47160bb0c78f8caf860a9c8cfc66c9`
+  membuat artifact builder menolak proses kedua selama satu build masih aktif
+  dan selalu melepas lock melalui `finally`.
+- RED-GREEN, focused 8/55, regresi release/custody 15/124, probe concurrency
+  tanpa artifact/customer data, syntax, dan dependency audit nol lulus.
+- Status `PUSHED / DEVOPS_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED / PRODUCTION_UNCHANGED`; media
+  lokal terpisah terotorisasi dan artifact exact S332 masih wajib.
+
 ## 2026-08-28 - SagaView S331 release mirror integrity verification
 
 - Exact pushed source `0966bbd7fedaaa51bf67332139f07f7d2690553d`

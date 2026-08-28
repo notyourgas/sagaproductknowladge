@@ -1,5 +1,25 @@
 # SagaView Changelog
 
+## 2026-08-28 - S332 exclusive artifact build lock
+
+- Klasifikasi: `CONFIRMED / PUSHED / DEVOPS_VALIDATED /
+  SECURITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  RELEASE_BLOCKED / PRODUCTION_UNCHANGED`.
+- Before: dua proses artifact builder dapat lolos preflight bersamaan dan
+  menulis release dengan nama yang sama.
+- After: exact source `ac8a8df10f47160bb0c78f8caf860a9c8cfc66c9`
+  memegang named process lock selama seluruh run; proses kedua fail-closed dan
+  lock selalu dilepas melalui `finally`.
+- Acceptance: RED 1 test gagal; GREEN focused 8/55 dan regresi
+  release/custody 15/124 assertion lulus. Probe concurrency menolak proses
+  kedua, membuktikan lock reusable, dan memakai nol artifact/customer data.
+  Syntax, npm audit, Composer audit, diff, clean commit, push, dan remote exact
+  lulus.
+- Boundary: tidak ada API, database, migration, customer data, payment,
+  artifact baru, deploy, activation, atau perubahan produk lain. Media lokal
+  terpisah terotorisasi dan artifact exact S332 masih pending; production tetap
+  S311.
+
 ## 2026-08-28 - S331 release mirror integrity verification
 
 - Klasifikasi: `CONFIRMED / PUSHED / DEVOPS_VALIDATED /
