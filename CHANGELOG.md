@@ -1,5 +1,21 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-29 - SagaBook S341-S344 production activation sync
+
+- Ringkasan: mengaktifkan closing manual-share, rekap sesi/keuangan harian,
+  serta Task Manager integritas laporan yang terhubung dan memberi tindakan
+  penyelesaian spesifik tanpa koreksi data bisnis otomatis.
+- Provenance: exact cumulative source
+  `91545d1f974b5e992cc661637c9e234ef504dbec`, immutable release
+  `20260828210027-91545d1`, rollback `20260828180149-7d82f30`.
+- Evidence: PHP 1.279/1.279 (14.373), TypeScript/build, browser serial 10/10,
+  encrypted backup/disposable restore, migration pending 0, reconciliation
+  15 scope/0 gagal, verifier 23/23, dan public/security smoke 3/3 lulus.
+- Klasifikasi: `CONFIRMED / PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+- Authenticated Owner/operator UAT belum berjalan karena credential bridge
+  lokal tidak aktif; production tidak dimutasi oleh percobaan UAT.
+
 ## 2026-08-29 - SagaView S343 production activation sync
 
 - Ringkasan: menyinkronkan aktivasi cumulative Studio hardening S338-S341 dan

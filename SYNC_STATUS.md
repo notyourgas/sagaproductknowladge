@@ -13,11 +13,25 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Field | Nilai |
 |---|---|
 | Waktu pembaruan terakhir | 2026-08-29 |
-| Branch aktif | Detached worktree dari exact `origin/main` |
+| Branch aktif | `codex/knowledge-s344-production-sync` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `a083bc3` |
-| Informasi terakhir disinkronkan | COYABAG payment return URL contract fix. |
-| Status sinkronisasi | Release `20260829-e1c8b65`; `PRODUCTION_DEPLOYED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `a0e0bb40495039fd4fd0e07ebde3b42149aead41` |
+| Informasi terakhir disinkronkan | SagaBook S341-S344 production activation. |
+| Status sinkronisasi | Release `20260828210027-91545d1`; `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`. |
+
+## SagaBook S341-S344 production activation
+
+- Exact cumulative source `91545d1f974b5e992cc661637c9e234ef504dbec`
+  aktif pada release `20260828210027-91545d1`; rollback
+  `20260828180149-7d82f30` tersedia.
+- Closing manual-share dan rekap sesi/keuangan harian aktif. Task integritas
+  laporan sekarang mempunyai target, alasan, tindakan, dan kondisi selesai;
+  task legacy tidak terhubung dan action hilang tersisa 0.
+- PHP 1.279/1.279 (14.373), TypeScript/build, browser 10/10, fresh encrypted
+  backup/disposable restore, migration pending 0, reconciliation 15 scope/0
+  gagal, verifier 23/23, serta public/security smoke 3/3 lulus.
+- Authenticated Owner/operator UAT berhenti aman sebelum login karena
+  credential bridge lokal tidak aktif; `BUSINESS_READY=false`.
 
 ## SagaView S343 production activation
 

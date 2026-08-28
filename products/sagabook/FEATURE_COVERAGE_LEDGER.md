@@ -1,6 +1,22 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 29 Agustus 2026 01:22 WIB
+Evidence cut-off: 29 Agustus 2026
+
+S341-S344 exact cumulative source
+`91545d1f974b5e992cc661637c9e234ef504dbec` telah `CONFIRMED /
+PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` pada immutable release
+`20260828210027-91545d1`, rollback `20260828180149-7d82f30`. Coverage closing
+memastikan admin dapat Salin Teks/Buka Share Sheet tanpa API WhatsApp, dengan
+rekap sesi per paket, add-on, dan keuangan harian. Coverage Task Manager
+memastikan target closing/booking server-authored, ringkasan masalah, tindakan,
+dan kondisi selesai tersedia; target yang tidak sah gagal tertutup dan tidak
+ada koreksi data bisnis otomatis. Repair preview/apply/replay idempoten
+menghasilkan legacy unlinked 0 dan missing action 0. Gate final: PHP
+1.279/1.279 (14.373), TypeScript/build, browser serial 10/10, encrypted
+backup/disposable restore, migration pending 0, reconciliation 15 scope/0
+gagal, verifier 23/23, serta public/security smoke 3/3. Satu warning closing
+valid tetap actionable. Authenticated Owner/operator UAT belum karena bridge
+credential lokal tidak aktif; `BUSINESS_READY=false`.
 
 Wave B analitik booking per paket telah `CONFIRMED / PRODUCTION_DEPLOYED /
 PRODUCTION_ACTIVATED` pada exact source
