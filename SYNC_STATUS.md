@@ -12,12 +12,38 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-28T16:32:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-28T16:46:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
-| Informasi terakhir disinkronkan | SagaBook Resend provider dan signed webhook production activation. |
-| Status sinkronisasi | Active source `68b978e5` / release `20260828063524-68b978e`; provider/webhook aktif, seluruh tenant tetap opt-in mati. |
+| Informasi terakhir disinkronkan | SagaBook friendly customer email copy dan recovery link candidate. |
+| Status sinkronisasi | Candidate `2159ccd2` pushed/local-validated dan belum dideploy; production tetap `68b978e5` / `20260828063524-68b978e`. |
+
+## SagaBook friendly customer email copy dan recovery link
+
+- Exact source `2159ccd26d67811e6e3f4f54ebcbdfa7df101f34` pada branch
+  `codex/sagabook-friendly-email-copy` membedakan copy confirmation, H-1, dan
+  H-3 serta mempertahankan ringkasan booking yang informatif.
+- HTML dan plain text membawa CTA, tenant-scoped booking-detail link, dan URL
+  cadangan untuk recovery setelah tab tertutup. Dynamic HTML serta subject
+  injection dipagari fail-closed.
+- Focused email 9/9 (90 assertion), public-route 1/1 (15), post-payment guard
+  4/4 (70), Pint, PHP syntax, diff, dan Composer audit nol advisory lulus.
+- Status `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED`; seluruh tenant toggle tetap opt-in mati dan
+  `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi friendly customer email SagaBook
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `DECISIONS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook Resend provider dan signed webhook production activation
 

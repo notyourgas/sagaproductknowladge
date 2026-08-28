@@ -31,6 +31,19 @@ dalam satu dokumen public-safe.
   authenticated operator UAT, dan pilot belum dilakukan.
   `BUSINESS_READY=false`.
 
+- Friendly customer email copy candidate
+  `2159ccd26d67811e6e3f4f54ebcbdfa7df101f34` (`codex/sagabook-friendly-email-copy`):
+  confirmation, reminder H-1, dan reminder H-3 memiliki subject, heading,
+  intro, serta CTA yang sesuai konteks. Ringkasan studio, lokasi, kode booking,
+  jadwal, paket, dan total tetap tersedia. HTML dan plain text membawa recovery
+  link tenant-scoped beserta URL cadangan sehingga detail booking dapat dibuka
+  kembali setelah tab tertutup. Dynamic HTML di-escape, header text dibersihkan
+  dari control/bidi characters, dan route tenantless tidak dipakai. Focused
+  email 9/9 (90 assertion), public-route 1/1 (15), post-payment guard 4/4 (70),
+  format/syntax/diff, serta Composer audit nol advisory lulus. Status
+  `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED`; tenant toggle dan `BUSINESS_READY` tidak berubah.
+
 - Salin template WhatsApp Booking Detail S313 exact source
   `68b978e533d2fcc23dd7be23ddf23b2328f51a6b`, immutable release
   `20260828063524-68b978e`, rollback `20260828062330-4aae315`:

@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-28 - SagaBook friendly customer email candidate
+
+- Email confirmation, H-1, dan H-3 memakai copy ramah yang tetap memuat
+  ringkasan booking serta CTA berbeda sesuai konteks.
+- Setiap HTML/plain-text email membawa tenant-scoped booking-detail link dan
+  fallback URL agar customer dapat kembali setelah tab tertutup; dynamic
+  content dan subject dipagari terhadap injection.
+- Exact source `2159ccd26d67811e6e3f4f54ebcbdfa7df101f34` telah dipush;
+  focused email 9/9 (90 assertion), public-route 1/1 (15), post-payment guard
+  4/4 (70), format/syntax/diff, dan dependency audit lulus.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`;
+  tenant opt-in, activation, dan `BUSINESS_READY` tidak berubah.
+
 ## 2026-08-28 - SagaBook Resend provider dan webhook production activation
 
 - Runtime Resend SagaBook kini memakai restricted sending credential dan

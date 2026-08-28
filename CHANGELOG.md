@@ -1,5 +1,21 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-28 - SagaBook friendly customer email sync
+
+- Ringkasan: menyinkronkan copy kontekstual confirmation/H-1/H-3 dan recovery
+  link tenant-scoped untuk membuka kembali detail booking setelah tab tertutup.
+- Provenance: source `2159ccd26d67811e6e3f4f54ebcbdfa7df101f34`, branch
+  `codex/sagabook-friendly-email-copy`.
+- Evidence: focused email 9/9 (90 assertion), public-route 1/1 (15),
+  post-payment guard 4/4 (70), Pint, syntax, diff, dan Composer audit nol
+  advisory.
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`.
+- Production berubah: tidak. Tenant toggle, provider activation,
+  `BUSINESS_READY`, dan operational WhatsApp tidak berubah.
+- Dokumen terdampak: Product, Dossier, feature ledger/changelog SagaBook,
+  portfolio, master knowledge, decisions, root changelog, dan sync status.
+
 ## 2026-08-28 - SagaBook Resend runtime activation sync
 
 - Ringkasan: menyinkronkan aktivasi restricted Resend sending credential dan

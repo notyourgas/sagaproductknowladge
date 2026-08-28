@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-116 - Email customer SagaBook ramah, informatif, dan recoverable
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-28 |
+| Topik | Copy dan recovery link pada email confirmation serta reminder SagaBook |
+| Keputusan | Email confirmation pembayaran, reminder H-1, dan reminder H-3 memakai bahasa Indonesia yang ramah tetapi tetap informatif. Setiap tipe memiliki subject, heading, intro, dan CTA sesuai konteks; studio, lokasi, kode booking, jadwal, paket, dan total tetap ditampilkan. HTML dan plain text wajib membawa tenant-scoped booking-detail link beserta fallback URL agar customer dapat membuka kembali detail setelah tab tertutup. |
+| Alasan | Customer perlu memahami status dan persiapan dengan cepat sekaligus mempunyai jalur pemulihan yang aman ketika tab pembayaran/booking sudah ditutup. |
+| Alternatif yang dipertimbangkan | Copy generik yang sama untuk semua tipe; hanya tombol tanpa URL cadangan; link tenantless yang berisiko 404. |
+| Dampak | Candidate source membersihkan subject dari control/bidi injection, meng-escape HTML dinamis, dan mempertahankan route tenant authoritative. Tidak ada perubahan booking/payment, database, provider, atau toggle tenant. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; source `2159ccd26d67811e6e3f4f54ebcbdfa7df101f34` |
+| Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [SagaBook Changelog](products/sagabook/CHANGELOG.md), [SagaBook Ledger](products/sagabook/FEATURE_COVERAGE_LEDGER.md) |
+
 ## DEC-115 - Email confirmation dan reminder SagaBook memakai Resend dengan aktivasi terpisah
 
 | Field | Isi |

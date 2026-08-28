@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 28 Agustus 2026 16:32 WIB
-Evidence status: Resend provider dan signed webhook production aktif; seluruh tenant tetap opt-in mati, tenant-linked operational UAT belum, dan operational WhatsApp tetap tersuspensi
+Updated: 28 Agustus 2026 16:46 WIB
+Evidence status: Resend provider dan signed webhook production aktif; friendly email copy dengan recovery link tenant-scoped sudah pushed tetapi belum dideploy; seluruh tenant tetap opt-in mati, tenant-linked operational UAT belum, dan operational WhatsApp tetap tersuspensi
 
 ## Tujuan dokumen
 
@@ -64,6 +64,19 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   PRODUCTION_DEPLOYED / EMAIL_PROVIDER_ACTIVATED / WEBHOOK_ACTIVATED`;
   tenant-linked outbox/reminder UAT dan pilot masih residual,
   `BUSINESS_READY=false`.
+
+- Friendly customer email copy candidate exact source
+  `2159ccd26d67811e6e3f4f54ebcbdfa7df101f34` pada branch
+  `codex/sagabook-friendly-email-copy` membedakan nada confirmation, H-1, dan
+  H-3 tanpa mengurangi studio, lokasi, kode booking, jadwal, paket, serta total.
+  HTML dan plain text sama-sama membawa CTA dan URL cadangan tenant-scoped
+  `/{slug}/b/{code}` agar customer dapat membuka kembali detail setelah tab
+  tertutup. Konten dinamis di-escape, subject menolak control/bidi injection,
+  route tenantless tidak digunakan, dan tidak ada perubahan provider,
+  booking/payment, database, atau tenant toggle. Focused email 9/9 (90
+  assertion), public-route 1/1 (15), post-payment guard 4/4 (70), Pint,
+  syntax, diff, dan Composer audit nol advisory lulus. Status `CONFIRMED /
+  PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`.
 
 - Guard observability return pembayaran S312 exact source
   `88b8ea9ad9ce03f91d3d9099cffcb71e9f06caaf` aktif pada immutable release

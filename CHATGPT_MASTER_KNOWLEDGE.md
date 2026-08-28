@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 28 Agustus 2026 14:17 WIB
+Evidence cut-off: 28 Agustus 2026 16:46 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -31,6 +31,16 @@ dipasang melalui secret store. Canary internal diterima dan signed `sent` serta
 seluruh tenant toggle tetap mati, sehingga tenant-linked UAT, pilot, dan
 `BUSINESS_READY` masih pending. Operational WhatsApp tetap tersuspensi sebagai
 channel terpisah.
+
+SagaBook friendly customer email copy exact candidate
+`2159ccd26d67811e6e3f4f54ebcbdfa7df101f34` telah dipush pada branch
+`codex/sagabook-friendly-email-copy`. Confirmation, H-1, dan H-3 mempunyai
+copy/CTA kontekstual serta ringkasan studio, lokasi, kode booking, jadwal,
+paket, dan total. HTML/plain text selalu menyertakan recovery link
+tenant-scoped dan fallback URL untuk membuka kembali detail booking. Dynamic
+content di-escape dan subject dibersihkan dari control/bidi injection. Status
+`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; provider,
+toggle tenant, activation, dan `BUSINESS_READY` tidak berubah.
 
 SagaBook S313 exact source
 `68b978e533d2fcc23dd7be23ddf23b2328f51a6b` aktif pada immutable release

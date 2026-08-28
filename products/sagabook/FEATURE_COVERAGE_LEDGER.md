@@ -1,6 +1,6 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 28 Agustus 2026 16:32 WIB
+Evidence cut-off: 28 Agustus 2026 16:46 WIB
 
 Resilient Resend customer email exact source
 `4aae315ce71933bf2d283a690fb060a95a29aa49` telah `CONFIRMED / PUSHED /
@@ -23,6 +23,18 @@ unsigned request gagal tertutup `401`, health `200`, queue/PHP aktif, dan
 warning queue nol pada window verifikasi. Seluruh tenant toggle masih opt-in
 mati. Provider/webhook activation lulus; tenant-linked confirmation/reminder,
 authenticated UAT, pilot, dan `BUSINESS_READY` tetap belum.
+
+Friendly customer email copy candidate exact source
+`2159ccd26d67811e6e3f4f54ebcbdfa7df101f34` telah `CONFIRMED / PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`. Coverage
+renderer confirmation/H-1/H-3 mencakup context-specific subject/heading/CTA,
+studio, lokasi, kode booking, jadwal, paket, total, HTML/plain-text parity,
+fallback URL, escaping dynamic HTML, subject control/bidi sanitization, dan
+tenant-scoped `/{slug}/b/{code}` yang dibuktikan membuka tenant authoritative.
+Focused email 9/9 (90 assertion), public-route 1/1 (15), post-payment guard 4/4
+(70), Pint, PHP syntax, diff check, dan Composer audit nol advisory lulus.
+Database, provider, toggle tenant, production, activation, dan
+`BUSINESS_READY` tidak berubah.
 
 Salin template WhatsApp Booking Detail S313 exact source
 `68b978e533d2fcc23dd7be23ddf23b2328f51a6b` telah `CONFIRMED / PUSHED /
