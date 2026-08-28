@@ -1,5 +1,21 @@
 # SagaBook Changelog
 
+## 2026-08-28 - S313 booking-detail WhatsApp copy production activation
+
+- Exact source `68b978e533d2fcc23dd7be23ddf23b2328f51a6b` aktif pada
+  immutable release `20260828063524-68b978e`; rollback
+  `20260828062330-4aae315` tersedia.
+- Booking Detail hanya menyalin tiga pesan hasil render ke clipboard. Tidak ada
+  aksi/API pembuka WhatsApp, provider call, delivery/outbox write, atau mutasi
+  booking/result/reminder; admin menempel dan mengirim sendiri.
+- Full PHP 1.213/1.213 (13.672 assertion), focused/release hardening,
+  typecheck/build, audit dependency nol, fresh encrypted backup
+  `20260828T063402Z`, disposable restore, migration, manifest, service,
+  rollback, verifier 19/19, dan public/security smoke 3/3 lulus.
+- Status `CONFIRMED / PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+  WhatsApp operasional tetap tersuspensi, authenticated clipboard UAT residual,
+  dan `BUSINESS_READY=false`.
+
 ## 2026-08-28 - Dashboard Changelog 1.16.0 production
 
 - Registry dashboard naik dari `1.15.1` tertanggal 21 Agustus menjadi

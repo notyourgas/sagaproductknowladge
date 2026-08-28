@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 28 Agustus 2026 13:39 WIB
-Evidence status: resilient Resend customer email code is production-deployed but runtime delivery remains disabled pending restricted secrets and authenticated synthetic UAT; operational WhatsApp stays suspended
+Updated: 28 Agustus 2026 13:45 WIB
+Evidence status: booking-detail WhatsApp copy templates are production-activated; copy remains manual, Resend runtime delivery remains disabled, and operational WhatsApp stays suspended
 
 ## Tujuan dokumen
 
@@ -14,7 +14,7 @@ belum pasti dicatat di [GAPS](../../GAPS.md#sagabook).
 Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
-## Kandidat fitur terbaru
+## Fitur terbaru
 
 - S313 menambahkan menu `Salin template WA` pada setiap Booking Detail untuk
   Konfirmasi Sesi Foto, Pengingat Sesi Foto, dan Pengiriman Link Drive Foto.
@@ -23,14 +23,15 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   hanya mendapat capability copy pada cabang delegasinya. Status, jadwal, dan
   ketersediaan Link Drive dipagari fail-closed. Copy hanya menulis clipboard
   manual, tidak membuat delivery, tidak mengubah status booking/hasil/reminder,
-  dan tidak memanggil provider. Exact source
-  `a32b242d464b5149b812fe03b77204443513d08c` pada branch
-  `codex/s313-sagabook-wa-copy-templates` telah lulus 49 test terkait (228
-  assertion), tiga regresi workflow (25 assertion), critical typecheck, build
-  5.133 modul, format, syntax, dan diff check. Status `CONFIRMED / PUSHED /
-  QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED`; production tetap S312 dan WhatsApp operasional
-  tetap tersuspensi.
+  dan tidak memanggil provider atau membuka WhatsApp. Exact source
+  `68b978e533d2fcc23dd7be23ddf23b2328f51a6b` aktif pada immutable release
+  `20260828063524-68b978e`, rollback `20260828062330-4aae315`. Full suite
+  1.213/1.213 (13.672 assertion), focused/release hardening, typecheck, build
+  5.133 modul, dependency audit nol, encrypted backup, disposable restore,
+  migration, manifest, service, rollback, verifier 19/19, dan public/security
+  smoke 3/3 lulus. Status `CONFIRMED / PUSHED / QA_VALIDATED /
+  SECURITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+  authenticated clipboard UAT residual dan `BUSINESS_READY=false`.
 
 ## Status production terbaru
 
@@ -42,9 +43,9 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   `deb9d0c6d61b09fb91ec61ad0caa201ec5983263` aktif secara kumulatif pada
   release `20260828062330-4aae315`. Live registry, active commit, manifest,
   rollback, service, migrasi, journal, post-payment guard, serta public smoke
-  dan security headers terverifikasi; audit pascadeploy 18/19 hanya merah pada
-  remote-main parity karena `main` kemudian maju membawa kandidat copy-template
-  WA yang belum dideploy. Status Changelog `CONFIRMED / PUSHED /
+  dan security headers terverifikasi. Source tersebut tetap aktif kumulatif
+  melalui release S313 `20260828063524-68b978e`; verifier terbaru 19/19
+  mengonfirmasi remote-main parity. Status Changelog `CONFIRMED / PUSHED /
   PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; `BUSINESS_READY=false`.
 
 - Email customer Resend exact source

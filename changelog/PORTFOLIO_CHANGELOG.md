@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-28 - SagaBook S313 booking-detail WhatsApp copy production
+
+- Tiga template tenant-editable dari Booking Detail kini aktif di production
+  sebagai copy-only: konfirmasi sesi, pengingat sesi, dan pengiriman Link Drive.
+  Admin menempel dan mengirim sendiri; tidak ada pembuka WhatsApp, provider
+  call, delivery write, atau mutasi booking/result/reminder.
+- Exact source `68b978e533d2fcc23dd7be23ddf23b2328f51a6b`, release
+  `20260828063524-68b978e`, rollback `20260828062330-4aae315`. Fresh encrypted
+  backup/disposable restore, full release gate, verifier 19/19, dan
+  public/security smoke 3/3 lulus.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; operational WhatsApp
+  tetap tersuspensi, authenticated clipboard UAT residual, dan
+  `BUSINESS_READY=false`.
+
 ## 2026-08-28 - SagaBook Dashboard Changelog 1.16.0 production
 
 - Dashboard Changelog aktif kini memakai versi `1.16.0` / 28 Agustus 2026,

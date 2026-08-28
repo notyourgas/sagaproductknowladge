@@ -1,6 +1,6 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 28 Agustus 2026 13:34 WIB
+Evidence cut-off: 28 Agustus 2026 13:45 WIB
 
 Resilient Resend customer email exact source
 `4aae315ce71933bf2d283a690fb060a95a29aa49` telah `CONFIRMED / PUSHED /
@@ -20,17 +20,21 @@ atau authenticated UAT, sehingga feature activation dan
 `BUSINESS_READY=false`.
 
 Salin template WhatsApp Booking Detail S313 exact source
-`a32b242d464b5149b812fe03b77204443513d08c` telah `CONFIRMED / PUSHED /
-QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
-IMPLEMENTED_NOT_DEPLOYED`. Coverage UI -> typed API -> tenant/branch-scoped
+`68b978e533d2fcc23dd7be23ddf23b2328f51a6b` telah `CONFIRMED / PUSHED /
+QA_VALIDATED / SECURITY_VALIDATED / PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED` pada immutable release `20260828063524-68b978e`, rollback
+`20260828062330-4aae315`. Coverage UI -> typed API -> tenant/branch-scoped
 renderer -> template aktif mencakup Konfirmasi Sesi Foto, Pengingat Sesi Foto,
 dan Pengiriman Link Drive Foto. Staff mendapat capability copy tanpa daftar
 template mentah atau hak editor. Placeholder allowlist, syarat status/jadwal,
 Link Drive, no-store response, audit tanpa message/PII/token, clipboard failure,
-dan state tanpa mutation dipagari fail-closed. 49 test terkait (228 assertion),
-tiga regresi workflow (25), critical typecheck, build 5.133 modul, format,
-syntax, dan diff check lulus. Production tetap S312; copy manual bukan delivery
-WhatsApp dan tidak melewati suspend provider.
+dan state tanpa mutation dipagari fail-closed. Booking Detail tidak menyediakan
+aksi/API pembuka WhatsApp; admin menempel dan mengirim sendiri. Full PHP
+1.213/1.213 (13.672 assertion), focused/release hardening, typecheck/build,
+dependency audit nol, fresh encrypted backup `20260828T063402Z`, disposable
+restore, migration, manifest, service, rollback, verifier 19/19, dan
+public/security smoke 3/3 lulus. Copy manual bukan delivery WhatsApp dan tidak
+melewati suspend provider; authenticated clipboard UAT tetap residual.
 
 Guard log return pascapembayaran S312 exact source
 `88b8ea9ad9ce03f91d3d9099cffcb71e9f06caaf` telah `CONFIRMED / PUSHED /

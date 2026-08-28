@@ -12,12 +12,12 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-28T13:39:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-28T13:45:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
-| Informasi terakhir disinkronkan | SagaBook Dashboard Changelog 1.16.0 production. |
-| Status sinkronisasi | Changelog source `deb9d0c6` aktif pada release `20260828062330-4aae315`; live registry 1.16.0 terverifikasi, remote main kemudian maju membawa kandidat lain yang belum aktif. |
+| Informasi terakhir disinkronkan | SagaBook S313 booking-detail WhatsApp copy production activation. |
+| Status sinkronisasi | Source `68b978e5` aktif pada release `20260828063524-68b978e`; verifier 19/19 dan public/security smoke 3/3 lulus. |
 
 ## SagaBook Dashboard Changelog 1.16.0 production
 
@@ -29,9 +29,10 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
   production setelah 21 Agustus. Focused/backend, build, browser dua viewport,
   typecheck, dependency audit, active runtime, manifest, service, migrasi,
   journal, smoke, dan security header lulus.
-- Audit pascadeploy 18/19 hanya gagal pada remote-main parity karena kandidat
-  copy-template WA dipush setelah release dan belum dideploy. Changelog tetap
-  `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; `BUSINESS_READY=false`.
+- Source changelog tetap aktif kumulatif melalui release S313
+  `20260828063524-68b978e`. Verifier terbaru 19/19 mengonfirmasi remote-main
+  parity; Changelog tetap `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` dan
+  `BUSINESS_READY=false`.
 
 ## File yang berubah pada sinkronisasi Changelog 1.16.0
 
@@ -68,18 +69,22 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 ## SagaBook S313 booking-detail WhatsApp copy templates
 
-- Exact source `a32b242d464b5149b812fe03b77204443513d08c` pada branch
-  `codex/s313-sagabook-wa-copy-templates` menyediakan tiga aksi salin dari
+- Exact source `68b978e533d2fcc23dd7be23ddf23b2328f51a6b` aktif pada
+  immutable release `20260828063524-68b978e`, rollback
+  `20260828062330-4aae315`, dan menyediakan tiga aksi salin dari
   Booking Detail, dengan render server-side dari template aktif tenant dan
   data booking terbaru.
 - Editor dan capability copy dipisahkan; Staff tetap tenant/branch-scoped.
   Placeholder, eligibility, cache, audit, clipboard, dan no-mutation boundary
-  dipagari fail-closed.
-- 49 test terkait (228 assertion), tiga regresi workflow (25), critical
-  typecheck, build 5.133 modul, format, syntax, dan diff check lulus.
-- Status `IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; copy manual bukan
-  delivery provider. Production tetap S312, WhatsApp operasional tetap
-  tersuspensi, dan `BUSINESS_READY=false`.
+  dipagari fail-closed. Tidak ada tombol/API pembuka WhatsApp; admin menempel
+  dan mengirim sendiri.
+- Full PHP 1.213/1.213 (13.672 assertion), focused/release hardening,
+  typecheck/build, dependency audit nol, fresh encrypted backup
+  `20260828T063402Z`, disposable restore, migration, manifest, service,
+  rollback, verifier 19/19, dan public/security smoke 3/3 lulus.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; copy manual bukan
+  delivery provider, WhatsApp operasional tetap tersuspensi, authenticated
+  clipboard UAT residual, dan `BUSINESS_READY=false`.
 
 ## File yang berubah pada sinkronisasi S313
 

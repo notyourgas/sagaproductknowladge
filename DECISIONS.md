@@ -1623,10 +1623,10 @@ keputusan pengganti.
 |---|---|
 | Tanggal | 2026-08-28 |
 | Topik | Template komunikasi customer dari Booking Detail SagaBook |
-| Keputusan | Setiap Booking Detail menyediakan aksi salin untuk Konfirmasi Sesi Foto, Pengingat Sesi Foto, dan Pengiriman Link Drive Foto. Pesan memakai detail booking terbaru dan dapat diedit melalui Template Editor. |
+| Keputusan | Setiap Booking Detail menyediakan aksi salin untuk Konfirmasi Sesi Foto, Pengingat Sesi Foto, dan Pengiriman Link Drive Foto. Pesan memakai detail booking terbaru dan dapat diedit melalui Template Editor. Booking Detail tidak membuka WhatsApp melalui tombol maupun API; admin menempel dan mengirim sendiri. |
 | Alasan | Operator membutuhkan pesan customer yang konsisten dan siap ditempel tanpa mengetik ulang detail setiap booking. |
 | Alternatif yang dipertimbangkan | Mempertahankan satu template hard-coded; menyalin template mentah dari halaman editor; langsung mengirim otomatis melalui provider. |
 | Dampak | Renderer server-side, template default, placeholder allowlist, capability copy terpisah, tenant/cabang guard, serta audit public-safe ditambahkan. Copy tetap manual, tidak mengubah status atau delivery ledger, dan tidak melewati suspend provider. |
 | Pemberi keputusan | Andreas / founder |
-| Status | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; exact source `a32b242d464b5149b812fe03b77204443513d08c` |
+| Status | `CONFIRMED / PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`; exact source `68b978e533d2fcc23dd7be23ddf23b2328f51a6b`, release `20260828063524-68b978e`, rollback `20260828062330-4aae315`; authenticated clipboard UAT residual |
 | Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [SagaBook Changelog](products/sagabook/CHANGELOG.md), [SagaBook Ledger](products/sagabook/FEATURE_COVERAGE_LEDGER.md) |

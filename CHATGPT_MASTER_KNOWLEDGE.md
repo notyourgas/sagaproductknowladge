@@ -1,6 +1,6 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 28 Agustus 2026 13:39 WIB
+Evidence cut-off: 28 Agustus 2026 13:45 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
@@ -12,9 +12,9 @@ kumulatif melalui exact changelog source
 recovery dashboard, return pascapembayaran tenant-scoped, dan suspend WhatsApp
 selama transisi provider. Live registry, active release/commit, manifest,
 rollback, service, migrasi, journal, post-payment guard, public smoke, serta
-security headers lulus. Audit independen pascadeploy 18/19 hanya merah pada
-remote-main parity karena `main` kemudian maju membawa kandidat copy-template
-WA yang belum dideploy. Changelog `PRODUCTION_DEPLOYED /
+security headers lulus. Source tersebut tetap aktif kumulatif melalui release
+S313 `20260828063524-68b978e`; verifier terbaru 19/19 mengonfirmasi
+remote-main parity. Changelog `PRODUCTION_DEPLOYED /
 PRODUCTION_ACTIVATED`; `BUSINESS_READY=false`.
 
 SagaBook Resend customer email exact source
@@ -28,16 +28,19 @@ EMAIL_RUNTIME_DISABLED`; API key/webhook secret, live send, authenticated UAT,
 feature activation, dan `BUSINESS_READY` masih pending. Operational WhatsApp
 tetap tersuspensi sebagai channel terpisah.
 
-SagaBook S313 exact pushed source
-`a32b242d464b5149b812fe03b77204443513d08c` menambahkan tiga aksi salin
+SagaBook S313 exact source
+`68b978e533d2fcc23dd7be23ddf23b2328f51a6b` aktif pada immutable release
+`20260828063524-68b978e`, rollback `20260828062330-4aae315`, dan menyediakan tiga aksi salin
 template WhatsApp di Booking Detail: konfirmasi sesi, pengingat sesi, dan
 pengiriman Link Drive foto. Pesan dirender server-side dari template aktif
 tenant dan data booking terbaru. Hak editor terpisah dari capability copy
 Staff; tenant/cabang, placeholder, eligibility, cache, audit, dan clipboard
-dipagari fail-closed. Copy tidak mengirim pesan, tidak memanggil provider, dan
-tidak mengubah status booking/hasil/reminder. Status `CONFIRMED / PUSHED /
-LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`;
-production tetap S312 dan WhatsApp operasional tetap tersuspensi.
+dipagari fail-closed. Copy tidak mengirim pesan, tidak membuka WhatsApp, tidak
+memanggil provider, dan tidak mengubah status booking/hasil/reminder. Full
+release gate, verifier 19/19, dan smoke/security 3/3 lulus. Status `CONFIRMED /
+PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; WhatsApp operasional
+tetap tersuspensi, authenticated clipboard UAT residual, dan
+`BUSINESS_READY=false`.
 
 SagaBook S312 exact source
 `88b8ea9ad9ce03f91d3d9099cffcb71e9f06caaf` aktif pada immutable release

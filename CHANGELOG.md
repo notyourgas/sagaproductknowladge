@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-28 - SagaBook S313 production activation sync
+
+- Ringkasan: menyinkronkan aktivasi production tiga template WhatsApp copy-only
+  dari Booking Detail; admin menempel dan mengirim sendiri tanpa aksi/API
+  pembuka WhatsApp atau provider delivery.
+- Provenance: source `68b978e533d2fcc23dd7be23ddf23b2328f51a6b`, release
+  `20260828063524-68b978e`, rollback `20260828062330-4aae315`, fresh encrypted
+  backup `20260828T063402Z`, disposable restore, serta verifier 19/19.
+- Klasifikasi: `CONFIRMED / PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`; operational WhatsApp tetap tersuspensi, authenticated
+  clipboard UAT residual, dan `BUSINESS_READY=false`.
+- Dokumen terdampak: Product, Dossier, feature ledger/changelog SagaBook,
+  portfolio, master knowledge, decisions, root changelog, dan sync status.
+
 ## 2026-08-28 - SagaBook Dashboard Changelog 1.16.0 sync
 
 - Ringkasan: menyinkronkan registry Changelog production dari `1.15.1` /

@@ -26,18 +26,21 @@ dalam satu dokumen public-safe.
   authenticated UAT, atau provider canary. `BUSINESS_READY=false`.
 
 - Salin template WhatsApp Booking Detail S313 exact source
-  `a32b242d464b5149b812fe03b77204443513d08c`:
-  `CONFIRMED / PUSHED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED`. Setiap detail booking menyediakan Konfirmasi Sesi
+  `68b978e533d2fcc23dd7be23ddf23b2328f51a6b`, immutable release
+  `20260828063524-68b978e`, rollback `20260828062330-4aae315`:
+  `CONFIRMED / PUSHED / QA_VALIDATED / SECURITY_VALIDATED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Setiap detail booking menyediakan Konfirmasi Sesi
   Foto, Pengingat Sesi Foto, dan Pengiriman Link Drive Foto yang dirender
   server-side dari template aktif tenant serta data booking terbaru. Editor
   tetap terpisah dari capability copy Staff; tenant/cabang, placeholder,
   status/jadwal/link, clipboard, cache, dan audit dipagari fail-closed. Copy
   manual tidak membuat delivery ledger, tidak mengubah state booking/hasil,
-  dan tidak memanggil provider. 49 test terkait (228 assertion), tiga regresi
-  workflow (25), critical typecheck, build 5.133 modul, format, syntax, dan diff
-  check lulus. Production tetap exact S312; dispatch WhatsApp operasional tetap
-  tersuspensi dan `BUSINESS_READY=false`.
+  tidak memanggil provider, dan tidak membuka WhatsApp. Full PHP 1.213/1.213
+  (13.672 assertion), focused/release hardening, critical typecheck, build
+  5.133 modul, dependency audit nol, fresh encrypted backup, disposable restore,
+  migration, manifest, service, rollback, verifier 19/19, dan public/security
+  smoke 3/3 lulus. Dispatch WhatsApp operasional tetap tersuspensi;
+  authenticated clipboard UAT residual dan `BUSINESS_READY=false`.
 
 - S309 plus hardening release transisi provider aktif pada exact source
   `a9127dc4595f2d8d7e60094ac330cac76448b255`, immutable release
