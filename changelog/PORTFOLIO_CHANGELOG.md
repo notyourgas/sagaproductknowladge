@@ -23,7 +23,19 @@
   smoke/security 3/3 lulus.
 - Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; operational WhatsApp
   tetap suspended, authenticated Owner UAT belum, dan `BUSINESS_READY=false`.
+## 2026-08-28 - SagaView S337 existing-feature Studio hardening
 
+- Galeri terfilter kini mempertahankan navigasi keyboard pada foto yang benar-
+  benar terlihat dan memberi focus/current semantics pada grid virtual.
+- Reset editor meminta konfirmasi serta membersihkan slot, rotasi, zoom, dan
+  posisi tanpa menghapus pilihan foto atau mengubah frame lain.
+- Exact local source `3dbfa6354bbf581dd16bfec1ad2e81e40c631f80`
+  lulus unit 248/248, full Playwright 156 pass/3 skip, matriks 50/200/500,
+  format/lint/typecheck/build/budget, visual/a11y, dan audit dependency nol.
+- Status `COMMITTED_LOCAL / REMOTE_PUSH_PENDING / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; fitur baru tetap `HOLD`,
+  authenticated UAT Windows dan approval deploy masih terpisah. SagaBook tidak
+  berubah.
 ## 2026-08-28 - SagaBook S316 report task action production
 
 - Task urgent report integrity kini selalu menuju issue/target operasional yang

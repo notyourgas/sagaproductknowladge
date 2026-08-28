@@ -33,7 +33,22 @@
   mengaktifkan dispatch. Authenticated Owner UAT masih menunggu bridge lokal.
 - Dokumen terdampak: Product, Dossier, feature ledger/changelog SagaBook,
   portfolio, master knowledge, root changelog, dan sync status.
+## 2026-08-28 - SagaView S337 existing-feature hardening sync
 
+- Ringkasan: menyinkronkan perbaikan keyboard/focus galeri terfilter dan reset
+  editor yang benar-benar membersihkan state visual setelah konfirmasi.
+- Provenance: exact Studio source
+  `3dbfa6354bbf581dd16bfec1ad2e81e40c631f80`, branch
+  `codex/s337-sagaview-existing-feature-hardening`, belum dipush.
+- Evidence: focused unit 8/8, full unit 248/248, focused Playwright 7/7,
+  matriks galeri 4/4, full Playwright 156 pass/3 skip, format, lint,
+  typecheck, build, bundle budget, visual/a11y, dan audit dependency nol.
+- Klasifikasi: `CONFIRMED / COMMITTED_LOCAL / REMOTE_PUSH_PENDING /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`.
+- Production berubah: tidak. Tidak ada backend/API/database/migration,
+  customer data, payment, atau SagaBook. Fitur baru tetap `HOLD`.
+- Dokumen terdampak: Product, feature ledger/changelog SagaView, portfolio,
+  root changelog, dan sync status.
 ## 2026-08-28 - SagaBook S316 report task action production sync
 
 - Ringkasan: menyinkronkan perbaikan task urgent report integrity agar selalu

@@ -1,6 +1,23 @@
 # SagaView Product Knowledge
 
-Updated: 28 Agustus 2026 19:12 WIB
+Updated: 28 Agustus 2026 20:08 WIB
+
+SagaView Studio S337 exact local source
+`3dbfa6354bbf581dd16bfec1ad2e81e40c631f80` berstatus `COMMITTED_LOCAL /
+REMOTE_PUSH_PENDING / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+PRODUCTION_UNCHANGED`. Fitur yang sudah ada diperkeras tanpa menambah fitur
+baru: keyboard galeri terfilter mengikuti urutan foto yang benar-benar terlihat,
+focus/current state galeri virtual lebih jelas, dan reset editor meminta
+konfirmasi serta membersihkan slot, rotasi, zoom, dan posisi secara konsisten.
+Pilihan foto tetap aman dan reset satu frame tidak mengubah frame lain.
+
+Focused unit 8/8, full unit 248/248, focused Playwright 7/7, matriks galeri
+50/200/500 4/4, full Playwright 156 lulus dengan 3 skip terkontrol, format,
+lint, typecheck, client/SSR build, bundle budget, visual mobile/desktop,
+forced-colors/reduced-motion, dan audit dependency nol lulus. Archive serta
+complete git bundle exact commit tersalin dengan checksum identik. Tidak ada
+perubahan API, database, migration, upload foto/path/output, payment, atau
+production; authenticated UAT Windows dan approval deploy tetap gate terpisah.
 
 SagaView S336 exact source
 `98f13a8d50f4ae0b97d787f1ab5e0896296007ec` sudah `PUSHED /

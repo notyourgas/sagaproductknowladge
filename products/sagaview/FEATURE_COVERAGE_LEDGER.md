@@ -1,6 +1,25 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 28 Agustus 2026 19:12 WIB
+Evidence cut-off: 28 Agustus 2026 20:08 WIB
+
+S337 hardening fitur Studio yang sudah ada: exact local source
+`3dbfa6354bbf581dd16bfec1ad2e81e40c631f80` memperbaiki navigasi keyboard
+pada galeri terfilter agar bergerak hanya di antara foto yang terlihat, memberi
+roving focus/current semantics pada galeri virtual, dan menjaga foto aktif
+tetap terlihat saat filter berubah. Reset frame/editor sekarang meminta
+konfirmasi dan benar-benar membersihkan slot, rotasi, zoom, serta posisi tanpa
+menghapus pilihan foto atau mengubah frame lain.
+
+Focused unit 8/8, full unit 248/248, focused Playwright 7/7, matriks galeri
+50/200/500 4/4, serta full Playwright 156 lulus dan 3 skip terkontrol. Format,
+lint, typecheck, build client/SSR, bundle budget, visual 390x844/1440x900,
+forced-colors/reduced-motion, npm audit, dan Composer audit lulus. Archive dan
+complete git bundle exact commit mempunyai salinan checksum-identik; tidak ada
+migration, API/backend, foto/path/output customer, payment, atau perubahan
+production. Status `COMMITTED_LOCAL / REMOTE_PUSH_PENDING / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; fitur baru tetap `HOLD` dan
+gap berikutnya adalah authenticated UAT Windows pada folder/permission/disk
+nyata sebelum review release production.
 
 S336 draft non-blocking dan frame-capacity recovery: exact pushed source
 `98f13a8d50f4ae0b97d787f1ab5e0896296007ec` memisahkan akses operasional

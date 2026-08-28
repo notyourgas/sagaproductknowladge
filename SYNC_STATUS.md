@@ -63,6 +63,27 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `products/sagabook/CHANGELOG.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
+
+## SagaView S337 existing-feature Studio hardening
+
+- Exact local source `3dbfa6354bbf581dd16bfec1ad2e81e40c631f80`
+  memperbaiki navigasi keyboard/focus pada galeri terfilter dan reset editor
+  yang sebelumnya menyisakan transform tersembunyi.
+- Reset kini meminta konfirmasi, membersihkan slot/rotasi/zoom/posisi, menjaga
+  pilihan foto, dan tidak mengubah frame lain.
+- Unit 248/248, full Playwright 156 pass/3 skip, matriks 50/200/500,
+  format/lint/typecheck/build/budget, visual/a11y, dan audit dependency nol
+  lulus. Archive/bundle exact commit mempunyai salinan checksum-identik.
+- Status `CONFIRMED / COMMITTED_LOCAL / REMOTE_PUSH_PENDING /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`;
+  authenticated UAT Windows dan approval deploy masih pending.
+
+## File yang berubah pada sinkronisasi SagaView S337
+
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHANGELOG.md`
 - `SYNC_STATUS.md`
 

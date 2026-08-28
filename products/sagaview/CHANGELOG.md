@@ -1,5 +1,34 @@
 # SagaView Changelog
 
+## 2026-08-28 - S337 existing-feature Studio hardening
+
+- Klasifikasi: `CONFIRMED / COMMITTED_LOCAL / REMOTE_PUSH_PENDING /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`;
+  fitur baru tetap `HOLD` dan `BUSINESS_READY=false`.
+- Before: panah keyboard pada mode galeri terfilter memakai indeks seluruh
+  folder sehingga dapat meloncat ke foto tersembunyi; reset frame hanya
+  mengosongkan slot dan meninggalkan rotasi/zoom/posisi tersembunyi; reset
+  destruktif tidak meminta konfirmasi.
+- After: keyboard mengikuti daftar foto terlihat, galeri virtual mempunyai
+  focus/current semantics, dan reset meminta konfirmasi lalu membersihkan
+  seluruh state visual terkait sambil menjaga pilihan foto serta frame lain.
+- Provenance: exact Studio source
+  `3dbfa6354bbf581dd16bfec1ad2e81e40c631f80` pada branch
+  `codex/s337-sagaview-existing-feature-hardening`; belum dipush.
+- Evidence: focused unit 8/8, full unit 248/248, focused Playwright 7/7,
+  matriks 50/200/500 4/4, full Playwright 156 pass/3 skip, format, lint,
+  typecheck, client/SSR build, bundle budget, visual 390x844 dan 1440x900,
+  forced-colors/reduced-motion, npm audit nol vulnerability, serta Composer
+  audit nol advisory.
+- Reproducibility: archive SHA-256
+  `4ff3a7c0cebc38c7ffe3e851120c2b981e887bdde7724100aebfee602a4cfc75`
+  dan complete git bundle SHA-256
+  `59f96f917dc4464d11521570c70288f00e89dfeaf1df1874566974d1e8bc6693`
+  mempunyai salinan checksum-identik.
+- Boundary: tidak ada backend/API/database/migration, upload foto atau path,
+  payment, deploy, activation, atau perubahan SagaBook. Authenticated UAT
+  Windows dan review release production masih pending.
+
 ## 2026-08-28 - S336 draft non-blocking dan recovery kapasitas frame
 
 - Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED / DEVOPS_VALIDATED /
