@@ -1,5 +1,14 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+COYABAG privacy/retention baseline versi `2026.08-v1` sudah
+`PRODUCTION_CONFIGURED`: enam pengaturan lengkap, empat jendela retensi aktif
+sebagai aturan report-only, dan draft kebijakan delapan bagian tersedia di
+admin. Verifikasi awal menemukan nol kandidat dan tidak melakukan penghapusan.
+Focused suite 55/55 lulus; provenance laporan source `8903a1a`, sementara
+aplikasi tetap pada release `20260828-10e516b`. Status tetap
+`APPROVAL_BLOCKED / NOT_PRODUCTION_ACTIVATED`: owner 2FA, verifikasi/publikasi
+policy, UAT 15 langkah, dan release sign-off belum selesai.
+
 SagaBook combined exact-main S316-S318 source
 `21d87e9aa7fdb921e3877f5fd448ff7117128fc6` aktif pada immutable release
 `20260828153427-21d87e9`, rollback `20260828141625-9440c16`. Typed Task

@@ -71,6 +71,12 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
   `PRODUCTION_READINESS_BLOCKED` karena owner 2FA, persetujuan privacy/retention,
   UAT 15 langkah, dan release sign-off belum selesai. Nol payment intent dibuat
   saat deployment acceptance.
+- Baseline privacy/retention production sudah lengkap: versi final
+  `2026.08-v1`, empat jendela retensi tersimpan, audit berjalan `report_only`,
+  dan draft kebijakan delapan bagian siap direview. Tidak ada record yang
+  dihapus. Approval dan publikasi tetap `BLOCKED` sampai owner mengaktifkan
+  2FA, memverifikasi isi, dan memberi sign-off; keputusan menunda 2FA untuk demo
+  tidak mengaktifkan commerce production.
 - Release aktif `20260827-be8fc09` dengan exact source
   `be8fc09710e26e49512f181904dff576f93a23dd` melayani production;
   rollback langsung `20260827-beecd6f` dipertahankan.

@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-28 - COYABAG privacy/retention baseline sync
+
+- Ringkasan: menyinkronkan enam pengaturan retensi, draft kebijakan delapan
+  bagian, report-only audit, dan batas approval owner.
+- Provenance: report source `8903a1a`; runtime aplikasi tetap release immutable
+  `20260828-10e516b`.
+- Evidence: focused privacy/content 55/55 dengan 482 assertion; readiness 38/42,
+  settings complete, final version tersedia, nol kandidat audit, nol deletion.
+- Klasifikasi: `CONFIRMED / PRODUCTION_CONFIGURED / APPROVAL_BLOCKED /
+  NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+- Production berubah: konfigurasi dan draft data berubah; source aplikasi dan
+  symlink release tidak berubah. Owner approval tidak dipalsukan.
+- Dokumen terdampak: Product, Dossier, changelog COYABAG, portfolio, master
+  knowledge, Decisions, Gaps, root changelog, dan sync status.
+
 ## 2026-08-28 - SagaBook combined exact-main S316-S318 production closure
 
 - Ringkasan: menyinkronkan release exact-main gabungan untuk Task Manager,

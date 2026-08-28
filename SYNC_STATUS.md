@@ -12,12 +12,37 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-28T22:45:00+07:00 |
-| Branch aktif | `codex/s316-sagabook-task-knowledge` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-28T23:55:00+07:00 |
+| Branch aktif | `codex/coyabag-privacy-retention-knowledge-20260828` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `4e12a02cfb03337f124c82122b32f9f0c02df8e6` |
-| Informasi terakhir disinkronkan | SagaBook combined exact-main S316-S318 production closure. |
-| Status sinkronisasi | Source `21d87e9a` production-activated; verifier 23/23, canary 32/32, DB audit 100; authenticated UAT pending, `BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `18291df` |
+| Informasi terakhir disinkronkan | COYABAG privacy/retention baseline dan batas 2FA demo. |
+| Status sinkronisasi | `PRODUCTION_CONFIGURED / APPROVAL_BLOCKED`; commerce tetap fail-closed dan `BUSINESS_READY=false`. |
+
+## COYABAG privacy/retention baseline
+
+- Enam pengaturan dan versi final `2026.08-v1` sudah lengkap; draft kebijakan
+  delapan bagian tersedia di admin.
+- Audit tetap `report_only`, menemukan nol kandidat saat verifikasi, dan tidak
+  menghapus data.
+- Focused privacy/content 55/55 lulus. Provenance laporan source `8903a1a`;
+  aplikasi tetap release `20260828-10e516b`.
+- Owner 2FA sengaja ditunda hanya untuk demo. Approval policy, publikasi,
+  checkout nyata, UAT, dan sign-off tetap fail-closed.
+- Status `CONFIRMED / PRODUCTION_CONFIGURED / APPROVAL_BLOCKED /
+  NOT_PRODUCTION_ACTIVATED`; `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi COYABAG privacy/retention
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `DECISIONS.md`
+- `GAPS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook combined exact-main S316-S318 production closure
 

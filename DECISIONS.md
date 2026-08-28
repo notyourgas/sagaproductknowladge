@@ -35,6 +35,20 @@ keputusan pengganti.
 | Status | `CONFIRMED / PUSHED / PRODUCTION_DEPLOYED / TENANT_DEFAULT_ACTIVATED / BUSINESS_READY=false`; source `1af16b1331e8bb11af2d026317c93201b64816b9`, release `20260828112935-1af16b1`, rollback `20260828103607-92765aa` |
 | Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [SagaBook Changelog](products/sagabook/CHANGELOG.md), [SagaBook Ledger](products/sagabook/FEATURE_COVERAGE_LEDGER.md) |
 
+## DEC-119 - COYABAG menunda 2FA hanya untuk fase demo
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-28 |
+| Topik | Batas akses demo dan activation gate COYABAG |
+| Keputusan | Owner 2FA boleh ditunda selama fase demo client agar login tidak menghambat presentasi, tetapi wajib diaktifkan sebelum persetujuan privacy/retention, release sign-off, dan commerce production activation. |
+| Alasan | Demo perlu mudah diakses, sedangkan persetujuan legal dan transaksi nyata harus tetap terikat ke identitas owner yang terlindungi. |
+| Alternatif yang dipertimbangkan | Memalsukan approval owner; menghapus gate 2FA dari production readiness; memaksa 2FA pada seluruh demo; membuka checkout nyata sebelum approval. |
+| Dampak | Simulator demo tetap dapat dipakai sesuai DEC-112. Privacy policy dapat disiapkan sebagai draft, tetapi tidak dipublikasikan atau disetujui atas nama owner; checkout publik tetap fail-closed. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / DEMO_ALLOWED / PRODUCTION_ACTIVATION_BLOCKED`; baseline report source `8903a1a`, aplikasi tetap release `20260828-10e516b` |
+| Dokumen terkait | [COYABAG Product](products/coyabag/PRODUCT.md), [COYABAG Dossier](products/coyabag/DOSSIER.md), [COYABAG Changelog](products/coyabag/CHANGELOG.md), [Gaps](GAPS.md) |
+
 ## DEC-117 - Draft frame SagaView tidak menghalangi Studio Console
 
 | Field | Isi |

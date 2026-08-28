@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-28 - COYABAG privacy/retention baseline
+
+- Baseline produksi versi `2026.08-v1` sudah mengisi enam pengaturan retensi dan
+  draft kebijakan delapan bagian; audit tetap report-only dan tidak menghapus
+  data.
+- Focused suite 55/55 lulus. Aplikasi tetap pada release
+  `20260828-10e516b`; provenance laporan source `8903a1a`.
+- Status `PRODUCTION_CONFIGURED / APPROVAL_BLOCKED`: publikasi, persetujuan
+  owner, dan commerce tetap fail-closed sampai owner 2FA, UAT, serta sign-off.
+
 ## 2026-08-28 - SagaBook combined exact-main S316-S318 closure
 
 - Exact source/release `21d87e9aa7fdb921e3877f5fd448ff7117128fc6` /

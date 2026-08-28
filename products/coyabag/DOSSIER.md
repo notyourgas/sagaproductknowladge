@@ -74,6 +74,14 @@ persetujuan privacy/retention, UAT 15 langkah, dan release sign-off selesai.
 Backup database COYABAG masih local-disk dan perlu dipindahkan ke backup offsite
 sebelum business readiness final.
 
+`CONFIRMED / PRODUCTION_CONFIGURED / APPROVAL_BLOCKED`: baseline retensi versi
+`2026.08-v1` sudah tersimpan dengan evaluasi data pelanggan tidak aktif 730
+hari, bukti pembayaran 365 hari, catatan permintaan privasi 730 hari, dan audit
+log 730 hari. Audit produksi tetap `report_only` dan menemukan nol kandidat pada
+verifikasi awal; tidak ada penghapusan otomatis. Draft kebijakan delapan bagian
+tersedia di admin, tetapi payload publik tetap disanitasi sampai owner dengan
+2FA memverifikasi, memublikasikan, dan menyetujui fingerprint policy.
+
 ## User journey
 
 Discover → browse/search → product detail → variant → cart → checkout →

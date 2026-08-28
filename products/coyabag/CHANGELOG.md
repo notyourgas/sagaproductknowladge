@@ -4,6 +4,20 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-28 - Privacy and retention baseline prepared
+
+- Klasifikasi: `CONFIRMED / PRODUCTION_CONFIGURED / APPROVAL_BLOCKED`;
+  provenance source report `8903a1a`, aplikasi production tetap pada release
+  immutable `20260828-10e516b`.
+- Enam pengaturan privacy/retention dan versi final `2026.08-v1` sudah lengkap;
+  draft kebijakan delapan bagian tersedia untuk review owner.
+- Retention audit tetap `report_only`, menemukan nol kandidat pada verifikasi,
+  dan tidak menghapus data. Focused privacy/content suite lulus 55 test dengan
+  482 assertion.
+- Approval tidak dibuat atas nama owner. Checkout publik tetap fail-closed pada
+  readiness 38/42 sampai 2FA, verifikasi/publikasi policy, UAT, dan sign-off
+  selesai.
+
 ## 2026-08-28 - SagaDev controlled trial wiring deployed
 
 - Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED / ACTIVATION_BLOCKED`; Saga
