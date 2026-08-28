@@ -1,8 +1,19 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 28 Agustus 2026 13:07 WIB
+Evidence cut-off: 28 Agustus 2026 13:34 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
+
+SagaBook Resend customer email exact source
+`4aae315ce71933bf2d283a690fb060a95a29aa49` aktif pada immutable release
+`20260828062330-4aae315`, rollback `20260828054737-88b8ea9`. Code mencakup
+encrypted customer email, payment confirmation exactly-once, reminder H-1/H-3
+tenant-timezone, outbox/retry/idempotency, stale cancellation, dan verified
+webhook. Seluruh toggle tenant default-off dan provider tidak boleh mengubah
+booking/payment. Status `PRODUCTION_DEPLOYED / CODE_RELEASE_ACTIVE /
+EMAIL_RUNTIME_DISABLED`; API key/webhook secret, live send, authenticated UAT,
+feature activation, dan `BUSINESS_READY` masih pending. Operational WhatsApp
+tetap tersuspensi sebagai channel terpisah.
 
 SagaBook S313 exact pushed source
 `a32b242d464b5149b812fe03b77204443513d08c` menambahkan tiga aksi salin

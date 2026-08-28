@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 28 Agustus 2026 13:07 WIB
-Evidence status: booking-detail WhatsApp copy templates S313 are locally validated but not deployed; production remains S312 and operational WhatsApp is temporarily suspended for provider transition
+Updated: 28 Agustus 2026 13:34 WIB
+Evidence status: resilient Resend customer email code is production-deployed but runtime delivery remains disabled pending restricted secrets and authenticated synthetic UAT; operational WhatsApp stays suspended
 
 ## Tujuan dokumen
 
@@ -33,6 +33,22 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   tetap tersuspensi.
 
 ## Status production terbaru
+
+- Email customer Resend exact source
+  `4aae315ce71933bf2d283a690fb060a95a29aa49` aktif pada immutable release
+  `20260828062330-4aae315`, dengan rollback
+  `20260828054737-88b8ea9`. Coverage mencakup email customer terenkripsi,
+  confirmation setelah status pembayaran otoritatif, reminder H-1/H-3
+  tenant-timezone, outbox/retry/idempotency, cancellation stale/reschedule,
+  webhook signature/dedupe/out-of-order, serta setting Owner default-off.
+  Full PHP 1.207/1.207 (13.613 assertion), focused Resend 7/7 (37),
+  typecheck/build, dependency audit nol, fresh encrypted backup
+  `20260828T062110Z`, disposable restore, migration, queue/nginx, manifest,
+  rollback, dan public/security smoke 3/3 lulus. Setelah aktivasi, `main`
+  maju karena kandidat copy-template WA terpisah; active release/commit tetap
+  stabil. Runtime email tetap `disabled`, API key dan webhook secret belum
+  dipasang, tidak ada customer email/canary nyata, serta
+  `BUSINESS_READY=false`.
 
 - Guard observability return pembayaran S312 exact source
   `88b8ea9ad9ce03f91d3d9099cffcb71e9f06caaf` aktif pada immutable release

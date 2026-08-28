@@ -7,6 +7,24 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Resilient customer email via Resend exact source
+  `4aae315ce71933bf2d283a690fb060a95a29aa49`, immutable release
+  `20260828062330-4aae315`, rollback `20260828054737-88b8ea9`:
+  `CONFIRMED / PUSHED / QA_VALIDATED / SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / PRODUCTION_DEPLOYED / CODE_RELEASE_ACTIVE /
+  EMAIL_RUNTIME_DISABLED`. Booking menyimpan email terenkripsi; pembayaran
+  terverifikasi dapat membuat confirmation outbox exactly-once dan scheduler
+  merencanakan reminder H-1/H-3 memakai timezone tenant. Dispatcher memeriksa
+  ulang eligibility sebelum send, membatalkan reminder stale/reschedule, dan
+  memakai idempotency stabil. Webhook memverifikasi signature raw body,
+  membatasi payload/rate, dedupe event, serta menolak urutan status mundur
+  tanpa mengubah booking/payment. Seluruh tenant toggle default-off. Full PHP
+  1.207/1.207 (13.613 assertion), focused 7/7 (37), typecheck/build,
+  dependency audit nol, fresh encrypted backup, disposable restore, migration,
+  service, manifest, rollback, dan smoke/security 3/3 lulus. API key dan
+  webhook secret belum tersedia pada runtime; tidak ada email customer nyata,
+  authenticated UAT, atau provider canary. `BUSINESS_READY=false`.
+
 - Salin template WhatsApp Booking Detail S313 exact source
   `a32b242d464b5149b812fe03b77204443513d08c`:
   `CONFIRMED / PUSHED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /

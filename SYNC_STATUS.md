@@ -12,12 +12,36 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-28T13:07:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-28T13:34:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
-| Informasi terakhir disinkronkan | SagaBook S313 booking-detail WhatsApp copy templates. |
-| Status sinkronisasi | SagaBook S313 source `a32b242d` `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; production S312 dan suspend WhatsApp operasional tidak berubah. |
+| Informasi terakhir disinkronkan | SagaBook resilient Resend customer email production code release. |
+| Status sinkronisasi | Source `4aae315c` aktif pada release `20260828062330-4aae315`; code production aktif, email runtime disabled dan provider configuration/UAT pending. |
+
+## SagaBook Resend customer email production code release
+
+- Exact source `4aae315ce71933bf2d283a690fb060a95a29aa49` aktif pada
+  immutable release `20260828062330-4aae315`, rollback
+  `20260828054737-88b8ea9`.
+- Full/focused test, typecheck/build, dependency audit, fresh encrypted backup
+  `20260828T062110Z`, disposable restore, migration, manifest, service,
+  rollback, dan public/security smoke 3/3 lulus.
+- Runtime email tetap disabled; API key dan webhook secret belum dipasang dan
+  tidak ada customer email/canary nyata. Status feature activation serta
+  `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi Resend SagaBook
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `DECISIONS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook S313 booking-detail WhatsApp copy templates
 

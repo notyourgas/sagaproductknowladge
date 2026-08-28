@@ -1,5 +1,23 @@
 # SagaBook Changelog
 
+## 2026-08-28 - Resend customer email code release
+
+- Exact source `4aae315ce71933bf2d283a690fb060a95a29aa49` aktif pada
+  immutable release `20260828062330-4aae315`; rollback
+  `20260828054737-88b8ea9` tersedia.
+- Menambahkan email customer terenkripsi, payment confirmation exactly-once,
+  reminder H-1/H-3 per timezone tenant, outbox/retry/idempotency, stale
+  cancellation, webhook signature/dedupe/out-of-order, dan pengaturan Owner
+  default-off.
+- Full PHP 1.207/1.207 (13.613 assertion), focused 7/7 (37), build/typecheck,
+  audit dependency nol, fresh encrypted backup `20260828T062110Z`, disposable
+  restore, migration, manifest, rollback, service, dan smoke/security 3/3
+  lulus.
+- Status `CONFIRMED / PUSHED / PRODUCTION_DEPLOYED / CODE_RELEASE_ACTIVE /
+  EMAIL_RUNTIME_DISABLED`. Runtime belum mempunyai API key dan webhook secret;
+  tidak ada email/canary customer nyata, authenticated UAT, atau
+  `BUSINESS_READY`.
+
 ## 2026-08-28 - S313 booking-detail WhatsApp copy templates
 
 - Menu `Salin template WA` pada Booking Detail kini mempunyai tiga pilihan:

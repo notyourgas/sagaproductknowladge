@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-28 - SagaBook Resend customer email code release
+
+- SagaBook kini membawa jalur confirmation pembayaran dan reminder H-1/H-3
+  berbasis Resend dengan encrypted email, transactional outbox, idempotency,
+  retry, stale cancellation, dan webhook terverifikasi.
+- Exact source `4aae315ce71933bf2d283a690fb060a95a29aa49` aktif pada release
+  `20260828062330-4aae315`; rollback `20260828054737-88b8ea9`, fresh encrypted
+  backup, disposable restore, service, serta smoke/security 3/3 lulus.
+- Status code `PRODUCTION_DEPLOYED / CODE_RELEASE_ACTIVE`; runtime email tetap
+  disabled sampai restricted API/webhook secrets dan authenticated synthetic
+  UAT tersedia. Tidak ada customer email nyata dan `BUSINESS_READY=false`.
+
 ## 2026-08-28 - SagaBook S313 booking-detail WhatsApp copy templates
 
 - Booking Detail memiliki tiga copy template tenant-editable untuk konfirmasi

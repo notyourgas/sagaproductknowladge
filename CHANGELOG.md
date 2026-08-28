@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-28 - SagaBook Resend email production code sync
+
+- Ringkasan: menyinkronkan release code email confirmation pembayaran,
+  reminder H-1/H-3, encrypted outbox, idempotency, dan verified webhook Resend.
+- Provenance: source `4aae315ce71933bf2d283a690fb060a95a29aa49`, release
+  `20260828062330-4aae315`, rollback `20260828054737-88b8ea9`, fresh encrypted
+  backup `20260828T062110Z`, disposable restore, serta smoke/security 3/3.
+- Klasifikasi: `CONFIRMED / PUSHED / PRODUCTION_DEPLOYED /
+  CODE_RELEASE_ACTIVE / EMAIL_RUNTIME_DISABLED`; restricted secrets,
+  authenticated UAT, live send, dan `BUSINESS_READY` masih pending.
+- Dokumen terdampak: Product, Dossier, feature ledger/changelog SagaBook,
+  portfolio, master knowledge, decisions, root changelog, dan sync status.
+
 ## 2026-08-28 - SagaBook S313 booking-detail WA copy sync
 
 - Ringkasan: menyinkronkan tiga template WhatsApp tenant-editable yang dapat
