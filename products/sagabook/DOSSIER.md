@@ -7,6 +7,28 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Reporting dan closing detail S317 exact source
+  `14652bb9f6f5715aad33936a4adc3a98f5bfc26c`, immutable release
+  `20260828130503-14652bb`, rollback `20260828121721-cde8dd5`: dashboard Owner
+  menyediakan trend pendapatan 7 hari, 30 hari, bulan berjalan, dan periode
+  pilihan dari bucket server; grafik/bar dapat di-drill-down per tanggal dan
+  filter tersimpan di URL. Kalender serta history closing dapat difilter dan
+  dipaginasi, sedangkan detail menampilkan ringkasan cash, notes/review/
+  correction, revisions, sessions, add-ons, expected/actual/variance stok,
+  catatan, artifact, dan delivery tanpa menaruh data privat ke knowledge.
+  Read model dan endpoint history/detail memakai capability, tenant, cabang,
+  throttle, dan no-store. Cabang tanpa modul stok operasional dapat melakukan
+  cash closing; ketika modul aktif, expected berasal dari ledger dan actual
+  tetap hitung fisik manual. Full PHP 1.228/1.228 (13.892 assertion), focused
+  38/38 (237), browser 3 pass/1 intentional skip, persistence 18/18,
+  build/typecheck, Composer/npm production audit nol, backup terenkripsi
+  `20260828T130052Z`, disposable restore, verifier 19/19, 0 migration pending,
+  0 queue error, serta public/security smoke 3/3 lulus. Release exception
+  menerima tepat dua delivery WhatsApp legacy hanya ketika suspend aktif dan
+  tidak ada failure audit lain. Status `CONFIRMED / PUSHED / QA_VALIDATED /
+  SECURITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+  authenticated Owner UAT dan `BUSINESS_READY=false`.
+
 - Report-integrity task action contract S316 exact source
   `cde8dd53bb70541a88907e1e83774deaf9610bf6`, immutable release
   `20260828121721-cde8dd5`, rollback `20260828112935-1af16b1`: issue report

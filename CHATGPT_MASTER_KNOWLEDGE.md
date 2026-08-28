@@ -1,5 +1,17 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+SagaBook S317 exact source `14652bb9f6f5715aad33936a4adc3a98f5bfc26c`
+aktif pada immutable release `20260828130503-14652bb`, rollback
+`20260828121721-cde8dd5`. Owner dapat membaca grafik pendapatan 7/30 hari,
+bulan/periode dengan drill-down tanggal, serta kalender/history closing dan
+isi detail cash, notes/review/correction, revisions, sessions, add-ons, stock
+variance, artifact, dan delivery. API/read model tetap capability, tenant,
+cabang, throttle, dan no-store scoped. Cash closing cabang tanpa modul stok
+tidak lagi salah diblokir; saat modul aktif, expected berasal dari ledger dan
+actual tetap manual. Verifier 19/19 dan smoke/security 3/3 lulus. Operational
+WhatsApp tetap suspended; authenticated Owner UAT belum dan
+`BUSINESS_READY=false`.
+
 SagaBook S316 exact source `cde8dd53bb70541a88907e1e83774deaf9610bf6`
 aktif pada immutable release `20260828121721-cde8dd5`, rollback
 `20260828112935-1af16b1`. Task urgent report integrity sekarang berasal dari
@@ -14,14 +26,14 @@ lulus. Authenticated operator UAT belum dan `BUSINESS_READY=false`.
 SagaBook email customer adalah fitur basic default-on untuk seluruh paket dan
 tenant, sementara Owner tetap dapat opt-out. Exact source
 `1af16b1331e8bb11af2d026317c93201b64816b9` aktif kumulatif pada combined
-source/release `cde8dd53bb70541a88907e1e83774deaf9610bf6` /
-`20260828121721-cde8dd5`, rollback `20260828112935-1af16b1`. Production
+source/release `14652bb9f6f5715aad33936a4adc3a98f5bfc26c` /
+`20260828130503-14652bb`, rollback `20260828121721-cde8dd5`. Production
 membuktikan 15/15 tenant confirmation/H-1/H-3 aktif, 15 audit event, replay
 idempotent 0 perubahan, outbox queued/retry kosong, dan reminder dry-run tidak
 menemukan booking eligible. Provider/webhook aktif; operational WhatsApp
 customer/owner tetap off. Owner/customer UAT dan `BUSINESS_READY` belum.
 
-Evidence cut-off: 28 Agustus 2026 19:32 WIB
+Evidence cut-off: 28 Agustus 2026 20:22 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 
