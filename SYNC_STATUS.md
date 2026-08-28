@@ -12,12 +12,39 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-28T17:51:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-28T18:50:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
-| Informasi terakhir disinkronkan | SagaView S336 draft non-blocking dan frame-capacity recovery. |
-| Status sinkronisasi | Candidate `98f13a8d` pushed/local-validated dan belum dideploy; production SagaView tetap S333. |
+| Informasi terakhir disinkronkan | SagaBook email basic default-on untuk seluruh tenant. |
+| Status sinkronisasi | Source `1af16b13` aktif pada release `20260828112935-1af16b1`; 15/15 tenant aktif, Owner opt-out tersedia, operational WhatsApp tetap off, dan `BUSINESS_READY=false`. |
+
+## SagaBook email basic default-on seluruh tenant
+
+- Confirmation pembayaran, reminder H-1, dan reminder H-3 menjadi fitur basic
+  seluruh paket. Tenant lama dan baru default-on; Owner tetap dapat opt-out.
+- Exact source `1af16b1331e8bb11af2d026317c93201b64816b9` aktif pada release
+  `20260828112935-1af16b1`, rollback `20260828103607-92765aa`, dengan backup
+  terenkripsi `20260828T114345Z` dan disposable restore lulus.
+- Production membuktikan 15/15 tenant aktif, 15 audit event, replay 0
+  perubahan, outbox queued/retry 0, reminder dry-run scanned/planned 0,
+  provider/webhook ready, dan WhatsApp customer/owner off.
+- Full PHP 1.219/1.219, focused/release 30/30, Node 18/18, Playwright 4/4,
+  build/typecheck, dependency audit, migration, services, rollback, dan
+  public/security smoke 3/3 lulus. Auditor 18/19 hanya mencatat remote main
+  maju ke combined source S316 yang tetap mencakup commit email ini.
+
+## File yang berubah pada sinkronisasi email basic SagaBook
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `DECISIONS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaView S336 draft non-blocking dan frame-capacity recovery
 

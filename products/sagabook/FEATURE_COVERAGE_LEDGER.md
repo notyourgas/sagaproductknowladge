@@ -1,6 +1,25 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 28 Agustus 2026 17:48 WIB
+Evidence cut-off: 28 Agustus 2026 18:50 WIB
+
+Default email basic seluruh tenant exact source
+`1af16b1331e8bb11af2d026317c93201b64816b9` telah `CONFIRMED / PUSHED /
+QA_VALIDATED / SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
+PRODUCTION_DEPLOYED / TENANT_DEFAULT_ACTIVATED` pada immutable release
+`20260828112935-1af16b1`, rollback `20260828103607-92765aa`. Confirmation
+pembayaran, H-1, dan H-3 default-on untuk seluruh paket; Owner tetap dapat
+opt-out. Migration mengubah default schema, service/frontend/trial/backfill
+memakai default yang sama, dan command activation melakukan provider/schema
+preflight, targeted DB+JSON update, audit per tenant, serta replay idempotent.
+Production membuktikan 15/15 tenant aktif, 15 audit event, replay 0 perubahan,
+outbox queued/retry 0, reminder dry-run scanned/planned 0, provider/webhook
+ready, dan WhatsApp customer/owner tetap off. Full PHP 1.219/1.219 (13.780),
+focused/release 30/30 (375), Node 18/18, Playwright 4/4, build/typecheck,
+dependency audit, encrypted backup `20260828T114345Z`, disposable restore,
+migration, services, rollback, dan public/security smoke 3/3 lulus. Auditor
+release 18/19 hanya mencatat remote-main drift ke combined source S316 yang
+tetap mencakup commit ini. Authenticated customer/Owner UAT, pilot, dan
+`BUSINESS_READY` belum.
 
 Resilient Resend customer email exact source
 `4aae315ce71933bf2d283a690fb060a95a29aa49` telah `CONFIRMED / PUSHED /

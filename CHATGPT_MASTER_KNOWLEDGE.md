@@ -1,6 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 28 Agustus 2026 17:51 WIB
+SagaBook email customer adalah fitur basic default-on untuk seluruh paket dan
+tenant, sementara Owner tetap dapat opt-out. Exact source
+`1af16b1331e8bb11af2d026317c93201b64816b9` aktif pada release
+`20260828112935-1af16b1`, rollback `20260828103607-92765aa`. Production
+membuktikan 15/15 tenant confirmation/H-1/H-3 aktif, 15 audit event, replay
+idempotent 0 perubahan, outbox queued/retry kosong, dan reminder dry-run tidak
+menemukan booking eligible. Provider/webhook aktif; operational WhatsApp
+customer/owner tetap off. Owner/customer UAT dan `BUSINESS_READY` belum.
+
+Evidence cut-off: 28 Agustus 2026 18:50 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
 

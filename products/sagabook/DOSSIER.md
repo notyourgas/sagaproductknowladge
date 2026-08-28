@@ -7,6 +7,25 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Default email basic seluruh tenant exact source
+  `1af16b1331e8bb11af2d026317c93201b64816b9`, immutable release
+  `20260828112935-1af16b1`, rollback `20260828103607-92765aa`:
+  confirmation pembayaran, reminder H-1, dan reminder H-3 aktif default untuk
+  seluruh paket. Command aktivasi melakukan preflight provider/schema,
+  pembaruan targeted DB+JSON, audit per tenant, dan replay idempotent tanpa
+  mengubah konfigurasi WhatsApp atau setting lain. Production membuktikan
+  15/15 tenant aktif, 15 audit event, replay 0 perubahan, outbox queued/retry
+  kosong, serta reminder dry-run scanned/planned 0. Tenant baru default-on;
+  Owner masih dapat opt-out melalui Settings. Provider/webhook siap dan
+  WhatsApp customer/owner tetap off. Full PHP 1.219/1.219 (13.780 assertion),
+  focused/release 30/30 (375), Node 18/18, Playwright 4/4, build/typecheck,
+  dependency audit, backup terenkripsi `20260828T114345Z`, disposable restore,
+  migration, service, rollback, dan public/security smoke 3/3 lulus. Auditor
+  release 18/19 hanya karena remote main maju ke combined source S316 yang
+  masih mencakup commit email ini. Status `CONFIRMED / PUSHED /
+  PRODUCTION_DEPLOYED / TENANT_DEFAULT_ACTIVATED`; tenant-linked UAT dan
+  `BUSINESS_READY=false`.
+
 - Resilient customer email via Resend exact source
   `4aae315ce71933bf2d283a690fb060a95a29aa49`, aktif kumulatif pada exact
   production source `68b978e533d2fcc23dd7be23ddf23b2328f51a6b`, immutable release
@@ -27,7 +46,8 @@ dalam satu dokumen public-safe.
   Canary internal berizin diterima; signed `sent` dan `delivered` event masuk
   ke database, unsigned request ditolak `401`, public health `200`, queue/PHP
   aktif, dan window verifikasi tidak memiliki warning queue. Seluruh tenant
-  toggle tetap opt-in mati, sehingga tenant-linked confirmation/reminder,
+  toggle pada snapshot release provider masih opt-in mati; kontrak ini telah
+  diganti oleh keputusan default-on seluruh tenant di atas. Tenant-linked confirmation/reminder,
   authenticated operator UAT, dan pilot belum dilakukan.
   `BUSINESS_READY=false`.
 

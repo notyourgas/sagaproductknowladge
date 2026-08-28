@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-28 - SagaBook email basic aktif untuk semua tenant
+
+- Confirmation pembayaran, reminder H-1, dan reminder H-3 kini default-on
+  untuk seluruh paket; Owner tetap dapat opt-out.
+- Aktivasi production membuktikan 15/15 tenant aktif, 15 audit event, replay
+  idempotent 0 perubahan, outbox queued/retry 0, dan tidak ada reminder eligible
+  pada dry-run. WhatsApp customer/owner tetap off.
+- Source/release `1af16b1331e8bb11af2d026317c93201b64816b9` /
+  `20260828112935-1af16b1`, rollback `20260828103607-92765aa`; seluruh gate
+  fitur, backup/restore, migration, service, dan smoke/security lulus. Auditor
+  18/19 hanya mencatat remote main telah maju ke combined source S316 yang
+  tetap mencakup perubahan ini. `BUSINESS_READY=false` sampai UAT nyata.
+
 ## 2026-08-28 - SagaView S336 draft tidak menghalangi Studio
 
 - Studio Console tetap dapat dibuka walaupun Owner masih mempunyai draft; draft

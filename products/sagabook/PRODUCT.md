@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 28 Agustus 2026 17:48 WIB
-Evidence status: Resend provider, signed webhook, dan friendly email copy dengan recovery link tenant-scoped aktif di production; seluruh tenant terverifikasi opt-in mati, tenant-linked operational UAT belum, dan operational WhatsApp tetap tersuspensi
+Updated: 28 Agustus 2026 18:50 WIB
+Evidence status: Resend provider, signed webhook, friendly email copy, dan default email basic aktif untuk seluruh tenant; Owner tetap dapat opt-out, tenant-linked operational UAT belum, dan operational WhatsApp tetap tersuspensi
 
 ## Tujuan dokumen
 
@@ -34,6 +34,26 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   authenticated clipboard UAT residual dan `BUSINESS_READY=false`.
 
 ## Status production terbaru
+
+- Email confirmation, reminder H-1, dan reminder H-3 kini menjadi fitur basic
+  default-on untuk semua paket dan tenant. Exact source
+  `1af16b1331e8bb11af2d026317c93201b64816b9` aktif pada immutable release
+  `20260828112935-1af16b1`, rollback `20260828103607-92765aa`. Aktivasi
+  idempotent mengubah 15/15 tenant, menulis 15 audit event, mempertahankan
+  setting lain, dan replay menghasilkan 0 perubahan. Tenant baru juga memakai
+  default aktif; Owner tetap dapat opt-out dari Settings. Pada snapshot
+  aktivasi, outbox queued/retry kosong dan reminder dry-run tidak menemukan
+  booking eligible, sehingga tidak ada email massal langsung. Provider dan
+  webhook siap, sementara WhatsApp customer/owner tetap off. Full PHP
+  1.219/1.219 (13.780 assertion), focused/release 30/30 (375), Node 18/18,
+  Playwright 4/4, build/typecheck, dependency audit, encrypted backup,
+  disposable restore, migration, service, rollback, serta public/security
+  smoke 3/3 lulus. Auditor release lulus 18/19; satu gate provenance mencatat
+  `origin/main` telah maju ke `cde8dd53bb70541a88907e1e83774deaf9610bf6`
+  yang tetap mencakup source email ini dan sedang ditangani release gabungan
+  S316. Status fitur `CONFIRMED / PUSHED / PRODUCTION_DEPLOYED /
+  TENANT_DEFAULT_ACTIVATED`; authenticated customer/Owner UAT dan
+  `BUSINESS_READY` tetap belum.
 
 - Dashboard Changelog kini menampilkan registry `1.16.0` tertanggal
   28 Agustus 2026 dengan ringkasan kumulatif fitur production setelah

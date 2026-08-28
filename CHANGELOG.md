@@ -1,5 +1,25 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-28 - SagaBook email basic all-tenant activation sync
+
+- Ringkasan: menyinkronkan keputusan founder bahwa confirmation pembayaran,
+  reminder H-1, dan reminder H-3 adalah fitur basic default-on seluruh paket,
+  dengan Owner opt-out.
+- Provenance: source `1af16b1331e8bb11af2d026317c93201b64816b9`, release
+  `20260828112935-1af16b1`, rollback `20260828103607-92765aa`, backup
+  `20260828T114345Z`.
+- Evidence: 15/15 tenant aktif, 15 audit event, replay 0 perubahan, outbox
+  queued/retry 0, reminder dry-run scanned/planned 0, full PHP 1.219/1.219,
+  focused/release 30/30, Node 18/18, Playwright 4/4, build/typecheck,
+  dependency audit, backup/restore, migration, services, dan smoke/security
+  3/3 lulus.
+- Klasifikasi: `CONFIRMED / PUSHED / PRODUCTION_DEPLOYED /
+  TENANT_DEFAULT_ACTIVATED / BUSINESS_READY=false`. Operational WhatsApp tetap
+  off. Auditor 18/19 hanya mencatat remote-main drift ke combined S316 yang
+  tetap mencakup source email.
+- Dokumen terdampak: Product, Dossier, feature ledger/changelog SagaBook,
+  portfolio, master knowledge, decisions, root changelog, dan sync status.
+
 ## 2026-08-28 - SagaView S336 draft non-blocking sync
 
 - Ringkasan: menyinkronkan kontrak bahwa draft frame tidak menghalangi Studio

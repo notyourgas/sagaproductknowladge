@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-118 - Email customer SagaBook adalah fitur basic default-on
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-28 |
+| Topik | Entitlement dan default confirmation pembayaran serta reminder email SagaBook |
+| Keputusan | Confirmation pembayaran, reminder H-1, dan reminder H-3 memakai Resend sebagai fitur basic untuk semua paket dan otomatis aktif bagi seluruh tenant lama maupun baru. Owner tetap dapat opt-out melalui Settings. Operational WhatsApp tetap channel terpisah dan off selama transisi provider. |
+| Alasan | Email adalah recovery channel dasar agar customer tetap menerima konfirmasi dan dapat membuka kembali detail booking ketika tab tertutup, tanpa bergantung pada provider WhatsApp. |
+| Alternatif yang dipertimbangkan | Opt-in per tenant; hanya paket berbayar tertentu; mengaktifkan WhatsApp bersamaan. |
+| Dampak | 15/15 tenant production diaktifkan secara idempotent dan beraudit; tenant baru default-on. Aktivasi tidak membuat blast langsung karena outbox kosong dan reminder dry-run tidak menemukan booking eligible. Owner opt-out, provider guard, idempotency, tenant scope, dan audit tetap dipertahankan. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / PUSHED / PRODUCTION_DEPLOYED / TENANT_DEFAULT_ACTIVATED / BUSINESS_READY=false`; source `1af16b1331e8bb11af2d026317c93201b64816b9`, release `20260828112935-1af16b1`, rollback `20260828103607-92765aa` |
+| Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [SagaBook Changelog](products/sagabook/CHANGELOG.md), [SagaBook Ledger](products/sagabook/FEATURE_COVERAGE_LEDGER.md) |
+
 ## DEC-117 - Draft frame SagaView tidak menghalangi Studio Console
 
 | Field | Isi |
@@ -60,7 +74,7 @@ keputusan pengganti.
 | Alternatif yang dipertimbangkan | Mengirim langsung tanpa outbox; mengaktifkan seluruh tenant saat deploy; memakai WhatsApp yang sedang disuspensi; menerima webhook tanpa signature. |
 | Dampak | Code email Resend aktif di production. Restricted sending credential dan signing secret telah dipasang melalui secret store; canary internal dan signed webhook round-trip lulus. Seluruh tenant toggle tetap opt-in mati, sehingga tidak ada customer automation massal dan tenant-linked UAT masih diperlukan. Booking/payment tidak berubah ketika email gagal. |
 | Pemberi keputusan | Andreas / founder |
-| Status | `CONFIRMED / PUSHED / PRODUCTION_DEPLOYED / EMAIL_PROVIDER_ACTIVATED / WEBHOOK_ACTIVATED / BUSINESS_READY=false`; feature source `4aae315ce71933bf2d283a690fb060a95a29aa49`, active source `68b978e533d2fcc23dd7be23ddf23b2328f51a6b`, release `20260828063524-68b978e` |
+| Status | `DEPRECATED IN PART by DEC-118`; provider/webhook tetap `CONFIRMED / PRODUCTION_ACTIVATED`, tetapi aturan seluruh tenant toggle default-off diganti menjadi email basic default-on dengan Owner opt-out |
 | Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [SagaBook Changelog](products/sagabook/CHANGELOG.md), [SagaBook Ledger](products/sagabook/FEATURE_COVERAGE_LEDGER.md), [Gaps](GAPS.md) |
 
 ## DEC-111 - Koreksi stok SagaBook memakai maker-checker dan reversal append-only

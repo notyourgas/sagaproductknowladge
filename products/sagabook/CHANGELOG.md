@@ -1,5 +1,28 @@
 # SagaBook Changelog
 
+## 2026-08-28 - Email basic default-on untuk seluruh tenant
+
+- Andreas menetapkan confirmation pembayaran, reminder H-1, dan reminder H-3
+  sebagai fitur basic semua paket; tenant baru default-on dan Owner tetap dapat
+  opt-out.
+- Command activation fail-closed melakukan preflight provider/schema,
+  pembaruan targeted DB+JSON, audit per tenant, dan replay idempotent tanpa
+  mengubah konfigurasi WhatsApp atau setting lain.
+- Production: 15/15 tenant aktif, 15 audit event, replay 0 perubahan, outbox
+  queued/retry 0, reminder dry-run scanned/planned 0, provider/webhook ready,
+  dan WhatsApp customer/owner tetap off.
+- Exact source `1af16b1331e8bb11af2d026317c93201b64816b9`, release
+  `20260828112935-1af16b1`, rollback `20260828103607-92765aa`, backup
+  terenkripsi `20260828T114345Z`. Full PHP 1.219/1.219 (13.780 assertion),
+  focused/release 30/30 (375), Node 18/18, Playwright 4/4, build/typecheck,
+  dependency audit, disposable restore, migration, services, rollback, dan
+  public/security smoke 3/3 lulus.
+- Auditor release 18/19 hanya karena `origin/main` maju ke combined source S316
+  `cde8dd53bb70541a88907e1e83774deaf9610bf6`, yang tetap mencakup source email
+  ini. Status `CONFIRMED / PUSHED / PRODUCTION_DEPLOYED /
+  TENANT_DEFAULT_ACTIVATED`; authenticated customer/Owner UAT dan
+  `BUSINESS_READY=false`.
+
 ## 2026-08-28 - Friendly customer email copy production activation
 
 - Konfirmasi pembayaran, reminder H-1, dan reminder H-3 kini mempunyai subject,
