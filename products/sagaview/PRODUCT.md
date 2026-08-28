@@ -1,6 +1,183 @@
 # SagaView Product Knowledge
 
-Updated: 27 Agustus 2026 23:20 WIB
+Updated: 28 Agustus 2026 12:00 WIB
+
+SagaView S331 exact source
+`0966bbd7fedaaa51bf67332139f07f7d2690553d` sudah `PUSHED /
+DEVOPS_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED / PRODUCTION_UNCHANGED`. Artifact
+builder kini menghitung ulang SHA-256 archive, git bundle, dan manifest pada
+primary serta mirror setelah copy. Status artifact-ready hanya diterbitkan bila
+seluruh salinan dan isi manifest identik dengan hash yang diharapkan.
+
+RED membuktikan kontrak baru gagal 1 test; GREEN lulus 7/44 assertion dan
+regresi release/custody lulus 14/113 assertion. Probe sintetis menerima salinan
+identik lalu menolak mirror yang diubah, tanpa memakai data customer dan tanpa
+fixture tersisa. Syntax PowerShell, npm audit nol vulnerability, Composer audit
+nol advisory, clean commit, push, dan remote exact lulus. Media lokal terpisah
+terotorisasi serta artifact exact S331 masih wajib; production tetap S311.
+
+SagaView S330 exact source
+`f2c946aa6bdbeb2a34b91692320e4f6f55ba4c37` sudah `PUSHED /
+DEVOPS_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED / PRODUCTION_UNCHANGED`. Artifact
+builder kini memeriksa ruang bebas output dan mirror sebelum membuat direktori
+atau menjalankan build. Ambang minimum 512 MiB dikunci dan hanya dapat dinaikkan
+untuk kebutuhan kandidat yang lebih besar.
+
+RED membuktikan kontrak baru gagal 1 test; GREEN lulus 6/36 assertion dan
+regresi release/custody lulus 13/105 assertion. Probe kapasitas sintetis pada
+exact commit berhenti exit 1, guard cocok, serta output dan mirror tidak dibuat.
+Syntax PowerShell, npm audit nol vulnerability, Composer audit nol advisory,
+clean commit, push, dan remote exact lulus. Media lokal terpisah terotorisasi
+serta artifact exact S330 masih wajib; production tetap S311.
+
+SagaView S329 exact source
+`1da3a7d5e24f0fd2f234b52d6531ece8fa2eee92` sudah `PUSHED /
+DEVOPS_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED / PRODUCTION_UNCHANGED`. Artifact
+builder kini menolak output, mirror, atau temp path yang memakai reparse point
+termasuk junction pada path yang sudah ada. Identitas drive tekstual tidak lagi
+dipercaya bila ancestor dapat mengalihkan penyimpanan ke lokasi fisik lain.
+
+RED membuktikan kontrak baru gagal 1 test; GREEN lulus 5/29 assertion dan
+regresi release/custody lulus 12/98 assertion. Probe junction sintetis pada
+exact commit berhenti exit 1, guard cocok, mirror tidak dibuat, target tetap
+kosong, dan fixture dibersihkan. Syntax PowerShell, npm audit nol vulnerability,
+Composer audit nol advisory, clean commit, push, dan remote exact lulus. Media
+lokal terpisah terotorisasi serta artifact exact S329 masih wajib; production
+tetap S311.
+
+SagaView S328 exact source
+`7ab33b352050a76486327830ed0cfeefd0a025ce` sudah `PUSHED /
+DEVOPS_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED / PRODUCTION_UNCHANGED`. Artifact
+builder kini menolak network share karena identitas disk fisiknya tidak dapat
+dibuktikan oleh gate lokal. Hanya volume lokal yang dapat dipetakan tepat ke
+disk fisik yang boleh masuk pemeriksaan custody.
+
+RED membuktikan kontrak baru gagal 1 test; GREEN lulus 4/22 assertion dan
+regresi release/custody lulus 11/91 assertion. Probe exact commit berhenti exit
+1 dengan guard aktif serta tidak membuat direktori output atau mirror. Syntax
+PowerShell, npm audit nol vulnerability, Composer audit nol advisory, clean
+commit, push, dan remote exact lulus. Media terpisah terotorisasi serta artifact
+exact S328 masih wajib; production tetap S311.
+
+SagaView S327 exact source
+`fd554fa47c669a8c62dde1e13d63d166ea71dced` sudah `PUSHED /
+DEVOPS_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED / PRODUCTION_UNCHANGED`. Artifact
+builder sekarang menolak output atau mirror yang sudah berisi file sebelum
+membuat temp directory, menjalankan build, atau menulis artifact. Direktori
+release lama tidak lagi dapat dipakai ulang sehingga manifest dan salinan
+historis tidak tertimpa.
+
+RED membuktikan kontrak baru gagal 1 test; GREEN lulus 3/19 assertion dan
+regresi release/custody lulus 10/88 assertion. Probe exact commit terhadap
+primary S325 menghasilkan exit 1 dengan guard aktif, tidak membuat path mirror,
+dan mempertahankan tiga file beserta SHA-256-nya. Syntax PowerShell, npm audit
+nol vulnerability, Composer audit nol advisory, clean commit, push, dan remote
+exact lulus. Artifact exact S327 pada media terpisah terotorisasi masih wajib;
+production tetap S311.
+
+SagaView S326 exact source
+`843ad42cf6db4e558dd4f464c524b4781b625e34` sudah `PUSHED /
+DEVOPS_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED / PRODUCTION_UNCHANGED`. Artifact
+builder sekarang menentukan identitas disk fisik output dan mirror sebelum
+membuat direktori atau menjalankan build, lalu menolak bila keduanya berada
+pada disk yang sama.
+
+Acceptance membuktikan C ke C dan C ke D sama-sama ditolak sebelum write;
+huruf drive berbeda tidak lagi dapat disalahartikan sebagai custody terpisah.
+RED gagal 1/2 lalu GREEN lulus; regresi release/custody 9/83 assertion,
+focused 2/14 assertion, syntax PowerShell, npm audit nol vulnerability, dan
+Composer audit nol advisory lulus. Artifact S325 tetap valid sebagai primary,
+tetapi mirror satu-disknya tidak boleh dipromosikan; production tetap S311.
+
+SagaView S325 membentuk immutable artifact exact S324 release
+`20260827230221-21058a0` dari source
+`21058a0de1d4a0f2742c45d2c706b8d43bd6df0c`. Archive berisi 2.597 entry,
+berukuran 81.516.564 byte, dan mempunyai SHA-256
+`643e85ce4b19edd1fe9a719fe612e1502098b64d3ea24dee744dd5534b1795e2`.
+Git bundle complete-history berukuran 118.417.183 byte, memuat exact HEAD, dan
+mempunyai SHA-256
+`27589395c84050f9c1267227f00a44f645727bac5390e75adedd011a5314891a`.
+
+Fresh exact-lock build 5.097 modul lulus; manifest frontend tervalidasi;
+`.env`, `.git`, `vendor`, dan `node_modules` tidak masuk archive. Primary dan
+mirror lokal mempunyai checksum identik, tetapi keduanya masih berada pada
+volume C yang sama sehingga mirror belum memenuhi custody terpisah. Status
+`ARTIFACT_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+RELEASE_BLOCKED / PRODUCTION_UNCHANGED`; production tetap S311.
+
+SagaView S324 cumulative release candidate exact source
+`21058a0de1d4a0f2742c45d2c706b8d43bd6df0c` sudah `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED /
+PRODUCTION_UNCHANGED`. Kandidat bersih ini menggabungkan S323 Owner Console
+(`32eea103eee5fba88d70c6ed5f8eb493b19988eb`) dan S321 custody tooling
+(`6e11c9168a95b1176c715fa9779341f5ca823f00`) tanpa konflik atau perubahan
+kontrak produk baru.
+
+Backend SagaView lulus 226/226 test dengan 3.678 assertion; Playwright Owner
+desktop 26/26 dan focused desktop/mobile 2/2; guard S320 10/10 serta enrollment
+S321 10/10; build 5.097 modul, Composer audit nol advisory, npm audit nol
+vulnerability, dan worktree exact commit bersih. Production tetap
+backend/Owner `20260826210546-cd7288d` dan Studio
+`20260824170456-7ae79ae`. Deployment masih dilarang sebelum media custody yang
+benar tersedia, immutable artifact mempunyai salinan terpisah, fresh backup
+dan disposable restore lulus, serta Andreas memberi approval deploy.
+
+SagaView S323 exact source
+`32eea103eee5fba88d70c6ed5f8eb493b19988eb` sudah `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`. Launcher
+Support Hub pada header Owner Console kini menampilkan label ringkas
+`Bantuan` di mobile dan tablet, bukan ikon tanda tanya tanpa teks. Desktop
+tetap menampilkan `Bantuan SagaView`, sementara nama aksesibel lengkap,
+focus-visible, target minimal 44 piksel, forced-colors, reduced-motion, dan
+layout tanpa overflow tetap dipertahankan.
+
+Focused Playwright lulus pada 390x844 dan 1440x900 serta membuktikan bootstrap
+Support Hub 200, privacy `automaticPhotoUpload=false`, focus containment,
+keyboard open/close, dan tidak ada kontrol upload. TypeScript no-emit, dua
+suite backend 8 test/68 assertion, build 5.097 modul, npm audit nol
+vulnerability, Composer audit nol advisory, dan diff check lulus. Tidak ada
+perubahan API, database, foto/path/output customer, payment, atau production;
+`BUSINESS_READY` tidak berubah.
+
+SagaView S322 exact source
+`5cba37504f35bac0b83e800cd4e503ab46a56d97` sudah `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`. Aksi
+`Aktifkan perangkat` dan `Buka Studio Console` pada kartu terang Owner Console
+kini memakai teks gelap, latar krem, serta border oranye sehingga tidak lagi
+menyatu dengan halaman. Target minimal 44 piksel, focus ring, hover,
+forced-colors, reduced-motion, dan layout tanpa overflow tetap dipertahankan.
+
+Acceptance focused Playwright lulus pada 1440x900 dan 390x844, termasuk
+failure preservation link lama, forced-colors, reduced-motion, dan screenshot
+visual. Production build 5.097 modul, npm audit nol vulnerability, Composer
+audit nol advisory, serta diff/public-safety review lulus. Slice tidak mengubah
+API, database, permission, metadata cloud, foto/path/output customer, payment,
+atau production; `BUSINESS_READY` tidak berubah.
+
+SagaView S321 exact source
+`6e11c9168a95b1176c715fa9779341f5ca823f00` sudah `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Enrollment media custody kini
+berjalan dua tahap: eligibility probe selalu read-only dan tidak membuka
+fingerprint, sedangkan receipt berklasifikasi `RESTRICTED_LOCAL` hanya dapat
+dibuat setelah media cocok serta operator memberi persetujuan eksplisit.
+Receipt ditulis atomik pada fixed storage lokal, idempoten untuk enrollment
+yang sama, menolak overwrite/tamper, tidak memuat serial/unique ID mentah, dan
+tidak boleh diunggah.
+
+Media E: aktual tetap perangkat 32 GB FAT32 yang bukan Lexar custody S311.
+Acceptance nyata berhenti exit 2 dengan `WroteFiles=false`, tanpa membuat
+receipt atau direktori SagaView. Synthetic enrollment 10/10, regresi S320
+10/10, syntax 3/3, privacy/security scan nol, npm dan Composer audit nol, serta
+public health 200 lulus. Production tetap backend/Owner
+`20260826210546-cd7288d` dan Studio `20260824170456-7ae79ae`;
+`BUSINESS_READY=false` sampai media yang benar kembali, enrollment disetujui,
+recovery kapasitas selesai, dan physical UAT lulus.
 
 SagaView S320 exact source
 `387e0d52771403b49a13b67893096135c247e3e2` sudah `PUSHED /

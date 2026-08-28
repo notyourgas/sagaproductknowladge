@@ -1,6 +1,168 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 27 Agustus 2026 23:20 WIB
+Evidence cut-off: 28 Agustus 2026 12:00 WIB
+
+S331 release mirror integrity verification: exact pushed source
+`0966bbd7fedaaa51bf67332139f07f7d2690553d` menghitung ulang SHA-256 archive,
+git bundle, dan manifest pada primary serta mirror setelah copy. Builder hanya
+mengeluarkan status artifact-ready setelah kedua salinan lengkap dan identik
+dengan hash/manifest yang diharapkan.
+
+RED 1 test gagal lalu GREEN 7/44 assertion lulus; regresi release/custody
+14/113 assertion, syntax tiga script, npm/Composer audit nol, diff, clean
+commit, push, dan remote exact lulus. Probe sintetis menerima salinan identik,
+menolak mirror yang diubah, tidak memakai data customer, dan menyisakan nol
+fixture. Status `PUSHED / DEVOPS_VALIDATED / SECURITY_VALIDATED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED /
+PRODUCTION_UNCHANGED`. Gap berikutnya: media lokal terpisah terotorisasi dan
+artifact exact S331.
+
+S330 artifact capacity preflight: exact pushed source
+`f2c946aa6bdbeb2a34b91692320e4f6f55ba4c37` memeriksa ruang bebas output dan
+mirror sebelum directory creation atau build. Builder mewajibkan minimal
+512 MiB pada masing-masing lokasi dan parameter hanya dapat menaikkan ambang,
+sehingga disk yang kekurangan kapasitas ditolak sebelum artifact parsial dibuat.
+
+RED 1 test gagal lalu GREEN 6/36 assertion lulus; regresi release/custody
+13/105 assertion, syntax PowerShell, npm/Composer audit nol, diff, clean commit,
+push, dan remote exact lulus. Probe kapasitas sintetis exact commit exit 1,
+guard terdeteksi, output dan mirror tidak dibuat. Status `PUSHED /
+DEVOPS_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED / PRODUCTION_UNCHANGED`. Gap
+berikutnya: media lokal terpisah terotorisasi dan artifact exact S330.
+
+S329 reparse-point custody guard: exact pushed source
+`1da3a7d5e24f0fd2f234b52d6531ece8fa2eee92` menolak output, mirror, atau temp
+path yang memakai reparse point termasuk junction pada path atau ancestor yang
+sudah ada. Gate ini mencegah identitas drive tekstual menutupi pengalihan ke
+penyimpanan fisik lain sebelum build atau write.
+
+RED 1 test gagal lalu GREEN 5/29 assertion lulus; regresi release/custody
+12/98 assertion, syntax PowerShell, npm/Composer audit nol, diff, clean commit,
+push, dan remote exact lulus. Probe junction sintetis exact commit exit 1,
+guard terdeteksi, mirror tidak dibuat, target kosong, dan fixture dibersihkan.
+Status `PUSHED / DEVOPS_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED / PRODUCTION_UNCHANGED`. Gap
+berikutnya: media lokal terpisah terotorisasi dan artifact exact S329.
+
+S328 unverifiable network storage fail-closed: exact pushed source
+`7ab33b352050a76486327830ed0cfeefd0a025ce` menolak network share sebagai
+lokasi primary atau mirror karena disk fisiknya tidak dapat dibuktikan oleh
+builder lokal. Gate custody sekarang hanya menerima volume lokal yang berhasil
+dipetakan tepat ke satu disk fisik.
+
+RED 1 test gagal lalu GREEN 4/22 assertion lulus; regresi release/custody
+11/91 assertion, syntax PowerShell, npm/Composer audit nol, diff, clean commit,
+push, dan remote exact lulus. Probe exact commit exit 1 dengan guard terdeteksi
+serta tanpa membuat output atau mirror. Status `PUSHED / DEVOPS_VALIDATED /
+SECURITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+RELEASE_BLOCKED / PRODUCTION_UNCHANGED`. Gap berikutnya: media lokal terpisah
+yang terotorisasi dan artifact exact S328.
+
+S327 immutable release directory guard: exact pushed source
+`fd554fa47c669a8c62dde1e13d63d166ea71dced` menutup celah builder yang
+sebelumnya dapat memakai ulang direktori output atau mirror berisi artifact
+lama dan menimpa manifest/salinan historis. Output dan mirror kini harus belum
+ada atau kosong; kondisi nonempty ditolak sebelum temp, build, archive, bundle,
+manifest, atau copy.
+
+RED 1 test gagal lalu GREEN 3/19 assertion lulus; regresi release/custody
+10/88 assertion, syntax PowerShell, npm/Composer audit nol, diff, clean commit,
+push, dan remote exact lulus. Probe exact commit terhadap S325 exit 1, guard
+terdeteksi, mirror tidak dibuat, dan tiga file primary tetap checksum-identik.
+Status `PUSHED / DEVOPS_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED / PRODUCTION_UNCHANGED`. Gap
+berikutnya: media terpisah terotorisasi dan artifact exact S327.
+
+S326 separate physical mirror guard: exact pushed source
+`843ad42cf6db4e558dd4f464c524b4781b625e34` memperbaiki artifact builder yang
+sebelumnya dapat menganggap dua direktori pada disk fisik sama sebagai primary
+dan mirror. Guard kini memakai identitas disk sebelum write/build serta
+fail-closed bila identitas sama atau tidak dapat diverifikasi.
+
+RED 1/2 gagal lalu GREEN 2/14 lulus; regresi release/custody 9/83 assertion,
+probe C→C dan C→D dengan exit 1 tanpa folder, syntax PowerShell, npm/Composer
+audit nol, diff, clean commit, push, dan remote exact lulus. Status `PUSHED /
+DEVOPS_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED / PRODUCTION_UNCHANGED`.
+Artifact S325 primary tetap valid, mirror satu disk tidak memenuhi custody;
+gap berikutnya tetap media terpisah terotorisasi dan artifact exact S326.
+
+S325 exact S324 immutable artifact: release `20260827230221-21058a0` dibuat
+dari clean source `21058a0de1d4a0f2742c45d2c706b8d43bd6df0c`. Archive 2.597
+entry berukuran 81.516.564 byte mempunyai SHA-256
+`643e85ce4b19edd1fe9a719fe612e1502098b64d3ea24dee744dd5534b1795e2`;
+complete git bundle 118.417.183 byte mempunyai SHA-256
+`27589395c84050f9c1267227f00a44f645727bac5390e75adedd011a5314891a`.
+
+Exact-lock install, build 5.097 modul, manifest wajib, bundle exact HEAD,
+forbidden-content scan nol, mirror checksum, dan artifact/storage contract
+4/35 lulus. Primary dan mirror berada pada volume C yang sama, sehingga status
+tetap `ARTIFACT_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+RELEASE_BLOCKED / PRODUCTION_UNCHANGED`. Gap berikutnya: salinan pada media
+custody terotorisasi yang benar, checksum ulang, backup/restore, rehearsal,
+UAT, dan approval deploy; `BUSINESS_READY=false`.
+
+S324 cumulative release candidate: exact pushed merge
+`21058a0de1d4a0f2742c45d2c706b8d43bd6df0c` menyatukan Owner S323
+`32eea103eee5fba88d70c6ed5f8eb493b19988eb` dan custody S321
+`6e11c9168a95b1176c715fa9779341f5ca823f00` pada satu worktree bersih. Tidak
+ada konflik, migration, atau perubahan kontrak runtime baru.
+
+Backend SagaView 226/226 dengan 3.678 assertion, Playwright Owner 26/26 plus
+focused 2/2 pada desktop/mobile, custody S320 10/10, enrollment S321 10/10,
+build 5.097 modul, Composer audit nol advisory, serta npm audit nol
+vulnerability lulus. Status `PUSHED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED / PRODUCTION_UNCHANGED`;
+production tetap S311 dan `BUSINESS_READY=false`. Gap berikutnya adalah media
+custody terotorisasi, artifact dan salinan terpisah exact S324, backup/restore,
+rehearsal, UAT, serta approval deploy.
+
+S323 mobile Support Hub launcher label: exact pushed source
+`32eea103eee5fba88d70c6ed5f8eb493b19988eb` mengganti launcher mobile/tablet
+yang sebelumnya hanya memperlihatkan ikon `?` menjadi ikon plus label
+`Bantuan`; desktop tetap memakai label lengkap `Bantuan SagaView`. Nama
+aksesibel lengkap, target minimal 44 piksel, focus-visible, forced-colors,
+reduced-motion, dan no-overflow dipertahankan.
+
+Focused Playwright 390x844 dan 1440x900 membuktikan label terlihat, launcher
+berada di viewport, keyboard membuka/menutup dialog, bootstrap 200, focus
+containment, privacy no-upload, serta visual normal dan forced-colors. Dua
+suite backend lulus 8 test/68 assertion; TypeScript no-emit, build 5.097 modul,
+npm/Composer audit nol, dan diff check lulus. Status `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; API,
+database, data customer, payment, dan produk lain tidak berubah.
+
+S322 Owner Console action contrast: exact pushed source
+`5cba37504f35bac0b83e800cd4e503ab46a56d97` memperbaiki secondary action
+`Aktifkan perangkat` dan `Buka Studio Console` yang sebelumnya memakai teks
+putih/transparan di atas panel terang. State default kini memakai teks ink,
+latar krem, border oranye, shadow tipis, dan hover yang tetap kontras; target
+minimal 44 piksel serta focus-visible existing tetap dipertahankan.
+
+Focused Playwright membuktikan warna computed, preserved link sesudah retry
+503, satu dominant action, keyboard disclosure, no-overflow, forced-colors,
+reduced-motion, dan visual 1440x900 serta 390x844. Production build 5.097
+modul, npm audit nol vulnerability, Composer audit nol advisory, dan diff
+review lulus. Status `PUSHED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; tidak ada perubahan API,
+database, data customer, upload, payment, atau produk lain.
+
+S321 restricted archive media enrollment: exact pushed source
+`6e11c9168a95b1176c715fa9779341f5ca823f00` menutup gap enrollment fingerprint
+S320 melalui dua tahap. Eligibility probe bersifat read-only dan selalu
+ter-redact; receipt `RESTRICTED_LOCAL` hanya dibuat pada fixed storage lokal
+setelah media sesuai kontrak serta operator menyetujui. Atomic write,
+read-after-write checksum, idempotency, no-overwrite, tamper rejection, tanpa
+raw serial/unique ID, dan `UploadAllowed=false` dibuktikan.
+
+Media E: aktual tetap perangkat 32 GB FAT32 yang bukan Lexar custody S311;
+actual gate exit 2, `WroteFiles=false`, tanpa receipt atau direktori SagaView.
+Synthetic enrollment 10/10, regresi S320 10/10, syntax 3/3,
+mutation/network/raw-output scan nol, npm dan Composer audit nol, serta public
+health 200 lulus. Status `PUSHED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED / PRODUCTION_UNCHANGED`;
+`BUSINESS_READY=false` dan recovery kapasitas belum dijalankan.
 
 S320 worktree archive media identity guard: exact pushed source
 `387e0d52771403b49a13b67893096135c247e3e2` menutup risiko huruf drive
