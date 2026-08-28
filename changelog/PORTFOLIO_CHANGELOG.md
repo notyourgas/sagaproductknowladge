@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-28 - SagaView S334 partial artifact recovery
+
+- Build artifact yang gagal kini membersihkan hanya archive, git bundle, dan
+  manifest milik run tersebut; file operator lain dipertahankan dan direktori
+  buatan run hanya dihapus bila kosong.
+- Exact source `a5986e16b6b66f52ad27b8fba1b0b2fc0f2b1511` lulus focused
+  9/9, probe recovery sintetis, regresi 16/16, syntax, build, dan dependency
+  gate yang relevan; path traversal dan cleanup tidak lengkap gagal tertutup.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED`; production tetap S333 dan tidak ada artifact release
+  baru atau data customer yang dipakai.
+
 ## 2026-08-28 - SagaView S333 current Changelog production
 
 - Changelog Owner kini menunjuk S331 / 28 Agustus, menggantikan S262 /

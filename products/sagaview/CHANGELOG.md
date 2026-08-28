@@ -1,5 +1,26 @@
 # SagaView Changelog
 
+## 2026-08-28 - S334 failed-build partial artifact recovery
+
+- Klasifikasi: `CONFIRMED / PUSHED / DEVOPS_VALIDATED /
+  SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`.
+- Before: kegagalan build setelah write dimulai dapat meninggalkan archive,
+  bundle, manifest, atau direktori run sehingga retry aman berikutnya tertahan.
+- After: exact source `a5986e16b6b66f52ad27b8fba1b0b2fc0f2b1511`
+  membersihkan hanya artifact bernama exact milik run pada primary/mirror,
+  mempertahankan file lain, serta menghapus direktori buatan run hanya bila
+  kosong. Path traversal ditolak dan cleanup tidak lengkap dilaporkan.
+- Acceptance: RED 1 error; GREEN focused 9/9 (68 assertion), probe sintetis,
+  regresi 16/16 (137 assertion), syntax PowerShell, build 5.097 modul, npm
+  audit nol, clean commit, push, dan remote exact lulus. Composer audit nol
+  advisory lulus pada lockfile identik sebelum commit; retry exact commit
+  timeout ke Packagist tanpa perubahan dependency.
+- Boundary: tidak ada recursive delete, data customer, artifact release baru,
+  API, database, migration, payment, deploy, atau activation. Production tetap
+  S333 `80635694d7db1df45ade256ecd7e67cc34fe76c3` /
+  `20260828071047-8063569`.
+
 ## 2026-08-28 - S333 current Changelog production activation
 
 - Klasifikasi: `CONFIRMED / PUSHED / DEVOPS_VALIDATED /

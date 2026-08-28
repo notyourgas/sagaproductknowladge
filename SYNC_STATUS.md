@@ -12,12 +12,38 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-28T14:17:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-28T15:00:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
-| Informasi terakhir disinkronkan | SagaView S333 current Changelog production activation. |
-| Status sinkronisasi | Source `80635694` aktif pada release `20260828071047-8063569`; artifact dua disk, backup/restore, service, dan lima smoke lulus. |
+| Informasi terakhir disinkronkan | SagaView S334 failed-build partial artifact recovery. |
+| Status sinkronisasi | Source `a5986e16` pushed dan local-validated; belum dideploy, production tetap S333. |
+
+## SagaView S334 partial artifact recovery
+
+- Exact source `a5986e16b6b66f52ad27b8fba1b0b2fc0f2b1511` dipush dari
+  branch `codex/s334-sagaview-partial-artifact-recovery` dengan worktree clean.
+- Cleanup kegagalan build dibatasi pada archive, bundle, dan manifest exact
+  milik run. File lain dipertahankan, direktori run hanya dihapus bila kosong,
+  traversal ditolak, dan kegagalan cleanup tetap terlihat.
+- Focused 9/9 (68 assertion), probe sintetis, regresi 16/16 (137 assertion),
+  syntax, build, npm audit, diff, push, dan remote parity lulus. Composer audit
+  nol advisory lulus pada lockfile identik; retry exact commit timeout ke
+  Packagist dan dependency tidak berubah.
+- Status `PUSHED / DEVOPS_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`.
+  Production tetap S333 `80635694d7db1df45ade256ecd7e67cc34fe76c3` /
+  `20260828071047-8063569`; tidak ada artifact baru atau data customer.
+
+## File yang berubah pada sinkronisasi SagaView S334
+
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaView S333 current Changelog production
 

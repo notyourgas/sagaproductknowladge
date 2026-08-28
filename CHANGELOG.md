@@ -1,5 +1,22 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-28 - SagaView S334 partial artifact recovery sync
+
+- Ringkasan: menyinkronkan recovery fail-closed untuk artifact parsial ketika
+  build berhenti setelah write dimulai; cleanup hanya menyentuh file exact
+  milik run dan mempertahankan file operator lain.
+- Provenance: source `a5986e16b6b66f52ad27b8fba1b0b2fc0f2b1511`,
+  branch `codex/s334-sagaview-partial-artifact-recovery`, pushed dan clean.
+- Evidence: focused 9/9 (68 assertion), probe sintetis, regresi 16/16
+  (137 assertion), syntax PowerShell, build 5.097 modul, npm audit nol, serta
+  Composer audit nol pada lockfile identik. Retry audit exact commit timeout ke
+  Packagist tanpa perubahan dependency.
+- Klasifikasi: `PUSHED / DEVOPS_VALIDATED / SECURITY_VALIDATED /
+  QA_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED`.
+- Dokumen terdampak: Product, feature ledger/changelog SagaView, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-08-28 - SagaView S333 current Changelog production sync
 
 - Ringkasan: menyinkronkan registry Changelog Owner dari S262 / 22 Agustus

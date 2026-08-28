@@ -1,6 +1,24 @@
 # SagaView Product Knowledge
 
-Updated: 28 Agustus 2026 14:17 WIB
+Updated: 28 Agustus 2026 15:00 WIB
+
+SagaView S334 exact source
+`a5986e16b6b66f52ad27b8fba1b0b2fc0f2b1511` sudah `PUSHED /
+DEVOPS_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`. Jika build artifact gagal
+setelah file mulai dibuat, builder kini membersihkan hanya archive, git bundle,
+dan manifest milik run tersebut pada primary/mirror. File operator lain tetap
+dipertahankan dan direktori buatan run hanya dihapus bila sudah kosong.
+
+Probe sintetis membuktikan artifact parsial terhapus, file tidak terkait tetap
+ada, path traversal ditolak, lokasi yang berubah menjadi direktori dilaporkan
+sebagai cleanup tidak lengkap, serta tidak ada recursive delete atau data
+customer. Focused 9/9 dengan 68 assertion, regresi release/custody 16/16 dengan
+137 assertion, syntax PowerShell, build 5.097 modul, npm audit nol vulnerability,
+dan Composer audit pada lockfile identik nol advisory lulus. Percobaan ulang
+Composer audit exact commit kemudian timeout ke Packagist; dependency tidak
+berubah. Tidak ada artifact release baru, deploy, API, database, migration,
+payment, atau customer data.
 
 SagaView S333 exact source
 `80635694d7db1df45ade256ecd7e67cc34fe76c3` aktif pada immutable release

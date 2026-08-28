@@ -1,6 +1,24 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 28 Agustus 2026 14:17 WIB
+Evidence cut-off: 28 Agustus 2026 15:00 WIB
+
+S334 partial artifact recovery: exact pushed source
+`a5986e16b6b66f52ad27b8fba1b0b2fc0f2b1511` menutup risiko retry ketika
+build gagal setelah archive, bundle, atau manifest mulai ditulis. Cleanup
+dibatasi pada nama file exact milik run di primary/mirror; file lain tidak
+disentuh, direktori buatan run hanya dihapus bila kosong, path traversal
+ditolak, dan kegagalan cleanup dilaporkan tanpa menyamarkan error build awal.
+
+RED 1 error lalu GREEN focused 9/9 (68 assertion), probe sintetis, regresi
+release/custody 16/16 (137 assertion), syntax PowerShell, build 5.097 modul,
+npm audit nol vulnerability, diff, clean commit, push, dan remote exact lulus.
+Composer audit nol advisory lulus pada lockfile identik sebelum commit;
+percobaan ulang exact commit timeout ke Packagist dan `composer.lock` tidak
+berubah. Status `PUSHED / DEVOPS_VALIDATED / SECURITY_VALIDATED /
+QA_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+PRODUCTION_UNCHANGED`. Gap berikutnya: membuat kandidat artifact exact S334
+pada dua media fisik terpisah dan menjalankan release gate lengkap; production
+tetap S333.
 
 S333 Changelog production deployment: exact pushed source
 `80635694d7db1df45ade256ecd7e67cc34fe76c3` aktif pada immutable release
