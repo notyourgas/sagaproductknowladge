@@ -1,5 +1,28 @@
 # SagaBook Changelog
 
+## 2026-08-29 - Booking-void financial integrity production activation
+
+- Owner/manager kini dapat menandai booking manual yang salah catat sebagai
+  batal dengan kategori dan catatan alasan wajib tanpa menghapus record.
+- Ledger void menyimpan snapshot asal serta dampak finansial. Transaksi manual
+  terkait mendapat reversal, slot dilepas, report/omzet/analitik paket tidak
+  lagi menghitung booking tersebut, dan closing yang sudah ada mendapat revisi
+  penyesuaian tanpa menimpa kas fisik yang telah dicatat.
+- Hard delete booking paid, actor staff, stale version, retry dengan payload
+  berbeda, serta provider-paid/refunded void ditolak secara fail-closed;
+  pembayaran provider tetap memakai alur refund.
+- Exact cumulative source `3ae80ddada59b3c3eb23932c42c9fc9a4de60a6c`
+  aktif pada release `20260828233547-3ae80dd`; rollback kompatibel
+  `20260828220429-9a38252` tersedia.
+- PHP 1.287/1.287 (14.458 assertion), MySQL 8.4 booking-void 4/4,
+  TypeScript/build, browser desktop/mobile, audit dependency nol, encrypted
+  backup/disposable restore, verifier 23/23, canary 32/32, reconciliation
+  score 100/finding 0, migration pending 0, journal 0 error, dan
+  smoke/security 3/3 lulus.
+- Status `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+  BUSINESS_READY=false`; authenticated Owner/operator UAT belum karena bridge
+  credential lokal tidak aktif.
+
 ## 2026-08-29 - Styled XLSX report export production activation
 
 - Exact cumulative source `9a382520ccbfe8d3a8ebea0d64e7dfffc5be9e09`
