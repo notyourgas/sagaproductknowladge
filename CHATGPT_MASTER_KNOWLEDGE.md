@@ -1,5 +1,16 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+SagaBook S341 exact source
+`023c1e6a7d8d558254ac2acd18504e0f8b986499` mengubah Closing Operasional
+menjadi manual-share: konfigurasi grup WhatsApp tidak lagi menjadi syarat
+preflight, dan UI tidak lagi menampilkan target/status provider. Setelah
+submit, admin tetap dapat Salin Teks atau Buka Share Sheet lalu mengirim ke
+grup cabang masing-masing. Warning rule konsumsi paket/add-on tetap aktif.
+TypeScript/build, Playwright closing 4/4, Closing Staff 1/1, dan audit
+dependency nol lulus. Status `PUSHED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; tidak ada perubahan API,
+database, payment, permission, atau aktivasi WhatsApp.
+
 SagaBook Wave B analitik booking per paket aktif pada exact source
 `7d82f308da02357fd4de3677b96e81fd53be0424`, immutable release
 `20260828180149-7d82f30`, dengan rollback `20260828174039-806adbe`.

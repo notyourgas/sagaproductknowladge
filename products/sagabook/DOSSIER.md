@@ -7,6 +7,19 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Closing manual-share S341 exact source
+  `023c1e6a7d8d558254ac2acd18504e0f8b986499`: konfigurasi grup WhatsApp
+  bukan lagi prasyarat preflight. Setelah submit, admin tetap dapat menyalin
+  teks atau memakai share sheet dan memilih grup cabang sendiri. UI tidak lagi
+  menampilkan target grup atau status provider, sementara pencatatan aksi
+  share manual dan warning rule konsumsi yang belum lengkap tetap
+  dipertahankan. Perubahan hanya menyentuh frontend dan acceptance test; tidak
+  mengubah API, database, payment, tenant/permission, atau mengaktifkan
+  provider WhatsApp. TypeScript/build, Playwright closing 4/4, Closing Staff
+  1/1, serta audit dependency nol lulus. Status `CONFIRMED / PUSHED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; merge
+  dan release menunggu jalur hotfix production terminal.
+
 - Wave B analitik booking per paket exact source
   `7d82f308da02357fd4de3677b96e81fd53be0424` aktif pada immutable release
   `20260828180149-7d82f30`; rollback `20260828174039-806adbe` kompatibel.

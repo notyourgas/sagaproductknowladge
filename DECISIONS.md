@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-121 - Closing dibagikan manual oleh admin tanpa konfigurasi grup
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-29 |
+| Topik | Cara membagikan laporan Closing Operasional ke grup cabang |
+| Keputusan | Konfigurasi grup WhatsApp tidak menjadi syarat preflight Closing Operasional. Setelah closing disubmit, admin menyalin teks atau membuka share sheet dan mengirim laporan secara manual ke grup cabang masing-masing. |
+| Alasan | Admin sudah menangani komunikasi grup secara langsung; target dan status provider di UI menambah setup yang tidak diperlukan. |
+| Alternatif yang dipertimbangkan | Mempertahankan satu target grup per cabang; otomatisasi provider; menghapus seluruh tab Bagikan. |
+| Dampak | Warning konfigurasi grup dan panel target/status provider dihapus. Salin Teks, share sheet, audit aksi manual, serta warning rule konsumsi stok tetap dipertahankan. API, database, payment, permission, dan provider tidak berubah. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; source `023c1e6a7d8d558254ac2acd18504e0f8b986499`, PR SagaBook #57; merge/release ditahan selama hotfix production berjalan |
+| Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [SagaBook Changelog](products/sagabook/CHANGELOG.md), [SagaBook Ledger](products/sagabook/FEATURE_COVERAGE_LEDGER.md) |
+
 ## DEC-120 - Add-on berbayar mengurangi consumable closing sesuai snapshot
 
 | Field | Isi |

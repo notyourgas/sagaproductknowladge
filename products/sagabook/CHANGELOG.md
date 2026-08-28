@@ -1,5 +1,19 @@
 # SagaBook Changelog
 
+## 2026-08-29 - S341 closing manual-share tanpa konfigurasi grup
+
+- Menghapus konfigurasi grup WhatsApp dari syarat preflight Closing
+  Operasional dan menghilangkan panel target/status provider dari UI.
+- Tab Bagikan tetap menyediakan Salin Teks dan Buka Share Sheet; admin memilih
+  serta mengirim ke grup cabang masing-masing secara manual setelah submit.
+- Warning rule konsumsi paket/add-on tetap aktif agar masalah pemetaan stok
+  tidak tertutupi oleh perubahan workflow komunikasi.
+- Exact source `023c1e6a7d8d558254ac2acd18504e0f8b986499`, PR SagaBook #57.
+  TypeScript/build, Playwright closing 4/4, Closing Staff 1/1, npm/Composer
+  audit nol, dan diff check lulus.
+- Status `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED`. Merge/deploy ditahan selama hotfix production aktif.
+
 ## 2026-08-29 - Wave B analitik booking per paket production activation
 
 - Exact source `7d82f308da02357fd4de3677b96e81fd53be0424` aktif pada immutable

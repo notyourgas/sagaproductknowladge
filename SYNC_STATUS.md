@@ -12,12 +12,22 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-29T01:22:00+07:00 |
-| Branch aktif | `codex/s340-sagabook-wave-b-production-knowledge` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-29T01:25:00+07:00 |
+| Branch aktif | `codex/knowledge-s341-closing-manual-share` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `febd51c` |
-| Informasi terakhir disinkronkan | SagaBook Wave B analitik booking per paket production activation. |
-| Status sinkronisasi | Release `20260828180149-7d82f30`; `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `a10eaebc20fb41ef03b84f0625a38225cb834085` |
+| Informasi terakhir disinkronkan | SagaBook S341 closing manual-share tanpa konfigurasi grup WhatsApp. |
+| Status sinkronisasi | `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; merge/release source ditahan selama hotfix berjalan. |
+
+## SagaBook S341 closing manual-share
+
+- Exact source `023c1e6a7d8d558254ac2acd18504e0f8b986499`, PR SagaBook #57.
+- Konfigurasi grup WhatsApp tidak lagi menjadi syarat preflight; admin tetap
+  memakai Salin Teks atau Buka Share Sheet untuk mengirim manual.
+- Warning rule konsumsi stok tetap aktif. TypeScript/build, Playwright 5/5
+  kumulatif, dependency audit nol, dan diff check lulus.
+- Status `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`;
+  backend/database/provider tidak berubah dan release menunggu hotfix terminal.
 
 ## SagaBook Wave B package analytics
 

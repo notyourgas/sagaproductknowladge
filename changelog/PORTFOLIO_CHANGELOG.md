@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-29 - SagaBook S341 closing manual-share
+
+- Closing Operasional tidak lagi membutuhkan konfigurasi grup WhatsApp.
+  Admin menyalin teks atau memakai share sheet, lalu memilih grup cabang
+  masing-masing secara manual.
+- Warning rule konsumsi stok tetap dipertahankan. Source
+  `023c1e6a7d8d558254ac2acd18504e0f8b986499` lulus TypeScript/build,
+  Playwright 5/5 kumulatif, dan audit dependency nol.
+- Status `PUSHED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; merge dan
+  release menunggu hotfix SagaBook yang sedang berjalan selesai.
+
 ## 2026-08-29 - SagaBook Wave B package analytics production activation
 
 - Exact source `7d82f308da02357fd4de3677b96e81fd53be0424` aktif pada release

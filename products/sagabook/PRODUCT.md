@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 29 Agustus 2026 01:22 WIB
-Evidence status: analitik booking per paket Wave B sudah production-deployed dan production-activated pada exact source `7d82f308da02357fd4de3677b96e81fd53be0424`; canary read-only 32/32 lulus tanpa mutasi, authenticated Owner/Staff UAT belum karena credential bridge lokal tidak aktif, dan business readiness tetap terpisah
+Updated: 29 Agustus 2026 01:25 WIB
+Evidence status: kandidat S341 closing manual-share sudah pushed dan local-validated tetapi belum dideploy; production tidak diubah oleh S341. Analitik booking per paket Wave B sudah production-deployed dan production-activated pada exact source `7d82f308da02357fd4de3677b96e81fd53be0424`; canary read-only 32/32 lulus tanpa mutasi, authenticated Owner/Staff UAT belum karena credential bridge lokal tidak aktif, dan business readiness tetap terpisah
 
 ## Tujuan dokumen
 
@@ -15,6 +15,18 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
+
+- Kandidat S341 pada exact source
+  `023c1e6a7d8d558254ac2acd18504e0f8b986499` menghapus konfigurasi grup
+  WhatsApp dari syarat preflight Closing Operasional. Tab Bagikan tetap ada
+  untuk menyalin teks atau membuka share sheet, lalu admin mengirim laporan
+  secara manual ke grup cabang masing-masing. Panel target/status provider
+  tidak lagi ditampilkan. Warning rule konsumsi paket/add-on tetap aktif agar
+  akurasi stok tidak dilemahkan. TypeScript penuh, build, Playwright closing
+  4/4, regresi Closing Staff 1/1, serta audit npm/Composer nol lulus. Status
+  `CONFIRMED / PUSHED / LOCAL_VALIDATED / UIUX_VALIDATED / QA_VALIDATED /
+  SECURITY_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`;
+  merge dan deploy ditahan selama hotfix production terkoordinasi.
 
 - Analitik booking per paket Wave B aktif pada exact source
   `7d82f308da02357fd4de3677b96e81fd53be0424`, immutable release
