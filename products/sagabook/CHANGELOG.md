@@ -1,5 +1,24 @@
 # SagaBook Changelog
 
+## 2026-08-28 - S313 booking-detail WhatsApp copy templates
+
+- Menu `Salin template WA` pada Booking Detail kini mempunyai tiga pilihan:
+  Konfirmasi Sesi Foto, Pengingat Sesi Foto, dan Pengiriman Link Drive Foto.
+- Backend merender template aktif tenant memakai data booking terbaru;
+  template dapat diedit oleh role berizin, sementara Staff hanya dapat copy
+  untuk cabang delegasinya tanpa menerima template mentah.
+- Eligibility status/jadwal/Link Drive, placeholder allowlist, tenant/cabang,
+  response no-store, audit tanpa message/PII/token, dan kegagalan clipboard
+  dipagari fail-closed. Copy tidak membuat delivery atau mengubah state.
+- Exact source `9f031c073cc9de3e2cba8a4ba2e22be2a701176c` pada branch
+  `codex/s313-sagabook-wa-copy-templates`; 49 test terkait (228 assertion),
+  tiga regresi workflow (25), critical typecheck, build 5.133 modul, format,
+  syntax, dan diff check lulus.
+- Status `CONFIRMED / PUSHED / QA_VALIDATED / SECURITY_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`.
+  Production tetap S312, WhatsApp operasional tetap tersuspensi, review/merge,
+  release, authenticated UAT, dan `BUSINESS_READY` tetap terpisah.
+
 ## 2026-08-28 - S312 production deployment and activation
 
 - Exact source `88b8ea9ad9ce03f91d3d9099cffcb71e9f06caaf` di-fast-forward

@@ -12,12 +12,39 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-28T12:59:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-28T13:07:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
-| Informasi terakhir disinkronkan | SagaBook S312 production deployment and activation. |
-| Status sinkronisasi | SagaBook source `88b8ea9a` `CONFIRMED / PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; operational WhatsApp tetap tersuspensi dan `BUSINESS_READY=false`. |
+| Informasi terakhir disinkronkan | SagaBook S313 booking-detail WhatsApp copy templates. |
+| Status sinkronisasi | SagaBook S313 source `9f031c07` `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; production S312 dan suspend WhatsApp operasional tidak berubah. |
+
+## SagaBook S313 booking-detail WhatsApp copy templates
+
+- Exact source `9f031c073cc9de3e2cba8a4ba2e22be2a701176c` pada branch
+  `codex/s313-sagabook-wa-copy-templates` menyediakan tiga aksi salin dari
+  Booking Detail, dengan render server-side dari template aktif tenant dan
+  data booking terbaru.
+- Editor dan capability copy dipisahkan; Staff tetap tenant/branch-scoped.
+  Placeholder, eligibility, cache, audit, clipboard, dan no-mutation boundary
+  dipagari fail-closed.
+- 49 test terkait (228 assertion), tiga regresi workflow (25), critical
+  typecheck, build 5.133 modul, format, syntax, dan diff check lulus.
+- Status `IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; copy manual bukan
+  delivery provider. Production tetap S312, WhatsApp operasional tetap
+  tersuspensi, dan `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi S313
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `DECISIONS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook S312 production deployment and activation
 

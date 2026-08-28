@@ -1,8 +1,19 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 28 Agustus 2026 12:59 WIB
+Evidence cut-off: 28 Agustus 2026 13:07 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
+
+SagaBook S313 exact pushed source
+`9f031c073cc9de3e2cba8a4ba2e22be2a701176c` menambahkan tiga aksi salin
+template WhatsApp di Booking Detail: konfirmasi sesi, pengingat sesi, dan
+pengiriman Link Drive foto. Pesan dirender server-side dari template aktif
+tenant dan data booking terbaru. Hak editor terpisah dari capability copy
+Staff; tenant/cabang, placeholder, eligibility, cache, audit, dan clipboard
+dipagari fail-closed. Copy tidak mengirim pesan, tidak memanggil provider, dan
+tidak mengubah status booking/hasil/reminder. Status `CONFIRMED / PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`;
+production tetap S312 dan WhatsApp operasional tetap tersuspensi.
 
 SagaBook S312 exact source
 `88b8ea9ad9ce03f91d3d9099cffcb71e9f06caaf` aktif pada immutable release

@@ -1,6 +1,19 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 28 Agustus 2026 12:59 WIB
+Evidence cut-off: 28 Agustus 2026 13:07 WIB
+
+Salin template WhatsApp Booking Detail S313 exact source
+`9f031c073cc9de3e2cba8a4ba2e22be2a701176c` telah `CONFIRMED / PUSHED /
+QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`. Coverage UI -> typed API -> tenant/branch-scoped
+renderer -> template aktif mencakup Konfirmasi Sesi Foto, Pengingat Sesi Foto,
+dan Pengiriman Link Drive Foto. Staff mendapat capability copy tanpa daftar
+template mentah atau hak editor. Placeholder allowlist, syarat status/jadwal,
+Link Drive, no-store response, audit tanpa message/PII/token, clipboard failure,
+dan state tanpa mutation dipagari fail-closed. 49 test terkait (228 assertion),
+tiga regresi workflow (25), critical typecheck, build 5.133 modul, format,
+syntax, dan diff check lulus. Production tetap S312; copy manual bukan delivery
+WhatsApp dan tidak melewati suspend provider.
 
 Guard log return pascapembayaran S312 exact source
 `88b8ea9ad9ce03f91d3d9099cffcb71e9f06caaf` telah `CONFIRMED / PUSHED /

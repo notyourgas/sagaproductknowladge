@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-28 - SagaBook S313 booking-detail WA copy sync
+
+- Ringkasan: menyinkronkan tiga template WhatsApp tenant-editable yang dapat
+  disalin dari Booking Detail dengan detail booking terbaru.
+- Produk/area: SagaBook admin booking, template editor, permission Staff,
+  backend renderer, audit/privacy, dan operator workflow.
+- Klasifikasi: `CONFIRMED / PUSHED / QA_VALIDATED / SECURITY_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; exact
+  source `9f031c073cc9de3e2cba8a4ba2e22be2a701176c`.
+- Copy bersifat manual dan bukan bukti delivery; production S312, suspend
+  provider, payment, dan `BUSINESS_READY=false` tidak berubah.
+- Dokumen terdampak: Product, Dossier, feature ledger/changelog SagaBook,
+  portfolio, master knowledge, decisions, root changelog, dan sync status.
+
 ## 2026-08-28 - SagaBook S312 production deployment sync
 
 - Ringkasan: exact source `88b8ea9ad9ce03f91d3d9099cffcb71e9f06caaf`

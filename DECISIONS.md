@@ -1602,3 +1602,17 @@ keputusan pengganti.
 | Pemberi keputusan | Andreas / founder |
 | Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; exact source `a9127dc4595f2d8d7e60094ac330cac76448b255`, release `20260827210830-a9127dc`, `BUSINESS_READY=false` |
 | Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [SagaBook Changelog](products/sagabook/CHANGELOG.md), [Gaps](GAPS.md) |
+
+## DEC-114 - Booking Detail menyediakan tiga template WhatsApp yang dapat disalin
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-28 |
+| Topik | Template komunikasi customer dari Booking Detail SagaBook |
+| Keputusan | Setiap Booking Detail menyediakan aksi salin untuk Konfirmasi Sesi Foto, Pengingat Sesi Foto, dan Pengiriman Link Drive Foto. Pesan memakai detail booking terbaru dan dapat diedit melalui Template Editor. |
+| Alasan | Operator membutuhkan pesan customer yang konsisten dan siap ditempel tanpa mengetik ulang detail setiap booking. |
+| Alternatif yang dipertimbangkan | Mempertahankan satu template hard-coded; menyalin template mentah dari halaman editor; langsung mengirim otomatis melalui provider. |
+| Dampak | Renderer server-side, template default, placeholder allowlist, capability copy terpisah, tenant/cabang guard, serta audit public-safe ditambahkan. Copy tetap manual, tidak mengubah status atau delivery ledger, dan tidak melewati suspend provider. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; exact source `9f031c073cc9de3e2cba8a4ba2e22be2a701176c` |
+| Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [SagaBook Changelog](products/sagabook/CHANGELOG.md), [SagaBook Ledger](products/sagabook/FEATURE_COVERAGE_LEDGER.md) |

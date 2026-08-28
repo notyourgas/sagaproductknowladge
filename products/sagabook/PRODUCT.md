@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 28 Agustus 2026 12:59 WIB
-Evidence status: post-payment tenant-safe return and observability guard S312 are production-activated; operational WhatsApp is temporarily suspended for provider transition
+Updated: 28 Agustus 2026 13:07 WIB
+Evidence status: booking-detail WhatsApp copy templates S313 are locally validated but not deployed; production remains S312 and operational WhatsApp is temporarily suspended for provider transition
 
 ## Tujuan dokumen
 
@@ -13,6 +13,24 @@ belum pasti dicatat di [GAPS](../../GAPS.md#sagabook).
 
 Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
+
+## Kandidat fitur terbaru
+
+- S313 menambahkan menu `Salin template WA` pada setiap Booking Detail untuk
+  Konfirmasi Sesi Foto, Pengingat Sesi Foto, dan Pengiriman Link Drive Foto.
+  Pesan dirender server-side dari template aktif tenant dan data booking
+  terbaru; owner/manager/admin cabang dapat mengedit template, sedangkan Staff
+  hanya mendapat capability copy pada cabang delegasinya. Status, jadwal, dan
+  ketersediaan Link Drive dipagari fail-closed. Copy hanya menulis clipboard
+  manual, tidak membuat delivery, tidak mengubah status booking/hasil/reminder,
+  dan tidak memanggil provider. Exact source
+  `9f031c073cc9de3e2cba8a4ba2e22be2a701176c` pada branch
+  `codex/s313-sagabook-wa-copy-templates` telah lulus 49 test terkait (228
+  assertion), tiga regresi workflow (25 assertion), critical typecheck, build
+  5.133 modul, format, syntax, dan diff check. Status `CONFIRMED / PUSHED /
+  QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap S312 dan WhatsApp operasional
+  tetap tersuspensi.
 
 ## Status production terbaru
 

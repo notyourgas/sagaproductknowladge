@@ -7,6 +7,20 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Salin template WhatsApp Booking Detail S313 exact source
+  `9f031c073cc9de3e2cba8a4ba2e22be2a701176c`:
+  `CONFIRMED / PUSHED / QA_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Setiap detail booking menyediakan Konfirmasi Sesi
+  Foto, Pengingat Sesi Foto, dan Pengiriman Link Drive Foto yang dirender
+  server-side dari template aktif tenant serta data booking terbaru. Editor
+  tetap terpisah dari capability copy Staff; tenant/cabang, placeholder,
+  status/jadwal/link, clipboard, cache, dan audit dipagari fail-closed. Copy
+  manual tidak membuat delivery ledger, tidak mengubah state booking/hasil,
+  dan tidak memanggil provider. 49 test terkait (228 assertion), tiga regresi
+  workflow (25), critical typecheck, build 5.133 modul, format, syntax, dan diff
+  check lulus. Production tetap exact S312; dispatch WhatsApp operasional tetap
+  tersuspensi dan `BUSINESS_READY=false`.
+
 - S309 plus hardening release transisi provider aktif pada exact source
   `a9127dc4595f2d8d7e60094ac330cac76448b255`, immutable release
   `20260827210830-a9127dc`, rollback `20260827125239-24a6bab`:

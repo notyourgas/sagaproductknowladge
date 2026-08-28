@@ -1,5 +1,20 @@
 # Portfolio Changelog
 
+## 2026-08-28 - SagaBook S313 booking-detail WhatsApp copy templates
+
+- Booking Detail memiliki tiga copy template tenant-editable untuk konfirmasi
+  sesi, pengingat sesi, dan pengiriman Link Drive foto; data customer/booking
+  dirender server-side pada saat copy.
+- Permission editor dan copy dipisahkan. Staff hanya dapat merender booking
+  cabang delegasinya; template/data invalid gagal tertutup dan audit tidak
+  menyimpan isi pesan, PII, token, atau Link Drive.
+- Exact source `9f031c073cc9de3e2cba8a4ba2e22be2a701176c` telah dipush dan lulus
+  backend/UI contract, workflow regression, typecheck, build, format, syntax,
+  serta diff check.
+- Status `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED`; copy tetap manual, bukan provider delivery, dan
+  production SagaBook tetap S312.
+
 ## 2026-08-28 - SagaBook S312 production deployment
 
 - Exact main `88b8ea9ad9ce03f91d3d9099cffcb71e9f06caaf` aktif pada
