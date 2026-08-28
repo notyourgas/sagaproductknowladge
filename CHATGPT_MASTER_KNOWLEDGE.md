@@ -1,5 +1,18 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+SagaBook batch S319-S322 add-on consumable exact pushed source
+`8203f0131a366b81b8922127d6cd6bda06357b2d` memungkinkan Owner memetakan
+kertas foto dan packaging per unit add-on. Rule versioned disnapshot ke baris
+booking dan dipertahankan ketika booking disinkronkan ulang; closing hanya
+menghitung add-on paid/confirmed dan tidak membaca ulang konfigurasi katalog
+baru. Add Person x2 dan Cetak 4R x3, bersama paket 2 kertas + 1 packaging,
+terverifikasi menjadi 7 kertas + 1 packaging tanpa double count. Backfill
+default read-only dan apply wajib exact manifest lengkap, preview, audit, serta
+replay idempoten. Full PHP 1.266/1.266, typecheck/build, Playwright 3/3, dan
+dependency audit nol lulus. Status `PUSHED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; release terkoordinasi,
+pilot, authenticated Owner/Staff UAT, dan `BUSINESS_READY` masih pending.
+
 SagaBook S319 closing daily recap exact merged source
 `31e78b8f225d06ceb4f9823c2bdb0ff552ef7d37` menambahkan total sesi, jumlah
 per paket, kuantitas add-on, pemasukan, pengeluaran, net, breakdown metode

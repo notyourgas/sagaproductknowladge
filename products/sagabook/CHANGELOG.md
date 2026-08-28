@@ -1,5 +1,26 @@
 # SagaBook Changelog
 
+## 2026-08-28 - S319-S322 konsumsi kertas dan packaging dari add-on
+
+- Editor add-on kini mempunyai wizard pemakaian stok untuk kertas foto dan
+  packaging, lengkap dengan status belum dipetakan, tidak mengurangi stok,
+  atau kuantitas per unit.
+- Rule disimpan versioned dan atomik bersama katalog, dibaca secara batch,
+  disnapshot pada baris booking, dipertahankan saat sinkronisasi berikutnya,
+  serta dibersihkan ketika add-on dihapus.
+- Closing hanya menghitung add-on paid/confirmed. Skenario paket 2 kertas + 1
+  packaging, Add Person x2, dan Cetak 4R x3 menghasilkan 7 kertas + 1
+  packaging; add-on unpaid tidak dihitung dan submit ulang tetap exactly-once.
+- Rekonsiliasi tenant lama tersedia sebagai audit read-only; apply memerlukan
+  manifest ID lengkap, preview, audit, dan replay idempoten. Tidak ada backfill
+  production atau migration baru yang dijalankan dari task ini.
+- Exact source `8203f0131a366b81b8922127d6cd6bda06357b2d`. Full PHP
+  1.266/1.266 (14.250 assertion), focused 28/28 (208), typecheck/build,
+  Playwright 3/3, dan dependency audit nol lulus. Status `CONFIRMED / PUSHED /
+  LOCAL_VALIDATED / UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED`; authenticated UAT dan rollout manifest pending.
+
 ## 2026-08-28 - S319 rekap sesi dan keuangan closing harian
 
 - Closing menampilkan total sesi, jumlah sesi per paket, add-on beserta

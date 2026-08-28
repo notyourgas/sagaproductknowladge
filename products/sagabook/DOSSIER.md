@@ -7,6 +7,24 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Batch konsumsi stok add-on S319-S322 exact source
+  `8203f0131a366b81b8922127d6cd6bda06357b2d`: Owner dapat mengaktifkan dan
+  mengisi kuantitas kertas foto serta packaging per unit add-on dari editor
+  katalog. Backend menyimpan pasangan rule lengkap secara atomik, membuat
+  versi baru hanya saat nilai berubah, membatch read rule, dan mempertahankan
+  snapshot rule di baris booking ketika booking disinkronkan ulang. Closing
+  mengambil snapshot authoritative dan hanya menghitung add-on paid/confirmed,
+  sehingga Add Person dan Cetak 4R menambah pengeluaran fisik tanpa double
+  count atau dipengaruhi edit katalog masa depan. Penghapusan add-on juga
+  menghapus rule terkait dalam transaksi yang sama. Command rekonsiliasi lama
+  default read-only, fail-closed pada manifest parsial, audit, dan idempoten;
+  apply belum dijalankan. Full PHP 1.266/1.266 (14.250), focused 28/28 (208),
+  full TypeScript, build, browser safety mobile/desktop 2/2, CRUD 1/1, serta
+  Composer/npm/OSV audit nol lulus. Status `CONFIRMED / PUSHED /
+  LOCAL_VALIDATED / UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`;
+  tidak ada migration baru dan rollout production berada pada task koordinasi.
+
 - Rekap closing harian S319 exact merged source
   `31e78b8f225d06ceb4f9823c2bdb0ff552ef7d37`: operator dapat membaca total
   sesi, jumlah per paket, kuantitas add-on, total pemasukan, pengeluaran, net,

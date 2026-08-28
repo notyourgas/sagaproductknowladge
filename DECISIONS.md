@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-120 - Add-on berbayar mengurangi consumable closing sesuai snapshot
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-28 |
+| Topik | Kertas foto dan packaging untuk Add Person, Cetak 4R, dan add-on studio lain |
+| Keputusan | Owner dapat menetapkan jumlah kertas foto dan packaging per unit add-on. Add Person maupun Cetak 4R yang sudah dibayar mengurangi stok sesuai kuantitasnya; rule yang berlaku disnapshot pada baris booking agar closing historis tidak berubah ketika katalog diedit. |
+| Alasan | Add Person umumnya membawa satu cetakan tambahan dan Cetak 4R memakai satu lembar kertas, sehingga closing harus mencatat konsumsi fisik dari add-on selain konsumsi paket. |
+| Alternatif yang dipertimbangkan | Menginput semua tambahan secara manual saat closing; membaca rule katalog terbaru untuk histori; menghitung add-on belum dibayar; menerapkan backfill otomatis tanpa review. |
+| Dampak | Editor add-on mendapat wizard kertas/packaging, backend memakai rule versioned dan snapshot booking, closing menghitung paid/confirmed saja, serta rekonsiliasi lama default read-only dan fail-closed memakai manifest exact. Tidak ada migration baru. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / PUSHED / LOCAL_VALIDATED / UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`; source `8203f0131a366b81b8922127d6cd6bda06357b2d` |
+| Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [SagaBook Changelog](products/sagabook/CHANGELOG.md), [SagaBook Ledger](products/sagabook/FEATURE_COVERAGE_LEDGER.md) |
+
 ## DEC-118 - Email customer SagaBook adalah fitur basic default-on
 
 | Field | Isi |

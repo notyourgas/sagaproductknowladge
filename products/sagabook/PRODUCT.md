@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 28 Agustus 2026 23:50 WIB
-Evidence status: rekap closing harian S319 sudah merged dan tervalidasi lokal pada exact main, menunggu deploy kumulatif terkoordinasi; production masih combined S316-S318, operational WhatsApp tetap tersuspensi, authenticated Owner UAT belum, dan business readiness tetap terpisah
+Updated: 28 Agustus 2026 23:58 WIB
+Evidence status: batch S319-S322 konsumsi stok add-on sudah pushed dan tervalidasi lokal di atas exact main, menunggu deploy kumulatif terkoordinasi; task ini tidak mengubah production, operational WhatsApp tetap tersuspensi, authenticated Owner/Staff UAT belum, dan business readiness tetap terpisah
 
 ## Tujuan dokumen
 
@@ -15,6 +15,25 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
+
+- Batch S319-S322 konsumsi stok add-on pada exact source
+  `8203f0131a366b81b8922127d6cd6bda06357b2d` menambahkan pengaturan pemakaian
+  kertas foto dan packaging pada editor add-on. Aturan versioned disimpan
+  bersama perubahan katalog, lalu disnapshot ke setiap baris add-on booking
+  agar perubahan katalog berikutnya tidak menulis ulang histori. Closing hanya
+  menghitung kuantitas add-on berstatus bayar yang sah; contoh tervalidasi
+  adalah paket 2 kertas + 1 packaging, Add Person dua unit, dan Cetak 4R tiga
+  unit menjadi 7 kertas + 1 packaging tanpa menghitung add-on belum dibayar.
+  Delete add-on membersihkan rule terkait secara atomik. Backfill tenant lama
+  tersedia dalam mode audit read-only dan hanya dapat apply memakai manifest
+  ID lengkap yang lolos preview, replay idempoten, dan audit. Full PHP
+  1.266/1.266 (14.250 assertion), focused 28/28 (208), typecheck penuh, build,
+  Playwright safety mobile/desktop 2/2, CRUD 1/1, dan tiga dependency audit nol
+  lulus. Status `CONFIRMED / PUSHED / LOCAL_VALIDATED / UIUX_VALIDATED /
+  QA_VALIDATED / SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; tidak ada migration baru,
+  authenticated Owner/Staff UAT dan rollout manifest masih pending, serta
+  `BUSINESS_READY=false`.
 
 - Rekap closing harian S319 pada exact merged source
   `31e78b8f225d06ceb4f9823c2bdb0ff552ef7d37` menambahkan total sesi,

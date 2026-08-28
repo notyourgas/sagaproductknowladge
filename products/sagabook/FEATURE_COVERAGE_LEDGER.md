@@ -1,6 +1,23 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 28 Agustus 2026 23:50 WIB
+Evidence cut-off: 28 Agustus 2026 23:58 WIB
+
+Batch konsumsi stok add-on S319-S322 exact source
+`8203f0131a366b81b8922127d6cd6bda06357b2d` telah `CONFIRMED / PUSHED /
+LOCAL_VALIDATED / UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
+DATA_INTEGRITY_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`.
+Coverage UI -> katalog API -> rule versioned -> snapshot booking -> closing
+ledger membuktikan pasangan kertas/packaging tersimpan atomik, read dibatch,
+snapshot lama tidak berubah saat katalog diedit, unpaid tidak dihitung,
+tenant/booking line fail-closed, delete membersihkan rule, serta submit closing
+tetap idempoten dan exactly-once. Skenario 2 kertas paket + Add Person x2 +
+Cetak 4R x3 menghasilkan 7 kertas dan 1 packaging. Command rekonsiliasi default
+read-only menolak manifest parsial dan replay apply tidak membuat versi ganda.
+Full PHP 1.266/1.266 (14.250), focused 28/28 (208), full TypeScript, build,
+Playwright UI safety mobile/desktop 2/2 dan CRUD 1/1, serta Composer/npm/OSV
+audit nol lulus. Tidak ada migration baru. Gate tersisa: merge kandidat
+kumulatif, release terkoordinasi, manifest tenant/add-on exact, pilot satu
+cabang, dan authenticated Owner/Staff UAT; `BUSINESS_READY=false`.
 
 Rekap closing harian S319 exact merged source
 `31e78b8f225d06ceb4f9823c2bdb0ff552ef7d37` telah `CONFIRMED / PUSHED /
