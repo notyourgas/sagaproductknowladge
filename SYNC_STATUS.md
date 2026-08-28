@@ -12,12 +12,37 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-28T07:09:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-28T08:05:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
-| Informasi terakhir disinkronkan | SagaBook S312 fail-closed helper availability correction. |
-| Status sinkronisasi | SagaBook S312 latest source `88b8ea9a` `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; WhatsApp operasional tetap tersuspensi dan `BUSINESS_READY=false`. |
+| Informasi terakhir disinkronkan | SagaBook S312 immutable artifact rehearsal blocker. |
+| Status sinkronisasi | SagaBook S312 source `88b8ea9a` `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / RELEASE_ARTIFACT_BLOCKED / PRODUCTION_UNCHANGED`; WhatsApp operasional tetap tersuspensi dan `BUSINESS_READY=false`. |
+
+## SagaBook S312 immutable artifact rehearsal blocker
+
+- Capacity/independence preflight exact source `88b8ea9ad9ce03f91d3d9099cffcb71e9f06caaf`
+  berhenti sebelum menulis artifact. Volume internal tidak independen secara
+  fisik, headroom staging+salinan kurang, dan media fisik kedua yang tersedia
+  tidak sehat/kompatibel untuk evidence immutable.
+- Ambang tidak diturunkan dan tidak ada cleanup lintas proyek, repair/format
+  media, credential/customer access, merge, atau deploy. GitHub Actions
+  terverifikasi gagal sebelum satu step berjalan karena billing/spending limit.
+- Production read-only verifier S311 tetap 17/17 hijau pada exact
+  `a9127dc4595f2d8d7e60094ac330cac76448b255`, release
+  `20260827210830-a9127dc`, rollback `20260827125239-24a6bab`.
+- Status S312 `RELEASE_ARTIFACT_BLOCKED / IMPLEMENTED_NOT_DEPLOYED`; PR #38
+  tetap terbuka. Diperlukan lokasi kedua yang sehat dan independen serta
+  headroom memadai sebelum packaging ulang.
+
+## File yang berubah pada sinkronisasi rehearsal S312
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook S312 fail-closed helper availability correction
 

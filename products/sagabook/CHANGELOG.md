@@ -1,5 +1,24 @@
 # SagaBook Changelog
 
+## 2026-08-28 - S312 immutable artifact rehearsal blocked safely
+
+- Rehearsal exact source `88b8ea9ad9ce03f91d3d9099cffcb71e9f06caaf`
+  menjalankan capacity/independence preflight tanpa menulis artifact atau
+  menyentuh production.
+- Kandidat lokasi internal ditolak karena dua volume berada pada disk fisik
+  yang sama. Kombinasi disk kedua juga ditolak karena headroom staging+salinan
+  tidak memenuhi kontrak default dan media removable yang tersedia tidak
+  sehat/kompatibel untuk evidence immutable.
+- Ambang kapasitas tidak diturunkan; tidak ada file proyek lain yang dibersihkan,
+  media diperbaiki/diformat, credential dibaca, atau customer/provider mutation.
+  GitHub Actions juga terverifikasi berhenti sebelum satu step berjalan karena
+  billing/spending limit, bukan kegagalan test.
+- Production read-only verifier S311 tetap 17/17 hijau pada exact
+  `a9127dc4595f2d8d7e60094ac330cac76448b255`, release
+  `20260827210830-a9127dc`, rollback `20260827125239-24a6bab`.
+- Status S312 `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  RELEASE_ARTIFACT_BLOCKED`; PR #38 tetap terbuka dan belum staging/deploy.
+
 ## 2026-08-28 - S312 fail-closed saat helper belum tersedia
 
 - Latest exact pushed source `88b8ea9ad9ce03f91d3d9099cffcb71e9f06caaf`
