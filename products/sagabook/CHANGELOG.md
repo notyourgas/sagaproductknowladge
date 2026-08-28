@@ -1,5 +1,24 @@
 # SagaBook Changelog
 
+## 2026-08-28 - Combined exact-main S316-S318 production closure
+
+- Exact source/release `21d87e9aa7fdb921e3877f5fd448ff7117128fc6` /
+  `20260828153427-21d87e9`; rollback `20260828141625-9440c16` tersedia.
+- Task Manager mempertahankan typed action dan fail-closed routing, sedangkan
+  reporting/closing S318, database constraint, repair idempotent, dan canary
+  lintas scope tetap aktif dalam satu source exact-main.
+- Release guard menambah pemeriksaan binding backup setelah upload untuk
+  menutup race dengan rotasi backup terjadwal. Verifier rollback juga memakai
+  path terkutip eksplisit dan kegagalan gate lokal kini menampilkan output tail
+  tersanitasi.
+- Full suite 1.259/1.259 (14.188 assertion), focused 24/24 (288), build/browser
+  flow, dependency audit nol, encrypted backup/disposable restore, verifier
+  23/23, canary 32/32, DB audit 100, repair residual 0, retention preview 0,
+  migrasi pending 0, service, dan public smoke lulus.
+- Operational WhatsApp customer/owner tetap off dan template WA tetap
+  copy-only/manual; audit akhir mencatat 0 invalid delivery. Authenticated
+  Owner/operator UAT belum dan `BUSINESS_READY=false`.
+
 ## 2026-08-28 - S318 report dan closing audit production hardening
 
 - Histori revisi closing kini dapat dimuat bertahap dan detail/export mencakup

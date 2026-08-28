@@ -1,5 +1,25 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-28 - SagaBook combined exact-main S316-S318 production closure
+
+- Ringkasan: menyinkronkan release exact-main gabungan untuk Task Manager,
+  reporting/closing, database guard, dan hardening release backup binding.
+- Provenance: exact source/release
+  `21d87e9aa7fdb921e3877f5fd448ff7117128fc6` /
+  `20260828153427-21d87e9`, rollback `20260828141625-9440c16`.
+- Evidence: full 1.259/1.259 (14.188 assertion), focused 24/24 (288),
+  build/browser/audit, encrypted backup/disposable restore, verifier 23/23,
+  canary 32/32, DB audit 100, repair residual 0, retention preview 0, migrasi
+  pending 0, service, dan public smoke lulus.
+- Klasifikasi: `CONFIRMED / PUSHED / QA_VALIDATED / SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+  BUSINESS_READY=false`.
+- Production berubah: ya. Operational WhatsApp customer/owner tetap off dan
+  template WA tetap copy-only/manual; authenticated Owner/operator UAT masih
+  pending.
+- Dokumen terdampak: Product, Dossier, feature ledger/changelog SagaBook,
+  portfolio, master knowledge, root changelog, dan sync status.
+
 ## 2026-08-28 - SagaBook S318 report dan closing audit production sync
 
 - Ringkasan: menyinkronkan hardening histori/detail/export closing, grafik
