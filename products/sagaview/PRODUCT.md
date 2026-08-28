@@ -1,22 +1,27 @@
 # SagaView Product Knowledge
 
-Updated: 28 Agustus 2026 12:25 WIB
+Updated: 28 Agustus 2026 14:17 WIB
 
-SagaView S331 exact source
-`0966bbd7fedaaa51bf67332139f07f7d2690553d` aktif pada immutable release
-`20260828051214-0966bbd` dengan rollback
-`20260826210546-cd7288d`; Studio tetap
+SagaView S333 exact source
+`80635694d7db1df45ade256ecd7e67cc34fe76c3` aktif pada immutable release
+`20260828071047-8063569` dengan rollback langsung
+`20260828051214-0966bbd`; Studio tetap
 `20260824170456-7ae79ae`. Statusnya `PUSHED / DEVOPS_VALIDATED /
 SECURITY_VALIDATED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
 PRODUCTION_ACTIVATED`.
 
 Artifact archive exact ber-SHA-256
-`c8bbf0b8c7dd0eae744011b2b22fe296ecd47be435c2a157b513262cfb3d88d9`
+`8ddb32fab88e8207342d8f6ec796bf076f38fdba42d745134b7bd88fbe7c7fc5`
 dan complete git bundle ber-SHA-256
-`a1a6c72ea3b3afb72fd3a0959c5c244c364cab43e3ae5ba28ac8d6d398c67a18`.
+`e56807e7e20dca391597796e42a33b3ebf9ff1e39f36b091783c37cbb6f9c220`.
 Primary dan mirror tervalidasi pada disk fisik terpisah. Fresh encrypted backup
-`20260828T051532Z`, offsite checksum round-trip, dan disposable restore tiga
+`20260828T071331Z`, offsite checksum round-trip, dan disposable restore tiga
 database lulus tanpa menyimpan plaintext.
+
+Changelog Owner kini menunjuk S331 tertanggal 28 Agustus 2026 dan merangkum
+perubahan production setelah S262: harga cetak tambahan, fokus aksi frame,
+recovery draft/session, Support Hub, privasi path lokal, navigasi Changelog,
+kejelasan Console/Bantuan, serta guard artifact dan rollback.
 
 Active pointer, exact provenance, service worker/PHP/nginx, login, admin login,
 session, changelog, API health, dan public smoke semuanya lulus; endpoint support
