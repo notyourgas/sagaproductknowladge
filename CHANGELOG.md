@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-28 - SagaView S331 production deployment sync
+
+- Ringkasan: exact source `0966bbd7fedaaa51bf67332139f07f7d2690553d`
+  aktif pada immutable release `20260828051214-0966bbd` dengan rollback
+  `20260826210546-cd7288d`; Studio tetap `20260824170456-7ae79ae`.
+- Evidence: immutable archive dan complete git bundle ber-SHA-256 tervalidasi
+  pada disk fisik terpisah; fresh encrypted backup `20260828T051532Z`, offsite
+  checksum round-trip, disposable restore, exact provenance, service health,
+  dan public smoke lima endpoint HTTP 200 lulus.
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`; authenticated support UAT belum dijalankan dan
+  `BUSINESS_READY=false`.
+- Dokumen terdampak: Product, feature ledger/changelog SagaView, portfolio,
+  root changelog, master knowledge, dan sync status.
+
 ## 2026-08-28 - SagaBook S312 release artifact blocker sync
 
 - Ringkasan: menyinkronkan rehearsal capacity/independence untuk immutable

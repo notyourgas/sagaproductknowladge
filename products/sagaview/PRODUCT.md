@@ -1,21 +1,28 @@
 # SagaView Product Knowledge
 
-Updated: 28 Agustus 2026 12:00 WIB
+Updated: 28 Agustus 2026 12:25 WIB
 
 SagaView S331 exact source
-`0966bbd7fedaaa51bf67332139f07f7d2690553d` sudah `PUSHED /
-DEVOPS_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
-IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED / PRODUCTION_UNCHANGED`. Artifact
-builder kini menghitung ulang SHA-256 archive, git bundle, dan manifest pada
-primary serta mirror setelah copy. Status artifact-ready hanya diterbitkan bila
-seluruh salinan dan isi manifest identik dengan hash yang diharapkan.
+`0966bbd7fedaaa51bf67332139f07f7d2690553d` aktif pada immutable release
+`20260828051214-0966bbd` dengan rollback
+`20260826210546-cd7288d`; Studio tetap
+`20260824170456-7ae79ae`. Statusnya `PUSHED / DEVOPS_VALIDATED /
+SECURITY_VALIDATED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED`.
 
-RED membuktikan kontrak baru gagal 1 test; GREEN lulus 7/44 assertion dan
-regresi release/custody lulus 14/113 assertion. Probe sintetis menerima salinan
-identik lalu menolak mirror yang diubah, tanpa memakai data customer dan tanpa
-fixture tersisa. Syntax PowerShell, npm audit nol vulnerability, Composer audit
-nol advisory, clean commit, push, dan remote exact lulus. Media lokal terpisah
-terotorisasi serta artifact exact S331 masih wajib; production tetap S311.
+Artifact archive exact ber-SHA-256
+`c8bbf0b8c7dd0eae744011b2b22fe296ecd47be435c2a157b513262cfb3d88d9`
+dan complete git bundle ber-SHA-256
+`a1a6c72ea3b3afb72fd3a0959c5c244c364cab43e3ae5ba28ac8d6d398c67a18`.
+Primary dan mirror tervalidasi pada disk fisik terpisah. Fresh encrypted backup
+`20260828T051532Z`, offsite checksum round-trip, dan disposable restore tiga
+database lulus tanpa menyimpan plaintext.
+
+Active pointer, exact provenance, service worker/PHP/nginx, login, admin login,
+session, changelog, API health, dan public smoke semuanya lulus; endpoint support
+tanpa autentikasi tetap 404 sesuai batas keamanan. Authenticated support UAT
+belum dijalankan, sehingga `BUSINESS_READY=false` dan tidak ada klaim kesiapan
+operasional penuh.
 
 SagaView S330 exact source
 `f2c946aa6bdbeb2a34b91692320e4f6f55ba4c37` sudah `PUSHED /

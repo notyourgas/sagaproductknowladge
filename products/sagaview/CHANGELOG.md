@@ -1,5 +1,24 @@
 # SagaView Changelog
 
+## 2026-08-28 - S331 production deployment and activation
+
+- Klasifikasi: `CONFIRMED / PUSHED / DEVOPS_VALIDATED /
+  SECURITY_VALIDATED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`; `BUSINESS_READY=false`.
+- Exact source `0966bbd7fedaaa51bf67332139f07f7d2690553d` aktif pada
+  immutable release `20260828051214-0966bbd`, rollback
+  `20260826210546-cd7288d`; Studio tetap `20260824170456-7ae79ae`.
+- Artifact archive SHA-256
+  `c8bbf0b8c7dd0eae744011b2b22fe296ecd47be435c2a157b513262cfb3d88d9`
+  dan complete git bundle SHA-256
+  `a1a6c72ea3b3afb72fd3a0959c5c244c364cab43e3ae5ba28ac8d6d398c67a18`
+  tervalidasi pada primary/mirror di disk fisik terpisah.
+- Fresh encrypted backup `20260828T051532Z`, offsite checksum round-trip,
+  disposable restore, active pointer, exact provenance, service health, dan
+  public smoke lima endpoint HTTP 200 lulus; error journal kosong.
+- Boundary: authenticated support UAT belum dijalankan. Tidak ada perubahan
+  Studio, customer data, payment, atau klaim business-ready.
+
 ## 2026-08-28 - S331 release mirror integrity verification
 
 - Klasifikasi: `CONFIRMED / PUSHED / DEVOPS_VALIDATED /

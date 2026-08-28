@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-28 - SagaView S331 production deployment
+
+- Exact source `0966bbd7fedaaa51bf67332139f07f7d2690553d` aktif pada
+  immutable release `20260828051214-0966bbd`, rollback
+  `20260826210546-cd7288d`; Studio tetap `20260824170456-7ae79ae`.
+- Archive dan complete git bundle tervalidasi SHA-256 pada disk fisik terpisah.
+  Fresh encrypted backup `20260828T051532Z`, offsite checksum round-trip,
+  disposable restore, active pointer, provenance, service health, dan public
+  smoke lima endpoint HTTP 200 lulus.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated support UAT
+  belum dijalankan dan `BUSINESS_READY=false`.
+
 ## 2026-08-28 - SagaBook S312 release artifact rehearsal
 
 - Capacity/independence preflight exact source `88b8ea9a` berhenti aman sebelum
