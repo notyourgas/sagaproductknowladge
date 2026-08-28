@@ -1,5 +1,26 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-28 - SagaView S338-S341 editor resilience sync
+
+- Ringkasan: menyinkronkan reset editor utuh, checkpoint draft lokal atomik,
+  recovery fail-closed, serta keyboard/focus/virtualization galeri terfilter.
+- Alasan: operator harus dapat melanjutkan komposisi setelah reload tanpa
+  risiko restore pada folder/katalog yang salah dan tanpa mengunggah data foto.
+- Produk: SagaView Studio saja; fitur baru tetap `HOLD`.
+- Provenance: exact pushed source
+  `495dda492ea68f5e943a69aa5e6a1f4dbd474af2`, branch
+  `codex/s338-s341-sagaview-editor-resilience`.
+- Evidence: unit 256/256, focused Playwright 10/10, full Playwright 160 pass/3
+  skip, format/lint/typecheck/build/bundle/a11y/no-upload scan, npm audit nol,
+  dan artifact dua salinan checksum-identik.
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
+- Production berubah: tidak. Blocker release adalah UAT Windows fisik untuk
+  permission/revoke, disk penuh/quota, crash recovery, dan print/output;
+  tindakan berikutnya adalah menjalankan UAT tersebut sebelum approval deploy.
+- Dokumen terdampak: Product, Dossier, feature ledger/changelog SagaView,
+  portfolio, master knowledge, root changelog, dan sync status.
+
 ## 2026-08-28 - COYABAG SagaDev controlled trial sync
 
 - Ringkasan: menyinkronkan adapter pembayaran product-bound, HMAC dua arah,

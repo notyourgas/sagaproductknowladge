@@ -1,5 +1,34 @@
 # SagaView Dossier
 
+## S338-S341 editor resilience dan gallery accessibility
+
+Exact pushed Studio source `495dda492ea68f5e943a69aa5e6a1f4dbd474af2`
+memperkeras reset, recovery draft, dan navigasi galeri yang sudah ada. Reset
+membersihkan slot serta seluruh transform walau map katalog lama tidak lengkap,
+memakai dialog konfirmasi yang konsisten, dan mengembalikan fokus ke tombol
+pemicu. Draft mempunyai checkpoint IndexedDB lokal berversi dengan slot
+current/previous untuk fallback atomik, checksum korupsi, fingerprint folder,
+dan revision katalog. Restore hanya terjadi pada folder serta katalog yang
+cocok; mismatch dipertahankan fail-closed dengan data-safety dan next action.
+
+Payload checkpoint hanya memakai ID foto lokal opaque dan metadata komposisi;
+tidak menyimpan nama/path, blob, URL, output, atau foto dan tidak mempunyai
+jalur upload/API. Galeri terfilter menyatukan urutan keyboard, fokus DOM nyata,
+scroll virtual, status aktif/terpilih screen reader, serta preservasi fokus
+filter untuk 50/200/500 foto. Kegagalan quota/write memberi alert aksesibel dan
+retry tanpa menghapus draft yang masih tersedia.
+
+Full unit 256/256, focused Playwright 10/10, full Playwright 160 pass dengan
+3 skip terkontrol, format/lint/typecheck, client/SSR build, bundle maksimum
+312,7 KiB, desktop/mobile, zoom, forced-colors, reduced-motion, no-upload scan,
+dan npm audit nol vulnerability lulus. Source archive SHA-256
+`DCDB9657D7D37E304BDA6FB54582570231290B7FB3C6B91EDB1B1953136DB411`
+serta complete bundle SHA-256
+`7D073645747B304E5A896880BD235C1F19CC463896D7B8D0B38E70D2FC2BD6FE`
+mempunyai dua salinan checksum-identik. Status `PUSHED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; UAT Windows fisik dan
+approval deploy tetap gate terpisah.
+
 ## S336 draft non-blocking dan recovery kapasitas frame
 
 Exact pushed source `98f13a8d50f4ae0b97d787f1ab5e0896296007ec`

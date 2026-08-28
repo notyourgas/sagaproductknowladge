@@ -1,5 +1,20 @@
 # Portfolio Changelog
 
+## 2026-08-28 - SagaView S338-S341 editor resilience
+
+- Reset editor kini membersihkan seluruh transform secara konsisten dan
+  mengembalikan fokus setelah konfirmasi.
+- Draft komposisi dapat pulih secara lokal setelah reload atau pemilihan ulang
+  folder yang sama; mismatch, korupsi, dan quota memberi jalur recovery yang
+  fail-closed tanpa upload foto/path/output.
+- Galeri 50/200/500 foto menyelaraskan filter, keyboard, fokus DOM, virtual
+  scroll, selection status, screen reader, forced-colors, dan reduced-motion.
+- Exact pushed source `495dda492ea68f5e943a69aa5e6a1f4dbd474af2`
+  lulus unit 256/256, focused browser 10/10, full browser 160 pass/3 skip,
+  build/budget/a11y/security audit, dan artifact dua salinan identik.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED`; UAT Windows fisik dan approval deploy belum dilakukan.
+
 ## 2026-08-28 - COYABAG SagaDev controlled trial wiring
 
 - Saga Platform memisahkan mode order COYABAG dari payment subscription

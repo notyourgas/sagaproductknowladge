@@ -1,6 +1,29 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 28 Agustus 2026 20:08 WIB
+Evidence cut-off: 28 Agustus 2026 21:24 WIB
+
+S338-S341 editor resilience dan gallery accessibility: exact pushed Studio
+source `495dda492ea68f5e943a69aa5e6a1f4dbd474af2` menutup residual reset,
+recovery draft, dan fokus galeri dari fitur yang sudah ada. Reset tetap utuh
+walau metadata frame lama tidak lengkap. Checkpoint draft lokal berversi
+memakai current/previous, checksum, fingerprint folder, serta revision katalog
+untuk restore exact atau fail-closed tanpa kehilangan checkpoint. Galeri
+terfilter menyelaraskan urutan keyboard, fokus DOM, scroll virtual, selection
+count, dan status screen reader pada 50/200/500 foto.
+
+Full unit 256/256, focused Playwright 10/10, full Playwright 160 pass/3 skip,
+format, lint, typecheck, client/SSR build, bundle budget, visual desktop/mobile,
+forced-colors/reduced-motion, no-upload scan, dan npm audit nol lulus. Checkpoint
+hanya berisi ID lokal opaque serta metadata komposisi; tidak membawa nama/path,
+blob, URL, output, atau foto ke API/cloud. Archive dan bundle exact commit
+mempunyai dua salinan checksum-identik. Status `PUSHED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`.
+
+Ledger lulus: reset integrity, draft recovery lokal, corruption/mismatch/quota
+guidance, dan filtered-gallery focus/no-upload. Belum lulus: UAT fisik Windows
+untuk folder permission/revoke, disk penuh/quota nyata, crash recovery, serta
+print/output sebenarnya. Satu gap berikutnya adalah UAT perangkat nyata
+tersebut sebelum review release production.
 
 S337 hardening fitur Studio yang sudah ada: exact local source
 `3dbfa6354bbf581dd16bfec1ad2e81e40c631f80` memperbaiki navigasi keyboard

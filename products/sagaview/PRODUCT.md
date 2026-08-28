@@ -1,6 +1,33 @@
 # SagaView Product Knowledge
 
-Updated: 28 Agustus 2026 20:08 WIB
+Updated: 28 Agustus 2026 21:24 WIB
+
+SagaView Studio S338-S341 exact pushed source
+`495dda492ea68f5e943a69aa5e6a1f4dbd474af2` berstatus `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`. Seluruh
+perubahan memperkeras fitur yang sudah ada; fitur baru tetap `HOLD`. Reset
+editor kini membersihkan slot, rotasi, zoom, dan posisi walau metadata frame
+lama tidak lengkap, memakai konfirmasi yang konsisten, dan mengembalikan fokus
+ke pemicu.
+
+Draft editor disimpan sebagai checkpoint lokal berversi dengan pasangan
+current/previous dan checksum untuk recovery atomik setelah reload atau
+pemilihan ulang folder yang sama. Checkpoint hanya membawa ID foto lokal
+opaque dan metadata komposisi yang disetujui; nama file, path, blob, URL,
+output, dan foto tidak dikirim ke API/cloud. Folder atau katalog yang tidak
+cocok ditolak fail-closed dengan penjelasan apa yang gagal, bahwa checkpoint
+tetap aman, dan aksi berikutnya. Kegagalan quota/write dapat dicoba ulang.
+
+Galeri terfilter sekarang menavigasi hanya foto yang terlihat, memindahkan
+fokus DOM nyata ketika diminta keyboard, mempertahankan fokus filter, dan
+memberikan status aktif/terpilih yang dapat dibaca screen reader. Focused
+Playwright 10/10, full unit 256/256, full Playwright 160 pass dengan 3 skip
+terkontrol, format, lint, typecheck, client/SSR build, bundle budget,
+forced-colors/reduced-motion, no-upload scan, dan npm audit nol vulnerability
+lulus. Matriks sintetis 50/200/500 foto selesai sekitar 0,866/2,757/6,822
+detik. Archive dan complete git bundle exact commit memiliki dua salinan
+checksum-identik. Tidak ada perubahan backend/API/database/migration/payment
+atau production; UAT Windows fisik dan approval deploy tetap gate terpisah.
 
 SagaView Studio S337 exact local source
 `3dbfa6354bbf581dd16bfec1ad2e81e40c631f80` berstatus `COMMITTED_LOCAL /

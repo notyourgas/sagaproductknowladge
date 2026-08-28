@@ -1,5 +1,39 @@
 # SagaView Changelog
 
+## 2026-08-28 - S338-S341 editor resilience dan gallery accessibility
+
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; fitur baru tetap `HOLD`
+  dan `BUSINESS_READY=false`.
+- Before: reset dapat menyisakan transform tersembunyi ketika map frame tidak
+  lengkap; reload menghilangkan komposisi draft; folder/katalog berubah belum
+  mempunyai recovery fail-closed; filter galeri dapat memisahkan fokus visual,
+  DOM, dan urutan keyboard.
+- After: reset terkonfirmasi membersihkan seluruh state visual dan mengembalikan
+  fokus; checkpoint draft lokal current/previous dapat memulihkan komposisi
+  exact; mismatch/corruption/quota memberi penjelasan keamanan dan aksi retry;
+  galeri terfilter memiliki roving focus, `aria-pressed`, selection status,
+  serta virtual scroll untuk 50/200/500 foto.
+- Integrity/privacy: checksum mendeteksi korupsi, fingerprint folder/katalog
+  mencegah restore salah, dan checkpoint hanya menyimpan ID lokal opaque serta
+  metadata komposisi. Tidak ada nama/path/blob/URL/output/foto yang masuk ke
+  API atau cloud.
+- Provenance: exact Studio source
+  `495dda492ea68f5e943a69aa5e6a1f4dbd474af2` pada branch
+  `codex/s338-s341-sagaview-editor-resilience` sudah dipush.
+- Evidence: full unit 256/256, focused Playwright 10/10, full Playwright
+  160 pass/3 skip, format, lint, typecheck, client/SSR build, bundle maksimum
+  312,7 KiB dari batas 450 KiB, visual/a11y desktop-mobile,
+  forced-colors/reduced-motion, no-upload scan, dan npm audit nol vulnerability.
+- Reproducibility: source archive SHA-256
+  `DCDB9657D7D37E304BDA6FB54582570231290B7FB3C6B91EDB1B1953136DB411`
+  dan complete git bundle SHA-256
+  `7D073645747B304E5A896880BD235C1F19CC463896D7B8D0B38E70D2FC2BD6FE`
+  mempunyai dua salinan checksum-identik.
+- Boundary: tidak ada backend/API/database/migration/payment, data production,
+  atau perubahan SagaBook. UAT Windows fisik untuk permission/revoke, disk
+  penuh/quota, crash recovery, dan print/output tetap gate berikutnya.
+
 ## 2026-08-28 - S337 existing-feature Studio hardening
 
 - Klasifikasi: `CONFIRMED / COMMITTED_LOCAL / REMOTE_PUSH_PENDING /
