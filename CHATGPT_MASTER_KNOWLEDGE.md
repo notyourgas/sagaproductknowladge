@@ -3897,14 +3897,18 @@ hydration React kini konsisten, kontrak tidak lengkap gagal tertutup ke
 lulus budget. Public smoke desktop/mobile lulus. Commerce tetap fail-closed
 pada 30/42 checks dengan 12 blocker.
 
-SagaDev payment monitoring untuk CoyaBag sudah production-deployed melalui
-Saga Platform release `20260824104557-65f9ff4`, exact source
-`65f9ff4ee42926cabfe0ebd83de3ae1f1fcca7c0`, dengan rollback
-`20260804171621-0ab9d8e`. Workspace laporan bersifat product-scoped dan PII-free;
-tiga API internal signed tersedia untuk readiness/create/status. Installation
-dan credential CoyaBag tetap nol, sehingga checkout publik masih
-`PRODUCTION_READINESS_BLOCKED`. Jangan menyamakan monitoring live dengan
-payment production-activated.
+SagaDev Managed Gateway controlled trial untuk COYABAG sudah
+`PRODUCTION_DEPLOYED` melalui Saga Platform release
+`20260828203505-bec577e`, exact source
+`bec577ec407c2fc8693ffea4cbb7c2adb5f70040`, rollback
+`20260824104557-65f9ff4`. Satu installation dan service account product-bound
+scope create/read aktif, callback memakai credential HMAC terpisah, dan trial
+dibatasi Rp100.000 per transaksi serta lima intent baru per hari. Signed
+readiness lulus dan tidak ada payment intent dibuat saat acceptance. Readiness
+COYABAG 38/42 (90%); checkout publik tetap `PRODUCTION_READINESS_BLOCKED`
+sampai owner 2FA, privacy/retention approval, UAT 15 langkah, dan release
+sign-off selesai. Jangan menyebut adapter siap sebagai payment production-
+activated atau business-ready.
 
 Release aktif `20260827-be8fc09` menjalankan exact source
 `be8fc09710e26e49512f181904dff576f93a23dd` dengan rollback

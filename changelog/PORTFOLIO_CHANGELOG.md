@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-28 - COYABAG SagaDev controlled trial wiring
+
+- Saga Platform memisahkan mode order COYABAG dari payment subscription
+  SagaBook dan menghubungkan adapter product-bound dengan HMAC dua arah.
+- Release `20260828203505-bec577e`, exact source
+  `bec577ec407c2fc8693ffea4cbb7c2adb5f70040`, rollback
+  `20260824104557-65f9ff4`; trial dibatasi Rp100.000 dan lima intent baru/hari.
+- Readiness COYABAG 38/42 (90%). Storefront/API/Admin tetap live, sedangkan
+  checkout publik tetap blocked sampai empat gate owner/governance selesai.
+
 ## 2026-08-28 - SagaBook S317 laporan pendapatan dan closing detail
 
 - Owner memperoleh grafik pendapatan yang berfungsi untuk 7/30 hari,

@@ -4,6 +4,22 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-28 - SagaDev controlled trial wiring deployed
+
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED / ACTIVATION_BLOCKED`; Saga
+  Platform exact source/release
+  `bec577ec407c2fc8693ffea4cbb7c2adb5f70040` /
+  `20260828203505-bec577e`, rollback `20260824104557-65f9ff4`.
+- COYABAG memakai SagaDev Managed Gateway sebagai provider aktif; TokoPay
+  langsung tetap inactive sebagai rollback. Satu installation dan service
+  account scope minimum tersedia, dengan callback credential terpisah.
+- Trial dibatasi Rp100.000 per transaksi dan lima intent baru per hari. Signed
+  readiness, callback unsigned rejection, desktop/mobile smoke, serta 970 test
+  Platform dan 26 test payment/storefront COYABAG lulus.
+- Readiness 38/42 (90%); checkout publik tetap fail-closed karena owner 2FA,
+  privacy/retention approval, UAT 15 langkah, dan release sign-off. Tidak ada
+  payment intent provider yang dibuat saat acceptance.
+
 ## 2026-08-27 - Admin dashboard safe refresh deployed
 
 - Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED`; exact source

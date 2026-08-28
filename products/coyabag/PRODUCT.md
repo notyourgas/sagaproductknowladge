@@ -1,6 +1,6 @@
 # COYABAG Product Knowledge
 
-Updated: 27 Agustus 2026
+Updated: 28 Agustus 2026
 Evidence status: production surfaces + blocked commerce activation
 
 ## Tujuan dokumen
@@ -61,6 +61,16 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
+- SagaDev Managed Gateway controlled trial sudah terhubung melalui Saga
+  Platform release `20260828203505-bec577e`, exact source
+  `bec577ec407c2fc8693ffea4cbb7c2adb5f70040`, dengan rollback
+  `20260824104557-65f9ff4`. Satu instalasi dan satu service account scope minimum
+  aktif; signed readiness serta callback fail-closed lulus. Batas trial adalah
+  Rp100.000 per transaksi dan lima payment intent baru per hari.
+- Readiness COYABAG naik menjadi 38/42 (90%). Checkout publik tetap
+  `PRODUCTION_READINESS_BLOCKED` karena owner 2FA, persetujuan privacy/retention,
+  UAT 15 langkah, dan release sign-off belum selesai. Nol payment intent dibuat
+  saat deployment acceptance.
 - Release aktif `20260827-be8fc09` dengan exact source
   `be8fc09710e26e49512f181904dff576f93a23dd` melayani production;
   rollback langsung `20260827-beecd6f` dipertahankan.

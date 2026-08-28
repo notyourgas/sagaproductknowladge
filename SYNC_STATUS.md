@@ -12,12 +12,34 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-28T20:22:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-28T21:00:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
-| Informasi terakhir disinkronkan | SagaBook S317 laporan pendapatan dan closing detail aktif di production. |
-| Status sinkronisasi | Source `14652bb9` aktif pada release `20260828130503-14652bb`; rollback `20260828121721-cde8dd5`, verifier 19/19, dan `BUSINESS_READY=false`. |
+| Informasi terakhir disinkronkan | COYABAG SagaDev controlled trial wiring production-deployed. |
+| Status sinkronisasi | Saga Platform source `bec577ec` aktif pada release `20260828203505-bec577e`; checkout COYABAG tetap blocked pada 38/42 dan `BUSINESS_READY=false`. |
+
+## COYABAG SagaDev controlled trial wiring
+
+- Adapter product-bound, service credential scope minimum, callback HMAC
+  terpisah, dan limit trial Rp100.000/lima intent baru per hari sudah aktif.
+- Exact source/release Saga Platform
+  `bec577ec407c2fc8693ffea4cbb7c2adb5f70040` /
+  `20260828203505-bec577e`, rollback `20260824104557-65f9ff4`.
+- Signed readiness, callback fail-closed, backup, dependency audit, dan public
+  smoke desktop/mobile lulus; tidak ada payment intent dibuat saat acceptance.
+- Status `CONFIRMED / PRODUCTION_DEPLOYED / ACTIVATION_BLOCKED` dengan readiness
+  38/42. Owner 2FA, privacy approval, UAT, dan sign-off masih wajib.
+
+## File yang berubah pada sinkronisasi COYABAG controlled trial
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook S317 laporan pendapatan dan closing detail
 

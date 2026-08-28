@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-28 - COYABAG SagaDev controlled trial sync
+
+- Ringkasan: menyinkronkan adapter pembayaran product-bound, HMAC dua arah,
+  batas controlled trial, dan readiness terbaru COYABAG.
+- Provenance: Saga Platform exact source/release
+  `bec577ec407c2fc8693ffea4cbb7c2adb5f70040` /
+  `20260828203505-bec577e`, rollback `20260824104557-65f9ff4`.
+- Evidence: 970 test/11.088 assertion Platform, 26 test/261 assertion payment
+  COYABAG, build/audit, signed readiness, callback fail-closed, backup, dan
+  desktop/mobile public smoke lulus. Nol payment intent dibuat saat acceptance.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED / ACTIVATION_BLOCKED /
+  BUSINESS_READY=false`. Readiness 38/42; empat gate owner/governance tersisa.
+- Dokumen terdampak: Product, Dossier, changelog COYABAG, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-28 - SagaBook S317 reporting dan closing detail production sync
 
 - Ringkasan: menyinkronkan grafik pendapatan multi-range, drill-down tanggal,
