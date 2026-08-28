@@ -1,5 +1,20 @@
 # Portfolio Changelog
 
+## 2026-08-29 - SagaBook S341-S344 production activation
+
+- Exact cumulative source `91545d1f974b5e992cc661637c9e234ef504dbec`
+  aktif pada immutable release `20260828210027-91545d1`; rollback
+  `20260828180149-7d82f30` tersedia dan kompatibel.
+- Closing dapat disalin/dibagikan manual tanpa API WhatsApp, termasuk rekap
+  sesi per paket, add-on, dan keuangan harian. Task integritas laporan kini
+  terhubung ke closing atau booking terkait dengan alasan, tindakan, dan
+  kondisi selesai yang jelas.
+- Full test/build, browser 10/10, backup/restore, migration, reconciliation,
+  service/journal, verifier 23/23, dan smoke/security 3/3 lulus. Satu warning
+  closing nyata tetap actionable; task legacy tidak terhubung tersisa 0.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`;
+  authenticated UAT masih pending karena credential bridge lokal tidak aktif.
+
 ## 2026-08-29 - SagaView S343 cumulative Studio production activation
 
 - Exact Studio `47d68e7665dd03694ad45b90467ef44100245c6b` aktif pada

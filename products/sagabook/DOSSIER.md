@@ -7,6 +7,24 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Closing dan Task Manager S341-S344 aktif pada exact cumulative source
+  `91545d1f974b5e992cc661637c9e234ef504dbec`, immutable release
+  `20260828210027-91545d1`; rollback `20260828180149-7d82f30` kompatibel.
+  Konfigurasi grup WhatsApp bukan prasyarat closing; admin menyalin teks atau
+  memakai share sheet lalu mengirim manual. Laporan salinan memuat rekap sesi
+  per paket, add-on, pemasukan, pengeluaran, dan net harian tanpa PII customer.
+  Task integritas laporan menggunakan target server-authored untuk closing atau
+  booking terkait, dilengkapi ringkasan masalah, tindakan yang disarankan, dan
+  kondisi selesai. Sistem tetap hanya mendeteksi dan mengarahkan, tidak
+  mengoreksi data bisnis otomatis. Repair/replay idempoten menyisakan 0 task
+  legacy tidak terhubung dan 0 action hilang; satu warning closing valid tetap
+  tersedia dengan tindakan spesifik. PHP 1.279/1.279 (14.373),
+  TypeScript/build, browser serial 10/10, encrypted backup/disposable restore,
+  0 migration pending, reconciliation 15 scope/0 gagal, verifier 23/23, serta
+  public/security smoke 3/3 lulus. Status `PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / BUSINESS_READY=false`; authenticated Owner/operator
+  UAT belum berjalan karena credential bridge lokal tidak aktif.
+
 - Wave B analitik booking per paket exact source
   `7d82f308da02357fd4de3677b96e81fd53be0424` aktif pada immutable release
   `20260828180149-7d82f30`; rollback `20260828174039-806adbe` kompatibel.

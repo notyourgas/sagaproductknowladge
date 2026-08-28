@@ -1,5 +1,20 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+SagaBook S341-S344 exact cumulative source
+`91545d1f974b5e992cc661637c9e234ef504dbec` aktif pada immutable release
+`20260828210027-91545d1`, dengan rollback `20260828180149-7d82f30`. Closing
+Operasional memakai manual-share tanpa konfigurasi atau API WhatsApp: admin
+menyalin teks atau membuka share sheet lalu mengirim sendiri. Artefak closing
+memuat rekap sesi per paket, add-on, pemasukan, pengeluaran, dan net harian.
+Task integritas laporan terhubung ke closing/booking dan menjelaskan masalah,
+tindakan, serta kondisi selesai; tidak ada koreksi data bisnis otomatis. Full
+PHP 1.279/1.279, TypeScript/build, browser 10/10, encrypted backup/restore,
+migration pending 0, reconciliation 15 scope/0 gagal, verifier 23/23, serta
+smoke/security 3/3 lulus. Task legacy tidak terhubung dan action hilang tersisa
+0. Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+BUSINESS_READY=false`; authenticated Owner/operator UAT masih pending karena
+credential bridge lokal tidak aktif.
+
 SagaBook Wave B analitik booking per paket aktif pada exact source
 `7d82f308da02357fd4de3677b96e81fd53be0424`, immutable release
 `20260828180149-7d82f30`, dengan rollback `20260828174039-806adbe`.

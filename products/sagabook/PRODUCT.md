@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 29 Agustus 2026 01:22 WIB
-Evidence status: analitik booking per paket Wave B sudah production-deployed dan production-activated pada exact source `7d82f308da02357fd4de3677b96e81fd53be0424`; canary read-only 32/32 lulus tanpa mutasi, authenticated Owner/Staff UAT belum karena credential bridge lokal tidak aktif, dan business readiness tetap terpisah
+Updated: 29 Agustus 2026
+Evidence status: closing manual-share, rekap sesi/keuangan harian, dan perbaikan Task Manager integritas laporan aktif pada exact cumulative source `91545d1f974b5e992cc661637c9e234ef504dbec`, release `20260828210027-91545d1`; production-deployed dan production-activated, authenticated Owner/operator UAT belum karena credential bridge lokal tidak aktif, dan `BUSINESS_READY=false`
 
 ## Tujuan dokumen
 
@@ -15,6 +15,23 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
+
+- S341-S344 aktif pada exact cumulative source
+  `91545d1f974b5e992cc661637c9e234ef504dbec`, immutable release
+  `20260828210027-91545d1`, dengan rollback kompatibel
+  `20260828180149-7d82f30`. Closing Operasional tidak memerlukan konfigurasi
+  grup WhatsApp: admin menyalin teks atau membuka share sheet lalu mengirim
+  sendiri. Artefak yang sama memuat jumlah sesi per paket, add-on, pemasukan,
+  pengeluaran, dan net harian. Task integritas laporan kini membawa target
+  closing/booking yang terhubung, ringkasan masalah, tindakan yang disarankan,
+  serta kondisi selesai; sistem tidak melakukan koreksi data bisnis otomatis.
+  Repair idempoten menyisakan 0 task legacy tidak terhubung dan 0 action hilang.
+  PHP 1.279/1.279 (14.373), TypeScript/build, browser serial 10/10, encrypted
+  backup/disposable restore, migration pending 0, reconciliation 15 scope/0
+  gagal, verifier 23/23, dan public/security smoke 3/3 lulus. Status
+  `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+  BUSINESS_READY=false`; authenticated Owner/operator UAT masih pending karena
+  credential bridge lokal tidak aktif.
 
 - Analitik booking per paket Wave B aktif pada exact source
   `7d82f308da02357fd4de3677b96e81fd53be0424`, immutable release

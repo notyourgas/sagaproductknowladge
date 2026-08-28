@@ -1,5 +1,26 @@
 # SagaBook Changelog
 
+## 2026-08-29 - S341-S344 closing dan Task Manager production activation
+
+- Menghapus konfigurasi grup WhatsApp dari syarat preflight Closing
+  Operasional dan menghilangkan panel target/status provider dari UI.
+- Tab Bagikan tetap menyediakan Salin Teks dan Buka Share Sheet; admin memilih
+  serta mengirim ke grup cabang masing-masing secara manual setelah submit.
+- Rekap salinan closing mencantumkan sesi per paket, add-on, dan total keuangan
+  harian. Task integritas laporan mengarahkan admin ke closing/booking terkait
+  serta menjelaskan masalah, tindakan, dan kondisi selesai tanpa mengoreksi
+  data bisnis otomatis.
+- Exact cumulative source `91545d1f974b5e992cc661637c9e234ef504dbec`
+  aktif pada release `20260828210027-91545d1`; rollback
+  `20260828180149-7d82f30` tersedia.
+- PHP 1.279/1.279 (14.373), TypeScript/build, browser serial 10/10, encrypted
+  backup/disposable restore, 0 migration pending, reconciliation 15 scope/0
+  gagal, verifier 23/23, serta smoke/security 3/3 lulus. Repair dan replay
+  idempoten menghasilkan 0 task legacy tidak terhubung dan 0 action hilang.
+- Status `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+  BUSINESS_READY=false`; UAT login Owner/operator masih pending karena bridge
+  credential lokal tidak aktif.
+
 ## 2026-08-29 - Wave B analitik booking per paket production activation
 
 - Exact source `7d82f308da02357fd4de3677b96e81fd53be0424` aktif pada immutable
