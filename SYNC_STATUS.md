@@ -12,12 +12,23 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-29T00:05:00+07:00 |
-| Branch aktif | `codex/coyabag-privacy-retention-knowledge-20260828` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-29T01:00:00+07:00 |
+| Branch aktif | `codex/coyabag-uat-20260829` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `4bdacd82cdc8ee5b615474c6a919657221a6ad88` |
-| Informasi terakhir disinkronkan | COYABAG owner 2FA dan privacy approval terverifikasi. |
-| Status sinkronisasi | Readiness 40/42; privacy/identity pass, UAT dan sign-off blocked, `BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `f6f79ac` |
+| Informasi terakhir disinkronkan | COYABAG safe live UAT dan destination search fix deployed. |
+| Status sinkronisasi | Release `20260829-2f4dbf2`; readiness 40/42, UAT transaksi dan sign-off blocked, `BUSINESS_READY=false`. |
+
+## COYABAG safe live UAT
+
+- Exact source `2f4dbf24c4dee057f94e6ae245881d59da4fd870` aktif pada release
+  `20260829-2f4dbf2`, dengan rollback `20260828-10e516b`.
+- UAT aman desktop/mobile, email outbox, quote manual, full test/build/audit,
+  backup, rollback, dan public smoke lulus tanpa membuat order/payment intent.
+- Destination search tidak lagi mencocokkan kota asal dalam label tarif.
+- Status `CONFIRMED / PRODUCTION_DEPLOYED / NOT_PRODUCTION_ACTIVATED`;
+  readiness 40/42 dan commerce tetap fail-closed hingga UAT transaksi serta
+  release sign-off selesai.
 
 ## COYABAG owner/privacy approval
 

@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-29 - COYABAG safe live UAT and destination integrity
+
+- Exact source `2f4dbf24c4dee057f94e6ae245881d59da4fd870` aktif pada immutable
+  release `20260829-2f4dbf2`; rollback `20260828-10e516b` tersedia.
+- UAT aman desktop/mobile meliputi katalog, detail/varian, cart reconciliation,
+  fail-closed checkout, email outbox, serta quote manual JNE/J&T tanpa membuat
+  order atau payment intent.
+- Pencarian tujuan tidak lagi mencocokkan kota asal dalam label tarif.
+  Readiness tetap 40/42; UAT transaksi dan sign-off masih memblokir activation.
+
 ## 2026-08-29 - COYABAG owner/privacy gate closed
 
 - Owner 2FA dan privacy policy `2026.08-v1` sudah terverifikasi serta disetujui

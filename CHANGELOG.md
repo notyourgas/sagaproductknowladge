@@ -1,5 +1,21 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-29 - COYABAG safe live UAT release sync
+
+- Ringkasan: menyinkronkan runner UAT production aman dan perbaikan integritas
+  pencarian tujuan manual.
+- Provenance: exact source `2f4dbf24c4dee057f94e6ae245881d59da4fd870`,
+  immutable release `20260829-2f4dbf2`, rollback `20260828-10e516b`.
+- Evidence: browser desktop/mobile, katalog 7 produk/21 varian, cart
+  reconciliation, fail-closed checkout, email outbox, quote manual JNE/J&T,
+  full test/build/audit, backup, dan public smoke lulus.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /
+  NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+- Production berubah: perbaikan pencarian tujuan aktif. Readiness tetap 40/42;
+  order/payment nyata tidak dibuat dan UAT serta sign-off tetap blocked.
+- Dokumen terdampak: Product, changelog COYABAG, portfolio, master knowledge,
+  root changelog, dan sync status.
+
 ## 2026-08-29 - COYABAG owner/privacy approval sync
 
 - Ringkasan: menyinkronkan owner 2FA aktif, policy publik terverifikasi, dan

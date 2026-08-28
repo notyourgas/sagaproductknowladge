@@ -4,6 +4,24 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-29 - Safe live UAT runner and destination search fix deployed
+
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /
+  NOT_PRODUCTION_ACTIVATED`; exact source
+  `2f4dbf24c4dee057f94e6ae245881d59da4fd870`, immutable release
+  `20260829-2f4dbf2`, dan rollback `20260828-10e516b`.
+- Runner UAT aman memverifikasi katalog, detail/varian, cart reconciliation,
+  dan fail-closed checkout pada desktop/mobile tanpa membuat order atau
+  payment intent. Email transaksional terkirim melalui outbox dan quote manual
+  JNE/J&T tervalidasi.
+- Pencarian tujuan manual sekarang hanya mencocokkan kota/provinsi tujuan;
+  nama kota asal di label tarif tidak lagi menghasilkan tujuan palsu.
+- Storefront 215/215, Laravel 466 total dengan 465 pass dan satu intentional
+  skip, build, dependency audit, backup, rollback, public smoke, dan live UAT
+  aman lulus.
+- Readiness tetap 40/42 (95%). Commerce dan checkout tetap fail-closed sampai
+  UAT transaksi nyata serta release sign-off disahkan operator.
+
 ## 2026-08-29 - Owner 2FA and privacy approval verified
 
 - Klasifikasi: `CONFIRMED / PRODUCTION_CONFIGURED / APPROVED`; provenance

@@ -1,11 +1,14 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-COYABAG owner 2FA dan privacy/retention policy versi `2026.08-v1` sudah
-`CONFIRMED / APPROVED` pada runtime production. Policy publik terverifikasi
-dengan delapan bagian, approval fingerprint cocok, audit tetap report-only,
-dan tidak ada deletion. Readiness naik menjadi 40/42 (95%). Provenance report
-`febf539`; aplikasi tetap release `20260828-10e516b`. Commerce tetap
-`NOT_PRODUCTION_ACTIVATED` sampai UAT 15 langkah dan release sign-off selesai.
+COYABAG release `20260829-2f4dbf2` menjalankan exact source
+`2f4dbf24c4dee057f94e6ae245881d59da4fd870`; rollback
+`20260828-10e516b` tersedia. Live UAT aman desktop/mobile untuk katalog,
+detail/varian, cart reconciliation, fail-closed checkout, email outbox, dan
+quote manual JNE/J&T lulus tanpa membuat order atau payment intent. Pencarian
+tujuan manual tidak lagi mencocokkan kota asal dalam label tarif. Owner 2FA dan
+privacy/retention policy `2026.08-v1` tetap approved. Readiness 40/42 (95%);
+commerce tetap `NOT_PRODUCTION_ACTIVATED` sampai UAT transaksi dan release
+sign-off selesai.
 
 SagaBook batch S319-S322 add-on consumable exact pushed source
 `8203f0131a366b81b8922127d6cd6bda06357b2d` memungkinkan Owner memetakan

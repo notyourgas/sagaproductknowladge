@@ -1,6 +1,6 @@
 # COYABAG Product Knowledge
 
-Updated: 28 Agustus 2026
+Updated: 29 Agustus 2026
 Evidence status: production surfaces + blocked commerce activation
 
 ## Tujuan dokumen
@@ -74,9 +74,13 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 - Checkout publik tetap `PRODUCTION_READINESS_BLOCKED` hanya karena UAT 15
   langkah masih 0/15 dan release sign-off belum lengkap. Nol payment intent
   dibuat saat deployment acceptance.
-- Release aktif `20260827-be8fc09` dengan exact source
-  `be8fc09710e26e49512f181904dff576f93a23dd` melayani production;
-  rollback langsung `20260827-beecd6f` dipertahankan.
+- Release aktif `20260829-2f4dbf2` dengan exact source
+  `2f4dbf24c4dee057f94e6ae245881d59da4fd870` melayani production;
+  rollback langsung `20260828-10e516b` dipertahankan. Live UAT aman untuk
+  katalog, detail/varian, cart reconciliation, email outbox, dan quote manual
+  JNE/J&T lulus tanpa membuat order atau payment intent.
+- Pencarian tujuan manual hanya memakai kota/provinsi tujuan. Teks kota asal
+  pada label tarif tidak lagi dapat memunculkan tujuan palsu.
 - Admin Beranda memperbarui seluruh ringkasan melalui snapshot terautentikasi,
   permission-gated, rate-limited, dan private/no-store. Kegagalan refresh
   mempertahankan snapshot valid terakhir dan memberi recovery state aksesibel,
