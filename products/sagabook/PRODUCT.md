@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 28 Agustus 2026 20:22 WIB
-Evidence status: laporan pendapatan dan closing detail Owner aktif di production; operational WhatsApp tetap tersuspensi, authenticated Owner UAT belum, dan business readiness tetap terpisah
+Updated: 28 Agustus 2026 22:25 WIB
+Evidence status: hardening laporan pendapatan dan closing audit aktif di production; rekonsiliasi review-only berjalan, operational WhatsApp tetap tersuspensi, authenticated Owner UAT belum, dan business readiness tetap terpisah
 
 ## Tujuan dokumen
 
@@ -15,6 +15,25 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
+
+- S318 memperdalam workspace `/admin/reports` untuk Owner dengan histori revisi
+  closing yang dapat dimuat bertahap, detail notes/session/add-on/inventory/
+  variance/artifact/delivery, export operasional lengkap, grafik pendapatan
+  aksesibel, filter URL stabil, dan label status `Sinkron`, `Perlu ditinjau`,
+  `Data belum lengkap`, atau `Belum diverifikasi`. Read model dibatch untuk
+  mencegah N+1, export memiliki row-limit preflight, CSV dinetralkan dari
+  formula injection, dan index baca ditambah memakai online DDL. Exact source
+  `933d523834dff668067e2296fce8cdb0db67e61e` aktif pada immutable release
+  `20260828151033-933d523`, rollback `20260828141625-9440c16`. Full release
+  gate, encrypted backup/disposable restore, migration contract, build,
+  persistence/browser checks, dependency audit, manifest, service, dan
+  public/security smoke lulus. Dua delivery WhatsApp legacy dikarantina dengan
+  backup privat dan audit; 0 record dihapus, DB audit kembali 100, report-read
+  canary 32/32, dan rekonsiliasi awal memproses 15 scope tanpa failure serta
+  membuat 6 temuan review-only tanpa koreksi otomatis. Status `CONFIRMED /
+  PUSHED / QA_VALIDATED / SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated Owner/operator
+  UAT belum dan `BUSINESS_READY=false`.
 
 - S317 memperluas `/admin/reports` menjadi workspace Owner untuk membaca
   pendapatan dan closing secara operasional. Grafik pendapatan memakai bucket

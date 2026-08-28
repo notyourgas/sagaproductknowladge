@@ -1,5 +1,24 @@
 # SagaBook Changelog
 
+## 2026-08-28 - S318 report dan closing audit production hardening
+
+- Histori revisi closing kini dapat dimuat bertahap dan detail/export mencakup
+  notes, session, add-on, inventory/variance, artifact, delivery, serta blocker
+  operasional. Grafik pendapatan, URL filter, tabel, dan label integritas Owner
+  diperbaiki untuk keyboard, drill-down, dan status yang lebih mudah dipahami.
+- Backend menutup N+1, menambahkan row-limit preflight, CSV formula
+  neutralization, streaming hash, tenant/cabang guard, dan online read indexes.
+- Exact source/release `933d523834dff668067e2296fce8cdb0db67e61e` /
+  `20260828151033-933d523`; rollback `20260828141625-9440c16`. Full immutable
+  release gate, encrypted backup/disposable restore, migration contract,
+  build/E2E/audit, manifest, service, serta public/security smoke lulus.
+- Dua delivery WhatsApp legacy dikarantina dengan backup privat terverifikasi,
+  0 record dihapus, dan DB audit kembali 100. Rekonsiliasi awal memproses 15
+  scope tanpa failure, menghasilkan 6 review issue dan 0 automatic correction.
+- Status `CONFIRMED / PUSHED / QA_VALIDATED / SECURITY_VALIDATED /
+  DATA_INTEGRITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+  authenticated Owner/operator UAT belum dan `BUSINESS_READY=false`.
+
 ## 2026-08-28 - S317 laporan pendapatan dan closing detail production
 
 - Owner sekarang dapat memilih rentang grafik pendapatan 7 hari, 30 hari,
