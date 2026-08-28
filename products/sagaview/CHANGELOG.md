@@ -1,5 +1,28 @@
 # SagaView Changelog
 
+## 2026-08-28 - S334 immutable artifact ready
+
+- Klasifikasi: `CONFIRMED / PUSHED / DEVOPS_VALIDATED /
+  SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED / STAGING_READY /
+  RELEASE_ARTIFACT_READY / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED`.
+- Exact source `a5986e16b6b66f52ad27b8fba1b0b2fc0f2b1511` dibekukan sebagai
+  candidate `20260828093912-a5986e1` dengan archive SHA-256
+  `467a575348c9067ade9512f3149f27d9e063ff60977b803bd942bf16e4064d4f`
+  dan complete bundle SHA-256
+  `6e187e4598bc764fd27236f367a5ffa6150319ed4bfd49358e485fcba02b053e`.
+- Primary/mirror checksum-identik pada disk fisik sehat berbeda. Satu media
+  kandidat berstatus filesystem warning ditolak dan tidak dipakai sebagai
+  evidence.
+- Acceptance: full SagaView 234/234 (3.743 assertion), build 5.097 modul,
+  syntax, npm/Composer audit nol, archive 2.604 entry tanpa file runtime
+  restricted, complete bundle, diff dependency/migration, clean source, push,
+  dan remote exact lulus.
+- Boundary: belum ada upload VPS, fresh backup/restore, database rehearsal,
+  deploy, activation, customer data, atau payment. Production tetap S333
+  `80635694d7db1df45ade256ecd7e67cc34fe76c3` /
+  `20260828071047-8063569`.
+
 ## 2026-08-28 - S334 failed-build partial artifact recovery
 
 - Klasifikasi: `CONFIRMED / PUSHED / DEVOPS_VALIDATED /
