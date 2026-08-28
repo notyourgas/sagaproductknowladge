@@ -1,5 +1,23 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-29 - SagaBook S319-S322 production activation sync
+
+- Ringkasan: menyinkronkan aktivasi production consumable add-on, rekap
+  closing harian, dan perbaikan preserve-first untuk orphan terminal.
+- Provenance: exact source
+  `806adbe44b5d5ee2a2437fb3f066effd73c49b67`, immutable release
+  `20260828174039-806adbe`, rollback `20260828153427-21d87e9`.
+- Evidence: PHP 1.273/1.273 (14.307), focused 17/17 (89), TypeScript/build,
+  changed-file Pint, dependency audit nol, encrypted backup/restore, migration
+  pending 0, canary 32/32, DB audit 100/100, service/journal, dan smoke 3/3.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+- Production berubah: ya. Backfill 47 add-on legacy tetap preview-only,
+  mapped 0 dan `applied=false`; authenticated UAT serta mapping masih pending.
+- Dokumen terdampak: Product, Dossier, feature ledger/changelog SagaBook,
+  portfolio, master knowledge, Decisions, Gaps, root changelog, dan sync
+  status.
+
 ## 2026-08-29 - COYABAG safe live UAT release sync
 
 - Ringkasan: menyinkronkan runner UAT production aman dan perbaikan integritas

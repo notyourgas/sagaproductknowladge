@@ -32,7 +32,7 @@ keputusan pengganti.
 | Alternatif yang dipertimbangkan | Menginput semua tambahan secara manual saat closing; membaca rule katalog terbaru untuk histori; menghitung add-on belum dibayar; menerapkan backfill otomatis tanpa review. |
 | Dampak | Editor add-on mendapat wizard kertas/packaging, backend memakai rule versioned dan snapshot booking, closing menghitung paid/confirmed saja, serta rekonsiliasi lama default read-only dan fail-closed memakai manifest exact. Tidak ada migration baru. |
 | Pemberi keputusan | Andreas / founder |
-| Status | `CONFIRMED / PUSHED / LOCAL_VALIDATED / UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`; source `8203f0131a366b81b8922127d6cd6bda06357b2d` |
+| Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`; source fitur `8203f0131a366b81b8922127d6cd6bda06357b2d` aktif melalui exact cumulative source `806adbe44b5d5ee2a2437fb3f066effd73c49b67`, release `20260828174039-806adbe`; authenticated UAT dan mapping legacy masih pending |
 | Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [SagaBook Changelog](products/sagabook/CHANGELOG.md), [SagaBook Ledger](products/sagabook/FEATURE_COVERAGE_LEDGER.md) |
 
 ## DEC-118 - Email customer SagaBook adalah fitur basic default-on

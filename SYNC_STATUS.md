@@ -12,12 +12,26 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-29T01:00:00+07:00 |
-| Branch aktif | `codex/coyabag-uat-20260829` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-29T01:01:00+07:00 |
+| Branch aktif | `codex/s319-s322-production-knowledge-final` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `f6f79ac` |
-| Informasi terakhir disinkronkan | COYABAG safe live UAT dan destination search fix deployed. |
-| Status sinkronisasi | Release `20260829-2f4dbf2`; readiness 40/42, UAT transaksi dan sign-off blocked, `BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `da4eb91` |
+| Informasi terakhir disinkronkan | SagaBook S319-S322 production activation dan residual mapping legacy. |
+| Status sinkronisasi | Release `20260828174039-806adbe`; `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`. |
+
+## SagaBook S319-S322 production activation
+
+- Exact source `806adbe44b5d5ee2a2437fb3f066effd73c49b67` aktif pada release
+  `20260828174039-806adbe`; rollback `20260828153427-21d87e9` kompatibel.
+- Full PHP 1.273/1.273 (14.307), focused 17/17 (89), TypeScript/build,
+  changed-file Pint, dependency audit nol, encrypted backup/restore, migrasi
+  pending 0, canary 32/32, DB audit 100/100, service/journal, dan smoke 3/3
+  lulus.
+- Satu relasi payment session terminal yatim diperbaiki preserve-first tanpa
+  menghapus session/provenance; audit akhir orphan 0.
+- Backfill add-on legacy preview-only: scanned 47, mapped 0, unmapped 47,
+  planned/changed 0, `applied=false`. Authenticated UAT dan mapping legacy
+  masih pending; `BUSINESS_READY=false`.
 
 ## COYABAG safe live UAT
 

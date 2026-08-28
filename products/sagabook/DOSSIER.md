@@ -7,6 +7,22 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Release kumulatif S319-S322 exact source
+  `806adbe44b5d5ee2a2437fb3f066effd73c49b67` aktif pada immutable release
+  `20260828174039-806adbe`; rollback `20260828153427-21d87e9` kompatibel.
+  Fitur consumable add-on dan rekap closing harian aktif bersama guard data,
+  snapshot booking, paid-only aggregation, dan exactly-once closing. Full PHP
+  1.273/1.273 (14.307), focused blocker 17/17 (89), TypeScript/build,
+  changed-file Pint, dependency audit nol, encrypted backup/disposable restore,
+  0 pending migration, report canary 32/32, DB audit 100/100, service/journal,
+  serta public/security smoke 3/3 lulus. Satu relasi payment session terminal
+  yatim yang memblokir percobaan pertama diperbaiki preserve-first tanpa
+  menghapus session atau provenance provider; audit akhir orphan 0. Backfill
+  add-on legacy tetap preview-only: scanned 47, mapped 0, unmapped 47,
+  planned/changed 0, `applied=false`. Status `CONFIRMED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`;
+  authenticated Owner/Staff UAT dan mapping legacy masih pending.
+
 - Batch konsumsi stok add-on S319-S322 exact source
   `8203f0131a366b81b8922127d6cd6bda06357b2d`: Owner dapat mengaktifkan dan
   mengisi kuantitas kertas foto serta packaging per unit add-on dari editor

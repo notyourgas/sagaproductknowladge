@@ -22,6 +22,12 @@ ketika keputusan atau release baru menutup gap.
 
 ## Prioritas tinggi
 
+SagaBook S319-S322 `PRODUCTION_ACTIVATED / BUSINESS_READY=false`: preview
+backfill production memindai 47 add-on legacy, tetapi mapped 0 dan unmapped 47;
+plannedChanges 0, changed 0, `applied=false`. Nilai consumable untuk add-on lama
+harus dipetakan dan direview sebelum manifest apply. Authenticated Owner/Staff
+UAT closing tetap diperlukan; tidak ada mutasi otomatis atau penghapusan data.
+
 SagaView S288 `RECOVERY_APPROVAL_REQUIRED`: blocker global test sudah ditutup
 pada exact mainline candidate
 `a830cf40e1c4fcb53d0e0d63d2e443d71a89b05e`; full monorepo 1.156/1.156 dan
