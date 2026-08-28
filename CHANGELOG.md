@@ -1,5 +1,22 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-28 - SagaView S330 artifact capacity preflight sync
+
+- Ringkasan: menyinkronkan preflight kapasitas output dan mirror sebelum
+  artifact builder membuat direktori atau menjalankan build.
+- Alasan: lokasi dengan ruang tidak cukup harus ditolak sebelum artifact
+  parsial atau pekerjaan build yang sia-sia dibuat.
+- Produk/area: SagaView release operations, storage capacity, security, QA,
+  dan provenance.
+- Klasifikasi: `CONFIRMED / PUSHED / DEVOPS_VALIDATED /
+  SECURITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  RELEASE_BLOCKED / PRODUCTION_UNCHANGED`; exact source
+  `f2c946aa6bdbeb2a34b91692320e4f6f55ba4c37`.
+- RED–GREEN, focused 6/36, regresi 13/105 assertion, negative probe tanpa
+  write, syntax, npm/Composer audit nol, clean commit, dan remote exact lulus.
+- Dokumen terdampak: Product, feature ledger, changelog SagaView, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-08-28 - SagaView S329 reparse-point custody guard sync
 
 - Ringkasan: menyinkronkan guard builder yang menolak junction/reparse point

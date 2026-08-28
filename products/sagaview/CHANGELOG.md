@@ -1,5 +1,25 @@
 # SagaView Changelog
 
+## 2026-08-28 - S330 artifact capacity preflight
+
+- Klasifikasi: `CONFIRMED / PUSHED / DEVOPS_VALIDATED /
+  SECURITY_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  RELEASE_BLOCKED / PRODUCTION_UNCHANGED`.
+- Before: builder dapat memulai dependency install/build sebelum memastikan
+  output dan mirror mempunyai kapasitas minimum, sehingga disk penuh berisiko
+  menyisakan artifact parsial.
+- After: exact source `f2c946aa6bdbeb2a34b91692320e4f6f55ba4c37`
+  memeriksa kedua lokasi lebih awal dengan minimum 512 MiB yang tidak dapat
+  diturunkan melalui parameter.
+- Acceptance: RED 1 test gagal; GREEN focused 6/36 dan regresi
+  release/custody 13/105 assertion lulus. Probe kapasitas sintetis exit 1,
+  guard cocok, output/mirror tidak dibuat. Syntax, npm audit, Composer audit,
+  diff, clean commit, push, dan remote exact lulus.
+- Boundary: tidak ada API, database, migration, customer data, payment,
+  artifact baru, deploy, activation, atau perubahan produk lain. Media lokal
+  terpisah terotorisasi dan artifact exact S330 masih pending; production tetap
+  S311.
+
 ## 2026-08-28 - S329 reparse-point custody guard
 
 - Klasifikasi: `CONFIRMED / PUSHED / DEVOPS_VALIDATED /

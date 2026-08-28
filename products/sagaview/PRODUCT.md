@@ -1,6 +1,21 @@
 # SagaView Product Knowledge
 
-Updated: 28 Agustus 2026 10:00 WIB
+Updated: 28 Agustus 2026 11:00 WIB
+
+SagaView S330 exact source
+`f2c946aa6bdbeb2a34b91692320e4f6f55ba4c37` sudah `PUSHED /
+DEVOPS_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED / PRODUCTION_UNCHANGED`. Artifact
+builder kini memeriksa ruang bebas output dan mirror sebelum membuat direktori
+atau menjalankan build. Ambang minimum 512 MiB dikunci dan hanya dapat dinaikkan
+untuk kebutuhan kandidat yang lebih besar.
+
+RED membuktikan kontrak baru gagal 1 test; GREEN lulus 6/36 assertion dan
+regresi release/custody lulus 13/105 assertion. Probe kapasitas sintetis pada
+exact commit berhenti exit 1, guard cocok, serta output dan mirror tidak dibuat.
+Syntax PowerShell, npm audit nol vulnerability, Composer audit nol advisory,
+clean commit, push, dan remote exact lulus. Media lokal terpisah terotorisasi
+serta artifact exact S330 masih wajib; production tetap S311.
 
 SagaView S329 exact source
 `1da3a7d5e24f0fd2f234b52d6531ece8fa2eee92` sudah `PUSHED /

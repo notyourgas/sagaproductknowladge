@@ -1,6 +1,20 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 28 Agustus 2026 10:00 WIB
+Evidence cut-off: 28 Agustus 2026 11:00 WIB
+
+S330 artifact capacity preflight: exact pushed source
+`f2c946aa6bdbeb2a34b91692320e4f6f55ba4c37` memeriksa ruang bebas output dan
+mirror sebelum directory creation atau build. Builder mewajibkan minimal
+512 MiB pada masing-masing lokasi dan parameter hanya dapat menaikkan ambang,
+sehingga disk yang kekurangan kapasitas ditolak sebelum artifact parsial dibuat.
+
+RED 1 test gagal lalu GREEN 6/36 assertion lulus; regresi release/custody
+13/105 assertion, syntax PowerShell, npm/Composer audit nol, diff, clean commit,
+push, dan remote exact lulus. Probe kapasitas sintetis exact commit exit 1,
+guard terdeteksi, output dan mirror tidak dibuat. Status `PUSHED /
+DEVOPS_VALIDATED / SECURITY_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED / RELEASE_BLOCKED / PRODUCTION_UNCHANGED`. Gap
+berikutnya: media lokal terpisah terotorisasi dan artifact exact S330.
 
 S329 reparse-point custody guard: exact pushed source
 `1da3a7d5e24f0fd2f234b52d6531ece8fa2eee92` menolak output, mirror, atau temp
