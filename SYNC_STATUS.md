@@ -12,12 +12,38 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-28T17:50:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-28T17:51:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
-| Informasi terakhir disinkronkan | SagaBook friendly customer email copy dan recovery link production activation. |
-| Status sinkronisasi | Source `92765aa9` aktif pada release `20260828103607-92765aa`; tenant-linked UAT residual dan `BUSINESS_READY=false`. |
+| Informasi terakhir disinkronkan | SagaView S336 draft non-blocking dan frame-capacity recovery. |
+| Status sinkronisasi | Candidate `98f13a8d` pushed/local-validated dan belum dideploy; production SagaView tetap S333. |
+
+## SagaView S336 draft non-blocking dan frame-capacity recovery
+
+- Exact source `98f13a8d50f4ae0b97d787f1ab5e0896296007ec` pada branch
+  `codex/s336-sagaview-draft-console-recovery` sudah dipush.
+- Draft tidak menghalangi Studio Console. Owner melihat kapasitas dan dapat
+  archive/restore frame tanpa kehilangan aset, versi, draft, profile item,
+  revision/checksum, atau audit.
+- Full SagaView 236/3.761, focused 28/108, Playwright desktop/mobile 4/4,
+  build 5.097 modul, Pint, route contract, diff, dan audit dependency nol
+  lulus.
+- Status `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; production tetap S333 dan
+  `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi SagaView S336
+
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/DOSSIER.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `DECISIONS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook friendly customer email copy dan recovery link
 

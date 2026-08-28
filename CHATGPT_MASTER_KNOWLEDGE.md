@@ -1,8 +1,20 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 28 Agustus 2026 17:50 WIB
+Evidence cut-off: 28 Agustus 2026 17:51 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
+
+SagaView S336 exact pushed source
+`98f13a8d50f4ae0b97d787f1ab5e0896296007ec` menetapkan bahwa draft frame
+tidak menghalangi akses Studio Console. Studio tetap aksi utama; draft dapat
+disimpan tanpa dipublish. Owner melihat kapasitas aktif dan dapat mengarsipkan
+atau memulihkan frame tanpa menghapus aset, versi, draft, profile item, atau
+audit. Archive/restore tenant-scoped, idempoten, memakai catalog lock dan
+revision/checksum; Studio hanya menerima frame aktif. Full SagaView 236/3.761,
+focused 28/108, Playwright desktop/mobile 4/4, build, format, route contract,
+diff, serta audit dependency nol lulus. Status `PUSHED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; production tetap S333 dan
+`BUSINESS_READY=false`.
 
 SagaBook Dashboard Changelog `1.16.0` tertanggal 28 Agustus 2026 aktif secara
 kumulatif melalui exact changelog source

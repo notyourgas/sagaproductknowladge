@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-28 - SagaView S336 draft tidak menghalangi Studio
+
+- Studio Console tetap dapat dibuka walaupun Owner masih mempunyai draft; draft
+  tidak perlu dipublish atau dihapus untuk melanjutkan operasional.
+- Owner melihat kapasitas frame aktif dan dapat mengarsipkan lalu memulihkan
+  frame tanpa kehilangan aset, versi, draft, profile item, atau audit.
+- Exact source `98f13a8d50f4ae0b97d787f1ab5e0896296007ec` sudah
+  dipush dan lulus full SagaView 236/3.761, focused 28/108, Playwright
+  desktop/mobile 4/4, build, format, route contract, diff, serta audit
+  dependency nol.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED`; production SagaView tetap S333 dan SagaBook tidak
+  berubah.
+
 ## 2026-08-28 - SagaBook friendly customer email production activation
 
 - Email confirmation, H-1, dan H-3 memakai copy ramah yang tetap memuat

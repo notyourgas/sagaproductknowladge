@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-117 - Draft frame SagaView tidak menghalangi Studio Console
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-28 |
+| Topik | Hubungan lifecycle draft, akses Studio, dan kapasitas frame aktif SagaView |
+| Keputusan | Draft frame boleh tetap belum selesai dan tidak menjadi prasyarat untuk membuka Studio Console. Ketika kapasitas aktif penuh, publish frame baru ditahan dengan alasan jelas, tetapi draft tetap aman dan Save Draft tetap tersedia. Owner membebaskan slot melalui archive yang dapat dipulihkan, bukan dipaksa menghapus frame atau draft. |
+| Alasan | Operasional Studio tidak boleh berhenti karena pekerjaan authoring Owner; penghapusan sebagai satu-satunya jalan keluar berisiko kehilangan konteks dan membuat limit paket terasa seperti kerusakan aplikasi. |
+| Alternatif yang dipertimbangkan | Memaksa semua draft dipublish; memaksa draft/frame dihapus; membiarkan pesan 422 generik tanpa kapasitas dan recovery. |
+| Dampak | Owner Console menjadikan Studio sebagai aksi utama, menampilkan kapasitas, dan menyediakan archive/restore tenant-scoped, idempoten, revisioned, audited, serta aman terhadap concurrency. Aset, versi, draft, dan profile item dipertahankan. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; source `98f13a8d50f4ae0b97d787f1ab5e0896296007ec` |
+| Dokumen terkait | [SagaView Product](products/sagaview/PRODUCT.md), [SagaView Dossier](products/sagaview/DOSSIER.md), [SagaView Changelog](products/sagaview/CHANGELOG.md), [SagaView Ledger](products/sagaview/FEATURE_COVERAGE_LEDGER.md) |
+
 ## DEC-116 - Email customer SagaBook ramah, informatif, dan recoverable
 
 | Field | Isi |

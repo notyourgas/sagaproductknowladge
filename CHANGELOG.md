@@ -1,5 +1,22 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-28 - SagaView S336 draft non-blocking sync
+
+- Ringkasan: menyinkronkan kontrak bahwa draft frame tidak menghalangi Studio
+  Console serta jalur archive/restore untuk membebaskan kapasitas tanpa hapus.
+- Provenance: exact source
+  `98f13a8d50f4ae0b97d787f1ab5e0896296007ec`, branch
+  `codex/s336-sagaview-draft-console-recovery`, sudah dipush.
+- Evidence: full SagaView 236/236 (3.761 assertion), focused 28/28 (108),
+  Playwright desktop/mobile 4/4, build 5.097 modul, Pint, route contract, diff,
+  dan audit dependency nol.
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`.
+- Production berubah: tidak. Production tetap S333; authenticated Owner UAT,
+  release pack, deploy, activation, dan `BUSINESS_READY` tetap gate terpisah.
+- Dokumen terdampak: Product, Dossier, feature ledger/changelog SagaView,
+  portfolio, master knowledge, decisions, root changelog, dan sync status.
+
 ## 2026-08-28 - SagaBook friendly customer email production sync
 
 - Ringkasan: menyinkronkan copy kontekstual confirmation/H-1/H-3 dan recovery

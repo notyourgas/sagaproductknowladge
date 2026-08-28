@@ -1,5 +1,29 @@
 # SagaView Changelog
 
+## 2026-08-28 - S336 draft non-blocking dan recovery kapasitas frame
+
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`.
+- Before: draft diarahkan sebagai pekerjaan yang harus diselesaikan sebelum
+  operasional, publish yang tertahan limit hanya memberi kegagalan kurang jelas,
+  dan Owner tidak mempunyai aksi aman untuk membebaskan slot selain menghapus.
+- After: Studio Console tetap menjadi aksi utama dan dapat dibuka walau draft
+  ada; kapasitas aktif terlihat; publish frame baru ditahan lebih awal saat
+  penuh; frame dapat diarsipkan dan dipulihkan tanpa menghapus aset, versi,
+  draft, profile item, atau histori audit.
+- Integrity: archive/restore tenant-scoped dan idempoten; mutasi kapasitas
+  diserialkan pada catalog lock, revision/checksum diperbarui, dan konfigurasi
+  Studio hanya memuat frame aktif.
+- Provenance: exact source
+  `98f13a8d50f4ae0b97d787f1ab5e0896296007ec` pada branch
+  `codex/s336-sagaview-draft-console-recovery` sudah dipush.
+- Evidence: full SagaView 236/236 (3.761 assertion), focused 28/28 (108),
+  Playwright desktop/mobile 4/4, build 5.097 modul, Pint, route contract, diff,
+  dan audit dependency nol.
+- Boundary: tidak ada migration, foto/path/output customer, payment, deploy,
+  activation, atau perubahan SagaBook. Production tetap S333 dan
+  `BUSINESS_READY=false`.
+
 ## 2026-08-28 - S333 current Changelog production activation
 
 - Klasifikasi: `CONFIRMED / PUSHED / DEVOPS_VALIDATED /

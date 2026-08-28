@@ -1,5 +1,26 @@
 # SagaView Dossier
 
+## S336 draft non-blocking dan recovery kapasitas frame
+
+Exact pushed source `98f13a8d50f4ae0b97d787f1ab5e0896296007ec`
+memperbaiki jalur Owner ketika draft dan limit frame aktif bertemu. Studio
+Console kini tetap dapat dibuka dan menjadi aksi dominan; draft tidak harus
+dipublish atau dihapus untuk melanjutkan operasional. UI menampilkan kapasitas,
+menahan publish frame baru sebelum submit ketika penuh, mempertahankan Save
+Draft, dan meneruskan alasan server bila konflik terjadi setelah preflight.
+
+Owner dapat mengarsipkan frame aktif untuk mengosongkan slot dan memulihkannya
+ketika slot tersedia. Operasi memakai permission workspace, tenant scope,
+catalog lock, revision/checksum, idempotency, serta audit. Archive tidak
+menandai frame deleted dan tidak menghapus aset, versi, draft, atau profile
+item; effective Studio configuration menyaring frame arsip sampai dipulihkan.
+
+Full SagaView 236/236 dengan 3.761 assertion, focused 28/28 dengan 108
+assertion, Playwright desktop/mobile 4/4, build 5.097 modul, Pint, route
+contract, diff check, dan audit Composer/npm nol lulus. Status `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; tidak ada
+migration, upload customer, payment, deploy, atau perubahan SagaBook.
+
 ## S311 separate custody and production activation
 
 Exact pushed source `cd7288d3bb4da9542fbfa20f97780fa5639759bf` aktif pada

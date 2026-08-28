@@ -1,6 +1,23 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 28 Agustus 2026 14:17 WIB
+Evidence cut-off: 28 Agustus 2026 17:51 WIB
+
+S336 draft non-blocking dan frame-capacity recovery: exact pushed source
+`98f13a8d50f4ae0b97d787f1ab5e0896296007ec` memisahkan akses operasional
+Studio dari lifecycle draft. Draft boleh tetap ada; Owner dapat langsung
+membuka Studio Console. Kapasitas aktif ditampilkan dan publish frame baru
+ditahan dengan alasan serta aksi berikutnya yang jelas saat limit penuh.
+
+Archive/restore menggantikan penghapusan sebagai jalur aman untuk membebaskan
+slot. Aset, versi, draft, profile item, revision/checksum, audit, tenant scope,
+idempotency, dan catalog concurrency dipertahankan; hanya frame aktif yang
+masuk konfigurasi Studio. Full SagaView 236/3.761, focused 28/108,
+Playwright desktop/mobile 4/4, build 5.097 modul, Pint, route contract,
+Composer/npm audit nol, diff, clean commit, push, dan remote exact lulus.
+Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+PRODUCTION_UNCHANGED`. Gap berikutnya adalah authenticated Owner UAT pada
+workspace referensi lalu release pack, backup/restore, rollback, dan approval
+deploy; production tetap S333 dan `BUSINESS_READY=false`.
 
 S333 Changelog production deployment: exact pushed source
 `80635694d7db1df45ade256ecd7e67cc34fe76c3` aktif pada immutable release

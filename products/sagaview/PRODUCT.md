@@ -1,6 +1,25 @@
 # SagaView Product Knowledge
 
-Updated: 28 Agustus 2026 14:17 WIB
+Updated: 28 Agustus 2026 17:51 WIB
+
+SagaView S336 exact source
+`98f13a8d50f4ae0b97d787f1ab5e0896296007ec` sudah `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`. Draft frame
+sekarang tidak menjadi prasyarat untuk membuka Studio Console. Ringkasan Owner
+menjadikan akses Studio sebagai aksi utama, sedangkan draft tetap dapat
+disimpan, ditinjau, dipublish, atau dibiarkan tanpa menghalangi operasional.
+
+Owner melihat pemakaian slot frame aktif dan alasan publish ditahan ketika
+kapasitas penuh. Frame aktif yang tidak dipakai dapat diarsipkan untuk
+mengosongkan slot lalu dipulihkan kemudian; aset, versi, draft, profile item,
+revision/checksum, dan audit tetap dipertahankan. Archive/restore tenant-scoped,
+idempoten, dan diserialkan pada katalog agar publish bersamaan tidak melewati
+limit. Studio hanya menerima frame berstatus aktif.
+
+Exact gate lulus 236/236 test SagaView dengan 3.761 assertion, focused 28/28
+dengan 108 assertion, Playwright desktop/mobile 4/4, build 5.097 modul, Pint,
+route contract, diff check, serta audit Composer/npm nol advisory. Production
+tetap S333 dan deployment memerlukan approval serta release gate terpisah.
 
 SagaView S333 exact source
 `80635694d7db1df45ade256ecd7e67cc34fe76c3` aktif pada immutable release
