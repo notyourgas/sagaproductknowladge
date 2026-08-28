@@ -30,9 +30,9 @@ keputusan pengganti.
 | Keputusan | Gunakan domain email terverifikasi dan Resend untuk confirmation setelah pembayaran otoritatif serta reminder H-1/H-3. Email customer, outbox, signature webhook, idempotency, retry, timezone, stale cancellation, tenant permission, dan audit harus fail-closed. Seluruh tenant toggle default-off; code deployment tidak otomatis mengaktifkan provider atau mengirim customer email. WhatsApp tetap channel terpisah dan tersuspensi selama transisi provider. |
 | Alasan | Customer memerlukan konfirmasi dan pengingat yang dapat diaudit tanpa menggantungkan booking/payment pada keberhasilan provider atau menyalakan pengiriman lama secara massal. |
 | Alternatif yang dipertimbangkan | Mengirim langsung tanpa outbox; mengaktifkan seluruh tenant saat deploy; memakai WhatsApp yang sedang disuspensi; menerima webhook tanpa signature. |
-| Dampak | Code email Resend aktif di production, tetapi runtime delivery tetap disabled sampai restricted API key/webhook secret dipasang dan authenticated synthetic UAT lulus. Booking/payment tidak berubah ketika email gagal. |
+| Dampak | Code email Resend aktif di production. Restricted sending credential dan signing secret telah dipasang melalui secret store; canary internal dan signed webhook round-trip lulus. Seluruh tenant toggle tetap opt-in mati, sehingga tidak ada customer automation massal dan tenant-linked UAT masih diperlukan. Booking/payment tidak berubah ketika email gagal. |
 | Pemberi keputusan | Andreas / founder |
-| Status | `CONFIRMED / PUSHED / PRODUCTION_DEPLOYED / CODE_RELEASE_ACTIVE / EMAIL_RUNTIME_DISABLED / BUSINESS_READY=false`; source `4aae315ce71933bf2d283a690fb060a95a29aa49`, release `20260828062330-4aae315` |
+| Status | `CONFIRMED / PUSHED / PRODUCTION_DEPLOYED / EMAIL_PROVIDER_ACTIVATED / WEBHOOK_ACTIVATED / BUSINESS_READY=false`; feature source `4aae315ce71933bf2d283a690fb060a95a29aa49`, active source `68b978e533d2fcc23dd7be23ddf23b2328f51a6b`, release `20260828063524-68b978e` |
 | Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [SagaBook Changelog](products/sagabook/CHANGELOG.md), [SagaBook Ledger](products/sagabook/FEATURE_COVERAGE_LEDGER.md), [Gaps](GAPS.md) |
 
 ## DEC-111 - Koreksi stok SagaBook memakai maker-checker dan reversal append-only

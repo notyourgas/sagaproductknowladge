@@ -18,15 +18,19 @@ remote-main parity. Changelog `PRODUCTION_DEPLOYED /
 PRODUCTION_ACTIVATED`; `BUSINESS_READY=false`.
 
 SagaBook Resend customer email exact source
-`4aae315ce71933bf2d283a690fb060a95a29aa49` aktif pada immutable release
-`20260828062330-4aae315`, rollback `20260828054737-88b8ea9`. Code mencakup
+`4aae315ce71933bf2d283a690fb060a95a29aa49` aktif kumulatif pada exact
+production source `68b978e533d2fcc23dd7be23ddf23b2328f51a6b`, immutable release
+`20260828063524-68b978e`, rollback `20260828062330-4aae315`. Code mencakup
 encrypted customer email, payment confirmation exactly-once, reminder H-1/H-3
 tenant-timezone, outbox/retry/idempotency, stale cancellation, dan verified
 webhook. Seluruh toggle tenant default-off dan provider tidak boleh mengubah
-booking/payment. Status `PRODUCTION_DEPLOYED / CODE_RELEASE_ACTIVE /
-EMAIL_RUNTIME_DISABLED`; API key/webhook secret, live send, authenticated UAT,
-feature activation, dan `BUSINESS_READY` masih pending. Operational WhatsApp
-tetap tersuspensi sebagai channel terpisah.
+booking/payment. Restricted sending credential serta signing secret telah
+dipasang melalui secret store. Canary internal diterima dan signed `sent` serta
+`delivered` event tercatat; unsigned request ditolak `401`. Status
+`PRODUCTION_DEPLOYED / EMAIL_PROVIDER_ACTIVATED / WEBHOOK_ACTIVATED`;
+seluruh tenant toggle tetap mati, sehingga tenant-linked UAT, pilot, dan
+`BUSINESS_READY` masih pending. Operational WhatsApp tetap tersuspensi sebagai
+channel terpisah.
 
 SagaBook S313 exact source
 `68b978e533d2fcc23dd7be23ddf23b2328f51a6b` aktif pada immutable release

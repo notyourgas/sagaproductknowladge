@@ -1,5 +1,22 @@
 # SagaBook Changelog
 
+## 2026-08-28 - Resend provider dan signed webhook production activation
+
+- Feature source `4aae315ce71933bf2d283a690fb060a95a29aa49` aktif kumulatif
+  pada exact production source `68b978e533d2fcc23dd7be23ddf23b2328f51a6b`,
+  immutable release `20260828063524-68b978e`; rollback
+  `20260828062330-4aae315` tersedia.
+- Restricted sending credential dan signing secret dipasang melalui secret
+  store tanpa memasukkan secret ke source atau knowledge publik.
+- Canary internal berizin diterima. Resend mengirim signed event `email.sent`
+  dan `email.delivered`; signature diverifikasi dan event dicatat ke database.
+  Unsigned request ditolak `401`, public health `200`, queue dan PHP aktif,
+  serta warning queue nol pada window verifikasi.
+- Seluruh tenant toggle tetap opt-in mati sehingga tidak ada pengiriman massal.
+  Status `CONFIRMED / PRODUCTION_DEPLOYED / EMAIL_PROVIDER_ACTIVATED /
+  WEBHOOK_ACTIVATED`; tenant-linked outbox/reminder UAT, pilot, dan
+  `BUSINESS_READY` masih pending.
+
 ## 2026-08-28 - S313 booking-detail WhatsApp copy production activation
 
 - Exact source `68b978e533d2fcc23dd7be23ddf23b2328f51a6b` aktif pada

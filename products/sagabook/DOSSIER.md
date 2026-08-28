@@ -8,11 +8,12 @@ dalam satu dokumen public-safe.
 ## Konteks dan status bukti
 
 - Resilient customer email via Resend exact source
-  `4aae315ce71933bf2d283a690fb060a95a29aa49`, immutable release
-  `20260828062330-4aae315`, rollback `20260828054737-88b8ea9`:
+  `4aae315ce71933bf2d283a690fb060a95a29aa49`, aktif kumulatif pada exact
+  production source `68b978e533d2fcc23dd7be23ddf23b2328f51a6b`, immutable release
+  `20260828063524-68b978e`, rollback `20260828062330-4aae315`:
   `CONFIRMED / PUSHED / QA_VALIDATED / SECURITY_VALIDATED /
-  DATA_INTEGRITY_VALIDATED / PRODUCTION_DEPLOYED / CODE_RELEASE_ACTIVE /
-  EMAIL_RUNTIME_DISABLED`. Booking menyimpan email terenkripsi; pembayaran
+  DATA_INTEGRITY_VALIDATED / PRODUCTION_DEPLOYED / EMAIL_PROVIDER_ACTIVATED /
+  WEBHOOK_ACTIVATED`. Booking menyimpan email terenkripsi; pembayaran
   terverifikasi dapat membuat confirmation outbox exactly-once dan scheduler
   merencanakan reminder H-1/H-3 memakai timezone tenant. Dispatcher memeriksa
   ulang eligibility sebelum send, membatalkan reminder stale/reschedule, dan
@@ -21,9 +22,14 @@ dalam satu dokumen public-safe.
   tanpa mengubah booking/payment. Seluruh tenant toggle default-off. Full PHP
   1.207/1.207 (13.613 assertion), focused 7/7 (37), typecheck/build,
   dependency audit nol, fresh encrypted backup, disposable restore, migration,
-  service, manifest, rollback, dan smoke/security 3/3 lulus. API key dan
-  webhook secret belum tersedia pada runtime; tidak ada email customer nyata,
-  authenticated UAT, atau provider canary. `BUSINESS_READY=false`.
+  service, manifest, rollback, dan smoke/security 3/3 lulus. Restricted
+  sending credential dan signing secret kini tersedia melalui secret store.
+  Canary internal berizin diterima; signed `sent` dan `delivered` event masuk
+  ke database, unsigned request ditolak `401`, public health `200`, queue/PHP
+  aktif, dan window verifikasi tidak memiliki warning queue. Seluruh tenant
+  toggle tetap opt-in mati, sehingga tenant-linked confirmation/reminder,
+  authenticated operator UAT, dan pilot belum dilakukan.
+  `BUSINESS_READY=false`.
 
 - Salin template WhatsApp Booking Detail S313 exact source
   `68b978e533d2fcc23dd7be23ddf23b2328f51a6b`, immutable release

@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 28 Agustus 2026 13:45 WIB
-Evidence status: booking-detail WhatsApp copy templates are production-activated; copy remains manual, Resend runtime delivery remains disabled, and operational WhatsApp stays suspended
+Updated: 28 Agustus 2026 16:32 WIB
+Evidence status: Resend provider dan signed webhook production aktif; seluruh tenant tetap opt-in mati, tenant-linked operational UAT belum, dan operational WhatsApp tetap tersuspensi
 
 ## Tujuan dokumen
 
@@ -48,20 +48,21 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   mengonfirmasi remote-main parity. Status Changelog `CONFIRMED / PUSHED /
   PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; `BUSINESS_READY=false`.
 
-- Email customer Resend exact source
-  `4aae315ce71933bf2d283a690fb060a95a29aa49` aktif pada immutable release
-  `20260828062330-4aae315`, dengan rollback
-  `20260828054737-88b8ea9`. Coverage mencakup email customer terenkripsi,
-  confirmation setelah status pembayaran otoritatif, reminder H-1/H-3
-  tenant-timezone, outbox/retry/idempotency, cancellation stale/reschedule,
-  webhook signature/dedupe/out-of-order, serta setting Owner default-off.
-  Full PHP 1.207/1.207 (13.613 assertion), focused Resend 7/7 (37),
-  typecheck/build, dependency audit nol, fresh encrypted backup
-  `20260828T062110Z`, disposable restore, migration, queue/nginx, manifest,
-  rollback, dan public/security smoke 3/3 lulus. Setelah aktivasi, `main`
-  maju karena kandidat copy-template WA terpisah; active release/commit tetap
-  stabil. Runtime email tetap `disabled`, API key dan webhook secret belum
-  dipasang, tidak ada customer email/canary nyata, serta
+- Email customer Resend exact feature source
+  `4aae315ce71933bf2d283a690fb060a95a29aa49` kini aktif kumulatif pada exact
+  production source `68b978e533d2fcc23dd7be23ddf23b2328f51a6b`, immutable release
+  `20260828063524-68b978e`, rollback `20260828062330-4aae315`. Restricted
+  sending credential dan signing secret telah dipasang melalui secret store;
+  runtime provider, queue, dan signed webhook aktif. Canary internal berizin
+  diterima, event `sent` serta `delivered` bersignature diproses dan dicatat,
+  request tanpa signature ditolak `401`, health `200`, service aktif, dan tidak
+  ada warning queue pada window verifikasi. Coverage code tetap mencakup email
+  terenkripsi, confirmation setelah pembayaran otoritatif, reminder H-1/H-3
+  tenant-timezone, outbox/retry/idempotency, stale cancellation, dedupe, dan
+  out-of-order protection. Seluruh tenant toggle tetap default-off sehingga
+  tidak ada customer automation massal. Status `CONFIRMED /
+  PRODUCTION_DEPLOYED / EMAIL_PROVIDER_ACTIVATED / WEBHOOK_ACTIVATED`;
+  tenant-linked outbox/reminder UAT dan pilot masih residual,
   `BUSINESS_READY=false`.
 
 - Guard observability return pembayaran S312 exact source

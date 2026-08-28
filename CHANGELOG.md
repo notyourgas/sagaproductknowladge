@@ -1,5 +1,23 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-28 - SagaBook Resend runtime activation sync
+
+- Ringkasan: menyinkronkan aktivasi restricted Resend sending credential dan
+  signed webhook production tanpa mengaktifkan toggle customer per tenant.
+- Provenance: feature source
+  `4aae315ce71933bf2d283a690fb060a95a29aa49`, active source/release
+  `68b978e533d2fcc23dd7be23ddf23b2328f51a6b` /
+  `20260828063524-68b978e`, rollback `20260828062330-4aae315`.
+- Evidence: canary internal diterima; signed `sent` dan `delivered` event
+  tercatat, unsigned request ditolak `401`, health `200`, queue/PHP aktif,
+  warning queue nol, dan seluruh tenant toggle tetap opt-in mati.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED / EMAIL_PROVIDER_ACTIVATED /
+  WEBHOOK_ACTIVATED`; tenant-linked UAT, pilot, dan `BUSINESS_READY=false`.
+- Production berubah: ya, hanya konfigurasi provider/webhook. Tidak ada secret,
+  PII, raw callback, customer booking, atau tenant identifier dalam knowledge.
+- Dokumen terdampak: Product, Dossier, feature ledger/changelog SagaBook,
+  portfolio, master knowledge, decisions, root changelog, dan sync status.
+
 ## 2026-08-28 - SagaView S333 current Changelog production sync
 
 - Ringkasan: menyinkronkan registry Changelog Owner dari S262 / 22 Agustus

@@ -1,23 +1,28 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 28 Agustus 2026 13:45 WIB
+Evidence cut-off: 28 Agustus 2026 16:32 WIB
 
 Resilient Resend customer email exact source
 `4aae315ce71933bf2d283a690fb060a95a29aa49` telah `CONFIRMED / PUSHED /
 QA_VALIDATED / SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
-PRODUCTION_DEPLOYED / CODE_RELEASE_ACTIVE / EMAIL_RUNTIME_DISABLED` pada
-immutable release `20260828062330-4aae315`, rollback
-`20260828054737-88b8ea9`. Coverage UI -> API -> backend -> encrypted booking
+PRODUCTION_DEPLOYED / EMAIL_PROVIDER_ACTIVATED / WEBHOOK_ACTIVATED`, aktif
+kumulatif pada exact production source
+`68b978e533d2fcc23dd7be23ddf23b2328f51a6b`, immutable release
+`20260828063524-68b978e`, rollback `20260828062330-4aae315`. Coverage UI ->
+API -> backend -> encrypted booking
 email -> transactional outbox -> provider response/webhook mencakup payment
 confirmation exactly-once, reminder H-1/H-3 tenant-timezone, stale/reschedule
 cancellation, retry terbatas, signature raw-body, payload/rate limit, dedupe,
 out-of-order protection, dan setting Owner default-off. Full PHP 1.207/1.207
 (13.613 assertion), focused 7/7 (37), typecheck/build, dependency audit nol,
 fresh encrypted backup `20260828T062110Z`, disposable restore, migration,
-manifest, rollback, queue/nginx, serta public/security smoke 3/3 lulus. Runtime
-email masih disabled dan provider secret belum dipasang; tidak ada live send
-atau authenticated UAT, sehingga feature activation dan
-`BUSINESS_READY=false`.
+manifest, rollback, queue/nginx, serta public/security smoke 3/3 lulus.
+Restricted sending credential dan signing secret dipasang melalui secret
+store. Canary internal diterima; signed `sent` dan `delivered` event tercatat,
+unsigned request gagal tertutup `401`, health `200`, queue/PHP aktif, dan
+warning queue nol pada window verifikasi. Seluruh tenant toggle masih opt-in
+mati. Provider/webhook activation lulus; tenant-linked confirmation/reminder,
+authenticated UAT, pilot, dan `BUSINESS_READY` tetap belum.
 
 Salin template WhatsApp Booking Detail S313 exact source
 `68b978e533d2fcc23dd7be23ddf23b2328f51a6b` telah `CONFIRMED / PUSHED /

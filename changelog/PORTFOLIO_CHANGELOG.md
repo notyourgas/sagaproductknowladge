@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-28 - SagaBook Resend provider dan webhook production activation
+
+- Runtime Resend SagaBook kini memakai restricted sending credential dan
+  signed webhook secret dari secret store pada active source/release
+  `68b978e533d2fcc23dd7be23ddf23b2328f51a6b` /
+  `20260828063524-68b978e`; rollback `20260828062330-4aae315` tersedia.
+- Canary internal diterima dan signed event `sent` serta `delivered` tercatat
+  di database. Unsigned request ditolak `401`, public health `200`, queue/PHP
+  aktif, dan tidak ada warning queue pada window verifikasi.
+- Seluruh tenant tetap opt-in mati. Provider/webhook berstatus
+  `PRODUCTION_ACTIVATED`, tetapi tenant-linked confirmation/reminder, pilot,
+  dan `BUSINESS_READY` belum selesai. Operational WhatsApp tetap tersuspensi.
+
 ## 2026-08-28 - SagaView S333 current Changelog production
 
 - Changelog Owner kini menunjuk S331 / 28 Agustus, menggantikan S262 /

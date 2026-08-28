@@ -12,12 +12,38 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-28T14:17:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-28T16:32:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
-| Informasi terakhir disinkronkan | SagaView S333 current Changelog production activation. |
-| Status sinkronisasi | Source `80635694` aktif pada release `20260828071047-8063569`; artifact dua disk, backup/restore, service, dan lima smoke lulus. |
+| Informasi terakhir disinkronkan | SagaBook Resend provider dan signed webhook production activation. |
+| Status sinkronisasi | Active source `68b978e5` / release `20260828063524-68b978e`; provider/webhook aktif, seluruh tenant tetap opt-in mati. |
+
+## SagaBook Resend provider dan signed webhook production activation
+
+- Feature source `4aae315ce71933bf2d283a690fb060a95a29aa49` aktif kumulatif
+  pada exact production source `68b978e533d2fcc23dd7be23ddf23b2328f51a6b`,
+  immutable release `20260828063524-68b978e`, rollback
+  `20260828062330-4aae315`.
+- Restricted sending credential dan signing secret dipasang melalui secret
+  store. Canary internal diterima; signed `sent` dan `delivered` event tercatat
+  ke database. Unsigned request ditolak `401`, health `200`, queue/PHP aktif,
+  dan warning queue nol pada window verifikasi.
+- Seluruh tenant toggle tetap opt-in mati. Status provider/webhook
+  `PRODUCTION_ACTIVATED`; tenant-linked outbox/reminder UAT, pilot, dan
+  `BUSINESS_READY=false` masih residual.
+
+## File yang berubah pada sinkronisasi Resend runtime SagaBook
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `DECISIONS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaView S333 current Changelog production
 
