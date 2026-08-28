@@ -1,8 +1,19 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Evidence cut-off: 28 Agustus 2026 16:45 WIB
+Evidence cut-off: 28 Agustus 2026 17:10 WIB
 Owner: Andreas / SagaDev
 Visibility: public-safe
+
+SagaView S335 membuktikan release rehearsal exact candidate S334 tanpa deploy.
+Verified encrypted backup `20260828T071331Z` dipulihkan ke database disposable
+149 tabel; candidate `a5986e16b6b66f52ad27b8fba1b0b2fc0f2b1511` dan rollback
+`80635694d7db1df45ade256ecd7e67cc34fe76c3` masing-masing lulus gate 6/6.
+Rehearsal storage VPS sementara juga lulus shared-storage symlink, sentinel,
+checksum, pointer production unchanged, dan cleanup. Tidak ada payment, QRIS,
+plaintext backup, foto/path customer, atau mutasi production. Status tetap
+`STAGING_READY / RELEASE_ARTIFACT_READY / IMPLEMENTED_NOT_DEPLOYED /
+PRODUCTION_UNCHANGED`; fresh pre-deploy backup/restore, approval eksplisit,
+authenticated UAT, activation, dan `BUSINESS_READY` masih pending.
 
 SagaView S334 exact source
 `a5986e16b6b66f52ad27b8fba1b0b2fc0f2b1511` sekarang mempunyai immutable

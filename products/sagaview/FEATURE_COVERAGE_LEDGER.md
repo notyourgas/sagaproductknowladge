@@ -1,6 +1,23 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 28 Agustus 2026 16:45 WIB
+Evidence cut-off: 28 Agustus 2026 17:10 WIB
+
+S335 S334 release rehearsal: verified encrypted backup
+`20260828T071331Z` dipulihkan ke database disposable 149 tabel. Exact candidate
+`a5986e16b6b66f52ad27b8fba1b0b2fc0f2b1511` dan rollback
+`80635694d7db1df45ade256ecd7e67cc34fe76c3` lulus gate 6/6, schema 7/7,
+frame-import 2/2, dan control schema 6/6. Dua row tenant sintetis hanya hidup
+di database sementara; payment intent/QRIS tidak dibuat, plaintext tidak
+ditahan, dan production database tidak dimutasi.
+
+Archive exact S334 lulus rehearsal storage di direktori sementara VPS:
+shared-storage symlink, sentinel round-trip, archive checksum, dan pointer
+production unchanged semuanya lulus; direktori sementara bersih. Status tetap
+`STAGING_READY / RELEASE_ARTIFACT_READY / IMPLEMENTED_NOT_DEPLOYED /
+PRODUCTION_UNCHANGED` dengan release decision `HOLD`. Gap berikutnya: fresh
+encrypted backup dan disposable restore baru tepat sebelum deploy, approval
+eksplisit Andreas, lalu atomic deploy/smoke/rollback verification. Authenticated
+support UAT dan `BUSINESS_READY` tetap terpisah.
 
 S334 immutable artifact closure: release candidate
 `20260828093912-a5986e1` terikat ke exact pushed source

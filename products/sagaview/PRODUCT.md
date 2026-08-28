@@ -1,6 +1,22 @@
 # SagaView Product Knowledge
 
-Updated: 28 Agustus 2026 16:45 WIB
+Updated: 28 Agustus 2026 17:10 WIB
+
+Rehearsal S335 untuk candidate S334 telah lulus tanpa deploy. Encrypted backup
+terverifikasi `20260828T071331Z` dipulihkan ke database disposable berisi 149
+tabel, lalu exact candidate
+`a5986e16b6b66f52ad27b8fba1b0b2fc0f2b1511` dan rollback
+`80635694d7db1df45ade256ecd7e67cc34fe76c3` masing-masing lulus deploy gate
+6/6. Tenant sintetis hanya dibuat di database sementara; tidak ada payment,
+QRIS, plaintext backup tersisa, atau mutasi database production.
+
+Archive S334 juga lulus rehearsal struktur release di area sementara VPS:
+storage release diganti menjadi symlink shared-storage, sentinel round-trip dan
+checksum archive lulus, pointer production tidak berubah, dan seluruh direktori
+sementara dibersihkan. Status tetap `STAGING_READY / RELEASE_ARTIFACT_READY /
+IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; backup tersebut bukan fresh
+pre-deploy untuk run ini. Fresh backup/restore baru, approval eksplisit,
+authenticated UAT, activation, dan `BUSINESS_READY` masih pending.
 
 Immutable artifact S334 untuk exact source
 `a5986e16b6b66f52ad27b8fba1b0b2fc0f2b1511` sudah siap dengan release ID

@@ -1,5 +1,26 @@
 # SagaView Changelog
 
+## 2026-08-28 - S335 S334 disposable and storage rehearsal
+
+- Klasifikasi: `DEVOPS_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED /
+  STAGING_READY / RELEASE_ARTIFACT_READY / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED`; release decision `HOLD`.
+- Database rehearsal memulihkan verified encrypted backup
+  `20260828T071331Z` ke 149 tabel disposable. Candidate S334 dan rollback S333
+  masing-masing lulus deploy gate 6/6; schema 7/7 dan frame-import/control
+  lengkap tanpa migration baru.
+- Storage rehearsal memakai archive exact S334 pada direktori sementara VPS.
+  Shared-storage symlink, sentinel round-trip, checksum archive, preservasi
+  pointer production, dan cleanup seluruh direktori sementara lulus.
+- Data boundary: dua row tenant sintetis hanya dibuat di disposable database;
+  tidak ada payment intent, QRIS, plaintext backup tersisa, customer data baru,
+  upload foto/path lokal, atau mutasi database production.
+- Boundary: backup yang dipakai terverifikasi tetapi bukan fresh pre-deploy
+  untuk run ini. Fresh backup/restore, approval eksplisit, atomic deploy,
+  authenticated support UAT, activation, dan `BUSINESS_READY` masih pending.
+  Production tetap S333 `80635694d7db1df45ade256ecd7e67cc34fe76c3` /
+  `20260828071047-8063569`.
+
 ## 2026-08-28 - S334 immutable artifact ready
 
 - Klasifikasi: `CONFIRMED / PUSHED / DEVOPS_VALIDATED /

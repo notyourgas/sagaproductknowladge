@@ -12,12 +12,37 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-28T16:45:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-28T17:10:00+07:00 |
 | Branch aktif | `main` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | resolve dari `origin/main` sebelum commit sinkronisasi ini |
-| Informasi terakhir disinkronkan | SagaView S334 immutable artifact readiness. |
-| Status sinkronisasi | Candidate `20260828093912-a5986e1` artifact-ready pada dua disk sehat; belum dideploy, production tetap S333. |
+| Informasi terakhir disinkronkan | SagaView S335 S334 release rehearsal. |
+| Status sinkronisasi | Candidate `20260828093912-a5986e1` lulus disposable candidate/rollback dan storage rehearsal; belum dideploy, production tetap S333. |
+
+## SagaView S335 S334 release rehearsal
+
+- Verified encrypted backup `20260828T071331Z` dipulihkan ke 149 tabel
+  disposable. Exact candidate S334 dan rollback S333 masing-masing lulus gate
+  6/6; schema 7/7 dan frame-import/control lengkap.
+- Archive exact lulus shared-storage symlink, sentinel round-trip, checksum,
+  pointer production unchanged, serta cleanup remote sementara. Dua row tenant
+  sintetis hanya berada di disposable database; tidak ada payment, QRIS,
+  plaintext backup, atau mutasi production.
+- Status `STAGING_READY / RELEASE_ARTIFACT_READY /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; release decision `HOLD`.
+  Backup yang dipakai bukan fresh pre-deploy untuk run ini. Fresh backup/restore,
+  approval eksplisit, atomic deploy, authenticated support UAT, activation, dan
+  `BUSINESS_READY` masih pending.
+
+## File yang berubah pada sinkronisasi rehearsal SagaView S335
+
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaView S334 immutable artifact readiness
 

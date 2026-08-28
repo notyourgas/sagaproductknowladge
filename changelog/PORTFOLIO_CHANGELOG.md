@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-28 - SagaView S335 S334 release rehearsal
+
+- Candidate S334 dan rollback S333 lulus deploy gate 6/6 pada restore database
+  disposable 149 tabel; schema dan batas tenant sintetis tetap utuh tanpa
+  payment, QRIS, plaintext backup, atau mutasi production.
+- Archive exact S334 lulus rehearsal shared-storage, sentinel, checksum,
+  preservasi pointer production, dan cleanup direktori sementara di VPS.
+- Status tetap `STAGING_READY / RELEASE_ARTIFACT_READY /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`. Fresh pre-deploy backup dan
+  approval eksplisit masih wajib; authenticated UAT serta `BUSINESS_READY`
+  tetap terpisah.
+
 ## 2026-08-28 - SagaView S334 immutable artifact ready
 
 - Exact source `a5986e16b6b66f52ad27b8fba1b0b2fc0f2b1511` kini mempunyai

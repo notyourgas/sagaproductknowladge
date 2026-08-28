@@ -1,5 +1,23 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-28 - SagaView S335 S334 release rehearsal sync
+
+- Ringkasan: menyinkronkan database candidate/rollback rehearsal dan
+  shared-storage rehearsal untuk immutable artifact S334 tanpa deploy.
+- Provenance: candidate source
+  `a5986e16b6b66f52ad27b8fba1b0b2fc0f2b1511`, rollback source
+  `80635694d7db1df45ade256ecd7e67cc34fe76c3`, Studio
+  `7ae79ae45828f3876e3604bb569e0d3c7be3abfb`, dan backup terverifikasi
+  `20260828T071331Z`.
+- Evidence: restore disposable 149 tabel, candidate/rollback gate 6/6, schema
+  7/7, frame-import/control lengkap, storage symlink/sentinel/checksum, pointer
+  production unchanged, dan cleanup sementara lulus.
+- Klasifikasi: `DEVOPS_VALIDATED / SECURITY_VALIDATED / QA_VALIDATED /
+  STAGING_READY / RELEASE_ARTIFACT_READY / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED`; fresh pre-deploy backup dan approval tetap pending.
+- Dokumen terdampak: Product, feature ledger/changelog SagaView, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-08-28 - SagaView S334 immutable artifact readiness sync
 
 - Ringkasan: menyinkronkan immutable archive, SHA-256 manifest, complete git
