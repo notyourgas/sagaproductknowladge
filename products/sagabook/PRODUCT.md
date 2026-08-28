@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 29 Agustus 2026 05:15 WIB
-Evidence status: styled XLSX multi-sheet, closing manual-share, rekap sesi/keuangan harian, dan perbaikan Task Manager aktif pada exact cumulative source `9a382520ccbfe8d3a8ebea0d64e7dfffc5be9e09`, release `20260828220429-9a38252`; production-deployed dan production-activated, authenticated Owner/operator UAT belum karena credential bridge lokal tidak aktif, dan `BUSINESS_READY=false`
+Updated: 29 Agustus 2026 06:45 WIB
+Evidence status: booking salah catat dapat dibatalkan secara audit-preserving, styled XLSX multi-sheet, closing manual-share, rekap sesi/keuangan harian, dan perbaikan Task Manager aktif pada exact cumulative source `3ae80ddada59b3c3eb23932c42c9fc9a4de60a6c`, release `20260828233547-3ae80dd`; production-deployed dan production-activated, authenticated Owner/operator UAT belum karena credential bridge lokal tidak aktif, dan `BUSINESS_READY=false`
 
 ## Tujuan dokumen
 
@@ -15,6 +15,27 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
+
+- Pembatalan booking salah catat aktif pada exact cumulative source
+  `3ae80ddada59b3c3eb23932c42c9fc9a4de60a6c`, immutable release
+  `20260828233547-3ae80dd`, dengan rollback kompatibel
+  `20260828220429-9a38252`. Owner dan manager dapat menandai booking manual
+  yang salah sebagai batal dengan kategori serta catatan alasan wajib; record
+  booking, snapshot asal, aktor, dan dampak keuangan tetap disimpan sebagai
+  audit trail. Transaksi manual terkait dibalik melalui entri reversal,
+  booking dikeluarkan dari omzet/report/analitik paket, slot dilepas, dan
+  closing yang sudah ada direvisi menjadi perlu penyesuaian tanpa mengubah
+  hitungan kas fisik yang telah dicatat. Hard delete booking berbayar ditolak,
+  retry idempoten, perubahan versi lama gagal tertutup, dan booking dengan
+  pembayaran provider diarahkan ke alur refund. Exact-main lulus PHP
+  1.287/1.287 (14.458 assertion), MySQL 8.4 contract termasuk booking-void
+  4/4, TypeScript/build, browser desktop/mobile, dependency audit nol,
+  encrypted backup/disposable restore, verifier 23/23, report canary 32/32,
+  reconciliation score 100 tanpa finding, 0 migration pending, journal 0
+  error, serta public/security smoke 3/3. Status `CONFIRMED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`;
+  authenticated Owner/operator UAT belum karena credential bridge lokal tidak
+  aktif.
 
 - Export XLSX rapi aktif pada exact cumulative source
   `9a382520ccbfe8d3a8ebea0d64e7dfffc5be9e09`, immutable release

@@ -2,6 +2,23 @@
 
 Evidence cut-off: 29 Agustus 2026
 
+Booking-void financial integrity telah `CONFIRMED / PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED` pada exact cumulative source
+`3ae80ddada59b3c3eb23932c42c9fc9a4de60a6c`, immutable release
+`20260828233547-3ae80dd`, rollback `20260828220429-9a38252`. Coverage
+booking detail UI -> capability owner/manager -> idempotent API -> transactional
+void service -> booking/finance/closing/report/package metrics membuktikan
+record salah catat tidak dihapus, alasan dan snapshot asal tersimpan, transaksi
+manual direversal, slot dilepas, serta omzet dan agregat server-authoritative
+dikoreksi. Guard menolak staff, stale version, payload retry berbeda, hard
+delete booking paid, serta booking provider/refunded yang wajib memakai alur
+refund. Gate final mencakup PHP 1.287/1.287 (14.458), MySQL 8.4 contract dengan
+booking-void 4/4, TypeScript/build, E2E desktop/mobile, changed-scope Pint,
+dependency audit nol, encrypted backup/disposable restore, verifier 23/23,
+report canary 32/32, reconciliation score 100/finding 0, migration pending 0,
+journal 0 error, serta public/security smoke 3/3. Authenticated Owner/operator
+UAT belum karena credential bridge lokal tidak aktif; `BUSINESS_READY=false`.
+
 Styled XLSX telah `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`
 pada exact cumulative source
 `9a382520ccbfe8d3a8ebea0d64e7dfffc5be9e09`, immutable release

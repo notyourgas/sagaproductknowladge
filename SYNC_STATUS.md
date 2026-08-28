@@ -12,12 +12,41 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-29 05:15 WIB |
-| Branch aktif | `codex/knowledge-s345-sagabook-xlsx-production` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-29 06:45 WIB |
+| Branch aktif | `codex/s348-sagaproductknowledge-booking-void` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `dd5b9554fe54c51b737c8bfcd1f2a0c79b134690` |
-| Informasi terakhir disinkronkan | SagaBook styled XLSX production activation. |
-| Status sinkronisasi | Release `20260828220429-9a38252`; `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `5b4a25ded52d87466eb36b709e177b59bc61912c` |
+| Informasi terakhir disinkronkan | SagaBook booking-void financial integrity production activation. |
+| Status sinkronisasi | Release `20260828233547-3ae80dd`; `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`. |
+
+## SagaBook booking-void financial integrity production activation
+
+- Exact cumulative source `3ae80ddada59b3c3eb23932c42c9fc9a4de60a6c`
+  aktif pada release `20260828233547-3ae80dd`; rollback
+  `20260828220429-9a38252` tersedia dan kompatibel.
+- Owner/manager dapat membatalkan booking manual salah catat tanpa hard delete.
+  Ledger void, snapshot asal, reversal transaksi, revisi closing, pelepasan
+  slot, serta pengecualian omzet/report/analitik paket aktif secara
+  transactional. Provider-paid/refunded booking tetap memakai refund.
+- PHP 1.287/1.287 (14.458), MySQL 8.4 booking-void 4/4,
+  TypeScript/build, browser desktop/mobile, dependency audit nol, encrypted
+  backup/disposable restore, verifier 23/23, canary 32/32, reconciliation
+  score 100/finding 0, migration pending 0, journal 0 error, dan
+  smoke/security 3/3 lulus.
+- Authenticated Owner/operator UAT belum karena bridge credential lokal tidak
+  aktif; pemeriksaan bridge tidak membaca credential atau memutasi production.
+  `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi SagaBook booking-void
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook styled XLSX production activation
 

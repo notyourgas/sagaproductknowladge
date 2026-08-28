@@ -1,5 +1,25 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-29 - SagaBook booking-void production activation sync
+
+- Ringkasan: mengaktifkan pembatalan booking manual salah catat yang menjaga
+  audit trail, membuat reversal transaksi, merevisi closing terkait, melepas
+  slot, dan mengecualikan booking dari omzet/report/analitik tanpa hard delete.
+- Provenance: exact cumulative source
+  `3ae80ddada59b3c3eb23932c42c9fc9a4de60a6c`, immutable release
+  `20260828233547-3ae80dd`, rollback `20260828220429-9a38252`.
+- Evidence: PHP 1.287/1.287 (14.458), MySQL 8.4 booking-void 4/4,
+  TypeScript/build, browser desktop/mobile, dependency audit nol, encrypted
+  backup/disposable restore, verifier 23/23, canary 32/32, reconciliation
+  score 100/finding 0, migration pending 0, journal 0 error, serta
+  smoke/security 3/3.
+- Klasifikasi: `CONFIRMED / PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / BUSINESS_READY=false`. Authenticated UAT belum karena
+  credential bridge lokal tidak aktif; pemeriksaan bridge tidak membaca
+  credential atau memutasi production.
+- Dokumen terdampak: Product, Dossier, feature ledger/changelog SagaBook,
+  portfolio, master knowledge, root changelog, dan sync status.
+
 ## 2026-08-29 - SagaBook styled XLSX production activation sync
 
 - Ringkasan: mengaktifkan workbook export multi-sheet yang rapi, typed,

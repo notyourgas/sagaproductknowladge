@@ -1,5 +1,22 @@
 # Portfolio Changelog
 
+## 2026-08-29 - SagaBook booking-void production activation
+
+- Exact cumulative source `3ae80ddada59b3c3eb23932c42c9fc9a4de60a6c`
+  aktif pada immutable release `20260828233547-3ae80dd`; rollback
+  `20260828220429-9a38252` tersedia dan kompatibel.
+- Owner/manager dapat membatalkan booking manual salah catat tanpa hard delete.
+  Audit trail, reversal transaksi, revisi closing, pelepasan slot, serta
+  pengecualian omzet/report/analitik paket ditangani secara transactional.
+- Provider-paid/refunded booking tetap diarahkan ke refund; idempotency,
+  optimistic locking, tenant/branch scope, dan reason wajib aktif.
+- Full test/build/MySQL/E2E/audit, encrypted backup/restore, verifier 23/23,
+  canary 32/32, reconciliation score 100, service/journal, dan
+  smoke/security 3/3 lulus. Status `PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / BUSINESS_READY=false`; authenticated UAT masih
+  tertahan oleh credential bridge lokal yang tidak aktif. Produk SagaDev lain
+  tidak berubah.
+
 ## 2026-08-29 - SagaBook styled XLSX production activation
 
 - Exact cumulative source `9a382520ccbfe8d3a8ebea0d64e7dfffc5be9e09`

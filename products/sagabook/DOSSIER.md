@@ -7,6 +7,25 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Booking-void financial integrity aktif pada exact cumulative source
+  `3ae80ddada59b3c3eb23932c42c9fc9a4de60a6c`, immutable release
+  `20260828233547-3ae80dd`; rollback `20260828220429-9a38252` kompatibel.
+  Owner/manager dapat membatalkan booking manual salah catat dengan alasan
+  terstruktur tanpa menghapus histori. Backend menyimpan ledger void dan
+  snapshot asal, membuat reversal untuk transaksi manual, mengecualikan
+  booking dari report/omzet/analitik paket, melepas slot, serta membuat revisi
+  closing bila hari terkait sudah ditutup. Booking provider-paid/refunded
+  tidak dapat memakai void dan tetap mengikuti alur refund; hard delete paid
+  booking ditolak. Idempotency receipt, optimistic lock, tenant/branch scope,
+  dan audit event mencegah retry ganda serta perubahan dari tab lama. Gate
+  exact-main: PHP 1.287/1.287 (14.458), MySQL 8.4 booking-void 4/4,
+  TypeScript/build, browser desktop/mobile, dependency audit nol, encrypted
+  backup/disposable restore, verifier 23/23, canary 32/32, reconciliation
+  score 100 tanpa finding, 0 migration pending, journal 0 error, dan
+  public/security smoke 3/3. Status `PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / BUSINESS_READY=false`; authenticated Owner/operator
+  UAT belum berjalan karena credential bridge lokal tidak aktif.
+
 - Styled XLSX aktif pada exact cumulative source
   `9a382520ccbfe8d3a8ebea0d64e7dfffc5be9e09`, immutable release
   `20260828220429-9a38252`; rollback `20260828210027-91545d1` kompatibel.
