@@ -1,5 +1,28 @@
 # SagaView Changelog
 
+## 2026-08-29 - S343 cumulative Studio production activation
+
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED / DEVOPS_VALIDATED /
+  SECURITY_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+  `BUSINESS_READY=false`.
+- Before: hardening editor S338-S341 sudah tervalidasi lokal, tetapi Studio
+  production masih memakai release `20260824170456-7ae79ae`.
+- After: exact source `47d68e7665dd03694ad45b90467ef44100245c6b`
+  aktif pada immutable release `20260828203620-47d68e7`; rollback langsung
+  tetap `20260824170456-7ae79ae`. Backend/Owner tidak berubah pada
+  `20260828111443-98f13a8` / exact `98f13a8d50f4ae0b97d787f1ab5e0896296007ec`.
+- Runtime impact: reset transform, checkpoint draft lokal, recovery
+  mismatch/corruption/quota, dan galeri keyboard/virtual 50/200/500 kini aktif.
+  S342-S343 sendiri hanya memperkeras UAT storage probe dan isolasi test,
+  tanpa perubahan runtime/API/database.
+- Evidence: unit 258/258, 171 browser test serial dengan 168 pass/3 skip
+  terkontrol, full check/build/budget/audit, receipt UAT 14 gate tanpa blocker,
+  fresh encrypted backup `20260828T203350Z` dan restore 152/174/149 tabel,
+  atomic switch, checksum artifact dua salinan, service/journal/header,
+  rollback, backend health/provenance, dan public smoke lulus.
+- Privacy: foto, nama/path lokal, blob, output, tenant/device identifier, dan
+  credential tidak masuk cloud, artifact, atau knowledge publik.
+
 ## 2026-08-28 - S338-S341 editor resilience dan gallery accessibility
 
 - Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /

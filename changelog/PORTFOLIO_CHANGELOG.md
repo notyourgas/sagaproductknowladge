@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-29 - SagaView S343 cumulative Studio production activation
+
+- Exact Studio `47d68e7665dd03694ad45b90467ef44100245c6b` aktif pada
+  immutable release `20260828203620-47d68e7`; rollback
+  `20260824170456-7ae79ae` tersedia. Backend/Owner tetap exact `98f13a8d`.
+- Hardening reset editor, recovery draft lokal, serta galeri keyboard/virtual
+  50/200/500 dari S338-S341 kini aktif tanpa mengubah kontrak no-upload.
+- Unit 258/258, browser serial 168 pass/3 skip dari 171, full check/build/audit,
+  UAT 14 gate, encrypted backup/restore, artifact dua salinan, atomic switch,
+  service/journal/header, public smoke, provenance, dan rollback lulus.
+- Status `PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+  `BUSINESS_READY=false` menunggu penilaian operasional terpisah.
+
 ## 2026-08-29 - COYABAG controlled UAT cart hotfix
 
 - Exact source `e97da17473e2f232de183954a5c292953548c34f` aktif pada immutable

@@ -1,6 +1,33 @@
 # SagaView Product Knowledge
 
-Updated: 28 Agustus 2026 21:24 WIB
+Updated: 29 Agustus 2026 03:43 WIB
+
+SagaView Studio cumulative S343 exact source
+`47d68e7665dd03694ad45b90467ef44100245c6b` sudah `PUSHED /
+LOCAL_VALIDATED / DEVOPS_VALIDATED / SECURITY_VALIDATED /
+PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; `BUSINESS_READY=false`. Immutable
+release `20260828203620-47d68e7` aktif dengan rollback langsung
+`20260824170456-7ae79ae`. Backend/Owner tetap exact
+`98f13a8d50f4ae0b97d787f1ab5e0896296007ec` pada release
+`20260828111443-98f13a8`.
+
+Release ini mengaktifkan hardening editor S338-S341: reset transform yang utuh,
+checkpoint draft lokal current/previous dengan checksum dan recovery
+fail-closed, serta galeri terfilter dengan fokus keyboard dan virtual scroll
+50/200/500 foto. S342-S343 hanya memperkeras harness UAT/storage dan isolasi
+test viewport; tidak mengubah kode runtime, API, database, atau kontrak
+local-first/no-upload.
+
+Windows PowerShell dan pwsh smoke lulus, unit 258/258, full browser serial 168
+pass dengan 3 skip terkontrol dari 171 test, format/lint/typecheck/build/bundle
+budget, dan npm audit nol vulnerability lulus. Receipt UAT exact mempunyai 14
+gate tanpa blocker; bukti fisik S342 dibawa transparan karena delta S343 hanya
+test, lalu exact runtime provenance diverifikasi ulang. Fresh encrypted backup
+`20260828T203350Z` lulus checksum, offsite round-trip, dan restore disposable
+152/174/149 tabel tanpa plaintext tersisa. Atomic switch, source backup lokal
+dan VPS, checksum archive/bundle, service, journal, security headers, rollback,
+API health, dan enam public smoke lulus. Kesiapan bisnis tetap memerlukan
+penilaian operasional terpisah.
 
 SagaView Studio S338-S341 exact pushed source
 `495dda492ea68f5e943a69aa5e6a1f4dbd474af2` berstatus `PUSHED /

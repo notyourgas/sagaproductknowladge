@@ -1,6 +1,21 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 28 Agustus 2026 21:24 WIB
+Evidence cut-off: 29 Agustus 2026 03:43 WIB
+
+S343 cumulative Studio production activation: exact pushed source
+`47d68e7665dd03694ad45b90467ef44100245c6b` aktif pada immutable release
+`20260828203620-47d68e7`, dengan rollback `20260824170456-7ae79ae`.
+Backend/Owner tetap exact `98f13a8d50f4ae0b97d787f1ab5e0896296007ec`
+pada release `20260828111443-98f13a8`.
+
+Ledger lulus: reset editor menyeluruh, checkpoint draft lokal dan recovery
+fail-closed, navigasi/fokus galeri terfilter, virtualisasi 50/200/500, no-upload,
+Windows runtime, UAT 14 gate, backup/checksum/offsite/disposable restore,
+artifact dua salinan, atomic switch, provenance, service/journal/header,
+public smoke, dan rollback target. Unit 258/258 serta browser serial 168 pass
+dengan 3 skip terkontrol dari 171 test lulus. Status `PUSHED /
+PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; gap berikutnya adalah penilaian
+operasional terpisah sebelum `BUSINESS_READY=true`.
 
 S338-S341 editor resilience dan gallery accessibility: exact pushed Studio
 source `495dda492ea68f5e943a69aa5e6a1f4dbd474af2` menutup residual reset,

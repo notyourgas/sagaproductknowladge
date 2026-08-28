@@ -12,12 +12,24 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-29 |
-| Branch aktif | `codex/coyabag-uat-20260829` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-29 03:43 WIB |
+| Branch aktif | `codex/s343-sagaview-production-knowledge` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `a10eaeb` |
-| Informasi terakhir disinkronkan | COYABAG controlled UAT cart recovery hotfix. |
-| Status sinkronisasi | Release `20260829-e97da17`; `PRODUCTION_DEPLOYED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `c5a9b42` |
+| Informasi terakhir disinkronkan | SagaView S343 cumulative Studio production activation. |
+| Status sinkronisasi | Release `20260828203620-47d68e7`; `PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`. |
+
+## SagaView S343 production activation
+
+- Exact Studio `47d68e7665dd03694ad45b90467ef44100245c6b` aktif pada release
+  `20260828203620-47d68e7`; rollback `20260824170456-7ae79ae` tersedia.
+- Backend/Owner tetap exact `98f13a8d50f4ae0b97d787f1ab5e0896296007ec`
+  pada release `20260828111443-98f13a8`.
+- Unit 258/258, browser serial 168 pass/3 skip dari 171, full check/build/audit,
+  UAT 14 gate, fresh encrypted backup/restore, artifact dua salinan, atomic
+  switch, provenance, service/journal/header, public smoke, dan rollback lulus.
+- Status `PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;
+  `BUSINESS_READY=false` menunggu penilaian operasional terpisah.
 
 ## SagaBook Wave B package analytics
 
