@@ -2,6 +2,22 @@
 
 Evidence cut-off: 29 Agustus 2026
 
+Acceptance tamper matrix S357 telah `CONFIRMED / MERGED /
+TAMPER_MATRIX_VALIDATED / RELEASE_ARTIFACT_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED` pada feature source
+`2e87557c5f6d1d26ce5089fa8d9daab18c0cf39c` dan exact main
+`00b718f4505746e8ee520d18acf5342bb4e1d7ad` melalui PR #74. Fixture
+sintetis/disposable membuktikan satu baseline valid dan enam penolakan
+fail-closed: manifest traversal, checksum mismatch, metadata deployed, file
+`.env` di archive, bundle HEAD salah, dan rollback non-ancestor. Matrix 7/7,
+cleanup 7/7, contract 2/2 (52 assertion), full PHP 1.301/1.301 (14.601),
+PowerShell parse, TypeScript/build/Pint, serta npm/Composer/OSV audit nol lulus.
+Artifact exact-main dua disk juga berhasil dipulihkan dari mirror; bundle
+SHA-256 `c734e152...65562a` dan archive `1752a44d...7aeb9c`. GitHub job tidak
+memulai step karena billing/spending limit; evidence lokal ekuivalen tersedia.
+Production tetap source `b2790d64232b24222c3bc383c3b445d760786f2d` /
+release `20260829062031-b2790d6`; release baru belum diotorisasi.
+
 Verifier pemulihan artifact S356 telah `CONFIRMED / MERGED /
 RELEASE_ARTIFACT_VALIDATED / IMPLEMENTED_NOT_DEPLOYED` pada feature source
 `c41c0e5078ac646d2a035bffcbb0c69780f8b9ba` dan exact main

@@ -1,5 +1,21 @@
 # SagaBook Changelog
 
+## 2026-08-29 - Acceptance tamper matrix artifact release S357
+
+- Harness sintetis/disposable menguji satu artifact valid dan enam manipulasi:
+  manifest traversal, checksum mismatch, metadata deployed, archive `.env`,
+  bundle HEAD salah, serta rollback non-ancestor.
+- Seluruh manipulasi ditolak fail-closed dan seluruh restore root dibersihkan;
+  network, customer data, credential, database, dan production tidak dipakai.
+- Feature source `2e87557c5f6d1d26ce5089fa8d9daab18c0cf39c` merge melalui
+  PR #74 ke exact main `00b718f4505746e8ee520d18acf5342bb4e1d7ad`.
+- Matrix 7/7, contract 2/2 (52 assertion), full PHP 1.301/1.301 (14.601),
+  PowerShell parse, TypeScript/build/Pint, dependency audit nol, dan restore
+  artifact exact-main dua disk lulus.
+- Status `CONFIRMED / MERGED / TAMPER_MATRIX_VALIDATED /
+  RELEASE_ARTIFACT_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Production tetap
+  release `20260829062031-b2790d6`; deployment belum diotorisasi.
+
 ## 2026-08-29 - Verifier pemulihan artifact release S356
 
 - Release artifact kini memiliki verifier reusable yang menahan proses bila
