@@ -1,6 +1,21 @@
 # SagaView Product Knowledge
 
-Updated: 29 Agustus 2026 20:10 WIB
+Updated: 29 Agustus 2026 21:08 WIB
+
+SagaView S349 exact source
+`78624c9263994a642de317c2d177a1d7d76aba7c` sudah `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Reviewer evidence kini menolak
+NTFS hard link pada evidence, preflight, dan checklist sebelum read/parse/hash.
+Ini melengkapi guard S348 karena hard link tidak mempunyai atribut reparse
+point, tetapi tetap dapat membuat file dalam root berbagi isi dengan file luar.
+
+Regression awal membuktikan scanner S348 menerima hard-linked evidence dari
+luar root. Setelah perbaikan, evidence ditahan per gate serta preflight dan
+checklist dihentikan sebelum parsing. Focused S344-S349 21/21 dan full 279/279,
+parser PowerShell/pwsh, format/lint/typecheck, client+SSR build, bundle 312,7
+KiB dari 450 KiB, npm audit nol, diff check, serta remote exact lulus.
+Production tidak berubah; authenticated UAT, visual review, dan S344 Finalize
+masih wajib sehingga `BUSINESS_READY=false`.
 
 SagaView S348 exact source
 `692912fb00adb0dd1df1e67c31a6b3b4ed248842` sudah `PUSHED /

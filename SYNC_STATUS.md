@@ -12,12 +12,32 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-29 20:25 WIB |
-| Branch aktif | `codex/coyabag-payment-reconcile-20260829` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-29 21:08 WIB |
+| Branch aktif | `codex/s349-sagaview-knowledge` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `b536a5cc95b624eac06f3d23e37c1a1dec97af66` |
-| Informasi terakhir disinkronkan | COYABAG Admin order saved views production release. |
-| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED / NOT_PRODUCTION_ACTIVATED`; readiness 41/42 dan `BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `fc4d184440cc69cbcbdd03c3c043f638492edf13` |
+| Informasi terakhir disinkronkan | SagaView S349 hard-link evidence guard. |
+| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan `BUSINESS_READY=false`. |
+
+## SagaView S349 hard-link evidence guard
+
+- Exact source `78624c9263994a642de317c2d177a1d7d76aba7c` sudah push.
+- NTFS hard link pada evidence, preflight, dan checklist ditolak sebelum
+  read/parse/hash, melengkapi guard reparse point S348.
+- Regression merah membuktikan scanner lama menerima file luar root melalui
+  hard link; focused 21/21 dan full 279/279 kini hijau.
+- Production tidak berubah; authenticated UAT, visual review, dan S344
+  Finalize tetap pending sehingga `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi SagaView S349
+
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG Admin order saved views
 

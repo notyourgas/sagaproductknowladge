@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-29 - SagaView S349 hard-link evidence guard sync
+
+- Ringkasan: menolak NTFS hard link pada evidence, preflight, dan checklist
+  authenticated UAT sebelum file dibaca, di-parse, atau di-hash.
+- Provenance: exact pushed source
+  `78624c9263994a642de317c2d177a1d7d76aba7c`; production tetap Studio
+  `20260828203620-47d68e7` dan backend `20260828111443-98f13a8`.
+- Evidence: regression merah membuktikan scanner lama menerima hard link ke
+  file luar root; focused 21/21, full 279/279, PowerShell/pwsh, client+SSR
+  build, bundle budget, npm audit nol, diff check, dan remote exact lulus.
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan `BUSINESS_READY=false`.
+- Dokumen terdampak: Product, feature ledger/changelog SagaView, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-08-29 - COYABAG Admin order saved views sync
 
 - Ringkasan: menyinkronkan tampilan filter Pesanan per akun/perangkat dengan

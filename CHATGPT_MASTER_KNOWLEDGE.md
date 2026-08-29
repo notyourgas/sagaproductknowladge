@@ -1,5 +1,16 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+SagaView S349 exact pushed source
+`78624c9263994a642de317c2d177a1d7d76aba7c` berstatus `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Reviewer evidence authenticated
+UAT kini menolak NTFS hard link pada evidence, preflight, dan checklist sebelum
+read/parse/hash. Hard link tidak ditandai sebagai reparse point, tetapi dapat
+membuat nama di dalam evidence root berbagi isi file dari luar root. Regression
+lama menerima kondisi tersebut; focused 21/21, full 279/279,
+PowerShell/pwsh, check/build/budget/audit kini lulus. Production tidak berubah;
+authenticated UAT, visual review, dan S344 Finalize tetap pending sehingga
+`BUSINESS_READY=false`.
+
 SagaBook S357 exact main `00b718f4505746e8ee520d18acf5342bb4e1d7ad`
 berstatus `MERGED / TAMPER_MATRIX_VALIDATED /
 RELEASE_ARTIFACT_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Matrix sintetis

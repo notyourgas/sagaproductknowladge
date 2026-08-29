@@ -1,5 +1,24 @@
 # SagaView Changelog
 
+## 2026-08-29 - S349 NTFS hard-link evidence guard
+
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan
+  `BUSINESS_READY=false`.
+- Before: guard S348 menolak reparse point, tetapi hard link NTFS tidak membawa
+  atribut tersebut dan file luar root masih dapat diterima melalui alias lokal.
+- After: exact source `78624c9263994a642de317c2d177a1d7d76aba7c`
+  menolak hard link pada evidence per gate serta menghentikan preflight dan
+  checklist hard-linked sebelum read/parse/hash.
+- Evidence: regression lama menerima hard-linked evidence lalu hijau setelah
+  perbaikan; focused S344-S349 21/21, full 279/279, parser PowerShell/pwsh,
+  format/lint/typecheck, client+SSR build, bundle 312,7 KiB dari 450 KiB,
+  npm audit nol, diff check, dan remote exact.
+- Boundary: pemeriksaan tetap offline; tidak ada credential, data customer,
+  API/database, deploy, atau perubahan production.
+- Next gate: authenticated UAT 12 gate dengan evidence sintetis tersanitasi
+  pada file biasa, visual review, lalu S344 Finalize.
+
 ## 2026-08-29 - S348 evidence path containment
 
 - Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /

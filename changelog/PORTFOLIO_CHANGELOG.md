@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-29 - SagaView S349 hard-link evidence guard
+
+- Exact pushed source `78624c9263994a642de317c2d177a1d7d76aba7c`
+  menolak NTFS hard link pada evidence, preflight, dan checklist sebelum file
+  dibaca, di-parse, atau di-hash.
+- Regression membuktikan scanner lama menerima file luar root melalui hard
+  link; focused 21/21 dan full 279/279 kini lulus.
+- PowerShell/pwsh, build client+SSR, bundle budget, dan dependency audit lulus.
+  Production tidak berubah; authenticated UAT/visual review masih pending dan
+  `BUSINESS_READY=false`.
+
 ## 2026-08-29 - COYABAG Admin order saved views
 
 - Exact source `9001d6af32a93b48d97d8ff1e1d3f90afb7a7567` aktif pada
