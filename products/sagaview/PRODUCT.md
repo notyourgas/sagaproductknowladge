@@ -1,6 +1,21 @@
 # SagaView Product Knowledge
 
-Updated: 29 Agustus 2026 23:16 WIB
+Updated: 30 Agustus 2026 00:13 WIB
+
+SagaView S351 exact source
+`f204c109129a238dc5a7f4aa3f7ae665b2476306` sudah `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Reviewer authenticated-UAT kini
+memakai satu snapshot byte terkunci untuk parse control JSON, privacy scan
+teks/binary, ukuran, dan SHA-256. S344 Finalize juga membangun indeks evidence
+dari satu snapshot per file, sehingga isi yang diperiksa tidak dapat berbeda
+dari isi yang dicatat pada receipt akibat perubahan serentak.
+
+Contract regression awal 2/2 gagal lalu hijau; focused 26/26 dan full 284/284,
+parser Windows PowerShell/pwsh, format/lint/typecheck, client+SSR build, bundle
+312,7 KiB dari 450 KiB, npm audit nol, diff check, worktree bersih, serta
+remote exact lulus. Perubahan hanya pada harness, test, dan runbook; production
+tidak berubah. Authenticated UAT 12 gate serta visual review tetap wajib,
+sehingga `BUSINESS_READY=false`.
 
 SagaView S350 exact source
 `3b01db857c28989575960c7e9c29055660403f0c` sudah `PUSHED /

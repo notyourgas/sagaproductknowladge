@@ -1,6 +1,22 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 29 Agustus 2026 23:16 WIB
+Evidence cut-off: 30 Agustus 2026 00:13 WIB
+
+S351 locked evidence snapshots: exact pushed source
+`f204c109129a238dc5a7f4aa3f7ae665b2476306` menutup race saat reviewer
+membaca, memindai, mengukur, dan meng-hash file melalui operasi terpisah.
+Preflight/checklist kini diparse dan di-hash dari satu snapshot byte terkunci;
+privacy scan teks/binary, ukuran, dan SHA-256 evidence memakai snapshot yang
+sama. S344 Finalize membangun ulang indeks dengan pola identik.
+
+Ledger lulus: contract regression merah 2/2 lalu hijau; focused S344-S351
+26/26, full 63 file/284 test, parser Windows PowerShell/pwsh,
+format/lint/typecheck, client 2.129 modul + SSR 203 modul, bundle 312,7 KiB
+dari 450 KiB, npm audit nol, diff check, worktree bersih, serta remote exact.
+Boundary hanya tooling/test/runbook; tidak ada UI/API/database, data customer,
+atau mutasi production. Belum lulus: authenticated manual UAT 12 gate dan
+visual review. Status `PUSHED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; production tetap S343 dan `BUSINESS_READY=false`.
 
 S350 reviewer-to-Finalize binding: exact pushed source
 `3b01db857c28989575960c7e9c29055660403f0c` menutup bypass saat S344

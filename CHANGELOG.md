@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-30 - SagaView S351 locked evidence snapshots sync
+
+- Ringkasan: mengikat parse, privacy scan, ukuran, dan hash evidence pada satu
+  snapshot byte terkunci di reviewer serta S344 Finalize.
+- Provenance: exact pushed source
+  `f204c109129a238dc5a7f4aa3f7ae665b2476306`; production tetap Studio
+  `20260828203620-47d68e7` dan backend `20260828111443-98f13a8`.
+- Evidence: contract red 2/2 lalu green, focused 26/26, full 284/284,
+  PowerShell/pwsh, format/lint/typecheck, client+SSR build, bundle budget,
+  npm audit nol, diff check, worktree bersih, serta remote exact.
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan `BUSINESS_READY=false`.
+- Dokumen terdampak: Product, feature ledger/changelog SagaView, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-08-29 - SagaBook S358 release receipt binding sync
 
 - Ringkasan: mengikat receipt verifikasi lokal ke exact source/tree, rollback,

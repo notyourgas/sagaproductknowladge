@@ -1,5 +1,25 @@
 # SagaView Changelog
 
+## 2026-08-30 - S351 locked evidence snapshots
+
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan
+  `BUSINESS_READY=false`.
+- Before: reviewer melakukan parse/scan/size/hash melalui beberapa pembacaan,
+  sehingga perubahan file di sela operasi dapat membuat isi yang diperiksa
+  berbeda dari byte yang diikat ke receipt.
+- After: exact source `f204c109129a238dc5a7f4aa3f7ae665b2476306`
+  memakai satu snapshot byte terkunci untuk control JSON dan setiap evidence;
+  S344 Finalize membangun ulang indeks dengan snapshot yang sama.
+- Evidence: contract red 2/2 lalu green; focused S344-S351 26/26, full 284/284,
+  parser Windows PowerShell/pwsh, format/lint/typecheck, client+SSR build,
+  bundle 312,7 KiB dari 450 KiB, npm audit nol, diff check, worktree bersih,
+  serta remote exact.
+- Boundary: perubahan hanya pada harness/test/runbook; tidak ada UI/API/database,
+  data customer, deploy, atau perubahan production.
+- Next gate: authenticated manual UAT 12 gate dengan evidence sintetis
+  tersanitasi, visual review, reviewer S345, lalu S344 Finalize.
+
 ## 2026-08-29 - S350 reviewer-to-Finalize binding
 
 - Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /

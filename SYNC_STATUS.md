@@ -12,12 +12,34 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-30 00:08 WIB |
-| Branch aktif | `codex/s358-sagabook-receipt-knowledge` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-30 00:13 WIB |
+| Branch aktif | `codex/s351-sagaview-knowledge` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `4d5c0b883cc72ee079b805cc55debaf9e9505371` |
-| Informasi terakhir disinkronkan | SagaBook S358 immutable release receipt binding. |
-| Status sinkronisasi | `CONFIRMED / MERGED / RELEASE_RECEIPT_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap dan `BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `696ce7994e5583188cf624025a3e7d91ffc0b8e5` |
+| Informasi terakhir disinkronkan | SagaView S351 locked evidence snapshots. |
+| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan `BUSINESS_READY=false`. |
+
+## SagaView S351 locked evidence snapshots
+
+- Exact source `f204c109129a238dc5a7f4aa3f7ae665b2476306` sudah push.
+- Reviewer dan S344 Finalize memakai satu snapshot byte terkunci per file agar
+  parse, privacy scan, ukuran, serta SHA-256 tidak berasal dari pembacaan yang
+  berbeda.
+- Contract red 2/2 lalu green, focused 26/26, full 284/284, PowerShell/pwsh,
+  format/lint/typecheck, client+SSR build, bundle budget, npm audit nol, diff
+  check, worktree bersih, dan remote exact lulus.
+- Production tidak berubah; authenticated UAT 12 gate dan visual review masih
+  pending sehingga `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi SagaView S351
+
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook S358 immutable release receipt binding
 

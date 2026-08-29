@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-30 - SagaView S351 locked evidence snapshots
+
+- Exact pushed source `f204c109129a238dc5a7f4aa3f7ae665b2476306`
+  mengikat parse, privacy scan, ukuran, dan SHA-256 pada satu snapshot byte
+  terkunci untuk reviewer serta indeks ulang S344 Finalize.
+- Contract red 2/2 lalu green; focused 26/26 dan full 284/284, parser
+  PowerShell/pwsh, build client+SSR, bundle budget, dependency audit, diff
+  check, dan remote exact lulus.
+- Perubahan hanya pada harness/test/runbook. Production tidak berubah;
+  authenticated UAT dan visual review masih pending sehingga
+  `BUSINESS_READY=false`.
+
 ## 2026-08-29 - SagaBook S358 immutable release receipt binding
 
 - Feature source `0a2d9c6f103cacb2cdfb308105821e2e6fffb2c0`
