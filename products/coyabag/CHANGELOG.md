@@ -4,6 +4,25 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-29 - Admin inventory snapshot export deployed
+
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /
+  NOT_PRODUCTION_ACTIVATED`; exact source
+  `b073a484cb18181a4c4365412f37804b816756c2`, immutable release
+  `20260829-b073a48`, rollback `20260829-8c91ad2`.
+- Owner/Admin dapat mengekspor snapshot stok CSV berdasarkan antrean dan
+  pencarian aktif dari Inventory desktop maupun mobile. File memuat saldo
+  fisik, reserved, quarantine, available, threshold, status storefront, dan
+  revision inventory untuk rekonsiliasi operasional.
+- Endpoint dilindungi permission `inventory.manage` dan throttle 20/menit;
+  Finance ditolak, export dicatat ke audit log tanpa PII, dan seluruh cell
+  disanitasi terhadap CSV formula injection.
+- Full backend 482 total: 481 lulus, satu controlled skip, 4.510 assertion;
+  storefront 216/216, browser Inventory desktop/mobile termasuk download CSV,
+  build, dependency audit, backup, readiness 41/42, exact runtime asset, dan
+  public smoke lulus. Release sign-off tetap satu blocker dan batch ini tidak
+  mengubah aktivasi commerce/provider.
+
 ## 2026-08-29 - Admin product bulk actions deployed
 
 - Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /

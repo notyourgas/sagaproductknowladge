@@ -76,9 +76,9 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 - Launch UAT 15 langkah sudah lulus 15/15 dan sign-off diizinkan. Checkout
   publik tetap `PRODUCTION_READINESS_BLOCKED` hanya sampai release sign-off
   dicatat; deployment acceptance hotfix tidak membuat payment intent baru.
-- Release aktif `20260829-8c91ad2` dengan exact source
-  `8c91ad2bb1d7c6b6811c5871a04db889f6e62a6f` melayani production;
-  rollback langsung `20260829-9001d6a` dipertahankan. Fondasi dashboard admin
+- Release aktif `20260829-b073a48` dengan exact source
+  `b073a484cb18181a4c4365412f37804b816756c2` melayani production;
+  rollback langsung `20260829-8c91ad2` dipertahankan. Fondasi dashboard admin
   kini memakai Plus Jakarta Sans self-hosted, token warna/spacing/focus modern,
   hierarki panel dan kontrol yang lebih tenang, KPI mobile dua kolom, serta
   spacing wordmark/profile yang konsisten. Application shell menambahkan
@@ -98,6 +98,11 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
   responsive. Backend membatasi batch, memvalidasi revision dan publication
   context, menjalankan seluruh perubahan secara transaksional, serta mencatat
   audit; kegagalan satu item membatalkan seluruh batch tanpa perubahan parsial.
+  Admin Inventory kini dapat mengekspor snapshot stok CSV sesuai antrean dan
+  pencarian aktif. Export memuat saldo fisik, reserved, quarantine, available,
+  threshold, status storefront, dan revision inventory; dilindungi permission
+  `inventory.manage`, throttle, audit metadata tanpa PII, serta sanitasi formula
+  CSV. State unduh dan hasilnya aksesibel di desktop maupun mobile.
   Admin System Health tetap dapat
   dirender setelah import ikon Feather `Truck` yang hilang dipulihkan dan
   dikunci dengan regression test. Payment gateway sekarang

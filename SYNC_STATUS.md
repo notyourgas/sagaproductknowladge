@@ -12,25 +12,25 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-29 21:26 WIB |
+| Waktu pembaruan terakhir | 2026-08-29 22:20 WIB |
 | Branch aktif | `codex/coyabag-payment-reconcile-20260829` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `c07deef9609107b88a93fa3207dfa8fc733a9aa2` |
-| Informasi terakhir disinkronkan | COYABAG Admin product bulk actions. |
+| Baseline sebelum pembaruan | `8d008ac67118b7111ac00bb3a1357ea3984092be` |
+| Informasi terakhir disinkronkan | COYABAG Admin inventory snapshot export. |
 | Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED / NOT_PRODUCTION_ACTIVATED`; readiness 41/42 dan `BUSINESS_READY=false`. |
 
-## COYABAG Admin product bulk actions
+## COYABAG Admin inventory snapshot export
 
-- Exact source `8c91ad2bb1d7c6b6811c5871a04db889f6e62a6f` aktif pada release
-  `20260829-8c91ad2`; rollback `20260829-9001d6a` tersedia.
-- Owner/Admin dapat bulk publish draft siap publikasi atau bulk archive produk
-  dari katalog desktop/mobile. Batch dibatasi, permission-gated,
-  revision/context-aware, transaksional, dan ter-audit.
-- Backend 479 total, storefront 216/216, browser, build/audit, backup,
+- Exact source `b073a484cb18181a4c4365412f37804b816756c2` aktif pada release
+  `20260829-b073a48`; rollback `20260829-8c91ad2` tersedia.
+- Owner/Admin dapat mengekspor snapshot Inventory sesuai antrean/pencarian aktif
+  dari desktop/mobile. Export permission-gated, throttled, ter-audit tanpa PII,
+  dan disanitasi terhadap CSV formula injection.
+- Backend 482 total, storefront 216/216, browser dan download, build/audit, backup,
   readiness 41/42, exact runtime asset, dan public smoke lulus.
 - Release sign-off tetap satu blocker; provider dan commerce tidak diaktifkan.
 
-## File yang berubah pada sinkronisasi COYABAG Admin product bulk actions
+## File yang berubah pada sinkronisasi COYABAG Admin inventory snapshot export
 
 - `products/coyabag/PRODUCT.md`
 - `products/coyabag/CHANGELOG.md`

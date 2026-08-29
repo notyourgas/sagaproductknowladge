@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-29 - COYABAG Admin inventory snapshot export
+
+- Exact source `b073a484cb18181a4c4365412f37804b816756c2` aktif pada
+  immutable release `20260829-b073a48`; rollback `20260829-8c91ad2` tersedia.
+- Owner/Admin dapat mengunduh snapshot Inventory sesuai antrean/pencarian aktif
+  untuk rekonsiliasi stok. Export permission-gated, throttled, ter-audit tanpa
+  PII, dan aman dari CSV formula injection; Finance tetap read-only.
+- Backend 482 total, storefront 216/216, browser desktop/mobile dan download,
+  build/audit, backup, readiness 41/42, exact runtime asset, serta public smoke
+  lulus. Release sign-off tetap satu blocker; aktivasi commerce tidak berubah.
+
 ## 2026-08-29 - COYABAG Admin product bulk actions
 
 - Exact source `8c91ad2bb1d7c6b6811c5871a04db889f6e62a6f` aktif pada

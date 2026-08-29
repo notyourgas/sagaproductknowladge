@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-29 - COYABAG Admin inventory snapshot export sync
+
+- Ringkasan: menyinkronkan export snapshot stok CSV sesuai antrean dan
+  pencarian aktif dengan permission, throttle, audit, serta sanitasi formula.
+- Provenance: exact source `b073a484cb18181a4c4365412f37804b816756c2`,
+  immutable release `20260829-b073a48`, rollback `20260829-8c91ad2`.
+- Evidence: backend 482 total, storefront 216/216, browser Inventory
+  desktop/mobile dan download, build/audit, backup, readiness 41/42, exact
+  runtime asset, serta public smoke.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /
+  NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+- Dokumen terdampak: Product/changelog COYABAG, portfolio, master knowledge,
+  root changelog, dan sync status.
+
 ## 2026-08-29 - COYABAG Admin product bulk actions sync
 
 - Ringkasan: menyinkronkan bulk publish/archive di katalog Produk dengan

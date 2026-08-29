@@ -187,9 +187,9 @@ diterapkan karena seluruhnya belum dipetakan (`applied=false`). Status
 `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`;
 authenticated Owner/Staff UAT dan mapping legacy masih pending.
 
-COYABAG storefront/API/admin kini pada release `20260829-8c91ad2` dengan exact
-source `8c91ad2bb1d7c6b6811c5871a04db889f6e62a6f`; rollback
-`20260829-9001d6a` tersedia. Dashboard admin memakai Plus Jakarta Sans variable
+COYABAG storefront/API/admin kini pada release `20260829-b073a48` dengan exact
+source `b073a484cb18181a4c4365412f37804b816756c2`; rollback
+`20260829-8c91ad2` tersedia. Dashboard admin memakai Plus Jakarta Sans variable
 self-hosted serta design token modern untuk seluruh interface operasional,
 sementara wordmark mempertahankan font logo resmi. Application shell memiliki
 sidebar collapse persisten, breadcrumb, active route, pencarian desktop/mobile,
@@ -200,7 +200,9 @@ responsive di dalam panel. Admin Pesanan dapat menyimpan maksimal lima
 tampilan filter per akun/perangkat; kata pencarian pelanggan tidak pernah
 dipersistenkan dan preferensi gagal secara aman. Admin Produk mendukung bulk
 publish draft siap publikasi dan bulk archive secara responsive, permission-
-gated, transaksional, revision/context-aware, dan ter-audit. Admin System
+gated, transaksional, revision/context-aware, dan ter-audit. Admin Inventory
+dapat mengekspor snapshot CSV sesuai antrean/pencarian aktif dengan permission,
+throttle, audit tanpa PII, dan sanitasi formula. Admin System
 Health tetap terlindungi oleh regression test untuk import ikon Feather
 `Truck`.
 Saga Platform exact source
@@ -4195,11 +4197,13 @@ owner 2FA, legal, backup restore, dan provider UAT selesai.
 Delivery: `PRODUCTION_DEPLOYED`. Activation dan business readiness: `BLOCKED`.
 
 Admin terbaru sudah `PRODUCTION_DEPLOYED` pada exact source
-`8c91ad2bb1d7c6b6811c5871a04db889f6e62a6f`, immutable release
-`20260829-8c91ad2`, dan rollback `20260829-9001d6a`. Dashboard memakai Plus
+`b073a484cb18181a4c4365412f37804b816756c2`, immutable release
+`20260829-b073a48`, dan rollback `20260829-8c91ad2`. Dashboard memakai Plus
 Jakarta Sans, shell responsive, refresh snapshot fail-safe, tren 7/14/30 hari,
 serta tampilan filter Pesanan per akun/perangkat. Katalog Produk menyediakan
 bulk publish/archive yang transaksional, revision/context-aware, dan ter-audit.
+Inventory menyediakan export snapshot CSV sesuai antrean/pencarian aktif;
+permission, throttle, audit tanpa PII, dan sanitasi formula melindungi alurnya.
 Kata pencarian pelanggan tidak dipersistenkan. Readiness 41/42 (98%); release
 sign-off tetap satu blocker dan perubahan dashboard tidak mengaktifkan
 commerce/provider.
@@ -4218,9 +4222,9 @@ publik tetap `PRODUCTION_READINESS_BLOCKED` sampai checklist UAT dan release
 sign-off selesai. Jangan menyebut controlled UAT sebagai payment production-
 activated atau business-ready.
 
-Release aktif `20260829-8c91ad2` menjalankan exact source
-`8c91ad2bb1d7c6b6811c5871a04db889f6e62a6f` dengan rollback
-`20260829-9001d6a`. Hero homepage memakai komposisi campaign full-bleed
+Release aktif `20260829-b073a48` menjalankan exact source
+`b073a484cb18181a4c4365412f37804b816756c2` dengan rollback
+`20260829-8c91ad2`. Hero homepage memakai komposisi campaign full-bleed
 hitam-putih versi sebelumnya dengan headline `BAGS FOR THE SCENE`, crop
 `cover`, gradient keterbacaan, dan proporsi desktop 461–521 piksel. Storefront
 216/216, navigation 16 skenario, 110 responsive combinations, 32 route
