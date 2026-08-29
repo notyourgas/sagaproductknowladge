@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-29 - COYABAG Admin dashboard trend ranges sync
+
+- Ringkasan: menyinkronkan filter tren 7/14/30 hari pada Beranda Admin,
+  persistence URL, fail-safe refresh, dan responsive chart scrolling.
+- Provenance: exact source `0b6ecce7f1f67557ff6e147ec874150b108b83ae`,
+  immutable release `20260829-0b6ecce`, rollback `20260829-d26c3c3`.
+- Evidence: backend 475 total/4.467 assertion, browser owner/finance
+  desktop-mobile, storefront/admin build, Pint, dependency audit nol, backup,
+  readiness 41/42, runtime asset, dan public smoke.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /
+  NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+- Dokumen terdampak: Product/changelog COYABAG, portfolio, master knowledge,
+  root changelog, dan sync status.
+
 ## 2026-08-29 - SagaView S347 PDF obfuscation review sync
 
 - Ringkasan: menutup bypass escape nama PDF dan menahan PDF terenkripsi atau
@@ -12,7 +26,7 @@
 - Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
   IMPLEMENTED_NOT_DEPLOYED`; `BUSINESS_READY=false` dan production tidak berubah.
 - Dokumen terdampak: Product, feature ledger/changelog SagaView, portfolio,
-  master knowledge, root changelog, dan sync status.
+  root changelog, dan sync status.
 
 ## 2026-08-29 - SagaBook S355 release artifact mirror sync
 

@@ -12,12 +12,34 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-29 19:11 WIB |
-| Branch aktif | `codex/s347-sagaview-knowledge` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-29 19:12 WIB |
+| Branch aktif | `codex/coyabag-payment-reconcile-20260829` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `830af42055fcddc576d8c3578228a0a9d62c3bca` |
-| Informasi terakhir disinkronkan | SagaView S347 PDF obfuscation fail-closed review. |
-| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan `BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `830af42` |
+| Informasi terakhir disinkronkan | COYABAG Admin dashboard authoritative trend ranges. |
+| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED / NOT_PRODUCTION_ACTIVATED`; readiness 41/42 dan `BUSINESS_READY=false`. |
+
+## COYABAG Admin dashboard authoritative trend ranges
+
+- Exact source `0b6ecce7f1f67557ff6e147ec874150b108b83ae` aktif pada release
+  `20260829-0b6ecce`; rollback `20260829-d26c3c3` tersedia.
+- Beranda Admin menyediakan tren 7/14/30 hari dengan allowlist backend,
+  persistence URL, feedback aksesibel, dan fail-safe yang mempertahankan
+  snapshot valid terakhir saat refresh gagal.
+- Browser owner/finance desktop-mobile menjaga masking/permission dan mencegah
+  overflow halaman. Backend 475 total/4.467 assertion, build/audit, backup,
+  readiness 41/42, runtime asset, dan public smoke lulus.
+- Release sign-off tetap satu blocker; batch tidak mengaktifkan provider atau
+  mengubah kontrak transaksi.
+
+## File yang berubah pada sinkronisasi COYABAG Admin dashboard
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaView S347 PDF obfuscation fail-closed review
 

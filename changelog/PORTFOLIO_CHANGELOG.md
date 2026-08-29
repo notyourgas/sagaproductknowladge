@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-29 - COYABAG Admin dashboard trend ranges
+
+- Exact source `0b6ecce7f1f67557ff6e147ec874150b108b83ae` aktif pada
+  immutable release `20260829-0b6ecce`; rollback `20260829-d26c3c3` tersedia.
+- Beranda Admin menyediakan tren 7/14/30 hari yang tervalidasi backend,
+  persisted di URL, fail-safe saat refresh gagal, serta responsive tanpa
+  melebarkan halaman. Masking dan permission role dipertahankan.
+- Full backend/browser/build/audit, backup, readiness 41/42, runtime asset, dan
+  public smoke lulus. Commerce/provider tidak diaktifkan oleh perubahan ini.
+
 ## 2026-08-29 - SagaView S347 PDF obfuscation fail-closed review
 
 - Exact pushed source `242bf45ac225a76d27729f3b6240d1f047d63144`

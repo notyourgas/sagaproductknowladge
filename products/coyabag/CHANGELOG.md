@@ -4,6 +4,24 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-29 - Admin dashboard authoritative trend ranges deployed
+
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /
+  NOT_PRODUCTION_ACTIVATED`; exact source
+  `0b6ecce7f1f67557ff6e147ec874150b108b83ae`, immutable release
+  `20260829-0b6ecce`, rollback `20260829-d26c3c3`.
+- Owner, Admin, dan Finance dapat mengganti tren Beranda antara 7, 14, dan 30
+  hari. Backend membatasi periode pada allowlist, URL menyimpan pilihan, dan
+  kegagalan refresh mempertahankan snapshot valid terakhir.
+- Kontrol segmented mempunyai selected/loading/success/error state aksesibel;
+  grafik 30 hari bergulir di dalam panel pada desktop/mobile tanpa horizontal
+  overflow halaman. Masking customer dan permission role tetap berlaku.
+- Backend 475 total: 474 lulus, satu controlled skip, 4.467 assertion; browser
+  owner/finance desktop-mobile, build storefront/admin, Pint, Composer/npm
+  audit, backup, readiness 41/42, runtime asset, dan public smoke lulus.
+  Release sign-off tetap satu blocker dan tidak ada aktivasi provider pada
+  batch ini.
+
 ## 2026-08-29 - Admin application shell navigation deployed
 
 - Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /
