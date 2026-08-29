@@ -85,9 +85,11 @@ diterapkan karena seluruhnya belum dipetakan (`applied=false`). Status
 `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`;
 authenticated Owner/Staff UAT dan mapping legacy masih pending.
 
-COYABAG storefront/API tetap pada release `20260829-e1c8b65` dengan exact source
-`e1c8b65f09d0ed3b07d479a2137797cfb9f39cd4`; rollback
-`20260829-e97da17` tersedia. Saga Platform exact source
+COYABAG storefront/API/admin kini pada release `20260829-edd3606` dengan exact
+source `edd36069fcfff3503726e061a02ba07fd5767b73`; rollback
+`20260829-e1c8b65` tersedia. Admin System Health tidak lagi white screen setelah
+import ikon Feather `Truck` yang hilang dilengkapi dan dikunci regression test.
+Saga Platform exact source
 `ec2a18bf70c8e2ae19bfdb71d125ee318b6ca2f9` aktif pada release
 `20260829033654-ec2a18b` dengan rollback `20260829100759-eff4f53`. Managed
 gateway memakai URL kembali HTTPS, mengirim kontrak advanced order Tokopay
@@ -97,10 +99,11 @@ Launch Control tetap menyediakan capability owner-only untuk satu transaksi
 UAT SagaDev nyata: recent-auth, signed, 5-30 menit, satu-link-satu-order,
 gateway-only, maksimal Rp100.000 termasuk ongkir, dan maksimal tiga link per
 hari. Satu pembayaran nyata controlled UAT berhasil menjadi payment matched
-dan order confirmed/picking. Public checkout tetap
-`PRODUCTION_READINESS_BLOCKED`; Owner 2FA dan privacy policy tetap approved,
-sementara commerce `NOT_PRODUCTION_ACTIVATED` sampai checklist UAT serta
-release sign-off selesai.
+dan order confirmed/picking. Launch UAT kini lulus 15/15; readiness 41/42 (98%)
+dan sign-off diizinkan. Public checkout tetap `PRODUCTION_READINESS_BLOCKED`;
+Owner 2FA dan privacy policy tetap approved, sementara commerce
+`NOT_PRODUCTION_ACTIVATED` sampai release sign-off dicatat dan aktivasi dilakukan
+secara sengaja.
 
 SagaBook batch S319-S322 add-on consumable exact pushed source
 `8203f0131a366b81b8922127d6cd6bda06357b2d` memungkinkan Owner memetakan

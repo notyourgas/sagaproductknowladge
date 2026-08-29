@@ -4,6 +4,21 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-29 - Admin System Health white-screen hotfix deployed
+
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED / CONTROLLED_UAT_PASSED /
+  NOT_PRODUCTION_ACTIVATED`; exact source
+  `edd36069fcfff3503726e061a02ba07fd5767b73`, immutable release
+  `20260829-edd3606`, rollback `20260829-e1c8b65`.
+- Halaman Admin System Health kembali dapat dirender. Penyebab layar putih
+  adalah ikon Feather `Truck` yang dipakai tanpa import; regression test baru
+  menjaga kontrak import komponen tersebut.
+- Full backend 473 total: 472 lulus, satu controlled skip, 4.442 assertion;
+  build admin, Composer/npm production audit, backup, readiness, worker/log,
+  serta public smoke lulus.
+- Launch UAT kini lulus 15/15. Readiness 41/42 (98%) dan sign-off diizinkan;
+  release sign-off tetap satu-satunya blocker sebelum aktivasi yang disengaja.
+
 ## 2026-08-29 - Tokopay callback reconciliation self-heal deployed
 
 - Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED / CONTROLLED_UAT_PASSED /

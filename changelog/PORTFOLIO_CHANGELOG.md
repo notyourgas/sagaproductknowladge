@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-29 - COYABAG Admin System Health restored
+
+- COYABAG exact source `edd36069fcfff3503726e061a02ba07fd5767b73`
+  aktif pada release `20260829-edd3606`; rollback `20260829-e1c8b65` tersedia.
+- White screen Admin System Health diperbaiki dengan melengkapi import ikon
+  Feather `Truck` dan regression test pada kontrak komponen.
+- Full backend 473 total, build/audit, backup, readiness, dan public smoke
+  lulus. Launch UAT 15/15; readiness 41/42 (98%) dengan release sign-off sebagai
+  satu-satunya blocker. Commerce belum diaktifkan secara otomatis.
+
 ## 2026-08-29 - SagaBook authenticated Owner/Staff UAT closure
 
 - SagaBook exact source `804fb5868fb6a7d762b7c2621c653d318a8eef57`

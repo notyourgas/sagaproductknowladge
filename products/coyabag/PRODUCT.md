@@ -67,23 +67,26 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
   `20260824104557-65f9ff4`. Satu instalasi dan satu service account scope minimum
   aktif; signed readiness serta callback fail-closed lulus. Batas trial adalah
   Rp100.000 per transaksi dan lima payment intent baru per hari.
-- Readiness COYABAG naik menjadi 40/42 (95%). Owner 2FA dan
+- Readiness COYABAG kini 41/42 (98%). Owner 2FA dan
   privacy/retention policy versi `2026.08-v1` sudah aktif, terverifikasi, dan
   disetujui dengan fingerprint yang cocok. Kebijakan publik memuat delapan
   bagian; audit tetap `report_only` dan tidak menghapus record.
-- Checkout publik tetap `PRODUCTION_READINESS_BLOCKED` hanya karena UAT 15
-  langkah masih 0/15 dan release sign-off belum lengkap. Nol payment intent
-  dibuat saat deployment acceptance.
-- Release aktif `20260829-e1c8b65` dengan exact source
-  `e1c8b65f09d0ed3b07d479a2137797cfb9f39cd4` melayani production;
-  rollback langsung `20260829-e97da17` dipertahankan. Payment gateway sekarang
+- Launch UAT 15 langkah sudah lulus 15/15 dan sign-off diizinkan. Checkout
+  publik tetap `PRODUCTION_READINESS_BLOCKED` hanya sampai release sign-off
+  dicatat; deployment acceptance hotfix tidak membuat payment intent baru.
+- Release aktif `20260829-edd3606` dengan exact source
+  `edd36069fcfff3503726e061a02ba07fd5767b73` melayani production;
+  rollback langsung `20260829-e1c8b65` dipertahankan. Admin System Health
+  kembali dapat dirender setelah import ikon Feather `Truck` yang hilang
+  dipulihkan dan dikunci dengan regression test. Payment gateway sekarang
   memakai URL kembali HTTPS kanonik storefront dan menolak redirect internal
   yang tidak sesuai kontrak, sehingga kegagalan validasi tidak lagi terbaca
   sebagai sesi pembayaran ambigu. Owner tetap memiliki jalur UAT pembayaran
   nyata yang privat, signed, recent-auth, satu-link-satu-order, gateway-only,
   maksimal Rp100.000 termasuk ongkir, dan maksimal tiga link per hari.
-  Capability tidak membuka checkout publik dan belum digunakan untuk membuat
-  order atau payment intent pada acceptance release.
+  Capability tidak membuka checkout publik secara otomatis; controlled UAT
+  sudah membuktikan satu alur pembayaran tanpa membuat payment intent baru
+  pada acceptance release hotfix.
 - Saga Platform exact source `eff4f5339571fd7f02fbc11c6cc61153d3def83e`
   aktif pada immutable release `20260829100759-eff4f53`; rollback
   `20260828203505-bec577e` tersedia. Adapter order COYABAG kini mengirim kontrak

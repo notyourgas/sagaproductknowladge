@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-29 - COYABAG Admin System Health hotfix sync
+
+- Ringkasan: menyinkronkan pemulihan white screen Admin System Health dan hasil
+  Launch UAT 15/15.
+- Provenance: exact source `edd36069fcfff3503726e061a02ba07fd5767b73`,
+  immutable release `20260829-edd3606`, rollback `20260829-e1c8b65`.
+- Evidence: regression test, backend 473 total dengan 472 lulus dan satu
+  controlled skip, 4.442 assertion, admin build, dependency audit, backup,
+  readiness 41/42, serta public smoke.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED / CONTROLLED_UAT_PASSED /
+  NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+
 ## 2026-08-29 - SagaBook authenticated UAT production closure sync
 
 - Ringkasan: menyinkronkan target sentuh Staff 44 piksel, koreksi kontrak route
