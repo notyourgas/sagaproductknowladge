@@ -7,8 +7,9 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Closing Staff S359 exact pushed source
-  `67591a4dd99e75b8df0a312ae09b8c8bc8240159` memisahkan tiga hal yang
+- Closing Staff S359/S362 feature source
+  `c50ef8b60487aee6775cc441151a6c8575500cdf` telah merge melalui PR #78 ke
+  exact main `b37db0810f64731e46f18d026452a6cf3f65e86c` dan memisahkan tiga hal yang
   sebelumnya mudah tertukar: konfirmasi hitungan fisik, alasan selisih per
   material, dan catatan operasional umum. Selisih plus maupun minus kertas
   foto atau packaging dapat disubmit setelah material tersebut dikonfirmasi
@@ -20,9 +21,11 @@ dalam satu dokumen public-safe.
   rekonsiliasi tetap audited, dan `STOCK_UNINITIALIZED` maupun
   `INSUFFICIENT_STOCK` tidak dibypass. Full Feature 1.271/1.271 (14.428
   assertion), focused 17/17 (93), contract 9/9, browser 6/6, persistence
-  18/18, typecheck/build, Pint file terkait, serta audit npm/Composer/OSV nol
-  lulus. Status `CONFIRMED / PUSHED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
+  18/18 pada baseline awal. Validasi ulang exact-main lulus focused PHP 17/17,
+  full PHP 1.306/1.306, contract 9/9, browser mobile/desktop 12/12,
+  TypeScript/build/Pint, npm/OSV nol, serta MySQL 8.4 disposable 10/10 dengan
+  migrate-fresh dan cleanup bersih. Status `CONFIRMED / MERGED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
 
 - Hardening release S355 sudah merge pada exact main
   `04548e539c52924a9629a5db1670ee80bed99b93`. Media removable NTFS/ReFS yang
