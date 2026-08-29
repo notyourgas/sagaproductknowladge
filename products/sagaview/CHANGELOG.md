@@ -1,5 +1,24 @@
 # SagaView Changelog
 
+## 2026-08-30 - S354 UAT receipt ancestor guard
+
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan
+  `BUSINESS_READY=false`.
+- Before: S353 memeriksa evidence root terakhir, tetapi folder biasa di bawah
+  direktori induk junction masih dapat meneruskan receipt ke lokasi tertaut.
+- After: exact source `edd06983c8143abb146692695cf0d6c9abbf6072`
+  memeriksa setiap segmen direktori tujuan dan menolak ancestor reparse point
+  sebelum write/replace pada S70, S344, dan S345.
+- Evidence: regression red 4/4 lalu green 4/4; gabungan S353-S354 9/9;
+  focused 58/58; full 66 file/296 test; parser PowerShell/pwsh;
+  format/lint/typecheck; client+SSR build; bundle 312,7 KiB dari 450 KiB;
+  npm audit nol; diff check; worktree bersih; dan remote exact.
+- Boundary: hanya harness/test/runbook dengan filesystem disposable; tidak ada
+  UI/API/database, data customer, deploy, atau perubahan production.
+- Next gate: authenticated manual UAT 12 gate dengan evidence sintetis
+  tersanitasi pada path biasa, visual review, reviewer S345, lalu S344 Finalize.
+
 ## 2026-08-30 - S353 UAT receipt destination guard
 
 - Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /

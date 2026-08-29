@@ -1,6 +1,23 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 30 Agustus 2026 02:12 WIB
+Evidence cut-off: 30 Agustus 2026 03:18 WIB
+
+S354 UAT receipt ancestor guard: exact pushed source
+`edd06983c8143abb146692695cf0d6c9abbf6072` menolak penulisan receipt bila
+salah satu direktori pada seluruh rantai path tujuan merupakan Windows
+junction/symlink/reparse point. Ini menutup celah S353 saat evidence root
+terakhir merupakan folder biasa tetapi direktori induknya menunjuk ke lokasi
+tertaut. Guard berlaku konsisten pada S70, S344, dan reviewer S345; data uji
+tetap sintetis/disposable dan tidak memakai foto, path, atau output customer.
+
+Ledger lulus: regression merah 4/4 lalu hijau 4/4; gabungan S353-S354 9/9;
+focused S70/S344-S354 58/58; full 66 file/296 test; parser Windows
+PowerShell/pwsh; format/lint/typecheck; client 2.129 modul + SSR 203 modul;
+bundle 312,7 KiB dari 450 KiB; npm audit nol; diff check; worktree bersih;
+serta remote exact. Boundary hanya tooling/test/runbook, tanpa UI/API/database
+atau mutasi production. Belum lulus: authenticated manual UAT 12 gate dan
+visual review. Status `PUSHED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; `BUSINESS_READY=false`.
 
 S353 UAT receipt destination guard: exact pushed source
 `eff8bb40d3a20b60abdf0cfd9c83883e28b3a6a5` menolak evidence root yang

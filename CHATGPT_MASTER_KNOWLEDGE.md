@@ -1,5 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+SagaView S354 exact pushed source
+`edd06983c8143abb146692695cf0d6c9abbf6072` berstatus `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Writer receipt UAT S70, S344,
+dan S345 kini memeriksa seluruh rantai direktori tujuan dan menolak ancestor
+Windows junction/symlink/reparse point sebelum write/replace. Regression 4/4
+merah lalu 4/4 hijau, gabungan S353-S354 9/9, focused 58/58, full 296/296,
+PowerShell/pwsh, build/budget/audit, diff check, clean, dan remote exact lulus.
+Production tidak berubah; authenticated UAT serta visual review masih wajib
+sehingga `BUSINESS_READY=false`.
+
 SagaView S353 exact pushed source
 `eff8bb40d3a20b60abdf0cfd9c83883e28b3a6a5` berstatus `PUSHED /
 LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Writer receipt UAT S70, S344,

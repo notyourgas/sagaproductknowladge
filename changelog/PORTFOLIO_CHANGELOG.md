@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-30 - SagaView S354 UAT receipt ancestor guard
+
+- Exact pushed source `edd06983c8143abb146692695cf0d6c9abbf6072`
+  membuat writer S70/S344/S345 memeriksa seluruh rantai direktori tujuan dan
+  menolak ancestor junction/symlink/reparse point sebelum receipt ditulis.
+- Regression red 4/4 lalu green 4/4; gabungan S353-S354 9/9, focused 58/58,
+  full 296/296, parser PowerShell/pwsh, build client+SSR, bundle budget, audit
+  dependency nol, diff check, clean, dan remote exact lulus.
+- Perubahan hanya harness/test/runbook. Production tidak berubah;
+  authenticated UAT dan visual review masih pending sehingga
+  `BUSINESS_READY=false`.
+
 ## 2026-08-30 - COYABAG Admin UI/UX three-wave production polish
 
 - Exact source `0e4a2516a05aa99dadba5c17c63d1dd77b6c83db` aktif pada
