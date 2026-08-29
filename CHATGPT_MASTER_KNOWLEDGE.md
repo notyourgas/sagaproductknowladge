@@ -1,5 +1,19 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+SagaBook authenticated production UAT closure aktif pada exact cumulative
+source `804fb5868fb6a7d762b7c2621c653d318a8eef57`, immutable release
+`20260829053952-804fb58`, dengan rollback `20260829051850-176949b`. Target
+sentuh antrean Staff minimum 44 piksel dan kontrak UAT selaras dengan capability
+Staff: laporan operasional boleh terlihat, sedangkan pengelolaan staff,
+template, dan pengaturan tetap owner-only; UAT read-only tidak membuka preview
+laporan berbasis POST. Tooling 43/43, preflight 2/2, full release gate,
+backup/restore, verifier 23/23, canary 32/32, migration pending 0, journal 0
+error, dan smoke/security 3/3 lulus. Authenticated Owner/Staff UAT mobile dan
+desktop lulus dengan target 44 piksel, accessibility hijau, serta nol request
+failure, error, overflow, mutasi, PII, dan secret. Status
+`PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED /
+BUSINESS_READY=false`; residual hanya pilot dua studio dan provider canary.
+
 SagaBook booking-void financial integrity aktif pada exact cumulative source
 `3ae80ddada59b3c3eb23932c42c9fc9a4de60a6c`, immutable release
 `20260828233547-3ae80dd`, dengan rollback `20260828220429-9a38252`.

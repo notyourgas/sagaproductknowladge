@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-29 - SagaBook authenticated Owner/Staff UAT closure
+
+- SagaBook exact source `804fb5868fb6a7d762b7c2621c653d318a8eef57`
+  aktif pada release `20260829053952-804fb58`; rollback
+  `20260829051850-176949b` tersedia.
+- Target sentuh Staff 44 piksel dan kontrak route UAT diselaraskan dengan
+  capability laporan operasional tanpa membuka halaman owner-only.
+- Full release gate, backup/restore, verifier 23/23, canary 32/32,
+  smoke/security 3/3, serta authenticated read-only Owner/Staff UAT mobile dan
+  desktop lulus tanpa error, mutasi, PII, atau secret.
+- Status `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+  UAT_ACCEPTED / BUSINESS_READY=false`; residual hanya pilot dua studio dan
+  provider canary. Produk lain tidak berubah.
+
 ## 2026-08-29 - COYABAG real-payment reconciliation recovery
 
 - Saga Platform exact source `ec2a18bf70c8e2ae19bfdb71d125ee318b6ca2f9`

@@ -7,6 +7,20 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Exact cumulative source `804fb5868fb6a7d762b7c2621c653d318a8eef57`
+  aktif pada immutable release `20260829053952-804fb58`; rollback
+  `20260829051850-176949b` tersedia dan kompatibel. Release menutup target
+  sentuh Staff 44 piksel serta menyelaraskan UAT dengan capability laporan
+  operasional tanpa melonggarkan halaman owner-only. Full release gate, backup
+  terenkripsi/checksum/restore disposable, verifier 23/23, canary 32/32,
+  migration pending 0, journal 0 error, dan smoke/security 3/3 lulus.
+  Authenticated read-only Owner/Staff UAT lulus pada 390x844 dan 1440x900:
+  target minimum 44 piksel, accessibility check hijau, request failure,
+  browser/server error, overflow, dan mutasi seluruhnya 0, serta tidak ada PII
+  atau secret. Status `CONFIRMED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / UAT_ACCEPTED / BUSINESS_READY=false`; pilot dua studio
+  dan provider canary tetap gate bisnis terpisah.
+
 - Booking-void financial integrity aktif pada exact cumulative source
   `3ae80ddada59b3c3eb23932c42c9fc9a4de60a6c`, immutable release
   `20260828233547-3ae80dd`; rollback `20260828220429-9a38252` kompatibel.

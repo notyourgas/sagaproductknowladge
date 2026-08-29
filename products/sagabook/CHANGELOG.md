@@ -1,5 +1,23 @@
 # SagaBook Changelog
 
+## 2026-08-29 - Authenticated Owner/Staff UAT production closure
+
+- Exact cumulative source `804fb5868fb6a7d762b7c2621c653d318a8eef57`
+  aktif pada immutable release `20260829053952-804fb58`; rollback kompatibel
+  `20260829051850-176949b` tersedia.
+- Target sentuh antrean Staff dinaikkan menjadi minimum 44 piksel. Kontrak UAT
+  diselaraskan dengan capability Staff: laporan operasional tetap boleh
+  terlihat, sedangkan halaman pengelolaan staff, template, dan pengaturan tetap
+  owner-only; suite read-only tidak menavigasi preview laporan berbasis POST.
+- Tooling UAT 43/43, browser preflight 2/2, full release gate, backup
+  terenkripsi/checksum/restore disposable, verifier 23/23, canary 32/32,
+  migration pending 0, journal 0 error, dan smoke/security 3/3 lulus.
+- Authenticated Owner dan Staff lulus pada mobile/desktop dengan target minimum
+  44 piksel, accessibility hijau, request failure/error/overflow/mutasi 0,
+  serta PII/secret false. Status `CONFIRMED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / UAT_ACCEPTED / BUSINESS_READY=false`; residual hanya
+  pilot dua studio dan provider canary.
+
 ## 2026-08-29 - Booking-void financial integrity production activation
 
 - Owner/manager kini dapat menandai booking manual yang salah catat sebagai
