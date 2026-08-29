@@ -1,5 +1,21 @@
 # SagaBook Changelog
 
+## 2026-08-29 - Recovery idempotensi OTS S354 merged, belum deploy
+
+- Retry `Mulai sekarang` tidak lagi konflik hanya karena tanggal/jam client,
+  gaya key `startMode`/`start_mode`, atau kapitalisasi berubah; waktu booking
+  pertama dari server tetap authoritative.
+- Fingerprint versi production lama tetap dapat direplay untuk payload identik,
+  sedangkan perubahan field bisnis tetap ditolak `409` tanpa booking kedua.
+- Feature source `862fb62db2dc724aedc1d8bcb365d6fc2d17b77a` merge melalui
+  PR #71 ke exact main `d146adbef6a222cc32d2a10ffb2c8332c01098f8`.
+- Full PHP 1.299/1.299 (14.547 assertion), focused 32/32 (221), disposable
+  MySQL 8.4.9 migrate-fresh/cleanup, TypeScript/build, Pint, dan dependency
+  audit nol lulus. GitHub job tidak mulai karena billing/spending limit.
+- Status `CONFIRMED / MERGED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+  Production tetap release `20260829062031-b2790d6`; deployment belum
+  diotorisasi.
+
 ## 2026-08-29 - Manual Booking OTS Mulai sekarang production activation
 
 - Semua tenant memperoleh aksi `Mulai sekarang` untuk Manual Booking OTS bagi

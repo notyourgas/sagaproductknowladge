@@ -2,6 +2,20 @@
 
 Evidence cut-off: 29 Agustus 2026
 
+Recovery idempotensi OTS S354 telah `CONFIRMED / MERGED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED` pada feature source
+`862fb62db2dc724aedc1d8bcb365d6fc2d17b77a` dan exact main
+`d146adbef6a222cc32d2a10ffb2c8332c01098f8` melalui PR #71. Retry mode
+`Mulai sekarang` kini mengabaikan client date/time, menormalkan `startMode`/
+`start_mode` beserta case, dan mempertahankan replay fingerprint legacy tanpa
+melonggarkan conflict untuk perubahan data bisnis. Red-green, focused 32/32
+(221 assertion), full PHP 1.299/1.299 (14.547), disposable MySQL 8.4.9
+migrate-fresh/cleanup, TypeScript/build, Pint, serta npm/Composer/OSV audit nol
+lulus. GitHub job tidak memulai step karena billing/spending limit; evidence
+lokal ekuivalen tersedia. Production tetap source
+`b2790d64232b24222c3bc383c3b445d760786f2d` / release
+`20260829062031-b2790d6`; release baru belum diotorisasi.
+
 Manual Booking OTS `Mulai sekarang` telah `CONFIRMED / PRODUCTION_DEPLOYED /
 PRODUCTION_ACTIVATED / UAT_ACCEPTED` pada exact cumulative source
 `b2790d64232b24222c3bc383c3b445d760786f2d`, immutable release

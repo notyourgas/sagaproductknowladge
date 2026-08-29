@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-29 - SagaBook S354 OTS idempotency recovery
+
+- Exact main `d146adbef6a222cc32d2a10ffb2c8332c01098f8` menjaga retry OTS
+  lintas perubahan jam client dan kompatibilitas fingerprint lama tanpa
+  melonggarkan conflict data bisnis.
+- Full PHP 1.299/1.299, MySQL 8.4.9 disposable rehearsal, build/typecheck,
+  Pint, serta npm/Composer/OSV audit lulus.
+- Status `MERGED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+  SagaBook dan produk SagaDev lain tidak berubah.
+
 ## 2026-08-29 - COYABAG Admin commerce-console foundation
 
 - Exact source `1b3b0231959a3a9105b9578caa119c995530e97a` aktif pada
