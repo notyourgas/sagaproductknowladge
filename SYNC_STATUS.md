@@ -12,12 +12,30 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-29 17:15 WIB |
-| Branch aktif | `codex/coyabag-payment-reconcile-20260829` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-29 17:18 WIB |
+| Branch aktif | `codex/knowledge-s354-ots-idempotency` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `395fb332d45ca61e79dfa977050f8d4d10a3dfb2` |
-| Informasi terakhir disinkronkan | COYABAG Admin visual foundation Plus Jakarta Sans. |
-| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `36eb7116272e5e863a8d44751f4047421efd3534` |
+| Informasi terakhir disinkronkan | SagaBook S354 OTS idempotency recovery merged, belum deploy. |
+| Status sinkronisasi | `CONFIRMED / MERGED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah. |
+
+## SagaBook S354 OTS idempotency recovery
+
+- Exact source `862fb62db2dc724aedc1d8bcb365d6fc2d17b77a` merge melalui
+  PR #71 ke main `d146adbef6a222cc32d2a10ffb2c8332c01098f8`.
+- Retry server-authoritative tahan perubahan jam client dan tetap kompatibel
+  dengan fingerprint lama; perubahan field bisnis masih conflict.
+- Full PHP, MySQL 8.4.9 rehearsal, build/typecheck/Pint, dan dependency audit
+  lulus. Production tetap release `20260829062031-b2790d6`.
+
+## File yang berubah pada sinkronisasi SagaBook S354
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG Admin visual foundation Plus Jakarta Sans
 

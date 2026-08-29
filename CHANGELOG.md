@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-29 - SagaBook S354 OTS idempotency recovery sync
+
+- Ringkasan: mencatat recovery retry OTS lintas perubahan jam client,
+  normalisasi alias mode mulai, dan backward compatibility fingerprint lama.
+- Provenance: feature source `862fb62db2dc724aedc1d8bcb365d6fc2d17b77a`,
+  PR #71, exact main `d146adbef6a222cc32d2a10ffb2c8332c01098f8`.
+- Evidence: full PHP 1.299/1.299 (14.547), focused 32/32 (221), disposable
+  MySQL 8.4.9, build/typecheck/Pint, serta dependency audit nol.
+- Klasifikasi: `CONFIRMED / MERGED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap `20260829062031-b2790d6`.
+- Dokumen terdampak: Product, feature ledger/changelog SagaBook, portfolio,
+  root changelog, dan sync status.
+
 ## 2026-08-29 - COYABAG Admin visual foundation sync
 
 - Ringkasan: menyinkronkan fondasi commerce console Plus Jakarta Sans

@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 29 Agustus 2026 13:31 WIB
-Evidence status: seluruh fitur kumulatif termasuk Manual Booking OTS `Mulai sekarang`, booking-void, styled XLSX, closing manual-share, rekap sesi/keuangan, Task Manager, dan hardening aksesibilitas Staff aktif pada exact source `b2790d64232b24222c3bc383c3b445d760786f2d`, release `20260829062031-b2790d6`; production-deployed dan production-activated, authenticated read-only Owner/Staff UAT lulus, dan `BUSINESS_READY=false` hanya menunggu pilot dua studio serta provider canary
+Updated: 29 Agustus 2026 17:12 WIB
+Evidence status: recovery idempotensi OTS S354 sudah merge pada exact main `d146adbef6a222cc32d2a10ffb2c8332c01098f8` tetapi belum dideploy; production tetap exact source `b2790d64232b24222c3bc383c3b445d760786f2d`, release `20260829062031-b2790d6`, dan `BUSINESS_READY=false` hanya menunggu pilot dua studio serta provider canary
 
 ## Tujuan dokumen
 
@@ -15,6 +15,17 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
+
+- Recovery idempotensi Manual Booking OTS S354 sudah merge melalui PR #71 pada
+  exact main `d146adbef6a222cc32d2a10ffb2c8332c01098f8`. Fingerprint retry mode
+  `Mulai sekarang` mengabaikan tanggal/jam client yang memang ditetapkan ulang
+  oleh server, menormalkan alias/case mode mulai, dan tetap menerima retry
+  identik dari fingerprint versi production lama. Perubahan field bisnis tetap
+  menghasilkan conflict sehingga proteksi exactly-once tidak dilonggarkan.
+  Full PHP 1.299/1.299 (14.547 assertion), focused 32/32 (221), disposable
+  MySQL 8.4.9 migrate-fresh dan cleanup, TypeScript/build, Pint, serta npm,
+  Composer, dan OSV audit nol lulus. Status `CONFIRMED / MERGED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
 
 - Manual Booking OTS `Mulai sekarang` aktif untuk seluruh tenant pada exact
   cumulative source `b2790d64232b24222c3bc383c3b445d760786f2d`, immutable
