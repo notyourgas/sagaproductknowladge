@@ -12,12 +12,31 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-29 20:14 WIB |
-| Branch aktif | `codex/s357-sagabook-tamper-matrix-knowledge` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-29 20:25 WIB |
+| Branch aktif | `codex/coyabag-payment-reconcile-20260829` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `5364287555ca8cb06752204dcd64fe694dc586eb` |
-| Informasi terakhir disinkronkan | SagaBook S357 release verifier tamper matrix. |
-| Status sinkronisasi | `CONFIRMED / MERGED / TAMPER_MATRIX_VALIDATED / RELEASE_ARTIFACT_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan `BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `b536a5cc95b624eac06f3d23e37c1a1dec97af66` |
+| Informasi terakhir disinkronkan | COYABAG Admin order saved views production release. |
+| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED / NOT_PRODUCTION_ACTIVATED`; readiness 41/42 dan `BUSINESS_READY=false`. |
+
+## COYABAG Admin order saved views
+
+- Exact source `9001d6af32a93b48d97d8ff1e1d3f90afb7a7567` aktif pada release
+  `20260829-9001d6a`; rollback `20260829-0b6ecce` tersedia.
+- Tampilan filter Pesanan disimpan maksimal lima per akun/perangkat tanpa kata
+  pencarian pelanggan. Save/apply/reload/delete dan fail-safe storage lulus.
+- Backend 475 total, storefront 216/216, browser desktop/mobile, build/audit,
+  backup, readiness 41/42, runtime asset, dan public smoke lulus.
+- Release sign-off tetap satu blocker; provider dan commerce tidak diaktifkan.
+
+## File yang berubah pada sinkronisasi COYABAG Admin order saved views
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook S357 release verifier tamper matrix
 

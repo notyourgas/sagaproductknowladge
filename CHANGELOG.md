@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-29 - COYABAG Admin order saved views sync
+
+- Ringkasan: menyinkronkan tampilan filter Pesanan per akun/perangkat dengan
+  save, apply, reload persistence, delete, dan privacy boundary.
+- Provenance: exact source `9001d6af32a93b48d97d8ff1e1d3f90afb7a7567`,
+  immutable release `20260829-9001d6a`, rollback `20260829-0b6ecce`.
+- Evidence: browser desktop/mobile dan privacy acceptance, backend 475 total,
+  storefront 216/216, build/audit nol advisory, backup, readiness 41/42,
+  exact runtime asset, dan public smoke.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /
+  NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+- Dokumen terdampak: Product/changelog COYABAG, portfolio, master knowledge,
+  root changelog, dan sync status.
+
 ## 2026-08-29 - SagaBook S357 release tamper matrix sync
 
 - Ringkasan: mencatat acceptance matrix yang membuktikan verifier artifact

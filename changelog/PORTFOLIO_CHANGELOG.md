@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-29 - COYABAG Admin order saved views
+
+- Exact source `9001d6af32a93b48d97d8ff1e1d3f90afb7a7567` aktif pada
+  immutable release `20260829-9001d6a`; rollback `20260829-0b6ecce` tersedia.
+- Workspace Pesanan dapat menyimpan maksimal lima tampilan filter per
+  akun/perangkat tanpa mempersistenkan kata pencarian pelanggan.
+- Desktop/mobile acceptance, 475 backend tests, 216 storefront tests,
+  dependency audit, backup, readiness 41/42, exact runtime asset, dan public
+  smoke lulus. Commerce/provider tidak diaktifkan oleh perubahan ini.
+
 ## 2026-08-29 - SagaBook S357 release verifier tamper matrix
 
 - Exact main `00b718f4505746e8ee520d18acf5342bb4e1d7ad` menambahkan matrix

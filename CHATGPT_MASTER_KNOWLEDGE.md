@@ -176,16 +176,18 @@ diterapkan karena seluruhnya belum dipetakan (`applied=false`). Status
 `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`;
 authenticated Owner/Staff UAT dan mapping legacy masih pending.
 
-COYABAG storefront/API/admin kini pada release `20260829-0b6ecce` dengan exact
-source `0b6ecce7f1f67557ff6e147ec874150b108b83ae`; rollback
-`20260829-d26c3c3` tersedia. Dashboard admin memakai Plus Jakarta Sans variable
+COYABAG storefront/API/admin kini pada release `20260829-9001d6a` dengan exact
+source `9001d6af32a93b48d97d8ff1e1d3f90afb7a7567`; rollback
+`20260829-0b6ecce` tersedia. Dashboard admin memakai Plus Jakarta Sans variable
 self-hosted serta design token modern untuk seluruh interface operasional,
 sementara wordmark mempertahankan font logo resmi. Application shell memiliki
 sidebar collapse persisten, breadcrumb, active route, pencarian desktop/mobile,
 shortcut keyboard, notifikasi, menu akun, dan focus-safe mobile drawer. Beranda
 Admin menyediakan tren 7/14/30 hari yang dibatasi backend, tersimpan di URL,
 dan mempertahankan snapshot terakhir bila refresh gagal; grafik panjang tetap
-responsive di dalam panel. Admin System Health tetap
+responsive di dalam panel. Admin Pesanan dapat menyimpan maksimal lima
+tampilan filter per akun/perangkat; kata pencarian pelanggan tidak pernah
+dipersistenkan dan preferensi gagal secara aman. Admin System Health tetap
 terlindungi oleh regression test untuk import ikon Feather `Truck`.
 Saga Platform exact source
 `ec2a18bf70c8e2ae19bfdb71d125ee318b6ca2f9` aktif pada release
@@ -4178,15 +4180,13 @@ owner 2FA, legal, backup restore, dan provider UAT selesai.
 
 Delivery: `PRODUCTION_DEPLOYED`. Activation dan business readiness: `BLOCKED`.
 
-Admin Beranda safe refresh sudah `PRODUCTION_DEPLOYED` pada exact source
-`be8fc09710e26e49512f181904dff576f93a23dd`, immutable release
-`20260827-be8fc09`, dan rollback `20260827-beecd6f`. Refresh memakai snapshot
-terautentikasi dan permission-gated; payload gagal tidak mengganti data valid
-terakhir. Kontrak metadata tunggal lima route inti tetap aktif. Initial HTML Laravel dan
-hydration React kini konsisten, kontrak tidak lengkap gagal tertutup ke
-`noindex`, dan CSS hero tetap mempertahankan visual campaign sambil kembali
-lulus budget. Public smoke desktop/mobile lulus. Commerce tetap fail-closed
-pada 30/42 checks dengan 12 blocker.
+Admin terbaru sudah `PRODUCTION_DEPLOYED` pada exact source
+`9001d6af32a93b48d97d8ff1e1d3f90afb7a7567`, immutable release
+`20260829-9001d6a`, dan rollback `20260829-0b6ecce`. Dashboard memakai Plus
+Jakarta Sans, shell responsive, refresh snapshot fail-safe, tren 7/14/30 hari,
+serta tampilan filter Pesanan per akun/perangkat. Kata pencarian pelanggan tidak
+dipersistenkan. Readiness 41/42 (98%); release sign-off tetap satu blocker dan
+perubahan dashboard tidak mengaktifkan commerce/provider.
 
 SagaDev Managed Gateway controlled trial untuk COYABAG sudah
 `PRODUCTION_DEPLOYED` melalui Saga Platform release
@@ -4202,9 +4202,9 @@ publik tetap `PRODUCTION_READINESS_BLOCKED` sampai checklist UAT dan release
 sign-off selesai. Jangan menyebut controlled UAT sebagai payment production-
 activated atau business-ready.
 
-Release aktif `20260827-be8fc09` menjalankan exact source
-`be8fc09710e26e49512f181904dff576f93a23dd` dengan rollback
-`20260827-beecd6f`. Hero homepage memakai komposisi campaign full-bleed
+Release aktif `20260829-9001d6a` menjalankan exact source
+`9001d6af32a93b48d97d8ff1e1d3f90afb7a7567` dengan rollback
+`20260829-0b6ecce`. Hero homepage memakai komposisi campaign full-bleed
 hitam-putih versi sebelumnya dengan headline `BAGS FOR THE SCENE`, crop
 `cover`, gradient keterbacaan, dan proporsi desktop 461–521 piksel. Storefront
 215/215, navigation 16 skenario, 110 responsive combinations, 32 route

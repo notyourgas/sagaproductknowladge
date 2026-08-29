@@ -4,6 +4,23 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-29 - Admin order saved views deployed
+
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /
+  NOT_PRODUCTION_ACTIVATED`; exact source
+  `9001d6af32a93b48d97d8ff1e1d3f90afb7a7567`, immutable release
+  `20260829-9001d6a`, rollback `20260829-0b6ecce`.
+- Owner/Admin/Finance dapat menyimpan maksimal lima kombinasi antrean,
+  pembayaran, status order, dan urutan per akun/perangkat; tampilan dapat
+  diterapkan ulang setelah reload dan dihapus dari workspace Pesanan.
+- Kata pencarian pelanggan tidak masuk local storage. Data preferensi
+  dinormalisasi dengan allowlist; kegagalan baca/tulis tidak memutasi pesanan
+  atau menghilangkan daftar aktif.
+- Browser desktop/mobile, save/apply/reload/delete/privacy, Plus Jakarta Sans,
+  475 backend tests, 216 storefront tests, build/audit, backup, readiness
+  41/42, exact runtime asset, dan public smoke lulus. Release sign-off tetap
+  satu blocker dan provider tidak diaktifkan oleh batch ini.
+
 ## 2026-08-29 - Admin dashboard authoritative trend ranges deployed
 
 - Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /
