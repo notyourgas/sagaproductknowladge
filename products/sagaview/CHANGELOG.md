@@ -1,5 +1,22 @@
 # SagaView Changelog
 
+## 2026-08-29 - S345 offline authenticated-UAT evidence review
+
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan
+  `BUSINESS_READY=false`.
+- Before: kelengkapan dan privasi evidence S344 baru diketahui saat Finalize
+  yang juga mengulang provenance live.
+- After: exact source `fe5b59b4b41b517fa9fdfdfbd40a45e2a496e03f`
+  menyediakan review offline fail-closed untuk 12 gate, hash, traversal,
+  ukuran/nama file, konfirmasi, dan sensitive text sebelum Finalize.
+- Evidence: focused 4/4, full 267/267, PowerShell/pwsh, full check/build/budget,
+  npm audit nol, dan review preflight pending yang menghasilkan 29 blocker.
+- Boundary: tidak ada jaringan, credential, foto/path customer, API/database,
+  deploy, atau aktivasi. Screenshot/PDF tetap memerlukan visual review manual.
+- Next gate: jalankan authenticated manual UAT, sanitasi evidence, ulang S345
+  sampai `ready_for_finalize`, lalu jalankan S344 Finalize.
+
 ## 2026-08-29 - S344 authenticated business-readiness UAT harness
 
 - Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
