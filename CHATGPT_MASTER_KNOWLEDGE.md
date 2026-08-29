@@ -1,5 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+SagaView S353 exact pushed source
+`eff8bb40d3a20b60abdf0cfd9c83883e28b3a6a5` berstatus `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Writer receipt UAT S70, S344,
+dan S345 kini menolak evidence root berupa Windows junction/symlink/reparse
+point serta receipt lama berupa reparse point atau NTFS hard link sebelum
+write/replace. Regression 4/4 merah lalu 5/5 hijau, focused 54/54, full
+292/292, PowerShell/pwsh, build/budget/audit, diff check, clean, dan remote
+exact lulus. Production tidak berubah; authenticated UAT serta visual review
+masih wajib sehingga `BUSINESS_READY=false`.
+
 SagaBook gate bukti pilot dua studio feature
 `ec6ea76132b9dce4530e3c822db198785c2f1fc2` telah merge melalui PR #76 ke
 exact main `a7de78737a64d1213799b97d0b6294839233b3e6` dengan status `MERGED /

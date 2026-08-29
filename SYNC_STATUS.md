@@ -12,12 +12,33 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-30T02:05:00+07:00 |
-| Branch aktif | `codex/s359-pilot-evidence-knowledge` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-30T02:12:00+07:00 |
+| Branch aktif | `codex/s353-sagaview-uat-receipt-path-guard-knowledge` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `c2a38f904a8991898ebb74ea83ea6f5e39472db0` |
-| Informasi terakhir disinkronkan | SagaBook two-studio pilot evidence gate pada exact main `a7de78737a64d1213799b97d0b6294839233b3e6`. |
-| Status sinkronisasi | `CONFIRMED / MERGED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap `435dbfd252759fd8b7d43f44af69edfb39ee2102` dan `BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `e6dca3aeaa1c82c64b3e0fac4d4771d1b5899230` |
+| Informasi terakhir disinkronkan | SagaView S353 UAT receipt destination guard pada exact source `eff8bb40d3a20b60abdf0cfd9c83883e28b3a6a5`. |
+| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan `BUSINESS_READY=false`. |
+
+## SagaView S353 UAT receipt destination guard
+
+- Exact source `eff8bb40d3a20b60abdf0cfd9c83883e28b3a6a5` sudah push.
+- Writer S70, S344, dan S345 menolak direktori receipt reparse point serta
+  receipt lama berupa reparse point atau NTFS hard link sebelum write/replace.
+- Regression red 4/4 lalu green 5/5, focused 54/54, full 292/292,
+  PowerShell/pwsh, format/lint/typecheck, client+SSR build, bundle budget,
+  npm audit nol, diff check, clean, dan remote exact lulus.
+- Production tidak berubah; authenticated UAT 12 gate dan visual review masih
+  pending sehingga `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi SagaView S353
+
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook two-studio pilot evidence gate
 

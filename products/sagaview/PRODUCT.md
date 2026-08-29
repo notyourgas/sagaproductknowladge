@@ -1,6 +1,21 @@
 # SagaView Product Knowledge
 
-Updated: 30 Agustus 2026 01:13 WIB
+Updated: 30 Agustus 2026 02:12 WIB
+
+SagaView S353 exact source
+`eff8bb40d3a20b60abdf0cfd9c83883e28b3a6a5` sudah `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Writer receipt UAT pada S70,
+S344, dan reviewer S345 kini menolak direktori tujuan yang merupakan Windows
+junction/symlink/reparse point. Receipt lama yang berupa reparse point atau
+NTFS hard link juga ditolak sebelum temp dibuat atau atomic replace dilakukan,
+sehingga path lokal semu tidak dapat meneruskan receipt ke file lain.
+
+Regression awal 4/4 gagal lalu 5/5 hijau dengan filesystem disposable;
+focused 54/54 dan full 65 file/292 test lulus. Parser Windows PowerShell/pwsh,
+format/lint/typecheck, client 2.129 modul + SSR 203 modul, bundle 312,7 KiB
+dari 450 KiB, npm audit nol, diff check, clean exact commit, dan remote exact
+juga lulus. Production tidak diubah; authenticated UAT 12 gate dan visual
+review tetap wajib sehingga `BUSINESS_READY=false`.
 
 SagaView S352 exact source
 `23199139843e3850d7d8f64c751b1cd379e41eed` sudah `PUSHED /

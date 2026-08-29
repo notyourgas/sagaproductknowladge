@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-30 - SagaView S353 UAT receipt destination guard sync
+
+- Ringkasan: menyinkronkan guard penulisan receipt terhadap Windows junction,
+  symlink/reparse point, dan NTFS hard link.
+- Provenance: exact pushed source
+  `eff8bb40d3a20b60abdf0cfd9c83883e28b3a6a5`; production tidak diubah.
+- Evidence: regression red 4/4 lalu green 5/5, focused 54/54, full 292/292,
+  PowerShell/pwsh, format/lint/typecheck, client+SSR build, bundle budget,
+  npm audit nol, diff check, clean, dan remote exact.
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; `BUSINESS_READY=false`.
+- Dokumen terdampak: Product, feature ledger/changelog SagaView, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-08-30 - SagaBook two-studio pilot evidence gate sync
 
 - Ringkasan: menyinkronkan validator public-safe yang mengikat dua pilot,

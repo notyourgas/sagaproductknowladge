@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-30 - SagaView S353 UAT receipt destination guard
+
+- Exact pushed source `eff8bb40d3a20b60abdf0cfd9c83883e28b3a6a5`
+  membuat writer S70/S344/S345 menolak direktori receipt reparse point serta
+  receipt lama berupa reparse point atau NTFS hard link sebelum write/replace.
+- Regression red 4/4 lalu green 5/5 dengan junction/hard link disposable;
+  focused 54/54, full 292/292, parser PowerShell/pwsh, build client+SSR, bundle
+  budget, audit dependency nol, diff check, clean, dan remote exact lulus.
+- Perubahan hanya harness/test/runbook. Production tidak berubah;
+  authenticated UAT dan visual review masih pending sehingga
+  `BUSINESS_READY=false`.
+
 ## 2026-08-30 - SagaBook two-studio pilot evidence gate
 
 - Feature `ec6ea76132b9dce4530e3c822db198785c2f1fc2` merge melalui PR #76 ke exact

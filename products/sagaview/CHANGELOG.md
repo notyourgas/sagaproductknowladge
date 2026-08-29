@@ -1,5 +1,25 @@
 # SagaView Changelog
 
+## 2026-08-30 - S353 UAT receipt destination guard
+
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan
+  `BUSINESS_READY=false`.
+- Before: atomic writer S352 belum menolak evidence root berupa Windows
+  junction, sehingga path yang tampak lokal dapat mencapai lokasi tertaut.
+- After: exact source `eff8bb40d3a20b60abdf0cfd9c83883e28b3a6a5`
+  menolak direktori receipt reparse point serta receipt lama yang merupakan
+  reparse point atau NTFS hard link sebelum write/replace.
+- Evidence: regression red 4/4 lalu green 5/5 dengan junction/hard link
+  disposable; focused 54/54; full 65 file/292 test; parser PowerShell/pwsh;
+  format/lint/typecheck; client+SSR build; bundle 312,7 KiB dari 450 KiB;
+  npm audit nol; diff check; worktree bersih; dan remote exact.
+- Boundary: hanya harness/test/runbook dengan data sintetis; tidak ada UI/API/
+  database, data customer, deploy, atau perubahan production.
+- Next gate: authenticated manual UAT 12 gate dengan evidence sintetis
+  tersanitasi pada direktori/file biasa, visual review, reviewer S345, lalu
+  S344 Finalize.
+
 ## 2026-08-30 - S352 atomic UAT receipt writes
 
 - Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
