@@ -76,9 +76,13 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 - Launch UAT 15 langkah sudah lulus 15/15 dan sign-off diizinkan. Checkout
   publik tetap `PRODUCTION_READINESS_BLOCKED` hanya sampai release sign-off
   dicatat; deployment acceptance hotfix tidak membuat payment intent baru.
-- Release aktif `20260830-d213e3a` dengan exact material source
-  `d213e3a34b316387a99a177c157b3ee4a4cf6715` melayani production;
-  rollback langsung `20260830-878a570` dipertahankan. Pencarian global Admin
+- Release aktif `20260830-7641974` dengan exact material source
+  `764197409fd21a9fbfd2659a7a232fdf4d16e0ca` melayani production;
+  rollback langsung `20260830-d213e3a` dipertahankan. Beranda Admin kini
+  memfokuskan antrean `Perlu tindakan` pada kategori yang masih aktif secara
+  default, menyediakan tampilan `Semua`, metadata prioritas server-authoritative,
+  label urgensi tekstual, status `Tuntas`, live announcement, dan success empty
+  state. Pencarian global Admin
   kini dapat dioperasikan end-to-end dengan ArrowUp/ArrowDown, Enter, dan
   Escape pada desktop maupun mobile. Opsi aktif mempunyai visual state serta
   kontrak `aria-activedescendant`/`aria-selected`; loading, error, dan query

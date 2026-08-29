@@ -1,5 +1,17 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+COYABAG Admin focused action queue aktif pada exact material source
+`764197409fd21a9fbfd2659a7a232fdf4d16e0ca`, immutable release
+`20260830-7641974`, dengan rollback `20260830-d213e3a`. Beranda Admin kini
+memprioritaskan kategori tindakan aktif secara default, menyediakan tampilan
+seluruh status, metadata prioritas dari backend, label urgensi tekstual, status
+`Tuntas`, live announcement, dan success empty state. Laravel 489 total,
+storefront 216/216, browser desktop/mobile, build/audit, backup, worker, exact
+runtime contract, serta public smoke lulus. Status tetap
+`PRODUCTION_DEPLOYED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`;
+readiness fail-closed 41/42 karena release sign-off dan provider/commerce tidak
+diaktifkan.
+
 SagaView S356 exact pushed source
 `e624bf4395996663816e168cbf0a90ebc4fd4692` berstatus `PUSHED /
 LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Writer receipt UAT S70, S344,

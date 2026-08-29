@@ -12,12 +12,36 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-30T05:20:00+07:00 |
-| Branch aktif | `codex/knowledge-s362-closing-staff` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-30T06:30:00+07:00 |
+| Branch aktif | `codex/coyabag-admin-uiux-knowledge` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `b8a4073d16120d7e1efdd7d527d5de8c8b3698cb` |
-| Informasi terakhir disinkronkan | SagaBook Closing Staff S362 pada exact main `b37db0810f64731e46f18d026452a6cf3f65e86c`. |
-| Status sinkronisasi | `CONFIRMED / MERGED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`; production tidak berubah. |
+| Baseline sebelum pembaruan | `958ec803965a2257b8955aeca74ffc3bae2a2fdd` |
+| Informasi terakhir disinkronkan | COYABAG Admin focused action queue, exact material source `764197409fd21a9fbfd2659a7a232fdf4d16e0ca`, release `20260830-7641974`. |
+| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`; readiness fail-closed 41/42. |
+
+## COYABAG Admin focused action queue
+
+- Exact material source `764197409fd21a9fbfd2659a7a232fdf4d16e0ca`
+  aktif pada immutable release `20260830-7641974`; rollback
+  `20260830-d213e3a` tersedia.
+- Beranda Admin kini memfokuskan antrean pada kategori tindakan aktif dan tetap
+  menyediakan tampilan seluruh status. Priority label, status `Tuntas`, live
+  announcement, serta empty state tersedia tanpa mengubah permission atau
+  tujuan tindakan.
+- Laravel 489 total: 488 lulus, satu controlled skip, 4.704 assertion;
+  storefront 216/216, browser desktop/mobile, build/audit, backup, worker,
+  exact runtime contract, dan public smoke lulus.
+- Readiness tetap 41/42 karena release sign-off. Commerce/provider tidak
+  diaktifkan dan tidak ada migrasi atau mutasi order, pembayaran, maupun stok.
+
+## File yang berubah pada sinkronisasi COYABAG focused action queue
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook Closing Staff S362 exact-main integration
 

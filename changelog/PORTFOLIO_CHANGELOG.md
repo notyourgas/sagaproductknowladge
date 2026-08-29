@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-30 - COYABAG Admin focused operational action queue
+
+- Exact material source `764197409fd21a9fbfd2659a7a232fdf4d16e0ca`
+  aktif pada immutable release `20260830-7641974`; rollback
+  `20260830-d213e3a` tersedia.
+- Antrean Beranda Admin kini berfokus pada kategori aktif, tetap mempunyai
+  tampilan seluruh status, serta menunjukkan prioritas dan penyelesaian lewat
+  teks dan state aksesibel. Permission dan tujuan tindakan tetap sama.
+- Laravel 489 total, storefront 216/216, browser desktop/mobile, build/audit,
+  backup, worker, exact runtime asset, serta public smoke lulus. Readiness tetap
+  41/42 dan commerce/provider tidak diaktifkan.
+
 ## 2026-08-30 - SagaView S356 UAT receipt post-switch integrity
 
 - Exact pushed source `e624bf4395996663816e168cbf0a90ebc4fd4692`

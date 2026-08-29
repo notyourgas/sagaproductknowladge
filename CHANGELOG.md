@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-30 - COYABAG Admin focused action queue sync
+
+- Ringkasan: menyinkronkan Beranda Admin yang kini memfokuskan antrean pada
+  kategori tindakan aktif dengan prioritas server-authoritative dan state
+  aksesibel.
+- Provenance: exact material source
+  `764197409fd21a9fbfd2659a7a232fdf4d16e0ca`, immutable release
+  `20260830-7641974`, rollback `20260830-d213e3a`.
+- Evidence: Laravel 489 total, storefront 216/216, browser desktop/mobile,
+  build/audit, backup, worker, exact runtime contract, dan public smoke lulus.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /
+  NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`; readiness 41/42.
+- Dokumen terdampak: Product/changelog COYABAG, portfolio, master knowledge,
+  root changelog, dan sync status.
+
 ## 2026-08-30 - SagaView S356 UAT receipt post-switch integrity sync
 
 - Ringkasan: menyinkronkan verifikasi byte receipt sesudah atomic switch dan

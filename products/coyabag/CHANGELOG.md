@@ -4,6 +4,23 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-30 - Admin focused action queue deployed
+
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /
+  NOT_PRODUCTION_ACTIVATED`; exact material source
+  `764197409fd21a9fbfd2659a7a232fdf4d16e0ca`, immutable release
+  `20260830-7641974`, rollback `20260830-d213e3a`.
+- Beranda Admin kini menampilkan kategori tindakan aktif secara default dan
+  tetap menyediakan tampilan seluruh status. Backend menetapkan status aktif
+  serta prioritas; UI menampilkan label urgensi, status `Tuntas`, live
+  announcement, dan empty state yang dapat ditindaklanjuti.
+- Laravel 489 total: 488 lulus, satu controlled skip, 4.704 assertion;
+  storefront 216/216, browser acceptance desktop/mobile, build, audit
+  dependency nol, backup, worker, exact runtime contract, dan public smoke
+  lulus.
+- Readiness tetap fail-closed 41/42 karena release sign-off. Tidak ada aktivasi
+  provider/commerce, migrasi, mutasi order, pembayaran, atau stok.
+
 ## 2026-08-30 - Admin global search keyboard navigation deployed
 
 - Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /
