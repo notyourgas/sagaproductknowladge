@@ -1,5 +1,21 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-29 - SagaBook S358 release receipt binding sync
+
+- Ringkasan: mengikat receipt verifikasi lokal ke exact source/tree, rollback,
+  manifest, metadata, verifier, dan checksum artifact serta menolak path
+  restore Windows terlalu panjang sebelum state dibuat.
+- Provenance: feature source `0a2d9c6f103cacb2cdfb308105821e2e6fffb2c0`
+  merge melalui PR #75 ke exact main
+  `435dbfd252759fd8b7d43f44af69edfb39ee2102`.
+- Evidence: receipt matrix 7/7, tamper matrix 7/7, full PHP 1.302/1.302
+  (14.636), typecheck/build/Pint, dependency audit nol, exact-main artifact dua
+  disk, disposable restore, receipt binding ulang, dan cleanup lulus.
+- Klasifikasi: `CONFIRMED / MERGED / RELEASE_RECEIPT_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap `20260829062031-b2790d6`.
+- Dokumen terdampak: Product, feature ledger/changelog SagaBook, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-08-29 - COYABAG Admin inventory count import sync
 
 - Ringkasan: menyinkronkan import hitungan CSV ke draft stock opname dengan

@@ -12,12 +12,34 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-29 23:24 WIB |
-| Branch aktif | `codex/coyabag-payment-reconcile-20260829` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-30 00:08 WIB |
+| Branch aktif | `codex/s358-sagabook-receipt-knowledge` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `0d5b6a16859123b6625fd1f73a2e157d6af3142b` |
-| Informasi terakhir disinkronkan | COYABAG Admin inventory count import. |
-| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED / NOT_PRODUCTION_ACTIVATED`; readiness 41/42 dan `BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `4d5c0b883cc72ee079b805cc55debaf9e9505371` |
+| Informasi terakhir disinkronkan | SagaBook S358 immutable release receipt binding. |
+| Status sinkronisasi | `CONFIRMED / MERGED / RELEASE_RECEIPT_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap dan `BUSINESS_READY=false`. |
+
+## SagaBook S358 immutable release receipt binding
+
+- Feature source `0a2d9c6f103cacb2cdfb308105821e2e6fffb2c0` merge melalui PR #75 ke exact main
+  `435dbfd252759fd8b7d43f44af69edfb39ee2102`.
+- Receipt immutable mengikat exact source/tree, rollback ancestor, manifest,
+  metadata, verifier, dan checksum artifact; verifier terpisah menolak replay.
+- Receipt matrix 7/7, tamper matrix 7/7, full PHP 1.302/1.302, build/typecheck,
+  Pint, dependency audit nol, artifact exact-main dua disk, disposable restore,
+  receipt binding ulang, dan cleanup lulus.
+- Production tetap release `20260829062031-b2790d6`; deployment belum
+  diotorisasi.
+
+## File yang berubah pada sinkronisasi SagaBook S358
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG Admin inventory count import
 

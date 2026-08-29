@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-29 - SagaBook S358 immutable release receipt binding
+
+- Feature source `0a2d9c6f103cacb2cdfb308105821e2e6fffb2c0`
+  merge melalui PR #75 ke exact main
+  `435dbfd252759fd8b7d43f44af69edfb39ee2102` dan mengikat receipt lokal ke
+  source/tree, rollback, manifest, metadata, verifier, dan checksum artifact.
+- Matriks receipt 7/7 menolak lima replay dan path restore Windows terlalu
+  panjang sebelum state dibuat; matriks tamper lama 7/7 tetap hijau.
+- Full PHP 1.302/1.302, typecheck/build/Pint, dependency audit nol, artifact
+  exact-main dua disk, disposable restore, dan cleanup lulus. Status `MERGED /
+  RELEASE_RECEIPT_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak
+  berubah.
+
 ## 2026-08-29 - COYABAG Admin inventory count import
 
 - Exact source `194eab792a4ad3d21d03475148da5edd12428418` aktif pada
