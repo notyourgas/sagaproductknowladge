@@ -1,6 +1,6 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 30 Agustus 2026 06:35 WIB
+Evidence cut-off: 30 Agustus 2026 06:14 WIB
 
 Release rehearsal S363 telah `LOCAL_VALIDATED / RELEASE_ARTIFACT_READY /
 IMPLEMENTED_NOT_DEPLOYED` pada exact main kumulatif

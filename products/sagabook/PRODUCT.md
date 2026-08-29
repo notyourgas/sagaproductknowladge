@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 30 Agustus 2026 06:35 WIB
+Updated: 30 Agustus 2026 06:14 WIB
 Evidence status: kandidat kumulatif exact main `b37db0810f64731e46f18d026452a6cf3f65e86c` memiliki archive, bundle, metadata, dan manifest identik pada dua disk fisik serta lulus dua disposable restore dan matriks receipt 7/7. Status `LOCAL_VALIDATED / RELEASE_ARTIFACT_READY / IMPLEMENTED_NOT_DEPLOYED`; production aktif tetap exact source `435dbfd252759fd8b7d43f44af69edfb39ee2102`, release `20260829175230-435dbfd`, rollback `20260829062031-b2790d6`; `BUSINESS_READY=false` sampai deploy terotorisasi, UAT runtime baru, dua pilot nyata, dan provider canary selesai
 
 ## Tujuan dokumen
