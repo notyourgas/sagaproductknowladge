@@ -17,19 +17,19 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | `e70dc680bd780745bf2921e39561a04dc8ab2799` |
 | Informasi terakhir disinkronkan | SagaBook S358 immutable release receipt binding. |
-| Status sinkronisasi | `CONFIRMED / PUSHED / RELEASE_RECEIPT_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap dan `BUSINESS_READY=false`. |
+| Status sinkronisasi | `CONFIRMED / MERGED / RELEASE_RECEIPT_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap dan `BUSINESS_READY=false`. |
 
 ## SagaBook S358 immutable release receipt binding
 
-- Exact source `0a2d9c6f103cacb2cdfb308105821e2e6fffb2c0` sudah pushed
-  melalui PR #75.
+- Feature source `0a2d9c6f103cacb2cdfb308105821e2e6fffb2c0` merge melalui PR #75 ke exact main
+  `435dbfd252759fd8b7d43f44af69edfb39ee2102`.
 - Receipt immutable mengikat exact source/tree, rollback ancestor, manifest,
   metadata, verifier, dan checksum artifact; verifier terpisah menolak replay.
 - Receipt matrix 7/7, tamper matrix 7/7, full PHP 1.302/1.302, build/typecheck,
-  Pint, dependency audit nol, artifact dua disk, disposable restore, dan
-  cleanup lulus.
-- Production tetap release `20260829062031-b2790d6`; merge dan deployment
-  belum diotorisasi.
+  Pint, dependency audit nol, artifact exact-main dua disk, disposable restore,
+  receipt binding ulang, dan cleanup lulus.
+- Production tetap release `20260829062031-b2790d6`; deployment belum
+  diotorisasi.
 
 ## File yang berubah pada sinkronisasi SagaBook S358
 

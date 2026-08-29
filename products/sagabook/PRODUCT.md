@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
 Updated: 29 Agustus 2026 23:13 WIB
-Evidence status: recovery OTS S354 dan hardening release S355–S357 sudah kumulatif pada exact main `00b718f4505746e8ee520d18acf5342bb4e1d7ad`; S358 sudah pushed pada exact source `0a2d9c6f103cacb2cdfb308105821e2e6fffb2c0` melalui PR #75 tetapi belum merge/deploy. Production tetap exact source `b2790d64232b24222c3bc383c3b445d760786f2d`, release `20260829062031-b2790d6`, dan `BUSINESS_READY=false` hanya menunggu pilot dua studio serta provider canary
+Evidence status: recovery OTS S354 dan hardening release S355–S358 sudah kumulatif pada exact main `435dbfd252759fd8b7d43f44af69edfb39ee2102` tetapi belum dideploy. Production tetap exact source `b2790d64232b24222c3bc383c3b445d760786f2d`, release `20260829062031-b2790d6`, dan `BUSINESS_READY=false` hanya menunggu pilot dua studio serta provider canary
 
 ## Tujuan dokumen
 
@@ -16,14 +16,16 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
 
-- S358 menambahkan receipt verifikasi release immutable yang mengikat exact
+- S358 pada feature source `0a2d9c6f103cacb2cdfb308105821e2e6fffb2c0`
+  telah merge melalui PR #75 ke exact main
+  `435dbfd252759fd8b7d43f44af69edfb39ee2102` dan menambahkan receipt verifikasi release immutable yang mengikat exact
   source/tree, rollback ancestor, manifest, metadata, verifier, dan checksum
   artifact. Verifier terpisah menolak replay kandidat, rollback, manifest,
   verifier, atau artifact; path restore Windows yang melampaui batas aman juga
   ditolak sebelum state dibuat. Matriks receipt 7/7, matriks tamper lama 7/7,
   full PHP 1.302/1.302 (14.636 assertion), TypeScript/build/Pint, dependency
   audit nol, artifact exact-commit pada dua disk fisik, dan disposable restore
-  dengan cleanup bersih lulus. Status `CONFIRMED / PUSHED /
+  dengan cleanup bersih lulus. Status `CONFIRMED / MERGED /
   RELEASE_RECEIPT_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak
   berubah.
 
