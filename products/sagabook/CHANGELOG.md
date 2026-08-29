@@ -1,5 +1,22 @@
 # SagaBook Changelog
 
+## 2026-08-29 - Hardening mirror artifact release S355
+
+- Mirror artifact lokal sekarang menerima media removable NTFS/ReFS yang
+  sehat sehingga salinan dapat benar-benar berada pada disk fisik berbeda.
+- Guard volume/disk berbeda, kapasitas minimum, reparse point, filesystem,
+  health, checksum lintas-copy, exact Git bundle HEAD, dan rollback ancestry
+  tetap fail-closed.
+- Feature source `c3724aa6a9512d7c9a1a6303743bc4be1628a654` merge melalui
+  PR #72 ke exact main `04548e539c52924a9629a5db1670ee80bed99b93`.
+- Red-green 1/1 (58 assertion), related release 19/19 (315), full PHP
+  1.299/1.299 (14.549 assertion), PowerShell parse, TypeScript/build, dan
+  dependency audit nol lulus. Artifact exact-main pada dua disk lulus
+  checksum, manifest, bundle, dan rollback-ancestry verification.
+- Status `CONFIRMED / MERGED / RELEASE_ARTIFACT_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Production tetap release
+  `20260829062031-b2790d6`; deployment belum diotorisasi.
+
 ## 2026-08-29 - Recovery idempotensi OTS S354 merged, belum deploy
 
 - Retry `Mulai sekarang` tidak lagi konflik hanya karena tanggal/jam client,

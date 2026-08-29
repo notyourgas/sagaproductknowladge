@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-29 - SagaBook S355 release artifact mirror hardening
+
+- Exact main `04548e539c52924a9629a5db1670ee80bed99b93` memungkinkan mirror
+  removable NTFS/ReFS yang sehat sambil mempertahankan disk terpisah,
+  capacity, reparse, checksum, bundle, dan rollback guard.
+- Full PHP 1.299/1.299, TypeScript/build, dependency audit, serta artifact
+  exact-main pada dua disk lulus.
+- Status `MERGED / RELEASE_ARTIFACT_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production SagaBook dan produk lain tidak berubah.
+
 ## 2026-08-29 - SagaView S346 binary evidence privacy preflight
 
 - Exact pushed source `05ce1503e86d0846cd75d1f2ce7177c1b133cbf8`

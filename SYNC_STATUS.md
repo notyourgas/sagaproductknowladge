@@ -12,12 +12,31 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-29 18:12 WIB |
-| Branch aktif | `codex/s346-sagaview-knowledge` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-29 18:18 WIB |
+| Branch aktif | `codex/knowledge-s355-release-artifact-mirror` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `1620fcc` |
-| Informasi terakhir disinkronkan | SagaView S345-S346 evidence review dan binary privacy preflight. |
-| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan `BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `9eb68f3` |
+| Informasi terakhir disinkronkan | SagaBook S355 hardening mirror artifact release. |
+| Status sinkronisasi | `CONFIRMED / MERGED / RELEASE_ARTIFACT_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan `BUSINESS_READY=false`. |
+
+## SagaBook S355 release artifact mirror hardening
+
+- Exact main `04548e539c52924a9629a5db1670ee80bed99b93` mendukung media
+  removable NTFS/ReFS sehat sebagai mirror pada disk fisik berbeda.
+- Guard capacity, reparse point, filesystem/health, checksum lintas-copy,
+  exact bundle HEAD, dan rollback ancestry lulus.
+- Related 19/19, full PHP 1.299/1.299, TypeScript/build, dependency audit nol,
+  serta artifact exact-main dua disk lulus. Production tidak berubah.
+
+## File yang berubah pada sinkronisasi SagaBook S355
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaView S346 binary evidence privacy preflight
 

@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-29 - SagaBook S355 release artifact mirror sync
+
+- Ringkasan: mencatat dukungan mirror removable sehat pada disk fisik terpisah
+  dengan seluruh guard release tetap fail-closed.
+- Provenance: feature source `c3724aa6a9512d7c9a1a6303743bc4be1628a654`,
+  PR #72, exact main `04548e539c52924a9629a5db1670ee80bed99b93`.
+- Evidence: related 19/19 (315), full PHP 1.299/1.299 (14.549),
+  PowerShell parse, build/typecheck, dependency audit nol, serta artifact
+  exact-main dua disk dengan checksum/bundle/rollback verification.
+- Klasifikasi: `CONFIRMED / MERGED / RELEASE_ARTIFACT_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap `20260829062031-b2790d6`.
+- Dokumen terdampak: Product, Dossier, feature ledger/changelog SagaBook,
+  portfolio, root changelog, dan sync status.
+
 ## 2026-08-29 - SagaView S346 binary evidence privacy preflight sync
 
 - Ringkasan: menambahkan pemeriksaan fail-closed signature, struktur,
