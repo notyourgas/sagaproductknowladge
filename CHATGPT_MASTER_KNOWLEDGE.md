@@ -13,6 +13,15 @@ restore disposable, dan cleanup lulus. Production tetap
 `20260829062031-b2790d6`; `BUSINESS_READY=false` masih menunggu pilot dua studio
 dan provider canary.
 
+SagaView S350 exact pushed source
+`3b01db857c28989575960c7e9c29055660403f0c` berstatus `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. S344 Finalize kini wajib memakai
+review S345-S349 yang siap dan cocok dengan exact kandidat, hash snapshot
+preflight/checklist, serta indeks gate/path/size/SHA-256 evidence yang sama.
+Focused 24/24, full 282/282, PowerShell/pwsh, build/budget/audit, diff check,
+dan remote exact lulus. Production tidak berubah; authenticated UAT dan visual
+review masih wajib, sehingga `BUSINESS_READY=false`.
+
 SagaView S349 exact pushed source
 `78624c9263994a642de317c2d177a1d7d76aba7c` berstatus `PUSHED /
 LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Reviewer evidence authenticated
@@ -200,9 +209,9 @@ diterapkan karena seluruhnya belum dipetakan (`applied=false`). Status
 `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`;
 authenticated Owner/Staff UAT dan mapping legacy masih pending.
 
-COYABAG storefront/API/admin kini pada release `20260829-b073a48` dengan exact
-source `b073a484cb18181a4c4365412f37804b816756c2`; rollback
-`20260829-8c91ad2` tersedia. Dashboard admin memakai Plus Jakarta Sans variable
+COYABAG storefront/API/admin kini pada release `20260829-194eab7` dengan exact
+source `194eab792a4ad3d21d03475148da5edd12428418`; rollback
+`20260829-b073a48` tersedia. Dashboard admin memakai Plus Jakarta Sans variable
 self-hosted serta design token modern untuk seluruh interface operasional,
 sementara wordmark mempertahankan font logo resmi. Application shell memiliki
 sidebar collapse persisten, breadcrumb, active route, pencarian desktop/mobile,
@@ -215,7 +224,11 @@ dipersistenkan dan preferensi gagal secara aman. Admin Produk mendukung bulk
 publish draft siap publikasi dan bulk archive secara responsive, permission-
 gated, transaksional, revision/context-aware, dan ter-audit. Admin Inventory
 dapat mengekspor snapshot CSV sesuai antrean/pencarian aktif dengan permission,
-throttle, audit tanpa PII, dan sanitasi formula. Admin System
+throttle, audit tanpa PII, dan sanitasi formula. Owner/Admin juga dapat
+mengimpor hitungan CSV maksimal 100 baris menjadi draft stock opname. Import
+tidak mengubah saldo langsung dan tetap melewati revision guard, mutex,
+approval operator kedua, serta ledger; preview actor-bound, single-use,
+kedaluwarsa 15 menit, permission-gated, dan throttled. Admin System
 Health tetap terlindungi oleh regression test untuk import ikon Feather
 `Truck`.
 Saga Platform exact source

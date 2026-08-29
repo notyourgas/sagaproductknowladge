@@ -1,6 +1,22 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 29 Agustus 2026 21:08 WIB
+Evidence cut-off: 29 Agustus 2026 23:16 WIB
+
+S350 reviewer-to-Finalize binding: exact pushed source
+`3b01db857c28989575960c7e9c29055660403f0c` menutup bypass saat S344
+Finalize dapat dipanggil langsung tanpa receipt review S345-S349. Finalize kini
+menolak review hilang, belum siap, kandidat berbeda, atau berubah; snapshot
+preflight/checklist dikunci dengan SHA-256 dan indeks gate/path/size/hash
+evidence dibandingkan ulang setelah provenance production terverifikasi.
+
+Ledger lulus: regression focused merah 2 lalu hijau; focused S344-S349 24/24,
+full 282/282, parser Windows PowerShell/pwsh, format/lint/typecheck,
+client+SSR build, bundle 312,7 KiB dari 450 KiB, npm audit nol, diff check,
+worktree bersih, serta remote exact. Boundary hanya tooling/test/runbook;
+tidak ada UI/API/database, data customer, atau mutasi production. Belum lulus:
+authenticated manual UAT 12 gate dan visual review. Status `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S343 dan
+`BUSINESS_READY=false`.
 
 S349 NTFS hard-link evidence guard: exact pushed source
 `78624c9263994a642de317c2d177a1d7d76aba7c` menutup escape path yang tidak

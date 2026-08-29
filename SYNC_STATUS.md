@@ -12,10 +12,10 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-29 23:13 WIB |
+| Waktu pembaruan terakhir | 2026-08-30 00:08 WIB |
 | Branch aktif | `codex/s358-sagabook-receipt-knowledge` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `e70dc680bd780745bf2921e39561a04dc8ab2799` |
+| Baseline sebelum pembaruan | `4d5c0b883cc72ee079b805cc55debaf9e9505371` |
 | Informasi terakhir disinkronkan | SagaBook S358 immutable release receipt binding. |
 | Status sinkronisasi | `CONFIRMED / MERGED / RELEASE_RECEIPT_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap dan `BUSINESS_READY=false`. |
 
@@ -36,6 +36,49 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `products/sagabook/PRODUCT.md`
 - `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
 - `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
+
+## COYABAG Admin inventory count import
+
+- Exact source `194eab792a4ad3d21d03475148da5edd12428418` aktif pada release
+  `20260829-194eab7`; rollback `20260829-b073a48` tersedia.
+- Owner/Admin dapat mengimpor hitungan CSV menjadi draft stock opname tanpa
+  mutasi saldo langsung. Preview actor-bound dan single-use; permission,
+  throttle, revision guard, mutex, approval operator kedua, dan audit tetap
+  berlaku.
+- Backend 486 total, storefront 216/216, browser desktop/mobile, build/audit,
+  backup, worker, readiness 41/42, exact runtime asset, dan public smoke lulus.
+- Release sign-off tetap satu blocker; provider dan commerce tidak diaktifkan.
+
+## File yang berubah pada sinkronisasi COYABAG Admin inventory count import
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
+
+## SagaView S350 reviewer-to-Finalize binding
+
+- Exact source `3b01db857c28989575960c7e9c29055660403f0c` sudah push.
+- S344 Finalize kini menolak review hilang, belum siap, stale, atau kandidat
+  berbeda, lalu membandingkan hash snapshot kontrol dan indeks evidence yang
+  sudah direview sebelum membuat receipt readiness.
+- Focused red 2 lalu green, focused 24/24, full 282/282, PowerShell/pwsh,
+  format/lint/typecheck, client+SSR build, bundle budget, npm audit nol, diff
+  check, worktree bersih, dan remote exact lulus.
+- Production tidak berubah; authenticated UAT 12 gate dan visual review masih
+  pending sehingga `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi SagaView S350
+
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/CHANGELOG.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `CHANGELOG.md`

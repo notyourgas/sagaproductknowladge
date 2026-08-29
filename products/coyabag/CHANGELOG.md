@@ -4,6 +4,25 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-29 - Admin inventory count import deployed
+
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /
+  NOT_PRODUCTION_ACTIVATED`; exact source
+  `194eab792a4ad3d21d03475148da5edd12428418`, immutable release
+  `20260829-194eab7`, rollback `20260829-b073a48`.
+- Owner/Admin dapat mengunggah CSV `sku,counted_stock`, memeriksa current,
+  counted, delta, serta ringkasan perubahan, kemudian membuat draft stock
+  opname. Loading, invalid file, connection error, preview, success, dan
+  recovery tersedia pada desktop/mobile dengan Plus Jakarta Sans dan Feather.
+- Import dibatasi 100 baris/256 KB UTF-8. Token preview actor-bound, single-use,
+  kedaluwarsa 15 menit, permission `inventory.manage`, dan throttle. Saldo tidak
+  berubah saat import; perubahan tetap memerlukan revision guard, mutex,
+  approval operator kedua, dan ledger stock opname.
+- Full backend 486 total: 485 lulus, satu controlled skip, 4.567 assertion;
+  storefront 216/216, browser Inventory desktop/mobile, build, dependency audit,
+  backup, readiness 41/42, exact route/runtime asset, worker, dan public smoke
+  lulus. Release sign-off tetap satu blocker dan aktivasi commerce tidak berubah.
+
 ## 2026-08-29 - Admin inventory snapshot export deployed
 
 - Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /

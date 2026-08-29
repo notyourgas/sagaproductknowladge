@@ -13,6 +13,30 @@
   RELEASE_RECEIPT_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak
   berubah.
 
+## 2026-08-29 - COYABAG Admin inventory count import
+
+- Exact source `194eab792a4ad3d21d03475148da5edd12428418` aktif pada
+  immutable release `20260829-194eab7`; rollback `20260829-b073a48` tersedia.
+- Owner/Admin dapat memvalidasi CSV hitungan stok dan membuat draft stock opname
+  tanpa mutasi saldo langsung. Batas file, actor-bound preview, permission,
+  throttle, mutex, revision guard, approval operator kedua, dan audit menjaga
+  perubahan tetap fail-closed.
+- Backend 486 total, storefront 216/216, browser desktop/mobile, build/audit,
+  backup, readiness 41/42, worker, exact runtime asset, dan public smoke lulus.
+  Release sign-off tetap satu blocker; aktivasi commerce tidak berubah.
+
+## 2026-08-29 - SagaView S350 reviewer-to-Finalize binding
+
+- Exact pushed source `3b01db857c28989575960c7e9c29055660403f0c`
+  membuat receipt review S345-S349 wajib dan terikat pada exact kandidat,
+  snapshot kontrol, serta indeks evidence sebelum S344 Finalize dapat selesai.
+- Regression focused merah 2 lalu hijau; focused 24/24 dan full 282/282,
+  parser PowerShell/pwsh, build client+SSR, bundle budget, dependency audit,
+  diff check, dan remote exact lulus.
+- Perubahan hanya pada harness/test/runbook. Production tidak berubah;
+  authenticated UAT dan visual review masih pending sehingga
+  `BUSINESS_READY=false`.
+
 ## 2026-08-29 - COYABAG Admin inventory snapshot export
 
 - Exact source `b073a484cb18181a4c4365412f37804b816756c2` aktif pada
