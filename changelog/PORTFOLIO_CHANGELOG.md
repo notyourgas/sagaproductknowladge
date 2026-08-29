@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-29 - SagaBook S357 release verifier tamper matrix
+
+- Exact main `00b718f4505746e8ee520d18acf5342bb4e1d7ad` menambahkan matrix
+  sintetis dengan satu baseline valid dan enam manipulasi fail-closed.
+- Manifest traversal, checksum mismatch, metadata deployed, archive `.env`,
+  bundle HEAD salah, dan rollback non-ancestor semuanya ditolak; cleanup 7/7.
+- Full PHP 1.301/1.301, typecheck/build/Pint, dependency audit, artifact dua
+  disk, dan restore mirror lulus. Status `MERGED / TAMPER_MATRIX_VALIDATED /
+  RELEASE_ARTIFACT_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak
+  berubah.
+
 ## 2026-08-29 - SagaView S348 evidence path containment
 
 - Exact pushed source `692912fb00adb0dd1df1e67c31a6b3b4ed248842`

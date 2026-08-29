@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 29 Agustus 2026 19:14 WIB
-Evidence status: recovery OTS S354, hardening mirror S355, dan verifier pemulihan artifact S356 sudah kumulatif pada exact main `9ffaa8f64417076773f23fc0f3abe4a949f1a227` tetapi belum dideploy; production tetap exact source `b2790d64232b24222c3bc383c3b445d760786f2d`, release `20260829062031-b2790d6`, dan `BUSINESS_READY=false` hanya menunggu pilot dua studio serta provider canary
+Updated: 29 Agustus 2026 20:14 WIB
+Evidence status: recovery OTS S354 dan hardening release S355–S357 sudah kumulatif pada exact main `00b718f4505746e8ee520d18acf5342bb4e1d7ad` tetapi belum dideploy; production tetap exact source `b2790d64232b24222c3bc383c3b445d760786f2d`, release `20260829062031-b2790d6`, dan `BUSINESS_READY=false` hanya menunggu pilot dua studio serta provider canary
 
 ## Tujuan dokumen
 
@@ -15,6 +15,17 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
+
+- S357 menambahkan acceptance tamper matrix sintetis pada exact main
+  `00b718f4505746e8ee520d18acf5342bb4e1d7ad`. Satu baseline valid lulus dan
+  enam manipulasi—manifest traversal, checksum mismatch, metadata deployed,
+  `.env` dalam archive, bundle HEAD salah, serta rollback non-ancestor—ditolak
+  fail-closed. Matrix dan cleanup 7/7, full PHP 1.301/1.301 (14.601
+  assertion), TypeScript/build/Pint, serta dependency audit nol lulus.
+  Artifact exact-main dua disk berhasil dipulihkan dari mirror. Status
+  `CONFIRMED / MERGED / TAMPER_MATRIX_VALIDATED /
+  RELEASE_ARTIFACT_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak
+  berubah.
 
 - S356 menambahkan verifier pemulihan lokal fail-closed pada exact main
   `9ffaa8f64417076773f23fc0f3abe4a949f1a227`. Tool memverifikasi manifest,

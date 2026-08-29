@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-29 - SagaBook S357 release tamper matrix sync
+
+- Ringkasan: mencatat acceptance matrix yang membuktikan verifier artifact
+  menolak enam manipulasi secara fail-closed dan membersihkan fixture.
+- Provenance: feature source `2e87557c5f6d1d26ce5089fa8d9daab18c0cf39c`,
+  PR #74, exact main `00b718f4505746e8ee520d18acf5342bb4e1d7ad`.
+- Evidence: matrix 7/7, contract 2/2 (52), full PHP 1.301/1.301 (14.601),
+  PowerShell parse, build/typecheck/Pint, dependency audit nol, serta exact-main
+  artifact dua disk dan disposable restore dari mirror lulus.
+- Klasifikasi: `CONFIRMED / MERGED / TAMPER_MATRIX_VALIDATED /
+  RELEASE_ARTIFACT_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap
+  `20260829062031-b2790d6`.
+- Dokumen terdampak: Product, feature ledger/changelog SagaBook, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-08-29 - SagaView S348 evidence path containment sync
 
 - Ringkasan: menolak symlink, junction, dan reparse point pada setiap segmen

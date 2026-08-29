@@ -12,12 +12,30 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-29 20:10 WIB |
-| Branch aktif | `codex/s348-sagaview-knowledge` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-29 20:14 WIB |
+| Branch aktif | `codex/s357-sagabook-tamper-matrix-knowledge` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `1577dc05de4ac089bca77fef74101bddedfd5f48` |
-| Informasi terakhir disinkronkan | SagaView S348 evidence path containment. |
-| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan `BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `5364287555ca8cb06752204dcd64fe694dc586eb` |
+| Informasi terakhir disinkronkan | SagaBook S357 release verifier tamper matrix. |
+| Status sinkronisasi | `CONFIRMED / MERGED / TAMPER_MATRIX_VALIDATED / RELEASE_ARTIFACT_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan `BUSINESS_READY=false`. |
+
+## SagaBook S357 release verifier tamper matrix
+
+- Exact main `00b718f4505746e8ee520d18acf5342bb4e1d7ad` menjalankan satu
+  baseline valid dan enam manipulasi fail-closed dengan fixture sintetis.
+- Matrix/cleanup 7/7, full PHP 1.301/1.301, TypeScript/build/Pint, dependency
+  audit nol, artifact exact-main dua disk, dan disposable restore mirror lulus.
+- Production tetap release `20260829062031-b2790d6`; deploy belum diotorisasi.
+
+## File yang berubah pada sinkronisasi SagaBook S357
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaView S348 evidence path containment
 
