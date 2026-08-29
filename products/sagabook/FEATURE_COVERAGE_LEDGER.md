@@ -2,6 +2,22 @@
 
 Evidence cut-off: 29 Agustus 2026
 
+Verifier pemulihan artifact S356 telah `CONFIRMED / MERGED /
+RELEASE_ARTIFACT_VALIDATED / IMPLEMENTED_NOT_DEPLOYED` pada feature source
+`c41c0e5078ac646d2a035bffcbb0c69780f8b9ba` dan exact main
+`9ffaa8f64417076773f23fc0f3abe4a949f1a227` melalui PR #73. Verifier
+fail-closed memeriksa manifest ketat, tiga checksum, metadata exact-source,
+isi archive tanpa path traversal atau file runtime terlarang, exact Git bundle
+HEAD/tree, ancestry rollback, clean disposable restore, dan bounded cleanup.
+Artifact exact-main dibangun pada dua disk fisik dan berhasil dipulihkan dari
+salinan disk kedua; bundle SHA-256 `59dc72d8...2c9297`, archive
+`1d6cee65...adb04a`, serta cleanup disposable lulus. Focused 2/2 (84
+assertion), full PHP 1.300/1.300 (14.575), PowerShell parse,
+TypeScript/build/Pint, dan npm/Composer/OSV audit nol lulus. GitHub job tidak
+memulai step karena billing/spending limit; evidence lokal ekuivalen tersedia.
+Production tetap source `b2790d64232b24222c3bc383c3b445d760786f2d` /
+release `20260829062031-b2790d6`; release baru belum diotorisasi.
+
 Hardening mirror artifact S355 telah `CONFIRMED / MERGED /
 RELEASE_ARTIFACT_VALIDATED / IMPLEMENTED_NOT_DEPLOYED` pada feature source
 `c3724aa6a9512d7c9a1a6303743bc4be1628a654` dan exact main

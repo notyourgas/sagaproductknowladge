@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-29 - SagaBook S356 release restore verifier
+
+- Exact main `9ffaa8f64417076773f23fc0f3abe4a949f1a227` menyediakan verifier
+  manifest/checksum/metadata, archive safety, exact bundle HEAD/tree, rollback
+  ancestry, clean disposable restore, dan bounded cleanup.
+- Artifact exact-main pada dua disk fisik berhasil dipulihkan dari mirror;
+  full PHP 1.300/1.300, typecheck/build/Pint, dan dependency audit lulus.
+- Status `MERGED / RELEASE_ARTIFACT_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production SagaBook dan produk lain tidak berubah.
+
 ## 2026-08-29 - COYABAG Admin dashboard trend ranges
 
 - Exact source `0b6ecce7f1f67557ff6e147ec874150b108b83ae` aktif pada

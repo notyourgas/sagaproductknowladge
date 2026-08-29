@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 29 Agustus 2026 18:18 WIB
-Evidence status: recovery idempotensi OTS S354 dan hardening mirror artifact S355 sudah merge pada exact main `04548e539c52924a9629a5db1670ee80bed99b93` tetapi belum dideploy; production tetap exact source `b2790d64232b24222c3bc383c3b445d760786f2d`, release `20260829062031-b2790d6`, dan `BUSINESS_READY=false` hanya menunggu pilot dua studio serta provider canary
+Updated: 29 Agustus 2026 19:14 WIB
+Evidence status: recovery OTS S354, hardening mirror S355, dan verifier pemulihan artifact S356 sudah kumulatif pada exact main `9ffaa8f64417076773f23fc0f3abe4a949f1a227` tetapi belum dideploy; production tetap exact source `b2790d64232b24222c3bc383c3b445d760786f2d`, release `20260829062031-b2790d6`, dan `BUSINESS_READY=false` hanya menunggu pilot dua studio serta provider canary
 
 ## Tujuan dokumen
 
@@ -15,6 +15,17 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
+
+- S356 menambahkan verifier pemulihan lokal fail-closed pada exact main
+  `9ffaa8f64417076773f23fc0f3abe4a949f1a227`. Tool memverifikasi manifest,
+  checksum, metadata, keamanan path archive, exact Git bundle HEAD/tree,
+  ancestry rollback, clean disposable restore, dan cleanup terbatas sebelum
+  artefak boleh disebut dapat dipulihkan. Artifact exact-main pada dua disk
+  fisik berhasil dipulihkan dari salinan kedua; focused 2/2 (84 assertion),
+  full PHP 1.300/1.300 (14.575), PowerShell parse, TypeScript/build/Pint, serta
+  dependency audit nol lulus. Status `CONFIRMED / MERGED /
+  RELEASE_ARTIFACT_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak
+  berubah.
 
 - Hardening release S355 mengizinkan media removable NTFS/ReFS yang sehat
   menjadi mirror artifact lokal, tetapi tetap mewajibkan volume dan disk fisik

@@ -1,5 +1,20 @@
 # SagaBook Changelog
 
+## 2026-08-29 - Verifier pemulihan artifact release S356
+
+- Release artifact kini memiliki verifier reusable yang menahan proses bila
+  manifest, checksum, metadata, archive path, bundle HEAD/tree, rollback
+  ancestry, clean restore, atau cleanup disposable tidak valid.
+- Feature source `c41c0e5078ac646d2a035bffcbb0c69780f8b9ba` merge melalui
+  PR #73 ke exact main `9ffaa8f64417076773f23fc0f3abe4a949f1a227`.
+- Artifact exact-main dibangun pada dua disk fisik dan berhasil dipulihkan dari
+  salinan disk kedua. Focused 2/2 (84 assertion), full PHP 1.300/1.300
+  (14.575 assertion), PowerShell parse, TypeScript/build/Pint, dan dependency
+  audit nol lulus.
+- Status `CONFIRMED / MERGED / RELEASE_ARTIFACT_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Production tetap release
+  `20260829062031-b2790d6`; deployment belum diotorisasi.
+
 ## 2026-08-29 - Hardening mirror artifact release S355
 
 - Mirror artifact lokal sekarang menerima media removable NTFS/ReFS yang
