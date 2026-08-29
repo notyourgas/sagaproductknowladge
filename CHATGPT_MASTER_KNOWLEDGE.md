@@ -271,9 +271,12 @@ diterapkan karena seluruhnya belum dipetakan (`applied=false`). Status
 `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`;
 authenticated Owner/Staff UAT dan mapping legacy masih pending.
 
-COYABAG storefront/API/admin kini pada release `20260830-0e4a251` dengan exact
-source `0e4a2516a05aa99dadba5c17c63d1dd77b6c83db`; rollback
-`20260830-4cd2d48` tersedia. Tiga wave UI/UX telah memoles 55 route Admin pada
+COYABAG storefront/API/admin kini pada release `20260830-878a570` dengan exact
+source `878a5705f8f9f2577019f5f5259d8259eed96898`; rollback
+`20260830-0e4a251` tersedia. Link pesanan/stok, aksi katalog, dan pagination
+sekarang memiliki target minimal 40 px; checkbox/radio 24 px berada dalam baris
+label minimal 40 px. Browser acceptance mengukur target ini secara langsung di
+Pesanan serta Produk desktop/mobile. Tiga wave UI/UX telah memoles 55 route Admin pada
 lima viewport: audit akhir mencatat nol document overflow, nol pelanggaran
 kontras, dan nol runtime error; sinyal clipping tersisa hanya elemen `sr-only`.
 Shell berubah menjadi drawer adaptif di bawah 1100 px, Vite memakai satu entry

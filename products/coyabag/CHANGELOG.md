@@ -4,6 +4,24 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-30 - Admin operational target-size closure deployed
+
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /
+  NOT_PRODUCTION_ACTIVATED`; exact source
+  `878a5705f8f9f2577019f5f5259d8259eed96898`, immutable release
+  `20260830-878a570`, rollback `20260830-0e4a251`.
+- Link pesanan/stok, aksi katalog, dan pagination kini mempunyai target minimal
+  40 px. Checkbox/radio menjadi 24 px dengan baris label minimal 40 px, menjaga
+  dashboard tetap padat sekaligus lebih nyaman untuk touch dan keyboard.
+- Laravel 489 total: 488 lulus, satu controlled skip, 4.677 assertion;
+  storefront 216/216, accessibility contract 4/4 (45 assertion), browser
+  Pesanan/Produk desktop-mobile, build, audit dependency nol, backup, worker,
+  exact manifest, dan public smoke lulus. Percobaan switch pertama otomatis
+  rollback karena verifier runtime mencari komentar yang dihapus minifier;
+  verifier diperbaiki ke kontrak CSS runtime lalu exact release yang sama lulus.
+- Readiness tetap fail-closed 41/42 karena release sign-off. Tidak ada aktivasi
+  provider/commerce, migrasi, atau mutasi data.
+
 ## 2026-08-30 - Admin UI/UX three-wave production polish deployed
 
 - Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /

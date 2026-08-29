@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-30 - COYABAG Admin operational target-size closure sync
+
+- Ringkasan: menyinkronkan target interaksi yang lebih aman untuk link
+  operasional, aksi katalog, pagination, checkbox, dan radio.
+- Provenance: exact source
+  `878a5705f8f9f2577019f5f5259d8259eed96898`, immutable release
+  `20260830-878a570`, rollback `20260830-0e4a251`.
+- Evidence: Laravel 489 total, storefront 216/216, accessibility 4/4, browser
+  Pesanan/Produk, build/audit, backup, exact manifest, worker, rollback otomatis,
+  dan public smoke lulus.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /
+  NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`; readiness 41/42.
+- Dokumen terdampak: Product/changelog COYABAG, portfolio, master knowledge,
+  root changelog, dan sync status.
+
 ## 2026-08-30 - SagaView S354 UAT receipt ancestor guard sync
 
 - Ringkasan: menyinkronkan guard penulisan receipt terhadap junction,

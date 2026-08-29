@@ -12,12 +12,35 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-30T03:18:00+07:00 |
-| Branch aktif | `codex/s354-sagaview-uat-receipt-ancestor-guard-knowledge` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-30T21:20:00+07:00 |
+| Branch aktif | `codex/coyabag-admin-uiux-knowledge` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `b8feab8f16530c17ba3c232abdb7957af35f9fb0` |
-| Informasi terakhir disinkronkan | SagaView S354 UAT receipt ancestor guard pada exact source `edd06983c8143abb146692695cf0d6c9abbf6072`. |
-| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`; production tidak berubah. |
+| Baseline sebelum pembaruan | `a05818e5ca00051644a97c912ac3dc204526a9f5` |
+| Informasi terakhir disinkronkan | COYABAG Admin operational target-size closure pada exact source `878a5705f8f9f2577019f5f5259d8259eed96898`. |
+| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`; readiness fail-closed 41/42. |
+
+## COYABAG Admin operational target-size closure
+
+- Exact source `878a5705f8f9f2577019f5f5259d8259eed96898` aktif pada release
+  `20260830-878a570`; rollback `20260830-0e4a251` tersedia.
+- Target link pesanan/stok, aksi katalog, dan pagination minimal 40 px;
+  checkbox/radio 24 px berada pada baris label minimal 40 px.
+- Laravel 489 total, storefront 216/216, accessibility contract 4/4, browser
+  Pesanan/Produk desktop-mobile, build/audit, backup, exact manifest, worker,
+  dan public smoke lulus. Percobaan pertama otomatis rollback karena verifier
+  mencari komentar yang dihapus minifier; verifier runtime dikoreksi dan exact
+  release yang sama kemudian lulus.
+- Readiness tetap fail-closed 41/42. Provider/commerce, migrasi, dan data tidak
+  diubah oleh batch ini.
+
+## File yang berubah pada sinkronisasi COYABAG Admin target-size
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaView S354 UAT receipt ancestor guard
 

@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-30 - COYABAG Admin operational target-size closure
+
+- Exact source `878a5705f8f9f2577019f5f5259d8259eed96898` aktif pada
+  immutable release `20260830-878a570`; rollback `20260830-0e4a251` tersedia.
+- Target link operasional, aksi katalog, dan pagination kini minimal 40 px;
+  checkbox/radio 24 px berada dalam baris label minimal 40 px. Browser
+  acceptance mengukur target Produk desktop/mobile dan Pesanan desktop.
+- Laravel 489 total, storefront 216/216, accessibility 4/4, browser/build/audit,
+  backup, exact manifest, worker, serta public smoke lulus. Rollback otomatis
+  sempat terbukti saat verifier minified CSS salah, lalu exact release yang sama
+  lulus setelah verifier diarahkan ke kontrak runtime. Readiness tetap 41/42 dan
+  commerce/provider tidak diaktifkan.
+
 ## 2026-08-30 - SagaView S354 UAT receipt ancestor guard
 
 - Exact pushed source `edd06983c8143abb146692695cf0d6c9abbf6072`

@@ -76,9 +76,13 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 - Launch UAT 15 langkah sudah lulus 15/15 dan sign-off diizinkan. Checkout
   publik tetap `PRODUCTION_READINESS_BLOCKED` hanya sampai release sign-off
   dicatat; deployment acceptance hotfix tidak membuat payment intent baru.
-- Release aktif `20260830-0e4a251` dengan exact source
-  `0e4a2516a05aa99dadba5c17c63d1dd77b6c83db` melayani production;
-  rollback langsung `20260830-4cd2d48` dipertahankan. Tiga wave UI/UX
+- Release aktif `20260830-878a570` dengan exact source
+  `878a5705f8f9f2577019f5f5259d8259eed96898` melayani production;
+  rollback langsung `20260830-0e4a251` dipertahankan. Target interaksi
+  operasional untuk link pesanan/stok dan pagination kini minimal 40 px;
+  checkbox/radio 24 px berada pada baris label minimal 40 px. Browser acceptance
+  mengukur target Produk desktop/mobile dan Pesanan desktop secara langsung.
+  Tiga wave UI/UX
   memoles 55 route Admin pada desktop, tablet, dan mobile: token tipografi,
   warna, spacing, radius, serta kontrol diseragamkan; shell berubah menjadi
   drawer adaptif di bawah 1100 px; workspace commerce, growth, content, dan
