@@ -12,12 +12,34 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-29 22:20 WIB |
-| Branch aktif | `codex/coyabag-payment-reconcile-20260829` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-29 23:13 WIB |
+| Branch aktif | `codex/s358-sagabook-receipt-knowledge` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `8d008ac67118b7111ac00bb3a1357ea3984092be` |
-| Informasi terakhir disinkronkan | COYABAG Admin inventory snapshot export. |
-| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED / NOT_PRODUCTION_ACTIVATED`; readiness 41/42 dan `BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `e70dc680bd780745bf2921e39561a04dc8ab2799` |
+| Informasi terakhir disinkronkan | SagaBook S358 immutable release receipt binding. |
+| Status sinkronisasi | `CONFIRMED / PUSHED / RELEASE_RECEIPT_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap dan `BUSINESS_READY=false`. |
+
+## SagaBook S358 immutable release receipt binding
+
+- Exact source `0a2d9c6f103cacb2cdfb308105821e2e6fffb2c0` sudah pushed
+  melalui PR #75.
+- Receipt immutable mengikat exact source/tree, rollback ancestor, manifest,
+  metadata, verifier, dan checksum artifact; verifier terpisah menolak replay.
+- Receipt matrix 7/7, tamper matrix 7/7, full PHP 1.302/1.302, build/typecheck,
+  Pint, dependency audit nol, artifact dua disk, disposable restore, dan
+  cleanup lulus.
+- Production tetap release `20260829062031-b2790d6`; merge dan deployment
+  belum diotorisasi.
+
+## File yang berubah pada sinkronisasi SagaBook S358
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG Admin inventory snapshot export
 

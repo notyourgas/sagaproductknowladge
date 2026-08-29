@@ -2,6 +2,19 @@
 
 Evidence cut-off: 29 Agustus 2026
 
+Release receipt binding S358 telah `CONFIRMED / PUSHED /
+RELEASE_RECEIPT_VALIDATED / IMPLEMENTED_NOT_DEPLOYED` pada exact source
+`0a2d9c6f103cacb2cdfb308105821e2e6fffb2c0` melalui PR #75. Receipt immutable
+mengikat source/tree, rollback ancestor, manifest, metadata, verifier, serta
+checksum artifact dan dapat diverifikasi ulang tanpa network atau data
+customer. Matriks 7/7 membuktikan baseline valid serta penolakan replay
+kandidat, rollback, manifest, verifier, artifact, dan path restore Windows
+terlalu panjang sebelum state dibuat. Matriks tamper S357 tetap 7/7; full PHP
+1.302/1.302 (14.636), typecheck/build/Pint, npm/Composer/OSV nol, artifact
+exact-commit pada dua disk fisik, restore disposable, dan cleanup lulus.
+Production tetap source `b2790d64232b24222c3bc383c3b445d760786f2d` /
+release `20260829062031-b2790d6`; PR belum merge dan release belum diotorisasi.
+
 Acceptance tamper matrix S357 telah `CONFIRMED / MERGED /
 TAMPER_MATRIX_VALIDATED / RELEASE_ARTIFACT_VALIDATED /
 IMPLEMENTED_NOT_DEPLOYED` pada feature source

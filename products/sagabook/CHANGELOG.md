@@ -1,5 +1,20 @@
 # SagaBook Changelog
 
+## 2026-08-29 - Release receipt binding S358
+
+- Verifier kandidat kini dapat menulis receipt immutable yang mengikat exact
+  source/tree, rollback ancestor, manifest, metadata, verifier, dan checksum
+  artifact; verifier receipt terpisah memvalidasi binding tersebut ulang.
+- Replay kandidat, rollback, manifest, verifier, artifact, serta path restore
+  Windows terlalu panjang ditolak fail-closed sebelum state restore dibuat.
+- Exact source `0a2d9c6f103cacb2cdfb308105821e2e6fffb2c0` sudah pushed melalui PR #75.
+- Receipt matrix 7/7, tamper matrix 7/7, full PHP 1.302/1.302 (14.636),
+  typecheck/build/Pint, dependency audit nol, artifact exact-commit dua disk,
+  disposable restore, dan cleanup lulus.
+- Status `CONFIRMED / PUSHED / RELEASE_RECEIPT_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Production tetap release
+  `20260829062031-b2790d6`; deployment belum diotorisasi.
+
 ## 2026-08-29 - Acceptance tamper matrix artifact release S357
 
 - Harness sintetis/disposable menguji satu artifact valid dan enam manipulasi:
