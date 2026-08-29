@@ -4,6 +4,26 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-30 - Admin payment triage workspace deployed
+
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /
+  NOT_PRODUCTION_ACTIVATED`; exact source
+  `4cd2d48a930c256373b43a96ad64aaec726205e4`, immutable release
+  `20260830-4cd2d48`, rollback `20260829-194eab7`.
+- Owner/Admin/Finance dapat memilah pembayaran melalui lima antrean
+  server-authoritative, tiga urutan, filter berlabel, dan pagination. Antrean
+  actionable memakai urutan tertua secara default agar pekerjaan lama tidak
+  tertinggal.
+- Desktop memakai tabel operasional; mobile memakai kartu transaksi dengan
+  status, rekonsiliasi, waktu, exception, dan CTA 40+ px. Loading, empty,
+  recovery, live announcement, no-overflow, Plus Jakarta Sans, serta Feather
+  Icons tervalidasi; nama customer untuk Finance tetap tersamarkan.
+- TDD 2/2 dengan 99 assertion; full backend 488 total: 487 lulus, satu
+  controlled skip, 4.666 assertion; storefront 216/216, browser payment pada
+  tiga viewport dan tujuh state, build, dependency/security audit, backup,
+  readiness 41/42, exact runtime asset, dua worker, serta public smoke lulus.
+  Release sign-off tetap satu blocker; provider dan commerce tidak diaktifkan.
+
 ## 2026-08-29 - Admin inventory count import deployed
 
 - Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /

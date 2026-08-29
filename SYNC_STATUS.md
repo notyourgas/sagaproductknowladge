@@ -12,12 +12,34 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-30 00:13 WIB |
-| Branch aktif | `codex/s351-sagaview-knowledge` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-30 00:32 WIB |
+| Branch aktif | `codex/coyabag-payment-reconcile-20260829` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `696ce7994e5583188cf624025a3e7d91ffc0b8e5` |
-| Informasi terakhir disinkronkan | SagaView S351 locked evidence snapshots. |
-| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan `BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `393a387299159859eed78d4613f5e889f653a713` |
+| Informasi terakhir disinkronkan | COYABAG Admin payment triage workspace. |
+| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED / NOT_PRODUCTION_ACTIVATED`; readiness 41/42 dan `BUSINESS_READY=false`. |
+
+## COYABAG Admin payment triage workspace
+
+- Exact source `4cd2d48a930c256373b43a96ad64aaec726205e4` aktif pada release
+  `20260830-4cd2d48`; rollback `20260829-194eab7` tersedia.
+- Owner/Admin/Finance mendapat lima antrean pembayaran server-authoritative,
+  sorting, filter, pagination, tabel desktop, serta kartu mobile. Finance tetap
+  menerima nama customer tersamarkan dan antrean actionable tertua ditampilkan
+  lebih dulu.
+- TDD 2/2, backend 488 total, storefront 216/216, browser tiga viewport/tujuh
+  state, build/audit, backup, worker, readiness 41/42, exact runtime asset, dan
+  public smoke lulus.
+- Release sign-off tetap satu blocker; commerce/provider tidak diaktifkan.
+
+## File yang berubah pada sinkronisasi COYABAG Admin payment triage
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaView S351 locked evidence snapshots
 

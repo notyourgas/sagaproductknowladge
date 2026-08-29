@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-30 - COYABAG Admin payment triage workspace sync
+
+- Ringkasan: menyinkronkan workspace antrean pembayaran server-authoritative,
+  sorting, filter, pagination, serta kartu mobile yang menjaga masking Finance.
+- Provenance: exact source `4cd2d48a930c256373b43a96ad64aaec726205e4`,
+  immutable release `20260830-4cd2d48`, rollback `20260829-194eab7`.
+- Evidence: TDD 2/2, backend 488 total, storefront 216/216, browser tiga
+  viewport/tujuh state, build/audit, backup, readiness 41/42, dua worker,
+  exact runtime asset, dan public smoke.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /
+  NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+- Dokumen terdampak: Product/changelog COYABAG, portfolio, master knowledge,
+  root changelog, dan sync status.
+
 ## 2026-08-30 - SagaView S351 locked evidence snapshots sync
 
 - Ringkasan: mengikat parse, privacy scan, ukuran, dan hash evidence pada satu

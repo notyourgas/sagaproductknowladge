@@ -1,6 +1,6 @@
 # COYABAG Product Knowledge
 
-Updated: 29 Agustus 2026
+Updated: 30 Agustus 2026
 Evidence status: production surfaces + blocked commerce activation
 
 ## Tujuan dokumen
@@ -76,9 +76,9 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 - Launch UAT 15 langkah sudah lulus 15/15 dan sign-off diizinkan. Checkout
   publik tetap `PRODUCTION_READINESS_BLOCKED` hanya sampai release sign-off
   dicatat; deployment acceptance hotfix tidak membuat payment intent baru.
-- Release aktif `20260829-194eab7` dengan exact source
-  `194eab792a4ad3d21d03475148da5edd12428418` melayani production;
-  rollback langsung `20260829-b073a48` dipertahankan. Fondasi dashboard admin
+- Release aktif `20260830-4cd2d48` dengan exact source
+  `4cd2d48a930c256373b43a96ad64aaec726205e4` melayani production;
+  rollback langsung `20260829-194eab7` dipertahankan. Fondasi dashboard admin
   kini memakai Plus Jakarta Sans self-hosted, token warna/spacing/focus modern,
   hierarki panel dan kontrol yang lebih tenang, KPI mobile dua kolom, serta
   spacing wordmark/profile yang konsisten. Application shell menambahkan
@@ -108,6 +108,13 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
   hasilnya menjadi draft stock opname yang tetap melewati revision guard,
   approval operator kedua, dan ledger. Preview bersifat actor-bound, single-use,
   kedaluwarsa 15 menit, permission-gated, throttled, dan ter-audit tanpa PII.
+  Admin Pembayaran kini memiliki antrean server-authoritative untuk semua,
+  review, exception, belum cocok, dan sudah cocok. Operator dapat mengurutkan
+  pekerjaan tertua, terbaru, atau nominal terbesar; pagination mempertahankan
+  filter. Desktop memakai tabel operasional dan mobile memakai kartu transaksi
+  dengan status, waktu, serta tindakan yang dapat disentuh. Finance tetap
+  menerima nama customer tersamarkan; konfigurasi provider serta aktivasi
+  payment, order, dan commerce tidak diubah oleh workspace ini.
   Admin System Health tetap dapat
   dirender setelah import ikon Feather `Truck` yang hilang dipulihkan dan
   dikunci dengan regression test. Payment gateway sekarang

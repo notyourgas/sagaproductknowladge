@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-30 - COYABAG Admin payment triage workspace
+
+- Exact source `4cd2d48a930c256373b43a96ad64aaec726205e4` aktif pada
+  immutable release `20260830-4cd2d48`; rollback `20260829-194eab7` tersedia.
+- Dashboard Pembayaran kini menyediakan lima antrean server-authoritative,
+  sorting, filter, pagination, tabel desktop, kartu mobile, loading/empty/
+  recovery, dan live announcement. Finance tetap menerima data customer yang
+  disamarkan.
+- Backend 488 total, storefront 216/216, browser tiga viewport/tujuh state,
+  build/audit, backup, readiness 41/42, worker, exact runtime asset, dan public
+  smoke lulus. Release sign-off tetap satu blocker; aktivasi commerce tidak
+  berubah.
+
 ## 2026-08-30 - SagaView S351 locked evidence snapshots
 
 - Exact pushed source `f204c109129a238dc5a7f4aa3f7ae665b2476306`
