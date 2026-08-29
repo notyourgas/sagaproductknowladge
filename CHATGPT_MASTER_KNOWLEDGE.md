@@ -1,5 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+SagaBook hardening security header S361 feature
+`91b3267d5156d14649b22989fe3351f5e94b4528` telah merge melalui PR #77 ke
+exact main `fa53bdd5db2195507b95e053f56fe9e5577b6cdc` dengan status `MERGED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Middleware security header kini
+global sehingga `/up` HTTPS mendapat HSTS dan header dasar; HTTP tetap tanpa
+HSTS. Verifier production mewajibkan HSTS pada health maupun login. Production
+tetap exact source `435dbfd252759fd8b7d43f44af69edfb39ee2102`, release
+`20260829175230-435dbfd`, rollback `20260829062031-b2790d6`;
+`BUSINESS_READY=false` sampai dua pilot nyata dan provider canary selesai.
+
 SagaView S354 exact pushed source
 `edd06983c8143abb146692695cf0d6c9abbf6072` berstatus `PUSHED /
 LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Writer receipt UAT S70, S344,

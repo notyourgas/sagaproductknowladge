@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 30 Agustus 2026 02:05 WIB
-Evidence status: gate bukti pilot dua studio telah merge ke exact main `a7de78737a64d1213799b97d0b6294839233b3e6` dan tervalidasi lokal, tetapi belum dideploy. Production aktif exact source `435dbfd252759fd8b7d43f44af69edfb39ee2102`, release `20260829175230-435dbfd`, rollback `20260829062031-b2790d6`; `BUSINESS_READY=false` sampai dua pilot nyata dan provider canary selesai
+Updated: 30 Agustus 2026 04:12 WIB
+Evidence status: hardening HSTS health S361 telah merge ke exact main `fa53bdd5db2195507b95e053f56fe9e5577b6cdc` dan tervalidasi lokal, tetapi belum dideploy. Production aktif exact source `435dbfd252759fd8b7d43f44af69edfb39ee2102`, release `20260829175230-435dbfd`, rollback `20260829062031-b2790d6`; `BUSINESS_READY=false` sampai dua pilot nyata dan provider canary selesai
 
 ## Tujuan dokumen
 
@@ -15,6 +15,16 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
+
+- Hardening security header S361 pada feature source
+  `91b3267d5156d14649b22989fe3351f5e94b4528` telah merge melalui PR #77 ke
+  exact main `fa53bdd5db2195507b95e053f56fe9e5577b6cdc`. Middleware header keamanan
+  sekarang mencakup route framework `/up`, sehingga HTTPS menerima HSTS dan
+  header dasar yang sama sementara HTTP tetap tanpa HSTS. Verifier production
+  kini gagal tertutup bila health endpoint tidak memiliki HSTS. Focused 40/40,
+  full PHP 1.304/1.304, critical typecheck, build, format, syntax, disposable
+  migration/seed, dan audit dependency nol lulus. Status `MERGED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; runtime production tidak berubah.
 
 - Gate bukti pilot dua studio pada feature source
   `ec6ea76132b9dce4530e3c822db198785c2f1fc2` telah merge melalui PR #76 ke

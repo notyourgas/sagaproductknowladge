@@ -12,12 +12,33 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-30T21:20:00+07:00 |
-| Branch aktif | `codex/coyabag-admin-uiux-knowledge` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-30T04:12:00+07:00 |
+| Branch aktif | `codex/knowledge-s361-health-hsts` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `a05818e5ca00051644a97c912ac3dc204526a9f5` |
-| Informasi terakhir disinkronkan | COYABAG Admin operational target-size closure pada exact source `878a5705f8f9f2577019f5f5259d8259eed96898`. |
-| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`; readiness fail-closed 41/42. |
+| Baseline sebelum pembaruan | `477b9f83f3b22edc6b7c88ceab8568635ff87ced` |
+| Informasi terakhir disinkronkan | SagaBook S361 health HSTS pada exact main `fa53bdd5db2195507b95e053f56fe9e5577b6cdc`. |
+| Status sinkronisasi | `CONFIRMED / MERGED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap `435dbfd252759fd8b7d43f44af69edfb39ee2102` dan `BUSINESS_READY=false`. |
+
+## SagaBook S361 health HSTS
+
+- Feature source `91b3267d5156d14649b22989fe3351f5e94b4528` merge melalui PR #77 ke exact
+  main `fa53bdd5db2195507b95e053f56fe9e5577b6cdc`.
+- Middleware global melindungi `/up` HTTPS dengan HSTS dan header keamanan
+  dasar; verifier production menolak health endpoint tanpa HSTS.
+- Focused 40/40, full PHP 1.304/1.304, critical typecheck, build, Pint,
+  PowerShell parse, disposable migration/seed, dan audit dependency nol lulus.
+- Production aktif tetap release `20260829175230-435dbfd` dengan rollback
+  `20260829062031-b2790d6`; deployment S361 belum dilakukan.
+
+## File yang berubah pada sinkronisasi SagaBook S361
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG Admin operational target-size closure
 
