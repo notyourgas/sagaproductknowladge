@@ -12,12 +12,31 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-29 19:12 WIB |
-| Branch aktif | `codex/coyabag-payment-reconcile-20260829` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-29 19:14 WIB |
+| Branch aktif | `codex/s356-sagabook-release-restore-knowledge` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `830af42` |
-| Informasi terakhir disinkronkan | COYABAG Admin dashboard authoritative trend ranges. |
-| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED / NOT_PRODUCTION_ACTIVATED`; readiness 41/42 dan `BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `0586e6e7b21ac0e0807a57680d715eca195f1922` |
+| Informasi terakhir disinkronkan | SagaBook S356 release restore verifier. |
+| Status sinkronisasi | `CONFIRMED / MERGED / RELEASE_ARTIFACT_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan `BUSINESS_READY=false`. |
+
+## SagaBook S356 release restore verifier
+
+- Exact main `9ffaa8f64417076773f23fc0f3abe4a949f1a227` memverifikasi manifest,
+  checksum, metadata, archive safety, bundle HEAD/tree, rollback ancestry,
+  clean disposable restore, dan bounded cleanup.
+- Artifact exact-main dua disk berhasil dipulihkan dari mirror. Focused 2/2,
+  full PHP 1.300/1.300, TypeScript/build/Pint, dan dependency audit nol lulus.
+- Production tetap release `20260829062031-b2790d6`; deploy belum diotorisasi.
+
+## File yang berubah pada sinkronisasi SagaBook S356
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG Admin dashboard authoritative trend ranges
 

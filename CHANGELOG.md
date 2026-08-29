@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-29 - SagaBook S356 release restore verifier sync
+
+- Ringkasan: mencatat verifier fail-closed untuk membuktikan artifact lokal
+  benar-benar dapat memulihkan exact candidate secara disposable.
+- Provenance: feature source `c41c0e5078ac646d2a035bffcbb0c69780f8b9ba`,
+  PR #73, exact main `9ffaa8f64417076773f23fc0f3abe4a949f1a227`.
+- Evidence: focused 2/2 (84), full PHP 1.300/1.300 (14.575), PowerShell
+  parse, build/typecheck/Pint, dependency audit nol, serta exact-main artifact
+  dua disk dan disposable restore dari mirror lulus.
+- Klasifikasi: `CONFIRMED / MERGED / RELEASE_ARTIFACT_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap `20260829062031-b2790d6`.
+- Dokumen terdampak: Product, feature ledger/changelog SagaBook, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-08-29 - COYABAG Admin dashboard trend ranges sync
 
 - Ringkasan: menyinkronkan filter tren 7/14/30 hari pada Beranda Admin,
