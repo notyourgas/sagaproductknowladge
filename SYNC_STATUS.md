@@ -12,12 +12,33 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-29 23:16 WIB |
-| Branch aktif | `codex/s350-sagaview-knowledge` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-29 23:24 WIB |
+| Branch aktif | `codex/coyabag-payment-reconcile-20260829` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `e70dc680bd780745bf2921e39561a04dc8ab2799` |
-| Informasi terakhir disinkronkan | SagaView S350 reviewer-to-Finalize binding. |
-| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan `BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `0d5b6a16859123b6625fd1f73a2e157d6af3142b` |
+| Informasi terakhir disinkronkan | COYABAG Admin inventory count import. |
+| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED / NOT_PRODUCTION_ACTIVATED`; readiness 41/42 dan `BUSINESS_READY=false`. |
+
+## COYABAG Admin inventory count import
+
+- Exact source `194eab792a4ad3d21d03475148da5edd12428418` aktif pada release
+  `20260829-194eab7`; rollback `20260829-b073a48` tersedia.
+- Owner/Admin dapat mengimpor hitungan CSV menjadi draft stock opname tanpa
+  mutasi saldo langsung. Preview actor-bound dan single-use; permission,
+  throttle, revision guard, mutex, approval operator kedua, dan audit tetap
+  berlaku.
+- Backend 486 total, storefront 216/216, browser desktop/mobile, build/audit,
+  backup, worker, readiness 41/42, exact runtime asset, dan public smoke lulus.
+- Release sign-off tetap satu blocker; provider dan commerce tidak diaktifkan.
+
+## File yang berubah pada sinkronisasi COYABAG Admin inventory count import
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaView S350 reviewer-to-Finalize binding
 

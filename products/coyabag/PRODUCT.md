@@ -76,9 +76,9 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 - Launch UAT 15 langkah sudah lulus 15/15 dan sign-off diizinkan. Checkout
   publik tetap `PRODUCTION_READINESS_BLOCKED` hanya sampai release sign-off
   dicatat; deployment acceptance hotfix tidak membuat payment intent baru.
-- Release aktif `20260829-b073a48` dengan exact source
-  `b073a484cb18181a4c4365412f37804b816756c2` melayani production;
-  rollback langsung `20260829-8c91ad2` dipertahankan. Fondasi dashboard admin
+- Release aktif `20260829-194eab7` dengan exact source
+  `194eab792a4ad3d21d03475148da5edd12428418` melayani production;
+  rollback langsung `20260829-b073a48` dipertahankan. Fondasi dashboard admin
   kini memakai Plus Jakarta Sans self-hosted, token warna/spacing/focus modern,
   hierarki panel dan kontrol yang lebih tenang, KPI mobile dua kolom, serta
   spacing wordmark/profile yang konsisten. Application shell menambahkan
@@ -103,6 +103,11 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
   threshold, status storefront, dan revision inventory; dilindungi permission
   `inventory.manage`, throttle, audit metadata tanpa PII, serta sanitasi formula
   CSV. State unduh dan hasilnya aksesibel di desktop maupun mobile.
+  Owner/Admin juga dapat mengimpor file `sku,counted_stock` untuk meninjau
+  hitungan fisik maksimal 100 baris. Import tidak mengubah saldo secara langsung;
+  hasilnya menjadi draft stock opname yang tetap melewati revision guard,
+  approval operator kedua, dan ledger. Preview bersifat actor-bound, single-use,
+  kedaluwarsa 15 menit, permission-gated, throttled, dan ter-audit tanpa PII.
   Admin System Health tetap dapat
   dirender setelah import ikon Feather `Truck` yang hilang dipulihkan dan
   dikunci dengan regression test. Payment gateway sekarang

@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-29 - COYABAG Admin inventory count import
+
+- Exact source `194eab792a4ad3d21d03475148da5edd12428418` aktif pada
+  immutable release `20260829-194eab7`; rollback `20260829-b073a48` tersedia.
+- Owner/Admin dapat memvalidasi CSV hitungan stok dan membuat draft stock opname
+  tanpa mutasi saldo langsung. Batas file, actor-bound preview, permission,
+  throttle, mutex, revision guard, approval operator kedua, dan audit menjaga
+  perubahan tetap fail-closed.
+- Backend 486 total, storefront 216/216, browser desktop/mobile, build/audit,
+  backup, readiness 41/42, worker, exact runtime asset, dan public smoke lulus.
+  Release sign-off tetap satu blocker; aktivasi commerce tidak berubah.
+
 ## 2026-08-29 - SagaView S350 reviewer-to-Finalize binding
 
 - Exact pushed source `3b01db857c28989575960c7e9c29055660403f0c`

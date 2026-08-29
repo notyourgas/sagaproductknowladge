@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-29 - COYABAG Admin inventory count import sync
+
+- Ringkasan: menyinkronkan import hitungan CSV ke draft stock opname dengan
+  preview actionable tanpa mutasi saldo langsung.
+- Provenance: exact source `194eab792a4ad3d21d03475148da5edd12428418`,
+  immutable release `20260829-194eab7`, rollback `20260829-b073a48`.
+- Evidence: backend 486 total, storefront 216/216, browser Inventory
+  desktop/mobile, build/audit, backup, readiness 41/42, worker, exact runtime
+  asset, route permission/throttle, dan public smoke.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /
+  NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+- Dokumen terdampak: Product/changelog COYABAG, portfolio, master knowledge,
+  root changelog, dan sync status.
+
 ## 2026-08-29 - SagaView S350 reviewer-to-Finalize binding sync
 
 - Ringkasan: mengikat S344 Finalize pada receipt reviewer S345-S349, exact
