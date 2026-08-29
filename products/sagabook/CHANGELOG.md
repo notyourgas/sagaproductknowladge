@@ -1,5 +1,19 @@
 # SagaBook Changelog
 
+## 2026-08-30 - Exact-main release artifact rehearsal S363
+
+- Kandidat kumulatif exact main `b37db0810f64731e46f18d026452a6cf3f65e86c`
+  dibangun menjadi archive, bundle Git, metadata, dan manifest immutable yang
+  identik pada dua disk fisik.
+- Dua disposable restore terpisah lulus exact-source, clean-tree, rollback
+  ancestry, manifest, bundle, receipt binding, dan cleanup.
+- Matriks receipt 7/7 lulus: baseline valid diterima, sedangkan replay
+  kandidat, rollback, manifest, verifier, artifact, dan path restore terlalu
+  panjang ditolak fail-closed. Uji tidak memakai network atau data customer.
+- Status `LOCAL_VALIDATED / RELEASE_ARTIFACT_READY /
+  IMPLEMENTED_NOT_DEPLOYED`. Production tidak berubah; fresh encrypted backup
+  database production, atomic deploy, dan post-switch verification tetap gate.
+
 ## 2026-08-30 - HSTS global untuk health endpoint S361
 
 - Middleware security header dipindahkan ke stack global agar route framework

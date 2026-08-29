@@ -12,12 +12,35 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-30T06:30:00+07:00 |
-| Branch aktif | `codex/coyabag-admin-uiux-knowledge` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-30T06:35:00+07:00 |
+| Branch aktif | `codex/s363-exact-main-artifact-knowledge` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `958ec803965a2257b8955aeca74ffc3bae2a2fdd` |
-| Informasi terakhir disinkronkan | COYABAG Admin focused action queue, exact material source `764197409fd21a9fbfd2659a7a232fdf4d16e0ca`, release `20260830-7641974`. |
-| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`; readiness fail-closed 41/42. |
+| Baseline sebelum pembaruan | `1947ca7b14e33a559dfa41dbc4a9f326c2b2368a` |
+| Informasi terakhir disinkronkan | SagaBook S363 release artifact rehearsal untuk exact main `b37db0810f64731e46f18d026452a6cf3f65e86c`. |
+| Status sinkronisasi | `LOCAL_VALIDATED / RELEASE_ARTIFACT_READY / IMPLEMENTED_NOT_DEPLOYED`; `BUSINESS_READY=false`. |
+
+## SagaBook S363 exact-main release artifact rehearsal
+
+- Exact main kumulatif `b37db0810f64731e46f18d026452a6cf3f65e86c`
+  memiliki archive, bundle Git, metadata, dan manifest immutable identik pada
+  dua disk fisik.
+- Dua disposable restore terpisah lulus exact-source, clean-tree, rollback
+  ancestry, manifest, bundle, receipt binding, dan cleanup.
+- Matriks receipt 7/7 menolak replay kandidat, rollback, manifest, verifier,
+  artifact, dan path restore terlalu panjang. Tidak ada network, data customer,
+  deploy, atau mutasi production.
+- Fresh encrypted backup database production, atomic deploy, post-switch UAT,
+  dua pilot nyata, dan provider canary masih menjadi gate.
+
+## File yang berubah pada sinkronisasi SagaBook S363
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG Admin focused action queue
 

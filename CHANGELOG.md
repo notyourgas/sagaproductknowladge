@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-30 - SagaBook S363 exact-main artifact rehearsal sync
+
+- Ringkasan: menyinkronkan bukti archive, bundle, manifest, dual-disk copy,
+  disposable restore, dan receipt tamper matrix untuk kandidat kumulatif.
+- Provenance: exact main SagaBook
+  `b37db0810f64731e46f18d026452a6cf3f65e86c`; production tidak diubah.
+- Evidence: dua copy pada disk fisik berbeda, dua clean disposable restore,
+  rollback ancestry, receipt binding, cleanup, serta matriks 7/7 lulus tanpa
+  network atau data customer.
+- Klasifikasi: `LOCAL_VALIDATED / RELEASE_ARTIFACT_READY /
+  IMPLEMENTED_NOT_DEPLOYED`; `BUSINESS_READY=false`.
+- Dokumen terdampak: Product, feature ledger/changelog SagaBook, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-08-30 - COYABAG Admin focused action queue sync
 
 - Ringkasan: menyinkronkan Beranda Admin yang kini memfokuskan antrean pada

@@ -1,5 +1,16 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+SagaBook release rehearsal S363 pada kandidat kumulatif exact main
+`b37db0810f64731e46f18d026452a6cf3f65e86c` berstatus `LOCAL_VALIDATED /
+RELEASE_ARTIFACT_READY / IMPLEMENTED_NOT_DEPLOYED`. Archive, bundle Git,
+metadata, dan manifest immutable identik pada dua disk fisik; dua disposable
+restore serta matriks receipt 7/7 lulus tanpa network, data customer, atau
+mutasi production. Production tetap exact source
+`435dbfd252759fd8b7d43f44af69edfb39ee2102`, release
+`20260829175230-435dbfd`, rollback `20260829062031-b2790d6`. Fresh encrypted
+backup database production, atomic deploy, post-switch UAT, dua pilot nyata,
+dan provider canary masih wajib; `BUSINESS_READY=false`.
+
 COYABAG Admin focused action queue aktif pada exact material source
 `764197409fd21a9fbfd2659a7a232fdf4d16e0ca`, immutable release
 `20260830-7641974`, dengan rollback `20260830-d213e3a`. Beranda Admin kini
