@@ -76,16 +76,18 @@ source `435dbfd252759fd8b7d43f44af69edfb39ee2102`, release
 `20260829175230-435dbfd`, rollback `20260829062031-b2790d6`;
 `BUSINESS_READY=false` sampai pilot dan provider canary selesai.
 
-SagaBook Closing Staff S359 exact pushed source
-`67591a4dd99e75b8df0a312ae09b8c8bc8240159` berstatus `PUSHED /
+SagaBook Closing Staff S359/S362 feature source
+`c50ef8b60487aee6775cc441151a6c8575500cdf` telah merge melalui PR #78 ke
+exact main `b37db0810f64731e46f18d026452a6cf3f65e86c` dengan status `MERGED /
 LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Hitungan fisik kertas foto dan
 packaging wajib dikonfirmasi eksplisit; setiap material yang plus atau minus
 memerlukan alasan sendiri, sedangkan catatan operasional umum tetap terpisah.
 Submit menampilkan blocker pertama dan mengarahkan operator ke input atau
 pengaturan stok. Ledger tetap server-authoritative dan blocker stok keras tidak
-dibypass. Full Feature 1.271/1.271, contract 9/9, browser 6/6, persistence
-18/18, typecheck/build, serta audit dependency nol lulus. Production tetap
-release `20260829062031-b2790d6`; `BUSINESS_READY=false`.
+dibypass. Full PHP 1.306/1.306, contract 9/9, browser mobile/desktop 12/12,
+typecheck/build, npm/OSV nol, dan MySQL 8.4 disposable 10/10 lulus. Production
+tetap exact source `435dbfd252759fd8b7d43f44af69edfb39ee2102`, release
+`20260829175230-435dbfd`; `BUSINESS_READY=false`.
 
 SagaView S352 exact pushed source
 `23199139843e3850d7d8f64c751b1cd379e41eed` berstatus `PUSHED /

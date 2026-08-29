@@ -13,11 +13,36 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Field | Nilai |
 |---|---|
 | Waktu pembaruan terakhir | 2026-08-30T05:20:00+07:00 |
-| Branch aktif | `codex/s356-sagaview-uat-receipt-postswitch-integrity-knowledge` dari exact `origin/main` |
+| Branch aktif | `codex/knowledge-s362-closing-staff` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `0090c5844bfd8d202a3e208871e1176006ddc532` |
-| Informasi terakhir disinkronkan | SagaView S356 UAT receipt post-switch integrity pada exact pushed source `e624bf4395996663816e168cbf0a90ebc4fd4692`. |
-| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`; production tidak berubah. |
+| Baseline sebelum pembaruan | `b8a4073d16120d7e1efdd7d527d5de8c8b3698cb` |
+| Informasi terakhir disinkronkan | SagaBook Closing Staff S362 pada exact main `b37db0810f64731e46f18d026452a6cf3f65e86c`. |
+| Status sinkronisasi | `CONFIRMED / MERGED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`; production tidak berubah. |
+
+## SagaBook Closing Staff S362 exact-main integration
+
+- Feature source `c50ef8b60487aee6775cc441151a6c8575500cdf` merge melalui
+  PR #78 ke exact main `b37db0810f64731e46f18d026452a6cf3f65e86c`.
+- Physical count tetap input manual, expected stock tetap berasal dari backend,
+  dan alasan variance disimpan per material. Submit mengarahkan operator ke
+  blocker pertama atau pengaturan stok tanpa bypass ledger.
+- Focused PHP 17/17, full PHP 1.306/1.306, contract 9/9, browser
+  mobile/desktop 12/12, typecheck/build/Pint, npm/OSV nol, serta MySQL 8.4
+  disposable 10/10 dengan migrate-fresh dan cleanup bersih lulus.
+- Production tetap source `435dbfd252759fd8b7d43f44af69edfb39ee2102`,
+  release `20260829175230-435dbfd`, rollback `20260829062031-b2790d6`;
+  deployment belum dilakukan.
+
+## File yang berubah pada sinkronisasi SagaBook Closing Staff S362
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaView S356 UAT receipt post-switch integrity
 

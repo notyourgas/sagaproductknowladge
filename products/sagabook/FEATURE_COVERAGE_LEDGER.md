@@ -1,6 +1,23 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 30 Agustus 2026 04:12 WIB
+Evidence cut-off: 30 Agustus 2026 05:20 WIB
+
+Guidance blocker Closing Staff S359/S362 telah `CONFIRMED / MERGED /
+QA_VALIDATED / SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED` pada feature source
+`c50ef8b60487aee6775cc441151a6c8575500cdf` dan exact main
+`b37db0810f64731e46f18d026452a6cf3f65e86c` melalui PR #78. Physical count
+tetap input manual yang wajib dikonfirmasi, sedangkan expected stock tetap
+berasal dari ledger backend. Setiap material yang berselisih memerlukan alasan
+sendiri; blocker submit mengarahkan operator ke field atau pengaturan stok yang
+tepat tanpa membypass `STOCK_UNINITIALIZED` dan `INSUFFICIENT_STOCK`. Focused
+PHP 17/17 (93 assertion), full PHP 1.306/1.306 (14.664 assertion), contract
+9/9, browser mobile/desktop 12/12, TypeScript/build/Pint, npm/OSV nol, dan
+MySQL 8.4 disposable 10/10 dengan migrate-fresh serta cleanup bersih lulus.
+Quality Gate GitHub tidak memulai step karena billing; bukti lokal ekuivalen
+tersedia. Production tetap source `435dbfd252759fd8b7d43f44af69edfb39ee2102`
+/ release `20260829175230-435dbfd`; deploy dan authenticated closing UAT pada
+runtime baru belum dilakukan.
 
 Hardening header keamanan health S361 telah `CONFIRMED / MERGED /
 SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /

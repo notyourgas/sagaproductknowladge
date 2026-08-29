@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 30 Agustus 2026 04:12 WIB
-Evidence status: hardening HSTS health S361 telah merge ke exact main `fa53bdd5db2195507b95e053f56fe9e5577b6cdc` dan tervalidasi lokal, tetapi belum dideploy. Production aktif exact source `435dbfd252759fd8b7d43f44af69edfb39ee2102`, release `20260829175230-435dbfd`, rollback `20260829062031-b2790d6`; `BUSINESS_READY=false` sampai dua pilot nyata dan provider canary selesai
+Updated: 30 Agustus 2026 05:20 WIB
+Evidence status: guidance blocker Closing Staff S362 telah merge ke exact main `b37db0810f64731e46f18d026452a6cf3f65e86c` dan tervalidasi lokal, tetapi belum dideploy. Production aktif exact source `435dbfd252759fd8b7d43f44af69edfb39ee2102`, release `20260829175230-435dbfd`, rollback `20260829062031-b2790d6`; `BUSINESS_READY=false` sampai dua pilot nyata dan provider canary selesai
 
 ## Tujuan dokumen
 
@@ -38,8 +38,9 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   npm/Composer/OSV nol lulus. Status `CONFIRMED / MERGED / LOCAL_VALIDATED /
   IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
 
-- S359 pada exact pushed source
-  `67591a4dd99e75b8df0a312ae09b8c8bc8240159` memperjelas dan memperbaiki
+- Guidance blocker Closing Staff S359/S362 pada feature source
+  `c50ef8b60487aee6775cc441151a6c8575500cdf` telah merge melalui PR #78 ke
+  exact main `b37db0810f64731e46f18d026452a6cf3f65e86c`. Perubahan ini memperjelas dan memperbaiki
   submit Closing Staff ketika stok fisik kertas foto atau packaging berbeda
   dari hitungan sistem. Nilai fisik harus dikonfirmasi eksplisit, termasuk
   nilai nol; setiap material yang berselisih memiliki alasan sendiri. Tombol
@@ -47,11 +48,13 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   operator ke field koreksi atau pengaturan stok bila ledger belum siap.
   Catatan operasional umum tidak lagi dianggap sebagai alasan selisih stok.
   Ledger server tetap authoritative dan tidak ada bypass untuk stok belum
-  diinisialisasi atau tidak mencukupi. Full Feature 1.271/1.271 (14.428
-  assertion), contract 9/9, browser 6/6, persistence 18/18,
-  typecheck/build/Pint file terkait, dan dependency audit nol lulus. Status
-  `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
-  production tidak berubah.
+  diinisialisasi atau tidak mencukupi. Exact-main lulus focused PHP 17/17
+  (93 assertion), full PHP 1.306/1.306 (14.664 assertion), contract 9/9,
+  browser mobile/desktop 12/12, TypeScript/build/Pint, npm/OSV nol, serta
+  MySQL 8.4 disposable 10/10 dengan migrate-fresh dan cleanup bersih. Quality
+  Gate GitHub tidak memulai step karena billing; bukti lokal ekuivalen
+  tersedia. Status `CONFIRMED / MERGED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
 
 - S358 pada feature source `0a2d9c6f103cacb2cdfb308105821e2e6fffb2c0`
   telah merge melalui PR #75 ke exact main

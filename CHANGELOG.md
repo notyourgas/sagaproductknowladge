@@ -133,17 +133,18 @@
 - Dokumen terdampak: Product, changelog, ledger SagaBook, portfolio, master
   knowledge, root changelog, dan sync status.
 
-## 2026-08-30 - SagaBook Closing Staff variance submit guidance sync
+## 2026-08-30 - SagaBook Closing Staff variance submit guidance S362 sync
 
 - Ringkasan: menyinkronkan konfirmasi stok fisik eksplisit, alasan selisih per
   material, feedback submit yang actionable, dan jalur koreksi ledger.
-- Provenance: exact pushed source
-  `67591a4dd99e75b8df0a312ae09b8c8bc8240159`; production tetap release
-  `20260829062031-b2790d6`.
-- Evidence: full Feature 1.271/1.271 (14.428 assertion), focused 17/17 (93),
-  contract 9/9, browser 6/6, persistence 18/18, typecheck/build/Pint file
-  terkait, serta audit npm/Composer/OSV nol.
-- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+- Provenance: feature source `c50ef8b60487aee6775cc441151a6c8575500cdf`
+  merge melalui PR #78 ke exact main
+  `b37db0810f64731e46f18d026452a6cf3f65e86c`; production tetap release
+  `20260829175230-435dbfd`.
+- Evidence: full PHP 1.306/1.306 (14.664 assertion), focused 17/17 (93),
+  contract 9/9, browser mobile/desktop 12/12, typecheck/build/Pint, npm/OSV
+  nol, serta MySQL 8.4 disposable 10/10 dengan migrate-fresh dan cleanup.
+- Klasifikasi: `CONFIRMED / MERGED / LOCAL_VALIDATED /
   IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
 - Dokumen terdampak: Product, dossier, changelog SagaBook, portfolio, master
   knowledge, root changelog, dan sync status.

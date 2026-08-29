@@ -112,17 +112,19 @@
   LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan
   dua pilot nyata serta provider canary tetap exit gate.
 
-## 2026-08-30 - SagaBook Closing Staff variance submit guidance
+## 2026-08-30 - SagaBook Closing Staff variance submit guidance S359/S362
 
-- Exact pushed source `67591a4dd99e75b8df0a312ae09b8c8bc8240159`
-  memisahkan konfirmasi hitungan fisik, alasan selisih kertas/packaging, dan
-  catatan operasional umum.
+- Feature source `c50ef8b60487aee6775cc441151a6c8575500cdf` merge melalui
+  PR #78 ke exact main `b37db0810f64731e46f18d026452a6cf3f65e86c` dan memisahkan
+  konfirmasi hitungan fisik, alasan selisih kertas/packaging, serta catatan
+  operasional umum.
 - Selisih plus atau minus dapat diproses setelah input wajib lengkap. Blocker
   korektif tampil spesifik, sedangkan masalah ledger keras tetap fail-closed
   dan diarahkan ke pengaturan stok.
-- Full Feature 1.271/1.271, contract 9/9, browser 6/6, persistence 18/18,
-  typecheck/build, dan dependency audit nol lulus. Status `PUSHED /
-  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
+- Full PHP 1.306/1.306, contract 9/9, browser mobile/desktop 12/12,
+  typecheck/build, npm/OSV nol, dan MySQL 8.4 disposable 10/10 lulus. Status
+  `MERGED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap
+  release `20260829175230-435dbfd`.
 
 ## 2026-08-30 - SagaView S352 atomic UAT receipt writes
 
