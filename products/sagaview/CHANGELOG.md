@@ -1,5 +1,26 @@
 # SagaView Changelog
 
+## 2026-08-29 - S344 authenticated business-readiness UAT harness
+
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan
+  `BUSINESS_READY=false`.
+- Before: residual S343 hanya menyebut authenticated Owner/Studio UAT dua
+  workspace tanpa kontrak evidence yang terikat exact runtime dan aman untuk
+  direview.
+- After: exact source `9e4e90a69fe892000a7ef98633d1b8d2e14f91c4`
+  menyediakan Prepare/Finalize 12 gate, revalidasi provenance Studio/backend,
+  operator+reviewer confirmation, sanitasi, dan evidence index hash-only.
+- Privacy/security: hanya label workspace A/B dan data sintetis; credential,
+  customer, tenant/device identifier, path, filename, serta payload foto
+  ditolak. Simulation tidak dapat difinalisasi dan harness tidak login, deploy,
+  atau mengubah production.
+- Evidence: Windows PowerShell/pwsh smoke, 263 test, lint/typecheck,
+  client+SSR build, bundle budget, npm audit nol, diff/secret scan, dan live
+  preflight exact runtime 200/200 lulus.
+- Next gate: operator berwenang menjalankan 12 gate authenticated nyata lalu
+  Andreas mereview receipt sebelum keputusan `BUSINESS_READY`.
+
 ## 2026-08-29 - S343 cumulative Studio production activation
 
 - Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED / DEVOPS_VALIDATED /

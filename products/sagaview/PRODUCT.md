@@ -1,6 +1,24 @@
 # SagaView Product Knowledge
 
-Updated: 29 Agustus 2026 03:43 WIB
+Updated: 29 Agustus 2026 16:12 WIB
+
+SagaView S344 exact source
+`9e4e90a69fe892000a7ef98633d1b8d2e14f91c4` sudah `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Harness authenticated Owner/Studio
+UAT mengikat dua workspace nyata ke exact production Studio
+`47d68e7665dd03694ad45b90467ef44100245c6b` / release
+`20260828203620-47d68e7` dan backend
+`98f13a8d50f4ae0b97d787f1ab5e0896296007ec` / release
+`20260828111443-98f13a8` melalui marker provenance read-only.
+
+Dua belas gate mencakup auth Owner, authority katalog/harga, alignment dan
+isolasi dua workspace, workflow lokal, bahasa estimasi/pembayaran off-app,
+export/print PNG, recovery, serta no-photo-upload. Receipt hanya menyimpan hash
+dan label ordinal workspace A/B; credential, identifier tenant/device,
+customer, path, dan payload foto dilarang. PowerShell/pwsh smoke, 263 test,
+lint/typecheck/build/bundle budget, npm audit nol, secret scan, dan live
+preflight runtime 200/200 lulus. Authenticated UAT manual belum dijalankan;
+production tidak berubah dan `BUSINESS_READY=false`.
 
 SagaView Studio cumulative S343 exact source
 `47d68e7665dd03694ad45b90467ef44100245c6b` sudah `PUSHED /

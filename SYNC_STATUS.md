@@ -12,12 +12,32 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-29 13:31 WIB |
-| Branch aktif | `codex/s350-sagabook-ots-production-knowledge` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-29 16:12 WIB |
+| Branch aktif | `codex/s344-sagaview-knowledge` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `2615d4ae840a17c8bbaa4fc691e3b2e68b2b7ed2` |
-| Informasi terakhir disinkronkan | SagaBook Manual Booking OTS `Mulai sekarang` dan authenticated production UAT. |
-| Status sinkronisasi | SagaBook release `20260829062031-b2790d6`; `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED / BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `cf12859a094341d089da43367cde040768b38b5e` |
+| Informasi terakhir disinkronkan | SagaView S344 authenticated business-readiness UAT harness. |
+| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan `BUSINESS_READY=false`. |
+
+## SagaView S344 authenticated UAT harness
+
+- Exact source `9e4e90a69fe892000a7ef98633d1b8d2e14f91c4` sudah push.
+- Harness mengikat 12 gate authenticated dua workspace ke exact production
+  Studio/backend, dengan receipt hash-only dan data sintetis.
+- PowerShell/pwsh smoke, 263 test, full check/build/budget/audit, secret scan,
+  dan live provenance 200/200 lulus.
+- Authenticated manual UAT belum dijalankan; production tetap S343 dan
+  `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi SagaView S344
+
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook Manual Booking OTS Mulai sekarang
 

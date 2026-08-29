@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-29 - SagaView S344 authenticated UAT harness
+
+- Exact pushed source `9e4e90a69fe892000a7ef98633d1b8d2e14f91c4`
+  menambahkan harness fail-closed untuk 12 gate authenticated Owner/Studio pada
+  dua workspace nyata, terikat exact release production S343.
+- Evidence memakai data sintetis, label workspace A/B, hash file, dan dua
+  reviewer; credential, PII, tenant/device identifier, path, serta foto tidak
+  masuk receipt.
+- PowerShell/pwsh smoke, 263 test, full check/build/budget/audit, secret scan,
+  dan live provenance 200/200 lulus. Status `PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap aktif dan
+  `BUSINESS_READY=false` sampai UAT manual selesai.
+
 ## 2026-08-29 - SagaBook Manual Booking OTS Mulai sekarang
 
 - Exact source `b2790d64232b24222c3bc383c3b445d760786f2d` aktif pada
