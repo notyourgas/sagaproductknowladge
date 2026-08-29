@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 30 Agustus 2026
-Evidence status: perbaikan Closing Staff S359 sudah ter-push pada exact source `67591a4dd99e75b8df0a312ae09b8c8bc8240159` dan tervalidasi lokal, tetapi belum dideploy. Production tetap exact source `b2790d64232b24222c3bc383c3b445d760786f2d`, release `20260829062031-b2790d6`, dan `BUSINESS_READY=false`
+Updated: 30 Agustus 2026 02:05 WIB
+Evidence status: gate bukti pilot dua studio telah merge ke exact main `a7de78737a64d1213799b97d0b6294839233b3e6` dan tervalidasi lokal, tetapi belum dideploy. Production aktif exact source `435dbfd252759fd8b7d43f44af69edfb39ee2102`, release `20260829175230-435dbfd`, rollback `20260829062031-b2790d6`; `BUSINESS_READY=false` sampai dua pilot nyata dan provider canary selesai
 
 ## Tujuan dokumen
 
@@ -15,6 +15,18 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
+
+- Gate bukti pilot dua studio pada feature source
+  `ec6ea76132b9dce4530e3c822db198785c2f1fc2` telah merge melalui PR #76 ke
+  exact main `a7de78737a64d1213799b97d0b6294839233b3e6`. Validator mewajibkan tepat
+  dua slot pilot, cakupan Owner/operator/customer, viewport 390x844 dan
+  1440x900, exact source/release, binding SHA-256 receipt UAT, digest
+  otorisasi, metrik public-safe, serta nol Critical/High. Field PII, secret,
+  URL, dan UUID ditolak; validator selalu menyisakan `provider_canary` dan
+  `businessReady=false`. Focused gabungan 65/65, pilot 20/20, authenticated
+  UAT 15/15, production UAT 30/30, typecheck, build 5.133 modul, dan audit
+  npm/Composer/OSV nol lulus. Status `CONFIRMED / MERGED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
 
 - S359 pada exact pushed source
   `67591a4dd99e75b8df0a312ae09b8c8bc8240159` memperjelas dan memperbaiki

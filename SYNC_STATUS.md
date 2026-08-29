@@ -12,12 +12,34 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-30 |
-| Branch aktif | `codex/s359-sagabook-closing-knowledge` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-30T02:05:00+07:00 |
+| Branch aktif | `codex/s359-pilot-evidence-knowledge` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `85e2b5ca0c163600b4c9bcccdeb929498f3327a3` |
-| Informasi terakhir disinkronkan | SagaBook Closing Staff S359 variance submit guidance. |
-| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan `BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `c2a38f904a8991898ebb74ea83ea6f5e39472db0` |
+| Informasi terakhir disinkronkan | SagaBook two-studio pilot evidence gate pada exact main `a7de78737a64d1213799b97d0b6294839233b3e6`. |
+| Status sinkronisasi | `CONFIRMED / MERGED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap `435dbfd252759fd8b7d43f44af69edfb39ee2102` dan `BUSINESS_READY=false`. |
+
+## SagaBook two-studio pilot evidence gate
+
+- Feature source `ec6ea76132b9dce4530e3c822db198785c2f1fc2` merge melalui PR #76 ke exact
+  main `a7de78737a64d1213799b97d0b6294839233b3e6`.
+- Tepat dua slot pilot harus mengikat Owner/operator/customer, viewport
+  390x844 dan 1440x900, exact source/release, SHA-256 receipt authenticated
+  UAT, digest otorisasi, metrik public-safe, serta nol Critical/High.
+- Focused 65/65, pilot 20/20, UAT 15/15, production UAT 30/30,
+  typecheck/build, dan audit npm/Composer/OSV nol lulus.
+- Production aktif tetap release `20260829175230-435dbfd` dengan rollback
+  `20260829062031-b2790d6`; dua pilot nyata dan provider canary belum selesai.
+
+## File yang berubah pada sinkronisasi SagaBook two-studio pilot evidence gate
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook Closing Staff S359 variance submit guidance
 
