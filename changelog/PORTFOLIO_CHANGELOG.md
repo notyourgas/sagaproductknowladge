@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-29 - COYABAG Admin application shell
+
+- Exact source `d26c3c3fba61d23f6d5c2313a5debf75a032c6cf` aktif pada
+  immutable release `20260829-d26c3c3`; rollback `20260829-1b3b023` tersedia.
+- Navigasi admin kini mempunyai sidebar collapse persisten, breadcrumb, active
+  route, pencarian desktop/mobile, shortcut keyboard, notifikasi, menu akun,
+  serta mobile drawer dengan focus trap dan scroll lock.
+- Full backend/browser/build/audit, backup, readiness 41/42, runtime asset, dan
+  public smoke lulus. Commerce/provider tidak diaktifkan oleh perubahan ini.
+
 ## 2026-08-29 - SagaBook S354 OTS idempotency recovery
 
 - Exact main `d146adbef6a222cc32d2a10ffb2c8332c01098f8` menjaga retry OTS

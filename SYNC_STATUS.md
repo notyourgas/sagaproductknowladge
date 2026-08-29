@@ -12,12 +12,33 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-29 17:18 WIB |
-| Branch aktif | `codex/knowledge-s354-ots-idempotency` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-29 18:13 WIB |
+| Branch aktif | `codex/coyabag-payment-reconcile-20260829` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `36eb7116272e5e863a8d44751f4047421efd3534` |
-| Informasi terakhir disinkronkan | SagaBook S354 OTS idempotency recovery merged, belum deploy. |
-| Status sinkronisasi | `CONFIRMED / MERGED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah. |
+| Baseline sebelum pembaruan | `af781e7878782ed5ab9f05ef55b4ff2ee5c58bfb` |
+| Informasi terakhir disinkronkan | COYABAG Admin application shell navigation. |
+| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`. |
+
+## COYABAG Admin application shell navigation
+
+- Exact source `d26c3c3fba61d23f6d5c2313a5debf75a032c6cf` aktif pada release
+  `20260829-d26c3c3`; rollback `20260829-1b3b023` tersedia.
+- Sidebar collapse persisten, breadcrumb, active route, pencarian
+  desktop/mobile, shortcut, notifikasi, menu akun, dan focus-safe drawer aktif.
+- Backend 473 total/4.457 assertion, browser owner/finance desktop-mobile,
+  build/audit, backup, readiness 41/42, runtime asset, serta public smoke lulus.
+- Verifier manifest yang salah lebih dulu memblokir release. Symlink dipulihkan,
+  kandidat dikarantina, verifier diperbaiki, dan retry exact source lulus.
+- Release sign-off tetap satu blocker; tidak ada aktivasi commerce/provider.
+
+## File yang berubah pada sinkronisasi COYABAG Admin application shell
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook S354 OTS idempotency recovery
 

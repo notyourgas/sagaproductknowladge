@@ -76,12 +76,16 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 - Launch UAT 15 langkah sudah lulus 15/15 dan sign-off diizinkan. Checkout
   publik tetap `PRODUCTION_READINESS_BLOCKED` hanya sampai release sign-off
   dicatat; deployment acceptance hotfix tidak membuat payment intent baru.
-- Release aktif `20260829-1b3b023` dengan exact source
-  `1b3b0231959a3a9105b9578caa119c995530e97a` melayani production;
-  rollback langsung `20260829-edd3606` dipertahankan. Fondasi dashboard admin
+- Release aktif `20260829-d26c3c3` dengan exact source
+  `d26c3c3fba61d23f6d5c2313a5debf75a032c6cf` melayani production;
+  rollback langsung `20260829-1b3b023` dipertahankan. Fondasi dashboard admin
   kini memakai Plus Jakarta Sans self-hosted, token warna/spacing/focus modern,
   hierarki panel dan kontrol yang lebih tenang, KPI mobile dua kolom, serta
-  spacing wordmark/profile yang konsisten. Admin System Health tetap dapat
+  spacing wordmark/profile yang konsisten. Application shell menambahkan
+  sidebar collapse persisten, breadcrumb, active route yang tepat, pencarian
+  desktop/mobile dengan recovery state, shortcut keyboard, notification entry,
+  menu akun kontekstual, dan mobile drawer dengan focus trap serta scroll lock.
+  Admin System Health tetap dapat
   dirender setelah import ikon Feather `Truck` yang hilang dipulihkan dan
   dikunci dengan regression test. Payment gateway sekarang
   memakai URL kembali HTTPS kanonik storefront dan menolak redirect internal

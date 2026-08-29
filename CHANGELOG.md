@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-29 - COYABAG Admin application shell sync
+
+- Ringkasan: menyinkronkan sidebar collapse persisten, breadcrumb, active
+  route, global search desktop/mobile, shortcut keyboard, notification entry,
+  profile menu, serta mobile focus/scroll management.
+- Provenance: exact source `d26c3c3fba61d23f6d5c2313a5debf75a032c6cf`,
+  immutable release `20260829-d26c3c3`, rollback `20260829-1b3b023`.
+- Evidence: 473 backend test/4.457 assertion, browser owner/finance
+  desktop-mobile, build/audit, backup, readiness 41/42, runtime asset, dan
+  public smoke. Verifier manifest yang salah memicu rollback sebelum retry.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /
+  NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+- Dokumen terdampak: Product/changelog COYABAG, portfolio, master knowledge,
+  root changelog, dan sync status.
+
 ## 2026-08-29 - SagaBook S354 OTS idempotency recovery sync
 
 - Ringkasan: mencatat recovery retry OTS lintas perubahan jam client,

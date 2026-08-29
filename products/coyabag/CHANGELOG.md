@@ -4,6 +4,24 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-29 - Admin application shell navigation deployed
+
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /
+  NOT_PRODUCTION_ACTIVATED`; exact source
+  `d26c3c3fba61d23f6d5c2313a5debf75a032c6cf`, immutable release
+  `20260829-d26c3c3`, rollback `20260829-1b3b023`.
+- Sidebar dapat diciutkan dan mengingat pilihan perangkat; breadcrumb dan
+  active route membantu orientasi pada halaman turunan. Topbar menyediakan
+  pencarian global desktop/mobile, shortcut `/`/`Ctrl+K`, notifikasi, serta
+  menu akun dengan profil, keamanan, dan keluar.
+- Mobile drawer mengunci scroll, menjebak fokus, kembali ke pemicu saat Escape,
+  dan pencarian mempunyai loading, empty, error, serta recovery state.
+- Backend 473 total: 472 lulus, satu controlled skip, 4.457 assertion; browser
+  owner/finance desktop-mobile, build/audit, backup, readiness 41/42, asset
+  runtime shell, dan public smoke lulus. Satu kegagalan verifier manifest
+  di-rollback ke release sebelumnya, kandidat dikarantina, lalu exact release
+  yang sama lulus setelah verifier diperbaiki.
+
 ## 2026-08-29 - Admin visual foundation Plus Jakarta Sans deployed
 
 - Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /
