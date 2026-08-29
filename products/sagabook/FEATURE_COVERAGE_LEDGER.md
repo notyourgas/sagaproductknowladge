@@ -1,6 +1,18 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 30 Agustus 2026 05:20 WIB
+Evidence cut-off: 30 Agustus 2026 06:35 WIB
+
+Release rehearsal S363 telah `LOCAL_VALIDATED / RELEASE_ARTIFACT_READY /
+IMPLEMENTED_NOT_DEPLOYED` pada exact main kumulatif
+`b37db0810f64731e46f18d026452a6cf3f65e86c`. Archive, bundle Git, metadata,
+dan manifest immutable identik pada dua disk fisik. Dua disposable restore
+terpisah lulus exact-source, clean-tree, rollback ancestry, manifest, bundle,
+receipt binding, dan cleanup. Matriks receipt 7/7 menerima baseline valid dan
+menolak replay kandidat, rollback, manifest, verifier, artifact, serta path
+restore terlalu panjang. Tidak ada network, data customer, mutasi production,
+atau deploy. Fresh encrypted backup database production, atomic switch,
+post-switch verification, authenticated runtime UAT, dua pilot nyata, dan
+provider canary masih menjadi gate; `BUSINESS_READY=false`.
 
 Guidance blocker Closing Staff S359/S362 telah `CONFIRMED / MERGED /
 QA_VALIDATED / SECURITY_VALIDATED / DATA_INTEGRITY_VALIDATED /

@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-30 - SagaBook exact-main release rehearsal S363
+
+- Kandidat kumulatif exact main `b37db0810f64731e46f18d026452a6cf3f65e86c`
+  memiliki archive, bundle, metadata, dan manifest immutable identik pada dua
+  disk fisik.
+- Dua disposable restore dan matriks receipt 7/7 lulus, termasuk penolakan
+  replay kandidat, rollback, manifest, verifier, artifact, dan path terlalu
+  panjang. Tidak ada network, data customer, atau mutasi production.
+- Status `LOCAL_VALIDATED / RELEASE_ARTIFACT_READY /
+  IMPLEMENTED_NOT_DEPLOYED`; fresh encrypted backup database production,
+  deploy atomic, post-switch UAT, dua pilot, dan provider canary masih pending.
+
 ## 2026-08-30 - COYABAG Admin focused operational action queue
 
 - Exact material source `764197409fd21a9fbfd2659a7a232fdf4d16e0ca`

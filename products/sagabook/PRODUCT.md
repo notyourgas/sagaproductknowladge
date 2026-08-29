@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 30 Agustus 2026 05:20 WIB
-Evidence status: guidance blocker Closing Staff S362 telah merge ke exact main `b37db0810f64731e46f18d026452a6cf3f65e86c` dan tervalidasi lokal, tetapi belum dideploy. Production aktif exact source `435dbfd252759fd8b7d43f44af69edfb39ee2102`, release `20260829175230-435dbfd`, rollback `20260829062031-b2790d6`; `BUSINESS_READY=false` sampai dua pilot nyata dan provider canary selesai
+Updated: 30 Agustus 2026 06:35 WIB
+Evidence status: kandidat kumulatif exact main `b37db0810f64731e46f18d026452a6cf3f65e86c` memiliki archive, bundle, metadata, dan manifest identik pada dua disk fisik serta lulus dua disposable restore dan matriks receipt 7/7. Status `LOCAL_VALIDATED / RELEASE_ARTIFACT_READY / IMPLEMENTED_NOT_DEPLOYED`; production aktif tetap exact source `435dbfd252759fd8b7d43f44af69edfb39ee2102`, release `20260829175230-435dbfd`, rollback `20260829062031-b2790d6`; `BUSINESS_READY=false` sampai deploy terotorisasi, UAT runtime baru, dua pilot nyata, dan provider canary selesai
 
 ## Tujuan dokumen
 
@@ -15,6 +15,19 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
+
+- Rehearsal release exact-main S363 untuk kandidat kumulatif
+  `b37db0810f64731e46f18d026452a6cf3f65e86c` telah menghasilkan archive,
+  bundle Git, metadata, dan manifest immutable yang identik pada dua disk
+  fisik. Dua restore disposable terpisah membuktikan exact source, clean
+  restore, rollback production sebagai ancestor, checksum manifest dan bundle,
+  receipt binding, serta cleanup. Matriks 7/7 membuktikan baseline valid dan
+  penolakan fail-closed atas replay kandidat, rollback, manifest, verifier,
+  artifact, serta path restore terlalu panjang. Seluruh uji memakai data
+  sintetis tanpa network atau data customer. Status `LOCAL_VALIDATED /
+  RELEASE_ARTIFACT_READY / IMPLEMENTED_NOT_DEPLOYED`; fresh encrypted backup
+  database production, deploy atomic, dan post-switch verification belum
+  dilakukan.
 
 - Hardening security header S361 pada feature source
   `91b3267d5156d14649b22989fe3351f5e94b4528` telah merge melalui PR #77 ke
