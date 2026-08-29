@@ -2,6 +2,26 @@
 
 Evidence cut-off: 29 Agustus 2026
 
+Manual Booking OTS `Mulai sekarang` telah `CONFIRMED / PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED / UAT_ACCEPTED` pada exact cumulative source
+`b2790d64232b24222c3bc383c3b445d760786f2d`, immutable release
+`20260829062031-b2790d6`, rollback `20260829053952-804fb58`. Coverage UI ->
+frontend contract -> API -> backend service -> booking/closing/task/export
+membuktikan waktu tenant ditetapkan server, client date/time diabaikan, mode
+`walk_in` dan timezone disimpan, serta replay idempoten mengembalikan waktu
+awal. Guard mempertahankan role/capability, tenant/cabang, protected payment
+hold, slot/resource/linked-resource, cross-midnight, stale version,
+double-submit, concurrency, dan audit. Closing terkunci direkonsiliasi melalui
+adjustment request dan revisi, bukan overwrite kas fisik. Email booking tetap
+memerlukan consent operasional eksplisit. Gate lulus PHP 1.296/1.296 (14.519),
+focused 17/17 (132), MySQL 8.4 migration rehearsal, TypeScript/build, visual
+mobile/desktop termasuk target 44 piksel/no-overflow/forced-colors/
+reduced-motion, changed-file Pint, dependency audit nol, fresh encrypted
+backup/disposable restore, verifier 23/23, report canary 32/32, 0 pending
+migration, 0 journal error, dan smoke/security 3/3. Authenticated read-only
+Owner/Staff UAT lulus tanpa mutasi, PII, atau secret. `BUSINESS_READY=false`
+hanya menunggu pilot dua studio dan provider canary.
+
 Authenticated production UAT closure telah `CONFIRMED / PRODUCTION_DEPLOYED /
 PRODUCTION_ACTIVATED / UAT_ACCEPTED` pada exact cumulative source
 `804fb5868fb6a7d762b7c2621c653d318a8eef57`, immutable release

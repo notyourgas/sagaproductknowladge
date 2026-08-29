@@ -1,5 +1,31 @@
 # SagaBook Changelog
 
+## 2026-08-29 - Manual Booking OTS Mulai sekarang production activation
+
+- Semua tenant memperoleh aksi `Mulai sekarang` untuk Manual Booking OTS bagi
+  role yang memiliki capability override. Waktu mulai authoritative dihitung
+  server berdasarkan timezone tenant, termasuk setelah jam operasional.
+- Booking selalu ditandai `walk_in` dan menyimpan mode mulai, timezone, alasan
+  override, serta waktu server. Payment hold, konflik slot/resource,
+  cross-midnight, tenant/cabang, permission, idempotency, concurrency, stale,
+  dan audit tetap fail-closed.
+- Closing terkunci direkonsiliasi melalui adjustment request, revisi, task
+  admin, dan hitung ulang finansial tanpa menimpa kas fisik. Export XLSX kini
+  menyertakan mode mulai, timezone jadwal, dan override jadwal. Email hanya
+  dijadwalkan dengan consent operasional eksplisit.
+- Exact cumulative source `b2790d64232b24222c3bc383c3b445d760786f2d`
+  aktif pada release `20260829062031-b2790d6`; rollback kompatibel
+  `20260829053952-804fb58` tersedia.
+- PHP 1.296/1.296 (14.519 assertion), focused 17/17 (132), MySQL 8.4
+  migration rehearsal, TypeScript/build, visual mobile/desktop, changed-file
+  Pint, dependency audit nol, encrypted backup/disposable restore, verifier
+  23/23, canary 32/32, migration pending 0, journal 0 error, dan
+  smoke/security 3/3 lulus. Authenticated Owner/Staff UAT read-only diterima
+  tanpa mutasi atau secret.
+- Status `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+  UAT_ACCEPTED / BUSINESS_READY=false`; residual hanya pilot dua studio dan
+  provider canary.
+
 ## 2026-08-29 - Authenticated Owner/Staff UAT production closure
 
 - Exact cumulative source `804fb5868fb6a7d762b7c2621c653d318a8eef57`

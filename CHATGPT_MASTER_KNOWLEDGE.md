@@ -1,5 +1,23 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+SagaBook Manual Booking OTS `Mulai sekarang` aktif untuk seluruh tenant pada
+exact cumulative source `b2790d64232b24222c3bc383c3b445d760786f2d`,
+immutable release `20260829062031-b2790d6`, dengan rollback
+`20260829053952-804fb58`. Role yang mempunyai capability override dapat
+memulai walk-in memakai waktu tenant authoritative dari server, termasuk
+setelah jam operasional. Jalur ini menyimpan mode mulai, timezone, alasan
+override, dan waktu server; payment hold, collision slot/resource,
+cross-midnight, tenant/cabang, permission, idempotency, concurrency, stale,
+dan audit tetap fail-closed. Closing terkunci direkonsiliasi melalui adjustment
+request, revisi, task admin, dan hitung ulang finansial tanpa menimpa kas fisik.
+Export membawa provenance jadwal dan email hanya dijadwalkan bila consent
+operasional eksplisit tersedia. PHP 1.296/1.296, focused 17/17, MySQL 8.4,
+TypeScript/build, visual mobile/desktop, dependency audit nol, encrypted
+backup/restore, verifier 23/23, canary 32/32, migration pending 0, journal 0
+error, public/security smoke 3/3, serta authenticated Owner/Staff UAT read-only
+lulus. Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED /
+BUSINESS_READY=false`; residual hanya pilot dua studio dan provider canary.
+
 SagaBook authenticated production UAT closure aktif pada exact cumulative
 source `804fb5868fb6a7d762b7c2621c653d318a8eef57`, immutable release
 `20260829053952-804fb58`, dengan rollback `20260829051850-176949b`. Target

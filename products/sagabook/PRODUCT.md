@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 29 Agustus 2026 12:52 WIB
-Evidence status: seluruh fitur kumulatif termasuk booking-void, styled XLSX, closing manual-share, rekap sesi/keuangan, Task Manager, dan hardening aksesibilitas Staff aktif pada exact source `804fb5868fb6a7d762b7c2621c653d318a8eef57`, release `20260829053952-804fb58`; production-deployed dan production-activated, authenticated read-only Owner/Staff UAT lulus, dan `BUSINESS_READY=false` hanya menunggu pilot dua studio serta provider canary
+Updated: 29 Agustus 2026 13:31 WIB
+Evidence status: seluruh fitur kumulatif termasuk Manual Booking OTS `Mulai sekarang`, booking-void, styled XLSX, closing manual-share, rekap sesi/keuangan, Task Manager, dan hardening aksesibilitas Staff aktif pada exact source `b2790d64232b24222c3bc383c3b445d760786f2d`, release `20260829062031-b2790d6`; production-deployed dan production-activated, authenticated read-only Owner/Staff UAT lulus, dan `BUSINESS_READY=false` hanya menunggu pilot dua studio serta provider canary
 
 ## Tujuan dokumen
 
@@ -15,6 +15,29 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
+
+- Manual Booking OTS `Mulai sekarang` aktif untuk seluruh tenant pada exact
+  cumulative source `b2790d64232b24222c3bc383c3b445d760786f2d`, immutable
+  release `20260829062031-b2790d6`, dengan rollback kompatibel
+  `20260829053952-804fb58`. Owner, manager, admin cabang, dan Staff yang
+  memiliki capability override dapat memulai sesi dari waktu tenant yang
+  ditetapkan server, termasuk setelah jam operasional, tanpa mempercayai
+  tanggal atau jam dari client. Jalur ini selalu tercatat sebagai `walk_in`,
+  menyimpan mode mulai dan timezone, serta mempertahankan tenant/cabang,
+  payment hold, slot/resource collision, cross-midnight, permission,
+  idempotency, audit, dan stale/double-submit guard. Closing yang telah dikunci
+  tidak ditimpa: sistem membuat adjustment request terkontrol, menyimpan revisi
+  sebelumnya, memperbarui ringkasan finansial, dan membuat task admin. Export
+  XLSX juga menampilkan mode mulai, timezone jadwal, dan override jadwal.
+  Gate exact-main lulus PHP 1.296/1.296 (14.519 assertion), focused 17/17
+  (132), MySQL 8.4 migration rehearsal, TypeScript/build, visual
+  mobile/desktop, changed-file Pint, dan dependency audit nol. Fresh encrypted
+  backup/checksum/disposable restore, verifier 23/23, report canary 32/32,
+  migration pending 0, journal 0 error, public/security smoke 3/3, serta
+  authenticated read-only Owner/Staff UAT lulus tanpa mutasi atau secret.
+  Status `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+  UAT_ACCEPTED / BUSINESS_READY=false`; residual hanya pilot dua studio dan
+  provider canary.
 
 - Release penutupan authenticated UAT aktif pada exact cumulative source
   `804fb5868fb6a7d762b7c2621c653d318a8eef57`, immutable release

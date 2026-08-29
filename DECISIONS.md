@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-122 - Manual Booking OTS dapat dimulai dari waktu server saat ini
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-29 |
+| Topik | Walk-in dadakan mendekati atau melewati jam tutup studio |
+| Keputusan | Manual Booking menyediakan aksi `Mulai sekarang` untuk role yang memiliki capability override pada seluruh tenant. Waktu mulai wajib berasal dari timezone tenant di server dan boleh berada di luar jam operasional; client tidak boleh menetapkan ulang tanggal atau jam pada mode ini. |
+| Alasan | Customer OTS dapat datang dadakan dan tetap dilayani berdasarkan kondisi nyata studio, termasuk ketika slot publik atau jam operasional sudah berakhir. |
+| Alternatif yang dipertimbangkan | Memaksa admin memilih slot publik; hanya mengizinkan sebelum jam tutup; menerima waktu perangkat client; menonaktifkan guard konflik pada walk-in. |
+| Dampak | Booking ditandai `walk_in` dengan provenance waktu dan audit. Payment hold, konflik resource, permission, tenant/cabang, idempotency, concurrency, dan stale guard tetap berlaku. Closing terkunci menggunakan adjustment request/revisi, bukan overwrite. Fitur default-on seluruh tenant dengan kill switch; email tetap memerlukan consent operasional eksplisit. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED / BUSINESS_READY=false`; source `b2790d64232b24222c3bc383c3b445d760786f2d`, release `20260829062031-b2790d6`, rollback `20260829053952-804fb58`; residual pilot dua studio dan provider canary |
+| Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [SagaBook Changelog](products/sagabook/CHANGELOG.md), [SagaBook Ledger](products/sagabook/FEATURE_COVERAGE_LEDGER.md) |
+
 ## DEC-121 - Closing dibagikan manual oleh admin tanpa konfigurasi grup
 
 | Field | Isi |
