@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-29 - COYABAG payment reconciliation recovery sync
+
+- Ringkasan: menyinkronkan parser callback Tokopay resmi, fallback check-order
+  terverifikasi, dan hasil satu pembayaran nyata controlled UAT.
+- Provenance: exact source `ec2a18bf70c8e2ae19bfdb71d125ee318b6ca2f9`,
+  immutable release `20260829033654-ec2a18b`, rollback
+  `20260829100759-eff4f53`.
+- Evidence: contract 12/12, backend 974/974 (11.106 assertion), build/Pint,
+  Composer/npm production audit, backup, service, HMAC, journal, public smoke,
+  serta payment matched dan order confirmed/picking.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED / CONTROLLED_UAT_PASSED /
+  NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+
 ## 2026-08-29 - COYABAG Tokopay contract production sync
 
 - Ringkasan: menyinkronkan kontrak advanced order QRIS dan variasi URL checkout

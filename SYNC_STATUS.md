@@ -12,12 +12,23 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-29 10:15 WIB |
-| Branch aktif | Detached worktree dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-29 10:45 WIB |
+| Branch aktif | `codex/coyabag-payment-reconcile-20260829` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `4a0f98b98fc8bc718b6b06905058920925db4627` |
-| Informasi terakhir disinkronkan | COYABAG Tokopay advanced order contract production fix. |
-| Status sinkronisasi | Saga Platform release `20260829100759-eff4f53`; `PRODUCTION_DEPLOYED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `0a3ab715660f357ed826b7737b55bcd5fa0aab83` |
+| Informasi terakhir disinkronkan | COYABAG Tokopay callback reconciliation dan controlled real-payment UAT. |
+| Status sinkronisasi | Saga Platform release `20260829033654-ec2a18b`; `PRODUCTION_DEPLOYED / CONTROLLED_UAT_PASSED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`. |
+
+## COYABAG payment reconciliation recovery
+
+- Exact source `ec2a18bf70c8e2ae19bfdb71d125ee318b6ca2f9` aktif pada
+  release `20260829033654-ec2a18b`; rollback `20260829100759-eff4f53`.
+- Callback dan check-order kini memvalidasi identitas, nominal, dan status
+  provider. Satu pembayaran nyata controlled UAT berhasil menjadi payment
+  matched dan order confirmed/picking tanpa pembayaran ulang.
+- Contract 12/12, backend 974/974, build/audit, backup, HMAC, service/journal,
+  dan public smoke lulus. Checkout publik tetap fail-closed sampai UAT lengkap
+  dan release sign-off.
 
 ## COYABAG Tokopay advanced order contract production fix
 

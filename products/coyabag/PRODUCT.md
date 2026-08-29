@@ -799,12 +799,24 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
   credential CoyaBag tetap nol. Checkout publik tetap
   `PRODUCTION_READINESS_BLOCKED`; status ini adalah
   `PRODUCTION_DEPLOYED_MONITORING`, bukan payment production-activated.
+- Saga Platform release `20260829033654-ec2a18b` pada exact source
+  `ec2a18bf70c8e2ae19bfdb71d125ee318b6ca2f9` memperbaiki parser callback
+  nominal resmi Tokopay dan menambah rekonsiliasi read-through yang memvalidasi
+  reference, transaction ID, nominal, serta status provider sebelum promosi.
+- Satu UAT pembayaran nyata terkontrol berhasil direkonsiliasi menjadi paid;
+  payment lokal matched, order confirmed, dan fulfillment masuk picking tanpa
+  pembayaran ulang. Ini bukti flow terkontrol, bukan aktivasi checkout publik.
+- Full backend 974/974 dengan 11.106 assertion, contract 12/12, build, Pint,
+  Composer/npm production audit, backup, HMAC boundary, service/journal, serta
+  public storefront/API/admin smoke lulus. Rollback langsung tetap
+  `20260829100759-eff4f53`.
 
 ## Blocker business activation
 
 - Credential, provider, dan controlled-trial mode pembayaran SagaDev.
 - Owner 2FA enrollment serta recovery SOP.
-- Launch UAT dan release sign-off operasional/security.
+- Penyelesaian checklist Launch UAT dan release sign-off operasional/security;
+  satu pembayaran nyata terkontrol sudah lulus, tetapi aktivasi publik belum.
 - SMTP/email dan notification sender production.
 - Object storage untuk media produk, konten, dan bukti pembayaran.
 - Persetujuan policy privasi dan retensi.

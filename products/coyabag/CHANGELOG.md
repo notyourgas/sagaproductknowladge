@@ -4,6 +4,23 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-29 - Tokopay callback reconciliation self-heal deployed
+
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED / CONTROLLED_UAT_PASSED /
+  NOT_PRODUCTION_ACTIVATED`; Saga Platform exact source
+  `ec2a18bf70c8e2ae19bfdb71d125ee318b6ca2f9`, immutable release
+  `20260829033654-ec2a18b`, rollback `20260829100759-eff4f53`.
+- Parser callback kini membaca field nominal resmi Tokopay. Status pending juga
+  dapat pulih lewat check-order terautentikasi setelah reference, transaction
+  ID, nominal, dan status provider cocok; underpayment tetap fail-closed.
+- Satu pembayaran nyata controlled UAT berhasil direkonsiliasi menjadi paid,
+  payment lokal matched, order confirmed, dan fulfillment picking. Tidak ada
+  pembayaran ulang atau promosi manual tanpa bukti provider.
+- Contract 12/12, full backend 974/974 dengan 11.106 assertion, build, Pint,
+  Composer/npm production audit, backup, service, HMAC, journal, dan public
+  smoke lulus. Checkout publik dan business readiness tetap terkunci sampai
+  checklist UAT serta release sign-off selesai.
+
 ## 2026-08-29 - Tokopay advanced order contract deployed
 
 - Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /

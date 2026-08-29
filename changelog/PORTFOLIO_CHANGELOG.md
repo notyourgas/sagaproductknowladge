@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-29 - COYABAG real-payment reconciliation recovery
+
+- Saga Platform exact source `ec2a18bf70c8e2ae19bfdb71d125ee318b6ca2f9`
+  aktif pada release `20260829033654-ec2a18b`; rollback
+  `20260829100759-eff4f53` tersedia.
+- Callback Tokopay memakai field nominal resmi dan status pending memiliki
+  self-heal melalui check-order yang memverifikasi identitas serta nominal
+  transaksi sebelum status dipromosikan.
+- Satu pembayaran nyata controlled UAT berhasil menjadi payment matched dan
+  order confirmed/picking. Full test/build/audit dan public smoke lulus;
+  checkout publik tetap fail-closed sampai UAT lengkap dan sign-off.
+
 ## 2026-08-29 - COYABAG Tokopay order contract production fix
 
 - Saga Platform exact source `eff4f5339571fd7f02fbc11c6cc61153d3def83e`

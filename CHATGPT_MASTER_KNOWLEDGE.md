@@ -74,17 +74,19 @@ authenticated Owner/Staff UAT dan mapping legacy masih pending.
 COYABAG storefront/API tetap pada release `20260829-e1c8b65` dengan exact source
 `e1c8b65f09d0ed3b07d479a2137797cfb9f39cd4`; rollback
 `20260829-e97da17` tersedia. Saga Platform exact source
-`eff4f5339571fd7f02fbc11c6cc61153d3def83e` aktif pada release
-`20260829100759-eff4f53` dengan rollback `20260828203505-bec577e`. Managed
+`ec2a18bf70c8e2ae19bfdb71d125ee318b6ca2f9` aktif pada release
+`20260829033654-ec2a18b` dengan rollback `20260829100759-eff4f53`. Managed
 gateway memakai URL kembali HTTPS, mengirim kontrak advanced order Tokopay
-lengkap untuk QRIS, dan mengenali variasi URL checkout resmi secara fail-closed.
+lengkap untuk QRIS, mengenali variasi URL checkout resmi, membaca nominal
+callback resmi, dan melakukan check-order terverifikasi saat status pending.
 Launch Control tetap menyediakan capability owner-only untuk satu transaksi
 UAT SagaDev nyata: recent-auth, signed, 5-30 menit, satu-link-satu-order,
 gateway-only, maksimal Rp100.000 termasuk ongkir, dan maksimal tiga link per
-hari. Public checkout tetap `PRODUCTION_READINESS_BLOCKED`; automated
-acceptance release platform tidak membuat payment intent provider. Owner 2FA dan
-privacy policy tetap approved; readiness 40/42 dan commerce
-`NOT_PRODUCTION_ACTIVATED` sampai UAT operator serta release sign-off selesai.
+hari. Satu pembayaran nyata controlled UAT berhasil menjadi payment matched
+dan order confirmed/picking. Public checkout tetap
+`PRODUCTION_READINESS_BLOCKED`; Owner 2FA dan privacy policy tetap approved,
+sementara commerce `NOT_PRODUCTION_ACTIVATED` sampai checklist UAT serta
+release sign-off selesai.
 
 SagaBook batch S319-S322 add-on consumable exact pushed source
 `8203f0131a366b81b8922127d6cd6bda06357b2d` memungkinkan Owner memetakan
@@ -4073,15 +4075,16 @@ pada 30/42 checks dengan 12 blocker.
 
 SagaDev Managed Gateway controlled trial untuk COYABAG sudah
 `PRODUCTION_DEPLOYED` melalui Saga Platform release
-`20260828203505-bec577e`, exact source
-`bec577ec407c2fc8693ffea4cbb7c2adb5f70040`, rollback
-`20260824104557-65f9ff4`. Satu installation dan service account product-bound
+`20260829033654-ec2a18b`, exact source
+`ec2a18bf70c8e2ae19bfdb71d125ee318b6ca2f9`, rollback
+`20260829100759-eff4f53`. Satu installation dan service account product-bound
 scope create/read aktif, callback memakai credential HMAC terpisah, dan trial
 dibatasi Rp100.000 per transaksi serta lima intent baru per hari. Signed
-readiness lulus dan tidak ada payment intent dibuat saat acceptance. Readiness
-COYABAG 38/42 (90%); checkout publik tetap `PRODUCTION_READINESS_BLOCKED`
-sampai owner 2FA, privacy/retention approval, UAT 15 langkah, dan release
-sign-off selesai. Jangan menyebut adapter siap sebagai payment production-
+readiness lulus. Parser callback dan status check terverifikasi sudah memulihkan
+satu pembayaran nyata controlled UAT menjadi payment matched dan order
+confirmed/picking. Owner 2FA serta privacy/retention sudah approved; checkout
+publik tetap `PRODUCTION_READINESS_BLOCKED` sampai checklist UAT dan release
+sign-off selesai. Jangan menyebut controlled UAT sebagai payment production-
 activated atau business-ready.
 
 Release aktif `20260827-be8fc09` menjalankan exact source
