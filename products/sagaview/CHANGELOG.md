@@ -1,5 +1,24 @@
 # SagaView Changelog
 
+## 2026-08-30 - S357 UAT receipt post-switch rollback
+
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan
+  `BUSINESS_READY=false`.
+- Before: S356 mempertahankan backup saat verifikasi pasca-switch gagal, tetapi
+  destination yang belum terverifikasi tetap aktif dan pemulihan masih manual.
+- After: exact source `621fe0025437cf00cc232d506b3ebed3647c83fe`
+  mengembalikan receipt lama secara atomik dan memverifikasi hasil restore;
+  receipt pertama yang gagal dihapus aman. Error write asli tetap dilaporkan.
+- Evidence: regression red 5/5 lalu green 5/5; focused 58/58; full exact-commit
+  69 file/310 test; parser PowerShell/pwsh; format/lint/typecheck; client+SSR
+  build; bundle 312,7 KiB dari 450 KiB; npm audit nol; diff check; worktree
+  bersih; dan remote exact.
+- Boundary: hanya harness/test/runbook dengan filesystem disposable; tidak ada
+  UI/API/database, data customer, deploy, atau perubahan production.
+- Next gate: authenticated manual UAT 12 gate dengan evidence sintetis
+  tersanitasi, visual review, reviewer S345, lalu S344 Finalize.
+
 ## 2026-08-30 - S356 UAT receipt post-switch integrity
 
 - Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /

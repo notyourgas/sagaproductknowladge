@@ -10,6 +10,16 @@ mutasi production. Production tetap exact source
 `20260829175230-435dbfd`, rollback `20260829062031-b2790d6`. Fresh encrypted
 backup database production, atomic deploy, post-switch UAT, dua pilot nyata,
 dan provider canary masih wajib; `BUSINESS_READY=false`.
+SagaView S357 exact pushed source
+`621fe0025437cf00cc232d506b3ebed3647c83fe` berstatus `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Writer receipt UAT S70, S344,
+dan S345 kini mengembalikan receipt lama secara atomik bila verifikasi
+pasca-switch gagal, memverifikasi byte hasil restore, atau menghapus receipt
+pertama yang belum terverifikasi. Error asli tetap dilaporkan. Regression 5/5
+merah lalu 5/5 hijau, focused 58/58, full exact 310/310, PowerShell/pwsh,
+build/budget/audit, clean, dan remote exact lulus. Production tidak berubah;
+authenticated UAT serta visual review masih wajib sehingga
+`BUSINESS_READY=false`.
 
 COYABAG Admin focused action queue aktif pada exact material source
 `764197409fd21a9fbfd2659a7a232fdf4d16e0ca`, immutable release

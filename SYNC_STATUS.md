@@ -12,12 +12,12 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-30T06:14:00+07:00 |
-| Branch aktif | `codex/s363-exact-main-artifact-knowledge` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-30T06:35:00+07:00 |
+| Branch aktif | `codex/s357-sagaview-uat-receipt-postswitch-rollback-knowledge` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | `1947ca7b14e33a559dfa41dbc4a9f326c2b2368a` |
-| Informasi terakhir disinkronkan | SagaBook S363 release artifact rehearsal untuk exact main `b37db0810f64731e46f18d026452a6cf3f65e86c`. |
-| Status sinkronisasi | `LOCAL_VALIDATED / RELEASE_ARTIFACT_READY / IMPLEMENTED_NOT_DEPLOYED`; `BUSINESS_READY=false`. |
+| Informasi terakhir disinkronkan | SagaView S357 UAT receipt post-switch rollback pada exact pushed source `621fe0025437cf00cc232d506b3ebed3647c83fe`. |
+| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`; production tidak berubah. |
 
 ## SagaBook S363 exact-main release artifact rehearsal
 
@@ -37,6 +37,28 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `products/sagabook/PRODUCT.md`
 - `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
 - `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
+
+## SagaView S357 UAT receipt post-switch rollback
+
+- Exact source `621fe0025437cf00cc232d506b3ebed3647c83fe` sudah push.
+- Writer S70, S344, dan S345 mengembalikan receipt lama secara atomik ketika
+  verifikasi pasca-switch gagal, memverifikasi hasil restore, atau menghapus
+  receipt pertama yang belum terverifikasi. Error write asli tetap dilaporkan.
+- Regression red 5/5 lalu green 5/5, focused 58/58, full exact 310/310,
+  PowerShell/pwsh, format/lint/typecheck, client+SSR build, bundle budget,
+  npm audit nol, diff check, clean, dan remote exact lulus.
+- Production tidak berubah; authenticated UAT 12 gate dan visual review masih
+  pending sehingga `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi SagaView S357
+
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/CHANGELOG.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `CHANGELOG.md`

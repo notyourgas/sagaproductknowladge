@@ -14,6 +14,20 @@
 - Dokumen terdampak: Product, feature ledger/changelog SagaBook, portfolio,
   master knowledge, root changelog, dan sync status.
 
+## 2026-08-30 - SagaView S357 UAT receipt post-switch rollback sync
+
+- Ringkasan: menyinkronkan rollback otomatis receipt setelah verifikasi atomic
+  switch gagal, termasuk penghapusan aman untuk receipt pertama yang gagal.
+- Provenance: exact pushed source
+  `621fe0025437cf00cc232d506b3ebed3647c83fe`; production tidak diubah.
+- Evidence: regression red 5/5 lalu green 5/5, focused 58/58, full exact
+  310/310, PowerShell/pwsh, format/lint/typecheck, client+SSR build, bundle
+  budget, npm audit nol, diff check, clean, dan remote exact.
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; `BUSINESS_READY=false`.
+- Dokumen terdampak: Product, feature ledger/changelog SagaView, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-08-30 - COYABAG Admin focused action queue sync
 
 - Ringkasan: menyinkronkan Beranda Admin yang kini memfokuskan antrean pada

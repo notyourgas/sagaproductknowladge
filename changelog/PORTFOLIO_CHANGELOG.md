@@ -11,6 +11,17 @@
 - Status `LOCAL_VALIDATED / RELEASE_ARTIFACT_READY /
   IMPLEMENTED_NOT_DEPLOYED`; fresh encrypted backup database production,
   deploy atomic, post-switch UAT, dua pilot, dan provider canary masih pending.
+## 2026-08-30 - SagaView S357 UAT receipt post-switch rollback
+
+- Exact pushed source `621fe0025437cf00cc232d506b3ebed3647c83fe`
+  membuat writer S70/S344/S345 mengembalikan receipt lama secara atomik ketika
+  verifikasi pasca-switch gagal; receipt pertama yang gagal dihapus aman.
+- Hasil restore diverifikasi byte-per-byte dan error write asli tetap terlihat.
+  Regression red 5/5 lalu green 5/5, focused 58/58, full exact 310/310,
+  parser PowerShell/pwsh, build/budget, audit nol, clean, dan remote exact lulus.
+- Perubahan hanya harness/test/runbook. Production tidak berubah;
+  authenticated UAT dan visual review masih pending sehingga
+  `BUSINESS_READY=false`.
 
 ## 2026-08-30 - COYABAG Admin focused operational action queue
 
