@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-29 - COYABAG Tokopay order contract production fix
+
+- Saga Platform exact source `eff4f5339571fd7f02fbc11c6cc61153d3def83e`
+  aktif pada release `20260829100759-eff4f53`; rollback
+  `20260828203505-bec577e` tersedia.
+- Adapter managed gateway kini memenuhi kontrak advanced order Tokopay untuk
+  QRIS dan mengenali variasi URL checkout resmi tanpa membuka public checkout.
+- Full backend 972/972, contract 10/10, build/audit, backup, service, HMAC, dan
+  public smoke lulus. UAT pembayaran nyata dan sign-off masih wajib; acceptance
+  tidak membuat payment intent provider.
+
 ## 2026-08-29 - SagaBook booking-void production activation
 
 - Exact cumulative source `3ae80ddada59b3c3eb23932c42c9fc9a4de60a6c`

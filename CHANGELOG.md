@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-29 - COYABAG Tokopay contract production sync
+
+- Ringkasan: menyinkronkan kontrak advanced order QRIS dan variasi URL checkout
+  Tokopay pada managed gateway Saga Platform.
+- Provenance: exact source `eff4f5339571fd7f02fbc11c6cc61153d3def83e`,
+  immutable release `20260829100759-eff4f53`, rollback
+  `20260828203505-bec577e`.
+- Evidence: contract 10/10, full backend 972/972, build/audit, backup, service,
+  HMAC boundary, dan public smoke; tidak ada payment intent provider saat
+  acceptance.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /
+  NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+
 ## 2026-08-29 - SagaBook booking-void production activation sync
 
 - Ringkasan: mengaktifkan pembatalan booking manual salah catat yang menjaga

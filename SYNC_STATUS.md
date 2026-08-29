@@ -12,12 +12,26 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-29 06:45 WIB |
-| Branch aktif | `codex/s348-sagaproductknowledge-booking-void` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-29 10:15 WIB |
+| Branch aktif | Detached worktree dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `5b4a25ded52d87466eb36b709e177b59bc61912c` |
-| Informasi terakhir disinkronkan | SagaBook booking-void financial integrity production activation. |
-| Status sinkronisasi | Release `20260828233547-3ae80dd`; `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `4a0f98b98fc8bc718b6b06905058920925db4627` |
+| Informasi terakhir disinkronkan | COYABAG Tokopay advanced order contract production fix. |
+| Status sinkronisasi | Saga Platform release `20260829100759-eff4f53`; `PRODUCTION_DEPLOYED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`. |
+
+## COYABAG Tokopay advanced order contract production fix
+
+- Saga Platform exact source `eff4f5339571fd7f02fbc11c6cc61153d3def83e`
+  aktif pada release `20260829100759-eff4f53`; rollback
+  `20260828203505-bec577e` tersedia.
+- Adapter managed gateway mengirim channel QRIS, waktu kedaluwarsa, item,
+  metadata produk, telepon ternormalisasi, serta URL kembali HTTPS dan menerima
+  variasi URL checkout resmi Tokopay secara fail-closed.
+- Contract 10/10, full backend 972/972, build, Pint, Composer audit, production
+  runtime npm audit, backup, service, HMAC boundary, dan public smoke lulus.
+- Attempt lama tetap dikunci untuk review. Acceptance tidak membuat payment
+  intent provider; transaksi baru menunggu capability UAT owner. Public
+  checkout tetap fail-closed pada readiness 40/42 sampai UAT dan sign-off.
 
 ## SagaBook booking-void financial integrity production activation
 

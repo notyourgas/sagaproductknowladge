@@ -71,16 +71,18 @@ diterapkan karena seluruhnya belum dipetakan (`applied=false`). Status
 `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`;
 authenticated Owner/Staff UAT dan mapping legacy masih pending.
 
-COYABAG release `20260829-e1c8b65` menjalankan exact source
+COYABAG storefront/API tetap pada release `20260829-e1c8b65` dengan exact source
 `e1c8b65f09d0ed3b07d479a2137797cfb9f39cd4`; rollback
-`20260829-e97da17` tersedia. Payment gateway memakai URL kembali HTTPS kanonik
-storefront dan client internal menolak redirect yang tidak sesuai kontrak,
-sehingga kegagalan validasi tidak lagi terbaca sebagai sesi pembayaran ambigu.
+`20260829-e97da17` tersedia. Saga Platform exact source
+`eff4f5339571fd7f02fbc11c6cc61153d3def83e` aktif pada release
+`20260829100759-eff4f53` dengan rollback `20260828203505-bec577e`. Managed
+gateway memakai URL kembali HTTPS, mengirim kontrak advanced order Tokopay
+lengkap untuk QRIS, dan mengenali variasi URL checkout resmi secara fail-closed.
 Launch Control tetap menyediakan capability owner-only untuk satu transaksi
 UAT SagaDev nyata: recent-auth, signed, 5-30 menit, satu-link-satu-order,
 gateway-only, maksimal Rp100.000 termasuk ongkir, dan maksimal tiga link per
 hari. Public checkout tetap `PRODUCTION_READINESS_BLOCKED`; automated
-acceptance tidak membuat sesi UAT, order, atau payment intent. Owner 2FA dan
+acceptance release platform tidak membuat payment intent provider. Owner 2FA dan
 privacy policy tetap approved; readiness 40/42 dan commerce
 `NOT_PRODUCTION_ACTIVATED` sampai UAT operator serta release sign-off selesai.
 

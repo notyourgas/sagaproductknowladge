@@ -84,6 +84,13 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
   maksimal Rp100.000 termasuk ongkir, dan maksimal tiga link per hari.
   Capability tidak membuka checkout publik dan belum digunakan untuk membuat
   order atau payment intent pada acceptance release.
+- Saga Platform exact source `eff4f5339571fd7f02fbc11c6cc61153d3def83e`
+  aktif pada immutable release `20260829100759-eff4f53`; rollback
+  `20260828203505-bec577e` tersedia. Adapter order COYABAG kini mengirim kontrak
+  advanced order Tokopay lengkap untuk QRIS, waktu kedaluwarsa, item, dan URL
+  kembali, serta menerima variasi URL checkout resmi secara fail-closed.
+  Acceptance tidak membuat payment intent provider nyata; transaksi berikutnya
+  tetap harus dijalankan melalui capability UAT owner yang baru.
 - Pencarian tujuan manual hanya memakai kota/provinsi tujuan. Teks kota asal
   pada label tarif tidak lagi dapat memunculkan tujuan palsu.
 - Admin Beranda memperbarui seluruh ringkasan melalui snapshot terautentikasi,

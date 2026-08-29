@@ -4,6 +4,21 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-29 - Tokopay advanced order contract deployed
+
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /
+  NOT_PRODUCTION_ACTIVATED`; Saga Platform exact source
+  `eff4f5339571fd7f02fbc11c6cc61153d3def83e`, immutable release
+  `20260829100759-eff4f53`, rollback `20260828203505-bec577e`.
+- Request order COYABAG kini memuat channel QRIS, waktu kedaluwarsa, item,
+  metadata produk, telepon ternormalisasi, dan URL kembali HTTPS. Adapter
+  menerima `payment_url`, `checkout_url`, `pay_url`, atau `qr_link` yang aman.
+- Contract test 10/10, full backend 972/972, build, Pint, Composer audit,
+  backup, service, HMAC boundary, dan public smoke lulus. Production runtime
+  npm audit nol; acceptance tidak membuat pembayaran provider nyata.
+- Attempt lama tetap dikunci untuk review. Public checkout tetap fail-closed
+  sampai UAT pembayaran owner dan release sign-off selesai.
+
 ## 2026-08-29 - Payment return URL contract fixed in production
 
 - Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /
