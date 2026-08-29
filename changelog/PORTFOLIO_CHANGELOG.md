@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-30 - SagaView S356 UAT receipt post-switch integrity
+
+- Exact pushed source `e624bf4395996663816e168cbf0a90ebc4fd4692`
+  membuat writer S70/S344/S345 membaca kembali destination setelah atomic
+  switch dan membandingkannya byte-per-byte dengan payload durable.
+- Backup receipt lama baru dihapus setelah verifikasi lulus; mismatch tetap
+  fail-closed dan mempertahankan backup. Regression red 4/4 lalu green 5/5,
+  gabungan S352-S356 21/21, focused 47/47, full exact 305/305, parser
+  PowerShell/pwsh, build/budget, audit nol, clean, dan remote exact lulus.
+- Perubahan hanya harness/test/runbook. Production tidak berubah;
+  authenticated UAT dan visual review masih pending sehingga
+  `BUSINESS_READY=false`.
+
 ## 2026-08-30 - COYABAG Admin keyboard-first global search
 
 - Exact material source `d213e3a34b316387a99a177c157b3ee4a4cf6715`

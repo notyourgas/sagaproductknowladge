@@ -12,12 +12,35 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-30T05:15:00+07:00 |
-| Branch aktif | `codex/coyabag-admin-uiux-knowledge` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-30T05:20:00+07:00 |
+| Branch aktif | `codex/s356-sagaview-uat-receipt-postswitch-integrity-knowledge` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `2df4367d4afaba223372ebde381048abb5bb4337` |
-| Informasi terakhir disinkronkan | COYABAG Admin keyboard-first global search pada exact material source `d213e3a34b316387a99a177c157b3ee4a4cf6715`, release `20260830-d213e3a`. |
-| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`; readiness 41/42. |
+| Baseline sebelum pembaruan | `0090c5844bfd8d202a3e208871e1176006ddc532` |
+| Informasi terakhir disinkronkan | SagaView S356 UAT receipt post-switch integrity pada exact pushed source `e624bf4395996663816e168cbf0a90ebc4fd4692`. |
+| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`; production tidak berubah. |
+
+## SagaView S356 UAT receipt post-switch integrity
+
+- Exact source `e624bf4395996663816e168cbf0a90ebc4fd4692` sudah push.
+- Writer S70, S344, dan S345 mengunci serta membaca kembali receipt destination
+  sesudah atomic switch, lalu membandingkan byte dengan payload durable.
+  Backup lama hanya dihapus setelah verifikasi lulus dan dipertahankan pada
+  mismatch.
+- Regression red 4/4 lalu green 5/5, gabungan S352-S356 21/21, focused 47/47,
+  full exact 305/305, PowerShell/pwsh, format/lint/typecheck, client+SSR build,
+  bundle budget, npm audit nol, diff check, clean, dan remote exact lulus.
+- Production tidak berubah; authenticated UAT 12 gate dan visual review masih
+  pending sehingga `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi SagaView S356
+
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG Admin keyboard-first global search
 

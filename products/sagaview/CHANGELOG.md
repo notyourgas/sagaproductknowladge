@@ -1,5 +1,25 @@
 # SagaView Changelog
 
+## 2026-08-30 - S356 UAT receipt post-switch integrity
+
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan
+  `BUSINESS_READY=false`.
+- Before: S355 memeriksa ulang path sebelum atomic switch, tetapi destination
+  belum dibaca kembali sesudah switch dan backup lama langsung dihapus.
+- After: exact source `e624bf4395996663816e168cbf0a90ebc4fd4692`
+  mengunci serta membandingkan byte destination sesudah move/replace pada S70,
+  S344, dan S345; backup hanya dihapus setelah verifikasi lulus dan tetap
+  tersedia bila mismatch.
+- Evidence: regression red 4/4 lalu green 5/5; gabungan S352-S356 21/21;
+  focused 47/47; full exact-commit 68 file/305 test; parser PowerShell/pwsh;
+  format/lint/typecheck; client+SSR build; bundle 312,7 KiB dari 450 KiB;
+  npm audit nol; diff check; worktree bersih; dan remote exact.
+- Boundary: hanya harness/test/runbook dengan filesystem disposable; tidak ada
+  UI/API/database, data customer, deploy, atau perubahan production.
+- Next gate: authenticated manual UAT 12 gate dengan evidence sintetis
+  tersanitasi, visual review, reviewer S345, lalu S344 Finalize.
+
 ## 2026-08-30 - S355 UAT receipt pre-switch revalidation
 
 - Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /

@@ -1,6 +1,23 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 30 Agustus 2026 04:15 WIB
+Evidence cut-off: 30 Agustus 2026 05:20 WIB
+
+S356 UAT receipt post-switch integrity: exact pushed source
+`e624bf4395996663816e168cbf0a90ebc4fd4692` mengunci lalu membaca kembali
+receipt tujuan sesudah atomic move/replace dan membandingkan setiap byte dengan
+payload yang sudah di-flush. Backup receipt lama baru dihapus setelah verifikasi
+ini lulus; bila destination berubah atau rusak, writer berhenti fail-closed dan
+backup lama tetap tersedia untuk recovery.
+
+Ledger lulus: regression merah 4/4 lalu hijau 5/5; gabungan S352-S356 21/21;
+focused S70/S344-S356 47/47; full 68 file/305 test pada exact commit; parser
+Windows PowerShell/pwsh; format/lint/typecheck; client 2.129 modul + SSR 203
+modul; bundle 312,7 KiB dari 450 KiB; npm audit nol; diff check; worktree
+bersih; serta remote exact. Uji memakai filesystem sintetis/disposable tanpa
+foto, path, atau output customer. Boundary hanya tooling/test/runbook, tanpa
+UI/API/database atau mutasi production. Belum lulus: authenticated manual UAT
+12 gate dan visual review. Status `PUSHED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; `BUSINESS_READY=false`.
 
 S355 UAT receipt pre-switch revalidation: exact pushed source
 `d6aeca9ca72ef5e31b213206be34627e88cf62c3` memeriksa ulang seluruh
