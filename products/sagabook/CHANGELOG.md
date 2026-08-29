@@ -1,5 +1,22 @@
 # SagaBook Changelog
 
+## 2026-08-30 - Gate bukti pilot dua studio
+
+- Validator baru mewajibkan tepat dua pilot dengan bukti Owner, operator, dan
+  customer pada mobile 390x844 serta desktop 1440x900.
+- Receipt UAT terautentikasi diikat melalui SHA-256 yang dihitung ulang;
+  otorisasi memakai digest tepercaya. PII, secret, URL, UUID, serta temuan
+  Critical/High ditolak fail-closed.
+- Hasil tidak dapat mengklaim siap bisnis sebelum dua pilot nyata lengkap;
+  `provider_canary` selalu tetap sebagai gate terpisah.
+- Feature source `ec6ea76132b9dce4530e3c822db198785c2f1fc2` merge lewat PR #76 ke exact
+  main `a7de78737a64d1213799b97d0b6294839233b3e6`. Focused 65/65, pilot 20/20,
+  UAT 15/15, production UAT 30/30, typecheck/build, serta audit dependency nol
+  lulus.
+- Status `CONFIRMED / MERGED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+  Production tetap exact source `435dbfd252759fd8b7d43f44af69edfb39ee2102`,
+  release `20260829175230-435dbfd`, rollback `20260829062031-b2790d6`.
+
 ## 2026-08-30 - Closing Staff variance submit guidance S359
 
 - Hitungan fisik kertas foto dan packaging kini memiliki konfirmasi eksplisit,

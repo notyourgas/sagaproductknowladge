@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-30 - SagaBook two-studio pilot evidence gate sync
+
+- Ringkasan: menyinkronkan validator public-safe yang mengikat dua pilot,
+  receipt authenticated UAT, otorisasi, viewport, peran, dan severity temuan.
+- Provenance: feature `ec6ea76132b9dce4530e3c822db198785c2f1fc2`, PR #76,
+  exact main `a7de78737a64d1213799b97d0b6294839233b3e6`.
+- Evidence: combined 65/65, pilot 20/20, UAT 15/15, production UAT 30/30,
+  typecheck/build, dan audit npm/Composer/OSV nol.
+- Klasifikasi: `CONFIRMED / MERGED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap `435dbfd252759fd8b7d43f44af69edfb39ee2102`
+  pada release `20260829175230-435dbfd` dan `BUSINESS_READY=false`.
+- Dokumen terdampak: Product, changelog, ledger SagaBook, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-30 - SagaBook Closing Staff variance submit guidance sync
 
 - Ringkasan: menyinkronkan konfirmasi stok fisik eksplisit, alasan selisih per

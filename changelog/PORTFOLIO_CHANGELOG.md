@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-30 - SagaBook two-studio pilot evidence gate
+
+- Feature `ec6ea76132b9dce4530e3c822db198785c2f1fc2` merge melalui PR #76 ke exact
+  main `a7de78737a64d1213799b97d0b6294839233b3e6`.
+- Validator mewajibkan tepat dua pilot dengan Owner/operator/customer,
+  viewport mobile dan desktop, receipt UAT yang terikat SHA-256, digest
+  otorisasi, metrik aman, serta nol Critical/High. PII, secret, URL, dan UUID
+  ditolak fail-closed.
+- Focused 65/65, pilot 20/20, UAT 15/15, production UAT 30/30,
+  typecheck/build, dan audit dependency nol lulus. Status `MERGED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan
+  dua pilot nyata serta provider canary tetap exit gate.
+
 ## 2026-08-30 - SagaBook Closing Staff variance submit guidance
 
 - Exact pushed source `67591a4dd99e75b8df0a312ae09b8c8bc8240159`

@@ -1,6 +1,21 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 29 Agustus 2026
+Evidence cut-off: 30 Agustus 2026 02:05 WIB
+
+Gate bukti pilot dua studio telah `CONFIRMED / MERGED / QA_VALIDATED /
+SECURITY_VALIDATED / PRIVACY_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED` pada feature source
+`ec6ea76132b9dce4530e3c822db198785c2f1fc2` dan exact main
+`a7de78737a64d1213799b97d0b6294839233b3e6` melalui PR #76. Coverage
+mewajibkan tepat dua slot pilot, Owner/operator/customer, viewport 390x844 dan
+1440x900, exact source/release, receipt UAT yang SHA-256-nya dihitung ulang,
+digest otorisasi, metrik aman, serta nol Critical/High. PII, secret, URL, dan
+UUID ditolak. Focused gabungan 65/65, pilot 20/20, authenticated UAT 15/15,
+production UAT 30/30, typecheck, build 5.133 modul, serta audit
+npm/Composer/OSV nol lulus. Production aktif source
+`435dbfd252759fd8b7d43f44af69edfb39ee2102` / release
+`20260829175230-435dbfd`; dua pilot nyata dan provider canary tetap menjadi
+exit gate sehingga `BUSINESS_READY=false`.
 
 Release receipt binding S358 telah `CONFIRMED / MERGED /
 RELEASE_RECEIPT_VALIDATED / IMPLEMENTED_NOT_DEPLOYED` pada exact source
