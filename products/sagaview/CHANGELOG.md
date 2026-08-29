@@ -1,5 +1,24 @@
 # SagaView Changelog
 
+## 2026-08-30 - S352 atomic UAT receipt writes
+
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan
+  `BUSINESS_READY=false`.
+- Before: empat receipt UAT ditulis langsung ke path akhir, sehingga interupsi
+  dapat meninggalkan JSON terpotong dan menghilangkan receipt lama yang valid.
+- After: exact source `23199139843e3850d7d8f64c751b1cd379e41eed`
+  menulis temp satu direktori, flush ke disk, atomic move/replace, lalu cleanup
+  temp/backup untuk harness S70, S344, dan reviewer S345.
+- Evidence: regression red 3/3 lalu green; focused 49/49, overwrite reviewer
+  berulang tanpa artefak sementara, full 287/287, parser PowerShell/pwsh,
+  format/lint/typecheck, client+SSR build, bundle 312,7 KiB dari 450 KiB,
+  npm audit nol, diff check, worktree bersih, dan remote exact.
+- Boundary: hanya harness/test/runbook; tidak ada UI/API/database, data
+  customer, deploy, atau perubahan production.
+- Next gate: authenticated manual UAT 12 gate dengan evidence sintetis
+  tersanitasi, visual review, reviewer S345, lalu S344 Finalize.
+
 ## 2026-08-30 - S351 locked evidence snapshots
 
 - Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /

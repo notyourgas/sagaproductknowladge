@@ -1,6 +1,21 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 30 Agustus 2026 00:13 WIB
+Evidence cut-off: 30 Agustus 2026 01:13 WIB
+
+S352 atomic UAT receipt writes: exact pushed source
+`23199139843e3850d7d8f64c751b1cd379e41eed` menutup risiko JSON receipt
+setengah jadi bila proses terinterupsi ketika menulis preflight, checklist,
+review, atau final index. Tiga harness menulis ke file unik satu direktori,
+flush ke disk, lalu memakai atomic move/replace dengan cleanup fail-closed.
+
+Ledger lulus: regression merah 3/3 lalu hijau; focused 49/49, overwrite review
+berulang tanpa sisa temp/backup, full 64 file/287 test, parser Windows
+PowerShell/pwsh, format/lint/typecheck, client 2.129 modul + SSR 203 modul,
+bundle 312,7 KiB dari 450 KiB, npm audit nol, diff check, worktree bersih,
+dan remote exact. Boundary hanya tooling/test/runbook; tidak ada UI/API/
+database, data customer, atau mutasi production. Belum lulus: authenticated
+manual UAT 12 gate dan visual review. Status `PUSHED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; production tetap S343 dan `BUSINESS_READY=false`.
 
 S351 locked evidence snapshots: exact pushed source
 `f204c109129a238dc5a7f4aa3f7ae665b2476306` menutup race saat reviewer

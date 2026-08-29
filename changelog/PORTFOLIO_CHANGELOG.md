@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-30 - SagaView S352 atomic UAT receipt writes
+
+- Exact pushed source `23199139843e3850d7d8f64c751b1cd379e41eed`
+  membuat preflight, checklist, review, dan final index UAT ditulis atomik
+  setelah flush, dengan cleanup temp/backup fail-closed.
+- Regression red 3/3 lalu green; focused 49/49, overwrite berulang, full
+  287/287, parser PowerShell/pwsh, build client+SSR, bundle budget, audit
+  dependency, diff check, serta remote exact lulus.
+- Perubahan hanya harness/test/runbook. Production tidak berubah;
+  authenticated UAT dan visual review masih pending sehingga
+  `BUSINESS_READY=false`.
+
 ## 2026-08-30 - COYABAG Admin payment triage workspace
 
 - Exact source `4cd2d48a930c256373b43a96ad64aaec726205e4` aktif pada
