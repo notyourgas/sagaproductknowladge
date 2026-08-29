@@ -261,9 +261,14 @@ diterapkan karena seluruhnya belum dipetakan (`applied=false`). Status
 `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`;
 authenticated Owner/Staff UAT dan mapping legacy masih pending.
 
-COYABAG storefront/API/admin kini pada release `20260830-4cd2d48` dengan exact
-source `4cd2d48a930c256373b43a96ad64aaec726205e4`; rollback
-`20260829-194eab7` tersedia. Dashboard admin memakai Plus Jakarta Sans variable
+COYABAG storefront/API/admin kini pada release `20260830-0e4a251` dengan exact
+source `0e4a2516a05aa99dadba5c17c63d1dd77b6c83db`; rollback
+`20260830-4cd2d48` tersedia. Tiga wave UI/UX telah memoles 55 route Admin pada
+lima viewport: audit akhir mencatat nol document overflow, nol pelanggaran
+kontras, dan nol runtime error; sinyal clipping tersisa hanya elemen `sr-only`.
+Shell berubah menjadi drawer adaptif di bawah 1100 px, Vite memakai satu entry
+CSS deterministik, media produk dipaginasi 12 item per halaman, dan dynamic
+chunk mempunyai recovery satu kali. Dashboard admin memakai Plus Jakarta Sans variable
 self-hosted serta design token modern untuk seluruh interface operasional,
 sementara wordmark mempertahankan font logo resmi. Application shell memiliki
 sidebar collapse persisten, breadcrumb, active route, pencarian desktop/mobile,

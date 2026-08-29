@@ -4,6 +4,27 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-30 - Admin UI/UX three-wave production polish deployed
+
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /
+  NOT_PRODUCTION_ACTIVATED`; exact source
+  `0e4a2516a05aa99dadba5c17c63d1dd77b6c83db`, immutable release
+  `20260830-0e4a251`, rollback `20260830-4cd2d48`.
+- Tiga wave menyelesaikan foundation dan application shell, commerce
+  operations, lalu growth/content/operations pada 55 route Admin. Plus Jakarta
+  Sans self-hosted, Feather Icons, token visual, kontrol, tabel/kartu, serta
+  loading/empty/error/success state kini konsisten di desktop, tablet, dan
+  mobile; sidebar menjadi drawer adaptif di bawah 1100 px.
+- Build Admin memakai satu entry CSS deterministik. Media produk dipaginasi 12
+  item per halaman dan dynamic chunk mempunyai pemulihan satu kali yang aman.
+  Audit 55 route x 5 viewport mencatat nol document overflow, nol pelanggaran
+  kontras, dan nol runtime error; sinyal clipping tersisa hanya `sr-only`.
+- Full Laravel 489 total: 488 lulus, satu controlled skip, 4.673 assertion;
+  storefront 216/216, Admin accessibility contract 4/4 (41 assertion), build
+  Admin/storefront, audit dependency nol, backup, worker, exact source,
+  readiness fail-closed 41/42, dan public smoke lulus. Satu release sign-off
+  tetap blocker; batch ini tidak mengaktifkan provider atau commerce.
+
 ## 2026-08-30 - Admin payment triage workspace deployed
 
 - Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /

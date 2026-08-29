@@ -76,9 +76,20 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 - Launch UAT 15 langkah sudah lulus 15/15 dan sign-off diizinkan. Checkout
   publik tetap `PRODUCTION_READINESS_BLOCKED` hanya sampai release sign-off
   dicatat; deployment acceptance hotfix tidak membuat payment intent baru.
-- Release aktif `20260830-4cd2d48` dengan exact source
-  `4cd2d48a930c256373b43a96ad64aaec726205e4` melayani production;
-  rollback langsung `20260829-194eab7` dipertahankan. Fondasi dashboard admin
+- Release aktif `20260830-0e4a251` dengan exact source
+  `0e4a2516a05aa99dadba5c17c63d1dd77b6c83db` melayani production;
+  rollback langsung `20260830-4cd2d48` dipertahankan. Tiga wave UI/UX
+  memoles 55 route Admin pada desktop, tablet, dan mobile: token tipografi,
+  warna, spacing, radius, serta kontrol diseragamkan; shell berubah menjadi
+  drawer adaptif di bawah 1100 px; workspace commerce, growth, content, dan
+  operations mendapat state responsive yang konsisten. Seluruh interface tetap
+  memakai Plus Jakarta Sans self-hosted dan Feather Icons, tanpa mengubah
+  permission, data, provider, atau aktivasi commerce. Vite kini memakai satu
+  entry CSS deterministik, media produk memakai pagination 12 item per halaman,
+  dan pemulihan dynamic chunk dilakukan satu kali secara aman. Audit akhir 55
+  route x 5 viewport mencatat nol document overflow, nol pelanggaran kontras,
+  dan nol runtime error; sinyal clipping tersisa hanya elemen `sr-only` untuk
+  aksesibilitas. Fondasi dashboard admin
   kini memakai Plus Jakarta Sans self-hosted, token warna/spacing/focus modern,
   hierarki panel dan kontrol yang lebih tenang, KPI mobile dua kolom, serta
   spacing wordmark/profile yang konsisten. Application shell menambahkan

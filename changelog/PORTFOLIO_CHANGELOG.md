@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-30 - COYABAG Admin UI/UX three-wave production polish
+
+- Exact source `0e4a2516a05aa99dadba5c17c63d1dd77b6c83db` aktif pada
+  immutable release `20260830-0e4a251`; rollback `20260830-4cd2d48` tersedia.
+- Foundation/shell, commerce operations, serta growth/content/operations pada
+  55 route Admin kini memakai Plus Jakarta Sans, Feather Icons, token visual,
+  state operasional, dan responsive behavior yang konsisten. Sidebar menjadi
+  drawer adaptif; media produk dipaginasi; Vite memakai satu entry CSS; dynamic
+  chunk mempunyai recovery satu kali.
+- Laravel 489 total, storefront 216/216, accessibility contract 4/4, audit 55
+  route x 5 viewport, build/audit, backup, worker, exact runtime asset, dan
+  public smoke lulus. Readiness tetap fail-closed 41/42 karena release sign-off;
+  provider serta commerce tidak diaktifkan oleh batch ini.
+
 ## 2026-08-30 - SagaView S353 UAT receipt destination guard
 
 - Exact pushed source `eff8bb40d3a20b60abdf0cfd9c83883e28b3a6a5`
