@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-30 - SagaBook Closing Staff variance submit guidance sync
+
+- Ringkasan: menyinkronkan konfirmasi stok fisik eksplisit, alasan selisih per
+  material, feedback submit yang actionable, dan jalur koreksi ledger.
+- Provenance: exact pushed source
+  `67591a4dd99e75b8df0a312ae09b8c8bc8240159`; production tetap release
+  `20260829062031-b2790d6`.
+- Evidence: full Feature 1.271/1.271 (14.428 assertion), focused 17/17 (93),
+  contract 9/9, browser 6/6, persistence 18/18, typecheck/build/Pint file
+  terkait, serta audit npm/Composer/OSV nol.
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
+- Dokumen terdampak: Product, dossier, changelog SagaBook, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-30 - SagaView S352 atomic UAT receipt writes sync
 
 - Ringkasan: membuat preflight, checklist, review, dan final index UAT tahan

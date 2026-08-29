@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-30 - SagaBook Closing Staff variance submit guidance
+
+- Exact pushed source `67591a4dd99e75b8df0a312ae09b8c8bc8240159`
+  memisahkan konfirmasi hitungan fisik, alasan selisih kertas/packaging, dan
+  catatan operasional umum.
+- Selisih plus atau minus dapat diproses setelah input wajib lengkap. Blocker
+  korektif tampil spesifik, sedangkan masalah ledger keras tetap fail-closed
+  dan diarahkan ke pengaturan stok.
+- Full Feature 1.271/1.271, contract 9/9, browser 6/6, persistence 18/18,
+  typecheck/build, dan dependency audit nol lulus. Status `PUSHED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
+
 ## 2026-08-30 - SagaView S352 atomic UAT receipt writes
 
 - Exact pushed source `23199139843e3850d7d8f64c751b1cd379e41eed`

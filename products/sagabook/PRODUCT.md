@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 29 Agustus 2026 23:13 WIB
-Evidence status: recovery OTS S354 dan hardening release S355–S358 sudah kumulatif pada exact main `435dbfd252759fd8b7d43f44af69edfb39ee2102` tetapi belum dideploy. Production tetap exact source `b2790d64232b24222c3bc383c3b445d760786f2d`, release `20260829062031-b2790d6`, dan `BUSINESS_READY=false` hanya menunggu pilot dua studio serta provider canary
+Updated: 30 Agustus 2026
+Evidence status: perbaikan Closing Staff S359 sudah ter-push pada exact source `67591a4dd99e75b8df0a312ae09b8c8bc8240159` dan tervalidasi lokal, tetapi belum dideploy. Production tetap exact source `b2790d64232b24222c3bc383c3b445d760786f2d`, release `20260829062031-b2790d6`, dan `BUSINESS_READY=false`
 
 ## Tujuan dokumen
 
@@ -15,6 +15,21 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
+
+- S359 pada exact pushed source
+  `67591a4dd99e75b8df0a312ae09b8c8bc8240159` memperjelas dan memperbaiki
+  submit Closing Staff ketika stok fisik kertas foto atau packaging berbeda
+  dari hitungan sistem. Nilai fisik harus dikonfirmasi eksplisit, termasuk
+  nilai nol; setiap material yang berselisih memiliki alasan sendiri. Tombol
+  submit tetap dapat ditekan untuk menampilkan blocker pertama dan mengarahkan
+  operator ke field koreksi atau pengaturan stok bila ledger belum siap.
+  Catatan operasional umum tidak lagi dianggap sebagai alasan selisih stok.
+  Ledger server tetap authoritative dan tidak ada bypass untuk stok belum
+  diinisialisasi atau tidak mencukupi. Full Feature 1.271/1.271 (14.428
+  assertion), contract 9/9, browser 6/6, persistence 18/18,
+  typecheck/build/Pint file terkait, dan dependency audit nol lulus. Status
+  `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+  production tidak berubah.
 
 - S358 pada feature source `0a2d9c6f103cacb2cdfb308105821e2e6fffb2c0`
   telah merge melalui PR #75 ke exact main

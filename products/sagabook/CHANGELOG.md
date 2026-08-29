@@ -1,5 +1,24 @@
 # SagaBook Changelog
 
+## 2026-08-30 - Closing Staff variance submit guidance S359
+
+- Hitungan fisik kertas foto dan packaging kini memiliki konfirmasi eksplisit,
+  sehingga nilai nol yang benar dapat dibedakan dari field yang belum diisi.
+- Selisih plus maupun minus dapat disubmit setelah alasan untuk material yang
+  berselisih diisi. Alasan kertas dan packaging disimpan serta ditampilkan
+  terpisah pada draft, laporan, teks, dan PNG; catatan umum tidak menggantikan
+  alasan tersebut.
+- Submit tidak lagi terasa diam: blocker pertama ditampilkan dan difokuskan.
+  Ledger yang belum diinisialisasi atau tidak mencukupi tetap fail-closed dan
+  diarahkan ke pengaturan stok, tanpa overwrite maupun bypass ledger.
+- Exact source `67591a4dd99e75b8df0a312ae09b8c8bc8240159` sudah push. Full Feature
+  1.271/1.271 (14.428 assertion), focused 17/17 (93), contract 9/9, browser
+  6/6, persistence 18/18, typecheck/build/Pint file terkait, serta audit
+  dependency nol lulus.
+- Status `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`. Production tetap release
+  `20260829062031-b2790d6`.
+
 ## 2026-08-29 - Release receipt binding S358
 
 - Verifier kandidat kini dapat menulis receipt immutable yang mengikat exact
