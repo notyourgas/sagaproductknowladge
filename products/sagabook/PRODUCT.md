@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 29 Agustus 2026 06:45 WIB
-Evidence status: booking salah catat dapat dibatalkan secara audit-preserving, styled XLSX multi-sheet, closing manual-share, rekap sesi/keuangan harian, dan perbaikan Task Manager aktif pada exact cumulative source `3ae80ddada59b3c3eb23932c42c9fc9a4de60a6c`, release `20260828233547-3ae80dd`; production-deployed dan production-activated, authenticated Owner/operator UAT belum karena credential bridge lokal tidak aktif, dan `BUSINESS_READY=false`
+Updated: 29 Agustus 2026 12:52 WIB
+Evidence status: seluruh fitur kumulatif termasuk booking-void, styled XLSX, closing manual-share, rekap sesi/keuangan, Task Manager, dan hardening aksesibilitas Staff aktif pada exact source `804fb5868fb6a7d762b7c2621c653d318a8eef57`, release `20260829053952-804fb58`; production-deployed dan production-activated, authenticated read-only Owner/Staff UAT lulus, dan `BUSINESS_READY=false` hanya menunggu pilot dua studio serta provider canary
 
 ## Tujuan dokumen
 
@@ -15,6 +15,22 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
+
+- Release penutupan authenticated UAT aktif pada exact cumulative source
+  `804fb5868fb6a7d762b7c2621c653d318a8eef57`, immutable release
+  `20260829053952-804fb58`, dengan rollback kompatibel
+  `20260829051850-176949b`. Tautan antrean Staff memenuhi target sentuh minimum
+  44 piksel. Kontrak UAT kini selaras dengan capability Staff: akses laporan
+  operasional boleh terlihat, sedangkan halaman pengelolaan staff, template,
+  dan pengaturan tetap owner-only; suite read-only tidak membuka laporan yang
+  memicu preview berbasis POST. Tooling UAT 43/43, preflight browser Owner/Staff
+  2/2, full release gate, backup terenkripsi/checksum/restore disposable,
+  verifier 23/23, canary 32/32, migration pending 0, journal 0 error, serta
+  smoke/security 3/3 lulus. Authenticated Owner dan Staff lulus pada mobile dan
+  desktop dengan target 44 piksel, seluruh accessibility check hijau, request
+  failure/error/overflow/mutasi 0, serta deteksi PII/secret false. Status
+  `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED /
+  BUSINESS_READY=false`; residual hanya pilot dua studio dan provider canary.
 
 - Pembatalan booking salah catat aktif pada exact cumulative source
   `3ae80ddada59b3c3eb23932c42c9fc9a4de60a6c`, immutable release

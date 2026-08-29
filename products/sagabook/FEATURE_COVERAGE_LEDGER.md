@@ -2,6 +2,20 @@
 
 Evidence cut-off: 29 Agustus 2026
 
+Authenticated production UAT closure telah `CONFIRMED / PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED / UAT_ACCEPTED` pada exact cumulative source
+`804fb5868fb6a7d762b7c2621c653d318a8eef57`, immutable release
+`20260829053952-804fb58`, rollback `20260829051850-176949b`. Coverage mencakup
+Owner dan Staff pada mobile 390x844 serta desktop 1440x900, target sentuh
+minimum 44 piksel, keyboard focus, screen reader semantics, forced colors,
+reduced motion, zoom/reflow, no-overflow, no-error, no-mutation, dan no-PII atau
+secret. Capability Staff tetap mengizinkan laporan operasional; UAT read-only
+tidak menavigasi route laporan yang melakukan preview POST, sementara route
+pengelolaan staff, template, dan pengaturan tetap dilarang. Tooling 43/43,
+preflight 2/2, full release gate, backup/restore, verifier 23/23, canary 32/32,
+0 pending migration, 0 journal error, dan smoke/security 3/3 lulus.
+`BUSINESS_READY=false` hanya menunggu pilot dua studio dan provider canary.
+
 Booking-void financial integrity telah `CONFIRMED / PRODUCTION_DEPLOYED /
 PRODUCTION_ACTIVATED` pada exact cumulative source
 `3ae80ddada59b3c3eb23932c42c9fc9a4de60a6c`, immutable release

@@ -12,12 +12,34 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-29 10:45 WIB |
-| Branch aktif | `codex/coyabag-payment-reconcile-20260829` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-29 12:52 WIB |
+| Branch aktif | `codex/knowledge-s352-sagabook-uat-final` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `0a3ab715660f357ed826b7737b55bcd5fa0aab83` |
-| Informasi terakhir disinkronkan | COYABAG Tokopay callback reconciliation dan controlled real-payment UAT. |
-| Status sinkronisasi | Saga Platform release `20260829033654-ec2a18b`; `PRODUCTION_DEPLOYED / CONTROLLED_UAT_PASSED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `feee41630e42baca2ccc059728d9f61294354efc` |
+| Informasi terakhir disinkronkan | SagaBook authenticated Owner/Staff production UAT closure. |
+| Status sinkronisasi | SagaBook release `20260829053952-804fb58`; `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED / BUSINESS_READY=false`. |
+
+## SagaBook authenticated Owner/Staff UAT production closure
+
+- Exact source `804fb5868fb6a7d762b7c2621c653d318a8eef57` aktif pada
+  release `20260829053952-804fb58`; rollback `20260829051850-176949b`.
+- Target sentuh Staff minimum 44 piksel dan kontrak route UAT sesuai capability
+  laporan operasional tanpa melonggarkan halaman owner-only.
+- Full release gate, backup/restore, verifier 23/23, canary 32/32,
+  smoke/security 3/3, serta authenticated read-only Owner/Staff UAT mobile dan
+  desktop lulus tanpa error, mutasi, PII, atau secret.
+- `BUSINESS_READY=false`; residual hanya pilot dua studio dan provider canary.
+
+## File yang berubah pada sinkronisasi SagaBook UAT closure
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG payment reconciliation recovery
 
