@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-29 - SagaView S346 binary evidence privacy preflight
+
+- Exact pushed source `05ce1503e86d0846cd75d1f2ce7177c1b133cbf8`
+  menambahkan scan offline fail-closed pada PNG/JPEG/PDF evidence S344.
+- Signature/struktur minimum dan metadata diperiksa; EXIF/XMP/IPTC, metadata
+  terkompresi, embedded file, active content, URI, serta mismatch format
+  ditolak sebelum Finalize.
+- Focused 10/10, full 273/273, PowerShell/pwsh, build/budget/audit lulus.
+  Scanner bukan OCR sehingga visual review tetap wajib; production tidak
+  berubah dan `BUSINESS_READY=false`.
+
 ## 2026-08-29 - COYABAG Admin application shell
 
 - Exact source `d26c3c3fba61d23f6d5c2313a5debf75a032c6cf` aktif pada

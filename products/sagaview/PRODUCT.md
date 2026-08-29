@@ -1,6 +1,22 @@
 # SagaView Product Knowledge
 
-Updated: 29 Agustus 2026 17:13 WIB
+Updated: 29 Agustus 2026 18:12 WIB
+
+SagaView S346 exact source
+`05ce1503e86d0846cd75d1f2ce7177c1b133cbf8` sudah `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Reviewer S345 kini mempunyai
+preflight binary fail-closed: PNG divalidasi signature, IHDR, batas chunk,
+IEND, dan metadata text; JPEG divalidasi SOI/EOI serta scan data; PDF
+divalidasi header/EOF dan ditolak bila membawa embedded file, JavaScript,
+launch action, rich media, atau URI. EXIF/XMP/IPTC dan metadata terkompresi
+ditahan sampai evidence di-strip atau di-re-encode.
+
+Focused S345+S346 10/10 dan full 273/273 test, parser serta execution
+PowerShell/pwsh, format/lint/typecheck, client+SSR build, bundle budget 312,7
+KiB dari 450 KiB, npm audit nol, diff/secret scan, dan exact remote lulus.
+Scanner tetap bukan OCR sehingga visual review manusia wajib. Tidak ada
+jaringan, credential, API/database, deploy, atau perubahan production;
+`BUSINESS_READY=false` sampai authenticated UAT dua workspace selesai.
 
 SagaView S345 exact source
 `fe5b59b4b41b517fa9fdfdfbd40a45e2a496e03f` sudah `PUSHED /

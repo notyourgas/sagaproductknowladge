@@ -1,6 +1,21 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 29 Agustus 2026 17:13 WIB
+Evidence cut-off: 29 Agustus 2026 18:12 WIB
+
+S346 binary UAT evidence privacy preflight: exact pushed source
+`05ce1503e86d0846cd75d1f2ce7177c1b133cbf8` memperluas reviewer S345 agar
+PNG/JPEG/PDF tidak hanya mengandalkan pemeriksaan visual. Signature dan
+struktur minimum harus valid; metadata text dipindai; EXIF/XMP/IPTC,
+compressed metadata, embedded file, JavaScript, launch action, rich media,
+URI, serta mismatch extension/signature diblokir fail-closed.
+
+Ledger lulus: focused S345+S346 10/10, full 273/273, PowerShell/pwsh parser dan
+execution, format/lint/typecheck, client+SSR build, bundle budget, npm audit
+nol, diff/secret scan, dan remote exact. Boundary tetap offline, hash-only,
+tanpa credential atau mutasi production. Belum lulus: scanner bukan OCR,
+sehingga visual review dan authenticated manual UAT 12 gate masih wajib.
+Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap
+S343 dan `BUSINESS_READY=false`.
 
 S345 offline evidence privacy review: exact pushed source
 `fe5b59b4b41b517fa9fdfdfbd40a45e2a496e03f` menambahkan gate sebelum S344

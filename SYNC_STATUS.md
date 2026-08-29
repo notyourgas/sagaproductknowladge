@@ -12,12 +12,31 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-29 18:13 WIB |
-| Branch aktif | `codex/coyabag-payment-reconcile-20260829` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-29 18:12 WIB |
+| Branch aktif | `codex/s346-sagaview-knowledge` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `af781e7878782ed5ab9f05ef55b4ff2ee5c58bfb` |
-| Informasi terakhir disinkronkan | COYABAG Admin application shell navigation. |
-| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `1620fcc` |
+| Informasi terakhir disinkronkan | SagaView S345-S346 evidence review dan binary privacy preflight. |
+| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan `BUSINESS_READY=false`. |
+
+## SagaView S346 binary evidence privacy preflight
+
+- Exact source `05ce1503e86d0846cd75d1f2ce7177c1b133cbf8` sudah push.
+- PNG/JPEG/PDF kini melewati signature, struktur, metadata, dan active-content
+  scan offline sebelum evidence dapat dilanjutkan ke Finalize S344.
+- Focused 10/10, full 273/273, PowerShell/pwsh, check/build/budget/audit lulus.
+- Scanner bukan OCR; authenticated UAT dan visual review tetap pending,
+  production tidak berubah, dan `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi SagaView S346
+
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaView S345 offline evidence review
 

@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-29 - SagaView S346 binary evidence privacy preflight sync
+
+- Ringkasan: menambahkan pemeriksaan fail-closed signature, struktur,
+  metadata, dan active content pada PNG/JPEG/PDF evidence authenticated UAT.
+- Provenance: exact pushed source
+  `05ce1503e86d0846cd75d1f2ce7177c1b133cbf8`; production tetap Studio
+  `20260828203620-47d68e7` dan backend `20260828111443-98f13a8`.
+- Evidence: focused 10/10, full 273/273, PowerShell/pwsh, full check/build,
+  bundle budget, npm audit nol, serta diff/secret scan.
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; `BUSINESS_READY=false` dan production tidak berubah.
+- Dokumen terdampak: Product, feature ledger/changelog SagaView, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-08-29 - COYABAG Admin application shell sync
 
 - Ringkasan: menyinkronkan sidebar collapse persisten, breadcrumb, active

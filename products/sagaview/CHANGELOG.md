@@ -1,5 +1,24 @@
 # SagaView Changelog
 
+## 2026-08-29 - S346 binary UAT evidence privacy preflight
+
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan
+  `BUSINESS_READY=false`.
+- Before: reviewer S345 memeriksa JSON/TXT, tetapi PNG/JPEG/PDF hanya ditahan
+  untuk visual review tanpa pemeriksaan struktur dan metadata otomatis.
+- After: exact source `05ce1503e86d0846cd75d1f2ce7177c1b133cbf8`
+  memvalidasi signature/struktur dasar dan memblokir metadata sensitif atau
+  active content secara offline sebelum evidence dapat masuk Finalize S344.
+- Evidence: focused S345+S346 10/10, full 273/273, PowerShell/pwsh parser dan
+  execution, format/lint/typecheck, client+SSR build, bundle 312,7 KiB dari
+  batas 450 KiB, npm audit nol, diff/secret scan, serta remote exact lulus.
+- Boundary: scanner bukan OCR; review visual manusia tetap wajib. Tidak ada
+  jaringan, credential, API/database, foto/path customer, deploy, atau aktivasi.
+- Next gate: jalankan 12 gate authenticated manual, sanitasi/re-encode binary
+  evidence bila diblokir, ulang reviewer sampai `ready_for_finalize`, lalu S344
+  Finalize.
+
 ## 2026-08-29 - S345 offline authenticated-UAT evidence review
 
 - Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
