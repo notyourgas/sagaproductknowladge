@@ -1,5 +1,22 @@
 # Portfolio Changelog
 
+## 2026-08-29 - SagaBook Manual Booking OTS Mulai sekarang
+
+- Exact source `b2790d64232b24222c3bc383c3b445d760786f2d` aktif pada
+  immutable release `20260829062031-b2790d6`; rollback
+  `20260829053952-804fb58` tersedia dan kompatibel.
+- Role operasional dengan capability override dapat mencatat walk-in memakai
+  waktu tenant authoritative dari server, termasuk setelah jam operasional,
+  tanpa melonggarkan payment hold, collision, tenant/cabang, permission,
+  idempotency, concurrency, atau audit.
+- Closing terkunci memakai adjustment request dan revisi; export memuat
+  provenance jadwal. Full test/build/MySQL/visual/audit, encrypted
+  backup/restore, verifier 23/23, canary 32/32, smoke/security 3/3, serta
+  authenticated read-only Owner/Staff UAT lulus.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED /
+  BUSINESS_READY=false`; residual hanya pilot dua studio dan provider canary.
+  Produk SagaDev lain tidak berubah.
+
 ## 2026-08-29 - COYABAG Admin System Health restored
 
 - COYABAG exact source `edd36069fcfff3503726e061a02ba07fd5767b73`

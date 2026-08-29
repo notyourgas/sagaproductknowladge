@@ -1,5 +1,24 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-29 - SagaBook Manual Booking OTS Mulai sekarang sync
+
+- Ringkasan: menyinkronkan aksi `Mulai sekarang` berbasis waktu tenant dari
+  server, guard walk-in, rekonsiliasi closing terkunci, provenance export, dan
+  authenticated Owner/Staff UAT production.
+- Provenance: exact cumulative source
+  `b2790d64232b24222c3bc383c3b445d760786f2d`, immutable release
+  `20260829062031-b2790d6`, rollback `20260829053952-804fb58`.
+- Evidence: PHP 1.296/1.296 (14.519), focused 17/17 (132), MySQL 8.4,
+  TypeScript/build, visual mobile/desktop, changed-file Pint, dependency audit
+  nol, encrypted backup/disposable restore, verifier 23/23, canary 32/32,
+  migration pending 0, journal 0 error, smoke/security 3/3, dan authenticated
+  read-only UAT tanpa mutasi atau secret.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+  UAT_ACCEPTED / BUSINESS_READY=false`; residual pilot dua studio dan provider
+  canary.
+- Dokumen terdampak: Product, Dossier, feature ledger/changelog SagaBook,
+  decisions, portfolio, master knowledge, root changelog, dan sync status.
+
 ## 2026-08-29 - COYABAG Admin System Health hotfix sync
 
 - Ringkasan: menyinkronkan pemulihan white screen Admin System Health dan hasil

@@ -7,6 +7,30 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Manual Booking OTS `Mulai sekarang` aktif untuk seluruh tenant pada exact
+  cumulative source `b2790d64232b24222c3bc383c3b445d760786f2d`, immutable
+  release `20260829062031-b2790d6`; rollback
+  `20260829053952-804fb58` tersedia dan kompatibel. Waktu mulai berasal dari
+  jam tenant authoritative di server dan tidak dapat diganti oleh tanggal/jam
+  client. Role dengan capability override dapat melayani walk-in di luar jam
+  operasional, sementara payment hold, konflik slot/resource/linked resource,
+  cross-midnight, tenant/cabang, permission, idempotency, concurrency, dan
+  audit tetap fail-closed. Booking menyimpan `walk_in`, mode mulai, timezone,
+  alasan override, dan waktu server; replay double-submit mengembalikan hasil
+  awal. Bila closing tanggal tersebut sudah dikunci, sistem menyimpan revisi
+  sebelumnya, membuat adjustment request dan task admin, lalu menghitung ulang
+  ringkasan finansial tanpa menimpa kas fisik. Konfirmasi/reminder email hanya
+  dijadwalkan bila consent operasional eksplisit tersedia; marketing consent
+  tidak diasumsikan. Export menampilkan mode, timezone, dan override. Gate
+  exact-main: PHP 1.296/1.296 (14.519), focused 17/17 (132), MySQL 8.4
+  migration rehearsal, TypeScript/build, visual mobile/desktop, changed-file
+  Pint, dependency audit nol, encrypted backup/disposable restore, verifier
+  23/23, report canary 32/32, migration pending 0, journal 0 error, serta
+  public/security smoke 3/3. Authenticated read-only Owner/Staff UAT lulus
+  tanpa mutasi, PII, atau secret. Status `CONFIRMED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / UAT_ACCEPTED / BUSINESS_READY=false`; pilot dua studio
+  dan provider canary tetap gate bisnis terpisah.
+
 - Exact cumulative source `804fb5868fb6a7d762b7c2621c653d318a8eef57`
   aktif pada immutable release `20260829053952-804fb58`; rollback
   `20260829051850-176949b` tersedia dan kompatibel. Release menutup target

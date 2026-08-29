@@ -12,12 +12,39 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-29 13:58 WIB |
-| Branch aktif | `codex/coyabag-payment-reconcile-20260829` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-29 13:31 WIB |
+| Branch aktif | `codex/s350-sagabook-ots-production-knowledge` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `23b3f2bc72fe5cf7daf63c929119245437e4429f` |
-| Informasi terakhir disinkronkan | COYABAG Admin System Health hotfix dan Launch UAT 15/15. |
-| Status sinkronisasi | COYABAG release `20260829-edd3606`; `PRODUCTION_DEPLOYED / CONTROLLED_UAT_PASSED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `2615d4ae840a17c8bbaa4fc691e3b2e68b2b7ed2` |
+| Informasi terakhir disinkronkan | SagaBook Manual Booking OTS `Mulai sekarang` dan authenticated production UAT. |
+| Status sinkronisasi | SagaBook release `20260829062031-b2790d6`; `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED / BUSINESS_READY=false`. |
+
+## SagaBook Manual Booking OTS Mulai sekarang
+
+- Exact source `b2790d64232b24222c3bc383c3b445d760786f2d` aktif pada
+  release `20260829062031-b2790d6`; rollback `20260829053952-804fb58` tersedia
+  dan kompatibel.
+- Aksi `Mulai sekarang` menggunakan waktu tenant dari server dan tersedia bagi
+  role dengan capability override, termasuk setelah jam operasional, sambil
+  mempertahankan payment hold, collision, permission, tenant/cabang,
+  idempotency, concurrency, stale, dan audit guard.
+- Closing terkunci memakai adjustment request/revisi dan export membawa
+  provenance jadwal. Full test/build/MySQL/visual/audit, encrypted
+  backup/restore, verifier 23/23, canary 32/32, smoke/security 3/3, serta
+  authenticated read-only Owner/Staff UAT lulus tanpa mutasi atau secret.
+- `BUSINESS_READY=false`; residual hanya pilot dua studio dan provider canary.
+
+## File yang berubah pada sinkronisasi SagaBook OTS Mulai sekarang
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `DECISIONS.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG Admin System Health hotfix
 
