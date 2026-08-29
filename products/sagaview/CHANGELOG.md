@@ -1,5 +1,24 @@
 # SagaView Changelog
 
+## 2026-08-29 - S348 evidence path containment
+
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan
+  `BUSINESS_READY=false`.
+- Before: validasi root bersifat leksikal, sehingga direktori evidence berupa
+  Windows junction dapat menunjuk keluar root dan file luar tetap dibaca/hash.
+- After: exact source `692912fb00adb0dd1df1e67c31a6b3b4ed248842`
+  memeriksa setiap segmen path dan menolak symlink/junction/reparse point pada
+  evidence, preflight, serta checklist sebelum read/hash.
+- Evidence: regression awal menunjukkan scanner lama menerima 12/12 file
+  junction, lalu scanner baru menolaknya; focused S345-S348 14/14, full
+  277/277, parser PowerShell/pwsh, format/lint/typecheck, client+SSR build,
+  bundle 312,7 KiB dari 450 KiB, npm audit nol, diff check, dan remote exact.
+- Boundary: seluruh pemeriksaan offline; tidak ada credential, data customer,
+  API/database, deploy, atau aktivasi production.
+- Next gate: jalankan authenticated UAT 12 gate dengan evidence sintetis
+  tersanitasi pada path biasa, lakukan visual review, lalu S344 Finalize.
+
 ## 2026-08-29 - S347 PDF obfuscation fail-closed review
 
 - Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /

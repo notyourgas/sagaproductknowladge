@@ -1,6 +1,21 @@
 # SagaView Product Knowledge
 
-Updated: 29 Agustus 2026 19:11 WIB
+Updated: 29 Agustus 2026 20:10 WIB
+
+SagaView S348 exact source
+`692912fb00adb0dd1df1e67c31a6b3b4ed248842` sudah `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Reviewer evidence kini memeriksa
+setiap segmen path dan menolak symlink, junction, atau reparse point lain pada
+evidence, preflight, dan checklist sebelum read/hash. Ini menutup kondisi saat
+path tampak berada di evidence root tetapi sebenarnya menunjuk ke lokasi lain.
+
+Regression Windows awal membuktikan scanner S347 menerima seluruh 12 evidence
+melalui junction ke luar root; setelah perbaikan seluruhnya ditolak. Focused
+S345-S348 14/14 dan full 277/277 test, parser PowerShell/pwsh,
+format/lint/typecheck, client+SSR build, bundle 312,7 KiB dari batas 450 KiB,
+npm audit nol, diff check, dan remote exact lulus. Production tidak berubah;
+authenticated UAT, visual review, dan S344 Finalize masih wajib sehingga
+`BUSINESS_READY=false`.
 
 SagaView S347 exact source
 `242bf45ac225a76d27729f3b6240d1f047d63144` sudah `PUSHED /

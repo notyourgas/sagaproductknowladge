@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-29 - SagaView S348 evidence path containment
+
+- Exact pushed source `692912fb00adb0dd1df1e67c31a6b3b4ed248842`
+  menolak symlink, junction, dan reparse point lain pada seluruh segmen path
+  evidence sebelum read/hash.
+- Regression Windows membuktikan scanner lama menerima 12 file melalui
+  junction ke luar root; focused 14/14 dan full 277/277 kini lulus.
+- PowerShell/pwsh, build client+SSR, bundle budget, dan audit dependency lulus.
+  Authenticated UAT/visual review masih pending; production tidak berubah dan
+  `BUSINESS_READY=false`.
+
 ## 2026-08-29 - SagaBook S356 release restore verifier
 
 - Exact main `9ffaa8f64417076773f23fc0f3abe4a949f1a227` menyediakan verifier

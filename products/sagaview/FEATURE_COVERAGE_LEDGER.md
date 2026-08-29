@@ -1,6 +1,21 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 29 Agustus 2026 19:11 WIB
+Evidence cut-off: 29 Agustus 2026 20:10 WIB
+
+S348 evidence path containment: exact pushed source
+`692912fb00adb0dd1df1e67c31a6b3b4ed248842` menutup escape berbasis Windows
+junction/symlink/reparse point. Setiap segmen path evidence, preflight, dan
+checklist diperiksa sebelum file dibaca atau di-hash; temuan ditahan
+fail-closed dan dicatat per gate.
+
+Ledger lulus: regression Windows merah karena scanner lama menerima 12 file
+melalui junction ke luar root, lalu hijau; focused S345-S348 14/14, full
+277/277, parser PowerShell/pwsh, format/lint/typecheck, client+SSR build,
+bundle budget, npm audit nol, diff check, serta remote exact. Boundary tetap
+offline dan tidak menyentuh API/database atau production. Belum lulus:
+authenticated manual UAT 12 gate, visual review, dan S344 Finalize. Status
+`PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S343
+dan `BUSINESS_READY=false`.
 
 S347 PDF obfuscation fail-closed review: exact pushed source
 `242bf45ac225a76d27729f3b6240d1f047d63144` menutup tiga bypass scanner

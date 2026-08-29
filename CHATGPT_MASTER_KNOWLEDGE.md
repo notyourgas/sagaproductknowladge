@@ -1,5 +1,16 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+SagaView S348 exact pushed source
+`692912fb00adb0dd1df1e67c31a6b3b4ed248842` berstatus `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Reviewer authenticated-UAT kini
+memeriksa setiap segmen path dan menolak symlink, junction, atau reparse point
+lain sebelum membaca atau meng-hash evidence, preflight, dan checklist. Pada
+regression Windows, scanner lama menerima seluruh 12 evidence melalui junction
+ke luar root; scanner baru menolak semuanya. Focused 14/14, full 277/277,
+PowerShell/pwsh, check/build/budget/audit lulus. Production tidak berubah;
+authenticated UAT, visual review, dan S344 Finalize masih wajib sehingga
+`BUSINESS_READY=false`.
+
 SagaBook S356 exact main `9ffaa8f64417076773f23fc0f3abe4a949f1a227`
 berstatus `MERGED / RELEASE_ARTIFACT_VALIDATED /
 IMPLEMENTED_NOT_DEPLOYED`. Verifier release fail-closed memeriksa manifest,

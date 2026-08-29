@@ -12,12 +12,32 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-29 19:14 WIB |
-| Branch aktif | `codex/s356-sagabook-release-restore-knowledge` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-29 20:10 WIB |
+| Branch aktif | `codex/s348-sagaview-knowledge` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `0586e6e7b21ac0e0807a57680d715eca195f1922` |
-| Informasi terakhir disinkronkan | SagaBook S356 release restore verifier. |
-| Status sinkronisasi | `CONFIRMED / MERGED / RELEASE_ARTIFACT_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan `BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `1577dc05de4ac089bca77fef74101bddedfd5f48` |
+| Informasi terakhir disinkronkan | SagaView S348 evidence path containment. |
+| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan `BUSINESS_READY=false`. |
+
+## SagaView S348 evidence path containment
+
+- Exact source `692912fb00adb0dd1df1e67c31a6b3b4ed248842` sudah push.
+- Setiap segmen path evidence, preflight, dan checklist diperiksa; symlink,
+  junction, atau reparse point lain ditolak sebelum read/hash.
+- Regression Windows membuktikan scanner lama menerima 12 evidence melalui
+  junction ke luar root; focused 14/14 dan full 277/277 kini hijau.
+- Production tidak berubah; authenticated UAT, visual review, dan S344
+  Finalize tetap pending sehingga `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi SagaView S348
+
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook S356 release restore verifier
 

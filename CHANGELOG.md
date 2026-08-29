@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-29 - SagaView S348 evidence path containment sync
+
+- Ringkasan: menolak symlink, junction, dan reparse point pada setiap segmen
+  path evidence authenticated UAT sebelum file dibaca atau di-hash.
+- Provenance: exact pushed source
+  `692912fb00adb0dd1df1e67c31a6b3b4ed248842`; production tetap Studio
+  `20260828203620-47d68e7` dan backend `20260828111443-98f13a8`.
+- Evidence: regression junction merah karena scanner lama menerima evidence
+  di luar root, lalu hijau; focused 14/14, full 277/277, build client+SSR,
+  bundle budget, PowerShell/pwsh, npm audit nol, diff check, dan remote exact.
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; `BUSINESS_READY=false` dan production tidak berubah.
+- Dokumen terdampak: Product, feature ledger/changelog SagaView, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-08-29 - SagaBook S356 release restore verifier sync
 
 - Ringkasan: mencatat verifier fail-closed untuk membuktikan artifact lokal
