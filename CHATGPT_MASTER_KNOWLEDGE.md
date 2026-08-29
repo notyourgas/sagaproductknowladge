@@ -1,5 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+SagaView S347 exact pushed source
+`242bf45ac225a76d27729f3b6240d1f047d63144` berstatus `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Scanner evidence PDF menormalisasi
+escape nama sebelum deteksi active content, memperluas action/form/media yang
+ditolak, serta menahan PDF terenkripsi dan object stream yang tidak dapat
+diperiksa aman. Red 3/3 lalu green, focused 13/13, full 276/276,
+PowerShell/pwsh, check/build/budget/audit lulus. Scanner bukan OCR; visual
+review dan authenticated UAT tetap wajib. Production tidak berubah dan
+`BUSINESS_READY=false`.
+
 SagaView S346 exact pushed source
 `05ce1503e86d0846cd75d1f2ce7177c1b133cbf8` berstatus `PUSHED /
 LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Reviewer evidence authenticated

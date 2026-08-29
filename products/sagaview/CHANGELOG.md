@@ -1,5 +1,23 @@
 # SagaView Changelog
 
+## 2026-08-29 - S347 PDF obfuscation fail-closed review
+
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan
+  `BUSINESS_READY=false`.
+- Before: scanner S346 dapat melewatkan nama aksi PDF yang memakai escape hex,
+  sedangkan object stream atau PDF terenkripsi tidak dapat diperiksa utuh.
+- After: exact source `242bf45ac225a76d27729f3b6240d1f047d63144`
+  menormalisasi escape nama, memperluas daftar action/form/media aktif, dan
+  menahan object stream serta PDF terenkripsi secara fail-closed.
+- Evidence: tiga regression awal merah lalu hijau; focused S345-S347 13/13,
+  full 276/276, parser PowerShell/pwsh, format/lint/typecheck, client+SSR build,
+  bundle 312,7 KiB dari 450 KiB, npm audit nol, diff check, dan remote exact.
+- Boundary: scanner tetap offline dan bukan OCR. Visual review manusia tetap
+  wajib; tidak ada API/database, credential, data customer, atau deploy.
+- Next gate: authenticated UAT 12 gate dengan evidence yang diekspor ulang
+  menjadi format sederhana, lalu review dan S344 Finalize.
+
 ## 2026-08-29 - S346 binary UAT evidence privacy preflight
 
 - Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /

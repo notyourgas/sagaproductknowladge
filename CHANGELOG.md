@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-29 - SagaView S347 PDF obfuscation review sync
+
+- Ringkasan: menutup bypass escape nama PDF dan menahan PDF terenkripsi atau
+  object stream yang tidak dapat diperiksa secara aman.
+- Provenance: exact pushed source
+  `242bf45ac225a76d27729f3b6240d1f047d63144`; production tetap Studio
+  `20260828203620-47d68e7` dan backend `20260828111443-98f13a8`.
+- Evidence: red 3/3 lalu green, focused 13/13, full 276/276,
+  PowerShell/pwsh, full check/build, bundle budget, npm audit nol, diff check.
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; `BUSINESS_READY=false` dan production tidak berubah.
+- Dokumen terdampak: Product, feature ledger/changelog SagaView, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-08-29 - SagaBook S355 release artifact mirror sync
 
 - Ringkasan: mencatat dukungan mirror removable sehat pada disk fisik terpisah

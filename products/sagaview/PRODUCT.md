@@ -1,6 +1,20 @@
 # SagaView Product Knowledge
 
-Updated: 29 Agustus 2026 18:12 WIB
+Updated: 29 Agustus 2026 19:11 WIB
+
+SagaView S347 exact source
+`242bf45ac225a76d27729f3b6240d1f047d63144` sudah `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Scanner evidence PDF kini
+menormalisasi escape hex pada nama sebelum mendeteksi JavaScript/action,
+menolak action/form/media aktif yang diperluas, serta menahan PDF terenkripsi
+dan object stream karena isi privasinya tidak dapat diperiksa secara aman.
+
+Tiga regression awal gagal pada S346 lalu hijau setelah perbaikan. Focused
+S345-S347 13/13 dan full 276/276 test, parser PowerShell/pwsh,
+format/lint/typecheck, client+SSR build, bundle 312,7 KiB dari batas 450 KiB,
+npm audit nol, diff check, dan remote exact lulus. Scanner tetap offline dan
+bukan OCR; review visual serta authenticated UAT tetap wajib. Production tidak
+berubah dan `BUSINESS_READY=false`.
 
 SagaView S346 exact source
 `05ce1503e86d0846cd75d1f2ce7177c1b133cbf8` sudah `PUSHED /

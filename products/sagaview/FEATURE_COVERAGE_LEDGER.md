@@ -1,6 +1,20 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 29 Agustus 2026 18:12 WIB
+Evidence cut-off: 29 Agustus 2026 19:11 WIB
+
+S347 PDF obfuscation fail-closed review: exact pushed source
+`242bf45ac225a76d27729f3b6240d1f047d63144` menutup tiga bypass scanner
+S346. Nama PDF dengan escape hex dinormalisasi sebelum pencocokan; action,
+form, media, dan remote target aktif diperluas; object stream serta PDF
+terenkripsi ditolak karena tidak dapat diperiksa penuh.
+
+Ledger lulus: red 3/3 lalu green, focused S345-S347 13/13, full 276/276,
+PowerShell/pwsh parser, format/lint/typecheck, client+SSR build, bundle budget,
+npm audit nol, diff check, dan remote exact. Boundary tetap offline, tanpa
+credential, network, API/database, atau write production. Belum lulus: OCR
+tidak tersedia sehingga visual review dan authenticated manual UAT 12 gate
+masih wajib. Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+production tetap S343 dan `BUSINESS_READY=false`.
 
 S346 binary UAT evidence privacy preflight: exact pushed source
 `05ce1503e86d0846cd75d1f2ce7177c1b133cbf8` memperluas reviewer S345 agar

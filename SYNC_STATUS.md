@@ -12,12 +12,31 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-29 18:18 WIB |
-| Branch aktif | `codex/knowledge-s355-release-artifact-mirror` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-29 19:11 WIB |
+| Branch aktif | `codex/s347-sagaview-knowledge` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `9eb68f3` |
-| Informasi terakhir disinkronkan | SagaBook S355 hardening mirror artifact release. |
-| Status sinkronisasi | `CONFIRMED / MERGED / RELEASE_ARTIFACT_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan `BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `830af42055fcddc576d8c3578228a0a9d62c3bca` |
+| Informasi terakhir disinkronkan | SagaView S347 PDF obfuscation fail-closed review. |
+| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan `BUSINESS_READY=false`. |
+
+## SagaView S347 PDF obfuscation fail-closed review
+
+- Exact source `242bf45ac225a76d27729f3b6240d1f047d63144` sudah push.
+- Escape nama PDF dinormalisasi; action/form/media aktif, object stream, dan
+  PDF terenkripsi kini ditahan sebelum S344 Finalize.
+- Focused 13/13, full 276/276, PowerShell/pwsh, check/build/budget/audit lulus.
+- Scanner bukan OCR; authenticated UAT dan visual review tetap pending,
+  production tidak berubah, dan `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi SagaView S347
+
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook S355 release artifact mirror hardening
 

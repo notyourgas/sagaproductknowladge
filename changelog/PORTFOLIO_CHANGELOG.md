@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-29 - SagaView S347 PDF obfuscation fail-closed review
+
+- Exact pushed source `242bf45ac225a76d27729f3b6240d1f047d63144`
+  menormalisasi escape nama PDF sebelum scan active content.
+- Action/form/media aktif diperluas; PDF terenkripsi dan object stream ditahan
+  agar evidence yang tidak dapat diperiksa tidak masuk Finalize.
+- Red 3/3 lalu green, focused 13/13, full 276/276, PowerShell/pwsh,
+  build/budget/audit lulus. Visual review tetap wajib; production tidak berubah
+  dan `BUSINESS_READY=false`.
+
 ## 2026-08-29 - SagaBook S355 release artifact mirror hardening
 
 - Exact main `04548e539c52924a9629a5db1670ee80bed99b93` memungkinkan mirror
