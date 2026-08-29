@@ -76,9 +76,13 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 - Launch UAT 15 langkah sudah lulus 15/15 dan sign-off diizinkan. Checkout
   publik tetap `PRODUCTION_READINESS_BLOCKED` hanya sampai release sign-off
   dicatat; deployment acceptance hotfix tidak membuat payment intent baru.
-- Release aktif `20260830-878a570` dengan exact source
-  `878a5705f8f9f2577019f5f5259d8259eed96898` melayani production;
-  rollback langsung `20260830-0e4a251` dipertahankan. Target interaksi
+- Release aktif `20260830-d213e3a` dengan exact material source
+  `d213e3a34b316387a99a177c157b3ee4a4cf6715` melayani production;
+  rollback langsung `20260830-878a570` dipertahankan. Pencarian global Admin
+  kini dapat dioperasikan end-to-end dengan ArrowUp/ArrowDown, Enter, dan
+  Escape pada desktop maupun mobile. Opsi aktif mempunyai visual state serta
+  kontrak `aria-activedescendant`/`aria-selected`; loading, error, dan query
+  baru mereset pilihan basi secara aman. Target interaksi
   operasional untuk link pesanan/stok dan pagination kini minimal 40 px;
   checkbox/radio 24 px berada pada baris label minimal 40 px. Browser acceptance
   mengukur target Produk desktop/mobile dan Pesanan desktop secara langsung.

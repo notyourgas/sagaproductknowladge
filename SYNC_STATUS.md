@@ -12,12 +12,34 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-30T04:15:00+07:00 |
-| Branch aktif | `codex/s355-sagaview-uat-receipt-preswitch-revalidation-knowledge` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-30T05:15:00+07:00 |
+| Branch aktif | `codex/coyabag-admin-uiux-knowledge` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `7403fb93fafbee1095ef45ac5ca1d3d8338042fb` |
-| Informasi terakhir disinkronkan | SagaView S355 UAT receipt pre-switch revalidation pada exact pushed source `d6aeca9ca72ef5e31b213206be34627e88cf62c3`. |
-| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan `BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `2df4367d4afaba223372ebde381048abb5bb4337` |
+| Informasi terakhir disinkronkan | COYABAG Admin keyboard-first global search pada exact material source `d213e3a34b316387a99a177c157b3ee4a4cf6715`, release `20260830-d213e3a`. |
+| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`; readiness 41/42. |
+
+## COYABAG Admin keyboard-first global search
+
+- Exact material source `d213e3a34b316387a99a177c157b3ee4a4cf6715`
+  aktif pada release `20260830-d213e3a`; rollback `20260830-878a570` tersedia.
+- ArrowUp/ArrowDown memilih hasil secara melingkar, Enter membuka hasil, dan
+  Escape menutup pencarian. Visual active state dan semantik aksesibel tersedia
+  untuk desktop/mobile tanpa memperluas permission.
+- Laravel 489 total, storefront 216/216, accessibility contract 4/4, browser
+  desktop/mobile, build/audit, backup, worker, exact manifest/runtime asset,
+  serta public smoke lulus.
+- Readiness tetap fail-closed 41/42. Provider/commerce, migrasi, dan data tidak
+  diubah oleh batch ini.
+
+## File yang berubah pada sinkronisasi COYABAG Admin keyboard search
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaView S355 UAT receipt pre-switch revalidation
 

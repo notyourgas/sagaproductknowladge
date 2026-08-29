@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-30 - COYABAG Admin keyboard-first global search
+
+- Exact material source `d213e3a34b316387a99a177c157b3ee4a4cf6715`
+  aktif pada immutable release `20260830-d213e3a`; rollback
+  `20260830-878a570` tersedia.
+- Operator dapat menavigasi hasil pencarian global dengan ArrowUp/ArrowDown,
+  membuka hasil memakai Enter, dan menutup memakai Escape. State aktif visual
+  dan semantik tersedia pada desktop/mobile tanpa mengubah permission pencarian.
+- Laravel 489 total, storefront 216/216, accessibility/browser/build/audit,
+  backup, worker, exact runtime asset, serta public smoke lulus. Readiness tetap
+  41/42 dan commerce/provider tidak diaktifkan.
+
 ## 2026-08-30 - SagaView S355 UAT receipt pre-switch revalidation
 
 - Exact pushed source `d6aeca9ca72ef5e31b213206be34627e88cf62c3`

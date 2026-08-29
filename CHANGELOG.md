@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-30 - COYABAG Admin keyboard global search sync
+
+- Ringkasan: menyinkronkan pencarian global Admin yang kini dapat dipakai
+  penuh dengan keyboard pada desktop dan mobile.
+- Provenance: exact material source
+  `d213e3a34b316387a99a177c157b3ee4a4cf6715`, immutable release
+  `20260830-d213e3a`, rollback `20260830-878a570`.
+- Evidence: Laravel 489 total, storefront 216/216, accessibility 4/4, browser
+  desktop/mobile, build/audit, backup, worker, exact runtime contract, dan
+  public smoke lulus.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /
+  NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`; readiness 41/42.
+- Dokumen terdampak: Product/changelog COYABAG, portfolio, master knowledge,
+  root changelog, dan sync status.
+
 ## 2026-08-30 - SagaView S355 UAT receipt pre-switch revalidation sync
 
 - Ringkasan: menyinkronkan validasi ulang receipt dan path tepat sebelum

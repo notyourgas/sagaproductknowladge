@@ -1,5 +1,16 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+COYABAG Admin keyboard-first global search aktif pada exact material source
+`d213e3a34b316387a99a177c157b3ee4a4cf6715`, immutable release
+`20260830-d213e3a`, dengan rollback `20260830-878a570`. Operator desktop dan
+mobile dapat memilih hasil memakai ArrowUp/ArrowDown, membuka dengan Enter,
+dan menutup dengan Escape; pilihan aktif memiliki visual state serta semantik
+`aria-activedescendant`/`aria-selected`. Laravel 489 total, storefront
+216/216, browser acceptance, build/audit, backup, worker, exact runtime asset,
+dan public smoke lulus. Status tetap `PRODUCTION_DEPLOYED /
+NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`; readiness fail-closed 41/42
+karena release sign-off dan batch ini tidak mengaktifkan provider/commerce.
+
 SagaView S355 exact pushed source
 `d6aeca9ca72ef5e31b213206be34627e88cf62c3` berstatus `PUSHED /
 LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Writer receipt UAT S70, S344,

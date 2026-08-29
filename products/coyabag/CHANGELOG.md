@@ -4,6 +4,23 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-30 - Admin global search keyboard navigation deployed
+
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /
+  NOT_PRODUCTION_ACTIVATED`; exact material source
+  `d213e3a34b316387a99a177c157b3ee4a4cf6715`, immutable release
+  `20260830-d213e3a`, rollback `20260830-878a570`.
+- Pencarian global Admin kini mendukung ArrowUp/ArrowDown yang berputar,
+  Enter untuk membuka hasil, dan Escape untuk menutup. Opsi aktif terlihat,
+  diumumkan melalui `aria-activedescendant`/`aria-selected`, dan sinkron dengan
+  hover pointer pada desktop maupun mobile.
+- Laravel 489 total: 488 lulus, satu controlled skip, 4.682 assertion;
+  storefront 216/216, accessibility 4/4 (50 assertion), browser acceptance
+  desktop/mobile, build, audit dependency nol, backup, worker, exact manifest,
+  runtime contract, dan public smoke lulus.
+- Readiness tetap fail-closed 41/42 karena release sign-off. Tidak ada aktivasi
+  provider/commerce, migrasi, atau mutasi data.
+
 ## 2026-08-30 - Admin operational target-size closure deployed
 
 - Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /
