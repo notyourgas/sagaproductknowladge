@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-30 - SagaBook S361 health HSTS sync
+
+- Ringkasan: menyinkronkan middleware security header global dan verifier
+  production yang kini mewajibkan HSTS pada health endpoint.
+- Provenance: feature `91b3267d5156d14649b22989fe3351f5e94b4528`, PR #77,
+  exact main `fa53bdd5db2195507b95e053f56fe9e5577b6cdc`.
+- Evidence: focused 40/40, full PHP 1.304/1.304, critical typecheck, build,
+  format/syntax, disposable migration/seed, dan audit dependency nol.
+- Klasifikasi: `CONFIRMED / MERGED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap `435dbfd252759fd8b7d43f44af69edfb39ee2102`
+  pada release `20260829175230-435dbfd` dan `BUSINESS_READY=false`.
+- Dokumen terdampak: Product, changelog, ledger SagaBook, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-30 - COYABAG Admin operational target-size closure sync
 
 - Ringkasan: menyinkronkan target interaksi yang lebih aman untuk link

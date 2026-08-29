@@ -1,6 +1,22 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 30 Agustus 2026 02:05 WIB
+Evidence cut-off: 30 Agustus 2026 04:12 WIB
+
+Hardening header keamanan health S361 telah `CONFIRMED / MERGED /
+SECURITY_VALIDATED / QA_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED` pada feature source
+`91b3267d5156d14649b22989fe3351f5e94b4528` dan exact main
+`fa53bdd5db2195507b95e053f56fe9e5577b6cdc` melalui PR #77. Middleware header
+keamanan kini global sehingga `/up` HTTPS mendapat HSTS dan header dasar yang
+sama, sementara HTTP tetap tidak menerima HSTS. Verifier production juga
+mewajibkan HSTS untuk profil health, bukan hanya login. Focused 40/40 (381
+assertion), full PHP 1.304/1.304 (14.654 assertion), critical typecheck, build,
+Pint, PowerShell parse, disposable migration/seed, serta audit npm/Composer/OSV
+nol lulus. Quality Gate GitHub tidak menjalankan step karena billing; bukti
+lokal ekuivalen digunakan. Production tetap source
+`435dbfd252759fd8b7d43f44af69edfb39ee2102` / release
+`20260829175230-435dbfd`; deploy, live header verification, dua pilot, dan
+provider canary masih menjadi gate.
 
 Gate bukti pilot dua studio telah `CONFIRMED / MERGED / QA_VALIDATED /
 SECURITY_VALIDATED / PRIVACY_VALIDATED / LOCAL_VALIDATED /

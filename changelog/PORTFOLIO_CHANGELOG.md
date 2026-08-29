@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-30 - SagaBook health HSTS hardening S361
+
+- Feature `91b3267d5156d14649b22989fe3351f5e94b4528` merge melalui PR #77 ke exact
+  main `fa53bdd5db2195507b95e053f56fe9e5577b6cdc`.
+- Route `/up` HTTPS kini mendapat HSTS dan header keamanan dasar dari middleware
+  global; verifier release mewajibkan HSTS untuk profil health dan login.
+- Focused 40/40, full PHP 1.304/1.304, typecheck/build, disposable migration,
+  dan audit dependency nol lulus. Status `MERGED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production SagaBook tidak berubah.
+
 ## 2026-08-30 - COYABAG Admin operational target-size closure
 
 - Exact source `878a5705f8f9f2577019f5f5259d8259eed96898` aktif pada

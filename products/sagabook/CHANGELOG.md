@@ -1,5 +1,21 @@
 # SagaBook Changelog
 
+## 2026-08-30 - HSTS global untuk health endpoint S361
+
+- Middleware security header dipindahkan ke stack global agar route framework
+  `/up` memperoleh HSTS serta header dasar pada HTTPS; HTTP tetap tanpa HSTS.
+- Verifier production sekarang mewajibkan HSTS pada profil health dan login,
+  sehingga gap serupa tidak dapat lolos release verification.
+- Feature source `91b3267d5156d14649b22989fe3351f5e94b4528` merge melalui PR #77 ke exact
+  main `fa53bdd5db2195507b95e053f56fe9e5577b6cdc`.
+- Focused 40/40 (381 assertion), full PHP 1.304/1.304 (14.654 assertion),
+  critical typecheck, build, Pint, PowerShell parse, disposable migration/seed,
+  serta audit npm/Composer/OSV nol lulus. CI GitHub tidak memulai job karena
+  billing, sehingga bukti lokal ekuivalen dipakai.
+- Status `CONFIRMED / MERGED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+  Production tetap exact source `435dbfd252759fd8b7d43f44af69edfb39ee2102`,
+  release `20260829175230-435dbfd`, rollback `20260829062031-b2790d6`.
+
 ## 2026-08-30 - Gate bukti pilot dua studio
 
 - Validator baru mewajibkan tepat dua pilot dengan bukti Owner, operator, dan
