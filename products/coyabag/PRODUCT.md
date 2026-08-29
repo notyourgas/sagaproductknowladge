@@ -19,8 +19,10 @@ operasi commerce tetap belum diaktifkan.
 COYABAG adalah ecommerce tas streetwear dengan storefront React/Vite dan backend
 operasional Laravel/Inertia.
 
-Visual direction: streetwear, hitam-putih, editorial product focus, dengan
-Instrument Serif untuk display dan Helvetica family untuk UI/body.
+Visual direction storefront: streetwear, hitam-putih, editorial product focus,
+dengan Instrument Serif untuk display dan Helvetica family untuk UI/body.
+Dashboard admin memakai Plus Jakarta Sans variable self-hosted untuk seluruh
+interface operasional; wordmark COYABAG tetap memakai font logo resminya.
 
 ## Target pengguna
 
@@ -74,11 +76,14 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 - Launch UAT 15 langkah sudah lulus 15/15 dan sign-off diizinkan. Checkout
   publik tetap `PRODUCTION_READINESS_BLOCKED` hanya sampai release sign-off
   dicatat; deployment acceptance hotfix tidak membuat payment intent baru.
-- Release aktif `20260829-edd3606` dengan exact source
-  `edd36069fcfff3503726e061a02ba07fd5767b73` melayani production;
-  rollback langsung `20260829-e1c8b65` dipertahankan. Admin System Health
-  kembali dapat dirender setelah import ikon Feather `Truck` yang hilang
-  dipulihkan dan dikunci dengan regression test. Payment gateway sekarang
+- Release aktif `20260829-1b3b023` dengan exact source
+  `1b3b0231959a3a9105b9578caa119c995530e97a` melayani production;
+  rollback langsung `20260829-edd3606` dipertahankan. Fondasi dashboard admin
+  kini memakai Plus Jakarta Sans self-hosted, token warna/spacing/focus modern,
+  hierarki panel dan kontrol yang lebih tenang, KPI mobile dua kolom, serta
+  spacing wordmark/profile yang konsisten. Admin System Health tetap dapat
+  dirender setelah import ikon Feather `Truck` yang hilang dipulihkan dan
+  dikunci dengan regression test. Payment gateway sekarang
   memakai URL kembali HTTPS kanonik storefront dan menolak redirect internal
   yang tidak sesuai kontrak, sehingga kegagalan validasi tidak lagi terbaca
   sebagai sesi pembayaran ambigu. Owner tetap memiliki jalur UAT pembayaran

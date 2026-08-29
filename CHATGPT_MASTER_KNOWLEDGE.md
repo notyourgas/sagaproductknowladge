@@ -117,10 +117,12 @@ diterapkan karena seluruhnya belum dipetakan (`applied=false`). Status
 `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`;
 authenticated Owner/Staff UAT dan mapping legacy masih pending.
 
-COYABAG storefront/API/admin kini pada release `20260829-edd3606` dengan exact
-source `edd36069fcfff3503726e061a02ba07fd5767b73`; rollback
-`20260829-e1c8b65` tersedia. Admin System Health tidak lagi white screen setelah
-import ikon Feather `Truck` yang hilang dilengkapi dan dikunci regression test.
+COYABAG storefront/API/admin kini pada release `20260829-1b3b023` dengan exact
+source `1b3b0231959a3a9105b9578caa119c995530e97a`; rollback
+`20260829-edd3606` tersedia. Dashboard admin memakai Plus Jakarta Sans variable
+self-hosted serta design token modern untuk seluruh interface operasional,
+sementara wordmark mempertahankan font logo resmi. Admin System Health tetap
+terlindungi oleh regression test untuk import ikon Feather `Truck`.
 Saga Platform exact source
 `ec2a18bf70c8e2ae19bfdb71d125ee318b6ca2f9` aktif pada release
 `20260829033654-ec2a18b` dengan rollback `20260829100759-eff4f53`. Managed

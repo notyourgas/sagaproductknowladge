@@ -4,6 +4,23 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-29 - Admin visual foundation Plus Jakarta Sans deployed
+
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /
+  NOT_PRODUCTION_ACTIVATED`; exact source
+  `1b3b0231959a3a9105b9578caa119c995530e97a`, immutable release
+  `20260829-1b3b023`, rollback `20260829-edd3606`.
+- Seluruh interface admin, auth, tabel, form, laporan, invoice, packing slip,
+  dan recovery memakai Plus Jakarta Sans variable yang dilayani sendiri dari
+  domain admin. Wordmark tetap memakai identitas logo COYABAG.
+- Token warna, spacing, fokus, panel, kontrol, tabel, badge, dan KPI mobile
+  diselaraskan menjadi commerce console yang lebih modern dan efisien tanpa
+  mengubah permission, data, API, atau provider.
+- Backend 473 total: 472 lulus, satu controlled skip, 4.448 assertion; browser
+  owner/finance desktop-mobile, build storefront/admin, dependency audit,
+  backup, readiness 41/42, dan public smoke lulus. Release sign-off tetap satu
+  blocker dan commerce tidak diaktifkan otomatis.
+
 ## 2026-08-29 - Admin System Health white-screen hotfix deployed
 
 - Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED / CONTROLLED_UAT_PASSED /

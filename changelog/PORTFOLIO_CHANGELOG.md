@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-29 - COYABAG Admin commerce-console foundation
+
+- Exact source `1b3b0231959a3a9105b9578caa119c995530e97a` aktif pada
+  immutable release `20260829-1b3b023`; rollback `20260829-edd3606` tersedia.
+- Dashboard admin kini memakai Plus Jakarta Sans self-hosted dan design token
+  modern untuk panel, kontrol, tabel, fokus, status, dan KPI responsive. Fungsi,
+  RBAC, data, API, dan provider tidak diubah.
+- Full backend, browser owner/finance desktop-mobile, build/audit, backup,
+  readiness 41/42, dan public smoke lulus. Status tetap
+  `PRODUCTION_DEPLOYED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+
 ## 2026-08-29 - SagaView S344 authenticated UAT harness
 
 - Exact pushed source `9e4e90a69fe892000a7ef98633d1b8d2e14f91c4`

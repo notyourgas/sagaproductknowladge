@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-29 - COYABAG Admin visual foundation sync
+
+- Ringkasan: menyinkronkan fondasi commerce console Plus Jakarta Sans
+  self-hosted, token UI modern, hierarchy panel/control, dan KPI mobile.
+- Provenance: exact source `1b3b0231959a3a9105b9578caa119c995530e97a`,
+  immutable release `20260829-1b3b023`, rollback `20260829-edd3606`.
+- Evidence: backend 473 total/4.448 assertion, browser owner/finance
+  desktop-mobile, build storefront/admin, dependency audit, backup, readiness
+  41/42, dan public smoke termasuk font asset.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /
+  NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+- Dokumen terdampak: Product/changelog COYABAG, portfolio, master knowledge,
+  root changelog, dan sync status.
+
 ## 2026-08-29 - SagaView S344 authenticated UAT harness sync
 
 - Ringkasan: menyinkronkan harness 12 gate authenticated Owner/Studio dua

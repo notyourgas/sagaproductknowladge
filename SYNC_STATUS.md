@@ -12,12 +12,32 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-29 16:12 WIB |
-| Branch aktif | `codex/s344-sagaview-knowledge` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-29 17:15 WIB |
+| Branch aktif | `codex/coyabag-payment-reconcile-20260829` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `cf12859a094341d089da43367cde040768b38b5e` |
-| Informasi terakhir disinkronkan | SagaView S344 authenticated business-readiness UAT harness. |
-| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan `BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `395fb332d45ca61e79dfa977050f8d4d10a3dfb2` |
+| Informasi terakhir disinkronkan | COYABAG Admin visual foundation Plus Jakarta Sans. |
+| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`. |
+
+## COYABAG Admin visual foundation Plus Jakarta Sans
+
+- Exact source `1b3b0231959a3a9105b9578caa119c995530e97a` aktif pada release
+  `20260829-1b3b023`; rollback `20260829-edd3606` tersedia.
+- Dashboard admin memakai Plus Jakarta Sans variable self-hosted, token modern,
+  fokus aksesibel, panel/control hierarchy yang lebih efisien, dan KPI mobile
+  dua kolom. Wordmark tetap memakai identitas logo resmi.
+- Backend 473 total/4.448 assertion, browser owner/finance desktop-mobile,
+  build/audit, backup, readiness 41/42, serta public smoke dan font asset lulus.
+- Release sign-off tetap satu blocker; tidak ada aktivasi commerce/provider.
+
+## File yang berubah pada sinkronisasi COYABAG Admin visual foundation
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaView S344 authenticated UAT harness
 
