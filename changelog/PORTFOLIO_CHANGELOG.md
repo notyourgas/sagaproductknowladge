@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-30 - SagaView S355 UAT receipt pre-switch revalidation
+
+- Exact pushed source `d6aeca9ca72ef5e31b213206be34627e88cf62c3`
+  membuat writer S70/S344/S345 memeriksa ulang ancestor, temp, dan destination
+  tepat sebelum atomic switch; cleanup juga divalidasi sebelum penghapusan.
+- Regression red 3/3 lalu green; gabungan S353-S355 13/13, focused 62/62,
+  full 300/300, parser PowerShell/pwsh, build client+SSR, bundle budget, audit
+  dependency nol, diff check, clean, dan remote exact lulus. Hard-link
+  disposable ditolak tanpa mengubah sumber eksternal.
+- Perubahan hanya harness/test/runbook. Production tidak berubah;
+  authenticated UAT dan visual review masih pending sehingga
+  `BUSINESS_READY=false`.
+
 ## 2026-08-30 - SagaBook health HSTS hardening S361
 
 - Feature `91b3267d5156d14649b22989fe3351f5e94b4528` merge melalui PR #77 ke exact

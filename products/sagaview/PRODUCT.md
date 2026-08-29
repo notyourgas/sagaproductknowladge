@@ -1,6 +1,23 @@
 # SagaView Product Knowledge
 
-Updated: 30 Agustus 2026 03:18 WIB
+Updated: 30 Agustus 2026 04:15 WIB
+
+SagaView S355 exact source
+`d6aeca9ca72ef5e31b213206be34627e88cf62c3` sudah `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Writer receipt UAT S70, S344,
+dan reviewer S345 kini memeriksa ulang seluruh ancestor direktori, file temp,
+serta receipt tujuan setelah flush dan tepat sebelum atomic move/replace.
+Cleanup temp/backup memakai validasi yang sama sebelum penghapusan, sehingga
+perubahan path, reparse point, atau hard link setelah preflight dihentikan
+fail-closed.
+
+Regression awal 3/3 gagal lalu hijau; gabungan S353-S355 13/13, focused 62/62,
+dan full 67 file/300 test lulus. Parser Windows PowerShell/pwsh,
+format/lint/typecheck, client 2.129 modul + SSR 203 modul, bundle 312,7 KiB
+dari 450 KiB, npm audit nol, diff check, clean exact commit, serta remote exact
+juga lulus. Uji hard link disposable membuktikan file sumber eksternal tetap
+utuh. Production tidak diubah; authenticated UAT 12 gate dan visual review
+tetap wajib sehingga `BUSINESS_READY=false`.
 
 SagaView S354 exact source
 `edd06983c8143abb146692695cf0d6c9abbf6072` sudah `PUSHED /

@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-30 - SagaView S355 UAT receipt pre-switch revalidation sync
+
+- Ringkasan: menyinkronkan validasi ulang receipt dan path tepat sebelum
+  atomic switch serta sebelum cleanup artefak sementara.
+- Provenance: exact pushed source
+  `d6aeca9ca72ef5e31b213206be34627e88cf62c3`; production tidak diubah.
+- Evidence: regression red 3/3 lalu green, gabungan S353-S355 13/13,
+  focused 62/62, full 300/300, PowerShell/pwsh, format/lint/typecheck,
+  client+SSR build, bundle budget, npm audit nol, diff check, clean, dan
+  remote exact.
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; `BUSINESS_READY=false`.
+- Dokumen terdampak: Product, feature ledger/changelog SagaView, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-08-30 - SagaBook S361 health HSTS sync
 
 - Ringkasan: menyinkronkan middleware security header global dan verifier

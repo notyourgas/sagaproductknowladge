@@ -12,12 +12,35 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-30T04:12:00+07:00 |
-| Branch aktif | `codex/knowledge-s361-health-hsts` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-30T04:15:00+07:00 |
+| Branch aktif | `codex/s355-sagaview-uat-receipt-preswitch-revalidation-knowledge` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `477b9f83f3b22edc6b7c88ceab8568635ff87ced` |
-| Informasi terakhir disinkronkan | SagaBook S361 health HSTS pada exact main `fa53bdd5db2195507b95e053f56fe9e5577b6cdc`. |
-| Status sinkronisasi | `CONFIRMED / MERGED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap `435dbfd252759fd8b7d43f44af69edfb39ee2102` dan `BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `7403fb93fafbee1095ef45ac5ca1d3d8338042fb` |
+| Informasi terakhir disinkronkan | SagaView S355 UAT receipt pre-switch revalidation pada exact pushed source `d6aeca9ca72ef5e31b213206be34627e88cf62c3`. |
+| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan `BUSINESS_READY=false`. |
+
+## SagaView S355 UAT receipt pre-switch revalidation
+
+- Exact source `d6aeca9ca72ef5e31b213206be34627e88cf62c3` sudah push.
+- Writer S70, S344, dan S345 memeriksa ulang ancestor direktori, temp, dan
+  destination sesudah flush tepat sebelum atomic switch. Cleanup juga
+  memvalidasi ulang file/path sebelum menghapus temp atau backup.
+- Regression red 3/3 lalu green, gabungan S353-S355 13/13, focused 62/62,
+  full 300/300, PowerShell/pwsh, format/lint/typecheck, client+SSR build,
+  bundle budget, npm audit nol, diff check, clean, dan remote exact lulus.
+  Hard-link disposable ditolak sementara file sumber eksternal tetap utuh.
+- Production tidak berubah; authenticated UAT 12 gate dan visual review masih
+  pending sehingga `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi SagaView S355
+
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook S361 health HSTS
 

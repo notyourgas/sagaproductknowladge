@@ -1,5 +1,27 @@
 # SagaView Changelog
 
+## 2026-08-30 - S355 UAT receipt pre-switch revalidation
+
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan
+  `BUSINESS_READY=false`.
+- Before: S354 memvalidasi path sebelum temp dibuat, tetapi perubahan
+  ancestor/temp/destination di sela flush dan atomic switch belum diperiksa
+  ulang; cleanup masih berisiko mengikuti path yang berubah.
+- After: exact source `d6aeca9ca72ef5e31b213206be34627e88cf62c3`
+  memvalidasi ulang rantai direktori, temp, dan destination tepat sebelum
+  move/replace, serta memvalidasi ulang artefak sebelum cleanup pada S70,
+  S344, dan S345.
+- Evidence: regression red 3/3 lalu green; gabungan S353-S355 13/13; focused
+  62/62; full 67 file/300 test; parser PowerShell/pwsh;
+  format/lint/typecheck; client+SSR build; bundle 312,7 KiB dari 450 KiB;
+  npm audit nol; diff check; worktree bersih; dan remote exact. Hard-link
+  disposable ditolak dan sumber eksternal tetap utuh.
+- Boundary: hanya harness/test/runbook dengan filesystem disposable; tidak ada
+  UI/API/database, data customer, deploy, atau perubahan production.
+- Next gate: authenticated manual UAT 12 gate dengan evidence sintetis
+  tersanitasi pada path biasa, visual review, reviewer S345, lalu S344 Finalize.
+
 ## 2026-08-30 - S354 UAT receipt ancestor guard
 
 - Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
