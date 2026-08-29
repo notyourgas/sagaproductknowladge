@@ -1,5 +1,27 @@
 # SagaView Changelog
 
+## 2026-08-29 - S350 reviewer-to-Finalize binding
+
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan
+  `BUSINESS_READY=false`.
+- Before: hardening reviewer S345-S349 menghasilkan `evidence-review.json`,
+  tetapi S344 Finalize masih dapat dipanggil langsung tanpa mewajibkan atau
+  mengikat receipt tersebut.
+- After: exact source `3b01db857c28989575960c7e9c29055660403f0c`
+  menolak review hilang/tidak siap/stale/kandidat berbeda, mengunci snapshot
+  preflight dan checklist, serta membandingkan ulang indeks lengkap evidence
+  sesudah provenance live cocok.
+- Evidence: focused red 2 lalu green; focused S344-S349 24/24, full 282/282,
+  parser Windows PowerShell/pwsh, format/lint/typecheck, client+SSR build,
+  bundle 312,7 KiB dari 450 KiB, npm audit nol, diff check, worktree bersih,
+  dan remote exact.
+- Boundary: perubahan hanya pada harness, contract test, dan runbook; tidak ada
+  UI/API/database, data customer, deploy, atau perubahan production.
+- Next gate: jalankan authenticated manual UAT 12 gate dengan evidence sintetis
+  tersanitasi, visual review, reviewer S345, lalu S344 Finalize yang kini
+  terikat secara fail-closed.
+
 ## 2026-08-29 - S349 NTFS hard-link evidence guard
 
 - Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /

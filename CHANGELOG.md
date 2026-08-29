@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-29 - SagaView S350 reviewer-to-Finalize binding sync
+
+- Ringkasan: mengikat S344 Finalize pada receipt reviewer S345-S349, exact
+  kandidat, snapshot kontrol, dan indeks evidence yang sudah diperiksa.
+- Provenance: exact pushed source
+  `3b01db857c28989575960c7e9c29055660403f0c`; production tetap Studio
+  `20260828203620-47d68e7` dan backend `20260828111443-98f13a8`.
+- Evidence: focused red 2 lalu green, focused 24/24, full 282/282,
+  PowerShell/pwsh, format/lint/typecheck, client+SSR build, bundle budget,
+  npm audit nol, diff check, worktree bersih, serta remote exact.
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan `BUSINESS_READY=false`.
+- Dokumen terdampak: Product, feature ledger/changelog SagaView, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-08-29 - COYABAG Admin inventory snapshot export sync
 
 - Ringkasan: menyinkronkan export snapshot stok CSV sesuai antrean dan

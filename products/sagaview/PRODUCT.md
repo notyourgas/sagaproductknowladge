@@ -1,6 +1,21 @@
 # SagaView Product Knowledge
 
-Updated: 29 Agustus 2026 21:08 WIB
+Updated: 29 Agustus 2026 23:16 WIB
+
+SagaView S350 exact source
+`3b01db857c28989575960c7e9c29055660403f0c` sudah `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. S344 Finalize kini wajib memakai
+receipt review S345-S349 yang siap dan cocok dengan exact kandidat. Hash
+snapshot preflight/checklist serta indeks gate/path/size/SHA-256 evidence
+diperiksa ulang, sehingga review hilang, stale, atau evidence yang berubah
+dihentikan sebelum readiness receipt dapat dibuat.
+
+Regression focused awal 2 gagal lalu hijau; focused 24/24 dan full 282/282,
+parser Windows PowerShell/pwsh, format/lint/typecheck, client+SSR build, bundle
+312,7 KiB dari 450 KiB, npm audit nol, diff check, worktree bersih, serta
+remote exact lulus. Perubahan hanya pada harness, contract test, dan runbook;
+production tidak berubah. Authenticated UAT 12 gate dan visual review tetap
+wajib sehingga `BUSINESS_READY=false`.
 
 SagaView S349 exact source
 `78624c9263994a642de317c2d177a1d7d76aba7c` sudah `PUSHED /

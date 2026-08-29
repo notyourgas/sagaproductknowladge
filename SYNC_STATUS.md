@@ -12,12 +12,34 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-29 22:20 WIB |
-| Branch aktif | `codex/coyabag-payment-reconcile-20260829` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-29 23:16 WIB |
+| Branch aktif | `codex/s350-sagaview-knowledge` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `8d008ac67118b7111ac00bb3a1357ea3984092be` |
-| Informasi terakhir disinkronkan | COYABAG Admin inventory snapshot export. |
-| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED / NOT_PRODUCTION_ACTIVATED`; readiness 41/42 dan `BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `e70dc680bd780745bf2921e39561a04dc8ab2799` |
+| Informasi terakhir disinkronkan | SagaView S350 reviewer-to-Finalize binding. |
+| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan `BUSINESS_READY=false`. |
+
+## SagaView S350 reviewer-to-Finalize binding
+
+- Exact source `3b01db857c28989575960c7e9c29055660403f0c` sudah push.
+- S344 Finalize kini menolak review hilang, belum siap, stale, atau kandidat
+  berbeda, lalu membandingkan hash snapshot kontrol dan indeks evidence yang
+  sudah direview sebelum membuat receipt readiness.
+- Focused red 2 lalu green, focused 24/24, full 282/282, PowerShell/pwsh,
+  format/lint/typecheck, client+SSR build, bundle budget, npm audit nol, diff
+  check, worktree bersih, dan remote exact lulus.
+- Production tidak berubah; authenticated UAT 12 gate dan visual review masih
+  pending sehingga `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi SagaView S350
+
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG Admin inventory snapshot export
 

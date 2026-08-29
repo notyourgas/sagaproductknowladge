@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-29 - SagaView S350 reviewer-to-Finalize binding
+
+- Exact pushed source `3b01db857c28989575960c7e9c29055660403f0c`
+  membuat receipt review S345-S349 wajib dan terikat pada exact kandidat,
+  snapshot kontrol, serta indeks evidence sebelum S344 Finalize dapat selesai.
+- Regression focused merah 2 lalu hijau; focused 24/24 dan full 282/282,
+  parser PowerShell/pwsh, build client+SSR, bundle budget, dependency audit,
+  diff check, dan remote exact lulus.
+- Perubahan hanya pada harness/test/runbook. Production tidak berubah;
+  authenticated UAT dan visual review masih pending sehingga
+  `BUSINESS_READY=false`.
+
 ## 2026-08-29 - COYABAG Admin inventory snapshot export
 
 - Exact source `b073a484cb18181a4c4365412f37804b816756c2` aktif pada
