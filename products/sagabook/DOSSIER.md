@@ -7,6 +7,14 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Hardening release S355 sudah merge pada exact main
+  `04548e539c52924a9629a5db1670ee80bed99b93`. Media removable NTFS/ReFS yang
+  sehat dapat menjadi mirror artifact bila benar-benar memakai disk fisik
+  terpisah; kapasitas, reparse guard, filesystem/health, checksum, Git bundle,
+  dan rollback ancestry tetap wajib lulus. Artifact exact-main dua salinan
+  sudah tervalidasi, tetapi tidak ada deployment production. Status
+  `RELEASE_ARTIFACT_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+
 - Manual Booking OTS `Mulai sekarang` aktif untuk seluruh tenant pada exact
   cumulative source `b2790d64232b24222c3bc383c3b445d760786f2d`, immutable
   release `20260829062031-b2790d6`; rollback

@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 29 Agustus 2026 17:12 WIB
-Evidence status: recovery idempotensi OTS S354 sudah merge pada exact main `d146adbef6a222cc32d2a10ffb2c8332c01098f8` tetapi belum dideploy; production tetap exact source `b2790d64232b24222c3bc383c3b445d760786f2d`, release `20260829062031-b2790d6`, dan `BUSINESS_READY=false` hanya menunggu pilot dua studio serta provider canary
+Updated: 29 Agustus 2026 18:18 WIB
+Evidence status: recovery idempotensi OTS S354 dan hardening mirror artifact S355 sudah merge pada exact main `04548e539c52924a9629a5db1670ee80bed99b93` tetapi belum dideploy; production tetap exact source `b2790d64232b24222c3bc383c3b445d760786f2d`, release `20260829062031-b2790d6`, dan `BUSINESS_READY=false` hanya menunggu pilot dua studio serta provider canary
 
 ## Tujuan dokumen
 
@@ -15,6 +15,18 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
+
+- Hardening release S355 mengizinkan media removable NTFS/ReFS yang sehat
+  menjadi mirror artifact lokal, tetapi tetap mewajibkan volume dan disk fisik
+  berbeda, kapasitas minimum, larangan traversal reparse point, checksum
+  identik, serta Git bundle exact-commit. Feature source
+  `c3724aa6a9512d7c9a1a6303743bc4be1628a654` merge melalui PR #72 ke exact
+  main `04548e539c52924a9629a5db1670ee80bed99b93`. Archive, bundle, metadata,
+  dan manifest exact-main sudah tervalidasi pada dua disk; full PHP
+  1.299/1.299 (14.549 assertion), related 19/19 (315), TypeScript/build, dan
+  audit npm/Composer/OSV nol lulus. Status `CONFIRMED / MERGED /
+  RELEASE_ARTIFACT_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak
+  berubah.
 
 - Recovery idempotensi Manual Booking OTS S354 sudah merge melalui PR #71 pada
   exact main `d146adbef6a222cc32d2a10ffb2c8332c01098f8`. Fingerprint retry mode
