@@ -4,6 +4,26 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-29 - Admin product bulk actions deployed
+
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /
+  NOT_PRODUCTION_ACTIVATED`; exact source
+  `8c91ad2bb1d7c6b6811c5871a04db889f6e62a6f`, immutable release
+  `20260829-8c91ad2`, rollback `20260829-9001d6a`.
+- Owner/Admin dapat memilih produk di desktop maupun mobile lalu menerbitkan
+  draft siap publikasi atau mengarsipkan produk aktif dalam satu tindakan.
+  Pilihan yang tidak memenuhi syarat dinonaktifkan dan dialog konfirmasi
+  menjelaskan bahwa batch diproses seluruhnya atau tidak sama sekali.
+- Backend membatasi 25 produk per request, memvalidasi revision/publication
+  context, mengunci perubahan di dalam transaksi, dan mencatat audit bulk
+  publish/archive. Kegagalan satu item membatalkan seluruh batch; role tanpa
+  permission hanya memperoleh akses baca.
+- Full backend 479 total: 478 lulus, satu controlled skip, 4.486 assertion;
+  storefront 216/216, acceptance Produk desktop/mobile, loading/empty/error/
+  success, accessibility, build, dependency audit, backup, readiness 41/42,
+  exact runtime asset, dan public smoke lulus. Release sign-off tetap satu
+  blocker dan batch ini tidak mengaktifkan commerce/provider.
+
 ## 2026-08-29 - Admin order saved views deployed
 
 - Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /

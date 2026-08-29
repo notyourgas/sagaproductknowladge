@@ -187,9 +187,9 @@ diterapkan karena seluruhnya belum dipetakan (`applied=false`). Status
 `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`;
 authenticated Owner/Staff UAT dan mapping legacy masih pending.
 
-COYABAG storefront/API/admin kini pada release `20260829-9001d6a` dengan exact
-source `9001d6af32a93b48d97d8ff1e1d3f90afb7a7567`; rollback
-`20260829-0b6ecce` tersedia. Dashboard admin memakai Plus Jakarta Sans variable
+COYABAG storefront/API/admin kini pada release `20260829-8c91ad2` dengan exact
+source `8c91ad2bb1d7c6b6811c5871a04db889f6e62a6f`; rollback
+`20260829-9001d6a` tersedia. Dashboard admin memakai Plus Jakarta Sans variable
 self-hosted serta design token modern untuk seluruh interface operasional,
 sementara wordmark mempertahankan font logo resmi. Application shell memiliki
 sidebar collapse persisten, breadcrumb, active route, pencarian desktop/mobile,
@@ -198,8 +198,11 @@ Admin menyediakan tren 7/14/30 hari yang dibatasi backend, tersimpan di URL,
 dan mempertahankan snapshot terakhir bila refresh gagal; grafik panjang tetap
 responsive di dalam panel. Admin Pesanan dapat menyimpan maksimal lima
 tampilan filter per akun/perangkat; kata pencarian pelanggan tidak pernah
-dipersistenkan dan preferensi gagal secara aman. Admin System Health tetap
-terlindungi oleh regression test untuk import ikon Feather `Truck`.
+dipersistenkan dan preferensi gagal secara aman. Admin Produk mendukung bulk
+publish draft siap publikasi dan bulk archive secara responsive, permission-
+gated, transaksional, revision/context-aware, dan ter-audit. Admin System
+Health tetap terlindungi oleh regression test untuk import ikon Feather
+`Truck`.
 Saga Platform exact source
 `ec2a18bf70c8e2ae19bfdb71d125ee318b6ca2f9` aktif pada release
 `20260829033654-ec2a18b` dengan rollback `20260829100759-eff4f53`. Managed
@@ -4192,12 +4195,14 @@ owner 2FA, legal, backup restore, dan provider UAT selesai.
 Delivery: `PRODUCTION_DEPLOYED`. Activation dan business readiness: `BLOCKED`.
 
 Admin terbaru sudah `PRODUCTION_DEPLOYED` pada exact source
-`9001d6af32a93b48d97d8ff1e1d3f90afb7a7567`, immutable release
-`20260829-9001d6a`, dan rollback `20260829-0b6ecce`. Dashboard memakai Plus
+`8c91ad2bb1d7c6b6811c5871a04db889f6e62a6f`, immutable release
+`20260829-8c91ad2`, dan rollback `20260829-9001d6a`. Dashboard memakai Plus
 Jakarta Sans, shell responsive, refresh snapshot fail-safe, tren 7/14/30 hari,
-serta tampilan filter Pesanan per akun/perangkat. Kata pencarian pelanggan tidak
-dipersistenkan. Readiness 41/42 (98%); release sign-off tetap satu blocker dan
-perubahan dashboard tidak mengaktifkan commerce/provider.
+serta tampilan filter Pesanan per akun/perangkat. Katalog Produk menyediakan
+bulk publish/archive yang transaksional, revision/context-aware, dan ter-audit.
+Kata pencarian pelanggan tidak dipersistenkan. Readiness 41/42 (98%); release
+sign-off tetap satu blocker dan perubahan dashboard tidak mengaktifkan
+commerce/provider.
 
 SagaDev Managed Gateway controlled trial untuk COYABAG sudah
 `PRODUCTION_DEPLOYED` melalui Saga Platform release
@@ -4213,12 +4218,12 @@ publik tetap `PRODUCTION_READINESS_BLOCKED` sampai checklist UAT dan release
 sign-off selesai. Jangan menyebut controlled UAT sebagai payment production-
 activated atau business-ready.
 
-Release aktif `20260829-9001d6a` menjalankan exact source
-`9001d6af32a93b48d97d8ff1e1d3f90afb7a7567` dengan rollback
-`20260829-0b6ecce`. Hero homepage memakai komposisi campaign full-bleed
+Release aktif `20260829-8c91ad2` menjalankan exact source
+`8c91ad2bb1d7c6b6811c5871a04db889f6e62a6f` dengan rollback
+`20260829-9001d6a`. Hero homepage memakai komposisi campaign full-bleed
 hitam-putih versi sebelumnya dengan headline `BAGS FOR THE SCENE`, crop
 `cover`, gradient keterbacaan, dan proporsi desktop 461–521 piksel. Storefront
-215/215, navigation 16 skenario, 110 responsive combinations, 32 route
+216/216, navigation 16 skenario, 110 responsive combinations, 32 route
 accessibility desktop/mobile, serta hero live 390/768/1440/1920 piksel lulus.
 GitHub Actions exact SHA tidak memulai job karena billing/spending limit dan
 tidak diklaim hijau. Filter dan preview Gallery tersimpan pada URL yang dapat

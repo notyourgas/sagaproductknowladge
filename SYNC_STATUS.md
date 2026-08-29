@@ -12,12 +12,32 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-29 21:08 WIB |
-| Branch aktif | `codex/s349-sagaview-knowledge` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-29 21:26 WIB |
+| Branch aktif | `codex/coyabag-payment-reconcile-20260829` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `fc4d184440cc69cbcbdd03c3c043f638492edf13` |
-| Informasi terakhir disinkronkan | SagaView S349 hard-link evidence guard. |
-| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan `BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `c07deef9609107b88a93fa3207dfa8fc733a9aa2` |
+| Informasi terakhir disinkronkan | COYABAG Admin product bulk actions. |
+| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED / NOT_PRODUCTION_ACTIVATED`; readiness 41/42 dan `BUSINESS_READY=false`. |
+
+## COYABAG Admin product bulk actions
+
+- Exact source `8c91ad2bb1d7c6b6811c5871a04db889f6e62a6f` aktif pada release
+  `20260829-8c91ad2`; rollback `20260829-9001d6a` tersedia.
+- Owner/Admin dapat bulk publish draft siap publikasi atau bulk archive produk
+  dari katalog desktop/mobile. Batch dibatasi, permission-gated,
+  revision/context-aware, transaksional, dan ter-audit.
+- Backend 479 total, storefront 216/216, browser, build/audit, backup,
+  readiness 41/42, exact runtime asset, dan public smoke lulus.
+- Release sign-off tetap satu blocker; provider dan commerce tidak diaktifkan.
+
+## File yang berubah pada sinkronisasi COYABAG Admin product bulk actions
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaView S349 hard-link evidence guard
 

@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-29 - COYABAG Admin product bulk actions sync
+
+- Ringkasan: menyinkronkan bulk publish/archive di katalog Produk dengan
+  seleksi responsive, validasi eligibility, konfirmasi, dan state aksesibel.
+- Provenance: exact source `8c91ad2bb1d7c6b6811c5871a04db889f6e62a6f`,
+  immutable release `20260829-8c91ad2`, rollback `20260829-9001d6a`.
+- Evidence: backend 479 total, storefront 216/216, browser desktop/mobile,
+  build/audit, backup, readiness 41/42, exact runtime asset, dan public smoke.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /
+  NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+- Dokumen terdampak: Product/changelog COYABAG, portfolio, master knowledge,
+  root changelog, dan sync status.
+
 ## 2026-08-29 - SagaView S349 hard-link evidence guard sync
 
 - Ringkasan: menolak NTFS hard link pada evidence, preflight, dan checklist

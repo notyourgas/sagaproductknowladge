@@ -76,9 +76,9 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 - Launch UAT 15 langkah sudah lulus 15/15 dan sign-off diizinkan. Checkout
   publik tetap `PRODUCTION_READINESS_BLOCKED` hanya sampai release sign-off
   dicatat; deployment acceptance hotfix tidak membuat payment intent baru.
-- Release aktif `20260829-9001d6a` dengan exact source
-  `9001d6af32a93b48d97d8ff1e1d3f90afb7a7567` melayani production;
-  rollback langsung `20260829-0b6ecce` dipertahankan. Fondasi dashboard admin
+- Release aktif `20260829-8c91ad2` dengan exact source
+  `8c91ad2bb1d7c6b6811c5871a04db889f6e62a6f` melayani production;
+  rollback langsung `20260829-9001d6a` dipertahankan. Fondasi dashboard admin
   kini memakai Plus Jakarta Sans self-hosted, token warna/spacing/focus modern,
   hierarki panel dan kontrol yang lebih tenang, KPI mobile dua kolom, serta
   spacing wordmark/profile yang konsisten. Application shell menambahkan
@@ -94,6 +94,10 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
   akun dan perangkat, menerapkan ulang setelah reload, serta menghapusnya.
   Kata pencarian pelanggan tidak pernah dipersistenkan; state lokal
   dinormalisasi melalui allowlist dan gagal secara aman tanpa mengubah pesanan.
+  Admin Produk kini menyediakan seleksi dan bulk publish/archive yang
+  responsive. Backend membatasi batch, memvalidasi revision dan publication
+  context, menjalankan seluruh perubahan secara transaksional, serta mencatat
+  audit; kegagalan satu item membatalkan seluruh batch tanpa perubahan parsial.
   Admin System Health tetap dapat
   dirender setelah import ikon Feather `Truck` yang hilang dipulihkan dan
   dikunci dengan regression test. Payment gateway sekarang
@@ -128,7 +132,7 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
   gradient menjaga keterbacaan, dan tinggi desktop dibatasi 461–521 piksel.
   Carousel, CTA, Gallery share navigation, dan perbaikan featured card tetap
   aktif.
-- Storefront 215/215, 16 skenario navigasi, 110 kombinasi responsive, 32 route
+- Storefront 216/216, 16 skenario navigasi, 110 kombinasi responsive, 32 route
   accessibility pada desktop/mobile, serta pemeriksaan hero live pada 390,
   768, 1440, dan 1920 piksel lulus. GitHub Actions exact SHA tidak berjalan
   karena billing/spending limit akun, sehingga tidak diklaim hijau.

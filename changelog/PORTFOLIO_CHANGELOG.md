@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-29 - COYABAG Admin product bulk actions
+
+- Exact source `8c91ad2bb1d7c6b6811c5871a04db889f6e62a6f` aktif pada
+  immutable release `20260829-8c91ad2`; rollback `20260829-9001d6a` tersedia.
+- Owner/Admin dapat bulk publish draft siap publikasi atau bulk archive produk
+  dari katalog responsive. Validasi revision/context dan transaksi all-or-
+  nothing mencegah perubahan parsial; role read-only tetap tidak dapat mutasi.
+- Backend 479 total, storefront 216/216, acceptance desktop/mobile, build,
+  audit, backup, readiness 41/42, runtime asset, dan public smoke lulus.
+  Release sign-off tetap satu blocker dan commerce/provider tidak diaktifkan.
+
 ## 2026-08-29 - SagaView S349 hard-link evidence guard
 
 - Exact pushed source `78624c9263994a642de317c2d177a1d7d76aba7c`
