@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-29 - SagaView S345 offline evidence review
+
+- Exact pushed source `fe5b59b4b41b517fa9fdfdfbd40a45e2a496e03f`
+  menambahkan pemeriksaan fail-closed offline sebelum authenticated UAT
+  evidence S344 difinalisasi.
+- Dua belas gate, schema/provenance, path traversal, nama/ukuran file,
+  konfirmasi, sensitive text, dan hash diperiksa tanpa jaringan atau credential.
+- Focused 4/4, full 267/267, PowerShell/pwsh, build/budget/audit lulus. Receipt
+  preflight saat ini menunjukkan 29 blocker pending; production tidak berubah
+  dan `BUSINESS_READY=false`.
+
 ## 2026-08-29 - COYABAG Admin commerce-console foundation
 
 - Exact source `1b3b0231959a3a9105b9578caa119c995530e97a` aktif pada
