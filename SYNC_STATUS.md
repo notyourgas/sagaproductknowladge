@@ -12,12 +12,38 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-30T13:16:00+07:00 |
-| Branch aktif | `codex/s364-sagaview-provenance-policy-knowledge` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-30T13:20:00+07:00 |
+| Branch aktif | `codex/s370-sagabook-knowledge-sync` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `4a6464a6bc06e406f30a823a39b14d91e3877293` |
-| Informasi terakhir disinkronkan | SagaView S364 provenance response-policy enforcement pada exact source `2371db8e746aeaed6a76c21daa80e14bc3ff77fb`. |
-| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan `BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `140b0e5a61b6d4f5039f3eb26e32c880679b352a` |
+| Informasi terakhir disinkronkan | SagaBook S370 context, reporting, billing, and navigation repair pada exact source `a9199bca9914b6466cc603a9908c7668f175485b`. |
+| Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / CI_BLOCKED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan `BUSINESS_READY=false`. |
+
+## SagaBook S370 context and report repair
+
+- Exact source `a9199bca9914b6466cc603a9908c7668f175485b` sudah dipush pada
+  PR #80.
+- Toast baru kembali ke kanan bawah lonceng; billing memakai konteks tenant/tab
+  same-origin; Audit/Privasi tidak lagi diklasifikasikan renewal hanya karena
+  trial projection stale. Explicit tenant deny tetap authoritative.
+- Export laporan reguler memakai scope/filter/`dataVersion` yang sama dengan
+  layar, authenticated download, dan migration nullable `filters_json` yang
+  sudah di-allowlist.
+- Full PHP 1.315/1.315, focused 53/53, frontend 10/10, browser 6/6,
+  migration rehearsal, build/typecheck, strict readiness lokal 100/100, dan
+  audit dependensi nol lulus. Hosted CI tidak memperoleh runner karena account
+  billing gate; tidak ada step yang berjalan.
+- Status `CONFIRMED / PUSHED / LOCAL_VALIDATED / CI_BLOCKED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap release S367.
+
+## File yang berubah pada sinkronisasi SagaBook S370
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaView S364 provenance response-policy enforcement
 

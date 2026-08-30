@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-30 - SagaBook S370 context and report repair
+
+- Exact pushed source `a9199bca9914b6466cc603a9908c7668f175485b` pada
+  PR #80 memperbaiki posisi toast, tenant/tab context Subscription & Billing,
+  navigasi Audit/Privasi, serta parity layar dan export laporan reguler.
+- Tenant eksplisit inactive/expired/cancelled tetap fail-closed; export memakai
+  filter dan `dataVersion` authoritative, authenticated download, dan migration
+  nullable `filters_json` ber-checksum allowlist.
+- Full PHP 1.315/1.315, focused 53/53, frontend 10/10, browser 6/6,
+  typecheck/build, migration rehearsal, readiness lokal 100/100, dan audit nol
+  lulus. Hosted CI belum berjalan karena account-level runner billing gate.
+- Status `LOCAL_VALIDATED / CI_BLOCKED / IMPLEMENTED_NOT_DEPLOYED`;
+  production SagaBook tetap release S367 dan tidak berubah.
+
 ## 2026-08-30 - SagaView S364 provenance response-policy enforcement
 
 - Exact pushed source `2371db8e746aeaed6a76c21daa80e14bc3ff77fb`

@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 30 Agustus 2026 12:10 WIB
-Evidence status: exact main `30c343eb7d140dd3c45cded0f1a91d4527cdd44b` berstatus `CONFIRMED / MERGED / LOCAL_VALIDATED / RELEASE_ARTIFACT_READY / IMPLEMENTED_NOT_DEPLOYED`. Archive, Git bundle, metadata, dan manifest identik pada dua disk fisik; dua restore disposable serta receipt binding lulus. Production tetap exact source `b37db0810f64731e46f18d026452a6cf3f65e86c` pada immutable release `20260830042225-b37db08` dengan immediate rollback `20260829175230-435dbfd`. Verifier independen lulus 23/23, kontrak post-switch 37/37, migration pending 0, report canary 32/32, service aktif, journal error 0, serta public/security smoke 3/3. Authenticated Owner/Staff UAT mobile+desktop diterima tanpa mutasi, issue, PII, atau secret. Production berstatus `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED / BUSINESS_READY=false`; residual gate hanya pilot dua studio dan provider canary.
+Updated: 30 Agustus 2026 13:20 WIB
+Evidence status: source S370 `a9199bca9914b6466cc603a9908c7668f175485b` sudah dipush melalui PR #80 dan berstatus `CONFIRMED / PUSHED / LOCAL_VALIDATED / CI_BLOCKED / IMPLEMENTED_NOT_DEPLOYED`. Full PHP 1.315/1.315, kontrak frontend 10/10, browser report recovery 6/6, build/typecheck, migration SQLite up/rollback/reapply, strict local readiness 100/100, serta audit dependensi nol lulus. GitHub-hosted runner ditolak sebelum step karena gate billing/spending akun, sehingga CI belum terverifikasi. Production tetap exact source `b37db0810f64731e46f18d026452a6cf3f65e86c` pada immutable release `20260830042225-b37db08`; status runtime `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED / BUSINESS_READY=false` tidak berubah.
 
 ## Tujuan dokumen
 
@@ -15,6 +15,20 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
+
+- Repair konteks, laporan, billing, dan navigasi S370 pada exact pushed source
+  `a9199bca9914b6466cc603a9908c7668f175485b` memindahkan toast notifikasi baru
+  ke kanan di bawah lonceng, membawa tenant/tab/request context pada API
+  Subscription & Billing secara same-origin dan fail-closed, serta menjaga
+  navigasi Audit/Privasi dari redirect renewal yang berasal dari projection
+  trial stale. Paid-active hanya boleh mengalahkan trial `suspended` stale;
+  status tenant eksplisit `inactive`, `expired`, atau cancelled tetap menolak
+  akses. Export laporan reguler kini memakai scope UI authoritative, filter dan
+  `dataVersion`, download blob terautentikasi dengan validasi MIME/filename,
+  serta invalidasi snapshot stale. Migration nullable `filters_json` sudah
+  di-allowlist dan direhearsal up/rollback/reapply pada SQLite. Status
+  `CONFIRMED / PUSHED / LOCAL_VALIDATED / CI_BLOCKED /
+  IMPLEMENTED_NOT_DEPLOYED`; production dan data customer tidak disentuh.
 
 - Rehearsal exact-main S369 untuk source
   `30c343eb7d140dd3c45cded0f1a91d4527cdd44b` menghasilkan archive, Git

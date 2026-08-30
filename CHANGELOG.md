@@ -1,5 +1,21 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-30 - SagaBook S370 context and report repair sync
+
+- Ringkasan: menyinkronkan perbaikan posisi notifikasi, konteks tenant/tab
+  billing, navigasi Audit/Privasi, dan parity export laporan reguler.
+- Provenance: exact pushed source
+  `a9199bca9914b6466cc603a9908c7668f175485b`, PR #80; production tidak
+  diubah.
+- Evidence: full PHP 1.315/1.315 (14.702 assertion), focused PHP 53/53,
+  frontend 10/10, browser 6/6, typecheck/build/format/diff, SQLite
+  up/rollback/reapply, strict local readiness 100/100, serta audit dependensi
+  nol. GitHub-hosted runner berhenti sebelum step pada account billing gate.
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED / CI_BLOCKED /
+  IMPLEMENTED_NOT_DEPLOYED`; explicit tenant deny tetap fail-closed.
+- Dokumen terdampak: Product/changelog SagaBook, portfolio, master knowledge,
+  root changelog, dan sync status.
+
 ## 2026-08-30 - SagaView S364 provenance response-policy enforcement sync
 
 - Ringkasan: menyinkronkan validasi final URL, JSON, dan kebijakan `no-store`

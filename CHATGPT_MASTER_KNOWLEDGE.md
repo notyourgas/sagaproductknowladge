@@ -1,5 +1,18 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+SagaBook S370 exact pushed source
+`a9199bca9914b6466cc603a9908c7668f175485b` melalui PR #80 berstatus
+`CONFIRMED / PUSHED / LOCAL_VALIDATED / CI_BLOCKED /
+IMPLEMENTED_NOT_DEPLOYED`. Toast notifikasi baru berada di kanan bawah lonceng;
+API Subscription & Billing memakai tenant/tab/request context same-origin dan
+fail-closed; paid-active hanya mengalahkan trial `suspended` stale, bukan tenant
+eksplisit inactive/expired/cancelled. Export laporan reguler menyamakan scope,
+filter, dan `dataVersion` dengan layar serta memakai authenticated XLSX/CSV
+download. Full PHP 1.315/1.315, focused 53/53, frontend 10/10, browser 6/6,
+migration rehearsal, build/typecheck, readiness lokal 100/100, dan audit nol
+lulus. Hosted CI belum berjalan karena account-level runner billing gate.
+Production tetap exact release S367 dan tidak berubah.
+
 SagaView S364 exact pushed source
 `2371db8e746aeaed6a76c21daa80e14bc3ff77fb` berstatus `PUSHED /
 LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Probe provenance S344 menolak

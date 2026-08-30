@@ -1,5 +1,24 @@
 # SagaBook Changelog
 
+## 2026-08-30 - Context, reporting, billing, and navigation repair S370
+
+- Exact pushed source `a9199bca9914b6466cc603a9908c7668f175485b` melalui
+  PR #80 memperbaiki posisi toast di kanan bawah lonceng, tenant/tab context
+  Subscription & Billing, dan redirect Audit/Privasi akibat projection trial
+  stale tanpa membuka tenant fallback.
+- Export laporan reguler kini menyamakan report type, branch/range/filter, dan
+  `dataVersion` dengan layar; snapshot stale dibatalkan dan download XLSX/CSV
+  memakai request terautentikasi dengan validasi MIME serta filename.
+- Explicit tenant deny state tetap fail-closed walaupun ada subscription aktif.
+  Migration nullable `filters_json` masuk exact checksum allowlist dan lulus
+  SQLite up/rollback/reapply.
+- Full PHP 1.315/1.315 (14.702 assertion), focused PHP 53/53 (479 assertion),
+  frontend 10/10, browser 6/6, typecheck/build/format/diff, strict local
+  readiness 100/100, dan audit dependensi nol lulus. GitHub-hosted runner tidak
+  memulai step karena gate billing/spending akun.
+- Status `CONFIRMED / PUSHED / LOCAL_VALIDATED / CI_BLOCKED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap release S367 dan tidak berubah.
+
 ## 2026-08-30 - Exact-main release artifact rehearsal S369
 
 - Exact source `30c343eb7d140dd3c45cded0f1a91d4527cdd44b` menghasilkan archive,
