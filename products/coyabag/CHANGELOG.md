@@ -4,6 +4,26 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-31 - Reporting period and export integrity deployed
+
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false` dari exact
+  source `26c33f083861a0be955377d2184122a5b2ade3c5`, immutable release
+  `20260831-26c33f0`, dan rollback `20260830-22bb066`.
+- Analytics, Finance, shipping summary, ledger, dan export memakai satu periode
+  bisnis Asia/Jakarta: 7/30/90 hari atau custom range maksimal 366 hari.
+- Export mengikuti periode layar. Analytics CSV membawa lineage, summary,
+  tren, produk, dan promo; CSV Finance/shipping dilindungi dari formula
+  injection dan memakai UTF-8 BOM.
+- UI desktop/mobile menambahkan metric definition, period state, pagination,
+  loading/empty/error, announcement aksesibel, serta chart panjang tanpa
+  document overflow.
+- Reporting 12/12, shipping 7/7, Laravel 526 total/525 pass/satu controlled
+  skip, storefront 216/216, browser dua viewport, build/audit, backup,
+  readiness production+rollback 42/42, worker, HTTP dan buy-to-cart smoke lulus.
+- Shipping tetap manual untuk sembilan tujuan dan enam payment exception lama
+  tetap terbuka, sehingga `BUSINESS_READY=false`.
+
 ## 2026-08-30 - Promotion lifecycle guard deployed
 
 - Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /

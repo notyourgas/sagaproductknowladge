@@ -7,7 +7,7 @@ content COYABAG tanpa menyamakan surface live dengan commerce aktif.
 
 ## Konteks dan status bukti
 
-- Updated: 30 Agustus 2026
+- Updated: 31 Agustus 2026
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED / COMMERCE_ACTIVE`
 - Business readiness: `BLOCKED`
@@ -78,6 +78,20 @@ Pengiriman memakai tarif manual pada sembilan kota dan belum merupakan
 coverage nasional atau Delivery API aktif.
 Backup database COYABAG masih local-disk dan perlu dipindahkan ke backup offsite
 sebelum business readiness final.
+
+`CONFIRMED / PRODUCTION_DEPLOYED`: release `20260831-26c33f0`, exact source
+`26c33f083861a0be955377d2184122a5b2ade3c5`, dan rollback
+`20260830-22bb066` menyatukan reporting period Analytics, Finance, shipping
+summary, ledger, dan export pada timezone Asia/Jakarta. Operator dapat memakai
+preset 7/30/90 hari atau custom range maksimal 366 hari. Analytics CSV memuat
+summary, tren, produk, dan promo; Finance/shipping CSV memakai UTF-8 BOM serta
+formula-injection escaping. Pagination ledger, empty/error/loading state,
+metric definition, dan chart panjang responsif tersedia pada desktop/mobile.
+Reporting 12/12 (153 assertion), shipping 7/7 (65), Laravel 526 total/525 pass/
+satu controlled skip, storefront 216/216, browser dua viewport, build/audit,
+backup, migration pending nol, readiness production+rollback 42/42, worker,
+HTTP smoke, dan public buy-to-cart lulus. Tidak ada migrasi, perubahan provider,
+atau mutasi inventory.
 
 `CONFIRMED / PRODUCTION_DEPLOYED`: release `20260830-22bb066`, exact source
 `22bb06607d682284aad58bebdfca4166122de5ce`, dan rollback

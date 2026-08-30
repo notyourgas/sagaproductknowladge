@@ -15,9 +15,35 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-08-31 WIB |
 | Branch aktif | isolated exact `origin/main` worktree |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `0307fe199cd8dce8e81a6313bb3993efbc930196` |
-| Informasi terakhir disinkronkan | Correction kandidat SagaBook S378 edit pengeluaran staff pada source `5fb50f65b2aadd801a4dbb8f0d49b694268fe6a6`. |
-| Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S377 dan `BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `9faa86094b20a0bc52fafa5660a6ef348fbe7596` |
+| Informasi terakhir disinkronkan | COYABAG reporting period dan export integrity pada source `26c33f083861a0be955377d2184122a5b2ade3c5`. |
+| Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false`. |
+
+## COYABAG reporting period and export integrity
+
+- Exact source `26c33f083861a0be955377d2184122a5b2ade3c5` sudah push dan aktif
+  sebagai immutable release `20260831-26c33f0`; rollback
+  `20260830-22bb066` tersedia dan readiness keduanya 42/42.
+- Analytics, Finance, shipping summary, ledger, dan export memakai periode
+  Asia/Jakarta yang sama: 7/30/90 hari atau custom range maksimal 366 hari.
+- Analytics export memuat summary/tren/produk/promo. CSV Finance/shipping
+  memakai UTF-8 BOM dan formula-injection escaping; desktop/mobile memiliki
+  pagination, loading/empty/error, metric definition, dan no-overflow chart.
+- Reporting 12/12, shipping 7/7, Laravel 526 total, storefront 216/216,
+  browser dua viewport, build/audit, backup, worker, migration pending nol,
+  HTTP smoke, dan public buy-to-cart lulus.
+- Commerce aktif untuk controlled trial. Shipping manual sembilan tujuan dan
+  enam payment exception tetap menahan `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi COYABAG reporting integrity
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook S378 staff expense edit candidate
 

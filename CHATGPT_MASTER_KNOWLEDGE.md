@@ -1,6 +1,21 @@
 # Saga Product — Master Knowledge for ChatGPT
 
 COYABAG exact pushed source
+`26c33f083861a0be955377d2184122a5b2ade3c5` aktif pada immutable release
+`20260831-26c33f0` dengan rollback `20260830-22bb066`; readiness keduanya
+42/42. Analytics dan Finance memakai satu periode bisnis Asia/Jakarta untuk
+7/30/90 hari atau custom range maksimal 366 hari. Metrik, shipping summary,
+ledger, pagination, dan export mengikuti rentang yang sama. Analytics CSV
+memuat summary, tren, produk, dan promo; CSV Finance/shipping memakai UTF-8 BOM
+serta formula-injection escaping. Desktop/mobile memiliki loading, empty,
+error, announcement aksesibel, metric definition, dan chart panjang tanpa
+document overflow. Laravel 526 total/525 pass/satu controlled skip, storefront
+216/216, browser dua viewport, build/audit, backup, worker, migration pending
+nol, HTTP smoke, dan public buy-to-cart lulus. Commerce tetap
+`COMMERCE_ACTIVE`, tetapi enam payment exception serta shipping manual sembilan
+tujuan menahan `BUSINESS_READY=false`.
+
+COYABAG exact pushed source
 `22bb06607d682284aad58bebdfca4166122de5ce` aktif pada immutable release
 `20260830-22bb066` dengan rollback `20260830-f4a5ccd`. Promo baru selalu
 nonaktif; persentase dibatasi 1-100 dan diskon tidak dapat melebihi subtotal.

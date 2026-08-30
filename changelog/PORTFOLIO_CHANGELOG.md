@@ -1,5 +1,21 @@
 # Portfolio Changelog
 
+## 2026-08-31 - COYABAG reporting period and export integrity deployed
+
+- Exact pushed source `26c33f083861a0be955377d2184122a5b2ade3c5`
+  aktif pada immutable release `20260831-26c33f0`; rollback
+  `20260830-22bb066` tersedia dan readiness keduanya 42/42.
+- Analytics/Finance kini berbagi periode bisnis Asia/Jakarta, preset 7/30/90
+  hari, custom range maksimal 366 hari, export parity, pagination ledger, dan
+  state responsif desktop/mobile.
+- Analytics CSV memuat summary/tren/produk/promo. CSV Finance/shipping memakai
+  UTF-8 BOM dan formula-injection escaping.
+- Laravel 526, storefront 216/216, browser dua viewport, build/audit, backup,
+  worker, migration, HTTP smoke, dan public buy-to-cart lulus. Status
+  `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE /
+  BUSINESS_READY=false`; enam payment exception dan shipping manual sembilan
+  tujuan tetap menjadi batas bisnis.
+
 ## 2026-08-30 - COYABAG promotion lifecycle guard deployed
 
 - Exact pushed source `22bb06607d682284aad58bebdfca4166122de5ce`

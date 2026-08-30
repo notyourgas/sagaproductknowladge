@@ -1,5 +1,21 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-31 - COYABAG reporting period and export integrity sync
+
+- Ringkasan: menyinkronkan shared Jakarta reporting period, custom date,
+  metric/export parity, CSV safety, responsive ledger/chart, release, rollback,
+  dan evidence runtime.
+- Provenance: exact pushed source
+  `26c33f083861a0be955377d2184122a5b2ade3c5`, immutable release
+  `20260831-26c33f0`, rollback `20260830-22bb066`.
+- Evidence: reporting 12/12, shipping 7/7, Laravel 526 total, storefront
+  216/216, browser desktop/mobile, build/audit, backup, migration pending nol,
+  readiness production+rollback 42/42, dua worker, HTTP dan buy-to-cart smoke.
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false`.
+- Dokumen terdampak: Product, dossier/changelog COYABAG, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-31 - COYABAG promotion lifecycle guard sync
 
 - Ringkasan: menyinkronkan lifecycle promo server-authoritative, editor dan
