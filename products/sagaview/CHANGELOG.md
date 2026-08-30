@@ -1,5 +1,25 @@
 # SagaView Changelog
 
+## 2026-08-30 - S362 Finalize post-open custody
+
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan
+  `BUSINESS_READY=false`.
+- Before: S360/S361 memeriksa custody sebelum snapshot, tetapi file masih dapat
+  berubah pada jeda antara precheck dan pembukaan handle.
+- After: exact source `d2805429b9ecd22323cf31bca49267a30f91f288`
+  membuka file dengan sharing hanya-baca, memvalidasi ulang containment,
+  reparse point, leaf, serta hard link ketika handle aktif, lalu membaca byte.
+- Evidence: regression red 3/3 lalu green 3/3; focused S344-S362 70/70;
+  full exact-commit 74 file/328 test; parser PowerShell/pwsh;
+  format/lint/typecheck; client+SSR build; bundle 312,7 KiB dari 450 KiB;
+  npm audit nol; diff check; worktree bersih; dan remote exact.
+- Boundary: hanya harness/test/runbook dengan writer contention serta hard link
+  nyata pada filesystem disposable; sumber sintetis tetap utuh, tanpa UI/API/
+  database, data customer, deploy, atau perubahan production.
+- Next gate: authenticated manual UAT 12 gate dengan evidence sintetis
+  tersanitasi, visual review, reviewer S345, lalu S344 Finalize.
+
 ## 2026-08-30 - S361 Finalize control file link revalidation
 
 - Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /

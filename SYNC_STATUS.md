@@ -12,12 +12,34 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-30T11:12:14+07:00 |
-| Branch aktif | `codex/coyabag-admin-uiux-knowledge` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-30T11:16:00+07:00 |
+| Branch aktif | `codex/s362-sagaview-finalize-exclusive-snapshot-knowledge` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `3d6e99b9bfa03215c7b6aae400d90aab17c65b7f` |
-| Informasi terakhir disinkronkan | COYABAG inventory adjustment conflict recovery pada exact source `5b16301b30ccbbfbe9bed49d1554d7f56fa34b33`, release `20260830-5b16301`. |
-| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED / NOT_PRODUCTION_ACTIVATED`; readiness 41/42 dan `BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `11889f7b7d4978178ab594694d84e2448269b377` |
+| Informasi terakhir disinkronkan | SagaView S362 Finalize post-open custody pada exact source `d2805429b9ecd22323cf31bca49267a30f91f288`. |
+| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan `BUSINESS_READY=false`. |
+
+## SagaView S362 Finalize post-open custody
+
+- Exact source `d2805429b9ecd22323cf31bca49267a30f91f288` sudah push.
+- S344 Finalize membuka file kontrol/evidence dengan handle yang menolak
+  writer/delete, mengulang custody guard setelah open, lalu membaca byte.
+- Regression red 3/3 lalu green 3/3, focused S344-S362 70/70, full exact
+  328/328, PowerShell/pwsh, format/lint/typecheck, client+SSR build, bundle
+  budget, npm audit nol, diff check, clean, dan remote exact lulus.
+- Writer bersamaan dan hard link post-open ditolak pada filesystem disposable;
+  sumber sintetis tetap utuh. Production tidak berubah; authenticated UAT 12
+  gate dan visual review masih pending sehingga `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi SagaView S362
+
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG inventory adjustment conflict recovery
 

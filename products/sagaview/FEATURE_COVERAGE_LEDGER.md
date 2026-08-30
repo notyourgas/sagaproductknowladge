@@ -1,6 +1,24 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 30 Agustus 2026 10:12 WIB
+Evidence cut-off: 30 Agustus 2026 11:16 WIB
+
+S362 Finalize post-open custody: exact pushed source
+`d2805429b9ecd22323cf31bca49267a30f91f288` membuat S344 Finalize
+membuka file kontrol/evidence dengan handle yang menolak writer/delete,
+mengulang containment/reparse/leaf/hard-link guard saat handle masih aktif,
+lalu baru membaca byte. Celah perubahan file antara precheck dan open kini
+berhenti fail-closed.
+
+Ledger lulus: regression merah 3/3 lalu hijau 3/3; focused S344-S362 70/70;
+full exact-commit 74 file/328 test; parser Windows PowerShell/pwsh;
+format/lint/typecheck; client 2.129 modul + SSR 203 modul; bundle 312,7 KiB
+dari 450 KiB; npm audit nol; diff check; worktree bersih; serta remote exact.
+Uji Windows sintetis/disposable membuktikan writer bersamaan ditolak dan hard
+link yang muncul sesudah open dihentikan tanpa mengubah byte sumber. Boundary
+hanya tooling/test/runbook, tanpa UI/API/database, foto/path customer, deploy,
+atau mutasi production. Belum lulus: authenticated manual UAT 12 gate dan
+visual review. Status `PUSHED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; `BUSINESS_READY=false`.
 
 S361 Finalize control file link revalidation: exact pushed source
 `e8a44805dfdbf816dea63686d8a8e23c0d0f4294` membuat S344 Finalize

@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-30 - SagaView S362 Finalize post-open custody sync
+
+- Ringkasan: menyinkronkan revalidasi custody file kontrol/evidence setelah
+  handle snapshot yang menolak writer/delete dibuka.
+- Provenance: exact pushed source
+  `d2805429b9ecd22323cf31bca49267a30f91f288`; production tidak diubah.
+- Evidence: regression red 3/3 lalu green 3/3, focused S344-S362 70/70, full
+  exact 328/328, PowerShell/pwsh, format/lint/typecheck, client+SSR build,
+  bundle budget, npm audit nol, diff check, clean, dan remote exact.
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; `BUSINESS_READY=false`.
+- Dokumen terdampak: Product, feature ledger/changelog SagaView, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-08-30 - COYABAG inventory adjustment conflict recovery sync
 
 - Ringkasan: menyinkronkan recovery konflik revision adjustment Inventory,

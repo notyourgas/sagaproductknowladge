@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-30 - SagaView S362 Finalize post-open custody
+
+- Exact pushed source `d2805429b9ecd22323cf31bca49267a30f91f288`
+  membuat S344 Finalize menahan writer/delete, memvalidasi ulang custody saat
+  file kontrol/evidence sudah terbuka, lalu baru membaca snapshot byte.
+- Regression red 3/3 lalu green 3/3, focused S344-S362 70/70, full exact
+  328/328, parser PowerShell/pwsh, build/budget, audit nol, clean, dan remote
+  exact lulus; writer bersamaan serta hard link post-open ditolak pada
+  filesystem disposable.
+- Perubahan hanya harness/test/runbook. Production tidak berubah;
+  authenticated UAT dan visual review masih pending sehingga
+  `BUSINESS_READY=false`.
+
 ## 2026-08-30 - COYABAG inventory adjustment conflict recovery
 
 - Exact material source `5b16301b30ccbbfbe9bed49d1554d7f56fa34b33`
