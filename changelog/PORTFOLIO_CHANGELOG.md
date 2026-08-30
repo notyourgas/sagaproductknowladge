@@ -1,5 +1,20 @@
 # Portfolio Changelog
 
+## 2026-08-30 - COYABAG commerce activation and payment recovery console
+
+- Exact pushed source `415ab3d6676faba4e219e7c54a53801413b08542`
+  aktif pada immutable release `20260830-415ab3d`; rollback
+  `20260830-0968a83`.
+- Readiness 42/42 dan checkout `COMMERCE_ACTIVE`. Payment session recovery
+  kini permissioned, recent-authenticated, rate-limited, dan tetap fail-closed
+  untuk unknown attempt tanpa mengekspos material provider privat.
+- SagaDev controlled trial dibatasi Rp500.000 per transaksi/lima intent baru
+  per hari. Enam exception pembayaran lama menunggu rekonsiliasi operator;
+  pengiriman manual hanya mencakup sembilan kota.
+- Laravel 513 + satu controlled skip, storefront 216/216, browser Produk/
+  Pembayaran/Inventory, build/audit, migration, worker, readiness, dan public
+  smoke lulus. `BUSINESS_READY=false` untuk peluncuran nasional.
+
 ## 2026-08-30 - SagaBook S370 context and report repair
 
 - Exact pushed source `a9199bca9914b6466cc603a9908c7668f175485b` pada

@@ -7,9 +7,9 @@ content COYABAG tanpa menyamakan surface live dengan commerce aktif.
 
 ## Konteks dan status bukti
 
-- Updated: 28 Agustus 2026
+- Updated: 30 Agustus 2026
 - Delivery: `PRODUCTION_DEPLOYED`
-- Activation: `BLOCKED`
+- Activation: `PRODUCTION_ACTIVATED / COMMERCE_ACTIVE`
 - Business readiness: `BLOCKED`
 
 ## Overview produk
@@ -61,17 +61,21 @@ legal, 2FA, backup, dan transaction UAT lulus.
 
 ## SagaDev controlled trial
 
-`CONFIRMED / PRODUCTION_DEPLOYED / ACTIVATION_BLOCKED`: Saga Platform release
+`CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: Saga Platform release
 `20260828203505-bec577e` memisahkan mode pembayaran order COYABAG dari gateway
 subscription SagaBook. Adapter COYABAG memakai service account product-bound
-dengan scope create/read, callback HMAC terpisah, batas Rp100.000 per transaksi,
+dengan scope create/read, callback HMAC terpisah, batas Rp500.000 per transaksi,
 dan maksimal lima intent baru per hari. Idempotent replay tidak menghabiskan
 kuota dua kali. Signed readiness lulus, tetapi tidak ada transaksi provider yang
 dibuat saat acceptance.
 
-Readiness saat ini 40/42. Owner 2FA dan persetujuan privacy/retention sudah
-lulus; checkout publik tetap fail-closed sampai UAT 15 langkah dan release
-sign-off selesai.
+Readiness saat ini 42/42. Owner 2FA, privacy/retention, UAT 15 langkah, dan
+release sign-off sudah lulus; readiness gate enforced mengembalikan
+`COMMERCE_ACTIVE`. Payment Detail menyediakan recovery sesi yang permissioned,
+recent-authenticated, rate-limited, dan fail-closed pada unknown attempt.
+Enam exception pembayaran lama tetap terbuka untuk rekonsiliasi operator.
+Pengiriman memakai tarif manual pada sembilan kota dan belum merupakan
+coverage nasional atau Delivery API aktif.
 Backup database COYABAG masih local-disk dan perlu dipindahkan ke backup offsite
 sebelum business readiness final.
 

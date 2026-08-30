@@ -72,7 +72,7 @@ GAP-004, bukan gap implementasi warna komponen.
 | ID | Produk/area | Label | Pertanyaan atau gap | Bukti penutup |
 |---|---|---|---|---|
 | GAP-004 | SagaBook | NEEDS CONFIRMATION | Business readiness belum dibuktikan pada cohort studio nyata. | Minimal cohort onboarding, booking nyata, support observation, dan incident review. |
-| GAP-005 | COYABAG | NEEDS CONFIRMATION | Katalog final, identitas seller legal/pajak, UAT transaksi, dan release sign-off masih belum dikunci. Privacy/retention versi `2026.08-v1` dan owner 2FA sudah lulus. | Data legal final, UAT 15 langkah, release sign-off, dan transaksi terkontrol. |
+| GAP-005 | COYABAG | NEEDS CONFIRMATION | Readiness 42/42, owner 2FA, privacy/retention, UAT 15 langkah, release sign-off, dan controlled-trial commerce activation sudah lulus. Business readiness nasional masih tertahan oleh finalisasi identitas seller/legal/pajak, coverage shipping di luar sembilan kota, dan enam exception pembayaran lama. | Kunci data legal final, perluas atau batasi janji area kirim secara eksplisit, serta rekonsiliasi exception berdasarkan evidence provider tanpa blind retry. |
 | GAP-006 | Semua produk berbayar | NEEDS CONFIRMATION | Kebijakan pajak, invoice, refund, dunning, grace, dan SLA komersial lintas produk belum disatukan. | Policy founder/legal yang disetujui per produk. |
 | GAP-007 | Semua produk | NEEDS CONFIRMATION | COYABAG sudah memiliki retention report-only dan policy publik yang disetujui versi `2026.08-v1`; produk lain masih membutuhkan policy, deletion SLA, incident contact, dan subprocessor list masing-masing. | Policy per produk, owner, tanggal berlaku, approval, dan bukti publikasi. |
 | GAP-008 | SagaTech | NEEDS CONFIRMATION | V23 aktif di branded domain, tetapi business readiness belum tercapai karena seller of record, exact BOM/condition/warranty, renewal software/DNP, Linktree/PDF lama, persistensi analytics, UAT perangkat nyata, dan repository source kanonik belum ditutup. | Quotation final terverifikasi, Linktree owner UAT, dashboard/network evidence analytics, iPhone/Android dan booth UAT, serta Git remote/source push SagaTech. |
@@ -919,6 +919,15 @@ GAP-004, bukan gap implementasi warna komponen.
   saat ini.
 
 ### COYABAG
+
+- `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE /
+  BUSINESS_READY=false`: exact pushed source
+  `415ab3d6676faba4e219e7c54a53801413b08542`, release
+  `20260830-415ab3d`, rollback `20260830-0968a83`. Readiness 42/42; SagaDev
+  controlled trial dibatasi Rp500.000 per transaksi/lima intent baru per hari.
+  Shipping manual tersedia pada sembilan kota. Enam exception pembayaran lama
+  tetap dibuka untuk rekonsiliasi operator dan bukan bukti provider gagal saat
+  ini.
 
 - `NEEDS CONFIRMATION`: Tipe C, D, E, dan I beserta medianya sudah tersimpan
   sebagai draft pada release `20260826-313aa8f`, tetapi nama publik, harga, dan

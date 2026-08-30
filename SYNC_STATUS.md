@@ -12,12 +12,37 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-30T13:20:00+07:00 |
-| Branch aktif | `codex/s370-sagabook-knowledge-sync` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-30T13:45:00+07:00 |
+| Branch aktif | `codex/coyabag-production-415ab3d-knowledge` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `140b0e5a61b6d4f5039f3eb26e32c880679b352a` |
-| Informasi terakhir disinkronkan | SagaBook S370 context, reporting, billing, and navigation repair pada exact source `a9199bca9914b6466cc603a9908c7668f175485b`. |
-| Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / CI_BLOCKED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan `BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `6d67a691c927e5ad1cdaececdfe0f53f164a30ac` |
+| Informasi terakhir disinkronkan | COYABAG commerce activation dan payment recovery console pada exact source `415ab3d6676faba4e219e7c54a53801413b08542`. |
+| Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE`; `BUSINESS_READY=false`. |
+
+## COYABAG commerce activation and payment recovery console
+
+- Exact source `415ab3d6676faba4e219e7c54a53801413b08542` sudah push dan
+  aktif sebagai release `20260830-415ab3d`; rollback `20260830-0968a83`.
+- Readiness 42/42 dan checkout `COMMERCE_ACTIVE`. SagaDev controlled trial
+  dibatasi Rp500.000 per transaksi serta lima intent baru per hari.
+- Payment recovery memerlukan permission, recent auth, 2FA, rate limit, dan
+  state server yang aman; unknown attempt tetap fail-closed.
+- Enam exception pembayaran lama menunggu rekonsiliasi operator. Shipping
+  manual tersedia pada sembilan kota dan belum merupakan coverage nasional.
+- Gate ulang Laravel 513 + satu controlled skip, storefront 216/216, browser
+  Produk/Pembayaran/Inventory, build/audit, migration, worker, readiness, dan
+  public smoke lulus. `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi COYABAG
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `GAPS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook S370 context and report repair
 

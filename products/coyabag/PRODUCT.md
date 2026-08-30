@@ -1,7 +1,7 @@
 # COYABAG Product Knowledge
 
 Updated: 30 Agustus 2026
-Evidence status: production surfaces + blocked commerce activation
+Evidence status: production deployed + controlled-trial commerce active
 
 ## Tujuan dokumen
 
@@ -11,8 +11,9 @@ berada di [GAPS](../../GAPS.md#coyabag).
 
 ## Konteks
 
-Storefront/API/admin dapat live sementara payment, shipping, data final, dan
-operasi commerce tetap belum diaktifkan.
+Storefront/API/admin live dan checkout controlled trial aktif. Aktivasi ini
+belum sama dengan kesiapan bisnis nasional karena pengiriman masih manual
+terbatas dan exception pembayaran lama masih memerlukan rekonsiliasi operator.
 
 ## Ringkasan
 
@@ -59,8 +60,8 @@ Surface live tidak sama dengan transaksi commerce sudah aktif penuh.
 
 ## Status saat ini
 
-Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
-`BLOCKED`.
+Delivery: `PRODUCTION_DEPLOYED`. Activation: `PRODUCTION_ACTIVATED /
+COMMERCE_ACTIVE`. Business readiness: `BLOCKED`.
 
 - Storefront, API, dan admin sudah live di Hostinger.
 - SagaDev Managed Gateway controlled trial sudah terhubung melalui Saga
@@ -68,17 +69,25 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
   `bec577ec407c2fc8693ffea4cbb7c2adb5f70040`, dengan rollback
   `20260824104557-65f9ff4`. Satu instalasi dan satu service account scope minimum
   aktif; signed readiness serta callback fail-closed lulus. Batas trial adalah
-  Rp100.000 per transaksi dan lima payment intent baru per hari.
-- Readiness COYABAG kini 41/42 (98%). Owner 2FA dan
+  Rp500.000 per transaksi dan lima payment intent baru per hari.
+- Readiness COYABAG kini 42/42 (100%). Owner 2FA dan
   privacy/retention policy versi `2026.08-v1` sudah aktif, terverifikasi, dan
   disetujui dengan fingerprint yang cocok. Kebijakan publik memuat delapan
   bagian; audit tetap `report_only` dan tidak menghapus record.
-- Launch UAT 15 langkah sudah lulus 15/15 dan sign-off diizinkan. Checkout
-  publik tetap `PRODUCTION_READINESS_BLOCKED` hanya sampai release sign-off
-  dicatat; deployment acceptance hotfix tidak membuat payment intent baru.
-- Release aktif `20260830-5b16301` dengan exact material source
-  `5b16301b30ccbbfbe9bed49d1554d7f56fa34b33` melayani production;
-  rollback langsung `20260830-fab7a8d` tersedia. Dialog adjustment Inventory
+- Launch UAT 15 langkah dan release sign-off sudah lulus. Readiness gate tetap
+  enforced dan keputusan runtime adalah `COMMERCE_ACTIVE`.
+- Release aktif `20260830-415ab3d` dengan exact material source
+  `415ab3d6676faba4e219e7c54a53801413b08542` melayani production;
+  rollback langsung `20260830-0968a83` tersedia. Exact lineage production
+  sudah berada pada remote branch kanonik. Payment Detail kini menunjukkan
+  state sesi checkout server-authoritative, expiry, dan histori attempt aman;
+  Finance dapat menyiapkan sesi hanya dengan `payments.manage`, recent auth,
+  2FA, rate limit, serta state yang mengizinkan retry. Unknown attempt tetap
+  fail-closed dan raw response, token, serta URL privat tidak dirender.
+  Production masih memiliki enam exception pembayaran lama untuk rekonsiliasi
+  operator: tiga amount mismatch, dua unknown session, dan satu provider status
+  unavailable. Pengiriman memakai tarif manual yang siap pada sembilan kota;
+  Delivery API nasional belum diaktifkan. Dialog adjustment Inventory
   kini memulihkan konflik revision dengan snapshot saldo server read-only,
   mempertahankan jumlah dan alasan yang sudah diketik, membandingkan saldo saat
   dialog dibuka dengan saldo terbaru, lalu meminta Owner/Admin memilih
@@ -877,7 +886,8 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
   berubah.
 - Status `LOCAL_VALIDATED / MAINLINE_SYNCED / CI_VERIFIED /
   PRODUCTION_DEPLOYED`. Activation dan business readiness tetap `BLOCKED`.
-- Commerce nyata tetap ditahan oleh blocker provider/operasional.
+- Pada fase release tersebut, commerce nyata masih ditahan oleh blocker
+  provider/operasional.
 
 - Monitoring pembayaran order CoyaBag kini tersedia pada workspace SagaDev
   yang terlindungi. Saga Platform release `20260824104557-65f9ff4` menjalankan
@@ -902,22 +912,24 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
   public storefront/API/admin smoke lulus. Rollback langsung tetap
   `20260829100759-eff4f53`.
 
-## Blocker business activation
+## Residual business readiness
 
-- Credential, provider, dan controlled-trial mode pembayaran SagaDev.
-- Owner 2FA enrollment serta recovery SOP.
-- Penyelesaian checklist Launch UAT dan release sign-off operasional/security;
-  satu pembayaran nyata terkontrol sudah lulus, tetapi aktivasi publik belum.
-- SMTP/email dan notification sender production.
-- Object storage untuk media produk, konten, dan bukti pembayaran.
-- Persetujuan policy privasi dan retensi.
-- Data produk, seller identity, legal/tax, policy, dan transaction UAT final tetap
-  memerlukan keputusan owner sebelum business readiness.
+- Commerce sudah aktif dengan readiness 42/42, owner 2FA, kebijakan privasi dan
+  retensi, Launch UAT, release sign-off, email Resend, serta storage VPS yang
+  terverifikasi.
+- Enam exception pembayaran lama masih perlu direkonsiliasi memakai bukti
+  provider: tiga `amount_mismatch`, dua `payment_session_unknown`, dan satu
+  `provider_status_unavailable`.
+- Pengiriman masih memakai tarif manual untuk sembilan kota. Coverage nasional
+  atau Delivery API belum aktif dan tidak boleh diklaim.
+- Seller identity, legal/tax, serta batas layanan pengiriman perlu disahkan
+  sebagai informasi bisnis final sebelum status dinaikkan menjadi
+  `BUSINESS_READY`.
 
 ## Belum boleh diklaim
 
-- Checkout UI tidak membuktikan pembayaran live.
-- Adapter provider tidak membuktikan credential atau transaksi berhasil.
+- `COMMERCE_ACTIVE` tidak otomatis berarti seluruh exception lama sudah selesai.
+- Satu transaksi terkontrol tidak membuktikan coverage operasional massal.
 - Data dummy tidak boleh dipakai sebagai katalog production.
 
 ## Ide konten

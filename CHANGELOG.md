@@ -1,5 +1,21 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-30 - COYABAG commerce activation and payment recovery sync
+
+- Ringkasan: menyinkronkan release payment recovery console, readiness 42/42,
+  commerce activation, batas controlled trial, shipping scope, dan residual
+  payment exceptions.
+- Provenance: exact pushed source
+  `415ab3d6676faba4e219e7c54a53801413b08542`, release
+  `20260830-415ab3d`, rollback `20260830-0968a83`.
+- Evidence: Laravel 513 + satu controlled skip/4.966 assertion, storefront
+  216/216, browser Produk/Pembayaran/Inventory, build/audit, migration pending
+  nol, worker, readiness 42/42, dan public smoke lulus.
+- Klasifikasi: `CONFIRMED / PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false`.
+- Dokumen terdampak: Product, Dossier, changelog COYABAG, portfolio, master
+  knowledge, GAPS, root changelog, dan sync status.
+
 ## 2026-08-30 - SagaBook S370 context and report repair sync
 
 - Ringkasan: menyinkronkan perbaikan posisi notifikasi, konteks tenant/tab

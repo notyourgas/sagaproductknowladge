@@ -4,6 +4,27 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-30 - Commerce activation and payment recovery console deployed
+
+- Klasifikasi: `CONFIRMED / PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false`.
+- Exact source `415ab3d6676faba4e219e7c54a53801413b08542` aktif pada
+  immutable release `20260830-415ab3d`; rollback `20260830-0968a83`.
+  Branch source dan dokumentasi exact sudah dipush sampai `46e9849`.
+- Payment Detail menampilkan state sesi checkout, expiry, dan safe attempt
+  history. Recovery membutuhkan `payments.manage`, recent auth, 2FA, dan rate
+  limit; stale/unknown attempt tetap fail-closed tanpa mengekspos URL, token,
+  raw snapshot, secret, atau data customer.
+- Readiness 42/42 dan runtime `COMMERCE_ACTIVE`. SagaDev controlled trial
+  dibatasi Rp500.000 per transaksi dan lima intent baru per hari. Enam
+  exception pembayaran lama tetap perlu rekonsiliasi operator.
+- Shipping manual siap pada sembilan kota; coverage nasional dan Delivery API
+  belum aktif sehingga `BUSINESS_READY=false`.
+- Gate ulang: Laravel 513 lulus + satu controlled skip/4.966 assertion,
+  storefront 216/216, build storefront/admin, browser Produk/Pembayaran/
+  Inventory desktop-mobile, audit npm/Composer, migration pending nol, worker,
+  readiness, dan public smoke lulus.
+
 ## 2026-08-30 - Admin inventory adjustment conflict recovery deployed
 
 - Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /

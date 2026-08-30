@@ -1,5 +1,16 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+COYABAG exact pushed source
+`415ab3d6676faba4e219e7c54a53801413b08542` aktif pada immutable release
+`20260830-415ab3d` dengan rollback `20260830-0968a83`. Readiness 42/42 dan
+checkout `COMMERCE_ACTIVE`; SagaDev controlled trial dibatasi Rp500.000 per
+transaksi serta lima intent baru per hari. Payment Detail menyediakan recovery
+sesi server-authoritative dengan permission, recent auth, 2FA, rate limit, dan
+unknown-attempt fail-closed tanpa memublikasikan URL/token/raw snapshot. Enam
+exception pembayaran lama tetap perlu rekonsiliasi operator. Shipping manual
+siap pada sembilan kota, belum coverage nasional atau Delivery API aktif;
+status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+
 SagaBook S370 exact pushed source
 `a9199bca9914b6466cc603a9908c7668f175485b` melalui PR #80 berstatus
 `CONFIRMED / PUSHED / LOCAL_VALIDATED / CI_BLOCKED /
