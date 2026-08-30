@@ -13,11 +13,32 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Field | Nilai |
 |---|---|
 | Waktu pembaruan terakhir | 2026-08-30T10:10:00+07:00 |
-| Branch aktif | `codex/coyabag-admin-uiux-knowledge` dari exact `origin/main` |
+| Branch aktif | `codex/s366-post-switch-contract-knowledge` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `e2771debbf6b4e68ee6894a57258409264ab3db6` |
-| Informasi terakhir disinkronkan | COYABAG atomic bulk order processing pada exact material source `a604cfccd02a3a572f56ad9375d6ae4933215f5f`. |
-| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED / NOT_PRODUCTION_ACTIVATED`; readiness 41/42 dan `BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `c71321ce585ff73cfc72a442cea7c28cb0d54ee2` |
+| Informasi terakhir disinkronkan | SagaBook S366 post-switch activation contract pada exact kandidat `b37db0810f64731e46f18d026452a6cf3f65e86c`. |
+| Status sinkronisasi | `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; `BUSINESS_READY=false`. |
+
+## SagaBook S366 post-switch activation contract
+
+- Baseline lengkap lulus 37/37; negative matrix lulus 10/10.
+- Kontrak mengikat exact source/manifest, pola release immutable, immediate
+  rollback, 23 verifier check, public smoke, dan HSTS endpoint health.
+- Production diperiksa read-only dan tetap sehat, tetapi benar ditolak sebagai
+  activation kandidat karena source/manifest aktif masih release sebelumnya
+  dan HSTS `/up` belum aktif.
+- Production tidak diubah. Approval exact SHA, fresh encrypted backup/restore,
+  atomic deploy, post-switch verification nyata, dan UAT tetap gate.
+
+## File yang berubah pada sinkronisasi SagaBook S366
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG atomic bulk order processing
 

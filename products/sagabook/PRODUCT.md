@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 30 Agustus 2026 09:09 WIB
-Evidence status: paket persetujuan S365 mengikat exact kandidat `b37db0810f64731e46f18d026452a6cf3f65e86c` ke tree, production aktif, rollback, tiga feature commit, serta receipt S363/S364. Verifier 21/21 dan tamper matrix 8/8 lulus. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production aktif tetap exact source `435dbfd252759fd8b7d43f44af69edfb39ee2102`, release `20260829175230-435dbfd`, rollback `20260829062031-b2790d6`; fresh encrypted backup, deploy terotorisasi, UAT runtime baru, dua pilot nyata, dan provider canary masih wajib sehingga `BUSINESS_READY=false`
+Updated: 30 Agustus 2026 10:10 WIB
+Evidence status: kontrak post-switch S366 untuk exact kandidat `b37db0810f64731e46f18d026452a6cf3f65e86c` menerima fixture lengkap 37/37 dan lulus negative matrix 10/10. Production aktif tetap exact source `435dbfd252759fd8b7d43f44af69edfb39ee2102`, release `20260829175230-435dbfd`, rollback `20260829062031-b2790d6`; runtime stabil tetapi benar ditolak sebagai activation kandidat karena source/manifest masih lama dan HSTS `/up` belum aktif. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; approval exact SHA, fresh encrypted backup/restore, atomic deploy, UAT runtime, dua pilot nyata, dan provider canary masih wajib sehingga `BUSINESS_READY=false`
 
 ## Tujuan dokumen
 
@@ -15,6 +15,16 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
+
+- Kontrak post-switch S366 mengikat klaim activation kandidat ke exact source,
+  pola immutable release, immediate rollback ke release production sebelumnya,
+  23 check verifier wajib, smoke 3/3, dan HSTS endpoint health. Baseline
+  sintetis lengkap lulus 37/37 walaupun `BUSINESS_READY=false`; negative matrix
+  10/10 menolak runtime lama, drift commit/release/rollback/schema, check yang
+  hilang, HSTS yang belum aktif, mutation claim, serta overclaim deployment.
+  Pemeriksaan production read-only tetap stabil dan tanpa data customer atau
+  mutasi, tetapi sengaja tidak diterima sebagai activation kandidat. Status
+  `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
 
 - Paket persetujuan kandidat S365 mengikat exact main
   `b37db0810f64731e46f18d026452a6cf3f65e86c` ke tree Git, production aktif,
