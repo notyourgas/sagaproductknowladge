@@ -12,12 +12,38 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-30T16:25:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-30T17:21:00+07:00 |
 | Branch aktif | isolated exact `origin/main` worktree |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `310b8a7e630b570f7540010da2d8feb37bf75308` |
-| Informasi terakhir disinkronkan | COYABAG inventory movement review pada exact source `a9d0e0f255ef7d5584509b5b1c937394fcf25c85`. |
+| Baseline sebelum pembaruan | `63142decdd10568c145cb7930bf18724e0c8814e` |
+| Informasi terakhir disinkronkan | COYABAG payment exception review pada exact source `5ee96a8d160645f35cbc6549c8beb0c702077e50`. |
 | Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE`; `BUSINESS_READY=false`. |
+
+## COYABAG payment exception review
+
+- Exact source `5ee96a8d160645f35cbc6549c8beb0c702077e50` sudah push dan aktif
+  sebagai immutable release `20260830-5ee96a8`; rollback
+  `20260830-a9d0e0f` tersedia.
+- Exception queue kini memakai review public-safe dengan expected/observed
+  amount, provider, rekonsiliasi, referensi, usia, dan guidance. Raw encrypted
+  context tidak dirender; resolve memerlukan recent auth, catatan, dan
+  konfirmasi eksplisit serta tidak mengubah order menjadi paid.
+- TDD merah/hijau, focused 3/3, Laravel 517, storefront 216/216, browser
+  Payment, build/audit, backup, pending migration nol, readiness 42/42, cron,
+  dua worker, dan public smoke lulus.
+- Enam exception tetap terbuka untuk tindakan operator; shipping sembilan
+  tujuan, seller/legal/tax final, dan offsite backup menahan
+  `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi COYABAG payment exception review
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG inventory movement review
 

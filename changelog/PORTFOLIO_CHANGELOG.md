@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-30 - COYABAG payment exception review deployed
+
+- Exact pushed source `5ee96a8d160645f35cbc6549c8beb0c702077e50`
+  aktif pada immutable release `20260830-5ee96a8`; rollback
+  `20260830-a9d0e0f` tersedia.
+- Finance kini membuka review public-safe sebelum resolve exception. Nominal,
+  provider, rekonsiliasi, referensi, usia, guidance, recent auth, catatan, dan
+  konfirmasi eksplisit dijaga; resolve tidak menandai order paid.
+- Laravel 517, storefront 216/216, browser Payment desktop/mobile,
+  build/security audit, backup, readiness 42/42, worker, cron, dan public smoke
+  lulus. Enam exception tetap menunggu rekonsiliasi operator; status
+  `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE /
+  BUSINESS_READY=false`.
+
 ## 2026-08-30 - COYABAG inventory movement review deployed
 
 - Exact pushed source `a9d0e0f255ef7d5584509b5b1c937394fcf25c85`

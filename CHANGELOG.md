@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-30 - COYABAG payment exception review sync
+
+- Ringkasan: menyinkronkan guarded exception review, confirmation boundary,
+  release, rollback, dan runtime evidence terbaru.
+- Provenance: exact pushed source
+  `5ee96a8d160645f35cbc6549c8beb0c702077e50`, immutable release
+  `20260830-5ee96a8`, rollback `20260830-a9d0e0f`.
+- Evidence: TDD merah/hijau, focused 3/3, Laravel 517 total, storefront 216/216,
+  browser Payment desktop/mobile, build/audit, backup, migration pending nol,
+  readiness 42/42, cron, dua worker, dan public smoke lulus.
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false`.
+- Dokumen terdampak: Product, dossier/changelog COYABAG, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-30 - COYABAG inventory movement review sync
 
 - Ringkasan: menyinkronkan review read-only seluruh movement ledger,

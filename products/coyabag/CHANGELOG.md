@@ -4,6 +4,23 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-30 - Payment exception review deployed
+
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false` dari exact
+  source `5ee96a8d160645f35cbc6549c8beb0c702077e50`, immutable release
+  `20260830-5ee96a8`, dan rollback `20260830-a9d0e0f`.
+- Setiap exception wajib dibuka dalam panel review dengan nominal order dan
+  teramati, provider, status rekonsiliasi, referensi, usia, dan guidance. Raw
+  context terenkripsi tidak diteruskan ke UI.
+- Resolve memerlukan recent auth, catatan minimal delapan karakter, serta
+  konfirmasi pencocokan eksplisit dan tidak mengubah payment/order menjadi paid.
+- Laravel 517 total/516 pass/satu controlled skip dengan 5.092 assertion,
+  storefront 216/216, browser Payment desktop/mobile, build, Pint, audit,
+  backup, worker, readiness 42/42, migration pending nol, dan public smoke lulus.
+- Enam exception tetap terbuka untuk rekonsiliasi manusia; shipping manual
+  sembilan tujuan dan residual bisnis lain tetap menahan `BUSINESS_READY`.
+
 ## 2026-08-30 - Inventory movement review deployed
 
 - Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
