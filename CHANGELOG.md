@@ -1,5 +1,27 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-31 - SagaBook S381 staging-ready sync
+
+- Ringkasan: menyinkronkan correction wrapper Linux disposable, matrix recovery,
+  exact-main merge, artifact immutable, dan fresh backup/restore.
+- Provenance: feature source `1c44ca1636ab0c051449d799bcfd454a4544f7b8`,
+  exact main `fb55b937fe0298f737ab276395cc27eb1fb99a60`, candidate
+  `20260830234518-fb55b93`.
+- Evidence: full PHP 1.291/1.291 (14.615 assertion), focused 3/3, tooling
+  48/48, Linux matrix lengkap, build/typecheck/Pint/Bash/diff, audit
+  dependensi nol, artifact checksum, serta encrypted backup/checksum/disposable
+  restore lulus.
+- Delivery: shared release lock, upload activation, atomic switch, production
+  verifier/UAT, dan actual rollback drill belum dimulai. Production tetap S379
+  `f13d6f4ae519bb42eeae4dcd81d213a015d11767` pada release
+  `20260830223233-f13d6f4`.
+- Klasifikasi: `CONFIRMED / MERGED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  RELEASE_ARTIFACT_READY / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
+- Dokumen terdampak: Product, ledger/changelog SagaBook, portfolio, root
+  changelog, dan sync status. Master knowledge tidak berubah karena tidak ada
+  perubahan fitur, positioning, pricing, atau runtime production.
+
 ## 2026-08-31 - COYABAG media library operations sync
 
 - Ringkasan: menyinkronkan Media Library Operations, deletion guard, release,

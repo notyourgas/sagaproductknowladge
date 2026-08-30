@@ -14,6 +14,22 @@ migration compatibility, verifier 23/23, report canary 32/32, migration pending
 UAT read-only lulus. Pilot dua studio dan provider canary tetap residual gate,
 sehingga `BUSINESS_READY=false`.
 
+Correction harness S381 telah `CONFIRMED / MERGED / SOURCE_PUSHED /
+LOCAL_VALIDATED / RELEASE_ARTIFACT_READY / STAGING_READY /
+IMPLEMENTED_NOT_DEPLOYED` pada feature source
+`1c44ca1636ab0c051449d799bcfd454a4544f7b8` dan exact main
+`fb55b937fe0298f737ab276395cc27eb1fb99a60`. Fixture red membuktikan recursive
+`ERR` trap pada expected-failure capture; implementasi final menonaktifkan trap
+hanya selama capture lalu memulihkannya. Transform `COMPAT_CURRENT` juga
+dijalankan sebelum `CURRENT` agar prefix tidak bertabrakan. Matrix Linux
+disposable lulus happy path, lock contention, partial pointer, maintenance,
+journal sentinel/error/ambiguous/unavailable, accepted reactivation, dan
+cleanup tanpa production path atau shared lock. Full exact-main 1.291/1.291
+(14.615 assertion), focused 3/3 (70 assertion), tooling 48/48,
+build/typecheck/Pint/Bash/diff, dan audit dependensi nol lulus. Immutable
+candidate serta fresh encrypted backup/checksum/disposable restore siap;
+atomic switch tetap HOLD dan production tetap S379.
+
 Hardening rollback drill S380 telah `CONFIRMED / MERGED / SOURCE_PUSHED /
 LOCAL_VALIDATED / RELEASE_PREPARATION_BLOCKED / IMPLEMENTED_NOT_DEPLOYED`
 pada feature source `47d7591ffc8cc31667f7b280765c950c427216b7` dan exact
@@ -45,11 +61,13 @@ lulus. Immutable release, backup/restore, verifier 23/23, smoke/security 3/3,
 authenticated Owner/Staff UAT, dan rollback drill aktual juga lulus.
 `BUSINESS_READY=false` sampai pilot dua studio dan provider canary selesai.
 
-Gap READY berikutnya: perbaiki kontrol `ERR` trap pada wrapper rehearsal Linux
-disposable agar exit happy-path dapat direkam public-safe tanpa menutupi output
-harness, lalu ulang matrix lock contention, partial pointer, maintenance,
-journal failure, dan accepted reactivation. Maksimal correction cycle baru
-sesuai approval; artifact/deploy tetap fail-closed sampai receipt hijau.
+Gap READY berikutnya: setelah jalur release bersama dinyatakan bebas, verifikasi
+ulang exact main, freshness backup, checksum artifact, dan health production,
+lalu lanjutkan guarded activation S381 atau batalkan artifact bila main sudah
+bergerak. Historical all-batch SQLite rollback juga memiliki satu baseline
+compatibility finding lama; tidak ada migration delta S379 ke S381, tetapi
+finding itu perlu slice terpisah sebelum dijadikan gate rollback seluruh
+sejarah.
 
 Pada tahap kandidat, edit pengeluaran staff S378 telah `CONFIRMED /
 SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED` pada exact source
