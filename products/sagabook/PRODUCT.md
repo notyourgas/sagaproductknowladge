@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
 Updated: 31 Agustus 2026 WIB
-Evidence status: kandidat S378 pada source `5fb50f65b2aadd801a4dbb8f0d49b694268fe6a6` telah dipush dan tervalidasi lokal. Staff dapat mengedit pengeluaran yang ia input sendiri sebelum closing tanggal/cabang tersebut disubmit; provenance pencatat, optimistic lock, audit before/after, dan ledger server-authoritative tetap dijaga. Tabel detail langsung merekonsiliasi hasil mutasi otoritatif, mengembalikan fokus keyboard ke tombol edit, dan menolak double-submit sinkron. Data legacy tanpa identitas pencatat terverifikasi tidak dibackfill secara spekulatif dan tetap terkunci. Full PHP 1.320/1.320 (14.743 assertion), Playwright staff mobile+desktop 2/2, frontend 6/6, typecheck/build/diff, serta gate focused sebelumnya lulus. Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap exact cumulative source S377 `6489030c0cb51e6aa9dafd03a704d628c10f2cad` pada release `20260830162300-6489030`, dan `BUSINESS_READY=false`.
+Evidence status: S378 aktif pada exact cumulative source `561d48d1691cd264919a9ff80dbbd0e918b2b4f5`, immutable release `20260830212427-561d48d`, dengan rollback S377 `20260830162300-6489030`. Staff dapat mengedit pengeluaran yang ia input sendiri sebelum closing tanggal/cabang tersebut disubmit; provenance pencatat, optimistic lock, audit before/after, dan ledger server-authoritative tetap dijaga. Full exact-main 1.320/1.320 (14.744 assertion), encrypted backup dan disposable restore, artifact immutable, migration compatibility, atomic switch, verifier 23/23, authenticated Owner/Staff UAT read-only, serta rollback drill aktual lulus. Status `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED / BUSINESS_READY=false`.
 
 ## Tujuan dokumen
 
@@ -16,6 +16,19 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
 
+- Exact cumulative source S378
+  `561d48d1691cd264919a9ff80dbbd0e918b2b4f5` aktif pada immutable release
+  `20260830212427-561d48d`; rollback langsung S377
+  `20260830162300-6489030` tersedia, sempat diaktifkan dalam rollback drill,
+  terbukti sehat, lalu S378 direaktivasi. Fresh backup terenkripsi dengan
+  checksum dan disposable restore, artifact archive/bundle immutable,
+  migration up/rollback/reapply compatibility, full exact-main 1.320/1.320
+  (14.744 assertion), verifier 23/23, report canary 32/32, migration pending 0,
+  service/journal, public/security smoke 3/3, serta authenticated Owner/Staff
+  UAT read-only lulus tanpa mutasi atau secret. Status `PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / UAT_ACCEPTED / BUSINESS_READY=false`; pilot dua studio
+  dan provider canary tetap residual gate.
+
 - Kandidat S378 pada exact pushed source
   `5fb50f65b2aadd801a4dbb8f0d49b694268fe6a6` menambahkan aksi edit pada
   pengeluaran milik staff sendiri. Nominal, metode pembayaran, kategori, dan
@@ -27,9 +40,9 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   dapat diedit dari alur staff dan memerlukan alur koreksi terkontrol. UI
   menggabungkan respons mutasi otoritatif sampai proyeksi laporan menyusul,
   menjaga focus-return dialog, dan mencegah request ganda pada double-click.
-  Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED`;
-  production tidak berubah.
+  Status pada tahap kandidat `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; kandidat ini kemudian masuk ke exact cumulative
+  release S378 yang tercatat di atas.
 
 - Exact cumulative source S377
   `6489030c0cb51e6aa9dafd03a704d628c10f2cad` telah aktif pada immutable

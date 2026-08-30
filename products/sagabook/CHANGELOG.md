@@ -1,5 +1,23 @@
 # SagaBook Changelog
 
+## 2026-08-31 - Staff expense edit S378 production activation
+
+- Exact cumulative source `561d48d1691cd264919a9ff80dbbd0e918b2b4f5`
+  aktif pada immutable release `20260830212427-561d48d`; rollback langsung
+  S377 `20260830162300-6489030` tersedia dan kompatibel.
+- Full exact-main 1.320/1.320 (14.744 assertion), focused/backend/frontend,
+  Playwright Staff mobile+desktop, build/typecheck/Pint, audit dependensi nol,
+  migration rollback/reapply, artifact immutable, fresh encrypted backup dan
+  disposable restore lulus.
+- Atomic switch, verifier 23/23, report canary 32/32, migration pending 0,
+  service/journal, public/security smoke 3/3, dan authenticated Owner/Staff UAT
+  read-only lulus tanpa mutasi, PII, atau secret.
+- Rollback drill aktual mengaktifkan S377, memverifikasi health, lalu
+  mereaktivasi S378 dengan health, service, journal, dan migration tetap hijau.
+- Status `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / UAT_ACCEPTED / BUSINESS_READY=false`; pilot dua studio
+  dan provider canary tetap residual gate.
+
 ## 2026-08-31 - Staff edit own expense before closing S378
 
 - Exact cumulative candidate source `5fb50f65b2aadd801a4dbb8f0d49b694268fe6a6`

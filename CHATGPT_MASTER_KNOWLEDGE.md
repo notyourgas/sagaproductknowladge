@@ -31,9 +31,10 @@ guard diperbaiki dan exact artifact yang sama berhasil dipromosikan. Commerce
 tetap `COMMERCE_ACTIVE`, tetapi shipping manual sembilan tujuan dan enam
 exception pembayaran menahan `BUSINESS_READY=false`.
 
-SagaBook kandidat S378 source
-`5fb50f65b2aadd801a4dbb8f0d49b694268fe6a6` sudah dipush dan tervalidasi
-lokal. Staff dapat mengedit nominal, metode pembayaran, kategori, dan catatan
+SagaBook S378 exact cumulative source
+`561d48d1691cd264919a9ff80dbbd0e918b2b4f5` aktif pada immutable release
+`20260830212427-561d48d` dengan rollback S377
+`20260830162300-6489030`. Staff dapat mengedit nominal, metode pembayaran, kategori, dan catatan
 pengeluaran yang ia input sendiri selama closing tanggal/cabang belum
 disubmit. Tanggal, cabang, dan creator immutable; backend menjaga tenant,
 branch, ownership, reversal, optimistic version, mutex closing, ledger
@@ -43,8 +44,12 @@ nama. Full PHP 1.320/1.320 (14.743 assertion), focused 47/47, frontend 6/6,
 Playwright Staff mobile+desktop 2/2, build/typecheck/migration rehearsal, dan
 audit dependency lulus. Tabel detail merekonsiliasi hasil mutasi otoritatif,
 dialog memulihkan fokus, dan double-submit ditolak. Status
-`CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
-production tetap S377 dan `BUSINESS_READY=false`.
+`CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+UAT_ACCEPTED / BUSINESS_READY=false`. Full exact-main 1.320/1.320 (14.744
+assertion), backup terenkripsi dan disposable restore, artifact immutable,
+migration compatibility, verifier 23/23, authenticated Owner/Staff UAT
+read-only, serta rollback drill aktual S377 -> S378 lulus. Pilot dua studio dan
+provider canary tetap residual gate.
 
 SagaBook S377 exact cumulative source
 `6489030c0cb51e6aa9dafd03a704d628c10f2cad` aktif pada immutable release

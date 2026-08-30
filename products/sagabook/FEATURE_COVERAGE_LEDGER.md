@@ -2,8 +2,20 @@
 
 Evidence cut-off: 31 Agustus 2026 WIB
 
-Kandidat edit pengeluaran staff S378 telah `CONFIRMED / SOURCE_PUSHED /
-LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED` pada exact source
+Exact cumulative source S378
+`561d48d1691cd264919a9ff80dbbd0e918b2b4f5` telah
+`PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED` pada immutable
+release `20260830212427-561d48d`; rollback S377
+`20260830162300-6489030` tersedia, kompatibel, dan lulus rollback drill aktual
+sebelum S378 direaktivasi. Full exact-main 1.320/1.320 (14.744 assertion),
+artifact immutable, fresh encrypted backup/checksum/disposable restore,
+migration compatibility, verifier 23/23, report canary 32/32, migration pending
+0, service/journal, public/security smoke 3/3, serta authenticated Owner/Staff
+UAT read-only lulus. Pilot dua studio dan provider canary tetap residual gate,
+sehingga `BUSINESS_READY=false`.
+
+Pada tahap kandidat, edit pengeluaran staff S378 telah `CONFIRMED /
+SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED` pada exact source
 `5fb50f65b2aadd801a4dbb8f0d49b694268fe6a6`. Staff hanya dapat mengedit row
 pengeluaran miliknya sendiri sebelum closing tanggal/cabang disubmit; nominal,
 metode pembayaran, kategori, dan catatan editable, sedangkan tanggal, cabang,
@@ -14,7 +26,8 @@ legacy tanpa creator ID tetap terkunci dan tidak menerima backfill berbasis
 nama. Full PHP 1.320/1.320 (14.743 assertion), focused reporting/closing 47/47
 (324 assertion), baseline+expense 16/16 (165 assertion), frontend 6/6,
 typecheck/build/Pint/diff, migration partial-schema rollback/reapply, dan audit
-Composer/npm nol lulus. Production tetap exact S377 dan tidak berubah.
+Composer/npm nol lulus. Kandidat ini kemudian masuk ke exact cumulative
+release S378 yang tercatat di atas.
 
 Exact cumulative source S377
 `6489030c0cb51e6aa9dafd03a704d628c10f2cad` telah

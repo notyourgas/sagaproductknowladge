@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-31 - SagaBook S378 production activation
+
+- Exact cumulative source `561d48d1691cd264919a9ff80dbbd0e918b2b4f5`
+  aktif pada immutable release `20260830212427-561d48d`; rollback S377
+  `20260830162300-6489030` tersedia dan lulus drill aktual sebelum S378
+  direaktivasi.
+- Staff expense own-row edit kini production-active dengan ownership,
+  optimistic lock, closing mutex, ledger lineage, audit, dan legacy-row guard.
+- Full exact-main 1.320/1.320, backup/restore, artifact, migration, verifier
+  23/23, canary 32/32, smoke/security 3/3, service/journal, dan authenticated
+  Owner/Staff UAT lulus. Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+  UAT_ACCEPTED / BUSINESS_READY=false`.
+
 ## 2026-08-31 - COYABAG reporting period and export integrity deployed
 
 - Exact pushed source `26c33f083861a0be955377d2184122a5b2ade3c5`

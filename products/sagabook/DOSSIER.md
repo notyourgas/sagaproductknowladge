@@ -7,6 +7,18 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Exact cumulative source S378
+  `561d48d1691cd264919a9ff80dbbd0e918b2b4f5` aktif pada immutable release
+  `20260830212427-561d48d`, dengan rollback S377
+  `20260830162300-6489030`. Full exact-main 1.320/1.320 (14.744 assertion),
+  artifact immutable, encrypted backup/checksum/disposable restore, migration
+  compatibility, atomic switch, verifier 23/23, report canary 32/32,
+  migration pending 0, service/journal, public/security smoke 3/3, dan
+  authenticated Owner/Staff UAT read-only lulus. Rollback drill aktual
+  mengaktifkan S377 lalu mereaktivasi S378 dengan health tetap hijau. Status
+  `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED /
+  BUSINESS_READY=false`; pilot dua studio dan provider canary belum ditutup.
+
 - Kandidat S378 `5fb50f65b2aadd801a4dbb8f0d49b694268fe6a6`
   telah dipush dan tervalidasi lokal. Pada Laporan/Pengeluaran, staff mendapat
   aksi edit hanya untuk pengeluaran yang dibuat oleh ID akunnya sendiri dan
@@ -21,9 +33,9 @@ dalam satu dokumen public-safe.
   build/typecheck/diff, migration partial-state dan rollback/reapply, serta
   audit dependency nol lulus. Tabel detail menggabungkan respons mutasi
   otoritatif, dialog mengembalikan fokus ke tombol pemicu, dan mutex frontend
-  menolak double-submit sinkron. Status `CONFIRMED /
-  SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
-  tetap S377.
+  menolak double-submit sinkron. Status pada tahap kandidat `CONFIRMED /
+  SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; kandidat ini
+  kemudian masuk ke exact cumulative release S378 yang tercatat di atas.
 
 - Exact cumulative source S377
   `6489030c0cb51e6aa9dafd03a704d628c10f2cad` aktif pada immutable release

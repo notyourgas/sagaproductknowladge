@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-31 - SagaBook S378 production activation sync
+
+- Ringkasan: menyinkronkan staff expense own-row edit, release exact-main,
+  backup/restore, migration, authenticated UAT, dan rollback drill aktual.
+- Provenance: source `561d48d1691cd264919a9ff80dbbd0e918b2b4f5`,
+  release `20260830212427-561d48d`, rollback `20260830162300-6489030`.
+- Evidence: full exact-main 1.320/1.320 (14.744 assertion), verifier 23/23,
+  report canary 32/32, public/security smoke 3/3, service/journal, Owner/Staff
+  UAT read-only, dan rollback S377 -> reaktivasi S378 lulus.
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / UAT_ACCEPTED / BUSINESS_READY=false`.
+- Dokumen terdampak: Product, Dossier, ledger/changelog SagaBook, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-08-31 - COYABAG reporting period and export integrity sync
 
 - Ringkasan: menyinkronkan shared Jakarta reporting period, custom date,

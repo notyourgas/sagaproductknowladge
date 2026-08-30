@@ -15,9 +15,33 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-08-31 WIB |
 | Branch aktif | isolated exact `origin/main` worktree |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `9faa86094b20a0bc52fafa5660a6ef348fbe7596` |
-| Informasi terakhir disinkronkan | COYABAG reporting period dan export integrity pada source `26c33f083861a0be955377d2184122a5b2ade3c5`. |
-| Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `9155dcb80350db98d709f373804a85c33163eda5` |
+| Informasi terakhir disinkronkan | SagaBook S378 production activation pada source `561d48d1691cd264919a9ff80dbbd0e918b2b4f5`. |
+| Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED / BUSINESS_READY=false`. |
+
+## SagaBook S378 production activation
+
+- Exact cumulative source `561d48d1691cd264919a9ff80dbbd0e918b2b4f5`
+  aktif pada release `20260830212427-561d48d`; rollback S377
+  `20260830162300-6489030` tersedia dan lulus actual rollback drill sebelum
+  S378 direaktivasi.
+- Full exact-main 1.320/1.320 (14.744 assertion), artifact immutable, fresh
+  encrypted backup/checksum/disposable restore, migration compatibility,
+  verifier 23/23, report canary 32/32, migration pending 0, service/journal,
+  smoke/security 3/3, dan authenticated Owner/Staff UAT read-only lulus.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED /
+  BUSINESS_READY=false`; pilot dua studio dan provider canary tetap residual.
+
+## File yang berubah pada sinkronisasi SagaBook S378 production
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG reporting period and export integrity
 
