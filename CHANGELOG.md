@@ -1,5 +1,23 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-31 - SagaBook S380 rollback drill hardening sync
+
+- Ringkasan: menyinkronkan harness rollback approval-gated, release lock,
+  backup/restore binding, fail-safe accepted reactivation, dan koreksi
+  false-negative journal kosong.
+- Provenance: exact pushed source
+  `47d7591ffc8cc31667f7b280765c950c427216b7`; production tetap exact source
+  `f13d6f4ae519bb42eeae4dcd81d213a015d11767` pada release
+  `20260830223233-f13d6f4`.
+- Evidence: focused 2/2 (49 assertion), release-hardening 20/20 (300
+  assertion), full PHP 1.323/1.323 (14.812 assertion), build/typecheck,
+  Bash syntax, Pint/diff, serta audit Composer/OSV/npm nol.
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
+- Dokumen terdampak: Product, ledger/changelog SagaBook, portfolio, root
+  changelog, dan sync status. Master knowledge tidak berubah karena tidak ada
+  perubahan fitur, positioning, pricing, atau status runtime.
+
 ## 2026-08-31 - COYABAG content publication control sync
 
 - Ringkasan: menyinkronkan Content Publication Control, state editor, release,

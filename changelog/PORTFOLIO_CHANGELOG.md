@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-31 - SagaBook S380 rollback drill hardening candidate
+
+- Exact pushed source `47d7591ffc8cc31667f7b280765c950c427216b7`
+  menambahkan harness rollback production approval-gated, lock eksklusif,
+  provenance accepted/rollback, backup/restore binding, migration parity,
+  atomic pointer switch, fail-safe reactivation, smoke, service, dan journal.
+- Journal kosong tidak lagi menjadi false-negative; quiet mode dan helper
+  defense-in-depth mempertahankan error nyata serta menolak output ambigu.
+- Full PHP 1.323/1.323, focused 2/2, release-hardening 20/20, build/typecheck,
+  Bash syntax, format/diff, dan audit dependensi nol lulus. Status
+  `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+  tetap S379 dan `BUSINESS_READY=false`.
+
 ## 2026-08-31 - COYABAG content publication control deployed
 
 - Exact pushed source `15c2daaaaffaa21fc106999fa81104d449024830`

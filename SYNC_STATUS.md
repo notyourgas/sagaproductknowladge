@@ -15,9 +15,32 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-08-31 WIB |
 | Branch aktif | isolated exact `origin/main` worktree |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `b3151948b7b8dd0874a1496922f92d2b2bad03c6` |
-| Informasi terakhir disinkronkan | COYABAG Content Publication Control aktif pada exact source `15c2daaaaffaa21fc106999fa81104d449024830` dan release `20260831-15c2daa`. |
-| Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `db6b4a1aec6401e1fb8f403ef625b0ea46e852c6` |
+| Informasi terakhir disinkronkan | SagaBook S380 rollback drill hardening pada exact pushed source `47d7591ffc8cc31667f7b280765c950c427216b7`; production tetap S379. |
+| Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`. |
+
+## SagaBook S380 rollback drill hardening
+
+- Harness production baru mewajibkan approval, root, release lock eksklusif,
+  exact accepted/rollback provenance, backup terenkripsi/checksum/disposable
+  restore binding, migration parity, atomic pointer switch, dan fail-safe
+  accepted reactivation.
+- Journal quiet mode dan helper defense-in-depth memperbaiki false-negative
+  output kosong tanpa menyembunyikan baris error nyata atau output ambigu.
+- Source `47d7591ffc8cc31667f7b280765c950c427216b7` telah push dan local-validated;
+  production tetap source S379 `f13d6f4ae519bb42eeae4dcd81d213a015d11767`
+  pada release `20260830223233-f13d6f4`.
+- Full PHP 1.323/1.323 (14.812 assertion), focused/release-hardening,
+  build/typecheck, Bash syntax, format/diff, dan audit dependensi nol lulus.
+
+## File yang berubah pada sinkronisasi SagaBook S380
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG content publication control
 
