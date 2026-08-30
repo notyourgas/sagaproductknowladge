@@ -15,9 +15,41 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-08-31 WIB |
 | Branch aktif | isolated exact `origin/main` worktree |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `83a0b45ca276b9f0320cfbc9a1a698174df5a4ba` |
-| Informasi terakhir disinkronkan | COYABAG promotion lifecycle guard pada source `22bb06607d682284aad58bebdfca4166122de5ce`. |
-| Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `0307fe199cd8dce8e81a6313bb3993efbc930196` |
+| Informasi terakhir disinkronkan | Correction kandidat SagaBook S378 edit pengeluaran staff pada source `5fb50f65b2aadd801a4dbb8f0d49b694268fe6a6`. |
+| Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S377 dan `BUSINESS_READY=false`. |
+
+## SagaBook S378 staff expense edit candidate
+
+- Staff dapat mengedit nominal, metode pembayaran, kategori, dan catatan pada
+  own-row sebelum closing tanggal/cabang disubmit. Tanggal, cabang, creator,
+  tenant/branch scope, reversal, optimistic version, serta mutex closing tetap
+  fail-closed.
+- Ledger mempertahankan `occurred_at` asli dan menyimpan koreksi melalui
+  timestamp/audit terpisah. Index provenance diperbaiki independen pada partial
+  schema dan lulus up, rollback, serta reapply.
+- Row legacy tanpa creator ID tidak editable dan tidak dibackfill berdasarkan
+  nama staff.
+- Tabel detail menggabungkan hasil mutasi otoritatif sambil menunggu proyeksi
+  laporan, dialog mengembalikan fokus keyboard, dan submit memakai mutex
+  sinkron untuk mencegah request ganda.
+- Full PHP 1.320/1.320, focused 47/47, baseline+expense 16/16, frontend 6/6,
+  authenticated Staff Playwright mobile+desktop 2/2, typecheck/build/diff,
+  migration rehearsal, dan audit dependency nol lulus.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak
+  berubah dan authenticated Staff UAT setelah deployment masih diperlukan.
+
+## File yang berubah pada sinkronisasi SagaBook S378
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `DECISIONS.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG promotion lifecycle guard
 
@@ -39,35 +71,6 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `products/coyabag/PRODUCT.md`
 - `products/coyabag/DOSSIER.md`
 - `products/coyabag/CHANGELOG.md`
-- `changelog/PORTFOLIO_CHANGELOG.md`
-- `CHATGPT_MASTER_KNOWLEDGE.md`
-- `CHANGELOG.md`
-- `SYNC_STATUS.md`
-
-## SagaBook S378 staff expense edit candidate
-
-- Staff dapat mengedit nominal, metode pembayaran, kategori, dan catatan pada
-  own-row sebelum closing tanggal/cabang disubmit. Tanggal, cabang, creator,
-  tenant/branch scope, reversal, optimistic version, serta mutex closing tetap
-  fail-closed.
-- Ledger mempertahankan `occurred_at` asli dan menyimpan koreksi melalui
-  timestamp/audit terpisah. Index provenance diperbaiki independen pada partial
-  schema dan lulus up, rollback, serta reapply.
-- Row legacy tanpa creator ID tidak editable dan tidak dibackfill berdasarkan
-  nama staff.
-- Full PHP 1.320/1.320, focused 47/47, baseline+expense 16/16, frontend 6/6,
-  typecheck/build/format/diff, migration rehearsal, dan audit dependency nol
-  lulus.
-- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak
-  berubah dan authenticated Staff UAT setelah deployment masih diperlukan.
-
-## File yang berubah pada sinkronisasi SagaBook S378
-
-- `products/sagabook/PRODUCT.md`
-- `products/sagabook/DOSSIER.md`
-- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
-- `products/sagabook/CHANGELOG.md`
-- `DECISIONS.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `CHANGELOG.md`

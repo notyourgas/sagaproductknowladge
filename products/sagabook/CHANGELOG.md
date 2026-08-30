@@ -2,7 +2,7 @@
 
 ## 2026-08-31 - Staff edit own expense before closing S378
 
-- Exact feature source `cbaa5dc4f89b2ae9c48fd24d748cbe3dcc55c2f8`
+- Exact cumulative candidate source `5fb50f65b2aadd801a4dbb8f0d49b694268fe6a6`
   sudah dipush pada branch `codex/s378-sagabook-staff-expense-edit` dan
   berbasiskan exact main `6489030c0cb51e6aa9dafd03a704d628c10f2cad`.
 - Staff dapat mengedit nominal, metode pembayaran, kategori, dan catatan pada
@@ -14,6 +14,11 @@
   pada partial schema dan lulus up, rollback, serta reapply.
 - Row legacy tanpa creator ID tetap terkunci; tidak ada backfill berbasis nama
   staff dan jangan mengklaim semua pengeluaran historis editable.
+- Correction round menutup stale transaction-page UI dengan merge respons
+  mutasi otoritatif, focus-return dialog edit, dan mutex double-submit.
+- Acceptance authenticated Staff pada viewport 390x844 dan 1440x900 lulus
+  2/2, termasuk create, edit, field immutable, forced-colors, reduced-motion,
+  no-overflow, keyboard focus, dan satu request update pada double-click.
 - Full PHP 1.320/1.320 (14.743 assertion), focused 47/47 (324 assertion),
   baseline+expense 16/16 (165 assertion), frontend 6/6, typecheck/build/Pint,
   diff-check, dan audit Composer/npm nol lulus.

@@ -7,7 +7,7 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Kandidat S378 `cbaa5dc4f89b2ae9c48fd24d748cbe3dcc55c2f8`
+- Kandidat S378 `5fb50f65b2aadd801a4dbb8f0d49b694268fe6a6`
   telah dipush dan tervalidasi lokal. Pada Laporan/Pengeluaran, staff mendapat
   aksi edit hanya untuk pengeluaran yang dibuat oleh ID akunnya sendiri dan
   hanya sebelum closing tanggal/cabang disubmit. Field yang dapat dikoreksi
@@ -17,8 +17,11 @@ dalam satu dokumen public-safe.
   mempertahankan waktu kejadian awal, dan audit menyimpan before/after serta
   waktu edit. Row legacy tanpa creator ID sengaja fail-closed, bukan dibackfill
   dari nama staff. Full PHP 1.320/1.320 (14.743 assertion), focused 47/47,
-  frontend 6/6, build/typecheck/format/diff, migration partial-state dan
-  rollback/reapply, serta audit dependency nol lulus. Status `CONFIRMED /
+  frontend 6/6, Playwright authenticated Staff mobile+desktop 2/2,
+  build/typecheck/diff, migration partial-state dan rollback/reapply, serta
+  audit dependency nol lulus. Tabel detail menggabungkan respons mutasi
+  otoritatif, dialog mengembalikan fokus ke tombol pemicu, dan mutex frontend
+  menolak double-submit sinkron. Status `CONFIRMED /
   SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
   tetap S377.
 

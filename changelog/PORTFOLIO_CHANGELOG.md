@@ -20,11 +20,14 @@
 
 ## 2026-08-31 - SagaBook staff expense edit candidate pushed
 
-- Source `cbaa5dc4f89b2ae9c48fd24d748cbe3dcc55c2f8` menambahkan edit
+- Source `5fb50f65b2aadd801a4dbb8f0d49b694268fe6a6` menambahkan edit
   pengeluaran own-row sebelum closing, dengan creator identity, tenant/cabang,
   optimistic version, closing mutex, ledger lineage, dan audit fail-closed.
 - Hanya nominal, metode, kategori, dan catatan yang editable. Data legacy tanpa
   creator ID tetap terkunci dan tidak dibackfill dari nama staff.
+- Correction UI merekonsiliasi respons mutasi ke tabel detail, memulihkan
+  fokus keyboard, dan menolak double-submit; Playwright Staff mobile+desktop
+  lulus 2/2.
 - Full PHP 1.320/1.320, focused 47/47, frontend 6/6, build/typecheck/format,
   migration rehearsal, diff, serta audit dependency lulus. Status
   `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production

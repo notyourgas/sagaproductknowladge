@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
 Updated: 31 Agustus 2026 WIB
-Evidence status: kandidat S378 pada source `cbaa5dc4f89b2ae9c48fd24d748cbe3dcc55c2f8` telah dipush dan tervalidasi lokal. Staff dapat mengedit pengeluaran yang ia input sendiri sebelum closing tanggal/cabang tersebut disubmit; provenance pencatat, optimistic lock, audit before/after, dan ledger server-authoritative tetap dijaga. Data legacy tanpa identitas pencatat terverifikasi tidak dibackfill secara spekulatif dan tetap terkunci. Full PHP 1.320/1.320 (14.743 assertion), focused reporting/closing 47/47 (324 assertion), baseline+expense 16/16 (165 assertion), frontend 6/6, typecheck/build/format/diff, serta audit Composer/npm nol lulus. Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap exact cumulative source S377 `6489030c0cb51e6aa9dafd03a704d628c10f2cad` pada release `20260830162300-6489030`, dan `BUSINESS_READY=false`.
+Evidence status: kandidat S378 pada source `5fb50f65b2aadd801a4dbb8f0d49b694268fe6a6` telah dipush dan tervalidasi lokal. Staff dapat mengedit pengeluaran yang ia input sendiri sebelum closing tanggal/cabang tersebut disubmit; provenance pencatat, optimistic lock, audit before/after, dan ledger server-authoritative tetap dijaga. Tabel detail langsung merekonsiliasi hasil mutasi otoritatif, mengembalikan fokus keyboard ke tombol edit, dan menolak double-submit sinkron. Data legacy tanpa identitas pencatat terverifikasi tidak dibackfill secara spekulatif dan tetap terkunci. Full PHP 1.320/1.320 (14.743 assertion), Playwright staff mobile+desktop 2/2, frontend 6/6, typecheck/build/diff, serta gate focused sebelumnya lulus. Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap exact cumulative source S377 `6489030c0cb51e6aa9dafd03a704d628c10f2cad` pada release `20260830162300-6489030`, dan `BUSINESS_READY=false`.
 
 ## Tujuan dokumen
 
@@ -17,15 +17,18 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 ## Fitur terbaru
 
 - Kandidat S378 pada exact pushed source
-  `cbaa5dc4f89b2ae9c48fd24d748cbe3dcc55c2f8` menambahkan aksi edit pada
+  `5fb50f65b2aadd801a4dbb8f0d49b694268fe6a6` menambahkan aksi edit pada
   pengeluaran milik staff sendiri. Nominal, metode pembayaran, kategori, dan
   catatan dapat diperbaiki selama closing tanggal/cabang belum disubmit;
   tanggal, cabang, dan identitas pencatat tetap terkunci. Backend memverifikasi
   tenant, cabang, creator ID, status reversal/closing, dan versi row; ledger
   diperbarui tanpa menggeser `occurred_at`, sedangkan waktu koreksi dan audit
   before/after tercatat terpisah. Pengeluaran legacy tanpa creator ID tidak
-  dapat diedit dari alur staff dan memerlukan alur koreksi terkontrol. Status
-  `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+  dapat diedit dari alur staff dan memerlukan alur koreksi terkontrol. UI
+  menggabungkan respons mutasi otoritatif sampai proyeksi laporan menyusul,
+  menjaga focus-return dialog, dan mencegah request ganda pada double-click.
+  Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`;
   production tidak berubah.
 
 - Exact cumulative source S377

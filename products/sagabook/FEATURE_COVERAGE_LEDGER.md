@@ -4,7 +4,7 @@ Evidence cut-off: 31 Agustus 2026 WIB
 
 Kandidat edit pengeluaran staff S378 telah `CONFIRMED / SOURCE_PUSHED /
 LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED` pada exact source
-`cbaa5dc4f89b2ae9c48fd24d748cbe3dcc55c2f8`. Staff hanya dapat mengedit row
+`5fb50f65b2aadd801a4dbb8f0d49b694268fe6a6`. Staff hanya dapat mengedit row
 pengeluaran miliknya sendiri sebelum closing tanggal/cabang disubmit; nominal,
 metode pembayaran, kategori, dan catatan editable, sedangkan tanggal, cabang,
 dan creator immutable. Tenant/cabang, creator ID, reversal, closing lock,

@@ -17,7 +17,7 @@ tetap `COMMERCE_ACTIVE`, tetapi shipping manual sembilan tujuan dan enam
 exception pembayaran menahan `BUSINESS_READY=false`.
 
 SagaBook kandidat S378 source
-`cbaa5dc4f89b2ae9c48fd24d748cbe3dcc55c2f8` sudah dipush dan tervalidasi
+`5fb50f65b2aadd801a4dbb8f0d49b694268fe6a6` sudah dipush dan tervalidasi
 lokal. Staff dapat mengedit nominal, metode pembayaran, kategori, dan catatan
 pengeluaran yang ia input sendiri selama closing tanggal/cabang belum
 disubmit. Tanggal, cabang, dan creator immutable; backend menjaga tenant,
@@ -25,7 +25,9 @@ branch, ownership, reversal, optimistic version, mutex closing, ledger
 lineage, serta audit before/after. `occurred_at` ledger tidak bergeser ketika
 dikoreksi. Row legacy tanpa creator ID tetap terkunci dan tidak dibackfill dari
 nama. Full PHP 1.320/1.320 (14.743 assertion), focused 47/47, frontend 6/6,
-build/typecheck/format/migration rehearsal, dan audit dependency lulus. Status
+Playwright Staff mobile+desktop 2/2, build/typecheck/migration rehearsal, dan
+audit dependency lulus. Tabel detail merekonsiliasi hasil mutasi otoritatif,
+dialog memulihkan fokus, dan double-submit ditolak. Status
 `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
 production tetap S377 dan `BUSINESS_READY=false`.
 

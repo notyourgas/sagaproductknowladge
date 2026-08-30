@@ -32,7 +32,7 @@ keputusan pengganti.
 | Alternatif yang dipertimbangkan | Semua koreksi oleh Owner; reversal append-only untuk setiap typo; mengizinkan edit setelah closing; backfill ownership row lama dari nama staff. |
 | Dampak | Backend memverifikasi tenant/cabang, creator ID, status closing/reversal, optimistic version, dan mutex submit; ledger mempertahankan waktu kejadian serta audit mencatat before/after. Row legacy tanpa creator ID tetap terkunci dan memakai alur koreksi terkontrol. |
 | Pemberi keputusan | Andreas / founder |
-| Status | `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; source `cbaa5dc4f89b2ae9c48fd24d748cbe3dcc55c2f8`; production tidak berubah |
+| Status | `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; source `5fb50f65b2aadd801a4dbb8f0d49b694268fe6a6`; Playwright Staff mobile+desktop 2/2; production tidak berubah |
 | Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [SagaBook Changelog](products/sagabook/CHANGELOG.md), [SagaBook Ledger](products/sagabook/FEATURE_COVERAGE_LEDGER.md) |
 
 ## DEC-123 - Deploy exact main SagaBook b37db081 disetujui
