@@ -79,10 +79,15 @@ coverage nasional atau Delivery API aktif.
 Backup database COYABAG masih local-disk dan perlu dipindahkan ke backup offsite
 sebelum business readiness final.
 
-`CONFIRMED / PRODUCTION_DEPLOYED`: release `20260830-9d16ae1`, exact source
-`9d16ae1677f43ca1210faa8a41d5baf7db93a799`, dan rollback
-`20260830-f45f8f6` menambah review exception pembayaran yang wajib dibuka sebelum
-penyelesaian. Panel memakai kontrak server public-safe untuk nominal, provider,
+`CONFIRMED / PRODUCTION_DEPLOYED`: release `20260830-1ad8cbc`, exact source
+`1ad8cbcf3d175cb0b7ca619271a7e0d8ec801ac4`, dan rollback
+`20260830-9d16ae1` mengganti prompt browser pada Shipment Detail dengan dialog
+status yang aksesibel. Exception dan delivery menampilkan konteks shipment,
+order, waybill, status sebelum/sesudah, serta dampak customer dan stok. Delivery
+memerlukan catatan 8-500 karakter dan acknowledgement eksplisit; backend menolak
+request tanpa konfirmasi tanpa mengubah shipment, order, event, notifikasi, atau
+stok. Release ini juga mempertahankan review exception pembayaran yang wajib
+dibuka sebelum penyelesaian. Panel memakai kontrak server public-safe untuk nominal, provider,
 rekonsiliasi, referensi, usia, dan guidance; raw context terenkripsi tidak
 dirender. Catatan minimal delapan karakter, recent auth, dan konfirmasi eksplisit
 wajib, sedangkan resolve tidak mengubah order menjadi paid. Detail pembayaran

@@ -12,12 +12,37 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-30T19:28:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-30T20:24:46+07:00 |
 | Branch aktif | isolated exact `origin/main` worktree |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `0b6a698c2b872cb8d35e82ca432929d2c9544901` |
-| Informasi terakhir disinkronkan | COYABAG payment retry guard pada exact source `9d16ae1677f43ca1210faa8a41d5baf7db93a799`. |
+| Baseline sebelum pembaruan | `f19b0715b2caa175e8c0e2c15ff32dbacacf6b33` |
+| Informasi terakhir disinkronkan | COYABAG manual delivery confirmation pada exact source `1ad8cbcf3d175cb0b7ca619271a7e0d8ec801ac4`. |
 | Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE`; `BUSINESS_READY=false`. |
+
+## COYABAG manual delivery confirmation
+
+- Exact source `1ad8cbcf3d175cb0b7ca619271a7e0d8ec801ac4` sudah push dan aktif
+  sebagai immutable release `20260830-1ad8cbc`; rollback
+  `20260830-9d16ae1` tersedia.
+- Shipment Detail memakai dialog status aksesibel untuk exception dan delivery.
+  Delivered memerlukan catatan 8-500 karakter dan acknowledgement eksplisit;
+  backend menolak request tidak lengkap tanpa mengubah shipment, order, event,
+  notifikasi, atau stok.
+- Focused 5/5, Laravel 520, storefront 216/216, browser desktop/mobile,
+  build/audit, backup, pending migration nol, readiness 42/42, dua worker, dan
+  buy-to-cart public smoke lulus.
+- Shipping tetap manual sembilan tujuan dan enam exception pembayaran lama
+  tetap terbuka, sehingga `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi COYABAG manual delivery confirmation
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG payment retry guard
 

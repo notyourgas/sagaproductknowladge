@@ -1,8 +1,8 @@
 # Saga Product — Master Knowledge for ChatGPT
 
 COYABAG exact pushed source
-`9d16ae1677f43ca1210faa8a41d5baf7db93a799` aktif pada immutable release
-`20260830-9d16ae1` dengan rollback `20260830-f45f8f6`. Readiness 42/42 dan
+`1ad8cbcf3d175cb0b7ca619271a7e0d8ec801ac4` aktif pada immutable release
+`20260830-1ad8cbc` dengan rollback `20260830-9d16ae1`. Readiness 42/42 dan
 checkout `COMMERCE_ACTIVE`; SagaDev controlled trial dibatasi Rp500.000 per
 transaksi serta lima intent baru per hari. Payment Detail menyediakan recovery
 sesi server-authoritative dengan permission, recent auth, 2FA, rate limit, dan
@@ -17,8 +17,10 @@ terenkripsi atau summary run; selisih tetap fail-closed. Eligibility retry
 provider kini server-authoritative pada payload dan endpoint. Pending/recovery
 provider aktif dapat diperiksa dari panel rekonsiliasi; matched, simulasi,
 manual, provider nonaktif, dan amount mismatch tidak dapat memanggil provider.
-Shipping manual
-siap pada sembilan kota, belum coverage nasional atau Delivery API aktif;
+Shipping manual siap pada sembilan kota, belum coverage nasional atau Delivery
+API aktif. Shipment Detail memakai dialog aksesibel untuk exception/delivery;
+status delivered membutuhkan catatan dan acknowledgement eksplisit yang
+diperiksa backend tanpa mengubah stok pada request yang ditolak;
 Admin Inventory kini menampilkan dampak saldo dan mewajibkan alasan ledger/audit
 sebelum keputusan karantina. Alert stok rendah memiliki antrean triase
 server-authoritative dengan severity, threshold, shortage, dampak storefront,
@@ -4612,23 +4614,20 @@ pernah dilaporkan. Pricing final belum dikunci.
 ### COYABAG
 
 Ecommerce tas streetwear dengan storefront React/Vite dan backend
-Laravel/Inertia. Storefront, API, dan admin live, tetapi commerce production
-penuh masih fail-closed sampai data final, payment/shipping/email/storage,
-owner 2FA, legal, backup restore, dan provider UAT selesai.
+Laravel/Inertia. Storefront, API, admin, dan checkout controlled trial live.
+Commerce aktif tidak sama dengan business readiness karena shipping masih
+manual terbatas dan exception pembayaran lama masih memerlukan operator.
 
-Delivery: `PRODUCTION_DEPLOYED`. Activation dan business readiness: `BLOCKED`.
+Delivery: `PRODUCTION_DEPLOYED`. Activation: `PRODUCTION_ACTIVATED /
+COMMERCE_ACTIVE`. Business readiness: `BLOCKED`.
 
 Admin terbaru sudah `PRODUCTION_DEPLOYED` pada exact source
-`b073a484cb18181a4c4365412f37804b816756c2`, immutable release
-`20260829-b073a48`, dan rollback `20260829-8c91ad2`. Dashboard memakai Plus
-Jakarta Sans, shell responsive, refresh snapshot fail-safe, tren 7/14/30 hari,
-serta tampilan filter Pesanan per akun/perangkat. Katalog Produk menyediakan
-bulk publish/archive yang transaksional, revision/context-aware, dan ter-audit.
-Inventory menyediakan export snapshot CSV sesuai antrean/pencarian aktif;
-permission, throttle, audit tanpa PII, dan sanitasi formula melindungi alurnya.
-Kata pencarian pelanggan tidak dipersistenkan. Readiness 41/42 (98%); release
-sign-off tetap satu blocker dan perubahan dashboard tidak mengaktifkan
-commerce/provider.
+`1ad8cbcf3d175cb0b7ca619271a7e0d8ec801ac4`, immutable release
+`20260830-1ad8cbc`, dan rollback `20260830-9d16ae1`. Dashboard memakai Plus
+Jakarta Sans dan Shipment Detail kini menyediakan dialog status manual yang
+aksesibel. Delivery membutuhkan catatan 8-500 karakter dan acknowledgement
+eksplisit; backend menolak request tidak lengkap tanpa mengubah shipment,
+order, event, notifikasi, atau stok. Readiness 42/42 dan commerce tetap aktif.
 
 SagaDev Managed Gateway controlled trial untuk COYABAG sudah
 `PRODUCTION_DEPLOYED` melalui Saga Platform release

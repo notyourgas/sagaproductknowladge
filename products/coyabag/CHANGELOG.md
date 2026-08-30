@@ -4,6 +4,26 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-30 - Manual delivery confirmation deployed
+
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false` dari exact
+  source `1ad8cbcf3d175cb0b7ca619271a7e0d8ec801ac4`, immutable release
+  `20260830-1ad8cbc`, dan rollback `20260830-9d16ae1`.
+- Shipment Detail tidak lagi memakai prompt browser untuk exception atau
+  delivery. Dialog aksesibel memberi konteks shipment/order/waybill, status
+  sebelum/sesudah, dampak customer dan stok, validasi catatan, serta state
+  processing/error/success pada desktop dan mobile.
+- Status `delivered` memerlukan catatan 8-500 karakter dan acknowledgement
+  eksplisit. Endpoint menolak request tanpa konfirmasi tanpa mengubah shipment,
+  order, event, notifikasi, atau stok; aksi terminal hilang setelah sukses.
+- Focused shipment 5/5 dengan 80 assertion, Laravel 520 total/519 pass/satu
+  controlled skip dengan 5.177 assertion, storefront 216/216, browser dua
+  viewport, build/audit, backup, migration pending nol, readiness 42/42, dua
+  worker, dan buy-to-cart public smoke lulus.
+- Shipping tetap manual untuk sembilan tujuan dan enam exception pembayaran
+  lama tetap terbuka, sehingga `BUSINESS_READY=false`.
+
 ## 2026-08-30 - Payment retry guard deployed
 
 - Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /

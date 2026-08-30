@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-30 - COYABAG manual delivery confirmation sync
+
+- Ringkasan: menyinkronkan dialog status pengiriman manual, acknowledgement
+  delivered fail-closed, release, rollback, dan runtime evidence terbaru.
+- Provenance: exact pushed source
+  `1ad8cbcf3d175cb0b7ca619271a7e0d8ec801ac4`, immutable release
+  `20260830-1ad8cbc`, rollback `20260830-9d16ae1`.
+- Evidence: focused 5/5, Laravel 520 total, storefront 216/216, browser
+  desktop/mobile, build/audit, backup, migration pending nol, readiness 42/42,
+  dua worker, dan buy-to-cart public smoke lulus.
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false`.
+- Dokumen terdampak: Product, dossier/changelog COYABAG, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-30 - COYABAG payment retry guard sync
 
 - Ringkasan: menyinkronkan eligibility retry provider server-authoritative,

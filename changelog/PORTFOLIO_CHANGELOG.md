@@ -1,5 +1,20 @@
 # Portfolio Changelog
 
+## 2026-08-30 - COYABAG manual delivery confirmation deployed
+
+- Exact pushed source `1ad8cbcf3d175cb0b7ca619271a7e0d8ec801ac4`
+  aktif pada immutable release `20260830-1ad8cbc`; rollback
+  `20260830-9d16ae1` tersedia.
+- Shipment Detail mengganti prompt browser dengan dialog exception/delivery
+  aksesibel. Delivery membutuhkan catatan dan acknowledgement eksplisit yang
+  juga diperiksa backend; request tidak lengkap tidak mengubah status,
+  notifikasi, atau stok.
+- Laravel 520, storefront 216/216, browser desktop/mobile, build/audit, backup,
+  readiness 42/42, dua worker, dan buy-to-cart smoke lulus. Shipping masih
+  manual untuk sembilan tujuan dan enam exception pembayaran tetap terbuka;
+  status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE /
+  BUSINESS_READY=false`.
+
 ## 2026-08-30 - COYABAG payment retry guard deployed
 
 - Exact pushed source `9d16ae1677f43ca1210faa8a41d5baf7db93a799`
