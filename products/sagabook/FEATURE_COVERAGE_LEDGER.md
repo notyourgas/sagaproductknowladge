@@ -14,18 +14,22 @@ migration compatibility, verifier 23/23, report canary 32/32, migration pending
 UAT read-only lulus. Pilot dua studio dan provider canary tetap residual gate,
 sehingga `BUSINESS_READY=false`.
 
-Hardening rollback drill S380 telah `CONFIRMED / SOURCE_PUSHED /
-LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED` pada exact source
-`47d7591ffc8cc31667f7b280765c950c427216b7`. Harness approval-gated sekarang
+Hardening rollback drill S380 telah `CONFIRMED / MERGED / SOURCE_PUSHED /
+LOCAL_VALIDATED / RELEASE_PREPARATION_BLOCKED / IMPLEMENTED_NOT_DEPLOYED`
+pada feature source `47d7591ffc8cc31667f7b280765c950c427216b7` dan exact
+main `7b918b0c80320e67db0b2485331469fbdfa31d57`. Harness approval-gated sekarang
 memegang release lock eksklusif, mengikat accepted/rollback provenance serta
 fresh encrypted backup/disposable restore ke exact commit, menolak migration
 tree berbeda, memindahkan dua pointer secara atomik, dan selalu mencoba
 reaktivasi accepted release setelah maintenance/switch dicoba. Journal quiet
 mode tidak lagi menghitung sentinel kosong sebagai error; baris error nyata
 tetap dihitung dan campuran ambigu gagal tertutup. Focused 2/2 (49 assertion),
-release-hardening 20/20 (300 assertion), full PHP 1.323/1.323 (14.812
+release-hardening 20/20 (308 assertion), full PHP 1.323/1.323 (14.812
 assertion), build/typecheck, Bash syntax, Pint/diff, serta audit
-Composer/OSV/npm nol lulus. Production tetap S379 dan tidak dimutasi.
+Composer/OSV/npm nol lulus. Rehearsal Linux disposable berhenti pada wrapper
+happy-path sebelum receipt terbit dalam dua correction round. Artifact,
+backup/restore, shared release lock, dan atomic switch tidak dimulai;
+production tetap S379 dan tidak dimutasi.
 
 Retry idempoten edit pengeluaran Staff S379 telah `CONFIRMED / SOURCE_PUSHED /
 PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED` melalui feature
@@ -41,11 +45,11 @@ lulus. Immutable release, backup/restore, verifier 23/23, smoke/security 3/3,
 authenticated Owner/Staff UAT, dan rollback drill aktual juga lulus.
 `BUSINESS_READY=false` sampai pilot dua studio dan provider canary selesai.
 
-Gap READY berikutnya: jalankan rehearsal integrasi S380 pada host Linux
-disposable dengan release sintetis untuk membuktikan lock contention, partial
-pointer failure, maintenance failure, journal command failure, dan accepted
-reactivation tanpa memakai credential atau data production. Merge/deploy serta
-drill production tetap memerlukan review dan approval terpisah.
+Gap READY berikutnya: perbaiki kontrol `ERR` trap pada wrapper rehearsal Linux
+disposable agar exit happy-path dapat direkam public-safe tanpa menutupi output
+harness, lalu ulang matrix lock contention, partial pointer, maintenance,
+journal failure, dan accepted reactivation. Maksimal correction cycle baru
+sesuai approval; artifact/deploy tetap fail-closed sampai receipt hijau.
 
 Pada tahap kandidat, edit pengeluaran staff S378 telah `CONFIRMED /
 SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED` pada exact source

@@ -1,5 +1,22 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-31 - SagaBook S380 merge and release-blocked sync
+
+- Ringkasan: menyinkronkan merge PR #87, fresh exact-main gate, dan kegagalan
+  fail-closed rehearsal Linux disposable sebelum receipt happy-path.
+- Provenance: feature source `47d7591ffc8cc31667f7b280765c950c427216b7`,
+  exact main `7b918b0c80320e67db0b2485331469fbdfa31d57`, tree
+  `d0f2a14e06249bfe86e224194acad9a1ed4d7aad`.
+- Evidence: full PHP 1.323/1.323 (14.812 assertion), focused 2/2,
+  release-hardening 20/20, build/typecheck/Bash/format/diff, dan audit
+  dependensi nol; rehearsal berhenti setelah dua correction round.
+- Delivery: artifact, fresh backup/restore, shared lock, dan atomic switch tidak
+  dimulai. Production tetap S379 `f13d6f4ae519bb42eeae4dcd81d213a015d11767`
+  pada release `20260830223233-f13d6f4`.
+- Klasifikasi: `CONFIRMED / MERGED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  RELEASE_PREPARATION_BLOCKED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
+
 ## 2026-08-31 - SagaBook S380 rollback drill hardening sync
 
 - Ringkasan: menyinkronkan harness rollback approval-gated, release lock,

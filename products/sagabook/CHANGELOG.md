@@ -1,5 +1,29 @@
 # SagaBook Changelog
 
+## 2026-08-31 - S380 merged, release preparation fail-closed
+
+- Feature source `47d7591ffc8cc31667f7b280765c950c427216b7` sudah merge melalui
+  PR #87 ke exact main `7b918b0c80320e67db0b2485331469fbdfa31d57`;
+  main tree identik dengan kandidat teruji pada
+  `d0f2a14e06249bfe86e224194acad9a1ed4d7aad`.
+- Fresh exact-main gate lulus: focused 2/2 (49 assertion), release-hardening
+  20/20 (308 assertion), full PHP 1.323/1.323 (14.812 assertion), Bash syntax,
+  typecheck/build/Pint/diff, npm/OSV nol, serta Composer audit ekuivalen pada
+  VPS dengan exact `composer.lock` SHA-256 yang sama.
+- Rehearsal Linux disposable tidak mencapai receipt happy-path. Percobaan awal
+  berhenti tanpa stage; correction round 1 mengikat failure ke happy-path,
+  sedangkan round 2 tetap berhenti akibat propagasi ERR trap wrapper sebelum
+  output harness dapat dinilai. Source failure tidak di-waive dan tidak ada
+  correction ketiga.
+- Karena seluruh gate belum hijau, immutable artifact dan fresh
+  backup/disposable restore S380 tidak dibentuk. Release lock bersama tidak
+  pernah diambil, atomic switch tidak dimulai, dan production tetap S379
+  `f13d6f4ae519bb42eeae4dcd81d213a015d11767` pada release
+  `20260830223233-f13d6f4`.
+- Status `CONFIRMED / MERGED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  RELEASE_PREPARATION_BLOCKED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
+
 ## 2026-08-31 - Rollback drill journal hardening S380
 
 - Exact source `47d7591ffc8cc31667f7b280765c950c427216b7` sudah dipush pada
