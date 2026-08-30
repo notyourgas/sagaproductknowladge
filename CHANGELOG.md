@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-30 - COYABAG payment reconciliation lineage sync
+
+- Ringkasan: menyinkronkan lineage rekonsiliasi public-safe pada Payment Detail,
+  release, rollback, dan runtime evidence terbaru.
+- Provenance: exact pushed source
+  `f45f8f6836e627227d74dc976e10da582d309421`, immutable release
+  `20260830-f45f8f6`, rollback `20260830-5ee96a8`.
+- Evidence: focused 4/4, Laravel 518 total, storefront 216/216, browser Payment
+  desktop/mobile, build/audit, backup, migration pending nol, readiness 42/42,
+  cron, dua worker, dan public smoke lulus.
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false`.
+- Dokumen terdampak: Product, dossier/changelog COYABAG, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-30 - COYABAG payment exception review sync
 
 - Ringkasan: menyinkronkan guarded exception review, confirmation boundary,

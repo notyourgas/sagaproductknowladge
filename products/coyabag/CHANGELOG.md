@@ -4,6 +4,24 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-30 - Payment reconciliation lineage deployed
+
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false` dari exact
+  source `f45f8f6836e627227d74dc976e10da582d309421`, immutable release
+  `20260830-f45f8f6`, dan rollback `20260830-5ee96a8`.
+- Payment Detail menampilkan sepuluh hasil rekonsiliasi terbaru dengan run,
+  scope, provider, nominal expected/observed, selisih, dan waktu. Snapshot item
+  terenkripsi serta summary run tidak dikirim ke browser.
+- Missing provider amount dinyatakan tidak tersedia, amount mismatch tetap
+  fail-closed, dan tombol cek provider menahan submit ganda selama processing.
+- Laravel 518 total/517 pass/satu controlled skip dengan 5.122 assertion,
+  storefront 216/216, browser Payment desktop/mobile, build, changed-file Pint,
+  audit, backup, worker, readiness 42/42, migration pending nol, dan public
+  smoke lulus.
+- Enam exception tetap menunggu operator; shipping manual sembilan tujuan dan
+  residual bisnis lain tetap menahan `BUSINESS_READY`.
+
 ## 2026-08-30 - Payment exception review deployed
 
 - Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /

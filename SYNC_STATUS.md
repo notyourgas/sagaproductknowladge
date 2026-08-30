@@ -12,12 +12,36 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-30T17:21:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-30T18:24:00+07:00 |
 | Branch aktif | isolated exact `origin/main` worktree |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `63142decdd10568c145cb7930bf18724e0c8814e` |
-| Informasi terakhir disinkronkan | COYABAG payment exception review pada exact source `5ee96a8d160645f35cbc6549c8beb0c702077e50`. |
+| Baseline sebelum pembaruan | `8fbe427218da79ec047ec68ffe914adb4ec2cf66` |
+| Informasi terakhir disinkronkan | COYABAG payment reconciliation lineage pada exact source `f45f8f6836e627227d74dc976e10da582d309421`. |
 | Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE`; `BUSINESS_READY=false`. |
+
+## COYABAG payment reconciliation lineage
+
+- Exact source `f45f8f6836e627227d74dc976e10da582d309421` sudah push dan aktif
+  sebagai immutable release `20260830-f45f8f6`; rollback
+  `20260830-5ee96a8` tersedia.
+- Detail pembayaran gateway menampilkan run, scope, provider, nominal
+  expected/observed, selisih, dan waktu tanpa snapshot terenkripsi atau summary
+  run. Selisih tetap fail-closed dan missing provider amount tetap eksplisit.
+- Focused 4/4, Laravel 518, storefront 216/216, browser Payment, build/audit,
+  backup, pending migration nol, readiness 42/42, cron, dua worker, dan public
+  smoke lulus.
+- Enam exception tetap terbuka; shipping sembilan tujuan, seller/legal/tax
+  final, dan offsite backup menahan `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi COYABAG payment reconciliation lineage
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG payment exception review
 

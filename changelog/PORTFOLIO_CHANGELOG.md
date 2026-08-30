@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-30 - COYABAG payment reconciliation lineage deployed
+
+- Exact pushed source `f45f8f6836e627227d74dc976e10da582d309421`
+  aktif pada immutable release `20260830-f45f8f6`; rollback
+  `20260830-5ee96a8` tersedia.
+- Finance dapat membaca lineage pencocokan nominal pada Payment Detail tanpa
+  membuka log atau menerima snapshot provider privat. Missing amount tetap
+  eksplisit dan selisih tidak mengubah status paid.
+- Laravel 518, storefront 216/216, browser Payment desktop/mobile,
+  build/security audit, backup, readiness 42/42, worker, cron, dan public smoke
+  lulus. Enam exception tetap memerlukan operator; status
+  `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE /
+  BUSINESS_READY=false`.
+
 ## 2026-08-30 - COYABAG payment exception review deployed
 
 - Exact pushed source `5ee96a8d160645f35cbc6549c8beb0c702077e50`

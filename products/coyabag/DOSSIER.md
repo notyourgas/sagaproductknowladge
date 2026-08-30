@@ -79,13 +79,17 @@ coverage nasional atau Delivery API aktif.
 Backup database COYABAG masih local-disk dan perlu dipindahkan ke backup offsite
 sebelum business readiness final.
 
-`CONFIRMED / PRODUCTION_DEPLOYED`: release `20260830-5ee96a8`, exact source
-`5ee96a8d160645f35cbc6549c8beb0c702077e50`, dan rollback
-`20260830-a9d0e0f` menambah review exception pembayaran yang wajib dibuka sebelum
+`CONFIRMED / PRODUCTION_DEPLOYED`: release `20260830-f45f8f6`, exact source
+`f45f8f6836e627227d74dc976e10da582d309421`, dan rollback
+`20260830-5ee96a8` menambah review exception pembayaran yang wajib dibuka sebelum
 penyelesaian. Panel memakai kontrak server public-safe untuk nominal, provider,
 rekonsiliasi, referensi, usia, dan guidance; raw context terenkripsi tidak
 dirender. Catatan minimal delapan karakter, recent auth, dan konfirmasi eksplisit
-wajib, sedangkan resolve tidak mengubah order menjadi paid.
+wajib, sedangkan resolve tidak mengubah order menjadi paid. Detail pembayaran
+gateway kini menampilkan sepuluh item rekonsiliasi terbaru dengan run, scope,
+provider, expected/observed amount, selisih, dan waktu. Snapshot terenkripsi
+serta summary run tetap privat, nominal provider yang hilang dinyatakan tidak
+tersedia, dan action cek provider mencegah submit ganda saat request berjalan.
 
 Semua movement Inventory tetap dapat diperiksa secara read-only
 dengan saldo historis sebelum/sesudah, delta, alasan, actor, waktu, order, serta
