@@ -16,6 +16,20 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
 
+- Kandidat hardening rollback drill S380 pada exact pushed source
+  `47d7591ffc8cc31667f7b280765c950c427216b7` menyediakan harness production
+  approval-gated dengan release lock eksklusif, exact accepted/rollback
+  provenance, backup terenkripsi/checksum/disposable-restore binding,
+  migration-tree parity, atomic dua pointer, fail-safe accepted reactivation,
+  bounded public smoke, service, dan journal check. Query journal memakai
+  quiet mode; helper menghitung output kosong sebagai nol, mempertahankan error
+  nyata, dan menolak campuran sentinel/error yang ambigu. Focused red-green 2/2
+  (49 assertion), release-hardening 20/20 (300 assertion), full PHP
+  1.323/1.323 (14.812 assertion), Bash syntax, typecheck/build, Pint/diff, dan
+  audit Composer/OSV/npm nol lulus. Status `CONFIRMED / SOURCE_PUSHED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S379 dan
+  `BUSINESS_READY=false`.
+
 - Exact cumulative source S379
   `f13d6f4ae519bb42eeae4dcd81d213a015d11767` memuat feature source
   `1d167d9b2c924962062580bb891ab6c93c57b2dd` dan menahan satu idempotency key

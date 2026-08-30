@@ -1,5 +1,28 @@
 # SagaBook Changelog
 
+## 2026-08-31 - Rollback drill journal hardening S380
+
+- Exact source `47d7591ffc8cc31667f7b280765c950c427216b7` sudah dipush pada
+  branch `codex/s380-sagabook-rollback-journal-harness`, berbasis exact
+  production/main S379 `f13d6f4ae519bb42eeae4dcd81d213a015d11767`.
+- Harness baru mewajibkan approval eksplisit, root, release lock eksklusif,
+  exact accepted/rollback release dan commit, fresh encrypted backup/checksum,
+  disposable restore receipt terikat kandidat, migration-tree parity, serta
+  pointer awal yang konsisten sebelum mutasi sementara dimulai.
+- Dua pointer SagaBook dipindah atomik ke rollback lalu accepted release;
+  maintenance, service, manifest, pending migration, bounded public smoke, dan
+  journal diverifikasi pada kedua arah. Trap selalu mencoba mereaktivasi
+  accepted release ketika switch atau maintenance telah dicoba.
+- Query journal menggunakan quiet mode. Helper defense-in-depth menghitung
+  output kosong/sentinel exact sebagai nol, baris error nyata tetap dihitung,
+  dan sentinel bercampur error gagal tertutup sebagai output ambigu.
+- Focused red-green 2/2 (49 assertion), release-hardening 20/20 (300
+  assertion), full PHP 1.323/1.323 (14.812 assertion), Bash syntax,
+  typecheck/build/Pint/diff, serta audit Composer, OSV, dan npm nol lulus.
+- Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap S379, tidak ada deployment atau
+  rollback drill production pada slice ini, dan `BUSINESS_READY=false`.
+
 ## 2026-08-31 - Idempotent retry edit pengeluaran Staff S379
 
 - Exact source `1d167d9b2c924962062580bb891ab6c93c57b2dd` sudah dipush pada

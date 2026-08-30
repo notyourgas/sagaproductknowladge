@@ -14,6 +14,19 @@ migration compatibility, verifier 23/23, report canary 32/32, migration pending
 UAT read-only lulus. Pilot dua studio dan provider canary tetap residual gate,
 sehingga `BUSINESS_READY=false`.
 
+Hardening rollback drill S380 telah `CONFIRMED / SOURCE_PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED` pada exact source
+`47d7591ffc8cc31667f7b280765c950c427216b7`. Harness approval-gated sekarang
+memegang release lock eksklusif, mengikat accepted/rollback provenance serta
+fresh encrypted backup/disposable restore ke exact commit, menolak migration
+tree berbeda, memindahkan dua pointer secara atomik, dan selalu mencoba
+reaktivasi accepted release setelah maintenance/switch dicoba. Journal quiet
+mode tidak lagi menghitung sentinel kosong sebagai error; baris error nyata
+tetap dihitung dan campuran ambigu gagal tertutup. Focused 2/2 (49 assertion),
+release-hardening 20/20 (300 assertion), full PHP 1.323/1.323 (14.812
+assertion), build/typecheck, Bash syntax, Pint/diff, serta audit
+Composer/OSV/npm nol lulus. Production tetap S379 dan tidak dimutasi.
+
 Retry idempoten edit pengeluaran Staff S379 telah `CONFIRMED / SOURCE_PUSHED /
 PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED` melalui feature
 source `1d167d9b2c924962062580bb891ab6c93c57b2dd` pada exact cumulative source
@@ -28,10 +41,11 @@ lulus. Immutable release, backup/restore, verifier 23/23, smoke/security 3/3,
 authenticated Owner/Staff UAT, dan rollback drill aktual juga lulus.
 `BUSINESS_READY=false` sampai pilot dua studio dan provider canary selesai.
 
-Gap READY berikutnya: normalisasi parser journal pada harness rollback agar
-sentinel `tidak ada entri` tidak dihitung sebagai error. False-negative ini
-tidak berasal dari runtime; query journal quiet dan verifier resmi sesudah
-reaktivasi mencatat 0 error.
+Gap READY berikutnya: jalankan rehearsal integrasi S380 pada host Linux
+disposable dengan release sintetis untuk membuktikan lock contention, partial
+pointer failure, maintenance failure, journal command failure, dan accepted
+reactivation tanpa memakai credential atau data production. Merge/deploy serta
+drill production tetap memerlukan review dan approval terpisah.
 
 Pada tahap kandidat, edit pengeluaran staff S378 telah `CONFIRMED /
 SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED` pada exact source
