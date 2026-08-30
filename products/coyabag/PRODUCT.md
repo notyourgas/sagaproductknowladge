@@ -76,10 +76,19 @@ COMMERCE_ACTIVE`. Business readiness: `BLOCKED`.
   bagian; audit tetap `report_only` dan tidak menghapus record.
 - Launch UAT 15 langkah dan release sign-off sudah lulus. Readiness gate tetap
   enforced dan keputusan runtime adalah `COMMERCE_ACTIVE`.
-- Release aktif `20260831-26c33f0` dengan exact material source
-  `26c33f083861a0be955377d2184122a5b2ade3c5` melayani production;
-  rollback langsung `20260830-22bb066` tersedia dan lulus readiness 42/42.
-  Analytics dan Finance kini memakai satu periode bisnis Asia/Jakarta untuk
+- Release aktif `20260831-15c2daa` dengan exact material source
+  `15c2daaaaffaa21fc106999fa81104d449024830` melayani production;
+  rollback langsung `20260831-26c33f0` tersedia dan keduanya lulus readiness
+  42/42. Website Management kini melindungi publish, schedule, retract, dan
+  rollback dengan review dialog aksesibel, permission, recent authentication,
+  throttle, acknowledgement, alasan untuk tindakan destruktif, dan revision
+  guard. Jadwal yang ditinjau sebagai WIB disimpan dalam UTC; rollback versi
+  historis berjalan atomik sebagai revisi baru. State editor mengikuti respons
+  Inertia terbaru sehingga save berhasil tidak tampak macet. Acceptance desktop
+  dan mobile memastikan focus return, Escape, nama aksesibel, serta tidak ada
+  horizontal overflow.
+  Release rollback `20260831-26c33f0` memuat Analytics dan Finance dengan satu
+  periode bisnis Asia/Jakarta untuk
   preset 7/30/90 hari atau custom range maksimal 366 hari. Metrik, ledger,
   shipping summary, pagination, dan export mengikuti rentang yang sama;
   Analytics CSV membawa summary/tren/produk/promo, sedangkan CSV Finance dan
@@ -87,7 +96,7 @@ COMMERCE_ACTIVE`. Business readiness: `BLOCKED`.
   desktop/mobile memiliki loading, empty, error, accessible announcement,
   chart panjang yang dapat digeser tanpa document overflow, dan definisi
   metric lineage yang terlihat.
-  Release rollback `20260830-22bb066` tetap memuat promo baru yang selalu
+  Release lebih lama `20260830-22bb066` tetap memuat promo baru yang selalu
   disimpan nonaktif; persentase dibatasi 1-100 dan diskon
   tidak dapat melampaui subtotal. Aktivasi/deaktivasi memakai lifecycle
   server-authoritative, exact-state concurrency guard, acknowledgement,

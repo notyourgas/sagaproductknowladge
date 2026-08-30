@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-31 - COYABAG content publication control sync
+
+- Ringkasan: menyinkronkan Content Publication Control, state editor, release,
+  rollback, dan evidence runtime Website Management COYABAG.
+- Provenance: exact pushed source
+  `15c2daaaaffaa21fc106999fa81104d449024830`, immutable release
+  `20260831-15c2daa`, rollback `20260831-26c33f0`.
+- Evidence: focused 49/49, Laravel 530 total, storefront 216/216, browser
+  desktop/mobile, build/audit, backup, migration pending nol, readiness
+  active+rollback 42/42, dua worker, HTTP, dan buy-to-cart smoke.
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false`.
+- Dokumen terdampak: Product, dossier/changelog COYABAG, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-31 - SagaBook S379 idempotent expense-edit retry sync
 
 - Ringkasan: menyinkronkan kontrak retry respons jaringan ambigu pada edit

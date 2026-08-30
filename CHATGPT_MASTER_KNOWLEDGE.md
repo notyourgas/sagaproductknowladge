@@ -1,5 +1,21 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+COYABAG exact pushed source
+`15c2daaaaffaa21fc106999fa81104d449024830` aktif pada immutable release
+`20260831-15c2daa` dengan rollback `20260831-26c33f0`; readiness keduanya
+42/42. Website Management Content Publication Control melindungi publish,
+schedule, retract, dan rollback dengan dialog review aksesibel, permission,
+recent authentication, throttle, acknowledgement, alasan tindakan destruktif,
+revision guard, konversi jadwal WIB ke UTC, dan rollback historis atomik.
+Sinkronisasi state Inertia setelah save mencegah UI tampak macet. Focused 49/49,
+Laravel 530 total/529 pass/satu controlled skip, storefront 216/216, browser
+desktop/mobile tanpa overflow, build/audit, backup, migration pending nol, dua
+worker, HTTP, dan buy-to-cart smoke lulus. Switch pertama otomatis rollback
+karena guard kontrak terlalu literal; exact artifact yang sama berhasil
+dipromosikan setelah koreksi. Commerce tetap `COMMERCE_ACTIVE`, tetapi enam
+payment exception dan shipping manual sembilan tujuan menahan
+`BUSINESS_READY=false`.
+
 SagaBook S379 exact cumulative source
 `f13d6f4ae519bb42eeae4dcd81d213a015d11767` aktif pada immutable release
 `20260830223233-f13d6f4` dengan rollback S378

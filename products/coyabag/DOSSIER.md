@@ -79,6 +79,22 @@ coverage nasional atau Delivery API aktif.
 Backup database COYABAG masih local-disk dan perlu dipindahkan ke backup offsite
 sebelum business readiness final.
 
+`CONFIRMED / PRODUCTION_DEPLOYED`: release `20260831-15c2daa`, exact source
+`15c2daaaaffaa21fc106999fa81104d449024830`, dan rollback
+`20260831-26c33f0` menambahkan Content Publication Control pada Website
+Management. Publish, schedule, retract, dan rollback memakai review dialog
+aksesibel, permission, recent authentication, throttle, acknowledgement,
+alasan untuk tindakan destruktif, dan revision guard. Jadwal ditinjau sebagai
+WIB lalu disimpan dalam UTC; rollback historis memvalidasi payload dan menulis
+revisi baru secara atomik. Sinkronisasi state Inertia setelah save mencegah UI
+terlihat macet. Laravel 530 total/529 pass/satu controlled skip, focused content
+49/49, storefront 216/216, browser desktop/mobile, build/audit, backup,
+migration pending nol, readiness production+rollback 42/42, dua worker, HTTP,
+dan buy-to-cart smoke lulus. Percobaan switch pertama dibatalkan otomatis oleh
+guard kontrak yang terlalu literal, rollback lulus, lalu exact artifact yang
+sama berhasil dipromosikan setelah guard diperbaiki. Tidak ada perubahan
+provider, commerce gate, atau inventory.
+
 `CONFIRMED / PRODUCTION_DEPLOYED`: release `20260831-26c33f0`, exact source
 `26c33f083861a0be955377d2184122a5b2ade3c5`, dan rollback
 `20260830-22bb066` menyatukan reporting period Analytics, Finance, shipping

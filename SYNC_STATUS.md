@@ -15,9 +15,36 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-08-31 WIB |
 | Branch aktif | isolated exact `origin/main` worktree |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `44a18d7e1c03b6f939e25b6b64ad0e2f5926bfd6` |
-| Informasi terakhir disinkronkan | SagaBook S379 idempotent expense-edit retry aktif pada exact cumulative source `f13d6f4ae519bb42eeae4dcd81d213a015d11767`. |
-| Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED / BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `b3151948b7b8dd0874a1496922f92d2b2bad03c6` |
+| Informasi terakhir disinkronkan | COYABAG Content Publication Control aktif pada exact source `15c2daaaaffaa21fc106999fa81104d449024830` dan release `20260831-15c2daa`. |
+| Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false`. |
+
+## COYABAG content publication control
+
+- Exact source `15c2daaaaffaa21fc106999fa81104d449024830` sudah push dan aktif
+  sebagai immutable release `20260831-15c2daa`; rollback
+  `20260831-26c33f0` tersedia dan readiness keduanya 42/42.
+- Publish, schedule, retract, dan rollback memakai review aksesibel, recent
+  auth, acknowledgement/alasan, revision guard, konversi WIB ke UTC, rollback
+  historis atomik, serta state save Inertia yang sinkron.
+- Focused 49/49, Laravel 530 total, storefront 216/216, browser desktop/mobile,
+  build/audit, backup, migration pending nol, dua worker, HTTP, dan public
+  buy-to-cart smoke lulus.
+- Switch pertama otomatis rollback karena guard kontrak terlalu literal. Exact
+  artifact yang sama berhasil dipromosikan setelah koreksi; commerce tetap
+  aktif dan tidak ada mutasi provider maupun inventory.
+- Enam payment exception dan shipping manual sembilan tujuan tetap menahan
+  `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi COYABAG content publication
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook S379 idempotent expense-edit retry
 

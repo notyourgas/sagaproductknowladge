@@ -4,6 +4,28 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-31 - Content publication control deployed
+
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false` dari exact
+  source `15c2daaaaffaa21fc106999fa81104d449024830`, immutable release
+  `20260831-15c2daa`, dan rollback `20260831-26c33f0`.
+- Publish, schedule, retract, dan rollback konten memakai review dialog
+  aksesibel, permission, recent authentication, throttle, acknowledgement,
+  alasan tindakan destruktif, serta optimistic revision guard.
+- Jadwal ditinjau sebagai WIB dan disimpan dalam UTC. Rollback historis
+  tervalidasi berjalan atomik sebagai revisi baru; state editor mengikuti
+  respons Inertia terbaru setelah save.
+- Focused content 49/49, Laravel 530 total/529 pass/satu controlled skip,
+  storefront 216/216, browser desktop/mobile tanpa overflow, build/audit,
+  backup, migration, readiness active+rollback 42/42, worker, HTTP, dan
+  buy-to-cart smoke lulus.
+- Guard kontrak yang terlalu literal membatalkan switch pertama dan rollback
+  otomatis lulus; guard diperbaiki sebelum exact artifact yang sama berhasil
+  dipromosikan.
+- Commerce tetap aktif untuk controlled trial. Enam payment exception dan
+  shipping manual sembilan tujuan tetap menahan `BUSINESS_READY=false`.
+
 ## 2026-08-31 - Reporting period and export integrity deployed
 
 - Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /

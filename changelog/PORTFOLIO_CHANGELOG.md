@@ -1,5 +1,21 @@
 # Portfolio Changelog
 
+## 2026-08-31 - COYABAG content publication control deployed
+
+- Exact pushed source `15c2daaaaffaa21fc106999fa81104d449024830`
+  aktif pada immutable release `20260831-15c2daa`; rollback
+  `20260831-26c33f0` tersedia dan readiness keduanya 42/42.
+- Website Management kini melindungi publish, schedule, retract, dan rollback
+  dengan review aksesibel, recent auth, acknowledgement/alasan, revision guard,
+  konversi WIB ke UTC, dan rollback historis atomik.
+- Focused 49/49, Laravel 530, storefront 216/216, browser dua viewport,
+  build/audit, backup, worker, HTTP, dan buy-to-cart smoke lulus. Switch pertama
+  otomatis rollback karena guard terlalu literal; exact artifact yang sama
+  berhasil dipromosikan setelah koreksi.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE /
+  BUSINESS_READY=false`; enam payment exception dan shipping manual sembilan
+  tujuan tetap menjadi batas bisnis.
+
 ## 2026-08-31 - SagaBook S379 idempotent expense-edit retry production
 
 - Feature source `1d167d9b2c924962062580bb891ab6c93c57b2dd` masuk exact main
