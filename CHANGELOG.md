@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-30 - SagaView S360 Finalize evidence link revalidation sync
+
+- Ringkasan: menyinkronkan revalidasi custody path evidence tepat sebelum
+  S344 Finalize membaca snapshot/hash final.
+- Provenance: exact pushed source
+  `5cbe82027896b012086b92fdda38f4c9099cb954`; production tidak diubah.
+- Evidence: regression red 2/2 lalu green 3/3, focused S344-S360 61/61, full
+  exact 322/322, PowerShell/pwsh, format/lint/typecheck, client+SSR build,
+  bundle budget, npm audit nol, diff check, clean, dan remote exact.
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; `BUSINESS_READY=false`.
+- Dokumen terdampak: Product, feature ledger/changelog SagaView, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-08-30 - SagaBook S365 candidate approval packet sync
 
 - Ringkasan: menyinkronkan paket persetujuan exact kandidat yang fail-closed

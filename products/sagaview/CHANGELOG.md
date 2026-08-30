@@ -1,5 +1,26 @@
 # SagaView Changelog
 
+## 2026-08-30 - S360 Finalize evidence link revalidation
+
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan
+  `BUSINESS_READY=false`.
+- Before: reviewer S345 menolak reparse/hard link, tetapi S344 Finalize hanya
+  memeriksa ulang containment, existence, size, dan hash. Evidence dapat
+  ditukar menjadi link identik setelah review tanpa mengubah hash.
+- After: exact source `5cbe82027896b012086b92fdda38f4c9099cb954`
+  memeriksa ulang seluruh ancestor reparse point dan hard link sebelum snapshot
+  final, lalu menghasilkan blocker spesifik bila custody path berubah.
+- Evidence: regression red 2/2 lalu green 3/3; focused S344-S360 61/61;
+  full exact-commit 72 file/322 test; parser PowerShell/pwsh;
+  format/lint/typecheck; client+SSR build; bundle 312,7 KiB dari 450 KiB;
+  npm audit nol; diff check; worktree bersih; dan remote exact.
+- Boundary: hanya harness/test/runbook dengan hard link dan junction nyata pada
+  filesystem disposable; sumber eksternal tetap utuh, tanpa UI/API/database,
+  data customer, deploy, atau perubahan production.
+- Next gate: authenticated manual UAT 12 gate dengan evidence sintetis
+  tersanitasi, visual review, reviewer S345, lalu S344 Finalize.
+
 ## 2026-08-30 - S359 UAT receipt stale lock recovery
 
 - Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /

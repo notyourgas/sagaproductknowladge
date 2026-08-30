@@ -12,12 +12,34 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-30T09:09:00+07:00 |
-| Branch aktif | `codex/s365-candidate-approval-knowledge` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-30T09:15:00+07:00 |
+| Branch aktif | `codex/s360-sagaview-finalize-evidence-link-revalidation-knowledge` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `fe6786675f0d2f7d9c154dbaa51d79825bbaa080` |
-| Informasi terakhir disinkronkan | SagaBook S365 candidate approval packet pada exact main `b37db0810f64731e46f18d026452a6cf3f65e86c`. |
-| Status sinkronisasi | `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; `BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `fabbe189bd7565ec6b2d1b3f7f813a5b4af261d2` |
+| Informasi terakhir disinkronkan | SagaView S360 Finalize evidence link revalidation pada exact source `5cbe82027896b012086b92fdda38f4c9099cb954`. |
+| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; `BUSINESS_READY=false`. |
+
+## SagaView S360 Finalize evidence link revalidation
+
+- Exact source `5cbe82027896b012086b92fdda38f4c9099cb954` sudah push.
+- S344 Finalize memeriksa ulang containment, seluruh ancestor reparse point,
+  dan NTFS hard link sebelum snapshot/hash evidence final dibaca.
+- Regression red 2/2 lalu green 3/3, focused S344-S360 61/61, full exact
+  322/322, PowerShell/pwsh, format/lint/typecheck, client+SSR build, bundle
+  budget, npm audit nol, diff check, clean, dan remote exact lulus.
+- Hard link dan junction nyata ditolak pada filesystem disposable; sumber
+  eksternal tetap utuh. Production tidak berubah; authenticated UAT 12 gate
+  dan visual review masih pending sehingga `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi SagaView S360
+
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook S365 candidate approval packet
 

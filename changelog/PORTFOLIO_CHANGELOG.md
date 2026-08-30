@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-30 - SagaView S360 Finalize evidence link revalidation
+
+- Exact pushed source `5cbe82027896b012086b92fdda38f4c9099cb954`
+  membuat S344 Finalize memeriksa ulang ancestor reparse point dan NTFS hard
+  link sebelum snapshot final, menutup substitusi evidence sesudah review S345.
+- Regression red 2/2 lalu green 3/3, focused S344-S360 61/61, full exact
+  322/322, parser PowerShell/pwsh, build/budget, audit nol, clean, dan remote
+  exact lulus; hard link dan junction nyata ditolak pada filesystem disposable.
+- Perubahan hanya harness/test/runbook. Production tidak berubah;
+  authenticated UAT dan visual review masih pending sehingga
+  `BUSINESS_READY=false`.
+
 ## 2026-08-30 - SagaBook candidate approval packet S365
 
 - Exact kandidat `b37db0810f64731e46f18d026452a6cf3f65e86c` kini memiliki paket
