@@ -12,12 +12,36 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-30T07:15:00+07:00 |
-| Branch aktif | `codex/coyabag-admin-uiux-knowledge` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-30T08:06:00+07:00 |
+| Branch aktif | `codex/s364-bootstrap-artifact-knowledge` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `cc8bc0ca02070cb9699c51cc7804e94fa8293a4b` |
-| Informasi terakhir disinkronkan | COYABAG Admin order review continuity, exact material source `eb8dd394d88d913d3dfebcf59479a07448c9180a`, release `20260830-eb8dd39`. |
-| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`; readiness fail-closed 41/42. |
+| Baseline sebelum pembaruan | `ccf0e4485d9f3e06fb40210d407baf02a6e49c04` |
+| Informasi terakhir disinkronkan | SagaBook S364 clean artifact bootstrap pada exact main `b37db0810f64731e46f18d026452a6cf3f65e86c`. |
+| Status sinkronisasi | `LOCAL_VALIDATED / RELEASE_BOOTSTRAP_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; `BUSINESS_READY=false`. |
+
+## SagaBook S364 clean artifact production bootstrap
+
+- Exact main `b37db0810f64731e46f18d026452a6cf3f65e86c` berhasil dipulihkan dari
+  source archive bersih tanpa dependency, `.env`, atau metadata repository.
+- Composer production penuh, optimized autoload/package discovery, npm,
+  critical typecheck, build 5.133 modul, 135 migrasi SQLite disposable,
+  config/route/view cache, serta audit dependency nol lulus. Lockfile tetap
+  identik.
+- Bukti sintetis dipertahankan terisolasi setelah safety guard menolak cleanup
+  sebelum mutasi. Tidak ada data customer, secret, network produksi, deploy,
+  atau mutasi production.
+- Production tetap source `435dbfd252759fd8b7d43f44af69edfb39ee2102`,
+  release `20260829175230-435dbfd`, rollback `20260829062031-b2790d6`.
+
+## File yang berubah pada sinkronisasi SagaBook S364
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG Admin order review continuity
 

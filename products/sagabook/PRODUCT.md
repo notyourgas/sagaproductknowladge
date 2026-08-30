@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 30 Agustus 2026 06:14 WIB
-Evidence status: kandidat kumulatif exact main `b37db0810f64731e46f18d026452a6cf3f65e86c` memiliki archive, bundle, metadata, dan manifest identik pada dua disk fisik serta lulus dua disposable restore dan matriks receipt 7/7. Status `LOCAL_VALIDATED / RELEASE_ARTIFACT_READY / IMPLEMENTED_NOT_DEPLOYED`; production aktif tetap exact source `435dbfd252759fd8b7d43f44af69edfb39ee2102`, release `20260829175230-435dbfd`, rollback `20260829062031-b2790d6`; `BUSINESS_READY=false` sampai deploy terotorisasi, UAT runtime baru, dua pilot nyata, dan provider canary selesai
+Updated: 30 Agustus 2026 08:06 WIB
+Evidence status: kandidat kumulatif exact main `b37db0810f64731e46f18d026452a6cf3f65e86c` lulus bootstrap production dari clean source archive dengan lockfile tetap identik, dependency production, optimized autoload/package discovery, build frontend, migrasi disposable, cache Laravel, dan audit dependency nol. Status `LOCAL_VALIDATED / RELEASE_BOOTSTRAP_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production aktif tetap exact source `435dbfd252759fd8b7d43f44af69edfb39ee2102`, release `20260829175230-435dbfd`, rollback `20260829062031-b2790d6`; `BUSINESS_READY=false` sampai deploy terotorisasi, UAT runtime baru, dua pilot nyata, dan provider canary selesai
 
 ## Tujuan dokumen
 
@@ -15,6 +15,19 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
+
+- Bootstrap clean-artifact S364 untuk exact main
+  `b37db0810f64731e46f18d026452a6cf3f65e86c` membuktikan source archive tanpa
+  `vendor`, `node_modules`, `.env`, atau repository metadata dapat dipulihkan
+  menjadi runtime lokal. Instalasi Composer production penuh dan package
+  discovery lulus, 269 paket npm terpasang, TypeScript kritis serta build
+  5.133 modul lulus, 135 migrasi diterapkan pada SQLite sintetis, dan cache
+  config/417 route/25 view berhasil dibuat. Lockfile Composer/npm tidak
+  berubah dan audit npm/Composer/OSV nol. Bukti sintetis dipertahankan
+  terisolasi setelah safety guard menolak penghapusan sebelum mutasi. Tidak
+  ada data customer, secret, network produksi, atau mutasi production. Status
+  `LOCAL_VALIDATED / RELEASE_BOOTSTRAP_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`.
 
 - Rehearsal release exact-main S363 untuk kandidat kumulatif
   `b37db0810f64731e46f18d026452a6cf3f65e86c` telah menghasilkan archive,
