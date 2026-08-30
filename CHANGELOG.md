@@ -1,5 +1,21 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-31 - COYABAG promotion lifecycle guard sync
+
+- Ringkasan: menyinkronkan lifecycle promo server-authoritative, editor dan
+  activation dialog responsif, release, rollback, serta evidence runtime.
+- Provenance: exact pushed source
+  `22bb06607d682284aad58bebdfca4166122de5ce`, immutable release
+  `20260830-22bb066`, rollback `20260830-f4a5ccd`.
+- Evidence: focused 11/11, Laravel 523 total, storefront 216/216, browser
+  desktop/mobile, build/audit, backup, migration pending nol, readiness 42/42,
+  dua worker, dan buy-to-cart smoke lulus; percobaan deploy pertama otomatis
+  rollback sebelum promosi sukses pada exact artifact yang sama.
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false`.
+- Dokumen terdampak: Product, dossier/changelog COYABAG, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-31 - SagaBook staff expense edit candidate sync
 
 - Ringkasan: menyinkronkan edit pengeluaran own-row sebelum closing, guard

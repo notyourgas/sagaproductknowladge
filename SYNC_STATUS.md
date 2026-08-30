@@ -15,9 +15,34 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-08-31 WIB |
 | Branch aktif | isolated exact `origin/main` worktree |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `3b069e2f1065e134922a05bf91c2bdf3a0ee10f6` |
-| Informasi terakhir disinkronkan | Kandidat SagaBook S378 edit pengeluaran staff pada source `cbaa5dc4f89b2ae9c48fd24d748cbe3dcc55c2f8`. |
-| Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S377 dan `BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `83a0b45ca276b9f0320cfbc9a1a698174df5a4ba` |
+| Informasi terakhir disinkronkan | COYABAG promotion lifecycle guard pada source `22bb06607d682284aad58bebdfca4166122de5ce`. |
+| Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false`. |
+
+## COYABAG promotion lifecycle guard
+
+- Exact source `22bb06607d682284aad58bebdfca4166122de5ce` sudah push dan aktif
+  sebagai immutable release `20260830-22bb066`; rollback
+  `20260830-f4a5ccd` tersedia dan lulus readiness 42/42.
+- Promo baru selalu nonaktif, persentase dibatasi 1-100, dan diskon tidak dapat
+  melebihi subtotal. Lifecycle ditentukan backend dan aksi status memerlukan
+  permission, recent auth, acknowledgement, exact state, lock, serta audit.
+- Focused 11/11, Laravel 523 total, storefront 216/216, browser dua viewport,
+  build/audit, backup, worker, migration pending nol, readiness 42/42, dan
+  public smoke lulus. Deploy pertama otomatis rollback pada verifier source;
+  exact artifact yang sama berhasil dipromosikan setelah guard diperbaiki.
+- Commerce aktif untuk controlled trial. Shipping manual sembilan tujuan dan
+  enam exception pembayaran tetap menahan `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi COYABAG promotion lifecycle
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook S378 staff expense edit candidate
 

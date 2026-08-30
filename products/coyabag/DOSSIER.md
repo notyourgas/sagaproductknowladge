@@ -79,6 +79,19 @@ coverage nasional atau Delivery API aktif.
 Backup database COYABAG masih local-disk dan perlu dipindahkan ke backup offsite
 sebelum business readiness final.
 
+`CONFIRMED / PRODUCTION_DEPLOYED`: release `20260830-22bb066`, exact source
+`22bb06607d682284aad58bebdfca4166122de5ce`, dan rollback
+`20260830-f4a5ccd` menutup lifecycle promo. Promo baru selalu nonaktif;
+persentase dibatasi 1-100 dan diskon dihentikan pada subtotal. Aktivasi dan
+deaktivasi memerlukan permission, recent authentication, acknowledgement,
+exact expected state, transaction lock, dan audit. Editor menampilkan preview
+checkout, periode, kuota, serta state scheduled/active/inactive/expired/
+exhausted pada desktop dan mobile. Laravel 523 total/522 pass/satu controlled
+skip, storefront 216/216, browser dua viewport, build/audit, backup, rollback,
+worker, readiness 42/42, dan public smoke lulus. Percobaan deploy pertama
+gagal pada verifier source lalu otomatis rollback; guard diperbaiki dan exact
+artifact yang sama berhasil dipromosikan pada percobaan kedua.
+
 `CONFIRMED / PRODUCTION_DEPLOYED`: release `20260830-f4a5ccd`, exact source
 `f4a5ccd926c082c781cbfd5b58a2d408670eb912`, dan rollback
 `20260830-1ad8cbc` menambahkan penggabungan identitas pelanggan yang fail-closed.

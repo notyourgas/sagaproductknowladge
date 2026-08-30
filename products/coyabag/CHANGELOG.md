@@ -4,6 +4,29 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-30 - Promotion lifecycle guard deployed
+
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false` dari exact
+  source `22bb06607d682284aad58bebdfca4166122de5ce`, immutable release
+  `20260830-22bb066`, dan rollback `20260830-f4a5ccd`.
+- Promo baru selalu tersimpan nonaktif. Persentase dibatasi 1-100 dan diskon
+  legacy tidak dapat melampaui subtotal.
+- Aktivasi/deaktivasi memakai lifecycle server-authoritative, permission,
+  recent authentication, acknowledgement, expected state, transaction lock,
+  serta audit. Campaign expired atau exhausted tetap fail-closed.
+- Editor dan daftar menampilkan preview checkout, periode, kuota, remaining
+  quota, serta state scheduled/active/inactive/expired/exhausted secara
+  responsif dan aksesibel.
+- Focused 11/11 dengan 100 assertion, Laravel 523 total/522 pass/satu
+  controlled skip dengan 5.233 assertion, storefront 216/216, browser desktop
+  dan mobile, build/audit, backup, migration pending nol, readiness 42/42, dua
+  worker, dan buy-to-cart public smoke lulus.
+- Percobaan deploy pertama berhenti pada verifier source dan otomatis rollback
+  ke release sebelumnya. Guard diperbaiki, lalu exact artifact yang sama
+  berhasil dipromosikan. Shipping tetap manual untuk sembilan tujuan dan enam
+  exception pembayaran lama tetap terbuka, sehingga `BUSINESS_READY=false`.
+
 ## 2026-08-30 - Customer identity merge guard deployed
 
 - Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /

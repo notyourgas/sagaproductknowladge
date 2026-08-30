@@ -76,12 +76,16 @@ COMMERCE_ACTIVE`. Business readiness: `BLOCKED`.
   bagian; audit tetap `report_only` dan tidak menghapus record.
 - Launch UAT 15 langkah dan release sign-off sudah lulus. Readiness gate tetap
   enforced dan keputusan runtime adalah `COMMERCE_ACTIVE`.
-- Release aktif `20260830-f4a5ccd` dengan exact material source
-  `f4a5ccd926c082c781cbfd5b58a2d408670eb912` melayani production;
-  rollback langsung `20260830-1ad8cbc` tersedia, sudah direstorasi dari
-  artefak checksum-verified, kembali lulus readiness 42/42, dan dilindungi
-  sebagai release `previous`. Exact lineage production
-  sudah berada pada remote branch kanonik. Payment Detail kini menunjukkan
+- Release aktif `20260830-22bb066` dengan exact material source
+  `22bb06607d682284aad58bebdfca4166122de5ce` melayani production;
+  rollback langsung `20260830-f4a5ccd` tersedia dan lulus readiness 42/42.
+  Promo baru selalu disimpan nonaktif; persentase dibatasi 1-100 dan diskon
+  tidak dapat melampaui subtotal. Aktivasi/deaktivasi memakai lifecycle
+  server-authoritative, exact-state concurrency guard, acknowledgement,
+  recent authentication, transaction lock, serta audit. Status scheduled,
+  active, inactive, expired, dan exhausted tampil konsisten pada daftar dan
+  editor responsif. Exact lineage production sudah berada pada remote branch
+  kanonik. Payment Detail kini menunjukkan
   state sesi checkout server-authoritative, expiry, dan histori attempt aman;
   Finance dapat menyiapkan sesi hanya dengan `payments.manage`, recent auth,
   2FA, rate limit, serta state yang mengizinkan retry. Unknown attempt tetap

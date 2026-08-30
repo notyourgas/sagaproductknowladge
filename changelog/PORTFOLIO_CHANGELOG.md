@@ -1,5 +1,23 @@
 # Portfolio Changelog
 
+## 2026-08-30 - COYABAG promotion lifecycle guard deployed
+
+- Exact pushed source `22bb06607d682284aad58bebdfca4166122de5ce`
+  aktif pada immutable release `20260830-22bb066`; rollback
+  `20260830-f4a5ccd` tersedia dan lulus readiness 42/42.
+- Promo baru selalu nonaktif; nilai persentase dibatasi 1-100 dan diskon tidak
+  dapat melebihi subtotal. Lifecycle scheduled, active, inactive, expired, dan
+  exhausted dihitung server-side.
+- Aktivasi/deaktivasi memerlukan permission, recent auth, acknowledgement,
+  expected state, lock transaksi, serta audit; editor dan dialog lulus browser
+  desktop/mobile tanpa overflow.
+- Laravel 523, storefront 216/216, build/audit, backup, worker, migration,
+  readiness 42/42, dan buy-to-cart smoke lulus. Deploy pertama otomatis
+  rollback saat verifier source menolak kandidat; guard diperbaiki dan exact
+  artifact yang sama kemudian aktif. Status `PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false` karena shipping
+  masih manual pada sembilan tujuan dan enam exception pembayaran masih terbuka.
+
 ## 2026-08-31 - SagaBook staff expense edit candidate pushed
 
 - Source `cbaa5dc4f89b2ae9c48fd24d748cbe3dcc55c2f8` menambahkan edit

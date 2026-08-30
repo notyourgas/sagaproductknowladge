@@ -1,5 +1,21 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+COYABAG exact pushed source
+`22bb06607d682284aad58bebdfca4166122de5ce` aktif pada immutable release
+`20260830-22bb066` dengan rollback `20260830-f4a5ccd`. Promo baru selalu
+nonaktif; persentase dibatasi 1-100 dan diskon tidak dapat melebihi subtotal.
+Lifecycle scheduled/active/inactive/expired/exhausted ditentukan backend;
+aktivasi/deaktivasi memerlukan permission, recent authentication,
+acknowledgement, expected state, transaction lock, dan audit. Editor promo
+memuat preview checkout, periode, kuota, remaining quota, dialog aksesibel,
+serta responsivitas desktop/mobile tanpa overflow. Laravel 523 total/522 pass/
+satu controlled skip, storefront 216/216, browser dua viewport, build/audit,
+backup, rollback, worker, migration pending nol, readiness 42/42, dan public
+smoke lulus. Percobaan deploy pertama otomatis rollback karena verifier source;
+guard diperbaiki dan exact artifact yang sama berhasil dipromosikan. Commerce
+tetap `COMMERCE_ACTIVE`, tetapi shipping manual sembilan tujuan dan enam
+exception pembayaran menahan `BUSINESS_READY=false`.
+
 SagaBook kandidat S378 source
 `cbaa5dc4f89b2ae9c48fd24d748cbe3dcc55c2f8` sudah dipush dan tervalidasi
 lokal. Staff dapat mengedit nominal, metode pembayaran, kategori, dan catatan
