@@ -12,12 +12,33 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-30T11:53:00+07:00 |
-| Branch aktif | `codex/s368-restore-helper-binding-knowledge` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-30T12:10:00+07:00 |
+| Branch aktif | `codex/s369-exact-main-rehearsal-knowledge` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `eebfb4afba05efb6b7a8c86ca092e9e54bb45af4` |
-| Informasi terakhir disinkronkan | SagaBook S368 release helper binding pada exact main `30c343eb7d140dd3c45cded0f1a91d4527cdd44b`. |
-| Status sinkronisasi | `CONFIRMED / MERGED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah. |
+| Baseline sebelum pembaruan | `09f72f29eaf6c28051a8e8c51acfcd13594f9e2a` |
+| Informasi terakhir disinkronkan | SagaBook S369 exact-main artifact rehearsal pada source `30c343eb7d140dd3c45cded0f1a91d4527cdd44b`. |
+| Status sinkronisasi | `CONFIRMED / LOCAL_VALIDATED / RELEASE_ARTIFACT_READY / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah. |
+
+## SagaBook S369 exact-main artifact rehearsal
+
+- Exact source `30c343eb7d140dd3c45cded0f1a91d4527cdd44b` mempunyai empat
+  artefak release identik pada dua disk fisik berbeda.
+- Capacity, storage health, reparse guard, manifest/checksum, safe archive,
+  exact bundle HEAD, rollback ancestry, dua restore disposable, cleanup, dan
+  receipt binding lulus.
+- Status `CONFIRMED / LOCAL_VALIDATED / RELEASE_ARTIFACT_READY /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap release S367.
+
+## File yang berubah pada sinkronisasi SagaBook S369
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook S368 release helper binding
 

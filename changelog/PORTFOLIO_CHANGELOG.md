@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-08-30 - SagaBook S369 exact-main artifact rehearsal
+
+- Exact source `30c343eb7d140dd3c45cded0f1a91d4527cdd44b` mempunyai archive,
+  bundle, metadata, dan manifest identik pada dua disk fisik berbeda.
+- Dua restore disposable, rollback ancestry, bundle HEAD, cleanup, receipt
+  binding, capacity, dan storage safety lulus.
+- Status `LOCAL_VALIDATED / RELEASE_ARTIFACT_READY /
+  IMPLEMENTED_NOT_DEPLOYED`; production SagaBook tidak berubah.
+
 ## 2026-08-30 - SagaBook S368 exact-candidate release helper binding
 
 - Exact main `30c343eb7d140dd3c45cded0f1a91d4527cdd44b` menolak helper

@@ -7,6 +7,18 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Rehearsal exact-main S369 pada source
+  `30c343eb7d140dd3c45cded0f1a91d4527cdd44b` membentuk empat artefak
+  release identik pada dua disk fisik berbeda. Capacity minimum, NTFS/health,
+  reparse guard, archive entry, manifest/checksum, Git bundle exact HEAD,
+  rollback ancestry ke `b37db0810f64731e46f18d026452a6cf3f65e86c`, dua restore
+  disposable, cleanup, dan receipt binding semuanya lulus. Kedua receipt
+  byte-identik dengan SHA-256
+  `351b067ae02ff89f3461ab4b37ea0b5253cfc47e4327c663fd67c553dc3e8757`.
+  Tidak ada network production, data customer, atau mutasi production. Status
+  `CONFIRMED / LOCAL_VALIDATED / RELEASE_ARTIFACT_READY /
+  IMPLEMENTED_NOT_DEPLOYED`.
+
 - Hardening release-evidence S368 pada feature source
   `f40cf22689c21463a303bd7893749e092433d751` telah merge melalui PR #79 ke
   exact main `30c343eb7d140dd3c45cded0f1a91d4527cdd44b`. Helper evidence menolak

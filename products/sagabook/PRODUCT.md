@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 30 Agustus 2026 11:53 WIB
-Evidence status: exact main `30c343eb7d140dd3c45cded0f1a91d4527cdd44b` berstatus `CONFIRMED / MERGED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap exact source `b37db0810f64731e46f18d026452a6cf3f65e86c` pada immutable release `20260830042225-b37db08` dengan immediate rollback `20260829175230-435dbfd`. Fresh encrypted backup/checksum/capacity preflight/disposable restore lulus. Verifier independen lulus 23/23, kontrak post-switch 37/37, migration pending 0, report canary 32/32, service aktif, journal error 0, serta public/security smoke 3/3. Authenticated Owner/Staff UAT mobile+desktop diterima tanpa mutasi, issue, PII, atau secret. Production berstatus `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED / BUSINESS_READY=false`; residual gate hanya pilot dua studio dan provider canary.
+Updated: 30 Agustus 2026 12:10 WIB
+Evidence status: exact main `30c343eb7d140dd3c45cded0f1a91d4527cdd44b` berstatus `CONFIRMED / MERGED / LOCAL_VALIDATED / RELEASE_ARTIFACT_READY / IMPLEMENTED_NOT_DEPLOYED`. Archive, Git bundle, metadata, dan manifest identik pada dua disk fisik; dua restore disposable serta receipt binding lulus. Production tetap exact source `b37db0810f64731e46f18d026452a6cf3f65e86c` pada immutable release `20260830042225-b37db08` dengan immediate rollback `20260829175230-435dbfd`. Verifier independen lulus 23/23, kontrak post-switch 37/37, migration pending 0, report canary 32/32, service aktif, journal error 0, serta public/security smoke 3/3. Authenticated Owner/Staff UAT mobile+desktop diterima tanpa mutasi, issue, PII, atau secret. Production berstatus `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED / BUSINESS_READY=false`; residual gate hanya pilot dua studio dan provider canary.
 
 ## Tujuan dokumen
 
@@ -15,6 +15,18 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
+
+- Rehearsal exact-main S369 untuk source
+  `30c343eb7d140dd3c45cded0f1a91d4527cdd44b` menghasilkan archive, Git
+  bundle, metadata, dan manifest dengan checksum identik pada dua disk fisik
+  berbeda. Capacity, filesystem/health, reparse guard, exact source/tree,
+  rollback ancestry, safe archive entries, bundle HEAD, dua restore
+  disposable, cleanup, dan dua receipt binding lulus. Manifest SHA-256
+  `298b931d106fddc0fdb091c51637f44af8d376fbdebd90c36813b2d44740910d`;
+  receipt identik SHA-256
+  `351b067ae02ff89f3461ab4b37ea0b5253cfc47e4327c663fd67c553dc3e8757`.
+  Production dan data customer tidak disentuh. Status `CONFIRMED /
+  LOCAL_VALIDATED / RELEASE_ARTIFACT_READY / IMPLEMENTED_NOT_DEPLOYED`.
 
 - Hardening release-evidence S368 pada feature source
   `f40cf22689c21463a303bd7893749e092433d751` telah merge melalui PR #79 ke
