@@ -4,6 +4,26 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-30 - Payment retry guard deployed
+
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false` dari exact
+  source `9d16ae1677f43ca1210faa8a41d5baf7db93a799`, immutable release
+  `20260830-9d16ae1`, dan rollback `20260830-f45f8f6`.
+- Backend menentukan eligibility pemeriksaan provider dan endpoint memeriksa
+  kontrak yang sama sebelum operasi provider dipanggil. Pending/recovery pada
+  provider aktif dapat diproses; matched, simulasi, manual, provider nonaktif,
+  dan amount mismatch tetap fail-closed.
+- Aksi dipindahkan dari action bar ke panel rekonsiliasi dengan reason, status,
+  label recovery, processing state, dan layout desktop/mobile. Amount mismatch
+  diarahkan ke exception review tanpa koreksi paid otomatis.
+- Focused 11/11 dengan 198 assertion, Laravel 519 total/518 pass/satu
+  controlled skip dengan 5.166 assertion, storefront 216/216, browser Payment
+  multi-viewport, build, Pint, audit, backup, worker, readiness 42/42, migration
+  pending nol, serta public smoke lulus.
+- Enam exception lama tetap terbuka; shipping manual sembilan tujuan dan
+  residual bisnis lain tetap menahan `BUSINESS_READY`.
+
 ## 2026-08-30 - Payment reconciliation lineage deployed
 
 - Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /

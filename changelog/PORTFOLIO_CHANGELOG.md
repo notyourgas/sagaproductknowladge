@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-30 - COYABAG payment retry guard deployed
+
+- Exact pushed source `9d16ae1677f43ca1210faa8a41d5baf7db93a799`
+  aktif pada immutable release `20260830-9d16ae1`; rollback
+  `20260830-f45f8f6` tersedia.
+- Retry/check provider kini memakai eligibility backend yang sama pada payload
+  dan endpoint. Aksi recovery tampil kontekstual; matched, simulasi, manual,
+  provider nonaktif, dan amount mismatch tertahan sebelum provider dipanggil.
+- Laravel 519, storefront 216/216, browser Payment desktop/mobile, build/audit,
+  backup, readiness 42/42, worker, migration, dan public smoke lulus. Enam
+  exception historis tetap memerlukan operator; status
+  `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE /
+  BUSINESS_READY=false`.
+
 ## 2026-08-30 - COYABAG payment reconciliation lineage deployed
 
 - Exact pushed source `f45f8f6836e627227d74dc976e10da582d309421`

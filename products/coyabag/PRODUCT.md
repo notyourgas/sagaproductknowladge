@@ -76,9 +76,9 @@ COMMERCE_ACTIVE`. Business readiness: `BLOCKED`.
   bagian; audit tetap `report_only` dan tidak menghapus record.
 - Launch UAT 15 langkah dan release sign-off sudah lulus. Readiness gate tetap
   enforced dan keputusan runtime adalah `COMMERCE_ACTIVE`.
-- Release aktif `20260830-f45f8f6` dengan exact material source
-  `f45f8f6836e627227d74dc976e10da582d309421` melayani production;
-  rollback langsung `20260830-5ee96a8` tersedia. Exact lineage production
+- Release aktif `20260830-9d16ae1` dengan exact material source
+  `9d16ae1677f43ca1210faa8a41d5baf7db93a799` melayani production;
+  rollback langsung `20260830-f45f8f6` tersedia. Exact lineage production
   sudah berada pada remote branch kanonik. Payment Detail kini menunjukkan
   state sesi checkout server-authoritative, expiry, dan histori attempt aman;
   Finance dapat menyiapkan sesi hanya dengan `payments.manage`, recent auth,
@@ -95,7 +95,12 @@ COMMERCE_ACTIVE`. Business readiness: `BLOCKED`.
   pencocokan terbaru dengan run, scope, provider, nominal pesanan, nominal
   teramati, selisih, dan waktu. Snapshot terenkripsi serta summary run tidak
   diteruskan ke browser; nominal provider yang hilang tidak ditampilkan sebagai
-  nol dan selisih tetap fail-closed. Pengiriman memakai tarif manual yang siap pada sembilan kota;
+  nol dan selisih tetap fail-closed. Eligibility pemeriksaan provider kini
+  server-authoritative: retry hanya tersedia untuk transaksi provider aktif
+  yang pending atau membutuhkan recovery. Matched, simulasi, transfer manual,
+  provider nonaktif, dan amount mismatch tertahan di backend sekaligus UI;
+  mismatch diarahkan ke antrean exception sebelum pemeriksaan baru. Pengiriman
+  memakai tarif manual yang siap pada sembilan kota;
   Delivery API nasional belum diaktifkan. Keputusan barang retur yang masih
   dikarantina kini memakai dialog terfokus dengan ringkasan jumlah, kondisi,
   keputusan, dan dampak saldo. Alasan 8-240 karakter wajib disimpan pada

@@ -1,8 +1,8 @@
 # Saga Product — Master Knowledge for ChatGPT
 
 COYABAG exact pushed source
-`f45f8f6836e627227d74dc976e10da582d309421` aktif pada immutable release
-`20260830-f45f8f6` dengan rollback `20260830-5ee96a8`. Readiness 42/42 dan
+`9d16ae1677f43ca1210faa8a41d5baf7db93a799` aktif pada immutable release
+`20260830-9d16ae1` dengan rollback `20260830-f45f8f6`. Readiness 42/42 dan
 checkout `COMMERCE_ACTIVE`; SagaDev controlled trial dibatasi Rp500.000 per
 transaksi serta lima intent baru per hari. Payment Detail menyediakan recovery
 sesi server-authoritative dengan permission, recent auth, 2FA, rate limit, dan
@@ -13,7 +13,11 @@ referensi, usia, dan guidance; resolve memerlukan recent auth, catatan, serta
 konfirmasi eksplisit dan tidak mengubah order menjadi paid. Detail pembayaran
 gateway juga menunjukkan sepuluh item rekonsiliasi terbaru dengan run, scope,
 provider, expected/observed amount, selisih, dan waktu tanpa mengirim snapshot
-terenkripsi atau summary run; selisih tetap fail-closed. Shipping manual
+terenkripsi atau summary run; selisih tetap fail-closed. Eligibility retry
+provider kini server-authoritative pada payload dan endpoint. Pending/recovery
+provider aktif dapat diperiksa dari panel rekonsiliasi; matched, simulasi,
+manual, provider nonaktif, dan amount mismatch tidak dapat memanggil provider.
+Shipping manual
 siap pada sembilan kota, belum coverage nasional atau Delivery API aktif;
 Admin Inventory kini menampilkan dampak saldo dan mewajibkan alasan ledger/audit
 sebelum keputusan karantina. Alert stok rendah memiliki antrean triase
