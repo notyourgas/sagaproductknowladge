@@ -76,9 +76,15 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 - Launch UAT 15 langkah sudah lulus 15/15 dan sign-off diizinkan. Checkout
   publik tetap `PRODUCTION_READINESS_BLOCKED` hanya sampai release sign-off
   dicatat; deployment acceptance hotfix tidak membuat payment intent baru.
-- Release aktif `20260830-3155c85` dengan exact material source
-  `3155c85c112b2a60791c4555d60caf934bede7c5` melayani production;
-  rollback langsung `20260830-eb8dd39` dipertahankan. Detail Pesanan kini
+- Release aktif `20260830-a604cfc` dengan exact material source
+  `a604cfccd02a3a572f56ad9375d6ae4933215f5f` melayani production;
+  rollback langsung `20260830-3155c85` dipertahankan. Owner/Admin kini dapat
+  memilih maksimal 20 pesanan eligible pada daftar Pesanan lalu memindahkan
+  batch secara atomik dari `confirmed/unfulfilled` menjadi
+  `processing/picking`. Hanya pesanan non-simulasi dengan pembayaran `paid`
+  yang eligible; satu guard basi atau item tidak eligible menolak seluruh
+  batch tanpa mutasi parsial. Finance tidak menerima kontrol maupun akses
+  route mutasi. Detail Pesanan juga
   menyediakan catatan internal append-only untuk owner/admin dengan permission
   `orders.manage`. Catatan tidak dikirim kepada pelanggan dan tidak tersedia
   pada response Finance; audit hanya merekam ID serta panjang catatan, bukan

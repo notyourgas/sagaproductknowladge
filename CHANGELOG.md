@@ -1,5 +1,21 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-30 - COYABAG atomic bulk order processing sync
+
+- Ringkasan: menyinkronkan flow Owner/Admin untuk memulai picking pada batch
+  pesanan eligible secara all-or-nothing beserta boundary Finance dan guard
+  state basi.
+- Provenance: exact material source
+  `a604cfccd02a3a572f56ad9375d6ae4933215f5f`, immutable release
+  `20260830-a604cfc`, rollback `20260830-3155c85`.
+- Evidence: Laravel 500 total, storefront 216/216, browser desktop/mobile,
+  build/audit, exact artifact, backup/rollback, worker, runtime contract, dan
+  public smoke lulus.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /
+  NOT_PRODUCTION_ACTIVATED`; readiness 41/42 dan `BUSINESS_READY=false`.
+- Dokumen terdampak: Product dan changelog COYABAG, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-30 - SagaView S360 Finalize evidence link revalidation sync
 
 - Ringkasan: menyinkronkan revalidasi custody path evidence tepat sebelum

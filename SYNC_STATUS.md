@@ -12,12 +12,37 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-30T09:15:00+07:00 |
-| Branch aktif | `codex/s360-sagaview-finalize-evidence-link-revalidation-knowledge` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-30T10:10:00+07:00 |
+| Branch aktif | `codex/coyabag-admin-uiux-knowledge` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `fabbe189bd7565ec6b2d1b3f7f813a5b4af261d2` |
-| Informasi terakhir disinkronkan | SagaView S360 Finalize evidence link revalidation pada exact source `5cbe82027896b012086b92fdda38f4c9099cb954`. |
-| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; `BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `e2771debbf6b4e68ee6894a57258409264ab3db6` |
+| Informasi terakhir disinkronkan | COYABAG atomic bulk order processing pada exact material source `a604cfccd02a3a572f56ad9375d6ae4933215f5f`. |
+| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED / NOT_PRODUCTION_ACTIVATED`; readiness 41/42 dan `BUSINESS_READY=false`. |
+
+## COYABAG atomic bulk order processing
+
+- Exact material source `a604cfccd02a3a572f56ad9375d6ae4933215f5f`
+  aktif pada immutable release `20260830-a604cfc`; rollback
+  `20260830-3155c85` tersedia.
+- Owner/Admin dapat memproses maksimal 20 pesanan eligible menjadi
+  `processing/picking` secara atomik. Pesanan harus non-simulasi,
+  `paid/confirmed/unfulfilled`; satu guard basi menolak seluruh batch.
+- Finance tidak memiliki UI maupun izin route mutasi. Payment, stok,
+  pengiriman, provider, dan item pesanan tidak berubah.
+- Laravel 500 total: 499 lulus, satu controlled skip, 4.861 assertion;
+  storefront 216/216, browser desktop/mobile, build/audit, backup, worker,
+  exact runtime contract, dan public smoke lulus.
+- Readiness tetap fail-closed 41/42 karena release sign-off. Commerce/provider
+  tidak diaktifkan.
+
+## File yang berubah pada sinkronisasi COYABAG atomic bulk order processing
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaView S360 Finalize evidence link revalidation
 

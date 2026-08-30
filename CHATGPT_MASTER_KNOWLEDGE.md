@@ -1,5 +1,16 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+COYABAG atomic bulk order processing aktif pada exact material source
+`a604cfccd02a3a572f56ad9375d6ae4933215f5f`, immutable release
+`20260830-a604cfc`, dengan rollback `20260830-3155c85`. Owner/Admin dapat
+memilih maksimal 20 pesanan non-simulasi yang `paid/confirmed/unfulfilled`
+untuk transisi atomik menjadi `processing/picking`; satu guard basi atau item
+tidak eligible menolak seluruh batch. Finance tidak menerima UI maupun izin
+route mutasi. Laravel 500 total, storefront 216/216, browser desktop/mobile,
+build/audit, backup, worker, exact runtime, dan public smoke lulus. Status tetap
+`PRODUCTION_DEPLOYED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`;
+readiness fail-closed 41/42 dan provider/commerce tidak diaktifkan.
+
 SagaView S360 exact pushed source
 `5cbe82027896b012086b92fdda38f4c9099cb954` berstatus `PUSHED /
 LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. S344 Finalize kini memeriksa

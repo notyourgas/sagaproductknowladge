@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-30 - COYABAG atomic bulk order processing
+
+- Exact material source `a604cfccd02a3a572f56ad9375d6ae4933215f5f`
+  aktif pada immutable release `20260830-a604cfc`; rollback
+  `20260830-3155c85` tersedia.
+- Owner/Admin dapat mengubah maksimal 20 pesanan paid yang eligible menjadi
+  `processing/picking` secara all-or-nothing. Guard basi membatalkan seluruh
+  batch; Finance tidak memiliki UI maupun izin route mutasi.
+- Laravel 500 total, storefront 216/216, browser desktop/mobile, build/audit,
+  backup, worker, exact runtime, dan public smoke lulus. Readiness tetap 41/42
+  dan commerce/provider tidak diaktifkan.
+
 ## 2026-08-30 - SagaView S360 Finalize evidence link revalidation
 
 - Exact pushed source `5cbe82027896b012086b92fdda38f4c9099cb954`
