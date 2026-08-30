@@ -22,7 +22,15 @@ filter, dan `dataVersion` dengan layar serta memakai authenticated XLSX/CSV
 download. Full PHP 1.315/1.315, focused 53/53, frontend 10/10, browser 6/6,
 migration rehearsal, build/typecheck, readiness lokal 100/100, dan audit nol
 lulus. Hosted CI belum berjalan karena account-level runner billing gate.
-Production tetap exact release S367 dan tidak berubah.
+Exact cumulative source hasil merge PR #80
+`4b4d6f645153ccbaaca0be7fc1cb7bf5518d787f` kini aktif pada immutable release
+`20260830064046-4b4d6f6`, dengan rollback `20260830042225-b37db08`. Artifact,
+fresh encrypted backup/checksum/disposable restore, migration rehearsal, atomic
+switch, verifier 23/23, report canary 32/32, migration pending 0,
+service/journal, smoke/security 3/3, dan authenticated Owner/operator UAT
+mobile+desktop lulus. Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+UAT_ACCEPTED / BUSINESS_READY=false`; dua studio pilot dan provider canary
+tetap residual gate.
 
 SagaView S364 exact pushed source
 `2371db8e746aeaed6a76c21daa80e14bc3ff77fb` berstatus `PUSHED /

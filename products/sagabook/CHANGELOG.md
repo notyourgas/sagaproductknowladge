@@ -1,5 +1,21 @@
 # SagaBook Changelog
 
+## 2026-08-30 - Production activation exact main S370
+
+- Exact cumulative source `4b4d6f645153ccbaaca0be7fc1cb7bf5518d787f`
+  aktif pada immutable release `20260830064046-4b4d6f6`; immediate rollback
+  `20260830042225-b37db08` tersedia dan kompatibel.
+- Artifact immutable, fresh encrypted backup/checksum/disposable restore,
+  migration rollback/reapply rehearsal, full exact-commit gate, atomic switch,
+  verifier independen 23/23, report canary 32/32, migration pending 0,
+  service/journal, dan public/security smoke 3/3 lulus.
+- Authenticated read-only Owner/operator UAT pada 390x844 dan 1440x900 lulus
+  tanpa request, console, page, server, mutation, overflow, PII, atau secret
+  issue; target minimum 44 px dan accessibility modes lulus.
+- Status `CONFIRMED / PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+  UAT_ACCEPTED / BUSINESS_READY=false`; pilot dua studio dan provider canary
+  tetap residual gate.
+
 ## 2026-08-30 - Context, reporting, billing, and navigation repair S370
 
 - Exact pushed source `a9199bca9914b6466cc603a9908c7668f175485b` melalui
@@ -16,8 +32,9 @@
   frontend 10/10, browser 6/6, typecheck/build/format/diff, strict local
   readiness 100/100, dan audit dependensi nol lulus. GitHub-hosted runner tidak
   memulai step karena gate billing/spending akun.
-- Status `CONFIRMED / PUSHED / LOCAL_VALIDATED / CI_BLOCKED /
-  IMPLEMENTED_NOT_DEPLOYED`; production tetap release S367 dan tidak berubah.
+- Status source saat entry dibuat `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  CI_BLOCKED`; perubahan kemudian diaktifkan melalui release production S370
+  di atas.
 
 ## 2026-08-30 - Exact-main release artifact rehearsal S369
 
