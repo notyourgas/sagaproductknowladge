@@ -15,9 +15,32 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-08-31 WIB |
 | Branch aktif | isolated exact `origin/main` worktree |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `fc533f6974d0e1e0a8e512896cd793b5d5bac857` |
-| Informasi terakhir disinkronkan | COYABAG Media Library Operations exact source `d826c297ff6cd7b80c0cb0d86b3acf33dc3feb83` aktif pada release `20260831-d826c29`. |
-| Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `885b33154423fd4c438207cc9d1e719a1956cc31` |
+| Informasi terakhir disinkronkan | SagaBook S381 exact main `fb55b937fe0298f737ab276395cc27eb1fb99a60` staging-ready dengan artifact dan backup/restore fresh; production tetap S379. |
+| Status sinkronisasi | `CONFIRMED / MERGED / SOURCE_PUSHED / LOCAL_VALIDATED / RELEASE_ARTIFACT_READY / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`. |
+
+## SagaBook S381 correction dan staging readiness
+
+- Wrapper Linux disposable mengisolasi `ERR` trap selama capture expected
+  failure dan memulihkan trap sebelumnya; transform pointer paling spesifik
+  dijalankan dahulu agar tidak terjadi prefix collision.
+- Exact main `fb55b937fe0298f737ab276395cc27eb1fb99a60` lulus full PHP 1.291/1.291,
+  focused 3/3, tooling 48/48, matrix Linux lengkap, build/typecheck,
+  Pint/Bash/diff, dan audit dependensi nol.
+- Immutable candidate serta fresh encrypted backup/checksum/disposable restore
+  sudah siap. Shared release lock, upload activation, atomic switch,
+  production verifier/UAT, dan actual rollback drill belum dimulai.
+- Production tetap S379 `f13d6f4ae519bb42eeae4dcd81d213a015d11767`
+  pada release `20260830223233-f13d6f4`; `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi SagaBook S381
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook S380 merge dan release preparation
 

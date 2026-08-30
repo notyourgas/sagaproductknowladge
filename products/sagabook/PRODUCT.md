@@ -16,6 +16,24 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
 
+- Correction harness S381 pada feature source
+  `1c44ca1636ab0c051449d799bcfd454a4544f7b8` sudah merge melalui PR #88 ke
+  exact main `fb55b937fe0298f737ab276395cc27eb1fb99a60`. Wrapper disposable kini
+  mengisolasi `ERR` trap saat menangkap kegagalan yang memang diharapkan dan
+  mengurutkan transform pointer paling spesifik agar `COMPAT_CURRENT` tidak
+  tertimpa transform `CURRENT`. Matrix Linux disposable lulus untuk happy
+  path, lock contention, partial pointer, maintenance failure, journal kosong,
+  journal command failure, error nyata, output ambigu, accepted reactivation,
+  dan cleanup; receipt membuktikan production path serta shared release lock
+  tidak diakses. Full exact-main 1.291/1.291 (14.615 assertion), focused 3/3
+  (70 assertion), tooling 48/48, build/typecheck/Pint/Bash/diff, dan audit
+  Composer/OSV/npm nol lulus. Immutable candidate
+  `20260830234518-fb55b93` serta fresh encrypted backup/checksum/disposable
+  restore sudah siap, tetapi upload activation, shared lock, dan atomic switch
+  belum dimulai. Status `CONFIRMED / MERGED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  RELEASE_ARTIFACT_READY / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED`; production tetap S379 dan `BUSINESS_READY=false`.
+
 - Hardening rollback drill S380 pada exact feature source
   `47d7591ffc8cc31667f7b280765c950c427216b7` sudah merge melalui PR #87 ke
   exact main `7b918b0c80320e67db0b2485331469fbdfa31d57` dengan tree identik

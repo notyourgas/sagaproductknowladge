@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-31 - SagaBook S381 rollback rehearsal staging-ready
+
+- Exact main `fb55b937fe0298f737ab276395cc27eb1fb99a60` memperbaiki recursive
+  `ERR` trap dan collision transform pointer pada wrapper Linux disposable.
+- Matrix happy/lock/partial-pointer/maintenance/journal/reactivation/cleanup
+  lulus tanpa mengakses production path atau shared release lock.
+- Full exact-main 1.291/1.291, focused 3/3, tooling 48/48, build/typecheck,
+  format/Bash, dan audit dependensi nol lulus. Artifact immutable serta fresh
+  encrypted backup/checksum/disposable restore sudah siap.
+- Status `MERGED / SOURCE_PUSHED / LOCAL_VALIDATED / RELEASE_ARTIFACT_READY /
+  STAGING_READY / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED /
+  BUSINESS_READY=false`; production tetap S379 dan atomic switch masih HOLD.
+
 ## 2026-08-31 - COYABAG media library operations deployed
 
 - Exact pushed source `d826c297ff6cd7b80c0cb0d86b3acf33dc3feb83`
