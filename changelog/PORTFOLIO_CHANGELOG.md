@@ -1,8 +1,9 @@
 # Portfolio Changelog
 
-## 2026-08-31 - SagaBook S380 rollback drill hardening candidate
+## 2026-08-31 - SagaBook S380 rollback drill hardening merged, release blocked
 
-- Exact pushed source `47d7591ffc8cc31667f7b280765c950c427216b7`
+- Feature source `47d7591ffc8cc31667f7b280765c950c427216b7` sudah
+  merge ke exact main `7b918b0c80320e67db0b2485331469fbdfa31d57` dan
   menambahkan harness rollback production approval-gated, lock eksklusif,
   provenance accepted/rollback, backup/restore binding, migration parity,
   atomic pointer switch, fail-safe reactivation, smoke, service, dan journal.
@@ -10,8 +11,10 @@
   defense-in-depth mempertahankan error nyata serta menolak output ambigu.
 - Full PHP 1.323/1.323, focused 2/2, release-hardening 20/20, build/typecheck,
   Bash syntax, format/diff, dan audit dependensi nol lulus. Status
-  `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
-  tetap S379 dan `BUSINESS_READY=false`.
+  `MERGED / SOURCE_PUSHED / LOCAL_VALIDATED / RELEASE_PREPARATION_BLOCKED /
+  IMPLEMENTED_NOT_DEPLOYED`. Rehearsal Linux disposable tidak menerbitkan
+  receipt setelah dua correction round, sehingga artifact/backup/switch tidak
+  dimulai; production tetap S379 dan `BUSINESS_READY=false`.
 
 ## 2026-08-31 - COYABAG content publication control deployed
 

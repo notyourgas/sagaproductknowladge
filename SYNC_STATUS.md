@@ -16,10 +16,10 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Branch aktif | isolated exact `origin/main` worktree |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | `db6b4a1aec6401e1fb8f403ef625b0ea46e852c6` |
-| Informasi terakhir disinkronkan | SagaBook S380 rollback drill hardening pada exact pushed source `47d7591ffc8cc31667f7b280765c950c427216b7`; production tetap S379. |
-| Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`. |
+| Informasi terakhir disinkronkan | SagaBook S380 merged ke exact main `7b918b0c80320e67db0b2485331469fbdfa31d57`; release preparation fail-closed pada rehearsal Linux disposable. |
+| Status sinkronisasi | `CONFIRMED / MERGED / SOURCE_PUSHED / LOCAL_VALIDATED / RELEASE_PREPARATION_BLOCKED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`. |
 
-## SagaBook S380 rollback drill hardening
+## SagaBook S380 merge dan release preparation
 
 - Harness production baru mewajibkan approval, root, release lock eksklusif,
   exact accepted/rollback provenance, backup terenkripsi/checksum/disposable
@@ -27,7 +27,12 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
   accepted reactivation.
 - Journal quiet mode dan helper defense-in-depth memperbaiki false-negative
   output kosong tanpa menyembunyikan baris error nyata atau output ambigu.
-- Source `47d7591ffc8cc31667f7b280765c950c427216b7` telah push dan local-validated;
+- Feature source `47d7591ffc8cc31667f7b280765c950c427216b7` telah merge ke exact
+  main `7b918b0c80320e67db0b2485331469fbdfa31d57`. Fresh exact-main gate
+  local/VPS lulus, tetapi rehearsal Linux disposable berhenti pada wrapper
+  happy-path sebelum receipt terbit setelah dua correction round.
+- Artifact, fresh backup/restore, shared release lock, dan atomic switch tidak
+  dimulai. Source sudah merge tetapi delivery tetap release-blocked;
   production tetap source S379 `f13d6f4ae519bb42eeae4dcd81d213a015d11767`
   pada release `20260830223233-f13d6f4`.
 - Full PHP 1.323/1.323 (14.812 assertion), focused/release-hardening,
