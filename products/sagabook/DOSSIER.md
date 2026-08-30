@@ -7,6 +7,17 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Exact cumulative source `b37db0810f64731e46f18d026452a6cf3f65e86c`
+  aktif pada immutable release `20260830042225-b37db08`; immediate rollback
+  `20260829175230-435dbfd` tersedia dan kompatibel. Fresh encrypted backup,
+  checksum, capacity preflight, disposable restore, full release gate,
+  verifier independen 23/23, kontrak post-switch 37/37, report canary 32/32,
+  migration pending 0, service/journal, dan public/security smoke 3/3 lulus.
+  Authenticated read-only Owner/Staff UAT mobile+desktop diterima tanpa mutasi,
+  issue, PII, atau secret. Status `CONFIRMED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / UAT_ACCEPTED / BUSINESS_READY=false`; pilot dua
+  studio dan provider canary tetap residual gate.
+
 - Closing Staff S359/S362 feature source
   `c50ef8b60487aee6775cc441151a6c8575500cdf` telah merge melalui PR #78 ke
   exact main `b37db0810f64731e46f18d026452a6cf3f65e86c` dan memisahkan tiga hal yang
