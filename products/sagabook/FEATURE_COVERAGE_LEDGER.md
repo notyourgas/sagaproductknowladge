@@ -1,6 +1,17 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 30 Agustus 2026 08:06 WIB
+Evidence cut-off: 30 Agustus 2026 09:09 WIB
+
+Paket persetujuan kandidat S365 telah `LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED` pada exact main
+`b37db0810f64731e46f18d026452a6cf3f65e86c`. Binding memvalidasi tree Git,
+production aktif, rollback, 6 commit/24 file delta, tiga feature commit,
+artifact, serta receipt S363/S364. Verifier 21/21 dan tamper matrix 8/8 lulus;
+candidate/tree/receipt/approval/gate drift, klaim secret, dan overclaim status
+ditolak. Production snapshot stabil, service aktif, migrasi pending 0, canary
+32/32, smoke 3/3, security 2/3 karena HSTS `/up` belum dideploy. Fresh
+encrypted backup/restore, approval exact SHA, atomic switch, post-switch
+verification, dan authenticated UAT tetap gate.
 
 Bootstrap clean-artifact S364 telah `LOCAL_VALIDATED /
 RELEASE_BOOTSTRAP_VALIDATED / IMPLEMENTED_NOT_DEPLOYED` pada exact main

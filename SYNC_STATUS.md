@@ -12,12 +12,33 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-30T08:25:00+07:00 |
-| Branch aktif | `codex/coyabag-admin-uiux-knowledge` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-30T09:09:00+07:00 |
+| Branch aktif | `codex/s365-candidate-approval-knowledge` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `7d3bcc8b33048be454138bcd03cbeb707dc1bb3a` |
-| Informasi terakhir disinkronkan | COYABAG Admin private order notes pada exact source `3155c85c112b2a60791c4555d60caf934bede7c5`, release `20260830-3155c85`. |
-| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED / NOT_PRODUCTION_ACTIVATED`; `BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `fe6786675f0d2f7d9c154dbaa51d79825bbaa080` |
+| Informasi terakhir disinkronkan | SagaBook S365 candidate approval packet pada exact main `b37db0810f64731e46f18d026452a6cf3f65e86c`. |
+| Status sinkronisasi | `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; `BUSINESS_READY=false`. |
+
+## SagaBook S365 candidate approval packet
+
+- Exact kandidat `b37db0810f64731e46f18d026452a6cf3f65e86c` terikat ke tree Git,
+  production/rollback, tiga feature commit, artifact, dan receipt S363/S364.
+- Candidate verifier 21/21 dan tamper matrix 8/8 lulus. Production tetap
+  source `435dbfd252759fd8b7d43f44af69edfb39ee2102`, release
+  `20260829175230-435dbfd`, rollback `20260829062031-b2790d6`.
+- Tidak ada secret, data customer, fresh backup production, deploy, atau mutasi
+  production. Fresh backup/restore, approval exact SHA, atomic switch, dan
+  post-switch UAT masih wajib.
+
+## File yang berubah pada sinkronisasi SagaBook S365
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG Admin private order notes
 
