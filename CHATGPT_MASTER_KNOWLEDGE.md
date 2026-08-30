@@ -11,6 +11,18 @@ PowerShell/pwsh, build/budget/audit, clean, dan remote exact lulus. Production
 tidak berubah; authenticated UAT serta visual review masih wajib sehingga
 `BUSINESS_READY=false`.
 
+COYABAG Admin private order notes aktif pada exact material source
+`3155c85c112b2a60791c4555d60caf934bede7c5`, immutable release
+`20260830-3155c85`, dengan rollback `20260830-eb8dd39`. Detail Pesanan kini
+menyediakan catatan internal append-only bagi owner/admin berpermission
+`orders.manage`; pelanggan tidak melihat catatan dan response Finance tidak
+memuatnya. Audit hanya merekam ID serta panjang catatan. Laravel 495 total,
+storefront 216/216, browser desktop/mobile dan permission boundary,
+build/audit, backup, migration additive, worker, exact runtime, serta public
+smoke lulus. Status tetap `PRODUCTION_DEPLOYED /
+NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`; readiness fail-closed 41/42
+dan provider/commerce tidak diaktifkan.
+
 SagaBook bootstrap clean-artifact S364 pada exact main
 `b37db0810f64731e46f18d026452a6cf3f65e86c` berstatus `LOCAL_VALIDATED /
 RELEASE_BOOTSTRAP_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Source archive bersih

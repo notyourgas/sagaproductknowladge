@@ -14,6 +14,21 @@
 - Dokumen terdampak: Product, feature ledger/changelog SagaView, portfolio,
   master knowledge, root changelog, dan sync status.
 
+## 2026-08-30 - COYABAG Admin private order notes sync
+
+- Ringkasan: menyinkronkan workspace catatan internal append-only pada detail
+  Pesanan beserta batas permission dan privasinya.
+- Provenance: exact material source
+  `3155c85c112b2a60791c4555d60caf934bede7c5`, immutable release
+  `20260830-3155c85`, rollback `20260830-eb8dd39`.
+- Evidence: Laravel 495 total, storefront 216/216, browser desktop/mobile dan
+  owner/finance boundary, build/audit, backup, migration additive, worker,
+  exact runtime contract, dan public smoke lulus.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /
+  NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`; readiness 41/42.
+- Dokumen terdampak: Product/changelog COYABAG, portfolio, master knowledge,
+  root changelog, dan sync status.
+
 ## 2026-08-30 - SagaBook S364 clean artifact bootstrap sync
 
 - Ringkasan: menyinkronkan bukti exact-main dapat di-bootstrap dari clean

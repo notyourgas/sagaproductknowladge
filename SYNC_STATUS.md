@@ -12,12 +12,36 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-30T08:10:00+07:00 |
-| Branch aktif | `codex/s359-sagaview-uat-receipt-stale-lock-recovery-knowledge` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-30T08:25:00+07:00 |
+| Branch aktif | `codex/coyabag-admin-uiux-knowledge` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `a7e7978db63e332ce90af75105d123927939cf2a` |
-| Informasi terakhir disinkronkan | SagaView S359 stale lock recovery, exact source `b8a023713ee0c8fec15e1375b1c0dbf15b6293b3`. |
-| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan `BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `7d3bcc8b33048be454138bcd03cbeb707dc1bb3a` |
+| Informasi terakhir disinkronkan | COYABAG Admin private order notes pada exact source `3155c85c112b2a60791c4555d60caf934bede7c5`, release `20260830-3155c85`. |
+| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED / NOT_PRODUCTION_ACTIVATED`; `BUSINESS_READY=false`. |
+
+## COYABAG Admin private order notes
+
+- Exact material source `3155c85c112b2a60791c4555d60caf934bede7c5`
+  aktif pada immutable release `20260830-3155c85`; rollback
+  `20260830-eb8dd39` tersedia.
+- Owner/admin dengan permission `orders.manage` dapat menambahkan catatan
+  internal append-only pada detail Pesanan. Catatan tidak terlihat pelanggan,
+  tidak tersedia pada response Finance, dan audit tidak menyimpan isinya.
+- Laravel 495 total: 494 lulus, satu controlled skip, 4.810 assertion;
+  storefront 216/216, browser desktop/mobile dan permission boundary,
+  build/audit, backup, migration additive, worker, exact runtime contract, dan
+  public smoke lulus.
+- Readiness tetap 41/42 karena release sign-off. Commerce/provider tidak
+  diaktifkan.
+
+## File yang berubah pada sinkronisasi COYABAG private order notes
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaView S359 UAT receipt stale lock recovery
 

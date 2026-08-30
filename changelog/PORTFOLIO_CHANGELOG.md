@@ -13,6 +13,19 @@
   authenticated UAT dan visual review masih pending sehingga
   `BUSINESS_READY=false`.
 
+## 2026-08-30 - COYABAG Admin private order notes
+
+- Exact material source `3155c85c112b2a60791c4555d60caf934bede7c5`
+  aktif pada immutable release `20260830-3155c85`; rollback
+  `20260830-eb8dd39` tersedia.
+- Owner/admin dapat menyimpan catatan internal append-only pada detail Pesanan.
+  Pelanggan dan Finance tidak menerima isinya; audit hanya menyimpan metadata
+  minimum. State loading/empty/error/success dan acceptance desktop/mobile
+  tersedia.
+- Laravel 495 total, storefront 216/216, browser permission boundary,
+  build/audit, backup, migration additive, worker, exact runtime, dan public
+  smoke lulus. Readiness tetap 41/42 dan commerce/provider tidak diaktifkan.
+
 ## 2026-08-30 - SagaBook clean artifact bootstrap S364
 
 - Exact main `b37db0810f64731e46f18d026452a6cf3f65e86c` berhasil dibangun dari

@@ -4,6 +4,26 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-30 - Admin private order notes deployed
+
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /
+  NOT_PRODUCTION_ACTIVATED`; exact material source
+  `3155c85c112b2a60791c4555d60caf934bede7c5`, immutable release
+  `20260830-3155c85`, rollback `20260830-eb8dd39`.
+- Detail Pesanan menyediakan catatan internal append-only untuk owner/admin
+  dengan permission `orders.manage`. Catatan tidak terlihat pelanggan, tidak
+  dikirim dalam response Finance, dan audit hanya menyimpan ID serta panjang
+  catatan tanpa isi. UI memuat 20 catatan terbaru dengan loading, empty, error,
+  success live state pada desktop dan mobile.
+- Laravel 495 total: 494 lulus, satu controlled skip, 4.810 assertion;
+  storefront 216/216, browser desktop/mobile dan permission boundary, build,
+  audit dependency nol, backup, worker, migration additive, exact runtime
+  contract, dan public smoke lulus.
+- Percobaan release pertama berhenti sebelum symlink switch karena probe schema
+  belum memuat autoload. Release lama tetap aktif; probe diperbaiki dan exact
+  artifact yang sama kemudian lulus seluruh gate. Readiness tetap fail-closed
+  41/42 karena release sign-off; commerce/provider tidak diaktifkan.
+
 ## 2026-08-30 - Admin order review continuity deployed
 
 - Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /
