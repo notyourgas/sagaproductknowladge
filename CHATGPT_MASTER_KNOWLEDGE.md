@@ -1,5 +1,13 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+SagaBook S368 exact main `30c343eb7d140dd3c45cded0f1a91d4527cdd44b`
+berstatus `CONFIRMED / MERGED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`. Helper backup/restore evidence menolak checkout
+selain exact candidate worktree sebelum canary atau SSH. Focused 30/30, full
+PHP 1.307/1.307, parser, typecheck, build, format, diff-check, dan audit
+dependensi nol lulus. Production tetap exact source S367 pada release
+`20260830042225-b37db08` dan tidak berubah.
+
 SagaBook exact cumulative source
 `b37db0810f64731e46f18d026452a6cf3f65e86c` aktif pada immutable release
 `20260830042225-b37db08`, dengan immediate rollback

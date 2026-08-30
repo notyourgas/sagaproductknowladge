@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-30 - SagaBook S368 exact-candidate release helper binding
+
+- Exact main `30c343eb7d140dd3c45cded0f1a91d4527cdd44b` menolak helper
+  backup/restore evidence dari checkout lain sebelum canary atau SSH.
+- Focused 30/30, full PHP 1.307/1.307, parser, typecheck, build, format,
+  diff-check, dan audit dependensi nol lulus; GitHub runner tidak memulai step
+  dan evidence lokal ekuivalen tersedia.
+- Status `MERGED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+  SagaBook tetap release S367 dan tidak berubah.
+
 ## 2026-08-30 - SagaBook production activation exact main S367
 
 - Exact source `b37db0810f64731e46f18d026452a6cf3f65e86c` aktif pada immutable

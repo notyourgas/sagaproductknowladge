@@ -1,5 +1,19 @@
 # SagaBook Changelog
 
+## 2026-08-30 - Exact-candidate release helper binding S368
+
+- Helper backup/restore evidence kini menolak eksekusi bila file helper tidak
+  berasal dari exact candidate worktree, sebelum canary atau SSH dijalankan.
+- Feature source `f40cf22689c21463a303bd7893749e092433d751` telah merge melalui
+  PR #79 ke exact main `30c343eb7d140dd3c45cded0f1a91d4527cdd44b`.
+- Regression merah lalu hijau, focused 30/30 (373 assertion), full PHP
+  1.307/1.307 (14.670 assertion), parser, typecheck, build, format, diff-check,
+  dan audit Composer/npm nol lulus. GitHub runner tidak memulai step; evidence
+  lokal ekuivalen tersedia.
+- Status `CONFIRMED / MERGED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap exact source S367 dan tidak
+  berubah.
+
 ## 2026-08-30 - Production activation exact main S367
 
 - Exact source `b37db0810f64731e46f18d026452a6cf3f65e86c` aktif pada immutable

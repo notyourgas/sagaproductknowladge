@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-30 - SagaBook S368 release helper binding sync
+
+- Ringkasan: menyinkronkan guard yang mengikat helper backup/restore evidence
+  ke exact candidate worktree sebelum canary atau SSH.
+- Provenance: feature source `f40cf22689c21463a303bd7893749e092433d751`,
+  PR #79, exact main `30c343eb7d140dd3c45cded0f1a91d4527cdd44b`.
+- Evidence: regression merah lalu hijau, focused 30/30 (373 assertion), full
+  PHP 1.307/1.307 (14.670 assertion), parser, typecheck, build, format,
+  diff-check, dan audit dependensi nol; GitHub runner tidak memulai step.
+- Klasifikasi: `CONFIRMED / MERGED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production SagaBook tidak berubah.
+- Dokumen terdampak: Product, dossier, feature ledger/changelog SagaBook,
+  portfolio, master knowledge, root changelog, dan sync status.
+
 ## 2026-08-30 - SagaBook S367 production activation sync
 
 - Ringkasan: menyinkronkan activation exact main SagaBook beserta backup,

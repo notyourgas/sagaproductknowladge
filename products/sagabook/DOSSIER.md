@@ -7,6 +7,16 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Hardening release-evidence S368 pada feature source
+  `f40cf22689c21463a303bd7893749e092433d751` telah merge melalui PR #79 ke
+  exact main `30c343eb7d140dd3c45cded0f1a91d4527cdd44b`. Helper evidence menolak
+  eksekusi dari checkout selain exact candidate worktree sebelum canary atau
+  SSH, mencegah kontrak receipt lama dipakai pada kandidat baru. Regression
+  merah lalu hijau, focused 30/30 (373 assertion), full PHP 1.307/1.307
+  (14.670 assertion), parser, typecheck, build, format, diff-check, dan audit
+  dependensi nol lulus. Status `CONFIRMED / MERGED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
+
 - Exact cumulative source `b37db0810f64731e46f18d026452a6cf3f65e86c`
   aktif pada immutable release `20260830042225-b37db08`; immediate rollback
   `20260829175230-435dbfd` tersedia dan kompatibel. Fresh encrypted backup,
