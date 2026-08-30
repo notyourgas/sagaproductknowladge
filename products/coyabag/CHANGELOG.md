@@ -4,6 +4,25 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-30 - Admin inventory adjustment conflict recovery deployed
+
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /
+  NOT_PRODUCTION_ACTIVATED`; exact material source
+  `5b16301b30ccbbfbe9bed49d1554d7f56fa34b33`, immutable release
+  `20260830-5b16301`, rollback `20260830-fab7a8d`.
+- Saat revision stok berubah di sesi lain, Owner/Admin kini melihat perbandingan
+  saldo saat dialog dibuka dan saldo server terbaru. Jumlah serta alasan tetap
+  tersimpan, kegagalan muat dapat dicoba ulang, dan simpan terkunci sampai
+  operator memilih saldo terbaru serta meninjau proyeksi ulang.
+- Endpoint snapshot dilindungi `inventory.manage`, policy, throttle, dan
+  response `private, no-store`; Finance ditolak. Snapshot tidak mengubah stok,
+  tidak membuat movement, dan tidak memuat customer, secret, atau credential.
+- Laravel 506 total: 505 lulus, satu controlled skip, 4.892 assertion;
+  storefront 216/216, browser desktop/mobile, build, dependency audit, exact
+  artifact, backup/rollback, worker, runtime contract, dan public smoke lulus.
+  Readiness tetap fail-closed 41/42 karena release sign-off; commerce/provider
+  tidak diaktifkan.
+
 ## 2026-08-30 - Admin product conflict comparison deployed
 
 - Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /

@@ -1,5 +1,18 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+COYABAG inventory adjustment conflict recovery aktif pada exact material source
+`5b16301b30ccbbfbe9bed49d1554d7f56fa34b33`, immutable release
+`20260830-5b16301`, dengan rollback `20260830-fab7a8d`. Ketika revision stok
+berubah di sesi lain, Owner/Admin dapat memuat snapshot saldo terbaru,
+membandingkannya dengan saldo saat dialog dibuka, mempertahankan jumlah/alasan,
+dan mencoba ulang kegagalan fetch. Simpan terkunci sampai saldo terbaru dipilih
+secara eksplisit. Snapshot memakai `inventory.manage`, policy, throttle, dan
+`private, no-store`; Finance ditolak serta stok/movement tidak dimutasi.
+Laravel 506 total, storefront 216/216, browser desktop/mobile, build/audit,
+backup, worker, exact runtime, dan public smoke lulus. Status tetap
+`PRODUCTION_DEPLOYED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`;
+readiness fail-closed 41/42 dan provider/commerce tidak diaktifkan.
+
 COYABAG product conflict comparison aktif pada exact material source
 `fab7a8daf743c83159c6db15c31286046427a922`, immutable release
 `20260830-fab7a8d`, dengan rollback `20260830-a604cfc`. Owner/Admin melihat

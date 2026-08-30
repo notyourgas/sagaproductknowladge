@@ -12,31 +12,32 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-30T10:17:32+07:00 |
+| Waktu pembaruan terakhir | 2026-08-30T11:12:14+07:00 |
 | Branch aktif | `codex/coyabag-admin-uiux-knowledge` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `0172937cce70a9223e6f0ac189e6a725e780846b` |
-| Informasi terakhir disinkronkan | COYABAG product conflict comparison pada exact source `fab7a8daf743c83159c6db15c31286046427a922`, release `20260830-fab7a8d`. |
+| Baseline sebelum pembaruan | `3d6e99b9bfa03215c7b6aae400d90aab17c65b7f` |
+| Informasi terakhir disinkronkan | COYABAG inventory adjustment conflict recovery pada exact source `5b16301b30ccbbfbe9bed49d1554d7f56fa34b33`, release `20260830-5b16301`. |
 | Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED / NOT_PRODUCTION_ACTIVATED`; readiness 41/42 dan `BUSINESS_READY=false`. |
 
-## COYABAG product conflict comparison
+## COYABAG inventory adjustment conflict recovery
 
-- Exact material source `fab7a8daf743c83159c6db15c31286046427a922`
-  aktif pada immutable release `20260830-fab7a8d`; rollback
-  `20260830-a604cfc` tersedia.
-- Owner/Admin dapat membandingkan draft Produk basi dengan nilai terbaru dari
-  server tanpa kehilangan draft. Simpan, arsip, dan publikasi dikunci sampai
-  editor memuat versi terbaru.
-- Snapshot read-only memakai permission `products.manage` dan response
-  `no-store`; Finance ditolak serta varian, media, dan konteks publikasi tidak
-  dikirim.
-- Laravel 503 total: 502 lulus, satu controlled skip, 4.876 assertion;
+- Exact material source `5b16301b30ccbbfbe9bed49d1554d7f56fa34b33`
+  aktif pada immutable release `20260830-5b16301`; rollback
+  `20260830-fab7a8d` tersedia.
+- Owner/Admin dapat memulihkan adjustment stok yang terkena konflik revision
+  tanpa kehilangan jumlah atau alasan. Saldo lama dan terbaru dibandingkan,
+  error muat dapat dicoba ulang, dan simpan terkunci sampai operator memilih
+  saldo terbaru.
+- Snapshot read-only memakai permission `inventory.manage`, policy, throttle,
+  dan response `private, no-store`; Finance ditolak serta stok/movement tidak
+  dimutasi.
+- Laravel 506 total: 505 lulus, satu controlled skip, 4.892 assertion;
   storefront 216/216, browser desktop/mobile, build/audit, backup, worker,
   exact runtime contract, dan public smoke lulus.
 - Readiness tetap fail-closed 41/42 karena release sign-off. Commerce/provider
   tidak diaktifkan.
 
-## File yang berubah pada sinkronisasi COYABAG product conflict comparison
+## File yang berubah pada sinkronisasi COYABAG inventory adjustment conflict recovery
 
 - `products/coyabag/PRODUCT.md`
 - `products/coyabag/CHANGELOG.md`

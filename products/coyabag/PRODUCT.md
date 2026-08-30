@@ -76,14 +76,20 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 - Launch UAT 15 langkah sudah lulus 15/15 dan sign-off diizinkan. Checkout
   publik tetap `PRODUCTION_READINESS_BLOCKED` hanya sampai release sign-off
   dicatat; deployment acceptance hotfix tidak membuat payment intent baru.
-- Release aktif `20260830-fab7a8d` dengan exact material source
-  `fab7a8daf743c83159c6db15c31286046427a922` melayani production;
-  rollback langsung `20260830-a604cfc` tersedia. Editor Produk kini
+- Release aktif `20260830-5b16301` dengan exact material source
+  `5b16301b30ccbbfbe9bed49d1554d7f56fa34b33` melayani production;
+  rollback langsung `20260830-fab7a8d` tersedia. Dialog adjustment Inventory
+  kini memulihkan konflik revision dengan snapshot saldo server read-only,
+  mempertahankan jumlah dan alasan yang sudah diketik, membandingkan saldo saat
+  dialog dibuka dengan saldo terbaru, lalu meminta Owner/Admin memilih
+  `Gunakan saldo terbaru` sebelum simpan dapat dilanjutkan. Snapshot memerlukan
+  `inventory.manage`, memakai response `no-store`, tidak mengubah stok, dan
+  menolak Finance. Editor Produk kini
   membandingkan draft basi dengan nilai terbaru dari server, mempertahankan
   draft lokal, dan mengunci simpan/arsip/publikasi sampai operator memuat ulang
   versi terbaru. Snapshot hanya tersedia bagi permission `products.manage`,
   bersifat `no-store`, serta tidak memuat varian, media, atau konteks publikasi.
-  rollback langsung `20260830-3155c85` dipertahankan. Owner/Admin kini dapat
+  Owner/Admin kini dapat
   memilih maksimal 20 pesanan eligible pada daftar Pesanan lalu memindahkan
   batch secara atomik dari `confirmed/unfulfilled` menjadi
   `processing/picking`. Hanya pesanan non-simulasi dengan pembayaran `paid`

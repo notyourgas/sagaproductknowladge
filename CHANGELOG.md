@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-30 - COYABAG inventory adjustment conflict recovery sync
+
+- Ringkasan: menyinkronkan recovery konflik revision adjustment Inventory,
+  perbandingan saldo, draft preservation, retry state, dan permission boundary.
+- Provenance: exact material source
+  `5b16301b30ccbbfbe9bed49d1554d7f56fa34b33`, immutable release
+  `20260830-5b16301`, rollback `20260830-fab7a8d`.
+- Evidence: Laravel 506 total, storefront 216/216, browser desktop/mobile,
+  build/audit, exact artifact, backup/rollback, worker, runtime contract, dan
+  public smoke lulus.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /
+  NOT_PRODUCTION_ACTIVATED`; readiness 41/42 dan `BUSINESS_READY=false`.
+- Dokumen terdampak: Product dan changelog COYABAG, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-30 - COYABAG product conflict comparison sync
 
 - Ringkasan: menyinkronkan perbandingan draft Produk basi dengan nilai server,

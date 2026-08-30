@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-30 - COYABAG inventory adjustment conflict recovery
+
+- Exact material source `5b16301b30ccbbfbe9bed49d1554d7f56fa34b33`
+  aktif pada immutable release `20260830-5b16301`; rollback
+  `20260830-fab7a8d` tersedia.
+- Owner/Admin dapat memulihkan adjustment stok yang basi tanpa kehilangan
+  draft: saldo lama dan terbaru dibandingkan, error muat dapat dicoba ulang,
+  dan simpan tetap terkunci sampai saldo terbaru diadopsi secara eksplisit.
+- Snapshot read-only berpermission `inventory.manage`, `no-store`, tidak
+  memutasi stok/movement, dan menolak Finance.
+- Laravel 506 total, storefront 216/216, browser desktop/mobile, build/audit,
+  backup, worker, exact runtime, dan public smoke lulus. Readiness tetap 41/42
+  dan commerce/provider tidak diaktifkan.
+
 ## 2026-08-30 - COYABAG product conflict comparison
 
 - Exact material source `fab7a8daf743c83159c6db15c31286046427a922`
