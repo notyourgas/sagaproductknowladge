@@ -4,6 +4,27 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-30 - Customer identity merge guard deployed
+
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false` dari exact
+  source `f4a5ccd926c082c781cbfd5b58a2d408670eb912`, immutable release
+  `20260830-f4a5ccd`, dan rollback `20260830-1ad8cbc`.
+- Customer Detail mengisolasi setiap kandidat duplikat dalam dialog review
+  aksesibel dengan identitas tersamarkan, dampak relasi, alasan, konfirmasi,
+  serta state processing/error/success pada desktop dan mobile.
+- Endpoint mewajibkan exact duplicate target, alasan 12-500 karakter,
+  acknowledgement eksplisit, permission, dan recent authentication. Request
+  tanpa target, target salah, atau konfirmasi tidak lengkap tidak memindahkan
+  relasi dan tidak membuat audit merge.
+- Focused merge 1/1 dengan 17 assertion, Customer operations 9/9 dengan 116
+  assertion, Laravel 520 total/519 pass/satu controlled skip dengan 5.187
+  assertion, storefront 216/216, browser dua viewport, build/audit, backup,
+  migration pending nol, readiness 42/42, dua worker, serta buy-to-cart smoke
+  lulus.
+- Shipping tetap manual untuk sembilan tujuan dan enam exception pembayaran
+  lama tetap terbuka, sehingga `BUSINESS_READY=false`.
+
 ## 2026-08-30 - Manual delivery confirmation deployed
 
 - Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /

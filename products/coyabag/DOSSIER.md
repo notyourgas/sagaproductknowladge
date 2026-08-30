@@ -79,10 +79,16 @@ coverage nasional atau Delivery API aktif.
 Backup database COYABAG masih local-disk dan perlu dipindahkan ke backup offsite
 sebelum business readiness final.
 
-`CONFIRMED / PRODUCTION_DEPLOYED`: release `20260830-1ad8cbc`, exact source
-`1ad8cbcf3d175cb0b7ca619271a7e0d8ec801ac4`, dan rollback
-`20260830-9d16ae1` mengganti prompt browser pada Shipment Detail dengan dialog
-status yang aksesibel. Exception dan delivery menampilkan konteks shipment,
+`CONFIRMED / PRODUCTION_DEPLOYED`: release `20260830-f4a5ccd`, exact source
+`f4a5ccd926c082c781cbfd5b58a2d408670eb912`, dan rollback
+`20260830-1ad8cbc` menambahkan penggabungan identitas pelanggan yang fail-closed.
+Setiap kandidat konflik memakai dialog terisolasi dengan perbandingan identitas
+tersamarkan, dampak relasi, alasan 12-500 karakter, dan acknowledgement
+eksplisit. Backend memeriksa exact target, permission, recent authentication,
+dan konfirmasi sebelum memindahkan relasi; request tidak lengkap atau target
+yang salah tidak memutasi data maupun audit. Lineage ini juga mempertahankan
+perubahan Shipment Detail yang mengganti prompt browser dengan dialog status
+aksesibel. Exception dan delivery menampilkan konteks shipment,
 order, waybill, status sebelum/sesudah, serta dampak customer dan stok. Delivery
 memerlukan catatan 8-500 karakter dan acknowledgement eksplisit; backend menolak
 request tanpa konfirmasi tanpa mengubah shipment, order, event, notifikasi, atau

@@ -76,9 +76,9 @@ COMMERCE_ACTIVE`. Business readiness: `BLOCKED`.
   bagian; audit tetap `report_only` dan tidak menghapus record.
 - Launch UAT 15 langkah dan release sign-off sudah lulus. Readiness gate tetap
   enforced dan keputusan runtime adalah `COMMERCE_ACTIVE`.
-- Release aktif `20260830-1ad8cbc` dengan exact material source
-  `1ad8cbcf3d175cb0b7ca619271a7e0d8ec801ac4` melayani production;
-  rollback langsung `20260830-9d16ae1` tersedia. Exact lineage production
+- Release aktif `20260830-f4a5ccd` dengan exact material source
+  `f4a5ccd926c082c781cbfd5b58a2d408670eb912` melayani production;
+  rollback langsung `20260830-1ad8cbc` tersedia. Exact lineage production
   sudah berada pada remote branch kanonik. Payment Detail kini menunjukkan
   state sesi checkout server-authoritative, expiry, dan histori attempt aman;
   Finance dapat menyiapkan sesi hanya dengan `payments.manage`, recent auth,
@@ -105,6 +105,11 @@ COMMERCE_ACTIVE`. Business readiness: `BLOCKED`.
   memerlukan catatan 8-500 karakter serta acknowledgement eksplisit yang
   diperiksa ulang backend. Request tanpa konfirmasi tidak mengubah shipment,
   order, event, notifikasi, atau stok. Delivery API nasional belum diaktifkan.
+  Customer Detail kini mengisolasi setiap kandidat konflik dalam dialog review
+  aksesibel. Merge memerlukan target duplikat yang sama dengan konflik aktif,
+  alasan 12-500 karakter, acknowledgement eksplisit, permission, dan recent
+  authentication. Request tanpa target, target yang salah, atau tanpa
+  acknowledgement ditolak sebelum relasi pelanggan atau audit berubah.
   Keputusan barang retur yang masih
   dikarantina kini memakai dialog terfokus dengan ringkasan jumlah, kondisi,
   keputusan, dan dampak saldo. Alasan 8-240 karakter wajib disimpan pada

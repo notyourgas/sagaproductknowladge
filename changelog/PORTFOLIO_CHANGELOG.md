@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-30 - COYABAG customer identity merge guard deployed
+
+- Exact pushed source `f4a5ccd926c082c781cbfd5b58a2d408670eb912`
+  aktif pada immutable release `20260830-f4a5ccd`; rollback
+  `20260830-1ad8cbc` tersedia.
+- Customer Detail kini memakai dialog merge terisolasi. Exact target, alasan,
+  acknowledgement, permission, dan recent authentication diperiksa ulang oleh
+  backend; request tidak lengkap atau target salah tidak memutasi relasi.
+- Laravel 520, storefront 216/216, browser desktop/mobile, build/audit, backup,
+  readiness 42/42, dua worker, dan buy-to-cart smoke lulus. Shipping masih
+  manual untuk sembilan tujuan dan enam exception pembayaran tetap terbuka;
+  status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE /
+  BUSINESS_READY=false`.
+
 ## 2026-08-30 - COYABAG manual delivery confirmation deployed
 
 - Exact pushed source `1ad8cbcf3d175cb0b7ca619271a7e0d8ec801ac4`

@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-30 - COYABAG customer identity merge guard sync
+
+- Ringkasan: menyinkronkan dialog merge pelanggan terisolasi, exact-target dan
+  acknowledgement fail-closed, release, rollback, serta runtime evidence.
+- Provenance: exact pushed source
+  `f4a5ccd926c082c781cbfd5b58a2d408670eb912`, immutable release
+  `20260830-f4a5ccd`, rollback `20260830-1ad8cbc`.
+- Evidence: focused 1/1 dan Customer operations 9/9, Laravel 520 total,
+  storefront 216/216, browser desktop/mobile, build/audit, backup, migration
+  pending nol, readiness 42/42, dua worker, serta buy-to-cart smoke lulus.
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false`.
+- Dokumen terdampak: Product, dossier/changelog COYABAG, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-30 - COYABAG manual delivery confirmation sync
 
 - Ringkasan: menyinkronkan dialog status pengiriman manual, acknowledgement

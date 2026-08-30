@@ -12,12 +12,37 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-30T20:24:46+07:00 |
+| Waktu pembaruan terakhir | 2026-08-30T21:34:34+07:00 |
 | Branch aktif | isolated exact `origin/main` worktree |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `f19b0715b2caa175e8c0e2c15ff32dbacacf6b33` |
-| Informasi terakhir disinkronkan | COYABAG manual delivery confirmation pada exact source `1ad8cbcf3d175cb0b7ca619271a7e0d8ec801ac4`. |
+| Baseline sebelum pembaruan | `ece15184f8208e00bedbfc2b3f503a2d809df248` |
+| Informasi terakhir disinkronkan | COYABAG customer identity merge guard pada exact source `f4a5ccd926c082c781cbfd5b58a2d408670eb912`. |
 | Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE`; `BUSINESS_READY=false`. |
+
+## COYABAG customer identity merge guard
+
+- Exact source `f4a5ccd926c082c781cbfd5b58a2d408670eb912` sudah push dan aktif
+  sebagai immutable release `20260830-f4a5ccd`; rollback
+  `20260830-1ad8cbc` tersedia.
+- Customer Detail memakai dialog terisolasi untuk setiap kandidat konflik.
+  Exact duplicate target, alasan 12-500 karakter, acknowledgement, permission,
+  dan recent authentication wajib; request tidak lengkap atau target salah
+  tidak memindahkan relasi dan tidak membuat audit merge.
+- Focused 1/1, Customer operations 9/9, Laravel 520, storefront 216/216,
+  browser desktop/mobile, build/audit, backup, pending migration nol, readiness
+  42/42, dua worker, dan buy-to-cart public smoke lulus.
+- Shipping tetap manual sembilan tujuan dan enam exception pembayaran lama
+  tetap terbuka, sehingga `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi COYABAG customer identity merge guard
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG manual delivery confirmation
 
