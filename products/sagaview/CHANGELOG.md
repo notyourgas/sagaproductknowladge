@@ -1,5 +1,25 @@
 # SagaView Changelog
 
+## 2026-08-30 - S361 Finalize control file link revalidation
+
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan
+  `BUSINESS_READY=false`.
+- Before: S345 menolak link pada file kontrol, tetapi S344 Finalize membaca
+  ulang preflight, checklist, dan receipt review tanpa mengulang custody guard.
+- After: exact source `e8a44805dfdbf816dea63686d8a8e23c0d0f4294`
+  memeriksa containment, seluruh ancestor reparse point, dan hard link untuk
+  ketiga file kontrol sebelum snapshot JSON.
+- Evidence: regression red 3/3 lalu green 3/3; focused S344-S361 67/67;
+  full exact-commit 73 file/325 test; parser PowerShell/pwsh;
+  format/lint/typecheck; client+SSR build; bundle 312,7 KiB dari 450 KiB;
+  npm audit nol; diff check; worktree bersih; dan remote exact.
+- Boundary: hanya harness/test/runbook dengan hard link dan junction nyata pada
+  filesystem disposable; sumber eksternal tetap utuh, tanpa UI/API/database,
+  data customer, deploy, atau perubahan production.
+- Next gate: authenticated manual UAT 12 gate dengan evidence sintetis
+  tersanitasi, visual review, reviewer S345, lalu S344 Finalize.
+
 ## 2026-08-30 - S360 Finalize evidence link revalidation
 
 - Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /

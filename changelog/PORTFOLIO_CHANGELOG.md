@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-30 - SagaView S361 Finalize control file link revalidation
+
+- Exact pushed source `e8a44805dfdbf816dea63686d8a8e23c0d0f4294`
+  membuat S344 Finalize mengulang guard reparse point dan NTFS hard link pada
+  preflight, checklist, serta receipt review sebelum snapshot JSON.
+- Regression red 3/3 lalu green 3/3, focused S344-S361 67/67, full exact
+  325/325, parser PowerShell/pwsh, build/budget, audit nol, clean, dan remote
+  exact lulus; hard link dan junction nyata ditolak pada filesystem disposable.
+- Perubahan hanya harness/test/runbook. Production tidak berubah;
+  authenticated UAT dan visual review masih pending sehingga
+  `BUSINESS_READY=false`.
+
 ## 2026-08-30 - SagaBook post-switch activation contract S366
 
 - Exact kandidat `b37db0810f64731e46f18d026452a6cf3f65e86c` kini mempunyai

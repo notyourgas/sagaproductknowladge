@@ -1,5 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+SagaView S361 exact pushed source
+`e8a44805dfdbf816dea63686d8a8e23c0d0f4294` berstatus `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. S344 Finalize kini memeriksa
+ulang containment, setiap ancestor reparse point, dan NTFS hard link pada
+`preflight.json`, `manual-checklist.json`, serta `evidence-review.json` sebelum
+snapshot JSON. Regression 3/3 merah lalu 3/3 hijau, focused S344-S361 67/67,
+full exact 325/325, PowerShell/pwsh, build/budget/audit, clean, dan remote exact
+lulus. Production tidak berubah; authenticated UAT serta visual review masih
+wajib sehingga `BUSINESS_READY=false`.
+
 SagaBook S366 menambahkan acceptance contract post-switch untuk exact kandidat
 `b37db0810f64731e46f18d026452a6cf3f65e86c`. Klaim activation hanya diterima
 bila source dan manifest exact, release immutable cocok dengan kandidat,

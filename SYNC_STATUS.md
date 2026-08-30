@@ -12,12 +12,35 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-30T10:10:00+07:00 |
-| Branch aktif | `codex/s366-post-switch-contract-knowledge` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-30T10:12:00+07:00 |
+| Branch aktif | `codex/s361-sagaview-finalize-control-link-revalidation-knowledge` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `c71321ce585ff73cfc72a442cea7c28cb0d54ee2` |
-| Informasi terakhir disinkronkan | SagaBook S366 post-switch activation contract pada exact kandidat `b37db0810f64731e46f18d026452a6cf3f65e86c`. |
-| Status sinkronisasi | `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; `BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `1e2854d08ac0265041fc01bf5366df3c6df98c94` |
+| Informasi terakhir disinkronkan | SagaView S361 Finalize control file link revalidation pada exact source `e8a44805dfdbf816dea63686d8a8e23c0d0f4294`. |
+| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; `BUSINESS_READY=false`. |
+
+## SagaView S361 Finalize control file link revalidation
+
+- Exact source `e8a44805dfdbf816dea63686d8a8e23c0d0f4294` sudah push.
+- S344 Finalize memeriksa ulang containment, seluruh ancestor reparse point,
+  dan NTFS hard link pada preflight, checklist, serta receipt review sebelum
+  snapshot JSON dibaca.
+- Regression red 3/3 lalu green 3/3, focused S344-S361 67/67, full exact
+  325/325, PowerShell/pwsh, format/lint/typecheck, client+SSR build, bundle
+  budget, npm audit nol, diff check, clean, dan remote exact lulus.
+- Hard link dan junction nyata ditolak pada filesystem disposable; sumber
+  eksternal tetap utuh. Production tidak berubah; authenticated UAT 12 gate
+  dan visual review masih pending sehingga `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi SagaView S361
+
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook S366 post-switch activation contract
 

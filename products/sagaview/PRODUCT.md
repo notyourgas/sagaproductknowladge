@@ -1,6 +1,20 @@
 # SagaView Product Knowledge
 
-Updated: 30 Agustus 2026 09:15 WIB
+Updated: 30 Agustus 2026 10:12 WIB
+
+SagaView S361 exact source
+`e8a44805dfdbf816dea63686d8a8e23c0d0f4294` sudah `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. S344 Finalize kini memeriksa
+ulang custody tiga file kontrol hasil Prepare/review sebelum membacanya.
+`preflight.json`, `manual-checklist.json`, dan `evidence-review.json` harus
+tetap berada di evidence root, bebas reparse point, dan bukan hard link.
+
+Regression awal 3/3 gagal lalu hijau 3/3; focused S344-S361 67/67 dan full
+73 file/325 test pada exact commit lulus. Parser Windows PowerShell/pwsh,
+format/lint/typecheck, client 2.129 modul + SSR 203 modul, bundle 312,7 KiB
+dari 450 KiB, npm audit nol, diff check, clean exact commit, serta remote
+exact juga lulus. Production tidak diubah; authenticated UAT 12 gate dan
+visual review tetap wajib sehingga `BUSINESS_READY=false`.
 
 SagaView S360 exact source
 `5cbe82027896b012086b92fdda38f4c9099cb954` sudah `PUSHED /
