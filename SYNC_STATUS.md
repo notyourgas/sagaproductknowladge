@@ -12,12 +12,38 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-30T14:28:09+07:00 |
-| Branch aktif | `codex/coyabag-inventory-knowledge-9be4247` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-30T15:30:00+07:00 |
+| Branch aktif | isolated exact `origin/main` worktree |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `cd68e6c38d102cab8a3b85ed8055e3a0958d257a` |
-| Informasi terakhir disinkronkan | COYABAG inventory quarantine decision pada exact source `9be4247073a8f436b57b7589f550fbcfee20527d`. |
+| Baseline sebelum pembaruan | `0210f19ced0ced2463de4f61d14386a56d4656ed` |
+| Informasi terakhir disinkronkan | COYABAG inventory low-stock triage pada exact source `261329f337f1eeb95f3564679ac3cde58429a016`. |
 | Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE`; `BUSINESS_READY=false`. |
+
+## COYABAG inventory low-stock triage
+
+- Exact source `261329f337f1eeb95f3564679ac3cde58429a016` sudah push dan aktif
+  sebagai immutable release `20260830-261329f`; rollback
+  `20260830-9be4247` tersedia.
+- Alert stok rendah kini memiliki antrean server-authoritative dengan severity,
+  threshold, shortage, dampak storefront, navigasi, filter, dan ledger-first
+  guidance. Handoff adjustment tetap menggunakan seluruh guard lama dan tidak
+  menambah mutation baru.
+- Focused 11/11, Laravel 515, storefront 216/216, browser Inventory,
+  build/audit, backup, pending migration nol, readiness 42/42, cron, dua
+  worker, dan public smoke lulus.
+- Commerce tetap `COMMERCE_ACTIVE`; enam payment exception historis, shipping
+  sembilan tujuan, seller/legal/tax final, dan offsite backup menahan
+  `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi COYABAG low-stock triage
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG inventory quarantine decision
 

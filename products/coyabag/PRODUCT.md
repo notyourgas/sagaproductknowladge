@@ -76,9 +76,9 @@ COMMERCE_ACTIVE`. Business readiness: `BLOCKED`.
   bagian; audit tetap `report_only` dan tidak menghapus record.
 - Launch UAT 15 langkah dan release sign-off sudah lulus. Readiness gate tetap
   enforced dan keputusan runtime adalah `COMMERCE_ACTIVE`.
-- Release aktif `20260830-9be4247` dengan exact material source
-  `9be4247073a8f436b57b7589f550fbcfee20527d` melayani production;
-  rollback langsung `20260830-415ab3d` tersedia. Exact lineage production
+- Release aktif `20260830-261329f` dengan exact material source
+  `261329f337f1eeb95f3564679ac3cde58429a016` melayani production;
+  rollback langsung `20260830-9be4247` tersedia. Exact lineage production
   sudah berada pada remote branch kanonik. Payment Detail kini menunjukkan
   state sesi checkout server-authoritative, expiry, dan histori attempt aman;
   Finance dapat menyiapkan sesi hanya dengan `payments.manage`, recent auth,
@@ -93,7 +93,13 @@ COMMERCE_ACTIVE`. Business readiness: `BLOCKED`.
   ledger dan audit; permission inventory, recent auth, lock transaksi, dan
   idempotensi tetap fail-closed. `Layak jual` mengurangi karantina dan menambah
   available tanpa mengubah stok fisik, sedangkan `Keluarkan stok` mengurangi
-  stok fisik serta karantina tanpa menambah available. Dialog adjustment Inventory
+  stok fisik serta karantina tanpa menambah available. Alert stok rendah kini
+  membuka antrean triase dengan severity, saldo
+  tersedia, batas minimum, kekurangan menuju saldo aman, waktu pemicu, dampak
+  storefront, navigasi sebelumnya/berikutnya, filter daftar, dan tautan ledger.
+  Data berasal dari snapshot inventory server-authoritative. Adjustment tetap
+  memakai permission, recent auth, revision, idempotensi, dan approval yang
+  sudah ada; triase tidak menambah jalur mutasi stok baru. Dialog adjustment Inventory
   kini memulihkan konflik revision dengan snapshot saldo server read-only,
   mempertahankan jumlah dan alasan yang sudah diketik, membandingkan saldo saat
   dialog dibuka dengan saldo terbaru, lalu meminta Owner/Admin memilih

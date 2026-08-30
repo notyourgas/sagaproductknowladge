@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-30 - COYABAG inventory low-stock triage sync
+
+- Ringkasan: menyinkronkan antrean triase alert stok rendah, ledger-first
+  guidance, release, rollback, dan runtime evidence terbaru.
+- Provenance: exact pushed source
+  `261329f337f1eeb95f3564679ac3cde58429a016`, immutable release
+  `20260830-261329f`, rollback `20260830-9be4247`.
+- Evidence: focused 11/11, Laravel 515 total, storefront 216/216, browser
+  Inventory desktop/mobile, build/audit, backup, migration pending nol,
+  readiness 42/42, cron, dua worker, dan public smoke lulus.
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false`.
+- Dokumen terdampak: Product, dossier/changelog COYABAG, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-30 - COYABAG inventory quarantine decision sync
 
 - Ringkasan: menyinkronkan flow konfirmasi dampak saldo dan alasan wajib untuk

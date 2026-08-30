@@ -4,6 +4,24 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-30 - Inventory low-stock triage deployed
+
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false` dari exact
+  source `261329f337f1eeb95f3564679ac3cde58429a016`, immutable release
+  `20260830-261329f`, dan rollback `20260830-9be4247`.
+- Alert stok rendah kini membuka antrean triase server-authoritative dengan
+  severity, available, threshold, kekurangan ke saldo aman, waktu pemicu,
+  dampak storefront, navigasi alert, filter daftar, dan ledger-first guidance.
+  Handoff adjustment tetap memakai permission, recent auth, revision,
+  idempotensi, dan approval yang sudah ada; tidak ada jalur mutasi baru.
+- Focused 11/11 dengan 80 assertion, Laravel 515 total/514 pass/satu
+  intentional skip dengan 4.996 assertion, storefront 216/216, browser
+  Inventory desktop/mobile, build, audit dependency, backup, worker, readiness
+  42/42, migration pending nol, dan public smoke lulus.
+- Enam exception pembayaran historis dan shipping manual sembilan tujuan tetap
+  menjadi residual bisnis; release tidak mengubah provider activation.
+
 ## 2026-08-30 - Inventory quarantine decision deployed
 
 - Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /

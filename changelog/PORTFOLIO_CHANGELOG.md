@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-30 - COYABAG inventory low-stock triage deployed
+
+- Exact pushed source `261329f337f1eeb95f3564679ac3cde58429a016`
+  aktif pada immutable release `20260830-261329f`; rollback
+  `20260830-9be4247` tersedia.
+- Admin Inventory kini menyediakan antrean triase alert dengan severity,
+  threshold, shortage, dampak storefront, navigasi, filter, dan ledger-first
+  guidance. Adjustment tetap memakai guard permission, recent auth, revision,
+  idempotensi, dan approval; flow baru tidak memutasi stok secara mandiri.
+- Laravel 515, storefront 216/216, browser Inventory desktop/mobile,
+  build/security audit, backup, readiness 42/42, worker, cron, dan public smoke
+  lulus. Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE /
+  BUSINESS_READY=false`.
+
 ## 2026-08-30 - COYABAG inventory quarantine decision deployed
 
 - Exact source `9be4247073a8f436b57b7589f550fbcfee20527d` aktif pada immutable

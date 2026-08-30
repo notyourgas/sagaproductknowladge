@@ -79,9 +79,14 @@ coverage nasional atau Delivery API aktif.
 Backup database COYABAG masih local-disk dan perlu dipindahkan ke backup offsite
 sebelum business readiness final.
 
-`CONFIRMED / PRODUCTION_DEPLOYED`: release `20260830-9be4247`, exact source
-`9be4247073a8f436b57b7589f550fbcfee20527d`, dan rollback
-`20260830-415ab3d` menutup keputusan karantina satu klik. Operator wajib
+`CONFIRMED / PRODUCTION_DEPLOYED`: release `20260830-261329f`, exact source
+`261329f337f1eeb95f3564679ac3cde58429a016`, dan rollback
+`20260830-9be4247` menambah triase alert stok rendah setelah keputusan
+karantina. Operator dapat meninjau severity, available, threshold, kekurangan
+ke saldo aman, waktu pemicu, dampak storefront, alert sebelumnya/berikutnya,
+filter daftar, dan ledger sebelum memakai adjustment. Snapshot berasal dari
+server dan flow tidak menambah mutation baru; permission, recent auth,
+revision, idempotensi, serta approval adjustment tetap authoritative. Operator wajib
 meninjau dampak stok dan memberi alasan 8-240 karakter; alasan masuk ledger
 serta audit. Permission, recent auth, transaction lock, idempotensi, stale
 state, processing/error/success recovery, focus, dan layout mobile/desktop
