@@ -1,5 +1,16 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+SagaBook S365 mengikat kandidat exact main
+`b37db0810f64731e46f18d026452a6cf3f65e86c` ke tree Git, production aktif,
+rollback, tiga feature commit, artifact, dan receipt S363/S364. Verifier 21/21
+serta tamper matrix 8/8 lulus; candidate/tree/receipt/approval/gate drift,
+klaim secret, dan overclaim status ditolak. Production tetap source
+`435dbfd252759fd8b7d43f44af69edfb39ee2102`, release
+`20260829175230-435dbfd`, rollback `20260829062031-b2790d6`; status
+`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Fresh encrypted backup,
+approval exact SHA, atomic switch, post-switch UAT, dua pilot, dan provider
+canary tetap wajib.
+
 SagaView S359 exact pushed source
 `b8a023713ee0c8fec15e1375b1c0dbf15b6293b3` berstatus `PUSHED /
 LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Writer receipt UAT S70, S344,

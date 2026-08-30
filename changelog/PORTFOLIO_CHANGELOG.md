@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-30 - SagaBook candidate approval packet S365
+
+- Exact kandidat `b37db0810f64731e46f18d026452a6cf3f65e86c` kini memiliki paket
+  persetujuan terikat tree, production/rollback, feature commit, artifact, dan
+  receipt S363/S364.
+- Verifier 21/21 serta tamper matrix 8/8 lulus dan menolak drift maupun
+  overclaim status. Production tetap read-only dan tidak berubah.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; fresh encrypted backup,
+  approval, atomic switch, dan post-switch UAT masih pending.
+
 ## 2026-08-30 - SagaView S359 UAT receipt stale lock recovery
 
 - Exact pushed source `b8a023713ee0c8fec15e1375b1c0dbf15b6293b3`

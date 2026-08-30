@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-30 - SagaBook S365 candidate approval packet sync
+
+- Ringkasan: menyinkronkan paket persetujuan exact kandidat yang fail-closed
+  terhadap drift evidence, gate hilang, secret, dan overclaim delivery.
+- Provenance: exact main SagaBook
+  `b37db0810f64731e46f18d026452a6cf3f65e86c`; production tidak diubah.
+- Evidence: candidate binding 21/21, tamper matrix 8/8, production snapshot
+  stabil, migrasi 0, canary 32/32, dan smoke 3/3.
+- Klasifikasi: `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+  `BUSINESS_READY=false`.
+- Dokumen terdampak: Product, feature ledger/changelog SagaBook, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-08-30 - SagaView S359 UAT receipt stale lock recovery sync
 
 - Ringkasan: menyinkronkan recovery stale lock receipt UAT tanpa melemahkan

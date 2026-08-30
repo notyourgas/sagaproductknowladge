@@ -1,5 +1,19 @@
 # SagaBook Changelog
 
+## 2026-08-30 - Candidate approval packet S365
+
+- Exact kandidat `b37db0810f64731e46f18d026452a6cf3f65e86c` diikat ke tree Git,
+  production aktif, rollback, tiga feature commit, artifact, dan receipt
+  S363/S364.
+- Verifier binding 21/21 serta tamper matrix 8/8 lulus; SHA/tree/receipt/
+  approval/gate drift, klaim secret, dan overclaim deployment ditolak.
+- Production diperiksa read-only: service aktif, migrasi pending 0, report
+  canary 32/32, smoke 3/3, dan security header 2/3 karena HSTS `/up` masih
+  menunggu kandidat.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; fresh encrypted backup,
+  disposable restore, approval, atomic switch, dan post-switch UAT belum
+  dilakukan.
+
 ## 2026-08-30 - Clean artifact production bootstrap S364
 
 - Exact main kumulatif `b37db0810f64731e46f18d026452a6cf3f65e86c`

@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 30 Agustus 2026 08:06 WIB
-Evidence status: kandidat kumulatif exact main `b37db0810f64731e46f18d026452a6cf3f65e86c` lulus bootstrap production dari clean source archive dengan lockfile tetap identik, dependency production, optimized autoload/package discovery, build frontend, migrasi disposable, cache Laravel, dan audit dependency nol. Status `LOCAL_VALIDATED / RELEASE_BOOTSTRAP_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production aktif tetap exact source `435dbfd252759fd8b7d43f44af69edfb39ee2102`, release `20260829175230-435dbfd`, rollback `20260829062031-b2790d6`; `BUSINESS_READY=false` sampai deploy terotorisasi, UAT runtime baru, dua pilot nyata, dan provider canary selesai
+Updated: 30 Agustus 2026 09:09 WIB
+Evidence status: paket persetujuan S365 mengikat exact kandidat `b37db0810f64731e46f18d026452a6cf3f65e86c` ke tree, production aktif, rollback, tiga feature commit, serta receipt S363/S364. Verifier 21/21 dan tamper matrix 8/8 lulus. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production aktif tetap exact source `435dbfd252759fd8b7d43f44af69edfb39ee2102`, release `20260829175230-435dbfd`, rollback `20260829062031-b2790d6`; fresh encrypted backup, deploy terotorisasi, UAT runtime baru, dua pilot nyata, dan provider canary masih wajib sehingga `BUSINESS_READY=false`
 
 ## Tujuan dokumen
 
@@ -15,6 +15,17 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
+
+- Paket persetujuan kandidat S365 mengikat exact main
+  `b37db0810f64731e46f18d026452a6cf3f65e86c` ke tree Git, production aktif,
+  rollback, tiga feature commit, artifact, serta receipt S363/S364. Verifier
+  21/21 menerima baseline valid; matriks 8/8 menolak candidate/tree/receipt/
+  approval/gate yang berubah, klaim secret tidak aman, dan overclaim status.
+  Diff terhadap production berisi 6 commit dan 24 file. Production diperiksa
+  read-only: service aktif, migrasi pending 0, canary 32/32, smoke 3/3, tetapi
+  HSTS `/up` masih pending kandidat. Tidak ada data customer, secret, backup
+  production, atau mutasi production. Status `LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`.
 
 - Bootstrap clean-artifact S364 untuk exact main
   `b37db0810f64731e46f18d026452a6cf3f65e86c` membuktikan source archive tanpa
