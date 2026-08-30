@@ -4,6 +4,24 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-31 - Media library operations deployed
+
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false` dari exact
+  source `d826c297ff6cd7b80c0cb0d86b3acf33dc3feb83`, immutable release
+  `20260831-d826c29`, dan rollback `20260831-15c2daa`.
+- Search, filter tipe/status, summary, pagination, metadata, status processing/
+  storage, dan usage lineage tersedia pada Media Library.
+- Referensi aktif dan seluruh histori versi memblokir delete. Penghapusan
+  permanen memakai recent auth, throttle, alasan, acknowledgement, audit, dan
+  pemeriksaan ulang server secara fail-closed.
+- Focused 39/39, Laravel 534 total/533 pass/satu controlled skip, storefront
+  216/216, browser desktop/mobile tanpa overlap/overflow, build/audit, backup,
+  migration, readiness active+rollback 42/42, worker, HTTP, dan buy-to-cart
+  smoke lulus.
+- Commerce tetap aktif untuk controlled trial. Enam payment exception dan
+  shipping manual sembilan tujuan tetap menahan `BUSINESS_READY=false`.
+
 ## 2026-08-31 - Content publication control deployed
 
 - Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /

@@ -76,18 +76,19 @@ COMMERCE_ACTIVE`. Business readiness: `BLOCKED`.
   bagian; audit tetap `report_only` dan tidak menghapus record.
 - Launch UAT 15 langkah dan release sign-off sudah lulus. Readiness gate tetap
   enforced dan keputusan runtime adalah `COMMERCE_ACTIVE`.
-- Release aktif `20260831-15c2daa` dengan exact material source
-  `15c2daaaaffaa21fc106999fa81104d449024830` melayani production;
-  rollback langsung `20260831-26c33f0` tersedia dan keduanya lulus readiness
-  42/42. Website Management kini melindungi publish, schedule, retract, dan
-  rollback dengan review dialog aksesibel, permission, recent authentication,
-  throttle, acknowledgement, alasan untuk tindakan destruktif, dan revision
-  guard. Jadwal yang ditinjau sebagai WIB disimpan dalam UTC; rollback versi
-  historis berjalan atomik sebagai revisi baru. State editor mengikuti respons
-  Inertia terbaru sehingga save berhasil tidak tampak macet. Acceptance desktop
-  dan mobile memastikan focus return, Escape, nama aksesibel, serta tidak ada
-  horizontal overflow.
-  Release rollback `20260831-26c33f0` memuat Analytics dan Finance dengan satu
+- Release aktif `20260831-d826c29` dengan exact material source
+  `d826c297ff6cd7b80c0cb0d86b3acf33dc3feb83` melayani production;
+  rollback langsung `20260831-15c2daa` tersedia dan keduanya lulus readiness
+  42/42. Media Library kini memiliki pencarian, filter tipe/status, summary,
+  pagination, metadata, status processing/storage, dan usage lineage dari
+  konten aktif serta seluruh histori versi. Penghapusan permanen dilindungi
+  permission, recent authentication, throttle, alasan, acknowledgement, audit,
+  serta pemeriksaan ulang referensi secara fail-closed. Dialog aksesibel dan
+  layout kartu lulus desktop/mobile tanpa overlap atau document overflow.
+  Release rollback `20260831-15c2daa` memuat Content Publication Control untuk
+  publish, schedule, retract, rollback, revision guard, konversi WIB ke UTC,
+  dan sinkronisasi state Inertia. Release `20260831-26c33f0` memuat Analytics
+  dan Finance dengan satu
   periode bisnis Asia/Jakarta untuk
   preset 7/30/90 hari atau custom range maksimal 366 hari. Metrik, ledger,
   shipping summary, pagination, dan export mengikuti rentang yang sama;

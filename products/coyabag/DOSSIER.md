@@ -79,6 +79,19 @@ coverage nasional atau Delivery API aktif.
 Backup database COYABAG masih local-disk dan perlu dipindahkan ke backup offsite
 sebelum business readiness final.
 
+`CONFIRMED / PRODUCTION_DEPLOYED`: release `20260831-d826c29`, exact source
+`d826c297ff6cd7b80c0cb0d86b3acf33dc3feb83`, dan rollback
+`20260831-15c2daa` menambahkan Media Library Operations pada Website Management.
+Operator mendapat search, filter tipe/status, summary server-side, pagination,
+metadata, processing/storage state, usage count, dan no-result state. Lineage
+penggunaan mencakup konten aktif serta seluruh versi draft/published. Delete
+permanen memakai recent auth, throttle, alasan, acknowledgement, audit, dan
+server re-check fail-closed; aset yang masih direferensikan tidak dapat dihapus.
+Laravel 534 total/533 pass/satu controlled skip, focused media+content 39/39,
+storefront 216/216, browser desktop/mobile, build/audit, backup, migration
+pending nol, readiness production+rollback 42/42, dua worker, HTTP, dan public
+buy-to-cart lulus. Tidak ada migrasi, perubahan provider, atau mutasi inventory.
+
 `CONFIRMED / PRODUCTION_DEPLOYED`: release `20260831-15c2daa`, exact source
 `15c2daaaaffaa21fc106999fa81104d449024830`, dan rollback
 `20260831-26c33f0` menambahkan Content Publication Control pada Website

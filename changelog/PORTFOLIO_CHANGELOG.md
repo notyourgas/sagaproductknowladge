@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-31 - COYABAG media library operations deployed
+
+- Exact pushed source `d826c297ff6cd7b80c0cb0d86b3acf33dc3feb83`
+  aktif pada immutable release `20260831-d826c29`; rollback
+  `20260831-15c2daa` tersedia dan readiness keduanya 42/42.
+- Media Library kini menyediakan discovery, metadata, processing/storage state,
+  usage lineage, dan delete review yang recent-authenticated, acknowledged,
+  audited, throttled, serta fail-closed terhadap referensi aktif/historis.
+- Focused 39/39, Laravel 534, storefront 216/216, browser dua viewport,
+  build/audit, backup, worker, HTTP, dan buy-to-cart smoke lulus.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE /
+  BUSINESS_READY=false`; enam payment exception dan shipping manual sembilan
+  tujuan tetap menjadi batas bisnis.
+
 ## 2026-08-31 - SagaBook S380 rollback drill hardening merged, release blocked
 
 - Feature source `47d7591ffc8cc31667f7b280765c950c427216b7` sudah
