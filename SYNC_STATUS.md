@@ -12,12 +12,34 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-30T06:35:00+07:00 |
-| Branch aktif | `codex/s357-sagaview-uat-receipt-postswitch-rollback-knowledge` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-30T07:12:00+07:00 |
+| Branch aktif | `codex/s358-sagaview-uat-receipt-transaction-lock-knowledge` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `1947ca7b14e33a559dfa41dbc4a9f326c2b2368a` |
-| Informasi terakhir disinkronkan | SagaView S357 UAT receipt post-switch rollback pada exact pushed source `621fe0025437cf00cc232d506b3ebed3647c83fe`. |
+| Baseline sebelum pembaruan | `02466e43f3e3eea630b2ec0381e23eccdcf2dc2d` |
+| Informasi terakhir disinkronkan | SagaView S358 UAT receipt transaction lock pada exact pushed source `5825fbaec2f984be535891bc2134714afaec2d58`. |
 | Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`; production tidak berubah. |
+
+## SagaView S358 UAT receipt transaction lock
+
+- Exact source `5825fbaec2f984be535891bc2134714afaec2d58` sudah push.
+- Writer S70, S344, dan S345 mengambil lock eksklusif sebelum membuat artefak
+  tulis. Writer pesaing berhenti fail-closed tanpa mengganti receipt aktif;
+  lock bertahan sampai cleanup/rollback dan dihapus otomatis saat handle tutup.
+- Regression red 4/4 lalu green 4/4, gabungan S352-S358 30/30, full exact
+  314/314, PowerShell/pwsh, format/lint/typecheck, client+SSR build, bundle
+  budget, npm audit nol, diff check, clean, dan remote exact lulus.
+- Production tidak berubah; authenticated UAT 12 gate dan visual review masih
+  pending sehingga `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi SagaView S358
+
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook S363 exact-main release artifact rehearsal
 

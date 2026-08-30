@@ -1,5 +1,16 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+SagaView S358 exact pushed source
+`5825fbaec2f984be535891bc2134714afaec2d58` berstatus `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Writer receipt UAT S70, S344,
+dan S345 kini mengambil transaction lock eksklusif sebelum membuat temporary,
+backup, atau atomic switch. Writer pesaing berhenti fail-closed dan receipt
+aktif tetap utuh; lock dipegang sampai cleanup/rollback selesai lalu dihapus
+otomatis. Regression 4/4 merah lalu 4/4 hijau, gabungan S352-S358 30/30, full
+exact 314/314, PowerShell/pwsh, build/budget/audit, clean, dan remote exact
+lulus. Production tidak berubah; authenticated UAT serta visual review masih
+wajib sehingga `BUSINESS_READY=false`.
+
 SagaBook release rehearsal S363 pada kandidat kumulatif exact main
 `b37db0810f64731e46f18d026452a6cf3f65e86c` berstatus `LOCAL_VALIDATED /
 RELEASE_ARTIFACT_READY / IMPLEMENTED_NOT_DEPLOYED`. Archive, bundle Git,

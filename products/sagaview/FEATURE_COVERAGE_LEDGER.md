@@ -1,6 +1,24 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 30 Agustus 2026 06:15 WIB
+Evidence cut-off: 30 Agustus 2026 07:12 WIB
+
+S358 UAT receipt transaction lock: exact pushed source
+`5825fbaec2f984be535891bc2134714afaec2d58` mencegah dua proses S70,
+S344, atau reviewer S345 menulis receipt yang sama secara bersamaan. Writer
+mengambil lock file eksklusif sebelum membuat temporary/backup atau mengganti
+destination; proses kedua berhenti fail-closed dan receipt aktif tetap utuh.
+Lock dipegang sampai cleanup atau rollback selesai lalu dihapus oleh handle
+Windows `DeleteOnClose`.
+
+Ledger lulus: regression merah 4/4 lalu hijau 4/4; gabungan S352-S358 30/30;
+full 70 file/314 test pada exact commit; parser Windows PowerShell/pwsh;
+format/lint/typecheck; client 2.129 modul + SSR 203 modul; bundle 312,7 KiB
+dari 450 KiB; npm audit nol; diff check; worktree bersih; serta remote exact.
+Uji memakai filesystem sintetis/disposable tanpa foto, path, atau output
+customer. Boundary hanya tooling/test/runbook, tanpa UI/API/database atau
+mutasi production. Belum lulus: authenticated manual UAT 12 gate dan visual
+review. Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+`BUSINESS_READY=false`.
 
 S357 UAT receipt post-switch rollback: exact pushed source
 `621fe0025437cf00cc232d506b3ebed3647c83fe` memulihkan kondisi aman bila

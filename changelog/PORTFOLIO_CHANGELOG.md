@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-30 - SagaView S358 UAT receipt transaction lock
+
+- Exact pushed source `5825fbaec2f984be535891bc2134714afaec2d58`
+  membuat writer S70/S344/S345 mengambil lock eksklusif sebelum menulis
+  receipt yang sama; writer pesaing berhenti tanpa mengubah receipt aktif.
+- Lock tetap hidup sampai cleanup/rollback selesai lalu dihapus otomatis.
+  Regression red 4/4 lalu green 4/4, gabungan S352-S358 30/30, full exact
+  314/314, parser PowerShell/pwsh, build/budget, audit nol, clean, dan remote
+  exact lulus.
+- Perubahan hanya harness/test/runbook. Production tidak berubah;
+  authenticated UAT dan visual review masih pending sehingga
+  `BUSINESS_READY=false`.
+
 ## 2026-08-30 - SagaBook exact-main release rehearsal S363
 
 - Kandidat kumulatif exact main `b37db0810f64731e46f18d026452a6cf3f65e86c`

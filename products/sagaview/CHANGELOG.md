@@ -1,5 +1,26 @@
 # SagaView Changelog
 
+## 2026-08-30 - S358 UAT receipt transaction lock
+
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan
+  `BUSINESS_READY=false`.
+- Before: S357 menjaga atomic switch dan rollback, tetapi dua proses masih
+  dapat menulis receipt yang sama bersamaan sehingga hasil terakhir dapat
+  mengganti hasil proses lain tanpa deteksi.
+- After: exact source `5825fbaec2f984be535891bc2134714afaec2d58`
+  mengambil lock eksklusif sebelum artefak tulis dibuat; writer pesaing
+  berhenti fail-closed, receipt aktif tidak berubah, dan lock dilepas setelah
+  cleanup/rollback.
+- Evidence: regression red 4/4 lalu green 4/4; gabungan S352-S358 30/30;
+  full exact-commit 70 file/314 test; parser PowerShell/pwsh;
+  format/lint/typecheck; client+SSR build; bundle 312,7 KiB dari 450 KiB;
+  npm audit nol; diff check; worktree bersih; dan remote exact.
+- Boundary: hanya harness/test/runbook dengan filesystem disposable; tidak ada
+  UI/API/database, data customer, deploy, atau perubahan production.
+- Next gate: authenticated manual UAT 12 gate dengan evidence sintetis
+  tersanitasi, visual review, reviewer S345, lalu S344 Finalize.
+
 ## 2026-08-30 - S357 UAT receipt post-switch rollback
 
 - Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
