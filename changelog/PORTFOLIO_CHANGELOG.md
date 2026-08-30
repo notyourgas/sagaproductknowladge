@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-31 - SagaBook staff expense edit candidate pushed
+
+- Source `cbaa5dc4f89b2ae9c48fd24d748cbe3dcc55c2f8` menambahkan edit
+  pengeluaran own-row sebelum closing, dengan creator identity, tenant/cabang,
+  optimistic version, closing mutex, ledger lineage, dan audit fail-closed.
+- Hanya nominal, metode, kategori, dan catatan yang editable. Data legacy tanpa
+  creator ID tetap terkunci dan tidak dibackfill dari nama staff.
+- Full PHP 1.320/1.320, focused 47/47, frontend 6/6, build/typecheck/format,
+  migration rehearsal, diff, serta audit dependency lulus. Status
+  `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+  SagaBook tetap S377.
+
 ## 2026-08-30 - SagaBook S377 notification toast placement deployed
 
 - Exact source `6489030c0cb51e6aa9dafd03a704d628c10f2cad` aktif pada

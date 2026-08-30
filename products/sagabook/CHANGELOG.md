@@ -1,5 +1,25 @@
 # SagaBook Changelog
 
+## 2026-08-31 - Staff edit own expense before closing S378
+
+- Exact feature source `cbaa5dc4f89b2ae9c48fd24d748cbe3dcc55c2f8`
+  sudah dipush pada branch `codex/s378-sagabook-staff-expense-edit` dan
+  berbasiskan exact main `6489030c0cb51e6aa9dafd03a704d628c10f2cad`.
+- Staff dapat mengedit nominal, metode pembayaran, kategori, dan catatan pada
+  pengeluaran yang ia input sendiri, selama closing tanggal/cabang belum
+  disubmit. Tenant, cabang, creator ID, reversal, optimistic lock, dan race
+  submit closing dijaga fail-closed.
+- Sinkronisasi ledger mempertahankan waktu kejadian awal dan mencatat waktu
+  koreksi serta audit before/after secara terpisah. Migration memperbaiki index
+  pada partial schema dan lulus up, rollback, serta reapply.
+- Row legacy tanpa creator ID tetap terkunci; tidak ada backfill berbasis nama
+  staff dan jangan mengklaim semua pengeluaran historis editable.
+- Full PHP 1.320/1.320 (14.743 assertion), focused 47/47 (324 assertion),
+  baseline+expense 16/16 (165 assertion), frontend 6/6, typecheck/build/Pint,
+  diff-check, dan audit Composer/npm nol lulus.
+- Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap S377 dan tidak berubah.
+
 ## 2026-08-30 - Notification toast placement S377 production activation
 
 - Exact cumulative source `6489030c0cb51e6aa9dafd03a704d628c10f2cad`

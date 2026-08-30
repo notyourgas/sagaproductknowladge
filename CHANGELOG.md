@@ -1,5 +1,21 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-31 - SagaBook staff expense edit candidate sync
+
+- Ringkasan: menyinkronkan edit pengeluaran own-row sebelum closing, guard
+  ownership/concurrency/closing, ledger lineage, migration partial-state, dan
+  batas data legacy.
+- Provenance: exact pushed source
+  `cbaa5dc4f89b2ae9c48fd24d748cbe3dcc55c2f8`, berbasis exact SagaBook main
+  `6489030c0cb51e6aa9dafd03a704d628c10f2cad`.
+- Evidence: full PHP 1.320/1.320 (14.743 assertion), focused 47/47 (324),
+  baseline+expense 16/16 (165), frontend 6/6, typecheck/build/Pint/diff,
+  migration up/rollback/reapply+partial index, dan audit Composer/npm nol.
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production dan data customer tidak berubah.
+- Dokumen terdampak: Product, dossier, feature ledger/changelog SagaBook,
+  decision log, portfolio, master knowledge, root changelog, dan sync status.
+
 ## 2026-08-30 - SagaBook S377 production activation sync
 
 - Ringkasan: menyinkronkan posisi toast notifikasi admin yang aman pada

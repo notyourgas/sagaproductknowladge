@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 30 Agustus 2026 23:34 WIB
-Evidence status: exact cumulative source S377 `6489030c0cb51e6aa9dafd03a704d628c10f2cad` aktif pada immutable release `20260830162300-6489030`, dengan immediate rollback `20260830064046-4b4d6f6` tersedia, kompatibel, dan sudah dibuktikan melalui rollback/restore drill. Full Feature 1.282/1.282 (14.484 assertion), Saga AI 18/18, visual S377 6/6, correction selector paket 2/2, build/typecheck, audit dependensi nol, artifact immutable, fresh backup terenkripsi/checksum/disposable restore, atomic switch, verifier independen 23/23, report canary 32/32, migration pending 0, service/journal, public/security smoke 3/3, dan authenticated Owner/Staff UAT read-only semuanya lulus. GitHub-hosted runner ditolak sebelum step karena gate billing/spending akun; bukti lokal/VPS ekuivalen digunakan tanpa membebaskan source test, provenance, backup, migration, health, UAT, atau rollback. Status `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED / BUSINESS_READY=false`; pilot dua studio dan provider canary tetap residual gate.
+Updated: 31 Agustus 2026 WIB
+Evidence status: kandidat S378 pada source `cbaa5dc4f89b2ae9c48fd24d748cbe3dcc55c2f8` telah dipush dan tervalidasi lokal. Staff dapat mengedit pengeluaran yang ia input sendiri sebelum closing tanggal/cabang tersebut disubmit; provenance pencatat, optimistic lock, audit before/after, dan ledger server-authoritative tetap dijaga. Data legacy tanpa identitas pencatat terverifikasi tidak dibackfill secara spekulatif dan tetap terkunci. Full PHP 1.320/1.320 (14.743 assertion), focused reporting/closing 47/47 (324 assertion), baseline+expense 16/16 (165 assertion), frontend 6/6, typecheck/build/format/diff, serta audit Composer/npm nol lulus. Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap exact cumulative source S377 `6489030c0cb51e6aa9dafd03a704d628c10f2cad` pada release `20260830162300-6489030`, dan `BUSINESS_READY=false`.
 
 ## Tujuan dokumen
 
@@ -15,6 +15,18 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
+
+- Kandidat S378 pada exact pushed source
+  `cbaa5dc4f89b2ae9c48fd24d748cbe3dcc55c2f8` menambahkan aksi edit pada
+  pengeluaran milik staff sendiri. Nominal, metode pembayaran, kategori, dan
+  catatan dapat diperbaiki selama closing tanggal/cabang belum disubmit;
+  tanggal, cabang, dan identitas pencatat tetap terkunci. Backend memverifikasi
+  tenant, cabang, creator ID, status reversal/closing, dan versi row; ledger
+  diperbarui tanpa menggeser `occurred_at`, sedangkan waktu koreksi dan audit
+  before/after tercatat terpisah. Pengeluaran legacy tanpa creator ID tidak
+  dapat diedit dari alur staff dan memerlukan alur koreksi terkontrol. Status
+  `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+  production tidak berubah.
 
 - Exact cumulative source S377
   `6489030c0cb51e6aa9dafd03a704d628c10f2cad` telah aktif pada immutable

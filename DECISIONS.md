@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-124 - Staff dapat mengedit pengeluaran sendiri sebelum closing
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-31 |
+| Topik | Koreksi kesalahan input pengeluaran harian oleh staff |
+| Keputusan | Staff dapat mengedit nominal, metode pembayaran, kategori, dan catatan pada pengeluaran yang ia input sendiri sebelum closing tanggal/cabang disubmit. Tanggal, cabang, dan identitas pencatat tidak dapat diganti. |
+| Alasan | Kesalahan input operasional perlu diperbaiki oleh pencatat sebelum angka menjadi bagian dari closing, tanpa melemahkan ownership dan jejak audit. |
+| Alternatif yang dipertimbangkan | Semua koreksi oleh Owner; reversal append-only untuk setiap typo; mengizinkan edit setelah closing; backfill ownership row lama dari nama staff. |
+| Dampak | Backend memverifikasi tenant/cabang, creator ID, status closing/reversal, optimistic version, dan mutex submit; ledger mempertahankan waktu kejadian serta audit mencatat before/after. Row legacy tanpa creator ID tetap terkunci dan memakai alur koreksi terkontrol. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; source `cbaa5dc4f89b2ae9c48fd24d748cbe3dcc55c2f8`; production tidak berubah |
+| Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [SagaBook Changelog](products/sagabook/CHANGELOG.md), [SagaBook Ledger](products/sagabook/FEATURE_COVERAGE_LEDGER.md) |
+
 ## DEC-123 - Deploy exact main SagaBook b37db081 disetujui
 
 | Field | Isi |

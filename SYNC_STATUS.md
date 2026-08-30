@@ -12,12 +12,41 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-30T23:34:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-31 WIB |
 | Branch aktif | isolated exact `origin/main` worktree |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `c3b8fe18b5568e6457ae48430126df2231f9cf83` |
-| Informasi terakhir disinkronkan | SagaBook S377 pada exact source `6489030c0cb51e6aa9dafd03a704d628c10f2cad`. |
-| Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED`; `BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `3b069e2f1065e134922a05bf91c2bdf3a0ee10f6` |
+| Informasi terakhir disinkronkan | Kandidat SagaBook S378 edit pengeluaran staff pada source `cbaa5dc4f89b2ae9c48fd24d748cbe3dcc55c2f8`. |
+| Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S377 dan `BUSINESS_READY=false`. |
+
+## SagaBook S378 staff expense edit candidate
+
+- Staff dapat mengedit nominal, metode pembayaran, kategori, dan catatan pada
+  own-row sebelum closing tanggal/cabang disubmit. Tanggal, cabang, creator,
+  tenant/branch scope, reversal, optimistic version, serta mutex closing tetap
+  fail-closed.
+- Ledger mempertahankan `occurred_at` asli dan menyimpan koreksi melalui
+  timestamp/audit terpisah. Index provenance diperbaiki independen pada partial
+  schema dan lulus up, rollback, serta reapply.
+- Row legacy tanpa creator ID tidak editable dan tidak dibackfill berdasarkan
+  nama staff.
+- Full PHP 1.320/1.320, focused 47/47, baseline+expense 16/16, frontend 6/6,
+  typecheck/build/format/diff, migration rehearsal, dan audit dependency nol
+  lulus.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak
+  berubah dan authenticated Staff UAT setelah deployment masih diperlukan.
+
+## File yang berubah pada sinkronisasi SagaBook S378
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `DECISIONS.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook S377 notification toast placement
 

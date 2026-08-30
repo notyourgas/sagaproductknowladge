@@ -1,6 +1,20 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 30 Agustus 2026 23:34 WIB
+Evidence cut-off: 31 Agustus 2026 WIB
+
+Kandidat edit pengeluaran staff S378 telah `CONFIRMED / SOURCE_PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED` pada exact source
+`cbaa5dc4f89b2ae9c48fd24d748cbe3dcc55c2f8`. Staff hanya dapat mengedit row
+pengeluaran miliknya sendiri sebelum closing tanggal/cabang disubmit; nominal,
+metode pembayaran, kategori, dan catatan editable, sedangkan tanggal, cabang,
+dan creator immutable. Tenant/cabang, creator ID, reversal, closing lock,
+optimistic version, serta race submit dijaga backend. Ledger mempertahankan
+`occurred_at` asli dan mencatat koreksi melalui timestamp/audit terpisah. Row
+legacy tanpa creator ID tetap terkunci dan tidak menerima backfill berbasis
+nama. Full PHP 1.320/1.320 (14.743 assertion), focused reporting/closing 47/47
+(324 assertion), baseline+expense 16/16 (165 assertion), frontend 6/6,
+typecheck/build/Pint/diff, migration partial-schema rollback/reapply, dan audit
+Composer/npm nol lulus. Production tetap exact S377 dan tidak berubah.
 
 Exact cumulative source S377
 `6489030c0cb51e6aa9dafd03a704d628c10f2cad` telah

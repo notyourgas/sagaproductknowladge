@@ -1,5 +1,18 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+SagaBook kandidat S378 source
+`cbaa5dc4f89b2ae9c48fd24d748cbe3dcc55c2f8` sudah dipush dan tervalidasi
+lokal. Staff dapat mengedit nominal, metode pembayaran, kategori, dan catatan
+pengeluaran yang ia input sendiri selama closing tanggal/cabang belum
+disubmit. Tanggal, cabang, dan creator immutable; backend menjaga tenant,
+branch, ownership, reversal, optimistic version, mutex closing, ledger
+lineage, serta audit before/after. `occurred_at` ledger tidak bergeser ketika
+dikoreksi. Row legacy tanpa creator ID tetap terkunci dan tidak dibackfill dari
+nama. Full PHP 1.320/1.320 (14.743 assertion), focused 47/47, frontend 6/6,
+build/typecheck/format/migration rehearsal, dan audit dependency lulus. Status
+`CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+production tetap S377 dan `BUSINESS_READY=false`.
+
 SagaBook S377 exact cumulative source
 `6489030c0cb51e6aa9dafd03a704d628c10f2cad` aktif pada immutable release
 `20260830162300-6489030` dengan rollback `20260830064046-4b4d6f6`. Toast

@@ -7,6 +7,21 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Kandidat S378 `cbaa5dc4f89b2ae9c48fd24d748cbe3dcc55c2f8`
+  telah dipush dan tervalidasi lokal. Pada Laporan/Pengeluaran, staff mendapat
+  aksi edit hanya untuk pengeluaran yang dibuat oleh ID akunnya sendiri dan
+  hanya sebelum closing tanggal/cabang disubmit. Field yang dapat dikoreksi
+  adalah nominal, metode pembayaran, kategori, dan catatan; tanggal, cabang,
+  serta pencatat tetap immutable. Optimistic lock mencegah overwrite dari tab
+  lain, mutex cabang/tanggal mencegah race dengan submit closing, ledger
+  mempertahankan waktu kejadian awal, dan audit menyimpan before/after serta
+  waktu edit. Row legacy tanpa creator ID sengaja fail-closed, bukan dibackfill
+  dari nama staff. Full PHP 1.320/1.320 (14.743 assertion), focused 47/47,
+  frontend 6/6, build/typecheck/format/diff, migration partial-state dan
+  rollback/reapply, serta audit dependency nol lulus. Status `CONFIRMED /
+  SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production
+  tetap S377.
+
 - Exact cumulative source S377
   `6489030c0cb51e6aa9dafd03a704d628c10f2cad` aktif pada immutable release
   `20260830162300-6489030`, dengan immediate rollback
