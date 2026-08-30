@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-30 - SagaBook S369 exact-main artifact rehearsal sync
+
+- Ringkasan: menyinkronkan artifact rehearsal exact-main dengan dua salinan
+  pada disk fisik berbeda dan dua restore disposable.
+- Provenance: exact source
+  `30c343eb7d140dd3c45cded0f1a91d4527cdd44b`, source tree
+  `c666f70d73f054e671a654e3239e9c83f4be00fb`.
+- Evidence: artifact identik 4/4, capacity/storage safety, manifest/checksum,
+  exact bundle HEAD, rollback ancestry, cleanup, dan receipt binding lulus.
+- Klasifikasi: `CONFIRMED / LOCAL_VALIDATED / RELEASE_ARTIFACT_READY /
+  IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
+- Dokumen terdampak: Product, dossier, feature ledger/changelog SagaBook,
+  portfolio, master knowledge, root changelog, dan sync status.
+
 ## 2026-08-30 - SagaBook S368 release helper binding sync
 
 - Ringkasan: menyinkronkan guard yang mengikat helper backup/restore evidence

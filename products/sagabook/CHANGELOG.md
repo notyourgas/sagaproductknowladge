@@ -1,5 +1,19 @@
 # SagaBook Changelog
 
+## 2026-08-30 - Exact-main release artifact rehearsal S369
+
+- Exact source `30c343eb7d140dd3c45cded0f1a91d4527cdd44b` menghasilkan archive,
+  Git bundle, metadata, dan manifest identik 4/4 pada dua disk fisik berbeda.
+- Capacity, filesystem/health, reparse guard, exact source/tree, rollback
+  ancestry, safe archive, bundle HEAD, dua restore disposable, cleanup, dan
+  receipt binding lulus.
+- Manifest SHA-256
+  `298b931d106fddc0fdb091c51637f44af8d376fbdebd90c36813b2d44740910d`;
+  kedua receipt identik SHA-256
+  `351b067ae02ff89f3461ab4b37ea0b5253cfc47e4327c663fd67c553dc3e8757`.
+- Status `CONFIRMED / LOCAL_VALIDATED / RELEASE_ARTIFACT_READY /
+  IMPLEMENTED_NOT_DEPLOYED`; production dan data customer tidak disentuh.
+
 ## 2026-08-30 - Exact-candidate release helper binding S368
 
 - Helper backup/restore evidence kini menolak eksekusi bila file helper tidak
