@@ -2,17 +2,36 @@
 
 Evidence cut-off: 31 Agustus 2026 WIB
 
-Exact cumulative source S378
-`561d48d1691cd264919a9ff80dbbd0e918b2b4f5` telah
+Exact cumulative source S379
+`f13d6f4ae519bb42eeae4dcd81d213a015d11767` telah
 `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED` pada immutable
-release `20260830212427-561d48d`; rollback S377
-`20260830162300-6489030` tersedia, kompatibel, dan lulus rollback drill aktual
-sebelum S378 direaktivasi. Full exact-main 1.320/1.320 (14.744 assertion),
+release `20260830223233-f13d6f4`; rollback S378
+`20260830212427-561d48d` tersedia, kompatibel, dan lulus rollback drill aktual
+sebelum S379 direaktivasi. Full exact-main 1.321/1.321 (14.763 assertion),
 artifact immutable, fresh encrypted backup/checksum/disposable restore,
 migration compatibility, verifier 23/23, report canary 32/32, migration pending
 0, service/journal, public/security smoke 3/3, serta authenticated Owner/Staff
 UAT read-only lulus. Pilot dua studio dan provider canary tetap residual gate,
 sehingga `BUSINESS_READY=false`.
+
+Retry idempoten edit pengeluaran Staff S379 telah `CONFIRMED / SOURCE_PUSHED /
+PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED` melalui feature
+source `1d167d9b2c924962062580bb891ab6c93c57b2dd` pada exact cumulative source
+`f13d6f4ae519bb42eeae4dcd81d213a015d11767`. Payload identik memakai key yang
+sama sampai response sukses dan me-replay receipt authoritative tanpa mutation
+ledger/audit kedua. Key reuse untuk payload berbeda menghasilkan 409, key baru
+dengan optimistic version stale menghasilkan 409, dan staff berbeda mendapat
+403 sebelum receipt dapat dibaca. Raw key tidak disimpan. Focused PHP 5/5 (52
+assertion), full PHP 1.321/1.321 (14.762 assertion), frontend 6/6, browser
+mobile+desktop 2/2, typecheck/build/Pint/diff, serta audit Composer/OSV/npm nol
+lulus. Immutable release, backup/restore, verifier 23/23, smoke/security 3/3,
+authenticated Owner/Staff UAT, dan rollback drill aktual juga lulus.
+`BUSINESS_READY=false` sampai pilot dua studio dan provider canary selesai.
+
+Gap READY berikutnya: normalisasi parser journal pada harness rollback agar
+sentinel `tidak ada entri` tidak dihitung sebagai error. False-negative ini
+tidak berasal dari runtime; query journal quiet dan verifier resmi sesudah
+reaktivasi mencatat 0 error.
 
 Pada tahap kandidat, edit pengeluaran staff S378 telah `CONFIRMED /
 SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED` pada exact source

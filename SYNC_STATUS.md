@@ -15,9 +15,33 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-08-31 WIB |
 | Branch aktif | isolated exact `origin/main` worktree |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `9155dcb80350db98d709f373804a85c33163eda5` |
-| Informasi terakhir disinkronkan | SagaBook S378 production activation pada source `561d48d1691cd264919a9ff80dbbd0e918b2b4f5`. |
+| Baseline sebelum pembaruan | `44a18d7e1c03b6f939e25b6b64ad0e2f5926bfd6` |
+| Informasi terakhir disinkronkan | SagaBook S379 idempotent expense-edit retry aktif pada exact cumulative source `f13d6f4ae519bb42eeae4dcd81d213a015d11767`. |
 | Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED / BUSINESS_READY=false`. |
+
+## SagaBook S379 idempotent expense-edit retry
+
+- Feature source `1d167d9b2c924962062580bb891ab6c93c57b2dd` masuk exact main
+  `f13d6f4ae519bb42eeae4dcd81d213a015d11767`. Retry payload identik me-replay receipt authoritative tanpa
+  ledger/audit kedua; konflik payload, stale version, dan replay lintas staff
+  gagal tertutup. Raw idempotency key tidak disimpan.
+- Full PHP 1.321/1.321 (14.763 assertion), focused 5/5, frontend 6/6, browser
+  2/2, build/typecheck/Pint/diff, serta audit Composer/OSV/npm nol lulus.
+- Exact source aktif pada release `20260830223233-f13d6f4`; rollback S378
+  `20260830212427-561d48d` tersedia. Backup/restore, artifact, verifier 23/23,
+  smoke/security 3/3, authenticated Owner/Staff UAT, dan rollback drill lulus.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED /
+  BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi SagaBook S379
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook S378 production activation
 

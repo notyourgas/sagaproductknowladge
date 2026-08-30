@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-31 - SagaBook S379 idempotent expense-edit retry sync
+
+- Ringkasan: menyinkronkan kontrak retry respons jaringan ambigu pada edit
+  pengeluaran Staff beserta aktivasi production S379.
+- Provenance: feature source `1d167d9b2c924962062580bb891ab6c93c57b2dd`,
+  exact cumulative source `f13d6f4ae519bb42eeae4dcd81d213a015d11767`,
+  release `20260830223233-f13d6f4`, rollback `20260830212427-561d48d`.
+- Evidence: full PHP 1.321/1.321 (14.763 assertion), focused 5/5, frontend
+  6/6, browser 2/2, build/audit, backup/restore, verifier 23/23,
+  smoke/security, authenticated UAT, dan rollback drill aktual.
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / UAT_ACCEPTED / BUSINESS_READY=false`.
+- Dokumen terdampak: Product, ledger/changelog SagaBook, portfolio, root
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-08-31 - SagaBook S378 production activation sync
 
 - Ringkasan: menyinkronkan staff expense own-row edit, release exact-main,

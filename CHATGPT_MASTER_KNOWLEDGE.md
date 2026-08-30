@@ -1,5 +1,19 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+SagaBook S379 exact cumulative source
+`f13d6f4ae519bb42eeae4dcd81d213a015d11767` aktif pada immutable release
+`20260830223233-f13d6f4` dengan rollback S378
+`20260830212427-561d48d`. Retry payload identik pada edit pengeluaran Staff
+me-replay receipt authoritative tanpa ledger/audit kedua; reuse key untuk
+payload berbeda, versi stale, dan replay lintas Staff ditolak. Server hanya
+menyimpan HMAC key dan canonical request hash. Full exact-main 1.321/1.321
+(14.763 assertion), focused 5/5, frontend 6/6, browser 2/2, build/audit,
+backup/restore, migration compatibility, verifier 23/23, authenticated
+Owner/Staff UAT read-only, public/security smoke 3/3, dan rollback drill aktual
+lulus. Status `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED / UAT_ACCEPTED / BUSINESS_READY=false`; pilot dua studio
+dan provider canary tetap residual gate.
+
 COYABAG exact pushed source
 `26c33f083861a0be955377d2184122a5b2ade3c5` aktif pada immutable release
 `20260831-26c33f0` dengan rollback `20260830-22bb066`; readiness keduanya

@@ -1,5 +1,32 @@
 # SagaBook Changelog
 
+## 2026-08-31 - Idempotent retry edit pengeluaran Staff S379
+
+- Exact source `1d167d9b2c924962062580bb891ab6c93c57b2dd` sudah dipush pada
+  branch `codex/s379-sagabook-expense-edit-idempotency`, berbasiskan exact
+  production/main S378 `561d48d1691cd264919a9ff80dbbd0e918b2b4f5`.
+- UI mempertahankan satu idempotency key untuk draft edit yang sama sehingga
+  respons jaringan ambigu dapat dicoba ulang tanpa mutation kedua; perubahan
+  payload memutar key.
+- Backend menyimpan HMAC key dan canonical request hash pada receipt yang ada.
+  Retry identik mengembalikan snapshot authoritative tanpa ledger/audit kedua;
+  key reuse berbeda, stale version, dan replay oleh staff lain gagal tertutup.
+- Feature source merge ke exact main
+  `f13d6f4ae519bb42eeae4dcd81d213a015d11767` dan aktif sebagai immutable
+  release `20260830223233-f13d6f4`; rollback S378
+  `20260830212427-561d48d` tersedia dan kompatibel.
+- Focused PHP 5/5 (52 assertion), full exact-main 1.321/1.321 (14.763 assertion),
+  frontend contract 6/6, browser 390x844 dan 1440x900 2/2,
+  typecheck/build/Pint/diff, serta audit Composer, OSV, dan npm nol lulus.
+- Fresh backup terenkripsi/checksum/disposable restore, migration compatibility,
+  artifact immutable, atomic switch, verifier 23/23, report canary 32/32,
+  service/journal, public/security smoke 3/3, dan authenticated Owner/Staff UAT
+  read-only lulus. Rollback drill mengaktifkan S378, memverifikasinya sehat,
+  lalu mereaktivasi S379; verifier final kembali 23/23 dengan 0 error journal.
+- Status `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / UAT_ACCEPTED / BUSINESS_READY=false`; pilot dua studio
+  dan provider canary tetap residual gate.
+
 ## 2026-08-31 - Staff expense edit S378 production activation
 
 - Exact cumulative source `561d48d1691cd264919a9ff80dbbd0e918b2b4f5`
