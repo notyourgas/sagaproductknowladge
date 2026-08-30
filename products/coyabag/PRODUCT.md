@@ -76,9 +76,13 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 - Launch UAT 15 langkah sudah lulus 15/15 dan sign-off diizinkan. Checkout
   publik tetap `PRODUCTION_READINESS_BLOCKED` hanya sampai release sign-off
   dicatat; deployment acceptance hotfix tidak membuat payment intent baru.
-- Release aktif `20260830-7641974` dengan exact material source
-  `764197409fd21a9fbfd2659a7a232fdf4d16e0ca` melayani production;
-  rollback langsung `20260830-d213e3a` dipertahankan. Beranda Admin kini
+- Release aktif `20260830-eb8dd39` dengan exact material source
+  `eb8dd394d88d913d3dfebcf59479a07448c9180a` melayani production;
+  rollback langsung `20260830-7641974` dipertahankan. Alur review Pesanan kini
+  mempertahankan queue, filter, sort, dan halaman saat operator membuka detail.
+  Detail menyediakan kembali kontekstual serta navigasi pesanan sebelumnya dan
+  berikutnya pada halaman hasil yang sama; path eksternal dan kode basi dibuang
+  backend. Beranda Admin kini
   memfokuskan antrean `Perlu tindakan` pada kategori yang masih aktif secara
   default, menyediakan tampilan `Semua`, metadata prioritas server-authoritative,
   label urgensi tekstual, status `Tuntas`, live announcement, dan success empty

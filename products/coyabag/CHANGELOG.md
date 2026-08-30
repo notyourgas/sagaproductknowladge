@@ -4,6 +4,23 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-30 - Admin order review continuity deployed
+
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /
+  NOT_PRODUCTION_ACTIVATED`; exact material source
+  `eb8dd394d88d913d3dfebcf59479a07448c9180a`, immutable release
+  `20260830-eb8dd39`, rollback `20260830-7641974`.
+- Daftar Pesanan kini membawa return path kanonik dan urutan maksimal 20 kode
+  pesanan tanpa data pelanggan. Detail mengembalikan operator ke queue/filter/
+  sort/halaman asal dan menyediakan navigasi sebelumnya/berikutnya.
+- Backend menolak URL eksternal, filter tidak dikenal, sequence berlebih, dan
+  kode basi. Laravel 492 total: 491 lulus, satu controlled skip, 4.763
+  assertion; storefront 216/216, browser desktop/mobile, build, audit
+  dependency nol, backup, worker, exact runtime contract, dan public smoke
+  lulus.
+- Readiness tetap fail-closed 41/42 karena release sign-off. Permission, PII
+  masking, provider, commerce, pembayaran, order, dan stok tidak diubah.
+
 ## 2026-08-30 - Admin focused action queue deployed
 
 - Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /

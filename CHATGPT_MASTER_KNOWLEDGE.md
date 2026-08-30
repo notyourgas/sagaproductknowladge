@@ -11,6 +11,17 @@ exact 314/314, PowerShell/pwsh, build/budget/audit, clean, dan remote exact
 lulus. Production tidak berubah; authenticated UAT serta visual review masih
 wajib sehingga `BUSINESS_READY=false`.
 
+COYABAG Admin order review continuity aktif pada exact material source
+`eb8dd394d88d913d3dfebcf59479a07448c9180a`, immutable release
+`20260830-eb8dd39`, dengan rollback `20260830-7641974`. Daftar Pesanan kini
+membawa return path kanonik dan urutan maksimal 20 kode tanpa data pelanggan;
+detail dapat kembali ke queue/filter/sort/halaman asal serta berpindah ke
+pesanan sebelumnya/berikutnya. URL eksternal dan kode basi ditolak backend.
+Laravel 492 total, storefront 216/216, browser desktop/mobile, build/audit,
+backup, worker, exact runtime, dan public smoke lulus. Status tetap
+`PRODUCTION_DEPLOYED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`;
+readiness fail-closed 41/42 dan provider/commerce tidak diaktifkan.
+
 SagaBook release rehearsal S363 pada kandidat kumulatif exact main
 `b37db0810f64731e46f18d026452a6cf3f65e86c` berstatus `LOCAL_VALIDATED /
 RELEASE_ARTIFACT_READY / IMPLEMENTED_NOT_DEPLOYED`. Archive, bundle Git,

@@ -12,12 +12,35 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-30T07:12:00+07:00 |
-| Branch aktif | `codex/s358-sagaview-uat-receipt-transaction-lock-knowledge` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-30T07:15:00+07:00 |
+| Branch aktif | `codex/coyabag-admin-uiux-knowledge` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `02466e43f3e3eea630b2ec0381e23eccdcf2dc2d` |
-| Informasi terakhir disinkronkan | SagaView S358 UAT receipt transaction lock pada exact pushed source `5825fbaec2f984be535891bc2134714afaec2d58`. |
-| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`; production tidak berubah. |
+| Baseline sebelum pembaruan | `cc8bc0ca02070cb9699c51cc7804e94fa8293a4b` |
+| Informasi terakhir disinkronkan | COYABAG Admin order review continuity, exact material source `eb8dd394d88d913d3dfebcf59479a07448c9180a`, release `20260830-eb8dd39`. |
+| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`; readiness fail-closed 41/42. |
+
+## COYABAG Admin order review continuity
+
+- Exact material source `eb8dd394d88d913d3dfebcf59479a07448c9180a`
+  aktif pada immutable release `20260830-eb8dd39`; rollback
+  `20260830-7641974` tersedia.
+- Detail Pesanan mempertahankan queue, filter, sort, dan halaman asal serta
+  menyediakan navigasi sebelumnya/berikutnya pada maksimal 20 hasil halaman.
+  Return path eksternal dan kode basi ditolak tanpa memperluas permission.
+- Laravel 492 total: 491 lulus, satu controlled skip, 4.763 assertion;
+  storefront 216/216, browser desktop/mobile, build/audit, backup, worker,
+  exact runtime contract, dan public smoke lulus.
+- Readiness tetap 41/42 karena release sign-off. Commerce/provider tidak
+  diaktifkan dan tidak ada perubahan pada pembayaran, order, atau stok.
+
+## File yang berubah pada sinkronisasi COYABAG order review continuity
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaView S358 UAT receipt transaction lock
 

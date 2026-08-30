@@ -13,6 +13,18 @@
   authenticated UAT dan visual review masih pending sehingga
   `BUSINESS_READY=false`.
 
+## 2026-08-30 - COYABAG Admin order review continuity
+
+- Exact material source `eb8dd394d88d913d3dfebcf59479a07448c9180a`
+  aktif pada immutable release `20260830-eb8dd39`; rollback
+  `20260830-7641974` tersedia.
+- Operator dapat membuka detail, berpindah ke pesanan sebelumnya/berikutnya,
+  lalu kembali ke queue, filter, sort, dan halaman asal. Konteks dibangun dan
+  dinormalisasi backend tanpa menyimpan data pelanggan.
+- Laravel 492 total, storefront 216/216, browser desktop/mobile, build/audit,
+  backup, worker, exact runtime asset, serta public smoke lulus. Readiness tetap
+  41/42 dan commerce/provider tidak diaktifkan.
+
 ## 2026-08-30 - SagaBook exact-main release rehearsal S363
 
 - Kandidat kumulatif exact main `b37db0810f64731e46f18d026452a6cf3f65e86c`

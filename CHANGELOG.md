@@ -14,6 +14,20 @@
 - Dokumen terdampak: Product, feature ledger/changelog SagaView, portfolio,
   master knowledge, root changelog, dan sync status.
 
+## 2026-08-30 - COYABAG Admin order review continuity sync
+
+- Ringkasan: menyinkronkan alur review Pesanan yang mempertahankan konteks
+  daftar dan menyediakan navigasi pesanan sebelumnya/berikutnya.
+- Provenance: exact material source
+  `eb8dd394d88d913d3dfebcf59479a07448c9180a`, immutable release
+  `20260830-eb8dd39`, rollback `20260830-7641974`.
+- Evidence: Laravel 492 total, storefront 216/216, browser desktop/mobile,
+  build/audit, backup, worker, exact runtime contract, dan public smoke lulus.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /
+  NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`; readiness 41/42.
+- Dokumen terdampak: Product/changelog COYABAG, portfolio, master knowledge,
+  root changelog, dan sync status.
+
 ## 2026-08-30 - SagaBook S363 exact-main artifact rehearsal sync
 
 - Ringkasan: menyinkronkan bukti archive, bundle, manifest, dual-disk copy,
