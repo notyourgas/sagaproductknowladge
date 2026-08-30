@@ -1,5 +1,21 @@
 # SagaBook Changelog
 
+## 2026-08-30 - Post-switch activation contract S366
+
+- Exact kandidat `b37db0810f64731e46f18d026452a6cf3f65e86c` kini mempunyai
+  acceptance contract untuk source/manifest, immutable release, immediate
+  rollback, 23 verifier check, smoke 3/3, dan HSTS endpoint health.
+- Baseline sintetis lengkap lulus 37/37 dengan `BUSINESS_READY=false` tetap
+  dipisahkan dari activation. Negative matrix 10/10 menolak runtime lama,
+  commit/release/rollback/schema drift, missing check, missing HSTS, mutation
+  claim, dan overclaim deployment.
+- Production diperiksa read-only dan tetap stabil, tetapi benar ditolak sebagai
+  activation kandidat karena active source/manifest masih release sebelumnya
+  dan security header masih 2/3. Tidak ada data customer atau mutasi.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; approval exact SHA,
+  fresh encrypted backup/restore, atomic deploy, dan authenticated UAT tetap
+  gate production.
+
 ## 2026-08-30 - Candidate approval packet S365
 
 - Exact kandidat `b37db0810f64731e46f18d026452a6cf3f65e86c` diikat ke tree Git,

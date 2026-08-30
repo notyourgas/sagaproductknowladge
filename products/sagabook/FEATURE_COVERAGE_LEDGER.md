@@ -1,6 +1,20 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 30 Agustus 2026 09:09 WIB
+Evidence cut-off: 30 Agustus 2026 10:10 WIB
+
+Kontrak post-switch S366 telah `LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED` pada exact kandidat
+`b37db0810f64731e46f18d026452a6cf3f65e86c`. Acceptance contract mengikat
+source/manifest kandidat, pola release immutable, immediate rollback ke release
+aktif sebelumnya, 23 check verifier, smoke 3/3, dan HSTS `/up`. Baseline
+sintetis lengkap lulus 37/37 dan tetap mempertahankan
+`BUSINESS_READY=false`; negative matrix 10/10 menolak runtime lama,
+commit/release/rollback/schema drift, check hilang, HSTS hilang, mutation claim,
+dan overclaim deployment. Production read-only tetap stabil tetapi tepat
+ditolak sebagai activation kandidat karena source/manifest masih lama dan
+security 2/3. Approval exact SHA, fresh encrypted backup/restore, atomic switch,
+post-switch verifier nyata, authenticated UAT, dua pilot, dan provider canary
+tetap gate.
 
 Paket persetujuan kandidat S365 telah `LOCAL_VALIDATED /
 IMPLEMENTED_NOT_DEPLOYED` pada exact main

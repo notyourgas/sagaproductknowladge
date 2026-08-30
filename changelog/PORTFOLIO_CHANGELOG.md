@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-08-30 - SagaBook post-switch activation contract S366
+
+- Exact kandidat `b37db0810f64731e46f18d026452a6cf3f65e86c` kini mempunyai
+  kontrak fail-closed untuk exact source/manifest, immutable release, immediate
+  rollback, verifier wajib, smoke 3/3, dan HSTS health endpoint.
+- Baseline sintetis 37/37 dan negative matrix 10/10 lulus; runtime production
+  lama benar ditolak tanpa mutasi maupun data customer.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; approval, fresh backup/
+  restore, atomic deploy, post-switch verification nyata, dan UAT masih pending.
+
 ## 2026-08-30 - COYABAG atomic bulk order processing
 
 - Exact material source `a604cfccd02a3a572f56ad9375d6ae4933215f5f`

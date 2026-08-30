@@ -1,5 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+SagaBook S366 menambahkan acceptance contract post-switch untuk exact kandidat
+`b37db0810f64731e46f18d026452a6cf3f65e86c`. Klaim activation hanya diterima
+bila source dan manifest exact, release immutable cocok dengan kandidat,
+immediate rollback menunjuk production sebelumnya, 23 verifier check lulus,
+smoke 3/3 aman, dan HSTS `/up` aktif. Baseline sintetis 37/37 dan negative
+matrix 10/10 lulus; `BUSINESS_READY=false` tetap status terpisah. Runtime
+production yang masih aktif tetap stabil tetapi benar ditolak sebagai
+activation kandidat. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+approval exact SHA, fresh backup/restore, deploy, dan UAT belum dilakukan.
+
 COYABAG atomic bulk order processing aktif pada exact material source
 `a604cfccd02a3a572f56ad9375d6ae4933215f5f`, immutable release
 `20260830-a604cfc`, dengan rollback `20260830-3155c85`. Owner/Admin dapat

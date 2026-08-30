@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-30 - SagaBook S366 post-switch activation contract sync
+
+- Ringkasan: menyinkronkan acceptance contract fail-closed yang memisahkan
+  evidence post-switch lengkap dari runtime lama dan business readiness.
+- Provenance: exact main SagaBook
+  `b37db0810f64731e46f18d026452a6cf3f65e86c`; production tidak diubah.
+- Evidence: baseline 37/37, negative matrix 10/10, dan production read-only
+  stabil namun benar ditolak sebagai activation kandidat.
+- Klasifikasi: `CONFIRMED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; `BUSINESS_READY=false`.
+- Dokumen terdampak: Product, feature ledger/changelog SagaBook, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-08-30 - COYABAG atomic bulk order processing sync
 
 - Ringkasan: menyinkronkan flow Owner/Admin untuk memulai picking pada batch
