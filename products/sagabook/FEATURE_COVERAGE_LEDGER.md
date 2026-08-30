@@ -1,6 +1,17 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 30 Agustus 2026 11:35 WIB
+Evidence cut-off: 30 Agustus 2026 11:53 WIB
+
+Hardening release-evidence S368 telah `CONFIRMED / MERGED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED` pada feature source
+`f40cf22689c21463a303bd7893749e092433d751` dan exact main
+`30c343eb7d140dd3c45cded0f1a91d4527cdd44b` melalui PR #79. Helper
+backup/restore menolak checkout yang tidak sama dengan exact candidate
+worktree sebelum canary atau SSH. Regression merah lalu hijau, focused 30/30
+(373 assertion), full PHP 1.307/1.307 (14.670 assertion), parser, typecheck,
+build, format, diff-check, dan audit Composer/npm nol lulus. GitHub runner tidak
+memulai step; bukti lokal ekuivalen tersedia. Production tetap source S367 dan
+tidak berubah.
 
 Exact cumulative source `b37db0810f64731e46f18d026452a6cf3f65e86c`
 telah `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED` pada

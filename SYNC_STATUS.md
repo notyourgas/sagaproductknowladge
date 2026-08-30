@@ -12,12 +12,35 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-30T11:35:00+07:00 |
-| Branch aktif | `codex/s367-sagabook-production-release-knowledge` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-30T11:53:00+07:00 |
+| Branch aktif | `codex/s368-restore-helper-binding-knowledge` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `94e0ecc3ae0990e983aa60632cd7782de77ac0f9` |
-| Informasi terakhir disinkronkan | SagaBook S367 production activation pada exact source `b37db0810f64731e46f18d026452a6cf3f65e86c`. |
-| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED / BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `eebfb4afba05efb6b7a8c86ca092e9e54bb45af4` |
+| Informasi terakhir disinkronkan | SagaBook S368 release helper binding pada exact main `30c343eb7d140dd3c45cded0f1a91d4527cdd44b`. |
+| Status sinkronisasi | `CONFIRMED / MERGED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah. |
+
+## SagaBook S368 release helper binding
+
+- Feature source `f40cf22689c21463a303bd7893749e092433d751` telah merge melalui PR
+  #79 ke exact main `30c343eb7d140dd3c45cded0f1a91d4527cdd44b`.
+- Helper backup/restore evidence kini menolak checkout selain exact candidate
+  worktree sebelum canary atau SSH.
+- Regression merah lalu hijau, focused 30/30, full PHP 1.307/1.307, parser,
+  typecheck, build, format, diff-check, dan audit dependensi nol lulus. GitHub
+  runner tidak memulai step; evidence lokal ekuivalen tersedia.
+- Status `CONFIRMED / MERGED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap release S367.
+
+## File yang berubah pada sinkronisasi SagaBook S368
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook S367 production activation
 
