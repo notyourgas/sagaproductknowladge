@@ -1,6 +1,22 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 30 Agustus 2026 13:55 WIB
+Evidence cut-off: 30 Agustus 2026 23:34 WIB
+
+Exact cumulative source S377
+`6489030c0cb51e6aa9dafd03a704d628c10f2cad` telah
+`PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED` pada immutable
+release `20260830162300-6489030`; immediate rollback
+`20260830064046-4b4d6f6` tersedia dan lulus rollback/restore drill. Runtime
+delta menempatkan toast notifikasi admin di offset fixed aman di bawah header
+pada mobile dan desktop dengan live-region, target tutup 44 px, forced-colors,
+reduced-motion, dan no-overflow. Full Feature 1.282/1.282 (14.484 assertion),
+Saga AI 18/18, visual S377 6/6, correction selector paket 2/2, build/audit,
+artifact immutable, fresh encrypted backup/checksum/disposable restore,
+atomic switch, verifier 23/23, report canary 32/32, migration pending 0,
+service/journal, public/security smoke 3/3, dan authenticated Owner/Staff UAT
+read-only lulus. S376 `3b3eaa34863cf43a95d582dd0644c3ad1bc0f80b`
+hanya acceptance harness tanpa runtime delta. Pilot dua studio dan provider
+canary tetap residual gate sehingga `BUSINESS_READY=false`.
 
 Exact cumulative source S370
 `4b4d6f645153ccbaaca0be7fc1cb7bf5518d787f` telah

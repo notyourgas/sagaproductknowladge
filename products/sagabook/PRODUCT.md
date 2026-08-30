@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 30 Agustus 2026 13:55 WIB
-Evidence status: exact cumulative source S370 `4b4d6f645153ccbaaca0be7fc1cb7bf5518d787f` aktif pada immutable release `20260830064046-4b4d6f6`, dengan immediate rollback `20260830042225-b37db08` tersedia dan kompatibel. Full PHP 1.315/1.315, kontrak frontend 10/10, browser report recovery 6/6, build/typecheck, migration SQLite up/rollback/reapply, strict local readiness 100/100, serta audit dependensi nol lulus. GitHub-hosted runner ditolak sebelum step karena gate billing/spending akun; gate lokal/VPS ekuivalen, artifact immutable, fresh backup terenkripsi/checksum/disposable restore, atomic switch, verifier independen 23/23, report canary 32/32, migration pending 0, service/journal, public/security smoke 3/3, dan authenticated Owner/operator UAT mobile+desktop semuanya lulus. Status `CONFIRMED / PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED / BUSINESS_READY=false`; pilot dua studio dan provider canary tetap residual gate.
+Updated: 30 Agustus 2026 23:34 WIB
+Evidence status: exact cumulative source S377 `6489030c0cb51e6aa9dafd03a704d628c10f2cad` aktif pada immutable release `20260830162300-6489030`, dengan immediate rollback `20260830064046-4b4d6f6` tersedia, kompatibel, dan sudah dibuktikan melalui rollback/restore drill. Full Feature 1.282/1.282 (14.484 assertion), Saga AI 18/18, visual S377 6/6, correction selector paket 2/2, build/typecheck, audit dependensi nol, artifact immutable, fresh backup terenkripsi/checksum/disposable restore, atomic switch, verifier independen 23/23, report canary 32/32, migration pending 0, service/journal, public/security smoke 3/3, dan authenticated Owner/Staff UAT read-only semuanya lulus. GitHub-hosted runner ditolak sebelum step karena gate billing/spending akun; bukti lokal/VPS ekuivalen digunakan tanpa membebaskan source test, provenance, backup, migration, health, UAT, atau rollback. Status `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED / BUSINESS_READY=false`; pilot dua studio dan provider canary tetap residual gate.
 
 ## Tujuan dokumen
 
@@ -15,6 +15,17 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
+
+- Exact cumulative source S377
+  `6489030c0cb51e6aa9dafd03a704d628c10f2cad` telah aktif pada immutable
+  release `20260830162300-6489030`; rollback langsung
+  `20260830064046-4b4d6f6` tersedia dan lulus rollback/restore drill. Toast
+  notifikasi admin kini memakai offset fixed yang aman di bawah header pada
+  mobile dan desktop sehingga tidak menutup lonceng atau navigasi, sambil
+  mempertahankan live-region, tombol tutup minimum 44 px, forced-colors,
+  reduced-motion, dan no-overflow. S376 hanya menambah acceptance harness dan
+  tidak membawa runtime delta. Status `PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / UAT_ACCEPTED / BUSINESS_READY=false`.
 
 - Exact cumulative source S370
   `4b4d6f645153ccbaaca0be7fc1cb7bf5518d787f` telah aktif pada immutable

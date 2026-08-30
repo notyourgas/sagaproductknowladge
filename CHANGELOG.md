@@ -1,5 +1,21 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-30 - SagaBook S377 production activation sync
+
+- Ringkasan: menyinkronkan posisi toast notifikasi admin yang aman pada
+  mobile/desktop, runtime release, UAT, dan bukti rollback terbaru.
+- Provenance: exact cumulative source
+  `6489030c0cb51e6aa9dafd03a704d628c10f2cad`, immutable release
+  `20260830162300-6489030`, rollback `20260830064046-4b4d6f6`.
+- Evidence: Full Feature 1.282/1.282 (14.484 assertion), Saga AI 18/18,
+  visual/correction 8/8, build/audit, encrypted backup+restore, verifier 23/23,
+  report canary 32/32, migration pending nol, service/journal/smoke,
+  authenticated Owner/Staff UAT, dan rollback/restore drill lulus.
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / UAT_ACCEPTED / BUSINESS_READY=false`.
+- Dokumen terdampak: Product, dossier, ledger/changelog SagaBook, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-08-30 - COYABAG customer identity merge guard sync
 
 - Ringkasan: menyinkronkan dialog merge pelanggan terisolasi, exact-target dan

@@ -1,5 +1,26 @@
 # SagaBook Changelog
 
+## 2026-08-30 - Notification toast placement S377 production activation
+
+- Exact cumulative source `6489030c0cb51e6aa9dafd03a704d628c10f2cad`
+  aktif pada immutable release `20260830162300-6489030`; immediate rollback
+  `20260830064046-4b4d6f6` tersedia dan lulus rollback/restore drill.
+- Toast notifikasi admin memakai offset fixed aman di bawah header pada mobile
+  dan desktop sehingga tidak menutup lonceng atau navigasi. Live-region,
+  tombol tutup minimum 44 px, forced-colors, reduced-motion, dan no-overflow
+  tetap dijaga. S376 hanya acceptance harness tanpa runtime delta.
+- Full Feature 1.282/1.282 (14.484 assertion), Saga AI 18/18, visual S377 6/6,
+  correction selector paket 2/2, build/typecheck, audit dependensi nol,
+  artifact immutable, fresh encrypted backup/checksum/disposable restore,
+  atomic switch, verifier independen 23/23, report canary 32/32, migration
+  pending 0, service/journal, dan public/security smoke 3/3 lulus.
+- Authenticated Owner/Staff UAT read-only lulus tanpa mutation atau secret.
+  GitHub-hosted runner ditolak sebelum step karena billing/spending; bukti
+  lokal/VPS ekuivalen digunakan tanpa membebaskan gate wajib.
+- Status `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / UAT_ACCEPTED / BUSINESS_READY=false`; pilot dua
+  studio dan provider canary tetap residual gate.
+
 ## 2026-08-30 - Production activation exact main S370
 
 - Exact cumulative source `4b4d6f645153ccbaaca0be7fc1cb7bf5518d787f`

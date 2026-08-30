@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-30 - SagaBook S377 notification toast placement deployed
+
+- Exact source `6489030c0cb51e6aa9dafd03a704d628c10f2cad` aktif pada
+  immutable release `20260830162300-6489030`; rollback
+  `20260830064046-4b4d6f6` tersedia dan lulus rollback/restore drill.
+- Toast notifikasi admin kini berada pada offset fixed aman di bawah header
+  mobile/desktop tanpa menutup lonceng atau navigasi, dengan live-region,
+  target tutup 44 px, forced-colors, reduced-motion, dan no-overflow.
+- Full Feature 1.282/1.282, Saga AI 18/18, visual/correction 8/8,
+  build/audit, backup+restore, verifier 23/23, report canary 32/32,
+  service/smoke, dan authenticated UAT lulus. Status
+  `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED /
+  BUSINESS_READY=false`.
+
 ## 2026-08-30 - COYABAG customer identity merge guard deployed
 
 - Exact pushed source `f4a5ccd926c082c781cbfd5b58a2d408670eb912`

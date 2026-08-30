@@ -12,12 +12,38 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-30T22:12:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-30T23:34:00+07:00 |
 | Branch aktif | isolated exact `origin/main` worktree |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `fe3f45f4f5f33ca7269322b665938fa747d51e27` |
-| Informasi terakhir disinkronkan | COYABAG customer identity merge guard pada exact source `f4a5ccd926c082c781cbfd5b58a2d408670eb912`. |
-| Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE`; `BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `c3b8fe18b5568e6457ae48430126df2231f9cf83` |
+| Informasi terakhir disinkronkan | SagaBook S377 pada exact source `6489030c0cb51e6aa9dafd03a704d628c10f2cad`. |
+| Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED`; `BUSINESS_READY=false`. |
+
+## SagaBook S377 notification toast placement
+
+- Exact source `6489030c0cb51e6aa9dafd03a704d628c10f2cad` sudah push dan aktif
+  sebagai immutable release `20260830162300-6489030`; rollback
+  `20260830064046-4b4d6f6` tersedia dan lulus rollback/restore drill.
+- Toast notifikasi admin memakai offset fixed aman di bawah header mobile dan
+  desktop tanpa menutup lonceng/navigasi; live-region, target tutup 44 px,
+  forced-colors, reduced-motion, dan no-overflow dipertahankan.
+- Full Feature 1.282/1.282, Saga AI 18/18, visual/correction 8/8,
+  build/audit, backup+restore, verifier 23/23, report canary 32/32,
+  migration pending nol, service/journal/smoke, dan authenticated Owner/Staff
+  UAT lulus. S376 hanya acceptance harness tanpa runtime delta.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED /
+  BUSINESS_READY=false`; pilot dua studio dan provider canary masih residual.
+
+## File yang berubah pada sinkronisasi SagaBook S377
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG customer identity merge guard
 
