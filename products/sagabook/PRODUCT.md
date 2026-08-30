@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
 Updated: 31 Agustus 2026 WIB
-Evidence status: S378 aktif pada exact cumulative source `561d48d1691cd264919a9ff80dbbd0e918b2b4f5`, immutable release `20260830212427-561d48d`, dengan rollback S377 `20260830162300-6489030`. Staff dapat mengedit pengeluaran yang ia input sendiri sebelum closing tanggal/cabang tersebut disubmit; provenance pencatat, optimistic lock, audit before/after, dan ledger server-authoritative tetap dijaga. Kandidat S379 `1d167d9b2c924962062580bb891ab6c93c57b2dd` membuat retry respons jaringan ambigu idempoten, tetapi belum masuk production. Status production `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED / BUSINESS_READY=false`; S379 `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+Evidence status: S379 aktif pada exact cumulative source `f13d6f4ae519bb42eeae4dcd81d213a015d11767`, immutable release `20260830223233-f13d6f4`, dengan rollback S378 `20260830212427-561d48d`. Retry respons jaringan ambigu pada edit pengeluaran Staff kini idempoten tanpa ledger/audit kedua, sedangkan konflik payload, stale version, dan replay lintas Staff tetap gagal tertutup. Full exact-main 1.321/1.321 (14.763 assertion), artifact immutable, fresh encrypted backup/checksum/disposable restore, migration compatibility, verifier 23/23, authenticated Owner/Staff UAT read-only, dan rollback drill aktual lulus. Status `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED / BUSINESS_READY=false`.
 
 ## Tujuan dokumen
 
@@ -16,8 +16,9 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
 
-- Kandidat S379 pada exact pushed source
-  `1d167d9b2c924962062580bb891ab6c93c57b2dd` menahan satu idempotency key
+- Exact cumulative source S379
+  `f13d6f4ae519bb42eeae4dcd81d213a015d11767` memuat feature source
+  `1d167d9b2c924962062580bb891ab6c93c57b2dd` dan menahan satu idempotency key
   untuk payload edit pengeluaran yang sama sampai server mengonfirmasi sukses.
   Retry identik membaca receipt hasil pertama tanpa mutation ledger atau audit
   kedua; key sama dengan payload berbeda ditolak `409`, key baru dengan versi
@@ -25,8 +26,13 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   hanya menyimpan HMAC key dan canonical request hash. Focused backend 5/5 (52
   assertion), full PHP 1.321/1.321 (14.762 assertion), frontend contract 6/6,
   browser mobile+desktop 2/2, typecheck/build/Pint/diff, serta audit Composer,
-  OSV, dan npm nol advisory lulus. Status `CONFIRMED / SOURCE_PUSHED /
-  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S378.
+  OSV, dan npm nol advisory lulus. Source aktif pada immutable release
+  `20260830223233-f13d6f4`; rollback S378 `20260830212427-561d48d` tersedia,
+  sempat diaktifkan dan diverifikasi sehat, lalu S379 direaktivasi. Fresh
+  backup terenkripsi/checksum/disposable restore, verifier 23/23,
+  public/security smoke 3/3, service/journal, dan authenticated Owner/Staff UAT
+  read-only lulus. Status `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / UAT_ACCEPTED / BUSINESS_READY=false`.
 
 - Exact cumulative source S378
   `561d48d1691cd264919a9ff80dbbd0e918b2b4f5` aktif pada immutable release
