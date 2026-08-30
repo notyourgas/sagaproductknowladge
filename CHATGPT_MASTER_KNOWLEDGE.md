@@ -1,8 +1,8 @@
 # Saga Product — Master Knowledge for ChatGPT
 
 COYABAG exact pushed source
-`261329f337f1eeb95f3564679ac3cde58429a016` aktif pada immutable release
-`20260830-261329f` dengan rollback `20260830-9be4247`. Readiness 42/42 dan
+`a9d0e0f255ef7d5584509b5b1c937394fcf25c85` aktif pada immutable release
+`20260830-a9d0e0f` dengan rollback `20260830-261329f`. Readiness 42/42 dan
 checkout `COMMERCE_ACTIVE`; SagaDev controlled trial dibatasi Rp500.000 per
 transaksi serta lima intent baru per hari. Payment Detail menyediakan recovery
 sesi server-authoritative dengan permission, recent auth, 2FA, rate limit, dan
@@ -14,7 +14,10 @@ sebelum keputusan karantina. Alert stok rendah memiliki antrean triase
 server-authoritative dengan severity, threshold, shortage, dampak storefront,
 navigasi, filter, dan ledger-first guidance. Handoff adjustment tetap memakai
 guard permission, recent auth, revision, idempotensi, dan approval tanpa jalur
-mutasi baru. Status `PRODUCTION_DEPLOYED /
+mutasi baru. Semua movement ledger dapat ditinjau read-only dengan saldo
+historis sebelum/sesudah, delta, alasan, actor, order, serta lineage reversal;
+movement terlindungi tetap fail-closed dan reversal eligible membuat movement
+lawan tanpa mengubah histori. Status `PRODUCTION_DEPLOYED /
 PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
 
 SagaBook S370 exact pushed source

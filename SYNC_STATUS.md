@@ -12,12 +12,37 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-30T15:30:00+07:00 |
+| Waktu pembaruan terakhir | 2026-08-30T16:25:00+07:00 |
 | Branch aktif | isolated exact `origin/main` worktree |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `0210f19ced0ced2463de4f61d14386a56d4656ed` |
-| Informasi terakhir disinkronkan | COYABAG inventory low-stock triage pada exact source `261329f337f1eeb95f3564679ac3cde58429a016`. |
+| Baseline sebelum pembaruan | `310b8a7e630b570f7540010da2d8feb37bf75308` |
+| Informasi terakhir disinkronkan | COYABAG inventory movement review pada exact source `a9d0e0f255ef7d5584509b5b1c937394fcf25c85`. |
 | Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE`; `BUSINESS_READY=false`. |
+
+## COYABAG inventory movement review
+
+- Exact source `a9d0e0f255ef7d5584509b5b1c937394fcf25c85` sudah push dan aktif
+  sebagai immutable release `20260830-a9d0e0f`; rollback
+  `20260830-261329f` tersedia.
+- Semua movement ledger kini dapat ditinjau read-only dengan saldo historis,
+  delta, alasan, actor, order, dan lineage. Protected movement menjelaskan
+  guard, sedangkan eligible movement meneruskan ke reversal existing.
+- TDD merah/hijau, focused 12/12, Laravel 516, storefront 216/216, browser
+  Inventory, build/audit, backup, pending migration nol, readiness 42/42, cron,
+  dua worker, dan public smoke lulus.
+- Commerce tetap `COMMERCE_ACTIVE`; enam payment exception historis, shipping
+  sembilan tujuan, seller/legal/tax final, dan offsite backup menahan
+  `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi COYABAG movement review
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG inventory low-stock triage
 

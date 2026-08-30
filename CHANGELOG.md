@@ -1,5 +1,21 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-30 - COYABAG inventory movement review sync
+
+- Ringkasan: menyinkronkan review read-only seluruh movement ledger,
+  before/after historis, reversal lineage, release, rollback, dan runtime
+  evidence terbaru.
+- Provenance: exact pushed source
+  `a9d0e0f255ef7d5584509b5b1c937394fcf25c85`, immutable release
+  `20260830-a9d0e0f`, rollback `20260830-261329f`.
+- Evidence: TDD merah/hijau, focused 12/12, Laravel 516 total, storefront
+  216/216, browser Inventory desktop/mobile, build/audit, backup, migration
+  pending nol, readiness 42/42, cron, dua worker, dan public smoke lulus.
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false`.
+- Dokumen terdampak: Product, dossier/changelog COYABAG, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-30 - COYABAG inventory low-stock triage sync
 
 - Ringkasan: menyinkronkan antrean triase alert stok rendah, ledger-first

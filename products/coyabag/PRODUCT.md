@@ -76,9 +76,9 @@ COMMERCE_ACTIVE`. Business readiness: `BLOCKED`.
   bagian; audit tetap `report_only` dan tidak menghapus record.
 - Launch UAT 15 langkah dan release sign-off sudah lulus. Readiness gate tetap
   enforced dan keputusan runtime adalah `COMMERCE_ACTIVE`.
-- Release aktif `20260830-261329f` dengan exact material source
-  `261329f337f1eeb95f3564679ac3cde58429a016` melayani production;
-  rollback langsung `20260830-9be4247` tersedia. Exact lineage production
+- Release aktif `20260830-a9d0e0f` dengan exact material source
+  `a9d0e0f255ef7d5584509b5b1c937394fcf25c85` melayani production;
+  rollback langsung `20260830-261329f` tersedia. Exact lineage production
   sudah berada pada remote branch kanonik. Payment Detail kini menunjukkan
   state sesi checkout server-authoritative, expiry, dan histori attempt aman;
   Finance dapat menyiapkan sesi hanya dengan `payments.manage`, recent auth,
@@ -99,7 +99,12 @@ COMMERCE_ACTIVE`. Business readiness: `BLOCKED`.
   storefront, navigasi sebelumnya/berikutnya, filter daftar, dan tautan ledger.
   Data berasal dari snapshot inventory server-authoritative. Adjustment tetap
   memakai permission, recent auth, revision, idempotensi, dan approval yang
-  sudah ada; triase tidak menambah jalur mutasi stok baru. Dialog adjustment Inventory
+  sudah ada; triase tidak menambah jalur mutasi stok baru. Semua movement
+  ledger kini dapat ditinjau melalui detail read-only yang menampilkan saldo
+  historis sebelum/sesudah, delta, alasan, actor, waktu, order terkait, serta
+  lineage source/reversal. Movement terlindungi menjelaskan alasan reversal
+  tidak tersedia; hanya movement eligible yang dapat diteruskan ke form
+  reversal existing. Dialog adjustment Inventory
   kini memulihkan konflik revision dengan snapshot saldo server read-only,
   mempertahankan jumlah dan alasan yang sudah diketik, membandingkan saldo saat
   dialog dibuka dengan saldo terbaru, lalu meminta Owner/Admin memilih

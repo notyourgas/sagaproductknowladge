@@ -4,6 +4,23 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-30 - Inventory movement review deployed
+
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false` dari exact
+  source `a9d0e0f255ef7d5584509b5b1c937394fcf25c85`, immutable release
+  `20260830-a9d0e0f`, dan rollback `20260830-261329f`.
+- Semua movement ledger kini memiliki detail read-only berisi saldo historis
+  sebelum/sesudah, delta, kategori/alasan, actor, waktu, order, serta lineage
+  source/reversal. Movement terlindungi menjelaskan alasan reversal tidak
+  tersedia; movement eligible dapat meneruskan ke flow reversal existing.
+- TDD merah lalu hijau; focused 12/12 dengan 136 assertion, Laravel 516
+  total/515 pass/satu intentional skip dengan 5.052 assertion, storefront
+  216/216, browser Inventory desktop/mobile, build, audit dependency, backup,
+  worker, readiness 42/42, migration pending nol, dan public smoke lulus.
+- Enam exception pembayaran historis dan shipping manual sembilan tujuan tetap
+  menjadi residual bisnis; release tidak mengubah provider activation.
+
 ## 2026-08-30 - Inventory low-stock triage deployed
 
 - Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /

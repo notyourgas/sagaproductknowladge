@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-30 - COYABAG inventory movement review deployed
+
+- Exact pushed source `a9d0e0f255ef7d5584509b5b1c937394fcf25c85`
+  aktif pada immutable release `20260830-a9d0e0f`; rollback
+  `20260830-261329f` tersedia.
+- Semua movement Inventory kini memiliki detail read-only dengan saldo
+  historis sebelum/sesudah, delta, alasan, actor, order, dan lineage reversal.
+  Movement terlindungi tetap fail-closed; reversal eligible memakai flow lama
+  yang membuat movement lawan tanpa mengubah histori.
+- Laravel 516, storefront 216/216, browser Inventory desktop/mobile,
+  build/security audit, backup, readiness 42/42, worker, cron, dan public smoke
+  lulus. Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE /
+  BUSINESS_READY=false`.
+
 ## 2026-08-30 - COYABAG inventory low-stock triage deployed
 
 - Exact pushed source `261329f337f1eeb95f3564679ac3cde58429a016`
