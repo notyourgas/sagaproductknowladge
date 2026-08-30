@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-30 - SagaView S364 provenance response-policy enforcement sync
+
+- Ringkasan: menyinkronkan validasi final URL, JSON, dan kebijakan `no-store`
+  pada response provenance sebelum body diparsing.
+- Provenance: exact pushed source
+  `2371db8e746aeaed6a76c21daa80e14bc3ff77fb`; production tidak diubah.
+- Evidence: regression red 5/5 lalu green 5/5, focused S344-S364 78/78, full
+  exact 336/336, PowerShell/pwsh, format/lint/typecheck, client+SSR build,
+  bundle budget, npm audit nol, live read-only Prepare, diff check, clean, dan
+  remote exact.
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; `BUSINESS_READY=false`.
+- Dokumen terdampak: Product, feature ledger/changelog SagaView, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-08-30 - SagaView S363 Finalize runtime post-scan revalidation sync
 
 - Ringkasan: menyinkronkan pemeriksaan ulang provenance live setelah seluruh

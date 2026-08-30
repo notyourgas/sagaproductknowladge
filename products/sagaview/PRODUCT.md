@@ -1,6 +1,21 @@
 # SagaView Product Knowledge
 
-Updated: 30 Agustus 2026 12:13 WIB
+Updated: 30 Agustus 2026 13:16 WIB
+
+SagaView S364 exact source
+`2371db8e746aeaed6a76c21daa80e14bc3ff77fb` sudah `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Probe provenance S344 kini
+mematikan redirect dan memvalidasi final URL kanonik, media type JSON, serta
+token `Cache-Control: no-store` sebelum parsing. Response dari perantara,
+format lain, atau cache lama berhenti fail-closed sebagai runtime unavailable.
+
+Regression awal 5/5 gagal lalu hijau 5/5; focused S344-S364 78/78 dan full
+76 file/336 test pada exact commit lulus. Parser Windows PowerShell/pwsh,
+format/lint/typecheck, client 2.129 modul + SSR 203 modul, bundle 312,7 KiB
+dari 450 KiB, npm audit nol, live read-only Prepare pada dua endpoint kanonik,
+diff check, clean exact commit, serta remote exact juga lulus. Production
+tidak diubah; authenticated UAT 12 gate dan visual review tetap wajib sehingga
+`BUSINESS_READY=false`.
 
 SagaView S363 exact source
 `1d302047937a90687ec6ff00f97e45cd5f821577` sudah `PUSHED /

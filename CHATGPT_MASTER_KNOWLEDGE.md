@@ -1,5 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+SagaView S364 exact pushed source
+`2371db8e746aeaed6a76c21daa80e14bc3ff77fb` berstatus `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Probe provenance S344 menolak
+redirect, final URL non-kanonik, non-JSON, dan response tanpa `no-store`
+sebelum parsing, sehingga marker runtime dari perantara atau cache lama
+berhenti fail-closed. Regression 5/5 merah lalu 5/5 hijau, focused S344-S364
+78/78, full exact 336/336, PowerShell/pwsh, build/budget/audit, live Prepare,
+clean, dan remote exact lulus. Production tidak berubah; authenticated UAT
+serta visual review masih wajib sehingga `BUSINESS_READY=false`.
+
 SagaView S363 exact pushed source
 `1d302047937a90687ec6ff00f97e45cd5f821577` berstatus `PUSHED /
 LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. S344 Finalize mengambil

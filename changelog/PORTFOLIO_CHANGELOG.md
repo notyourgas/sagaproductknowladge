@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-30 - SagaView S364 provenance response-policy enforcement
+
+- Exact pushed source `2371db8e746aeaed6a76c21daa80e14bc3ff77fb`
+  membuat probe provenance menolak redirect, final URL non-kanonik,
+  non-JSON, dan response tanpa `no-store` sebelum parsing.
+- Regression red 5/5 lalu green 5/5, focused S344-S364 78/78, full exact
+  336/336, parser PowerShell/pwsh, build/budget, audit nol, live Prepare,
+  clean, dan remote exact lulus.
+- Perubahan hanya harness/test/runbook. Production tidak berubah;
+  authenticated UAT dan visual review masih pending sehingga
+  `BUSINESS_READY=false`.
+
 ## 2026-08-30 - SagaView S363 Finalize runtime post-scan revalidation
 
 - Exact pushed source `1d302047937a90687ec6ff00f97e45cd5f821577`

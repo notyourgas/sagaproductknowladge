@@ -1,5 +1,24 @@
 # SagaView Changelog
 
+## 2026-08-30 - S364 provenance response-policy enforcement
+
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan
+  `BUSINESS_READY=false`.
+- Before: probe provenance mengikuti redirect dan langsung mem-parsing body
+  tanpa memastikan final URL, JSON, atau kebijakan cache response.
+- After: exact source `2371db8e746aeaed6a76c21daa80e14bc3ff77fb`
+  menolak redirect, final URL non-kanonik, media type non-JSON, dan response
+  tanpa token `no-store` sebelum parsing.
+- Evidence: regression red 5/5 lalu green 5/5; focused S344-S364 78/78;
+  full exact-commit 76 file/336 test; parser PowerShell/pwsh;
+  format/lint/typecheck; client+SSR build; bundle 312,7 KiB dari 450 KiB;
+  npm audit nol; live read-only Prepare; diff check; clean; dan remote exact.
+- Boundary: hanya harness/test/runbook dengan response sintetis; tanpa UI/API/
+  database write, data customer, deploy, atau perubahan production.
+- Next gate: authenticated manual UAT 12 gate dengan evidence sintetis
+  tersanitasi, visual review, reviewer S345, lalu S344 Finalize.
+
 ## 2026-08-30 - S363 Finalize runtime post-scan revalidation
 
 - Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /

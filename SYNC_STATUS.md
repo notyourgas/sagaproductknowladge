@@ -12,12 +12,34 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-30T12:13:00+07:00 |
-| Branch aktif | `codex/s363-sagaview-runtime-revalidation-knowledge` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-30T13:16:00+07:00 |
+| Branch aktif | `codex/s364-sagaview-provenance-policy-knowledge` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `18691abddccec74de2fad2ec5459ce60fd4bd68a` |
-| Informasi terakhir disinkronkan | SagaView S363 Finalize runtime post-scan revalidation pada exact source `1d302047937a90687ec6ff00f97e45cd5f821577`. |
+| Baseline sebelum pembaruan | `4a6464a6bc06e406f30a823a39b14d91e3877293` |
+| Informasi terakhir disinkronkan | SagaView S364 provenance response-policy enforcement pada exact source `2371db8e746aeaed6a76c21daa80e14bc3ff77fb`. |
 | Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan `BUSINESS_READY=false`. |
+
+## SagaView S364 provenance response-policy enforcement
+
+- Exact source `2371db8e746aeaed6a76c21daa80e14bc3ff77fb` sudah push.
+- Probe provenance S344 menolak redirect, final URL non-kanonik, media type
+  non-JSON, dan response tanpa token `no-store` sebelum parsing.
+- Regression red 5/5 lalu green 5/5, focused S344-S364 78/78, full exact
+  336/336, PowerShell/pwsh, format/lint/typecheck, client+SSR build, bundle
+  budget, npm audit nol, live read-only Prepare, diff check, clean, dan remote
+  exact lulus.
+- Production tidak berubah; authenticated UAT 12 gate dan visual review masih
+  pending sehingga `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi SagaView S364
+
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaView S363 Finalize runtime post-scan revalidation
 

@@ -1,6 +1,23 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 30 Agustus 2026 12:13 WIB
+Evidence cut-off: 30 Agustus 2026 13:16 WIB
+
+S364 provenance response-policy enforcement: exact pushed source
+`2371db8e746aeaed6a76c21daa80e14bc3ff77fb` membuat probe S344 menolak
+redirect, response non-JSON, dan provenance yang dapat disimpan cache sebelum
+payload diparsing. Final response URL harus tetap URL kanonik dan
+`Cache-Control` wajib memuat `no-store`, sehingga marker runtime tidak dapat
+diam-diam berasal dari perantara atau cache lama.
+
+Ledger lulus: regression merah 5/5 lalu hijau 5/5; focused S344-S364 78/78;
+full exact-commit 76 file/336 test; parser Windows PowerShell/pwsh;
+format/lint/typecheck; client 2.129 modul + SSR 203 modul; bundle 312,7 KiB
+dari 450 KiB; npm audit nol; live read-only Prepare terhadap dua endpoint
+kanonik; diff check; worktree bersih; serta remote exact. Boundary hanya
+tooling/test/runbook, tanpa UI/API/database write, foto/path customer, deploy,
+atau mutasi production. Belum lulus: authenticated manual UAT 12 gate dan
+visual review. Status `PUSHED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; `BUSINESS_READY=false`.
 
 S363 Finalize runtime post-scan revalidation: exact pushed source
 `1d302047937a90687ec6ff00f97e45cd5f821577` membuat S344 Finalize
