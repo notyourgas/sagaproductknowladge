@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 30 Agustus 2026 13:20 WIB
-Evidence status: source S370 `a9199bca9914b6466cc603a9908c7668f175485b` sudah dipush melalui PR #80 dan berstatus `CONFIRMED / PUSHED / LOCAL_VALIDATED / CI_BLOCKED / IMPLEMENTED_NOT_DEPLOYED`. Full PHP 1.315/1.315, kontrak frontend 10/10, browser report recovery 6/6, build/typecheck, migration SQLite up/rollback/reapply, strict local readiness 100/100, serta audit dependensi nol lulus. GitHub-hosted runner ditolak sebelum step karena gate billing/spending akun, sehingga CI belum terverifikasi. Production tetap exact source `b37db0810f64731e46f18d026452a6cf3f65e86c` pada immutable release `20260830042225-b37db08`; status runtime `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED / BUSINESS_READY=false` tidak berubah.
+Updated: 30 Agustus 2026 13:55 WIB
+Evidence status: exact cumulative source S370 `4b4d6f645153ccbaaca0be7fc1cb7bf5518d787f` aktif pada immutable release `20260830064046-4b4d6f6`, dengan immediate rollback `20260830042225-b37db08` tersedia dan kompatibel. Full PHP 1.315/1.315, kontrak frontend 10/10, browser report recovery 6/6, build/typecheck, migration SQLite up/rollback/reapply, strict local readiness 100/100, serta audit dependensi nol lulus. GitHub-hosted runner ditolak sebelum step karena gate billing/spending akun; gate lokal/VPS ekuivalen, artifact immutable, fresh backup terenkripsi/checksum/disposable restore, atomic switch, verifier independen 23/23, report canary 32/32, migration pending 0, service/journal, public/security smoke 3/3, dan authenticated Owner/operator UAT mobile+desktop semuanya lulus. Status `CONFIRMED / PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED / BUSINESS_READY=false`; pilot dua studio dan provider canary tetap residual gate.
 
 ## Tujuan dokumen
 
@@ -16,6 +16,18 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
 
+- Exact cumulative source S370
+  `4b4d6f645153ccbaaca0be7fc1cb7bf5518d787f` telah aktif pada immutable
+  release `20260830064046-4b4d6f6`; rollback langsung
+  `20260830042225-b37db08` tersedia dan kompatibel. Release mengaktifkan
+  repair konteks notifikasi, billing, navigasi, dan export laporan reguler
+  yang dijelaskan di bawah. Backup terenkripsi/checksum/disposable restore,
+  artifact immutable, atomic switch, verifier 23/23, report canary 32/32,
+  migration pending 0, service/journal, smoke/security 3/3, serta authenticated
+  Owner/operator UAT pada 390x844 dan 1440x900 lulus tanpa mutation, issue,
+  overflow, PII, atau secret. Status `PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / UAT_ACCEPTED / BUSINESS_READY=false`.
+
 - Repair konteks, laporan, billing, dan navigasi S370 pada exact pushed source
   `a9199bca9914b6466cc603a9908c7668f175485b` memindahkan toast notifikasi baru
   ke kanan di bawah lonceng, membawa tenant/tab/request context pada API
@@ -27,8 +39,8 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   `dataVersion`, download blob terautentikasi dengan validasi MIME/filename,
   serta invalidasi snapshot stale. Migration nullable `filters_json` sudah
   di-allowlist dan direhearsal up/rollback/reapply pada SQLite. Status
-  `CONFIRMED / PUSHED / LOCAL_VALIDATED / CI_BLOCKED /
-  IMPLEMENTED_NOT_DEPLOYED`; production dan data customer tidak disentuh.
+  `CONFIRMED / PUSHED / LOCAL_VALIDATED / CI_BLOCKED`; perubahan ini kini
+  termasuk dalam exact release production S370 di atas.
 
 - Rehearsal exact-main S369 untuk source
   `30c343eb7d140dd3c45cded0f1a91d4527cdd44b` menghasilkan archive, Git

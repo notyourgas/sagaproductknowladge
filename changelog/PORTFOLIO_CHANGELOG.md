@@ -15,6 +15,18 @@
   Pembayaran/Inventory, build/audit, migration, worker, readiness, dan public
   smoke lulus. `BUSINESS_READY=false` untuk peluncuran nasional.
 
+## 2026-08-30 - SagaBook production activation exact main S370
+
+- Exact source `4b4d6f645153ccbaaca0be7fc1cb7bf5518d787f` aktif pada immutable
+  release `20260830064046-4b4d6f6`; rollback langsung
+  `20260830042225-b37db08` tersedia dan kompatibel.
+- Artifact, fresh encrypted backup/checksum/disposable restore, migration
+  rehearsal, atomic switch, verifier 23/23, report canary 32/32, service,
+  journal, dan smoke/security 3/3 lulus.
+- Authenticated Owner/operator UAT mobile+desktop lulus tanpa mutation atau
+  issue. Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED /
+  BUSINESS_READY=false`; dua studio pilot dan provider canary masih residual.
+
 ## 2026-08-30 - SagaBook S370 context and report repair
 
 - Exact pushed source `a9199bca9914b6466cc603a9908c7668f175485b` pada

@@ -12,12 +12,37 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-30T13:45:00+07:00 |
-| Branch aktif | `codex/coyabag-production-415ab3d-knowledge` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-30T13:55:00+07:00 |
+| Branch aktif | `codex/s370-production-knowledge-20260830` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `6d67a691c927e5ad1cdaececdfe0f53f164a30ac` |
-| Informasi terakhir disinkronkan | COYABAG commerce activation dan payment recovery console pada exact source `415ab3d6676faba4e219e7c54a53801413b08542`. |
-| Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE`; `BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `afcbc6baa78020030dc8d77f039287564458ead0` |
+| Informasi terakhir disinkronkan | SagaBook S370 production activation pada exact source `4b4d6f645153ccbaaca0be7fc1cb7bf5518d787f`. |
+| Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED`; `BUSINESS_READY=false`. |
+
+## SagaBook S370 production activation
+
+- Exact source `4b4d6f645153ccbaaca0be7fc1cb7bf5518d787f` sudah push dan aktif sebagai
+  immutable release `20260830064046-4b4d6f6`; rollback
+  `20260830042225-b37db08` tersedia dan kompatibel.
+- Artifact, fresh encrypted backup/checksum/disposable restore, migration
+  rehearsal, atomic switch, verifier 23/23, report canary 32/32, migration
+  pending 0, service/journal, dan public/security smoke 3/3 lulus.
+- Authenticated Owner/operator UAT pada 390x844 dan 1440x900 lulus tanpa
+  mutation, issue, overflow, PII, atau secret.
+- Status `CONFIRMED / PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+  UAT_ACCEPTED / BUSINESS_READY=false`; dua studio pilot dan provider canary
+  tetap residual gate.
+
+## File yang berubah pada sinkronisasi SagaBook S370 production
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG commerce activation and payment recovery console
 

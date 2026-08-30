@@ -7,6 +7,16 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Exact cumulative source S370
+  `4b4d6f645153ccbaaca0be7fc1cb7bf5518d787f` aktif pada immutable release
+  `20260830064046-4b4d6f6`, dengan immediate rollback
+  `20260830042225-b37db08`. Artifact, encrypted backup/checksum/disposable
+  restore, migration rehearsal, atomic switch, verifier 23/23, report canary
+  32/32, migration pending 0, service/journal, smoke/security 3/3, serta
+  authenticated Owner/operator UAT pada mobile dan desktop lulus. Status
+  `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED /
+  BUSINESS_READY=false`; dua studio pilot dan provider canary belum ditutup.
+
 - Rehearsal exact-main S369 pada source
   `30c343eb7d140dd3c45cded0f1a91d4527cdd44b` membentuk empat artefak
   release identik pada dua disk fisik berbeda. Capacity minimum, NTFS/health,
