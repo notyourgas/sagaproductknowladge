@@ -12,10 +12,10 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-30T21:34:34+07:00 |
+| Waktu pembaruan terakhir | 2026-08-30T22:12:00+07:00 |
 | Branch aktif | isolated exact `origin/main` worktree |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `ece15184f8208e00bedbfc2b3f503a2d809df248` |
+| Baseline sebelum pembaruan | `fe3f45f4f5f33ca7269322b665938fa747d51e27` |
 | Informasi terakhir disinkronkan | COYABAG customer identity merge guard pada exact source `f4a5ccd926c082c781cbfd5b58a2d408670eb912`. |
 | Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE`; `BUSINESS_READY=false`. |
 
@@ -31,6 +31,9 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - Focused 1/1, Customer operations 9/9, Laravel 520, storefront 216/216,
   browser desktop/mobile, build/audit, backup, pending migration nol, readiness
   42/42, dua worker, dan buy-to-cart public smoke lulus.
+- Drift retensi rollback pascadeploy ditutup melalui restorasi aditif dari
+  artefak checksum-verified. Rollback kembali 42/42 dan dilindungi sebagai
+  release `previous` tanpa mengubah production.
 - Shipping tetap manual sembilan tujuan dan enam exception pembayaran lama
   tetap terbuka, sehingga `BUSINESS_READY=false`.
 

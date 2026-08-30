@@ -22,6 +22,9 @@ Mencatat perubahan material COYABAG dengan provenance public-safe.
   assertion, storefront 216/216, browser dua viewport, build/audit, backup,
   migration pending nol, readiness 42/42, dua worker, serta buy-to-cart smoke
   lulus.
+- Drift retensi rollback yang ditemukan pascadeploy ditutup dengan restorasi
+  aditif dari artefak checksum-verified. Rollback kembali lulus readiness 42/42
+  dan dilindungi sebagai release `previous` tanpa memindahkan production.
 - Shipping tetap manual untuk sembilan tujuan dan enam exception pembayaran
   lama tetap terbuka, sehingga `BUSINESS_READY=false`.
 

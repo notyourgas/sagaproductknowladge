@@ -78,7 +78,9 @@ COMMERCE_ACTIVE`. Business readiness: `BLOCKED`.
   enforced dan keputusan runtime adalah `COMMERCE_ACTIVE`.
 - Release aktif `20260830-f4a5ccd` dengan exact material source
   `f4a5ccd926c082c781cbfd5b58a2d408670eb912` melayani production;
-  rollback langsung `20260830-1ad8cbc` tersedia. Exact lineage production
+  rollback langsung `20260830-1ad8cbc` tersedia, sudah direstorasi dari
+  artefak checksum-verified, kembali lulus readiness 42/42, dan dilindungi
+  sebagai release `previous`. Exact lineage production
   sudah berada pada remote branch kanonik. Payment Detail kini menunjukkan
   state sesi checkout server-authoritative, expiry, dan histori attempt aman;
   Finance dapat menyiapkan sesi hanya dengan `payments.manage`, recent auth,

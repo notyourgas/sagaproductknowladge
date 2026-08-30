@@ -13,6 +13,9 @@
   manual untuk sembilan tujuan dan enam exception pembayaran tetap terbuka;
   status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE /
   BUSINESS_READY=false`.
+- Rollback sempat terlepas dari retensi pascadeploy, lalu direstorasi secara
+  aditif dari artefak checksum-verified, lulus readiness 42/42, dan dilindungi
+  sebagai release `previous` tanpa mengubah release aktif.
 
 ## 2026-08-30 - COYABAG manual delivery confirmation deployed
 

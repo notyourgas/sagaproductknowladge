@@ -2,7 +2,9 @@
 
 COYABAG exact pushed source
 `f4a5ccd926c082c781cbfd5b58a2d408670eb912` aktif pada immutable release
-`20260830-f4a5ccd` dengan rollback `20260830-1ad8cbc`. Readiness 42/42 dan
+`20260830-f4a5ccd` dengan rollback `20260830-1ad8cbc`. Rollback sudah
+direstorasi dari artefak checksum-verified, kembali lulus readiness 42/42, dan
+dilindungi sebagai release `previous` tanpa mengubah production. Readiness 42/42 dan
 checkout `COMMERCE_ACTIVE`; SagaDev controlled trial dibatasi Rp500.000 per
 transaksi serta lima intent baru per hari. Payment Detail menyediakan recovery
 sesi server-authoritative dengan permission, recent auth, 2FA, rate limit, dan

@@ -10,6 +10,8 @@
 - Evidence: focused 1/1 dan Customer operations 9/9, Laravel 520 total,
   storefront 216/216, browser desktop/mobile, build/audit, backup, migration
   pending nol, readiness 42/42, dua worker, serta buy-to-cart smoke lulus.
+  Drift retensi rollback pascadeploy ditutup melalui restorasi aditif dari
+  artefak checksum-verified; rollback 42/42 dan release `previous` kembali exact.
 - Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
   PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false`.
 - Dokumen terdampak: Product, dossier/changelog COYABAG, portfolio, master

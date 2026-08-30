@@ -82,6 +82,9 @@ sebelum business readiness final.
 `CONFIRMED / PRODUCTION_DEPLOYED`: release `20260830-f4a5ccd`, exact source
 `f4a5ccd926c082c781cbfd5b58a2d408670eb912`, dan rollback
 `20260830-1ad8cbc` menambahkan penggabungan identitas pelanggan yang fail-closed.
+Rollback tersebut sudah direstorasi dari artefak checksum-verified setelah
+drift retensi pascadeploy, kembali lulus readiness 42/42, dan dilindungi sebagai
+release `previous` tanpa mengubah release produksi aktif.
 Setiap kandidat konflik memakai dialog terisolasi dengan perbandingan identitas
 tersamarkan, dampak relasi, alasan 12-500 karakter, dan acknowledgement
 eksplisit. Backend memeriksa exact target, permission, recent authentication,
