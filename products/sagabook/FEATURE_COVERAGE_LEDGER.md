@@ -1,6 +1,17 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 30 Agustus 2026 10:10 WIB
+Evidence cut-off: 30 Agustus 2026 11:35 WIB
+
+Exact cumulative source `b37db0810f64731e46f18d026452a6cf3f65e86c`
+telah `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED` pada
+immutable release `20260830042225-b37db08`; immediate rollback
+`20260829175230-435dbfd` tersedia dan kompatibel. Fresh encrypted backup,
+checksum, capacity preflight, disposable restore, full local gate, verifier
+independen 23/23, kontrak post-switch 37/37, report canary 32/32, migration
+pending 0, service/journal, dan public/security smoke 3/3 lulus. Authenticated
+Owner/Staff UAT mobile+desktop diterima tanpa mutasi, issue, PII, atau secret.
+Pilot dua studio dan provider canary tetap residual gate sehingga
+`BUSINESS_READY=false`.
 
 Kontrak post-switch S366 telah `LOCAL_VALIDATED /
 IMPLEMENTED_NOT_DEPLOYED` pada exact kandidat

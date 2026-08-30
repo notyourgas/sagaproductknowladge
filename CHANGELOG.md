@@ -1,5 +1,21 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-30 - SagaBook S367 production activation sync
+
+- Ringkasan: menyinkronkan activation exact main SagaBook beserta backup,
+  rollback, verifier independen, post-switch contract, dan authenticated UAT.
+- Provenance: exact source
+  `b37db0810f64731e46f18d026452a6cf3f65e86c`, immutable release
+  `20260830042225-b37db08`, rollback `20260829175230-435dbfd`.
+- Evidence: backup/restore fresh lulus; verifier 23/23, post-switch 37/37,
+  canary 32/32, migration 0, service/journal, smoke/security 3/3, serta UAT
+  Owner/Staff diterima tanpa mutasi atau issue.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+  UAT_ACCEPTED / BUSINESS_READY=false`; residual pilot dua studio dan provider
+  canary.
+- Dokumen terdampak: Product, dossier, feature ledger/changelog SagaBook,
+  portfolio, master knowledge, decisions, root changelog, dan sync status.
+
 ## 2026-08-30 - SagaView S362 Finalize post-open custody sync
 
 - Ringkasan: menyinkronkan revalidasi custody file kontrol/evidence setelah

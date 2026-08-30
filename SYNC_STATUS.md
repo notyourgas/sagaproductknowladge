@@ -12,12 +12,37 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-30T11:16:00+07:00 |
-| Branch aktif | `codex/s362-sagaview-finalize-exclusive-snapshot-knowledge` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-30T11:35:00+07:00 |
+| Branch aktif | `codex/s367-sagabook-production-release-knowledge` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `11889f7b7d4978178ab594694d84e2448269b377` |
-| Informasi terakhir disinkronkan | SagaView S362 Finalize post-open custody pada exact source `d2805429b9ecd22323cf31bca49267a30f91f288`. |
-| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan `BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `94e0ecc3ae0990e983aa60632cd7782de77ac0f9` |
+| Informasi terakhir disinkronkan | SagaBook S367 production activation pada exact source `b37db0810f64731e46f18d026452a6cf3f65e86c`. |
+| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED / BUSINESS_READY=false`. |
+
+## SagaBook S367 production activation
+
+- Exact source `b37db0810f64731e46f18d026452a6cf3f65e86c` aktif pada immutable
+  release `20260830042225-b37db08`; rollback langsung
+  `20260829175230-435dbfd` tersedia dan kompatibel.
+- Fresh encrypted backup, checksum, capacity preflight, disposable restore,
+  full release gate, verifier independen 23/23, kontrak post-switch 37/37,
+  report canary 32/32, migration pending 0, service/journal, dan
+  public/security smoke 3/3 lulus.
+- Authenticated Owner/Staff UAT mobile+desktop diterima tanpa mutasi, issue,
+  PII, atau secret. Pilot dua studio dan provider canary tetap residual gate;
+  `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi SagaBook S367
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `DECISIONS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaView S362 Finalize post-open custody
 

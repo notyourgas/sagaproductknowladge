@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-30 - SagaBook production activation exact main S367
+
+- Exact source `b37db0810f64731e46f18d026452a6cf3f65e86c` aktif pada immutable
+  release `20260830042225-b37db08`; rollback langsung
+  `20260829175230-435dbfd` tersedia dan kompatibel.
+- Backup terenkripsi dan disposable restore, full gate, verifier 23/23,
+  kontrak post-switch 37/37, canary 32/32, migration/service/journal, dan
+  public/security smoke 3/3 lulus.
+- Authenticated Owner/Staff UAT mobile+desktop diterima tanpa mutasi atau issue.
+  Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED`;
+  `BUSINESS_READY=false` sampai pilot dua studio dan provider canary selesai.
+
 ## 2026-08-30 - SagaView S362 Finalize post-open custody
 
 - Exact pushed source `d2805429b9ecd22323cf31bca49267a30f91f288`

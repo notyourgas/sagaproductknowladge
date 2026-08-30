@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-123 - Deploy exact main SagaBook b37db081 disetujui
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-30 |
+| Topik | Otorisasi production release kumulatif SagaBook |
+| Keputusan | Andreas menyetujui deployment production hanya untuk exact source `b37db0810f64731e46f18d026452a6cf3f65e86c`, dengan full gate, fresh backup/restore, immutable artifact, atomic switch, verifier, rollback, dan authenticated read-only UAT tetap wajib. |
+| Alasan | Kandidat exact main telah memiliki provenance dan acceptance contract lengkap, sementara deployment harus tetap fail-closed terhadap drift source, backup, atau runtime. |
+| Alternatif yang dipertimbangkan | Menunda release; deploy source lain; melewati backup/UAT; membuat release paralel. |
+| Dampak | Exact source aktif pada release `20260830042225-b37db08` dengan rollback `20260829175230-435dbfd`. Verifier 23/23, post-switch 37/37, dan Owner/Staff UAT lulus. Pilot dua studio serta provider canary tetap terpisah sehingga `BUSINESS_READY=false`. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED / BUSINESS_READY=false` |
+| Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [SagaBook Changelog](products/sagabook/CHANGELOG.md), [SagaBook Ledger](products/sagabook/FEATURE_COVERAGE_LEDGER.md) |
+
 ## DEC-122 - Manual Booking OTS dapat dimulai dari waktu server saat ini
 
 | Field | Isi |

@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 30 Agustus 2026 10:10 WIB
-Evidence status: kontrak post-switch S366 untuk exact kandidat `b37db0810f64731e46f18d026452a6cf3f65e86c` menerima fixture lengkap 37/37 dan lulus negative matrix 10/10. Production aktif tetap exact source `435dbfd252759fd8b7d43f44af69edfb39ee2102`, release `20260829175230-435dbfd`, rollback `20260829062031-b2790d6`; runtime stabil tetapi benar ditolak sebagai activation kandidat karena source/manifest masih lama dan HSTS `/up` belum aktif. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; approval exact SHA, fresh encrypted backup/restore, atomic deploy, UAT runtime, dua pilot nyata, dan provider canary masih wajib sehingga `BUSINESS_READY=false`
+Updated: 30 Agustus 2026 11:35 WIB
+Evidence status: exact source `b37db0810f64731e46f18d026452a6cf3f65e86c` aktif pada immutable release `20260830042225-b37db08` dengan immediate rollback `20260829175230-435dbfd`. Fresh encrypted backup/checksum/capacity preflight/disposable restore lulus. Verifier independen lulus 23/23, kontrak post-switch 37/37, migration pending 0, report canary 32/32, service aktif, journal error 0, serta public/security smoke 3/3. Authenticated Owner/Staff UAT mobile+desktop diterima tanpa mutasi, issue, PII, atau secret. Status `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED / BUSINESS_READY=false`; residual gate hanya pilot dua studio dan provider canary.
 
 ## Tujuan dokumen
 
@@ -15,6 +15,20 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
+
+- Release kumulatif S367 mengaktifkan exact source
+  `b37db0810f64731e46f18d026452a6cf3f65e86c` sebagai immutable release
+  `20260830042225-b37db08`, dengan immediate rollback
+  `20260829175230-435dbfd` tersedia dan kompatibel. Release membawa gate pilot
+  public-safe, HSTS pada health endpoint, serta perbaikan Closing Staff yang
+  menjaga physical count manual dan ledger server-authoritative. Fresh backup
+  terenkripsi, checksum, capacity preflight, disposable restore, full local
+  gate, verifier independen 23/23, kontrak post-switch 37/37, report canary
+  32/32, migration pending 0, service/journal, serta public/security smoke 3/3
+  lulus. Authenticated Owner/Staff UAT mobile+desktop diterima tanpa mutasi,
+  issue, PII, atau secret. Status `CONFIRMED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / UAT_ACCEPTED / BUSINESS_READY=false`; pilot dua
+  studio dan provider canary tetap gate terpisah.
 
 - Kontrak post-switch S366 mengikat klaim activation kandidat ke exact source,
   pola immutable release, immediate rollback ke release production sebelumnya,
