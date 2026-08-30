@@ -1,5 +1,26 @@
 # SagaView Changelog
 
+## 2026-08-30 - S359 UAT receipt stale lock recovery
+
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan
+  `BUSINESS_READY=false`.
+- Before: transaction lock S358 mencegah writer bersamaan, tetapi lock file
+  biasa yang tertinggal setelah crash dapat memblokir seluruh write berikutnya
+  tanpa jalur recovery.
+- After: exact source `b8a023713ee0c8fec15e1375b1c0dbf15b6293b3`
+  mengambil kembali stale lock biasa, mempertahankan eksklusi writer aktif,
+  menolak reparse/hard link, dan memvalidasi ulang path sesudah handle dibuka.
+- Evidence: regression red 5/5 lalu green 5/5; gabungan S352-S359 35/35;
+  full exact-commit 71 file/319 test; parser PowerShell/pwsh;
+  format/lint/typecheck; client+SSR build; bundle 312,7 KiB dari 450 KiB;
+  npm audit nol; diff check; worktree bersih; dan remote exact.
+- Boundary: hanya harness/test/runbook dengan filesystem disposable; receipt
+  aktif dan sumber hard link eksternal tetap utuh, tanpa UI/API/database, data
+  customer, deploy, atau perubahan production.
+- Next gate: authenticated manual UAT 12 gate dengan evidence sintetis
+  tersanitasi, visual review, reviewer S345, lalu S344 Finalize.
+
 ## 2026-08-30 - S358 UAT receipt transaction lock
 
 - Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /

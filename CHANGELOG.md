@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-30 - SagaView S359 UAT receipt stale lock recovery sync
+
+- Ringkasan: menyinkronkan recovery stale lock receipt UAT tanpa melemahkan
+  eksklusi writer aktif atau guard reparse/hard link.
+- Provenance: exact pushed source
+  `b8a023713ee0c8fec15e1375b1c0dbf15b6293b3`; production tidak diubah.
+- Evidence: regression red 5/5 lalu green 5/5, gabungan S352-S359 35/35, full
+  exact 319/319, PowerShell/pwsh, format/lint/typecheck, client+SSR build,
+  bundle budget, npm audit nol, diff check, clean, dan remote exact.
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; `BUSINESS_READY=false`.
+- Dokumen terdampak: Product, feature ledger/changelog SagaView, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-08-30 - SagaBook S364 clean artifact bootstrap sync
 
 - Ringkasan: menyinkronkan bukti exact-main dapat di-bootstrap dari clean

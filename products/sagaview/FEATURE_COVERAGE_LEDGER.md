@@ -1,6 +1,24 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 30 Agustus 2026 07:12 WIB
+Evidence cut-off: 30 Agustus 2026 08:10 WIB
+
+S359 UAT receipt stale lock recovery: exact pushed source
+`b8a023713ee0c8fec15e1375b1c0dbf15b6293b3` membuat writer S70, S344,
+dan reviewer S345 dapat mengambil kembali lock file biasa yang tertinggal
+setelah proses crash. Lock writer aktif tetap eksklusif melalui
+`FileShare.None`; reparse point dan NTFS hard link ditolak sebelum receipt
+disentuh. Validasi ulang sesudah handle dibuka menutup jeda perubahan path.
+
+Ledger lulus: regression merah 5/5 lalu hijau 5/5; gabungan S352-S359 35/35;
+full 71 file/319 test pada exact commit; parser Windows PowerShell/pwsh;
+format/lint/typecheck; client 2.129 modul + SSR 203 modul; bundle 312,7 KiB
+dari 450 KiB; npm audit nol; diff check; worktree bersih; serta remote exact.
+Uji filesystem sintetis/disposable membuktikan receipt aktif dan sumber hard
+link eksternal tidak berubah serta tidak ada artefak lock/temp/backup tersisa.
+Boundary hanya tooling/test/runbook, tanpa UI/API/database atau mutasi
+production. Belum lulus: authenticated manual UAT 12 gate dan visual review.
+Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+`BUSINESS_READY=false`.
 
 S358 UAT receipt transaction lock: exact pushed source
 `5825fbaec2f984be535891bc2134714afaec2d58` mencegah dua proses S70,

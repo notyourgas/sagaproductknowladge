@@ -12,12 +12,33 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-30T08:06:00+07:00 |
-| Branch aktif | `codex/s364-bootstrap-artifact-knowledge` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-30T08:10:00+07:00 |
+| Branch aktif | `codex/s359-sagaview-uat-receipt-stale-lock-recovery-knowledge` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `ccf0e4485d9f3e06fb40210d407baf02a6e49c04` |
-| Informasi terakhir disinkronkan | SagaBook S364 clean artifact bootstrap pada exact main `b37db0810f64731e46f18d026452a6cf3f65e86c`. |
-| Status sinkronisasi | `LOCAL_VALIDATED / RELEASE_BOOTSTRAP_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; `BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `a7e7978db63e332ce90af75105d123927939cf2a` |
+| Informasi terakhir disinkronkan | SagaView S359 stale lock recovery, exact source `b8a023713ee0c8fec15e1375b1c0dbf15b6293b3`. |
+| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan `BUSINESS_READY=false`. |
+
+## SagaView S359 UAT receipt stale lock recovery
+
+- Exact source `b8a023713ee0c8fec15e1375b1c0dbf15b6293b3` sudah push.
+- Writer S70, S344, dan S345 mengambil kembali stale lock biasa setelah crash,
+  tetap mengecualikan writer aktif, dan menolak reparse point maupun hard link.
+- Regression red 5/5 lalu green 5/5, gabungan S352-S359 35/35, full exact
+  319/319, PowerShell/pwsh, format/lint/typecheck, client+SSR build, bundle
+  budget, npm audit nol, diff check, clean, dan remote exact lulus.
+- Production tidak berubah; authenticated UAT 12 gate dan visual review masih
+  pending sehingga `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi SagaView S359
+
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook S364 clean artifact production bootstrap
 

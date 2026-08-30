@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-30 - SagaView S359 UAT receipt stale lock recovery
+
+- Exact pushed source `b8a023713ee0c8fec15e1375b1c0dbf15b6293b3`
+  memulihkan lock file biasa yang tertinggal setelah crash pada writer
+  S70/S344/S345 tanpa melemahkan eksklusi writer aktif.
+- Reparse point dan hard link ditolak; receipt aktif serta sumber eksternal
+  tetap utuh. Regression red 5/5 lalu green 5/5, gabungan S352-S359 35/35,
+  full exact 319/319, parser PowerShell/pwsh, build/budget, audit nol, clean,
+  dan remote exact lulus.
+- Perubahan hanya harness/test/runbook. Production tidak berubah;
+  authenticated UAT dan visual review masih pending sehingga
+  `BUSINESS_READY=false`.
+
 ## 2026-08-30 - SagaBook clean artifact bootstrap S364
 
 - Exact main `b37db0810f64731e46f18d026452a6cf3f65e86c` berhasil dibangun dari

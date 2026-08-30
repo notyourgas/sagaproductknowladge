@@ -1,5 +1,16 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+SagaView S359 exact pushed source
+`b8a023713ee0c8fec15e1375b1c0dbf15b6293b3` berstatus `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Writer receipt UAT S70, S344,
+dan S345 kini dapat mengambil kembali stale lock biasa setelah crash, sambil
+tetap menolak writer aktif, reparse point, dan NTFS hard link. Validasi path
+dilakukan sebelum dan sesudah handle eksklusif dibuka. Regression 5/5 merah
+lalu 5/5 hijau, gabungan S352-S359 35/35, full exact 319/319,
+PowerShell/pwsh, build/budget/audit, clean, dan remote exact lulus. Production
+tidak berubah; authenticated UAT serta visual review masih wajib sehingga
+`BUSINESS_READY=false`.
+
 SagaBook bootstrap clean-artifact S364 pada exact main
 `b37db0810f64731e46f18d026452a6cf3f65e86c` berstatus `LOCAL_VALIDATED /
 RELEASE_BOOTSTRAP_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Source archive bersih
