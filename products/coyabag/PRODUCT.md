@@ -76,8 +76,13 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation: `BLOCKED`. Business readiness:
 - Launch UAT 15 langkah sudah lulus 15/15 dan sign-off diizinkan. Checkout
   publik tetap `PRODUCTION_READINESS_BLOCKED` hanya sampai release sign-off
   dicatat; deployment acceptance hotfix tidak membuat payment intent baru.
-- Release aktif `20260830-a604cfc` dengan exact material source
-  `a604cfccd02a3a572f56ad9375d6ae4933215f5f` melayani production;
+- Release aktif `20260830-fab7a8d` dengan exact material source
+  `fab7a8daf743c83159c6db15c31286046427a922` melayani production;
+  rollback langsung `20260830-a604cfc` tersedia. Editor Produk kini
+  membandingkan draft basi dengan nilai terbaru dari server, mempertahankan
+  draft lokal, dan mengunci simpan/arsip/publikasi sampai operator memuat ulang
+  versi terbaru. Snapshot hanya tersedia bagi permission `products.manage`,
+  bersifat `no-store`, serta tidak memuat varian, media, atau konteks publikasi.
   rollback langsung `20260830-3155c85` dipertahankan. Owner/Admin kini dapat
   memilih maksimal 20 pesanan eligible pada daftar Pesanan lalu memindahkan
   batch secara atomik dari `confirmed/unfulfilled` menjadi

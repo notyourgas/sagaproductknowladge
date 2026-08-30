@@ -1,5 +1,17 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+COYABAG product conflict comparison aktif pada exact material source
+`fab7a8daf743c83159c6db15c31286046427a922`, immutable release
+`20260830-fab7a8d`, dengan rollback `20260830-a604cfc`. Owner/Admin melihat
+perbandingan read-only draft Produk basi terhadap nilai server terbaru dengan
+state loading/error/retry/difference pada desktop dan mobile; draft lokal tidak
+dibuang dan simpan/arsip/publikasi dikunci sampai reload. Snapshot berpermission
+`products.manage`, `no-store`, serta tidak memuat varian, media, atau konteks
+publikasi; Finance ditolak. Laravel 503 total, storefront 216/216, browser,
+build/audit, backup, worker, exact runtime, dan public smoke lulus. Status tetap
+`PRODUCTION_DEPLOYED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`;
+readiness fail-closed 41/42 dan provider/commerce tidak diaktifkan.
+
 SagaView S361 exact pushed source
 `e8a44805dfdbf816dea63686d8a8e23c0d0f4294` berstatus `PUSHED /
 LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. S344 Finalize kini memeriksa

@@ -4,6 +4,26 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-30 - Admin product conflict comparison deployed
+
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /
+  NOT_PRODUCTION_ACTIVATED`; exact material source
+  `fab7a8daf743c83159c6db15c31286046427a922`, immutable release
+  `20260830-fab7a8d`, rollback `20260830-a604cfc`.
+- Owner/Admin yang menyimpan atau mempublikasikan editor Produk basi kini dapat
+  melihat perbandingan draft lokal dan nilai terbaru dari server. State
+  loading, retryable error, detail perbedaan, serta konflik khusus varian/media/
+  publikasi tersedia pada desktop dan mobile tanpa membuang draft.
+- Simpan, arsip, dan publikasi dikunci sampai versi terbaru dimuat. Endpoint
+  read-only memerlukan `products.manage`, memakai response `no-store`, dan
+  tidak mengekspos varian, media, konteks publikasi, secret, atau data customer;
+  Finance ditolak.
+- Laravel 503 total: 502 lulus, satu controlled skip, 4.876 assertion;
+  storefront 216/216, browser desktop/mobile, build, dependency audit, exact
+  artifact, backup/rollback, worker, runtime contract, dan public smoke lulus.
+  Readiness tetap fail-closed 41/42 karena release sign-off; commerce/provider
+  tidak diaktifkan.
+
 ## 2026-08-30 - Admin atomic bulk order processing deployed
 
 - Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /

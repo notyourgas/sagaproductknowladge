@@ -12,12 +12,38 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-30T10:12:00+07:00 |
-| Branch aktif | `codex/s361-sagaview-finalize-control-link-revalidation-knowledge` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-30T10:17:32+07:00 |
+| Branch aktif | `codex/coyabag-admin-uiux-knowledge` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `1e2854d08ac0265041fc01bf5366df3c6df98c94` |
-| Informasi terakhir disinkronkan | SagaView S361 Finalize control file link revalidation pada exact source `e8a44805dfdbf816dea63686d8a8e23c0d0f4294`. |
-| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; `BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `0172937cce70a9223e6f0ac189e6a725e780846b` |
+| Informasi terakhir disinkronkan | COYABAG product conflict comparison pada exact source `fab7a8daf743c83159c6db15c31286046427a922`, release `20260830-fab7a8d`. |
+| Status sinkronisasi | `CONFIRMED / PRODUCTION_DEPLOYED / NOT_PRODUCTION_ACTIVATED`; readiness 41/42 dan `BUSINESS_READY=false`. |
+
+## COYABAG product conflict comparison
+
+- Exact material source `fab7a8daf743c83159c6db15c31286046427a922`
+  aktif pada immutable release `20260830-fab7a8d`; rollback
+  `20260830-a604cfc` tersedia.
+- Owner/Admin dapat membandingkan draft Produk basi dengan nilai terbaru dari
+  server tanpa kehilangan draft. Simpan, arsip, dan publikasi dikunci sampai
+  editor memuat versi terbaru.
+- Snapshot read-only memakai permission `products.manage` dan response
+  `no-store`; Finance ditolak serta varian, media, dan konteks publikasi tidak
+  dikirim.
+- Laravel 503 total: 502 lulus, satu controlled skip, 4.876 assertion;
+  storefront 216/216, browser desktop/mobile, build/audit, backup, worker,
+  exact runtime contract, dan public smoke lulus.
+- Readiness tetap fail-closed 41/42 karena release sign-off. Commerce/provider
+  tidak diaktifkan.
+
+## File yang berubah pada sinkronisasi COYABAG product conflict comparison
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaView S361 Finalize control file link revalidation
 

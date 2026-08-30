@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-30 - COYABAG product conflict comparison sync
+
+- Ringkasan: menyinkronkan perbandingan draft Produk basi dengan nilai server,
+  lockout mutasi, recovery state, dan permission boundary.
+- Provenance: exact material source
+  `fab7a8daf743c83159c6db15c31286046427a922`, immutable release
+  `20260830-fab7a8d`, rollback `20260830-a604cfc`.
+- Evidence: Laravel 503 total, storefront 216/216, browser desktop/mobile,
+  build/audit, exact artifact, backup/rollback, worker, runtime contract, dan
+  public smoke lulus.
+- Klasifikasi: `CONFIRMED / PRODUCTION_DEPLOYED /
+  NOT_PRODUCTION_ACTIVATED`; readiness 41/42 dan `BUSINESS_READY=false`.
+- Dokumen terdampak: Product dan changelog COYABAG, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-30 - SagaView S361 Finalize control link revalidation sync
 
 - Ringkasan: menyinkronkan revalidasi custody tiga file kontrol tepat sebelum

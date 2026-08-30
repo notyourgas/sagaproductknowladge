@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-30 - COYABAG product conflict comparison
+
+- Exact material source `fab7a8daf743c83159c6db15c31286046427a922`
+  aktif pada immutable release `20260830-fab7a8d`; rollback
+  `20260830-a604cfc` tersedia.
+- Editor Produk menampilkan perbandingan read-only antara draft basi dan nilai
+  server terbaru, menjaga draft lokal, serta mengunci mutasi sampai versi baru
+  dimuat. Endpoint `no-store` hanya untuk Owner/Admin berpermission; Finance
+  ditolak dan data varian/media/publikasi tidak dikirim.
+- Laravel 503 total, storefront 216/216, browser desktop/mobile, build/audit,
+  backup, worker, exact runtime, dan public smoke lulus. Readiness tetap 41/42
+  dan commerce/provider tidak diaktifkan.
+
 ## 2026-08-30 - SagaView S361 Finalize control file link revalidation
 
 - Exact pushed source `e8a44805dfdbf816dea63686d8a8e23c0d0f4294`
