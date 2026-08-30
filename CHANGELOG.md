@@ -1,5 +1,21 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-30 - COYABAG inventory quarantine decision sync
+
+- Ringkasan: menyinkronkan flow konfirmasi dampak saldo dan alasan wajib untuk
+  keputusan karantina Admin Inventory beserta release, rollback, dan runtime
+  evidence terbaru.
+- Provenance: exact pushed source
+  `9be4247073a8f436b57b7589f550fbcfee20527d`, immutable release
+  `20260830-9be4247`, rollback `20260830-415ab3d`.
+- Evidence: focused 3/3, Laravel 515 total, storefront 216/216, browser
+  Inventory desktop/mobile, build/audit, backup, rollback drill, migration
+  pending nol, readiness 42/42, cron, dua worker, dan public smoke lulus.
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false`.
+- Dokumen terdampak: Product, dossier/changelog COYABAG, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-30 - SagaBook S370 production activation sync
 
 - Ringkasan: menyinkronkan aktivasi production perbaikan konteks, report,

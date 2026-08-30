@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-30 - COYABAG inventory quarantine decision deployed
+
+- Exact source `9be4247073a8f436b57b7589f550fbcfee20527d` aktif pada immutable
+  release `20260830-9be4247`; rollback `20260830-415ab3d` tersedia.
+- Admin Inventory kini meminta konfirmasi dampak saldo dan alasan wajib sebelum
+  barang karantina kembali layak jual atau dikeluarkan dari stok. Ledger,
+  audit, permission, recent auth, lock transaksi, idempotensi, serta recovery
+  desktop/mobile tetap menjadi guard.
+- Laravel 515, storefront 216/216, browser Inventory, build/security audit,
+  backup dan rollback drill, readiness 42/42, dua worker, cron, serta public
+  smoke lulus. Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+  COMMERCE_ACTIVE / BUSINESS_READY=false`.
+
 ## 2026-08-30 - COYABAG commerce activation and payment recovery console
 
 - Exact pushed source `415ab3d6676faba4e219e7c54a53801413b08542`

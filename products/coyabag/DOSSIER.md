@@ -79,6 +79,16 @@ coverage nasional atau Delivery API aktif.
 Backup database COYABAG masih local-disk dan perlu dipindahkan ke backup offsite
 sebelum business readiness final.
 
+`CONFIRMED / PRODUCTION_DEPLOYED`: release `20260830-9be4247`, exact source
+`9be4247073a8f436b57b7589f550fbcfee20527d`, dan rollback
+`20260830-415ab3d` menutup keputusan karantina satu klik. Operator wajib
+meninjau dampak stok dan memberi alasan 8-240 karakter; alasan masuk ledger
+serta audit. Permission, recent auth, transaction lock, idempotensi, stale
+state, processing/error/success recovery, focus, dan layout mobile/desktop
+tetap dijaga. Post-deploy menunjukkan readiness 42/42, invalid balance nol,
+failed job nol, cron aktif, dua worker berjalan, dan public smoke empat surface
+lulus. Aktivasi commerce tidak berubah dan `BUSINESS_READY=false`.
+
 `CONFIRMED / PRODUCTION_CONFIGURED / APPROVED`: baseline retensi versi
 `2026.08-v1` sudah tersimpan dengan evaluasi data pelanggan tidak aktif 730
 hari, bukti pembayaran 365 hari, catatan permintaan privasi 730 hari, dan audit

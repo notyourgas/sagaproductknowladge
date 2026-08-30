@@ -4,6 +4,23 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-30 - Inventory quarantine decision deployed
+
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false` dari exact
+  source `9be4247073a8f436b57b7589f550fbcfee20527d`, immutable release
+  `20260830-9be4247`, dan rollback `20260830-415ab3d`.
+- Keputusan `Layak jual` atau `Keluarkan stok` kini menampilkan dampak saldo
+  sebelum mutasi dan mewajibkan alasan 8-240 karakter yang disimpan pada
+  ledger serta audit log. Permission, recent auth, lock transaksi, idempotensi,
+  stale/error recovery, focus, dan mobile/desktop tetap fail-closed.
+- Focused test 3/3 dengan 22 assertion, Laravel 515 total/514 pass/satu
+  intentional skip dengan 4.978 assertion, storefront 216/216, build, audit
+  dependency, browser Inventory, backup, rollback drill, worker, readiness
+  42/42, dan public smoke lulus.
+- Enam exception pembayaran historis dan shipping manual sembilan tujuan tetap
+  menjadi residual bisnis; release tidak mengubah payment/provider activation.
+
 ## 2026-08-30 - Commerce activation and payment recovery console deployed
 
 - Klasifikasi: `CONFIRMED / PUSHED / PRODUCTION_DEPLOYED /
