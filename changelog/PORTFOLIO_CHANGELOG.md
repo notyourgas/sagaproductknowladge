@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-31 - SagaBook S379 idempotent expense-edit retry candidate
+
+- Exact source `1d167d9b2c924962062580bb891ab6c93c57b2dd` sudah dipush dan
+  local-validated; production tetap S378 `20260830212427-561d48d`.
+- Retry edit pengeluaran Staff dengan payload sama kini me-replay receipt
+  authoritative tanpa ledger/audit kedua; konflik payload, stale version, dan
+  replay lintas staff gagal tertutup, sedangkan raw idempotency key tidak
+  disimpan.
+- Full PHP 1.321/1.321, focused 5/5, frontend 6/6, browser 2/2,
+  build/typecheck/format, dan audit dependensi nol lulus. Status
+  `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+
 ## 2026-08-31 - SagaBook S378 production activation
 
 - Exact cumulative source `561d48d1691cd264919a9ff80dbbd0e918b2b4f5`

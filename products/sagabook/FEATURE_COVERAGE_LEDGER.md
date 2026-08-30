@@ -14,6 +14,17 @@ migration compatibility, verifier 23/23, report canary 32/32, migration pending
 UAT read-only lulus. Pilot dua studio dan provider canary tetap residual gate,
 sehingga `BUSINESS_READY=false`.
 
+Kandidat retry idempoten edit pengeluaran Staff S379 telah `CONFIRMED /
+SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED` pada exact source
+`1d167d9b2c924962062580bb891ab6c93c57b2dd`. Payload identik memakai key yang
+sama sampai response sukses dan me-replay receipt authoritative tanpa mutation
+ledger/audit kedua. Key reuse untuk payload berbeda menghasilkan 409, key baru
+dengan optimistic version stale menghasilkan 409, dan staff berbeda mendapat
+403 sebelum receipt dapat dibaca. Raw key tidak disimpan. Focused PHP 5/5 (52
+assertion), full PHP 1.321/1.321 (14.762 assertion), frontend 6/6, browser
+mobile+desktop 2/2, typecheck/build/Pint/diff, serta audit Composer/OSV/npm nol
+lulus. Production tetap exact S378 dan belum memuat S379.
+
 Pada tahap kandidat, edit pengeluaran staff S378 telah `CONFIRMED /
 SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED` pada exact source
 `5fb50f65b2aadd801a4dbb8f0d49b694268fe6a6`. Staff hanya dapat mengedit row

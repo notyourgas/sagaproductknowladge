@@ -15,9 +15,29 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-08-31 WIB |
 | Branch aktif | isolated exact `origin/main` worktree |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `9155dcb80350db98d709f373804a85c33163eda5` |
-| Informasi terakhir disinkronkan | SagaBook S378 production activation pada source `561d48d1691cd264919a9ff80dbbd0e918b2b4f5`. |
-| Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED / BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `44a18d7e1c03b6f939e25b6b64ad0e2f5926bfd6` |
+| Informasi terakhir disinkronkan | SagaBook S379 idempotent expense-edit retry pada source `1d167d9b2c924962062580bb891ab6c93c57b2dd`. |
+| Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap S378. |
+
+## SagaBook S379 idempotent expense-edit retry
+
+- Exact source `1d167d9b2c924962062580bb891ab6c93c57b2dd` sudah push dan
+  local-validated. Retry payload identik me-replay receipt authoritative tanpa
+  ledger/audit kedua; konflik payload, stale version, dan replay lintas staff
+  gagal tertutup. Raw idempotency key tidak disimpan.
+- Full PHP 1.321/1.321 (14.762 assertion), focused 5/5, frontend 6/6, browser
+  2/2, build/typecheck/Pint/diff, serta audit Composer/OSV/npm nol lulus.
+- Status `IMPLEMENTED_NOT_DEPLOYED`; production tetap exact S378 pada release
+  `20260830212427-561d48d`.
+
+## File yang berubah pada sinkronisasi SagaBook S379
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook S378 production activation
 
