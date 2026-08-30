@@ -1,6 +1,23 @@
 # SagaView Product Knowledge
 
-Updated: 30 Agustus 2026 13:16 WIB
+Updated: 30 Agustus 2026 23:34 WIB
+
+SagaView S366 exact backend source
+`b2467cd9cf3165fdfc3f6488dbedbc45fc7e6f59` sudah `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Wrapper authenticated UAT kini
+menulis receipt diagnostik atomik dan tereduksi sebelum berhenti pada preflight
+atau safety guard. Receipt hanya memuat status, count, dan boolean allowlist;
+credential, request detail, data customer, foto, serta path lokal tidak ditulis.
+
+Focused regression 8/8 dengan 108 assertion, full backend 1.034/1.034 dengan
+13.237 assertion, build 5.097 modul, parser, format file terkait, Composer dan
+npm audit nol lulus. Verifier v3 juga `ready`: source Studio
+`2371db8e746aeaed6a76c21daa80e14bc3ff77fb` dan backend exact-clean/remote
+exact, metadata UAT cocok, fixed NTFS 15,707 GiB, serta privacy check hijau.
+Authenticated UAT final tetap berhenti fail-closed karena runner tidak
+menghasilkan empat safety flag sebagai boolean `false`; receipt mereduksinya
+menjadi `null` dengan count `-1`. Production tidak disentuh,
+`BUSINESS_READY=false`, dan deploy/rollback tidak dijalankan.
 
 SagaView S364 exact source
 `2371db8e746aeaed6a76c21daa80e14bc3ff77fb` sudah `PUSHED /

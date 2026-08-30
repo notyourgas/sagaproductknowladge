@@ -1,5 +1,27 @@
 # SagaView Changelog
 
+## 2026-08-30 - S366 reduced authenticated-UAT diagnostics
+
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / UAT_BLOCKED`; production tidak berubah dan
+  `BUSINESS_READY=false`.
+- Before: preflight atau payload runner yang tidak lengkap dapat berhenti
+  sebelum kategori kegagalan aman tersimpan sebagai receipt.
+- After: exact backend source
+  `b2467cd9cf3165fdfc3f6488dbedbc45fc7e6f59` menulis receipt atomik dengan
+  allowlist status/count/boolean sebelum throw; guard mutasi, data customer,
+  foto, dan path lokal tetap fail-closed.
+- Evidence: focused 8/8 dan 108 assertion; full 1.034/1.034 dan 13.237
+  assertion; build 5.097 modul; parser; format file terkait; Composer/npm audit
+  nol; clean; remote exact. Verifier v3 `ready` pada Studio `2371db8e...` dan
+  backend S366, metadata cocok, fixed NTFS 15,707 GiB, serta nol blocker.
+- UAT final: structured payload tidak mengisi empat safety flag sebagai
+  boolean `false`; receipt mereduksinya menjadi `null` dan count `-1`, sehingga
+  safety guard menolak kelanjutan. Tidak ada retry tambahan, finalize, deploy,
+  rollback drill, atau perubahan production.
+- Next gate: perbaiki kontrak output runner pada early failure dengan fixture
+  sintetis, lalu jalankan correction cycle UAT baru yang diotorisasi.
+
 ## 2026-08-30 - S364 provenance response-policy enforcement
 
 - Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /

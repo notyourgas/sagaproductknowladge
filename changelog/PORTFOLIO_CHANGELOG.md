@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-30 - SagaView S366 reduced authenticated-UAT diagnostics
+
+- Exact pushed backend source `b2467cd9cf3165fdfc3f6488dbedbc45fc7e6f59`
+  menyimpan receipt diagnostik atomik dan tereduksi sebelum preflight/safety
+  guard berhenti, tanpa credential, data customer, foto, atau path lokal.
+- Focused 8/8, full 1.034/1.034 dan 13.237 assertion, build 5.097 modul,
+  parser/format, audit nol, clean, remote exact, serta verifier v3 nol blocker
+  lulus pada pasangan Studio `2371db8e...`.
+- Authenticated UAT tetap fail-closed karena empat safety flag tidak hadir
+  sebagai boolean `false`; receipt aman mencatat `null` dan count `-1`.
+  Production tidak berubah dan `BUSINESS_READY=false`.
+
 ## 2026-08-30 - SagaView S364 provenance response-policy enforcement
 
 - Exact pushed source `2371db8e746aeaed6a76c21daa80e14bc3ff77fb`
