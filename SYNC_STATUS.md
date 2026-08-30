@@ -12,12 +12,34 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-30T12:10:00+07:00 |
-| Branch aktif | `codex/s369-exact-main-rehearsal-knowledge` dari exact `origin/main` |
+| Waktu pembaruan terakhir | 2026-08-30T12:13:00+07:00 |
+| Branch aktif | `codex/s363-sagaview-runtime-revalidation-knowledge` dari exact `origin/main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `09f72f29eaf6c28051a8e8c51acfcd13594f9e2a` |
-| Informasi terakhir disinkronkan | SagaBook S369 exact-main artifact rehearsal pada source `30c343eb7d140dd3c45cded0f1a91d4527cdd44b`. |
-| Status sinkronisasi | `CONFIRMED / LOCAL_VALIDATED / RELEASE_ARTIFACT_READY / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah. |
+| Baseline sebelum pembaruan | `18691abddccec74de2fad2ec5459ce60fd4bd68a` |
+| Informasi terakhir disinkronkan | SagaView S363 Finalize runtime post-scan revalidation pada exact source `1d302047937a90687ec6ff00f97e45cd5f821577`. |
+| Status sinkronisasi | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan `BUSINESS_READY=false`. |
+
+## SagaView S363 Finalize runtime post-scan revalidation
+
+- Exact source `1d302047937a90687ec6ff00f97e45cd5f821577` sudah push.
+- S344 Finalize mengambil provenance live Studio/backend kembali setelah
+  evidence dipindai, membandingkannya dengan snapshot awal, dan menolak drift
+  sebelum receipt keputusan ditulis.
+- Regression red 3/3 lalu green 3/3, focused S344-S363 73/73, full exact
+  331/331, PowerShell/pwsh, format/lint/typecheck, client+SSR build, bundle
+  budget, npm audit nol, diff check, clean, dan remote exact lulus.
+- Production tidak berubah; authenticated UAT 12 gate dan visual review masih
+  pending sehingga `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi SagaView S363
+
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagaview/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook S369 exact-main artifact rehearsal
 

@@ -1,6 +1,23 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 30 Agustus 2026 11:16 WIB
+Evidence cut-off: 30 Agustus 2026 12:13 WIB
+
+S363 Finalize runtime post-scan revalidation: exact pushed source
+`1d302047937a90687ec6ff00f97e45cd5f821577` membuat S344 Finalize
+mengambil provenance live Studio/backend sekali lagi setelah seluruh evidence
+selesai dipindai. Snapshot kedua harus tetap sehat, cocok dengan exact
+candidate, dan identik dengan snapshot sebelum scan untuk status, product,
+source commit, serta hash URL provenance. Drift menghentikan proses sebelum
+receipt keputusan ditulis.
+
+Ledger lulus: regression merah 3/3 lalu hijau 3/3; focused S344-S363 73/73;
+full exact-commit 75 file/331 test; parser Windows PowerShell/pwsh;
+format/lint/typecheck; client 2.129 modul + SSR 203 modul; bundle 312,7 KiB
+dari 450 KiB; npm audit nol; diff check; worktree bersih; serta remote exact.
+Boundary hanya tooling/test/runbook, tanpa UI/API/database, foto/path customer,
+deploy, atau mutasi production. Belum lulus: authenticated manual UAT 12 gate
+dan visual review. Status `PUSHED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; `BUSINESS_READY=false`.
 
 S362 Finalize post-open custody: exact pushed source
 `d2805429b9ecd22323cf31bca49267a30f91f288` membuat S344 Finalize

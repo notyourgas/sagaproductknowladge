@@ -1,6 +1,20 @@
 # SagaView Product Knowledge
 
-Updated: 30 Agustus 2026 11:16 WIB
+Updated: 30 Agustus 2026 12:13 WIB
+
+SagaView S363 exact source
+`1d302047937a90687ec6ff00f97e45cd5f821577` sudah `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. S344 Finalize kini mengambil
+provenance live Studio/backend kembali setelah pemindaian evidence dan sebelum
+membentuk keputusan. Perubahan status, product, source commit, atau hash URL
+provenance selama scan berhenti fail-closed tanpa menulis receipt keputusan.
+
+Regression awal 3/3 gagal lalu hijau 3/3; focused S344-S363 73/73 dan full
+75 file/331 test pada exact commit lulus. Parser Windows PowerShell/pwsh,
+format/lint/typecheck, client 2.129 modul + SSR 203 modul, bundle 312,7 KiB
+dari 450 KiB, npm audit nol, diff check, clean exact commit, serta remote exact
+juga lulus. Production tidak diubah; authenticated UAT 12 gate dan visual
+review tetap wajib sehingga `BUSINESS_READY=false`.
 
 SagaView S362 exact source
 `d2805429b9ecd22323cf31bca49267a30f91f288` sudah `PUSHED /

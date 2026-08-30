@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-30 - SagaView S363 Finalize runtime post-scan revalidation
+
+- Exact pushed source `1d302047937a90687ec6ff00f97e45cd5f821577`
+  mengambil provenance live Studio/backend kembali setelah evidence dipindai
+  dan sebelum receipt keputusan dibentuk.
+- Regression red 3/3 lalu green 3/3, focused S344-S363 73/73, full exact
+  331/331, parser PowerShell/pwsh, build/budget, audit nol, clean, dan remote
+  exact lulus; runtime drift kini berhenti fail-closed sebelum receipt ditulis.
+- Perubahan hanya harness/test/runbook. Production tidak berubah;
+  authenticated UAT dan visual review masih pending sehingga
+  `BUSINESS_READY=false`.
+
 ## 2026-08-30 - SagaBook S369 exact-main artifact rehearsal
 
 - Exact source `30c343eb7d140dd3c45cded0f1a91d4527cdd44b` mempunyai archive,

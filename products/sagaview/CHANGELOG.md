@@ -1,5 +1,24 @@
 # SagaView Changelog
 
+## 2026-08-30 - S363 Finalize runtime post-scan revalidation
+
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan
+  `BUSINESS_READY=false`.
+- Before: Finalize hanya memeriksa exact runtime sebelum pemindaian evidence;
+  runtime dapat berganti ketika scan berjalan sebelum receipt keputusan dibuat.
+- After: exact source `1d302047937a90687ec6ff00f97e45cd5f821577`
+  mengambil runtime kembali sesudah scan, membandingkan status/product/commit/
+  hash URL dengan snapshot awal, dan berhenti fail-closed bila berubah.
+- Evidence: regression red 3/3 lalu green 3/3; focused S344-S363 73/73;
+  full exact-commit 75 file/331 test; parser PowerShell/pwsh;
+  format/lint/typecheck; client+SSR build; bundle 312,7 KiB dari 450 KiB;
+  npm audit nol; diff check; worktree bersih; dan remote exact.
+- Boundary: hanya harness/test/runbook dengan state sintetis; tanpa UI/API/
+  database write, data customer, deploy, atau perubahan production.
+- Next gate: authenticated manual UAT 12 gate dengan evidence sintetis
+  tersanitasi, visual review, reviewer S345, lalu S344 Finalize.
+
 ## 2026-08-30 - S362 Finalize post-open custody
 
 - Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
