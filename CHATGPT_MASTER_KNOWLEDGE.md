@@ -1,11 +1,13 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-SagaBook acceptance kumulatif S386-S388 exact
-`cfd3e7696a2b542c816a9485a3142758394d05c0` membuktikan exact-once chime
+SagaBook acceptance kumulatif S386-S389 exact
+`b92e805c03a9d031030beab3d781378da2385b7e` membuktikan exact-once chime
 lintas dua tab, refocus tanpa replay, mute menahan event, dan aktivasi kembali
 tidak memutar atau menggandakan event tertahan. Browser juga membuktikan nada
 booking `659.25/830.61/987.77 Hz` berbeda dari verifikasi pembayaran
-`783.99/1046.5/783.99 Hz`. Browser 8/8, focused PHP 23/23
+`783.99/1046.5/783.99 Hz`. Finance Admin tanpa `manage_booking_status`
+tidak memutar nada verifikasi pembayaran/transfer manual, sedangkan booking
+web berikutnya tetap berbunyi sekali tanpa replay saat refocus. Browser 9/9, focused PHP 23/23
 (151 assertion), unit audio/cursor 9/9, typecheck/build, audit Composer/npm nol,
 serta runbook UAT fisik 10 gate tersedia. Perubahan hanya test/dokumentasi;
 production tetap S385 exact main

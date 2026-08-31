@@ -12,25 +12,28 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-09-01 01:10 WIB |
-| Branch aktif | `codex/s388-sagabook-audio-tone-acceptance-knowledge` |
+| Waktu pembaruan terakhir | 2026-09-01 02:16 WIB |
+| Branch aktif | `codex/s389-sagabook-audio-permission-acceptance-knowledge` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `4fac83db4672674a97c8b4fb2d7bc484ea13b14f` |
-| Informasi terakhir disinkronkan | SagaBook acceptance cumulative S386-S388 exact `cfd3e7696a2b542c816a9485a3142758394d05c0`; production tetap S385 exact main `154ab5e8e7049e1f0155b304ae9da7c03363bc69`. |
+| Baseline sebelum pembaruan | `b275fc86983193a1d17a9a38de85f17460d9d2a3` |
+| Informasi terakhir disinkronkan | SagaBook acceptance cumulative S386-S389 exact `b92e805c03a9d031030beab3d781378da2385b7e`; production tetap S385 exact main `154ab5e8e7049e1f0155b304ae9da7c03363bc69`. |
 | Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / AUDIO_UAT_PENDING / BUSINESS_READY=false`. |
 
-## SagaBook S386-S388 audio acceptance cumulative
+## SagaBook S386-S389 audio acceptance cumulative
 
 - Browser Chromium membuktikan exact-once lintas dua tab, refocus tanpa
   replay, mute menahan event, aktivasi kembali tidak memutar event tertahan,
   serta nada booking berbeda dari nada verifikasi pembayaran.
-- Exact head `cfd3e7696a2b542c816a9485a3142758394d05c0` mencakup S387
-  `2bad814a01b402f25622c8fe707ee041dd8bf412`; browser 8/8, focused PHP
+- Finance Admin tanpa `manage_booking_status` terbukti menghasilkan nol nada
+  verifikasi pembayaran/transfer manual; booking web berikutnya tetap berbunyi
+  sekali tanpa replay saat refocus.
+- Exact head `b92e805c03a9d031030beab3d781378da2385b7e` mencakup S388
+  `cfd3e7696a2b542c816a9485a3142758394d05c0`; browser 9/9, focused PHP
   23/23 (151 assertion), unit 9/9, typecheck/build, dan audit dependency nol.
 - Runbook UAT fisik 10 gate tersedia. Tidak ada runtime, migration, release
   lock, atau deploy; production tetap S385.
 
-## File yang berubah pada sinkronisasi SagaBook S386-S388
+## File yang berubah pada sinkronisasi SagaBook S386-S389
 
 - `products/sagabook/PRODUCT.md`
 - `products/sagabook/DOSSIER.md`

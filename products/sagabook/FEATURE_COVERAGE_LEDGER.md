@@ -2,14 +2,16 @@
 
 Evidence cut-off: 1 September 2026 WIB
 
-Acceptance audio kumulatif S386-S388 exact
-`cfd3e7696a2b542c816a9485a3142758394d05c0` telah `CONFIRMED /
+Acceptance audio kumulatif S386-S389 exact
+`b92e805c03a9d031030beab3d781378da2385b7e` telah `CONFIRMED /
 SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
 PRODUCTION_UNCHANGED`. Chromium membuktikan exact-once lintas dua tab, refocus
 tanpa replay, mute menahan event, dan aktivasi kembali tidak memutar atau
 menggandakan event tertahan; urutan booking `659.25/830.61/987.77 Hz` juga
 terbukti berbeda dari verifikasi pembayaran `783.99/1046.5/783.99 Hz`.
-Browser 8/8, focused PHP 23/23 (151 assertion), unit audio/cursor 9/9,
+Finance Admin tanpa `manage_booking_status` terbukti menghasilkan nol nada
+untuk verifikasi pembayaran/transfer manual, sedangkan booking web berikutnya
+tetap berbunyi sekali dan refocus tidak replay. Browser 9/9, focused PHP 23/23 (151 assertion), unit audio/cursor 9/9,
 typecheck/build, serta audit Composer/npm nol lulus. Runbook fisik memuat 10
 gate Chrome/Edge. Production tetap S385 dan `AUDIO_UAT_PENDING /
 BUSINESS_READY=false`.
