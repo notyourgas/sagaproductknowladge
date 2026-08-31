@@ -1,15 +1,19 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-SagaBook S385 exact source
-`cd573f9ab96583b74b65f00e1d61a509461e612a` telah push dan local-validated.
+SagaBook S385 exact merged main
+`154ab5e8e7049e1f0155b304ae9da7c03363bc69` aktif pada immutable release
+`20260831041833-154ab5e` dengan rollback `20260831025235-58e1303`.
 Admin dapat mengaktifkan chime berbeda untuk booking web baru dan bukti
 transfer yang perlu diverifikasi; preferensi dipisahkan per tenant/akun,
 autoplay menunggu interaksi browser, event dideduplikasi lintas polling/tab,
 dan feed ringan tetap tenant/cabang/capability scoped serta draft-safe. Full
 PHP 1.330/1.330, focused 22/22, unit 4/4, browser 5/5, typecheck/build, dan
-audit dependency nol lulus. Status `IMPLEMENTED_NOT_DEPLOYED`; production
-tetap S384 `20260831025235-58e1303`, UAT speaker nyata dan release belum
-dilakukan, serta `BUSINESS_READY=false`.
+audit dependency nol lulus. Fresh encrypted backup/checksum/disposable restore,
+exact-commit release gate, verifier, report canary 32/32, migration pending 0,
+service/journal, serta public/security smoke 3/3 lulus tanpa release exception.
+Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUDIO_UAT_PENDING /
+BUSINESS_READY=false`; dashboard harus tetap terbuka dan UAT speaker nyata
+masih diperlukan.
 
 COYABAG exact pushed source
 `2b5bc5a9c056e367f5de0c09d3ee78cd7948aea3` aktif pada immutable release

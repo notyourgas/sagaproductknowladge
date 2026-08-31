@@ -1,6 +1,6 @@
 # SagaBook Changelog
 
-## 2026-08-31 - S385 audio notifikasi admin candidate
+## 2026-08-31 - S385 audio notifikasi admin production-activated
 
 - Sebelum: admin hanya melihat booking baru atau antrean verifikasi melalui
   feed visual sehingga event mudah terlambat disadari saat fokus ke pekerjaan
@@ -10,13 +10,18 @@
   interaksi, serta deduplikasi polling dan lintas tab.
 - Feed ringan `/api/admin/getNotifications` berjalan 15 detik, dibatasi di
   server, tetap tenant/cabang/capability scoped, dan tidak menimpa draft CRUD.
-- Exact source `cd573f9ab96583b74b65f00e1d61a509461e612a` pada branch
-  `codex/s385-sagabook-audio-notifications` sudah push. Full PHP 1.330/1.330
+- Feature source `cd573f9ab96583b74b65f00e1d61a509461e612a` sudah merge melalui
+  PR #91 ke exact main `154ab5e8e7049e1f0155b304ae9da7c03363bc69`. Full PHP 1.330/1.330
   (14.936 assertion), focused 22/22 (266 assertion), unit 4/4, browser 5/5,
   typecheck/build, dan audit dependency nol lulus.
-- Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED`; production tetap S384 release
-  `20260831025235-58e1303`. UAT speaker nyata, merge, dan release masih gate.
+- Fresh encrypted backup/checksum/disposable restore dan exact-commit release
+  gate lulus. Immutable release `20260831041833-154ab5e` aktif dengan rollback
+  `20260831025235-58e1303`; verifier membuktikan commit/release stabil,
+  rollback kompatibel, report canary 32/32, migration pending 0,
+  service/journal sehat, serta public/security smoke 3/3 tanpa exception.
+- Status `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / AUDIO_UAT_PENDING / BUSINESS_READY=false`; uji dengar
+  pada speaker nyata saat Chrome berada di background masih gate pengguna.
 
 ## 2026-08-31 - S384 historical SQLite rollback production-activated
 

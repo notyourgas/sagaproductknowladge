@@ -16,16 +16,20 @@
   IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`;
   Lightroom nyata, preview, canary, serta approval aktivasi masih gate.
 
-## 2026-08-31 - SagaBook S385 audio notifikasi admin candidate
+## 2026-08-31 - SagaBook S385 audio notifikasi admin production
 
-- Exact source `cd573f9ab96583b74b65f00e1d61a509461e612a` sudah push dan
-  tervalidasi lokal; production tetap S384 `20260831025235-58e1303`.
+- Feature source `cd573f9ab96583b74b65f00e1d61a509461e612a` sudah merge melalui
+  PR #91 ke exact main `154ab5e8e7049e1f0155b304ae9da7c03363bc69` dan aktif pada
+  immutable release `20260831041833-154ab5e`; rollback
+  `20260831025235-58e1303` tersedia dan kompatibel.
 - Admin mendapat chime berbeda untuk booking web dan verifikasi transfer,
   kontrol per tenant/akun, autoplay recovery, deduplikasi polling/lintas tab,
   serta feed ringan yang tidak menimpa draft.
 - Full PHP 1.330/1.330, focused 22/22, unit 4/4, browser 5/5,
-  typecheck/build, dan audit dependency nol lulus. Status
-  `IMPLEMENTED_NOT_DEPLOYED`; UAT speaker nyata, merge, dan release masih gate.
+  typecheck/build, audit dependency, backup/restore, verifier, report canary
+  32/32, migration pending 0, service/journal, dan smoke/security 3/3 lulus.
+  Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUDIO_UAT_PENDING /
+  BUSINESS_READY=false`; UAT speaker nyata masih gate.
 
 ## 2026-08-31 - COYABAG integration provider control deployed
 
