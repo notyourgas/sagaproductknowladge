@@ -15,9 +15,35 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-08-31 WIB |
 | Branch aktif | isolated exact `origin/main` worktree |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `8448d692799437d4186e32b47b4005aa706770d0` |
-| Informasi terakhir disinkronkan | SagaBook S384 exact source `58e1303ce245c14985b8f8d87baf86c243f80d02` aktif pada release `20260831025235-58e1303`. |
-| Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED / BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `d0e456148554c86602ab598517ab6d0ef804bae0` |
+| Informasi terakhir disinkronkan | COYABAG exact source `2b5bc5a9c056e367f5de0c09d3ee78cd7948aea3` aktif pada release `20260831-2b5bc5a`. |
+| Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false`. |
+
+## COYABAG integration provider control
+
+- Exact source `2b5bc5a9c056e367f5de0c09d3ee78cd7948aea3` sudah push dan aktif
+  sebagai immutable release `20260831-2b5bc5a`; rollback
+  `20260831-b32d5bb` tersedia dan readiness 42/42.
+- Provider console menunjukkan readiness public-safe email, pengiriman,
+  WhatsApp, dan media tanpa mengekspos credential.
+- Tes email owner memakai recent auth, review tujuan termasking,
+  acknowledgement, throttle, fingerprint konfigurasi, dan token sekali pakai.
+  Stale config, replay, serta review kedaluwarsa ditolak sebelum pengiriman.
+- Focused 22/22, Laravel 544 total, storefront 220/220, browser dua viewport,
+  build/audit, backup, worker, HTTP, provider state, dan buy-to-cart lulus.
+- Resend/email delivery, manual shipping sembilan tujuan, serta VPS storage
+  siap; WhatsApp belum dipilih. Tidak ada aktivasi provider atau email tes
+  produksi. Enam payment exception tetap menahan `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi COYABAG integration provider control
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG notification recovery control
 

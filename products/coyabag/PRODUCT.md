@@ -76,10 +76,19 @@ COMMERCE_ACTIVE`. Business readiness: `BLOCKED`.
   bagian; audit tetap `report_only` dan tidak menghapus record.
 - Launch UAT 15 langkah dan release sign-off sudah lulus. Readiness gate tetap
   enforced dan keputusan runtime adalah `COMMERCE_ACTIVE`.
-- Release aktif `20260831-b32d5bb` dengan exact material source
-  `b32d5bb298db2c049b7133d4b785a2a0dd97dfa6` melayani production;
-  rollback langsung `20260831-158a6dd` tersedia dan readiness lulus 42/42.
-  Notification retry/cancel memakai review, recipient termasking, alasan,
+- Release aktif `20260831-2b5bc5a` dengan exact material source
+  `2b5bc5a9c056e367f5de0c09d3ee78cd7948aea3` melayani production;
+  rollback langsung `20260831-b32d5bb` tersedia dan readiness lulus 42/42.
+  Provider console merangkum email, pengiriman, WhatsApp, dan media dengan
+  status, mode, reason code, serta guidance public-safe. Tes email owner
+  memakai recent auth, review tujuan termasking, acknowledgement, throttle,
+  fingerprint konfigurasi, dan token sekali pakai; stale config, replay, dan
+  review kedaluwarsa fail-closed. Production menunjukkan Resend/email delivery,
+  manual shipping sembilan tujuan, dan VPS storage siap; WhatsApp belum
+  dipilih. Tidak ada aktivasi provider atau email tes produksi pada release
+  ini. Release rollback `20260831-b32d5bb` memuat Notification Recovery
+  Control. Notification retry/cancel memakai review, recipient termasking,
+  alasan,
   acknowledgement, recent auth, throttle, expected state, row lock, provider
   readiness, dan audit. Batch retry memakai fingerprint antrean serta provider;
   perubahan snapshot ditolak atomik. Production mempertahankan tujuh email

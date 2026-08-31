@@ -79,6 +79,22 @@ coverage nasional atau Delivery API aktif.
 Backup database COYABAG masih local-disk dan perlu dipindahkan ke backup offsite
 sebelum business readiness final.
 
+`CONFIRMED / PRODUCTION_DEPLOYED`: release `20260831-2b5bc5a`, exact source
+`2b5bc5a9c056e367f5de0c09d3ee78cd7948aea3`, dan rollback
+`20260831-b32d5bb` menambahkan Integration Provider Control pada Operations.
+Provider console merangkum email, pengiriman, WhatsApp, dan media dengan
+status, mode, reason code, serta guidance public-safe. Tes email hanya tersedia
+bagi owner aktif dan memerlukan recent authentication, review tujuan
+termasking, acknowledgement, throttle, fingerprint konfigurasi, serta token
+session sekali pakai. Stale config, replay, atau review kedaluwarsa ditolak
+sebelum pengiriman. Focused 22/22, Laravel 544 total/543 pass/satu controlled
+skip, storefront 220/220, browser desktop/mobile, build/audit, backup,
+migration pending nol, readiness 42/42, dua worker, HTTP, dan buy-to-cart
+lulus. Production read-only menunjukkan Resend/email delivery siap, manual
+shipping siap untuk sembilan tujuan, VPS storage siap, dan WhatsApp belum
+dipilih. Tidak ada migrasi, aktivasi provider, email tes produksi, mutasi
+notifikasi, commerce gate, atau inventory.
+
 `CONFIRMED / PRODUCTION_DEPLOYED`: release `20260831-b32d5bb`, exact source
 `b32d5bb298db2c049b7133d4b785a2a0dd97dfa6`, dan rollback
 `20260831-158a6dd` menambahkan Notification Recovery Control pada Operations.

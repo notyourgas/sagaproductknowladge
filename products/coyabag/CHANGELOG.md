@@ -4,6 +4,25 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-31 - Integration provider control deployed
+
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false` dari exact
+  source `2b5bc5a9c056e367f5de0c09d3ee78cd7948aea3`, immutable release
+  `20260831-2b5bc5a`, dan rollback `20260831-b32d5bb`.
+- Provider console menampilkan email, pengiriman, WhatsApp, dan media dengan
+  status, mode, reason code, serta guidance public-safe tanpa credential.
+- Tes email hanya untuk owner aktif dan memakai recent auth, review tujuan
+  termasking, acknowledgement, throttle, fingerprint konfigurasi, dan token
+  session sekali pakai. Stale config, replay, serta review kedaluwarsa
+  fail-closed sebelum pengiriman.
+- Focused 22/22, Laravel 544 total/543 pass/satu controlled skip, storefront
+  220/220, browser desktop/mobile, build/audit, backup, readiness 42/42,
+  worker, HTTP, provider state read-only, dan buy-to-cart lulus.
+- Resend/email delivery, manual shipping sembilan tujuan, dan VPS storage siap;
+  WhatsApp belum dipilih. Tidak ada aktivasi provider atau email tes produksi.
+  Enam payment exception tetap menahan `BUSINESS_READY=false`.
+
 ## 2026-08-31 - Notification recovery control deployed
 
 - Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /

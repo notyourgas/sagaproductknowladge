@@ -1,5 +1,21 @@
 # Portfolio Changelog
 
+## 2026-08-31 - COYABAG integration provider control deployed
+
+- Exact pushed source `2b5bc5a9c056e367f5de0c09d3ee78cd7948aea3`
+  aktif pada immutable release `20260831-2b5bc5a`; rollback
+  `20260831-b32d5bb` tersedia dan readiness 42/42.
+- Provider console merangkum email, pengiriman, WhatsApp, dan media dengan
+  status, mode, reason code, dan guidance public-safe.
+- Tes email owner kini recent-authenticated, review-bound, termasking,
+  throttled, configuration-bound, dan single-use. Stale config serta replay
+  ditolak sebelum pengiriman.
+- Focused 22/22, Laravel 544, storefront 220/220, browser dua viewport,
+  build/audit, backup, worker, HTTP, provider state, dan buy-to-cart lulus.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE /
+  BUSINESS_READY=false`; tidak ada aktivasi provider atau email tes produksi.
+  Enam payment exception dan shipping manual tetap menjadi batas bisnis.
+
 ## 2026-08-31 - COYABAG notification recovery control deployed
 
 - Exact pushed source `b32d5bb298db2c049b7133d4b785a2a0dd97dfa6`

@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-31 - COYABAG integration provider control sync
+
+- Ringkasan: menyinkronkan provider console untuk email, pengiriman, WhatsApp,
+  dan media serta email test owner yang review-bound dan fail-closed.
+- Provenance: exact pushed source
+  `2b5bc5a9c056e367f5de0c09d3ee78cd7948aea3`, immutable release
+  `20260831-2b5bc5a`, rollback `20260831-b32d5bb`.
+- Evidence: focused 22/22, Laravel 544 total, storefront 220/220, browser
+  desktop/mobile tanpa overlap/overflow, build/audit, backup, readiness 42/42,
+  worker, HTTP, provider state read-only, dan buy-to-cart.
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false`.
+- Dokumen terdampak: Product, dossier/changelog COYABAG, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-31 - COYABAG notification recovery control sync
 
 - Ringkasan: menyinkronkan review-bound retry/cancel, stale-state guard,

@@ -1,5 +1,22 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+COYABAG exact pushed source
+`2b5bc5a9c056e367f5de0c09d3ee78cd7948aea3` aktif pada immutable release
+`20260831-2b5bc5a` dengan rollback `20260831-b32d5bb`; readiness 42/42.
+Operations Integrations sekarang memiliki provider console public-safe untuk
+email, pengiriman, WhatsApp, dan media. Tes email hanya untuk owner aktif dan
+memerlukan recent authentication, review tujuan termasking, acknowledgement,
+throttle, fingerprint konfigurasi, serta token session sekali pakai; stale
+config, replay, dan review kedaluwarsa ditolak sebelum pengiriman. Production
+read-only menunjukkan Resend/email delivery siap, manual shipping siap untuk
+sembilan tujuan, VPS storage siap, dan WhatsApp belum dipilih. Tidak ada
+aktivasi provider atau email tes produksi pada release ini. Laravel 544 total/
+543 pass/satu controlled skip, storefront 220/220, browser dua viewport,
+build/audit, backup, worker, HTTP, serta buy-to-cart lulus. Commerce tetap
+`COMMERCE_ACTIVE`, tetapi enam payment exception, shipping manual, keputusan
+channel WhatsApp, backup offsite, dan UAT bisnis menahan
+`BUSINESS_READY=false`.
+
 SagaBook S384 exact cumulative source
 `58e1303ce245c14985b8f8d87baf86c243f80d02` aktif pada immutable release
 `20260831025235-58e1303` dengan rollback `20260831010633-9d599c8`.
