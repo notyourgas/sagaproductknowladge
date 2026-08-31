@@ -1,5 +1,23 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-31 - SagaBook S384 historical rollback sync
+
+- Ringkasan: menyinkronkan penutupan candidate-level untuk gap rollback seluruh
+  migration SQLite dengan helper index-before-column dan retry-safe column
+  deletion.
+- Provenance: exact pushed candidate
+  `71b37c9e642cdc8ff6f98bcdc2c95600a285542a`, branch
+  `codex/s384-sagabook-sqlite-all-batch-rollback`; production tetap exact S382
+  `9d599c862cbdd4c650f53981a69da123ca4b3c7a`.
+- Evidence: migrate/rollback/reapply disposable 137 migration record/175 tabel
+  dengan integritas `ok`, focused 27/27, Feature 1.297/1.297, Unit 33/33,
+  build/lint, serta audit Composer/npm nol.
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
+- Dokumen terdampak: Product, ledger/changelog SagaBook, portfolio, root
+  changelog, dan sync status. Master knowledge tidak berubah karena tidak ada
+  perubahan fitur, positioning, pricing, atau runtime production.
+
 ## 2026-08-31 - COYABAG content schedule control sync
 
 - Ringkasan: menyinkronkan publication queue yang fail-closed, explicit cancel,

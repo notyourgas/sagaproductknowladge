@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
 Updated: 31 Agustus 2026 WIB
-Evidence status: S382 aktif pada exact cumulative source `9d599c862cbdd4c650f53981a69da123ca4b3c7a`, immutable release `20260831010633-9d599c8`, dengan rollback `20260831004436-257df79`. Wrapper release kini memiliki shared lock sendiri, cleanup interrupt-safe, receipt cancellation terminal, dan state manifest yang tidak mengklaim deployment sebelum waktunya. Full exact-main 1.327/1.327 (14.883 assertion), artifact immutable, fresh encrypted backup/checksum/disposable restore, migration pending 0, verifier 23/23, authenticated Owner/Staff UAT read-only, serta rollback drill aktual lulus. Status `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED / BUSINESS_READY=false`.
+Evidence status: S382 aktif pada exact cumulative source `9d599c862cbdd4c650f53981a69da123ca4b3c7a`, immutable release `20260831010633-9d599c8`, dengan rollback `20260831004436-257df79`. Kandidat S384 `71b37c9e642cdc8ff6f98bcdc2c95600a285542a` menutup gap rollback seluruh migration SQLite secara lokal dan sudah dipush, tetapi belum merge/deploy; production tidak berubah. Status runtime `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED / BUSINESS_READY=false`; status S384 `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`.
 
 ## Tujuan dokumen
 
@@ -15,6 +15,21 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
+
+- Kandidat hardening migration S384
+  `71b37c9e642cdc8ff6f98bcdc2c95600a285542a` sudah dipush pada branch
+  `codex/s384-sagabook-sqlite-all-batch-rollback`. Helper rollback terpusat
+  melepas secondary/unique index yang bergantung pada kolom sebelum kolom
+  dihapus, lalu menghapus kolom satu per satu agar retry tidak berhenti pada
+  partial schema. Empat belas migration historis yang terbukti bermasalah
+  memakai helper ini. SQLite disposable berhasil migrate fresh, rollback
+  seluruh batch, lalu reapply menjadi 137 migration record/175 tabel dengan
+  `PRAGMA integrity_check=ok`. Focused hardening 27/27 (408 assertion), Feature
+  1.297/1.297 (14.694 assertion), Unit 33/33 (218 assertion), PHP lint,
+  build, Composer audit, dan npm audit nol lulus. Kandidat belum merge,
+  artifact/backup tidak dibentuk, dan production S382 tidak disentuh. Status
+  `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
 
 - Release hardening S382 aktif pada exact main
   `9d599c862cbdd4c650f53981a69da123ca4b3c7a` melalui immutable release

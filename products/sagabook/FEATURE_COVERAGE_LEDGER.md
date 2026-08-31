@@ -29,6 +29,19 @@ lock eksklusif yang dilepas terminal. Status `CONFIRMED / MERGED /
 SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED /
 BUSINESS_READY=false`.
 
+Historical all-batch SQLite rollback S384 telah `CONFIRMED / SOURCE_PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED` pada exact candidate
+`71b37c9e642cdc8ff6f98bcdc2c95600a285542a`, branch
+`codex/s384-sagabook-sqlite-all-batch-rollback`. Inventaris disposable
+membuktikan puluhan secondary/unique index historis masih menahan `dropColumn`.
+Helper terpusat sekarang melepas indeks yang beririsan, menolak primary index,
+dan menghapus kolom satu per satu; empat belas migration terdampak telah
+diikat ke helper. Fresh SQLite berhasil migrate, rollback seluruh batch, dan
+reapply hingga 137 migration record/175 tabel dengan integritas `ok`. Focused
+27/27 (408 assertion), Feature 1.297/1.297 (14.694 assertion), Unit 33/33 (218
+assertion), PHP lint, build, serta audit Composer/npm nol lulus. Kandidat belum
+merge/deploy dan production tetap S382.
+
 Hardening rollback drill S380 telah `CONFIRMED / MERGED / SOURCE_PUSHED /
 LOCAL_VALIDATED / RELEASE_PREPARATION_BLOCKED / IMPLEMENTED_NOT_DEPLOYED`
 pada feature source `47d7591ffc8cc31667f7b280765c950c427216b7` dan exact
@@ -60,12 +73,11 @@ lulus. Immutable release, backup/restore, verifier 23/23, smoke/security 3/3,
 authenticated Owner/Staff UAT, dan rollback drill aktual juga lulus.
 `BUSINESS_READY=false` sampai pilot dua studio dan provider canary selesai.
 
-Gap READY berikutnya: selesaikan dua studio pilot dan provider canary dengan
-otorisasi terpisah sebelum mengubah `BUSINESS_READY=false`. Historical
-all-batch SQLite rollback juga memiliki satu baseline
-compatibility finding lama; tidak ada migration delta S379 ke S381, tetapi
-finding itu perlu slice terpisah sebelum dijadikan gate rollback seluruh
-sejarah.
+Gap READY berikutnya: review/merge exact candidate S384 tanpa mengubah klaim
+production, lalu selesaikan dua studio pilot dan provider canary dengan
+otorisasi terpisah sebelum mengubah `BUSINESS_READY=false`. Baseline
+compatibility finding all-batch SQLite lama sudah tertutup pada candidate
+teruji, tetapi belum menjadi source main atau runtime production.
 
 Pada tahap kandidat, edit pengeluaran staff S378 telah `CONFIRMED /
 SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED` pada exact source

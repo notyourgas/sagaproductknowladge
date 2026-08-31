@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-31 - SagaBook S384 historical rollback candidate
+
+- Exact pushed candidate `71b37c9e642cdc8ff6f98bcdc2c95600a285542a`
+  membuat rollback all-batch SQLite deterministik dengan index-before-column
+  cleanup dan penghapusan kolom satu per satu pada empat belas migration lama.
+- Disposable migrate/rollback/reapply lulus 137 migration record, 175 tabel,
+  dan integritas `ok`; focused 27/27, Feature 1.297/1.297, Unit 33/33,
+  build/lint serta audit dependency nol lulus.
+- Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED / BUSINESS_READY=false`; production SagaBook tetap
+  S382 dan tidak ada artifact, backup, atau activation baru.
+
 ## 2026-08-31 - COYABAG content schedule control deployed
 
 - Exact pushed source `158a6dd3907507628c7561c603fe4980f664214f`

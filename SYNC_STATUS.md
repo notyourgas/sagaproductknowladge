@@ -15,9 +15,31 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-08-31 WIB |
 | Branch aktif | isolated exact `origin/main` worktree |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `80adf702938a23d26cd7f4d8b833bd534b113349` |
-| Informasi terakhir disinkronkan | COYABAG exact source `158a6dd3907507628c7561c603fe4980f664214f` aktif pada release `20260831-158a6dd`; content schedule control, rollback, dan smoke lulus. |
-| Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `127a317eb94bcfaefad6010f0fd5492294ac8354` |
+| Informasi terakhir disinkronkan | SagaBook S384 exact candidate `71b37c9e642cdc8ff6f98bcdc2c95600a285542a` menutup historical all-batch SQLite rollback pada gate lokal; production tetap S382. |
+| Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`. |
+
+## SagaBook S384 historical all-batch SQLite rollback
+
+- Exact candidate `71b37c9e642cdc8ff6f98bcdc2c95600a285542a` sudah
+  dipush pada branch `codex/s384-sagabook-sqlite-all-batch-rollback`.
+- Empat belas migration historis menggunakan helper yang melepas dependent
+  index sebelum target column dan menghapus column satu per satu.
+- Fresh SQLite migrate/rollback/reapply lulus 137 migration record, 175 tabel,
+  dan integritas `ok`; focused 27/27, Feature 1.297/1.297, Unit 33/33,
+  lint/build, serta audit dependency nol lulus.
+- Candidate belum merge, artifact/backup/deploy belum dimulai. Production tetap
+  S382 `9d599c862cbdd4c650f53981a69da123ca4b3c7a` pada release
+  `20260831010633-9d599c8`; `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi SagaBook S384
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG content schedule control
 

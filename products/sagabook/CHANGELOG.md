@@ -1,5 +1,27 @@
 # SagaBook Changelog
 
+## 2026-08-31 - S384 historical SQLite all-batch rollback local-validated
+
+- Exact candidate `71b37c9e642cdc8ff6f98bcdc2c95600a285542a` sudah dipush pada
+  branch `codex/s384-sagabook-sqlite-all-batch-rollback`, berbasis production
+  source S382 `9d599c862cbdd4c650f53981a69da123ca4b3c7a`.
+- Reproduksi merah membuktikan secondary index pada closing, Tokopay clearing,
+  dan owner-review menahan `dropColumn` di SQLite. Inventaris disposable
+  menemukan pola sama pada migration historis lain.
+- Helper rollback terpusat melepas index yang bergantung pada target column,
+  menolak primary-indexed column, lalu menghapus column satu per satu untuk
+  mencegah partial-schema retry. Empat belas migration terdampak menggunakan
+  helper; allowlist checksum dua migration release diperbarui.
+- Fresh SQLite lulus migrate, rollback seluruh batch, dan reapply dengan 137
+  migration record, 175 tabel, serta `PRAGMA integrity_check=ok`. Focused
+  hardening 27/27 (408 assertion), Feature 1.297/1.297 (14.694 assertion),
+  Unit 33/33 (218 assertion), PHP lint, build, dan audit Composer/npm nol
+  lulus.
+- Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`;
+  candidate belum merge, artifact/backup/deploy belum dimulai, dan production
+  tetap S382.
+
 ## 2026-08-31 - S382 production release cancellation safety
 
 - Exact main `9d599c862cbdd4c650f53981a69da123ca4b3c7a` aktif pada immutable release
