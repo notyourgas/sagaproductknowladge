@@ -4,6 +4,24 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-31 - Notification recovery control deployed
+
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false` dari exact
+  source `b32d5bb298db2c049b7133d4b785a2a0dd97dfa6`, immutable release
+  `20260831-b32d5bb`, dan rollback `20260831-158a6dd`.
+- Retry/cancel tunggal memakai review dialog dengan recipient termasking,
+  alasan, acknowledgement, expected state, row lock, provider readiness,
+  recent authentication, throttle, dan audit.
+- Batch retry menunjukkan eligible/provider-blocked count dan memakai
+  fingerprint snapshot; perubahan antrean atau provider ditolak atomik.
+- Focused 14/14, Laravel 543 total/542 pass/satu controlled skip, storefront
+  220/220, browser desktop/mobile, build/audit, backup, readiness 42/42,
+  worker, HTTP, read-only outbox state, dan buy-to-cart lulus.
+- Tujuh email tetap sent dan lima WhatsApp tetap pending karena channel belum
+  dipilih. Enam payment exception serta shipping manual sembilan tujuan tetap
+  menahan `BUSINESS_READY=false`.
+
 ## 2026-08-31 - Content schedule control deployed
 
 - Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /

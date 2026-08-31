@@ -76,9 +76,16 @@ COMMERCE_ACTIVE`. Business readiness: `BLOCKED`.
   bagian; audit tetap `report_only` dan tidak menghapus record.
 - Launch UAT 15 langkah dan release sign-off sudah lulus. Readiness gate tetap
   enforced dan keputusan runtime adalah `COMMERCE_ACTIVE`.
-- Release aktif `20260831-158a6dd` dengan exact material source
-  `158a6dd3907507628c7561c603fe4980f664214f` melayani production;
-  rollback langsung `20260831-2b9614f` tersedia dan readiness lulus 42/42.
+- Release aktif `20260831-b32d5bb` dengan exact material source
+  `b32d5bb298db2c049b7133d4b785a2a0dd97dfa6` melayani production;
+  rollback langsung `20260831-158a6dd` tersedia dan readiness lulus 42/42.
+  Notification retry/cancel memakai review, recipient termasking, alasan,
+  acknowledgement, recent auth, throttle, expected state, row lock, provider
+  readiness, dan audit. Batch retry memakai fingerprint antrean serta provider;
+  perubahan snapshot ditolak atomik. Production mempertahankan tujuh email
+  sent dan lima WhatsApp pending karena channel belum dipilih; stale processing
+  nol. Acceptance desktop/mobile lulus tanpa overlap atau document overflow.
+  Release rollback `20260831-158a6dd` memuat Content Schedule Control.
   Publication queue kini terlihat dengan waktu WIB serta revision pada daftar
   dan editor. Save draft tidak dapat diam-diam menghapus schedule. Cancel dan
   reschedule memakai permission, recent auth, acknowledgement, alasan,
@@ -86,7 +93,7 @@ COMMERCE_ACTIVE`. Business readiness: `BLOCKED`.
   revision sehingga cancel/reschedule race fail-closed; draft serta versi
   publik tetap utuh saat cancel. Acceptance desktop/mobile lulus tanpa overlap
   atau document overflow.
-  Release rollback `20260831-2b9614f` memuat Storefront Preview yang merender
+  Release `20260831-2b9614f` memuat Storefront Preview yang merender
   signed draft dan versi publik melalui
   komponen storefront aktual, dengan mode desktop/mobile, revision/expiry
   state, recovery, dan semua aksi commerce dibuat read-only. Capability

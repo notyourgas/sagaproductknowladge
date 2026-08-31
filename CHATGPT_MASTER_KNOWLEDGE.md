@@ -1,6 +1,21 @@
 # Saga Product — Master Knowledge for ChatGPT
 
 COYABAG exact pushed source
+`b32d5bb298db2c049b7133d4b785a2a0dd97dfa6` aktif pada immutable release
+`20260831-b32d5bb` dengan rollback `20260831-158a6dd`; readiness 42/42.
+Operations Notifications sekarang mengharuskan review, alasan,
+acknowledgement, recent authentication, throttle, expected state, row lock,
+provider readiness, dan audit untuk retry/cancel. Batch retry terikat fingerprint
+antrean serta provider dan ditolak atomik jika snapshot berubah. Recipient dan
+provider error tetap termasking. Production read-only menunjukkan tujuh email
+sent, lima WhatsApp pending yang dipertahankan karena channel belum dipilih,
+dan stale processing nol. Laravel 543 total/542 pass/satu controlled skip,
+storefront 220/220, browser dua viewport, build/audit, backup, worker, HTTP,
+serta buy-to-cart lulus. Commerce tetap `COMMERCE_ACTIVE`, tetapi enam payment
+exception, shipping manual sembilan tujuan, dan keputusan channel WhatsApp
+menahan `BUSINESS_READY=false`.
+
+COYABAG exact pushed source
 `158a6dd3907507628c7561c603fe4980f664214f` aktif pada immutable release
 `20260831-158a6dd` dengan rollback `20260831-2b9614f`; readiness 42/42.
 Website Management sekarang melindungi publication queue dari silent

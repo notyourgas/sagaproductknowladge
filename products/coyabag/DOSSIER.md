@@ -79,7 +79,21 @@ coverage nasional atau Delivery API aktif.
 Backup database COYABAG masih local-disk dan perlu dipindahkan ke backup offsite
 sebelum business readiness final.
 
-`CONFIRMED / PRODUCTION_DEPLOYED`: release `20260831-158a6dd`, exact source
+`CONFIRMED / PRODUCTION_DEPLOYED`: release `20260831-b32d5bb`, exact source
+`b32d5bb298db2c049b7133d4b785a2a0dd97dfa6`, dan rollback
+`20260831-158a6dd` menambahkan Notification Recovery Control pada Operations.
+Retry/cancel memakai review dengan recipient termasking, alasan,
+acknowledgement, expected status/attempts, row lock, provider readiness, recent
+authentication, throttle, dan audit. Batch retry memakai fingerprint antrean
+serta provider sehingga perubahan snapshot ditolak atomik dan item blocked
+tidak tersentuh. Focused 14/14, Laravel 543 total/542 pass/satu controlled
+skip, storefront 220/220, browser desktop/mobile, build/audit, backup,
+migration pending nol, readiness 42/42, dua worker, HTTP, dan buy-to-cart
+lulus. State produksi public-safe tetap tujuh email sent, lima WhatsApp pending
+karena channel belum dipilih, serta stale processing nol. Tidak ada migrasi,
+aktivasi provider, mutasi antrean, commerce gate, atau mutasi inventory.
+
+`CONFIRMED / PRODUCTION_DEPLOYED`: release rollback `20260831-158a6dd`, exact source
 `158a6dd3907507628c7561c603fe4980f664214f`, dan rollback
 `20260831-2b9614f` menutup silent unschedule dan scheduler race pada Content
 Publication Control. Save draft ditolak saat publication queue aktif;

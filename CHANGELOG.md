@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-31 - COYABAG notification recovery control sync
+
+- Ringkasan: menyinkronkan review-bound retry/cancel, stale-state guard,
+  batch fingerprint, responsive operator flow, release, dan rollback.
+- Provenance: exact pushed source
+  `b32d5bb298db2c049b7133d4b785a2a0dd97dfa6`, immutable release
+  `20260831-b32d5bb`, rollback `20260831-158a6dd`.
+- Evidence: focused 14/14, Laravel 543 total, storefront 220/220, browser
+  desktop/mobile tanpa overlap/overflow, build/audit, backup, readiness 42/42,
+  worker, HTTP, read-only outbox state, dan buy-to-cart.
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false`.
+- Dokumen terdampak: Product, dossier/changelog COYABAG, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-31 - SagaBook S384 historical rollback sync
 
 - Ringkasan: menyinkronkan penutupan candidate-level untuk gap rollback seluruh

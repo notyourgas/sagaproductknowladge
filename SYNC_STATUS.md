@@ -15,9 +15,33 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-08-31 WIB |
 | Branch aktif | isolated exact `origin/main` worktree |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `127a317eb94bcfaefad6010f0fd5492294ac8354` |
-| Informasi terakhir disinkronkan | SagaBook S384 exact candidate `71b37c9e642cdc8ff6f98bcdc2c95600a285542a` menutup historical all-batch SQLite rollback pada gate lokal; production tetap S382. |
-| Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `0851090e31ec7735067c3012af8a76c76da79b18` |
+| Informasi terakhir disinkronkan | COYABAG Notification Recovery Control exact source `b32d5bb298db2c049b7133d4b785a2a0dd97dfa6` aktif pada release `20260831-b32d5bb`. |
+| Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false`. |
+
+## COYABAG notification recovery control
+
+- Exact source `b32d5bb298db2c049b7133d4b785a2a0dd97dfa6` sudah push dan aktif
+  sebagai immutable release `20260831-b32d5bb`; rollback
+  `20260831-158a6dd` tersedia dan readiness 42/42.
+- Retry/cancel memakai review, masking, reason, acknowledgement, recent auth,
+  throttle, expected state, row lock, provider readiness, dan audit. Batch
+  retry terikat fingerprint dan stale snapshot ditolak atomik.
+- Focused 14/14, Laravel 543 total, storefront 220/220, browser dua viewport,
+  build/audit, backup, worker, HTTP, outbox state, dan buy-to-cart lulus.
+- Tujuh email sent, lima WhatsApp pending karena channel belum dipilih, dan
+  stale processing nol. Enam payment exception serta shipping manual sembilan
+  tujuan tetap menahan `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi COYABAG notification recovery control
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook S384 historical all-batch SQLite rollback
 

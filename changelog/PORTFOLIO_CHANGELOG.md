@@ -1,5 +1,21 @@
 # Portfolio Changelog
 
+## 2026-08-31 - COYABAG notification recovery control deployed
+
+- Exact pushed source `b32d5bb298db2c049b7133d4b785a2a0dd97dfa6`
+  aktif pada immutable release `20260831-b32d5bb`; rollback
+  `20260831-158a6dd` tersedia dan readiness 42/42.
+- Retry/cancel notifikasi kini melalui review, reason, acknowledgement, recent
+  auth, throttle, expected state, row lock, provider readiness, dan audit.
+  Batch retry terikat fingerprint dan perubahan snapshot ditolak atomik.
+- Production mempertahankan lima WhatsApp pending karena channel belum dipilih;
+  tujuh email sent dan stale processing nol.
+- Focused 14/14, Laravel 543, storefront 220/220, browser dua viewport,
+  build/audit, backup, worker, HTTP, dan buy-to-cart lulus.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE /
+  BUSINESS_READY=false`; enam payment exception, shipping manual sembilan
+  tujuan, dan keputusan channel tetap menjadi batas bisnis.
+
 ## 2026-08-31 - SagaBook S384 historical rollback candidate
 
 - Exact pushed candidate `71b37c9e642cdc8ff6f98bcdc2c95600a285542a`
