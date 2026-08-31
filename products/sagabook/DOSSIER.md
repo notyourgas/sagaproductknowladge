@@ -7,6 +7,16 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Acceptance kumulatif S386-S387 exact
+  `2bad814a01b402f25622c8fe707ee041dd8bf412` membuktikan satu event hanya
+  berbunyi pada satu dari dua tab, refocus tidak replay, mode mute menahan
+  event, dan aktivasi kembali tidak memutar atau menggandakan event tertahan.
+  Browser 7/7, focused PHP 23/23 (151 assertion), unit 9/9, typecheck/build,
+  serta audit dependency nol lulus. Runbook UAT fisik memiliki 10 gate.
+  Tidak ada runtime/migration/deploy; status `SOURCE_PUSHED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED /
+  AUDIO_UAT_PENDING / BUSINESS_READY=false`.
+
 - Audio notifikasi admin S385 aktif pada exact merged main
   `154ab5e8e7049e1f0155b304ae9da7c03363bc69`, immutable release
   `20260831041833-154ab5e`, dengan rollback

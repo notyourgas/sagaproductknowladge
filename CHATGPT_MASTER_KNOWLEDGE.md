@@ -1,5 +1,17 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+SagaBook acceptance kumulatif S386-S387 exact
+`2bad814a01b402f25622c8fe707ee041dd8bf412` membuktikan exact-once chime
+lintas dua tab, refocus tanpa replay, mute menahan event, dan aktivasi kembali
+tidak memutar atau menggandakan event tertahan. Browser 7/7, focused PHP 23/23
+(151 assertion), unit audio/cursor 9/9, typecheck/build, audit Composer/npm nol,
+serta runbook UAT fisik 10 gate tersedia. Perubahan hanya test/dokumentasi;
+production tetap S385 exact main
+`154ab5e8e7049e1f0155b304ae9da7c03363bc69`, release
+`20260831041833-154ab5e`, rollback `20260831025235-58e1303`. Status
+`SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+PRODUCTION_UNCHANGED / AUDIO_UAT_PENDING / BUSINESS_READY=false`.
+
 SagaView production saat ini memakai backend exact
 `5f642d83a9d23091f29cc356b2041bc310338812` / immutable release
 `20260831080506-5f642d8` dan Studio Live Import exact

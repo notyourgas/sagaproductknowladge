@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-09-01 - SagaBook S386-S387 audio acceptance cumulative
+
+- Exact head `2bad814a01b402f25622c8fe707ee041dd8bf412` membuktikan exact-once
+  lintas dua tab, refocus tanpa replay, dan mute/re-enable tanpa replay atau
+  duplikasi event tertahan.
+- Browser 7/7, focused PHP 23/23 (151 assertion), unit 9/9, typecheck/build,
+  audit dependency nol, serta runbook UAT fisik 10 gate lulus/tersedia.
+- Tidak ada runtime/migration/deploy; production tetap S385 dan status
+  `IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / AUDIO_UAT_PENDING /
+  BUSINESS_READY=false`.
+
 ## 2026-08-31 - SagaView S373 backend production activation
 
 - Exact backend `5f642d83a9d23091f29cc356b2041bc310338812`

@@ -12,12 +12,34 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-09-01 00:06 WIB |
+| Waktu pembaruan terakhir | 2026-09-01 00:10 WIB |
 | Branch aktif | isolated exact `origin/main` worktree |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `417f7328624af7d8df9a9875c388d9e1a36cb86f` |
-| Informasi terakhir disinkronkan | SagaView backend exact `5f642d83a9d23091f29cc356b2041bc310338812` aktif pada release `20260831080506-5f642d8` bersama Studio exact `8257f491bc0866bd0de814d0f3cd3e9dd6336b85`. |
-| Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / CURRENT_PAIR_UAT_PENDING / BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `4fac83db4672674a97c8b4fb2d7bc484ea13b14f` |
+| Informasi terakhir disinkronkan | SagaBook acceptance cumulative S386-S387 exact `2bad814a01b402f25622c8fe707ee041dd8bf412`; production tetap S385 exact main `154ab5e8e7049e1f0155b304ae9da7c03363bc69`. |
+| Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / AUDIO_UAT_PENDING / BUSINESS_READY=false`. |
+
+## SagaBook S386-S387 audio acceptance cumulative
+
+- Browser Chromium membuktikan exact-once lintas dua tab, refocus tanpa
+  replay, mute menahan event, dan aktivasi kembali tidak memutar atau
+  menggandakan event tertahan.
+- Exact head `2bad814a01b402f25622c8fe707ee041dd8bf412` mencakup S386
+  `cc26c5da76b236402b42b8b79743da6a84d73d72`; browser 7/7, focused PHP
+  23/23 (151 assertion), unit 9/9, typecheck/build, dan audit dependency nol.
+- Runbook UAT fisik 10 gate tersedia. Tidak ada runtime, migration, release
+  lock, atau deploy; production tetap S385.
+
+## File yang berubah pada sinkronisasi SagaBook S386-S387
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaView S373 backend production activation
 
