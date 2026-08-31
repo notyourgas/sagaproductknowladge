@@ -7,14 +7,20 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Kandidat audio notifikasi admin S385 exact source
-  `cd573f9ab96583b74b65f00e1d61a509461e612a` telah push dan tervalidasi lokal.
+- Audio notifikasi admin S385 aktif pada exact merged main
+  `154ab5e8e7049e1f0155b304ae9da7c03363bc69`, immutable release
+  `20260831041833-154ab5e`, dengan rollback
+  `20260831025235-58e1303` yang tersedia dan kompatibel.
   Booking web baru dan verifikasi transfer mempunyai chime berbeda, kontrol
   suara per tenant/akun, autoplay recovery, deduplikasi polling/lintas tab,
   serta feed ringan yang tenant/cabang/capability scoped. Browser yang belum
   mendapat interaksi tidak mengklaim audio berhasil; dashboard harus tetap
-  terbuka karena fitur ini bukan native push. Production tetap S384 dan UAT
-  speaker nyata masih diperlukan.
+  terbuka karena fitur ini bukan native push. Fresh encrypted backup/checksum/
+  disposable restore, exact-commit release gate, verifier, report canary
+  32/32, service/journal, migration pending 0, dan public/security smoke 3/3
+  lulus tanpa exception. Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+  AUDIO_UAT_PENDING / BUSINESS_READY=false`; UAT speaker nyata masih
+  diperlukan.
 
 - Exact cumulative source S382
   `9d599c862cbdd4c650f53981a69da123ca4b3c7a` aktif pada immutable release

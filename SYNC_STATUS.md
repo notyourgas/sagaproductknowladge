@@ -12,12 +12,12 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-31 11:25 WIB |
+| Waktu pembaruan terakhir | 2026-08-31 11:30 WIB |
 | Branch aktif | isolated exact `origin/main` worktree |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `1981b5118bb6b037fdb1e672f0f844add0b6b30e` |
-| Informasi terakhir disinkronkan | SagaView Live Import v0.21.0 exact source `273b09df5de761b0407a94d9a71422f67ec4cbd7` sudah push dan local-validated; production tidak berubah. |
-| Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / TRIAL_CANDIDATE / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `4c15b88823d8290fa27f17bd887582393d519799` |
+| Informasi terakhir disinkronkan | SagaBook S385 exact main `154ab5e8e7049e1f0155b304ae9da7c03363bc69` aktif pada immutable release `20260831041833-154ab5e`. |
+| Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUDIO_UAT_PENDING / BUSINESS_READY=false`. |
 
 ## SagaView Live Import v0.21.0 trial candidate
 
@@ -49,11 +49,16 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
   polling/tab.
 - Feed ringan 15 detik dibatasi server, scoped tenant/cabang/capability, dan
   tidak menimpa draft CRUD aktif.
-- Exact source `cd573f9ab96583b74b65f00e1d61a509461e612a` sudah push. Full PHP
+- Feature source `cd573f9ab96583b74b65f00e1d61a509461e612a` sudah merge melalui
+  PR #91 ke exact main `154ab5e8e7049e1f0155b304ae9da7c03363bc69`. Full PHP
   1.330/1.330, focused 22/22, unit 4/4, browser 5/5, typecheck/build, dan audit
   dependency nol lulus.
-- Production tetap S384 release `20260831025235-58e1303`; UAT speaker nyata,
-  merge exact-main, serta release belum dilakukan.
+- Fresh encrypted backup/checksum/disposable restore dan exact-commit release
+  gate lulus. Immutable release `20260831041833-154ab5e` aktif dengan rollback
+  `20260831025235-58e1303`; verifier, report canary 32/32, migration pending 0,
+  service/journal, serta public/security smoke 3/3 lulus tanpa exception.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUDIO_UAT_PENDING /
+  BUSINESS_READY=false`; UAT speaker nyata masih diperlukan.
 
 ## File yang berubah pada sinkronisasi SagaBook S385
 

@@ -21,14 +21,17 @@
 
 - Ringkasan: menyinkronkan chime booking/verifikasi, browser unlock, kontrol
   per akun, deduplikasi lintas tab, serta feed ringan yang tenant-safe.
-- Provenance: exact pushed source
-  `cd573f9ab96583b74b65f00e1d61a509461e612a`; production tetap exact source
-  `58e1303ce245c14985b8f8d87baf86c243f80d02` release
-  `20260831025235-58e1303`.
+- Provenance: feature source `cd573f9ab96583b74b65f00e1d61a509461e612a`
+  merge melalui PR #91 ke exact main
+  `154ab5e8e7049e1f0155b304ae9da7c03363bc69`, immutable release
+  `20260831041833-154ab5e`, rollback `20260831025235-58e1303`.
 - Evidence: full PHP 1.330/1.330 (14.936 assertion), focused 22/22 (266
   assertion), unit 4/4, browser 5/5, typecheck/build, dan audit dependency nol.
-- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+- Evidence produksi: encrypted backup/checksum/disposable restore, verifier,
+  report canary 32/32, migration pending 0, service/journal, dan
+  public/security smoke 3/3 lulus tanpa release exception.
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / AUDIO_UAT_PENDING / BUSINESS_READY=false`.
 - Dokumen terdampak: Product, dossier, ledger/changelog SagaBook, portfolio,
   master knowledge, root changelog, dan sync status.
 
