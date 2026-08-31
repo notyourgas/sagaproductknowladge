@@ -12,12 +12,12 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-09-01 00:06 WIB |
+| Waktu pembaruan terakhir | 2026-09-01 02:05 WIB |
 | Branch aktif | isolated exact `origin/main` worktree |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | `417f7328624af7d8df9a9875c388d9e1a36cb86f` |
-| Informasi terakhir disinkronkan | SagaView backend exact `5f642d83a9d23091f29cc356b2041bc310338812` aktif pada release `20260831080506-5f642d8` bersama Studio exact `8257f491bc0866bd0de814d0f3cd3e9dd6336b85`. |
-| Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / CURRENT_PAIR_UAT_PENDING / BUSINESS_READY=false`. |
+| Informasi terakhir disinkronkan | COYABAG approval lifecycle exact `4ebee5831b57553b4b9fa19acb2120dd7b2c4abc` aktif pada release `20260901-4ebee58`. |
+| Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false`. |
 
 ## SagaView S373 backend production activation
 
@@ -31,6 +31,12 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
   public/security smoke, journal, provenance, dan shared lock lulus.
 - Authenticated/physical UAT pasangan production terbaru tetap residual;
   receipt pasangan lama tidak dikonversi. `BUSINESS_READY=false`.
+
+## COYABAG approval lifecycle review
+
+- Exact source `4ebee5831b57553b4b9fa19acb2120dd7b2c4abc` aktif pada release `20260901-4ebee58`; rollback `20260831-693152f`.
+- Queue summary, expiry/SLA, expired tab, maker-checker lock reason, pagination, dan decision review fail-closed aktif di production.
+- Readiness 42/42, worker dan HTTP hijau; provider, settings, payment, shipping, dan inventory tidak dimutasi. `BUSINESS_READY=false`.
 
 ## COYABAG settings operator navigator
 

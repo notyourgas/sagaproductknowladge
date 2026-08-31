@@ -1,5 +1,12 @@
 # COYABAG Changelog
 
+## 2026-09-01 - Approval lifecycle review deployed
+
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false` dari source `4ebee5831b57553b4b9fa19acb2120dd7b2c4abc`, release `20260901-4ebee58`, rollback `20260831-693152f`.
+- Persetujuan berubah dari aksi langsung tanpa konteks SLA menjadi antrean maker-checker dengan summary, expiry warning, tab expired, pagination, alasan tindakan terkunci, dan review confirmation fail-closed.
+- Browser desktop/mobile membuktikan tidak ada overflow atau kontrol tanpa nama. Readiness 42/42 dan empat public endpoint HTTP 200 setelah deploy.
+- Tidak ada migrasi atau mutasi commerce/provider/payment/shipping/inventory.
+
 ## Tujuan
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.

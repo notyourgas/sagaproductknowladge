@@ -1,6 +1,6 @@
 # COYABAG Product Knowledge
 
-Updated: 31 Agustus 2026
+Updated: 1 September 2026
 Evidence status: production deployed + controlled-trial commerce active
 
 ## Tujuan dokumen
@@ -50,6 +50,10 @@ Surface live tidak sama dengan transaksi commerce sudah aktif penuh.
   data.
 
 ## Fitur backend/admin
+
+- Approval maker-checker dengan ringkasan antrean, expiry/SLA, status expired,
+  pagination, alasan keputusan terkunci, serta review approve/reject yang
+  memerlukan acknowledgement dan mencatat audit note.
 
 - Admin session auth, RBAC, 2FA foundation, audit.
 - Order, product, variant, inventory ledger, reservation.

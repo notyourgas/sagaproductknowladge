@@ -1,5 +1,12 @@
 # Portfolio Changelog
 
+## 2026-09-01 - COYABAG approval lifecycle production
+
+- Source `4ebee5831b57553b4b9fa19acb2120dd7b2c4abc` aktif pada release `20260901-4ebee58`; rollback `20260831-693152f`.
+- Maker-checker kini memiliki SLA, expired state, explicit lock reason, pagination, dan review decision dengan acknowledgement/audit note.
+- Full gates, browser desktop/mobile, immutable backup/deploy, readiness 42/42, worker dan public smoke lulus; commerce/provider/stok tidak dimutasi.
+- Status `COMMERCE_ACTIVE / BUSINESS_READY=false`.
+
 ## 2026-08-31 - SagaView S373 backend production activation
 
 - Exact backend `5f642d83a9d23091f29cc356b2041bc310338812`

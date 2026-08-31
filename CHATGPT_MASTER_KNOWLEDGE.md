@@ -1,5 +1,16 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+COYABAG exact source `4ebee5831b57553b4b9fa19acb2120dd7b2c4abc`
+aktif pada immutable release `20260901-4ebee58`, rollback
+`20260831-693152f`. Approval lifecycle admin kini memiliki ringkasan antrean,
+expiry/SLA, status expired, maker-checker lock reason, pagination, serta review
+approve/reject dengan acknowledgement dan audit note. Backend 545 pass + satu
+controlled skip, storefront 220/220, browser desktop/mobile, build/audit,
+backup, readiness 42/42, workers, dan HTTP lulus. Tidak ada migrasi atau
+mutasi provider/payment/shipping/settings/inventory. Commerce tetap aktif;
+payment exception, keputusan WhatsApp, backup offsite, dan UAT bisnis menahan
+`BUSINESS_READY=false`.
+
 SagaView production saat ini memakai backend exact
 `5f642d83a9d23091f29cc356b2041bc310338812` / immutable release
 `20260831080506-5f642d8` dan Studio Live Import exact

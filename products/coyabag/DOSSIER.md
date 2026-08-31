@@ -7,12 +7,17 @@ content COYABAG tanpa menyamakan surface live dengan commerce aktif.
 
 ## Konteks dan status bukti
 
-- Updated: 31 Agustus 2026
+- Updated: 1 September 2026
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED / COMMERCE_ACTIVE`
 - Business readiness: `BLOCKED`
 
 ## Overview produk
+
+Production admin memakai approval lifecycle maker-checker yang memperlihatkan
+SLA kedaluwarsa dan menahan keputusan sampai operator lain melakukan review
+serta acknowledgement. Exact release `20260901-4ebee58`, rollback
+`20260831-693152f`.
 
 Ecommerce tas streetwear dengan storefront, API, dan admin operations.
 

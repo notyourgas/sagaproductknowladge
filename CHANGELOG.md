@@ -1,5 +1,12 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-01 - COYABAG approval lifecycle production sync
+
+- Exact source `4ebee5831b57553b4b9fa19acb2120dd7b2c4abc` aktif pada immutable release `20260901-4ebee58`; rollback `20260831-693152f`.
+- Antrean Persetujuan kini menampilkan ringkasan, expiry/SLA, maker-checker reason, status expired, pagination, serta review approve/reject dengan acknowledgement dan audit note.
+- Backend 545 pass + satu controlled skip, storefront 220/220, browser desktop/mobile, build/audit, backup, readiness 42/42, worker dan HTTP lulus. Deploy pertama otomatis rollback karena evidence guard terlalu literal; artifact yang sama kemudian berhasil dipromosikan.
+- Tidak ada migrasi, aktivasi provider, perubahan credential/settings, payment, shipping, commerce gate, atau stok. Status `COMMERCE_ACTIVE / BUSINESS_READY=false`.
+
 ## 2026-09-01 - SagaView S373 production activation sync
 
 - Ringkasan: menyinkronkan aktivasi backend S373 sambil mempertahankan Studio
