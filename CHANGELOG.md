@@ -15,23 +15,20 @@
 - Dokumen terdampak: Product, dossier/changelog COYABAG, portfolio, master
   knowledge, root changelog, dan sync status.
 
-## 2026-08-31 - SagaBook S384 historical rollback sync
+## 2026-08-31 - SagaBook S384 historical rollback production sync
 
-- Ringkasan: menyinkronkan penutupan candidate-level untuk gap rollback seluruh
-  migration SQLite dengan helper index-before-column dan retry-safe column
-  deletion.
-- Provenance: exact pushed candidate
-  `71b37c9e642cdc8ff6f98bcdc2c95600a285542a`, branch
-  `codex/s384-sagabook-sqlite-all-batch-rollback`; production tetap exact S382
-  `9d599c862cbdd4c650f53981a69da123ca4b3c7a`.
-- Evidence: migrate/rollback/reapply disposable 137 migration record/175 tabel
-  dengan integritas `ok`, focused 27/27, Feature 1.297/1.297, Unit 33/33,
-  build/lint, serta audit Composer/npm nol.
-- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
-- Dokumen terdampak: Product, ledger/changelog SagaBook, portfolio, root
-  changelog, dan sync status. Master knowledge tidak berubah karena tidak ada
-  perubahan fitur, positioning, pricing, atau runtime production.
+- Ringkasan: menyinkronkan correction migration provenance, disposable
+  rollback command, exact production release, UAT, dan rollback drill S384.
+- Provenance: exact main `58e1303ce245c14985b8f8d87baf86c243f80d02`,
+  immutable release `20260831025235-58e1303`, rollback
+  `20260831010633-9d599c8`.
+- Evidence: 137 migration rollback/reapply, full PHP 1.328/1.328, build/Pint,
+  audit dependency nol, encrypted backup/restore, verifier, smoke/security,
+  authenticated Owner/Staff UAT, dan rollback/reactivation drill aktual.
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / UAT_ACCEPTED / BUSINESS_READY=false`.
+- Dokumen terdampak: Product, ledger/changelog SagaBook, portfolio, master
+  knowledge, root changelog, dan sync status.
 
 ## 2026-08-31 - COYABAG content schedule control sync
 

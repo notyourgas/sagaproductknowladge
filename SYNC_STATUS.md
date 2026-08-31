@@ -15,9 +15,9 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-08-31 WIB |
 | Branch aktif | isolated exact `origin/main` worktree |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `0851090e31ec7735067c3012af8a76c76da79b18` |
-| Informasi terakhir disinkronkan | COYABAG Notification Recovery Control exact source `b32d5bb298db2c049b7133d4b785a2a0dd97dfa6` aktif pada release `20260831-b32d5bb`. |
-| Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `8448d692799437d4186e32b47b4005aa706770d0` |
+| Informasi terakhir disinkronkan | SagaBook S384 exact source `58e1303ce245c14985b8f8d87baf86c243f80d02` aktif pada release `20260831025235-58e1303`. |
+| Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED / BUSINESS_READY=false`. |
 
 ## COYABAG notification recovery control
 
@@ -45,16 +45,15 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 ## SagaBook S384 historical all-batch SQLite rollback
 
-- Exact candidate `71b37c9e642cdc8ff6f98bcdc2c95600a285542a` sudah
-  dipush pada branch `codex/s384-sagabook-sqlite-all-batch-rollback`.
-- Empat belas migration historis menggunakan helper yang melepas dependent
-  index sebelum target column dan menghapus column satu per satu.
-- Fresh SQLite migrate/rollback/reapply lulus 137 migration record, 175 tabel,
-  dan integritas `ok`; focused 27/27, Feature 1.297/1.297, Unit 33/33,
-  lint/build, serta audit dependency nol lulus.
-- Candidate belum merge, artifact/backup/deploy belum dimulai. Production tetap
-  S382 `9d599c862cbdd4c650f53981a69da123ca4b3c7a` pada release
-  `20260831010633-9d599c8`; `BUSINESS_READY=false`.
+- Exact main `58e1303ce245c14985b8f8d87baf86c243f80d02` aktif pada release
+  `20260831025235-58e1303`; rollback `20260831010633-9d599c8` tersedia.
+- Applied migration tetap byte-identik. Full historical rollback dipindahkan ke
+  command khusus SQLite disposable yang fail-closed.
+- Fresh SQLite migrate/rollback/reapply lulus 137 migration record dan
+  integritas `ok`; full PHP 1.328/1.328, build/Pint, audit dependency nol,
+  encrypted backup/restore, verifier, UAT Owner/Staff, dan rollback drill lulus.
+- Production aktif, shared lock sudah dilepas, dan `BUSINESS_READY=false`
+  sampai dua studio pilot serta provider canary selesai.
 
 ## File yang berubah pada sinkronisasi SagaBook S384
 
@@ -62,6 +61,7 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
 - `products/sagabook/CHANGELOG.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
 - `CHANGELOG.md`
 - `SYNC_STATUS.md`
 

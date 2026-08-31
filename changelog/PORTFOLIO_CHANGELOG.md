@@ -16,17 +16,17 @@
   BUSINESS_READY=false`; enam payment exception, shipping manual sembilan
   tujuan, dan keputusan channel tetap menjadi batas bisnis.
 
-## 2026-08-31 - SagaBook S384 historical rollback candidate
+## 2026-08-31 - SagaBook S384 historical rollback production
 
-- Exact pushed candidate `71b37c9e642cdc8ff6f98bcdc2c95600a285542a`
-  membuat rollback all-batch SQLite deterministik dengan index-before-column
-  cleanup dan penghapusan kolom satu per satu pada empat belas migration lama.
-- Disposable migrate/rollback/reapply lulus 137 migration record, 175 tabel,
-  dan integritas `ok`; focused 27/27, Feature 1.297/1.297, Unit 33/33,
-  build/lint serta audit dependency nol lulus.
-- Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
-  PRODUCTION_UNCHANGED / BUSINESS_READY=false`; production SagaBook tetap
-  S382 dan tidak ada artifact, backup, atau activation baru.
+- Exact main `58e1303ce245c14985b8f8d87baf86c243f80d02` aktif pada release
+  `20260831025235-58e1303`; rollback `20260831010633-9d599c8` tersedia.
+- Applied migration tetap byte-identik. Command approval-gated khusus SQLite
+  disposable melepas dependent index sebelum rollback historis. Matrix 137
+  migration, full PHP 1.328/1.328, build/Pint, dan audit dependency nol lulus.
+- Backup/restore, verifier, report canary, service/journal, smoke/security,
+  authenticated Owner/Staff UAT, serta actual rollback/reactivation drill
+  lulus. Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED /
+  BUSINESS_READY=false`.
 
 ## 2026-08-31 - COYABAG content schedule control deployed
 

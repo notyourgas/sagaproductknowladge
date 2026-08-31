@@ -1,26 +1,28 @@
 # SagaBook Changelog
 
-## 2026-08-31 - S384 historical SQLite all-batch rollback local-validated
+## 2026-08-31 - S384 historical SQLite rollback production-activated
 
-- Exact candidate `71b37c9e642cdc8ff6f98bcdc2c95600a285542a` sudah dipush pada
-  branch `codex/s384-sagabook-sqlite-all-batch-rollback`, berbasis production
-  source S382 `9d599c862cbdd4c650f53981a69da123ca4b3c7a`.
+- Exact main `58e1303ce245c14985b8f8d87baf86c243f80d02` aktif pada immutable
+  release `20260831025235-58e1303`; rollback `20260831010633-9d599c8`
+  tersedia, kompatibel, dan lulus actual rollback/reactivation drill.
 - Reproduksi merah membuktikan secondary index pada closing, Tokopay clearing,
   dan owner-review menahan `dropColumn` di SQLite. Inventaris disposable
   menemukan pola sama pada migration historis lain.
-- Helper rollback terpusat melepas index yang bergantung pada target column,
-  menolak primary-indexed column, lalu menghapus column satu per satu untuk
-  mencegah partial-schema retry. Empat belas migration terdampak menggunakan
-  helper; allowlist checksum dua migration release diperbarui.
-- Fresh SQLite lulus migrate, rollback seluruh batch, dan reapply dengan 137
-  migration record, 175 tabel, serta `PRAGMA integrity_check=ok`. Focused
-  hardening 27/27 (408 assertion), Feature 1.297/1.297 (14.694 assertion),
-  Unit 33/33 (218 assertion), PHP lint, build, dan audit Composer/npm nol
-  lulus.
-- Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`;
-  candidate belum merge, artifact/backup/deploy belum dimulai, dan production
-  tetap S382.
+- Candidate awal berhenti fail-closed sebelum atomic switch karena migration
+  yang sudah diterapkan berubah. Correction final mengembalikan semua migration
+  historis menjadi byte-identik dan memindahkan index cleanup ke command khusus
+  SQLite disposable yang membutuhkan path allowlist serta acknowledgement exact.
+- Fresh SQLite lulus migrate, rollback 137 migration ke nol, dan reapply dengan
+  integritas `ok`. Focused 25/25 (393 assertion), Feature 1.295/1.295 (14.679
+  assertion), Unit 33/33 (218 assertion), build/Pint, serta audit Composer/npm
+  nol lulus.
+- Fresh encrypted backup/checksum/disposable restore, immutable artifact,
+  verifier v3, report canary 32/32, service/journal, migration pending nol,
+  public/security smoke 3/3, authenticated Owner/Staff UAT read-only, dan
+  actual rollback/reactivation drill lulus. Shared lock dilepas terminal.
+- Status `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / UAT_ACCEPTED / BUSINESS_READY=false`; dua studio pilot
+  dan provider canary tetap residual.
 
 ## 2026-08-31 - S382 production release cancellation safety
 

@@ -2,12 +2,12 @@
 
 Evidence cut-off: 31 Agustus 2026 WIB
 
-Exact cumulative source S382
-`9d599c862cbdd4c650f53981a69da123ca4b3c7a` telah
+Exact cumulative source S384
+`58e1303ce245c14985b8f8d87baf86c243f80d02` telah
 `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED` pada immutable
-release `20260831010633-9d599c8`; rollback
-`20260831004436-257df79` tersedia, kompatibel, dan lulus rollback drill aktual
-sebelum S382 direaktivasi. Full exact-main 1.327/1.327 (14.883 assertion),
+release `20260831025235-58e1303`; rollback
+`20260831010633-9d599c8` tersedia, kompatibel, dan lulus rollback drill aktual
+sebelum S384 direaktivasi. Full exact-main 1.328/1.328 (14.897 assertion),
 artifact immutable, fresh encrypted backup/checksum/disposable restore,
 migration compatibility, verifier 23/23, report canary 32/32, migration pending
 0, service/journal, public/security smoke 3/3, serta authenticated Owner/Staff
@@ -30,17 +30,17 @@ SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED /
 BUSINESS_READY=false`.
 
 Historical all-batch SQLite rollback S384 telah `CONFIRMED / SOURCE_PUSHED /
-LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED` pada exact candidate
-`71b37c9e642cdc8ff6f98bcdc2c95600a285542a`, branch
-`codex/s384-sagabook-sqlite-all-batch-rollback`. Inventaris disposable
-membuktikan puluhan secondary/unique index historis masih menahan `dropColumn`.
-Helper terpusat sekarang melepas indeks yang beririsan, menolak primary index,
-dan menghapus kolom satu per satu; empat belas migration terdampak telah
-diikat ke helper. Fresh SQLite berhasil migrate, rollback seluruh batch, dan
-reapply hingga 137 migration record/175 tabel dengan integritas `ok`. Focused
-27/27 (408 assertion), Feature 1.297/1.297 (14.694 assertion), Unit 33/33 (218
-assertion), PHP lint, build, serta audit Composer/npm nol lulus. Kandidat belum
-merge/deploy dan production tetap S382.
+PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED` pada exact main
+`58e1303ce245c14985b8f8d87baf86c243f80d02`. Release attempt awal berhenti
+fail-closed sebelum switch karena mengubah applied migration. Correction final
+memulihkan semua migration historis byte-identik dan memindahkan dependent-index
+cleanup ke command yang hanya menerima SQLite disposable, path allowlist, dan
+acknowledgement exact. Fresh SQLite berhasil migrate, rollback 137 migration ke
+nol, lalu reapply dengan integritas `ok`. Focused 25/25 (393 assertion),
+Feature 1.295/1.295 (14.679 assertion), Unit 33/33 (218 assertion), build/Pint,
+serta audit Composer/npm nol lulus. Immutable release
+`20260831025235-58e1303`, fresh encrypted backup/restore, verifier, authenticated
+Owner/Staff UAT, dan actual rollback/reactivation drill lulus.
 
 Hardening rollback drill S380 telah `CONFIRMED / MERGED / SOURCE_PUSHED /
 LOCAL_VALIDATED / RELEASE_PREPARATION_BLOCKED / IMPLEMENTED_NOT_DEPLOYED`
@@ -73,11 +73,10 @@ lulus. Immutable release, backup/restore, verifier 23/23, smoke/security 3/3,
 authenticated Owner/Staff UAT, dan rollback drill aktual juga lulus.
 `BUSINESS_READY=false` sampai pilot dua studio dan provider canary selesai.
 
-Gap READY berikutnya: review/merge exact candidate S384 tanpa mengubah klaim
-production, lalu selesaikan dua studio pilot dan provider canary dengan
+Gap READY berikutnya: selesaikan dua studio pilot dan provider canary dengan
 otorisasi terpisah sebelum mengubah `BUSINESS_READY=false`. Baseline
-compatibility finding all-batch SQLite lama sudah tertutup pada candidate
-teruji, tetapi belum menjadi source main atau runtime production.
+compatibility finding all-batch SQLite sudah tertutup pada source main dan
+runtime production; shared release lock telah dilepas terminal.
 
 Pada tahap kandidat, edit pengeluaran staff S378 telah `CONFIRMED /
 SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED` pada exact source
