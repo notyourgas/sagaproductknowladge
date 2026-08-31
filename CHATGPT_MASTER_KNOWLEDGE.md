@@ -232,7 +232,7 @@ UAT_ACCEPTED / BUSINESS_READY=false`; dua studio pilot dan provider canary
 tetap residual gate.
 
 SagaView Live Import v0.21.0 exact pushed source
-`273b09df5de761b0407a94d9a71422f67ec4cbd7` berstatus `SOURCE_PUSHED /
+`41662ea064cabfd73056e66b87c3beef6c5b1d96` berstatus `SOURCE_PUSHED /
 LOCAL_VALIDATED / TRIAL_CANDIDATE / IMPLEMENTED_NOT_DEPLOYED`. Operator dapat
 memantau folder ketika Lightroom masih export; foto stabil muncul bertahap
 tanpa mereset pilihan dan exact target selesai otomatis. Early editor override
@@ -242,6 +242,10 @@ thumbnail tetap lokal; cloud hanya menerima agregat/reason/ID opaque. Vitest
 retry serial 5/5, build/budget/axe/privacy lulus. Production tetap baseline
 `47d68e7665dd03694ad45b90467ef44100245c6b`; real Lightroom UAT, preview,
 canary, dan approval aktivasi masih wajib sehingga `BUSINESS_READY=false`.
+Artifact immutable `20260831050338-41662ea` sudah mengikat activation flag
+`true` serta recovery bundle, tetapi production switch berhenti sebelum upload
+karena receipt UAT exact candidate belum ada. Runtime tetap Studio `47d68e7`
+dan backend `98f13a8`; status `DEPLOY_BLOCKED_EXACT_UAT`.
 
 SagaView S364 exact pushed source
 `2371db8e746aeaed6a76c21daa80e14bc3ff77fb` berstatus `PUSHED /

@@ -6,7 +6,7 @@
   TRIAL_CANDIDATE / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`;
   `BUSINESS_READY=false`.
 - Before: customer baru dapat memilih setelah folder export selesai diimpor.
-- After: exact source `273b09df5de761b0407a94d9a71422f67ec4cbd7`
+- After: exact source `41662ea064cabfd73056e66b87c3beef6c5b1d96`
   memantau folder Lightroom, menstabilkan file, meng-append foto tanpa reset,
   menyelesaikan exact target, memulihkan draft lokal, dan menyediakan override
   PIN yang membekukan late file.
@@ -20,6 +20,10 @@
 - Boundary: production tetap baseline
   `47d68e7665dd03694ad45b90467ef44100245c6b`. Real Lightroom UAT, protected
   preview, canary satu studio, dan approval Andreas belum dilakukan.
+- Release update: artifact immutable `20260831050338-41662ea` dan recovery
+  bundle sudah siap dengan activation flag `true`. Switch production berhenti
+  sebelum upload karena receipt UAT exact candidate belum ada; status
+  `RELEASE_ARTIFACT_READY / DEPLOY_BLOCKED_EXACT_UAT / PRODUCTION_UNCHANGED`.
 
 ## 2026-08-30 - S364 provenance response-policy enforcement
 

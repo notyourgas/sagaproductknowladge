@@ -54,12 +54,16 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
   pilihan dan exact target selesai setelah pending nol serta quiet period.
 - Early editor override memerlukan warning dan PIN, lalu late file dibekukan.
   Recovery tetap lokal; cloud hanya menerima agregat/reason/ID opaque.
-- Exact source `273b09df5de761b0407a94d9a71422f67ec4cbd7` sudah push. Vitest
+- Exact source `41662ea064cabfd73056e66b87c3beef6c5b1d96` sudah push. Vitest
   269/269, focused runtime 11/11, Playwright fitur 2/2, regression 167 pass + 3
   controlled skip dengan retry serial 5/5, lint/typecheck/format, client+SSR
   build, axe, privacy, dan bundle budget lulus.
 - Production tetap baseline `47d68e7665dd03694ad45b90467ef44100245c6b`;
   real Lightroom UAT, protected preview, canary, dan approval aktivasi belum.
+- Artifact immutable `20260831050338-41662ea` dan recovery bundle sudah siap
+  dengan activation flag `true`. Deployment berhenti sebelum upload karena
+  receipt UAT exact candidate belum ada; backend tetap `98f13a8`, service aktif,
+  dan production tidak berubah.
 
 ## File yang berubah pada sinkronisasi SagaView Live Import v0.21.0
 

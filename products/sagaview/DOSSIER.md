@@ -3,7 +3,7 @@
 ## Live Import v0.21.0 trial candidate
 
 Exact pushed Studio source
-`273b09df5de761b0407a94d9a71422f67ec4cbd7` menambah dua mode input foto:
+`41662ea064cabfd73056e66b87c3beef6c5b1d96` menambah dua mode input foto:
 import sekali untuk folder selesai dan Live Import untuk folder yang masih
 ditulis Lightroom. Runtime browser memindai rekursif tiap 1,2 detik, memerlukan
 dua observasi fingerprint identik dengan ukuran nonzero, menyiapkan thumbnail
@@ -26,8 +26,11 @@ query trial hanya berlaku pada loopback. Vitest 269/269, focused runtime 11/11,
 Playwright fitur 2/2, regression 167 pass + 3 controlled skip, retry serial
 5/5, lint/typecheck/format, client+SSR build, axe, privacy, dan budget 316,4
 KiB dari 450 KiB lulus. Status `SOURCE_PUSHED / LOCAL_VALIDATED /
-TRIAL_CANDIDATE / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`;
-Lightroom nyata, protected preview, canary, serta approval aktivasi masih gate.
+TRIAL_CANDIDATE / RELEASE_ARTIFACT_READY / IMPLEMENTED_NOT_DEPLOYED /
+PRODUCTION_UNCHANGED`. Artifact `20260831050338-41662ea` sudah mengikat build
+flag aktif serta recovery bundle, tetapi deployment berhenti sebelum upload
+karena receipt UAT exact candidate belum tersedia. Runtime production tetap
+Studio `47d68e7` dan backend `98f13a8`.
 
 ## S338-S341 editor resilience dan gallery accessibility
 
