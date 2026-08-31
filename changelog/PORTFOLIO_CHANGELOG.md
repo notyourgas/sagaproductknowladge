@@ -1,5 +1,21 @@
 # Portfolio Changelog
 
+## 2026-08-31 - SagaView Live Import v0.21.0 trial candidate
+
+- Exact pushed Studio source
+  `273b09df5de761b0407a94d9a71422f67ec4cbd7` memantau export Lightroom,
+  meng-append foto stabil tanpa mereset pilihan, dan menyelesaikan import pada
+  exact target dengan quiet period.
+- Admin dapat override lebih awal melalui warning dan PIN; source set dibekukan
+  agar late file tidak masuk editor diam-diam. Recovery tetap lokal, sedangkan
+  cloud hanya menerima count/reason/ID opaque.
+- Vitest 269/269, Playwright fitur 2/2, regression 167 pass + 3 controlled skip
+  dengan retry serial 5/5, lint/typecheck/format, client+SSR build, axe,
+  privacy, dan bundle budget lulus.
+- Status `SOURCE_PUSHED / LOCAL_VALIDATED / TRIAL_CANDIDATE /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`;
+  Lightroom nyata, preview, canary, serta approval aktivasi masih gate.
+
 ## 2026-08-31 - SagaBook S385 audio notifikasi admin candidate
 
 - Exact source `cd573f9ab96583b74b65f00e1d61a509461e612a` sudah push dan

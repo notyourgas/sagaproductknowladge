@@ -1,5 +1,34 @@
 # SagaView Dossier
 
+## Live Import v0.21.0 trial candidate
+
+Exact pushed Studio source
+`273b09df5de761b0407a94d9a71422f67ec4cbd7` menambah dua mode input foto:
+import sekali untuk folder selesai dan Live Import untuk folder yang masih
+ditulis Lightroom. Runtime browser memindai rekursif tiap 1,2 detik, memerlukan
+dua observasi fingerprint identik dengan ukuran nonzero, menyiapkan thumbnail
+per batch, lalu meng-append foto ke store tanpa mengubah pilihan customer.
+Completion memerlukan jumlah siap sama persis dengan target admin, pending nol,
+dan quiet period empat detik; target terlampaui, file hilang, atau overwrite
+masuk state perhatian.
+
+Watcher singleton bertahan pada perpindahan route admin ke customer. Admin dapat
+pause, resume, rescan, dan mengubah target. Bila customer sudah memperoleh
+pilihan paket sebelum semua export selesai, dialog menjelaskan count serta
+konsekuensi late file, lalu PIN admin diperlukan. Override melakukan final
+scan, membekukan source set, menyimpan completion reason, dan menghentikan
+watcher sampai admin memilih lanjut pantau secara eksplisit.
+
+Manifest recovery v2 dan handle folder berada di IndexedDB lokal. Foto,
+thumbnail, nama, dan path tidak dikirim; sinkronisasi cloud didebounce dan hanya
+memuat agregat serta ID opaque. Feature flag production default `false`, dan
+query trial hanya berlaku pada loopback. Vitest 269/269, focused runtime 11/11,
+Playwright fitur 2/2, regression 167 pass + 3 controlled skip, retry serial
+5/5, lint/typecheck/format, client+SSR build, axe, privacy, dan budget 316,4
+KiB dari 450 KiB lulus. Status `SOURCE_PUSHED / LOCAL_VALIDATED /
+TRIAL_CANDIDATE / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`;
+Lightroom nyata, protected preview, canary, serta approval aktivasi masih gate.
+
 ## S338-S341 editor resilience dan gallery accessibility
 
 Exact pushed Studio source `495dda492ea68f5e943a69aa5e6a1f4dbd474af2`

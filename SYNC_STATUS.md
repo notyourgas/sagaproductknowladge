@@ -12,12 +12,35 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-31 WIB |
+| Waktu pembaruan terakhir | 2026-08-31 11:25 WIB |
 | Branch aktif | isolated exact `origin/main` worktree |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `65886766c55ce10b8b5414934d8b2b1da512ee59` |
-| Informasi terakhir disinkronkan | SagaBook S385 exact source `cd573f9ab96583b74b65f00e1d61a509461e612a` sudah push dan local-validated; production tetap S384. |
-| Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `1981b5118bb6b037fdb1e672f0f844add0b6b30e` |
+| Informasi terakhir disinkronkan | SagaView Live Import v0.21.0 exact source `273b09df5de761b0407a94d9a71422f67ec4cbd7` sudah push dan local-validated; production tidak berubah. |
+| Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / TRIAL_CANDIDATE / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`. |
+
+## SagaView Live Import v0.21.0 trial candidate
+
+- Folder export Lightroom dipantau bertahap; foto stabil di-append tanpa reset
+  pilihan dan exact target selesai setelah pending nol serta quiet period.
+- Early editor override memerlukan warning dan PIN, lalu late file dibekukan.
+  Recovery tetap lokal; cloud hanya menerima agregat/reason/ID opaque.
+- Exact source `273b09df5de761b0407a94d9a71422f67ec4cbd7` sudah push. Vitest
+  269/269, focused runtime 11/11, Playwright fitur 2/2, regression 167 pass + 3
+  controlled skip dengan retry serial 5/5, lint/typecheck/format, client+SSR
+  build, axe, privacy, dan bundle budget lulus.
+- Production tetap baseline `47d68e7665dd03694ad45b90467ef44100245c6b`;
+  real Lightroom UAT, protected preview, canary, dan approval aktivasi belum.
+
+## File yang berubah pada sinkronisasi SagaView Live Import v0.21.0
+
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/DOSSIER.md`
+- `products/sagaview/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook S385 audio notifikasi admin
 

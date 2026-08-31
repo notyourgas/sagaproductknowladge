@@ -1,5 +1,26 @@
 # SagaView Changelog
 
+## 2026-08-31 - Live Import v0.21.0 trial candidate
+
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  TRIAL_CANDIDATE / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`;
+  `BUSINESS_READY=false`.
+- Before: customer baru dapat memilih setelah folder export selesai diimpor.
+- After: exact source `273b09df5de761b0407a94d9a71422f67ec4cbd7`
+  memantau folder Lightroom, menstabilkan file, meng-append foto tanpa reset,
+  menyelesaikan exact target, memulihkan draft lokal, dan menyediakan override
+  PIN yang membekukan late file.
+- Privacy/security: foto, nama, path, dan thumbnail tetap lokal; cloud hanya
+  menerima agregat/reason/ID opaque. Feature flag production default off dan
+  query trial terbatas loopback.
+- Evidence: Vitest 269/269; focused runtime 11/11; Playwright fitur 2/2;
+  regression 167 pass + 3 controlled skip, lalu tiga timeout resource lulus
+  5/5 serial; lint/typecheck/format; client+SSR build; axe; privacy; bundle
+  316,4 KiB dari 450 KiB; diff check; clean commit; remote exact.
+- Boundary: production tetap baseline
+  `47d68e7665dd03694ad45b90467ef44100245c6b`. Real Lightroom UAT, protected
+  preview, canary satu studio, dan approval Andreas belum dilakukan.
+
 ## 2026-08-30 - S364 provenance response-policy enforcement
 
 - Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /

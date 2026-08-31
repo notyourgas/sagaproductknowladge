@@ -209,6 +209,18 @@ mobile+desktop lulus. Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
 UAT_ACCEPTED / BUSINESS_READY=false`; dua studio pilot dan provider canary
 tetap residual gate.
 
+SagaView Live Import v0.21.0 exact pushed source
+`273b09df5de761b0407a94d9a71422f67ec4cbd7` berstatus `SOURCE_PUSHED /
+LOCAL_VALIDATED / TRIAL_CANDIDATE / IMPLEMENTED_NOT_DEPLOYED`. Operator dapat
+memantau folder ketika Lightroom masih export; foto stabil muncul bertahap
+tanpa mereset pilihan dan exact target selesai otomatis. Early editor override
+memerlukan warning serta PIN lalu membekukan late file. Foto, nama, path, dan
+thumbnail tetap lokal; cloud hanya menerima agregat/reason/ID opaque. Vitest
+269/269, Playwright fitur 2/2, regression 167 pass + 3 skip terkontrol dengan
+retry serial 5/5, build/budget/axe/privacy lulus. Production tetap baseline
+`47d68e7665dd03694ad45b90467ef44100245c6b`; real Lightroom UAT, preview,
+canary, dan approval aktivasi masih wajib sehingga `BUSINESS_READY=false`.
+
 SagaView S364 exact pushed source
 `2371db8e746aeaed6a76c21daa80e14bc3ff77fb` berstatus `PUSHED /
 LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Probe provenance S344 menolak

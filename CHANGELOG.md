@@ -1,5 +1,22 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-31 - SagaView Live Import v0.21.0 trial sync
+
+- Ringkasan: menyinkronkan pemantauan export Lightroom, exact-target
+  completion, append tanpa reset pilihan, recovery lokal, dan early editor
+  override yang PIN-bound serta membekukan late file.
+- Provenance: exact pushed source
+  `273b09df5de761b0407a94d9a71422f67ec4cbd7`; production tetap baseline
+  `47d68e7665dd03694ad45b90467ef44100245c6b`.
+- Evidence: Vitest 269/269, focused runtime 11/11, Playwright fitur 2/2,
+  regression 167 pass + 3 controlled skip dengan retry serial 5/5,
+  lint/typecheck/format, client+SSR build, axe, privacy, dan bundle budget.
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  TRIAL_CANDIDATE / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED /
+  BUSINESS_READY=false`.
+- Dokumen terdampak: Product, dossier/changelog SagaView, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-31 - SagaBook S385 audio notifikasi admin sync
 
 - Ringkasan: menyinkronkan chime booking/verifikasi, browser unlock, kontrol

@@ -1,6 +1,26 @@
 # SagaView Product Knowledge
 
-Updated: 30 Agustus 2026 13:16 WIB
+Updated: 31 Agustus 2026 11:25 WIB
+
+SagaView Live Import v0.21.0 exact pushed source
+`273b09df5de761b0407a94d9a71422f67ec4cbd7` berstatus `CONFIRMED /
+SOURCE_PUSHED / LOCAL_VALIDATED / TRIAL_CANDIDATE /
+IMPLEMENTED_NOT_DEPLOYED`. Operator dapat memilih mode pantau folder ketika
+Lightroom masih mengekspor, memasukkan target jumlah export, dan memulai
+pemilihan dari foto yang sudah stabil. Foto baru di-append tanpa mereset
+pilihan; exact target ditutup otomatis setelah pending nol dan quiet period.
+
+Admin dapat melanjutkan ke editor sebelum target tercapai melalui peringatan
+eksplisit dan PIN; source set kemudian dibekukan sehingga late file tidak masuk
+diam-diam. Recovery tetap di IndexedDB lokal dan cloud hanya menerima count,
+reason, serta ID opaque—bukan foto, nama, atau path. Feature flag default off.
+Vitest 269/269, Playwright fitur 2/2, regression 167 pass + 3 controlled skip
+dengan tiga timeout resource lulus 5/5 saat serial, lint/typecheck/format,
+client+SSR build, axe, privacy, dan bundle 316,4 KiB dari 450 KiB lulus.
+Production tetap exact Studio baseline
+`47d68e7665dd03694ad45b90467ef44100245c6b`; real Lightroom UAT, protected
+preview, canary satu studio, dan approval Andreas masih wajib sehingga
+`BUSINESS_READY=false`.
 
 SagaView S364 exact source
 `2371db8e746aeaed6a76c21daa80e14bc3ff77fb` sudah `PUSHED /
