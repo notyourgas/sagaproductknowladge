@@ -76,16 +76,20 @@ COMMERCE_ACTIVE`. Business readiness: `BLOCKED`.
   bagian; audit tetap `report_only` dan tidak menghapus record.
 - Launch UAT 15 langkah dan release sign-off sudah lulus. Readiness gate tetap
   enforced dan keputusan runtime adalah `COMMERCE_ACTIVE`.
-- Release aktif `20260831-d826c29` dengan exact material source
-  `d826c297ff6cd7b80c0cb0d86b3acf33dc3feb83` melayani production;
-  rollback langsung `20260831-15c2daa` tersedia dan keduanya lulus readiness
-  42/42. Media Library kini memiliki pencarian, filter tipe/status, summary,
-  pagination, metadata, status processing/storage, dan usage lineage dari
-  konten aktif serta seluruh histori versi. Penghapusan permanen dilindungi
-  permission, recent authentication, throttle, alasan, acknowledgement, audit,
-  serta pemeriksaan ulang referensi secara fail-closed. Dialog aksesibel dan
-  layout kartu lulus desktop/mobile tanpa overlap atau document overflow.
-  Release rollback `20260831-15c2daa` memuat Content Publication Control untuk
+- Release aktif `20260831-2b9614f` dengan exact material source
+  `2b9614f7d6f7d7d9f60534460805a8d795e295fd` melayani production;
+  rollback langsung `20260831-7a4bfa1` tersedia dan readiness lulus 42/42.
+  Storefront Preview kini merender signed draft dan versi publik melalui
+  komponen storefront aktual, dengan mode desktop/mobile, revision/expiry
+  state, recovery, dan semua aksi commerce dibuat read-only. Capability
+  sepuluh menit terikat revision, no-store, dan berada pada URL fragment agar
+  tidak dikirim ke server/referrer; unsigned/stale/expired fail-closed dan
+  payload internal direduksi. Acceptance desktop/mobile lulus tanpa overlap
+  atau document overflow.
+  Release rollback `20260831-7a4bfa1` memuat Media Library dengan search,
+  filter, summary, pagination, metadata, usage lineage, serta deletion guard
+  permissioned dan fail-closed. Release `20260831-15c2daa` memuat Content
+  Publication Control untuk
   publish, schedule, retract, rollback, revision guard, konversi WIB ke UTC,
   dan sinkronisasi state Inertia. Release `20260831-26c33f0` memuat Analytics
   dan Finance dengan satu

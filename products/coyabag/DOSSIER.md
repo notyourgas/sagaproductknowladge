@@ -79,6 +79,21 @@ coverage nasional atau Delivery API aktif.
 Backup database COYABAG masih local-disk dan perlu dipindahkan ke backup offsite
 sebelum business readiness final.
 
+`CONFIRMED / PRODUCTION_DEPLOYED`: release `20260831-2b9614f`, exact source
+`2b9614f7d6f7d7d9f60534460805a8d795e295fd`, dan rollback
+`20260831-7a4bfa1` menambahkan Storefront Preview Parity pada Website
+Management. Signed draft dan versi publik dirender oleh komponen storefront
+aktual, dapat dibandingkan dalam mode desktop/mobile, dan membawa state
+revision, expiry, refresh, serta recovery. Header, konten, footer, cart, search,
+quick view, dan consent dibuat inert agar preview tidak memicu commerce.
+Capability sepuluh menit terikat revision, no-store, berada pada URL fragment,
+dan fail-closed untuk unsigned/stale/expired; staged media memakai stream signed
+dan payload internal direduksi. Laravel 537 total/536 pass/satu controlled skip,
+focused preview+content 13/13, storefront 220/220, parser 4/4, browser dua
+viewport, production signature/CSP smoke, build/audit, backup, migration pending
+nol, readiness 42/42, worker, HTTP, dan public buy-to-cart lulus. Tidak ada
+migrasi, perubahan provider, atau mutasi inventory.
+
 `CONFIRMED / PRODUCTION_DEPLOYED`: release `20260831-d826c29`, exact source
 `d826c297ff6cd7b80c0cb0d86b3acf33dc3feb83`, dan rollback
 `20260831-15c2daa` menambahkan Media Library Operations pada Website Management.

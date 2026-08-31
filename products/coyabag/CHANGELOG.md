@@ -4,6 +4,24 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-31 - Storefront preview parity deployed
+
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false` dari exact
+  source `2b9614f7d6f7d7d9f60534460805a8d795e295fd`, immutable release
+  `20260831-2b9614f`, dan rollback `20260831-7a4bfa1`.
+- Signed draft dan versi publik dirender melalui komponen storefront aktual,
+  dengan mode desktop/mobile, revision/expiry state, refresh, recovery, serta
+  action boundary read-only.
+- Capability sepuluh menit terikat revision, no-store, dan berada di URL
+  fragment agar tidak dikirim ke server/referrer. Unsigned ditolak 403, stale
+  revision 409, expiry fail-closed, dan payload internal tidak terekspos.
+- Focused 13/13, Laravel 537 total/536 pass/satu controlled skip, storefront
+  220/220, parser 4/4, browser desktop/mobile tanpa overlap/overflow,
+  build/audit, backup, readiness 42/42, worker, HTTP, dan buy-to-cart lulus.
+- Commerce tetap aktif untuk controlled trial. Enam payment exception dan
+  shipping manual sembilan tujuan tetap menahan `BUSINESS_READY=false`.
+
 ## 2026-08-31 - Media library operations deployed
 
 - Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /

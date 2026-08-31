@@ -16,6 +16,22 @@
 - Dokumen terdampak: Product, dossier, ledger/changelog SagaBook, portfolio,
   master knowledge, root changelog, dan sync status.
 
+## 2026-08-31 - COYABAG storefront preview parity sync
+
+- Ringkasan: menyinkronkan actual-renderer Storefront Preview, signed draft,
+  public compare, read-only action boundary, dan capability hardening COYABAG.
+- Provenance: exact pushed source
+  `2b9614f7d6f7d7d9f60534460805a8d795e295fd`, immutable release
+  `20260831-2b9614f`, rollback `20260831-7a4bfa1`.
+- Evidence: preview/content 13/13, Laravel 537 total, storefront 220/220,
+  parser 4/4, browser desktop/mobile, production signature/stale/redaction/CSP,
+  build/audit, backup, migration pending nol, readiness 42/42, worker, HTTP,
+  dan buy-to-cart smoke.
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false`.
+- Dokumen terdampak: Product, dossier/changelog COYABAG, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-31 - SagaBook S381 staging-ready sync
 
 - Ringkasan: menyinkronkan correction wrapper Linux disposable, matrix recovery,

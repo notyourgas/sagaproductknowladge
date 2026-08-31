@@ -15,7 +15,7 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-08-31 WIB |
 | Branch aktif | isolated exact `origin/main` worktree |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `ecde1d6f53628c62b3671b3ef6957dd47bbdd371` |
+| Baseline sebelum pembaruan | `66b7f00a29206c02c772b6c9e8fe8877dd932854` |
 | Informasi terakhir disinkronkan | SagaBook S382 exact main `9d599c862cbdd4c650f53981a69da123ca4b3c7a` aktif pada release `20260831010633-9d599c8`; rollback aktual, verifier, dan UAT lulus. |
 | Status sinkronisasi | `CONFIRMED / MERGED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED / BUSINESS_READY=false`. |
 
@@ -37,6 +37,33 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `products/sagabook/DOSSIER.md`
 - `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
 - `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
+
+## COYABAG storefront preview parity
+
+- Exact source `2b9614f7d6f7d7d9f60534460805a8d795e295fd` sudah push dan aktif
+  sebagai immutable release `20260831-2b9614f`; rollback
+  `20260831-7a4bfa1` tersedia dan readiness 42/42.
+- Signed draft dirender oleh komponen storefront aktual dengan public compare,
+  desktop/mobile mode, revision/expiry state, recovery, dan aksi read-only.
+- Capability sepuluh menit terikat revision, no-store, berada pada URL fragment,
+  dan fail-closed untuk unsigned, stale, atau expired; payload internal tidak
+  terekspos.
+- Focused 13/13, Laravel 537 total, storefront 220/220, parser 4/4, browser dua
+  viewport, production signature/CSP smoke, build/audit, backup, worker, HTTP,
+  dan public buy-to-cart smoke lulus.
+- Commerce tetap aktif tanpa migrasi, perubahan provider, atau mutasi inventory.
+  Enam payment exception serta shipping manual sembilan tujuan tetap menahan
+  `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi COYABAG storefront preview
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `CHANGELOG.md`
