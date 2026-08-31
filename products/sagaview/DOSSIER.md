@@ -1,5 +1,28 @@
 # SagaView Dossier
 
+## S373 backend production activation
+
+Backend exact `5f642d83a9d23091f29cc356b2041bc310338812` aktif pada immutable
+release `20260831080506-5f642d8`, dengan rollback
+`20260828111443-98f13a8`. Studio Live Import exact
+`8257f491bc0866bd0de814d0f3cd3e9dd6336b85` tetap aktif pada release
+`20260831081456-8257f49`; release backend sengaja tidak menimpa lineage Studio
+yang berubah saat gate berlangsung.
+
+Gate exact source meliputi focused 11/11, full PHP 230/230 dan 1.990 assertion,
+build 5.097 modul, serta Composer/npm audit nol. Artifact immutable mempunyai
+SHA-256 `073e3dbb2fc873be6d7a56459a0af2380533729bacd7602619679e51e4d8aecd`.
+Fresh encrypted backup, checksum, salinan offsite, disposable restore, storage
+rehearsal, atomic switch eksklusif, actual rollback/reactivation, verifier
+pascaswitch, service/nginx, public/security smoke, journal, dan provenance
+lulus. Shared release lock dilepas setelah terminal.
+
+Otorisasi Andreas menerima risiko margin kapasitas lokal pada saat release,
+tetapi tidak melewati backup, restore, provenance, health, smoke, atau rollback.
+Authenticated/physical UAT untuk pasangan production terbaru belum dijalankan
+ulang; bukti pasangan sebelumnya tidak dikonversi. Status
+`PRODUCTION_ACTIVATED / CURRENT_PAIR_UAT_PENDING / BUSINESS_READY=false`.
+
 ## Live Import v0.21.0 production activation
 
 Exact pushed Studio source

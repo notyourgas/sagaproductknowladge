@@ -1,6 +1,22 @@
 # SagaView Feature Coverage Ledger
 
-Evidence cut-off: 30 Agustus 2026 13:16 WIB
+S373 backend production activation: exact pushed backend
+`5f642d83a9d23091f29cc356b2041bc310338812` aktif pada immutable release
+`20260831080506-5f642d8`, rollback `20260828111443-98f13a8`. Studio Live
+Import exact `8257f491bc0866bd0de814d0f3cd3e9dd6336b85` / release
+`20260831081456-8257f49` dipertahankan dan tidak diturunkan.
+
+Ledger lulus: focused 11/11; full PHP 230/230 dengan 1.990 assertion; build
+5.097 modul; Composer/npm audit nol; exact clean/upstream provenance;
+immutable artifact dan hash; fresh encrypted backup/checksum/offsite/
+disposable restore; storage rehearsal; exclusive atomic switch; actual
+rollback/reactivation; verifier pascadeploy; empat service aktif; nginx;
+public/security smoke; journal bersih; dan shared lock tersedia kembali.
+Belum lulus: authenticated dan physical UAT pada pasangan production terbaru.
+Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+CURRENT_PAIR_UAT_PENDING / BUSINESS_READY=false`.
+
+Evidence cut-off: 1 September 2026 00:06 WIB
 
 S364 provenance response-policy enforcement: exact pushed source
 `2371db8e746aeaed6a76c21daa80e14bc3ff77fb` membuat probe S344 menolak

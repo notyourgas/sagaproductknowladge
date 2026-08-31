@@ -1,6 +1,24 @@
 # SagaView Product Knowledge
 
-Updated: 31 Agustus 2026 15:29 WIB
+Updated: 1 September 2026 00:06 WIB
+
+SagaView backend S373 exact source
+`5f642d83a9d23091f29cc356b2041bc310338812` sudah aktif di production pada
+immutable release `20260831080506-5f642d8`, dengan rollback backend
+`20260828111443-98f13a8`. Studio Live Import dipertahankan pada exact source
+`8257f491bc0866bd0de814d0f3cd3e9dd6336b85` / release
+`20260831081456-8257f49`; release backend tidak menurunkan atau mengganti
+Studio yang sudah aktif.
+
+Focused 11/11, full PHP 230/230 dengan 1.990 assertion, build 5.097 modul,
+Composer dan npm audit nol advisori/vulnerability, immutable artifact, fresh
+encrypted backup dengan checksum/offsite/disposable restore, storage rehearsal,
+atomic switch, actual rollback/reactivation, service/nginx, public/security
+smoke, journal, provenance, dan verifier pascadeploy lulus. Status pasangan
+production terbaru `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED / CURRENT_PAIR_UAT_PENDING / BUSINESS_READY=false`.
+Authenticated/physical UAT tidak dikonversi dari receipt pasangan sebelumnya
+dan tetap residual.
 
 SagaView Live Import v0.21.0 exact source
 `8257f491bc0866bd0de814d0f3cd3e9dd6336b85` sudah aktif di production pada

@@ -1,5 +1,21 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-01 - SagaView S373 production activation sync
+
+- Ringkasan: menyinkronkan aktivasi backend S373 sambil mempertahankan Studio
+  Live Import yang sudah aktif dan mencegah downgrade lintas lineage.
+- Provenance: backend exact `5f642d83a9d23091f29cc356b2041bc310338812`
+  / release `20260831080506-5f642d8`; Studio exact
+  `8257f491bc0866bd0de814d0f3cd3e9dd6336b85` / release
+  `20260831081456-8257f49`; rollback backend `20260828111443-98f13a8`.
+- Evidence: full source gates, immutable artifact, encrypted backup/restore,
+  storage rehearsal, atomic switch, rollback/reactivation, verifier,
+  service/nginx, public/security smoke, journal, provenance, dan lock lulus.
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / CURRENT_PAIR_UAT_PENDING / BUSINESS_READY=false`.
+- Residual: authenticated/physical UAT pasangan production terbaru belum
+  dijalankan ulang; receipt lama tidak dikonversi.
+
 ## 2026-08-31 - SagaView Live Import v0.21.0 production sync
 
 - Ringkasan: menyinkronkan aktivasi production pemantauan export Lightroom,

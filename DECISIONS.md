@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-126 - Deploy backend SagaView diteruskan dengan risiko kapasitas diterima
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-31 |
+| Topik | Otorisasi production backend SagaView S373 |
+| Keputusan | Andreas mengizinkan release memakai kapasitas lokal yang tersedia, tanpa melewati backup, restore, provenance, health, smoke, atau rollback. Studio Live Import aktif harus dipertahankan dan tidak boleh didowngrade. |
+| Alasan | Kandidat backend telah lulus source gate; risiko margin kapasitas lokal diterima agar hardening dapat dipromosikan dengan recovery lengkap. |
+| Alternatif yang dipertimbangkan | Menunda release sampai kapasitas lokal bertambah; menurunkan Studio ke kandidat kumulatif lama; melewati backup/rollback; mengklaim UAT pasangan baru dari receipt lama. |
+| Dampak | Backend exact `5f642d83a9d23091f29cc356b2041bc310338812` aktif pada release `20260831080506-5f642d8`, Studio exact `8257f491bc0866bd0de814d0f3cd3e9dd6336b85` tetap aktif, dan current-pair UAT tetap residual. |
+| Pemberi keputusan | Andreas |
+| Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / CURRENT_PAIR_UAT_PENDING / BUSINESS_READY=false` |
+| Dokumen terkait | `products/sagaview/PRODUCT.md`, `products/sagaview/DOSSIER.md`, `products/sagaview/CHANGELOG.md`, `products/sagaview/FEATURE_COVERAGE_LEDGER.md` |
+
 ## DEC-125 - SagaView Live Import diaktifkan setelah UAT 14 gate
 
 | Field | Isi |

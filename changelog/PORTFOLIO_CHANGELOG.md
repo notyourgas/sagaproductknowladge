@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-08-31 - SagaView S373 backend production activation
+
+- Exact backend `5f642d83a9d23091f29cc356b2041bc310338812`
+  aktif pada immutable release `20260831080506-5f642d8`; rollback
+  `20260828111443-98f13a8` tersedia.
+- Studio Live Import tetap exact `8257f491bc0866bd0de814d0f3cd3e9dd6336b85`
+  / release `20260831081456-8257f49`; tidak ada downgrade Studio.
+- Full test/build/audit, immutable artifact, fresh encrypted backup/restore,
+  storage rehearsal, atomic switch, actual rollback/reactivation, verifier,
+  service/nginx, public/security smoke, journal, provenance, dan lock lulus.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+  CURRENT_PAIR_UAT_PENDING / BUSINESS_READY=false`; current-pair UAT tetap
+  residual dan tidak diambil dari receipt lama.
+
 ## 2026-08-31 - SagaView Live Import v0.21.0 production activation
 
 - Exact Studio source `8257f491bc0866bd0de814d0f3cd3e9dd6336b85`

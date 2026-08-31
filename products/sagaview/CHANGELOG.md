@@ -1,5 +1,24 @@
 # SagaView Changelog
 
+## 2026-08-31 - S373 backend production activation tanpa downgrade Studio
+
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / CURRENT_PAIR_UAT_PENDING / BUSINESS_READY=false`.
+- Before: production memakai backend `98f13a8` sementara Studio Live Import
+  sudah aktif pada exact `8257f49`; kandidat backend S373 belum dipromosikan.
+- After: exact backend `5f642d83a9d23091f29cc356b2041bc310338812`
+  aktif pada immutable release `20260831080506-5f642d8`, rollback
+  `20260828111443-98f13a8`; Studio tetap release
+  `20260831081456-8257f49` tanpa downgrade.
+- Evidence: focused 11/11; full PHP 230/230 dan 1.990 assertion; build 5.097
+  modul; Composer/npm audit nol; fresh encrypted backup/checksum/offsite/
+  disposable restore; storage rehearsal; atomic switch; actual rollback dan
+  reactivation; verifier pascadeploy; service/nginx; public/security smoke;
+  journal; provenance; hash artifact; shared lock dilepas.
+- Boundary: authenticated/physical UAT pasangan production terbaru belum
+  dijalankan ulang. Receipt pasangan lama tidak dikonversi; status tetap
+  `BUSINESS_READY=false`.
+
 ## 2026-08-31 - Live Import v0.21.0 production activation
 
 - Klasifikasi: `CONFIRMED / SOURCE_PUSHED / UAT_ACCEPTED /

@@ -1,5 +1,17 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+SagaView production saat ini memakai backend exact
+`5f642d83a9d23091f29cc356b2041bc310338812` / immutable release
+`20260831080506-5f642d8` dan Studio Live Import exact
+`8257f491bc0866bd0de814d0f3cd3e9dd6336b85` / release
+`20260831081456-8257f49`. Rollback backend `20260828111443-98f13a8`
+tersedia. Full test/build/audit, immutable artifact, fresh encrypted backup dan
+disposable restore, storage rehearsal, atomic switch, actual rollback/
+reactivation, verifier, service/nginx, public/security smoke, journal, dan
+provenance lulus. Status `PRODUCTION_ACTIVATED / CURRENT_PAIR_UAT_PENDING /
+BUSINESS_READY=false`; authenticated/physical UAT pasangan terbaru belum
+dijalankan ulang dan receipt pasangan lama tidak boleh dikonversi.
+
 SagaView Live Import v0.21.0 exact source
 `8257f491bc0866bd0de814d0f3cd3e9dd6336b85` aktif pada immutable production
 release `20260831081456-8257f49`; rollback `20260828203620-47d68e7` dan

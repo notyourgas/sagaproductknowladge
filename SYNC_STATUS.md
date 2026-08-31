@@ -12,12 +12,25 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-31 15:29 WIB |
+| Waktu pembaruan terakhir | 2026-09-01 00:06 WIB |
 | Branch aktif | isolated exact `origin/main` worktree |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `e29b2dba2e499d648b326a023b41534ad45e7b21` |
-| Informasi terakhir disinkronkan | SagaView Live Import exact Studio `8257f491bc0866bd0de814d0f3cd3e9dd6336b85` aktif pada immutable release `20260831081456-8257f49`. |
-| Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / UAT_ACCEPTED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `417f7328624af7d8df9a9875c388d9e1a36cb86f` |
+| Informasi terakhir disinkronkan | SagaView backend exact `5f642d83a9d23091f29cc356b2041bc310338812` aktif pada release `20260831080506-5f642d8` bersama Studio exact `8257f491bc0866bd0de814d0f3cd3e9dd6336b85`. |
+| Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / CURRENT_PAIR_UAT_PENDING / BUSINESS_READY=false`. |
+
+## SagaView S373 backend production activation
+
+- Backend exact `5f642d83a9d23091f29cc356b2041bc310338812`
+  aktif pada immutable release `20260831080506-5f642d8`; rollback
+  `20260828111443-98f13a8` tersedia.
+- Studio Live Import tetap exact `8257f491bc0866bd0de814d0f3cd3e9dd6336b85`
+  / release `20260831081456-8257f49`; release ini tidak menurunkan Studio.
+- Full source gates, immutable artifact, encrypted backup/restore, storage
+  rehearsal, atomic switch, rollback/reactivation, verifier, service/nginx,
+  public/security smoke, journal, provenance, dan shared lock lulus.
+- Authenticated/physical UAT pasangan production terbaru tetap residual;
+  receipt pasangan lama tidak dikonversi. `BUSINESS_READY=false`.
 
 ## COYABAG settings operator navigator
 

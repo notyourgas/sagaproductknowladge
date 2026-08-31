@@ -22,6 +22,16 @@ ketika keputusan atau release baru menutup gap.
 
 ## Prioritas tinggi
 
+SagaView current production pair `PRODUCTION_ACTIVATED /
+CURRENT_PAIR_UAT_PENDING / BUSINESS_READY=false`: backend exact
+`5f642d83a9d23091f29cc356b2041bc310338812` / release
+`20260831080506-5f642d8` aktif bersama Studio exact
+`8257f491bc0866bd0de814d0f3cd3e9dd6336b85` / release
+`20260831081456-8257f49`. Release, backup/restore, rollback/reactivation,
+verifier, service, smoke, journal, provenance, dan lock lulus. Gap tersisa:
+authenticated/physical UAT harus dijalankan pada pasangan exact terbaru;
+receipt yang terikat backend sebelumnya tidak boleh digunakan untuk menutupnya.
+
 SagaView Live Import v0.21.0 `PRODUCTION_ACTIVATED / UAT_ACCEPTED /
 BUSINESS_READY=false`: exact Studio source
 `8257f491bc0866bd0de814d0f3cd3e9dd6336b85` aktif pada release
