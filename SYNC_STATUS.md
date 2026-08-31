@@ -15,9 +15,35 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-08-31 WIB |
 | Branch aktif | isolated exact `origin/main` worktree |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `66b7f00a29206c02c772b6c9e8fe8877dd932854` |
-| Informasi terakhir disinkronkan | SagaBook S382 exact main `9d599c862cbdd4c650f53981a69da123ca4b3c7a` aktif pada release `20260831010633-9d599c8`; rollback aktual, verifier, dan UAT lulus. |
-| Status sinkronisasi | `CONFIRMED / MERGED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED / BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `80adf702938a23d26cd7f4d8b833bd534b113349` |
+| Informasi terakhir disinkronkan | COYABAG exact source `158a6dd3907507628c7561c603fe4980f664214f` aktif pada release `20260831-158a6dd`; content schedule control, rollback, dan smoke lulus. |
+| Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false`. |
+
+## COYABAG content schedule control
+
+- Exact source `158a6dd3907507628c7561c603fe4980f664214f` sudah push dan aktif
+  sebagai immutable release `20260831-158a6dd`; rollback
+  `20260831-2b9614f` tersedia dan readiness 42/42.
+- Save draft tidak dapat diam-diam menghapus schedule. Cancel/reschedule memakai
+  permission, recent auth, acknowledgement, alasan, throttle, row lock, exact
+  revision, dan audit; scheduler race fail-closed.
+- Publication queue menampilkan waktu WIB serta revision pada daftar/editor
+  desktop-mobile tanpa overlap atau document overflow.
+- Focused 7/7, Laravel 540 total, storefront 220/220, browser dua viewport,
+  build/audit, backup, worker, HTTP, content-state, dan buy-to-cart lulus.
+- Commerce tetap aktif tanpa migrasi, perubahan provider, atau mutasi inventory.
+  Enam payment exception serta shipping manual sembilan tujuan tetap menahan
+  `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi COYABAG content schedule control
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook S382 production release safety
 

@@ -4,6 +4,24 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-31 - Content schedule control deployed
+
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false` dari exact
+  source `158a6dd3907507628c7561c603fe4980f664214f`, immutable release
+  `20260831-158a6dd`, dan rollback `20260831-2b9614f`.
+- Halaman terjadwal tidak dapat diam-diam diubah menjadi draft. Operator harus
+  meninjau perubahan jadwal atau memakai pembatalan eksplisit dengan permission,
+  recent auth, acknowledgement, alasan, throttle, row lock, dan audit.
+- Scheduler memublikasikan dengan exact revision sehingga cancel/reschedule
+  race fail-closed. Publication queue menampilkan waktu WIB dan revision pada
+  daftar/editor responsif.
+- Focused 7/7, Laravel 540 total/539 pass/satu controlled skip, storefront
+  220/220, browser desktop/mobile, build/audit, backup, readiness 42/42,
+  worker, HTTP, read-only content state, dan buy-to-cart lulus.
+- Commerce tetap aktif. Enam payment exception dan shipping manual sembilan
+  tujuan tetap menahan `BUSINESS_READY=false`.
+
 ## 2026-08-31 - Storefront preview parity deployed
 
 - Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /

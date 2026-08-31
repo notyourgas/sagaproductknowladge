@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-31 - COYABAG content schedule control sync
+
+- Ringkasan: menyinkronkan publication queue yang fail-closed, explicit cancel,
+  revision-bound scheduler, responsive operator flow, release, dan rollback.
+- Provenance: exact pushed source
+  `158a6dd3907507628c7561c603fe4980f664214f`, immutable release
+  `20260831-158a6dd`, rollback `20260831-2b9614f`.
+- Evidence: focused 7/7, Laravel 540 total, storefront 220/220, browser
+  desktop/mobile tanpa overlap/overflow, build/audit, backup, migration pending
+  nol, readiness 42/42, worker, HTTP, read-only content state, dan buy-to-cart.
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false`.
+- Dokumen terdampak: Product, dossier/changelog COYABAG, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-31 - SagaBook S382 production safety sync
 
 - Ringkasan: sinkronisasi wrapper-owned shared lock, interrupt-safe cleanup,

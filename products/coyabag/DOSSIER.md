@@ -79,6 +79,20 @@ coverage nasional atau Delivery API aktif.
 Backup database COYABAG masih local-disk dan perlu dipindahkan ke backup offsite
 sebelum business readiness final.
 
+`CONFIRMED / PRODUCTION_DEPLOYED`: release `20260831-158a6dd`, exact source
+`158a6dd3907507628c7561c603fe4980f664214f`, dan rollback
+`20260831-2b9614f` menutup silent unschedule dan scheduler race pada Content
+Publication Control. Save draft ditolak saat publication queue aktif;
+reschedule atau cancel menjadi tindakan eksplisit dengan permission, recent
+authentication, acknowledgement, alasan, throttle, row lock, exact revision,
+dan audit. Scheduler meneruskan revision yang dilihatnya sehingga perubahan
+yang beradu fail-closed. Daftar/editor menunjukkan waktu WIB dan revision,
+sedangkan cancel mempertahankan draft serta versi publik. Focused 7/7,
+Laravel 540 total/539 pass/satu controlled skip, storefront 220/220, browser
+desktop/mobile, build/audit, backup, migration pending nol, readiness 42/42,
+worker, HTTP, read-only content state, dan buy-to-cart lulus. Tidak ada migrasi,
+perubahan provider, commerce gate, atau mutasi inventory.
+
 `CONFIRMED / PRODUCTION_DEPLOYED`: release `20260831-2b9614f`, exact source
 `2b9614f7d6f7d7d9f60534460805a8d795e295fd`, dan rollback
 `20260831-7a4bfa1` menambahkan Storefront Preview Parity pada Website

@@ -76,17 +76,25 @@ COMMERCE_ACTIVE`. Business readiness: `BLOCKED`.
   bagian; audit tetap `report_only` dan tidak menghapus record.
 - Launch UAT 15 langkah dan release sign-off sudah lulus. Readiness gate tetap
   enforced dan keputusan runtime adalah `COMMERCE_ACTIVE`.
-- Release aktif `20260831-2b9614f` dengan exact material source
-  `2b9614f7d6f7d7d9f60534460805a8d795e295fd` melayani production;
-  rollback langsung `20260831-7a4bfa1` tersedia dan readiness lulus 42/42.
-  Storefront Preview kini merender signed draft dan versi publik melalui
+- Release aktif `20260831-158a6dd` dengan exact material source
+  `158a6dd3907507628c7561c603fe4980f664214f` melayani production;
+  rollback langsung `20260831-2b9614f` tersedia dan readiness lulus 42/42.
+  Publication queue kini terlihat dengan waktu WIB serta revision pada daftar
+  dan editor. Save draft tidak dapat diam-diam menghapus schedule. Cancel dan
+  reschedule memakai permission, recent auth, acknowledgement, alasan,
+  throttle, row lock, exact revision, dan audit. Scheduler juga membawa exact
+  revision sehingga cancel/reschedule race fail-closed; draft serta versi
+  publik tetap utuh saat cancel. Acceptance desktop/mobile lulus tanpa overlap
+  atau document overflow.
+  Release rollback `20260831-2b9614f` memuat Storefront Preview yang merender
+  signed draft dan versi publik melalui
   komponen storefront aktual, dengan mode desktop/mobile, revision/expiry
   state, recovery, dan semua aksi commerce dibuat read-only. Capability
   sepuluh menit terikat revision, no-store, dan berada pada URL fragment agar
   tidak dikirim ke server/referrer; unsigned/stale/expired fail-closed dan
   payload internal direduksi. Acceptance desktop/mobile lulus tanpa overlap
   atau document overflow.
-  Release rollback `20260831-7a4bfa1` memuat Media Library dengan search,
+  Release `20260831-7a4bfa1` memuat Media Library dengan search,
   filter, summary, pagination, metadata, usage lineage, serta deletion guard
   permissioned dan fail-closed. Release `20260831-15c2daa` memuat Content
   Publication Control untuk

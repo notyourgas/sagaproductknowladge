@@ -1,19 +1,19 @@
 # Saga Product — Master Knowledge for ChatGPT
 
 COYABAG exact pushed source
-`2b9614f7d6f7d7d9f60534460805a8d795e295fd` aktif pada immutable release
-`20260831-2b9614f` dengan rollback `20260831-7a4bfa1`; readiness 42/42.
-Website Management Storefront Preview merender signed draft melalui komponen
-storefront aktual, membandingkannya dengan versi publik, dan menyediakan mode
-desktop/mobile, revision/expiry state, serta recovery. Semua aksi commerce
-dibuat read-only. Capability sepuluh menit terikat revision, no-store, ditolak
-bila unsigned/stale, dan disimpan pada URL fragment agar tidak dikirim ke log
-server/referrer; payload internal tetap direduksi. Focused 13/13, Laravel 537
-total/536 pass/satu controlled skip, storefront 220/220, parser 4/4, browser
-desktop/mobile, production signature/CSP smoke, build/audit, backup, worker,
-HTTP, dan buy-to-cart lulus. Commerce tetap `COMMERCE_ACTIVE`, tetapi enam
-payment exception dan shipping manual sembilan tujuan menahan
-`BUSINESS_READY=false`.
+`158a6dd3907507628c7561c603fe4980f664214f` aktif pada immutable release
+`20260831-158a6dd` dengan rollback `20260831-2b9614f`; readiness 42/42.
+Website Management sekarang melindungi publication queue dari silent
+unschedule dan scheduler race. Save draft ditolak saat jadwal aktif; operator
+dapat reschedule atau cancel melalui flow permissioned, recent-authenticated,
+acknowledged, reasoned, throttled, revision-bound, row-locked, dan audited.
+Waktu WIB serta revision terlihat pada daftar/editor desktop-mobile. Scheduler
+memakai exact revision sehingga perubahan yang beradu fail-closed, sementara
+draft dan versi publik tetap utuh saat cancel. Laravel 540 total/539 pass/satu
+controlled skip, storefront 220/220, browser dua viewport, build/audit, backup,
+worker, HTTP, content-state, dan buy-to-cart lulus. Commerce tetap
+`COMMERCE_ACTIVE`, tetapi enam payment exception dan shipping manual sembilan
+tujuan menahan `BUSINESS_READY=false`.
 
 SagaBook S379 exact cumulative source
 `f13d6f4ae519bb42eeae4dcd81d213a015d11767` aktif pada immutable release

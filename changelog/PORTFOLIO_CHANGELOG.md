@@ -1,5 +1,21 @@
 # Portfolio Changelog
 
+## 2026-08-31 - COYABAG content schedule control deployed
+
+- Exact pushed source `158a6dd3907507628c7561c603fe4980f664214f`
+  aktif pada immutable release `20260831-158a6dd`; rollback
+  `20260831-2b9614f` tersedia dan readiness 42/42.
+- Publication queue kini terlihat dengan waktu WIB dan revision. Save draft
+  tidak dapat diam-diam menghapus jadwal; cancel/reschedule memakai permission,
+  recent auth, acknowledgement, alasan, row lock, exact revision, dan audit.
+- Scheduler membawa revision yang dilihatnya sehingga cancel atau reschedule
+  race ditolak. Draft dan versi publik dipertahankan saat schedule dibatalkan.
+- Focused 7/7, Laravel 540, storefront 220/220, browser dua viewport,
+  build/audit, backup, worker, HTTP, content-state, dan buy-to-cart lulus.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE /
+  BUSINESS_READY=false`; enam payment exception dan shipping manual sembilan
+  tujuan tetap menjadi batas bisnis.
+
 ## 2026-08-31 - SagaBook S382 release safety production
 
 - Exact main `9d599c862cbdd4c650f53981a69da123ca4b3c7a` aktif pada release
