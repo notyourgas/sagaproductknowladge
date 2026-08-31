@@ -2,6 +2,18 @@
 
 Evidence cut-off: 31 Agustus 2026 WIB
 
+Audio notifikasi admin S385 exact source
+`cd573f9ab96583b74b65f00e1d61a509461e612a` telah `CONFIRMED /
+SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Coverage
+membuktikan chime berbeda untuk booking web dan verifikasi transfer, autoplay
+recovery setelah interaksi, mute per tenant/akun, deduplikasi polling/lintas
+tab, feed server-side bounded, branch/tenant/capability isolation, serta draft
+CRUD yang tidak tertimpa refresh. Full PHP 1.330/1.330 (14.936 assertion),
+focused backend 22/22 (266 assertion), unit audio 4/4, browser 5/5, typecheck,
+build, dan audit dependency nol lulus. UAT speaker Chrome/Edge dengan akun dan
+cabang nyata, merge exact-main, artifact/release, dan production activation
+belum dilakukan.
+
 Exact cumulative source S384
 `58e1303ce245c14985b8f8d87baf86c243f80d02` telah
 `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED` pada immutable

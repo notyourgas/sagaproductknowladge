@@ -1,5 +1,16 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+SagaBook S385 exact source
+`cd573f9ab96583b74b65f00e1d61a509461e612a` telah push dan local-validated.
+Admin dapat mengaktifkan chime berbeda untuk booking web baru dan bukti
+transfer yang perlu diverifikasi; preferensi dipisahkan per tenant/akun,
+autoplay menunggu interaksi browser, event dideduplikasi lintas polling/tab,
+dan feed ringan tetap tenant/cabang/capability scoped serta draft-safe. Full
+PHP 1.330/1.330, focused 22/22, unit 4/4, browser 5/5, typecheck/build, dan
+audit dependency nol lulus. Status `IMPLEMENTED_NOT_DEPLOYED`; production
+tetap S384 `20260831025235-58e1303`, UAT speaker nyata dan release belum
+dilakukan, serta `BUSINESS_READY=false`.
+
 COYABAG exact pushed source
 `2b5bc5a9c056e367f5de0c09d3ee78cd7948aea3` aktif pada immutable release
 `20260831-2b5bc5a` dengan rollback `20260831-b32d5bb`; readiness 42/42.

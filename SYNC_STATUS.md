@@ -15,9 +15,33 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-08-31 WIB |
 | Branch aktif | isolated exact `origin/main` worktree |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `d0e456148554c86602ab598517ab6d0ef804bae0` |
-| Informasi terakhir disinkronkan | COYABAG exact source `2b5bc5a9c056e367f5de0c09d3ee78cd7948aea3` aktif pada release `20260831-2b5bc5a`. |
-| Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `65886766c55ce10b8b5414934d8b2b1da512ee59` |
+| Informasi terakhir disinkronkan | SagaBook S385 exact source `cd573f9ab96583b74b65f00e1d61a509461e612a` sudah push dan local-validated; production tetap S384. |
+| Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`. |
+
+## SagaBook S385 audio notifikasi admin
+
+- Chime booking web dan verifikasi transfer dibedakan, menunggu browser
+  unlock, mempunyai kontrol per tenant/akun, dan dideduplikasi lintas
+  polling/tab.
+- Feed ringan 15 detik dibatasi server, scoped tenant/cabang/capability, dan
+  tidak menimpa draft CRUD aktif.
+- Exact source `cd573f9ab96583b74b65f00e1d61a509461e612a` sudah push. Full PHP
+  1.330/1.330, focused 22/22, unit 4/4, browser 5/5, typecheck/build, dan audit
+  dependency nol lulus.
+- Production tetap S384 release `20260831025235-58e1303`; UAT speaker nyata,
+  merge exact-main, serta release belum dilakukan.
+
+## File yang berubah pada sinkronisasi SagaBook S385
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG integration provider control
 

@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-31 - SagaBook S385 audio notifikasi admin sync
+
+- Ringkasan: menyinkronkan chime booking/verifikasi, browser unlock, kontrol
+  per akun, deduplikasi lintas tab, serta feed ringan yang tenant-safe.
+- Provenance: exact pushed source
+  `cd573f9ab96583b74b65f00e1d61a509461e612a`; production tetap exact source
+  `58e1303ce245c14985b8f8d87baf86c243f80d02` release
+  `20260831025235-58e1303`.
+- Evidence: full PHP 1.330/1.330 (14.936 assertion), focused 22/22 (266
+  assertion), unit 4/4, browser 5/5, typecheck/build, dan audit dependency nol.
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+- Dokumen terdampak: Product, dossier, ledger/changelog SagaBook, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-08-31 - COYABAG integration provider control sync
 
 - Ringkasan: menyinkronkan provider console untuk email, pengiriman, WhatsApp,

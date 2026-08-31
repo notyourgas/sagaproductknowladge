@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-31 - SagaBook S385 audio notifikasi admin candidate
+
+- Exact source `cd573f9ab96583b74b65f00e1d61a509461e612a` sudah push dan
+  tervalidasi lokal; production tetap S384 `20260831025235-58e1303`.
+- Admin mendapat chime berbeda untuk booking web dan verifikasi transfer,
+  kontrol per tenant/akun, autoplay recovery, deduplikasi polling/lintas tab,
+  serta feed ringan yang tidak menimpa draft.
+- Full PHP 1.330/1.330, focused 22/22, unit 4/4, browser 5/5,
+  typecheck/build, dan audit dependency nol lulus. Status
+  `IMPLEMENTED_NOT_DEPLOYED`; UAT speaker nyata, merge, dan release masih gate.
+
 ## 2026-08-31 - COYABAG integration provider control deployed
 
 - Exact pushed source `2b5bc5a9c056e367f5de0c09d3ee78cd7948aea3`

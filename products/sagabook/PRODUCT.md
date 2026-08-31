@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
 Updated: 31 Agustus 2026 WIB
-Evidence status: S384 aktif pada exact cumulative source `58e1303ce245c14985b8f8d87baf86c243f80d02`, immutable release `20260831025235-58e1303`, dengan rollback `20260831010633-9d599c8`. Historical migration tetap byte-identik; full rollback SQLite dipindahkan ke command khusus database disposable yang fail-closed. Exact-main gate, backup/restore, verifier, authenticated Owner/Staff UAT read-only, dan actual rollback/reactivation drill lulus. Status `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED / BUSINESS_READY=false`.
+Evidence status: S384 tetap aktif pada exact cumulative source `58e1303ce245c14985b8f8d87baf86c243f80d02`, immutable release `20260831025235-58e1303`, dengan rollback `20260831010633-9d599c8`. Kandidat audio notifikasi admin S385 exact source `cd573f9ab96583b74b65f00e1d61a509461e612a` telah `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production dan `BUSINESS_READY=false` tidak berubah.
 
 ## Tujuan dokumen
 
@@ -15,6 +15,17 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
+
+- Kandidat S385 menambahkan chime admin berbeda untuk booking web baru dan
+  bukti transfer yang perlu diverifikasi. Audio hanya berbunyi setelah
+  interaksi browser, mempunyai kontrol aktif/mati per tenant dan akun, serta
+  mengklaim event lintas tab agar polling yang sama tidak berbunyi ulang.
+  Feed ringan 15 detik dibatasi di server, tetap tenant/cabang/capability
+  scoped, dan tidak menimpa draft CRUD aktif. Full PHP 1.330/1.330 (14.936
+  assertion), focused 22/22 (266 assertion), unit audio 4/4, browser 5/5,
+  typecheck/build, serta audit Composer/npm nol lulus. Status `CONFIRMED /
+  SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; UAT speaker
+  nyata, merge exact-main, dan release tetap gate berikutnya.
 
 - Hardening migration S384 aktif pada exact main
   `58e1303ce245c14985b8f8d87baf86c243f80d02` melalui immutable release

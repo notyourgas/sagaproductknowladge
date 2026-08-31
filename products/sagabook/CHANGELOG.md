@@ -1,5 +1,23 @@
 # SagaBook Changelog
 
+## 2026-08-31 - S385 audio notifikasi admin candidate
+
+- Sebelum: admin hanya melihat booking baru atau antrean verifikasi melalui
+  feed visual sehingga event mudah terlambat disadari saat fokus ke pekerjaan
+  lain di dashboard.
+- Setelah: booking web baru dan bukti transfer yang perlu diverifikasi memakai
+  chime berbeda, kontrol suara per tenant/akun, autoplay recovery setelah
+  interaksi, serta deduplikasi polling dan lintas tab.
+- Feed ringan `/api/admin/getNotifications` berjalan 15 detik, dibatasi di
+  server, tetap tenant/cabang/capability scoped, dan tidak menimpa draft CRUD.
+- Exact source `cd573f9ab96583b74b65f00e1d61a509461e612a` pada branch
+  `codex/s385-sagabook-audio-notifications` sudah push. Full PHP 1.330/1.330
+  (14.936 assertion), focused 22/22 (266 assertion), unit 4/4, browser 5/5,
+  typecheck/build, dan audit dependency nol lulus.
+- Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production tetap S384 release
+  `20260831025235-58e1303`. UAT speaker nyata, merge, dan release masih gate.
+
 ## 2026-08-31 - S384 historical SQLite rollback production-activated
 
 - Exact main `58e1303ce245c14985b8f8d87baf86c243f80d02` aktif pada immutable
