@@ -1,13 +1,14 @@
 # Saga Product Knowledge Changelog
 
-## 2026-09-01 - SagaBook S386-S387 audio acceptance sync
+## 2026-09-01 - SagaBook S386-S388 audio acceptance sync
 
 - Ringkasan: menyinkronkan acceptance exact-once dua tab, refocus, mute, dan
-  re-enable serta runbook UAT speaker fisik 10 gate.
-- Provenance: exact head `2bad814a01b402f25622c8fe707ee041dd8bf412`,
-  parent S386 `cc26c5da76b236402b42b8b79743da6a84d73d72`, berbasis production
+  re-enable, perbedaan urutan nada booking/verifikasi pembayaran, serta
+  runbook UAT speaker fisik 10 gate.
+- Provenance: exact head `cfd3e7696a2b542c816a9485a3142758394d05c0`,
+  parent S387 `2bad814a01b402f25622c8fe707ee041dd8bf412`, berbasis production
   `154ab5e8e7049e1f0155b304ae9da7c03363bc69`.
-- Evidence: browser 7/7, focused PHP 23/23 (151 assertion), unit 9/9,
+- Evidence: browser 8/8, focused PHP 23/23 (151 assertion), unit 9/9,
   typecheck/build, serta audit Composer/npm nol.
 - Klasifikasi: `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
   IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / AUDIO_UAT_PENDING /

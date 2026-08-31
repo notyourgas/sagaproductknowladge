@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
 Updated: 1 September 2026 WIB
-Evidence status: Audio notifikasi admin S385 aktif pada exact merged main `154ab5e8e7049e1f0155b304ae9da7c03363bc69`, immutable release `20260831041833-154ab5e`, dengan rollback `20260831025235-58e1303`. Acceptance kumulatif S386-S387 exact `2bad814a01b402f25622c8fe707ee041dd8bf412` sudah `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`. Status keseluruhan `AUDIO_UAT_PENDING / BUSINESS_READY=false`.
+Evidence status: Audio notifikasi admin S385 aktif pada exact merged main `154ab5e8e7049e1f0155b304ae9da7c03363bc69`, immutable release `20260831041833-154ab5e`, dengan rollback `20260831025235-58e1303`. Acceptance kumulatif S386-S388 exact `cfd3e7696a2b542c816a9485a3142758394d05c0` sudah `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`. Status keseluruhan `AUDIO_UAT_PENDING / BUSINESS_READY=false`.
 
 ## Tujuan dokumen
 
@@ -16,13 +16,15 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
 
-- Acceptance kumulatif S386-S387 menambah browser Chromium dua tab untuk
+- Acceptance kumulatif S386-S388 menambah browser Chromium dua tab untuk
   exact-once chime, refocus tanpa replay, serta mute dan aktivasi kembali
-  tanpa replay/duplikasi. Runbook UAT speaker fisik menetapkan 10 gate.
-  Matrix browser 7/7, focused PHP 23/23 (151 assertion), unit audio/cursor
+  tanpa replay/duplikasi. Browser juga memverifikasi urutan nada booking
+  `659.25/830.61/987.77 Hz` berbeda dari verifikasi pembayaran
+  `783.99/1046.5/783.99 Hz`. Runbook UAT speaker fisik menetapkan 10 gate.
+  Matrix browser 8/8, focused PHP 23/23 (151 assertion), unit audio/cursor
   9/9, typecheck/build, serta audit Composer/npm nol lulus pada exact head
-  `2bad814a01b402f25622c8fe707ee041dd8bf412` dengan parent acceptance
-  `cc26c5da76b236402b42b8b79743da6a84d73d72`. Perubahan hanya test/runbook,
+  `cfd3e7696a2b542c816a9485a3142758394d05c0` dengan parent S387
+  `2bad814a01b402f25622c8fe707ee041dd8bf412`. Perubahan hanya test/runbook,
   tanpa runtime, migration, atau deploy. Status `CONFIRMED / SOURCE_PUSHED /
   LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED /
   AUDIO_UAT_PENDING / BUSINESS_READY=false`.
