@@ -1,5 +1,24 @@
 # SagaView Changelog
 
+## 2026-08-31 - Live Import v0.21.0 production activation
+
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / UAT_ACCEPTED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+- Exact Studio source `8257f491bc0866bd0de814d0f3cd3e9dd6336b85`
+  aktif pada immutable release `20260831081456-8257f49`; rollback
+  `20260828203620-47d68e7` tersedia dan backend tetap exact `98f13a8`.
+- Live Import aktif tanpa query trial: operator dapat memantau export Lightroom,
+  memasukkan target, memilih foto stabil sambil export berjalan, dan memakai
+  warning+PIN untuk override ke editor sebelum target selesai.
+- Evidence: Vitest 269/269; full Playwright release 170 pass + 3 controlled
+  skip; UAT 14 gate tanpa blocker; 10/10 export/cleanup; build/budget;
+  audit nol; privacy; exact provenance; public smoke 3/3; service/nginx;
+  rollback pointer; dan journal error kosong.
+- Dua gate printer memakai acceptance operator S247; 12 gate non-print lulus
+  dengan evidence. Foto, thumbnail, nama, dan path tetap lokal.
+- Residual: monitoring sesi Lightroom nyata dan beban perangkat studio;
+  activation bukan klaim `BUSINESS_READY`.
+
 ## 2026-08-31 - Live Import v0.21.0 trial candidate
 
 - Klasifikasi: `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /

@@ -1,5 +1,22 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-31 - SagaView Live Import v0.21.0 production sync
+
+- Ringkasan: menyinkronkan aktivasi production pemantauan export Lightroom,
+  exact-target completion, append tanpa reset, recovery lokal, dan early editor
+  override yang warning+PIN-bound.
+- Provenance: exact pushed Studio source
+  `8257f491bc0866bd0de814d0f3cd3e9dd6336b85`, immutable release
+  `20260831081456-8257f49`, rollback `20260828203620-47d68e7`, backend
+  `98f13a8d50f4ae0b97d787f1ab5e0896296007ec`.
+- Evidence: full Playwright release 170 pass + 3 controlled skip, UAT 14 gate,
+  10/10 export/cleanup, build/audit/privacy, provenance, public smoke, service,
+  rollback, dan journal lulus.
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / UAT_ACCEPTED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+- Dokumen terdampak: Product, dossier/changelog SagaView, portfolio, master
+  knowledge, decision/gaps, root changelog, dan sync status.
+
 ## 2026-08-31 - COYABAG settings operator navigator sync
 
 - Ringkasan: menyinkronkan ringkasan faktual, pencarian, empat kategori tugas,

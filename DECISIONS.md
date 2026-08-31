@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-125 - SagaView Live Import diaktifkan setelah UAT 14 gate
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-08-31 |
+| Topik | Aktivasi production Live Import SagaView v0.21.0 |
+| Keputusan | Andreas menyetujui deployment setelah menerima hasil UAT 14 gate. Production mengaktifkan mode pantau folder Lightroom dan mempertahankan Import sekali sebagai pilihan. |
+| Alasan | Pemilihan foto perlu berjalan paralel dengan export Lightroom untuk mengurangi waktu tunggu operator dan customer. |
+| Alternatif yang dipertimbangkan | Menahan fitur hanya pada query trial; deploy dengan flag mati; menghapus mode Import sekali; melanjutkan tanpa exact UAT receipt. |
+| Dampak | Live Import aktif pada exact Studio source `8257f491bc0866bd0de814d0f3cd3e9dd6336b85` / release `20260831081456-8257f49`; rollback `20260828203620-47d68e7` tersedia. Foto/path/nama tetap lokal, override editor tetap warning+PIN-bound, dan monitoring studio tetap residual. |
+| Pemberi keputusan | Andreas |
+| Status | `CONFIRMED / SOURCE_PUSHED / UAT_ACCEPTED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false` |
+| Dokumen terkait | `products/sagaview/PRODUCT.md`, `products/sagaview/DOSSIER.md`, `products/sagaview/CHANGELOG.md` |
+
 ## DEC-124 - Staff dapat mengedit pengeluaran sendiri sebelum closing
 
 | Field | Isi |

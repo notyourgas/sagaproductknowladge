@@ -22,6 +22,14 @@ ketika keputusan atau release baru menutup gap.
 
 ## Prioritas tinggi
 
+SagaView Live Import v0.21.0 `PRODUCTION_ACTIVATED / UAT_ACCEPTED /
+BUSINESS_READY=false`: exact Studio source
+`8257f491bc0866bd0de814d0f3cd3e9dd6336b85` aktif pada release
+`20260831081456-8257f49` setelah UAT 14 gate tanpa blocker. Residual bukan
+blocker activation: pantau sesi Lightroom nyata, beban perangkat studio,
+stalled/attention rate, recovery success, dan support incident sebelum klaim
+business readiness atau rollout massal.
+
 SagaBook S319-S322 `PRODUCTION_ACTIVATED / BUSINESS_READY=false`: preview
 backfill production memindai 47 add-on legacy, tetapi mapped 0 dan unmapped 47;
 plannedChanges 0, changed 0, `applied=false`. Nilai consumable untuk add-on lama

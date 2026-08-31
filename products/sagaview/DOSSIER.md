@@ -1,9 +1,9 @@
 # SagaView Dossier
 
-## Live Import v0.21.0 trial candidate
+## Live Import v0.21.0 production activation
 
 Exact pushed Studio source
-`41662ea064cabfd73056e66b87c3beef6c5b1d96` menambah dua mode input foto:
+`8257f491bc0866bd0de814d0f3cd3e9dd6336b85` mengaktifkan dua mode input foto:
 import sekali untuk folder selesai dan Live Import untuk folder yang masih
 ditulis Lightroom. Runtime browser memindai rekursif tiap 1,2 detik, memerlukan
 dua observasi fingerprint identik dengan ukuran nonzero, menyiapkan thumbnail
@@ -21,16 +21,20 @@ watcher sampai admin memilih lanjut pantau secara eksplisit.
 
 Manifest recovery v2 dan handle folder berada di IndexedDB lokal. Foto,
 thumbnail, nama, dan path tidak dikirim; sinkronisasi cloud didebounce dan hanya
-memuat agregat serta ID opaque. Feature flag production default `false`, dan
-query trial hanya berlaku pada loopback. Vitest 269/269, focused runtime 11/11,
-Playwright fitur 2/2, regression 167 pass + 3 controlled skip, retry serial
-5/5, lint/typecheck/format, client+SSR build, axe, privacy, dan budget 316,4
-KiB dari 450 KiB lulus. Status `SOURCE_PUSHED / LOCAL_VALIDATED /
-TRIAL_CANDIDATE / RELEASE_ARTIFACT_READY / IMPLEMENTED_NOT_DEPLOYED /
-PRODUCTION_UNCHANGED`. Artifact `20260831050338-41662ea` sudah mengikat build
-flag aktif serta recovery bundle, tetapi deployment berhenti sebelum upload
-karena receipt UAT exact candidate belum tersedia. Runtime production tetap
-Studio `47d68e7` dan backend `98f13a8`.
+memuat agregat serta ID opaque. Query trial hanya berlaku pada loopback,
+sedangkan immutable build production aktif dengan flag Live Import `true`.
+
+Vitest 269/269, full Playwright release 170 pass + 3 controlled skip, UAT 14
+gate tanpa blocker, 10/10 siklus export/cleanup, lint/typecheck/format,
+client+SSR build, axe, privacy, audit nol vulnerability, dan budget 316,4 KiB
+dari 450 KiB lulus. Dua gate printer memakai acceptance operator S247; 12 gate
+non-print mempunyai evidence dan lulus. Release `20260831081456-8257f49`
+aktif dengan rollback `20260828203620-47d68e7`; backend tetap exact
+`98f13a8d50f4ae0b97d787f1ab5e0896296007ec`. Public smoke, runtime
+provenance, service, nginx, rollback pointer, UI tanpa query trial, dan journal
+error lulus. Status `SOURCE_PUSHED / UAT_ACCEPTED / PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED / BUSINESS_READY=false`; monitoring sesi Lightroom nyata
+dan beban perangkat studio tetap residual.
 
 ## S338-S341 editor resilience dan gallery accessibility
 

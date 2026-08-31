@@ -12,12 +12,12 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-31 11:30 WIB |
+| Waktu pembaruan terakhir | 2026-08-31 15:29 WIB |
 | Branch aktif | isolated exact `origin/main` worktree |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `4c15b88823d8290fa27f17bd887582393d519799` |
-| Informasi terakhir disinkronkan | SagaBook S385 exact main `154ab5e8e7049e1f0155b304ae9da7c03363bc69` aktif pada immutable release `20260831041833-154ab5e`. |
-| Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUDIO_UAT_PENDING / BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `e29b2dba2e499d648b326a023b41534ad45e7b21` |
+| Informasi terakhir disinkronkan | SagaView Live Import exact Studio `8257f491bc0866bd0de814d0f3cd3e9dd6336b85` aktif pada immutable release `20260831081456-8257f49`. |
+| Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / UAT_ACCEPTED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`. |
 
 ## COYABAG settings operator navigator
 
@@ -60,22 +60,21 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `CHANGELOG.md`
 - `SYNC_STATUS.md`
 
-## SagaView Live Import v0.21.0 trial candidate
+## SagaView Live Import v0.21.0 production activation
 
 - Folder export Lightroom dipantau bertahap; foto stabil di-append tanpa reset
   pilihan dan exact target selesai setelah pending nol serta quiet period.
 - Early editor override memerlukan warning dan PIN, lalu late file dibekukan.
   Recovery tetap lokal; cloud hanya menerima agregat/reason/ID opaque.
-- Exact source `41662ea064cabfd73056e66b87c3beef6c5b1d96` sudah push. Vitest
-  269/269, focused runtime 11/11, Playwright fitur 2/2, regression 167 pass + 3
-  controlled skip dengan retry serial 5/5, lint/typecheck/format, client+SSR
-  build, axe, privacy, dan bundle budget lulus.
-- Production tetap baseline `47d68e7665dd03694ad45b90467ef44100245c6b`;
-  real Lightroom UAT, protected preview, canary, dan approval aktivasi belum.
-- Artifact immutable `20260831050338-41662ea` dan recovery bundle sudah siap
-  dengan activation flag `true`. Deployment berhenti sebelum upload karena
-  receipt UAT exact candidate belum ada; backend tetap `98f13a8`, service aktif,
-  dan production tidak berubah.
+- Exact source `8257f491bc0866bd0de814d0f3cd3e9dd6336b85` sudah push dan aktif
+  pada immutable release `20260831081456-8257f49`; rollback
+  `20260828203620-47d68e7`, backend exact `98f13a8`.
+- Vitest 269/269, full Playwright release 170 pass + 3 controlled skip, UAT 14
+  gate tanpa blocker, 10/10 export/cleanup, lint/typecheck/format, client+SSR
+  build, axe, privacy, audit nol, dan bundle budget lulus.
+- Runtime provenance, UI tanpa query trial, public smoke 3/3, service/nginx,
+  rollback pointer, dan journal error terverifikasi. Monitoring studio nyata
+  masih residual sehingga `BUSINESS_READY=false`.
 
 ## File yang berubah pada sinkronisasi SagaView Live Import v0.21.0
 
@@ -84,6 +83,8 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `products/sagaview/CHANGELOG.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
+- `DECISIONS.md`
+- `GAPS.md`
 - `CHANGELOG.md`
 - `SYNC_STATUS.md`
 

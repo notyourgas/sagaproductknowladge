@@ -1,11 +1,13 @@
 # SagaView Product Knowledge
 
-Updated: 31 Agustus 2026 11:25 WIB
+Updated: 31 Agustus 2026 15:29 WIB
 
-SagaView Live Import v0.21.0 exact pushed source
-`41662ea064cabfd73056e66b87c3beef6c5b1d96` berstatus `CONFIRMED /
-SOURCE_PUSHED / LOCAL_VALIDATED / TRIAL_CANDIDATE /
-RELEASE_ARTIFACT_READY / IMPLEMENTED_NOT_DEPLOYED`. Operator dapat memilih mode pantau folder ketika
+SagaView Live Import v0.21.0 exact source
+`8257f491bc0866bd0de814d0f3cd3e9dd6336b85` sudah aktif di production pada
+immutable release `20260831081456-8257f49`, dengan rollback
+`20260828203620-47d68e7`. Statusnya `CONFIRMED / SOURCE_PUSHED /
+UAT_ACCEPTED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+BUSINESS_READY=false`. Operator dapat memilih mode pantau folder ketika
 Lightroom masih mengekspor, memasukkan target jumlah export, dan memulai
 pemilihan dari foto yang sudah stabil. Foto baru di-append tanpa mereset
 pilihan; exact target ditutup otomatis setelah pending nol dan quiet period.
@@ -13,20 +15,17 @@ pilihan; exact target ditutup otomatis setelah pending nol dan quiet period.
 Admin dapat melanjutkan ke editor sebelum target tercapai melalui peringatan
 eksplisit dan PIN; source set kemudian dibekukan sehingga late file tidak masuk
 diam-diam. Recovery tetap di IndexedDB lokal dan cloud hanya menerima count,
-reason, serta ID opaque—bukan foto, nama, atau path. Feature flag default off.
-Vitest 269/269, Playwright fitur 2/2, regression 167 pass + 3 controlled skip
-dengan tiga timeout resource lulus 5/5 saat serial, lint/typecheck/format,
-client+SSR build, axe, privacy, dan bundle 316,4 KiB dari 450 KiB lulus.
-Production tetap exact Studio baseline
-`47d68e7665dd03694ad45b90467ef44100245c6b`; real Lightroom UAT, protected
-preview, canary satu studio, dan approval Andreas masih wajib sehingga
-`BUSINESS_READY=false`.
+reason, serta ID opaque—bukan foto, nama, atau path. Build production aktif
+dengan Live Import flag `true`; query trial tetap terbatas loopback.
 
-Release artifact `20260831050338-41662ea` mengikat activation flag `true`,
-source tree, archive SHA-256, dan recovery bundle. Production switch dihentikan
-fail-closed sebelum upload karena receipt UAT fisik exact candidate belum ada.
-Runtime production tetap Studio `47d68e7`, backend `98f13a8`, service aktif;
-status deployment `DEPLOY_BLOCKED_EXACT_UAT / PRODUCTION_UNCHANGED`.
+Vitest 269/269, full Playwright release 170 pass + 3 controlled skip, UAT 14
+gate tanpa blocker, 10/10 siklus export/cleanup, lint/typecheck/format,
+client+SSR build, axe, privacy, audit nol vulnerability, dan bundle 316,4 KiB
+dari 450 KiB lulus. Dua gate printer menggunakan acceptance operator S247;
+12 gate non-print tetap lulus dengan evidence. Runtime live, tiga public smoke,
+service, nginx, backend exact `98f13a8`, rollback pointer, dan error journal
+terverifikasi. Monitoring sesi Lightroom nyata dan beban perangkat studio
+tetap residual sebelum `BUSINESS_READY`.
 
 SagaView S364 exact source
 `2371db8e746aeaed6a76c21daa80e14bc3ff77fb` sudah `PUSHED /

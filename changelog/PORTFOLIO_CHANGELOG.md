@@ -1,5 +1,20 @@
 # Portfolio Changelog
 
+## 2026-08-31 - SagaView Live Import v0.21.0 production activation
+
+- Exact Studio source `8257f491bc0866bd0de814d0f3cd3e9dd6336b85`
+  aktif pada immutable release `20260831081456-8257f49`; rollback
+  `20260828203620-47d68e7`, backend exact `98f13a8`.
+- Operator kini dapat memilih foto sambil Lightroom masih mengekspor; exact
+  target menyelesaikan import otomatis dan override warning+PIN membekukan
+  late file sebelum editor.
+- Full Playwright release 170 pass + 3 controlled skip, UAT 14 gate tanpa
+  blocker, 10/10 export/cleanup, build/audit/privacy, public smoke, provenance,
+  service, rollback, dan journal lulus.
+- Status `SOURCE_PUSHED / UAT_ACCEPTED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / BUSINESS_READY=false`; monitoring studio tetap
+  residual dan tidak ada upload foto/path/nama file.
+
 ## 2026-08-31 - COYABAG settings operator navigator deployed
 
 - Exact source `693152f68d582bbdcb3fea564897056b094a1e7f` aktif pada release
