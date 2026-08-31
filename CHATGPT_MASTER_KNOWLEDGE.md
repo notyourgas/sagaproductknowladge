@@ -2864,13 +2864,15 @@ pembayaran, menerima status/reminder, dan mengelola request dari secure booking
 link. Operator mengelola calendar, task, check-in, session, payment,
 reconciliation, report, staff, tenant, dan subscription.
 
-Exact source `7fb80375915771457e343016e4851bbfc876199d` aktif sebagai
-release `20260818091438-7fb8037` dengan rollback
-`20260818054003-7e617b7`. Source remote `main`, manifest, migrasi, public smoke,
-service, queue journal, security header, rollback, dan verifier 17/17 terverifikasi.
-HTTP dan security profile masing-masing lulus 3/3. Status
-`PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated UAT nyata, dua
-studio pilot, dan provider canary tetap menahan `BUSINESS_READY`.
+Exact source `9d599c862cbdd4c650f53981a69da123ca4b3c7a` aktif sebagai
+immutable release `20260831010633-9d599c8` dengan rollback
+`20260831004436-257df79`. Source remote `main`, manifest, migrasi pending 0,
+public/security smoke 3/3, service, queue journal, rollback compatibility,
+verifier 23/23, serta authenticated Owner/Staff UAT read-only terverifikasi.
+Actual rollback drill mengaktifkan rollback lalu accepted release kembali
+dengan health hijau dan schema unchanged. Status `PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED / UAT_ACCEPTED`; dua studio pilot dan provider canary tetap
+menahan `BUSINESS_READY=false`.
 
 Candidate UI S254 exact `02c4fff8a404fb9d9fcd57d657709ef442566f90`
 memperbarui dashboard admin menjadi shell dua tingkat SleekFlow-inspired dan

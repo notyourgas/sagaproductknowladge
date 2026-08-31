@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-08-31 - SagaBook S382 release safety production
+
+- Exact main `9d599c862cbdd4c650f53981a69da123ca4b3c7a` aktif pada release
+  `20260831010633-9d599c8`; rollback `20260831004436-257df79` tersedia.
+- Shared-lock ownership, interrupt-safe cleanup, terminal cancellation receipt,
+  dan non-overclaim state manifest aktif. Disposable cancellation/lock/pointer/
+  service matrix serta actual rollback/reactivation drill lulus.
+- Full PHP 1.327/1.327, focused 24/24, build/typecheck, tooling/browser,
+  dependency audit, fresh encrypted backup/restore, verifier 23/23,
+  smoke/security 3/3, dan authenticated UAT lulus.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED /
+  BUSINESS_READY=false`; pilot dua studio dan provider canary tetap residual.
+
 ## 2026-08-31 - COYABAG storefront preview parity deployed
 
 - Exact pushed source `2b9614f7d6f7d7d9f60534460805a8d795e295fd`

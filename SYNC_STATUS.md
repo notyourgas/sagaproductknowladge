@@ -15,9 +15,32 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-08-31 WIB |
 | Branch aktif | isolated exact `origin/main` worktree |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `ecde1d6f53628c62b3671b3ef6957dd47bbdd371` |
-| Informasi terakhir disinkronkan | COYABAG Storefront Preview Parity exact source `2b9614f7d6f7d7d9f60534460805a8d795e295fd` aktif pada release `20260831-2b9614f`. |
-| Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `66b7f00a29206c02c772b6c9e8fe8877dd932854` |
+| Informasi terakhir disinkronkan | SagaBook S382 exact main `9d599c862cbdd4c650f53981a69da123ca4b3c7a` aktif pada release `20260831010633-9d599c8`; rollback aktual, verifier, dan UAT lulus. |
+| Status sinkronisasi | `CONFIRMED / MERGED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED / BUSINESS_READY=false`. |
+
+## SagaBook S382 production release safety
+
+- Wrapper release memiliki shared lock sendiri, forwarding signal ke process
+  group, bounded interrupt cleanup, terminal cancellation/failure receipt, dan
+  state manifest yang tidak overclaim deployment.
+- Exact main `9d599c862cbdd4c650f53981a69da123ca4b3c7a` aktif pada immutable release
+  `20260831010633-9d599c8`; rollback `20260831004436-257df79` tersedia.
+- Full PHP 1.327/1.327, focused 24/24, Linux matrix, build/typecheck,
+  tooling/browser, audit nol, fresh encrypted backup/restore, verifier 23/23,
+  authenticated Owner/Staff UAT, dan actual rollback/reactivation lulus.
+- `BUSINESS_READY=false`; pilot dua studio dan provider canary tetap residual.
+
+## File yang berubah pada sinkronisasi SagaBook S382
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG storefront preview parity
 

@@ -2,33 +2,32 @@
 
 Evidence cut-off: 31 Agustus 2026 WIB
 
-Exact cumulative source S379
-`f13d6f4ae519bb42eeae4dcd81d213a015d11767` telah
+Exact cumulative source S382
+`9d599c862cbdd4c650f53981a69da123ca4b3c7a` telah
 `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED` pada immutable
-release `20260830223233-f13d6f4`; rollback S378
-`20260830212427-561d48d` tersedia, kompatibel, dan lulus rollback drill aktual
-sebelum S379 direaktivasi. Full exact-main 1.321/1.321 (14.763 assertion),
+release `20260831010633-9d599c8`; rollback
+`20260831004436-257df79` tersedia, kompatibel, dan lulus rollback drill aktual
+sebelum S382 direaktivasi. Full exact-main 1.327/1.327 (14.883 assertion),
 artifact immutable, fresh encrypted backup/checksum/disposable restore,
 migration compatibility, verifier 23/23, report canary 32/32, migration pending
 0, service/journal, public/security smoke 3/3, serta authenticated Owner/Staff
 UAT read-only lulus. Pilot dua studio dan provider canary tetap residual gate,
 sehingga `BUSINESS_READY=false`.
 
-Correction harness S381 telah `CONFIRMED / MERGED / SOURCE_PUSHED /
-LOCAL_VALIDATED / RELEASE_ARTIFACT_READY / STAGING_READY /
-IMPLEMENTED_NOT_DEPLOYED` pada feature source
-`1c44ca1636ab0c051449d799bcfd454a4544f7b8` dan exact main
-`fb55b937fe0298f737ab276395cc27eb1fb99a60`. Fixture red membuktikan recursive
-`ERR` trap pada expected-failure capture; implementasi final menonaktifkan trap
-hanya selama capture lalu memulihkannya. Transform `COMPAT_CURRENT` juga
-dijalankan sebelum `CURRENT` agar prefix tidak bertabrakan. Matrix Linux
-disposable lulus happy path, lock contention, partial pointer, maintenance,
-journal sentinel/error/ambiguous/unavailable, accepted reactivation, dan
-cleanup tanpa production path atau shared lock. Full exact-main 1.291/1.291
-(14.615 assertion), focused 3/3 (70 assertion), tooling 48/48,
-build/typecheck/Pint/Bash/diff, dan audit dependensi nol lulus. Immutable
-candidate serta fresh encrypted backup/checksum/disposable restore siap;
-atomic switch tetap HOLD dan production tetap S379.
+Release hardening S382 menutup blocker RC-01/02/03 dengan wrapper-owned shared
+lock, forwarding signal ke process group, bounded interrupt cleanup, receipt
+terminal untuk cancellation/failure, dan state manifest yang tidak overclaim
+`DEPLOY_REQUESTED`. Matrix Linux disposable exact-main lulus contention,
+cancel pre-switch/partial-pointer/post-switch, service failure rollback,
+accepted reactivation, terminal receipt, dan cleanup tanpa production path
+atau shared lock. Rollback drill pertama berhenti fail-closed sebelum pointer
+berpindah karena verifier restore belum executable; correction round kedua
+mengubah mode Git ke `100755` dan menambah regression tiga helper drill.
+Drill berikutnya berhasil mengaktifkan rollback lalu accepted release kembali
+dengan schema unchanged, migration tidak dijalankan, journal 0 error, serta
+lock eksklusif yang dilepas terminal. Status `CONFIRMED / MERGED /
+SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED /
+BUSINESS_READY=false`.
 
 Hardening rollback drill S380 telah `CONFIRMED / MERGED / SOURCE_PUSHED /
 LOCAL_VALIDATED / RELEASE_PREPARATION_BLOCKED / IMPLEMENTED_NOT_DEPLOYED`
@@ -61,10 +60,9 @@ lulus. Immutable release, backup/restore, verifier 23/23, smoke/security 3/3,
 authenticated Owner/Staff UAT, dan rollback drill aktual juga lulus.
 `BUSINESS_READY=false` sampai pilot dua studio dan provider canary selesai.
 
-Gap READY berikutnya: setelah jalur release bersama dinyatakan bebas, verifikasi
-ulang exact main, freshness backup, checksum artifact, dan health production,
-lalu lanjutkan guarded activation S381 atau batalkan artifact bila main sudah
-bergerak. Historical all-batch SQLite rollback juga memiliki satu baseline
+Gap READY berikutnya: selesaikan dua studio pilot dan provider canary dengan
+otorisasi terpisah sebelum mengubah `BUSINESS_READY=false`. Historical
+all-batch SQLite rollback juga memiliki satu baseline
 compatibility finding lama; tidak ada migration delta S379 ke S381, tetapi
 finding itu perlu slice terpisah sebelum dijadikan gate rollback seluruh
 sejarah.

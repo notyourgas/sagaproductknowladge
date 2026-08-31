@@ -1,5 +1,30 @@
 # SagaBook Changelog
 
+## 2026-08-31 - S382 production release cancellation safety
+
+- Exact main `9d599c862cbdd4c650f53981a69da123ca4b3c7a` aktif pada immutable release
+  `20260831010633-9d599c8`; rollback `20260831004436-257df79` tersedia dan
+  lulus actual rollback/reactivation drill.
+- Wrapper release sekarang memiliki shared lock sendiri, forwarding signal ke
+  process group, bounded cleanup, terminal cancellation/failure receipt, dan
+  state manifest yang tidak overclaim deployment.
+- Matrix Linux disposable lulus lock contention, tiga fase cancellation,
+  partial pointer, service failure rollback, accepted reactivation, receipt,
+  dan cleanup tanpa menyentuh production/shared lock.
+- Rollback drill pertama berhenti fail-closed sebelum pointer berpindah karena
+  verifier restore bermode non-executable. Correction round kedua mengubah mode
+  Git ke `100755`, menambah regression, membentuk artifact/backup baru, lalu
+  drill aktual lulus dengan schema unchanged, migration tidak dijalankan,
+  journal 0 error, dan accepted release aktif kembali.
+- Full exact-main 1.327/1.327 (14.883 assertion), focused 24/24 (379
+  assertion), typecheck/build, tooling 7/7, browser 4/4, Pint, audit
+  Composer/npm nol, fresh encrypted backup/checksum/disposable restore,
+  verifier 23/23, smoke/security 3/3, dan authenticated Owner/Staff UAT
+  read-only lulus. Migrasi pending 0.
+- Status `CONFIRMED / MERGED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / UAT_ACCEPTED / BUSINESS_READY=false`; pilot dua studio
+  dan provider canary tetap residual.
+
 ## 2026-08-31 - S381 disposable rollback rehearsal staging-ready
 
 - Feature source `1c44ca1636ab0c051449d799bcfd454a4544f7b8` sudah merge melalui
