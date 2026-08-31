@@ -12,14 +12,14 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-09-01 02:16 WIB |
-| Branch aktif | `codex/s389-sagabook-audio-permission-acceptance-knowledge` |
+| Waktu pembaruan terakhir | 2026-09-01 03:15 WIB |
+| Branch aktif | `codex/s390-sagabook-audio-account-scope-acceptance-knowledge` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `b275fc86983193a1d17a9a38de85f17460d9d2a3` |
-| Informasi terakhir disinkronkan | SagaBook acceptance cumulative S386-S389 exact `b92e805c03a9d031030beab3d781378da2385b7e`; production tetap S385 exact main `154ab5e8e7049e1f0155b304ae9da7c03363bc69`. |
+| Baseline sebelum pembaruan | `68315a4b1e8f3e8a41bb900f0d7b3ccb8cf8ce03` |
+| Informasi terakhir disinkronkan | SagaBook acceptance cumulative S386-S390 exact `1eb7972582fa71b5ad9826de5203aecfd43036fb`; production tetap S385 exact main `154ab5e8e7049e1f0155b304ae9da7c03363bc69`. |
 | Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / AUDIO_UAT_PENDING / BUSINESS_READY=false`. |
 
-## SagaBook S386-S389 audio acceptance cumulative
+## SagaBook S386-S390 audio acceptance cumulative
 
 - Browser Chromium membuktikan exact-once lintas dua tab, refocus tanpa
   replay, mute menahan event, aktivasi kembali tidak memutar event tertahan,
@@ -27,13 +27,16 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - Finance Admin tanpa `manage_booking_status` terbukti menghasilkan nol nada
   verifikasi pembayaran/transfer manual; booking web berikutnya tetap berbunyi
   sekali tanpa replay saat refocus.
-- Exact head `b92e805c03a9d031030beab3d781378da2385b7e` mencakup S388
-  `cfd3e7696a2b542c816a9485a3142758394d05c0`; browser 9/9, focused PHP
+- Mute Owner tidak bocor ke Finance Admin pada tenant/browser yang sama;
+  Finance tetap aktif dengan tiga nada booking, sedangkan Owner tetap mute
+  setelah login kembali dan menghasilkan nol nada.
+- Exact head `1eb7972582fa71b5ad9826de5203aecfd43036fb` mencakup S389
+  `b92e805c03a9d031030beab3d781378da2385b7e`; browser 10/10, focused PHP
   23/23 (151 assertion), unit 9/9, typecheck/build, dan audit dependency nol.
 - Runbook UAT fisik 10 gate tersedia. Tidak ada runtime, migration, release
   lock, atau deploy; production tetap S385.
 
-## File yang berubah pada sinkronisasi SagaBook S386-S389
+## File yang berubah pada sinkronisasi SagaBook S386-S390
 
 - `products/sagabook/PRODUCT.md`
 - `products/sagabook/DOSSIER.md`

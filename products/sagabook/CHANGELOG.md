@@ -1,6 +1,6 @@
 # SagaBook Changelog
 
-## 2026-09-01 - S386-S389 audio acceptance cumulative
+## 2026-09-01 - S386-S390 audio acceptance cumulative
 
 - Browser acceptance kini membuktikan exact-once lintas dua tab, refocus
   tanpa replay, mute menahan event, serta aktivasi kembali tidak memutar atau
@@ -10,9 +10,12 @@
 - Finance Admin tanpa `manage_booking_status` menghasilkan nol nada untuk
   verifikasi pembayaran/transfer manual; booking web berikutnya tetap berbunyi
   sekali dan refocus tidak replay.
-- Exact head `b92e805c03a9d031030beab3d781378da2385b7e` mencakup parent S388
-  `cfd3e7696a2b542c816a9485a3142758394d05c0` dan runbook UAT fisik 10 gate.
-- Matrix browser 9/9, focused PHP 23/23 (151 assertion), unit 9/9,
+- Mute Owner tidak menonaktifkan Finance Admin pada tenant/browser yang sama:
+  Finance tetap default aktif dan memutar tepat tiga nada booking; Owner tetap
+  mute setelah login kembali dan menghasilkan nol nada.
+- Exact head `1eb7972582fa71b5ad9826de5203aecfd43036fb` mencakup parent S389
+  `b92e805c03a9d031030beab3d781378da2385b7e` dan runbook UAT fisik 10 gate.
+- Matrix browser 10/10, focused PHP 23/23 (151 assertion), unit 9/9,
   typecheck/build, dan audit Composer/npm nol lulus.
 - Perubahan hanya acceptance harness dan dokumentasi. Production tetap S385
   exact main `154ab5e8e7049e1f0155b304ae9da7c03363bc69`, release

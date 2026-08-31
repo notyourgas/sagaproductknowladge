@@ -1,15 +1,18 @@
 # Portfolio Changelog
 
-## 2026-09-01 - SagaBook S386-S389 audio acceptance cumulative
+## 2026-09-01 - SagaBook S386-S390 audio acceptance cumulative
 
-- Exact head `b92e805c03a9d031030beab3d781378da2385b7e` membuktikan exact-once
+- Exact head `1eb7972582fa71b5ad9826de5203aecfd43036fb` membuktikan exact-once
   lintas dua tab, refocus tanpa replay, dan mute/re-enable tanpa replay atau
   duplikasi event tertahan. Nada booking `659.25/830.61/987.77 Hz` terbukti
   berbeda dari verifikasi pembayaran `783.99/1046.5/783.99 Hz`.
 - Finance Admin tanpa `manage_booking_status` tidak memutar nada verifikasi
   pembayaran/transfer manual; booking web berikutnya tetap berbunyi sekali
   tanpa replay saat refocus.
-- Browser 9/9, focused PHP 23/23 (151 assertion), unit 9/9, typecheck/build,
+- Mute Owner tidak bocor ke Finance Admin pada tenant/browser yang sama;
+  Finance tetap aktif dan memutar tiga nada booking, sedangkan Owner tetap mute
+  setelah login kembali dan menghasilkan nol nada.
+- Browser 10/10, focused PHP 23/23 (151 assertion), unit 9/9, typecheck/build,
   audit dependency nol, serta runbook UAT fisik 10 gate lulus/tersedia.
 - Tidak ada runtime/migration/deploy; production tetap S385 dan status
   `IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / AUDIO_UAT_PENDING /

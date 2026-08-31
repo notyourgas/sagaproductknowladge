@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
 Updated: 1 September 2026 WIB
-Evidence status: Audio notifikasi admin S385 aktif pada exact merged main `154ab5e8e7049e1f0155b304ae9da7c03363bc69`, immutable release `20260831041833-154ab5e`, dengan rollback `20260831025235-58e1303`. Acceptance kumulatif S386-S389 exact `b92e805c03a9d031030beab3d781378da2385b7e` sudah `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`. Status keseluruhan `AUDIO_UAT_PENDING / BUSINESS_READY=false`.
+Evidence status: Audio notifikasi admin S385 aktif pada exact merged main `154ab5e8e7049e1f0155b304ae9da7c03363bc69`, immutable release `20260831041833-154ab5e`, dengan rollback `20260831025235-58e1303`. Acceptance kumulatif S386-S390 exact `1eb7972582fa71b5ad9826de5203aecfd43036fb` sudah `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`. Status keseluruhan `AUDIO_UAT_PENDING / BUSINESS_READY=false`.
 
 ## Tujuan dokumen
 
@@ -16,17 +16,21 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
 
-- Acceptance kumulatif S386-S389 menambah browser Chromium dua tab untuk
+- Acceptance kumulatif S386-S390 menambah browser Chromium dua tab untuk
   exact-once chime, refocus tanpa replay, serta mute dan aktivasi kembali
   tanpa replay/duplikasi. Browser juga memverifikasi urutan nada booking
   `659.25/830.61/987.77 Hz` berbeda dari verifikasi pembayaran
   `783.99/1046.5/783.99 Hz`. Runbook UAT speaker fisik menetapkan 10 gate.
   Akun Finance Admin tanpa `manage_booking_status` terbukti tidak memutar nada
   verifikasi pembayaran maupun transfer manual, tetapi booking web berikutnya
-  tetap berbunyi sekali dan refocus tidak replay. Matrix browser 9/9, focused PHP 23/23 (151 assertion), unit audio/cursor
+  tetap berbunyi sekali dan refocus tidak replay. S390 membuktikan bahwa mute
+  milik Owner tidak menonaktifkan akun Finance Admin pada tenant dan browser
+  yang sama: Finance tetap default aktif dan memutar tepat satu rangkaian tiga
+  nada untuk booking web, sedangkan Owner tetap mute setelah login kembali dan
+  menghasilkan nol nada. Matrix browser 10/10, focused PHP 23/23 (151 assertion), unit audio/cursor
   9/9, typecheck/build, serta audit Composer/npm nol lulus pada exact head
-  `b92e805c03a9d031030beab3d781378da2385b7e` dengan parent S388
-  `cfd3e7696a2b542c816a9485a3142758394d05c0`. Perubahan hanya test/runbook,
+  `1eb7972582fa71b5ad9826de5203aecfd43036fb` dengan parent S389
+  `b92e805c03a9d031030beab3d781378da2385b7e`. Perubahan hanya test/runbook,
   tanpa runtime, migration, atau deploy. Status `CONFIRMED / SOURCE_PUSHED /
   LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED /
   AUDIO_UAT_PENDING / BUSINESS_READY=false`.

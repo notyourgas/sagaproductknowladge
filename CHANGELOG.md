@@ -1,6 +1,6 @@
 # Saga Product Knowledge Changelog
 
-## 2026-09-01 - SagaBook S386-S389 audio acceptance sync
+## 2026-09-01 - SagaBook S386-S390 audio acceptance sync
 
 - Ringkasan: menyinkronkan acceptance exact-once dua tab, refocus, mute, dan
   re-enable, perbedaan urutan nada booking/verifikasi pembayaran, serta
@@ -8,10 +8,13 @@
 - S389 menambah permission-negative: Finance Admin tanpa
   `manage_booking_status` tidak memutar nada verifikasi pembayaran/transfer
   manual; booking web berikutnya tetap exact-once dan tidak replay saat refocus.
-- Provenance: exact head `b92e805c03a9d031030beab3d781378da2385b7e`,
-  parent S388 `cfd3e7696a2b542c816a9485a3142758394d05c0`, berbasis production
+- S390 membuktikan mute Owner tidak bocor ke Finance Admin pada tenant/browser
+  yang sama; Finance tetap aktif dengan tiga nada booking, sementara Owner
+  tetap mute setelah login kembali dan menghasilkan nol nada.
+- Provenance: exact head `1eb7972582fa71b5ad9826de5203aecfd43036fb`,
+  parent S389 `b92e805c03a9d031030beab3d781378da2385b7e`, berbasis production
   `154ab5e8e7049e1f0155b304ae9da7c03363bc69`.
-- Evidence: browser 9/9, focused PHP 23/23 (151 assertion), unit 9/9,
+- Evidence: browser 10/10, focused PHP 23/23 (151 assertion), unit 9/9,
   typecheck/build, serta audit Composer/npm nol.
 - Klasifikasi: `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
   IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / AUDIO_UAT_PENDING /
