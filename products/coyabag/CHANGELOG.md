@@ -4,6 +4,21 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-31 - Settings operator navigator deployed
+
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false` dari source
+  `693152f68d582bbdcb3fea564897056b094a1e7f`, release `20260831-693152f`,
+  dan rollback `20260831-36202a4`.
+- Indeks Pengaturan menampilkan ringkasan 12 bagian/78 field/five approval
+  scopes, pencarian, empat kategori tugas, progress tersimpan yang tidak
+  diklaim sebagai readiness provider, dan empty/reset state.
+- Laravel 545 total/544 pass/satu controlled skip, storefront 220/220, browser
+  desktop/mobile, build/audit, backup, readiness 42/42, worker, HTTP, runtime
+  read-only, dan buy-to-cart lulus.
+- Tidak ada migrasi, aktivasi provider, perubahan settings/credential, mutasi
+  antrean, payment, shipping, commerce gate, atau inventory.
+
 ## 2026-08-31 - Integration settings workflow deployed
 
 - Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /

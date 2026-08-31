@@ -1,5 +1,18 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+COYABAG exact source `693152f68d582bbdcb3fea564897056b094a1e7f`
+aktif pada immutable release `20260831-693152f` dengan rollback
+`20260831-36202a4`; readiness 42/42. Indeks Pengaturan kini memiliki ringkasan
+12 bagian/78 field/five approval scopes, pencarian lokal, filter Toko &
+storefront, Commerce, Operasional, Governance, serta empty/reset state.
+Hitungan tersimpan diberi batas eksplisit bahwa itu bukan status provider.
+Laravel 545 total/544 pass/satu controlled skip, storefront 220/220, browser
+dua viewport, build/audit, backup, worker, HTTP, dan buy-to-cart lulus. Tidak
+ada migrasi, aktivasi provider, perubahan settings/credential, atau mutasi
+antrean/stok. Commerce tetap `COMMERCE_ACTIVE`; enam payment exception,
+keputusan WhatsApp, backup offsite, dan UAT bisnis menahan
+`BUSINESS_READY=false`.
+
 COYABAG exact pushed source
 `36202a4d9e153b50dca5f995a83ed798e4efbc8c` aktif pada immutable release
 `20260831-36202a4` dengan rollback `20260831-2b5bc5a`; readiness 42/42.

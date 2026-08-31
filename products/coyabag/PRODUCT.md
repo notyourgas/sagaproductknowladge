@@ -76,9 +76,14 @@ COMMERCE_ACTIVE`. Business readiness: `BLOCKED`.
   bagian; audit tetap `report_only` dan tidak menghapus record.
 - Launch UAT 15 langkah dan release sign-off sudah lulus. Readiness gate tetap
   enforced dan keputusan runtime adalah `COMMERCE_ACTIVE`.
-- Release aktif `20260831-36202a4` dengan exact material source
-  `36202a4d9e153b50dca5f995a83ed798e4efbc8c` melayani production;
-  rollback langsung `20260831-2b5bc5a` tersedia dan readiness lulus 42/42.
+- Release aktif `20260831-693152f` dengan exact material source
+  `693152f68d582bbdcb3fea564897056b094a1e7f` melayani production;
+  rollback langsung `20260831-36202a4` tersedia dan readiness lulus 42/42.
+  Indeks Pengaturan menampilkan ringkasan faktual, pencarian, empat kategori
+  tugas, empty/reset state, serta badge approval pada lima bagian sensitif.
+  Hitungan nilai tersimpan dibedakan secara eksplisit dari readiness provider.
+  Tidak ada migrasi, aktivasi provider, atau mutasi konfigurasi. Rollback
+  `20260831-36202a4` memuat Integration Settings Workflow.
   Integrations membagi konfigurasi menjadi lima disclosure aksesibel. Field
   yang dependensinya belum terpenuhi tetap terlihat tetapi dikunci dengan
   alasan public-safe dan nilai tersimpan dipertahankan. Aktivasi email owner

@@ -79,6 +79,15 @@ coverage nasional atau Delivery API aktif.
 Backup database COYABAG masih local-disk dan perlu dipindahkan ke backup offsite
 sebelum business readiness final.
 
+`CONFIRMED / PRODUCTION_DEPLOYED`: release `20260831-693152f`, exact source
+`693152f68d582bbdcb3fea564897056b094a1e7f`, dan rollback
+`20260831-36202a4` menambahkan Settings Operator Navigator. Indeks Pengaturan
+memiliki ringkasan faktual, pencarian lokal, empat kategori tugas, progress
+nilai tersimpan yang dibedakan dari readiness provider, badge approval, serta
+empty/reset state. Laravel 545 total, storefront 220/220, browser dua viewport,
+build/audit, backup, readiness 42/42, dua worker, HTTP, runtime read-only, dan
+buy-to-cart lulus tanpa migrasi, aktivasi provider, atau mutasi konfigurasi.
+
 `CONFIRMED / PRODUCTION_DEPLOYED`: release `20260831-36202a4`, exact source
 `36202a4d9e153b50dca5f995a83ed798e4efbc8c`, dan rollback
 `20260831-2b5bc5a` menambahkan Integration Settings Workflow. Form panjang kini

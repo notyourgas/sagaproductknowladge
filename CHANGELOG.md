@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-31 - COYABAG settings operator navigator sync
+
+- Ringkasan: menyinkronkan ringkasan faktual, pencarian, empat kategori tugas,
+  empty/reset state, dan penanda approval pada indeks Pengaturan.
+- Provenance: exact source `693152f68d582bbdcb3fea564897056b094a1e7f`,
+  immutable release `20260831-693152f`, rollback `20260831-36202a4`.
+- Evidence: Laravel 545 total, storefront 220/220, browser desktop/mobile,
+  build/audit, backup, readiness 42/42, worker, HTTP, runtime read-only, dan
+  buy-to-cart lulus.
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false`.
+
 ## 2026-08-31 - COYABAG integration settings workflow sync
 
 - Ringkasan: menyinkronkan lima disclosure konfigurasi, dependency lock yang

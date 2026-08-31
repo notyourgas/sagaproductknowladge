@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-08-31 - COYABAG settings operator navigator deployed
+
+- Exact source `693152f68d582bbdcb3fea564897056b094a1e7f` aktif pada release
+  `20260831-693152f`; rollback `20260831-36202a4`, readiness 42/42.
+- Ringkasan, pencarian, empat kategori tugas, empty/reset state, dan badge
+  approval membuat 12 bagian Pengaturan dapat dipindai desktop/mobile.
+- Laravel 545 total, storefront 220/220, browser/build/audit, backup, worker,
+  HTTP, runtime read-only, dan buy-to-cart lulus tanpa mutasi konfigurasi.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE /
+  BUSINESS_READY=false`.
+
 ## 2026-08-31 - COYABAG integration settings workflow deployed
 
 - Exact pushed source `36202a4d9e153b50dca5f995a83ed798e4efbc8c`
