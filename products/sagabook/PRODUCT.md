@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
 Updated: 1 September 2026 WIB
-Evidence status: Audio notifikasi admin S385 aktif pada exact merged main `154ab5e8e7049e1f0155b304ae9da7c03363bc69`, immutable release `20260831041833-154ab5e`, dengan rollback `20260831025235-58e1303`. Acceptance kumulatif S386-S391 exact `ed0829d416f179ed4b6cbe92e80f3afb6072dc01` sudah `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`. Status keseluruhan `AUDIO_UAT_PENDING / BUSINESS_READY=false`.
+Evidence status: Audio notifikasi admin S385 aktif pada exact merged main `154ab5e8e7049e1f0155b304ae9da7c03363bc69`, immutable release `20260831041833-154ab5e`, dengan rollback `20260831025235-58e1303`. Acceptance kumulatif S386-S392 exact `d75ba7e2021a5a89aca9decbdd381ed67d4443e5` sudah `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`. Status keseluruhan `AUDIO_UAT_PENDING / BUSINESS_READY=false`.
 
 ## Tujuan dokumen
 
@@ -16,7 +16,7 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
 
-- Acceptance kumulatif S386-S391 menambah browser Chromium dua tab untuk
+- Acceptance kumulatif S386-S392 menambah browser Chromium dua tab untuk
   exact-once chime, refocus tanpa replay, serta mute dan aktivasi kembali
   tanpa replay/duplikasi. Browser juga memverifikasi urutan nada booking
   `659.25/830.61/987.77 Hz` berbeda dari verifikasi pembayaran
@@ -29,10 +29,14 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   nada untuk booking web, sedangkan Owner tetap mute setelah login kembali dan
   menghasilkan nol nada. S391 menambah recovery 503 sintetis: request gagal
   tetap diam, booking baru setelah feed pulih berbunyi tepat satu rangkaian
-  tiga nada, dan refocus berikutnya tidak replay. Matrix browser 11/11, focused PHP 23/23 (151 assertion), unit audio/cursor
-  9/9, typecheck/build, serta audit Composer/npm nol lulus pada exact head
-  `ed0829d416f179ed4b6cbe92e80f3afb6072dc01` dengan parent S390
-  `1eb7972582fa71b5ad9826de5203aecfd43036fb`. Perubahan hanya test/runbook,
+  tiga nada, dan refocus berikutnya tidak replay. S392 membuktikan browser
+  offline dan refocus tetap menghasilkan nol nada; setelah koneksi pulih,
+  booking baru memutar tepat satu rangkaian `659.25/830.61/987.77 Hz`, lalu
+  event online/refocus berikutnya tidak replay. Matrix browser 12/12, focused
+  PHP S392 21/21 (113 assertion), unit audio/cursor 9/9, typecheck/build, serta
+  audit Composer/npm nol lulus pada exact head
+  `d75ba7e2021a5a89aca9decbdd381ed67d4443e5` dengan parent S391
+  `ed0829d416f179ed4b6cbe92e80f3afb6072dc01`. Perubahan hanya test/runbook,
   tanpa runtime, migration, atau deploy. Status `CONFIRMED / SOURCE_PUSHED /
   LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED /
   AUDIO_UAT_PENDING / BUSINESS_READY=false`.

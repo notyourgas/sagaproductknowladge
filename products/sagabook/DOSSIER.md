@@ -7,8 +7,8 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Acceptance kumulatif S386-S391 exact
-  `ed0829d416f179ed4b6cbe92e80f3afb6072dc01` membuktikan satu event hanya
+- Acceptance kumulatif S386-S392 exact
+  `d75ba7e2021a5a89aca9decbdd381ed67d4443e5` membuktikan satu event hanya
   berbunyi pada satu dari dua tab, refocus tidak replay, mode mute menahan
   event, aktivasi kembali tidak memutar event tertahan, serta nada booking
   `659.25/830.61/987.77 Hz` berbeda dari verifikasi pembayaran
@@ -19,8 +19,10 @@ dalam satu dokumen public-safe.
   yang sama: Finance tetap aktif dengan tiga nada booking, sedangkan Owner
   tetap mute setelah login kembali dan menghasilkan nol nada. Gangguan 503
   sintetis pada request recovery tetap diam; booking baru sesudah pulih
-  berbunyi satu rangkaian tiga nada dan refocus tidak replay.
-  Browser 11/11, focused PHP 23/23 (151 assertion), unit 9/9, typecheck/build,
+  berbunyi satu rangkaian tiga nada dan refocus tidak replay. Browser offline
+  juga tetap diam saat refocus; setelah reconnect, booking baru memutar tepat
+  satu rangkaian `659.25/830.61/987.77 Hz` dan online/refocus berikutnya tidak
+  replay. Browser 12/12, focused PHP S392 21/21 (113 assertion), unit 9/9, typecheck/build,
   serta audit dependency nol lulus. Runbook UAT fisik memiliki 10 gate.
   Tidak ada runtime/migration/deploy; status `SOURCE_PUSHED /
   LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED /

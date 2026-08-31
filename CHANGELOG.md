@@ -1,6 +1,6 @@
 # Saga Product Knowledge Changelog
 
-## 2026-09-01 - SagaBook S386-S391 audio acceptance sync
+## 2026-09-01 - SagaBook S386-S392 audio acceptance sync
 
 - Ringkasan: menyinkronkan acceptance exact-once dua tab, refocus, mute, dan
   re-enable, perbedaan urutan nada booking/verifikasi pembayaran, serta
@@ -13,10 +13,12 @@
   tetap mute setelah login kembali dan menghasilkan nol nada.
 - S391 membuktikan gangguan 503 sintetis tetap diam; booking baru setelah
   recovery berbunyi satu batch tiga nada dan refocus tidak replay.
-- Provenance: exact head `ed0829d416f179ed4b6cbe92e80f3afb6072dc01`,
-  parent S390 `1eb7972582fa71b5ad9826de5203aecfd43036fb`, berbasis production
+- S392 membuktikan offline/refocus tetap diam; setelah reconnect, booking baru
+  berbunyi tepat satu batch tiga nada dan event online/refocus tidak replay.
+- Provenance: exact head `d75ba7e2021a5a89aca9decbdd381ed67d4443e5`,
+  parent S391 `ed0829d416f179ed4b6cbe92e80f3afb6072dc01`, berbasis production
   `154ab5e8e7049e1f0155b304ae9da7c03363bc69`.
-- Evidence: browser 11/11, focused PHP 23/23 (151 assertion), unit 9/9,
+- Evidence: browser 12/12, focused PHP S392 21/21 (113 assertion), unit 9/9,
   typecheck/build, serta audit Composer/npm nol.
 - Klasifikasi: `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
   IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / AUDIO_UAT_PENDING /

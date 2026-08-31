@@ -2,8 +2,8 @@
 
 Evidence cut-off: 1 September 2026 WIB
 
-Acceptance audio kumulatif S386-S391 exact
-`ed0829d416f179ed4b6cbe92e80f3afb6072dc01` telah `CONFIRMED /
+Acceptance audio kumulatif S386-S392 exact
+`d75ba7e2021a5a89aca9decbdd381ed67d4443e5` telah `CONFIRMED /
 SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
 PRODUCTION_UNCHANGED`. Chromium membuktikan exact-once lintas dua tab, refocus
 tanpa replay, mute menahan event, dan aktivasi kembali tidak memutar atau
@@ -15,7 +15,10 @@ tetap berbunyi sekali dan refocus tidak replay. Mute Owner tidak bocor ke
 Finance Admin pada tenant/browser yang sama; Finance tetap aktif dengan tiga
 nada booking, sedangkan Owner tetap mute setelah login kembali dan menghasilkan
 nol nada. Gangguan 503 sintetis tetap diam; booking baru sesudah recovery
-berbunyi satu rangkaian tiga nada dan refocus tidak replay. Browser 11/11, focused PHP 23/23 (151 assertion), unit audio/cursor 9/9,
+berbunyi satu rangkaian tiga nada dan refocus tidak replay. Browser offline dan
+refocus juga tetap diam; sesudah reconnect, booking baru memutar tepat satu
+rangkaian tiga nada dan event online/refocus berikutnya tidak replay. Browser
+12/12, focused PHP S392 21/21 (113 assertion), unit audio/cursor 9/9,
 typecheck/build, serta audit Composer/npm nol lulus. Runbook fisik memuat 10
 gate Chrome/Edge. Production tetap S385 dan `AUDIO_UAT_PENDING /
 BUSINESS_READY=false`.
