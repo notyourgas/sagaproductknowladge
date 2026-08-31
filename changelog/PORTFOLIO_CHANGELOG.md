@@ -1,5 +1,22 @@
 # Portfolio Changelog
 
+## 2026-08-31 - COYABAG storefront preview parity deployed
+
+- Exact pushed source `2b9614f7d6f7d7d9f60534460805a8d795e295fd`
+  aktif pada immutable release `20260831-2b9614f`; rollback
+  `20260831-7a4bfa1` tersedia dan readiness 42/42.
+- Storefront Preview kini memakai renderer storefront aktual untuk signed draft
+  dan public compare, dengan desktop/mobile mode, expiry/revision recovery,
+  serta semua aksi commerce dibuat read-only.
+- Capability berada pada URL fragment, terikat revision, short-lived, no-store,
+  dan fail-closed untuk unsigned/stale/expired; payload internal direduksi.
+- Focused 13/13, Laravel 537, storefront 220/220, parser 4/4, browser dua
+  viewport, production security/CSP, build/audit, backup, worker, HTTP, dan
+  buy-to-cart smoke lulus.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE /
+  BUSINESS_READY=false`; enam payment exception dan shipping manual sembilan
+  tujuan tetap menjadi batas bisnis.
+
 ## 2026-08-31 - SagaBook S381 rollback rehearsal staging-ready
 
 - Exact main `fb55b937fe0298f737ab276395cc27eb1fb99a60` memperbaiki recursive

@@ -15,9 +15,36 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-08-31 WIB |
 | Branch aktif | isolated exact `origin/main` worktree |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `885b33154423fd4c438207cc9d1e719a1956cc31` |
-| Informasi terakhir disinkronkan | SagaBook S381 exact main `fb55b937fe0298f737ab276395cc27eb1fb99a60` staging-ready dengan artifact dan backup/restore fresh; production tetap S379. |
-| Status sinkronisasi | `CONFIRMED / MERGED / SOURCE_PUSHED / LOCAL_VALIDATED / RELEASE_ARTIFACT_READY / STAGING_READY / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `ecde1d6f53628c62b3671b3ef6957dd47bbdd371` |
+| Informasi terakhir disinkronkan | COYABAG Storefront Preview Parity exact source `2b9614f7d6f7d7d9f60534460805a8d795e295fd` aktif pada release `20260831-2b9614f`. |
+| Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false`. |
+
+## COYABAG storefront preview parity
+
+- Exact source `2b9614f7d6f7d7d9f60534460805a8d795e295fd` sudah push dan aktif
+  sebagai immutable release `20260831-2b9614f`; rollback
+  `20260831-7a4bfa1` tersedia dan readiness 42/42.
+- Signed draft dirender oleh komponen storefront aktual dengan public compare,
+  desktop/mobile mode, revision/expiry state, recovery, dan aksi read-only.
+- Capability sepuluh menit terikat revision, no-store, berada pada URL fragment,
+  dan fail-closed untuk unsigned, stale, atau expired; payload internal tidak
+  terekspos.
+- Focused 13/13, Laravel 537 total, storefront 220/220, parser 4/4, browser dua
+  viewport, production signature/CSP smoke, build/audit, backup, worker, HTTP,
+  dan public buy-to-cart smoke lulus.
+- Commerce tetap aktif tanpa migrasi, perubahan provider, atau mutasi inventory.
+  Enam payment exception serta shipping manual sembilan tujuan tetap menahan
+  `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi COYABAG storefront preview
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook S381 correction dan staging readiness
 

@@ -1,16 +1,17 @@
 # Saga Product — Master Knowledge for ChatGPT
 
 COYABAG exact pushed source
-`d826c297ff6cd7b80c0cb0d86b3acf33dc3feb83` aktif pada immutable release
-`20260831-d826c29` dengan rollback `20260831-15c2daa`; readiness keduanya
-42/42. Website Management Media Library menyediakan search, filter, summary,
-pagination, metadata, processing/storage state, dan usage lineage yang mencakup
-konten aktif serta histori versi. Delete permanen memakai permission, recent
-authentication, throttle, alasan, acknowledgement, audit, dan server re-check
-fail-closed. Focused 39/39, Laravel 534 total/533 pass/satu controlled skip,
-storefront 216/216, browser desktop/mobile tanpa overlap/overflow, build/audit,
-backup, migration pending nol, dua worker, HTTP, dan buy-to-cart smoke lulus.
-Commerce tetap `COMMERCE_ACTIVE`, tetapi enam
+`2b9614f7d6f7d7d9f60534460805a8d795e295fd` aktif pada immutable release
+`20260831-2b9614f` dengan rollback `20260831-7a4bfa1`; readiness 42/42.
+Website Management Storefront Preview merender signed draft melalui komponen
+storefront aktual, membandingkannya dengan versi publik, dan menyediakan mode
+desktop/mobile, revision/expiry state, serta recovery. Semua aksi commerce
+dibuat read-only. Capability sepuluh menit terikat revision, no-store, ditolak
+bila unsigned/stale, dan disimpan pada URL fragment agar tidak dikirim ke log
+server/referrer; payload internal tetap direduksi. Focused 13/13, Laravel 537
+total/536 pass/satu controlled skip, storefront 220/220, parser 4/4, browser
+desktop/mobile, production signature/CSP smoke, build/audit, backup, worker,
+HTTP, dan buy-to-cart lulus. Commerce tetap `COMMERCE_ACTIVE`, tetapi enam
 payment exception dan shipping manual sembilan tujuan menahan
 `BUSINESS_READY=false`.
 
