@@ -1,8 +1,8 @@
 # Portfolio Changelog
 
-## 2026-09-01 - SagaBook S386-S392 audio acceptance cumulative
+## 2026-09-01 - SagaBook S386-S393 audio acceptance cumulative
 
-- Exact head `d75ba7e2021a5a89aca9decbdd381ed67d4443e5` membuktikan exact-once
+- Exact head `74a30742a87e70c81806f316538c11e1bcee9057` membuktikan exact-once
   lintas dua tab, refocus tanpa replay, dan mute/re-enable tanpa replay atau
   duplikasi event tertahan. Nada booking `659.25/830.61/987.77 Hz` terbukti
   berbeda dari verifikasi pembayaran `783.99/1046.5/783.99 Hz`.
@@ -16,7 +16,9 @@
   batch tiga nada dan refocus berikutnya tidak replay.
 - Kondisi offline dan refocus tetap diam; setelah reconnect, booking baru
   berbunyi satu batch tiga nada dan event online/refocus tidak replay.
-- Browser 12/12, focused PHP S392 21/21 (113 assertion), unit 9/9, typecheck/build,
+- Expiry sesi 419 tetap diam dan mengarah ke login; login ulang tetap senyap,
+  lalu hanya booking baru yang berbunyi sekali tanpa replay saat refocus.
+- Browser 13/13, focused PHP 21/21 (113 assertion), unit 9/9, typecheck/build,
   audit dependency nol, serta runbook UAT fisik 10 gate lulus/tersedia.
 - Tidak ada runtime/migration/deploy; production tetap S385 dan status
   `IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / AUDIO_UAT_PENDING /
