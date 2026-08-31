@@ -1,5 +1,22 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-31 - COYABAG integration settings workflow sync
+
+- Ringkasan: menyinkronkan lima disclosure konfigurasi, dependency lock yang
+  public-safe, serta aktivasi email yang review-bound dan fail-closed.
+- Provenance: exact pushed source
+  `36202a4d9e153b50dca5f995a83ed798e4efbc8c`, immutable release
+  `20260831-36202a4`, rollback `20260831-2b5bc5a`.
+- Evidence: focused 7/7, Laravel 544 total, storefront 220/220, browser
+  desktop/mobile tanpa overlap/overflow, build/audit, backup, readiness 42/42,
+  worker, HTTP, runtime read-only, dan buy-to-cart. Switch pertama otomatis
+  rollback karena verifier terlalu literal; exact artifact yang sama kemudian
+  berhasil dipromosikan setelah guard dikoreksi.
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false`.
+- Dokumen terdampak: Product, dossier/changelog COYABAG, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-08-31 - SagaView Live Import v0.21.0 trial sync
 
 - Ringkasan: menyinkronkan pemantauan export Lightroom, exact-target

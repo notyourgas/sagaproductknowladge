@@ -79,6 +79,22 @@ coverage nasional atau Delivery API aktif.
 Backup database COYABAG masih local-disk dan perlu dipindahkan ke backup offsite
 sebelum business readiness final.
 
+`CONFIRMED / PRODUCTION_DEPLOYED`: release `20260831-36202a4`, exact source
+`36202a4d9e153b50dca5f995a83ed798e4efbc8c`, dan rollback
+`20260831-2b5bc5a` menambahkan Integration Settings Workflow. Form panjang kini
+menjadi lima disclosure aksesibel untuk email, tarif pengiriman, otomasi
+pengiriman, routing notifikasi, dan media. Dependensi yang belum terpenuhi
+tetap terlihat tetapi dikunci dengan alasan public-safe tanpa menghapus nilai
+tersimpan. Aktivasi email owner meninjau provider, approval ID, expiry, dan
+acknowledgement exact; backend mengunci status, owner, sender domain,
+readiness, serta expiry. Focused 7/7, Laravel 544 total/543 pass/satu controlled
+skip, storefront 220/220, browser desktop/mobile, build/audit, backup,
+migration pending nol, readiness 42/42, dua worker, HTTP, runtime read-only,
+dan buy-to-cart lulus. Switch pertama auto-rollback karena verifier literal;
+exact artifact yang sama sukses setelah guard dikoreksi. Tidak ada migrasi,
+aktivasi provider, perubahan settings/credential, mutasi antrean, commerce
+gate, atau inventory.
+
 `CONFIRMED / PRODUCTION_DEPLOYED`: release `20260831-2b5bc5a`, exact source
 `2b5bc5a9c056e367f5de0c09d3ee78cd7948aea3`, dan rollback
 `20260831-b32d5bb` menambahkan Integration Provider Control pada Operations.

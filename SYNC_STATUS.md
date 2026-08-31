@@ -19,6 +19,35 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Informasi terakhir disinkronkan | SagaBook S385 exact main `154ab5e8e7049e1f0155b304ae9da7c03363bc69` aktif pada immutable release `20260831041833-154ab5e`. |
 | Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUDIO_UAT_PENDING / BUSINESS_READY=false`. |
 
+## COYABAG integration settings workflow
+
+- Exact source `36202a4d9e153b50dca5f995a83ed798e4efbc8c` sudah push dan aktif
+  sebagai immutable release `20260831-36202a4`; rollback
+  `20260831-2b5bc5a` tersedia dan readiness 42/42.
+- Lima disclosure konfigurasi menggantikan form panjang. Field yang dependensinya
+  belum terpenuhi tetap terlihat, terkunci dengan alasan public-safe, dan tidak
+  kehilangan nilai tersimpan.
+- Aktivasi email memerlukan review provider/approval/expiry dan acknowledgement
+  exact; backend tetap mengunci owner, state, sender domain, readiness, dan
+  expiry.
+- Focused 7/7, Laravel 544 total, storefront 220/220, browser dua viewport,
+  build/audit, backup, worker, HTTP, runtime read-only, dan buy-to-cart lulus.
+  Switch pertama rollback otomatis karena verifier terlalu literal; exact
+  artifact yang sama sukses setelah guard dikoreksi.
+- Tidak ada migrasi, aktivasi provider, perubahan setting/credential, atau
+  mutasi antrean/stok. Enam payment exception tetap menahan
+  `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi COYABAG integration settings workflow
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
+
 ## SagaView Live Import v0.21.0 trial candidate
 
 - Folder export Lightroom dipantau bertahap; foto stabil di-append tanpa reset

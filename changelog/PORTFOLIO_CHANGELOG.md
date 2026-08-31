@@ -1,5 +1,20 @@
 # Portfolio Changelog
 
+## 2026-08-31 - COYABAG integration settings workflow deployed
+
+- Exact pushed source `36202a4d9e153b50dca5f995a83ed798e4efbc8c`
+  aktif pada immutable release `20260831-36202a4`; rollback
+  `20260831-2b5bc5a` tersedia dan readiness 42/42.
+- Operations Integrations kini memiliki lima disclosure, dependency lock yang
+  public-safe, serta aktivasi email owner yang review-bound dan fail-closed.
+- Focused 7/7, Laravel 544 total, storefront 220/220, browser desktop/mobile,
+  build/audit, backup, worker, HTTP, runtime read-only, dan buy-to-cart lulus.
+  Deploy pertama auto-rollback karena verifier literal; exact artifact yang
+  sama kemudian sukses dipromosikan setelah guard diperbaiki.
+- Tidak ada migrasi, aktivasi provider, perubahan setting/credential, mutasi
+  antrean, atau mutasi stok. Status `PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false`.
+
 ## 2026-08-31 - SagaView Live Import v0.21.0 trial candidate
 
 - Exact pushed Studio source

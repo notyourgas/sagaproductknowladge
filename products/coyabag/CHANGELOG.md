@@ -4,6 +4,27 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-08-31 - Integration settings workflow deployed
+
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false` dari exact
+  source `36202a4d9e153b50dca5f995a83ed798e4efbc8c`, immutable release
+  `20260831-36202a4`, dan rollback `20260831-2b5bc5a`.
+- Form Integrasi dibagi menjadi lima disclosure dengan jumlah nilai tersimpan,
+  dependency blocker, buka/tutup semua, auto-open saat validasi error, dan
+  state aksesibel desktop/mobile.
+- Field yang belum memenuhi dependensi tetap terlihat tetapi disabled dengan
+  alasan public-safe; nilai tersimpan tidak dihapus. Aktivasi email memakai
+  review provider/approval/expiry dan acknowledgement exact, dengan recheck
+  backend yang fail-closed.
+- Focused 7/7, Laravel 544 total/543 pass/satu controlled skip, storefront
+  220/220, browser desktop/mobile, build/audit, backup, readiness 42/42,
+  worker, HTTP, runtime read-only, dan buy-to-cart lulus.
+- Switch pertama rollback otomatis karena verifier terlalu literal; setelah
+  guard dikoreksi, exact artifact yang sama berhasil dipromosikan. Tidak ada
+  migrasi, aktivasi provider, perubahan settings/credential, atau mutasi
+  antrean/stok. Enam payment exception tetap menahan `BUSINESS_READY=false`.
+
 ## 2026-08-31 - Integration provider control deployed
 
 - Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /

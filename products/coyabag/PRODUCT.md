@@ -76,9 +76,18 @@ COMMERCE_ACTIVE`. Business readiness: `BLOCKED`.
   bagian; audit tetap `report_only` dan tidak menghapus record.
 - Launch UAT 15 langkah dan release sign-off sudah lulus. Readiness gate tetap
   enforced dan keputusan runtime adalah `COMMERCE_ACTIVE`.
-- Release aktif `20260831-2b5bc5a` dengan exact material source
-  `2b5bc5a9c056e367f5de0c09d3ee78cd7948aea3` melayani production;
-  rollback langsung `20260831-b32d5bb` tersedia dan readiness lulus 42/42.
+- Release aktif `20260831-36202a4` dengan exact material source
+  `36202a4d9e153b50dca5f995a83ed798e4efbc8c` melayani production;
+  rollback langsung `20260831-2b5bc5a` tersedia dan readiness lulus 42/42.
+  Integrations membagi konfigurasi menjadi lima disclosure aksesibel. Field
+  yang dependensinya belum terpenuhi tetap terlihat tetapi dikunci dengan
+  alasan public-safe dan nilai tersimpan dipertahankan. Aktivasi email owner
+  memakai review provider, approval, expiry, acknowledgement exact, serta
+  recheck backend yang fail-closed. Switch pertama auto-rollback karena
+  verifier literal; guard dikoreksi dan exact artifact yang sama berhasil
+  dipromosikan. Tidak ada migrasi, aktivasi provider, perubahan settings atau
+  credential, maupun mutasi antrean/stok. Rollback `20260831-2b5bc5a`
+  memuat Integration Provider Control.
   Provider console merangkum email, pengiriman, WhatsApp, dan media dengan
   status, mode, reason code, serta guidance public-safe. Tes email owner
   memakai recent auth, review tujuan termasking, acknowledgement, throttle,
