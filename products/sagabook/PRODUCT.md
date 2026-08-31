@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
 Updated: 31 Agustus 2026 WIB
-Evidence status: S379 aktif pada exact cumulative source `f13d6f4ae519bb42eeae4dcd81d213a015d11767`, immutable release `20260830223233-f13d6f4`, dengan rollback S378 `20260830212427-561d48d`. Retry respons jaringan ambigu pada edit pengeluaran Staff kini idempoten tanpa ledger/audit kedua, sedangkan konflik payload, stale version, dan replay lintas Staff tetap gagal tertutup. Full exact-main 1.321/1.321 (14.763 assertion), artifact immutable, fresh encrypted backup/checksum/disposable restore, migration compatibility, verifier 23/23, authenticated Owner/Staff UAT read-only, dan rollback drill aktual lulus. Status `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED / BUSINESS_READY=false`.
+Evidence status: S382 aktif pada exact cumulative source `9d599c862cbdd4c650f53981a69da123ca4b3c7a`, immutable release `20260831010633-9d599c8`, dengan rollback `20260831004436-257df79`. Wrapper release kini memiliki shared lock sendiri, cleanup interrupt-safe, receipt cancellation terminal, dan state manifest yang tidak mengklaim deployment sebelum waktunya. Full exact-main 1.327/1.327 (14.883 assertion), artifact immutable, fresh encrypted backup/checksum/disposable restore, migration pending 0, verifier 23/23, authenticated Owner/Staff UAT read-only, serta rollback drill aktual lulus. Status `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED / BUSINESS_READY=false`.
 
 ## Tujuan dokumen
 
@@ -15,6 +15,26 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
+
+- Release hardening S382 aktif pada exact main
+  `9d599c862cbdd4c650f53981a69da123ca4b3c7a` melalui immutable release
+  `20260831010633-9d599c8`. Wrapper sekarang memegang shared release lock,
+  meneruskan interrupt ke process group, melakukan cleanup bounded, menulis
+  receipt cancellation/failure terminal setelah lock dilepas, dan membedakan
+  `GATES_PENDING`, `RELEASE_ARTIFACT_READY`, serta `PRODUCTION_ACTIVATED`.
+  Matrix Linux disposable lulus contention, cancellation pada tiga fase,
+  partial pointer, service failure rollback, accepted reactivation, receipt,
+  dan cleanup tanpa mengakses production path/shared lock. Correction round
+  kedua mengunci mode executable verifier restore dalam Git setelah rollback
+  drill pertama berhenti fail-closed sebelum pointer berpindah. Full PHP
+  1.327/1.327 (14.883 assertion), focused 24/24 (379 assertion),
+  typecheck/build, tooling 7/7, browser 4/4, Pint, serta audit Composer/npm nol
+  lulus. Backup terenkripsi fresh/checksum/disposable restore, verifier 23/23,
+  smoke/security 3/3, authenticated Owner/Staff UAT, dan actual rollback ke
+  `20260831004436-257df79` lalu reaktivasi accepted release lulus. Migrasi tidak
+  berubah dan pending 0. Status `CONFIRMED / MERGED / SOURCE_PUSHED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED /
+  BUSINESS_READY=false`.
 
 - Correction harness S381 pada feature source
   `1c44ca1636ab0c051449d799bcfd454a4544f7b8` sudah merge melalui PR #88 ke

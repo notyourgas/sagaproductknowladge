@@ -1,5 +1,21 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-31 - SagaBook S382 production safety sync
+
+- Ringkasan: sinkronisasi wrapper-owned shared lock, interrupt-safe cleanup,
+  terminal cancellation receipt, state manifest non-overclaim, release, UAT,
+  dan rollback drill aktual.
+- Provenance: exact main `9d599c862cbdd4c650f53981a69da123ca4b3c7a`, immutable release
+  `20260831010633-9d599c8`, rollback `20260831004436-257df79`.
+- Evidence: full PHP 1.327/1.327 (14.883 assertion), focused 24/24,
+  Linux disposable matrix, build/typecheck/tooling/browser/Pint, audit nol,
+  encrypted backup/checksum/disposable restore, verifier 23/23,
+  smoke/security 3/3, authenticated Owner/Staff UAT, dan rollback/reactivation.
+- Klasifikasi: `CONFIRMED / MERGED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / UAT_ACCEPTED / BUSINESS_READY=false`.
+- Dokumen terdampak: Product, dossier, ledger/changelog SagaBook, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-08-31 - SagaBook S381 staging-ready sync
 
 - Ringkasan: menyinkronkan correction wrapper Linux disposable, matrix recovery,

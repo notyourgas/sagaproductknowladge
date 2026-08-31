@@ -7,15 +7,18 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Exact cumulative source S378
-  `561d48d1691cd264919a9ff80dbbd0e918b2b4f5` aktif pada immutable release
-  `20260830212427-561d48d`, dengan rollback S377
-  `20260830162300-6489030`. Full exact-main 1.320/1.320 (14.744 assertion),
+- Exact cumulative source S382
+  `9d599c862cbdd4c650f53981a69da123ca4b3c7a` aktif pada immutable release
+  `20260831010633-9d599c8`, dengan rollback
+  `20260831004436-257df79`. Full exact-main 1.327/1.327 (14.883 assertion),
   artifact immutable, encrypted backup/checksum/disposable restore, migration
   compatibility, atomic switch, verifier 23/23, report canary 32/32,
   migration pending 0, service/journal, public/security smoke 3/3, dan
   authenticated Owner/Staff UAT read-only lulus. Rollback drill aktual
-  mengaktifkan S377 lalu mereaktivasi S378 dengan health tetap hijau. Status
+  mengaktifkan rollback lalu mereaktivasi S382 dengan health tetap hijau.
+  Wrapper release memegang shared lock sendiri, cleanup interrupt-safe, menulis
+  receipt cancellation terminal, dan tidak mengklaim deployment sebelum
+  activation. Status
   `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / UAT_ACCEPTED /
   BUSINESS_READY=false`; pilot dua studio dan provider canary belum ditutup.
 
