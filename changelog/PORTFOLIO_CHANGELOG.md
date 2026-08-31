@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-08-31 - SagaBook S386 audio acceptance harness
+
+- Exact candidate `cc26c5da76b236402b42b8b79743da6a84d73d72` menambah Chromium
+  dua tab nyata untuk membuktikan satu booking hanya memicu satu batch chime
+  dan tidak replay setelah refocus.
+- Runbook UAT speaker fisik kini mempunyai 10 gate Chrome/Edge, Owner/Staff,
+  mute, isolasi akun/cabang, autoplay, koneksi lambat, dan draft safety.
+- Browser 6/6, focused PHP 23/23 (151 assertion), unit 9/9, typecheck/build,
+  serta audit dependency nol lulus. Tidak ada runtime/migration/deploy;
+  production tetap S385 dan status `IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED / AUDIO_UAT_PENDING / BUSINESS_READY=false`.
+
 ## 2026-08-31 - COYABAG settings operator navigator deployed
 
 - Exact source `693152f68d582bbdcb3fea564897056b094a1e7f` aktif pada release

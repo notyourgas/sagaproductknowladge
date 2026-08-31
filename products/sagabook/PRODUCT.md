@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
 Updated: 31 Agustus 2026 WIB
-Evidence status: Audio notifikasi admin S385 aktif pada exact merged main `154ab5e8e7049e1f0155b304ae9da7c03363bc69`, immutable release `20260831041833-154ab5e`, dengan rollback `20260831025235-58e1303`. Status `SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUDIO_UAT_PENDING / BUSINESS_READY=false`.
+Evidence status: Audio notifikasi admin S385 aktif pada exact merged main `154ab5e8e7049e1f0155b304ae9da7c03363bc69`, immutable release `20260831041833-154ab5e`, dengan rollback `20260831025235-58e1303`. Kandidat acceptance S386 exact `cc26c5da76b236402b42b8b79743da6a84d73d72` sudah `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`. Status keseluruhan `AUDIO_UAT_PENDING / BUSINESS_READY=false`.
 
 ## Tujuan dokumen
 
@@ -15,6 +15,18 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
+
+- S386 menambah acceptance browser dua tab nyata untuk membuktikan satu event
+  booking hanya menghasilkan satu batch chime lintas tab dan tidak diputar
+  ulang setelah fokus kembali. Runbook UAT speaker fisik kini menetapkan 10
+  gate untuk Chrome/Edge, Owner/Staff, mute, isolasi akun/cabang, autoplay,
+  koneksi lambat, dan draft safety. Browser 6/6, focused PHP 23/23 (151
+  assertion), unit audio/cursor 9/9, typecheck/build, serta audit Composer/npm
+  nol lulus pada exact candidate
+  `cc26c5da76b236402b42b8b79743da6a84d73d72`. Perubahan hanya acceptance
+  harness dan runbook, tanpa runtime, migration, atau deploy. Status
+  `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED / AUDIO_UAT_PENDING / BUSINESS_READY=false`.
 
 - S385 menambahkan chime admin berbeda untuk booking web baru dan
   bukti transfer yang perlu diverifikasi. Audio hanya berbunyi setelah

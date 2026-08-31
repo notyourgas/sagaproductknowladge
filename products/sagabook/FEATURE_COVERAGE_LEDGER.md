@@ -2,6 +2,18 @@
 
 Evidence cut-off: 31 Agustus 2026 WIB
 
+Acceptance audio S386 exact candidate
+`cc26c5da76b236402b42b8b79743da6a84d73d72` telah `CONFIRMED /
+SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+PRODUCTION_UNCHANGED`. Chromium dua tab nyata membuktikan satu booking
+sintetis menghasilkan tepat satu batch chime lintas tab dan tidak replay saat
+refocus. Browser 6/6, focused PHP 23/23 (151 assertion), unit audio/cursor 9/9,
+typecheck/build, serta audit Composer/npm nol lulus. Runbook UAT speaker fisik
+memuat 10 gate Chrome/Edge untuk Owner/Staff, mute, isolasi akun/cabang,
+autoplay recovery, koneksi lambat, dan draft safety. Perubahan hanya harness
+dan dokumentasi; production tetap S385 dan `AUDIO_UAT_PENDING /
+BUSINESS_READY=false`.
+
 Audio notifikasi admin S385 exact merged main
 `154ab5e8e7049e1f0155b304ae9da7c03363bc69` telah `CONFIRMED /
 SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /

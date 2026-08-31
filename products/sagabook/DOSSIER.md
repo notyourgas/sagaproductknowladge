@@ -7,6 +7,17 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Kandidat acceptance S386 exact
+  `cc26c5da76b236402b42b8b79743da6a84d73d72` menambah uji Chromium dua tab
+  nyata: satu booking sintetis menghasilkan tepat satu batch chime dan tidak
+  replay ketika tab kembali fokus. Runbook public-safe mendefinisikan 10 gate
+  UAT speaker fisik untuk Chrome/Edge, Owner/Staff, mute, isolasi akun/cabang,
+  autoplay recovery, koneksi lambat, dan draft safety. Browser 6/6, focused
+  PHP 23/23 (151 assertion), unit audio/cursor 9/9, typecheck/build, dan audit
+  dependency nol lulus. Tidak ada runtime, migration, atau production delta;
+  status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED / AUDIO_UAT_PENDING / BUSINESS_READY=false`.
+
 - Audio notifikasi admin S385 aktif pada exact merged main
   `154ab5e8e7049e1f0155b304ae9da7c03363bc69`, immutable release
   `20260831041833-154ab5e`, dengan rollback

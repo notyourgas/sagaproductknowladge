@@ -12,12 +12,37 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-08-31 11:30 WIB |
+| Waktu pembaruan terakhir | 2026-08-31 14:00 WIB |
 | Branch aktif | isolated exact `origin/main` worktree |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `4c15b88823d8290fa27f17bd887582393d519799` |
-| Informasi terakhir disinkronkan | SagaBook S385 exact main `154ab5e8e7049e1f0155b304ae9da7c03363bc69` aktif pada immutable release `20260831041833-154ab5e`. |
-| Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUDIO_UAT_PENDING / BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `e29b2dba2e499d648b326a023b41534ad45e7b21` |
+| Informasi terakhir disinkronkan | SagaBook S386 exact candidate `cc26c5da76b236402b42b8b79743da6a84d73d72`; production tetap S385 exact main `154ab5e8e7049e1f0155b304ae9da7c03363bc69`. |
+| Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / AUDIO_UAT_PENDING / BUSINESS_READY=false`. |
+
+## SagaBook S386 audio acceptance harness
+
+- Chromium dua tab nyata membuktikan satu booking sintetis menghasilkan tepat
+  satu batch chime lintas tab dan tidak replay setelah refocus.
+- Runbook public-safe mendefinisikan 10 gate UAT speaker fisik untuk
+  Chrome/Edge, Owner/Staff, mute, isolasi akun/cabang, autoplay recovery,
+  koneksi lambat, dan draft safety.
+- Exact candidate `cc26c5da76b236402b42b8b79743da6a84d73d72` lulus browser 6/6,
+  focused PHP 23/23 (151 assertion), unit audio/cursor 9/9, typecheck/build,
+  serta audit Composer/npm nol.
+- Tidak ada runtime, migration, release lock, atau deploy. Production tetap
+  S385 exact main `154ab5e8e7049e1f0155b304ae9da7c03363bc69`, immutable release
+  `20260831041833-154ab5e`, rollback `20260831025235-58e1303`.
+
+## File yang berubah pada sinkronisasi SagaBook S386
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG settings operator navigator
 

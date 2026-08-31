@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-08-31 - SagaBook S386 audio acceptance sync
+
+- Ringkasan: menyinkronkan acceptance Chromium dua tab exact-once dan runbook
+  UAT speaker fisik 10 gate tanpa mengubah status production.
+- Provenance: exact candidate
+  `cc26c5da76b236402b42b8b79743da6a84d73d72` berbasis exact active main
+  `154ab5e8e7049e1f0155b304ae9da7c03363bc69`.
+- Evidence: browser 6/6, focused PHP 23/23 (151 assertion), unit audio/cursor
+  9/9, typecheck/build, serta audit Composer/npm nol.
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / AUDIO_UAT_PENDING /
+  BUSINESS_READY=false`.
+- Dokumen terdampak: Product, dossier, ledger/changelog SagaBook, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-08-31 - COYABAG settings operator navigator sync
 
 - Ringkasan: menyinkronkan ringkasan faktual, pencarian, empat kategori tugas,

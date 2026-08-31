@@ -1,5 +1,25 @@
 # SagaBook Changelog
 
+## 2026-08-31 - S386 audio acceptance harness
+
+- Sebelum: deduplikasi chime lintas tab telah ditutup oleh unit/contract test,
+  tetapi belum ada browser acceptance yang membuka dua tab nyata dan
+  membuktikan refocus tidak memutar event yang sama.
+- Setelah: Chromium dua tab membuktikan satu booking sintetis menghasilkan
+  tepat satu batch chime dengan distribusi lintas tab dan nol replay setelah
+  refocus; runbook UAT speaker fisik menetapkan 10 gate Chrome/Edge.
+- Exact candidate `cc26c5da76b236402b42b8b79743da6a84d73d72` pada branch
+  `codex/s386-sagabook-audio-acceptance` lulus browser 6/6, focused PHP 23/23
+  (151 assertion), unit audio/cursor 9/9, typecheck/build, serta audit
+  Composer/npm nol.
+- Perubahan hanya acceptance harness dan runbook, tanpa runtime, migration,
+  release lock, atau deploy. Production tetap S385 exact main
+  `154ab5e8e7049e1f0155b304ae9da7c03363bc69`, release
+  `20260831041833-154ab5e`, rollback `20260831025235-58e1303`.
+- Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / AUDIO_UAT_PENDING /
+  BUSINESS_READY=false`; UAT dengar fisik Chrome/Edge tetap gate berikutnya.
+
 ## 2026-08-31 - S385 audio notifikasi admin production-activated
 
 - Sebelum: admin hanya melihat booking baru atau antrean verifikasi melalui
