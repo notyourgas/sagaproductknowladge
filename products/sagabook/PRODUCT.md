@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 1 September 2026 WIB
-Evidence status: SagaBook production aktif pada exact `fdf4155c0a294a6af8b41a819ba40e6d371f3ba8`, immutable release `20260901083148-fdf4155`. Kandidat indeks history closing S402 exact `010b2c67025c51494a66b12b1e8b6778667660c6` sudah `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; production belum memakai migration ini. Status keseluruhan `AUDIO_UAT_PENDING / PILOT_BLOCKED_BY_AUDIO_UAT / BUSINESS_READY=false`.
+Updated: 2 September 2026 WIB
+Evidence status: SagaBook production aktif pada exact `9ebdcf112f312f905c4213be9da1b80cf04e0ad3`, immutable release `20260901155248-9ebdcf1`, dengan rollback `20260901131847-88fd517`. Kandidat mobile Calendar S409 exact `f2198df3e548d2ca54856bc8e6df17d38a36bb0c` sudah `SOURCE_PUSHED / UIUX_VALIDATED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`. Status keseluruhan `AUDIO_UAT_PENDING / PILOT_BLOCKED_BY_AUDIO_UAT / BUSINESS_READY=false`.
 
 ## Tujuan dokumen
 
@@ -15,6 +15,17 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
+
+- S409 memperbaiki dialog panjang Blokir Waktu pada Calendar admin. Header dan
+  footer sekarang stabil, hanya area tengah yang menggulir, tombol tutup serta
+  aksi minimum 44 piksel, dan draft kotor dilindungi saat Escape atau tutup.
+  Focus trap, pemulihan fokus, label form, forced-colors, reduced-motion, serta
+  no-overflow tervalidasi pada 360x740, 375x667, 393x851, 430x932, 768x1024,
+  dan 1440x900. Regression browser gabungan lulus 88 dengan 11 expected skip,
+  full PHP 1.351/1.351 (15.133 assertion), build, design audit 26/0, serta audit
+  Composer/npm nol advisory. Perubahan tidak menyentuh API, database,
+  permission, tenant, atau workflow booking. Kandidat belum merge/deploy;
+  production tetap exact `9ebdcf112f312f905c4213be9da1b80cf04e0ad3`.
 
 - S402 memperbaiki indeks baca history closing lintas cabang setelah MySQL
   8.4.9 membuktikan kandidat prefix awal tidak dipilih optimizer dan masih

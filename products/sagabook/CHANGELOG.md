@@ -1,5 +1,24 @@
 # SagaBook Changelog
 
+## 2026-09-02 - S409 dialog mobile Blokir Waktu Calendar
+
+- Sebelum: dialog panjang memakai outer scroll; footer aksi dapat hilang pada
+  layar pendek, tombol tutup dapat tertahan header, dan Escape/tutup membuang
+  draft kotor tanpa konfirmasi.
+- Setelah: header/footer stabil, hanya area tengah yang menggulir, kontrol
+  minimum 44 piksel, dirty-draft confirm, focus trap/restore, label form,
+  forced-colors, reduced-motion, dan no-overflow diterapkan.
+- Matriks browser mencakup 360x740, 375x667, 393x851, 430x932, 768x1024, dan
+  1440x900; regression gabungan 88 pass/11 expected skip, full PHP
+  1.351/1.351 (15.133 assertion), build, design audit 26/0, serta audit
+  Composer/npm nol advisory lulus.
+- Exact source `f2198df3e548d2ca54856bc8e6df17d38a36bb0c`; tidak ada perubahan
+  API, database, permission, tenant, atau workflow bisnis.
+- Status `CONFIRMED / SOURCE_PUSHED / UIUX_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
+  Production tetap exact `9ebdcf112f312f905c4213be9da1b80cf04e0ad3`,
+  release `20260901155248-9ebdcf1`, rollback `20260901131847-88fd517`.
+
 ## 2026-09-01 - S402 indeks baca history closing lintas cabang
 
 - Sebelum: kandidat prefix tenant/date tetap tidak dipilih optimizer MySQL dan

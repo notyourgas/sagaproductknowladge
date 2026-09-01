@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-09-02 - SagaBook S409 mobile Calendar dialog safety
+
+- Dialog Blokir Waktu sekarang menjaga header/footer tetap terlihat, memakai
+  satu middle scroll, melindungi draft kotor, dan memulihkan fokus setelah
+  pembatalan keluar.
+- Enam viewport dari mobile kecil sampai desktop lulus tanpa overflow; browser
+  gabungan 88 pass/11 expected skip, full PHP 1.351/1.351, build, design, dan
+  audit dependency hijau.
+- Exact source `f2198df3e548d2ca54856bc8e6df17d38a36bb0c` berstatus
+  `SOURCE_PUSHED / UIUX_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
+- Production tetap exact `9ebdcf112f312f905c4213be9da1b80cf04e0ad3`,
+  release `20260901155248-9ebdcf1`, rollback `20260901131847-88fd517`.
+
 ## 2026-09-02 - Saga Member Goal 3 locks zero-new-spend VPS path
 
 - Andreas menetapkan incremental infrastructure spend Rp0; hanya domain/VPS

@@ -1,5 +1,18 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+SagaBook S409 exact `f2198df3e548d2ca54856bc8e6df17d38a36bb0c`
+memperbaiki dialog Blokir Waktu Calendar untuk mobile: header/footer stabil,
+satu middle scroll, aksi minimum 44 piksel, dirty-draft confirm, focus
+trap/restore, label form, forced-colors, reduced-motion, dan no-overflow.
+Matriks 360x740, 375x667, 393x851, 430x932, 768x1024, dan 1440x900 lulus;
+browser gabungan 88 pass/11 expected skip dan full PHP 1.351/1.351 dengan
+15.133 assertion lulus. Tidak ada perubahan API, database, permission, tenant,
+atau mutation bisnis. Status `CONFIRMED / SOURCE_PUSHED / UIUX_VALIDATED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED /
+BUSINESS_READY=false`. Production tetap exact
+`9ebdcf112f312f905c4213be9da1b80cf04e0ad3` pada release
+`20260901155248-9ebdcf1`, rollback `20260901131847-88fd517`.
+
 Pada 2 September 2026 Andreas mengganti opsi paid isolated staging Saga Member
 dengan kebijakan zero-new-spend. Incremental infrastructure budget adalah Rp0;
 hanya domain/VPS yang sudah aktif boleh direuse setelah audit fail-closed.

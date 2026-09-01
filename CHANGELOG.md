@@ -1,5 +1,22 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-02 - SagaBook S409 mobile Calendar dialog sync
+
+- Ringkasan: dialog Blokir Waktu memakai header/footer stabil, satu middle
+  scroll, target 44 piksel, dirty-draft confirm, focus restore, forced-colors,
+  reduced-motion, dan no-overflow.
+- Provenance: exact source `f2198df3e548d2ca54856bc8e6df17d38a36bb0c`;
+  production tetap exact `9ebdcf112f312f905c4213be9da1b80cf04e0ad3`,
+  release `20260901155248-9ebdcf1`, rollback `20260901131847-88fd517`.
+- Evidence: enam viewport mobile/tablet/desktop, browser gabungan 88 pass/11
+  expected skip, full PHP 1.351/1.351 (15.133 assertion), build, design audit
+  26/0, dan audit dependency nol advisory.
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / UIUX_VALIDATED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED /
+  BUSINESS_READY=false`.
+- Dokumen terdampak: Product, dossier, ledger/changelog SagaBook, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-09-02 - Saga Member zero-new-spend existing-VPS audit sync
 
 - Founder mengganti opsi paid staging dengan incremental budget Rp0 dan existing

@@ -12,10 +12,35 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-09-02 03:44 WIB |
-| Branch aktif | `main` |
+| Waktu pembaruan terakhir | 2026-09-02 WIB |
+| Branch aktif | `codex/s409-sagabook-mobile-calendar-dialog-knowledge` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `16e72a2` |
+| Baseline sebelum pembaruan | `72ad21c` |
+
+## SagaBook S409 mobile Calendar dialog
+
+- Exact source `f2198df3e548d2ca54856bc8e6df17d38a36bb0c` sudah
+  `SOURCE_PUSHED / UIUX_VALIDATED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`.
+- Enam viewport dari 360x740 sampai 1440x900 membuktikan header/footer stabil,
+  satu middle scroll, target 44 piksel, dirty-draft confirm, focus restore,
+  forced-colors, reduced-motion, dan no-overflow.
+- Browser gabungan 88 pass/11 expected skip, full PHP 1.351/1.351 (15.133
+  assertion), build, design audit 26/0, dan audit dependency nol advisory.
+- Production tetap exact `9ebdcf112f312f905c4213be9da1b80cf04e0ad3`,
+  release `20260901155248-9ebdcf1`, rollback `20260901131847-88fd517`;
+  `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi SagaBook S409
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## Saga Member Platform zero-new-spend existing-VPS audit
 

@@ -1,6 +1,22 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 1 September 2026 WIB
+Evidence cut-off: 2 September 2026 WIB
+
+Mobile Calendar Block Time dialog S409 exact
+`f2198df3e548d2ca54856bc8e6df17d38a36bb0c` telah `CONFIRMED /
+SOURCE_PUSHED / UIUX_VALIDATED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`. Dialog panjang sekarang
+memiliki header/footer stabil dan satu middle scroll; tombol tutup/aksi minimum
+44 piksel, dirty-draft confirm, focus trap/restore, label form, forced-colors,
+reduced-motion, serta no-overflow lulus pada 360x740, 375x667, 393x851,
+430x932, 768x1024, dan 1440x900. Regression browser gabungan 88 pass dengan
+11 expected skip, full PHP 1.351/1.351 (15.133 assertion), build, design audit
+26/0, serta audit Composer/npm nol advisory lulus. API, backend, database,
+permission, tenant, dan state bisnis tidak berubah. Production tetap exact
+`9ebdcf112f312f905c4213be9da1b80cf04e0ad3`, release
+`20260901155248-9ebdcf1`, rollback `20260901131847-88fd517`. Gate berikutnya
+adalah review/merge exact candidate, fresh exact-main integration gate, lalu
+physical-device UAT dan guarded release bila disetujui; `BUSINESS_READY=false`.
 
 Closing-history read indexes S402 exact candidate
 `010b2c67025c51494a66b12b1e8b6778667660c6` telah `CONFIRMED /
