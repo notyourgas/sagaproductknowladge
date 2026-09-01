@@ -1218,9 +1218,15 @@ GAP-004, bukan gap implementasi warna komponen.
 
 ### Saga Platform
 
+- `NEEDS CONFIRMATION`: Goal 6 strategy 528 unit sudah tervalidasi, tetapi
+  execution belum dimulai karena Goal 5 belum complete dan G519 belum
+  diterima. Exact institutional/network scope, independent reviewer,
+  external runtime/provider, 365-day proof dan business acceptance juga belum
+  tersedia. Seluruh external route, mass expansion dan production mutation
+  tetap `NO_GO`; preparation aman dibatasi lokal/read-only/synthetic dan Rp0.
 - `NEEDS CONFIRMATION`: seluruh 480 Goal 5 strategy unit sudah didisposisi dan
-  local/Rp0 preparation selesai, tetapi route awal (`EXPAND`,
-  `REMAIN_CONTROLLED`, `ITERATE`, atau `ROLLBACK`), exact cohort/outlet/tenant,
+  local/Rp0 preparation selesai, tetapi route awal (`EXPAND`, `HOLD`,
+  `ITERATE`, `CONTRACT`, atau `ROLLBACK`), exact cohort/outlet/tenant,
   independent reviewer, external runtime/provider, 180-day proof dan entry
   G417 belum tersedia. Seluruh external route tetap `NO_GO`.
 - `NEEDS CONFIRMATION`: apakah platform dijual eksternal atau hanya internal

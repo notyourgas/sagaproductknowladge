@@ -1,5 +1,20 @@
 # Portfolio Changelog
 
+## 2026-09-02 - Saga Member Goal 6 zero-cost unattended strategy
+
+- Goal 6 didefinisikan sebagai Durable Portfolio Institution & Strategic
+  Ecosystem Expansion, bukan automatic mass expansion.
+- Pack tervalidasi: 22 wave, 132 batch, 44 macro-sprint, 528 micro-sprint, 66
+  risiko, 22 automatic safety checkpoint dan 120 Goal 5 trace row.
+- Preparation lokal/read-only/synthetic boleh berjalan tanpa owner-wait pada
+  incremental spend Rp0; automatic safety checks tetap fail-closed.
+- Status `GOAL6_STRATEGY_VALIDATED / ZERO_COST_UNATTENDED_PREP_READY /
+  ENTRY_NO_GO / ROUTE_EXECUTION_NOT_STARTED / PRODUCTION_UNCHANGED /
+  BUSINESS_READY=false`; Goal 5/G519 belum diterima.
+- Tidak ada purchase, provider, data nyata, VPS/DNS, merge, deploy, activation,
+  network expansion atau NFC. Exact ops `f557f31bb0b04cfac4ac8399a33ab0ab4cc5336f`;
+  CI run `33561290143` lulus.
+
 ## 2026-09-02 - Saga Member Goal 5 zero-cost preparation executed
 
 - Seluruh 480 micro-sprint memiliki disposition: 59 local pass, 119 partial

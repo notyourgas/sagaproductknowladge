@@ -145,6 +145,14 @@ UAT, provider certification, settlement, deployment atau operating-cycle
 evidence. SagaOPS tetap `IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED` untuk
 scope Saga Member ini.
 
+Goal 6 strategy menempatkan SagaOPS pada operating model jaringan outlet,
+device fleet, payment/settlement/treasury, support dan bounded network
+expansion. Pack keseluruhan berisi 22 wave, 132 batch dan 528 micro-sprint.
+Seluruh artifact saat ini tetap planning/local/synthetic dengan incremental
+spend Rp0. Goal 5/G519, exact scope, device field evidence, provider
+certification, reconciliation dan operating proof belum tersedia, sehingga
+route SagaOPS tetap `NO_GO` dan NFC OFF.
+
 ## Technical overview
 
 Private canonical source menyediakan versioned API, domain service, operator

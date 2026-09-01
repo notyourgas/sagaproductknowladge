@@ -96,6 +96,18 @@ ROUTE_EXECUTION_NO_GO / PRODUCTION_UNCHANGED / BUSINESS_READY=false`; Goal 4
 G417, route/scope, independent review, runtime/provider, 180-day proof dan
 business acceptance tetap terbuka.
 
+Goal 6 dirancang sebagai durable portfolio institution dan strategic ecosystem
+expansion, bukan izin mass expansion. Strategy pack mencakup 22 wave, 132
+batch, 44 macro-sprint, 528 micro-sprint, 66 risiko, 22 automatic safety
+checkpoint, dan 120 trace row Goal 5. Cakupannya meliputi institutional
+governance, enterprise federation, FinOps, reliability, zero trust, privacy,
+data governance, Member/loyalty, SagaOPS, settlement, SagaBook network,
+developer platform, support, legal/audit dan bounded network expansion.
+Preparation aman boleh unattended pada boundary lokal/read-only/synthetic dan
+Rp0. Entry tetap `NO_GO`: Goal 5/G519, exact scope, reviewer independen,
+runtime/provider, serta bukti operasi 365 hari belum diterima. Tidak ada
+external mutation atau production activation; NFC tetap OFF.
+
 ## Fitur MVP
 
 Product-scoped account, subscription/entitlement, provisioning, audit, dan

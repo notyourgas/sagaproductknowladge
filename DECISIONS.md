@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-136 - Goal 6 memakai zero-cost unattended preparation lane
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-09-02 |
+| Topik | Strategi Goal 6 dan pekerjaan saat owner tidur |
+| Keputusan | Andreas meminta strategi Goal 6 dibuat tanpa biaya dan tanpa owner-wait gate. Goal 6 didefinisikan sebagai Durable Portfolio Institution & Strategic Ecosystem Expansion. Preparation local/read-only/synthetic boleh berjalan unattended pada incremental budget Rp0; automatic safety checks tetap fail-closed. |
+| Alasan | Perencanaan institusional dan ecosystem expansion perlu lengkap tanpa pembelian, data nyata, atau mutasi eksternal ketika owner tidak aktif. |
+| Alternatif yang dipertimbangkan | Menunggu Goal 5 complete sebelum merancang; menghapus automatic safety checks; menganggap strategy sebagai izin mass expansion. |
+| Dampak | Pack tervalidasi pada 22 wave, 132 batch, 44 macro-sprint, 528 micro-sprint, 66 risiko dan 22 checkpoint. Goal 6 execution, route, provider, data nyata, VPS/DNS, merge, deployment, activation, network expansion dan NFC tidak diotorisasi. |
+| Pemberi keputusan | Andreas |
+| Status | `CONFIRMED / GOAL6_STRATEGY_VALIDATED / ZERO_COST_UNATTENDED_PREP_READY / ENTRY_NO_GO / PRODUCTION_UNCHANGED`; ops `f557f31` |
+| Dokumen terkait | `products/saga-platform/PRODUCT.md`, `products/saga-platform/DOSSIER.md`, `products/sagaops/PRODUCT.md`, `products/sagaops/DOSSIER.md` |
+
 ## DEC-135 - Seluruh preparation Goal 5 dijalankan pada boundary lokal zero-cost
 
 | Field | Isi |

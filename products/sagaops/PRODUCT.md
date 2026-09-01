@@ -92,6 +92,11 @@ BUSINESS_READY=false`.
   pass, 119 partial local, 106 external gate, dan 196 waiting prerequisite.
   SagaOPS tetap hanya memiliki bukti source/local; outlet cluster, provider,
   hardware, payment nyata, deployment dan production belum dijalankan.
+- Strategi Goal 6 mencakup SagaOPS pada wave outlet network/device fleet dan
+  payment/settlement/treasury, dalam pack total 22 wave, 132 batch dan 528
+  micro-sprint. Ini hanya planning serta preparation lokal/Rp0; outlet network,
+  device commissioning, provider, settlement nyata, deploy dan activation
+  belum dimulai. Entry Goal 6 tetap `NO_GO` karena Goal 5/G519 belum diterima.
 - QRIS dynamic, thermal printer, real offline conflict resolution, dan provider
   nyata belum termasuk bukti production.
 

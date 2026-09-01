@@ -8,6 +8,17 @@ Mencatat perubahan material SagaOPS.
 
 Prototype dan production outlet adalah evidence level yang berbeda.
 
+## 2026-09-02 — Goal 6 strategy mencakup outlet network dan settlement
+
+- Goal 6 pack tervalidasi pada 22 wave, 132 batch, 44 macro-sprint dan 528
+  micro-sprint; SagaOPS tercakup pada outlet network/device fleet serta
+  payment/settlement/treasury.
+- Scope hanya planning dan preparation lokal/read-only/synthetic dengan Rp0.
+  Goal 5/G519, outlet, device, provider, settlement, deploy dan production
+  route tetap `NO_GO`; NFC tetap OFF.
+- Ops `f557f31bb0b04cfac4ac8399a33ab0ab4cc5336f`; CI run `33561290143`
+  lulus.
+
 ## 2026-09-02 — Goal 5 local/Rp0 preparation dieksekusi
 
 - Seluruh 480 Goal 5 micro-sprint didisposisi: 59 local pass, 119 partial
