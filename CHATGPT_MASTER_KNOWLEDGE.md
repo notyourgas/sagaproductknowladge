@@ -1,5 +1,16 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+SagaBook S400 exact `f03f0db8a7f7018b9405a17c9e1beb79084fd752`
+memperketat receipt UAT audio fisik ke schema v2: tiap Chrome/Edge harus memuat
+versi browser dotted-numeric, `audioOutput=physical_speaker`, konfirmasi
+observasi manual, dan `automationOnly=false`. Template pending fail-closed dan
+hasil automation/headless tidak boleh diklaim sebagai pendengaran fisik. TDD
+merah audio 7/10 dan pilot 17/22 menjadi hijau 10/10 dan 22/22; authenticated
+UAT 15/15, typecheck/build, serta audit dependency nol lulus. Ini tooling-only;
+production tetap S385 exact main `154ab5e8e7049e1f0155b304ae9da7c03363bc69`,
+release `20260831041833-154ab5e`, rollback `20260831025235-58e1303`. UAT speaker
+nyata dan pilot masih pending; `BUSINESS_READY=false`.
+
 COYABAG exact source `a84966925bb1ce4f9f22658362002e8e9b9d6b1d`
 aktif pada immutable release `20260901-a849669`, rollback
 `20260901-d09960c`. Payment Detail tidak lagi mengeksekusi keputusan review

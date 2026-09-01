@@ -2,6 +2,17 @@
 
 Evidence cut-off: 1 September 2026 WIB
 
+Manual-observation boundary S400 exact
+`f03f0db8a7f7018b9405a17c9e1beb79084fd752` telah `CONFIRMED /
+SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+PRODUCTION_UNCHANGED`. Receipt audio schema v2 mensyaratkan versi Chrome/Edge,
+speaker fisik, observasi manual, dan bukan automation-only; template pending
+tidak dapat lolos. TDD merah audio 7/10 dan pilot 17/22 menjadi hijau 10/10
+dan 22/22; authenticated UAT 15/15, typecheck/build, audit dependency nol, dan
+diff check lulus. Production tetap S385. Gap READY tunggal tetap pelaksanaan
+UAT speaker Chrome/Edge nyata; pilot belum dapat diterima dan
+`BUSINESS_READY=false`.
+
 Pilot prerequisite binding S399 exact
 `d86e8fc8fb7945042ee17a9130e01b53af29a752` telah `CONFIRMED /
 SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /

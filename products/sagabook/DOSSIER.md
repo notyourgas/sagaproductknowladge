@@ -7,6 +7,16 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- S400 exact `f03f0db8a7f7018b9405a17c9e1beb79084fd752` menutup gap
+  bahwa receipt otomatis/headless sebelumnya dapat memiliki bentuk yang mirip
+  evidence dengar fisik. Schema v2 sekarang mewajibkan versi Chrome/Edge
+  dotted-numeric, output speaker fisik, konfirmasi observasi manual, dan
+  `automationOnly=false`; template pending sengaja fail-closed. TDD merah
+  audio 7/10 dan pilot 17/22 menjadi hijau 10/10 dan 22/22, disertai
+  authenticated UAT 15/15, typecheck/build, audit dependency nol, dan diff
+  check. Tooling-only; production tetap S385, UAT speaker dan pilot masih
+  pending, serta `BUSINESS_READY=false`.
+
 - S399 exact `d86e8fc8fb7945042ee17a9130e01b53af29a752` menutup jalur
   bypass pilot yang sebelumnya hanya mengikat authenticated UAT dan otorisasi.
   Schema pilot v3 kini mewajibkan receipt physical audio UAT tervalidasi untuk

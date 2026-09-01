@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-09-01 - SagaBook S400 manual physical-audio evidence boundary
+
+- Exact source `f03f0db8a7f7018b9405a17c9e1beb79084fd752` menaikkan receipt
+  audio ke schema v2 dengan versi Chrome/Edge, speaker fisik, observasi manual,
+  dan penolakan automation-only.
+- TDD merah audio 7/10 dan pilot 17/22 menjadi hijau 10/10 dan 22/22;
+  authenticated UAT 15/15, typecheck/build, audit dependency nol, dan diff
+  check lulus.
+- Tooling-only tanpa runtime/migration/deploy; production tetap S385. UAT
+  speaker nyata dan pilot masih pending; `BUSINESS_READY=false`.
+
 ## 2026-09-01 - COYABAG guarded payment review production
 
 - Source `a84966925bb1ce4f9f22658362002e8e9b9d6b1d` aktif pada release `20260901-a849669`; rollback `20260901-d09960c`.

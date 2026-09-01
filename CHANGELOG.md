@@ -1,5 +1,21 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-01 - SagaBook S400 manual audio observation sync
+
+- Ringkasan: receipt audio schema v2 kini memisahkan tegas hasil
+  automation/headless dari observasi speaker fisik manusia.
+- Provenance: exact source `f03f0db8a7f7018b9405a17c9e1beb79084fd752`;
+  production tetap S385 exact main `154ab5e8e7049e1f0155b304ae9da7c03363bc69`,
+  release `20260831041833-154ab5e`, rollback `20260831025235-58e1303`.
+- Evidence: TDD merah audio 7/10 dan pilot 17/22 menjadi hijau 10/10 dan
+  22/22; authenticated UAT 15/15, typecheck/build, audit Composer/npm nol, dan
+  diff check lulus.
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / AUDIO_UAT_PENDING /
+  PILOT_BLOCKED_BY_AUDIO_UAT / BUSINESS_READY=false`.
+- Dokumen terdampak: Product, dossier, ledger/changelog SagaBook, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-09-01 - COYABAG guarded payment review production sync
 
 - Exact source `a84966925bb1ce4f9f22658362002e8e9b9d6b1d` aktif pada immutable release `20260901-a849669`; rollback `20260901-d09960c`.

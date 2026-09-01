@@ -12,10 +12,32 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-09-01 13:05 WIB |
-| Branch aktif | `codex/coyabag-customer-merge-knowledge-final` |
+| Waktu pembaruan terakhir | 2026-09-01 13:15 WIB |
+| Branch aktif | `codex/s400-sagabook-audio-uat-manual-observation-knowledge` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `570ab7f73cb05cffe75bfdbfd8e391053bdedb12` |
+| Baseline sebelum pembaruan | `fce2b53aa3989f40f62d797c0088602861ce0d8d` |
+
+## SagaBook S400 manual audio observation boundary
+
+- Exact source `f03f0db8a7f7018b9405a17c9e1beb79084fd752` sudah
+  `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- Schema audio v2 mewajibkan versi Chrome/Edge, speaker fisik, observasi manual,
+  dan bukan automation-only; template pending tidak dapat lolos.
+- TDD merah audio 7/10 dan pilot 17/22 menjadi hijau 10/10 dan 22/22;
+  authenticated UAT 15/15, typecheck/build, audit dependency nol, dan diff
+  check lulus. Production tetap S385; UAT speaker/pilot tetap pending dan
+  `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi SagaBook S400
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG guarded payment review production
 

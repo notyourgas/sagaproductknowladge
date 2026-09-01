@@ -1,5 +1,22 @@
 # SagaBook Changelog
 
+## 2026-09-01 - S400 manual-observation boundary untuk UAT audio
+
+- Sebelum: receipt audio memuat hasil browser dan gate, tetapi belum
+  membedakan tegas bukti automation/headless dari pendengaran speaker manusia.
+- Setelah: schema v2 mewajibkan versi Chrome/Edge dotted-numeric,
+  `audioOutput=physical_speaker`, `manualObservationConfirmed=true`, dan
+  `automationOnly=false`; template pending menggunakan nilai fail-closed.
+- Exact source `f03f0db8a7f7018b9405a17c9e1beb79084fd752` lulus TDD merah
+  audio 7/10 dan pilot 17/22 lalu hijau 10/10 dan 22/22, authenticated UAT
+  15/15, typecheck/build, audit Composer/npm nol, dan diff check.
+- Perubahan hanya validator, test, dan runbook; production tetap S385 exact
+  main `154ab5e8e7049e1f0155b304ae9da7c03363bc69`, release
+  `20260831041833-154ab5e`, rollback `20260831025235-58e1303`.
+- Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / AUDIO_UAT_PENDING /
+  PILOT_BLOCKED_BY_AUDIO_UAT / BUSINESS_READY=false`.
+
 ## 2026-09-01 - S399 physical audio UAT menjadi prasyarat pilot
 
 - Sebelum: evidence pilot dua studio terikat authenticated UAT dan otorisasi,
