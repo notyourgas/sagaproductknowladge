@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-01 - SagaBook S399 pilot prerequisite binding sync
+
+- Ringkasan: evidence pilot dua studio schema v3 sekarang mewajibkan receipt
+  physical audio UAT tervalidasi selain authenticated UAT dan otorisasi.
+- Provenance: exact source `d86e8fc8fb7945042ee17a9130e01b53af29a752`;
+  production tetap S385 exact main `154ab5e8e7049e1f0155b304ae9da7c03363bc69`,
+  release `20260831041833-154ab5e`, rollback `20260831025235-58e1303`.
+- Evidence: pilot 22/22, audio UAT 9/9, authenticated UAT 15/15,
+  typecheck/build, audit Composer/npm nol, dan diff check lulus.
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / AUDIO_UAT_PENDING /
+  PILOT_BLOCKED_BY_AUDIO_UAT / BUSINESS_READY=false`.
+- Dokumen terdampak: Product, dossier, ledger/changelog SagaBook, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-09-01 - COYABAG support access review production sync
 
 - Exact source `76a5e610daaa2ad1df3c2b3a17e6da326e4836c3` aktif pada immutable release `20260901-76a5e61`; rollback `20260901-4ebee58`.

@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-09-01 - SagaBook S399 pilot prerequisite binding
+
+- Exact source `d86e8fc8fb7945042ee17a9130e01b53af29a752` menaikkan evidence
+  pilot dua studio ke schema v3 dan mewajibkan receipt UAT audio fisik yang
+  tervalidasi serta terikat exact source/release/digest otorisasi.
+- Pilot 22/22, audio UAT 9/9, authenticated UAT 15/15, typecheck/build, dan
+  audit dependency nol lulus; receipt invalid atau hash mismatch fail-closed.
+- Tooling-only tanpa runtime/migration/deploy; production tetap S385. UAT
+  speaker Chrome/Edge masih pending, pilot belum diterima, dan
+  `BUSINESS_READY=false`.
+
 ## 2026-09-01 - COYABAG support access review production
 
 - Source `76a5e610daaa2ad1df3c2b3a17e6da326e4836c3` aktif pada release `20260901-76a5e61`; rollback `20260901-4ebee58`.

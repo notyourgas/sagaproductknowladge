@@ -2,6 +2,18 @@
 
 Evidence cut-off: 1 September 2026 WIB
 
+Pilot prerequisite binding S399 exact
+`d86e8fc8fb7945042ee17a9130e01b53af29a752` telah `CONFIRMED /
+SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+PRODUCTION_UNCHANGED`. Schema evidence pilot dua studio v3 sekarang mewajibkan
+authenticated UAT, physical audio UAT, dan otorisasi yang terikat exact
+source/release serta SHA-256 file aktual. Receipt audio hilang, gagal,
+wrong-provenance, atau hash mismatch ditolak fail-closed. Tooling pilot 22/22,
+audio UAT 9/9, authenticated UAT 15/15, typecheck/build, audit dependency nol,
+dan diff check lulus. Production tetap S385. Gap READY tunggal berikutnya
+adalah pelaksanaan UAT speaker Chrome/Edge; pilot dua studio belum dapat
+diterima dan `BUSINESS_READY=false`.
+
 Validator evidence UAT audio fisik S398 exact
 `69c289958ec2acbcde27b56b915fcd1e8d21cbb2` telah `CONFIRMED /
 SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /

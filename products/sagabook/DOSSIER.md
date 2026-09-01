@@ -7,6 +7,16 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- S399 exact `d86e8fc8fb7945042ee17a9130e01b53af29a752` menutup jalur
+  bypass pilot yang sebelumnya hanya mengikat authenticated UAT dan otorisasi.
+  Schema pilot v3 kini mewajibkan receipt physical audio UAT tervalidasi untuk
+  exact source/release/digest otorisasi yang sama dan mengikat SHA-256 file
+  aktual ke evidence pilot. Missing/failed/wrong-provenance receipt dan hash
+  mismatch gagal tertutup tanpa membocorkan path. Tooling 22/22 + 9/9 + 15/15,
+  typecheck/build, dan audit dependency nol lulus. Ini tooling-only; production
+  tetap S385, UAT speaker fisik masih pending, pilot belum diterima, dan
+  `BUSINESS_READY=false`.
+
 - S398 exact `69c289958ec2acbcde27b56b915fcd1e8d21cbb2` menutup gap
   struktur receipt UAT audio fisik dengan generator template create-only dan
   validator fail-closed. Bukti hanya diterima untuk exact provenance S385,

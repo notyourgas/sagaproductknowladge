@@ -1,5 +1,24 @@
 # SagaBook Changelog
 
+## 2026-09-01 - S399 physical audio UAT menjadi prasyarat pilot
+
+- Sebelum: evidence pilot dua studio terikat authenticated UAT dan otorisasi,
+  tetapi belum wajib membuktikan receipt UAT audio fisik yang tervalidasi.
+- Setelah: schema pilot v3 mewajibkan `audioUatAccepted=true`, receipt physical
+  audio UAT exact source/release/digest otorisasi, dan SHA-256 byte file aktual.
+- Receipt hilang, gagal, malformed, wrong-provenance, atau hash mismatch ditolak
+  fail-closed tanpa membocorkan path maupun digest restricted.
+- Exact source `d86e8fc8fb7945042ee17a9130e01b53af29a752` lulus pilot evidence
+  22/22, audio UAT evidence 9/9, authenticated UAT evidence 15/15,
+  typecheck/build, audit Composer/npm nol, dan diff check.
+- Perubahan hanya tooling/test/dokumentasi; tidak ada runtime, migration,
+  release lock, atau deploy. Production tetap S385 exact main
+  `154ab5e8e7049e1f0155b304ae9da7c03363bc69`, release
+  `20260831041833-154ab5e`, rollback `20260831025235-58e1303`.
+- Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / AUDIO_UAT_PENDING /
+  PILOT_BLOCKED_BY_AUDIO_UAT / BUSINESS_READY=false`.
+
 ## 2026-09-01 - S398 validator evidence UAT audio fisik
 
 - Sebelum: runbook mempunyai matrix 10 gate, tetapi receipt Chrome/Edge belum

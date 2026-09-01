@@ -12,10 +12,32 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-09-01 11:02 WIB |
-| Branch aktif | `codex/s398-sagabook-audio-uat-evidence-knowledge` |
+| Waktu pembaruan terakhir | 2026-09-01 12:01 WIB |
+| Branch aktif | `codex/s399-sagabook-pilot-audio-prerequisite-knowledge` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `85dd6ac66312805912864ac98374918ac52f9652` |
+| Baseline sebelum pembaruan | `dcbb5e80ff3af6c7d847369f7ea39205903a4ab3` |
+
+## SagaBook S399 pilot prerequisite binding
+
+- Exact source `d86e8fc8fb7945042ee17a9130e01b53af29a752` sudah
+  `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- Evidence pilot schema v3 wajib membaca authenticated UAT dan physical audio
+  UAT receipt, memvalidasi exact source/release/digest otorisasi, serta mengikat
+  hash file aktual. Receipt invalid atau mismatch gagal tertutup.
+- Tooling 22/22 + 9/9 + 15/15, typecheck/build, audit dependency nol, dan diff
+  check lulus. Production tetap S385; UAT speaker dan pilot tetap pending,
+  `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi SagaBook S399
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG support access review production
 

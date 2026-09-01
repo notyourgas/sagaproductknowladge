@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
 Updated: 1 September 2026 WIB
-Evidence status: Audio notifikasi admin S385 aktif pada exact merged main `154ab5e8e7049e1f0155b304ae9da7c03363bc69`, immutable release `20260831041833-154ab5e`, dengan rollback `20260831025235-58e1303`. S398 exact `69c289958ec2acbcde27b56b915fcd1e8d21cbb2` menambah validator public-safe untuk receipt UAT audio fisik Chrome/Edge dan sudah `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`. Status keseluruhan `AUDIO_UAT_PENDING / BUSINESS_READY=false`.
+Evidence status: Audio notifikasi admin S385 aktif pada exact merged main `154ab5e8e7049e1f0155b304ae9da7c03363bc69`, immutable release `20260831041833-154ab5e`, dengan rollback `20260831025235-58e1303`. S399 exact `d86e8fc8fb7945042ee17a9130e01b53af29a752` membuat receipt UAT audio fisik tervalidasi menjadi prasyarat wajib evidence pilot dua studio dan sudah `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`. Status keseluruhan `AUDIO_UAT_PENDING / PILOT_BLOCKED_BY_AUDIO_UAT / BUSINESS_READY=false`.
 
 ## Tujuan dokumen
 
@@ -15,6 +15,16 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
+
+- S399 menaikkan kontrak evidence pilot dua studio ke schema v3. CLI sekarang
+  wajib membaca dan memvalidasi receipt authenticated UAT serta receipt UAT
+  audio fisik untuk exact source/release dan digest otorisasi yang sama, lalu
+  mengikat kedua hash file aktual ke evidence pilot. Evidence tanpa
+  `audioUatAccepted=true`, receipt invalid, provenance salah, atau hash tidak
+  cocok gagal tertutup. Tooling pilot 22/22, audio UAT 9/9, authenticated UAT
+  15/15, typecheck/build, dan audit Composer/npm nol lulus. Perubahan hanya
+  tooling/test/dokumentasi; production tidak berubah dan pilot dua studio belum
+  dapat diterima sampai UAT speaker Chrome/Edge selesai.
 
 - S398 menyediakan template create-only di luar repository dan validator
   fail-closed untuk receipt UAT audio fisik. Receipt harus terikat exact source,

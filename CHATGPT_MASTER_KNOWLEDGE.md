@@ -1,5 +1,16 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+SagaBook S399 exact `d86e8fc8fb7945042ee17a9130e01b53af29a752`
+membuat physical audio UAT receipt tervalidasi menjadi prasyarat wajib evidence
+pilot dua studio. Schema v3 membaca authenticated UAT dan audio UAT receipt,
+memastikan exact source/release serta digest otorisasi yang sama, dan mengikat
+SHA-256 byte file aktual; missing/failed/wrong-provenance receipt atau mismatch
+gagal tertutup. Tooling 22/22 + 9/9 + 15/15, typecheck/build, dan audit
+dependency nol lulus. Perubahan tidak mengubah runtime: production tetap S385
+exact main `154ab5e8e7049e1f0155b304ae9da7c03363bc69`, release
+`20260831041833-154ab5e`, rollback `20260831025235-58e1303`. UAT speaker fisik
+masih pending, pilot belum diterima, dan `BUSINESS_READY=false`.
+
 COYABAG exact source `76a5e610daaa2ad1df3c2b3a17e6da326e4836c3`
 aktif pada immutable release `20260901-76a5e61`, rollback
 `20260901-4ebee58`. Support Access kini memberi operator ringkasan
