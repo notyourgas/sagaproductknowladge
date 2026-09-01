@@ -1,5 +1,22 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-01 - SagaBook S402 closing-history read-index sync
+
+- Ringkasan: dua indeks additive menutup temporary-sort path pada history
+  closing lintas cabang tanpa mengubah data atau isolasi tenant/cabang.
+- Provenance: exact source `b1160aa9ca4bf3b92c6688c2f778fad43301b8d7`;
+  production tetap S385 exact main
+  `154ab5e8e7049e1f0155b304ae9da7c03363bc69`, release
+  `20260831041833-154ab5e`, rollback `20260831025235-58e1303`.
+- Evidence: benchmark sintetis 79,35x dan 15,13x; migration
+  fresh/rollback/reapply, database audit 98 tanpa failure, full Feature
+  1.303/1.303 (14.779 assertion), build/typecheck/Pint, serta audit dependency
+  nol lulus.
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
+- Dokumen terdampak: Product, dossier, ledger/changelog SagaBook, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-09-01 - Saga Member Platform Goal 2 local-only acceptance sync
 
 - Ringkasan: founder menyetujui staging dilewati untuk saat ini dan menerima

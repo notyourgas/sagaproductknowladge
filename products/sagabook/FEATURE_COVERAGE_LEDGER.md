@@ -2,6 +2,20 @@
 
 Evidence cut-off: 1 September 2026 WIB
 
+Closing-history read indexes S402 exact
+`b1160aa9ca4bf3b92c6688c2f778fad43301b8d7` telah `CONFIRMED /
+SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+PRODUCTION_UNCHANGED`. Baseline query all-branch hanya memakai prefix tenant
+indeks lama dan temporary sort; dua indeks additive kini mencakup
+tenant+date+ordering untuk closing dan revision history. Benchmark sintetis
+120.000 baris naik 79,35x dan 15,13x; migration fresh/rollback/reapply menjaga
+baris, database audit 98 tanpa failure, focused 36/36 (203 assertion), full
+Feature 1.303/1.303 (14.779 assertion), typecheck/build, Pint, serta audit
+dependency nol lulus. Tidak ada deploy atau perubahan production. Gap READY
+S402 berikutnya adalah execution plan dan rollback/reapply MySQL disposable
+terautentikasi sebelum kandidat boleh dipromosikan. UAT speaker Chrome/Edge dan
+pilot tetap residual produk; `BUSINESS_READY=false`.
+
 Release-chronology binding S401 exact
 `cd3a5e12d58d8e0b3aecf02b9470fad256396f2a` telah `CONFIRMED /
 SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /

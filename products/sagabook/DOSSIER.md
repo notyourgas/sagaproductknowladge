@@ -7,6 +7,19 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- S402 exact `b1160aa9ca4bf3b92c6688c2f778fad43301b8d7` menutup gap
+  query history closing lintas cabang yang sebelumnya hanya memakai prefix
+  tenant dari indeks lama lalu membuat temporary sort. Dua indeks additive
+  tenant+date+ordering baru mempercepat benchmark sintetis 120.000 baris
+  sebesar 79,35x untuk closing dan 15,13x untuk revision history. TDD awal
+  gagal karena indeks belum ada, lalu migration fresh/rollback/reapply,
+  database audit 98 tanpa failure, focused closing/report 36/36 (203
+  assertion), full Feature 1.303/1.303 (14.779 assertion), typecheck/build,
+  Pint, dan audit dependency nol lulus. Scope tenant/branch, permission, dan
+  data bisnis tidak berubah. Status `SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; execution plan MySQL
+  terautentikasi masih wajib sebelum release dan `BUSINESS_READY=false`.
+
 - S401 exact `cd3a5e12d58d8e0b3aecf02b9470fad256396f2a` menutup gap
   kronologi receipt: schema v3 mewajibkan `executedAt` berzona waktu, kalender
   release/observasi valid, dan observasi tidak lebih awal dari UTC timestamp

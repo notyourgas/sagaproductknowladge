@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
 Updated: 1 September 2026 WIB
-Evidence status: Audio notifikasi admin S385 aktif pada exact merged main `154ab5e8e7049e1f0155b304ae9da7c03363bc69`, immutable release `20260831041833-154ab5e`, dengan rollback `20260831025235-58e1303`. S401 exact `cd3a5e12d58d8e0b3aecf02b9470fad256396f2a` mengikat waktu receipt UAT audio fisik schema v3 ke waktu UTC immutable release dan sudah `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`. Status keseluruhan `AUDIO_UAT_PENDING / PILOT_BLOCKED_BY_AUDIO_UAT / BUSINESS_READY=false`.
+Evidence status: Audio notifikasi admin S385 aktif pada exact merged main `154ab5e8e7049e1f0155b304ae9da7c03363bc69`, immutable release `20260831041833-154ab5e`, dengan rollback `20260831025235-58e1303`. Kandidat indeks history closing S402 exact `b1160aa9ca4bf3b92c6688c2f778fad43301b8d7` sudah `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; production belum memakai migration ini. Status keseluruhan `AUDIO_UAT_PENDING / PILOT_BLOCKED_BY_AUDIO_UAT / BUSINESS_READY=false`.
 
 ## Tujuan dokumen
 
@@ -15,6 +15,16 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
+
+- S402 menambah indeks baca khusus history closing lintas cabang pada closing
+  utama dan revision ledger tanpa mengubah predicate tenant/cabang atau data
+  bisnis. Benchmark sintetis 120.000 baris mempercepat query closing rata-rata
+  dari 1,3833 ms ke 0,0174 ms (79,35x) dan revision history dari 1,2134 ms ke
+  0,0802 ms (15,13x), sekaligus menghilangkan temporary sort pada SQLite.
+  Migration fresh/rollback/reapply menjaga baris tetap utuh, database audit
+  98 tanpa failure, full Feature 1.303/1.303 (14.779 assertion), build,
+  typecheck, Pint, serta audit Composer/npm nol lulus. Kandidat belum dideploy;
+  parity dan execution plan MySQL terautentikasi tetap gate sebelum release.
 
 - S401 menaikkan receipt UAT audio fisik ke schema v3. `executedAt` wajib ISO
   8601 lengkap dengan zona waktu dan tidak boleh mendahului timestamp UTC pada

@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-09-01 - SagaBook S402 closing-history database read indexes
+
+- Exact source `b1160aa9ca4bf3b92c6688c2f778fad43301b8d7` menambah dua
+  indeks additive untuk history closing lintas cabang tanpa mengubah isolasi
+  tenant/cabang atau data bisnis.
+- Benchmark sintetis 120.000 baris membaik 79,35x untuk closing dan 15,13x
+  untuk revision history; migration rollback/reapply menjaga baris, database
+  audit 98 tanpa failure, full Feature 1.303/1.303, build dan audit dependency
+  lulus.
+- Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED / BUSINESS_READY=false`; MySQL disposable tetap gate
+  sebelum release.
+
 ## 2026-09-01 - Saga Member Platform Goal 2 local-only acceptance
 
 - Founder menerima `GOAL_2_LOCAL_VALIDATED` dan menyetujui staging dilewati
