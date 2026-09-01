@@ -1,5 +1,16 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+SagaBook S407 exact `566de9ee4d15df4a7c85325b6dd8c5f769941470`
+adalah kandidat integrasi S403+S406 di atas exact main Manual Booking
+`88fd51788e3de8950d6eac95a46dc87ece84d1ae`. Menu `Perlu ACC`, form
+OTS/WhatsApp, dan konfirmasi kapasitas tetap utuh; sidebar tetap opaque,
+single-active, contained, dan membawa route aktif ke area terlihat. Browser
+exact-candidate lulus 15 dengan 12 expected skips, backend role+Manual Booking
+21 test/255 assertion, build/typecheck/design 26/0, serta audit dependency
+nol. Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+PRODUCTION_UNCHANGED_BY_S407 / BUSINESS_READY=false`; physical-device UAT dan
+guarded release belum dilakukan.
+
 SagaBook S406 exact `f3d1ad30cba0849108efd07d70f07957cecb7b2c`,
 ditumpuk di atas S403, memperbaiki kehilangan konteks visual ketika route aktif
 berada jauh di bawah daftar sidebar mobile. Drawer kini otomatis menggulir

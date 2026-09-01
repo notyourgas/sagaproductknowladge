@@ -7,6 +7,18 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- S407 exact `566de9ee4d15df4a7c85325b6dd8c5f769941470`
+  mengintegrasikan tree S403+S406 di atas exact main Manual Booking
+  `88fd51788e3de8950d6eac95a46dc87ece84d1ae`. Cherry-pick bersih dan
+  screenshot final membuktikan menu `Perlu ACC` tetap ada, tab aktif tetap
+  tunggal, serta route rendah tetap otomatis terlihat. Gate browser lulus 15
+  dengan 12 expected project skips; backend role+Manual Booking 21 test (255
+  assertion), build 5.137 modul, typecheck, design audit 26/0, dan audit
+  dependency nol. Scope database/data flow tidak berubah; dampak server hanya
+  asset frontend build, tanpa endpoint/payload baru. Status `SOURCE_PUSHED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED_BY_S407 /
+  BUSINESS_READY=false`.
+
 - S406 exact `f3d1ad30cba0849108efd07d70f07957cecb7b2c`, ditumpuk di
   atas S403, memastikan item route aktif yang berada jauh di bawah daftar
   sidebar otomatis masuk viewport saat drawer mobile dibuka. Audit merah pada

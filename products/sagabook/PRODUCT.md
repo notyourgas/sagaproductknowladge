@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
 Updated: 1 September 2026 WIB
-Evidence status: perbaikan konteks route sidebar mobile S406 exact `f3d1ad30cba0849108efd07d70f07957cecb7b2c` sudah `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED_BY_S406` dan ditumpuk di atas S403 exact `9b9b30b9b68972014a1a1ab2a0730d955e882d76`. Kandidat indeks history closing S402 exact `010b2c67025c51494a66b12b1e8b6778667660c6` juga belum dideploy. Snapshot production terakhir yang diverifikasi sebelum penutupan S403 adalah exact `fdf4155c0a294a6af8b41a819ba40e6d371f3ba8`, immutable release `20260901083148-fdf4155`; jalur release SagaBook lain harus diverifikasi terpisah sebelum klaim eksternal. Status keseluruhan `AUDIO_UAT_PENDING / PILOT_BLOCKED_BY_AUDIO_UAT / BUSINESS_READY=false`.
+Evidence status: kandidat integrasi mobile shell/sidebar S407 exact `566de9ee4d15df4a7c85325b6dd8c5f769941470` sudah `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED_BY_S407`. Kandidat ini menggabungkan S403+S406 di atas exact main `88fd51788e3de8950d6eac95a46dc87ece84d1ae` tanpa menghilangkan navigasi atau alur Manual Booking. Kandidat indeks history closing S402 exact `010b2c67025c51494a66b12b1e8b6778667660c6` juga belum dideploy. Production aktif yang diverifikasi saat S407 adalah exact `88fd51788e3de8950d6eac95a46dc87ece84d1ae`, release `20260901131847-88fd517`; status keseluruhan `AUDIO_UAT_PENDING / PILOT_BLOCKED_BY_AUDIO_UAT / BUSINESS_READY=false`.
 
 ## Tujuan dokumen
 
@@ -15,6 +15,17 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
+
+- S407 mengintegrasikan koreksi shell/sidebar S403 dan konteks route aktif
+  S406 ke main Manual Booking terbaru. Menu `Perlu ACC`, form OTS/WhatsApp,
+  dan konfirmasi kapasitas tetap utuh; sidebar tetap opaque, tab aktif tunggal,
+  serta item aktif otomatis masuk area terlihat. Gate exact-candidate lulus 15
+  browser test dengan 12 expected project skips, termasuk route matrix,
+  mobile/tablet/desktop, landscape, effective 200%, forced-colors,
+  reduced-motion, dan alur Manual Booking. Role+Manual Booking backend lulus
+  21 test (255 assertion), build 5.137 modul, typecheck, design audit 26/0,
+  serta audit dependency nol. Tidak ada perubahan database, API, permission,
+  integrasi, release lock, atau production.
 
 - S406 menutup kehilangan konteks warna/tab aktif ketika sidebar mobile dibuka
   dari route yang berada jauh di bawah daftar. Item `aria-current="page"` kini

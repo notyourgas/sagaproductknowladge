@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-01 - SagaBook S407 mobile shell main-integration sync
+
+- Ringkasan: S403+S406 diintegrasikan ke exact main Manual Booking tanpa
+  kehilangan menu `Perlu ACC` atau alur OTS/WhatsApp/capacity confirmation.
+- Provenance: exact candidate
+  `566de9ee4d15df4a7c85325b6dd8c5f769941470`, baseline main
+  `88fd51788e3de8950d6eac95a46dc87ece84d1ae`.
+- Evidence public-safe: browser 15 pass/12 expected skips, backend 21 test/255
+  assertion, build/typecheck/design 26/0, serta audit dependency nol.
+- Klasifikasi `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED_BY_S407 /
+  BUSINESS_READY=false`.
+- Dokumen terdampak: Product, dossier, ledger/changelog SagaBook, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-09-01 - SagaBook S406 mobile active-route context sync
 
 - Ringkasan: sidebar mobile kini otomatis membawa item route aktif ke area

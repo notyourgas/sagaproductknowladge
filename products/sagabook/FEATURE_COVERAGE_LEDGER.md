@@ -2,6 +2,20 @@
 
 Evidence cut-off: 1 September 2026 WIB
 
+Mobile shell main integration S407 exact
+`566de9ee4d15df4a7c85325b6dd8c5f769941470` telah `CONFIRMED /
+SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+PRODUCTION_UNCHANGED_BY_S407`. S403+S406 diintegrasikan ke exact main
+`88fd51788e3de8950d6eac95a46dc87ece84d1ae`; navigasi `Perlu ACC` dan alur
+Manual Booking tetap utuh. Exact-candidate browser regression lulus 15 dengan
+12 expected project skips, termasuk 8 route x 320x700/390x844,
+mobile/tablet/desktop, landscape, effective 200%, forced-colors,
+reduced-motion, dan Manual Booking. Backend role+Manual Booking lulus 21 test
+(255 assertion), build 5.137 modul, typecheck, design audit 26/0, serta audit
+Composer/npm nol. Tidak ada database, API, permission, integrasi, lock, atau
+production yang berubah; physical-device UAT dan guarded release masih gate,
+`BUSINESS_READY=false`.
+
 Mobile active-route context S406 exact
 `f3d1ad30cba0849108efd07d70f07957cecb7b2c` telah `CONFIRMED /
 SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /

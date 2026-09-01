@@ -1,5 +1,24 @@
 # SagaBook Changelog
 
+## 2026-09-01 - S407 integrasi mobile shell ke main Manual Booking
+
+- Sebelum: S403 dan S406 hijau pada branch bertumpuk, tetapi belum berbasis
+  main `88fd517…` yang sudah membawa Manual Booking/`Perlu ACC` ke production.
+- Setelah: kedua koreksi mobile diintegrasikan bersih ke exact main terbaru;
+  menu Manual Booking, form OTS/WhatsApp, dan dua tahap konfirmasi kapasitas
+  tetap lulus bersama sidebar opaque, active state tunggal, no-overflow, dan
+  active-item visibility.
+- Evidence: browser 15 pass/12 expected project skips; backend role+Manual
+  Booking 21 test/255 assertion; build 5.137 modul, typecheck, design audit
+  26/0, npm/Composer audit nol, diff/provenance bersih. Screenshot 320 px
+  membuktikan `Perlu ACC` dan warna tab aktif tetap benar.
+- Exact candidate `566de9ee4d15df4a7c85325b6dd8c5f769941470`, branch
+  `codex/s407-sagabook-mobile-shell-main-integration`, baseline exact main
+  `88fd51788e3de8950d6eac95a46dc87ece84d1ae`.
+- Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED_BY_S407 /
+  BUSINESS_READY=false`; physical-device UAT dan guarded release belum.
+
 ## 2026-09-01 - S406 konteks route aktif sidebar mobile
 
 - Sebelum: pada route yang item navigasinya berada jauh di bawah daftar,

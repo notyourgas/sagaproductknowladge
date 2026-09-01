@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-09-01 - SagaBook S407 mobile shell main integration
+
+- Mengintegrasikan koreksi sidebar S403+S406 ke exact main Manual Booking
+  tanpa kehilangan menu `Perlu ACC`, form OTS/WhatsApp, atau konfirmasi
+  kapasitas.
+- Exact-candidate browser 15 pass/12 expected skips, backend 21 test/255
+  assertion, build/typecheck/design, dan audit dependency hijau.
+- Exact source `566de9ee4d15df4a7c85325b6dd8c5f769941470` berstatus
+  `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED_BY_S407 / BUSINESS_READY=false`.
+
 ## 2026-09-01 - SagaBook S406 mobile active-route context
 
 - Drawer mobile kini otomatis menampilkan item route aktif yang sebelumnya

@@ -12,10 +12,32 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-09-01 20:28 WIB |
-| Branch aktif | `codex/s406-sagabook-mobile-active-context-knowledge` |
+| Waktu pembaruan terakhir | 2026-09-01 22:36 WIB |
+| Branch aktif | `codex/s407-sagabook-mobile-main-integration-knowledge` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `0e5ea1b1e8205e3122055d5a2cb34c5bd77c8b34` |
+| Baseline sebelum pembaruan | `ec059d967b69303fcdd33a5c7b834c258c6b5ad2` |
+
+## SagaBook S407 mobile shell main integration
+
+- Exact candidate `566de9ee4d15df4a7c85325b6dd8c5f769941470`
+  menggabungkan S403+S406 di atas main `88fd517…` tanpa menghilangkan Manual
+  Booking atau menu `Perlu ACC`.
+- Browser exact-candidate 15 pass/12 expected skips; backend role+Manual
+  Booking 21 test/255 assertion; build/typecheck/design 26/0 dan audit
+  dependency nol.
+- Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED_BY_S407 / BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi SagaBook S407
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook S406 mobile active-route context
 
