@@ -123,10 +123,13 @@ integration. Owner self-review diterima sebagai owner review, bukan independent
 review. Tidak ada resource, billing, DNS, database, provider, pilot, atau
 production mutation.
 
-Strategi Goal 4 tersedia sebagai 18 wave, 108 batch, 36 macro-sprint dan 432
-micro-sprint. Preparation unattended dapat berjalan tanpa approval interaktif
-tetapi hanya read-only/local, synthetic-only dan incremental budget Rp0. Public
-cohort, outlet kedua, commercial tenant dan production route belum dimulai.
+Seluruh 432 micro-sprint Goal 4 kini memiliki disposition: 40 local pass, 107
+partial local, 88 external gate, dan 197 waiting prerequisite. Preparation
+read-only/local dan synthetic pada incremental budget Rp0 sudah dijalankan;
+angka partial, external, dan waiting bukan pass. Public cohort, outlet kedua,
+commercial tenant, provider nyata, deployment dan production route belum
+dimulai. Statusnya `GOAL_4_ZERO_COST_PREPARATION_EXECUTED /
+ROUTE_EXECUTION_NO_GO / PRODUCTION_UNCHANGED`, bukan Goal 4 complete.
 
 ## Technical overview
 

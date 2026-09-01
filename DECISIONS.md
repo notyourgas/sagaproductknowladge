@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-133 - Seluruh preparation Goal 4 dijalankan pada boundary lokal zero-cost
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-09-02 |
+| Topik | Eksekusi seluruh strategi Goal 4 |
+| Keputusan | Andreas meminta seluruh strategi Goal 4 dikerjakan. Otorisasi ini mengeksekusi semua pekerjaan read-only/local/synthetic yang aman dan memberi disposition pada setiap unit, tanpa memperluas izin ke external route atau production. |
+| Alasan | Seluruh strategy unit perlu dapat diaudit tanpa menganggap pekerjaan eksternal yang belum sah sebagai selesai. |
+| Alternatif yang dipertimbangkan | Menganggap 432 unit seluruhnya pass; menunggu seluruh blocker sebelum menjalankan persiapan; mengaktifkan route eksternal tanpa exit Goal 3. |
+| Dampak | Semua 432 micro-sprint terdisposisi menjadi 40 local pass, 107 partial local, 88 external gate, dan 197 waiting prerequisite. Incremental spend Rp0; route execution, provider, customer data, VPS/DNS, deployment, pilot dan production tetap dilarang. |
+| Pemberi keputusan | Andreas |
+| Status | `CONFIRMED / GOAL_4_ZERO_COST_PREPARATION_EXECUTED / ROUTE_EXECUTION_NO_GO / PRODUCTION_UNCHANGED / BUSINESS_READY=false`; ops `b1ec602` |
+| Dokumen terkait | `products/saga-platform/PRODUCT.md`, `products/saga-platform/DOSSIER.md`, `products/sagaops/PRODUCT.md`, `products/sagaops/DOSSIER.md` |
+
 ## DEC-132 - Goal 4 memiliki preparation lane unattended tanpa biaya baru
 
 | Field | Isi |

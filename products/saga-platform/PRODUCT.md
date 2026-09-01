@@ -96,11 +96,16 @@ Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
   bertabrakan, monitoring staging gagal, serta Customer Platform masih
   local-alpha tanpa durable PostgreSQL serving integration. Tidak ada purchase,
   resource, DNS, database, provider, pilot, atau perubahan production.
-- Strategi Goal 4 kini tervalidasi: 18 wave, 108 batch, 36 macro-sprint dan 432
-  micro-sprint. Preparation lane boleh berjalan unattended dengan budget Rp0,
-  tanpa menunggu approval interaktif, hanya untuk read-only/local dan data
-  sintetis. Route scale tetap `PLANNED_NOT_STARTED`; external, VPS/DNS,
-  provider, customer-data dan production mutation tetap dilarang.
+- Seluruh 432 micro-sprint Goal 4 kini memiliki disposition konservatif: 40
+  `LOCAL_PASS`, 107 `PARTIAL_LOCAL`, 88 `EXTERNAL_GATE`, dan 197
+  `WAITING_PREREQUISITE`. Baseline Goal 3 terbaru kembali lulus 17/17 local
+  gate dan lima source candidate terinventaris sebagai clean/canonical.
+- Statusnya `GOAL_4_ZERO_COST_PREPARATION_EXECUTED /
+  ROUTE_EXECUTION_NO_GO / PRODUCTION_UNCHANGED / BUSINESS_READY=false`, bukan
+  Goal 4 complete. Incremental spend tetap Rp0; tidak ada provider call,
+  customer data, VPS/DNS, deployment, pilot, route scale, atau production
+  mutation. Exact ops `b1ec6022e2cb3b0ceb6def9a9c73ce42ac0d8bd3` dan CI
+  exact commit lulus.
 
 ## Gap utama
 
