@@ -85,15 +85,17 @@ Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
   `EXTERNAL_GATE`, dan 130 `WAITING_PREREQUISITE`. Paket ops privat exact
   `e3a54319dfcefe9a3f2774c24f496e51b04e7197` dan CI exact commit lulus.
 - Status Goal 3: `GOAL_3_LOCAL_CANONICAL_EXECUTED /
-  EXTERNAL_RUNTIME_REOPENED_BLOCKED_BY_COST_AND_ACCESS / STAGING_NOT_PROVISIONED / PILOT_NOT_STARTED /
+  ZERO_NEW_SPEND_LOCKED / EXISTING_VPS_AUDITED / EXTERNAL_RUNTIME_NO_GO /
+  STAGING_NOT_PROVISIONED / PILOT_NOT_STARTED /
   IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
-  Goal 3 belum complete; independent review, external runtime, provider nyata,
+  Goal 3 belum complete; independent review, durable runtime, provider nyata,
   commissioning, pilot, dan production tetap gate terpisah.
-- Pada 2 September 2026 Andreas membuka kembali procurement staging maksimal
-  Rp100.000/bulan dan menerima owner self-review. Fresh Render assessment
-  menemukan satu paid web service saja mulai USD7 atau sekitar Rp124 ribu;
-  minimum persistent two-API topology sekitar USD30 atau Rp532 ribu. Tidak ada
-  resource/billing dibuat dan authenticated Render access belum tersedia.
+- Pada 2 September 2026 Andreas mengganti opsi paid staging menjadi kebijakan
+  nol biaya baru. Hanya domain/VPS yang sudah aktif boleh dipakai setelah audit
+  fail-closed. Audit read-only menemukan disk root 83%, staging legacy yang
+  bertabrakan, monitoring staging gagal, serta Customer Platform masih
+  local-alpha tanpa durable PostgreSQL serving integration. Tidak ada purchase,
+  resource, DNS, database, provider, pilot, atau perubahan production.
 
 ## Gap utama
 

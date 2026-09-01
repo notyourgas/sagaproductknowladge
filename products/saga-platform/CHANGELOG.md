@@ -8,6 +8,18 @@ Mencatat perubahan material control plane Saga.
 
 Fondasi production dan roadmap pemisahan boundary harus dibedakan.
 
+## 2026-09-02 — Goal 3 memakai jalur nol biaya baru dan existing VPS diaudit
+
+- Andreas mengganti opsi paid staging dengan kebijakan incremental spend Rp0;
+  hanya domain/VPS yang sudah aktif dapat dipakai setelah gate fail-closed.
+- Audit read-only menemukan disk root 83%, collision staging legacy, monitoring
+  staging gagal, PostgreSQL belum tersedia, dan source Customer Platform masih
+  local-alpha tanpa durable serving integration.
+- Deployment tetap `NO_GO`; tidak ada purchase, resource, DNS, database,
+  provider, pilot, atau production mutation.
+- Exact ops provenance `6129f1c48b7353d0badee95051880719c77176ef`;
+  CI exact commit lulus.
+
 ## 2026-09-02 — Staging procurement dibuka tetapi belum dapat diprovision
 
 - Andreas membuka kembali isolated staging dengan cap Rp100.000/bulan dan

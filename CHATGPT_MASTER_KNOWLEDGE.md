@@ -1,14 +1,16 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Pada 2 September 2026 Andreas membuka kembali procurement isolated staging
-Saga Member maksimal Rp100.000/bulan dan menerima owner self-review. Self-review
-tidak sama dengan independent review. Fresh Render assessment menunjukkan paid
-web mulai USD7 (sekitar Rp124 ribu) dan minimum persistent two-API topology
-sekitar USD30 (sekitar Rp532 ribu) per bulan. Authenticated Render access belum
-tersedia; tidak ada resource/billing, provider call, pilot, atau production
-mutation. Status `EXTERNAL_RUNTIME_REOPENED_BLOCKED_BY_COST_AND_ACCESS /
+Pada 2 September 2026 Andreas mengganti opsi paid isolated staging Saga Member
+dengan kebijakan zero-new-spend. Incremental infrastructure budget adalah Rp0;
+hanya domain/VPS yang sudah aktif boleh direuse setelah audit fail-closed.
+Audit read-only menemukan disk root 83%, collision staging legacy, monitor
+staging gagal, PostgreSQL belum tersedia, dan Customer Platform masih
+local-alpha tanpa durable PostgreSQL serving integration. Owner self-review
+tetap bukan independent review. Tidak ada purchase, resource, billing, DNS,
+database, provider call, pilot, atau production mutation. Status
+`ZERO_NEW_SPEND_LOCKED / EXISTING_VPS_AUDITED / EXTERNAL_RUNTIME_NO_GO /
 STAGING_NOT_PROVISIONED / PROVIDERS_OFF / PILOT_NOT_STARTED /
-PRODUCTION_UNCHANGED`; exact ops `515402d`, CI lulus.
+PRODUCTION_UNCHANGED`; exact ops `6129f1c`, CI lulus.
 
 Saga Member Platform Goal 3 telah dieksekusi sampai boundary lokal/kanonik.
 Strategi mencakup 20 wave, 120 batch, dan 480 micro-sprint; hasilnya 124

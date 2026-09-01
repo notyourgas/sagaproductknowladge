@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-09-02 - Saga Member Goal 3 locks zero-new-spend VPS path
+
+- Andreas menetapkan incremental infrastructure spend Rp0; hanya domain/VPS
+  yang sudah aktif boleh dipakai setelah audit fail-closed.
+- Audit read-only menemukan disk root 83%, collision staging legacy, monitor
+  staging gagal, PostgreSQL belum tersedia, dan durable Goal 3 serving runtime
+  belum siap.
+- Deployment tetap `NO_GO`. Tidak ada purchase, resource, billing, DNS,
+  database, provider, pilot, atau production mutation.
+- Exact ops `6129f1c48b7353d0badee95051880719c77176ef`; CI lulus.
+
 ## 2026-09-02 - Saga Member staging procurement reopened, provisioning blocked
 
 - Andreas membuka isolated staging procurement maksimal Rp100.000/bulan dan

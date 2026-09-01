@@ -8,7 +8,7 @@ sales, dan konten SagaOPS.
 ## Konteks dan status bukti
 
 - Updated: 2 September 2026
-- Delivery: `SOURCE_PUSHED / GOAL_3_LOCAL_CANONICAL_EXECUTED / EXTERNAL_RUNTIME_REOPENED_BLOCKED_BY_COST_AND_ACCESS / STAGING_NOT_PROVISIONED / IMPLEMENTED_NOT_DEPLOYED`
+- Delivery: `SOURCE_PUSHED / GOAL_3_LOCAL_CANONICAL_EXECUTED / ZERO_NEW_SPEND_LOCKED / EXISTING_VPS_AUDITED / EXTERNAL_RUNTIME_NO_GO / STAGING_NOT_PROVISIONED / IMPLEMENTED_NOT_DEPLOYED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED`
 
@@ -115,11 +115,13 @@ boundary lokal/kanonik sudah dijalankan dan diklasifikasikan. Dari 480 sprint,
 menunggu prerequisite. Angka external/waiting bukan pass dan Goal 3 belum
 complete.
 
-Procurement staging kini dibuka maksimal Rp100.000/bulan. Fresh Render cost
-assessment menempatkan minimum persistent two-API topology sekitar USD30 atau
-Rp532 ribu/bulan; authenticated Render access juga belum tersedia. Owner
-self-review diterima sebagai owner review, bukan independent review. Tidak ada
-resource atau billing dibuat.
+Kebijakan aktif kini incremental spend Rp0; hanya existing domain/VPS boleh
+dipakai setelah gate fail-closed. Audit read-only menemukan disk root 83%,
+collision dengan staging legacy, monitor staging gagal, PostgreSQL belum
+tersedia, dan Customer Platform masih local-alpha tanpa durable serving
+integration. Owner self-review diterima sebagai owner review, bukan independent
+review. Tidak ada resource, billing, DNS, database, provider, pilot, atau
+production mutation.
 
 ## Technical overview
 

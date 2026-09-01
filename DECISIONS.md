@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-131 - Goal 3 Saga Member memakai existing VPS/domain tanpa biaya baru
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-09-02 |
+| Topik | Kebijakan biaya dan target runtime Goal 3 |
+| Keputusan | Andreas menetapkan incremental infrastructure spend Rp0. Goal 3 tidak boleh membeli layanan baru; hanya domain dan VPS yang sudah aktif boleh direuse setelah audit capacity, collision, security, backup/rollback, dan monitoring lulus. |
+| Alasan | Seluruh layanan berbayar baru ditunda; domain/VPS existing menjadi satu-satunya jalur runtime yang diizinkan saat ini. |
+| Alternatif yang dipertimbangkan | Paid Render; managed database/cache; free tier disposable; tetap local-only. |
+| Dampak | Audit read-only existing VPS selesai dan tidak mengubah runtime. Deployment tetap NO_GO karena disk root 83%, collision staging legacy, monitor staging gagal, PostgreSQL belum tersedia, durable source runtime belum siap, dan independent review belum terpenuhi. Tidak ada purchase, resource, billing, DNS, database, provider, pilot, atau production mutation. |
+| Pemberi keputusan | Andreas |
+| Status | `CONFIRMED / ZERO_NEW_SPEND_LOCKED / EXISTING_VPS_AUDITED / EXTERNAL_RUNTIME_NO_GO / STAGING_NOT_PROVISIONED / PROVIDERS_OFF / PILOT_NOT_STARTED / PRODUCTION_UNCHANGED`; ops `6129f1c` |
+| Dokumen terkait | `products/saga-platform/PRODUCT.md`, `products/saga-platform/DOSSIER.md`, `products/sagaops/PRODUCT.md`, `products/sagaops/DOSSIER.md`, `GAPS.md` |
+
 ## DEC-130 - Procurement staging Saga Member dibuka dengan cap Rp100.000
 
 | Field | Isi |
@@ -32,7 +46,7 @@ keputusan pengganti.
 | Alternatif yang dipertimbangkan | Tetap local-only; Render persistent topology dengan cap lebih tinggi; disposable free preview; alternatif isolated VPS. |
 | Dampak | Self-review tercatat tetapi tidak diklaim independen. Fresh Render assessment menunjukkan satu paid web sekitar Rp124 ribu dan minimum persistent two-API topology sekitar Rp532 ribu per bulan, sehingga provisioning belum diizinkan dalam cap. Render access juga belum tersedia. Tidak ada billing/resource/provider/pilot/production mutation. |
 | Pemberi keputusan | Andreas |
-| Status | `CONFIRMED / PROCUREMENT_REOPENED / BLOCKED_BY_COST_AND_ACCESS / STAGING_NOT_PROVISIONED / PROVIDERS_OFF / PILOT_NOT_STARTED / PRODUCTION_UNCHANGED`; ops `515402d` |
+| Status | `DEPRECATED / SUPERSEDED_BY_DEC-131`; histori cap Rp100.000 dan hasil assessment tetap dipertahankan, tetapi kebijakan aktif kini incremental spend Rp0 dengan existing VPS/domain only; ops historis `515402d` |
 | Dokumen terkait | `products/saga-platform/PRODUCT.md`, `products/saga-platform/DOSSIER.md`, `products/sagaops/PRODUCT.md`, `products/sagaops/DOSSIER.md`, `GAPS.md` |
 
 ## DEC-129 - Goal 3 Saga Member Platform berjalan hanya sampai local/canonical boundary

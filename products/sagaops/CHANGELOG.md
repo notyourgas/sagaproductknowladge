@@ -8,6 +8,16 @@ Mencatat perubahan material SagaOPS.
 
 Prototype dan production outlet adalah evidence level yang berbeda.
 
+## 2026-09-02 — Zero-cost existing-VPS path audited, deployment tetap NO_GO
+
+- Andreas mengunci incremental spend Rp0; hanya domain/VPS yang sudah aktif
+  boleh direuse setelah capacity, collision, security dan rollback gate lulus.
+- Audit read-only menemukan disk root 83%, collision staging legacy, monitor
+  staging gagal, PostgreSQL belum ada, dan durable source runtime belum siap.
+- Tidak ada purchase, resource, billing, DNS, database, provider, pilot, atau
+  production mutation.
+- Ops `6129f1c48b7353d0badee95051880719c77176ef`; CI lulus.
+
 ## 2026-09-02 — External runtime reopened but blocked
 
 - Owner membuka procurement staging maksimal Rp100.000/bulan dan menerima

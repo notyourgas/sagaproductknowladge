@@ -60,11 +60,13 @@ pilot, production activation, dan business readiness belum dibuktikan.
 Goal 3 telah menjalankan seluruh pekerjaan yang sah pada boundary lokal dan
 kanonik. Dari 480 micro-sprint, 124 lulus lokal, 108 selesai sebagian secara
 lokal, 118 menunggu external gate, dan 130 menunggu prerequisite. Status ini
-bukan acceptance Goal 3 penuh: `G3E0` tetap tertutup. Procurement staging
-sudah dibuka kembali maksimal Rp100.000/bulan, tetapi minimum paid Render
-topology sekitar Rp532 ribu/bulan dan authenticated Render access belum ada.
-Tidak ada provider, pilot, deployment, activation, billing, atau perubahan
-production. Owner self-review tercatat tetapi bukan independent review.
+bukan acceptance Goal 3 penuh: `G3E0` tetap tertutup. Kebijakan aktif sekarang
+adalah nol biaya baru; hanya domain/VPS yang sudah aktif boleh digunakan.
+Audit read-only menemukan disk root 83%, collision dengan staging legacy,
+monitoring staging gagal, dan Customer Platform masih local-alpha tanpa
+durable PostgreSQL serving integration. Tidak ada provider, pilot, deployment,
+activation, billing, DNS/database, atau perubahan production. Owner self-review
+tercatat tetapi bukan independent review.
 
 ## Fitur MVP
 

@@ -12,10 +12,36 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-09-02 03:23 WIB |
+| Waktu pembaruan terakhir | 2026-09-02 03:44 WIB |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `65f7545` |
+| Baseline sebelum pembaruan | `16e72a2` |
+
+## Saga Member Platform zero-new-spend existing-VPS audit
+
+- `DEC-131` mengunci incremental infrastructure spend Rp0; hanya existing
+  domain/VPS boleh dipakai setelah gate fail-closed.
+- Audit read-only menemukan disk root 83%, collision staging legacy, monitor
+  staging gagal, PostgreSQL belum tersedia, dan durable serving runtime belum
+  siap. Deployment tetap `NO_GO`.
+- Tidak ada purchase, resource, billing, DNS, database, provider, pilot, atau
+  production mutation.
+- Exact ops `6129f1c48b7353d0badee95051880719c77176ef`; CI lulus.
+
+## File yang berubah pada sinkronisasi zero-new-spend
+
+- `products/saga-platform/PRODUCT.md`
+- `products/saga-platform/DOSSIER.md`
+- `products/saga-platform/CHANGELOG.md`
+- `products/sagaops/PRODUCT.md`
+- `products/sagaops/DOSSIER.md`
+- `products/sagaops/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `DECISIONS.md`
+- `GAPS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## Saga Member Platform external-runtime reopen
 
