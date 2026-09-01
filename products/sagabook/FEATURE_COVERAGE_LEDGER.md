@@ -1,6 +1,20 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 1 September 2026 WIB
+Evidence cut-off: 2 September 2026 WIB
+
+Mobile Promo & Voucher S410 exact
+`c952003ad64c9d2fb02d5f014e206a6b770bf339` telah `CONFIRMED /
+SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+PRODUCTION_UNCHANGED`. Tabel lebar yang merusak layout mobile diganti kartu
+responsif khusus mobile tanpa mengubah tabel desktop atau kontrak bisnis.
+Target aksi minimum 44 piksel, label aksesibel, kontras status, empty state,
+focus return, no-overflow, zoom 200%, forced-colors, reduced-motion, dan matrix
+lebar 320-430 piksel lulus. Focused 10/10 (78 assertion), full Feature
+1.318/1.318 (14.912 assertion), browser 2/2, CRUD 1/1, contract visual 10/10,
+typecheck/build/design audit, serta dependency audit Composer/OSV/npm nol.
+Production tetap exact `9ebdcf112f312f905c4213be9da1b80cf04e0ad3` pada release
+`20260901155248-9ebdcf1`; merge main dan guarded release belum dilakukan.
+UAT speaker Chrome/Edge dan pilot tetap residual; `BUSINESS_READY=false`.
 
 Closing-history read indexes S402 exact candidate
 `010b2c67025c51494a66b12b1e8b6778667660c6` telah `CONFIRMED /

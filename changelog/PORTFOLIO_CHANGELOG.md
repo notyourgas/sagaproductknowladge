@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-09-02 - SagaBook S410 mobile Promo & Voucher
+
+- Daftar Promo & Voucher mobile sekarang memakai kartu responsif tanpa
+  overflow; tabel desktop tetap dipertahankan.
+- Aksi minimum 44 piksel, label aksesibel, status berkontras, empty state,
+  focus return, zoom 200%, forced-colors, reduced-motion, dan matrix lebar
+  320-430 piksel telah divalidasi.
+- Exact `c952003ad64c9d2fb02d5f014e206a6b770bf339` lulus full Feature
+  1.318/1.318 (14.912 assertion), browser/CRUD/contract visual,
+  typecheck/build/design audit, serta dependency audit nol.
+- Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED / BUSINESS_READY=false`; production tetap exact
+  `9ebdcf112f312f905c4213be9da1b80cf04e0ad3`.
+
 ## 2026-09-02 - Saga Member all-goals local execution started
 
 - Master execution plan dan prompt Goal 0–6 tersedia dengan boundary Rp0.

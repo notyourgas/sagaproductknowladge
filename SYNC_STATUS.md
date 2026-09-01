@@ -12,10 +12,36 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-09-02 04:44 WIB |
-| Branch aktif | `main` |
+| Waktu pembaruan terakhir | 2026-09-02 05:00 WIB |
+| Branch aktif | `codex/s410-sagabook-mobile-promo-list-knowledge` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `c624755` |
+| Baseline sebelum pembaruan | `444ed16` |
+
+## SagaBook S410 mobile Promo & Voucher
+
+- Exact source `c952003ad64c9d2fb02d5f014e206a6b770bf339` mengubah daftar
+  mobile dari tabel lebar menjadi kartu responsif, dengan tabel desktop tetap.
+- Aksesibilitas dan responsive gate mencakup target 44 piksel, label
+  kontekstual, status berkontras, focus return, 320-430 piksel, landscape,
+  zoom 200%, forced-colors, reduced-motion, keyboard, dan no-overflow.
+- Full Feature 1.318/1.318 (14.912 assertion), focused/backend,
+  browser/CRUD/contract visual, typecheck/build/design audit, dan dependency
+  audit nol lulus.
+- Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED / BUSINESS_READY=false`; production tetap exact
+  `9ebdcf112f312f905c4213be9da1b80cf04e0ad3`, release
+  `20260901155248-9ebdcf1`.
+
+## File yang berubah pada sinkronisasi SagaBook S410
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## Saga Member all-goals local execution
 

@@ -1,5 +1,24 @@
 # SagaBook Changelog
 
+## 2026-09-02 - S410 mobile Promo & Voucher responsif
+
+- Sebelum: daftar Promo & Voucher memakai tabel lebar pada mobile sehingga
+  konten dan aksi dapat keluar viewport serta hierarki status sulit dipindai.
+- Setelah: mobile memakai kartu responsif dengan aksi minimum 44 piksel,
+  label aksesibel kontekstual, kontras status lebih kuat, empty state tunggal,
+  dan pemulihan fokus dialog; desktop tetap memakai tabel yang sama fungsinya.
+- Matrix browser memvalidasi lebar 320, 360, 375, 390, 393, 412, dan 430
+  piksel, landscape 740x360, desktop 1440x900, zoom 200%, forced-colors,
+  reduced-motion, keyboard/focus, no-overflow, serta tanpa error console/page.
+- Exact `c952003ad64c9d2fb02d5f014e206a6b770bf339` lulus focused
+  10/10 (78 assertion), full Feature 1.318/1.318 (14.912 assertion), browser
+  2/2, CRUD 1/1, contract visual 10/10, typecheck/build/design audit, dan audit
+  Composer/OSV/npm nol.
+- Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
+  Production aktif tetap exact `9ebdcf112f312f905c4213be9da1b80cf04e0ad3`,
+  release `20260901155248-9ebdcf1`.
+
 ## 2026-09-01 - S402 indeks baca history closing lintas cabang
 
 - Sebelum: kandidat prefix tenant/date tetap tidak dipilih optimizer MySQL dan

@@ -1,5 +1,18 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+SagaBook S410 exact `c952003ad64c9d2fb02d5f014e206a6b770bf339`
+memperbaiki daftar Promo & Voucher mobile yang sebelumnya dapat overflow dan
+merusak layout. Mobile kini memakai kartu responsif dengan target aksi minimum
+44 piksel, label aksesibel, status berkontras, empty state tunggal, focus
+return, zoom 200%, forced-colors, reduced-motion, dan no-overflow pada matrix
+lebar 320-430 piksel; desktop tetap memakai tabel. Full Feature 1.318/1.318
+(14.912 assertion), browser/CRUD/contract visual, typecheck/build/design audit,
+serta audit Composer/OSV/npm nol lulus. Status `CONFIRMED / SOURCE_PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED /
+BUSINESS_READY=false`; production aktif tetap exact
+`9ebdcf112f312f905c4213be9da1b80cf04e0ad3` pada release
+`20260901155248-9ebdcf1`.
+
 Saga Member Platform telah membuka program eksekusi Goal 0–6 hanya pada
 boundary lokal dan incremental spend Rp0. One-command local pilot launcher
 menghidupkan hub loopback, Member PWA, Customer API dan SagaOPS OWNER/STAFF

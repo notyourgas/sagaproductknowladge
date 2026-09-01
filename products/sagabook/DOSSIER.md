@@ -7,6 +7,19 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- S410 exact `c952003ad64c9d2fb02d5f014e206a6b770bf339` menutup kerusakan
+  layout Promo & Voucher pada mobile dengan kartu responsif khusus mobile dan
+  tetap mempertahankan tabel desktop. Aksi minimum 44 piksel, label aksesibel,
+  status berkontras, empty state tunggal, pemulihan fokus dialog, no-overflow,
+  zoom 200%, forced-colors, reduced-motion, serta matrix lebar 320-430 piksel
+  telah divalidasi. Focused backend lulus 10/10 (78 assertion), full Feature
+  1.318/1.318 (14.912 assertion), browser matrix 2/2, CRUD 1/1, contract visual
+  10/10, typecheck/build/design audit, dan tiga dependency audit nol. Status
+  `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED`; production aktif tetap exact
+  `9ebdcf112f312f905c4213be9da1b80cf04e0ad3`, release
+  `20260901155248-9ebdcf1`, dan `BUSINESS_READY=false`.
+
 - S402 exact candidate `010b2c67025c51494a66b12b1e8b6778667660c6`
   menutup gap query history closing lintas cabang pada MySQL. Kandidat awal
   dengan prefix tenant/date terbukti tidak dipilih optimizer dan masih

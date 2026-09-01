@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-02 - SagaBook S410 mobile Promo & Voucher sync
+
+- Knowledge SagaBook mencatat perubahan daftar Promo & Voucher mobile menjadi
+  kartu responsif dengan desktop table tetap utuh.
+- Evidence public-safe mencakup matrix 320-430 piksel, landscape, desktop,
+  zoom 200%, forced-colors, reduced-motion, keyboard/focus, no-overflow,
+  full Feature 1.318/1.318 (14.912 assertion), dan dependency audit nol.
+- Exact source `c952003ad64c9d2fb02d5f014e206a6b770bf339` berstatus
+  `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
+- Dokumen terdampak: Product, dossier, ledger/changelog SagaBook, portfolio,
+  master knowledge, dan status sinkronisasi.
+
 ## 2026-09-02 - Saga Member all-goals local execution sync
 
 - `DEC-137` mencatat dimulainya eksekusi Goal 0–6 dari aplikasi lokal terpadu

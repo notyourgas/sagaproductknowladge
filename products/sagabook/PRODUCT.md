@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 1 September 2026 WIB
-Evidence status: SagaBook production aktif pada exact `fdf4155c0a294a6af8b41a819ba40e6d371f3ba8`, immutable release `20260901083148-fdf4155`. Kandidat indeks history closing S402 exact `010b2c67025c51494a66b12b1e8b6778667660c6` sudah `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; production belum memakai migration ini. Status keseluruhan `AUDIO_UAT_PENDING / PILOT_BLOCKED_BY_AUDIO_UAT / BUSINESS_READY=false`.
+Updated: 2 September 2026 WIB
+Evidence status: SagaBook production aktif pada exact `9ebdcf112f312f905c4213be9da1b80cf04e0ad3`, immutable release `20260901155248-9ebdcf1`. Kandidat mobile Promo & Voucher S410 exact `c952003ad64c9d2fb02d5f014e206a6b770bf339` sudah `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; production belum memakai perubahan ini. Status keseluruhan `AUDIO_UAT_PENDING / PILOT_BLOCKED_BY_AUDIO_UAT / BUSINESS_READY=false`.
 
 ## Tujuan dokumen
 
@@ -15,6 +15,17 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
+
+- S410 memperbaiki pengalaman Promo & Voucher pada mobile: tabel lebar yang
+  memicu layout rusak diganti kartu responsif khusus mobile, sementara tabel
+  desktop tetap dipertahankan. Aksi memiliki target minimum 44 piksel, label
+  aksesibel kontekstual, status berkontras lebih kuat, empty state tunggal,
+  dan fokus kembali aman setelah dialog ditutup atau disimpan. Matrix browser
+  mencakup lebar 320-430 piksel, landscape, desktop 1440x900, zoom 200%,
+  forced-colors, reduced-motion, keyboard/focus, dan no-overflow. Full Feature
+  lulus 1.318/1.318 dengan 14.912 assertion; dependency audit Composer, OSV,
+  dan npm nol advisory/vulnerability. Status `SOURCE_PUSHED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`.
 
 - S402 memperbaiki indeks baca history closing lintas cabang setelah MySQL
   8.4.9 membuktikan kandidat prefix awal tidak dipilih optimizer dan masih
