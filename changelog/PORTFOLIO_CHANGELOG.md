@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-09-01 - SagaBook S398 physical audio UAT evidence validator
+
+- Exact source `69c289958ec2acbcde27b56b915fcd1e8d21cbb2` menambah template create-only dan validator fail-closed untuk receipt UAT speaker Chrome/Edge yang terikat exact source/release/digest otorisasi.
+- Validator mensyaratkan Owner+Staff, 20/20 gate, data sintetis, cleanup/reviewer, findings nol, dan public-safety; tooling gabungan 44/44, typecheck/build, serta audit dependency nol lulus.
+- Tooling-only tanpa runtime/migration/deploy; production tetap S385. UAT dengar fisik masih pending dan `BUSINESS_READY=false`.
+
 ## 2026-09-01 - SagaBook S397 hard-reload audio acceptance
 
 - Exact source `ff07a024a6017389343c965fc2c0046786b9ade3` membuktikan booking yang sudah diklaim tidak replay setelah hard reload, sedangkan booking baru berikutnya berbunyi tepat satu batch.

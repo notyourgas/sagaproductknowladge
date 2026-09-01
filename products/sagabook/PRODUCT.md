@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
 Updated: 1 September 2026 WIB
-Evidence status: Audio notifikasi admin S385 aktif pada exact merged main `154ab5e8e7049e1f0155b304ae9da7c03363bc69`, immutable release `20260831041833-154ab5e`, dengan rollback `20260831025235-58e1303`. Acceptance kumulatif S386-S397 exact `ff07a024a6017389343c965fc2c0046786b9ade3` sudah `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`. Status keseluruhan `AUDIO_UAT_PENDING / BUSINESS_READY=false`.
+Evidence status: Audio notifikasi admin S385 aktif pada exact merged main `154ab5e8e7049e1f0155b304ae9da7c03363bc69`, immutable release `20260831041833-154ab5e`, dengan rollback `20260831025235-58e1303`. S398 exact `69c289958ec2acbcde27b56b915fcd1e8d21cbb2` menambah validator public-safe untuk receipt UAT audio fisik Chrome/Edge dan sudah `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`. Status keseluruhan `AUDIO_UAT_PENDING / BUSINESS_READY=false`.
 
 ## Tujuan dokumen
 
@@ -15,6 +15,16 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
+
+- S398 menyediakan template create-only di luar repository dan validator
+  fail-closed untuk receipt UAT audio fisik. Receipt harus terikat exact source,
+  release, dan digest otorisasi; memuat tepat Chrome/Edge, Owner/Staff, serta
+  10 gate per browser; dan menolak PII, URL, secret, identifier, data customer,
+  panggilan provider pembayaran/WhatsApp, cleanup belum selesai, serta finding
+  Critical/High. Tooling 9/9, pilot evidence 20/20, authenticated UAT evidence
+  15/15, typecheck/build, dan audit dependency nol lulus. Validator tidak
+  menggantikan pendengaran fisik, tidak mengubah production, dan tetap
+  `businessReady=false`.
 
 - S397 menambah acceptance hard reload: booking pertama memutar tepat satu
   batch `659.25/830.61/987.77 Hz`, reload dashboard tidak memutar ulang event

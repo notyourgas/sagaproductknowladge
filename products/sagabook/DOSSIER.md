@@ -7,6 +7,17 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- S398 exact `69c289958ec2acbcde27b56b915fcd1e8d21cbb2` menutup gap
+  struktur receipt UAT audio fisik dengan generator template create-only dan
+  validator fail-closed. Bukti hanya diterima untuk exact provenance S385,
+  digest otorisasi tepercaya, Chrome/Edge, Owner/Staff, dan 20/20 gate. Schema
+  menolak field tambahan atau marker PII/secret/URL/identifier dan mensyaratkan
+  data sintetis, tanpa customer/provider pembayaran/WhatsApp, cleanup selesai,
+  reviewer terkonfirmasi, serta Critical/High nol. Tooling 44/44 gabungan,
+  typecheck/build, dan audit Composer/npm nol lulus. Perubahan hanya tooling,
+  test, dan runbook; production tetap S385, UAT speaker fisik tetap pending,
+  dan `BUSINESS_READY=false`.
+
 - S397 exact `ff07a024a6017389343c965fc2c0046786b9ade3` membuktikan hard
   reload tidak memutar ulang booking yang sudah diklaim, sedangkan booking baru
   berikutnya tetap memutar satu batch tiga nada. TDD merah menerima nol nada

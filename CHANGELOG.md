@@ -1,5 +1,25 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-01 - SagaBook S398 physical audio UAT evidence sync
+
+- Ringkasan: menyinkronkan generator template create-only dan validator
+  fail-closed untuk receipt UAT audio fisik Chrome/Edge yang terikat exact
+  source/release/digest otorisasi.
+- Gate: tepat Owner+Staff dan 20/20 gate; data sintetis; tanpa data customer,
+  payment provider, atau WhatsApp; cleanup/reviewer selesai; Critical/High nol;
+  serta tidak mengandung field atau marker restricted.
+- Source `69c289958ec2acbcde27b56b915fcd1e8d21cbb2`; tooling validator
+  9/9, pilot evidence 20/20, authenticated UAT evidence 15/15,
+  typecheck/build, audit Composer/npm nol, dan diff check lulus.
+- Production tidak berubah: S385 exact main
+  `154ab5e8e7049e1f0155b304ae9da7c03363bc69`, release
+  `20260831041833-154ab5e`, rollback `20260831025235-58e1303`.
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / AUDIO_UAT_PENDING /
+  BUSINESS_READY=false`.
+- Dokumen terdampak: Product, dossier, ledger/changelog SagaBook, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-09-01 - SagaBook S397 hard-reload audio acceptance sync
 
 - Exact source `ff07a024a6017389343c965fc2c0046786b9ade3` menambah acceptance hard reload: event booking yang sudah diklaim tidak berbunyi ulang, sedangkan booking baru setelah reload tetap berbunyi tepat satu batch.

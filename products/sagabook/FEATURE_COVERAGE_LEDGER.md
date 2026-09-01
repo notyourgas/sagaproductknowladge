@@ -2,6 +2,17 @@
 
 Evidence cut-off: 1 September 2026 WIB
 
+Validator evidence UAT audio fisik S398 exact
+`69c289958ec2acbcde27b56b915fcd1e8d21cbb2` telah `CONFIRMED /
+SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+PRODUCTION_UNCHANGED`. Gate kini machine-readable dan fail-closed terhadap
+exact source/release/digest otorisasi, tepat Chrome+Edge, Owner+Staff, 10 gate
+per browser, data sintetis, cleanup/reviewer, findings nol, serta public-safety.
+Tooling validator 9/9, pilot evidence 20/20, authenticated UAT evidence 15/15,
+typecheck/build, audit Composer/npm nol, dan diff check lulus. Validator bukan
+bukti dengar fisik; production tetap S385 dan gap READY tetap pelaksanaan UAT
+speaker Chrome/Edge. Status `AUDIO_UAT_PENDING / BUSINESS_READY=false`.
+
 Acceptance hard-reload S397 exact
 `ff07a024a6017389343c965fc2c0046786b9ade3` telah `CONFIRMED /
 SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /

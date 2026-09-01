@@ -1,5 +1,25 @@
 # SagaBook Changelog
 
+## 2026-09-01 - S398 validator evidence UAT audio fisik
+
+- Sebelum: runbook mempunyai matrix 10 gate, tetapi receipt Chrome/Edge belum
+  mempunyai schema dan pemeriksaan machine-readable yang terikat provenance.
+- Setelah: generator membuat template create-only di luar repository dan
+  validator menerima hanya exact source/release/digest otorisasi, Chrome+Edge,
+  Owner+Staff, serta 20/20 gate dengan data sintetis dan public-safety ketat.
+- Validator menolak unknown field, PII/secret/URL/identifier, penggunaan data
+  customer, panggilan payment provider/WhatsApp, cleanup/reviewer yang belum
+  selesai, finding Critical/High, dan provenance yang tidak cocok.
+- Exact source `69c289958ec2acbcde27b56b915fcd1e8d21cbb2` lulus tooling
+  9/9, pilot evidence 20/20, authenticated UAT evidence 15/15,
+  typecheck/build, audit Composer/npm nol, dan diff check.
+- Tidak ada runtime, migration, release lock, atau deploy. Production tetap
+  S385 exact main `154ab5e8e7049e1f0155b304ae9da7c03363bc69`, release
+  `20260831041833-154ab5e`, rollback `20260831025235-58e1303`.
+- Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / AUDIO_UAT_PENDING /
+  BUSINESS_READY=false`; next gate adalah UAT speaker fisik berotorisasi.
+
 ## 2026-09-01 - S397 hard-reload audio exact-once acceptance
 
 - Sebelum: matrix otomatis belum membuktikan apakah reload dashboard akan

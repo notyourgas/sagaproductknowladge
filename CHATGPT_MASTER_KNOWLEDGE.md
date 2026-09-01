@@ -1,5 +1,17 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+SagaBook S398 exact `69c289958ec2acbcde27b56b915fcd1e8d21cbb2`
+menyediakan template create-only dan validator public-safe untuk receipt UAT
+audio fisik. Acceptance terikat exact source/release/digest otorisasi, tepat
+Chrome+Edge, Owner+Staff, dan 20/20 gate; data harus sintetis, tanpa data
+customer/provider pembayaran/WhatsApp, cleanup dan reviewer selesai, serta
+finding Critical/High nol. Tooling gabungan 44/44, typecheck/build, dan audit
+Composer/npm nol lulus. Ini tidak menggantikan pendengaran fisik dan tidak
+mengubah runtime: production tetap S385 exact main
+`154ab5e8e7049e1f0155b304ae9da7c03363bc69`, release
+`20260831041833-154ab5e`, rollback `20260831025235-58e1303`; status
+`IMPLEMENTED_NOT_DEPLOYED / AUDIO_UAT_PENDING / BUSINESS_READY=false`.
+
 SagaBook acceptance S397 exact `ff07a024a6017389343c965fc2c0046786b9ade3`
 membuktikan event booking yang sudah diklaim tidak memutar ulang nada setelah
 hard reload, sedangkan booking baru setelah reload tetap memutar satu batch
