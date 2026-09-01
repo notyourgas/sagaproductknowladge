@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-135 - Seluruh preparation Goal 5 dijalankan pada boundary lokal zero-cost
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-09-02 |
+| Topik | Eksekusi seluruh strategi Goal 5 |
+| Keputusan | Andreas meminta semua strategi Goal 5 dikerjakan. Otorisasi ini menjalankan pekerjaan local/read-only/synthetic yang aman dan memberi disposition pada seluruh 480 unit; external route dan production tidak ikut diotorisasi. |
+| Alasan | Semua strategy unit perlu memiliki evidence atau blocker eksplisit tanpa menganggap pekerjaan eksternal selesai. |
+| Alternatif yang dipertimbangkan | Menganggap semua 480 unit pass; menunda seluruh local preparation; membuka route eksternal sebelum G417. |
+| Dampak | Disposition akhir adalah 59 local pass, 119 partial local, 106 external gate dan 196 waiting prerequisite. Incremental spend Rp0; provider, data pelanggan, VPS/DNS, merge, deployment, activation, ring advancement dan NFC tetap dilarang. |
+| Pemberi keputusan | Andreas |
+| Status | `CONFIRMED / GOAL_5_ZERO_COST_PREPARATION_EXECUTED / ROUTE_EXECUTION_NO_GO / PRODUCTION_UNCHANGED / BUSINESS_READY=false`; ops `058ab3d` |
+| Dokumen terkait | `products/saga-platform/PRODUCT.md`, `products/saga-platform/DOSSIER.md`, `products/sagaops/PRODUCT.md`, `products/sagaops/DOSSIER.md` |
+
 ## DEC-134 - Goal 5 memakai zero-cost unattended preparation lane
 
 | Field | Isi |
