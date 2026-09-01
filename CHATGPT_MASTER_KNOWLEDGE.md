@@ -1,5 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+Pada 2 September 2026 Andreas membuka kembali procurement isolated staging
+Saga Member maksimal Rp100.000/bulan dan menerima owner self-review. Self-review
+tidak sama dengan independent review. Fresh Render assessment menunjukkan paid
+web mulai USD7 (sekitar Rp124 ribu) dan minimum persistent two-API topology
+sekitar USD30 (sekitar Rp532 ribu) per bulan. Authenticated Render access belum
+tersedia; tidak ada resource/billing, provider call, pilot, atau production
+mutation. Status `EXTERNAL_RUNTIME_REOPENED_BLOCKED_BY_COST_AND_ACCESS /
+STAGING_NOT_PROVISIONED / PROVIDERS_OFF / PILOT_NOT_STARTED /
+PRODUCTION_UNCHANGED`; exact ops `515402d`, CI lulus.
+
 Saga Member Platform Goal 3 telah dieksekusi sampai boundary lokal/kanonik.
 Strategi mencakup 20 wave, 120 batch, dan 480 micro-sprint; hasilnya 124
 `LOCAL_PASS`, 108 `PARTIAL_LOCAL`, 118 `EXTERNAL_GATE`, dan 130

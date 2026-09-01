@@ -8,7 +8,7 @@ sales, dan konten SagaOPS.
 ## Konteks dan status bukti
 
 - Updated: 2 September 2026
-- Delivery: `SOURCE_PUSHED / GOAL_3_LOCAL_CANONICAL_EXECUTED / EXTERNAL_RUNTIME_NO_GO / STAGING_SKIPPED / IMPLEMENTED_NOT_DEPLOYED`
+- Delivery: `SOURCE_PUSHED / GOAL_3_LOCAL_CANONICAL_EXECUTED / EXTERNAL_RUNTIME_REOPENED_BLOCKED_BY_COST_AND_ACCESS / STAGING_NOT_PROVISIONED / IMPLEMENTED_NOT_DEPLOYED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED`
 
@@ -114,6 +114,12 @@ boundary lokal/kanonik sudah dijalankan dan diklasifikasikan. Dari 480 sprint,
 124 lulus lokal, 108 partial lokal, 118 membutuhkan external gate, dan 130
 menunggu prerequisite. Angka external/waiting bukan pass dan Goal 3 belum
 complete.
+
+Procurement staging kini dibuka maksimal Rp100.000/bulan. Fresh Render cost
+assessment menempatkan minimum persistent two-API topology sekitar USD30 atau
+Rp532 ribu/bulan; authenticated Render access juga belum tersedia. Owner
+self-review diterima sebagai owner review, bukan independent review. Tidak ada
+resource atau billing dibuat.
 
 ## Technical overview
 

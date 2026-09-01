@@ -8,6 +8,17 @@ Mencatat perubahan material control plane Saga.
 
 Fondasi production dan roadmap pemisahan boundary harus dibedakan.
 
+## 2026-09-02 — Staging procurement dibuka tetapi belum dapat diprovision
+
+- Andreas membuka kembali isolated staging dengan cap Rp100.000/bulan dan
+  menerima owner self-review; self-review tidak diklaim independen.
+- Fresh Render assessment: paid web mulai USD7 (sekitar Rp124 ribu) dan minimum
+  persistent two-API topology sekitar USD30 (sekitar Rp532 ribu) per bulan.
+- Render access belum tersedia. Tidak ada purchase, runtime, provider, pilot,
+  billing, atau perubahan production.
+- Exact ops provenance `515402d0cf2f4dedef746ad23bcec4706e9a4b79`;
+  CI exact commit lulus.
+
 ## 2026-09-02 — Goal 3 dieksekusi sampai batas lokal/kanonik
 
 - Strategi mencakup 20 wave, 120 batch, dan 480 micro-sprint.

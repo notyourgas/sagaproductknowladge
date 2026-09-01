@@ -8,6 +8,17 @@ Mencatat perubahan material SagaOPS.
 
 Prototype dan production outlet adalah evidence level yang berbeda.
 
+## 2026-09-02 — External runtime reopened but blocked
+
+- Owner membuka procurement staging maksimal Rp100.000/bulan dan menerima
+  owner self-review tanpa mengklaim independent review.
+- Minimum persistent Render topology sekitar Rp532 ribu/bulan; authenticated
+  Render access belum tersedia.
+- Status: `EXTERNAL_RUNTIME_REOPENED_BLOCKED_BY_COST_AND_ACCESS /
+  STAGING_NOT_PROVISIONED / PROVIDERS_OFF / PILOT_NOT_STARTED /
+  PRODUCTION_UNCHANGED`.
+- Ops `515402d0cf2f4dedef746ad23bcec4706e9a4b79`; CI lulus.
+
 ## 2026-09-02 — Goal 3 local/canonical sprint execution
 
 - Seluruh 480 micro-sprint dicatat dan dijalankan sesuai authority saat ini:

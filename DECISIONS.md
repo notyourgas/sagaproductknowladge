@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-130 - Procurement staging Saga Member dibuka dengan cap Rp100.000
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-09-02 |
+| Topik | Reopen external runtime dan reviewer Goal 3 |
+| Keputusan | Andreas membuka kembali isolated staging/external-runtime procurement dengan cap maksimum Rp100.000 per bulan dan menunjuk dirinya sebagai owner reviewer. |
+| Alasan | Goal 3 perlu bergerak dari local/canonical evidence menuju runtime terisolasi tanpa membuka production. |
+| Alternatif yang dipertimbangkan | Tetap local-only; Render persistent topology dengan cap lebih tinggi; disposable free preview; alternatif isolated VPS. |
+| Dampak | Self-review tercatat tetapi tidak diklaim independen. Fresh Render assessment menunjukkan satu paid web sekitar Rp124 ribu dan minimum persistent two-API topology sekitar Rp532 ribu per bulan, sehingga provisioning belum diizinkan dalam cap. Render access juga belum tersedia. Tidak ada billing/resource/provider/pilot/production mutation. |
+| Pemberi keputusan | Andreas |
+| Status | `CONFIRMED / PROCUREMENT_REOPENED / BLOCKED_BY_COST_AND_ACCESS / STAGING_NOT_PROVISIONED / PROVIDERS_OFF / PILOT_NOT_STARTED / PRODUCTION_UNCHANGED`; ops `515402d` |
+| Dokumen terkait | `products/saga-platform/PRODUCT.md`, `products/saga-platform/DOSSIER.md`, `products/sagaops/PRODUCT.md`, `products/sagaops/DOSSIER.md`, `GAPS.md` |
+
 ## DEC-129 - Goal 3 Saga Member Platform berjalan hanya sampai local/canonical boundary
 
 | Field | Isi |

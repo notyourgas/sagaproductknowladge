@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-02 - Saga Member external-runtime reopen sync
+
+- Founder membuka staging procurement maksimal Rp100.000/bulan dan menerima
+  owner self-review tanpa mengklaim independence.
+- Fresh Render/BI evidence menunjukkan satu paid web sekitar Rp124 ribu dan
+  minimum persistent topology sekitar Rp532 ribu/bulan; Render access belum ada.
+- Status `PROCUREMENT_REOPENED / BLOCKED_BY_COST_AND_ACCESS /
+  STAGING_NOT_PROVISIONED / PROVIDERS_OFF / PILOT_NOT_STARTED /
+  PRODUCTION_UNCHANGED`.
+- Exact ops `515402d0cf2f4dedef746ad23bcec4706e9a4b79`; CI lulus.
+
 ## 2026-09-02 - Saga Member Platform Goal 3 local/canonical execution sync
 
 - Ringkasan: seluruh 480 micro-sprint Goal 3 dieksekusi atau diklasifikasikan

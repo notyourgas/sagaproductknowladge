@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-09-02 - Saga Member staging procurement reopened, provisioning blocked
+
+- Andreas membuka isolated staging procurement maksimal Rp100.000/bulan dan
+  menerima owner self-review; independent review tetap belum terpenuhi.
+- Paid Render web mulai sekitar Rp124 ribu/bulan dan minimum persistent
+  two-API topology sekitar Rp532 ribu/bulan, sehingga cap aktif tidak cukup.
+- Authenticated Render access belum tersedia. Tidak ada resource, billing,
+  provider, pilot, atau production mutation.
+- Exact ops `515402d0cf2f4dedef746ad23bcec4706e9a4b79`; CI lulus.
+
 ## 2026-09-02 - Saga Member Platform Goal 3 local/canonical execution
 
 - Goal 3 mencakup 20 wave, 120 batch, dan 480 micro-sprint; hasil konservatif

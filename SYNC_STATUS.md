@@ -12,10 +12,34 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-09-02 03:15 WIB |
+| Waktu pembaruan terakhir | 2026-09-02 03:23 WIB |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `3cb43b2` |
+| Baseline sebelum pembaruan | `65f7545` |
+
+## Saga Member Platform external-runtime reopen
+
+- Procurement isolated staging dibuka maksimal Rp100.000/bulan; Andreas
+  menerima owner self-review yang tidak dihitung sebagai independent review.
+- Minimum paid Render topology sekitar Rp532 ribu/bulan dan authenticated
+  Render access belum tersedia.
+- Tidak ada resource, billing, provider call, pilot, atau production mutation.
+- Exact ops `515402d0cf2f4dedef746ad23bcec4706e9a4b79`; CI lulus.
+
+## File yang berubah pada sinkronisasi external-runtime reopen
+
+- `products/saga-platform/PRODUCT.md`
+- `products/saga-platform/DOSSIER.md`
+- `products/saga-platform/CHANGELOG.md`
+- `products/sagaops/PRODUCT.md`
+- `products/sagaops/DOSSIER.md`
+- `products/sagaops/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `DECISIONS.md`
+- `GAPS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## Saga Member Platform Goal 3 local/canonical execution
 
