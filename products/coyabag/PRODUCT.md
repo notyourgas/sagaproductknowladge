@@ -51,6 +51,9 @@ Surface live tidak sama dengan transaksi commerce sudah aktif penuh.
 
 ## Fitur backend/admin
 
+- Detail retur mengarahkan keputusan item karantina ke antrean Inventory yang
+  guarded. Restock atau disposal memerlukan review dampak, alasan, recent-auth,
+  ledger append-only, dan audit trail; aksi langsung dari detail retur dihapus.
 - Privacy Operations dengan review terstruktur, validasi, dan acknowledgement;
   Security Events dengan summary/filter/pagination; Activity audit dengan
   filter bernama, reset/empty recovery, dan detail panjang responsif.
@@ -86,9 +89,9 @@ COMMERCE_ACTIVE`. Business readiness: `BLOCKED`.
   bagian; audit tetap `report_only` dan tidak menghapus record.
 - Launch UAT 15 langkah dan release sign-off sudah lulus. Readiness gate tetap
   enforced dan keputusan runtime adalah `COMMERCE_ACTIVE`.
-- Release aktif `20260901-16922ab` dengan exact material source
-  `16922ab372f935f77c2ba921a98b127483593ddd` melayani production;
-  rollback langsung `20260901-76a5e61` tersedia dan readiness lulus 42/42.
+- Release aktif `20260901-d09960c` dengan exact material source
+  `d09960c2b71c23fa3fbdeaccf5c8e75c4596f486` melayani production;
+  rollback langsung `20260901-16922ab` tersedia dan readiness lulus 42/42.
   Indeks Pengaturan menampilkan ringkasan faktual, pencarian, empat kategori
   tugas, empty/reset state, serta badge approval pada lima bagian sensitif.
   Hitungan nilai tersimpan dibedakan secara eksplisit dari readiness provider.

@@ -17,6 +17,15 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | `f1fc51102de3c747e6428f03cd48bb18913e4a59` |
 
+## COYABAG return quarantine handoff production
+
+- Exact source `d09960c2b71c23fa3fbdeaccf5c8e75c4596f486` aktif pada release
+  `20260901-d09960c`; rollback `20260901-16922ab`.
+- Detail retur sekarang menyerahkan keputusan karantina ke Inventory guarded;
+  full regression, immutable deploy, readiness 42/42, worker, dan public smoke
+  lulus tanpa migrasi atau mutasi stok saat deploy.
+- Status `COMMERCE_ACTIVE / BUSINESS_READY=false`.
+
 ## Saga Member Platform Goal 1 local alpha
 
 - Exact private source Saga Member `82a036c919fca80736ea51d618a83c7ac59f1182`

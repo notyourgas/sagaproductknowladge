@@ -1,5 +1,12 @@
 # Portfolio Changelog
 
+## 2026-09-01 - COYABAG guarded return inventory handoff production
+
+- Source `d09960c2b71c23fa3fbdeaccf5c8e75c4596f486` aktif pada release `20260901-d09960c`; rollback `20260901-16922ab`.
+- Detail retur kini menyerahkan keputusan karantina ke Inventory agar alasan, recent-auth, dampak stok, ledger, dan audit tetap utuh; aksi satu klik yang tidak valid dihapus.
+- Full gates, browser desktop/mobile, immutable backup/deploy, readiness 42/42, worker, dan public smoke lulus tanpa migrasi atau mutasi provider/stok.
+- Status `COMMERCE_ACTIVE / BUSINESS_READY=false`; payment exception dan shipping manual tetap residual.
+
 ## 2026-09-01 - Saga Member Platform Goal 1 local alpha
 
 - Private canonical source untuk Contracts, Customer Platform, Saga Member dan

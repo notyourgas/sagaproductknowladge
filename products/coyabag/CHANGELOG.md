@@ -1,5 +1,12 @@
 # COYABAG Changelog
 
+## 2026-09-01 - Return quarantine handoff deployed
+
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false` dari source `d09960c2b71c23fa3fbdeaccf5c8e75c4596f486`, release `20260901-d09960c`, rollback `20260901-16922ab`.
+- Detail retur tidak lagi menawarkan restock atau pemusnahan satu klik. Operator diarahkan ke antrean Karantina Inventory untuk meninjau dampak stok, memberi alasan, melewati recent-auth, dan menjaga ledger serta audit trail.
+- Desktop/mobile, target sentuh 44 px, overflow, approval maker-checker, backend 545 pass + satu controlled skip, storefront 220/220, build/audit, backup, readiness 42/42, worker, dan public smoke lulus.
+- Tidak ada migrasi, aktivasi provider, atau mutasi stok saat deploy. Commerce tetap aktif; payment exception dan shipping manual tetap residual bisnis.
+
 ## 2026-09-01 - Governance operations wave deployed
 
 - Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false` dari source `16922ab372f935f77c2ba921a98b127483593ddd`, release `20260901-16922ab`, rollback `20260901-76a5e61`.

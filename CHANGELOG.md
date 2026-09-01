@@ -1,5 +1,12 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-01 - COYABAG return quarantine handoff production sync
+
+- Exact source `d09960c2b71c23fa3fbdeaccf5c8e75c4596f486` aktif pada immutable release `20260901-d09960c`; rollback `20260901-16922ab`.
+- Detail retur menghapus aksi stok satu klik dan berpindah ke flow Karantina Inventory dengan permission, recent-auth, alasan, impact review, ledger, dan audit.
+- Backend 545 pass + satu controlled skip, storefront 220/220, browser desktop/mobile, build/audit, backup, readiness 42/42, worker, dan public smoke lulus tanpa migrasi atau mutasi provider/stok.
+- Klasifikasi `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false`.
+
 ## 2026-09-01 - Saga Member Platform Goal 1 local alpha sync
 
 - Ringkasan: menyinkronkan local integrated internal alpha Saga Member,

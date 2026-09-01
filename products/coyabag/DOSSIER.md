@@ -1,5 +1,14 @@
 # COYABAG Dossier
 
+## 2026-09-01 - Guarded return quarantine handoff
+
+`CONFIRMED`: release `20260901-d09960c` menghapus keputusan restock/disposal
+langsung dari detail retur dan mengarahkan operator ke antrean Karantina
+Inventory. Antrean tersebut mempertahankan permission inventory, recent-auth,
+alasan minimal, review dampak saldo, movement ledger, dan audit log. Browser
+desktop/mobile serta full regression lulus tanpa migrasi atau mutasi stok saat
+deploy. Rollback langsung adalah `20260901-16922ab`.
+
 ## Tujuan dokumen
 
 Merangkum brand, commerce workflow, readiness, bisnis, teknis, sales, dan

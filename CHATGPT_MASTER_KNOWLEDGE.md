@@ -1,5 +1,13 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+COYABAG exact source `d09960c2b71c23fa3fbdeaccf5c8e75c4596f486`
+aktif pada immutable release `20260901-d09960c`, rollback
+`20260901-16922ab`. Detail retur sekarang mengarahkan keputusan item karantina
+ke antrean Inventory guarded; restock/disposal membutuhkan review dampak,
+alasan, recent-auth, ledger, dan audit. Full gates dan public smoke lulus tanpa
+migrasi atau mutasi provider/stok. Status tetap `COMMERCE_ACTIVE /
+BUSINESS_READY=false`.
+
 COYABAG exact source `16922ab372f935f77c2ba921a98b127483593ddd`
 aktif pada immutable release `20260901-16922ab`, rollback
 `20260901-76a5e61`. Privacy Operations kini memakai review terstruktur dan
