@@ -8,6 +8,17 @@ Mencatat perubahan material SagaOPS.
 
 Prototype dan production outlet adalah evidence level yang berbeda.
 
+## 2026-09-02 — One-command local pilot hub tersedia
+
+- Launcher ops menghidupkan Member, Customer API dan SagaOPS operator UAT
+  bersamaan pada loopback.
+- OWNER/STAFF memakai credential sintetis runtime-only; provider, NFC dan
+  printer tetap simulator/OFF/fallback.
+- SagaOPS 76/76 dan launcher test 3/3 lulus. Status tetap local technical UAT,
+  bukan outlet pilot atau production.
+- Ops `65615c42760e952f85acf4d1545464746e91673f`; CI run `33562643115`
+  lulus.
+
 ## 2026-09-02 — Goal 6 strategy mencakup outlet network dan settlement
 
 - Goal 6 pack tervalidasi pada 22 wave, 132 batch, 44 macro-sprint dan 528

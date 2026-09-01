@@ -153,6 +153,13 @@ spend Rp0. Goal 5/G519, exact scope, device field evidence, provider
 certification, reconciliation dan operating proof belum tersedia, sehingga
 route SagaOPS tetap `NO_GO` dan NFC OFF.
 
+One-command local pilot launcher kini menyatukan akses uji SagaOPS
+OWNER/STAFF dengan Member PWA dan Customer API pada loopback. Credential
+operator dihasilkan runtime-only dan tidak disimpan. Fresh SagaOPS suite
+76/76 lulus. Bukti ini menutup usability teknis launcher lokal saja; QRIS,
+printer, NFC, device field UAT, durable runtime dan outlet operation tetap
+belum terbukti.
+
 ## Technical overview
 
 Private canonical source menyediakan versioned API, domain service, operator

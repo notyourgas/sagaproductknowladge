@@ -1218,6 +1218,11 @@ GAP-004, bukan gap implementasi warna komponen.
 
 ### Saga Platform
 
+- `NEEDS CONFIRMATION`: one-command local pilot launcher sudah tervalidasi,
+  tetapi Customer Platform served runtime masih perlu durable PostgreSQL,
+  restart/recovery dan production-like session/origin evidence. Existing VPS
+  tetap blocked oleh disk 83%, shared workloads, legacy staging collision,
+  failed monitor dan PostgreSQL yang belum tersedia.
 - `NEEDS CONFIRMATION`: Goal 6 strategy 528 unit sudah tervalidasi, tetapi
   execution belum dimulai karena Goal 5 belum complete dan G519 belum
   diterima. Exact institutional/network scope, independent reviewer,

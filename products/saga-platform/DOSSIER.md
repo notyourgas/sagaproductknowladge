@@ -108,6 +108,13 @@ Rp0. Entry tetap `NO_GO`: Goal 5/G519, exact scope, reviewer independen,
 runtime/provider, serta bukti operasi 365 hari belum diterima. Tidak ada
 external mutation atau production activation; NFC tetap OFF.
 
+Eksekusi lintas Goal 0–6 telah dibuka hanya pada boundary lokal/Rp0. Ops kini
+menyediakan satu launcher dan hub loopback untuk mencoba Member PWA, Customer
+API dan SagaOPS OWNER/STAFF secara bersamaan. Credential operator dibuat hanya
+di memori proses; Member memakai OTP fixture; seluruh provider tetap simulator.
+Ini mempermudah technical UAT tetapi tidak menutup durable PostgreSQL, staging,
+provider, pilot, production atau business acceptance.
+
 ## Fitur MVP
 
 Product-scoped account, subscription/entitlement, provisioning, audit, dan

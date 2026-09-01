@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-137 - Eksekusi seluruh Goal 0–6 dimulai dari aplikasi lokal yang dapat diuji
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-09-02 |
+| Topik | Eksekusi seluruh goal dan testable local application |
+| Keputusan | Andreas meminta seluruh rekomendasi dan Goal 0–6 dikerjakan dengan output aplikasi yang dapat ia coba. Eksekusi dimulai dari master plan/prompt serta one-command local pilot launcher; pekerjaan aman berjalan lokal/read-only/synthetic dan Rp0. |
+| Alasan | Semua source yang sudah tervalidasi perlu menjadi pengalaman uji terpadu sebelum durable runtime, staging, provider atau production dibuka. |
+| Alternatif yang dipertimbangkan | Langsung deploy ke Vercel Hobby; memulai Goal 6 sebelum predecessor; menunggu seluruh external gate sebelum membuat aplikasi lokal terpadu. |
+| Dampak | Hub loopback menjalankan Member, Customer API dan SagaOPS UAT bersama credential sintetis runtime-only. Tidak ada provider, data nyata, VPS/DNS, deployment atau production mutation. |
+| Pemberi keputusan | Andreas |
+| Status | `CONFIRMED / ALL_GOALS_LOCAL_EXECUTION_STARTED / LOCAL_PILOT_LAUNCHER_VALIDATED / ZERO_NEW_SPEND / PRODUCTION_UNCHANGED`; ops `65615c4` |
+| Dokumen terkait | `products/saga-platform/PRODUCT.md`, `products/saga-platform/DOSSIER.md`, `products/sagaops/PRODUCT.md`, `products/sagaops/DOSSIER.md` |
+
 ## DEC-136 - Goal 6 memakai zero-cost unattended preparation lane
 
 | Field | Isi |

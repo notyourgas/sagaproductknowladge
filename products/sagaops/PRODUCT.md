@@ -97,6 +97,10 @@ BUSINESS_READY=false`.
   micro-sprint. Ini hanya planning serta preparation lokal/Rp0; outlet network,
   device commissioning, provider, settlement nyata, deploy dan activation
   belum dimulai. Entry Goal 6 tetap `NO_GO` karena Goal 5/G519 belum diterima.
+- SagaOPS operator UAT kini dapat dijalankan bersama Member dan Customer API
+  melalui one-command local pilot hub. OWNER, STAFF-01 dan STAFF-02 memakai
+  credential sintetis yang dibuat di memori proses; provider, NFC dan printer
+  tetap simulator/OFF/fallback. Ini local technical UAT, bukan outlet pilot.
 - QRIS dynamic, thermal printer, real offline conflict resolution, dan provider
   nyata belum termasuk bukti production.
 
