@@ -8,6 +8,17 @@ Mencatat perubahan material control plane Saga.
 
 Fondasi production dan roadmap pemisahan boundary harus dibedakan.
 
+## 2026-09-01 — Goal 2 diterima pada scope local-only
+
+- Founder menyetujui staging dilewati untuk saat ini dan menerima state
+  `GOAL_2_LOCAL_VALIDATED`.
+- Fresh local evidence lulus pada 12 kelompok gate; full SagaBook regression
+  lulus 1.339/1.339 test dengan 14.964 assertion.
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / GOAL_2_LOCAL_VALIDATED /
+  STAGING_SKIPPED / IMPLEMENTED_NOT_DEPLOYED / PILOT_NOT_STARTED /
+  PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
+- Scope asli yang mencakup staging dan pilot tidak diklaim selesai.
+
 ## 2026-09-01 — Goal 1 local internal alpha diterima
 
 - Founder menerima Goal 1 pada state `COMPLETE_LOCAL_INTERNAL_ALPHA` setelah

@@ -8,7 +8,7 @@ sales, dan konten SagaOPS.
 ## Konteks dan status bukti
 
 - Updated: 1 September 2026
-- Delivery: `SOURCE_PUSHED / LOCAL_VALIDATED / LOCAL_INTERNAL_ALPHA_ACCEPTED / IMPLEMENTED_NOT_DEPLOYED`
+- Delivery: `SOURCE_PUSHED / GOAL_2_LOCAL_VALIDATED / STAGING_SKIPPED / IMPLEMENTED_NOT_DEPLOYED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED`
 
@@ -104,8 +104,10 @@ Operating system coffeeshop dari kasir sampai back office.
 
 **Apakah QRIS aktif?** Tidak; dummy/manual bukan gateway.
 **Apakah bisa offline?** Simulation bukan production acceptance.
-**Apakah sudah siap outlet?** Belum; local internal alpha sudah tervalidasi,
-tetapi staging/provider/pilot/business gates masih terbuka.
+**Apakah sudah siap outlet?** Belum; Goal 2 diterima hanya sebagai local
+validated. Staging dilewati untuk scope saat ini, sedangkan provider,
+independent review, commissioning, pilot, production, dan business gates masih
+terbuka.
 
 ## Technical overview
 

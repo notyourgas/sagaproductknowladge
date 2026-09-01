@@ -66,17 +66,20 @@ Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
 - Pemisahan bounded context dan adapter dilakukan bertahap.
 - Bukan rewrite total.
 
-### Saga Member local internal alpha
+### Saga Member local internal alpha dan Goal 2 local validation
 
 - Saga Member dan Customer Platform memiliki private canonical source terpisah
   dari Contracts dan SagaOPS.
 - Local alpha membuktikan Email OTP fixture, Member PWA, Points/XP/Tier,
   Voyager, Reward, Card, Quest, Push in-app fallback, SagaBook handoff, dan
   server-owned authority/replay boundaries.
-- Status irisan ini: `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
-  LOCAL_INTERNAL_ALPHA_ACCEPTED / IMPLEMENTED_NOT_DEPLOYED`; ia tidak mengubah
-  fondasi Saga Platform yang sudah production dan tidak mengaktifkan provider
-  atau customer pilot.
+- Goal 1 tetap diterima sebagai `LOCAL_INTERNAL_ALPHA_ACCEPTED`. Goal 2 kini
+  diterima hanya pada scope `GOAL_2_LOCAL_VALIDATED`; staging sengaja dilewati
+  untuk scope saat ini.
+- Status irisan ini: `CONFIRMED / SOURCE_PUSHED / GOAL_2_LOCAL_VALIDATED /
+  STAGING_SKIPPED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED /
+  BUSINESS_READY=false`; ia tidak mengaktifkan provider, customer pilot, atau
+  production.
 
 ## Gap utama
 

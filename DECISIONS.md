@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-128 - Goal 2 Saga Member Platform diterima hanya sebagai local validated
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-09-01 |
+| Topik | Final scope Goal 2 Saga Member Platform |
+| Keputusan | Andreas menyetujui staging dilewati untuk saat ini dan menerima Goal 2 hanya pada state `GOAL_2_LOCAL_VALIDATED`. |
+| Alasan | Seluruh acceptance lokal dapat ditutup dengan evidence segar tanpa membuat klaim external runtime yang belum diuji. |
+| Alternatif yang dipertimbangkan | Menyediakan isolated staging sekarang; memakai mixed infrastructure; melanjutkan langsung ke production. |
+| Dampak | Scope local-only ditutup. Staging, provider sandbox, independent review, commissioning perangkat/staff, controlled pilot, production, dan business readiness tetap deferred. Scope asli staging-and-pilot tidak diklaim complete. |
+| Pemberi keputusan | Andreas |
+| Status | `CONFIRMED / GOAL_2_LOCAL_VALIDATED / STAGING_SKIPPED / IMPLEMENTED_NOT_DEPLOYED / PILOT_NOT_STARTED / PRODUCTION_UNCHANGED / BUSINESS_READY=false` |
+| Dokumen terkait | `products/saga-platform/PRODUCT.md`, `products/saga-platform/DOSSIER.md`, `products/sagaops/PRODUCT.md`, `products/sagaops/DOSSIER.md` |
+
 ## DEC-127 - Goal 1 Saga Member Platform diterima sebagai local internal alpha
 
 | Field | Isi |
