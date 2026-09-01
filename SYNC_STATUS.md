@@ -12,10 +12,10 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-09-01 16:30 WIB |
-| Branch aktif | `codex/coyabag-customer-merge-knowledge-final` |
+| Waktu pembaruan terakhir | 2026-09-01 19:17 WIB |
+| Branch aktif | `codex/s402-sagabook-closing-history-read-indexes-knowledge` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `37dc2da` |
+| Baseline sebelum pembaruan | `69e9518` |
 
 ## COYABAG guarded shipment cancellation production
 
@@ -37,14 +37,16 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 ## SagaBook S402 closing-history read indexes
 
-- Exact source `b1160aa9ca4bf3b92c6688c2f778fad43301b8d7` sudah
+- Exact candidate `010b2c67025c51494a66b12b1e8b6778667660c6` sudah
   `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
-- Dua indeks additive mempercepat benchmark sintetis history closing 79,35x
-  dan revision history 15,13x tanpa mengubah data atau scope tenant/cabang.
-- Migration fresh/rollback/reapply, database audit 98 tanpa failure, full
-  Feature 1.303/1.303 (14.779 assertion), typecheck/build/Pint, dan audit
-  dependency nol lulus. Production tetap S385, MySQL disposable masih gate,
-  dan `BUSINESS_READY=false`.
+- Kandidat prefix awal gagal dipilih optimizer MySQL dan tetap filesort;
+  correction full-column sekarang dipakai sebagai covering index tanpa
+  filesort. P50 closing 406,5444 menjadi 0,2207 ms dan revision 462,8893
+  menjadi 0,2730 ms pada 120.000+120.000 baris sintetis.
+- Rollback/reapply menjaga seluruh baris, database audit 98, focused 41/41,
+  full Feature 1.314/1.314 (14.859 assertion), typecheck/build, dan audit
+  dependency nol lulus. Production tetap exact `fdf4155c0a294a6af8b41a819ba40e6d371f3ba8`
+  pada release `20260901083148-fdf4155`; `BUSINESS_READY=false`.
 
 ## File yang berubah pada sinkronisasi SagaBook S402
 

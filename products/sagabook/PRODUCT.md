@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
 Updated: 1 September 2026 WIB
-Evidence status: Audio notifikasi admin S385 aktif pada exact merged main `154ab5e8e7049e1f0155b304ae9da7c03363bc69`, immutable release `20260831041833-154ab5e`, dengan rollback `20260831025235-58e1303`. Kandidat indeks history closing S402 exact `b1160aa9ca4bf3b92c6688c2f778fad43301b8d7` sudah `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; production belum memakai migration ini. Status keseluruhan `AUDIO_UAT_PENDING / PILOT_BLOCKED_BY_AUDIO_UAT / BUSINESS_READY=false`.
+Evidence status: SagaBook production aktif pada exact `fdf4155c0a294a6af8b41a819ba40e6d371f3ba8`, immutable release `20260901083148-fdf4155`. Kandidat indeks history closing S402 exact `010b2c67025c51494a66b12b1e8b6778667660c6` sudah `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; production belum memakai migration ini. Status keseluruhan `AUDIO_UAT_PENDING / PILOT_BLOCKED_BY_AUDIO_UAT / BUSINESS_READY=false`.
 
 ## Tujuan dokumen
 
@@ -16,15 +16,15 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
 
-- S402 menambah indeks baca khusus history closing lintas cabang pada closing
-  utama dan revision ledger tanpa mengubah predicate tenant/cabang atau data
-  bisnis. Benchmark sintetis 120.000 baris mempercepat query closing rata-rata
-  dari 1,3833 ms ke 0,0174 ms (79,35x) dan revision history dari 1,2134 ms ke
-  0,0802 ms (15,13x), sekaligus menghilangkan temporary sort pada SQLite.
-  Migration fresh/rollback/reapply menjaga baris tetap utuh, database audit
-  98 tanpa failure, full Feature 1.303/1.303 (14.779 assertion), build,
-  typecheck, Pint, serta audit Composer/npm nol lulus. Kandidat belum dideploy;
-  parity dan execution plan MySQL terautentikasi tetap gate sebelum release.
+- S402 memperbaiki indeks baca history closing lintas cabang setelah MySQL
+  8.4.9 membuktikan kandidat prefix awal tidak dipilih optimizer dan masih
+  filesort. Full-column tenant+date+ordering sekarang dipakai sebagai covering
+  index tanpa filesort. Pada 120.000+120.000 baris sintetis, p50 closing turun
+  dari 406,5444 ke 0,2207 ms dan revision dari 462,8893 ke 0,2730 ms.
+  Rollback/reapply menjaga semua baris, database audit 98 tanpa failure,
+  focused 41/41 (477 assertion), full Feature 1.314/1.314 (14.859 assertion),
+  build, typecheck, serta audit Composer/npm nol lulus. Kandidat belum
+  dideploy; review/merge dan guarded release tetap gate berikutnya.
 
 - S401 menaikkan receipt UAT audio fisik ke schema v3. `executedAt` wajib ISO
   8601 lengkap dengan zona waktu dan tidak boleh mendahului timestamp UTC pada

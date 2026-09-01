@@ -9,16 +9,17 @@
 
 ## 2026-09-01 - SagaBook S402 closing-history database read indexes
 
-- Exact source `b1160aa9ca4bf3b92c6688c2f778fad43301b8d7` menambah dua
-  indeks additive untuk history closing lintas cabang tanpa mengubah isolasi
-  tenant/cabang atau data bisnis.
-- Benchmark sintetis 120.000 baris membaik 79,35x untuk closing dan 15,13x
-  untuk revision history; migration rollback/reapply menjaga baris, database
-  audit 98 tanpa failure, full Feature 1.303/1.303, build dan audit dependency
-  lulus.
+- Exact candidate `010b2c67025c51494a66b12b1e8b6778667660c6`
+  mengganti index prefix MySQL yang tetap filesort menjadi full-column
+  tenant+date+ordering yang dipakai optimizer sebagai covering index.
+- MySQL 8.4.9 sintetis 120.000+120.000 baris menunjukkan p50 closing
+  406,5444 menjadi 0,2207 ms dan revision 462,8893 menjadi 0,2730 ms;
+  rollback/reapply menjaga seluruh baris, database audit 98, full Feature
+  1.314/1.314, build, dan audit dependency lulus.
 - Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
-  PRODUCTION_UNCHANGED / BUSINESS_READY=false`; MySQL disposable tetap gate
-  sebelum release.
+  PRODUCTION_UNCHANGED / BUSINESS_READY=false`; production aktif tetap
+  `fdf4155c0a294a6af8b41a819ba40e6d371f3ba8` release
+  `20260901083148-fdf4155`.
 
 ## 2026-09-01 - Saga Member Platform Goal 2 local-only acceptance
 
