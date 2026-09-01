@@ -12,14 +12,14 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-09-01 06:15 WIB |
-| Branch aktif | `codex/s393-sagabook-audio-session-recovery-knowledge` |
+| Waktu pembaruan terakhir | 2026-09-01 07:16 WIB |
+| Branch aktif | `codex/s394-sagabook-audio-visibility-recovery-knowledge` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `a5b402dd4462333cf8cc050d5a33d073736a6a9a` |
-| Informasi terakhir disinkronkan | SagaBook acceptance cumulative S386-S393 exact `74a30742a87e70c81806f316538c11e1bcee9057`; production tetap S385 exact main `154ab5e8e7049e1f0155b304ae9da7c03363bc69`. |
+| Baseline sebelum pembaruan | `e196c5dc6fa1a3fab9d5ca1a9854812d272e397e` |
+| Informasi terakhir disinkronkan | SagaBook acceptance cumulative S386-S394 exact `feb357689ad9f90d2805e62f56e27112787f2c3b`; production tetap S385 exact main `154ab5e8e7049e1f0155b304ae9da7c03363bc69`. |
 | Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / AUDIO_UAT_PENDING / BUSINESS_READY=false`. |
 
-## SagaBook S386-S393 audio acceptance cumulative
+## SagaBook S386-S394 audio acceptance cumulative
 
 - Browser Chromium membuktikan exact-once lintas dua tab, refocus tanpa
   replay, mute menahan event, aktivasi kembali tidak memutar event tertahan,
@@ -36,13 +36,15 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
   berbunyi tepat satu batch tiga nada dan event online/refocus tidak replay.
 - Expiry sesi 419 mengarah ke login tanpa nada; login ulang tetap senyap,
   booking baru berikutnya berbunyi satu batch dan refocus tidak replay.
-- Exact head `74a30742a87e70c81806f316538c11e1bcee9057` mencakup S392
-  `d75ba7e2021a5a89aca9decbdd381ed67d4443e5`; browser 13/13, focused PHP
+- Booking ketika visibility state dashboard tersembunyi memutar tepat satu
+  batch tiga nada; kembali visible/refocus tidak replay.
+- Exact head `feb357689ad9f90d2805e62f56e27112787f2c3b` mencakup S393
+  `74a30742a87e70c81806f316538c11e1bcee9057`; browser 14/14, focused PHP
   21/21 (113 assertion), unit 9/9, typecheck/build, dan audit dependency nol.
 - Runbook UAT fisik 10 gate tersedia. Tidak ada runtime, migration, release
   lock, atau deploy; production tetap S385.
 
-## File yang berubah pada sinkronisasi SagaBook S386-S393
+## File yang berubah pada sinkronisasi SagaBook S386-S394
 
 - `products/sagabook/PRODUCT.md`
 - `products/sagabook/DOSSIER.md`

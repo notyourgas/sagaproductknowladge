@@ -7,8 +7,8 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Acceptance kumulatif S386-S393 exact
-  `74a30742a87e70c81806f316538c11e1bcee9057` membuktikan satu event hanya
+- Acceptance kumulatif S386-S394 exact
+  `feb357689ad9f90d2805e62f56e27112787f2c3b` membuktikan satu event hanya
   berbunyi pada satu dari dua tab, refocus tidak replay, mode mute menahan
   event, aktivasi kembali tidak memutar event tertahan, serta nada booking
   `659.25/830.61/987.77 Hz` berbeda dari verifikasi pembayaran
@@ -24,7 +24,9 @@ dalam satu dokumen public-safe.
   satu rangkaian `659.25/830.61/987.77 Hz` dan online/refocus berikutnya tidak
   replay. Expiry sesi 419 mengarah ke login tanpa nada; login ulang membentuk
   baseline senyap, lalu booking baru berbunyi tepat sekali tanpa replay saat
-  refocus. Browser 13/13, focused PHP 21/21 (113 assertion), unit 9/9, typecheck/build,
+  refocus. Saat visibility state dashboard tersembunyi, booking baru juga
+  memutar tepat satu rangkaian tiga nada; kembali visible/refocus tidak replay.
+  Browser 14/14, focused PHP 21/21 (113 assertion), unit 9/9, typecheck/build,
   serta audit dependency nol lulus. Runbook UAT fisik memiliki 10 gate.
   Tidak ada runtime/migration/deploy; status `SOURCE_PUSHED /
   LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED /
