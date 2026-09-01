@@ -1,5 +1,12 @@
 # Portfolio Changelog
 
+## 2026-09-01 - COYABAG guarded payment review production
+
+- Source `a84966925bb1ce4f9f22658362002e8e9b9d6b1d` aktif pada release `20260901-a849669`; rollback `20260901-d09960c`.
+- Payment review sekarang memakai impact dialog, reason/acknowledgement, accessibility focus, dan stale-context guard atas payment, bukti, serta status pesanan.
+- Full regression, immutable backup/deploy, readiness 42/42, dua worker, public runtime/font/API/admin/storefront smoke lulus tanpa migrasi atau mutasi commerce/provider/shipping/inventory.
+- Status `COMMERCE_ACTIVE / BUSINESS_READY=false`; exception pembayaran lama dan batas operasional lain tetap residual.
+
 ## 2026-09-01 - COYABAG guarded return inventory handoff production
 
 - Source `d09960c2b71c23fa3fbdeaccf5c8e75c4596f486` aktif pada release `20260901-d09960c`; rollback `20260901-16922ab`.

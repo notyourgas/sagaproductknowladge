@@ -1,5 +1,13 @@
 # COYABAG Changelog
 
+## 2026-09-01 - Guarded payment review deployed
+
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false` dari source `a84966925bb1ce4f9f22658362002e8e9b9d6b1d`, release `20260901-a849669`, rollback `20260901-d09960c`.
+- Payment Detail mengganti keputusan satu klik dengan dialog impact review, catatan, acknowledgement, focus trap, Escape, dan action target mobile 44 px.
+- Endpoint memakai expected payment/proof/order status dan menolak tab lama tanpa mutasi. High-value approval tetap maker-checker.
+- Backend 546 pass + satu controlled skip dengan 5.674 assertion, storefront 220/220, browser tiga viewport, build/audit, backup, readiness 42/42, worker, font, API/admin/storefront, dan runtime smoke lulus.
+- Tidak ada migrasi, aktivasi provider, payment intent, perubahan shipping, atau mutasi inventory saat deploy. Payment exception lama tetap residual bisnis.
+
 ## 2026-09-01 - Return quarantine handoff deployed
 
 - Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false` dari source `d09960c2b71c23fa3fbdeaccf5c8e75c4596f486`, release `20260901-d09960c`, rollback `20260901-16922ab`.

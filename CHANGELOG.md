@@ -1,5 +1,12 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-01 - COYABAG guarded payment review production sync
+
+- Exact source `a84966925bb1ce4f9f22658362002e8e9b9d6b1d` aktif pada immutable release `20260901-a849669`; rollback `20260901-d09960c`.
+- Payment review menambah impact confirmation, reason/acknowledgement, responsive accessibility, dan stale-context guard tanpa mengubah provider atau inventory.
+- Backend 546 pass + satu controlled skip, storefront 220/220, browser/build/audit, backup, readiness 42/42, worker dan public smoke lulus.
+- Klasifikasi `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false`.
+
 ## 2026-09-01 - COYABAG return quarantine handoff production sync
 
 - Exact source `d09960c2b71c23fa3fbdeaccf5c8e75c4596f486` aktif pada immutable release `20260901-d09960c`; rollback `20260901-16922ab`.

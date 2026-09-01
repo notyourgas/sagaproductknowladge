@@ -25,6 +25,13 @@ dengan Instrument Serif untuk display dan Helvetica family untuk UI/body.
 Dashboard admin memakai Plus Jakarta Sans variable self-hosted untuk seluruh
 interface operasional; wordmark COYABAG tetap memakai font logo resminya.
 
+Payment Detail production memakai review dialog terukur untuk approve,
+clarification, dan reject. Operator melihat dampak keputusan, identitas bukti,
+status pesanan, catatan, dan acknowledgement; server menolak tab lama ketika
+payment, bukti, atau status pesanan sudah berubah. Exact source
+`a84966925bb1ce4f9f22658362002e8e9b9d6b1d` aktif pada immutable release
+`20260901-a849669`, dengan rollback `20260901-d09960c`.
+
 ## Target pengguna
 
 - Customer fashion/streetwear.

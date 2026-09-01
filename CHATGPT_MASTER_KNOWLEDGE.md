@@ -1,5 +1,14 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+COYABAG exact source `a84966925bb1ce4f9f22658362002e8e9b9d6b1d`
+aktif pada immutable release `20260901-a849669`, rollback
+`20260901-d09960c`. Payment Detail tidak lagi mengeksekusi keputusan review
+satu klik: dialog menjelaskan dampak, meminta catatan/acknowledgement, menjaga
+focus mobile, dan server menolak payment, proof, atau order status stale.
+Release lulus full regression, backup, readiness 42/42, worker dan public
+smoke tanpa migrasi atau aktivasi provider. Status tetap `COMMERCE_ACTIVE /
+BUSINESS_READY=false`.
+
 COYABAG exact source `d09960c2b71c23fa3fbdeaccf5c8e75c4596f486`
 aktif pada immutable release `20260901-d09960c`, rollback
 `20260901-16922ab`. Detail retur sekarang mengarahkan keputusan item karantina

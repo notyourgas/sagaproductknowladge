@@ -12,10 +12,20 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-09-01 12:24 WIB |
-| Branch aktif | `codex/saga-member-goal1-sync` |
+| Waktu pembaruan terakhir | 2026-09-01 13:05 WIB |
+| Branch aktif | `codex/coyabag-customer-merge-knowledge-final` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `f1fc51102de3c747e6428f03cd48bb18913e4a59` |
+| Baseline sebelum pembaruan | `570ab7f73cb05cffe75bfdbfd8e391053bdedb12` |
+
+## COYABAG guarded payment review production
+
+- Source `a84966925bb1ce4f9f22658362002e8e9b9d6b1d` aktif pada release
+  `20260901-a849669`; rollback `20260901-d09960c`.
+- Payment review menolak stale payment/proof/order status dan memakai dialog
+  impact, reason, acknowledgement, serta accessibility desktop/mobile.
+- Full gates, immutable backup/deploy, readiness 42/42, worker, dan public
+  smoke lulus tanpa migrasi atau aktivasi provider.
+- Status `COMMERCE_ACTIVE / BUSINESS_READY=false`.
 
 ## COYABAG return quarantine handoff production
 
