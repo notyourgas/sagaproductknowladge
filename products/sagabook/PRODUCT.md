@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 1 September 2026 WIB
-Evidence status: SagaBook production aktif pada exact `fdf4155c0a294a6af8b41a819ba40e6d371f3ba8`, immutable release `20260901083148-fdf4155`. Kandidat indeks history closing S402 exact `010b2c67025c51494a66b12b1e8b6778667660c6` sudah `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; production belum memakai migration ini. Status keseluruhan `AUDIO_UAT_PENDING / PILOT_BLOCKED_BY_AUDIO_UAT / BUSINESS_READY=false`.
+Updated: 2 September 2026 WIB
+Evidence status: SagaBook production aktif pada exact `9ebdcf112f312f905c4213be9da1b80cf04e0ad3`, immutable release `20260901155248-9ebdcf1`. Kandidat shell detail booking mobile S411 exact `7d14f509d20eb3e0c3e6e1bb0a0f09980e157554` sudah `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; production belum memakai perubahan ini. Status keseluruhan `AUDIO_UAT_PENDING / PILOT_BLOCKED_BY_AUDIO_UAT / BUSINESS_READY=false`.
 
 ## Tujuan dokumen
 
@@ -15,6 +15,16 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
+
+- S411 menstabilkan detail booking mobile dengan header tetap, region scroll
+  internal, action tray tetap, dan tepat satu aksi utama penuh-lebar. Matrix
+  mencakup 320x700, 360x800, 375x667, 390x844, 393x873, 412x915, 430x932,
+  landscape 740x360, desktop 1440x900, zoom 200%, forced-colors,
+  reduced-motion, target 44 px, Escape/focus return, dan no-overflow. Focused
+  26/26 (198 assertion), full Feature 1.318/1.318 (14.912 assertion), visual
+  regression 7 lulus/3 skip, typecheck/build, design audit, serta audit
+  dependency nol lulus. Tidak ada perubahan API/database/permission/payment;
+  kandidat belum dideploy dan `BUSINESS_READY=false`.
 
 - S402 memperbaiki indeks baca history closing lintas cabang setelah MySQL
   8.4.9 membuktikan kandidat prefix awal tidak dipilih optimizer dan masih

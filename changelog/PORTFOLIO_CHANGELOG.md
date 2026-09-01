@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-09-02 - SagaBook S411 mobile booking-detail shell
+
+- Header detail booking kini tetap, isi panjang memakai scroll internal, dan
+  action tray tetap menampilkan tepat satu aksi utama penuh-lebar di mobile.
+- Matrix perangkat 320x700 sampai 430x932, landscape 740x360, desktop
+  1440x900, zoom 200%, forced-colors, reduced-motion, target 44 px,
+  Escape/focus return, dan no-overflow lulus.
+- Full Feature 1.318/1.318 (14.912 assertion), visual regression, build,
+  typecheck, design audit, dan audit dependency nol lulus pada exact
+  `7d14f509d20eb3e0c3e6e1bb0a0f09980e157554`.
+- Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED / BUSINESS_READY=false`; API/database/payment/
+  permission tidak berubah.
+
 ## 2026-09-02 - Saga Member all-goals local execution started
 
 - Master execution plan dan prompt Goal 0–6 tersedia dengan boundary Rp0.

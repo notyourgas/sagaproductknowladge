@@ -1,5 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+SagaBook S411 menstabilkan shell detail booking mobile: header tetap, region
+scroll internal, action tray tetap, satu aksi utama penuh-lebar, serta focus
+return setelah Escape. Matrix 320x700 sampai 430x932, landscape 740x360,
+desktop 1440x900, zoom 200%, forced-colors, reduced-motion, target 44 px, dan
+no-overflow lulus. Full Feature 1.318/1.318 (14.912 assertion), visual
+regression, typecheck/build, design audit, serta audit dependency nol lulus
+pada exact `7d14f509d20eb3e0c3e6e1bb0a0f09980e157554`. Tidak ada perubahan
+API/database/payment/permission. Status `SOURCE_PUSHED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
+
 Saga Member Platform telah membuka program eksekusi Goal 0–6 hanya pada
 boundary lokal dan incremental spend Rp0. One-command local pilot launcher
 menghidupkan hub loopback, Member PWA, Customer API dan SagaOPS OWNER/STAFF

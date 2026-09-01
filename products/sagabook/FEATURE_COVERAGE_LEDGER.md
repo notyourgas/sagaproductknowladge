@@ -1,6 +1,20 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 1 September 2026 WIB
+Evidence cut-off: 2 September 2026 WIB
+
+Mobile booking-detail shell S411 exact
+`7d14f509d20eb3e0c3e6e1bb0a0f09980e157554` telah `CONFIRMED /
+SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+PRODUCTION_UNCHANGED`. Header kini tetap, isi memakai scroll internal, action
+tray tetap menampilkan tepat satu aksi utama penuh-lebar di mobile, dan fokus
+kembali ke pemicu setelah Escape. Matrix 320x700 sampai 430x932, landscape
+740x360, desktop 1440x900, zoom 200%, forced-colors, reduced-motion, target
+44 px, dan no-overflow lulus. Focused 26/26 (198 assertion), full Feature
+1.318/1.318 (14.912 assertion), visual regression 7 lulus/3 skip,
+typecheck/build, design audit, serta audit dependency nol lulus. Tidak ada
+perubahan API, database, payment, permission, tenant, status, atau dependency.
+Next gate adalah review/merge berurutan setelah dependensi S410 lalu guarded
+release terotorisasi; `BUSINESS_READY=false`.
 
 Closing-history read indexes S402 exact candidate
 `010b2c67025c51494a66b12b1e8b6778667660c6` telah `CONFIRMED /

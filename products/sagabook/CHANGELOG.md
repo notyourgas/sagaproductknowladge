@@ -1,5 +1,23 @@
 # SagaBook Changelog
 
+## 2026-09-02 - S411 shell detail booking mobile stabil
+
+- Sebelum: header, isi panjang, dan action bar detail booking memakai scroll
+  sheet yang sama. Aksi utama baru stabil setelah bagian bawah tercapai dan
+  fokus tidak selalu kembali ke pemicu setelah Escape.
+- Setelah: detail booking memakai header tetap, region scroll internal, serta
+  action tray tetap dengan tepat satu aksi utama berlebar penuh di mobile.
+  Safe-area, focus return, target sentuh minimum 44 px, forced-colors,
+  reduced-motion, zoom 200%, dan no-overflow ikut dijaga.
+- Exact source `7d14f509d20eb3e0c3e6e1bb0a0f09980e157554` lulus matrix
+  320x700 sampai 430x932, landscape 740x360, dan desktop 1440x900; focused
+  26/26 (198 assertion), full Feature 1.318/1.318 (14.912 assertion), visual
+  regression 7 lulus/3 skip sesuai proyek, typecheck/build, design audit, dan
+  audit dependency nol.
+- Tidak ada perubahan API, database, payment, permission, tenant, status, atau
+  dependency. Status `SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
+
 ## 2026-09-01 - S402 indeks baca history closing lintas cabang
 
 - Sebelum: kandidat prefix tenant/date tetap tidak dipilih optimizer MySQL dan
