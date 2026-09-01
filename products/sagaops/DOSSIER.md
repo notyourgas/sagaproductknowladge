@@ -7,8 +7,8 @@ sales, dan konten SagaOPS.
 
 ## Konteks dan status bukti
 
-- Updated: 31 Juli 2026
-- Delivery: `PROTOTYPE`
+- Updated: 1 September 2026
+- Delivery: `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED`
 
@@ -44,7 +44,9 @@ ledger, stock guard, override, purchase order, dashboard, dan approval.
 
 ## Fitur utama
 
-Prototype workflow tercantum di [PRODUCT](PRODUCT.md).
+Workflow lokal mencakup POS/back office, operator console OWNER/STAFF,
+session-derived role/outlet, checkout, recovery, closing, approval, reporting,
+Member Code/Voyager/Reward integration boundary, dan fallback tanpa printer.
 
 ## Fitur MVP
 
@@ -53,11 +55,12 @@ manager override. Provider/hardware real belum termasuk evidence.
 
 ## Roadmap
 
-1. Finalize backend repository/API dan tenant isolation.
-2. Pilot outlet data model dan migration.
-3. Thermal printer/payment/offline acceptance.
-4. Backup/restore, monitoring, deploy.
-5. Controlled outlet pilot.
+1. Provision external PostgreSQL/queue/cache dan buktikan kapasitas, isolation,
+   backup/restore, serta disaster recovery.
+2. Configure Resend dan Sagadev Gateway sandbox dengan callback/replay evidence.
+3. Signed SBOM, SAST/DAST dan independent release review.
+4. Manual assistive-technology dan final business acceptance.
+5. Staging approval, controlled outlet pilot, lalu activation review terpisah.
 
 ## User journey
 
@@ -101,12 +104,16 @@ Operating system coffeeshop dari kasir sampai back office.
 
 **Apakah QRIS aktif?** Tidak; dummy/manual bukan gateway.
 **Apakah bisa offline?** Simulation bukan production acceptance.
-**Apakah sudah siap outlet?** Belum.
+**Apakah sudah siap outlet?** Belum; local internal alpha sudah tervalidasi,
+tetapi staging/provider/pilot/business gates masih terbuka.
 
 ## Technical overview
 
-Frontend prototype, Node/domain service, dan database contracts. Production API,
-repository, RLS/tenant boundary, dan hardware adapter belum lengkap.
+Private canonical source menyediakan versioned API, domain service, operator
+browser UI, migration, local PostgreSQL semantics/RLS, idempotency, recovery,
+security controls, dan content-addressed clean-room artifact. Bukti ini lokal;
+external database, real provider, signed release, staging, dan production belum
+terverifikasi.
 
 ## Integrasi
 

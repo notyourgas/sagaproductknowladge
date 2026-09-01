@@ -7,7 +7,7 @@ status Saga Platform.
 
 ## Konteks dan status bukti
 
-- Updated: 31 Juli 2026
+- Updated: 1 September 2026
 - Delivery: `PRODUCTION_DEPLOYED` untuk fondasi tertentu
 - Activation: `PRODUCTION_ACTIVATED` untuk fondasi yang dipakai;
   `NOT_PRODUCTION_ACTIVATED` untuk adapter/roadmap lain
@@ -50,6 +50,11 @@ subscription, entitlement, audit, readiness, provisioning, integration event.
 
 Capability tercatat di [PRODUCT](PRODUCT.md); implementasi per capability
 bervariasi dan tidak boleh digeneralisasi.
+
+Saga Member merupakan bounded context/customer experience lokal yang memakai
+kontrak dan authority terpisah. Irisan Goal 1 sudah `LOCAL_VALIDATED` untuk
+fixture internal, tetapi belum staging, provider-backed, production-activated,
+atau business-ready.
 
 ## Fitur MVP
 

@@ -8,6 +8,16 @@ Mencatat perubahan material control plane Saga.
 
 Fondasi production dan roadmap pemisahan boundary harus dibedakan.
 
+## 2026-09-01 — Saga Member local alpha boundary
+
+- Saga Member, Customer Platform, Contracts, SagaOPS dan SagaBook connector
+  dibuktikan sebagai bounded sources dengan authority/event contract terpisah.
+- Member/POS/loyalty/Reward/Book/optional fallback terverifikasi lokal melalui
+  source, browser, migration/RLS, recovery dan clean-room gates.
+- Status irisan: `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED / BUSINESS_READY=false`; fondasi production Saga
+  Platform tidak diubah.
+
 ## 2026-07-31 — Central knowledge baseline
 
 - Control-plane positioning dan product boundary disinkronkan.

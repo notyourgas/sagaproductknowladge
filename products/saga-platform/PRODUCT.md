@@ -1,6 +1,6 @@
 # Saga Platform Product Knowledge
 
-Updated: 31 Juli 2026
+Updated: 1 September 2026
 Evidence status: production foundation + migration roadmap
 
 ## Tujuan dokumen
@@ -65,6 +65,17 @@ Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
 - Product account dan commerce flows sudah digunakan untuk SagaBook/SagaView.
 - Pemisahan bounded context dan adapter dilakukan bertahap.
 - Bukan rewrite total.
+
+### Saga Member local internal alpha
+
+- Saga Member dan Customer Platform memiliki private canonical source terpisah
+  dari Contracts dan SagaOPS.
+- Local alpha membuktikan Email OTP fixture, Member PWA, Points/XP/Tier,
+  Voyager, Reward, Card, Quest, Push in-app fallback, SagaBook handoff, dan
+  server-owned authority/replay boundaries.
+- Status irisan ini: `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; ia tidak mengubah fondasi Saga Platform yang sudah
+  production dan tidak mengaktifkan provider atau customer pilot.
 
 ## Gap utama
 
