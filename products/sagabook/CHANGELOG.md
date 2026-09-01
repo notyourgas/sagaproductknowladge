@@ -1,5 +1,21 @@
 # SagaBook Changelog
 
+## 2026-09-01 - S401 receipt UAT audio terikat kronologi release
+
+- Sebelum: receipt dapat lolos walau `executedAt` tanpa zona waktu, lebih awal
+  dari immutable release, atau release memakai kalender UTC yang mustahil.
+- Setelah: schema v3 memvalidasi kalender release, ISO 8601 lengkap dengan
+  zona waktu, offset, dan syarat `executedAt >= release timestamp`.
+- Exact source `cd3a5e12d58d8e0b3aecf02b9470fad256396f2a` lulus TDD merah
+  10/11 lalu hijau 11/11, pilot 22/22, authenticated UAT 15/15,
+  typecheck/build, audit Composer/npm nol, dan diff check.
+- Perubahan hanya validator, test, dan runbook; production tetap S385 exact
+  main `154ab5e8e7049e1f0155b304ae9da7c03363bc69`, release
+  `20260831041833-154ab5e`, rollback `20260831025235-58e1303`.
+- Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / AUDIO_UAT_PENDING /
+  PILOT_BLOCKED_BY_AUDIO_UAT / BUSINESS_READY=false`.
+
 ## 2026-09-01 - S400 manual-observation boundary untuk UAT audio
 
 - Sebelum: receipt audio memuat hasil browser dan gate, tetapi belum

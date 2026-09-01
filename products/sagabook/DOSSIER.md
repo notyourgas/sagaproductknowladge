@@ -7,6 +7,14 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- S401 exact `cd3a5e12d58d8e0b3aecf02b9470fad256396f2a` menutup gap
+  kronologi receipt: schema v3 mewajibkan `executedAt` berzona waktu, kalender
+  release/observasi valid, dan observasi tidak lebih awal dari UTC timestamp
+  immutable release. TDD merah 10/11 menjadi hijau 11/11; pilot 22/22,
+  authenticated UAT 15/15, typecheck/build, audit dependency nol, dan diff
+  check lulus. Tooling-only; production tetap S385, UAT speaker dan pilot masih
+  pending, serta `BUSINESS_READY=false`.
+
 - S400 exact `f03f0db8a7f7018b9405a17c9e1beb79084fd752` menutup gap
   bahwa receipt otomatis/headless sebelumnya dapat memiliki bentuk yang mirip
   evidence dengar fisik. Schema v2 sekarang mewajibkan versi Chrome/Edge

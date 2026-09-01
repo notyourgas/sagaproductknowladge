@@ -13,9 +13,30 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Field | Nilai |
 |---|---|
 | Waktu pembaruan terakhir | 2026-09-01 13:58 WIB |
-| Branch aktif | `codex/coyabag-customer-merge-knowledge-final` |
+| Branch aktif | `codex/s401-sagabook-audio-uat-release-chronology-knowledge` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `5b33c55` |
+| Baseline sebelum pembaruan | `9cc9e24` |
+
+## SagaBook S401 release chronology untuk receipt UAT audio
+
+- Exact source `cd3a5e12d58d8e0b3aecf02b9470fad256396f2a` sudah
+  `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- Schema audio v3 memvalidasi kalender immutable release, ISO 8601 berzona,
+  offset, dan melarang `executedAt` sebelum timestamp UTC release.
+- TDD merah 10/11 menjadi hijau 11/11; pilot 22/22, authenticated UAT 15/15,
+  typecheck/build, audit dependency nol, dan diff check lulus. Production tetap
+  S385; UAT speaker/pilot tetap pending dan `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi SagaBook S401
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG guarded shipment handoff production
 

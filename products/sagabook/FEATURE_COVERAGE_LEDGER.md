@@ -2,6 +2,17 @@
 
 Evidence cut-off: 1 September 2026 WIB
 
+Release-chronology binding S401 exact
+`cd3a5e12d58d8e0b3aecf02b9470fad256396f2a` telah `CONFIRMED /
+SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+PRODUCTION_UNCHANGED`. Receipt audio schema v3 mewajibkan waktu ISO 8601
+berzona, kalender valid, dan `executedAt` tidak mendahului timestamp UTC
+immutable release; receipt pra-release, tanpa zona waktu, atau tanggal/offset
+mustahil ditolak fail-closed. TDD merah 10/11 menjadi hijau 11/11; pilot 22/22,
+authenticated UAT 15/15, typecheck/build, audit dependency nol, dan diff check
+lulus. Production tetap S385. Gap READY tunggal tetap UAT speaker Chrome/Edge
+nyata; pilot belum dapat diterima dan `BUSINESS_READY=false`.
+
 Manual-observation boundary S400 exact
 `f03f0db8a7f7018b9405a17c9e1beb79084fd752` telah `CONFIRMED /
 SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /

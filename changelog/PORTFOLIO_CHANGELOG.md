@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-09-01 - SagaBook S401 release chronology untuk receipt UAT audio
+
+- Exact source `cd3a5e12d58d8e0b3aecf02b9470fad256396f2a` menaikkan receipt
+  audio ke schema v3 dan menolak observasi tanpa zona waktu, pra-release, atau
+  tanggal/offset yang tidak valid.
+- TDD merah 10/11 menjadi hijau 11/11; pilot 22/22, authenticated UAT 15/15,
+  typecheck/build, audit dependency nol, dan diff check lulus.
+- Tooling-only tanpa runtime/migration/deploy; production tetap S385. UAT
+  speaker nyata dan pilot masih pending; `BUSINESS_READY=false`.
+
 ## 2026-09-01 - COYABAG guarded shipment handoff production
 
 - Source `32d3419dedb4e4fc6d224e3a6b5dadeedc3e32c3` aktif pada release `20260901-32d3419`; rollback `20260901-a849669`.

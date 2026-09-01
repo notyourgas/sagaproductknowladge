@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
 Updated: 1 September 2026 WIB
-Evidence status: Audio notifikasi admin S385 aktif pada exact merged main `154ab5e8e7049e1f0155b304ae9da7c03363bc69`, immutable release `20260831041833-154ab5e`, dengan rollback `20260831025235-58e1303`. S400 exact `f03f0db8a7f7018b9405a17c9e1beb79084fd752` memperketat receipt UAT audio fisik schema v2 agar bukti otomatis/headless tidak dapat diklaim sebagai observasi speaker manusia dan sudah `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`. Status keseluruhan `AUDIO_UAT_PENDING / PILOT_BLOCKED_BY_AUDIO_UAT / BUSINESS_READY=false`.
+Evidence status: Audio notifikasi admin S385 aktif pada exact merged main `154ab5e8e7049e1f0155b304ae9da7c03363bc69`, immutable release `20260831041833-154ab5e`, dengan rollback `20260831025235-58e1303`. S401 exact `cd3a5e12d58d8e0b3aecf02b9470fad256396f2a` mengikat waktu receipt UAT audio fisik schema v3 ke waktu UTC immutable release dan sudah `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`. Status keseluruhan `AUDIO_UAT_PENDING / PILOT_BLOCKED_BY_AUDIO_UAT / BUSINESS_READY=false`.
 
 ## Tujuan dokumen
 
@@ -15,6 +15,14 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
+
+- S401 menaikkan receipt UAT audio fisik ke schema v3. `executedAt` wajib ISO
+  8601 lengkap dengan zona waktu dan tidak boleh mendahului timestamp UTC pada
+  immutable release; kalender release, tanggal observasi, dan offset juga
+  divalidasi fail-closed. TDD merah 10/11 menjadi hijau 11/11; tooling pilot
+  22/22, authenticated UAT 15/15, typecheck/build, audit Composer/npm nol,
+  serta diff check lulus. Ini hanya tooling/test/runbook; production tetap S385
+  dan UAT speaker nyata masih pending.
 
 - S400 menaikkan receipt UAT audio fisik ke schema v2. Setiap Chrome/Edge wajib
   memiliki versi browser dotted-numeric, `audioOutput=physical_speaker`,

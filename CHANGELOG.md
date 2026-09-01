@@ -1,5 +1,21 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-01 - SagaBook S401 audio UAT release chronology sync
+
+- Ringkasan: receipt audio schema v3 menolak observasi tanpa zona waktu,
+  pra-release, atau tanggal/offset yang tidak valid.
+- Provenance: exact source `cd3a5e12d58d8e0b3aecf02b9470fad256396f2a`;
+  production tetap S385 exact main `154ab5e8e7049e1f0155b304ae9da7c03363bc69`,
+  release `20260831041833-154ab5e`, rollback `20260831025235-58e1303`.
+- Evidence: TDD merah 10/11 menjadi hijau 11/11; pilot 22/22,
+  authenticated UAT 15/15, typecheck/build, audit Composer/npm nol, dan diff
+  check lulus.
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / AUDIO_UAT_PENDING /
+  PILOT_BLOCKED_BY_AUDIO_UAT / BUSINESS_READY=false`.
+- Dokumen terdampak: Product, dossier, ledger/changelog SagaBook, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-09-01 - COYABAG guarded shipment handoff production sync
 
 - Exact source `32d3419dedb4e4fc6d224e3a6b5dadeedc3e32c3` aktif pada immutable release `20260901-32d3419`; rollback `20260901-a849669`.
