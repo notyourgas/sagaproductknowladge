@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
 Updated: 1 September 2026 WIB
-Evidence status: Audio notifikasi admin S385 aktif pada exact merged main `154ab5e8e7049e1f0155b304ae9da7c03363bc69`, immutable release `20260831041833-154ab5e`, dengan rollback `20260831025235-58e1303`. Acceptance kumulatif S386-S395 exact `09f93c680bcead45fbeb33935ca48b7728afd3bf` sudah `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`. Status keseluruhan `AUDIO_UAT_PENDING / BUSINESS_READY=false`.
+Evidence status: Audio notifikasi admin S385 aktif pada exact merged main `154ab5e8e7049e1f0155b304ae9da7c03363bc69`, immutable release `20260831041833-154ab5e`, dengan rollback `20260831025235-58e1303`. Acceptance kumulatif S386-S396 exact `a0fcba18556355e67ff8fb84f7aa24f35bdc3590` sudah `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`. Status keseluruhan `AUDIO_UAT_PENDING / BUSINESS_READY=false`.
 
 ## Tujuan dokumen
 
@@ -16,7 +16,7 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
 
-- Acceptance kumulatif S386-S395 menambah browser Chromium dua tab untuk
+- Acceptance kumulatif S386-S396 menambah browser Chromium dua tab untuk
   exact-once chime, refocus tanpa replay, serta mute dan aktivasi kembali
   tanpa replay/duplikasi. Browser juga memverifikasi urutan nada booking
   `659.25/830.61/987.77 Hz` berbeda dari verifikasi pembayaran
@@ -41,11 +41,13 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   S395 membuktikan booking yang baru tersedia saat halaman tersembunyi dan
   lifecycle beku tetap diam sebelum resume; setelah halaman aktif dan fokus,
   booking dipanggil lalu memutar tepat satu rangkaian, sedangkan resume/focus
-  berikutnya tidak replay. Browser 15/15 dengan 45 eksekusi viewport, focused PHP 21/21 (113 assertion), unit
+  berikutnya tidak replay. S396 menambah simulasi bfcache: booking staged saat
+  `pagehide` tetap diam, kemudian `pageshow` dan focus memutar satu rangkaian;
+  `pageshow`/focus berikutnya tidak replay. Browser 16/16 dengan 48 eksekusi viewport, focused PHP 21/21 (113 assertion), unit
   audio/cursor 9/9, typecheck/build, serta
   audit Composer/npm nol lulus pada exact head
-  `09f93c680bcead45fbeb33935ca48b7728afd3bf` dengan parent S394
-  `feb357689ad9f90d2805e62f56e27112787f2c3b`. Perubahan hanya acceptance harness,
+  `a0fcba18556355e67ff8fb84f7aa24f35bdc3590` dengan parent S395
+  `09f93c680bcead45fbeb33935ca48b7728afd3bf`. Perubahan hanya acceptance harness,
   tanpa runtime, migration, atau deploy. Status `CONFIRMED / SOURCE_PUSHED /
   LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED /
   AUDIO_UAT_PENDING / BUSINESS_READY=false`.

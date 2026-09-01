@@ -1,6 +1,6 @@
 # Saga Product Knowledge Changelog
 
-## 2026-09-01 - SagaBook S386-S395 audio acceptance sync
+## 2026-09-01 - SagaBook S386-S396 audio acceptance sync
 
 - Ringkasan: menyinkronkan acceptance exact-once dua tab, refocus, mute, dan
   re-enable, perbedaan urutan nada booking/verifikasi pembayaran, serta
@@ -22,10 +22,13 @@
 - S395 membuktikan booking staged saat halaman tersembunyi dan lifecycle beku
   tetap diam; visible/resume/focus memutar satu batch dan lifecycle/focus
   berikutnya tidak replay.
-- Provenance: exact head `09f93c680bcead45fbeb33935ca48b7728afd3bf`,
-  parent S394 `feb357689ad9f90d2805e62f56e27112787f2c3b`, berbasis production
+- S396 membuktikan booking staged pada simulasi bfcache `pagehide` tetap diam;
+  `pageshow` dan focus memutar satu batch, lalu transisi/focus berikutnya tidak
+  replay.
+- Provenance: exact head `a0fcba18556355e67ff8fb84f7aa24f35bdc3590`,
+  parent S395 `09f93c680bcead45fbeb33935ca48b7728afd3bf`, berbasis production
   `154ab5e8e7049e1f0155b304ae9da7c03363bc69`.
-- Evidence: browser 15/15 dengan 45 eksekusi viewport, focused PHP 21/21 (113 assertion), unit 9/9,
+- Evidence: browser 16/16 dengan 48 eksekusi viewport, focused PHP 21/21 (113 assertion), unit 9/9,
   typecheck/build, serta audit Composer/npm nol.
 - Klasifikasi: `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
   IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / AUDIO_UAT_PENDING /

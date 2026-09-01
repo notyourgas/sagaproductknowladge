@@ -2,8 +2,8 @@
 
 Evidence cut-off: 1 September 2026 WIB
 
-Acceptance audio kumulatif S386-S395 exact
-`09f93c680bcead45fbeb33935ca48b7728afd3bf` telah `CONFIRMED /
+Acceptance audio kumulatif S386-S396 exact
+`a0fcba18556355e67ff8fb84f7aa24f35bdc3590` telah `CONFIRMED /
 SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
 PRODUCTION_UNCHANGED`. Chromium membuktikan exact-once lintas dua tab, refocus
 tanpa replay, mute menahan event, dan aktivasi kembali tidak memutar atau
@@ -24,7 +24,9 @@ Visibility state tersembunyi sintetis membuktikan booking baru tetap memutar
 tepat satu rangkaian tiga nada, lalu kembali visible/refocus tidak replay.
 Lifecycle beku sintetis membuktikan booking staged tetap diam sebelum resume;
 resume/visible/focus mengambil booking dan memutar satu rangkaian, sedangkan
-resume/focus berikutnya tidak replay. Browser 15/15 dengan 45 eksekusi viewport,
+resume/focus berikutnya tidak replay. Simulasi bfcache membuktikan booking staged
+pada `pagehide` tetap diam; `pageshow` dan focus memutar satu rangkaian, lalu
+transisi/focus berikutnya tidak replay. Browser 16/16 dengan 48 eksekusi viewport,
 focused PHP 21/21 (113 assertion), unit audio/cursor 9/9,
 typecheck/build, serta audit Composer/npm nol lulus. Runbook fisik memuat 10
 gate Chrome/Edge. Production tetap S385 dan `AUDIO_UAT_PENDING /

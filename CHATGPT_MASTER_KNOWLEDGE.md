@@ -1,7 +1,7 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-SagaBook acceptance kumulatif S386-S395 exact
-`09f93c680bcead45fbeb33935ca48b7728afd3bf` membuktikan exact-once chime
+SagaBook acceptance kumulatif S386-S396 exact
+`a0fcba18556355e67ff8fb84f7aa24f35bdc3590` membuktikan exact-once chime
 lintas dua tab, refocus tanpa replay, mute menahan event, dan aktivasi kembali
 tidak memutar atau menggandakan event tertahan. Browser juga membuktikan nada
 booking `659.25/830.61/987.77 Hz` berbeda dari verifikasi pembayaran
@@ -19,8 +19,10 @@ baseline senyap, lalu hanya booking baru yang memutar satu batch tanpa replay.
 Booking saat visibility state dashboard tersembunyi memutar tepat satu batch
 tiga nada; kembali visible/refocus tidak replay. Booking staged ketika halaman
 tersembunyi dan lifecycle beku tetap diam; visible/resume/focus memanggil feed,
-memutar satu batch, dan lifecycle/focus berikutnya tidak replay. Browser 15/15
-dengan 45 eksekusi viewport, focused PHP
+memutar satu batch, dan lifecycle/focus berikutnya tidak replay. Pada simulasi
+bfcache, booking staged saat `pagehide` tetap diam; `pageshow` dan focus
+memutar satu batch, sedangkan transisi/focus berikutnya tidak replay. Browser 16/16
+dengan 48 eksekusi viewport, focused PHP
 21/21 (113 assertion), unit audio/cursor 9/9,
 typecheck/build, audit Composer/npm nol,
 serta runbook UAT fisik 10 gate tersedia. Perubahan hanya test/dokumentasi;

@@ -12,14 +12,14 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-09-01 08:18 WIB |
-| Branch aktif | `codex/s395-sagabook-audio-resume-recovery-knowledge` |
+| Waktu pembaruan terakhir | 2026-09-01 09:18 WIB |
+| Branch aktif | `codex/s396-sagabook-audio-pageshow-recovery-knowledge` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `a7b908db3f7a47311cd6d598f57f70546593a520` |
-| Informasi terakhir disinkronkan | SagaBook acceptance cumulative S386-S395 exact `09f93c680bcead45fbeb33935ca48b7728afd3bf`; production tetap S385 exact main `154ab5e8e7049e1f0155b304ae9da7c03363bc69`. |
+| Baseline sebelum pembaruan | `bfdd51febf8c18c2e34970310528d25996185b1d` |
+| Informasi terakhir disinkronkan | SagaBook acceptance cumulative S386-S396 exact `a0fcba18556355e67ff8fb84f7aa24f35bdc3590`; production tetap S385 exact main `154ab5e8e7049e1f0155b304ae9da7c03363bc69`. |
 | Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / AUDIO_UAT_PENDING / BUSINESS_READY=false`. |
 
-## SagaBook S386-S395 audio acceptance cumulative
+## SagaBook S386-S396 audio acceptance cumulative
 
 - Browser Chromium membuktikan exact-once lintas dua tab, refocus tanpa
   replay, mute menahan event, aktivasi kembali tidak memutar event tertahan,
@@ -41,13 +41,15 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - Booking staged ketika halaman tersembunyi dan lifecycle beku tetap diam;
   visible/resume/focus mengambil booking dan memutar satu batch, lalu
   lifecycle/focus berikutnya tidak replay.
-- Exact head `09f93c680bcead45fbeb33935ca48b7728afd3bf` mencakup S394
-  `feb357689ad9f90d2805e62f56e27112787f2c3b`; browser 15/15 dengan 45 eksekusi viewport, focused PHP
+- Booking staged pada simulasi bfcache `pagehide` tetap diam; `pageshow` dan
+  focus memutar satu batch, lalu transisi/focus berikutnya tidak replay.
+- Exact head `a0fcba18556355e67ff8fb84f7aa24f35bdc3590` mencakup S395
+  `09f93c680bcead45fbeb33935ca48b7728afd3bf`; browser 16/16 dengan 48 eksekusi viewport, focused PHP
   21/21 (113 assertion), unit 9/9, typecheck/build, dan audit dependency nol.
 - Runbook UAT fisik 10 gate tersedia. Tidak ada runtime, migration, release
   lock, atau deploy; production tetap S385.
 
-## File yang berubah pada sinkronisasi SagaBook S386-S395
+## File yang berubah pada sinkronisasi SagaBook S386-S396
 
 - `products/sagabook/PRODUCT.md`
 - `products/sagabook/DOSSIER.md`

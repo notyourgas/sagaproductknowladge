@@ -7,8 +7,8 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Acceptance kumulatif S386-S395 exact
-  `09f93c680bcead45fbeb33935ca48b7728afd3bf` membuktikan satu event hanya
+- Acceptance kumulatif S386-S396 exact
+  `a0fcba18556355e67ff8fb84f7aa24f35bdc3590` membuktikan satu event hanya
   berbunyi pada satu dari dua tab, refocus tidak replay, mode mute menahan
   event, aktivasi kembali tidak memutar event tertahan, serta nada booking
   `659.25/830.61/987.77 Hz` berbeda dari verifikasi pembayaran
@@ -28,7 +28,10 @@ dalam satu dokumen public-safe.
   memutar tepat satu rangkaian tiga nada; kembali visible/refocus tidak replay.
   Saat halaman tersembunyi dan lifecycle beku, booking staged tetap diam;
   resume, visible, dan focus memanggil feed lalu memutar satu rangkaian, dan
-  lifecycle/focus kedua tidak replay. Browser 15/15 dengan 45 eksekusi viewport,
+  lifecycle/focus kedua tidak replay. Saat halaman berada dalam simulasi
+  bfcache, booking staged pada `pagehide` tetap diam; `pageshow` dan focus
+  memutar satu rangkaian, lalu transisi/focus berikutnya tidak replay.
+  Browser 16/16 dengan 48 eksekusi viewport,
   focused PHP 21/21 (113 assertion), unit 9/9, typecheck/build,
   serta audit dependency nol lulus. Runbook UAT fisik memiliki 10 gate.
   Tidak ada runtime/migration/deploy; status `SOURCE_PUSHED /

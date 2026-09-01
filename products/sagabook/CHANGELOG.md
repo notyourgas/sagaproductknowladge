@@ -1,6 +1,6 @@
 # SagaBook Changelog
 
-## 2026-09-01 - S386-S395 audio acceptance cumulative
+## 2026-09-01 - S386-S396 audio acceptance cumulative
 
 - Browser acceptance kini membuktikan exact-once lintas dua tab, refocus
   tanpa replay, mute menahan event, serta aktivasi kembali tidak memutar atau
@@ -27,9 +27,12 @@
 - Lifecycle beku sintetis membuktikan booking staged tetap diam sebelum
   resume; visible/resume/focus memanggil feed dan memutar satu batch, lalu
   lifecycle/focus berikutnya tidak replay.
-- Exact head `09f93c680bcead45fbeb33935ca48b7728afd3bf` mencakup parent S394
-  `feb357689ad9f90d2805e62f56e27112787f2c3b` dan runbook UAT fisik 10 gate.
-- Matrix browser 15/15 dengan 45 eksekusi viewport, focused PHP 21/21 (113 assertion), unit 9/9,
+- Simulasi bfcache membuktikan booking staged pada `pagehide` tetap diam;
+  `pageshow` dan focus memutar satu batch, lalu transisi/focus berikutnya tidak
+  replay.
+- Exact head `a0fcba18556355e67ff8fb84f7aa24f35bdc3590` mencakup parent S395
+  `09f93c680bcead45fbeb33935ca48b7728afd3bf` dan runbook UAT fisik 10 gate.
+- Matrix browser 16/16 dengan 48 eksekusi viewport, focused PHP 21/21 (113 assertion), unit 9/9,
   typecheck/build, dan audit Composer/npm nol lulus.
 - Perubahan hanya acceptance harness dan dokumentasi. Production tetap S385
   exact main `154ab5e8e7049e1f0155b304ae9da7c03363bc69`, release
