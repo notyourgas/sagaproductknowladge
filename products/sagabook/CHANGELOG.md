@@ -2,27 +2,23 @@
 
 ## 2026-09-01 - S402 indeks baca history closing lintas cabang
 
-- Sebelum: query history closing tanpa filter cabang hanya memakai prefix
-  tenant indeks lama dan membutuhkan temporary sort untuk urutan tanggal serta
-  update/revisi.
-- Setelah: migration additive menambah indeks tenant+date+ordering pada closing
-  utama dan revision ledger, dengan online DDL MySQL/MariaDB serta rollback
+- Sebelum: kandidat prefix tenant/date tetap tidak dipilih optimizer MySQL dan
+  kedua query history masih melakukan filesort atas 120.000 baris sintetis.
+- Setelah: correction full-column tenant+date+ordering dipakai sebagai covering
+  index tanpa filesort, tetap memakai online DDL MySQL/MariaDB dan rollback
   idempoten. Predicate tenant/cabang, permission, dan baris bisnis tidak
   berubah.
-- Benchmark sintetis 120.000 baris: closing 1,3833 ms menjadi 0,0174 ms
-  (79,35x), revision history 1,2134 ms menjadi 0,0802 ms (15,13x); temporary
-  sort SQLite hilang.
-- Exact source `b1160aa9ca4bf3b92c6688c2f778fad43301b8d7` lulus migration
-  fresh/rollback/reapply dengan preservasi baris, database audit 98 tanpa
-  failure, focused closing/report 36/36 (203 assertion), full Feature
-  1.303/1.303 (14.779 assertion), typecheck/build, Pint, dan audit
-  Composer/npm nol.
+- Benchmark MySQL 8.4.9 120.000+120.000 baris: p50 closing 406,5444 ms
+  menjadi 0,2207 ms dan revision history 462,8893 ms menjadi 0,2730 ms.
+- Exact candidate `010b2c67025c51494a66b12b1e8b6778667660c6` lulus
+  rollback/reapply dengan preservasi seluruh baris, database audit 98 tanpa
+  failure, focused 41/41 (477 assertion), full Feature 1.314/1.314 (14.859
+  assertion), typecheck/build, dan audit Composer/npm nol.
 - Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
   IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
-  Production tetap S385 exact main
-  `154ab5e8e7049e1f0155b304ae9da7c03363bc69`, release
-  `20260831041833-154ab5e`, rollback `20260831025235-58e1303`. Execution plan
-  MySQL terautentikasi tetap gate sebelum release.
+  Production aktif tetap exact `fdf4155c0a294a6af8b41a819ba40e6d371f3ba8`,
+  release `20260901083148-fdf4155`. Review/merge dan guarded release tetap
+  gate sebelum migration ini boleh aktif.
 
 ## 2026-09-01 - S401 receipt UAT audio terikat kronologi release
 

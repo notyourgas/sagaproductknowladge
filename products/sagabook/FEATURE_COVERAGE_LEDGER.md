@@ -2,19 +2,19 @@
 
 Evidence cut-off: 1 September 2026 WIB
 
-Closing-history read indexes S402 exact
-`b1160aa9ca4bf3b92c6688c2f778fad43301b8d7` telah `CONFIRMED /
+Closing-history read indexes S402 exact candidate
+`010b2c67025c51494a66b12b1e8b6778667660c6` telah `CONFIRMED /
 SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
-PRODUCTION_UNCHANGED`. Baseline query all-branch hanya memakai prefix tenant
-indeks lama dan temporary sort; dua indeks additive kini mencakup
-tenant+date+ordering untuk closing dan revision history. Benchmark sintetis
-120.000 baris naik 79,35x dan 15,13x; migration fresh/rollback/reapply menjaga
-baris, database audit 98 tanpa failure, focused 36/36 (203 assertion), full
-Feature 1.303/1.303 (14.779 assertion), typecheck/build, Pint, serta audit
-dependency nol lulus. Tidak ada deploy atau perubahan production. Gap READY
-S402 berikutnya adalah execution plan dan rollback/reapply MySQL disposable
-terautentikasi sebelum kandidat boleh dipromosikan. UAT speaker Chrome/Edge dan
-pilot tetap residual produk; `BUSINESS_READY=false`.
+PRODUCTION_UNCHANGED`. Kandidat prefix awal gagal dipilih optimizer MySQL dan
+tetap filesort; correction full-column tenant+date+ordering kini menjadi
+covering index tanpa filesort. Pada MySQL 8.4.9 sintetis 120.000+120.000
+baris, p50 closing membaik 406,5444 menjadi 0,2207 ms dan revision 462,8893
+menjadi 0,2730 ms. Rollback/reapply menjaga semua baris, database audit 98,
+focused 41/41 (477 assertion), full Feature 1.314/1.314 (14.859 assertion),
+typecheck/build, serta audit dependency nol lulus. Tidak ada deploy atau
+perubahan production; next gate adalah review/merge exact candidate dan guarded
+release hanya setelah approval. UAT speaker Chrome/Edge dan pilot tetap
+residual produk; `BUSINESS_READY=false`.
 
 Release-chronology binding S401 exact
 `cd3a5e12d58d8e0b3aecf02b9470fad256396f2a` telah `CONFIRMED /

@@ -7,18 +7,19 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- S402 exact `b1160aa9ca4bf3b92c6688c2f778fad43301b8d7` menutup gap
-  query history closing lintas cabang yang sebelumnya hanya memakai prefix
-  tenant dari indeks lama lalu membuat temporary sort. Dua indeks additive
-  tenant+date+ordering baru mempercepat benchmark sintetis 120.000 baris
-  sebesar 79,35x untuk closing dan 15,13x untuk revision history. TDD awal
-  gagal karena indeks belum ada, lalu migration fresh/rollback/reapply,
-  database audit 98 tanpa failure, focused closing/report 36/36 (203
-  assertion), full Feature 1.303/1.303 (14.779 assertion), typecheck/build,
-  Pint, dan audit dependency nol lulus. Scope tenant/branch, permission, dan
-  data bisnis tidak berubah. Status `SOURCE_PUSHED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; execution plan MySQL
-  terautentikasi masih wajib sebelum release dan `BUSINESS_READY=false`.
+- S402 exact candidate `010b2c67025c51494a66b12b1e8b6778667660c6`
+  menutup gap query history closing lintas cabang pada MySQL. Kandidat awal
+  dengan prefix tenant/date terbukti tidak dipilih optimizer dan masih
+  filesort; correction full-column tenant+date+ordering kini dipakai sebagai
+  covering index tanpa filesort. Pada MySQL 8.4.9 sintetis 120.000+120.000
+  baris, p50 closing turun 406,5444 menjadi 0,2207 ms dan revision turun
+  462,8893 menjadi 0,2730 ms. Rollback/reapply menjaga semua baris, database
+  audit 98 tanpa failure, focused 41/41 (477 assertion), full Feature
+  1.314/1.314 (14.859 assertion), typecheck/build, dan audit dependency nol
+  lulus. Scope tenant/branch, permission, dan data bisnis tidak berubah.
+  Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED`; production aktif tetap exact `fdf4155c0a294a6af8b41a819ba40e6d371f3ba8`
+  release `20260901083148-fdf4155`, dan `BUSINESS_READY=false`.
 
 - S401 exact `cd3a5e12d58d8e0b3aecf02b9470fad256396f2a` menutup gap
   kronologi receipt: schema v3 mewajibkan `executedAt` berzona waktu, kalender

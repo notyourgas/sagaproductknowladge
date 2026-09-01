@@ -9,16 +9,18 @@
 
 ## 2026-09-01 - SagaBook S402 closing-history read-index sync
 
-- Ringkasan: dua indeks additive menutup temporary-sort path pada history
-  closing lintas cabang tanpa mengubah data atau isolasi tenant/cabang.
-- Provenance: exact source `b1160aa9ca4bf3b92c6688c2f778fad43301b8d7`;
-  production tetap S385 exact main
-  `154ab5e8e7049e1f0155b304ae9da7c03363bc69`, release
-  `20260831041833-154ab5e`, rollback `20260831025235-58e1303`.
-- Evidence: benchmark sintetis 79,35x dan 15,13x; migration
-  fresh/rollback/reapply, database audit 98 tanpa failure, full Feature
-  1.303/1.303 (14.779 assertion), build/typecheck/Pint, serta audit dependency
-  nol lulus.
+- Ringkasan: correction MySQL mengganti prefix index yang tidak dipilih
+  optimizer menjadi full-column tenant+date+ordering; kedua query history kini
+  memakai covering index tanpa filesort.
+- Provenance: exact candidate `010b2c67025c51494a66b12b1e8b6778667660c6`
+  pada main baseline `0c8a80f417b9ee7bf20dd9ad9ab7c7c2a820e6e0`;
+  production aktif tetap exact `fdf4155c0a294a6af8b41a819ba40e6d371f3ba8`,
+  release `20260901083148-fdf4155`.
+- Evidence MySQL 8.4.9 sintetis 120.000+120.000 baris: p50 closing
+  406,5444 ms menjadi 0,2207 ms dan revision 462,8893 ms menjadi 0,2730 ms;
+  rollback/reapply menjaga seluruh baris, database audit 98 tanpa failure,
+  focused 41/41 (477 assertion), full Feature 1.314/1.314 (14.859 assertion),
+  build/typecheck dan audit dependency nol lulus.
 - Klasifikasi: `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
   IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
 - Dokumen terdampak: Product, dossier, ledger/changelog SagaBook, portfolio,
