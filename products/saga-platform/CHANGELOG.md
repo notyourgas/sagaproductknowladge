@@ -8,6 +8,16 @@ Mencatat perubahan material control plane Saga.
 
 Fondasi production dan roadmap pemisahan boundary harus dibedakan.
 
+## 2026-09-01 — Goal 1 local internal alpha diterima
+
+- Founder menerima Goal 1 pada state `COMPLETE_LOCAL_INTERNAL_ALPHA` setelah
+  ledger 192 sprint, clean-room, security, load, recovery, browser, dan artifact
+  restore lulus.
+- Klasifikasi irisan menjadi `CONFIRMED / LOCAL_INTERNAL_ALPHA_ACCEPTED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
+- Acceptance ini tidak memberi izin staging, provider nyata, NFC, customer
+  pilot, atau production activation.
+
 ## 2026-09-01 — Saga Member local alpha boundary
 
 - Saga Member, Customer Platform, Contracts, SagaOPS dan SagaBook connector

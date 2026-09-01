@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-127 - Goal 1 Saga Member Platform diterima sebagai local internal alpha
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-09-01 |
+| Topik | Final acceptance Goal 1 Saga Member Platform |
+| Keputusan | Andreas menerima Goal 1 sebagai `COMPLETE_LOCAL_INTERNAL_ALPHA`. |
+| Alasan | Ledger asli telah mencapai 191 local PASS, nol partial, satu conditional NFC N/A; clean-room, artifact restore, browser, security, load, recovery, dan Critical/High gate lulus. |
+| Alternatif yang dipertimbangkan | Menahan status tetap technical-closeout sambil menunggu acceptance; memperluas acceptance langsung ke staging atau production. |
+| Dampak | Goal 1 ditutup pada batas local internal alpha. Keputusan tidak memberi izin staging, provider nyata, external infrastructure, NFC, customer pilot, production deployment/activation, atau klaim business-ready. |
+| Pemberi keputusan | Andreas |
+| Status | `CONFIRMED / LOCAL_INTERNAL_ALPHA_ACCEPTED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false` |
+| Dokumen terkait | `products/saga-platform/PRODUCT.md`, `products/saga-platform/DOSSIER.md`, `products/sagaops/PRODUCT.md`, `products/sagaops/DOSSIER.md` |
+
 ## DEC-126 - Deploy backend SagaView diteruskan dengan risiko kapasitas diterima
 
 | Field | Isi |
