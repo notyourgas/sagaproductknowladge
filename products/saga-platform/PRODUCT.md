@@ -1,6 +1,6 @@
 # Saga Platform Product Knowledge
 
-Updated: 1 September 2026
+Updated: 2 September 2026
 Evidence status: production foundation + migration roadmap
 
 ## Tujuan dokumen
@@ -80,6 +80,15 @@ Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
   STAGING_SKIPPED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED /
   BUSINESS_READY=false`; ia tidak mengaktifkan provider, customer pilot, atau
   production.
+- Goal 3 kini dieksekusi sampai batas lokal/kanonik: 20 wave, 120 batch, dan
+  480 micro-sprint tercatat; 124 `LOCAL_PASS`, 108 `PARTIAL_LOCAL`, 118
+  `EXTERNAL_GATE`, dan 130 `WAITING_PREREQUISITE`. Paket ops privat exact
+  `e3a54319dfcefe9a3f2774c24f496e51b04e7197` dan CI exact commit lulus.
+- Status Goal 3: `GOAL_3_LOCAL_CANONICAL_EXECUTED /
+  EXTERNAL_RUNTIME_NO_GO / STAGING_SKIPPED / PILOT_NOT_STARTED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
+  Goal 3 belum complete; independent review, external runtime, provider nyata,
+  commissioning, pilot, dan production tetap gate terpisah.
 
 ## Gap utama
 

@@ -7,8 +7,8 @@ sales, dan konten SagaOPS.
 
 ## Konteks dan status bukti
 
-- Updated: 1 September 2026
-- Delivery: `SOURCE_PUSHED / GOAL_2_LOCAL_VALIDATED / STAGING_SKIPPED / IMPLEMENTED_NOT_DEPLOYED`
+- Updated: 2 September 2026
+- Delivery: `SOURCE_PUSHED / GOAL_3_LOCAL_CANONICAL_EXECUTED / EXTERNAL_RUNTIME_NO_GO / STAGING_SKIPPED / IMPLEMENTED_NOT_DEPLOYED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED`
 
@@ -108,6 +108,12 @@ Operating system coffeeshop dari kasir sampai back office.
 validated. Staging dilewati untuk scope saat ini, sedangkan provider,
 independent review, commissioning, pilot, production, dan business gates masih
 terbuka.
+
+**Apakah semua sprint Goal 3 sudah dikerjakan?** Seluruh sprint yang sah pada
+boundary lokal/kanonik sudah dijalankan dan diklasifikasikan. Dari 480 sprint,
+124 lulus lokal, 108 partial lokal, 118 membutuhkan external gate, dan 130
+menunggu prerequisite. Angka external/waiting bukan pass dan Goal 3 belum
+complete.
 
 ## Technical overview
 

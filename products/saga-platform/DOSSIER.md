@@ -7,7 +7,7 @@ status Saga Platform.
 
 ## Konteks dan status bukti
 
-- Updated: 1 September 2026
+- Updated: 2 September 2026
 - Delivery: `PRODUCTION_DEPLOYED` untuk fondasi tertentu
 - Activation: `PRODUCTION_ACTIVATED` untuk fondasi yang dipakai;
   `NOT_PRODUCTION_ACTIVATED` untuk adapter/roadmap lain
@@ -56,6 +56,13 @@ kontrak dan authority terpisah. Goal 1 tetap `LOCAL_INTERNAL_ALPHA_ACCEPTED`;
 Goal 2 diterima hanya sebagai `GOAL_2_LOCAL_VALIDATED` dengan staging dilewati
 untuk scope saat ini. Provider, independent review, commissioning, controlled
 pilot, production activation, dan business readiness belum dibuktikan.
+
+Goal 3 telah menjalankan seluruh pekerjaan yang sah pada boundary lokal dan
+kanonik. Dari 480 micro-sprint, 124 lulus lokal, 108 selesai sebagian secara
+lokal, 118 menunggu external gate, dan 130 menunggu prerequisite. Status ini
+bukan acceptance Goal 3 penuh: `G3E0` tetap tertutup, staging tetap dilewati,
+dan tidak ada provider, pilot, deployment, activation, atau perubahan
+production.
 
 ## Fitur MVP
 

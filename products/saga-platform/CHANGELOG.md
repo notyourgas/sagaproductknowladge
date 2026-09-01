@@ -8,6 +8,17 @@ Mencatat perubahan material control plane Saga.
 
 Fondasi production dan roadmap pemisahan boundary harus dibedakan.
 
+## 2026-09-02 — Goal 3 dieksekusi sampai batas lokal/kanonik
+
+- Strategi mencakup 20 wave, 120 batch, dan 480 micro-sprint.
+- Hasil konservatif: 124 `LOCAL_PASS`, 108 `PARTIAL_LOCAL`, 118
+  `EXTERNAL_GATE`, dan 130 `WAITING_PREREQUISITE`.
+- Exact ops provenance `e3a54319dfcefe9a3f2774c24f496e51b04e7197`;
+  CI exact commit lulus.
+- Status: `CONFIRMED / GOAL_3_LOCAL_CANONICAL_EXECUTED /
+  EXTERNAL_RUNTIME_NO_GO / STAGING_SKIPPED / PILOT_NOT_STARTED /
+  PRODUCTION_UNCHANGED / BUSINESS_READY=false`. Goal 3 belum complete.
+
 ## 2026-09-01 — Goal 2 diterima pada scope local-only
 
 - Founder menyetujui staging dilewati untuk saat ini dan menerima state

@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-129 - Goal 3 Saga Member Platform berjalan hanya sampai local/canonical boundary
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-09-02 |
+| Topik | Batas eksekusi Goal 3 Saga Member Platform |
+| Keputusan | Jalankan seluruh sprint yang sah pada local/canonical boundary, tetapi pertahankan staging, external runtime, provider, pilot, dan production fail-closed sesuai keputusan Goal 2. |
+| Alasan | Andreas meminta seluruh strategi sprint dijalankan, sementara keputusan aktif tetap melewati staging dan belum memberi authority external runtime atau production. |
+| Alternatif yang dipertimbangkan | Mengklaim seluruh 480 sprint complete; memprovision external runtime tanpa gate; menunda seluruh pekerjaan Goal 3. |
+| Dampak | 480 micro-sprint tercatat sebagai 124 local pass, 108 partial local, 118 external gate, dan 130 waiting. Goal 3 belum complete; independent review, external runtime/provider, commissioning, controlled pilot, dan production tetap memerlukan gate terpisah. |
+| Pemberi keputusan | Andreas |
+| Status | `CONFIRMED / GOAL_3_LOCAL_CANONICAL_EXECUTED / EXTERNAL_RUNTIME_NO_GO / STAGING_SKIPPED / IMPLEMENTED_NOT_DEPLOYED / PILOT_NOT_STARTED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`; ops provenance `e3a5431` |
+| Dokumen terkait | `products/saga-platform/PRODUCT.md`, `products/saga-platform/DOSSIER.md`, `products/sagaops/PRODUCT.md`, `products/sagaops/DOSSIER.md` |
+
 ## DEC-128 - Goal 2 Saga Member Platform diterima hanya sebagai local validated
 
 | Field | Isi |

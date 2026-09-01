@@ -1,7 +1,7 @@
 # SagaOPS Product Knowledge
 
-Updated: 1 September 2026
-Evidence status: `CONFIRMED / SOURCE_PUSHED / GOAL_2_LOCAL_VALIDATED / STAGING_SKIPPED / IMPLEMENTED_NOT_DEPLOYED`
+Updated: 2 September 2026
+Evidence status: `CONFIRMED / SOURCE_PUSHED / GOAL_3_LOCAL_CANONICAL_EXECUTED / EXTERNAL_RUNTIME_NO_GO / STAGING_SKIPPED / IMPLEMENTED_NOT_DEPLOYED`
 
 ## Tujuan dokumen
 
@@ -54,7 +54,7 @@ kasir dan Back Office untuk owner/manager.
 
 ## Status saat ini
 
-Status: `GOAL_2_LOCAL_VALIDATED / STAGING_SKIPPED /
+Status: `GOAL_3_LOCAL_CANONICAL_EXECUTED / EXTERNAL_RUNTIME_NO_GO / STAGING_SKIPPED /
 IMPLEMENTED_NOT_DEPLOYED / PILOT_NOT_STARTED / PRODUCTION_UNCHANGED /
 BUSINESS_READY=false`.
 
@@ -68,6 +68,11 @@ BUSINESS_READY=false`.
 - Founder menerima Goal 2 hanya pada batas local validated. Dua belas kelompok
   gate lokal dan full regression SagaBook 1.339/1.339 lulus; scope staging dan
   pilot tetap ditunda serta tidak diklaim selesai.
+- Goal 3 memetakan dan mengeksekusi 480 micro-sprint secara konservatif: 124
+  `LOCAL_PASS`, 108 `PARTIAL_LOCAL`, 118 `EXTERNAL_GATE`, dan 130
+  `WAITING_PREREQUISITE`. Exact ops provenance `e3a5431` dan CI commit tersebut
+  lulus; source candidate tetap menunggu independent review dan tidak digabung
+  sebagai bagian dari acceptance ini.
 - QRIS dynamic, thermal printer, real offline conflict resolution, dan provider
   nyata belum termasuk bukti production.
 
