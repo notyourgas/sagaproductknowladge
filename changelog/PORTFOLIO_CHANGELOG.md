@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-09-01 - Saga Member Platform Goal 1 local alpha
+
+- Private canonical source untuk Contracts, Customer Platform, Saga Member dan
+  SagaOPS serta SagaBook connector exact-SHA sudah tervalidasi.
+- Member/POS/loyalty/Reward/Book/Quest/Card/Push-fallback, migration/RLS,
+  browser/accessibility, load, recovery, security dan clean-room artifact lulus
+  pada fixture internal; SagaOPS operator console dan browser evidence kini
+  self-contained.
+- Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
+  Provider nyata, external infrastructure, signed staging release, manual AT,
+  NFC dan production tetap tidak aktif.
+
 ## 2026-09-01 - COYABAG governance operations wave production
 
 - Source `16922ab372f935f77c2ba921a98b127483593ddd` aktif pada release `20260901-16922ab`; rollback `20260901-76a5e61`.

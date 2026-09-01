@@ -5882,10 +5882,26 @@ readiness tidak berubah.
 ### SagaOPS
 
 POS dan Back Office coffeeshop: order, payment, shift, recipe/HPP, inventory
-ledger, purchase order, live dashboard, approval, dan closing. Prototype
-frontend membuktikan workflow, tetapi belum memiliki backend production.
+ledger, purchase order, live dashboard, approval, dan closing. Private source
+kanonik kini memiliki API/service, operator console OWNER/STAFF, local
+PostgreSQL/RLS, recovery, Member/POS integration boundary, serta automated
+browser acceptance. Bukti tersebut adalah local internal alpha, bukan provider,
+staging, atau outlet production.
 
-Status: `PROTOTYPE`.
+Status: `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+BUSINESS_READY=false`.
+
+### Saga Member
+
+Customer experience dan loyalty boundary untuk Email OTP fixture, Member PWA,
+Points/XP/Tier, Voyager, Reward, Card, Quest, Push in-app fallback, Member Code,
+serta SagaBook handoff. Customer Platform tetap authority loyalty/Reward;
+SagaOPS tetap commerce writer dan SagaBook tetap booking/payment writer.
+
+Status: `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+PRODUCTION_UNCHANGED / BUSINESS_READY=false`. Real Resend, Sagadev Gateway,
+external persistence/capacity/DR, signed release, manual assistive-technology,
+NFC, staging dan activation belum terbukti.
 
 ### Saga Platform
 

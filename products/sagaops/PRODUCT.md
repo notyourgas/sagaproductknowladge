@@ -1,7 +1,7 @@
 # SagaOPS Product Knowledge
 
-Updated: 31 Juli 2026
-Evidence status: prototype
+Updated: 1 September 2026
+Evidence status: `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`
 
 ## Tujuan dokumen
 
@@ -11,8 +11,10 @@ terbuka berada di [GAPS](../../GAPS.md#sagaops).
 
 ## Konteks
 
-Workflow prototype tersedia; backend, hardware, provider, dan outlet production
-belum terverifikasi.
+Source private kanonik, API/service, persistence/RLS lokal, dan operator browser
+UAT tersedia sebagai local integrated internal alpha. Staging, provider,
+hardware, outlet production, activation, dan business readiness belum
+terverifikasi.
 
 ## Ringkasan
 
@@ -38,6 +40,10 @@ kasir dan Back Office untuk owner/manager.
 - Purchase order.
 - Live dashboard.
 - Audit dan approval.
+- Operator console lokal untuk OWNER dan STAFF dengan role/outlet dari session
+  server, CSRF, same-origin, dan session HttpOnly.
+- Integrasi Member Code, Voyager quote, Points/XP/Quest/Reward event boundary,
+  serta payment/recovery simulator.
 
 ## Prinsip data
 
@@ -48,11 +54,13 @@ kasir dan Back Office untuk owner/manager.
 
 ## Status saat ini
 
-Status: `PROTOTYPE`.
+Status: `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
 
-- Frontend prototype dan E2E membuktikan banyak workflow.
-- Node/domain service dan contract database tersedia.
-- Belum ada production API/repository/RLS yang terhubung penuh.
+- Private canonical `main` `614fe7fdaffd7c739b0c7efed97f8a5e33297eea`
+  memuat operator console, API v1, domain services, migration, local PostgreSQL
+  semantics, RLS, recovery, dan automated browser acceptance.
+- 76 test source, clean-room browser verification, local load, security control,
+  serta artifact restore lulus untuk fixture internal.
 - QRIS dynamic, thermal printer, real offline conflict resolution, dan provider
   nyata belum termasuk bukti production.
 
@@ -61,6 +69,8 @@ Status: `PROTOTYPE`.
 - Dummy data bukan transaksi outlet.
 - Offline simulation bukan offline production.
 - Manual QRIS bukan payment gateway.
+- Local PostgreSQL/PGlite bukan bukti kapasitas atau disaster recovery staging.
+- Automated browser UAT bukan human business acceptance.
 
 ## Ide konten
 
