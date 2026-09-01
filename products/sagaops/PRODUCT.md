@@ -1,7 +1,7 @@
 # SagaOPS Product Knowledge
 
 Updated: 1 September 2026
-Evidence status: `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`
+Evidence status: `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / LOCAL_INTERNAL_ALPHA_ACCEPTED / IMPLEMENTED_NOT_DEPLOYED`
 
 ## Tujuan dokumen
 
@@ -54,13 +54,16 @@ kasir dan Back Office untuk owner/manager.
 
 ## Status saat ini
 
-Status: `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+Status: `LOCAL_VALIDATED / LOCAL_INTERNAL_ALPHA_ACCEPTED /
+IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
 
 - Private canonical `main` `614fe7fdaffd7c739b0c7efed97f8a5e33297eea`
   memuat operator console, API v1, domain services, migration, local PostgreSQL
   semantics, RLS, recovery, dan automated browser acceptance.
 - 76 test source, clean-room browser verification, local load, security control,
   serta artifact restore lulus untuk fixture internal.
+- Founder telah menerima batas Goal 1 sebagai complete local internal alpha;
+  penerimaan ini bukan izin staging atau production.
 - QRIS dynamic, thermal printer, real offline conflict resolution, dan provider
   nyata belum termasuk bukti production.
 

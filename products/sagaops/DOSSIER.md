@@ -8,7 +8,7 @@ sales, dan konten SagaOPS.
 ## Konteks dan status bukti
 
 - Updated: 1 September 2026
-- Delivery: `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`
+- Delivery: `SOURCE_PUSHED / LOCAL_VALIDATED / LOCAL_INTERNAL_ALPHA_ACCEPTED / IMPLEMENTED_NOT_DEPLOYED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED`
 
@@ -59,7 +59,7 @@ manager override. Provider/hardware real belum termasuk evidence.
    backup/restore, serta disaster recovery.
 2. Configure Resend dan Sagadev Gateway sandbox dengan callback/replay evidence.
 3. Signed SBOM, SAST/DAST dan independent release review.
-4. Manual assistive-technology dan final business acceptance.
+4. Manual assistive-technology serta external operator/pilot validation.
 5. Staging approval, controlled outlet pilot, lalu activation review terpisah.
 
 ## User journey

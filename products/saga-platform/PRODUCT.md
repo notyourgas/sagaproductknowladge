@@ -74,8 +74,9 @@ Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
   Voyager, Reward, Card, Quest, Push in-app fallback, SagaBook handoff, dan
   server-owned authority/replay boundaries.
 - Status irisan ini: `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED`; ia tidak mengubah fondasi Saga Platform yang sudah
-  production dan tidak mengaktifkan provider atau customer pilot.
+  LOCAL_INTERNAL_ALPHA_ACCEPTED / IMPLEMENTED_NOT_DEPLOYED`; ia tidak mengubah
+  fondasi Saga Platform yang sudah production dan tidak mengaktifkan provider
+  atau customer pilot.
 
 ## Gap utama
 

@@ -52,9 +52,9 @@ Capability tercatat di [PRODUCT](PRODUCT.md); implementasi per capability
 bervariasi dan tidak boleh digeneralisasi.
 
 Saga Member merupakan bounded context/customer experience lokal yang memakai
-kontrak dan authority terpisah. Irisan Goal 1 sudah `LOCAL_VALIDATED` untuk
-fixture internal, tetapi belum staging, provider-backed, production-activated,
-atau business-ready.
+kontrak dan authority terpisah. Irisan Goal 1 sudah `LOCAL_VALIDATED /
+LOCAL_INTERNAL_ALPHA_ACCEPTED` untuk fixture internal, tetapi belum staging,
+provider-backed, production-activated, atau business-ready.
 
 ## Fitur MVP
 
