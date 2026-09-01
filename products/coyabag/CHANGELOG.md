@@ -1,5 +1,12 @@
 # COYABAG Changelog
 
+## 2026-09-01 - Support access review deployed
+
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false` dari source `76a5e610daaa2ad1df3c2b3a17e6da326e4836c3`, release `20260901-76a5e61`, rollback `20260901-4ebee58`.
+- Operator kini melihat summary pending/active/history, requester, scope, expiry, dan review modal sebelum approve/revoke akses sementara.
+- Acknowledgement wajib dan copy menjelaskan bahwa role permanen tidak berubah. Browser desktop/mobile membuktikan tidak ada overflow atau kontrol tanpa nama.
+- Backend 545 pass + satu controlled skip, storefront 220/220, build/audit, backup, readiness 42/42, worker dan HTTP lulus tanpa migrasi atau mutasi provider/payment/shipping/inventory.
+
 ## 2026-09-01 - Approval lifecycle review deployed
 
 - Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false` dari source `4ebee5831b57553b4b9fa19acb2120dd7b2c4abc`, release `20260901-4ebee58`, rollback `20260831-693152f`.

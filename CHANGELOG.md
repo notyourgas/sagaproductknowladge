@@ -1,5 +1,12 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-01 - COYABAG support access review production sync
+
+- Exact source `76a5e610daaa2ad1df3c2b3a17e6da326e4836c3` aktif pada immutable release `20260901-76a5e61`; rollback `20260901-4ebee58`.
+- Support Access kini menampilkan ringkasan pending/active/history, scope, requester, expiry, dan review approve/revoke dengan acknowledgement sebelum perubahan akses sementara.
+- Backend 545 pass + satu controlled skip, storefront 220/220, browser desktop/mobile, build/audit, backup, readiness 42/42, worker, migration compatibility, dan public smoke lulus.
+- Tidak ada migrasi, perubahan role permanen, aktivasi provider, perubahan settings/payment/shipping, atau mutasi inventory. Status `COMMERCE_ACTIVE / BUSINESS_READY=false`.
+
 ## 2026-09-01 - SagaBook S398 physical audio UAT evidence sync
 
 - Ringkasan: menyinkronkan generator template create-only dan validator

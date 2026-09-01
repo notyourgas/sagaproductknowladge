@@ -17,6 +17,25 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | `85dd6ac66312805912864ac98374918ac52f9652` |
 
+## COYABAG support access review production
+
+- Exact source `76a5e610daaa2ad1df3c2b3a17e6da326e4836c3` aktif pada release
+  `20260901-76a5e61`; rollback `20260901-4ebee58`.
+- Summary pending/active/history, requester/scope/expiry, serta review
+  approve/revoke ber-acknowledgement tersedia tanpa mengubah role permanen.
+- Full source/browser/release gates dan readiness 42/42 lulus. Commerce tetap
+  aktif; `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi COYABAG support access
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
+
 ## SagaBook S398 physical audio UAT evidence validator
 
 - Exact source `69c289958ec2acbcde27b56b915fcd1e8d21cbb2` sudah

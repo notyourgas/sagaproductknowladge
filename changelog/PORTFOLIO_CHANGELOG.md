@@ -1,5 +1,12 @@
 # Portfolio Changelog
 
+## 2026-09-01 - COYABAG support access review production
+
+- Source `76a5e610daaa2ad1df3c2b3a17e6da326e4836c3` aktif pada release `20260901-76a5e61`; rollback `20260901-4ebee58`.
+- Support Access berubah menjadi antrean temporary-access yang dapat dipindai dengan scope/requester/expiry dan review approve/revoke ber-acknowledgement.
+- Full gates, browser desktop/mobile, immutable backup/deploy, readiness 42/42, worker dan public smoke lulus tanpa role permanen atau mutasi commerce/provider/stok.
+- Status `COMMERCE_ACTIVE / BUSINESS_READY=false`.
+
 ## 2026-09-01 - SagaBook S398 physical audio UAT evidence validator
 
 - Exact source `69c289958ec2acbcde27b56b915fcd1e8d21cbb2` menambah template create-only dan validator fail-closed untuk receipt UAT speaker Chrome/Edge yang terikat exact source/release/digest otorisasi.

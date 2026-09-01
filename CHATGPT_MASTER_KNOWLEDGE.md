@@ -1,5 +1,16 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+COYABAG exact source `76a5e610daaa2ad1df3c2b3a17e6da326e4836c3`
+aktif pada immutable release `20260901-76a5e61`, rollback
+`20260901-4ebee58`. Support Access kini memberi operator ringkasan
+pending/active/history, konteks requester/scope/expiry, dan review
+approve/revoke dengan acknowledgement; perubahan ini tidak memberi role
+permanen. Backend 545 pass + satu controlled skip, storefront 220/220,
+browser desktop/mobile, build/audit, backup, readiness 42/42, worker, migration
+compatibility, dan HTTP lulus tanpa mutasi provider/payment/shipping/settings/
+inventory. Commerce tetap aktif; payment exception, keputusan WhatsApp,
+backup offsite, dan UAT bisnis menahan `BUSINESS_READY=false`.
+
 SagaBook S398 exact `69c289958ec2acbcde27b56b915fcd1e8d21cbb2`
 menyediakan template create-only dan validator public-safe untuk receipt UAT
 audio fisik. Acceptance terikat exact source/release/digest otorisasi, tepat

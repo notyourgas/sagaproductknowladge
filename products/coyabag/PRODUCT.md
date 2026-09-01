@@ -51,6 +51,9 @@ Surface live tidak sama dengan transaksi commerce sudah aktif penuh.
 
 ## Fitur backend/admin
 
+- Support Access sementara dengan summary pending/active/history, konteks
+  requester/scope/expiry, dan review approve/revoke ber-acknowledgement tanpa
+  perubahan role permanen.
 - Approval maker-checker dengan ringkasan antrean, expiry/SLA, status expired,
   pagination, alasan keputusan terkunci, serta review approve/reject yang
   memerlukan acknowledgement dan mencatat audit note.
@@ -80,9 +83,9 @@ COMMERCE_ACTIVE`. Business readiness: `BLOCKED`.
   bagian; audit tetap `report_only` dan tidak menghapus record.
 - Launch UAT 15 langkah dan release sign-off sudah lulus. Readiness gate tetap
   enforced dan keputusan runtime adalah `COMMERCE_ACTIVE`.
-- Release aktif `20260831-693152f` dengan exact material source
-  `693152f68d582bbdcb3fea564897056b094a1e7f` melayani production;
-  rollback langsung `20260831-36202a4` tersedia dan readiness lulus 42/42.
+- Release aktif `20260901-76a5e61` dengan exact material source
+  `76a5e610daaa2ad1df3c2b3a17e6da326e4836c3` melayani production;
+  rollback langsung `20260901-4ebee58` tersedia dan readiness lulus 42/42.
   Indeks Pengaturan menampilkan ringkasan faktual, pencarian, empat kategori
   tugas, empty/reset state, serta badge approval pada lima bagian sensitif.
   Hitungan nilai tersimpan dibedakan secara eksplisit dari readiness provider.

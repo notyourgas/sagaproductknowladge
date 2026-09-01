@@ -14,10 +14,10 @@ content COYABAG tanpa menyamakan surface live dengan commerce aktif.
 
 ## Overview produk
 
-Production admin memakai approval lifecycle maker-checker yang memperlihatkan
-SLA kedaluwarsa dan menahan keputusan sampai operator lain melakukan review
-serta acknowledgement. Exact release `20260901-4ebee58`, rollback
-`20260831-693152f`.
+Production admin memakai approval lifecycle maker-checker dan Support Access
+review. Akses dukungan sementara memperlihatkan requester, scope, expiry, serta
+menahan approve/revoke sampai acknowledgement; role permanen tidak berubah.
+Exact release `20260901-76a5e61`, rollback `20260901-4ebee58`.
 
 Ecommerce tas streetwear dengan storefront, API, dan admin operations.
 
