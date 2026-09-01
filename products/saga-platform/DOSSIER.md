@@ -77,6 +77,16 @@ tenant, external runtime/provider, deployment dan production route tetap
 `NO_GO`; incremental spend dan production change sama-sama nol. Exact ops
 `b1ec6022e2cb3b0ceb6def9a9c73ce42ac0d8bd3`, CI lulus.
 
+Goal 5 dirancang sebagai fase sustainable portfolio expansion, bukan mass
+launch otomatis. Pack tervalidasi mencakup 20 wave, 120 batch, 40 macro-sprint,
+480 micro-sprint, 60 risiko, 20 automatic safety checkpoint dan 108 trace row
+Goal 4. Ia mencakup federated authority, self-service provisioning, commercial
+lifecycle, SRE, trust, data governance, loyalty economics, outlet/tenant
+factory, partner API, support, governance dan ringed expansion. Preparation
+aman boleh berjalan unattended dengan Rp0, tetapi Goal 5 execution belum
+dimulai: G417 Goal 4, exact route/scope dan independent evidence belum ada;
+seluruh external/production mutation serta NFC tetap `NO_GO`/OFF.
+
 ## Fitur MVP
 
 Product-scoped account, subscription/entitlement, provisioning, audit, dan

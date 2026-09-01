@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-134 - Goal 5 memakai zero-cost unattended preparation lane
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-09-02 |
+| Topik | Strategi Goal 5 dan pekerjaan saat owner tidur |
+| Keputusan | Andreas meminta strategi Goal 5 dibuat tanpa biaya dan tanpa owner-wait gate. Goal 5 didefinisikan sebagai Sustainable Portfolio Expansion & Ecosystem Operating System. Local/read-only/synthetic preparation boleh berjalan unattended dengan incremental budget Rp0; automatic safety checks tetap fail-closed. |
+| Alasan | Strategi dan pekerjaan persiapan aman perlu dapat berjalan mandiri tanpa pembelian atau risiko perubahan eksternal saat owner tidak aktif. |
+| Alternatif yang dipertimbangkan | Menunggu Goal 4 complete sebelum merancang; menghapus semua safety boundary; menganggap Goal 5 sebagai mass launch. |
+| Dampak | Pack tervalidasi pada 20 wave, 120 batch, 40 macro-sprint, 480 micro-sprint, 60 risiko dan 20 checkpoint. Goal 5 execution, route, provider, VPS/DNS, customer data, merge, deployment, activation dan NFC tidak diotorisasi. |
+| Pemberi keputusan | Andreas |
+| Status | `CONFIRMED / GOAL5_STRATEGY_VALIDATED / ZERO_COST_UNATTENDED_PREP_READY / ENTRY_NO_GO / PRODUCTION_UNCHANGED`; ops `075a3e8` |
+| Dokumen terkait | `products/saga-platform/PRODUCT.md`, `products/saga-platform/DOSSIER.md`, `products/sagaops/PRODUCT.md`, `products/sagaops/DOSSIER.md` |
+
 ## DEC-133 - Seluruh preparation Goal 4 dijalankan pada boundary lokal zero-cost
 
 | Field | Isi |

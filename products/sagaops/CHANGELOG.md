@@ -8,6 +8,17 @@ Mencatat perubahan material SagaOPS.
 
 Prototype dan production outlet adalah evidence level yang berbeda.
 
+## 2026-09-02 — Goal 5 zero-cost strategy mencakup outlet operating factory
+
+- Goal 5 strategy pack tervalidasi pada 20 wave, 120 batch, 40 macro-sprint dan
+  480 micro-sprint.
+- SagaOPS tercakup pada B066-B077 untuk outlet/device factory serta
+  payment/finance operations, kemudian B115 untuk outlet cluster canary.
+- Scope masih planning/read-only/synthetic dengan budget Rp0; provider,
+  hardware, outlet baru, deployment dan production route tetap `NO_GO`.
+- Ops `075a3e86c852568b67797cfb40bb764e58434167`; CI run `33559576719`
+  lulus.
+
 ## 2026-09-02 — Goal 4 zero-cost preparation dieksekusi
 
 - Semua 432 micro-sprint didisposisi: 40 `LOCAL_PASS`, 107 `PARTIAL_LOCAL`,

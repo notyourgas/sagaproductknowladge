@@ -1218,6 +1218,11 @@ GAP-004, bukan gap implementasi warna komponen.
 
 ### Saga Platform
 
+- `NEEDS CONFIRMATION`: Goal 5 strategy sudah tervalidasi, tetapi route awal
+  (`EXPAND`, `REMAIN_CONTROLLED`, `ITERATE`, atau `ROLLBACK`), exact cohort,
+  outlet/tenant scope, independent reviewer dan entry G417 belum tersedia.
+  Sampai bukti itu ada, hanya preparation lokal/read-only/synthetic yang boleh
+  berjalan dan seluruh external route tetap `NO_GO`.
 - `NEEDS CONFIRMATION`: apakah platform dijual eksternal atau hanya internal
   control plane.
 - `NEEDS CONFIRMATION`: pemisahan repository/deployment control plane,

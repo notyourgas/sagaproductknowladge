@@ -131,6 +131,13 @@ commercial tenant, provider nyata, deployment dan production route belum
 dimulai. Statusnya `GOAL_4_ZERO_COST_PREPARATION_EXECUTED /
 ROUTE_EXECUTION_NO_GO / PRODUCTION_UNCHANGED`, bukan Goal 4 complete.
 
+Goal 5 strategy menempatkan SagaOPS pada dua wave khusus: outlet/device
+operating factory (B066-B071) dan gateway/settlement/finance operations
+(B072-B077), lalu ringed outlet-cluster expansion pada B115. Seluruh pack
+berisi 20 wave, 120 batch dan 480 micro-sprint; preparation hanya lokal,
+read-only, synthetic dan Rp0. Tidak ada outlet baru, merchant/provider call,
+hardware qualification, deployment atau production activation yang dimulai.
+
 ## Technical overview
 
 Private canonical source menyediakan versioned API, domain service, operator

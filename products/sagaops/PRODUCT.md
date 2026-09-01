@@ -83,6 +83,11 @@ BUSINESS_READY=false`.
   Preparation lokal/zero-cost yang sah telah dijalankan; route scale,
   external runtime/provider, outlet kedua, pilot dan production tetap `NO_GO`.
   Exact ops `b1ec6022e2cb3b0ceb6def9a9c73ce42ac0d8bd3`; CI lulus.
+- Strategi Goal 5 menempatkan SagaOPS pada outlet/device operating factory dan
+  payment/finance operations dalam B066-B077. Pack total tervalidasi pada 20
+  wave, 120 batch dan 480 micro-sprint. Ini masih planning zero-cost:
+  onboarding outlet cluster, provider, payment nyata, hardware, deployment dan
+  production route belum dimulai.
 - QRIS dynamic, thermal printer, real offline conflict resolution, dan provider
   nyata belum termasuk bukti production.
 

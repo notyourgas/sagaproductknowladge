@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-09-02 - Saga Member Goal 5 zero-cost unattended strategy
+
+- Goal 5 didefinisikan sebagai Sustainable Portfolio Expansion & Ecosystem
+  Operating System, bukan automatic mass launch.
+- Pack tervalidasi: 20 wave, 120 batch, 40 macro-sprint, 480 micro-sprint, 60
+  risiko, 20 automatic safety checkpoint dan 108 Goal 4 trace row.
+- Preparation read-only/local/synthetic dapat berjalan tanpa owner-wait pada
+  incremental budget Rp0; safety checks tetap fail-closed.
+- Status `STRATEGY_VALIDATED / ZERO_COST_UNATTENDED_PREP_READY /
+  ENTRY_NO_GO / ROUTE_EXECUTION_NOT_STARTED / PRODUCTION_UNCHANGED`; Goal 4
+  G417 dan exact scope belum diterima.
+- Exact ops `075a3e86c852568b67797cfb40bb764e58434167`; CI run
+  `33559576719` lulus.
+
 ## 2026-09-02 - Saga Member Goal 4 zero-cost preparation executed
 
 - Seluruh 432 micro-sprint telah didisposisi secara konservatif: 40 local
