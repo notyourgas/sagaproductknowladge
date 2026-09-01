@@ -1,5 +1,12 @@
 # Portfolio Changelog
 
+## 2026-09-01 - COYABAG guarded shipment cancellation production
+
+- Source `a96d1a90a708dff917fb7b006dff3187f699d9af` aktif pada release `20260901-a96d1a9`; rollback `20260901-32d3419`.
+- Pembatalan shipment kini memakai review kontekstual, alasan, acknowledgement, responsive focus management, dan stale version guard sebelum provider dipanggil.
+- Full regression, immutable checksum/backup/deploy, readiness 42/42, dua worker, migration pending nol, dan public smoke lulus tanpa mutasi provider/payment/inventory saat deploy.
+- Status `COMMERCE_ACTIVE / BUSINESS_READY=false`; payment exception dan resolusi insiden shipment tetap residual.
+
 ## 2026-09-01 - SagaBook S402 closing-history database read indexes
 
 - Exact source `b1160aa9ca4bf3b92c6688c2f778fad43301b8d7` menambah dua

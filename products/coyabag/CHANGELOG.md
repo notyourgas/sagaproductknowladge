@@ -1,5 +1,13 @@
 # COYABAG Changelog
 
+## 2026-09-01 - Guarded shipment cancellation deployed
+
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false` dari source `a96d1a90a708dff917fb7b006dff3187f699d9af`, release `20260901-a96d1a9`, rollback `20260901-32d3419`.
+- Pembatalan shipment mengganti konfirmasi browser dengan review kontekstual berisi fakta shipment/order, alasan, dampak provider dan stok, acknowledgement, focus management, serta layout desktop/mobile tanpa overflow.
+- Endpoint mewajibkan `lock_version`; versi stale ditolak sebelum panggilan pembatalan provider sehingga tidak ada side effect eksternal dari tab lama.
+- Backend 548 pass + satu controlled skip dengan 5.684 assertion, storefront 220/220, browser desktop/mobile, build/audit, checksum, backup, readiness 42/42, migration pending nol, dua worker, font/API/admin/storefront smoke lulus.
+- Tidak ada migrasi, aktivasi provider, perubahan payment, konfigurasi shipping, atau mutasi inventory saat deploy. Commerce tetap aktif; exception pembayaran lama dan resolusi insiden shipment tetap residual operasional.
+
 ## 2026-09-01 - Guarded shipment handoff deployed
 
 - Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false` dari source `32d3419dedb4e4fc6d224e3a6b5dadeedc3e32c3`, release `20260901-32d3419`, rollback `20260901-a849669`.

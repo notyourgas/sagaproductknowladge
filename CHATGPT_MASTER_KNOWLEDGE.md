@@ -1,5 +1,16 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+COYABAG exact source `a96d1a90a708dff917fb7b006dff3187f699d9af`
+aktif pada immutable release `20260901-a96d1a9`, rollback
+`20260901-32d3419`. Pembatalan shipment sekarang ditahan di review dialog
+berisi fakta shipment/order, alasan, dampak provider dan stok, serta
+acknowledgement. Backend mewajibkan `lock_version` dan menolak tab stale
+sebelum provider dipanggil. Full regression, checksum, backup, readiness
+42/42, dua worker, migration pending nol, serta public smoke lulus tanpa
+migrasi atau mutasi commerce saat deploy. Status tetap
+`COMMERCE_ACTIVE / BUSINESS_READY=false`; resolusi insiden shipment dan
+exception pembayaran lama masih residual operasional.
+
 SagaBook S402 exact `b1160aa9ca4bf3b92c6688c2f778fad43301b8d7`
 menambah indeks baca additive tenant+date+ordering untuk history closing utama
 dan revision ledger lintas cabang. Benchmark sintetis 120.000 baris membaik

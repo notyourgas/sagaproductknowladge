@@ -1,5 +1,12 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-01 - COYABAG guarded shipment cancellation production sync
+
+- Exact source `a96d1a90a708dff917fb7b006dff3187f699d9af` aktif pada immutable release `20260901-a96d1a9`; rollback `20260901-32d3419`.
+- Pembatalan shipment menambah contextual review, reason/acknowledgement, responsive focus management, dan stale guard sebelum provider call.
+- Backend 548 pass + satu controlled skip, storefront 220/220, browser/build/audit, checksum, backup, readiness 42/42, worker, migration, dan public smoke lulus.
+- Klasifikasi `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false`.
+
 ## 2026-09-01 - SagaBook S402 closing-history read-index sync
 
 - Ringkasan: dua indeks additive menutup temporary-sort path pada history

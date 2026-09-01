@@ -12,10 +12,28 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-09-01 15:45 WIB |
-| Branch aktif | `codex/s402-sagabook-closing-history-read-indexes-knowledge` |
+| Waktu pembaruan terakhir | 2026-09-01 16:30 WIB |
+| Branch aktif | `codex/coyabag-customer-merge-knowledge-final` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `c4ba537` |
+| Baseline sebelum pembaruan | `37dc2da` |
+
+## COYABAG guarded shipment cancellation production
+
+- Exact source `a96d1a90a708dff917fb7b006dff3187f699d9af` aktif pada release `20260901-a96d1a9`; rollback `20260901-32d3419`.
+- Pembatalan shipment memakai review kontekstual, alasan, acknowledgement,
+  responsive focus management, dan stale shipment guard sebelum provider call.
+- Readiness 42/42, dua worker, migration pending nol, dan public smoke hijau.
+- Status `COMMERCE_ACTIVE / BUSINESS_READY=false`; tidak ada migrasi atau
+  mutasi provider/payment/inventory saat deploy.
+
+## File yang berubah pada sinkronisasi COYABAG shipment cancellation
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook S402 closing-history read indexes
 

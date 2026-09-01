@@ -26,11 +26,12 @@ Dashboard admin memakai Plus Jakarta Sans variable self-hosted untuk seluruh
 interface operasional; wordmark COYABAG tetap memakai font logo resminya.
 
 Detail Pengiriman production memakai review dialog sebelum membuat order
-provider atau menyerahkan paket ke kurir. Operator memeriksa kurir, layanan,
-AWB, bukti packing, berat, dampak status pelanggan, dan acknowledgement;
-server menolak versi shipment lama sebelum create order provider. Exact source
-`32d3419dedb4e4fc6d224e3a6b5dadeedc3e32c3` aktif pada immutable release
-`20260901-32d3419`, dengan rollback `20260901-a849669`.
+provider, menyerahkan paket ke kurir, atau membatalkan shipment. Operator
+memeriksa fakta shipment/order, dampak provider dan stok, alasan pembatalan,
+serta acknowledgement. Server menolak versi shipment lama sebelum panggilan
+pembatalan provider. Exact source
+`a96d1a90a708dff917fb7b006dff3187f699d9af` aktif pada immutable release
+`20260901-a96d1a9`, dengan rollback `20260901-32d3419`.
 
 Payment Detail production memakai review dialog terukur untuk approve,
 clarification, dan reject. Operator melihat dampak keputusan, identitas bukti,
