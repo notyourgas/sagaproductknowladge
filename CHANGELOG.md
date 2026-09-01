@@ -1,5 +1,21 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-01 - SagaBook S408 mobile exact-main reconciliation sync
+
+- Ringkasan: S403+S406 direkonsiliasi ke exact main terbaru tanpa kehilangan
+  retensi booking manual approved-unpaid atau alur `Perlu ACC`.
+- Provenance: exact candidate
+  `bf75ba90dc3df9cbfebfb363a6b61d5b6cd41f07`, baseline main
+  `9ebdcf112f312f905c4213be9da1b80cf04e0ad3`.
+- Evidence public-safe: full backend 1.351 test/15.133 assertion, subset mobile
+  final 10 pass/4 expected skip, build/typecheck/design 26/0, serta audit
+  dependency nol.
+- Klasifikasi `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED_BY_S408 /
+  BUSINESS_READY=false`.
+- Dokumen terdampak: Product, dossier, ledger/changelog SagaBook, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-09-01 - SagaBook S407 mobile shell main-integration sync
 
 - Ringkasan: S403+S406 diintegrasikan ke exact main Manual Booking tanpa

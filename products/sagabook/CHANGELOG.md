@@ -1,5 +1,24 @@
 # SagaBook Changelog
 
+## 2026-09-01 - S408 rekonsiliasi mobile shell ke exact main terbaru
+
+- Sebelum: kandidat S407 masih berbasis main `88fd517…`, sedangkan main dan
+  production sudah maju membawa retensi booking manual approved-unpaid.
+- Setelah: koreksi sidebar opaque, warna tab aktif tunggal, no-overflow, dan
+  active-item visibility direkonsiliasi bersih ke exact main terbaru tanpa
+  kehilangan `Perlu ACC`, OTS/WhatsApp, capacity confirmation, atau sesi
+  approved-unpaid.
+- Evidence: full backend 1.351 test/15.133 assertion; browser 28 pass/12
+  expected skip, dua timeout lingkungan lulus 2/2 terisolasi, dan subset
+  mobile final 10 pass/4 expected skip; build 5.137 modul, typecheck, design
+  audit 26/0, npm/Composer audit nol, diff/provenance bersih.
+- Exact candidate `bf75ba90dc3df9cbfebfb363a6b61d5b6cd41f07`, branch
+  `codex/s408-sagabook-mobile-shell-main-reconcile`, baseline exact main
+  `9ebdcf112f312f905c4213be9da1b80cf04e0ad3`.
+- Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED_BY_S408 /
+  BUSINESS_READY=false`; physical-device UAT dan guarded release belum.
+
 ## 2026-09-01 - S407 integrasi mobile shell ke main Manual Booking
 
 - Sebelum: S403 dan S406 hijau pada branch bertumpuk, tetapi belum berbasis

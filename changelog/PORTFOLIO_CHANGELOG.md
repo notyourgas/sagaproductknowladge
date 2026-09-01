@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-09-01 - SagaBook S408 mobile shell exact-main reconciliation
+
+- Merekonsiliasi koreksi sidebar S403+S406 ke exact main terbaru tanpa
+  kehilangan retensi booking manual approved-unpaid atau alur `Perlu ACC`.
+- Full backend 1.351 test/15.133 assertion, browser final mobile 10/10 dengan
+  4 expected skip, build/typecheck/design, dan audit dependency hijau.
+- Exact source `bf75ba90dc3df9cbfebfb363a6b61d5b6cd41f07` berstatus
+  `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED_BY_S408 / BUSINESS_READY=false`.
+
 ## 2026-09-01 - SagaBook S407 mobile shell main integration
 
 - Mengintegrasikan koreksi sidebar S403+S406 ke exact main Manual Booking

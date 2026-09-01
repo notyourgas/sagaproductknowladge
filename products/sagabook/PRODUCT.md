@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
 Updated: 1 September 2026 WIB
-Evidence status: kandidat integrasi mobile shell/sidebar S407 exact `566de9ee4d15df4a7c85325b6dd8c5f769941470` sudah `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED_BY_S407`. Kandidat ini menggabungkan S403+S406 di atas exact main `88fd51788e3de8950d6eac95a46dc87ece84d1ae` tanpa menghilangkan navigasi atau alur Manual Booking. Kandidat indeks history closing S402 exact `010b2c67025c51494a66b12b1e8b6778667660c6` juga belum dideploy. Production aktif yang diverifikasi saat S407 adalah exact `88fd51788e3de8950d6eac95a46dc87ece84d1ae`, release `20260901131847-88fd517`; status keseluruhan `AUDIO_UAT_PENDING / PILOT_BLOCKED_BY_AUDIO_UAT / BUSINESS_READY=false`.
+Evidence status: kandidat rekonsiliasi mobile shell/sidebar S408 exact `bf75ba90dc3df9cbfebfb363a6b61d5b6cd41f07` sudah `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED_BY_S408`. Kandidat ini mempertahankan koreksi S403+S406 di atas exact main `9ebdcf112f312f905c4213be9da1b80cf04e0ad3`, termasuk retensi booking manual yang sudah disetujui tetapi belum dibayar. Kandidat indeks history closing S402 exact `010b2c67025c51494a66b12b1e8b6778667660c6` juga belum dideploy. Production aktif yang diverifikasi saat S408 adalah exact `9ebdcf112f312f905c4213be9da1b80cf04e0ad3`, release `20260901155248-9ebdcf1`; status keseluruhan `AUDIO_UAT_PENDING / PILOT_BLOCKED_BY_AUDIO_UAT / BUSINESS_READY=false`.
 
 ## Tujuan dokumen
 
@@ -15,6 +15,17 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
+
+- S408 merekonsiliasi koreksi shell/sidebar S403+S406 ke exact main terbaru
+  yang sudah membawa retensi booking manual approved-unpaid. Tidak ada konflik
+  tree dan alur `Perlu ACC`, OTS/WhatsApp, konfirmasi kapasitas, serta sesi
+  approved-unpaid tetap lulus. Full backend exact-candidate lulus 1.351 test
+  (15.133 assertion); browser gabungan memberi 28 pass/12 expected skip dengan
+  dua timeout lingkungan, lalu kedua kasus lulus terisolasi dan subset mobile
+  final lulus 10/10 dengan 4 expected skip. Build 5.137 modul, typecheck,
+  design audit 26/0, serta audit dependency Composer/npm nol. Tidak ada
+  perubahan database, API, permission, payload, integrasi, release lock, atau
+  production; perangkat fisik dan guarded release masih gate.
 
 - S407 mengintegrasikan koreksi shell/sidebar S403 dan konteks route aktif
   S406 ke main Manual Booking terbaru. Menu `Perlu ACC`, form OTS/WhatsApp,

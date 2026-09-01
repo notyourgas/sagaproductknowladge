@@ -12,10 +12,31 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-09-01 22:36 WIB |
-| Branch aktif | `codex/s407-sagabook-mobile-main-integration-knowledge` |
+| Waktu pembaruan terakhir | 2026-09-01 23:53 WIB |
+| Branch aktif | `codex/s408-sagabook-mobile-main-reconcile-knowledge` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `ec059d967b69303fcdd33a5c7b834c258c6b5ad2` |
+| Baseline sebelum pembaruan | `9ce76f791e7d10ce42b4ca0681e4d9d3db962603` |
+
+## SagaBook S408 mobile shell exact-main reconciliation
+
+- Exact candidate `bf75ba90dc3df9cbfebfb363a6b61d5b6cd41f07`
+  menggabungkan S403+S406 di atas main `9ebdcf1…` tanpa menghilangkan retensi
+  booking manual approved-unpaid atau menu `Perlu ACC`.
+- Full backend 1.351 test/15.133 assertion; subset mobile final 10 pass/4
+  expected skip; build/typecheck/design 26/0 dan audit dependency nol.
+- Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED_BY_S408 / BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi SagaBook S408
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook S407 mobile shell main integration
 

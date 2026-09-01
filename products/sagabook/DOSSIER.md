@@ -7,6 +7,17 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- S408 exact `bf75ba90dc3df9cbfebfb363a6b61d5b6cd41f07`
+  merekonsiliasi tree mobile S403+S406 di atas exact main
+  `9ebdcf112f312f905c4213be9da1b80cf04e0ad3` yang sudah membawa retensi
+  booking manual approved-unpaid. Full backend lulus 1.351 test/15.133
+  assertion; browser final mobile 10/10 dengan 4 expected skip, build 5.137
+  modul, typecheck, design audit 26/0, dan audit dependency nol. Scope database,
+  API, permission, payload, dan integrasi tidak berubah; dampak server hanya
+  asset frontend build. Status `SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED_BY_S408 /
+  BUSINESS_READY=false`.
+
 - S407 exact `566de9ee4d15df4a7c85325b6dd8c5f769941470`
   mengintegrasikan tree S403+S406 di atas exact main Manual Booking
   `88fd51788e3de8950d6eac95a46dc87ece84d1ae`. Cherry-pick bersih dan

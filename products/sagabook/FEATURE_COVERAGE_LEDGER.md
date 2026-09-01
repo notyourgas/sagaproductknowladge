@@ -2,6 +2,19 @@
 
 Evidence cut-off: 1 September 2026 WIB
 
+Mobile shell exact-main reconciliation S408 exact
+`bf75ba90dc3df9cbfebfb363a6b61d5b6cd41f07` telah `CONFIRMED /
+SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+PRODUCTION_UNCHANGED_BY_S408`. S403+S406 direkonsiliasi ke exact main
+`9ebdcf112f312f905c4213be9da1b80cf04e0ad3`; navigasi `Perlu ACC`, alur
+Manual Booking, dan retensi sesi approved-unpaid tetap utuh. Full backend
+lulus 1.351 test (15.133 assertion); browser gabungan 28 pass/12 expected skip
+dengan dua timeout lingkungan yang lulus 2/2 terisolasi, lalu subset mobile
+final lulus 10/10 dengan 4 expected skip. Build 5.137 modul, typecheck, design
+audit 26/0, serta audit Composer/npm nol. Tidak ada database, API, permission,
+payload, integrasi, lock, atau production yang berubah; physical-device UAT
+dan guarded release masih gate, `BUSINESS_READY=false`.
+
 Mobile shell main integration S407 exact
 `566de9ee4d15df4a7c85325b6dd8c5f769941470` telah `CONFIRMED /
 SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
