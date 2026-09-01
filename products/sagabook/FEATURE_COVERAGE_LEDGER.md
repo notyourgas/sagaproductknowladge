@@ -1,6 +1,50 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 31 Agustus 2026 WIB
+Evidence cut-off: 1 September 2026 WIB
+
+Acceptance hard-reload S397 exact
+`ff07a024a6017389343c965fc2c0046786b9ade3` telah `CONFIRMED /
+SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+PRODUCTION_UNCHANGED`. Chromium membuktikan booking yang sudah diklaim tidak
+replay setelah hard reload; booking baru sesudah reload tetap memutar tepat
+satu batch dan reload berikutnya kembali senyap. TDD merah menerima nol nada
+setelah reload, bukan tiga, lalu expectation dikoreksi ke kontrak exact-once.
+Exact-commit matrix lulus 17/17 skenario dengan 51 eksekusi mobile/tablet/
+desktop. Focused PHP 21/21 (113 assertion), unit audio/cursor 9/9,
+typecheck/build, audit Composer/npm nol, dan diff check lulus. Tidak ada
+runtime, migration, release lock, atau deploy. Production tetap S385;
+speaker fisik Chrome/Edge masih `AUDIO_UAT_PENDING` dan
+`BUSINESS_READY=false`.
+
+Acceptance audio kumulatif S386-S396 exact
+`a0fcba18556355e67ff8fb84f7aa24f35bdc3590` telah `CONFIRMED /
+SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+PRODUCTION_UNCHANGED`. Chromium membuktikan exact-once lintas dua tab, refocus
+tanpa replay, mute menahan event, dan aktivasi kembali tidak memutar atau
+menggandakan event tertahan; urutan booking `659.25/830.61/987.77 Hz` juga
+terbukti berbeda dari verifikasi pembayaran `783.99/1046.5/783.99 Hz`.
+Finance Admin tanpa `manage_booking_status` terbukti menghasilkan nol nada
+untuk verifikasi pembayaran/transfer manual, sedangkan booking web berikutnya
+tetap berbunyi sekali dan refocus tidak replay. Mute Owner tidak bocor ke
+Finance Admin pada tenant/browser yang sama; Finance tetap aktif dengan tiga
+nada booking, sedangkan Owner tetap mute setelah login kembali dan menghasilkan
+nol nada. Gangguan 503 sintetis tetap diam; booking baru sesudah recovery
+berbunyi satu rangkaian tiga nada dan refocus tidak replay. Browser offline dan
+refocus juga tetap diam; sesudah reconnect, booking baru memutar tepat satu
+rangkaian tiga nada dan event online/refocus berikutnya tidak replay. Expiry
+sesi 419 mengarah ke login tanpa nada, login ulang membentuk baseline senyap,
+dan hanya booking baru sesudahnya yang memutar satu rangkaian tanpa replay.
+Visibility state tersembunyi sintetis membuktikan booking baru tetap memutar
+tepat satu rangkaian tiga nada, lalu kembali visible/refocus tidak replay.
+Lifecycle beku sintetis membuktikan booking staged tetap diam sebelum resume;
+resume/visible/focus mengambil booking dan memutar satu rangkaian, sedangkan
+resume/focus berikutnya tidak replay. Simulasi bfcache membuktikan booking staged
+pada `pagehide` tetap diam; `pageshow` dan focus memutar satu rangkaian, lalu
+transisi/focus berikutnya tidak replay. Browser 16/16 dengan 48 eksekusi viewport,
+focused PHP 21/21 (113 assertion), unit audio/cursor 9/9,
+typecheck/build, serta audit Composer/npm nol lulus. Runbook fisik memuat 10
+gate Chrome/Edge. Production tetap S385 dan `AUDIO_UAT_PENDING /
+BUSINESS_READY=false`.
 
 Audio notifikasi admin S385 exact merged main
 `154ab5e8e7049e1f0155b304ae9da7c03363bc69` telah `CONFIRMED /

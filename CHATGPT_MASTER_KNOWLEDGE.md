@@ -1,5 +1,27 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+SagaBook acceptance S397 exact `ff07a024a6017389343c965fc2c0046786b9ade3`
+membuktikan event booking yang sudah diklaim tidak memutar ulang nada setelah
+hard reload, sedangkan booking baru setelah reload tetap memutar satu batch
+`659.25/830.61/987.77 Hz`. TDD merah menerima nol nada setelah reload dan
+correction mempertahankan kontrak exact-once. Exact-commit Chromium lulus
+17/17 skenario dengan 51 eksekusi mobile/tablet/desktop; focused PHP 21/21
+(113 assertion), unit audio/cursor 9/9, typecheck/build, dan audit Composer/npm
+nol juga lulus. Perubahan hanya acceptance harness; production tetap S385
+exact main `154ab5e8e7049e1f0155b304ae9da7c03363bc69`, release
+`20260831041833-154ab5e`, rollback `20260831025235-58e1303`. Status
+`SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+PRODUCTION_UNCHANGED / AUDIO_UAT_PENDING / BUSINESS_READY=false`.
+
+SagaBook acceptance kumulatif S386-S396 exact
+`a0fcba18556355e67ff8fb84f7aa24f35bdc3590` membuktikan exact-once lintas
+dua tab, refocus, mute/re-enable, distinct tones, permission/account isolation,
+serta recovery 503, offline, session expiry, hidden tab, freeze/resume, dan
+bfcache. Browser 16/16 dengan 48 eksekusi viewport, focused PHP 21/21 (113
+assertion), unit 9/9, typecheck/build, audit dependency nol, serta runbook UAT
+fisik 10 gate tersedia. Perubahan hanya test/dokumentasi; production tetap
+S385 dan `AUDIO_UAT_PENDING / BUSINESS_READY=false`.
+
 COYABAG exact source `4ebee5831b57553b4b9fa19acb2120dd7b2c4abc`
 aktif pada immutable release `20260901-4ebee58`, rollback
 `20260831-693152f`. Approval lifecycle admin kini memiliki ringkasan antrean,

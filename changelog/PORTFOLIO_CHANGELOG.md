@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-09-01 - SagaBook S397 hard-reload audio acceptance
+
+- Exact source `ff07a024a6017389343c965fc2c0046786b9ade3` membuktikan booking yang sudah diklaim tidak replay setelah hard reload, sedangkan booking baru berikutnya berbunyi tepat satu batch.
+- TDD merah menerima nol nada setelah reload; correction mempertahankan kontrak exact-once. Exact-commit browser lulus 17/17 skenario dengan 51 eksekusi mobile/tablet/desktop, disertai focused PHP, unit, typecheck/build, dan audit dependency nol.
+- Test-only tanpa runtime/migration/deploy; production tetap S385. Status `IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / AUDIO_UAT_PENDING / BUSINESS_READY=false`.
+
+## 2026-09-01 - SagaBook S386-S396 audio acceptance cumulative
+
+- Exact head `a0fcba18556355e67ff8fb84f7aa24f35bdc3590` membuktikan exact-once lintas dua tab, refocus tanpa replay, mute/re-enable, distinct tones, permission/account isolation, serta recovery 503, offline, session expiry, hidden tab, freeze/resume, dan bfcache.
+- Browser 16/16 dengan 48 eksekusi viewport, focused PHP 21/21 (113 assertion), unit 9/9, typecheck/build, audit dependency nol, serta runbook UAT fisik 10 gate tersedia.
+- Tidak ada runtime/migration/deploy; production tetap S385 dan status `IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / AUDIO_UAT_PENDING / BUSINESS_READY=false`.
+
 ## 2026-09-01 - COYABAG approval lifecycle production
 
 - Source `4ebee5831b57553b4b9fa19acb2120dd7b2c4abc` aktif pada release `20260901-4ebee58`; rollback `20260831-693152f`.

@@ -1,5 +1,67 @@
 # SagaBook Changelog
 
+## 2026-09-01 - S397 hard-reload audio exact-once acceptance
+
+- Sebelum: matrix otomatis belum membuktikan apakah reload dashboard akan
+  memutar ulang booking yang sudah diklaim atau kehilangan nada booking baru.
+- Setelah: booking pertama berbunyi satu batch, hard reload untuk event yang
+  sama menghasilkan nol nada, booking baru berikutnya berbunyi satu batch, dan
+  reload kedua kembali senyap.
+- TDD merah membuktikan hasil aktual setelah reload adalah nol nada; expectation
+  tiga nada dikoreksi sempit agar sesuai kontrak exact-once.
+- Exact source `ff07a024a6017389343c965fc2c0046786b9ade3` lulus browser
+  17/17 skenario dengan 51 eksekusi mobile/tablet/desktop, focused PHP 21/21
+  (113 assertion), unit audio/cursor 9/9, typecheck/build, audit Composer/npm
+  nol, dan diff check.
+- Perubahan hanya acceptance harness; tidak ada runtime, migration, release
+  lock, atau deploy. Production tetap S385 exact main
+  `154ab5e8e7049e1f0155b304ae9da7c03363bc69`, release
+  `20260831041833-154ab5e`, rollback `20260831025235-58e1303`.
+- Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / AUDIO_UAT_PENDING /
+  BUSINESS_READY=false`.
+
+## 2026-09-01 - S386-S396 audio acceptance cumulative
+
+- Browser acceptance kini membuktikan exact-once lintas dua tab, refocus
+  tanpa replay, mute menahan event, serta aktivasi kembali tidak memutar atau
+  menggandakan event tertahan.
+- Browser memverifikasi nada booking `659.25/830.61/987.77 Hz` berbeda dari
+  verifikasi pembayaran `783.99/1046.5/783.99 Hz`, tanpa replay polling.
+- Finance Admin tanpa `manage_booking_status` menghasilkan nol nada untuk
+  verifikasi pembayaran/transfer manual; booking web berikutnya tetap berbunyi
+  sekali dan refocus tidak replay.
+- Mute Owner tidak menonaktifkan Finance Admin pada tenant/browser yang sama:
+  Finance tetap default aktif dan memutar tepat tiga nada booking; Owner tetap
+  mute setelah login kembali dan menghasilkan nol nada.
+- Gangguan 503 sintetis pada request recovery tidak menghasilkan nada; booking
+  baru setelah feed pulih berbunyi tepat satu batch tiga nada dan refocus tidak
+  replay.
+- Browser offline dan refocus menghasilkan nol nada; setelah reconnect,
+  booking baru memutar tepat satu batch `659.25/830.61/987.77 Hz`, sementara
+  online/refocus berikutnya tidak replay.
+- Expiry sesi 419 mengarah ke login tanpa nada; login ulang tetap senyap,
+  booking baru setelahnya memutar tepat satu batch nada booking, dan refocus
+  berikutnya tidak replay.
+- Visibility state tersembunyi sintetis membuktikan booking baru memutar tepat
+  satu batch tiga nada; kembali visible dan event focus tidak replay.
+- Lifecycle beku sintetis membuktikan booking staged tetap diam sebelum
+  resume; visible/resume/focus memanggil feed dan memutar satu batch, lalu
+  lifecycle/focus berikutnya tidak replay.
+- Simulasi bfcache membuktikan booking staged pada `pagehide` tetap diam;
+  `pageshow` dan focus memutar satu batch, lalu transisi/focus berikutnya tidak
+  replay.
+- Exact head `a0fcba18556355e67ff8fb84f7aa24f35bdc3590` mencakup parent S395
+  `09f93c680bcead45fbeb33935ca48b7728afd3bf` dan runbook UAT fisik 10 gate.
+- Matrix browser 16/16 dengan 48 eksekusi viewport, focused PHP 21/21 (113 assertion), unit 9/9,
+  typecheck/build, dan audit Composer/npm nol lulus.
+- Perubahan hanya acceptance harness dan dokumentasi. Production tetap S385
+  exact main `154ab5e8e7049e1f0155b304ae9da7c03363bc69`, release
+  `20260831041833-154ab5e`, rollback `20260831025235-58e1303`.
+- Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / AUDIO_UAT_PENDING /
+  BUSINESS_READY=false`.
+
 ## 2026-08-31 - S385 audio notifikasi admin production-activated
 
 - Sebelum: admin hanya melihat booking baru atau antrean verifikasi melalui

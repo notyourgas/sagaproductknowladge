@@ -1,5 +1,46 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-01 - SagaBook S397 hard-reload audio acceptance sync
+
+- Exact source `ff07a024a6017389343c965fc2c0046786b9ade3` menambah acceptance hard reload: event booking yang sudah diklaim tidak berbunyi ulang, sedangkan booking baru setelah reload tetap berbunyi tepat satu batch.
+- TDD merah membuktikan setelah reload didapat nol nada, bukan tiga; expectation dikoreksi ke kontrak exact-once. Matrix exact-commit lulus 17 skenario dengan 51 eksekusi mobile/tablet/desktop.
+- Focused PHP 21/21 (113 assertion), unit audio/cursor 9/9, typecheck/build, audit Composer/npm nol, dan diff check lulus. Perubahan hanya acceptance harness; tidak ada runtime, migration, release lock, atau deploy.
+- Production tetap S385 exact main `154ab5e8e7049e1f0155b304ae9da7c03363bc69`, release `20260831041833-154ab5e`, rollback `20260831025235-58e1303`. Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / AUDIO_UAT_PENDING / BUSINESS_READY=false`.
+
+## 2026-09-01 - SagaBook S386-S396 audio acceptance sync
+
+- Ringkasan: menyinkronkan acceptance exact-once dua tab, refocus, mute, dan
+  re-enable, perbedaan urutan nada booking/verifikasi pembayaran, serta
+  runbook UAT speaker fisik 10 gate.
+- S389 menambah permission-negative: Finance Admin tanpa
+  `manage_booking_status` tidak memutar nada verifikasi pembayaran/transfer
+  manual; booking web berikutnya tetap exact-once dan tidak replay saat refocus.
+- S390 membuktikan mute Owner tidak bocor ke Finance Admin pada tenant/browser
+  yang sama; Finance tetap aktif dengan tiga nada booking, sementara Owner
+  tetap mute setelah login kembali dan menghasilkan nol nada.
+- S391 membuktikan gangguan 503 sintetis tetap diam; booking baru setelah
+  recovery berbunyi satu batch tiga nada dan refocus tidak replay.
+- S392 membuktikan offline/refocus tetap diam; setelah reconnect, booking baru
+  berbunyi tepat satu batch tiga nada dan event online/refocus tidak replay.
+- S393 membuktikan expiry sesi 419 dan login ulang tetap senyap; booking baru
+  sesudah login ulang berbunyi tepat satu batch tanpa replay saat refocus.
+- S394 membuktikan booking saat visibility state tersembunyi memutar tepat satu
+  batch tiga nada; kembali visible/refocus tidak replay.
+- S395 membuktikan booking staged saat halaman tersembunyi dan lifecycle beku
+  tetap diam; visible/resume/focus memutar satu batch dan lifecycle/focus
+  berikutnya tidak replay.
+- S396 membuktikan booking staged pada simulasi bfcache `pagehide` tetap diam;
+  `pageshow` dan focus memutar satu batch, lalu transisi/focus berikutnya tidak
+  replay.
+- Provenance: exact head `a0fcba18556355e67ff8fb84f7aa24f35bdc3590`,
+  parent S395 `09f93c680bcead45fbeb33935ca48b7728afd3bf`, berbasis production
+  `154ab5e8e7049e1f0155b304ae9da7c03363bc69`.
+- Evidence: browser 16/16 dengan 48 eksekusi viewport, focused PHP 21/21 (113 assertion), unit 9/9,
+  typecheck/build, serta audit Composer/npm nol.
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / AUDIO_UAT_PENDING /
+  BUSINESS_READY=false`.
+
 ## 2026-09-01 - COYABAG approval lifecycle production sync
 
 - Exact source `4ebee5831b57553b4b9fa19acb2120dd7b2c4abc` aktif pada immutable release `20260901-4ebee58`; rollback `20260831-693152f`.

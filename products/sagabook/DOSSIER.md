@@ -7,6 +7,48 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- S397 exact `ff07a024a6017389343c965fc2c0046786b9ade3` membuktikan hard
+  reload tidak memutar ulang booking yang sudah diklaim, sedangkan booking baru
+  berikutnya tetap memutar satu batch tiga nada. TDD merah menerima nol nada
+  setelah reload dan correction mempertahankan kontrak exact-once.
+  Exact-commit Chromium lulus 17/17 skenario dengan 51 eksekusi pada mobile,
+  tablet, dan desktop. Focused PHP 21/21 (113 assertion), unit 9/9,
+  typecheck/build, audit dependency nol, dan diff check lulus. Tidak ada
+  runtime/migration/deploy; production tetap S385 dan status
+  `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED / AUDIO_UAT_PENDING / BUSINESS_READY=false`.
+
+- Acceptance kumulatif S386-S396 exact
+  `a0fcba18556355e67ff8fb84f7aa24f35bdc3590` membuktikan satu event hanya
+  berbunyi pada satu dari dua tab, refocus tidak replay, mode mute menahan
+  event, aktivasi kembali tidak memutar event tertahan, serta nada booking
+  `659.25/830.61/987.77 Hz` berbeda dari verifikasi pembayaran
+  `783.99/1046.5/783.99 Hz`. Finance Admin tanpa `manage_booking_status`
+  menghasilkan nol nada untuk verifikasi pembayaran/transfer manual, sedangkan
+  booking web berikutnya tetap berbunyi sekali tanpa replay saat refocus.
+  Mute Owner juga terbukti tidak bocor ke Finance Admin pada tenant/browser
+  yang sama: Finance tetap aktif dengan tiga nada booking, sedangkan Owner
+  tetap mute setelah login kembali dan menghasilkan nol nada. Gangguan 503
+  sintetis pada request recovery tetap diam; booking baru sesudah pulih
+  berbunyi satu rangkaian tiga nada dan refocus tidak replay. Browser offline
+  juga tetap diam saat refocus; setelah reconnect, booking baru memutar tepat
+  satu rangkaian `659.25/830.61/987.77 Hz` dan online/refocus berikutnya tidak
+  replay. Expiry sesi 419 mengarah ke login tanpa nada; login ulang membentuk
+  baseline senyap, lalu booking baru berbunyi tepat sekali tanpa replay saat
+  refocus. Saat visibility state dashboard tersembunyi, booking baru juga
+  memutar tepat satu rangkaian tiga nada; kembali visible/refocus tidak replay.
+  Saat halaman tersembunyi dan lifecycle beku, booking staged tetap diam;
+  resume, visible, dan focus memanggil feed lalu memutar satu rangkaian, dan
+  lifecycle/focus kedua tidak replay. Saat halaman berada dalam simulasi
+  bfcache, booking staged pada `pagehide` tetap diam; `pageshow` dan focus
+  memutar satu rangkaian, lalu transisi/focus berikutnya tidak replay.
+  Browser 16/16 dengan 48 eksekusi viewport,
+  focused PHP 21/21 (113 assertion), unit 9/9, typecheck/build,
+  serta audit dependency nol lulus. Runbook UAT fisik memiliki 10 gate.
+  Tidak ada runtime/migration/deploy; status `SOURCE_PUSHED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED /
+  AUDIO_UAT_PENDING / BUSINESS_READY=false`.
+
 - Audio notifikasi admin S385 aktif pada exact merged main
   `154ab5e8e7049e1f0155b304ae9da7c03363bc69`, immutable release
   `20260831041833-154ab5e`, dengan rollback

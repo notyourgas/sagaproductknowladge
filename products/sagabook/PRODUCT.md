@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 31 Agustus 2026 WIB
-Evidence status: Audio notifikasi admin S385 aktif pada exact merged main `154ab5e8e7049e1f0155b304ae9da7c03363bc69`, immutable release `20260831041833-154ab5e`, dengan rollback `20260831025235-58e1303`. Status `SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUDIO_UAT_PENDING / BUSINESS_READY=false`.
+Updated: 1 September 2026 WIB
+Evidence status: Audio notifikasi admin S385 aktif pada exact merged main `154ab5e8e7049e1f0155b304ae9da7c03363bc69`, immutable release `20260831041833-154ab5e`, dengan rollback `20260831025235-58e1303`. Acceptance kumulatif S386-S397 exact `ff07a024a6017389343c965fc2c0046786b9ade3` sudah `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`. Status keseluruhan `AUDIO_UAT_PENDING / BUSINESS_READY=false`.
 
 ## Tujuan dokumen
 
@@ -15,6 +15,56 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
+
+- S397 menambah acceptance hard reload: booking pertama memutar tepat satu
+  batch `659.25/830.61/987.77 Hz`, reload dashboard tidak memutar ulang event
+  yang sudah diklaim, booking baru setelah reload tetap berbunyi tepat satu
+  batch, dan reload berikutnya kembali senyap. TDD merah menerima nol nada
+  setelah reload sehingga expectation tiga nada dikoreksi ke kontrak
+  exact-once. Exact-commit browser lulus 17/17 skenario dengan 51 eksekusi
+  mobile 390x844, tablet 768x1024, dan desktop 1440x900. Focused PHP 21/21
+  (113 assertion), unit audio/cursor 9/9, typecheck/build, audit Composer/npm
+  nol, dan diff check lulus pada exact source
+  `ff07a024a6017389343c965fc2c0046786b9ade3`. Perubahan hanya acceptance
+  harness, tanpa runtime, migration, release lock, atau deploy. Status
+  `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED / AUDIO_UAT_PENDING / BUSINESS_READY=false`.
+
+- Acceptance kumulatif S386-S396 menambah browser Chromium dua tab untuk
+  exact-once chime, refocus tanpa replay, serta mute dan aktivasi kembali
+  tanpa replay/duplikasi. Browser juga memverifikasi urutan nada booking
+  `659.25/830.61/987.77 Hz` berbeda dari verifikasi pembayaran
+  `783.99/1046.5/783.99 Hz`. Runbook UAT speaker fisik menetapkan 10 gate.
+  Akun Finance Admin tanpa `manage_booking_status` terbukti tidak memutar nada
+  verifikasi pembayaran maupun transfer manual, tetapi booking web berikutnya
+  tetap berbunyi sekali dan refocus tidak replay. S390 membuktikan bahwa mute
+  milik Owner tidak menonaktifkan akun Finance Admin pada tenant dan browser
+  yang sama: Finance tetap default aktif dan memutar tepat satu rangkaian tiga
+  nada untuk booking web, sedangkan Owner tetap mute setelah login kembali dan
+  menghasilkan nol nada. S391 menambah recovery 503 sintetis: request gagal
+  tetap diam, booking baru setelah feed pulih berbunyi tepat satu rangkaian
+  tiga nada, dan refocus berikutnya tidak replay. S392 membuktikan browser
+  offline dan refocus tetap menghasilkan nol nada; setelah koneksi pulih,
+  booking baru memutar tepat satu rangkaian `659.25/830.61/987.77 Hz`, lalu
+  event online/refocus berikutnya tidak replay. S393 menambah expiry sesi 419:
+  redirect login tetap senyap, baseline setelah login ulang tetap senyap,
+  booking baru berikutnya memutar tepat satu rangkaian booking, dan refocus
+  tidak replay. S394 menambah visibility state tersembunyi sintetis: booking
+  yang masuk saat tab dashboard tersembunyi memutar tepat satu rangkaian tiga
+  nada, lalu visibility/focus saat kembali ke tab tidak memutar ulang. Matrix
+  S395 membuktikan booking yang baru tersedia saat halaman tersembunyi dan
+  lifecycle beku tetap diam sebelum resume; setelah halaman aktif dan fokus,
+  booking dipanggil lalu memutar tepat satu rangkaian, sedangkan resume/focus
+  berikutnya tidak replay. S396 menambah simulasi bfcache: booking staged saat
+  `pagehide` tetap diam, kemudian `pageshow` dan focus memutar satu rangkaian;
+  `pageshow`/focus berikutnya tidak replay. Browser 16/16 dengan 48 eksekusi viewport, focused PHP 21/21 (113 assertion), unit
+  audio/cursor 9/9, typecheck/build, serta
+  audit Composer/npm nol lulus pada exact head
+  `a0fcba18556355e67ff8fb84f7aa24f35bdc3590` dengan parent S395
+  `09f93c680bcead45fbeb33935ca48b7728afd3bf`. Perubahan hanya acceptance harness,
+  tanpa runtime, migration, atau deploy. Status `CONFIRMED / SOURCE_PUSHED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED /
+  AUDIO_UAT_PENDING / BUSINESS_READY=false`.
 
 - S385 menambahkan chime admin berbeda untuk booking web baru dan
   bukti transfer yang perlu diverifikasi. Audio hanya berbunyi setelah

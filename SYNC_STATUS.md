@@ -12,12 +12,45 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-09-01 02:05 WIB |
-| Branch aktif | isolated exact `origin/main` worktree |
+| Waktu pembaruan terakhir | 2026-09-01 10:32 WIB |
+| Branch aktif | `codex/s397-sagabook-audio-reload-recovery-knowledge` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `417f7328624af7d8df9a9875c388d9e1a36cb86f` |
-| Informasi terakhir disinkronkan | COYABAG approval lifecycle exact `4ebee5831b57553b4b9fa19acb2120dd7b2c4abc` aktif pada release `20260901-4ebee58`. |
-| Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false`. |
+| Baseline sebelum pembaruan | `ce9886ab4d0bf262bbff744880a5d8b99ed4190b` plus S396 knowledge `db06312e8e0bd64d80044e380e787124e312e5c3` |
+| Informasi terakhir disinkronkan | SagaBook S397 exact `ff07a024a6017389343c965fc2c0046786b9ade3`; production tetap S385 exact main `154ab5e8e7049e1f0155b304ae9da7c03363bc69`. |
+| Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / AUDIO_UAT_PENDING / BUSINESS_READY=false`. |
+
+## SagaBook S397 hard-reload audio acceptance
+
+- Event booking yang sudah diklaim tidak memutar ulang nada setelah hard reload;
+  booking baru berikutnya tetap memutar tepat satu batch tiga nada.
+- TDD merah menerima nol nada setelah reload dan correction mempertahankan
+  kontrak exact-once. Exact-commit browser lulus 17/17 skenario dengan 51
+  eksekusi mobile/tablet/desktop.
+- Focused PHP 21/21 (113 assertion), unit audio/cursor 9/9, typecheck/build,
+  audit Composer/npm nol, dan diff check lulus.
+- Perubahan hanya acceptance harness. Tidak ada runtime, migration, release
+  lock, atau deploy; production tetap S385.
+
+## SagaBook S386-S396 audio acceptance cumulative
+
+- Exact head `a0fcba18556355e67ff8fb84f7aa24f35bdc3590` membuktikan exact-once
+  lintas dua tab, refocus, mute/re-enable, distinct tones, permission/account
+  isolation, serta recovery 503, offline, session expiry, hidden tab,
+  freeze/resume, dan bfcache.
+- Browser 16/16 dengan 48 eksekusi viewport, focused PHP 21/21 (113 assertion),
+  unit 9/9, typecheck/build, audit dependency nol, serta runbook UAT fisik 10
+  gate tersedia. Tidak ada runtime, migration, release lock, atau deploy.
+
+## File yang berubah pada sinkronisasi SagaBook S397
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaView S373 backend production activation
 
