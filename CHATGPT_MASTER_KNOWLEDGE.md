@@ -1,5 +1,14 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+COYABAG exact source `32d3419dedb4e4fc6d224e3a6b5dadeedc3e32c3`
+aktif pada immutable release `20260901-32d3419`, rollback
+`20260901-a849669`. Detail Pengiriman menahan create provider order dan
+dispatch di review dialog yang menampilkan kurir, layanan, AWB, packing,
+berat, dampak pelanggan, dan acknowledgement; create order juga menolak
+shipment version stale. Full regression, checksum, backup, readiness 42/42,
+dua worker, migration pending nol, serta public smoke lulus tanpa migrasi atau
+mutasi commerce. Status tetap `COMMERCE_ACTIVE / BUSINESS_READY=false`.
+
 SagaBook S400 exact `f03f0db8a7f7018b9405a17c9e1beb79084fd752`
 memperketat receipt UAT audio fisik ke schema v2: tiap Chrome/Edge harus memuat
 versi browser dotted-numeric, `audioOutput=physical_speaker`, konfirmasi

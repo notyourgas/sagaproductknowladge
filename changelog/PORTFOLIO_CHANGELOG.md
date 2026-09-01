@@ -1,5 +1,12 @@
 # Portfolio Changelog
 
+## 2026-09-01 - COYABAG guarded shipment handoff production
+
+- Source `32d3419dedb4e4fc6d224e3a6b5dadeedc3e32c3` aktif pada release `20260901-32d3419`; rollback `20260901-a849669`.
+- Create provider order dan serah-terima kurir kini memakai review kontekstual, acknowledgement, focus management, responsive layout, serta stale shipment guard.
+- Full regression, immutable checksum/backup/deploy, readiness 42/42, dua worker, migration pending nol, dan public smoke lulus tanpa mutasi provider/payment/inventory.
+- Status `COMMERCE_ACTIVE / BUSINESS_READY=false`; payment exception dan batas operasional lain tetap residual.
+
 ## 2026-09-01 - SagaBook S400 manual physical-audio evidence boundary
 
 - Exact source `f03f0db8a7f7018b9405a17c9e1beb79084fd752` menaikkan receipt

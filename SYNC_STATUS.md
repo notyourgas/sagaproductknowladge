@@ -12,10 +12,18 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-09-01 13:15 WIB |
-| Branch aktif | `codex/s400-sagabook-audio-uat-manual-observation-knowledge` |
+| Waktu pembaruan terakhir | 2026-09-01 13:58 WIB |
+| Branch aktif | `codex/coyabag-customer-merge-knowledge-final` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `fce2b53aa3989f40f62d797c0088602861ce0d8d` |
+| Baseline sebelum pembaruan | `5b33c55` |
+
+## COYABAG guarded shipment handoff production
+
+- Exact source `32d3419dedb4e4fc6d224e3a6b5dadeedc3e32c3` aktif pada release `20260901-32d3419`; rollback `20260901-a849669`.
+- Provider order dan dispatch memakai review kontekstual, acknowledgement,
+  responsive focus management, serta stale shipment guard.
+- Readiness 42/42, dua worker, migration pending nol, dan public smoke hijau.
+- Status `COMMERCE_ACTIVE / BUSINESS_READY=false`.
 
 ## SagaBook S400 manual audio observation boundary
 

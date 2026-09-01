@@ -25,6 +25,13 @@ dengan Instrument Serif untuk display dan Helvetica family untuk UI/body.
 Dashboard admin memakai Plus Jakarta Sans variable self-hosted untuk seluruh
 interface operasional; wordmark COYABAG tetap memakai font logo resminya.
 
+Detail Pengiriman production memakai review dialog sebelum membuat order
+provider atau menyerahkan paket ke kurir. Operator memeriksa kurir, layanan,
+AWB, bukti packing, berat, dampak status pelanggan, dan acknowledgement;
+server menolak versi shipment lama sebelum create order provider. Exact source
+`32d3419dedb4e4fc6d224e3a6b5dadeedc3e32c3` aktif pada immutable release
+`20260901-32d3419`, dengan rollback `20260901-a849669`.
+
 Payment Detail production memakai review dialog terukur untuk approve,
 clarification, dan reject. Operator melihat dampak keputusan, identitas bukti,
 status pesanan, catatan, dan acknowledgement; server menolak tab lama ketika

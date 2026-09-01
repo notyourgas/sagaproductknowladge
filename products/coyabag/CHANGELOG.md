@@ -1,5 +1,13 @@
 # COYABAG Changelog
 
+## 2026-09-01 - Guarded shipment handoff deployed
+
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false` dari source `32d3419dedb4e4fc6d224e3a6b5dadeedc3e32c3`, release `20260901-32d3419`, rollback `20260901-a849669`.
+- Detail Pengiriman mengganti konfirmasi browser untuk create provider order dan dispatch dengan review berisi kurir, layanan, AWB, packing, berat, dampak status, acknowledgement, focus trap, Escape, dan layout mobile tanpa overflow.
+- Endpoint create provider order mewajibkan `lock_version`; tab lama ditolak sebelum menghubungi provider. Idempotency dan unknown-outcome recovery tetap dipertahankan.
+- Backend 547 pass + satu controlled skip dengan 5.677 assertion, storefront 220/220, browser desktop/mobile, build/audit, checksum, backup, readiness 42/42, migration pending nol, dua worker, font/API/admin/storefront smoke lulus.
+- Tidak ada migrasi, aktivasi provider, payment intent, perubahan konfigurasi shipping, atau mutasi inventory saat deploy. Commerce tetap aktif; exception pembayaran lama tetap residual bisnis.
+
 ## 2026-09-01 - Guarded payment review deployed
 
 - Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false` dari source `a84966925bb1ce4f9f22658362002e8e9b9d6b1d`, release `20260901-a849669`, rollback `20260901-d09960c`.

@@ -1,5 +1,12 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-01 - COYABAG guarded shipment handoff production sync
+
+- Exact source `32d3419dedb4e4fc6d224e3a6b5dadeedc3e32c3` aktif pada immutable release `20260901-32d3419`; rollback `20260901-a849669`.
+- Detail Pengiriman menambah contextual review, acknowledgement, responsive focus management, dan stale shipment guard untuk provider order/dispatch.
+- Backend 547 pass + satu controlled skip, storefront 220/220, browser/build/audit, checksum, backup, readiness 42/42, worker dan public smoke lulus.
+- Klasifikasi `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false`.
+
 ## 2026-09-01 - SagaBook S400 manual audio observation sync
 
 - Ringkasan: receipt audio schema v2 kini memisahkan tegas hasil
