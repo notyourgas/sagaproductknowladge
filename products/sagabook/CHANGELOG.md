@@ -1,5 +1,26 @@
 # SagaBook Changelog
 
+## 2026-09-01 - S403 stabilisasi shell dan sidebar mobile admin
+
+- Sebelum: sidebar mobile dirender lewat portal di luar shell bertema sehingga
+  panel dapat transparan, warna tab aktif tidak konsisten, dan active state
+  ganda muncul dari rail desktop tersembunyi. Settings/Booking juga dapat
+  melebar pada viewport 320 px.
+- Setelah: portal memiliki tema opaque mandiri, hanya satu pohon navigasi
+  sesuai viewport yang dirender, tab aktif tunggal dan role-aware, serta shell,
+  cards, URL row, dan header memiliki kontainmen narrow-screen.
+- Evidence emulasi browser: 320x700, 360x800, 375x667, 390x844, 393x873,
+  412x915, 430x932, landscape 844x390, effective 200%, forced-colors,
+  reduced-motion, dan desktop 1440x900. Browser regression 7 pass/5 expected
+  project skips; role smoke 3/3 (126 assertion), build 5.137 modul, typecheck,
+  design audit 26/0, serta audit Composer/npm nol lulus.
+- Exact source `9b9b30b9b68972014a1a1ab2a0730d955e882d76`; tidak ada
+  API/backend/database/migration/permission rule yang berubah. Ini bukan uji
+  perangkat fisik.
+- Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED_BY_S403 /
+  BUSINESS_READY=false`.
+
 ## 2026-09-01 - S402 indeks baca history closing lintas cabang
 
 - Sebelum: kandidat prefix tenant/date tetap tidak dipilih optimizer MySQL dan

@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
 Updated: 1 September 2026 WIB
-Evidence status: SagaBook production aktif pada exact `fdf4155c0a294a6af8b41a819ba40e6d371f3ba8`, immutable release `20260901083148-fdf4155`. Kandidat indeks history closing S402 exact `010b2c67025c51494a66b12b1e8b6778667660c6` sudah `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; production belum memakai migration ini. Status keseluruhan `AUDIO_UAT_PENDING / PILOT_BLOCKED_BY_AUDIO_UAT / BUSINESS_READY=false`.
+Evidence status: perbaikan shell/sidebar mobile S403 exact `9b9b30b9b68972014a1a1ab2a0730d955e882d76` sudah `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED_BY_S403`. Kandidat indeks history closing S402 exact `010b2c67025c51494a66b12b1e8b6778667660c6` juga belum dideploy. Snapshot production terakhir yang diverifikasi sebelum penutupan S403 adalah exact `fdf4155c0a294a6af8b41a819ba40e6d371f3ba8`, immutable release `20260901083148-fdf4155`; jalur release SagaBook lain harus diverifikasi terpisah sebelum klaim eksternal. Status keseluruhan `AUDIO_UAT_PENDING / PILOT_BLOCKED_BY_AUDIO_UAT / BUSINESS_READY=false`.
 
 ## Tujuan dokumen
 
@@ -15,6 +15,19 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
+
+- S403 memperbaiki sidebar mobile admin yang kehilangan tema karena dirender
+  melalui portal di luar shell dashboard. Panel sekarang selalu opaque,
+  warna tab aktif konsisten, hanya satu item memakai status aktif, dan navigasi
+  Owner/Staff tetap role-aware. Kontainmen lebar, safe-area, target sentuh 44
+  px, focus trap, Escape/focus restore, reduced-motion, forced-colors, dan
+  no-overflow divalidasi dengan emulasi viewport 320x700 sampai 430x932,
+  landscape 844x390, effective 200%, serta desktop 1440x900. Browser regression
+  7 pass dengan 5 expected project skips, role smoke 3/3 (126 assertion),
+  build 5.137 modul, typecheck, design audit 26/0, dan audit dependency nol
+  lulus. Ini bukti emulasi browser, bukan uji perangkat fisik; tidak ada API,
+  backend, database, migration, permission rule, release lock, atau production
+  yang berubah.
 
 - S402 memperbaiki indeks baca history closing lintas cabang setelah MySQL
   8.4.9 membuktikan kandidat prefix awal tidak dipilih optimizer dan masih

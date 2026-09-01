@@ -7,6 +7,20 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- S403 exact `9b9b30b9b68972014a1a1ab2a0730d955e882d76` menutup
+  akar masalah sidebar mobile: Sheet berbasis portal berada di luar shell
+  bertema sehingga latar dapat transparan dan warna tab aktif rusak; rail
+  desktop tersembunyi juga masih menyumbang active state ganda. Portal sekarang
+  memiliki tema opaque mandiri, hanya satu pohon navigasi dirender sesuai
+  viewport, dan Settings/Booking diberi kontainmen narrow-screen. Emulasi
+  browser mencakup 320x700, 360x800, 375x667, 390x844, 393x873, 412x915,
+  430x932, landscape 844x390, effective 200%, forced-colors, reduced-motion,
+  dan desktop 1440x900. Browser regression 7 pass/5 expected skips, role smoke
+  3/3 (126 assertion), build 5.137 modul, typecheck, design audit 26/0, dan
+  audit dependency nol lulus. Status `SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED_BY_S403`; ini bukan bukti
+  perangkat fisik dan `BUSINESS_READY=false`.
+
 - S402 exact candidate `010b2c67025c51494a66b12b1e8b6778667660c6`
   menutup gap query history closing lintas cabang pada MySQL. Kandidat awal
   dengan prefix tenant/date terbukti tidak dipilih optimizer dan masih

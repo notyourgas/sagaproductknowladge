@@ -1,5 +1,22 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-01 - SagaBook S403 mobile shell/sidebar sync
+
+- Ringkasan: portal sidebar mobile kini mempunyai tema opaque mandiri, active
+  state tunggal, navigasi Owner/Staff role-aware, dan kontainmen narrow-screen
+  untuk Settings/Booking.
+- Provenance: exact source
+  `9b9b30b9b68972014a1a1ab2a0730d955e882d76`.
+- Evidence public-safe: emulasi 320x700 sampai 430x932, landscape, effective
+  200%, forced-colors, reduced-motion, dan desktop; browser regression 7 pass,
+  role smoke 3/3 (126 assertion), build/typecheck/design 26/0, serta audit
+  dependency nol. Ini bukan uji perangkat fisik.
+- Klasifikasi `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED_BY_S403 /
+  BUSINESS_READY=false`.
+- Dokumen terdampak: Product, dossier, ledger/changelog SagaBook, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-09-01 - COYABAG guarded shipment cancellation production sync
 
 - Exact source `a96d1a90a708dff917fb7b006dff3187f699d9af` aktif pada immutable release `20260901-a96d1a9`; rollback `20260901-32d3419`.

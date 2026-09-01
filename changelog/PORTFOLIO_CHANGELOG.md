@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-09-01 - SagaBook S403 mobile admin shell/sidebar
+
+- Memperbaiki portal sidebar transparan, warna tab aktif, active state ganda,
+  dan overflow Settings/Booking pada layar 320 px tanpa mengubah kontrak
+  backend, data, atau permission.
+- Emulasi browser 320x700 sampai 430x932, landscape, effective 200%,
+  forced-colors, reduced-motion, dan desktop lulus; browser regression 7 pass,
+  role smoke 3/3 (126 assertion), build/typecheck/design audit, dan audit
+  dependency nol hijau.
+- Exact source `9b9b30b9b68972014a1a1ab2a0730d955e882d76` berstatus
+  `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED_BY_S403 / BUSINESS_READY=false`. Pengujian memakai
+  viewport emulation, bukan perangkat fisik.
+
 ## 2026-09-01 - COYABAG guarded shipment cancellation production
 
 - Source `a96d1a90a708dff917fb7b006dff3187f699d9af` aktif pada release `20260901-a96d1a9`; rollback `20260901-32d3419`.

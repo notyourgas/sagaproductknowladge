@@ -12,10 +12,33 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-09-01 19:17 WIB |
-| Branch aktif | `codex/s402-sagabook-closing-history-read-indexes-knowledge` |
+| Waktu pembaruan terakhir | 2026-09-01 19:52 WIB |
+| Branch aktif | `codex/s403-sagabook-mobile-shell-knowledge` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `69e9518` |
+| Baseline sebelum pembaruan | `3cb43b27c803a4c7fad3b8c793d270399e9d8aa1` |
+
+## SagaBook S403 mobile admin shell/sidebar
+
+- Exact source `9b9b30b9b68972014a1a1ab2a0730d955e882d76` sudah
+  `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED_BY_S403`.
+- Portal sidebar sekarang opaque, tab aktif tunggal dan role-aware, serta
+  overflow layar 320 px ditutup. Emulasi browser lintas ukuran, landscape,
+  effective 200%, forced-colors, reduced-motion, dan desktop lulus.
+- Browser regression 7 pass/5 expected project skips, role smoke 3/3 (126
+  assertion), build 5.137 modul, typecheck, design audit 26/0, dan audit
+  dependency nol lulus. Ini bukan uji perangkat fisik; `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi SagaBook S403
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## COYABAG guarded shipment cancellation production
 

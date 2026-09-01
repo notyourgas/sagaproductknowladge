@@ -1,5 +1,19 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+SagaBook S403 exact `9b9b30b9b68972014a1a1ab2a0730d955e882d76`
+memperbaiki shell/sidebar admin mobile yang sebelumnya kehilangan tema akibat
+portal di luar shell, memiliki active state ganda, dan overflow pada layar 320
+px. Panel sekarang opaque, tab aktif tunggal dan role-aware, target sentuh 44
+px, safe-area, keyboard/focus, reduced-motion, forced-colors, effective 200%,
+dan no-overflow telah divalidasi melalui emulasi browser 320x700 sampai
+430x932, landscape 844x390, serta desktop 1440x900. Browser regression 7 pass
+dengan 5 expected project skips, role smoke 3/3 (126 assertion), build 5.137
+modul, typecheck, design audit 26/0, dan audit dependency nol lulus. Tidak ada
+API/backend/database/migration/permission rule atau production yang berubah.
+Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+PRODUCTION_UNCHANGED_BY_S403 / BUSINESS_READY=false`; evidence ini bukan uji
+perangkat fisik.
+
 COYABAG exact source `a96d1a90a708dff917fb7b006dff3187f699d9af`
 aktif pada immutable release `20260901-a96d1a9`, rollback
 `20260901-32d3419`. Pembatalan shipment sekarang ditahan di review dialog

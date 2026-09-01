@@ -2,6 +2,20 @@
 
 Evidence cut-off: 1 September 2026 WIB
 
+Mobile admin shell/sidebar S403 exact
+`9b9b30b9b68972014a1a1ab2a0730d955e882d76` telah `CONFIRMED /
+SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+PRODUCTION_UNCHANGED_BY_S403`. Portal sidebar sekarang opaque dan memiliki
+active state tunggal; navigasi Owner/Staff tetap role-aware. Safe-area, target
+44 px, keyboard/focus, Escape/focus restore, reduced-motion, forced-colors,
+effective 200%, dan no-overflow lulus pada emulasi browser 320x700 sampai
+430x932, landscape 844x390, serta desktop 1440x900. Browser regression 7 pass
+dengan 5 expected project skips, role smoke 3/3 (126 assertion), build 5.137
+modul, typecheck, design audit 26/0, serta audit Composer/npm nol lulus. Tidak
+ada API, backend, database, migration, permission rule, lock, atau production
+yang berubah. Evidence perangkat fisik tetap belum dilakukan dan
+`BUSINESS_READY=false`.
+
 Closing-history read indexes S402 exact candidate
 `010b2c67025c51494a66b12b1e8b6778667660c6` telah `CONFIRMED /
 SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
