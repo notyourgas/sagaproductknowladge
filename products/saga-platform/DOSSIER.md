@@ -68,6 +68,12 @@ durable PostgreSQL serving integration. Tidak ada provider, pilot, deployment,
 activation, billing, DNS/database, atau perubahan production. Owner self-review
 tercatat tetapi bukan independent review.
 
+Goal 4 telah memiliki strategy pack tervalidasi berisi 18 wave, 108 batch, 36
+macro-sprint dan 432 micro-sprint. Andreas mengizinkan preparation lane
+unattended tanpa approval interaktif dengan incremental budget Rp0. Scope ini
+hanya read-only/local, synthetic-only dan production-denied; route public,
+multi-outlet dan commercial tenant belum dimulai.
+
 ## Fitur MVP
 
 Product-scoped account, subscription/entitlement, provisioning, audit, dan

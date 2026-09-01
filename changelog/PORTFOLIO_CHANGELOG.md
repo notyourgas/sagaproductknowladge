@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-09-02 - Saga Member Goal 4 zero-cost unattended strategy
+
+- Strategy tervalidasi: 18 wave, 108 batch, 36 macro-sprint, 432 micro-sprint,
+  48 risiko dan 18 route/safety gate.
+- Preparation lane boleh berjalan tanpa owner-wait gate hanya untuk read-only,
+  local tests dan synthetic data dengan incremental budget Rp0.
+- Route execution tetap `NO_GO`; external, VPS/DNS, provider, customer-data,
+  payment dan production mutation dilarang.
+- Exact ops `e0c827c13ee3904a1d28a382cc982ec0cf026538`; CI lulus.
+
 ## 2026-09-02 - Saga Member Goal 3 locks zero-new-spend VPS path
 
 - Andreas menetapkan incremental infrastructure spend Rp0; hanya domain/VPS

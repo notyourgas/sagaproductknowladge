@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-132 - Goal 4 memiliki preparation lane unattended tanpa biaya baru
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-09-02 |
+| Topik | Strategy dan unattended preparation Goal 4 |
+| Keputusan | Andreas meminta strategi Goal 4 yang dapat ditinggal tidur tanpa biaya dan tanpa owner-wait gate. Preparation lane diizinkan tanpa approval interaktif hanya untuk read-only/local, synthetic-only dan incremental budget Rp0. |
+| Alasan | Perencanaan dan verifikasi lokal perlu dapat berjalan mandiri tanpa membeli layanan atau menunggu keputusan owner pada malam hari. |
+| Alternatif yang dipertimbangkan | Menunggu seluruh Goal 3 selesai; menghapus seluruh safety gate; memulai external route saat owner offline. |
+| Dampak | Strategy tervalidasi pada 18 wave, 108 batch, 36 macro-sprint dan 432 micro-sprint. Automatic safety checks tetap fail-closed; VPS/DNS, provider, customer data, payment, deployment, activation, merge dan production mutation dilarang. Goal 4 route execution tetap `PLANNED_NOT_STARTED`. |
+| Pemberi keputusan | Andreas |
+| Status | `CONFIRMED / GOAL4_STRATEGY_VALIDATED / ZERO_COST_UNATTENDED_PREP_READY / ROUTE_EXECUTION_NO_GO / PRODUCTION_UNCHANGED`; ops `e0c827c` |
+| Dokumen terkait | `products/saga-platform/PRODUCT.md`, `products/saga-platform/DOSSIER.md`, `products/sagaops/PRODUCT.md`, `products/sagaops/DOSSIER.md` |
+
 ## DEC-131 - Goal 3 Saga Member memakai existing VPS/domain tanpa biaya baru
 
 | Field | Isi |

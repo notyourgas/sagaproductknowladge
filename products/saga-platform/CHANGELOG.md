@@ -8,6 +8,16 @@ Mencatat perubahan material control plane Saga.
 
 Fondasi production dan roadmap pemisahan boundary harus dibedakan.
 
+## 2026-09-02 — Goal 4 zero-cost unattended strategy tervalidasi
+
+- Strategy pack mencakup 18 wave, 108 batch, 36 macro-sprint, 432 micro-sprint,
+  48 risiko dan 18 route/safety gate.
+- Preparation lane diizinkan tanpa approval interaktif hanya untuk read-only,
+  local tests dan synthetic data dengan incremental budget Rp0.
+- Route execution tetap `NO_GO`; tidak ada external, VPS/DNS, provider,
+  customer-data atau production mutation.
+- Exact ops `e0c827c13ee3904a1d28a382cc982ec0cf026538`; CI lulus.
+
 ## 2026-09-02 — Goal 3 memakai jalur nol biaya baru dan existing VPS diaudit
 
 - Andreas mengganti opsi paid staging dengan kebijakan incremental spend Rp0;

@@ -123,6 +123,11 @@ integration. Owner self-review diterima sebagai owner review, bukan independent
 review. Tidak ada resource, billing, DNS, database, provider, pilot, atau
 production mutation.
 
+Strategi Goal 4 tersedia sebagai 18 wave, 108 batch, 36 macro-sprint dan 432
+micro-sprint. Preparation unattended dapat berjalan tanpa approval interaktif
+tetapi hanya read-only/local, synthetic-only dan incremental budget Rp0. Public
+cohort, outlet kedua, commercial tenant dan production route belum dimulai.
+
 ## Technical overview
 
 Private canonical source menyediakan versioned API, domain service, operator

@@ -8,6 +8,15 @@ Mencatat perubahan material SagaOPS.
 
 Prototype dan production outlet adalah evidence level yang berbeda.
 
+## 2026-09-02 — Goal 4 zero-cost unattended strategy tervalidasi
+
+- Strategy pack: 18 wave, 108 batch, 36 macro-sprint dan 432 micro-sprint.
+- Preparation lane hanya read-only/local, synthetic-only dan budget Rp0;
+  tidak memerlukan owner-wait gate.
+- Route scale, external runtime, provider, customer data dan production tetap
+  `NO_GO`.
+- Ops `e0c827c13ee3904a1d28a382cc982ec0cf026538`; CI lulus.
+
 ## 2026-09-02 — Zero-cost existing-VPS path audited, deployment tetap NO_GO
 
 - Andreas mengunci incremental spend Rp0; hanya domain/VPS yang sudah aktif
