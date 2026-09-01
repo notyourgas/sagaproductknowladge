@@ -17,6 +17,26 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
 | Baseline sebelum pembaruan | `dcbb5e80ff3af6c7d847369f7ea39205903a4ab3` |
 
+## COYABAG governance operations wave production
+
+- Exact source `16922ab372f935f77c2ba921a98b127483593ddd` aktif pada release
+  `20260901-16922ab`; rollback `20260901-76a5e61`.
+- Privacy review, Security Events, dan Activity audit lulus desktop/mobile,
+  aksesibilitas, data panjang, full regression, immutable deploy, readiness
+  42/42, worker, dan public smoke.
+- Commerce tetap aktif tanpa aktivasi provider atau migrasi. Shipping manual
+  sembilan tujuan dan enam payment exception menahan `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi COYABAG governance wave
+
+- `products/coyabag/PRODUCT.md`
+- `products/coyabag/DOSSIER.md`
+- `products/coyabag/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
+
 ## SagaBook S399 pilot prerequisite binding
 
 - Exact source `d86e8fc8fb7945042ee17a9130e01b53af29a752` sudah

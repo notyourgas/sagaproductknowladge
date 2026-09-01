@@ -1,5 +1,12 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-01 - COYABAG governance operations wave production sync
+
+- Exact source `16922ab372f935f77c2ba921a98b127483593ddd` aktif pada immutable release `20260901-16922ab`; rollback `20260901-76a5e61`.
+- Privacy mengganti prompt browser dengan review terstruktur untuk keputusan, legal hold, koreksi, penyelesaian, dan anonimisasi. Security Events memperoleh summary/filter/pagination; Activity memperoleh filter berlabel, reset/empty state, dan detail panjang responsif.
+- Backend 545 pass + satu controlled skip, storefront 220/220, browser desktop/mobile, build/audit, backup, readiness 42/42, worker, migration compatibility, dan public smoke lulus.
+- Commerce tetap aktif; provider SagaDev, shipping manual sembilan tujuan, enam payment exception, inventory invalid nol. Status `COMMERCE_ACTIVE / BUSINESS_READY=false`.
+
 ## 2026-09-01 - SagaBook S399 pilot prerequisite binding sync
 
 - Ringkasan: evidence pilot dua studio schema v3 sekarang mewajibkan receipt

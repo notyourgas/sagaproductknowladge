@@ -1,5 +1,16 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+COYABAG exact source `16922ab372f935f77c2ba921a98b127483593ddd`
+aktif pada immutable release `20260901-16922ab`, rollback
+`20260901-76a5e61`. Privacy Operations kini memakai review terstruktur dan
+acknowledgement untuk keputusan, legal hold, koreksi, completion, serta
+anonimisasi; Security Events memiliki summary/filter/pagination dan Activity
+memiliki filter bernama, reset/empty recovery, serta detail panjang responsif.
+Backend 545 pass + satu controlled skip, storefront 220/220, browser dua
+viewport, build/audit, backup, readiness 42/42, worker dan HTTP lulus. Commerce
+tetap aktif dengan provider SagaDev, shipping manual sembilan tujuan, enam
+payment exception, inventory invalid nol; `BUSINESS_READY=false`.
+
 SagaBook S399 exact `d86e8fc8fb7945042ee17a9130e01b53af29a752`
 membuat physical audio UAT receipt tervalidasi menjadi prasyarat wajib evidence
 pilot dua studio. Schema v3 membaca authenticated UAT dan audio UAT receipt,

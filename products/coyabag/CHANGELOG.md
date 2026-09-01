@@ -1,5 +1,12 @@
 # COYABAG Changelog
 
+## 2026-09-01 - Governance operations wave deployed
+
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false` dari source `16922ab372f935f77c2ba921a98b127483593ddd`, release `20260901-16922ab`, rollback `20260901-76a5e61`.
+- Privacy Operations mengganti prompt browser dengan review sheet berfakta, validasi inline, dan acknowledgement untuk keputusan sensitif. Security Events menambah summary/filter/pagination; Activity menambah label filter, reset, empty recovery, dan wrapping detail panjang.
+- Acceptance 2FA desktop/mobile lulus tanpa overflow atau kontrol tanpa nama. Backend 545 pass + satu controlled skip, storefront 220/220, build/audit, backup, readiness 42/42, worker dan HTTP lulus.
+- Tidak ada migrasi atau aktivasi provider. Commerce tetap aktif; provider SagaDev, shipping manual sembilan tujuan, enam payment exception, inventory invalid nol.
+
 ## 2026-09-01 - Support access review deployed
 
 - Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false` dari source `76a5e610daaa2ad1df3c2b3a17e6da326e4836c3`, release `20260901-76a5e61`, rollback `20260901-4ebee58`.

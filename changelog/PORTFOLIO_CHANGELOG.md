@@ -1,5 +1,12 @@
 # Portfolio Changelog
 
+## 2026-09-01 - COYABAG governance operations wave production
+
+- Source `16922ab372f935f77c2ba921a98b127483593ddd` aktif pada release `20260901-16922ab`; rollback `20260901-76a5e61`.
+- Privacy review, Security Events summary/filter/pagination, dan Activity filter/reset/detail responsif menutup prompt mentah, kontrol tanpa nama, serta overflow data panjang pada governance operations.
+- Full gates, browser desktop/mobile, immutable backup/deploy, readiness 42/42, worker dan public smoke lulus tanpa migrasi atau mutasi provider/inventory.
+- Status `COMMERCE_ACTIVE / BUSINESS_READY=false`; enam payment exception dan shipping manual sembilan tujuan tetap residual.
+
 ## 2026-09-01 - SagaBook S399 pilot prerequisite binding
 
 - Exact source `d86e8fc8fb7945042ee17a9130e01b53af29a752` menaikkan evidence
