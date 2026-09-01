@@ -35,9 +35,11 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - Source tests, browser/accessibility, security, load, migration/RLS, recovery
   dua database, clean-room browser gates dan artifact restore lulus.
 - Status: `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
-- Provider nyata, external infrastructure/capacity/DR, signed staging release,
-  manual assistive-technology, NFC dan final business acceptance tetap terbuka.
+  LOCAL_INTERNAL_ALPHA_ACCEPTED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
+- Founder acceptance Goal 1 sudah tercatat. Provider nyata, external
+  infrastructure/capacity/DR, signed staging release, manual
+  assistive-technology, NFC, dan production tetap terbuka sebagai gate lanjutan.
 
 ## File yang berubah pada sinkronisasi Saga Member Platform Goal 1
 
@@ -51,6 +53,7 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `CHANGELOG.md`
 - `SYNC_STATUS.md`
+- `DECISIONS.md`
 
 ## COYABAG governance operations wave production
 
