@@ -1,5 +1,17 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+SagaBook S406 exact `f3d1ad30cba0849108efd07d70f07957cecb7b2c`,
+ditumpuk di atas S403, memperbaiki kehilangan konteks visual ketika route aktif
+berada jauh di bawah daftar sidebar mobile. Drawer kini otomatis menggulir
+item `aria-current="page"` ke area terlihat. Matriks 8 route Owner x 320x700
+dan 390x844 lulus 16/16 tanpa overflow, target di bawah 44 px, runtime error,
+active state ganda, atau kegagalan Escape/focus restore; regresi lintas
+mobile/tablet/desktop, landscape, 200%, forced-colors, role navigation,
+build/typecheck/design, dan audit dependency juga hijau. Status
+`SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+PRODUCTION_UNCHANGED_BY_S406 / BUSINESS_READY=false`; ini bukan evidence
+perangkat fisik.
+
 SagaBook S403 exact `9b9b30b9b68972014a1a1ab2a0730d955e882d76`
 memperbaiki shell/sidebar admin mobile yang sebelumnya kehilangan tema akibat
 portal di luar shell, memiliki active state ganda, dan overflow pada layar 320

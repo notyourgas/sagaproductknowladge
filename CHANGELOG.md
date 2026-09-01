@@ -1,5 +1,23 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-01 - SagaBook S406 mobile active-route context sync
+
+- Ringkasan: sidebar mobile kini otomatis membawa item route aktif ke area
+  terlihat saat drawer dibuka, menutup kondisi tab aktif benar secara semantik
+  tetapi warna/konteksnya tidak tampak karena posisi scroll.
+- Provenance: exact source
+  `f3d1ad30cba0849108efd07d70f07957cecb7b2c`, ditumpuk di atas S403 exact
+  `9b9b30b9b68972014a1a1ab2a0730d955e882d76`.
+- Evidence public-safe: 8 route Owner x 320x700 dan 390x844 lulus 16/16,
+  regresi browser 8 pass/10 expected skips, role smoke 3/3 (126 assertion),
+  build/typecheck/design 26/0, serta audit dependency nol. Ini bukan uji
+  perangkat fisik.
+- Klasifikasi `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED_BY_S406 /
+  BUSINESS_READY=false`.
+- Dokumen terdampak: Product, dossier, ledger/changelog SagaBook, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-09-01 - SagaBook S403 mobile shell/sidebar sync
 
 - Ringkasan: portal sidebar mobile kini mempunyai tema opaque mandiri, active

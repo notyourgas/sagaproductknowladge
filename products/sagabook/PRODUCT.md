@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
 Updated: 1 September 2026 WIB
-Evidence status: perbaikan shell/sidebar mobile S403 exact `9b9b30b9b68972014a1a1ab2a0730d955e882d76` sudah `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED_BY_S403`. Kandidat indeks history closing S402 exact `010b2c67025c51494a66b12b1e8b6778667660c6` juga belum dideploy. Snapshot production terakhir yang diverifikasi sebelum penutupan S403 adalah exact `fdf4155c0a294a6af8b41a819ba40e6d371f3ba8`, immutable release `20260901083148-fdf4155`; jalur release SagaBook lain harus diverifikasi terpisah sebelum klaim eksternal. Status keseluruhan `AUDIO_UAT_PENDING / PILOT_BLOCKED_BY_AUDIO_UAT / BUSINESS_READY=false`.
+Evidence status: perbaikan konteks route sidebar mobile S406 exact `f3d1ad30cba0849108efd07d70f07957cecb7b2c` sudah `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED_BY_S406` dan ditumpuk di atas S403 exact `9b9b30b9b68972014a1a1ab2a0730d955e882d76`. Kandidat indeks history closing S402 exact `010b2c67025c51494a66b12b1e8b6778667660c6` juga belum dideploy. Snapshot production terakhir yang diverifikasi sebelum penutupan S403 adalah exact `fdf4155c0a294a6af8b41a819ba40e6d371f3ba8`, immutable release `20260901083148-fdf4155`; jalur release SagaBook lain harus diverifikasi terpisah sebelum klaim eksternal. Status keseluruhan `AUDIO_UAT_PENDING / PILOT_BLOCKED_BY_AUDIO_UAT / BUSINESS_READY=false`.
 
 ## Tujuan dokumen
 
@@ -15,6 +15,17 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
+
+- S406 menutup kehilangan konteks warna/tab aktif ketika sidebar mobile dibuka
+  dari route yang berada jauh di bawah daftar. Item `aria-current="page"` kini
+  otomatis digulir ke area sidebar terlihat tanpa mengubah route, permission,
+  atau data. Matriks 8 route Owner pada 320x700 dan 390x844 lulus 16/16
+  kombinasi tanpa overflow, target sentuh di bawah 44 px, runtime error,
+  active state ganda, atau kegagalan Escape/focus restore. Regresi S403/S244
+  lulus 8 browser test dengan 10 expected project skips; role smoke 3/3 (126
+  assertion), build 5.137 modul, typecheck, design audit 26/0, serta audit
+  dependency nol juga lulus. Ini evidence emulasi browser, bukan perangkat
+  fisik; S406 belum dimerge atau dideploy.
 
 - S403 memperbaiki sidebar mobile admin yang kehilangan tema karena dirender
   melalui portal di luar shell dashboard. Panel sekarang selalu opaque,

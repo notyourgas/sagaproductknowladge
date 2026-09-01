@@ -7,6 +7,19 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- S406 exact `f3d1ad30cba0849108efd07d70f07957cecb7b2c`, ditumpuk di
+  atas S403, memastikan item route aktif yang berada jauh di bawah daftar
+  sidebar otomatis masuk viewport saat drawer mobile dibuka. Audit merah pada
+  `/admin/reports?tab=closing` membuktikan active item sebelumnya berada di
+  luar area terlihat; setelah koreksi, 8 route Owner x 2 viewport (320x700 dan
+  390x844) lulus tanpa overflow, target di bawah 44 px, runtime error, active
+  state ganda, atau kegagalan Escape/focus restore. Regresi browser S403/S244
+  lulus 8 dengan 10 expected skips, role smoke 3/3 (126 assertion), build
+  5.137 modul, typecheck, design audit 26/0, dan audit dependency nol.
+  Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED_BY_S406`; perangkat fisik dan `BUSINESS_READY` belum
+  lulus.
+
 - S403 exact `9b9b30b9b68972014a1a1ab2a0730d955e882d76` menutup
   akar masalah sidebar mobile: Sheet berbasis portal berada di luar shell
   bertema sehingga latar dapat transparan dan warna tab aktif rusak; rail

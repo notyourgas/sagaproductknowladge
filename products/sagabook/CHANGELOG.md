@@ -1,5 +1,26 @@
 # SagaBook Changelog
 
+## 2026-09-01 - S406 konteks route aktif sidebar mobile
+
+- Sebelum: pada route yang item navigasinya berada jauh di bawah daftar,
+  drawer selalu terbuka dari posisi teratas sehingga operator tidak melihat
+  warna/tab aktif walaupun `aria-current` sudah benar.
+- Setelah: ketika drawer mobile dibuka, item aktif yang berada di luar area
+  scroll otomatis dipusatkan di viewport sidebar; route, data, permission,
+  desktop rail, dan kontrak backend tidak berubah.
+- Evidence: audit merah `/admin/reports?tab=closing` membuktikan active item di
+  luar viewport; matriks hijau 8 route Owner x 320x700 dan 390x844 lulus 16/16
+  tanpa overflow, target di bawah 44 px, runtime error, active state ganda,
+  atau kegagalan Escape/focus restore. Regresi S403/S244 lulus 8 browser test
+  dengan 10 expected project skips; role smoke 3/3 (126 assertion), build
+  5.137 modul, typecheck, design audit 26/0, serta audit dependency nol.
+- Exact source `f3d1ad30cba0849108efd07d70f07957cecb7b2c` pada branch
+  `codex/s406-sagabook-mobile-route-shell`, ditumpuk di atas S403 exact
+  `9b9b30b9b68972014a1a1ab2a0730d955e882d76`.
+- Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED_BY_S406 /
+  BUSINESS_READY=false`; evidence perangkat fisik belum dilakukan.
+
 ## 2026-09-01 - S403 stabilisasi shell dan sidebar mobile admin
 
 - Sebelum: sidebar mobile dirender lewat portal di luar shell bertema sehingga

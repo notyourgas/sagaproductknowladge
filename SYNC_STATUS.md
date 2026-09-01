@@ -12,10 +12,33 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-09-01 19:52 WIB |
-| Branch aktif | `codex/s403-sagabook-mobile-shell-knowledge` |
+| Waktu pembaruan terakhir | 2026-09-01 20:28 WIB |
+| Branch aktif | `codex/s406-sagabook-mobile-active-context-knowledge` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `3cb43b27c803a4c7fad3b8c793d270399e9d8aa1` |
+| Baseline sebelum pembaruan | `0e5ea1b1e8205e3122055d5a2cb34c5bd77c8b34` |
+
+## SagaBook S406 mobile active-route context
+
+- Exact source `f3d1ad30cba0849108efd07d70f07957cecb7b2c` sudah
+  `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED_BY_S406` dan ditumpuk di atas S403.
+- Drawer mobile otomatis membawa item aktif ke area terlihat; 8 route Owner x
+  320x700 dan 390x844 lulus 16/16 tanpa overflow, target sentuh di bawah 44 px,
+  runtime error, active state ganda, atau kegagalan Escape/focus restore.
+- Regresi browser lintas device/role lulus 8 dengan 10 expected skips, role
+  smoke 3/3 (126 assertion), build/typecheck/design 26/0, dan audit dependency
+  nol. Evidence perangkat fisik belum dilakukan; `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi SagaBook S406
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook S403 mobile admin shell/sidebar
 

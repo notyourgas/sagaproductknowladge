@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-09-01 - SagaBook S406 mobile active-route context
+
+- Drawer mobile kini otomatis menampilkan item route aktif yang sebelumnya
+  dapat berada jauh di bawah area scroll, sehingga warna/tab konteks langsung
+  terlihat saat menu dibuka.
+- Matriks 8 route Owner x 320x700 dan 390x844 lulus 16/16; regresi lintas
+  mobile/tablet/desktop, landscape, 200%, forced-colors, role navigation,
+  build/typecheck/design, dan audit dependency juga hijau.
+- Exact source `f3d1ad30cba0849108efd07d70f07957cecb7b2c` berstatus
+  `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED_BY_S406 / BUSINESS_READY=false`; kandidat ditumpuk di
+  atas S403 dan evidence ini bukan uji perangkat fisik.
+
 ## 2026-09-01 - SagaBook S403 mobile admin shell/sidebar
 
 - Memperbaiki portal sidebar transparan, warna tab aktif, active state ganda,

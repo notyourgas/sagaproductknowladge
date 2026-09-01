@@ -2,6 +2,19 @@
 
 Evidence cut-off: 1 September 2026 WIB
 
+Mobile active-route context S406 exact
+`f3d1ad30cba0849108efd07d70f07957cecb7b2c` telah `CONFIRMED /
+SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+PRODUCTION_UNCHANGED_BY_S406`. Saat drawer mobile dibuka, item
+`aria-current="page"` yang berada di luar area scroll kini otomatis dibawa ke
+area terlihat. Matriks 8 route Owner x 320x700 dan 390x844 lulus 16/16 tanpa
+overflow, target di bawah 44 px, runtime error, active state ganda, atau
+kegagalan Escape/focus restore. Regresi browser S403/S244 lulus 8 dengan 10
+expected project skips; role smoke 3/3 (126 assertion), build 5.137 modul,
+typecheck, design audit 26/0, serta audit Composer/npm nol. Kandidat ditumpuk
+di atas S403, belum dimerge/dideploy, bukan evidence perangkat fisik, dan
+`BUSINESS_READY=false`.
+
 Mobile admin shell/sidebar S403 exact
 `9b9b30b9b68972014a1a1ab2a0730d955e882d76` telah `CONFIRMED /
 SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
