@@ -58,6 +58,25 @@ D0. Customer `f763fc19d8463cf2120387b0d06a57ffa5c868f7` dan Member
 `2eaa35334e59dc2656b98816db6bdc020c478a8f` lulus CI canonical-main, remote
 Chrome UAT, forced-RLS audit, backup/restore dan rollback rehearsal.
 
+Home dashboard finalization memakai Saga Member main
+`c2754dcf5fe5cccc10993b0eb50a10003949c32e` (PR #10) dan authority Customer
+Platform main `7b58d2ae62c564312d4a6adfc696c1a4f1a243eb` (PR #8). Customer Platform
+menghasilkan `tierProgress` dan daftar Points lot publik yang sudah dibatasi;
+raw lot ID, source ledger entry ID, dan referensi transaksi tidak masuk
+response member. Beranda menggunakan proyeksi itu untuk progress tier dan
+Points terdekat berakhir, lalu menampilkan shortcut Coffee/Studio/Reward/Quest,
+booking berikutnya, aktivitas terbaru, Member Code bertopeng, dan freshness
+disclosure tanpa menduplikasi kalkulasi bisnis di client.
+
+Customer PR/main CI `33679625555`/`33679725411` dan Member PR/main CI
+`33679617437`/`33679750600` lulus. Member full 40 test, browser 390x844 dan
+1440x900, zoom 200%, reduced motion, offline shell, WCAG 2.1 AA otomatis nol
+Critical/Serious, dependency audit, security headers, serta exact-asset
+protected Preview verification lulus. Status
+`SAGA_MEMBER_FINALIZATION_PREVIEW_VALIDATED`; Preview tetap terlindungi,
+Customer Platform baru belum dideploy, dan stable production D0/provider/API
+bisnis/alias/ring/NFC tidak berubah.
+
 Consent akun dan pemulihan sesi sekarang memiliki source authority pada
 Customer Platform main `fa3502c5f022305293f0c4142315bfe60cc455a7` (PR #7).
 Endpoint authenticated menyajikan onboarding state, menyimpan consent policy

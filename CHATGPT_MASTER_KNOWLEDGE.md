@@ -1,5 +1,21 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+Saga Member Home dashboard tervalidasi pada protected Vercel Preview dari exact
+main source `c2754dcf5fe5cccc10993b0eb50a10003949c32e` (PR #10). Home kini
+mobile-first dan scan-first untuk Coffee, Studio, Reward, serta Quest, dengan
+progress tier, Points terdekat berakhir, booking berikutnya, aktivitas terbaru,
+Member Code bertopeng, structural skeleton, dan freshness disclosure yang
+fail-closed. Customer Platform main
+`7b58d2ae62c564312d4a6adfc696c1a4f1a243eb` (PR #8) menjadi authority untuk
+`tierProgress` dan Points lot publik tanpa ID ledger atau referensi transaksi.
+Customer main CI `33679725411` dan Member main CI `33679750600` lulus; Member
+40 test, browser mobile/desktop, zoom 200%, reduced motion, offline shell, WCAG
+otomatis nol Critical/Serious, dependency audit, security headers, dan
+exact-asset checks lulus. Status `CONFIRMED /
+SAGA_MEMBER_FINALIZATION_PREVIEW_VALIDATED / PRODUCTION_UNCHANGED /
+BUSINESS_READY=false`: Customer Platform baru belum dideploy dan stable
+production D0/provider/API bisnis/alias/ring/NFC tetap tidak berubah.
+
 Saga Member consent dan session-recovery slice tervalidasi pada protected
 Vercel Preview. Customer Platform main
 `fa3502c5f022305293f0c4142315bfe60cc455a7` (PR #7) menjadi authority untuk

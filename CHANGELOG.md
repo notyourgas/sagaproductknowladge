@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-03 - Saga Member Home dashboard preview sync
+
+- Menyinkronkan Customer Platform main
+  `7b58d2ae62c564312d4a6adfc696c1a4f1a243eb`, Saga Member main
+  `c2754dcf5fe5cccc10993b0eb50a10003949c32e`, serta CI PR/main kedua repo.
+- Proyeksi tier/Points yang server-owned dan Home scan-first mobile/desktop
+  tervalidasi bersama 40 Member test, WCAG otomatis nol Critical/Serious,
+  zoom 200%, reduced motion, offline shell, audit, dan exact-asset checks.
+- Klasifikasi `CONFIRMED / SAGA_MEMBER_FINALIZATION_PREVIEW_VALIDATED /
+  PRODUCTION_UNCHANGED / BUSINESS_READY=false`; backend baru belum dideploy dan
+  stable production D0/provider/alias/ring/NFC tidak berubah.
+- Dokumen terdampak: Saga Platform product/dossier/changelog, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-09-03 - Saga Member consent dan session recovery preview sync
 
 - Menyinkronkan Customer Platform main
