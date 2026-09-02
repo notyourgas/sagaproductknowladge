@@ -13,9 +13,38 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Field | Nilai |
 |---|---|
 | Waktu pembaruan terakhir | 2026-09-02 WIB |
-| Branch aktif | `codex/s415-sagabook-addon-timezone-knowledge` |
+| Branch aktif | `codex/knowledge-sagabook-manual-booking-lifecycle-20260902` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `b7b6384` |
+| Baseline sebelum pembaruan | `ba43a65` |
+
+## SagaBook manual-booking operational lifecycle
+
+- Exact source `c71ac5466e13f2a75903cc569bba0d9882933ea1` memisahkan
+  komitmen jadwal manual dari expiry checkout web. Booking manual unpaid/pending
+  tetap mempunyai permanent lock dan terlihat pada `Hari Ini`.
+- Scheduler, payment-expiry service, dan lazy availability cleanup menjaga
+  boundary yang sama; bukti transfer tetap menunggu verifikasi dan web expiry
+  tidak berubah.
+- PR #100/#101, dua full CI, MySQL 8.4, browser/visual, focused lifecycle 44/44
+  (322 assertion), dan regression web 3/3 (13 assertion) lulus.
+- Production aktif pada `20260902051946-c71ac54`; rollback
+  `20260902045540-e37520d` tersedia. Backup terenkripsi, disposable restore,
+  exact artifact, atomic activation, dan public smoke lulus tanpa exception.
+- Satu record terdampak dipulihkan secara conflict-checked dan audit-logged;
+  tidak ada PII atau kode booking pada knowledge publik.
+- Status `CONFIRMED / SOURCE_PUSHED / CI_PASSED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi manual-booking lifecycle
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook Add-on OTS tenant-timezone production
 

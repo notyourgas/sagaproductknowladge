@@ -1,5 +1,27 @@
 # SagaBook Changelog
 
+## 2026-09-02 - Booking manual tidak mengikuti expiry checkout web
+
+- Sebelum: direct manual booking yang belum lunas mewarisi payment hold pendek;
+  scheduler atau lazy cleanup availability dapat membatalkannya sebagai
+  expired dan menghilangkannya dari `Hari Ini`.
+- Setelah: booking manual menjadi komitmen jadwal permanen, independen dari
+  status pembayaran. Scheduler, payment-expiry service, serta cleanup kalender
+  mengonversi hold legacy dan menjaga permanent slot lock. Bukti transfer tetap
+  menunggu verifikasi; booking web yang hold-nya expired tetap dibatalkan.
+- Exact source `c71ac5466e13f2a75903cc569bba0d9882933ea1` melalui PR #100
+  dan #101. Dua putaran CI lengkap, MySQL 8.4, browser/visual, focused lifecycle
+  44/44 (322 assertion), serta regression web 3/3 (13 assertion) lulus.
+- Production aktif pada immutable release `20260902051946-c71ac54`; rollback
+  `20260902045540-e37520d` tersedia. Fresh encrypted backup, checksum,
+  disposable restore, exact artifact, atomic activation, dan public smoke
+  lulus tanpa release exception.
+- Satu record terdampak dipulihkan secara conflict-checked dan audit-logged ke
+  `pending_verification`; tidak ditandai paid dan tidak ada PII atau kode
+  booking yang dipublikasikan.
+- Status `CONFIRMED / SOURCE_PUSHED / CI_PASSED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+
 ## 2026-09-02 - Add-on OTS mengikuti zona waktu tenant
 
 - Sebelum: laporan dapat menampilkan jam Add-on OTS dari `created_at` UTC

@@ -2,6 +2,20 @@
 
 Evidence cut-off: 2 September 2026 WIB
 
+Manual-booking operational lifecycle exact source
+`c71ac5466e13f2a75903cc569bba0d9882933ea1` telah `CONFIRMED /
+SOURCE_PUSHED / CI_PASSED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
+Direct manual booking dan approved request mempertahankan permanent schedule
+lock ketika pembayaran masih unpaid/pending; scheduler, payment expiry, dan
+availability cleanup tidak lagi menerapkan expiry checkout web pada source
+manual. `Hari Ini` tetap menampilkan sesi operasional manual, sedangkan bukti
+transfer tetap memerlukan verifikasi dan tidak otomatis paid. Web expiry lama
+tetap lulus regression. PR #100/#101, focused lifecycle 44/44 (322 assertion),
+web regression 3/3 (13 assertion), dua full CI, MySQL 8.4, dan browser/visual
+lulus. Production aktif pada `20260902051946-c71ac54`, rollback
+`20260902045540-e37520d`; satu record terdampak dipulihkan tanpa publikasi PII.
+`BUSINESS_READY=false` karena gate UAT audio/pilot produk tetap terpisah.
+
 Add-on OTS tenant-timezone exact source
 `6da06fed08df020b4acab4a77c6ad3215ea32dad` telah `CONFIRMED /
 SOURCE_PUSHED / CI_PASSED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.

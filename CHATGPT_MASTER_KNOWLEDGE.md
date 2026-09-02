@@ -2084,6 +2084,22 @@ service/journal, dan public/security smoke 3/3 lulus. Release
 Authenticated staff UAT dan studio pilot tetap residual;
 `BUSINESS_READY=false`.
 
+SagaBook manual-booking operational lifecycle exact source
+`c71ac5466e13f2a75903cc569bba0d9882933ea1` berstatus `CONFIRMED /
+SOURCE_PUSHED / CI_PASSED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
+Booking yang dibuat operator atau berasal dari approved manual request adalah
+komitmen jadwal permanen walau pembayaran masih unpaid/pending. Scheduler,
+payment-expiry service, dan lazy cleanup availability mempertahankan source
+manual, mengonversi hold legacy, serta menjaga permanent booking lock. Sesi
+tetap terlihat pada `Hari Ini`; bukti transfer masih harus diverifikasi dan
+tidak otomatis paid. Checkout web tetap memakai expiry hold lama. PR #100 dan
+#101, dua full CI, MySQL 8.4, browser/visual, focused lifecycle 44/44 (322
+assertion), dan web regression 3/3 (13 assertion) lulus. Immutable release
+`20260902051946-c71ac54` aktif dengan rollback `20260902045540-e37520d`;
+backup/restore, exact artifact, atomic activation, serta public smoke lulus
+tanpa exception. Satu record terdampak dipulihkan secara atomik dan audit-logged
+tanpa publikasi PII; `BUSINESS_READY=false`.
+
 SagaBook override jadwal Manual Booking S290 exact source
 `0dda9350656d4454bfeed3744c35a3b7ff7673fa` berstatus `CONFIRMED / PUSHED /
 UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /
