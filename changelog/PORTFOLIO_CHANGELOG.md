@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-09-02 - SagaBook S413 mobile-shell Chromium acceptance
+
+- Regression baru menjaga root 320/320, drawer contained, satu active state,
+  warna aktif stabil, target 44 px, Escape/focus restore, dan nol runtime error
+  pada desktop Chromium dengan viewport CSS mobile.
+- Matriks emulasi 320–430 px, landscape, effective 200%, forced-colors,
+  reduced-motion, desktop 1440 px, route Owner, dan permission-negative Staff
+  tetap hijau; full Feature 1.351/1.351 (15.133 assertion) dan audit dependency
+  nol juga lulus.
+- Exact source `605a78433c62cbcc31f0fc7a7ba7a6de0cdadddf` berstatus
+  `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED_BY_S413 / BUSINESS_READY=false`; ini bukan uji perangkat
+  fisik dan belum dideploy.
+
 ## 2026-09-02 - Saga Member all-goals local execution started
 
 - Master execution plan dan prompt Goal 0–6 tersedia dengan boundary Rp0.
@@ -110,6 +124,53 @@
   PRODUCTION_UNCHANGED / BUSINESS_READY=false`; Goal 3 belum complete.
 - Independent review, isolated external runtime, provider, commissioning,
   controlled pilot, dan production tetap blocker terpisah.
+## 2026-09-01 - SagaBook S408 mobile shell exact-main reconciliation
+
+- Merekonsiliasi koreksi sidebar S403+S406 ke exact main terbaru tanpa
+  kehilangan retensi booking manual approved-unpaid atau alur `Perlu ACC`.
+- Full backend 1.351 test/15.133 assertion, browser final mobile 10/10 dengan
+  4 expected skip, build/typecheck/design, dan audit dependency hijau.
+- Exact source `bf75ba90dc3df9cbfebfb363a6b61d5b6cd41f07` berstatus
+  `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED_BY_S408 / BUSINESS_READY=false`.
+
+## 2026-09-01 - SagaBook S407 mobile shell main integration
+
+- Mengintegrasikan koreksi sidebar S403+S406 ke exact main Manual Booking
+  tanpa kehilangan menu `Perlu ACC`, form OTS/WhatsApp, atau konfirmasi
+  kapasitas.
+- Exact-candidate browser 15 pass/12 expected skips, backend 21 test/255
+  assertion, build/typecheck/design, dan audit dependency hijau.
+- Exact source `566de9ee4d15df4a7c85325b6dd8c5f769941470` berstatus
+  `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED_BY_S407 / BUSINESS_READY=false`.
+
+## 2026-09-01 - SagaBook S406 mobile active-route context
+
+- Drawer mobile kini otomatis menampilkan item route aktif yang sebelumnya
+  dapat berada jauh di bawah area scroll, sehingga warna/tab konteks langsung
+  terlihat saat menu dibuka.
+- Matriks 8 route Owner x 320x700 dan 390x844 lulus 16/16; regresi lintas
+  mobile/tablet/desktop, landscape, 200%, forced-colors, role navigation,
+  build/typecheck/design, dan audit dependency juga hijau.
+- Exact source `f3d1ad30cba0849108efd07d70f07957cecb7b2c` berstatus
+  `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED_BY_S406 / BUSINESS_READY=false`; kandidat ditumpuk di
+  atas S403 dan evidence ini bukan uji perangkat fisik.
+
+## 2026-09-01 - SagaBook S403 mobile admin shell/sidebar
+
+- Memperbaiki portal sidebar transparan, warna tab aktif, active state ganda,
+  dan overflow Settings/Booking pada layar 320 px tanpa mengubah kontrak
+  backend, data, atau permission.
+- Emulasi browser 320x700 sampai 430x932, landscape, effective 200%,
+  forced-colors, reduced-motion, dan desktop lulus; browser regression 7 pass,
+  role smoke 3/3 (126 assertion), build/typecheck/design audit, dan audit
+  dependency nol hijau.
+- Exact source `9b9b30b9b68972014a1a1ab2a0730d955e882d76` berstatus
+  `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED_BY_S403 / BUSINESS_READY=false`. Pengujian memakai
+  viewport emulation, bukan perangkat fisik.
 
 ## 2026-09-01 - COYABAG guarded shipment cancellation production
 

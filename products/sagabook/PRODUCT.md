@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 1 September 2026 WIB
-Evidence status: SagaBook production aktif pada exact `fdf4155c0a294a6af8b41a819ba40e6d371f3ba8`, immutable release `20260901083148-fdf4155`. Kandidat indeks history closing S402 exact `010b2c67025c51494a66b12b1e8b6778667660c6` sudah `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; production belum memakai migration ini. Status keseluruhan `AUDIO_UAT_PENDING / PILOT_BLOCKED_BY_AUDIO_UAT / BUSINESS_READY=false`.
+Updated: 2 September 2026 WIB
+Evidence status: kandidat mobile shell/sidebar S413 exact `605a78433c62cbcc31f0fc7a7ba7a6de0cdadddf` sudah `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED_BY_S413`. Kandidat ini membawa koreksi S408 serta acceptance harness Chromium pada viewport 320 px dan lock dependency tanpa advisory. Production aktif tetap exact `9ebdcf112f312f905c4213be9da1b80cf04e0ad3`, release `20260901155248-9ebdcf1`; status keseluruhan `AUDIO_UAT_PENDING / PILOT_BLOCKED_BY_AUDIO_UAT / BUSINESS_READY=false`.
 
 ## Tujuan dokumen
 
@@ -15,6 +15,65 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
+
+- S413 menutup gap acceptance yang sebelumnya membuat proyek desktop Chromium
+  tidak menguji shell pada viewport CSS mobile. Harness baru memverifikasi root
+  320/320 tanpa overflow, drawer contained, tepat satu tab aktif berwarna
+  `#0f6fff` di atas `#e7f0ff`, target sentuh minimal 44 px, Escape/focus
+  restore, serta nol console/page/request error. Matriks gabungan tetap lulus
+  pada 320, 360, 375, 390, 393, 412, dan 430 px, landscape, effective 200%,
+  forced-colors, reduced-motion, desktop 1440 px, delapan route Owner, dan
+  permission-negative Staff. Full Feature lulus 1.351 test/15.133 assertion;
+  typecheck, design audit 26/0, build, Composer/npm audit nol, dan post-build
+  browser 3/3 hijau. Ini emulasi browser, bukan uji perangkat fisik. Tidak ada
+  API, database, migration, permission, release lock, atau production yang
+  berubah.
+
+- S408 merekonsiliasi koreksi shell/sidebar S403+S406 ke exact main terbaru
+  yang sudah membawa retensi booking manual approved-unpaid. Tidak ada konflik
+  tree dan alur `Perlu ACC`, OTS/WhatsApp, konfirmasi kapasitas, serta sesi
+  approved-unpaid tetap lulus. Full backend exact-candidate lulus 1.351 test
+  (15.133 assertion); browser gabungan memberi 28 pass/12 expected skip dengan
+  dua timeout lingkungan, lalu kedua kasus lulus terisolasi dan subset mobile
+  final lulus 10/10 dengan 4 expected skip. Build 5.137 modul, typecheck,
+  design audit 26/0, serta audit dependency Composer/npm nol. Tidak ada
+  perubahan database, API, permission, payload, integrasi, release lock, atau
+  production; perangkat fisik dan guarded release masih gate.
+
+- S407 mengintegrasikan koreksi shell/sidebar S403 dan konteks route aktif
+  S406 ke main Manual Booking terbaru. Menu `Perlu ACC`, form OTS/WhatsApp,
+  dan konfirmasi kapasitas tetap utuh; sidebar tetap opaque, tab aktif tunggal,
+  serta item aktif otomatis masuk area terlihat. Gate exact-candidate lulus 15
+  browser test dengan 12 expected project skips, termasuk route matrix,
+  mobile/tablet/desktop, landscape, effective 200%, forced-colors,
+  reduced-motion, dan alur Manual Booking. Role+Manual Booking backend lulus
+  21 test (255 assertion), build 5.137 modul, typecheck, design audit 26/0,
+  serta audit dependency nol. Tidak ada perubahan database, API, permission,
+  integrasi, release lock, atau production.
+
+- S406 menutup kehilangan konteks warna/tab aktif ketika sidebar mobile dibuka
+  dari route yang berada jauh di bawah daftar. Item `aria-current="page"` kini
+  otomatis digulir ke area sidebar terlihat tanpa mengubah route, permission,
+  atau data. Matriks 8 route Owner pada 320x700 dan 390x844 lulus 16/16
+  kombinasi tanpa overflow, target sentuh di bawah 44 px, runtime error,
+  active state ganda, atau kegagalan Escape/focus restore. Regresi S403/S244
+  lulus 8 browser test dengan 10 expected project skips; role smoke 3/3 (126
+  assertion), build 5.137 modul, typecheck, design audit 26/0, serta audit
+  dependency nol juga lulus. Ini evidence emulasi browser, bukan perangkat
+  fisik; S406 belum dimerge atau dideploy.
+
+- S403 memperbaiki sidebar mobile admin yang kehilangan tema karena dirender
+  melalui portal di luar shell dashboard. Panel sekarang selalu opaque,
+  warna tab aktif konsisten, hanya satu item memakai status aktif, dan navigasi
+  Owner/Staff tetap role-aware. Kontainmen lebar, safe-area, target sentuh 44
+  px, focus trap, Escape/focus restore, reduced-motion, forced-colors, dan
+  no-overflow divalidasi dengan emulasi viewport 320x700 sampai 430x932,
+  landscape 844x390, effective 200%, serta desktop 1440x900. Browser regression
+  7 pass dengan 5 expected project skips, role smoke 3/3 (126 assertion),
+  build 5.137 modul, typecheck, design audit 26/0, dan audit dependency nol
+  lulus. Ini bukti emulasi browser, bukan uji perangkat fisik; tidak ada API,
+  backend, database, migration, permission rule, release lock, atau production
+  yang berubah.
 
 - S402 memperbaiki indeks baca history closing lintas cabang setelah MySQL
   8.4.9 membuktikan kandidat prefix awal tidak dipilih optimizer dan masih

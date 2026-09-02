@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-02 - SagaBook S413 mobile-shell Chromium acceptance sync
+
+- Ringkasan: acceptance baru menutup gap project coverage untuk shell mobile
+  pada desktop Chromium dengan viewport CSS 320 px dan lock dependency
+  diselaraskan ke versi tanpa advisory.
+- Exact source `605a78433c62cbcc31f0fc7a7ba7a6de0cdadddf`; full Feature
+  1.351/1.351 (15.133 assertion), lintas perangkat/rute, post-build browser,
+  typecheck/build/design 26/0, dan audit dependency hijau.
+- Klasifikasi `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED_BY_S413 /
+  BUSINESS_READY=false`; evidence perangkat fisik dan guarded release belum.
+- Dokumen terdampak: Product, dossier, ledger/changelog SagaBook, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-09-02 - Saga Member all-goals local execution sync
 
 - `DEC-137` mencatat dimulainya eksekusi Goal 0–6 dari aplikasi lokal terpadu
@@ -127,6 +141,71 @@
   PILOT_NOT_STARTED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
 - Dokumen terdampak: Saga Platform, SagaOPS, portfolio, master knowledge,
   decision log, root changelog, dan sync status.
+## 2026-09-01 - SagaBook S408 mobile exact-main reconciliation sync
+
+- Ringkasan: S403+S406 direkonsiliasi ke exact main terbaru tanpa kehilangan
+  retensi booking manual approved-unpaid atau alur `Perlu ACC`.
+- Provenance: exact candidate
+  `bf75ba90dc3df9cbfebfb363a6b61d5b6cd41f07`, baseline main
+  `9ebdcf112f312f905c4213be9da1b80cf04e0ad3`.
+- Evidence public-safe: full backend 1.351 test/15.133 assertion, subset mobile
+  final 10 pass/4 expected skip, build/typecheck/design 26/0, serta audit
+  dependency nol.
+- Klasifikasi `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED_BY_S408 /
+  BUSINESS_READY=false`.
+- Dokumen terdampak: Product, dossier, ledger/changelog SagaBook, portfolio,
+  master knowledge, root changelog, dan sync status.
+
+## 2026-09-01 - SagaBook S407 mobile shell main-integration sync
+
+- Ringkasan: S403+S406 diintegrasikan ke exact main Manual Booking tanpa
+  kehilangan menu `Perlu ACC` atau alur OTS/WhatsApp/capacity confirmation.
+- Provenance: exact candidate
+  `566de9ee4d15df4a7c85325b6dd8c5f769941470`, baseline main
+  `88fd51788e3de8950d6eac95a46dc87ece84d1ae`.
+- Evidence public-safe: browser 15 pass/12 expected skips, backend 21 test/255
+  assertion, build/typecheck/design 26/0, serta audit dependency nol.
+- Klasifikasi `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED_BY_S407 /
+  BUSINESS_READY=false`.
+- Dokumen terdampak: Product, dossier, ledger/changelog SagaBook, portfolio,
+  master knowledge, root changelog, dan sync status.
+
+## 2026-09-01 - SagaBook S406 mobile active-route context sync
+
+- Ringkasan: sidebar mobile kini otomatis membawa item route aktif ke area
+  terlihat saat drawer dibuka, menutup kondisi tab aktif benar secara semantik
+  tetapi warna/konteksnya tidak tampak karena posisi scroll.
+- Provenance: exact source
+  `f3d1ad30cba0849108efd07d70f07957cecb7b2c`, ditumpuk di atas S403 exact
+  `9b9b30b9b68972014a1a1ab2a0730d955e882d76`.
+- Evidence public-safe: 8 route Owner x 320x700 dan 390x844 lulus 16/16,
+  regresi browser 8 pass/10 expected skips, role smoke 3/3 (126 assertion),
+  build/typecheck/design 26/0, serta audit dependency nol. Ini bukan uji
+  perangkat fisik.
+- Klasifikasi `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED_BY_S406 /
+  BUSINESS_READY=false`.
+- Dokumen terdampak: Product, dossier, ledger/changelog SagaBook, portfolio,
+  master knowledge, root changelog, dan sync status.
+
+## 2026-09-01 - SagaBook S403 mobile shell/sidebar sync
+
+- Ringkasan: portal sidebar mobile kini mempunyai tema opaque mandiri, active
+  state tunggal, navigasi Owner/Staff role-aware, dan kontainmen narrow-screen
+  untuk Settings/Booking.
+- Provenance: exact source
+  `9b9b30b9b68972014a1a1ab2a0730d955e882d76`.
+- Evidence public-safe: emulasi 320x700 sampai 430x932, landscape, effective
+  200%, forced-colors, reduced-motion, dan desktop; browser regression 7 pass,
+  role smoke 3/3 (126 assertion), build/typecheck/design 26/0, serta audit
+  dependency nol. Ini bukan uji perangkat fisik.
+- Klasifikasi `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED_BY_S403 /
+  BUSINESS_READY=false`.
+- Dokumen terdampak: Product, dossier, ledger/changelog SagaBook, portfolio,
+  master knowledge, root changelog, dan sync status.
 
 ## 2026-09-01 - COYABAG guarded shipment cancellation production sync
 

@@ -12,10 +12,33 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-09-02 04:44 WIB |
-| Branch aktif | `main` |
+| Waktu pembaruan terakhir | 2026-09-02 09:45 WIB |
+| Branch aktif | `codex/s413-sagabook-mobile-shell-knowledge` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `c624755` |
+| Baseline sebelum pembaruan | `origin/main` + SagaBook S408 knowledge |
+
+## SagaBook S413 mobile-shell Chromium acceptance
+
+- Exact source `605a78433c62cbcc31f0fc7a7ba7a6de0cdadddf` sudah pushed dan
+  local-validated; production tetap exact `9ebdcf112f312f905c4213be9da1b80cf04e0ad3`
+  pada release `20260901155248-9ebdcf1`.
+- Full Feature 1.351/1.351 (15.133 assertion), matriks browser lintas ukuran,
+  route dan role, post-build browser, typecheck/build/design 26/0, serta audit
+  dependency nol lulus.
+- Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED_BY_S413 /
+  BUSINESS_READY=false`; physical-device UAT, merge, dan guarded release belum.
+
+## File yang berubah pada sinkronisasi SagaBook S413
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## Saga Member all-goals local execution
 
@@ -255,6 +278,97 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `DECISIONS.md`
+| Waktu pembaruan terakhir | 2026-09-01 23:53 WIB |
+| Branch aktif | `codex/s408-sagabook-mobile-main-reconcile-knowledge` |
+| Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
+| Baseline sebelum pembaruan | `9ce76f791e7d10ce42b4ca0681e4d9d3db962603` |
+
+## SagaBook S408 mobile shell exact-main reconciliation
+
+- Exact candidate `bf75ba90dc3df9cbfebfb363a6b61d5b6cd41f07`
+  menggabungkan S403+S406 di atas main `9ebdcf1…` tanpa menghilangkan retensi
+  booking manual approved-unpaid atau menu `Perlu ACC`.
+- Full backend 1.351 test/15.133 assertion; subset mobile final 10 pass/4
+  expected skip; build/typecheck/design 26/0 dan audit dependency nol.
+- Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED_BY_S408 / BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi SagaBook S408
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
+
+## SagaBook S407 mobile shell main integration
+
+- Exact candidate `566de9ee4d15df4a7c85325b6dd8c5f769941470`
+  menggabungkan S403+S406 di atas main `88fd517…` tanpa menghilangkan Manual
+  Booking atau menu `Perlu ACC`.
+- Browser exact-candidate 15 pass/12 expected skips; backend role+Manual
+  Booking 21 test/255 assertion; build/typecheck/design 26/0 dan audit
+  dependency nol.
+- Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED_BY_S407 / BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi SagaBook S407
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
+
+## SagaBook S406 mobile active-route context
+
+- Exact source `f3d1ad30cba0849108efd07d70f07957cecb7b2c` sudah
+  `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED_BY_S406` dan ditumpuk di atas S403.
+- Drawer mobile otomatis membawa item aktif ke area terlihat; 8 route Owner x
+  320x700 dan 390x844 lulus 16/16 tanpa overflow, target sentuh di bawah 44 px,
+  runtime error, active state ganda, atau kegagalan Escape/focus restore.
+- Regresi browser lintas device/role lulus 8 dengan 10 expected skips, role
+  smoke 3/3 (126 assertion), build/typecheck/design 26/0, dan audit dependency
+  nol. Evidence perangkat fisik belum dilakukan; `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi SagaBook S406
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
+
+## SagaBook S403 mobile admin shell/sidebar
+
+- Exact source `9b9b30b9b68972014a1a1ab2a0730d955e882d76` sudah
+  `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED_BY_S403`.
+- Portal sidebar sekarang opaque, tab aktif tunggal dan role-aware, serta
+  overflow layar 320 px ditutup. Emulasi browser lintas ukuran, landscape,
+  effective 200%, forced-colors, reduced-motion, dan desktop lulus.
+- Browser regression 7 pass/5 expected project skips, role smoke 3/3 (126
+  assertion), build 5.137 modul, typecheck, design audit 26/0, dan audit
+  dependency nol lulus. Ini bukan uji perangkat fisik; `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi SagaBook S403
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
 - `CHANGELOG.md`
 - `SYNC_STATUS.md`
 

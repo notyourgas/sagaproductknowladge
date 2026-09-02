@@ -7,6 +7,68 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- S413 exact `605a78433c62cbcc31f0fc7a7ba7a6de0cdadddf`
+  menambah regression Chromium desktop pada viewport CSS 320 px di atas S408
+  dan menyelaraskan lock dependency ke versi tanpa advisory. Root terbukti
+  320/320, drawer contained, tab aktif tunggal dengan warna stabil, target
+  sentuh minimal 44 px, Escape/focus restore, dan nol runtime error. Matriks
+  emulasi 320–430 px, landscape, effective 200%, forced-colors,
+  reduced-motion, desktop, route Owner, serta permission-negative Staff tetap
+  hijau. Full Feature 1.351/1.351 (15.133 assertion), build/typecheck/design
+  26/0, dan audit dependency nol lulus. Ini bukan physical-device UAT; status
+  `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED_BY_S413 / BUSINESS_READY=false`.
+
+- S408 exact `bf75ba90dc3df9cbfebfb363a6b61d5b6cd41f07`
+  merekonsiliasi tree mobile S403+S406 di atas exact main
+  `9ebdcf112f312f905c4213be9da1b80cf04e0ad3` yang sudah membawa retensi
+  booking manual approved-unpaid. Full backend lulus 1.351 test/15.133
+  assertion; browser final mobile 10/10 dengan 4 expected skip, build 5.137
+  modul, typecheck, design audit 26/0, dan audit dependency nol. Scope database,
+  API, permission, payload, dan integrasi tidak berubah; dampak server hanya
+  asset frontend build. Status `SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED_BY_S408 /
+  BUSINESS_READY=false`.
+
+- S407 exact `566de9ee4d15df4a7c85325b6dd8c5f769941470`
+  mengintegrasikan tree S403+S406 di atas exact main Manual Booking
+  `88fd51788e3de8950d6eac95a46dc87ece84d1ae`. Cherry-pick bersih dan
+  screenshot final membuktikan menu `Perlu ACC` tetap ada, tab aktif tetap
+  tunggal, serta route rendah tetap otomatis terlihat. Gate browser lulus 15
+  dengan 12 expected project skips; backend role+Manual Booking 21 test (255
+  assertion), build 5.137 modul, typecheck, design audit 26/0, dan audit
+  dependency nol. Scope database/data flow tidak berubah; dampak server hanya
+  asset frontend build, tanpa endpoint/payload baru. Status `SOURCE_PUSHED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED_BY_S407 /
+  BUSINESS_READY=false`.
+
+- S406 exact `f3d1ad30cba0849108efd07d70f07957cecb7b2c`, ditumpuk di
+  atas S403, memastikan item route aktif yang berada jauh di bawah daftar
+  sidebar otomatis masuk viewport saat drawer mobile dibuka. Audit merah pada
+  `/admin/reports?tab=closing` membuktikan active item sebelumnya berada di
+  luar area terlihat; setelah koreksi, 8 route Owner x 2 viewport (320x700 dan
+  390x844) lulus tanpa overflow, target di bawah 44 px, runtime error, active
+  state ganda, atau kegagalan Escape/focus restore. Regresi browser S403/S244
+  lulus 8 dengan 10 expected skips, role smoke 3/3 (126 assertion), build
+  5.137 modul, typecheck, design audit 26/0, dan audit dependency nol.
+  Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED_BY_S406`; perangkat fisik dan `BUSINESS_READY` belum
+  lulus.
+
+- S403 exact `9b9b30b9b68972014a1a1ab2a0730d955e882d76` menutup
+  akar masalah sidebar mobile: Sheet berbasis portal berada di luar shell
+  bertema sehingga latar dapat transparan dan warna tab aktif rusak; rail
+  desktop tersembunyi juga masih menyumbang active state ganda. Portal sekarang
+  memiliki tema opaque mandiri, hanya satu pohon navigasi dirender sesuai
+  viewport, dan Settings/Booking diberi kontainmen narrow-screen. Emulasi
+  browser mencakup 320x700, 360x800, 375x667, 390x844, 393x873, 412x915,
+  430x932, landscape 844x390, effective 200%, forced-colors, reduced-motion,
+  dan desktop 1440x900. Browser regression 7 pass/5 expected skips, role smoke
+  3/3 (126 assertion), build 5.137 modul, typecheck, design audit 26/0, dan
+  audit dependency nol lulus. Status `SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED_BY_S403`; ini bukan bukti
+  perangkat fisik dan `BUSINESS_READY=false`.
+
 - S402 exact candidate `010b2c67025c51494a66b12b1e8b6778667660c6`
   menutup gap query history closing lintas cabang pada MySQL. Kandidat awal
   dengan prefix tenant/date terbukti tidak dipilih optimizer dan masih

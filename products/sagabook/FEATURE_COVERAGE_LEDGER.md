@@ -1,6 +1,74 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 1 September 2026 WIB
+Evidence cut-off: 2 September 2026 WIB
+
+Mobile-shell Chromium overflow acceptance S413 exact
+`605a78433c62cbcc31f0fc7a7ba7a6de0cdadddf` telah `CONFIRMED /
+SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+PRODUCTION_UNCHANGED_BY_S413`. Gap project coverage ditutup dengan regression
+desktop Chromium pada viewport CSS 320 px: root tetap 320/320, drawer contained,
+active state tunggal dengan warna berbeda, target minimal 44 px, Escape/focus
+restore, dan nol runtime error. Matriks emulasi 320–430 px, landscape,
+effective 200%, forced-colors, reduced-motion, desktop 1440 px, route Owner,
+serta permission-negative Staff tetap hijau. Full Feature 1.351/1.351 (15.133
+assertion), browser gabungan 5 pass/10 expected skip, post-build 3 pass/1
+expected skip, typecheck, build, design 26/0, dan audit dependency nol lulus.
+Evidence bukan uji perangkat fisik; merge, guarded release, activation, dan
+`BUSINESS_READY` tetap belum.
+
+Mobile shell exact-main reconciliation S408 exact
+`bf75ba90dc3df9cbfebfb363a6b61d5b6cd41f07` telah `CONFIRMED /
+SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+PRODUCTION_UNCHANGED_BY_S408`. S403+S406 direkonsiliasi ke exact main
+`9ebdcf112f312f905c4213be9da1b80cf04e0ad3`; navigasi `Perlu ACC`, alur
+Manual Booking, dan retensi sesi approved-unpaid tetap utuh. Full backend
+lulus 1.351 test (15.133 assertion); browser gabungan 28 pass/12 expected skip
+dengan dua timeout lingkungan yang lulus 2/2 terisolasi, lalu subset mobile
+final lulus 10/10 dengan 4 expected skip. Build 5.137 modul, typecheck, design
+audit 26/0, serta audit Composer/npm nol. Tidak ada database, API, permission,
+payload, integrasi, lock, atau production yang berubah; physical-device UAT
+dan guarded release masih gate, `BUSINESS_READY=false`.
+
+Mobile shell main integration S407 exact
+`566de9ee4d15df4a7c85325b6dd8c5f769941470` telah `CONFIRMED /
+SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+PRODUCTION_UNCHANGED_BY_S407`. S403+S406 diintegrasikan ke exact main
+`88fd51788e3de8950d6eac95a46dc87ece84d1ae`; navigasi `Perlu ACC` dan alur
+Manual Booking tetap utuh. Exact-candidate browser regression lulus 15 dengan
+12 expected project skips, termasuk 8 route x 320x700/390x844,
+mobile/tablet/desktop, landscape, effective 200%, forced-colors,
+reduced-motion, dan Manual Booking. Backend role+Manual Booking lulus 21 test
+(255 assertion), build 5.137 modul, typecheck, design audit 26/0, serta audit
+Composer/npm nol. Tidak ada database, API, permission, integrasi, lock, atau
+production yang berubah; physical-device UAT dan guarded release masih gate,
+`BUSINESS_READY=false`.
+
+Mobile active-route context S406 exact
+`f3d1ad30cba0849108efd07d70f07957cecb7b2c` telah `CONFIRMED /
+SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+PRODUCTION_UNCHANGED_BY_S406`. Saat drawer mobile dibuka, item
+`aria-current="page"` yang berada di luar area scroll kini otomatis dibawa ke
+area terlihat. Matriks 8 route Owner x 320x700 dan 390x844 lulus 16/16 tanpa
+overflow, target di bawah 44 px, runtime error, active state ganda, atau
+kegagalan Escape/focus restore. Regresi browser S403/S244 lulus 8 dengan 10
+expected project skips; role smoke 3/3 (126 assertion), build 5.137 modul,
+typecheck, design audit 26/0, serta audit Composer/npm nol. Kandidat ditumpuk
+di atas S403, belum dimerge/dideploy, bukan evidence perangkat fisik, dan
+`BUSINESS_READY=false`.
+
+Mobile admin shell/sidebar S403 exact
+`9b9b30b9b68972014a1a1ab2a0730d955e882d76` telah `CONFIRMED /
+SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+PRODUCTION_UNCHANGED_BY_S403`. Portal sidebar sekarang opaque dan memiliki
+active state tunggal; navigasi Owner/Staff tetap role-aware. Safe-area, target
+44 px, keyboard/focus, Escape/focus restore, reduced-motion, forced-colors,
+effective 200%, dan no-overflow lulus pada emulasi browser 320x700 sampai
+430x932, landscape 844x390, serta desktop 1440x900. Browser regression 7 pass
+dengan 5 expected project skips, role smoke 3/3 (126 assertion), build 5.137
+modul, typecheck, design audit 26/0, serta audit Composer/npm nol lulus. Tidak
+ada API, backend, database, migration, permission rule, lock, atau production
+yang berubah. Evidence perangkat fisik tetap belum dilakukan dan
+`BUSINESS_READY=false`.
 
 Closing-history read indexes S402 exact candidate
 `010b2c67025c51494a66b12b1e8b6778667660c6` telah `CONFIRMED /

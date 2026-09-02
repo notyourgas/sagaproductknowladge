@@ -1,5 +1,106 @@
 # SagaBook Changelog
 
+## 2026-09-02 - S413 acceptance Chromium mobile-shell dan security lock
+
+- Sebelum: S408 sudah memperbaiki warna tab/sidebar dan layout mobile, tetapi
+  acceptance route-shell hanya berjalan pada project mobile; Chromium desktop
+  dengan viewport CSS 320 px tidak menjadi gate. Lock lama juga terdeteksi
+  memiliki advisory dependency high.
+- Setelah: regression baru mengunci root 320/320, drawer contained, satu active
+  state, warna aktif yang berbeda, target 44 px, Escape/focus restore, serta
+  nol runtime error. Lock dependency kompatibel kini tanpa advisory.
+- Evidence: full Feature 1.351/1.351 (15.133 assertion), browser gabungan 5
+  pass/10 expected skip, post-build 3 pass/1 expected skip, ukuran emulasi
+  320/360/375/390/393/412/430 px, landscape, effective 200%, forced-colors,
+  reduced-motion, desktop 1440 px, build/typecheck/design 26/0, serta audit
+  Composer/npm nol.
+- Exact source `605a78433c62cbcc31f0fc7a7ba7a6de0cdadddf`, branch
+  `codex/s413-sagabook-mobile-shell-overflow`, baseline production/main
+  `9ebdcf112f312f905c4213be9da1b80cf04e0ad3`.
+- Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED_BY_S413 /
+  BUSINESS_READY=false`; physical-device UAT, merge, dan guarded release belum.
+
+## 2026-09-01 - S408 rekonsiliasi mobile shell ke exact main terbaru
+
+- Sebelum: kandidat S407 masih berbasis main `88fd517…`, sedangkan main dan
+  production sudah maju membawa retensi booking manual approved-unpaid.
+- Setelah: koreksi sidebar opaque, warna tab aktif tunggal, no-overflow, dan
+  active-item visibility direkonsiliasi bersih ke exact main terbaru tanpa
+  kehilangan `Perlu ACC`, OTS/WhatsApp, capacity confirmation, atau sesi
+  approved-unpaid.
+- Evidence: full backend 1.351 test/15.133 assertion; browser 28 pass/12
+  expected skip, dua timeout lingkungan lulus 2/2 terisolasi, dan subset
+  mobile final 10 pass/4 expected skip; build 5.137 modul, typecheck, design
+  audit 26/0, npm/Composer audit nol, diff/provenance bersih.
+- Exact candidate `bf75ba90dc3df9cbfebfb363a6b61d5b6cd41f07`, branch
+  `codex/s408-sagabook-mobile-shell-main-reconcile`, baseline exact main
+  `9ebdcf112f312f905c4213be9da1b80cf04e0ad3`.
+- Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED_BY_S408 /
+  BUSINESS_READY=false`; physical-device UAT dan guarded release belum.
+
+## 2026-09-01 - S407 integrasi mobile shell ke main Manual Booking
+
+- Sebelum: S403 dan S406 hijau pada branch bertumpuk, tetapi belum berbasis
+  main `88fd517…` yang sudah membawa Manual Booking/`Perlu ACC` ke production.
+- Setelah: kedua koreksi mobile diintegrasikan bersih ke exact main terbaru;
+  menu Manual Booking, form OTS/WhatsApp, dan dua tahap konfirmasi kapasitas
+  tetap lulus bersama sidebar opaque, active state tunggal, no-overflow, dan
+  active-item visibility.
+- Evidence: browser 15 pass/12 expected project skips; backend role+Manual
+  Booking 21 test/255 assertion; build 5.137 modul, typecheck, design audit
+  26/0, npm/Composer audit nol, diff/provenance bersih. Screenshot 320 px
+  membuktikan `Perlu ACC` dan warna tab aktif tetap benar.
+- Exact candidate `566de9ee4d15df4a7c85325b6dd8c5f769941470`, branch
+  `codex/s407-sagabook-mobile-shell-main-integration`, baseline exact main
+  `88fd51788e3de8950d6eac95a46dc87ece84d1ae`.
+- Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED_BY_S407 /
+  BUSINESS_READY=false`; physical-device UAT dan guarded release belum.
+
+## 2026-09-01 - S406 konteks route aktif sidebar mobile
+
+- Sebelum: pada route yang item navigasinya berada jauh di bawah daftar,
+  drawer selalu terbuka dari posisi teratas sehingga operator tidak melihat
+  warna/tab aktif walaupun `aria-current` sudah benar.
+- Setelah: ketika drawer mobile dibuka, item aktif yang berada di luar area
+  scroll otomatis dipusatkan di viewport sidebar; route, data, permission,
+  desktop rail, dan kontrak backend tidak berubah.
+- Evidence: audit merah `/admin/reports?tab=closing` membuktikan active item di
+  luar viewport; matriks hijau 8 route Owner x 320x700 dan 390x844 lulus 16/16
+  tanpa overflow, target di bawah 44 px, runtime error, active state ganda,
+  atau kegagalan Escape/focus restore. Regresi S403/S244 lulus 8 browser test
+  dengan 10 expected project skips; role smoke 3/3 (126 assertion), build
+  5.137 modul, typecheck, design audit 26/0, serta audit dependency nol.
+- Exact source `f3d1ad30cba0849108efd07d70f07957cecb7b2c` pada branch
+  `codex/s406-sagabook-mobile-route-shell`, ditumpuk di atas S403 exact
+  `9b9b30b9b68972014a1a1ab2a0730d955e882d76`.
+- Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED_BY_S406 /
+  BUSINESS_READY=false`; evidence perangkat fisik belum dilakukan.
+
+## 2026-09-01 - S403 stabilisasi shell dan sidebar mobile admin
+
+- Sebelum: sidebar mobile dirender lewat portal di luar shell bertema sehingga
+  panel dapat transparan, warna tab aktif tidak konsisten, dan active state
+  ganda muncul dari rail desktop tersembunyi. Settings/Booking juga dapat
+  melebar pada viewport 320 px.
+- Setelah: portal memiliki tema opaque mandiri, hanya satu pohon navigasi
+  sesuai viewport yang dirender, tab aktif tunggal dan role-aware, serta shell,
+  cards, URL row, dan header memiliki kontainmen narrow-screen.
+- Evidence emulasi browser: 320x700, 360x800, 375x667, 390x844, 393x873,
+  412x915, 430x932, landscape 844x390, effective 200%, forced-colors,
+  reduced-motion, dan desktop 1440x900. Browser regression 7 pass/5 expected
+  project skips; role smoke 3/3 (126 assertion), build 5.137 modul, typecheck,
+  design audit 26/0, serta audit Composer/npm nol lulus.
+- Exact source `9b9b30b9b68972014a1a1ab2a0730d955e882d76`; tidak ada
+  API/backend/database/migration/permission rule yang berubah. Ini bukan uji
+  perangkat fisik.
+- Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED_BY_S403 /
+  BUSINESS_READY=false`.
+
 ## 2026-09-01 - S402 indeks baca history closing lintas cabang
 
 - Sebelum: kandidat prefix tenant/date tetap tidak dipilih optimizer MySQL dan
