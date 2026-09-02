@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
 Updated: 2 September 2026 WIB
-Evidence status: SagaBook production aktif pada exact `e0f221435df3b2b8c92649fc0c69da70b1d207dc`, immutable release `20260902154557-e0f2214`, dengan rollback kompatibel `20260902061038-1ce62c9`. Perbaikan Block Time jam malam dari PR #102 sudah `SOURCE_PUSHED / CI_PASSED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: pemilih 24 jam tersedia sampai `23:59`, kalender/preview mengikuti jam malam, dan edit dari `Semua Cabang` mempertahankan cabang asal. Fresh encrypted backup, checksum, disposable restore, exact artifact, atomic activation, verifier independen 23/23, serta public/security smoke 3/3 lulus. Status produk keseluruhan tetap `AUDIO_UAT_PENDING / AUTHENTICATED_OPERATOR_UAT_PENDING / PILOT_BLOCKED / BUSINESS_READY=false`.
+Evidence status: SagaBook production aktif pada exact `80c100c0c1aadf2a276fb8b0c424078718faa059`, immutable release `20260902162647-80c100c`, dengan rollback kompatibel `20260902154557-e0f2214`. Rilis kumulatif mobile memperbaiki warna tab sidebar, hanya menyisakan satu penanda halaman aktif, menjaga navigasi sesuai role, dan menutup overflow/layout pada Settings, Detail Booking, Promo, Jam Cabang, serta dialog Block Time. Full Feature 1.361/1.361 (15.216 assertion), build, audit desain/dependency, matrix visual multi-device, fresh encrypted backup, disposable restore, atomic activation, verifier independen, dan public/security smoke lulus. UAT manual Andreas dicatat sebagai keputusan operator, tetapi belum menggantikan kontrak authenticated UAT otomatis yang masih tertahan karena credential bridge lokal belum aktif; actual rollback drill juga menunggu gate itu. Status produk keseluruhan tetap `PRODUCTION_ACTIVATED / AUTHENTICATED_OPERATOR_UAT_PENDING / ROLLBACK_DRILL_PENDING / AUDIO_UAT_PENDING / PILOT_BLOCKED / BUSINESS_READY=false`.
 
 ## Tujuan dokumen
 
@@ -15,6 +15,20 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
+
+- Rilis mobile kumulatif exact `80c100c0c1aadf2a276fb8b0c424078718faa059`
+  membuat sidebar admin hanya menandai satu route aktif, memperbaiki kontras
+  tab dari warna lama yang gagal AA menjadi 5,699:1, serta menyelaraskan menu
+  Owner, Manager, dan Staff dengan capability masing-masing. Shell memakai
+  safe area, pemulihan fokus, Escape/backdrop, dan scroll-to-active; Settings,
+  Detail Booking, Promo, Jam Cabang, dan dialog Block Time tidak lagi melebar
+  keluar viewport. Matrix visual mencakup 320x700, 360x800, 375x667, 390x844,
+  393x873, 412x915, 430x932, landscape, zoom 200%, forced colors, reduced
+  motion, serta desktop 1440x900. Production aktif pada
+  `20260902162647-80c100c` dengan rollback `20260902154557-e0f2214`.
+  Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / AUTHENTICATED_OPERATOR_UAT_PENDING /
+  ROLLBACK_DRILL_PENDING / BUSINESS_READY=false`.
 
 - PR #102 mengganti input Block Time yang bergantung pada time picker
   native browser menjadi pemilih 24 jam eksplisit (`00:00` sampai `23:59`).

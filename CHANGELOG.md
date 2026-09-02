@@ -1,5 +1,22 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-02 - SagaBook mobile admin production sync
+
+- Menyinkronkan exact source
+  `80c100c0c1aadf2a276fb8b0c424078718faa059`, production release
+  `20260902162647-80c100c`, dan rollback `20260902154557-e0f2214`.
+- Sidebar mobile, role-aware navigation, Settings, Detail Booking, Promo, Jam
+  Cabang, dan dialog Block Time sudah lulus matrix responsive/accessibility
+  320-430 px sampai desktop; Full Feature 1.361/1.361 dan audit lulus.
+- Encrypted backup/disposable restore, atomic activation, verifier independen,
+  service/journal, serta public/security smoke lulus.
+- Klasifikasi `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+  AUTHENTICATED_OPERATOR_UAT_PENDING / ROLLBACK_DRILL_PENDING /
+  BUSINESS_READY=false`. S402 tetap `IMPLEMENTED_NOT_DEPLOYED` karena
+  migration index dikeluarkan untuk menjaga rollback kompatibel.
+- Dokumen terdampak: ringkasan, dossier, ledger, changelog produk/portfolio,
+  master knowledge, root changelog, dan status sinkronisasi.
+
 ## 2026-09-02 - Saga Member Vercel D0 shell sync
 
 - Menyinkronkan exact source

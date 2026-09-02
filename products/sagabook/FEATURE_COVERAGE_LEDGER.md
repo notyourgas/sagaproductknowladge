@@ -2,6 +2,26 @@
 
 Evidence cut-off: 2 September 2026 WIB
 
+Mobile admin shell dan operational layout exact source
+`80c100c0c1aadf2a276fb8b0c424078718faa059` telah `CONFIRMED /
+SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED`. Sidebar mobile kini role-aware dengan satu active route,
+kontras 5,699:1, safe area, focus restore, Escape/backdrop, serta scroll ke
+route aktif. Settings, Detail Booking, Promo, Jam Cabang, dan dialog Block Time
+lulus reflow pada 320x700 sampai 430x932, landscape, zoom 200%, forced colors,
+reduced motion, dan desktop 1440x900. Full Feature 1.361/1.361 (15.216
+assertion), build, design/dependency audit, focused visual 19 passed, backup,
+restore, activation, verifier, service/journal, dan public/security smoke
+lulus. Active release `20260902162647-80c100c`, rollback
+`20260902154557-e0f2214`. Authenticated Owner/operator UAT dan actual rollback
+drill masih pending karena credential bridge lokal belum aktif;
+`BUSINESS_READY=false`.
+
+Closing-history read indexes S402 tetap `IMPLEMENTED_NOT_DEPLOYED`. Migration
+index sengaja tidak termasuk release `80c100c0c1aadf2a276fb8b0c424078718faa059`
+agar migration tree byte-identical dengan rollback aktif. Next gate adalah
+strategi release dan rollback migration yang kompatibel, bukan redeploy mobile.
+
 Manual-booking operational lifecycle exact source
 `c71ac5466e13f2a75903cc569bba0d9882933ea1` telah `CONFIRMED /
 SOURCE_PUSHED / CI_PASSED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.

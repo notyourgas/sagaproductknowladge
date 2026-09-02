@@ -1,5 +1,20 @@
 # Portfolio Changelog
 
+## 2026-09-02 - SagaBook mobile admin UI/UX production
+
+- Sidebar admin mobile kini hanya menandai satu route aktif, memakai warna
+  kontras AA 5,699:1, dan menampilkan menu sesuai capability Owner/Manager/Staff.
+- Settings, Detail Booking, Promo, Jam Cabang, dan dialog Block Time lulus
+  no-overflow serta accessibility matrix pada mobile 320-430 px, landscape,
+  zoom 200%, forced colors, reduced motion, dan desktop.
+- Exact source `80c100c0c1aadf2a276fb8b0c424078718faa059` aktif pada release
+  `20260902162647-80c100c`, rollback `20260902154557-e0f2214`; backup/restore,
+  verifier, service/journal, dan public/security smoke lulus.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+  AUTHENTICATED_OPERATOR_UAT_PENDING / ROLLBACK_DRILL_PENDING /
+  BUSINESS_READY=false`. UAT manual tidak menggantikan receipt authenticated
+  otomatis; credential bridge masih belum aktif.
+
 ## 2026-09-02 - Saga Member Vercel D0 shell deployed
 
 - Exact Member source `c8c776407160c1af7692a068f6a3930ac6ea5b16`

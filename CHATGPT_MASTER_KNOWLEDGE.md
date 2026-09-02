@@ -1,5 +1,22 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+SagaBook mobile admin production aktif pada exact source
+`80c100c0c1aadf2a276fb8b0c424078718faa059`, release
+`20260902162647-80c100c`, rollback `20260902154557-e0f2214`. Sidebar mobile
+hanya menandai satu route aktif, menu mengikuti capability Owner/Manager/Staff,
+dan warna aktif memenuhi kontras AA 5,699:1. Shell, Settings, Detail Booking,
+Promo, Jam Cabang, dan dialog Block Time lulus no-overflow/accessibility pada
+matrix 320-430 px, landscape, zoom 200%, forced colors, reduced motion, dan
+desktop. Full Feature 1.361/1.361 (15.216 assertion), build, audit, encrypted
+backup/disposable restore, atomic activation, verifier, service/journal, dan
+public/security smoke lulus. Status `CONFIRMED / PRODUCTION_ACTIVATED /
+AUTHENTICATED_OPERATOR_UAT_PENDING / ROLLBACK_DRILL_PENDING /
+BUSINESS_READY=false`. Keputusan UAT manual Andreas tidak boleh disebut receipt
+authenticated otomatis karena kontrak kanonik membutuhkan runner read-only
+dengan coverage exact; credential bridge belum aktif. Index histori Closing
+S402 tidak ikut rilis ini dan tetap `IMPLEMENTED_NOT_DEPLOYED` sampai tersedia
+strategi rollback migration yang kompatibel.
+
 Saga Member memiliki protected Vercel production target untuk shell D0
 fail-closed. Exact source `c8c776407160c1af7692a068f6a3930ac6ea5b16`,
 main CI `33652139197`, dan deployment

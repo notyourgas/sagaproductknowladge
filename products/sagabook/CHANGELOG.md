@@ -1,5 +1,34 @@
 # SagaBook Changelog
 
+## 2026-09-02 - Perbaikan UI/UX mobile admin aktif di production
+
+- Sebelum: sidebar mobile dapat menandai tiga route sekaligus, warna tab aktif
+  gagal kontras AA, dan halaman Settings dapat overflow sekitar 185 px pada
+  viewport 320 px. Beberapa layout operasional juga belum aman di HP kecil.
+- Setelah: sidebar hanya memiliki satu active route, role-aware, kontras
+  5,699:1, serta mendukung safe area, fokus, Escape/backdrop, dan scroll ke
+  menu aktif. Settings, Detail Booking, Promo, Jam Cabang, dan dialog Block
+  Time kini reflow tanpa overflow pada matrix mobile 320-430 px, landscape,
+  zoom 200%, forced colors, dan reduced motion.
+- Exact source `80c100c0c1aadf2a276fb8b0c424078718faa059`, release
+  `20260902162647-80c100c`, rollback `20260902154557-e0f2214`. Full Feature
+  1.361/1.361 (15.216 assertion), build, design/dependency audit, focused visual
+  19 passed, encrypted backup/disposable restore, atomic activation, verifier,
+  service/journal, dan public/security smoke lulus.
+- Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / AUTHENTICATED_OPERATOR_UAT_PENDING /
+  ROLLBACK_DRILL_PENDING / BUSINESS_READY=false`. UAT manual Andreas tidak
+  diklaim sebagai receipt authenticated otomatis; credential bridge belum
+  aktif dan actual rollback drill tetap menunggu gate tersebut.
+
+## 2026-09-02 - Index histori Closing ditunda dari release mobile
+
+- Migration index S402 dikeluarkan dari source release exact
+  `80c100c0c1aadf2a276fb8b0c424078718faa059` agar migration tree tetap identik
+  dengan rollback aktif dan actual rollback drill tidak menjadi semu.
+- Perbaikan performa tetap berstatus `IMPLEMENTED_NOT_DEPLOYED`; release ulang
+  membutuhkan strategi rollback-compatible terpisah.
+
 ## 2026-09-02 - Block Time jam malam aktif di production
 
 - Exact merge `e0f221435df3b2b8c92649fc0c69da70b1d207dc` dari PR #102

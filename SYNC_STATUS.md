@@ -13,9 +13,34 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Field | Nilai |
 |---|---|
 | Waktu pembaruan terakhir | 2026-09-02 WIB |
-| Branch aktif | `codex/saga-member-vercel-d0-knowledge` |
+| Branch aktif | `codex/s421-sagabook-mobile-production-knowledge` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `9cd6d74526c2c54b102b7a9abceb96209e918027` |
+| Baseline sebelum pembaruan | `d88fb6b9c8e5df3a48fcfe876c025dc353dca772` |
+
+## SagaBook mobile admin production
+
+- Exact source `80c100c0c1aadf2a276fb8b0c424078718faa059` aktif pada release
+  `20260902162647-80c100c`, rollback `20260902154557-e0f2214`.
+- Sidebar mobile, role-aware navigation, Settings, Detail Booking, Promo, Jam
+  Cabang, dan dialog Block Time lulus responsive/accessibility matrix pada
+  320-430 px, landscape, zoom 200%, forced colors, reduced motion, dan desktop.
+- Backup/restore, atomic activation, verifier, service/journal, serta
+  public/security smoke lulus. Authenticated UAT otomatis dan actual rollback
+  drill masih pending karena credential bridge lokal belum aktif.
+- Status `CONFIRMED / PRODUCTION_ACTIVATED /
+  AUTHENTICATED_OPERATOR_UAT_PENDING / ROLLBACK_DRILL_PENDING /
+  BUSINESS_READY=false`; S402 tetap `IMPLEMENTED_NOT_DEPLOYED`.
+
+## File yang berubah pada sinkronisasi SagaBook mobile production
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## Saga Member protected Vercel D0 shell
 

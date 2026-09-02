@@ -7,6 +7,25 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Rilis kumulatif mobile exact
+  `80c100c0c1aadf2a276fb8b0c424078718faa059` aktif sebagai immutable release
+  `20260902162647-80c100c`, dengan rollback kompatibel
+  `20260902154557-e0f2214`. Sidebar admin kini hanya memiliki satu active
+  route, memakai kontras 5,699:1, dan menyaring menu berdasarkan capability
+  Owner/Manager/Staff. Shell, Settings, Detail Booking, Promo, Jam Cabang, dan
+  dialog Block Time sudah diuji terhadap safe area, fokus keyboard, Escape,
+  backdrop, target 44 px, forced colors, reduced motion, zoom 200%, landscape,
+  desktop 1440x900, serta tujuh ukuran mobile dari 320x700 sampai 430x932.
+  Full Feature 1.361/1.361 (15.216 assertion), build, design audit, audit
+  dependency, visual 19 passed dengan 11 controlled skips, encrypted backup,
+  disposable restore, atomic activation, verifier, service/journal, dan
+  public/security smoke lulus. UAT manual Andreas tidak dipetakan sebagai
+  authenticated evidence karena kontrak kanonik mewajibkan exact surface,
+  viewport, dan check dari runner read-only. Credential bridge belum aktif;
+  actual rollback drill menunggu authenticated UAT tersebut. Status
+  `CONFIRMED / PRODUCTION_ACTIVATED / AUTHENTICATED_OPERATOR_UAT_PENDING /
+  ROLLBACK_DRILL_PENDING / BUSINESS_READY=false`.
+
 - Block Time jam malam exact merge
   `e0f221435df3b2b8c92649fc0c69da70b1d207dc` dari PR #102 menyediakan
   pemilih jam/menit 24 jam yang konsisten sampai `23:59` di desktop dan mobile.
