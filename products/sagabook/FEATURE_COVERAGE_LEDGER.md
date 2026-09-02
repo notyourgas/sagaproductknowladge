@@ -1,6 +1,19 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 1 September 2026 WIB
+Evidence cut-off: 2 September 2026 WIB
+
+Add-on OTS tenant-timezone exact source
+`6da06fed08df020b4acab4a77c6ad3215ea32dad` telah `CONFIRMED /
+SOURCE_PUSHED / CI_PASSED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
+Transaksi baru menulis tanggal/jam finansial pada zona tenant dan fallback
+historis mengonversi `created_at` UTC sebelum display serta sort. Tidak ada
+migration atau rewrite ledger. Focused 14/14 (89 assertion), full Feature
+1.352/1.352 (15.142 assertion), build/typecheck/format, audit dependency nol,
+CI PR #96/#98, serta canary production read-only empat baris 4/4 lulus.
+Production aktif release `20260902044110-6da06fe` dengan rollback
+`20260901155248-9ebdcf1`. Verifier efektif 22/23 hanya karena remote main maju
+setelah rilis; semua gate runtime lulus. Gap business readiness produk tetap
+UAT audio fisik dan pilot; `BUSINESS_READY=false`.
 
 Closing-history read indexes S402 exact candidate
 `010b2c67025c51494a66b12b1e8b6778667660c6` telah `CONFIRMED /

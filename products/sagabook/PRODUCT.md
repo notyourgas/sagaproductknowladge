@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
 Updated: 2 September 2026 WIB
-Evidence status: SagaBook production aktif pada exact `9ebdcf112f312f905c4213be9da1b80cf04e0ad3`, immutable release `20260901155248-9ebdcf1`. Kandidat perbaikan alokasi metode pembayaran closing exact `bd1d6193c0fabd29effc4be43865d8e8b8a1ba2e` sudah `SOURCE_PUSHED / LOCAL_VALIDATED / CI_PASSED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; PR #99 masih menjadi gate review/merge. Status keseluruhan `AUDIO_UAT_PENDING / PILOT_BLOCKED_BY_AUDIO_UAT / BUSINESS_READY=false`.
+Evidence status: SagaBook production aktif pada exact `6da06fed08df020b4acab4a77c6ad3215ea32dad`, immutable release `20260902044110-6da06fe`, dengan rollback `20260901155248-9ebdcf1`. Perbaikan waktu Add-on OTS sudah `SOURCE_PUSHED / CI_PASSED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; canary read-only empat baris historis lulus. `origin/main` kemudian maju ke `e37520dc589aa53f5c31f1efd67b570d94df9be2` melalui perubahan lain, sehingga runtime sengaja tetap pada exact release yang sudah diverifikasi. Status produk keseluruhan tetap `AUDIO_UAT_PENDING / PILOT_BLOCKED_BY_AUDIO_UAT / BUSINESS_READY=false`.
 
 ## Tujuan dokumen
 
@@ -15,6 +15,20 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
+
+- Waktu transaksi Add-on OTS kini konsisten dengan zona waktu tenant. Baris
+  baru menulis `transaction_date` dan `transaction_time` memakai waktu tenant;
+  baris historis yang masih bersumber dari `created_at` UTC dikonversi saat
+  laporan dibaca, sebelum pengurutan, tanpa menulis ulang ledger. Exact source
+  `6da06fed08df020b4acab4a77c6ad3215ea32dad` lulus focused 14/14 (89
+  assertion), full Feature 1.352/1.352 (15.142 assertion), typecheck, build,
+  format, dan audit dependency nol. PR #96 dan #98 lulus CI. Production aktif
+  pada release `20260902044110-6da06fe`; canary read-only empat baris historis
+  lulus 4/4. Verifier efektif lulus 22/23; satu mismatch hanya pointer
+  `remote_main` yang maju setelah rilis, sedangkan seluruh gate runtime,
+  rollback, migrasi, worker, canary, dan smoke lulus. Status `CONFIRMED /
+  SOURCE_PUSHED / CI_PASSED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+  BUSINESS_READY=false`.
 
 - Kandidat S416 memperbaiki rekonsiliasi metode pembayaran pada Owner dan
   Staff closing. Booking dengan pembayaran awal Transfer Manual atau QRIS dan

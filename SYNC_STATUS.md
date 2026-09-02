@@ -12,10 +12,34 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-09-02 11:35 WIB |
-| Branch aktif | `main` |
+| Waktu pembaruan terakhir | 2026-09-02 WIB |
+| Branch aktif | `codex/s415-sagabook-addon-timezone-knowledge` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `444ed16` |
+| Baseline sebelum pembaruan | `b7b6384` |
+
+## SagaBook Add-on OTS tenant-timezone production
+
+- Exact source `6da06fed08df020b4acab4a77c6ad3215ea32dad` memperbaiki jam
+  transaksi Add-on OTS baru dan fallback laporan historis agar mengikuti zona
+  tenant tanpa rewrite ledger atau migration.
+- Focused 14/14 (89 assertion), full Feature 1.352/1.352 (15.142 assertion),
+  typecheck/build/format, audit dependency nol, serta CI PR #96/#98 lulus.
+- Production aktif pada release `20260902044110-6da06fe`, rollback
+  `20260901155248-9ebdcf1`; canary read-only empat baris historis lulus 4/4.
+- Verifier efektif 22/23 karena `remote_main` maju setelah rilis; seluruh gate
+  runtime lulus. Status `CONFIRMED / SOURCE_PUSHED / CI_PASSED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi Add-on OTS timezone
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook S416 closing payment allocation
 
