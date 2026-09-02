@@ -7,6 +7,21 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Exact source `6da06fed08df020b4acab4a77c6ad3215ea32dad` memperbaiki
+  anomali jam Add-on OTS pada laporan. Sumber masalahnya adalah `created_at`
+  UTC yang sebelumnya diformat langsung sebagai jam tenant. Transaksi baru
+  kini menulis tanggal/jam finansial dalam zona tenant, sementara laporan
+  mengonversi baris historis dari UTC sebelum display dan in-memory sort.
+  Tidak ada migration atau rewrite ledger. Focused 14/14 (89 assertion), full
+  Feature 1.352/1.352 (15.142 assertion), typecheck, build, format, serta audit
+  dependency nol lulus; PR #96 dan #98 lulus CI. Guarded release aktif pada
+  `20260902044110-6da06fe` dengan rollback `20260901155248-9ebdcf1`.
+  Production read-only canary membuktikan empat baris historis 4/4 mengikuti
+  `Asia/Jakarta`. Verifier efektif 22/23 karena `origin/main` maju ke commit
+  lain setelah rilis; seluruh pemeriksaan runtime lulus dan exact release tetap
+  ancestor dari main. Status `CONFIRMED / SOURCE_PUSHED / CI_PASSED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+
 - S416 exact source `bd1d6193c0fabd29effc4be43865d8e8b8a1ba2e`
   menutup double count pada breakdown closing untuk pembayaran campuran. UI
   sebelumnya menurunkan metode dari total akhir booking, sehingga add-on Cash

@@ -1,5 +1,18 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+SagaBook production aktif pada exact
+`6da06fed08df020b4acab4a77c6ad3215ea32dad`, release
+`20260902044110-6da06fe`, rollback `20260901155248-9ebdcf1`. Rilis ini
+memperbaiki jam Add-on OTS: transaksi baru menulis tanggal/jam keuangan sesuai
+zona tenant, sementara fallback laporan historis mengonversi `created_at` UTC
+sebelum display dan sort tanpa rewrite ledger. Focused 14/14 (89 assertion),
+full Feature 1.352/1.352 (15.142 assertion), build/typecheck/format, audit
+dependency nol, dan CI PR #96/#98 lulus. Canary production read-only empat
+baris historis lulus 4/4 pada `Asia/Jakarta`. Verifier efektif 22/23 hanya
+karena `origin/main` maju setelah rilis ke perubahan lain; seluruh gate runtime
+lulus. Status `CONFIRMED / SOURCE_PUSHED / CI_PASSED / PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+
 SagaBook S416 exact source `bd1d6193c0fabd29effc4be43865d8e8b8a1ba2e`
 memperbaiki breakdown metode pembayaran Owner/Staff closing untuk transaksi
 campuran. Pembayaran awal Transfer Manual atau QRIS tetap pada metode asal,

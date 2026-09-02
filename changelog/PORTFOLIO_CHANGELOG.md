@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-09-02 - SagaBook Add-on OTS tenant-timezone production
+
+- Add-on OTS baru memakai tanggal/jam finansial zona tenant; fallback laporan
+  historis dikonversi dari UTC sebelum display dan sort tanpa rewrite ledger.
+- Exact source `6da06fed08df020b4acab4a77c6ad3215ea32dad`; focused 14/14,
+  full Feature 1.352/1.352, build/typecheck/format, dependency audit, serta CI
+  PR #96 dan #98 lulus.
+- Production aktif pada `20260902044110-6da06fe`, rollback
+  `20260901155248-9ebdcf1`, dan canary read-only historis lulus 4/4.
+- Verifier efektif 22/23 hanya karena pointer main maju setelah rilis;
+  seluruh gate runtime lulus. Status `PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+
 ## 2026-09-02 - SagaBook S416 closing payment allocation candidate
 
 - Owner dan Staff closing kini memakai breakdown metode authoritative dari

@@ -1,5 +1,21 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-02 - SagaBook Add-on OTS timezone production sync
+
+- Menyinkronkan exact source
+  `6da06fed08df020b4acab4a77c6ad3215ea32dad`, immutable release
+  `20260902044110-6da06fe`, dan rollback `20260901155248-9ebdcf1`.
+- Add-on OTS baru memakai tanggal/jam tenant; fallback laporan historis
+  mengonversi UTC sebelum display/sort tanpa migration atau rewrite ledger.
+- Focused 14/14 (89 assertion), full Feature 1.352/1.352 (15.142 assertion),
+  typecheck/build/format, audit dependency nol, CI PR #96/#98, dan production
+  canary read-only 4/4 lulus.
+- Verifier efektif 22/23 hanya karena remote main maju setelah rilis; seluruh
+  gate runtime lulus. Klasifikasi `PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+- Dokumen terdampak: ringkasan dan dossier SagaBook, feature ledger, changelog
+  produk/portfolio, master knowledge, serta status sinkronisasi.
+
 ## 2026-09-02 - SagaBook S416 closing allocation sync
 
 - Mencatat kandidat perbaikan breakdown metode pembayaran closing campuran

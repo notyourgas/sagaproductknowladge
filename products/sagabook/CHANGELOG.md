@@ -1,5 +1,26 @@
 # SagaBook Changelog
 
+## 2026-09-02 - Add-on OTS mengikuti zona waktu tenant
+
+- Sebelum: laporan dapat menampilkan jam Add-on OTS dari `created_at` UTC
+  secara langsung, sehingga jam transaksi tenant bergeser tujuh jam dan urutan
+  laporan ikut salah.
+- Setelah: transaksi baru menulis tanggal/jam finansial dalam zona tenant;
+  laporan mengonversi fallback historis UTC ke zona tenant sebelum display dan
+  sort. Ledger lama tidak ditulis ulang dan tidak ada migration.
+- Exact source `6da06fed08df020b4acab4a77c6ad3215ea32dad` melalui PR #96
+  dan #98 lulus focused 14/14 (89 assertion), full Feature 1.352/1.352 (15.142
+  assertion), typecheck, build, format, audit dependency nol, dan seluruh CI.
+- Production aktif pada immutable release `20260902044110-6da06fe` dengan
+  rollback `20260901155248-9ebdcf1`. Canary read-only empat baris historis
+  lulus 4/4 pada `Asia/Jakarta`.
+- Verifier efektif 22/23: satu mismatch hanya `remote_main` yang maju setelah
+  rilis ke perubahan tidak terkait; active release, rollback, snapshot,
+  migrasi, worker, report canary, nginx, journal, dan public/security smoke
+  seluruhnya lulus.
+- Status `CONFIRMED / SOURCE_PUSHED / CI_PASSED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+
 ## 2026-09-02 - S416 alokasi metode pembayaran closing campuran
 
 - Sebelum: dialog Owner/Staff closing membentuk breakdown metode dari total
