@@ -1,6 +1,30 @@
 # SagaView Product Knowledge
 
-Updated: 1 September 2026 00:06 WIB
+Updated: 3 September 2026 WIB
+
+SagaView S380 candidate exact backend
+`129ed92a5cc9c5c199fb4082660e76ff7b12b74c` dan Studio
+`8257f491bc0866bd0de814d0f3cd3e9dd6336b85` berstatus `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+PHYSICAL_UAT_EXACT_PAIR_PENDING`. Kandidat backend menggabungkan snapshot
+revision batch, retry deadlock publish, pembaruan keamanan dependency, dan
+penutupan baseline lint; Studio tetap memakai lineage Live Import yang
+kompatibel.
+
+Gate exact candidate lulus: scoped Pint 127/127; full PHP 1.044/1.044 dengan
+13.382 assertion; build 5.097 modul; audit Composer/npm nol; rehearsal MySQL
+disposable 105 migration dan 149 tabel; backup/restore sintetis 200/200 dengan
+digest identik serta tenant leak nol. Benchmark 100.000 row sintetis memakai
+satu query dengan p95 4,761/10,657/30,883 ms pada 50/200/500 item. Percobaan
+index yang memperburuk hasil dibatalkan dan tidak menjadi bagian kandidat.
+
+Audit custody menemukan delapan receipt lama; tujuh receipt berstatus siap
+tetap utuh dengan 84/84 file dan hash cocok, tetapi exact-pair match untuk S380
+adalah 0. Bukti lama tidak disalin, diindeks ulang, atau diikat ke kandidat
+baru. Physical UAT exact pair masih membutuhkan 12 bukti non-printer
+tersanitasi, count 50/200/500, konfirmasi operator/reviewer, blocker nol, dan
+status `ready_for_human_release_review`. Production tidak berubah dan
+`BUSINESS_READY=false`.
 
 SagaView backend S373 exact source
 `5f642d83a9d23091f29cc356b2041bc310338812` sudah aktif di production pada

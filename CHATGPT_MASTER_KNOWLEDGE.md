@@ -1,5 +1,24 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+SagaView S380 exact candidate memakai backend
+`129ed92a5cc9c5c199fb4082660e76ff7b12b74c` dan Studio
+`8257f491bc0866bd0de814d0f3cd3e9dd6336b85`. Statusnya `CONFIRMED / PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+PHYSICAL_UAT_EXACT_PAIR_PENDING`; production tidak berubah dan
+`BUSINESS_READY=false`. Test, build, dependency audit, disposable MySQL,
+backup/restore sintetis, tenant isolation, serta benchmark 50/200/500 lulus.
+Audit custody membuktikan receipt lama tetap utuh, tetapi exact candidate pair
+match 0; receipt lama tidak boleh dikonversi menjadi penerimaan S380. Next gate
+adalah 12 bukti physical UAT non-printer tersanitasi, count 50/200/500,
+konfirmasi operator/reviewer, blocker nol, dan status
+`ready_for_human_release_review`.
+
+Production SagaView yang tetap aktif adalah backend
+`5f642d83a9d23091f29cc356b2041bc310338812` release
+`20260831080506-5f642d8` serta Studio
+`8257f491bc0866bd0de814d0f3cd3e9dd6336b85` release
+`20260831081456-8257f49`.
+
 Saga Member Home dashboard tervalidasi pada protected Vercel Preview dari exact
 main source `c2754dcf5fe5cccc10993b0eb50a10003949c32e` (PR #10). Home kini
 mobile-first dan scan-first untuk Coffee, Studio, Reward, serta Quest, dengan

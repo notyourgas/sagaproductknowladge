@@ -6,7 +6,7 @@ Menjelaskan jenis source of truth dan provenance public-safe. Repository ini
 tidak mempublikasikan task ID, checkout lokal, worktree, atau private evidence
 path.
 
-Evidence cut-off: 31 Juli 2026
+Evidence cut-off: 3 September 2026
 
 ## Konteks
 
@@ -25,6 +25,18 @@ prioritas evidence.
 | Saga Platform | Control-plane source and product adapters | ADR, product contracts, migration/release evidence |
 | SagaOPS | Prototype/domain/backend source | Product contract, acceptance, outlet pilot evidence |
 | Saga AI | Knowledge/retrieval service source | ADR, evaluation, permission/tool contracts |
+
+## SagaView source manifest saat ini
+
+| Peran | Exact source | Status |
+|---|---|---|
+| Kandidat backend S380 | `129ed92a5cc9c5c199fb4082660e76ff7b12b74c` | `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PHYSICAL_UAT_EXACT_PAIR_PENDING` |
+| Kandidat dan production Studio | `8257f491bc0866bd0de814d0f3cd3e9dd6336b85` | Candidate compatible; production release `20260831081456-8257f49` |
+| Production backend | `5f642d83a9d23091f29cc356b2041bc310338812` | Production release `20260831080506-5f642d8` |
+
+Manifest ini hanya mencatat exact source dan status public-safe. Tidak ada
+deployment S380; physical UAT exact pair masih pending dan
+`BUSINESS_READY=false`.
 
 ## Internal source lookup
 

@@ -1,5 +1,24 @@
 # SagaView Feature Coverage Ledger
 
+S380 exact candidate: backend
+`129ed92a5cc9c5c199fb4082660e76ff7b12b74c` dan Studio
+`8257f491bc0866bd0de814d0f3cd3e9dd6336b85` sudah `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+PHYSICAL_UAT_EXACT_PAIR_PENDING`.
+
+Ledger lulus: Pint 127/127; full PHP 1.044/1.044 dan 13.382 assertion; build
+5.097 modul; Composer/npm audit nol; MySQL disposable 105 migration/149 tabel;
+backup/restore sintetis 200/200 dengan digest identik; tenant leak 0; benchmark
+100.000 row satu query dengan p95 4,761/10,657/30,883 ms pada 50/200/500 item;
+clean/upstream exact provenance; serta custody lama 84/84 file dan hash valid.
+Index eksperimental yang memperburuk benchmark ditolak dan tidak masuk source.
+
+Belum lulus: exact-pair match receipt 0; 12 bukti non-printer tersanitasi,
+count 50/200/500, konfirmasi operator/reviewer, blocker nol, dan
+`ready_for_human_release_review`. Production tetap S373 backend release
+`20260831080506-5f642d8` dan Studio release `20260831081456-8257f49`;
+`BUSINESS_READY=false`.
+
 S373 backend production activation: exact pushed backend
 `5f642d83a9d23091f29cc356b2041bc310338812` aktif pada immutable release
 `20260831080506-5f642d8`, rollback `20260828111443-98f13a8`. Studio Live
@@ -16,7 +35,7 @@ Belum lulus: authenticated dan physical UAT pada pasangan production terbaru.
 Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
 CURRENT_PAIR_UAT_PENDING / BUSINESS_READY=false`.
 
-Evidence cut-off: 1 September 2026 00:06 WIB
+Evidence cut-off: 3 September 2026 WIB
 
 S364 provenance response-policy enforcement: exact pushed source
 `2371db8e746aeaed6a76c21daa80e14bc3ff77fb` membuat probe S344 menolak

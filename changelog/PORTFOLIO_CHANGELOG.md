@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-09-03 - SagaView S380 exact candidate locally validated
+
+- Backend `129ed92a5cc9c5c199fb4082660e76ff7b12b74c` dan Studio
+  `8257f491bc0866bd0de814d0f3cd3e9dd6336b85` menjadi exact candidate
+  pushed untuk hardening performance, concurrency, dependency, dan lint.
+- Test/build/audit, rehearsal database serta backup/restore sintetis, tenant
+  isolation, dan benchmark count 50/200/500 lulus. Audit custody mempertahankan
+  receipt lama sebagai bukti valid untuk kandidat asalnya, tetapi exact-pair
+  match S380 tetap 0.
+- Status `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PHYSICAL_UAT_EXACT_PAIR_PENDING`; production S373/Live Import tidak berubah
+  dan `BUSINESS_READY=false`.
+
 ## 2026-09-03 - Saga Member stable public Preview alias
 
 - Saga Member sekarang memakai satu URL pengguna tetap:

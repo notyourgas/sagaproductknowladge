@@ -1,5 +1,30 @@
 # SagaView Dossier
 
+## S380 exact candidate dan custody boundary
+
+Exact backend `129ed92a5cc9c5c199fb4082660e76ff7b12b74c` dan Studio
+`8257f491bc0866bd0de814d0f3cd3e9dd6336b85` sudah `PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+PHYSICAL_UAT_EXACT_PAIR_PENDING`. Backend mencakup batch revision snapshot,
+retry deadlock publish, dependency security update, dan lint baseline closure;
+Studio tetap pada lineage Live Import yang kompatibel.
+
+Evidence lokal exact candidate mencakup Pint 127/127, full PHP 1.044/1.044
+dengan 13.382 assertion, build 5.097 modul, audit Composer/npm nol, serta
+rehearsal MySQL disposable 105 migration dan 149 tabel. Backup/restore sintetis
+200/200 mempunyai digest identik dan tenant leak nol. Benchmark 100.000 row
+sintetis tetap satu query; p95 4,761/10,657/30,883 ms untuk 50/200/500 item.
+Index eksperimental yang mengalami regresi telah ditolak dan tidak masuk
+kandidat.
+
+Audit custody hanya menghitung dan memvalidasi metadata aman. Tujuh receipt
+lama yang siap tetap valid dengan 84/84 file dan hash cocok, tetapi tidak satu
+pun terikat ke pasangan exact S380. Karena exact-pair match 0, bukti lama tidak
+boleh dikonversi. Next gate adalah 12 bukti physical UAT non-printer yang
+tersanitasi, count 50/200/500, konfirmasi operator dan reviewer, blocker nol,
+serta `ready_for_human_release_review`. Tidak ada deployment atau mutasi
+production pada slice ini; `BUSINESS_READY=false`.
+
 ## S373 backend production activation
 
 Backend exact `5f642d83a9d23091f29cc356b2041bc310338812` aktif pada immutable

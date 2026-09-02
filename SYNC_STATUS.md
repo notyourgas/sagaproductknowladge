@@ -13,9 +13,36 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Field | Nilai |
 |---|---|
 | Waktu pembaruan terakhir | 2026-09-03 WIB |
-| Branch aktif | `codex/member-stable-public-alias` |
+| Branch aktif | `codex/s380-sagaview-status-sync` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `3f19db4f4da52b4ab88e207eada695e79cfabe1e` |
+| Baseline sebelum pembaruan | `3d8c0a7418defc1a04e7725824258dbe3a80a0d9` |
+
+## SagaView S380 candidate dan custody sync
+
+- Exact candidate backend `129ed92a5cc9c5c199fb4082660e76ff7b12b74c`
+  dan Studio `8257f491bc0866bd0de814d0f3cd3e9dd6336b85` dicatat sebagai
+  `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PHYSICAL_UAT_EXACT_PAIR_PENDING`.
+- Gate lokal source/test/build/audit, rehearsal MySQL, backup/restore sintetis,
+  tenant isolation, dan benchmark 50/200/500 lulus. Custody lama valid, tetapi
+  exact-pair match 0; tidak ada receipt yang dikonversi.
+- Production tetap backend `5f642d83a9d23091f29cc356b2041bc310338812`
+  release `20260831080506-5f642d8` dan Studio
+  `8257f491bc0866bd0de814d0f3cd3e9dd6336b85` release
+  `20260831081456-8257f49`; `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi SagaView S380
+
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/DOSSIER.md`
+- `products/sagaview/CHANGELOG.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `docs/SOURCE_REGISTRY.md`
+- `GAPS.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## Saga Member stable public Preview alias
 
@@ -818,8 +845,8 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `CHANGELOG.md`
 - `SYNC_STATUS.md`
-| Informasi terakhir disinkronkan | SagaBook S397 exact `ff07a024a6017389343c965fc2c0046786b9ade3`; production tetap S385 exact main `154ab5e8e7049e1f0155b304ae9da7c03363bc69`. |
-| Status sinkronisasi | `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / AUDIO_UAT_PENDING / BUSINESS_READY=false`. |
+| Informasi terakhir disinkronkan | SagaView S380 exact candidate backend `129ed92a5cc9c5c199fb4082660e76ff7b12b74c` dan Studio `8257f491bc0866bd0de814d0f3cd3e9dd6336b85`; production tetap S373/Live Import. |
+| Status sinkronisasi | `PENDING CONFIRMATION` — knowledge sinkron, kandidat `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PHYSICAL_UAT_EXACT_PAIR_PENDING`, dan `BUSINESS_READY=false`. |
 
 ## SagaBook S397 hard-reload audio acceptance
 
@@ -6100,8 +6127,8 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `CHANGELOG.md`
 - `SYNC_STATUS.md`
-| Konflik | Tidak ada konflik; commerce tetap fail-closed dan source project tidak dipush sesuai penundaan owner. |
-| Error | Tidak ada error knowledge; 12 blocker readiness COYABAG tetap terbuka. |
+| Konflik | Tidak ada konflik source/production; tujuh receipt lama valid tetapi exact-pair match S380 tetap 0. |
+| Error | Tidak ada error knowledge; physical UAT exact pair masih menjadi gate fail-closed. |
 
 ## File yang berubah pada sinkronisasi ini (COYABAG Admin Stock Opname integrity)
 

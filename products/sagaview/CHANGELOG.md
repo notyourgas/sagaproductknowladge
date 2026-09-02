@@ -1,5 +1,28 @@
 # SagaView Changelog
 
+## 2026-09-03 - S380 exact candidate dan audit custody physical UAT
+
+- Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PHYSICAL_UAT_EXACT_PAIR_PENDING`;
+  `BUSINESS_READY=false`.
+- Before: release production S373 tetap aktif, sementara candidate backend
+  setelah performance, concurrency, dependency, dan lint hardening belum
+  mempunyai bukti physical UAT yang terikat ke exact pair terbaru.
+- After: exact backend `129ed92a5cc9c5c199fb4082660e76ff7b12b74c`
+  dan Studio `8257f491bc0866bd0de814d0f3cd3e9dd6336b85` terkunci sebagai
+  kandidat pushed dan locally validated. Audit custody membuktikan tujuh
+  receipt lama tetap utuh, tetapi exact-pair match 0 sehingga tidak ada bukti
+  yang dikonversi atau diikat ulang.
+- Evidence: Pint 127/127; full PHP 1.044/1.044 dan 13.382 assertion; build 5.097
+  modul; Composer/npm audit nol; rehearsal MySQL 105 migration/149 tabel;
+  backup/restore sintetis 200/200 dengan digest identik; tenant leak 0; serta
+  benchmark 100.000 row satu query pada count 50/200/500.
+- Boundary: production tetap backend
+  `5f642d83a9d23091f29cc356b2041bc310338812` release
+  `20260831080506-5f642d8` dan Studio `8257f491bc0866bd0de814d0f3cd3e9dd6336b85`
+  release `20260831081456-8257f49`. Physical UAT exact pair 12 gate dan
+  review manusia masih pending; tidak ada deploy pada slice ini.
+
 ## 2026-08-31 - S373 backend production activation tanpa downgrade Studio
 
 - Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /

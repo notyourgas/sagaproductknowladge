@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-03 - SagaView S380 candidate dan custody sync
+
+- Menyinkronkan exact candidate backend
+  `129ed92a5cc9c5c199fb4082660e76ff7b12b74c` dan Studio
+  `8257f491bc0866bd0de814d0f3cd3e9dd6336b85` sebagai `PUSHED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PHYSICAL_UAT_EXACT_PAIR_PENDING`.
+- Gate source, test, build, dependency, disposable database, backup/restore,
+  tenant isolation, dan benchmark count 50/200/500 lulus. Custody lama valid,
+  tetapi exact-pair match 0; bukti lama tidak dikonversi.
+- Production tidak berubah: backend release `20260831080506-5f642d8` dan Studio
+  release `20260831081456-8257f49`; `BUSINESS_READY=false`.
+- Dokumen terdampak: SagaView product/dossier/changelog/ledger, source registry,
+  gaps, portfolio, master knowledge, root changelog, dan sync status.
+
 ## 2026-09-03 - Saga Member stable public Preview alias sync
 
 - Mengunci `https://saga-member-platform.vercel.app` sebagai satu URL publik
