@@ -13,9 +13,9 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Field | Nilai |
 |---|---|
 | Waktu pembaruan terakhir | 2026-09-02 WIB |
-| Branch aktif | `codex/knowledge-sagabook-manual-booking-lifecycle-20260902` |
+| Branch aktif | `codex/s416-closing-payment-allocation-knowledge` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `ba43a65` |
+| Baseline sebelum pembaruan | `fb16984` |
 
 ## SagaBook manual-booking operational lifecycle
 
@@ -72,19 +72,20 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 ## SagaBook S416 closing payment allocation
 
-- Exact source `bd1d6193c0fabd29effc4be43865d8e8b8a1ba2e` pada PR #99
+- Exact merged source `1ce62c9d3d4afdef11fc3d8c2e8e83400fa8379d` pada PR #99
   memisahkan pembayaran awal Transfer Manual/QRIS dari add-on onsite Cash di
   breakdown Owner/Staff closing.
 - Preflight ledger server menjadi sumber authoritative; expected cash tetap net
   Cash server dan submit gagal tertutup bila breakdown per metode hilang.
-- Full Feature 1.319/1.319 (14.931 assertion), focused PHP 19/19 (141
+- Full Feature 1.325/1.325 (14.983 assertion), focused PHP 19/19 (141
   assertion), unit kontrak 3/3, browser Staff closing 1/1 sampai save/submit,
   TypeScript, build, format, dan audit Composer nol lulus. CommonMark dikunci
-  ke 2.10.0 untuk menutup advisory High baru. CI run `33591636326` lulus.
+  ke 2.10.0 untuk menutup advisory High baru. Dua run CI final lulus.
 - Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / CI_PASSED /
-  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
-  Production tetap exact `9ebdcf112f312f905c4213be9da1b80cf04e0ad3`,
-  release `20260901155248-9ebdcf1`.
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+  Production aktif pada `20260902061038-1ce62c9`; rollback kompatibel
+  `20260902051946-c71ac54`, backup/restore, verifier 23/23, dan canary read-only
+  agregat PR Ponorogo lulus. Authenticated Owner/operator UAT masih pending.
 
 ## File yang berubah pada sinkronisasi SagaBook S416
 

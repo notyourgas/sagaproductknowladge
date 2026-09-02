@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
 Updated: 2 September 2026 WIB
-Evidence status: SagaBook production aktif pada exact `c71ac5466e13f2a75903cc569bba0d9882933ea1`, immutable release `20260902051946-c71ac54`, dengan rollback tersedia `20260902045540-e37520d`. Lifecycle booking manual sudah `SOURCE_PUSHED / CI_PASSED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: jadwal manual menjadi komitmen operasional permanen yang terpisah dari status pembayaran dan tidak mengikuti expiry checkout web. Satu record terdampak dipulihkan secara conflict-checked dan audit-logged tanpa mengubahnya menjadi lunas. Status produk keseluruhan tetap `AUDIO_UAT_PENDING / PILOT_BLOCKED_BY_AUDIO_UAT / BUSINESS_READY=false`.
+Evidence status: SagaBook production aktif pada exact `1ce62c9d3d4afdef11fc3d8c2e8e83400fa8379d`, immutable release `20260902061038-1ce62c9`, dengan rollback kompatibel `20260902051946-c71ac54`. Perbaikan alokasi metode pembayaran closing S416 sudah `SOURCE_PUSHED / CI_PASSED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: pembayaran awal Transfer Manual/QRIS dan add-on onsite Cash tetap terpisah sesuai ledger server. Canary read-only PR Ponorogo tanggal 1 September 2026 membuktikan gross Rp290.000 teralokasi ke Transfer Manual Rp80.000, QRIS Rp50.000, dan Cash Rp160.000. Status produk keseluruhan tetap `AUDIO_UAT_PENDING / AUTHENTICATED_OPERATOR_UAT_PENDING / PILOT_BLOCKED / BUSINESS_READY=false`.
 
 ## Tujuan dokumen
 
@@ -46,20 +46,25 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   SOURCE_PUSHED / CI_PASSED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
   BUSINESS_READY=false`.
 
-- Kandidat S416 memperbaiki rekonsiliasi metode pembayaran pada Owner dan
+- S416 memperbaiki rekonsiliasi metode pembayaran pada Owner dan
   Staff closing. Booking dengan pembayaran awal Transfer Manual atau QRIS dan
   add-on onsite Cash kini mengambil breakdown authoritative dari ledger server:
   nilai booking awal tetap pada metode asal dan add-on tetap pada Cash, tanpa
   double count. Submit closing gagal tertutup bila breakdown per metode belum
-  tersedia. Exact source `bd1d6193c0fabd29effc4be43865d8e8b8a1ba2e`
-  lulus full Feature 1.319/1.319 (14.931 assertion), focused PHP 19/19 (141
+  tersedia. Exact merged source `1ce62c9d3d4afdef11fc3d8c2e8e83400fa8379d`
+  melalui PR #99 lulus full Feature 1.325/1.325 (14.983 assertion), focused PHP 19/19 (141
   assertion), unit kontrak 3/3, browser Staff closing sampai save/submit 1/1,
   TypeScript, build, format, dan audit Composer nol. Dependency CommonMark
   dinaikkan ke 2.10.0 setelah advisory High baru terdeteksi. CI run
-  `33591636326` lulus. Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
-  CI_PASSED /
-  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; PR #99 dan guarded release
-  tetap gate berikutnya.
+  `33595455405` dan `33595457795` lulus. Fresh encrypted backup, checksum,
+  disposable restore, exact artifact, atomic activation, dan verifier 23/23
+  lulus tanpa exception. Canary read-only PR Ponorogo menghasilkan Transfer
+  Manual Rp80.000, QRIS Rp50.000, Cash Rp160.000, gross Rp290.000. Production
+  aktif pada `20260902061038-1ce62c9` dengan rollback
+  `20260902051946-c71ac54`. Status `CONFIRMED / SOURCE_PUSHED /
+  LOCAL_VALIDATED / CI_PASSED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / BUSINESS_READY=false`; authenticated Owner/operator
+  UAT masih pending karena credential bridge lokal belum aktif.
 
 - S402 memperbaiki indeks baca history closing lintas cabang setelah MySQL
   8.4.9 membuktikan kandidat prefix awal tidak dipilih optimizer dan masih

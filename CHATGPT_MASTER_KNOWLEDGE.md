@@ -1,32 +1,23 @@
 # Saga Product — Master Knowledge for ChatGPT
 
 SagaBook production aktif pada exact
-`6da06fed08df020b4acab4a77c6ad3215ea32dad`, release
-`20260902044110-6da06fe`, rollback `20260901155248-9ebdcf1`. Rilis ini
-memperbaiki jam Add-on OTS: transaksi baru menulis tanggal/jam keuangan sesuai
-zona tenant, sementara fallback laporan historis mengonversi `created_at` UTC
-sebelum display dan sort tanpa rewrite ledger. Focused 14/14 (89 assertion),
-full Feature 1.352/1.352 (15.142 assertion), build/typecheck/format, audit
-dependency nol, dan CI PR #96/#98 lulus. Canary production read-only empat
-baris historis lulus 4/4 pada `Asia/Jakarta`. Verifier efektif 22/23 hanya
-karena `origin/main` maju setelah rilis ke perubahan lain; seluruh gate runtime
-lulus. Status `CONFIRMED / SOURCE_PUSHED / CI_PASSED / PRODUCTION_DEPLOYED /
-PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
-
-SagaBook S416 exact source `bd1d6193c0fabd29effc4be43865d8e8b8a1ba2e`
+`1ce62c9d3d4afdef11fc3d8c2e8e83400fa8379d`, release
+`20260902061038-1ce62c9`, rollback `20260902051946-c71ac54`. S416
 memperbaiki breakdown metode pembayaran Owner/Staff closing untuk transaksi
 campuran. Pembayaran awal Transfer Manual atau QRIS tetap pada metode asal,
 sedangkan add-on onsite Cash tetap masuk Cash; client tidak lagi memakai total
 akhir booking yang dapat double count. Preflight mengekspos breakdown ledger
 server dan submit gagal tertutup saat breakdown tidak tersedia. Focused PHP
-19/19 (141 assertion), full Feature 1.319/1.319 (14.931 assertion), unit 3/3,
+19/19 (141 assertion), full Feature 1.325/1.325 (14.983 assertion), unit 3/3,
 browser Staff closing 1/1 sampai save/submit, TypeScript, build, format, dan
 audit Composer nol lulus. CommonMark dikunci ke 2.10.0 setelah advisory High
-baru; CI run `33591636326` lulus seluruh quality gate. Status `CONFIRMED /
-SOURCE_PUSHED / LOCAL_VALIDATED / CI_PASSED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED /
-BUSINESS_READY=false`; PR #99 belum merge. Production tetap exact
-`9ebdcf112f312f905c4213be9da1b80cf04e0ad3`, release
-`20260901155248-9ebdcf1`.
+baru; dua run CI final lulus. Fresh encrypted backup, checksum, disposable
+restore, exact artifact, atomic activation, dan verifier independen 23/23
+lulus. Canary read-only PR Ponorogo menghasilkan gross Rp290.000 dengan
+Transfer Manual Rp80.000, QRIS Rp50.000, dan Cash Rp160.000. Status
+`CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / CI_PASSED /
+PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`;
+authenticated Owner/operator UAT masih pending.
 
 Saga Member Platform telah membuka program eksekusi Goal 0–6 hanya pada
 boundary lokal dan incremental spend Rp0. One-command local pilot launcher

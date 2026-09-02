@@ -38,20 +38,22 @@
 
 ## 2026-09-02 - SagaBook S416 closing allocation sync
 
-- Mencatat kandidat perbaikan breakdown metode pembayaran closing campuran
-  pada exact source `bd1d6193c0fabd29effc4be43865d8e8b8a1ba2e`, PR #99.
+- Menyinkronkan perbaikan breakdown metode pembayaran closing campuran pada
+  exact merged source `1ce62c9d3d4afdef11fc3d8c2e8e83400fa8379d`, PR #99.
 - Owner/Staff kini mengonsumsi breakdown ledger server; metode pembayaran awal
   dan add-on onsite tidak digabung atau dihitung ganda, dan fallback menahan
   submit bila breakdown belum tersedia.
 - Dokumen terdampak: `products/sagabook/PRODUCT.md`, `DOSSIER.md`, changelog
   produk/portfolio, master knowledge, dan `SYNC_STATUS.md`.
-- Klasifikasi `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
-- Full Feature 1.319/1.319 (14.931 assertion) dan audit Composer nol lulus;
+- Klasifikasi `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / CI_PASSED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+- Full Feature 1.325/1.325 (14.983 assertion) dan audit Composer nol lulus;
   CommonMark dikunci ke 2.10.0 untuk menutup advisory High baru.
-- CI run `33591636326` lulus seluruh quality gate exact source.
-- Production tetap exact `9ebdcf112f312f905c4213be9da1b80cf04e0ad3`, release
-  `20260901155248-9ebdcf1`; review/CI, merge, dan guarded release masih gate.
+- CI run `33595455405` dan `33595457795` lulus seluruh quality gate exact
+  source.
+- Production aktif pada `20260902061038-1ce62c9`; rollback
+  `20260902051946-c71ac54`, backup/restore, verifier 23/23, dan canary read-only
+  agregat PR Ponorogo lulus. Authenticated Owner/operator UAT masih pending.
 
 ## 2026-09-02 - Saga Member all-goals local execution sync
 

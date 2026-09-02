@@ -52,16 +52,23 @@
   ledger server. Nilai pembayaran awal dan add-on mempertahankan metode masing-
   masing, expected cash tetap net Cash server, dan submit gagal tertutup bila
   breakdown belum tersedia.
-- Exact source `bd1d6193c0fabd29effc4be43865d8e8b8a1ba2e` pada PR #99
+- Exact merged source `1ce62c9d3d4afdef11fc3d8c2e8e83400fa8379d` pada PR #99
   lulus focused PHP 19/19 (141 assertion), unit kontrak 3/3, browser Staff
   closing 1/1 sampai save/submit, TypeScript, build, dan format. Full Feature
-  1.319/1.319 (14.931 assertion) lulus setelah test clock lama dibuat
+  1.325/1.325 (14.983 assertion) lulus setelah rekonsiliasi dengan main
   deterministik. CommonMark dikunci ke 2.10.0; audit Composer nol advisory.
-- CI run `33591636326` lulus test-and-visual, MySQL 8.4, Saga AI, dan preview.
+- CI run `33595455405` dan `33595457795` lulus test-and-visual, MySQL 8.4,
+  Saga AI, dan preview.
+- Fresh encrypted backup, checksum, disposable restore, exact artifact, atomic
+  activation, dan verifier independen 23/23 lulus tanpa release exception.
+  Production aktif pada `20260902061038-1ce62c9`; rollback kompatibel
+  `20260902051946-c71ac54` tersedia.
+- Canary read-only PR Ponorogo tanggal 1 September 2026 membuktikan gross
+  Rp290.000 terpisah menjadi Transfer Manual Rp80.000, QRIS Rp50.000, dan Cash
+  Rp160.000. Tidak ada mutasi booking atau closing saat canary.
 - Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / CI_PASSED /
-  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`. Production tetap exact
-  `9ebdcf112f312f905c4213be9da1b80cf04e0ad3`, release
-  `20260901155248-9ebdcf1`; review/merge dan guarded release masih gate.
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`;
+  authenticated Owner/operator UAT masih pending.
 
 ## 2026-09-01 - S402 indeks baca history closing lintas cabang
 
