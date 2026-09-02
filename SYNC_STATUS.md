@@ -13,9 +13,34 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Field | Nilai |
 |---|---|
 | Waktu pembaruan terakhir | 2026-09-02 WIB |
-| Branch aktif | `codex/s419-sagabook-block-time-production-knowledge` |
+| Branch aktif | `codex/saga-member-vercel-d0-knowledge` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `9cdd27e` |
+| Baseline sebelum pembaruan | `9cd6d74526c2c54b102b7a9abceb96209e918027` |
+
+## Saga Member protected Vercel D0 shell
+
+- Exact source `c8c776407160c1af7692a068f6a3930ac6ea5b16` dan canonical
+  main CI `33652139197` lulus.
+- Production target Vercel `dpl_6QdcYS8XUTTjV7v7tfQ4SL211Q73` `READY`;
+  alias `saga-member-platform.vercel.app` dilindungi Vercel Authentication.
+- Remote build contract, security headers, exact-asset hash dan browser UAT
+  mobile/desktop lulus tanpa form, navigasi member, console error atau API
+  bisnis.
+- Status `CONFIRMED / VERCEL_PRODUCTION_TARGET_READY /
+  D0_DEPLOYED_INACTIVE / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+  Backend VPS dan seluruh provider tetap private/OFF.
+
+## File yang berubah pada sinkronisasi Saga Member Vercel D0
+
+- `products/saga-platform/PRODUCT.md`
+- `products/saga-platform/DOSSIER.md`
+- `products/saga-platform/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `DECISIONS.md`
+- `GAPS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook Block Time late-hour production
 

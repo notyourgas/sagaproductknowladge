@@ -8,6 +8,20 @@ Mencatat perubahan material control plane Saga.
 
 Fondasi production dan roadmap pemisahan boundary harus dibedakan.
 
+## 2026-09-02 — Saga Member Vercel D0 shell deployed
+
+- Exact Member source `c8c776407160c1af7692a068f6a3930ac6ea5b16`
+  dan main CI run `33652139197` lulus sebelum deployment.
+- Production target Vercel `dpl_6QdcYS8XUTTjV7v7tfQ4SL211Q73` berstatus
+  `READY` dengan protected alias `saga-member-platform.vercel.app`.
+- Remote build contract, security headers, exact-asset hash dan browser UAT
+  mobile/desktop lulus; shell memiliki nol form, nol navigasi member, nol
+  console error dan nol request API bisnis.
+- Status `CONFIRMED / SOURCE_PUSHED / CI_PASSED / VERCEL_PRODUCTION_TARGET_READY /
+  D0_DEPLOYED_INACTIVE / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+  Backend VPS, database, login, provider, QRIS, Push, NFC dan printer tidak
+  dihubungkan atau diaktifkan.
+
 ## 2026-09-02 — Saga Member production internal alpha D0 deployed
 
 - Release `20260902T1526Z-f763fc1-2eaa353` terpasang pada private VPS dengan

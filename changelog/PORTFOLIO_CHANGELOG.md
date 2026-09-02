@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-09-02 - Saga Member Vercel D0 shell deployed
+
+- Exact Member source `c8c776407160c1af7692a068f6a3930ac6ea5b16`
+  lulus canonical main CI `33652139197` dan remote build contract.
+- Vercel production target `dpl_6QdcYS8XUTTjV7v7tfQ4SL211Q73` `READY`;
+  protected alias `saga-member-platform.vercel.app` hanya menyajikan shell D0
+  inactive.
+- Security headers, exact-asset hash dan browser UAT mobile/desktop lulus;
+  tidak ada form/login, navigasi member, console error atau API bisnis.
+- Status `VERCEL_PRODUCTION_TARGET_READY / D0_DEPLOYED_INACTIVE /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`; backend/provider tetap
+  private/OFF dan tidak ada biaya layanan baru.
+
 ## 2026-09-02 - SagaBook Block Time late-hour production
 
 - Pemilih Block Time 24 jam sampai `23:59`, kalender/preview jam malam, dan

@@ -1,5 +1,16 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+Saga Member memiliki protected Vercel production target untuk shell D0
+fail-closed. Exact source `c8c776407160c1af7692a068f6a3930ac6ea5b16`,
+main CI `33652139197`, dan deployment
+`dpl_6QdcYS8XUTTjV7v7tfQ4SL211Q73` lulus. Alias
+`saga-member-platform.vercel.app` dilindungi Vercel Authentication dan tidak
+menyediakan login, data member, navigasi aplikasi, provider, atau request API
+bisnis. Backend VPS tetap private. Status exact:
+`CONFIRMED / VERCEL_PRODUCTION_TARGET_READY / D0_DEPLOYED_INACTIVE /
+PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`; jangan menyebut shell ini
+sebagai aplikasi Saga Member aktif, public launch, pilot, atau business-ready.
+
 Saga Member kini terpasang pada existing private VPS sebagai release
 `20260902T1526Z-f763fc1-2eaa353`, source Customer
 `f763fc19d8463cf2120387b0d06a57ffa5c868f7` dan Member

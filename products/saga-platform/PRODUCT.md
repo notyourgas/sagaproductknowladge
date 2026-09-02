@@ -68,6 +68,15 @@ Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
 
 ### Saga Member production internal alpha D0
 
+- Frontend fail-closed D0 dari exact Member source
+  `c8c776407160c1af7692a068f6a3930ac6ea5b16` kini juga terpasang pada target
+  production Vercel `dpl_6QdcYS8XUTTjV7v7tfQ4SL211Q73` dengan alias
+  `saga-member-platform.vercel.app`. Target ini dilindungi Vercel
+  Authentication dan hanya menampilkan shell inactive; ia bukan jalur login
+  atau koneksi ke backend VPS.
+- Remote build contract, security headers, exact-asset hash, dan browser UAT
+  mobile/desktop lulus. Shell mengekspos nol form, nol navigasi member, nol
+  console error, dan nol request API bisnis.
 - Saga Member kini terpasang pada existing private VPS sebagai release
   `20260902T1526Z-f763fc1-2eaa353` dengan source Customer
   `f763fc19d8463cf2120387b0d06a57ffa5c868f7` dan Member
@@ -77,7 +86,7 @@ Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
   bisnis, provider, public registration dan exposure publik tetap OFF.
 - Remote synthetic/Chrome UAT, forced RLS, backup/restore, checksum dan rollback
   rehearsal lulus. Denial D0 terbukti tidak mengubah revision/hash/timestamp.
-- Ini bukan `PRODUCTION_ACTIVATED`, public launch, multi-outlet, commercial
+- Ini bukan `PRODUCTION_ACTIVATED`, public app launch, multi-outlet, commercial
   tenant, business-ready, atau Goal 4 complete.
 - R0 menunggu exact domain, DNS/TLS, Resend terverifikasi, hashed internal
   allowlist, activation passport berumur pendek dan UAT ulang. Gateway/QRIS,
