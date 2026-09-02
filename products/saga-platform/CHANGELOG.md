@@ -8,6 +8,18 @@ Mencatat perubahan material control plane Saga.
 
 Fondasi production dan roadmap pemisahan boundary harus dibedakan.
 
+## 2026-09-03 — Saga Member stable public Preview alias
+
+- URL pengguna dikunci menjadi `https://saga-member-platform.vercel.app` dan
+  diarahkan ke exact Preview Home yang telah lulus canonical main CI serta
+  remote verification.
+- Alias memberi HTTP 200 publik. Deployment unik tetap dipakai untuk gate
+  internal; tidak ada `vercel --prod`, promote, custom domain, backend publik,
+  provider activation, atau data member.
+- Runtime tetap D0 fail-closed dan status tetap `CONFIRMED /
+  SAGA_MEMBER_FINALIZATION_PREVIEW_VALIDATED / PRODUCTION_ACTIVATED=false /
+  BUSINESS_READY=false`.
+
 ## 2026-09-03 — Saga Member Home dashboard preview validated
 
 - Customer Platform main `7b58d2ae62c564312d4a6adfc696c1a4f1a243eb`

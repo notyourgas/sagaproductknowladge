@@ -13,8 +13,13 @@ Customer main CI `33679725411` dan Member main CI `33679750600` lulus; Member
 otomatis nol Critical/Serious, dependency audit, security headers, dan
 exact-asset checks lulus. Status `CONFIRMED /
 SAGA_MEMBER_FINALIZATION_PREVIEW_VALIDATED / PRODUCTION_UNCHANGED /
-BUSINESS_READY=false`: Customer Platform baru belum dideploy dan stable
-production D0/provider/API bisnis/alias/ring/NFC tetap tidak berubah.
+BUSINESS_READY=false`: Customer Platform baru belum dideploy dan provider/API
+bisnis/ring/NFC tetap tidak berubah. Satu URL pengguna dikunci pada
+`https://saga-member-platform.vercel.app`; alias ini memberi HTTP 200 publik
+dan menunjuk exact Preview tervalidasi tanpa `vercel --prod` atau promote.
+Runtime tetap D0 fail-closed tanpa login, fixture interaktif, data member,
+provider, atau koneksi backend production. URL deployment unik hanya untuk
+verifikasi internal dan tidak boleh menjadi link utama pengguna.
 
 Saga Member consent dan session-recovery slice tervalidasi pada protected
 Vercel Preview. Customer Platform main

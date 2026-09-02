@@ -82,7 +82,14 @@ Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
   offline shell, WCAG otomatis nol Critical/Serious, audit dependency, header
   keamanan, dan exact-asset protected Preview verification lulus. Status
   `SAGA_MEMBER_FINALIZATION_PREVIEW_VALIDATED`; Customer Platform baru belum
-  dideploy dan stable production D0/provider/alias/ring/NFC tidak berubah.
+  dideploy, provider/ring/NFC tidak berubah, dan business readiness tetap
+  false.
+- URL publik kanonik Saga Member sekarang
+  `https://saga-member-platform.vercel.app`. Alias stabil tersebut menunjuk
+  exact Preview tervalidasi dari main `c2754dcf...`, memberi HTTP 200 publik,
+  dan tetap menampilkan D0 fail-closed tanpa login, fixture interaktif, data,
+  provider, atau backend production. URL deployment unik tidak menjadi link
+  pengguna dan tidak ada `vercel --prod` atau promote.
 
 - Consent akun berversi dan pemulihan sesi kini memiliki authority kanonik pada
   Customer Platform main `fa3502c5f022305293f0c4142315bfe60cc455a7`
