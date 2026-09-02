@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-140 - Saga Member memakai public dummy auto-demo tanpa login
+
+| Field | Nilai |
+|---|---|
+| Tanggal | 2026-09-03 |
+| Topik | Penyederhanaan akses untuk finalisasi fitur dan UI/UX Saga Member |
+| Keputusan | Gunakan satu aplikasi statis publik dengan seluruh data dummy yang langsung membuka Beranda. Login, password, OTP, cookie sesi, auth Function, backend dan provider tidak digunakan pada mode ini. |
+| Alasan | Andreas ingin memusatkan pengerjaan pada fitur dan UI/UX tanpa hambatan konfigurasi security/login selama fase demo. |
+| Alternatif | Mempertahankan login Andreas; melanjutkan protected Preview; mengaktifkan akun/backend/provider nyata. |
+| Dampak | URL stabil dapat langsung dicoba dan diiterasi, tetapi bukan akun member nyata, production backend, pilot transaksi, provider activation, atau business-ready. |
+| Pemberi keputusan | Andreas |
+| Status | `CONFIRMED / IMPLEMENTED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED / BUSINESS_READY=false`; menggantikan DEC-139 untuk target Vercel aktif |
+| Dokumen terkait | `products/saga-platform/PRODUCT.md`, `products/saga-platform/DOSSIER.md`, `products/saga-platform/CHANGELOG.md` |
+
 ## DEC-139 - Saga Member memakai protected Vercel D0 shell sebelum public activation
 
 | Field | Nilai |
@@ -32,7 +46,7 @@ keputusan pengganti.
 | Alternatif | Membuka backend VPS ke internet; mempublikasikan fixture OTP; menunggu domain/TLS/provider sebelum menyiapkan target frontend. |
 | Dampak | Target Vercel production berstatus READY dan browser-verifiable, tetapi produk tetap inactive dan bukan public launch, pilot, atau business-ready. |
 | Pemberi keputusan | Andreas |
-| Status | CONFIRMED |
+| Status | DEPRECATED untuk target Vercel aktif; digantikan DEC-140. Tetap dipertahankan sebagai histori deployment D0. |
 | Dokumen terkait | `products/saga-platform/PRODUCT.md`, `GAPS.md` |
 
 ## DEC-138 - Saga Member dipasang production-internal-alpha pada ring D0

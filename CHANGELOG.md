@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-03 - Saga Member public dummy auto-demo sync
+
+- Menyinkronkan Saga Member main
+  `9a914d148bb6773e03afd0c2b45efa39683afdb4`, PR #14, PR CI
+  `33690103124`, canonical main CI `33690188252`, dan runtime stabil
+  `https://saga-member-platform.vercel.app`.
+- Aplikasi statis langsung membuka Beranda dengan seluruh data dummy; login,
+  password, OTP, session, auth Function, backend dan provider tidak digunakan.
+- Klasifikasi `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / REAL_BACKEND_OFF / REAL_PROVIDER_OFF /
+  REAL_DATA_OFF / BUSINESS_READY=false`.
+- Dokumen terdampak: Saga Platform product/dossier/changelog, decision log,
+  portfolio, master knowledge, root changelog, dan sync status.
+
 ## 2026-09-03 - SagaView S380 candidate dan custody sync
 
 - Menyinkronkan exact candidate backend

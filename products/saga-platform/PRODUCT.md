@@ -68,6 +68,24 @@ Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
 
 ### Saga Member production internal alpha D0
 
+- Saga Member main `9a914d148bb6773e03afd0c2b45efa39683afdb4`
+  (PR #14) sekarang menjalankan `PUBLIC_DUMMY_DEMO` sebagai aplikasi statis
+  publik pada `https://saga-member-platform.vercel.app`. Pengunjung langsung
+  masuk ke Beranda tanpa login, password, OTP, cookie sesi, atau provider auth.
+- Seluruh isi Home, Reward, Jelajah Saga, Aktivitas, dan Profil adalah fixture
+  dummy/simulasi. Fungsi `/api/auth`, helper auth, serta empat environment
+  variable auth lama telah dihapus dari runtime aktif; deployment Vercel tidak
+  memiliki Function maupun environment variable.
+- PR CI `33690103124` dan canonical main CI `33690188252` lulus. Unit 40/40,
+  browser acceptance, Vercel acceptance, dependency audit nol vulnerability,
+  serta remote UAT 390x844 dan 1440x900 pada URL stabil lulus tanpa request
+  auth/backend/provider.
+- Status kanonik demo ini `CONFIRMED /
+  SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED /
+  REAL_BACKEND_OFF / REAL_PROVIDER_OFF / REAL_DATA_OFF / BUSINESS_READY=false`.
+  Ini adalah production-hosted demo, bukan login member nyata, production
+  backend, pilot transaksi, provider activation, atau business-ready.
+
 - Home dashboard mobile-first kini tervalidasi pada Saga Member main
   `c2754dcf5fe5cccc10993b0eb50a10003949c32e` (PR #10). Beranda menyajikan
   empat destinasi scan-first Coffee, Studio, Reward, dan Quest, progress tier,

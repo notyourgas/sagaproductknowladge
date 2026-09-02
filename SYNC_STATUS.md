@@ -13,9 +13,34 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Field | Nilai |
 |---|---|
 | Waktu pembaruan terakhir | 2026-09-03 WIB |
-| Branch aktif | `codex/s380-sagaview-status-sync` |
+| Branch aktif | `codex/saga-member-public-dummy-20260903` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `3d8c0a7418defc1a04e7725824258dbe3a80a0d9` |
+| Baseline sebelum pembaruan | `fc25cb2fc5fcfb4a106779f3de8f30d00d417de9` |
+
+## Saga Member public dummy auto-demo production
+
+- Saga Member main `9a914d148bb6773e03afd0c2b45efa39683afdb4`
+  (PR #14) aktif pada `https://saga-member-platform.vercel.app` sebagai
+  aplikasi statis dummy yang langsung membuka Beranda.
+- CI PR `33690103124` dan canonical main `33690188252` lulus bersama 40/40
+  unit test, browser/Vercel acceptance, dependency audit, dan remote UAT
+  mobile/desktop.
+- Login/password/OTP/session, auth Function, backend, provider, dan data nyata
+  tidak digunakan. Empat environment variable auth lama sudah dihapus.
+- Status `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / REAL_BACKEND_OFF / REAL_PROVIDER_OFF /
+  REAL_DATA_OFF / BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi Saga Member public dummy demo
+
+- `products/saga-platform/PRODUCT.md`
+- `products/saga-platform/DOSSIER.md`
+- `products/saga-platform/CHANGELOG.md`
+- `DECISIONS.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaView S380 candidate dan custody sync
 
