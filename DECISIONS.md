@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-139 - Saga Member memakai protected Vercel D0 shell sebelum public activation
+
+| Field | Nilai |
+|---|---|
+| Tanggal | 2026-09-02 |
+| Topik | Target deployment frontend Saga Member |
+| Keputusan | Deploy frontend Saga Member ke Vercel terlebih dahulu sebagai shell D0 fail-closed pada plan existing tanpa biaya baru. Vercel Authentication tetap aktif; login, backend, data bisnis dan provider tidak dihubungkan. |
+| Alasan | Menyediakan target distribusi frontend yang dapat diverifikasi tanpa membuka private VPS atau melewati prasyarat R0. |
+| Alternatif | Membuka backend VPS ke internet; mempublikasikan fixture OTP; menunggu domain/TLS/provider sebelum menyiapkan target frontend. |
+| Dampak | Target Vercel production berstatus READY dan browser-verifiable, tetapi produk tetap inactive dan bukan public launch, pilot, atau business-ready. |
+| Pemberi keputusan | Andreas |
+| Status | CONFIRMED |
+| Dokumen terkait | `products/saga-platform/PRODUCT.md`, `GAPS.md` |
+
 ## DEC-138 - Saga Member dipasang production-internal-alpha pada ring D0
 
 | Field | Nilai |

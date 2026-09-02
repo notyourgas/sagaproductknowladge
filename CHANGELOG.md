@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-02 - Saga Member Vercel D0 shell sync
+
+- Menyinkronkan exact source
+  `c8c776407160c1af7692a068f6a3930ac6ea5b16`, main CI `33652139197`, dan
+  Vercel deployment `dpl_6QdcYS8XUTTjV7v7tfQ4SL211Q73`.
+- Protected alias `saga-member-platform.vercel.app` hanya menyajikan shell D0
+  inactive; backend VPS, login, data bisnis dan provider tidak terhubung.
+- Remote build, security headers, exact-asset hash dan browser UAT
+  mobile/desktop lulus.
+- Klasifikasi `CONFIRMED / VERCEL_PRODUCTION_TARGET_READY /
+  D0_DEPLOYED_INACTIVE / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+- Dokumen terdampak: Saga Platform product/dossier/changelog, portfolio,
+  master knowledge, decisions, gaps, root changelog dan sync status.
+
 ## 2026-09-02 - SagaBook Block Time late-hour production sync
 
 - Menyinkronkan exact merge
