@@ -1,5 +1,21 @@
 # Portfolio Changelog
 
+## 2026-09-02 - SagaBook manual-booking lifecycle production
+
+- Booking buatan operator kini mengunci jadwal permanen meski pembayaran masih
+  unpaid/pending dan tetap terlihat pada `Hari Ini`; expiry checkout web tidak
+  lagi dapat membatalkan source manual.
+- Scheduler, payment-expiry service, dan lazy availability cleanup mencakup
+  guard yang sama. Bukti transfer tetap menunggu verifikasi dan tidak otomatis
+  paid; expiry booking web tidak berubah.
+- Exact source `c71ac5466e13f2a75903cc569bba0d9882933ea1`, PR #100/#101;
+  CI lengkap, MySQL 8.4, browser/visual, focused lifecycle 44/44, dan regression
+  web 3/3 lulus.
+- Production aktif pada `20260902051946-c71ac54` dengan rollback
+  `20260902045540-e37520d`. Satu record terdampak dipulihkan secara
+  conflict-checked dan audit-logged tanpa publikasi data customer.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+
 ## 2026-09-02 - SagaBook Add-on OTS tenant-timezone production
 
 - Add-on OTS baru memakai tanggal/jam finansial zona tenant; fallback laporan

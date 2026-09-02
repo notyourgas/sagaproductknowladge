@@ -750,6 +750,27 @@ dalam satu dokumen public-safe.
   Authenticated staff UAT dan studio pilot tetap residual;
   `BUSINESS_READY=false`.
 
+- Lifecycle jadwal Manual Booking exact source
+  `c71ac5466e13f2a75903cc569bba0d9882933ea1`: `CONFIRMED /
+  SOURCE_PUSHED / CI_PASSED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`. Booking direct-entry dan approved manual request
+  dikunci sebagai sesi operasional permanen; status jadwal tidak lagi
+  bergantung pada expiry pembayaran. Scheduler, payment-expiry service, dan
+  lazy availability cleanup mengonversi hold manual legacy serta hanya
+  mengakhiri provider session yang kedaluwarsa tanpa membatalkan booking.
+  Booking manual `pending_payment` atau `pending_verification` dengan pembayaran
+  `unpaid`/`pending` tetap terlihat di `Hari Ini`; bukti pembayaran tetap tidak
+  mengubah status menjadi paid. Checkout web mempertahankan expiry dan release
+  slot lama. PR #100/#101, dua putaran CI lengkap, MySQL 8.4, browser/visual,
+  focused lifecycle 44/44 (322 assertion), dan web expiry regression 3/3 (13
+  assertion) lulus. Release `20260902051946-c71ac54` aktif dengan rollback
+  `20260902045540-e37520d`; backup terenkripsi, disposable restore, exact
+  artifact, atomic switch, serta public smoke lulus tanpa exception. Satu
+  record produksi terdampak dipulihkan secara atomik setelah bukti aktif dan
+  ketiadaan konflik diverifikasi; kode booking dan data customer tidak masuk
+  knowledge publik. Authenticated UAT/pilot tetap terpisah dan
+  `BUSINESS_READY=false`.
+
 - Override jadwal Manual Booking S290 exact source
   `0dda9350656d4454bfeed3744c35a3b7ff7673fa`: `CONFIRMED / PUSHED /
   UIUX_VALIDATED / QA_VALIDATED / SECURITY_VALIDATED /

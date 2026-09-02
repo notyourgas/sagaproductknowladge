@@ -1,5 +1,25 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-02 - SagaBook manual-booking lifecycle production sync
+
+- Menyinkronkan exact source
+  `c71ac5466e13f2a75903cc569bba0d9882933ea1`, immutable release
+  `20260902051946-c71ac54`, dan rollback `20260902045540-e37520d`.
+- Manual booking menjadi komitmen jadwal permanen yang terpisah dari expiry
+  pembayaran web; `Hari Ini`, scheduler, payment expiry, dan lazy availability
+  cleanup memakai boundary yang sama.
+- Bukti transfer tetap memerlukan verifikasi dan tidak otomatis paid. Jalur web
+  tetap membatalkan hold expired.
+- PR #100/#101, dua full CI, MySQL 8.4, browser/visual, focused lifecycle 44/44
+  (322 assertion), web regression 3/3 (13 assertion), backup/restore, atomic
+  activation, dan public smoke lulus.
+- Satu record terdampak dipulihkan secara conflict-checked dan audit-logged;
+  knowledge publik tidak memuat PII atau kode booking.
+- Dokumen terdampak: ringkasan, dossier, feature ledger, changelog produk dan
+  portfolio, master knowledge, serta status sinkronisasi.
+- Klasifikasi `CONFIRMED / SOURCE_PUSHED / CI_PASSED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+
 ## 2026-09-02 - SagaBook Add-on OTS timezone production sync
 
 - Menyinkronkan exact source

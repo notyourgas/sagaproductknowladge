@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
 Updated: 2 September 2026 WIB
-Evidence status: SagaBook production aktif pada exact `6da06fed08df020b4acab4a77c6ad3215ea32dad`, immutable release `20260902044110-6da06fe`, dengan rollback `20260901155248-9ebdcf1`. Perbaikan waktu Add-on OTS sudah `SOURCE_PUSHED / CI_PASSED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; canary read-only empat baris historis lulus. `origin/main` kemudian maju ke `e37520dc589aa53f5c31f1efd67b570d94df9be2` melalui perubahan lain, sehingga runtime sengaja tetap pada exact release yang sudah diverifikasi. Status produk keseluruhan tetap `AUDIO_UAT_PENDING / PILOT_BLOCKED_BY_AUDIO_UAT / BUSINESS_READY=false`.
+Evidence status: SagaBook production aktif pada exact `c71ac5466e13f2a75903cc569bba0d9882933ea1`, immutable release `20260902051946-c71ac54`, dengan rollback tersedia `20260902045540-e37520d`. Lifecycle booking manual sudah `SOURCE_PUSHED / CI_PASSED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: jadwal manual menjadi komitmen operasional permanen yang terpisah dari status pembayaran dan tidak mengikuti expiry checkout web. Satu record terdampak dipulihkan secara conflict-checked dan audit-logged tanpa mengubahnya menjadi lunas. Status produk keseluruhan tetap `AUDIO_UAT_PENDING / PILOT_BLOCKED_BY_AUDIO_UAT / BUSINESS_READY=false`.
 
 ## Tujuan dokumen
 
@@ -15,6 +15,22 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
+
+- Booking yang dibuat langsung oleh operator kini menjadi komitmen jadwal
+  permanen walau pembayaran masih `unpaid` atau `pending`. Hold pendek hanya
+  berlaku untuk checkout website; scheduler, payment-expiry service, dan lazy
+  cleanup saat kalender dibaca mempertahankan booking manual, mengonversi hold
+  legacy menjadi lock booking permanen, dan tetap menampilkannya di `Hari Ini`.
+  Bukti transfer tetap membutuhkan verifikasi dan tidak otomatis menandai
+  lunas. Jalur web yang hold-nya kedaluwarsa tetap dibatalkan dan dilepas.
+  Exact source `c71ac5466e13f2a75903cc569bba0d9882933ea1` melalui PR #100
+  dan #101 lulus dua putaran CI lengkap, kontrak MySQL 8.4, browser/visual,
+  focused lifecycle 44/44 (322 assertion), serta regression web 3/3 (13
+  assertion). Production aktif pada release `20260902051946-c71ac54` dengan
+  rollback `20260902045540-e37520d`; encrypted backup, checksum, disposable
+  restore, exact artifact, atomic activation, dan public smoke lulus tanpa
+  exception. Status `CONFIRMED / SOURCE_PUSHED / CI_PASSED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
 
 - Waktu transaksi Add-on OTS kini konsisten dengan zona waktu tenant. Baris
   baru menulis `transaction_date` dan `transaction_time` memakai waktu tenant;
