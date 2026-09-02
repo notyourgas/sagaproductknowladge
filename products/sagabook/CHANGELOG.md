@@ -1,5 +1,26 @@
 # SagaBook Changelog
 
+## 2026-09-02 - S414 mobile Branch Hours dan tab settings
+
+- Sebelum: Jam Operasional Cabang selalu memakai grid empat kolom desktop dan
+  tiga tab settings belum mempunyai semantics state aktif/focus yang lengkap;
+  layout berisiko pecah pada ponsel sempit.
+- Setelah: mobile memakai kartu per cabang dengan label Buka, Tutup, Hari
+  libur, dan tombol edit selebar kartu; desktop memakai tabel semantik. Tab
+  settings mempunyai satu state terpilih, focus ring, target minimal 44 piksel,
+  dan navigasi keyboard.
+- Matrix Chromium lulus pada 320, 360, 375, 390, 393, 412, dan 430 piksel,
+  termasuk reflow efektif 200%, forced-colors, reduced-motion, no-overflow,
+  serta desktop 1440x900. Focused browser 2/2, role/permission 3/3 (126
+  assertion), tenant isolation 3/3 (18 assertion), typecheck, build, design
+  audit, dan npm audit nol lulus.
+- Exact candidate `454d10f91b4486995ea6e80eb570024d2c6baec5` berstatus
+  `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED / BUSINESS_READY=false`. Production tetap exact
+  `9ebdcf112f312f905c4213be9da1b80cf04e0ad3`, release
+  `20260901155248-9ebdcf1`; API, database, payment, dan data tenant tidak
+  berubah.
+
 ## 2026-09-01 - S402 indeks baca history closing lintas cabang
 
 - Sebelum: kandidat prefix tenant/date tetap tidak dipilih optimizer MySQL dan

@@ -1,6 +1,21 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 1 September 2026 WIB
+Evidence cut-off: 2 September 2026 WIB
+
+Mobile Branch Hours S414 exact candidate
+`454d10f91b4486995ea6e80eb570024d2c6baec5` telah `CONFIRMED /
+SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+PRODUCTION_UNCHANGED`. Tab pengaturan cabang kini mempunyai state aktif,
+focus, dan keyboard semantics yang konsisten; ringkasan jam operasional
+berubah dari grid desktop tetap menjadi kartu mobile serta tabel desktop
+semantik. Matrix Chromium lulus pada lebar 320, 360, 375, 390, 393, 412, dan
+430 piksel, termasuk reflow efektif 200%, forced-colors, reduced-motion,
+target sentuh 44 piksel, no-overflow, dan desktop 1440x900. Focused browser
+2/2, role/permission 3/3 dengan 126 assertion, tenant isolation 3/3 dengan 18
+assertion, typecheck, build, design audit, dan npm audit nol lulus. Tidak ada
+perubahan API, database, payment, tenant data, atau production. Next gate
+adalah review/merge exact candidate sebelum guarded release; authenticated
+production UAT dan `BUSINESS_READY` belum boleh diklaim.
 
 Closing-history read indexes S402 exact candidate
 `010b2c67025c51494a66b12b1e8b6778667660c6` telah `CONFIRMED /

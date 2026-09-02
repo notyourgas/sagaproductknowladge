@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 1 September 2026 WIB
-Evidence status: SagaBook production aktif pada exact `fdf4155c0a294a6af8b41a819ba40e6d371f3ba8`, immutable release `20260901083148-fdf4155`. Kandidat indeks history closing S402 exact `010b2c67025c51494a66b12b1e8b6778667660c6` sudah `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; production belum memakai migration ini. Status keseluruhan `AUDIO_UAT_PENDING / PILOT_BLOCKED_BY_AUDIO_UAT / BUSINESS_READY=false`.
+Updated: 2 September 2026 WIB
+Evidence status: SagaBook production aktif pada exact `9ebdcf112f312f905c4213be9da1b80cf04e0ad3`, immutable release `20260901155248-9ebdcf1`. Kandidat mobile Branch Hours S414 exact `454d10f91b4486995ea6e80eb570024d2c6baec5` sudah `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; production belum memakai perubahan ini. Status keseluruhan `AUDIO_UAT_PENDING / PILOT_BLOCKED_BY_AUDIO_UAT / BUSINESS_READY=false`.
 
 ## Tujuan dokumen
 
@@ -15,6 +15,18 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
+
+- S414 memperbaiki layout Jam Operasional Cabang yang sebelumnya memakai grid
+  desktop tetap pada semua viewport. Mobile kini memakai kartu per cabang,
+  desktop memakai tabel semantik, dan tab Cabang/Studio Calendar/Jam
+  Operasional mempunyai state aktif, focus, serta navigasi keyboard yang
+  konsisten. Matrix Chromium lulus pada lebar 320, 360, 375, 390, 393, 412,
+  dan 430 piksel, ditambah reflow efektif 200%, forced-colors,
+  reduced-motion, target sentuh 44 piksel, no-overflow, dan desktop 1440x900.
+  Focused browser 2/2, role/permission 3/3 dengan 126 assertion, tenant
+  isolation 3/3 dengan 18 assertion, typecheck, build, design audit, dan npm
+  audit nol lulus. Exact candidate belum dideploy dan tidak mengubah API,
+  database, payment, atau data tenant.
 
 - S402 memperbaiki indeks baca history closing lintas cabang setelah MySQL
   8.4.9 membuktikan kandidat prefix awal tidak dipilih optimizer dan masih

@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-09-02 - SagaBook S414 mobile Branch Hours
+
+- Jam Operasional Cabang kini memakai kartu pada ponsel dan tabel semantik
+  pada desktop; tab settings mempunyai state aktif, focus, dan keyboard
+  behavior yang konsisten.
+- Matrix Chromium 320/360/375/390/393/412/430, reflow efektif 200%,
+  forced-colors, reduced-motion, 44-pixel targets, no-overflow, dan desktop
+  1440x900 lulus bersama focused PHP, typecheck, build, design audit, serta
+  npm audit nol.
+- Exact candidate `454d10f91b4486995ea6e80eb570024d2c6baec5` berstatus
+  `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED / BUSINESS_READY=false`; production tetap release
+  `20260901155248-9ebdcf1`.
+
 ## 2026-09-02 - Saga Member all-goals local execution started
 
 - Master execution plan dan prompt Goal 0–6 tersedia dengan boundary Rp0.

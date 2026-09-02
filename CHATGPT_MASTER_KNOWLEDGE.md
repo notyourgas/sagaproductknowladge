@@ -1,5 +1,18 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+SagaBook S414 exact candidate `454d10f91b4486995ea6e80eb570024d2c6baec5`
+memperbaiki Jam Operasional Cabang dari grid desktop tetap menjadi kartu mobile
+dan tabel desktop semantik. Tab settings kini mempunyai satu state aktif,
+focus, target 44 piksel, dan navigasi keyboard yang konsisten. Matrix Chromium
+320/360/375/390/393/412/430, reflow efektif 200%, forced-colors,
+reduced-motion, no-overflow, desktop 1440x900, focused PHP, typecheck, build,
+design audit, serta npm audit nol lulus. Status `SOURCE_PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED /
+BUSINESS_READY=false`; production tetap exact
+`9ebdcf112f312f905c4213be9da1b80cf04e0ad3`, release
+`20260901155248-9ebdcf1`. Tidak ada perubahan API, database, payment, atau
+data tenant.
+
 Saga Member Platform telah membuka program eksekusi Goal 0–6 hanya pada
 boundary lokal dan incremental spend Rp0. One-command local pilot launcher
 menghidupkan hub loopback, Member PWA, Customer API dan SagaOPS OWNER/STAFF
