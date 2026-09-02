@@ -7,8 +7,8 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Kandidat Block Time jam malam exact
-  `43535f70295b0f1de48a0d0ba1224261e67ab500` pada PR #102 menyediakan
+- Block Time jam malam exact merge
+  `e0f221435df3b2b8c92649fc0c69da70b1d207dc` dari PR #102 menyediakan
   pemilih jam/menit 24 jam yang konsisten sampai `23:59` di desktop dan mobile.
   Kalender harian serta preview dampak tidak lagi berhenti pada rentang jam
   hardcoded, dan edit dari `Semua Cabang` tetap memakai cabang asal block.
@@ -16,9 +16,14 @@ dalam satu dokumen public-safe.
   tenant, dan upaya Staff memindahkan block dari cabang yang tidak ditugaskan.
   Focused controller 11/11 (84 assertion), availability 6/6 (19 assertion),
   Playwright CRUD desktop 1/1, picker desktop/mobile 2/2, typecheck, build,
-  Pint, dan diff check lulus. Status `CONFIRMED / SOURCE_PUSHED /
-  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED /
-  BUSINESS_READY=false`; production tetap exact `1ce62c9d`.
+  Pint, diff check, dan main CI lulus. Fresh encrypted backup run
+  `20260902T154254Z`, checksum, disposable restore, exact artifact, atomic
+  activation, verifier independen 23/23, dan public/security smoke 3/3 lulus.
+  Production aktif pada `20260902154557-e0f2214` dengan rollback
+  `20260902061038-1ce62c9`. Status `CONFIRMED / SOURCE_PUSHED /
+  LOCAL_VALIDATED / CI_PASSED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / BUSINESS_READY=false`; authenticated operator UAT
+  masih pending karena credential bridge lokal belum aktif.
 
 - Exact merged source `1ce62c9d3d4afdef11fc3d8c2e8e83400fa8379d`
   menutup double count pada breakdown closing untuk pembayaran campuran.

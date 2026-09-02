@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
 Updated: 2 September 2026 WIB
-Evidence status: SagaBook production aktif pada exact `1ce62c9d3d4afdef11fc3d8c2e8e83400fa8379d`, immutable release `20260902061038-1ce62c9`, dengan rollback kompatibel `20260902051946-c71ac54`. Perbaikan alokasi metode pembayaran closing S416 sudah `SOURCE_PUSHED / CI_PASSED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: pembayaran awal Transfer Manual/QRIS dan add-on onsite Cash tetap terpisah sesuai ledger server. Canary read-only PR Ponorogo tanggal 1 September 2026 membuktikan gross Rp290.000 teralokasi ke Transfer Manual Rp80.000, QRIS Rp50.000, dan Cash Rp160.000. Kandidat Block Time jam malam pada source `43535f70295b0f1de48a0d0ba1224261e67ab500` / PR #102 baru berstatus `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`. Status produk keseluruhan tetap `AUDIO_UAT_PENDING / AUTHENTICATED_OPERATOR_UAT_PENDING / PILOT_BLOCKED / BUSINESS_READY=false`.
+Evidence status: SagaBook production aktif pada exact `e0f221435df3b2b8c92649fc0c69da70b1d207dc`, immutable release `20260902154557-e0f2214`, dengan rollback kompatibel `20260902061038-1ce62c9`. Perbaikan Block Time jam malam dari PR #102 sudah `SOURCE_PUSHED / CI_PASSED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: pemilih 24 jam tersedia sampai `23:59`, kalender/preview mengikuti jam malam, dan edit dari `Semua Cabang` mempertahankan cabang asal. Fresh encrypted backup, checksum, disposable restore, exact artifact, atomic activation, verifier independen 23/23, serta public/security smoke 3/3 lulus. Status produk keseluruhan tetap `AUDIO_UAT_PENDING / AUTHENTICATED_OPERATOR_UAT_PENDING / PILOT_BLOCKED / BUSINESS_READY=false`.
 
 ## Tujuan dokumen
 
@@ -16,7 +16,7 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
 
-- Kandidat PR #102 mengganti input Block Time yang bergantung pada time picker
+- PR #102 mengganti input Block Time yang bergantung pada time picker
   native browser menjadi pemilih 24 jam eksplisit (`00:00` sampai `23:59`).
   Kalender harian dan preview dampak kini memanjang mengikuti jam operasi,
   booking, atau block malam yang aktif; edit dari tampilan `Semua Cabang`
@@ -24,10 +24,15 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   takeover ID lintas tenant maupun perpindahan block dari cabang yang tidak
   didelegasikan. Exact source `43535f70295b0f1de48a0d0ba1224261e67ab500`
   lulus 17 focused PHP test (103 assertion), Playwright CRUD desktop 1/1,
-  picker desktop/mobile 2/2, typecheck, build, Pint, dan diff check. Status
-  `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
-  PRODUCTION_UNCHANGED / BUSINESS_READY=false`; merge, guarded release, dan
-  UAT operator pada perangkat nyata masih diperlukan.
+  picker desktop/mobile 2/2, typecheck, build, Pint, dan diff check. Exact
+  merge `e0f221435df3b2b8c92649fc0c69da70b1d207dc` lulus seluruh main
+  CI. Production aktif pada `20260902154557-e0f2214` dengan rollback
+  `20260902061038-1ce62c9`; backup run `20260902T154254Z`, disposable restore,
+  atomic activation, verifier 23/23, dan public/security smoke 3/3 lulus.
+  Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / CI_PASSED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`;
+  authenticated operator UAT masih pending karena credential bridge lokal
+  belum aktif.
 
 - Booking yang dibuat langsung oleh operator kini menjadi komitmen jadwal
   permanen walau pembayaran masih `unpaid` atau `pending`. Hold pendek hanya
