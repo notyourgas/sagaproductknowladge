@@ -19,6 +19,17 @@ Transfer Manual Rp80.000, QRIS Rp50.000, dan Cash Rp160.000. Status
 PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`;
 authenticated Owner/operator UAT masih pending.
 
+Kandidat SagaBook Block Time pada exact
+`43535f70295b0f1de48a0d0ba1224261e67ab500` / PR #102 mengganti time picker
+native dengan pemilih clock 24 jam eksplisit sampai `23:59`, memperluas
+kalender/preview mengikuti jam malam, dan menjaga cabang asal saat edit dari
+`Semua Cabang`. Backend menolak jam invalid, takeover ID lintas tenant, dan
+edit Staff terhadap block cabang yang tidak didelegasikan. Focused PHP 17/17
+(103 assertion), Playwright 3/3 desktop/mobile, typecheck, build, dan Pint
+lulus. Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`;
+production tetap exact `1ce62c9d` dan belum memuat perbaikan ini.
+
 Saga Member Platform telah membuka program eksekusi Goal 0–6 hanya pada
 boundary lokal dan incremental spend Rp0. One-command local pilot launcher
 menghidupkan hub loopback, Member PWA, Customer API dan SagaOPS OWNER/STAFF

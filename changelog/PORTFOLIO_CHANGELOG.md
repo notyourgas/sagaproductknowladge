@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-09-02 - SagaBook Block Time late-hour candidate
+
+- Pemilih Block Time kini memakai clock 24 jam eksplisit sampai `23:59` pada
+  desktop/mobile; kalender harian dan preview ikut menampilkan jam malam.
+- Edit dari `Semua Cabang` mempertahankan cabang asal. Backend menolak waktu
+  invalid, collision ID lintas tenant, dan edit Staff lintas delegasi cabang.
+- Exact source `43535f70295b0f1de48a0d0ba1224261e67ab500`, PR #102;
+  focused PHP 17/17 (103 assertion), Playwright 3/3, typecheck, build, Pint,
+  dan diff check lulus.
+- Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED / BUSINESS_READY=false`; production SagaBook tetap
+  exact `1ce62c9d`.
+
 ## 2026-09-02 - SagaBook manual-booking lifecycle production
 
 - Booking buatan operator kini mengunci jadwal permanen meski pembayaran masih

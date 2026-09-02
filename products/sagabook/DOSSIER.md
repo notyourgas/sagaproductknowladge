@@ -7,6 +7,19 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Kandidat Block Time jam malam exact
+  `43535f70295b0f1de48a0d0ba1224261e67ab500` pada PR #102 menyediakan
+  pemilih jam/menit 24 jam yang konsisten sampai `23:59` di desktop dan mobile.
+  Kalender harian serta preview dampak tidak lagi berhenti pada rentang jam
+  hardcoded, dan edit dari `Semua Cabang` tetap memakai cabang asal block.
+  Validasi server menolak nilai di luar `00:00-23:59`, collision ID lintas
+  tenant, dan upaya Staff memindahkan block dari cabang yang tidak ditugaskan.
+  Focused controller 11/11 (84 assertion), availability 6/6 (19 assertion),
+  Playwright CRUD desktop 1/1, picker desktop/mobile 2/2, typecheck, build,
+  Pint, dan diff check lulus. Status `CONFIRMED / SOURCE_PUSHED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED /
+  BUSINESS_READY=false`; production tetap exact `1ce62c9d`.
+
 - Exact merged source `1ce62c9d3d4afdef11fc3d8c2e8e83400fa8379d`
   menutup double count pada breakdown closing untuk pembayaran campuran.
   Owner/Staff memakai breakdown ledger server sehingga pembayaran awal
