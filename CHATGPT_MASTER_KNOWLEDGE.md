@@ -1,5 +1,19 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+Saga Member saat ini menyediakan `PUBLIC_DUMMY_DEMO` statis pada
+`https://saga-member-platform.vercel.app` dari exact main
+`9a914d148bb6773e03afd0c2b45efa39683afdb4` (PR #14). Pengunjung langsung
+masuk ke Beranda; Home, Reward, Jelajah Saga, Aktivitas, dan Profil memakai
+fixture dummy. Tidak ada login, password, OTP, cookie sesi, auth Function,
+backend bisnis, provider, atau data member nyata. PR CI `33690103124`, main CI
+`33690188252`, 40/40 unit test, browser/Vercel acceptance, dependency audit,
+dan remote UAT mobile/desktop pada URL stabil lulus tanpa request
+auth/backend/provider. Status exact `CONFIRMED /
+SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED /
+REAL_BACKEND_OFF / REAL_PROVIDER_OFF / REAL_DATA_OFF / BUSINESS_READY=false`.
+Jangan menyebut demo ini sebagai akun member nyata, provider aktif, pilot
+transaksi, production backend, atau business-ready.
+
 SagaView S380 exact candidate memakai backend
 `129ed92a5cc9c5c199fb4082660e76ff7b12b74c` dan Studio
 `8257f491bc0866bd0de814d0f3cd3e9dd6336b85`. Statusnya `CONFIRMED / PUSHED /

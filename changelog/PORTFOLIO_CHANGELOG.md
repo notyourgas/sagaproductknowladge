@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-09-03 - Saga Member public dummy auto-demo production
+
+- Saga Member main `9a914d148bb6773e03afd0c2b45efa39683afdb4`
+  (PR #14) kini aktif sebagai aplikasi dummy statis pada satu URL stabil:
+  `https://saga-member-platform.vercel.app`.
+- Pengguna langsung masuk ke Beranda tanpa login/password/OTP/session; Home,
+  Reward, Jelajah Saga, Aktivitas, dan Profil seluruhnya memakai data dummy.
+- CI PR/main, 40/40 unit test, browser/Vercel acceptance, audit dependency, dan
+  remote UAT mobile/desktop lulus tanpa request auth/backend/provider.
+- Status `SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / REAL_BACKEND_OFF / REAL_PROVIDER_OFF /
+  REAL_DATA_OFF / BUSINESS_READY=false`.
+
 ## 2026-09-03 - SagaView S380 exact candidate locally validated
 
 - Backend `129ed92a5cc9c5c199fb4082660e76ff7b12b74c` dan Studio

@@ -58,6 +58,25 @@ D0. Customer `f763fc19d8463cf2120387b0d06a57ffa5c868f7` dan Member
 `2eaa35334e59dc2656b98816db6bdc020c478a8f` lulus CI canonical-main, remote
 Chrome UAT, forced-RLS audit, backup/restore dan rollback rehearsal.
 
+Mode frontend aktif yang ditujukan untuk iterasi fitur/UI/UX sekarang adalah
+`PUBLIC_DUMMY_DEMO` dari Saga Member main
+`9a914d148bb6773e03afd0c2b45efa39683afdb4` (PR #14) pada satu URL stabil
+`https://saga-member-platform.vercel.app`. Runtime statis langsung membuka
+Beranda dan menyediakan Home, Reward, Jelajah Saga, Aktivitas, serta Profil
+dummy tanpa login, password, OTP, cookie sesi, backend, atau provider. Auth
+Functions/helpers dan empat environment variable auth lama sudah dikeluarkan
+dari runtime aktif.
+
+PR CI `33690103124`, canonical main CI `33690188252`, 40/40 unit test, browser
+acceptance, Vercel acceptance, dependency audit nol vulnerability, serta remote
+UAT mobile 390x844 dan desktop 1440x900 lulus. Tidak ada request auth,
+`/v1`, synthetic endpoint, atau connector eksternal. Statusnya
+`SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED /
+REAL_BACKEND_OFF / REAL_PROVIDER_OFF / REAL_DATA_OFF / BUSINESS_READY=false`.
+Demo ini sengaja menyederhanakan akses untuk finalisasi pengalaman produk;
+status tersebut tidak mengaktifkan production member account, transaksi,
+Customer Platform, private VPS ring, QRIS, Resend, Push, NFC, atau printer.
+
 Home dashboard finalization memakai Saga Member main
 `c2754dcf5fe5cccc10993b0eb50a10003949c32e` (PR #10) dan authority Customer
 Platform main `7b58d2ae62c564312d4a6adfc696c1a4f1a243eb` (PR #8). Customer Platform

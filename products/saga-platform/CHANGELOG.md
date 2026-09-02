@@ -8,6 +8,25 @@ Mencatat perubahan material control plane Saga.
 
 Fondasi production dan roadmap pemisahan boundary harus dibedakan.
 
+## 2026-09-03 — Saga Member public dummy auto-demo production
+
+- Saga Member main `9a914d148bb6773e03afd0c2b45efa39683afdb4`
+  (PR #14) mengubah target Vercel menjadi aplikasi statis dummy yang langsung
+  membuka Beranda pada `https://saga-member-platform.vercel.app`.
+- Login/password/OTP/session dan seluruh auth Function dihapus dari runtime
+  aktif. Empat environment variable auth lama juga dihapus; semua halaman dan
+  aksi memakai fixture/simulator tanpa backend/provider/data nyata.
+- PR CI `33690103124`, canonical main CI `33690188252`, 40/40 unit test,
+  browser/Vercel acceptance, dependency audit, serta remote UAT mobile/desktop
+  pada URL stabil lulus tanpa request auth/backend/provider.
+- Alasan: Andreas memprioritaskan finalisasi fitur dan UI/UX serta meminta demo
+  langsung-pakai tanpa security/login yang kompleks.
+- Status `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / REAL_BACKEND_OFF / REAL_PROVIDER_OFF /
+  REAL_DATA_OFF / BUSINESS_READY=false`. Production hosting berubah; production
+  backend, provider, member account, pilot transaksi, NFC, dan business
+  readiness tidak diaktifkan.
+
 ## 2026-09-03 — Saga Member stable public Preview alias
 
 - URL pengguna dikunci menjadi `https://saga-member-platform.vercel.app` dan
