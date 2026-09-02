@@ -13,9 +13,33 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Field | Nilai |
 |---|---|
 | Waktu pembaruan terakhir | 2026-09-03 WIB |
-| Branch aktif | `codex/member-design-foundation-knowledge` |
+| Branch aktif | `codex/member-auth-hardening-knowledge` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `59ca79d61cbbfb7dc11b8e5844a929077f9ff28c` |
+| Baseline sebelum pembaruan | `5664010975f50ac2f11a55f4d95227ef5973d443` |
+
+## Saga Member auth entry preview
+
+- Exact main source `f778a301a5e638f658a3bdce9e26c052e242bccd`
+  (PR #8), PR CI `33667354949`, dan canonical main CI `33667470527` lulus.
+- Public artifact tidak membawa reusable test OTP/placeholder token. Synthetic
+  challenge hanya private-loopback, ephemeral, attempt-limited, single-use,
+  dan replay-denied; protected Vercel Preview tidak mengekspos endpoint ini.
+- Entry email/OTP responsive, inline error, recovery email, Google disabled,
+  31 test, browser/WCAG mobile-desktop, dependency audit, dan exact-asset check
+  lulus.
+- Status `CONFIRMED / SAGA_MEMBER_FINALIZATION_PREVIEW_VALIDATED /
+  PRODUCTION_UNCHANGED / BUSINESS_READY=false`; consent persistence tetap
+  pending dan production/provider/API bisnis/NFC tidak berubah.
+
+## File yang berubah pada sinkronisasi Saga Member auth entry
+
+- `products/saga-platform/PRODUCT.md`
+- `products/saga-platform/DOSSIER.md`
+- `products/saga-platform/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## Saga Member design foundation preview
 

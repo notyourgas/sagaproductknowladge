@@ -68,6 +68,20 @@ Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
 
 ### Saga Member production internal alpha D0
 
+- Auth-entry hardening tersedia hanya pada protected Vercel Preview dari exact
+  main source `f778a301a5e638f658a3bdce9e26c052e242bccd` (PR #8).
+  UI email/OTP kini responsive, error tampil dekat input, dan Google jujur
+  berstatus disabled sampai provider resmi diotorisasi.
+- Artefak publik tidak lagi membawa OTP uji reusable atau placeholder token.
+  Synthetic challenge bersifat acak, sementara, attempt-limited, single-use,
+  replay-denied, dan hanya hadir pada loopback private simulation.
+- PR CI `33667354949` dan canonical main CI `33667470527` lulus bersama 31
+  test, browser mobile/desktop, WCAG otomatis, invalid-code/replay denial,
+  dependency audit, serta exact-asset protected-preview checks.
+- Status slice `SAGA_MEMBER_FINALIZATION_PREVIEW_VALIDATED`; stable production
+  D0, private VPS, Customer Platform, database, Resend/Google, API bisnis,
+  alias production, dan business readiness tidak berubah atau diaktifkan.
+
 - Finalization slice pertama tersedia hanya pada protected Vercel Preview dari
   exact main source `346869577c5a2cfeb4d3bd9431f167f18cd10f99` (PR #7).
   Fondasi visual memakai Plus Jakarta Sans self-hosted, Feather-compatible SVG,
