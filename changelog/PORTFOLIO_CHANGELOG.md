@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-09-03 - Saga Member Home dashboard preview validated
+
+- Customer Platform main `7b58d2ae62c564312d4a6adfc696c1a4f1a243eb`
+  dan Saga Member main `c2754dcf5fe5cccc10993b0eb50a10003949c32e`
+  mengunci proyeksi loyalty server-owned serta Home mobile-first dengan empat
+  destinasi Coffee, Studio, Reward, dan Quest.
+- CI PR/main kedua repo lulus; Member 40 test dan browser UAT mobile/desktop
+  lulus dengan zoom 200%, reduced motion, offline shell, WCAG otomatis nol
+  Critical/Serious, dependency audit, dan protected Preview exact-asset checks.
+- Status `SAGA_MEMBER_FINALIZATION_PREVIEW_VALIDATED`; Customer Platform baru
+  belum dideploy, stable production D0/provider/alias/ring/NFC tidak berubah,
+  dan `BUSINESS_READY=false`.
+
 ## 2026-09-03 - Saga Member consent dan session recovery preview validated
 
 - Customer Platform main `fa3502c5f022305293f0c4142315bfe60cc455a7`

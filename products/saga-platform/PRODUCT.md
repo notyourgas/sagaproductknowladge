@@ -68,6 +68,22 @@ Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
 
 ### Saga Member production internal alpha D0
 
+- Home dashboard mobile-first kini tervalidasi pada Saga Member main
+  `c2754dcf5fe5cccc10993b0eb50a10003949c32e` (PR #10). Beranda menyajikan
+  empat destinasi scan-first Coffee, Studio, Reward, dan Quest, progress tier,
+  Points terdekat berakhir, booking berikutnya, aktivitas terbaru, Member Code
+  bertopeng, structural skeleton, serta disclosure freshness yang fail-closed.
+- Customer Platform main `7b58d2ae62c564312d4a6adfc696c1a4f1a243eb`
+  (PR #8) menjadi authority untuk proyeksi `tierProgress` dan `pointsLots`
+  publik tanpa mengekspos ID ledger atau referensi transaksi. Customer
+  canonical main CI `33679725411` dan Member canonical main CI `33679750600`
+  lulus.
+- Full Member 40 test, browser UAT mobile/desktop, zoom 200%, reduced motion,
+  offline shell, WCAG otomatis nol Critical/Serious, audit dependency, header
+  keamanan, dan exact-asset protected Preview verification lulus. Status
+  `SAGA_MEMBER_FINALIZATION_PREVIEW_VALIDATED`; Customer Platform baru belum
+  dideploy dan stable production D0/provider/alias/ring/NFC tidak berubah.
+
 - Consent akun berversi dan pemulihan sesi kini memiliki authority kanonik pada
   Customer Platform main `fa3502c5f022305293f0c4142315bfe60cc455a7`
   (PR #7). OTP mengembalikan kebutuhan consent; completion memakai CSRF dan

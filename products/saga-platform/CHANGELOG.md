@@ -8,6 +8,24 @@ Mencatat perubahan material control plane Saga.
 
 Fondasi production dan roadmap pemisahan boundary harus dibedakan.
 
+## 2026-09-03 — Saga Member Home dashboard preview validated
+
+- Customer Platform main `7b58d2ae62c564312d4a6adfc696c1a4f1a243eb`
+  (PR #8) menambahkan proyeksi tier dan Points lot publik yang server-owned,
+  bounded, dan bebas identifier ledger/transaksi.
+- Saga Member main `c2754dcf5fe5cccc10993b0eb50a10003949c32e`
+  (PR #10) menyajikan Home scan-first Coffee/Studio/Reward/Quest, progress
+  tier, expiry terdekat, booking, aktivitas, Member Code bertopeng, dan
+  structural skeleton yang aksesibel.
+- Customer PR/main CI `33679625555`/`33679725411` dan Member PR/main CI
+  `33679617437`/`33679750600` lulus bersama 40 Member test, browser UAT,
+  WCAG otomatis nol Critical/Serious, audit dependency, dan protected Preview
+  exact-asset verification.
+- Status `CONFIRMED / SOURCE_PUSHED / CI_PASSED /
+  SAGA_MEMBER_FINALIZATION_PREVIEW_VALIDATED / PRODUCTION_UNCHANGED /
+  BUSINESS_READY=false`; Customer Platform baru belum dideploy dan stable D0,
+  provider, production alias, activation ring, serta NFC tidak berubah.
+
 ## 2026-09-03 — Saga Member consent dan session recovery preview validated
 
 - Customer Platform main `fa3502c5f022305293f0c4142315bfe60cc455a7`

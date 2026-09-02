@@ -13,9 +13,33 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Field | Nilai |
 |---|---|
 | Waktu pembaruan terakhir | 2026-09-03 WIB |
-| Branch aktif | `codex/member-consent-session-knowledge` |
+| Branch aktif | `codex/member-home-knowledge` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `efe59be7741252d6a6b8c2bd0850125006889c8c` |
+| Baseline sebelum pembaruan | `bbf7c477d265d70d83304ae26582dff3fd14878a` |
+
+## Saga Member Home dashboard preview
+
+- Customer Platform main `7b58d2ae62c564312d4a6adfc696c1a4f1a243eb`
+  dan Saga Member main `c2754dcf5fe5cccc10993b0eb50a10003949c32e`
+  menjadi provenance proyeksi loyalty server-owned dan Home dashboard.
+- Customer PR/main CI `33679625555`/`33679725411` dan Member PR/main CI
+  `33679617437`/`33679750600` lulus. Member 40 test, browser UAT mobile/desktop,
+  WCAG otomatis nol Critical/Serious, zoom 200%, reduced motion, offline shell,
+  dependency audit, security headers, dan protected Preview exact-asset checks
+  lulus.
+- Status `CONFIRMED / SAGA_MEMBER_FINALIZATION_PREVIEW_VALIDATED /
+  PRODUCTION_UNCHANGED / BUSINESS_READY=false`; Customer Platform baru belum
+  dideploy dan stable production D0/provider/alias/ring/NFC tidak berubah.
+
+## File yang berubah pada sinkronisasi Saga Member Home
+
+- `products/saga-platform/PRODUCT.md`
+- `products/saga-platform/DOSSIER.md`
+- `products/saga-platform/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## Saga Member consent dan session recovery preview
 
