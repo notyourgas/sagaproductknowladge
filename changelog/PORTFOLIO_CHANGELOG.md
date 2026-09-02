@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-09-03 - Saga Member auth entry preview validated
+
+- Exact main source `f778a301a5e638f658a3bdce9e26c052e242bccd`
+  (PR #8) menghapus OTP uji reusable/placeholder token dari artefak publik dan
+  membatasi synthetic auth ke challenge ephemeral private-loopback.
+- Email/OTP responsive, inline failure, recovery email, replay denial, dan
+  Google disabled telah diuji pada mobile/desktop; PR CI `33667354949` dan
+  canonical main CI `33667470527` lulus bersama 31 test dan WCAG otomatis.
+- Status `SAGA_MEMBER_FINALIZATION_PREVIEW_VALIDATED`; stable production D0,
+  backend/database, Resend/Google, API bisnis, alias production, NFC, dan
+  business readiness tidak berubah. Real consent persistence tetap pending.
+
 ## 2026-09-03 - Saga Member design foundation preview validated
 
 - Exact main source `346869577c5a2cfeb4d3bd9431f167f18cd10f99`

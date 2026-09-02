@@ -58,6 +58,18 @@ D0. Customer `f763fc19d8463cf2120387b0d06a57ffa5c868f7` dan Member
 `2eaa35334e59dc2656b98816db6bdc020c478a8f` lulus CI canonical-main, remote
 Chrome UAT, forced-RLS audit, backup/restore dan rollback rehearsal.
 
+Auth-entry slice exact main source
+`f778a301a5e638f658a3bdce9e26c052e242bccd` (PR #8) menghapus OTP uji reusable
+dan placeholder token dari artefak publik. Private simulation kini menerbitkan
+challenge synthetic acak yang sementara, single-active, attempt-limited,
+single-use, replay-denied, dan tidak tersedia pada Vercel. UI email/OTP
+responsive memiliki label, helper, inline error, busy state, recovery ke email,
+serta Google disabled yang jujur. PR CI `33667354949`, canonical main CI
+`33667470527`, 31 test, browser mobile/desktop, WCAG otomatis nol
+Critical/Serious, dependency audit, dan protected-preview exact-asset checks
+lulus. Status `SAGA_MEMBER_FINALIZATION_PREVIEW_VALIDATED`; real consent
+persistence tetap menunggu Customer Platform dan tidak diklaim selesai.
+
 Finalization slice pertama pada exact main source
 `346869577c5a2cfeb4d3bd9431f167f18cd10f99` (PR #7) mengunci fondasi UI:
 Plus Jakarta Sans self-hosted, Feather-compatible icon system, token espresso,

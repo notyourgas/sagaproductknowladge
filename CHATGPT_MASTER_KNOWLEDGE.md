@@ -1,5 +1,19 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+Saga Member auth-entry slice tervalidasi hanya pada protected Vercel Preview
+dari exact main source `f778a301a5e638f658a3bdce9e26c052e242bccd`
+(PR #8). Artefak publik bebas OTP uji reusable dan placeholder token;
+synthetic challenge acak/ephemeral/attempt-limited/single-use/replay-denied hanya
+tersedia pada private loopback simulation. Entry email/OTP responsive memiliki
+inline error, recovery email, account-enumeration-safe copy, dan Google disabled
+sampai provider resmi diotorisasi. PR CI `33667354949`, canonical main CI
+`33667470527`, 31 test, browser/WCAG mobile-desktop, dependency audit, serta
+protected-preview exact-asset checks lulus. Status `CONFIRMED /
+SAGA_MEMBER_FINALIZATION_PREVIEW_VALIDATED / PRODUCTION_UNCHANGED /
+BUSINESS_READY=false`; real consent persistence masih pending, sedangkan stable
+production D0, backend/database, provider, API bisnis, alias production, dan
+NFC tetap OFF/tidak berubah.
+
 Saga Member finalization slice pertama tervalidasi hanya pada protected Vercel
 Preview dari exact main source `346869577c5a2cfeb4d3bd9431f167f18cd10f99`
 (PR #7). Fondasi visual kini memakai Plus Jakarta Sans self-hosted,

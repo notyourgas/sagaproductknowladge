@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-03 - Saga Member auth entry preview sync
+
+- Menyinkronkan exact main source
+  `f778a301a5e638f658a3bdce9e26c052e242bccd`, PR #8, PR CI `33667354949`,
+  dan canonical main CI `33667470527`.
+- Artefak publik bebas reusable test OTP/placeholder token; synthetic challenge
+  hanya private-loopback, ephemeral, attempt-limited, single-use dan
+  replay-denied. Email/OTP responsive, inline error, recovery email, serta
+  Google disabled tervalidasi pada 31 test dan browser/WCAG mobile-desktop.
+- Klasifikasi `CONFIRMED / SAGA_MEMBER_FINALIZATION_PREVIEW_VALIDATED /
+  PRODUCTION_UNCHANGED / BUSINESS_READY=false`; consent persistence tetap
+  pending dan production/provider/API bisnis/NFC tidak berubah.
+- Dokumen terdampak: Saga Platform product/dossier/changelog, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-09-03 - Saga Member design foundation preview sync
 
 - Menyinkronkan exact main source

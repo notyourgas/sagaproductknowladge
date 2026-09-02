@@ -8,6 +8,22 @@ Mencatat perubahan material control plane Saga.
 
 Fondasi production dan roadmap pemisahan boundary harus dibedakan.
 
+## 2026-09-03 — Saga Member auth entry preview validated
+
+- Exact main source `f778a301a5e638f658a3bdce9e26c052e242bccd`
+  dari PR #8 menghapus OTP uji reusable dan placeholder token dari artefak
+  publik, serta menambahkan challenge synthetic ephemeral/single-use hanya
+  untuk private loopback simulation.
+- Entry email/OTP responsive kini memiliki inline error, busy state, recovery
+  email, account-enumeration-safe copy, dan Google disabled/coming-soon.
+- PR CI `33667354949`, canonical main CI `33667470527`, 31 test,
+  browser/WCAG mobile-desktop, invalid-code/replay denial, audit dependency,
+  serta exact-asset protected-preview checks lulus.
+- Status `CONFIRMED / SOURCE_PUSHED / CI_PASSED /
+  SAGA_MEMBER_FINALIZATION_PREVIEW_VALIDATED / PRODUCTION_UNCHANGED /
+  BUSINESS_READY=false`; real consent persistence tetap pending dan seluruh
+  production/provider/API bisnis/NFC tetap OFF/tidak berubah.
+
 ## 2026-09-03 — Saga Member design foundation preview validated
 
 - Exact main source `346869577c5a2cfeb4d3bd9431f167f18cd10f99`
