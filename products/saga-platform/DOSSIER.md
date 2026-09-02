@@ -58,6 +58,22 @@ D0. Customer `f763fc19d8463cf2120387b0d06a57ffa5c868f7` dan Member
 `2eaa35334e59dc2656b98816db6bdc020c478a8f` lulus CI canonical-main, remote
 Chrome UAT, forced-RLS audit, backup/restore dan rollback rehearsal.
 
+Consent akun dan pemulihan sesi sekarang memiliki source authority pada
+Customer Platform main `fa3502c5f022305293f0c4142315bfe60cc455a7` (PR #7).
+Endpoint authenticated menyajikan onboarding state, menyimpan consent policy
+`v1` dengan CSRF dan optimistic version, menyajikan metadata sesi aman,
+mencabut sesi lain milik member yang sama, serta logout-all. Token, cookie,
+CSRF token, consent ID, IP dan raw user-agent tidak masuk response member.
+
+Saga Member main `70e857393201ec212f832dd17681d1d20f96e821` (PR #9)
+menyelesaikan UI recovery onboarding, consent server-owned, inventory sesi,
+revoke perangkat lain dan dialog konfirmasi keyboard-accessible. PR/main CI
+dua repo lulus; Member full 34 test, browser 390x844 dan 1440x900, WCAG 2.1 AA
+otomatis nol Critical/Serious, 200% zoom, reduced motion, offline shell,
+dependency audit dan D0 Preview acceptance lulus. Implementasi baru hanya
+tervalidasi source/local/synthetic dan protected Vercel Preview; Customer
+Platform belum dideploy dan stable production D0 tetap tidak berubah.
+
 Auth-entry slice exact main source
 `f778a301a5e638f658a3bdce9e26c052e242bccd` (PR #8) menghapus OTP uji reusable
 dan placeholder token dari artefak publik. Private simulation kini menerbitkan
@@ -68,7 +84,9 @@ serta Google disabled yang jujur. PR CI `33667354949`, canonical main CI
 `33667470527`, 31 test, browser mobile/desktop, WCAG otomatis nol
 Critical/Serious, dependency audit, dan protected-preview exact-asset checks
 lulus. Status `SAGA_MEMBER_FINALIZATION_PREVIEW_VALIDATED`; real consent
-persistence tetap menunggu Customer Platform dan tidak diklaim selesai.
+persistence pada auth-entry slice tersebut kemudian ditutup oleh Customer
+Platform `fa3502c5...` dan Member `70e8573...`, tetapi belum dideploy ke runtime
+Customer Platform.
 
 Finalization slice pertama pada exact main source
 `346869577c5a2cfeb4d3bd9431f167f18cd10f99` (PR #7) mengunci fondasi UI:

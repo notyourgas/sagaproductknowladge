@@ -68,6 +68,21 @@ Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
 
 ### Saga Member production internal alpha D0
 
+- Consent akun berversi dan pemulihan sesi kini memiliki authority kanonik pada
+  Customer Platform main `fa3502c5f022305293f0c4142315bfe60cc455a7`
+  (PR #7). OTP mengembalikan kebutuhan consent; completion memakai CSRF dan
+  optimistic member version; inventory sesi hanya mengekspos metadata aman;
+  revoke perangkat lain dan logout-all bersifat member-scoped.
+- Saga Member main `70e857393201ec212f832dd17681d1d20f96e821`
+  (PR #9) menghubungkan recovery onboarding, consent persistence, daftar sesi,
+  revoke perangkat lain, dan dialog konfirmasi aksesibel. Full 34 test,
+  browser UAT mobile/desktop, WCAG otomatis nol Critical/Serious, zoom 200%,
+  reduced motion, offline shell, audit dependency, dan D0 Preview check lulus.
+- Slice tervalidasi pada protected Vercel Preview saja. Customer Platform baru
+  belum dideploy, stable production D0 tetap deployment lama, dan tidak ada
+  provider, API bisnis publik, alias production, ring, atau business-readiness
+  yang diaktifkan. Status `SAGA_MEMBER_FINALIZATION_PREVIEW_VALIDATED`.
+
 - Auth-entry hardening tersedia hanya pada protected Vercel Preview dari exact
   main source `f778a301a5e638f658a3bdce9e26c052e242bccd` (PR #8).
   UI email/OTP kini responsive, error tampil dekat input, dan Google jujur
@@ -81,6 +96,9 @@ Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
 - Status slice `SAGA_MEMBER_FINALIZATION_PREVIEW_VALIDATED`; stable production
   D0, private VPS, Customer Platform, database, Resend/Google, API bisnis,
   alias production, dan business readiness tidak berubah atau diaktifkan.
+  Gap consent pada slice ini ditutup kemudian oleh authority commit
+  `fa3502c5f022305293f0c4142315bfe60cc455a7` dan Member commit
+  `70e857393201ec212f832dd17681d1d20f96e821`, tanpa deploy backend.
 
 - Finalization slice pertama tersedia hanya pada protected Vercel Preview dari
   exact main source `346869577c5a2cfeb4d3bd9431f167f18cd10f99` (PR #7).

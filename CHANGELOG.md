@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-03 - Saga Member consent dan session recovery preview sync
+
+- Menyinkronkan Customer Platform main
+  `fa3502c5f022305293f0c4142315bfe60cc455a7`, Saga Member main
+  `70e857393201ec212f832dd17681d1d20f96e821`, serta CI PR/main kedua repo.
+- Consent berversi, onboarding recovery, session inventory aman, revoke
+  perangkat lain dan logout-all kini memiliki authority/UI teruji dengan
+  CSRF, optimistic version dan dialog aksesibel.
+- Klasifikasi `CONFIRMED / SAGA_MEMBER_FINALIZATION_PREVIEW_VALIDATED /
+  PRODUCTION_UNCHANGED / BUSINESS_READY=false`; backend baru belum dideploy dan
+  stable production D0/provider/alias/ring/NFC tidak berubah.
+- Dokumen terdampak: Saga Platform product/dossier/changelog, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-09-03 - Saga Member auth entry preview sync
 
 - Menyinkronkan exact main source

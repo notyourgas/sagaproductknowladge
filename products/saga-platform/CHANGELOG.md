@@ -8,6 +8,23 @@ Mencatat perubahan material control plane Saga.
 
 Fondasi production dan roadmap pemisahan boundary harus dibedakan.
 
+## 2026-09-03 — Saga Member consent dan session recovery preview validated
+
+- Customer Platform main `fa3502c5f022305293f0c4142315bfe60cc455a7`
+  (PR #7) menjadi authority untuk consent policy `v1`, onboarding recovery,
+  safe session inventory, revoke perangkat lain dan logout-all.
+- Saga Member main `70e857393201ec212f832dd17681d1d20f96e821`
+  (PR #9) menghubungkan flow tersebut dengan CSRF, optimistic version, inline
+  conflict recovery, dan dialog konfirmasi aksesibel.
+- Customer PR/main CI `33673061381`/`33673624480` dan Member PR/main CI
+  `33673738133`/`33673872281` lulus. Member 34 test, browser mobile/desktop,
+  WCAG otomatis nol Critical/Serious, zoom 200%, reduced motion, offline shell,
+  audit dependency dan protected-preview verification lulus.
+- Status `CONFIRMED / SOURCE_PUSHED / CI_PASSED /
+  SAGA_MEMBER_FINALIZATION_PREVIEW_VALIDATED / PRODUCTION_UNCHANGED /
+  BUSINESS_READY=false`. Customer Platform baru belum dideploy; provider,
+  stable production D0, alias production, activation ring dan NFC tidak berubah.
+
 ## 2026-09-03 — Saga Member auth entry preview validated
 
 - Exact main source `f778a301a5e638f658a3bdce9e26c052e242bccd`

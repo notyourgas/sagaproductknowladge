@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-09-03 - Saga Member consent dan session recovery preview validated
+
+- Customer Platform main `fa3502c5f022305293f0c4142315bfe60cc455a7`
+  dan Saga Member main `70e857393201ec212f832dd17681d1d20f96e821`
+  mengunci consent berversi, recovery onboarding, inventory sesi aman, revoke
+  perangkat lain, logout-all, CSRF dan optimistic profile version.
+- CI PR/main kedua repo lulus; Member 34 test dan browser UAT mobile/desktop
+  lulus dengan WCAG otomatis nol Critical/Serious, zoom 200%, reduced motion,
+  offline shell, dependency audit dan protected-preview checks.
+- Status `SAGA_MEMBER_FINALIZATION_PREVIEW_VALIDATED`; Customer Platform baru
+  belum dideploy, stable production D0/alias production/provider/ring/NFC tidak
+  berubah, dan `BUSINESS_READY=false`.
+
 ## 2026-09-03 - Saga Member auth entry preview validated
 
 - Exact main source `f778a301a5e638f658a3bdce9e26c052e242bccd`
