@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-02 - SagaBook S419 mobile shell sync
+
+- Menyinkronkan perbaikan sidebar/tab aktif dan containment mobile pada exact
+  source `23e22420dd47e95c96d38c8b0a8af7e42967225a`.
+- Baseline tiga tab aktif, warna transparan, dan overflow 320 px kini menjadi
+  satu navigasi role-aware, kontras AA 5,70:1, target 44 px, serta drawer dan
+  layout tanpa overflow pada matriks ponsel, landscape, dan desktop.
+- Full Feature 1.325/1.325 (14.983 assertion), focused 18/18 (204 assertion),
+  browser Owner/Manager/Staff dan delapan rute, build/typecheck/design audit,
+  serta Composer/npm audit nol lulus.
+- Dokumen terdampak: ringkasan, dossier, feature ledger, changelog produk dan
+  portfolio, root changelog, serta status sinkronisasi.
+- Klasifikasi `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
+
 ## 2026-09-02 - SagaBook manual-booking lifecycle production sync
 
 - Menyinkronkan exact source

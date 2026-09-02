@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-09-02 - SagaBook mobile admin shell local validated
+
+- Sidebar ponsel kini mempunyai tepat satu tab aktif, warna aktif WCAG AA
+  5,70:1, layout 320 px tanpa overflow, navigasi role-aware, dan drawer dengan
+  focus/safe-area/44 px/reflow/forced-colors/reduced-motion yang teruji.
+- Matrix mencakup Owner/Manager/Staff, tujuh ukuran ponsel, landscape, desktop,
+  dan delapan rute inti. Full Feature 1.325/1.325 serta audit dependency nol.
+- Exact source `23e22420dd47e95c96d38c8b0a8af7e42967225a`; status
+  `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
+
 ## 2026-09-02 - SagaBook manual-booking lifecycle production
 
 - Booking buatan operator kini mengunci jadwal permanen meski pembayaran masih

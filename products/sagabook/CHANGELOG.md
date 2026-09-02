@@ -1,5 +1,24 @@
 # SagaBook Changelog
 
+## 2026-09-02 - S419 mobile admin shell dan sidebar
+
+- Sebelum: route Pengaturan pada 320x700 memiliki tiga elemen
+  `aria-current`, warna aktif drawer tetap transparan, dan card meluber sekitar
+  185 px dari viewport.
+- Setelah: hanya satu navigasi yang dirender sesuai viewport dan role; tab
+  aktif mendapat kontras WCAG AA 5,70:1, layout tertahan di viewport, dan drawer
+  menjaga safe area, focus trap/restore, Escape, backdrop, body lock, serta
+  target sentuh minimum 44 px.
+- Owner/Manager/Staff, tujuh ukuran ponsel 320x700--430x932, landscape, reflow
+  200%, forced-colors, reduced-motion, desktop 1440x900, dan delapan rute admin
+  inti lulus tanpa runtime error atau overflow.
+- Exact source `23e22420dd47e95c96d38c8b0a8af7e42967225a`; full Feature
+  1.325/1.325 (14.983 assertion), focused PHP 18/18 (204 assertion), build
+  5.138 modul, typecheck, design audit 26/0, serta Composer/npm audit nol.
+- Tidak ada perubahan API/backend/database/migration atau production. Status
+  `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
+
 ## 2026-09-02 - Booking manual tidak mengikuti expiry checkout web
 
 - Sebelum: direct manual booking yang belum lunas mewarisi payment hold pendek;

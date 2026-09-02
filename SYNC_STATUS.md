@@ -13,9 +13,32 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Field | Nilai |
 |---|---|
 | Waktu pembaruan terakhir | 2026-09-02 WIB |
-| Branch aktif | `codex/s416-closing-payment-allocation-knowledge` |
+| Branch aktif | `codex/s419-sagabook-mobile-shell-knowledge` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `fb16984` |
+| Baseline sebelum pembaruan | `1d3e8b0` |
+
+## SagaBook S419 mobile admin shell
+
+- Exact source `23e22420dd47e95c96d38c8b0a8af7e42967225a` menutup bug
+  tiga tab aktif, warna aktif transparan, dan overflow Pengaturan pada 320 px.
+- Owner/Manager/Staff, tujuh ukuran ponsel, landscape, 200% reflow,
+  forced-colors, reduced-motion, desktop, dan delapan rute admin inti lulus;
+  kontras tab aktif 5,70:1 dan target minimum 44 px.
+- Full Feature 1.325/1.325 (14.983 assertion), focused PHP 18/18 (204), build
+  5.138 modul, typecheck, design audit 26/0, Composer/npm audit nol, dan diff
+  check lulus. Tidak ada perubahan API/backend/database/migration.
+- Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi S419 mobile shell
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook manual-booking operational lifecycle
 

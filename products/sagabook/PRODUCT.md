@@ -16,6 +16,20 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
 
+- S419 menstabilkan app shell admin SagaBook pada ponsel. Drawer mobile kini
+  hanya merender satu set navigasi sesuai role sehingga `aria-current` tidak
+  lagi ganda; warna tab aktif berada di dalam portal drawer dan memenuhi
+  kontras WCAG AA 5,70:1. Layout Pengaturan tidak lagi meluber pada lebar 320
+  px, drawer menjaga safe area, focus trap/restore, Escape, backdrop, body
+  lock, target sentuh minimum 44 px, forced-colors, reduced-motion, dan reflow
+  200%. Owner, Manager, dan Staff serta delapan rute admin inti lulus browser
+  matrix 320x700 sampai 430x932, landscape, dan desktop 1440x900. Exact source
+  `23e22420dd47e95c96d38c8b0a8af7e42967225a` lulus full Feature
+  1.325/1.325 (14.983 assertion), focused PHP 18/18 (204 assertion), build
+  5.138 modul, typecheck, design audit 26/0, dan audit dependency nol. Status
+  `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
+
 - Booking yang dibuat langsung oleh operator kini menjadi komitmen jadwal
   permanen walau pembayaran masih `unpaid` atau `pending`. Hold pendek hanya
   berlaku untuk checkout website; scheduler, payment-expiry service, dan lazy

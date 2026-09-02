@@ -2,6 +2,22 @@
 
 Evidence cut-off: 2 September 2026 WIB
 
+Mobile admin app shell S419 exact source
+`23e22420dd47e95c96d38c8b0a8af7e42967225a` telah `CONFIRMED /
+SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+PRODUCTION_UNCHANGED`. Baseline Owner pada `/admin/settings#booking` lebar
+320x700 membuktikan tiga `aria-current`, warna aktif tidak terpasang, dan card
+meluber sekitar 185 px. Kandidat merender satu navigasi role-aware, memberi
+warna aktif kontras AA 5,70:1, menahan layout di viewport, serta menjaga safe
+area, focus trap/restore, Escape, backdrop, body lock, target 44 px, reflow
+200%, forced-colors, dan reduced-motion. Owner/Manager/Staff, tujuh ukuran
+ponsel 320x700--430x932, landscape, desktop 1440x900, dan delapan rute inti
+lulus. Full Feature 1.325/1.325 (14.983 assertion), focused PHP 18/18 (204),
+build 5.138 modul, typecheck, design audit 26/0, Composer/npm audit nol, dan
+diff check lulus. Tidak ada API/backend/database/migration atau production
+mutation. Next gate adalah review/merge exact candidate dan guarded release;
+`BUSINESS_READY=false`.
+
 Manual-booking operational lifecycle exact source
 `c71ac5466e13f2a75903cc569bba0d9882933ea1` telah `CONFIRMED /
 SOURCE_PUSHED / CI_PASSED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.

@@ -7,6 +7,21 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Exact source S419 `23e22420dd47e95c96d38c8b0a8af7e42967225a`
+  memperbaiki root cause sidebar mobile: drawer dipasang melalui portal di luar
+  selector tema, sementara tiga varian navigasi responsif sebelumnya tetap ada
+  di DOM dan sama-sama menandai halaman aktif. Implementasi sekarang merender
+  satu varian sesuai viewport, menjaga satu `aria-current`, menerapkan warna
+  aktif langsung pada drawer dengan kontras AA 5,70:1, dan menahan overflow
+  halaman Pengaturan 320 px. Matrix Owner/Manager/Staff mencakup tujuh ukuran
+  ponsel, landscape, 200% reflow, forced-colors, reduced-motion, desktop,
+  focus trap/restore, Escape, backdrop, safe area, target 44 px, dan delapan
+  rute inti. Full Feature 1.325/1.325 (14.983 assertion), focused PHP 18/18
+  (204 assertion), build/typecheck/design audit, serta Composer/npm audit nol
+  lulus. Tidak ada API, backend, schema, migration, atau data bisnis yang
+  berubah. Status `SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
+
 - Exact merged source `1ce62c9d3d4afdef11fc3d8c2e8e83400fa8379d`
   menutup double count pada breakdown closing untuk pembayaran campuran.
   Owner/Staff memakai breakdown ledger server sehingga pembayaran awal
