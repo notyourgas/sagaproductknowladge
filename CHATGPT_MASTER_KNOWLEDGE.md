@@ -1,5 +1,19 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+Saga Member consent dan session-recovery slice tervalidasi pada protected
+Vercel Preview. Customer Platform main
+`fa3502c5f022305293f0c4142315bfe60cc455a7` (PR #7) menjadi authority untuk
+consent policy `v1`, onboarding recovery, metadata sesi aman, revoke perangkat
+lain dan logout-all dengan CSRF/member scope/optimistic version. Saga Member
+main `70e857393201ec212f832dd17681d1d20f96e821` (PR #9) menyajikan UI flow,
+inline conflict recovery dan dialog aksesibel. CI PR/main kedua repo lulus;
+Member 34 test, browser mobile/desktop, WCAG otomatis nol Critical/Serious,
+zoom 200%, reduced motion, offline shell dan audit dependency lulus. Status
+`CONFIRMED / SAGA_MEMBER_FINALIZATION_PREVIEW_VALIDATED /
+PRODUCTION_UNCHANGED / BUSINESS_READY=false`: Customer Platform baru belum
+dideploy; stable production D0, provider, public API, alias production,
+activation ring dan NFC tetap OFF/tidak berubah.
+
 Saga Member auth-entry slice tervalidasi hanya pada protected Vercel Preview
 dari exact main source `f778a301a5e638f658a3bdce9e26c052e242bccd`
 (PR #8). Artefak publik bebas OTP uji reusable dan placeholder token;
@@ -10,9 +24,11 @@ sampai provider resmi diotorisasi. PR CI `33667354949`, canonical main CI
 `33667470527`, 31 test, browser/WCAG mobile-desktop, dependency audit, serta
 protected-preview exact-asset checks lulus. Status `CONFIRMED /
 SAGA_MEMBER_FINALIZATION_PREVIEW_VALIDATED / PRODUCTION_UNCHANGED /
-BUSINESS_READY=false`; real consent persistence masih pending, sedangkan stable
-production D0, backend/database, provider, API bisnis, alias production, dan
-NFC tetap OFF/tidak berubah.
+BUSINESS_READY=false`. Gap consent slice ini kemudian ditutup pada source
+Customer Platform `fa3502c5...` dan Member `70e8573...`, tetapi belum dideploy
+ke runtime Customer Platform. Stable production D0 beserta backend/database
+terpasang tidak berubah; alias production tetap menunjuk D0 lama, sedangkan
+provider, API bisnis, dan NFC tetap OFF.
 
 Saga Member finalization slice pertama tervalidasi hanya pada protected Vercel
 Preview dari exact main source `346869577c5a2cfeb4d3bd9431f167f18cd10f99`
