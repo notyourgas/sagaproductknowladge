@@ -1,5 +1,22 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-02 - SagaBook S416 closing allocation sync
+
+- Mencatat kandidat perbaikan breakdown metode pembayaran closing campuran
+  pada exact source `bd1d6193c0fabd29effc4be43865d8e8b8a1ba2e`, PR #99.
+- Owner/Staff kini mengonsumsi breakdown ledger server; metode pembayaran awal
+  dan add-on onsite tidak digabung atau dihitung ganda, dan fallback menahan
+  submit bila breakdown belum tersedia.
+- Dokumen terdampak: `products/sagabook/PRODUCT.md`, `DOSSIER.md`, changelog
+  produk/portfolio, master knowledge, dan `SYNC_STATUS.md`.
+- Klasifikasi `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
+- Full Feature 1.319/1.319 (14.931 assertion) dan audit Composer nol lulus;
+  CommonMark dikunci ke 2.10.0 untuk menutup advisory High baru.
+- CI run `33591636326` lulus seluruh quality gate exact source.
+- Production tetap exact `9ebdcf112f312f905c4213be9da1b80cf04e0ad3`, release
+  `20260901155248-9ebdcf1`; review/CI, merge, dan guarded release masih gate.
+
 ## 2026-09-02 - Saga Member all-goals local execution sync
 
 - `DEC-137` mencatat dimulainya eksekusi Goal 0–6 dari aplikasi lokal terpadu

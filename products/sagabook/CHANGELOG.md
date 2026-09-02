@@ -1,5 +1,25 @@
 # SagaBook Changelog
 
+## 2026-09-02 - S416 alokasi metode pembayaran closing campuran
+
+- Sebelum: dialog Owner/Staff closing membentuk breakdown metode dari total
+  akhir booking; add-on onsite Cash dapat ikut terbaca sebagai Transfer Manual
+  atau QRIS induk dan tetap dicatat lagi sebagai Cash.
+- Setelah: preflight mengirim breakdown pemasukan/pengeluaran per metode dari
+  ledger server. Nilai pembayaran awal dan add-on mempertahankan metode masing-
+  masing, expected cash tetap net Cash server, dan submit gagal tertutup bila
+  breakdown belum tersedia.
+- Exact source `bd1d6193c0fabd29effc4be43865d8e8b8a1ba2e` pada PR #99
+  lulus focused PHP 19/19 (141 assertion), unit kontrak 3/3, browser Staff
+  closing 1/1 sampai save/submit, TypeScript, build, dan format. Full Feature
+  1.319/1.319 (14.931 assertion) lulus setelah test clock lama dibuat
+  deterministik. CommonMark dikunci ke 2.10.0; audit Composer nol advisory.
+- CI run `33591636326` lulus test-and-visual, MySQL 8.4, Saga AI, dan preview.
+- Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / CI_PASSED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`. Production tetap exact
+  `9ebdcf112f312f905c4213be9da1b80cf04e0ad3`, release
+  `20260901155248-9ebdcf1`; review/merge dan guarded release masih gate.
+
 ## 2026-09-01 - S402 indeks baca history closing lintas cabang
 
 - Sebelum: kandidat prefix tenant/date tetap tidak dipilih optimizer MySQL dan

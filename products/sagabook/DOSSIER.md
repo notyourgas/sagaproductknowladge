@@ -7,6 +7,22 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- S416 exact source `bd1d6193c0fabd29effc4be43865d8e8b8a1ba2e`
+  menutup double count pada breakdown closing untuk pembayaran campuran. UI
+  sebelumnya menurunkan metode dari total akhir booking, sehingga add-on Cash
+  dapat ikut menaikkan Transfer Manual atau QRIS induk sekaligus tetap tercatat
+  sebagai Cash. Kontrak baru mengekspos pemasukan/pengeluaran per metode dari
+  ledger server ke preflight dan dipakai oleh Owner serta Staff; fallback
+  menahan submit bila breakdown hilang. Expected cash tetap net Cash server dan
+  tidak dihitung ulang oleh client. Focused PHP 19/19 (141 assertion), unit
+  kontrak 3/3, Playwright 1/1 sampai save/submit, TypeScript, build, dan format
+  lulus; full Feature 1.319/1.319 (14.931 assertion) juga lulus dengan
+  CommonMark 2.10.0 dan audit Composer nol advisory; CI run `33591636326`
+  lulus seluruh quality gate. Status `CONFIRMED / SOURCE_PUSHED /
+  LOCAL_VALIDATED / CI_PASSED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; PR #99 belum merge dan
+  production tetap `20260901155248-9ebdcf1`.
+
 - S402 exact candidate `010b2c67025c51494a66b12b1e8b6778667660c6`
   menutup gap query history closing lintas cabang pada MySQL. Kandidat awal
   dengan prefix tenant/date terbukti tidak dipilih optimizer dan masih

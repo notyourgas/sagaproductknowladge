@@ -1,5 +1,20 @@
 # Portfolio Changelog
 
+## 2026-09-02 - SagaBook S416 closing payment allocation candidate
+
+- Owner dan Staff closing kini memakai breakdown metode authoritative dari
+  ledger server, bukan total akhir booking di client.
+- Pembayaran awal Transfer Manual/QRIS dan add-on onsite Cash tetap dipisah,
+  total pemasukan tidak double count, dan submit menunggu breakdown server.
+- Exact source `bd1d6193c0fabd29effc4be43865d8e8b8a1ba2e`, PR #99;
+  full Feature 1.319/1.319 (14.931 assertion), focused PHP 19/19 (141
+  assertion), unit 3/3, browser 1/1, TypeScript, build, format, dan audit
+  Composer nol lulus. CommonMark dinaikkan ke 2.10.0 untuk advisory baru; CI
+  run `33591636326` lulus.
+- Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / CI_PASSED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
+  Production tetap release `20260901155248-9ebdcf1`.
+
 ## 2026-09-02 - Saga Member all-goals local execution started
 
 - Master execution plan dan prompt Goal 0–6 tersedia dengan boundary Rp0.

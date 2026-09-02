@@ -1,5 +1,20 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+SagaBook S416 exact source `bd1d6193c0fabd29effc4be43865d8e8b8a1ba2e`
+memperbaiki breakdown metode pembayaran Owner/Staff closing untuk transaksi
+campuran. Pembayaran awal Transfer Manual atau QRIS tetap pada metode asal,
+sedangkan add-on onsite Cash tetap masuk Cash; client tidak lagi memakai total
+akhir booking yang dapat double count. Preflight mengekspos breakdown ledger
+server dan submit gagal tertutup saat breakdown tidak tersedia. Focused PHP
+19/19 (141 assertion), full Feature 1.319/1.319 (14.931 assertion), unit 3/3,
+browser Staff closing 1/1 sampai save/submit, TypeScript, build, format, dan
+audit Composer nol lulus. CommonMark dikunci ke 2.10.0 setelah advisory High
+baru; CI run `33591636326` lulus seluruh quality gate. Status `CONFIRMED /
+SOURCE_PUSHED / LOCAL_VALIDATED / CI_PASSED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED /
+BUSINESS_READY=false`; PR #99 belum merge. Production tetap exact
+`9ebdcf112f312f905c4213be9da1b80cf04e0ad3`, release
+`20260901155248-9ebdcf1`.
+
 Saga Member Platform telah membuka program eksekusi Goal 0–6 hanya pada
 boundary lokal dan incremental spend Rp0. One-command local pilot launcher
 menghidupkan hub loopback, Member PWA, Customer API dan SagaOPS OWNER/STAFF

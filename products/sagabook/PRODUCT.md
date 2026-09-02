@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 1 September 2026 WIB
-Evidence status: SagaBook production aktif pada exact `fdf4155c0a294a6af8b41a819ba40e6d371f3ba8`, immutable release `20260901083148-fdf4155`. Kandidat indeks history closing S402 exact `010b2c67025c51494a66b12b1e8b6778667660c6` sudah `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; production belum memakai migration ini. Status keseluruhan `AUDIO_UAT_PENDING / PILOT_BLOCKED_BY_AUDIO_UAT / BUSINESS_READY=false`.
+Updated: 2 September 2026 WIB
+Evidence status: SagaBook production aktif pada exact `9ebdcf112f312f905c4213be9da1b80cf04e0ad3`, immutable release `20260901155248-9ebdcf1`. Kandidat perbaikan alokasi metode pembayaran closing exact `bd1d6193c0fabd29effc4be43865d8e8b8a1ba2e` sudah `SOURCE_PUSHED / LOCAL_VALIDATED / CI_PASSED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; PR #99 masih menjadi gate review/merge. Status keseluruhan `AUDIO_UAT_PENDING / PILOT_BLOCKED_BY_AUDIO_UAT / BUSINESS_READY=false`.
 
 ## Tujuan dokumen
 
@@ -15,6 +15,21 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
+
+- Kandidat S416 memperbaiki rekonsiliasi metode pembayaran pada Owner dan
+  Staff closing. Booking dengan pembayaran awal Transfer Manual atau QRIS dan
+  add-on onsite Cash kini mengambil breakdown authoritative dari ledger server:
+  nilai booking awal tetap pada metode asal dan add-on tetap pada Cash, tanpa
+  double count. Submit closing gagal tertutup bila breakdown per metode belum
+  tersedia. Exact source `bd1d6193c0fabd29effc4be43865d8e8b8a1ba2e`
+  lulus full Feature 1.319/1.319 (14.931 assertion), focused PHP 19/19 (141
+  assertion), unit kontrak 3/3, browser Staff closing sampai save/submit 1/1,
+  TypeScript, build, format, dan audit Composer nol. Dependency CommonMark
+  dinaikkan ke 2.10.0 setelah advisory High baru terdeteksi. CI run
+  `33591636326` lulus. Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  CI_PASSED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; PR #99 dan guarded release
+  tetap gate berikutnya.
 
 - S402 memperbaiki indeks baca history closing lintas cabang setelah MySQL
   8.4.9 membuktikan kandidat prefix awal tidak dipilih optimizer dan masih
