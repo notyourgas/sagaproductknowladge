@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-09-02 - Saga Member production internal alpha D0 deployed
+
+- Release `20260902T1526Z-f763fc1-2eaa353` terpasang di private VPS
+  dengan runtime dan database production yang terisolasi.
+- Customer `f763fc19d8463cf2120387b0d06a57ffa5c868f7` dan Member
+  `2eaa35334e59dc2656b98816db6bdc020c478a8f` lulus canonical CI, remote Chrome
+  UAT, forced-RLS audit, backup/restore dan rollback rehearsal.
+- Ring D0 menolak seluruh business route tanpa durable write. Semua feature,
+  provider, public registration, DNS/TLS dan public exposure OFF.
+- Status `SAGA_MEMBER_PRODUCTION_DEPLOYED_INTERNAL_ALPHA /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`; R0 menunggu domain exact,
+  TLS, Resend, hashed allowlist, expiring passport dan UAT ulang.
+
+
 ## 2026-09-02 - SagaBook Block Time late-hour candidate
 
 - Pemilih Block Time kini memakai clock 24 jam eksplisit sampai `23:59` pada

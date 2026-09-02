@@ -66,7 +66,24 @@ Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
 - Pemisahan bounded context dan adapter dilakukan bertahap.
 - Bukan rewrite total.
 
-### Saga Member local internal alpha dan Goal 2 local validation
+### Saga Member production internal alpha D0
+
+- Saga Member kini terpasang pada existing private VPS sebagai release
+  `20260902T1526Z-f763fc1-2eaa353` dengan source Customer
+  `f763fc19d8463cf2120387b0d06a57ffa5c868f7` dan Member
+  `2eaa35334e59dc2656b98816db6bdc020c478a8f`.
+- State kanoniknya `SAGA_MEMBER_PRODUCTION_DEPLOYED_INTERNAL_ALPHA` pada ring
+  D0: runtime production dan database terisolasi aktif, tetapi seluruh route
+  bisnis, provider, public registration dan exposure publik tetap OFF.
+- Remote synthetic/Chrome UAT, forced RLS, backup/restore, checksum dan rollback
+  rehearsal lulus. Denial D0 terbukti tidak mengubah revision/hash/timestamp.
+- Ini bukan `PRODUCTION_ACTIVATED`, public launch, multi-outlet, commercial
+  tenant, business-ready, atau Goal 4 complete.
+- R0 menunggu exact domain, DNS/TLS, Resend terverifikasi, hashed internal
+  allowlist, activation passport berumur pendek dan UAT ulang. Gateway/QRIS,
+  Push, SagaBook live connector, NFC, printer, outlet kedua dan R3-R6 tetap OFF.
+
+### Riwayat Saga Member local internal alpha dan Goal 2 local validation
 
 - Saga Member dan Customer Platform memiliki private canonical source terpisah
   dari Contracts dan SagaOPS.

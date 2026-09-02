@@ -13,9 +13,34 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Field | Nilai |
 |---|---|
 | Waktu pembaruan terakhir | 2026-09-02 WIB |
-| Branch aktif | `codex/s419-sagabook-block-time-knowledge` |
+| Branch aktif | `codex/saga-member-production-knowledge` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `1d3e8b0` |
+| Baseline sebelum pembaruan | `85457fc` |
+
+## Saga Member production internal alpha D0
+
+- Release `20260902T1526Z-f763fc1-2eaa353` terpasang pada private VPS dengan
+  source Customer `f763fc19d8463cf2120387b0d06a57ffa5c868f7` dan Member
+  `2eaa35334e59dc2656b98816db6bdc020c478a8f`.
+- Canonical-main CI, remote Chrome UAT, forced RLS, backup/restore, checksum dan
+  rollback rehearsal lulus; D0 denial terbukti read-only.
+- Status `CONFIRMED / SAGA_MEMBER_PRODUCTION_DEPLOYED_INTERNAL_ALPHA / D0 /
+  PRODUCTION_ACTIVATED=false / PUBLIC=false / BUSINESS_READY=false`.
+- R0 menunggu exact domain, DNS/TLS, Resend, hashed internal allowlist,
+  expiring activation passport dan UAT ulang. Provider/route bisnis/public
+  scope tetap OFF.
+
+## File yang berubah pada sinkronisasi Saga Member D0
+
+- `products/saga-platform/PRODUCT.md`
+- `products/saga-platform/DOSSIER.md`
+- `products/saga-platform/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `DECISIONS.md`
+- `GAPS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook Block Time late-hour candidate
 
