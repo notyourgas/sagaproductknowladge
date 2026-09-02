@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-03 - Saga Member stable public Preview alias sync
+
+- Mengunci `https://saga-member-platform.vercel.app` sebagai satu URL publik
+  Saga Member dan mengarahkannya ke exact Preview Home tervalidasi.
+- HTTP 200 publik dan target exact Preview diverifikasi; URL deployment unik
+  tetap internal.
+- Klasifikasi `CONFIRMED / SAGA_MEMBER_FINALIZATION_PREVIEW_VALIDATED /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`; tidak ada `--prod`,
+  promote, backend publik, provider, data member, atau NFC.
+- Dokumen terdampak: Saga Platform product/dossier/changelog, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-09-03 - Saga Member Home dashboard preview sync
 
 - Menyinkronkan Customer Platform main

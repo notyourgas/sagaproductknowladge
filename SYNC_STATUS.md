@@ -13,9 +13,21 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Field | Nilai |
 |---|---|
 | Waktu pembaruan terakhir | 2026-09-03 WIB |
-| Branch aktif | `codex/member-home-knowledge` |
+| Branch aktif | `codex/member-stable-public-alias` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `bbf7c477d265d70d83304ae26582dff3fd14878a` |
+| Baseline sebelum pembaruan | `3f19db4f4da52b4ab88e207eada695e79cfabe1e` |
+
+## Saga Member stable public Preview alias
+
+- URL kanonik pengguna: `https://saga-member-platform.vercel.app`.
+- Alias menunjuk exact Preview dari Saga Member main
+  `c2754dcf5fe5cccc10993b0eb50a10003949c32e` dan telah memberi HTTP 200 publik.
+- Deployment unik tetap untuk gate internal. Tidak ada `vercel --prod`, promote,
+  custom domain, backend publik, provider live, fixture interaktif, atau data
+  member.
+- Status `CONFIRMED / SAGA_MEMBER_FINALIZATION_PREVIEW_VALIDATED /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`; runtime tetap D0
+  fail-closed.
 
 ## Saga Member Home dashboard preview
 
@@ -29,7 +41,8 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
   lulus.
 - Status `CONFIRMED / SAGA_MEMBER_FINALIZATION_PREVIEW_VALIDATED /
   PRODUCTION_UNCHANGED / BUSINESS_READY=false`; Customer Platform baru belum
-  dideploy dan stable production D0/provider/alias/ring/NFC tidak berubah.
+  dideploy dan provider/ring/NFC tidak berubah. URL publik kanonik kini memakai
+  alias stabil yang dicatat di atas.
 
 ## File yang berubah pada sinkronisasi Saga Member Home
 

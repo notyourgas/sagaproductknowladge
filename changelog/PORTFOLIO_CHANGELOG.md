@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-09-03 - Saga Member stable public Preview alias
+
+- Saga Member sekarang memakai satu URL pengguna tetap:
+  `https://saga-member-platform.vercel.app`.
+- Alias publik menunjuk exact Preview tervalidasi; deployment unik hanya untuk
+  gate internal dan tidak dibagikan sebagai link utama.
+- Runtime tetap D0 fail-closed. Tidak ada `vercel --prod`, promote, backend
+  publik, provider live, data member, NFC, production activation, atau business
+  readiness.
+
 ## 2026-09-03 - Saga Member Home dashboard preview validated
 
 - Customer Platform main `7b58d2ae62c564312d4a6adfc696c1a4f1a243eb`

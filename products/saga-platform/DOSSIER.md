@@ -74,8 +74,16 @@ Customer PR/main CI `33679625555`/`33679725411` dan Member PR/main CI
 Critical/Serious, dependency audit, security headers, serta exact-asset
 protected Preview verification lulus. Status
 `SAGA_MEMBER_FINALIZATION_PREVIEW_VALIDATED`; Preview tetap terlindungi,
-Customer Platform baru belum dideploy, dan stable production D0/provider/API
-bisnis/alias/ring/NFC tidak berubah.
+Customer Platform baru belum dideploy, dan provider/API bisnis/ring/NFC tidak
+berubah.
+
+Satu URL pengguna kini dikunci pada
+`https://saga-member-platform.vercel.app`. Alias stabil itu diarahkan ke exact
+Preview tervalidasi tanpa `vercel --prod` atau promote. Endpoint publik memberi
+HTTP 200, tetapi runtime tetap D0 fail-closed: login, fixture interaktif, data
+member, provider, dan backend production tetap OFF. Setiap Preview berikutnya
+harus lulus seluruh gate sebelum alias yang sama dipindahkan; kegagalan tidak
+boleh mengubah target sehat terakhir.
 
 Consent akun dan pemulihan sesi sekarang memiliki source authority pada
 Customer Platform main `fa3502c5f022305293f0c4142315bfe60cc455a7` (PR #7).
