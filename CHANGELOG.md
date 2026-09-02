@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-02 - SagaBook Block Time late-hour candidate sync
+
+- Menyinkronkan exact source
+  `43535f70295b0f1de48a0d0ba1224261e67ab500` dan PR #102.
+- Block Time kini memiliki pemilih 24 jam sampai `23:59`, kalender/preview
+  dinamis untuk jam malam, serta edit yang tetap terikat cabang asal.
+- Validasi server mencakup clock valid, isolasi ID tenant, dan delegasi cabang
+  Staff. Focused PHP 17/17 (103 assertion), Playwright 3/3 desktop/mobile,
+  typecheck, build, Pint, dan diff check lulus.
+- Dokumen terdampak: ringkasan, dossier, changelog produk/portfolio, master
+  knowledge, root changelog, dan status sinkronisasi.
+- Klasifikasi `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
+
 ## 2026-09-02 - SagaBook manual-booking lifecycle production sync
 
 - Menyinkronkan exact source

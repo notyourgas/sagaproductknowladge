@@ -1,5 +1,23 @@
 # SagaBook Changelog
 
+## 2026-09-02 - Kandidat Block Time mendukung jam malam sampai 23:59
+
+- Sebelum: form memakai time picker native browser dan kalender/preview memakai
+  rentang hardcoded, sehingga pemilihan atau representasi jam `20:00` ke atas
+  tidak konsisten. Edit dari `Semua Cabang` juga dapat ditolak karena cabang
+  aktif terbaca `all`.
+- Setelah: jam dan menit dipilih eksplisit dalam clock 24 jam sampai `23:59`;
+  kalender serta preview memanjang mengikuti data malam; edit mempertahankan
+  cabang asal. Server memvalidasi waktu valid, isolasi tenant, dan delegasi
+  cabang.
+- Exact source `43535f70295b0f1de48a0d0ba1224261e67ab500`, PR #102.
+  Focused PHP 17/17 (103 assertion), Playwright 3/3, typecheck, build, Pint,
+  dan diff check lulus.
+- Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
+  Merge, guarded production release, dan UAT operator perangkat nyata belum
+  dilakukan.
+
 ## 2026-09-02 - Booking manual tidak mengikuti expiry checkout web
 
 - Sebelum: direct manual booking yang belum lunas mewarisi payment hold pendek;

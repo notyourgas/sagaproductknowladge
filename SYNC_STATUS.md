@@ -13,9 +13,33 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Field | Nilai |
 |---|---|
 | Waktu pembaruan terakhir | 2026-09-02 WIB |
-| Branch aktif | `codex/s416-closing-payment-allocation-knowledge` |
+| Branch aktif | `codex/s419-sagabook-block-time-knowledge` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `fb16984` |
+| Baseline sebelum pembaruan | `1d3e8b0` |
+
+## SagaBook Block Time late-hour candidate
+
+- Exact source `43535f70295b0f1de48a0d0ba1224261e67ab500` pada PR #102
+  menyediakan pemilih 24 jam sampai `23:59`, kalender/preview dinamis untuk
+  jam malam, dan edit yang mempertahankan cabang asal.
+- Server memvalidasi clock `00:00-23:59`, mencegah takeover ID lintas tenant,
+  dan menolak Staff mengubah block dari cabang yang tidak didelegasikan.
+- Focused controller 11/11 (84 assertion), availability 6/6 (19 assertion),
+  Playwright CRUD 1/1, picker desktop/mobile 2/2, typecheck, build, Pint, dan
+  diff check lulus.
+- Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`;
+  production tetap exact `1ce62c9d`.
+
+## File yang berubah pada sinkronisasi Block Time late-hour
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook manual-booking operational lifecycle
 
