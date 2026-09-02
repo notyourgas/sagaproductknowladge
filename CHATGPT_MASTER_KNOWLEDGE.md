@@ -1,5 +1,17 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+Saga Member kini terpasang pada existing private VPS sebagai release
+`20260902T1526Z-f763fc1-2eaa353`, source Customer
+`f763fc19d8463cf2120387b0d06a57ffa5c868f7` dan Member
+`2eaa35334e59dc2656b98816db6bdc020c478a8f`. Canonical CI, remote Chrome UAT,
+forced RLS, backup/restore dan rollback rehearsal lulus. Status exact:
+`CONFIRMED / SAGA_MEMBER_PRODUCTION_DEPLOYED_INTERNAL_ALPHA / D0 /
+PRODUCTION_ACTIVATED=false / PUBLIC=false / BUSINESS_READY=false`. Seluruh
+route bisnis, provider dan public registration OFF. R0 menunggu domain exact,
+DNS/TLS, Resend, hashed internal allowlist, expiring activation passport dan
+UAT ulang; jangan menyebutnya public, commercial, multi-outlet, Goal 4 complete
+atau business-ready.
+
 SagaBook production aktif pada exact
 `1ce62c9d3d4afdef11fc3d8c2e8e83400fa8379d`, release
 `20260902061038-1ce62c9`, rollback `20260902051946-c71ac54`. S416
@@ -6115,10 +6127,12 @@ Points/XP/Tier, Voyager, Reward, Card, Quest, Push in-app fallback, Member Code,
 serta SagaBook handoff. Customer Platform tetap authority loyalty/Reward;
 SagaOPS tetap commerce writer dan SagaBook tetap booking/payment writer.
 
-Status: `SOURCE_PUSHED / LOCAL_VALIDATED / LOCAL_INTERNAL_ALPHA_ACCEPTED /
-IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`. Real Resend, Sagadev Gateway,
-external persistence/capacity/DR, signed release, manual assistive-technology,
-NFC, staging dan activation belum terbukti.
+Status: `SOURCE_PUSHED / CI_PASSED /
+SAGA_MEMBER_PRODUCTION_DEPLOYED_INTERNAL_ALPHA / D0 /
+PRODUCTION_ACTIVATED=false / PUBLIC=false / BUSINESS_READY=false`. Real Resend,
+Sagadev Gateway/QRIS, Push, SagaBook live connector, NFC, printer, outlet kedua,
+commercial tenant dan R3-R6 belum aktif. R0 menunggu domain exact, TLS, hashed
+internal allowlist, expiring passport dan UAT ulang.
 
 ### Saga Platform
 

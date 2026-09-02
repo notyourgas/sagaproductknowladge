@@ -8,6 +8,22 @@ Mencatat perubahan material control plane Saga.
 
 Fondasi production dan roadmap pemisahan boundary harus dibedakan.
 
+## 2026-09-02 — Saga Member production internal alpha D0 deployed
+
+- Release `20260902T1526Z-f763fc1-2eaa353` terpasang pada private VPS dengan
+  Customer `f763fc19d8463cf2120387b0d06a57ffa5c868f7` dan Member
+  `2eaa35334e59dc2656b98816db6bdc020c478a8f`.
+- Runtime/database/path/service/backup production terisolasi dari nonproduction;
+  Node.js 24, PostgreSQL, forced RLS, backup/restore dan rollback diverifikasi.
+- D0 denial bersifat read-only dan remote Chrome UAT lulus. Seluruh fitur,
+  provider, public registration, DNS/TLS dan public exposure tetap OFF.
+- Status `CONFIRMED / SOURCE_PUSHED / CI_PASSED /
+  SAGA_MEMBER_PRODUCTION_DEPLOYED_INTERNAL_ALPHA /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+- R0 menunggu domain exact, TLS, Resend, hashed allowlist, expiring passport dan
+  UAT ulang; Gateway/QRIS, Push, SagaBook live, NFC, printer, outlet kedua,
+  commercial tenant dan R3-R6 tetap OFF.
+
 ## 2026-09-02 — All-goals local pilot launcher tervalidasi
 
 - Program plan dan master execution prompt Goal 0–6 dikunci pada incremental

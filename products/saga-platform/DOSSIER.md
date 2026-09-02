@@ -51,11 +51,19 @@ subscription, entitlement, audit, readiness, provisioning, integration event.
 Capability tercatat di [PRODUCT](PRODUCT.md); implementasi per capability
 bervariasi dan tidak boleh digeneralisasi.
 
-Saga Member merupakan bounded context/customer experience lokal yang memakai
-kontrak dan authority terpisah. Goal 1 tetap `LOCAL_INTERNAL_ALPHA_ACCEPTED`;
-Goal 2 diterima hanya sebagai `GOAL_2_LOCAL_VALIDATED` dengan staging dilewati
-untuk scope saat ini. Provider, independent review, commissioning, controlled
-pilot, production activation, dan business readiness belum dibuktikan.
+Saga Member merupakan bounded context/customer experience dengan kontrak dan
+authority terpisah. Release `20260902T1526Z-f763fc1-2eaa353` kini terpasang
+pada private VPS sebagai `SAGA_MEMBER_PRODUCTION_DEPLOYED_INTERNAL_ALPHA` ring
+D0. Customer `f763fc19d8463cf2120387b0d06a57ffa5c868f7` dan Member
+`2eaa35334e59dc2656b98816db6bdc020c478a8f` lulus CI canonical-main, remote
+Chrome UAT, forced-RLS audit, backup/restore dan rollback rehearsal.
+
+D0 sengaja tidak dapat dipakai login atau menjalankan flow bisnis. Seluruh
+feature/provider, public registration dan public exposure OFF. R0 masih
+menunggu exact domain, DNS/TLS, Resend, hashed internal allowlist, expiring
+activation passport dan UAT ulang. Snapshot bridge hanya diterima untuk
+internal alpha, bukan scale. Goal 1/Goal 2 tetap menjadi provenance historis;
+production activation dan business readiness belum dibuktikan.
 
 Goal 3 telah menjalankan seluruh pekerjaan yang sah pada boundary lokal dan
 kanonik. Dari 480 micro-sprint, 124 lulus lokal, 108 selesai sebagian secara

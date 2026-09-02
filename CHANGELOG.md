@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-02 - Saga Member production internal alpha D0 sync
+
+- Menyinkronkan release `20260902T1526Z-f763fc1-2eaa353`, Customer
+  `f763fc19d8463cf2120387b0d06a57ffa5c868f7` dan Member
+  `2eaa35334e59dc2656b98816db6bdc020c478a8f`.
+- Canonical CI, remote Chrome UAT, forced RLS, backup/restore dan rollback
+  rehearsal lulus pada private VPS dengan isolation terpisah.
+- Klasifikasi `CONFIRMED / SAGA_MEMBER_PRODUCTION_DEPLOYED_INTERNAL_ALPHA /
+  D0 / PRODUCTION_ACTIVATED=false / PUBLIC=false / BUSINESS_READY=false`.
+- R0 tetap menunggu exact domain, DNS/TLS, Resend, hashed allowlist, expiring
+  passport dan UAT ulang; seluruh provider/route bisnis/public scope OFF.
+- Dokumen terdampak: Saga Platform product/dossier/changelog, portfolio,
+  master knowledge, decision, gap, root changelog dan sync status.
+
+
 ## 2026-09-02 - SagaBook Block Time late-hour candidate sync
 
 - Menyinkronkan exact source

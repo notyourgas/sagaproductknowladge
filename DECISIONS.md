@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-138 - Saga Member dipasang production-internal-alpha pada ring D0
+
+| Field | Nilai |
+|---|---|
+| Tanggal | 2026-09-02 |
+| Topik | Batas deployment production Saga Member |
+| Keputusan | Gunakan existing private VPS tanpa biaya baru untuk deployment terisolasi D0. Seluruh business route/provider/public exposure tetap OFF; R0 hanya setelah domain, TLS, Resend, hashed allowlist, expiring passport dan UAT ulang. |
+| Alasan | Memungkinkan verifikasi runtime/DR/rollback production tanpa membuka akses bisnis sebelum dependency aktivasi tersedia. |
+| Alternatif | Menunggu seluruh provider/domain sebelum deploy; menambah layanan berbayar; mengaktifkan public lebih awal. |
+| Dampak | Release production-class dapat diaudit, tetapi login/pilot/public/commercial/business readiness belum tersedia. |
+| Pemberi keputusan | Andreas |
+| Status | CONFIRMED |
+| Dokumen terkait | `products/saga-platform/PRODUCT.md`, `GAPS.md` |
+
 ## DEC-137 - Eksekusi seluruh Goal 0–6 dimulai dari aplikasi lokal yang dapat diuji
 
 | Field | Isi |
