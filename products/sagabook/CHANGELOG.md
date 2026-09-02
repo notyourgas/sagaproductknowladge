@@ -1,5 +1,21 @@
 # SagaBook Changelog
 
+## 2026-09-02 - Block Time jam malam aktif di production
+
+- Exact merge `e0f221435df3b2b8c92649fc0c69da70b1d207dc` dari PR #102
+  lulus seluruh main CI, termasuk MySQL 8.4, Saga AI, feature, visual, dan
+  browser E2E.
+- Fresh encrypted backup run `20260902T154254Z`, checksum, disposable restore,
+  exact artifact, atomic activation, dan public smoke lulus tanpa release
+  exception.
+- Production aktif pada immutable release `20260902154557-e0f2214`; rollback
+  kompatibel `20260902061038-1ce62c9` tersedia. Verifier independen lulus 23/23
+  dan public/security smoke lulus 3/3.
+- Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / CI_PASSED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+  Authenticated operator UAT belum dijalankan karena credential bridge lokal
+  belum aktif; tidak ada credential yang dibaca atau mutasi UAT production.
+
 ## 2026-09-02 - Kandidat Block Time mendukung jam malam sampai 23:59
 
 - Sebelum: form memakai time picker native browser dan kalender/preview memakai

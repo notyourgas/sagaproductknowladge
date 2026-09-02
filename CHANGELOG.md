@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-02 - SagaBook Block Time late-hour production sync
+
+- Menyinkronkan exact merge
+  `e0f221435df3b2b8c92649fc0c69da70b1d207dc`, PR #102, production release
+  `20260902154557-e0f2214`, dan rollback `20260902061038-1ce62c9`.
+- Main CI lengkap, encrypted backup run `20260902T154254Z`, checksum,
+  disposable restore, exact artifact, atomic activation, verifier 23/23, dan
+  public/security smoke 3/3 lulus.
+- Klasifikasi `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / CI_PASSED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+  AUTHENTICATED_OPERATOR_UAT_PENDING / BUSINESS_READY=false`.
+- Dokumen terdampak: ringkasan, dossier, changelog produk/portfolio, master
+  knowledge, root changelog, dan status sinkronisasi.
+
 ## 2026-09-02 - Saga Member production internal alpha D0 sync
 
 - Menyinkronkan release `20260902T1526Z-f763fc1-2eaa353`, Customer

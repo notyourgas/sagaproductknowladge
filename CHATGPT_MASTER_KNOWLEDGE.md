@@ -12,7 +12,7 @@ DNS/TLS, Resend, hashed internal allowlist, expiring activation passport dan
 UAT ulang; jangan menyebutnya public, commercial, multi-outlet, Goal 4 complete
 atau business-ready.
 
-SagaBook production aktif pada exact
+Release SagaBook sebelum Block Time aktif pada exact
 `1ce62c9d3d4afdef11fc3d8c2e8e83400fa8379d`, release
 `20260902061038-1ce62c9`, rollback `20260902051946-c71ac54`. S416
 memperbaiki breakdown metode pembayaran Owner/Staff closing untuk transaksi
@@ -31,16 +31,21 @@ Transfer Manual Rp80.000, QRIS Rp50.000, dan Cash Rp160.000. Status
 PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`;
 authenticated Owner/operator UAT masih pending.
 
-Kandidat SagaBook Block Time pada exact
-`43535f70295b0f1de48a0d0ba1224261e67ab500` / PR #102 mengganti time picker
+SagaBook Block Time production aktif pada exact merge
+`e0f221435df3b2b8c92649fc0c69da70b1d207dc` / PR #102. Perubahan mengganti time picker
 native dengan pemilih clock 24 jam eksplisit sampai `23:59`, memperluas
 kalender/preview mengikuti jam malam, dan menjaga cabang asal saat edit dari
 `Semua Cabang`. Backend menolak jam invalid, takeover ID lintas tenant, dan
 edit Staff terhadap block cabang yang tidak didelegasikan. Focused PHP 17/17
 (103 assertion), Playwright 3/3 desktop/mobile, typecheck, build, dan Pint
-lulus. Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
-IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`;
-production tetap exact `1ce62c9d` dan belum memuat perbaikan ini.
+lulus bersama main CI lengkap. Fresh encrypted backup run `20260902T154254Z`,
+checksum, disposable restore, exact artifact, atomic activation, verifier
+independen 23/23, dan public/security smoke 3/3 lulus. Immutable release
+`20260902154557-e0f2214` aktif dengan rollback `20260902061038-1ce62c9`.
+Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / CI_PASSED /
+PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`;
+authenticated operator UAT masih pending karena credential bridge lokal belum
+aktif.
 
 Saga Member Platform telah membuka program eksekusi Goal 0–6 hanya pada
 boundary lokal dan incremental spend Rp0. One-command local pilot launcher

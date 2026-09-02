@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-09-02 - SagaBook Block Time late-hour production
+
+- Pemilih Block Time 24 jam sampai `23:59`, kalender/preview jam malam, dan
+  preservasi cabang asal saat edit dari `Semua Cabang` kini aktif di production.
+- Exact merge `e0f221435df3b2b8c92649fc0c69da70b1d207dc`, PR #102, dan
+  main CI lengkap lulus.
+- Production release `20260902154557-e0f2214` aktif dengan rollback
+  `20260902061038-1ce62c9`. Encrypted backup/disposable restore, atomic
+  activation, verifier 23/23, serta public/security smoke 3/3 lulus.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+  AUTHENTICATED_OPERATOR_UAT_PENDING / BUSINESS_READY=false`.
+
 ## 2026-09-02 - Saga Member production internal alpha D0 deployed
 
 - Release `20260902T1526Z-f763fc1-2eaa353` terpasang di private VPS
