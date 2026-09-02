@@ -1,6 +1,6 @@
 # Saga Platform Product Knowledge
 
-Updated: 2 September 2026
+Updated: 3 September 2026
 Evidence status: production foundation + migration roadmap
 
 ## Tujuan dokumen
@@ -67,6 +67,18 @@ Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
 - Bukan rewrite total.
 
 ### Saga Member production internal alpha D0
+
+- Finalization slice pertama tersedia hanya pada protected Vercel Preview dari
+  exact main source `346869577c5a2cfeb4d3bd9431f167f18cd10f99` (PR #7).
+  Fondasi visual memakai Plus Jakarta Sans self-hosted, Feather-compatible SVG,
+  palet espresso/coklat, abu-semen, putih, serta tekstur semen/kayu ringan.
+- PR CI `33660604668` dan canonical main CI `33660963291` lulus. Unit/contract,
+  browser mobile-desktop, WCAG otomatis, zoom 200%, reduced motion, keyboard,
+  offline, audit dependency, dan remote preview asset/runtime checks lulus.
+- Status slice `SAGA_MEMBER_FINALIZATION_PREVIEW_VALIDATED`; preview tetap
+  terlindungi dan fail-closed. Stable production D0, backend VPS, database,
+  login, provider, API bisnis, alias production, dan business readiness tidak
+  berubah atau diaktifkan.
 
 - Frontend fail-closed D0 dari exact Member source
   `c8c776407160c1af7692a068f6a3930ac6ea5b16` kini juga terpasang pada target

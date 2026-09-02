@@ -12,10 +12,31 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-09-02 WIB |
-| Branch aktif | `codex/s421-sagabook-mobile-production-knowledge` |
+| Waktu pembaruan terakhir | 2026-09-03 WIB |
+| Branch aktif | `codex/member-design-foundation-knowledge` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `d88fb6b9c8e5df3a48fcfe876c025dc353dca772` |
+| Baseline sebelum pembaruan | `59ca79d61cbbfb7dc11b8e5844a929077f9ff28c` |
+
+## Saga Member design foundation preview
+
+- Exact main source `346869577c5a2cfeb4d3bd9431f167f18cd10f99`
+  (PR #7), PR CI `33660604668`, dan canonical main CI `33660963291` lulus.
+- Plus Jakarta Sans self-hosted, Feather-compatible SVG, palet espresso/
+  abu-semen/putih, tekstur semen/kayu, shell responsive, safe-area, serta
+  accessibility states tervalidasi lokal dan pada protected Preview.
+- Status `CONFIRMED / SAGA_MEMBER_FINALIZATION_PREVIEW_VALIDATED /
+  PRODUCTION_UNCHANGED / BUSINESS_READY=false`; login, backend, database,
+  provider, API bisnis, production alias, dan NFC tetap OFF/tidak berubah.
+
+## File yang berubah pada sinkronisasi Saga Member design foundation
+
+- `products/saga-platform/PRODUCT.md`
+- `products/saga-platform/DOSSIER.md`
+- `products/saga-platform/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook mobile admin production
 

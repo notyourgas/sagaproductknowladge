@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-09-03 - Saga Member design foundation preview validated
+
+- Exact main source `346869577c5a2cfeb4d3bd9431f167f18cd10f99`
+  (PR #7) memperbarui fondasi UI Saga Member dengan Plus Jakarta Sans lokal,
+  Feather-compatible icons, palet espresso/abu-semen/putih, tekstur semen/kayu,
+  dan shell responsive mobile/desktop.
+- PR CI `33660604668`, canonical main CI `33660963291`, 26 test, browser/WCAG,
+  zoom 200%, keyboard, offline, dependency audit, dan protected-preview checks
+  lulus.
+- Status `SAGA_MEMBER_FINALIZATION_PREVIEW_VALIDATED`; stable production D0,
+  VPS/backend, database, login, provider, API bisnis, alias production, dan
+  business readiness tidak berubah.
+
 ## 2026-09-02 - SagaBook mobile admin UI/UX production
 
 - Sidebar admin mobile kini hanya menandai satu route aktif, memakai warna

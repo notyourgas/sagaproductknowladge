@@ -8,6 +8,21 @@ Mencatat perubahan material control plane Saga.
 
 Fondasi production dan roadmap pemisahan boundary harus dibedakan.
 
+## 2026-09-03 — Saga Member design foundation preview validated
+
+- Exact main source `346869577c5a2cfeb4d3bd9431f167f18cd10f99`
+  dari PR #7 mengunci Plus Jakarta Sans self-hosted, Feather-compatible SVG,
+  palet espresso/karamel/abu-semen/putih, tekstur semen/kayu ringan, dan shell
+  responsive dengan safe-area serta accessibility states.
+- PR CI `33660604668` dan canonical main CI `33660963291` lulus; 26 test,
+  browser mobile/desktop, WCAG otomatis nol Critical/Serious, zoom 200%,
+  reduced-motion, keyboard/offline, dependency audit, dan protected-preview
+  asset/runtime checks lulus.
+- Status `CONFIRMED / SOURCE_PUSHED / CI_PASSED /
+  SAGA_MEMBER_FINALIZATION_PREVIEW_VALIDATED / PRODUCTION_UNCHANGED /
+  BUSINESS_READY=false`. Preview tetap fail-closed; login, backend, database,
+  provider, API bisnis, production alias, dan NFC tetap OFF/tidak berubah.
+
 ## 2026-09-02 — Saga Member Vercel D0 shell deployed
 
 - Exact Member source `c8c776407160c1af7692a068f6a3930ac6ea5b16`
