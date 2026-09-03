@@ -66,6 +66,25 @@ Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
 - Pemisahan bounded context dan adapter dilakukan bertahap.
 - Bukan rewrite total.
 
+### Saga Member V3 Contemporary Coffee Club
+
+- Saga Member canonical main `fd2d50c10ecbeafb5bf99525687da5a06f123013`
+  (PR #17) aktif pada Vercel deployment
+  `dpl_7TMg8jigjcvMrxL6FegfF8wXhfrL` melalui stable URL
+  `https://saga-member-platform.vercel.app`.
+- Primary-route hero tidak lagi memakai karakter generated. Beranda, Jelajah,
+  Pass, Reward, dan Profil memakai object art code-native, palet route-specific,
+  warm gradient terkendali, Plus Jakarta Sans, dan Feather icon.
+- Jelajah memiliki pencarian serta filter Coffee/Studio/Quest; Reward memiliki
+  filter availability. Seluruh aksi tetap memakai fixture dummy dan tidak
+  memanggil backend, auth, provider, atau data pelanggan nyata.
+- CI PR `33778916626`, 86/86 test, UAT 320/360/390/412/430 px, axe nol
+  critical/serious, offline shell, image fallback, filter/search, dan remote
+  public smoke lulus.
+- Status `CONFIRMED / SAGA_MEMBER_V3_PRODUCTION_DEPLOYED /
+  PUBLIC_DUMMY_DEMO_ACTIVE / REAL_BACKEND_OFF / REAL_PROVIDER_OFF /
+  REAL_DATA_OFF / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 ### Saga Member Gen Z mobile UI public dummy production
 
 - Saga Member canonical main `0612165bf24d7ee767a287b09c5319a617de6f4a`

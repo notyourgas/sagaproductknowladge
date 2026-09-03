@@ -8,6 +8,19 @@ Mencatat perubahan material control plane Saga.
 
 Fondasi production dan roadmap pemisahan boundary harus dibedakan.
 
+## 2026-09-03 — Saga Member V3 Contemporary Coffee Club deployed
+
+- Main `fd2d50c10ecbeafb5bf99525687da5a06f123013` (PR #17) aktif pada
+  deployment `dpl_7TMg8jigjcvMrxL6FegfF8wXhfrL` dan stable public URL.
+- Primary-route generated hero diganti object art code-native; typography,
+  color, gradient, local texture, effects, motion, dan espresso navigation
+  diperbarui tanpa mengubah mobile-only 320–430 px boundary.
+- Search/filter Jelajah dan availability filter Reward berfungsi. 86/86 test,
+  CI PR, UAT lima viewport, axe, offline/fallback, dan remote smoke lulus.
+- Klasifikasi `CONFIRMED / SAGA_MEMBER_V3_PRODUCTION_DEPLOYED /
+  PUBLIC_DUMMY_DEMO_ACTIVE / REAL_BACKEND_OFF / REAL_PROVIDER_OFF /
+  REAL_DATA_OFF / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 ## 2026-09-03 — Saga Member Gen Z mobile UI production validated
 
 - Saga Member main `0612165bf24d7ee767a287b09c5319a617de6f4a`

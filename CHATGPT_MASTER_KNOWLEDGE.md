@@ -1,5 +1,19 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+Saga Member V3 Contemporary Coffee Club aktif pada stable public dummy URL
+`https://saga-member-platform.vercel.app` dari canonical main
+`fd2d50c10ecbeafb5bf99525687da5a06f123013` (PR #17) dan deployment
+`dpl_7TMg8jigjcvMrxL6FegfF8wXhfrL`. Primary-route hero sekarang memakai
+code-native object art, bukan generated character; visual memakai Plus Jakarta
+Sans, Feather icon, route-specific accent, warm gradient terkendali, local Pass
+texture, dan espresso navigation. Jelajah memiliki search/filter dan Reward
+memiliki availability filter. CI PR `33778916626`, 86/86 test, UAT 320–430 px,
+axe, offline/fallback, dan remote public smoke lulus. Status
+`SAGA_MEMBER_V3_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
+REAL_BACKEND_OFF / REAL_PROVIDER_OFF / REAL_DATA_OFF /
+PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`; jangan menyebutnya akun,
+transaksi, provider, pilot outlet, atau backend production.
+
 Saga Member Gen Z mobile UI sekarang aktif sebagai public dummy demo pada
 `https://saga-member-platform.vercel.app`. Exact canonical main
 `0612165bf24d7ee767a287b09c5319a617de6f4a` (PR #15 dan hotfix PR #16) memakai

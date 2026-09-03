@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-149 - Saga Member memakai Contemporary Coffee Club V3
+
+| Field | Nilai |
+|---|---|
+| Tanggal | 2026-09-03 |
+| Topik | Refinement visual dan interaksi Saga Member |
+| Keputusan | Menjalankan seluruh batch redesign signifikan lalu deploy ke stable Vercel URL dengan primary hero code-native, visual route-specific, controlled gradient, local texture, restrained motion, Jelajah search/filter, dan Reward availability filter. |
+| Alasan | Tampilan sebelumnya masih terasa AI-generated karena generated character hero, repetitive surface, dan hierarchy yang seragam. |
+| Alternatif | Menambah dekorasi tanpa mengubah layout; mempertahankan generated character hero; mengganti stable URL; mengaktifkan backend/provider bersama redesign. |
+| Dampak | Main `fd2d50c10ecbeafb5bf99525687da5a06f123013` dan deployment `dpl_7TMg8jigjcvMrxL6FegfF8wXhfrL` mengaktifkan V3 pada public dummy URL. CI, 86/86 test, UAT lima viewport, axe, offline/fallback, filter/search, dan remote smoke lulus. |
+| Pemberi keputusan | Andreas |
+| Status | `CONFIRMED / SAGA_MEMBER_V3_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / REAL_BACKEND_OFF / REAL_PROVIDER_OFF / REAL_DATA_OFF / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false` |
+| Dokumen terkait | `products/saga-platform/PRODUCT.md`, `products/saga-platform/DOSSIER.md`, `products/saga-platform/CHANGELOG.md` |
+
 ## DEC-148 - Seluruh batch Gen Z UI Saga Member diintegrasikan ke public dummy demo
 
 | Field | Nilai |
