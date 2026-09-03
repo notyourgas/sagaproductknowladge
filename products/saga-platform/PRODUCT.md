@@ -66,6 +66,26 @@ Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
 - Pemisahan bounded context dan adapter dilakukan bertahap.
 - Bukan rewrite total.
 
+### Saga Member V9 Story Rail
+
+- Saga Member canonical main `cf702551b2b8d4cba5922938a3fb15f1919760cc`
+  (PR #23) aktif pada Vercel production deployment
+  `dpl_7tgMDC4unM5URo5Amxr92GQGUJDq` melalui stable public URL
+  `https://saga-member-platform.vercel.app`.
+- Story carousel Beranda kini merespons drag secara kontinu, memakai resistance
+  dan velocity threshold, lalu settle selama 180 ms melalui Motion. Tombol
+  sebelumnya/berikutnya 44 px menjadi alternatif single-pointer, keyboard,
+  switch, dan voice-access yang eksplisit.
+- Picker kecil diganti segmented story rail dengan counter dan progress.
+  Autoplay, pause, focus/hover stop, reduced-motion, visibility pause, polite
+  announcement, serta lifecycle cleanup tetap dipertahankan.
+- 103/103 test, canonical-main CI `33804897926`, dependency audit nol
+  vulnerability, browser UAT lokal dan publik pada 320/360/375/390/430 px,
+  rapid tap, offline shell, Axe, serta no-backend/provider request lulus.
+- Status `CONFIRMED / SAGA_MEMBER_V9_STORY_RAIL_PRODUCTION_DEPLOYED /
+  PUBLIC_DUMMY_DEMO_ACTIVE / REAL_BACKEND_OFF / REAL_PROVIDER_OFF /
+  REAL_DATA_OFF / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 ### Saga Member V8 Motion Foundation
 
 - Saga Member canonical main `e676b860afd15279d6cf98b23595b246ff0780c3`

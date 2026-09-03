@@ -8,6 +8,20 @@ Mencatat perubahan material control plane Saga.
 
 Fondasi production dan roadmap pemisahan boundary harus dibedakan.
 
+## 2026-09-04 — Saga Member V9 Story Rail deployed
+
+- Main `cf702551b2b8d4cba5922938a3fb15f1919760cc` (PR #23) aktif pada
+  deployment `dpl_7tgMDC4unM5URo5Amxr92GQGUJDq` dan stable public URL.
+- Carousel Beranda mendapat continuous drag resistance, velocity/distance
+  threshold, Motion settle 180 ms, segmented progress, counter, serta tombol
+  previous/next 44 px sebagai alternatif gesture yang eksplisit.
+- 103/103 test, canonical CI `33804897926`, dependency audit, UAT lokal dan
+  publik lima viewport, rapid tap, reduced-motion, Axe, offline, serta
+  no-backend/provider request lulus.
+- Klasifikasi `CONFIRMED / SAGA_MEMBER_V9_STORY_RAIL_PRODUCTION_DEPLOYED /
+  PUBLIC_DUMMY_DEMO_ACTIVE / REAL_BACKEND_OFF / REAL_PROVIDER_OFF /
+  REAL_DATA_OFF / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 ## 2026-09-04 — Saga Member V8 Motion Foundation deployed
 
 - Main `e676b860afd15279d6cf98b23595b246ff0780c3` (PR #22) aktif pada

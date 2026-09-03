@@ -58,7 +58,34 @@ D0. Customer `f763fc19d8463cf2120387b0d06a57ffa5c868f7` dan Member
 `2eaa35334e59dc2656b98816db6bdc020c478a8f` lulus CI canonical-main, remote
 Chrome UAT, forced-RLS audit, backup/restore dan rollback rehearsal.
 
-Frontend public dummy terkini adalah V8 Motion Foundation dari Saga Member
+Frontend public dummy terkini adalah V9 Story Rail dari Saga Member main
+`cf702551b2b8d4cba5922938a3fb15f1919760cc` (PR #23) pada Vercel production
+deployment `dpl_7tgMDC4unM5URo5Amxr92GQGUJDq` dan stable URL
+`https://saga-member-platform.vercel.app`. V9 mengubah carousel Beranda dari
+perpindahan endpoint menjadi gesture kontinu dengan pointer capture, resistance
+0,72, threshold 36 px atau 0,38 px/ms, dan settle 180 ms menggunakan runtime
+Motion yang sudah ada.
+
+Riset mengikuti W3C WAI
+[Carousel Pattern](https://www.w3.org/WAI/ARIA/apg/patterns/carousel/), WCAG
+[Dragging Movements](https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements.html),
+[Pointer Events](https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events),
+dan panduan [Motion performance](https://motion.dev/docs/performance). Gesture
+bukan satu-satunya kontrol: tombol sebelumnya/berikutnya 44 px memberi
+alternatif pointer tunggal dan keyboard. Rotation control tetap berada sebelum
+konten berputar, perubahan manual diumumkan secara polite, dan segmented rail
+mengurangi tab stop dibanding empat picker kecil.
+
+103/103 test, canonical-main CI `33804897926`, dependency audit nol
+vulnerability, local UAT, dan public remote UAT pada 320/360/375/390/430 px
+lulus. Drag, previous/next, rapid tap, autoplay, pause, reduced-motion, Axe,
+offline shell, layout, console, serta network boundary terverifikasi. Runtime
+tetap `PUBLIC_DUMMY_DEMO`; backend, auth, provider, transaksi, data pelanggan,
+QRIS, Push, NFC, printer, dan pilot nyata tidak aktif. Delivery adalah
+`SAGA_MEMBER_V9_STORY_RAIL_PRODUCTION_DEPLOYED`, sedangkan
+`PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
+
+V8 Motion Foundation dari Saga Member
 main `e676b860afd15279d6cf98b23595b246ff0780c3` (PR #22) pada Vercel
 production deployment `dpl_7eXtKWzCtizRd4wKEZuZBPUj2UiC` dan stable URL
 `https://saga-member-platform.vercel.app`. V8 mempertahankan information
@@ -83,7 +110,8 @@ login, console error, respons gagal, request eksternal, request auth, backend,
 atau provider. Runtime tetap `PUBLIC_DUMMY_DEMO`: backend, auth, provider,
 transaksi, data pelanggan, QRIS, Push, NFC, printer, dan pilot nyata tidak
 aktif. Delivery adalah `SAGA_MEMBER_V8_MOTION_PRODUCTION_DEPLOYED`, sedangkan
-`PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
+`PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`. V8 sekarang menjadi
+provenance historis dan rollback motion foundation sebelum V9.
 
 V7 Home Editorial Final dari Saga Member
 main `83b969d7c77a2ce8015fb087074d3d59e7acea39` (PR #21) pada Vercel
