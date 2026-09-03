@@ -2134,3 +2134,17 @@ keputusan pengganti.
 | Pemberi keputusan | Andreas / founder |
 | Status | `CONFIRMED / IMPLEMENTED / SAGA_MEMBER_V5_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`; source `f11172a8540263c4394666fb4f722e15546f9bba`, PR #19, deployment `dpl_EQ64iVww84S8DsSbSLVY8W1MhVoW` |
 | Dokumen terkait | [Saga Platform Product](products/saga-platform/PRODUCT.md), [Saga Platform Dossier](products/saga-platform/DOSSIER.md), [Saga Platform Changelog](products/saga-platform/CHANGELOG.md) |
+
+## DEC-152 - Beranda Saga Member memakai V6 Daily Lobby pada public dummy
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-09-04 |
+| Topik | Home experience dan deployment Saga Member public dummy |
+| Keputusan | Jalankan seluruh sepuluh batch perbaikan Beranda sebagai V6 Daily Lobby, merge melalui canonical main, lalu promosikan exact Preview ke satu stable public Vercel URL. Runtime tetap data dummy tanpa backend/provider nyata. |
+| Alasan | Founder meminta Beranda yang tidak polos, memiliki experience lebih khas, small-wide slideshow, serta typography dan sizing yang lebih matang. |
+| Alternatif yang dipertimbangkan | Mempertahankan Home V5; autoplay dua detik; memperbanyak gambar generatif; mengubah route lain sekaligus. |
+| Dampak | Beranda memiliki sapaan waktu lokal, compact wallet, empat-slide carousel, shortcut, context, tier, dan activity. Carousel memakai interval empat detik untuk keterbacaan, kontrol pause/manual/swipe, pause saat off-screen, serta reduced-motion. Runtime public dummy berubah; private VPS D0, QRIS, Resend, Push, NFC, printer, real account, serta business readiness tidak berubah. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / IMPLEMENTED / SAGA_MEMBER_V6_DAILY_LOBBY_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`; source `85a6f8bc4151e414bb0ca7235922162d0d914190`, PR #20, deployment `dpl_CqeoVBX1Q11ZKc4C4p2tVRkXkMLv` |
+| Dokumen terkait | [Saga Platform Product](products/saga-platform/PRODUCT.md), [Saga Platform Dossier](products/saga-platform/DOSSIER.md), [Saga Platform Changelog](products/saga-platform/CHANGELOG.md) |

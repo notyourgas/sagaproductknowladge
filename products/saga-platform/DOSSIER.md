@@ -58,24 +58,28 @@ D0. Customer `f763fc19d8463cf2120387b0d06a57ffa5c868f7` dan Member
 `2eaa35334e59dc2656b98816db6bdc020c478a8f` lulus CI canonical-main, remote
 Chrome UAT, forced-RLS audit, backup/restore dan rollback rehearsal.
 
-Frontend public dummy terkini adalah V5 Urban Coffee Club dari Saga Member
-main `f11172a8540263c4394666fb4f722e15546f9bba` (PR #19) pada Vercel
-deployment `dpl_EQ64iVww84S8DsSbSLVY8W1MhVoW` dan stable URL
-`https://saga-member-platform.vercel.app`. Program 10 wave, 20 batch, dan 60
-micro-sprint memperbarui lima primary route serta route sekunder dengan
-hierarchy editorial yang lebih tegas, wallet serta Pass beridentitas kuat,
-discovery terstruktur, reward utility, dan profile settings yang ringkas.
+Frontend public dummy terkini adalah V6 Daily Lobby dari Saga Member main
+`85a6f8bc4151e414bb0ca7235922162d0d914190` (PR #20) pada Vercel deployment
+`dpl_CqeoVBX1Q11ZKc4C4p2tVRkXkMLv` dan stable URL
+`https://saga-member-platform.vercel.app`. Sepuluh batch khusus Beranda
+memperbaiki sapaan, hierarchy typography, wallet, shortcut, konteks harian,
+tier, activity, warna, tekstur, serta carousel empat cerita.
 
-Visual memakai Plus Jakarta Sans, Feather icon, komposisi 70/20/10
-paper/espresso/lime, tiga tekstur SVG lokal, gradient terbatas pada wallet dan
-Pass, serta motion transform/opacity 90–180 ms dengan reduced-motion.
-Canonical-main CI `33784325181`, 90/90 test, browser UAT 320–430 px, axe nol
-critical/serious, typography floor, 44 px touch target, nav clearance,
-offline/fallback, interaction, dan remote public UAT lulus. Runtime tetap
+Carousel Coffee/Studio/Quest/Reward memakai interval empat detik, transisi
+180 ms, slide peek, indikator, pause/play, dan swipe. Autoplay berhenti setelah
+interaksi serta saat carousel tidak terlihat, tab tidak aktif, atau preferensi
+reduced-motion aktif. Seluruh teks, angka, CTA, dan status tetap code-native;
+ilustrasi fungsional memakai Feather icon dan bentuk CSS. Canonical-main CI
+`33786940481`, 93/93 test, browser UAT 320–430 px, axe nol critical/serious,
+44 px touch target, offline shell, serta public remote UAT lulus. Runtime tetap
 `PUBLIC_DUMMY_DEMO`: backend, auth, provider, transaksi, data pelanggan, QRIS,
 NFC, printer, dan pilot nyata tidak aktif. Karena itu delivery adalah
-`SAGA_MEMBER_V5_PRODUCTION_DEPLOYED`, sedangkan
+`SAGA_MEMBER_V6_DAILY_LOBBY_PRODUCTION_DEPLOYED`, sedangkan
 `PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
+
+V5 Urban Coffee Club dari main
+`f11172a8540263c4394666fb4f722e15546f9bba` (PR #19) adalah release
+sebelumnya dan menjadi provenance historis, bukan state runtime terbaru.
 
 V4 Editorial Coffee Utility dari main
 `99ca02a06bb85d52570d35454cd5c3c0a0d4087d` (PR #18) adalah release

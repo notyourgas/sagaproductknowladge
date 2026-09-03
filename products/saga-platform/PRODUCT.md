@@ -66,6 +66,26 @@ Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
 - Pemisahan bounded context dan adapter dilakukan bertahap.
 - Bukan rewrite total.
 
+### Saga Member V6 Daily Lobby
+
+- Saga Member canonical main `85a6f8bc4151e414bb0ca7235922162d0d914190`
+  (PR #20) aktif pada Vercel deployment
+  `dpl_CqeoVBX1Q11ZKc4C4p2tVRkXkMLv` melalui stable public URL
+  `https://saga-member-platform.vercel.app`.
+- Sepuluh batch khusus Beranda mengubahnya menjadi `Saga Daily Lobby` dengan
+  sapaan waktu lokal, membership wallet yang lebih ringkas, empat shortcut,
+  konteks harian, tier journey, activity, dan carousel empat cerita untuk
+  Coffee, Studio, Quest, serta Reward.
+- Carousel berpindah setiap empat detik, dapat dijeda, dipilih manual, dan
+  digeser; autoplay berhenti setelah interaksi, saat keluar viewport/tab, dan
+  ketika reduced-motion aktif. Teks/CTA tetap code-native dengan Feather icon.
+- 93/93 test dan canonical-main CI `33786940481` lulus. Browser UAT mencakup
+  320/360/390/412/430 px, autoplay/manual/pause, axe nol critical/serious,
+  touch target 44 px, offline shell, dan public remote UAT tanpa error.
+- Status `CONFIRMED / SAGA_MEMBER_V6_DAILY_LOBBY_PRODUCTION_DEPLOYED /
+  PUBLIC_DUMMY_DEMO_ACTIVE / REAL_BACKEND_OFF / REAL_PROVIDER_OFF /
+  REAL_DATA_OFF / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 ### Saga Member V5 Urban Coffee Club
 
 - Saga Member canonical main `f11172a8540263c4394666fb4f722e15546f9bba`
