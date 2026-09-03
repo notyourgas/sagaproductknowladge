@@ -1,7 +1,7 @@
 # SagaOPS Product Knowledge
 
 Updated: 3 September 2026
-Evidence status: `CONFIRMED / SOURCE_COMMITTED_LOCAL_BRANCH / SAGA_POS_M3_LOCAL_SLICE / EXTERNAL_RUNTIME_NO_GO / STAGING_NOT_PROVISIONED / IMPLEMENTED_NOT_DEPLOYED`
+Evidence status: `CONFIRMED / SOURCE_COMMITTED_LOCAL_BRANCH / SAGA_POS_M3_PLUS_LOCAL_SLICE / SAGADEV_GATEWAY_CONTRACT_LOCKED / EXTERNAL_RUNTIME_NO_GO / STAGING_NOT_PROVISIONED / IMPLEMENTED_NOT_DEPLOYED`
 
 ## Tujuan dokumen
 
@@ -65,12 +65,20 @@ IMPLEMENTED_NOT_DEPLOYED / PILOT_NOT_STARTED / PRODUCTION_UNCHANGED /
 BUSINESS_READY=false`.
 
 - Saga POS source branch `codex/saga-pos-vs01-kiosk-kds-dashboard` exact
-  `d942ceaeffb5ba92ed412b0de87a4e057a3e7f7e` menyelesaikan local program
+  `cf790474dbd34cb6b62db7e7da99705777b980f5` menyelesaikan local program
   24 wave/120 batch/480 micro-sprint. Disposition: 62 batch `PASS_LOCAL`, 28
-  `LOCAL_SIMULATED`, 30 `BLOCKED_EXTERNAL`; readiness M3 78/100.
-- 96/96 test, browser E2E lima surface, automated accessibility, dependency
-  audit, 6 screenshot evidence, dan local PostgreSQL/RLS/cross-outlet deny
+  `LOCAL_SIMULATED`, 30 `BLOCKED_EXTERNAL`; readiness M3+ 80/100.
+- 98/98 test, browser E2E lima surface, automated accessibility, dependency
+  audit 0 vulnerability, 6 screenshot evidence, dan lima migration local
+  PostgreSQL/RLS/cross-outlet deny
   lulus. Source commit belum dipush/merge saat knowledge ini ditulis.
+- Founder mengunci SagaDev Gateway sebagai satu-satunya payment gateway Saga
+  POS dengan product binding `sagaops`; PJP/acquirer tetap dikelola di belakang
+  SagaDev dan tidak dikonfigurasi langsung oleh POS.
+- Local contract mencakup readiness, product-scoped signed request, idempotent
+  create, signed event/status recovery, amount/order/currency/replay guard,
+  settlement facts, serta full-refund manual-finance yang tidak memalsukan
+  status refunded. SagaDev sandbox dan transaksi nyata belum dijalankan.
 - Runtime UI masih in-memory. Migration/RLS baru adalah durable contract,
   bukan bukti UI restart recovery pada external PostgreSQL.
 

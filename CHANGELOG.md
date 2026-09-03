@@ -1,5 +1,21 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-03 - Saga POS owner policy dan SagaDev Gateway sync
+
+- Informasi `CONFIRMED` dari keputusan Andreas mengunci konfigurasi pilot dan
+  SagaDev Gateway product binding `sagaops` sebagai payment boundary Saga POS.
+- Before -> after: provisional fixture/provider-open menjadi owner-approved
+  local policy dan product-scoped signed SagaDev contract; refund QRIS tidak
+  boleh menjadi sukses sebelum manual-finance reconciliation.
+- Exact source `cf790474dbd34cb6b62db7e7da99705777b980f5` lulus 98/98 test,
+  lima migration PostgreSQL/RLS, browser/accessibility, 6 screenshot dan audit
+  0 vulnerability; readiness 80/100.
+- Area terdampak: SagaOPS product, dossier, changelog, gaps, decision log,
+  portfolio, master knowledge dan sync status.
+- Status `IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED /
+  BUSINESS_READY=false`; blocker adalah SagaDev sandbox, durable runtime,
+  hardware, staging, named staff dan controlled pilot.
+
 ## 2026-09-03 - Saga POS local sprint program sync
 
 - Mencatat keputusan founder untuk model kiosk + nota checker/KDS, Cashier

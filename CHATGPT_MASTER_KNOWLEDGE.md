@@ -6244,11 +6244,15 @@ PostgreSQL/RLS, recovery, Member/POS integration boundary, serta automated
 browser acceptance. Bukti tersebut adalah local internal alpha, bukan provider,
 staging, atau outlet production.
 
-Saga POS local branch exact `d942ceaeffb5ba92ed412b0de87a4e057a3e7f7e`
+Saga POS local branch exact `cf790474dbd34cb6b62db7e7da99705777b980f5`
 menambah lima surface untuk Kopi Saga Salak: Kiosk, assisted Cashier, KDS,
 Owner Dashboard, dan Admin. Program 24 wave/120 batch/480 micro-sprint mencapai
-M3 78/100 dengan 96/96 test dan local PostgreSQL/RLS evidence. Runtime UI
-masih in-memory; QRIS/Member/Reward masih simulator/fixture, printer/NFC,
+M3+ 80/100 dengan 98/98 test dan lima migration local PostgreSQL/RLS evidence.
+Founder mengunci SagaDev Gateway untuk QRIS dengan product binding `sagaops`;
+PJP/acquirer berada di belakang SagaDev dan tidak dikonfigurasi POS. Local
+contract memvalidasi signed request/event, idempotency, recovery, settlement,
+dan full-refund manual-finance tanpa fake success. Runtime UI masih in-memory;
+QRIS/Member/Reward masih simulator/fixture, printer/NFC,
 installed runtime, staging, staff, pilot dan production tetap NOT_RUN. Source
 commit belum dipush/merge.
 

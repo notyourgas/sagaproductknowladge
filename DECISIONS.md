@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-143 - Saga POS memakai SagaDev Gateway dan owner-approved pilot policy
+
+| Field | Nilai |
+|---|---|
+| Tanggal | 2026-09-03 |
+| Topik | Aturan pilot dan payment gateway Saga POS |
+| Keputusan | Menerima rekomendasi aturan pilot Saga POS dan memakai SagaDev Gateway dengan product binding `sagaops`. PJP/acquirer berada di belakang SagaDev; Saga POS tidak menyimpan central merchant secret. QRIS refund pilot full-only dan manual-finance sampai capability API SagaDev disetujui. |
+| Alasan | Menyatukan payment boundary lintas produk Saga, menjaga credential pusat, dan mencegah POS membuat paid/refund status dari asumsi atau endpoint yang belum tersedia. |
+| Alternatif | Integrasi Midtrans/Xendit langsung; gateway provider-neutral tanpa keputusan; menganggap simulator atau refund lokal sebagai provider success. |
+| Dampak | Policy lokal, signed gateway contract, settlement fields, manual refund RLS dan test diperbarui. Exact source `cf790474dbd34cb6b62db7e7da99705777b980f5` lulus 98/98; readiness menjadi 80/100. Sandbox/hardware/staging/pilot/production tetap fail-closed. |
+| Pemberi keputusan | Andreas |
+| Status | `CONFIRMED / LOCAL_CONTRACT_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false` |
+| Dokumen terkait | `products/sagaops/PRODUCT.md`, `products/sagaops/DOSSIER.md`, `products/sagaops/CHANGELOG.md`, `GAPS.md` |
+
 ## DEC-142 - Seluruh strategi Saga POS dijalankan lokal dengan closure di akhir
 
 | Field | Nilai |

@@ -1246,15 +1246,22 @@ GAP-004, bukan gap implementasi warna komponen.
 - `CONFIRMED`: pilot pertama Kopi Saga Salak memakai self-service kiosk + nota
   checker/KDS; Cashier Mode mandatory fallback. Cash, QRIS, Member Code,
   Reward, thermal printer, dan NFC mandatory untuk eventual pilot.
-- `NEEDS CONFIRMATION`: pajak/service/pembulatan, variant/modifier final,
-  order type/jam/nomor antrean, promo/Reward stacking, refund/remake/void,
-  opening cash, dan support policy.
-- `NEEDS CONFIRMATION`: model/OS/mounting kiosk, KDS, printer USB/LAN, NFC,
-  network, provider QRIS, staff identity, pilot duration/volume, dan reviewer.
+- `CONFIRMED`: harga customer-final, service 0%, cash rounding Rp100, order
+  dine-in/takeaway, jam awal 07:00-22:00/last order 21:30, benefit eksklusif,
+  opening cash Rp300.000, serta full refund pilot telah disetujui founder.
+- `CONFIRMED`: SagaDev Gateway adalah payment gateway Saga POS dengan product
+  binding `sagaops`; PJP/acquirer tidak dikonfigurasi langsung oleh POS.
+- `NEEDS CONFIRMATION`: status/threshold/tarif PBJT kabupaten/kota, jadwal
+  hari/libur nyata, dan recipe/HPP matrix modifier sebelum outlet pilot.
+- `NEEDS CONFIRMATION`: procurement/mounting final kiosk/KDS, Epson TM-T82X,
+  ACS ACR1552U, network/UPS, named staff/reviewer, dan kalender pilot.
+- `TODO`: register product `sagaops` pada SagaDev sandbox, provision HMAC dua
+  arah melalui vault, lalu uji dynamic checkout, signed event/status,
+  settlement gross/fee/net, manual refund dan kill switch.
 - `TODO`: hubungkan lima surface Saga POS ke durable repository/PostgreSQL;
   local lab saat ini in-memory walaupun schema/RLS contract tersedia.
 - `TODO`: push/merge source exact
-  `d942ceaeffb5ba92ed412b0de87a4e057a3e7f7e` setelah source review/CI.
+  `cf790474dbd34cb6b62db7e7da99705777b980f5` setelah source review/CI.
 - `NEEDS CONFIRMATION`: backend production, external tenant isolation,
   offline conflict handling, installed runtime, staging, dan outlet pilot.
 

@@ -13,17 +13,18 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Field | Nilai |
 |---|---|
 | Waktu pembaruan terakhir | 2026-09-03 WIB |
-| Branch aktif | `codex/saga-pos-local-program-knowledge` |
+| Branch aktif | `main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `a8d665ba75ae8e36dfa8e941d794ac3fb6657952` |
+| Baseline sebelum pembaruan | `32ffca057cb8fb09ac223b399b20f032c38566c5` |
 
-## Saga POS local sprint program
+## Saga POS owner policy dan SagaDev Gateway
 
-- Source exact `d942ceaeffb5ba92ed412b0de87a4e057a3e7f7e` pada local branch menyediakan
+- Source exact `cf790474dbd34cb6b62db7e7da99705777b980f5` pada local branch menyediakan
   Kiosk, Cashier fallback, KDS, Dashboard, dan Admin untuk Kopi Saga Salak.
-- 96/96 test dan local PostgreSQL/RLS evidence lulus. Ledger mencakup 24
-  wave/120 batch/480 micro-sprint; readiness M3 78/100.
-- Source belum dipush/merge. Provider, hardware, staging, staff, pilot,
+- Owner-approved policy dan SagaDev Gateway product binding `sagaops` sudah
+  tercatat. 98/98 test, lima migration local PostgreSQL/RLS,
+  browser/accessibility, screenshot dan dependency audit lulus; readiness 80/100.
+- Source belum dipush/merge. SagaDev sandbox, hardware, staging, staff, pilot,
   production, dan business readiness tidak berubah.
 
 ## File yang berubah pada sinkronisasi Saga POS

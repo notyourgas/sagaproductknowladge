@@ -169,11 +169,20 @@ Saga POS program khusus Kopi Saga Salak telah menjalankan 24 wave, 120 batch,
 dan 480 micro-sprint pada boundary lokal. Disposition batch adalah 62
 `PASS_LOCAL`, 28 `LOCAL_SIMULATED`, dan 30 `BLOCKED_EXTERNAL`; 334 micro-sprint
 memiliki local pass evidence dan 118 tetap external pending/NOT_RUN. Source
-exact `d942ceaeffb5ba92ed412b0de87a4e057a3e7f7e` lulus 96/96 test, browser
+exact `cf790474dbd34cb6b62db7e7da99705777b980f5` lulus 98/98 test, browser
 E2E/accessibility, dependency audit, screenshot evidence, serta local
-PostgreSQL migration/RLS/cross-outlet deny.
+PostgreSQL lima migration/RLS/cross-outlet deny.
 
-Readiness program adalah M3 78/100. Runtime browser masih in-memory walaupun
+Readiness program adalah M3+ 80/100. Founder menyetujui harga customer-final,
+service 0%, PBJT configurable tetapi 0% sampai konfirmasi daerah, cash rounding
+Rp100, jam pilot 07:00-22:00/last order 21:30, benefit eksklusif, serta full
+refund pilot. SagaDev Gateway dikunci sebagai payment gateway dengan product
+binding `sagaops`; PJP pusat tidak diekspos ke Saga POS.
+
+SagaDev local contract mempunyai readiness gate, signed request/event,
+idempotency, bounded status recovery, replay/state/amount/order/currency guard,
+settlement gross/fee/net, dan full-refund manual-finance work item. Refund API
+tidak direka. Runtime browser masih in-memory walaupun
 durable schema contract telah ditambah. Provider QRIS, Customer Platform,
 printer, NFC, installed runtime, isolated staging, staff commissioning,
 controlled pilot dan production tetap `NOT_RUN`; source commit juga belum

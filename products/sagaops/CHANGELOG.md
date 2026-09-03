@@ -8,6 +8,22 @@ Mencatat perubahan material SagaOPS.
 
 Prototype dan production outlet adalah evidence level yang berbeda.
 
+## 2026-09-03 — Owner policy dan SagaDev Gateway dikunci
+
+- Founder menerima konfigurasi pilot: harga customer-final, service 0%, PBJT
+  configurable/0% sampai konfirmasi daerah, cash rounding Rp100, jam
+  07:00-22:00 dengan last order 21:30, dan Voyager/Reward/promo eksklusif.
+- Payment gateway dikunci ke SagaDev Gateway dengan product binding `sagaops`;
+  POS tidak menyimpan central PJP secret atau mengonfigurasi PJP langsung.
+- Contract lokal mencakup readiness, signed create/status/event, idempotency,
+  recovery, settlement dan full-refund manual-finance fail-closed.
+- Exact source `cf790474dbd34cb6b62db7e7da99705777b980f5` lulus 98/98 test,
+  lima migration PostgreSQL/RLS, browser/accessibility, 6 screenshot dan audit
+  dependency 0 vulnerability. Readiness naik menjadi 80/100.
+- Status `IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED /
+  BUSINESS_READY=false`; SagaDev sandbox, hardware, staging, staff dan pilot
+  belum dijalankan.
+
 ## 2026-09-03 — Saga POS local sprint program mencapai M3
 
 - Model fisik dikunci sebagai self-service kiosk + nota checker/KDS; Cashier

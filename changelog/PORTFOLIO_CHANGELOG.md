@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-09-03 - Saga POS mengunci SagaDev Gateway
+
+- Andreas menerima pilot policy dan memilih SagaDev Gateway dengan product
+  binding `sagaops`; PJP/acquirer tidak dikonfigurasi langsung oleh POS.
+- Signed request/event, idempotent create, recovery, settlement facts, dan
+  full-refund manual-finance contract lulus lokal pada exact
+  `cf790474dbd34cb6b62db7e7da99705777b980f5`.
+- 98/98 test, lima migration PostgreSQL/RLS, browser/accessibility, 6 screenshot
+  dan audit dependency lulus. Readiness naik dari 78 menjadi 80/100.
+- SagaDev sandbox, hardware, staging, pilot, deployment dan activation tetap
+  `NOT_RUN`; `BUSINESS_READY=false`.
+
 ## 2026-09-03 - Saga POS local sprint program mencapai M3
 
 - SagaOPS kini memiliki local Saga POS lab untuk Kiosk, assisted Cashier, KDS,
