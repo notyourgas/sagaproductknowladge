@@ -1258,13 +1258,17 @@ GAP-004, bukan gap implementasi warna komponen.
 - `TODO`: register product `sagaops` pada SagaDev sandbox, provision HMAC dua
   arah melalui vault, lalu uji dynamic checkout, signed event/status,
   settlement gross/fee/net, manual refund dan kill switch.
-- `TODO`: hubungkan lima surface Saga POS ke durable repository/PostgreSQL;
-  local lab saat ini in-memory walaupun schema/RLS contract tersedia. Item ini
-  sekarang dipecah sebagai W25/R001-R004 pada readiness extension.
+- `CONFIRMED`: W25/R001-R004 menghubungkan lima surface ke disk-backed local
+  durable repository dengan PostgreSQL semantics, migration registry, atomic
+  checkout/outbox, dan restart recovery. Evidence exact
+  `8b63df321c3a0f7aeba9080eea5ac044470a6d8c` bersifat lokal dan belum
+  membuktikan external PostgreSQL, multi-instance, atau staging recovery.
 - `TODO`: push/merge source exact
-  `0618da16b3ca4c4a31a2891730c53b1eb13f5abe` setelah source review/CI.
-- `TODO`: jalankan 10 wave/40 batch/160 micro-sprint readiness extension.
-  Pembuatan ledger tidak membuka bobot; current readiness tetap 80/100.
+  `8b63df321c3a0f7aeba9080eea5ac044470a6d8c` setelah source review/CI.
+- `TODO`: verifikasi dan terima external gate W26-W34. Seluruh contract dan
+  preparation sudah dijalankan lokal, tetapi sembilan wave masih blocked oleh
+  sandbox, hardware, staging, staff, pilot, release, dan business acceptance;
+  current readiness 84/100.
 - `NEEDS CONFIRMATION`: backend production, external tenant isolation,
   offline conflict handling, installed runtime, staging, dan outlet pilot.
 

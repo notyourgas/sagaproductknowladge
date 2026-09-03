@@ -8,7 +8,7 @@ sales, dan konten SagaOPS.
 ## Konteks dan status bukti
 
 - Updated: 3 September 2026
-- Delivery: `SOURCE_COMMITTED_LOCAL_BRANCH / SAGA_POS_M3_LOCAL_SLICE / EXTERNAL_RUNTIME_NO_GO / STAGING_NOT_PROVISIONED / IMPLEMENTED_NOT_DEPLOYED`
+- Delivery: `SOURCE_COMMITTED_LOCAL_BRANCH / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / EXTERNAL_RUNTIME_NO_GO / STAGING_NOT_PROVISIONED / IMPLEMENTED_NOT_DEPLOYED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED`
 
@@ -52,6 +52,10 @@ Saga POS local sprint lab menambah self-service Kiosk, assisted Cashier
 fallback, nota checker/KDS, Owner Dashboard, POS Admin, menu Kopi Saga Salak,
 modifier, cash/shift, QRIS simulator, Member/Reward fixture, availability,
 refund/remake, report/export, device health dan print spooler boundary.
+Disk-backed local durable runtime kini mengikat checkout/outbox atomik,
+idempotency, collision-safe order counter, signed-event replay guard,
+exactly-once fulfillment, refund work item, dan restart recovery untuk
+Kiosk/KDS/Dashboard. Ini belum external PostgreSQL atau staging evidence.
 
 ## Fitur MVP
 
@@ -169,11 +173,12 @@ Saga POS program khusus Kopi Saga Salak telah menjalankan 24 wave, 120 batch,
 dan 480 micro-sprint pada boundary lokal. Disposition batch adalah 62
 `PASS_LOCAL`, 28 `LOCAL_SIMULATED`, dan 30 `BLOCKED_EXTERNAL`; 334 micro-sprint
 memiliki local pass evidence dan 118 tetap external pending/NOT_RUN. Source
-exact `0618da16b3ca4c4a31a2891730c53b1eb13f5abe` lulus 100/100 test, browser
+exact `8b63df321c3a0f7aeba9080eea5ac044470a6d8c` lulus 108/108 test, browser
 E2E/accessibility, dependency audit, screenshot evidence, serta local
-PostgreSQL lima migration/RLS/cross-outlet deny.
+PostgreSQL enam migration/RLS/cross-outlet deny.
 
-Readiness program adalah M3+ 80/100. Founder menyetujui harga customer-final,
+Readiness program mencapai M4 84/100 setelah W25 durable runtime lulus lokal.
+Founder menyetujui harga customer-final,
 service 0%, PBJT configurable tetapi 0% sampai konfirmasi daerah, cash rounding
 Rp100, jam pilot 07:00-22:00/last order 21:30, benefit eksklusif, serta full
 refund pilot. SagaDev Gateway dikunci sebagai payment gateway dengan product
@@ -182,19 +187,23 @@ binding `sagaops`; PJP pusat tidak diekspos ke Saga POS.
 SagaDev local contract mempunyai readiness gate, signed request/event,
 idempotency, bounded status recovery, replay/state/amount/order/currency guard,
 settlement gross/fee/net, dan full-refund manual-finance work item. Refund API
-tidak direka. Runtime browser masih in-memory walaupun
-durable schema contract telah ditambah. Provider QRIS, Customer Platform,
+tidak direka. Lima surface dapat memakai disk-backed local durable runtime;
+external PostgreSQL dan multi-instance recovery belum terbukti. Provider QRIS,
+Customer Platform,
 printer, NFC, installed runtime, isolated staging, staff commissioning,
 controlled pilot dan production tetap `NOT_RUN`; source commit juga belum
 dipush/merge saat knowledge ini ditulis.
 
 Readiness extension yang diminta Andreas membagi gap 80 ke 100 menjadi 10 wave,
 40 batch, dan 160 micro-sprint. W25 durable runtime berbobot +4 dan mempunyai
-empat batch `READY_LOCAL_BUILD`. W26-W34 mencakup SagaDev sandbox, Customer
+empat batch `PASS_LOCAL`, sehingga readiness menjadi 84/100. Migration registry,
+atomic checkout/outbox, collision/replay guard, disk restart, Kiosk/KDS/
+Dashboard recovery, dan manual-finance refund telah lulus lokal. W26-W34 mencakup SagaDev sandbox, Customer
 Platform, hardware/network, signed runtime, staging/security/recovery, staff
 UAT, controlled pilot, guarded production activation, dan explicit owner
-business-ready decision. Seluruh micro-sprint masih `NOT_STARTED`; plan ini
-tidak mengubah readiness, runtime, deployment, activation, atau business state.
+business-ready decision. Contract/preparation lokal untuk 36 batch telah
+dijalankan, tetapi external verify/accept tetap blocked/not run. Deployment,
+activation, dan business state tidak berubah.
 
 ## Technical overview
 

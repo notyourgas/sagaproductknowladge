@@ -8,6 +8,19 @@ Mencatat perubahan material SagaOPS.
 
 Prototype dan production outlet adalah evidence level yang berbeda.
 
+## 2026-09-03 — Seluruh readiness wave dijalankan sampai evidence boundary
+
+- Andreas meminta seluruh W25-W34 dijalankan.
+- Exact source `8b63df321c3a0f7aeba9080eea5ac044470a6d8c` menutup W25 lokal:
+  disk-backed PostgreSQL semantics, enam migration, transaction/outbox,
+  idempotency, collision/replay guard, restart recovery, Kiosk/KDS/Dashboard,
+  dan manual-finance refund work item.
+- W26-W34 mendapat contract/preparation dan fail-closed preflight. Host tidak
+  mempunyai hardware/signing/provider references yang dibutuhkan; sembilan
+  external wave tetap blocked.
+- 108/108 test dan audit 0 vulnerability lulus. Readiness 84/100; source belum
+  dipush/merge, production unchanged, `BUSINESS_READY=false`.
+
 ## 2026-09-03 — Readiness 80 ke 100 dibagi menjadi execution batch
 
 - Andreas meminta batch sprint lanjutan untuk meningkatkan readiness Saga POS.

@@ -1,7 +1,7 @@
 # SagaOPS Product Knowledge
 
 Updated: 3 September 2026
-Evidence status: `CONFIRMED / SOURCE_COMMITTED_LOCAL_BRANCH / SAGA_POS_M3_PLUS_LOCAL_SLICE / SAGADEV_GATEWAY_CONTRACT_LOCKED / EXTERNAL_RUNTIME_NO_GO / STAGING_NOT_PROVISIONED / IMPLEMENTED_NOT_DEPLOYED`
+Evidence status: `CONFIRMED / SOURCE_COMMITTED_LOCAL_BRANCH / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_GATEWAY_CONTRACT_LOCKED / EXTERNAL_RUNTIME_NO_GO / STAGING_NOT_PROVISIONED / IMPLEMENTED_NOT_DEPLOYED`
 
 ## Tujuan dokumen
 
@@ -65,17 +65,21 @@ IMPLEMENTED_NOT_DEPLOYED / PILOT_NOT_STARTED / PRODUCTION_UNCHANGED /
 BUSINESS_READY=false`.
 
 - Saga POS source branch `codex/saga-pos-vs01-kiosk-kds-dashboard` exact
-  `0618da16b3ca4c4a31a2891730c53b1eb13f5abe` menyelesaikan local program
+  `8b63df321c3a0f7aeba9080eea5ac044470a6d8c` menyelesaikan local program
   24 wave/120 batch/480 micro-sprint. Disposition: 62 batch `PASS_LOCAL`, 28
-  `LOCAL_SIMULATED`, 30 `BLOCKED_EXTERNAL`; readiness M3+ 80/100.
-- 100/100 test, browser E2E lima surface, automated accessibility, dependency
-  audit 0 vulnerability, 6 screenshot evidence, dan lima migration local
+  `LOCAL_SIMULATED`, 30 `BLOCKED_EXTERNAL`; readiness M4 84/100.
+- 108/108 test, browser E2E lima surface, automated accessibility, dependency
+  audit 0 vulnerability, 6 screenshot evidence, dan enam migration local
   PostgreSQL/RLS/cross-outlet deny
   lulus. Source commit belum dipush/merge saat knowledge ini ditulis.
 - Readiness extension menambah 10 wave/40 batch/160 micro-sprint dari durable
-  runtime sampai owner business-ready decision. Empat batch W25 siap local
-  build; 36 batch lain menunggu input eksternal. Bobot +20 tidak membuka poin
-  sebelum dependency dan gate evidence masing-masing diterima.
+  runtime sampai owner business-ready decision. Empat batch W25/16 micro-sprint
+  lulus lokal dan membuka +4. Contract/preparation 36 batch lain telah
+  dijalankan; external verify/accept masih menunggu input dan tidak membuka poin.
+- Disk-backed local durable runtime menyediakan migration registry, atomic
+  checkout/outbox, collision-safe order counter, signed-event replay guard,
+  exactly-once fulfillment, manual-finance refund work item, dan restart
+  recovery Kiosk/KDS/Dashboard. Ini bukan external Postgres atau staging proof.
 - Founder mengunci SagaDev Gateway sebagai satu-satunya payment gateway Saga
   POS dengan product binding `sagaops`; PJP/acquirer tetap dikelola di belakang
   SagaDev dan tidak dikonfigurasi langsung oleh POS.
@@ -83,8 +87,9 @@ BUSINESS_READY=false`.
   create, signed event/status recovery, amount/order/currency/replay guard,
   settlement facts, serta full-refund manual-finance yang tidak memalsukan
   status refunded. SagaDev sandbox dan transaksi nyata belum dijalankan.
-- Runtime UI masih in-memory. Migration/RLS baru adalah durable contract,
-  bukan bukti UI restart recovery pada external PostgreSQL.
+- Lima surface dapat memakai disk-backed local durable runtime dan restart
+  recovery sudah terbukti lokal. Evidence ini bukan bukti external PostgreSQL,
+  multi-instance runtime, staging, atau production recovery.
 
 - Private canonical `main` `614fe7fdaffd7c739b0c7efed97f8a5e33297eea`
   memuat operator console, API v1, domain services, migration, local PostgreSQL

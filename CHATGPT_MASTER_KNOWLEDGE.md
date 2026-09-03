@@ -6244,21 +6244,25 @@ PostgreSQL/RLS, recovery, Member/POS integration boundary, serta automated
 browser acceptance. Bukti tersebut adalah local internal alpha, bukan provider,
 staging, atau outlet production.
 
-Saga POS local branch exact `0618da16b3ca4c4a31a2891730c53b1eb13f5abe`
+Saga POS local branch exact `8b63df321c3a0f7aeba9080eea5ac044470a6d8c`
 menambah lima surface untuk Kopi Saga Salak: Kiosk, assisted Cashier, KDS,
 Owner Dashboard, dan Admin. Program 24 wave/120 batch/480 micro-sprint mencapai
-M3+ 80/100 dengan 100/100 test dan lima migration local PostgreSQL/RLS evidence.
+M4 84/100 dengan 108/108 test dan enam migration local PostgreSQL/RLS evidence.
 Founder mengunci SagaDev Gateway untuk QRIS dengan product binding `sagaops`;
 PJP/acquirer berada di belakang SagaDev dan tidak dikonfigurasi POS. Local
 contract memvalidasi signed request/event, idempotency, recovery, settlement,
-dan full-refund manual-finance tanpa fake success. Runtime UI masih in-memory;
-QRIS/Member/Reward masih simulator/fixture, printer/NFC,
+dan full-refund manual-finance tanpa fake success. W25 mengikat lima surface ke
+disk-backed local durable runtime dengan atomic checkout/outbox, exactly-once
+fulfillment, replay guard, migration registry, dan restart recovery. Evidence
+ini bukan external PostgreSQL atau staging. QRIS/Member/Reward masih
+simulator/fixture, printer/NFC,
 installed runtime, staging, staff, pilot dan production tetap NOT_RUN. Source
 commit belum dipush/merge.
 
 Readiness extension Saga POS membagi gap 80 ke 100 menjadi 10 wave/40 batch/
-160 micro-sprint. Empat batch W25 durable runtime siap local build; 36 lainnya
-menunggu input eksternal. Skor tetap 80 sampai dependency-ordered gate SagaDev,
+160 micro-sprint. Empat batch W25/16 micro-sprint lulus lokal dan membuka +4;
+36 batch W26-W34 sudah memiliki contract/preparation tetapi external verify dan
+accept masih blocked. Skor tetap 84 sampai dependency-ordered gate SagaDev,
 Customer Platform, hardware, installed runtime, staging, staff, pilot,
 activation, dan owner business acceptance benar-benar diterima.
 

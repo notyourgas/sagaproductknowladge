@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-09-03 - Saga POS all-wave local execution tervalidasi
+
+- Exact source `8b63df321c3a0f7aeba9080eea5ac044470a6d8c` menutup W25 dengan
+  disk-backed local durable runtime, atomic checkout/outbox, replay guard,
+  exactly-once fulfillment, dan restart recovery Kiosk/KDS/Dashboard.
+- Contract/preparation W26-W34 dan fail-closed preflight telah dijalankan;
+  sembilan external wave tetap blocked oleh input/provider/hardware/operasi.
+- 108/108 test, enam migration, audit 0 vulnerability, dan enam-surface HTTP
+  smoke lulus. Readiness 84/100; source belum dipush/merge, production tidak
+  berubah, dan `BUSINESS_READY=false`.
+
 ## 2026-09-03 - Saga POS readiness extension tervalidasi
 
 - Gap readiness 80 ke 100 dipecah menjadi 10 wave/40 batch/160 micro-sprint

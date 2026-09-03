@@ -15,16 +15,17 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-09-03 WIB |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `eb0105264d793029cbabe91ba0ff857e3b3b5c59` |
+| Baseline sebelum pembaruan | `697ea49956c226af952cd88e458d5e7e3a8e3fb1` |
 
-## Saga POS readiness extension
+## Saga POS all-waves local execution
 
-- Source exact `0618da16b3ca4c4a31a2891730c53b1eb13f5abe` menambah readiness
-  extension 10 wave/40 batch/160 micro-sprint dan lulus 100/100 test.
-- Empat batch durable runtime siap local build; 36 batch menunggu input
-  eksternal. Dependency-ordered scoring mencegah poin terbuka dari plan saja.
-- Source belum dipush/merge. Readiness tetap 80/100; production dan business
-  readiness tidak berubah.
+- Source exact `8b63df321c3a0f7aeba9080eea5ac044470a6d8c` menutup empat batch
+  W25/16 micro-sprint durable runtime lokal dan lulus 108/108 test serta enam
+  migration.
+- Contract/preparation W26-W34 dijalankan dengan preflight fail-closed; sembilan
+  external wave masih blocked dan tidak membuka poin.
+- Source belum dipush/merge. Readiness 84/100; production tidak berubah dan
+  `BUSINESS_READY=false`.
 
 ## File yang berubah pada sinkronisasi Saga POS
 

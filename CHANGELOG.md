@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-03 - Saga POS all-wave local execution sync
+
+- Informasi `CONFIRMED`: Andreas meminta seluruh W25-W34 dijalankan sampai
+  batas evidence yang tersedia.
+- Before -> after: W25 durable runtime berubah dari ready local build menjadi
+  `PASS_LOCAL`; W26-W34 memiliki contract/preparation dan fail-closed preflight.
+- Exact source `8b63df321c3a0f7aeba9080eea5ac044470a6d8c` lulus 108/108 test,
+  enam migration, audit 0 vulnerability, dan enam-surface HTTP smoke.
+- Readiness terverifikasi 84/100. Source belum dipush/merge; provider nyata,
+  hardware, staging, staff, pilot, deployment, activation, dan business
+  acceptance belum dijalankan. Production tidak berubah dan
+  `BUSINESS_READY=false`.
+
 ## 2026-09-03 - Saga POS readiness extension sync
 
 - Informasi `CONFIRMED`: Andreas meminta batch sprint lanjutan untuk menutup
