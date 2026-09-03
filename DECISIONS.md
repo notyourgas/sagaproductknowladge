@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-148 - Seluruh batch Gen Z UI Saga Member diintegrasikan ke public dummy demo
+
+| Field | Nilai |
+|---|---|
+| Tanggal | 2026-09-03 |
+| Topik | Eksekusi dan release UI/UX mobile Saga Member |
+| Keputusan | Menjalankan seluruh 10 macro phase, 34 batch, dan 136 micro-sprint integrasi UI, lalu memperbarui satu stable public Vercel URL setelah CI dan UAT lulus. |
+| Alasan | Andreas meminta seluruh batch dikerjakan dan pengalaman Saga Member dapat langsung dicoba tanpa login serta tanpa mengaktifkan integrasi nyata. |
+| Alternatif | Menyelesaikan hanya Beranda; mempertahankan aset sebagai review library; mengaktifkan backend/provider bersama UI; mengganti URL publik setiap deployment. |
+| Dampak | Main `0612165bf24d7ee767a287b09c5319a617de6f4a` dan deployment `dpl_EfS6TXf6b7p2CmrzzfX5zGPnNMXz` mengaktifkan lima primary route, lima secondary route, 28 aset runtime/56 WebP, offline/fallback, dan mobile-only canvas. Canonical CI serta production UAT lima viewport lulus. |
+| Pemberi keputusan | Andreas |
+| Status | `CONFIRMED / SAGA_MEMBER_GENZ_UI_PRODUCTION_VALIDATED / PUBLIC_DUMMY_DEMO_ACTIVE / VERCEL_PRODUCTION_DEPLOYED / REAL_BACKEND_OFF / REAL_PROVIDER_OFF / REAL_DATA_OFF / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false` |
+| Dokumen terkait | `products/saga-platform/PRODUCT.md`, `products/saga-platform/DOSSIER.md`, `products/saga-platform/CHANGELOG.md` |
+
 ## DEC-147 - Saga Member memakai visual contemporary Gen Z semi-editorial
 
 | Field | Nilai |

@@ -1,5 +1,19 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+Saga Member Gen Z mobile UI sekarang aktif sebagai public dummy demo pada
+`https://saga-member-platform.vercel.app`. Exact canonical main
+`0612165bf24d7ee767a287b09c5319a617de6f4a` (PR #15 dan hotfix PR #16) memakai
+Vercel deployment `dpl_EfS6TXf6b7p2CmrzzfX5zGPnNMXz`. Seluruh 10 macro
+phase/34 batch/136 micro-sprint selesai: nav Beranda/Jelajah/Pass/Reward/Profil,
+lima secondary route, 28 aset approved, 56 WebP derivative, offline dan image
+fallback. Canonical CI `33773061967` dan production UAT 320–430 px lulus,
+termasuk axe nol critical/serious dan nol request auth/backend/provider.
+Statusnya `SAGA_MEMBER_GENZ_UI_PRODUCTION_VALIDATED /
+PUBLIC_DUMMY_DEMO_ACTIVE / VERCEL_PRODUCTION_DEPLOYED / REAL_BACKEND_OFF /
+REAL_PROVIDER_OFF / REAL_DATA_OFF / PRODUCTION_ACTIVATED=false /
+BUSINESS_READY=false`. Jangan menganggap demo ini sebagai akun member,
+transaksi, pilot outlet, atau provider/backend production.
+
 Saga Member memiliki visual library candidate Wave A-E bergaya contemporary
 Indonesian Gen Z coffee-and-creator, semi-editorial flat/vector-like, dari
 exact local source `6be4ced`. Wave B-E menambahkan 76 aset; bersama enam aset

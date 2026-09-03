@@ -66,6 +66,28 @@ Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
 - Pemisahan bounded context dan adapter dilakukan bertahap.
 - Bukan rewrite total.
 
+### Saga Member Gen Z mobile UI public dummy production
+
+- Saga Member canonical main `0612165bf24d7ee767a287b09c5319a617de6f4a`
+  (PR #15 dan contrast hotfix PR #16) aktif pada
+  `https://saga-member-platform.vercel.app` melalui Vercel deployment
+  `dpl_EfS6TXf6b7p2CmrzzfX5zGPnNMXz`.
+- Program 10 macro phase, 34 batch, dan 136 micro-sprint sudah dieksekusi.
+  IA mobile final adalah Beranda, Jelajah, Pass, Reward, dan Profil; Aktivitas,
+  Inbox, Quest, detail Reward, dan Booking menjadi layar sekunder.
+- Runtime memakai 28 aset approved dari library Wave A-E dengan 56 derivative
+  WebP 320/640, registry surface, fallback legacy, feature flag rollback,
+  Plus Jakarta Sans lokal, dan Feather-compatible icon.
+- Canonical-main CI `33773061967` lulus. Production UAT lulus pada 320, 360,
+  390, 412, dan 430 CSS px: nol overflow/broken image/console error, target
+  sentuh 44 px, axe nol critical/serious, seluruh primary/secondary route,
+  offline restart, dan broken-image recovery lulus.
+- Status `CONFIRMED / SAGA_MEMBER_GENZ_UI_PRODUCTION_VALIDATED /
+  PUBLIC_DUMMY_DEMO_ACTIVE / VERCEL_PRODUCTION_DEPLOYED / REAL_BACKEND_OFF /
+  REAL_PROVIDER_OFF / REAL_DATA_OFF / PRODUCTION_ACTIVATED=false /
+  BUSINESS_READY=false`. Ini adalah production-hosted dummy UI, bukan akun,
+  transaksi, provider, pilot outlet, atau backend member production.
+
 ### Saga Member Gen Z visual library Wave A-E
 
 - Andreas mengunci arah visual Saga Member sebagai contemporary Indonesian
@@ -80,10 +102,10 @@ Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
   dan Plus Jakarta Sans.
 - Test 76/76, review mobile 390x844, 76/76 image load, nol broken image, nol
   horizontal overflow, dan axe WCAG A/AA nol violation lulus.
-- Status `CONFIRMED / LOCAL_VALIDATED / ASSET_LIBRARY_READY /
-  UI_INTEGRATION_PENDING / PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
-  Library belum dipasang route-by-route, belum dipush/merge, dan belum
-  dideploy atau diuji pada URL Vercel.
+- Gate generation ini sekarang historis. Library sudah dipasang selektif
+  route-by-route oleh main `0612165...`; 28 aset aktif dan 54 aset lain tetap
+  menjadi candidate/fallback. Status aktif mengikuti bagian production di
+  atas.
 
 ### Proposal integrasi UI/UX Saga Member Gen Z
 
@@ -95,9 +117,9 @@ Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
 - Program mencakup registry aset, feature flag, route-by-route integration,
   state matrix, image optimization, offline cache, mobile UAT, Preview exact
   commit, stable-link rollout, dan rollback.
-- Klasifikasi `PROPOSAL / STRATEGY_READY_FOR_APPROVAL /
-  IMPLEMENTATION_NOT_STARTED / PRODUCTION_UNCHANGED`. Rencana ini belum
-  mengubah UI aktif, source main, deployment Vercel, atau business readiness.
+- Strategy telah disetujui dan dieksekusi. Statusnya `CONFIRMED /
+  IMPLEMENTED / PRODUCTION_VALIDATED`; business readiness tetap false karena
+  seluruh data serta integrasi nyata tetap OFF.
 
 ### Saga Member production internal alpha D0
 

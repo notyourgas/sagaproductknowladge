@@ -58,6 +58,31 @@ D0. Customer `f763fc19d8463cf2120387b0d06a57ffa5c868f7` dan Member
 `2eaa35334e59dc2656b98816db6bdc020c478a8f` lulus CI canonical-main, remote
 Chrome UAT, forced-RLS audit, backup/restore dan rollback rehearsal.
 
+Frontend dummy publik terbaru memakai Saga Member canonical main
+`0612165bf24d7ee767a287b09c5319a617de6f4a` setelah PR #15 dan hotfix kontras
+PR #16. Exact deployment `dpl_EfS6TXf6b7p2CmrzzfX5zGPnNMXz` berstatus READY
+dan alias pengguna tetap `https://saga-member-platform.vercel.app`.
+
+Seluruh 10 macro phase, 34 batch, dan 136 micro-sprint integrasi UI sudah
+dijalankan. Runtime memilih 28 dari 82 aset Wave A-E melalui registry surface,
+menyediakan 56 derivative WebP 320/640 dan legacy fallback, lalu merender nilai
+Points, XP, tier, harga, status, stock, eligibility, dan CTA sebagai HTML/JS.
+Bottom navigation final adalah Beranda, Jelajah, Pass, Reward, dan Profil;
+Aktivitas, Inbox, Quest, detail Reward, serta Booking adalah secondary route.
+
+CI canonical main `33773061967` lulus. Production browser UAT pada 320x568,
+360x800, 390x844, 412x915, dan 430x932 lulus tanpa horizontal overflow,
+broken image, console error, atau request auth/backend/provider. Touch target
+minimum 44 px, axe primary route nol critical/serious, navigation sekunder,
+offline restart, dan broken-image fallback lulus. Deployment production sehat
+sebelumnya tetap READY sebagai rollback target.
+
+State saat ini `SAGA_MEMBER_GENZ_UI_PRODUCTION_VALIDATED /
+PUBLIC_DUMMY_DEMO_ACTIVE / VERCEL_PRODUCTION_DEPLOYED / REAL_BACKEND_OFF /
+REAL_PROVIDER_OFF / REAL_DATA_OFF / PRODUCTION_ACTIVATED=false /
+BUSINESS_READY=false`. Status ini tidak mengubah private VPS D0, Customer
+Platform, provider, tenant, member account, transaksi, atau pilot nyata.
+
 Mode frontend aktif yang ditujukan untuk iterasi fitur/UI/UX sekarang adalah
 `PUBLIC_DUMMY_DEMO` dari Saga Member main
 `9a914d148bb6773e03afd0c2b45efa39683afdb4` (PR #14) pada satu URL stabil
@@ -91,10 +116,9 @@ UI fungsional: CTA, navigation, status, points, XP, tier, dan nilai bisnis
 tetap dirender oleh kode dengan Feather icon serta Plus Jakarta Sans. Manifest,
 review page mobile, dan strategi integrasi route-by-route tersedia di source.
 Test 76/76 serta browser review 390x844 lulus dengan 76/76 image load, nol
-broken image, nol horizontal overflow, dan axe WCAG A/AA nol violation. Status
-tetap `LOCAL_VALIDATED / ASSET_LIBRARY_READY / UI_INTEGRATION_PENDING`;
-source belum dipush/merge, belum diintegrasikan ke runtime aktif, dan
-production tidak berubah.
+broken image, nol horizontal overflow, dan axe WCAG A/AA nol violation. Gate
+generation ini telah digantikan oleh integration release `0612165...`; 28
+aset digunakan aktif dan sisanya tetap candidate/fallback.
 
 Strategy integrasi V2 tersedia pada exact local source `0f8fc5d`. Proposal
 memecah pekerjaan menjadi 10 macro phase, 34 batch, dan 136 micro-sprint dari
@@ -107,9 +131,10 @@ mobile maksimal 430 px.
 
 Rencana memakai registry aset serta feature flag, menargetkan hanya 20–28 dari
 82 aset untuk initial runtime, membatasi initial image per route, dan
-mempertahankan legacy fallback. Ini masih `PROPOSAL /
-STRATEGY_READY_FOR_APPROVAL / IMPLEMENTATION_NOT_STARTED`; tidak ada UI,
-runtime, deployment, provider, atau production state yang berubah.
+mempertahankan legacy fallback. Label `PROPOSAL /
+STRATEGY_READY_FOR_APPROVAL / IMPLEMENTATION_NOT_STARTED` dipertahankan sebagai
+histori sebelum eksekusi; implementation aktif sekarang dicatat pada release
+di atas.
 
 Home dashboard finalization memakai Saga Member main
 `c2754dcf5fe5cccc10993b0eb50a10003949c32e` (PR #10) dan authority Customer
