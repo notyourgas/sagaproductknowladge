@@ -15,7 +15,30 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-09-04 WIB |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `326b6e7` |
+| Baseline sebelum pembaruan | `2361839` |
+
+## SagaOPS Owner Dashboard V2
+
+- Source exact `287b26d` dipush ke branch
+  `codex/saga-pos-vs01-kiosk-kds-dashboard`.
+- Decision hierarchy, freshness, queue/settlement/pickup alert, payment
+  breakdown, accessible order table, dan public-safe integration status
+  tervalidasi lokal.
+- 131/131 test, browser 1440×900 dan 1024×768, Axe, static/type check, serta
+  dependency audit lulus tanpa dependency baru.
+- Status `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED / TRANSACTIONS_LOCKED / BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi SagaOPS Owner Dashboard V2
+
+- `products/sagaops/PRODUCT.md`
+- `products/sagaops/DOSSIER.md`
+- `products/sagaops/CHANGELOG.md`
+- `GAPS.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaOPS Cashier V2
 

@@ -8,6 +8,18 @@ Mencatat perubahan material SagaOPS.
 
 Prototype dan production outlet adalah evidence level yang berbeda.
 
+## 2026-09-04 — Owner Dashboard V2 memprioritaskan keputusan outlet
+
+- Source exact `287b26d` sudah dipush ke branch Saga POS.
+- Dashboard menampilkan freshness server, attention engine untuk umur tiket,
+  settlement unchecked dan pickup, queue stages, payment breakdown, serta
+  status integrasi dalam bahasa operasional.
+- Tabel order mempunyai caption/scope; polling penuh tetap bukan live region.
+- Browser 1440×900 dan 1024×768, Axe, full suite 131/131, static/type check,
+  serta dependency audit lulus tanpa dependency baru.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production, canary,
+  settlement, readiness 84/100, dan `BUSINESS_READY=false` tidak berubah.
+
 ## 2026-09-04 — Cashier V2 mengamankan checkout tunai
 
 - Feature exact `2cfaf9e` dan current branch head `ba463a6` sudah dipush.

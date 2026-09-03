@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-09-04 - SagaOPS Owner Dashboard V2 local validated
+
+- Saga POS exact `287b26d` menambah hierarchy Sekarang/Hari ini/Verifikasi,
+  alert antrean/settlement/pickup, payment breakdown, freshness, dan integration
+  boundary public-safe pada dashboard read-only.
+- 131/131 test, browser dua viewport, Axe, static/type check, dan dependency
+  audit lulus tanpa dependency baru.
+- Production/canary tidak berubah; readiness tetap 84/100 dan
+  `BUSINESS_READY=false`.
+
 ## 2026-09-04 - SagaOPS Cashier V2 local validated
 
 - Saga POS feature `2cfaf9e`, current head `ba463a6`, menambah server quote,

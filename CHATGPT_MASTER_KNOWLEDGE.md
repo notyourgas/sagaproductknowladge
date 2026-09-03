@@ -1,5 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+Saga POS current branch head `287b26d` sudah dipush dengan Owner Dashboard V2.
+Dashboard read-only kini memakai hierarchy `Sekarang / Hari ini / Verifikasi`,
+freshness server, attention engine untuk umur antrean/unchecked settlement/ready
+pickup, queue stages, payment breakdown, accessible order table, dan status
+integrasi public-safe. Metrik utama berada di first fold 1440×900 dan 1024×768.
+131/131 test, Axe nol serious/critical, static/type check, dan dependency audit
+nol vulnerability lulus tanpa dependency baru. Status
+`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production, canary, settlement,
+readiness 84/100, dan `BUSINESS_READY=false` tidak berubah.
+
 Saga POS current branch head `ba463a6` sudah dipush dengan Cashier V2 feature
 `2cfaf9e`. Assisted checkout kini meminta quote server sebelum pembayaran,
 menawarkan uang pas/pecahan beserta preview kurang atau kembalian, menjaga CTA

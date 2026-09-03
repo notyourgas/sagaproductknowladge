@@ -8,7 +8,7 @@ sales, dan konten SagaOPS.
 ## Konteks dan status bukti
 
 - Updated: 4 September 2026
-- Delivery: `SOURCE_PUSHED_BRANCH / PORTRAIT_KIOSK_LOCAL_VALIDATED / KDS_V2_LOCAL_VALIDATED / CASHIER_V2_LOCAL_VALIDATED / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_DEPLOYED / TRIAL99_CANARY_PAID`
+- Delivery: `SOURCE_PUSHED_BRANCH / PORTRAIT_KIOSK_LOCAL_VALIDATED / KDS_V2_LOCAL_VALIDATED / CASHIER_V2_LOCAL_VALIDATED / OWNER_DASHBOARD_V2_LOCAL_VALIDATED / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_DEPLOYED / TRIAL99_CANARY_PAID`
 - Activation: `SAGADEV_PLATFORM_ACTIVATED / TRANSACTIONS_LOCKED`
 - Business readiness: `BLOCKED`
 
@@ -217,6 +217,15 @@ order/payment/fulfillment parsial. CTA tetap first-fold pada 1440×900 dan
 1024×768. Full suite 130/130, Axe nol serious/critical, dan audit dependency
 nol vulnerability lulus tanpa dependency baru. Statusnya
 `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+
+Owner Dashboard V2 exact `287b26d` mengubah angka statis menjadi decision board
+read-only dengan hierarchy `Sekarang / Hari ini / Verifikasi`. Alert berasal
+dari server snapshot untuk tiket 5/10 menit, unchecked settlement, dan ready
+pickup; ringkasan antrean, payment breakdown, freshness, top menu, serta status
+integrasi public-safe berada dalam satu scan. Tabel order memakai caption dan
+scope header. Full suite 131/131, Axe nol serious/critical, dua viewport, dan
+dependency audit lulus. Threshold antrean masih perlu kalibrasi outlet dan
+status tetap `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
 
 Readiness program mencapai M4 84/100 setelah W25 durable runtime lulus lokal.
 Founder menyetujui harga customer-final,
