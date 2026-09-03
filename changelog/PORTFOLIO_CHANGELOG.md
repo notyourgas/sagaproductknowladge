@@ -9,6 +9,20 @@
 - Production/canary tidak berubah; readiness tetap 84/100 dan
   `BUSINESS_READY=false`.
 
+## 2026-09-04 - Saga Member V8 Motion Foundation deployed
+
+- Saga Member main `e676b860afd15279d6cf98b23595b246ff0780c3`
+  (PR #22) aktif pada `https://saga-member-platform.vercel.app` melalui
+  deployment `dpl_7eXtKWzCtizRd4wKEZuZBPUj2UiC`.
+- Motion system berbasis library publik MIT menambahkan hierarchy route,
+  in-view reveal, press feedback, lifecycle cleanup, dan indikator bottom nav.
+  Runtime transform/opacity 90-260 ms, reduced-motion, dan budget bundle
+  terverifikasi.
+- 100/100 test, canonical CI `33798937517`, dependency audit serta UAT lokal
+  dan publik lima viewport lulus. Runtime tetap public dummy tanpa backend,
+  provider, transaksi, atau data nyata; `PRODUCTION_ACTIVATED=false` dan
+  `BUSINESS_READY=false`.
+
 ## 2026-09-04 - SagaOPS portrait kiosk local validated
 
 - Saga POS implementation `9a43a89`, current head `ca827e1`, dipush dengan

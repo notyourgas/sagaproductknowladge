@@ -11,6 +11,20 @@ lokal yang perlu dikalibrasi dengan prep-time outlet. Status
 `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production, canary, settlement,
 readiness 84/100, dan `BUSINESS_READY=false` tidak berubah.
 
+Saga Member V8 Motion Foundation aktif pada stable public dummy URL
+`https://saga-member-platform.vercel.app` dari canonical main
+`e676b860afd15279d6cf98b23595b246ff0780c3` (PR #22) dan deployment
+`dpl_7eXtKWzCtizRd4wKEZuZBPUj2UiC`. V8 menambahkan motion system terpusat:
+direction-aware route reveal, in-view section reveal, press feedback, cleanup
+lifecycle, dan indikator aktif bottom nav. `motion@13.2.0` MIT dibundle lokal;
+animasi hanya transform/opacity selama 90-260 ms, tanpa infinite loop, dan nol
+animasi aktif saat reduced-motion. 100/100 test, canonical CI `33798937517`,
+audit dependency, dan UAT lokal/publik 320-430 px lulus. Status
+`SAGA_MEMBER_V8_MOTION_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
+REAL_BACKEND_OFF / REAL_PROVIDER_OFF / REAL_DATA_OFF /
+PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`; jangan menyebutnya akun,
+transaksi, provider, pilot outlet, atau backend production.
+
 Saga POS implementation `9a43a89`, current branch head `ca827e1`, sudah
 dipush ke branch
 `codex/saga-pos-vs01-kiosk-kds-dashboard` dan mengimplementasikan kiosk

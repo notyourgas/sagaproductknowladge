@@ -66,6 +66,27 @@ Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
 - Pemisahan bounded context dan adapter dilakukan bertahap.
 - Bukan rewrite total.
 
+### Saga Member V8 Motion Foundation
+
+- Saga Member canonical main `e676b860afd15279d6cf98b23595b246ff0780c3`
+  (PR #22) aktif pada Vercel production deployment
+  `dpl_7eXtKWzCtizRd4wKEZuZBPUj2UiC` melalui stable public URL
+  `https://saga-member-platform.vercel.app`.
+- V8 menambahkan motion system terpusat untuk hierarchy route, reveal konten
+  saat masuk viewport, feedback tekan, dan indikator aktif bottom navigation.
+  Implementasi memakai `motion@13.2.0` berlisensi MIT yang dibundle dan
+  disajikan sendiri; runtime hanya menganimasikan `transform` dan `opacity`.
+- Motion dibatasi 90-260 ms, tidak memiliki infinite loop, dibatalkan saat
+  lifecycle route berakhir, dan menjadi tanpa animasi aktif saat preferensi
+  reduced-motion menyala. Bundle motion 5,8 KB gzip, di bawah budget 20 KB.
+- 100/100 test, canonical-main CI `33798937517`, audit dependency nol
+  vulnerability, browser UAT lokal dan publik pada 320/360/375/390/430 px,
+  motion navigation, offline shell, serta pemeriksaan tanpa request backend
+  atau provider lulus.
+- Status `CONFIRMED / SAGA_MEMBER_V8_MOTION_PRODUCTION_DEPLOYED /
+  PUBLIC_DUMMY_DEMO_ACTIVE / REAL_BACKEND_OFF / REAL_PROVIDER_OFF /
+  REAL_DATA_OFF / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 ### Saga Member V7 Home Editorial Final
 
 - Saga Member canonical main `83b969d7c77a2ce8015fb087074d3d59e7acea39`

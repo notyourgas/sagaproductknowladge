@@ -8,6 +8,21 @@ Mencatat perubahan material control plane Saga.
 
 Fondasi production dan roadmap pemisahan boundary harus dibedakan.
 
+## 2026-09-04 — Saga Member V8 Motion Foundation deployed
+
+- Main `e676b860afd15279d6cf98b23595b246ff0780c3` (PR #22) aktif pada
+  deployment `dpl_7eXtKWzCtizRd4wKEZuZBPUj2UiC` dan stable public URL.
+- Motion system terpusat menambahkan route/section reveal, press feedback,
+  lifecycle cleanup, serta indikator aktif bottom nav. `motion@13.2.0` MIT
+  dibundle lokal; runtime dibatasi pada transform/opacity, 90-260 ms, tanpa
+  infinite loop, dan menghormati reduced-motion.
+- 100/100 test, canonical CI `33798937517`, dependency audit, UAT lokal dan
+  publik lima viewport, navigation motion, serta no-backend/provider request
+  lulus. Bundle motion 5,8 KB gzip terhadap budget 20 KB.
+- Klasifikasi `CONFIRMED / SAGA_MEMBER_V8_MOTION_PRODUCTION_DEPLOYED /
+  PUBLIC_DUMMY_DEMO_ACTIVE / REAL_BACKEND_OFF / REAL_PROVIDER_OFF /
+  REAL_DATA_OFF / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 ## 2026-09-04 — Saga Member V7 Home Editorial Final deployed
 
 - Main `83b969d7c77a2ce8015fb087074d3d59e7acea39` (PR #21) aktif pada
