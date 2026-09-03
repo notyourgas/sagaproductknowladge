@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-09-04 - SagaOPS portrait kiosk local validated
+
+- Saga POS exact `9a43a89` dipush dengan customer kiosk portrait P01-P12 pada
+  target 1080×1920 dan 720×1280.
+- Flow baru mencakup order type, katalog dua kolom, modifier per-line, cart,
+  member optional, QRIS pending/recovery, success, idle reset, dan outage.
+- Plus Jakarta Sans, touch geometry, state/payment safety, 9 kandidat visual
+  konvensional, serta fallback jujur untuk 9 menu khas tervalidasi lokal.
+- 124/124 test dan audit dependency production nol vulnerability lulus.
+  Production/canary tidak berubah; readiness 84/100 dan
+  `BUSINESS_READY=false`.
+
 ## 2026-09-04 - Saga Member V7 Home Editorial Final deployed
 
 - Saga Member main `83b969d7c77a2ce8015fb087074d3d59e7acea39`

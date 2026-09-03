@@ -1,7 +1,7 @@
 # SagaOPS Product Knowledge
 
 Updated: 4 September 2026
-Evidence status: `CONFIRMED / SOURCE_PUSHED_BRANCH / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_ACTIVATED / PRIVATE_CANARY_PAID_AND_LOCKED / SETTLEMENT_PENDING_CLEARING / BUSINESS_READY=false`
+Evidence status: `CONFIRMED / SOURCE_PUSHED_BRANCH / PORTRAIT_KIOSK_LOCAL_VALIDATED / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_ACTIVATED / PRIVATE_CANARY_PAID_AND_LOCKED / SETTLEMENT_PENDING_CLEARING / BUSINESS_READY=false`
 
 ## Tujuan dokumen
 
@@ -15,6 +15,7 @@ Source private kanonik, API/service, persistence/RLS lokal, dan operator browser
 UAT tersedia sebagai local integrated internal alpha. Endpoint payment SagaOPS
 kini aktif pada SagaDev Platform production dengan transaksi terkunci. Hardware,
 outlet pilot, settlement acceptance, dan business readiness belum terverifikasi.
+Kiosk customer portrait P01-P12 sudah tervalidasi lokal tetapi belum dideploy.
 
 ## Ringkasan
 
@@ -46,6 +47,9 @@ kasir dan Back Office untuk owner/manager.
   serta payment/recovery simulator.
 - Saga POS local sprint lab dengan lima surface: self-service Kiosk, assisted
   Cashier fallback, nota checker/KDS, Owner Dashboard, dan POS Admin.
+- Kiosk portrait 1080×1920 dan 720×1280 dengan flow order type, katalog,
+  modifier per-line, cart, member optional, QRIS pending/recovery, success,
+  idle reset, serta out-of-service fallback.
 - Catalog 18 menu Kopi Saga Salak, modifier fixture, cash/shift, QRIS simulator,
   Member/Reward fixture, sold-out versioning, refund/remake contract, report,
   export, device/print boundary, dan safe kiosk reset.
@@ -83,6 +87,19 @@ BUSINESS_READY=false`.
   1.372/1.372 test, tetapi belum dideploy karena fresh encrypted backup gate
   gagal dua kali. Runtime production tetap exact `1d7146c2`; satu ledger canary
   direkonsiliasi atomik dari provider `Success` dengan audit metadata.
+
+- Saga POS latest source exact `9a43a89` sudah dipush ke branch yang sama dan
+  mengimplementasikan kiosk portrait P01-P12 berpedoman pada visual Saga Member
+  V5 dengan typography serta sizing code-native. Plus Jakarta Sans berlisensi,
+  target sentuh, state machine, restore payment pending, server-owned quote,
+  QR PNG allowlist, serta CTA modifier portrait telah diterapkan. Full suite
+  124/124 dan audit dependency production nol vulnerability lulus.
+- Sembilan kandidat visual minuman konvensional dipakai pada preview lokal;
+  sembilan menu khas Saga tetap memakai fallback sampai foto/appearance brief
+  tersedia. Seluruh kandidat memerlukan owner review sebelum activation.
+- Perubahan ini `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; runtime SagaDev
+  Platform, lock transaksi, settlement, readiness 84/100, dan
+  `BUSINESS_READY=false` tidak berubah.
 
 - Saga POS source branch `codex/saga-pos-vs01-kiosk-kds-dashboard` exact
   `d9598dd94200c8cd3e2fc1bbdf8245acec1f69cc` menyelesaikan local program

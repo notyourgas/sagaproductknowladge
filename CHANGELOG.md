@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-04 - SagaOPS portrait kiosk sync
+
+- Informasi `CONFIRMED`: Saga POS exact `9a43a89` dipush dengan customer kiosk
+  portrait P01-P12, guideline Saga Member V5, dan code-native typography/sizing.
+- Before -> after: kiosk customer lama berubah menjadi flow portrait dengan
+  dua target viewport, per-line modifier, member optional, QRIS recovery,
+  server-confirmed success, idle, dan outage state.
+- 124/124 test serta dependency production audit nol vulnerability lulus.
+  Production/canary tidak berubah, readiness tetap 84/100, dan
+  `BUSINESS_READY=false`.
+- Dokumen terdampak: SagaOPS product/dossier/changelog, gaps, decision,
+  portfolio, master knowledge, root changelog, dan sync status.
+
 ## 2026-09-04 - Saga Member V7 Home Editorial Final sync
 
 - Informasi `CONFIRMED`: Saga Member main

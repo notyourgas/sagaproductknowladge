@@ -8,6 +8,22 @@ Mencatat perubahan material SagaOPS.
 
 Prototype dan production outlet adalah evidence level yang berbeda.
 
+## 2026-09-04 — Kiosk portrait P01-P12 tervalidasi lokal
+
+- Source Saga POS exact `9a43a89` dipush ke branch
+  `codex/saga-pos-vs01-kiosk-kds-dashboard`.
+- Kiosk customer kini memakai flow portrait P01-P12 untuk 1080×1920 dan
+  720×1280: order type, katalog, modifier per-line, cart, member optional,
+  QRIS, pending/recovery, paid success, idle, dan out-of-service.
+- Visual berpedoman pada Saga Member V5, tetapi typography/sizing/touch target
+  tetap code-native dengan Plus Jakarta Sans lokal berlisensi.
+- Sembilan aset kandidat menu konvensional terhubung ke preview lokal;
+  sembilan menu khas memakai fallback sampai foto/appearance brief tersedia.
+- Full suite 124/124, static/type check, Axe, payment reload recovery, KDS
+  exactly-once, dan dependency production audit nol vulnerability lulus.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak
+  berubah, canary tetap locked, readiness 84/100, dan `BUSINESS_READY=false`.
+
 ## 2026-09-04 — Private TRIAL99 canary dibayar dan dikunci
 
 - Founder menyetujui cap provider-total Rp250. Intent Americano kedua memakai

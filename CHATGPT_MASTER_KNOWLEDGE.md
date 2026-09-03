@@ -1,5 +1,19 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+Saga POS latest source `9a43a89` sudah dipush ke branch
+`codex/saga-pos-vs01-kiosk-kds-dashboard` dan mengimplementasikan kiosk
+portrait P01-P12 untuk 1080×1920 serta 720×1280. Flow customer mencakup order
+type, katalog dua kolom, modifier per-line, cart/server quote, member optional,
+QRIS-only, pending/recovery, sukses hanya setelah payment dan order paid, idle
+reset, serta out-of-service. Visual berpedoman pada Saga Member V5 dengan Plus
+Jakarta Sans lokal berlisensi dan typography/sizing code-native. Sembilan aset
+menu konvensional masih kandidat owner review; sembilan menu khas memakai
+fallback sampai foto/appearance brief tersedia. 124/124 test, Axe, reload
+recovery, KDS exactly-once, QR allowlist, dan audit dependency nol vulnerability
+lulus. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak
+berubah, canary tetap locked, readiness 84/100, settlement tetap pending, dan
+`BUSINESS_READY=false`.
+
 Saga Member V7 Home Editorial Final aktif pada stable public dummy URL
 `https://saga-member-platform.vercel.app` dari canonical main
 `83b969d7c77a2ce8015fb087074d3d59e7acea39` (PR #21) dan production
