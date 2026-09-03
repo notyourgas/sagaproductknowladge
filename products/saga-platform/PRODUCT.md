@@ -1,6 +1,6 @@
 # Saga Platform Product Knowledge
 
-Updated: 3 September 2026
+Updated: 4 September 2026
 Evidence status: production foundation + migration roadmap
 
 ## Tujuan dokumen
@@ -65,6 +65,24 @@ Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
 - Product account dan commerce flows sudah digunakan untuk SagaBook/SagaView.
 - Pemisahan bounded context dan adapter dilakukan bertahap.
 - Bukan rewrite total.
+
+### Saga Member V4 Editorial Coffee Utility
+
+- Saga Member canonical main `99ca02a06bb85d52570d35454cd5c3c0a0d4087d`
+  (PR #18) aktif pada Vercel deployment
+  `dpl_58yvx5Me4wLb3xwgBMnaczZmmGGY` melalui stable public URL
+  `https://saga-member-platform.vercel.app`.
+- V4 mengubah lima primary route menjadi mobile editorial utility: membership
+  wallet dan tier story di Beranda, search-first Jelajah, Pass full-focus,
+  Points/Quest/Reward utility, serta Profil dengan grouped settings.
+- Sistem visual memakai Plus Jakarta Sans, Feather icon, espresso/paper/milk/
+  Saga Lime, grain dan halftone lokal, gradient dua stop, serta motion
+  transform/opacity maksimal 200 ms dengan reduced-motion.
+- 90/90 test, canonical-main CI `33781525327`, UAT 320/360/390/412/430 px,
+  axe nol critical/serious, offline/fallback, dan remote public UAT lulus.
+- Status `CONFIRMED / SAGA_MEMBER_V4_PRODUCTION_DEPLOYED /
+  PUBLIC_DUMMY_DEMO_ACTIVE / REAL_BACKEND_OFF / REAL_PROVIDER_OFF /
+  REAL_DATA_OFF / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
 
 ### Saga Member V3 Contemporary Coffee Club
 

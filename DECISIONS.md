@@ -2106,3 +2106,17 @@ keputusan pengganti.
 | Pemberi keputusan | Andreas / founder |
 | Status | `CONFIRMED / IMPLEMENTED / PRODUCTION_ACTIVATED / PHYSICAL_UAT_EVIDENCE_PENDING / BUSINESS_READY=false`; backend `ceb33732144badbb929d212b0d5d7b3fd0e24474`, Studio `6bd8e54a0d472e700ec9acf00112f468656a0583` |
 | Dokumen terkait | [SagaView Product](products/sagaview/PRODUCT.md), [SagaView Dossier](products/sagaview/DOSSIER.md), [SagaView Changelog](products/sagaview/CHANGELOG.md), [SagaView Ledger](products/sagaview/FEATURE_COVERAGE_LEDGER.md), [Gaps](GAPS.md) |
+
+## DEC-150 - Saga Member memakai V4 Editorial Coffee Utility pada public dummy
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-09-04 |
+| Topik | Arah visual dan deployment Saga Member public dummy |
+| Keputusan | Terapkan seluruh batch perbaikan UI/UX sebagai V4 Editorial Coffee Utility, merge ke canonical main, dan deploy ke satu stable public Vercel URL. Runtime tetap memakai data dummy dan tidak mengaktifkan backend, provider, transaksi, atau data nyata. |
+| Alasan | Founder meminta perubahan visual yang signifikan, lebih rapi, mobile-first, tidak terasa generatif, dan bisa langsung dicoba melalui satu link publik tetap. |
+| Alternatif yang dipertimbangkan | Mempertahankan V3; hanya mengganti aset hero; menunda deployment sampai backend nyata aktif. |
+| Dampak | Lima primary route, typography, palette, texture, gradient, effects, motion, dan navigation berubah pada static public demo. Private VPS D0, QRIS, Resend, Push, NFC, printer, real account, dan business readiness tidak berubah. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / IMPLEMENTED / SAGA_MEMBER_V4_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`; source `99ca02a06bb85d52570d35454cd5c3c0a0d4087d`, PR #18, deployment `dpl_58yvx5Me4wLb3xwgBMnaczZmmGGY` |
+| Dokumen terkait | [Saga Platform Product](products/saga-platform/PRODUCT.md), [Saga Platform Dossier](products/saga-platform/DOSSIER.md), [Saga Platform Changelog](products/saga-platform/CHANGELOG.md) |

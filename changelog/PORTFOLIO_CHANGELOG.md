@@ -10,6 +10,17 @@
   Candidate platform fix belum dideploy karena fresh backup gate gagal dua
   kali; runtime production tetap `1d7146c2` dan `BUSINESS_READY=false`.
 
+## 2026-09-04 - Saga Member V4 Editorial Coffee Utility deployed
+
+- Saga Member main `99ca02a06bb85d52570d35454cd5c3c0a0d4087d`
+  (PR #18) aktif pada `https://saga-member-platform.vercel.app` melalui
+  deployment `dpl_58yvx5Me4wLb3xwgBMnaczZmmGGY`.
+- V4 mempertegas mobile editorial utility pada Beranda, Jelajah, Pass, Reward,
+  dan Profil; visual memakai Plus Jakarta Sans, Feather icon, Saga Lime,
+  local grain/halftone, restrained gradient, dan motion maksimal 200 ms.
+- Canonical CI dan remote UAT lima viewport lulus. Runtime tetap public dummy
+  tanpa backend, provider, transaksi, atau data nyata;
+  `PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
 ## 2026-09-03 - Saga Member V3 Contemporary Coffee Club deployed
 
 - Saga Member main `fd2d50c10ecbeafb5bf99525687da5a06f123013`
