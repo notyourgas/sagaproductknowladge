@@ -8,6 +8,20 @@ Mencatat perubahan material control plane Saga.
 
 Fondasi production dan roadmap pemisahan boundary harus dibedakan.
 
+## 2026-09-04 — Saga Member V4 Editorial Coffee Utility deployed
+
+- Main `99ca02a06bb85d52570d35454cd5c3c0a0d4087d` (PR #18) aktif pada
+  deployment `dpl_58yvx5Me4wLb3xwgBMnaczZmmGGY` dan stable public URL.
+- Lima primary route diperbarui menjadi mobile editorial utility dengan
+  hierarchy lebih tegas, search-first discovery, full-focus Pass, compact
+  reward utility, dan grouped profile settings.
+- Typography, palette, local texture, gradient, effects, navigation, dan
+  motion direvisi. 90/90 test, canonical CI, UAT lima viewport, axe,
+  offline/fallback, dan remote public UAT lulus.
+- Klasifikasi `CONFIRMED / SAGA_MEMBER_V4_PRODUCTION_DEPLOYED /
+  PUBLIC_DUMMY_DEMO_ACTIVE / REAL_BACKEND_OFF / REAL_PROVIDER_OFF /
+  REAL_DATA_OFF / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 ## 2026-09-03 — Saga Member V3 Contemporary Coffee Club deployed
 
 - Main `fd2d50c10ecbeafb5bf99525687da5a06f123013` (PR #17) aktif pada

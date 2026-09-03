@@ -1,5 +1,20 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+Saga Member V4 Editorial Coffee Utility aktif pada stable public dummy URL
+`https://saga-member-platform.vercel.app` dari canonical main
+`99ca02a06bb85d52570d35454cd5c3c0a0d4087d` (PR #18) dan deployment
+`dpl_58yvx5Me4wLb3xwgBMnaczZmmGGY`. Lima primary route kini memakai hierarchy
+mobile editorial utility: membership wallet/tier story, search-first Jelajah,
+Pass full-focus, Points/Quest/Reward, dan grouped profile settings. Visual
+memakai Plus Jakarta Sans, Feather icon, espresso/paper/milk/Saga Lime, local
+grain/halftone, gradient dua stop, dan motion transform/opacity maksimal 200
+ms. 90/90 test, canonical CI `33781525327`, UAT 320–430 px, axe,
+offline/fallback, dan remote public UAT lulus. Status
+`SAGA_MEMBER_V4_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
+REAL_BACKEND_OFF / REAL_PROVIDER_OFF / REAL_DATA_OFF /
+PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`; jangan menyebutnya akun,
+transaksi, provider, pilot outlet, atau backend production.
+
 Saga Member V3 Contemporary Coffee Club aktif pada stable public dummy URL
 `https://saga-member-platform.vercel.app` dari canonical main
 `fd2d50c10ecbeafb5bf99525687da5a06f123013` (PR #17) dan deployment

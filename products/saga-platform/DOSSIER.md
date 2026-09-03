@@ -7,7 +7,7 @@ status Saga Platform.
 
 ## Konteks dan status bukti
 
-- Updated: 3 September 2026
+- Updated: 4 September 2026
 - Delivery: `PRODUCTION_DEPLOYED` untuk fondasi tertentu
 - Activation: `PRODUCTION_ACTIVATED` untuk fondasi yang dipakai;
   `NOT_PRODUCTION_ACTIVATED` untuk adapter/roadmap lain
@@ -58,22 +58,27 @@ D0. Customer `f763fc19d8463cf2120387b0d06a57ffa5c868f7` dan Member
 `2eaa35334e59dc2656b98816db6bdc020c478a8f` lulus CI canonical-main, remote
 Chrome UAT, forced-RLS audit, backup/restore dan rollback rehearsal.
 
-Frontend public dummy terkini adalah V3 Contemporary Coffee Club dari Saga
-Member main `fd2d50c10ecbeafb5bf99525687da5a06f123013` (PR #17) pada Vercel
-deployment `dpl_7TMg8jigjcvMrxL6FegfF8wXhfrL` dan stable URL
-`https://saga-member-platform.vercel.app`. V3 mempertahankan IA lima tujuan,
-tetapi mengganti generated character hero menjadi object art code-native,
-memberi satu aksen route-specific, gradient hangat terkendali, navigasi
-espresso, local Pass texture, dan motion transform/opacity maksimal 200 ms.
+Frontend public dummy terkini adalah V4 Editorial Coffee Utility dari Saga
+Member main `99ca02a06bb85d52570d35454cd5c3c0a0d4087d` (PR #18) pada Vercel
+deployment `dpl_58yvx5Me4wLb3xwgBMnaczZmmGGY` dan stable URL
+`https://saga-member-platform.vercel.app`. V4 mempertahankan IA lima tujuan,
+namun memperjelas hierarchy dan utility: membership wallet serta tier story di
+Beranda, search-first Jelajah, Pass full-focus, Points/Quest/Reward, dan Profil
+dengan grouped settings.
 
-Jelajah kini memiliki search serta filter kategori yang berfungsi; Reward
-memiliki filter availability dan feedback penukaran simulasi. CI PR
-`33778916626`, 86/86 test, browser UAT lima viewport, axe nol critical/serious,
-offline shell, fallback, dan remote public smoke lulus. Runtime tetap
+Visual memakai Plus Jakarta Sans, Feather icon, espresso/paper/milk/Saga Lime,
+tekstur grain dan halftone lokal, gradient dua stop, serta motion transform/
+opacity maksimal 200 ms dengan reduced-motion. Canonical-main CI
+`33781525327`, 90/90 test, browser UAT lima viewport, axe nol critical/serious,
+offline shell, fallback, dan remote public UAT lulus. Runtime tetap
 `PUBLIC_DUMMY_DEMO`: backend, auth, provider, transaksi, data pelanggan, QRIS,
 NFC, printer, dan pilot nyata tidak aktif. Karena itu delivery adalah
-`SAGA_MEMBER_V3_PRODUCTION_DEPLOYED`, sedangkan
+`SAGA_MEMBER_V4_PRODUCTION_DEPLOYED`, sedangkan
 `PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
+
+V3 Contemporary Coffee Club dari main
+`fd2d50c10ecbeafb5bf99525687da5a06f123013` (PR #17) adalah release
+sebelumnya dan tetap menjadi provenance historis, bukan state runtime terbaru.
 
 Frontend dummy publik terbaru memakai Saga Member canonical main
 `0612165bf24d7ee767a287b09c5319a617de6f4a` setelah PR #15 dan hotfix kontras

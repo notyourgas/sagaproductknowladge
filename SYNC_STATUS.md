@@ -15,7 +15,7 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-09-04 WIB |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `696f184` |
+| Baseline sebelum pembaruan | `87a12e3` |
 
 ## SagaOPS paid canary dan lock
 
@@ -33,6 +33,29 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `products/sagaops/DOSSIER.md`
 - `products/sagaops/CHANGELOG.md`
 - `GAPS.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
+
+## Saga Member V4 Editorial Coffee Utility
+
+- Main `99ca02a06bb85d52570d35454cd5c3c0a0d4087d` (PR #18) dan deployment
+  `dpl_58yvx5Me4wLb3xwgBMnaczZmmGGY` aktif pada stable URL
+  `https://saga-member-platform.vercel.app`.
+- Lima primary route, visual foundation, search/filter, motion,
+  offline/fallback, dan remote UAT lima viewport sudah tervalidasi.
+- Canonical CI `33781525327` dan 90/90 test lulus.
+- Status `CONFIRMED / SAGA_MEMBER_V4_PRODUCTION_DEPLOYED /
+  PUBLIC_DUMMY_DEMO_ACTIVE / REAL_BACKEND_OFF / REAL_PROVIDER_OFF /
+  REAL_DATA_OFF / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi Saga Member V4
+
+- `products/saga-platform/PRODUCT.md`
+- `products/saga-platform/DOSSIER.md`
+- `products/saga-platform/CHANGELOG.md`
+- `DECISIONS.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `CHANGELOG.md`
