@@ -66,6 +66,28 @@ Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
 - Pemisahan bounded context dan adapter dilakukan bertahap.
 - Bukan rewrite total.
 
+### Saga Member V11 Saga Signal
+
+- Saga Member canonical main `f46903ee4d9a9ee1f976b8fe6b9176dd7f3db8df`
+  (PR #25) aktif pada Vercel production deployment
+  `dpl_7bnYiDDqTNhuki5TyDRM8yjzcvvZ` melalui stable public URL
+  `https://saga-member-platform.vercel.app`.
+- Saga Signal menyatukan feedback menu, Pass, Reward, privasi, profil,
+  perangkat, support, refresh, sesi, dan handoff Saga Book menjadi satu pola
+  outcome persisten dengan judul, konsekuensi, icon Feather, serta kontrol
+  tutup eksplisit.
+- Success/result diumumkan melalui polite `status`; kegagalan aksi memakai
+  `alert`. Feedback tidak merebut fokus, mengembalikan fokus ke trigger saat
+  ditutup, tidak auto-dismiss, tidak bertumpuk, dan memakai tombol 44 px.
+- Tidak ada dependency baru. Motion 13.2.0 yang sudah dibundle lokal hanya
+  menggerakkan transform/opacity 120-180 ms dan reduced-motion dihormati.
+- 109/109 test, PR CI `33815212641`, canonical-main CI `33815469786`, audit
+  dependency nol vulnerability, Preview artifact verification, serta UAT
+  lokal dan publik pada 320/360/375/390/430 px lulus.
+- Status `CONFIRMED / SAGA_MEMBER_V11_SAGA_SIGNAL_PRODUCTION_DEPLOYED /
+  PUBLIC_DUMMY_DEMO_ACTIVE / REAL_BACKEND_OFF / REAL_PROVIDER_OFF /
+  REAL_DATA_OFF / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 ### Saga Member V10 Journey Memory
 
 - Saga Member canonical main `a9f41ac0c348cd168b3d65e1cade5f5271c196bd`

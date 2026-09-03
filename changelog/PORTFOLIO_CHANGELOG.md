@@ -20,6 +20,18 @@
 - Production/canary tidak berubah; readiness tetap 84/100 dan
   `BUSINESS_READY=false`.
 
+## 2026-09-04 - Saga Member V11 Saga Signal deployed
+
+- Saga Member main `f46903ee4d9a9ee1f976b8fe6b9176dd7f3db8df`
+  (PR #25) aktif pada `https://saga-member-platform.vercel.app` melalui
+  deployment `dpl_7bnYiDDqTNhuki5TyDRM8yjzcvvZ`.
+- Feedback menu, Pass, Reward, profil, privasi, perangkat, support, refresh,
+  sesi, dan handoff kini memakai Saga Signal yang accessible, persisten,
+  dapat ditutup, fokus-safe, dan tidak bertumpuk.
+- 109/109 test, PR/main CI, dependency audit, Preview verification, serta UAT
+  lokal/publik lima viewport lulus. Runtime tetap public dummy;
+  `PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
+
 ## 2026-09-04 - Saga Member V10 Journey Memory deployed
 
 - Saga Member main `a9f41ac0c348cd168b3d65e1cade5f5271c196bd`

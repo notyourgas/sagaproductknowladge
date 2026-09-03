@@ -8,6 +8,21 @@ Mencatat perubahan material control plane Saga.
 
 Fondasi production dan roadmap pemisahan boundary harus dibedakan.
 
+## 2026-09-04 — Saga Member V11 Saga Signal deployed
+
+- Main `f46903ee4d9a9ee1f976b8fe6b9176dd7f3db8df` (PR #25) aktif pada
+  deployment `dpl_7bnYiDDqTNhuki5TyDRM8yjzcvvZ` dan stable public URL.
+- Saga Signal menyatukan feedback aksi simulasi menjadi satu pola persisten,
+  tidak bertumpuk, dapat ditutup, tidak merebut fokus, serta mengembalikan
+  fokus ke trigger dengan target sentuh 44 px.
+- Success memakai polite `status`, kegagalan memakai `alert`; dynamic copy
+  memakai `textContent`, icon Feather, dan motion transform/opacity 120-180 ms.
+- 109/109 test, PR CI `33815212641`, main CI `33815469786`, dependency audit,
+  Preview artifact check, dan public UAT lima viewport lulus.
+- Klasifikasi `CONFIRMED / SAGA_MEMBER_V11_SAGA_SIGNAL_PRODUCTION_DEPLOYED /
+  PUBLIC_DUMMY_DEMO_ACTIVE / REAL_BACKEND_OFF / REAL_PROVIDER_OFF /
+  REAL_DATA_OFF / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 ## 2026-09-04 — Saga Member V10 Journey Memory deployed
 
 - Main `a9f41ac0c348cd168b3d65e1cade5f5271c196bd` (PR #24) aktif pada
