@@ -10,6 +10,17 @@
 - Production/canary tidak berubah; readiness tetap 84/100 dan
   `BUSINESS_READY=false`.
 
+## 2026-09-04 - Saga Member V10 Journey Memory deployed
+
+- Saga Member main `a9f41ac0c348cd168b3d65e1cade5f5271c196bd`
+  (PR #24) aktif pada `https://saga-member-platform.vercel.app` melalui
+  deployment `dpl_TNCG8F7mQRAjx9RXBqHp3MfamChE`.
+- Browser Back/Forward serta tombol Back sekunder kini memulihkan route, scroll,
+  dan fokus asal. Page title dan announcement route juga konsisten.
+- 106/106 test, PR/main CI, dependency audit, Preview artifact verification,
+  serta UAT lokal/publik lima viewport lulus. Runtime tetap public dummy;
+  `PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
+
 ## 2026-09-04 - SagaOPS Cashier V2 local validated
 
 - Saga POS feature `2cfaf9e`, current head `ba463a6`, menambah server quote,

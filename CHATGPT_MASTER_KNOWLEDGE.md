@@ -10,6 +10,19 @@ nol vulnerability lulus tanpa dependency baru. Status
 `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production, canary, settlement,
 readiness 84/100, dan `BUSINESS_READY=false` tidak berubah.
 
+Saga Member V10 Journey Memory aktif pada stable public dummy URL
+`https://saga-member-platform.vercel.app` dari canonical main
+`a9f41ac0c348cd168b3d65e1cade5f5271c196bd` (PR #24) dan deployment
+`dpl_TNCG8F7mQRAjx9RXBqHp3MfamChE`. Navigasi memakai native History API;
+browser Back/Forward dan tombol Back sekunder memulihkan route, posisi scroll,
+serta fokus ke kontrol asal tanpa mengubah URL publik. Judul dokumen dan live
+announcement per-route memperjelas orientasi. 106/106 test, PR CI
+`33810230630`, canonical CI `33810432264`, audit dependency, Preview artifact
+verification, serta UAT lokal/publik 320-430 px lulus. Status
+`SAGA_MEMBER_V10_JOURNEY_MEMORY_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
+REAL_BACKEND_OFF / REAL_PROVIDER_OFF / REAL_DATA_OFF /
+PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 Saga POS current branch head `ba463a6` sudah dipush dengan Cashier V2 feature
 `2cfaf9e`. Assisted checkout kini meminta quote server sebelum pembayaran,
 menawarkan uang pas/pecahan beserta preview kurang atau kembalian, menjaga CTA

@@ -58,7 +58,31 @@ D0. Customer `f763fc19d8463cf2120387b0d06a57ffa5c868f7` dan Member
 `2eaa35334e59dc2656b98816db6bdc020c478a8f` lulus CI canonical-main, remote
 Chrome UAT, forced-RLS audit, backup/restore dan rollback rehearsal.
 
-Frontend public dummy terkini adalah V9 Story Rail dari Saga Member main
+Frontend public dummy terkini adalah V10 Journey Memory dari Saga Member main
+`a9f41ac0c348cd168b3d65e1cade5f5271c196bd` (PR #24) pada Vercel production
+deployment `dpl_TNCG8F7mQRAjx9RXBqHp3MfamChE` dan stable URL
+`https://saga-member-platform.vercel.app`. V10 menghubungkan route aplikasi
+dengan native History API. Browser Back/Forward dan tombol Back sekunder kini
+memulihkan route, posisi scroll, serta fokus tepat ke kontrol asal tanpa
+mengubah URL publik.
+
+Riset mengikuti dokumentasi MDN untuk History API serta panduan WCAG 2.4.3
+Focus Order dan 2.4.11 Focus Not Obscured. Route aktif memperbarui document
+title dan satu polite live region; `main` tidak lagi menjadi live region penuh.
+Implementasi tidak menambah dependency: Motion 13.2.0 tetap dipakai hanya untuk
+transisi singkat yang sudah ada.
+
+106/106 test, PR CI `33810230630`, canonical-main CI `33810432264`, dependency
+audit nol vulnerability, Preview artifact verification, local UAT, dan public
+remote UAT pada 320/360/375/390/430 px lulus. Explicit Back, browser
+Back/Forward, scroll/focus restoration, Axe, reduced-motion, offline shell,
+layout, dan network boundary terverifikasi. Runtime tetap `PUBLIC_DUMMY_DEMO`;
+backend, auth, provider, transaksi, data pelanggan, QRIS, Push, NFC, printer,
+dan pilot nyata tidak aktif. Delivery adalah
+`SAGA_MEMBER_V10_JOURNEY_MEMORY_PRODUCTION_DEPLOYED`, sedangkan
+`PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
+
+V9 Story Rail berasal dari Saga Member main
 `cf702551b2b8d4cba5922938a3fb15f1919760cc` (PR #23) pada Vercel production
 deployment `dpl_7tgMDC4unM5URo5Amxr92GQGUJDq` dan stable URL
 `https://saga-member-platform.vercel.app`. V9 mengubah carousel Beranda dari
