@@ -1,39 +1,28 @@
 # SagaView Feature Coverage Ledger
 
-S380 exact candidate: backend
-`129ed92a5cc9c5c199fb4082660e76ff7b12b74c` dan Studio
-`8257f491bc0866bd0de814d0f3cd3e9dd6336b85` sudah `PUSHED /
-LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
-PHYSICAL_UAT_EXACT_PAIR_PENDING`.
+S382 production pair: backend
+`ceb33732144badbb929d212b0d5d7b3fd0e24474` / release
+`20260903003542-ceb3373` dan Studio
+`6bd8e54a0d472e700ec9acf00112f468656a0583` / release
+`20260903005049-6bd8e54` sudah `PUSHED / PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED / PHYSICAL_UAT_EVIDENCE_PENDING /
+BUSINESS_READY=false`.
 
-Ledger lulus: Pint 127/127; full PHP 1.044/1.044 dan 13.382 assertion; build
-5.097 modul; Composer/npm audit nol; MySQL disposable 105 migration/149 tabel;
-backup/restore sintetis 200/200 dengan digest identik; tenant leak 0; benchmark
-100.000 row satu query dengan p95 4,761/10,657/30,883 ms pada 50/200/500 item;
-clean/upstream exact provenance; serta custody lama 84/84 file dan hash valid.
-Index eksperimental yang memperburuk benchmark ditolak dan tidak masuk source.
+Ledger lulus: full PHP 1.046/1.046 dengan 13.396 assertion; scoped release
+gate 234/234 dengan 2.024 assertion; Vitest 278/278; Playwright 170 pass +
+3 skip terkontrol; build client/server; Composer/npm audit; npm 9 disposable
+install/build; benchmark 50/200/500 tanpa upload; clean/upstream exact
+provenance; artifact immutable; fresh encrypted backup/checksum/salinan
+terpisah/disposable restore; migration/storage rehearsal; shared lock;
+atomic switch; actual rollback/reactivation; empat service aktif; lima public
+smoke; security header; journal bersih; dan pointer rollback tervalidasi.
 
-Belum lulus: exact-pair match receipt 0; 12 bukti non-printer tersanitasi,
-count 50/200/500, konfirmasi operator/reviewer, blocker nol, dan
-`ready_for_human_release_review`. Production tetap S373 backend release
-`20260831080506-5f642d8` dan Studio release `20260831081456-8257f49`;
-`BUSINESS_READY=false`.
-
-S373 backend production activation: exact pushed backend
-`5f642d83a9d23091f29cc356b2041bc310338812` aktif pada immutable release
-`20260831080506-5f642d8`, rollback `20260828111443-98f13a8`. Studio Live
-Import exact `8257f491bc0866bd0de814d0f3cd3e9dd6336b85` / release
-`20260831081456-8257f49` dipertahankan dan tidak diturunkan.
-
-Ledger lulus: focused 11/11; full PHP 230/230 dengan 1.990 assertion; build
-5.097 modul; Composer/npm audit nol; exact clean/upstream provenance;
-immutable artifact dan hash; fresh encrypted backup/checksum/offsite/
-disposable restore; storage rehearsal; exclusive atomic switch; actual
-rollback/reactivation; verifier pascadeploy; empat service aktif; nginx;
-public/security smoke; journal bersih; dan shared lock tersedia kembali.
-Belum lulus: authenticated dan physical UAT pada pasangan production terbaru.
-Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
-CURRENT_PAIR_UAT_PENDING / BUSINESS_READY=false`.
+Belum lulus: physical UAT exact pair 12 gate non-printer, count 50/200/500,
+konfirmasi operator/reviewer, dan receipt `ready_for_human_release_review`.
+Owner exception hanya menerima risiko kapasitas dan ketiadaan receipt saat
+activation; tidak mengubah safety guard atau menjadi bukti UAT. Rollback pair
+tetap backend `20260831080506-5f642d8` dan Studio
+`20260831081456-8257f49`; `UAT_ACCEPTED` tidak diklaim.
 
 Evidence cut-off: 3 September 2026 WIB
 

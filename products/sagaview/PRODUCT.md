@@ -2,47 +2,34 @@
 
 Updated: 3 September 2026 WIB
 
-SagaView S380 candidate exact backend
-`129ed92a5cc9c5c199fb4082660e76ff7b12b74c` dan Studio
-`8257f491bc0866bd0de814d0f3cd3e9dd6336b85` berstatus `PUSHED /
-LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
-PHYSICAL_UAT_EXACT_PAIR_PENDING`. Kandidat backend menggabungkan snapshot
-revision batch, retry deadlock publish, pembaruan keamanan dependency, dan
-penutupan baseline lint; Studio tetap memakai lineage Live Import yang
-kompatibel.
+SagaView S382 aktif di production memakai backend exact
+`ceb33732144badbb929d212b0d5d7b3fd0e24474` pada immutable release
+`20260903003542-ceb3373` dan Studio exact
+`6bd8e54a0d472e700ec9acf00112f468656a0583` pada release
+`20260903005049-6bd8e54`. Rollback tetap tersedia pada backend
+`20260831080506-5f642d8` dan Studio `20260831081456-8257f49`.
 
-Gate exact candidate lulus: scoped Pint 127/127; full PHP 1.044/1.044 dengan
-13.382 assertion; build 5.097 modul; audit Composer/npm nol; rehearsal MySQL
-disposable 105 migration dan 149 tabel; backup/restore sintetis 200/200 dengan
-digest identik serta tenant leak nol. Benchmark 100.000 row sintetis memakai
-satu query dengan p95 4,761/10,657/30,883 ms pada 50/200/500 item. Percobaan
-index yang memperburuk hasil dibatalkan dan tidak menjadi bagian kandidat.
+Studio memperbarui lockfile agar dependency nested yang dibutuhkan build
+tercatat eksplisit dan kompatibel dengan npm 9 di VPS. Exact pair lulus full
+PHP 1.046/1.046 dengan 13.396 assertion, scoped release gate 234/234 dengan
+2.024 assertion, Vitest 278/278, Playwright 170 pass + 3 skip terkontrol,
+client build 2.133 modul, server build 207 modul, audit dependency, serta
+benchmark galeri 50/200/500 tanpa upload.
 
-Audit custody menemukan delapan receipt lama; tujuh receipt berstatus siap
-tetap utuh dengan 84/84 file dan hash cocok, tetapi exact-pair match untuk S380
-adalah 0. Bukti lama tidak disalin, diindeks ulang, atau diikat ke kandidat
-baru. Physical UAT exact pair masih membutuhkan 12 bukti non-printer
-tersanitasi, count 50/200/500, konfirmasi operator/reviewer, blocker nol, dan
-status `ready_for_human_release_review`. Production tidak berubah dan
-`BUSINESS_READY=false`.
+Release memakai artifact immutable, fresh encrypted backup dengan checksum,
+salinan terpisah dan disposable restore, migration/storage rehearsal, shared
+lock eksklusif, atomic switch, actual rollback/reactivation, empat service
+aktif, lima public smoke HTTP 200, security header, journal bersih, dan
+provenance exact. Status `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED / PHYSICAL_UAT_EVIDENCE_PENDING /
+BUSINESS_READY=false`.
 
-SagaView backend S373 exact source
-`5f642d83a9d23091f29cc356b2041bc310338812` sudah aktif di production pada
-immutable release `20260831080506-5f642d8`, dengan rollback backend
-`20260828111443-98f13a8`. Studio Live Import dipertahankan pada exact source
-`8257f491bc0866bd0de814d0f3cd3e9dd6336b85` / release
-`20260831081456-8257f49`; release backend tidak menurunkan atau mengganti
-Studio yang sudah aktif.
-
-Focused 11/11, full PHP 230/230 dengan 1.990 assertion, build 5.097 modul,
-Composer dan npm audit nol advisori/vulnerability, immutable artifact, fresh
-encrypted backup dengan checksum/offsite/disposable restore, storage rehearsal,
-atomic switch, actual rollback/reactivation, service/nginx, public/security
-smoke, journal, provenance, dan verifier pascadeploy lulus. Status pasangan
-production terbaru `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
-PRODUCTION_ACTIVATED / CURRENT_PAIR_UAT_PENDING / BUSINESS_READY=false`.
-Authenticated/physical UAT tidak dikonversi dari receipt pasangan sebelumnya
-dan tetap residual.
+Andreas menerima risiko kapasitas lokal untuk release ini, tetapi pengecualian
+hanya berlaku pada threshold kapasitas dan ketiadaan receipt physical UAT exact
+pair. Backup, restore, provenance, test, health, smoke, rollback, serta safety
+guard tidak dilewati. Physical UAT 12 gate non-printer, count 50/200/500, dan
+konfirmasi operator/reviewer tetap residual; tidak ada klaim `UAT_ACCEPTED`
+atau `BUSINESS_READY`.
 
 SagaView Live Import v0.21.0 exact source
 `8257f491bc0866bd0de814d0f3cd3e9dd6336b85` sudah aktif di production pada

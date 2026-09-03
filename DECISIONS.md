@@ -1980,3 +1980,17 @@ keputusan pengganti.
 | Pemberi keputusan | Andreas / founder |
 | Status | `CONFIRMED / PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`; exact source `68b978e533d2fcc23dd7be23ddf23b2328f51a6b`, release `20260828063524-68b978e`, rollback `20260828062330-4aae315`; authenticated clipboard UAT residual |
 | Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [SagaBook Changelog](products/sagabook/CHANGELOG.md), [SagaBook Ledger](products/sagabook/FEATURE_COVERAGE_LEDGER.md) |
+
+## DEC-141 - SagaView S382 boleh diaktifkan dengan residual physical UAT
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-09-03 |
+| Topik | Batas owner exception untuk activation SagaView S382 |
+| Keputusan | Founder mengizinkan exact pair S382 dideploy dengan kondisi penyimpanan yang ada dan tanpa receipt physical UAT exact pair, selama seluruh gate source, backup, restore, provenance, health, public/security smoke, rollback, dan shared release lock tetap lulus. |
+| Alasan | Perbaikan cumulative dan kompatibilitas build VPS sudah terverifikasi, sedangkan physical UAT memerlukan langkah operator terpisah. |
+| Alternatif yang dipertimbangkan | Menahan deployment sampai physical UAT; melewati seluruh release gate; mengonversi receipt kandidat lama. |
+| Dampak | Production dapat diaktifkan, tetapi pengecualian bukan bukti UAT. Physical UAT 12 gate, count 50/200/500, konfirmasi operator/reviewer, dan receipt final tetap residual; `UAT_ACCEPTED` dan `BUSINESS_READY` tidak boleh diklaim. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / IMPLEMENTED / PRODUCTION_ACTIVATED / PHYSICAL_UAT_EVIDENCE_PENDING / BUSINESS_READY=false`; backend `ceb33732144badbb929d212b0d5d7b3fd0e24474`, Studio `6bd8e54a0d472e700ec9acf00112f468656a0583` |
+| Dokumen terkait | [SagaView Product](products/sagaview/PRODUCT.md), [SagaView Dossier](products/sagaview/DOSSIER.md), [SagaView Changelog](products/sagaview/CHANGELOG.md), [SagaView Ledger](products/sagaview/FEATURE_COVERAGE_LEDGER.md), [Gaps](GAPS.md) |

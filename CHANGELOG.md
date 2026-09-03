@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-03 - SagaView S382 production activation sync
+
+- Menyinkronkan backend exact `ceb33732144badbb929d212b0d5d7b3fd0e24474`
+  release `20260903003542-ceb3373` dan Studio exact
+  `6bd8e54a0d472e700ec9acf00112f468656a0583` release
+  `20260903005049-6bd8e54` sebagai production aktif.
+- Full test/build/audit, encrypted backup/restore, rehearsal, atomic switch,
+  actual rollback/reactivation, service, public/security smoke, journal,
+  provenance, dan lock lulus; rollback pair tetap tersedia.
+- Klasifikasi `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+  PHYSICAL_UAT_EVIDENCE_PENDING / BUSINESS_READY=false`.
+- Dokumen terdampak: SagaView product/dossier/changelog/ledger, source registry,
+  gaps, decision log, portfolio, master knowledge, root changelog, dan sync
+  status.
+
 ## 2026-09-03 - Saga Member public dummy auto-demo sync
 
 - Menyinkronkan Saga Member main

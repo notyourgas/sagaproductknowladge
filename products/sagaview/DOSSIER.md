@@ -1,5 +1,33 @@
 # SagaView Dossier
 
+## S382 production activation dan kompatibilitas npm 9
+
+Backend exact `ceb33732144badbb929d212b0d5d7b3fd0e24474` aktif pada release
+`20260903003542-ceb3373`, sedangkan Studio exact
+`6bd8e54a0d472e700ec9acf00112f468656a0583` aktif pada release
+`20260903005049-6bd8e54`. Rollback pair adalah backend
+`20260831080506-5f642d8` dan Studio `20260831081456-8257f49`.
+
+Root cause build VPS adalah lockfile dari npm yang lebih baru tidak memuat
+dependency nested yang dibutuhkan runtime build npm 9. Lockfile diregenerasi
+dengan npm 9 tanpa mengubah kontrak produk; disposable VPS membuktikan install,
+audit nol vulnerability, dan build exact source berhasil.
+
+Gate source dan release lulus: PHP 1.046/1.046 dengan 13.396 assertion,
+scoped 234/234 dengan 2.024 assertion, Vitest 278/278, Playwright 170 pass +
+3 skip terkontrol, build client/server, dependency audit, benchmark galeri
+50/200/500, fresh encrypted backup/checksum/salinan terpisah/disposable restore,
+rehearsal migration/storage, artifact immutable, atomic switch, actual
+rollback/reactivation, empat service aktif, lima public smoke, security header,
+journal, dan provenance exact.
+
+Otorisasi Andreas menerima risiko kapasitas lokal serta mengizinkan activation
+tanpa receipt physical UAT exact pair. Pengecualian ini tidak mengubah safety
+guard dan tidak menjadi bukti UAT. Physical UAT 12 gate non-printer dengan
+count 50/200/500 dan konfirmasi operator/reviewer tetap residual. Status
+`PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+PHYSICAL_UAT_EVIDENCE_PENDING / BUSINESS_READY=false`.
+
 ## S380 exact candidate dan custody boundary
 
 Exact backend `129ed92a5cc9c5c199fb4082660e76ff7b12b74c` dan Studio

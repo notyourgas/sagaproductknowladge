@@ -14,24 +14,24 @@ REAL_BACKEND_OFF / REAL_PROVIDER_OFF / REAL_DATA_OFF / BUSINESS_READY=false`.
 Jangan menyebut demo ini sebagai akun member nyata, provider aktif, pilot
 transaksi, production backend, atau business-ready.
 
-SagaView S380 exact candidate memakai backend
-`129ed92a5cc9c5c199fb4082660e76ff7b12b74c` dan Studio
-`8257f491bc0866bd0de814d0f3cd3e9dd6336b85`. Statusnya `CONFIRMED / PUSHED /
-LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
-PHYSICAL_UAT_EXACT_PAIR_PENDING`; production tidak berubah dan
-`BUSINESS_READY=false`. Test, build, dependency audit, disposable MySQL,
-backup/restore sintetis, tenant isolation, serta benchmark 50/200/500 lulus.
-Audit custody membuktikan receipt lama tetap utuh, tetapi exact candidate pair
-match 0; receipt lama tidak boleh dikonversi menjadi penerimaan S380. Next gate
-adalah 12 bukti physical UAT non-printer tersanitasi, count 50/200/500,
-konfirmasi operator/reviewer, blocker nol, dan status
-`ready_for_human_release_review`.
+Production SagaView S382 memakai backend exact
+`ceb33732144badbb929d212b0d5d7b3fd0e24474` pada release
+`20260903003542-ceb3373` dan Studio exact
+`6bd8e54a0d472e700ec9acf00112f468656a0583` pada release
+`20260903005049-6bd8e54`. Lockfile Studio kompatibel dengan npm 9 VPS; full
+PHP, scoped release gate, Vitest, Playwright, build, dependency audit,
+benchmark 50/200/500, encrypted backup/restore, rehearsal, atomic activation,
+actual rollback/reactivation, service, public/security smoke, journal, dan
+provenance lulus. Rollback pair adalah backend `20260831080506-5f642d8` dan
+Studio `20260831081456-8257f49`.
 
-Production SagaView yang tetap aktif adalah backend
-`5f642d83a9d23091f29cc356b2041bc310338812` release
-`20260831080506-5f642d8` serta Studio
-`8257f491bc0866bd0de814d0f3cd3e9dd6336b85` release
-`20260831081456-8257f49`.
+Status exact pair `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED / PHYSICAL_UAT_EVIDENCE_PENDING /
+BUSINESS_READY=false`. Owner menerima risiko kapasitas serta activation tanpa
+receipt physical UAT exact pair, tetapi pengecualian tidak melewati safety
+guard dan bukan bukti UAT. Jangan menyebut S382 `UAT_ACCEPTED` atau
+`BUSINESS_READY` sebelum 12 gate non-printer, count 50/200/500, konfirmasi
+operator/reviewer, dan receipt final lulus.
 
 Saga Member Home dashboard tervalidasi pada protected Vercel Preview dari exact
 main source `c2754dcf5fe5cccc10993b0eb50a10003949c32e` (PR #10). Home kini

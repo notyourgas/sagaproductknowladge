@@ -1,5 +1,30 @@
 # SagaView Changelog
 
+## 2026-09-03 - S382 production activation dan npm 9 lockfile compatibility
+
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / PHYSICAL_UAT_EVIDENCE_PENDING /
+  BUSINESS_READY=false`.
+- Before: production masih memakai backend S373 dan Studio Live Import lama;
+  exact Studio baru gagal dibangun pada npm 9 VPS karena satu dependency nested
+  tidak tercatat di lockfile.
+- After: lockfile Studio diregenerasi secara kompatibel dengan npm 9. Backend
+  `ceb33732144badbb929d212b0d5d7b3fd0e24474` aktif pada release
+  `20260903003542-ceb3373`; Studio
+  `6bd8e54a0d472e700ec9acf00112f468656a0583` aktif pada release
+  `20260903005049-6bd8e54`.
+- Evidence: PHP 1.046/1.046; scoped 234/234; Vitest 278/278; Playwright
+  170 pass + 3 skip terkontrol; build client/server; audit dependency;
+  benchmark 50/200/500; fresh encrypted backup/checksum/salinan terpisah/
+  disposable restore; rehearsal; artifact immutable; atomic switch; actual
+  rollback/reactivation; empat service aktif; lima public smoke; security
+  header, journal, provenance, dan shared lock lulus.
+- Boundary: rollback backend `20260831080506-5f642d8` dan Studio
+  `20260831081456-8257f49` tersedia. Andreas menerima risiko kapasitas dan
+  ketiadaan receipt physical UAT exact pair hanya untuk activation; physical
+  UAT 12 gate tetap residual, `UAT_ACCEPTED` tidak diklaim, dan
+  `BUSINESS_READY=false`.
+
 ## 2026-09-03 - S380 exact candidate dan audit custody physical UAT
 
 - Klasifikasi: `CONFIRMED / PUSHED / LOCAL_VALIDATED /

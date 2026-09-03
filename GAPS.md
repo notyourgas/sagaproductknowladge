@@ -22,26 +22,17 @@ ketika keputusan atau release baru menutup gap.
 
 ## Prioritas tinggi
 
-SagaView S380 `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
-PHYSICAL_UAT_EXACT_PAIR_PENDING`: exact candidate backend
-`129ed92a5cc9c5c199fb4082660e76ff7b12b74c` dan Studio
-`8257f491bc0866bd0de814d0f3cd3e9dd6336b85` sudah lulus source, test, build,
-dependency, database, backup/restore sintetis, tenant isolation, dan benchmark.
-Audit custody menjaga tujuh receipt lama tetap valid untuk candidate asal,
-namun exact-pair match S380 adalah 0. Gap berikutnya hanya dapat ditutup dengan
-12 bukti non-printer tersanitasi, count 50/200/500, konfirmasi operator/reviewer,
-blocker nol, dan `ready_for_human_release_review`; receipt lama tidak boleh
-diikat ulang.
-
-SagaView current production pair `PRODUCTION_ACTIVATED /
-CURRENT_PAIR_UAT_PENDING / BUSINESS_READY=false`: backend exact
-`5f642d83a9d23091f29cc356b2041bc310338812` / release
-`20260831080506-5f642d8` aktif bersama Studio exact
-`8257f491bc0866bd0de814d0f3cd3e9dd6336b85` / release
-`20260831081456-8257f49`. Release, backup/restore, rollback/reactivation,
-verifier, service, smoke, journal, provenance, dan lock lulus. Gap tersisa:
-authenticated/physical UAT harus dijalankan pada pasangan exact terbaru;
-receipt yang terikat backend sebelumnya tidak boleh digunakan untuk menutupnya.
+SagaView S382 `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+PHYSICAL_UAT_EVIDENCE_PENDING / BUSINESS_READY=false`: backend exact
+`ceb33732144badbb929d212b0d5d7b3fd0e24474` / release
+`20260903003542-ceb3373` aktif bersama Studio exact
+`6bd8e54a0d472e700ec9acf00112f468656a0583` / release
+`20260903005049-6bd8e54`. Source gate, backup/restore, rehearsal, atomic
+activation, rollback/reactivation, verifier, service, public/security smoke,
+journal, provenance, dan lock lulus. Gap tersisa adalah physical UAT exact pair
+12 gate non-printer, count 50/200/500, konfirmasi operator/reviewer, blocker
+nol, dan receipt `ready_for_human_release_review`. Owner exception untuk
+activation tidak boleh dipakai sebagai bukti `UAT_ACCEPTED`.
 
 SagaView Live Import v0.21.0 `PRODUCTION_ACTIVATED / UAT_ACCEPTED /
 BUSINESS_READY=false`: exact Studio source

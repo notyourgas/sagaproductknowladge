@@ -30,13 +30,13 @@ prioritas evidence.
 
 | Peran | Exact source | Status |
 |---|---|---|
-| Kandidat backend S380 | `129ed92a5cc9c5c199fb4082660e76ff7b12b74c` | `PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PHYSICAL_UAT_EXACT_PAIR_PENDING` |
-| Kandidat dan production Studio | `8257f491bc0866bd0de814d0f3cd3e9dd6336b85` | Candidate compatible; production release `20260831081456-8257f49` |
-| Production backend | `5f642d83a9d23091f29cc356b2041bc310338812` | Production release `20260831080506-5f642d8` |
+| Production backend S382 | `ceb33732144badbb929d212b0d5d7b3fd0e24474` | Release `20260903003542-ceb3373`; rollback `20260831080506-5f642d8` |
+| Production Studio S382 | `6bd8e54a0d472e700ec9acf00112f468656a0583` | Release `20260903005049-6bd8e54`; rollback `20260831081456-8257f49` |
 
 Manifest ini hanya mencatat exact source dan status public-safe. Tidak ada
-deployment S380; physical UAT exact pair masih pending dan
-`BUSINESS_READY=false`.
+klaim physical UAT exact pair atau business readiness. Status pasangan
+`PRODUCTION_ACTIVATED / PHYSICAL_UAT_EVIDENCE_PENDING /
+BUSINESS_READY=false`.
 
 ## Internal source lookup
 

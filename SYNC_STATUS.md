@@ -13,9 +13,38 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Field | Nilai |
 |---|---|
 | Waktu pembaruan terakhir | 2026-09-03 WIB |
-| Branch aktif | `codex/saga-member-public-dummy-20260903` |
+| Branch aktif | `codex/s382-sagaview-production-knowledge` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `fc25cb2fc5fcfb4a106779f3de8f30d00d417de9` |
+| Baseline sebelum pembaruan | `3fbe2563b8da2fd88699a064a30b783f5d30f6c1` |
+
+## SagaView S382 production activation
+
+- Backend exact `ceb33732144badbb929d212b0d5d7b3fd0e24474` aktif pada release
+  `20260903003542-ceb3373`; Studio exact
+  `6bd8e54a0d472e700ec9acf00112f468656a0583` aktif pada release
+  `20260903005049-6bd8e54`.
+- Test/build/audit, encrypted backup/checksum/salinan terpisah/disposable
+  restore, rehearsal, artifact immutable, atomic switch, actual rollback/
+  reactivation, service, public/security smoke, journal, provenance, dan
+  shared lock lulus.
+- Rollback pair tersedia pada `20260831080506-5f642d8` dan
+  `20260831081456-8257f49`. Physical UAT exact pair belum diterima; status
+  `PRODUCTION_ACTIVATED / PHYSICAL_UAT_EVIDENCE_PENDING /
+  BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi SagaView S382
+
+- `products/sagaview/PRODUCT.md`
+- `products/sagaview/DOSSIER.md`
+- `products/sagaview/CHANGELOG.md`
+- `products/sagaview/FEATURE_COVERAGE_LEDGER.md`
+- `docs/SOURCE_REGISTRY.md`
+- `GAPS.md`
+- `DECISIONS.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## Saga Member public dummy auto-demo production
 

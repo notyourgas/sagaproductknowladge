@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-09-03 - SagaView S382 production activation
+
+- Backend exact `ceb33732144badbb929d212b0d5d7b3fd0e24474` aktif pada release
+  `20260903003542-ceb3373`; Studio exact
+  `6bd8e54a0d472e700ec9acf00112f468656a0583` aktif pada release
+  `20260903005049-6bd8e54` setelah lockfile dibuat kompatibel dengan npm 9 VPS.
+- Full source gates, dependency audit, fresh encrypted backup/checksum/salinan
+  terpisah/disposable restore, rehearsal, atomic switch, actual rollback/
+  reactivation, service, public/security smoke, journal, dan provenance lulus.
+- Rollback pair tetap `20260831080506-5f642d8` dan
+  `20260831081456-8257f49`. Physical UAT exact pair masih pending; status
+  `PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+
 ## 2026-09-03 - Saga Member public dummy auto-demo production
 
 - Saga Member main `9a914d148bb6773e03afd0c2b45efa39683afdb4`
