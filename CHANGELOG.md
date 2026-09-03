@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-04 - Saga Member V9 Story Rail sync
+
+- Informasi `CONFIRMED`: Saga Member main
+  `cf702551b2b8d4cba5922938a3fb15f1919760cc`, PR #23, canonical CI
+  `33804897926`, dan production deployment
+  `dpl_7tgMDC4unM5URo5Amxr92GQGUJDq` aktif pada stable URL.
+- Before -> after: carousel endpoint-swipe V8 berubah menjadi tactile Story
+  Rail dengan continuous drag, resistance/velocity, Motion settle, segmented
+  progress, dan explicit previous/next controls 44 px.
+- 103/103 test, dependency audit, serta UAT lokal dan publik lima viewport
+  lulus. Production static dummy berubah; backend/provider/data nyata tetap
+  OFF, `PRODUCTION_ACTIVATED=false`, dan `BUSINESS_READY=false`.
+- Dokumen terdampak: Saga Platform product/dossier/changelog, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-09-04 - SagaOPS KDS V2 sync
 
 - Informasi `CONFIRMED`: source exact `973f81c` dipush dengan KDS aging,

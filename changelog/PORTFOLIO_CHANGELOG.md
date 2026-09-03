@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-09-04 - Saga Member V9 Story Rail deployed
+
+- Saga Member main `cf702551b2b8d4cba5922938a3fb15f1919760cc`
+  (PR #23) aktif pada `https://saga-member-platform.vercel.app` melalui
+  deployment `dpl_7tgMDC4unM5URo5Amxr92GQGUJDq`.
+- Beranda memperoleh continuous drag, tactile settle, segmented story rail,
+  serta tombol sebelumnya/berikutnya 44 px yang tetap accessible dan
+  reduced-motion safe.
+- 103/103 test, canonical CI `33804897926`, audit dependency, serta UAT lokal
+  dan publik lima viewport lulus. Runtime tetap public dummy tanpa backend,
+  provider, transaksi, atau data nyata; `PRODUCTION_ACTIVATED=false` dan
+  `BUSINESS_READY=false`.
+
 ## 2026-09-04 - SagaOPS KDS V2 local validated
 
 - Saga POS exact `973f81c` menambah KDS ticket aging berbasis server clock,

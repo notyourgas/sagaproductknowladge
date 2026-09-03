@@ -1,5 +1,19 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+Saga Member V9 Story Rail aktif pada stable public dummy URL
+`https://saga-member-platform.vercel.app` dari canonical main
+`cf702551b2b8d4cba5922938a3fb15f1919760cc` (PR #23) dan deployment
+`dpl_7tgMDC4unM5URo5Amxr92GQGUJDq`. Carousel Beranda kini memiliki continuous
+drag resistance, velocity/distance threshold, Motion settle 180 ms, segmented
+progress, counter, serta tombol previous/next 44 px sebagai alternatif gesture
+yang accessible. Autoplay/pause, focus/hover stop, reduced-motion, visibility
+pause, polite announcement, dan lifecycle cleanup tetap aktif. 103/103 test,
+canonical CI `33804897926`, audit dependency, dan UAT lokal/publik 320-430 px
+lulus. Status `SAGA_MEMBER_V9_STORY_RAIL_PRODUCTION_DEPLOYED /
+PUBLIC_DUMMY_DEMO_ACTIVE / REAL_BACKEND_OFF / REAL_PROVIDER_OFF /
+REAL_DATA_OFF / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`; jangan
+menyebutnya akun, transaksi, provider, pilot outlet, atau backend production.
+
 Saga POS current branch head `973f81c` sudah dipush dengan KDS V2 yang
 memprioritaskan scanability bar: umur tiket memakai server clock, tiket tertua
 tetap di depan, summary Baru/Diproses/Siap, filter status, modifier/note, dan
