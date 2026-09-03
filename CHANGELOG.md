@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-04 - Saga Member V7 Home Editorial Final sync
+
+- Informasi `CONFIRMED`: Saga Member main
+  `83b969d7c77a2ce8015fb087074d3d59e7acea39`, PR #21, canonical CI
+  `33790573528`, Preview `dpl_48tqDHGcZMVnGm36GUo9dCd12hd4`, dan production
+  deployment `dpl_7ZMPhGXxmfFG4SyUkXFZe2zWjGym` aktif pada stable URL.
+- Before -> after: V6 Daily Lobby berubah menjadi V7 Home Editorial Final
+  dengan compact first fold, richer shortcut, prioritized daily agenda, tier
+  journey, activity timeline, carousel progress, dan image fallback.
+- Production static dummy berubah; backend/provider/data nyata tetap OFF,
+  `PRODUCTION_ACTIVATED=false`, dan `BUSINESS_READY=false`.
+- Dokumen terdampak: Saga Platform product/dossier/changelog, portfolio,
+  master knowledge, decision, root changelog, dan sync status.
+
 ## 2026-09-04 - Saga Member V6 Daily Lobby sync
 
 - Informasi `CONFIRMED`: Saga Member main

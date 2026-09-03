@@ -58,10 +58,33 @@ D0. Customer `f763fc19d8463cf2120387b0d06a57ffa5c868f7` dan Member
 `2eaa35334e59dc2656b98816db6bdc020c478a8f` lulus CI canonical-main, remote
 Chrome UAT, forced-RLS audit, backup/restore dan rollback rehearsal.
 
-Frontend public dummy terkini adalah V6 Daily Lobby dari Saga Member main
+Frontend public dummy terkini adalah V7 Home Editorial Final dari Saga Member
+main `83b969d7c77a2ce8015fb087074d3d59e7acea39` (PR #21) pada Vercel
+production deployment `dpl_7ZMPhGXxmfFG4SyUkXFZe2zWjGym` dan stable URL
+`https://saga-member-platform.vercel.app`. V7 memadatkan first fold serta
+member wallet, membentuk shortcut dua kolom, mengutamakan agenda Studio,
+memisahkan status Points, dan mengubah tier serta activity menjadi cerita
+editorial yang lebih mudah dipindai.
+
+Carousel tetap empat cerita dan berinterval empat detik, kini memiliki progress
+waktu serta state loading/fallback foto. Coffee dan Studio memakai placeholder
+foto sintetis WebP 480/960; foto tersebut bukan dokumentasi outlet nyata.
+Motion UI memakai transform/opacity maksimal 180 ms, dihentikan ketika tidak
+terlihat atau reduced-motion aktif. Plus Jakarta Sans dan Feather icon tetap
+menjadi bahasa visual fungsional.
+
+Preview `dpl_48tqDHGcZMVnGm36GUo9dCd12hd4` berstatus READY dan artifact penting
+merespons 200. 97/97 test, PR CI, canonical-main CI `33790573528`, local UAT
+serta public remote UAT pada 320/360/390/412/430 px lulus tanpa overflow,
+broken image, atau console error. Runtime tetap `PUBLIC_DUMMY_DEMO`; backend,
+auth, provider, transaksi, data pelanggan, QRIS, Push, NFC, printer, dan pilot
+nyata tidak aktif. Delivery adalah `SAGA_MEMBER_V7_HOME_FINAL_PRODUCTION_DEPLOYED`,
+sedangkan `PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
+
+V6 Daily Lobby dari Saga Member main
 `85a6f8bc4151e414bb0ca7235922162d0d914190` (PR #20) pada Vercel deployment
 `dpl_CqeoVBX1Q11ZKc4C4p2tVRkXkMLv` dan stable URL
-`https://saga-member-platform.vercel.app`. Sepuluh batch khusus Beranda
+`https://saga-member-platform.vercel.app` adalah release sebelumnya. Sepuluh batch khusus Beranda
 memperbaiki sapaan, hierarchy typography, wallet, shortcut, konteks harian,
 tier, activity, warna, tekstur, serta carousel empat cerita.
 
@@ -74,7 +97,7 @@ ilustrasi fungsional memakai Feather icon dan bentuk CSS. Canonical-main CI
 44 px touch target, offline shell, serta public remote UAT lulus. Runtime tetap
 `PUBLIC_DUMMY_DEMO`: backend, auth, provider, transaksi, data pelanggan, QRIS,
 NFC, printer, dan pilot nyata tidak aktif. Karena itu delivery adalah
-`SAGA_MEMBER_V6_DAILY_LOBBY_PRODUCTION_DEPLOYED`, sedangkan
+`SAGA_MEMBER_V6_DAILY_LOBBY_PRODUCTION_DEPLOYED` pada riwayat release, sedangkan
 `PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
 
 V5 Urban Coffee Club dari main
