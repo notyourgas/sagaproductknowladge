@@ -8,7 +8,7 @@ diubah menjadi klaim publik sebelum ditutup dengan bukti atau keputusan owner.
 
 ## Konteks
 
-Daftar ini berlaku pada evidence cut-off 3 September 2026 WIB dan harus diperbarui
+Daftar ini berlaku pada evidence cut-off 4 September 2026 WIB dan harus diperbarui
 ketika keputusan atau release baru menutup gap.
 
 ## Cara memakai
@@ -1258,15 +1258,18 @@ GAP-004, bukan gap implementasi warna komponen.
 - `CONFIRMED`: product `sagaops`, HMAC product-scoped, stable HTTPS callback,
   exact host allowlist, dated window, dan kill switch sudah tersedia pada
   SagaDev Platform production exact `1d7146c2`; transaksi kembali locked.
-- `NEEDS CONFIRMATION`: provider menambahkan Rp101 pada intent Rp130 sehingga
-  total Rp231 melewati cap tunggal Rp220. Tentukan apakah fee ditanggung
-  merchant, cap provider-total dinaikkan, atau konfigurasi channel diubah.
+- `CONFIRMED`: founder menaikkan cap provider-total menjadi Rp250. Satu private
+  canary amount produk Rp130/provider total Rp231 berhasil dibayar; provider net
+  Rp130 dan fee Rp101. Transaksi kembali locked setelah paid.
+- `TODO`: verifikasi clearing/settlement final. Candidate parser late-success
+  exact `c07f5f38` sudah dipush dan lulus 1.372/1.372 test, tetapi production
+  deploy masih blocked oleh fresh encrypted backup yang gagal dua kali.
 - `CONFIRMED`: W25/R001-R004 menghubungkan lima surface ke disk-backed local
   durable repository dengan PostgreSQL semantics, migration registry, atomic
   checkout/outbox, dan restart recovery. Evidence exact
   `8b63df321c3a0f7aeba9080eea5ac044470a6d8c` bersifat lokal dan belum
   membuktikan external PostgreSQL, multi-instance, atau staging recovery.
-- `TODO`: source terbaru exact `1f73f9b` sudah dipush ke branch
+- `TODO`: source terbaru exact `8cdffeb` sudah dipush ke branch
   `codex/saga-pos-vs01-kiosk-kds-dashboard`; merge/review tetap pending.
 - `TODO`: verifikasi dan terima external gate W26-W34. Seluruh contract dan
   preparation sudah dijalankan lokal, tetapi sembilan wave masih blocked oleh

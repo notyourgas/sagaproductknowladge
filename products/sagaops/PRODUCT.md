@@ -1,7 +1,7 @@
 # SagaOPS Product Knowledge
 
-Updated: 3 September 2026
-Evidence status: `CONFIRMED / SOURCE_PUSHED_BRANCH / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_ACTIVATED / PRIVATE_CANARY_LOCKED_AFTER_PROVIDER_AMOUNT_REJECTION / BUSINESS_READY=false`
+Updated: 4 September 2026
+Evidence status: `CONFIRMED / SOURCE_PUSHED_BRANCH / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_ACTIVATED / PRIVATE_CANARY_PAID_AND_LOCKED / SETTLEMENT_PENDING_CLEARING / BUSINESS_READY=false`
 
 ## Tujuan dokumen
 
@@ -60,21 +60,29 @@ kasir dan Back Office untuk owner/manager.
 ## Status saat ini
 
 Status: `SAGADEV_PLATFORM_PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
-SAGAOPS_TRANSACTIONS_LOCKED / FIRST_TRIAL99_INTENT_REJECTED_UNPAID /
-HARDWARE_AND_OUTLET_PILOT_PENDING / BUSINESS_READY=false`.
+SAGAOPS_TRANSACTIONS_LOCKED / TRIAL99_CANARY_PAID /
+SETTLEMENT_PENDING_CLEARING / HARDWARE_AND_OUTLET_PILOT_PENDING /
+BUSINESS_READY=false`.
 
 - SagaDev Platform exact `1d7146c2be514f8764e940ee96ba8ce55e310325`
   aktif pada release `20260903154948-1d7146c`. Backup terenkripsi, checksum,
   disposable restore database platform, migration contract, atomic switch,
   health, auth boundary, dan kill-switch/default-off gate lulus.
-- Saga POS branch `codex/saga-pos-vs01-kiosk-kds-dashboard` exact `1f73f9b`
+- Saga POS branch `codex/saga-pos-vs01-kiosk-kds-dashboard` exact `8cdffeb`
   menargetkan runtime platform, memakai credential DPAPI CurrentUser, signed
   HMAC, production host allowlist, server-side `TRIAL99`, dan lulus 116/116
   test, static/type check, serta dependency audit nol vulnerability.
-- Satu intent Americano dibuat pada Rp130. Provider mengembalikan total bayar
-  Rp231; gate menolak karena cap Rp220. Tidak ada QR, status PAID nol, dan
-  canary kembali dikunci. Kenaikan cap/provider-fee policy memerlukan keputusan
-  founder baru sebelum percobaan berikutnya.
+- Setelah intent pertama ditolak aman pada cap Rp220, founder menyetujui cap
+  provider-total Rp250. Intent kedua Americano memakai amount produk Rp130 dan
+  provider total Rp231, menghasilkan QR production dan dibayar nyata. Provider,
+  ledger pusat, local order, KDS, dan Owner Dashboard sudah konsisten `PAID`;
+  provider net Rp130, fee Rp101, settlement `pending_clearing`. Canary kembali
+  dikunci dengan kill switch setelah tepat satu pembayaran berhasil.
+- Candidate parser/reconciliation fix SagaDev Platform exact
+  `c07f5f38950f6b7ef7c83018043530492ff0a0ff` sudah dipush dan lulus
+  1.372/1.372 test, tetapi belum dideploy karena fresh encrypted backup gate
+  gagal dua kali. Runtime production tetap exact `1d7146c2`; satu ledger canary
+  direkonsiliasi atomik dari provider `Success` dengan audit metadata.
 
 - Saga POS source branch `codex/saga-pos-vs01-kiosk-kds-dashboard` exact
   `d9598dd94200c8cd3e2fc1bbdf8245acec1f69cc` menyelesaikan local program
@@ -100,11 +108,11 @@ HARDWARE_AND_OUTLET_PILOT_PENDING / BUSINESS_READY=false`.
   settlement facts, serta full-refund manual-finance yang tidak memalsukan
   status refunded. Owner kemudian mengizinkan route production-direct tanpa
   sandbox dengan promo private `TRIAL99`, maksimal lima transaksi, source push,
-  dan uang nyata. Guard lokal membatasi satu item, private device, Rp130-Rp220
+  dan uang nyata. Guard lokal membatasi satu item, private device, Rp130-Rp250
   per payment, total Rp1.100, window, host/callback/vault/settlement dan kill
   switch. Product, signed credential, stable callback, dan endpoint production
-  sudah tersedia. Percobaan pertama menghasilkan satu intent rejected dan nol
-  pembayaran; transaksi kini terkunci.
+  sudah tersedia. Percobaan kedua menghasilkan satu pembayaran nyata Rp231;
+  transaksi kini terkunci dan settlement masih menunggu clearing.
 - Lima surface dapat memakai disk-backed local durable runtime dan restart
   recovery sudah terbukti lokal. Evidence ini bukan bukti external PostgreSQL,
   multi-instance runtime, staging, atau production recovery.

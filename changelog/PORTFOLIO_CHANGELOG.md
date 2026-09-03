@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-09-04 - SagaOPS private canary paid and locked
+
+- Satu private `TRIAL99` Tokopay canary berhasil dibayar: amount produk Rp130,
+  provider total Rp231, provider net Rp130, fee Rp101.
+- Ledger pusat `PAID`, settlement `pending_clearing`; local KDS mempunyai satu
+  tiket `NEW` dan Owner Dashboard satu paid order.
+- Canary dikunci kembali dengan transaction disabled/kill switch engaged.
+  Candidate platform fix belum dideploy karena fresh backup gate gagal dua
+  kali; runtime production tetap `1d7146c2` dan `BUSINESS_READY=false`.
+
 ## 2026-09-03 - Saga Member V3 Contemporary Coffee Club deployed
 
 - Saga Member main `fd2d50c10ecbeafb5bf99525687da5a06f123013`

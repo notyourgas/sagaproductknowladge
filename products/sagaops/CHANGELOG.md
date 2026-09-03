@@ -8,6 +8,21 @@ Mencatat perubahan material SagaOPS.
 
 Prototype dan production outlet adalah evidence level yang berbeda.
 
+## 2026-09-04 — Private TRIAL99 canary dibayar dan dikunci
+
+- Founder menyetujui cap provider-total Rp250. Intent Americano kedua memakai
+  amount produk Rp130, provider total Rp231, dan berhasil dibayar pada Tokopay
+  production. Provider net Rp130, fee Rp101, settlement `pending_clearing`.
+- Ledger pusat direkonsiliasi atomik dari provider `Success` dengan exact amount
+  dan audit metadata. Local durable order berstatus `PAID`, KDS memiliki satu
+  tiket `NEW`, dan Owner Dashboard memiliki satu paid order.
+- Canary langsung dikunci: transaksi disabled dan kill switch engaged. Tidak
+  ada intent tambahan.
+- Saga POS exact `8cdffeb` sudah dipush. Candidate SagaDev Platform
+  `c07f5f38950f6b7ef7c83018043530492ff0a0ff` lulus 1.372/1.372 test tetapi
+  belum dideploy karena fresh encrypted backup gagal dua kali. Production tetap
+  exact `1d7146c2`; `BUSINESS_READY=false`.
+
 ## 2026-09-03 — SagaDev Platform aktif; canary pertama ditolak aman
 
 - SagaDev Platform exact `1d7146c2be514f8764e940ee96ba8ce55e310325`

@@ -12,10 +12,31 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-09-03 WIB |
+| Waktu pembaruan terakhir | 2026-09-04 WIB |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `7f54fb0` |
+| Baseline sebelum pembaruan | `696f184` |
+
+## SagaOPS paid canary dan lock
+
+- Satu private `TRIAL99` payment berhasil pada amount produk Rp130 dan provider
+  total Rp231; provider net Rp130, fee Rp101, settlement `pending_clearing`.
+- Ledger pusat, local durable order, satu tiket KDS, dan Owner Dashboard sudah
+  konsisten. Canary sekarang locked; tidak ada intent tambahan.
+- Saga POS exact `8cdffeb` dipush. Candidate platform `c07f5f38` belum dideploy
+  karena fresh encrypted backup gate gagal dua kali; production tetap
+  `1d7146c2` dan `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi SagaOPS paid canary
+
+- `products/sagaops/PRODUCT.md`
+- `products/sagaops/DOSSIER.md`
+- `products/sagaops/CHANGELOG.md`
+- `GAPS.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## Saga Member V3 Contemporary Coffee Club
 

@@ -6318,6 +6318,16 @@ pada Rp130, tetapi provider total Rp231 melewati cap Rp220; intent rejected,
 QR tidak terbit, paid=0, lalu canary dikunci. Provider-fee/cap policy,
 settlement acceptance, hardware, outlet UAT, dan `BUSINESS_READY` masih pending.
 
+Update canary 4 September 2026: founder menyetujui cap provider-total Rp250.
+Intent Americano kedua memakai amount produk Rp130 dan provider total Rp231,
+berhasil dibayar nyata; provider net Rp130, fee Rp101, settlement
+`pending_clearing`. Ledger pusat direkonsiliasi atomik dari provider `Success`;
+local durable order `PAID`, KDS satu tiket `NEW`, dan Owner Dashboard satu paid
+order. Canary kembali locked. Saga POS exact `8cdffeb` sudah dipush. Candidate
+platform late-success parser `c07f5f38` lulus 1.372/1.372 test tetapi belum
+dideploy karena fresh encrypted backup gate gagal dua kali; runtime production
+tetap `1d7146c2`.
+
 Readiness extension Saga POS membagi gap 80 ke 100 menjadi 10 wave/40 batch/
 160 micro-sprint. Empat batch W25/16 micro-sprint lulus lokal dan membuka +4;
 36 batch W26-W34 sudah memiliki contract/preparation tetapi external verify dan
@@ -6326,7 +6336,8 @@ Customer Platform, hardware, installed runtime, staging, staff, pilot,
 activation, dan owner business acceptance benar-benar diterima.
 
 Status: `SOURCE_PUSHED / LOCAL_VALIDATED / SAGADEV_PLATFORM_PRODUCTION_ACTIVATED /
-SAGAOPS_TRANSACTIONS_LOCKED / FIRST_CANARY_UNPAID / BUSINESS_READY=false`. Founder telah menerima
+SAGAOPS_TRANSACTIONS_LOCKED / PRIVATE_CANARY_PAID /
+SETTLEMENT_PENDING_CLEARING / BUSINESS_READY=false`. Founder telah menerima
 batas Goal 1 local internal alpha; acceptance ini bukan staging atau production
 authorization.
 

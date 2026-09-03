@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-04 - SagaOPS paid-canary and lock sync
+
+- Informasi `CONFIRMED`: private `TRIAL99` canary berhasil dibayar pada provider
+  total Rp231 di bawah cap Rp250; provider net Rp130, fee Rp101, dan settlement
+  masih `pending_clearing`.
+- Provider, ledger pusat, local durable order, KDS, dan Owner Dashboard sudah
+  konsisten. Canary kembali terkunci dan tidak ada intent tambahan.
+- Saga POS exact `8cdffeb` sudah dipush. Candidate platform `c07f5f38` lulus
+  1.372/1.372 test tetapi belum dideploy karena fresh encrypted backup gate
+  gagal dua kali; production tetap `1d7146c2` dan `BUSINESS_READY=false`.
+
 ## 2026-09-03 - Saga Member V3 Contemporary Coffee Club sync
 
 - Informasi `CONFIRMED`: Saga Member main
