@@ -8,6 +8,21 @@ Mencatat perubahan material SagaOPS.
 
 Prototype dan production outlet adalah evidence level yang berbeda.
 
+## 2026-09-03 — Production-direct TRIAL99 canary diotorisasi dan dijaga lokal
+
+- Andreas mengizinkan route SagaDev production-direct tanpa sandbox, promo
+  private `TRIAL99`, maksimal lima transaksi awal, source push, dan uang nyata.
+- Exact source `d9598dd94200c8cd3e2fc1bbdf8245acec1f69cc` dipush ke branch
+  `codex/saga-pos-vs01-kiosk-kds-dashboard` dan lulus 112/112 test.
+- Harga katalog tidak berubah. Guard menolak public/non-allowlisted device,
+  stacking, lebih dari satu item, transaksi keenam, nominal di atas Rp220,
+  exposure di atas Rp1.100, host/callback/vault yang belum ready, dan kill
+  switch engaged.
+- Product `sagaops`, production URL/callback, vault refs, host allowlist,
+  settlement, serta dated window belum tersedia. Preflight blocked; tidak ada
+  transaksi nyata, deploy, atau activation. Readiness tetap 84/100 dan
+  `BUSINESS_READY=false`.
+
 ## 2026-09-03 — Seluruh readiness wave dijalankan sampai evidence boundary
 
 - Andreas meminta seluruh W25-W34 dijalankan.

@@ -6244,10 +6244,10 @@ PostgreSQL/RLS, recovery, Member/POS integration boundary, serta automated
 browser acceptance. Bukti tersebut adalah local internal alpha, bukan provider,
 staging, atau outlet production.
 
-Saga POS local branch exact `8b63df321c3a0f7aeba9080eea5ac044470a6d8c`
+Saga POS pushed branch exact `d9598dd94200c8cd3e2fc1bbdf8245acec1f69cc`
 menambah lima surface untuk Kopi Saga Salak: Kiosk, assisted Cashier, KDS,
 Owner Dashboard, dan Admin. Program 24 wave/120 batch/480 micro-sprint mencapai
-M4 84/100 dengan 108/108 test dan enam migration local PostgreSQL/RLS evidence.
+M4 84/100 dengan 112/112 test dan enam migration local PostgreSQL/RLS evidence.
 Founder mengunci SagaDev Gateway untuk QRIS dengan product binding `sagaops`;
 PJP/acquirer berada di belakang SagaDev dan tidak dikonfigurasi POS. Local
 contract memvalidasi signed request/event, idempotency, recovery, settlement,
@@ -6257,7 +6257,15 @@ fulfillment, replay guard, migration registry, dan restart recovery. Evidence
 ini bukan external PostgreSQL atau staging. QRIS/Member/Reward masih
 simulator/fixture, printer/NFC,
 installed runtime, staging, staff, pilot dan production tetap NOT_RUN. Source
-commit belum dipush/merge.
+commit sudah dipush tetapi belum merge.
+
+Owner mengizinkan SagaDev production-direct controlled canary tanpa sandbox,
+promo private `TRIAL99`, maksimal lima transaksi, source push, dan uang nyata.
+Harga dasar tetap; guard lokal menolak public/non-allowlisted device, stacking,
+multi-item, transaksi keenam, nominal di atas Rp220, exposure di atas Rp1.100,
+serta host/callback/vault/settlement/kill-switch yang belum ready. Product belum
+terdaftar, vault masih locked, stable callback belum tersedia, preflight blocked,
+dan tidak ada request uang nyata atau deployment yang dijalankan.
 
 Readiness extension Saga POS membagi gap 80 ke 100 menjadi 10 wave/40 batch/
 160 micro-sprint. Empat batch W25/16 micro-sprint lulus lokal dan membuka +4;

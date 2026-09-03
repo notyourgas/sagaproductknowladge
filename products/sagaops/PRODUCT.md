@@ -1,7 +1,7 @@
 # SagaOPS Product Knowledge
 
 Updated: 3 September 2026
-Evidence status: `CONFIRMED / SOURCE_COMMITTED_LOCAL_BRANCH / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_GATEWAY_CONTRACT_LOCKED / EXTERNAL_RUNTIME_NO_GO / STAGING_NOT_PROVISIONED / IMPLEMENTED_NOT_DEPLOYED`
+Evidence status: `CONFIRMED / SOURCE_PUSHED_BRANCH / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PRODUCTION_DIRECT_CANARY_OWNER_AUTHORIZED_INPUTS_BLOCKED / STAGING_NOT_PROVISIONED / IMPLEMENTED_NOT_DEPLOYED`
 
 ## Tujuan dokumen
 
@@ -65,13 +65,13 @@ IMPLEMENTED_NOT_DEPLOYED / PILOT_NOT_STARTED / PRODUCTION_UNCHANGED /
 BUSINESS_READY=false`.
 
 - Saga POS source branch `codex/saga-pos-vs01-kiosk-kds-dashboard` exact
-  `8b63df321c3a0f7aeba9080eea5ac044470a6d8c` menyelesaikan local program
+  `d9598dd94200c8cd3e2fc1bbdf8245acec1f69cc` menyelesaikan local program
   24 wave/120 batch/480 micro-sprint. Disposition: 62 batch `PASS_LOCAL`, 28
   `LOCAL_SIMULATED`, 30 `BLOCKED_EXTERNAL`; readiness M4 84/100.
-- 108/108 test, browser E2E lima surface, automated accessibility, dependency
+- 112/112 test, browser E2E lima surface, automated accessibility, dependency
   audit 0 vulnerability, 6 screenshot evidence, dan enam migration local
   PostgreSQL/RLS/cross-outlet deny
-  lulus. Source commit belum dipush/merge saat knowledge ini ditulis.
+  lulus. Exact source sudah dipush ke branch tersebut tetapi belum merge.
 - Readiness extension menambah 10 wave/40 batch/160 micro-sprint dari durable
   runtime sampai owner business-ready decision. Empat batch W25/16 micro-sprint
   lulus lokal dan membuka +4. Contract/preparation 36 batch lain telah
@@ -86,7 +86,12 @@ BUSINESS_READY=false`.
 - Local contract mencakup readiness, product-scoped signed request, idempotent
   create, signed event/status recovery, amount/order/currency/replay guard,
   settlement facts, serta full-refund manual-finance yang tidak memalsukan
-  status refunded. SagaDev sandbox dan transaksi nyata belum dijalankan.
+  status refunded. Owner kemudian mengizinkan route production-direct tanpa
+  sandbox dengan promo private `TRIAL99`, maksimal lima transaksi, source push,
+  dan uang nyata. Guard lokal membatasi satu item, private device, Rp130-Rp220
+  per payment, total Rp1.100, window, host/callback/vault/settlement dan kill
+  switch. Product belum terdaftar, vault/callback belum tersedia, dan tidak ada
+  transaksi nyata yang dijalankan.
 - Lima surface dapat memakai disk-backed local durable runtime dan restart
   recovery sudah terbukti lokal. Evidence ini bukan bukti external PostgreSQL,
   multi-instance runtime, staging, atau production recovery.

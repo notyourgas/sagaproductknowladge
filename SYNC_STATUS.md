@@ -15,17 +15,17 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-09-03 WIB |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `697ea49956c226af952cd88e458d5e7e3a8e3fb1` |
+| Baseline sebelum pembaruan | `8e627a45a9e5ff1e4a301f5f45b5c5d32a06b4bb` |
 
-## Saga POS all-waves local execution
+## Saga POS production-direct controlled canary
 
-- Source exact `8b63df321c3a0f7aeba9080eea5ac044470a6d8c` menutup empat batch
-  W25/16 micro-sprint durable runtime lokal dan lulus 108/108 test serta enam
-  migration.
-- Contract/preparation W26-W34 dijalankan dengan preflight fail-closed; sembilan
-  external wave masih blocked dan tidak membuka poin.
-- Source belum dipush/merge. Readiness 84/100; production tidak berubah dan
-  `BUSINESS_READY=false`.
+- Source exact `d9598dd94200c8cd3e2fc1bbdf8245acec1f69cc` sudah dipush dan
+  lulus 112/112 test serta enam migration.
+- W26 berubah menjadi owner-authorized production-direct canary: private
+  `TRIAL99`, maksimal lima transaksi, Rp130-Rp220 per payment, total Rp1.100.
+- Product/vault/stable callback/allowlist/settlement/window/kill-switch belum
+  lengkap. Preflight blocked; tidak ada live transaction, deploy, atau
+  activation. Readiness 84/100 dan `BUSINESS_READY=false`.
 
 ## File yang berubah pada sinkronisasi Saga POS
 

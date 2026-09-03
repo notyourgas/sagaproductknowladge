@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-03 - Saga POS production-direct TRIAL99 canary sync
+
+- Informasi `CONFIRMED`: Andreas mengizinkan SagaDev production-direct route,
+  private `TRIAL99`, maksimal lima transaksi, source push, dan uang nyata.
+- Exact source `d9598dd94200c8cd3e2fc1bbdf8245acec1f69cc` sudah dipush; 112/112
+  test, enam migration, dan dependency audit nol lulus.
+- Guard local membatasi device/private scope, satu item, Rp130-Rp220, lima
+  intent, total Rp1.100, non-stacking, host/callback/vault/settlement, dan kill
+  switch. Harga katalog tetap.
+- External preflight masih blocked; product belum terdaftar, vault/callback
+  belum tersedia, dan tidak ada live transaction, deploy, atau activation.
+  Readiness 84/100 dan `BUSINESS_READY=false`.
+
 ## 2026-09-03 - Saga POS all-wave local execution sync
 
 - Informasi `CONFIRMED`: Andreas meminta seluruh W25-W34 dijalankan sampai

@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-146 - Saga POS memakai production-direct controlled TRIAL99 canary
+
+| Field | Nilai |
+|---|---|
+| Tanggal | 2026-09-03 |
+| Topik | SagaDev Gateway live canary tanpa sandbox |
+| Keputusan | Mengizinkan route SagaDev production-direct, promo private `TRIAL99`, maksimal lima transaksi awal, source push, dan penggunaan uang nyata. Harga katalog tidak diubah dan transaksi hanya boleh berjalan setelah production preflight lengkap. |
+| Alasan | Owner memilih validasi langsung terhadap gateway nyata dengan monetary exposure sangat kecil, tetapi tetap membutuhkan fail-closed payment, callback, settlement, dan kill-switch control. |
+| Alternatif | Menunggu sandbox; membuka promo 99% secara publik; langsung mengirim transaksi sebelum product/vault/callback siap. |
+| Dampak | Exact source `d9598dd94200c8cd3e2fc1bbdf8245acec1f69cc` dipush dan lulus 112/112. Guard membatasi private allowlisted device, satu item, Rp130-Rp220 per payment, lima intent, total Rp1.100, non-stacking, window, host/callback/vault/settlement, dan kill switch. Preflight tetap blocked karena external inputs belum tersedia; tidak ada live transaction atau deployment. |
+| Pemberi keputusan | Andreas |
+| Status | `CONFIRMED / SOURCE_PUSHED / LOCAL_GUARDS_VALIDATED / PRODUCTION_CANARY_INPUTS_BLOCKED / LIVE_TRANSACTION_NOT_ATTEMPTED / PRODUCTION_UNCHANGED / BUSINESS_READY=false` |
+| Dokumen terkait | `products/sagaops/PRODUCT.md`, `products/sagaops/DOSSIER.md`, `products/sagaops/CHANGELOG.md`, `GAPS.md` |
+
 ## DEC-145 - Seluruh readiness wave Saga POS dieksekusi sampai evidence boundary
 
 | Field | Nilai |

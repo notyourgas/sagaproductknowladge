@@ -8,7 +8,7 @@ sales, dan konten SagaOPS.
 ## Konteks dan status bukti
 
 - Updated: 3 September 2026
-- Delivery: `SOURCE_COMMITTED_LOCAL_BRANCH / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / EXTERNAL_RUNTIME_NO_GO / STAGING_NOT_PROVISIONED / IMPLEMENTED_NOT_DEPLOYED`
+- Delivery: `SOURCE_PUSHED_BRANCH / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PRODUCTION_DIRECT_CANARY_OWNER_AUTHORIZED_INPUTS_BLOCKED / STAGING_NOT_PROVISIONED / IMPLEMENTED_NOT_DEPLOYED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED`
 
@@ -66,7 +66,9 @@ manager override. Provider/hardware real belum termasuk evidence.
 
 1. Provision external PostgreSQL/queue/cache dan buktikan kapasitas, isolation,
    backup/restore, serta disaster recovery.
-2. Configure Resend dan Sagadev Gateway sandbox dengan callback/replay evidence.
+2. Register SagaDev Gateway production product `sagaops`, provision scoped
+   vault refs, lalu jalankan production-direct controlled canary dengan stable
+   callback/replay, kill switch, settlement, dan monetary-cap evidence.
 3. Signed SBOM, SAST/DAST dan independent release review.
 4. Manual assistive-technology serta external operator/pilot validation.
 5. Staging approval, controlled outlet pilot, lalu activation review terpisah.
@@ -173,7 +175,7 @@ Saga POS program khusus Kopi Saga Salak telah menjalankan 24 wave, 120 batch,
 dan 480 micro-sprint pada boundary lokal. Disposition batch adalah 62
 `PASS_LOCAL`, 28 `LOCAL_SIMULATED`, dan 30 `BLOCKED_EXTERNAL`; 334 micro-sprint
 memiliki local pass evidence dan 118 tetap external pending/NOT_RUN. Source
-exact `8b63df321c3a0f7aeba9080eea5ac044470a6d8c` lulus 108/108 test, browser
+exact `d9598dd94200c8cd3e2fc1bbdf8245acec1f69cc` lulus 112/112 test, browser
 E2E/accessibility, dependency audit, screenshot evidence, serta local
 PostgreSQL enam migration/RLS/cross-outlet deny.
 
@@ -198,8 +200,12 @@ Readiness extension yang diminta Andreas membagi gap 80 ke 100 menjadi 10 wave,
 40 batch, dan 160 micro-sprint. W25 durable runtime berbobot +4 dan mempunyai
 empat batch `PASS_LOCAL`, sehingga readiness menjadi 84/100. Migration registry,
 atomic checkout/outbox, collision/replay guard, disk restart, Kiosk/KDS/
-Dashboard recovery, dan manual-finance refund telah lulus lokal. W26-W34 mencakup SagaDev sandbox, Customer
-Platform, hardware/network, signed runtime, staging/security/recovery, staff
+Dashboard recovery, dan manual-finance refund telah lulus lokal. W26 kini
+memakai owner-authorized SagaDev production-direct controlled canary dengan
+promo private `TRIAL99`, maksimal lima transaksi, per-payment Rp130-Rp220 dan
+total cap Rp1.100. Guard lokal lulus, tetapi product registration, stable
+callback, vault refs, host allowlist, kill switch, settlement, dan live request
+belum tersedia. W27-W34 mencakup Customer Platform, hardware/network, signed runtime, staging/security/recovery, staff
 UAT, controlled pilot, guarded production activation, dan explicit owner
 business-ready decision. Contract/preparation lokal untuk 36 batch telah
 dijalankan, tetapi external verify/accept tetap blocked/not run. Deployment,

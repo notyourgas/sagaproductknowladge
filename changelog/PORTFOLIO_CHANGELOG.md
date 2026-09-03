@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-09-03 - Saga POS production-direct TRIAL99 guard tervalidasi
+
+- Owner mengizinkan production-direct SagaDev canary tanpa sandbox, private
+  `TRIAL99`, maksimal lima transaksi, source push, dan uang nyata.
+- Exact source `d9598dd94200c8cd3e2fc1bbdf8245acec1f69cc` sudah dipush dan
+  lulus 112/112 test; katalog tetap, exposure dibatasi Rp1.100.
+- Product/vault/callback/allowlist/settlement/window/kill-switch inputs belum
+  lengkap. Preflight blocked; live request, deploy, activation, dan business
+  readiness tidak berubah. Readiness tetap 84/100.
+
 ## 2026-09-03 - Saga POS all-wave local execution tervalidasi
 
 - Exact source `8b63df321c3a0f7aeba9080eea5ac044470a6d8c` menutup W25 dengan

@@ -1255,19 +1255,21 @@ GAP-004, bukan gap implementasi warna komponen.
   hari/libur nyata, dan recipe/HPP matrix modifier sebelum outlet pilot.
 - `NEEDS CONFIRMATION`: procurement/mounting final kiosk/KDS, Epson TM-T82X,
   ACS ACR1552U, network/UPS, named staff/reviewer, dan kalender pilot.
-- `TODO`: register product `sagaops` pada SagaDev sandbox, provision HMAC dua
-  arah melalui vault, lalu uji dynamic checkout, signed event/status,
-  settlement gross/fee/net, manual refund dan kill switch.
+- `TODO`: register product `sagaops` pada SagaDev production, provision HMAC
+  dua arah melalui vault, stable HTTPS callback, host allowlist, settlement
+  reference, dated window, dan kill switch. Vault client saat audit berstatus
+  locked; tidak ada secret yang dibaca.
 - `CONFIRMED`: W25/R001-R004 menghubungkan lima surface ke disk-backed local
   durable repository dengan PostgreSQL semantics, migration registry, atomic
   checkout/outbox, dan restart recovery. Evidence exact
   `8b63df321c3a0f7aeba9080eea5ac044470a6d8c` bersifat lokal dan belum
   membuktikan external PostgreSQL, multi-instance, atau staging recovery.
 - `TODO`: push/merge source exact
-  `8b63df321c3a0f7aeba9080eea5ac044470a6d8c` setelah source review/CI.
+  `d9598dd94200c8cd3e2fc1bbdf8245acec1f69cc` sudah dipush ke branch
+  `codex/saga-pos-vs01-kiosk-kds-dashboard`; merge/review tetap pending.
 - `TODO`: verifikasi dan terima external gate W26-W34. Seluruh contract dan
   preparation sudah dijalankan lokal, tetapi sembilan wave masih blocked oleh
-  sandbox, hardware, staging, staff, pilot, release, dan business acceptance;
+  live provider, hardware, staging, staff, pilot, release, dan business acceptance;
   current readiness 84/100.
 - `NEEDS CONFIRMATION`: backend production, external tenant isolation,
   offline conflict handling, installed runtime, staging, dan outlet pilot.
