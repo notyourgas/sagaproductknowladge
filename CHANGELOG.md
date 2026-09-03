@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-04 - SagaOPS Admin Control Room V2 sync
+
+- Informasi `CONFIRMED`: source exact `960a5e6` dipush dengan availability
+  search/filter, preview dampak, alasan wajib, explicit confirm/cancel, accessible
+  feedback, dan server-version convergence.
+- 132/132 test, Axe, dua viewport, static/type check, dependency audit, dan
+  secret scan lulus tanpa dependency baru.
+- Production/canary tidak berubah; readiness 84/100 dan
+  `BUSINESS_READY=false`.
+- Dokumen terdampak: SagaOPS product/dossier/changelog, gaps, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-09-04 - SagaOPS Owner Dashboard V2 sync
 
 - Informasi `CONFIRMED`: source exact `287b26d` dipush dengan decision hierarchy,

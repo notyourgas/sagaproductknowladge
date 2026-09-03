@@ -1269,7 +1269,8 @@ GAP-004, bukan gap implementasi warna komponen.
   checkout/outbox, dan restart recovery. Evidence exact
   `8b63df321c3a0f7aeba9080eea5ac044470a6d8c` bersifat lokal dan belum
   membuktikan external PostgreSQL, multi-instance, atau staging recovery.
-- `TODO`: source terbaru exact `287b26d` (Owner Dashboard V2; Cashier V2
+- `TODO`: source terbaru exact `960a5e6` (Admin Control Room V2; Owner Dashboard
+  V2 `287b26d`; Cashier V2
   feature `2cfaf9e`,
   implementation portrait `9a43a89`) sudah
   dipush ke branch
@@ -1286,6 +1287,9 @@ GAP-004, bukan gap implementasi warna komponen.
 - `NEEDS CONFIRMATION`: kalibrasi alert Owner Dashboard terhadap prep-time,
   pickup, dan settlement SOP outlet; decision board saat ini memakai fakta
   lokal/simulator dan belum menjadi bukti production clearing.
+- `NEEDS CONFIRMATION`: acceptance availability Admin pada multi-terminal,
+  deployed cache invalidation, reset otomatis per business day, dan review audit
+  log. V2 saat ini aman per-menu dan local validated, tetapi bukan bukti outlet.
 - `TODO`: verifikasi dan terima external gate W26-W34. Seluruh contract dan
   preparation sudah dijalankan lokal, tetapi sembilan wave masih blocked oleh
   live provider, hardware, staging, staff, pilot, release, dan business acceptance;

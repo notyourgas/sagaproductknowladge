@@ -8,7 +8,7 @@ sales, dan konten SagaOPS.
 ## Konteks dan status bukti
 
 - Updated: 4 September 2026
-- Delivery: `SOURCE_PUSHED_BRANCH / PORTRAIT_KIOSK_LOCAL_VALIDATED / KDS_V2_LOCAL_VALIDATED / CASHIER_V2_LOCAL_VALIDATED / OWNER_DASHBOARD_V2_LOCAL_VALIDATED / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_DEPLOYED / TRIAL99_CANARY_PAID`
+- Delivery: `SOURCE_PUSHED_BRANCH / PORTRAIT_KIOSK_LOCAL_VALIDATED / KDS_V2_LOCAL_VALIDATED / CASHIER_V2_LOCAL_VALIDATED / OWNER_DASHBOARD_V2_LOCAL_VALIDATED / ADMIN_CONTROL_ROOM_V2_LOCAL_VALIDATED / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_DEPLOYED / TRIAL99_CANARY_PAID`
 - Activation: `SAGADEV_PLATFORM_ACTIVATED / TRANSACTIONS_LOCKED`
 - Business readiness: `BLOCKED`
 
@@ -226,6 +226,19 @@ integrasi public-safe berada dalam satu scan. Tabel order memakai caption dan
 scope header. Full suite 131/131, Axe nol serious/critical, dua viewport, dan
 dependency audit lulus. Threshold antrean masih perlu kalibrasi outlet dan
 status tetap `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+
+Admin Control Room V2 exact `960a5e6` mengubah availability grid satu klik
+menjadi command desk dengan server time/version, available/sold-out metrics,
+search, status/category filter, badge, preview dampak Kiosk/Cashier lokal,
+alasan terstruktur wajib, dan explicit confirm/cancel. Status dinamis diumumkan
+melalui atomic status region, cancel mengembalikan fokus, dan kode integrasi
+mentah diganti label operasional public-safe. Mutasi tetap per-menu, CSRF dan
+owner role tetap berlaku, serta versioned catalog menjadi source of truth lokal.
+Full suite 132/132, Axe nol serious/critical, browser 1440×900 dan 1024×768,
+audit dependency nol vulnerability, dan secret scan lulus tanpa dependency
+baru. Multi-terminal deployed cache, reset otomatis, audit-log review, dan
+operator UAT nyata masih pending; status `LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`.
 
 Readiness program mencapai M4 84/100 setelah W25 durable runtime lulus lokal.
 Founder menyetujui harga customer-final,

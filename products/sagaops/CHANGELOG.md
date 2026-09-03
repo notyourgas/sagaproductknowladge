@@ -8,6 +8,19 @@ Mencatat perubahan material SagaOPS.
 
 Prototype dan production outlet adalah evidence level yang berbeda.
 
+## 2026-09-04 — Admin Control Room V2 mengamankan availability menu
+
+- Source exact `960a5e6` sudah dipush ke branch Saga POS.
+- Availability desk menambah server time/version, metric, search, status/category
+  filter, badge, preview dampak, alasan wajib, explicit confirm/cancel, dan
+  feedback catalog version.
+- Mutasi tetap owner-only, CSRF-protected, per-menu, dan server-owned; perubahan
+  diverifikasi konvergen ke katalog Kiosk lokal.
+- Full suite 132/132, browser 1440×900 dan 1024×768, Axe nol serious/critical,
+  static/type check, dependency audit nol vulnerability, dan secret scan lulus.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production, canary,
+  settlement, readiness 84/100, dan `BUSINESS_READY=false` tidak berubah.
+
 ## 2026-09-04 — Owner Dashboard V2 memprioritaskan keputusan outlet
 
 - Source exact `287b26d` sudah dipush ke branch Saga POS.

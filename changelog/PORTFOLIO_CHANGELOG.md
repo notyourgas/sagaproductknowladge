@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-09-04 - SagaOPS Admin Control Room V2 local validated
+
+- Saga POS exact `960a5e6` menambah availability command desk dengan search,
+  status/category filter, explicit impact, mandatory reason, confirm/cancel,
+  catalog version feedback, dan label integrasi public-safe.
+- Owner/CSRF/server-owned boundary tetap berlaku; full suite 132/132, browser
+  dua viewport, Axe, static/type check, dependency audit, dan secret scan lulus.
+- Production/canary tidak berubah; readiness tetap 84/100 dan
+  `BUSINESS_READY=false`.
+
 ## 2026-09-04 - SagaOPS Owner Dashboard V2 local validated
 
 - Saga POS exact `287b26d` menambah hierarchy Sekarang/Hari ini/Verifikasi,

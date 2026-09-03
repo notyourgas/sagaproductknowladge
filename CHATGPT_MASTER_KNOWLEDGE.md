@@ -1,5 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+Saga POS current branch head `960a5e6` sudah dipush dengan Admin Control Room
+V2. Owner kini dapat mencari/filter 18 menu, membaca status sold-out, melihat
+dampak Kiosk/Cashier lokal, memilih alasan wajib, dan mengonfirmasi atau batal
+dengan focus recovery. Mutasi tetap per-menu, CSRF-protected, owner-only, dan
+server-versioned; hasil dikonfirmasi lewat accessible status region. 132/132
+test, Axe nol serious/critical, dua viewport, static/type check, dependency
+audit nol vulnerability, dan secret scan lulus tanpa dependency baru. Status
+`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production, canary, settlement,
+readiness 84/100, dan `BUSINESS_READY=false` tidak berubah.
+
 Saga POS current branch head `287b26d` sudah dipush dengan Owner Dashboard V2.
 Dashboard read-only kini memakai hierarchy `Sekarang / Hari ini / Verifikasi`,
 freshness server, attention engine untuk umur antrean/unchecked settlement/ready
