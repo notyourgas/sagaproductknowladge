@@ -66,6 +66,26 @@ Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
 - Pemisahan bounded context dan adapter dilakukan bertahap.
 - Bukan rewrite total.
 
+### Saga Member V7 Home Editorial Final
+
+- Saga Member canonical main `83b969d7c77a2ce8015fb087074d3d59e7acea39`
+  (PR #21) aktif pada Vercel production deployment
+  `dpl_7ZMPhGXxmfFG4SyUkXFZe2zWjGym` melalui stable public URL
+  `https://saga-member-platform.vercel.app`.
+- V7 mematangkan Beranda sebagai lobby harian mobile 320–430 px: sapaan dan
+  wallet lebih ringkas, shortcut dua kolom, agenda Studio prioritas, status
+  Points pendamping, tier journey editorial, serta activity timeline.
+- Coffee dan Studio memakai placeholder foto sintetis terkurasi dengan WebP
+  480/960. Carousel memiliki autoplay empat detik, progress waktu, pause,
+  manual navigation, swipe, image loading/fallback, viewport/tab pause, dan
+  reduced-motion. Teks, status, angka, CTA, serta Feather icon tetap code-native.
+- 97/97 test, canonical-main CI `33790573528`, browser UAT lokal dan publik
+  lima viewport, nol broken image/console error/overflow, serta route dan
+  carousel interaction lulus.
+- Status `CONFIRMED / SAGA_MEMBER_V7_HOME_FINAL_PRODUCTION_DEPLOYED /
+  PUBLIC_DUMMY_DEMO_ACTIVE / REAL_BACKEND_OFF / REAL_PROVIDER_OFF /
+  REAL_DATA_OFF / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 ### Saga Member V6 Daily Lobby
 
 - Saga Member canonical main `85a6f8bc4151e414bb0ca7235922162d0d914190`

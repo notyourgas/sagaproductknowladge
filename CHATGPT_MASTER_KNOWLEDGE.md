@@ -1,5 +1,22 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+Saga Member V7 Home Editorial Final aktif pada stable public dummy URL
+`https://saga-member-platform.vercel.app` dari canonical main
+`83b969d7c77a2ce8015fb087074d3d59e7acea39` (PR #21) dan production
+deployment `dpl_7ZMPhGXxmfFG4SyUkXFZe2zWjGym`. V7 memadatkan sapaan dan
+wallet, memakai shortcut dua kolom, memprioritaskan agenda Studio, memisahkan
+status Points, serta membentuk tier journey dan activity timeline. Carousel
+empat cerita memiliki autoplay empat detik, progress, pause/manual/swipe,
+viewport/tab pause, reduced-motion, dan image loading/fallback. Coffee dan
+Studio memakai placeholder foto sintetis WebP, bukan foto outlet nyata.
+97/97 test, canonical CI `33790573528`, Preview artifact checks, local UAT,
+dan public UAT 320–430 px lulus tanpa overflow, broken image, atau console
+error. Status `SAGA_MEMBER_V7_HOME_FINAL_PRODUCTION_DEPLOYED /
+PUBLIC_DUMMY_DEMO_ACTIVE / REAL_BACKEND_OFF / REAL_PROVIDER_OFF /
+REAL_DATA_OFF / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`; jangan
+menyebut demo ini sebagai akun, transaksi, provider, pilot outlet, atau
+backend production.
+
 Saga Member V6 Daily Lobby aktif pada stable public dummy URL
 `https://saga-member-platform.vercel.app` dari canonical main
 `85a6f8bc4151e414bb0ca7235922162d0d914190` (PR #20) dan deployment

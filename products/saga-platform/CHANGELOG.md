@@ -8,6 +8,20 @@ Mencatat perubahan material control plane Saga.
 
 Fondasi production dan roadmap pemisahan boundary harus dibedakan.
 
+## 2026-09-04 — Saga Member V7 Home Editorial Final deployed
+
+- Main `83b969d7c77a2ce8015fb087074d3d59e7acea39` (PR #21) aktif pada
+  deployment `dpl_7ZMPhGXxmfFG4SyUkXFZe2zWjGym` dan stable public URL.
+- Beranda mendapat compact first fold, shortcut dua kolom, daily agenda yang
+  diprioritaskan, tier journey, activity timeline, carousel progress, serta
+  image loading/fallback untuk placeholder foto Coffee dan Studio.
+- 97/97 test, canonical CI `33790573528`, Preview artifact checks, local UAT,
+  dan public UAT lima viewport lulus tanpa overflow, broken image, atau console
+  error.
+- Klasifikasi `CONFIRMED / SAGA_MEMBER_V7_HOME_FINAL_PRODUCTION_DEPLOYED /
+  PUBLIC_DUMMY_DEMO_ACTIVE / REAL_BACKEND_OFF / REAL_PROVIDER_OFF /
+  REAL_DATA_OFF / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 ## 2026-09-04 — Saga Member V6 Daily Lobby deployed
 
 - Main `85a6f8bc4151e414bb0ca7235922162d0d914190` (PR #20) aktif pada

@@ -2148,3 +2148,17 @@ keputusan pengganti.
 | Pemberi keputusan | Andreas / founder |
 | Status | `CONFIRMED / IMPLEMENTED / SAGA_MEMBER_V6_DAILY_LOBBY_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`; source `85a6f8bc4151e414bb0ca7235922162d0d914190`, PR #20, deployment `dpl_CqeoVBX1Q11ZKc4C4p2tVRkXkMLv` |
 | Dokumen terkait | [Saga Platform Product](products/saga-platform/PRODUCT.md), [Saga Platform Dossier](products/saga-platform/DOSSIER.md), [Saga Platform Changelog](products/saga-platform/CHANGELOG.md) |
+
+## DEC-153 - Beranda Saga Member memakai V7 Home Editorial Final pada public dummy
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-09-04 |
+| Topik | Finalisasi pengalaman Beranda Saga Member public dummy |
+| Keputusan | Lengkapi seluruh perbaikan Beranda menjadi V7 Home Editorial Final, validasi melalui Preview dan CI, lalu promosikan ke satu stable public Vercel URL. Runtime tetap data dummy tanpa backend, provider, transaksi, atau data nyata. |
+| Alasan | Founder meminta seluruh rekomendasi Beranda dikerjakan: compact first fold, shortcut yang lebih kaya, prioritas daily context, storytelling tier/activity, motion, loading, dan fallback agar experience meningkat signifikan. |
+| Alternatif yang dipertimbangkan | Mempertahankan V6; memperbanyak foto; mengubah route lain bersamaan; mengaktifkan backend/provider saat redesign. |
+| Dampak | Beranda memakai shortcut dua kolom, agenda Studio prioritas, Points context, tier journey, activity timeline, progress carousel, serta placeholder foto sintetis Coffee/Studio dengan fallback. Mobile boundary 320–430 px, Plus Jakarta Sans, Feather icon, motion transform/opacity, public dummy runtime, dan business boundary tetap. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / IMPLEMENTED / SAGA_MEMBER_V7_HOME_FINAL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`; source `83b969d7c77a2ce8015fb087074d3d59e7acea39`, PR #21, deployment `dpl_7ZMPhGXxmfFG4SyUkXFZe2zWjGym` |
+| Dokumen terkait | [Saga Platform Product](products/saga-platform/PRODUCT.md), [Saga Platform Dossier](products/saga-platform/DOSSIER.md), [Saga Platform Changelog](products/saga-platform/CHANGELOG.md) |

@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-09-04 - Saga Member V7 Home Editorial Final deployed
+
+- Saga Member main `83b969d7c77a2ce8015fb087074d3d59e7acea39`
+  (PR #21) aktif pada `https://saga-member-platform.vercel.app` melalui
+  deployment `dpl_7ZMPhGXxmfFG4SyUkXFZe2zWjGym`.
+- Beranda sekarang memiliki first fold lebih ringkas, shortcut dua kolom,
+  agenda Studio prioritas, Points context, tier journey, activity timeline,
+  carousel progress, serta foto Coffee/Studio sintetis dengan fallback.
+- 97/97 test, canonical CI, Preview artifact checks, dan public UAT lima
+  viewport lulus. Runtime tetap public dummy tanpa backend, provider,
+  transaksi, atau data nyata; `PRODUCTION_ACTIVATED=false` dan
+  `BUSINESS_READY=false`.
+
 ## 2026-09-04 - Saga Member V6 Daily Lobby deployed
 
 - Saga Member main `85a6f8bc4151e414bb0ca7235922162d0d914190`
