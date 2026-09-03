@@ -8,6 +8,20 @@ Mencatat perubahan material control plane Saga.
 
 Fondasi production dan roadmap pemisahan boundary harus dibedakan.
 
+## 2026-09-04 — Saga Member V6 Daily Lobby deployed
+
+- Main `85a6f8bc4151e414bb0ca7235922162d0d914190` (PR #20) aktif pada
+  deployment `dpl_CqeoVBX1Q11ZKc4C4p2tVRkXkMLv` dan stable public URL.
+- Sepuluh batch Beranda menambahkan sapaan kontekstual, compact wallet,
+  empat-slide story carousel, shortcut, daily context, tier, dan activity
+  dengan hierarchy typography/palette/texture/effect yang lebih matang.
+- Autoplay empat detik, pause, manual dot, swipe, viewport/tab pause, serta
+  reduced-motion terverifikasi. 93/93 test, canonical CI `33786940481`, UAT
+  lima viewport, axe, offline shell, dan remote public UAT lulus.
+- Klasifikasi `CONFIRMED / SAGA_MEMBER_V6_DAILY_LOBBY_PRODUCTION_DEPLOYED /
+  PUBLIC_DUMMY_DEMO_ACTIVE / REAL_BACKEND_OFF / REAL_PROVIDER_OFF /
+  REAL_DATA_OFF / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 ## 2026-09-04 — Saga Member V5 Urban Coffee Club deployed
 
 - Main `f11172a8540263c4394666fb4f722e15546f9bba` (PR #19) aktif pada

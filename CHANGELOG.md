@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-04 - Saga Member V6 Daily Lobby sync
+
+- Informasi `CONFIRMED`: Saga Member main
+  `85a6f8bc4151e414bb0ca7235922162d0d914190`, PR #20, canonical CI
+  `33786940481`, Preview `dpl_ApupsWibpGcRdha1jd8ATh4iH3R8`, dan production
+  deployment `dpl_CqeoVBX1Q11ZKc4C4p2tVRkXkMLv` aktif pada stable URL.
+- Before -> after: Beranda V5 berubah menjadi V6 Daily Lobby dengan sapaan
+  lokal, compact wallet, carousel empat cerita, hierarchy typography baru,
+  warna/tekstur editorial, dan motion yang dapat dikontrol.
+- Production static dummy berubah; backend/provider/data nyata tetap OFF,
+  `PRODUCTION_ACTIVATED=false`, dan `BUSINESS_READY=false`.
+- Dokumen terdampak: Saga Platform product/dossier/changelog, portfolio,
+  master knowledge, decision, root changelog, dan sync status.
+
 ## 2026-09-04 - Saga Member V5 Urban Coffee Club sync
 
 - Informasi `CONFIRMED`: Saga Member main

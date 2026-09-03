@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-09-04 - Saga Member V6 Daily Lobby deployed
+
+- Saga Member main `85a6f8bc4151e414bb0ca7235922162d0d914190`
+  (PR #20) aktif pada `https://saga-member-platform.vercel.app` melalui
+  deployment `dpl_CqeoVBX1Q11ZKc4C4p2tVRkXkMLv`.
+- Sepuluh batch khusus Beranda menghasilkan sapaan kontekstual, compact
+  membership wallet, dan carousel empat cerita Coffee/Studio/Quest/Reward
+  dengan autoplay empat detik, pause, manual navigation, swipe, serta
+  reduced-motion.
+- 93/93 test, canonical CI, dan public UAT lima viewport lulus. Runtime tetap
+  public dummy tanpa backend, provider, transaksi, atau data nyata;
+  `PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
+
 ## 2026-09-04 - Saga Member V5 Urban Coffee Club deployed
 
 - Saga Member main `f11172a8540263c4394666fb4f722e15546f9bba`

@@ -15,7 +15,31 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-09-04 WIB |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `0178383` |
+| Baseline sebelum pembaruan | `2844a6c` |
+
+## Saga Member V6 Daily Lobby
+
+- Main `85a6f8bc4151e414bb0ca7235922162d0d914190` (PR #20), Preview
+  `dpl_ApupsWibpGcRdha1jd8ATh4iH3R8`, dan production deployment
+  `dpl_CqeoVBX1Q11ZKc4C4p2tVRkXkMLv` aktif pada stable URL
+  `https://saga-member-platform.vercel.app`.
+- Sepuluh batch Beranda, empat-slide carousel, typography/wallet/context,
+  controlled motion, offline shell, dan remote UAT lima viewport tervalidasi.
+  Canonical CI `33786940481` dan 93/93 test lulus.
+- Status `CONFIRMED / SAGA_MEMBER_V6_DAILY_LOBBY_PRODUCTION_DEPLOYED /
+  PUBLIC_DUMMY_DEMO_ACTIVE / REAL_BACKEND_OFF / REAL_PROVIDER_OFF /
+  REAL_DATA_OFF / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi Saga Member V6
+
+- `products/saga-platform/PRODUCT.md`
+- `products/saga-platform/DOSSIER.md`
+- `products/saga-platform/CHANGELOG.md`
+- `DECISIONS.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## Saga Member V5 Urban Coffee Club
 
