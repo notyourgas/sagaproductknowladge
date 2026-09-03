@@ -169,7 +169,7 @@ Saga POS program khusus Kopi Saga Salak telah menjalankan 24 wave, 120 batch,
 dan 480 micro-sprint pada boundary lokal. Disposition batch adalah 62
 `PASS_LOCAL`, 28 `LOCAL_SIMULATED`, dan 30 `BLOCKED_EXTERNAL`; 334 micro-sprint
 memiliki local pass evidence dan 118 tetap external pending/NOT_RUN. Source
-exact `cf790474dbd34cb6b62db7e7da99705777b980f5` lulus 98/98 test, browser
+exact `0618da16b3ca4c4a31a2891730c53b1eb13f5abe` lulus 100/100 test, browser
 E2E/accessibility, dependency audit, screenshot evidence, serta local
 PostgreSQL lima migration/RLS/cross-outlet deny.
 
@@ -187,6 +187,14 @@ durable schema contract telah ditambah. Provider QRIS, Customer Platform,
 printer, NFC, installed runtime, isolated staging, staff commissioning,
 controlled pilot dan production tetap `NOT_RUN`; source commit juga belum
 dipush/merge saat knowledge ini ditulis.
+
+Readiness extension yang diminta Andreas membagi gap 80 ke 100 menjadi 10 wave,
+40 batch, dan 160 micro-sprint. W25 durable runtime berbobot +4 dan mempunyai
+empat batch `READY_LOCAL_BUILD`. W26-W34 mencakup SagaDev sandbox, Customer
+Platform, hardware/network, signed runtime, staging/security/recovery, staff
+UAT, controlled pilot, guarded production activation, dan explicit owner
+business-ready decision. Seluruh micro-sprint masih `NOT_STARTED`; plan ini
+tidak mengubah readiness, runtime, deployment, activation, atau business state.
 
 ## Technical overview
 

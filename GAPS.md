@@ -1259,9 +1259,12 @@ GAP-004, bukan gap implementasi warna komponen.
   arah melalui vault, lalu uji dynamic checkout, signed event/status,
   settlement gross/fee/net, manual refund dan kill switch.
 - `TODO`: hubungkan lima surface Saga POS ke durable repository/PostgreSQL;
-  local lab saat ini in-memory walaupun schema/RLS contract tersedia.
+  local lab saat ini in-memory walaupun schema/RLS contract tersedia. Item ini
+  sekarang dipecah sebagai W25/R001-R004 pada readiness extension.
 - `TODO`: push/merge source exact
-  `cf790474dbd34cb6b62db7e7da99705777b980f5` setelah source review/CI.
+  `0618da16b3ca4c4a31a2891730c53b1eb13f5abe` setelah source review/CI.
+- `TODO`: jalankan 10 wave/40 batch/160 micro-sprint readiness extension.
+  Pembuatan ledger tidak membuka bobot; current readiness tetap 80/100.
 - `NEEDS CONFIRMATION`: backend production, external tenant isolation,
   offline conflict handling, installed runtime, staging, dan outlet pilot.
 

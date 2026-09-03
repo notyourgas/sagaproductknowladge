@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-144 - Saga POS memakai readiness extension 10 wave dan 40 batch
+
+| Field | Nilai |
+|---|---|
+| Tanggal | 2026-09-03 |
+| Topik | Program peningkatan readiness Saga POS dari 80 ke 100 |
+| Keputusan | Membuat execution program lanjutan 10 wave, 40 batch, dan 160 micro-sprint dengan bobot dependency-ordered dari durable runtime sampai explicit owner business-ready decision. |
+| Alasan | Sisa gap terutama memerlukan sandbox, hardware, staging, staff, pilot, dan operating evidence; pekerjaan perlu dipecah menjadi gate yang dapat diverifikasi tanpa menaikkan skor dari dokumentasi saja. |
+| Alternatif | Menaikkan skor berdasarkan jumlah source task; satu mega-sprint tanpa gate; langsung deploy sebelum provider/hardware/pilot acceptance. |
+| Dampak | Exact source `0618da16b3ca4c4a31a2891730c53b1eb13f5abe` menambah ledger dan validator. Empat batch W25 siap local build, 36 menunggu input eksternal, 100/100 test lulus, readiness tetap 80/100. |
+| Pemberi keputusan | Andreas |
+| Status | `CONFIRMED / PLAN_VALIDATED / NOT_STARTED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false` |
+| Dokumen terkait | `products/sagaops/PRODUCT.md`, `products/sagaops/DOSSIER.md`, `products/sagaops/CHANGELOG.md`, `GAPS.md` |
+
 ## DEC-143 - Saga POS memakai SagaDev Gateway dan owner-approved pilot policy
 
 | Field | Nilai |

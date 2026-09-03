@@ -8,6 +8,18 @@ Mencatat perubahan material SagaOPS.
 
 Prototype dan production outlet adalah evidence level yang berbeda.
 
+## 2026-09-03 — Readiness 80 ke 100 dibagi menjadi execution batch
+
+- Andreas meminta batch sprint lanjutan untuk meningkatkan readiness Saga POS.
+- Exact source `0618da16b3ca4c4a31a2891730c53b1eb13f5abe` menambah 10 wave,
+  40 batch, 160 micro-sprint, dependency-ordered scoring, evidence requirement,
+  owner role, dan stop condition.
+- Empat batch durable runtime berstatus `READY_LOCAL_BUILD`; 36 batch lain
+  `BLOCKED_EXTERNAL_INPUT` untuk sandbox, hardware, staging, staff, pilot,
+  deployment, activation, atau business acceptance.
+- 100/100 test lulus. Readiness tetap 80/100; source belum dipush/merge dan
+  production tidak berubah.
+
 ## 2026-09-03 — Owner policy dan SagaDev Gateway dikunci
 
 - Founder menerima konfigurasi pilot: harga customer-final, service 0%, PBJT

@@ -65,13 +65,17 @@ IMPLEMENTED_NOT_DEPLOYED / PILOT_NOT_STARTED / PRODUCTION_UNCHANGED /
 BUSINESS_READY=false`.
 
 - Saga POS source branch `codex/saga-pos-vs01-kiosk-kds-dashboard` exact
-  `cf790474dbd34cb6b62db7e7da99705777b980f5` menyelesaikan local program
+  `0618da16b3ca4c4a31a2891730c53b1eb13f5abe` menyelesaikan local program
   24 wave/120 batch/480 micro-sprint. Disposition: 62 batch `PASS_LOCAL`, 28
   `LOCAL_SIMULATED`, 30 `BLOCKED_EXTERNAL`; readiness M3+ 80/100.
-- 98/98 test, browser E2E lima surface, automated accessibility, dependency
+- 100/100 test, browser E2E lima surface, automated accessibility, dependency
   audit 0 vulnerability, 6 screenshot evidence, dan lima migration local
   PostgreSQL/RLS/cross-outlet deny
   lulus. Source commit belum dipush/merge saat knowledge ini ditulis.
+- Readiness extension menambah 10 wave/40 batch/160 micro-sprint dari durable
+  runtime sampai owner business-ready decision. Empat batch W25 siap local
+  build; 36 batch lain menunggu input eksternal. Bobot +20 tidak membuka poin
+  sebelum dependency dan gate evidence masing-masing diterima.
 - Founder mengunci SagaDev Gateway sebagai satu-satunya payment gateway Saga
   POS dengan product binding `sagaops`; PJP/acquirer tetap dikelola di belakang
   SagaDev dan tidak dikonfigurasi langsung oleh POS.
