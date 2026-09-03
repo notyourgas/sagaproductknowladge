@@ -58,7 +58,33 @@ D0. Customer `f763fc19d8463cf2120387b0d06a57ffa5c868f7` dan Member
 `2eaa35334e59dc2656b98816db6bdc020c478a8f` lulus CI canonical-main, remote
 Chrome UAT, forced-RLS audit, backup/restore dan rollback rehearsal.
 
-Frontend public dummy terkini adalah V10 Journey Memory dari Saga Member main
+Frontend public dummy terkini adalah V11 Saga Signal dari Saga Member main
+`f46903ee4d9a9ee1f976b8fe6b9176dd7f3db8df` (PR #25) pada Vercel production
+deployment `dpl_7bnYiDDqTNhuki5TyDRM8yjzcvvZ` dan stable URL
+`https://saga-member-platform.vercel.app`. Saga Signal mengganti placeholder
+feedback yang terpisah dengan satu komponen outcome untuk menu, Pass, Reward,
+privasi, profil, perangkat, support, refresh, sesi, dan handoff Saga Book.
+Pesan tetap terlihat sampai ditutup, tidak bertumpuk, dan menjelaskan dampak
+dummy secara eksplisit.
+
+Riset mengikuti WCAG 4.1.3 Status Messages, teknik ARIA22, WAI-ARIA Alert
+Pattern, dan evaluasi Base UI Toast. Base UI tidak diadopsi karena aplikasi
+framework-free ini hanya memerlukan satu feedback aktif dan sudah memiliki
+Motion 13.2.0 yang dibundle lokal. Live region dipisahkan dari tombol tutup;
+hasil memakai polite `status`, kegagalan memakai `alert`, fokus tidak direbut,
+fokus trigger dipulihkan, target tutup 44 px, dan motion hanya
+transform/opacity 120-180 ms.
+
+109/109 test, PR CI `33815212641`, canonical-main CI `33815469786`, audit
+dependency nol vulnerability, Preview artifact verification, local UAT, dan
+public remote UAT pada 320/360/375/390/430 px lulus tanpa overflow, request
+eksternal, atau kegagalan network; Axe critical/serious nol. Runtime tetap
+`PUBLIC_DUMMY_DEMO`; backend, auth, provider, transaksi, data pelanggan, QRIS,
+Push, NFC, printer, dan pilot nyata tidak aktif. Delivery adalah
+`SAGA_MEMBER_V11_SAGA_SIGNAL_PRODUCTION_DEPLOYED`, sedangkan
+`PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
+
+V10 Journey Memory berasal dari Saga Member main
 `a9f41ac0c348cd168b3d65e1cade5f5271c196bd` (PR #24) pada Vercel production
 deployment `dpl_TNCG8F7mQRAjx9RXBqHp3MfamChE` dan stable URL
 `https://saga-member-platform.vercel.app`. V10 menghubungkan route aplikasi
