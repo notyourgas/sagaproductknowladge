@@ -58,6 +58,23 @@ D0. Customer `f763fc19d8463cf2120387b0d06a57ffa5c868f7` dan Member
 `2eaa35334e59dc2656b98816db6bdc020c478a8f` lulus CI canonical-main, remote
 Chrome UAT, forced-RLS audit, backup/restore dan rollback rehearsal.
 
+Frontend public dummy terkini adalah V3 Contemporary Coffee Club dari Saga
+Member main `fd2d50c10ecbeafb5bf99525687da5a06f123013` (PR #17) pada Vercel
+deployment `dpl_7TMg8jigjcvMrxL6FegfF8wXhfrL` dan stable URL
+`https://saga-member-platform.vercel.app`. V3 mempertahankan IA lima tujuan,
+tetapi mengganti generated character hero menjadi object art code-native,
+memberi satu aksen route-specific, gradient hangat terkendali, navigasi
+espresso, local Pass texture, dan motion transform/opacity maksimal 200 ms.
+
+Jelajah kini memiliki search serta filter kategori yang berfungsi; Reward
+memiliki filter availability dan feedback penukaran simulasi. CI PR
+`33778916626`, 86/86 test, browser UAT lima viewport, axe nol critical/serious,
+offline shell, fallback, dan remote public smoke lulus. Runtime tetap
+`PUBLIC_DUMMY_DEMO`: backend, auth, provider, transaksi, data pelanggan, QRIS,
+NFC, printer, dan pilot nyata tidak aktif. Karena itu delivery adalah
+`SAGA_MEMBER_V3_PRODUCTION_DEPLOYED`, sedangkan
+`PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
+
 Frontend dummy publik terbaru memakai Saga Member canonical main
 `0612165bf24d7ee767a287b09c5319a617de6f4a` setelah PR #15 dan hotfix kontras
 PR #16. Exact deployment `dpl_EfS6TXf6b7p2CmrzzfX5zGPnNMXz` berstatus READY

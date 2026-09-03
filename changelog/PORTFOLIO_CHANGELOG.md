@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-09-03 - Saga Member V3 Contemporary Coffee Club deployed
+
+- Saga Member main `fd2d50c10ecbeafb5bf99525687da5a06f123013`
+  (PR #17) aktif pada `https://saga-member-platform.vercel.app` melalui
+  deployment `dpl_7TMg8jigjcvMrxL6FegfF8wXhfrL`.
+- V3 mengganti generated primary hero menjadi code-native object art,
+  memperbarui typography/color/gradient/local texture/motion/navigation, serta
+  menambah search/filter Jelajah dan availability filter Reward.
+- CI dan UAT lima viewport lulus; runtime tetap public dummy tanpa backend,
+  provider, transaksi, atau data nyata. `PRODUCTION_ACTIVATED=false` dan
+  `BUSINESS_READY=false`.
+
 ## 2026-09-03 - SagaOPS platform activated; first canary rejected safely
 
 - SagaDev Platform exact `1d7146c2be514f8764e940ee96ba8ce55e310325`
