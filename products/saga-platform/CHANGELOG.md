@@ -8,6 +8,21 @@ Mencatat perubahan material control plane Saga.
 
 Fondasi production dan roadmap pemisahan boundary harus dibedakan.
 
+## 2026-09-04 — Saga Member V10 Journey Memory deployed
+
+- Main `a9f41ac0c348cd168b3d65e1cade5f5271c196bd` (PR #24) aktif pada
+  deployment `dpl_TNCG8F7mQRAjx9RXBqHp3MfamChE` dan stable public URL.
+- Native History API kini menangani browser Back/Forward dan halaman sekunder.
+  Route asal menyimpan scroll serta deterministic focus key sehingga member
+  kembali tepat ke kontrol yang sebelumnya dipakai.
+- Document title dan live announcement per-route meningkatkan orientasi tanpa
+  mengumumkan ulang seluruh main region.
+- 106/106 test, PR CI `33810230630`, main CI `33810432264`, dependency audit,
+  Preview artifact check, dan public UAT lima viewport lulus.
+- Klasifikasi `CONFIRMED / SAGA_MEMBER_V10_JOURNEY_MEMORY_PRODUCTION_DEPLOYED /
+  PUBLIC_DUMMY_DEMO_ACTIVE / REAL_BACKEND_OFF / REAL_PROVIDER_OFF /
+  REAL_DATA_OFF / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 ## 2026-09-04 — Saga Member V9 Story Rail deployed
 
 - Main `cf702551b2b8d4cba5922938a3fb15f1919760cc` (PR #23) aktif pada

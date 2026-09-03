@@ -66,6 +66,24 @@ Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
 - Pemisahan bounded context dan adapter dilakukan bertahap.
 - Bukan rewrite total.
 
+### Saga Member V10 Journey Memory
+
+- Saga Member canonical main `a9f41ac0c348cd168b3d65e1cade5f5271c196bd`
+  (PR #24) aktif pada Vercel production deployment
+  `dpl_TNCG8F7mQRAjx9RXBqHp3MfamChE` melalui stable public URL
+  `https://saga-member-platform.vercel.app`.
+- Journey Memory menghubungkan navigasi aplikasi dengan native History API.
+  Browser Back/Forward dan tombol Back pada halaman sekunder kini memulihkan
+  route, posisi scroll, serta fokus ke kontrol asal tanpa mengganti URL publik.
+- Judul dokumen mengikuti halaman aktif dan perubahan route diumumkan melalui
+  satu live region ringkas; seluruh konten utama tidak lagi diumumkan ulang.
+- 106/106 test, PR CI `33810230630`, canonical-main CI `33810432264`, audit
+  dependency nol vulnerability, Preview artifact verification, serta UAT
+  lokal dan publik pada 320/360/375/390/430 px lulus.
+- Status `CONFIRMED / SAGA_MEMBER_V10_JOURNEY_MEMORY_PRODUCTION_DEPLOYED /
+  PUBLIC_DUMMY_DEMO_ACTIVE / REAL_BACKEND_OFF / REAL_PROVIDER_OFF /
+  REAL_DATA_OFF / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 ### Saga Member V9 Story Rail
 
 - Saga Member canonical main `cf702551b2b8d4cba5922938a3fb15f1919760cc`
