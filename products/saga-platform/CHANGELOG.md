@@ -8,6 +8,18 @@ Mencatat perubahan material control plane Saga.
 
 Fondasi production dan roadmap pemisahan boundary harus dibedakan.
 
+## 2026-09-03 — Saga Member Gen Z UI/UX integration strategy V2
+
+- Exact local source `0f8fc5d` menambahkan strategy 10 macro phase, 34 batch,
+  dan 136 micro-sprint untuk mengintegrasikan visual Wave A-E.
+- Proposal mengunci urutan target Beranda, Jelajah, Pass, Reward, dan Profil;
+  Aktivitas menjadi secondary route. Scope tetap mobile-only 320–430 CSS px.
+- Registry aset, feature flag, 20–28 initial runtime assets, state matrix,
+  image budget, offline cache, UAT, exact Preview, stable public link, dan
+  rollback direncanakan sebagai gate terpisah.
+- Klasifikasi `PROPOSAL / STRATEGY_READY_FOR_APPROVAL /
+  IMPLEMENTATION_NOT_STARTED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
+
 ## 2026-09-03 — Saga Member Gen Z visual library Wave B-E validated locally
 
 - Andreas mengunci style contemporary Indonesian Gen Z coffee-and-creator,

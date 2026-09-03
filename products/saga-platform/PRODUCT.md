@@ -85,6 +85,20 @@ Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
   Library belum dipasang route-by-route, belum dipush/merge, dan belum
   dideploy atau diuji pada URL Vercel.
 
+### Proposal integrasi UI/UX Saga Member Gen Z
+
+- Exact local source `0f8fc5d` menyediakan strategy V2 untuk mengintegrasikan
+  Wave A-E melalui 10 macro phase, 34 batch, dan 136 micro-sprint.
+- Target IA memakai lima tujuan mobile: Beranda, Jelajah, Pass, Reward, dan
+  Profil. Aktivitas direncanakan menjadi layar sekunder; viewport lebih lebar
+  tetap menampilkan kanvas mobile maksimal 430 CSS px.
+- Program mencakup registry aset, feature flag, route-by-route integration,
+  state matrix, image optimization, offline cache, mobile UAT, Preview exact
+  commit, stable-link rollout, dan rollback.
+- Klasifikasi `PROPOSAL / STRATEGY_READY_FOR_APPROVAL /
+  IMPLEMENTATION_NOT_STARTED / PRODUCTION_UNCHANGED`. Rencana ini belum
+  mengubah UI aktif, source main, deployment Vercel, atau business readiness.
+
 ### Saga Member production internal alpha D0
 
 - Saga Member main `9a914d148bb6773e03afd0c2b45efa39683afdb4`

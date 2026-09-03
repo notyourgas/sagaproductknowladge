@@ -15,7 +15,25 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-09-03 WIB |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `c1f9c893385f7e8dc824f6f38d1b464509bdc4f3` |
+| Baseline sebelum pembaruan | `928b376618233a874c18248396f92bea8ac48ced` |
+
+## Saga Member Gen Z UI/UX integration strategy V2
+
+- Exact local source `0f8fc5d` merinci 10 macro phase, 34 batch, dan 136
+  micro-sprint untuk integrasi Wave A-E.
+- Scope tetap mobile-only 320–430 CSS px. Target bottom navigation adalah
+  Beranda, Jelajah, Pass, Reward, dan Profil; Aktivitas menjadi secondary.
+- Status `PROPOSAL / STRATEGY_READY_FOR_APPROVAL /
+  IMPLEMENTATION_NOT_STARTED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi strategy V2
+
+- `products/saga-platform/PRODUCT.md`
+- `products/saga-platform/DOSSIER.md`
+- `products/saga-platform/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## Saga Member Gen Z visual library Wave B-E
 

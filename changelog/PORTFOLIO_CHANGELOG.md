@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-09-03 - Saga Member Gen Z UI/UX integration strategy V2
+
+- Exact local source `0f8fc5d` merencanakan integrasi Wave A-E melalui 10
+  macro phase, 34 batch, dan 136 micro-sprint.
+- Target mobile navigation adalah Beranda, Jelajah, Pass, Reward, dan Profil;
+  Aktivitas menjadi secondary route. Scope tetap 320–430 CSS px.
+- Registry/feature flag, route integration, state/performance/offline gates,
+  mobile UAT, exact Preview, stable-link rollout, dan rollback dipisahkan.
+- Status `PROPOSAL / STRATEGY_READY_FOR_APPROVAL /
+  IMPLEMENTATION_NOT_STARTED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
+
 ## 2026-09-03 - Saga Member Gen Z visual Wave B-E locally validated
 
 - Exact local source `6be4ced` menambahkan 76 aset semi-editorial
