@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-147 - Saga Member memakai visual contemporary Gen Z semi-editorial
+
+| Field | Nilai |
+|---|---|
+| Tanggal | 2026-09-03 |
+| Topik | Arah visual library Wave A-E Saga Member |
+| Keputusan | Mengganti arah aset 3D/vintage menjadi contemporary Indonesian Gen Z coffee-and-creator yang semi-editorial flat/vector-like, lalu melanjutkan regenerasi Wave B-E setelah Wave A diterima. |
+| Alasan | Visual perlu terasa minimal, modern, relevan dengan coffee shop dan creator culture Gen Z, serta konsisten dengan UI mobile-first Saga Member. |
+| Alternatif | Mempertahankan aset 3D; memakai gaya vintage/tradisional; memasukkan seluruh CTA/status/nilai bisnis ke dalam gambar. |
+| Dampak | Exact local source `6be4ced` menambahkan 76 aset Wave B-E dan mempertahankan enam aset Wave A. Total 82 aset candidate mencakup hero, Jelajah, Member Pass, Profil, Quest, Reward, empty/system state, dan tekstur. UI fungsional tetap code-native. Test 76/76 dan browser review mobile lulus. |
+| Pemberi keputusan | Andreas |
+| Status | `CONFIRMED / LOCAL_VALIDATED / ASSET_LIBRARY_READY / UI_INTEGRATION_PENDING / PRODUCTION_UNCHANGED / BUSINESS_READY=false` |
+| Dokumen terkait | `products/saga-platform/PRODUCT.md`, `products/saga-platform/DOSSIER.md`, `products/saga-platform/CHANGELOG.md` |
+
 ## DEC-146 - Saga POS memakai production-direct controlled TRIAL99 canary
 
 | Field | Nilai |

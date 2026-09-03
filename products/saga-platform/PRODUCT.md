@@ -66,6 +66,25 @@ Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
 - Pemisahan bounded context dan adapter dilakukan bertahap.
 - Bukan rewrite total.
 
+### Saga Member Gen Z visual library Wave A-E
+
+- Andreas mengunci arah visual Saga Member sebagai contemporary Indonesian
+  Gen Z coffee-and-creator: semi-editorial flat/vector-like, mobile-first,
+  memakai espresso, kakao, karamel, cement, off-white, dan muted sage.
+- Exact local source `6be4ced` menambahkan 76 aset Wave B-E; bersama enam aset
+  Wave A, library tervalidasi berisi 82 aset. Cakupan B-E meliputi hero,
+  Jelajah, Member Pass, Profil, Quest, Reward, empty state, system state, dan
+  tekstur.
+- Aset ilustrasi tidak memuat UI, logo palsu, status, CTA, points, XP, tier,
+  atau nilai bisnis. Elemen fungsional tetap code-native dengan Feather icon
+  dan Plus Jakarta Sans.
+- Test 76/76, review mobile 390x844, 76/76 image load, nol broken image, nol
+  horizontal overflow, dan axe WCAG A/AA nol violation lulus.
+- Status `CONFIRMED / LOCAL_VALIDATED / ASSET_LIBRARY_READY /
+  UI_INTEGRATION_PENDING / PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
+  Library belum dipasang route-by-route, belum dipush/merge, dan belum
+  dideploy atau diuji pada URL Vercel.
+
 ### Saga Member production internal alpha D0
 
 - Saga Member main `9a914d148bb6773e03afd0c2b45efa39683afdb4`

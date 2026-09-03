@@ -77,6 +77,25 @@ Demo ini sengaja menyederhanakan akses untuk finalisasi pengalaman produk;
 status tersebut tidak mengaktifkan production member account, transaksi,
 Customer Platform, private VPS ring, QRIS, Resend, Push, NFC, atau printer.
 
+Arah ilustrasi baru Saga Member dikunci sebagai contemporary Indonesian Gen Z
+coffee-and-creator, bukan vintage tradisional, 3D, atau photoreal. Gaya
+semi-editorial flat/vector-like memakai palet espresso, kakao, karamel,
+cement, off-white, dan muted sage; objek serta busana harus terasa seperti
+coffee shop dan creator culture masa kini. Exact local source `6be4ced`
+menambahkan 76 aset Wave B-E dan mempertahankan enam aset Wave A, sehingga
+total library candidate menjadi 82 aset.
+
+Wave B mencakup Home hero dan Jelajah; Wave C Member Pass dan Profil; Wave D
+Quest, Reward, empty/system states; Wave E tekstur. Ilustrasi dipisahkan dari
+UI fungsional: CTA, navigation, status, points, XP, tier, dan nilai bisnis
+tetap dirender oleh kode dengan Feather icon serta Plus Jakarta Sans. Manifest,
+review page mobile, dan strategi integrasi route-by-route tersedia di source.
+Test 76/76 serta browser review 390x844 lulus dengan 76/76 image load, nol
+broken image, nol horizontal overflow, dan axe WCAG A/AA nol violation. Status
+tetap `LOCAL_VALIDATED / ASSET_LIBRARY_READY / UI_INTEGRATION_PENDING`;
+source belum dipush/merge, belum diintegrasikan ke runtime aktif, dan
+production tidak berubah.
+
 Home dashboard finalization memakai Saga Member main
 `c2754dcf5fe5cccc10993b0eb50a10003949c32e` (PR #10) dan authority Customer
 Platform main `7b58d2ae62c564312d4a6adfc696c1a4f1a243eb` (PR #8). Customer Platform
