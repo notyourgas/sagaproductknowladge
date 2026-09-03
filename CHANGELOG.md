@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-03 - SagaOPS production activation and failed-canary sync
+
+- Informasi `CONFIRMED`: SagaDev Platform exact
+  `1d7146c2be514f8764e940ee96ba8ce55e310325` aktif pada release
+  `20260903154948-1d7146c`; source Saga POS exact `1f73f9b` sudah dipush.
+- Before -> after: product/credential/callback/route berubah dari blocked input
+  menjadi production-activated default-off. Satu intent Rp130 ditolak ketika
+  provider total Rp231 melampaui cap Rp220; QR/PAID tidak terjadi.
+- Production platform berubah dan canary sudah dikunci. Hardware/outlet UAT,
+  settlement, provider-fee decision, dan `BUSINESS_READY` belum selesai.
+- Dokumen terdampak: SagaOPS product/dossier/changelog, gaps, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-09-03 - Saga Member Gen Z UI production sync
 
 - Menyinkronkan Saga Member canonical main

@@ -8,6 +8,22 @@ Mencatat perubahan material SagaOPS.
 
 Prototype dan production outlet adalah evidence level yang berbeda.
 
+## 2026-09-03 — SagaDev Platform aktif; canary pertama ditolak aman
+
+- SagaDev Platform exact `1d7146c2be514f8764e940ee96ba8ce55e310325`
+  aktif pada release `20260903154948-1d7146c` setelah encrypted backup,
+  disposable restore, migration contract, atomic switch, health/auth, dan
+  default-off control gate lulus.
+- Saga POS exact `1f73f9b` dipush ke branch
+  `codex/saga-pos-vs01-kiosk-kds-dashboard`; 116/116 test, static/type check,
+  dan audit nol vulnerability lulus.
+- Product/credential/callback/host binding tersedia. Satu intent private
+  `TRIAL99` dibuat pada Rp130; provider total Rp231 melewati cap Rp220 sehingga
+  intent rejected sebelum QR/PAID. Paid=0 dan canary langsung dikunci.
+- Next action `NEEDS CONFIRMATION`: treatment fee Rp101 dan cap baru. Printer,
+  NFC, router/UPS, external runtime/outlet UAT, settlement acceptance, dan
+  `BUSINESS_READY` tetap terbuka.
+
 ## 2026-09-03 — Production-direct TRIAL99 canary diotorisasi dan dijaga lokal
 
 - Andreas mengizinkan route SagaDev production-direct tanpa sandbox, promo

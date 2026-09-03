@@ -1,7 +1,7 @@
 # SagaOPS Product Knowledge
 
 Updated: 3 September 2026
-Evidence status: `CONFIRMED / SOURCE_PUSHED_BRANCH / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PRODUCTION_DIRECT_CANARY_OWNER_AUTHORIZED_INPUTS_BLOCKED / STAGING_NOT_PROVISIONED / IMPLEMENTED_NOT_DEPLOYED`
+Evidence status: `CONFIRMED / SOURCE_PUSHED_BRANCH / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_ACTIVATED / PRIVATE_CANARY_LOCKED_AFTER_PROVIDER_AMOUNT_REJECTION / BUSINESS_READY=false`
 
 ## Tujuan dokumen
 
@@ -12,9 +12,9 @@ terbuka berada di [GAPS](../../GAPS.md#sagaops).
 ## Konteks
 
 Source private kanonik, API/service, persistence/RLS lokal, dan operator browser
-UAT tersedia sebagai local integrated internal alpha. Staging, provider,
-hardware, outlet production, activation, dan business readiness belum
-terverifikasi.
+UAT tersedia sebagai local integrated internal alpha. Endpoint payment SagaOPS
+kini aktif pada SagaDev Platform production dengan transaksi terkunci. Hardware,
+outlet pilot, settlement acceptance, dan business readiness belum terverifikasi.
 
 ## Ringkasan
 
@@ -59,10 +59,22 @@ kasir dan Back Office untuk owner/manager.
 
 ## Status saat ini
 
-Status: `GOAL_3_LOCAL_CANONICAL_EXECUTED / ZERO_NEW_SPEND_LOCKED /
-EXISTING_VPS_AUDITED / EXTERNAL_RUNTIME_NO_GO / STAGING_NOT_PROVISIONED /
-IMPLEMENTED_NOT_DEPLOYED / PILOT_NOT_STARTED / PRODUCTION_UNCHANGED /
-BUSINESS_READY=false`.
+Status: `SAGADEV_PLATFORM_PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+SAGAOPS_TRANSACTIONS_LOCKED / FIRST_TRIAL99_INTENT_REJECTED_UNPAID /
+HARDWARE_AND_OUTLET_PILOT_PENDING / BUSINESS_READY=false`.
+
+- SagaDev Platform exact `1d7146c2be514f8764e940ee96ba8ce55e310325`
+  aktif pada release `20260903154948-1d7146c`. Backup terenkripsi, checksum,
+  disposable restore database platform, migration contract, atomic switch,
+  health, auth boundary, dan kill-switch/default-off gate lulus.
+- Saga POS branch `codex/saga-pos-vs01-kiosk-kds-dashboard` exact `1f73f9b`
+  menargetkan runtime platform, memakai credential DPAPI CurrentUser, signed
+  HMAC, production host allowlist, server-side `TRIAL99`, dan lulus 116/116
+  test, static/type check, serta dependency audit nol vulnerability.
+- Satu intent Americano dibuat pada Rp130. Provider mengembalikan total bayar
+  Rp231; gate menolak karena cap Rp220. Tidak ada QR, status PAID nol, dan
+  canary kembali dikunci. Kenaikan cap/provider-fee policy memerlukan keputusan
+  founder baru sebelum percobaan berikutnya.
 
 - Saga POS source branch `codex/saga-pos-vs01-kiosk-kds-dashboard` exact
   `d9598dd94200c8cd3e2fc1bbdf8245acec1f69cc` menyelesaikan local program
@@ -90,8 +102,9 @@ BUSINESS_READY=false`.
   sandbox dengan promo private `TRIAL99`, maksimal lima transaksi, source push,
   dan uang nyata. Guard lokal membatasi satu item, private device, Rp130-Rp220
   per payment, total Rp1.100, window, host/callback/vault/settlement dan kill
-  switch. Product belum terdaftar, vault/callback belum tersedia, dan tidak ada
-  transaksi nyata yang dijalankan.
+  switch. Product, signed credential, stable callback, dan endpoint production
+  sudah tersedia. Percobaan pertama menghasilkan satu intent rejected dan nol
+  pembayaran; transaksi kini terkunci.
 - Lima surface dapat memakai disk-backed local durable runtime dan restart
   recovery sudah terbukti lokal. Evidence ini bukan bukti external PostgreSQL,
   multi-instance runtime, staging, atau production recovery.

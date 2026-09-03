@@ -1255,17 +1255,18 @@ GAP-004, bukan gap implementasi warna komponen.
   hari/libur nyata, dan recipe/HPP matrix modifier sebelum outlet pilot.
 - `NEEDS CONFIRMATION`: procurement/mounting final kiosk/KDS, Epson TM-T82X,
   ACS ACR1552U, network/UPS, named staff/reviewer, dan kalender pilot.
-- `TODO`: register product `sagaops` pada SagaDev production, provision HMAC
-  dua arah melalui vault, stable HTTPS callback, host allowlist, settlement
-  reference, dated window, dan kill switch. Vault client saat audit berstatus
-  locked; tidak ada secret yang dibaca.
+- `CONFIRMED`: product `sagaops`, HMAC product-scoped, stable HTTPS callback,
+  exact host allowlist, dated window, dan kill switch sudah tersedia pada
+  SagaDev Platform production exact `1d7146c2`; transaksi kembali locked.
+- `NEEDS CONFIRMATION`: provider menambahkan Rp101 pada intent Rp130 sehingga
+  total Rp231 melewati cap tunggal Rp220. Tentukan apakah fee ditanggung
+  merchant, cap provider-total dinaikkan, atau konfigurasi channel diubah.
 - `CONFIRMED`: W25/R001-R004 menghubungkan lima surface ke disk-backed local
   durable repository dengan PostgreSQL semantics, migration registry, atomic
   checkout/outbox, dan restart recovery. Evidence exact
   `8b63df321c3a0f7aeba9080eea5ac044470a6d8c` bersifat lokal dan belum
   membuktikan external PostgreSQL, multi-instance, atau staging recovery.
-- `TODO`: push/merge source exact
-  `d9598dd94200c8cd3e2fc1bbdf8245acec1f69cc` sudah dipush ke branch
+- `TODO`: source terbaru exact `1f73f9b` sudah dipush ke branch
   `codex/saga-pos-vs01-kiosk-kds-dashboard`; merge/review tetap pending.
 - `TODO`: verifikasi dan terima external gate W26-W34. Seluruh contract dan
   preparation sudah dijalankan lokal, tetapi sembilan wave masih blocked oleh

@@ -8,8 +8,8 @@ sales, dan konten SagaOPS.
 ## Konteks dan status bukti
 
 - Updated: 3 September 2026
-- Delivery: `SOURCE_PUSHED_BRANCH / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PRODUCTION_DIRECT_CANARY_OWNER_AUTHORIZED_INPUTS_BLOCKED / STAGING_NOT_PROVISIONED / IMPLEMENTED_NOT_DEPLOYED`
-- Activation: `NOT_PRODUCTION_ACTIVATED`
+- Delivery: `SOURCE_PUSHED_BRANCH / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_DEPLOYED / FIRST_TRIAL99_INTENT_REJECTED_UNPAID`
+- Activation: `SAGADEV_PLATFORM_ACTIVATED / TRANSACTIONS_LOCKED`
 - Business readiness: `BLOCKED`
 
 ## Overview produk
@@ -66,9 +66,10 @@ manager override. Provider/hardware real belum termasuk evidence.
 
 1. Provision external PostgreSQL/queue/cache dan buktikan kapasitas, isolation,
    backup/restore, serta disaster recovery.
-2. Register SagaDev Gateway production product `sagaops`, provision scoped
-   vault refs, lalu jalankan production-direct controlled canary dengan stable
-   callback/replay, kill switch, settlement, dan monetary-cap evidence.
+2. SagaDev Gateway product `sagaops`, scoped credential, stable callback,
+   signed endpoint, dan kill switch sudah aktif. Selanjutnya putuskan treatment
+   provider fee Rp101/cap total, lalu ulang satu controlled canary dan
+   rekonsiliasi settlement tanpa melewati cap yang disetujui.
 3. Signed SBOM, SAST/DAST dan independent release review.
 4. Manual assistive-technology serta external operator/pilot validation.
 5. Staging approval, controlled outlet pilot, lalu activation review terpisah.
@@ -113,7 +114,9 @@ Operating system coffeeshop dari kasir sampai back office.
 
 ## FAQ
 
-**Apakah QRIS aktif?** Tidak; dummy/manual bukan gateway.
+**Apakah QRIS aktif?** Endpoint production aktif tetapi transaksi sedang
+dikunci. Intent pertama Rp130 ditolak karena provider total Rp231 melampaui cap
+Rp220; tidak ada QR atau pembayaran berhasil.
 **Apakah bisa offline?** Simulation bukan production acceptance.
 **Apakah sudah siap outlet?** Belum; Goal 2 diterima hanya sebagai local
 validated. Staging dilewati untuk scope saat ini, sedangkan provider,

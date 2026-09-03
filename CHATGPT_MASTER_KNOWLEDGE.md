@@ -6295,6 +6295,15 @@ serta host/callback/vault/settlement/kill-switch yang belum ready. Product belum
 terdaftar, vault masih locked, stable callback belum tersedia, preflight blocked,
 dan tidak ada request uang nyata atau deployment yang dijalankan.
 
+Update production 3 September 2026: SagaDev Platform exact
+`1d7146c2be514f8764e940ee96ba8ce55e310325` aktif pada release
+`20260903154948-1d7146c` dengan endpoint payment SagaOPS, scoped credential,
+stable callback, auth boundary, dan default-off control. Saga POS exact
+`1f73f9b` lulus 116/116 test dan dipush. Satu intent private Americano dibuat
+pada Rp130, tetapi provider total Rp231 melewati cap Rp220; intent rejected,
+QR tidak terbit, paid=0, lalu canary dikunci. Provider-fee/cap policy,
+settlement acceptance, hardware, outlet UAT, dan `BUSINESS_READY` masih pending.
+
 Readiness extension Saga POS membagi gap 80 ke 100 menjadi 10 wave/40 batch/
 160 micro-sprint. Empat batch W25/16 micro-sprint lulus lokal dan membuka +4;
 36 batch W26-W34 sudah memiliki contract/preparation tetapi external verify dan
@@ -6302,8 +6311,8 @@ accept masih blocked. Skor tetap 84 sampai dependency-ordered gate SagaDev,
 Customer Platform, hardware, installed runtime, staging, staff, pilot,
 activation, dan owner business acceptance benar-benar diterima.
 
-Status: `SOURCE_PUSHED / LOCAL_VALIDATED / LOCAL_INTERNAL_ALPHA_ACCEPTED /
-IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`. Founder telah menerima
+Status: `SOURCE_PUSHED / LOCAL_VALIDATED / SAGADEV_PLATFORM_PRODUCTION_ACTIVATED /
+SAGAOPS_TRANSACTIONS_LOCKED / FIRST_CANARY_UNPAID / BUSINESS_READY=false`. Founder telah menerima
 batas Goal 1 local internal alpha; acceptance ini bukan staging atau production
 authorization.
 

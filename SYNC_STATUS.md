@@ -15,7 +15,28 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-09-03 WIB |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `da971eb3cc93738cb3f3325573f812c8cdf8f24f` |
+| Baseline sebelum pembaruan | `6106b51043a479c8ec2f7972ae847a237e8cba1e` |
+
+## SagaOPS production activation dan canary pertama
+
+- SagaDev Platform exact `1d7146c2be514f8764e940ee96ba8ce55e310325`
+  aktif pada release `20260903154948-1d7146c`; source Saga POS exact `1f73f9b`
+  dipush dan lulus 116/116 test serta audit nol vulnerability.
+- Satu intent private `TRIAL99` Rp130 ditolak karena provider total Rp231
+  melampaui cap Rp220. Tidak ada QR atau paid transaction; canary locked.
+- Status `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+  TRANSACTIONS_LOCKED / BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi SagaOPS canary
+
+- `products/sagaops/PRODUCT.md`
+- `products/sagaops/DOSSIER.md`
+- `products/sagaops/CHANGELOG.md`
+- `GAPS.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## Saga Member Gen Z UI production
 

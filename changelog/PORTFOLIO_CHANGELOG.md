@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-09-03 - SagaOPS platform activated; first canary rejected safely
+
+- SagaDev Platform exact `1d7146c2be514f8764e940ee96ba8ce55e310325`
+  aktif pada release `20260903154948-1d7146c`; backup/restore, migration,
+  atomic activation, health/auth, dan default-off controls lulus.
+- Saga POS exact `1f73f9b` dipush dan lulus 116/116 test plus audit nol.
+- Satu intent TRIAL99 Rp130 ditolak karena provider total Rp231 melewati cap
+  Rp220. QR tidak terbit, paid=0, canary dikunci, dan
+  `BUSINESS_READY=false`.
+
 ## 2026-09-03 - Saga Member Gen Z UI production validated
 
 - Canonical Saga Member main `0612165bf24d7ee767a287b09c5319a617de6f4a`
