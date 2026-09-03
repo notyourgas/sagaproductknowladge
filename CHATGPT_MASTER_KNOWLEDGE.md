@@ -1,5 +1,16 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+Saga POS current branch head `973f81c` sudah dipush dengan KDS V2 yang
+memprioritaskan scanability bar: umur tiket memakai server clock, tiket tertua
+tetap di depan, summary Baru/Diproses/Siap, filter status, modifier/note, dan
+CTA first-fold pada 1280×800 serta 768×1024. Plus Jakarta Sans dipakai tanpa
+dependency baru; polling queue tidak lagi menjadi live announcement penuh.
+126/126 test, Axe nol serious/critical, overflow/touch/focus checks, serta
+dependency audit nol vulnerability lulus. Threshold 5/10 menit masih default
+lokal yang perlu dikalibrasi dengan prep-time outlet. Status
+`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production, canary, settlement,
+readiness 84/100, dan `BUSINESS_READY=false` tidak berubah.
+
 Saga POS implementation `9a43a89`, current branch head `ca827e1`, sudah
 dipush ke branch
 `codex/saga-pos-vs01-kiosk-kds-dashboard` dan mengimplementasikan kiosk

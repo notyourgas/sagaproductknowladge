@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-09-04 - SagaOPS KDS V2 local validated
+
+- Saga POS exact `973f81c` menambah KDS ticket aging berbasis server clock,
+  queue summary/filter, modifier/note, first-fold CTA, dan visual Saga.
+- 126/126 test, dua viewport browser, Axe, dan dependency audit lulus tanpa
+  dependency baru.
+- Production/canary tidak berubah; readiness tetap 84/100 dan
+  `BUSINESS_READY=false`.
+
 ## 2026-09-04 - SagaOPS portrait kiosk local validated
 
 - Saga POS implementation `9a43a89`, current head `ca827e1`, dipush dengan

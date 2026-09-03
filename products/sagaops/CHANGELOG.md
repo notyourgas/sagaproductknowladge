@@ -8,6 +8,18 @@ Mencatat perubahan material SagaOPS.
 
 Prototype dan production outlet adalah evidence level yang berbeda.
 
+## 2026-09-04 — KDS V2 mempercepat scanning antrean bar
+
+- Source exact `973f81c` dipush ke branch Saga POS.
+- KDS menampilkan umur tiket berbasis server clock, ringkasan status, filter,
+  urutan tertua, modifier, catatan, dan CTA 54 px yang terlihat pada first fold.
+- Polling dua detik tidak lagi menjadikan seluruh queue sebagai live region.
+- Browser 1280×800 dan 768×1024, Axe, full suite 126/126, dan dependency audit
+  nol vulnerability lulus tanpa dependency baru.
+- Threshold 5/10 menit adalah default lokal dan perlu dikalibrasi dengan data
+  prep-time outlet. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+  production/canary/readiness 84/100 tidak berubah.
+
 ## 2026-09-04 — Kiosk portrait P01-P12 tervalidasi lokal
 
 - Source Saga POS implementation exact `9a43a89` dan current head `ca827e1`

@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-04 - SagaOPS KDS V2 sync
+
+- Informasi `CONFIRMED`: source exact `973f81c` dipush dengan KDS aging,
+  summary/filter status, modifier/note, first-fold action, dan accessibility
+  polling fix.
+- Riset memakai dokumentasi resmi Square KDS dan WCAG 2.2; implementasi tidak
+  menambah dependency atau menyalin visual vendor.
+- 126/126 test, Axe, dua viewport, dan dependency audit lulus. Production dan
+  canary tidak berubah; readiness 84/100 dan `BUSINESS_READY=false`.
+- Dokumen terdampak: SagaOPS product/dossier/changelog, gaps, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-09-04 - SagaOPS portrait kiosk sync
 
 - Informasi `CONFIRMED`: Saga POS implementation `9a43a89`, current head

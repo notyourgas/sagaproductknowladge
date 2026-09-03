@@ -15,7 +15,28 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-09-04 WIB |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `204e918` |
+| Baseline sebelum pembaruan | `c414155` |
+
+## SagaOPS KDS V2
+
+- Source exact `973f81c` dipush ke branch
+  `codex/saga-pos-vs01-kiosk-kds-dashboard`.
+- Server-clock aging, queue summary/filter, modifier/note, large action,
+  first-fold layout, serta quieter accessibility polling tervalidasi lokal.
+- 126/126 test, browser 1280×800 dan 768×1024, Axe, dan dependency audit lulus.
+- Status `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED / TRANSACTIONS_LOCKED / BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi SagaOPS KDS V2
+
+- `products/sagaops/PRODUCT.md`
+- `products/sagaops/DOSSIER.md`
+- `products/sagaops/CHANGELOG.md`
+- `GAPS.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaOPS portrait kiosk P01-P12
 

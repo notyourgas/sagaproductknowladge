@@ -8,7 +8,7 @@ sales, dan konten SagaOPS.
 ## Konteks dan status bukti
 
 - Updated: 4 September 2026
-- Delivery: `SOURCE_PUSHED_BRANCH / PORTRAIT_KIOSK_LOCAL_VALIDATED / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_DEPLOYED / TRIAL99_CANARY_PAID`
+- Delivery: `SOURCE_PUSHED_BRANCH / PORTRAIT_KIOSK_LOCAL_VALIDATED / KDS_V2_LOCAL_VALIDATED / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_DEPLOYED / TRIAL99_CANARY_PAID`
 - Activation: `SAGADEV_PLATFORM_ACTIVATED / TRANSACTIONS_LOCKED`
 - Business readiness: `BLOCKED`
 
@@ -197,6 +197,16 @@ hingga appearance brief tersedia. Full suite 124/124, Axe tanpa serious atau
 critical issue, dua viewport portrait, QR allowlist, reload recovery, serta
 KDS exactly-once lulus. Ini `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED` dan
 tidak membuka external gate atau transaksi baru.
+
+KDS V2 exact `973f81c` menutup pain point scanability bar: ticket aging memakai
+server clock, queue summary dan filter status terlihat di first fold, modifier
+serta catatan pelanggan ikut dalam fulfillment payload, dan CTA aksi tetap
+terlihat tanpa scroll pada 1280×800 maupun 768×1024. Threshold UX lokal adalah
+steady di bawah 5 menit, attention 5–9 menit, dan urgent mulai 10 menit; angka
+ini masih perlu dikalibrasi dari prep-time outlet. Full suite 126/126, Axe nol
+serious/critical, dan audit dependency production nol vulnerability lulus.
+Payment truth, CSRF, role boundary, server-owned price, serta exactly-once
+fulfillment tetap dipertahankan.
 
 Readiness program mencapai M4 84/100 setelah W25 durable runtime lulus lokal.
 Founder menyetujui harga customer-final,

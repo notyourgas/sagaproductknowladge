@@ -1275,6 +1275,9 @@ GAP-004, bukan gap implementasi warna komponen.
 - `NEEDS CONFIRMATION`: owner visual review untuk sembilan kandidat minuman
   konvensional serta foto/appearance brief sembilan menu khas sebelum kiosk
   portrait boleh masuk activation gate.
+- `NEEDS CONFIRMATION`: kalibrasi threshold KDS attention 5 menit dan urgent
+  10 menit memakai data prep-time nyata outlet; nilai saat ini hanya default
+  UX lokal dan bukan SLA produksi.
 - `TODO`: verifikasi dan terima external gate W26-W34. Seluruh contract dan
   preparation sudah dijalankan lokal, tetapi sembilan wave masih blocked oleh
   live provider, hardware, staging, staff, pilot, release, dan business acceptance;

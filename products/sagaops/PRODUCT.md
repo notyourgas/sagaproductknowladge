@@ -1,7 +1,7 @@
 # SagaOPS Product Knowledge
 
 Updated: 4 September 2026
-Evidence status: `CONFIRMED / SOURCE_PUSHED_BRANCH / PORTRAIT_KIOSK_LOCAL_VALIDATED / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_ACTIVATED / PRIVATE_CANARY_PAID_AND_LOCKED / SETTLEMENT_PENDING_CLEARING / BUSINESS_READY=false`
+Evidence status: `CONFIRMED / SOURCE_PUSHED_BRANCH / PORTRAIT_KIOSK_LOCAL_VALIDATED / KDS_V2_LOCAL_VALIDATED / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_ACTIVATED / PRIVATE_CANARY_PAID_AND_LOCKED / SETTLEMENT_PENDING_CLEARING / BUSINESS_READY=false`
 
 ## Tujuan dokumen
 
@@ -89,7 +89,7 @@ BUSINESS_READY=false`.
   direkonsiliasi atomik dari provider `Success` dengan audit metadata.
 
 - Saga POS implementation exact `9a43a89`, dengan current branch head
-  `ca827e1`, sudah dipush ke branch yang sama dan
+  `973f81c`, sudah dipush ke branch yang sama dan
   mengimplementasikan kiosk portrait P01-P12 berpedoman pada visual Saga Member
   V5 dengan typography serta sizing code-native. Plus Jakarta Sans berlisensi,
   target sentuh, state machine, restore payment pending, server-owned quote,
@@ -101,6 +101,11 @@ BUSINESS_READY=false`.
 - Perubahan ini `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; runtime SagaDev
   Platform, lock transaksi, settlement, readiness 84/100, dan
   `BUSINESS_READY=false` tidak berubah.
+- KDS V2 pada `973f81c` menambah server-clock ticket aging, summary
+  Baru/Diproses/Siap, status filter, urutan tertua, modifier/note yang tetap
+  terlihat, target aksi besar, dan visual Plus Jakarta Sans. Polling tidak lagi
+  membuat seluruh queue sebagai live announcement. Browser 1280×800 dan
+  768×1024, Axe, serta full suite 126/126 lulus; tidak ada dependency baru.
 
 - Saga POS source branch `codex/saga-pos-vs01-kiosk-kds-dashboard` exact
   `d9598dd94200c8cd3e2fc1bbdf8245acec1f69cc` menyelesaikan local program
