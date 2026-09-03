@@ -1243,9 +1243,20 @@ GAP-004, bukan gap implementasi warna komponen.
 
 ### SagaOPS
 
-- `NEEDS CONFIRMATION`: ICP pilot, pricing, hardware, printer, QRIS, dan support.
-- `NEEDS CONFIRMATION`: backend production, tenant isolation, RLS, offline
-  conflict handling, dan outlet pilot.
+- `CONFIRMED`: pilot pertama Kopi Saga Salak memakai self-service kiosk + nota
+  checker/KDS; Cashier Mode mandatory fallback. Cash, QRIS, Member Code,
+  Reward, thermal printer, dan NFC mandatory untuk eventual pilot.
+- `NEEDS CONFIRMATION`: pajak/service/pembulatan, variant/modifier final,
+  order type/jam/nomor antrean, promo/Reward stacking, refund/remake/void,
+  opening cash, dan support policy.
+- `NEEDS CONFIRMATION`: model/OS/mounting kiosk, KDS, printer USB/LAN, NFC,
+  network, provider QRIS, staff identity, pilot duration/volume, dan reviewer.
+- `TODO`: hubungkan lima surface Saga POS ke durable repository/PostgreSQL;
+  local lab saat ini in-memory walaupun schema/RLS contract tersedia.
+- `TODO`: push/merge source exact
+  `d942ceaeffb5ba92ed412b0de87a4e057a3e7f7e` setelah source review/CI.
+- `NEEDS CONFIRMATION`: backend production, external tenant isolation,
+  offline conflict handling, installed runtime, staging, dan outlet pilot.
 
 ### Saga AI
 

@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-09-03 - Saga POS local sprint program mencapai M3
+
+- SagaOPS kini memiliki local Saga POS lab untuk Kiosk, assisted Cashier, KDS,
+  Owner Dashboard, dan Admin dengan 18 menu Kopi Saga Salak.
+- 24 wave/120 batch/480 micro-sprint diklasifikasikan menjadi 62 local pass,
+  28 local simulated, dan 30 blocked external. 96/96 test, browser/a11y,
+  dependency audit, serta local PostgreSQL/RLS evidence lulus.
+- Exact source `d942ceaeffb5ba92ed412b0de87a4e057a3e7f7e` masih local branch. Readiness
+  M3 78/100; status `IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED /
+  BUSINESS_READY=false`.
+
 ## 2026-09-03 - SagaView S382 production activation
 
 - Backend exact `ceb33732144badbb929d212b0d5d7b3fd0e24474` aktif pada release

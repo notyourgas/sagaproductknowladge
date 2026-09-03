@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-142 - Seluruh strategi Saga POS dijalankan lokal dengan closure di akhir
+
+| Field | Nilai |
+|---|---|
+| Tanggal | 2026-09-03 |
+| Topik | Eksekusi Saga POS untuk Kopi Saga Salak |
+| Keputusan | Pilot memakai self-service kiosk + nota checker/KDS tanpa kasir permanen di open bar; Cashier Mode tetap mandatory fallback. Cash, QRIS, Member Code, Reward, thermal printer, dan NFC mandatory untuk eventual pilot. Seluruh strategi sprint yang aman dijalankan lokal sekarang; input/provider/hardware/staff/pilot yang belum ada dikumpulkan sebagai closure di akhir. |
+| Alasan | Andreas ingin seluruh pekerjaan lokal selesai tanpa berhenti pada dependency yang dapat dilengkapi setelah implementation evidence tersedia. |
+| Alternatif | Menunggu semua aturan, provider, dan hardware sebelum coding; menganggap simulator sebagai pilot pass; melewati Cashier fallback. |
+| Dampak | Local lab mencapai M3 78/100 dengan lima surface, 96/96 test, dan ledger 24 wave/120 batch/480 micro-sprint. External/provider/hardware/staging/pilot/production tetap fail-closed dan `BUSINESS_READY=false`. |
+| Pemberi keputusan | Andreas |
+| Status | `CONFIRMED / LOCAL_SPRINT_EXECUTION_COMPLETE_WITH_EXTERNAL_CLOSURE / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`; source `d942ceaeffb5ba92ed412b0de87a4e057a3e7f7e` local branch |
+| Dokumen terkait | `products/sagaops/PRODUCT.md`, `products/sagaops/DOSSIER.md`, `products/sagaops/CHANGELOG.md`, `GAPS.md` |
+
 ## DEC-140 - Saga Member memakai public dummy auto-demo tanpa login
 
 | Field | Nilai |

@@ -8,6 +8,21 @@ Mencatat perubahan material SagaOPS.
 
 Prototype dan production outlet adalah evidence level yang berbeda.
 
+## 2026-09-03 — Saga POS local sprint program mencapai M3
+
+- Model fisik dikunci sebagai self-service kiosk + nota checker/KDS; Cashier
+  Mode tetap mandatory fallback. Cash, QRIS, Member Code, Reward, printer, dan
+  NFC mandatory untuk eventual pilot.
+- Local lab menyediakan Kiosk, Cashier, KDS, Dashboard, dan Admin di atas menu
+  18 produk Kopi Saga Salak, server price, shift/cash, simulator/fixture,
+  fulfillment, availability, report/export, dan security controls.
+- Ledger mencakup 24 wave/120 batch/480 micro-sprint: 62 batch local pass, 28
+  simulated, dan 30 external-blocked. 96/96 test serta local PostgreSQL/RLS
+  evidence lulus.
+- Source exact `d942ceaeffb5ba92ed412b0de87a4e057a3e7f7e` masih local branch dan belum
+  dipush/merge. Status `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`;
+  provider/hardware/staging/staff/pilot/production tidak berubah.
+
 ## 2026-09-02 — One-command local pilot hub tersedia
 
 - Launcher ops menghidupkan Member, Customer API dan SagaOPS operator UAT

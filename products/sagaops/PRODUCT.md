@@ -1,7 +1,7 @@
 # SagaOPS Product Knowledge
 
-Updated: 2 September 2026
-Evidence status: `CONFIRMED / SOURCE_PUSHED / GOAL_3_LOCAL_CANONICAL_EXECUTED / ZERO_NEW_SPEND_LOCKED / EXISTING_VPS_AUDITED / EXTERNAL_RUNTIME_NO_GO / STAGING_NOT_PROVISIONED / IMPLEMENTED_NOT_DEPLOYED`
+Updated: 3 September 2026
+Evidence status: `CONFIRMED / SOURCE_COMMITTED_LOCAL_BRANCH / SAGA_POS_M3_LOCAL_SLICE / EXTERNAL_RUNTIME_NO_GO / STAGING_NOT_PROVISIONED / IMPLEMENTED_NOT_DEPLOYED`
 
 ## Tujuan dokumen
 
@@ -44,6 +44,11 @@ kasir dan Back Office untuk owner/manager.
   server, CSRF, same-origin, dan session HttpOnly.
 - Integrasi Member Code, Voyager quote, Points/XP/Quest/Reward event boundary,
   serta payment/recovery simulator.
+- Saga POS local sprint lab dengan lima surface: self-service Kiosk, assisted
+  Cashier fallback, nota checker/KDS, Owner Dashboard, dan POS Admin.
+- Catalog 18 menu Kopi Saga Salak, modifier fixture, cash/shift, QRIS simulator,
+  Member/Reward fixture, sold-out versioning, refund/remake contract, report,
+  export, device/print boundary, dan safe kiosk reset.
 
 ## Prinsip data
 
@@ -58,6 +63,16 @@ Status: `GOAL_3_LOCAL_CANONICAL_EXECUTED / ZERO_NEW_SPEND_LOCKED /
 EXISTING_VPS_AUDITED / EXTERNAL_RUNTIME_NO_GO / STAGING_NOT_PROVISIONED /
 IMPLEMENTED_NOT_DEPLOYED / PILOT_NOT_STARTED / PRODUCTION_UNCHANGED /
 BUSINESS_READY=false`.
+
+- Saga POS source branch `codex/saga-pos-vs01-kiosk-kds-dashboard` exact
+  `d942ceaeffb5ba92ed412b0de87a4e057a3e7f7e` menyelesaikan local program
+  24 wave/120 batch/480 micro-sprint. Disposition: 62 batch `PASS_LOCAL`, 28
+  `LOCAL_SIMULATED`, 30 `BLOCKED_EXTERNAL`; readiness M3 78/100.
+- 96/96 test, browser E2E lima surface, automated accessibility, dependency
+  audit, 6 screenshot evidence, dan local PostgreSQL/RLS/cross-outlet deny
+  lulus. Source commit belum dipush/merge saat knowledge ini ditulis.
+- Runtime UI masih in-memory. Migration/RLS baru adalah durable contract,
+  bukan bukti UI restart recovery pada external PostgreSQL.
 
 - Private canonical `main` `614fe7fdaffd7c739b0c7efed97f8a5e33297eea`
   memuat operator console, API v1, domain services, migration, local PostgreSQL
@@ -111,6 +126,7 @@ BUSINESS_READY=false`.
 - Manual QRIS bukan payment gateway.
 - Local PostgreSQL/PGlite bukan bukti kapasitas atau disaster recovery staging.
 - Automated browser UAT bukan human business acceptance.
+- Fixture Member/Reward/QRIS bukan Customer Platform/provider acceptance.
 
 ## Ide konten
 

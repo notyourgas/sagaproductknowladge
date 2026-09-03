@@ -7,8 +7,8 @@ sales, dan konten SagaOPS.
 
 ## Konteks dan status bukti
 
-- Updated: 2 September 2026
-- Delivery: `SOURCE_PUSHED / GOAL_3_LOCAL_CANONICAL_EXECUTED / ZERO_NEW_SPEND_LOCKED / EXISTING_VPS_AUDITED / EXTERNAL_RUNTIME_NO_GO / STAGING_NOT_PROVISIONED / IMPLEMENTED_NOT_DEPLOYED`
+- Updated: 3 September 2026
+- Delivery: `SOURCE_COMMITTED_LOCAL_BRANCH / SAGA_POS_M3_LOCAL_SLICE / EXTERNAL_RUNTIME_NO_GO / STAGING_NOT_PROVISIONED / IMPLEMENTED_NOT_DEPLOYED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED`
 
@@ -47,6 +47,11 @@ ledger, stock guard, override, purchase order, dashboard, dan approval.
 Workflow lokal mencakup POS/back office, operator console OWNER/STAFF,
 session-derived role/outlet, checkout, recovery, closing, approval, reporting,
 Member Code/Voyager/Reward integration boundary, dan fallback tanpa printer.
+
+Saga POS local sprint lab menambah self-service Kiosk, assisted Cashier
+fallback, nota checker/KDS, Owner Dashboard, POS Admin, menu Kopi Saga Salak,
+modifier, cash/shift, QRIS simulator, Member/Reward fixture, availability,
+refund/remake, report/export, device health dan print spooler boundary.
 
 ## Fitur MVP
 
@@ -159,6 +164,20 @@ operator dihasilkan runtime-only dan tidak disimpan. Fresh SagaOPS suite
 76/76 lulus. Bukti ini menutup usability teknis launcher lokal saja; QRIS,
 printer, NFC, device field UAT, durable runtime dan outlet operation tetap
 belum terbukti.
+
+Saga POS program khusus Kopi Saga Salak telah menjalankan 24 wave, 120 batch,
+dan 480 micro-sprint pada boundary lokal. Disposition batch adalah 62
+`PASS_LOCAL`, 28 `LOCAL_SIMULATED`, dan 30 `BLOCKED_EXTERNAL`; 334 micro-sprint
+memiliki local pass evidence dan 118 tetap external pending/NOT_RUN. Source
+exact `d942ceaeffb5ba92ed412b0de87a4e057a3e7f7e` lulus 96/96 test, browser
+E2E/accessibility, dependency audit, screenshot evidence, serta local
+PostgreSQL migration/RLS/cross-outlet deny.
+
+Readiness program adalah M3 78/100. Runtime browser masih in-memory walaupun
+durable schema contract telah ditambah. Provider QRIS, Customer Platform,
+printer, NFC, installed runtime, isolated staging, staff commissioning,
+controlled pilot dan production tetap `NOT_RUN`; source commit juga belum
+dipush/merge saat knowledge ini ditulis.
 
 ## Technical overview
 

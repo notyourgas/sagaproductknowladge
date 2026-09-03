@@ -13,9 +13,30 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Field | Nilai |
 |---|---|
 | Waktu pembaruan terakhir | 2026-09-03 WIB |
-| Branch aktif | `codex/s382-sagaview-production-knowledge` |
+| Branch aktif | `codex/saga-pos-local-program-knowledge` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `3fbe2563b8da2fd88699a064a30b783f5d30f6c1` |
+| Baseline sebelum pembaruan | `a8d665ba75ae8e36dfa8e941d794ac3fb6657952` |
+
+## Saga POS local sprint program
+
+- Source exact `d942ceaeffb5ba92ed412b0de87a4e057a3e7f7e` pada local branch menyediakan
+  Kiosk, Cashier fallback, KDS, Dashboard, dan Admin untuk Kopi Saga Salak.
+- 96/96 test dan local PostgreSQL/RLS evidence lulus. Ledger mencakup 24
+  wave/120 batch/480 micro-sprint; readiness M3 78/100.
+- Source belum dipush/merge. Provider, hardware, staging, staff, pilot,
+  production, dan business readiness tidak berubah.
+
+## File yang berubah pada sinkronisasi Saga POS
+
+- `products/sagaops/PRODUCT.md`
+- `products/sagaops/DOSSIER.md`
+- `products/sagaops/CHANGELOG.md`
+- `GAPS.md`
+- `DECISIONS.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaView S382 production activation
 

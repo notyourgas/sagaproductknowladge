@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-03 - Saga POS local sprint program sync
+
+- Mencatat keputusan founder untuk model kiosk + nota checker/KDS, Cashier
+  fallback, dan seluruh capability mandatory eventual pilot.
+- Menyinkronkan exact source local branch
+  `d942ceaeffb5ba92ed412b0de87a4e057a3e7f7e`, lima local surface, 96/96 test,
+  PostgreSQL/RLS evidence, serta ledger 24 wave/120 batch/480 micro-sprint.
+- Klasifikasi `CONFIRMED / LOCAL_SPRINT_EXECUTION_COMPLETE_WITH_EXTERNAL_CLOSURE /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
+- Dokumen terdampak: SagaOPS product/dossier/changelog, gaps, decisions,
+  portfolio, master knowledge, root changelog, dan sync status.
+
 ## 2026-09-03 - SagaView S382 production activation sync
 
 - Menyinkronkan backend exact `ceb33732144badbb929d212b0d5d7b3fd0e24474`
