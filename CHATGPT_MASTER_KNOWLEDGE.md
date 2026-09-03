@@ -1,5 +1,16 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+Saga POS current branch head `ba463a6` sudah dipush dengan Cashier V2 feature
+`2cfaf9e`. Assisted checkout kini meminta quote server sebelum pembayaran,
+menawarkan uang pas/pecahan beserta preview kurang atau kembalian, menjaga CTA
+di first fold 1440×900 dan 1024×768, serta mempertahankan idempotency key pada
+retry dengan payload sama. Server menolak underpayment sebelum membuat
+order/payment/fulfillment parsial. 130/130 test, Axe nol serious/critical,
+static/type check, dan dependency audit nol vulnerability lulus tanpa
+dependency baru. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+production, canary, settlement, readiness 84/100, dan `BUSINESS_READY=false`
+tidak berubah.
+
 Saga Member V9 Story Rail aktif pada stable public dummy URL
 `https://saga-member-platform.vercel.app` dari canonical main
 `cf702551b2b8d4cba5922938a3fb15f1919760cc` (PR #23) dan deployment

@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-04 - SagaOPS Cashier V2 sync
+
+- Informasi `CONFIRMED`: feature exact `2cfaf9e`, current head `ba463a6`,
+  dipush dengan server quote, tender guidance, preview kembalian, safe retry,
+  dan server-side pre-mutation underpayment guard.
+- 130/130 test, Axe, dua viewport, static/type check, dan dependency audit
+  lulus tanpa dependency baru.
+- Production/canary tidak berubah; readiness 84/100 dan
+  `BUSINESS_READY=false`.
+- Dokumen terdampak: SagaOPS product/dossier/changelog, gaps, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-09-04 - Saga Member V9 Story Rail sync
 
 - Informasi `CONFIRMED`: Saga Member main

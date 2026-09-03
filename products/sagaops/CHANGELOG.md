@@ -8,6 +8,19 @@ Mencatat perubahan material SagaOPS.
 
 Prototype dan production outlet adalah evidence level yang berbeda.
 
+## 2026-09-04 — Cashier V2 mengamankan checkout tunai
+
+- Feature exact `2cfaf9e` dan current branch head `ba463a6` sudah dipush.
+- Cashier meminta server quote sebelum pembayaran, menyediakan uang pas dan
+  pecahan praktis, menampilkan kurang/kembalian sebelum konfirmasi, serta
+  menjaga CTA pada first fold operator.
+- Retry dengan payload sama memakai idempotency key yang sama; request tunai
+  kurang bayar ditolak server sebelum order/payment/fulfillment dibuat.
+- Browser 1440×900 dan 1024×768, Axe, full suite 130/130, static/type check,
+  dan dependency audit lulus tanpa dependency baru.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production, canary,
+  settlement, readiness 84/100, dan `BUSINESS_READY=false` tidak berubah.
+
 ## 2026-09-04 — KDS V2 mempercepat scanning antrean bar
 
 - Source exact `973f81c` dipush ke branch Saga POS.

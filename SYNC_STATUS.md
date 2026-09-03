@@ -15,7 +15,29 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-09-04 WIB |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `ca7ba90` |
+| Baseline sebelum pembaruan | `326b6e7` |
+
+## SagaOPS Cashier V2
+
+- Feature exact `2cfaf9e` dan current source head `ba463a6` dipush ke branch
+  `codex/saga-pos-vs01-kiosk-kds-dashboard`.
+- Server quote, tender shortcut, preview kurang/kembalian, first-fold CTA,
+  stable retry idempotency, dan pre-mutation underpayment guard tervalidasi.
+- 130/130 test, browser 1440×900 dan 1024×768, Axe, static/type check, serta
+  dependency audit lulus tanpa dependency baru.
+- Status `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED / TRANSACTIONS_LOCKED / BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi SagaOPS Cashier V2
+
+- `products/sagaops/PRODUCT.md`
+- `products/sagaops/DOSSIER.md`
+- `products/sagaops/CHANGELOG.md`
+- `GAPS.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## Saga Member V9 Story Rail
 

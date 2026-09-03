@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-09-04 - SagaOPS Cashier V2 local validated
+
+- Saga POS feature `2cfaf9e`, current head `ba463a6`, menambah server quote,
+  shortcut tender, preview kurang/kembalian, first-fold CTA, dan safe retry.
+- Underpayment ditolak sebelum fakta transaksi parsial; 130/130 test, browser
+  dua viewport, Axe, static/type check, dan dependency audit lulus.
+- Production/canary tidak berubah; readiness tetap 84/100 dan
+  `BUSINESS_READY=false`.
+
 ## 2026-09-04 - Saga Member V9 Story Rail deployed
 
 - Saga Member main `cf702551b2b8d4cba5922938a3fb15f1919760cc`

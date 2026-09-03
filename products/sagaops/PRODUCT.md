@@ -1,7 +1,7 @@
 # SagaOPS Product Knowledge
 
 Updated: 4 September 2026
-Evidence status: `CONFIRMED / SOURCE_PUSHED_BRANCH / PORTRAIT_KIOSK_LOCAL_VALIDATED / KDS_V2_LOCAL_VALIDATED / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_ACTIVATED / PRIVATE_CANARY_PAID_AND_LOCKED / SETTLEMENT_PENDING_CLEARING / BUSINESS_READY=false`
+Evidence status: `CONFIRMED / SOURCE_PUSHED_BRANCH / PORTRAIT_KIOSK_LOCAL_VALIDATED / KDS_V2_LOCAL_VALIDATED / CASHIER_V2_LOCAL_VALIDATED / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_ACTIVATED / PRIVATE_CANARY_PAID_AND_LOCKED / SETTLEMENT_PENDING_CLEARING / BUSINESS_READY=false`
 
 ## Tujuan dokumen
 
@@ -47,6 +47,8 @@ kasir dan Back Office untuk owner/manager.
   serta payment/recovery simulator.
 - Saga POS local sprint lab dengan lima surface: self-service Kiosk, assisted
   Cashier fallback, nota checker/KDS, Owner Dashboard, dan POS Admin.
+- Cashier V2 dengan server-owned quote, shortcut tender tunai, preview
+  kurang/kembalian, CTA first-fold, dan retry checkout ber-idempotency stabil.
 - Kiosk portrait 1080×1920 dan 720×1280 dengan flow order type, katalog,
   modifier per-line, cart, member optional, QRIS pending/recovery, success,
   idle reset, serta out-of-service fallback.
@@ -89,7 +91,7 @@ BUSINESS_READY=false`.
   direkonsiliasi atomik dari provider `Success` dengan audit metadata.
 
 - Saga POS implementation exact `9a43a89`, dengan current branch head
-  `973f81c`, sudah dipush ke branch yang sama dan
+  `ba463a6`, sudah dipush ke branch yang sama dan
   mengimplementasikan kiosk portrait P01-P12 berpedoman pada visual Saga Member
   V5 dengan typography serta sizing code-native. Plus Jakarta Sans berlisensi,
   target sentuh, state machine, restore payment pending, server-owned quote,
@@ -106,6 +108,12 @@ BUSINESS_READY=false`.
   terlihat, target aksi besar, dan visual Plus Jakarta Sans. Polling tidak lagi
   membuat seluruh queue sebagai live announcement. Browser 1280×800 dan
   768×1024, Axe, serta full suite 126/126 lulus; tidak ada dependency baru.
+- Cashier V2 feature exact `2cfaf9e` dan current branch head `ba463a6`
+  menambahkan quote server sebelum pembayaran, shortcut uang pas/pecahan,
+  preview kurang/kembalian, CTA first-fold, dan safe retry. Validasi kurang
+  bayar kini terjadi sebelum order/payment/fulfillment dibuat. Full suite
+  130/130, browser 1440×900 dan 1024×768, Axe, serta audit dependency lulus.
+  Status tetap `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
 
 - Saga POS source branch `codex/saga-pos-vs01-kiosk-kds-dashboard` exact
   `d9598dd94200c8cd3e2fc1bbdf8245acec1f69cc` menyelesaikan local program

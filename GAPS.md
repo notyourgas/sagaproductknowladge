@@ -1269,7 +1269,8 @@ GAP-004, bukan gap implementasi warna komponen.
   checkout/outbox, dan restart recovery. Evidence exact
   `8b63df321c3a0f7aeba9080eea5ac044470a6d8c` bersifat lokal dan belum
   membuktikan external PostgreSQL, multi-instance, atau staging recovery.
-- `TODO`: source terbaru exact `ca827e1` (implementation `9a43a89`) sudah
+- `TODO`: source terbaru exact `ba463a6` (Cashier V2 feature `2cfaf9e`,
+  implementation portrait `9a43a89`) sudah
   dipush ke branch
   `codex/saga-pos-vs01-kiosk-kds-dashboard`; merge/review tetap pending.
 - `NEEDS CONFIRMATION`: owner visual review untuk sembilan kandidat minuman
@@ -1278,6 +1279,9 @@ GAP-004, bukan gap implementasi warna komponen.
 - `NEEDS CONFIRMATION`: kalibrasi threshold KDS attention 5 menit dan urgent
   10 menit memakai data prep-time nyata outlet; nilai saat ini hanya default
   UX lokal dan bukan SLA produksi.
+- `NEEDS CONFIRMATION`: validasi opening cash Rp300.000, pecahan tender, cash
+  drawer/printer, dan SOP kembalian melalui operator serta hardware outlet;
+  Cashier V2 saat ini baru tervalidasi lokal pada dua viewport.
 - `TODO`: verifikasi dan terima external gate W26-W34. Seluruh contract dan
   preparation sudah dijalankan lokal, tetapi sembilan wave masih blocked oleh
   live provider, hardware, staging, staff, pilot, release, dan business acceptance;
