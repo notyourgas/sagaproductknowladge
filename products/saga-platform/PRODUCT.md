@@ -66,6 +66,26 @@ Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
 - Pemisahan bounded context dan adapter dilakukan bertahap.
 - Bukan rewrite total.
 
+### Saga Member V5 Urban Coffee Club
+
+- Saga Member canonical main `f11172a8540263c4394666fb4f722e15546f9bba`
+  (PR #19) aktif pada Vercel deployment
+  `dpl_EQ64iVww84S8DsSbSLVY8W1MhVoW` melalui stable public URL
+  `https://saga-member-platform.vercel.app`.
+- V5 menjalankan 10 wave, 20 batch, dan 60 micro-sprint untuk memperbarui
+  Beranda, Jelajah, Pass, Reward, Profil, serta route sekunder sebagai mobile
+  Urban Coffee Club yang lebih editorial, ringkas, dan konsisten.
+- Sistem visual memakai Plus Jakarta Sans, Feather icon, komposisi
+  paper/espresso/lime, tiga tekstur SVG lokal, gradient terbatas pada wallet
+  dan Pass, serta motion transform/opacity 90–180 ms dengan reduced-motion.
+- 90/90 test dan canonical-main CI `33784325181` lulus. Browser UAT mencakup
+  320/360/390/412/430 px, axe nol critical/serious, typography minimum 12 px,
+  target sentuh 44 px, nav clearance, filter/search, feedback, secondary route,
+  offline/fallback, dan public remote UAT.
+- Status `CONFIRMED / SAGA_MEMBER_V5_PRODUCTION_DEPLOYED /
+  PUBLIC_DUMMY_DEMO_ACTIVE / REAL_BACKEND_OFF / REAL_PROVIDER_OFF /
+  REAL_DATA_OFF / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 ### Saga Member V4 Editorial Coffee Utility
 
 - Saga Member canonical main `99ca02a06bb85d52570d35454cd5c3c0a0d4087d`

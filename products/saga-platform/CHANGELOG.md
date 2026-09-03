@@ -8,6 +8,20 @@ Mencatat perubahan material control plane Saga.
 
 Fondasi production dan roadmap pemisahan boundary harus dibedakan.
 
+## 2026-09-04 — Saga Member V5 Urban Coffee Club deployed
+
+- Main `f11172a8540263c4394666fb4f722e15546f9bba` (PR #19) aktif pada
+  deployment `dpl_EQ64iVww84S8DsSbSLVY8W1MhVoW` dan stable public URL.
+- 10 wave, 20 batch, dan 60 micro-sprint memperbarui lima primary route dan
+  route sekunder dengan hierarchy editorial, typography, palette, local SVG
+  texture, restrained gradient/effect/motion, dan floating navigation.
+- 90/90 test, canonical CI `33784325181`, UAT lima viewport, axe, typography
+  floor, touch target, nav clearance, offline/fallback, interaction, dan remote
+  public UAT lulus.
+- Klasifikasi `CONFIRMED / SAGA_MEMBER_V5_PRODUCTION_DEPLOYED /
+  PUBLIC_DUMMY_DEMO_ACTIVE / REAL_BACKEND_OFF / REAL_PROVIDER_OFF /
+  REAL_DATA_OFF / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 ## 2026-09-04 — Saga Member V4 Editorial Coffee Utility deployed
 
 - Main `99ca02a06bb85d52570d35454cd5c3c0a0d4087d` (PR #18) aktif pada

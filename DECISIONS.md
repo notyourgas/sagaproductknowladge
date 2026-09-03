@@ -2120,3 +2120,17 @@ keputusan pengganti.
 | Pemberi keputusan | Andreas / founder |
 | Status | `CONFIRMED / IMPLEMENTED / SAGA_MEMBER_V4_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`; source `99ca02a06bb85d52570d35454cd5c3c0a0d4087d`, PR #18, deployment `dpl_58yvx5Me4wLb3xwgBMnaczZmmGGY` |
 | Dokumen terkait | [Saga Platform Product](products/saga-platform/PRODUCT.md), [Saga Platform Dossier](products/saga-platform/DOSSIER.md), [Saga Platform Changelog](products/saga-platform/CHANGELOG.md) |
+
+## DEC-151 - Saga Member memakai V5 Urban Coffee Club pada public dummy
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-09-04 |
+| Topik | Finalisasi visual dan deployment Saga Member public dummy |
+| Keputusan | Jalankan seluruh batch V5 Urban Coffee Club, merge melalui canonical main, dan deploy ke satu stable public Vercel URL setelah Preview, CI, dan UAT lulus. Runtime tetap memakai data dummy tanpa backend/provider nyata. |
+| Alasan | Founder meminta peningkatan signifikan pada animasi, typography, warna, tekstur, gradient, dan effect agar tampilan lebih modern, editorial, serta tidak terasa AI-generated. |
+| Alternatif yang dipertimbangkan | Mempertahankan V4; memperbanyak gambar generatif; mengubah URL publik; mengaktifkan backend/provider bersama redesign. |
+| Dampak | Lima primary route dan route sekunder memakai hierarchy Urban Coffee Club, tiga local SVG texture, restrained gradient/effect/motion, minimum typography 12 px, touch target 44 px, dan nav clearance. Static public dummy berubah; private VPS D0, QRIS, Resend, Push, NFC, printer, real account, serta business readiness tidak berubah. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / IMPLEMENTED / SAGA_MEMBER_V5_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`; source `f11172a8540263c4394666fb4f722e15546f9bba`, PR #19, deployment `dpl_EQ64iVww84S8DsSbSLVY8W1MhVoW` |
+| Dokumen terkait | [Saga Platform Product](products/saga-platform/PRODUCT.md), [Saga Platform Dossier](products/saga-platform/DOSSIER.md), [Saga Platform Changelog](products/saga-platform/CHANGELOG.md) |

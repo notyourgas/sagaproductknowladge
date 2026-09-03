@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-04 - Saga Member V5 Urban Coffee Club sync
+
+- Informasi `CONFIRMED`: Saga Member main
+  `f11172a8540263c4394666fb4f722e15546f9bba`, PR #19, canonical CI
+  `33784325181`, dan Vercel deployment
+  `dpl_EQ64iVww84S8DsSbSLVY8W1MhVoW` aktif pada stable public URL.
+- Before -> after: V4 Editorial Coffee Utility berubah menjadi V5 Urban Coffee
+  Club dengan hierarchy, typography, palette, tiga local SVG texture,
+  restrained gradient/effect/motion, serta floating navigation yang lebih
+  konsisten.
+- Production static dummy berubah; backend/provider/data nyata tetap OFF,
+  `PRODUCTION_ACTIVATED=false`, dan `BUSINESS_READY=false`.
+- Dokumen terdampak: Saga Platform product/dossier/changelog, portfolio,
+  master knowledge, decision, root changelog, dan sync status.
+
 ## 2026-09-04 - SagaOPS paid-canary and lock sync
 
 - Informasi `CONFIRMED`: private `TRIAL99` canary berhasil dibayar pada provider
