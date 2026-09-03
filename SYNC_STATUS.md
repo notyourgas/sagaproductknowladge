@@ -15,7 +15,30 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-09-04 WIB |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `87a12e3` |
+| Baseline sebelum pembaruan | `0178383` |
+
+## Saga Member V5 Urban Coffee Club
+
+- Main `f11172a8540263c4394666fb4f722e15546f9bba` (PR #19) dan deployment
+  `dpl_EQ64iVww84S8DsSbSLVY8W1MhVoW` aktif pada stable URL
+  `https://saga-member-platform.vercel.app`.
+- 10 wave/20 batch/60 micro-sprint, lima primary route, typography/palette/
+  texture/motion, offline/fallback, dan remote UAT lima viewport sudah
+  tervalidasi. Canonical CI `33784325181` dan 90/90 test lulus.
+- Status `CONFIRMED / SAGA_MEMBER_V5_PRODUCTION_DEPLOYED /
+  PUBLIC_DUMMY_DEMO_ACTIVE / REAL_BACKEND_OFF / REAL_PROVIDER_OFF /
+  REAL_DATA_OFF / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi Saga Member V5
+
+- `products/saga-platform/PRODUCT.md`
+- `products/saga-platform/DOSSIER.md`
+- `products/saga-platform/CHANGELOG.md`
+- `DECISIONS.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaOPS paid canary dan lock
 

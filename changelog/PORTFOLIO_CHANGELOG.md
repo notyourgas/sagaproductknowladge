@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-09-04 - Saga Member V5 Urban Coffee Club deployed
+
+- Saga Member main `f11172a8540263c4394666fb4f722e15546f9bba`
+  (PR #19) aktif pada `https://saga-member-platform.vercel.app` melalui
+  deployment `dpl_EQ64iVww84S8DsSbSLVY8W1MhVoW`.
+- V5 menutup 10 wave/20 batch/60 micro-sprint dan memberi lima primary route
+  hierarchy editorial Urban Coffee Club, local SVG texture, restrained
+  gradient/effect/motion, serta mobile navigation yang lebih ringkas.
+- 90/90 test, canonical CI, dan public UAT lima viewport lulus. Runtime tetap
+  public dummy tanpa backend, provider, transaksi, atau data nyata;
+  `PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
+
 ## 2026-09-04 - SagaOPS private canary paid and locked
 
 - Satu private `TRIAL99` Tokopay canary berhasil dibayar: amount produk Rp130,

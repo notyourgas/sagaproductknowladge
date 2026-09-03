@@ -58,23 +58,29 @@ D0. Customer `f763fc19d8463cf2120387b0d06a57ffa5c868f7` dan Member
 `2eaa35334e59dc2656b98816db6bdc020c478a8f` lulus CI canonical-main, remote
 Chrome UAT, forced-RLS audit, backup/restore dan rollback rehearsal.
 
-Frontend public dummy terkini adalah V4 Editorial Coffee Utility dari Saga
-Member main `99ca02a06bb85d52570d35454cd5c3c0a0d4087d` (PR #18) pada Vercel
-deployment `dpl_58yvx5Me4wLb3xwgBMnaczZmmGGY` dan stable URL
-`https://saga-member-platform.vercel.app`. V4 mempertahankan IA lima tujuan,
-namun memperjelas hierarchy dan utility: membership wallet serta tier story di
-Beranda, search-first Jelajah, Pass full-focus, Points/Quest/Reward, dan Profil
-dengan grouped settings.
+Frontend public dummy terkini adalah V5 Urban Coffee Club dari Saga Member
+main `f11172a8540263c4394666fb4f722e15546f9bba` (PR #19) pada Vercel
+deployment `dpl_EQ64iVww84S8DsSbSLVY8W1MhVoW` dan stable URL
+`https://saga-member-platform.vercel.app`. Program 10 wave, 20 batch, dan 60
+micro-sprint memperbarui lima primary route serta route sekunder dengan
+hierarchy editorial yang lebih tegas, wallet serta Pass beridentitas kuat,
+discovery terstruktur, reward utility, dan profile settings yang ringkas.
 
-Visual memakai Plus Jakarta Sans, Feather icon, espresso/paper/milk/Saga Lime,
-tekstur grain dan halftone lokal, gradient dua stop, serta motion transform/
-opacity maksimal 200 ms dengan reduced-motion. Canonical-main CI
-`33781525327`, 90/90 test, browser UAT lima viewport, axe nol critical/serious,
-offline shell, fallback, dan remote public UAT lulus. Runtime tetap
+Visual memakai Plus Jakarta Sans, Feather icon, komposisi 70/20/10
+paper/espresso/lime, tiga tekstur SVG lokal, gradient terbatas pada wallet dan
+Pass, serta motion transform/opacity 90–180 ms dengan reduced-motion.
+Canonical-main CI `33784325181`, 90/90 test, browser UAT 320–430 px, axe nol
+critical/serious, typography floor, 44 px touch target, nav clearance,
+offline/fallback, interaction, dan remote public UAT lulus. Runtime tetap
 `PUBLIC_DUMMY_DEMO`: backend, auth, provider, transaksi, data pelanggan, QRIS,
 NFC, printer, dan pilot nyata tidak aktif. Karena itu delivery adalah
-`SAGA_MEMBER_V4_PRODUCTION_DEPLOYED`, sedangkan
+`SAGA_MEMBER_V5_PRODUCTION_DEPLOYED`, sedangkan
 `PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
+
+V4 Editorial Coffee Utility dari main
+`99ca02a06bb85d52570d35454cd5c3c0a0d4087d` (PR #18) adalah release
+sebelumnya dan menjadi rollback/provenance historis, bukan state runtime
+terbaru.
 
 V3 Contemporary Coffee Club dari main
 `fd2d50c10ecbeafb5bf99525687da5a06f123013` (PR #17) adalah release
