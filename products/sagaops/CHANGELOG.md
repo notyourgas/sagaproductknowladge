@@ -10,7 +10,8 @@ Prototype dan production outlet adalah evidence level yang berbeda.
 
 ## 2026-09-04 — Kiosk portrait P01-P12 tervalidasi lokal
 
-- Source Saga POS exact `9a43a89` dipush ke branch
+- Source Saga POS implementation exact `9a43a89` dan current head `ca827e1`
+  dipush ke branch
   `codex/saga-pos-vs01-kiosk-kds-dashboard`.
 - Kiosk customer kini memakai flow portrait P01-P12 untuk 1080×1920 dan
   720×1280: order type, katalog, modifier per-line, cart, member optional,

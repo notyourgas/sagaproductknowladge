@@ -88,7 +88,8 @@ BUSINESS_READY=false`.
   gagal dua kali. Runtime production tetap exact `1d7146c2`; satu ledger canary
   direkonsiliasi atomik dari provider `Success` dengan audit metadata.
 
-- Saga POS latest source exact `9a43a89` sudah dipush ke branch yang sama dan
+- Saga POS implementation exact `9a43a89`, dengan current branch head
+  `ca827e1`, sudah dipush ke branch yang sama dan
   mengimplementasikan kiosk portrait P01-P12 berpedoman pada visual Saga Member
   V5 dengan typography serta sizing code-native. Plus Jakarta Sans berlisensi,
   target sentuh, state machine, restore payment pending, server-owned quote,

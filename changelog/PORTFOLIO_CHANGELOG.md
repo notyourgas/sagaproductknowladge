@@ -2,7 +2,8 @@
 
 ## 2026-09-04 - SagaOPS portrait kiosk local validated
 
-- Saga POS exact `9a43a89` dipush dengan customer kiosk portrait P01-P12 pada
+- Saga POS implementation `9a43a89`, current head `ca827e1`, dipush dengan
+  customer kiosk portrait P01-P12 pada
   target 1080×1920 dan 720×1280.
 - Flow baru mencakup order type, katalog dua kolom, modifier per-line, cart,
   member optional, QRIS pending/recovery, success, idle reset, dan outage.

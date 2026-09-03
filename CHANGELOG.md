@@ -2,7 +2,8 @@
 
 ## 2026-09-04 - SagaOPS portrait kiosk sync
 
-- Informasi `CONFIRMED`: Saga POS exact `9a43a89` dipush dengan customer kiosk
+- Informasi `CONFIRMED`: Saga POS implementation `9a43a89`, current head
+  `ca827e1`, dipush dengan customer kiosk
   portrait P01-P12, guideline Saga Member V5, dan code-native typography/sizing.
 - Before -> after: kiosk customer lama berubah menjadi flow portrait dengan
   dua target viewport, per-line modifier, member optional, QRIS recovery,

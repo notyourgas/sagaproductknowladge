@@ -19,7 +19,7 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 ## SagaOPS portrait kiosk P01-P12
 
-- Saga POS exact `9a43a89` dipush ke branch
+- Saga POS implementation `9a43a89`, current head `ca827e1`, dipush ke branch
   `codex/saga-pos-vs01-kiosk-kds-dashboard`.
 - Customer kiosk portrait, Saga Member V5 visual guidance, Plus Jakarta Sans,
   dua target viewport, payment truth/recovery, dan P01-P12 tervalidasi lokal.

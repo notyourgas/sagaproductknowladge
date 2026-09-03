@@ -30,7 +30,7 @@ keputusan pengganti.
 | Keputusan | Implementasikan seluruh wave customer kiosk portrait dengan visual language Saga Member V5 sebagai pedoman, sedangkan typography, sizing, spacing, dan touch geometry ditentukan code-native untuk layar 1080×1920 dan 720×1280. |
 | Alasan | Customer flow perlu konsisten dengan ekosistem Saga, tetap terbaca pada monitor portrait, dan tidak bergantung pada teks atau layout hasil gambar generatif. |
 | Alternatif | Menyalin screenshot secara pixel-perfect; mempertahankan kiosk landscape lama; memakai aset generatif untuk menu khas tanpa referensi penampilan. |
-| Dampak | Source `9a43a89` menjalankan P01-P12, memakai Plus Jakarta Sans lokal, menguji dua viewport, serta membatasi aset generatif ke sembilan kandidat konvensional. Sembilan menu khas tetap fallback sampai brief tersedia. Production/canary tidak berubah. |
+| Dampak | Source implementation `9a43a89`, current head `ca827e1`, menjalankan P01-P12, memakai Plus Jakarta Sans lokal, menguji dua viewport, serta membatasi aset generatif ke sembilan kandidat konvensional. Sembilan menu khas tetap fallback sampai brief tersedia. Production/canary tidak berubah. |
 | Pemberi keputusan | Andreas |
 | Status | `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false` |
 

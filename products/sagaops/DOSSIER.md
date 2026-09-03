@@ -184,7 +184,8 @@ exact `d9598dd94200c8cd3e2fc1bbdf8245acec1f69cc` lulus 112/112 test, browser
 E2E/accessibility, dependency audit, screenshot evidence, serta local
 PostgreSQL enam migration/RLS/cross-outlet deny.
 
-Source latest `9a43a89` mengganti customer kiosk menjadi pengalaman portrait
+Source implementation `9a43a89`, current branch head `ca827e1`, mengganti
+customer kiosk menjadi pengalaman portrait
 P01-P12 pada 1080×1920 dan 720×1280. Alur mencakup order type, katalog dua
 kolom, modifier per-line, cart/server quote, member optional, QRIS-only,
 pending, recovery, server-confirmed success, idle reset, dan out-of-service.

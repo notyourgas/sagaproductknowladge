@@ -1,6 +1,7 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-Saga POS latest source `9a43a89` sudah dipush ke branch
+Saga POS implementation `9a43a89`, current branch head `ca827e1`, sudah
+dipush ke branch
 `codex/saga-pos-vs01-kiosk-kds-dashboard` dan mengimplementasikan kiosk
 portrait P01-P12 untuk 1080×1920 serta 720×1280. Flow customer mencakup order
 type, katalog dua kolom, modifier per-line, cart/server quote, member optional,
