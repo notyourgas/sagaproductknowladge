@@ -58,7 +58,34 @@ D0. Customer `f763fc19d8463cf2120387b0d06a57ffa5c868f7` dan Member
 `2eaa35334e59dc2656b98816db6bdc020c478a8f` lulus CI canonical-main, remote
 Chrome UAT, forced-RLS audit, backup/restore dan rollback rehearsal.
 
-Frontend public dummy terkini adalah V7 Home Editorial Final dari Saga Member
+Frontend public dummy terkini adalah V8 Motion Foundation dari Saga Member
+main `e676b860afd15279d6cf98b23595b246ff0780c3` (PR #22) pada Vercel
+production deployment `dpl_7eXtKWzCtizRd4wKEZuZBPUj2UiC` dan stable URL
+`https://saga-member-platform.vercel.app`. V8 mempertahankan information
+architecture V7, lalu menambahkan hierarchy gerak yang konsisten pada lima
+primary route dan route sekundernya: direction-aware route reveal, reveal
+section berbasis viewport, feedback tekan, serta indikator aktif bottom nav.
+
+Runtime memakai `motion@13.2.0` berlisensi MIT, dibundle lokal dan disajikan
+sendiri tanpa CDN. Pilihan implementasi mengikuti dokumentasi Motion tentang
+[`inView`](https://motion.dev/docs/inview) dan
+[performance](https://motion.dev/docs/performance), serta panduan WCAG untuk
+[motion dari interaksi](https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions.html).
+Durasi dibatasi 90-260 ms dan property runtime dibatasi pada `transform` serta
+`opacity`; tidak ada infinite loop. Seluruh animation handle dan observer
+dibersihkan saat route berganti. Preferensi reduced-motion menghasilkan nol
+animasi aktif. Bundle motion berukuran 5,8 KB gzip, di bawah budget 20 KB.
+
+100/100 test, PR CI, canonical-main CI `33798937517`, dependency audit nol
+vulnerability, local UAT, dan public remote UAT pada 320/360/375/390/430 px
+lulus. Remote UAT juga memastikan indikator nav bergerak, tidak ada overflow,
+login, console error, respons gagal, request eksternal, request auth, backend,
+atau provider. Runtime tetap `PUBLIC_DUMMY_DEMO`: backend, auth, provider,
+transaksi, data pelanggan, QRIS, Push, NFC, printer, dan pilot nyata tidak
+aktif. Delivery adalah `SAGA_MEMBER_V8_MOTION_PRODUCTION_DEPLOYED`, sedangkan
+`PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
+
+V7 Home Editorial Final dari Saga Member
 main `83b969d7c77a2ce8015fb087074d3d59e7acea39` (PR #21) pada Vercel
 production deployment `dpl_7ZMPhGXxmfFG4SyUkXFZe2zWjGym` dan stable URL
 `https://saga-member-platform.vercel.app`. V7 memadatkan first fold serta
@@ -79,7 +106,8 @@ serta public remote UAT pada 320/360/390/412/430 px lulus tanpa overflow,
 broken image, atau console error. Runtime tetap `PUBLIC_DUMMY_DEMO`; backend,
 auth, provider, transaksi, data pelanggan, QRIS, Push, NFC, printer, dan pilot
 nyata tidak aktif. Delivery adalah `SAGA_MEMBER_V7_HOME_FINAL_PRODUCTION_DEPLOYED`,
-sedangkan `PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
+sedangkan `PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`. V7 sekarang
+menjadi provenance historis dan rollback visual sebelum V8.
 
 V6 Daily Lobby dari Saga Member main
 `85a6f8bc4151e414bb0ca7235922162d0d914190` (PR #20) pada Vercel deployment
