@@ -1,5 +1,27 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-05 - Saga POS Kiosk persistent help dan safe cancel sync
+
+- Informasi `CONFIRMED`: exact source
+  `85d9ed18ea37fa922d6ee9b6ef4a9f0d571a7da3` dan stable public demo
+  deployment `dpl_CvrRuXWou6wfQR15TKb9frdumyLD`.
+- Perubahan: Bantuan persisten P02-P07 serta pembatalan pre-checkout tiga-tap
+  dengan konfirmasi, fokus aman, offline recovery, dan payment-state guard.
+- Alasan: menutup jalur pembatalan empat-lima back tap atau idle 180 detik
+  tanpa memperbesar risiko salah tap atau kehilangan payment truth.
+- Area: SagaOPS/Saga POS Kiosk; produk lain tidak berubah.
+- File: product, dossier, product/portfolio/root changelog, master knowledge,
+  dan sync status SagaOPS.
+- Delivery: public demo simulator aktif; production outlet dan business
+  readiness tidak berubah. Readiness formal 84/100.
+- Validasi: full 173/173, focused red-green, dua viewport, target 56-80 px,
+  focus/fold/reduced motion, Axe/overflow, dependency/secret scan, health, dan
+  public smoke tanpa console/page/request error.
+- Blocker: operator assistance signal, NFC fisik, Customer Platform UAT,
+  durable outlet runtime, settlement, perangkat, dan business acceptance.
+- Source: Saga POS release evidence, 5 September 2026. Knowledge commit
+  menggunakan `main HEAD`.
+
 ## 2026-09-05 - Saga Member V34 Pusat Data Demo sync
 
 - Informasi `CONFIRMED`: Saga Member main

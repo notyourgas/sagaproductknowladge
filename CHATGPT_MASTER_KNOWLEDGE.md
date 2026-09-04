@@ -1,5 +1,17 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+Saga POS Kiosk persistent help dan safe session cancel aktif pada
+`https://saga-pos-kiosk.vercel.app/kiosk` dari exact runtime
+`85d9ed18ea37fa922d6ee9b6ef4a9f0d571a7da3` dan deployment
+`dpl_CvrRuXWou6wfQR15TKb9frdumyLD`. P02-P07 tetap menampilkan Bantuan bersama
+progress. Pembatalan pre-checkout memakai tiga tap dan konfirmasi dengan fokus
+awal pada aksi aman. Decline atau reset offline mempertahankan draft/Member;
+konfirmasi berhasil membuat fresh session dan nol order/payment. P08-P10 tidak
+menawarkan cancel. Full 173/173, dua viewport, target 56-80 px, focus return,
+fold, reduced motion, Axe/overflow, dependency/secret scan, health, dan public
+smoke tanpa console/page/request error lulus. Runtime tetap QRIS simulator
+ephemeral; readiness 84/100 dan seluruh gate outlet tidak berubah.
+
 Saga POS Kiosk P10 success time dan receipt-scroll control aktif pada stable URL
 `https://saga-pos-kiosk.vercel.app/kiosk` dari exact runtime
 `60200026b4372cf122855f69c5baaa2ddc2640a8` dan deployment

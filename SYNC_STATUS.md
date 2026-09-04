@@ -1,5 +1,25 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## Saga POS Kiosk persistent help dan safe session cancel
+
+- Status: `accepted / CONFIRMED / PUBLIC_DEMO_ACTIVE /
+  PRODUCT_PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+- Source exact: `85d9ed18ea37fa922d6ee9b6ef4a9f0d571a7da3`.
+- Stable deployment: `dpl_CvrRuXWou6wfQR15TKb9frdumyLD` pada
+  `https://saga-pos-kiosk.vercel.app/kiosk`.
+- Perubahan: Bantuan persisten P02-P07, safe cancel tiga-tap dengan fokus aman,
+  decline/offline recovery, fresh-session cleanup, dan cancel guard P08-P10.
+- Evidence: full 173/173; dua viewport; target 56-80 px; focus return; fold;
+  reduced motion; Axe serious/critical 0; overflow 0; dependency/secret scan;
+  health dan public smoke tanpa console/page/request error lulus.
+- Batas: QRIS simulator dan state ephemeral. Operator assistance signal, NFC
+  fisik, Customer Platform external UAT, durable outlet runtime, settlement,
+  perangkat, dan business acceptance belum tervalidasi. Readiness tetap 84/100.
+- File diperbarui: `products/sagaops/PRODUCT.md`,
+  `products/sagaops/DOSSIER.md`, `products/sagaops/CHANGELOG.md`,
+  `changelog/PORTFOLIO_CHANGELOG.md`, `CHATGPT_MASTER_KNOWLEDGE.md`,
+  `CHANGELOG.md`, dan `SYNC_STATUS.md`.
+
 ## Saga Member V34 Pusat Data Demo
 
 - Status: `accepted / CONFIRMED /
