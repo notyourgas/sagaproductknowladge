@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-09-05 - Saga Member V35 Install Concierge deployed
+
+- Saga Member main `bb7ed733e4481bf7b0c9391c507a2c2d30bd4ede` (PR #51 dan #52)
+  aktif pada `https://saga-member-platform.vercel.app` melalui deployment
+  `dpl_BwnL5PA2QqsosvMTbdpZVcLNuBog` dari Preview artifact tervalidasi.
+- Profil sekarang memberi instalasi capability-aware, panduan iPhone Safari,
+  status installed, metadata/icon PWA, dan offline cache tanpa CTA palsu.
+- 188 test, canonical-main CI, UAT lima viewport plus text resize 200%,
+  synthetic install lifecycle, iOS Safari, Preview artifact, dan production
+  remote UAT lulus. Runtime tetap dummy; backend/provider/transaksi/real data
+  tetap OFF dan `BUSINESS_READY=false`.
+
 ## 2026-09-05 - Saga POS Kiosk early NFC Member demo
 
 - Saga POS public demo kini dapat memperagakan Tap NFC setelah pemilihan

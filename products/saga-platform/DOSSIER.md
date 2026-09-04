@@ -58,7 +58,28 @@ D0. Customer `f763fc19d8463cf2120387b0d06a57ffa5c868f7` dan Member
 `2eaa35334e59dc2656b98816db6bdc020c478a8f` lulus CI canonical-main, remote
 Chrome UAT, forced-RLS audit, backup/restore dan rollback rehearsal.
 
-Frontend public dummy terkini adalah V34 Pusat Data Demo dari Saga Member main
+Frontend public dummy terkini adalah V35 Install Concierge dari Saga Member
+main `bb7ed733e4481bf7b0c9391c507a2c2d30bd4ede` (PR #51 dan #52), Preview
+`dpl_69aXzYoqu6zC2yjt9ywJkYrLhTdV`, dan production deployment
+`dpl_BwnL5PA2QqsosvMTbdpZVcLNuBog` pada stable URL
+`https://saga-member-platform.vercel.app`. Profil membuka Pusat Instalasi yang
+membedakan status terpasang, prompt-ready, dismissed, unavailable, serta
+panduan iPhone Safari empat langkah. Prompt Chromium hanya dipanggil setelah
+gesture pengguna dan tidak ditampilkan bila capability belum tersedia.
+
+Manifest PWA, icon 180/192/512, Apple metadata, standalone detection, offline
+cache `v49-install-contrast`, focus safety, target 44 px, reduced motion,
+forced colors, dan contrast hardening diverifikasi. Full 188 test,
+canonical-main CI `33912518901`, UAT lima viewport plus text resize 200%,
+synthetic install lifecycle, iOS Safari, Preview artifact, dan remote
+production UAT lulus dengan Axe serious/critical 0, overflow 0, dan backend
+request 0. Runtime tetap `PUBLIC_DUMMY_DEMO`; backend, auth, transaksi, data
+pelanggan, QRIS, Push, NFC, printer, dan provider nyata tetap OFF. Status
+`SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED /
+PUBLIC_DUMMY_DEMO_ACTIVE / PRODUCTION_ACTIVATED=false /
+BUSINESS_READY=false`.
+
+V34 Pusat Data Demo sebelumnya berasal dari Saga Member main
 `bb8307c1ee359a2c340ccbf3b4f9af388798b35d` (PR #50), Preview
 `dpl_D9njs8ouSsEggD1mxHiWeF3aqZ31`, dan production deployment
 `dpl_2HGvjcGmgAAp14CZvQAcYZtAFvjy` pada stable URL

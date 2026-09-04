@@ -1,5 +1,22 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-05 - Saga Member V35 Install Concierge sync
+
+- Informasi `CONFIRMED`: Saga Member main
+  `bb7ed733e4481bf7b0c9391c507a2c2d30bd4ede`, PR #51 dan #52,
+  canonical-main CI `33912518901`, Preview
+  `dpl_69aXzYoqu6zC2yjt9ywJkYrLhTdV`, dan production deployment
+  `dpl_BwnL5PA2QqsosvMTbdpZVcLNuBog` aktif pada stable URL.
+- Perubahan: Pusat Instalasi capability-aware, status installed, panduan
+  iPhone Safari, metadata/icon PWA, offline cache, dan contrast hardening.
+- Delivery: `SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE`;
+  `PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
+- Batas tidak berubah: backend/auth/provider/QRIS/Push/NFC/printer/real data,
+  physical-device acceptance, dan pilot nyata belum diaktifkan atau dibuktikan.
+- Dokumen terdampak: Saga Platform product/dossier/changelog, decisions,
+  portfolio, master knowledge, root changelog, dan sync status.
+
 ## 2026-09-05 - Saga POS Kiosk early NFC Member demo sync
 
 - Informasi `CONFIRMED`: exact deployed source
