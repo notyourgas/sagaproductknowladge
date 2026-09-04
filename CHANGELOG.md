@@ -1,5 +1,13 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-05 - Saga Member V38 Coffee Detail + Rencana Mampir sync
+
+- Informasi `CONFIRMED`: main `1791e0319b1dc36d6b40f61e2e4a3b78cfd5c7a5`, PR #55, PR CI `33925578250`, canonical-main CI `33925766363`, Preview `dpl_BfSV2b8jTf1bs38HHhhksSzzM4d5`, dan production deployment `dpl_wT3spJ7gRBymCnANKwR4MuvFXweQ` aktif pada stable URL.
+- Perubahan: entry Coffee tidak lagi dead-end; detail outlet, menu demo, pilihan waktu, konfirmasi memory-only, edit, dan handoff Quest tersedia tanpa klaim reservasi atau kondisi operasional nyata.
+- Validasi: 193/193 test, lima viewport, keyboard, rapid tap, 200% zoom, forced colors, reduced motion, offline, artifact hash, remote UAT, Axe serious/critical 0, overflow 0, storage write 0, dan backend request 0.
+- Delivery: `SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE`; `PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
+- Batas tidak berubah: backend/auth/provider/QRIS/Push/NFC/printer/transaksi/data nyata tetap OFF. Emoji Akses cepat V37 tetap glyph natural tanpa kotak internal.
+
 
 ## 2026-09-05 - SagaOPS compact identical cart release
 

@@ -1,5 +1,19 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+Saga Member V38 Coffee Detail + Rencana Mampir aktif pada stable public dummy
+URL `https://saga-member-platform.vercel.app` dari canonical main
+`1791e0319b1dc36d6b40f61e2e4a3b78cfd5c7a5` (PR #55), Preview
+`dpl_BfSV2b8jTf1bs38HHhhksSzzM4d5`, dan production deployment
+`dpl_wT3spJ7gRBymCnANKwR4MuvFXweQ`. Banner, Akses cepat, dan kartu Jelajah
+Coffee menuju detail outlet berfoto nyata dengan menu demo, radio waktu native,
+konfirmasi memory-only, edit, dan CTA Quest. Rencana tidak membuat reservasi,
+transaksi, atau storage write dan hilang saat reload; UI tidak mengklaim status
+operasional nyata. Full 193 test, PR CI `33925578250`, main CI `33925766363`,
+lima viewport, keyboard, 200% zoom, forced colors, reduced motion, offline,
+artifact hash, dan production UAT lulus tanpa Axe serious/critical, overflow,
+broken image, atau backend request. Backend/auth/provider/real data tetap OFF,
+`PRODUCTION_ACTIVATED=false`, dan `BUSINESS_READY=false`.
+
 
 ## 2026-09-05 - SagaOPS compact identical cart release
 

@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-181 - Rencana Mampir Saga Member bersifat memory-only dan jujur
+
+| Field | Nilai |
+|---|---|
+| Tanggal | 2026-09-05 |
+| Topik | Continuity Coffee detail pada public dummy Saga Member |
+| Keputusan | Satukan entry Coffee dari banner, Akses cepat, dan Jelajah ke detail outlet. Pengguna boleh memilih slot waktu dan mengonfirmasi Rencana Mampir, tetapi state hanya hidup di memori tab, hilang saat reload, dan tidak boleh disebut reservasi. |
+| Alasan | Entry Coffee sebelumnya menjadi dead-end; public dummy perlu memberi langkah lanjutan yang dapat dicoba tanpa menciptakan klaim operasional, transaksi, atau persistence palsu. |
+| Alternatif | CTA tanpa tujuan; formulir reservasi palsu; penyimpanan localStorage; backend/provider baru; klaim jam buka, jarak, stok, atau ketersediaan nyata. |
+| Dampak | Main `1791e0319b1dc36d6b40f61e2e4a3b78cfd5c7a5`, PR #55, dan deployment `dpl_wT3spJ7gRBymCnANKwR4MuvFXweQ` menyediakan detail Coffee, pilihan waktu aksesibel, konfirmasi/edit, dan handoff Quest tanpa backend, storage, atau provider. |
+| Pemberi keputusan | SAGADEVS Product/UX/UI/Frontend/QA/Security review dalam mandat heartbeat Andreas |
+| Status | `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false` |
+| Dokumen terkait | `products/saga-platform/PRODUCT.md`, `products/saga-platform/DOSSIER.md`, `products/saga-platform/CHANGELOG.md` |
+
 ## DEC-180 - Emoji Akses cepat Saga Member tidak memakai fixed alignment box
 
 | Field | Nilai |

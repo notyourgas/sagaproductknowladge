@@ -8,6 +8,21 @@ Mencatat perubahan material control plane Saga.
 
 Fondasi production dan roadmap pemisahan boundary harus dibedakan.
 
+## 2026-09-05 — Saga Member V38 Coffee Detail + Rencana Mampir deployed
+
+- Main `1791e0319b1dc36d6b40f61e2e4a3b78cfd5c7a5` (PR #55) aktif pada
+  deployment `dpl_wT3spJ7gRBymCnANKwR4MuvFXweQ` setelah Preview
+  `dpl_BfSV2b8jTf1bs38HHhhksSzzM4d5` diverifikasi dengan hash.
+- Tiga entry Coffee kini menuju detail outlet berfoto nyata dengan menu demo,
+  pilihan waktu aksesibel, konfirmasi memory-only, edit, dan handoff Quest.
+- 193/193 test, PR/main CI, lima viewport, keyboard, 200% zoom, forced colors,
+  reduced motion, offline, artifact hash, dan remote UAT lulus tanpa overflow,
+  broken image, storage write, backend request, atau temuan Axe serious/critical.
+- Klasifikasi `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`; rencana bukan reservasi,
+  dan seluruh backend/provider/data nyata tetap OFF.
+
 ## 2026-09-05 — Saga Member V37 Bare Quick Emoji deployed
 
 - Main `cd5bd4bcc5ce0bf836aad72f3a4dd02ae6c97842` (PR #54) aktif pada

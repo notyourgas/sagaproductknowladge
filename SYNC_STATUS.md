@@ -1,5 +1,15 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## Saga Member V38 Coffee Detail + Rencana Mampir
+
+- Status: `accepted / CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+- Source exact: `1791e0319b1dc36d6b40f61e2e4a3b78cfd5c7a5` (PR #55; PR CI `33925578250`; canonical-main CI `33925766363`).
+- Stable deployment: `dpl_wT3spJ7gRBymCnANKwR4MuvFXweQ` pada `https://saga-member-platform.vercel.app`; Preview `dpl_BfSV2b8jTf1bs38HHhhksSzzM4d5` diverifikasi dengan hash sebelum promosi.
+- Perubahan: detail Coffee menutup tiga entry dead-end dengan foto nyata, menu demo, pilihan waktu aksesibel, konfirmasi/edit memory-only, dan CTA Quest.
+- Evidence: 193/193 test, lima viewport, keyboard, rapid tap, 200% zoom, forced colors, reduced motion, offline, Preview/production artifact hash, remote UAT, Axe serious/critical 0, overflow 0, storage write 0, dan backend request 0.
+- Batas: Rencana Mampir bukan reservasi dan hilang saat reload; backend, auth, transaksi, real data, QRIS, Push, NFC, printer, provider nyata, physical UAT, dan pilot nyata tetap OFF.
+- File diperbarui: `products/saga-platform/PRODUCT.md`, `products/saga-platform/DOSSIER.md`, `products/saga-platform/CHANGELOG.md`, `changelog/PORTFOLIO_CHANGELOG.md`, `CHATGPT_MASTER_KNOWLEDGE.md`, `DECISIONS.md`, `CHANGELOG.md`, dan `SYNC_STATUS.md`.
+
 
 ## 2026-09-05 - SagaOPS compact identical cart release
 
