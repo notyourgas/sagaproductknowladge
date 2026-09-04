@@ -1,5 +1,22 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-04 - Saga Member V16 Points Ledger sync
+
+- Informasi `CONFIRMED`: Saga Member main
+  `373742e361a7e702f25c71c7f2ec9edcfb9e6540`, PR #31, PR CI
+  `33834451555`, main CI `33834835680`, Preview
+  `dpl_F8zpHNeYjh1Nt415Jv6Huk4DTmW8`, dan production deployment
+  `dpl_FttVUMWWb8JhwyCNFZxXHA2KY6eL` aktif pada stable URL.
+- Before -> after: tiga baris Aktivitas sederhana berubah menjadi ledger Points
+  mobile dengan saldo, ringkasan flow, filter, kelompok tanggal, status, dan
+  detail bottom sheet yang mudah dipindai.
+- 129/129 test, exact PR/main CI, audit dependency, Preview artifact
+  verification, local UAT, dan public UAT lima viewport lulus.
+- Backend/provider/data nyata tetap OFF, `PRODUCTION_ACTIVATED=false`, dan
+  `BUSINESS_READY=false`. Dokumen terdampak: Saga Platform
+  product/dossier/changelog, portfolio, master knowledge, root changelog, dan
+  sync status.
+
 ## 2026-09-04 - SagaOPS Payment Confidence sync
 
 - Informasi `CONFIRMED`: source exact

@@ -1,5 +1,21 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+Saga Member V16 Points Ledger aktif pada stable public dummy URL
+`https://saga-member-platform.vercel.app` dari canonical main
+`373742e361a7e702f25c71c7f2ec9edcfb9e6540` (PR #31) dan deployment
+`dpl_FttVUMWWb8JhwyCNFZxXHA2KY6eL`. Halaman Aktivitas kini memprioritaskan
+saldo Points, ringkasan masuk/dipakai/diproses, filter, kelompok tanggal,
+status, waktu, dan detail on demand dalam native bottom sheet. Detail memakai
+referensi bantuan bertopeng dan data dummy saja.
+
+129/129 test, PR CI `33834451555`, main CI `33834835680`, audit dependency
+nol vulnerability, Preview `dpl_F8zpHNeYjh1Nt415Jv6Huk4DTmW8`, local UAT,
+dan public UAT 320–430 px lulus tanpa overflow, console, page, atau runtime
+error. Status `SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / REAL_BACKEND_OFF /
+REAL_PROVIDER_OFF / REAL_DATA_OFF / PRODUCTION_ACTIVATED=false /
+BUSINESS_READY=false`.
+
 Saga Member V15 Human Copy & Moments aktif pada stable public dummy URL
 `https://saga-member-platform.vercel.app` dari canonical main
 `d6efc0394f0c991d64dd657c4614b7fdc9dee048` (PR #30) dan deployment

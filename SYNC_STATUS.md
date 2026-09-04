@@ -15,7 +15,34 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-09-04 WIB |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `87f1ea7` |
+| Baseline sebelum pembaruan | `216f6c9` |
+
+## Saga Member V16 Points Ledger
+
+- Source canonical main `373742e361a7e702f25c71c7f2ec9edcfb9e6540`
+  dari PR #31.
+- Production deployment `dpl_FttVUMWWb8JhwyCNFZxXHA2KY6eL` READY dan aktif
+  pada `https://saga-member-platform.vercel.app` setelah exact Preview
+  `dpl_F8zpHNeYjh1Nt415Jv6Huk4DTmW8` diverifikasi.
+- Aktivitas memakai ledger Points mobile dengan saldo, ringkasan flow, filter,
+  kelompok tanggal, status, dan native bottom-sheet detail bertopeng.
+- 129/129 test, PR CI `33834451555`, main CI `33834835680`, dependency audit
+  nol vulnerability, local UAT, Preview artifact check, dan public UAT lima
+  viewport lulus tanpa overflow, console, page, atau runtime error.
+- Status `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / REAL_BACKEND_OFF /
+  REAL_PROVIDER_OFF / REAL_DATA_OFF / PRODUCTION_ACTIVATED=false /
+  BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi Saga Member V16
+
+- `products/saga-platform/PRODUCT.md`
+- `products/saga-platform/DOSSIER.md`
+- `products/saga-platform/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaOPS Payment Confidence P08–P09
 

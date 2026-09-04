@@ -11,6 +11,18 @@
 - Production/canary tidak berubah, readiness 84/100, transaksi locked,
   settlement pending, dan `BUSINESS_READY=false`.
 
+## 2026-09-04 - Saga Member V16 Points Ledger deployed
+
+- Saga Member main `373742e361a7e702f25c71c7f2ec9edcfb9e6540` (PR #31)
+  aktif pada `https://saga-member-platform.vercel.app` melalui deployment
+  `dpl_FttVUMWWb8JhwyCNFZxXHA2KY6eL`.
+- Riwayat Points memakai hierarchy ledger mobile: saldo, ringkasan flow,
+  filter, tanggal, status, dan detail transaksi dummy dalam bottom sheet.
+- 129/129 test, exact PR/main CI, audit dependency, Preview verification,
+  serta public UAT lima viewport lulus tanpa overflow atau browser error.
+- Runtime tetap dummy; backend, provider, transaksi, dan data nyata OFF,
+  `PRODUCTION_ACTIVATED=false`, `BUSINESS_READY=false`.
+
 ## 2026-09-04 - Saga Member V15 Human Copy & Moments deployed
 
 - Saga Member main `d6efc0394f0c991d64dd657c4614b7fdc9dee048` (PR #30)
