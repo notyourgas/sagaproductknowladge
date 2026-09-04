@@ -8,6 +8,18 @@ Mencatat perubahan material SagaOPS.
 
 Prototype dan production outlet adalah evidence level yang berbeda.
 
+## 2026-09-04 — Availability History membuka jejak perubahan menu
+
+- Source exact `e0df398` dipush ke branch Saga POS.
+- Owner Admin membaca maksimal 20 audit event terbaru dengan item, before/after,
+  actor, reason, timestamp, catalog version, dan filter Sold out/Dipulihkan.
+- History berasal dari server, cloned, read-only, dan dibatasi owner state;
+  tabel mempunyai caption, scope, dan timestamp machine-readable.
+- Full suite 132/132, dua viewport, Axe nol serious/critical, static/type check,
+  dan secret scan lulus. Dependency tidak berubah; fresh npm audit timeout.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production, canary,
+  settlement, readiness 84/100, dan `BUSINESS_READY=false` tidak berubah.
+
 ## 2026-09-04 — Admin Control Room V2 mengamankan availability menu
 
 - Source exact `960a5e6` sudah dipush ke branch Saga POS.

@@ -8,7 +8,7 @@ sales, dan konten SagaOPS.
 ## Konteks dan status bukti
 
 - Updated: 4 September 2026
-- Delivery: `SOURCE_PUSHED_BRANCH / PORTRAIT_KIOSK_LOCAL_VALIDATED / KDS_V2_LOCAL_VALIDATED / CASHIER_V2_LOCAL_VALIDATED / OWNER_DASHBOARD_V2_LOCAL_VALIDATED / ADMIN_CONTROL_ROOM_V2_LOCAL_VALIDATED / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_DEPLOYED / TRIAL99_CANARY_PAID`
+- Delivery: `SOURCE_PUSHED_BRANCH / PORTRAIT_KIOSK_LOCAL_VALIDATED / KDS_V2_LOCAL_VALIDATED / CASHIER_V2_LOCAL_VALIDATED / OWNER_DASHBOARD_V2_LOCAL_VALIDATED / ADMIN_CONTROL_ROOM_V2_LOCAL_VALIDATED / ADMIN_AVAILABILITY_HISTORY_LOCAL_VALIDATED / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_DEPLOYED / TRIAL99_CANARY_PAID`
 - Activation: `SAGADEV_PLATFORM_ACTIVATED / TRANSACTIONS_LOCKED`
 - Business readiness: `BLOCKED`
 
@@ -239,6 +239,18 @@ audit dependency nol vulnerability, dan secret scan lulus tanpa dependency
 baru. Multi-terminal deployed cache, reset otomatis, audit-log review, dan
 operator UAT nyata masih pending; status `LOCAL_VALIDATED /
 IMPLEMENTED_NOT_DEPLOYED`.
+
+Availability History exact `e0df398` menutup gap review alasan pada Admin.
+Domain audit menyimpan `previousAvailable`, status akhir, item, actor, reason,
+timestamp, dan version; reader mengembalikan structured clone newest-first
+dengan limit 1-100, sementara Admin state membatasi 20 event. UI memakai filter
+Semua/Sold out/Dipulihkan, honest empty state, caption, scope header/row, dan
+elemen `time` machine-readable. Full suite 132/132, dua viewport, Axe nol
+serious/critical, static/type check, dan secret scan lulus. Dependency/lockfile
+tidak berubah; fresh npm audit retry terkena registry timeout, sedangkan exact
+sebelumnya `960a5e6` memiliki nol production vulnerability. History masih
+in-memory local lab; persistence, retention, multi-instance, dan outlet UAT
+belum terbukti.
 
 Readiness program mencapai M4 84/100 setelah W25 durable runtime lulus lokal.
 Founder menyetujui harga customer-final,

@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-04 - SagaOPS Availability History sync
+
+- Informasi `CONFIRMED`: source exact `e0df398` dipush dengan bounded server
+  history, before/after, actor, reason, timestamp, version, filter, dan semantic
+  table untuk Owner Admin.
+- 132/132 test, Axe, dua viewport, static/type check, dan secret scan lulus;
+  dependency tidak berubah dan fresh npm audit timeout.
+- Production/canary tidak berubah; readiness 84/100 dan
+  `BUSINESS_READY=false`.
+- Dokumen terdampak: SagaOPS product/dossier/changelog, gaps, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-09-04 - SagaOPS Admin Control Room V2 sync
 
 - Informasi `CONFIRMED`: source exact `960a5e6` dipush dengan availability

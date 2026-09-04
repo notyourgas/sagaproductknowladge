@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-09-04 - SagaOPS Availability History local validated
+
+- Saga POS exact `e0df398` menambah audit history Owner untuk item,
+  before/after, actor, reason, timestamp, catalog version, dan filter perubahan.
+- History server-owned/read-only dan tabel accessible; full suite 132/132, Axe,
+  dua viewport, static/type check, dan secret scan lulus.
+- Dependency tidak berubah; fresh registry audit timeout. Production/canary
+  tidak berubah, readiness tetap 84/100, dan `BUSINESS_READY=false`.
+
 ## 2026-09-04 - SagaOPS Admin Control Room V2 local validated
 
 - Saga POS exact `960a5e6` menambah availability command desk dengan search,

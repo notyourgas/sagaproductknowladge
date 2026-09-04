@@ -1,7 +1,7 @@
 # SagaOPS Product Knowledge
 
 Updated: 4 September 2026
-Evidence status: `CONFIRMED / SOURCE_PUSHED_BRANCH / PORTRAIT_KIOSK_LOCAL_VALIDATED / KDS_V2_LOCAL_VALIDATED / CASHIER_V2_LOCAL_VALIDATED / OWNER_DASHBOARD_V2_LOCAL_VALIDATED / ADMIN_CONTROL_ROOM_V2_LOCAL_VALIDATED / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_ACTIVATED / PRIVATE_CANARY_PAID_AND_LOCKED / SETTLEMENT_PENDING_CLEARING / BUSINESS_READY=false`
+Evidence status: `CONFIRMED / SOURCE_PUSHED_BRANCH / PORTRAIT_KIOSK_LOCAL_VALIDATED / KDS_V2_LOCAL_VALIDATED / CASHIER_V2_LOCAL_VALIDATED / OWNER_DASHBOARD_V2_LOCAL_VALIDATED / ADMIN_CONTROL_ROOM_V2_LOCAL_VALIDATED / ADMIN_AVAILABILITY_HISTORY_LOCAL_VALIDATED / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_ACTIVATED / PRIVATE_CANARY_PAID_AND_LOCKED / SETTLEMENT_PENDING_CLEARING / BUSINESS_READY=false`
 
 ## Tujuan dokumen
 
@@ -53,6 +53,8 @@ kasir dan Back Office untuk owner/manager.
   antrean dan settlement, payment breakdown, serta integration boundary.
 - Admin Control Room V2 dengan search/filter availability, status per menu,
   preview dampak, alasan wajib, konfirmasi, dan feedback catalog version.
+- Availability History read-only dengan before/after, actor, alasan, waktu,
+  catalog version, dan filter Sold out/Dipulihkan.
 - Kiosk portrait 1080×1920 dan 720×1280 dengan flow order type, katalog,
   modifier per-line, cart, member optional, QRIS pending/recovery, success,
   idle reset, serta out-of-service fallback.
@@ -95,7 +97,7 @@ BUSINESS_READY=false`.
   direkonsiliasi atomik dari provider `Success` dengan audit metadata.
 
 - Saga POS implementation exact `9a43a89`, dengan current branch head
-  `960a5e6`, sudah dipush ke branch yang sama dan
+  `e0df398`, sudah dipush ke branch yang sama dan
   mengimplementasikan kiosk portrait P01-P12 berpedoman pada visual Saga Member
   V5 dengan typography serta sizing code-native. Plus Jakarta Sans berlisensi,
   target sentuh, state machine, restore payment pending, server-owned quote,
@@ -128,6 +130,11 @@ BUSINESS_READY=false`.
   server-owned, dengan dampak Kiosk/Cashier lokal, alasan wajib, cancel/focus
   recovery, serta catalog version setelah konfirmasi. Full suite 132/132,
   browser 1440×900 dan 1024×768, Axe, audit dependency, dan secret scan lulus.
+- Availability History exact `e0df398` mengekspos maksimal 20 event audit
+  server newest-first kepada Owner Admin. History menampilkan before/after,
+  item, actor, reason, timestamp machine-readable, dan version dalam tabel
+  semantik yang dapat difilter. Full suite 132/132 dan Axe lulus; dependency
+  tidak berubah. Fresh audit registry timeout dan wajib diulang saat tersedia.
 
 - Saga POS source branch `codex/saga-pos-vs01-kiosk-kds-dashboard` exact
   `d9598dd94200c8cd3e2fc1bbdf8245acec1f69cc` menyelesaikan local program

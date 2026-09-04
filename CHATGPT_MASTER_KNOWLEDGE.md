@@ -1,5 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+Saga POS current branch head `e0df398` sudah dipush dengan Availability History
+untuk Owner Admin. Maksimal 20 audit event server terbaru menampilkan item,
+before/after, actor, reason, timestamp, dan catalog version; filter Sold out dan
+Dipulihkan, semantic caption/scope, machine-readable time, serta empty state
+tersedia. History cloned dan read-only. 132/132 test, Axe nol serious/critical,
+dua viewport, static/type check, dan secret scan lulus. Dependency tidak berubah;
+fresh npm audit retry timeout, sedangkan exact `960a5e6` sebelumnya nol production
+vulnerability. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production,
+canary, settlement, readiness 84/100, dan `BUSINESS_READY=false` tidak berubah.
+
 Saga POS current branch head `960a5e6` sudah dipush dengan Admin Control Room
 V2. Owner kini dapat mencari/filter 18 menu, membaca status sold-out, melihat
 dampak Kiosk/Cashier lokal, memilih alasan wajib, dan mengonfirmasi atau batal
