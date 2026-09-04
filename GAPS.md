@@ -1269,7 +1269,8 @@ GAP-004, bukan gap implementasi warna komponen.
   checkout/outbox, dan restart recovery. Evidence exact
   `8b63df321c3a0f7aeba9080eea5ac044470a6d8c` bersifat lokal dan belum
   membuktikan external PostgreSQL, multi-instance, atau staging recovery.
-- `TODO`: source terbaru exact `ec8ffd9` (menu asset completion;
+- `TODO`: source terbaru exact `795cc33` (Saga Payment Confidence P08–P09;
+  menu asset completion `ec8ffd9`;
   scheduled availability `f5c446b`;
   stale-version conflict guard `54fda1a`;
   Availability History `e0df398`; Admin Control
@@ -1297,8 +1298,10 @@ GAP-004, bukan gap implementasi warna komponen.
   worker, transaksi/row lock database durable, deployed cache convergence,
   kalender hari libur/jam outlet nyata, durable audit retention/export,
   multi-device dan operator UAT.
-- `CONFIRMED`: fresh production dependency audit exact `ec8ffd9` lulus nol
-  vulnerability; dependency/lockfile tidak berubah dan secret scan nol.
+- `CONFIRMED`: exact `795cc33` lulus full suite 138/138, focused
+  payment/portrait 13/13, secret scan, dan OSV 31 package production/0 temuan;
+  dependency/lockfile tidak berubah. Endpoint npm audit resmi timeout dua kali,
+  sehingga fresh npm advisory result masih perlu diulang saat registry pulih.
 - `TODO`: verifikasi dan terima external gate W26-W34. Seluruh contract dan
   preparation sudah dijalankan lokal, tetapi sembilan wave masih blocked oleh
   live provider, hardware, staging, staff, pilot, release, dan business acceptance;

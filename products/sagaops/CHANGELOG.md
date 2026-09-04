@@ -8,6 +8,20 @@ Mencatat perubahan material SagaOPS.
 
 Prototype dan production outlet adalah evidence level yang berbeda.
 
+## 2026-09-04 — Saga Payment Confidence P08–P09 tervalidasi lokal
+
+- Source exact `795cc3327249aeee7575deb66bdda9e2be09d1f3` dipush ke branch Saga POS.
+- Payment pending kini menjelaskan tiga tahap, mengumumkan status server secara
+  accessible, memakai bounded backoff, menyediakan manual recheck, dan memberi
+  warning anti-double-payment. Recovery membedakan unknown, expired, failed,
+  dan cancelled tanpa membuat payment intent baru.
+- Focused payment/portrait 13/13 dan full suite 138/138 lulus pada 1080×1920
+  serta 720×1280; Axe serious/critical nol, no overflow, touch target, secret
+  scan, dan OSV 31 package/0 temuan lulus. `npm audit` resmi timeout dua kali.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; price/payment truth,
+  gateway runtime, canary lock, settlement, readiness 84/100, dan
+  `BUSINESS_READY=false` tidak berubah.
+
 ## 2026-09-04 — Seluruh kartu menu kiosk memiliki visual lokal
 
 - Source exact `ec8ffd907c7766d552ca91fe50ce79358398b28e` dipush ke branch

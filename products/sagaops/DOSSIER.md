@@ -184,7 +184,7 @@ exact `d9598dd94200c8cd3e2fc1bbdf8245acec1f69cc` lulus 112/112 test, browser
 E2E/accessibility, dependency audit, screenshot evidence, serta local
 PostgreSQL enam migration/RLS/cross-outlet deny.
 
-Source implementation `9a43a89`, current branch head `ec8ffd9`, mengganti
+Source implementation `9a43a89`, current branch head `795cc33`, mengganti
 customer kiosk menjadi pengalaman portrait
 P01-P12 pada 1080×1920 dan 720×1280. Alur mencakup order type, katalog dua
 kolom, modifier per-line, cart/server quote, member optional, QRIS-only,
@@ -200,6 +200,18 @@ viewport portrait, QR allowlist, reload recovery, serta KDS exactly-once lulus.
 Aset dummy belum membuktikan resep atau appearance final dan seluruh visual
 menunggu owner review/foto nyata. Ini `LOCAL_VALIDATED /
 IMPLEMENTED_NOT_DEPLOYED` dan tidak membuka external gate atau transaksi baru.
+
+Saga Payment Confidence exact `795cc3327249aeee7575deb66bdda9e2be09d1f3`
+menutup gap P08 Payment Pending dan P09 Payment Recovery. Customer melihat urutan
+scan, bayar, lalu tunggu konfirmasi; status server diumumkan melalui live region;
+production polling memakai backoff 2,5/4/6/10/15/20 detik lalu berhenti; manual
+status check tetap tersedia tanpa membuat intent baru. Unknown, expired, failed,
+dan cancelled memiliki risiko dan tindakan berbeda, sementara warning melarang
+pembayaran ulang sebelum status dipastikan. Full suite 138/138, focused 13/13,
+dua viewport portrait, Axe, overflow, touch target, secret scan, dan OSV 31
+package/0 temuan lulus. `npm audit` resmi timeout dua kali. Ini hanya source/local
+validation; gateway runtime, canary lock, settlement, dan readiness 84/100 tidak
+berubah.
 
 KDS V2 exact `973f81c` menutup pain point scanability bar: ticket aging memakai
 server clock, queue summary dan filter status terlihat di first fold, modifier

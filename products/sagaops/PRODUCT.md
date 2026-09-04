@@ -1,7 +1,7 @@
 # SagaOPS Product Knowledge
 
 Updated: 4 September 2026
-Evidence status: `CONFIRMED / SOURCE_PUSHED_BRANCH / PORTRAIT_KIOSK_LOCAL_VALIDATED / MENU_ASSETS_18_OF_18_LOCAL_VALIDATED / KDS_V2_LOCAL_VALIDATED / CASHIER_V2_LOCAL_VALIDATED / OWNER_DASHBOARD_V2_LOCAL_VALIDATED / ADMIN_CONTROL_ROOM_V2_LOCAL_VALIDATED / ADMIN_AVAILABILITY_HISTORY_LOCAL_VALIDATED / ADMIN_STALE_VERSION_GUARD_LOCAL_VALIDATED / ADMIN_SCHEDULED_AVAILABILITY_LOCAL_VALIDATED / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_ACTIVATED / PRIVATE_CANARY_PAID_AND_LOCKED / SETTLEMENT_PENDING_CLEARING / BUSINESS_READY=false`
+Evidence status: `CONFIRMED / SOURCE_PUSHED_BRANCH / PORTRAIT_KIOSK_LOCAL_VALIDATED / KIOSK_PAYMENT_CONFIDENCE_LOCAL_VALIDATED / MENU_ASSETS_18_OF_18_LOCAL_VALIDATED / KDS_V2_LOCAL_VALIDATED / CASHIER_V2_LOCAL_VALIDATED / OWNER_DASHBOARD_V2_LOCAL_VALIDATED / ADMIN_CONTROL_ROOM_V2_LOCAL_VALIDATED / ADMIN_AVAILABILITY_HISTORY_LOCAL_VALIDATED / ADMIN_STALE_VERSION_GUARD_LOCAL_VALIDATED / ADMIN_SCHEDULED_AVAILABILITY_LOCAL_VALIDATED / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_ACTIVATED / PRIVATE_CANARY_PAID_AND_LOCKED / SETTLEMENT_PENDING_CLEARING / BUSINESS_READY=false`
 
 ## Tujuan dokumen
 
@@ -63,6 +63,9 @@ kasir dan Back Office untuk owner/manager.
 - Kiosk portrait 1080×1920 dan 720×1280 dengan flow order type, katalog,
   modifier per-line, cart, member optional, QRIS pending/recovery, success,
   idle reset, serta out-of-service fallback.
+- Saga Payment Confidence pada P08–P09: panduan scan/bayar/tunggu, live status
+  server, polling production ber-backoff dan terbatas, pemeriksaan manual,
+  peringatan anti-double-payment, serta recovery spesifik per status.
 - Catalog 18 menu Kopi Saga Salak, modifier fixture, cash/shift, QRIS simulator,
   Member/Reward fixture, sold-out versioning, refund/remake contract, report,
   export, device/print boundary, dan safe kiosk reset.
@@ -102,12 +105,16 @@ BUSINESS_READY=false`.
   direkonsiliasi atomik dari provider `Success` dengan audit metadata.
 
 - Saga POS implementation exact `9a43a89`, dengan current branch head
-  `ec8ffd907c7766d552ca91fe50ce79358398b28e`, sudah dipush ke branch yang sama dan
+  `795cc3327249aeee7575deb66bdda9e2be09d1f3`, sudah dipush ke branch yang sama dan
   mengimplementasikan kiosk portrait P01-P12 berpedoman pada visual Saga Member
   V5 dengan typography serta sizing code-native. Plus Jakarta Sans berlisensi,
   target sentuh, state machine, restore payment pending, server-owned quote,
-  QR PNG allowlist, serta CTA modifier portrait telah diterapkan. Full suite
-  terkini 133/133 dan audit dependency production nol vulnerability lulus.
+  QR PNG allowlist, serta CTA modifier portrait telah diterapkan. P08–P09 kini
+  memiliki Saga Payment Confidence tanpa mengubah kontrak gateway atau payment
+  truth. Full suite terkini 138/138; focused payment/portrait 13/13, Axe,
+  overflow, touch target, secret scan, dan OSV 31 package/0 temuan lulus.
+  Endpoint npm audit resmi timeout dua kali dan dicatat sebagai keterbatasan
+  jaringan, bukan bukti pass.
 - Seluruh 18 kartu menu kini memiliki visual: sembilan kandidat minuman
   konvensional dan sembilan PNG transparan 512×768 hasil ImageGen sebagai
   illustrative dummy. Placeholder kotak tulisan tidak lagi dipakai untuk katalog
