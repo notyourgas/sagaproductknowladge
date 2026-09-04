@@ -1,5 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+SagaOPS Kiosk P01 welcome tervalidasi lokal pada source exact
+`8708170b994b879199dbc34de040055c3bfffd49` yang sudah dipush. Hero memakai
+aset ilustratif Es Kopi Saga yang sama dengan katalog, bukan lagi cup generik
+buatan CSS. Aset termuat dan CTA tetap dalam fold pada 720x1280 serta
+1080x1920; full suite 150/150, focused template/browser 16/16, Axe
+serious/critical nol, overflow nol, secret scan nol, dan OSV 31 package/0
+vulnerability lulus. Aset tetap dummy dan belum membuktikan tampilan produk
+nyata. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production,
+canary, settlement, readiness 84/100, dan `BUSINESS_READY=false` tidak berubah.
+
 SagaOPS Kiosk modifier P04 dan cart P05 tervalidasi lokal pada source exact
 `fb51829c6af067d71331249b9e1f35fcc7e32a58` yang sudah dipush. Komposisi
 ImageGen V2 diterapkan secara code-native dengan density berbeda untuk

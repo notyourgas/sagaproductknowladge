@@ -8,6 +8,19 @@ Mencatat perubahan material SagaOPS.
 
 Prototype dan production outlet adalah evidence level yang berbeda.
 
+## 2026-09-04 — Hero welcome Kiosk memakai minuman katalog
+
+- Source exact `8708170b994b879199dbc34de040055c3bfffd49` dipush ke branch Saga POS.
+- P01 welcome mengganti cup generik buatan CSS dengan aset ilustratif Es Kopi
+  Saga yang sudah terdaftar di katalog. Hierarchy dan CTA tetap code-native.
+- Full suite 150/150 serta focused template + browser 16/16 lulus pada
+  720x1280 dan 1080x1920; aset termuat, CTA berada dalam fold, Axe
+  serious/critical nol, overflow nol, secret scan nol, dan OSV 31 package/0
+  vulnerability.
+- Aset tetap dummy ilustratif dan memerlukan owner review/foto produk final.
+  Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production, canary,
+  settlement, readiness 84/100, dan `BUSINESS_READY=false` tidak berubah.
+
 ## 2026-09-04 — Modifier dan cart V2 tervalidasi lokal
 
 - Source exact `fb51829c6af067d71331249b9e1f35fcc7e32a58` dipush ke branch Saga POS.

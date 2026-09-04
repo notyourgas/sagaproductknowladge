@@ -8,7 +8,7 @@ sales, dan konten SagaOPS.
 ## Konteks dan status bukti
 
 - Updated: 4 September 2026
-- Delivery: `SOURCE_PUSHED_BRANCH / PORTRAIT_KIOSK_LOCAL_VALIDATED / KIOSK_UIUX_SPRINTS_LOCAL_VALIDATED / KIOSK_MODIFIER_CART_V2_LOCAL_VALIDATED / MENU_ASSETS_18_OF_18_LOCAL_VALIDATED / KDS_V2_LOCAL_VALIDATED / CASHIER_V2_LOCAL_VALIDATED / OWNER_DASHBOARD_V2_LOCAL_VALIDATED / ADMIN_CONTROL_ROOM_V2_LOCAL_VALIDATED / ADMIN_AVAILABILITY_HISTORY_LOCAL_VALIDATED / ADMIN_STALE_VERSION_GUARD_LOCAL_VALIDATED / ADMIN_SCHEDULED_AVAILABILITY_LOCAL_VALIDATED / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_DEPLOYED / TRIAL99_CANARY_PAID`
+- Delivery: `SOURCE_PUSHED_BRANCH / PORTRAIT_KIOSK_LOCAL_VALIDATED / KIOSK_WELCOME_HERO_LOCAL_VALIDATED / KIOSK_UIUX_SPRINTS_LOCAL_VALIDATED / KIOSK_MODIFIER_CART_V2_LOCAL_VALIDATED / MENU_ASSETS_18_OF_18_LOCAL_VALIDATED / KDS_V2_LOCAL_VALIDATED / CASHIER_V2_LOCAL_VALIDATED / OWNER_DASHBOARD_V2_LOCAL_VALIDATED / ADMIN_CONTROL_ROOM_V2_LOCAL_VALIDATED / ADMIN_AVAILABILITY_HISTORY_LOCAL_VALIDATED / ADMIN_STALE_VERSION_GUARD_LOCAL_VALIDATED / ADMIN_SCHEDULED_AVAILABILITY_LOCAL_VALIDATED / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_DEPLOYED / TRIAL99_CANARY_PAID`
 - Activation: `SAGADEV_PLATFORM_ACTIVATED / TRANSACTIONS_LOCKED`
 - Business readiness: `BLOCKED`
 
@@ -53,16 +53,17 @@ fallback, nota checker/KDS, Owner Dashboard, POS Admin, menu Kopi Saga Salak,
 modifier, cash/shift, QRIS simulator, Member/Reward fixture, availability,
 refund/remake, report/export, device health dan print spooler boundary.
 Kiosk portrait P01-P12 pada source exact
-`fb51829c6af067d71331249b9e1f35fcc7e32a58` kini memiliki hierarchy kategori
+`8708170b994b879199dbc34de040055c3bfffd49` kini memiliki hierarchy kategori
 dan modifier yang lebih jelas, cart dengan harga per item dan undo, jalur QRIS
 tunggal yang lebih singkat, QR stabil saat polling, bantuan kontekstual,
 recovery offline/outage/idle, serta focus dan status announcement yang lebih
 tepat. P04-P05 mengikuti density reference ImageGen V2 secara code-native:
 pilihan suhu/manis dan dua add-on berharga dihitung server, total menyatu dengan
 CTA, edit/hapus quantity dipisah, order type dapat diubah dengan requote, dan
-jarak antarkelompok action dibatasi. Delapan belas aset referensi aktif memakai
-WebP total 1,17 MB dari source PNG 15,48 MB. Full suite 149/149 dan focused
-Kiosk UI/UX 8/8 lulus; Axe serious/critical nol, no horizontal overflow,
+jarak antarkelompok action dibatasi. P01 memakai aset ilustratif Es Kopi Saga
+yang sama dengan katalog menggantikan cup CSS generik. Delapan belas aset
+referensi aktif memakai WebP total 1,17 MB dari source PNG 15,48 MB. Full suite
+150/150 dan focused Kiosk template + UI/UX 16/16 lulus; Axe serious/critical nol, no horizontal overflow,
 touch/density gap, secret diff scan nol temuan, dan OSV 31 package/0
 vulnerability lulus. Perubahan ini masih
 `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; validasi fisik portrait,

@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-04 - SagaOPS Kiosk welcome hero sync
+
+- Informasi `CONFIRMED`: Saga POS exact
+  `8708170b994b879199dbc34de040055c3bfffd49` sudah dipush.
+- P01 mengganti cup CSS generik dengan aset ilustratif Es Kopi Saga dari
+  katalog; 150/150 full test dan 16/16 focused template/browser lulus pada dua
+  viewport, termasuk Axe, overflow, secret scan, dan OSV.
+- Aset tetap dummy menunggu owner review/foto final. Delivery tetap
+  `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production, readiness 84/100,
+  dan `BUSINESS_READY=false` tidak berubah.
+- Dokumen terdampak: SagaOPS product/dossier/changelog, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-09-04 - SagaOPS Kiosk modifier dan cart V2 sync
 
 - Informasi `CONFIRMED`: Saga POS exact

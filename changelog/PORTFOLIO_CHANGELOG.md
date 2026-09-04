@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-09-04 - SagaOPS Kiosk welcome hero local validated
+
+- Saga POS exact `8708170b994b879199dbc34de040055c3bfffd49` dipush dengan P01
+  yang memakai aset ilustratif Es Kopi Saga dari katalog, menggantikan cup CSS.
+- 150/150 full test dan 16/16 focused template/browser lulus pada dua viewport;
+  Axe serious/critical, overflow, secret scan, dan OSV tidak menemukan masalah.
+- Aset masih dummy menunggu owner review/foto final. Status tetap
+  `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness 84/100 dan
+  `BUSINESS_READY=false` tidak berubah.
+
 ## 2026-09-04 - SagaOPS Kiosk modifier dan cart V2 local validated
 
 - Saga POS exact `fb51829c6af067d71331249b9e1f35fcc7e32a58` dipush dengan

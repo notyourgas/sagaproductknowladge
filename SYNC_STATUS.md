@@ -15,7 +15,29 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-09-04 WIB |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `3350694562dabed899af7b0c85a63bedddefc23e` |
+| Baseline sebelum pembaruan | `ad6e56b91d86338cbe21986d7ed69ca4028b499e` |
+
+## SagaOPS Kiosk welcome hero
+
+- Source exact `8708170b994b879199dbc34de040055c3bfffd49` sudah dipush ke
+  branch Saga POS.
+- P01 mengganti cup generik CSS dengan aset ilustratif Es Kopi Saga dari
+  katalog. Full suite 150/150 dan focused template/browser 16/16 lulus pada
+  720x1280 serta 1080x1920; Axe serious/critical, overflow, secret scan, dan
+  OSV 31 package/0 vulnerability lulus.
+- Aset masih dummy dan memerlukan owner review/foto final. Status `CONFIRMED /
+  KIOSK_WELCOME_HERO_LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  BUSINESS_READY=false`; production dan readiness formal 84/100 tidak berubah.
+
+## File yang berubah pada sinkronisasi SagaOPS Kiosk welcome hero
+
+- `products/sagaops/PRODUCT.md`
+- `products/sagaops/DOSSIER.md`
+- `products/sagaops/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaOPS Kiosk modifier dan cart V2
 
