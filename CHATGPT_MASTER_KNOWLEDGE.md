@@ -1,6 +1,23 @@
 # Saga Product — Master Knowledge for ChatGPT
 
 
+Saga Member V39 Studio Brief Pocket aktif pada stable public dummy URL
+`https://saga-member-platform.vercel.app` dari canonical main
+`8019eaf550bb6eb1c8e620e5372f2cf1ab782cd5` (PR #56), Preview
+`dpl_4jEJu9Q74fvhCN4NbdjVYK8Un5ZY`, dan production deployment
+`dpl_296rvEny9sGj3DfoeJejRqFMLmuV`. Entry Studio membuka detail Saga Studio
+berfoto nyata. Pengguna memilih tujuan personal, produk, atau bareng melalui
+radio native; hasil memberi tiga arahan foto kontekstual, konfirmasi/edit, dan
+handoff checklist. State hanya hidup dalam memori tab, hilang saat reload, dan
+bukan booking atau transaksi. Full 197 test, PR CI `33930057801`, main CI
+`33930273512`, lima viewport, keyboard, rapid submit, invalid-value recovery,
+200% zoom, forced colors, reduced motion, offline, hash enam artifact, dan
+production UAT lulus tanpa Axe serious/critical, overflow, broken image, storage
+write, atau backend request. Emoji Akses cepat tetap glyph natural tanpa kotak
+internal. Backend/auth/provider/real data tetap OFF,
+`PRODUCTION_ACTIVATED=false`, dan `BUSINESS_READY=false`.
+
+
 ## 2026-09-05 - SagaOPS portrait modifier touch panel deployed
 
 - `CONFIRMED / LOCAL_VALIDATED / VERCEL_PUBLIC_DEMO_DEPLOYED / PRODUCT_PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.

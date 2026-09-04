@@ -58,7 +58,23 @@ D0. Customer `f763fc19d8463cf2120387b0d06a57ffa5c868f7` dan Member
 `2eaa35334e59dc2656b98816db6bdc020c478a8f` lulus CI canonical-main, remote
 Chrome UAT, forced-RLS audit, backup/restore dan rollback rehearsal.
 
-Frontend public dummy terkini adalah V38 Coffee Detail + Rencana Mampir dari
+Frontend public dummy terkini adalah V39 Studio Brief Pocket dari Saga Member
+main `8019eaf550bb6eb1c8e620e5372f2cf1ab782cd5` (PR #56), Preview
+`dpl_4jEJu9Q74fvhCN4NbdjVYK8Un5ZY`, dan production deployment
+`dpl_296rvEny9sGj3DfoeJejRqFMLmuV` pada stable URL
+`https://saga-member-platform.vercel.app`. Entry Studio membuka halaman foto
+nyata dengan formulir radio native untuk personal, produk, atau bareng; hasil
+menampilkan tiga arahan foto, status konfirmasi, edit, dan handoff checklist.
+
+Brief Pocket hanya menggunakan memori tab dan tidak membuat booking, transaksi,
+storage write, atau request backend. Reload mengembalikan fixture. Jadwal,
+ketersediaan, harga, serta operasional nyata tidak diklaim. Emoji Akses cepat
+tetap glyph natural tanpa fixed box. Full 197 test, PR/main CI, lima viewport,
+keyboard, invalid-value recovery, 200% zoom, forced colors, reduced motion,
+offline, artifact hash, dan remote UAT lulus; backend/auth/provider/data nyata
+tetap OFF, `PRODUCTION_ACTIVATED=false`, dan `BUSINESS_READY=false`.
+
+Frontend public dummy V38 Coffee Detail + Rencana Mampir berasal dari
 Saga Member main `1791e0319b1dc36d6b40f61e2e4a3b78cfd5c7a5` (PR #55), Preview
 `dpl_BfSV2b8jTf1bs38HHhhksSzzM4d5`, dan production deployment
 `dpl_wT3spJ7gRBymCnANKwR4MuvFXweQ` pada stable URL

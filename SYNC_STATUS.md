@@ -1,6 +1,17 @@
 # Status Sinkronisasi Saga Product Knowledge
 
 
+## Saga Member V39 Studio Brief Pocket
+
+- Status: `accepted / CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+- Source exact: `8019eaf550bb6eb1c8e620e5372f2cf1ab782cd5` (PR #56; PR CI `33930057801`; canonical-main CI `33930273512`).
+- Stable deployment: `dpl_296rvEny9sGj3DfoeJejRqFMLmuV` pada `https://saga-member-platform.vercel.app`; Preview `dpl_4jEJu9Q74fvhCN4NbdjVYK8Un5ZY` diverifikasi dengan hash sebelum promosi.
+- Perubahan: detail Studio dengan foto nyata, tiga tujuan brief, tiga arahan foto kontekstual, konfirmasi/edit, dan handoff checklist dalam state memory-only.
+- Evidence: 197/197 test, lima viewport, keyboard, rapid submit, invalid-value recovery, 200% zoom, forced colors, reduced motion, offline, hash enam artifact, remote UAT, Axe serious/critical 0, overflow 0, broken image 0, storage write 0, dan backend request 0.
+- Batas: Brief Pocket bukan booking dan hilang saat reload; backend, auth, transaksi, real data, QRIS, Push, NFC, printer, provider nyata, physical UAT, dan pilot nyata tetap OFF. Emoji Akses cepat tetap glyph natural tanpa kotak internal.
+- File diperbarui: `products/saga-platform/PRODUCT.md`, `products/saga-platform/DOSSIER.md`, `products/saga-platform/CHANGELOG.md`, `changelog/PORTFOLIO_CHANGELOG.md`, `CHATGPT_MASTER_KNOWLEDGE.md`, `DECISIONS.md`, `CHANGELOG.md`, dan `SYNC_STATUS.md`.
+
+
 ## 2026-09-05 - SagaOPS portrait modifier touch panel deployed
 
 - `CONFIRMED / LOCAL_VALIDATED / VERCEL_PUBLIC_DEMO_DEPLOYED / PRODUCT_PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
