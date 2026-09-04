@@ -8,6 +8,21 @@ Mencatat perubahan material SagaOPS.
 
 Prototype dan production outlet adalah evidence level yang berbeda.
 
+## 2026-09-05 — P10 success time control Kiosk aktif di Vercel
+
+- Exact runtime source `3f14f522cfaf5887f0a62c52d7a9aa58fca08f34`
+  aktif melalui deployment `dpl_5rpTFJfqfLKLGiLJLkYh3ZR8hatJ`.
+- Hard reset 12 detik berubah menjadi default 30 detik. Pelanggan dapat menambah
+  20 detik lewat satu tap sampai sepuluh kali, kemudian eventual privacy reset
+  tetap mengembalikan Kiosk ke P01.
+- Extension tidak membuat order/payment baru. Browser clock membuktikan
+  30→230→P01 tanpa sleep atau menunggu palsu.
+- Full 171/171, dua viewport, keyboard/touch, reduced motion, Axe, overflow,
+  dependency/secret scan, stable health, dan public smoke lulus.
+- Status `CONFIRMED / PRODUCTION_DEPLOYED / PUBLIC_DEMO_ACTIVE /
+  QRIS_SIMULATOR_ONLY / PRODUCT_PRODUCTION_ACTIVATED=false /
+  BUSINESS_READY=false`; readiness tetap 84/100.
+
 ## 2026-09-04 — Member degraded recovery Kiosk aktif di Vercel
 
 - Exact runtime source `4f2986c8b51d14312cce81d4b0b7ecc820a1988a`

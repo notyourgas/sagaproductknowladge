@@ -1,5 +1,16 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+Saga POS Kiosk P10 success time control aktif pada stable URL
+`https://saga-pos-kiosk.vercel.app/kiosk` dari exact runtime
+`3f14f522cfaf5887f0a62c52d7a9aa58fca08f34` dan deployment
+`dpl_5rpTFJfqfLKLGiLJLkYh3ZR8hatJ`. Waktu baca success berubah dari hard reset
+12 detik menjadi default 30 detik dengan extension 20 detik hingga sepuluh
+kali atau total 230 detik. Extension tidak membuat order/payment; timer tetap
+membersihkan session ke P01. Full 171/171, browser clock, dua viewport,
+keyboard/touch, reduced motion, Axe/overflow, dependency/secret scan, health,
+dan public smoke lulus. Runtime tetap QRIS simulator ephemeral; readiness formal
+tetap 84/100 dan seluruh gate outlet eksternal tidak berubah.
+
 Saga Member V33 Notification Rhythm aktif pada stable public dummy URL
 `https://saga-member-platform.vercel.app` dari canonical main
 `cda26b0aa5291cd00003f56d3377a9de4219b441` (PR #49), Preview
