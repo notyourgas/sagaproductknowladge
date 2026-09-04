@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-162 - Label aktif Saga Member mengambang di atas navbar ringkas
+
+| Field | Nilai |
+|---|---|
+| Tanggal | 2026-09-04 |
+| Topik | Struktur bottom navigation mobile Saga Member |
+| Keputusan | Navbar tetap pendek dan icon-only. Kotak aktif hanya mengelilingi ikon, sedangkan nama menu tampil dalam badge kecil terpisah di atas navbar ketika tujuan tersebut aktif. |
+| Alasan | Andreas mengoreksi bahwa label tidak boleh menjadi baris internal yang menambah tinggi navbar; hierarchy harus tetap satu baris ikon dengan label kontekstual mengambang. |
+| Alternatif | Label aktif berada di dalam navbar; semua label selalu terlihat; ikon aktif diperbesar bersama teks. |
+| Dampak | Main `9a3661781158723b43da2bcb6e1960b4edad607a` dan deployment `dpl_5295PJjEdxDbheZV6yZHareHWr2Q` menerapkan navbar maksimal 60 px, badge 28 px di atas bar, ikon 22 px, indikator 42 px, tombol 48 px, serta UAT semua rute. Backend/provider/data nyata tetap OFF. |
+| Pemberi keputusan | Andreas |
+| Status | `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false` |
+| Dokumen terkait | `products/saga-platform/PRODUCT.md`, `products/saga-platform/DOSSIER.md`, `products/saga-platform/CHANGELOG.md` |
+
 ## DEC-161 - Saga POS Kiosk dideploy sebagai public simulator demo
 
 | Field | Nilai |
@@ -46,7 +60,7 @@ keputusan pengganti.
 | Alternatif | Mempertahankan semua label; memakai label di bawah ikon; membesarkan menu aktif hingga mengubah jarak antaritem. |
 | Dampak | Main `f19bf3e2f0cd77d0a94af1021668aa342dc05feb` dan deployment `dpl_Cs4Uwe6CM8J6k7BRybdWrbEFxoad` menerapkan ikon 22x22 px, label aktif 12 px, indikator 42 px, target sentuh minimal 44 px, dan accessible name pada public dummy. Backend/provider/data nyata tetap OFF. |
 | Pemberi keputusan | Andreas |
-| Status | `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false` |
+| Status | `DEPRECATED / REPLACED_BY_DEC-162` |
 | Dokumen terkait | `products/saga-platform/PRODUCT.md`, `products/saga-platform/DOSSIER.md`, `products/saga-platform/CHANGELOG.md` |
 
 ## DEC-159 - P03 Saga POS memakai fixed touch canvas dan equal-height categories

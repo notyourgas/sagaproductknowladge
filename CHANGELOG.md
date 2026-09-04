@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-04 - Saga Member V25 compact navigation + floating label sync
+
+- Informasi `CONFIRMED`: Saga Member main
+  `9a3661781158723b43da2bcb6e1960b4edad607a`, PR #41, PR CI
+  `33865512758`, main CI `33866066664`, Preview
+  `dpl_4ugw4zDsQ8pm5TUpPToPb2tqTucE`, dan production deployment
+  `dpl_5295PJjEdxDbheZV6yZHareHWr2Q` aktif pada stable URL.
+- Navbar menjadi icon-only satu baris; label aktif berada dalam badge terpisah
+  di atas bar. Delivery tetap public dummy dan `BUSINESS_READY=false`.
+- Dokumen terdampak: Saga Platform product/dossier/changelog, decisions,
+  portfolio, master knowledge, root changelog, dan sync status.
+
 ## 2026-09-04 - SagaOPS Kiosk Vercel public demo sync
 
 - Informasi `CONFIRMED`: exact runtime source

@@ -1,5 +1,18 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+Saga Member V25 Compact Navigation + Floating Label aktif pada stable public
+dummy URL `https://saga-member-platform.vercel.app` dari canonical main
+`9a3661781158723b43da2bcb6e1960b4edad607a` (PR #41), Preview
+`dpl_4ugw4zDsQ8pm5TUpPToPb2tqTucE`, dan production deployment
+`dpl_5295PJjEdxDbheZV6yZHareHWr2Q`. Navbar menjadi satu baris ikon maksimal
+60 px; label aktif tampil dalam badge 28 px terpisah di atas bar dan terpusat
+pada ikon. Feather icon tetap 22x22 px, indikator 42 px, tombol 48 px, dan
+accessible name eksplisit. Full 152 test, PR CI `33865512758`, main CI
+`33866066664`, local UAT lima viewport, serta remote production UAT
+320/390/430 px lulus tanpa overflow atau console error. Backend, provider, NFC
+nyata, transaksi, dan real data tetap OFF; `PRODUCTION_ACTIVATED=false` dan
+`BUSINESS_READY=false`.
+
 SagaOPS Kiosk public demo aktif pada
 `https://saga-pos-kiosk.vercel.app/kiosk` dari exact runtime source
 `7fc4ff483b053db904511f8ae2106ce34ef975e8` melalui Vercel deployment
