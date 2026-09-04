@@ -1,5 +1,26 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## Saga POS Kiosk Member degraded recovery
+
+- Status: `accepted / CONFIRMED / PUBLIC_DEMO_ACTIVE /
+  PRODUCT_PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+- Source exact: `4f2986c8b51d14312cce81d4b0b7ecc820a1988a`.
+- Stable deployment: `dpl_9sMc9pvvdDqSCi8AK6QGXyPxQHyA` pada
+  `https://saga-pos-kiosk.vercel.app/kiosk`.
+- Perubahan: recovery Member memberi retry dan guest fallback, guest dapat
+  membuka katalog termuat saat offline, serta public quote tidak lagi membawa
+  identifier member internal. Binding trusted server tetap dipertahankan.
+- Evidence: full 170/170; dua portrait viewport; Axe serious/critical 0;
+  overflow 0; target sentuh minimal 56 px; dependency/secret scan, health, dan
+  remote member journey lulus.
+- Batas: QRIS simulator dan state ephemeral. NFC fisik, Customer Platform
+  external UAT, durable outlet runtime, settlement, perangkat, serta business
+  acceptance belum tervalidasi. Readiness formal tetap 84/100.
+- File diperbarui: `products/sagaops/PRODUCT.md`,
+  `products/sagaops/DOSSIER.md`, `products/sagaops/CHANGELOG.md`,
+  `changelog/PORTFOLIO_CHANGELOG.md`, `CHATGPT_MASTER_KNOWLEDGE.md`,
+  `CHANGELOG.md`, dan `SYNC_STATUS.md`.
+
 ## Tujuan
 
 Memberi snapshot public-safe tentang kondisi sinkronisasi repository setelah setiap pembaruan.

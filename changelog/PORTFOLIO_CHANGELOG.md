@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-09-04 - Saga POS Kiosk Member degraded recovery deployed
+
+- `CONFIRMED`: Saga POS source
+  `4f2986c8b51d14312cce81d4b0b7ecc820a1988a` aktif pada stable public demo
+  melalui deployment `dpl_9sMc9pvvdDqSCi8AK6QGXyPxQHyA`.
+- Customer Platform outage kini memiliki retry dan guest fallback yang jelas;
+  failure tidak membuat order/payment dan guest tetap dapat memakai katalog
+  yang sudah termuat saat offline.
+- Public quote meminimalkan data Member tanpa memutus binding trusted server.
+- Full 170/170, dua viewport, Axe, overflow, touch/fold, dependency/secret scan,
+  health, dan remote smoke lulus.
+- Produk lain tidak berubah. Public runtime tetap simulator ephemeral;
+  readiness formal 84/100 dan `BUSINESS_READY=false`.
+
 ## 2026-09-04 - Saga Member V32 Reward Passbook Recovery Lab deployed
 
 - Saga Member main `e1c54a6a6ea4bc2a3766af516fc17911e3ff9c37` (PR #48)

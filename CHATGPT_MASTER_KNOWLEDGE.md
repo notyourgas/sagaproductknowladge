@@ -1,5 +1,18 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+Saga POS Kiosk Member degraded recovery aktif pada stable URL
+`https://saga-pos-kiosk.vercel.app/kiosk` dari exact runtime
+`4f2986c8b51d14312cce81d4b0b7ecc820a1988a` dan deployment
+`dpl_9sMc9pvvdDqSCi8AK6QGXyPxQHyA`. Outage Saga Member pada P02A memberi
+`Coba lagi` dan `Lanjut sebagai guest`; failure injection membuktikan nol
+order/payment intent dan guest dapat membuka katalog yang sudah termuat saat
+offline. Public quote tidak membawa identifier member internal, sedangkan
+fingerprint dan order tetap terikat pada trusted server context. Full 170/170,
+dua viewport, Axe/overflow/touch/fold, dependency/secret scan, health, dan
+remote member journey lulus. Runtime tetap QRIS simulator ephemeral; NFC fisik,
+Customer Platform external UAT, durable outlet release, settlement, dan
+business acceptance belum terbukti. Readiness formal tetap 84/100.
+
 SagaOPS Kiosk checkout quote guard aktif pada stable URL
 `https://saga-pos-kiosk.vercel.app/kiosk` dari exact runtime source
 `7217bf2dd4b5ff54cd06c765501b5b9ba882127e` dan deployment

@@ -8,6 +8,21 @@ Mencatat perubahan material SagaOPS.
 
 Prototype dan production outlet adalah evidence level yang berbeda.
 
+## 2026-09-04 — Member degraded recovery Kiosk aktif di Vercel
+
+- Exact runtime source `4f2986c8b51d14312cce81d4b0b7ecc820a1988a`
+  aktif melalui deployment `dpl_9sMc9pvvdDqSCi8AK6QGXyPxQHyA`.
+- Outage Saga Member memberi recovery eksplisit `Coba lagi` dan
+  `Lanjut sebagai guest`; kegagalan tidak membuat order/payment intent dan
+  guest tetap dapat membuka katalog termuat saat offline.
+- Public quote tidak lagi membawa identifier member internal; fingerprint dan
+  order tetap terikat pada member hasil verifikasi server.
+- Full 170/170, dua viewport, Axe, overflow, touch/fold, dependency/secret scan,
+  stable health, dan remote member journey lulus.
+- Status `CONFIRMED / PRODUCTION_DEPLOYED / PUBLIC_DEMO_ACTIVE /
+  QRIS_SIMULATOR_ONLY / PRODUCT_PRODUCTION_ACTIVATED=false /
+  BUSINESS_READY=false`; readiness tetap 84/100.
+
 ## 2026-09-04 — Checkout quote drift guard Kiosk aktif di Vercel
 
 - Exact runtime source `7217bf2dd4b5ff54cd06c765501b5b9ba882127e`

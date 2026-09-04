@@ -167,6 +167,18 @@ dependency/secret scan, preview/stable smoke, serta browser public journey
 lulus. Public runtime tetap simulator ephemeral; readiness formal 84/100,
 NFC fisik, Customer Platform external UAT, outlet activation, dan
 `BUSINESS_READY` tidak berubah.
+Kiosk Member degraded recovery exact runtime source
+`4f2986c8b51d14312cce81d4b0b7ecc820a1988a` aktif melalui deployment
+`dpl_9sMc9pvvdDqSCi8AK6QGXyPxQHyA`. Ketika layanan Member gagal, P02A
+menampilkan error tekstual dan tindakan eksplisit `Coba lagi` atau
+`Lanjut sebagai guest`; jalur guest tetap dapat membuka katalog termuat saat
+offline dan failure injection membuktikan nol order/payment intent. Public
+quote hanya membawa nama tampilan, kode tersamarkan, dan tier; identifier
+internal tetap berada pada trusted server context untuk fingerprint serta
+binding order. Full 170/170, dua viewport portrait, Axe serious/critical nol,
+overflow nol, target sentuh minimal 56 px, dependency/secret scan, stable
+health, serta remote member journey lulus. Runtime tetap public simulator
+ephemeral; readiness formal 84/100 dan gate external tidak berubah.
 Disk-backed local durable runtime kini mengikat checkout/outbox atomik,
 idempotency, collision-safe order counter, signed-event replay guard,
 exactly-once fulfillment, refund work item, dan restart recovery untuk

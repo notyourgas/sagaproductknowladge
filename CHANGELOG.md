@@ -1,5 +1,25 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-04 - Saga POS Kiosk Member degraded recovery sync
+
+- Informasi `CONFIRMED`: exact source
+  `4f2986c8b51d14312cce81d4b0b7ecc820a1988a` dan stable public demo
+  deployment `dpl_9sMc9pvvdDqSCi8AK6QGXyPxQHyA`.
+- Perubahan: outage Member kini memiliki retry dan guest fallback; public quote
+  menghilangkan identifier internal tanpa memutus binding server.
+- Alasan: menutup acceptance S14, dead-end pelanggan, dan data minimisation.
+- Area terdampak: SagaOPS/Saga POS Kiosk P02A–P03 dan kontrak public quote.
+- File terdampak: product, dossier, product/portfolio/root changelog, master
+  knowledge, dan sync status SagaOPS.
+- Delivery: public demo simulator aktif; production outlet dan business
+  readiness tidak berubah. Readiness formal 84/100.
+- Validasi: full 170/170, dua viewport, Axe, overflow, touch/fold,
+  dependency/secret scan, stable health, dan remote member journey.
+- Blocker: NFC fisik, Customer Platform external UAT, durable outlet runtime,
+  settlement, perangkat outlet, dan business acceptance.
+- Production produk lain tidak berubah. Source: Saga POS release evidence,
+  4 September 2026. Knowledge commit menggunakan `main HEAD`.
+
 ## 2026-09-04 - Saga Member V32 Reward Passbook Recovery Lab sync
 
 - Informasi `CONFIRMED`: Saga Member main
