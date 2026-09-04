@@ -8,6 +8,24 @@ Mencatat perubahan material control plane Saga.
 
 Fondasi production dan roadmap pemisahan boundary harus dibedakan.
 
+## 2026-09-04 — Saga Member V32 Reward Passbook Recovery Lab deployed
+
+- Main `e1c54a6a6ea4bc2a3766af516fc17911e3ff9c37` (PR #48) aktif pada
+  deployment `dpl_5837edXEQ5NRDfTpuPcGv318f6aB` dan stable public URL setelah
+  Preview `dpl_8BiwmoLjfu3Xi4L6C5rEQm8Z5HS9` berstatus Ready.
+- Passbook public dummy kini memperagakan aktif, kosong, gangguan, loading,
+  recovery, empty CTA ke katalog, dan pembatalan retry ketika navigasi.
+- State memori-tab, saldo 128, dan nol request backend dipertahankan; kontrol
+  native, live region, target 44 px, reduced motion, dan cache offline
+  `v45-reward-recovery` diverifikasi.
+- 175/175 test, exact PR/main CI, local UAT lima viewport plus text resize
+  200%, accessibility, dan remote production UAT lima viewport lulus tanpa
+  overflow atau page/console/request failure.
+- Klasifikasi `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
+  REAL_BACKEND_OFF / REAL_PROVIDER_OFF / REAL_DATA_OFF /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 ## 2026-09-04 — Saga Member V31 Reward Passbook deployed
 
 - Main `1ce0242239cef53234bee58b73c2f99e97ea03c3` (PR #47) aktif pada

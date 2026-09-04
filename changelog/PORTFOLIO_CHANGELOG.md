@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-09-04 - Saga Member V32 Reward Passbook Recovery Lab deployed
+
+- Saga Member main `e1c54a6a6ea4bc2a3766af516fc17911e3ff9c37` (PR #48)
+  aktif pada `https://saga-member-platform.vercel.app` melalui deployment
+  `dpl_5837edXEQ5NRDfTpuPcGv318f6aB`.
+- Public dummy dapat memperagakan active/empty/error/loading/recovery;
+  empty CTA, retry yang aman saat navigasi, dan live feedback tidak mengubah
+  saldo atau backend.
+- 175 test, exact PR/main CI, local mobile/text-resize UAT, dan remote
+  production UAT lima viewport lulus. Runtime tetap dummy tanpa backend,
+  transaksi, provider, atau data nyata; `BUSINESS_READY=false`.
+
 ## 2026-09-04 - SagaOPS Kiosk checkout quote guard deployed
 
 - Saga POS runtime exact `7217bf2dd4b5ff54cd06c765501b5b9ba882127e`
