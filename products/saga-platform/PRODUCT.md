@@ -66,6 +66,25 @@ Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
 - Pemisahan bounded context dan adapter dilakukan bertahap.
 - Bukan rewrite total.
 
+### Saga Member V23 Member Card Preview & Apply
+
+- Saga Member canonical main `81e89e6b361277fda5370e51749e3bcc62f8cf3d`
+  (PR #39) aktif pada Vercel production deployment
+  `dpl_BgEheE2Ue2fnGp8WJj9S9zv8roWp` melalui stable public URL
+  `https://saga-member-platform.vercel.app`, setelah Preview
+  `dpl_2hcsR9LCdEi45WaQmfySuSmtuwRU` divalidasi.
+- Kartu aktif kini dipisahkan dari pratinjau. Menggeser tema atau memilih
+  varian hanya mengubah preview; preference baru disimpan setelah CTA
+  `Ganti ke desain ini` ditekan. Dialog `Tampilkan Pass` dan ekspor PNG selalu
+  memakai kartu aktif, bukan preview yang belum diterapkan.
+- Full 150 test, PR CI `33860460618`, canonical-main CI `33861023848`
+  attempt 2, local UAT lima viewport, dan remote production UAT lulus tanpa
+  overflow atau console error. Attempt pertama main CI timeout saat download
+  Chromium sebelum test berjalan; rerun exact commit lulus.
+- Runtime tetap `PUBLIC_DUMMY_DEMO`; backend, auth, provider, transaksi, data
+  pelanggan, QRIS, Push, NFC, printer, dan pilot nyata tidak aktif.
+  `PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
+
 ### Saga Member V22 Jelajah Hero Typography
 
 - Saga Member canonical main `7c82148e599fea9cd42eac1f8cb7f5bf617f310e`

@@ -15,7 +15,33 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-09-04 WIB |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `e439e76269521a88680f3f2910b597ca16be9de6` |
+| Baseline sebelum pembaruan | `e51e5961f5e2160f4fbd560527b36b6140ff6ba1` |
+
+## Saga Member V23 Member Card Preview & Apply
+
+- Source exact `81e89e6b361277fda5370e51749e3bcc62f8cf3d` (PR #39) aktif
+  pada Vercel production deployment `dpl_BgEheE2Ue2fnGp8WJj9S9zv8roWp`
+  melalui stable public URL.
+- Theme stepper dan pilihan varian hanya mengubah preview. Preference aktif
+  baru disimpan melalui `Ganti ke desain ini`; Pass dialog dan ekspor PNG
+  tetap membaca kartu aktif sebelum apply.
+- Full 150 test, PR/main CI exact commit, local UAT lima viewport, dan remote
+  production behavior UAT lulus tanpa overflow atau console error. Main CI
+  attempt pertama timeout pada download Chromium; attempt 2 lulus.
+- Status `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi Saga Member V23
+
+- `products/saga-platform/PRODUCT.md`
+- `products/saga-platform/DOSSIER.md`
+- `products/saga-platform/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `DECISIONS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaOPS Kiosk category rail continuity
 

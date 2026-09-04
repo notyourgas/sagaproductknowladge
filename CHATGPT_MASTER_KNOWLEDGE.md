@@ -1,5 +1,19 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+Saga Member V23 Member Card Preview & Apply aktif pada stable public dummy URL
+`https://saga-member-platform.vercel.app` dari canonical main
+`81e89e6b361277fda5370e51749e3bcc62f8cf3d` (PR #39), Preview
+`dpl_2hcsR9LCdEi45WaQmfySuSmtuwRU`, dan production deployment
+`dpl_BgEheE2Ue2fnGp8WJj9S9zv8roWp`. Stepper tema dan pilihan varian hanya
+mengubah pratinjau. Kartu aktif baru diganti setelah CTA
+`Ganti ke desain ini` ditekan; dialog `Tampilkan Pass` dan ekspor PNG selalu
+memakai kartu aktif sampai perubahan diterapkan. Full 150 test, PR CI
+`33860460618`, main CI `33861023848` attempt 2, local UAT lima viewport, serta
+remote production behavior UAT lulus. Attempt pertama main CI timeout saat
+download Chromium sebelum test berjalan; rerun exact commit lulus. Backend,
+provider, NFC nyata, transaksi, dan real data tetap OFF;
+`PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
+
 SagaOPS Kiosk category rail continuity tervalidasi lokal pada source exact
 `a7611c647045feaf9340ed737cf29b3054acf80f` yang sudah dipush. Setelah tujuh
 kategori memakai kartu foto tinggi, baseline rail 720x1280 mencapai 1.411 px
