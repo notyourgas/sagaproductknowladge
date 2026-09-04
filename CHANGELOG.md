@@ -1,5 +1,22 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-04 - Saga Member V18 Editorial Story Banner sync
+
+- Informasi `CONFIRMED`: Saga Member main
+  `1e8d64783cebdd21213c5c661d93a3dfd3235e41`, PR #34, PR CI
+  `33840636398`, main CI `33840964968`, Preview
+  `dpl_Fe54oYSjCaUGohBxUKp3gFaDm1Vd`, dan production deployment
+  `dpl_3AG6DEUdFz12SrPfTq3twcAqEzw7` aktif pada stable URL.
+- Before -> after: nested glass card pada banner berubah menjadi satu komposisi
+  editorial foto penuh dengan scrim, copy lebih singkat, radius 24 px, dan CTA
+  44 px pada empat story Beranda.
+- 136/136 test, exact PR/main CI, local/public UAT lima viewport, Axe, touch
+  target, geometry banner, offline shell, dan Vercel inspection lulus.
+- Backend/provider/data nyata tetap OFF, `PRODUCTION_ACTIVATED=false`, dan
+  `BUSINESS_READY=false`. Dokumen terdampak: Saga Platform
+  product/dossier/changelog, decisions, portfolio, master knowledge, root
+  changelog, dan sync status.
+
 ## 2026-09-04 - Saga Member V17 Inbox Center sync
 
 - Informasi `CONFIRMED`: Saga Member main

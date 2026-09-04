@@ -15,7 +15,35 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-09-04 WIB |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `7a69e4b` |
+| Baseline sebelum pembaruan | `fe14e9b` |
+
+## Saga Member V18 Editorial Story Banner
+
+- Source canonical main `1e8d64783cebdd21213c5c661d93a3dfd3235e41`
+  dari PR #34.
+- Production deployment `dpl_3AG6DEUdFz12SrPfTq3twcAqEzw7` READY dan aktif
+  pada `https://saga-member-platform.vercel.app` setelah Preview
+  `dpl_Fe54oYSjCaUGohBxUKp3gFaDm1Vd` berstatus Ready.
+- Empat story Beranda memakai banner editorial foto penuh 160–168 px, solid
+  scrim, radius 24 px, copy ringkas, dan CTA 44 px tanpa nested glass card.
+- 136/136 test, PR CI `33840636398`, main CI `33840964968`, local/public UAT
+  lima viewport, Axe, touch target, geometry banner, offline shell, dan Vercel
+  inspection lulus.
+- Status `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
+  REAL_BACKEND_OFF / REAL_PROVIDER_OFF / REAL_DATA_OFF /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi Saga Member V18
+
+- `products/saga-platform/PRODUCT.md`
+- `products/saga-platform/DOSSIER.md`
+- `products/saga-platform/CHANGELOG.md`
+- `DECISIONS.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## Saga Member V17 Inbox Center
 

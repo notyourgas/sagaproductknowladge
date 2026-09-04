@@ -58,7 +58,28 @@ D0. Customer `f763fc19d8463cf2120387b0d06a57ffa5c868f7` dan Member
 `2eaa35334e59dc2656b98816db6bdc020c478a8f` lulus CI canonical-main, remote
 Chrome UAT, forced-RLS audit, backup/restore dan rollback rehearsal.
 
-Frontend public dummy terkini adalah V17 Inbox Center dari Saga Member main
+Frontend public dummy terkini adalah V18 Editorial Story Banner dari Saga
+Member main `1e8d64783cebdd21213c5c661d93a3dfd3235e41` (PR #34), Preview
+deployment `dpl_Fe54oYSjCaUGohBxUKp3gFaDm1Vd`, dan Vercel production
+deployment `dpl_3AG6DEUdFz12SrPfTq3twcAqEzw7` pada stable URL
+`https://saga-member-platform.vercel.app`. Empat slide Beranda memakai foto
+penuh dengan solid scrim, tinggi 160–168 px, radius 24 px, hierarki copy
+eyebrow/judul/body/CTA, serta Feather `arrow-up-right`. Panel kaca inset yang
+sebelumnya menutup foto sudah dihapus.
+
+Kontrol pause, previous/next, swipe, autoplay empat detik, off-screen pause,
+dan reduced-motion tetap aktif. CTA serta kontrol minimal 44 px. 136/136 test,
+PR CI `33840636398`, canonical-main CI `33840964968`, local UAT, public UAT
+320/360/375/390/430 px, Axe, geometry banner, offline shell, dan Vercel
+inspection lulus. Protected Preview tidak dapat digunakan sebagai anonymous
+browser evidence karena Deployment Protection; artefak yang sama dipromosikan
+setelah exact-main CI hijau lalu diverifikasi pada stable public alias.
+Runtime tetap `PUBLIC_DUMMY_DEMO`; backend, auth, provider, transaksi, data
+pelanggan, QRIS, Push, NFC, printer, dan pilot nyata tidak aktif. Status
+`SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED /
+PUBLIC_DUMMY_DEMO_ACTIVE / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
+Frontend public dummy V17 sebelumnya adalah Inbox Center dari Saga Member main
 `537efb165da794fdebb881f74748fa1dcf60b8e9` (PR #32/#33), Preview deployment
 `dpl_4RpC7DeFjPGhf1gQZ1QZmdZYV1yn`, dan Vercel production deployment
 `dpl_5b4D5EseVase3sVv3pbVx6sruzUd` pada stable URL
