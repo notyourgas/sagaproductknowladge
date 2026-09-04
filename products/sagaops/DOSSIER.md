@@ -125,6 +125,20 @@ menjadi authority untuk P09 atau success. Browser clock pada 720×1280 dan
 1080×1920 membuktikan overlay tanpa overflow, Axe serious/critical nol, satu
 request, serta tidak ada false success. Focused Kiosk 32/32 dan full 164/164
 lulus. Exact artifact dipromosikan setelah candidate health/static/asset smoke.
+Kiosk early-member exact source `ddb16339578e8696ff154260a027d04c162a9676`
+memindahkan identifikasi Member dari setelah cart menjadi sesudah pilihan Dine
+In/Takeaway. Member Code tervalidasi server sebelum katalog, raw code tidak
+dipersistenkan ke draft, dan respons public-safe hanya memuat nama tampilan,
+kode tersamarkan, tier, serta rekomendasi dari produk aktif. Member mendapat
+screen sapaan, tiga rekomendasi tabel ringkas, serta kategori `Untukmu`; guest
+tetap memiliki jalur eksplisit. Region NFC hadir sebagai capability tetapi
+jujur `NOT_RUN` karena hardware belum tersedia. Full regression 165/165,
+focused unit/API 14/14, browser 21/21 pada 720×1280 dan 1080×1920, Axe
+serious/critical nol, no-overflow, target sentuh, dependency audit, secret scan,
+candidate/stable smoke, dan browser public journey lulus. Runtime code aktif
+pada stable URL melalui deployment `dpl_H8kP3NdyzdufLJ2xhMABC5AmXGNo`.
+Customer Platform external UAT, NFC fisik, durable outlet runtime, dan owner
+business acceptance tetap pending; readiness formal tetap 84/100.
 Disk-backed local durable runtime kini mengikat checkout/outbox atomik,
 idempotency, collision-safe order counter, signed-event replay guard,
 exactly-once fulfillment, refund work item, dan restart recovery untuk

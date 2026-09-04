@@ -15,7 +15,33 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-09-04 WIB |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `e15d8a79e91a160c1b72cb093d9b00bcd3d7e5c9` |
+| Baseline sebelum pembaruan | `7445315458b97c742e02374f469916735fcee579` |
+
+## SagaOPS Kiosk early Member dan rekomendasi
+
+- Source exact `ddb16339578e8696ff154260a027d04c162a9676` dipush dan runtime
+  code aktif pada Vercel deployment `dpl_H8kP3NdyzdufLJ2xhMABC5AmXGNo`
+  melalui stable public URL.
+- Identifikasi Member berpindah ke sesudah Dine In/Takeaway. Member valid
+  mendapat sapaan, tiga rekomendasi produk aktif, dan kategori `Untukmu`;
+  guest tetap dapat lanjut. NFC fisik dinyatakan belum tersedia.
+- Full 165/165, focused unit/API 14/14, browser 21/21 di dua viewport, Axe,
+  overflow, touch target, dependency/secret scan, dan public browser smoke
+  lulus.
+- Status `CONFIRMED / PUBLIC_DEMO_DEPLOYED / MEMBER_LOCAL_FIXTURE /
+  NFC_NOT_RUN / PRODUCT_PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`;
+  readiness tetap 84/100.
+
+## File yang berubah pada sinkronisasi early Member Kiosk
+
+- `products/sagaops/PRODUCT.md`
+- `products/sagaops/DOSSIER.md`
+- `products/sagaops/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `DECISIONS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## Saga Member V29 Quest Trail
 

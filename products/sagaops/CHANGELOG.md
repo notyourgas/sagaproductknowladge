@@ -8,6 +8,23 @@ Mencatat perubahan material SagaOPS.
 
 Prototype dan production outlet adalah evidence level yang berbeda.
 
+## 2026-09-04 — Early Member dan rekomendasi personal Kiosk aktif di Vercel
+
+- Exact source `ddb16339578e8696ff154260a027d04c162a9676` dipush pada branch
+  Saga POS dan runtime code aktif melalui deployment
+  `dpl_H8kP3NdyzdufLJ2xhMABC5AmXGNo` di stable Kiosk.
+- Flow berubah dari Member setelah cart menjadi Member sesudah Dine
+  In/Takeaway. Member valid mendapat sapaan, tiga rekomendasi produk aktif, dan
+  kategori `Untukmu`; guest dapat lanjut tanpa akun.
+- Raw Member Code tidak dipersistenkan ke draft. Respons client hanya memuat
+  fakta public-safe. NFC fisik tetap `NOT_RUN` dan UI menyatakan belum tersedia.
+- Full 165/165, focused unit/API 14/14, browser 21/21 di dua viewport, Axe,
+  overflow, touch target, dependency/secret scan, serta public browser smoke
+  lulus.
+- Status `CONFIRMED / PRODUCTION_DEPLOYED / PUBLIC_DEMO_ACTIVE /
+  MEMBER_LOCAL_FIXTURE / NFC_NOT_RUN / PRODUCT_PRODUCTION_ACTIVATED=false /
+  BUSINESS_READY=false`; readiness tetap 84/100.
+
 ## 2026-09-04 — QRIS expiry handoff Kiosk aktif di Vercel
 
 - Exact source `1c383ef861b706728a0d712a02c0a9bda7596d17` aktif pada stable Kiosk

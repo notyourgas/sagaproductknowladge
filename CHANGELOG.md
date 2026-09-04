@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-04 - SagaOPS Kiosk early Member sync
+
+- Informasi `CONFIRMED`: exact source
+  `ddb16339578e8696ff154260a027d04c162a9676` dipush dan runtime code early
+  Member aktif pada stable Kiosk melalui deployment
+  `dpl_H8kP3NdyzdufLJ2xhMABC5AmXGNo`.
+- Member berpindah ke sesudah pilihan order type dan membuka sapaan,
+  rekomendasi, serta kategori `Untukmu`. Guest tetap eksplisit; NFC fisik dan
+  external Customer Platform UAT belum dijalankan.
+- Dokumen terdampak: SagaOPS product/dossier/changelog, decisions, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-09-04 - Saga Member V29 Quest Trail sync
 
 - Informasi `CONFIRMED`: Saga Member main

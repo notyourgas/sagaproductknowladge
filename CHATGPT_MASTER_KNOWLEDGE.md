@@ -7057,6 +7057,19 @@ Endpoint npm audit resmi timeout. Perubahan hanya local validated/not deployed;
 production, canary, settlement, readiness 84/100, dan business readiness tidak
 berubah.
 
+Update early Member Kiosk 4 September 2026: Saga POS exact
+`ddb16339578e8696ff154260a027d04c162a9676` dipush dan runtime code aktif pada
+stable public Kiosk melalui deployment `dpl_H8kP3NdyzdufLJ2xhMABC5AmXGNo`.
+Identifikasi Member berpindah dari setelah cart menjadi sesudah pilihan Dine
+In/Takeaway. Member Code fixture yang valid membuka sapaan, tiga rekomendasi
+produk aktif, dan kategori `Untukmu`; guest dapat lanjut tanpa akun. Raw code
+tidak dipersistenkan ke cart draft dan respons client hanya memuat fakta
+public-safe. Full 165/165, focused unit/API 14/14, browser 21/21 di dua
+viewport, Axe, overflow, touch target, dependency/secret scan, dan public
+browser smoke lulus. NFC fisik serta Customer Platform external UAT tetap
+`NOT_RUN`; public runtime tetap simulator ephemeral, readiness 84/100, dan
+`BUSINESS_READY=false`.
+
 Status: `SOURCE_PUSHED / LOCAL_VALIDATED / SAGADEV_PLATFORM_PRODUCTION_ACTIVATED /
 SAGAOPS_TRANSACTIONS_LOCKED / PRIVATE_CANARY_PAID /
 SETTLEMENT_PENDING_CLEARING / BUSINESS_READY=false`. Founder telah menerima
