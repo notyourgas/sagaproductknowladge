@@ -1,5 +1,18 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+SagaOPS Kiosk cart session recovery tervalidasi lokal pada source exact
+`506af0e5a66038c406660b5cf7a3d21d8ebc8480` yang sudah dipush. Cart belum
+dibayar dipulihkan setelah reload hanya untuk session server yang sama. Draft
+maksimal 15 menit menyimpan identifier, quantity, order type, dan catatan,
+tetapi tidak menyimpan harga, label, member code, atau payment. Produk/modifier
+direkonsiliasi dengan katalog aktif dan total selalu di-quote ulang oleh server.
+Idle, new session, checkout, mismatch, expiry, dan produk tidak aktif diproses
+fail-closed. Full 156/156, focused Kiosk template/browser 20/20, cart draft 2/2,
+Axe serious/critical nol, overflow nol, secret scan nol, serta OSV 31 package/0
+vulnerability lulus. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+production, canary, settlement, readiness 84/100, dan `BUSINESS_READY=false`
+tidak berubah.
+
 Saga Member V20 Member Card 35 Collection aktif pada stable public dummy URL
 `https://saga-member-platform.vercel.app` dari canonical main
 `d3e581b557df8aa1f3d701b9913680a61b4b8465` (PR #36), Preview

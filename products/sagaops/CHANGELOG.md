@@ -8,6 +8,20 @@ Mencatat perubahan material SagaOPS.
 
 Prototype dan production outlet adalah evidence level yang berbeda.
 
+## 2026-09-04 — Cart session recovery Kiosk tervalidasi lokal
+
+- Source exact `506af0e5a66038c406660b5cf7a3d21d8ebc8480` dipush ke branch Saga POS.
+- Cart belum dibayar pulih setelah reload untuk session Kiosk server yang sama.
+  Draft maksimal 15 menit hanya menyimpan identifier, quantity, order type, dan
+  catatan; harga, label, member code, dan payment tidak disimpan. Modifier dan
+  harga selalu direkonsiliasi dari katalog/quote server terbaru.
+- Idle/new session/checkout/mismatch/expiry membersihkan draft. Produk tidak aktif
+  dilepas fail-closed dengan pemberitahuan. Full 156/156, focused browser/template
+  20/20, cart draft 2/2, Axe, overflow, secret scan, dan OSV lulus.
+- Status `CONFIRMED / KIOSK_CART_SESSION_RECOVERY_LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`; production, canary,
+  settlement, dan readiness 84/100 tidak berubah.
+
 ## 2026-09-04 — Konfirmasi benefit member sebelum QRIS tervalidasi lokal
 
 - Source exact `8999674a4d96f2a6d3b954ec67673141c92fe7e1` dipush ke branch Saga POS.

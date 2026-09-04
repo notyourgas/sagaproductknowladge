@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-04 - SagaOPS Kiosk cart session recovery sync
+
+- Informasi `CONFIRMED`: Saga POS exact
+  `506af0e5a66038c406660b5cf7a3d21d8ebc8480` sudah dipush.
+- Cart belum dibayar pulih setelah reload pada session server yang sama, lalu
+  modifier dan total direkonsiliasi dari katalog/quote server terbaru.
+- Draft tidak menyimpan harga/member/payment dan dibersihkan fail-closed pada
+  boundary session/idle/checkout/expiry. Full 156/156 dan focused 22/22 lulus.
+  Delivery tetap `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production dan
+  readiness 84/100 tidak berubah.
+- Dokumen terdampak: SagaOPS product/dossier/changelog, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-09-04 - Saga Member V20 Member Card 35 Collection sync
 
 - Informasi `CONFIRMED`: Saga Member main

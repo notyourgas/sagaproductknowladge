@@ -15,7 +15,29 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-09-04 WIB |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `0751fdc8969fb669bf0d370fd5862225b74d6533` |
+| Baseline sebelum pembaruan | `7a392c70781354b629de6f93635e12ade0c5b558` |
+
+## SagaOPS Kiosk cart session recovery
+
+- Source exact `506af0e5a66038c406660b5cf7a3d21d8ebc8480` sudah dipush ke
+  branch Saga POS.
+- Cart pulih setelah reload untuk session server yang sama lalu di-quote ulang.
+  Draft tidak menyimpan harga/member/payment dan maksimal berumur 15 menit.
+- Idle/new session/checkout/mismatch/expiry membersihkan draft; produk tidak
+  aktif dilepas fail-closed. Full 156/156 dan focused 22/22 lulus.
+- Status `CONFIRMED / KIOSK_CART_SESSION_RECOVERY_LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`; production dan readiness
+  formal 84/100 tidak berubah.
+
+## File yang berubah pada sinkronisasi SagaOPS Kiosk cart session recovery
+
+- `products/sagaops/PRODUCT.md`
+- `products/sagaops/DOSSIER.md`
+- `products/sagaops/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## Saga Member V20 Member Card 35 Collection
 

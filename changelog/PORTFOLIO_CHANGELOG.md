@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-09-04 - SagaOPS Kiosk cart session recovery local validated
+
+- Saga POS exact `506af0e5a66038c406660b5cf7a3d21d8ebc8480` dipush. Cart kini
+  pulih setelah reload dalam session server yang sama dan total selalu diminta
+  ulang dari server.
+- Draft tidak menyimpan harga/member/payment dan dibersihkan pada idle, new
+  session, checkout, mismatch, atau expiry. Full 156/156 dan focused 22/22 lulus.
+- Status tetap `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness 84/100
+  dan `BUSINESS_READY=false` tidak berubah.
+
 ## 2026-09-04 - Saga Member V20 Member Card 35 Collection deployed
 
 - Saga Member main `d3e581b557df8aa1f3d701b9913680a61b4b8465` (PR #36)
