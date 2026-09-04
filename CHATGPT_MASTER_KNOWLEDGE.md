@@ -1,5 +1,17 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+SagaOPS Kiosk modifier P04 dan cart P05 tervalidasi lokal pada source exact
+`fb51829c6af067d71331249b9e1f35fcc7e32a58` yang sudah dipush. Komposisi
+ImageGen V2 diterapkan secara code-native dengan density berbeda untuk
+720x1280 dan 1080x1920, target sentuh tetap terjaga, dan whitespace fungsional
+antar-action dipadatkan. Suhu, tingkat manis, Extra Shot Rp5.000, serta Oat
+Milk Rp7.000 menjadi pilihan eksplisit yang dihitung server. Cart memisahkan
+edit, hapus, quantity, undo, dan perubahan order type selalu melakukan requote.
+Full suite 149/149 dan focused 8/8 lulus; Axe serious/critical nol, no
+horizontal overflow, secret diff scan nol temuan, dan OSV 31 package/0
+vulnerability lulus. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+readiness formal 84/100 dan `BUSINESS_READY=false` tidak berubah.
+
 SagaOPS Kiosk portrait UI/UX P01-P12 tervalidasi lokal pada source exact
 `e14e2a3299459ea850255b9c9d35434a7a7decb3` yang sudah dipush. Flow kini
 memiliki hierarchy kategori/modifier lebih jelas, cart dengan harga item dan

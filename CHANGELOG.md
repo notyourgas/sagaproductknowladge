@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-04 - SagaOPS Kiosk modifier dan cart V2 sync
+
+- Informasi `CONFIRMED`: Saga POS exact
+  `fb51829c6af067d71331249b9e1f35fcc7e32a58` sudah dipush.
+- P04-P05 mengadopsi density reference ImageGen V2 secara code-native,
+  menutup whitespace berlebih, menambah dua add-on server-priced, memisahkan
+  edit/hapus/quantity/undo, dan melakukan requote ketika order type berubah.
+- Full suite 149/149 dan focused 8/8 lulus; Axe serious/critical nol,
+  overflow/touch/density, secret scan, serta OSV 31 package/0 vulnerability
+  lulus.
+- Status tetap `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness formal
+  84/100 dan `BUSINESS_READY=false` tidak berubah.
+
 ## 2026-09-04 - Saga Member V19 Studio Session Planner sync
 
 - Informasi `CONFIRMED`: Saga Member main

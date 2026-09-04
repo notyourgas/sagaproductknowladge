@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-09-04 - SagaOPS Kiosk modifier dan cart V2 local validated
+
+- Saga POS exact `fb51829c6af067d71331249b9e1f35fcc7e32a58` dipush dengan
+  alignment code-native terhadap density reference ImageGen V2 untuk P04-P05.
+- Modifier memiliki pilihan eksplisit dan dua add-on server-priced; cart
+  memisahkan edit/hapus/quantity/undo serta melakukan requote saat order type
+  berubah. Layout 720x1280 dan 1080x1920 tidak lagi memiliki whitespace
+  fungsional berlebih.
+- Full suite 149/149 dan focused 8/8 lulus; Axe serious/critical nol,
+  overflow/touch/density, secret scan, serta OSV 31 package/0 vulnerability
+  lulus.
+- Status tetap `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness formal
+  84/100 dan `BUSINESS_READY=false` tidak berubah.
+
 ## 2026-09-04 - Saga Member V19 Studio Session Planner deployed
 
 - Saga Member main `2858d5aea39008386387cf58668808386247edfd` (PR #35)

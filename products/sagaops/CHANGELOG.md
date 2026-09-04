@@ -8,6 +8,21 @@ Mencatat perubahan material SagaOPS.
 
 Prototype dan production outlet adalah evidence level yang berbeda.
 
+## 2026-09-04 — Modifier dan cart V2 tervalidasi lokal
+
+- Source exact `fb51829c6af067d71331249b9e1f35fcc7e32a58` dipush ke branch Saga POS.
+- P04-P05 memakai density reference ImageGen V2 secara code-native pada
+  720x1280 dan 1080x1920. Whitespace antar-action dipadatkan tanpa mengurangi
+  target sentuh atau hierarchy.
+- Extra Shot Rp5.000 dan Oat Milk Rp7.000 menjadi add-on multi-select yang
+  dihitung server. Cart memisahkan edit, hapus, quantity, undo, dan perubahan
+  order type selalu meminta quote baru dari server.
+- Full suite 149/149 dan focused 8/8 lulus; Axe serious/critical nol,
+  no horizontal overflow, touch/density gap, secret scan, serta OSV 31
+  package/0 vulnerability lulus.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production, canary,
+  settlement, readiness 84/100, dan `BUSINESS_READY=false` tidak berubah.
+
 ## 2026-09-04 — Kiosk portrait UI/UX sprint tervalidasi lokal
 
 - Source exact `e14e2a3299459ea850255b9c9d35434a7a7decb3` dipush ke branch Saga POS.
