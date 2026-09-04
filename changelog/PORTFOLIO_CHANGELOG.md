@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-09-04 - SagaOPS Kiosk contextual header deployed ke Vercel
+
+- Exact Saga POS `16ae7940be06dee154df5ef8ecd0ff04118d4b78` aktif pada stable Kiosk
+  melalui deployment `dpl_7mhsBWhDk2fM8Kv34YWRWePdSLRc`.
+- Public health/static smoke dan browser journey sampai katalog lulus; header
+  kontekstual baru terlihat pada URL stabil.
+- Deployment tetap public demo dengan QRIS simulator dan state ephemeral;
+  readiness 84/100 serta `BUSINESS_READY=false` tidak berubah.
+
 ## 2026-09-04 - Saga Member V26 quick access emoji deployed
 
 - Saga Member main `ddfeebc9f9629d7e2bd8c862e1bc505bcd09d8fc` (PR #42)

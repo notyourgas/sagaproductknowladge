@@ -8,7 +8,7 @@ sales, dan konten SagaOPS.
 ## Konteks dan status bukti
 
 - Updated: 4 September 2026
-- Delivery: `SOURCE_PUSHED_BRANCH / PORTRAIT_KIOSK_LOCAL_VALIDATED / KIOSK_CONTEXTUAL_BROWSE_HEADER_LOCAL_VALIDATED / KIOSK_ATOMIC_BOOTSTRAP_LOCAL_VALIDATED / KIOSK_VERCEL_PUBLIC_DEMO_ACTIVE / KIOSK_BAGEL_CATEGORY_PHOTO_LOCAL_VALIDATED / KIOSK_SOLD_OUT_RACE_RECOVERY_LOCAL_VALIDATED / KIOSK_CART_SESSION_RECOVERY_LOCAL_VALIDATED / KIOSK_MEMBER_BENEFIT_CONFIRMATION_LOCAL_VALIDATED / KIOSK_FOUNDER_REVIEW_UI_LOCAL_VALIDATED / KIOSK_IMAGE_RECOVERY_LOCAL_VALIDATED / KIOSK_WELCOME_HERO_LOCAL_VALIDATED / KIOSK_UIUX_SPRINTS_LOCAL_VALIDATED / KIOSK_MODIFIER_CART_V2_LOCAL_VALIDATED / MENU_ASSETS_22_OF_22_LOCAL_VALIDATED / KDS_V2_LOCAL_VALIDATED / CASHIER_V2_LOCAL_VALIDATED / OWNER_DASHBOARD_V2_LOCAL_VALIDATED / ADMIN_CONTROL_ROOM_V2_LOCAL_VALIDATED / ADMIN_AVAILABILITY_HISTORY_LOCAL_VALIDATED / ADMIN_STALE_VERSION_GUARD_LOCAL_VALIDATED / ADMIN_SCHEDULED_AVAILABILITY_LOCAL_VALIDATED / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_DEPLOYED / TRIAL99_CANARY_PAID`
+- Delivery: `SOURCE_PUSHED_BRANCH / PORTRAIT_KIOSK_LOCAL_VALIDATED / KIOSK_CONTEXTUAL_HEADER_PRODUCTION_DEPLOYED / KIOSK_ATOMIC_BOOTSTRAP_LOCAL_VALIDATED / KIOSK_VERCEL_PUBLIC_DEMO_ACTIVE / KIOSK_BAGEL_CATEGORY_PHOTO_LOCAL_VALIDATED / KIOSK_SOLD_OUT_RACE_RECOVERY_LOCAL_VALIDATED / KIOSK_CART_SESSION_RECOVERY_LOCAL_VALIDATED / KIOSK_MEMBER_BENEFIT_CONFIRMATION_LOCAL_VALIDATED / KIOSK_FOUNDER_REVIEW_UI_LOCAL_VALIDATED / KIOSK_IMAGE_RECOVERY_LOCAL_VALIDATED / KIOSK_WELCOME_HERO_LOCAL_VALIDATED / KIOSK_UIUX_SPRINTS_LOCAL_VALIDATED / KIOSK_MODIFIER_CART_V2_LOCAL_VALIDATED / MENU_ASSETS_22_OF_22_LOCAL_VALIDATED / KDS_V2_LOCAL_VALIDATED / CASHIER_V2_LOCAL_VALIDATED / OWNER_DASHBOARD_V2_LOCAL_VALIDATED / ADMIN_CONTROL_ROOM_V2_LOCAL_VALIDATED / ADMIN_AVAILABILITY_HISTORY_LOCAL_VALIDATED / ADMIN_STALE_VERSION_GUARD_LOCAL_VALIDATED / ADMIN_SCHEDULED_AVAILABILITY_LOCAL_VALIDATED / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_DEPLOYED / TRIAL99_CANARY_PAID`
 - Activation: `KIOSK_PUBLIC_DEMO_ACTIVE / SAGADEV_PLATFORM_ACTIVATED / TRANSACTIONS_LOCKED`
 - Business readiness: `BLOCKED`
 
@@ -92,9 +92,9 @@ menyegarkan katalog ketika quote menolak item stale, melepas hanya item habis,
 mempertahankan item valid, dan mengarahkan pelanggan memilih pengganti bila cart
 kosong. Recovery membuat 0 payment intent. Focused Kiosk terkini 24/24 dan full
 suite 160/160 lulus.
-Kiosk exact runtime `7fc4ff483b053db904511f8ae2106ce34ef975e8`
+Kiosk exact runtime `16ae7940be06dee154df5ef8ecd0ff04118d4b78`
 aktif pada `https://saga-pos-kiosk.vercel.app/kiosk` melalui Vercel deployment
-`dpl_66feChVVoBJnFbtMRZ5ofmuAVWK6`. Public surface hanya Kiosk dan API QRIS
+`dpl_7mhsBWhDk2fM8Kv34YWRWePdSLRc`. Public surface hanya Kiosk dan API QRIS
 simulator; tidak mengaktifkan gateway, promo, canary, atau transaksi nyata.
 Full 162/162, focused deployment 6/6, production smoke, dan browser UAT order
 sampai success lulus. State session/order serverless masih ephemeral dan ada
@@ -106,8 +106,8 @@ session menjadi satu POST same-origin atomik. First load turun 3→1 request dan
 expected 401 turun 1→0; completion/idle reset turun 2→1 request sambil mencabut
 session lama. Browser acceptance pada 720×1280 dan 1080×1920 membuktikan nol
 console/page/request error, Axe serious/critical nol, outage retry tetap aman,
-dan full regression 163/163 lulus. Perubahan ini sudah dipush tetapi belum
-dideploy; stable Vercel tetap pada exact runtime `7fc4ff483b053db904511f8ae2106ce34ef975e8`.
+dan full regression 163/163 lulus. Atomic bootstrap kini tercakup dalam
+runtime public terbaru.
 Source exact `16ae7940be06dee154df5ef8ecd0ff04118d4b78` menutup ruang kanan
 kosong P03 dengan header dua kolom selebar konten. Kartu kanan memuat kategori
 aktif, jumlah menu, dan copy panduan kontekstual; bukan ornamen dekoratif.
@@ -115,8 +115,9 @@ Pada 720×1280 tinggi header 151 px dengan kartu 243 px, sedangkan pada
 1080×1920 tinggi 181 px dengan kartu 353 px; right gap dan horizontal overflow
 keduanya nol. Fokus heading tetap tersedia secara programatik tanpa outline
 yang menyerupai kontrol. Focused Kiosk 31/31 dan full 163/163 lulus termasuk
-Axe serious/critical nol, dependency audit, dan secret scan. Perubahan sudah
-dipush tetapi belum dideploy; runtime publik tetap `7fc4ff483b053db904511f8ae2106ce34ef975e8`.
+Axe serious/critical nol, dependency audit, dan secret scan. Exact artifact
+dipromosikan ke stable Vercel; public health/static smoke dan browser journey
+welcome→order type→katalog membuktikan header kontekstual aktif.
 Disk-backed local durable runtime kini mengikat checkout/outbox atomik,
 idempotency, collision-safe order counter, signed-event replay guard,
 exactly-once fulfillment, refund work item, dan restart recovery untuk

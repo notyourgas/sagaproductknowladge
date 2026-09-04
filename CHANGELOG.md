@@ -1,5 +1,15 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-04 - SagaOPS Kiosk contextual header deployment sync
+
+- Informasi `CONFIRMED`: exact source
+  `16ae7940be06dee154df5ef8ecd0ff04118d4b78` aktif pada stable Kiosk Vercel
+  melalui deployment `dpl_7mhsBWhDk2fM8Kv34YWRWePdSLRc`.
+- Health/static smoke, exact asset check, dan browser journey sampai katalog
+  lulus. Runtime tetap simulator ephemeral dan `BUSINESS_READY=false`.
+- Dokumen terdampak: SagaOPS product/dossier/changelog, decisions, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-09-04 - Saga Member V26 quick access emoji sync
 
 - Informasi `CONFIRMED`: Saga Member main

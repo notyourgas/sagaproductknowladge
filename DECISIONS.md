@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-166 - Perubahan Kiosk tervalidasi langsung dideploy ke public demo
+
+| Field | Nilai |
+|---|---|
+| Tanggal | 2026-09-04 |
+| Topik | Default delivery perubahan Saga POS Kiosk |
+| Keputusan | Setelah source dipush dan seluruh gate relevan hijau, deploy perubahan Kiosk ke stable Vercel agar Andreas dapat memeriksa dari HP. |
+| Alasan | Andreas memakai HP sebagai perangkat review dan meminta hasil Kiosk tidak berhenti pada validasi lokal. |
+| Alternatif | Berhenti pada local validated; hanya membuat preview; menunggu permintaan deploy terpisah setiap perubahan. |
+| Dampak | Exact source `16ae7940be06dee154df5ef8ecd0ff04118d4b78` aktif melalui deployment `dpl_7mhsBWhDk2fM8Kv34YWRWePdSLRc`. Otorisasi ini tidak mengaktifkan gateway nyata, promo, canary, transaksi nyata, atau surface operator. |
+| Pemberi keputusan | Andreas |
+| Status | `CONFIRMED / KIOSK_PUBLIC_DEMO_PRODUCTION_DEPLOYED / PRODUCT_PRODUCTION_ACTIVATED=false / BUSINESS_READY=false` |
+| Dokumen terkait | `products/sagaops/PRODUCT.md`, `products/sagaops/DOSSIER.md`, `products/sagaops/CHANGELOG.md` |
+
 ## DEC-165 - Ruang kanan header Kiosk diisi konteks kategori
 
 | Field | Nilai |

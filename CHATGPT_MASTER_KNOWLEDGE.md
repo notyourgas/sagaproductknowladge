@@ -1,5 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+SagaOPS Kiosk contextual header aktif pada stable URL
+`https://saga-pos-kiosk.vercel.app/kiosk` dari exact source
+`16ae7940be06dee154df5ef8ecd0ff04118d4b78` dan deployment
+`dpl_7mhsBWhDk2fM8Kv34YWRWePdSLRc`. Prebuilt artifact diverifikasi melalui
+health, route, exact assets, dan browser publik welcome→order type→katalog
+sebelum/ setelah promosi. Rollback deployment adalah
+`dpl_66feChVVoBJnFbtMRZ5ofmuAVWK6`. Runtime tetap public demo dengan QRIS
+simulator dan persistence ephemeral; readiness 84/100 dan
+`BUSINESS_READY=false`.
+
 Saga Member V26 Quick Access Emoji aktif pada stable public dummy URL
 `https://saga-member-platform.vercel.app` dari canonical main
 `ddfeebc9f9629d7e2bd8c862e1bc505bcd09d8fc` (PR #42), Preview

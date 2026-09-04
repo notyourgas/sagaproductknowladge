@@ -8,6 +8,20 @@ Mencatat perubahan material SagaOPS.
 
 Prototype dan production outlet adalah evidence level yang berbeda.
 
+## 2026-09-04 — Contextual browse header Kiosk aktif di Vercel
+
+- Exact source `16ae7940be06dee154df5ef8ecd0ff04118d4b78` dibangun sebagai prebuilt
+  production artifact, diverifikasi sebelum promosi, lalu dipromosikan sebagai
+  deployment `dpl_7mhsBWhDk2fM8Kv34YWRWePdSLRc`.
+- Stable URL `https://saga-pos-kiosk.vercel.app/kiosk` menampilkan judul,
+  kategori aktif, jumlah menu, serta panduan kategori baru.
+- Health dan Kiosk route 200; exact assets terverifikasi; browser publik
+  welcome→order type→katalog lulus. Rollback target sebelumnya adalah
+  `dpl_66feChVVoBJnFbtMRZ5ofmuAVWK6`.
+- Status `PRODUCTION_DEPLOYED / PUBLIC_DEMO_ACTIVE / QRIS_SIMULATOR_ONLY /
+  PRODUCT_PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`; readiness tetap
+  84/100.
+
 ## 2026-09-04 — Contextual browse header Kiosk tervalidasi lokal
 
 - Source exact `16ae7940be06dee154df5ef8ecd0ff04118d4b78` dipush ke branch Saga POS.

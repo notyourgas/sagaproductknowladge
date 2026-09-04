@@ -15,7 +15,28 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-09-04 WIB |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `d25dd99088a956bd09c7257c5aef5662ae760f87` |
+| Baseline sebelum pembaruan | `396b81925775b92491303780598e436b0db1e682` |
+
+## SagaOPS Kiosk contextual header Vercel deployment
+
+- Exact source `16ae7940be06dee154df5ef8ecd0ff04118d4b78` aktif pada stable URL melalui
+  deployment `dpl_7mhsBWhDk2fM8Kv34YWRWePdSLRc`.
+- Prebuilt candidate, health/static route, exact assets, dan browser publik
+  welcome→order type→katalog lulus. Rollback: `dpl_66feChVVoBJnFbtMRZ5ofmuAVWK6`.
+- Status `CONFIRMED / PRODUCTION_DEPLOYED / PUBLIC_DEMO_ACTIVE /
+  QRIS_SIMULATOR_ONLY / PRODUCT_PRODUCTION_ACTIVATED=false /
+  BUSINESS_READY=false`; readiness tetap 84/100.
+
+## File yang berubah pada sinkronisasi deployment contextual header
+
+- `products/sagaops/PRODUCT.md`
+- `products/sagaops/DOSSIER.md`
+- `products/sagaops/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `DECISIONS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## Saga Member V26 Quick Access Emoji
 
