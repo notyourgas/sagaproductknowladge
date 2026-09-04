@@ -58,7 +58,29 @@ D0. Customer `f763fc19d8463cf2120387b0d06a57ffa5c868f7` dan Member
 `2eaa35334e59dc2656b98816db6bdc020c478a8f` lulus CI canonical-main, remote
 Chrome UAT, forced-RLS audit, backup/restore dan rollback rehearsal.
 
-Frontend public dummy terkini adalah V16 Points Ledger dari Saga Member main
+Frontend public dummy terkini adalah V17 Inbox Center dari Saga Member main
+`416adac5794d65e62b21a2b8d723c879fc4d0f64` (PR #32), Preview deployment
+`dpl_BiCCVMKNK6HkNqapmhxMzgfBrUYs`, dan Vercel production deployment
+`dpl_9iUA84cSgpbLqkQyNeUdwkMigeFW` pada stable URL
+`https://saga-member-platform.vercel.app`. Inbox memakai overview espresso
+dengan unread count, empat filter, kelompok Hari ini/Minggu ini/Sebelumnya,
+baris kategori, waktu, body ringkas, dan deep-link ke route Saga terkait.
+
+Membuka kabar menandainya sudah dibaca untuk sesi dummy. Aksi bulk memperbarui
+overview, empty state, dan badge Profil; status diumumkan melalui polite live
+region. Semua target sentuh minimal 44 px, motion hanya opacity/transform
+100–180 ms, reduced-motion/forced-colors didukung, dan tidak ada dependency
+baru. Push tetap OFF dan UI menyatakannya secara eksplisit.
+
+133/133 test, PR CI `33838157171`, canonical-main CI `33838557658`, local UAT
+320/360/375/390/430 px, Axe nol serious/critical, offline shell, dan Vercel
+Preview/production inspection lulus. Public browser UAT V17 belum dijalankan.
+Runtime tetap `PUBLIC_DUMMY_DEMO`; backend, auth, provider, transaksi, data
+pelanggan, QRIS, Push, NFC, printer, dan pilot nyata tidak aktif. Status
+`SAGA_MEMBER_V17_LOCAL_VALIDATED / VERCEL_PRODUCTION_DEPLOYED /
+PUBLIC_UAT_PENDING / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
+Frontend public dummy V16 sebelumnya adalah Points Ledger dari Saga Member main
 `373742e361a7e702f25c71c7f2ec9edcfb9e6540` (PR #31), Preview deployment
 `dpl_F8zpHNeYjh1Nt415Jv6Huk4DTmW8`, dan Vercel production deployment
 `dpl_FttVUMWWb8JhwyCNFZxXHA2KY6eL` pada stable URL

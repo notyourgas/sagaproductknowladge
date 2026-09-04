@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-09-04 - Saga Member V17 Inbox Center deployed
+
+- Saga Member main `416adac5794d65e62b21a2b8d723c879fc4d0f64` (PR #32)
+  aktif pada `https://saga-member-platform.vercel.app` melalui deployment
+  `dpl_9iUA84cSgpbLqkQyNeUdwkMigeFW`.
+- Inbox berubah menjadi notification center mobile dengan unread count,
+  filter, kelompok waktu, deep-link, read state, empty recovery, dan badge
+  Profil yang konsisten.
+- 133/133 test, exact PR/main CI, local UAT lima viewport, Axe, touch target,
+  offline shell, serta Vercel inspection lulus. Public browser UAT V17 pending.
+- Runtime tetap dummy; backend, provider, transaksi, dan data nyata OFF,
+  `PRODUCTION_ACTIVATED=false`, `BUSINESS_READY=false`.
+
 ## 2026-09-04 - SagaOPS Cashier Payment Confidence local validated
 
 - Saga POS exact `4a4ff91acdc9c2117efc268d525317971e4de2ff` dipush; checkout
